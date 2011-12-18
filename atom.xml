@@ -1,7 +1,7 @@
 ---
 layout: nil
 author: Alexunder
-email:  xalexu@gmail.com
+email: xalexu@gmail.com
 domain: alexunder.github.com
 ---
 <?xml version="1.0" encoding="UTF-8"?>
@@ -12,7 +12,7 @@ domain: alexunder.github.com
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
 	<id>http://{{page.domain}}/</id>
 	<author>
-		<name>{{page.author}}</name>
+	<name>{{page.author}}</name>
 		<email>{{page.email}}</email>
 	</author>
 	{% for post in site.posts %}
