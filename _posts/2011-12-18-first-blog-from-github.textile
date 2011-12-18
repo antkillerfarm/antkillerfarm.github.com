@@ -58,4 +58,4 @@ h2. 柳暗花明
 
 h2. 其他
 
-可以免费的使用酷逼了的github&Jekyll提供的blog服务，自然很高兴。还有，这几个月来我经历了一次我个人使用计算机的革命：我删除了Windows XP，彻底投向了Ubuntu阵营，目前来看，有时还需virtualbox里的WinXP的小帮助。但是我已经决意和Microsoft Windows说拜拜了。
+可以免费的使用酷逼了的github&Jekyll提供的blog服务，自然很高兴。还有，这几个月来我经历了一次我个人使用计算机的革命：我删除了Windows XP, 彻底投向了Ubuntu阵营，目前来看，有时还需virtualbox里的WinXP的小帮助。但是我已经决意和Microsoft Windows说拜拜了。
