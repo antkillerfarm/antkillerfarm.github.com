@@ -6,22 +6,22 @@ domain: alexunder.github.com
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<title>{{page.author}}的博客</title>
-    <link href="http://{{page.domain}}/atom.xml" rel="self"/>
-	<link href="http://{{page.domain}}/"/>
-	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>http://{{page.domain}}/</id>
-	<author>
-	<name>{{page.author}}</name>
-		<email>{{page.email}}</email>
-	</author>
-	{% for post in site.posts %}
-	<entry>
-		<title>{{ post.title }}</title>
-		<link href="http://{{ page.domain }}{{ post.url }}"/>
-		<updated>{{ post.date | date_to_xmlschema }}</updated>
-		<id>http://{{ page.domain }}{{ post.id }}</id>
-		<content type="html">{{ post.content | xml_escape }}</content>
-	</entry>
-	{% endfor %}
+  <title>{{page.author}}的博客</title>
+  <link href="http://{{page.domain}}/atom.xml" rel="self"/>
+  <link href="http://{{page.domain}}/"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>http://{{page.domain}}/</id>
+  <author>
+    <name>{{page.author}}</name>
+    <email>{{page.email}}</email>
+  </author>
+  {% for post in site.posts %}
+    <entry>
+      <title>{{ post.title }}</title>
+      <link href="http://{{ page.domain }}{{ post.url }}"/>
+      <updated>{{ post.date | date_to_xmlschema }}</updated>
+      <id>http://{{ page.domain }}{{ post.id }}</id>
+      <content type="html">{{ post.content | xml_escape }}</content>
+    </entry>
+  {% endfor %}
 </feed>
