@@ -13,7 +13,6 @@ layout: nil
    <name>alexunder</name>
    <email>xalexu@gmail.com</email>
  </author>
-
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
