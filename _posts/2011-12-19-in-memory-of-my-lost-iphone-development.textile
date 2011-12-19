@@ -12,6 +12,7 @@ h2. 前言
 
 h2. 编译的环境的构建
 
+
 h3. Foreword
 
 如果要编译可以在iphone上运行的程序，我们可以有两种选择：
@@ -19,12 +20,14 @@ h3. Foreword
 # 使用MAC系统，即是当前的Mac OS X Leopard系统，然后下载iphone sdk。此方法不适合我等geek之辈，装MAC得费不少功夫，虽说这个方法是开发iphone软件的官方推荐方法，但是至少不适合我。
 # 开源工具链。这是极为牛逼的黑客通过逆向手段得到的方法，可以在Gnu linux上进行iphone开发。
 
+
 h3. Start here
 
 系统准备：我的iphone目前的版本是3.1.2，所以我就要以这个版本为基础构造编译环境。在构造之前，我们需要三样东西：
 # 第一个就是iphone_sdk_3.1.2，官方用法需要它，我们也需要它，之前的链接不能用了，所以我就删除了，应该在官网上还能找到。
 # 还有一个就是iphone 3.1.2 os firmware，即系统固件3.1.2。
 # 在google code上的托管项目中有黑客们建立的一个项目，目的是在linux上构建编译iphone的环境，这是其链接: "http://code.google.com/p/iphonedevonlinux/wiki/Installation":http://code.google.com/p/iphonedevonlinux/wiki/Installation
+
 
 h3. Follow here
 
@@ -111,6 +114,7 @@ chmod u+x toolchain.sh
 DECRYPTION_KEY_SYSTEM= “a8a886d56011d2d98b190d0a498f6fcac719467047639cd601fd53a4a1d93c24e1b2ddc6”。
 
 h3. Going here
+
 当./toolchain.sh build执行完毕，没有错误的话，我们的工具链就编译完毕了，在toolchain\toolchain目录下生成了几个目录：bld, pre,src,sys这几个目录，包括了编译iphone软件所需要的工具，代码，头文件，以及库，在pre\bin下有我们所需要的交叉编译器，如果要编译toolchain\apps\HelloToolchain目录下的makefile 文件，还必须将交叉编译器arm-apple-darwin9-gcc的路径加入到Linux的环境变量中去，比如加入到/home/xxx/.profile文件当中如下命令：
 
 {% highlight bash %}
@@ -145,7 +149,7 @@ HelloToolchain成功运行，这篇笔记就该告一段落了。
 
 h2. Programming 笔记
 
-# Calling the object’s member function.
+h3. Calling the object’s member function.
 
 Given an object named myWidget, a message can be sent to its powerOn method this way:
 
@@ -165,7 +169,7 @@ The C equivalent might declare a function inside of its flat namespace:
 returnValue = widget_powerOn(myWidget);
 {% endhighlight %}
 
-# Class and method declarations.
+h3. Class and method declarations.
 
 {% highlight objective-c %}
 #import <Foundation/Foundation.h>
@@ -198,9 +202,9 @@ returnValue = widget_powerOn(myWidget);
 
 +号表示是non-static member function，-表示static member function，member function 在括号外面声明。
 
-# About UIKit
+h3. About UIKit
 
-## 创建windows.
+h4. 创建windows.
 
 获取iphone的全屏幕的尺寸数据：
 
@@ -217,7 +221,7 @@ UIWindow *window = [ UIWindow alloc ];
 [ window initWithContentRect: windowRect ];
 {% endhighlight %}
 
-## 创建view.
+h4. 创建view.
 
 {% highlight objective-c %}
 CGRect viewRect = [ UIHardware fullScreenApplicationContentRect ];
@@ -225,7 +229,7 @@ viewRect.origin.x = viewRect.origin.y = 0.0;
 UIView *mainView = [ [ MainView alloc ] initWithFrame: viewRect ];
 {% endhighlight %}
 
-## 显示view.
+h4. 显示view.
 
 {% highlight objective-c %}
 [ window setContentView: mainView ];
@@ -234,9 +238,9 @@ UIView *mainView = [ [ MainView alloc ] initWithFrame: viewRect ];
 [ window _setHidden: NO ];
 {% endhighlight %}
 
-## 对view的继承.
+h5. 对view的继承.
 
-{% highlight objective-c %}
+{% highlight obj-c %}
 @interface MainView : UIView
 {
 
@@ -249,6 +253,7 @@ UIView *mainView = [ [ MainView alloc ] initWithFrame: viewRect ];
 
 initWithFrame是初始化的时候调用的函数，dealloc是退出析构的时候调用。这两个函数是继承类必须继承的函数。
 
+
 h2. 参考资料
-# “http://code.google.com/p/iphonedevonlinux/wiki/Installation”:http://code.google.com/p/iphonedevonlinux/wiki/Installation
+#  “http://code.google.com/p/iphonedevonlinux/wiki/Installation”:http://code.google.com/p/iphonedevonlinux/wiki/Installation 
 # iphone developer guide
