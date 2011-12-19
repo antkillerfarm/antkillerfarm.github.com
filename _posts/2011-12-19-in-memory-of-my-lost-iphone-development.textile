@@ -240,7 +240,7 @@ h4. 显示view.
 
 h5. 对view的继承.
 
-{% highlight obj-c %}
+{% highlight objc %}
 @interface MainView : UIView
 {
 
@@ -255,5 +255,5 @@ initWithFrame是初始化的时候调用的函数，dealloc是退出析构的时
 
 
 h2. 参考资料
-#  “http://code.google.com/p/iphonedevonlinux/wiki/Installation”:http://code.google.com/p/iphonedevonlinux/wiki/Installation 
-# iphone developer guide
+	“http://code.google.com/p/iphonedevonlinux/wiki/Installation”:http://code.google.com/p/iphonedevonlinux/wiki/Installation 
+iphone developer guide
