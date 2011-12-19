@@ -8,7 +8,7 @@ h2. 前言
 
 我曾经拥有两台iphone,但不是同时拥有，他们先后都离我而去，至今黯然叹息。在那些拥有iphone的岁月里，作为程序员的我当然要寻求为她编程。但是在没有MAC电脑的前提下，这个过程相当艰辛，充满荆棘：首先是越狱；然后为了在ubuntu上编译iphone tool chains的环境，我痛苦的纠结了多次，渡过了不少不眠夜；后来，编译环境弄好后，我移植了我初学程序时在Windows PC上写的俄罗斯方块，调试只能用文件记录，诸多不方便，经过一番折腾，我的tetris终于跑起来了。
 
-正当我准备继续为iphone努力的时候，我的第二个iphone很不幸的丢失了，我不愿意再买一个iphone了，我想我与iphone无缘。我的iphone开发之路就此在中道奔殂。为了纪念那逝去的岁月，为了纪念我的辛劳，我将我当初编译tool chains的笔记呈现于此，以及将Tetris的代码push进github，不求能对别人有所帮助，但求对得起自己。废话不说了。
+正当我准备继续为iphone努力的时候，我的第二个iphone很不幸的丢失了，我不愿意再买一个iphone了，我想我与iphone注定无缘。我的iphone开发之路就此在中道奔殂。为了纪念那逝去的岁月，为了纪念我的辛劳，我将我当初编译tool chains的笔记呈现于此，以及将Tetris的代码push进github，不求能对别人有所帮助，但求对得起自己。废话不说了。
 
 h2. 编译的环境的构建
 
@@ -149,6 +149,7 @@ HelloToolchain成功运行，这篇笔记就该告一段落了。
 
 h2. Programming 笔记
 
+
 h3. Calling the object’s member function.
 
 Given an object named myWidget, a message can be sent to its powerOn method this way:
@@ -204,6 +205,7 @@ h3. Class and method declarations.
 
 h3. About UIKit
 
+
 h4. 创建windows.
 
 获取iphone的全屏幕的尺寸数据：
@@ -257,4 +259,4 @@ initWithFrame是初始化的时候调用的函数，dealloc是退出析构的时
 h2. 参考资料
 
 # "http://code.google.com/p/iphonedevonlinux/wiki/Installation":http://code.google.com/p/iphonedevonlinux/wiki/Installation  
-#iphone developer guide
+# iphone developer guide
