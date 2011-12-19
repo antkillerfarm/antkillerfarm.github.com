@@ -171,7 +171,7 @@ returnValue = widget_powerOn(myWidget);
 
 h3. Class and method declarations.
 
-{% highlight objective-c %}
+{% highlight objc %}
 #import <Foundation/Foundation.h>
 
 @interface MyWidget : BaseWidget
@@ -194,7 +194,7 @@ h3. Class and method declarations.
 @interface命令定义的interface 类似于C++中的类的声明：
 
 
-{% highlight objective-c %}
+{% highlight objc %}
 @interface xxxxxx
 	xxxxx
 @end
@@ -208,7 +208,7 @@ h4. 创建windows.
 
 获取iphone的全屏幕的尺寸数据：
 
-{% highlight objective-c %}
+{% highlight objc %}
 CGRect windowRect = [ UIHardware fullScreenApplicationContentRect ];
 {% endhighlight %}
            
@@ -216,14 +216,14 @@ UIHardware是framework中的object,通过调用fullScreenApplicationContentRect�
 
 通过矩形数据来创建windows
 
-{% highlight objective-c %}
+{% highlight objc %}
 UIWindow *window = [ UIWindow alloc ];
 [ window initWithContentRect: windowRect ];
 {% endhighlight %}
 
 h4. 创建view.
 
-{% highlight objective-c %}
+{% highlight objc %}
 CGRect viewRect = [ UIHardware fullScreenApplicationContentRect ];
 viewRect.origin.x = viewRect.origin.y = 0.0;
 UIView *mainView = [ [ MainView alloc ] initWithFrame: viewRect ];
@@ -238,7 +238,7 @@ h4. 显示view.
 [ window _setHidden: NO ];
 {% endhighlight %}
 
-h5. 对view的继承.
+h4. 对view的继承.
 
 {% highlight objc %}
 @interface MainView : UIView
@@ -255,5 +255,5 @@ initWithFrame是初始化的时候调用的函数，dealloc是退出析构的时
 
 
 h2. 参考资料
-	“http://code.google.com/p/iphonedevonlinux/wiki/Installation”:http://code.google.com/p/iphonedevonlinux/wiki/Installation 
+“http://code.google.com/p/iphonedevonlinux/wiki/Installation”:http://code.google.com/p/iphonedevonlinux/wiki/Installation 
 iphone developer guide
