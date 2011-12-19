@@ -1,35 +1,35 @@
 ---
 layout: post
-title: ¼ÍÄîÎÒÄÇÊÅÈ¥µÄiphone¿ª·¢
+title: çºªå¿µæˆ‘é‚£é€å»çš„iphoneå¼€å‘
 category: technolgy
 ---
 
-h2. Ç°ÑÔ
+h2. å‰è¨€
 
-ÎÒÔø¾­ÓµÓĞÁ½Ì¨iphone,µ«²»ÊÇÍ¬Ê±ÓµÓĞ£¬ËûÃÇÏÈºó¶¼ÀëÎÒ¶øÈ¥£¬ÖÁ½ñ÷öÈ»Ì¾Ï¢¡£ÔÚÄÇĞ©ÓµÓĞiphoneµÄËêÔÂÀï£¬×÷Îª³ÌĞòÔ±µÄÎÒµ±È»ÒªÑ°ÇóÎªËı±à³Ì¡£µ«ÊÇÔÚÃ»ÓĞMACµçÄÔµÄÇ°ÌáÏÂ£¬Õâ¸ö¹ı³ÌÏàµ±¼èĞÁ£¬³äÂú¾£¼¬£ºÊ×ÏÈÊÇÔ½Óü£»È»ºóÎªÁËÔÚubuntuÉÏ±àÒëiphone tool chainsµÄ»·¾³£¬ÎÒÍ´¿àµÄ¾À½áÁË¶à´Î£¬¶É¹ıÁË²»ÉÙ²»ÃßÒ¹£»ºóÀ´£¬±àÒë»·¾³ÅªºÃºó£¬ÎÒÒÆÖ²ÁËÎÒ³õÑ§³ÌĞòÊ±ÔÚWindows PCÉÏĞ´µÄ¶íÂŞË¹·½¿é£¬µ÷ÊÔÖ»ÄÜÓÃÎÄ¼ş¼ÇÂ¼£¬Öî¶à²»·½±ã£¬¾­¹ıÒ»·¬ÕÛÌÚ£¬ÎÒµÄtetrisÖÕÓÚÅÜÆğÀ´ÁË¡£
+æˆ‘æ›¾ç»æ‹¥æœ‰ä¸¤å°iphone,ä½†ä¸æ˜¯åŒæ—¶æ‹¥æœ‰ï¼Œä»–ä»¬å…ˆåéƒ½ç¦»æˆ‘è€Œå»ï¼Œè‡³ä»Šé»¯ç„¶å¹æ¯ã€‚åœ¨é‚£äº›æ‹¥æœ‰iphoneçš„å²æœˆé‡Œï¼Œä½œä¸ºç¨‹åºå‘˜çš„æˆ‘å½“ç„¶è¦å¯»æ±‚ä¸ºå¥¹ç¼–ç¨‹ã€‚ä½†æ˜¯åœ¨æ²¡æœ‰MACç”µè„‘çš„å‰æä¸‹ï¼Œè¿™ä¸ªè¿‡ç¨‹ç›¸å½“è‰°è¾›ï¼Œå……æ»¡è†æ£˜ï¼šé¦–å…ˆæ˜¯è¶Šç‹±ï¼›ç„¶åä¸ºäº†åœ¨ubuntuä¸Šç¼–è¯‘iphone tool chainsçš„ç¯å¢ƒï¼Œæˆ‘ç—›è‹¦çš„çº ç»“äº†å¤šæ¬¡ï¼Œæ¸¡è¿‡äº†ä¸å°‘ä¸çœ å¤œï¼›åæ¥ï¼Œç¼–è¯‘ç¯å¢ƒå¼„å¥½åï¼Œæˆ‘ç§»æ¤äº†æˆ‘åˆå­¦ç¨‹åºæ—¶åœ¨Windows PCä¸Šå†™çš„ä¿„ç½—æ–¯æ–¹å—ï¼Œè°ƒè¯•åªèƒ½ç”¨æ–‡ä»¶è®°å½•ï¼Œè¯¸å¤šä¸æ–¹ä¾¿ï¼Œç»è¿‡ä¸€ç•ªæŠ˜è…¾ï¼Œæˆ‘çš„tetrisç»ˆäºè·‘èµ·æ¥äº†ã€‚
 
-Õıµ±ÎÒ×¼±¸¼ÌĞøÎªiphoneÅ¬Á¦µÄÊ±ºò£¬ÎÒµÄµÚ¶ş¸öiphoneºÜ²»ĞÒµÄ¶ªÊ§ÁË£¬ÎÒ²»Ô¸ÒâÔÙÂòÒ»¸öiphoneÁË£¬ÎÒÏëÎÒÓëiphoneÎŞÔµ¡£ÎÒµÄiphone¿ª·¢Ö®Â·¾Í´ËÔÚÖĞµÀ±¼éã¡£ÎªÁË¼ÍÄîÄÇÊÅÈ¥µÄËêÔÂ£¬ÎªÁË¼ÍÄîÎÒµÄĞÁÀÍ£¬ÎÒ½«ÎÒµ±³õ±àÒëtool chainsµÄ±Ê¼Ç³ÊÏÖÓÚ´Ë£¬ÒÔ¼°½«TetrisµÄ´úÂëpush½øgithub£¬²»ÇóÄÜ¶Ô±ğÈËÓĞËù°ïÖú£¬µ«Çó¶ÔµÃÆğ×Ô¼º¡£·Ï»°²»ËµÁË¡£
+æ­£å½“æˆ‘å‡†å¤‡ç»§ç»­ä¸ºiphoneåŠªåŠ›çš„æ—¶å€™ï¼Œæˆ‘çš„ç¬¬äºŒä¸ªiphoneå¾ˆä¸å¹¸çš„ä¸¢å¤±äº†ï¼Œæˆ‘ä¸æ„¿æ„å†ä¹°ä¸€ä¸ªiphoneäº†ï¼Œæˆ‘æƒ³æˆ‘ä¸iphoneæ— ç¼˜ã€‚æˆ‘çš„iphoneå¼€å‘ä¹‹è·¯å°±æ­¤åœ¨ä¸­é“å¥”æ®‚ã€‚ä¸ºäº†çºªå¿µé‚£é€å»çš„å²æœˆï¼Œä¸ºäº†çºªå¿µæˆ‘çš„è¾›åŠ³ï¼Œæˆ‘å°†æˆ‘å½“åˆç¼–è¯‘tool chainsçš„ç¬”è®°å‘ˆç°äºæ­¤ï¼Œä»¥åŠå°†Tetrisçš„ä»£ç pushè¿›githubï¼Œä¸æ±‚èƒ½å¯¹åˆ«äººæœ‰æ‰€å¸®åŠ©ï¼Œä½†æ±‚å¯¹å¾—èµ·è‡ªå·±ã€‚åºŸè¯ä¸è¯´äº†ã€‚
 
-h2. ±àÒëµÄ»·¾³µÄ¹¹½¨
+h2. ç¼–è¯‘çš„ç¯å¢ƒçš„æ„å»º
 
 h3. Foreword
 
-Èç¹ûÒª±àÒë¿ÉÒÔÔÚiphoneÉÏÔËĞĞµÄ³ÌĞò£¬ÎÒÃÇ¿ÉÒÔÓĞÁ½ÖÖÑ¡Ôñ£º
+å¦‚æœè¦ç¼–è¯‘å¯ä»¥åœ¨iphoneä¸Šè¿è¡Œçš„ç¨‹åºï¼Œæˆ‘ä»¬å¯ä»¥æœ‰ä¸¤ç§é€‰æ‹©ï¼š
 
-# Ê¹ÓÃMACÏµÍ³£¬¼´ÊÇµ±Ç°µÄMac OS X LeopardÏµÍ³£¬È»ºóÏÂÔØiphone sdk¡£´Ë·½·¨²»ÊÊºÏÎÒµÈgeekÖ®±²£¬×°MACµÃ·Ñ²»ÉÙ¹¦·ò£¬ËäËµÕâ¸ö·½·¨ÊÇ¿ª·¢iphoneÈí¼şµÄ¹Ù·½ÍÆ¼ö·½·¨£¬µ«ÊÇÖÁÉÙ²»ÊÊºÏÎÒ¡£
-# ¿ªÔ´¹¤¾ßÁ´¡£ÕâÊÇ¼«ÎªÅ£±ÆµÄºÚ¿ÍÍ¨¹ıÄæÏòÊÖ¶ÎµÃµ½µÄ·½·¨£¬¿ÉÒÔÔÚGnu linuxÉÏ½øĞĞiphone¿ª·¢¡£
+# ä½¿ç”¨MACç³»ç»Ÿï¼Œå³æ˜¯å½“å‰çš„Mac OS X Leopardç³»ç»Ÿï¼Œç„¶åä¸‹è½½iphone sdkã€‚æ­¤æ–¹æ³•ä¸é€‚åˆæˆ‘ç­‰geekä¹‹è¾ˆï¼Œè£…MACå¾—è´¹ä¸å°‘åŠŸå¤«ï¼Œè™½è¯´è¿™ä¸ªæ–¹æ³•æ˜¯å¼€å‘iphoneè½¯ä»¶çš„å®˜æ–¹æ¨èæ–¹æ³•ï¼Œä½†æ˜¯è‡³å°‘ä¸é€‚åˆæˆ‘ã€‚
+# å¼€æºå·¥å…·é“¾ã€‚è¿™æ˜¯æä¸ºç‰›é€¼çš„é»‘å®¢é€šè¿‡é€†å‘æ‰‹æ®µå¾—åˆ°çš„æ–¹æ³•ï¼Œå¯ä»¥åœ¨Gnu linuxä¸Šè¿›è¡Œiphoneå¼€å‘ã€‚
 
 h3. Start here
 
-ÏµÍ³×¼±¸£ºÎÒµÄiphoneÄ¿Ç°µÄ°æ±¾ÊÇ3.1.2£¬ËùÒÔÎÒ¾ÍÒªÒÔÕâ¸ö°æ±¾Îª»ù´¡¹¹Ôì±àÒë»·¾³¡£ÔÚ¹¹ÔìÖ®Ç°£¬ÎÒÃÇĞèÒªÈıÑù¶«Î÷£º
-# µÚÒ»¸ö¾ÍÊÇiphone_sdk_3.1.2£¬¹Ù·½ÓÃ·¨ĞèÒªËü£¬ÎÒÃÇÒ²ĞèÒªËü£¬Ö®Ç°µÄÁ´½Ó²»ÄÜÓÃÁË£¬ËùÒÔÎÒ¾ÍÉ¾³ıÁË£¬Ó¦¸ÃÔÚ¹ÙÍøÉÏ»¹ÄÜÕÒµ½¡£
-# »¹ÓĞÒ»¸ö¾ÍÊÇiphone 3.1.2 os firmware£¬¼´ÏµÍ³¹Ì¼ş3.1.2¡£
-# ÔÚgoogle codeÉÏµÄÍĞ¹ÜÏîÄ¿ÖĞÓĞºÚ¿ÍÃÇ½¨Á¢µÄÒ»¸öÏîÄ¿£¬Ä¿µÄÊÇÔÚlinuxÉÏ¹¹½¨±àÒëiphoneµÄ»·¾³£¬ÕâÊÇÆäÁ´½Ó: "http://code.google.com/p/iphonedevonlinux/wiki/Installation":http://code.google.com/p/iphonedevonlinux/wiki/Installation
+ç³»ç»Ÿå‡†å¤‡ï¼šæˆ‘çš„iphoneç›®å‰çš„ç‰ˆæœ¬æ˜¯3.1.2ï¼Œæ‰€ä»¥æˆ‘å°±è¦ä»¥è¿™ä¸ªç‰ˆæœ¬ä¸ºåŸºç¡€æ„é€ ç¼–è¯‘ç¯å¢ƒã€‚åœ¨æ„é€ ä¹‹å‰ï¼Œæˆ‘ä»¬éœ€è¦ä¸‰æ ·ä¸œè¥¿ï¼š
+# ç¬¬ä¸€ä¸ªå°±æ˜¯iphone_sdk_3.1.2ï¼Œå®˜æ–¹ç”¨æ³•éœ€è¦å®ƒï¼Œæˆ‘ä»¬ä¹Ÿéœ€è¦å®ƒï¼Œä¹‹å‰çš„é“¾æ¥ä¸èƒ½ç”¨äº†ï¼Œæ‰€ä»¥æˆ‘å°±åˆ é™¤äº†ï¼Œåº”è¯¥åœ¨å®˜ç½‘ä¸Šè¿˜èƒ½æ‰¾åˆ°ã€‚
+# è¿˜æœ‰ä¸€ä¸ªå°±æ˜¯iphone 3.1.2 os firmwareï¼Œå³ç³»ç»Ÿå›ºä»¶3.1.2ã€‚
+# åœ¨google codeä¸Šçš„æ‰˜ç®¡é¡¹ç›®ä¸­æœ‰é»‘å®¢ä»¬å»ºç«‹çš„ä¸€ä¸ªé¡¹ç›®ï¼Œç›®çš„æ˜¯åœ¨linuxä¸Šæ„å»ºç¼–è¯‘iphoneçš„ç¯å¢ƒï¼Œè¿™æ˜¯å…¶é“¾æ¥: "http://code.google.com/p/iphonedevonlinux/wiki/Installation":http://code.google.com/p/iphonedevonlinux/wiki/Installation
 
 h3. Follow here
 
-ÎÒÑ¡ÔñµÄ gnu linux ÊÇ¾Ã¸ºÊ¢ÃûµÄUbuntu 9.10.
-Ê×ÏÈ£¬ÎÒÃÇÒªÓÃsvn½«±àÒëĞèÒªµÄÒ»Ğ©½Å±¾ÎÄ¼şcheck out³öÀ´£¬ÃüÁîÈçÏÂ£º
+æˆ‘é€‰æ‹©çš„ gnu linux æ˜¯ä¹…è´Ÿç››åçš„Ubuntu 9.10.
+é¦–å…ˆï¼Œæˆ‘ä»¬è¦ç”¨svnå°†ç¼–è¯‘éœ€è¦çš„ä¸€äº›è„šæœ¬æ–‡ä»¶check outå‡ºæ¥ï¼Œå‘½ä»¤å¦‚ä¸‹ï¼š
 
 {% highlight bash %}
 mkdir -p ~/Projects/iphone/
@@ -37,9 +37,9 @@ cd ~/Projects/iphone/toolchain
 svn checkout http://iphonedevonlinux.googlecode.com/svn/trunk/ ./
 {% endhighlight %}
 
-ÔÚtoolchainµÄÄ¿Â¼(¼´ÏÂÃæ¶¼ÊÇ½Å±¾ÎÄ¼şµÄÄÇÒ»¼¶)ÏÂ£¬½¨Á¢files/firmwareÄ¿Â¼¼¶£º
-½«iphone_sdk_3.1.2_with_xcode_3.1.4__leopard__9m2809.dmg¿½±´µ½¸Õ²Å½¨Á¢µÄfilesÄ¿Â¼ÏÂ£¬½«iPhone1,2_3.1.2_7D11_Restore.ipsw¿½±´µ½filesÏÂÃæµÄfirmwareÄ¿Â¼ÏÂ¡£
-µ±È»ÔÚgnu linux±àÒë toolchainÇ°£¬ÎÒÃÇ»¹±ØĞë½«ÒÔÏÂÈí¼ş°ü°²×°µ½ÎÒÃÇµÄ desktopÉÏ£º
+åœ¨toolchainçš„ç›®å½•(å³ä¸‹é¢éƒ½æ˜¯è„šæœ¬æ–‡ä»¶çš„é‚£ä¸€çº§)ä¸‹ï¼Œå»ºç«‹files/firmwareç›®å½•çº§ï¼š
+å°†iphone_sdk_3.1.2_with_xcode_3.1.4__leopard__9m2809.dmgæ‹·è´åˆ°åˆšæ‰å»ºç«‹çš„filesç›®å½•ä¸‹ï¼Œå°†iPhone1,2_3.1.2_7D11_Restore.ipswæ‹·è´åˆ°filesä¸‹é¢çš„firmwareç›®å½•ä¸‹ã€‚
+å½“ç„¶åœ¨gnu linuxç¼–è¯‘ toolchainå‰ï¼Œæˆ‘ä»¬è¿˜å¿…é¡»å°†ä»¥ä¸‹è½¯ä»¶åŒ…å®‰è£…åˆ°æˆ‘ä»¬çš„ desktopä¸Šï¼š
 
 <pre>
 apt-get install \
@@ -71,13 +71,13 @@ apt-get install \
   zlib1g-dev \
 </pre>
 
-Èç¹ûÄãµÄ¼ÆËã»úÊÇ64Î»µÄ£¬ĞèÒª¿ÌÒâ°²×°ÒÔÏÂÈí¼ş°ü£º
+å¦‚æœä½ çš„è®¡ç®—æœºæ˜¯64ä½çš„ï¼Œéœ€è¦åˆ»æ„å®‰è£…ä»¥ä¸‹è½¯ä»¶åŒ…ï¼š
 
 <pre>
 apt-get install g++-4.3-multilib gcc-4.3-multilib gobjc-4.3-multilib
 </pre>
 
-Èç¹ûÎÒÃÇµÄUbuntuÉÏgccµÄ°æ±¾²»ÊÇ4.3µÄ»°£¬ÎÒÃÇÒªÓÃ»Ø4.3¡£Èç¹ûÄãÖ´ÒâÒªÓÃ4.4µÄ»°£¬ÔÚ±àÒëtoolchainµÄÊ±ºò»á³öÏÖºÜ¶à±àÒë´íÎó¡£½â¾ö·½°¸¾ÍÊÇ×ªµ½/usr/binÄ¿Â¼ÏÂ£¬É¾³ıgcc, g++,  gobjc, ÔËĞĞÒÔÏÂ¼¸¸ölnÃüÁî½¨Á¢ºÍËùĞèÒª°æ±¾±àÒëÆ÷µÄÁ´½Ó£º
+å¦‚æœæˆ‘ä»¬çš„Ubuntuä¸Šgccçš„ç‰ˆæœ¬ä¸æ˜¯4.3çš„è¯ï¼Œæˆ‘ä»¬è¦ç”¨å›4.3ã€‚å¦‚æœä½ æ‰§æ„è¦ç”¨4.4çš„è¯ï¼Œåœ¨ç¼–è¯‘toolchainçš„æ—¶å€™ä¼šå‡ºç°å¾ˆå¤šç¼–è¯‘é”™è¯¯ã€‚è§£å†³æ–¹æ¡ˆå°±æ˜¯è½¬åˆ°/usr/binç›®å½•ä¸‹ï¼Œåˆ é™¤gcc, g++,  gobjc, è¿è¡Œä»¥ä¸‹å‡ ä¸ªlnå‘½ä»¤å»ºç«‹å’Œæ‰€éœ€è¦ç‰ˆæœ¬ç¼–è¯‘å™¨çš„é“¾æ¥ï¼š
 
 {% highlight bash %}
 ls  -sf  gcc-4.3    gcc
@@ -85,14 +85,14 @@ ls  -sf  g++-4.3    g++
 ls  -sf  gobjc-4.3  gobjc 
 {% endhighlight %}
 
-È»ºó×ªµ½toolchainÄ¿Â¼ÏÂ£¬Ö´ĞĞ ÒÔÏÂÃüÁî£º
+ç„¶åè½¬åˆ°toolchainç›®å½•ä¸‹ï¼Œæ‰§è¡Œ ä»¥ä¸‹å‘½ä»¤ï¼š
 
 {% highlight bash %}
 chmod u+x toolchain.sh
 ./toolchain.sh all
 {% endhighlight %}
 
-µ±È»ÕâÑùÖ´ĞĞÒ²Ğí»áºÜÍêÃÀ£¬Ò»²½µ½Î»Éú³ÉÁËÎÒÃÇĞèÒªµÄ¹¤¾ßÁ´¡£µ«ÊÇÔÚ´ó¶àÇé¿öÏÂ£¬Ö´ĞĞ¹ı³Ì»áÓĞºÜ¶à´íÎó£¬ËùÒÔÎÒÃÇ×îºÃÒ»²½Ò»²½À´£¬·Ö½âµÄÃüÁîÈçÏÂ£º
+å½“ç„¶è¿™æ ·æ‰§è¡Œä¹Ÿè®¸ä¼šå¾ˆå®Œç¾ï¼Œä¸€æ­¥åˆ°ä½ç”Ÿæˆäº†æˆ‘ä»¬éœ€è¦çš„å·¥å…·é“¾ã€‚ä½†æ˜¯åœ¨å¤§å¤šæƒ…å†µä¸‹ï¼Œæ‰§è¡Œè¿‡ç¨‹ä¼šæœ‰å¾ˆå¤šé”™è¯¯ï¼Œæ‰€ä»¥æˆ‘ä»¬æœ€å¥½ä¸€æ­¥ä¸€æ­¥æ¥ï¼Œåˆ†è§£çš„å‘½ä»¤å¦‚ä¸‹ï¼š
 
 {% highlight bash %}
 ./toolchain.sh headers
@@ -101,25 +101,25 @@ chmod u+x toolchain.sh
 ./toolchain.sh build
 {% endhighlight %}
 
-ÕâĞ©ÃüÁîµÄÖ´ĞĞÓĞµÄ·Ç³£ºÄÊ±¡£
+è¿™äº›å‘½ä»¤çš„æ‰§è¡Œæœ‰çš„éå¸¸è€—æ—¶ã€‚
 
-Èç¹ûÓöµ½"We need the decryption key for 018-6028-014.dmg."µÄÎÊÌâ£¬¿ÉÒÔ½«toolchain.shÏà¹ØÎ»ÖÃ¸Ä³ÉÒÔÏÂÄ£Ñù£º
+å¦‚æœé‡åˆ°"We need the decryption key for 018-6028-014.dmg."çš„é—®é¢˜ï¼Œå¯ä»¥å°†toolchain.shç›¸å…³ä½ç½®æ”¹æˆä»¥ä¸‹æ¨¡æ ·ï¼š
 
 !/images/article/iphone_tool_chain_sh.png!
 
-ÆäÊµ¾ÍÊÇ½«ÒÔÏÂ×Ö·û´®¸³¸øDECRYPTION_KEY_SYSTEM£º
-DECRYPTION_KEY_SYSTEM= ¡°a8a886d56011d2d98b190d0a498f6fcac719467047639cd601fd53a4a1d93c24e1b2ddc6¡±¡£
+å…¶å®å°±æ˜¯å°†ä»¥ä¸‹å­—ç¬¦ä¸²èµ‹ç»™DECRYPTION_KEY_SYSTEMï¼š
+DECRYPTION_KEY_SYSTEM= â€œa8a886d56011d2d98b190d0a498f6fcac719467047639cd601fd53a4a1d93c24e1b2ddc6â€ã€‚
 
 h3. Going here
-µ±./toolchain.sh buildÖ´ĞĞÍê±Ï£¬Ã»ÓĞ´íÎóµÄ»°£¬ÎÒÃÇµÄ¹¤¾ßÁ´¾Í±àÒëÍê±ÏÁË£¬ÔÚtoolchain\toolchainÄ¿Â¼ÏÂÉú³ÉÁË¼¸¸öÄ¿Â¼£ºbld, pre,src,sysÕâ¼¸¸öÄ¿Â¼£¬°üÀ¨ÁË±àÒëiphoneÈí¼şËùĞèÒªµÄ¹¤¾ß£¬´úÂë£¬Í·ÎÄ¼ş£¬ÒÔ¼°¿â£¬ÔÚpre\binÏÂÓĞÎÒÃÇËùĞèÒªµÄ½»²æ±àÒëÆ÷£¬Èç¹ûÒª±àÒëtoolchain\apps\HelloToolchainÄ¿Â¼ÏÂµÄmakefile ÎÄ¼ş£¬»¹±ØĞë½«½»²æ±àÒëÆ÷arm-apple-darwin9-gccµÄÂ·¾¶¼ÓÈëµ½LinuxµÄ»·¾³±äÁ¿ÖĞÈ¥£¬±ÈÈç¼ÓÈëµ½/home/xxx/.profileÎÄ¼şµ±ÖĞÈçÏÂÃüÁî£º
+å½“./toolchain.sh buildæ‰§è¡Œå®Œæ¯•ï¼Œæ²¡æœ‰é”™è¯¯çš„è¯ï¼Œæˆ‘ä»¬çš„å·¥å…·é“¾å°±ç¼–è¯‘å®Œæ¯•äº†ï¼Œåœ¨toolchain\toolchainç›®å½•ä¸‹ç”Ÿæˆäº†å‡ ä¸ªç›®å½•ï¼šbld, pre,src,sysè¿™å‡ ä¸ªç›®å½•ï¼ŒåŒ…æ‹¬äº†ç¼–è¯‘iphoneè½¯ä»¶æ‰€éœ€è¦çš„å·¥å…·ï¼Œä»£ç ï¼Œå¤´æ–‡ä»¶ï¼Œä»¥åŠåº“ï¼Œåœ¨pre\binä¸‹æœ‰æˆ‘ä»¬æ‰€éœ€è¦çš„äº¤å‰ç¼–è¯‘å™¨ï¼Œå¦‚æœè¦ç¼–è¯‘toolchain\apps\HelloToolchainç›®å½•ä¸‹çš„makefile æ–‡ä»¶ï¼Œè¿˜å¿…é¡»å°†äº¤å‰ç¼–è¯‘å™¨arm-apple-darwin9-gccçš„è·¯å¾„åŠ å…¥åˆ°Linuxçš„ç¯å¢ƒå˜é‡ä¸­å»ï¼Œæ¯”å¦‚åŠ å…¥åˆ°/home/xxx/.profileæ–‡ä»¶å½“ä¸­å¦‚ä¸‹å‘½ä»¤ï¼š
 
 {% highlight bash %}
 export PATH=/home/xxx/toolchain/toolchain/pre/bin:$PATH
 {% endhighlight %}
 
-¸ÄºÃÖ®ºó£¬Èç¹û±àÒëmakefileµÄÊ±ºòÓĞÈçÏÂÁ´½Ó´íÎó£º
-'ld: library not found -lobjc' »òÕß 'ld: framework not found Foundation',
-ËµÃ÷ÎÒÃÇÃ»ÓĞ×¼±¸ºÃiphoneÏà¹ØµÄÁ´½Ó¿â£¬½â¾ö·½·¨ÈçÏÂ£º
+æ”¹å¥½ä¹‹åï¼Œå¦‚æœç¼–è¯‘makefileçš„æ—¶å€™æœ‰å¦‚ä¸‹é“¾æ¥é”™è¯¯ï¼š
+'ld: library not found -lobjc' æˆ–è€… 'ld: framework not found Foundation',
+è¯´æ˜æˆ‘ä»¬æ²¡æœ‰å‡†å¤‡å¥½iphoneç›¸å…³çš„é“¾æ¥åº“ï¼Œè§£å†³æ–¹æ³•å¦‚ä¸‹ï¼š
 
 <pre>
 In ~/ toolchain/toolchain/sys, rename folder System to System2
@@ -128,11 +128,11 @@ Copy folder ~/toolchain/sdks/iPhoneOS3.1.2.sdk/System to ~/toolchain/toolchain/s
 Copy folder ~ /toolchain/sdks/iPhoneOS3.1.2.sdk/usr/lib to ~ /toolchain/toolchain/sys/usr
 </pre>
 
-±àÒë³É¹¦ºó£¬ĞèÒªÍ¨¹ısshµÄ·½Ê½Í¨¹ıwifiÍøÂç£¨ÕâÊÇÄ¿Ç°Î¨Ò»µÄ×î·½±ãµÄ·½Ê½ÁË£©½«³ÌĞòÄ¿Â¼ÉÏ´«µ½iphone ÉÏ¡£Ä¿Â¼ÃüÃû·½Ê½Îª£ºyourappname.app,Ä¿Â¼ÖĞÖÁÉÙÓĞ³ÌĞòÎÄ¼ş£¬info.plist, default.png, info.plistÊÇxml¸ñÊ½µÄ³ÌĞòĞÅÏ¢ÃèÊöÎÄ¼ş¡£
+ç¼–è¯‘æˆåŠŸåï¼Œéœ€è¦é€šè¿‡sshçš„æ–¹å¼é€šè¿‡wifiç½‘ç»œï¼ˆè¿™æ˜¯ç›®å‰å”¯ä¸€çš„æœ€æ–¹ä¾¿çš„æ–¹å¼äº†ï¼‰å°†ç¨‹åºç›®å½•ä¸Šä¼ åˆ°iphone ä¸Šã€‚ç›®å½•å‘½åæ–¹å¼ä¸ºï¼šyourappname.app,ç›®å½•ä¸­è‡³å°‘æœ‰ç¨‹åºæ–‡ä»¶ï¼Œinfo.plist, default.png, info.plistæ˜¯xmlæ ¼å¼çš„ç¨‹åºä¿¡æ¯æè¿°æ–‡ä»¶ã€‚
 
-ÉÏ´«Ö®ºó£¬»¹ĞèÒª³ÌĞòÇ©Ãû£¬³ÌĞòÃû×Ö½Ğldid£¬ĞèÒª×°ÔÚiphone ÉÏ¡£°²×°·½Ê½¼òÊöÏÂ£¬¾ÍÊÇÏÈÍ¨¹ıiphoneÀïµÄCydia °²×°apt-get£¬mobile terminal¹¤¾ß£¬È»ºóÍ¨¹ıapt-get install ldid À´°²×°¡£
+ä¸Šä¼ ä¹‹åï¼Œè¿˜éœ€è¦ç¨‹åºç­¾åï¼Œç¨‹åºåå­—å«ldidï¼Œéœ€è¦è£…åœ¨iphone ä¸Šã€‚å®‰è£…æ–¹å¼ç®€è¿°ä¸‹ï¼Œå°±æ˜¯å…ˆé€šè¿‡iphoneé‡Œçš„Cydia å®‰è£…apt-getï¼Œmobile terminalå·¥å…·ï¼Œç„¶åé€šè¿‡apt-get install ldid æ¥å®‰è£…ã€‚
 
-ÔÚmakefileÖĞÓ¦¸ÃÏÂÉÏÒÔÏÂÄÚÈİ£¬ÓÈÆäÊÇµÚÒ»¸öÃüÁî£¬È¨ÏŞ²»¶Ô£¬³ÌĞòÍ¼±ê¾ÍÊÇ²»»á³öÏÖÔÚiphone ÉÏ£º
+åœ¨makefileä¸­åº”è¯¥ä¸‹ä¸Šä»¥ä¸‹å†…å®¹ï¼Œå°¤å…¶æ˜¯ç¬¬ä¸€ä¸ªå‘½ä»¤ï¼Œæƒé™ä¸å¯¹ï¼Œç¨‹åºå›¾æ ‡å°±æ˜¯ä¸ä¼šå‡ºç°åœ¨iphone ä¸Šï¼š
 
 {% highlight bash %}
 chmod -R 755 /Applications/HelloToolchain.app
@@ -141,11 +141,11 @@ ldid -S /Applications/HelloToolchain.app/HelloToolchain
 
 h3. End here
 
-HelloToolchain³É¹¦ÔËĞĞ£¬ÕâÆª±Ê¼Ç¾Í¸Ã¸æÒ»¶ÎÂäÁË¡£
+HelloToolchainæˆåŠŸè¿è¡Œï¼Œè¿™ç¯‡ç¬”è®°å°±è¯¥å‘Šä¸€æ®µè½äº†ã€‚
 
-h2. Programming ±Ê¼Ç
+h2. Programming ç¬”è®°
 
-# Calling the object¡¯s member function.
+# Calling the objectâ€™s member function.
 
 Given an object named myWidget, a message can be sent to its powerOn method this way:
 
@@ -186,8 +186,8 @@ returnValue = widget_powerOn(myWidget);
 @end
 {% endhighlight %}
 
-Ô¤´¦ÀíÃüÁî#import´úÌæ#include£¬ÓÃÀ´ÒıÓÃËùĞèÒªµÄÍ·ÎÄ¼ş¡£
-@interfaceÃüÁî¶¨ÒåµÄinterface ÀàËÆÓÚC++ÖĞµÄÀàµÄÉùÃ÷£º
+é¢„å¤„ç†å‘½ä»¤#importä»£æ›¿#includeï¼Œç”¨æ¥å¼•ç”¨æ‰€éœ€è¦çš„å¤´æ–‡ä»¶ã€‚
+@interfaceå‘½ä»¤å®šä¹‰çš„interface ç±»ä¼¼äºC++ä¸­çš„ç±»çš„å£°æ˜ï¼š
 
 
 {% highlight objective-c %}
@@ -196,28 +196,28 @@ returnValue = widget_powerOn(myWidget);
 @end
 {% endhighlight %}
 
-+ºÅ±íÊ¾ÊÇnon-static member function£¬-±íÊ¾static member function£¬member function ÔÚÀ¨ºÅÍâÃæÉùÃ÷¡£
++å·è¡¨ç¤ºæ˜¯non-static member functionï¼Œ-è¡¨ç¤ºstatic member functionï¼Œmember function åœ¨æ‹¬å·å¤–é¢å£°æ˜ã€‚
 
 # About UIKit
 
-## ´´½¨windows.
+## åˆ›å»ºwindows.
 
-»ñÈ¡iphoneµÄÈ«ÆÁÄ»µÄ³ß´çÊı¾İ£º
+è·å–iphoneçš„å…¨å±å¹•çš„å°ºå¯¸æ•°æ®ï¼š
 
 {% highlight objective-c %}
 CGRect windowRect = [ UIHardware fullScreenApplicationContentRect ];
 {% endhighlight %}
            
-UIHardwareÊÇframeworkÖĞµÄobject,Í¨¹ıµ÷ÓÃfullScreenApplicationContentRectÀ´»ñÈ¡Õû¸öÆÁÄ»µÄ¾ØĞÎÊı¾İ¡£
+UIHardwareæ˜¯frameworkä¸­çš„object,é€šè¿‡è°ƒç”¨fullScreenApplicationContentRectæ¥è·å–æ•´ä¸ªå±å¹•çš„çŸ©å½¢æ•°æ®ã€‚
 
-Í¨¹ı¾ØĞÎÊı¾İÀ´´´½¨windows
+é€šè¿‡çŸ©å½¢æ•°æ®æ¥åˆ›å»ºwindows
 
 {% highlight objective-c %}
 UIWindow *window = [ UIWindow alloc ];
 [ window initWithContentRect: windowRect ];
 {% endhighlight %}
 
-## ´´½¨view.
+## åˆ›å»ºview.
 
 {% highlight objective-c %}
 CGRect viewRect = [ UIHardware fullScreenApplicationContentRect ];
@@ -225,7 +225,7 @@ viewRect.origin.x = viewRect.origin.y = 0.0;
 UIView *mainView = [ [ MainView alloc ] initWithFrame: viewRect ];
 {% endhighlight %}
 
-## ÏÔÊ¾view.
+## æ˜¾ç¤ºview.
 
 {% highlight objective-c %}
 [ window setContentView: mainView ];
@@ -234,7 +234,7 @@ UIView *mainView = [ [ MainView alloc ] initWithFrame: viewRect ];
 [ window _setHidden: NO ];
 {% endhighlight %}
 
-## ¶ÔviewµÄ¼Ì³Ğ.
+## å¯¹viewçš„ç»§æ‰¿.
 
 {% highlight objective-c %}
 @interface MainView : UIView
@@ -247,8 +247,8 @@ UIView *mainView = [ [ MainView alloc ] initWithFrame: viewRect ];
 @end
 {% endhighlight %}
 
-initWithFrameÊÇ³õÊ¼»¯µÄÊ±ºòµ÷ÓÃµÄº¯Êı£¬deallocÊÇÍË³öÎö¹¹µÄÊ±ºòµ÷ÓÃ¡£ÕâÁ½¸öº¯ÊıÊÇ¼Ì³ĞÀà±ØĞë¼Ì³ĞµÄº¯Êı¡£
+initWithFrameæ˜¯åˆå§‹åŒ–çš„æ—¶å€™è°ƒç”¨çš„å‡½æ•°ï¼Œdeallocæ˜¯é€€å‡ºææ„çš„æ—¶å€™è°ƒç”¨ã€‚è¿™ä¸¤ä¸ªå‡½æ•°æ˜¯ç»§æ‰¿ç±»å¿…é¡»ç»§æ‰¿çš„å‡½æ•°ã€‚
 
-h2. ²Î¿¼×ÊÁÏ
-# ¡°http://code.google.com/p/iphonedevonlinux/wiki/Installation¡±:http://code.google.com/p/iphonedevonlinux/wiki/Installation
+h2. å‚è€ƒèµ„æ–™
+# â€œhttp://code.google.com/p/iphonedevonlinux/wiki/Installationâ€:http://code.google.com/p/iphonedevonlinux/wiki/Installation
 # iphone developer guide
