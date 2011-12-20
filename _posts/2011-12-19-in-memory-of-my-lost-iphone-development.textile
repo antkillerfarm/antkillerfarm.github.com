@@ -233,7 +233,7 @@ UIView *mainView = [ [ MainView alloc ] initWithFrame: viewRect ];
 
 h4. 显示view.
 
-{% highlight objective-c %}
+{% highlight objc %}
 [ window setContentView: mainView ];
 [ window orderFront: self ];
 [ window makeKey: self ];
