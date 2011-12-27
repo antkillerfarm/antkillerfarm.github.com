@@ -20,14 +20,20 @@ var WRInitTime=(new Date()).getTime();
 </script>
 <!-- ClickTale end of Top part -->
 
-<div class="site">
+<section id="main">
   <div class="title">
     <a href="/">Alexunder Hacking</a>
     <a class="extra" href="/">home</a>
   </div>
-  
-  {{ content }}
-  
+ 
+ <div id="content">
+ <article class="articlecontent">
+ {{ content }}
+ </article>
+ </div>
+
+<aside>
+<section>
   <div class="footer">
     <div class="contact">
       <p>
@@ -42,7 +48,9 @@ var WRInitTime=(new Date()).getTime();
       </p>
     </div>
 	</div>
+</section>
 
+<section>
 	<div class="RSS">
 	<div>
 	<!-- Feedsky FEED发布代码开始 -->
@@ -58,11 +66,12 @@ var WRInitTime=(new Date()).getTime();
 	<!-- Feedsky FEED发布代码结束 -->
 	</div>
 	</div>
-</div>
+</section>
+</aside>
+
+</section>
 
 <a href="http://github.com/alexunder"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
-
-<iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=1649013440&verifier=6f268132&dpc=1"></iframe>
 
 <!-- ClickTale Bottom part -->
 <div id="ClickTaleDiv" style="display: none;"></div>
