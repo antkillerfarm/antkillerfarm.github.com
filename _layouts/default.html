@@ -20,14 +20,20 @@ var WRInitTime=(new Date()).getTime();
 </script>
 <!-- ClickTale end of Top part -->
 
-<div class="site">
+<section id="main">
   <div class="title">
     <a href="/">Alexunder Hacking</a>
     <a class="extra" href="/">home</a>
   </div>
-  
-  {{ content }}
-  
+ 
+ <div id="content">
+ <article class="articlecontent">
+ {{ content }}
+ </article>
+ </div>
+
+<aside>
+<section>
   <div class="footer">
     <div class="contact">
       <p>
@@ -42,7 +48,9 @@ var WRInitTime=(new Date()).getTime();
       </p>
     </div>
 	</div>
+</section>
 
+<section>
 	<div class="RSS">
 	<div>
 	<!-- Feedsky FEED发布代码开始 -->
@@ -58,7 +66,10 @@ var WRInitTime=(new Date()).getTime();
 	<!-- Feedsky FEED发布代码结束 -->
 	</div>
 	</div>
-</div>
+</section>
+</aside>
+
+</section>
 
 <a href="http://github.com/alexunder"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
 

@@ -134,7 +134,7 @@ Copy folder ~ /toolchain/sdks/iPhoneOS3.1.2.sdk/usr/lib to ~ /toolchain/toolchai
 
 编译成功后，需要通过ssh的方式通过wifi网络（这是目前唯一的最方便的方式了）将程序目录上传到iphone 上。目录命名方式为：yourappname.app,目录中至少有程序文件，info.plist, default.png, info.plist是xml格式的程序信息描述文件。
 
-上传之后，还需要程序签名，程序名字叫ldid，需要装在iphone 上。安装方式简述下，就是先通过iphone里的Cydia 安装apt-get，mobile terminal工具，然后通过apt-get install ldid 来安装。
+上传之后，还需要程序签名，程序名字叫ldid，需要装在iphone上。安装方式简述下，就是先通过iphone里的Cydia安装apt-get，mobile terminal工具，然后通过apt-get install ldid 来安装。
 
 在makefile中应该下上以下内容，尤其是第一个命令，权限不对，程序图标就是不会出现在iphone 上：
 
