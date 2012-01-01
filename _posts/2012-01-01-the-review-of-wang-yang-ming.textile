@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 新年谈心学---《阳明学述要》读书笔记
-category:culture
+category: culture
 ---
 
 p.   未经审视的人生是没有价值的
