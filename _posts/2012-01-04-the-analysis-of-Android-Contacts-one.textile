@@ -26,7 +26,7 @@ p. 当你在Android的界面中，点击Contacts的图标，Contacts应用会秀
 </intent-filter>
 </pre>
 
-p. 这是每次默认点击图标时的intent,这是ContactsListActivity,他继承自ListActivity：
+p. 这是每次默认点击图标时的intent，这是ContactsListActivity，他继承自ListActivity：
 
 !/images/article/ContactsListActivity.PNG!
 
