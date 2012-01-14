@@ -26,7 +26,7 @@ p. 当你在Android的界面中，点击Contacts的图标，Contacts应用会秀
 </intent-filter>
 </pre>
 
-p. 这是每次默认点击图标时的intent,这是在ContactsListActivity,他继承自ListActivity：
+p. 这是每次默认点击图标时的intent,这是ContactsListActivity,他继承自ListActivity：
 
 !/images/article/ContactsListActivity.PNG!
 
@@ -80,7 +80,7 @@ public void startQuery (int token, Object cookie, Uri uri, String[] projection, 
 public final void startUpdate (int token, Object cookie, Uri uri, ContentValues values, String selection, String[] selectionArgs)
 {% endhighlight %}
 
-p. 我们认为AsyncQueryHandler里实现了异步操作，如果我们调用以上除了handleMesssage以外的接口都不会给界面带来阻塞感。在ContactsListActivity,我们的QueryHandler只自己实现了onQueryComplete，当每次查询结束的时候，这个回调函数可以根据实际情况更新Cursor数据。
+p. 我们认为AsyncQueryHandler里实现了异步操作，如果我们调用以上除了handleMesssage以外的接口都不会给界面带来阻塞感。在ContactsListActivity中,我们的QueryHandler只自己实现了onQueryComplete，当每次查询结束的时候，这个回调函数可以根据实际情况更新Cursor数据。
 
 p. 当ContactsListActivity在onResume，onRestart，以及ContentProvider状态或内容改变的时候(ContactItemListAdapter::onContentChanged与ContactsListActivity::checkProviderState)都会调用查询函数startQuery，查询出来的Cursor交给ContactItemListAdapter中就可以了，前文说过的。
 
