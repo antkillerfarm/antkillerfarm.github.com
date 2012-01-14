@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Android Contacts ´úÂë·ÖÎö-1
+title: Android Contacts ä»£ç åˆ†æ-1
 category: technology
 ---
 
-h2. Ç°ÑÔ
+h2. å‰è¨€
 
-±¾À´²»´òËã·¢±íAndroid·½ÃæµÄÎÄÕÂ£¬µ«ÊÇ±¾×Å¼ÇÂ¼Éú»îµÄ¾«Éñ£¬»¹ÊÇÓ¦¸Ã½«¹¤×÷µ±ÖĞ×Ü½á³öÀ´µÄ¶«Î÷Ğ´³öÀ´¡£±¾ÈË¸Õ½Ó´¥AndroidÊ±¼ä²»³¤£¬ËùÒÔĞ´µÄ¶«Î÷ÄÑÃâ»áÓĞ´íÎó£¬»¹Ï£Íû¿´µ½ÎÒÎÄÕÂµÄ¸ßÊÖÎªÎÒÖ¸³ö¡£
+æœ¬æ¥ä¸æ‰“ç®—å‘è¡¨Androidæ–¹é¢çš„æ–‡ç« ï¼Œä½†æ˜¯æœ¬ç€è®°å½•ç”Ÿæ´»çš„ç²¾ç¥ï¼Œè¿˜æ˜¯åº”è¯¥å°†å·¥ä½œå½“ä¸­æ€»ç»“å‡ºæ¥çš„ä¸œè¥¿å†™å‡ºæ¥ã€‚æœ¬äººåˆšæ¥è§¦Androidæ—¶é—´ä¸é•¿ï¼Œæ‰€ä»¥å†™çš„ä¸œè¥¿éš¾å…ä¼šæœ‰é”™è¯¯ï¼Œè¿˜å¸Œæœ›çœ‹åˆ°æˆ‘æ–‡ç« çš„é«˜æ‰‹ä¸ºæˆ‘æŒ‡å‡ºã€‚
 
-h2. Android Contacts×ÜÀÀ
+h2. Android Contactsæ€»è§ˆ
 
-p. ContactsÓ¦ÓÃÊÇÓÉGoogle AndroidÍÅ¶Ó±àĞ´µÄAndroidÔ­ÉúÓ¦ÓÃ¡£ÔÚÓ¦ÓÃ²ãÃæÉÏÉæ¼°µ½Contacts.apk, ContactProvider.apk¡£ÆäËûÏà¹ØµÄÔÚFramwork£¬ÒÔ¼°frameworkÓëlinuxÄÚºËÖ®¼äµÄSQLite.Contacts.apkÖ»ÊÇ½çÃæ²ãµÄÂß¼­£¬Ö÷ÒªÊµÏÖUIµÄÁ÷³Ì¡£¶ÔÓÚÁªÏµÈËµÄ²éÑ¯£¬´æ´¢£¬Ôö¼ÓºÍÉ¾³ı¶¼ÔÚContactProvider.apkÖĞ·â×°£¬ÊÇ¶Ôµ×²ãµÄSQLite½øĞĞ·â×°¡£Êı¾İµÄ²Ù×÷×îÖÕ¶¼ÊÇÔÚµ×²ãµÄSQLiteµÄC´úÂëÖĞ½øĞĞ¡£
+p. Contactsåº”ç”¨æ˜¯ç”±Google Androidå›¢é˜Ÿç¼–å†™çš„AndroidåŸç”Ÿåº”ç”¨ã€‚åœ¨åº”ç”¨å±‚é¢ä¸Šæ¶‰åŠåˆ°Contacts.apk, ContactProvider.apkã€‚å…¶ä»–ç›¸å…³çš„åœ¨Framworkï¼Œä»¥åŠframeworkä¸linuxå†…æ ¸ä¹‹é—´çš„SQLite.Contacts.apkåªæ˜¯ç•Œé¢å±‚çš„é€»è¾‘ï¼Œä¸»è¦å®ç°UIçš„æµç¨‹ã€‚å¯¹äºè”ç³»äººçš„æŸ¥è¯¢ï¼Œå­˜å‚¨ï¼Œå¢åŠ å’Œåˆ é™¤éƒ½åœ¨ContactProvider.apkä¸­å°è£…ï¼Œæ˜¯å¯¹åº•å±‚çš„SQLiteè¿›è¡Œå°è£…ã€‚æ•°æ®çš„æ“ä½œæœ€ç»ˆéƒ½æ˜¯åœ¨åº•å±‚çš„SQLiteçš„Cä»£ç ä¸­è¿›è¡Œã€‚
 
 h2. 1. Contacts
 
-h3. ³õÊ¼»¯
+h3. åˆå§‹åŒ–
 
-p. µ±ÄãÔÚAndroidµÄ½çÃæÖĞ£¬µã»÷ContactsµÄÍ¼±ê£¬ContactsÓ¦ÓÃ»áĞã³öÀ´¡£ÏÈ¿´ÔÚContactsµÄAndroidManifest.xmlÖĞ£º
+p. å½“ä½ åœ¨Androidçš„ç•Œé¢ä¸­ï¼Œç‚¹å‡»Contactsçš„å›¾æ ‡ï¼ŒContactsåº”ç”¨ä¼šç§€å‡ºæ¥ã€‚å…ˆçœ‹åœ¨Contactsçš„AndroidManifest.xmlä¸­ï¼š
 
 <pre>
 <intent-filter>
@@ -26,50 +26,50 @@ p. µ±ÄãÔÚAndroidµÄ½çÃæÖĞ£¬µã»÷ContactsµÄÍ¼±ê£¬ContactsÓ¦ÓÃ»áĞã³öÀ´¡£ÏÈ¿´ÔÚContac
 </intent-filter>
 </pre>
 
-p. ÕâÊÇÃ¿´ÎÄ¬ÈÏµã»÷Í¼±êÊ±µÄintent,ÕâÊÇÔÚContactsListActivity,Ëû¼Ì³Ğ×ÔListActivity£º
+p. è¿™æ˜¯æ¯æ¬¡é»˜è®¤ç‚¹å‡»å›¾æ ‡æ—¶çš„intent,è¿™æ˜¯åœ¨ContactsListActivity,ä»–ç»§æ‰¿è‡ªListActivityï¼š
 
 !/images/article/ContactsListActivity.PNG!
 
-p. ËùÒÔÏÈÔËĞĞ£º
+p. æ‰€ä»¥å…ˆè¿è¡Œï¼š
 
 {% highlight java %}
 ContactsListActivity::OnCreate
 {% endhighlight %}
 
-p. ÔÚContactsListActivity::OnCreateÖĞ»áµ÷ÓÃSetupListView,ÓÃÀ´´´½¨ÁªÏµÈËµÄList¡£
+p. åœ¨ContactsListActivity::OnCreateä¸­ä¼šè°ƒç”¨SetupListView,ç”¨æ¥åˆ›å»ºè”ç³»äººçš„Listã€‚
 
-p. ÔÚsetupListViewÖĞ£¬Í¨¹ıgetListView»ñµÃµ±Ç°ListActivityµÄListView¶ÔÏó£¬Í¨¹ıgetLayoutInflater»ñµÃµ±Ç°ActivityµÄUI²¼¾Ölayout¶ÔÏó£¬È»ºóĞÂ½¨ContactItemListAdapter£¬¼Ì³Ğ×ÔCursorAdaptor£¬»¹¼Ì³ĞÁËSectionIndexer, OnScrollListener, PinnedHeaderListView.PinnedHeaderAdapterµÈinteface:
+p. åœ¨setupListViewä¸­ï¼Œé€šè¿‡getListViewè·å¾—å½“å‰ListActivityçš„ListViewå¯¹è±¡ï¼Œé€šè¿‡getLayoutInflaterè·å¾—å½“å‰Activityçš„UIå¸ƒå±€layoutå¯¹è±¡ï¼Œç„¶åæ–°å»ºContactItemListAdapterï¼Œç»§æ‰¿è‡ªCursorAdaptorï¼Œè¿˜ç»§æ‰¿äº†SectionIndexer, OnScrollListener, PinnedHeaderListView.PinnedHeaderAdapterç­‰inteface:
 
 !/images/article/ContactItemListAdapter.PNG!
 
-p. CursorAdapter¸ºÔğ½«´ÓContentProviderÖĞ»ñµÃÊı¾İ¶ÔÏóCursorÌî³äµ½ÏàÓ¦µÄViewÖĞ£¬ĞÂ½¨µÄÊ±ºò½«µ±Ç°µÄActivityµÄthis¶ÔÏó´«Èë£¬Èç¹ûĞèÒª¸üĞÂCursorÊı¾İ£¬ÔÚ²éÑ¯»ò¸Ä±äµÄÊ±ºò£¬µ÷ÓÃContactItemListAdapter::setSuggestionsCursorÀ´ÉèÖÃĞÂµÄCursorÊı¾İ£¬Í¨¹ıÊµÏÖgetViewº¯ÊıÀ´ÓÃĞÂÊı¾İË¢ĞÂUI, getView¶¨ÒåÈçÏÂ£º
+p. CursorAdapterè´Ÿè´£å°†ä»ContentProviderä¸­è·å¾—æ•°æ®å¯¹è±¡Cursorå¡«å……åˆ°ç›¸åº”çš„Viewä¸­ï¼Œæ–°å»ºçš„æ—¶å€™å°†å½“å‰çš„Activityçš„thiså¯¹è±¡ä¼ å…¥ï¼Œå¦‚æœéœ€è¦æ›´æ–°Cursoræ•°æ®ï¼Œåœ¨æŸ¥è¯¢æˆ–æ”¹å˜çš„æ—¶å€™ï¼Œè°ƒç”¨ContactItemListAdapter::setSuggestionsCursoræ¥è®¾ç½®æ–°çš„Cursoræ•°æ®ï¼Œé€šè¿‡å®ç°getViewå‡½æ•°æ¥ç”¨æ–°æ•°æ®åˆ·æ–°UI, getViewå®šä¹‰å¦‚ä¸‹ï¼š
 
 {% highlight java %}
 public abstract View getView (int position, View convertView, ViewGroup parent)
 {% endhighlight %}
 
-p. ÔÚgetViewÖĞÈç¹ûÓĞ¿ÉÖØÓÃµÄÀÏview(¼´convertView)µÄ»°,¿ÉÖ±½ÓÊ¹ÓÃ£¬Èç¹ûÀÏµÄÎªnull,´úÂëÖĞµ÷ÓÃnewViewÀ´ĞÂ½¨view£¬Í¨¹ıbindViewÀ´°ó¶¨Êı¾İ£¬ÒÔÉÏÈı¸öº¯Êı¶¼ÊÇÓÉContactItemListAdapterÀ´ÊµÏÖ¡£
+p. åœ¨getViewä¸­å¦‚æœæœ‰å¯é‡ç”¨çš„è€view(å³convertView)çš„è¯,å¯ç›´æ¥ä½¿ç”¨ï¼Œå¦‚æœè€çš„ä¸ºnull,ä»£ç ä¸­è°ƒç”¨newViewæ¥æ–°å»ºviewï¼Œé€šè¿‡bindViewæ¥ç»‘å®šæ•°æ®ï¼Œä»¥ä¸Šä¸‰ä¸ªå‡½æ•°éƒ½æ˜¯ç”±ContactItemListAdapteræ¥å®ç°ã€‚
 
-p. Í¨¹ıµ÷ÓÃListView::setOnScrollListenerÀ´ÉèÖÃµ±ÓÃ»§ÉÏÀ­ÏÂÀ­ListViewËùĞèÒª×öµÄ´¦Àí£¬´«½øÈ¥µÄÊÇContactItemListAdapter¶ÔÏó£¬ÒòÎªÇ°ÎÄÒÑÊö£ºContactItemListAdapter»¹¼Ì³ĞÁËOnScrollListener½Ó¿Ú£¬ContactItemListAdapterÊµÏÖÁË£º
+p. é€šè¿‡è°ƒç”¨ListView::setOnScrollListeneræ¥è®¾ç½®å½“ç”¨æˆ·ä¸Šæ‹‰ä¸‹æ‹‰ListViewæ‰€éœ€è¦åšçš„å¤„ç†ï¼Œä¼ è¿›å»çš„æ˜¯ContactItemListAdapterå¯¹è±¡ï¼Œå› ä¸ºå‰æ–‡å·²è¿°ï¼šContactItemListAdapterè¿˜ç»§æ‰¿äº†OnScrollListeneræ¥å£ï¼ŒContactItemListAdapterå®ç°äº†ï¼š
 
 {% highlight java %}
 public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount)
 public void onScrollStateChanged(AbsListView view, int scrollState)
 {% endhighlight %}
 
-h3. ¹ØÓÚ²éÑ¯ÁªÏµÈË
+h3. å…³äºæŸ¥è¯¢è”ç³»äºº
 
-p. ÔÚContactsListActivityÀàÖĞÓĞÒ»¸ö¶ÔÏó£¬ÈçÏÂ¶¨Òå£º
+p. åœ¨ContactsListActivityç±»ä¸­æœ‰ä¸€ä¸ªå¯¹è±¡ï¼Œå¦‚ä¸‹å®šä¹‰ï¼š
 
 {% highlight java %}
 private QueryHandler mQueryHandler;
 {% endhighlight %}
 
-p. QueryHandlerÓĞÈçÏÂ¼Ì³Ğ¹ØÏµ£º
+p. QueryHandleræœ‰å¦‚ä¸‹ç»§æ‰¿å…³ç³»ï¼š
 
 !/images/article/QueryHandler.PNG!
 
-p. AsyncQueryHandler¹ËÃûË¼Òå¾ÍÊÇÒì²½µÄ¶ÔÊı¾İ¿â½øĞĞ²Ù×÷µÄ·â×°£¬ÔÚContactsÖĞÆäËû²¿·Ö¶à´ÎÓÃµ½¡£ÎÒÃÇ¿ÉÒÔµ÷ÓÃÈçÏÂ½Ó¿ÚÊµÏÖ¶ÔÊı¾İ¿âµÄ²Ù×÷£º
+p. AsyncQueryHandleré¡¾åæ€ä¹‰å°±æ˜¯å¼‚æ­¥çš„å¯¹æ•°æ®åº“è¿›è¡Œæ“ä½œçš„å°è£…ï¼Œåœ¨Contactsä¸­å…¶ä»–éƒ¨åˆ†å¤šæ¬¡ç”¨åˆ°ã€‚æˆ‘ä»¬å¯ä»¥è°ƒç”¨å¦‚ä¸‹æ¥å£å®ç°å¯¹æ•°æ®åº“çš„æ“ä½œï¼š
 
 {% highlight java %}
 public final void cancelOperation (int token)
@@ -80,12 +80,12 @@ public void startQuery (int token, Object cookie, Uri uri, String[] projection, 
 public final void startUpdate (int token, Object cookie, Uri uri, ContentValues values, String selection, String[] selectionArgs)
 {% endhighlight %}
 
-p. ÎÒÃÇÈÏÎªAsyncQueryHandlerÀïÊµÏÖÁËÒì²½²Ù×÷£¬Èç¹ûÎÒÃÇµ÷ÓÃÒÔÉÏ³ıÁËhandleMesssageÒÔÍâµÄ½Ó¿Ú¶¼²»»á¸ø½çÃæ´øÀ´×èÈû¸Ğ¡£ÔÚContactsListActivity,ÎÒÃÇµÄQueryHandlerÖ»×Ô¼ºÊµÏÖÁËonQueryComplete£¬µ±Ã¿´Î²éÑ¯½áÊøµÄÊ±ºò£¬Õâ¸ö»Øµ÷º¯Êı¿ÉÒÔ¸ù¾İÊµ¼ÊÇé¿ö¸üĞÂCursorÊı¾İ¡£
+p. æˆ‘ä»¬è®¤ä¸ºAsyncQueryHandleré‡Œå®ç°äº†å¼‚æ­¥æ“ä½œï¼Œå¦‚æœæˆ‘ä»¬è°ƒç”¨ä»¥ä¸Šé™¤äº†handleMesssageä»¥å¤–çš„æ¥å£éƒ½ä¸ä¼šç»™ç•Œé¢å¸¦æ¥é˜»å¡æ„Ÿã€‚åœ¨ContactsListActivity,æˆ‘ä»¬çš„QueryHandleråªè‡ªå·±å®ç°äº†onQueryCompleteï¼Œå½“æ¯æ¬¡æŸ¥è¯¢ç»“æŸçš„æ—¶å€™ï¼Œè¿™ä¸ªå›è°ƒå‡½æ•°å¯ä»¥æ ¹æ®å®é™…æƒ…å†µæ›´æ–°Cursoræ•°æ®ã€‚
 
-p. µ±ContactsListActivityÔÚonResume£¬onRestart£¬ÒÔ¼°ContentProvider×´Ì¬»òÄÚÈİ¸Ä±äµÄÊ±ºò(ContactItemListAdapter::onContentChangedÓëContactsListActivity::checkProviderState)¶¼»áµ÷ÓÃ²éÑ¯º¯ÊıstartQuery£¬²éÑ¯³öÀ´µÄCursor½»¸øContactItemListAdapterÖĞ¾Í¿ÉÒÔÁË£¬Ç°ÎÄËµ¹ıµÄ¡£
+p. å½“ContactsListActivityåœ¨onResumeï¼ŒonRestartï¼Œä»¥åŠContentProviderçŠ¶æ€æˆ–å†…å®¹æ”¹å˜çš„æ—¶å€™(ContactItemListAdapter::onContentChangedä¸ContactsListActivity::checkProviderState)éƒ½ä¼šè°ƒç”¨æŸ¥è¯¢å‡½æ•°startQueryï¼ŒæŸ¥è¯¢å‡ºæ¥çš„Cursoräº¤ç»™ContactItemListAdapterä¸­å°±å¯ä»¥äº†ï¼Œå‰æ–‡è¯´è¿‡çš„ã€‚
 
-p. ÔÚonResumeµ÷ÓÃÁËregisterProviderStatusObserver£¬×¢²áÁËContentObserverÀ´´¦Àíµ±ContentProvider¶ÔÏó±ä»¯Ê±
-ËùĞèÒª×öµÄ´¦Àí£¬ËùÒÔÓĞÈçÏÂ¶¨ÒåµÄContentObserver¶ÔÏó£º
+p. åœ¨onResumeè°ƒç”¨äº†registerProviderStatusObserverï¼Œæ³¨å†Œäº†ContentObserveræ¥å¤„ç†å½“ContentProviderå¯¹è±¡å˜åŒ–æ—¶
+æ‰€éœ€è¦åšçš„å¤„ç†ï¼Œæ‰€ä»¥æœ‰å¦‚ä¸‹å®šä¹‰çš„ContentObserverå¯¹è±¡ï¼š
 
 {% highlight java %}
  private ContentObserver mProviderStatusObserver = new ContentObserver(new Handler()) {
@@ -97,7 +97,7 @@ p. ÔÚonResumeµ÷ÓÃÁËregisterProviderStatusObserver£¬×¢²áÁËContentObserverÀ´´¦Àíµ±
     };
 {% endhighlight %}
 
-p. µ±ContentProvider¶ÔÏóÓĞÁË±ä»¯£¬¾Í»áµ÷ÓÃÉÏÊöonChange¡£µ±È»Ç°ÌáÊÇ±ØĞëÔËĞĞregisterProviderStatusObserver£º
+p. å½“ContentProviderå¯¹è±¡æœ‰äº†å˜åŒ–ï¼Œå°±ä¼šè°ƒç”¨ä¸Šè¿°onChangeã€‚å½“ç„¶å‰ææ˜¯å¿…é¡»è¿è¡ŒregisterProviderStatusObserverï¼š
 
 {% highlight java %}
 private void registerProviderStatusObserver() {
@@ -106,21 +106,21 @@ private void registerProviderStatusObserver() {
     }
 {% endhighlight %}
 
-p. ÕâÑù¾Í¿ÉÒÔ´ïµ½UIÍ¬²½Êı¾İ¿âµÄ¸Ä±äÁË¡£
+p. è¿™æ ·å°±å¯ä»¥è¾¾åˆ°UIåŒæ­¥æ•°æ®åº“çš„æ”¹å˜äº†ã€‚
 
 h3. SimContactsActiviy
 
-p. ÁªÏµÈËÓ¦ÓÃÖĞ±ØÈ»»áÓĞ¹ÜÀíSIM¿¨ÁªÏµÈËµÄ¹¦ÄÜ£¬Õâ¸ö¾ÍÊÇSimContactsActivity,¼Ì³Ğ¹ØÏµÈçÏÂ£º
+p. è”ç³»äººåº”ç”¨ä¸­å¿…ç„¶ä¼šæœ‰ç®¡ç†SIMå¡è”ç³»äººçš„åŠŸèƒ½ï¼Œè¿™ä¸ªå°±æ˜¯SimContactsActivity,ç»§æ‰¿å…³ç³»å¦‚ä¸‹ï¼š
 
 !/images/article/SimContactsActivity.PNG!
 
-p. ContactsADNList¸ºÔğºÍSIM¿¨ÁªÏµÈËÊı¾İ²Ù×÷£¬Í¨¹ıContentProviderÀ´ÊµÏÖ£¬ContentProviderÊÇ¸ö¿ç½ø³ÌµÄ¹«ÓÃ½Ó¿Ú£¬±ÈÈçÍ¨¹ıContentProvider¿ÉÒÔ²Ù×÷ÁªÏµÈËµÄSQLiteÊı¾İ¿â£¬Ò²¿ÉÒÔÍ¨¹ıËüÊµÏÖÊÓÆµÊı¾İ²¥·ÅµÄ·şÎñ¡£²»Í¬µÄContentProvider·şÎñÊÇÍ¨¹ı´«½øÈ¥²»Ò»ÑùµÄURIÀ´ÊµÏÖµÄ£¬ContactsADNList¶ÔSIM¿¨²Ù×÷µÄURIÊÇ£º
+p. ContactsADNListè´Ÿè´£å’ŒSIMå¡è”ç³»äººæ•°æ®æ“ä½œï¼Œé€šè¿‡ContentProvideræ¥å®ç°ï¼ŒContentProvideræ˜¯ä¸ªè·¨è¿›ç¨‹çš„å…¬ç”¨æ¥å£ï¼Œæ¯”å¦‚é€šè¿‡ContentProviderå¯ä»¥æ“ä½œè”ç³»äººçš„SQLiteæ•°æ®åº“ï¼Œä¹Ÿå¯ä»¥é€šè¿‡å®ƒå®ç°è§†é¢‘æ•°æ®æ’­æ”¾çš„æœåŠ¡ã€‚ä¸åŒçš„ContentProvideræœåŠ¡æ˜¯é€šè¿‡ä¼ è¿›å»ä¸ä¸€æ ·çš„URIæ¥å®ç°çš„ï¼ŒContactsADNListå¯¹SIMå¡æ“ä½œçš„URIæ˜¯ï¼š
 
 <pre>
 content://icc/adn
 </pre>
 
-p. ºÍContactsListActiviyÀàËÆ£¬ContactsADNListÒ²ÓÃÁËAsyncQueryHandlerÀ´·â×°£¬µ÷ÓÃÉÏÎÄÌáµ½µÄ½Ó¿ÚÀ´ÊµÏÖÊı¾İ²Ù×÷.ContactsADNListÊµÏÖÁË¸ü¶àµÄ»Øµ÷º¯Êı£º
+p. å’ŒContactsListActiviyç±»ä¼¼ï¼ŒContactsADNListä¹Ÿç”¨äº†AsyncQueryHandleræ¥å°è£…ï¼Œè°ƒç”¨ä¸Šæ–‡æåˆ°çš„æ¥å£æ¥å®ç°æ•°æ®æ“ä½œ.ContactsADNListå®ç°äº†æ›´å¤šçš„å›è°ƒå‡½æ•°ï¼š
 
 {% highlight java %}
 protected void onDeleteComplete (int token, Object cookie, int result)
@@ -129,11 +129,11 @@ protected void onQueryComplete (int token, Object cookie, Cursor cursor)
 protected void onUpdateComplete (int token, Object cookie, int result)
 {% endhighlight %}
 
-p. SimContactsActivityÔò×¨×¢ÓÚºÍÓÃ»§´ò½»µÀ£¬ÎŞÂÛÓÃ»§ÒªÔö¼ÓÊı¾İ£¬É¾³ıÊı¾İ»¹ÊÇÒª²éÑ¯Êı¾İ£¬¶¼ÊÇÍ¨¹ı»ùÀàContactsADNListËùÌá¹©µÄ·½·¨£¬µ«ÊÇ¾ßÌåµÄÁ÷³ÌÂß¼­¶¼ÊÇSimContactsActivity×Ô¼ºÊµÏÖ¡£ÖµµÃÒ»ËµµÄÊÇÕûÌåÉ¾³ıËùÓĞSIM¿¨¼ÇÂ¼ÒÔ¼°½«SIM¼ÇÂ¼¿½±´µ½£¬ËûÃÇ¶¼ÓÃµ½ÁËÏß³Ì£¬Ïß³Ì¶ÔÏó»ùÓÚThread£º
+p. SimContactsActivityåˆ™ä¸“æ³¨äºå’Œç”¨æˆ·æ‰“äº¤é“ï¼Œæ— è®ºç”¨æˆ·è¦å¢åŠ æ•°æ®ï¼Œåˆ é™¤æ•°æ®è¿˜æ˜¯è¦æŸ¥è¯¢æ•°æ®ï¼Œéƒ½æ˜¯é€šè¿‡åŸºç±»ContactsADNListæ‰€æä¾›çš„æ–¹æ³•ï¼Œä½†æ˜¯å…·ä½“çš„æµç¨‹é€»è¾‘éƒ½æ˜¯SimContactsActivityè‡ªå·±å®ç°ã€‚å€¼å¾—ä¸€è¯´çš„æ˜¯æ•´ä½“åˆ é™¤æ‰€æœ‰SIMå¡è®°å½•ä»¥åŠå°†SIMè®°å½•æ‹·è´åˆ°ï¼Œä»–ä»¬éƒ½ç”¨åˆ°äº†çº¿ç¨‹ï¼Œçº¿ç¨‹å¯¹è±¡åŸºäºThreadï¼š
 
 !/images/article/DeleteAllSimContactsThread.PNG!
 
-p. public void run()ÊÇÖ´ĞĞÏß³ÌµÄº¯Êı£º
+p. public void run()æ˜¯æ‰§è¡Œçº¿ç¨‹çš„å‡½æ•°ï¼š
 
 {% highlight java %}
 @Override
@@ -180,19 +180,19 @@ p. public void run()ÊÇÖ´ĞĞÏß³ÌµÄº¯Êı£º
 
 {% endhighlight %}
 
-p. ÎªÁËÊµÏÖÉ¾³ıÃ¿¸öItemsÊ±¿ÉÒÔºÍUIÊµÊ±½»»¥£¬º¯ÊıÖĞÓÃÁËÏûÏ¢»úÖÆ¡£ÔÚSimContactsActivityÀàÖĞ¶¨ÒåÁËHandler¶ÔÏó£º
+p. ä¸ºäº†å®ç°åˆ é™¤æ¯ä¸ªItemsæ—¶å¯ä»¥å’ŒUIå®æ—¶äº¤äº’ï¼Œå‡½æ•°ä¸­ç”¨äº†æ¶ˆæ¯æœºåˆ¶ã€‚åœ¨SimContactsActivityç±»ä¸­å®šä¹‰äº†Handlerå¯¹è±¡ï¼š
 
 {% highlight java %}
 private Handler mHandler;
 {% endhighlight %}
 
-p. ÔÚĞÂ½¨HandlerÊ±£¬ÊµÏÖhandleMessage£¬À´´¦ÀíÏß³ÌÖĞ·¢À´µÄÏûÏ¢£¬¶øÔÚÉÏÊöÏß³Ìº¯ÊıÖĞ£¬Í¨¹ı£º
+p. åœ¨æ–°å»ºHandleræ—¶ï¼Œå®ç°handleMessageï¼Œæ¥å¤„ç†çº¿ç¨‹ä¸­å‘æ¥çš„æ¶ˆæ¯ï¼Œè€Œåœ¨ä¸Šè¿°çº¿ç¨‹å‡½æ•°ä¸­ï¼Œé€šè¿‡ï¼š
 
 {% highlight java %}
 Message msg = mHandler.obtainMessage();
 {% endhighlight %}
 
-p. ´ÓÏûÏ¢³Ø»ñÈ¡ÏûÏ¢£¬ÆäÊµÎÒÀí½â¾ÍÊÇ»ñÈ¡ÄÚ´æ£¬È»ºóÍ¨¹ımsg.sendToTarget()À´·¢ËÍÏûÏ¢£¬È»ºóÔÚhandleMessageÖĞ´¦Àí£º
+p. ä»æ¶ˆæ¯æ± è·å–æ¶ˆæ¯ï¼Œå…¶å®æˆ‘ç†è§£å°±æ˜¯è·å–å†…å­˜ï¼Œç„¶åé€šè¿‡msg.sendToTarget()æ¥å‘é€æ¶ˆæ¯ï¼Œç„¶ååœ¨handleMessageä¸­å¤„ç†ï¼š
 
 {% highlight java %}
 mHandler = new Handler() {
@@ -211,6 +211,6 @@ mHandler = new Handler() {
          };
 {% endhighlight %}
 
-h2. ²Î¿¼×ÊÁÏ
+h2. å‚è€ƒèµ„æ–™
 
 # "http://developer.android.com/index.html":http://developer.android.com
