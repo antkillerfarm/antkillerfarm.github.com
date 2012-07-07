@@ -4,5 +4,12 @@ auto:        true
 lsi:         false
 server_port: 4000
 permalink:   date
-markdown: rdiscount
+markdown: maruku 
 pygments: true
+
+maruku:
+use_tex: true
+use_divs: false
+png_engine: blahtex
+png_dir: images/latex/
+png_url: /images/latex/
