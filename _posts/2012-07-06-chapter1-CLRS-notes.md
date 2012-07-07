@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 《算法导论》研习笔记 1
+title: 《算法导论》研习笔记 2
 category: algorithms
 ---
 
