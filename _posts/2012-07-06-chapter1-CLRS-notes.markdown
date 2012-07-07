@@ -29,6 +29,11 @@ category: algorithms
 3. <img src="http://chart.googleapis.com/chart?cht=tx&chl=%5CTheta%20%5Bg(n)%5D" style="border:none;" /> = {<img src="http://chart.googleapis.com/chart?cht=tx&chl=f(n)" style="border:none;" />:  存在正整数 c1，c2 和 n0使得<img src="http://chart.googleapis.com/chart?cht=tx&chl=0%5Cle%20c1g(n)%20%5Cle%20f(n)%20%5Cle%20c2g(n)" style="border:none;" />对于所有的<img src="http://chart.googleapis.com/chart?cht=tx&chl=n%5Cge%20n0" style="border:none;" />都成立 }.
 
 
-段内插入LaTeX代码是这样的：$\exp(-\frac{x^2}{2})$，试试看看吧
+总的本底步长, \(H_t\), 是峰前后的本底水平的差值（参见如后方程）。
+\begin{eqnarray*}
+H_t & = & a_1 + b_1 \cdot c - a_2 - b_2 \cdot c \\
+c & = & \frac{\sum\limits^{r}_{i=l}\left[ \left(A_i - B_i\right) \cdot i
+      \right]}{\sum\limits^r_{i=l}\left(A_i - B_i\right)} \\
+\end{eqnarray*}
 
 
