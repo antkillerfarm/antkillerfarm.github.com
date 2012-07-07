@@ -28,5 +28,10 @@ category: algorithms
 
 3. <img src="http://chart.googleapis.com/chart?cht=tx&chl=%5CTheta%20%5Bg(n)%5D" style="border:none;" /> = {<img src="http://chart.googleapis.com/chart?cht=tx&chl=f(n)" style="border:none;" />:  存在正整数 c1，c2 和 n0使得<img src="http://chart.googleapis.com/chart?cht=tx&chl=0%5Cle%20c1g(n)%20%5Cle%20f(n)%20%5Cle%20c2g(n)" style="border:none;" />对于所有的<img src="http://chart.googleapis.com/chart?cht=tx&chl=n%5Cge%20n0" style="border:none;" />都成立 }.
 
-{% math %} e^x = \sum\_{n=0}^\infty \frac{x^n}{n!} = \lim\_{n\rightarrow\infty} (1+x/n)^n {% endmath %}
+
+## 递归算法 ##
+
+\begin{equation}
+	E = mc^2
+\end{equation}
 
