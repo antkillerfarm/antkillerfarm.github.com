@@ -33,3 +33,5 @@ category: algorithms
 ## 递归算法 ##
 
 {% m %} \alpha + \beta {% em %}
+
+## 概率分析与随机化算法 ##
