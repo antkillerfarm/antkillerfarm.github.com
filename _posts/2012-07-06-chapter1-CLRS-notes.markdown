@@ -28,30 +28,5 @@ category: algorithms
 
 3. <img src="http://chart.googleapis.com/chart?cht=tx&chl=%5CTheta%20%5Bg(n)%5D" style="border:none;" /> = {<img src="http://chart.googleapis.com/chart?cht=tx&chl=f(n)" style="border:none;" />:  存在正整数 c1，c2 和 n0使得<img src="http://chart.googleapis.com/chart?cht=tx&chl=0%5Cle%20c1g(n)%20%5Cle%20f(n)%20%5Cle%20c2g(n)" style="border:none;" />对于所有的<img src="http://chart.googleapis.com/chart?cht=tx&chl=n%5Cge%20n0" style="border:none;" />都成立 }.
 
-
-总的本底步长, \(H_t\), 是峰前后的本底水平的差值（参见如后方程）。
-\begin{eqnarray*}
-H_t & = & a_1 + b_1 \cdot c - a_2 - b_2 \cdot c \\
-c & = & \frac{\sum\limits^{r}_{i=l}\left[ \left(A_i - B_i\right) \cdot i
-      \right]}{\sum\limits^r_{i=l}\left(A_i - B_i\right)} \\
-\end{eqnarray*}
-
-$$
-\begin{align*}
-  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
-  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
-  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
-      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
-      \vdots & \ddots & \vdots \\
-      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
-    \end{array} \right)
-  \left( \begin{array}{c}
-      y_1 \\
-      \vdots \\
-      y_n
-    \end{array} \right)
-\end{align*}
-$$
-
 {% math %} e^x = \sum\_{n=0}^\infty \frac{x^n}{n!} = \lim\_{n\rightarrow\infty} (1+x/n)^n {% endmath %}
 
