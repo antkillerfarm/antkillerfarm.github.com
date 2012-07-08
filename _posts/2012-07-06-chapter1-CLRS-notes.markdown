@@ -43,3 +43,5 @@ category: algorithms
 \dot{z} & = -\beta z + xy
 \end{aligned}
 \]`
+
+e^x = \sum_{n=0}^\infty \frac{x^n}{n!} = \lim_{n\rightarrow\infty} (1+x/n)^n
