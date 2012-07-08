@@ -6,3 +6,7 @@ server_port: 4000
 permalink:   date
 markdown: rdiscount 
 pygments: true
+
+rdiscount: 
+  extensions: 
+      - smart
