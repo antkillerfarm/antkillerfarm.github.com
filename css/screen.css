@@ -196,9 +196,32 @@ ul.posts {
     margin-bottom: 1em;
   }
 
-code.has-jax {
+.clear {clear: both;}
+
+body div.content {}
+  
+body div.content pre {
+  background-color: #eee;
+  padding: 0.4em 1em;
+  border-left: 2px solid #ddd;
+}
+		
+body div.content code {
+   background-color: #eee;
+   padding: 0 0.1em;
+}
+												
+body div.content pre > code {
+  padding: 0; background-color: transparent;
+}
+
+body div.content code.has-jax {
   font: inherit; 
-  font-size: 200%;
-  background: inherit; 
+  font-size: 100%;
+  background: inherit;
   border: inherit;
+}
+																					
+body div.gist {
+  font-size: 12px;
 }
