@@ -217,7 +217,7 @@ body div.content pre > code {
 
 body div.content code.has-jax {
   font: inherit; 
-  font-size: 100%;
+  font-size: 120%;
   background: inherit;
   border: inherit;
 }
