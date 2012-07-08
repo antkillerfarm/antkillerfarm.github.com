@@ -196,4 +196,16 @@ ul.posts {
     margin-bottom: 1em;
   }
 
-  code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}
+".MathJax_Display": {
+  "text-align": "center",
+  margin:       "1em 0em"
+}
+
+".MathJax .merror": {
+  "background-color": "#FFFF88",
+  color:   "#CC0000",
+  border:  "1px solid #CC0000",
+  padding: "1px 3px",
+  "font-style": "normal",
+  "font-size":  "90%"
+}
