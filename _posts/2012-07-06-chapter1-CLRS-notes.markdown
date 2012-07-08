@@ -44,6 +44,10 @@ category: algorithms
 \end{aligned}
 \]`
 
-'\[
-\e^x = \sum_{n=0}^\infty \frac{x^n}{n!} = \lim_{n\rightarrow\infty} (1+x/n)^n
-\]'
+`\[
+e^x = \sum_{n=0}^\infty \frac{x^n}{n!} = \lim_{n\rightarrow\infty} (1+x/n)^n
+\]`
+
+`\[
+P(E)   = {n \choose k} p^k (1-p)^{ n-k}
+\]`
