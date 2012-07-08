@@ -18,7 +18,10 @@
 	MathJax.Hub.Config({
 		tex2jax: {
 			skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
-		}
+		},
+		"HTML-CSS": {
+		    minScaleAdjust: 100        // don't reduce font size to match surrounding font
+	    }
 	});
 	
 	MathJax.Hub.Queue(function() {
