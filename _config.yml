@@ -8,7 +8,7 @@ markdown: maruku
 pygments: true
 
 maruku:
-  use_tex:    false
+  use_tex:    true 
   use_divs:   false
   png_engine: blahtex
   png_dir:    images/latex
