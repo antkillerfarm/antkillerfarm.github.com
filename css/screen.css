@@ -195,3 +195,5 @@ ul.posts {
   #related h2 {
     margin-bottom: 1em;
   }
+
+  code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}
