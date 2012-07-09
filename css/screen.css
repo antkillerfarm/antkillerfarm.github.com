@@ -167,7 +167,7 @@ ul.posts {
 
   #post code {
     border: 1px solid #ddd;
-    background-color: #eef;
+    background-color: #fff;
     font-size: 85%;
     padding: 0 .2em;
   }
@@ -180,12 +180,12 @@ ul.posts {
 
   #post pre.terminal {
     border: 1px solid black;
-    background-color: #333;
+    background-color: #fff;
     color: white;
   }
 
   #post pre.terminal code {
-    background-color: #333;
+    background-color: #fff;
   }
 
 #related {
@@ -201,13 +201,13 @@ ul.posts {
 body div.content {}
   
 body div.content pre {
-  background-color: #eee;
+  background-color: #fff;
   padding: 0.4em 1em;
   border-left: 2px solid #ddd;
 }
 		
 body div.content code {
-   background-color: #eee;
+   background-color: #fff;
    padding: 0 0.1em;
 }
 												
