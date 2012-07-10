@@ -22,12 +22,11 @@ category: algorithms
 
    从定义中可看出，O标记定义了f(n)的上界，也就是说算法真正的时间复杂度函数永远不会超过O[g(n)]，这也是O标记如此常用的原因，因为我们大多是在分析算法在最坏情况下的性能。
 
-2. <img src="http://chart.googleapis.com/chart?cht=tx&chl=%5COmega%20%5Bg(n)%5D" style="border:none;" /> = {<img src="http://chart.googleapis.com/chart?cht=tx&chl=f(n)" style="border:none;" />: 存在正整数 c 和 n0使得<img src="http://chart.googleapis.com/chart?cht=tx&chl=0%5Cle%20cg(n)%20%5Cle%20f(n)" style="border:none;" />对于所有的<img src="http://chart.googleapis.com/chart?cht=tx&chl=n%5Cge%20n0" style="border:none;" />都成立 }.
+2. `\(\Omega[g(n)] = \{f(n)\)`：存在正整数c和n0使得`\(0 \leq cg(n) \leq f(n)\)`对于所有的`\(n \geq n0 \)`都成立}.
 
    这个很明显是定义了性能函数的下界，通俗的说就是最好，最理想的状况。
 
-3. <img src="http://chart.googleapis.com/chart?cht=tx&chl=%5CTheta%20%5Bg(n)%5D" style="border:none;" /> = {<img src="http://chart.googleapis.com/chart?cht=tx&chl=f(n)" style="border:none;" />:  存在正整数 c1，c2 和 n0使得<img src="http://chart.googleapis.com/chart?cht=tx&chl=0%5Cle%20c1g(n)%20%5Cle%20f(n)%20%5Cle%20c2g(n)" style="border:none;" />对于所有的<img src="http://chart.googleapis.com/chart?cht=tx&chl=n%5Cge%20n0" style="border:none;" />都成立 }.
-
+3. `\\Theta[g(n)] = \{f(n)\)`：存在正整数c1，c2和n0使得`\(c1g(n) \leq f(n) \leq c2g(n)\)`对于所有的`\(n \geq n0 \)`都成立}.
 
 
 ## 递归算法 ##
@@ -35,14 +34,6 @@ category: algorithms
 说到递归算法，很多人不陌生，都知道是一个函数在他自己里面调用自己。这样会发生一些比较有趣的数学现象。
 
 ## 概率分析与随机化算法 ##
-
-`\[
-\begin{aligned}
-\dot{x} & = \sigma(y-x) \\
-\dot{y} & = \rho x - y - xz \\
-\dot{z} & = -\beta z + xy
-\end{aligned}
-\]`
 
 `\[
 e^x = \sum_{n=0}^\infty \frac{x^n}{n!} = \lim_{n\rightarrow\infty} (1+x/n)^n
