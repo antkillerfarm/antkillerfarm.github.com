@@ -31,7 +31,37 @@ category: algorithms
 
 ## 递归算法 ##
 
-说到递归算法，很多人不陌生，都知道是一个函数在他自己里面调用自己。这样会发生一些比较有趣的数学现象。
+说到递归算法，很多人不陌生，都知道是一个函数在他自己里面调用自己。这样会发生一些比较有趣的数学现象。在这里，我们不用去纠结如何设计递归，我们只是去分析递归算法，《算法导论》中提到一个公式：
+
+`\[
+T(n) = aT(\frac{n}{b}) + f(n) a\geq 1 b>1
+\]`
+
+公式中的字母各有意义：
+
+1. b的意义是将问题的规模(n)分解为规模是 n/b 的子问题，但怎么处理规模是 n/b 的子问题？我们可以在一次调用里只处理一次子问题，每一次都将子问题的规模减少到之前的 1/b，直到n等于1，递归调用结束。
+
+2. 我们亦可以在一次调用中处理多次子问题，这个处理的次数即是参数a的意义。举个例子，对于a等于1的情况。二分查找就是典型的例子：
+
+{% highlight c %}
+int bin_search(int a[],int start,int end,int key)
+{
+	if(to<from) return -1;     
+      
+	int middle = (from+to)/2;     
+	
+	if(a[middle]==key)     
+		return middle;     
+				    
+	if(a[middle]>key)     
+		return bin_search(a,from,middle-1,key);     
+	else     
+		return bin_search(a,middle+1,to,key);     
+}    
+{% endhighlight %}
+
+他的性能公式应为：`\(T(n) = T(\frac{n}{2} + \Theta(1)\)`
+
 
 ## 概率分析与随机化算法 ##
 
