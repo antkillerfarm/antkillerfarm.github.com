@@ -60,7 +60,7 @@ int bin_search(int a[],int start,int end,int key)
 }    
 {% endhighlight %}
 
-他的性能公式应为：`\(T(n) = T(\frac{n}{2} + \Theta(1)\)`
+他的性能公式应为：`\(T(n) = T(\frac{n}{2}) + \Theta(1)\)`
 
 
 ## 概率分析与随机化算法 ##
