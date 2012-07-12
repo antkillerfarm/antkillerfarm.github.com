@@ -78,7 +78,7 @@ int bin_search(int a[],int start,int end,int key)
 T(n) = aT(\frac{n}{b}) + f(n) ，a\geq 1 ， b>1
 \]`
 
-n/b不一定是整数，所以n/b可以是`\(\lceil frac{n}{b} \rceil \)`或者`\(\lfloor frac{n}{b} \rfloor\)`。我们将用`\(f(n)\)`与`\(n^{\log_b a}\)`比较的结果来推测T(n)。
+n/b不一定是整数，所以n/b可以是`\(\lceil \frac{n}{b} \rceil \)`或者`\(\lfloor frac{n}{b} \rfloor\)`。我们将用`\(f(n)\)`与`\(n^{\log_b a}\)`比较的结果来推测T(n)。
 
 ## 概率分析与随机化算法 ##
 
