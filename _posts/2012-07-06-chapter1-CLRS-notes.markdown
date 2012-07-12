@@ -43,7 +43,7 @@ T(n) = aT(\frac{n}{b}) + f(n) ，a\geq 1 ， b>1
 
 2. 我们亦可以在一次调用中处理多次子问题，这个处理的次数即是参数a的意义。举个例子，对于a等于1的情况。二分查找就是典型的例子：
 
-{% highlight c %}
+{% highlight cpp %}
 int bin_search(int a[],int start,int end,int key)
 {
 	if(to<from) return -1;     
