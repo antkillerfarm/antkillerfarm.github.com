@@ -47,17 +47,17 @@ T(n) = aT(\frac{n}{b}) + f(n) ，a\geq 1 ， b>1
 {% highlight cpp %}
 int bin_search(int a[],int start,int end,int key)
 {
-	if(to<from) return -1;     
+	if(start < end) return -1;     
       
-	int middle = (from+to)/2;     
+	int middle = (start + end)/2;     
 	
 	if(a[middle]==key)     
 		return middle;     
 				    
-	if(a[middle]>key)     
-		return bin_search(a,from,middle-1,key);     
+	if(a[middle] > key)     
+		return bin_search(a, start, middle-1,key);     
 	else     
-		return bin_search(a,middle+1,to,key);     
+		return bin_search(a, middle+1, end, key);     
 }    
 {% endhighlight %}
 
