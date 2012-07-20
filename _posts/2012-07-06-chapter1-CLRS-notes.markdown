@@ -80,6 +80,7 @@ T(n) = aT(\frac{n}{b}) + f(n) ，a\geq 1 ， b>1
 
 n/b不一定是整数，所以n/b可以是`\(\lceil \frac{n}{b} \rceil \)`或者`\(\lfloor \frac{n}{b} \rfloor\)`。我们将用`\(f(n)\)`与`\(n^{\log_b a}\)`比较的结果来推测T(n)。
 
+1. 当`\(f(n) = O(n^{\log_b a - \varepsilon}), \varepsilon > 0\)`可得`\(T(n) = \Theta(n^{\log_b a})\)`.
 ## 概率分析与随机化算法 ##
 
 `\[
