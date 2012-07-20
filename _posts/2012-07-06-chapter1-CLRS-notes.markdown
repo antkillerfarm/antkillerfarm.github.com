@@ -82,7 +82,7 @@ n/b不一定是整数，所以n/b可以是`\(\lceil \frac{n}{b} \rceil \)`或者
 
 1. 当`\(f(n) = O(n^{\log_b a - \varepsilon}), \varepsilon > 0\)`可得`\(T(n) = \Theta(n^{\log_b a})\)`.
 2. 当`\(f(n) = \Theta(n^{log_b a})\)`, 则`\(T(n) = \Theta(n^{log_b a}\lg n)\)`.
-3. 当`\(f(n) = \Omega(n^{\log_b a + \varepsilon}), \varepsilon > 0\)`,并且如果`\(af(frac{n}{b} \leq cf(n))\)`,且`\(c < 1\)`,以及n可以是足够大，则`\(T(n) = \Theta(f(n))\)`.
+3. 当`\(f(n) = \Omega(n^{\log_b a + \varepsilon}), \varepsilon > 0\)`,并且如果`\(a f(frac{n}{b} \leq cf(n))\)`,且`\(c < 1\)`,以及n可以是足够大，则`\(T(n) = \Theta(f(n))\)`.
 
 ## 概率分析与随机化算法 ##
 
