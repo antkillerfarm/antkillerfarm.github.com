@@ -84,6 +84,28 @@ n/b不一定是整数，所以n/b可以是`\(\lceil \frac{n}{b} \rceil \)`或者
 2. 当`\(f(n) = \Theta(n^{log_b a})\)`, 则`\(T(n) = \Theta(n^{log_b a}\lg n)\)`.
 3. 当`\(f(n) = \Omega(n^{\log_b a + \varepsilon}), \varepsilon > 0\)`,并且如果`\(a f(\frac{n}{b}) \leq cf(n)\)`,且`\(c < 1\)`,以及n可以是足够大，则`\(T(n) = \Theta(f(n))\)`.
 
+当然这三种情况没有覆盖所有的可能，即类似下图这个样子：
+
+![case graph](\images\article\main-method-case.png)
+
+Case1和Case2以及Case2和Case3之间都有缝隙。我们先来看看第一个缝隙，在Case1的情況下，
+
+`\(f(n) = O(n^{\log_b a - \varepsilon})\)`
+
+从前面O-notation的定义推得：
+
+`\(f(n) \leq Kn^{log_b a}\)`
+
+又因为Case2是：`\(f(n) = \Theta(n^{log_b a})\)`，可以得到不等式：
+
+`\(K1n^{log_b a} \leq f(n) \leq K2n^{log_b a})\`
+
+由此可知 `\(f(n) = O(n^{\log_b a - \varepsilon})\)` 表示`\(f(n)\)`必須乘以`\(n^{\varepsilon}\)`才能和Case2的`\(n^{log_b a}\)`相提并论，其他类似但是不属于以上集合的情况均落在缝隙中，使主方法失效。比如：
+
+`\(f(n) = O(\frac{n^{log_b a}}{c})\)`
+
+当然，Case2与Case3之间也有类似的指数级别的相乘量，不仅如此，Case3还有一些不等式上的限制，如果不满足这些条件，亦会落入缝隙中。处在缝隙中，主方法无能为力。其实，这三种情况已能覆盖绝大部分递归求解的情况，所以我们不用在缝隙中纠结了。
+
 ## 概率分析与随机化算法 ##
 
 `\[
