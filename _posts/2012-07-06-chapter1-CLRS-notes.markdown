@@ -98,7 +98,7 @@ Case1和Case2以及Case2和Case3之间都有缝隙。我们先来看看第一个
 
 又因为Case2是：`\(f(n) = \Theta(n^{log_b a})\)`，可以得到不等式：
 
-`\(K1n^{log_b a} \leq f(n) \leq K2n^{log_b a})\`
+`\(K_1 n^{log_b a} \leq f(n) \leq K_2 n^{log_b a}\)`
 
 由此可知 `\(f(n) = O(n^{\log_b a - \varepsilon})\)` 表示`\(f(n)\)`必須乘以`\(n^{\varepsilon}\)`才能和Case2的`\(n^{log_b a}\)`相提并论，其他类似但是不属于以上集合的情况均落在缝隙中，使主方法失效。比如：
 
