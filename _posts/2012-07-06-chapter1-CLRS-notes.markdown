@@ -113,7 +113,7 @@ Case1和Case2以及Case2和Case3之间都有缝隙。我们先来看看第一个
 如果有一类算法，他的输入数据是不确定的，随机的。我们若要分析他的时间性能，必须借助概率工具来处理随机变量，叫做随机变量指示器(Indicator random variables)。他提供一种方法，可以方便的在随机变量的期望与概率之间转换。假设我有一个样本空间S，事件A，我们定义一个Indicator random variables:
 
 `\[
-I{A} = \cases{1, & for if A happens \cr 0, & if A dones not happen.}
+I\{A\} = \cases{1, & for if A happens \cr 0, & if A dones not happen.}
 \]`
 
 CLRS中5.2节中的引理5.1中证明了随机变量指示器表示的随机事件A的期望与他的概率是相等的关系：
