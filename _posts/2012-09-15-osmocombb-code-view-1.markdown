@@ -4,7 +4,7 @@ title: OsmocomBB 代码分析(1)
 category: technology
 ---
 # 前言 #
-这篇文档是去年发布在我的CSDN blog[CSDN blog](http://blog.csdn.net/alexu2002/article/details/6783021#),我觉的还是应该保存在我个人博客中为好。
+这篇文档是去年发布在我的[CSDN blog](http://blog.csdn.net/alexu2002/article/details/6783021#),我觉的还是应该保存在我个人博客中为好。
 
 # OsmocomBB简介 #
 
