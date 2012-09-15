@@ -13,7 +13,7 @@ category: technology
 
 首先我们要知道点常识，手机之所以能实现与其他手机实现实时通信，很关键的一点，是手机必须与基站（BTS）同步，因为GSM是TDMA与FDMA结合的通信系统，所以想要同步必须在时间，频率上同时与一个基站同步。这里面有很多知识与细节，比如RF功率检测，GMSK调制与解调，DSP core与ARM core的通信。但是在这个章节，我们不涉及信号处理和RF相关的细节，以及运行在host端的layer2&layer3的高层协议栈，我们只在乎ARM core的相关代码流程。如下图所示：
 
-![alt text](focus_layer1.png "Title")
+![alt text](/images/article/focus_layer1.png "Title")
 
 中间有色部分及时我们关注的重点。
 
@@ -21,7 +21,7 @@ category: technology
 
 全世界不同的GSM运营商对频率的使用不同，比如中国常用的是900 Band, 1800 Band,这也是比较常用的Band，很多GSM手机都支持4个Band，即850,900,1800,1900。手机上电后，Stack会在各个Band里搜索BCCH 载频(Carrier)，他要搜寻出信号功率最大的一个ARFCN(The Absolute Radio Frequency Channel Number)。什么事ARFCN呢？这正是我将要说的，在每个Band里都有若干ARFCN，ARFCN其实就是一个频率点，Stack一般在搜索一个Band的时候，会遍历这个Band里的所有频率点，那这些频率点的具体频率是多少呢？下面有一个表格：
 
-![alt text](gsm_bands_table.png "Title")
+![alt text](/images/article/gsm_bands_table.png "Title")
 
 以及计算ARFCN的公式：
 
@@ -32,7 +32,7 @@ Down = Up + 45.0
 
 解释一下，GSM规定的在900 Band下，相邻频点之间频率空间为200KHZ。从代码看来，900 Band的ARFCN值域应该是[0,124], 而且对于每一个ARFCN，下行频率比上行频率高了45MHZ，比如下图所示：
 
-![alt text](gsm_uplink_downlink.png "Title")
+![alt text](/images/article/gsm_uplink_downlink.png "Title")
 
 而1800 Band有些不同上行下行相差95MHZ，公式入下：
 
@@ -174,7 +174,7 @@ sercomm结构体分两部分，有接收的rx，有发送的tx，通过注册rx�
 
 在介绍代码之前，我们先了解下TDMA的概念。我们已经知道GSM是由FDMA和TDMA综合而成的，上文提到过，在通常我们所用的GSM的四个频率带(Band)里，每个band里都是以200kHZ为间隔分成了若干个ARFCN频率点，通信中，根据某种规则还会有跳频，这是我们所说的FDMA。那什么是TDMA呢？在每一个ARFCN中，将会以时间轴将其分成8个分段，称作时隙(Time Slot)，如下图： 
 
-![alt text](gsm_time_slot.png "Title")
+![alt text](/images/article/gsm_time_slot.png "Title")
 
 其中每个时隙持续576.9 µs，如果以GMSK为调制方法，一个时隙可传输156.25bit的数据，时隙是最基本的无线资源。根据基站的设置，每个时隙都会分配给不同的手机使用。每个时隙所传输的数据叫做Data Burst,总共有四种Data Burst:
 
@@ -185,7 +185,7 @@ sercomm结构体分两部分，有接收的rx，有发送的tx，通过注册rx�
 
 他们都有不同的用途，比如FB与SB就是用来和基站同步的，他们都是下行(downlink)的，而AB是手机用来向基站请求资源的，他是上行(uplink)的。这4种Burst都与逻辑信道有一定关系，我们以后会详细叙述。这8个时隙加起来称作一个TDMA frame，每个TDMA frame都有一个编号，即FN(Frame Number)，这个编号是基站分发的。FN是一个很重要的信息，他是手机与基站同步必须需要知道的信息，以及同步后的其他活动。前文提到过，对于FDMA的上下行是以45Mhz分隔开，即下行的频率减去45Mhz的间隔，就是上行的频率。而对于TDMA亦有类似的分别，为了上下行不互相干扰，上行一般落后下行3个时隙，如图：
 
-![alt text](gsm_tdma_frame.png "Title")
+![alt text](/images/article/gsm_tdma_frame.png "Title")
 
 ### 代码解读 ###
 
@@ -217,7 +217,7 @@ TDMA知识的介绍先告一段落，接下来我们来看看OsmocomBB是如何�
 
 结构体 tdma_scheduler 中包括了25个tdma_sched_bucket,而每个 tdma_sched_bucket 有8个 tdma_sched_item,我们可以用图来直观的了解下:
 
-![alt text](tdma_sched.png "Title")
+![alt text](/images/article/tdma_sched.png "Title")
 
 这里面基本的数据结构是 tdma_sched_item,他里面包括几个变量,以及一个函数指针,那几个变量亦是为调用函数指针所指向的函数所需要的参数。Tdma_sched 的主要作用是在TDMA frame 中断来的时候,通过调用配置的回调函数来给基带子系统配置参数,或者获取基带子系统返回的结果。说得很抽象,但是主要处理的还是那四种 Data Burst。
 
