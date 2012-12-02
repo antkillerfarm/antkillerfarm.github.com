@@ -36,7 +36,7 @@ PackageManager是用來獲取安裝在設備上的應用程序包的各種信息
 
 先看看有關PackageManager的結構圖：
 
-![alt text](images/notes/pm-architecture.png "pm-architecture.png")
+![alt text](/images/notes/pm-architecture.png "pm-architecture.png")
 
 從上圖可知，PackageManager是個abstract interface類，裏面定義了所有PackageManager提供給用戶的接口，但是需要其他的類繼承才能實現抽象類裡的接口，直接繼承他的是ApplicationPackageManager。其實ApplicationPackageManager也僅僅是個wrapper,這個類中有一個IPackageManager變量，他也是一個接口類，但是她是通過IPackageManager.aidl來定義的。AIDL是Android設計的用來做進程間通信的接口。通過編譯，java編譯器會自動將IPackageManager.aidl轉換成IPackageManager.java,在IPackageManager類裏面內嵌了stub類，而stub 繼承自Binder，以及實現了AIDL interface里定義的方法，因此依靠binder來實進程間服務調用。PackageManagerService通過繼承IPackageManager.stub來實現具體PackageManager功能,並且實現了進程間的調用。我們之後重點研究PackageManagerService。
 
@@ -46,7 +46,7 @@ PackageManager是用來獲取安裝在設備上的應用程序包的各種信息
 
 Framework中會運行一個ServerThread,用來啟動android所需要的所有的Service，調用關係如圖：
 
-![alt text](images/notes/pm-service-launch.png "pm-service-launch.png")
+![alt text](/images/notes/pm-service-launch.png "pm-service-launch.png")
 
 如圖所示，在PackageManagerService中有靜態方法main來通過調用PackageManagerService的構造函數來初始化此service：
 
@@ -60,7 +60,7 @@ Framework中會運行一個ServerThread,用來啟動android所需要的所有的
 
 在構造函數PackageManagerService中，會檢測所有的安裝在設備中的應用程序，將相關信息存入相關的數據結構中。我們先來看一下PackageManagerService的構造函數的運行流程概覽：
 
-![alt text](images/notes/PackageManagerConstructor.png "PackageManagerConstructor.png")
+![alt text](/images/notes/PackageManagerConstructor.png "PackageManagerConstructor.png")
 
 我們逐步分析各個子過程：
 
@@ -218,7 +218,7 @@ readPermissionsFromXml將解析結果存入類中變量mSharedLibraries中，他
 
 然而最關鍵的讀取流程在readLPw函數中，先看流程圖：
 
-![alt text](images/notes/pm-msettings-readLP.PNG "pm-msettings-readLP.PNG")
+![alt text](/images/notes/pm-msettings-readLP.PNG "pm-msettings-readLP.PNG")
 
 如果系統第一次啟動，以上5個xml文件是不存在的，通過掃描所有app目錄下的apk將會生成相關文件。
 
@@ -307,7 +307,7 @@ wd用來表示發生變化的目錄的句柄，mask用來表示具體發生了�
 
 先來看一下scanDirLI的總體流程圖：
 
-![alt text](images/notes/scanDirLi_1_stage.png "scanDirLi_1_stage.png")
+![alt text](/images/notes/scanDirLi_1_stage.png "scanDirLi_1_stage.png")
 
 * 進入scanDirLi后，通過第一個參數scanFile提供的路徑來掃描這個目錄下的所有apk文件，對每一個合法的apk文件調用scanPackageLI。
 
@@ -319,7 +319,7 @@ wd用來表示發生變化的目錄的句柄，mask用來表示具體發生了�
 
 下面進入到龐大的第二個scanPackageLI函數中，可以看一下流程圖：
 
-![alt text](images/notes/scanPackageLI.png "scanPackageLI.png")
+![alt text](/images/notes/scanPackageLI.png "scanPackageLI.png")
 
 * 首先如果是android的原生應用，做一些特殊處理
 * 將pkg中的usesLibraries和usesOptionalLibraries中的庫文件與mSharedLibraries里做比較，一致的話都存到pkg.usesLibraryFiles中。
