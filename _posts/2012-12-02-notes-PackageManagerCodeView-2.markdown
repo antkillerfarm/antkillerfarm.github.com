@@ -1,3 +1,9 @@
+---
+layout: post
+title: PackageManager Code View Part 2
+category: notes
+---
+
 # PackageManager Code View Part 2#
 
 ## Content Summary ##
