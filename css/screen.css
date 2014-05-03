@@ -15,6 +15,11 @@ html, body {
   height: 100%;
 }
 
+@font-face {
+	font-family: "Bitstream Vera Serif Bold";
+	src: url("http://developer.mozilla.org/@api/deki/files/2934/=VeraSeBd.ttf");
+}
+
 body {
   background-color: #eee;
   font: 13.34px helvetica, arial, clean, sans-serif;
@@ -69,8 +74,7 @@ ul.posts {
   ul.posts span {
     color: #aaa;
     /*font-family: Monaco, "Courier New", monospace;*/
-	font-family: "Bitstream Vera Serif Bold";
-	src: url("http://developer.mozilla.org/@api/deki/files/2934/=VeraSeBd.ttf");
+	font-family: "Bitstream Vera Serif Bold", serif	
     font-size: 80%;
   }
 
