@@ -142,6 +142,8 @@ ul.posts {
         border: 0;
       }
 
+	.highlight pre {background-color: #505050;}
+	.highlight pre code{color: white;}
 /*****************************************************************************/
 /*
 /* Posts
@@ -196,8 +198,6 @@ ul.posts {
     margin-bottom: 1em;
   }
 
-.highlight pre {background-color: #505050;}
-.highlight pre code{color: white;}
 
 .clear {clear: both;}
 
