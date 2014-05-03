@@ -68,7 +68,9 @@ ul.posts {
 
   ul.posts span {
     color: #aaa;
-    font-family: Monaco, "Courier New", monospace;
+    /*font-family: Monaco, "Courier New", monospace;*/
+	font-family: "Bitstream Vera Serif Bold";
+	src: url("http://developer.mozilla.org/@api/deki/files/2934/=VeraSeBd.ttf");
     font-size: 80%;
   }
 
@@ -142,7 +144,7 @@ ul.posts {
         border: 0;
       }
 
-	.highlight pre {background-color: #505050;}
+	.highlight pre {background-color: #000000;}
 	.highlight pre code{color: white;}
 /*****************************************************************************/
 /*
