@@ -23,6 +23,7 @@ PackageManager是用來獲取安裝在設備上的應用程序包的各種信息
 
 通過pm來調用PackageManager里的接口獲取用戶所需要的信息。這種方法和通常的獲取系統服務的方法是一樣的，唯一的區別的是，獲取PackageManager服務的代碼被封裝在了ActivityThread的getPackageManager方法里：
 
+{% highlight java %}
 	public static IPackageManager getPackageManager() {
         if (sPackageManager != null) {
             return sPackageManager;
@@ -31,6 +32,7 @@ PackageManager是用來獲取安裝在設備上的應用程序包的各種信息
         sPackageManager = IPackageManager.Stub.asInterface(b);
         return sPackageManager;
     }
+{% endhighlight %}
 
 ## The Architecture of PackageManager ##
 
