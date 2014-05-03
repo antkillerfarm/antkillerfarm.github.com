@@ -19,7 +19,9 @@ PackageManager是用來獲取安裝在設備上的應用程序包的各種信息
 
 和其他服務一樣，我們可以從Context類來獲取PackageManager對象：
 
+{% highlight java %}
 	PackageManager pm = context.getPackageManager();
+{% endhighlight %}
 
 通過pm來調用PackageManager里的接口獲取用戶所需要的信息。這種方法和通常的獲取系統服務的方法是一樣的，唯一的區別的是，獲取PackageManager服務的代碼被封裝在了ActivityThread的getPackageManager方法里：
 
@@ -52,11 +54,13 @@ Framework中會運行一個ServerThread,用來啟動android所需要的所有的
 
 如圖所示，在PackageManagerService中有靜態方法main來通過調用PackageManagerService的構造函數來初始化此service：
 
+{% highlight java %}
 	public static final IPackageManager main(Context context, boolean factoryTest, boolean onlyCore) {
     	PackageManagerService m = new PackageManagerService(context, factoryTest, onlyCore);
     	ServiceManager.addService("package", m);
     	return m;
 	}
+{% endhighlight %}
 
 ### PackageManagerService構造函數 ###
 
