@@ -21,7 +21,7 @@ html, body {
 }
 
 body {
-  background-color: #eee;
+  background-color: #fff;
   font: 13.34px helvetica, arial, clean, sans-serif;
   *font-size: small;
   text-align: center;
@@ -175,7 +175,7 @@ ul.posts {
 
   #post code {
     border: 1px solid #ddd;
-    background-color: #fff;
+    background-color: #000;
     font-size: 85%;
     padding: 0 .2em;
   }
