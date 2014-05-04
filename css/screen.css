@@ -171,7 +171,7 @@ ul.posts {
   #post code {
     border: 1px solid #000;
     background-color: #000;
-	font: 12px "Segoe UI", arial, clean, sans-serif;
+	font: 12px Consolas, arial, clean, sans-serif;
     font-size: 100%;
     padding: 0 .2em;
   }
