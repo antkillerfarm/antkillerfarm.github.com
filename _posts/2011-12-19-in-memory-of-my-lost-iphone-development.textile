@@ -45,6 +45,7 @@ svn checkout http://iphonedevonlinux.googlecode.com/svn/trunk/ ./
 当然在gnu linux编译 toolchain前，我们还必须将以下软件包安装到我们的 desktop上：
 
 <pre>
+{% highlight bash %}
 apt-get install \
   automake \
   bison \
@@ -72,13 +73,13 @@ apt-get install \
   wget \
   xar \
   zlib1g-dev \
-</pre>
+{% endhighlight %}
 
 如果你的计算机是64位的，需要刻意安装以下软件包：
 
-<pre>
+{% highlight bash %}
 apt-get install g++-4.3-multilib gcc-4.3-multilib gobjc-4.3-multilib
-</pre>
+{% endhighlight %}
 
 如果我们的Ubuntu上gcc的版本不是4.3的话，我们要用回4.3。如果你执意要用4.4的话，在编译toolchain的时候会出现很多编译错误。解决方案就是转到/usr/bin目录下，删除gcc, g++,  gobjc, 运行以下几个ln命令建立和所需要版本编译器的链接：
 
@@ -125,12 +126,12 @@ export PATH=/home/xxx/toolchain/toolchain/pre/bin:$PATH
 'ld: library not found -lobjc' 或者 'ld: framework not found Foundation',
 说明我们没有准备好iphone相关的链接库，解决方法如下：
 
-<pre>
+{% highlight bash %}
 In ~/ toolchain/toolchain/sys, rename folder System to System2
 In ~/toolchain/toolchain/sys/usr, rename folder lib to lib2
 Copy folder ~/toolchain/sdks/iPhoneOS3.1.2.sdk/System to ~/toolchain/toolchain/sys
 Copy folder ~ /toolchain/sdks/iPhoneOS3.1.2.sdk/usr/lib to ~ /toolchain/toolchain/sys/usr
-</pre>
+{% endhighlight %}
 
 编译成功后，需要通过ssh的方式通过wifi网络（这是目前唯一的最方便的方式了）将程序目录上传到iphone 上。目录命名方式为：yourappname.app,目录中至少有程序文件，info.plist, default.png, info.plist是xml格式的程序信息描述文件。
 
