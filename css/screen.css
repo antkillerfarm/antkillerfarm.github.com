@@ -46,9 +46,15 @@ a:visited {
   color: #a0a;
 }
 
-table {
+table, td, th {
   font-size: inherit;
   font: 100%;
+  border:1px solid green;
+}
+
+th {
+  background-color:green;
+  color:white;
 }
 
 /*****************************************************************************/
