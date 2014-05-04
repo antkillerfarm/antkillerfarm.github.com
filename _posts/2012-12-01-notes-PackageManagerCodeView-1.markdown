@@ -83,6 +83,7 @@ Framework中會運行一個ServerThread,用來啟動android所需要的所有的
 
 Installer是一個單獨的類，他主要通過socket與C語言編寫的installd程序交互，主要實現apk安裝卸載，dex的優化。Installer負責通過socket往installd發送消息，而具體操作都是在installd中完成。命令行程序installd執行的命令如下：
 
+{% highlight java %}
 	struct cmdinfo cmds[] = {
     	{ "ping",             0, do_ping },
         { "install",          3, do_install },
@@ -98,12 +99,15 @@ Installer是一個單獨的類，他主要通過socket與C語言編寫的install
         { "rmuserdata",       1, do_rm_user_data },
         { "movefiles",        0, do_movefiles },
      };
+{% endhighlight %}
 
 PackageManagerService既直接使用Installer對象，也將通過UserManager間接使用，在UserManager調用構造函數的時候將Installer對象傳進去：
 
+{% highlight java %}
 	mInstaller = new Installer();
 	......
     mUserManager = new UserManager(mInstaller, mUserAppDataDir);
+{% endhighlight %}
 
 在PackageManagerService的其他部份將會通過mUserManager來調用Installer相關的功能。
 
@@ -111,11 +115,14 @@ PackageManagerService既直接使用Installer對象，也將通過UserManager間
 
 代碼如下：
 
+{% highlight java %}
 	mHandlerThread.start();
     mHandler = new PackageHandler(mHandlerThread.getLooper());
+{% endhighlight %}
 
 mHandlerThread是HandlerThread的實例化，HandlerThread繼承自Thread，根據文檔介紹，HandlerThread對於run函數有自己特殊的實現，通過mHandlerThread.getLooper()獲得的Looper傳遞給Handler的構造函數，這樣的話，mHandler的消息處理實際就在HandlerThread里運行了。另外PackageManagerService的Handler所處理的消息如下：
 
+{% highlight java %}
 	static final int SEND_PENDING_BROADCAST = 1;
     static final int MCS_BOUND = 3;
     static final int END_COPY = 4;
@@ -131,6 +138,7 @@ mHandlerThread是HandlerThread的實例化，HandlerThread繼承自Thread，根�
     static final int WRITE_STOPPED_PACKAGES = 14;
     static final int PACKAGE_VERIFIED = 15;
     static final int CHECK_PENDING_VERIFICATION = 16;
+{% endhighlight %}
 
 ### 3. readPermissions流程 ###
 
@@ -160,16 +168,22 @@ readPermissions將會讀取/etc/permissions下所有的xml文件，他們是：
 
 在readPermissionsFromXml中，當讀到group字段時，將其後面的gid解析出來，存入PackageManagerService中的變量int[] mGlobalGids中，當然如果有重複將不會存入，然後將讀到permission, 將其後面的name讀出，作為String參數傳入readPermission函數，其定義為：
 
+{% highlight java %}
     void readPermission(XmlPullParser parser, String name)
+{% endhighlight %}
 
 在readPermission中，將permission name與相關group ID存入Settings類中的：
 
+{% highlight java %}
     final HashMap<String, BasePermission> mPermissions =
             new HashMap<String, BasePermission>();
+{% endhighlight %}
 
 因為permission name與group id有一對n的關係，即每一個permission name會有多個group ID與之附著，所以有一個專門的類BasePermission來管理，裏面會將所有group IDs存入變量：
 
+{% highlight java %}
     int[] gids;
+{% endhighlight %}
 
 中，當然也會消重。
 
@@ -181,8 +195,10 @@ readPermissions將會讀取/etc/permissions下所有的xml文件，他們是：
 
 在readPermissionsFromXml中，當讀到assign-permission時，將assign-permission name與uid分別讀出，存入變量：
 
+{% highlight java %}
     final SparseArray<HashSet<String>> mSystemPermissions =
             new SparseArray<HashSet<String>>();
+{% endhighlight %}
 
 mSystemPermissions是以int uid為key，元素為HashSet<String>的數組，每一個uid都可能附著多個assign-permission，所以每一個uid里的HashSet<String>可能會存入多個assign-permission name。
 
@@ -195,7 +211,9 @@ library tag用來標識應用程序apk需要鏈接的一些java庫，他通常�
 
 readPermissionsFromXml將解析結果存入類中變量mSharedLibraries中，他的定義如下：
 
+{% highlight java %}
     final HashMap<String, String> mSharedLibraries = new HashMap<String, String>()
+{% endhighlight %}
 
 正如前文所述，HashMap中兩個String分別是name和file。
 
@@ -207,18 +225,22 @@ readPermissionsFromXml將解析結果存入類中變量mSharedLibraries中，他
 
 我們將其解析出存入變量:
 
+{% highlight java %}
     final HashMap<String, FeatureInfo> mAvailableFeatures =
             new HashMap<String, FeatureInfo>();
+{% endhighlight %}
 
 ### 4. Settings對象的創建與讀取 ###
 
 在Settings的構造函數中會建立以下幾個File對象：
 
+{% highlight java %}
     mSettingsFilename = new File(systemDir, "packages.xml");
     mBackupSettingsFilename = new File(systemDir, "packages-backup.xml");
     mPackageListFilename = new File(systemDir, "packages.list");
     mStoppedPackagesFilename = new File(systemDir, "packages-stopped.xml");
     mBackupStoppedPackagesFilename = new File(systemDir, "packages-stopped-backup.xml");
+{% endhighlight %}
 
 而systemDir則是"/data/system/"。
 
@@ -240,12 +262,15 @@ DexOpt是Dalvic Virtual machine 提供的命令行工具，用來對java的apk�
 
 AppDirObserver繼承自FileObserver，這個FileObserver能夠監控一個文件或者一個目錄下所有文件系統的變化。FileObserver爲什麽擁有如此神力？那是因為身為java類的FileObserver，通過jni對linux inotify系列函數進行了封裝。[Inotify](http://en.wikipedia.org/wiki/Inotify "inotify")是linux kernel中的子系統，專門用來監視文件系統的變化，主要用到以下幾個函數：
 
+{% highlight c %}
     int inotify_init(void);
     int inotify_add_watch(int fd, const char *pathname, uint32_t mask);
     int inotify_rm_watch(int fd, int wd);
+{% endhighlight %}
 
 通過調用inotify_init來返回一個inotify的文件句柄，調用inotify _ add _ watch可以添加一個文件系統的路徑，讓句柄為fd的inotify來監視其變化，inotify _a dd _ watch返回一個文件句柄，將這個文件句柄作為參數傳給inotify _ rm _ watch來結束對這個目錄的監視。那麼如何實現的監視呢？通過對之前調用inotify _ init獲得的文件句柄fd，我們用read來對fd讀取，可以讀到一個struct inotify _ event的內存指針, 他可用來標識當前目錄下文件系統的變化，其結構體定義如下：
 
+{% highlight c %}
     struct inotify_event 
     {
         int wd; 		        /* The watch descriptor */
@@ -254,12 +279,12 @@ AppDirObserver繼承自FileObserver，這個FileObserver能夠監控一個文件
         uint32_t len;		    /* The length of the filename found in the name field */
         char name __flexarr;	/* The name of the file, padding to the end with NULs */	
     }
+{% endhighlight %}
 
 wd用來表示發生變化的目錄的句柄，mask用來表示具體發生了什麽變化，cookie用來粘合兩個事件，比如要從一個目錄拷貝一個文件到另外一個目錄。len用來表示有變化的文件的路徑的長度，name則表示具體的路徑。繼承自FileObserver的AppDirObserver通過其構造函數將希望被監控的目錄傳進去，然後通過調用FileObserver的接口startWatching來設置監控的目錄，即通過jni調用了inotify _ add_watch函數，然後FileObserver在其內部類ObserverThread的run中進行檢測目錄的變化的工作，即上文提到的通過read來獲取inotify _ event的內存指針的方法。這個過程是通過jni中的C++代碼實現的，在此過程中，每次將檢測結果通過囘調FileOberver的java方法onEvent將結果返回給java空間，所以想要實現自己對於文件變化的處理，AppDirObserver必須實現自己的onEvent。在AppDirObserver的onEvent中，只對REMOVE _ EVENTS和ADD _ EVENTS兩個事件進行了處理，當有REMOVE _ EVENTS事件發生時，說明有apk包被刪除，所以調用removePackageLI函數，當有ADD _ EVENT事件發生時，說明有新的apk被安裝，則調用scanPackageLI函數，掃描新的新增加的文件。最後調用mSettings.writeLPr函數，將增加或者刪除的變化的相關設置寫進相關文件。
 
 下面這個表格列出了PackageManagerService中相關PATH和AppDirObserver的對象，有的PATH沒有用到AppDirObserver來監控:
 
-<pre>
 <table border="1" cellspacing="0" cellpadding="0">
    <tr style="background:#00B0F0">
       <td>Path Parameter</td>
@@ -307,7 +332,6 @@ wd用來表示發生變化的目錄的句柄，mask用來表示具體發生了�
       <td>mVendorInstallObserver</td>
    </tr>
 </table>
-</pre>
 
 ### 7. scanDirLI流程 ###
 
