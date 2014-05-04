@@ -504,13 +504,13 @@ SCHED_ITEM与SCHED_ITEM_DT类似，都是实实在在去设置回调函数及其
 <tbody>
 <tr>
 <td valign="top" style="background:white">
-<pre>1&nbsp; SCHED_ITEM_DT(l1s_pm_cmd, 0, 1, 0)&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</pre>
+1&nbsp; SCHED_ITEM_DT(l1s_pm_cmd, 0, 1, 0)&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
 </td>
 <td valign="top">
 <p align="left">0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
 </td>
 <td valign="top">
-<pre>1&nbsp; SCHED_ITEM(l1s_pm_resp, -4, 1, 0)&nbsp; &nbsp;</pre>
+1&nbsp; SCHED_ITEM(l1s_pm_resp, -4, 1, 0)&nbsp; &nbsp;
 </td>
 <td valign="top" style="background:#00B0F0">
 <p align="left">0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
