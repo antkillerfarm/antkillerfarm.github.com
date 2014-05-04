@@ -285,7 +285,6 @@ SCHED_ITEM与SCHED_ITEM_DT类似，都是实实在在去设置回调函数及其
 
 上述pm_sched_set数组是文章开头所说的寻找最大功率频率点所需要对基带子系统所做的设置，在设置前tdma_scheduler 没有设置过任何数组，所以当前bucket数组都是空白的，tdma_scheduler 的cur_bucket也为0，指向第一个bucket元素, 如下图的表格，代表了bucket数组，蓝色的列代表当前的bucket索引，也就是cur_bucket所指的bucket，每列的第一个格子里的数字表示每个bucket里num_items的数值，也就是当前bucket已经设置回调函数的数量，他的数值不能超过8。现在tdma_scheduler还未进行过设置，所以都是0，cur_bucket也指向第一个bucket。(当然26个bucket太多不容易显示，所以只显示了8个。)
 
-<pre>
 <table border="1" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
@@ -498,11 +497,9 @@ SCHED_ITEM与SCHED_ITEM_DT类似，都是实实在在去设置回调函数及其
 </tr>
 </tbody>
 </table>
-</pre>
 
 在调用tdma_schedule_set之后，bucket数组变成了如下的样子：
 
-<pre>
 <table border="1" cellspacing="0" cellpadding="0" style="background:white">
 <tbody>
 <tr>
@@ -715,7 +712,6 @@ SCHED_ITEM与SCHED_ITEM_DT类似，都是实实在在去设置回调函数及其
 </tr>
 </tbody>
 </table>
-</pre>
 
 了解了设置之后，我们再看看TDMA_sched的执行，且看tdma_sched_execute的代码：
 
