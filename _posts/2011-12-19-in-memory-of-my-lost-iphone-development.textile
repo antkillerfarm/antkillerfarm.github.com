@@ -44,7 +44,6 @@ svn checkout http://iphonedevonlinux.googlecode.com/svn/trunk/ ./
 将iphone_sdk_3.1.2_with_xcode_3.1.4__leopard__9m2809.dmg拷贝到刚才建立的files目录下，将iPhone1,2_3.1.2_7D11_Restore.ipsw拷贝到files下面的firmware目录下。
 当然在gnu linux编译 toolchain前，我们还必须将以下软件包安装到我们的 desktop上：
 
-<pre>
 {% highlight bash %}
 apt-get install \
   automake \
@@ -73,7 +72,6 @@ apt-get install \
   wget \
   xar \
   zlib1g-dev \
-{% endhighlight %}
 
 如果你的计算机是64位的，需要刻意安装以下软件包：
 
