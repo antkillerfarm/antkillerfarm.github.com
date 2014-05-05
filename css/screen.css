@@ -57,6 +57,14 @@ th {
   color:white;
 }
 
+code.has-jax {
+  font: inherit; 
+  font-size: 120%;
+  background: inherit;
+  border: inherit;
+  color: black;
+  background-color: white;
+}
 /*****************************************************************************/
 /*
 /* Home
