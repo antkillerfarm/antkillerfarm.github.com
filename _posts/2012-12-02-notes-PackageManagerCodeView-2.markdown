@@ -14,9 +14,11 @@ category: notes
 
 安裝package的接口是：
 
+{% highlight java %}
     public abstract void installPackage(
             Uri packageURI, IPackageInstallObserver observer, int flags,
             String installerPackageName);
+{% endhighlight %}
 
 packageURI用來指示要安裝的package的地址，可以使路徑，亦可以是intent。observer是設置當安裝過程結束后需要調用的囘調函數，installerPackageName是可選的，表示將要安裝的package名字。且看流程圖：
 
@@ -24,20 +26,26 @@ packageURI用來指示要安裝的package的地址，可以使路徑，亦可以
 
 * 在installPackage中，首先通过：
     
+{% highlight java %}
         mContext.enforceCallingOrSelfPermission(android.Manifest.permission.INSTALL_PACKAGES, null);
+{% endhighlight %}
     
     来判断一下，是否擁有INSTALL_PACKAGES的权限。然后通过：
         
+{% highlight java %}
         Message msg = mHandler.obtainMessage(INIT_COPY);
         msg.obj = new InstallParams(packageURI, observer, flags,
                     installerPackageName);
         mHandler.sendMessage(msg);
+{% endhighlight %}
     
     向handler传递一个INIT_COPY的消息和InstallParams对象。
 
 * handler处理INIT_COPY消息。首先判断是否已经將DefaultContainerConnection获取到。如果获取失败，调用InstallParams的serviceError进行错误处理。如果获取到，就将此次安装添加到：
 
+{% highlight java %}
     ArrayList < HandlerParams >  mPendingInstalls = new ArrayList < HandlerParams > ();
+{% endhighlight %}
     
     这个安装队列中。添加完成后，如果是第一个添加到队列中的安装，就通过handler发送MCS_BOUND消息来启动安装。
 
@@ -53,8 +61,10 @@ packageURI用來指示要安裝的package的地址，可以使路徑，亦可以
 
 不管什麽方式的安裝，必須首先調用PackageService里的deletePackage接口，定義如下：
 
+{% highlight java %}
     public abstract void deletePackage(
             String packageName, IPackageDeleteObserver observer, int flags);
+{% endhighlight %}
 
 packageName為要卸載的Package名稱，當卸載流程走完，PackageManager在內部會調用observer實現的囘調函數來處理卸載結束后的工作。函數實體最終還是在PackageManagerService.java中，且看圖：
 

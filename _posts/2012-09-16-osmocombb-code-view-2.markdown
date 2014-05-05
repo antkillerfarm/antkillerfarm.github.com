@@ -45,6 +45,7 @@ Down = Up + 95.0
 
 上电运行layer1.bin后，首选运行main函数。其实在嵌入式系统中，程序基本都是从一个制定地址开始运行，运行一个类似jump的命令跳到另外一个地方，如果想从我们定义的main函数运行，必须需要一些初始的汇编代码跳到main函数的地址，这就涉及到一些CPU体系结构，芯片手册的一些规定，更多的时候还需要自己写连接文件，给程序中的函数与数据布局，以上内容不在本文涉猎，我们的main函数如下：
 
+{% highlight c %}
     int main(void)  
     {  
         board_init();  
@@ -79,9 +80,11 @@ Down = Up + 95.0
         /*NOT REACHED */  
         twl3025_power_off();  
     }
+{% endhighlight %}
 
 其他函数略过，着重看layer1_init函数：
 
+{% highlight c %}
     void layer1_init(void)  
     {  
     #ifndef CONFIG_TX_ENABLE  
@@ -117,6 +120,7 @@ Down = Up + 95.0
        /*inform l2 and upwards that we are ready for orders */  
        l1ctl_tx_reset(L1CTL_RESET_IND,L1CTL_RES_T_BOOT);  
     }        
+{% endhighlight %}
 
 其中l1a_init是用来初始化异步运行的部分，比如从串口发来的数据， socket过来的数据与消息，l1s_init是用来初始化同步运行的部分，比如中断调用。其他都是硬件的一些初始化。在l1s_init中，通过：
 
@@ -124,13 +128,16 @@ Down = Up + 95.0
 
 注册了当有frame收到的时候需要执行的中断调用函数，所以frame_irq是个很重要的函数，下行的相关事宜都在此处进行。且看异步的部分,在l1a_init里调用了l1a_l23api_init函数：
 
+{% highlight c %}
     void l1a_l23api_init(void)  
     {  
         sercomm_register_rx_cb(SC_DLCI_L1A_L23,l1a_l23_rx_cb);  
     }  
+{% endhighlight %}
 
 sercomm_register_rx_cb给封装串口的实体注册回调函数来接收来自串口的消息，这个实体的数据结构如下:
 
+{% highlight c %}
     static struct {  
         int initialized;  
         /* transmitside */  
@@ -151,9 +158,11 @@ sercomm_register_rx_cb给封装串口的实体注册回调函数来接收来自�
         } rx;  
       
     } sercomm;
+{% endhighlight %}
 
 sercomm结构体分两部分，有接收的rx，有发送的tx，通过注册rx部分的dlci_cb_t dlci_handler[_SC_DLCI_MAX]来接收来自串口的不同种类的消息，以uint8_t dlci来索引回调函数，他的取值也代表优先级，定义在一个枚举变量里：
 
+{% highlight c %}
     enum sercomm_dlci {  
         SC_DLCI_HIGHEST = 0,  
         SC_DLCI_DEBUG   = 4,  
@@ -163,6 +172,7 @@ sercomm结构体分两部分，有接收的rx，有发送的tx，通过注册rx�
         SC_DLCI_ECHO    = 128,  
         _SC_DLCI_MAX  
     };
+{% endhighlight %}
 
 如果处理来自上层(layer2 ,layer3)的消息，则用SC_DLCI_L1A_L23。他的调用也是通过初始化串口时候注册的中断调用，如果串口有数据，他就会被调用。
 
@@ -191,6 +201,7 @@ sercomm结构体分两部分，有接收的rx，有发送的tx，通过注册rx�
 
 TDMA知识的介绍先告一段落，接下来我们来看看OsmocomBB是如何实现TDMA的机制的，主要的代码在Tdma_sched.h,Tdma_sched.c中。Tdma_sched.h 中定义了几个数据结构:
 
+{% highlight c %}
     typedef int tdma_sched_cb(uint8_t p1, uint8_t p2, uint16_t p3);  
   
     /* A single item in a TDMA scheduler bucket */  
@@ -214,6 +225,7 @@ TDMA知识的介绍先告一段落，接下来我们来看看OsmocomBB是如何�
         struct tdma_sched_bucket bucket[TDMASCHED_NUM_FRAMES];  
         uint8_t cur_bucket;  
     };
+{% endhighlight %}
 
 结构体 tdma_scheduler 中包括了25个tdma_sched_bucket,而每个 tdma_sched_bucket 有8个 tdma_sched_item,我们可以用图来直观的了解下:
 
@@ -223,11 +235,14 @@ TDMA知识的介绍先告一段落，接下来我们来看看OsmocomBB是如何�
 
 首先看设置，通过调用tdma_schedule_set来设置相关的回调函数组合，其实就是一个tdma_sched_item数组，这个函数定义如下：
 
+{% highlight c %}
     /* Schedule a set of items starting from 'frame_offset' TDMA frames in the future */  
     int tdma_schedule_set(uint8_t frame_offset, const struct tdma_sched_item *item_set, uint16_t p3); 
+{% endhighlight %}
 
 参数frame_offset表示在当前bucket的位置往后移的位移，当然要确保不能越界，参数item_set表示一个tdma_sched_item数组，数组里面存放的根据时序分布的回调函数的指针。p3是传递进来的其他的有用的附加数据，p3赋给了tdma_sched_item的p3，tdma_schedule_set代码如下：
 
+{% highlight c %}
     int tdma_schedule_set(uint8_t frame_offset, const struct tdma_sched_item *item_set, uint16_t p3)  
     {  
         struct tdma_scheduler *sched = &l1s.tdma_sched;  
@@ -263,23 +278,28 @@ TDMA知识的介绍先告一段落，接下来我们来看看OsmocomBB是如何�
   
         return j;  
     }
+{% endhighlight %}
 
 先根据frame_offset和当前的bucket的位置，定位到将要操作的bucket上去，然后开始遍历输入的tdma_sched_item数组，主要以每个tdma_sched_item的回调函数来判断如何设置tdma_sched_item，比如，当sched_item->cb为null时，则直接转移到下一个bucket, 如果sched_item->cb为&tdma_end_set，则设置结束，因为tdma_end_set是在tdma_sched_item数组中最后一个元素里出现。其他的说明是正常的拥有回调函数的tdma_sched_item，他们可以正常的拷贝到相应的bucket里。先举个代码里的例子，比如在Prim_pm.c中，设置寻找最大功率点：
 
+{% highlight c %}
     static const struct tdma_sched_item pm_sched_set[] = {  
         SCHED_ITEM_DT(l1s_pm_cmd, 0, 1, 0), SCHED_END_FRAME(),  
                          SCHED_END_FRAME(),               
         SCHED_ITEM(l1s_pm_resp, -4, 1, 0),  SCHED_END_FRAME(),   
         SCHED_END_SET()  
     };
+{% endhighlight %}
 
 在叙述设置的细节之前，我们先了解下上述代码中的神秘的宏定义，他们都定义在tdma_sched.h中：
 
+{% highlight c %}
     #define SCHED_ITEM(x, p, y, z)      { .cb = x, .p1 = y, .p2 = z, .prio = p, .flags = 0 }  
     #define SCHED_ITEM_DT(x, p, y, z)   { .cb = x, .p1 = y, .p2 = z, .prio = p, \  
                       .flags = TDMA_IFLG_TPU | TDMA_IFLG_DSP }  
     #define SCHED_END_FRAME()       { .cb = NULL, .p1 = 0, .p2 = 0 }  
     #define SCHED_END_SET()         { .cb = &tdma_end_set, .p1 = 0, .p2 = 0 }
+{% endhighlight %}
 
 SCHED_ITEM与SCHED_ITEM_DT类似，都是实实在在去设置回调函数及其参数的，不同的是SCHED_ITEM_DT的多加了flags，即TDMA_IFLG_TPU | TDMA_IFLG_DSP。简而言之，就是说明这个回调函数是和时间处理以及基带的DSP相关的，再简单的说就是给基带子系统设置一些参数。而SCHED_ITEM的flags为0，一般就是查看基带子系统的返回结果。我们看到SCHED_END_FRAME是给cb赋值为null，所以他是要告诉tdma_sched放到下一个bucket里去，直接的结果就是下一个tdma_sched_item的回调函数要等待下一个TDMA frame来的时候才能调用。最后一个SCHED_END_SET，他是要告诉tdma_sched这一次设置结束了。
 
@@ -715,6 +735,7 @@ SCHED_ITEM与SCHED_ITEM_DT类似，都是实实在在去设置回调函数及其
 
 了解了设置之后，我们再看看TDMA_sched的执行，且看tdma_sched_execute的代码：
 
+{% highlight c %}
     int tdma_sched_execute(void)  
     {  
         struct tdma_scheduler *sched = &l1s.tdma_sched;  
@@ -753,6 +774,7 @@ SCHED_ITEM与SCHED_ITEM_DT类似，都是实实在在去设置回调函数及其
         /* return number of items that we called */  
         return num_events;  
     }
+{% endhighlight %}
 
 因为是每一次TDMA frame中断就会调用一次tdma_sched_execute，所以每一个bucket的回调函数组合只在同一个TDMA frame来到的时候运行，而且还要根据每一个tdma_sched_item所设置的优先级来排序执行。每一次执行完，这个bucket的数据不在有效，所以将当前bucket的num_items清零。
 
