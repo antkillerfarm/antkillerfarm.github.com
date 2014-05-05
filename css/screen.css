@@ -232,6 +232,8 @@ body div.content code.has-jax {
   font-size: 120%;
   background: inherit;
   border: inherit;
+  color: black;
+  background-color: #fff;
 }
 																					
 body div.gist {
