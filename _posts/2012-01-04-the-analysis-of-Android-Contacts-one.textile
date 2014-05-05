@@ -18,13 +18,13 @@ h3. 初始化
 
 p. 当你在Android的界面中，点击Contacts的图标，Contacts应用会秀出来。先看在Contacts的AndroidManifest.xml中：
 
-<pre>
-<intent-filter>
+{% highlight xml%}
+	<intent-filter>
            <action android:name="com.android.contacts.action.LIST_DEFAULT" />
            <category android:name="android.intent.category.DEFAULT" />
            <category android:name="android.intent.category.TAB" />
-</intent-filter>
-</pre>
+	</intent-filter>
+{% endhighlight %}
 
 p. 这是每次默认点击图标时的intent，这是ContactsListActivity，他继承自ListActivity：
 
