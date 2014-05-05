@@ -16,10 +16,14 @@ html, body {
 }
 
 body {
-  background-color: #fff;
-  font: 13.34px "Segoe UI", arial, clean, sans-serif;
-  *font-size: small;
+  color: #000;
+  background-color: #fdfdfd;
+  font-family: "Microsoft Yahei", "Segoe UI" ! important;
+  /*font: 13.34px "Segoe UI", arial, clean, sans-serif;*/
+  position: relative;
+  font-size: 18px;
   text-align: center;
+  margin: auto 10px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -234,6 +238,7 @@ body div.content pre > code {
   padding: 0; background-color: transparent;
 }
 
+/*
 body div.content code.has-jax {
   font: inherit; 
   font-size: 120%;
@@ -241,7 +246,7 @@ body div.content code.has-jax {
   border: inherit;
   color: black;
   background-color: #fff;
-}
+}*/
 																					
 body div.gist {
   font-size: 15px;
