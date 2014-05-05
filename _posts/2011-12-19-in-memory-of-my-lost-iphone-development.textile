@@ -72,6 +72,7 @@ apt-get install \
   wget \
   xar \
   zlib1g-dev \
+{% endhighlight %}
 
 如果你的计算机是64位的，需要刻意安装以下软件包：
 
