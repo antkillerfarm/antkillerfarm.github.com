@@ -178,7 +178,6 @@ ul.posts {
 
   #post .highlight code {
 	color:white;
-	border: 1px solid #ffe;
     background-color: #000;
 	font: 12px Consolas, arial, clean, sans-serif;
     font-size: 100%;
@@ -193,7 +192,7 @@ ul.posts {
     font: inherit; 
     font-size: 120%;
     border: inherit;
-    `color: black;
+    color: black;
     background-color: white;
   }
   /* terminal */
