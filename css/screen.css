@@ -184,9 +184,14 @@ ul.posts {
     padding: 0 .2em;
   }
 
-    #post pre code {
-      border: none;
-    }
+  #post pre code {
+	color:white;
+    background-color: #000;
+	font: 12px Consolas, arial, clean, sans-serif;
+    font-size: 100%;
+    padding: 0 .2em;
+    border: none;
+  }
 
   code.has-jax {
     font: inherit; 
