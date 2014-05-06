@@ -176,7 +176,7 @@ ul.posts {
     margin-left: 1.35em;
   }
 
-  #post .highlight code {
+  #post code {
 	color:white;
     background-color: #000;
 	font: 12px Consolas, arial, clean, sans-serif;
