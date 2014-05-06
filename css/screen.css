@@ -165,7 +165,7 @@ ul.posts {
 
   /* standard */
 
-  #post pre {
+  pre {
     border: 2px solid #ddd;
     background-color: #000;
     padding: 0 .4em;
@@ -176,7 +176,7 @@ ul.posts {
     margin-left: 1.35em;
   }
 
-  #post code {
+  code {
 	color:white;
     background-color: #000;
 	font: 12px Consolas, arial, clean, sans-serif;
@@ -184,7 +184,7 @@ ul.posts {
     padding: 0 .2em;
   }
 
-  #post pre code {
+  pre code {
     border: none;
   }
 
