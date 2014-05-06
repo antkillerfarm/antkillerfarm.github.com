@@ -1,4 +1,4 @@
-.highligt  { background-color: #222222 }
+.highligt  { background: #222222; }
 .highligt .c { color: #000080 } /* Comment */
 .highligt .err { color: #cccccc; border: 1px solid #FF0000 } /* Error */
 .highligt .g { color: #cccccc } /* Generic */
