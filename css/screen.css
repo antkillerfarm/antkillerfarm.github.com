@@ -244,7 +244,12 @@ body div.content code.has-jax {
   color: black;
   background-color: #fff;
 }
-																					
+
+.MathJax .mo,
+.MathJax .mi {
+  color: inherit;
+}
+
 body div.gist {
   font-size: 15px;
 }
