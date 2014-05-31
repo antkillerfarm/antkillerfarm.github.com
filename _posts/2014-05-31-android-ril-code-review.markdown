@@ -55,15 +55,15 @@ It includes three function pointers, their implementaions are at libril.so, and 
 This structure includes five function pointers, their implementations are at vendor ril, they will be used by libril.so. So, vendor ril and libril.so invoke each other's function to implement the RIL system. By the way, libril.so and rild are connected by static linking. But android wants to hide the OEM vendor's implementation, vendor-ril.so is connected with rild by dynamic linking. So let's look at the code snippets of the dynamic loading of reference-ril.so:
 
 {% highlight c %}
-	dlHandle = dlopen(rilLibPath, RTLD_NOW);
+    dlHandle = dlopen(rilLibPath, RTLD_NOW);
     if (dlHandle == NULL) {
 		fprintf(stderr, "dlopen failed: %s\n", dlerror());
 		exit(-1);
 	}
 
-    RIL_startEventLoop();
+    RIL_startEventLoop();
     rilInit = (const RIL_RadioFunctions *(*)(const struct RIL_Env *, int, char **))dlsym(dlHandle, "RIL_Init");
-    if (rilInit == NULL) {
+    if (rilInit == NULL) {
 		fprintf(stderr, "RIL_Init not defined or exported in %s\n", rilLibPath);
 		exit(-1);
 	}
@@ -118,4 +118,5 @@ The RIL_Init implemented in vendor ril will do some low layer's jobs:
 We will talk about it with more details in later section. The last invoking is RIL_register, we transfer the previous function pointers into libril.so via this function. Inner the RIL_register, it connects the socket to communicate the framework, and launch the listenCallback event, it's like a engine can always trigger the I/O jobs. 
 
 For a summay of the rild rutine, there is a graph below: 
+
 ![alt text](/images/notes/RIL_rutine.PNG"RIL_rutine.PNG")
