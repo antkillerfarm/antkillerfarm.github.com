@@ -31,82 +31,82 @@ The entire RIL system is initiated by the invoking RILD command from shell, so l
 There is a static structure object in rild.c:
 
 {% highlight c %}
-	static struct RIL_Env s_rilEnv = {
-		RIL_onRequestComplete,
-		RIL_onUnsolicitedResponse,
-		RIL_requestTimedCallback,
-	};
+static struct RIL_Env s_rilEnv = {
+	RIL_onRequestComplete,
+	RIL_onUnsolicitedResponse,
+	RIL_requestTimedCallback,
+};
 {% endhighlight %}
 
 
 It includes three function pointers, their implementaions are at libril.so, and they will be used by vendor ril. On the contrary, there is another similar structure defined in Ril.h:
 
 {% highlight c %}
-	typedef struct {
-		int version;        /* set to RIL_VERSION */
-		RIL_RequestFunc onRequest;
-		RIL_RadioStateRequest onStateRequest;
-		RIL_Supports supports;
-		RIL_Cancel onCancel;
-		RIL_GetVersion getVersion;
-	} RIL_RadioFunctions;
+typedef struct {
+	int version;        /* set to RIL_VERSION */
+	RIL_RequestFunc onRequest;
+	RIL_RadioStateRequest onStateRequest;
+	RIL_Supports supports;
+	RIL_Cancel onCancel;
+	RIL_GetVersion getVersion;
+} RIL_RadioFunctions;
 {% endhighlight %}
 
 This structure includes five function pointers, their implementations are at vendor ril, they will be used by libril.so. So, vendor ril and libril.so invoke each other's function to implement the RIL system. By the way, libril.so and rild are connected by static linking. But android wants to hide the OEM vendor's implementation, vendor-ril.so is connected with rild by dynamic linking. So let's look at the code snippets of the dynamic loading of reference-ril.so:
 
 {% highlight c %}
-    dlHandle = dlopen(rilLibPath, RTLD_NOW);
-    if (dlHandle == NULL) {
-		fprintf(stderr, "dlopen failed: %s\n", dlerror());
-		exit(-1);
-	}
+dlHandle = dlopen(rilLibPath, RTLD_NOW);
+if (dlHandle == NULL) {
+	fprintf(stderr, "dlopen failed: %s\n", dlerror());
+	exit(-1);
+}
 
-    RIL_startEventLoop();
-    rilInit = (const RIL_RadioFunctions *(*)(const struct RIL_Env *, int, char **))dlsym(dlHandle, "RIL_Init");
-    if (rilInit == NULL) {
-		fprintf(stderr, "RIL_Init not defined or exported in %s\n", rilLibPath);
-		exit(-1);
-	}
+RIL_startEventLoop();
+rilInit = (const RIL_RadioFunctions *(*)(const struct RIL_Env *, int, char **))dlsym(dlHandle, "RIL_Init");
+if (rilInit == NULL) {
+	fprintf(stderr, "RIL_Init not defined or exported in %s\n", rilLibPath);
+	exit(-1);
+}
 {% endhighlight %}
 
 As the code snippets show us, we get the path of the vendor ril from the configuration file, then invoke RIL_startEventLoop, its implementation is in libril.so, that the code below:
 
 {% highlight c %}
-	extern "C" void
-	RIL_startEventLoop(void) {
-		int ret;
-		pthread_attr_t attr;
+extern "C" void
+RIL_startEventLoop(void) {
+	int ret;
+	pthread_attr_t attr;
 		
-		/* spin up eventLoop thread and wait for it to get started */
-		s_started = 0;
-		pthread_mutex_lock(&s_startupMutex);
+	/* spin up eventLoop thread and wait for it to get started */
+	s_started = 0;
+	pthread_mutex_lock(&s_startupMutex);
 		
-		pthread_attr_init (&attr);
-		pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_DETACHED);
-		ret = pthread_create(&s_tid_dispatch, &attr, eventLoop, NULL);
+	pthread_attr_init (&attr);
+	pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_DETACHED);
+	ret = pthread_create(&s_tid_dispatch, &attr, eventLoop, NULL);
 
-		while (s_started == 0) {
-				pthread_cond_wait(&s_startupCond, &s_startupMutex);
-		}
-
-		pthread_mutex_unlock(&s_startupMutex);
-
-		if (ret < 0) {
-				LOGE("Failed to create dispatch thread errno:%d", errno);
-				return;
-		}
+	while (s_started == 0) {
+		pthread_cond_wait(&s_startupCond, &s_startupMutex);
 	}
+
+	pthread_mutex_unlock(&s_startupMutex);
+
+	if (ret < 0) {
+		LOGE("Failed to create dispatch thread errno:%d", errno);
+		return;
+	}
+}
 {% endhighlight %}
 
 We will discuss this function's detail in next section, so let's continue to check the main function's rutine of RILD, after invoking RIL_startEventLoop, we get the function pointer of "RIL_Init" in vendor ril, then after checking the validation of the function pointer, we invoke it with main's input parameters:
 
 {% highlight c %}
-    rilArgv[0] = argv[0];
+rilArgv[0] = argv[0];
 	
-	funcs = rilInit(&s_rilEnv, argc, rilArgv);
+funcs = rilInit(&s_rilEnv, argc, rilArgv);
 
-	LOGD("RIL_register %d", cardNum);
-	RIL_register(funcs,cardNum);
+LOGD("RIL_register %d", cardNum);
+RIL_register(funcs,cardNum);
 {% endhighlight %}
 
 The RIL_Init implemented in vendor ril will do some low layer's jobs: 
