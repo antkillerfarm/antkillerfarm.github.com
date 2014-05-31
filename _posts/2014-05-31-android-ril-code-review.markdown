@@ -16,7 +16,7 @@ In the lower layer, RIL communicates with Baseband chip via the linux virtual UA
 
 The google company seprated the RIL into three parts in order to protect the IP of the OEM. These parts are: RIL daemon application(RILD), libril.so and reference-ril.so. The RILD and the libril.so reference each other in static linking, their implementations are open to us, but reference-ril.so is the reference implementation which is provided by Google to OEMs. Because of the diversity and the complexity of all kinds of the mobile network. The oem vendors have their own process routines in their baseband chip, they may don't want to open the source code, so they implement their own vendor-ril.so. In order to loose coupling between the private module and the open source module, RILD uses the dynamic loading method to communicate with vendor-ril.so. Their source codes are at:
 
-    RILD--
+	RILD--
 		hardware/ril/rild
 
 	libril--
@@ -32,9 +32,9 @@ There is a static structure object in rild.c:
 
 {% highlight c %}
 static struct RIL_Env s_rilEnv = {
-	RIL_onRequestComplete,
-	RIL_onUnsolicitedResponse,
-	RIL_requestTimedCallback,
+    RIL_onRequestComplete,
+    RIL_onUnsolicitedResponse,
+    RIL_requestTimedCallback,
 };
 {% endhighlight %}
 
