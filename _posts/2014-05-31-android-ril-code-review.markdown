@@ -8,7 +8,7 @@ category: technology
 
 RIL is the abbreviation of "Radio Interface Layer". In the android software platform, the RIL sub system communicates with BaseBand chip downwards, and provides the android framework with phones' related services upwards, such as Call, sms, etc. Its location in android softeware  stack is shown in graph below:
 
-![alt text](images/notes/RIL-architecture.PNG"RIL-architecture.PNG")
+![alt text](/images/notes/RIL-architecture.PNG"RIL-architecture.PNG")
 
 In the lower layer, RIL communicates with Baseband chip via the linux virtual UART driver, we don't want to cover some details about the interactions between the UART driver and the real baseband chip, in this place, this serial port is on behalf of the baseband chip. In the upper layer, RIL communicates with the framework via socket. The java layer in framework is not our point, what we will talk about is the green part in above graph.
 
@@ -118,4 +118,4 @@ The RIL_Init implemented in vendor ril will do some low layer's jobs:
 We will talk about it with more details in later section. The last invoking is RIL_register, we transfer the previous function pointers into libril.so via this function. Inner the RIL_register, it connects the socket to communicate the framework, and launch the listenCallback event, it's like a engine can always trigger the I/O jobs. 
 
 For a summay of the rild rutine, there is a graph below: 
-![alt text](images/notes/RIL_rutine.PNG"RIL_rutine.PNG")
+![alt text](/images/notes/RIL_rutine.PNG"RIL_rutine.PNG")
