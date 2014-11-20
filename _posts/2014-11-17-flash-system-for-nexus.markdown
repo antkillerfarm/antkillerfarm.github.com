@@ -17,6 +17,7 @@ category: technology
 
 * Run these commonds in termial
 
+
 1. Using the adb tool: With the device powered on, execute:
 
 {% highlight bash %}
@@ -32,6 +33,7 @@ To make the phone transfor into fastboot mode.
    {% endhighlight %}
 
 3. Finally, run flash-all.sh in the current directory, if there is the message "waiting for device" stuck in terminal, make sure run the script under the sudo mode.
+
 
 # How to flash revocery mode binary #
 
