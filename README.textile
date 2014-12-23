@@ -6,7 +6,7 @@ I was tired of having my blog posts end up in a database off on some remote serv
 
 h1. License
 
-The following directories and their contents are Copyright Alexunder Hsu. You may not reuse anything therein without my permission:
+The following directories and their contents are Copyright Antkillerfarm. You can not reuse anything therein without my permission:
 
 * _posts/
 * images/
