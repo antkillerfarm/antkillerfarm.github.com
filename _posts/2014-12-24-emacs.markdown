@@ -1,0 +1,99 @@
+---
+layout: post
+title:  emacs学习心得
+category: technology 
+---
+
+# emacs学习心得 #
+
+emacs是大名鼎鼎的Richard Stallman的作品，我闻名已久。但作为早期一直在Windows操作系统下打拼的程序员，很少有机会用到emacs。用的最多的还是Notepad和UltraEdit。
+
+后来，在STE工作期间，由于代码需要上传Linux服务器，那个服务器上的Vi又是个命令行程序，用起来很别扭。还好那上面有个GUI式的emacs，总算帮了大忙。但是emacs更深入的功能却没有研究，只是知道里面有了LISP语言的解释器而已。
+
+现将我最近用的比较多的功能罗列如下：
+
+M-x使用技巧：M-x下输入的命令过长的时候，可以输入开头的字符串，然后按TAB，emacs会显示所有满足输入前缀的命令。
+
+复制、剪切——M-w、C-w，或者用M-x cua-mode切换到CUA模式，就可以用C-c和C-v来复制粘贴了
+
+粘贴——C-y
+
+搜索——C-s，如果要利用剪切板的内容来进行搜索的话，使用Esc-y
+
+搜索下一个——继续按C-s
+
+向前搜索——C-r
+
+正则式搜索和普通搜索的快捷键类似——C-M-s和C-M-r //在ubuntu里由于C-M-s和系统快捷键冲突，因此可以用Esc C-s的方式启动向前的正则式搜索。
+
+替换——M-%
+
+保存缓冲区——C-x C-s
+
+十六进制模式——M-x hexl-mode
+
+十六进制模式下跳转到某个十六进制地址——M-g
+
+十六进制模式退出——C-c C-c
+
+多窗口的时候切换窗口——C-x o //"o",not zero
+
+关闭当前的窗口——C-x 0
+
+只保留当前的窗口——C-x 1
+
+新建一个上下式的窗口——C-x 2
+
+新建一个左右式的窗口——C-x 3
+
+打开shell——M-x shell
+
+关闭缓冲区——C-x k
+
+比较两个已经打开的缓冲区——M-x ediff-buffers
+
+比较两个文件夹——M-x edirs
+
+缓冲区被外部程序改变之后，重新刷新缓冲区——M-x revert-buffer
+
+Undo——C-x u
+
+Redo——用C-f中断Undo执行序列，然后再Undo，就可以Undo之前做的“Undo”操作，也就是Redo操作了。
+
+打开文件——C-x C-f//这个命令不仅可用于打开文件，还可用于确定emacs默认的操作目录，.emacs配置文件就放在这个目录下，这一点对Windows用户来说十分重要。
+
+空格变TAB——M-x tabify
+
+在emacs中去除^M——M-x replace-string C-q C-m RET
+
+选择整个缓冲区——C-x h
+
+在windows下使用ediff——windows版的emacs没有自带diff工具，可以用cygwin中的diff代替之，具体的办法是将cygwin的bin文件夹加到PATH环境变量中。
+
+高亮显示——C-x w h//后面需要跟正则表达式，如果是要全字匹配才高亮显示的话，可以用\的方式给出相应的正则表达式。
+
+取消高亮显示——C-x w r
+
+M-x list-matching-lines 或 M-x occur——另开一个buffer列出当前buffer中所有匹配正则表达式的那些行。这个功能我找了好半天才查到，之前还以为只有UltraEdit里才有呢。。。
+
+M-x find-grep-dired——列出文件夹下所有匹配字符串的文件的名字。这个命令只能列出文件名，而不能列出在该文件中出现的匹配字符串的位置，有的时候仍然不太好用。
+
+M-x rgrep——这个命令可以解决上面的问题，列出匹配字符串在文件夹中所有出现的位置。
+
+C代码相关的内容：
+
+选择缩进的版式——C-c . //然后会提问使用什么风格，默认的gnu风格是缩进两个空格，我比较喜欢bsd风格的——缩进一个TAB
+
+代码排版——TAB//可支持块操作
+
+输入TAB——C-q TAB
+
+块小写——C-x C-l
+
+块大写——C-x C-u
+
+16进制 M-x hexl-mode
+
+C-c C-c
+
+Leave Hexl mode, going back to the major mode this buffer had before you invoked `hexl-mode'.
