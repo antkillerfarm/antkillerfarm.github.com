@@ -1,0 +1,119 @@
+---
+layout: post
+title:  GTK学习心得
+category: technology 
+---
+
+# GTK
+
+## 1）安装环境
+
+本人所使用的开发环境是Ubuntu 12.04。默认情况下已经安装了GTK+3开发所需的包。可以使用pkg-config --cflags --libs gtk+-3.0来确认安装的有效性。
+
+阅读示例代码是学习GTK+3的有效途径。可使用sudo apt-get install gtk-3-examples安装相关的示例代码。
+
+## 2）Glade
+
+Glade仍然是GTK+3默认的UI设计工具。与GTK+3配合的Glade版本是Glade 3。但是与Glade 2不同的是，Glade 3不再生成相关的C代码，取而代之的是一个描述UI的XML文件。因此，多年前积累的使用经验已经不起作用了。需要从头学起。
+
+在GTK官网的GTK+ 3 Reference Manual中的Getting Started with GTK+一节，提供了如何使用Glade布局文件的例子。但实际上Glade除了布局之外，也支持消息映射的定义。例如，我们完全可以在Glade中定义 某个按钮的点击事件的回调函数，而无需再使用g_signal_connect函数去链接消息和回调函数。
+
+不过，如果在Glade中使用了该特性的话，相关的编译选项亦需要调整。
+
+由
+
+pkg-config --cflags --libs gtk+-3.0
+
+改为
+
+pkg-config --cflags --libs gtk+-3.0 gmodule-export-2.0
+
+这样修改之后，程序即可自动链接相应的回调函数。另外还要注意，用户定义的回调函数的定义需与文档中消息回调函数的原型一致。一些细微的差异会导致g_signal_connect函数显式指定的回调函数可以正常工作，但glade文件隐式指定的却不行。
+
+此外，如果是在Windows平台下使用GTK+，还需要在回调函数之前加上G_MODULE_EXPORT宏。
+
+## 3）事件回调函数
+事件回调函数一般包括两个参数，第一个是产生事件的Widget的指针，第二个是用户自定义的数据的指针。可以将需要传递的数据用这个指针传递。如示例（http://code.google.com/p/antkillfarm-source-pool/source/browse/tags/first_demo.7z）中的do_cmd_itouch函数所示。
+
+## 4）如何获得某个控件的指针
+
+事件回调函数只能返回一个用户数据指针，有的时候某个按键动作会同时对几个控件进行操作。这个时候就需要通过某种方式来获得各个控件的指针。
+
+ 如示例（http://code.google.com/p/antkillfarm-source-pool/source/browse/tags/first_demo.7z）中的do_cmd_ipod函数所示：
+
+1--首先在Glade中，将main_box的指针设为用户数据指针。
+
+2--使用gtk_container_get_children函数获得各个子控件的指针链表。
+
+3--GTK中使用GList类型来表示双向链表数据结构。可使用g_list_first获得链表的头结点。但是需要注意
+
+g_list_next函数的参数是当前节点main_box_child，而不是链表的指针main_box_children_list。这个类型的相关函数中并不存在一个类似枚举器的概念。
+
+4--gtk_widget_get_name函数返回的是控件的类型名，例如GtkLabel。gtk_buildable_get_name函数返回的才是控件的id，例如label_hello。显然只有根据Glade文件生成的控件才有id。
+
+## 5）多窗体开发
+
+ 单窗口GTK+程序的编程，很快就掌握了。下一步开始实践点击一个按钮，生成一个新窗口的功能。网上的例程多数都是基于GTK+ 2的。由于GTK+和Glade的版本升级，这样的方式虽然仍然可用，但却不再是最简便的方式了。
+
+首先还是使用Glade编辑ui文件。一个ui文件可以包含若干个窗口定义。调用gtk_builder_add_from_file生成这些窗口的数据 结构。可以将生成的窗口结构通过user_data的方式传递给按钮的回调函数。但是需要注意的是，传递给回调函数的窗口结构必须是有效的。
+
+例如，在ui文件中，将B窗口结构传给A窗口中的C按钮的回调函数。程序运行时，首先点击C按钮，弹出B窗口，然后关闭B窗口，并再次点击C按钮，结果什么反应也没有，B窗口并未如预期般弹出。
+
+经分析方知，关闭B窗口的时候，B窗口的数据结构被销毁，从而不再有效。因此如果想要再次弹出B窗口的话，就只有两种办法：
+
+1)重新创建B窗口的数据结构。
+
+2)重载B窗口的关闭消息，让它只是隐藏而不是销毁窗口。
+
+对于第2种方案，网上的例子很少，有也基本都是重载窗口的destroy信号。但实际上delete-event才是关闭事件的信号，只有做完了 delete-event才会执行destroy。这一点在GTK的用户手册上有详细的说明。同时，手册还推荐使用 gtk_widget_hide_on_delete函数来实现第2种方案。
+
+# 参与GTK+开发的一段小经历
+
+最近忽然对GTK+产生了浓厚的兴趣，打算研究一下。学习一个新东西，最好的方法就是先阅读一下它的文档。应该说GTK的文档虽然比不了MSDN，但也颇为详尽。主要的问题在于文档都是英文的，阅读起来比较吃力。
+
+考虑到GTK已经有15年的历史，所以试着在网上搜了一下参考手册的中文版，结果找到了这个网址：http://code.google.com/p/gtk-doc-cn/
+
+这是一个叫yetist的人发起的翻译项目。
+
+http://forum.linuxfans.org/viewthread.php?tid=164933
+
+https://wiki.ubuntu.org.cn/viewtopic.php?f=163&t=232005&start=15
+
+这两个网页讲述了他发起这个项目的经历。
+
+至于GTK官方的语言翻译地址，查了半天也没找到，所以也就没有办法贡献自己的力量了。
+
+在学习兼翻译的过程中，发现了一个我搞不懂的地方，于是给GTK官网上的Bugzilla发了一个bug，结果很快就收到了回复，一段有趣而愉快的经历。看来以后可以多参加一些开源社区的活动，积攒自己的人品，^_^。
+
+# 在Windows下使用GTK+3
+
+## 1)安装MinGW
+
+我比较偷懒，之前安装Qt SDK的时候，已经有了个MinGW环境，直接拿来用就可以了。
+
+## 2)下载GTK+3 for Windows
+
+到http://www.tarnyko.net/下载GTK+3的包。该网站是个法国佬办的。在www.gtk.org之前的维护GTK+ for Windows的官方人员闪人之后，这是少数几个移植GTK+3到Windows，且成功的版本。
+
+该网站还有一篇GTK+3 Installation Tutorial for Windows的文章，介绍如何安装他制作的GTK包。里面还附带有一个Hello World程序代码，对于初始的学习很有帮助。
+
+## 3)优化自己的开发环境
+
+在mingw文件夹下新建MinGW.bat文件，内容如下：
+
+{% highlight bat %}
+set PATH=D:\QtSDK\mingw\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;D:\gtk+-bundle_3.6.4-20130513_win32\bin
+cmd
+{% endhighlight %}
+
+除了几个Windows的系统路径之外，把MinGW和GTK的路径加进去就可以了。
+
+把mingw32-make.exe复制一份，并改名make.exe，就可以如同在Linux环境下一样，使用makefile文件控制编译过程了。
+
+## 4)如何去掉执行文件时的命令行窗口？
+
+编译时添加-mwindows选项，就可以只启动gtk窗口，不启动命令行窗口。
+
+## 5)找不到-lintl该怎么办？
+
+到opensuse的官网下载mingw32-libintl的rpm包。用7-zip解压安装到gtk包中即可。
