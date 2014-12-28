@@ -117,6 +117,7 @@ printf("%ls",L"b\n");
 {% endhighlight %}
 
 ## 5.关于SIGPIPE导致的程序退出
+
 [http://www.cppblog.com/elva/archive/2008/09/10/61544.html](http://www.cppblog.com/elva/archive/2008/09/10/61544.html)
 
 ## 6.使用yum
@@ -156,6 +157,7 @@ printf("%ls",L"b\n");
 看到do_exit函数，可能熟悉Linux内核的朋友已经猜出永不返回的函数和普通函数有什么区别了。没错，do_exit函数是销毁进程的最后一步。由于进程已经销毁，从进程堆栈中获得下一条指令的地址就显得没有什么意义了。do_exit函数会调用schedule函数进行进程切换，从另一个进程的堆栈中获得相关寄存器的值，并恢复那个进程的执行。因此do_exit函数在正常情况下是不会返回的，一个调用了do_exit函数的函数，其位于do_exit函数之后的语句是不会执行到的。因此那个函数也成为了永不返回的函数。
 
 ## 9.在Ubuntu上安装VMWare tools
+
 VMWare自带的VMWare tools在新版的Ubuntu上总是安装不上，其实解决方法也很简单。
 
 `apt-get install linux-headers-virtual open-vm-dkms open-vm-tools（图形界面）`
@@ -168,9 +170,13 @@ VMWare自带的VMWare tools在新版的Ubuntu上总是安装不上，其实解�
 
 `apt-get install nautilus-gksu`
 
-## 11.没有声音的话，使用alsamixer来配置一下。
+## 11.
 
-## 12.最近下载安装了ubuntu 12.04 LTS。由于它使用了Unity桌面，因此之前的一些GNOME桌面工具不再可用。
+没有声音的话，使用alsamixer来配置一下。
+
+## 12.
+
+最近下载安装了ubuntu 12.04 LTS。由于它使用了Unity桌面，因此之前的一些GNOME桌面工具不再可用。
 
 为了显示实时网速，我找到了indicator-netspeed这个小工具，其安装过程如下：
 
@@ -300,17 +306,9 @@ rar比较奇怪，压缩和解压是使用不同的包，这点和7zip是不一�
 ## 18.
 使用apt-get获取软件虽然方便，但是从ubuntu的源获得的软件包和直接使用源码编译安装的包相比，包中的各个文件被分散在好多个文件夹中，查找起来很不方便。这时可以到http://packages.ubuntu.com/，去查找软件包里的文件清单，以弄清楚XX软件官网上所说的YY文件在ubuntu中到底放在哪里。
 
-## 19.使用github
+## 19.
 
-自从最近google code日益难以访问以来，我就一直在思考着替代的方案。然后在大徐的blog的指引之下，找到了github。
-
-应该说使用git和svn相比，在现在的网络条件下，还是有不少优势的。我托管代码的目的，只是给自己的blog提供一个代码链接的地方而已，基本无意使用这个和他人协作。由于git的版本库是在本地的，即使github由于某种原因倒掉了，我也可以很方便的换一个替代品。
-
-## 20.svn命令行使用的注意事项
-
-一直以来都是在Windows下使用TortoiseSVN客户端来操作svn。现在到了linux环境下，由于找了一圈貌似也没有什么很给力的GUI客户端。所以只有对svn的命令行使用做一些研究了。
-
- 好在之前一直使用英文版的TortoiseSVN，因此在使用svn help后，基本操作方面倒是没有遇到什么大的问题。只有commit的时候，除了commit之外，还要update一下，然后当前目录的svn状态才会切换到提交了新版本之后的状态。
+## 20.
 
 ## 21.ape文件的处理
 
@@ -344,15 +342,9 @@ Monkey's Audio，是一种常见的无损音频压缩编码格式，扩展名为
 
 这里特别关注一下http://pkgs.org这个网站，好多deb包都可以在这里找到。
 
-## 22.参与GTK+开发的一段小经历
+## 22.
 
 ## 23.
-
-这几天研究Android源代码，发现了一个牛人——Robert Love。最初注意他是因为他的姓氏挺有意思的。没想到过了几十分钟，就在另一个嵌入式操作系统方面的课件中看到了他的名字。他是Preempt Linux的作者，也是Linux Kernel Development一书的作者，同时还是Android的日志系统的作者。
-
-最关键的是，他是1981年出生的人，比我也就大一点儿。而Preempt Linux是他2001年的作品。那个时候我貌似连C语言都没怎么弄利索。。。
-
-至于国内的牛人，有个叫李云的诺西工程师，写了本嵌入式方面的书感觉还不错，不是随便复制粘贴的东西，可以看看。不过一者，李云比我大好几岁，二者他水平虽然比我高，但还没到仰视的地步。所以终究比不了那些老外的牛人啊。。。
 
 ## 24.向devhelp添加新书
 
@@ -380,7 +372,7 @@ http://www.cs.berkeley.edu/~bh/logo.html
 
 再一次看到熟悉的命令行界面和海龟了:)
 
-26.Unity侧边栏快速启动的研究
+## 26.Unity侧边栏快速启动的研究
 
 Unity侧边栏和Win7的任务栏有些类似，不仅会显示当前正在执行的程序，同时也可以将正在执行的程序的图标锁定在侧边栏上。但是侧边栏的位置有限，当锁定的图标太多时，就会干扰对正在执行的程序的选定。
 
@@ -495,7 +487,9 @@ typedef struct {
 ## 29. 内核开发心得
 
 * 从最简单的内核模块做起
+
 最近开始研究linux驱动。应该说在驱动领域，我已经有5年以上的工作经验，不算是新手，但是之前的开发要么是在嵌入式内核上，要么就直接是裸机程序，并没有做过真正的linux驱动程序。所以对于这个特定的领域来说，我就是一个新手。
+
 闲话休提，先从最简单的可动态加载的模块说起。
 
 [www.ibm.com/developerworks/cn/linux/l-proc.html](www.ibm.com/developerworks/cn/linux/l-proc.html)
@@ -532,13 +526,7 @@ rc.local - Using this method loads the modules after all other services are star
 
 PS：/etc/modules由/etc/init/module-init-tools.conf 或 /etc/init/kmod.conf负责执行。
 
-## 30.关于google code
-
-一直以来，在sohu写blog都面临一个很大的问题。代码全贴上的话，太占篇幅，而以附件形式提供代码，又不为blog系统所支持。
-
-之前的解决办法是使用网盘，但是网盘时间一长之后，就不再可用，而我显然也不可能经常去刷新网盘，使得其随时可用。再者，网盘也不是专业的代码托管方式。
-
-好在现在有了google code。
+## 30.
 
 ## 31.关于ascii字符集的一些打印控制字符的别名
 

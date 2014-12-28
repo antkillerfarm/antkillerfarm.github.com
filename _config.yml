@@ -1,11 +1,9 @@
 destination: ./_site
-server: true
-auto:        true
 lsi:         false
-server_port: 4000
+port: 4000
 permalink:   date
 markdown: rdiscount 
-pygments: true
+highlighter: pygments
 
 rdiscount: 
   extensions: 
