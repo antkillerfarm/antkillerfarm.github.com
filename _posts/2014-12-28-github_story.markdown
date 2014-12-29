@@ -10,6 +10,33 @@ category: technology
 
 应该说使用git和svn相比，在现在的网络条件下，还是有不少优势的。我托管代码的目的，只是给自己的blog提供一个代码链接的地方而已，基本无意使用这个和他人协作。由于git的版本库是在本地的，即使github由于某种原因倒掉了，我也可以很方便的换一个替代品。
 
+## 搭建本地GitHub Blog服务
+
+1.安装ruby
+
+2.修改gem的源
+
+作为生活在水深火热的墙内人民，有必要进行下面一步修改gem的源，方便我们更快的下载所需组建：
+
+{% highlight bash %}
+sudo gem sources --remove http://rubygems.org/
+sudo gem sources -a http://ruby.taobao.org/
+{% endhighlight %}
+
+3.安装ruby-dev
+
+在ubuntu上可以这样：
+
+`sudo apt-get install ruby-dev`
+
+在windows下需要下载一个Dev-kit的安装包。但是Ruby的网站经常访问不了，所以其实还可以这样安装：
+
+`gem install dev-kit`
+
+4.安装jekyll和rdiscount
+
+`gem install jekyll rdiscount`
+
 ## 从git log看linux的发展史
 
 linux稳定版本的git地址:

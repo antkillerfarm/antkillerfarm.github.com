@@ -4,7 +4,7 @@ title:  emacs学习心得
 category: technology 
 ---
 
-# emacs学习心得 #
+# emacs学习心得
 
 emacs是大名鼎鼎的Richard Stallman的作品，我闻名已久。但作为早期一直在Windows操作系统下打拼的程序员，很少有机会用到emacs。用的最多的还是Notepad和UltraEdit。
 
@@ -97,3 +97,21 @@ C代码相关的内容：
 C-c C-c
 
 Leave Hexl mode, going back to the major mode this buffer had before you invoked `hexl-mode'.
+
+# 使用cscope+emacs在Ubuntu 12.04下的注意事项
+
+1）除了安装cscope还需要安装cscope-el，不然找不到xcscope.el
+
+`sudo apt-get install cscope-el cscope`
+
+2）xcscope.el的默认路径：/usr/share/emacs/site-lisp
+
+3）进入源代码的根目录，然后
+
+`cscope-indexer -r`
+
+即可建立索引文件。
+
+4)添加cscope查询的历史功能
+
+[http://sourceforge.net/p/cscope/patches/65/](http://sourceforge.net/p/cscope/patches/65/)
