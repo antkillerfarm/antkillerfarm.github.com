@@ -37,6 +37,10 @@ sudo gem sources -a http://ruby.taobao.org/
 
 `gem install jekyll rdiscount`
 
+5.进入blog的根目录之后,运行
+
+`jekyll serve`
+
 ## 从git log看linux的发展史
 
 linux稳定版本的git地址:

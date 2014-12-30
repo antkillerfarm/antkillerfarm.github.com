@@ -117,3 +117,6 @@ cmd
 ## 5)找不到-lintl该怎么办？
 
 到opensuse的官网下载mingw32-libintl的rpm包。用7-zip解压安装到gtk包中即可。
+
+# GTK & OpenGL
+

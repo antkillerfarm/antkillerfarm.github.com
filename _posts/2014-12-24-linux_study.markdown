@@ -325,3 +325,31 @@ stmt_list:
 
 为什么要添加这一句呢？因为yacc在处理被解析的文本时，如果文本不能最终归结为一个单一的语法目标的时候，程序也会报错。
 
+## 15.从uboot到Linux
+
+这里以uboot 2014年11月的主线代码为例分析从uboot到linux的全过程。之所以写这篇文章，是由于网上的资料多数都很陈旧，诸如start_armboot之类的函数在新的代码里根本找不到了。由于uboot支持的CPU以及Board非常的多，所以本文仅以Samsung exynos为例来介绍这个过程。
+
+从上电到uboot启动:
+
+1./arch/arm/cpu/armv7/start.S:reset——uboot的汇编入口
+
+2./arch/arm/lib/crt0.S:_main
+
+3./arch/arm/lib/board.c:board_init_f——初始化第一阶段
+
+4./arch/arm/lib/board.c:board_init_r——初始化第二阶段
+
+5./common/main.c: main_loop——uboot主循环
+
+uboot启动Linux
+
+1.uboot中有个bootd的命令选项,执行该命令会进入/common/cmd_bootm.c:do_bootd
+
+2.common/cli.c:run_command，传入bootcmd命令作为参数。
+
+3.common/cmd_bootm.c:do_bootm
+
+4.arch/arm/lib/bootm.c:do_bootm_linux
+
+5.arch/arm/lib/bootm.c:do_jump_linux——跳转到Linux内核的入口地址
+
