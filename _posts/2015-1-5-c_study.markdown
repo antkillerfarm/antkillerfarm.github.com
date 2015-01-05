@@ -1,0 +1,119 @@
+---
+layout: post
+title:  C/C++编程心得
+category: technology 
+---
+
+# 1.
+
+在头文件中定义字符串时，如果该头文件会被多个源文件引用的话，字符串必须被定义为const，否则会有重定义错。当然最好在头文件中只放声明，不要放定义。
+
+使用诸如
+
+{% highlight c %}
+#ifndef _COMMON_STRING_
+#define _COMMON_STRING_
+...
+...
+...
+#endif
+{% endhighlight %}
+
+解决不了这个问题。因为这段代码解决的是同一个源文件重复包含某个头文件的问题。而这里的问题是不同的源文件包含同一头文件时，产生的重复定义的问题。const关键字保证了同一标识符只会定义一次。
+
+# 2.
+
+`int (*p)[10]` 先是 ` *p`起作用 ，声明一个指针（p肯定是指针了），然后是[10]（数组说明），则p是指向10个整形元素组成的数组的指针。——数组指针。
+
+若是`int *p[10]`  则首先是[ ]起用，它是一个数组了。然后是*，所以这个数组元素是指针型的。——指针数组。
+
+引申一下
+
+{% highlight c %}
+    int a[10];
+    printf("%x\n",&a);
+    printf("%x\n",a);
+{% endhighlight %}
+
+可以看到&a和a的值是相等的，但含义不同。a相当于`int *p`，而&a相当于`int (*p)[10]`。
+
+类似的
+
+`int (*p[])(int)`函数指针数组。
+
+`int (*p())[]`返回数组指针的函数。
+
+`int *p()[]`字面上可以解释为返回指针数组的函数，不过函数是不能返回数组的。
+
+`int *(*a())()`这是一个函数，它没有参数，它的返回值是一个函数指针，这个指针指向的函数，也没有参数，且返回值是int型的指针。
+
+# 3.嵌入式程序员应知道的几个基本问题
+
+http://linux.chinaitlab.com/c/713810.html
+
+# 4.深入理解C++中的mutable关键字
+
+http://dev.yesky.com/393/3007393.shtml
+
+# 5.UNREFERENCED_PARAMETER的作用
+
+http://blog.csdn.net/apunix/archive/2008/01/14/2043945.aspx
+
+# 6.sizeof进行结构体大小的判断
+
+http://blog.csdn.net/van150/archive/2005/12/05/544454.aspx
+
+VC的默认规则基本如上所示，gcc的默认规则就是4字节对齐。
+
+可以比较一下
+
+{% highlight c %}
+struct s
+{
+  char a;
+  double b;
+  int c;
+}
+{% endhighlight %}
+
+与
+
+{% highlight c %}
+struct s
+{
+  char a;
+  int b;
+  double c;
+}
+{% endhighlight %}
+
+在各个平台上的sizeof值。
+
+附带说一下如果看到以下的代码片段，也就不要觉得惊奇了。
+
+{% highlight c %}
+typedef enum _XXX
+{
+    XXX_0        = 0,
+    XXX_1        = 1,
+    XXX_FORCE_DWORD    = 0x7FFFFFFF/* 编译器对齐 */
+}XXX;
+{% endhighlight %}
+
+# 7.字节对齐的设定
+
+1）编译器选项指定
+
+VC：/Zp
+
+gcc：-fpack-struct
+
+2）代码指定
+
+VC和gcc都可以用`#pragma pack(4)`
+
+gcc还可以用`__attribute__((packed))`
+
+# 8.Java中创建对象的时候代码执行顺序(这个问题C++应该也存在)
+
+http://jacob777.blog.sohu.com/106426297.html

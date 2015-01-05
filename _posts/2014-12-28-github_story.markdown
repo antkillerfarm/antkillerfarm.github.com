@@ -16,7 +16,7 @@ category: technology
 
 2.修改gem的源
 
-作为生活在水深火热的墙内人民，有必要进行下面一步修改gem的源，方便我们更快的下载所需组建：
+作为生活在水深火热的墙内人民，有必要进行下面一步修改gem的源，方便我们更快的下载所需的组件：
 
 {% highlight bash %}
 sudo gem sources --remove http://rubygems.org/
