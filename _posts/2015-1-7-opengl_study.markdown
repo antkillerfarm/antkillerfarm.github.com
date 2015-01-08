@@ -26,7 +26,7 @@ category: technology
 
 2. libglew-dev。可以用来运行GLSL的相关例子。这个对于OpenGL新特性的支持要强于glut。
 
-3.libglfw-dev。一个glut的替代品。glut适合做demo，而这个可以用来做产品。
+3. libglfw-dev。一个glut的替代品。glut适合做demo，而这个可以用来做产品。
 
-4.libepoxy-dev。GTK项目选择的OpenGL库。
+4. libepoxy-dev。GTK项目选择的OpenGL库。
 

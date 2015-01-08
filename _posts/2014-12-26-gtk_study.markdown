@@ -16,7 +16,7 @@ category: technology
 
 Glade仍然是GTK+3默认的UI设计工具。与GTK+3配合的Glade版本是Glade 3。但是与Glade 2不同的是，Glade 3不再生成相关的C代码，取而代之的是一个描述UI的XML文件。因此，多年前积累的使用经验已经不起作用了。需要从头学起。
 
-在GTK官网的GTK+ 3 Reference Manual中的Getting Started with GTK+一节，提供了如何使用Glade布局文件的例子。但实际上Glade除了布局之外，也支持消息映射的定义。例如，我们完全可以在Glade中定义 某个按钮的点击事件的回调函数，而无需再使用g_signal_connect函数去链接消息和回调函数。
+在GTK官网的GTK+ 3 Reference Manual中的Getting Started with GTK+一节，提供了如何使用Glade布局文件的例子。但实际上Glade除了布局之外，也支持消息映射的定义。例如，我们完全可以在Glade中定义某个按钮的点击事件的回调函数，而无需再使用g_signal_connect函数去链接消息和回调函数。
 
 不过，如果在Glade中使用了该特性的话，相关的编译选项亦需要调整。
 
@@ -119,4 +119,40 @@ cmd
 到opensuse的官网下载mingw32-libintl的rpm包。用7-zip解压安装到gtk包中即可。
 
 # GTK & OpenGL
+
+众所周知，OpenGL只是一个图形渲染库，没有对于窗口系统的支持，而glut等也只是提供了最基本的窗口操作，使用起来并不方便。因此最好的做法是在一个成熟的GUI库的基础上添加OpenGL的支持。
+
+GTK 2下使用OpenGL，可以考虑使用GtkGLExt。但该软件并不支持GTK 3。
+
+按照GTK 3官方的说法，他们计划在2015年4月发布的GTK 3.16中集成对于OpenGL的支持，但实际上相关的支持代码已经于2014年12月17日，由Chun-wei Fan提交到版本库中。
+
+搜了一下，Chun-wei Fan是一位台湾同学，因为他的邮箱是台湾Yahoo的。但估计不是linkedin中的哥们，那个人虽然也是搞IT的，但偏重Java和网页方面的开发。
+
+从git log来看，这个Chun-wei Fan是GTK的骨灰级提交者，提交次数240+，从2010年11月就开始提交，提交内容多集中在GTK的Windows移植上，尤其是如何使用VS来编译GTK。
+
+但是编译GTK工作量较大，对于我这样临时抱佛脚的人来说，起不了什么作用。
+
+于是我打算用最简单的方法，解决在Windows平台下，GTK 3对于OpenGL的支持。
+
+我主要参考了以下文章：
+
+http://garfileo.is-programmer.com/posts/25812
+
+这篇文章讲述了如何使用GLX，向GTK 3中添加OpenGL支持。考虑到在Windows下，MS提供了WGL作为GLX的等价物。因此我们只要将该文章中与GLX相关的内容用WGL替换掉，理论上就可以在Windows平台上，提供对GTK 3的OpenGL支持。
+
+参考文献还包括：
+
+1.http://msdn.microsoft.com/en-us/library/windows/desktop/dd374204(v=vs.85).aspx
+
+这篇文章讲述GLX和WGL函数之间的对应关系。
+
+2.http://msdn.microsoft.com/en-us/library/dd318258(v=vs.85).aspx
+
+这篇文章提供了一个最简单的GLX的例子，并给出了在WGL下的等价代码。
+
+移植成功的代码放在：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gtkglx
+
+用户需要根据自己的实际情况，修改Makifile.w32中的相关路径，把GTK和MINGW的路径设置好。
 

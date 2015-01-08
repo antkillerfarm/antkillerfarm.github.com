@@ -18,6 +18,8 @@ Zigbee组网设备分为三类：
 
 3.End-device。（图中白色的节点）可以休眠。
 
+从图中可以看出，zigbee网络是一个网状结构，从图论的角度讲，End-device相当于叶子，而Router相当于枝干。Coordinator在组网的时候，相当于根节点，但是组网一旦完成，整个网络就没有中心了，数据交换是不必通过Coordinator的。从图中还可看出，数据从一个节点到另一个节点，中间会经过多次中继节点的数据交换，因此存在路由算法的问题。
+
 ## 2.栈配置类型
 
 简单来说，通常只有栈类型相同的设备之间才能组网。也分为三类：
@@ -52,11 +54,47 @@ Zigbee组网设备分为三类：
 
 ## 5.其他
 
-1. End-device由于移动导致的更换父节点。
+1. End-device由于移动导致的父节点的更换。
 
 2. PAN ID冲突的解决，以及跨PAN通讯的实现。
 
 3. 无线信道的选择。知识点：侦测环境，确定最小噪声的信道。
+
+# Z-Stack
+
+Z-Stack是德州仪器公司推出的Zigbee协议栈。源代码不公开，仅有如何使用的接口文档。
+
+## 1.消息
+
+Z-Stack的消息分为两大类：系统消息SYS_EVENT_MSG和自定义消息。其中前者又可分为三大类：
+
+1.硬件消息。例如KEY_CHANGE
+
+2.AF消息。主要是和数据的交换和路由相关的消息。例如AF_DATA_CONFIRM_CMD，AF_INCOMING_MSG_CMD。
+
+3.ZDO消息。和具体设备的应用相关的消息。例如ZDO_STATE_CHANGE，ZDO_CB_MSG。
+
+## 组网
+
+1.可以设定Coordinator组网所用的Channel和Pan ID，否则就是随机生成Channel和Pan ID。
+
+2.在指定Channel或Pan ID的情况下，如果已经有网络使用了该Channel或Pan ID，则Coordinator会重新选择一个Channel或Pan ID。但是与之配套的Router和End Device无法侦测到这个改变，因此会加入已有的网络，而不是Coordinator新建的网络。
+
+3.设备可开机自动入网，也可稍后手动入网。入网成功之后，可以保存入网信息。
+
+## 绑定 vs 查找
+
+绑定就是发送方指定接收方。而查找则是接收方注册可以被接受的发送方。
+
+## 事件处理
+
+设计原则：
+
+1.SYS_EVENT_MSG消息需要一次性全部处理完。
+
+2.而其他消息最好一次只处理一条。
+
+sentTransID可用于标识消息，
 
 # CC2530配置红外载波
 
