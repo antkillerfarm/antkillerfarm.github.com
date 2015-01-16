@@ -12,11 +12,11 @@ category: technology
 
 Zigbee组网设备分为三类：
 
-1.Coordinator。发起网络，并确定PAN ID的设备。一个网里有且只有一个。（图中黑色的节点）组网完成之后退化为Router。
+1.Coordinator（图中黑色的节点）。发起网络，并确定PAN ID的设备。一个网里有且只有一个。组网完成之后退化为Router。
 
-2.Router。（图中红色的节点）管理若干子节点，须一直在线。
+2.Router（图中红色的节点）。管理若干子节点，须一直在线。
 
-3.End-device。（图中白色的节点）可以休眠。
+3.End-device（图中白色的节点）。可以休眠。
 
 从图中可以看出，zigbee网络是一个网状结构，从图论的角度讲，End-device相当于叶子，而Router相当于枝干。Coordinator在组网的时候，相当于根节点，但是组网一旦完成，整个网络就没有中心了，数据交换是不必通过Coordinator的。从图中还可看出，数据从一个节点到另一个节点，中间会经过多次中继节点的数据交换，因此存在路由算法的问题。
 
@@ -52,7 +52,7 @@ Zigbee组网设备分为三类：
 
 2. 路由表存储及维护
 
-## 5.其他
+## 6.其他
 
 1. End-device由于移动导致的父节点的更换。
 
@@ -74,7 +74,7 @@ Z-Stack的消息分为两大类：系统消息SYS_EVENT_MSG和自定义消息。
 
 3.ZDO消息。和具体设备的应用相关的消息。例如ZDO_STATE_CHANGE，ZDO_CB_MSG。
 
-## 组网
+## 2.组网
 
 1.可以设定Coordinator组网所用的Channel和Pan ID，否则就是随机生成Channel和Pan ID。
 
@@ -82,11 +82,11 @@ Z-Stack的消息分为两大类：系统消息SYS_EVENT_MSG和自定义消息。
 
 3.设备可开机自动入网，也可稍后手动入网。入网成功之后，可以保存入网信息。
 
-## 绑定 vs 查找
+## 3.绑定 vs 查找
 
 绑定就是发送方指定接收方。而查找则是接收方注册可以被接受的发送方。
 
-## 事件处理
+## 4.事件处理
 
 设计原则：
 
@@ -94,7 +94,43 @@ Z-Stack的消息分为两大类：系统消息SYS_EVENT_MSG和自定义消息。
 
 2.而其他消息最好一次只处理一条。
 
-sentTransID可用于标识消息，
+sentTransID可用于标识消息。
+
+## 5.FLASH驱动
+
+从芯片手册来看，CC2530采用的是NOR FLASH。其所用的存储方案实际上和我去年提出的一份专利类似：它的实现更通用一些，但是性能上比我的要差些。
+
+## 6.处理流程
+
+1）主流程
+
+main---主函数
+
+\->osal_init_system
+
+\-\->osalInitTasks---初始化任务结构
+
+\->osal_start_system---任务调度死循环
+
+\-\->osal_run_system
+
+\-\-\->tasksArr---任务处理回调
+
+2）客户定制的事件处理
+
+Coordinator_ProcessEvent---事件处理入口，可定义为一个任务
+
+\->KEY_CHANGE/Coordinator_HandleKeys---按键处理
+
+\-\->Coordinator_Net_PermitDeviceToJoinNet
+
+\-\-\->ZDApp_NetworkInit---未建网 OR NLME_PermitJoiningRequest---已建网
+
+\->AF_INCOMING_MSG_CMD---接收到数据的消息
+
+## 7.配置文件
+
+source/Tools/CC2530DB/f8wConfig.cfg---可以配置PAN ID等。
 
 # CC2530配置红外载波
 
@@ -147,3 +183,9 @@ pin复用分为3个级别：
 IRCTL=1，打开载波模式。需要注意的是，只要载波模式打开，Timer 1的计量单位就变为载波周期，但只有Channel 1，会调制上载波信号。其他的channel只是计量单位变为载波周期而已。
 
 还有要仔细配置相关的Timer中断，如果没有必要的话，最好把中断都关上。毕竟即使没有中断处理程序，中断还是要消耗CPU的运算资源的。
+
+4) timer调制模式
+
+T1CCTLn.CMP一般选择4 - Clear Output on Compare-Up,Set on 0。
+
+但是信号发送的最后几帧，需要特殊处理。主要的原因是：对TxCCn的修改不是立即生效，而需等待下一次中断，但对于T1CCTLn.CMP的修改却是立即生效的。这两者的差异有时会造成意想不到的结果。
