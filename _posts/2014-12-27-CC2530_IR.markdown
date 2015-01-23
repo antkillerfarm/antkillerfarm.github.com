@@ -34,6 +34,8 @@ Zigbee组网设备分为三类：
 
 设备地址分为64位的MAC地址和16位的逻辑地址两种，其中前者全球唯一，而后者全网唯一。其中后者的唯一性，由相关地址分配算法和地址冲突机制保证。
 
+此外对应用而言，还有EndPoint需要指定，它相当于普通TCP/IP的端口号。
+
 ## 4.数据包类型
 
 按目的地的不同分为三类：
@@ -59,6 +61,10 @@ Zigbee组网设备分为三类：
 2. PAN ID冲突的解决，以及跨PAN通讯的实现。
 
 3. 无线信道的选择。知识点：侦测环境，确定最小噪声的信道。
+
+## 7.Profile ID与Cluster ID
+
+ZigBee联盟除了定义ZigBee协议的物理层和链路层之外，还对应用层做了一些统一的规定。其中Profile ID用于区分设备的应用领域，比如是灯光，还是传感器。而Cluster ID用于细分同一个Profile下的操作，比如灯光是调亮，还是调暗。
 
 # Z-Stack
 
@@ -108,7 +114,7 @@ main---主函数
 
 \->osal_init_system
 
-\-\->osalInitTasks---初始化任务结构
+\-\->osalInitTasks---初始化任务结构，每个任务会分配一个全局的任务ID，发送消息的时候会用到这个ID。
 
 \->osal_start_system---任务调度死循环
 
@@ -128,9 +134,75 @@ Coordinator_ProcessEvent---事件处理入口，可定义为一个任务
 
 \->AF_INCOMING_MSG_CMD---接收到数据的消息
 
+3）建网和入网
+
+发起方：
+
+ZDOInitDevice
+
+\->ZDApp_NetworkInit
+
+\-\->ZDO_StartDevice
+
+接收方：
+
+ZDO_JoinIndicationCB
+
+4) 退网
+
+NLME_LeaveReq
+
 ## 7.配置文件
 
 source/Tools/CC2530DB/f8wConfig.cfg---可以配置PAN ID等。
+
+## 8.重要的函数
+
+长短地址转换：AddrMgrExtAddrLookup和AddrMgrNwkAddrLookup。
+
+获得长地址：NLME_GetExtAddr。
+
+## 9.重启
+
+Zstack的重启分为以下几种：
+
+1）SystemReset
+
+这种重启的机制是关闭中断，并死循环，然后WatchDog超时，从而导致的重启。是为“硬重启”。
+
+2）SystemResetSoft
+
+这种重启，将PC指针重置为0，也就是上电时代码启动的位置。是为“软重启”。
+
+3）ZDO_DEVICE_RESET
+
+除了函数调用式的重启之外，还有消息式的重启。消息处理最终调用SystemResetSoft实现重启。
+
+# Packet Sniffer
+
+为了方便对zigbee协议的调试，TI还提供了CC2531 USB Dongle。这个Dongle硬件配合TI的Packet Sniffer软件，可以对周围的zigbee网络通信进行监控和抓包分析。也就是说它监控的不是单个的Zigbee模块或设备，而是一个区域内的所有Zigbee信号。
+
+使用时，首先需要设定监控的Zigbee Channel。然后即可开启抓包按钮。
+
+以下使用Packet Sniffer对Zigbee组网过程中的数据包，做一个简单的分析。
+
+## 组网
+
+1.EndDevice不断发送Beacon request数据包。
+
+2.Coordinator把自己的MAC地址和PAN ID发送给EndDevice。
+
+3.EndDevice发送Association request到Coordinator，其中包含了EndDevice的MAC地址。
+
+4.Coordinator返回一个应答包。
+
+5.EndDevice发送Data request到Coordinator。
+
+6.Coordinator返回一个应答包。
+
+7.Coordinator将Short addr发送给EndDevice。
+
+8.EndDevice返回一个应答包。
 
 # CC2530配置红外载波
 
