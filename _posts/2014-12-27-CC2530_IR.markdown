@@ -1,208 +1,8 @@
 ---
 layout: post
-title:  ZigBee,CC2530配置红外载波
+title:  CC2530
 category: technology 
 ---
-
-# ZigBee应用导读
-
-## 1.设备类型
-
-![Zigbee Network](/images/article/zigbee_network.png)
-
-Zigbee组网设备分为三类：
-
-1.Coordinator（图中黑色的节点）。发起网络，并确定PAN ID的设备。一个网里有且只有一个。组网完成之后退化为Router。
-
-2.Router（图中红色的节点）。管理若干子节点，须一直在线。
-
-3.End-device（图中白色的节点）。可以休眠。
-
-从图中可以看出，zigbee网络是一个网状结构，从图论的角度讲，End-device相当于叶子，而Router相当于枝干。Coordinator在组网的时候，相当于根节点，但是组网一旦完成，整个网络就没有中心了，数据交换是不必通过Coordinator的。从图中还可看出，数据从一个节点到另一个节点，中间会经过多次中继节点的数据交换，因此存在路由算法的问题。
-
-## 2.栈配置类型
-
-简单来说，通常只有栈类型相同的设备之间才能组网。也分为三类：
-
-1.Zigbee。
-
-2.Zigbee PRO。
-
-3.自定义。
-
-## 3.地址
-
-设备地址分为64位的MAC地址和16位的逻辑地址两种，其中前者全球唯一，而后者全网唯一。其中后者的唯一性，由相关地址分配算法和地址冲突机制保证。
-
-此外对应用而言，还有EndPoint需要指定，它相当于普通TCP/IP的端口号。
-
-## 4.数据包类型
-
-按目的地的不同分为三类：
-
-1.Unicast。发给单独的设备。
-
-2.Multicast。发给一组设备。知识点：Group Addressing
-
-3.Broadcast。全网广播。
-
-按照目的地指派方式的不同可分为直接和间接两种。后者通过查找Binding Table的方式找到目的地的逻辑地址。知识点：Binding的含义，以及Binding Table的实现。
-
-## 5.路由
-
-1. 路由发现、选择和维护相关的规则。
-
-2. 路由表存储及维护
-
-## 6.其他
-
-1. End-device由于移动导致的父节点的更换。
-
-2. PAN ID冲突的解决，以及跨PAN通讯的实现。
-
-3. 无线信道的选择。知识点：侦测环境，确定最小噪声的信道。
-
-## 7.Profile ID与Cluster ID
-
-ZigBee联盟除了定义ZigBee协议的物理层和链路层之外，还对应用层做了一些统一的规定。其中Profile ID用于区分设备的应用领域，比如是灯光，还是传感器。而Cluster ID用于细分同一个Profile下的操作，比如灯光是调亮，还是调暗。
-
-# Z-Stack
-
-Z-Stack是德州仪器公司推出的Zigbee协议栈。源代码不公开，仅有如何使用的接口文档。
-
-## 1.消息
-
-Z-Stack的消息分为两大类：系统消息SYS_EVENT_MSG和自定义消息。其中前者又可分为三大类：
-
-1.硬件消息。例如KEY_CHANGE
-
-2.AF消息。主要是和数据的交换和路由相关的消息。例如AF_DATA_CONFIRM_CMD，AF_INCOMING_MSG_CMD。
-
-3.ZDO消息。和具体设备的应用相关的消息。例如ZDO_STATE_CHANGE，ZDO_CB_MSG。
-
-## 2.组网
-
-1.可以设定Coordinator组网所用的Channel和Pan ID，否则就是随机生成Channel和Pan ID。
-
-2.在指定Channel或Pan ID的情况下，如果已经有网络使用了该Channel或Pan ID，则Coordinator会重新选择一个Channel或Pan ID。但是与之配套的Router和End Device无法侦测到这个改变，因此会加入已有的网络，而不是Coordinator新建的网络。
-
-3.设备可开机自动入网，也可稍后手动入网。入网成功之后，可以保存入网信息。
-
-## 3.绑定 vs 查找
-
-绑定就是发送方指定接收方。而查找则是接收方注册可以被接受的发送方。
-
-## 4.事件处理
-
-设计原则：
-
-1.SYS_EVENT_MSG消息需要一次性全部处理完。
-
-2.而其他消息最好一次只处理一条。
-
-sentTransID可用于标识消息。
-
-## 5.FLASH驱动
-
-从芯片手册来看，CC2530采用的是NOR FLASH。其所用的存储方案实际上和我去年提出的一份专利类似：它的实现更通用一些，但是性能上比我的要差些。
-
-## 6.处理流程
-
-1）主流程
-
-main---主函数
-
-\->osal_init_system
-
-\-\->osalInitTasks---初始化任务结构，每个任务会分配一个全局的任务ID，发送消息的时候会用到这个ID。
-
-\->osal_start_system---任务调度死循环
-
-\-\->osal_run_system
-
-\-\-\->tasksArr---任务处理回调
-
-2）客户定制的事件处理
-
-Coordinator_ProcessEvent---事件处理入口，可定义为一个任务
-
-\->KEY_CHANGE/Coordinator_HandleKeys---按键处理
-
-\-\->Coordinator_Net_PermitDeviceToJoinNet
-
-\-\-\->ZDApp_NetworkInit---未建网 OR NLME_PermitJoiningRequest---已建网
-
-\->AF_INCOMING_MSG_CMD---接收到数据的消息
-
-3）建网和入网
-
-发起方：
-
-ZDOInitDevice
-
-\->ZDApp_NetworkInit
-
-\-\->ZDO_StartDevice
-
-接收方：
-
-ZDO_JoinIndicationCB
-
-4) 退网
-
-NLME_LeaveReq
-
-## 7.配置文件
-
-source/Tools/CC2530DB/f8wConfig.cfg---可以配置PAN ID等。
-
-## 8.重要的函数
-
-长短地址转换：AddrMgrExtAddrLookup和AddrMgrNwkAddrLookup。
-
-获得长地址：NLME_GetExtAddr。
-
-## 9.重启
-
-Zstack的重启分为以下几种：
-
-1）SystemReset
-
-这种重启的机制是关闭中断，并死循环，然后WatchDog超时，从而导致的重启。是为“硬重启”。
-
-2）SystemResetSoft
-
-这种重启，将PC指针重置为0，也就是上电时代码启动的位置。是为“软重启”。
-
-3）ZDO_DEVICE_RESET
-
-除了函数调用式的重启之外，还有消息式的重启。消息处理最终调用SystemResetSoft实现重启。
-
-# Packet Sniffer
-
-为了方便对zigbee协议的调试，TI还提供了CC2531 USB Dongle。这个Dongle硬件配合TI的Packet Sniffer软件，可以对周围的zigbee网络通信进行监控和抓包分析。也就是说它监控的不是单个的Zigbee模块或设备，而是一个区域内的所有Zigbee信号。
-
-使用时，首先需要设定监控的Zigbee Channel。然后即可开启抓包按钮。
-
-以下使用Packet Sniffer对Zigbee组网过程中的数据包，做一个简单的分析。
-
-## 组网
-
-1.EndDevice不断发送Beacon request数据包。
-
-2.Coordinator把自己的MAC地址和PAN ID发送给EndDevice。
-
-3.EndDevice发送Association request到Coordinator，其中包含了EndDevice的MAC地址。
-
-4.Coordinator返回一个应答包。
-
-5.EndDevice发送Data request到Coordinator。
-
-6.Coordinator返回一个应答包。
-
-7.Coordinator将Short addr发送给EndDevice。
-
-8.EndDevice返回一个应答包。
 
 # CC2530配置红外载波
 
@@ -261,3 +61,19 @@ IRCTL=1，打开载波模式。需要注意的是，只要载波模式打开，T
 T1CCTLn.CMP一般选择4 - Clear Output on Compare-Up,Set on 0。
 
 但是信号发送的最后几帧，需要特殊处理。主要的原因是：对TxCCn的修改不是立即生效，而需等待下一次中断，但对于T1CCTLn.CMP的修改却是立即生效的。这两者的差异有时会造成意想不到的结果。
+
+# CC2530双串口工作
+
+CC2530虽然有两个UART，但是所有的示例中都只用到了UART0。而网上使用UART1的例子多数是实验性的代码，没有用到ZStack框架。因此对于真正的Zigbee应用来说，如何使用UART1仍是一个难题。
+
+通过阅读ZStack的代码，可以发现UART1的使用之所以困难，主要有以下几方面的问题：
+
+1.Pin复用。由于Pin默认是用于GPIO的，因此要想使用UART1首先要配好相关的Pin。这个可以参考那些从零做起的实验性代码，这些代码主要聚焦于如何配置寄存器，而不是ZStack。
+
+2.ZStack中使用HAL_UART_DMA和HAL_UART_ISR用于指定串口的端口和驱动类型。但由于宏的值是唯一的，因此并不能两个UART都采用DMA或者ISR。但是一个UART用DMA，另一个用ISR实际上是可以的。这也是最简单的同时使用双串口的方法。
+
+3.如果简单的配置HAL_UART_DMA和HAL_UART_ISR，可能会链接失败。从提示可知是驱动所占的RAM超过了系统的RAM所致。这时需要缩小两个串口的缓冲区的大小，即修改HAL_UART_DMA_RX_MAX和HAL_UART_ISR_RX_MAX的大小。
+
+4.如果继续深入代码的话，可以发现HAL_UART_DMA和HAL_UART_ISR的唯一性，并不是两个串口不能同时DMA的关键。问题的关键在于，HAL UART的代码中，DMA和ISR都只有一套数据结构。因此如果采用两套数据结构的话，理论上是可以双串口DMA或ISR的。
+
+5.那么问题就来了，既然可以这样做，为什么TI不去做呢？一句话还是资源的问题。双串口会导致每个串口的缓冲区尺寸减小。同时DMA虽然有5个通道，但一个串口就要用掉两个（收发各一个）。按照ZStack默认的配置，DMA 0没有用，DMA1、2用于AES，只有DMA3、4用于串口。因此实际上TI是不推荐双串口同时工作的。
