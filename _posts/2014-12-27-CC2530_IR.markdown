@@ -77,3 +77,54 @@ CC2530虽然有两个UART，但是所有的示例中都只用到了UART0。而�
 4.如果继续深入代码的话，可以发现HAL_UART_DMA和HAL_UART_ISR的唯一性，并不是两个串口不能同时DMA的关键。问题的关键在于，HAL UART的代码中，DMA和ISR都只有一套数据结构。因此如果采用两套数据结构的话，理论上是可以双串口DMA或ISR的。
 
 5.那么问题就来了，既然可以这样做，为什么TI不去做呢？一句话还是资源的问题。双串口会导致每个串口的缓冲区尺寸减小。同时DMA虽然有5个通道，但一个串口就要用掉两个（收发各一个）。按照ZStack默认的配置，DMA 0没有用，DMA1、2用于AES，只有DMA3、4用于串口。因此实际上TI是不推荐双串口同时工作的。
+
+# CC2530按键事件流程
+
+CC2530的按键事件是由GPIO的中断触发的。所有的GPIO都可以作为按键事件的中断源。但CPU的中断向量有限，只有3个中断向量P0INT、P1INT和P2INT可用于GPIO中断。在中断处理程序中，读取PxIFG寄存器可获得究竟是哪个GPIO产生的中断。
+
+1.寄存器
+
+P0IEN----中断控制器的中断开关。
+
+IEN1.P0IE----CPU中断的开关。
+
+IRCON---中断是否pending。
+
+P0IFG---中断发生时，获取究竟是哪个GPIO产生的中断。
+
+PICTL---上升沿还是下降沿触发中断。
+
+2.软件流程
+
+P0INT_VECTOR
+
+halKeyPort0Isr
+
+halProcessKeyInterrupt
+
+HAL_KEY_EVENT
+
+HalKeyPoll
+
+HalKeyRead
+
+HalKeyConfig/OnBoard_KeyCallback
+
+OnBoard_SendKeys
+
+KEY_CHANGE
+
+以上的流程是针对中断式按键消息，轮询式的按键消息，从HAL_KEY_EVENT开始。系统在开机时自动执行一次HAL_KEY_EVENT的处理函数，然后发起下一次的定时查询请求。如此一直循环下去。
+3.向框架添加一个新的按钮触发源
+
+HAL代码中已经有HAL_KEY_SW_6_PORT等一系列的宏，并定义了KEY_SW_6的行为。照着KEY_SW_6的样子添加新的按键即可。
+
+# CC2530 Target类型
+
+CC2530EB---Evaluation Board
+
+CC2530USB
+
+CC2530ZNP---Zigbee Pro Network Processor
+
+从各方面的信息综合来看，这应该是指三种不同类型的板子。

@@ -126,7 +126,7 @@ main---主函数
 
 Coordinator_ProcessEvent---事件处理入口，可定义为一个任务
 
-\->KEY_CHANGE/Coordinator_HandleKeys---按键处理
+\->KEY_CHANGE---按键处理
 
 \-\->Coordinator_Net_PermitDeviceToJoinNet
 
