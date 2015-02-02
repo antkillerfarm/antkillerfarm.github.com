@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  OpenWRT
+title:  OpenWrt
 category: technology 
 ---
 
-# OpenWRT编译
+# OpenWrt编译
 
 1.下载代码
 
@@ -53,4 +53,136 @@ wr841nd-v5-squashfs-factory.bin
 如果想要全部清除，就用下面的命令：
 
 `make distclean`
+
+# OpenWrt in VirtualBox
+
+## 0.软件准备
+
+需要安装以下软件：
+
+1）VirtualBox
+
+2）Windows平台：Putty、WinSCP
+
+## 1.镜像文件的获得
+
+1）下载源码自己编译。编译的方法见上节。编译的时候，将Target选为X86即可。此外还可以选择生成文件的类型。VirtualBox虚拟硬盘文件的后缀名是vdi。
+
+2）在官网直接下载。
+
+http://downloads.openwrt.org/barrier_breaker/14.07/x86/generic/openwrt-x86-generic-combined-ext4.img.gz
+
+3）如果镜像文件是img格式的，需要转换成vdi方可。方法如下：
+
+`VBoxManage convertfromraw --format VDI openwrt.img openwrt.vdi`
+
+## 2.OpenWrt官网在Firefox下无法打开的问题
+
+只需要在about:config里修改
+
+`intl.accept_languages`
+ 
+的值为
+
+`zh-CN,en-US,zh`
+
+这个是FF的优先语言设置的BUG。在FF中的值是zh-cn en-us 等等，而规范的值应该是zh-CN en-US
+
+## 3.在VirtualBox中运行OpenWrt
+
+可参考以下文章：
+
+http://wiki.openwrt.org/doc/howto/virtualbox
+
+1--基本系统
+
+1）选择OS类型：Linux->2.6/3.X
+
+2）硬盘设置从SATA改为IDE。
+
+3）启用串口，但要关掉连接。
+
+4）启动虚拟机。等屏幕不再输出字符时，按下“Enter”键。会出现OpenWrt的欢迎界面及命令行。这说明OpenWrt已经跑起来了。
+
+5）不是所有的机器都需要2）和3）的设置。如果OpenWrt能跑起来的话，2）和3）也可省略。
+
+2--网络配置
+
+从原理上来说，虚拟机需要设置两个网卡。一个是LAN，用于OpenWrt和PC的交互。另一个是WAN，用于OpenWrt的连接上网。
+
+一般来说LAN和WAN位于不同的网段。而OpenWrt的默认配置只有LAN，没有WAN，而且LAN的IP地址固定为192.168.1.1。这通常和家里面使用的路由器的IP地址相冲突。因此除了修改虚拟机的网络设置之外，还需要修改OpenWrt的网络配置。
+
+1）虚拟机网络配置
+
+两个网卡:
+
+LAN: eth0 Host-only
+
+WAN: eth1 NAT
+
+两个网卡的控制芯片类型都为：PCnet-FAST（不能选Intel）
+
+2）OpenWrt网络配置
+
+修改文件/etc/config/network
+
+{% highlight bash %}
+config interface 'lan'
+        option ifname 'eth0'
+        option proto 'dhcp'
+
+config interface 'wan'
+        option ifname 'eth1'
+        option proto 'dhcp'
+{% endhighlight %}
+
+3）验证联网是否成功
+
+WAN：使用ping命令，例如`ping www.baidu.com`
+
+LAN：见下一节的登录过程。
+
+如果不成功的话，可用ifconfig查看网络状态。看看eth0和eth1的IP地址是否是LAN和WAN所在的网段。
+
+4--登录
+
+0）登录的IP地址
+
+登录的IP地址，使用LAN的IP地址。可用ifconfig查看获得。
+
+1）首次登录
+
+使用telnet登录成功后，使用`passwd`命令设置密码。
+
+2）命令行登录
+
+使用支持ssh的客户端（如putty）登录。
+
+3）图形界面登录
+
+使用浏览器，输入`http://192.168.1.1`即可。（实际使用中需用LAN的IP地址替换之）
+
+#LuCI
+
+LuCI是OpenWrt管理配置界面使用的接口。
+
+从文件上，它由两个部分组成：
+
+1）/www
+
+index.html--网站主页。
+
+2）/usr/lib/lua
+
+lua脚本的根目录。
+
+主流程：
+
+1./www/index.html
+
+2./www/cgi-bin/luci
+
+3.luci.sgi.cgi.run（即/usr/lib/lua/luci/sgi/cgi.lua里的run函数，以下只写简称。）
+
+4.http://www.cnblogs.com/gnuhpc/archive/2013/08/31/3293643.html
 
