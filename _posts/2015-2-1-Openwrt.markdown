@@ -114,13 +114,19 @@ http://wiki.openwrt.org/doc/howto/virtualbox
 
 1）虚拟机网络配置
 
-两个网卡:
+环境一:Windows平台+路由器（WAN和LAN不在一个网段）
 
 LAN: eth0 Host-only
 
 WAN: eth1 NAT
 
-两个网卡的控制芯片类型都为：PCnet-FAST（不能选Intel）
+环境二:Linux平台+拨号路由（WAN和LAN在一个网段）
+
+LAN: eth0 Internal Network
+
+WAN: eth1 Bridge（Host有两个网卡：eth0和wlan0。这一步的时候,界面名称要选择wlan0的网卡）
+
+以上这些配置中，两个网卡控制芯片的类型都必须为：PCnet-FAST（不能选Intel）
 
 2）OpenWrt网络配置
 
