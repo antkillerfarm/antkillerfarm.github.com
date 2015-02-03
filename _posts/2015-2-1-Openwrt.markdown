@@ -120,11 +120,11 @@ LAN: eth0 Host-only
 
 WAN: eth1 NAT
 
-环境二:Linux平台+拨号路由（WAN和LAN在一个网段）
+环境二:Linux平台+拨号无线路由（WAN和LAN在一个网段）
 
 LAN: eth0 Internal Network
 
-WAN: eth1 Bridge（Host有两个网卡：eth0和wlan0。这一步的时候,界面名称要选择wlan0的网卡）
+WAN: eth1 Bridge（Host有两个网卡：eth0和wlan0。这一步的时候,界面名称要选择wlan0的网卡，也就是和Internet相连的那个网卡）
 
 以上这些配置中，两个网卡控制芯片的类型都必须为：PCnet-FAST（不能选Intel）
 
@@ -190,5 +190,21 @@ lua脚本的根目录。
 
 3.luci.sgi.cgi.run（即/usr/lib/lua/luci/sgi/cgi.lua里的run函数，以下只写简称。）
 
-4.http://www.cnblogs.com/gnuhpc/archive/2013/08/31/3293643.html
+4.luci.dispatcher.httpdispatch
+
+可参考一下文献:
+
+http://www.cnblogs.com/zmkeil/archive/2013/05/14/3078774.html
+
+这篇文章对LuCI的流程有详细的描述。
+
+http://wiki.openwrt.org/doc/uci
+
+这个是官方的文档。
+
+# 参考文献
+
+http://www.cnblogs.com/zmkeil/archive/2013/04/17/3027385.html
+
+这篇文章的内容和我写的差不多，可惜没有早看到。。。多走了弯路。
 
