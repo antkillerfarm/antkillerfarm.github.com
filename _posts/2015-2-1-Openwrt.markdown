@@ -64,6 +64,8 @@ wr841nd-v5-squashfs-factory.bin
 
 2）Windows平台：Putty、WinSCP
 
+3）Ubuntu平台：Putty、Gigolo
+
 ## 1.镜像文件的获得
 
 1）下载源码自己编译。编译的方法见上节。编译的时候，将Target选为X86即可。此外还可以选择生成文件的类型。VirtualBox虚拟硬盘文件的后缀名是vdi。
@@ -71,6 +73,36 @@ wr841nd-v5-squashfs-factory.bin
 2）在官网直接下载。
 
 http://downloads.openwrt.org/barrier_breaker/14.07/x86/generic/openwrt-x86-generic-combined-ext4.img.gz
+
+这里解释一下该文件夹下各个文件的区别：
+
+openwrt-x86-generic-combined-ext4.img.gz
+
+rootfs工作区存储格式为ext4
+
+openwrt-x86-generic-combined-jffs2-128k.img
+
+jffs2可以修改，也就是可以自行更换（删除）rootfs的配置文件，而不需要重新刷固件。
+
+openwrt-x86-generic-combined-squashfs.img
+
+squashfs是个只读的文件系统，相当于win的ghost，使用中配置错误，可直接恢复默认。
+
+openwrt-x86-generic-rootfs-ext4.img.gz
+
+rootfs的镜像，不带引导，可自行定义用grub或者syslinux来引导，存储区为ext4。
+
+为了更清楚的说明这个问题，可以参考以下文章：
+
+http://wiki.openwrt.org/doc/techref/header
+
+从这里可以看出一个完整的镜像文件至少要包含三个部分
+
+* Loader
+
+* Kernel
+
+* RootFS
 
 3）如果镜像文件是img格式的，需要转换成vdi方可。方法如下：
 

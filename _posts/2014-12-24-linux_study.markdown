@@ -353,3 +353,5 @@ uboot启动Linux
 
 5.arch/arm/lib/bootm.c:do_jump_linux——跳转到Linux内核的入口地址
 
+uImage格式是专为uboot开发的格式，主要解决了uboot和linux在嵌入式设备的存储上共存的问题。
+
