@@ -100,7 +100,7 @@ Z-Stack的消息分为两大类：系统消息SYS_EVENT_MSG和自定义消息。
 
 2.而其他消息最好一次只处理一条。
 
-sentTransID可用于标识消息。
+sentTransID可用于标识消息。每发一条消息，自动加1。
 
 ## 5.FLASH驱动
 
@@ -133,6 +133,8 @@ Coordinator_ProcessEvent---事件处理入口，可定义为一个任务
 \-\-\->ZDApp_NetworkInit---未建网 OR NLME_PermitJoiningRequest---已建网
 
 \->AF_INCOMING_MSG_CMD---接收到数据的消息
+
+\->AF_DATA_CONFIRM_CMD---返回发送数据的结果（结果包括是否成功发送等）
 
 3）建网和入网
 

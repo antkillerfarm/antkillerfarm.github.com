@@ -280,6 +280,18 @@ Google eclipse Plugin - http://dl.google.com/eclipse/plugin/3.6
 
 3)mac：~/.gradle/wrapper/dists/gradle-1.6-bin/72srdo3a5eb3bic159kar72vok
 
+## 关于自动更新
+
+Android Studio有增量自动更新功能，虽然不是每次出新版本都要升级，但是其升级系统只支持若干个小版本之间的跳变升级。一但超出这个范围，就需要手动下载离线包来升级了。
+
+离线升级的方法很多地方都有写，这里不再赘述。唯一指出的一点是如果PC是Linux平台的话，patch包名称的OS字段是unix。
+
+以0.8.9到1.1 Beta4为例，通过阅读https://dl.google.com/android/studio/patches/updates.xml的内容可知，0.8.9最多只能升级到0.9.9。要想升级到1.1 Beta4，就必须以0.9.9为跳板一步步的向上升。
+
+最终升级路径如下：
+
+0.8.9->0.9.9->1.0.2->1.1 Beta4
+
 ## 2.Eclipse导出至Android Studio
 
 将之前开发的旧工程导入Android Studio，出现 INSTALL_PARSE_FAILED_MANIFEST_MALFORMED的问题，这个是由于AndroidManifest.xml文件内容有问题导致的。最常见的原因是activity所在的包的名字里有大写字母，但奇怪的是activity本身有大写字母却是无所谓的。
