@@ -158,9 +158,15 @@ LAN: eth0 Internal Network
 
 WAN: eth1 Bridge（Host有两个网卡：eth0和wlan0。这一步的时候,界面名称要选择wlan0的网卡，也就是和Internet相连的那个网卡）
 
-以上这些配置中，两个网卡控制芯片的类型都必须为：PCnet-FAST（不能选Intel）
+2）关于网卡芯片类型
 
-2）OpenWrt网络配置
+官方img中，PCnet-FAST和Intel Pro 1000的驱动都有，因此VirtualBox选择任何一个芯片类型都可以。
+
+但是从源代码编译得到的img，就要看编译时的选项了。当前默认的是Intel Pro 1000。
+
+网上的文章提到要修改成PCnet-FAST，我怀疑是由于早先默认的是PCnet-FAST的缘故。
+
+3）OpenWrt网络配置
 
 修改文件/etc/config/network
 
@@ -174,7 +180,7 @@ config interface 'wan'
         option proto 'dhcp'
 {% endhighlight %}
 
-3）验证联网是否成功
+4）验证联网是否成功
 
 WAN：使用ping命令，例如`ping www.baidu.com`
 
@@ -234,9 +240,33 @@ http://wiki.openwrt.org/doc/uci
 
 这个是官方的文档。
 
-# 参考文献
+参考文献
 
 http://www.cnblogs.com/zmkeil/archive/2013/04/17/3027385.html
 
 这篇文章的内容和我写的差不多，可惜没有早看到。。。多走了弯路。
+
+# 编译OpenWrt模块--Hello World
+
+1）SDK
+
+编译OpenWrt模块，需要用和img相一致的SDK。
+
+在用源代码生成img的时候，将SDK也选上。这样在生成的img的路径下，就有一个名字中有SDK字样的压缩包，解压即可得到SDK。
+
+2）代码
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/hiOpenWRT
+
+从上面的地址下载代码，然后将hiOpenWRT文件夹，放到package文件夹下。
+
+3）编译
+
+将路径设为SDK的根目录，然后运行以下命令：
+
+make package/hiOpenWRT/compile V=s
+
+参考文献：
+
+http://blog.chinaunix.net/uid-29418452-id-4071751.html
 
