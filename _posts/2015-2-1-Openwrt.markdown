@@ -270,3 +270,15 @@ make package/hiOpenWRT/compile V=s
 
 http://blog.chinaunix.net/uid-29418452-id-4071751.html
 
+# 编译OpenWrt模块--进阶篇
+
+1）参考文献
+
+http://www.cnblogs.com/sammei/p/3968916.html
+
+这篇文章描述了OpenWrt makefile的框架
+
+http://www.ccs.neu.edu/home/noubir/Courses/CS6710/S12/material/OpenWrt_Dev_Tutorial.pdf
+
+这是美国东北大学（不是中国东北大学）的学生写的开发入门。
+

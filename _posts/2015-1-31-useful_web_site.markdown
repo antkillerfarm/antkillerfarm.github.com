@@ -23,3 +23,11 @@ Linux手册（相当于Linux的MSDN）
 5.http://www.hellogcc.org/
 
 一个有关GCC和GDB的博客
+
+6.makefile
+
+简单的规则可以查看《GNU makefile指南》一文，Goerge Foot写的。地址就不贴了，中文版基本到处都是。但是该文只是入门级的，最专业的还是GNU官方的手册：
+
+http://www.gnu.org/software/make/manual/html_node/index.html
+
+应该说make的语法，除了规则依赖之外，大多数与bash相同。但是make也有一些内置函数，它们的用法就不在bash的范畴了，比如call函数。

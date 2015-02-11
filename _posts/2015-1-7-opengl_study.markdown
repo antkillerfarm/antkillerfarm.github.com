@@ -4,11 +4,11 @@ title:  OpenGL研究
 category: technology 
 ---
 
-# 1.书籍
+# 书籍
 
 我手上其实有几本关于OpenGL的实体书，但是比较了一下之后，发现还是电子版的《OpenGL编程指南》（俗称OpenGL红宝书）写的更好一些。该书目前已经出到第8版，我看的是第7版中文版的电子版。该书的官网是[http://www.opengl-redbook.com](http://www.opengl-redbook.com)，可以从上面获得书中例子的源代码。
 
-# 2.教程
+# 教程
 
 书籍偏重理论，而教程偏重实践。这里推荐Nate Robins的教程，该教程在上面的书中也多次提及过。它的网址是：[http://user.xmission.com/~nate/opengl.html](http://user.xmission.com/~nate/opengl.html)。
 
@@ -29,4 +29,8 @@ category: technology
 3. libglfw-dev。一个glut的替代品。glut适合做demo，而这个可以用来做产品。
 
 4. libepoxy-dev。GTK项目选择的OpenGL库。
+
+# OpenGL vs Direct X
+
+
 
