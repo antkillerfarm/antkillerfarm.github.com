@@ -266,6 +266,10 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/hiOpenWRT
 
 make package/hiOpenWRT/compile V=s
 
+4）编译结果
+
+在bin/x86_64/packages/base下可以找到hiOpenWRT_1_x86_64.ipk。
+
 参考文献：
 
 http://blog.chinaunix.net/uid-29418452-id-4071751.html
@@ -282,3 +286,12 @@ http://www.ccs.neu.edu/home/noubir/Courses/CS6710/S12/material/OpenWrt_Dev_Tutor
 
 这是美国东北大学（不是中国东北大学）的学生写的开发入门。
 
+2）编译内核模块
+
+编译内核模块的大体步骤与编译应用模块并无太大差异。其主要不同在于内核模块需要使用linux内核的那一套makefile机制，而应用模块的编译就简单的多了，简单的配一下gcc的参数就行了。
+
+这里我偷了个懒，直接将OpenWrt源代码中的package/kernel/gpio-button-hotplug复制到SDK的package文件夹下，岂料编译之后什么也没有生成。
+
+网上查了一下也没有找到什么办法，有的网页甚至说SDK不能用于编译内核模块。这一点让我很疑惑，因为普通的linux内核模块只需要linux-header就可以编译了，并不需要linux源代码。
+
+最后我尝试运行了一下`make menuconfig`，终于找到了问题的症结。不同于编译源代码时候的选项，这里的选项很少，碰巧找到了gpio-button-hotplug，然后选中该项，再次编译。这一下终于在bin/x86_64/packages/base下找到了需要的ipk文件。
