@@ -1,0 +1,112 @@
+---
+layout: post
+title:  cocos2d学习心得
+category: technology 
+---
+
+# 安装
+
+cocos2d和cocos2d-x虽然都是一家的产品，但前者是用python写的，而后者是用C++写的。
+
+我试着在windows下安装cocos2d，没有什么问题。但在ubuntu下安装的时候，运行demo，程序会出错。看错误提示，错误是出在pyglet这个包里。由于一时间没有好的办法解决，所以就此终止，换用cocos2d-x。
+
+安装过程参见以下文章:
+
+http://www.cocos2d-x.org/wiki/How_to_run_cpp-tests_on_Linux
+
+要点摘录如下:
+
+{% highlight bash %}
+$ cd $cocos2dx_root/build
+$ ./install-deps-linux.sh
+$ mkdir linux-build
+$ cd linux-build
+$ cmake ../..
+$ make
+$ cd bin/cpp-tests/
+$ ./cpp-tests
+{% endhighlight %}
+
+# 新建工程
+
+参见以下文章:
+
+http://www.cocos2d-x.org/wiki/How_to_Start_A_New_Cocos2D-X_Game
+
+要点摘录如下:
+
+{% highlight bash %}
+$ cd cocos2d-x
+$ ./setup.py
+$ source ~/.bash_profile # may be ~/.bash_login or ~/.profile, depends on your environemnt
+$ cocos new MyGame -p com.MyCompany.MyGame -l cpp -d ~/MyCompany
+$ cocos run -s ~/MyCompany/MyGame -p linux
+{% endhighlight %}
+
+# 教程
+
+中文版教程
+
+http://cn.cocos2d-x.org/tutorial/lists?id=105
+
+英文版教程
+
+http://cocos2d-x.org/programmersguide/
+
+# 编译系统初探
+
+在tools/cocos2d-console/bin文件夹下有个cocos.py文件，这个就是编译时所运行的命令。
+
+其中run子命令在tools/cocos2d-console/plugins/project_run/project_run.py中。
+
+compile相关的内容在tools/cocos2d-console/plugins/project_compile/project_compile.py中。
+
+从py脚本可以看出在Linux平台编译代码主要用到了Cmake。
+
+# 调试
+
+cocos命令有个选项`-m`可以用于选择是Release还是Debug。
+
+在Debug模式下，可以使用gdb和CCLOG。
+
+当前的代码（2015.2.21）在这里有个bug，`-m`实际上并不起作用。
+
+现将我找到并解决问题的过程罗列一下：
+
+1.首先判断CCLOG是否好使。
+
+按照官网教程所说，使用CCLOG之前需要定义COCOS2D_DEBUG=1。
+
+最开始的时候，我没有找到如何修改预定义宏的地方，但是在cpp文件开头手动加上
+
+`#define COCOS2D_DEBUG 1`
+
+是可以在命令行中看到相关的调试信息的，这证明CCLOG是好使的。
+
+2.使用gdb
+
+将就着使用了CCLOG一阵子之后，终于遇到了一个问题，必须要用gdb才能解决。但是gdb找不到符号，因此无法断点。
+
+3.Cmake
+
+硬着头皮，打开CMakeLists.txt。
+
+很快发现了CMAKE_CXX_FLAGS_DEBUG中已经定义了COCOS2D_DEBUG=1。那么问题很显然是CMAKE_CXX_FLAGS_DEBUG没有起作用所致。胡乱修改相关宏的定义之后，发现程序实际上确实用的是CMAKE_CXX_FLAGS。
+
+那么问题就转化为Cmake是如何选择CMAKE_CXX_FLAGS_DEBUG和CMAKE_CXX_FLAGS的呢？
+
+网上查了一下，发现可以用
+
+`cmake -DCMAKE_BUILD_TYPE=Debug`
+
+来切换相关的模式。
+
+在tools/cocos2d-console/plugins/project_compile/project_compile.py中搜索cmake，果然看到cmake没有指定CMAKE_BUILD_TYPE的值。于是修改之。一试，果然gdb和CCLOG都OK了。
+
+4.尾声
+
+到
+
+https://github.com/cocos2d/cocos2d-x/issues/
+
+提交自己的修改。这也算是第一次为开源项目贡献自己的代码（以前主要是翻译文档），值得纪念一下。

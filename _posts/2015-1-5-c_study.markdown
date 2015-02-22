@@ -263,3 +263,36 @@ void main()
 #define st(x)      do { x } while (__LINE__ == -1)
 {% endhighlight %}
 
+# C++ 11的新特性
+
+1.auto关键字
+
+C++11中引入的auto主要有两种用途：自动类型推断和返回值占位。auto在C++98中的标识临时变量的语义，由于使用极少且多余，在C++11中已被删除。前后两个标准的auto，完全是两个概念。
+
+http://blog.csdn.net/huang_xw/article/details/8760403
+
+2.引入nullprt
+
+http://blog.csdn.net/huang_xw/article/details/8764346
+
+# 添加废弃提示
+
+有些类库出于兼容性的考虑，仍然保留了对旧函数的支持。但是继续使用这些函数，显然不是作者的初衷。因此，有必要在编译时，给出废弃的提示。
+
+近日浏览cocos2d-x v3的代码，发现可以这样做：
+
+宏定义：
+
+{% highlight c %}
+#if defined(__GNUC__) && ((__GNUC__ >= 4) || ((__GNUC__ == 3) && (__GNUC_MINOR__ >= 1)))
+#define CC_DEPRECATED_ATTRIBUTE __attribute__((deprecated))
+#elif _MSC_VER >= 1400 //vs 2005 or higher
+#define CC_DEPRECATED_ATTRIBUTE __declspec(deprecated)
+#else
+#define CC_DEPRECATED_ATTRIBUTE
+#endif
+{% endhighlight %}
+
+宏使用：
+
+`CC_DEPRECATED_ATTRIBUTE static TextureCache * getInstance();`
