@@ -110,3 +110,57 @@ cocos命令有个选项`-m`可以用于选择是Release还是Debug。
 https://github.com/cocos2d/cocos2d-x/issues/
 
 提交自己的修改。这也算是第一次为开源项目贡献自己的代码（以前主要是翻译文档），值得纪念一下。
+
+我提交的patch在:
+
+https://github.com/cocos2d/cocos2d-x/issues/10540
+
+# 内存管理和对象生命周期
+
+一开始，按照网上的例子顺利实现了动画效果。后来想了一下，加载图片资源是一个比较耗时的过程，于是试着将加载图片和显示动画的过程分开，没想到却遇到了各种问题。而且这些问题在官方自带的demo中也找不到答案。因为demo中的例子基本都是在使用的时候，实时加载图片资源的。
+
+首先，尝试使用全局指针，保存启动阶段加载的图片的引用。但是这种办法在运行的时候会出错。研究了一下，发现是对象在调用之前就被释放导致的。
+
+cocos2d-x对象使用引用计数来进行内存管理。这里主要有三个方法ratain\release\autorelease。前两者是简单的引用计数加1、减1。最后一个是延时释放的意思，用于保存返回值对象。
+
+试想这样一个场景，如果函数需要返回一个被new出来的对象，很显然不能在返回之前就释放该对象。那么如何释放就成了个问题。
+
+解决的办法不外乎，要么让用户去释放，要么就需要一种特殊的机制。autorelease会给对象做一个标记，让它等到适当的时机予以释放。这个时机就是每轮任务执行完成的时候。因此，这也解释了全局指针保存图片引用不成功的原因：虽然autorelease在微观上来看是延时释放，但在宏观上来看，基本上也是用完就释放的东西。
+
+那么如何将加载图片和显示动画的过程分开呢？
+
+其实cocos2d-x中很多对象都有Cache类型的版本，例如Animation和AnimationCache、Texture2和TextureCache。在加载阶段，我们将图片保存在Cache中，然后在使用的时候，直接从Cache，而不是文件中创建相关的对象，这样就可以达到相应的目的了。
+
+# 小技巧汇总
+
+1.改变背景颜色
+
+以patch的形式给出的办法：
+
+{% highlight cpp %}
++ class HelloWorld : public cocos2d::LayerColor
+- class HelloWorld : public cocos2d::Layer
+
++ LayerColor::initWithColor(Color4B(155, 155, 155, 255))
+- Layer::init()
+{% endhighlight %}
+
+2.实现动画结束之后触发动作
+
+{% highlight cpp %}
+sprite->runAction(Sequence::create(action, CallFunc::create(CC_CALLBACK_0(HelloWorld::AnimationFinished, this)), nullptr));
+
+void HelloWorld::AnimationFinished();
+{% endhighlight %}
+
+3.循环动画
+
+{% highlight cpp %}
+sprite->runAction(RepeatForever::create(Sequence::create(action, action->reverse(), nullptr)));
+{% endhighlight %}
+
+linux_driver
+
+\->simple-lkm: a simple Linux Kernel Module sample.
+
+\->simple-vfs: a simple Virtul File System sample.
