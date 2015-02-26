@@ -159,8 +159,27 @@ void HelloWorld::AnimationFinished();
 sprite->runAction(RepeatForever::create(Sequence::create(action, action->reverse(), nullptr)));
 {% endhighlight %}
 
-linux_driver
+4.update操作
 
-\->simple-lkm: a simple Linux Kernel Module sample.
-
-\->simple-vfs: a simple Virtul File System sample.
+{% highlight cpp %}
+bool HelloWorld::init()  
+{  
+...  
+        //每帧更新一次  方式一  
+        scheduleUpdate();  
+        //效果同上 方式儿  
+        //schedule(schedule_selector(HelloWorld::update));  
+        //每秒更新一次  
+        schedule(schedule_selector(HelloWorld::hUpdate),1.0f);  
+  
+        //停止默认的更新函数 对方式二没用  
+        //unscheduleUpdate();  
+        //停止自定义的更新函数 对方式一没用  
+        //unschedule(schedule_selector(HelloWorld::update));  
+        //停止所有的更新函数 对方式一和方式二都有用  
+        unscheduleAllSelectors();  
+...  
+}
+void HelloWorld::update(float dt);
+void HelloWorld::hUpdate(float dt);
+{% endhighlight %}
