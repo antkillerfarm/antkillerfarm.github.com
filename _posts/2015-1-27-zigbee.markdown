@@ -34,7 +34,7 @@ Zigbee组网设备分为三类：
 
 设备地址分为64位的MAC地址和16位的逻辑地址两种，其中前者全球唯一，而后者全网唯一。其中后者的唯一性，由相关地址分配算法和地址冲突机制保证。
 
-此外对应用而言，还有EndPoint需要指定，它相当于普通TCP/IP的端口号。
+此外对应用而言，还有EndPoint需要指定，它相当于普通TCP/IP的端口号。afRegister函数用于指定EndPoint。
 
 ## 4.数据包类型
 
@@ -184,6 +184,16 @@ Zstack的重启分为以下几种：
 
 除了函数调用式的重启之外，还有消息式的重启。消息处理最终调用SystemResetSoft实现重启。
 
+## 10.首次组网和二次组网
+
+两者的区别在于，二次组网的时候，由于设备的FLASH上保存有上次启动时的组网信息。因此就没有首次组网时的Beacon request握手过程。
+
+程序使用ZDApp_ReadNetworkRestoreState函数判定是否有上次的组网信息。
+
+## 11.自动组网和手动组网
+
+HOLD_AUTO_START
+
 # Packet Sniffer
 
 为了方便对zigbee协议的调试，TI还提供了CC2531 USB Dongle。这个Dongle硬件配合TI的Packet Sniffer软件，可以对周围的zigbee网络通信进行监控和抓包分析。也就是说它监控的不是单个的Zigbee模块或设备，而是一个区域内的所有Zigbee信号。
@@ -196,7 +206,7 @@ Zstack的重启分为以下几种：
 
 1.EndDevice不断发送Beacon request数据包。
 
-2.Coordinator把自己的MAC地址和PAN ID发送给EndDevice。
+2.Coordinator把自己的MAC地址和PAN ID发送给EndDevice。此外信息还有节点深度、最大子节点数等内容。EndDevice会根据这个信息选择有富余能力的节点，并进行下一步。
 
 3.EndDevice发送Association request到Coordinator，其中包含了EndDevice的MAC地址。
 
@@ -209,3 +219,51 @@ Zstack的重启分为以下几种：
 7.Coordinator将Short addr发送给EndDevice。
 
 8.EndDevice返回一个应答包。
+
+9.EndDevice发送一个应用层的广播数据包。该包的内容是该设备的长短地址，用于通知网络，它的长短地址之间的对应关系。这个数据包是应用层的，也就是使用AF_DataRequest发送的，而之前步骤的数据包都是链路层的。
+
+## 普通数据包的结构
+
+应用层所收发的数据包，由3部分组成：
+
+1.MAC层。这一层包括PAN ID，直接的源地址和目标地址。
+
+2.NWK层。这一层包括间接的源地址和目标地址。
+
+3.APS层。这一层包括源EndPoint、目标EndPoint、Cluster ID、Profile ID和普通数据。
+
+下面以多跳情况下的数据交互为例，解释一下直接地址和间接地址的含义。
+
+假设有三台设备A、B、C。其中的路由关系是A->B->C。现在从设备A向设备C发送一个数据包，其步骤如下：
+
+1.Route Request和Route Reply，确定路由。
+
+2.A向B发送一个数据包，该数据包的MAC层地址是A->B,NWK层的地址是A->C。
+
+3.B根据NWK层的地址判定，这个包不是给自己的，而是给C的，于是转发一个数据包。该数据包的MAC层地址是B->C,NWK层的地址是A->C。
+
+4.C根据NWK层的地址判定，这个包虽然是B发过来的，但是数据的源头是A。
+
+## 多跳组网测试
+
+1.条件准备
+
+至少有3台设备才可以组成一个深度为2的ZigBee网络。
+
+2.修改配置
+
+默认配置下，Zigbee网络一个节点可以挂载的总设备为20个，其中路由节点为6个。因此如果不修改配置的话，需要很多的设备才能模拟多跳组网的情况。
+
+修改的步骤如下：
+
+1）
+
+`#define STACK_PROFILE_ID      NETWORK_SPECIFIC`
+
+2）
+
+nwk_globals.c文件中的Cskipchldrn数组和CskipRtrs数组。这些数组的值由MAX_CHILDREN和MAX_ROUTER构成。
+
+MAX_CHILDREN决定了一个路由(Router)或者一个协调器节点可以处理的儿子节点的最大个数。
+
+MAX_ROUTER决定了一个路由(Router)或者一个协调器(Coordinator)节点可以处理的具有路由功能的儿子节点的最大个数。这个参数是MAX_CHILDREN的一个子集，终端节点使用(MAX_CHILDREN – MAX_ROUTER)剩下的地址空间。

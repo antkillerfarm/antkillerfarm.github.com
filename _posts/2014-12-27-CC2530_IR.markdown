@@ -115,6 +115,7 @@ OnBoard_SendKeys
 KEY_CHANGE
 
 以上的流程是针对中断式按键消息，轮询式的按键消息，从HAL_KEY_EVENT开始。系统在开机时自动执行一次HAL_KEY_EVENT的处理函数，然后发起下一次的定时查询请求。如此一直循环下去。
+
 3.向框架添加一个新的按钮触发源
 
 HAL代码中已经有HAL_KEY_SW_6_PORT等一系列的宏，并定义了KEY_SW_6的行为。照着KEY_SW_6的样子添加新的按键即可。
