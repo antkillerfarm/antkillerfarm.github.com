@@ -131,6 +131,16 @@ cocos2d-x对象使用引用计数来进行内存管理。这里主要有三个�
 
 其实cocos2d-x中很多对象都有Cache类型的版本，例如Animation和AnimationCache、Texture2和TextureCache。在加载阶段，我们将图片保存在Cache中，然后在使用的时候，直接从Cache，而不是文件中创建相关的对象，这样就可以达到相应的目的了。
 
+# Linux平台配置工程
+
+有些时候，为了打开或者关闭cocos2d-x引擎的某些功能，需要对工程做一定的配置。现将配置所需要修改的文件罗列如下：
+
+1.CMakeLists.txt
+
+CMakeLists.txt在代码的不同文件夹中有很多个。其中以工程根文件夹以及Cocos文件夹下的CMakeLists.txt文件最为重要，尤其是后者。
+
+2.base/ccConfig.h
+
 # 小技巧汇总
 
 1.改变背景颜色
@@ -183,3 +193,30 @@ bool HelloWorld::init()
 void HelloWorld::update(float dt);
 void HelloWorld::hUpdate(float dt);
 {% endhighlight %}
+
+# cocos2d-x v3调用Box2D
+
+cocos2d-x v3官方提供了CCPhysics物理引擎类，该类默认使用chipmunk物理引擎。虽然官方声称CCPhysics将支持Box2D。但从目前的代码来看，Box2D应该还没有集成进去。
+
+http://discuss.cocos2d-x.org/t/cocos2d-v-3-how-to-enable-box2d/15597
+
+这个网址有关于如何在cocos2d-x v3中集成Box2D的讨论。现将要点摘录如下：
+
+1.base/ccConfig.h
+
+`#define CC_USE_PHYSICS 0`
+
+2.cocos/CMakeLists.txt
+
+{% highlight bash %}
+option(USE_CHIPMUNK "Use chipmunk for physics library" OFF)
+option(USE_BOX2D "Use box2d for physics library" ON)
+
+set(USE_CHIPMUNK false)
+set(USE_BOX2D true)
+
+target_link_libraries(${APP_NAME}
+  box2d
+  )
+{% endhighlight %}
+
