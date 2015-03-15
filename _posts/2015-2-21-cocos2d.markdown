@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  cocos2d学习心得
+title:  cocos2d & Box2D
 category: technology 
 ---
 
@@ -220,3 +220,30 @@ target_link_libraries(${APP_NAME}
   )
 {% endhighlight %}
 
+示例代码在:
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/HelloBox2d
+
+# Box官方论坛的奇遇
+
+一般的网站都会采用验证码，来防止自动机器的频繁注册。但随着人工智能越来越强，验证的方法也越来越难。比如说最常见的图片式验证码，现在是越来越花，就是人眼也很难看出是什么东西。。。
+
+但这些都不算什么，直到我在Box官方论坛，遇到了这个验证问题：
+
+What is the dot product of (2, -1) and (10, 3) times the number of toes on my right foot?
+
+我的英语不好，查了半天，才明白过来，原来是这个意思：
+
+1. the dot product of (2, -1) and (10, 3)
+
+(2, -1) 和(10, 3)的点积：2 * 10 + (-1) * 3 = 17
+
+2.the number of toes on my right foot
+
+我的右脚的脚趾个数：5 （你要是六趾琴魔该咋办。。。）
+
+3.A times B
+
+17 * 5 = 85
+
+http://blog.csdn.net/complex_ok/article/details/6709772

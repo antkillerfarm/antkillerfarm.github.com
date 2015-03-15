@@ -4,11 +4,25 @@ title:  GitHub, Google Code, and other
 category: technology 
 ---
 
-#GitHub
+# GitHub
+
+2014.12
 
 自从最近google code日益难以访问以来，我就一直在思考着替代的方案。然后在大徐的blog的指引之下，找到了github。
 
 应该说使用git和svn相比，在现在的网络条件下，还是有不少优势的。我托管代码的目的，只是给自己的blog提供一个代码链接的地方而已，基本无意使用这个和他人协作。由于git的版本库是在本地的，即使github由于某种原因倒掉了，我也可以很方便的换一个替代品。
+
+## GitHub导入其他版本库的代码
+
+由于Google Code日益难以访问，因此我灵机一动，何不使用GitHub的导入功能，从Google Code中导出代码，然后再访问之？
+
+以box2d为例，它的svn地址是：
+
+https://box2d.googlecode.com/svn/
+
+GitHub导入版本库功能的地址是：
+
+https://import.github.com/new
 
 ## 搭建本地GitHub Blog服务
 
@@ -71,7 +85,31 @@ git://git.kernel.org/pub/scm/linux/kernel/git/tglx/history.git
 
 至于国内的牛人，有个叫李云的诺西工程师，写了本嵌入式方面的书感觉还不错，不是随便复制粘贴的东西，可以看看。不过一者，李云比我大好几岁，二者他水平虽然比我高，但还没到仰视的地步。所以终究比不了那些老外的牛人啊。。。
 
-#Google Code
+还有一个关于他的笑话：Robert Love是佛罗里达大学的毕业生，这所大学在名校众多的美国，只是个不入流的二本院校。于是有人调侃到：千万别去佛罗里达大学上学，因为Robert Love是从那里毕业的，而Robert Love是研究Linux Kernel的，Linux Kernel是无趣的，所以佛罗里达大学也是无趣的。
+
+这个笑话见诸他的个人主页，但不知道是否真有此事。如果有的话，他的影响力可见一般。就像刘路之于中南大学一样。
+
+## git常用命令
+
+1.创建版本库
+
+`git init`
+
+2.撤销add
+
+`git rm --cached FILE`
+
+3.暂存本地修改及恢复
+
+如果`git pull`的时候，本地有修改，就需要暂存，并在`git pull`之后，恢复之。
+
+`git stash`
+
+`git stash pop`
+
+# Google Code
+
+2013.12
 
 一直以来，在sohu写blog都面临一个很大的问题。代码全贴上的话，太占篇幅，而以附件形式提供代码，又不为blog系统所支持。
 
@@ -79,7 +117,13 @@ git://git.kernel.org/pub/scm/linux/kernel/git/tglx/history.git
 
 好在现在有了google code。
 
-#Other
+# Google code的倒掉
+
+2015.3
+
+昨天收到了Google Code即将关闭的邮件，很是震惊。不过想想也在情理之中，用过GitHub之后，对Google Code也就不那么有爱了。就像用了svn，对cvs无爱；用了git，对svn无爱一样。不过对svn的无爱，只是部分的。如果是公司性质的小团队开发的话，仍然推荐svn，因为权限管理比较方便，概念也比git简单。而如果是不方便上网的环境的话，git的优势就比较明显了。
+
+# Other
 
 ## SVN
 
