@@ -158,7 +158,9 @@ CMakeLists.txt在代码的不同文件夹中有很多个。其中以工程根文
 2.实现动画结束之后触发动作
 
 {% highlight cpp %}
-sprite->runAction(Sequence::create(action, CallFunc::create(CC_CALLBACK_0(HelloWorld::AnimationFinished, this)), nullptr));
+sprite->runAction(Sequence::create(action, 
+	CallFunc::create(CC_CALLBACK_0(
+	HelloWorld::AnimationFinished, this)), nullptr));
 
 void HelloWorld::AnimationFinished();
 {% endhighlight %}
@@ -166,7 +168,8 @@ void HelloWorld::AnimationFinished();
 3.循环动画
 
 {% highlight cpp %}
-sprite->runAction(RepeatForever::create(Sequence::create(action, action->reverse(), nullptr)));
+sprite->runAction(RepeatForever::create(
+	Sequence::create(action, action->reverse(), nullptr)));
 {% endhighlight %}
 
 4.update操作
@@ -246,4 +249,17 @@ What is the dot product of (2, -1) and (10, 3) times the number of toes on my ri
 
 17 * 5 = 85
 
+# Box2D用户手册中文版
+
+https://github.com/antkillerfarm/box2d/tree/master/Box2D/Documentation
+
+翻译正在进行中，欢迎共同参与。参与方式：直接给项目提一个Issue即可。
+
+这个版本库，我会隔一段时间同步一下Google Code上的官方库，直到它搬到github为止。
+
+（PS：Google Code即将关闭的消息，相信圈子里的朋友，应该都知道了吧。）
+
 http://blog.csdn.net/complex_ok/article/details/6709772
+
+http://www.docin.com/p-299109279.html
+
