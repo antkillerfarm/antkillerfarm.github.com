@@ -109,6 +109,24 @@ git://git.kernel.org/pub/scm/linux/kernel/git/tglx/history.git
 
 `git stash pop`
 
+## 如何git超大版本库
+
+自从两次git完整的linux kernel，都因为网络问题，而中途失败之后，不甘心的我，继续在网上寻找答案。
+
+目前已知的答案是git不支持断点续传，也不支持object原子下载。网上所谓的git fetch能断点续传一说，纯属误会。那只不过是重新下载的命令，即使成功，那也是由于第二次的网络环境变好导致的。
+
+其他的办法包括git bundle，但是这个需要服务器支持才行，而多数站点都没有这个功能。Android代码的网站就采用了这种方法。
+
+其实对付超大版本库，git已经提供了相应的办法：
+
+`git pull --depth N`
+
+N表示深度，具体的含义我也不太清楚。基本上，N=1就是只下载当前的版本，N>1的话，还会下载以前的历史版本。这样我们可以通过不断增加N的方式，将完整的版本库下载到本地。
+
+参考文章：
+
+http://blogs.atlassian.com/2014/05/handle-big-repositories-git/
+
 # Google Code
 
 2013.12
