@@ -259,7 +259,6 @@ https://github.com/antkillerfarm/box2d/tree/master/Box2D/Documentation
 
 （PS：Google Code即将关闭的消息，相信圈子里的朋友，应该都知道了吧。）
 
-http://blog.csdn.net/complex_ok/article/details/6709772
+http://blog.csdn.net/complex_ok/article/details/6723390
 
-http://www.docin.com/p-299109279.html
 

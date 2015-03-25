@@ -5,27 +5,29 @@ category: technology
 ---
 # 有用的网址集合
 
-1.http://packages.ubuntu.com/
+## 教程类
+
+http://packages.ubuntu.com/
 
 使用apt-get获取软件虽然方便，但是从ubuntu的源获得的软件包和直接使用源码编译安装的包相比，包中的各个文件被分散在好多个文件夹中，查找起来很不方便。这时可以到这个网址，去查找软件包里的文件清单，以弄清楚XX软件官网上所说的YY文件在ubuntu中到底放在哪里。
 
-2.http://softwaredev.blog.sohu.com/105412003.html
+http://softwaredev.blog.sohu.com/105412003.html
 
 C++库大全
 
-3.http://linux.die.net/man/
+http://linux.die.net/man/
 
 Linux手册（相当于Linux的MSDN）
 
-4.http://www.alldatasheet.com/
+www.alldatasheet.com
 
 可以查找各类芯片的手册。
 
-5.http://www.hellogcc.org/
+www.hellogcc.org
 
 一个有关GCC和GDB的博客
 
-6.makefile
+makefile
 
 简单的规则可以查看《GNU makefile指南》一文，Goerge Foot写的。地址就不贴了，中文版基本到处都是。但是该文只是入门级的，最专业的还是GNU官方的手册：
 
@@ -33,9 +35,31 @@ http://www.gnu.org/software/make/manual/html_node/index.html
 
 应该说make的语法，除了规则依赖之外，大多数与bash相同。但是make也有一些内置函数，它们的用法就不在bash的范畴了，比如call函数。
 
+## 工具软件及其官网
+
+Box2D---www.box2d.org
+
+一个游戏物理引擎。
+
+WireShark---www.wireshark.org
+
+一个网络协议包分析工具。
+
+WinPcap---www.winpcap.org
+
+一个windows下的网络抓包工具。
+
+Bonobo Git Server---www.bonobogitserver.com
+
+一个基于IIS的Git服务器。操作简单，但是没有提供文件夹一级的权限管理。
+
+CommMonitor---http://www.ceiwei.com/CommMonitor.html
+
+一个串口监控工具。
+
 # IT杂谈
 
-这篇文章太短，所以加些料谈一些技术之外的东西，就不新起一篇了。不排除将来写的多了，将至单独为一篇的可能，现在就这样吧。
+这篇文章太短，所以加些料谈一些技术之外的东西，就不新起一篇了。不排除将来写的多了，将之单独为一篇的可能，现在就这样吧。
 
 ## Bill Gates和MS-DOS
 

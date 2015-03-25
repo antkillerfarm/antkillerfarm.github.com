@@ -123,6 +123,12 @@ git://git.kernel.org/pub/scm/linux/kernel/git/tglx/history.git
 
 N表示深度，具体的含义我也不太清楚。基本上，N=1就是只下载当前的版本，N>1的话，还会下载以前的历史版本。这样我们可以通过不断增加N的方式，将完整的版本库下载到本地。
 
+N增加到多大，才能把整个版本库下载完呢？
+
+使用命令行的话，如果增加N，没有继续下载，就说明版本库已经完全下载到本地了。
+
+如果使用TortoiseGit的话，下载完全之后，再git pull的话，就没有depth选项了。
+
 参考文章：
 
 http://blogs.atlassian.com/2014/05/handle-big-repositories-git/
@@ -199,9 +205,9 @@ SVN是这一代的集大成者，使用简单的同时，仍保有相当强度�
 
 早期比较有名的是BitKeeper。它在2002~2005年是Linux Kernel所使用的版本工具。Linus曾经非常喜欢它。可惜后来由于商业利益的关系，开发者的要挟惹毛了Linus。大神发威开发了Git，从此BitKeeper也就无人问津了。
 
-从这件事情可以看出，Linus其实并不是一个像Richard Stallman那样的开源洁癖狂，有的东西够用，他就懒得节外生枝了。但也不要因此小看他的水平，大神发起威来，搞死像BitKeeper这样的工具还是绰绰有余的。
+从这件事情可以看出，Linus其实并不是一个像Richard Stallman那样的开源洁癖狂，现有的东西够用，他就懒得节外生枝了。但也不要因此小看他的水平，大神发起威来，搞死像BitKeeper这样的工具还是绰绰有余的。
 
-目前较为主流的Bazaar、Git和Mercurial实际上都是BitKeeper和开源社区之间战争的产物。
+目前较为主流的Bazaar、Git和Mercurial都出现在2005年，这并不是偶然的。实际上都是BitKeeper和开源社区之间战争的产物。
 
 后Git时代的工具，如Fossil和Veracity，相比Git来说，对权限、BUG跟踪之类的功能做了进一步的扩展。
 
