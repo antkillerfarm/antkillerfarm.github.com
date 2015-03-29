@@ -176,11 +176,71 @@ uImage格式是专为uboot开发的格式，主要解决了uboot和linux在嵌�
 
 ## Uart驱动分析
 
-serial_core.h: uart_ops
+### Write
 
-n_tty_receive_buf
+1.与应用层的接口
 
-n_tty_receive_buf_common
+这一层的操作是基于文件的。众所周知，UART属于TTY设备。因此实际执行的函数是tty_write@tty_io.c。
 
-__receive_buf
+2.tty_ldisc.ops->write
+
+3.n_tty_write@n_tty.c
+
+4.tty_struct.ops->write => tty_operations->write@serial_core.c
+
+5.uart_write@serial_core.c
+
+6.__uart_start@serial_core.c
+
+7.uart_port.ops->start_tx=>uart_ops->write@uartlite.c
+
+这一层以下，就和具体的设备有关了。这里以Xlinux的uartlite为例。
+
+8.ulite_start_tx
+
+9.ulite_transmit
+
+这里已经是具体的寄存器操作了。
+
+### Read
+
+Read的过程要复杂一些，可分为上层调用部分和底层驱动部分。
+
+上层调用部分：
+
+1.tty_read@tty_io.c
+
+2.tty_ldisc.ops->read
+
+3.n_tty_read@n_tty.c
+
+上层调用，到这里为止。这个函数执行到add_wait_queue时，会等待底层驱动返回接收的数据。底层驱动可以是中断式的，也可以是轮询式的。函数会调用copy_from_read_buf，将内核态的数据搬到用户态。
+
+底层驱动部分
+
+1.ulite_startup=>ulite_isr@uartlite.c
+
+这里仍以Xlinux的uartlite为例。初始化阶段注册ulite_isr中断服务程序。
+
+2.ulite_receive@uartlite.c
+
+具体的寄存器操作。
+
+3.tty_flip_buffer_push@tty_buffer.c
+
+4.tty_schedule_flip@tty_buffer.c
+
+调用schedule_work唤醒上层应用。
+
+## select代码分析
+
+1.select@select.c
+
+2.core_sys_select@select.c
+
+3.do_select@select.c
+
+## 同步锁
+
+read-write lock、RCU lock、spin lock
 
