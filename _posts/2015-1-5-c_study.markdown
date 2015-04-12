@@ -306,3 +306,6 @@ http://www.cnblogs.com/npbool/p/3434757.html
 宏使用：
 
 `CC_DEPRECATED_ATTRIBUTE static TextureCache * getInstance();`
+
+http://stackoverflow.com/questions/20247525/about-c-conversion-no-known-conversion-for-argument-1-from-some-class-to
+
