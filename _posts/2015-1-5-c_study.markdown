@@ -326,7 +326,7 @@ int main()
 
 上面的代码在编译时，会出现如下错误信息：
 
-{% highlight txt %}
+{% highlight text %}
 abc.cpp:12:20: error: no matching function for call to ‘Base::something(Base)’
 abc.cpp:12:20: note: candidate is:
 abc.cpp:6:7: note: void Base::something(Base&)
