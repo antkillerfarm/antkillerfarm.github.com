@@ -277,3 +277,19 @@ nwk_globals.c文件中的Cskipchldrn数组和CskipRtrs数组。这些数组的�
 MAX_CHILDREN决定了一个路由(Router)或者一个协调器节点可以处理的儿子节点的最大个数。
 
 MAX_ROUTER决定了一个路由(Router)或者一个协调器(Coordinator)节点可以处理的具有路由功能的儿子节点的最大个数。这个参数是MAX_CHILDREN的一个子集，终端节点使用(MAX_CHILDREN – MAX_ROUTER)剩下的地址空间。
+
+## 参考
+
+TI ZigBee FAQ 常见问题解答
+
+http://www.deyisupport.com/question_answer/wireless_connectivity/zigbee/f/104/t/75525.aspx
+
+# 工程实践中所遇问题及解答
+
+## NLME_PermitJoiningRequest
+
+NLME_PermitJoiningRequest只管本节点是否允许其他设备加入，管不了整个网络。所以多级组网或者设备很多的时候，不但协调器的Permit需要打开，下面Router的Permit也要打开，否则一旦设备和协调器之间无法直接通信，或者协调器直接挂载的设备数已经达到最大值，都会导致设备无法入网。同样，设备退网的时候，也需要将整个网络的Permit都关掉，不然的话，设备一退网，如果发入网请求的话，又会加回来，这就是有人说的设备退不了网的情况。
+
+## P2.1和P2.2的使用
+
+P2.1和P2.2是特殊的GPIO，由于它们和JTAG复用，因此在调试模式下无法当做GPIO输入来使用，但普通模式下，它们的工作是正常的。

@@ -57,6 +57,10 @@ CommMonitor---http://www.ceiwei.com/CommMonitor.html
 
 一个串口监控工具。
 
+Android FFmpeg---https://github.com/appunite/AndroidFFmpeg
+
+Android上的一个FFmpeg开源实现。
+
 # IT杂谈
 
 这篇文章太短，所以加些料谈一些技术之外的东西，就不新起一篇了。不排除将来写的多了，将之单独为一篇的可能，现在就这样吧。

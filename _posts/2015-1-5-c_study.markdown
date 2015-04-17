@@ -307,5 +307,39 @@ http://www.cnblogs.com/npbool/p/3434757.html
 
 `CC_DEPRECATED_ATTRIBUTE static TextureCache * getInstance();`
 
+# 关于引用的一个常见错误、
+
+{% highlight c %}
+class Base
+{
+  public:
+    void something(Base& b){}
+};
+
+int main()
+{
+  Base b;
+  b.something(Base());
+  return 0;           
+}
+{% endhighlight %}
+
+上面的代码在编译时，会出现如下错误信息：
+
+{% highlight txt %}
+abc.cpp:12:20: error: no matching function for call to ‘Base::something(Base)’
+abc.cpp:12:20: note: candidate is:
+abc.cpp:6:7: note: void Base::something(Base&)
+abc.cpp:6:7: note: no known conversion for argument 1 from ‘Base’ to ‘Base&’
+{% endhighlight %}
+
+这是由于`Base()`生成的是临时变量，将之赋值给一个non-const的引用是不行的。
+
+解决方法是
+
+`void something(const Base& b){}`
+
+可以参看下文：
+
 http://stackoverflow.com/questions/20247525/about-c-conversion-no-known-conversion-for-argument-1-from-some-class-to
 
