@@ -285,6 +285,20 @@ http://blog.csdn.net/huang_xw/article/details/8764346
 
 http://www.cnblogs.com/npbool/p/3434757.html
 
+4.C++、Java和C#的lambda表达式的格式
+
+C++
+
+auto func = [=](int x, int y)->int {return x * y;};
+
+Java
+
+Runnable r1 = (int x, int y) -> { return x * y; }
+
+C#
+
+Func<int, int, int> towParams = (x, y) => x * y
+
 # 添加废弃提示
 
 有些类库出于兼容性的考虑，仍然保留了对旧函数的支持。但是继续使用这些函数，显然不是作者的初衷。因此，有必要在编译时，给出废弃的提示。

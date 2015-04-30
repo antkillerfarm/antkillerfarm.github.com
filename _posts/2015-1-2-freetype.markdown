@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  FreeType使用指南 & CMake使用心得
+title:  FreeType & CMake & Qt
 category: technology 
 ---
 
@@ -86,3 +86,16 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/Qt/qt_cmake
 
 这个目录下的build脚本，讲述了如何使用CMake的方法。需要注意的是，在当前路径下运行`cmake .`和在bin文件夹下运行`cmake ..`的效果是不一样的。
 
+# Qt
+
+## Qt主循环
+
+QApplication::exec
+
+QGuiApplication::exec
+
+QCoreApplication::exec
+
+QEventLoop::exec
+
+QEventLoop::processEvents
