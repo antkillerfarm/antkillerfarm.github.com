@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  emacs学习心得
+title:  emacs
 category: technology 
 ---
 
@@ -115,3 +115,19 @@ Leave Hexl mode, going back to the major mode this buffer had before you invoked
 4)添加cscope查询的历史功能
 
 [http://sourceforge.net/p/cscope/patches/65/](http://sourceforge.net/p/cscope/patches/65/)
+
+# emacs配置
+
+emacs脚本文件以el为后缀，默认路径为/usr/share/emacs/lisp
+
+emacs的初始化配置文件为~/.emacs。
+
+一般安装额外的软件包的时候，需要用到上面的知识。
+
+# scratch缓冲区
+
+这是每次启动Emacs时，默认打开的几个缓冲区之一。正如缓冲区最上面的说明所说的，它的目的有两个：
+
+1.提供一个草稿缓冲区。
+
+2.提供一个执行Emacs Lisp的缓冲区。需要执行命令的时候，将光标落在相应的Lisp命令右括号的后面，执行C-x C-e即可。
