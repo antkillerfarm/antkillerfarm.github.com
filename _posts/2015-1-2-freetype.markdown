@@ -114,7 +114,7 @@ Windows平台：
 
 QEventDispatcherWin32::processEvents
 
-它的实现
+它的实现主要是GetMessage+WaitForMultipleObjects，如上文中对MiniGUI的主循环所述。
 
-
+Unix平台：
 
