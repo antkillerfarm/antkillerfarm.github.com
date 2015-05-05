@@ -90,6 +90,12 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/Qt/qt_cmake
 
 ## Qt主循环
 
+这篇文章有个大概的比较和说明：
+
+http://blog.chinaunix.net/uid-20754930-id-1877623.html
+
+以下是我针对Qt5代码（2015.4）的一个研究。
+
 QApplication::exec
 
 QGuiApplication::exec
@@ -99,3 +105,16 @@ QCoreApplication::exec
 QEventLoop::exec
 
 QEventLoop::processEvents
+
+QEventDispatcher::processEvents
+
+再以下就和具体的平台相关了。
+
+Windows平台：
+
+QEventDispatcherWin32::processEvents
+
+它的实现
+
+
+
