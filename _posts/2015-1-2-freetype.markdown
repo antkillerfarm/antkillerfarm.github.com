@@ -118,3 +118,18 @@ QEventDispatcherWin32::processEvents
 
 Unix平台：
 
+QEventDispatcherUNIX::processEvents
+
+QEventDispatcherUNIXPrivate::doSelect
+
+这个函数主要使用select系统调用来监听事件源。
+
+Android平台：
+
+QAndroidEventDispatcher::processEvents
+
+QUnixEventDispatcherQPA::processEvents
+
+QEventDispatcherUNIX::processEvents
+
+以下和Unix平台相同。
