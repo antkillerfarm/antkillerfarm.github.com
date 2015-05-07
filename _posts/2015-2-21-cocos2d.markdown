@@ -261,4 +261,13 @@ https://github.com/antkillerfarm/box2d/tree/master/Box2D/Documentation
 
 http://blog.csdn.net/complex_ok/article/details/6723390
 
+# cocos2d-x主循环
+
+Application::run
+
+Director::mainLoop
+
+DisplayLinkDirector::mainLoop
+
+Director::drawScene
 
