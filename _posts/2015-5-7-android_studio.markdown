@@ -91,4 +91,14 @@ Android作为一个手机OS，从API Level 1开始就提供了手势相关的类
    
 # 各种特效的代码
 
-http://www.23code.com/
+1.http://www.23code.com/
+
+这个网站是各种特效的搜集站。
+
+2.https://github.com/maarek/android-wheel.git
+
+电表或水表那样的表盘式选择器控件。
+
+3.https://github.com/jgilfelt/android-viewbadger.git
+
+按钮或者View的角标控件。
