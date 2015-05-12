@@ -293,3 +293,12 @@ NLME_PermitJoiningRequest只管本节点是否允许其他设备加入，管不�
 ## P2.1和P2.2的使用
 
 P2.1和P2.2是特殊的GPIO，由于它们和JTAG复用，因此在调试模式下无法当做GPIO输入来使用，但普通模式下，它们的工作是正常的。
+
+# IPv6和IPv4的区别
+
+# IPv6和6LowPan
+
+# 6LowPan和BlueTooth 4.2
+
+
+
