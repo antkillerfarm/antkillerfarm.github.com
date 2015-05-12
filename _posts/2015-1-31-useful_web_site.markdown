@@ -63,7 +63,11 @@ Android上的一个FFmpeg开源实现。
 
 ## 有用的blog
 
+http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/
 
+http://www.tinylab.org/using-qemu-simulation-inserts-the-type-system-to-produce-the-whole-process/
+
+这两篇文章讲述如何使用qemu运行各种汇编程序和微内核
 
 # IT杂谈
 
