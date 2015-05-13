@@ -129,3 +129,7 @@ CC2530USB
 CC2530ZNP---Zigbee Pro Network Processor
 
 从各方面的信息综合来看，这应该是指三种不同类型的板子。
+
+# CC2530的竞争对手
+
+目前已知的有Ember公司的EM250。

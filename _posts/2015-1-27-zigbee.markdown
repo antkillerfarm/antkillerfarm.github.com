@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ZigBee，ZStack
+title:  ZigBee，ZStack, 6LowPAN
 category: technology 
 ---
 
@@ -296,9 +296,26 @@ P2.1和P2.2是特殊的GPIO，由于它们和JTAG复用，因此在调试模式�
 
 # IPv6和IPv4的区别
 
-# IPv6和6LowPan
+![IPv4 vs IPv6](/images/article/ipv4_vs_ipv6.png)
 
-# 6LowPan和BlueTooth 4.2
+一般来说，网络协议就是一层层的组帧和解帧的过程。因此比较帧头的差异，无疑是个建立感性认识的好方法。上图就是IPv6和IPv4在帧头方面的区别。
 
+# IPv6和6LowPAN
 
+在Zigbee技术的体系结构中，Zigbee只是一个传输层协议。其下的物理层采用的是802.15.4协议。除了Zigbee协议之外，802.15.4协议之上还支持其他的传输层协议，其中最有名的是6LowPAN。
 
+![IPv6 & 6LowPAN](/images/article/6lowpan.png)
+
+上图是IPv6和6LowPAN的帧结构图。其中上方是IPv6，下方是6LowPAN。由于IPv6帧的最大大小为1280字节，而6LowPAN只有127字节。因此6LowPAN通过特定的帧头，将IPv6帧分包并重新组包。
+
+从上图可以看出，IPv6和6LowPAN的关系是十分密切的，两者的转换也比较容易。
+
+这也是6LowPAN相较于Zigbee协议的一大优势。由于CC2530硬件支持802.15.4协议，因此只要替换软件协议栈就可以支持6LowPAN。目前支持是6LowPAN的软件协议栈有Contiki和TinyOS。
+
+# 6LowPAN和BlueTooth 4.2
+
+BlueTooth 4.2是另一种用于PAN的低功耗无线通讯技术。
+
+优点：只是协议升级，无需硬件升级，可充分利用现有手机的蓝牙功能，快速部署智能终端。
+
+缺点：不支持网状网络，不支持多跳。因此要求传输双方都必须在无线信号可直接到达的范围之内。这一点直接限制了传输的距离。
