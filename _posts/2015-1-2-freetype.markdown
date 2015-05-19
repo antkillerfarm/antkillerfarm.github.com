@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  FreeType & CMake & Qt
+title:  FreeType, CMake, Qt, FFmpeg
 category: technology 
 ---
 
@@ -133,3 +133,46 @@ QUnixEventDispatcherQPA::processEvents
 QEventDispatcherUNIX::processEvents
 
 以下和Unix平台相同。
+
+# FFmpeg
+
+# 官网 & 安装
+
+http://www.ffmpeg.org/
+
+这是FFmpeg的官网。
+
+值得注意的是，在官网的下载页面默认下载的是源代码。对于不需要源代码的使用者来说，需要在左下角的“Get the Package”处，根据所用平台选择合适的安装包。
+
+安装包分为三类：
+
+1.Static。只有一个可以自解压的exe文件。
+
+2.Shared。相当于要用解压工具来解压的压缩文件。
+
+3.Dev。相关链接库的的头文件和链接文件。
+
+一般没有二次开发需要的话，下载Shared包是最佳的选择。
+
+# 工具的使用
+
+Fabrice Bellard是我崇拜的一位高人。他除了发明ffmpeg之外，还是Qemu和TinyCC的作者和圆周率计算记录的获得者（2009）。
+
+之前的想法，ffmpeg主要是一套编解码框架，其本身的功能有限，需要进行二次开发方可使用。没想到其实它自带的程序，功能已经相当强大了。
+
+安装包中包含三个命令行程序：
+
+1.ffmpeg。编解码工具。功能十分强大，使用它可以很轻松的改变视频文件格式或者压缩视频文件。不过也因为视频格式及编辑选项实在太多，以至于想给ffmpeg做一个好用且功能齐全的GUI外壳都不是件容易的事情。
+
+2.ffplay。播放工具。
+
+3.ffprobe。多媒体流分析工具。
+
+# 教程
+
+官方教程《FFmpeg Basics》，在CSDN可以下载到。但该书偏重于如何使用ffmpeg的命令行工具以及编解码的基本流程。对于ffmpeg源代码，以及如何使用ffmpeg做二次开发讲的很少。
+
+http://dranger.com/ffmpeg/tutorial01.html
+
+这篇文章是使用ffmpeg做二次开发的入门手册，写的不错。特将要点翻译摘录如下：
+
