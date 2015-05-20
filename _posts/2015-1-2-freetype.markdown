@@ -172,7 +172,7 @@ Fabrice Bellard是我崇拜的一位高人。他除了发明ffmpeg之外，还�
 
 官方教程《FFmpeg Basics》，在CSDN可以下载到。但该书偏重于如何使用ffmpeg的命令行工具以及编解码的基本流程。对于ffmpeg源代码，以及如何使用ffmpeg做二次开发讲的很少。
 
-http://dranger.com/ffmpeg/tutorial01.html
+http://dranger.com/ffmpeg/
 
 这篇文章是使用ffmpeg做二次开发的入门手册，写的不错。特将要点翻译摘录如下：
 
