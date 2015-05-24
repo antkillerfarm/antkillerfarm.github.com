@@ -271,3 +271,19 @@ DisplayLinkDirector::mainLoop
 
 Director::drawScene
 
+# XMAN
+
+AppDelegate::applicationDidFinishLaunching
+
+Director::setOpenGLView
+
+Director::createStatsLabel
+
+TextureCache::addImage
+
+Texture2D::initWithImage
+
+Texture2D::initWithData
+
+Texture2D::initWithMipmaps
+

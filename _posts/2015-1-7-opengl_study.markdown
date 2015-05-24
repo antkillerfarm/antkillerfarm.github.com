@@ -85,3 +85,4 @@ category: technology
 而完成这些操作的接口就是OpenGL。
 
 这也是SDL从v1.2升级到v2.0所做的最大的改变。
+
