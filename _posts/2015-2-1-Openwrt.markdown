@@ -160,7 +160,7 @@ WAN: eth1 Bridge（Host有两个网卡：eth0和wlan0。这一步的时候,界�
 
 2）关于网卡芯片类型
 
-官方img中，PCnet-FAST和Intel Pro 1000的驱动都有，因此VirtualBox选择任何一个芯片类型都可以。
+官方img中，PCnet-FAST和Intel Pro 1000的驱动都有，因此VirtualBox选择任何一个芯片类型都是可以的。
 
 但是从源代码编译得到的img，就要看编译时的选项了。当前默认的是Intel Pro 1000。
 
@@ -295,3 +295,24 @@ http://www.ccs.neu.edu/home/noubir/Courses/CS6710/S12/material/OpenWrt_Dev_Tutor
 网上查了一下也没有找到什么办法，有的网页甚至说SDK不能用于编译内核模块。这一点让我很疑惑，因为普通的linux内核模块只需要linux-header就可以编译了，并不需要linux源代码。
 
 最后我尝试运行了一下`make menuconfig`，终于找到了问题的症结。不同于编译源代码时候的选项，这里的选项很少，碰巧找到了gpio-button-hotplug，然后选中该项，再次编译。这一下终于在bin/x86_64/packages/base下找到了需要的ipk文件。
+
+# 虚拟机
+
+早期如Bochs之类的没用过，现在估计也没什么人用了吧。
+
+现在主要是以下三个选择：
+
+1.VMware。商业收费软件。有免费版本的VMware Player，但该版本不可创建虚拟机，只可使用别人已经建好的虚拟机。
+
+2.VirtualBox。开源免费软件。
+
+3.Qemu。Qemu的易用性不佳，作为使用的话，能不用就不用了。但其不仅开源，而且支持的架构也很多，有的时候往往是唯一之选。作为研究学习来说，这个是首选。
+
+这里主要讨论前两者的选择。
+
+VMware由于是收费软件之故，因此用户的软件升级是个大问题。（土豪除外，有钱的话，这个就不是事了。）而旧的软件，往往对新的Linux发行版的支持较差。很多情况下，VMware Tool因为这个原因总是无法完美运行。严重影响了软件的易用性。
+
+反之，VirtualBox就没有这些问题。虽然比较同期的VMware来说，VirtualBox的性能略逊。但是一般来说，科技行业里领先半年就已经是巨大的优势了。我相信现在的VirtualBox，无论如何也不会弱于两年前的VMware。
+
+因此与其守着过时的VMware 8.0，还不如换用VirtualBox，这就是我的选择。
+

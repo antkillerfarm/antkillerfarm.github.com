@@ -287,3 +287,12 @@ Texture2D::initWithData
 
 Texture2D::initWithMipmaps
 
+GLProgramCache::getInstance
+
+GLProgramCache::init
+
+GLProgramCache::loadDefaultGLPrograms
+
+GLProgramCache::loadDefaultGLProgram
+
+GLProgram::updateUniforms

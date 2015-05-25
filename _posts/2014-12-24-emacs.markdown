@@ -104,7 +104,13 @@ Leave Hexl mode, going back to the major mode this buffer had before you invoked
 
 `sudo apt-get install cscope-el cscope`
 
-2）xcscope.el的默认路径：/usr/share/emacs/site-lisp
+2）xcscope.el的默认路径：/usr/share/emacs/site-lisp。安装好之后，还需要在配置文件~/.emacs（如果当前没有这个配置文件的话，直接创建一个即可）里面加上`(require 'xcscope)`。或者，如果希望在打开c或者c++文件的时候才加载xcsope，可以这样写：
+
+{% highlight lisp %}
+(add-hook 'c-mode-common-hook
+'(lambda ()
+(require 'xcscope)))
+{% endhighlight %}
 
 3）进入源代码的根目录，然后
 
@@ -115,14 +121,6 @@ Leave Hexl mode, going back to the major mode this buffer had before you invoked
 4)添加cscope查询的历史功能
 
 [http://sourceforge.net/p/cscope/patches/65/](http://sourceforge.net/p/cscope/patches/65/)
-
-# emacs配置
-
-emacs脚本文件以el为后缀，默认路径为/usr/share/emacs/lisp
-
-emacs的初始化配置文件为~/.emacs。
-
-一般安装额外的软件包的时候，需要用到上面的知识。
 
 # scratch缓冲区
 
@@ -231,3 +229,4 @@ XML、HTML、JavaScript必修。PHP、ASP、JSP，选修其中之一。Nodejs近
 ## 嵌入式语言
 
 首推Lua。它首先在游戏领域得到广泛使用，现在在其他领域用的也比较多了。我一直在想，如果Lua早发明30年，Emacs会不会使用Lua，而不是Lisp做为内置语言呢？
+
