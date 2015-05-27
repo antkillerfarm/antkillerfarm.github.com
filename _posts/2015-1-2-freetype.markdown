@@ -48,44 +48,6 @@ pitch指字模一行所占的字节数，在ft_render_mode_normal模式（即256
 
 并不是所有的矢量字库都包含小字体的，例如微软的宋体就不支持小于20*20的字模，所以，使用小尺寸字体时，必须仔细选择字库。
 
-# CMake使用心得
-
-最近研究cocos2d-x如何与Qt一起使用的问题，网上的说法大概有这样几种：
-
-1.使用VS工程管理代码。这个的缺点很明显：不能跨平台。考虑到我的情况，断然放弃之。
-
-2.使用Qt工程管理代码。这个一来我对qmake不熟，二来cocos2d-x那边的代码也需要添加到工程中，这也是个不小的工作量。
-
-3.使用CMake管理代码。这个甚至连Qt官方也认为，如果工程太复杂的话，推荐使用CMake来管理代码。比如最大的Qt工程KDE项目就使用了CMake。
-
-这里主要参考了一下文献：
-
-http://blog.csdn.net/dbzhang800/article/details/6314073
-
-为了防止链接的失效，现将要点摘录如下，并附上实际工程的代码例子，供大家参考。
-
-## 例子
-
-{% highlight bash %}
-+
-| 
-+--- mainwindow.h
-+--- mainwindow.cpp
-+--- mainwindow.ui
-+--- main.cpp
-+--- CMakeList.txt
-|
-/--+ bin/
-   |
-   +--- qt-cmake.exe
-{% endhighlight %}
-
-实现这样效果的代码参见
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/Qt/qt_cmake
-
-这个目录下的build脚本，讲述了如何使用CMake的方法。需要注意的是，在当前路径下运行`cmake .`和在bin文件夹下运行`cmake ..`的效果是不一样的。
-
 # Qt
 
 ## Qt主循环
