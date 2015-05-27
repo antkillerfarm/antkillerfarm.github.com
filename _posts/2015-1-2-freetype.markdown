@@ -64,7 +64,7 @@ http://blog.csdn.net/dbzhang800/article/details/6314073
 
 为了防止链接的失效，现将要点摘录如下，并附上实际工程的代码例子，供大家参考。
 
-## 例子一
+## 例子
 
 {% highlight bash %}
 +
