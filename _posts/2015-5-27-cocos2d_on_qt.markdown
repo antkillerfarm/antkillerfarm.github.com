@@ -36,6 +36,12 @@ http://www.cnblogs.com/shadow21/archive/2012/11/09/2763158.html
 
 粒子特效属于动画效果，普通GUI框架对动画的支持比较差。而其他游戏内容，使用普通GUI框架就足够编辑了。
 
+6.内容编排的侧重点。
+
+honghaier的blog，近乎是手把手操作的流水账，对于关键的理论知识讲的比较少。因此一但cocos2d-x版本升级，相关的示例代码需要修改时，评论区中有不少人都在询问新版本的移植问题。
+
+为了避免重蹈覆辙，本文不粘贴代码占篇幅，而是主要聚焦于技术的要点。所谓授人以鱼，不如授人以渔。当然所有的环节都会提供可下载的代码，以供读者研究。
+
 # 编译环境
 
 可供选择的方案无非两种，或者采用Qt的Qmake，或者采用cocos2d-x的Cmake。
@@ -103,7 +109,57 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/Qt/qt_cmake1
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cocos_on_qt_widget/step1
 
+切换proj.linux/main.cpp中的宏，可以实现qt和cocos2d-x窗体之间的切换。这说明两个体系已经可以在同一个编译环境下共存了。
 
+# Step 2
+
+## OpenGL与窗口系统
+
+从代码可知，cocos2d-x的渲染操作是基于OpenGL的。而OpenGL本身只是个图形渲染库，并不提供窗口功能，因此这里有必要对OpenGL如何和窗口系统配合，做个介绍。
+
+一个OpenGL程序的创建一般有如下步骤：
+
+1.创建窗体。
+
+2.初始化OpenGL库。
+
+3.CreateContext。这个函数相当于创建一个特定大小和颜色格式的画布。
+
+4.MakeCurrent。这个函数将第3步创建的Context和第1步创建的窗体关联起来。
+
+以上步骤的顺序并不严格，只要求第2步必须在第3步之前，第4步必须在最后即可。
+
+此外，很多OpenGL相关的窗体工具库，将第1步和第3步合为1步。在创建窗口的同时，亦创建Context。从而导致从用户接口的层面来看，缺失了第3步的假象。
+
+渲染步骤一般为：
+
+1.OpenGL渲染操作。OpenGL的设计基于状态机，因此操作都是相对于当前状态机而言的。OpenGL状态机是一系列属性的集合，其中也包括了Context的状态。所以这些操作实际上都是针对当前Context执行的。
+
+2.swapBuffers。在使用双缓冲绘制的窗体时，将渲染结果交换到当前的显示缓冲区。单缓冲绘制无此步骤。
+
+可以参考以下文章，加深对上面概念的理解：
+
+http://blog.csdn.net/hong19860320/article/details/7287763
+
+这篇文章介绍了OpenGL和窗口系统交互的过程。
+
+http://antkillerfarm.github.io/technology/2014/12/26/gtk_study.html
+
+这篇文章是本人写的在GTK3上添加OpenGL的心得。如果没有这次实践，就没有现在的移植成果。
+
+## 为cocos2d-x添加新平台支持的要点
+
+话题回到cocos2d-x本身。cocos2d-x的平台相关部分都放在cocos/platform下。平台相关部分又可分为窗口和非窗口两部分。这里我们主要讨论窗口部分的实现。
+
+对于PC平台来说，由于其所使用的glfw库是跨平台的，因此无论是Windows，还是Linux，其窗口部分都被统一化，放在cocos/platform/desktop下。这个文件夹下主要是CCGLViewImpl类的实现。
+
+CCGLViewImpl类为上层提供了统一的调用接口。它的关键是维护_mainWindow指针，在glfw实现中，这个指针是GLFWwindow类型的。
+
+综上所述，我们将Cocos2d-x移植到Qt上（或者更专业的说法：为Cocos2d-x添加Qt后端）的关键，就是使用Qt的API替换glfw的API。
+
+## 经验总结
+
+1.
 
 https://github.com/ascetic85/quick-cocos2d-x-20130509
 
