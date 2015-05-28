@@ -157,9 +157,13 @@ CCGLViewImpl类为上层提供了统一的调用接口。它的关键是维护_m
 
 综上所述，我们将Cocos2d-x移植到Qt上（或者更专业的说法：为Cocos2d-x添加Qt后端）的关键，就是使用Qt的API替换glfw的API。
 
-## 经验总结
+## 成果
 
-1.
+Step 2的代码可以在这里下载：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cocos_on_qt_widget/step2
+
+这个例子实现了
 
 https://github.com/ascetic85/quick-cocos2d-x-20130509
 
