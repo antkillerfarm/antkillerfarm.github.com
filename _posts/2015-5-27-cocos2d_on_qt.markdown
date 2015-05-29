@@ -163,7 +163,19 @@ Step 2的代码可以在这里下载：
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cocos_on_qt_widget/step2
 
-这个例子实现了
+这个例子程序将Cocos2d-x的渲染区域嵌入到一个QGLWidget控件中。
+
+# Step 3
+
+Step 2虽然成果很大，但也有如下缺陷：
+
+1.Cocos2d-x不能处理鼠标、键盘事件。
+
+2.Cocos2d-x游戏主循环未建立，因此只有单帧渲染效果，而无动画渲染效果。
+
+# 参考代码
 
 https://github.com/ascetic85/quick-cocos2d-x-20130509
+
+这个代码有些老，是基于cocos2d-x v2的，但是基本的思路是一样的。
 
