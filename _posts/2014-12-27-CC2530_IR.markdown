@@ -172,7 +172,7 @@ Release版本比较简单，直接选择“Erase and program”即可。
 
 Debug版本需要首先选择“Read flash into hex-file”，然后再选择“Erase and program”。如下图所示：
 
-![Zigbee Network](/images/article/flash_action.png)
+![](/images/article/flash_action.png)
 
 网上有些人由于不晓得这一步，而得出Debug版本无法烧写的结论，这是不正确的。
 
