@@ -1,0 +1,132 @@
+---
+layout: post
+title:  Qt
+category: technology 
+---
+
+# Qt主循环
+
+这篇文章有个大概的比较和说明：
+
+http://blog.chinaunix.net/uid-20754930-id-1877623.html
+
+以下是我针对Qt5代码（2015.4）的一个研究。
+
+QApplication::exec
+
+QGuiApplication::exec
+
+QCoreApplication::exec
+
+QEventLoop::exec
+
+QEventLoop::processEvents
+
+QEventDispatcher::processEvents
+
+再以下就和具体的平台相关了。
+
+Windows平台：
+
+QEventDispatcherWin32::processEvents
+
+它的实现主要是GetMessage+WaitForMultipleObjects，如上文中对MiniGUI的主循环所述。
+
+Unix平台：
+
+QEventDispatcherUNIX::processEvents
+
+QEventDispatcherUNIXPrivate::doSelect
+
+这个函数主要使用select系统调用来监听事件源。
+
+Android平台：
+
+QAndroidEventDispatcher::processEvents
+
+QUnixEventDispatcherQPA::processEvents
+
+QEventDispatcherUNIX::processEvents
+
+以下和Unix平台相同。
+
+# Qt多线程中connect的使用
+
+近日在研究OpenGL多线程处理时，偶然看到了如下代码：
+
+http://download.csdn.net/detail/zhoukuanbin/7669187
+
+没有CSDN账号的读者，也可以在这里下载：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/Qt/MyGlTest
+
+粗看代码，发现并无特殊的OpenGL处理，理论上应该无法达到一个线程处理渲染，另一个线程处理贴图的目标。但实际编译运行代码，又确实可用。因此这里面一定有什么原因。
+
+{% highlight cpp %}
+void ThreadGl::run()
+{
+    connect(this, SIGNAL(SigCopy()), this, SLOT(Copy()));
+    printf("ID 0:%x\n", currentThreadId());
+    while(1)
+    {
+        if(!m_bEndFlag)
+        {
+            break;
+        }
+
+        usleep(16000);
+        emit SigCopy();
+    }
+
+    qDebug("Copy End\n");
+}
+
+void ThreadGl::Copy()
+{
+    m_glWidgets -> OnTimeOut(m_pImage, m_Formal, m_pthId);
+}
+{% endhighlight %}
+
+这段代码引起了我的注意。粗一看，connect函数连接的SIGNAL和SLOT都属于同一个对象。而connect函数的第5个参数（这是个有默认值的可省略参数）的默认值为Qt::AutoConnection。
+
+这是Qt官方对Qt::AutoConnection的解释：
+
+* If the receiver lives in the thread that emits the signal, Qt::DirectConnection is used. Otherwise, Qt::QueuedConnection is used. The connection type is determined when the signal is emitted.
+
+按照字面上的意思，既然SIGNAL和SLOT都属于同一个对象，那么这里的Qt::AutoConnection就等同于Qt::DirectConnection。而Qt::DirectConnection与直接调用SLOT函数是一个效果。
+
+于是这里将`emit SigCopy();`替换为`Copy();`，结果程序运行出错。
+
+再试一下，将connect函数的第5个参数设为Qt::DirectConnection，同样有问题。
+
+而如果将之设为Qt::QueuedConnection的话，程序运行一切正常。
+
+综上，Qt在这里的处理，显然认为SIGNAL和SLOT属于**不同的**线程。
+
+那么判断的依据是什么呢？
+
+这里有必要对`emit SigCopy();`中`emit`背后的戏法做一个剖析。
+
+众所周知，emit并非C++关键字，而属于Qt扩展的一部分。Qt为了处理这些扩展，引入了moc工具作为预处理工具。
+
+而moc处理之后，`emit SigCopy();`就变成了`QMetaObject::activate`
+
+`QMetaObject::activate`中使用以下代码，判定信号接收者的线程是否和信号发送者的一致。
+
+{% highlight cpp %}
+const bool receiverInSameThread = currentThreadId == receiver->d_func()->threadData->threadId;
+{% endhighlight %}
+
+于是问题转化为`receiver->d_func()->threadData`是怎么来的呢？
+
+答案在`QObject::QObject`中：
+
+{% highlight cpp %}
+d->threadData = (parent && !parent->thread()) ? parent->d_func()->threadData : QThreadData::current();
+{% endhighlight %}
+
+从这里可以看出所谓信号接收者的线程，实际上是接收者对象创建时所处的线程。
+
+回到原来的问题。ThreadGl虽然是Qt的线程对象，但它本身却是在主线程中创建的，所以以它为接收者，实际上就是以主线程为接收者。
+
+显然这个例子代码并没有真正实现OpenGL多线程处理，所有的OpenGL操作实际上都是在主线程完成的。

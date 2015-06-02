@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  FreeType, Qt, FFmpeg, SDL, 图像处理
+title:  FreeType, FFmpeg, SDL, 图像处理
 category: technology 
 ---
 
@@ -47,54 +47,6 @@ pitch指字模一行所占的字节数，在ft_render_mode_normal模式（即256
 ## 4.小尺寸字体
 
 并不是所有的矢量字库都包含小字体的，例如微软的宋体就不支持小于20*20的字模，所以，使用小尺寸字体时，必须仔细选择字库。
-
-# Qt
-
-## Qt主循环
-
-这篇文章有个大概的比较和说明：
-
-http://blog.chinaunix.net/uid-20754930-id-1877623.html
-
-以下是我针对Qt5代码（2015.4）的一个研究。
-
-QApplication::exec
-
-QGuiApplication::exec
-
-QCoreApplication::exec
-
-QEventLoop::exec
-
-QEventLoop::processEvents
-
-QEventDispatcher::processEvents
-
-再以下就和具体的平台相关了。
-
-Windows平台：
-
-QEventDispatcherWin32::processEvents
-
-它的实现主要是GetMessage+WaitForMultipleObjects，如上文中对MiniGUI的主循环所述。
-
-Unix平台：
-
-QEventDispatcherUNIX::processEvents
-
-QEventDispatcherUNIXPrivate::doSelect
-
-这个函数主要使用select系统调用来监听事件源。
-
-Android平台：
-
-QAndroidEventDispatcher::processEvents
-
-QUnixEventDispatcherQPA::processEvents
-
-QEventDispatcherUNIX::processEvents
-
-以下和Unix平台相同。
 
 # FFmpeg
 
