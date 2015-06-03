@@ -1,10 +1,10 @@
 .hll { background-color: #222222 }
 .c { color: #0080FF } /* Comment */
 .err { color: #cccccc; border: 1px solid #FF0000 } /* Error */
-.g { color: #cccccc } /* Generic */
+.g { color: #bbbbbb } /* Generic */
 .k { color: #cdcd00 } /* Keyword */
-.l { color: #cccccc } /* Literal */
-.n { color: #cccccc } /* Name */
+.l { color: #bbbbbb } /* Literal */
+.n { color: #aaaaaa } /* Name */
 .o { color: #3399cc } /* Operator */
 .x { color: #cccccc } /* Other */
 .p { color: #cccccc } /* Punctuation */
