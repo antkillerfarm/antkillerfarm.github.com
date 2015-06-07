@@ -196,6 +196,10 @@ IEEE 802是一系列关于局域网和城域网的标准。
 
 802.16 WiMax
 
+http://www.ieee802.org/
+
+可以在这个网址下载相关的标准文件。
+
 # 无线网状网
 
 Wireless mesh network（WMN），也叫wireless ad hoc network。
