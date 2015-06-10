@@ -1,0 +1,151 @@
+---
+layout: post
+title:  DLNA
+category: technology 
+---
+
+# 参考资料
+
+http://www.miui.com/thread-647727-1-1.html
+
+http://pie.pconline.com.cn/443/4434846.html
+
+这两篇文章从用户的角度分析DLNA设备的使用方法。
+
+http://en.wikipedia.org/wiki/List_of_UPnP_AV_media_servers_and_clients
+
+这个网址提供了支持UPnP/DLNA的服务器和客户端的名单。
+
+http://www.right.com.cn/forum/thread-115634-1-1.html
+
+http://www.right.com.cn/forum/forum.php?mod=viewthread&action=printable&tid=135975
+
+这两篇是如何向OpenWRT中添加DLNA、AirPlay功能的帖子。
+
+http://mayecn.com/blog/2013/04/23/dlna/
+
+http://www.musicpd.org/
+
+# DLNA各种设备角色的分析
+
+## 设备角色的定义
+
+DLNA体系结构最重要的一个概念就是设备角色（Device Category）。
+
+以下对其中主要的角色做一个通俗的解释，至于准确的定义可查阅相关规范，这里就不赘述了。
+
+* Digital Media Server (DMS)。DMS就是存放多媒体数据的地方。
+
+* Digital Media Player (DMP)。DMP负责多媒体数据的解码。
+
+* Digital Media Renderer (DMR)。DMR负责多媒体数据的展示，比如显示图片、视频，输出音频等。
+
+* Digital Media Controller (DMC)。DMC负责媒体的播放控制，比如开始、停止、快进、快退等，相当于是个遥控器。
+
+## 各种设备角色之间的交互
+
+DLNA定义了两大类的交互。
+
+* 2-Box System
+
+![2-Box System](/images/article/2-box.png)
+
+上图是一个典型的2-box应用。DMP播放DMS中的多媒体数据。这类应用其实和通常的流媒体播放差不多，即使不用DLNA，也可以用类似FTP、Samba之类的协议，分享DMS中的多媒体数据，因此还谈不上有多牛。
+
+* 3-Box System
+
+![3-Box System](/images/article/3-box.png)
+
+上图是一个典型的3-box应用。DMR负责播放DMS的多媒体数据，但整个流程确是由DMC创建并控制的。举个通俗的例子就是，DMC相当于淘宝网，客户在网上下单，但淘宝网自己并没有商品，于是它将订单发给淘宝卖家(DMS)，然后，DMS将商品交给快递(DMR)，DMR最终将商品交到客户手中（将多媒体内容播放出来）。
+
+2-Box System和3-Box System本身都是一大类的应用，上面图中展示的只是其中的典型个例。
+
+## 设备能力模型
+
+在DLNA刚推出的时候，设备功能还比较简单，采用设备角色模型运作的很好。但后来随着设备功能的完善，这个模型缺点也暴露无遗。
+
+以音箱为例，作为一个标准的输出设备，它的角色应该是DMR。后来添加了各种音频处理的功能之后，也可以算是DMP。再后来，集成了外接USB存储设备，充当DMS似乎也是很自然的事。那么这个时候音箱的角色是什么呢？
+
+针对这样的情况，DLNA的新标准引入了设备能力模型，简单的说就是在网络通知的时候，告诉其他设备，自己有哪些能力（也就是自己能充当哪些角色）。
+
+还是以上面的音箱为例，进化后的音箱可以声称自己具备DMR+DMP+DMS的能力。
+
+## 各种Android音频播放软件能力对比
+
+* QQ音乐
+
+只能将在线音乐推送到DMR，不能推送本地音乐，也不能点播DMS中的音乐。
+
+* 酷狗音乐
+
+可以推送在线音乐和本地音乐到DMR，但不能点播DMS中的音乐。
+
+* BubbleUPnP
+
+功能最全，没有什么干不了的。推荐使用这个软件来调试设备的DLNA功能。
+
+* Onkyo Remote
+
+貌似只能点播DMS+DMP中音乐，纯DMS的不行。
+
+* iMediaShare（又名Flipps）
+
+全功能。由于本身不自带播放器，DMR/DMP需要借助其他的本地播放器来实现。这个是免费的，没有BubbleUPnP的同学，可以用这个代替。
+
+* UPnPlay
+
+DMR+DMP+DMC。
+
+## 各种服务端软件能力对比
+
+* Windows Media Player
+
+功能齐全，没有什么干不了的。
+
+* ReadyMedia（又名MiniDLNA）
+
+DMS。代码开源。
+
+项目地址：
+
+http://minidlna.sourceforge.net/
+
+* gmediarender
+
+DMP+DMR。作为早期GNU项目的gmediarender，已经停止维护。2012年的时候，Henner Zeller为了将gmediarender移植到树莓派上，重新发起了该项目，并命名为gmrender-resurrect。Ubuntu等发行版所提供的gmediarender，已经改用gmrender-resurrect项目的代码。
+
+gmrender-resurrect项目地址：
+
+https://github.com/hzeller/gmrender-resurrect
+
+* ushare
+
+DMS，该项目已经很久没有更新，不推荐使用。
+
+# DLNA环境搭建
+
+## 网络环境
+
+PC和手机都用Wifi连接到同一个无线路由器上。这一点很重要，目前的手机软件暂时还不能搜索到整个局域网里的所有DLNA设备。
+
+## Windows环境设置
+
+由于Windows自带的Windows Media Player已经具备完整的DLNA功能，因此可以首先在Windows上设置环境，用于确认手机和网络的设置是否正常。并为后面的Linux环境设置，提供一个参考平台。
+
+Windows环境设置步骤（以Windows 7为例）：
+
+1.控制面板—>网络和Internet—>网络和共享中心，设置当前网络为家庭或工作网络。
+
+2.控制面板—>网络和Internet—>网络和共享中心->高级共享设置->媒体流选项，启用媒体流。
+
+3.计算机->库，选中“音乐”，右键菜单->共享，设置相应的共享权限。
+
+4.控制面板->网络和Internet->家庭组，选中“与设备共享媒体”。
+
+5.打开Windows Media Player，顶部菜单->媒体流，选中“允许远程控制我的播放器”和“自动允许设备播放我的媒体”。
+
+这几步都设好之后，打开BubbleUPnP，即可搜索到Media Player设备。
+
+
+
+http://gstreamer.freedesktop.org/documentation/plugins.html

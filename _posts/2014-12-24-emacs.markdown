@@ -64,7 +64,7 @@ Redo——用C-f中断Undo执行序列，然后再Undo，就可以Undo之前做�
 
 空格变TAB——M-x tabify
 
-在emacs中去除^M——M-x replace-string C-q C-m RET
+在emacs中去除`^M`——M-x replace-string C-q C-m RET
 
 选择整个缓冲区——C-x h
 
@@ -112,6 +112,12 @@ Leave Hexl mode, going back to the major mode this buffer had before you invoked
 (require 'xcscope)))
 {% endhighlight %}
 
+注：Windows下创建配置文件的步骤：
+
+1.HKEY_CURRENT_USER\Software\GNU\Emacs，注意GNU\Emacs是需要新建的。接下来在Emacs里新建一个HOME项，值是你的emacs路径，比如我的：D:\emacs-23.1\bin。
+
+2.把.emacs文件在这个bin目录下。.emacs文件不能用Windows Explorer创建，但可以用Emacs保存功能来创建。
+
 3）进入源代码的根目录，然后
 
 `cscope-indexer -r`
@@ -129,6 +135,16 @@ Leave Hexl mode, going back to the major mode this buffer had before you invoked
 1.提供一个草稿缓冲区。
 
 2.提供一个执行Emacs Lisp的缓冲区。需要执行命令的时候，将光标落在相应的Lisp命令右括号的后面，执行C-x C-e即可。
+
+# 快速打开最近打开过的文件
+
+在配置文件~/.emacs中添加：
+
+{% highlight lisp %}
+(require 'recentf)
+(setq recentf-max-saved-items 100)
+(recentf-mode 1)
+{% endhighlight %}
 
 # Lisp & GUI
 

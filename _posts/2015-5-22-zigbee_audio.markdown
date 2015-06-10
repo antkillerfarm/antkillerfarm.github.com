@@ -110,28 +110,6 @@ allband是指频率在24kHz以下的声音信号。这也是人耳所能听到�
 
 介于两者之间的，被称为wideband。
 
-# DLNA
-
-http://www.miui.com/thread-647727-1-1.html
-
-http://pie.pconline.com.cn/443/4434846.html
-
-这两篇文章从用户的角度分析DLNA设备的使用方法。
-
-http://en.wikipedia.org/wiki/List_of_UPnP_AV_media_servers_and_clients
-
-这个网址提供了支持UPnP/DLNA的服务器和客户端的名单。
-
-http://www.right.com.cn/forum/thread-115634-1-1.html
-
-http://www.right.com.cn/forum/forum.php?mod=viewthread&action=printable&tid=135975
-
-这两篇是如何向OpenWRT中添加DLNA、AirPlay功能的帖子。
-
-http://mayecn.com/blog/2013/04/23/dlna/
-
-http://www.musicpd.org/
-
 # IPv6和IPv4的区别
 
 ![IPv4 vs IPv6](/images/article/ipv4_vs_ipv6.png)
