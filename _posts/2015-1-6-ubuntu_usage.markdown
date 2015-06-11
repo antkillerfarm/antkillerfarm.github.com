@@ -268,3 +268,7 @@ TargetEnvironment=Unity
 
 3）将MyQuickStart.desktop的文件权限改为可执行，并将其拖放到侧边栏，就可以看效果了。
 
+## 12.修改软件源
+
+Ubuntu更新软件时的软件源配置文件是/etc/apt/sources.list。
+

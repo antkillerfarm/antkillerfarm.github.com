@@ -146,7 +146,7 @@ Windows环境设置步骤（以Windows 7为例）：
 
 这几步都设好之后，打开BubbleUPnP，即可搜索到Media Player设备。
 
-## Linux环境设置
+## Linux环境设置（以Ubuntu为例）
 
 这里的Linux环境可以用VirtualBox搭建。在设置网卡时，需要设置两块网卡，分别设置如下：
 
@@ -154,12 +154,53 @@ Windows环境设置步骤（以Windows 7为例）：
 
 网卡2：LAN NAT
 
-由于Linux下现有的几个全功能开源库
+由于Linux下现有的几个全功能开源库，对设备配置的要求比较高。这里打算采用两个轻量级的开源库分别实现DMS和DMR。
 
+DMS：ReadyMedia
 
+1.安装
 
+`sudo apt-get install minidlna`
 
+2.修改minidlna配置
+
+`sudo gedit /etc/minidlna.conf`
+
+3.重启minidlna服务
+
+`sudo /etc/init.d/minidlna force-reload`
+
+DMR：gmediarender
+
+1.安装
+
+`sudo apt-get install gmediarender`
+
+这里需要注意的是，gmediarender是在Ubuntu 14.10中添加到源里的，不过该软件包在Ubuntu 14.04下亦可正常运行。因此，安装的时候只要修改软件源的配置即可。
+
+2.启动服务
+
+`gmediarender -d`
+
+3.添加gstreamer插件
+
+gmediarender仅提供UPNP服务，真正的媒体播放使用gstreamer来完成。
+
+用户需要根据媒体文件的种类，选择不同的gstreamer插件，来完成多媒体的播放。
 
 http://gstreamer.freedesktop.org/documentation/plugins.html
 
-这个网页可以查看gstreamer的插件列表。
+这个网页就是gstreamer的插件列表。表中列出的插件，分属4个不同的插件集：
+
+* gst-plugins-base。这类插件格式规范，维护的也很好。
+
+* gst-plugins-good。这类插件有高质量的代码（但格式未必规范），而且许可证也符合要求（LGPL或与LGPL兼容的许可证）。
+
+* gst-plugins-ugly。这类插件有高质量的代码，但许可证方面有问题。
+
+* gst-plugins-bad。这类插件尚不成熟，需要更多文档、测试和应用。
+
+插件安装方法，以gst-plugins-base为例。
+
+`sudo apt-get install gstreamer1.0-plugins-base`
+
