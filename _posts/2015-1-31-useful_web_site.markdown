@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  有用的网址集合，IT杂谈，沉思录
+title:  有用的网址集合，IT杂谈，沉思录，Fedora
 category: technology 
 ---
 # 有用的网址集合
@@ -128,3 +128,47 @@ PS：这是一篇自己写于2011.11的文章，转眼间已经3年半过去了�
 还有矩阵论，工作上主要是用它来求解多元线性方程组。如果不是线性方程组的话，还要使用Jacobi矩阵将之线性化，然后矩阵求逆，计算出最终结果。当然还有Kalman滤波的使用，考虑到Kalman滤波和Google的PageRank算法都是基于随机过程的，所以Kalman滤波的应用范围应该还是很广的。
 
 可惜对随机过程完全不了解，打算最近研究研究。
+
+# Fedora
+
+Fedora作为主要的Linux发行版之一，我虽然用的不多，但实际上这却是我最早接触的Linux发行版。后来换用Ubuntu，很大的原因是因为：这是Google为Android选择的开发平台。
+
+最近因为工作需要重新捡起了Fedora。但公司所用的版本太过古老，还是2009年的Fedora 12。所以想了一下，开始试用最新的Fedora 22。这里是使用过程中的一些操作笔记。
+
+## 安装
+
+https://getfedora.org/
+
+这是官方的下载地址。这里我用的是Workstation版本。
+
+Fedora 22的默认桌面是GNOME 3.16，这一版的外观借鉴了Mac OS X的一些设计，让人眼前一亮。
+
+## 安装软件
+
+Fedora 22使用dnf替代yum。因此安装基本gcc开发环境，可用如下命令：
+
+`dnf install gcc kernel-devel patch bison`
+
+如果下载速度较慢的话，可以在/etc/dnf/dnf.conf最后添加：
+
+`fastestmirror=true`
+
+保存后，执行
+
+{% highlight bash %}
+$ sudo dnf clean all
+$ sudo dnf makecache
+{% endhighlight %}
+
+## 共享文件夹
+
+我用的是VirtualBox的虚拟环境，因此除了在VirtualBox中，设置共享文件夹之外，还需对Fedora进行如下操作：
+
+1.添加用户到vboxsf中。
+
+`usermod -a -G vboxsf <your user name>`
+
+2.重启。（这一步必不可少，否则上面的配置不会生效。）
+
+这样就可以在Fedora中浏览共享文件夹了。
+
