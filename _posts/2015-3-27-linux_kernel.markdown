@@ -244,3 +244,10 @@ Read的过程要复杂一些，可分为上层调用部分和底层驱动部分�
 
 read-write lock、RCU lock、spin lock
 
+## 内核模块的参数
+
+用户模块可以通过main函数传递命令行参数。而内核模块也有类似的用法：
+
+`insmod module.ko [param1=value param2=value ...]`
+
+为了使用这些参数的值，要在模块中声明变量来保存它们，并在所有函数之外的某个地方使用宏`MODULE_PARM(variable, type)`和`MODULE_PARM_DESC(variable, description)`来接收它们。

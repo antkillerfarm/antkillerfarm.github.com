@@ -204,3 +204,18 @@ http://gstreamer.freedesktop.org/documentation/plugins.html
 
 `sudo apt-get install gstreamer1.0-plugins-base`
 
+# linux音频驱动
+
+首先使用`lspci -v`列出所有的硬件设备，其中当然也包括了音频设备。例如我的PC上是这样的：
+
+{% highlight bash %}
+Audio device: Intel Corporation 6 Series/C200 Series Chipset Family High Definition Audio Controller (rev 05)
+	Subsystem: ASUSTeK Computer Inc. Device 1b73
+	Flags: bus master, fast devsel, latency 0, IRQ 54
+	Memory at df000000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: <access denied>
+	Kernel driver in use: snd_hda_intel
+{% endhighlight %}
+
+从驱动名`snd_hda_intel`可以很轻松的发现，这个驱动的源代码是sound/pci/hda/hda_intel.c。
+
