@@ -206,6 +206,8 @@ http://gstreamer.freedesktop.org/documentation/plugins.html
 
 # linux音频驱动
 
+## 查找PC本机驱动
+
 首先使用`lspci -v`列出所有的硬件设备，其中当然也包括了音频设备。例如我的PC上是这样的：
 
 {% highlight bash %}
@@ -218,4 +220,45 @@ Audio device: Intel Corporation 6 Series/C200 Series Chipset Family High Definit
 {% endhighlight %}
 
 从驱动名`snd_hda_intel`可以很轻松的发现，这个驱动的源代码是sound/pci/hda/hda_intel.c。
+
+## ALSA（Advanced Linux Sound Architecture）
+
+ALSA是Linux内核默认的音频驱动框架。以下是一些参考资料：
+
+http://blog.sina.com.cn/s/blog_5707eebf0100tjbe.html
+
+http://blog.csdn.net/droidphone/article/details/6271122
+
+alsa-utils是ALSA项目提供的工具软件集，以下是一些测试样例：
+
+播放wave文件
+
+`aplay /mnt/nfs/test.wav`
+
+变频播放(以44 KHz来播放音频)
+
+`aplay -D rate_44k /mnt/nfs/test.wav`
+
+录音,以20秒的间隔(-d 20),立体声(-c 2),频率是 8000Hz来录制Wave格式音频
+
+`arecord -d 20 -c 2 -t wav -r 8000 -f "Signed 16 bit Little Endian" /mnt/nfs/test.wav`
+
+测试混音播放(先是播放test1.wav,然后再同时播放test2.wav)
+
+`aplay -D plug:dmix_44k /mnt/nfs/test1.wav & 
+aplay -D plug:dmix_44k /mnt/nfs/test2.wav`
+
+设置放音增益（0 to 3）
+
+`amixer set Master 1`
+
+设置录音音量(0-31)
+
+`amixer set Line 10`
+
+## ALSA System on Chip (ASoC) layer
+
+这是专为嵌入式设备设计的ALSA框架。官网是：
+
+http://www.alsa-project.org/main/index.php/ASoC
 

@@ -272,3 +272,13 @@ TargetEnvironment=Unity
 
 Ubuntu更新软件时的软件源配置文件是/etc/apt/sources.list。
 
+## 13.系统清理工具
+
+1.ubuntu tweak
+
+一个国内小伙写的工具。
+
+2.BleachBit
+
+支持平台广泛，大多数Linux发行版都有对应的软件包。
+

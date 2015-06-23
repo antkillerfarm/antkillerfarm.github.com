@@ -147,7 +147,7 @@ Fedora 22的默认桌面是GNOME 3.16，这一版的外观借鉴了Mac OS X的�
 
 Fedora 22使用dnf替代yum。因此安装基本gcc开发环境，可用如下命令：
 
-`dnf install gcc kernel-devel patch bison`
+`dnf install gcc kernel-devel patch bison flex`
 
 如果下载速度较慢的话，可以在/etc/dnf/dnf.conf最后添加：
 

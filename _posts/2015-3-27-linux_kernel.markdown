@@ -251,3 +251,15 @@ read-write lock、RCU lock、spin lock
 `insmod module.ko [param1=value param2=value ...]`
 
 为了使用这些参数的值，要在模块中声明变量来保存它们，并在所有函数之外的某个地方使用宏`MODULE_PARM(variable, type)`和`MODULE_PARM_DESC(variable, description)`来接收它们。
+
+## IO操作
+
+readb 从 I/O 读取 8 位数据 ( 1 字节 )
+
+readw 从 I/O 读取 16 位数据 ( 2 字节 )
+
+readl 从 I/O 读取 32 位数据 ( 4 字节 )
+
+writeb(), writew(), writel()也是类似的。
+
+IO操作之所以用宏实现，是由于这是和具体机器相关的操作，有的甚至要用到汇编来实现。从计算机体系结构来说，IO空间可以和内存空间属于同一个地址空间，这样就无需特殊的指令，直接使用C语言的赋值语句即可达到效果。IO空间也可以和内存空间采用不同的地址空间（比如x86就是这样的），这时就需要特殊处理了。
