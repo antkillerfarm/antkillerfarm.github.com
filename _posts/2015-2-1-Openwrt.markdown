@@ -264,7 +264,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/hiOpenWRT
 
 将路径设为SDK的根目录，然后运行以下命令：
 
-make package/hiOpenWRT/compile V=s
+`make package/hiOpenWRT/compile V=s`
 
 4）编译结果
 
@@ -295,6 +295,14 @@ http://www.ccs.neu.edu/home/noubir/Courses/CS6710/S12/material/OpenWrt_Dev_Tutor
 网上查了一下也没有找到什么办法，有的网页甚至说SDK不能用于编译内核模块。这一点让我很疑惑，因为普通的linux内核模块只需要linux-header就可以编译了，并不需要linux源代码。
 
 最后我尝试运行了一下`make menuconfig`，终于找到了问题的症结。不同于编译源代码时候的选项，这里的选项很少，碰巧找到了gpio-button-hotplug，然后选中该项，再次编译。这一下终于在bin/x86_64/packages/base下找到了需要的ipk文件。
+
+# 扩展包
+
+大多数情况下，我们并不需要亲手编写OpenWrt模块，因为日常使用中的绝大部分功能，OpenWrt项目都提供了相应的扩展包。因此，如何寻找、安装扩展包，就成为一个经常性的问题。
+
+官方扩展包可以在代码根目录下的feeds.conf.default文件中找到。
+
+从这里可以看出，OpenWrt项目早期的代码托管在openwrt.org下，而最近的开发已经迁移至github。因此，如果有的包在源代码中没有看到的话，可以到openwrt.org下碰碰运气。
 
 # 虚拟机
 

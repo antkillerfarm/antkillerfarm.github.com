@@ -86,7 +86,7 @@ DLNA定义了两大类的交互。
 
 * Onkyo Remote
 
-貌似只能点播DMS+DMP中音乐，纯DMS的不行。
+貌似只能点播DMS+DMP中音乐，纯DMS的不行。换句话说它只是个DMC。
 
 * iMediaShare（又名Flipps）
 
@@ -121,6 +121,16 @@ https://github.com/hzeller/gmrender-resurrect
 * ushare
 
 DMS，该项目已经很久没有更新，不推荐使用。
+
+* Rygel
+
+全功能。官网为：
+
+https://wiki.gnome.org/Projects/Rygel
+
+该项目用vala语言编写。Ubuntu中，可用以下命令安装环境：
+
+`sudo apt-get install valac`
 
 # DLNA环境搭建
 
