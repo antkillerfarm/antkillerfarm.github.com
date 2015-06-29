@@ -357,3 +357,15 @@ abc.cpp:6:7: note: no known conversion for argument 1 from ‘Base’ to ‘Base
 
 http://stackoverflow.com/questions/20247525/about-c-conversion-no-known-conversion-for-argument-1-from-some-class-to
 
+# 常用libc实现
+
+libc是C语言标准库的简称，它有多种实现。除了最常用的gcc自带的glibc之外，还有musl、uClibc、dietlibc等。
+
+http://www.etalabs.net/compare_libcs.html
+
+这个网址是以上4种libc实现的比较结果。从结果来看，musl比较有投资价值。实际上，最近（2015.5）的OpenWrt项目就已经将libc由uClibc改为musl。我也是因为这个原因，才知道musl的。
+
+当然这个表并不完整，其他的libc可以参见:
+
+https://en.wikipedia.org/wiki/C_standard_library
+

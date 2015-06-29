@@ -160,6 +160,10 @@ $ sudo dnf clean all
 $ sudo dnf makecache
 {% endhighlight %}
 
+此外，和Ubuntu一样，Fedora也有自己的网站可以查询软件包信息：
+
+https://admin.fedoraproject.org/pkgdb/
+
 ## 共享文件夹
 
 我用的是VirtualBox的虚拟环境，因此除了在VirtualBox中，设置共享文件夹之外，还需对Fedora进行如下操作：

@@ -1,8 +1,10 @@
 ---
 layout: post
-title:  Jpeglib使用指南
+title:  Jpeglib使用指南 & 各种压缩包的压缩和解压方法
 category: technology 
 ---
+
+# Jpeglib使用指南
 
 ## 1.问题的由来
 
@@ -66,3 +68,104 @@ jpeg_read_scanlines(&cinfo, pBuffer, 1)执行之后，扫描线的内容被放�
 
 http://blog.china.com/u/060803/5544/200608/15355.html
 
+# 各种压缩包的压缩和解压方法
+
+## .Tar.gz
+
+解压：Tar zxvf FileName.Tar.gz
+
+压缩：Tar zcvf FileName.Tar.gz DirName
+
+## .Tar
+
+解包：Tar xvf FileName.Tar
+
+打包：Tar cvf FileName.Tar DirName
+
+（注：Tar是打包，不是压缩！）
+
+## .gz
+
+解压1：gunzip FileName.gz
+
+解压2：gzip -d FileName.gz
+
+压缩：gzip FileName
+
+## .Tar.gz 和 .tgz
+
+解压：Tar zxvf FileName.Tar.gz
+
+压缩：Tar zcvf FileName.Tar.gz DirName
+
+## .bz2
+
+解压1：bzip2 -d FileName.bz2
+
+解压2：bunzip2 FileName.bz2
+
+压缩： bzip2 -z FileName
+
+## .Tar.bz2
+
+解压：Tar jxvf FileName.Tar.bz2
+
+压缩：Tar jcvf FileName.Tar.bz2 DirName
+
+## .bz
+
+解压1：bzip2 -d FileName.bz
+
+解压2：bunzip2 FileName.bz
+
+## .Tar.bz
+
+解压：Tar jxvf FileName.Tar.bz
+
+## .Z
+
+解压：uncompress FileName.Z
+
+压缩：compress FileName
+
+## .Tar.Z
+
+解压：Tar Zxvf FileName.Tar.Z
+
+压缩：Tar Zcvf FileName.Tar.Z DirName
+
+## .zip
+
+解压：unzip FileName.zip
+
+压缩：zip FileName.zip DirName
+
+## .rar
+
+解压：rar x FileName.rar
+
+压缩：rar a FileName.rar DirName
+
+## .lha
+
+解压：lha -e FileName.lha
+
+压缩：lha -a FileName.lha FileName
+
+## .rpm
+
+解包：rpm2cpio FileName.rpm | cpio -div
+
+## .deb
+
+解包：ar p FileName.deb data.Tar.gz | Tar zxf -
+
+## 万能脚本
+
+解压：sEx x FileName.*
+
+压缩：sEx a FileName.* FileName
+
+sEx只是调用相关程序，本身并无压缩、解压功能，请注意！
+
+sEx请到： http://sourceforge.net/projects/sex下载！
