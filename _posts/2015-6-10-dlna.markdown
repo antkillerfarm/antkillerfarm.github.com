@@ -132,6 +132,10 @@ https://wiki.gnome.org/Projects/Rygel
 
 `sudo apt-get install valac`
 
+这个项目在OpenWrt上的移植可参见：
+
+http://wiki.openwrt.org/doc/howto/rygel
+
 # DLNA环境搭建
 
 ## 网络环境

@@ -48,11 +48,13 @@ wr841nd-v5-squashfs-factory.bin
 
 `make clean`
 
-这个命令会保留配置文件.config 和dl目录里下载的文件
+这个命令会保留配置文件.config 和dl目录里下载的文件。
 
 如果想要全部清除，就用下面的命令：
 
 `make distclean`
+
+这里要注意的是：`make clean`不会改变feeds的内容，因此如果更换feeds的话，必须用`make distclean`。考虑到这里的主要开销是下载文件，我们在执行`make distclean`之前，有必要将dl文件夹的内容复制到其他地方，命令执行之后，再复制回来，这样可以大大节省编译的时间。
 
 # OpenWrt in VirtualBox
 
