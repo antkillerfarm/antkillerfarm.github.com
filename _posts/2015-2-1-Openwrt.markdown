@@ -308,6 +308,10 @@ http://www.ccs.neu.edu/home/noubir/Courses/CS6710/S12/material/OpenWrt_Dev_Tutor
 
 一个软件包可以生成独立的ipk安装文件（Modularizes），也可以直接打包进img中（Built-in）。这个生成选项在`make menuconfig`的选项菜单中，选择Y就是Built-in，选择M就是Modularizes。
 
+# OpenWrt目录结构粗解
+
+
+
 # 虚拟机
 
 早期如Bochs之类的没用过，现在估计也没什么人用了吧。

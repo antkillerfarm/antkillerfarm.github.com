@@ -132,10 +132,6 @@ https://wiki.gnome.org/Projects/Rygel
 
 `sudo apt-get install valac`
 
-这个项目在OpenWrt上的移植可参见：
-
-http://wiki.openwrt.org/doc/howto/rygel
-
 # DLNA环境搭建
 
 ## 网络环境
@@ -217,6 +213,32 @@ http://gstreamer.freedesktop.org/documentation/plugins.html
 插件安装方法，以gst-plugins-base为例。
 
 `sudo apt-get install gstreamer1.0-plugins-base`
+
+# Openwrt上的DLNA编译过程
+
+## 方案一：Rygel
+
+这个方案可参见：
+
+http://wiki.openwrt.org/doc/howto/rygel
+
+但是由于
+
+http://patchwork.openwrt.org/
+
+最近已经无法访问，因此该方案试了两天也没能弄出来，只好作罢了。
+
+## 方案二：minidlna+gmediarender
+
+1.minidlna
+
+这个是目前官方支持的包。但是默认情况下，在Multimedia下并不可见。需要首先在Libraries下选择ffmpeg-mini或者ffmpeg-full，然后才能在Multimedia下看见。
+
+2.gmediarender
+
+修改参见：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/openwrt_feeds
 
 # linux音频驱动
 
