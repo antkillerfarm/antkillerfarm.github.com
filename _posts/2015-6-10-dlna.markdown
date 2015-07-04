@@ -234,6 +234,16 @@ http://patchwork.openwrt.org/
 
 这个是目前官方支持的包。但是默认情况下，在Multimedia下并不可见。需要首先在Libraries下选择ffmpeg-mini或者ffmpeg-full，然后才能在Multimedia下看见。
 
+此外配置方式和PC也略有不同：
+
+1）配置文件在/etc/config/minidlna。
+
+2）启动命令为：
+
+`/etc/init.d/minidlna enable`
+
+`/etc/init.d/minidlna start`
+
 2.gmediarender
 
 修改参见：
