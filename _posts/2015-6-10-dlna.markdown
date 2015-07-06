@@ -228,6 +228,8 @@ http://patchwork.openwrt.org/
 
 最近已经无法访问，因此该方案试了两天也没能弄出来，只好作罢了。
 
+出现问题的原因在于Rygel是采用Vala语言编写的，需要有专门的Vala处理的脚本，而这个在标准的Openwrt中是没有的。
+
 ## 方案二：minidlna+gmediarender
 
 1.minidlna

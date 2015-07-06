@@ -54,7 +54,13 @@ wr841nd-v5-squashfs-factory.bin
 
 `make distclean`
 
-这里要注意的是：`make clean`不会改变feeds的内容，因此如果更换feeds的话，必须用`make distclean`。考虑到这里的主要开销是下载文件，我们在执行`make distclean`之前，有必要将dl文件夹的内容复制到其他地方，命令执行之后，再复制回来，这样可以大大节省编译的时间。
+这里要注意的是：`make clean`不会改变feeds的内容，因此如果更换feeds的话，须用`make distclean`。考虑到这里的主要开销是下载文件，我们在执行`make distclean`之前，有必要将dl文件夹的内容复制到其他地方，命令执行之后，再复制回来，这样可以大大节省编译的时间。
+
+此外更换feeds，亦可使用如下命令：
+
+`./scripts/feeds update -i`
+
+这个命令只更新feeds产生的index。
 
 # OpenWrt in VirtualBox
 
@@ -310,7 +316,37 @@ http://www.ccs.neu.edu/home/noubir/Courses/CS6710/S12/material/OpenWrt_Dev_Tutor
 
 # OpenWrt目录结构粗解
 
+## feeds
 
+在OpenWrt的源代码中，其实程序代码是微乎其微的。整个代码本身主要是维护一个很复杂的编译系统。至于内核和各个应用的软件包，基本都是以网上下载的方式获得代码，进而编译的。使用源代码的原因，是由于OpenWrt通常是运行在各种嵌入式系统中，而二进制包显然不具备可移植性。
+
+feeds文件夹的作用就是指明如何下载并编译这些软件源代码包。feeds的更新由专门的版本库来维护，这些版本库也被称为“软件源”。可修改feeds.conf.default来更换不同的或者是非官方的源。
+
+一个feeds通常会包含一个patch文件夹（也可以没有），这里需要注意的是修改patch文件夹内的patch文件时，需要把生成的临时文件.patch~删除掉，不然会出错。
+
+## dl
+
+存放下载下来的压缩格式的源码包。
+
+## build_dir
+
+解压缩之后的源码包。这里又分为三个文件夹：
+
+host：宿主机上的应用。
+
+toolchain：交叉编译工具链。
+
+target：目标板上的应用。
+
+## staging_dir
+
+编译好的二进制文件及配置文件，也分了host、toolchain、target三个文件夹。
+
+其中，target下的pkginfo用于维护目标板软件的依赖关系，在编译环节显得尤为重要。
+
+## bin
+
+最终的生成结果。
 
 # 虚拟机
 
