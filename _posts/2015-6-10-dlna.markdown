@@ -238,7 +238,7 @@ http://patchwork.openwrt.org/
 
 此外配置方式和PC也略有不同：
 
-1）配置文件在/etc/config/minidlna。
+1）配置文件在/etc/config/minidlna。相比PC版的配置，除了格式有所差异外，内容基本一致。唯一需要注意的是，其比PC版多了一个interface的配置项，需要将该项的内容改为在/etc/config/network中配置的lan的名称。
 
 2）启动命令为：
 
@@ -251,6 +251,10 @@ http://patchwork.openwrt.org/
 修改参见：
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/openwrt_feeds
+
+启动命令：
+
+`/etc/init.d/gmediarender start`
 
 # linux音频驱动
 

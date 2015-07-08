@@ -188,6 +188,8 @@ config interface 'wan'
         option proto 'dhcp'
 {% endhighlight %}
 
+修改完成后，运行`/etc/init.d/network restart`，即可使脚本生效。
+
 4）验证联网是否成功
 
 WAN：使用ping命令，例如`ping www.baidu.com`
