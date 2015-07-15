@@ -102,3 +102,5 @@ Android作为一个手机OS，从API Level 1开始就提供了手势相关的类
 3.https://github.com/jgilfelt/android-viewbadger.git
 
 按钮或者View的角标控件。
+
+http://blog.csdn.net/zbunix/article/details/8460422
