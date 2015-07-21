@@ -350,23 +350,28 @@ target：目标板上的应用。
 
 最终的生成结果。
 
-# 虚拟机
+# OpenWrt常见编译问题
 
-早期如Bochs之类的没用过，现在估计也没什么人用了吧。
+## 1.`undefined reference to '__stack_chk_fail_local'`
 
-现在主要是以下三个选择：
+网上查了一下，答案是将链接命令由ld，换成gcc即可。
 
-1.VMware。商业收费软件。有免费版本的VMware Player，但该版本不可创建虚拟机，只可使用别人已经建好的虚拟机。
+但这只是针对普通代码包的编译而言，OpenWrt由于使用的是交叉编译工具链，单纯的修改源代码中的链接命令，根本起不到丝毫作用。
 
-2.VirtualBox。开源免费软件。
+那么如何修改交叉编译工具链中使用的链接命令呢？
 
-3.Qemu。Qemu的易用性不佳，作为使用的话，能不用就不用了。但其不仅开源，而且支持的架构也很多，有的时候往往是唯一之选。作为研究学习来说，这个是首选。
+以luasocket为例，在feeds中的makefile中有如下片段：
 
-这里主要讨论前两者的选择。
+{% highlight bash %}
+define Build/Compile
+	$(MAKE) -C $(PKG_BUILD_DIR)/ \
+		LIBDIR="$(TARGET_LDFLAGS)" \
+		CC="$(TARGET_CC) $(TARGET_CFLAGS) $(TARGET_CPPFLAGS) -std=gnu99" \
+		LD="$(TARGET_CROSS)ld -shared" \
+		all
+endef
+{% endhighlight %}
 
-VMware由于是收费软件之故，因此用户的软件升级是个大问题。（土豪除外，有钱的话，这个就不是事了。）而旧的软件，往往对新的Linux发行版的支持较差。很多情况下，VMware Tool因为这个原因总是无法完美运行。严重影响了软件的易用性。
+将其中的ld，改为gcc即可。
 
-反之，VirtualBox就没有这些问题。虽然比较同期的VMware来说，VirtualBox的性能略逊。但是一般来说，科技行业里领先半年就已经是巨大的优势了。我相信现在的VirtualBox，无论如何也不会弱于两年前的VMware。
-
-因此与其守着过时的VMware 8.0，还不如换用VirtualBox，这就是我的选择。
-
+## 2.
