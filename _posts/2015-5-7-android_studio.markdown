@@ -104,3 +104,57 @@ Android作为一个手机OS，从API Level 1开始就提供了手势相关的类
 按钮或者View的角标控件。
 
 http://blog.csdn.net/zbunix/article/details/8460422
+
+# 下载AOSP源代码
+
+这里使用清华大学提供AOSP镜像。
+
+1.下载 repo
+
+`git://aosp.tuna.tsinghua.edu.cn/android/git-repo.git/`
+
+2. 修改repo
+
+google的地址
+
+`REPO_URL = 'https://gerrit.googlesource.com/git-repo'`
+
+改为清华大学的地址
+
+`REPO_URL = 'git://aosp.tuna.tsinghua.edu.cn/android/git-repo'`
+
+3.下载 manifest
+
+google 的地址
+
+`$ repo init -u https://android.googlesource.com/platform/manifest`
+
+改为清华大学的地址
+
+`$ repo init -u git://aosp.tuna.tsinghua.edu.cn/android/platform/manifest`
+
+4.同步源码
+
+还是和以前一样
+
+`$ repo sync`
+
+5.替换已有的AOSP源代码的remote
+
+如果你之前已经通过某种途径获得了AOSP的源码，但是你希望以后通过TUNA同步，只需要将.repo/manifest.xml中的
+
+{% highlight xml %}
+<remote  name="aosp"
+fetch=".."
+review="https://android-review.googlesource.com/" />
+{% endhighlight %}
+
+改为下面的code即可：
+
+{% highlight xml %}
+<remote  name="aosp"
+fetch="git://aosp.tuna.tsinghua.edu.cn/android/"
+review="https://android-review.googlesource.com/" />
+{% endhighlight %}
+
+这个方法也可以用来在同步Cyanogenmod代码的时候从TUNA同步部分代码
