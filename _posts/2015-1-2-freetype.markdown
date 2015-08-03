@@ -90,6 +90,20 @@ http://dranger.com/ffmpeg/
 
 这篇文章是使用ffmpeg做二次开发的入门手册，写的不错。特将要点翻译摘录如下：
 
+## ffmpeg常见用法
+
+1.转换视频格式
+
+`ffmpeg -i src.avi des.mp4`
+
+2.转换视频的尺寸
+
+`ffmpeg -i src.mp4 -s 960x540 des.mp4`
+
+3.屏幕录像
+
+`ffmpeg -f alsa -ac 2 -i pulse -f x11grab -r 30 -s 1024x768 -i :0.0 -acodec pcm_s16le -vcodec libx264 -preset ultrafast -crf 0 -threads 0 output.mkv`
+
 # SDL
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/HelloSDL
@@ -160,3 +174,4 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/HelloSDL
 
 而最近，我想将该软件移植到Linux上，于是查找Linux平台的图像处理工具库，找到了ImageMagick。仅花了半个小时，就编写好批处理的Python脚本，解决了这个问题。
 
+`convert src.jpg -resize 50% des.jpg`
