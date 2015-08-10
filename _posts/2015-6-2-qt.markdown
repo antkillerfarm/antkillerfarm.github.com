@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Qt
+title:  Qt,GStreamer
 category: technology 
 ---
 
@@ -130,3 +130,8 @@ d->threadData = (parent && !parent->thread()) ? parent->d_func()->threadData : Q
 回到原来的问题。ThreadGl虽然是Qt的线程对象，但它本身却是在主线程中创建的，所以以它为接收者，实际上就是以主线程为接收者。
 
 显然这个例子代码并没有真正实现OpenGL多线程处理，所有的OpenGL操作实际上都是在主线程完成的。
+
+# GStreamer
+
+## 1.环境搭建
+
