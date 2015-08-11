@@ -196,24 +196,6 @@ DMR：gmediarender
 
 gmediarender仅提供UPNP服务，真正的媒体播放使用gstreamer来完成。
 
-用户需要根据媒体文件的种类，选择不同的gstreamer插件，来完成多媒体的播放。
-
-http://gstreamer.freedesktop.org/documentation/plugins.html
-
-这个网页就是gstreamer的插件列表。表中列出的插件，分属4个不同的插件集：
-
-* gst-plugins-base。这类插件格式规范，维护的也很好。
-
-* gst-plugins-good。这类插件有高质量的代码（但格式未必规范），而且许可证也符合要求（LGPL或与LGPL兼容的许可证）。
-
-* gst-plugins-ugly。这类插件有高质量的代码，但许可证方面有问题。
-
-* gst-plugins-bad。这类插件尚不成熟，需要更多文档、测试和应用。
-
-插件安装方法，以gst-plugins-base为例。
-
-`sudo apt-get install gstreamer1.0-plugins-base`
-
 # Openwrt上的DLNA编译过程
 
 ## 方案一：Rygel
