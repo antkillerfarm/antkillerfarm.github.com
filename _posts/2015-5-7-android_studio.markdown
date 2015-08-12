@@ -113,7 +113,7 @@ http://blog.csdn.net/zbunix/article/details/8460422
 
 `git://aosp.tuna.tsinghua.edu.cn/android/git-repo.git/`
 
-2. 修改repo
+2.修改repo
 
 google的地址
 
@@ -157,4 +157,4 @@ fetch="git://aosp.tuna.tsinghua.edu.cn/android/"
 review="https://android-review.googlesource.com/" />
 {% endhighlight %}
 
-这个方法也可以用来在同步Cyanogenmod代码的时候从TUNA同步部分代码
+这个方法也可以用来在同步Cyanogenmod代码的时候从TUNA同步部分代码。

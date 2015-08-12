@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Qt,GStreamer
+title:  Qt, GStreamer
 category: technology 
 ---
 
@@ -169,7 +169,7 @@ helloworld程序在
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gstreamer/helloworld
 
-这里的代码尽管是针对1.x系列的，但实际上对于0.10.x系列也同样有效，你需要做的只是将
+这里的代码尽管是针对1.x系列的，但实际上对于0.10.x系列也同样有效，你需要做的只是将Makefile中的
 
 {% highlight bash %}
 CFLAGS = `pkg-config --cflags gstreamer-1.0`
@@ -184,4 +184,6 @@ LDFLAGS = `pkg-config --libs gstreamer-0.10`
 {% endhighlight %}
 
 这个例子同时也是如何使用pkg-config来管理同一软件的不同版本的范例。GTK+ 2.x和GTK+ 3.x的共存，也是采用了同样的方法。
+
+
 

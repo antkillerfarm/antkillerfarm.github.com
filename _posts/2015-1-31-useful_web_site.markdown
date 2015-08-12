@@ -35,6 +35,10 @@ http://www.gnu.org/software/make/manual/html_node/index.html
 
 应该说make的语法，除了规则依赖之外，大多数与bash相同。但是make也有一些内置函数，它们的用法就不在bash的范畴了，比如call函数。
 
+http://blog.csdn.net/leixiaohua1020/
+
+中国传媒大学雷霄骅博士的blog，专注ffmpeg等的音视频研究。
+
 ## 工具软件及其官网
 
 Box2D---www.box2d.org
