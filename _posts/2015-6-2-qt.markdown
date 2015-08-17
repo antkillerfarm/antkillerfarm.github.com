@@ -185,5 +185,12 @@ LDFLAGS = `pkg-config --libs gstreamer-0.10`
 
 这个例子同时也是如何使用pkg-config来管理同一软件的不同版本的范例。GTK+ 2.x和GTK+ 3.x的共存，也是采用了同样的方法。
 
+## 3.相关工具软件
+
+http://blog.csdn.net/jackyy313/article/details/6275673
+
+GStreamer提供了一个工具软件集——gstreamer-tools。其安装方法如下：
+
+`sudo apt-get install gstreamer-tools`
 
 
