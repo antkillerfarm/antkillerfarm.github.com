@@ -187,10 +187,19 @@ LDFLAGS = `pkg-config --libs gstreamer-0.10`
 
 ## 3.相关工具软件
 
-http://blog.csdn.net/jackyy313/article/details/6275673
-
 GStreamer提供了一个工具软件集——gstreamer-tools。其安装方法如下：
 
 `sudo apt-get install gstreamer-tools`
 
+具体的工具列表参见
+
+http://blog.csdn.net/jackyy313/article/details/6275673
+
+这里对其中的一些工具，稍作阐述。
+
+gst-launch：这个工具可以用于创建并运行GStreamer管道。下面是一个播放mp3文件的示例:
+
+`gst-launch filesrc location=1.mp3 ! mad ! audioconvert ! autoaudiosink`
+
+需要注意的是上面的命令中，`!`两边都要留空格，不然命令会执行错误。
 
