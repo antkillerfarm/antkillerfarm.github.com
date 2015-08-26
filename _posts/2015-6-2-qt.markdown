@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Qt, GStreamer
+title:  Qt, GStreamer, Python
 category: technology 
 ---
 
@@ -189,11 +189,13 @@ LDFLAGS = `pkg-config --libs gstreamer-0.10`
 
 GStreamer提供了一个工具软件集——gstreamer-tools。其安装方法如下：
 
-`sudo apt-get install gstreamer-tools`
+`sudo apt-get install gstreamer-tools gstreamer1.0-tools`
 
 具体的工具列表参见
 
 http://blog.csdn.net/jackyy313/article/details/6275673
+
+注意1.x系列的工具名和0.10.x系列的略有不同，例如`gst-launch`在1.x系列中叫做`gst-launch-1.0`。
 
 这里对其中的一些工具，稍作阐述。
 
@@ -203,3 +205,66 @@ gst-launch：这个工具可以用于创建并运行GStreamer管道。下面是�
 
 需要注意的是上面的命令中，`!`两边都要留空格，不然命令会执行错误。
 
+# Python
+
+## PyPI
+
+PyPI是一个Python语言的软件库管理软件，它的官网是：
+
+https://pypi.python.org/pypi
+
+用户可以在这里查找自己需要的Python包。
+
+Ubuntu下的安装方法是：
+
+`sudo apt-get install python-pip`
+
+使用方法是：
+
+`sudo pip install <package name>`
+
+## PyGObject
+
+谈起Python调用GTK+的话题，在GTK+ 2的时代可以使用PyGTK库。它的官网是：
+
+http://www.pygtk.org/
+
+但由于PyGTK库本质上来说，使用了和一般的Python调用C库一样的方法，因此每导入一个库，都需要编写大量的接口文件。GNOME工程有那么多项目，采用这种办法显然是不太可行的。
+
+于是，GNOME工程发起了GObject Introspection项目。众所周知，GNOME工程诸多项目的基石是GObject。这是一个很成功的类型系统，使用该系统可以获得远比普通C库更强的支持。GObject Introspection项目的目标就是创建一个用于跨语言绑定的中间层。这个项目的官网是：
+
+https://wiki.gnome.org/Projects/GObjectIntrospection
+
+随着GObject Introspection项目的进展，越来越多的语言绑定开始使用这套系统，python也不例外。PyGObject项目就是这种方法的成果，目前它已经取代了PyGTK库，成为GTK+ 3时代Python调用GTK+的官方方案。它的官网是：
+
+https://wiki.gnome.org/Projects/PyGObject
+
+安装方法：
+
+Ubuntu下，可以执行：
+
+`sudo apt-get install python-gi python3-gi`
+
+Windows下，有个PyGObject for Windows项目，该项目的官网是：
+
+http://sourceforge.net/projects/pygobjectwin32/files/
+
+PyGObject的helloworld程序可参见：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/pygtk-helloworld.py
+
+## Sqlite
+
+Ubuntu下的安装方法是：
+
+`sudo apt-get install sqlite`
+
+Python自带了pysqlite包，用于调用sqlite。
+
+pysqlite的helloworld程序可参见：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/pysqlite-helloworld.py
+
+可以使用sqlite_bro软件包，查看sqlite数据库。安装方法：
+
+`sudo pip install sqlite_bro`
