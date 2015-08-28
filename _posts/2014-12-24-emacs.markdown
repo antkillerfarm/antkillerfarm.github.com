@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Emacs & Lisp & 小众语言集中营
+title:  Emacs & Lisp & Logo & 小众语言集中营
 category: technology 
 ---
 
@@ -165,6 +165,24 @@ Leave Hexl mode, going back to the major mode this buffer had before you invoked
 5.有家叫做LispWorks（From 1989）的公司提供对Lisp GUI的商业支持，而且提供的界面并不逊色于GTK、Qt等当代GUI工具集。上面提到的音乐软件基本上都是基于LispWorks的。
 
 综上可见，Lisp开发GUI不是可能性的问题，而是一个有待重新发掘的问题。
+
+# Logo语言的安装
+
+Logo语言是我学习计算机时的启蒙语言。那是初一、初二的时候，当时的电脑还是运行Dos的386系统，我们在原始的命令行下，津津有味的编着代码。那时候电脑可是稀罕物，为了节约上机时间，程序都是事先写到小本本上的，我至今还保留着当时的作业本。
+
+话归正传，说说Linux下Logo语言的安装。
+
+1）到Berkeley的官网下载Logo语言的源代码
+
+http://www.cs.berkeley.edu/~bh/logo.html
+
+2）按照源代码包里面readme的提示，编译之。提示缺少libbsd和libtermcap。
+
+3）`sudo apt-get install libbsd-dev libncurses5-dev`
+
+重新编译即可。
+
+再一次看到熟悉的命令行界面和海龟了:)
 
 # 小众语言集中营
 

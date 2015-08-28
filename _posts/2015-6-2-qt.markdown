@@ -205,6 +205,18 @@ gst-launch：这个工具可以用于创建并运行GStreamer管道。下面是�
 
 需要注意的是上面的命令中，`!`两边都要留空格，不然命令会执行错误。
 
+## 4.开发教程
+
+首先是一个使用python开发的GStreamer的例子：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/python-gst-player-example.py
+
+这个例子不能直接运行，需要根据具体情况，略作修改，修改的地方如下：
+
+1）self.uri存放用于播放的媒体文件的URI，注意这里是URI，而不是普通的路径，如果要指定本地文件的话，需要使用`file://`。
+
+2)出错的时候，先用`gst-inspect`检查一下，相应的插件是否安装好了。
+
 # Python
 
 ## PyPI

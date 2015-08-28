@@ -8,11 +8,11 @@ category: technology
 
 VMWare自带的VMWare tools在新版的Ubuntu上总是安装不上，其实解决方法也很简单。
 
-`apt-get install linux-headers-virtual open-vm-dkms open-vm-tools（图形界面）`
+`sudo apt-get install linux-headers-virtual open-vm-dkms open-vm-tools（图形界面）`
 
 或
 
-`apt-get install --no-install-recommends linux-headers-virtual open-vm-dkms open-vm-tools（命令行）`
+`sudo apt-get install --no-install-recommends linux-headers-virtual open-vm-dkms open-vm-tools（命令行）`
 
 ## 2.如何以管理员身份操作Gnome的资源管理器--nautilus
 
@@ -192,25 +192,9 @@ Monkey's Audio，是一种常见的无损音频压缩编码格式，扩展名为
 
 devhelp每个版本放书的目录都不尽相同，一般如果安装了gtk的话，可以找找gtk-doc文件夹的位置，然后把书放到gtk-doc下。
 
-## 10.Logo语言的安装
+`sudo apt-get install libgtk-3-doc`
 
-Logo语言是我学习计算机时的启蒙语言。那是初一、初二的时候，当时的电脑还是运行Dos的386系统，我们在原始的命令行下，津津有味的编着代码。那时候电脑可是稀罕物，为了节约上机时间，程序都是事先写到小本本上的，我至今还保留着当时的作业本。
-
-话归正传，说说Linux下Logo语言的安装。
-
-1）到Berkeley的官网下载Logo语言的源代码
-
-http://www.cs.berkeley.edu/~bh/logo.html
-
-2）按照源代码包里面readme的提示，编译之。提示缺少libbsd和libtermcap。
-
-3）`sudo apt-get install libbsd-dev libncurses5-dev`
-
-重新编译即可。
-
-再一次看到熟悉的命令行界面和海龟了:)
-
-## 11.Unity侧边栏快速启动的研究
+## 10.Unity侧边栏快速启动的研究
 
 Unity侧边栏和Win7的任务栏有些类似，不仅会显示当前正在执行的程序，同时也可以将正在执行的程序的图标锁定在侧边栏上。但是侧边栏的位置有限，当锁定的图标太多时，就会干扰对正在执行的程序的选定。
 
@@ -268,11 +252,11 @@ TargetEnvironment=Unity
 
 3）将MyQuickStart.desktop的文件权限改为可执行，并将其拖放到侧边栏，就可以看效果了。
 
-## 12.修改软件源
+## 11.修改软件源
 
 Ubuntu更新软件时的软件源配置文件是/etc/apt/sources.list。
 
-## 13.系统清理工具
+## 12.系统清理工具
 
 1.ubuntu tweak
 

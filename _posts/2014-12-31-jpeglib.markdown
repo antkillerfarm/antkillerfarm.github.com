@@ -70,19 +70,19 @@ http://blog.china.com/u/060803/5544/200608/15355.html
 
 # 各种压缩包的压缩和解压方法
 
-## .Tar.gz
+## .tar.gz
 
-解压：Tar zxvf FileName.Tar.gz
+解压：tar zxvf FileName.tar.gz
 
-压缩：Tar zcvf FileName.Tar.gz DirName
+压缩：tar zcvf FileName.tar.gz DirName
 
-## .Tar
+## .tar
 
-解包：Tar xvf FileName.Tar
+解包：tar xvf FileName.tar
 
-打包：Tar cvf FileName.Tar DirName
+打包：tar cvf FileName.tar DirName
 
-（注：Tar是打包，不是压缩！）
+（注：tar是打包，不是压缩！）
 
 ## .gz
 
@@ -92,11 +92,11 @@ http://blog.china.com/u/060803/5544/200608/15355.html
 
 压缩：gzip FileName
 
-## .Tar.gz 和 .tgz
+## .tar.gz 和 .tgz
 
-解压：Tar zxvf FileName.Tar.gz
+解压：tar zxvf FileName.Tar.gz
 
-压缩：Tar zcvf FileName.Tar.gz DirName
+压缩：tar zcvf FileName.Tar.gz DirName
 
 ## .bz2
 
@@ -106,11 +106,11 @@ http://blog.china.com/u/060803/5544/200608/15355.html
 
 压缩： bzip2 -z FileName
 
-## .Tar.bz2
+## .tar.bz2
 
-解压：Tar jxvf FileName.Tar.bz2
+解压：tar jxvf FileName.tar.bz2
 
-压缩：Tar jcvf FileName.Tar.bz2 DirName
+压缩：tar jcvf FileName.tar.bz2 DirName
 
 ## .bz
 
@@ -118,9 +118,9 @@ http://blog.china.com/u/060803/5544/200608/15355.html
 
 解压2：bunzip2 FileName.bz
 
-## .Tar.bz
+## .tar.bz
 
-解压：Tar jxvf FileName.Tar.bz
+解压：tar jxvf FileName.tar.bz
 
 ## .Z
 
@@ -128,11 +128,11 @@ http://blog.china.com/u/060803/5544/200608/15355.html
 
 压缩：compress FileName
 
-## .Tar.Z
+## .tar.z
 
-解压：Tar Zxvf FileName.Tar.Z
+解压：tar Zxvf FileName.tar.z
 
-压缩：Tar Zcvf FileName.Tar.Z DirName
+压缩：tar Zcvf FileName.tar.z DirName
 
 ## .zip
 

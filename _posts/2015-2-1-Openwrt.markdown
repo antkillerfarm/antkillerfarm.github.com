@@ -12,7 +12,7 @@ category: technology
 
 2.安装必要的包
 
-`sudo apt-get install libtool autoconf automake gcc-multilib bison screen gcc g++ binutils patch bzip2 flex make gettext unzip libc6 git-core git build-essential libncurses5-dev zlib1g-dev gawk quilt asciidoc libz-dev`
+`sudo apt-get install libtool autoconf automake gcc-multilib bison screen gcc g++ binutils patch bzip2 flex make gettext unzip libc6 git-core git build-essential libncurses5-dev zlib1g-dev gawk quilt asciidoc libz-dev zlib-bin lib32z1-dev`
 
 包的内容根据OpenWRT和Ubuntu的版本的不同，而略有差异。比如最新的版本可能还需要libssl-dev包。不过这个比较简单，看出错信息就知道还需要什么包了。
 
@@ -379,4 +379,14 @@ endef
 这个函数和上面的__stack_chk_fail_local函数一样都是编译器隐含函数。它既不同于自己代码实现的函数，也不同于那些显式调用的库函数，通常是针对某个语法规则或编译选项而链接的函数。因此这类错误，实际上并非代码写的不对，而是编译上的配置不对。
 
 __sync_fetch_and_add_8实际上是和CPU原子操作有关的函数，在PC上目前不支持x86指令集，而只支持x86_64指令集。将目标平台改为x86_64即可。
+
+## 3.链接库版本的问题
+
+最近使用某平台的工具链编译OpenWrt，然后执行as命令时，出现如下错误：
+
+`libz.so.1: cannot open shared object file: No such file or directory`
+
+找了一下，发现libz.so.1在zlib-bin包中，岂料安装zlib-bin之后，问题依旧。
+
+最后才发现这个工具链是32位的程序，相应的libz.so.1实际上在lib32z1-dev包中。因此遇到类似的问题时，可以先注意一下程序的位数是否匹配。
 
