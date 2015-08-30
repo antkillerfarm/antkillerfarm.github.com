@@ -67,6 +67,12 @@ g_list_next函数的参数是当前节点main_box_child，而不是链表的指�
 
 对于第2种方案，网上的例子很少，有也基本都是重载窗口的destroy信号。但实际上delete-event才是关闭事件的信号，只有做完了 delete-event才会执行destroy。这一点在GTK的用户手册上有详细的说明。同时，手册还推荐使用 gtk_widget_hide_on_delete函数来实现第2种方案。
 
+## 6）change-value和value-changed
+
+GtkScale有两个容易混淆的事件：change-value和value-changed。
+
+两者的区别是，change-value是一个主动事件，只有用户通过GUI操作控件才会触发；而value-changed是一个被动事件，无论什么原因，只要改变控件的值，就会触发。
+
 # 在Windows下使用GTK+3
 
 ## 1)安装MinGW

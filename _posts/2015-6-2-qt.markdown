@@ -251,6 +251,14 @@ https://wiki.gnome.org/Projects/GObjectIntrospection
 
 https://wiki.gnome.org/Projects/PyGObject
 
+相关的API参考文档可参见：
+
+http://lazka.github.io/pgi-docs/
+
+指南文档可参见：
+
+http://python-gtk-3-tutorial.readthedocs.org/en/latest/
+
 安装方法：
 
 Ubuntu下，可以执行：
@@ -280,3 +288,68 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/pysqlite
 可以使用sqlite_bro软件包，查看sqlite数据库。安装方法：
 
 `sudo pip install sqlite_bro`
+
+## python调用GTK函数的一般规则
+
+众所周知，GTK库是用C语言编写的，其相关的文档提供的也是C函数的接口，python接口的文档相对较少，获得也不太容易。因此有必要掌握一下这方面基本的命名规则。（这里只讲方法，对深层次的调用原理不做探究。）
+
+1）类初始化函数
+
+C:`GtkWidget * gtk_button_new (void);`
+
+python:`button = Gtk.Button()`
+
+这里除了把C函数式的写法，替换成python的类的写法之外，并无其他差异。
+
+2）普通类成员函数
+
+C:`void gtk_container_add (GtkContainer *container, GtkWidget *widget);`
+
+python:`button.add(image)`
+
+可以看出，C函数的第一个表示self类指针的参数被省略掉了。
+
+3）回调函数
+
+这里以按钮的click事件回调为例：
+
+C:`void user_function (GtkButton *button, gpointer user_data)`
+
+python:
+
+`button.connect("clicked", self.playToggled)`
+
+`def playToggled(self, w):`
+
+这里的情况要复杂的多。首先在事件回调注册的时候，由于我们并没有给user_data赋值，因此照理说playToggled，只有button这一个参数。但实际传递给playToggled的有两个参数，self是一个用于占位的参数，w对应button，没有东西对应user_data。
+
+4）用于输出的参数
+
+C:`void gst_message_parse_error (GstMessage *message, GError **gerror, gchar **debug);`
+
+python:`err, debug = message.parse_error()`
+
+这个例子中的gerror和debug都是用于输出的参数。如果只想得到其一，还可用以下方法:
+
+`debug = message.parse_error()[2]`
+
+5）枚举类型
+
+C:
+
+{% highlight c %}
+enum GstSeekFlags
+{
+  GST_SEEK_FLAG_FLUSH,
+  ...
+}
+{% endhighlight %}
+
+python:`Gst.SeekFlags.FLUSH`
+
+6）宏常量
+
+C:`#define GST_CLOCK_TIME_NONE ((GstClockTime) -1)`
+
+python:`Gst.CLOCK_TIME_NONE`
+
