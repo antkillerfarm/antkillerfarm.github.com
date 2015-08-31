@@ -96,6 +96,12 @@ DLNA定义了两大类的交互。
 
 DMR+DMP+DMC。
 
+* Cling
+
+开源项目，其官网为：
+
+http://4thline.org/projects/cling/
+
 ## 各种服务端软件能力对比
 
 * Windows Media Player
