@@ -38,6 +38,16 @@ category: technology
 
 3）显式调用时,要注意动态库函数的声明,可能要加`extern "C"`才能正常执行。（显式调用是运行时加载，所以编译能过，执行却不对了。）可以用nm命令看看链接库的符号表，以确定问题所在。
 
+4）链接的时候需要注意文件的顺序。
+
+比如下面的例子：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/linux_so
+
+`gcc -o main_link main_link.c -L. -lhello`
+
+这条命令中的main_link.c如果放到`-lhello`之后就会出问题。也考虑使用`--start-group`和`--end-group`之类的链接选项解决链接顺序问题。
+
 ## 2.GUI设计工具
 
 GTK+的程序可以使用Glade来设计界面，它会生成一个脚本，运行该脚本，并make就行了。

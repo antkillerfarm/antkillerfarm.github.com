@@ -30,13 +30,37 @@ category: technology
 
 Android Studio有增量自动更新功能，虽然不是每次出新版本都要升级，但是其升级系统只支持若干个小版本之间的跳变升级。一但超出这个范围，就需要手动下载离线包来升级了。
 
-离线升级的方法很多地方都有写，这里不再赘述。唯一指出的一点是如果PC是Linux平台的话，patch包名称的OS字段是unix。
+离线升级的方法：
+
+1）查看最新的版本号
 
 以0.8.9到1.1 Beta4为例，通过阅读https://dl.google.com/android/studio/patches/updates.xml的内容可知，0.8.9最多只能升级到0.9.9。要想升级到1.1 Beta4，就必须以0.9.9为跳板一步步的向上升。
 
 最终升级路径如下：
 
 0.8.9->0.9.9->1.0.2->1.1 Beta4
+
+2）下载更新包
+
+https://dl.google.com/android/studio/patches/AI-130.737825-132.843336-patch-win.jar
+
+如果PC是Linux平台的话，patch包名称的OS字段是unix。
+
+3）安装更新包
+
+键入如下命令：
+
+`java -Xmx1024m -classpath AI-130.737825-132.843336-patch-win.jar com.intellij.updater.Runner install <Android Studio path>`
+
+一般不要将jar直接放在Android Studio path下，有的时候会出错。
+
+随着软件越来越大，Java VM所需的空间也越来越大，如果出现如下错误：
+
+`java.lang.OutOfMemoryError: Java heap space`
+
+可以通过调整`-Xmx1024m`的值，解决该问题，默认是896m。
+
+查阅相关资料，可知32位OS的Java VM内存有上限，网上说是1.5G，但我这里，1G就是上限了。
 
 ## Eclipse导出至Android Studio
 
