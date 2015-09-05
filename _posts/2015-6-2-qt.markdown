@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Qt, GStreamer, Python
+title:  Qt, Python
 category: technology 
 ---
 
@@ -130,84 +130,6 @@ d->threadData = (parent && !parent->thread()) ? parent->d_func()->threadData : Q
 回到原来的问题。ThreadGl虽然是Qt的线程对象，但它本身却是在主线程中创建的，所以以它为接收者，实际上就是以主线程为接收者。
 
 显然这个例子代码并没有真正实现OpenGL多线程处理，所有的OpenGL操作实际上都是在主线程完成的。
-
-# GStreamer
-
-## 1.概况
-
-当前GStreamer主要有两个大的版本分支：
-
-1)0.10.x系列。这个版本系列的历史较久，相关资源比较丰富。但目前官方已经不再发展和支持该版本。该系列有中文版的用户手册。
-
-2)1.x系列。2012年以来发布的版本系列，也是官方推荐的版本系列。只有英文的用户手册，但手册的内容与0.10.x相差不大，尽管API已经不再兼容旧版本。以下的描述以1.x系列为准。1.x系列被设计为可以和0.10.x系列在系统中共存，因此在同一台电脑上，同时安装0.10.x系列和1.x系列是完全没有冲突的。
-
-GStreamer本质上只是一个多媒体应用框架，具体的多媒体播放功能由插件来完成。
-
-http://gstreamer.freedesktop.org/documentation/plugins.html
-
-这个网页就是gstreamer的插件列表。表中列出的插件，分属4个不同的插件集：
-
-* gst-plugins-base。这类插件格式规范，维护的也很好。
-
-* gst-plugins-good。这类插件有高质量的代码（但格式未必规范），而且许可证也符合要求（LGPL或与LGPL兼容的许可证）。
-
-* gst-plugins-ugly。这类插件有高质量的代码，但许可证方面有问题。
-
-* gst-plugins-bad。这类插件尚不成熟，需要更多文档、测试和应用。
-
-插件安装方法，以gst-plugins-base为例。
-
-`sudo apt-get install gstreamer1.0-plugins-base`
-
-## 2.开发环境搭建
-
-`sudo apt-get install libgstreamer1.0-dev`(1.x系列)
-
-`sudo apt-get install libgstreamer0.10-dev`(0.10.x系列)
-
-helloworld程序在
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gstreamer/helloworld
-
-这里的代码尽管是针对1.x系列的，但实际上对于0.10.x系列也同样有效，你需要做的只是将Makefile中的
-
-{% highlight bash %}
-CFLAGS = `pkg-config --cflags gstreamer-1.0`
-LDFLAGS = `pkg-config --libs gstreamer-1.0`
-{% endhighlight %}
-
-改为
-
-{% highlight bash %}
-CFLAGS = `pkg-config --cflags gstreamer-0.10`
-LDFLAGS = `pkg-config --libs gstreamer-0.10`
-{% endhighlight %}
-
-这个例子同时也是如何使用pkg-config来管理同一软件的不同版本的范例。GTK+ 2.x和GTK+ 3.x的共存，也是采用了同样的方法。
-
-## 3.相关工具软件
-
-GStreamer提供了一个工具软件集——gstreamer-tools。其安装方法如下：
-
-`sudo apt-get install gstreamer-tools gstreamer1.0-tools`
-
-具体的工具列表参见
-
-http://blog.csdn.net/jackyy313/article/details/6275673
-
-注意1.x系列的工具名和0.10.x系列的略有不同，例如`gst-launch`在1.x系列中叫做`gst-launch-1.0`。
-
-这里对其中的一些工具，稍作阐述。
-
-gst-launch：这个工具可以用于创建并运行GStreamer管道。下面是一个播放mp3文件的示例:
-
-`gst-launch filesrc location=1.mp3 ! mad ! audioconvert ! autoaudiosink`
-
-需要注意的是上面的命令中，`!`两边都要留空格，不然命令会执行错误。
-
-## 4.playbin插件
-
-该插件使用了GStreamer的自动加载（Auto plugging）机制，可以自动根据媒体类型，选择不同的管道播放，相当于是个万能播放插件。对于GStreamer应用开发人员来说，是个相当好用的东西。
 
 # Python
 
@@ -398,3 +320,26 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/python-g
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/gstreamer/step1/my-gst-player.py
 
+## 如何通过需认证的代理获取HTTP网页
+
+Python内置的urllib和urllib2模块都可用于获取HTTP网页，但使用范围是不同的。urllib只支持HTTP 0.9和HTTP 1.0，所以如果只是使用代理可以使用urllib.FancyURLopener类，如果该代理还需要认证的话urllib就不行了。因为代理认证是HTTP 1.1中引入的。
+
+这时可以考虑使用urllib2模块。代码如下：
+
+{% highlight python %}
+    import urllib2
+    l_proxy_info = {
+    'user' : 'user',
+    'pass' : 'pass',
+    'host' : 'host',
+    'port' : 3128
+    }
+
+    l_proxy_support = urllib2.ProxyHandler({"http" : \
+    "http://%(user)s:%(pass)s@%(host)s:%(port)d" %
+    l_proxy_info})
+    l_opener = urllib2.build_opener(l_proxy_support, urllib2.HTTPHandler)
+
+    urllib2.install_opener(l_opener)
+    usock = urllib2.urlopen('http://www.sohu.com')
+{% endhighlight %}

@@ -131,7 +131,7 @@ http://blog.csdn.net/zbunix/article/details/8460422
 
 # 下载AOSP源代码
 
-这里使用清华大学提供AOSP镜像。
+这里使用清华大学提供的AOSP镜像。
 
 1.下载 repo
 
@@ -182,3 +182,30 @@ review="https://android-review.googlesource.com/" />
 {% endhighlight %}
 
 这个方法也可以用来在同步Cyanogenmod代码的时候从TUNA同步部分代码。
+
+以下是中科大的aosp源，提出的修改办法：
+
+修改 .repo/manifests.git/config，将
+
+`url = https://android.googlesource.com/platform/manifest`
+
+修改成
+
+`url = git://mirrors.ustc.edu.cn/aosp/platform/manifest`
+
+即可。 
+
+这种方法比清华的方法好，因为.repo/manifest.xml是已经被git版本控制的文件，修改它会导致repo库今后无法更新，而中科大的方法没有这个副作用。
+
+6.其他源
+
+aosp的源，除了清华之外，还有以下的源，修改方法参见第5条：
+
+git://mirrors.ustc.edu.cn/aosp/ （中科大的源）
+
+git://git.omapzoom.org/
+
+https://android-git.linaro.org/git/
+
+推荐使用中科大的源，作为清华的替代品。
+
