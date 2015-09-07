@@ -54,7 +54,7 @@ F表示相关的算法。只有符合F算法的P和U，才能通过程序的验�
 
 # GStreamer
 
-## 1.概况
+## 概况
 
 当前GStreamer主要有两个大的版本分支：
 
@@ -80,7 +80,9 @@ http://gstreamer.freedesktop.org/documentation/plugins.html
 
 `sudo apt-get install gstreamer1.0-plugins-base`
 
-## 2.开发环境搭建
+除了上面列出的插件之外，目前的做法，更倾向于使用ffmpeg作为后端编解码库，尤其是编解码更复杂的视频文件。因此在0.10.x时代，提供了gstreamer0.10-ffmpeg插件，而1.x时代，则有gstreamer1.0-libav提供对avcodec、avformat等ffmpeg库的支持。
+
+## 开发环境搭建
 
 `sudo apt-get install libgstreamer1.0-dev`(1.x系列)
 
@@ -106,7 +108,7 @@ LDFLAGS = `pkg-config --libs gstreamer-0.10`
 
 这个例子同时也是如何使用pkg-config来管理同一软件的不同版本的范例。GTK+ 2.x和GTK+ 3.x的共存，也是采用了同样的方法。
 
-## 3.相关工具软件
+## 相关工具软件
 
 GStreamer提供了一个工具软件集——gstreamer-tools。其安装方法如下：
 
@@ -126,11 +128,29 @@ gst-launch：这个工具可以用于创建并运行GStreamer管道。下面是�
 
 需要注意的是上面的命令中，`!`两边都要留空格，不然命令会执行错误。
 
-## 4.playbin插件
+## 万能插件
 
-该插件使用了GStreamer的自动加载（Auto plugging）机制，可以自动根据媒体类型，选择不同的管道播放，相当于是个万能播放插件。对于GStreamer应用开发人员来说，是个相当好用的东西。
+GStreamer除了那些完成具体功能的插件以外，还有一些抽象的高级插件，如playbin插件。该插件使用了GStreamer的自动加载（Auto plugging）机制，可以自动根据媒体类型，选择不同的管道播放，相当于是个万能播放插件。对于GStreamer应用开发人员来说，是个相当好用的东西。
 
-## 5.多设备的网络时钟同步
+playbin插件负责媒体播放的全过程，还有其他一些只负责某个步骤的全能插件：
+
+decodebin：解码插件。
+
+autoaudiosink：音频播放插件
+
+autovideosink：视频播放插件
+
+## 播放视频
+
+播放视频也可以使用playbin插件。这里主要存在以下几个问题：
+
+1）不支持0.10.x系列。由于视频解码主要由ffmpeg来实现，而在Ubuntu14.04以后，官方已经移除了gstreamer0.10-ffmpeg插件，因此很多视频流已经无法处理。
+
+2）xvimagesink错误问题。playbin插件默认使用autovideosink作为视频播放插件，而autovideosink优先使用xvimagesink插件。这个插件的优点是使用了硬件加速的功能，缺点是需要显卡驱动的支持。因此，无论在真实机器还是虚拟机上，都有显卡驱动不匹配，从而导致错误的问题。
+
+这时可以换个思路，自己构建播放视频的管道，其核心是使用ximagesink替代xvimagesink。ximagesink是一个兼容性较好的videosink，缺点是速度没有xvimagesink快。
+
+## 多设备的网络时钟同步
 
 多个设备协同播放同一个媒体流的时候，设备之间存在着时钟同步的问题。针对这个问题，GStreamer提供了网络时钟同步的功能。
 
@@ -141,3 +161,5 @@ gst-launch：这个工具可以用于创建并运行GStreamer管道。下面是�
 PTP协议相关的规范是IEEE1588:2008。其服务器实现有
 
 ptpd:http://ptpd.sourceforge.net/
+
+

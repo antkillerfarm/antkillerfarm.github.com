@@ -71,7 +71,7 @@ http://trac.webkit.org/wiki/BuildingGtk
 3)gtk-doc-tools
 4)libgail-dev
 
-## 5.Apache与CGI
+## Apache与CGI
 
 本来以为CGI编程会比较复杂，没想到从原理的角度，似乎比之前的JSP还要简单一些。这次主要是用C来编写CGI，使用的web服务器是Apache 2.0.55。网上看到了几篇同类的文章，但大多过于简略，有的甚至颇有错误，所以自己就重新写一篇吧。
 
