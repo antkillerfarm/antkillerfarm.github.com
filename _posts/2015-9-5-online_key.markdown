@@ -150,6 +150,10 @@ autovideosink：视频播放插件
 
 这时可以换个思路，自己构建播放视频的管道，其核心是使用ximagesink替代xvimagesink。ximagesink是一个兼容性较好的videosink，缺点是速度没有xvimagesink快。
 
+以下是一个播放视频文件的示例：
+
+`gst-launch-1.0 filesrc location=1.avi ! decodebin name=dmux dmux. ! queue ! audioconvert ! autoaudiosink dmux. ! queue ! videoconvert ! ximagesink`
+
 ## 多设备的网络时钟同步
 
 多个设备协同播放同一个媒体流的时候，设备之间存在着时钟同步的问题。针对这个问题，GStreamer提供了网络时钟同步的功能。
