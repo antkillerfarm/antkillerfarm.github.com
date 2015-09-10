@@ -262,5 +262,7 @@ http://www.cnblogs.com/zmkeil/archive/2013/04/17/3027385.html
 
 OpenWrt编译系统由一系列makefile脚本组成。除了分散于各个文件夹的Makefile文件之外，在include文件夹下，还有很多.mk文件。这些.mk文件的作用有些类似于C语言的头文件。建议研究编译系统之前，先把这些.mk看一遍。
 
+## 镜像文件生成
 
+以arm64为例，生成镜像文件的过程，由target/linux/arm64/Makefile来控制。其中kernel的生成代码在include/kernel-build.mk中，而rootfs的生成代码在include/image.mk中。
 
