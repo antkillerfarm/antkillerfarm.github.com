@@ -4,7 +4,7 @@ title:  linux学习心得
 category: technology 
 ---
 
-## 1.动态链接
+## 动态链接
 
 这两天实践了一下怎样在linux下创建动态链接。感觉网上的资料虽然翔实，但仍然有疏漏之处。
 
@@ -48,7 +48,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/linu
 
 这条命令中的main_link.c如果放到`-lhello`之后就会出问题。也考虑使用`--start-group`和`--end-group`之类的链接选项解决链接顺序问题。
 
-## 2.GUI设计工具
+## GUI设计工具
 
 GTK+的程序可以使用Glade来设计界面，它会生成一个脚本，运行该脚本，并make就行了。
 
@@ -60,7 +60,7 @@ QT的稍微麻烦一些。
 
 上面写的两个都是官方的设计器，而WxWidgets没有官方的设计器，但有很多第三方的设计器，我使用的是免费且开源的wxFormBuilder。用它可生成XRC文件，而WxWidgets中有使用XRC文件的接口。
 
-## 3.编程所用命令简介
+## 编程所用命令简介
 
 cc：C/C++编译器
 
@@ -72,7 +72,7 @@ as86、ld86：8086汇编编译器和链接器
 
 linux文件分割用split,合并用cat。最近下了一本采用split分割的书，但是我没有Linux环境，于是在windows的命令行下用type、>、>>合并了文件。
 
-## 4.printf和wprintf混用的问题
+## printf和wprintf混用的问题
 
 在linux中不可混用printf和wprintf，如果混用的话，则**后使用**的函数没有输出。
 
@@ -118,15 +118,15 @@ printf("a\n");
 printf("%ls",L"b\n");
 {% endhighlight %}
 
-## 5.关于SIGPIPE导致的程序退出
+## 关于SIGPIPE导致的程序退出
 
 [http://www.cppblog.com/elva/archive/2008/09/10/61544.html](http://www.cppblog.com/elva/archive/2008/09/10/61544.html)
 
-## 6.使用yum
+## 使用yum
 
 在RHEL中，可以使用yum从网上下载相应的组件，但需要RHN号，所以我现在换用了CentOS。当你需要使用yum的时候，如果yum找不到相应的组件时，可以在组件名之前加lib，或者在之后加-dev或-devel。
 
-## 7.源码包编译4步曲
+## 源码包编译4步曲
 
 1)autogen.sh
 
@@ -138,7 +138,7 @@ printf("%ls",L"b\n");
 
 其中一二两步有时只要一个就够了，如果源码包中这两个都有的话，先运行1)
 
-## 8.关于ascii字符集的一些打印控制字符的别名
+## 关于ascii字符集的一些打印控制字符的别名
 
 \b——backspace
 

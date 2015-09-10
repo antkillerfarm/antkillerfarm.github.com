@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenWrt编程篇
+title:  OpenWrt编程篇, uboot, Linux镜像文件
 category: technology 
 ---
 
@@ -137,4 +137,134 @@ __sync_fetch_and_add_8实际上是和CPU原子操作有关的函数，在PC上�
 找了一下，发现libz.so.1在zlib-bin包中，岂料安装zlib-bin之后，问题依旧。
 
 最后才发现这个工具链是32位的程序，相应的libz.so.1实际上在lib32z1-dev包中。因此遇到类似的问题时，可以先注意一下程序的位数是否匹配。
+
+# uboot
+
+## 从uboot到Linux
+
+这里以uboot 2014年11月的主线代码为例分析从uboot到linux的全过程。之所以写这篇文章，是由于网上的资料多数都很陈旧，诸如start_armboot之类的函数在新的代码里根本找不到了。由于uboot支持的CPU以及Board非常的多，所以本文仅以Samsung exynos为例来介绍这个过程。
+
+从上电到uboot启动:
+
+1./arch/arm/cpu/armv7/start.S: reset——uboot的汇编入口
+
+2./arch/arm/lib/crt0.S: _main
+
+3./arch/arm/lib/board.c: board_init_f——初始化第一阶段
+
+4./arch/arm/lib/board.c: board_init_r——初始化第二阶段
+
+5./common/main.c: main_loop——uboot主循环
+
+uboot启动Linux
+
+1.uboot中有个bootd的命令选项,执行该命令会进入/common/cmd_bootm.c: do_bootd
+
+2.common/cli.c: run_command，传入bootcmd命令作为参数。
+
+3.common/cmd_bootm.c: do_bootm
+
+4.arch/arm/lib/bootm.c: do_bootm_linux
+
+5.arch/arm/lib/bootm.c: do_jump_linux——跳转到Linux内核的入口地址
+
+uImage格式是专为uboot开发的格式，主要解决了uboot和linux在嵌入式设备的存储上共存的问题。
+
+## uboot命令处理流程
+
+从main_loop到命令处理：
+
+1./common/main.c: main_loop
+
+2./common/cli.c: cli_loop
+
+3./common/cli_simple.c: cli_simple_loop
+
+4./common/cli.c: run_command_repeatable
+
+5./common/cli_simple.c: cli_simple_run_command
+
+6./common/cli_simple.c: cmd_process
+
+7./common/command.c: cmd_call
+
+上面的流程仅是主循环如何调用命令回调函数的过程。下面介绍一下命令是如何声明、存储和查询的。
+
+首先查看链接脚本，uboot使用的链接脚本文件名为u-boot.lds。根据cpu和board的不同，u-boot.lds也有所差异。例如Samsung exynos所用的u-boot.lds在arch\arm\cpu下。
+
+其中有个`.u_boot_list`段就是用来存储命令数据的。它的表述如下所示：
+
+{% highlight bash %}
+.u_boot_list : {
+		KEEP(*(SORT(.u_boot_list*)));
+	}
+{% endhighlight %}
+
+命令的声明，通常使用U_BOOT_CMD宏。这个宏最终展开为：
+
+{% highlight bash %}
+_type _u_boot_list_2_##_list##_2_##_name __aligned(4)		\
+		__attribute__((unused,				\
+		section(".u_boot_list_2_"#_list"_2_"#_name)))
+{% endhighlight %}
+
+这也就是`.u_boot_list*`的来历了。
+
+可以使用/common/command.c: find_cmd函数在命令列表中，根据名称查找命令数据。
+
+## setenv
+
+/common/cmd_nvedit.c: setenv--这个函数用于设置环境变量的值。它的原理是：
+
+1.首先在环境变量数组default_environment中，更改相应内容的值。
+
+2.然后调用saveenv，保存default_environment的值，到具体的硬件中。例如NAND设备的代码在/common/env_nand.c中。
+
+# Linux镜像文件
+
+## vmlinux
+
+这是源代码直接生成的镜像文件。以x86平台为例：
+
+arch\x86\kernel\vmlinux.lds.S--这是链接脚本的源代码，经过C语言的宏预处理之后会生成vmlinux.lds，使用这个脚本，链接即可得到vmlinux，其过程与普通应用程序并无太大区别，也就是个elf文件罢了。
+
+## image
+
+vmlinux使用objcopy处理之后，生成的不包含符号表的镜像文件。这是linux默认生成的结果。
+
+## zImage
+
+zImage = 使用gzip压缩后的image + GZip自解压代码。使用`make zImage`或者`make bzImage`创建。两者的区别是zImage只适用于大小在640KB以内的内核镜像。
+
+## uImage
+
+uImage = uImage header + zImage。使用uboot提供的mkimage工具创建。
+
+以上的这些镜像文件的关系可参见：
+
+http://www.cnblogs.com/armlinux/archive/2011/11/06/2396786.html
+
+http://www.linuxidc.com/Linux/2011-02/32096.htm
+
+## Flash镜像
+
+一般来说，一个完整的linux系统，不仅包括内核，还包括bootloader和若干分区。这些镜像文件散布，不利于批量生产的进行。这时就需要将之打包，并生成一个可直接用于生产烧写的Flash镜像。
+
+可使用mtd-utils库中的ubinize工具生成Flash镜像。
+
+mtd-utils的官网是：
+
+http://www.linux-mtd.infradead.org/
+
+安装方法：
+
+`sudo apt-get install mtd-utils`
+
+参考：
+
+http://blog.csdn.net/andy205214/article/details/7390287
+
+
+
+
 

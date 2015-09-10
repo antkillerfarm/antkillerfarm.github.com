@@ -256,3 +256,11 @@ http://www.cnblogs.com/zmkeil/archive/2013/04/17/3027385.html
 
 这篇文章的内容和我写的差不多，可惜没有早看到。。。多走了弯路。
 
+# OpenWrt编译系统
+
+## 大体结构
+
+OpenWrt编译系统由一系列makefile脚本组成。除了分散于各个文件夹的Makefile文件之外，在include文件夹下，还有很多.mk文件。这些.mk文件的作用有些类似于C语言的头文件。建议研究编译系统之前，先把这些.mk看一遍。
+
+
+

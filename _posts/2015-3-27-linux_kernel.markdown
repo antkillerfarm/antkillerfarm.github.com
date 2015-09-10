@@ -4,7 +4,7 @@ title:  linux内核研究
 category: technology 
 ---
 
-## 1.驱动开发
+# 驱动开发
 
 推荐读物《Beginning Linux Programming》，该书第3版已有中译本。
 
@@ -12,7 +12,7 @@ category: technology
 
 驱动开发的头文件可以在/usr/src下找到。
 
-## 2.永不返回的函数（never return function）
+# 永不返回的函数（never return function）
 
 了解C语言的人都知道一个函数的最后一个语句通常是return语句。编译器在处理返回语句时，除了将返回值保存起来之外，最重要的任务就是清理堆栈。具体来说，就是将参数以及局部变量从堆栈中弹出。然后再从堆栈中得到调用函数时的PC寄存器的值，并将其加一个指令的长度，从而得到下一条指令的地址。再将这个地址放入PC寄存器中，完成整个返回流程，接着程序就会继续执行下去了。
 
@@ -32,7 +32,7 @@ category: technology
 
 看到do_exit函数，可能熟悉Linux内核的朋友已经猜出永不返回的函数和普通函数有什么区别了。没错，do_exit函数是销毁进程的最后一步。由于进程已经销毁，从进程堆栈中获得下一条指令的地址就显得没有什么意义了。do_exit函数会调用schedule函数进行进程切换，从另一个进程的堆栈中获得相关寄存器的值，并恢复那个进程的执行。因此do_exit函数在正常情况下是不会返回的，一个调用了do_exit函数的函数，其位于do_exit函数之后的语句是不会执行到的。因此那个函数也成为了永不返回的函数。
 
-## 3.Linux链表实现
+# Linux链表实现
 
 数据结构课本上教链表的时候，一般是这样定义链表的数据结构的：
 
@@ -74,7 +74,7 @@ typedef struct {
 
 可以看出，这种实现方式对node在UserData中出现的位置也没有什么额外的要求，有很好的灵活性。
 
-## 4.linux源代码编译
+# Linux源代码编译
 
 1)按照一般的linux教程上的说法，编译的第一步，是配置内核的编译选项。这时有几种方式可以选择:从命令行方式的make config，到基于ncurse库的make menuconfig，再到基于qt的make xconfig和基于GTK+的make gconfig。这让我不得不感叹，即使是内核这样超底层的东西，居然也会用到GUI。Linus也不总是命令行的拥趸。
 
@@ -86,7 +86,7 @@ typedef struct {
 
 3）最后一步，是安装镜像，这一步由于比较有风险，我还没有实际操作。
 
-## 5.内核开发心得
+# 内核开发心得
 
 * 从最简单的内核模块做起
 
@@ -144,39 +144,9 @@ PS：/etc/modules由/etc/init/module-init-tools.conf 或 /etc/init/kmod.conf负�
 
 2.如果想要用类似`cat /proc/simple-vfs`的方式读取文件的话，就需要使用seq_open、seq_open、seq_release、seq_printf等一系列以seq开头的函数。具体的实现可以参照内核中dma.c的代码。
 
-## 6.从uboot到Linux
+# Uart驱动分析
 
-这里以uboot 2014年11月的主线代码为例分析从uboot到linux的全过程。之所以写这篇文章，是由于网上的资料多数都很陈旧，诸如start_armboot之类的函数在新的代码里根本找不到了。由于uboot支持的CPU以及Board非常的多，所以本文仅以Samsung exynos为例来介绍这个过程。
-
-从上电到uboot启动:
-
-1./arch/arm/cpu/armv7/start.S:reset——uboot的汇编入口
-
-2./arch/arm/lib/crt0.S:_main
-
-3./arch/arm/lib/board.c:board_init_f——初始化第一阶段
-
-4./arch/arm/lib/board.c:board_init_r——初始化第二阶段
-
-5./common/main.c: main_loop——uboot主循环
-
-uboot启动Linux
-
-1.uboot中有个bootd的命令选项,执行该命令会进入/common/cmd_bootm.c:do_bootd
-
-2.common/cli.c:run_command，传入bootcmd命令作为参数。
-
-3.common/cmd_bootm.c:do_bootm
-
-4.arch/arm/lib/bootm.c:do_bootm_linux
-
-5.arch/arm/lib/bootm.c:do_jump_linux——跳转到Linux内核的入口地址
-
-uImage格式是专为uboot开发的格式，主要解决了uboot和linux在嵌入式设备的存储上共存的问题。
-
-## Uart驱动分析
-
-### Write
+## Write
 
 1.与应用层的接口
 
@@ -202,7 +172,7 @@ uImage格式是专为uboot开发的格式，主要解决了uboot和linux在嵌�
 
 这里已经是具体的寄存器操作了。
 
-### Read
+## Read
 
 Read的过程要复杂一些，可分为上层调用部分和底层驱动部分。
 
@@ -240,11 +210,11 @@ Read的过程要复杂一些，可分为上层调用部分和底层驱动部分�
 
 3.do_select@select.c
 
-## 同步锁
+# 同步锁
 
 read-write lock、RCU lock、spin lock
 
-## 内核模块的参数
+# 内核模块的参数
 
 用户模块可以通过main函数传递命令行参数。而内核模块也有类似的用法：
 
@@ -252,7 +222,7 @@ read-write lock、RCU lock、spin lock
 
 为了使用这些参数的值，要在模块中声明变量来保存它们，并在所有函数之外的某个地方使用宏`MODULE_PARM(variable, type)`和`MODULE_PARM_DESC(variable, description)`来接收它们。
 
-## IO操作
+# IO操作
 
 readb 从 I/O 读取 8 位数据 ( 1 字节 )
 

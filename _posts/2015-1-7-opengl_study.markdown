@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenGL研究, GUI框架分析, 虚拟机比较, Win10历险记
+title:  OpenGL研究, GUI框架分析, 虚拟机比较, Win10历险记, WxWidget
 category: technology 
 ---
 
@@ -113,3 +113,16 @@ VMware由于是收费软件之故，因此用户的软件升级是个大问题�
 Win10给人的第一感觉，其实和Win8差不多，不过是加了个更像Win7的开始菜单而已。不过既来之则安之，一段时间用下来，总算还是要比Win7强不少的。
 
 又过了几天，公司的电脑也升级成功。正得意间，忽然发现VirtualBox在Win10下工作不正常。查了VirtualBox官网方知，其目前尚不支持Win10 Host。于是不得不重新降级到Win7。看来尝鲜也是有得有失的。对于工作用的电脑，有的时候够用就好，没必要什么都求新的。
+
+# WxWidget
+
+WxWidget在windows平台的安装包是个奇葩的东西，它并不是可执行文件的安装包，而是个源代码安装包。因此安装之后，还需要编译，才能使用。
+
+以MinGW编译为例，说一下编译的步骤：
+
+1.设置MinGW环境。这里需要强调的是MinGW和WxWidget的安装路径都不能有空格。
+
+2.进入build/msw文件夹，执行以下命令：
+
+`mingw32-make -f makefile.gcc BUILD=release SHARED=0 MONOLITHIC=1 UNICODE=1 CXXFLAGS=-fno-keep-inline-dllexport`
+
