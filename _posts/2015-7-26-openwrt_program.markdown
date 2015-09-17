@@ -178,13 +178,37 @@ _type _u_boot_list_2_##_list##_2_##_name __aligned(4)		\
 
 可以使用/common/command.c: find_cmd函数在命令列表中，根据名称查找命令数据。
 
-## setenv
+## 环境变量
 
 /common/cmd_nvedit.c: setenv--这个函数用于设置环境变量的值。它的原理是：
 
 1.首先在环境变量数组default_environment中，更改相应内容的值。
 
 2.然后调用saveenv，保存default_environment的值，到具体的硬件中。例如NAND设备的代码在/common/env_nand.c中。
+
+在linux内核层面也可以修改uboot的环境变量。通常的做法步骤如下：
+
+1.uboot代码中有个tools/env文件夹。编译改代码可以得到fw_printenv文件。编译的命令是：
+
+`make env`
+
+2.将fw_printenv放到linux系统的/usr/sbin路径下，并创建符号链接fw_setenv。此处的符号链接并不是可有可无的，这里有个编程小技巧：如何用同一个可执行文件执行不同的功能呢？
+
+除了最常用的使用参数区分的方法之外，还可以采用如下方法：
+
+`int main(int argc, char *argv[])`
+
+这是main函数的声明，其中argv是参数数组，而argv[0]是输入的命令本身，因此可以使用这个作为判断依据，来区分不同的用途。这时候符号链接也就派上用场了。
+
+## tftpsrv
+
+有些uboot提供了tftpsrv的功能，用于从网口传输文件（主要是烧写用的镜像文件）。
+
+该tftpsrv默认监听的ip地址保存在uboot的ip环境变量中。如果需要的话，可进行必要的修改并重启。
+
+客户端传输镜像文件时，需要采用二进制模式。命令如下：
+
+`tftp 10.3.9.161 -m binary -c put <file name>`
 
 # Linux镜像文件
 

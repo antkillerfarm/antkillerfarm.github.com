@@ -166,4 +166,22 @@ PTP协议相关的规范是IEEE1588:2008。其服务器实现有
 
 ptpd:http://ptpd.sourceforge.net/
 
+## 教程
+
+官方教程参见：
+
+http://docs.gstreamer.com/display/GstSDK/Tutorials
+
+这里还有一个更全的代码示例：
+
+https://github.com/rubenrua/GstreamerCodeSnippets
+
+以下是教程的学习心得。
+
+### basic-tutorial-1.c
+
+{% highlight c %}
+/* Build the pipeline */
+pipeline = gst_parse_launch ("playbin2 uri=http://docs.gstreamer.com/media/sintel_trailer-480p.webm", NULL);
+{% endhighlight %}
 

@@ -199,3 +199,23 @@ Ubuntu更新软件时的软件源配置文件是/etc/apt/sources.list。
 
 支持平台广泛，大多数Linux发行版都有对应的软件包。
 
+## tftp
+
+Ubuntu下面关于TFTP的程序，有三套：
+
+1.tftp和tftpd
+
+2.atftp和atftpd
+
+3.tftp-hpa和tftpd-hpa
+
+目前以tftp-hpa和tftpd-hpa最为流行。
+
+安装命令：
+
+`sudo apt-get install tftp-hpa tftpd-hpa`
+
+## 设置网卡eth0的IP地址和子网掩码
+
+`sudo ifconfig eth0 192.168.2.1 netmask 255.255.255.0`
+

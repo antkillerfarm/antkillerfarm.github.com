@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  linux内核原理篇
+title:  linux内核研究原理篇
 category: technology 
 ---
 
