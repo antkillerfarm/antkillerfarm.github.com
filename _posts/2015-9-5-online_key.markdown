@@ -185,3 +185,7 @@ https://github.com/rubenrua/GstreamerCodeSnippets
 pipeline = gst_parse_launch ("playbin2 uri=http://docs.gstreamer.com/media/sintel_trailer-480p.webm", NULL);
 {% endhighlight %}
 
+从这个教程可以看出，我们可以直接使用gst_parse_launch创建pipeline。
+
+
+

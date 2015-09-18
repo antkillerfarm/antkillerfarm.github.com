@@ -26,7 +26,7 @@ category: technology
 
 `make menuconfig`
 
-这个配置部分和linux内核的配置极为相似，只不过配置的内容相比内核多了很多。
+这个配置的界面和linux内核的配置极为相似，只不过配置的内容相比内核多了很多。这个命令主要用于配置openwrt模块，如果要配置linux内核的话，可以执行`make kernel_menuconfig`命令。
 
 5.编译
 
