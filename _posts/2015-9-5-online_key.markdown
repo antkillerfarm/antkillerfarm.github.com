@@ -62,26 +62,6 @@ F表示相关的算法。只有符合F算法的P和U，才能通过程序的验�
 
 2)1.x系列。2012年以来发布的版本系列，也是官方推荐的版本系列。只有英文的用户手册，但手册的内容与0.10.x相差不大，尽管API已经不再兼容旧版本。以下的描述以1.x系列为准。1.x系列被设计为可以和0.10.x系列在系统中共存，因此在同一台电脑上，同时安装0.10.x系列和1.x系列是完全没有冲突的。
 
-GStreamer本质上只是一个多媒体应用框架，具体的多媒体播放功能由插件来完成。
-
-http://gstreamer.freedesktop.org/documentation/plugins.html
-
-这个网页就是gstreamer的插件列表。表中列出的插件，分属4个不同的插件集：
-
-* gst-plugins-base。这类插件格式规范，维护的也很好。
-
-* gst-plugins-good。这类插件有高质量的代码（但格式未必规范），而且许可证也符合要求（LGPL或与LGPL兼容的许可证）。
-
-* gst-plugins-ugly。这类插件有高质量的代码，但许可证方面有问题。
-
-* gst-plugins-bad。这类插件尚不成熟，需要更多文档、测试和应用。
-
-插件安装方法，以gst-plugins-base为例。
-
-`sudo apt-get install gstreamer1.0-plugins-base`
-
-除了上面列出的插件之外，目前的做法，更倾向于使用ffmpeg作为后端编解码库，尤其是编解码更复杂的视频文件。因此在0.10.x时代，提供了gstreamer0.10-ffmpeg插件，而1.x时代，则有gstreamer1.0-libav提供对avcodec、avformat等ffmpeg库的支持。
-
 ## 开发环境搭建
 
 `sudo apt-get install libgstreamer1.0-dev`(1.x系列)
@@ -128,32 +108,6 @@ gst-launch：这个工具可以用于创建并运行GStreamer管道。下面是�
 
 需要注意的是上面的命令中，`!`两边都要留空格，不然命令会执行错误。
 
-## 万能插件
-
-GStreamer除了那些完成具体功能的插件以外，还有一些抽象的高级插件，如playbin插件。该插件使用了GStreamer的自动加载（Auto plugging）机制，可以自动根据媒体类型，选择不同的管道播放，相当于是个万能播放插件。对于GStreamer应用开发人员来说，是个相当好用的东西。
-
-playbin插件负责媒体播放的全过程，还有其他一些只负责某个步骤的全能插件：
-
-decodebin：解码插件。
-
-autoaudiosink：音频播放插件
-
-autovideosink：视频播放插件
-
-## 播放视频
-
-播放视频也可以使用playbin插件。这里主要存在以下几个问题：
-
-1）不支持0.10.x系列。由于视频解码主要由ffmpeg来实现，而在Ubuntu14.04以后，官方已经移除了gstreamer0.10-ffmpeg插件，因此很多视频流已经无法处理。
-
-2）xvimagesink错误问题。playbin插件默认使用autovideosink作为视频播放插件，而autovideosink优先使用xvimagesink插件。这个插件的优点是使用了硬件加速的功能，缺点是需要显卡驱动的支持。因此，无论在真实机器还是虚拟机上，都有显卡驱动不匹配，从而导致错误的问题。
-
-这时可以换个思路，自己构建播放视频的管道，其核心是使用ximagesink替代xvimagesink。ximagesink是一个兼容性较好的videosink，缺点是速度没有xvimagesink快。
-
-以下是一个播放视频文件的示例：
-
-`gst-launch-1.0 filesrc location=1.avi ! decodebin name=dmux dmux. ! queue ! audioconvert ! autoaudiosink dmux. ! queue ! videoconvert ! ximagesink`
-
 ## 多设备的网络时钟同步
 
 多个设备协同播放同一个媒体流的时候，设备之间存在着时钟同步的问题。针对这个问题，GStreamer提供了网络时钟同步的功能。
@@ -162,9 +116,9 @@ autovideosink：视频播放插件
 
 对于更精确的时钟同步，在GStreamer v1.6之后，还提供了GstPtpClock对象。这个对象仅提供了PTP协议的Client功能。
 
-PTP协议相关的规范是IEEE1588:2008。其服务器实现有
+PTP协议相关的规范是IEEE1588:2008。其服务器实现有：
 
-ptpd:http://ptpd.sourceforge.net/
+ptpd：http://ptpd.sourceforge.net/
 
 ## 教程
 
@@ -176,7 +130,7 @@ http://docs.gstreamer.com/display/GstSDK/Tutorials
 
 https://github.com/rubenrua/GstreamerCodeSnippets
 
-以下是教程的学习心得。
+以下是教程的一些细节的学习心得。
 
 ### basic-tutorial-1.c
 
@@ -187,5 +141,26 @@ pipeline = gst_parse_launch ("playbin2 uri=http://docs.gstreamer.com/media/sinte
 
 从这个教程可以看出，我们可以直接使用gst_parse_launch创建pipeline。
 
+### basic-tutorial-7.c
 
+{% highlight c %}
+tee_src_pad_template = gst_element_class_get_pad_template (GST_ELEMENT_GET_CLASS (tee), "src%d");
+{% endhighlight %}
 
+这是代码的其中一段，这里只谈谈`src%d`是怎么来的。使用gst-inspect工具查询tee插件的信息，得到如下内容：
+
+{% highlight bash %}
+Pad Templates:
+  SRC template: 'src%d'
+    Availability: On request
+      Has request_new_pad() function: gst_tee_request_new_pad
+    Capabilities:
+      ANY
+
+  SINK template: 'sink'
+    Availability: Always
+    Capabilities:
+      ANY
+{% endhighlight %}
+
+从中可知，tee插件SRC Pad的模板名就是`src%d`。
