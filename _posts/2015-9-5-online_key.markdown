@@ -164,3 +164,61 @@ Pad Templates:
 {% endhighlight %}
 
 从中可知，tee插件SRC Pad的模板名就是`src%d`。
+
+# GStreamer的Python开发教程
+
+## Step 0
+
+教程的起点——helloworld。这是一个最基本的GStreamer播放器的例子，使用GTK作为GUI工具。
+
+代码参见：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/python-gst-player-example.py
+
+这个例子不能直接运行，需要根据具体情况，略作修改，修改的地方如下：
+
+1）self.uri存放用于播放的媒体文件的URI，注意这里是URI，而不是普通的路径，如果要指定本地文件的话，需要使用`file://`。
+
+2)出错的时候，先用`gst-inspect`检查一下，相应的插件是否安装好了。
+
+## Step 1
+
+在这一步中，我们给播放器添加了暂停和进度条控制的功能。
+
+代码参见：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/gstreamer/step1/my-gst-player.py
+
+## Step 2
+
+在这一步中，我们的修改如下：
+
+1.添加了快进和慢进的功能。
+
+2.使用gst_parse_launch创建pipeline。该pipeline可以播放视频文件。
+
+代码参见：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/gstreamer/step2/my-gst-player.py
+
+## Step 3
+
+在这一步中，我们使用一般的GStreamer函数构建和Step 2相同的pipeline。
+
+代码参见：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/gstreamer/step3/my-gst-player.py
+
+这里需要注意以下几点：
+
+1.随机Pad只能用pad-add消息回调的方式添加。
+
+2.以下代码片段在这里都可用，尽管不完全等效，请注意用法和差别：
+
+{% highlight python %}
+new_pad_type = new_pad.get_current_caps().get_structure(0).get_name()
+new_pad_type = new_pad.query_caps(None).to_string()
+{% endhighlight %}
+
+从这里也可以看出，gst_parse_launch会自动处理媒体流的格式匹配问题，而使用普通函数的时候，必须自己编程处理格式匹配的问题。
+
