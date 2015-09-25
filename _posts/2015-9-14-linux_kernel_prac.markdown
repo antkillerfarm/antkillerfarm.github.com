@@ -147,3 +147,30 @@ Read的过程要复杂一些，可分为上层调用部分和底层驱动部分�
 2.core_sys_select@select.c
 
 3.do_select@select.c
+
+# I2C的GPIO实现
+
+## Write
+
+drivers/i2c/i2c-dev.c: i2cdev_write
+
+drivers/i2c/i2c-core.c: i2c_master_send
+
+drivers/i2c/i2c-core.c: i2c_transfer
+
+drivers/i2c/i2c-core.c: __i2c_transfer
+
+这里会调用i2c_adapter结构的algo->master_xfer函数。具体到i2c-gpio就是：
+
+drivers/i2c/algos/i2c-algo-bit.c: bit_xfer
+
+drivers/i2c/algos/i2c-algo-bit.c: sendbytes -- 发送字节
+
+drivers/i2c/algos/i2c-algo-bit.c: i2c_outb -- 发送bit
+
+以下以SDA线的操作为例。这里调用i2c_algo_bit_data结构的setsda函数。具体到i2c-gpio就是：
+
+drivers/i2c/busses/i2c-gpio.c: i2c_gpio_setsda_val
+
+再以下就是具体的GPIO寄存器操作了。
+
