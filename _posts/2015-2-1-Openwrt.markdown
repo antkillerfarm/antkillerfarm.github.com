@@ -322,3 +322,49 @@ lo：虚拟设备，自身的回环网设备。
 
 ra0 rai0：无线设备，它们各自对应一个SSID，分别是2.4G和5G。
 
+# procd
+
+procd是OpenWrt中很重要的一个守护进程。它的作用主要有：
+
+1)初始化系统。相当于普通linux的init。
+
+2)硬件热插拔事件处理、看门狗。相当于普通linux的udev和watchdog。
+
+3)日志系统。相当于普通linux的rsyslog。
+
+## procd的引导过程
+
+init/main.c: start_kernel --Linux的启动入口
+
+init/main.c: rest_init
+
+init/main.c: kenrel_init
+
+执行/etc/preinit脚本
+
+/sbin/init -- 该程序的源代码在procd包中。
+
+initd/init.c: main -- /sbin/init的主函数
+
+initd/preinit.c: preinit
+
+这个函数中有以下代码片段：
+
+`char *plug[] = { "/sbin/procd", "-h", "/etc/hotplug-preinit.json", NULL };`
+
+再之后，就开始procd的执行了。
+
+参考文献：
+
+http://m.blog.csdn.net/blog/wwx0715/41725917
+
+http://blog.chinaunix.net/uid-26598889-id-3060545.html
+
+## 开启procd的debug信息
+
+procd本身已经有很多debug信息，只是一般不打印而已。可以将上面的代码片段修改一下，以打开debug信息：
+
+`char *plug[] = { "/sbin/procd", "-d", "3","-h", "/etc/hotplug-preinit.json", NULL };`
+
+其中的3是debug level，取值范围0～4。0表示不输出，数字越大，输出的信息越多。
+
