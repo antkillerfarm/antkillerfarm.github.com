@@ -368,3 +368,43 @@ procd本身已经有很多debug信息，只是一般不打印而已。可以将�
 
 其中的3是debug level，取值范围0～4。0表示不输出，数字越大，输出的信息越多。
 
+## procd对硬件热插拔事件的处理流程
+
+1)/etc/hotplug.json
+
+这个文件的格式，大致如下：
+
+{% highlight bash %}
+[
+	[ "case", "ACTION", {
+		"add": [
+			[ "if",
+				[ "has", "FIRMWARE" ],
+				[
+					[ "exec", "/sbin/hotplug-call", "%SUBSYSTEM%" ],
+					[ "load-firmware", "/lib/firmware" ],
+					[ "return" ]
+				]
+			],
+		],
+		"remove" : [
+			[ "if",
+				[ "and",
+					[ "has", "DEVNAME" ],
+					[ "has", "MAJOR" ],
+					[ "has", "MINOR" ],
+				],
+				[ "rm", "/dev/%DEVNAME%" ]
+			]
+		]
+	} ],
+	[ "if",
+		[ "eq", "SUBSYSTEM", "platform" ],
+		[ "exec", "/sbin/hotplug-call", "%SUBSYSTEM%" ]
+	],
+]
+{% endhighlight %}
+
+从代码可以看出，这个文件是个披着json外皮的程序文件，其关键字和C语言类似，而结构风格则类似Lisp语言：在表达式的组合上，广泛使用了逆波兰表达式。
+
+这里的两个ACTION：add和remove，分别对应硬件设备的插消息和拔消息。
