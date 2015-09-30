@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenWrt编程篇, uboot, Linux镜像文件
+title:  OpenWrt编程篇, uboot
 category: technology 
 ---
 
@@ -210,51 +210,121 @@ _type _u_boot_list_2_##_list##_2_##_name __aligned(4)		\
 
 `tftp 10.3.9.161 -m binary -c put <file name>`
 
-# Linux镜像文件
+# procd
 
-## vmlinux
+procd是OpenWrt中很重要的一个守护进程。它的作用主要有：
 
-这是源代码直接生成的镜像文件。以x86平台为例：
+1)初始化系统。相当于普通linux的init。
 
-arch\x86\kernel\vmlinux.lds.S--这是链接脚本的源代码，经过C语言的宏预处理之后会生成vmlinux.lds，使用这个脚本，链接即可得到vmlinux，其过程与普通应用程序并无太大区别，也就是个elf文件罢了。
+2)硬件热插拔事件处理、看门狗。相当于普通linux的udev和watchdog。
 
-## image
+3)日志系统。相当于普通linux的rsyslog。
 
-vmlinux使用objcopy处理之后，生成的不包含符号表的镜像文件。这是linux默认生成的结果。
+## procd的引导过程
 
-## zImage
+init/main.c: start_kernel --Linux的启动入口
 
-zImage = 使用gzip压缩后的image + GZip自解压代码。使用`make zImage`或者`make bzImage`创建。两者的区别是zImage只适用于大小在640KB以内的内核镜像。
+init/main.c: rest_init
 
-## uImage
+init/main.c: kenrel_init
 
-uImage = uImage header + zImage。使用uboot提供的mkimage工具创建。
+执行/etc/preinit脚本
 
-以上的这些镜像文件的关系可参见：
+/sbin/init -- 该程序的源代码在procd包中。
 
-http://www.cnblogs.com/armlinux/archive/2011/11/06/2396786.html
+initd/init.c: main -- /sbin/init的主函数
 
-http://www.linuxidc.com/Linux/2011-02/32096.htm
+initd/preinit.c: preinit
 
-## Flash镜像
+这个函数中有以下代码片段：
 
-一般来说，一个完整的linux系统，不仅包括内核，还包括bootloader和若干分区。这些镜像文件散布，不利于批量生产的进行。这时就需要将之打包，并生成一个可直接用于生产烧写的Flash镜像。
+`char *plug[] = { "/sbin/procd", "-h", "/etc/hotplug-preinit.json", NULL };`
 
-可使用mtd-utils库中的ubinize工具生成Flash镜像。
+再之后，就开始procd的执行了。
 
-mtd-utils的官网是：
+参考文献：
 
-http://www.linux-mtd.infradead.org/
+http://m.blog.csdn.net/blog/wwx0715/41725917
 
-安装方法：
+http://blog.chinaunix.net/uid-26598889-id-3060545.html
 
-`sudo apt-get install mtd-utils`
+## 开启procd的debug信息
 
-参考：
+procd本身已经有很多debug信息，只是一般不打印而已。启动时，终端会提示你输入procd的debug level，取值范围0～4。0表示不输出，数字越大，输出的信息越多。
 
-http://blog.csdn.net/andy205214/article/details/7390287
+## procd对硬件热插拔事件的处理流程
 
+1)/etc/hotplug.json
 
+这个文件的格式，大致如下：
 
+{% highlight json %}
+[
+	[ "case", "ACTION", {
+		"add": [
+			[ "if",
+				[ "has", "FIRMWARE" ],
+				[
+					[ "exec", "/sbin/hotplug-call", "%SUBSYSTEM%" ],
+					[ "load-firmware", "/lib/firmware" ],
+					[ "return" ]
+				]
+			],
+		],
+		"remove" : [
+			[ "if",
+				[ "and",
+					[ "has", "DEVNAME" ],
+					[ "has", "MAJOR" ],
+					[ "has", "MINOR" ],
+				],
+				[ "rm", "/dev/%DEVNAME%" ]
+			]
+		]
+	} ],
+	[ "if",
+		[ "and",
+			[ "eq", "SUBSYSTEM", "usb-serial" ],
+			[ "regex", "DEVNAME",
+				[ "^ttyUSB", "^ttyACM" ]
+			],
+		],
+		[ "exec", "/sbin/hotplug-call", "tty" ]
+	],
+]
+{% endhighlight %}
 
+从代码可以看出，这个文件是个披着json外皮的程序文件，其关键字和C语言类似，而结构风格则类似Lisp语言：在表达式的组合上，广泛使用了逆波兰表达式。
 
+这里的两个ACTION：add和remove，分别对应硬件设备的插消息和拔消息。简单的消息处理命令，可以直接写在这个文件中。复杂的需要交给/sbin/hotplug-call来处理。
+
+以下面的代码片段为例：
+
+`[ "exec", "/sbin/hotplug-call", "tty" ]`
+
+hotplug-call会遍历/etc/hotplug.d/tty文件夹。该文件夹中的脚本，一般以NN_XXX的方式命名。其中的NN为数字。hotplug-call会按照NN的大小，从小到大依次执行文件夹中的所有脚本。
+
+## U盘的热插拔处理
+
+U盘驱动可分为两个层次：
+
+1.USB设备驱动。这个的配置选项在linux内核中。
+
+2.文件系统驱动。这个的配置选项在OpenWrt中，一般选择支持VFAT和NTFS即可。
+
+以下是U盘插入时，生成的事件的procd日志：
+
+{% highlight json %}
+{{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1","SUBSYSTEM":"usb","MAJOR":"189","MINOR":"3","DEVNAME":"bus/usb/001/004","DEVTYPE":"usb_device","PRODUCT":"c76/5/100","TYPE":"0/0/0","BUSNUM":"001","DEVNUM":"004","SEQNUM":"466"}}
+{{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0","SUBSYSTEM":"usb","DEVTYPE":"usb_interface","PRODUCT":"c76/5/100","TYPE":"0/0/0","INTERFACE":"8/6/80","MODALIAS":"usb:v0C76p0005d0100dc00dsc00dp00ic08isc06ip50in00","SEQNUM":"467"}}
+{{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0/host0","SUBSYSTEM":"scsi","DEVTYPE":"scsi_host","SEQNUM":"468"}}
+{{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0/host0/scsi_host/host0","SUBSYSTEM":"scsi_host","SEQNUM":"469"}}
+{{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0/host0/target0:0:0","SUBSYSTEM":"scsi","DEVTYPE":"scsi_target","SEQNUM":
+"470"}}
+{{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0/host0/target0:0:0/0:0:0:0","SUBSYSTEM":"scsi","DEVTYPE":"scsi_device","MODALIAS":"scsi:t-0x00","SEQNUM":"471"}}
+{{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0/host0/target0:0:0/0:0:0:0/scsi_disk/0:0:0:0","SUBSYSTEM":"scsi_disk","SEQNUM":"472"}}
+{{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0/host0/target0:0:0/0:0:0:0/scsi_device/0:0:0:0","SUBSYSTEM":"scsi_device","SEQNUM":"473"}}
+{{"ACTION":"add","DEVPATH":"/devices/virtual/bdi/8:0","SUBSYSTEM":"bdi","SEQNUM":"474"}}
+{{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0/host0/target0:0:0/0:0:0:0/block/sda","SUBSYSTEM":"block","MAJOR":"8","MINOR":"0","DEVNAME":"sda","DEVTYPE":"disk","SEQNUM":"475"}}
+{{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0/host0/target0:0:0/0:0:0:0/block/sda/sda1","SUBSYSTEM":"block","MAJOR":"8","MINOR":"1","DEVNAME":"sda1","DEVTYPE":"partition","SEQNUM":"476"}}
+{% endhighlight %}
