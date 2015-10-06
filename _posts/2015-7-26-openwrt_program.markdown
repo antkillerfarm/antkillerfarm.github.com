@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenWrt编程篇, uboot
+title:  OpenWrt编程篇
 category: technology 
 ---
 
@@ -103,112 +103,6 @@ __sync_fetch_and_add_8实际上是和CPU原子操作有关的函数，在PC上�
 找了一下，发现libz.so.1在zlib-bin包中，岂料安装zlib-bin之后，问题依旧。
 
 最后才发现这个工具链是32位的程序，相应的libz.so.1实际上在lib32z1-dev包中。因此遇到类似的问题时，可以先注意一下程序的位数是否匹配。
-
-# uboot
-
-## 从uboot到Linux
-
-这里以uboot 2014年11月的主线代码为例分析从uboot到linux的全过程。之所以写这篇文章，是由于网上的资料多数都很陈旧，诸如start_armboot之类的函数在新的代码里根本找不到了。由于uboot支持的CPU以及Board非常的多，所以本文仅以Samsung exynos为例来介绍这个过程。
-
-从上电到uboot启动:
-
-1./arch/arm/cpu/armv7/start.S: reset——uboot的汇编入口
-
-2./arch/arm/lib/crt0.S: _main
-
-3./arch/arm/lib/board.c: board_init_f——初始化第一阶段
-
-4./arch/arm/lib/board.c: board_init_r——初始化第二阶段
-
-5./common/main.c: main_loop——uboot主循环
-
-uboot启动Linux
-
-1.uboot中有个bootd的命令选项,执行该命令会进入/common/cmd_bootm.c: do_bootd
-
-2.common/cli.c: run_command，传入bootcmd命令作为参数。
-
-3.common/cmd_bootm.c: do_bootm
-
-4.arch/arm/lib/bootm.c: do_bootm_linux
-
-5.arch/arm/lib/bootm.c: do_jump_linux——跳转到Linux内核的入口地址
-
-uImage格式是专为uboot开发的格式，主要解决了uboot和linux在嵌入式设备的存储上共存的问题。
-
-## uboot命令处理流程
-
-从main_loop到命令处理：
-
-1./common/main.c: main_loop
-
-2./common/cli.c: cli_loop
-
-3./common/cli_simple.c: cli_simple_loop
-
-4./common/cli.c: run_command_repeatable
-
-5./common/cli_simple.c: cli_simple_run_command
-
-6./common/cli_simple.c: cmd_process
-
-7./common/command.c: cmd_call
-
-上面的流程仅是主循环如何调用命令回调函数的过程。下面介绍一下命令是如何声明、存储和查询的。
-
-首先查看链接脚本，uboot使用的链接脚本文件名为u-boot.lds。根据cpu和board的不同，u-boot.lds也有所差异。例如Samsung exynos所用的u-boot.lds在arch\arm\cpu下。
-
-其中有个`.u_boot_list`段就是用来存储命令数据的。它的表述如下所示：
-
-{% highlight bash %}
-.u_boot_list : {
-		KEEP(*(SORT(.u_boot_list*)));
-	}
-{% endhighlight %}
-
-命令的声明，通常使用U_BOOT_CMD宏。这个宏最终展开为：
-
-{% highlight bash %}
-_type _u_boot_list_2_##_list##_2_##_name __aligned(4)		\
-		__attribute__((unused,				\
-		section(".u_boot_list_2_"#_list"_2_"#_name)))
-{% endhighlight %}
-
-这也就是`.u_boot_list*`的来历了。
-
-可以使用/common/command.c: find_cmd函数在命令列表中，根据名称查找命令数据。
-
-## 环境变量
-
-/common/cmd_nvedit.c: setenv--这个函数用于设置环境变量的值。它的原理是：
-
-1.首先在环境变量数组default_environment中，更改相应内容的值。
-
-2.然后调用saveenv，保存default_environment的值，到具体的硬件中。例如NAND设备的代码在/common/env_nand.c中。
-
-在linux内核层面也可以修改uboot的环境变量。通常的做法步骤如下：
-
-1.uboot代码中有个tools/env文件夹。编译改代码可以得到fw_printenv文件。编译的命令是：
-
-`make env`
-
-2.将fw_printenv放到linux系统的/usr/sbin路径下，并创建符号链接fw_setenv。此处的符号链接并不是可有可无的，这里有个编程小技巧：如何用同一个可执行文件执行不同的功能呢？
-
-除了最常用的使用参数区分的方法之外，还可以采用如下方法：
-
-`int main(int argc, char *argv[])`
-
-这是main函数的声明，其中argv是参数数组，而argv[0]是输入的命令本身，因此可以使用这个作为判断依据，来区分不同的用途。这时候符号链接也就派上用场了。
-
-## tftpsrv
-
-有些uboot提供了tftpsrv的功能，用于从网口传输文件（主要是烧写用的镜像文件）。
-
-该tftpsrv默认监听的ip地址保存在uboot的ip环境变量中。如果需要的话，可进行必要的修改并重启。
-
-客户端传输镜像文件时，需要采用二进制模式。命令如下：
-
-`tftp 10.3.9.161 -m binary -c put <file name>`
 
 # procd
 
@@ -314,17 +208,24 @@ U盘驱动可分为两个层次：
 
 以下是U盘插入时，生成的事件的procd日志：
 
-{% highlight json %}
-{{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1","SUBSYSTEM":"usb","MAJOR":"189","MINOR":"3","DEVNAME":"bus/usb/001/004","DEVTYPE":"usb_device","PRODUCT":"c76/5/100","TYPE":"0/0/0","BUSNUM":"001","DEVNUM":"004","SEQNUM":"466"}}
-{{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0","SUBSYSTEM":"usb","DEVTYPE":"usb_interface","PRODUCT":"c76/5/100","TYPE":"0/0/0","INTERFACE":"8/6/80","MODALIAS":"usb:v0C76p0005d0100dc00dsc00dp00ic08isc06ip50in00","SEQNUM":"467"}}
-{{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0/host0","SUBSYSTEM":"scsi","DEVTYPE":"scsi_host","SEQNUM":"468"}}
-{{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0/host0/scsi_host/host0","SUBSYSTEM":"scsi_host","SEQNUM":"469"}}
-{{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0/host0/target0:0:0","SUBSYSTEM":"scsi","DEVTYPE":"scsi_target","SEQNUM":
-"470"}}
-{{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0/host0/target0:0:0/0:0:0:0","SUBSYSTEM":"scsi","DEVTYPE":"scsi_device","MODALIAS":"scsi:t-0x00","SEQNUM":"471"}}
-{{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0/host0/target0:0:0/0:0:0:0/scsi_disk/0:0:0:0","SUBSYSTEM":"scsi_disk","SEQNUM":"472"}}
-{{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0/host0/target0:0:0/0:0:0:0/scsi_device/0:0:0:0","SUBSYSTEM":"scsi_device","SEQNUM":"473"}}
-{{"ACTION":"add","DEVPATH":"/devices/virtual/bdi/8:0","SUBSYSTEM":"bdi","SEQNUM":"474"}}
-{{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0/host0/target0:0:0/0:0:0:0/block/sda","SUBSYSTEM":"block","MAJOR":"8","MINOR":"0","DEVNAME":"sda","DEVTYPE":"disk","SEQNUM":"475"}}
-{{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0/host0/target0:0:0/0:0:0:0/block/sda/sda1","SUBSYSTEM":"block","MAJOR":"8","MINOR":"1","DEVNAME":"sda1","DEVTYPE":"partition","SEQNUM":"476"}}
+{% highlight c %}
+{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1","SUBSYSTEM":"usb","MAJOR":"189","MINOR":"3","DEVNAME":"bus/usb/001/004","DEVTYPE":"usb_device","PRODUCT":"c76/5/100","TYPE":"0/0/0","BUSNUM":"001","DEVNUM":"004","SEQNUM":"466"}
+{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0","SUBSYSTEM":"usb","DEVTYPE":"usb_interface","PRODUCT":"c76/5/100","TYPE":"0/0/0","INTERFACE":"8/6/80","MODALIAS":"usb:v0C76p0005d0100dc00dsc00dp00ic08isc06ip50in00","SEQNUM":"467"}
+{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0/host0","SUBSYSTEM":"scsi","DEVTYPE":"scsi_host","SEQNUM":"468"}
+{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0/host0/scsi_host/host0","SUBSYSTEM":"scsi_host","SEQNUM":"469"}
+{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0/host0/target0:0:0","SUBSYSTEM":"scsi","DEVTYPE":"scsi_target","SEQNUM":
+"470"}
+{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0/host0/target0:0:0/0:0:0:0","SUBSYSTEM":"scsi","DEVTYPE":"scsi_device","MODALIAS":"scsi:t-0x00","SEQNUM":"471"}
+{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0/host0/target0:0:0/0:0:0:0/scsi_disk/0:0:0:0","SUBSYSTEM":"scsi_disk","SEQNUM":"472"}
+{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0/host0/target0:0:0/0:0:0:0/scsi_device/0:0:0:0","SUBSYSTEM":"scsi_device","SEQNUM":"473"}
+{"ACTION":"add","DEVPATH":"/devices/virtual/bdi/8:0","SUBSYSTEM":"bdi","SEQNUM":"474"}
+{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0/host0/target0:0:0/0:0:0:0/block/sda","SUBSYSTEM":"block","MAJOR":"8","MINOR":"0","DEVNAME":"sda","DEVTYPE":"disk","SEQNUM":"475"}
+{"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0/host0/target0:0:0/0:0:0:0/block/sda/sda1","SUBSYSTEM":"block","MAJOR":"8","MINOR":"1","DEVNAME":"sda1","DEVTYPE":"partition","SEQNUM":"476"}
 {% endhighlight %}
+
+从上面的内容可以看出：
+
+1.驱动的加载是有层次的。例如U盘驱动至少包括USB->SCSI->disk->partition这几个大的阶段。
+
+2.上面提到的脚本，可以接收诸如ACTION、DEVPATH之类的环境变量。
+
