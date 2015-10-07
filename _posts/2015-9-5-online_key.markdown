@@ -122,7 +122,19 @@ ptpd：http://ptpd.sourceforge.net/
 
 ## 教程
 
-官方教程参见：
+官方开发指南参见：
+
+http://gstreamer.freedesktop.org/data/doc/gstreamer/head/manual/html/index.html
+
+这是应用开发指南。
+
+http://gstreamer.freedesktop.org/data/doc/gstreamer/head/pwg/html/index.html
+
+这是插件开发指南。
+
+这两本书是最基础的教程，尤其是前者。建议首先通读一遍，然后再进行具体的编程实践。不然，你可能连基本的概念和术语都不清楚。这两个指南都已有中文版，尽管比较老，是针对0.10.x系列的。
+
+官方入门代码教程参见：
 
 http://docs.gstreamer.com/display/GstSDK/Tutorials
 
