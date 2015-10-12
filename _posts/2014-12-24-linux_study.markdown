@@ -146,7 +146,7 @@ printf("%ls",L"b\n");
 
 \v——vertical tab
 
-## 9.lex&yacc （2014.2）
+## lex&yacc （2014.2）
 
 * 前言
 
@@ -195,7 +195,7 @@ stmt_list:
 
 为什么要添加这一句呢？因为yacc在处理被解析的文本时，如果文本不能最终归结为一个单一的语法目标的时候，程序也会报错。
 
-## 10.pkg-config
+## pkg-config
 
 一般来说，如果库的头文件不在/usr/include目录中，那么在编译的时候需要用-I参数指定其路径。由于同一个库在不同系统上可能位于不同的目录下，用户安装库的时候也可以将库安装在不同的目录下，所以即使使用同一个库，由于库的路径的不同，造成了用-I参数指定的头文件的路径和在连接时使用-L参数指定lib库的路径都可能不同，其结果就是造成了编译命令界面的不统一。可能由于编译，连接的不一致，造成同一份程序从一台机器copy到另一台机器时就可能会出现问题。
 
@@ -207,3 +207,8 @@ pkg-config 就是用来解决编译连接界面不统一问题的一个工具。
 
 http://www.mike.org.cn/articles/description-configure-pkg-config-pkg_config_path-of-the-relations-between/
 
+## 二进制文件与ASCII、Base64之间的转换
+
+xxd：这个命令可以将二进制文件转换成ASCII码表示文本文件。支持2、8、16等多种进制的ASCII表示形式，还支持输出成C语言格式的数组声明。反过来的转换也同样支持。
+
+uuencode and uudecode：支持二进制文件与Base64之间的转换。
