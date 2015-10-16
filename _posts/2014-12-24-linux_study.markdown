@@ -212,3 +212,27 @@ http://www.mike.org.cn/articles/description-configure-pkg-config-pkg_config_path
 xxd：这个命令可以将二进制文件转换成ASCII码表示文本文件。支持2、8、16等多种进制的ASCII表示形式，还支持输出成C语言格式的数组声明。反过来的转换也同样支持。
 
 uuencode and uudecode：支持二进制文件与Base64之间的转换。
+
+## start-stop-daemon
+
+该命令用于启动和停止系统守护程序。
+
+## popen
+
+popen()函数通过创建一个管道，调用fork 产生一个子进程，执行一个shell以运行命令来开启一个进程。也就是说这个函数可以执行shell命令，而且还可以用fread或fgets来获取命令执行后的输出结果。
+
+例子如下：
+
+{% highlight c %}
+int8_t strcmd[256];
+memset(strcmd, 0 , sizeof(strcmd));
+sprintf(strcmd, "cat /etc/resolv.conf | awk '{printf $2}'");
+pfile = popen(strcmd, "r");
+if (pfile != NULL){
+	int8_t str[64];
+	bzero(str, sizeof(str));
+	fgets(str, sizeof(str), pfile);
+	pclose(pfile);
+}
+{% endhighlight %}
+

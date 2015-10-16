@@ -229,3 +229,9 @@ U盘驱动可分为两个层次：
 
 2.上面提到的脚本，可以接收诸如ACTION、DEVPATH之类的环境变量。
 
+# OpenWrt问题汇总
+
+## ip not found
+
+ip命令是linux网络管理方面的命令，它的代码在iproute2包中。
+

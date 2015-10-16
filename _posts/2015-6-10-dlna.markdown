@@ -234,6 +234,10 @@ http://patchwork.openwrt.org/
 
 `/etc/init.d/minidlna start`
 
+3）修改图标
+
+图标数据在icons.c中。可用xxd命令转换png或者jpg文件为C的字节数组。
+
 2.gmediarender
 
 修改参见：
