@@ -229,6 +229,12 @@ U盘驱动可分为两个层次：
 
 2.上面提到的脚本，可以接收诸如ACTION、DEVPATH之类的环境变量。
 
+# Openwrt 3G拨号上网
+
+参见：
+
+http://blog.csdn.net/yicao821/article/details/45370669
+
 # OpenWrt问题汇总
 
 ## ip not found
