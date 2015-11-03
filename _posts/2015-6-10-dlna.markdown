@@ -300,6 +300,10 @@ aplay -D plug:dmix_44k /mnt/nfs/test2.wav`
 
 `amixer set Line 10`
 
+列出可用的ALSA设备
+
+`aplay -L`
+
 ## ALSA System on Chip (ASoC) layer
 
 这是专为嵌入式设备设计的ALSA框架。官网是：
