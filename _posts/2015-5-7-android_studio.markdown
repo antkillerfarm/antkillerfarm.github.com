@@ -209,3 +209,7 @@ https://android-git.linaro.org/git/
 
 推荐使用中科大的源，作为清华的替代品。
 
+## Android上的PC模拟器
+
+Exagear、Winulator等，可以用来玩PC老游戏。
+

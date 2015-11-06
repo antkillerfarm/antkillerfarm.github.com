@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  浮点运算和代码优化, Mac OS X
+title:  浮点运算和代码优化, 音频常识
 category: technology 
 ---
 
@@ -122,20 +122,60 @@ void main()
 }
 {% endhighlight %}
 
-# Mac OS X
+# 音频常识
 
-最近对iOS开发产生了兴趣，于是准备在PC上搭建一个iOS的开发环境。
+## IIS
 
-首先，我搜了一下在Linux上搭建相关环境的方法，搜到了一些结果。但历史比较老，基本都是3、4年前的东西，就算搭好，也不见得有什么用。
+亦称I2S。Inter—IC Sound总线是飞利浦公司为数字音频设备之间的音频数据传输而制定的一种总线标准，该总线专责于音频设备之间的数据传输，广泛应用于各种多媒体系统。
 
-于是，目标改为在PC上使用Virtual Box搭建Mac OS X虚拟机。目标版本为Mac OS X 10.10。
+## 各种编解码算法比较
 
-1.下载镜像文件。
+http://www.rosoo.net/a/201012/10600.html
 
-镜像文件主要有dmg和iso两种。前者必须在Mac OS X中才能执行，而后者和其他OS镜像差别不大。
+这个帖子比较了ITU提出的G系列的各种语音编解码方案。
 
-2.boot
+![](/images/article/audio.png)
 
-原版镜像由于Apple的硬件检测机制，并不能在PC上运行。这时就需要破解，这一步一般是在boot中做的。
+上图是各种音频编解码框架的比较图。
 
-可用的boot工具，早期有empireEFI、HackBoot。较新的有chameleon、Niresh。
+其中narrowband是指频率在4kHz以下的声音信号，一般情况下，人的说话声就位于这个频率范围内，因此又被称为“语音”。
+
+allband是指频率在24kHz以下的声音信号。这也是人耳所能听到的频率范围。这个范围内的声音统称“音频”。
+
+介于两者之间的，被称为wideband。
+
+## 声道
+
+声道一般表示为X.Y的形式，其中X为高音音箱的个数，Y为低音音箱的个数。比如常见的2.1声道，就是左音箱、右音箱+低音音箱（俗称低音炮）。
+
+一般来说，Y的值为0或1。而X的值，有以下几种：
+
+1.X=1。单声道
+
+2.X=2。左、右。
+
+3.X=4。前左、前右，后左、后右。
+
+4.X=5。前左、前右，后左、后右、中置。
+
+5.X=7。前左、前右，后左、后右、中置、中左、中右。
+
+## 数字功放
+
+![](/images/article/tas5731_2_1.png)
+
+上图是TI TAS5731M的2.1声道应用图。
+
+其中的SE，表示单端连接模式（Single-End），和桥接式负载 BTL（Bridge-Tied-Load）相对应。后者在同等供电电压和负载的情况下，可以提供4倍于SE的输出功率，并具有良好的低频响应，常用于连接低音音箱。
+
+![](/images/article/digital_audio.png)
+
+这是TI TAS5731M数字音频的处理流程，其中上两路是高音声道，最下面一路是低音声道。
+
+## ALSA System on Chip (ASoC) layer
+
+这是专为嵌入式设备设计的ALSA框架。官网是：
+
+http://www.alsa-project.org/main/index.php/ASoC
+
+![](/images/article/dm81xx_asoc_architecture.png)

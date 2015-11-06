@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Zigbee音频 & 6LowPAN & IEEE 802
+title:  Zigbee音频, 6LowPAN, IEEE 802, Mac OS X
 category: technology 
 ---
 
@@ -87,28 +87,6 @@ http://opus-codec.org/
 http://www.itu.int/rec/T-REC-G.191-201003-I/en
 
 ITU官网上的工具包，包含了G.711和G.726算法。
-
-# 音频知识科普
-
-## IIS
-
-亦称I2S。Inter—IC Sound总线是飞利浦公司为数字音频设备之间的音频数据传输而制定的一种总线标准，该总线专责于音频设备之间的数据传输，广泛应用于各种多媒体系统。
-
-## 各种编解码算法比较
-
-http://www.rosoo.net/a/201012/10600.html
-
-这个帖子比较了ITU提出的G系列的各种语音编解码方案。
-
-![](/images/article/audio.png)
-
-上图是各种音频编解码框架的比较图。
-
-其中narrowband是指频率在4kHz以下的声音信号，一般情况下，人的说话声就位于这个频率范围内，因此又被称为“语音”。
-
-allband是指频率在24kHz以下的声音信号。这也是人耳所能听到的频率范围。这个范围内的声音统称“音频”。
-
-介于两者之间的，被称为wideband。
 
 # IPv6和IPv4的区别
 
@@ -263,3 +241,22 @@ Internet`---`设备A`***`设备B`***`设备C
 http://blog.csdn.net/xiaojsj111/article/details/30482001
 
 2）芯片不支持的，只能采用分时复用的方式，支持模式共存，又称softAP。
+
+# Mac OS X
+
+最近对iOS开发产生了兴趣，于是准备在PC上搭建一个iOS的开发环境。
+
+首先，我搜了一下在Linux上搭建相关环境的方法，搜到了一些结果。但历史比较老，基本都是3、4年前的东西，就算搭好，也不见得有什么用。
+
+于是，目标改为在PC上使用Virtual Box搭建Mac OS X虚拟机。目标版本为Mac OS X 10.10。
+
+1.下载镜像文件。
+
+镜像文件主要有dmg和iso两种。前者必须在Mac OS X中才能执行，而后者和其他OS镜像差别不大。
+
+2.boot
+
+原版镜像由于Apple的硬件检测机制，并不能在PC上运行。这时就需要破解，这一步一般是在boot中做的。
+
+可用的boot工具，早期有empireEFI、HackBoot。较新的有chameleon、Niresh。
+
