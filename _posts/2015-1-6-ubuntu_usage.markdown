@@ -219,3 +219,7 @@ Ubuntu下面关于TFTP的程序，有三套：
 
 `sudo ifconfig eth0 192.168.2.1 netmask 255.255.255.0`
 
+## Virtual MIDI Piano Keyboard
+
+VMPK是一款MIDI生成工具软件，也就是俗称的“虚拟电子琴”软件。但它本身只生成MIDI输出，需要配合使用MIDI后处理软件，才能发声。常见的MIDI后处理软件有Qsynth、TiMidity。
+
