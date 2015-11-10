@@ -160,7 +160,9 @@ autovideosink：视频播放插件
 
 ## 核心插件
 
-核心插件和上面提到的四类插件不同。它不提供具体的多媒体编解码功能，而是配合框架，搭建完整的多媒体流水线。核心插件相关的资料参见：
+核心插件又称gst-plugins-core，目前已经集成到gstreamer代码中，没有独立的库。
+
+和上面提到的四类插件不同。它不提供具体的多媒体编解码功能，而是配合框架，搭建完整的多媒体流水线。核心插件相关的资料参见：
 
 http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-plugins/html/
 

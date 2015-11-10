@@ -117,6 +117,10 @@ N增加到多大，才能把整个版本库下载完呢？
 
 http://blogs.atlassian.com/2014/05/handle-big-repositories-git/
 
+## git查看远端仓库地址
+
+`git remote -v`
+
 # Google Code
 
 2013.12

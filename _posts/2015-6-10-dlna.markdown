@@ -304,5 +304,7 @@ aplay -D plug:dmix_44k /mnt/nfs/test2.wav`
 
 `aplay -L`
 
+## 从Gstreamer到ALSA
+
 
 
