@@ -303,8 +303,3 @@ aplay -D plug:dmix_44k /mnt/nfs/test2.wav`
 列出可用的ALSA设备
 
 `aplay -L`
-
-## 从Gstreamer到ALSA
-
-
-

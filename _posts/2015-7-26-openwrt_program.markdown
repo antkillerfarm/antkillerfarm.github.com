@@ -64,7 +64,7 @@ http://www.ccs.neu.edu/home/noubir/Courses/CS6710/S12/material/OpenWrt_Dev_Tutor
 
 一个软件包可以生成独立的ipk安装文件（Modularizes），也可以直接打包进img中（Built-in）。这个生成选项在`make menuconfig`的选项菜单中，选择Y就是Built-in，选择M就是Modularizes。
 
-# OpenWrt常见编译问题
+# OpenWrt常见问题
 
 ## 1.`undefined reference to '__stack_chk_fail_local'`
 
@@ -103,6 +103,33 @@ __sync_fetch_and_add_8实际上是和CPU原子操作有关的函数，在PC上�
 找了一下，发现libz.so.1在zlib-bin包中，岂料安装zlib-bin之后，问题依旧。
 
 最后才发现这个工具链是32位的程序，相应的libz.so.1实际上在lib32z1-dev包中。因此遇到类似的问题时，可以先注意一下程序的位数是否匹配。
+
+## 4.ip not found
+
+ip命令是linux网络管理方面的命令，它的代码在iproute2包中。
+
+## 5.make menuconfig时提示“error opening terminal”的解决方法
+
+1)首先要确定ncurses库是否已经正确安装。在debian, Ubuntu上，可以用dpkg -l | grep ncurses 查看ncurses库是否已安装。
+
+2)如果ncurses已经安装了，需要查看TERM, TERMINFO两个环境变量是否已经设置正确。如果没有设置正确，需要设置为正确的值。
+
+{% highlight bash %}
+$ echo $TERM
+xterm
+$ echo $TERMINFO
+/lib/terminfo/
+{% endhighlight %}
+
+设置环境变量的方法：
+
+1）临时的：使用export命令声明即可，变量在关闭shell时失效。
+
+2）永久的：需要修改配置文件，变量永久生效。
+
+在/etc/profile文件中添加变量（对所有用户生效）。修改文件后要想马上生效，还要运行`source /etc/profile`，不然只能在下次重进此用户时生效。
+
+在用户目录下的.bash_profile文件中增加变量（对该用户生效）。同样需要source才能马上生效。
 
 # procd
 
@@ -235,9 +262,4 @@ U盘驱动可分为两个层次：
 
 http://blog.csdn.net/yicao821/article/details/45370669
 
-# OpenWrt问题汇总
-
-## ip not found
-
-ip命令是linux网络管理方面的命令，它的代码在iproute2包中。
 

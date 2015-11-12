@@ -228,3 +228,69 @@ DAPM：Dynamic Audio Power Management
 
 1.snd_card_create改为snd_card_new。
 
+## 从Gstreamer到ALSA
+
+Gstreamer通过alsasink和alsasrc这两个插件访问ALSA API。这两个插件在gst-plugins-base代码的ext/alsa文件夹下。
+
+gst-plugins-base的git地址是：
+
+git://anongit.freedesktop.org/gstreamer/gst-plugins-base
+
+ALSA API的代码在alsa-lib中，它的git地址是：
+
+git://git.alsa-project.org/alsa-lib.git
+
+ALSA API会调用ALSA driver，而driver的代码肯定在linux内核中。
+
+alsa-lib中的很多常用功能，被做成了动态链接库，例如：alsa-lib/libasound_module_pcm_pulse.so，这些链接库的代码在alsa-plugins中。alsa-plugins的git地址是：
+
+git://git.alsa-project.org/alsa-plugins.git
+
+1.open操作
+
+gst-plugins-base/ext/alsa/gstalsasink.c: gst_alsasink_open
+
+这一步之后，进入alsa-lib作用域。
+
+alsa-lib/src/pcm/pcm.c: snd_pcm_open
+
+alsa-lib/src/pcm/pcm.c: snd_pcm_open_noupdate
+
+alsa-lib/src/pcm/pcm.c: snd_pcm_open_conf
+
+alsa-lib中pcm有很多插件，提供诸如硬件、复制、线性变换等操作。详见alsa-lib/include/pcm_plugin.h。
+
+alsa-lib/src/pcm/pcm_hw.c: _snd_pcm_hw_open
+
+alsa-lib/src/pcm/pcm_hw.c: snd_pcm_hw_open
+
+alsa-lib/include/local.h: snd_open_device
+
+这个函数调用open系统调用，进入内核空间。在内核空间中根据driver模型的不同，进入
+
+linux-kernel/sound/core/pcm_native.c: snd_pcm_open（ALSA）或 linux-kernel/sound/soc/soc-pcm.c: soc_pcm_open（ASOC）
+
+2.write操作
+
+gst-plugins-base/ext/alsa/gstalsasink.c: gst_alsasink_write
+
+这一步之后，进入alsa-lib作用域。
+
+alsa-lib/src/pcm/pcm.c: snd_pcm_writei
+
+alsa-lib有两种写操作：snd_pcm_writei和snd_pcm_writen。snd_pcm_writei表示写入交织的PCM数据，而snd_pcm_writen表示写入非交织的PCM数据。
+
+alsa-lib/src/pcm/pcm_local.h: _snd_pcm_writei
+
+alsa-lib/src/pcm/pcm_hw.c: snd_pcm_hw_writei
+
+这个函数调用ioctl系统调用，参数为SNDRV_PCM_IOCTL_WRITEI_FRAMES，pcm数据的buffer，放在snd_xferi结构中，传入内核空间。
+
+linux-kernel/sound/core/pcm_native.c: snd_pcm_playback_ioctl1
+
+linux-kernel/sound/core/pcm_lib.c: snd_pcm_lib_write
+
+linux-kernel/sound/core/pcm_lib.c: snd_pcm_lib_write_transfer
+
+这里会有两个分支，以下仅讨论DMA方式的处理。pcm数据放在snd_pcm_substream.runtime->dma_area指向的缓冲区。open的时候，使用mmap做好snd_pcm_substream.runtime->dma_area和snd_pcm_substream.runtime->dma_addr之间的映射。底层驱动只须操作dma_addr即可。
+
