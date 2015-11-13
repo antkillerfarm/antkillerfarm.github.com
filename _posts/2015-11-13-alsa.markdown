@@ -1,0 +1,170 @@
+---
+layout: post
+title:  ALSA
+category: technology 
+---
+
+# ALSA System on Chip (ASoC) layer
+
+这是专为嵌入式设备设计的ALSA框架。官网是：
+
+http://www.alsa-project.org/main/index.php/ASoC
+
+![](/images/article/dm81xx_asoc_architecture.png)
+
+上图是TI某平台的ASOC架构图。其中的ASoC layer可分为三个不同的部分：
+
+1.Codec driver。这部分是平台无关的，包括了音频接口配置、音频控制、电源管理和其他IO功能。所谓平台是若干使用相同SOC的机型的集合。
+
+2.Platform driver。这部分主要是平台相关的音频接口驱动和相关的DMA驱动。
+
+3.Machine driver。这部分用于前两部分之间的协调，起到粘合剂的作用。它通常是与具体使用的机器相关的。
+
+以三星设备为例，Platform driver和Machine driver在sound/soc/samsung下，该文件夹的Makefile节选如下：
+
+{% highlight bash %}
+# S3c24XX Platform Support
+snd-soc-s3c24xx-i2s-objs := s3c24xx-i2s.o
+snd-soc-s3c2412-i2s-objs := s3c2412-i2s.o
+
+obj-$(CONFIG_SND_S3C24XX_I2S) += snd-soc-s3c24xx-i2s.o
+obj-$(CONFIG_SND_S3C2412_SOC_I2S) += snd-soc-s3c2412-i2s.o
+
+# S3C24XX Machine Support
+snd-soc-s3c24xx-uda134x-objs := s3c24xx_uda134x.o
+snd-soc-s3c24xx-simtec-objs := s3c24xx_simtec.o
+
+obj-$(CONFIG_SND_SOC_SAMSUNG_S3C24XX_UDA134X) += snd-soc-s3c24xx-uda134x.o
+obj-$(CONFIG_SND_SOC_SAMSUNG_SIMTEC) += snd-soc-s3c24xx-simtec.o
+{% endhighlight %}
+
+Codec driver在sound/soc/codecs下，该文件夹的Makefile节选如下：
+
+{% highlight bash %}
+snd-soc-uda134x-objs := uda134x.o
+snd-soc-uda1380-objs := uda1380.o
+
+obj-$(CONFIG_SND_SOC_UDA134X)	+= snd-soc-uda134x.o
+obj-$(CONFIG_SND_SOC_UDA1380)	+= snd-soc-uda1380.o
+{% endhighlight %}
+
+## ASoC术语表
+
+DAI: Digital Audio Interface
+
+DAPM：Dynamic Audio Power Management
+
+## ALSA从2.6.X到3.X的变化细节
+
+网上的文章有不少都是针对2.6.X的老内核的，现将3.X引入的变化，罗列如下：（自己摘录，仅供备忘，非官方内容）
+
+1.snd_card_create改为snd_card_new。
+
+# 从Gstreamer到ALSA
+
+## 0.概述
+
+Gstreamer通过alsasink和alsasrc这两个插件访问ALSA API。这两个插件在gst-plugins-base代码的ext/alsa文件夹下。
+
+gst-plugins-base的git地址是：
+
+git://anongit.freedesktop.org/gstreamer/gst-plugins-base
+
+ALSA API的代码在alsa-lib中，它的git地址是：
+
+git://git.alsa-project.org/alsa-lib.git
+
+ALSA API会调用ALSA driver，而driver的代码肯定在linux内核中。
+
+alsa-lib中的很多常用功能，被做成了动态链接库，例如：alsa-lib/libasound_module_pcm_pulse.so，这些链接库的代码在alsa-plugins中。alsa-plugins的git地址是：
+
+git://git.alsa-project.org/alsa-plugins.git
+
+## 1.open操作
+
+gst-plugins-base/ext/alsa/gstalsasink.c: gst_alsasink_open
+
+这一步之后，进入alsa-lib作用域。
+
+alsa-lib/src/pcm/pcm.c: snd_pcm_open
+
+alsa-lib/src/pcm/pcm.c: snd_pcm_open_noupdate
+
+alsa-lib/src/pcm/pcm.c: snd_pcm_open_conf
+
+alsa-lib中pcm有很多插件，提供诸如硬件、复制、线性变换等操作。详见alsa-lib/include/pcm_plugin.h。
+
+alsa-lib/src/pcm/pcm_hw.c: _snd_pcm_hw_open
+
+alsa-lib/src/pcm/pcm_hw.c: snd_pcm_hw_open
+
+alsa-lib/include/local.h: snd_open_device
+
+这个函数调用open系统调用，进入内核空间。在内核空间中根据driver模型的不同，进入linux-kernel/sound/core/pcm_native.c: snd_pcm_open（ALSA）或linux-kernel/sound/soc/soc-pcm.c: soc_pcm_open（ASOC），注意这里的snd_pcm_open和alsa-lib中的snd_pcm_open名称相同，参数却不同。
+
+## 2.write操作
+
+gst-plugins-base/ext/alsa/gstalsasink.c: gst_alsasink_write
+
+这一步之后，进入alsa-lib作用域。
+
+alsa-lib/src/pcm/pcm.c: snd_pcm_writei
+
+alsa-lib有两种写操作：snd_pcm_writei和snd_pcm_writen。snd_pcm_writei表示写入交织的PCM数据，而snd_pcm_writen表示写入非交织的PCM数据。
+
+alsa-lib/src/pcm/pcm_local.h: _snd_pcm_writei
+
+alsa-lib/src/pcm/pcm_hw.c: snd_pcm_hw_writei
+
+这个函数调用ioctl系统调用，参数为SNDRV_PCM_IOCTL_WRITEI_FRAMES，pcm数据的buffer，放在snd_xferi结构中，传入内核空间。
+
+linux-kernel/sound/core/pcm_native.c: snd_pcm_playback_ioctl1
+
+linux-kernel/sound/core/pcm_lib.c: snd_pcm_lib_write
+
+linux-kernel/sound/core/pcm_lib.c: snd_pcm_lib_write_transfer
+
+这里会有两个分支，以下仅讨论DMA方式的处理。pcm数据放在snd_pcm_substream.runtime->dma_area指向的缓冲区。open的时候，使用mmap做好snd_pcm_substream.runtime->dma_area和snd_pcm_substream.runtime->dma_addr之间的映射。底层驱动只须操作dma_addr即可。
+
+## 3.音量操作
+
+音量操作虽然在Gstreamer和ALSA中都有，但彼此并无调用关系。Gstreamer中的音量调整是用软件改变PCM数据实现的，可称为软音量。与之相对的是音频硬件功放经扬声器所产生的音量，是为硬音量。ALSA的音量可以是软音量，也可以是硬音量。
+
+Gstreamer的音量操作步骤：
+
+gst-plugins-base/gst/playback/gstplaysink.c: gst_play_sink_set_volume
+
+这个函数主要是通过设置playsink的volume属性来实现操作。
+
+Gstreamer软音量的实现代码在gst-plugins-base/gst/volume/gstvolume.c中。
+
+除此之外，还有流媒体音量设置gst_stream_volume_set_volume。详见gst-plugins-base/gst-libs/gst/audio/streamvolume.c。
+
+ALSA的音量操作步骤：（只讨论硬音量）
+
+alsa-lib/src/mixer/simple.c: snd_mixer_selem_set_playback_volume
+
+alsa-lib/src/mixer/simple_none.c: _snd_mixer_selem_set_volume
+
+这一步将volume数据放到selem_none_t.str.vol结构中。后面都是针对这个结构的写操作。
+
+alsa-lib/src/mixer/simple_none.c: selem_write
+
+alsa-lib/src/mixer/simple_none.c: selem_write_main
+
+alsa-lib/src/mixer/simple_none.c: elem_write_volume
+
+alsa-lib/src/control/hcontrol.c: snd_hctl_elem_write
+
+alsa-lib/src/control/control.c: snd_ctl_elem_write
+
+alsa-lib/src/control/control_hw.c: snd_ctl_hw_elem_write
+
+这个函数调用ioctl系统调用，参数为SNDRV_CTL_IOCTL_ELEM_WRITE，进入内核空间。
+
+linux-kernel/sound/core/control.c: snd_ctl_elem_write_user
+
+linux-kernel/sound/core/control.c: snd_ctl_elem_write
+
+驱动上层的数据放在snd_card.controls链表中。这个链表中的元素是snd_kcontrol类型的。而驱动底层使用snd_kcontrol_new类型的数据。在设备初始化时，使用snd_soc_cnew或snd_ctl_new1函数从snd_kcontrol_new类型的模板中，生成相应的snd_kcontrol类型的数据。
+

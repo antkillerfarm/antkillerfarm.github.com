@@ -98,7 +98,7 @@ C-c C-c
 
 Leave Hexl mode, going back to the major mode this buffer had before you invoked `hexl-mode'.
 
-# 使用cscope+emacs在Ubuntu 12.04下的注意事项
+## 使用cscope+emacs在Ubuntu 12.04下的注意事项
 
 1）除了安装cscope还需要安装cscope-el，不然找不到xcscope.el
 
@@ -128,7 +128,9 @@ Leave Hexl mode, going back to the major mode this buffer had before you invoked
 
 [http://sourceforge.net/p/cscope/patches/65/](http://sourceforge.net/p/cscope/patches/65/)
 
-# scratch缓冲区
+5)csope中的initial directory表示全局的搜索目录。如果在同一个emacs实例中，打开多个工程的代码时，不要设置这个initial directory，否则所有工程代码都将在这个路径下搜索，而不是在各自的路径下搜索了。
+
+## scratch缓冲区
 
 这是每次启动Emacs时，默认打开的几个缓冲区之一。正如缓冲区最上面的说明所说的，它的目的有两个：
 
@@ -136,7 +138,7 @@ Leave Hexl mode, going back to the major mode this buffer had before you invoked
 
 2.提供一个执行Emacs Lisp的缓冲区。需要执行命令的时候，将光标落在相应的Lisp命令右括号的后面，执行C-x C-e即可。
 
-# 快速打开最近打开过的文件
+## 快速打开最近打开过的文件
 
 在配置文件~/.emacs中添加：
 
