@@ -144,114 +144,12 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gtkglx
 
 用户需要根据自己的实际情况，修改Makifile.w32中的相关路径，把GTK和MINGW的路径设置好。
 
-# Transifex与GTK文档翻译
+# GTK与系统图标
 
-## 参与GTK+开发的一段小经历（2013.10）
+在GTK 2.x时代，用户可以通过一系列的stock API来调用GTK自带的图标，比如gtk_tool_button_new_from_stock函数。
 
-最近忽然对GTK+产生了浓厚的兴趣，打算研究一下。学习一个新东西，最好的方法就是先阅读一下它的文档。应该说GTK的文档虽然比不了MSDN，但也颇为详尽。主要的问题在于文档都是英文的，阅读起来比较吃力。
+到了GTK 3.x时代，GTK使用Icon Theme取代了之前的stock。不光函数名发生了变化，就连参数中名称的字符串也发生了变化。stock时代，将相关字符串定义为C语言的宏。而Icon Theme时代，需要在/usr/share/icons目录下，查找所需要的图标，然后把图标的后缀名去掉，即可得到相关字符串。
 
-考虑到GTK已经有15年的历史，所以试着在网上搜了一下参考手册的中文版，结果找到了这个网址：http://code.google.com/p/gtk-doc-cn/
+Icon Theme系统的关键是各个目录下的index.theme文件。
 
-这是一个叫yetist的人发起的翻译项目。
-
-http://forum.linuxfans.org/viewthread.php?tid=164933
-
-https://wiki.ubuntu.org.cn/viewtopic.php?f=163&t=232005&start=15
-
-这两个网页讲述了他发起这个项目的经历。
-
-至于GTK官方的语言翻译地址，查了半天也没找到，所以也就没有办法贡献自己的力量了。
-
-在学习兼翻译的过程中，发现了一个我搞不懂的地方，于是给GTK官网上的Bugzilla发了一个bug，结果很快就收到了回复，一段有趣而愉快的经历。看来以后可以多参加一些开源社区的活动，积攒自己的人品，^_^。
-
-## Transifex（2015.6）
-
-上面提到的yetist同学发起的翻译项目，使用Transifex作为翻译协作工具。其网址为：
-
-https://www.transifex.com/projects/p/gobject-reference-manual/
-
-yetist同学还同时主导了一系列的GTK文档翻译项目。有兴趣的同学，可以根据自己的情况，选择性的进行翻译。
-
-2013年的时候，我曾经翻译了一部分GObject文档，并提交给yetist。但他近来已不活跃，未能及时处理我的提交请求。直到最近我才被接纳为GObject项目的翻译人员。于是就有了下面的对transifex的初体验。
-
-另外说一下，我翻译的部分主要参考了TualatriX的成果，他的网址是：
-
-http://imtx.me/
-
-他也是ubuntu-tweak的作者。我经常用这个软件清理磁盘。
-
-## GTK文档翻译流程
-
-由于Google Code即将关闭，翻译项目的网址搬迁到：
-
-https://github.com/yetist/gtk-doc-cn
-
-或者也可以在我的github下找到这个项目的fork：
-
-https://github.com/antkillerfarm/gtk-doc-cn
-
-欢迎大家向yetist或者我的github提交翻译成果。
-
-从项目的log可以看出，yetist同学不仅自己翻译了很多内容，而且还编写了整个翻译自动处理的框架。
-
-该框架的大概流程如下：
-
-1.下载代码，并使用gtk-doc工具，抽取代码中的注释，生成帮助文档的po文件。
-
-2.将po文件发布到Transifex平台，由网上的翻译志愿者，翻译po文件。
-
-3.将翻译好的po文件，合并到代码中，并生成最终的html格式的文档。其中合并和生成，都可以使用框架提供的命令来完成。
-
-前两步yetist同学已经做好了，我们需要做的主要是第3步。
-
-框架的基本用法见项目的说明文档，这里仅列举文档中未提到的细节：
-
-1.环境准备
-
-以Ubuntu为例，可用以下命令安装依赖软件包：
-
-`sudo apt-get install python python-pip fam gtk-doc-tools gnome-doc-utils`
-
-框架需要初始化：
-
-`make init`
-
-2.Transifex客户端
-
-Transifex客户端用于同步Transifex平台的翻译更新，其使用方法和git颇为类似。它的官方地址如下：
-
-http://docs.transifex.com/client/
-
-以下仅列出必要的操作，完整的操作参见官网。
-
-1）安装
-
-`pip install transifex-client`
-
-2）初始化
-
-`tx init`
-
-3）配置
-
-`tx set --auto-remote <url>`
-
-4）下载
-
-`tx pull -a`
-
-3.合并po文件
-
-1）修改项目目录下的AUTHORS文件，添加你要翻译的po文件。
-
-2）将翻译后的po文件，放到po或者xmlpo文件夹中，并改为上一步时你起的名字。
-
-3）合并。
-
-`make merge`
-
-4）生成最终文档。
-
-`make docs`
-
-这里不知是否存在bug，有的时候这个命令需要运行两次，第1次失败，第2次就可以看到最终的文档了。
+# GTK嵌入网页
