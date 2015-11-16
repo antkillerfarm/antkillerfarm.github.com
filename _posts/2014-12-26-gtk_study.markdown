@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GTK学习心得 & Transifex
+title:  GTK学习心得
 category: technology 
 ---
 
@@ -75,13 +75,15 @@ GtkScale有两个容易混淆的事件：change-value和value-changed。
 
 # 在Windows下使用GTK+3
 
+2013.9
+
 ## 1)安装MinGW
 
 我比较偷懒，之前安装Qt SDK的时候，已经有了个MinGW环境，直接拿来用就可以了。
 
 ## 2)下载GTK+3 for Windows
 
-到http://www.tarnyko.net/下载GTK+3的包。该网站是个法国佬办的。在www.gtk.org之前的维护GTK+ for Windows的官方人员闪人之后，这是少数几个移植GTK+3到Windows，且成功的版本。
+到http://www.tarnyko.net/下载GTK+3的包。该网站是个法国佬办的。在www.gtk.org官方的维护GTK+ for Windows的人员闪人之后，这是少数几个移植GTK+3到Windows，且成功的版本。
 
 该网站还有一篇GTK+3 Installation Tutorial for Windows的文章，介绍如何安装他制作的GTK包。里面还附带有一个Hello World程序代码，对于初始的学习很有帮助。
 
@@ -105,6 +107,26 @@ cmd
 ## 5)找不到-lintl该怎么办？
 
 到opensuse的官网下载mingw32-libintl的rpm包。用7-zip解压安装到gtk包中即可。
+
+2015.11
+
+稍早的时候，我在安装pygtk的环境时，发现pygi-aio安装程序提供的GTK版本已经到了3.14。但GTK官方这时仍然没有进展，版本停留在3.6.4。于是我又打算使用pygtk提供的更新来进行编程，但pygtk只提供了.dll文件，而没有.h和.lib文件，实际上并不好用，因此只得放弃之。
+
+最近再上官网，发现其已经提供了更好的解决办法——MSYS2。MSYS2是Martell Malone维护的一个开源项目，旨在提供一个方便易安装的MSYS开发环境，其中也包括为各种开发包提供更新维护，GTK就是其中之一。（当前的版本为Gtk 3.18.3）
+
+现将安装步骤罗列如下：
+
+1.在https://msys2.github.io/，下载安装程序，并按照网页提示，更新pacman。
+
+2.使用pacman下载必要的开发包。
+
+`pacman -S autoconf autogen automake-wrapper pkg-config make gcc gdb`
+
+`pacman -Ss <name>`: 查询相关的软件包是否存在。
+
+`pacman -Syu`: 更新已安装的软件包。
+
+MSYS2提供的环境除了安装友好，便于更新之外，对bash的支持也优于之前的版本。现在已经不需要单独为Windows平台提供特殊的makefile文件了。
 
 # GTK & OpenGL
 
@@ -153,3 +175,20 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gtkglx
 Icon Theme系统的关键是各个目录下的index.theme文件。
 
 # GTK嵌入网页
+
+GTK嵌入网页的方案，主要有两种：GtkMozEmbed和WebkitGtk。
+
+GtkMozEmbed调用Mozilla的Gecko内核渲染网页，这个方案在2008年以前比较流行。但近些年来，由于Webkit的流行，该方案已经日趋式微，最新版本仍然停留在2008年。
+
+WebkitGtk调用Webkit内核渲染网页。它的安装方法：
+
+`sudo apt-get install libwebkitgtk-3.0-dev`
+
+注意这里需要根据你的gtk环境和Webkit API的版本选择不同的包。比如Gtk 2.x选择libwebkitgtk-dev，Gtk 3.x+Webkit 2选择libwebkit2gtk-3.0-dev。
+
+例子参见：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gtk_browser
+
+这里有两个例子，一个是helloworld型的，用于确定开发环境。另一个是从http://imtx.me/archives/1124.html中摘录的，原始的版本基于Gtk 2.x，现在改用Gtk 3.x。
+

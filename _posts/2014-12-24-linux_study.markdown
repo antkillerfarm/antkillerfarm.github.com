@@ -236,3 +236,11 @@ if (pfile != NULL){
 }
 {% endhighlight %}
 
+## 软件包管理工具
+
+各大linux发行版都有自己的软件包管理工具。比如Debian/Ubuntu使用的apt-get，Red Hat/Fedora使用的yum/dnf，SUSE/openSUSE使用的zypper，Gentoo使用的emerge，Arch Linux使用的pacman。
+
+各大软件包管理工具的功能对比，可参见：
+
+https://wiki.archlinux.org/index.php/Pacman/Rosetta
+
