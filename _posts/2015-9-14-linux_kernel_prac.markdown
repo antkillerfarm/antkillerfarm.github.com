@@ -12,6 +12,10 @@ category: technology
 
 驱动开发的头文件可以在/usr/src下找到。
 
+# 驱动开发和内核开发的联系与区别
+
+
+
 # Linux源代码编译
 
 1)按照一般的linux教程上的说法，编译的第一步，是配置内核的编译选项。这时有几种方式可以选择:从命令行方式的make config，到基于ncurse库的make menuconfig，再到基于qt的make xconfig和基于GTK+的make gconfig。这让我不得不感叹，即使是内核这样超底层的东西，居然也会用到GUI。Linus也不总是命令行的拥趸。
@@ -217,3 +221,28 @@ http://www.linux-mtd.infradead.org/
 参考：
 
 http://blog.csdn.net/andy205214/article/details/7390287
+
+# Driver Probe
+
+## 驱动模块加载方式
+
+静态：直接编译到内核中。
+
+动态：编译成.ko文件，然后用insmod命令加载之。
+
+## 驱动分类（按总线类型分）
+
+驱动按设备总线类型分，可分为两类：
+
+1.直接地址访问设备。这类设备的驱动被称为platform driver。
+
+2.间接地址访问设备，也称作总线地址访问设备。这类设备的驱动按总线类型，可分为PCI驱动、USB驱动等等。
+
+## 驱动的probe函数
+
+作为驱动的实现来说，首先就是要实现驱动的probe函数。probe函数起到了驱动的初始化功能。但之所以叫probe，而不是init，主要是由于probe函数，还具有设备检测的功能。
+
+设备检测时，首先根据总线类型，调用总线的probe函数，再根据设备类型调用设备的probe函数。
+
+## 驱动的注册
+

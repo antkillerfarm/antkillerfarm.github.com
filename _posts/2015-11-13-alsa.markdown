@@ -48,13 +48,13 @@ obj-$(CONFIG_SND_SOC_UDA134X)	+= snd-soc-uda134x.o
 obj-$(CONFIG_SND_SOC_UDA1380)	+= snd-soc-uda1380.o
 {% endhighlight %}
 
-## ASoC术语表
+# ASoC术语表
 
 DAI: Digital Audio Interface
 
 DAPM：Dynamic Audio Power Management
 
-## ALSA从2.6.X到3.X的变化细节
+# ALSA从2.6.X到3.X的变化细节
 
 网上的文章有不少都是针对2.6.X的老内核的，现将3.X引入的变化，罗列如下：（自己摘录，仅供备忘，非官方内容）
 
