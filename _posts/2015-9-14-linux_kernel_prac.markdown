@@ -14,7 +14,9 @@ category: technology
 
 # 驱动开发和内核开发的联系与区别
 
+驱动是内核的一部分，驱动开发工程师所需的技能，和内核开发工程师相差无几。但从工作内容来说，两者还是有较大的差异。
 
+驱动开发偏重于利用内核的现有驱动架构，给内核添加新的硬件支持，而内核开发，则主要是对系统架构进行修改，相当于为驱动开发提供弹药。因此，从这个意义上来说，内核的开发更为困难，国内很少有这方面的人才。
 
 # Linux源代码编译
 
@@ -242,7 +244,39 @@ http://blog.csdn.net/andy205214/article/details/7390287
 
 作为驱动的实现来说，首先就是要实现驱动的probe函数。probe函数起到了驱动的初始化功能。但之所以叫probe，而不是init，主要是由于probe函数，还具有设备检测的功能。
 
-设备检测时，首先根据总线类型，调用总线的probe函数，再根据设备类型调用设备的probe函数。
+以下以s3c24xx_uda134x音频驱动为例，说一下设备检测的机制：
 
-## 驱动的注册
+1.驱动模块主要处理两个对象：设备和驱动。s3c24xx_uda134x属于platform driver，因此它的设备对象的数据结构是platform_device类型的，而它的驱动对象的数据结构是platform_driver类型的。
+
+2.驱动对象的注册。使用module_platform_driver宏即可。
+
+3.生成设备对象。
+
+4.设备检测时，首先根据总线类型，调用总线驱动的probe函数，再根据设备类型调用设备驱动的probe函数。最终完成设备对象和驱动对象的绑定。
+
+## module_platform_driver详解
+
+module_platform_driver定义在include/linux/platform_device.h中。
+
+它的主要内容是注册和反注册驱动，以及module_init/module_exit。
+
+介绍module_init/module_exit的文章很多，这里仅将要点摘录如下：
+
+1.__init宏修饰的函数会链接到.initcall.init段中，这个段只在内核初始化时被调用，然后就被释放出内存了。
+
+2.定义别名。
+
+`int init_module(void) __attribute__((alias(#initfn)));`
+
+不管驱动模块的init函数名字叫什么，都定义别名为init_module。这样insmod在加载.ko文件时，就只找init_module函数的入口地址就可以了。
+
+## 生成设备对象详解
+
+这里以mini2440为例，说明一下静态生成设备对象的过程：
+
+在arch/arm/mach-s3c24xx/mach-mini2440.c中有一个mini2440_devices数组。这个数组定义了板子初始化阶段静态生成的设备对象。
+
+在该文件的mini2440_init函数中，调用platform_add_devices函数，将mini2440_devices数组添加到内核中。
+
+这个例子中和音频有关的设备为s3c_device_iis、uda1340_codec和mini2440_audio。这三个设备的name分别为s3c24xx-iis、uda134x-codec和s3c24xx_uda134x，与相应驱动名称一致，正好对应ASOC中的Platform、Codec和Machine。
 

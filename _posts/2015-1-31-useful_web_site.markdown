@@ -25,7 +25,13 @@ www.alldatasheet.com
 
 www.hellogcc.org
 
-一个有关GCC和GDB的博客
+一个有关GCC和GDB的博客。其中的大牛teawater（朱辉）开发了一个Linux动态跟踪器KGTP，他的blog：http://teawater.github.io/
+
+http://www.linuxvirtualserver.org/zh/lvs1.html
+
+章文嵩博士的LVS经典论文，非常值得一读。
+
+LVS的代码已经集成进Linux内核，在net/netfilter/ipvs目录下。
 
 makefile
 
