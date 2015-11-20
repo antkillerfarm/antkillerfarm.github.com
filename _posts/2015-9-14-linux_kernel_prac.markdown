@@ -6,11 +6,17 @@ category: technology
 
 # 驱动开发
 
-推荐读物《Beginning Linux Programming》，该书第3版已有中译本。
+推荐入门读物《Beginning Linux Programming》，该书第3版已有中译本。
 
 但第3版中的例子在2.6以后的新内核中不能编译。经研究发现，由于新版内核采用KBuild系统编译内核，所以驱动也必须使用KBuild系统编译。
 
 驱动开发的头文件可以在/usr/src下找到。
+
+进阶读物有：
+
+《LINUX设备驱动程序》
+
+《Linux设备驱动开发详解》
 
 # 驱动开发和内核开发的联系与区别
 
@@ -180,50 +186,6 @@ drivers/i2c/busses/i2c-gpio.c: i2c_gpio_setsda_val
 
 再以下就是具体的GPIO寄存器操作了。
 
-# Linux镜像文件
-
-## vmlinux
-
-这是源代码直接生成的镜像文件。以x86平台为例：
-
-arch\x86\kernel\vmlinux.lds.S--这是链接脚本的源代码，经过C语言的宏预处理之后会生成vmlinux.lds，使用这个脚本，链接即可得到vmlinux，其过程与普通应用程序并无太大区别，也就是个elf文件罢了。
-
-## image
-
-vmlinux使用objcopy处理之后，生成的不包含符号表的镜像文件。这是linux默认生成的结果。
-
-## zImage
-
-zImage = 使用gzip压缩后的image + GZip自解压代码。使用`make zImage`或者`make bzImage`创建。两者的区别是zImage只适用于大小在640KB以内的内核镜像。
-
-## uImage
-
-uImage = uImage header + zImage。使用uboot提供的mkimage工具创建。
-
-以上的这些镜像文件的关系可参见：
-
-http://www.cnblogs.com/armlinux/archive/2011/11/06/2396786.html
-
-http://www.linuxidc.com/Linux/2011-02/32096.htm
-
-## Flash镜像
-
-一般来说，一个完整的linux系统，不仅包括内核，还包括bootloader和若干分区。这些镜像文件散布，不利于批量生产的进行。这时就需要将之打包，并生成一个可直接用于生产烧写的Flash镜像。
-
-可使用mtd-utils库中的ubinize工具生成Flash镜像。
-
-mtd-utils的官网是：
-
-http://www.linux-mtd.infradead.org/
-
-安装方法：
-
-`sudo apt-get install mtd-utils`
-
-参考：
-
-http://blog.csdn.net/andy205214/article/details/7390287
-
 # Driver Probe
 
 ## 驱动模块加载方式
@@ -279,4 +241,52 @@ module_platform_driver定义在include/linux/platform_device.h中。
 在该文件的mini2440_init函数中，调用platform_add_devices函数，将mini2440_devices数组添加到内核中。
 
 这个例子中和音频有关的设备为s3c_device_iis、uda1340_codec和mini2440_audio。这三个设备的name分别为s3c24xx-iis、uda134x-codec和s3c24xx_uda134x，与相应驱动名称一致，正好对应ASOC中的Platform、Codec和Machine。
+
+PC上的情况比较特殊。由于设备数量种类繁多，因此并不采用将所有设备对象都放到一个数组中的方式。而是在驱动模块加载时，在模块的init函数中，生成设备对象。某些嵌入式驱动模块也采用了类似的方法。
+
+# Linux镜像文件
+
+## vmlinux
+
+这是源代码直接生成的镜像文件。以x86平台为例：
+
+arch\x86\kernel\vmlinux.lds.S--这是链接脚本的源代码，经过C语言的宏预处理之后会生成vmlinux.lds，使用这个脚本，链接即可得到vmlinux，其过程与普通应用程序并无太大区别，也就是个elf文件罢了。
+
+## image
+
+vmlinux使用objcopy处理之后，生成的不包含符号表的镜像文件。这是linux默认生成的结果。
+
+## zImage
+
+zImage = 使用gzip压缩后的image + GZip自解压代码。使用`make zImage`或者`make bzImage`创建。两者的区别是zImage只适用于大小在640KB以内的内核镜像。
+
+## uImage
+
+uImage = uImage header + zImage。使用uboot提供的mkimage工具创建。
+
+以上的这些镜像文件的关系可参见：
+
+http://www.cnblogs.com/armlinux/archive/2011/11/06/2396786.html
+
+http://www.linuxidc.com/Linux/2011-02/32096.htm
+
+## Flash镜像
+
+一般来说，一个完整的linux系统，不仅包括内核，还包括bootloader和若干分区。这些镜像文件散布，不利于批量生产的进行。这时就需要将之打包，并生成一个可直接用于生产烧写的Flash镜像。
+
+可使用mtd-utils库中的ubinize工具生成Flash镜像。
+
+mtd-utils的官网是：
+
+http://www.linux-mtd.infradead.org/
+
+安装方法：
+
+`sudo apt-get install mtd-utils`
+
+参考：
+
+http://blog.csdn.net/andy205214/article/details/7390287
+
+从代码来查看板子的MTD分区方案，主要是搜索mtd_partition类型的使用定义。比如mini2440板子的分区方案可在mini2440_default_nand_part数组中查到。
 
