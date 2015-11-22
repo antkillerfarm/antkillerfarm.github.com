@@ -244,6 +244,20 @@ module_platform_driver定义在include/linux/platform_device.h中。
 
 PC上的情况比较特殊。由于设备数量种类繁多，因此并不采用将所有设备对象都放到一个数组中的方式。而是在驱动模块加载时，在模块的init函数中，生成设备对象。某些嵌入式驱动模块也采用了类似的方法。
 
+## probe被调用的流程
+
+drivers/base/driver.c: driver_register
+
+drivers/base/bus.c: bus_add_driver
+
+drivers/base/dd.c: driver_attach
+
+drivers/base/dd.c: _driver_attach
+
+drivers/base/dd.c: driver_probe_device
+
+drivers/base/dd.c: really_probe
+
 # Linux镜像文件
 
 ## vmlinux

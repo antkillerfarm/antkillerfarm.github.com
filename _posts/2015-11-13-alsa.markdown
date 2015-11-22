@@ -48,6 +48,12 @@ obj-$(CONFIG_SND_SOC_UDA134X)	+= snd-soc-uda134x.o
 obj-$(CONFIG_SND_SOC_UDA1380)	+= snd-soc-uda1380.o
 {% endhighlight %}
 
+snd_soc_register_codec函数用来注册Codec driver。
+
+snd_soc_register_component函数用来注册Platform driver。
+
+Machine driver通过snd_soc_dai_link结构的codec_name和platform_name成员，指定匹配的Codec driver和Platform driver。
+
 # ASoC术语表
 
 DAI: Digital Audio Interface

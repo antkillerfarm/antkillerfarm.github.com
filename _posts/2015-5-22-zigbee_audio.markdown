@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Zigbee音频, 6LowPAN, IEEE 802, Mac OS X
+title:  Zigbee音频, 6LowPAN, IEEE 802, Mac OS X, Objective-C
 category: technology 
 ---
 
@@ -259,4 +259,20 @@ http://blog.csdn.net/xiaojsj111/article/details/30482001
 原版镜像由于Apple的硬件检测机制，并不能在PC上运行。这时就需要破解，这一步一般是在boot中做的。
 
 可用的boot工具，早期有empireEFI、HackBoot。较新的有chameleon、Niresh。
+
+# Objective-C
+
+## 环境搭建
+
+PC上搭建Objective-C（以下简称OC）开发环境，主要借助GNUstep开源项目的成果。
+
+以Ubuntu为例，步骤如下：
+
+1. 安装软件包。
+
+`sudo apt-get install gnustep-devel libjpeg-dev libtiff5-dev gobjc-4.9`
+
+2.设置环境变量。
+
+`GNUSTEP_MAKEFILES=/usr/share/GNUstep/Makefiles`
 

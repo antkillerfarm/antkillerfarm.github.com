@@ -223,3 +223,44 @@ Ubuntu下面关于TFTP的程序，有三套：
 
 VMPK是一款MIDI生成工具软件，也就是俗称的“虚拟电子琴”软件。但它本身只生成MIDI输出，需要配合使用MIDI后处理软件，才能发声。常见的MIDI后处理软件有Qsynth、TiMidity。
 
+# 便签软件
+
+主要有两类便签软件：
+
+1.支持超链接的便签。典型的有Gnote和Tomboy，这两个软件都有内容检索的功能。
+
+2.桌面随意贴。典型的有Indicator Stickynotes和Knotes。后者有内容检索的功能，而前者没有。
+
+# 桌面主题
+
+用腻了系统自带的桌面主题之后，我打算换个新鲜一些的桌面主题，比如Mac OS X风格的。
+
+1.安装主题修改工具
+
+`sudo apt-get install unity-tweak-tool`
+
+2.安装Mac OS X主题
+
+{% highlight bash %}
+sudo add-apt-repository ppa:noobslab/themes
+sudo apt-get update
+sudo apt-get install mac-ithemes-v3
+sudo apt-get install mac-icons-v3
+{% endhighlight %}
+
+3.Cairo Dock
+
+做完上面两步之后，基本的Mac OS X风格已经有了，但Mac最经典的Dock启动器还没有。这里介绍一下Cairo Dock。
+
+安装方法：
+
+`sudo apt-get install cairo-dock`
+
+Cairo Dock不仅具有类似Mac OS X的风格，还有其他的风格可供选择下载。比如我使用的是Chrome风格。
+
+4.其他主题
+
+http://www.ubuntuthemes.org/
+
+这个网站收集了很多桌面主题，但是需要注册，因为有些主题是收费的。
+
