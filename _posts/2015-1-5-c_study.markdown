@@ -269,6 +269,19 @@ static struct mtd_partition parts[] = {
       {name: "app", offset: 0x4e00000, size:0x800000,},
 
 };
+
+static struct resource pxa27x_resource_ohci[] = {
+	[0] = {
+		.start  = 0x4C000000,
+		.end    = 0x4C00ff6f,
+		.flags  = IORESOURCE_MEM,
+	},
+	[1] = {
+		.start  = IRQ_USBH1,
+		.end    = IRQ_USBH1,
+		.flags  = IORESOURCE_IRQ,
+	},
+};
 {% endhighlight %}
 
-这种方法虽然不知道是C的那个标准引入的，但是见到有代码这样用。
+这些方法虽然不知道是C的那个标准引入的，但是见到有代码这样用。

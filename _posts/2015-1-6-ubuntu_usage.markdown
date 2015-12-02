@@ -244,8 +244,7 @@ VMPK是一款MIDI生成工具软件，也就是俗称的“虚拟电子琴”软
 {% highlight bash %}
 sudo add-apt-repository ppa:noobslab/themes
 sudo apt-get update
-sudo apt-get install mac-ithemes-v3
-sudo apt-get install mac-icons-v3
+sudo apt-get install mac-ithemes-v3 mac-icons-v3
 {% endhighlight %}
 
 3.Cairo Dock

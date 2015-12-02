@@ -265,6 +265,10 @@ Audio device: Intel Corporation 6 Series/C200 Series Chipset Family High Definit
 
 从驱动名`snd_hda_intel`可以很轻松的发现，这个驱动的源代码是sound/pci/hda/hda_intel.c。
 
+在/dev/snd下，可以看到声卡的子设备。
+
+对于ASoC驱动来说，因为它是platform驱动，所以可以在/sys/bus/platform下，找到驱动的相关痕迹。
+
 ## ALSA（Advanced Linux Sound Architecture）
 
 ALSA是Linux内核默认的音频驱动框架。以下是一些参考资料：

@@ -50,9 +50,23 @@ obj-$(CONFIG_SND_SOC_UDA1380)	+= snd-soc-uda1380.o
 
 snd_soc_register_codec函数用来注册Codec driver。
 
-snd_soc_register_component函数用来注册Platform driver。
+snd_soc_register_component函数用来注册外设接口驱动（例如I2S）。
+
+snd_soc_register_platform函数用来注册Platform driver。
 
 Machine driver通过snd_soc_dai_link结构的codec_name和platform_name成员，指定匹配的Codec driver和Platform driver。
+
+# PCM, I2S, DMA
+
+无论何种形式的音频，最终都要转换成PCM格式的数据（有时也被称作原始音频数据），然后才能发送给相关的硬件。CPU和音频芯片之间的数据接口，在PC上主要是AC97接口，而在嵌入式设备中，则多为I2S接口。
+
+通常使用DMA方式传输原始音频数据。在3.X内核中，一般将PCM的DMA功能设置为Platform driver，而将I2S功能设置为该driver的一个component。
+
+从DMA的实现方式来看，主要分两种：
+
+1.Platform driver包含i2s和pcm两个文件。它的核心是设置snd_pcm_ops数据结构。例如pxa2xx-i2s.c和pxa2xx-pcm.c。
+
+2.Platform driver只包含i2s一个文件。它主要调用与dmaengine_pcm_platform结构相关的函数。例如s3c24xx-i2s.c。
 
 # ASoC术语表
 

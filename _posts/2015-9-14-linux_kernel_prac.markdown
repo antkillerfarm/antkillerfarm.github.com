@@ -4,26 +4,6 @@ title:  linux内核研究实践篇, Linux镜像文件
 category: technology 
 ---
 
-# 驱动开发
-
-推荐入门读物《Beginning Linux Programming》，该书第3版已有中译本。
-
-但第3版中的例子在2.6以后的新内核中不能编译。经研究发现，由于新版内核采用KBuild系统编译内核，所以驱动也必须使用KBuild系统编译。
-
-驱动开发的头文件可以在/usr/src下找到。
-
-进阶读物有：
-
-《LINUX设备驱动程序》
-
-《Linux设备驱动开发详解》
-
-# 驱动开发和内核开发的联系与区别
-
-驱动是内核的一部分，驱动开发工程师所需的技能，和内核开发工程师相差无几。但从工作内容来说，两者还是有较大的差异。
-
-驱动开发偏重于利用内核的现有驱动架构，给内核添加新的硬件支持，而内核开发，则主要是对系统架构进行修改，相当于为驱动开发提供弹药。因此，从这个意义上来说，内核的开发更为困难，国内很少有这方面的人才。
-
 # Linux源代码编译
 
 1)按照一般的linux教程上的说法，编译的第一步，是配置内核的编译选项。这时有几种方式可以选择:从命令行方式的make config，到基于ncurse库的make menuconfig，再到基于qt的make xconfig和基于GTK+的make gconfig。这让我不得不感叹，即使是内核这样超底层的东西，居然也会用到GUI。Linus也不总是命令行的拥趸。
@@ -161,6 +141,10 @@ Read的过程要复杂一些，可分为上层调用部分和底层驱动部分�
 3.do_select@select.c
 
 # I2C的GPIO实现
+
+## 概述
+
+I2C的GPIO实现的代码在drivers/i2c/busses/i2c-gpio.c中。从本质来说这是一个i2c_adapter，它使用i2c_bit_add_numbered_bus函数将自己注册到I2S总线上。
 
 ## Write
 
