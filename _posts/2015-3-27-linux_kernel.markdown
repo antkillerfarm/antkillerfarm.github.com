@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  linux内核研究原理篇, GStreamer插件
+title:  linux内核研究（一）, GStreamer插件
 category: technology 
 ---
 

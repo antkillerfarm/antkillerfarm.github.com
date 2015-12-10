@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Transifex与GTK文档翻译
+title:  Transifex与GTK文档翻译, Linux镜像文件
 category: technology 
 ---
 
@@ -115,3 +115,50 @@ http://docs.transifex.com/client/
 `make docs`
 
 这里不知是否存在bug，有的时候这个命令需要运行两次，第1次失败，第2次就可以看到最终的文档了。
+
+# Linux镜像文件
+
+## vmlinux
+
+这是源代码直接生成的镜像文件。以x86平台为例：
+
+arch\x86\kernel\vmlinux.lds.S--这是链接脚本的源代码，经过C语言的宏预处理之后会生成vmlinux.lds，使用这个脚本，链接即可得到vmlinux，其过程与普通应用程序并无太大区别，也就是个elf文件罢了。
+
+## image
+
+vmlinux使用objcopy处理之后，生成的不包含符号表的镜像文件。这是linux默认生成的结果。
+
+## zImage
+
+zImage = 使用gzip压缩后的image + GZip自解压代码。使用`make zImage`或者`make bzImage`创建。两者的区别是zImage只适用于大小在640KB以内的内核镜像。
+
+## uImage
+
+uImage = uImage header + zImage。使用uboot提供的mkimage工具创建。
+
+以上的这些镜像文件的关系可参见：
+
+http://www.cnblogs.com/armlinux/archive/2011/11/06/2396786.html
+
+http://www.linuxidc.com/Linux/2011-02/32096.htm
+
+## Flash镜像
+
+一般来说，一个完整的linux系统，不仅包括内核，还包括bootloader和若干分区。这些镜像文件散布，不利于批量生产的进行。这时就需要将之打包，并生成一个可直接用于生产烧写的Flash镜像。
+
+可使用mtd-utils库中的ubinize工具生成Flash镜像。
+
+mtd-utils的官网是：
+
+http://www.linux-mtd.infradead.org/
+
+安装方法：
+
+`sudo apt-get install mtd-utils`
+
+参考：
+
+http://blog.csdn.net/andy205214/article/details/7390287
+
+从代码来查看板子的MTD分区方案，主要是搜索mtd_partition类型的使用定义。比如mini2440板子的分区方案可在mini2440_default_nand_part数组中查到。
+

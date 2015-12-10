@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  linux内核研究实践篇, Linux镜像文件
+title:  linux内核研究（二）
 category: technology 
 ---
 
@@ -144,7 +144,7 @@ Read的过程要复杂一些，可分为上层调用部分和底层驱动部分�
 
 ## 概述
 
-I2C的GPIO实现的代码在drivers/i2c/busses/i2c-gpio.c中。从本质来说这是一个i2c_adapter，它使用i2c_bit_add_numbered_bus函数将自己注册到I2S总线上。
+I2C的GPIO实现的代码在drivers/i2c/busses/i2c-gpio.c中。从本质来说这是一个i2c_adapter，它使用i2c_bit_add_numbered_bus函数将自己注册到I2S总线上。由于i2c_adapter是直接寻址设备，因此是以platform driver的方式注册的。
 
 ## Write
 
@@ -242,49 +242,29 @@ drivers/base/dd.c: driver_probe_device
 
 drivers/base/dd.c: really_probe
 
-# Linux镜像文件
+# 模块初始化
 
-## vmlinux
+Linux既然由若干模块组成，那么这些模块在启动阶段，必然存在一个加载顺序的问题。这方面可以通过以下的宏来确定加载的优先级。
 
-这是源代码直接生成的镜像文件。以x86平台为例：
+{% highlight c %}
+#define pure_initcall(fn)		__define_initcall(fn, 0)
+#define core_initcall(fn)		__define_initcall(fn, 1)
+#define core_initcall_sync(fn)		__define_initcall(fn, 1s)
+#define postcore_initcall(fn)		__define_initcall(fn, 2)
+#define postcore_initcall_sync(fn)	__define_initcall(fn, 2s)
+#define arch_initcall(fn)		__define_initcall(fn, 3)
+#define arch_initcall_sync(fn)		__define_initcall(fn, 3s)
+#define subsys_initcall(fn)		__define_initcall(fn, 4)
+#define subsys_initcall_sync(fn)	__define_initcall(fn, 4s)
+#define fs_initcall(fn)			__define_initcall(fn, 5)
+#define fs_initcall_sync(fn)		__define_initcall(fn, 5s)
+#define rootfs_initcall(fn)		__define_initcall(fn, rootfs)
+#define device_initcall(fn)		__define_initcall(fn, 6)
+#define device_initcall_sync(fn)	__define_initcall(fn, 6s)
+#define late_initcall(fn)		__define_initcall(fn, 7)
+#define late_initcall_sync(fn)		__define_initcall(fn, 7s)
+{% endhighlight %}
 
-arch\x86\kernel\vmlinux.lds.S--这是链接脚本的源代码，经过C语言的宏预处理之后会生成vmlinux.lds，使用这个脚本，链接即可得到vmlinux，其过程与普通应用程序并无太大区别，也就是个elf文件罢了。
+上面的宏中，越前面的优先级越高。同一优先级下，按照链接顺序确定加载顺序，因此可以通过修改链接文件来修改加载顺序，但一般来说，并没有这个必要。
 
-## image
-
-vmlinux使用objcopy处理之后，生成的不包含符号表的镜像文件。这是linux默认生成的结果。
-
-## zImage
-
-zImage = 使用gzip压缩后的image + GZip自解压代码。使用`make zImage`或者`make bzImage`创建。两者的区别是zImage只适用于大小在640KB以内的内核镜像。
-
-## uImage
-
-uImage = uImage header + zImage。使用uboot提供的mkimage工具创建。
-
-以上的这些镜像文件的关系可参见：
-
-http://www.cnblogs.com/armlinux/archive/2011/11/06/2396786.html
-
-http://www.linuxidc.com/Linux/2011-02/32096.htm
-
-## Flash镜像
-
-一般来说，一个完整的linux系统，不仅包括内核，还包括bootloader和若干分区。这些镜像文件散布，不利于批量生产的进行。这时就需要将之打包，并生成一个可直接用于生产烧写的Flash镜像。
-
-可使用mtd-utils库中的ubinize工具生成Flash镜像。
-
-mtd-utils的官网是：
-
-http://www.linux-mtd.infradead.org/
-
-安装方法：
-
-`sudo apt-get install mtd-utils`
-
-参考：
-
-http://blog.csdn.net/andy205214/article/details/7390287
-
-从代码来查看板子的MTD分区方案，主要是搜索mtd_partition类型的使用定义。比如mini2440板子的分区方案可在mini2440_default_nand_part数组中查到。
-
+运行阶段的加载，由于是动态加载，没有加载顺序的问题（程序员代码控制加载顺序），因此这些宏都被编译成module_init。

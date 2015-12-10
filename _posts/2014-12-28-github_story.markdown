@@ -33,8 +33,7 @@ https://import.github.com/new
 作为生活在水深火热的墙内人民，有必要进行下面一步修改gem的源，方便我们更快的下载所需的组件：
 
 {% highlight bash %}
-sudo gem sources --remove http://rubygems.org/
-sudo gem sources -a http://ruby.taobao.org/
+sudo gem sources --add https://ruby.taobao.org/ --remove https://rubygems.org/
 {% endhighlight %}
 
 3.安装ruby-dev
@@ -45,7 +44,7 @@ sudo gem sources -a http://ruby.taobao.org/
 
 在windows下需要下载一个Dev-kit的安装包。但是Ruby的网站经常访问不了，所以其实还可以这样安装：
 
-`gem install dev-kit`
+`gem install devkit`
 
 4.安装jekyll和rdiscount
 
