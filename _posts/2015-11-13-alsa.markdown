@@ -56,6 +56,14 @@ snd_soc_register_platform函数用来注册Platform driver。
 
 Machine driver通过snd_soc_dai_link结构的codec_name和platform_name成员，指定匹配的Codec driver和Platform driver。
 
+三部分的加载顺序：
+
+1.驱动对象的加载，一般在模块加载时进行。各对象的先后顺序无关紧要。
+
+2.设备对象的加载，一般在驱动对象加载之后，而在ALSA加载之前。由于模块加载的初始化优先级是device_initcall，而alsa_sound_last_init函数的初始化优先级是late_initcall_sync，因此设备对象的初始化优先级设为late_initcall是比较妥当的。
+
+3.由于Machine driver在Codec driver和Platform driver之间起着桥梁作用，因此需要在加载了Codec和Platform的设备对象之后，再进行Machine设备对象的加载。
+
 # PCM, I2S, DMA
 
 无论何种形式的音频，最终都要转换成PCM格式的数据（有时也被称作原始音频数据），然后才能发送给相关的硬件。CPU和音频芯片之间的数据接口，在PC上主要是AC97接口，而在嵌入式设备中，则多为I2S接口。

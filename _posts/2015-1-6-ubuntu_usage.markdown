@@ -4,7 +4,7 @@ title:  Ubuntu使用技巧
 category: technology 
 ---
 
-## 在Ubuntu上安装VMWare tools
+# 在Ubuntu上安装VMWare tools
 
 VMWare自带的VMWare tools在新版的Ubuntu上总是安装不上，其实解决方法也很简单。
 
@@ -14,15 +14,15 @@ VMWare自带的VMWare tools在新版的Ubuntu上总是安装不上，其实解�
 
 `sudo apt-get install --no-install-recommends linux-headers-virtual open-vm-dkms open-vm-tools（命令行）`
 
-## 如何以管理员身份操作Gnome的资源管理器--nautilus
+# 如何以管理员身份操作Gnome的资源管理器--nautilus
 
 `apt-get install nautilus-gksu`
 
-## 没有声音
+# 没有声音
 
 没有声音的话，使用alsamixer来配置一下。
 
-## 显示实时网速
+# 显示实时网速
 
 最近下载安装了ubuntu 12.04 LTS。由于它使用了Unity桌面，因此之前的一些GNOME桌面工具不再可用。
 
@@ -69,7 +69,7 @@ VMWare自带的VMWare tools在新版的Ubuntu上总是安装不上，其实解�
 
 最后，比较了一下虚拟机和真实机器在组网上的差异后，我忽然意识到虚拟机FTP不能正常访问的原因，应该是由于虚拟机是在一个虚拟的内网之中。默认情况下，外网机器是无法访问虚拟机的，而虚拟机则可以正常访问外网。因此，反过来，我在win7上用IIS搭建FTP服务，然后在ubuntu虚拟机上用Filezilla访问FTP。这下终于成功了。
 
-## Ubuntu使用小技巧
+# Ubuntu使用小技巧
 
 安装 7zip：
 
@@ -117,7 +117,7 @@ Monkey's Audio，是一种常见的无损音频压缩编码格式，扩展名为
 
 这里特别关注一下http://pkgs.org这个网站，好多deb包都可以在这里找到。
 
-## 向devhelp添加新书
+# 向devhelp添加新书
 
 1）最好的办法是在安装开发环境的包的时候，安装包自动给你把书装好。例如，我最近研究GTK3，在安装相关包的时候，GObject之类的书就已经安装好了。
 
@@ -127,7 +127,7 @@ devhelp每个版本放书的目录都不尽相同，一般如果安装了gtk的�
 
 `sudo apt-get install libgtk-3-doc`
 
-## Unity侧边栏快速启动的研究
+# Unity侧边栏快速启动的研究
 
 Unity侧边栏和Win7的任务栏有些类似，不仅会显示当前正在执行的程序，同时也可以将正在执行的程序的图标锁定在侧边栏上。但是侧边栏的位置有限，当锁定的图标太多时，就会干扰对正在执行的程序的选定。
 
@@ -215,11 +215,11 @@ Ubuntu下面关于TFTP的程序，有三套：
 
 `sudo apt-get install tftp-hpa tftpd-hpa`
 
-## 设置网卡eth0的IP地址和子网掩码
+# 设置网卡eth0的IP地址和子网掩码
 
 `sudo ifconfig eth0 192.168.2.1 netmask 255.255.255.0`
 
-## Virtual MIDI Piano Keyboard
+# Virtual MIDI Piano Keyboard
 
 VMPK是一款MIDI生成工具软件，也就是俗称的“虚拟电子琴”软件。但它本身只生成MIDI输出，需要配合使用MIDI后处理软件，才能发声。常见的MIDI后处理软件有Qsynth、TiMidity。
 
@@ -262,4 +262,5 @@ Cairo Dock不仅具有类似Mac OS X的风格，还有其他的风格可供选�
 http://www.ubuntuthemes.org/
 
 这个网站收集了很多桌面主题，但是需要注册，因为有些主题是收费的。
+
 

@@ -75,6 +75,10 @@ Conky---http://conky.sourceforge.net/
 
 自由软件，用于X视窗系统的系统监视。
 
+ocenaudio---http://www.ocenaudio.com.br/download
+
+用于音频剪辑处理的工具。免费但不开源。
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/
