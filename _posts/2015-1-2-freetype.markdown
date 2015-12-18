@@ -174,4 +174,6 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/HelloSDL
 
 而最近，我想将该软件移植到Linux上，于是查找Linux平台的图像处理工具库，找到了ImageMagick。仅花了半个小时，就编写好批处理的Python脚本，解决了这个问题。
 
+ImageMagick调整图片尺寸的命令示例：
+
 `convert src.jpg -resize 50% des.jpg`

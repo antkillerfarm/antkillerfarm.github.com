@@ -108,6 +108,10 @@ alsa-lib中的很多常用功能，被做成了动态链接库，例如：alsa-l
 
 git://git.alsa-project.org/alsa-plugins.git
 
+aplay等ALSA工具的代码在alsa-utils中，其地址如下：
+
+git://git.alsa-project.org/alsa-utils.git
+
 ## 1.open操作
 
 gst-plugins-base/ext/alsa/gstalsasink.c: gst_alsasink_open

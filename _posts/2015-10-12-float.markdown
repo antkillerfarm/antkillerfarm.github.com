@@ -187,3 +187,85 @@ I2S总线的性能主要由以下指标决定：
 1.采样频率。根据上面对narrowband、wideband、allband的讨论，以及采样定理可知，采样频率最低为8kHz，超过48kHz可以算是allband。
 
 2.采样位数。越大越好。目前数字功放（如TI TAS5731M）已经可以支持24bit和32bit，但wifi芯片基本还是16bit的。
+
+I2S总线的时序标准分为三种：
+
+1.I2S。
+
+2.Left-Justified
+
+3.Right-Justified
+
+
+
+## 文件后缀名与编码格式
+
+<table>
+  <tr>
+    <td>文件后缀名</td>
+    <td>音频编码（空表示编码格式和文件后缀名一致）</td>
+    <td>视频编码（空表示该格式没有视频数据）</td>
+  </tr>
+  <tr>
+    <td>.aac .ac3 .ape .mp2 .mp3 .flac .wma</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>.au</td>
+    <td>pcm_s16be</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>.wav</td>
+    <td>pcm_s16le pcm_float</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>.ogg</td>
+    <td>vorbis</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>.m4a</td>
+    <td>mpeg4 aac</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>.3gp</td>
+    <td>mpeg4</td>
+    <td>amr_nb</td>
+  </tr>
+  <tr>
+    <td>.3g2</td>
+    <td>mpeg4</td>
+    <td>mpeg4 aac</td>
+  </tr>
+  <tr>
+    <td>.asf</td>
+    <td>msmpeg4</td>
+    <td>mp3</td>
+  </tr>
+  <tr>
+    <td>.mov</td>
+    <td>mpeg4_qt</td>
+    <td>mpeg4 aac_qt</td>
+  </tr>
+  <tr>
+    <td>.rm</td>
+    <td>rv10</td>
+    <td>ac3</td>
+  </tr>
+  <tr>
+    <td>.vob</td>
+    <td>mpeg2</td>
+    <td>ac3</td>
+  </tr>
+  <tr>
+    <td>.wmv</td>
+    <td>wmv</td>
+    <td>wma</td>
+  </tr>
+</table>
+
+常用格式中的.avi .mp4，由于支持的编码格式众多，且没有主要的使用格式，故不列出。
