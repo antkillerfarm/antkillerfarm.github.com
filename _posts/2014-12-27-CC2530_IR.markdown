@@ -204,10 +204,10 @@ CC2530的空中升级可以使用以下两种方法：
 
 <table>
   <tr>
-    <td>名称</td>
-    <td>概况</td>
-    <td>优点</td>
-    <td>缺点</td>
+    <th>名称</th>
+    <th>概况</th>
+    <th>优点</th>
+    <th>缺点</th>
   </tr>
   <tr>
     <td>Zigbee</td>
