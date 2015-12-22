@@ -1,0 +1,91 @@
+---
+layout: post
+title:  网络杂谈
+category: technology 
+---
+
+# 网络杂谈
+
+## 集线器&交换机&路由器
+
+1.集线器，又名HUB。一般只起增强信号的作用，并不对流经的数据进行处理。数据转发采用广播方式，只适合少量终端设备的情况。
+
+2.交换机。它会对转发数据的数据链路层（OSI第二层）进行处理。
+
+2.路由器。它会对转发数据的网络层（OSI第三层）进行处理。
+
+以上都是一些原始定义，实际情况中，由于都是网络数据交换设备，跨界的情况随着硬件的升级，而屡见不鲜。比如现在的集线器，多数也有简单的数据处理能力；而现在的交换机，有的也有第三层处理能力（比如三层交换机）。
+
+以我的经历为例，2003年左右，大学宿舍的兄弟们就使用集线器，进行联网游戏。
+
+2007年，换用交换机，和合租的同事，一起上网。
+
+2010年，换用无线路由器，手机也可以wifi上网了。
+
+## XMPP
+
+XMPP(Extensible Messaging Presence Protocol)和SIP(Session Initiation Protocol)都是应用层的数据交换协议。作为它们前辈的HTTP虽然取得很大成功，但也存在如下问题：
+
+1.内容形式主要限定为html，对于传输非界面数据的应用来说，效率不高，也不专业。
+
+2.HTTP基于Client发送请求，Server响应的模式。对于VOIP这样的应用来说，Server主动发送数据的能力显然更关键。
+
+XMPP和SIP的特点如下表所示：
+
+<table>
+  <tr>
+    <td></td>
+    <td>XMPP</td>
+    <td>SIP</td>
+  </tr>
+  <tr>
+    <td>核心协议的目的</td>
+    <td>服务于结构化的数据交换</td>
+    <td>服务于连接的建立</td>
+  </tr>
+  <tr>
+    <td>核心外扩展</td>
+    <td>添加Jingle协议支持面向连接的业务</td>
+    <td>添加SIMPLE协议支持即时通信业务</td>
+  </tr>
+  <tr>
+    <td>应用的支持和扩展性</td>
+    <td>优</td>
+    <td>一般</td>
+  </tr>
+  <tr>
+    <td>数据格式</td>
+    <td>XML，易解析</td>
+    <td>文本，不易解析。</td>
+  </tr>
+  <tr>
+    <td>通道方式</td>
+    <td>控制和数据通道是一体的，Clent只与Server建立连接，而Client与client之间是没有之间连接的。Client之间传送的通道是：Client1--->Server1--->Server2--->Client2。这种方式看起来扩展性差，server压力很大，但是能够实现很好的业务功能，比如留言、广播、群聊、状态更新、Blog、微博、数据共享等等。</td>
+    <td>连接建立通道与数据传送通道是各自独立的，连接建立在SIP client与Server之间，而数据传送通道是在Client--Client之间直接进行的。这个对视频、语音和文件传送业务很合适，但是不适合其他形式的应用。</td>
+  </tr>
+  <tr>
+    <td>底层协议</td>
+    <td>TCP and TLS only</td>
+    <td>UDP, TCP and TLS</td>
+  </tr>
+  <tr>
+    <td>连接方式</td>
+    <td>单向连接，只有Client可以向Server发起连接请求，Server不会向Client发起连接。这样便于NAT和firewall的穿越。</td>
+    <td>双向对称，客户端和服务器都可以主动发起连接请求并响应，这种对称连接的方式在穿越NAT和firewall的时候，带来很大的复杂性，无法保证穿越NAT。</td>
+  </tr>
+  <tr>
+    <td>前景</td>
+    <td>开源实现众多，应用广泛。且被Google、MS、Facebook等巨头支持，前景乐观。</td>
+    <td>核心外业务没有起色。核心业务也遭到Jingle协议的挑战。</td>
+  </tr>
+</table>
+
+参考文献：
+
+http://my.oschina.net/linuxhunter/blog/35370
+
+基于loudmouth的XMPP客户端DEMO
+
+http://xmpp.org/xmpp-software/
+
+这个网页列出了XMPP的各种客户端、服务器以及库的实现。在我们的项目中，服务端使用Openfire，嵌入式客户端使用gloox。

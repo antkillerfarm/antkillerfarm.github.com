@@ -269,13 +269,7 @@ Audio device: Intel Corporation 6 Series/C200 Series Chipset Family High Definit
 
 对于ASoC驱动来说，因为它是platform驱动，所以可以在/sys/bus/platform下，找到驱动的相关痕迹。
 
-## ALSA（Advanced Linux Sound Architecture）
-
-ALSA是Linux内核默认的音频驱动框架。以下是一些参考资料：
-
-http://blog.sina.com.cn/s/blog_5707eebf0100tjbe.html
-
-http://blog.csdn.net/droidphone/article/details/6271122
+## alsa-utils
 
 alsa-utils是ALSA项目提供的工具软件集，以下是一些测试样例：
 

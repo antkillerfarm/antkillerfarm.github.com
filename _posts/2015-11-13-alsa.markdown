@@ -4,6 +4,26 @@ title:  ALSA
 category: technology 
 ---
 
+# 参考文献
+
+ALSA（Advanced Linux Sound Architecture）是Linux内核默认的音频驱动框架。以下是一些参考资料：
+
+http://www.alsa-project.org/main/index.php/Tutorials_and_Presentations
+
+包含官方提供的若干教程。
+
+http://blog.sina.com.cn/s/blog_5707eebf0100tjbe.html
+
+这篇文章介绍了ALSA的代码文件结构。
+
+http://blog.csdn.net/droidphone/article/details/6271122
+
+系列文章共8篇，详细介绍了ALSA和ASOC。该博客还有7篇与DAPM有关的博文。
+
+http://blog.chinaunix.net/uid-20602659-id-2981336.html
+
+系列文章共2篇。主要偏重于ASOC驱动的具体实现，而不是背后的机制原理。
+
 # ALSA System on Chip (ASoC) layer
 
 这是专为嵌入式设备设计的ALSA框架。官网是：
@@ -172,6 +192,34 @@ Gstreamer软音量的实现代码在gst-plugins-base/gst/volume/gstvolume.c中�
 
 除此之外，还有流媒体音量设置gst_stream_volume_set_volume。详见gst-plugins-base/gst-libs/gst/audio/streamvolume.c。
 
+ALSA设置音量的代码片段如下（注意，该片段没有异常处理）：
+
+{% highlight c %}
+void SetAlsaMasterVolume(long volume)
+{
+    long min, max;
+    snd_mixer_t *handle;
+    snd_mixer_selem_id_t *sid;
+    const char *card = "default";
+    const char *selem_name = "Master";
+
+    snd_mixer_open(&handle, 0);
+    snd_mixer_attach(handle, card);
+    snd_mixer_selem_register(handle, NULL, NULL);
+    snd_mixer_load(handle);
+
+    snd_mixer_selem_id_alloca(&sid);
+    snd_mixer_selem_id_set_index(sid, 0);
+    snd_mixer_selem_id_set_name(sid, selem_name);
+    snd_mixer_elem_t* elem = snd_mixer_find_selem(handle, sid);
+
+    snd_mixer_selem_get_playback_volume_range(elem, &min, &max);
+    snd_mixer_selem_set_playback_volume_all(elem, volume * max / 100);
+
+    snd_mixer_close(handle);
+}
+{% endhighlight %}
+
 ALSA的音量操作步骤：（只讨论硬音量）
 
 alsa-lib/src/mixer/simple.c: snd_mixer_selem_set_playback_volume
@@ -198,5 +246,14 @@ linux-kernel/sound/core/control.c: snd_ctl_elem_write_user
 
 linux-kernel/sound/core/control.c: snd_ctl_elem_write
 
-驱动上层的数据放在snd_card.controls链表中。这个链表中的元素是snd_kcontrol类型的。而驱动底层使用snd_kcontrol_new类型的数据。在设备初始化时，使用snd_soc_cnew或snd_ctl_new1函数从snd_kcontrol_new类型的模板中，生成相应的snd_kcontrol类型的数据。
+驱动上层的数据放在snd_card.controls链表中。这个链表中的元素是snd_kcontrol类型的。而驱动底层使用snd_kcontrol_new类型的数据。
 
+在设备初始化时，使用snd_soc_cnew或snd_ctl_new1函数从snd_kcontrol_new类型的模板中，生成相应的snd_kcontrol类型的数据。snd_kcontrol_new类型的数据可以用SOC_SINGLE、SOC_DOUBLE_VALUE之类的宏生成，其默认的put函数是snd_soc_put_volsw。
+
+linux-kernel/sound/soc/soc-ops.c: snd_soc_put_volsw
+
+linux-kernel/sound/soc/soc-io.c: snd_soc_component_update_bits
+
+linux-kernel/drivers/base/regmap/regmap.c: regmap_update_bits_check
+
+使用regmap技术映射I2C、SPI接口地址之后，即可调用相关函数修改相关音频外设的寄存器值了。
