@@ -270,5 +270,3 @@ Director::mainLoop
 DisplayLinkDirector::mainLoop
 
 Director::drawScene
-
-# 

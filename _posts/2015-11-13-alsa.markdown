@@ -257,3 +257,5 @@ linux-kernel/sound/soc/soc-io.c: snd_soc_component_update_bits
 linux-kernel/drivers/base/regmap/regmap.c: regmap_update_bits_check
 
 使用regmap技术映射I2C、SPI接口地址之后，即可调用相关函数修改相关音频外设的寄存器值了。
+
+这里对SOC_SINGLE类的宏，详细说明一下，因为只有这些宏才是真正需要驱动开发者添加或修改的。
