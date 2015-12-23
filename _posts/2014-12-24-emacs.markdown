@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Emacs & Lisp & Logo & 小众语言集中营
+title:  Emacs, Lisp, Logo, 小众语言集中营
 category: technology 
 ---
 

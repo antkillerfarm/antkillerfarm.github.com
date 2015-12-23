@@ -89,3 +89,14 @@ http://my.oschina.net/linuxhunter/blog/35370
 http://xmpp.org/xmpp-software/
 
 这个网页列出了XMPP的各种客户端、服务器以及库的实现。在我们的项目中，服务端使用Openfire，嵌入式客户端使用gloox。
+
+## UPNP
+
+参考资料：
+
+http://www.h3c.com.cn/MiniSite/Technology_Circle/Net_Reptile/The_Five/Home/Catalog/201206/747039_97665_0.htm
+
+这是H3C的一个系列教程中的一篇。
+
+
+

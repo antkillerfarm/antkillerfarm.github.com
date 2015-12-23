@@ -4,11 +4,13 @@ title:  OpenGL研究, GUI框架分析, 虚拟机比较, Win10历险记, WxWidget
 category: technology 
 ---
 
-# 书籍
+# OpenGL研究
+
+## 书籍
 
 我手上其实有几本关于OpenGL的实体书，但是比较了一下之后，发现还是电子版的《OpenGL编程指南》（俗称OpenGL红宝书）写的更好一些。该书目前已经出到第8版，我看的是第7版中文版的电子版。该书的官网是[http://www.opengl-redbook.com](http://www.opengl-redbook.com)，可以从上面获得书中例子的源代码。
 
-# 教程
+## 教程
 
 书籍偏重理论，而教程偏重实践。这里推荐Nate Robins的教程，该教程在上面的书中也多次提及过。它的网址是：[http://user.xmission.com/~nate/opengl.html](http://user.xmission.com/~nate/opengl.html)。
 
@@ -16,9 +18,9 @@ category: technology
 
 教程中示例程序的操作非常简单，基本没什么好说的。唯一需要注意的是，点击鼠标右键会弹出菜单。而且右边屏幕的菜单不可点击，否则程序会退出，但可以用菜单上标注的键盘快捷键选中。这些都是看源代码之后，才发现的。
 
-# 环境准备
+## 环境准备
 
-## Ubuntu
+### Ubuntu
 
 主要需要这几个包：
 
@@ -30,7 +32,7 @@ category: technology
 
 4. libepoxy-dev。GTK项目选择的OpenGL库。
 
-# OpenGL vs Direct X
+## OpenGL vs Direct X
 
 这两者的争斗已经有近20年的历史了。我最初知道它们，还是在2003年，跟随同学W学习VC的时候。当时我的判断是由于Direct X集成了开发游戏所需的一系列工具，因此它在PC上将超越OpenGL。后来的情况也差不多是这样的。
 
@@ -40,7 +42,7 @@ category: technology
 
 # 各种GUI框架分析
 
-# 综合型GUI框架
+## 综合型GUI框架
 
 如MFC、Qt、GTK、Minigui、WxWidget等。这些框架不仅提供窗口管理，而且还提供了丰富的控件，因此从分类学的角度又被称为widget toolkits。除此之外，部分框架还提供了一些非GUI的功能模块，方便用户开发APP。
 
@@ -52,15 +54,15 @@ category: technology
 
 2.以GTK为代表的框架，采用自绘控件，并管理控件消息的方式。我之前在L公司时，公司产品用的就是这种方案，它的特点是APP在所有平台的外观都是一致的。
 
-# 简易型GUI框架
+## 简易型GUI框架
 
 如glut、SDL等。这类框架仅提供窗口系统的功能，不提供控件。
 
-# 特效型
+## 特效型
 
 如cocos2d，clutter等。这类框架构建于前两者之上，提供动画之类的特效。一些诸如圆形按钮、浮动按钮之类的非传统UI特效，在这类框架上实现起来要远比传统框架简单。
 
-# GUI框架的图形渲染
+## GUI框架的图形渲染
 
 自绘型GUI框架需要自己来处理图形渲染。图形渲染主要包括位图贴图和矢量绘图两部分。
 

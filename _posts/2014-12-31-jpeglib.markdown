@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Jpeglib使用指南 & 各种压缩包的压缩和解压方法 & 开源社区分裂史
+title:  Jpeglib使用指南, 各种压缩包的压缩和解压方法, 开源社区分裂史
 category: technology 
 ---
 
