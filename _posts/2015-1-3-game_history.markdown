@@ -24,6 +24,10 @@ Dune 2、2000、3000、Command & Conquer 1、2、3、Red Alart 1、2、Command &
 
 Heroes of Might and Magic 3、4、5
 
+http://heroworld.gamerhome.com/
+
+这是目前网上最全面的英雄无敌系列的资料站。
+
 ## 5.www.valvesoftware.com
 
 CountStrike。之前还玩过Wolfenstein、Delta 3等射击游戏，不过我玩这种游戏头会晕，这也是我不玩World of WarCraft的最大原因。

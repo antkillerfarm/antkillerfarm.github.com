@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  linux内核研究（一）, GStreamer插件
+title:  linux内核研究（一）
 category: technology 
 ---
 
@@ -126,69 +126,27 @@ IO操作之所以用宏实现，是由于这是和具体机器相关的操作，
 
 这里的`$(CONFIG_FOO)`可以为y(编译进内核) 或m(编译成模块)。如果CONFIG_FOO不是y 和m,那么该文件就不会被编译联接了。通过控制`$(CONFIG_FOO)`的值，即可实现.o文件一级的条件编译。
 
-# GStreamer插件
+# GPIO
 
-## 概况
+GPIO相对来说是最简单的一类驱动，代码在drivers/gpio文件夹下。
 
-GStreamer本质上只是一个多媒体应用框架，具体的多媒体播放功能由插件来完成。
+从硬件来说，GPIO有两种输出模式：
 
-http://gstreamer.freedesktop.org/documentation/plugins.html
+push-pull模式电平转换速度快，但是功耗相对会大些。
 
-这个网页就是gstreamer的插件列表。表中列出的插件，分属4个不同的插件集：
+open-drain模式功耗低，且同时具有“线与”的功能。（同时注意GPIO硬件模块内部是否有上拉电阻，如果没有，需要硬件电路上添加额外的上拉电阻）
 
-* gst-plugins-base。这类插件格式规范，维护的也很好。
+参考文献：
 
-* gst-plugins-good。这类插件有高质量的代码（但格式未必规范），而且许可证也符合要求（LGPL或与LGPL兼容的许可证）。
+http://blog.csdn.net/mirkerson/article/details/8464290
 
-* gst-plugins-ugly。这类插件有高质量的代码，但许可证方面有问题。
+# 从gpio_set_value到寄存器操作
 
-* gst-plugins-bad。这类插件尚不成熟，需要更多文档、测试和应用。
+include/linux/gpio.h: gpio_set_value
 
-插件安装方法，以gst-plugins-base为例。
+include/asm-generic/gpio.h: __gpio_set_value
 
-`sudo apt-get install gstreamer1.0-plugins-base`
+drivers/gpio/gpiolib.c: gpiod_set_raw_value
 
-除了上面列出的插件之外，目前的做法，更倾向于使用ffmpeg作为后端编解码库，尤其是编解码更复杂的视频文件。因此在0.10.x时代，提供了gstreamer0.10-ffmpeg插件，而1.x时代，则有gstreamer1.0-libav提供对avcodec、avformat等ffmpeg库的支持。
-
-## 万能插件
-
-GStreamer除了那些完成具体功能的插件以外，还有一些抽象的高级插件，如playbin插件。该插件使用了GStreamer的自动加载（Auto plugging）机制，可以自动根据媒体类型，选择不同的管道播放，相当于是个万能播放插件。对于GStreamer应用开发人员来说，是个相当好用的东西。
-
-playbin插件负责媒体播放的全过程，还有其他一些只负责某个步骤的全能插件：
-
-decodebin：解码插件。
-
-autoaudiosink：音频播放插件
-
-autovideosink：视频播放插件
-
-## 播放视频
-
-播放视频也可以使用playbin插件。这里主要存在以下几个问题：
-
-1）不支持0.10.x系列。由于视频解码主要由ffmpeg来实现，而在Ubuntu14.04以后，官方已经移除了gstreamer0.10-ffmpeg插件，因此很多视频流已经无法处理。
-
-2）xvimagesink错误问题。playbin插件默认使用autovideosink作为视频播放插件，而autovideosink优先使用xvimagesink插件。这个插件的优点是使用了硬件加速的功能，缺点是需要显卡驱动的支持。因此，无论在真实机器还是虚拟机上，都有显卡驱动不匹配，从而导致错误的问题。
-
-这时可以换个思路，自己构建播放视频的管道，其核心是使用ximagesink替代xvimagesink。ximagesink是一个兼容性较好的videosink，缺点是速度没有xvimagesink快。
-
-以下是一个播放视频文件的示例：
-
-`gst-launch-1.0 filesrc location=1.avi ! decodebin name=dmux dmux. ! queue ! audioconvert ! autoaudiosink dmux. ! queue ! videoconvert ! ximagesink`
-
-示例中的`dmux`是个用于定位的标记，两个`dmux.`实际上都指向同一个位置，这样就可以在一个线性的字符串中，表示若干个流水管道。这种表示法多用于多媒体流的分路和合路处理。标记的名称是无所谓的，将`dmux`改为其他字符串，并不影响管道的实际含义。
-
-## 核心插件
-
-核心插件又称gst-plugins-core，目前已经集成到gstreamer代码中，没有独立的库。
-
-和上面提到的四类插件不同。它不提供具体的多媒体编解码功能，而是配合框架，搭建完整的多媒体流水线。核心插件相关的资料参见：
-
-http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-plugins/html/
-
-这里仅对其中一部分插件的功能描述如下：
-
-fakesink：一个数据只进不出的“黑洞”。例如，一个视频文件一般包括视频流和音频流。如果设备只能播放音频（例如音箱），那么视频流对于设备来说，就是没有意义的东西。这时可以用fakesink插件将之吃掉。否则，由于GStreamer会在视频流和音频流之间进行同步，如果视频流没有被消耗，音频流也无法向前进。
-
-tee：1路分成N路的分路器。与之相对应的是funnel：N路合成1路的合路器。
+这里会调用gpio_chip结构的set函数指针。我们只需要在定义gpio_chip结构的时候，将寄存器操作函数设置到set函数指针中即可。gpio_chip结构可在模块初始化阶段，使用gpiochip_add函数添加到系统中。
 

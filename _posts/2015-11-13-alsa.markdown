@@ -259,3 +259,24 @@ linux-kernel/drivers/base/regmap/regmap.c: regmap_update_bits_check
 使用regmap技术映射I2C、SPI接口地址之后，即可调用相关函数修改相关音频外设的寄存器值了。
 
 这里对SOC_SINGLE类的宏，详细说明一下，因为只有这些宏才是真正需要驱动开发者添加或修改的。
+
+例如如下的代码：
+
+{% highlight c %}
+SOC_DOUBLE_R_TLV("Digital Playback Volume", JZCODEC_DACLVOL, JZCODEC_DACRVOL,
+		 0, 255, 0, jzcodec_tlv),
+{% endhighlight %}
+
+使用amixer命令观察该代码的效果：
+
+{% highlight bash %}
+Simple mixer control 'Digital',0
+  Capabilities: pvolume
+  Playback channels: Front Left - Front Right
+  Limits: Playback 0 - 255
+  Mono:
+  Front Left: Playback 255 [100%] [0.00dB]
+  Front Right: Playback 255 [100%] [0.00dB]
+{% endhighlight %}
+
+从中可以看出snd_kcontrol_new的name成员的名字是有特定含义的，不能随便定。
