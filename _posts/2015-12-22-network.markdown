@@ -60,8 +60,8 @@ XMPP和SIP的特点如下表所示：
   </tr>
   <tr>
     <td>通道方式</td>
-    <td>控制和数据通道是一体的，Clent只与Server建立连接，而Client与client之间是没有连接的。Client之间传送的通道是：Client1-->Server1-->Server2-->Client2。这种方式看起来扩展性差，server压力很大，但是能够实现很好的业务功能，比如留言、广播、群聊、状态更新、Blog、微博、数据共享等等。</td>
-    <td>连接建立通道与数据传送通道是各自独立的，连接建立在SIP client与Server之间，而数据传送通道是在Client-->Client之间直接进行的。这个对视频、语音和文件传送业务很合适，但是不适合其他形式的应用。</td>
+    <td>控制和数据通道是一体的，Clent只与Server建立连接，而Client与client之间是没有连接的。Client之间传送的通道是：Client1-->Server1-->Server2-->Client2。这种方式看起来扩展性差，Server压力很大，但是能够实现很好的业务功能，比如留言、广播、群聊、状态更新、Blog、微博、数据共享等等。</td>
+    <td>连接建立通道与数据传送通道是各自独立的，连接建立在Client与Server之间，而数据传送通道是在Client-->Client之间直接进行的。这个对视频、语音和文件传送业务很合适，但是不适合其他形式的应用。</td>
   </tr>
   <tr>
     <td>底层协议</td>

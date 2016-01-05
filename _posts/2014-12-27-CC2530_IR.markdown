@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  CC2530，各种智能家居通信技术比较
+title:  CC2530, 各种智能家居通信技术比较
 category: technology 
 ---
 

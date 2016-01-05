@@ -136,11 +136,19 @@ push-pull模式电平转换速度快，但是功耗相对会大些。
 
 open-drain模式功耗低，且同时具有“线与”的功能。（同时注意GPIO硬件模块内部是否有上拉电阻，如果没有，需要硬件电路上添加额外的上拉电阻）
 
+可在系统的/sys/class/gpio路径下查看当前的GPIO设备。
+
 参考文献：
 
 http://blog.csdn.net/mirkerson/article/details/8464290
 
-# 从gpio_set_value到寄存器操作
+http://www.cnblogs.com/lagujw/p/4226424.html
+
+http://www.aichengxu.com/view/18529
+
+http://wenku.baidu.com/view/a6c4b6bfc77da26925c5b001.html?re=view
+
+## 从gpio_set_value到寄存器操作
 
 include/linux/gpio.h: gpio_set_value
 
@@ -149,4 +157,36 @@ include/asm-generic/gpio.h: __gpio_set_value
 drivers/gpio/gpiolib.c: gpiod_set_raw_value
 
 这里会调用gpio_chip结构的set函数指针。我们只需要在定义gpio_chip结构的时候，将寄存器操作函数设置到set函数指针中即可。gpio_chip结构可在模块初始化阶段，使用gpiochip_add函数添加到系统中。
+
+## 输入事件处理
+
+1.轮询方式
+
+drivers/input/keyboard/gpio_keys_polled.c中提供了轮询方式的输入事件处理。该实现主要是注册了一个名为gpio-keys-polled的input_polled_dev。而input_polled_dev则利用queue_delayed_work实现任务的调度。
+
+2.中断方式
+
+drivers/input/keyboard/gpio_keys_polled.c中提供了中断方式的输入事件处理。该实现最终调用了request_irq注册中断处理函数。
+
+无论是轮询还是中断，处理的结果最终都会调用input_event函数生成应用层可访问的事件。
+
+代码的编译配置在：
+
+{% highlight text %}
+Device Drivers --->
+Input device support --->
+Keyboards --->
+<*> GPIO Buttons
+<*> Polled GPIO buttons
+{% endhighlight %}
+
+## GPIO的使用方向
+
+除了gpio_direction_input和gpio_direction_output之外，devm_gpio_request_one和gpio_request_one也可用于设置使用方向，只要设置好flag参数即可。内核中的leds-gpio和gpio-keys模块都是使用后面的方法设置使用方向的。
+
+## active_low
+
+ active_low的设置要根据硬件的连接，如果按下按键为高电平那么active_low =0，如果按下按键为低电平那么active_low =1.如果这个参数搞错了，按键松开后就不断发按键键码，表现为屏幕上乱动作。
+
+也因为active_low的存在，input_event返回的value实际上并不是GPIO的值，1表示按键按下，0表示按键抬起。
 

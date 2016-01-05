@@ -144,7 +144,9 @@ Read的过程要复杂一些，可分为上层调用部分和底层驱动部分�
 
 ## 概述
 
-I2C的GPIO实现的代码在drivers/i2c/busses/i2c-gpio.c中。从本质来说这是一个i2c_adapter，它使用i2c_bit_add_numbered_bus函数将自己注册到I2S总线上。由于i2c_adapter是直接寻址设备，因此是以platform driver的方式注册的。
+I2C的GPIO实现的代码在drivers/i2c/busses/i2c-gpio.c中。从本质来说这是一个i2c_adapter，它使用i2c_bit_add_numbered_bus函数将自己注册到I2S总线上。
+
+由于i2c_adapter是直接寻址设备，因此I2C的GPIO实现是以platform driver的方式注册的，可以在/sys/devices/platform/i2c-gpio.0/i2c-0路径下查看总线上现有的设备（这里的0指的是0号i2c总线，某些系统中可能有不止一条i2c总线）。
 
 ## Write
 
@@ -268,3 +270,4 @@ Linux既然由若干模块组成，那么这些模块在启动阶段，必然存
 上面的宏中，越前面的优先级越高。同一优先级下，按照链接顺序确定加载顺序，因此可以通过修改链接文件来修改加载顺序，但一般来说，并没有这个必要。
 
 运行阶段的加载，由于是动态加载，没有加载顺序的问题（程序员代码控制加载顺序），因此这些宏都被编译成module_init。
+

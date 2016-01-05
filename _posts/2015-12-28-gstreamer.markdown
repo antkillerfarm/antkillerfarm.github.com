@@ -192,9 +192,9 @@ Pad Templates:
 
 从中可知，tee插件SRC Pad的模板名就是`src%d`。
 
-# GStreamer的Python开发教程
+## GStreamer的Python开发教程
 
-## Step 0
+### Step 0
 
 教程的起点——helloworld。这是一个最基本的GStreamer播放器的例子，使用GTK作为GUI工具。
 
@@ -208,7 +208,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/python-g
 
 2)出错的时候，先用`gst-inspect`检查一下，相应的插件是否安装好了。
 
-## Step 1
+### Step 1
 
 在这一步中，我们给播放器添加了暂停和进度条控制的功能。
 
@@ -216,7 +216,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/python-g
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/gstreamer/step1/my-gst-player.py
 
-## Step 2
+### Step 2
 
 在这一步中，我们的修改如下：
 
@@ -228,7 +228,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/gstreamer/step1
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/gstreamer/step2/my-gst-player.py
 
-## Step 3
+### Step 3
 
 在这一步中，我们使用一般的GStreamer函数构建和Step 2相同的pipeline。
 
