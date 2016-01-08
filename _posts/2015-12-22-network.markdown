@@ -123,13 +123,17 @@ http://www.h3c.com.cn/MiniSite/Technology_Circle/Net_Reptile/The_Five/Home/Catal
     <td>Qualcomm</td>
   </tr>
   <tr>
-    <td rowspan=2>Wifi Low Power SOC</td>
+    <td rowspan=3>Wifi Low Power SOC</td>
     <td>QCA4002</td>
     <td>Qualcomm Atheros</td>
   </tr>
   <tr>
     <td>RTL8711AF</td>
     <td>Realtek</td>
+  </tr>
+  <tr>
+    <td>ESP8266</td>
+    <td>Espressif(乐鑫)</td>
   </tr>
   <tr>
     <td>BLE SOC</td>

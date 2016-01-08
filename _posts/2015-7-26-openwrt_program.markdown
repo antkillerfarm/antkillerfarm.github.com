@@ -54,16 +54,6 @@ http://www.ccs.neu.edu/home/noubir/Courses/CS6710/S12/material/OpenWrt_Dev_Tutor
 
 最后我尝试运行了一下`make menuconfig`，终于找到了问题的症结。不同于编译源代码时候的选项，这里的选项很少，碰巧找到了gpio-button-hotplug，然后选中该项，再次编译。这一下终于在bin/x86_64/packages/base下找到了需要的ipk文件。
 
-# 扩展包
-
-大多数情况下，我们并不需要亲手编写OpenWrt模块，因为日常使用中的绝大部分功能，OpenWrt项目都提供了相应的扩展包。因此，如何寻找、安装扩展包，就成为一个经常性的问题。
-
-官方扩展包可以在代码根目录下的feeds.conf.default文件中找到。
-
-从这里可以看出，OpenWrt项目早期的代码托管在openwrt.org下，而最近的开发已经迁移至github。因此，如果有的包在源代码中没有看到的话，可以到openwrt.org下碰碰运气。
-
-一个软件包可以生成独立的ipk安装文件（Modularizes），也可以直接打包进img中（Built-in）。这个生成选项在`make menuconfig`的选项菜单中，选择Y就是Built-in，选择M就是Modularizes。
-
 # OpenWrt常见问题
 
 ## 1.`undefined reference to '__stack_chk_fail_local'`
@@ -262,4 +252,10 @@ U盘驱动可分为两个层次：
 
 http://blog.csdn.net/yicao821/article/details/45370669
 
+# hotplug-button
 
+kmod-gpio-button-hotplug     Simple GPIO Button Hotplug driver
+
+kmod-button-hotplug          Button Hotplug driver
+
+这两个内核模块不在内核主线中，需要在`make menuconfig`中单独勾选。
