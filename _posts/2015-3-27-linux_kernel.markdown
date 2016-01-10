@@ -184,6 +184,12 @@ Keyboards --->
 
 除了gpio_direction_input和gpio_direction_output之外，devm_gpio_request_one和gpio_request_one也可用于设置使用方向，只要设置好flag参数即可。内核中的leds-gpio和gpio-keys模块都是使用后面的方法设置使用方向的。
 
+此外，在board级的GPIO实现中，需要注意以下几点：
+
+1.是否有单独的寄存器用于设置使用方向。这个问题与具体的硬件有关，有的硬件可根据赋值语句的方向，自动切换GPIO的使用方向。
+
+2.如果有单独的设置使用方向的寄存器的话，需要在gpio_set_value和gpio_get_value函数的实现中，将使用方向的设置操作添加进去。I2C的algo代码并不会在set或着get操作时，修改GPIO的使用方向。
+
 ## active_low
 
  active_low的设置要根据硬件的连接，如果按下按键为高电平那么active_low =0，如果按下按键为低电平那么active_low =1.如果这个参数搞错了，按键松开后就不断发按键键码，表现为屏幕上乱动作。
