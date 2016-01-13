@@ -339,3 +339,13 @@ ra0 rai0：无线设备，它们各自对应一个SSID，分别是2.4G和5G。
 从这里可以看出，OpenWrt项目早期的代码托管在openwrt.org下，而最近的开发已经迁移至github。因此，如果有的包在源代码中没有看到的话，可以到openwrt.org下碰碰运气。
 
 一个软件包可以生成独立的ipk安装文件（Modularizes），也可以直接打包进img中（Built-in）。这个生成选项在`make menuconfig`的选项菜单中，选择Y就是Built-in，选择M就是Modularizes。
+
+# iptables设置
+
+iptables是Openwrt的防火墙软件命令，可参见：
+
+http://wiki.openwrt.org/doc/howto/netfilter
+
+这里将主要用法示例如下：
+
+`iptables -I zone_wan_input 4 -p tcp --dport 22 -j ACCEPT # allow SCP on WAN port`

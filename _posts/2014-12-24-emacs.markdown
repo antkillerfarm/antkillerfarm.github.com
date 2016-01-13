@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Emacs, Lisp, Logo, 小众语言集中营
+title:  Emacs, Vi, Lisp, Logo, 小众语言集中营
 category: technology 
 ---
 
@@ -147,6 +147,10 @@ Leave Hexl mode, going back to the major mode this buffer had before you invoked
 (setq recentf-max-saved-items 100)
 (recentf-mode 1)
 {% endhighlight %}
+
+# Vi
+
+dd 删除整行
 
 # Lisp & GUI
 
