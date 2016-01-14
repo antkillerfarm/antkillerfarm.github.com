@@ -30,7 +30,16 @@ h1 {
   font-size: 140%;
 }
 
-h2, h3, h4, h5, h6 {
+h2 {
+  font-size: 120%;
+}
+
+h3 {
+  font-size: 100%;
+  font-style:oblique;
+}
+
+h4, h5, h6 {
   font-size: 100%;
 }
 

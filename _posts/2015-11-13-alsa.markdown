@@ -280,3 +280,4 @@ Simple mixer control 'Digital',0
 {% endhighlight %}
 
 从中可以看出snd_kcontrol_new的name成员的名字是有特定含义的，不能随便定。
+

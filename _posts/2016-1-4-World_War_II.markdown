@@ -1,9 +1,8 @@
 ---
 layout: post
 title:  二战漫谈（一）
-category: non technology 
+category: non_technology 
 ---
-
 
 最近阅读了一些二战相关的资料，对二战历史有了进一步的认识，也改变了许多之前有些错误的观点。
 

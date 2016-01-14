@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  大杂烩
+title:  大杂烩, 硬盘安装Linux
 category: technology 
 ---
 
@@ -20,9 +20,7 @@ Oracle的广告词，给当时尚在学校的我产生了这样的错觉：“�
 
 结论：不要太过依赖数据库，有的时候没有数据库，更快，更简单。
 
-# 大杂烩
-
-## Symbian开发
+# Symbian开发
 
 1)试着装好了Carbide c++以及S60 3rd SDK后，却发现不能在C盘以外的地方建工程（在默认的C:\Symbian\Carbide\workspace之外建工程是可以的），真没想到Nokia出的工具还有这样不友好的限制。
 
@@ -36,7 +34,7 @@ http://www.opda.com.cn/viewthread.php?tid=182217&page=1#pid3004888
 
 如果在开始利用向导生成代码时，没有选择armv5或gcce，而只选择了模拟器的情况下，在代码生成之后，再添加armv5或gcce的话，是不能自动生成sis文件的，可以在Project->Properties->Carbide c++->Build Configurations->SIS Builder中添加。
 
-## Sqlite
+# Sqlite
 
 《Inside Sqlite》是最好的参考书，目前已经有人把它翻译成中文，可以在CSDN上找到。
 
@@ -50,7 +48,7 @@ http://www.99inf.net/SoftwareDev/VC/39396.htm
 
 http://www.cnblogs.com/giszhang/archive/2008/10/09/1307509.html
 
-## WebKit
+# WebKit
 
 WebKit的代码可以从它的官网www.webkit.org下获得。
 
@@ -71,11 +69,11 @@ http://trac.webkit.org/wiki/BuildingGtk
 3)gtk-doc-tools
 4)libgail-dev
 
-## Apache与CGI
+# Apache与CGI
 
 本来以为CGI编程会比较复杂，没想到从原理的角度，似乎比之前的JSP还要简单一些。这次主要是用C来编写CGI，使用的web服务器是Apache 2.0.55。网上看到了几篇同类的文章，但大多过于简略，有的甚至颇有错误，所以自己就重新写一篇吧。
 
-### 1）配置httpd.conf
+## 1）配置httpd.conf
 
 如果是默认安装的话，只要将
 
@@ -87,7 +85,7 @@ http://trac.webkit.org/wiki/BuildingGtk
 
 即可。其他的完全不用改，只要你将后面编好后的.exe放到默认的cgi-bin中就行了。如果你要将.exe放到其他路径下的话，ScriptAlias和Options ExecCGI会派上用场。（详细的用法，翻手册查吧！）别忘了修改了配置之后，要重启Apache。
 
-### 2）最简单的例子
+## 2）最简单的例子
 
 {% highlight c %}
 #include <stdio.h>
@@ -129,7 +127,7 @@ print "Hello, World.";
 
 可以在http://www.boutell.com/cgic/中获得CGIC的代码，这是一个C写的CGI开发库，本文的示例就是在这个库的代码的启示下写出来的。
 
-### 3)Linux下的Apache目录结构
+## 3)Linux下的Apache目录结构
 Windows下Apache的各个目录都放在一起，因此使用起来比较方便，而Linux下Apache的各个目录分散在各个地方不是太好找，特记录一下，以作备忘。
 
 conf在/etc/apache2下，但是Linux下的httpd.conf实际上是个空文件，它的内容被分散到该目录下的其他文件中。
@@ -146,7 +144,19 @@ modules在/usr/lib/apache2下。
 
 如上所示的命令，在启动命令行之后，会在命令行下执行dir命令。
 
-## 小杂谈
+# Visio
+
+## 如何保存成图片
+
+1.选中打算保存的区域。
+
+2.“文件”->“另存为”。
+
+3.如果需要缩放的话，调整保存的大小即可。
+
+# 硬盘安装Linux
+
+2013.9
 
 最近重新开始研究Android和Linux，由于已经快2年没有弄过了。因此之前下载的linux发行版也不打算再继续用了，省得到了Android开发的时候还要更新一大堆的包。
 

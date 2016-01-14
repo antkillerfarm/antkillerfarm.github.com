@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  两晋南北朝人物志（五）
-category: non technology 
+category: non_technology 
 ---
 
 ## 高欢

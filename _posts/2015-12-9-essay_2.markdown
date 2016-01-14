@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  随笔（二）
-category: non technology 
+category: non_technology 
 ---
 
 # 活佛趣谈

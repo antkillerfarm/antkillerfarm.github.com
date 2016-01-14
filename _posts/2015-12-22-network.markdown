@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  网络杂谈, 芯片杂烩
+title:  网络杂谈, 芯片杂烩, ASOC对多Codec的支持
 category: technology 
 ---
 
@@ -182,3 +182,20 @@ http://www.h3c.com.cn/MiniSite/Technology_Circle/Net_Reptile/The_Five/Home/Catal
   </tr>
 </table>
 
+# ASOC对多Codec的支持
+
+ASOC在Linux 3.X时代最大的改进就是添加了对多codec的支持。这里我们首先描述一下多Codec在音频设备设计中的意义，以及它的一些实现方案。
+
+![](/images/article/multi_codec_0.png)
+
+上图是实现方案A，它的特点是：
+
+1.1个MCU通过2个Codec，间接连接了4个Speaker。在当前的音频设计中，音箱的扬声器个数越来越多，但是单个Codec所能提供的声道数量有限。当扬声器个数超过这一数量限制时，就需要采用多Codec方案了。
+
+2.两个Codec有独立的I2C控制通道。这里的“独立”是逻辑意义上的。在物理上，两个Codec可挂在同一条I2C总线上，以不同的从机地址加以区分。
+
+3.两个Codec共享I2S输入。
+
+![](/images/article/multi_codec_1.png)
+
+上图是实现方案B，它和方案A的区别为：两个Codec有独立的I2S输入。

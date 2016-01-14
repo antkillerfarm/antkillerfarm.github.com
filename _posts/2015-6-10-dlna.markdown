@@ -248,6 +248,22 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/openwrt_feeds
 
 `/etc/init.d/gmediarender start`
 
+# Airplay
+
+Airplay是Apple推出的媒体共享协议，可用SharePort包实现之。
+
+和DLNA、Airplay类似的协议还有Miracast和腾讯的QPlay，其中的QPlay基本山寨DLNA。
+
+参考文献：
+
+http://www.leiphone.com/news/201406/airplay-dlna-miracast.html
+
+这篇文章介绍了DLNA、Airplay和Miracast等协议。
+
+http://www.wi-fi.org/discover-wi-fi/wi-fi-certified-miracast
+
+这是Miracast协议的官网。
+
 # linux音频驱动
 
 ## 查找PC本机驱动
