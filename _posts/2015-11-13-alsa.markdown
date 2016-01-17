@@ -258,6 +258,8 @@ linux-kernel/drivers/base/regmap/regmap.c: regmap_update_bits_check
 
 使用regmap技术映射I2C、SPI接口地址之后，即可调用相关函数修改相关音频外设的寄存器值了。
 
+## 4.SOC_SINGLE类宏
+
 这里对SOC_SINGLE类的宏，详细说明一下，因为只有这些宏才是真正需要驱动开发者添加或修改的。
 
 例如如下的代码：
@@ -281,3 +283,16 @@ Simple mixer control 'Digital',0
 
 从中可以看出snd_kcontrol_new的name成员的名字是有特定含义的，不能随便定。
 
+有的音频芯片，如TAS5086，它的音量寄存器用0xFF表示静音，而用0x0表示最大音量，这种情况下需要将SOC_SINGLE类宏的invert参数设为1。
+
+## 5.SOC_SINGLE_TLV类宏
+
+除了SOC_SINGLE类宏之外，还有SOC_SINGLE_TLV类宏。后者和前者的主要区别在于：用TLV数组完成音量到寄存器值之间的转换。
+
+例如如下代码：
+
+{% highlight c %}
+static const DECLARE_TLV_DB_SCALE(tas5086_dac_tlv, -10350, 50, 1);
+{% endhighlight %}
+
+-10350是音量的最小值，表示-103.5dB。50是相邻的两个寄存器值之间的音量差（即步长），这里表示0.5dB。也就是说这个宏设定的音量值的单位都是0.01dB。

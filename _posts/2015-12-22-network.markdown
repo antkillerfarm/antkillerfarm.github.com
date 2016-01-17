@@ -184,6 +184,8 @@ http://www.h3c.com.cn/MiniSite/Technology_Circle/Net_Reptile/The_Five/Home/Catal
 
 # ASOC对多Codec的支持
 
+## 音频设计方案
+
 ASOC在Linux 3.X时代最大的改进就是添加了对多codec的支持。这里我们首先描述一下多Codec在音频设备设计中的意义，以及它的一些实现方案。
 
 ![](/images/article/multi_codec_0.png)
@@ -198,4 +200,105 @@ ASOC在Linux 3.X时代最大的改进就是添加了对多codec的支持。这�
 
 ![](/images/article/multi_codec_1.png)
 
-上图是实现方案B，它和方案A的区别为：两个Codec有独立的I2S输入。
+上图是实现方案B，它和方案A的区别为：两个Codec有独立的I2S输入。方案B根据用途，又可分为两种子方案：
+
+1.方案B1：两个I2S的输入相同。
+
+2.方案B2：两个I2S的输入不同。
+
+## 方案A的代码实现
+
+1.首先讨论I2C控制的实现，这里以TAS5731M芯片为例。
+
+在board初始化阶段，为两个codec各自生成一个I2C设备。
+
+{% highlight c %}
+static struct i2c_board_info __initdata rtl819xd_i2c_devices[] = {
+	{
+		I2C_BOARD_INFO("tas5731", 0x1a), //TAS5731M Master
+	},
+	{
+		I2C_BOARD_INFO("tas5731", 0x1b), //TAS5731M Sub
+	},
+};
+{% endhighlight %}
+
+2.方案A由于共享I2S，因此在驱动角度，必须将两个codec驱动整合到一个card之中。
+
+相应的machine代码为：
+
+{% highlight c %}
+static struct snd_soc_dai_link rtl819xd_jzcodec_dai[] = {
+	{
+		.name = "JZCODEC_MASTER",
+		.stream_name = "JZCODEC_MASTER",
+		.cpu_dai_name = "rtl8197d-i2s",
+		.codec_name = "tas5731.0-001a",
+		.codec_dai_name = "tas5731_master",
+		.init = rtl819xd_jzcodec_jzcodec_init,
+		.ops = &rtl819xd_jzcodec_ops,
+		.platform_name	= "rtl819x-pcm-audio",
+	},
+	{
+		.name = "JZCODEC_SUB",
+		.stream_name = "JZCODEC_SUB",
+		.cpu_dai_name = "rtl8197d-i2s",
+		.codec_name = "tas5731.0-001b",
+		.codec_dai_name = "tas5731_sub",
+		.init = rtl819xd_jzcodec_jzcodec_init,
+		.ops = &rtl819xd_jzcodec_ops,
+	}
+};
+{% endhighlight %}
+
+相应的codec代码为：
+
+{% highlight c %}
+static struct snd_soc_dai_driver tas5731_dai[] = {
+	{
+		.name = "tas5731_master",
+		.id = 0,
+		.playback = {
+			.stream_name	= "Playback",
+			.channels_min	= 2,
+			.channels_max	= 6,
+			.rates		= TAS5731_PCM_RATES,
+			.formats	= TAS5731_PCM_FORMATS,
+		},
+		.ops = &tas5731_dai_ops,
+	},
+	{
+		.name = "tas5731_sub",
+		.id = 1,
+		.playback = {
+			.stream_name	= "Playback",
+			.channels_min	= 2,
+			.channels_max	= 6,
+			.rates		= TAS5731_PCM_RATES,
+			.formats	= TAS5731_PCM_FORMATS,
+		},
+		.ops = &tas5731_dai_ops,
+	}
+};
+{% endhighlight %}
+
+这里对代码的要点做一个解释：
+
+1）codec_name的命名规则。codec_name一般以X.Y-Z的形式命名。
+
+其中X为codec的I2C driver名称。注意这里的名称和I2C_BOARD_INFO中定义的名称不同，后者是根据i2c_device_id中定义的名称来命名的。
+
+Y表示I2C总线号。如果MCU有超过一条I2C总线的话，需要使用总线号加以区分。
+
+Z表示Codec设备的从机地址。
+
+2）由于两个Codec共享I2S输入，因此只需要其中一个Codec定义platform_name即可。
+
+## 方案B1的代码实现
+
+和方案A的差别在于：两个Codec都需要定义自己的platform_name。
+
+## 方案B2的代码实现
+
+这种情况用两个独立的card来解决就可以了。
+
