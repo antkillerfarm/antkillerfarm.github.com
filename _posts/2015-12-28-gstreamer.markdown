@@ -4,7 +4,7 @@ title:  GStreamer
 category: technology 
 ---
 
-## 概况
+# 概况
 
 当前GStreamer主要有两个大的版本分支：
 
@@ -12,7 +12,9 @@ category: technology
 
 2)1.x系列。2012年以来发布的版本系列，也是官方推荐的版本系列。只有英文的用户手册，但手册的内容与0.10.x相差不大，尽管API已经不再兼容旧版本。以下的描述以1.x系列为准。1.x系列被设计为可以和0.10.x系列在系统中共存，因此在同一台电脑上，同时安装0.10.x系列和1.x系列是完全没有冲突的。
 
-## GStreamer插件
+# GStreamer插件
+
+## 插件分类
 
 GStreamer本质上只是一个多媒体应用框架，具体的多媒体播放功能由插件来完成。
 
@@ -34,6 +36,20 @@ http://gstreamer.freedesktop.org/documentation/plugins.html
 
 除了上面列出的插件之外，目前的做法，更倾向于使用ffmpeg作为后端编解码库，尤其是编解码更复杂的视频文件。因此在0.10.x时代，提供了gstreamer0.10-ffmpeg插件，而1.x时代，则有gstreamer1.0-libav提供对avcodec、avformat等ffmpeg库的支持。
 
+## 核心插件
+
+核心插件又称gst-plugins-core，目前已经集成到gstreamer代码中，没有独立的库。
+
+和上面提到的四类插件不同。它不提供具体的多媒体编解码功能，而是配合框架，搭建完整的多媒体流水线。核心插件无须选择（也不能选择），默认已经集成到gstreamer的插件库中，它的相关资料参见：
+
+http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-plugins/html/
+
+这里仅对其中一部分插件的功能描述如下：
+
+fakesink：一个数据只进不出的“黑洞”。例如，一个视频文件一般包括视频流和音频流。如果设备只能播放音频（例如音箱），那么视频流对于设备来说，就是没有意义的东西。这时可以用fakesink插件将之吃掉。否则，由于GStreamer会在视频流和音频流之间进行同步，如果视频流没有被消耗，音频流也无法向前进。
+
+tee：1路分成N路的分路器。与之相对应的是funnel：N路合成1路的合路器。
+
 ## 万能插件
 
 GStreamer除了那些完成具体功能的插件以外，还有一些抽象的高级插件，如playbin插件。该插件使用了GStreamer的自动加载（Auto plugging）机制，可以自动根据媒体类型，选择不同的管道播放，相当于是个万能播放插件。对于GStreamer应用开发人员来说，是个相当好用的东西。
@@ -45,6 +61,28 @@ decodebin：解码插件。
 autoaudiosink：音频播放插件
 
 autovideosink：视频播放插件
+
+# GStreamer应用
+
+## 相关工具软件
+
+GStreamer提供了一个工具软件集——gstreamer-tools。其安装方法如下：
+
+`sudo apt-get install gstreamer-tools gstreamer1.0-tools`
+
+具体的工具列表参见
+
+http://blog.csdn.net/jackyy313/article/details/6275673
+
+注意1.x系列的工具名和0.10.x系列的略有不同，例如`gst-launch`在1.x系列中叫做`gst-launch-1.0`。
+
+这里对其中的一些工具，稍作阐述。
+
+gst-launch：这个工具可以用于创建并运行GStreamer管道。下面是一个播放mp3文件的示例:
+
+`gst-launch filesrc location=1.mp3 ! mad ! audioconvert ! autoaudiosink`
+
+需要注意的是上面的命令中，`!`两边都要留空格，不然命令会执行错误。
 
 ## 播放视频
 
@@ -62,20 +100,31 @@ autovideosink：视频播放插件
 
 示例中的`dmux`是个用于定位的标记，两个`dmux.`实际上都指向同一个位置，这样就可以在一个线性的字符串中，表示若干个流水管道。这种表示法多用于多媒体流的分路和合路处理。标记的名称是无所谓的，将`dmux`改为其他字符串，并不影响管道的实际含义。
 
-## 核心插件
+## 插件裁剪
 
-核心插件又称gst-plugins-core，目前已经集成到gstreamer代码中，没有独立的库。
+这里以播放mp3文件为例，说明插件裁剪的相关原则。插件裁剪问题在嵌入式设备上遇到的比较多。受限于有限的存储空间，我们一般不可能将所有的插件都集成进设备中，而只能根据产品需求，将必要的插件集成进去。这时就遇到一个问题：我们该如何选择被集成的插件集合呢？
 
-和上面提到的四类插件不同。它不提供具体的多媒体编解码功能，而是配合框架，搭建完整的多媒体流水线。核心插件相关的资料参见：
+1.上层的应用程序一般都是通过playbin插件播放音频文件。因此playbin必选。
 
-http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-plugins/html/
+2.解码器根据音频格式的不同而不同。例如mp3文件可选用mad作为解码插件。
 
-这里仅对其中一部分插件的功能描述如下：
+3.播放也需要相应的插件，比如Linux上最常用的alsasink。
 
-fakesink：一个数据只进不出的“黑洞”。例如，一个视频文件一般包括视频流和音频流。如果设备只能播放音频（例如音箱），那么视频流对于设备来说，就是没有意义的东西。这时可以用fakesink插件将之吃掉。否则，由于GStreamer会在视频流和音频流之间进行同步，如果视频流没有被消耗，音频流也无法向前进。
+4.由于playbin采用了Auto plugging机制，因此类似autodetect、audioconvert之类的auto插件也是必选，否则会导致playbin的工作异常。
 
-tee：1路分成N路的分路器。与之相对应的是funnel：N路合成1路的合路器。
+## 多设备的网络时钟同步
 
+多个设备协同播放同一个媒体流的时候，设备之间存在着时钟同步的问题。针对这个问题，GStreamer提供了网络时钟同步的功能。
+
+这个功能主要涉及两个对象：GstNetTimeProvider和GstNetClientClock。前者用于提供时钟源，而后者负责获取时钟源的时钟。
+
+对于更精确的时钟同步，在GStreamer v1.6之后，还提供了GstPtpClock对象。这个对象仅提供了PTP协议的Client功能。
+
+PTP协议相关的规范是IEEE1588:2008。其服务器实现有：
+
+ptpd：http://ptpd.sourceforge.net/
+
+# GStreamer编程
 
 ## 开发环境搭建
 
@@ -102,38 +151,6 @@ LDFLAGS = `pkg-config --libs gstreamer-0.10`
 {% endhighlight %}
 
 这个例子同时也是如何使用pkg-config来管理同一软件的不同版本的范例。GTK+ 2.x和GTK+ 3.x的共存，也是采用了同样的方法。
-
-## 相关工具软件
-
-GStreamer提供了一个工具软件集——gstreamer-tools。其安装方法如下：
-
-`sudo apt-get install gstreamer-tools gstreamer1.0-tools`
-
-具体的工具列表参见
-
-http://blog.csdn.net/jackyy313/article/details/6275673
-
-注意1.x系列的工具名和0.10.x系列的略有不同，例如`gst-launch`在1.x系列中叫做`gst-launch-1.0`。
-
-这里对其中的一些工具，稍作阐述。
-
-gst-launch：这个工具可以用于创建并运行GStreamer管道。下面是一个播放mp3文件的示例:
-
-`gst-launch filesrc location=1.mp3 ! mad ! audioconvert ! autoaudiosink`
-
-需要注意的是上面的命令中，`!`两边都要留空格，不然命令会执行错误。
-
-## 多设备的网络时钟同步
-
-多个设备协同播放同一个媒体流的时候，设备之间存在着时钟同步的问题。针对这个问题，GStreamer提供了网络时钟同步的功能。
-
-这个功能主要涉及两个对象：GstNetTimeProvider和GstNetClientClock。前者用于提供时钟源，而后者负责获取时钟源的时钟。
-
-对于更精确的时钟同步，在GStreamer v1.6之后，还提供了GstPtpClock对象。这个对象仅提供了PTP协议的Client功能。
-
-PTP协议相关的规范是IEEE1588:2008。其服务器实现有：
-
-ptpd：http://ptpd.sourceforge.net/
 
 ## 教程
 
@@ -248,3 +265,4 @@ new_pad_type = new_pad.query_caps(None).to_string()
 {% endhighlight %}
 
 从这里也可以看出，gst_parse_launch会自动处理媒体流的格式匹配问题，而使用普通函数的时候，必须自己编程处理格式匹配的问题。
+

@@ -250,7 +250,17 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/openwrt_feeds
 
 # Airplay
 
-Airplay是Apple推出的媒体共享协议，可用SharePort包实现之。
+Airplay是Apple推出的媒体共享协议，可用Shairport包实现之。
+
+Shairport是James Laird发起的开源项目，其官网是：
+
+https://github.com/abrasive/shairport
+
+Shairport基于Airplay v1协议，仅可用于推送音频流。（推送视频、图片需要用到Airplay v2协议）目前作者已经声明不再维护该项目。该项目比较好的分支有：
+
+https://github.com/mikebrady/shairport-sync
+
+这个分支添加了多设备音频流同步方面的内容。
 
 和DLNA、Airplay类似的协议还有Miracast和腾讯的QPlay，其中的QPlay基本山寨DLNA。
 

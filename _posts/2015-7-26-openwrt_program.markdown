@@ -259,3 +259,10 @@ kmod-gpio-button-hotplug     Simple GPIO Button Hotplug driver
 kmod-button-hotplug          Button Hotplug driver
 
 这两个内核模块不在内核主线中，需要在`make menuconfig`中单独勾选。
+
+# 组建N2N VPN网络实现内网设备之间的相互访问
+
+参见：
+
+http://www.shuyz.com/n2n-vpn-network-introduction-and-config.html
+

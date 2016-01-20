@@ -90,6 +90,16 @@ http://xmpp.org/xmpp-software/
 
 这个网页列出了XMPP的各种客户端、服务器以及库的实现。在我们的项目中，服务端使用Openfire，嵌入式客户端使用gloox。
 
+## osip & eXosip
+
+osip是SIP协议的一个开源实现。其官网为：
+
+http://savannah.gnu.org/projects/osip
+
+eXosip在osip上封装了一层，简化了在多媒体会话方面SIP协议的使用。其官网为：
+
+http://savannah.nongnu.org/projects/exosip/
+
 ## UPNP
 
 参考资料：
@@ -97,6 +107,24 @@ http://xmpp.org/xmpp-software/
 http://www.h3c.com.cn/MiniSite/Technology_Circle/Net_Reptile/The_Five/Home/Catalog/201206/747039_97665_0.htm
 
 这是H3C的一个系列教程中的一篇。
+
+## NTP
+
+Network Time Protocol，是用来让计算机之间实现时间同步的协议。
+
+网上可用的NTP Server列表，可参见：
+
+http://www.pool.ntp.org/en/
+
+NTP的Client有很多，这里使用ntpclient软件。它的官网：
+
+http://doolittle.icarus.com/ntpclient/
+
+调试的时候，可以使用如下命令设置时间：
+
+`sudo date -s 10:00:00`
+
+修改之后，可用`date`命令查看系统当前时间，确认修改的效果。
 
 # 芯片杂烩
 
