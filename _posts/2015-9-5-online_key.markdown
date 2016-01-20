@@ -101,3 +101,7 @@ stmt_list:
 
 为什么要添加这一句呢？因为yacc在处理被解析的文本时，如果文本不能最终归结为一个单一的语法目标的时候，程序也会报错。
 
+代码示例参见：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/mylex
+
