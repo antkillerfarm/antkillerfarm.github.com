@@ -169,9 +169,13 @@ http://doolittle.icarus.com/ntpclient/
     <td>NXP</td>
   </tr>
   <tr>
-    <td>Wifi SOC</td>
+    <td rowspan=2>Wifi SOC</td>
     <td>RTL8881AB</td>
     <td>Realtek</td>
+  </tr>
+  <tr>
+    <td>MT7620A</td>
+    <td>MTK</td>
   </tr>
   <tr>
     <td rowspan=2>Nand Flash</td>
@@ -183,7 +187,7 @@ http://doolittle.icarus.com/ntpclient/
     <td>Hynix</td>
   </tr>
   <tr>
-    <td rowspan=3>Wifi Audio</td>
+    <td rowspan=4>Wifi Audio</td>
     <td>RTL8871AM</td>
     <td>Realtek</td>
   </tr>
@@ -194,6 +198,10 @@ http://doolittle.icarus.com/ntpclient/
   <tr>
     <td>AR9331</td>
     <td>Qualcomm Atheros</td>
+  </tr>
+  <tr>
+    <td>ATV3603</td>
+    <td>炬力</td>
   </tr>
   <tr>
     <td rowspan=3>Audio Codec</td>
