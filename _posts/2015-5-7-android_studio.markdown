@@ -209,7 +209,16 @@ https://android-git.linaro.org/git/
 
 推荐使用中科大的源，作为清华的替代品。
 
-## Android上的PC模拟器
+# Android上的PC模拟器
 
 Exagear、Winulator等，可以用来玩PC老游戏。
 
+# Java反射机制
+
+Java反射机制容许程序在运行时加载、探知、使用编译期间完全未知的classes。参见：
+
+http://blog.csdn.net/yongjian1092/article/details/7364451
+
+反射机制的一个副产品是可以访问私有变量和私有方法。（笔试题的常客）
+
+http://blog.csdn.net/nisaijie/article/details/5692901

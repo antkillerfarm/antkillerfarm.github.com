@@ -113,7 +113,9 @@ $ echo $TERMINFO
 
 设置环境变量的方法：
 
-1）临时的：使用export命令声明即可，变量在关闭shell时失效。
+1）临时的：使用export命令声明即可，变量在关闭shell时失效。示例如下：
+
+`export PATH=/home/xyz/bin:$PATH;`
 
 2）永久的：需要修改配置文件，变量永久生效。
 

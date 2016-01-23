@@ -156,6 +156,12 @@ http://www.linux-mtd.infradead.org/
 
 `sudo apt-get install mtd-utils`
 
+mtd-utils还可用于烧写分区。例如如下命令：
+
+`mtd write xyz.uimage linux`
+
+其中`xyz.uimage`是镜像文件名，`linux`是分区名称。
+
 参考：
 
 http://blog.csdn.net/andy205214/article/details/7390287
