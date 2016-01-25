@@ -24,7 +24,7 @@ http://www.right.com.cn/forum/forum.php?mod=viewthread&action=printable&tid=1359
 
 http://mayecn.com/blog/2013/04/23/dlna/
 
-http://www.musicpd.org/
+这也是一篇AirPlay的帖子。
 
 # DLNA各种设备角色的分析
 
@@ -95,12 +95,6 @@ DLNA定义了两大类的交互。
 * UPnPlay
 
 DMR+DMP+DMC。
-
-* Cling
-
-开源项目，其官网为：
-
-http://4thline.org/projects/cling/
 
 ## 各种服务端软件能力对比
 
@@ -273,6 +267,30 @@ http://www.leiphone.com/news/201406/airplay-dlna-miracast.html
 http://www.wi-fi.org/discover-wi-fi/wi-fi-certified-miracast
 
 这是Miracast协议的官网。
+
+# DLNA的Android开发
+
+目前来说，在Android中用到的UPNP框架基本为cyberlink框架和cling框架。这两个框架都是个人作品。
+
+前者的作者是Satoshi Konno(个人主页：http://www.cybergarage.org/)，一个45岁左右的日本资深码农，对云计算、物联网、3D图像、虚拟现实均有很深的造诣。
+
+后者的作者是Christian Bauer(个人主页：http://4thline.org/)。
+
+cyberlink框架代码参见：
+
+https://github.com/CharonChui/CyberLink4Android
+
+cling框架代码参见：
+
+http://4thline.org/projects/cling
+
+cling框架的demo程序wireme可参见：
+
+code.google.com/p/wireme
+
+参考文献：
+
+http://blog.csdn.net/tkwxty/article/details/43342595
 
 # linux音频驱动
 
