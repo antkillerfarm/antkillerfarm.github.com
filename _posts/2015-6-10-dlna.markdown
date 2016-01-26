@@ -216,7 +216,7 @@ http://patchwork.openwrt.org/
 
 1.minidlna
 
-这个是目前官方支持的包。但是默认情况下，在Multimedia下并不可见。需要首先在Libraries下选择ffmpeg-mini或者ffmpeg-full，然后才能在Multimedia下看见。
+这个是目前官方支持的包。但是默认情况下，在Multimedia下并不可见。需要首先在Libraries下选择libffmpeg-mini或者libffmpeg-full，然后才能在Multimedia下看见。
 
 此外配置方式和PC也略有不同：
 

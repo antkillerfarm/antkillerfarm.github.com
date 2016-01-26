@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Emacs, Vi, Lisp, Logo, 小众语言集中营
+title:  Emacs, Vi, Lisp, Logo, JSON, 小众语言集中营
 category: technology 
 ---
 
@@ -189,6 +189,18 @@ http://www.cs.berkeley.edu/~bh/logo.html
 重新编译即可。
 
 再一次看到熟悉的命令行界面和海龟了:)
+
+# JSON
+
+JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式。 易于人阅读和编写。同时也易于机器解析和生成。 它基于JavaScript Programming Language, Standard ECMA-262 3rd Edition - December 1999的一个子集。
+
+其官网为：
+
+http://json.org/
+
+官网上列出了各种语言的JSON解析库。其中C语言的解析库中以json-c最为流行，其官网为：
+
+https://github.com/jehiah/json-c
 
 # 小众语言集中营
 

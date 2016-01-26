@@ -112,6 +112,8 @@ gst-launch：这个工具可以用于创建并运行GStreamer管道。下面是�
 
 4.由于playbin采用了Auto plugging机制，因此类似autodetect、audioconvert之类的auto插件也是必选，否则会导致playbin的工作异常。
 
+此外，当播放某种文件格式失败的时候，可以尝试使用`gst-launch`命令播放，这时的log会比平时多一些，有助于确认问题所在。
+
 ## 多设备的网络时钟同步
 
 多个设备协同播放同一个媒体流的时候，设备之间存在着时钟同步的问题。针对这个问题，GStreamer提供了网络时钟同步的功能。
