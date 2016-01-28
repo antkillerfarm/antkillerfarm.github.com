@@ -196,3 +196,7 @@ Keyboards --->
 
 也因为active_low的存在，input_event返回的value实际上并不是GPIO的值，1表示按键按下，0表示按键抬起。
 
+# 内核重启
+
+include/reboot.h里总有一个函数可以满足你的需要。
+

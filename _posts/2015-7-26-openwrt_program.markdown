@@ -28,6 +28,10 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/hiOpenWRT
 
 在bin/x86_64/packages/base下可以找到hiOpenWRT_1_x86_64.ipk。
 
+4）模块安装
+
+`opkg install xyz.ipk`
+
 参考文献：
 
 http://blog.chinaunix.net/uid-29418452-id-4071751.html
