@@ -263,4 +263,16 @@ http://www.ubuntuthemes.org/
 
 这个网站收集了很多桌面主题，但是需要注册，因为有些主题是收费的。
 
+# 远程桌面
 
+Linux下的远程桌面软件主要有RealVNC和rdesktop。前者支持VNC协议，而后者支持MS RDP协议，可连接Windows系统。
+
+## rdesktop
+
+安装方法：
+
+`sudo apt-get install rdesktop`
+
+使用方法：
+
+`rdesktop -u administrator -p ****** -a 16 192.168.1.1`
