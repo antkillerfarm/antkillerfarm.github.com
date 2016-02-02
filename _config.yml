@@ -2,9 +2,8 @@ destination: ./_site
 lsi:         false
 port: 4000
 permalink:   date
-markdown: kramdown 
+markdown: redcarpet
 highlighter: pygments
 
-rdiscount: 
-  extensions: 
-      - smart
+redcarpet:
+  extensions: [no_intra_emphasis]

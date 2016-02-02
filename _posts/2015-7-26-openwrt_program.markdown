@@ -104,7 +104,7 @@ ip命令是linux网络管理方面的命令，它的代码在iproute2包中。
 
 ## 5.make menuconfig时提示“error opening terminal”的解决方法
 
-1)首先要确定ncurses库是否已经正确安装。在debian, Ubuntu上，可以用dpkg -l | grep ncurses 查看ncurses库是否已安装。
+1)首先要确定ncurses库是否已经正确安装。在debian, Ubuntu上，可以用`dpkg -l | grep ncurses`查看ncurses库是否已安装。
 
 2)如果ncurses已经安装了，需要查看TERM, TERMINFO两个环境变量是否已经设置正确。如果没有设置正确，需要设置为正确的值。
 

@@ -134,47 +134,47 @@ git://git.alsa-project.org/alsa-utils.git
 
 ## 1.open操作
 
-gst-plugins-base/ext/alsa/gstalsasink.c: gst_alsasink_open
+`gst-plugins-base/ext/alsa/gstalsasink.c: gst_alsasink_open`
 
 这一步之后，进入alsa-lib作用域。
 
-alsa-lib/src/pcm/pcm.c: snd_pcm_open
+`alsa-lib/src/pcm/pcm.c: snd_pcm_open`
 
-alsa-lib/src/pcm/pcm.c: snd_pcm_open_noupdate
+`alsa-lib/src/pcm/pcm.c: snd_pcm_open_noupdate`
 
-alsa-lib/src/pcm/pcm.c: snd_pcm_open_conf
+`alsa-lib/src/pcm/pcm.c: snd_pcm_open_conf`
 
 alsa-lib中pcm有很多插件，提供诸如硬件、复制、线性变换等操作。详见alsa-lib/include/pcm_plugin.h。
 
-alsa-lib/src/pcm/pcm_hw.c: _snd_pcm_hw_open
+`alsa-lib/src/pcm/pcm_hw.c: _snd_pcm_hw_open`
 
-alsa-lib/src/pcm/pcm_hw.c: snd_pcm_hw_open
+`alsa-lib/src/pcm/pcm_hw.c: snd_pcm_hw_open`
 
-alsa-lib/include/local.h: snd_open_device
+`alsa-lib/include/local.h: snd_open_device`
 
 这个函数调用open系统调用，进入内核空间。在内核空间中根据driver模型的不同，进入linux-kernel/sound/core/pcm_native.c: snd_pcm_open（ALSA）或linux-kernel/sound/soc/soc-pcm.c: soc_pcm_open（ASOC），注意这里的snd_pcm_open和alsa-lib中的snd_pcm_open名称相同，参数却不同。
 
 ## 2.write操作
 
-gst-plugins-base/ext/alsa/gstalsasink.c: gst_alsasink_write
+`gst-plugins-base/ext/alsa/gstalsasink.c: gst_alsasink_write`
 
 这一步之后，进入alsa-lib作用域。
 
-alsa-lib/src/pcm/pcm.c: snd_pcm_writei
+`alsa-lib/src/pcm/pcm.c: snd_pcm_writei`
 
 alsa-lib有两种写操作：snd_pcm_writei和snd_pcm_writen。snd_pcm_writei表示写入交织的PCM数据，而snd_pcm_writen表示写入非交织的PCM数据。
 
-alsa-lib/src/pcm/pcm_local.h: _snd_pcm_writei
+`alsa-lib/src/pcm/pcm_local.h: _snd_pcm_writei`
 
-alsa-lib/src/pcm/pcm_hw.c: snd_pcm_hw_writei
+`alsa-lib/src/pcm/pcm_hw.c: snd_pcm_hw_writei`
 
 这个函数调用ioctl系统调用，参数为SNDRV_PCM_IOCTL_WRITEI_FRAMES，pcm数据的buffer，放在snd_xferi结构中，传入内核空间。
 
-linux-kernel/sound/core/pcm_native.c: snd_pcm_playback_ioctl1
+`linux-kernel/sound/core/pcm_native.c: snd_pcm_playback_ioctl1`
 
-linux-kernel/sound/core/pcm_lib.c: snd_pcm_lib_write
+`linux-kernel/sound/core/pcm_lib.c: snd_pcm_lib_write`
 
-linux-kernel/sound/core/pcm_lib.c: snd_pcm_lib_write_transfer
+`linux-kernel/sound/core/pcm_lib.c: snd_pcm_lib_write_transfer`
 
 这里会有两个分支，以下仅讨论DMA方式的处理。pcm数据放在snd_pcm_substream.runtime->dma_area指向的缓冲区。open的时候，使用mmap做好snd_pcm_substream.runtime->dma_area和snd_pcm_substream.runtime->dma_addr之间的映射。底层驱动只须操作dma_addr即可。
 
@@ -184,7 +184,7 @@ linux-kernel/sound/core/pcm_lib.c: snd_pcm_lib_write_transfer
 
 Gstreamer的音量操作步骤：
 
-gst-plugins-base/gst/playback/gstplaysink.c: gst_play_sink_set_volume
+`gst-plugins-base/gst/playback/gstplaysink.c: gst_play_sink_set_volume`
 
 这个函数主要是通过设置playsink的volume属性来实现操作。
 
@@ -222,39 +222,39 @@ void SetAlsaMasterVolume(long volume)
 
 ALSA的音量操作步骤：（只讨论硬音量）
 
-alsa-lib/src/mixer/simple.c: snd_mixer_selem_set_playback_volume
+`alsa-lib/src/mixer/simple.c: snd_mixer_selem_set_playback_volume`
 
-alsa-lib/src/mixer/simple_none.c: _snd_mixer_selem_set_volume
+`alsa-lib/src/mixer/simple_none.c: _snd_mixer_selem_set_volume`
 
 这一步将volume数据放到selem_none_t.str.vol结构中。后面都是针对这个结构的写操作。
 
-alsa-lib/src/mixer/simple_none.c: selem_write
+`alsa-lib/src/mixer/simple_none.c: selem_write`
 
-alsa-lib/src/mixer/simple_none.c: selem_write_main
+`alsa-lib/src/mixer/simple_none.c: selem_write_main`
 
-alsa-lib/src/mixer/simple_none.c: elem_write_volume
+`alsa-lib/src/mixer/simple_none.c: elem_write_volume`
 
-alsa-lib/src/control/hcontrol.c: snd_hctl_elem_write
+`alsa-lib/src/control/hcontrol.c: snd_hctl_elem_write`
 
-alsa-lib/src/control/control.c: snd_ctl_elem_write
+`alsa-lib/src/control/control.c: snd_ctl_elem_write`
 
-alsa-lib/src/control/control_hw.c: snd_ctl_hw_elem_write
+`alsa-lib/src/control/control_hw.c: snd_ctl_hw_elem_write`
 
 这个函数调用ioctl系统调用，参数为SNDRV_CTL_IOCTL_ELEM_WRITE，进入内核空间。
 
-linux-kernel/sound/core/control.c: snd_ctl_elem_write_user
+`linux-kernel/sound/core/control.c: snd_ctl_elem_write_user`
 
-linux-kernel/sound/core/control.c: snd_ctl_elem_write
+`linux-kernel/sound/core/control.c: snd_ctl_elem_write`
 
 驱动上层的数据放在snd_card.controls链表中。这个链表中的元素是snd_kcontrol类型的。而驱动底层使用snd_kcontrol_new类型的数据。
 
 在设备初始化时，使用snd_soc_cnew或snd_ctl_new1函数从snd_kcontrol_new类型的模板中，生成相应的snd_kcontrol类型的数据。snd_kcontrol_new类型的数据可以用SOC_SINGLE、SOC_DOUBLE_VALUE之类的宏生成，其默认的put函数是snd_soc_put_volsw。
 
-linux-kernel/sound/soc/soc-ops.c: snd_soc_put_volsw
+`linux-kernel/sound/soc/soc-ops.c: snd_soc_put_volsw`
 
-linux-kernel/sound/soc/soc-io.c: snd_soc_component_update_bits
+`linux-kernel/sound/soc/soc-io.c: snd_soc_component_update_bits`
 
-linux-kernel/drivers/base/regmap/regmap.c: regmap_update_bits_check
+`linux-kernel/drivers/base/regmap/regmap.c: regmap_update_bits_check`
 
 使用regmap技术映射I2C、SPI接口地址之后，即可调用相关函数修改相关音频外设的寄存器值了。
 

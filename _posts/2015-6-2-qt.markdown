@@ -12,41 +12,41 @@ http://blog.chinaunix.net/uid-20754930-id-1877623.html
 
 以下是我针对Qt5代码（2015.4）的一个研究。
 
-QApplication::exec
+`QApplication::exec`
 
-QGuiApplication::exec
+`QGuiApplication::exec`
 
-QCoreApplication::exec
+`QCoreApplication::exec`
 
-QEventLoop::exec
+`QEventLoop::exec`
 
-QEventLoop::processEvents
+`QEventLoop::processEvents`
 
-QEventDispatcher::processEvents
+`QEventDispatcher::processEvents`
 
 再以下就和具体的平台相关了。
 
 Windows平台：
 
-QEventDispatcherWin32::processEvents
+`QEventDispatcherWin32::processEvents`
 
 它的实现主要是GetMessage+WaitForMultipleObjects，如上文中对MiniGUI的主循环所述。
 
 Unix平台：
 
-QEventDispatcherUNIX::processEvents
+`QEventDispatcherUNIX::processEvents`
 
-QEventDispatcherUNIXPrivate::doSelect
+`QEventDispatcherUNIXPrivate::doSelect`
 
 这个函数主要使用select系统调用来监听事件源。
 
 Android平台：
 
-QAndroidEventDispatcher::processEvents
+`QAndroidEventDispatcher::processEvents`
 
-QUnixEventDispatcherQPA::processEvents
+`QUnixEventDispatcherQPA::processEvents`
 
-QEventDispatcherUNIX::processEvents
+`QEventDispatcherUNIX::processEvents`
 
 以下和Unix平台相同。
 

@@ -150,11 +150,11 @@ http://wenku.baidu.com/view/a6c4b6bfc77da26925c5b001.html?re=view
 
 ## 从gpio_set_value到寄存器操作
 
-include/linux/gpio.h: gpio_set_value
+`include/linux/gpio.h: gpio_set_value`
 
-include/asm-generic/gpio.h: __gpio_set_value
+`include/asm-generic/gpio.h: __gpio_set_value`
 
-drivers/gpio/gpiolib.c: gpiod_set_raw_value
+`drivers/gpio/gpiolib.c: gpiod_set_raw_value`
 
 这里会调用gpio_chip结构的set函数指针。我们只需要在定义gpio_chip结构的时候，将寄存器操作函数设置到set函数指针中即可。gpio_chip结构可在模块初始化阶段，使用gpiochip_add函数添加到系统中。
 

@@ -84,23 +84,23 @@ PS：/etc/modules由/etc/init/module-init-tools.conf 或 /etc/init/kmod.conf负�
 
 这一层的操作是基于文件的。众所周知，UART属于TTY设备。因此实际执行的函数是tty_write@tty_io.c。
 
-2.tty_ldisc.ops->write
+2.`tty_ldisc.ops->write`
 
-3.n_tty_write@n_tty.c
+3.`n_tty_write@n_tty.c`
 
-4.tty_struct.ops->write => tty_operations->write@serial_core.c
+4.`tty_struct.ops->write => tty_operations->write@serial_core.c`
 
-5.uart_write@serial_core.c
+5.`uart_write@serial_core.c`
 
-6.__uart_start@serial_core.c
+6.`__uart_start@serial_core.c`
 
-7.uart_port.ops->start_tx=>uart_ops->write@uartlite.c
+7.`uart_port.ops->start_tx=>uart_ops->write@uartlite.c`
 
 这一层以下，就和具体的设备有关了。这里以Xlinux的uartlite为例。
 
-8.ulite_start_tx
+8.`ulite_start_tx`
 
-9.ulite_transmit
+9.`ulite_transmit`
 
 这里已经是具体的寄存器操作了。
 
@@ -110,37 +110,37 @@ Read的过程要复杂一些，可分为上层调用部分和底层驱动部分�
 
 上层调用部分：
 
-1.tty_read@tty_io.c
+1.`tty_read@tty_io.c`
 
-2.tty_ldisc.ops->read
+2.`tty_ldisc.ops->read`
 
-3.n_tty_read@n_tty.c
+3.`n_tty_read@n_tty.c`
 
 上层调用，到这里为止。这个函数执行到add_wait_queue时，会等待底层驱动返回接收的数据。底层驱动可以是中断式的，也可以是轮询式的。函数会调用copy_from_read_buf，将内核态的数据搬到用户态。
 
 底层驱动部分
 
-1.ulite_startup=>ulite_isr@uartlite.c
+1.`ulite_startup=>ulite_isr@uartlite.c`
 
 这里仍以Xlinux的uartlite为例。初始化阶段注册ulite_isr中断服务程序。
 
-2.ulite_receive@uartlite.c
+2.`ulite_receive@uartlite.c`
 
 具体的寄存器操作。
 
-3.tty_flip_buffer_push@tty_buffer.c
+3.`tty_flip_buffer_push@tty_buffer.c`
 
-4.tty_schedule_flip@tty_buffer.c
+4.`tty_schedule_flip@tty_buffer.c`
 
 调用schedule_work唤醒上层应用。
 
 ## select代码分析
 
-1.select@select.c
+1.`select@select.c`
 
-2.core_sys_select@select.c
+2.`core_sys_select@select.c`
 
-3.do_select@select.c
+3.`do_select@select.c`
 
 # I2C的GPIO实现
 
@@ -152,25 +152,25 @@ I2C的GPIO实现的代码在drivers/i2c/busses/i2c-gpio.c中。从本质来说�
 
 ## Write
 
-drivers/i2c/i2c-dev.c: i2cdev_write
+`drivers/i2c/i2c-dev.c: i2cdev_write`
 
-drivers/i2c/i2c-core.c: i2c_master_send
+`drivers/i2c/i2c-core.c: i2c_master_send`
 
-drivers/i2c/i2c-core.c: i2c_transfer
+`drivers/i2c/i2c-core.c: i2c_transfer`
 
-drivers/i2c/i2c-core.c: __i2c_transfer
+`drivers/i2c/i2c-core.c: __i2c_transfer`
 
 这里会调用i2c_adapter结构的algo->master_xfer函数。具体到i2c-gpio就是：
 
-drivers/i2c/algos/i2c-algo-bit.c: bit_xfer
+`drivers/i2c/algos/i2c-algo-bit.c: bit_xfer`
 
-drivers/i2c/algos/i2c-algo-bit.c: sendbytes -- 发送字节
+`drivers/i2c/algos/i2c-algo-bit.c: sendbytes -- 发送字节`
 
-drivers/i2c/algos/i2c-algo-bit.c: i2c_outb -- 发送bit
+`drivers/i2c/algos/i2c-algo-bit.c: i2c_outb -- 发送bit`
 
 以下以SDA线的操作为例。这里调用i2c_algo_bit_data结构的setsda函数。具体到i2c-gpio就是：
 
-drivers/i2c/busses/i2c-gpio.c: i2c_gpio_setsda_val
+`drivers/i2c/busses/i2c-gpio.c: i2c_gpio_setsda_val`
 
 再以下就是具体的GPIO寄存器操作了。
 
@@ -234,17 +234,17 @@ PC上的情况比较特殊。由于设备数量种类繁多，因此并不采用
 
 ## probe被调用的流程
 
-drivers/base/driver.c: driver_register
+`drivers/base/driver.c: driver_register`
 
-drivers/base/bus.c: bus_add_driver
+`drivers/base/bus.c: bus_add_driver`
 
-drivers/base/dd.c: driver_attach
+`drivers/base/dd.c: driver_attach`
 
-drivers/base/dd.c: _driver_attach
+`drivers/base/dd.c: _driver_attach`
 
-drivers/base/dd.c: driver_probe_device
+`drivers/base/dd.c: driver_probe_device`
 
-drivers/base/dd.c: really_probe
+`drivers/base/dd.c: really_probe`
 
 # 模块初始化
 
