@@ -2,7 +2,7 @@ destination: ./_site
 lsi:         false
 port: 4000
 permalink:   date
-markdown: rdiscount 
+markdown: kramdown 
 highlighter: pygments
 
 rdiscount: 
