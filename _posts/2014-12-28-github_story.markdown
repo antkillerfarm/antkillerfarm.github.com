@@ -54,6 +54,22 @@ sudo gem sources --add https://ruby.taobao.org/ --remove https://rubygems.org/
 
 `jekyll serve`
 
+## Markdown
+
+自从我在github建立blog以来，一直都在使用markdown语言。这里仅针对我使用过程中遇到的问题做一个笔记。
+
+### markdown渲染器
+
+Jekyll原生支持maruku，rdiscount，kramdown，redcarpet等markdown渲染器。其中的maruku由于已经不维护，在Jekyll 3.0以后被抛弃。
+
+其实使用哪个markdown渲染器对外观的影响都不大，外观更多的是css的事情，因此够用就好。
+
+开始用的是大徐模板里的rdiscount，最近发现该渲染器不支持代码中的空行。
+
+于是换成kramdown，但是又不支持HTML表格里的rowspan。
+
+最后换成redcarpet，而redcarpet会对下划线进行改写，需要加上no_intra_emphasis扩展以关闭之。
+
 ## Robert Love
 
 这几天研究Android源代码，发现了一个牛人——Robert Love。最初注意他是因为他的姓氏挺有意思的。没想到过了几十分钟，就在另一个嵌入式操作系统方面的课件中看到了他的名字。他是Preempt Linux的作者，也是Linux Kernel Development一书的作者，同时还是Android的日志系统的作者。
