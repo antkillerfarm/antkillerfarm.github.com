@@ -126,6 +126,8 @@ http://doolittle.icarus.com/ntpclient/
 
 修改之后，可用`date`命令查看系统当前时间，确认修改的效果。
 
+ntpd是NTP的另一个实现，既可以当Server，也可以当Client，已经被集成进busybox。
+
 # ASOC对多Codec的支持
 
 ## 音频设计方案
