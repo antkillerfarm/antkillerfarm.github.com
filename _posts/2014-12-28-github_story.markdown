@@ -66,9 +66,15 @@ Jekyll原生支持maruku，rdiscount，kramdown，redcarpet等markdown渲染器�
 
 开始用的是大徐模板里的rdiscount，最近发现该渲染器不支持代码中的空行。
 
-于是换成kramdown，但是又不支持HTML表格里的rowspan。
+接着换成kramdown，但是又不支持HTML表格里的rowspan。
 
-最后换成redcarpet，而redcarpet会对下划线进行改写，需要加上no_intra_emphasis扩展以关闭之。
+然后换成redcarpet，而redcarpet会对下划线进行改写，需要加上no_intra_emphasis扩展以关闭之。修改提交之后，github又告诉我，马上要停用redcarpet，统一使用kramdown。
+
+于是又换回kramdown，反复折腾之后，才发现kramdown可以支持rowspan，但是它的语法要求非常严格，必须符合XHTML才行。
+
+错误写法：`<td rowspan=2>`
+
+正确写法：`<td rowspan="2">`
 
 ## Robert Love
 

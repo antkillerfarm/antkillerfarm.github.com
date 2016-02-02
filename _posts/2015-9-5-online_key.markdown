@@ -121,7 +121,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/mylex
     <td>NXP</td>
   </tr>
   <tr>
-    <td rowspan=2>Hi MCU（追求性能）</td>
+    <td rowspan="2">Hi MCU（追求性能）</td>
     <td>ASAP1826T</td>
     <td>alphascale</td>
   </tr>
@@ -130,7 +130,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/mylex
     <td>Qualcomm</td>
   </tr>
   <tr>
-    <td rowspan=3>Wifi Low Power SOC</td>
+    <td rowspan="3">Wifi Low Power SOC</td>
     <td>QCA4002</td>
     <td>Qualcomm Atheros</td>
   </tr>
@@ -148,7 +148,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/mylex
     <td>NXP</td>
   </tr>
   <tr>
-    <td rowspan=2>Wifi SOC</td>
+    <td rowspan="2">Wifi SOC</td>
     <td>RTL8881AB</td>
     <td>Realtek</td>
   </tr>
@@ -157,7 +157,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/mylex
     <td>MTK</td>
   </tr>
   <tr>
-    <td rowspan=2>Nand Flash</td>
+    <td rowspan="2">Nand Flash</td>
     <td>MT29F4G08ABBEAH4</td>
     <td>Micron Technology</td>
   </tr>
@@ -166,7 +166,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/mylex
     <td>Hynix</td>
   </tr>
   <tr>
-    <td rowspan=4>Wifi Audio</td>
+    <td rowspan="4">Wifi Audio</td>
     <td>RTL8871AM</td>
     <td>Realtek</td>
   </tr>
@@ -183,7 +183,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/mylex
     <td>炬力</td>
   </tr>
   <tr>
-    <td rowspan=3>Audio Codec</td>
+    <td rowspan="3">Audio Codec</td>
     <td>WM8728</td>
     <td>Wolfson</td>
   </tr>
