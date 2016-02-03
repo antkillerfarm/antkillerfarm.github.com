@@ -76,6 +76,10 @@ Jekyll原生支持maruku，rdiscount，kramdown，redcarpet等markdown渲染器�
 
 正确写法：`<td rowspan="2">`
 
+### 语法高亮
+
+之前一直使用pygments作为语法高亮的着色器。近来，github推荐我使用rouge。经过一番研究才发现，pygments是用python写的，难怪windows环境下的Jekyll老是无法集成pygments。
+
 ## Robert Love
 
 这几天研究Android源代码，发现了一个牛人——Robert Love。最初注意他是因为他的姓氏挺有意思的。没想到过了几十分钟，就在另一个嵌入式操作系统方面的课件中看到了他的名字。他是Preempt Linux的作者，也是Linux Kernel Development一书的作者，同时还是Android的日志系统的作者。
