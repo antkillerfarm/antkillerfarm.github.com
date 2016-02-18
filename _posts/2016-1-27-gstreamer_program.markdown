@@ -145,3 +145,7 @@ new_pad_type = new_pad.query_caps(None).to_string()
 {% endhighlight %}
 
 从这里也可以看出，gst_parse_launch会自动处理媒体流的格式匹配问题，而使用普通函数的时候，必须自己编程处理格式匹配的问题。
+
+https://autotools.io/index.html
+
+http://francesco-cek.com/cmake-and-gtk-3-the-easy-way/
