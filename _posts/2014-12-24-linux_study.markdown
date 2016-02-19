@@ -292,3 +292,60 @@ MAC地址的某些位有特定的含义，并不能随意设置。仍以47726565
 
 由于针对ADSL路由等这样的网络终端，一般使用的都是统一管理的单播MAC。
 
+## awk&sed&grep
+
+这三个工具是文本处理中用的比较多的工具，各有各的特色，且都支持正则表达式。
+
+一般来说，行处理优先考虑使用sed和grep，列处理优先考虑使用awk。通常情况下，组合使用多个命令，其命令编写的难度小于只使用一个命令。比如sed和grep也可以进行列处理，但语法难度远超awk，反之亦然。
+
+这里不打算列出各个命令的选项，而仅列出使用它们的一些示例：
+
+这里假设我们有一文件名为ab。
+
+### awk
+
+{% highlight bash %}
+awk '{print $1}' ab #显示第一列
+{% endhighlight %}
+
+### sed
+
+{% highlight bash %}
+sed '1d' ab #删除第一行 
+sed '$d' ab #删除最后一行
+sed '1,2d' ab #删除第一行到第二行
+sed '2,$d' ab #删除第二行到最后一行
+
+sed -n '1p' ab    #显示第一行 
+sed -n '$p' ab    #显示最后一行
+sed -n '1,2p' ab  #显示第一行到第二行
+sed -n '2,$p' ab  #显示第二行到最后一行
+
+sed -n '/ruby/p' ab #查询包括关键字ruby所在所有行
+sed -n '/\$/p' ab #查询包括关键字$所在所有行，使用反斜线\屏蔽特殊含义
+
+sed -n '/ruby/p' ab | sed 's/ruby/bird/g'    #替换ruby为bird
+sed -n '/ruby/p' ab | sed 's/ruby//g'        #删除ruby
+{% endhighlight %}
+
+### grep
+
+{% highlight bash %}
+grep 'ruby' ab #查询包括关键字ruby所在所有行
+{% endhighlight %}
+
+### 综合
+
+{% highlight bash %}
+ip addr show br-lan | grep 'inet ' | awk  '{print $2}' | sed 's/\/.*//g'
+{% endhighlight %}
+
+## diff&patch
+
+diff/patch这对工具在数学上来说，diff是对2个集合求差，patch是求和。
+
+{% highlight bash %}
+diff -uNr A B > C #生成A和B的diff文件C,-uNr为最常用的选项
+patch A C #给A打上diff文件得到B
+patch -R B C #B还原为A
+{% endhighlight %}
