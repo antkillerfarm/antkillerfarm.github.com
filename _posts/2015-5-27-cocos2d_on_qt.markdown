@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Cocos2d-x v3在Qt 5上的移植, awk&sed&grep, diff&patch
+title:  Cocos2d-x v3在Qt 5上的移植, autotools, awk&sed&grep, diff&patch
 category: technology 
 ---
 
@@ -178,6 +178,60 @@ Step 2虽然成果很大，但也有如下缺陷：
 https://github.com/ascetic85/quick-cocos2d-x-20130509
 
 这个代码有些老，是基于cocos2d-x v2的，但是基本的思路是一样的。
+
+# autotools
+
+## 概述
+
+autotools是GNU提供的一系列自动配置工具的集合，其主要包括autoconf、automake、pkg-config和libtool等工具。
+
+Makefile虽然规则简单，但手工书写makefile却不是一件容易的事。我这里的不容易指的是：编写好的makefile不容易。如果只是那种自己平时demo的话，可能还是直接makefile更简单。毕竟autotools包含那么多工具，每个工具的规则都不尽相同，学习门槛比makefile高多了。如果针对小工程，还不一定有直接makefile来的快。
+
+那么autotools的优点在哪里呢？
+
+1.针对大工程时，手工编写量较小。比如需要添加的源文件和头文件，直接autoscan就出来了，不用一个一个的写。
+
+2.可以检查编译环境。这个手工写，难度太大，我是不会写的。
+
+3.可移植好。由于第2点的存在，autotools生成的makefile的可移植性非常好。这个优点在本地编译的时候，体现的并不十分明显，但如果交叉编译的话，就很突出了。
+
+参考文档：
+
+https://autotools.io/index.html
+
+这个网站基本上每个工具都讲到了，非常值得一看。
+
+## autoconf&automake
+
+这两个工具是整个autotools工具集的核心，使用的流程也比较复杂。教程中最经典的是：
+
+http://www.ibm.com/developerworks/cn/linux/l-makefile/index.html
+
+## pkg-config
+
+一般来说，如果库的头文件不在/usr/include目录中，那么在编译的时候需要用-I参数指定其路径。由于同一个库在不同系统上可能位于不同的目录下，用户安装库的时候也可以将库安装在不同的目录下，所以即使使用同一个库，由于库的路径的不同，造成了用-I参数指定的头文件的路径和在连接时使用-L参数指定lib库的路径都可能不同，其结果就是造成了编译命令界面的不统一。可能由于编译，连接的不一致，造成同一份程序从一台机器copy到另一台机器时就可能会出现问题。
+
+pkg-config就是用来解决编译连接界面不统一问题的一个工具。
+
+它的基本思想：pkg-config是通过库提供的一个.pc文件获得库的各种必要信息的，包括版本信息、编译和连接需要的参数等。需要的时候可以通过pkg-config提供的参数(–cflags, –libs)，将所需信息提取出来供编译和连接使用。这样，不管库文件安装在哪，通过库对应的.pc文件就可以准确定位,可以使用相同的编译和连接命令，使得编译和连接界面统一。
+
+参见：
+
+http://www.mike.org.cn/articles/description-configure-pkg-config-pkg_config_path-of-the-relations-between/
+
+## autoconf&automake与pkg-config的协同工作
+
+
+
+## CMake和pkg-config的协同工作
+
+参考文档：
+
+http://francesco-cek.com/cmake-and-gtk-3-the-easy-way/
+
+示例代码：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gtk_browser/cmake
 
 # awk&sed&grep
 
