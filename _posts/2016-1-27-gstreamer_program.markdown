@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GStreamer编程, Autotools
+title:  GStreamer编程, makefile, Autotools
 category: technology 
 ---
 
@@ -145,6 +145,16 @@ new_pad_type = new_pad.query_caps(None).to_string()
 {% endhighlight %}
 
 从这里也可以看出，gst_parse_launch会自动处理媒体流的格式匹配问题，而使用普通函数的时候，必须自己编程处理格式匹配的问题。
+
+# makefile
+
+简单的规则可以查看《GNU makefile指南》一文，Goerge Foot写的。地址就不贴了，中文版基本到处都是。但是该文只是入门级的，最专业的还是GNU官方的手册：
+
+http://www.gnu.org/software/make/manual/html_node/index.html
+
+应该说make的语法，除了规则依赖之外，大多数与bash相同。但是make也有一些内置函数，它们的用法就不在bash的范畴了，比如call函数。碰到这样的情况，可以查阅以下网页，以快速定位帮助文档的位置：
+
+http://www.gnu.org/software/make/manual/html_node/Quick-Reference.html
 
 # Autotools
 

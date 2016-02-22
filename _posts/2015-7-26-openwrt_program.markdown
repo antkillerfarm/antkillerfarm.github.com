@@ -272,3 +272,7 @@ kmod-button-hotplug          Button Hotplug driver
 
 http://www.shuyz.com/n2n-vpn-network-introduction-and-config.html
 
+# Openwrt对autotools、Cmake的支持
+
+autotools和Cmake是目前应用最广的两套编译配置系统。Openwrt对它们支持的代码在/include/autotools.mk和/include/cmake.mk中。
+
