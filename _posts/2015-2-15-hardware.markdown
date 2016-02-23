@@ -148,3 +148,15 @@ IAP（In-Application Programming）指MCU可以在系统中获取新代码并对
 # BGA & QFP
 
 BGA封装，就是那种引脚都在芯片背面的封装。QFP封装，即四侧引脚扁平封装。同样面积情况下，显然占据一个面的引脚数，要超过仅占据四个边的引脚数。
+
+# nor flash & nand flash
+
+flash按照内部存储结构不同，分为两种：nor flash和nand flash。
+
+NorFLASH使用方便，易于连接，可以在芯片上直接运行代码，稳定性出色，传输速率高，在小容量时有很高的性价比，这使其很适合应于嵌入式系统中作为FLASH ROM。
+
+在通信方式上Nor Flash分为两种类型：CFI Flash和SPI Flash。
+
+NandFLASH强调更高的性能，更低的成本，更小的体积，更长的使用寿命。这使NandFLASH很擅于存储纯资料或数据等，在嵌入式系统中用来支持文件系统。NandFLASH存在坏块问题。
+
+
