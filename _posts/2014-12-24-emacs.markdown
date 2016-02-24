@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Emacs, Vi, Lisp, Logo, JSON, 小众语言集中营
+title:  Emacs, Vi, Lisp, Logo, JSON, perl, 小众语言集中营
 category: technology 
 ---
 
@@ -203,6 +203,22 @@ http://json.org/
 官网上列出了各种语言的JSON解析库。其中C语言的解析库中以json-c最为流行，其官网为：
 
 https://github.com/jehiah/json-c
+
+# perl
+
+中文教程：
+
+http://www.cbi.pku.edu.cn/chinese/documents/perl/index.htm
+
+perl的语法和C差别不算太大，好多语法大致上从关键字也可以猜出来。这里仅对一些符号做个简短的说明。
+
+`$name`：变量name。
+
+`@name`：数组name。
+
+`&name`：函数name。这种情况下，name的定义在使用之后。如果name的定义在使用之前，`&`可省略。
+
+`%name`：哈希数组name。
 
 # 小众语言集中营
 
