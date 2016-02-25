@@ -202,7 +202,7 @@ http://json.org/
 
 官网上列出了各种语言的JSON解析库。其中C语言的解析库中以json-c最为流行，其官网为：
 
-https://github.com/jehiah/json-c
+https://github.com/json-c/json-c
 
 # perl
 
