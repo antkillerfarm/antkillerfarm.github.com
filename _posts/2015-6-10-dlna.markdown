@@ -292,6 +292,40 @@ code.google.com/p/wireme
 
 http://blog.csdn.net/tkwxty/article/details/43342595
 
+# libupnp
+
+http://blog.csdn.net/hqyhqyhq/article/details/17921797
+
+http://max.book118.com/html/2014/0811/9385832.shtm
+
+http://blog.csdn.net/braddoris/article/details/41646789
+
+https://tools.ietf.org/id/draft-cohen-gena-p-base-01.txt
+
+main
+
+device_main
+
+UpnpRegisterRootDevice
+
+SetGenaCallback
+
+
+
+RunMiniServer
+
+web_server_accept
+
+schedule_request_job
+
+handle_request
+
+dispatch_request
+
+genaCallback
+
+gena_process_notification_event
+
 # linux音频驱动
 
 ## 查找PC本机驱动

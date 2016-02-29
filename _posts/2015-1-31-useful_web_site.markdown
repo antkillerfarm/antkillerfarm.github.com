@@ -45,7 +45,7 @@ Box2D---www.box2d.org
 
 WireShark---www.wireshark.org
 
-一个网络协议包分析工具。
+一个网络协议包分析工具，最初名叫Ethereal。
 
 WinPcap---www.winpcap.org
 

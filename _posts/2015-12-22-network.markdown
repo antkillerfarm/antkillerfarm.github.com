@@ -102,6 +102,10 @@ http://savannah.nongnu.org/projects/exosip/
 
 ## UPNP
 
+官方的协议规范：
+
+http://www.upnp.org/specs/
+
 参考资料：
 
 http://www.h3c.com.cn/MiniSite/Technology_Circle/Net_Reptile/The_Five/Home/Catalog/201206/747039_97665_0.htm
