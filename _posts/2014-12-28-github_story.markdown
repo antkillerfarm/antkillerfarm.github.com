@@ -80,18 +80,6 @@ Jekyll原生支持maruku，rdiscount，kramdown，redcarpet等markdown渲染器�
 
 之前一直使用pygments作为语法高亮的着色器。近来，github推荐我使用rouge。经过一番研究才发现，pygments是用python写的，难怪windows环境下的Jekyll老是无法集成pygments。
 
-## Robert Love
-
-这几天研究Android源代码，发现了一个牛人——Robert Love。最初注意他是因为他的姓氏挺有意思的。没想到过了几十分钟，就在另一个嵌入式操作系统方面的课件中看到了他的名字。他是Preempt Linux的作者，也是Linux Kernel Development一书的作者，同时还是Android的日志系统的作者。
-
-最关键的是，他是1981年出生的人，比我也就大一点儿。而Preempt Linux是他2001年的作品。那个时候我貌似连C语言都没怎么弄利索。。。
-
-至于国内的牛人，有个叫李云的诺西工程师，写了本嵌入式方面的书感觉还不错，不是随便复制粘贴的东西，可以看看。不过一者，李云比我大好几岁，二者他水平虽然比我高，但还没到仰视的地步。所以终究比不了那些老外的牛人啊。。。
-
-还有一个关于他的笑话：Robert Love是佛罗里达大学的毕业生，这所大学在名校众多的美国，只是个不入流的二本院校。于是有人调侃到：千万别去佛罗里达大学上学，因为Robert Love是从那里毕业的，而Robert Love是研究Linux Kernel的，Linux Kernel是无趣的，所以佛罗里达大学也是无趣的。
-
-这个笑话见诸他的个人主页，但不知道是否真有此事。如果有的话，他的影响力可见一般。就像刘路之于中南大学一样。
-
 ## git常用命令
 
 1.创建版本库

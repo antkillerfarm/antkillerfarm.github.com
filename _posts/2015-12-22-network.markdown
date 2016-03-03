@@ -102,15 +102,129 @@ http://savannah.nongnu.org/projects/exosip/
 
 ## UPNP
 
-官方的协议规范：
+官方的协议规范参见：
 
 http://www.upnp.org/specs/
 
-参考资料：
+![](/images/article/upnp_stack.png)
+
+上图是UPNP的协议栈。详细的解释参见：
 
 http://www.h3c.com.cn/MiniSite/Technology_Circle/Net_Reptile/The_Five/Home/Catalog/201206/747039_97665_0.htm
 
 这是H3C的一个系列教程中的一篇。
+
+## libupnp
+
+libupnp是UPNP协议的一个实现库。它最早由英特尔开发并开源，是目前Linux平台最流行的实现库，其官网为：
+
+http://pupnp.sourceforge.net/
+
+![](/images/article/libupnp.png)
+
+上图是libupnp体系结构图，其参考教程可参见：
+
+http://blog.csdn.net/braddoris/article/details/41646789
+
+这里仅对上文中的内容，做一个补充：
+
+1.GENA协议规范
+
+https://tools.ietf.org/id/draft-cohen-gena-p-base-01.txt
+
+2.其他参考资料
+
+http://max.book118.com/html/2014/0811/9385832.shtm
+
+http://blog.csdn.net/hqyhqyhq/article/details/17921797
+
+http://download.csdn.net/detail/liguangshou06/2685789
+
+## libupnp示例详解
+
+libupnp自带的示例在upnp/sample路径下。编译之后，可生成三个可执行文件：
+
+1.tv_device。UPNP设备端实现，即UPNP的服务提供者。
+
+2.tv_ctrlpt。UPNP控制端实现。
+
+3.tv_combo。前两者的混合体。
+
+实际测试使用中，可以同时运行tv_ctrlpt和tv_device，以观察两者之间的交互。
+
+### tv_device代码流程详解
+
+1.初始化
+
+upnp/sample/linux/tv_device_main.c: main
+
+upnp/sample/common/tv_device.c: device_main
+
+upnp/sample/common/tv_device.c: TvDeviceStart
+
+upnp/src/api/upnpapi.c: UpnpInit
+
+upnp/src/api/upnpapi.c: UpnpInitStartServers
+
+upnp/src/genlib/miniserver/miniserver.c: StartMiniServer
+
+这是整个初始化过程中，最重要的函数。它负责创建Web Server和线程池。UPNP的所有功能都在这些线程（而不是主线程）中实现。
+
+2.事件处理
+
+事件处理分成两步
+
+1）注册事件处理回调函数
+
+upnp/src/api/upnpapi.c: UpnpInit
+
+upnp/src/api/upnpapi.c: UpnpRegisterRootDevice
+
+这一步向一个中间结构注册回调函数。
+
+upnp/src/api/upnpapi.c: UpnpInitPreamble
+
+这一步调用SetGenaCallback函数，将上一步注册到中间结构中的回调函数，注册到GENA事件处理线程中。
+
+2）事件处理流程
+
+upnp/src/genlib/miniserver/miniserver.c: RunMiniServer
+
+upnp/src/genlib/miniserver/miniserver.c: web_server_accept
+
+upnp/src/genlib/miniserver/miniserver.c: schedule_request_job
+
+这一步从线程池中启动一个线程来处理事件。
+
+upnp/src/genlib/miniserver/miniserver.c: handle_request
+
+upnp/src/genlib/miniserver/miniserver.c: dispatch_request
+
+这一步根据事件类型进行分发。具体到GENA就是调用：
+
+upnp/src/gena/gena_callback2.c: genaCallback
+
+这一步根据角色的不同，调用gena_process_subscription_request（device）或gena_process_notification_event（control point）。
+
+upnp/src/gena/gena_device.c: gena_process_subscription_request
+
+这里会最终调用注册的事件处理函数。
+
+## gmediarender的UPNP流程详解
+
+gmediarender使用libupnp库进行DLNA协议的交互。这个项目的难度中等，可作为libupnp库的进阶教程。由于大部分的内容和tv_device类似，因此，这里只列出差异的部分。
+
+1）初始化
+
+src/main.c: main
+
+src/upnp_device.c: upnp_device_init
+
+src/upnp_device.c: initialize_device
+
+upnp/src/api/upnpapi.c: UpnpInit
+
+2)
 
 ## NTP
 
@@ -251,3 +365,4 @@ Z表示Codec设备的从机地址。
 ## 方案B2的代码实现
 
 这种情况用两个独立的card来解决就可以了。
+

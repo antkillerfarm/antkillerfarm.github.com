@@ -308,3 +308,18 @@ Linux系统上的文件锁主要分为协同锁(advisory lock)和强制锁(manda
 
 fcntl和flock都可以用于创建文件锁。
 
+## 主线程存续的编程技巧
+
+有的多线程程序，其主要功能实现在其他线程中。主线程只是负责创建这些功能线程，一旦创建完成，自己的使命也就结束了。
+
+如果需要让主线程在初始化之后，仍然存在，而不是退出的话，可以使用以下技巧：
+
+{% highlight c %}
+sigset_t sigs_to_catch;
+sigemptyset(&sigs_to_catch);
+sigaddset(&sigs_to_catch, SIGINT);
+sigwait(&sigs_to_catch, &sig);
+{% endhighlight %}
+
+这种方法显然比`while (1);`这样的忙等待，有效率的多。
+

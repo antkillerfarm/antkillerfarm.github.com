@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  有用的网址集合，IT杂谈，沉思录，Fedora
+title:  有用的网址集合, IT杂谈, 沉思录, Fedora, WireShark
 category: technology 
 ---
 # 有用的网址集合
@@ -42,10 +42,6 @@ http://blog.csdn.net/leixiaohua1020/
 Box2D---www.box2d.org
 
 一个游戏物理引擎。
-
-WireShark---www.wireshark.org
-
-一个网络协议包分析工具，最初名叫Ethereal。
 
 WinPcap---www.winpcap.org
 
@@ -116,6 +112,18 @@ http://www.tinylab.org/using-qemu-simulation-inserts-the-type-system-to-produce-
 3.两者都是由于要价过高，而被机会所放弃。
 
 4.他们的对手尽管有种种不足，但是最终改写了历史。他们是MS-DOS和Mac OS X。
+
+## Robert Love
+
+这几天研究Android源代码，发现了一个牛人——Robert Love。最初注意他是因为他的姓氏挺有意思的。没想到过了几十分钟，就在另一个嵌入式操作系统方面的课件中看到了他的名字。他是Preempt Linux的作者，也是Linux Kernel Development一书的作者，同时还是Android的日志系统的作者。
+
+最关键的是，他是1981年出生的人，比我也就大一点儿。而Preempt Linux是他2001年的作品。那个时候我貌似连C语言都没怎么弄利索。。。
+
+至于国内的牛人，有个叫李云的诺西工程师，写了本嵌入式方面的书感觉还不错，不是随便复制粘贴的东西，可以看看。不过一者，李云比我大好几岁，二者他水平虽然比我高，但还没到仰视的地步。所以终究比不了那些老外的牛人啊。。。
+
+还有一个关于他的笑话：Robert Love是佛罗里达大学的毕业生，这所大学在名校众多的美国，只是个不入流的二本院校。于是有人调侃到：千万别去佛罗里达大学上学，因为Robert Love是从那里毕业的，而Robert Love是研究Linux Kernel的，Linux Kernel是无趣的，所以佛罗里达大学也是无趣的。
+
+这个笑话见诸他的个人主页，但不知道是否真有此事。如果有的话，他的影响力可见一般。就像刘路之于中南大学一样。
 
 # 新的开始
 
@@ -189,4 +197,20 @@ https://admin.fedoraproject.org/pkgdb/
 2.重启。（这一步必不可少，否则上面的配置不会生效。）
 
 这样就可以在Fedora中浏览共享文件夹了。
+
+# WireShark
+
+WireShark是一个网络协议包分析工具，最初名叫Ethereal。它的官网是：
+
+www.wireshark.org
+
+WireShark以丰富的过滤器著称，现将我使用到的过滤器规则摘录如下：
+
+`ip.src == 10.3.9.234 || ip.dst == 10.3.9.234`
+
+过滤源地址和目标地址。
+
+`tcp.segment_data matches Bob`
+
+匹配特定字符串。
 
