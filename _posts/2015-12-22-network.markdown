@@ -176,7 +176,7 @@ upnp/src/genlib/miniserver/miniserver.c: StartMiniServer
 
 1）注册事件处理回调函数
 
-upnp/src/api/upnpapi.c: UpnpInit
+upnp/src/api/upnpapi.c: TvDeviceStart
 
 upnp/src/api/upnpapi.c: UpnpRegisterRootDevice
 
@@ -210,6 +210,26 @@ upnp/src/gena/gena_device.c: gena_process_subscription_request
 
 这里会最终调用注册的事件处理函数。
 
+### tv_ctrlpt代码流程详解
+
+1.初始化
+
+upnp/sample/linux/tv_ctrlpt_main.c: main
+
+common/tv_ctrlpt.c: TvCtrlPointStart
+
+upnp/src/api/upnpapi.c: UpnpInit
+
+以下与tv_device相同。
+
+2.注册客户端
+
+common/tv_ctrlpt.c: TvCtrlPointStart
+
+upnp/src/api/upnpapi.c: UpnpRegisterClient
+
+其他部分与tv_device相同。
+
 ## gmediarender的UPNP流程详解
 
 gmediarender使用libupnp库进行DLNA协议的交互。这个项目的难度中等，可作为libupnp库的进阶教程。由于大部分的内容和tv_device类似，因此，这里只列出差异的部分。
@@ -223,8 +243,6 @@ src/upnp_device.c: upnp_device_init
 src/upnp_device.c: initialize_device
 
 upnp/src/api/upnpapi.c: UpnpInit
-
-2)
 
 ## NTP
 

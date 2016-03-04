@@ -106,6 +106,10 @@ Jekyll原生支持maruku，rdiscount，kramdown，redcarpet等markdown渲染器�
 
 `git clone --recursive URL`
 
+6.checkout和reset的区别
+
+在恢复历史版本的时候，checkout只是检出历史版本，而不会删除历史版本之后的版本记录，但reset就不同了，reset相当于版本库回退到历史版本，因此后续的版本记录都没有了。
+
 ## 如何git超大版本库
 
 自从两次git完整的linux kernel，都因为网络问题，而中途失败之后，不甘心的我，继续在网上寻找答案。

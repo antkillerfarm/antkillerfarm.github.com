@@ -241,3 +241,16 @@ http://francesco-cek.com/cmake-and-gtk-3-the-easy-way/
 示例代码：
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gtk_browser/cmake
+
+## Autotools细节汇总
+
+1.`dnl` vs `#`
+
+`dnl`和`#`在autoconf中，都是注释开始的标志。区别在于，`dnl`注释的东西，不会出现在最终的configure脚本中。
+
+2.设置debug版本
+
+CFLAGS的默认设置是`-g -O2`，可用以下命令修改之：
+
+`./configure CFLAGS="-g -O0"`
+
