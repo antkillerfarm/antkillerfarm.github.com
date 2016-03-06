@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ALSA
+title:  ALSA（一）
 category: technology 
 ---
 
@@ -23,6 +23,60 @@ http://blog.csdn.net/droidphone/article/details/6271122
 http://blog.chinaunix.net/uid-20602659-id-2981336.html
 
 系列文章共2篇。主要偏重于ASOC驱动的具体实现，而不是背后的机制原理。
+
+# 关于ALSA的应用层
+
+## 查找PC本机驱动
+
+首先使用`lspci -v`列出所有的硬件设备，其中当然也包括了音频设备。例如我的PC上是这样的：
+
+{% highlight bash %}
+Audio device: Intel Corporation 6 Series/C200 Series Chipset Family High Definition Audio Controller (rev 05)
+	Subsystem: ASUSTeK Computer Inc. Device 1b73
+	Flags: bus master, fast devsel, latency 0, IRQ 54
+	Memory at df000000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: <access denied>
+	Kernel driver in use: snd_hda_intel
+{% endhighlight %}
+
+从驱动名`snd_hda_intel`可以很轻松的发现，这个驱动的源代码是sound/pci/hda/hda_intel.c。
+
+在/dev/snd下，可以看到声卡的子设备。
+
+对于ASoC驱动来说，因为它是platform驱动，所以可以在/sys/bus/platform下，找到驱动的相关痕迹。
+
+## alsa-utils
+
+alsa-utils是ALSA项目提供的工具软件集，以下是一些测试样例：
+
+播放wave文件
+
+`aplay /mnt/nfs/test.wav`
+
+变频播放(以44 KHz来播放音频)
+
+`aplay -D rate_44k /mnt/nfs/test.wav`
+
+录音,以20秒的间隔(-d 20),立体声(-c 2),频率是 8000Hz来录制Wave格式音频
+
+`arecord -d 20 -c 2 -t wav -r 8000 -f "Signed 16 bit Little Endian" /mnt/nfs/test.wav`
+
+测试混音播放(先是播放test1.wav,然后再同时播放test2.wav)
+
+`aplay -D plug:dmix_44k /mnt/nfs/test1.wav & 
+aplay -D plug:dmix_44k /mnt/nfs/test2.wav`
+
+设置放音增益（0 to 3）
+
+`amixer set Master 1`
+
+设置录音音量(0-31)
+
+`amixer set Line 10`
+
+列出可用的ALSA设备
+
+`aplay -L`
 
 # ALSA System on Chip (ASoC) layer
 
@@ -257,42 +311,3 @@ ALSA的音量操作步骤：（只讨论硬音量）
 `linux-kernel/drivers/base/regmap/regmap.c: regmap_update_bits_check`
 
 使用regmap技术映射I2C、SPI接口地址之后，即可调用相关函数修改相关音频外设的寄存器值了。
-
-## 4.SOC_SINGLE类宏
-
-这里对SOC_SINGLE类的宏，详细说明一下，因为只有这些宏才是真正需要驱动开发者添加或修改的。
-
-例如如下的代码：
-
-{% highlight c %}
-SOC_DOUBLE_R_TLV("Digital Playback Volume", JZCODEC_DACLVOL, JZCODEC_DACRVOL,
-		 0, 255, 0, jzcodec_tlv),
-{% endhighlight %}
-
-使用amixer命令观察该代码的效果：
-
-{% highlight bash %}
-Simple mixer control 'Digital',0
-  Capabilities: pvolume
-  Playback channels: Front Left - Front Right
-  Limits: Playback 0 - 255
-  Mono:
-  Front Left: Playback 255 [100%] [0.00dB]
-  Front Right: Playback 255 [100%] [0.00dB]
-{% endhighlight %}
-
-从中可以看出snd_kcontrol_new的name成员的名字是有特定含义的，不能随便定。
-
-有的音频芯片，如TAS5086，它的音量寄存器用0xFF表示静音，而用0x0表示最大音量，这种情况下需要将SOC_SINGLE类宏的invert参数设为1。
-
-## 5.SOC_SINGLE_TLV类宏
-
-除了SOC_SINGLE类宏之外，还有SOC_SINGLE_TLV类宏。后者和前者的主要区别在于：用TLV数组完成音量到寄存器值之间的转换。
-
-例如如下代码：
-
-{% highlight c %}
-static const DECLARE_TLV_DB_SCALE(tas5086_dac_tlv, -10350, 50, 1);
-{% endhighlight %}
-
--10350是音量的最小值，表示-103.5dB。50是相邻的两个寄存器值之间的音量差（即步长），这里表示0.5dB。也就是说这个宏设定的音量值的单位都是0.01dB。

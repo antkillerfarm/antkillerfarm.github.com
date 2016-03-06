@@ -302,5 +302,11 @@ ZigBee resides on IEEE 802.15.4 transceivers, which in the 2.4 GHz space communi
 
 这是TI官方技术支持的说法，转换成相应的串口波特率大概是38400。也就是说超过这个速度的串口速度对于Zigbee设备来说是处理不过来的。
 
+# ICE
 
+我在研究生时代，研究过CORBA、EJB、COM这样的中间件技术。然而工作以后，再没有机会使用。平时偶尔关注，也只是晓得CORBA从来没有流行过，EJB在Struts、Hibernate、Spring等框架的围攻下，用者寥寥。直到最近，因为项目需要接触到ZeroC的ICE框架。
+
+ICE框架的官网地址：
+
+https://zeroc.com/downloads/ice
 

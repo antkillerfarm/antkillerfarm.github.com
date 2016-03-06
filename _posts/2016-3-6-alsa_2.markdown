@@ -1,0 +1,166 @@
+---
+layout: post
+title:  ALSA（二）
+category: technology 
+---
+
+# 从Gstreamer到ALSA（续）
+
+## 4.SOC_SINGLE类宏
+
+这里对SOC_SINGLE类的宏，详细说明一下，因为只有这些宏才是真正需要驱动开发者添加或修改的。
+
+例如如下的代码：
+
+{% highlight c %}
+SOC_DOUBLE_R_TLV("Digital Playback Volume", JZCODEC_DACLVOL, JZCODEC_DACRVOL,
+		 0, 255, 0, jzcodec_tlv),
+{% endhighlight %}
+
+使用amixer命令观察该代码的效果：
+
+{% highlight bash %}
+Simple mixer control 'Digital',0
+  Capabilities: pvolume
+  Playback channels: Front Left - Front Right
+  Limits: Playback 0 - 255
+  Mono:
+  Front Left: Playback 255 [100%] [0.00dB]
+  Front Right: Playback 255 [100%] [0.00dB]
+{% endhighlight %}
+
+从中可以看出snd_kcontrol_new的name成员的名字是有特定含义的，不能随便定。
+
+有的音频芯片，如TAS5086，它的音量寄存器用0xFF表示静音，而用0x0表示最大音量，这种情况下需要将SOC_SINGLE类宏的invert参数设为1。
+
+## 5.SOC_SINGLE_TLV类宏
+
+除了SOC_SINGLE类宏之外，还有SOC_SINGLE_TLV类宏。后者和前者的主要区别在于：用TLV数组完成音量到寄存器值之间的转换。
+
+例如如下代码：
+
+{% highlight c %}
+static const DECLARE_TLV_DB_SCALE(tas5086_dac_tlv, -10350, 50, 1);
+{% endhighlight %}
+
+-10350是音量的最小值，表示-103.5dB。50是相邻的两个寄存器值之间的音量差（即步长），这里表示0.5dB。也就是说这个宏设定的音量值的单位都是0.01dB。
+
+# ASOC对多Codec的支持
+
+## 音频设计方案
+
+ASOC在Linux 3.X时代最大的改进就是添加了对多codec的支持。这里我们首先描述一下多Codec在音频设备设计中的意义，以及它的一些实现方案。
+
+![](/images/article/multi_codec_0.png)
+
+上图是实现方案A，它的特点是：
+
+1.1个MCU通过2个Codec，间接连接了4个Speaker。在当前的音频设计中，音箱的扬声器个数越来越多，但是单个Codec所能提供的声道数量有限。当扬声器个数超过这一数量限制时，就需要采用多Codec方案了。
+
+2.两个Codec有独立的I2C控制通道。这里的“独立”是逻辑意义上的。在物理上，两个Codec可挂在同一条I2C总线上，以不同的从机地址加以区分。
+
+3.两个Codec共享I2S输入。
+
+![](/images/article/multi_codec_1.png)
+
+上图是实现方案B，它和方案A的区别为：两个Codec有独立的I2S输入。方案B根据用途，又可分为两种子方案：
+
+1.方案B1：两个I2S的输入相同。
+
+2.方案B2：两个I2S的输入不同。
+
+## 方案A的代码实现
+
+1.首先讨论I2C控制的实现，这里以TAS5731M芯片为例。
+
+在board初始化阶段，为两个codec各自生成一个I2C设备。
+
+{% highlight c %}
+static struct i2c_board_info __initdata rtl819xd_i2c_devices[] = {
+	{
+		I2C_BOARD_INFO("tas5731", 0x1a), //TAS5731M Master
+	},
+	{
+		I2C_BOARD_INFO("tas5731", 0x1b), //TAS5731M Sub
+	},
+};
+{% endhighlight %}
+
+2.方案A由于共享I2S，因此在驱动角度，必须将两个codec驱动整合到一个card之中。
+
+相应的machine代码为：
+
+{% highlight c %}
+static struct snd_soc_dai_link rtl819xd_jzcodec_dai[] = {
+	{
+		.name = "JZCODEC_MASTER",
+		.stream_name = "JZCODEC_MASTER",
+		.cpu_dai_name = "rtl8197d-i2s",
+		.codec_name = "tas5731.0-001a",
+		.codec_dai_name = "tas5731_master",
+		.init = rtl819xd_jzcodec_jzcodec_init,
+		.ops = &rtl819xd_jzcodec_ops,
+		.platform_name	= "rtl819x-pcm-audio",
+	},
+	{
+		.name = "JZCODEC_SUB",
+		.stream_name = "JZCODEC_SUB",
+		.cpu_dai_name = "rtl8197d-i2s",
+		.codec_name = "tas5731.0-001b",
+		.codec_dai_name = "tas5731_sub",
+		.init = rtl819xd_jzcodec_jzcodec_init,
+		.ops = &rtl819xd_jzcodec_ops,
+	}
+};
+{% endhighlight %}
+
+相应的codec代码为：
+
+{% highlight c %}
+static struct snd_soc_dai_driver tas5731_dai[] = {
+	{
+		.name = "tas5731_master",
+		.id = 0,
+		.playback = {
+			.stream_name	= "Playback",
+			.channels_min	= 2,
+			.channels_max	= 6,
+			.rates		= TAS5731_PCM_RATES,
+			.formats	= TAS5731_PCM_FORMATS,
+		},
+		.ops = &tas5731_dai_ops,
+	},
+	{
+		.name = "tas5731_sub",
+		.id = 1,
+		.playback = {
+			.stream_name	= "Playback",
+			.channels_min	= 2,
+			.channels_max	= 6,
+			.rates		= TAS5731_PCM_RATES,
+			.formats	= TAS5731_PCM_FORMATS,
+		},
+		.ops = &tas5731_dai_ops,
+	}
+};
+{% endhighlight %}
+
+这里对代码的要点做一个解释：
+
+1）codec_name的命名规则。codec_name一般以X.Y-Z的形式命名。
+
+其中X为codec的I2C driver名称。注意这里的名称和I2C_BOARD_INFO中定义的名称不同，后者是根据i2c_device_id中定义的名称来命名的。
+
+Y表示I2C总线号。如果MCU有超过一条I2C总线的话，需要使用总线号加以区分。
+
+Z表示Codec设备的从机地址。
+
+2）由于两个Codec共享I2S输入，因此只需要其中一个Codec定义platform_name即可。
+
+## 方案B1的代码实现
+
+和方案A的差别在于：两个Codec都需要定义自己的platform_name。
+
+## 方案B2的代码实现
+
+这种情况用两个独立的card来解决就可以了。

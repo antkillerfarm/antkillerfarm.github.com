@@ -16,6 +16,10 @@ http://en.wikipedia.org/wiki/List_of_UPnP_AV_media_servers_and_clients
 
 这个网址提供了支持UPnP/DLNA的服务器和客户端的名单。
 
+http://jorgenmodin.net/index_html/archive/2009/12/26/list-of-open-source-dlnaupnp-av-software-devices
+
+这个网址主要针对Linux平台的UPnP/DLNA软件。
+
 http://www.right.com.cn/forum/thread-115634-1-1.html
 
 http://www.right.com.cn/forum/forum.php?mod=viewthread&action=printable&tid=135975
@@ -291,57 +295,3 @@ code.google.com/p/wireme
 参考文献：
 
 http://blog.csdn.net/tkwxty/article/details/43342595
-
-# linux音频驱动
-
-## 查找PC本机驱动
-
-首先使用`lspci -v`列出所有的硬件设备，其中当然也包括了音频设备。例如我的PC上是这样的：
-
-{% highlight bash %}
-Audio device: Intel Corporation 6 Series/C200 Series Chipset Family High Definition Audio Controller (rev 05)
-	Subsystem: ASUSTeK Computer Inc. Device 1b73
-	Flags: bus master, fast devsel, latency 0, IRQ 54
-	Memory at df000000 (64-bit, non-prefetchable) [size=16K]
-	Capabilities: <access denied>
-	Kernel driver in use: snd_hda_intel
-{% endhighlight %}
-
-从驱动名`snd_hda_intel`可以很轻松的发现，这个驱动的源代码是sound/pci/hda/hda_intel.c。
-
-在/dev/snd下，可以看到声卡的子设备。
-
-对于ASoC驱动来说，因为它是platform驱动，所以可以在/sys/bus/platform下，找到驱动的相关痕迹。
-
-## alsa-utils
-
-alsa-utils是ALSA项目提供的工具软件集，以下是一些测试样例：
-
-播放wave文件
-
-`aplay /mnt/nfs/test.wav`
-
-变频播放(以44 KHz来播放音频)
-
-`aplay -D rate_44k /mnt/nfs/test.wav`
-
-录音,以20秒的间隔(-d 20),立体声(-c 2),频率是 8000Hz来录制Wave格式音频
-
-`arecord -d 20 -c 2 -t wav -r 8000 -f "Signed 16 bit Little Endian" /mnt/nfs/test.wav`
-
-测试混音播放(先是播放test1.wav,然后再同时播放test2.wav)
-
-`aplay -D plug:dmix_44k /mnt/nfs/test1.wav & 
-aplay -D plug:dmix_44k /mnt/nfs/test2.wav`
-
-设置放音增益（0 to 3）
-
-`amixer set Master 1`
-
-设置录音音量(0-31)
-
-`amixer set Line 10`
-
-列出可用的ALSA设备
-
-`aplay -L`

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  网络杂谈, ASOC对多Codec的支持
+title:  网络杂谈
 category: technology 
 ---
 
@@ -99,6 +99,26 @@ http://savannah.gnu.org/projects/osip
 eXosip在osip上封装了一层，简化了在多媒体会话方面SIP协议的使用。其官网为：
 
 http://savannah.nongnu.org/projects/exosip/
+
+## NTP
+
+Network Time Protocol，是用来让计算机之间实现时间同步的协议。
+
+网上可用的NTP Server列表，可参见：
+
+http://www.pool.ntp.org/en/
+
+NTP的Client有很多，这里使用ntpclient软件。它的官网：
+
+http://doolittle.icarus.com/ntpclient/
+
+调试的时候，可以使用如下命令设置时间：
+
+`sudo date -s 10:00:00`
+
+修改之后，可用`date`命令查看系统当前时间，确认修改的效果。
+
+ntpd是NTP的另一个实现，既可以当Server，也可以当Client，已经被集成进busybox。
 
 ## UPNP
 
@@ -234,7 +254,21 @@ upnp/src/api/upnpapi.c: UpnpRegisterClient
 
 gmediarender使用libupnp库进行DLNA协议的交互。这个项目的难度中等，可作为libupnp库的进阶教程。由于大部分的内容和tv_device类似，因此，这里只列出差异的部分。
 
-1）初始化
+### 概述
+
+MediaRenderer包含三个服务：
+
+1)RenderingControl。代码在src/upnp_control.c中。
+
+2)ConnectionManager。代码在src/upnp_connmgr.c中。
+
+3)AVTransport。代码在src/upnp_transport.c中。
+
+注意：MediaRenderer和所包含的服务都有版本的概念。比如MediaRenderer在XML中一般表示为`urn:schemas-upnp-org:device:MediaRenderer:1`，其中最后的数字1就是版本号。
+
+此外，MediaRenderer的版本和所包含服务的版本，有一定的对应关系。比如MediaServer:4中的ScheduledRecording:2。因为ScheduledRecording是在MediaServer:2中引入的，因此它的版本号就不可能和MediaServer的版本号一致。MediaRenderer也是一样的情况。
+
+### 初始化
 
 src/main.c: main
 
@@ -244,143 +278,48 @@ src/upnp_device.c: initialize_device
 
 upnp/src/api/upnpapi.c: UpnpInit
 
-## NTP
+### 事件处理
 
-Network Time Protocol，是用来让计算机之间实现时间同步的协议。
+1.数据结构
 
-网上可用的NTP Server列表，可参见：
+相关数据结构按从大到小的顺序，依次为：
 
-http://www.pool.ntp.org/en/
+服务->事件->参数->值类型->基本数据类型
 
-NTP的Client有很多，这里使用ntpclient软件。它的官网：
+这里从最小的基本数据类型说起。由于MediaRenderer的三个服务在这里的细节都是类似的，因此下面仅以RenderingControl为例。
 
-http://doolittle.icarus.com/ntpclient/
+1)基本数据类型
 
-调试的时候，可以使用如下命令设置时间：
+src/upnp.h: param_datatype定义了可用的基本数据类型，比如STRING、BOOLEAN、I2、I4、UI2、UI4等。后四种都是整数类型，I表示整数，U表示无符号，2表示2个字节的宽度。
 
-`sudo date -s 10:00:00`
+2)值类型
 
-修改之后，可用`date`命令查看系统当前时间，确认修改的效果。
+src/upnp.h: var_meta定义了值类型的数据结构。该类型的实例是src/upnp_control.c: control_var_meta。var_meta的sendevents成员的含义是，如果该值发生改变时，发送消息则设置为SENDEVENT_YES（默认值），否则设为SENDEVENT_NO。
 
-ntpd是NTP的另一个实现，既可以当Server，也可以当Client，已经被集成进busybox。
+3)参数
 
-# ASOC对多Codec的支持
+src/upnp.h: argument定义了参数的数据结构。典型示例如下：
 
-## 音频设计方案
+`{ "InstanceID", PARAM_DIR_IN, CONTROL_VAR_AAT_INSTANCE_ID }`
 
-ASOC在Linux 3.X时代最大的改进就是添加了对多codec的支持。这里我们首先描述一下多Codec在音频设备设计中的意义，以及它的一些实现方案。
+3)事件
 
-![](/images/article/multi_codec_0.png)
+一个事件包含若干参数，因此事件的数据结构是一个argument数组。以SetVolume事件为例，它的参数结构的实例为src/upnp_control.c: arguments_set_vol。
 
-上图是实现方案A，它的特点是：
+4)服务
 
-1.1个MCU通过2个Codec，间接连接了4个Speaker。在当前的音频设计中，音箱的扬声器个数越来越多，但是单个Codec所能提供的声道数量有限。当扬声器个数超过这一数量限制时，就需要采用多Codec方案了。
+一个服务包含若干事件，因此服务的数据结构是一个argument的二维数组。在这里是src/upnp_control.c: argument_list。
 
-2.两个Codec有独立的I2C控制通道。这里的“独立”是逻辑意义上的。在物理上，两个Codec可挂在同一条I2C总线上，以不同的从机地址加以区分。
+2.事件发布
 
-3.两个Codec共享I2S输入。
+事件发布用于向外界宣布本服务所支持的功能。gmediarender事件发布的内容是动态生成的，其函数为：src/upnp.c: gen_scpd
 
-![](/images/article/multi_codec_1.png)
 
-上图是实现方案B，它和方案A的区别为：两个Codec有独立的I2S输入。方案B根据用途，又可分为两种子方案：
 
-1.方案B1：两个I2S的输入相同。
+## upnp-inspector
 
-2.方案B2：两个I2S的输入不同。
+upnp-inspector是一个局域网内的UPNP协议的嗅探分析器。可充当DMC，推送多媒体数据到相关DLNA设备。安装方法如下：
 
-## 方案A的代码实现
+`sudo apt-get install upnp-inspector`
 
-1.首先讨论I2C控制的实现，这里以TAS5731M芯片为例。
-
-在board初始化阶段，为两个codec各自生成一个I2C设备。
-
-{% highlight c %}
-static struct i2c_board_info __initdata rtl819xd_i2c_devices[] = {
-	{
-		I2C_BOARD_INFO("tas5731", 0x1a), //TAS5731M Master
-	},
-	{
-		I2C_BOARD_INFO("tas5731", 0x1b), //TAS5731M Sub
-	},
-};
-{% endhighlight %}
-
-2.方案A由于共享I2S，因此在驱动角度，必须将两个codec驱动整合到一个card之中。
-
-相应的machine代码为：
-
-{% highlight c %}
-static struct snd_soc_dai_link rtl819xd_jzcodec_dai[] = {
-	{
-		.name = "JZCODEC_MASTER",
-		.stream_name = "JZCODEC_MASTER",
-		.cpu_dai_name = "rtl8197d-i2s",
-		.codec_name = "tas5731.0-001a",
-		.codec_dai_name = "tas5731_master",
-		.init = rtl819xd_jzcodec_jzcodec_init,
-		.ops = &rtl819xd_jzcodec_ops,
-		.platform_name	= "rtl819x-pcm-audio",
-	},
-	{
-		.name = "JZCODEC_SUB",
-		.stream_name = "JZCODEC_SUB",
-		.cpu_dai_name = "rtl8197d-i2s",
-		.codec_name = "tas5731.0-001b",
-		.codec_dai_name = "tas5731_sub",
-		.init = rtl819xd_jzcodec_jzcodec_init,
-		.ops = &rtl819xd_jzcodec_ops,
-	}
-};
-{% endhighlight %}
-
-相应的codec代码为：
-
-{% highlight c %}
-static struct snd_soc_dai_driver tas5731_dai[] = {
-	{
-		.name = "tas5731_master",
-		.id = 0,
-		.playback = {
-			.stream_name	= "Playback",
-			.channels_min	= 2,
-			.channels_max	= 6,
-			.rates		= TAS5731_PCM_RATES,
-			.formats	= TAS5731_PCM_FORMATS,
-		},
-		.ops = &tas5731_dai_ops,
-	},
-	{
-		.name = "tas5731_sub",
-		.id = 1,
-		.playback = {
-			.stream_name	= "Playback",
-			.channels_min	= 2,
-			.channels_max	= 6,
-			.rates		= TAS5731_PCM_RATES,
-			.formats	= TAS5731_PCM_FORMATS,
-		},
-		.ops = &tas5731_dai_ops,
-	}
-};
-{% endhighlight %}
-
-这里对代码的要点做一个解释：
-
-1）codec_name的命名规则。codec_name一般以X.Y-Z的形式命名。
-
-其中X为codec的I2C driver名称。注意这里的名称和I2C_BOARD_INFO中定义的名称不同，后者是根据i2c_device_id中定义的名称来命名的。
-
-Y表示I2C总线号。如果MCU有超过一条I2C总线的话，需要使用总线号加以区分。
-
-Z表示Codec设备的从机地址。
-
-2）由于两个Codec共享I2S输入，因此只需要其中一个Codec定义platform_name即可。
-
-## 方案B1的代码实现
-
-和方案A的差别在于：两个Codec都需要定义自己的platform_name。
-
-## 方案B2的代码实现
-
-这种情况用两个独立的card来解决就可以了。
 
