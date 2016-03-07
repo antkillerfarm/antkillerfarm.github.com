@@ -206,6 +206,8 @@ upnp/src/api/upnpapi.c: UpnpInitPreamble
 
 这一步调用SetGenaCallback函数，将上一步注册到中间结构中的回调函数，注册到GENA事件处理线程中。
 
+UpnpRegisterRootDevice有若干不同的变种：UpnpRegisterRootDevice2、UpnpRegisterRootDevice3、UpnpRegisterRootDevice4。其中，对于动态生成设备描述的方式来说，UpnpRegisterRootDevice2更好用一些。
+
 2）事件处理流程
 
 upnp/src/genlib/miniserver/miniserver.c: RunMiniServer
@@ -268,6 +270,14 @@ MediaRenderer包含三个服务：
 
 此外，MediaRenderer的版本和所包含服务的版本，有一定的对应关系。比如MediaServer:4中的ScheduledRecording:2。因为ScheduledRecording是在MediaServer:2中引入的，因此它的版本号就不可能和MediaServer的版本号一致。MediaRenderer也是一样的情况。
 
+一个服务可以提供若干功能。这些功能主要包括三方面：
+
+1.状态变量（State Variables）。状态变量可以进行查询操作。
+
+2.动作（Action）。get类的Action可以实现和查询状态变量类似的效果，但比后者要复杂一些。
+
+3.事件（Eveting）。事件是设备（Device）主动推送给控制点（Control Point）的消息，需要后者订阅（SUBSCRIBE）或退订（UNSUBSCRIBE）。
+
 ### 初始化
 
 src/main.c: main
@@ -278,13 +288,13 @@ src/upnp_device.c: initialize_device
 
 upnp/src/api/upnpapi.c: UpnpInit
 
-### 事件处理
+### 动作（Action）处理
 
 1.数据结构
 
 相关数据结构按从大到小的顺序，依次为：
 
-服务->事件->参数->值类型->基本数据类型
+服务->动作->参数->值类型->基本数据类型
 
 这里从最小的基本数据类型说起。由于MediaRenderer的三个服务在这里的细节都是类似的，因此下面仅以RenderingControl为例。
 
@@ -302,19 +312,37 @@ src/upnp.h: argument定义了参数的数据结构。典型示例如下：
 
 `{ "InstanceID", PARAM_DIR_IN, CONTROL_VAR_AAT_INSTANCE_ID }`
 
-3)事件
+3)动作
 
-一个事件包含若干参数，因此事件的数据结构是一个argument数组。以SetVolume事件为例，它的参数结构的实例为src/upnp_control.c: arguments_set_vol。
+一个动作包含若干参数，因此动作的数据结构是一个argument数组。以SetVolume动作为例，它的参数结构的实例为src/upnp_control.c: arguments_set_vol。
 
 4)服务
 
-一个服务包含若干事件，因此服务的数据结构是一个argument的二维数组。在这里是src/upnp_control.c: argument_list。
+一个服务包含若干动作，因此服务的数据结构是一个argument的二维数组。在这里是src/upnp_control.c: argument_list。
 
-2.事件发布
+服务不仅包含动作，还包含了其他一些东西，这些都被统一组织到src/upnp.h: service结构中。该结构的实例是src/upnp_control.c: control_service_。
 
-事件发布用于向外界宣布本服务所支持的功能。gmediarender事件发布的内容是动态生成的，其函数为：src/upnp.c: gen_scpd
+### 功能发布
 
+功能发布用于向外界宣布本服务所支持的功能。
 
+gmediarender功能发布的内容是动态生成的，其函数为：src/upnp.c: gen_scpd
+
+### 事件处理
+
+src/upnp_device.c: event_handler
+
+### 返回值处理
+
+src/upnp_device.h: upnp_add_response
+
+调用这个函数或者它的派生函数，生成返回值的xml。
+
+## gmediaserver
+
+除了gmediarender项目之外，GNU还有个名叫gmediaserver的项目，也是使用libupnp库，结构和gmediarender十分相似，它的官网是：
+
+http://www.nongnu.org/gmediaserver/
 
 ## upnp-inspector
 

@@ -150,3 +150,21 @@ Openwrt默认的gst1-libav库，并没有开启ape格式的支持，需要手动
 
 wav文件虽然是最简单的一类音频文件，但仍然不可以直接播放，能够直接被ALSA识别的是PCM流。播放wav的插件是wavparse。
 
+## 处理播放列表
+
+参考文献：
+
+https://github.com/mopidy/mopidy/pull/460
+
+https://developer.gnome.org/totem-pl-parser/stable/TotemPlParser.html
+
+{% highlight python %}
+register_typefind('audio/x-mpegurl', detect_m3u_header, [b'm3u', b'm3u8'])
+register_typefind('audio/x-scpls', detect_pls_header, [b'pls'])
+register_typefind('application/xspf+xml', detect_xspf_header, [b'xspf'])
+{% endhighlight %}
+
+UpnpDownloadXmlDoc
+
+UpnpDownloadUrlItem
+
