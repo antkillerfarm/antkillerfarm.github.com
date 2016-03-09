@@ -150,19 +150,43 @@ Openwrt默认的gst1-libav库，并没有开启ape格式的支持，需要手动
 
 wav文件虽然是最简单的一类音频文件，但仍然不可以直接播放，能够直接被ALSA识别的是PCM流。播放wav的插件是wavparse。
 
-## 处理播放列表
+## 处理播放列表（Playlist）
 
-参考文献：
+常用的播放列表文件格式包括.m3u/.m3u8、.pls、.xspf等。详细列表参见：
+
+https://en.wikipedia.org/wiki/Playlist
+
+可以在rhythmbox中，生成一个播放列表，然后保存成文件。rhythmbox支持.m3u、.pls、.xspf格式的输出。
+
+但是rhythmbox毕竟只是播放软件，一些高阶的播放列表功能，比如批量生成、修改TAG之类的还是力有未逮。这时就需要专门的Tag Editor了。
+
+这里推荐EasyTag，但它只支持生成.m3u文件。它的安装方法：
+
+`sudo apt-get install easytag`
+
+GStreamer本身不能处理播放列表文件。官方的插件库中也没有处理播放列表文件的插件。
+
+从实现角度看，处理播放列表主要有两种方式：
+
+1.编写GStreamer插件，在GStreamer层解决问题。这方面的例子参见：
 
 https://github.com/mopidy/mopidy/pull/460
 
-https://developer.gnome.org/totem-pl-parser/stable/TotemPlParser.html
+2.在应用层处理播放列表。比如Totem。
 
-{% highlight python %}
-register_typefind('audio/x-mpegurl', detect_m3u_header, [b'm3u', b'm3u8'])
-register_typefind('audio/x-scpls', detect_pls_header, [b'pls'])
-register_typefind('application/xspf+xml', detect_xspf_header, [b'xspf'])
-{% endhighlight %}
+我比较认可第2种方法。从程序设计的角度看，播放列表更多是一种应用层的呈现方式，而非GStreamer所擅长的流处理。从设计原则来看，GStreamer作为底层库，应提供“机制”，而非“方法”。据说GStreamer官方也对这个问题争议了很久，但最终还是不打算支持对播放列表的处理。
+
+## Totem Playlist Parser
+
+Totem中处理播放列表的代码，被单独抽离出来，形成了Totem Playlist Parser库。其官网为：
+
+https://developer.gnome.org/totem-pl-parser
+
+安装方法：
+
+`sudo apt-get install libtotem-plparser-dev`
+
+
 
 UpnpDownloadXmlDoc
 
