@@ -186,6 +186,10 @@ https://developer.gnome.org/totem-pl-parser
 
 `sudo apt-get install libtotem-plparser-dev`
 
+代码示例参见：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gstreamer/tutorials/step1
+
 
 
 UpnpDownloadXmlDoc
