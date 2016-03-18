@@ -232,12 +232,7 @@ gmediarender定义了一个变量容器来维护相关的状态变量。这个�
 
 gmediarender的播放处理代码在src/output_gstreamer.c中。其中最关键的结构是output_module。
 
-
-
-gmediarender的URI主要有两个即uri和next_uri。
-
-
-output_set_uri
+gmediarender的URI主要有两个即uri和next_uri。在pipeline的about-to-finish事件中，会做相应的处理。
 
 # gmediaserver
 
@@ -250,5 +245,9 @@ http://www.nongnu.org/gmediaserver/
 upnp-inspector是一个局域网内的UPNP协议的嗅探分析器。可充当DMC，推送多媒体数据到相关DLNA设备。安装方法如下：
 
 `sudo apt-get install upnp-inspector`
+
+upnp-inspector的功能包括：
+
+1.列出局域网内的UPNP设备
 
 

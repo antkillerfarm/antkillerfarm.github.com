@@ -185,11 +185,11 @@ TargetEnvironment=Unity
 
 3）将MyQuickStart.desktop的文件权限改为可执行，并将其拖放到侧边栏，就可以看效果了。
 
-## 修改软件源
+# 修改软件源
 
 Ubuntu更新软件时的软件源配置文件是/etc/apt/sources.list。
 
-## 系统清理工具
+# 系统清理工具
 
 1.ubuntu tweak
 
@@ -199,7 +199,7 @@ Ubuntu更新软件时的软件源配置文件是/etc/apt/sources.list。
 
 支持平台广泛，大多数Linux发行版都有对应的软件包。
 
-## tftp
+# tftp
 
 Ubuntu下面关于TFTP的程序，有三套：
 
@@ -276,3 +276,26 @@ Linux下的远程桌面软件主要有RealVNC和rdesktop。前者支持VNC协议
 使用方法：
 
 `rdesktop -u administrator -p ****** -a 16 192.168.1.1`
+
+# 文件校验和
+
+计算文件校验和，一般采用MD5和SHA算法。在Ubuntu中，这些算法的命令包括：md5sum、sha1sum(160-bit) ,sha224sum(224-bit) ,sha256sum(256-bit),sha384sum(384-bit),sha512sum(512-bit)等。
+
+# 发行版乱战
+
+Linux以发行版众多闻名于世。最近发现了以下网站，或可对各个发行版进行一个简单的比较。
+
+http://distrowatch.com/
+
+下面对几个主要的参数，进行一下点评：
+
+## Office
+
+主要是3个流派：
+
+1.StarOffice->OpenOffice.org->LibreOffice。最初由Sun主导，后来改为Google主导。
+
+2.KOffice->Calligra Office。KDE项目的成果。
+
+3.GOffice。Gnome项目的成果，和前两个相比，GOffice的组件比较独立，没有什么协同能力。
+

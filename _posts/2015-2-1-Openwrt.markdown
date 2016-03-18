@@ -298,15 +298,27 @@ target：目标板上的应用。
 
 最终的生成结果。
 
+## 总结
+
+OpenWrt目录结构是与它的编译系统密切相关的，这样的组织结构使得OpenWrt能用200M左右的源代码，实现一个现代的应用平台。
+
+尤其是按需下载源代码包的设计，大大缩小了OpenWrt本身的代码规模。可以相比较的是某平台基于Linux开发的SDK，大小超过1G，文件数近50k。这样的代码库甚至很难导入SVN这样的版本控制系统。我曾经做过测试，导入10k文件数的代码，到我PC的SVN库中，在局域网条件下，竟花了25分钟。
+
 # OpenWrt编译系统
 
 ## 大体结构
 
 OpenWrt编译系统由一系列makefile脚本组成。除了分散于各个文件夹的Makefile文件之外，在include文件夹下，还有很多.mk文件。这些.mk文件的作用有些类似于C语言的头文件。建议研究编译系统之前，先把这些.mk看一遍。
 
+此外，OpenWrt编译系统还提供了许多shell之外的命令。这些命令的脚本在scripts文件夹下，基本是用shell和perl编写的。
+
 ## 镜像文件生成
 
 以arm64为例，生成镜像文件的过程，由target/linux/arm64/Makefile来控制。其中kernel的生成代码在include/kernel-build.mk中，而rootfs的生成代码在include/image.mk中。
+
+## 下载处理
+
+主要脚本在scripts/download.pl中，其中对几个重要的下载站点做了预置和优化，包括SF、GNU、KERNEL、GNOME等。
 
 # OpenWrt网络配置
 

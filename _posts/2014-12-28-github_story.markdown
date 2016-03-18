@@ -110,6 +110,14 @@ Jekyll原生支持maruku，rdiscount，kramdown，redcarpet等markdown渲染器�
 
 在恢复历史版本的时候，checkout只是检出历史版本，而不会删除历史版本之后的版本记录，但reset就不同了，reset相当于版本库回退到历史版本，因此后续的版本记录都没有了。
 
+7.制作和应用patch
+
+制作patch主要有两种方式：`git diff`和`git format-patch`。前者生成通用patch，而后者生成git专用patch。使用示例：
+
+`git diff SHA1 SHA2` 比较两个历史版本之间的差异，SHA1和SHA2是两次commit的SHA值。
+
+应用patch：`git am`
+
 ## 如何git超大版本库
 
 自从两次git完整的linux kernel，都因为网络问题，而中途失败之后，不甘心的我，继续在网上寻找答案。

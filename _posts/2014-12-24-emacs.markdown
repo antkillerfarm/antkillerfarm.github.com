@@ -100,6 +100,8 @@ Leave Hexl mode, going back to the major mode this buffer had before you invoked
 
 显示行号——`(global-linum-mode t)`
 
+跳到第N行——M-g g
+
 ## 使用cscope+emacs在Ubuntu 12.04下的注意事项
 
 1）除了安装cscope还需要安装cscope-el，不然找不到xcscope.el

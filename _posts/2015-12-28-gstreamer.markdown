@@ -190,9 +190,3 @@ https://developer.gnome.org/totem-pl-parser
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gstreamer/tutorials/step1
 
-
-
-UpnpDownloadXmlDoc
-
-UpnpDownloadUrlItem
-
