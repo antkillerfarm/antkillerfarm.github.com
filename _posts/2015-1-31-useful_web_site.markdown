@@ -79,6 +79,16 @@ http://www.tinylab.org/using-qemu-simulation-inserts-the-type-system-to-produce-
 
 这两篇文章讲述如何使用qemu运行各种汇编程序和微内核
 
+## 几个开源软件代码下载地址（国内可访问）
+
+GNU
+
+ftp://mirrors.ustc.edu.cn/gnu/
+
+GNOME
+
+http://ftp.gnome.org/pub/GNOME/sources/
+
 # IT杂谈
 
 这篇文章太短，所以加些料谈一些技术之外的东西，就不新起一篇了。不排除将来写的多了，将之单独为一篇的可能，现在就这样吧。

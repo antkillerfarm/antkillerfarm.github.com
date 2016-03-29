@@ -254,3 +254,8 @@ CFLAGS的默认设置是`-g -O2`，可用以下命令修改之：
 
 `./configure CFLAGS="-g -O0"`
 
+3.设定so文件的导出符号表
+
+`libtool --mode=link gcc -o libfoo.la foo.lo -export-symbols=foo.sym`
+
+

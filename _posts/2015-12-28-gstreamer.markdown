@@ -190,3 +190,56 @@ https://developer.gnome.org/totem-pl-parser
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gstreamer/tutorials/step1
 
+## Totem Playlist Parser的openwrt移植
+
+### 安装依赖软件包
+
+Totem Playlist Parser除了依赖常见的glib2、libxml、libsoup之外，还依赖gmime和quvi。其中后者不是必须的，如果不打算网上下载视频的话，可以不装。（quvi包主要是一堆lua脚本，用于解析类似youtube、foxnews之类的媒体网站的内容。）
+
+完成第1步的操作之后，编译阶段基本就没有什么大问题了。然而，上板调试，却出现解析失败的现象。
+
+### 安装MIME解析文件
+
+Totem Playlist Parser最重要的函数是plparse/totem-pl-parser.c: totem_pl_parser_parse_internal。这个函数的主要思路是在special_types和dual_types数组中，根据MIME查找相关的处理函数。其代码片段如下：
+
+{% highlight c %}
+static PlaylistTypes special_types[] = {
+	PLAYLIST_TYPE ("audio/x-mpegurl", totem_pl_parser_add_m3u, NULL, FALSE),
+	PLAYLIST_TYPE ("video/vnd.mpegurl", totem_pl_parser_add_m4u, NULL, FALSE),
+	PLAYLIST_TYPE ("audio/x-scpls", totem_pl_parser_add_pls, NULL, FALSE),
+	...
+};
+{% endhighlight %}
+
+从这里可以看出，找到正确的MIME才是开始解析的关键。这里使用了glib提供的g_content_type_guess函数判断文件的MIME。
+
+判断MIME的方式有两种：
+
+1.根据文件名判断。
+
+这种方式的主要函数是glib/gio/xdgmime.c: xdg_mime_get_mime_types_from_file_name。
+
+2.根据文件的内容（主要是magic number）判断。
+
+这种方式的主要函数是glib/gio/xdgmime.c: xdg_mime_get_mime_type_for_data。
+
+无论何种方式，这里实际上都需要有一个MIME解析文件提供给程序，用以确定文件的MIME类型。
+
+这里以文件名方式为例，讲一下MIME解析文件的基本知识。
+
+1.存储路径
+
+通常在/usr/share/mime下，其他可能的路径，可在代码中查到。
+
+2.格式类型
+
+主要有三种：
+
+1）XML型。这种类型的解析文件功能和可阅读性都很强，但所占空间较大。
+
+2）glob型。分为glob和glob2两种格式。功能一般，可阅读，占用空间一般。
+
+3）cache型。二进制文件，不可阅读，空间最小，效率最高。
+
+我这里采用glob2文件，既方便修改，其占用空间也在可接受的范围内。
+

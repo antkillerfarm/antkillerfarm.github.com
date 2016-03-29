@@ -252,6 +252,16 @@ U盘驱动可分为两个层次：
 
 2.上面提到的脚本，可以接收诸如ACTION、DEVPATH之类的环境变量。
 
+## 其他事件
+
+IP地址被改变事件示例：
+
+{% highlight c %}
+[ "$INTERFACE" = "lan" ] && [ "$ACTION" = "ifup" ] && {
+	/etc/init.d/gmediarender restart
+}
+{% endhighlight %}
+
 # Openwrt 3G拨号上网
 
 参见：
@@ -275,4 +285,27 @@ http://www.shuyz.com/n2n-vpn-network-introduction-and-config.html
 # Openwrt对autotools、Cmake的支持
 
 autotools和Cmake是目前应用最广的两套编译配置系统。Openwrt对它们支持的代码在/include/autotools.mk和/include/cmake.mk中。
+
+# 使用GDB调试
+
+由于完整的GDB尺寸太大（~1.5MB），因此通常使用GDBServer进行调试。两者的代码都在gdb软件包中。
+
+参考文档：
+
+http://wiki.openwrt.org/doc/devel/gdb
+
+http://h4x3rotab.github.io/blog/2014/02/27/openwrtxia-de-gdbyuan-cheng-diao-shi/
+
+除了上面列出的内容之外，我还遇到了一个问题：我所用平台的SDK将`-Os`作为全局的编译选项。这在平时自然没什么，但调试的时候就有问题了。如何将`-Os`换成`-O0`呢？可参见以下示例：
+
+{% highlight c %}
+TARGET0_CFLAGS:=$(filter-out -Os,$(TARGET_CFLAGS))
+TARGET_CFLAGS:= -O0 $(TARGET0_CFLAGS) -ggdb3
+{% endhighlight %}
+
+这里解释一下：
+
+1.filter-out是make提供的过滤函数，可去除字符串A中包含的特定字符串B。
+
+2.定义TARGET0_CFLAGS的原因在于：make不支持变量的递归定义，需要中间变量暂存之。
 
