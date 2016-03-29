@@ -104,6 +104,20 @@ http://dranger.com/ffmpeg/
 
 `ffmpeg -f alsa -ac 2 -i pulse -f x11grab -r 30 -s 1024x768 -i :0.0 -acodec pcm_s16le -vcodec libx264 -preset ultrafast -crf 0 -threads 0 output.mkv`
 
+# OpenCV
+
+OpenCV是一套跨平台计算机视觉库。其官网为：
+
+http://opencv.org/
+
+官方教程：
+
+http://docs.opencv.org/2.4/doc/tutorials/tutorials.html
+
+其他教程：
+
+http://blog.csdn.net/morewindows/article/category/1291764
+
 # SDL
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/HelloSDL
