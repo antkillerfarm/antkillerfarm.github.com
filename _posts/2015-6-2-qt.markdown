@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Qt, Python
+title:  Qt, Python, Javascript
 category: technology 
 ---
 
@@ -323,3 +323,16 @@ Python内置的urllib和urllib2模块都可用于获取HTTP网页，但使用范
     urllib2.install_opener(l_opener)
     usock = urllib2.urlopen('http://www.sohu.com')
 {% endhighlight %}
+
+# Javascript
+
+## Javascript和C的互相调用
+
+Javascript本质上是服务器发出的，由客户端执行的脚本。出于安全原因，本地功能比较弱。所谓Javascript和C的互相调用，基本上都依赖于浏览器的实现。比如，在IE中依赖于ActiveX插件，在Firefox中依赖于JSAPI。
+
+## node.js
+
+为了在服务器后端使用Javascript，Ryan Dahl发起了node.js项目。这个项目可以看作是php等的竞争者。它的官网为：
+
+https://nodejs.org/
+

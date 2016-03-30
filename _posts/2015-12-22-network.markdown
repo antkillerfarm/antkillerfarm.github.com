@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  网络杂谈
+title:  网络杂谈, Camera
 category: technology 
 ---
 
@@ -146,4 +146,49 @@ ntpd是NTP的另一个实现，既可以当Server，也可以当Client，已经�
 4.sendto                           4.recvfrom
 5.关闭socket（closesocket）         5.关闭socket（closesocket）
 {% endhighlight %}
+
+# Camera
+
+常见的Camera从软件角度，可分为三类：
+
+1.Soc Camera。
+
+2.USB Camera。
+
+3.IP Camera。
+
+其中，前两类设备需要相关的驱动程序。Linux内核配置方法如下：
+
+{% highlight text %}
+Device Drivers --->
+    <*> Multimedia support --->
+    [*]   Cameras/video grabbers support
+    [*]   Media USB Adapters  --->
+        <*>   USB Video Class (UVC)
+        <*>   GSPCA based webcams  --->  
+    [*]   V4L platform devices  --->
+        <*>   SoC camera support
+{% endhighlight %}
+
+UVC是Microsoft与另外几家设备厂商联合推出的为USB视频捕获设备定义的协议标准，目前已成为USB org标准之一。
+
+GSPCA同样是一种标准，早期的很多摄像头用的就是这一标准。
+
+这两类设备的应用层接口为V4L2。教程可参见：
+
+http://blog.csdn.net/mmz_xiaokong/article/details/5666993
+
+对于UVC设备，可以用相关工具直接获取图像。常用的工具有：
+
+GTK+ UVC Viewer
+
+http://guvcview.sourceforge.net/
+
+luvcview
+
+https://github.com/ksv1986/luvcview
+
+IP Camera无须驱动，只要提供网口就行了。有的设备支持wifi，连网口也省了。
+
+IP Camera的应用层接口一般为网络协议接口，如TCP/IP、HTTP、RTP/RTSP等。
 

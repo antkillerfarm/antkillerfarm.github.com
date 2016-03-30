@@ -118,6 +118,20 @@ http://docs.opencv.org/2.4/doc/tutorials/tutorials.html
 
 http://blog.csdn.net/morewindows/article/category/1291764
 
+国人写的OpenCV入门指南
+
+http://wiki.opencv.org.cn/
+
+国人办的OpenCV中文网
+
+http://blog.csdn.net/mmz_xiaokong/article/details/7916163
+
+机器视觉开源处理库汇总
+
+http://blog.csdn.net/mmz_xiaokong/article/details/7916189
+
+介绍n款计算机视觉库/人脸识别开源库/软件
+
 # SDL
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/HelloSDL
@@ -191,3 +205,4 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/HelloSDL
 ImageMagick调整图片尺寸的命令示例：
 
 `convert src.jpg -resize 50% des.jpg`
+
