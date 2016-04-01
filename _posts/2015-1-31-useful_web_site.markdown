@@ -71,6 +71,10 @@ https://www.tulingss.com/
 
 一个技术类的搜索引擎。
 
+http://www.gooseeker.com/
+
+一个基于FireFox的网络爬虫。
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

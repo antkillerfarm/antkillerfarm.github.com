@@ -110,27 +110,59 @@ OpenCV是一套跨平台计算机视觉库。其官网为：
 
 http://opencv.org/
 
+代码下载地址：
+
+https://github.com/Itseez/opencv
+
+OpenCV项目目前由itseez团队维护，他们的网站是：
+
+http://itseez.com/
+
 官方教程：
 
 http://docs.opencv.org/2.4/doc/tutorials/tutorials.html
 
 其他教程：
 
-http://blog.csdn.net/morewindows/article/category/1291764
-
-国人写的OpenCV入门指南
-
 http://wiki.opencv.org.cn/
 
-国人办的OpenCV中文网
+国人办的OpenCV中文网。
+
+http://blog.csdn.net/morewindows/article/category/1291764
+
+国人写的OpenCV入门指南。
+
+http://blog.csdn.net/column/details/opencv-tutorial.html
+
+另一个国人写的OpenCV入门指南。
 
 http://blog.csdn.net/mmz_xiaokong/article/details/7916163
 
-机器视觉开源处理库汇总
+机器视觉开源处理库汇总。
 
 http://blog.csdn.net/mmz_xiaokong/article/details/7916189
 
-介绍n款计算机视觉库/人脸识别开源库/软件
+介绍n款计算机视觉库/人脸识别开源库/软件。
+
+http://deeplearning.net/
+
+一个深度学习方面的资料网站。从该网站提供的招聘信息来看，caffe、Theano、Torch是目前主流的三大框架库。
+
+http://caffe.berkeleyvision.org/
+
+caffe是贾扬清写的一个深度学习框架。这哥们是清华的本硕+UCB的博士。
+
+https://github.com/BVLC/caffe
+
+caffe的代码地址。
+
+http://deeplearning.net/software/theano/
+
+Theano的主页
+
+https://github.com/Theano/Theano
+
+Theano的代码地址。
 
 # SDL
 

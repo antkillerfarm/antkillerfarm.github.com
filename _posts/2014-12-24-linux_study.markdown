@@ -323,3 +323,10 @@ sigwait(&sigs_to_catch, &sig);
 
 这种方法显然比`while (1);`这样的忙等待，有效率的多。
 
+## Inotify
+
+一种高效、实时的Linux文件系统事件监控框架。参考文档：
+
+http://www.infoq.com/cn/articles/inotify-linux-file-system-event-monitoring
+
+

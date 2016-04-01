@@ -113,7 +113,7 @@ int main(int argc, char* argv[])
 }
 {% endhighlight %}
 
-网上的例子只有输出，没有输入，其实不算好例子。用VC之类的编译器编好后，放到cgi-bin中，在浏览器中输入以下地址http://localhost/cgi-bin/cgi.exe?abc就可以看到效果了。还有printf("Content-type: text/html\n\n");是一定要有的，没有的会报HTTP 500的错误，有的例子中说printf("\n");就行了，这是不对的，至少在默认配置下，这样做的结果是你可以下载该.exe，但不能把它当做CGI来执行。
+网上的例子只有输出，没有输入，其实不算好例子。用VC之类的编译器编好后，放到cgi-bin中，在浏览器中输入以下地址http://localhost/cgi-bin/cgi.exe?abc就可以看到效果了。还有`printf("Content-type: text/html\n\n");`是一定要有的，没有的会报HTTP 500的错误，有的例子中说`printf("\n");`就行了，这是不对的，至少在默认配置下，这样做的结果是你可以下载该.exe，但不能把它当做CGI来执行。
 
 从这个例子，以及Apache官方的例子（http://httpd.apache.org/docs/1.3/howto/cgi.html）
 
