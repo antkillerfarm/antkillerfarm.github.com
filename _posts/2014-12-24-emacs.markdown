@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Emacs, Vi, Lisp, Logo, JSON, perl, 小众语言集中营
+title:  Emacs, Vi, Lisp, Logo, perl, 小众语言集中营
 category: technology 
 ---
 
@@ -194,18 +194,6 @@ http://www.cs.berkeley.edu/~bh/logo.html
 
 再一次看到熟悉的命令行界面和海龟了:)
 
-# JSON
-
-JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式。 易于人阅读和编写。同时也易于机器解析和生成。 它基于JavaScript Programming Language, Standard ECMA-262 3rd Edition - December 1999的一个子集。
-
-其官网为：
-
-http://json.org/
-
-官网上列出了各种语言的JSON解析库。其中C语言的解析库中以json-c最为流行，其官网为：
-
-https://github.com/json-c/json-c
-
 # perl
 
 中文教程：
@@ -290,9 +278,9 @@ Python、Ruby，随便学一个。
 
 Tex最为称道的是数学公式的排版。MS Office直到2007才有了类似的效果。
 
-2.配置类
+2.数据描述类
 
-INI和Json。这两个比较简单，也非常好用，不多说了。
+INI和Json。这两个比较简单，也非常好用，不多说了。备选有BSON、YAML、
 
 3.网页类
 
