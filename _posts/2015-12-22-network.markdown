@@ -147,6 +147,38 @@ ntpd是NTP的另一个实现，既可以当Server，也可以当Client，已经�
 5.关闭socket（closesocket）         5.关闭socket（closesocket）
 {% endhighlight %}
 
+## WIFI WPS
+
+WPS分为PBC(BUTTON)和PIN两种方式
+
+### PBC
+
+按WPS按钮实现WPS安全连接。
+
+在AP中，在WPS设置中,设置为启用。
+
+按一下客户端(无线网卡)上的WPS按键,搜索WPS网络。
+
+按一下AP上的WPS按键,WPS开始链接协商,片刻后WPS安全连接成功建立。
+
+### PIN
+
+1.PIN(Internal Registra, 相对于AP而言)：通过在路由器中输入客户端PIN码来实现WPS安全连接。
+
+在WPS设置中,把状态设置为启用。
+
+打开客户端WPS设置软件,选择在路由器中输入PIN的方式连接,同时软件上还会显示客户端当前的PIN码。
+
+打开路由器界面,在WPS模式里选择PIN模式,然后输入客户端的PIN码, 点添加新设备,一会儿后,WPS安全连接成功建立。
+
+2.PIN(External Registra, 相对于AP而言)：通过输入AP的PIN码实现WPS安全连接。
+
+在AP中，在WPS设置中,设置为启用。
+
+记住AP的PIN码,然后打开客户端（无线网卡）WPS设置软件,选择以AP的PIN码来进行连接。
+
+输入完PIN码后,点下一步,一会儿后,WPS安全连接成功建立。
+
 # Camera
 
 常见的Camera从软件角度，可分为三类：
