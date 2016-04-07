@@ -225,6 +225,8 @@ Ubuntu下面关于TFTP的程序，有三套：
 
 `iwconfig`
 
+`wpa_cli`
+
 扫描周围的wifi信号：
 
 `iwlist scanning`
