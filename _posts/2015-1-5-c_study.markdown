@@ -4,6 +4,12 @@ title:  C/C++编程心得
 category: technology 
 ---
 
+# 参考资料
+
+http://www.cplusplus.com/
+
+这个网站可以查到C++的标准库的用法。
+
 # 头文件被多个源文件引用
 
 在头文件中定义字符串时，如果该头文件会被多个源文件引用的话，字符串必须被定义为const，否则会有重定义错。当然最好在头文件中只放声明，不要放定义。
@@ -342,3 +348,10 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/linu
 
 这条命令中的main_link.c如果放到`-lhello`之后就会出问题。也考虑使用`--start-group`和`--end-group`之类的链接选项解决链接顺序问题。
 
+## cout格式化输出
+
+{% highlight c %}
+cout<<hex<<i<<endl; //输出十六进制数
+cout<<oct<<i<<endl; //输出八进制数
+cout<<dec<<i<<endl; //输出十进制数
+{% endhighlight %}
