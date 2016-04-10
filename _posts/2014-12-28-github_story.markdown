@@ -80,6 +80,34 @@ Jekyll原生支持maruku，rdiscount，kramdown，redcarpet等markdown渲染器�
 
 之前一直使用pygments作为语法高亮的着色器。近来，github推荐我使用rouge。经过一番研究才发现，pygments是用python写的，难怪windows环境下的Jekyll老是无法集成pygments。
 
+### 显示数学公式
+
+这里主要用到了LaTeX和MathJax。
+
+LaTeX是TeX的扩展包，用于书写数学公式。它的官网是：
+
+http://www.latex-project.org/
+
+MathJax是一个JavaScript包，可以将LaTeX书写的数学公式转换成HTML。它的官网是：
+
+https://www.mathjax.org/
+
+LaTeX和MathJax联合使用的方法参见：
+
+http://iori.sinaapp.com/17.html/comment-page-1
+
+http://mlworks.cn/posts/introduction-to-mathjax-and-latex-expression/
+
+示例如下：
+
+$$
+\vec{p}(t)=\vec{o} + t\vec{d}
+$$
+
+`\[
+(x-o_x)^2+(x-o_y)^2+(x-o_z)^2-R^2=0
+\]`
+
 ## git常用命令
 
 1.创建版本库

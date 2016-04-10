@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Cocos2d-x v3在Qt 5上的移植, awk&sed&grep, diff&patch
+title:  Cocos2d-x v3在Qt 5上的移植, awk&sed&grep, diff&patch, bash
 category: technology 
 ---
 
@@ -219,6 +219,7 @@ sed -n '/ruby/p' ab | sed 's/ruby//g'        #删除ruby
 
 {% highlight bash %}
 grep 'ruby' ab #查询包括关键字ruby所在所有行
+grep -nr 'ruby' #在当前目录及子目录中，查询包括关键字ruby所在所有行
 {% endhighlight %}
 
 ## 综合
@@ -236,3 +237,28 @@ diff -uNr A B > C #生成A和B的diff文件C,-uNr为最常用的选项
 patch A C #给A打上diff文件得到B
 patch -R B C #B还原为A
 {% endhighlight %}
+
+# bash
+
+## 查看当前使用的shell
+
+实时查看：
+
+`ps |  grep $$  |  awk '{print $4}'`
+
+非实时查看：
+
+`echo $SHELL`
+
+## return和exit的区别
+
+return用于函数的返回，它只能用在函数中。
+
+exit用于整个shell脚本的退出。
+
+## 预定义变量
+
+`$?`: 上条命令的返回值
+
+`$$`: 当前shell的PID。
+

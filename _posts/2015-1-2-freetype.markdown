@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  FreeType, FFmpeg, SDL, 图像处理
+title:  FreeType, FFmpeg, OpenCV, SDL, 图像处理
 category: technology 
 ---
 
@@ -106,6 +106,8 @@ http://dranger.com/ffmpeg/
 
 # OpenCV
 
+## 参考资料
+
 OpenCV是一套跨平台计算机视觉库。其官网为：
 
 http://opencv.org/
@@ -163,6 +165,16 @@ Theano的主页
 https://github.com/Theano/Theano
 
 Theano的代码地址。
+
+http://www.scratchapixel.com/
+
+一个学习图像处理的网站。
+
+## 使用细节
+
+### saturate_cast
+
+saturate_cast宏会对结果进行转换，以确保它在有效范围之内。
 
 # SDL
 
@@ -237,4 +249,15 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/HelloSDL
 ImageMagick调整图片尺寸的命令示例：
 
 `convert src.jpg -resize 50% des.jpg`
+
+## 图像处理理论
+
+### 对比度和亮度
+
+$$
+g(i,j)=a\times f(i,j)+b
+$$
+
+上式中$$f(i,j)$$和$$g(i,j)$$表示位于第i行，第j列的像素。上述线性变换中，a表示对比度，b表示亮度。
+
 
