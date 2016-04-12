@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  FreeType, FFmpeg, OpenCV, SDL, 图像处理
+title:  FreeType, FFmpeg, OpenCV, SDL, 图像处理软件, Mac OS X, Objective-C
 category: technology 
 ---
 
@@ -182,7 +182,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/HelloSDL
 
 目前网上查到的中文教程，多是针对SDL v1.2的。至于SDL v2.0的例子，Github上已经有不少了，可惜多是英文，查找起来还是不太方便。因此这里我也提供一个自己写的SDL v2.0的Hello World代码。可以用这个代码确认SDL v2.0的环境搭建是否正确。
 
-# 图像处理
+# 图像处理软件
 
 ## GIMP
 
@@ -250,59 +250,37 @@ ImageMagick调整图片尺寸的命令示例：
 
 `convert src.jpg -resize 50% des.jpg`
 
-## 图像处理理论
+# Mac OS X
 
-### 对比度和亮度
+最近对iOS开发产生了兴趣，于是准备在PC上搭建一个iOS的开发环境。
 
-$$
-g(i,j)=a\times f(i,j)+b
-$$
+首先，我搜了一下在Linux上搭建相关环境的方法，搜到了一些结果。但历史比较老，基本都是3、4年前的东西，就算搭好，也不见得有什么用。
 
-上式中$$f(i,j)$$和$$g(i,j)$$表示位于第i行，第j列的像素。上述线性变换中，a表示对比度，b表示亮度。
+于是，目标改为在PC上使用Virtual Box搭建Mac OS X虚拟机。目标版本为Mac OS X 10.10。
 
-### 邻域
+1.下载镜像文件。
 
-$$\left[ \begin{array}{ccc} A_0&A_1&A_2\\ A_3&A&A_4 \\ A_5&A_6&A_7\end{array} \right]$$
+镜像文件主要有dmg和iso两种。前者必须在Mac OS X中才能执行，而后者和其他OS镜像差别不大。
 
-$$A_0$$~$$A_7$$被称作像素A的1度8-邻域(即$$U(A,1)$$)，相应的上下左右的四个像素$$A_1$$、$$A_3$$、$$A_4$$、$$A_6$$被称作像素A的1度4-邻域。下文如无特别指出，邻域均为8-邻域。
+2.boot
 
-$$U(A,2)$$的定义如下：
+原版镜像由于Apple的硬件检测机制，并不能在PC上运行。这时就需要破解，这一步一般是在boot中做的。
 
-如果$$B\in U(A,1)\land C\in U(B,1)\land C\notin U(A,1)$$，那么$$C\in U(A,2)$$。
+可用的boot工具，早期有empireEFI、HackBoot。较新的有chameleon、Niresh。
 
-类似的$$U(A,N)$$的定义为：
+# Objective-C
 
-如果$$B\in U(A,N-1)\land C\in U(B,1)\land C\notin U(A,N-1)$$，那么$$C\in U(A,N)$$。
+## 环境搭建
 
-这里的N被称为度数，也就是两点间的距离，即$$L(A,C)=N$$。
+PC上搭建Objective-C（以下简称OC）开发环境，主要借助GNUstep开源项目的成果。
 
-定义$$U^+(A,N)=A\cup U(A,N)$$
+以Ubuntu为例，步骤如下：
 
-### 相关
+1. 安装软件包。
 
-相关（Correlation)算子
+`sudo apt-get install gnustep-devel libjpeg-dev libtiff5-dev gobjc-4.9`
 
-$$g=f\bigotimes h$$
+2.设置环境变量。
 
-的定义为：
-
-$$g(i,j)=\sum_{(k,l)\in U^+(A,1)}f(i+k,j+l)h(k,l)$$
-
-其中，h称为相关核(Kernel)，即滤波器的加权系数矩阵。
-
-### 卷积
-
-卷积（Convolution)算子
-
-$$g=f\ast h$$
-
-的定义为：
-
-$$g(i,j)=\sum_{(k,l)\in U^+(A,1)}f(i-k,j-l)h(k,l)$$
-
-显然
-
-$$f\ast h=f\bigotimes rot180(h)$$
-
-其中，rotN表示将矩阵元素绕中心逆时针旋转N度，显然这里的N只有为90的倍数，才是有意义的。
+`GNUSTEP_MAKEFILES=/usr/share/GNUstep/Makefiles`
 
