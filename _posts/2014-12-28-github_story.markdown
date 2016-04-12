@@ -92,6 +92,18 @@ MathJax是一个JavaScript包，可以将LaTeX书写的数学公式转换成HTML
 
 https://www.mathjax.org/
 
+源代码地址：
+
+https://github.com/mathjax/MathJax
+
+如果官网的网速不好的话，还可采用以下CDN地址：
+
+http://cdn.bootcss.com/mathjax/2.4.0/MathJax.js
+
+一般而言，从一个巨大的符号表中查询所需要的特定符号是一件令人沮丧的事情。在此向大家介绍一个LATEX手写符号识别系统：
+
+http://detexify.kirelabs.org/classify.html
+
 LaTeX和MathJax联合使用的方法参见：
 
 http://iori.sinaapp.com/17.html/comment-page-1

@@ -67,7 +67,9 @@ https://dl.google.com/android/studio/patches/AI-130.737825-132.843336-patch-win.
 将之前开发的旧工程导入Android Studio，出现 INSTALL_PARSE_FAILED_MANIFEST_MALFORMED的问题，这个是由于AndroidManifest.xml文件内容有问题导致的。最常见的原因是activity所在的包的名字里有大写字母，但奇怪的是activity本身有大写字母却是无所谓的。
 
 ## 调用计算器
+
 如果是调用系统自带的计算器，在网上搜了一下，可以使用如下代码：
+
 {% highlight java %}
 Intent mIntent = new Intent();
 mIntent.setClassName("com.android.calculator2",
@@ -86,6 +88,10 @@ android.content.ActivityNotFoundException: Unable to find explicit activity clas
 在三星的手机上，计算器的Activity是“com.sec.android.app.popupcalculator.Calculator”。
 
 同样的方法，我们可以找到浏览器的Activity是“com.android.browser.BrowserActivity”。
+
+## 有用的类
+
+android.media.MediaPlayer 播放多媒体文件
 
 # 手势问题
 
