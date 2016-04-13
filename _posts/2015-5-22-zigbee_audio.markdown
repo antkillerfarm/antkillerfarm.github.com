@@ -272,9 +272,11 @@ $$g=f\bigotimes h$$
 
 的定义为：
 
-$$g(i,j)=\sum_{(k,l)\in U^+(A,1)}f(i+k,j+l)h(k,l)$$
+$$g(i,j)=\sum_{k,l}f(i+k,j+l)h(k,l)$$
 
-其中，h称为相关核(Kernel)，即滤波器的加权系数矩阵。
+其中，h称为相关核(Kernel)，即滤波器的加权系数矩阵。相关核有个叫做锚点（anchor）的属性，也就是被滤波的那个点在核中的位置。以3*3的h矩阵为例，如果锚点在矩阵中央的话，则$$i-1\le k\le i+1,j-1\le l\le j+1$$。如果锚点在左上角的话，则$$i\le k\le i+2,j\le l\le j+2$$。
+
+此外，h矩阵还有是否归一化的属性。这里将计算矩阵中所有元素之和的操作，记作$$SUM(h)$$.则当$$SUM(h)=1$$时，h为归一化核。$$\frac{h}{SUM(h)}$$，称作核的归一化。
 
 ## 卷积算子
 
@@ -284,7 +286,7 @@ $$g=f\ast h$$
 
 的定义为：
 
-$$g(i,j)=\sum_{(k,l)\in U^+(A,1)}f(i-k,j-l)h(k,l)$$
+$$g(i,j)=\sum_{k,l}f(i-k,j-l)h(k,l)$$
 
 显然
 
@@ -292,5 +294,22 @@ $$f\ast h=f\bigotimes rot180(h)$$
 
 其中，rotN表示将矩阵元素绕中心逆时针旋转N度，显然这里的N只有为90的倍数，才是有意义的。
 
+## 方框滤波（box Filter）
+
+$$h=\alpha
+\begin{pmatrix}
+     1 & 1 & 1 & \cdots & 1 \\
+     1 & 1 & 1 & \cdots & 1 \\
+     \cdots & \cdots & \cdots & \cdots & \cdots \\
+     1 & 1 & 1 & \cdots & 1    
+\end{pmatrix}
+,\alpha =
+\begin{cases}
+\frac{1}{SUM(h)},  & \text{normalize=true} \\
+1, & \text{normalize=false}  \\
+\end{cases}
+$$
+
+当normalize=true时的方框滤波，也被称为均值滤波。
 
 

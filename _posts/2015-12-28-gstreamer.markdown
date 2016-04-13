@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GStreamer
+title:  GStreamer（一）
 category: technology 
 ---
 
@@ -196,7 +196,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gstreamer/tutor
 
 Totem Playlist Parser除了依赖常见的glib2、libxml、libsoup之外，还依赖gmime和quvi。其中后者不是必须的，如果不打算网上下载视频的话，可以不装。（quvi包主要是一堆lua脚本，用于解析类似youtube、foxnews之类的媒体网站的内容。）
 
-完成第1步的操作之后，编译阶段基本就没有什么大问题了。然而，上板调试，却出现解析失败的现象。
+完成上面的操作之后，编译阶段基本就没有什么大问题了。然而，上板调试，却出现解析失败的现象。
 
 ### 安装MIME解析文件
 

@@ -1,8 +1,24 @@
 ---
 layout: post
-title:  GStreamer编程, makefile, Autotools
+title:  GStreamer（二）, makefile, Autotools
 category: technology 
 ---
+
+# GStreamer应用（续）
+
+## TCP远程播放
+
+除了本地播放之外，GStreamer亦支持远程播放。以下仅以TCP远程播放为例。
+
+TCP远程播放采用Client/Server模式。
+
+1.首先打开播放端软件。（Server端）
+
+`gst-launch-1.0 tcpserversrc port=3000 ! decodebin ! autoaudiosink`
+
+2.打开多媒体发送端软件。（Clinet端）
+
+`gst-launch-1.0 filesrc location=./1.mp3 ! tcpclientsink port=3000`
 
 # GStreamer编程
 
