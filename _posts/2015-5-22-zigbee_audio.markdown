@@ -252,17 +252,17 @@ $$\left[ \begin{array}{ccc} A_0&A_1&A_2\\ A_3&A&A_4 \\ A_5&A_6&A_7\end{array} \r
 
 $$A_0$$~$$A_7$$被称作像素A的1度8-邻域(即$$U(A,1)$$)，相应的上下左右的四个像素$$A_1$$、$$A_3$$、$$A_4$$、$$A_6$$被称作像素A的1度4-邻域。下文如无特别指出，邻域均为8-邻域。
 
+定义$$U^+(A,N)=A\bigcup\limits_{i=1}^N U(A,i)$$。
+
 $$U(A,2)$$的定义如下：
 
-如果$$B\in U(A,1)\land C\in U(B,1)\land C\notin U(A,1)$$，那么$$C\in U(A,2)$$。
+如果$$B\in U(A,1)\land C\in U(B,1)\land C\notin U^+(A,1)$$，那么$$C\in U(A,2)$$。
 
 类似的$$U(A,N)$$的定义为：
 
-如果$$B\in U(A,N-1)\land C\in U(B,1)\land C\notin U(A,N-1)$$，那么$$C\in U(A,N)$$。
+如果$$B\in U(A,N-1)\land C\in U(B,1)\land C\notin U^+(A,N-1)$$，那么$$C\in U(A,N)$$。
 
 这里的N被称为度数，也就是两点间的距离，即$$L(A,C)=N$$。
-
-定义$$U^+(A,N)=A\cup U(A,N)$$
 
 ## 相关算子
 
