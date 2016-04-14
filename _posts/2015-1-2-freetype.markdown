@@ -170,6 +170,10 @@ http://www.scratchapixel.com/
 
 一个学习图像处理的网站。
 
+http://www.52nlp.cn/
+
+一个国内的自然语言处理的网站。
+
 ## 使用细节
 
 ### saturate_cast
