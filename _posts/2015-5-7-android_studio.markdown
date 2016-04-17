@@ -228,3 +228,42 @@ http://blog.csdn.net/yongjian1092/article/details/7364451
 反射机制的一个副产品是可以访问私有变量和私有方法。（笔试题的常客）
 
 http://blog.csdn.net/nisaijie/article/details/5692901
+
+# Java构建工具
+
+构建工具的意义在于，提供一种独立于IDE的软件构建方式。而且通常来说，构建工具更适合特大项目的构建。比如，即使是以功能强大著称的Visual Studio，也提供nmake用以处理特大项目。
+
+常用的Java构建工具主要有：Ant、Maven、Gradle。
+
+## Ant
+
+Ant作为最早的Java构建工具，使用最为广泛，一经使用即取代了之前的IDE工程文件。
+
+PS：那个时代最著名的Java IDE估计要算Borland的JBuilder了。
+
+Ant使用XML语言格式的配置文件，并可结合Ivy用以处理网络式的依赖管理。
+
+Ant入门教程：
+
+http://ant.apache.org/manual/tutorial-HelloWorldWithAnt.html
+
+## Maven
+
+Maven仍旧使用XML作为配置文件格式，但使用内置规则简化脚本的编写，此外Maven具备从网络上自动下载依赖的能力。比如，最常用的maven repository：
+
+https://repository.apache.org/
+
+Maven入门教程：
+
+http://www.oracle.com/technetwork/cn/community/java/apache-maven-getting-started-1-406235-zhs.html
+
+## Gradle
+
+XML作为配置文件格式，主要有两个缺点：
+
+1.各种标记占用的空间较大，不简洁。有用的信息淹没在各种标记中，反而降低了配置文件的可读性。
+
+2.XML本身的树状结构，对于条件编译（例如if分支）的情况，没有什么好的语法组织形式。
+
+针对以上问题，Gradle使用Groovy语言作为配置文件格式。它自2012年诞生以来，获得了快速普及，尤其是Google采用Gradle作为Android应用的默认构建工具。
+

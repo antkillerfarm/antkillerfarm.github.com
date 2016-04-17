@@ -352,7 +352,7 @@ https://github.com/json-c/json-c
 
 ## BSON
 
-Binary JSON是在JSON的基础上，添加了索引和数据类型的一种二进制格式。相比JSON，它牺牲了可阅读性，得到了可遍历性和高效性。
+Binary JSON是在JSON的基础上，添加了索引及数据类型的一种二进制格式。相比JSON，它牺牲了可阅读性，得到了可遍历性和高效性。
 
 BSON最早由MongoDB项目提出并使用，它的官网为：
 
@@ -373,4 +373,14 @@ http://yaml.org/
 Protocol Buffers是Google公司开发的一种数据描述语言。它的官网为：
 
 https://github.com/google/protobuf
+
+这是一种注重效率，而可阅读性几乎为零的二进制格式。其效率超过BSON，但除非有相关格式文件，否则完全无法阅读。而BSON作为JSON的扩展，只有扩展的那部分不可读，其余部分仍保留JSON的可读性。
+
+格式文件是Protocol Buffers中的重要概念，也是和JSON等格式在使用思路上最大的区别。
+
+JSON采用的是，不同的语言提供不同的库来解析的方式。
+
+而Protocol Buffers使用同一个格式文件，为不同语言生成相应的代码。这和CORBA的做法很类似。
+
+与Protocol Buffers类似的方案，还有Facebook提出的Thrift、ZeroC提出的Slice和Hadoop Avro。
 

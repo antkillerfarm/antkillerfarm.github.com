@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Zigbee音频, 6LowPAN, IEEE 802, 图像处理理论
+title:  Zigbee音频, 6LowPAN, IEEE 802
 category: technology 
 ---
 
@@ -236,123 +236,66 @@ http://blog.csdn.net/xiaojsj111/article/details/30482001
 
 2）芯片不支持的，只能采用分时复用的方式，支持模式共存，又称softAP。
 
-# 图像处理理论
+# Hadoop
 
-## 对比度和亮度
+最近（2016.4），参加公司组织的内部培训，对Hadoop有了一些认识，特记录如下。
 
-$$
-g(i,j)=a\times f(i,j)+b
-$$
+## 概述
 
-上式中$$f(i,j)$$和$$g(i,j)$$表示位于第i行，第j列的像素。上述线性变换中，a表示对比度，b表示亮度。
+Hadoop项目由Doug Cutting创建。Doug Cutting也是Lucene项目的创建者。
 
-## 邻域
+PS：Lucene是我2007年学习搜索引擎技术时，所接触到的开源项目。回想起来，简直恍如隔世啊。
 
-$$\left[ \begin{array}{ccc} A_0&A_1&A_2\\ A_3&A&A_4 \\ A_5&A_6&A_7\end{array} \right]$$
+官网：
 
-$$A_0$$~$$A_7$$被称作像素A的1度8-邻域(即$$U(A,1)$$)，相应的上下左右的四个像素$$A_1$$、$$A_3$$、$$A_4$$、$$A_6$$被称作像素A的1度4-邻域。下文如无特别指出，邻域均为8-邻域。
+http://hadoop.apache.org/
 
-定义$$U^+(A,N)=A\bigcup\limits_{i=1}^N U(A,i)$$。
+官方文档：
 
-$$U(A,2)$$的定义如下：
+http://hadoop.apache.org/docs/current/
 
-如果$$B\in U(A,1)\land C\in U(B,1)\land C\notin U^+(A,1)$$，那么$$C\in U(A,2)$$。
+Hadoop框架及生态圈：
 
-类似的$$U(A,N)$$的定义为：
+http://cqwjfck.blog.chinaunix.net/uid-22312037-id-3969789.html
 
-如果$$B\in U(A,N-1)\land C\in U(B,1)\land C\notin U^+(A,N-1)$$，那么$$C\in U(A,N)$$。
+www.360doc.com/content/14/0113/17/15109633_345010019.shtml
 
-这里的N被称为度数，也就是两点间的距离，即$$L(A,C)=N$$。
+## 编译
 
-## 相关算子
+Hadoop目前不在Ubuntu的官方软件仓库中，无法使用apt-get安装。使用源代码编译Hadoop的相关步骤，可在源码包的BUILDING.txt中找到。这里仅作为补遗之用。
 
-相关（Correlation)算子
+### 安装FindBugs
 
-$$g=f\bigotimes h$$
+Hadoop的大部分软件依赖，都可以使用apt-get安装。BUILDING.txt里已经写的很详细了。
 
-的定义为：
+FindBugs是一个Java代码的静态分析检查工具。它的官网：
 
-$$g(i,j)=\sum_{k,l}f(i+k,j+l)h(k,l)$$
+http://findbugs.sourceforge.net/index.html
 
-其中，h称为相关核(Kernel)，即滤波器的加权系数矩阵。相关核有个叫做锚点（anchor）的属性，也就是被滤波的那个点在核中的位置。以3*3的h矩阵为例，如果锚点在矩阵中央的话，则$$i-1\le k\le i+1,j-1\le l\le j+1$$。如果锚点在左上角的话，则$$i\le k\le i+2,j\le l\le j+2$$。
+它的安装方法有3种：
 
-此外，h矩阵还有是否归一化的属性。这里将计算矩阵中所有元素之和的操作，记作$$SUM(h)$$.则当$$SUM(h)=1$$时，h为归一化核。$$\frac{h}{SUM(h)}$$，称作核的归一化。
+1.源代码安装。下载源代码之后，运行`ant build`，然后设定相关路径，以供Hadoop使用。
 
-## 卷积算子
+2.apt-get安装。FindBugs目前不在Ubuntu 14.04的软件仓库中，而在Ubuntu 15.10的软件仓库中，需要设置源方可安装。这种方法也需要设定相关路径，以供Hadoop使用。
 
-卷积（Convolution)算子
+2.maven安装。
 
-$$g=f\ast h$$
+`mvn compile findbugs:findbugs`
 
-的定义为：
+这种方法最简单。安装完成之后的FindBugs位于maven repository中，而后者通常在~/.m2/repository/下。
 
-$$g(i,j)=\sum_{k,l}f(i-k,j-l)h(k,l)$$
+这种方法的好处是：由于Hadoop使用maven编译，maven安装之后，可以免去设置路径的步骤。但坏处是：其他不用maven的程序，无法使用该软件。
 
-显然
+### 编译Hadoop
 
-$$f\ast h=f\bigotimes rot180(h)$$
+`mvn package -Pdist,native,docs -DskipTests -Dtar`
 
-其中，rotN表示将矩阵元素绕中心逆时针旋转N度，显然这里的N只有为90的倍数，才是有意义的。
+## 安装
 
-## 方框滤波（box Filter）
+Hadoop有Single Node和Cluster两种安装模式。一般的部署，当然采用后者。得益于Java的可移植性，Hadoop甚至可以部署到由Raspberry Pi组成的集群中。
 
-$$h=\alpha
-\begin{pmatrix}
-     1 & 1 & 1 & \cdots & 1 \\
-     1 & 1 & 1 & \cdots & 1 \\
-     \cdots & \cdots & \cdots & \cdots & \cdots \\
-     1 & 1 & 1 & \cdots & 1    
-\end{pmatrix}
-,\alpha =
-\begin{cases}
-\frac{1}{SUM(h)},  & \text{normalize=true} \\
-1, & \text{normalize=false}  \\
-\end{cases}
-$$
+前者主要用于开发和学习之用。这里只讨论前者。
 
-当normalize=true时的方框滤波，也被称为均值滤波。
+## 
 
-## 高斯滤波（Gauss filter）
-
-高斯平滑滤波器对于抑制服从正态分布的噪声非常有效。
-
-正态分布的概率密度函数为：
-
-$$f(x)=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}}$$
-
-其标准化后的概率密度函数为：
-
-$$f(x)=\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}$$
-
-标准二维正态分布的概率密度函数为：
-
-$$f(x,y)=\frac{1}{2\pi}e^{-\frac{x^2+y^2}{2}}=f(x)f(y)$$
-
-这个公式表明标准二维正态分布，可以分解为两个正交方向上的标准一维正态分布。也就是说标准二维正态分布不仅是中心对称，也是轴对称的。
-
-正态分布的性质：
-
-1.两个正态分布密度的乘积、卷积，还是正态分布。
-
-2.正态分布的傅立叶变换、共轭分布，还是正态分布。
-
-3.正态分布和其它具有相同均值、方差的概率分布相比，具有最大熵。
-
-4.二项分布、泊松分布、$$\chi^2$$分布、t分布等在样本增大的情况下，都趋向于正态分布。
-
-正态分布的相关内容可参考：
-
-http://www.52nlp.cn/%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83%E7%9A%84%E5%89%8D%E4%B8%96%E4%BB%8A%E7%94%9F%E4%B8%80
-
-标准正态分布的最佳逼近符合杨辉三角，比如一个具有5个点的一维正态分布的最佳逼近为：
-
-$$\left[ \begin{array}{ccccc} 1&4&6&4&1\end{array} \right]$$
-
-同理，最常用的3*3高斯滤波h矩阵为：
-
-$$\left[ \begin{array}{ccc} 1&1&1\\ 1&2&1 \\ 1&1&1\end{array} \right]$$
-
-其归一化形式为：
-
-$$\left[ \begin{array}{ccc} 0.1&0.1&0.1\\ 0.1&0.2&0.1 \\ 0.1&0.1&0.1\end{array} \right]$$
 

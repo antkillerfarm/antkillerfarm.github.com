@@ -219,7 +219,7 @@ sed -n '/ruby/p' ab | sed 's/ruby//g'        #删除ruby
 
 {% highlight bash %}
 grep 'ruby' ab #查询包括关键字ruby所在所有行
-grep -nr 'ruby' #在当前目录及子目录中，查询包括关键字ruby所在所有行
+grep -nri 'ruby' #n 显示行号，r 子目录搜索，i 忽略大小写
 {% endhighlight %}
 
 ## 综合

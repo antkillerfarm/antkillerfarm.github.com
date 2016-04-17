@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenGL研究, GUI框架分析, 虚拟机比较, Win10历险记, WxWidget, uboot
+title:  OpenGL研究, GUI框架分析, 虚拟机比较, Win10历险记, WxWidget, uboot, WireShark
 category: technology 
 ---
 
@@ -233,3 +233,54 @@ _type _u_boot_list_2_##_list##_2_##_name __aligned(4)		\
 客户端传输镜像文件时，需要采用二进制模式。命令如下：
 
 `tftp 10.3.9.161 -m binary -c put <file name>`
+
+# WireShark
+
+WireShark是一个网络协议包分析工具，最初名叫Ethereal。它的官网是：
+
+www.wireshark.org
+
+## 在ubuntu上的安装
+
+`sudo apt-get install wireshark`
+
+安装好了之后，还不能立即使用。需要给/usr/bin/dumpcap提升权限，才能使用WireShark的抓包功能。否则会出`no interfaces`的错误。
+
+提升权限的方法有：
+
+1.root方式。
+
+命令行：`sudo wireshark`
+
+桌面图标：`gksudo wireshark`
+
+2. 非root方式，这也是官方推荐的方式。
+
+`sudo dpkg-reconfigure wireshark-common`
+
+`sudo usermod -a -G wireshark <your user name>`
+
+`sudo chgrp wireshark /usr/bin/dumpcap`
+
+`sudo chmod 4750 /usr/bin/dumpcap`
+
+`sudo setcap cap_net_raw,cap_net_admin=eip /usr/bin/dumpcap`
+
+最后注销当前用户，重新登陆即可。
+
+## 过滤器规则
+
+WireShark以丰富的过滤器著称，现将我使用到的过滤器规则摘录如下：
+
+`ip.src == 10.3.9.234 || ip.dst == 10.3.9.234`
+
+过滤源地址和目标地址。
+
+`tcp.segment_data matches Bob`
+
+匹配特定字符串。
+
+`tcp.stream eq id`
+
+将一次TCP交互的包过滤出来，id表示是第几次交互。
+

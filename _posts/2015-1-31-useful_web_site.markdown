@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  有用的网址集合, IT杂谈, 沉思录, Fedora, WireShark
+title:  有用的网址集合, IT杂谈, 沉思录, Fedora
 category: technology 
 ---
 # 有用的网址集合
@@ -139,6 +139,32 @@ http://ftp.gnome.org/pub/GNOME/sources/
 
 这个笑话见诸他的个人主页，但不知道是否真有此事。如果有的话，他的影响力可见一般。就像刘路之于中南大学一样。
 
+## Google和百度的技术差距
+
+2016.4
+
+首先是一篇2010年的文章：
+
+http://www.cnblogs.com/realviv/articles/1915382.html
+
+当然知乎上也有相关的主题：
+
+https://www.zhihu.com/question/22447908
+
+时至今日，如果我们对于这个问题的争议，还停留在当年Robin提出了和Page Rank算法类似的算法的层面的话，那就太out了。迟至2010年，Page Rank算法已经不算Google的核心技术了。
+
+现在最多只能说，百度曾经和Google在某一个领域在一个差不多起跑线上。即便这一点，仍得益于Robin接受了美国的教育和熏陶。
+
+所以这个问题，似乎应该改为Google和BAT的技术差距有多大。
+
+PS：这里吐槽一下IT技术进步的速度，以基于文本的搜索为例。
+
+如果你在2000年的时候，掌握这门手艺，那么你就可以开宗立派，比如Robin。
+
+如果你在2008年的时候，掌握这门手艺，至少也可以到Robin手下获得一份不错的薪水。
+
+如果你在2016年的时候，掌握这门手艺，那么你离失业已经不远了。因为，几乎不会有老板，会为了一个15年前的老技术而投资招人。
+
 # 新的开始
 
 PS：这是一篇自己写于2011.11的文章，转眼间已经3年半过去了。
@@ -211,54 +237,4 @@ https://admin.fedoraproject.org/pkgdb/
 2.重启。（这一步必不可少，否则上面的配置不会生效。）
 
 这样就可以在Fedora中浏览共享文件夹了。
-
-# WireShark
-
-WireShark是一个网络协议包分析工具，最初名叫Ethereal。它的官网是：
-
-www.wireshark.org
-
-## 在ubuntu上的安装
-
-`sudo apt-get install wireshark`
-
-安装好了之后，还不能立即使用。需要给/usr/bin/dumpcap提升权限，才能使用WireShark的抓包功能。否则会出`no interfaces`的错误。
-
-提升权限的方法有：
-
-1.root方式。
-
-命令行：`sudo wireshark`
-
-桌面图标：`gksudo wireshark`
-
-2. 非root方式，这也是官方推荐的方式。
-
-`sudo dpkg-reconfigure wireshark-common`
-
-`sudo usermod -a -G wireshark <your user name>`
-
-`sudo chgrp wireshark /usr/bin/dumpcap`
-
-`sudo chmod 4750 /usr/bin/dumpcap`
-
-`sudo setcap cap_net_raw,cap_net_admin=eip /usr/bin/dumpcap`
-
-最后注销当前用户，重新登陆即可。
-
-## 过滤器规则
-
-WireShark以丰富的过滤器著称，现将我使用到的过滤器规则摘录如下：
-
-`ip.src == 10.3.9.234 || ip.dst == 10.3.9.234`
-
-过滤源地址和目标地址。
-
-`tcp.segment_data matches Bob`
-
-匹配特定字符串。
-
-`tcp.stream eq id`
-
-将一次TCP交互的包过滤出来，id表示是第几次交互。
 
