@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Zigbee音频, 6LowPAN, IEEE 802
+title:  Zigbee音频, 6LowPAN, IEEE 802, Hadoop
 category: technology 
 ---
 
@@ -285,6 +285,8 @@ http://findbugs.sourceforge.net/index.html
 这种方法最简单。安装完成之后的FindBugs位于maven repository中，而后者通常在~/.m2/repository/下。
 
 这种方法的好处是：由于Hadoop使用maven编译，maven安装之后，可以免去设置路径的步骤。但坏处是：其他不用maven的程序，无法使用该软件。
+
+这一步只要不出下载不成功之类的错误，就算成功。错误留给下一步来解决。
 
 ### 编译Hadoop
 

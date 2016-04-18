@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Ubuntu使用技巧
+title:  Ubuntu使用技巧（一）
 category: technology 
 ---
 
