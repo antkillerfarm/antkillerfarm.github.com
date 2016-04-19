@@ -288,9 +288,15 @@ http://findbugs.sourceforge.net/index.html
 
 这一步只要不出下载不成功之类的错误，就算成功。错误留给下一步来解决。
 
+PS：maven下载的文件，大约有180MB，且多为小文件，初次运行相当费时。
+
 ### 编译Hadoop
 
-`mvn package -Pdist,native,docs -DskipTests -Dtar`
+`mvn package -Pdist -DskipTests -Dtar`
+
+这里一定要`-DskipTests`，原因是test不仅速度非常慢，会导致系统响应缓慢，而且即使是官方代码，也不一定能通过所有的test case。
+
+编译的结果在hadoop-dist/target下
 
 ## 安装
 

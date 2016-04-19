@@ -249,9 +249,15 @@ http://ant.apache.org/manual/tutorial-HelloWorldWithAnt.html
 
 从设计思想来看，Ant非常类似make。除了建立依赖关系树之外，其他方面完全不限制编写者的发挥。因此，Ant的自由度很高，但缺点就是编写难度和make也类似。
 
+代码示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/java_build/ant
+
 ## Maven
 
-Maven仍旧使用XML作为配置文件格式，但使用内置规则简化脚本的编写，此外Maven具备从网络上自动下载依赖的能力。比如，最常用的maven repository：
+Maven仍旧使用XML作为配置文件格式，但使用内置规则简化脚本的编写。
+
+Maven最大的优点是，具备从网络上自动下载依赖的能力。比如，最常用的maven repository：
 
 https://repository.apache.org/
 
@@ -260,6 +266,10 @@ Maven入门教程：
 http://www.oracle.com/technetwork/cn/community/java/apache-maven-getting-started-1-406235-zhs.html
 
 Maven的缺点是规则的力量过于强大，对于规则覆盖不了的情况，很难处理。但好在多数项目并没有那么复杂的情况。
+
+代码示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/java_build/maven
 
 ## Gradle
 
@@ -274,6 +284,10 @@ XML作为配置文件格式，主要有两个缺点：
 Gradle的设计思想已经脱离了make的范畴。make脚本也好，XML也好，都不是通用程序语言，无论设置再多的规则，也总有满足不了需求的时候。因此，Gradle使用Groovy这种通用程序语言来提供灵活性，同时使用plugin，尤其是官方提供的plugin，来设定规则。就好比是C语言+标准库，这样的组合够强吧。
 
 premake实际上也是类似的设计思路。
+
+代码示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/java_build/gradle
 
 # Ubuntu安装Oracle JDK
 

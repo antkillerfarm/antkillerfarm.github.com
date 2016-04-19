@@ -133,11 +133,26 @@ if (pfile != NULL){
 
 ## 软件包管理工具
 
-各大linux发行版都有自己的软件包管理工具。比如Debian/Ubuntu使用的apt-get，Red Hat/Fedora使用的yum/dnf，SUSE/openSUSE使用的zypper，Gentoo使用的emerge，Arch Linux使用的pacman。
+各大linux发行版都有自己的软件包管理工具。例如：
+
+Debian/Ubuntu | apt-get
+Red Hat/Fedora | yum/dnf
+SUSE/openSUSE | zypper
+Gentoo | emerge
+Arch Linux | pacman
 
 各大软件包管理工具的功能对比，可参见：
 
 https://wiki.archlinux.org/index.php/Pacman/Rosetta
+
+类似的概念也被一些编程语言所使用。例如：
+
+Ruby | RubyGems(gem)
+Python | PyPI(pip)
+Java | Maven(mvn)
+Perl | PPM
+Node.js | NPM
+PHP | pear
 
 ## IO多路复用
 
@@ -158,10 +173,10 @@ int select(int maxfdp1,fd_set *readset,fd_set *writeset,fd_set *exceptset,const 
 中间的三个参数readset、writeset和exceptset指定我们要让内核测试读、写和异常条件的描述字。如果对某一个的条件不感兴趣，就可以把它设为空指针。struct fd_set可以理解为一个集合，这个集合中存放的是文件描述符，可通过以下四个宏进行设置：
 
 {% highlight c %}
-void FD_ZERO(fd_set *fdset);           //清空集合
+void FD_ZERO(fd_set *fdset);          //清空集合
 void FD_SET(int fd, fd_set *fdset);   //将一个给定的文件描述符加入集合之中
 void FD_CLR(int fd, fd_set *fdset);   //将一个给定的文件描述符从集合中删除
-int FD_ISSET(int fd, fd_set *fdset);   // 检查集合中指定的文件描述符是否可以读写
+int FD_ISSET(int fd, fd_set *fdset);  //检查集合中指定的文件描述符是否可以读写
 {% endhighlight %}
 
 （3）timeout告知内核等待所指定描述字中的任何一个就绪可花多少时间。其timeval结构用于指定这段时间的秒数和微秒数。
@@ -328,5 +343,4 @@ sigwait(&sigs_to_catch, &sig);
 一种高效、实时的Linux文件系统事件监控框架。参考文档：
 
 http://www.infoq.com/cn/articles/inotify-linux-file-system-event-monitoring
-
 
