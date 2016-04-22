@@ -20,6 +20,10 @@ TCP远程播放采用Client/Server模式。
 
 `gst-launch-1.0 filesrc location=./1.mp3 ! tcpclientsink port=3000`
 
+示例代码：
+
+
+
 # GStreamer编程
 
 ## 开发环境搭建

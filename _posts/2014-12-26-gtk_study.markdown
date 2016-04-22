@@ -192,3 +192,11 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gtk_browser
 
 这里有两个例子，一个是helloworld型的，用于确定开发环境。另一个是从http://imtx.me/archives/1124.html中摘录的，原始的版本基于Gtk 2.x，现在改用Gtk 3.x。
 
+# GIO网络应用开发
+
+GIO提供了以GSocket为首的低级API，和以GSocketClient、GSocketConnection为首的高级API。
+
+高级API的使用示例如下：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/glib/network
+

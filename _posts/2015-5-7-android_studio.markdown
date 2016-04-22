@@ -267,6 +267,14 @@ http://www.oracle.com/technetwork/cn/community/java/apache-maven-getting-started
 
 Maven的缺点是规则的力量过于强大，对于规则覆盖不了的情况，很难处理。但好在多数项目并没有那么复杂的情况。
 
+针对规则的复杂，Maven提出了模板的概念，用以简化操作。命令是：
+
+`mvn archetype:generate`
+
+可选的模板参见：
+
+https://maven.apache.org/guides/introduction/introduction-to-archetypes.html
+
 代码示例：
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/java_build/maven
