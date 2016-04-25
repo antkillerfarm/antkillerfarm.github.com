@@ -193,7 +193,19 @@ Ubuntu更新软件时的软件源配置文件是/etc/apt/sources.list。
 
 1.ubuntu tweak
 
-一个国内小伙写的工具。
+一个国内小伙写的工具。官网：
+
+http://ubuntu-tweak.com/
+
+代码：
+
+https://github.com/tualatrix/ubuntu-tweak
+
+安装依赖：
+
+`sudo apt-get install python-pip python-aptdaemon.gtk3widgets python-gi python-lxml libwebkitgtk-3.0-dev libgconf2-dev python-compizconfig`
+
+`sudo pip install dbus-python`
 
 2.BleachBit
 

@@ -313,5 +313,5 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/java_build/grad
 
 `export JAVA_HOME=/usr/lib/jvm/default-java/`
 
-`sudo ln -s /usr/lib/jvm/java-7-oracle /usr/lib/jvm/default-java/`
+`sudo ln -s /usr/lib/jvm/java-7-oracle /usr/lib/jvm/default-java`
 

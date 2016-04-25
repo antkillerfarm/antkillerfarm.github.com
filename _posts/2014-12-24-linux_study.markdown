@@ -344,3 +344,7 @@ sigwait(&sigs_to_catch, &sig);
 
 http://www.infoq.com/cn/articles/inotify-linux-file-system-event-monitoring
 
+## /usr
+
+usr很多人都认为是user缩写，其实不然，这是unix system resource的缩写。
+

@@ -304,6 +304,5 @@ Hadoop有Single Node和Cluster两种安装模式。一般的部署，当然采�
 
 前者主要用于开发和学习之用。这里只讨论前者。
 
-## 
-
+Single Node又可分为两种模式：Standalone和Pseudo-Distributed。前者一般仅用于检验程序逻辑的正确性，因为这种模式下，并没有Hadoop常见的各种节点和HFS的概念，所有的程序都运行在一个Java进程中。而后者在配置和运行方面，与Cluster已经相差无几。
 

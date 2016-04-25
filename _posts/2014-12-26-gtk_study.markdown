@@ -22,11 +22,11 @@ Glade仍然是GTK+3默认的UI设计工具。与GTK+3配合的Glade版本是Glad
 
 由
 
-pkg-config --cflags --libs gtk+-3.0
+`pkg-config --cflags --libs gtk+-3.0`
 
 改为
 
-pkg-config --cflags --libs gtk+-3.0 gmodule-export-2.0
+`pkg-config --cflags --libs gtk+-3.0 gmodule-export-2.0`
 
 这样修改之后，程序即可自动链接相应的回调函数。另外还要注意，用户定义的回调函数的定义需与文档中消息回调函数的原型一致。一些细微的差异会导致g_signal_connect函数显式指定的回调函数可以正常工作，但glade文件隐式指定的却不行。
 
