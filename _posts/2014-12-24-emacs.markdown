@@ -142,6 +142,12 @@ Leave Hexl mode, going back to the major mode this buffer had before you invoked
 
 2.提供一个执行Emacs Lisp的缓冲区。需要执行命令的时候，将光标落在相应的Lisp命令右括号的后面，执行C-x C-e即可。
 
+例如，计算器功能：
+
+`(+ (* 33 4) 2)`
+
+计算33*4+2，可以看出这是一个典型的逆波兰表达式。
+
 ## 快速打开最近打开过的文件
 
 在配置文件~/.emacs中添加：

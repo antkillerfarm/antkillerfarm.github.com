@@ -185,9 +185,19 @@ TargetEnvironment=Unity
 
 3）将MyQuickStart.desktop的文件权限改为可执行，并将其拖放到侧边栏，就可以看效果了。
 
-# 修改软件源
+# 软件包管理
+
+## 修改软件源
 
 Ubuntu更新软件时的软件源配置文件是/etc/apt/sources.list。
+
+## apt-cache
+
+apt是一套完整的软件包管理方案。除了最常用apt-get之外，还包括了一系列的客户端和服务器软件。其中，以apt-cache较为常用。例如：
+
+`apt-cache search gstreamer`
+
+搜索名字中包含gstreamer的软件包。
 
 # 系统清理工具
 
@@ -203,7 +213,7 @@ https://github.com/tualatrix/ubuntu-tweak
 
 安装依赖：
 
-`sudo apt-get install python-pip python-aptdaemon.gtk3widgets python-gi python-lxml libwebkitgtk-3.0-dev libgconf2-dev python-compizconfig`
+`sudo apt-get install python-pip python-aptdaemon.gtk3widgets python-gi python-lxml libwebkitgtk-3.0-dev libgconf2-dev python-compizconfig libdbus-glib-1-dev`
 
 `sudo pip install dbus-python`
 

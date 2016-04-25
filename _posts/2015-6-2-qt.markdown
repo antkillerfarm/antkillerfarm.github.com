@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Qt, Python, 数据描述语言
+title:  Qt, Python
 category: technology 
 ---
 
@@ -149,6 +149,46 @@ Ubuntu下的安装方法是：
 
 `sudo pip install <package name>`
 
+## 软件发布工具
+
+### distutils
+
+distutils是python自带的软件发布工具。它的安装脚本一般叫做setup.py，对应的配置文件叫做setup.cfg。
+
+它的文档参见：
+
+https://docs.python.org/2/distutils/index.html
+
+### distutils-extra
+
+distutils-extra在distutils的基础上做了扩展，提供诸如i18n之类的支持。如果没有安装，会报如下错误：
+
+`error: error in setup.cfg: command 'build' has no such option 'i18n'`
+
+安装方法:
+
+`sudo apt-get install python-distutils-extra`
+
+### setuptools
+
+setuptools是一个更强大的distutils扩展，它也是PyPI的基础。它的安装脚本通常以ez_setup.py的形式出现。
+
+它的文档参见：
+
+https://pythonhosted.org/setuptools/setuptools.html
+
+安装方法:
+
+`sudo apt-get install python-setuptools`
+
+### Easy Install
+
+setuptools提供的一个工具，可从网络下载安装外部依赖文件。
+
+它的文档参见：
+
+https://pythonhosted.org/setuptools/easy_install.html
+
 ## PyGObject
 
 谈起Python调用GTK+的话题，在GTK+ 2的时代可以使用PyGTK库。它的官网是：
@@ -186,6 +226,8 @@ http://sourceforge.net/projects/pygobjectwin32/files/
 PyGObject的helloworld程序可参见：
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/pygtk-helloworld.py
+
+这里必须指出的是，PyGObject依赖的接口文件只有在dev包中才有。安装相关Glib项目时，一定要选择名称以-dev结尾的包。
 
 ## Sqlite
 
@@ -323,52 +365,4 @@ Python内置的urllib和urllib2模块都可用于获取HTTP网页，但使用范
     urllib2.install_opener(l_opener)
     usock = urllib2.urlopen('http://www.sohu.com')
 {% endhighlight %}
-
-# 数据描述语言
-
-## JSON
-
-JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式。 易于人阅读和编写。同时也易于机器解析和生成。 它基于JavaScript Programming Language, Standard ECMA-262 3rd Edition - December 1999的一个子集。
-
-其官网为：
-
-http://json.org/
-
-官网上列出了各种语言的JSON解析库。其中C语言的解析库中以json-c最为流行，其官网为：
-
-https://github.com/json-c/json-c
-
-## BSON
-
-Binary JSON是在JSON的基础上，添加了索引及数据类型的一种二进制格式。相比JSON，它牺牲了可阅读性，得到了可遍历性和高效性。
-
-BSON最早由MongoDB项目提出并使用，它的官网为：
-
-http://bsonspec.org/
-
-从中可以看出大多数语言的BSON解析库，都是MongoDB项目提供的。
-
-## YAML
-
-YAML(Yet Another Markup Language)是JSON的超集。它没有JSON那么流行，主要被用于科学计算领域，比如OpenCV项目。它的官网为：
-
-http://yaml.org/
-
-这个网站很有特色，它本身就是一个YAML文件。
-
-## Protocol Buffers
-
-Protocol Buffers是Google公司开发的一种数据描述语言。它的官网为：
-
-https://github.com/google/protobuf
-
-这是一种注重效率，而可阅读性几乎为零的二进制格式。其效率超过BSON，但除非有相关格式文件，否则完全无法阅读。而BSON作为JSON的扩展，只有扩展的那部分不可读，其余部分仍保留JSON的可读性。
-
-格式文件是Protocol Buffers中的重要概念，也是和JSON等格式在使用思路上最大的区别。
-
-JSON采用的是，不同的语言提供不同的库来解析的方式。
-
-而Protocol Buffers使用同一个格式文件，为不同语言生成相应的代码。这和CORBA的做法很类似。
-
-与Protocol Buffers类似的方案，还有Facebook提出的Thrift、ZeroC提出的Slice和Hadoop Avro。
 
