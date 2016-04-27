@@ -299,4 +299,17 @@ $$\left[ \begin{array}{ccc} 0.1&0.1&0.1\\ 0.1&0.2&0.1 \\ 0.1&0.1&0.1\end{array} 
 
 从效果来说，中值滤波可产生类似油彩画的效果。
 
-## 
+## 双边滤波（Bilateral filter）
+
+双边滤波（Bilateral filter）是一种可以保边去噪的滤波器。其输出像素的值依赖于邻域像素的值的加权组合，即：
+
+$$g(i,j)=\frac{\sum_{k,l}f(k,l)w(i,j,k,l)}{\sum_{k,l}w(i,j,k,l)}$$
+
+也就是：
+
+$$h=\frac{w(i,j,k,l)}{\sum_{k,l}w(i,j,k,l)}$$
+
+其中，
+
+$$w(i,j,k,l)=d(i,j,k,l)\cdot r(i,j,k,l)=exp\left(-\frac{(i-k)^2+(j-l)^2}{2\sigma_d^2}\right)\cdot exp\left(-\frac{\|f(i,j)-f(k,l)\|^2}{2\sigma_r^2}\right)$$
+
