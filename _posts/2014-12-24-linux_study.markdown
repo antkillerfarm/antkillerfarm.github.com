@@ -323,6 +323,10 @@ Linux系统上的文件锁主要分为协同锁(advisory lock)和强制锁(manda
 
 fcntl和flock都可以用于创建文件锁。
 
+文件锁、命名管道和消息队列的示例代码：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/pipe/
+
 ## 主线程存续的编程技巧
 
 有的多线程程序，其主要功能实现在其他线程中。主线程只是负责创建这些功能线程，一旦创建完成，自己的使命也就结束了。

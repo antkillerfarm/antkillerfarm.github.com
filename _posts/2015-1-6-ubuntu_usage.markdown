@@ -213,9 +213,7 @@ https://github.com/tualatrix/ubuntu-tweak
 
 安装依赖：
 
-`sudo apt-get install python-pip python-aptdaemon.gtk3widgets python-gi python-lxml libwebkitgtk-3.0-dev libgconf2-dev python-compizconfig libdbus-glib-1-dev`
-
-`sudo pip install dbus-python`
+`sudo apt-get install python-pip python-aptdaemon.gtk3widgets python-gi python-lxml libwebkitgtk-3.0-dev libgconf2-dev python-compizconfig libdbus-glib-1-dev python-dbus python-xdg python-cairo`
 
 2.BleachBit
 

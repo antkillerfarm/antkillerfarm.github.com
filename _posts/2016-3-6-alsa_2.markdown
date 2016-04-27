@@ -223,7 +223,7 @@ $$f\ast h=f\bigotimes rot180(h)$$
 
 其中，rotN表示将矩阵元素绕中心逆时针旋转N度，显然这里的N只有为90的倍数，才是有意义的。
 
-## 方框滤波（box Filter）
+## 方框滤波（Box Filter）
 
 $$h=\alpha
 \begin{pmatrix}
@@ -239,7 +239,7 @@ $$h=\alpha
 \end{cases}
 $$
 
-当normalize=true时的方框滤波，也被称为均值滤波。
+当normalize=true时的方框滤波，也被称为均值滤波（Mean filter）。
 
 ## 高斯滤波（Gauss filter）
 
@@ -285,3 +285,18 @@ $$\left[ \begin{array}{ccc} 1&1&1\\ 1&2&1 \\ 1&1&1\end{array} \right]$$
 
 $$\left[ \begin{array}{ccc} 0.1&0.1&0.1\\ 0.1&0.2&0.1 \\ 0.1&0.1&0.1\end{array} \right]$$
 
+从效果来说，高斯滤波可产生类似毛玻璃的效果。
+
+## 中值滤波（Median filter）
+
+中值滤波是一种典型的非线性滤波技术，对于斑点噪声（speckle noise）和椒盐噪声（salt-and-pepper noise）来说尤其有用，对滤除脉冲干扰及图像扫描噪声非常有效，也常用于保护边缘信息。
+
+以3*3的滤波窗口为例，计算以点$$[i,j]$$为中心的像素中值步骤如下：
+
+1）对$$U^+(A,1)$$的9个像素点$$a_0\sim a_8$$，按强度值大小排列像素点，得到有序数组$$A_0\sim A_8$$
+
+2）选择排序像素集的中间值$$A_4$$作为点$$[i,j]$$的新值。
+
+从效果来说，中值滤波可产生类似油彩画的效果。
+
+## 

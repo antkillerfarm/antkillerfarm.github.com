@@ -138,6 +138,10 @@ http://blog.csdn.net/column/details/opencv-tutorial.html
 
 另一个国人写的OpenCV入门指南。
 
+http://blog.csdn.net/abcjennifer/
+
+一个浙大妹子的blog，关注计算机视觉、机器学习。
+
 http://blog.csdn.net/mmz_xiaokong/article/details/7916163
 
 机器视觉开源处理库汇总。

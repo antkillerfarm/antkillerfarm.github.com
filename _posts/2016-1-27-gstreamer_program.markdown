@@ -22,7 +22,7 @@ TCP远程播放采用Client/Server模式。
 
 示例代码：
 
-
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gstreamer/tutorials/cs
 
 # GStreamer编程
 
