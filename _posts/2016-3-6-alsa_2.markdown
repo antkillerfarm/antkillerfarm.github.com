@@ -342,3 +342,4 @@ $$g(i,j)=max_{k,l}f(i,j)$$
 $$g(i,j)=min_{k,l}f(i,j)$$
 
 这里仿照C语言的记法，将膨胀操作记为$$dilate(src)$$，其中src表示源图像。同理，将腐蚀操作记为$$erode(src)$$。
+

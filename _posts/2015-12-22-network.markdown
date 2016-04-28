@@ -242,3 +242,15 @@ Ubuntu 16.04正式发布（2016.4.21）之后，我第一时间下载了下来�
 
 3.Emacs升级到24.5。提一个细节，以前打开同名文件，文件名的后面按照打开顺序加序号，以示区别，但序号含义很不直观。现在用父文件夹名来区分，好用多了。
 
+下面对使用中遇到的问题，及其解决方法，总结如下：
+
+1.安装Flash插件。
+
+有两个办法——要么安装Chrome，要么将Adobe官方驱动中的libflashplayer.so，安装到~/.mozilla/plugins下。
+
+2.gvfsd-smb-browse进程的CPU占用100%。
+
+这是一个ISP DNS导致的问题。其中一个解决方法：
+
+`sudo apt-get remove gvfs-backends`
+
