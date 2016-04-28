@@ -205,6 +205,8 @@ $$g(i,j)=\sum_{k,l}f(i+k,j+l)h(k,l)$$
 
 其中，h称为相关核(Kernel)，即滤波器的加权系数矩阵。相关核有个叫做锚点（anchor）的属性，也就是被滤波的那个点在核中的位置。以3*3的h矩阵为例，如果锚点在矩阵中央的话，则$$i-1\le k\le i+1,j-1\le l\le j+1$$。如果锚点在左上角的话，则$$i\le k\le i+2,j\le l\le j+2$$。
 
+所有的点$$(k,l)$$组成的集合，叫做核空间。一般也简单记作$$X_{k,l}$$。这里的X可以是累加、求均值、求最大值、求最小值等集合运算符。
+
 此外，h矩阵还有是否归一化的属性。这里将计算矩阵中所有元素之和的操作，记作$$SUM(h)$$.则当$$SUM(h)=1$$时，h为归一化核。$$\frac{h}{SUM(h)}$$，称作核的归一化。
 
 ## 卷积算子
@@ -226,12 +228,12 @@ $$f\ast h=f\bigotimes rot180(h)$$
 ## 方框滤波（Box Filter）
 
 $$h=\alpha
-\begin{pmatrix}
+\begin{bmatrix}
      1 & 1 & 1 & \cdots & 1 \\
      1 & 1 & 1 & \cdots & 1 \\
      \cdots & \cdots & \cdots & \cdots & \cdots \\
      1 & 1 & 1 & \cdots & 1    
-\end{pmatrix}
+\end{bmatrix}
 ,\alpha =
 \begin{cases}
 \frac{1}{SUM(h)},  & \text{normalize=true} \\
@@ -271,7 +273,7 @@ $$f(x,y)=\frac{1}{2\pi}e^{-\frac{x^2+y^2}{2}}=f(x)f(y)$$
 
 正态分布的相关内容可参考：
 
-http://www.52nlp.cn/%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83%E7%9A%84%E5%89%8D%E4%B8%96%E4%BB%8A%E7%94%9F%E4%B8%80
+[正态分布的前世今生](http://www.52nlp.cn/%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83%E7%9A%84%E5%89%8D%E4%B8%96%E4%BB%8A%E7%94%9F%E4%B8%80)
 
 标准正态分布的最佳逼近符合杨辉三角，比如一个具有5个点的一维正态分布的最佳逼近为：
 
@@ -324,3 +326,19 @@ $$w(i,j,k,l)=d(i,j,k,l)\cdot r(i,j,k,l)=exp\left(-\frac{(i-k)^2+(j-l)^2}{2\sigma
 为了体现效果，这里来张大叔的照片。
 
 ![](/images/article/bilateral_filter.png)
+
+## 膨胀与腐蚀(Dilation & Erosion)
+
+腐蚀和膨胀是对白色部分（高亮部分）而言的，不是黑色部分。膨胀就是图像中的高亮部分进行膨胀，“领域扩张”，效果图拥有比原图更大的高亮区域。腐蚀就是原图中的高亮部分被腐蚀，“领域被蚕食”，效果图拥有比原图更小的高亮区域。
+
+具体方法如下：
+
+1.膨胀。
+
+$$g(i,j)=max_{k,l}f(i,j)$$
+
+2.腐蚀。
+
+$$g(i,j)=min_{k,l}f(i,j)$$
+
+这里仿照C语言的记法，将膨胀操作记为$$dilate(src)$$，其中src表示源图像。同理，将腐蚀操作记为$$erode(src)$$。

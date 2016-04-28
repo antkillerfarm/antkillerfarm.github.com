@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Jpeglib使用指南, 各种压缩包的压缩和解压方法, 开源社区分裂史, Javascript
+title:  Jpeglib使用指南, 各种压缩包的压缩和解压方法, 开源社区分裂史, Javascript, OpenCL vs CUDA
 category: technology 
 ---
 
@@ -238,3 +238,7 @@ Javascript本质上是服务器发出的，由客户端执行的脚本。出于�
 为了在服务器后端使用Javascript，Ryan Dahl发起了node.js项目。这个项目可以看作是php等的竞争者。它的官网为：
 
 https://nodejs.org/
+
+## OpenCL vs CUDA
+
+![](/images/article/opencl_cuda.png)
