@@ -75,6 +75,10 @@ http://www.gooseeker.com/
 
 一个基于FireFox的网络爬虫。
 
+https://coderpad.io/
+
+这个网站比较有意思，可以在线编程写代码，适用于公司远程面试程序员。
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

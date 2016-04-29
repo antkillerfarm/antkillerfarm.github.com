@@ -193,11 +193,15 @@ Ubuntu更新软件时的软件源配置文件是/etc/apt/sources.list。
 
 ## apt-cache
 
-apt是一套完整的软件包管理方案。除了最常用apt-get之外，还包括了一系列的客户端和服务器软件。其中，以apt-cache较为常用。例如：
+apt是一套完整的软件包管理方案。除了最常用apt-get之外，还包括了一系列的客户端和服务器软件。例如：
 
-`apt-cache search gstreamer`
+`sudo apt-cache search gstreamer`
 
 搜索名字中包含gstreamer的软件包。
+
+`sudo add-apt-repository ppa:tualatrix/ppa`
+
+添加新的软件源。
 
 # 系统清理工具
 
@@ -312,6 +316,14 @@ Linux下的远程桌面软件主要有RealVNC和rdesktop。前者支持VNC协议
 # 文件校验和
 
 计算文件校验和，一般采用MD5和SHA算法。在Ubuntu中，这些算法的命令包括：md5sum、sha1sum(160-bit) ,sha224sum(224-bit) ,sha256sum(256-bit),sha384sum(384-bit),sha512sum(512-bit)等。
+
+# 产品设计工具
+
+类别 | 收费 | 免费
+Office | MS Office | LibreOffice
+流程图 | MS Visio | DIA、Kivio
+思维导图 | Mindmanager | FreeMind
+快速原型 | Axure RP | pencil
 
 # 发行版乱战
 

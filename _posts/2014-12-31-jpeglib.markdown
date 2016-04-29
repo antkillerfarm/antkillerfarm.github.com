@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Jpeglib使用指南, 各种压缩包的压缩和解压方法, 开源社区分裂史, Javascript, OpenCL vs CUDA
+title:  Jpeglib使用指南, 各种压缩包的压缩和解压方法, 开源社区分裂史, Javascript, 并行计算
 category: technology 
 ---
 
@@ -239,6 +239,40 @@ Javascript本质上是服务器发出的，由客户端执行的脚本。出于�
 
 https://nodejs.org/
 
+# 并行计算
+
+## 概述
+
+并行计算的必要性：
+
+美国Sandia国家实验室一项模拟测试证明：由于存储机制和内存带宽的限制，16核、32核甚至64核处理器对于超级计算机来说，不仅不能带来性能提升，甚至可能导致效率的大幅度下降。
+
+常见并行计算框架
+
+名称 | 优点 | 缺点
+CUDA | 生态系统良好，发展成熟。 | 只能NV的卡。
+OpenCL | 跨平台，很容易异构计算。 | 大家都把它当作干儿子，没人认真写它的驱动。
+C++ AMP | 基于Direct compute，易于使用。 | Windows Only。
+OpenMP | 移植改动少 | CPU多线程而已，和GPU无关。
+Metal | for iOS | -
+
+其他的并行计算框架还有：OpenACC、AMD stream。
+
+NVIDIA相关产品线：
+
+Tesla产品专为数据中心与工作站计算应用而设计。
+
+Quadro产品专为专业图形与工程应用而设计。
+
+GeForce产品专为互动游戏与消费类应用而设计。
+
 ## OpenCL vs CUDA
 
 ![](/images/article/opencl_cuda.png)
+
+## 教程
+
+http://blog.csdn.net/augusdi/article/details/12833235
+
+这是一篇转帖的CUDA教程，原帖比较分散，不好看。
+
