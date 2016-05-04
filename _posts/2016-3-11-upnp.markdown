@@ -123,7 +123,8 @@ upnp/src/gena/gena_device.c: gena_process_subscription_request
 3.交互流程
 
 名称 | 报文 | 函数调用
-主动告知 | NOTIFY * HTTP/1.1<br/>NTS: ssdp:alive | upnp/src/ssdp/ssdp_device.c: DeviceAdvertisement<br/>upnp/src/ssdp/ssdp_device.c: CreateServicePacket<br/>msg_type=MSGTYPE_ADVERTISEMENT
+|:--:|:--:|:--:|
+主动告知 | NOTIFY * HTTP/1.1<br/>NTS: ssdp:alive | upnp/src/ssdp/ssdp_device.c: ssdp_handle_device_request<br/>upnp/src/ssdp/ssdp_device.c: advertiseAndReplyThread<br/>upnp/src/ssdp/ssdp_server.c:AdvertiseAndReply<br/>upnp/src/ssdp/ssdp_device.c: DeviceAdvertisement<br/>upnp/src/ssdp/ssdp_device.c: CreateServicePacket<br/>msg_type=MSGTYPE_ADVERTISEMENT
 
 
 4.辅助函数

@@ -330,6 +330,7 @@ Linux下的远程桌面软件主要有RealVNC和rdesktop。前者支持VNC协议
 # 产品设计工具
 
 类别 | 收费 | 免费
+|:--:|:--:|:--:|
 Office | MS Office | LibreOffice
 流程图 | MS Visio | DIA、Kivio
 思维导图 | Mindmanager | FreeMind
