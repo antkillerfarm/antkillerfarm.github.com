@@ -191,7 +191,17 @@ TargetEnvironment=Unity
 
 Ubuntu更新软件时的软件源配置文件是/etc/apt/sources.list。
 
-## apt-cache
+ubuntu的官方软件源分为4类：
+
+main：这个是官方维护的基本库。
+
+restricted：官方维护的其他自由软件。
+
+universe：自由软件，但是官方不维护。
+
+multiverse：非自由软件，官方不维护。
+
+## apt
 
 apt是一套完整的软件包管理方案。除了最常用apt-get之外，还包括了一系列的客户端和服务器软件。例如：
 

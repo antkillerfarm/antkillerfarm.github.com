@@ -24,6 +24,10 @@ libupnp是UPNP协议的一个实现库。它最早由英特尔开发并开源，
 
 http://pupnp.sourceforge.net/
 
+安装方法：
+
+`sudo apt-get install libupnp-dev`
+
 ![](/images/article/libupnp.png)
 
 上图是libupnp体系结构图，其参考教程可参见：
@@ -116,6 +120,18 @@ upnp/src/gena/gena_device.c: gena_process_subscription_request
 
 这里会最终调用注册的事件处理函数。
 
+3.交互流程
+
+名称 | 报文 | 函数调用
+主动告知 | NOTIFY * HTTP/1.1<br/>NTS: ssdp:alive | upnp/src/ssdp/ssdp_device.c: DeviceAdvertisement<br/>upnp/src/ssdp/ssdp_device.c: CreateServicePacket<br/>msg_type=MSGTYPE_ADVERTISEMENT
+
+
+4.辅助函数
+
+SampleUtil_PrintEvent: 这是个事件打印函数，对于分析UPNP的交互流程很有帮助。
+
+
+
 ## tv_ctrlpt代码流程详解
 
 1.初始化
@@ -134,7 +150,7 @@ common/tv_ctrlpt.c: TvCtrlPointStart
 
 upnp/src/api/upnpapi.c: UpnpRegisterClient
 
-其他部分与tv_device相同。
+其他部分与tv_device注册事件的流程相同。
 
 # gmediarender的UPNP流程详解
 
