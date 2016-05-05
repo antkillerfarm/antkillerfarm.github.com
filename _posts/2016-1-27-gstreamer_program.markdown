@@ -24,6 +24,12 @@ TCP远程播放采用Client/Server模式。
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gstreamer/tutorials/cs
 
+https://cgit.freedesktop.org/gstreamer/gst-plugins-good/tree/gst/rtp/README
+
+`gst-launch-1.0 udpsrc port=3000 caps="application/x-rtp, media=(string)application, payload=(int)96, clock-rate=(int)90000, encoding-name=(string)X-GST" ! rtpgstdepay ! decodebin ! autoaudiosink`
+
+`gst-launch-1.0 filesrc location=./03.flac ! decodebin ! rtpgstpay ! udpsink port=3000`
+
 # GStreamer编程
 
 ## 开发环境搭建

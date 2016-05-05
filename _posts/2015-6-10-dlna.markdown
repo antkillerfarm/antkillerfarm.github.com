@@ -300,6 +300,10 @@ https://www.raspberrypi.org/forums/viewtopic.php?f=38&t=25684
 
 https://www.freedesktop.org/wiki/Software/PulseAudio/
 
+https://rootprompt.apatsch.net/2013/04/23/raspberry-pi-network-audio-player-pulseaudio-dlna-and-bluetooth-a2dp-part-3-bluetooth/
+
+https://gstreamer.freedesktop.org/documentation/rtp.html
+
 # OpenCV
 
 ## 参考资料
