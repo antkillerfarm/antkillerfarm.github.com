@@ -276,7 +276,7 @@ WireShark以丰富的过滤器著称，现将我使用到的过滤器规则摘�
 
 过滤源地址和目标地址。
 
-`tcp.segment_data matches Bob`
+`tcp matches Bob`
 
 匹配特定字符串。
 

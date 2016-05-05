@@ -62,7 +62,7 @@ libupnp自带的示例在upnp/sample路径下。编译之后，可生成三个�
 
 ## tv_device代码流程详解
 
-1.初始化
+### 初始化
 
 upnp/sample/linux/tv_device_main.c: main
 
@@ -78,11 +78,11 @@ upnp/src/genlib/miniserver/miniserver.c: StartMiniServer
 
 这是整个初始化过程中，最重要的函数。它负责创建Web Server和线程池。UPNP的所有功能都在这些线程（而不是主线程）中实现。
 
-2.事件处理
+### 事件处理
 
 事件处理分成两步
 
-1）注册事件处理回调函数
+1.注册事件处理回调函数
 
 upnp/src/api/upnpapi.c: TvDeviceStart
 
@@ -96,7 +96,7 @@ upnp/src/api/upnpapi.c: UpnpInitPreamble
 
 UpnpRegisterRootDevice有若干不同的变种：UpnpRegisterRootDevice2、UpnpRegisterRootDevice3、UpnpRegisterRootDevice4。其中，对于动态生成设备描述的方式来说，UpnpRegisterRootDevice2更好用一些。
 
-2）事件处理流程
+2.事件处理流程
 
 upnp/src/genlib/miniserver/miniserver.c: RunMiniServer
 
@@ -120,18 +120,93 @@ upnp/src/gena/gena_device.c: gena_process_subscription_request
 
 这里会最终调用注册的事件处理函数。
 
-3.交互流程
+### 交互流程
 
-名称 | 报文 | 函数调用
-|:--:|:--:|:--:|
-主动告知 | NOTIFY * HTTP/1.1<br/>NTS: ssdp:alive | upnp/src/ssdp/ssdp_device.c: ssdp_handle_device_request<br/>upnp/src/ssdp/ssdp_device.c: advertiseAndReplyThread<br/>upnp/src/ssdp/ssdp_server.c:AdvertiseAndReply<br/>upnp/src/ssdp/ssdp_device.c: DeviceAdvertisement<br/>upnp/src/ssdp/ssdp_device.c: CreateServicePacket<br/>msg_type=MSGTYPE_ADVERTISEMENT
+1.设备发现
 
+设备发现过程使用SSDP协议，其端口为：
 
-4.辅助函数
+`#define SSDP_PORT 1900`
 
-SampleUtil_PrintEvent: 这是个事件打印函数，对于分析UPNP的交互流程很有帮助。
+1）主动告知
 
+报文：
 
+`NOTIFY * HTTP/1.1 NTS: ssdp:alive`
+
+函数调用：
+
+upnp/src/genlib/miniserver/miniserver.c: RunMiniServer
+
+upnp/src/genlib/miniserver/miniserver.c: ssdp_read
+
+upnp/src/ssdp/ssdp_server.c: readFromSSDPSocket
+
+upnp/src/ssdp/ssdp_server.c: ssdp_event_handler_thread
+
+upnp/src/ssdp/ssdp_device.c: ssdp_handle_device_request
+
+upnp/src/ssdp/ssdp_device.c: advertiseAndReplyThread
+
+upnp/src/ssdp/ssdp_server.c: AdvertiseAndReply
+
+upnp/src/ssdp/ssdp_device.c: DeviceAdvertisement
+
+upnp/src/ssdp/ssdp_device.c: CreateServicePacket msg_type=MSGTYPE_ADVERTISEMENT
+
+2）查询消息
+
+报文：
+
+`M-SEARCH * HTTP/1.1 MAN: ssdp:discover`
+
+函数调用：
+
+upnp/sample/common/tv_ctrlpt.c: TvCtrlPointCommandLoop
+
+upnp/sample/common/tv_ctrlpt.c: TvCtrlPointProcessCommand
+
+upnp/sample/common/tv_ctrlpt.c: TvCtrlPointRefresh
+
+upnp/src/api/upnpapi.c: UpnpSearchAsync
+
+upnp/src/ssdp/ssdp_ctrlpt.c: SearchByTarget
+
+upnp/src/ssdp/ssdp_ctrlpt.c: CreateClientRequestPacket
+
+3)再见消息
+
+报文：
+
+`NOTIFY * HTTP/1.1 NTS: ssdp:byebye`
+
+函数调用：
+
+从RunMiniServer到DeviceAdvertisement的步骤和主动告知相同。
+
+upnp/src/ssdp/ssdp_device.c: CreateServicePacket msg_type=MSGTYPE_SHUTDOWN
+
+4）添加设备、服务
+
+upnp/sample/common/tv_ctrlpt.c: TvCtrlPointCallbackEventHandler
+
+upnp/sample/common/tv_ctrlpt.c: TvCtrlPointAddDevice
+
+upnp/sample/common/sample_util.c: SampleUtil_FindAndParseService
+
+### 辅助函数
+
+upnp/sample/common/sample_util.c: SampleUtil_PrintEvent
+
+这是个事件打印函数，对于分析UPNP的交互流程很有帮助。
+
+threadutil/src/ThreadPool.c: TPJobXXX
+
+这是一系列和线程池操作相关的函数。
+
+upnp/src/uuid/uuid.c: uuid_create
+
+生成UUID的函数。
 
 ## tv_ctrlpt代码流程详解
 

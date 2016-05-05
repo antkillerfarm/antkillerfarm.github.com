@@ -296,6 +296,10 @@ code.google.com/p/wireme
 
 http://blog.csdn.net/tkwxty/article/details/43342595
 
+https://www.raspberrypi.org/forums/viewtopic.php?f=38&t=25684
+
+https://www.freedesktop.org/wiki/Software/PulseAudio/
+
 # OpenCV
 
 ## 参考资料

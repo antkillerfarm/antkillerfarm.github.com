@@ -154,6 +154,10 @@ modules在/usr/lib/apache2下。
 
 3.如果需要缩放的话，调整保存的大小即可。
 
+## 内存数据库
+
+如GemFire。
+
 # 硬盘安装Linux
 
 2013.9
