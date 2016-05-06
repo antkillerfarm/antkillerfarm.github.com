@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GStreamer（二）, makefile, Autotools
+title:  GStreamer（二）, OpenCV
 category: technology 
 ---
 
@@ -24,9 +24,21 @@ TCP远程播放采用Client/Server模式。
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gstreamer/tutorials/cs
 
+## RTP远程播放
+
+TCP远程播放的优点是数据传输较快，但缺点是无法控制接收端的播放操作。为此人们提出了RTP/RTCP协议，两者一般配合使用，前者用于传输媒体流，后者用于传输控制流。
+
+参考文档：
+
+https://gstreamer.freedesktop.org/documentation/rtp.html
+
 https://cgit.freedesktop.org/gstreamer/gst-plugins-good/tree/gst/rtp/README
 
+1.首先打开播放端软件。（Server端）
+
 `gst-launch-1.0 udpsrc port=3000 caps="application/x-rtp, media=(string)application, payload=(int)96, clock-rate=(int)90000, encoding-name=(string)X-GST" ! rtpgstdepay ! decodebin ! autoaudiosink`
+
+2.打开多媒体发送端软件。（Clinet端）
 
 `gst-launch-1.0 filesrc location=./03.flac ! decodebin ! rtpgstpay ! udpsink port=3000`
 
@@ -172,129 +184,89 @@ new_pad_type = new_pad.query_caps(None).to_string()
 
 从这里也可以看出，gst_parse_launch会自动处理媒体流的格式匹配问题，而使用普通函数的时候，必须自己编程处理格式匹配的问题。
 
-# makefile
+# OpenCV
 
-简单的规则可以查看《GNU makefile指南》一文，Goerge Foot写的。地址就不贴了，中文版基本到处都是。但是该文只是入门级的，最专业的还是GNU官方的手册：
+## 参考资料
 
-http://www.gnu.org/software/make/manual/html_node/index.html
+OpenCV是一套跨平台计算机视觉库。其官网为：
 
-应该说make的语法，除了规则依赖之外，大多数与bash相同。但是make也有一些内置函数，它们的用法就不在bash的范畴了，比如call函数。碰到这样的情况，可以查阅以下网页，以快速定位帮助文档的位置：
+http://opencv.org/
 
-http://www.gnu.org/software/make/manual/html_node/Quick-Reference.html
+代码下载地址：
 
-# Autotools
+https://github.com/Itseez/opencv
 
-## 概述
+OpenCV项目目前由itseez团队维护，他们的网站是：
 
-autotools是GNU提供的一系列自动配置工具的集合，其主要包括autoconf、automake、pkg-config和libtool等工具。
+http://itseez.com/
 
-Makefile虽然规则简单，但手工书写makefile却不是一件容易的事。我这里的不容易指的是：编写符合规范的makefile不容易。如果只是那种自己平时demo的话，可能还是直接makefile更简单。毕竟autotools包含那么多工具，每个工具的规则都不尽相同，学习门槛比makefile高多了。如果针对小工程，还不一定有直接makefile来的快。
+官方教程：
 
-那么autotools的优点在哪里呢？
+http://docs.opencv.org/2.4/doc/tutorials/tutorials.html
 
-1.针对大工程时，手工编写量较小。比如需要添加的源文件和头文件，直接autoscan就出来了，不用一个一个的写。
+其他教程：
 
-2.可以检查编译环境。这个手工写，难度太大，我是不会写的。
+http://wiki.opencv.org.cn/
 
-3.可移植好。由于第2点的存在，autotools生成的makefile的可移植性非常好。这个优点在本地编译的时候，体现的并不十分明显，但如果交叉编译的话，就很突出了。
+国人办的OpenCV中文网。
 
-参考文档：
+http://blog.csdn.net/morewindows/article/category/1291764
 
-https://autotools.io/index.html
+国人写的OpenCV入门指南。
 
-这个网站基本上每个工具都讲到了，非常值得一看。
+http://blog.csdn.net/column/details/opencv-tutorial.html
 
-## autoconf&automake
+另一个国人写的OpenCV入门指南。
 
-这两个工具是整个autotools工具集的核心，使用的流程也比较复杂。教程中最经典的是：
+http://blog.csdn.net/abcjennifer/
 
-http://www.ibm.com/developerworks/cn/linux/l-makefile/index.html
+一个浙大妹子的blog，关注计算机视觉、机器学习。
 
-但是，这个教程比较老了，有的地方的处理并不符合当前的版本，以下针对这些新老版本的差异，做一个说明。
+http://blog.csdn.net/mmz_xiaokong/article/details/7916163
 
-1.首先给出新版本（2016.2）的示例代码：
+机器视觉开源处理库汇总。
 
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gtk_browser/autotool
+http://blog.csdn.net/mmz_xiaokong/article/details/7916189
 
-2.configure.in在新版本中改叫configure.ac。其中，AM_INIT_AUTOMAKE宏的格式已经和老的不同了。AC_OUTPUT宏虽然还存在，但是部分功能分解给AC_CONFIG_FILES宏。
+介绍n款计算机视觉库/人脸识别开源库/软件。
 
-3.拷贝depcomp和complie文件的过程，现在可以通过命令自动完成，无须手动拷贝。
+http://deeplearning.net/
 
-4.运行automake之前，需要先用autoheader生成config.h文件。
+一个深度学习方面的资料网站。从该网站提供的招聘信息来看，caffe、Theano、Torch是目前主流的三大框架库。
 
-从整个流程来说，autotools相比Cmake无疑复杂的多了。但实际使用中，由于这几个步骤都是流程化的，简化起来也比较容易。因此新版本提供了autoreconf命令，用来一站式生成所需的编译配置文件。其示例如下：
+http://caffe.berkeleyvision.org/
 
-`autoreconf -fi`
+caffe是贾扬清写的一个深度学习框架。这哥们是清华的本硕+UCB的博士。
 
-## pkg-config
+https://github.com/BVLC/caffe
 
-一般来说，如果库的头文件不在/usr/include目录中，那么在编译的时候需要用-I参数指定其路径。由于同一个库在不同系统上可能位于不同的目录下，用户安装库的时候也可以将库安装在不同的目录下，所以即使使用同一个库，由于库的路径的不同，造成了用-I参数指定的头文件的路径和在连接时使用-L参数指定lib库的路径都可能不同，其结果就是造成了编译命令界面的不统一。可能由于编译，连接的不一致，造成同一份程序从一台机器copy到另一台机器时就可能会出现问题。
+caffe的代码地址。
 
-pkg-config就是用来解决编译连接界面不统一问题的一个工具。
+http://deeplearning.net/software/theano/
 
-它的基本思想：pkg-config是通过库提供的一个.pc文件获得库的各种必要信息的，包括版本信息、编译和连接需要的参数等。需要的时候可以通过pkg-config提供的参数(–cflags, –libs)，将所需信息提取出来供编译和连接使用。这样，不管库文件安装在哪，通过库对应的.pc文件就可以准确定位,可以使用相同的编译和连接命令，使得编译和连接界面统一。
+Theano的主页
 
-参见：
+https://github.com/Theano/Theano
 
-http://www.mike.org.cn/articles/description-configure-pkg-config-pkg_config_path-of-the-relations-between/
+Theano的代码地址。
 
-## autoconf&automake与pkg-config的协同工作
+http://www.scratchapixel.com/
 
-由于pkg-config是一系列Glib派生项目（如Gstreamer、GTK）所用的配置工具。因此，如何让autoconf&automake与pkg-config协同工作就成为了一个很重要的课题。多数autotools教程由于只是helloworld型的，并没有涉及到这方面的内容。
+一个学习图像处理的网站。
 
-这里仍然使用上一节的示例代码，进行讲解。
+http://www.52nlp.cn/
 
-协同工作的关键在于PKG_CHECK_MODULES宏，这个宏的语法为：
+一个国内的自然语言处理的网站。
 
-`PKG_CHECK_MODULES(prefix, list-of-modules, action-if-found, action-if-not-found)`
+## 使用细节
 
-该宏被执行后，会生成prefix_CFLAGS和prefix_LIBS两个全局变量。它们在Makefile.am中会用到。
+### saturate_cast
 
-这里的AC_SUBST宏，主要是针对老版本的pkg-config所做的修改，在pkg-config v0.24以后的版本中，加不加都无所谓。
+saturate_cast宏会对结果进行转换，以确保它在有效范围之内。
 
-这方面更复杂的例子，可以查看Totem项目的代码，该项目复杂度中等。如果这个例子还不够用的话，那就直接查看GTK项目的代码吧。我相信绝大多数的人，都不可能开发出一个比它更大的项目来。
+### 硬件加速
 
-## CMake和pkg-config的协同工作
+OpenCV中的运算，除了软件实现之外，还有若干种硬件加速，包括OpenCL、CUDA和IPPICV。
 
-Cmake虽然主要用于Qt项目，但用于GTK项目，实际上也没有什么问题。
-
-Cmake使用的pkg_check_modules宏，和上面的PKG_CHECK_MODULES宏，从原理来说，是类似的。这里不再赘述。
-
-参考文档：
-
-http://francesco-cek.com/cmake-and-gtk-3-the-easy-way/
-
-示例代码：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gtk_browser/cmake
-
-## Autotools细节汇总
-
-1.`dnl` vs `#`
-
-`dnl`和`#`在autoconf中，都是注释开始的标志。区别在于，`dnl`注释的东西，不会出现在最终的configure脚本中。
-
-2.设置debug版本
-
-CFLAGS的默认设置是`-g -O2`，可用以下命令修改之：
-
-`./configure CFLAGS="-g -O0"`
-
-3.设定so文件的导出符号表
-
-`libtool --mode=link gcc -o libfoo.la foo.lo -export-symbols=foo.sym`
-
-# premake
-
-premake是一个轻量级的构建系统。这里所谓的轻量级是和Autotools、CMake相比。
-
-Autotools在Unix平台的功能最为全面。CMake添加了对Windows平台的支持，但在Unix平台上，仍不得不借助部分Autotools工具的功能，比如pkg-config。
-
-这两个重量级工具，都有很多重量级的使用者，一般不必担心功能不够使的情况。它们的缺点是，使用了特殊的DSL（Domain Specific Language），用户需要花费额外的学习时间来学习这些DSL。
-
-premake使用lua语言编写，语法比CMake更简单。它的官网是：
-
-http://premake.github.io/
-
-premake的缺点在于，它基本上是个人作品，全职开发人员太少，导致功能有限，目前尚无特大项目使用该系统，其功能性和可靠性受到质疑。
+Intel针对自身的硬件加速，推出了IPP（Integrated Performance Primitives）软件包，但这个包是收费的。从OpenCV 3.0开始，Intel将IPP的一个子集提取出来，免费供OpenCV项目使用。这个子集，俗称“IPPICV”。
 
