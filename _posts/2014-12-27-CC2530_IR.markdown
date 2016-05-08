@@ -132,7 +132,7 @@ CC2530ZNP---Zigbee Pro Network Processor
 
 # CC2530的竞争对手
 
-目前已知的有Ember公司的EM250、atmel公司的产品、microchip公司的产品。国内的广州致远，也就是周立功，也有同类产品。
+目前已知的有Ember公司的EM250、atmel公司的产品、microchip公司的产品。国内的广州致远，也就是周立功，也有同类产品（采用NXP JN5168模块）。
 
 # CC2530 Option的几点解释
 
