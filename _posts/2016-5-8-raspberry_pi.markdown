@@ -6,7 +6,7 @@ category: technology
 
 # Raspberry Pi
 
-# 概述
+## 概述
 
 树莓派（Raspberry Pi）在极客领域可谓大名鼎鼎，它的官网是：
 
@@ -32,7 +32,7 @@ https://developer.microsoft.com/en-us/windows/iot
 
 这一点是很有象征意义的，这表明Raspberry Pi及其社区的影响力，已经到了MS这样的巨头也不能无视的地步了。
 
-# Raspberry Pi的成功之道
+## Raspberry Pi的成功之道
 
 嵌入式开发板这种东西，在国内已经有十多年的历史。我至今仍然记得，2007年的时候，公司的一套类智能手机的开发板，居然要3000元。所以宝贝的不得了，不相干的人根本没机会把玩。
 
@@ -67,4 +67,10 @@ Raspberry Pi建有专门的软件仓库，安装软件就和PC上的Ubuntu一样
 但是，资料、软件、生态，完全没得玩啊。你就算再便宜50块钱，我也会选择Raspberry Pi。新手绝对不推荐Nano PC！
 
 唯一值得欣慰的是，友善之臂也开始在Github上创建自己的代码仓库，并借助了Debian的软件仓库，这在一定程度上，挽回了一些劣势。
+
+## Raspberry Pi的成功案例（不定期更新）
+
+http://dcaoyuan.github.io/papers/rpi_cluster/component.html
+
+这是一个Raspberry Pi的集群。
 
