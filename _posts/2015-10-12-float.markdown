@@ -136,7 +136,7 @@ http://www.rosoo.net/a/201012/10600.html
 
 这个帖子比较了ITU提出的G系列的各种语音编解码方案。
 
-![](/images/article/audio.png)
+![](/images/article/audio.jpg)
 
 上图是各种音频编解码框架的比较图。
 
@@ -310,7 +310,7 @@ GeForce产品专为互动游戏与消费类应用而设计。
 
 ## OpenCL vs CUDA
 
-![](/images/article/opencl_cuda.png)
+![](/images/article/opencl_cuda.jpg)
 
 ## 教程
 

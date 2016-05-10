@@ -76,10 +76,24 @@ http://dcaoyuan.github.io/papers/rpi_cluster/component.html
 
 ## Raspberry Pi 3B初体验
 
-采购的Raspberry Pi 3B，今天（2016.5.10）终于到货了，比想象中要小巧一些。这里需要注意的是，35美元（或者类似价钱的RMB），除了板子之外，什么都没有。
+采购的Raspberry Pi 3B，今天（2016.5.10）终于到货了，比想象中要小巧一些。这里需要注意的是，35美元（或者类似价钱的RMB），除了板子之外，什么都没有。你必须自己准备电源和TF卡，好在这些东西都是标准件，并不难找。
+
+### 安装OS
+
+官方推荐使用NOOBS，但其实直接烧镜像更简单快捷。这里我使用的是Raspbian OS。
+
+### 登录Raspberry Pi
+
+1.串口登录
+
+Raspberry Pi 3B的GPIO接口图如下所示：
+
+![](/images/article/raspberry_pi_gpio.jpg)
+
+其中，串口和树莓派的连线方式如下：
 
 {% highlight text %}
-PL2303   树莓派
+串口   树莓派
 --------------------
 VCC      +3.3V
 RX       TXD
@@ -87,25 +101,59 @@ TX       RXD
 GND      Ground
 {% endhighlight %}
 
+这里我犯了一个错误，将VCC接到+5V上，差点将串口转接板烧掉。用户如果无法判断自己串口设备的VCC，建议先接上+3.3V试试。
+
+然而这样做之后，串口并不稳定，无法顺利登录设备。原因在于：
+
 http://ju.outofmemory.cn/entry/245310
 
-默认用户是pi，密码为raspberry
+2.网口登录
+
+Raspberry Pi默认支持SSH登录。这里我使用putty作为SSH客户端。
+
+首先，用网线将Pi和PC连接到同一个局域网中。然后进入路由器的界面，如下图：
+
+![](/images/article/raspberry_pi_ip1.png)
+
+“客户端列表”如下图：
+
+![](/images/article/raspberry_pi_ip2.png)
+
+其中raspberrypi就是Pi的hostname。选择对应的IP地址，进行SSH登录。Pi的默认用户名是pi，密码为raspberry。
+
+3.远程桌面登录
+
+VNC或者MS远程桌面都能登录Pi，这里使用VNC协议。
+
+Raspbian和Ubuntu一样，使用apt-get来安装软件包。但它默认使用的是国外的软件源，因此速度很慢。
+
+我们首先在下面的网页中，查找适合的镜像软件源：
 
 http://www.raspbian.org/RaspbianMirrors
+
+国内的话，一般推荐清华和中科大的源。东软的源，虽然支持的开源软件数量最多，但速度完全不敢恭维。
 
 http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/
 
 (http|rsync)://mirrors.ustc.edu.cn/raspbian/raspbian/
 
+修改源的方法：
+
 `sudo vi /etc/apt/sources.list`
 
-`sudo apt-get update`
+安装TightVncServer：
 
 `sudo apt-get install tightvncserver`
 
+相应的客户端下载地址：
+
 http://www.tightvnc.com/download.php
 
-在Remote Host中填入Raspberry Pi的IP地址，注意IP后需要加”:1″，应该是表示连接ID吧。之前我没加，就一直连接不上。
+打开TightVncViewer，在Remote Host中填入Raspberry Pi的IP地址，注意IP后需要加“:1”，否则连接不上。
+
+## 文件传输
+
+Raspberry Pi默认支持SFTP协议。
 
 FileZilla
 
