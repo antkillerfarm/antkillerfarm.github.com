@@ -74,3 +74,42 @@ http://dcaoyuan.github.io/papers/rpi_cluster/component.html
 
 这是一个Raspberry Pi的集群。
 
+## Raspberry Pi 3B初体验
+
+采购的Raspberry Pi 3B，今天（2016.5.10）终于到货了，比想象中要小巧一些。这里需要注意的是，35美元（或者类似价钱的RMB），除了板子之外，什么都没有。
+
+{% highlight text %}
+PL2303   树莓派
+--------------------
+VCC      +3.3V
+RX       TXD
+TX       RXD
+GND      Ground
+{% endhighlight %}
+
+http://ju.outofmemory.cn/entry/245310
+
+默认用户是pi，密码为raspberry
+
+http://www.raspbian.org/RaspbianMirrors
+
+http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/
+
+(http|rsync)://mirrors.ustc.edu.cn/raspbian/raspbian/
+
+`sudo vi /etc/apt/sources.list`
+
+`sudo apt-get update`
+
+`sudo apt-get install tightvncserver`
+
+http://www.tightvnc.com/download.php
+
+在Remote Host中填入Raspberry Pi的IP地址，注意IP后需要加”:1″，应该是表示连接ID吧。之前我没加，就一直连接不上。
+
+FileZilla
+
+sftp://192.168.1.102 （换成您的树莓派的IP地址。前面的sftp://一定要加）
+
+
+
