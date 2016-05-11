@@ -62,11 +62,15 @@ Raspberry Pi建有专门的软件仓库，安装软件就和PC上的Ubuntu一样
 
 这里，我们可以拿友善之臂的Nano PC作为一个对比。
 
-两者的设计风格和外设接口，基本一致。Nano PC T2的硬件略好于Raspberry Pi 3B，但不多，价钱也基本相当。
+两者的设计风格和外设接口，基本一致。Nano PC T2的硬件略好于Raspberry Pi 3B，好得不多，价钱也基本相当。
 
 但是，资料、软件、生态，完全没得玩啊。你就算再便宜50块钱，我也会选择Raspberry Pi。新手绝对不推荐Nano PC！
 
 唯一值得欣慰的是，友善之臂也开始在Github上创建自己的代码仓库，并借助了Debian的软件仓库，这在一定程度上，挽回了一些劣势。
+
+## 卡片PC
+
+常见的卡片PC，除了Raspberry Pi之外，还有Intel的NUC。但是后者除了体积小之外，售价和普通PC相当，不适合当玩具。
 
 ## Raspberry Pi的成功案例（不定期更新）
 
@@ -119,7 +123,9 @@ Raspberry Pi默认支持SSH登录。这里我使用putty作为SSH客户端。
 
 ![](/images/article/raspberry_pi_ip2.png)
 
-其中raspberrypi就是Pi的hostname。选择对应的IP地址，进行SSH登录。Pi的默认用户名是pi，密码为raspberry。
+其中raspberrypi就是Pi的hostname。
+
+选择对应的IP地址，进行SSH登录。Pi的默认用户名是pi，密码为raspberry。需要注意的是，putty首次登录不会成功，需要关闭会话，并再次登录，才能获得相关密钥，并登录成功。
 
 3.远程桌面登录
 
@@ -145,6 +151,8 @@ http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/
 
 `sudo apt-get install tightvncserver`
 
+首次运行tightvncserver，会让你设置远程访问的密码。
+
 相应的客户端下载地址：
 
 http://www.tightvnc.com/download.php
@@ -153,11 +161,11 @@ http://www.tightvnc.com/download.php
 
 ## 文件传输
 
-Raspberry Pi默认支持SFTP协议。
-
-FileZilla
+Raspberry Pi默认支持SFTP协议。打开FileZilla，主机一栏填写：
 
 sftp://192.168.1.102 （换成您的树莓派的IP地址。前面的sftp://一定要加）
+
+填入登录的用户名、密码，点击快速连接即可。
 
 
 
