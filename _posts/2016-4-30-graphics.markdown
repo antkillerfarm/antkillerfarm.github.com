@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  图像处理理论
+title:  图像处理理论, UPNP（二）
 category: technology 
 ---
 
@@ -218,3 +218,12 @@ $$blackhat(src)=close(src)-src$$
 
 黑帽运算后的效果图突出了比原图轮廓周围的区域更暗的区域。
 
+# UPNP（二）
+
+# 自制的Control Point示例（续）
+
+## Step 2
+
+这一步的代码在：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/upnp/step2

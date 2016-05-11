@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  UPNP
+title:  UPNP（一）
 category: technology 
 ---
 
-# UPNP
+# 概述
 
 官方的协议规范参见：
 
@@ -391,7 +391,4 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/upnp
 1.基本框架。包括初始化和注册Control Point。
 
 2.通过SSDP的搜索功能，搜索网络设备。
-
-## Step 2
-
 

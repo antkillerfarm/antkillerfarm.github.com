@@ -141,7 +141,7 @@ http://www.raspbian.org/RaspbianMirrors
 
 http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/
 
-(http|rsync)://mirrors.ustc.edu.cn/raspbian/raspbian/
+http://mirrors.ustc.edu.cn/raspbian/raspbian/
 
 修改源的方法：
 
@@ -159,7 +159,7 @@ http://www.tightvnc.com/download.php
 
 打开TightVncViewer，在Remote Host中填入Raspberry Pi的IP地址，注意IP后需要加“:1”，否则连接不上。
 
-## 文件传输
+### 文件传输
 
 Raspberry Pi默认支持SFTP协议。打开FileZilla，主机一栏填写：
 
@@ -167,5 +167,13 @@ sftp://192.168.1.102 （换成您的树莓派的IP地址。前面的sftp://一�
 
 填入登录的用户名、密码，点击快速连接即可。
 
+### 扩展系统分区
 
+官方镜像中，root分区只有2～3GB，这个对于较大的TF卡来说，是一个很大的浪费。因此，需要扩展系统分区。
+
+方法如下图所示：
+
+![](/images/article/raspberry_pi_resize1.png)
+
+![](/images/article/raspberry_pi_resize2.png)
 
