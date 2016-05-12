@@ -282,6 +282,10 @@ Javascript本质上是服务器发出的，由客户端执行的脚本。出于�
 
 https://nodejs.org/
 
+安装方法：
+
+`sudo apt-get install nodejs-dev nodejs-legacy npm`
+
 ## Javascript在客户端的使用
 
 Javascript在服务器前端的成功，促使人们思考其在客户端的使用。
@@ -327,4 +331,13 @@ https://cefbuilds.com/
 NW.js，也就是之前的node-webkit，也是一个Javascript客户端开发SDK。其官网为：
 
 http://nwjs.io/
+
+安装方法：
+
+`npm install -g nw`
+
+代码示例：
+
+https://github.com/zcbenz/nw-sample-apps
+
 
