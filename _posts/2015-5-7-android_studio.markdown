@@ -261,6 +261,8 @@ Maven最大的优点是，具备从网络上自动下载依赖的能力。比如
 
 https://repository.apache.org/
 
+http://ebr.springsource.com/repository/app/
+
 Maven入门教程：
 
 http://www.oracle.com/technetwork/cn/community/java/apache-maven-getting-started-1-406235-zhs.html
