@@ -334,10 +334,15 @@ http://nwjs.io/
 
 安装方法：
 
-`npm install -g nw`
+`sudo npm install -g nw`
 
 代码示例：
 
 https://github.com/zcbenz/nw-sample-apps
 
+替换国内的源：
+
+编辑~/.npmrc，添加
+
+`registry=http://npmreg.mirrors.ustc.edu.cn/`
 
