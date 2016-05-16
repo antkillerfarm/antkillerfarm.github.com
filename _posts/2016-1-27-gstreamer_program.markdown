@@ -272,6 +272,12 @@ Intel针对自身的硬件加速，推出了IPP（Integrated Performance Primiti
 
 # Javascript
 
+## 教程
+
+http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000
+
+一个中文入门教程。
+
 ## Javascript和C的互相调用
 
 Javascript本质上是服务器发出的，由客户端执行的脚本。出于安全原因，本地功能比较弱。所谓Javascript和C的互相调用，基本上都依赖于浏览器的实现。比如，在IE中依赖于ActiveX插件，在Firefox中依赖于JSAPI。
@@ -285,6 +291,18 @@ https://nodejs.org/
 安装方法：
 
 `sudo apt-get install nodejs-dev nodejs-legacy npm`
+
+npm是node.js的软件包管理工具。它的官网是：
+
+https://www.npmjs.com/
+
+可用于搜索有用的软件包，避免重复造轮子。
+
+教程：
+
+http://nqdeng.github.io/7-days-nodejs/
+
+这是阿里的技术团队出的一份中文版简易教程。
 
 ## Javascript在客户端的使用
 

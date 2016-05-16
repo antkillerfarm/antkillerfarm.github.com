@@ -24,6 +24,12 @@ GitHub导入版本库功能的地址是：
 
 https://import.github.com/new
 
+## GitHub使用技巧
+
+https://github.com/trending/python?since=monthly
+
+这个可以看到python的月度趋势，便于分析技术热点。其他语言可以此类推。
+
 ## 搭建本地GitHub Blog服务
 
 1.安装ruby
