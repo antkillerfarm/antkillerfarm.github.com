@@ -355,3 +355,8 @@ cout<<hex<<i<<endl; //输出十六进制数
 cout<<oct<<i<<endl; //输出八进制数
 cout<<dec<<i<<endl; //输出十进制数
 {% endhighlight %}
+
+## strtok
+
+strtok函数多用于分割字符串，但它会改变被分割字符串的值。因此，如果该字符串以后还有用的话，需要首先复制该字符串，然后对复制的字符串执行strtok函数。
+

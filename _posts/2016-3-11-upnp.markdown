@@ -378,17 +378,9 @@ https://wiki.gnome.org/Projects/GUPnP
 
 2.使用不方便。设备功能的XML描述文件居然是写死的，扩展极为不易。（gmediarender的XML描述文件是动态生成的。）
 
-针对这些问题，我打算模仿gmediarender的写法，做一个Control Point的示例。其核心是：将用户需要扩展的业务功能，抽象为数据结构，并将这些数据结构的内容定义放在一起，以便于用户的修改。换句话说，用户只需要修改数组的内容，而不必修改代码，即可扩展业务功能。
+针对这些问题，我打算模仿gmediarender的写法，做一个Control Point的示例。
 
-## Step 1
+其代码重构的核心是：将用户需要扩展的业务功能，抽象为数据结构，并将这些数据结构的内容定义放在一起，以便于用户的修改。换句话说，用户只需要修改数组的内容，而不必修改代码，即可扩展业务功能。
 
-这次，我打算从头开始搭建Control Point示例。也就是从main函数出发，逐步完善相关功能。这一步的代码在：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/upnp/step1
-
-该程序主要实现：
-
-1.基本框架。包括初始化和注册Control Point。
-
-2.通过SSDP的搜索功能，搜索网络设备。
+在功能上，为了使这个示例更有意义，这里选择gmediarender作为和示例配套的Device程序。因为，gmediarender实现的是一个有实用价值的协议规范，而非demo，所需处理的情况也比demo复杂的多。
 

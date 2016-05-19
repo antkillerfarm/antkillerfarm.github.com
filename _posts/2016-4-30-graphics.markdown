@@ -222,6 +222,18 @@ $$blackhat(src)=close(src)-src$$
 
 # 自制的Control Point示例（续）
 
+## Step 1
+
+这次，我打算从头开始搭建Control Point示例。也就是从main函数出发，逐步完善相关功能。这一步的代码在：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/upnp/step1
+
+该程序主要实现：
+
+1.基本框架。包括初始化和注册Control Point。
+
+2.通过SSDP的搜索功能，搜索网络设备。
+
 ## Step 2
 
 这一步的代码在：
