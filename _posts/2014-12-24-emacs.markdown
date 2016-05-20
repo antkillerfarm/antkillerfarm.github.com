@@ -46,6 +46,10 @@ M-x使用技巧：M-x下输入的命令过长的时候，可以输入开头的�
 
 新建一个左右式的窗口——C-x 3
 
+退出emacs——C-x C-c
+
+召唤菜单——M-`
+
 打开shell——M-x shell //shell模式下，如果需要按C-c，终止程序的话，可以按两下C-c
 
 关闭缓冲区——C-x k
@@ -91,12 +95,6 @@ C代码相关的内容：
 块小写——C-x C-l
 
 块大写——C-x C-u
-
-16进制 M-x hexl-mode
-
-C-c C-c
-
-Leave Hexl mode, going back to the major mode this buffer had before you invoked `hexl-mode'.
 
 显示行号——`(global-linum-mode t)`
 

@@ -177,3 +177,25 @@ sftp://192.168.1.102 （换成您的树莓派的IP地址。前面的sftp://一�
 
 ![](/images/article/raspberry_pi_resize2.png)
 
+## VNC进阶教程
+
+### 开机自动启动
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/other/vncserver
+
+将上面的脚本放到/etc/init.d/vncserver中。
+
+然后执行以下命令：
+
+`sudo chmod +x /etc/init.d/vncserver`
+
+`sudo update-rc.d vncserver defaults`
+
+`sudo service vncserver start`
+
+### 调整分辨率
+
+`vncserver -geometry 1440x900 :1`
+
+并不是所有的分辨率Pi都支持。Pi的默认分辨率是800x600，其他支持的分辨率还有1440x900。（不全，有兴趣的自己慢慢试）
+

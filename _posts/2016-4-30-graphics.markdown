@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  图像处理理论, UPNP（二）
+title:  图像处理理论, UPNP（二）, linux学习心得（二）
 category: technology 
 ---
 
@@ -239,3 +239,23 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/upnp
 这一步的代码在：
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/upnp/step2
+
+# linux学习心得（二）
+
+## 查看内存使用情况
+
+### top命令
+
+top命令可在进程这一级查看内存、运行时间、CPU等的使用情况。并可根据不同属性对结果排序：
+
+P：按%CPU使用率排序
+
+T：按TIME+排序
+
+M：按%MEM排序
+
+注：运行top命令之后，输入相应字符即可切换排序。
+
+### free命令
+
+free命令的内容比较概括，主要包含系统内存的整体使用情况，不深入到进程一级。
