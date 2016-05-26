@@ -259,3 +259,13 @@ M：按%MEM排序
 ### free命令
 
 free命令的内容比较概括，主要包含系统内存的整体使用情况，不深入到进程一级。
+
+## 时间的表示方法
+
+一般遵循ISO 8601标准：
+
+https://www.w3.org/TR/NOTE-datetime
+
+YYYY-MM-DDThh:mm:ss.sTZD (eg 1997-07-16T19:20:30.45+01:00)
+
+其中的TZD表示time zone designator。

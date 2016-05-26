@@ -42,6 +42,10 @@ https://cgit.freedesktop.org/gstreamer/gst-plugins-good/tree/gst/rtp/README
 
 `gst-launch-1.0 filesrc location=./03.flac ! decodebin ! rtpgstpay ! udpsink port=3000`
 
+RTP远程播放的问题在于，RTP本身没有EOS标志，因此需要通过其他手段告诉接收端：现在已经EOS了。参见：
+
+http://gstreamer-devel.966125.n4.nabble.com/Not-getting-GST-MESSAGE-EOS-from-recording-bus-td4662992.html
+
 # GStreamer编程
 
 ## 开发环境搭建
@@ -341,4 +345,10 @@ https://github.com/zcbenz/nw-sample-apps
 编辑~/.npmrc，添加
 
 `registry=http://npmreg.mirrors.ustc.edu.cn/`
+
+## jslint
+
+http://www.jslint.com/
+
+jslint是一个JavaScript语法的检查工具。
 

@@ -286,6 +286,12 @@ http://www.shuyz.com/n2n-vpn-network-introduction-and-config.html
 
 autotools和Cmake是目前应用最广的两套编译配置系统。Openwrt对它们支持的代码在/include/autotools.mk和/include/cmake.mk中。
 
+# libubox
+
+libubox是Openwrt平台的一个工具库。详见：
+
+http://www.w2bc.com/article/91056
+
 # 使用GDB调试
 
 由于完整的GDB尺寸太大（~1.5MB），因此通常使用GDBServer进行调试。两者的代码都在gdb软件包中。
