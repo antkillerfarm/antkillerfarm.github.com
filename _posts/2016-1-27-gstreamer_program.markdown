@@ -24,6 +24,12 @@ TCP远程播放采用Client/Server模式。
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gstreamer/tutorials/cs
 
+来一个更复杂的例子：
+
+gst-launch-1.0 filesrc location=./1.mp3 ! tee name=tee0 tee0. ! queue ! tcpclientsink port=3000 tee0. ! queue ! decodebin ! autoaudiosink
+
+这个例子中，一个音频文件被tee分成了2份，一份远程播，一份自己播。
+
 ## RTP远程播放
 
 TCP远程播放的优点是数据传输较快，但缺点是无法控制接收端的播放操作。为此人们提出了RTP/RTCP协议，两者一般配合使用，前者用于传输媒体流，后者用于传输控制流。
@@ -42,9 +48,24 @@ https://cgit.freedesktop.org/gstreamer/gst-plugins-good/tree/gst/rtp/README
 
 `gst-launch-1.0 filesrc location=./03.flac ! decodebin ! rtpgstpay ! udpsink port=3000`
 
-RTP远程播放的问题在于，RTP本身没有EOS标志，因此需要通过其他手段告诉接收端：现在已经EOS了。参见：
+RTP远程播放的问题在于，RTP本身没有EOS标志，因此需要通过其他手段告诉接收端——现在已经EOS了。参见：
 
 http://gstreamer-devel.966125.n4.nabble.com/Not-getting-GST-MESSAGE-EOS-from-recording-bus-td4662992.html
+
+示例代码：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gstreamer/tutorials/rtp
+
+## GStreamer对URI的支持
+
+GStreamer的playbin、uridecodebin插件都可以处理URI，但dataurisrc是个例外，它接收的不是如`http://`或`file://`这样的URI，而是RFC 2397格式的URI，如下所示：
+
+{% highlight bash %}
+gst-launch-1.0 -v dataurisrc uri="data:image/png;base64,iVBORw0KGgo...." \
+! pngdec ! videoconvert ! imagefreeze ! videoconvert ! autovideosink
+{% endhighlight %}
+
+如果想做一个urisrc的话，可以使用giosrc插件，或者分不同情况，使用filesrc（file）或souphttpsrc（http）插件。
 
 # GStreamer编程
 

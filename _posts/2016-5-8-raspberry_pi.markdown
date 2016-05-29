@@ -199,3 +199,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/other/vncserver
 
 并不是所有的分辨率Pi都支持。Pi的默认分辨率是800x600，其他支持的分辨率还有1440x900。（不全，有兴趣的自己慢慢试）
 
+## 修改hostname
+
+默认的hostname是raspberrypi。将/etc/hostname和/etc/hosts中的相应字段，改成你想要的名字，保存重启即可。
+
