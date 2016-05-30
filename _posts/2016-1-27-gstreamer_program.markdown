@@ -307,7 +307,7 @@ http://www.javascriptkit.com/jsref/
 
 http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000
 
-一个中文入门教程。
+一个中文入门教程。该作者还编写了Python教程。
 
 ## Javascript和C的互相调用
 
@@ -334,6 +334,20 @@ https://www.npmjs.com/
 http://nqdeng.github.io/7-days-nodejs/
 
 这是阿里的技术团队出的一份中文版简易教程。
+
+http://www.runoob.com/nodejs/nodejs-tutorial.html
+
+这是“菜鸟教程”提供的node.js教程。该网站还有一系列的编程语言教程。
+
+https://github.com/tianmaying/node-blog-demo
+
+这是“天码营”提供的node.js实现网站的示例。
+
+https://www.npmjs.com/package/hbs
+
+http://jade-lang.com/
+
+![](/images/article/web.png)
 
 ## CEF
 
