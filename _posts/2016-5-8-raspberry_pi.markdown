@@ -171,11 +171,15 @@ sftp://192.168.1.102 （换成您的树莓派的IP地址。前面的sftp://一�
 
 官方镜像中，root分区只有2～3GB，这个对于较大的TF卡来说，是一个很大的浪费。因此，需要扩展系统分区。
 
-方法如下图所示：
+方法一如下图所示：
 
 ![](/images/article/raspberry_pi_resize1.png)
 
 ![](/images/article/raspberry_pi_resize2.png)
+
+方法二：
+
+`sudo raspi-config`
 
 ## VNC进阶教程
 

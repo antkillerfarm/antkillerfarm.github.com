@@ -348,7 +348,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/linu
 
 这条命令中的main_link.c如果放到`-lhello`之后就会出问题。也考虑使用`--start-group`和`--end-group`之类的链接选项解决链接顺序问题。
 
-## cout格式化输出
+# cout格式化输出
 
 {% highlight c %}
 cout<<hex<<i<<endl; //输出十六进制数
@@ -356,7 +356,16 @@ cout<<oct<<i<<endl; //输出八进制数
 cout<<dec<<i<<endl; //输出十进制数
 {% endhighlight %}
 
-## strtok
+# strtok
 
 strtok函数多用于分割字符串，但它会改变被分割字符串的值。因此，如果该字符串以后还有用的话，需要首先复制该字符串，然后对复制的字符串执行strtok函数。
 
+# K&R风格
+
+在C语言的函数定义上，我们通常用的函数定义方式为ANSI C的函数定义方式。但是在C语言之父创立C语言之时，函数的定义形式并非现在我们所见到的形式。
+
+这种风格被称为K&R风格，多见于一些历史悠久的项目或者老的书籍中。出于兼容性考虑，现代的C编译器仍然支持K&R风格。
+
+详见：
+
+http://blog.chinaunix.net/uid-7426920-id-2627743.html

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GStreamer（二）, OpenCV, Javascript
+title:  GStreamer（二）, Javascript
 category: technology 
 ---
 
@@ -12,23 +12,47 @@ category: technology
 
 TCP远程播放采用Client/Server模式。
 
+### step1
+
 1.首先打开播放端软件。（Server端）
 
-`gst-launch-1.0 tcpserversrc port=3000 ! decodebin ! autoaudiosink`
+`gst-launch-1.0 tcpserversrc host="127.0.0.1" port=3000 ! decodebin ! autoaudiosink`
 
 2.打开多媒体发送端软件。（Clinet端）
 
-`gst-launch-1.0 filesrc location=./1.mp3 ! tcpclientsink port=3000`
+`gst-launch-1.0 filesrc location=./1.mp3 ! tcpclientsink host="127.0.0.1" port=3000`
 
 示例代码：
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gstreamer/tutorials/cs
+
+### step2
 
 来一个更复杂的例子：
 
 gst-launch-1.0 filesrc location=./1.mp3 ! tee name=tee0 tee0. ! queue ! tcpclientsink port=3000 tee0. ! queue ! decodebin ! autoaudiosink
 
 这个例子中，一个音频文件被tee分成了2份，一份远程播，一份自己播。
+
+注意事项：
+
+1.Server端的管道状态和一般情况下不同。初始情况下，就要设置为PLAY，否则Client会连接不上。
+
+2.对Client管道状态的改变，如PAUSE等，不会改变Server的管道状态。因此，需要另外建立控制管道控制Server的播放操作。
+
+3.Client的EOS（End of Stream）不会触发Server的EOS，只有Client的断开才会触发Server的EOS。
+
+4.Server的EOS处理，需要先将管道状态设置为NULL，然后再设置为PLAY。否则，会导致新的Client无法连接到Server。
+
+示例代码：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gstreamer/tutorials/cs2
+
+### step3
+
+前面的例子中，管道都是一次性创建好的。这里来个动态创建的例子：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gstreamer/tutorials/cs3
 
 ## RTP远程播放
 
@@ -48,13 +72,23 @@ https://cgit.freedesktop.org/gstreamer/gst-plugins-good/tree/gst/rtp/README
 
 `gst-launch-1.0 filesrc location=./03.flac ! decodebin ! rtpgstpay ! udpsink port=3000`
 
-RTP远程播放的问题在于，RTP本身没有EOS标志，因此需要通过其他手段告诉接收端——现在已经EOS了。参见：
+注意事项：
+
+1.RTP本身没有EOS标志，因此需要通过其他手段告诉接收端——现在已经EOS了。参见：
 
 http://gstreamer-devel.966125.n4.nabble.com/Not-getting-GST-MESSAGE-EOS-from-recording-bus-td4662992.html
 
 示例代码：
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gstreamer/tutorials/rtp
+
+2.如果Client的歌曲已经切换，但Server管道没有重置的话，会出现播放杂音。同样，这个事件也不能仅通过RTP，告知Server。
+
+3.虽然GStreamer已经提供了很多格式的rtp插件，然而仍然有很多格式不支持rtp。于是就存在转码的问题，但遗憾的是支持rtp的格式，多是一些老的有损压缩格式，对最近日趋流行的无损压缩支持的不够。
+
+4.clock-rate似乎不能设置为90000之外的值，否则无法播放，原因不详。
+
+综上，GStreamer提供的原始的RTP播放，只适合诸如监控之类的媒体格式固定的管道。对于媒体格式不固定的管道，支持的并不好。
 
 ## GStreamer对URI的支持
 
@@ -66,6 +100,14 @@ gst-launch-1.0 -v dataurisrc uri="data:image/png;base64,iVBORw0KGgo...." \
 {% endhighlight %}
 
 如果想做一个urisrc的话，可以使用giosrc插件，或者分不同情况，使用filesrc（file）或souphttpsrc（http）插件。
+
+注意事项：
+
+1.giosrc在不同平台的支持是不一样的。比如在Raspberry Pi上就无法获取http资源，原因不详。
+
+2.giosrc不支持seek功能，而souphttpsrc支持。
+
+3.开源项目Rygel，最近（v0.30.3）放弃使用giosrc。
 
 # GStreamer编程
 
@@ -209,92 +251,6 @@ new_pad_type = new_pad.query_caps(None).to_string()
 
 从这里也可以看出，gst_parse_launch会自动处理媒体流的格式匹配问题，而使用普通函数的时候，必须自己编程处理格式匹配的问题。
 
-# OpenCV
-
-## 参考资料
-
-OpenCV是一套跨平台计算机视觉库。其官网为：
-
-http://opencv.org/
-
-代码下载地址：
-
-https://github.com/Itseez/opencv
-
-OpenCV项目目前由itseez团队维护，他们的网站是：
-
-http://itseez.com/
-
-官方教程：
-
-http://docs.opencv.org/2.4/doc/tutorials/tutorials.html
-
-其他教程：
-
-http://wiki.opencv.org.cn/
-
-国人办的OpenCV中文网。
-
-http://blog.csdn.net/morewindows/article/category/1291764
-
-国人写的OpenCV入门指南。
-
-http://blog.csdn.net/column/details/opencv-tutorial.html
-
-另一个国人写的OpenCV入门指南。
-
-http://blog.csdn.net/abcjennifer/
-
-一个浙大妹子的blog，关注计算机视觉、机器学习。
-
-http://blog.csdn.net/mmz_xiaokong/article/details/7916163
-
-机器视觉开源处理库汇总。
-
-http://blog.csdn.net/mmz_xiaokong/article/details/7916189
-
-介绍n款计算机视觉库/人脸识别开源库/软件。
-
-http://deeplearning.net/
-
-一个深度学习方面的资料网站。从该网站提供的招聘信息来看，caffe、Theano、Torch是目前主流的三大框架库。
-
-http://caffe.berkeleyvision.org/
-
-caffe是贾扬清写的一个深度学习框架。这哥们是清华的本硕+UCB的博士。
-
-https://github.com/BVLC/caffe
-
-caffe的代码地址。
-
-http://deeplearning.net/software/theano/
-
-Theano的主页
-
-https://github.com/Theano/Theano
-
-Theano的代码地址。
-
-http://www.scratchapixel.com/
-
-一个学习图像处理的网站。
-
-http://www.52nlp.cn/
-
-一个国内的自然语言处理的网站。
-
-## 使用细节
-
-### saturate_cast
-
-saturate_cast宏会对结果进行转换，以确保它在有效范围之内。
-
-### 硬件加速
-
-OpenCV中的运算，除了软件实现之外，还有若干种硬件加速，包括OpenCL、CUDA和IPPICV。
-
-Intel针对自身的硬件加速，推出了IPP（Integrated Performance Primitives）软件包，但这个包是收费的。从OpenCV 3.0开始，Intel将IPP的一个子集提取出来，免费供OpenCV项目使用。这个子集，俗称“IPPICV”。
-
 # Javascript
 
 ## 参考指南 & 教程
@@ -323,12 +279,6 @@ https://nodejs.org/
 
 `sudo apt-get install nodejs-dev nodejs-legacy npm`
 
-npm是node.js的软件包管理工具。它的官网是：
-
-https://www.npmjs.com/
-
-可用于搜索有用的软件包，避免重复造轮子。
-
 教程：
 
 http://nqdeng.github.io/7-days-nodejs/
@@ -342,12 +292,6 @@ http://www.runoob.com/nodejs/nodejs-tutorial.html
 https://github.com/tianmaying/node-blog-demo
 
 这是“天码营”提供的node.js实现网站的示例。
-
-https://www.npmjs.com/package/hbs
-
-http://jade-lang.com/
-
-![](/images/article/web.png)
 
 ## CEF
 
@@ -386,4 +330,22 @@ https://github.com/zcbenz/nw-sample-apps
 http://www.jslint.com/
 
 jslint是一个JavaScript语法的检查工具。
+
+## Template Engine
+
+![](/images/article/web.png)
+
+在传统的Web开发模式中，HTML文件由CGI负责生成。然而生成HTML文件本身，就是一件麻烦事。纯用printf之类的方式，显然是一件费时费力的工作。
+
+这时，就需要Template Engine来加速这个过程。Template Engine会将Template Text转换成HTML。因此，只要Template Text的文法比HTML简单，则这个转换就是有意义的。
+
+Template Engine有很多种。例如：
+
+### hbs
+
+https://www.npmjs.com/package/hbs
+
+### jade
+
+http://jade-lang.com/
 

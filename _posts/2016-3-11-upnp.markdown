@@ -210,6 +210,10 @@ upnp/src/uuid/uuid.c: uuid_create
 
 生成UUID的函数。
 
+upnp/src/api/UpnpString.c
+
+这个文件中，有个String的C语言实现，代码写得不错。
+
 ## tv_ctrlpt代码流程详解
 
 1.初始化
@@ -229,6 +233,10 @@ common/tv_ctrlpt.c: TvCtrlPointStart
 upnp/src/api/upnpapi.c: UpnpRegisterClient
 
 其他部分与tv_device注册事件的流程相同。
+
+common/tv_ctrlpt.c: TvCtrlPointCallbackEventHandler
+
+这是tv_ctrlpt的事件处理函数。
 
 # gmediarender的UPNP流程详解
 
