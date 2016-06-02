@@ -192,7 +192,7 @@ Keyboards --->
 
 ## active_low
 
- active_low的设置要根据硬件的连接，如果按下按键为高电平那么active_low =0，如果按下按键为低电平那么active_low =1.如果这个参数搞错了，按键松开后就不断发按键键码，表现为屏幕上乱动作。
+ active_low的设置要根据硬件的连接，如果按下按键为高电平那么active_low=0，如果按下按键为低电平那么active_low=1.如果这个参数搞错了，按键松开后就不断发按键键码，表现为屏幕上乱动作。
 
 也因为active_low的存在，input_event返回的value实际上并不是GPIO的值，1表示按键按下，0表示按键抬起。
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  图像处理理论, UPNP（二）, linux学习心得（二）
+title:  图像处理理论, UPNP（二）
 category: technology 
 ---
 
@@ -220,7 +220,21 @@ $$blackhat(src)=close(src)-src$$
 
 # UPNP（二）
 
-# 自制的Control Point示例（续）
+# 自制的Control Point示例
+
+## 概述
+
+和gmediarender相比，libupnp的sample写的并不好。这主要体现在以下方面：
+
+1.封装的层次太多。虽然这样一来，main函数看起来很简单，细节都被隐藏了起来。但隐藏的先决条件，是对用户使用的透明。而sample显然做不到这一点，于是，用户扩展业务功能的时候，还要翻越层层封装，才能找到需要修改的地方。
+
+2.使用不方便。设备功能的XML描述文件居然是写死的，扩展极为不易。（gmediarender的XML描述文件是动态生成的。）
+
+针对这些问题，我打算模仿gmediarender的写法，做一个Control Point的示例。
+
+其代码重构的核心是：将用户需要扩展的业务功能，抽象为数据结构，并将这些数据结构的内容定义放在一起，以便于用户的修改。换句话说，用户只需要修改数组的内容，而不必修改代码，即可扩展业务功能。
+
+在功能上，为了使这个示例更有意义，这里选择gmediarender作为和示例配套的Device程序。因为，gmediarender实现的是一个有实用价值的协议规范，而非demo，所需处理的情况也比demo复杂的多。
 
 ## Step 1
 
@@ -239,33 +253,3 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/upnp
 这一步的代码在：
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/upnp/step2
-
-# linux学习心得（二）
-
-## 查看内存使用情况
-
-### top命令
-
-top命令可在进程这一级查看内存、运行时间、CPU等的使用情况。并可根据不同属性对结果排序：
-
-P：按%CPU使用率排序
-
-T：按TIME+排序
-
-M：按%MEM排序
-
-注：运行top命令之后，输入相应字符即可切换排序。
-
-### free命令
-
-free命令的内容比较概括，主要包含系统内存的整体使用情况，不深入到进程一级。
-
-## 时间的表示方法
-
-一般遵循ISO 8601标准：
-
-https://www.w3.org/TR/NOTE-datetime
-
-YYYY-MM-DDThh:mm:ss.sTZD (eg 1997-07-16T19:20:30.45+01:00)
-
-其中的TZD表示time zone designator。
