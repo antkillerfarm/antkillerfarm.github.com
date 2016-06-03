@@ -175,7 +175,7 @@ procd本身已经有很多debug信息，只是一般不打印而已。启动时�
 
 这个文件的格式，大致如下：
 
-{% highlight json %}
+{% highlight text %}
 [
 	[ "case", "ACTION", {
 		"add": [

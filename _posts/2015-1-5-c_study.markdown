@@ -161,7 +161,7 @@ http://jacob777.blog.sohu.com/106426297.html
 
 1.auto关键字
 
-C++11中引入的auto主要有两种用途：自动类型推断和返回值占位。auto在C++98中的标识临时变量的语义，由于使用极少且多余，在C++11中已被删除。前后两个标准的auto，完全是两个概念。
+C++11中引入的auto主要有两种用途：自动类型推断和返回值占位。auto在C++98中，标识临时变量的语义，由于使用极少且多余，在C++11中已被删除。前后两个标准中的auto，完全是两个概念，这点尤其需要注意。
 
 http://blog.csdn.net/huang_xw/article/details/8760403
 
@@ -177,15 +177,15 @@ http://www.cnblogs.com/npbool/p/3434757.html
 
 C++
 
-auto func = [=](int x, int y)->int {return x * y;};
+`auto func = [=](int x, int y)->int {return x * y;};`
 
 Java
 
-Runnable r1 = (int x, int y) -> { return x * y; }
+`Runnable r1 = (int x, int y) -> { return x * y; }`
 
 C#
 
-Func<int, int, int> towParams = (x, y) => x * y
+`Func<int, int, int> towParams = (x, y) => x * y`
 
 # 添加废弃提示
 
@@ -303,6 +303,8 @@ switch (reg) {
        return 4;
 }
 {% endhighlight %}
+
+可以用上面的办法，少写一些case语句。
 
 # 动态链接
 
