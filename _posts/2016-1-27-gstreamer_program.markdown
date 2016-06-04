@@ -265,65 +265,13 @@ http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb30
 
 一个中文入门教程。该作者还编写了Python教程。
 
+http://www.bootcss.com/
+
+这个网站虽然只是Bootstrap的教程网站，然而它首页的项目推荐，几乎涵盖了前端开发所用的各种JS库。
+
 ## Javascript和C的互相调用
 
 Javascript本质上是服务器发出的，由客户端执行的脚本。出于安全原因，本地功能比较弱。所谓Javascript和C的互相调用，基本上都依赖于浏览器的实现。比如，在IE中依赖于ActiveX插件，在Firefox中依赖于JSAPI。
-
-## node.js
-
-为了在服务器后端使用Javascript，Ryan Dahl发起了node.js项目。这个项目可以看作是php等的竞争者。它的官网为：
-
-https://nodejs.org/
-
-安装方法：
-
-`sudo apt-get install nodejs-dev nodejs-legacy npm`
-
-教程：
-
-http://nqdeng.github.io/7-days-nodejs/
-
-这是阿里的技术团队出的一份中文版简易教程。
-
-http://www.runoob.com/nodejs/nodejs-tutorial.html
-
-这是“菜鸟教程”提供的node.js教程。该网站还有一系列的编程语言教程。
-
-https://github.com/tianmaying/node-blog-demo
-
-这是“天码营”提供的node.js实现网站的示例。
-
-## CEF
-
-Chromium Embedded Framework的官网是：
-
-https://bitbucket.org/chromiumembedded/cef
-
-由于编译极为复杂，所以通常直接下载它的SDK。其网址：
-
-https://cefbuilds.com/
-
-然而，由于图片认证被“墙”的缘故，而无法下载。
-
-## NW.js
-
-NW.js，也就是之前的node-webkit，也是一个Javascript客户端开发SDK。其官网为：
-
-http://nwjs.io/
-
-安装方法：
-
-`sudo npm install -g nw`
-
-代码示例：
-
-https://github.com/zcbenz/nw-sample-apps
-
-替换国内的源：
-
-编辑~/.npmrc，添加
-
-`registry=http://npmreg.mirrors.ustc.edu.cn/`
 
 ## jslint
 
@@ -348,4 +296,56 @@ https://www.npmjs.com/package/hbs
 ### jade
 
 http://jade-lang.com/
+
+## CDN
+
+CDN的全称是Content Delivery Network，即内容分发网络。这里主要使用它来存储一些通用的JS库，比如JQuery，以达到节省带宽和提高加载速度的目的。
+
+以下是一些国内比较好使的CDN地址：
+
+http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js
+
+http://libs.baidu.com/jquery/1.9.1/jquery.min.js
+
+http://libs.useso.com/js/jquery/1.9.1/jquery.min.js
+
+这里是百度CDN库的说明：
+
+http://developer.baidu.com/wiki/index.php?title=docs/cplat/libs
+
+## 动画
+
+HTML动画一般有两种实现方式：
+
+1.JS。JS脚本通过动态改变HTML、CSS的内容来实现动画效果。这种方式功能全面，且可在旧版本浏览器中执行。
+
+2.CSS3。CSS3引入了一些动画属性，它由浏览器直接解释执行。这种方式执行效率很高，但需要浏览器本身支持CSS3。并且，有些复杂的动画，可能会超出CSS3的能力范围。
+
+### Animate.css
+
+Animate.css是Daniel Eden使用CSS3的animation制作的动画效果的CSS集合。其官网是：
+
+http://daneden.github.io/animate.css/
+
+教程：
+
+http://www.w3cplus.com/css3/animate-css
+
+## UI控件库
+
+### jQuery UI
+
+这是jQuery官方推出的UI库。官网：
+
+http://jqueryui.com/
+
+### jQuerytools
+
+另一个基于jQuery的UI库。
+
+### YUI
+
+Yahoo User Interface library。这是一个大型的JS工具库，已经停止更新及维护。官网：
+
+http://yuilibrary.com/
 
