@@ -109,6 +109,15 @@ gst-launch-1.0 -v dataurisrc uri="data:image/png;base64,iVBORw0KGgo...." \
 
 3.开源项目Rygel，最近（v0.30.3）放弃使用giosrc。
 
+## GStreamer应用的内存占用情况
+
+场景 | 内存占用
+|:--:|:--:|
+播放本地音频文件 | ～10MB
+播放远程音频文件 | ～25MB
+gmediarender（非播放状态） | 50MB～65MB
+gmediarender（播放状态）| 60MB～85MB
+
 # GStreamer编程
 
 ## 开发环境搭建
@@ -261,6 +270,10 @@ http://www.javascriptkit.com/jsref/
 
 上面两个网址都是Javascript的参考指南，便于查找语法规则和标准函数的用法。
 
+http://www.w3school.com.cn
+
+这是一个中文的参考网站。内容包括HTML、CSS、JS等前端技术，以及其他一些后端技术。
+
 http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000
 
 一个中文入门教程。该作者还编写了Python教程。
@@ -319,7 +332,7 @@ HTML动画一般有两种实现方式：
 
 1.JS。JS脚本通过动态改变HTML、CSS的内容来实现动画效果。这种方式功能全面，且可在旧版本浏览器中执行。
 
-2.CSS3。CSS3引入了一些动画属性，它由浏览器直接解释执行。这种方式执行效率很高，但需要浏览器本身支持CSS3。并且，有些复杂的动画，可能会超出CSS3的能力范围。
+2.CSS3。CSS3引入了一些动画属性，它由浏览器直接解释执行。这种方式执行效率很高，但需要浏览器本身支持CSS3。并且，有些复杂的动画，可能会超出CSS3的能力范围，这时不可避免的还是会用到JS。
 
 ### Animate.css
 
@@ -348,6 +361,4 @@ http://jqueryui.com/
 Yahoo User Interface library。这是一个大型的JS工具库，已经停止更新及维护。官网：
 
 http://yuilibrary.com/
-
-
 

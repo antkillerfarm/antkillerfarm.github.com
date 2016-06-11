@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  在线激活流程研究, lex&yacc, 芯片杂烩
+title:  在线激活流程研究, lex&yacc, 芯片杂烩, HTML & CSS
 category: technology 
 ---
 
@@ -196,3 +196,29 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/mylex
     <td>MAXIM</td>
   </tr>
 </table>
+
+# HTML & CSS
+
+## name、id、class的区别
+
+name、id、class都可以用来标识元素。
+
+name是个普通的属性，一个页面可以有多个相同name的元素。
+
+id在一个页面中是唯一的。但这个唯一性由程序员保证，浏览器并不检查id是否唯一。不唯一的话，相应的JS操作可能会出错。
+
+class允许多个类型的组合，比如`<p class="a b"/>`表示p既属于a类，也属于b类。
+
+## CSS选择器
+
+CSS的语法如下：
+
+selector {property1: value1; property2: value2; ... propertyN: valueN}
+
+其中，CSS选择器用于将样式和内容绑定。常用语法如下：
+
+元素 | 类 | ID | 属性 | 后代 | 子元素 | 相邻兄弟
+p | .p | #p | p[attr] | p0 p1 | p0>p1 | p0+p1
+
+
+
