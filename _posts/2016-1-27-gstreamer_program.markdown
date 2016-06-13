@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GStreamer（二）, Javascript
+title:  GStreamer（二）, Javascript（二）
 category: technology 
 ---
 
@@ -117,6 +117,14 @@ gst-launch-1.0 -v dataurisrc uri="data:image/png;base64,iVBORw0KGgo...." \
 播放远程音频文件 | ～25MB
 gmediarender（非播放状态） | 50MB～65MB
 gmediarender（播放状态）| 60MB～85MB
+
+## audioconvert
+
+audioconvert用于转换不同格式的音频数据。这里的格式指的是位宽、大小端、采样率等格式，而不是音频编解码格式。
+
+如果没有使用audioconvert做转换，可能会导致音频文件在某些设备上无法播放。毕竟设备不可能支持所有的位宽、大小端、采样率。
+
+类似的，还有videoconvert、autoconvert插件。
 
 # GStreamer编程
 
@@ -262,30 +270,6 @@ new_pad_type = new_pad.query_caps(None).to_string()
 
 # Javascript
 
-## 参考指南 & 教程
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
-
-http://www.javascriptkit.com/jsref/
-
-上面两个网址都是Javascript的参考指南，便于查找语法规则和标准函数的用法。
-
-http://www.w3school.com.cn
-
-这是一个中文的参考网站。内容包括HTML、CSS、JS等前端技术，以及其他一些后端技术。
-
-http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000
-
-一个中文入门教程。该作者还编写了Python教程。
-
-http://www.bootcss.com/
-
-这个网站虽然只是Bootstrap的教程网站，然而它首页的项目推荐，几乎涵盖了前端开发所用的各种JS库。
-
-## Javascript和C的互相调用
-
-Javascript本质上是服务器发出的，由客户端执行的脚本。出于安全原因，本地功能比较弱。所谓Javascript和C的互相调用，基本上都依赖于浏览器的实现。比如，在IE中依赖于ActiveX插件，在Firefox中依赖于JSAPI。
-
 ## jslint
 
 http://www.jslint.com/
@@ -310,22 +294,6 @@ https://www.npmjs.com/package/hbs
 
 http://jade-lang.com/
 
-## CDN
-
-CDN的全称是Content Delivery Network，即内容分发网络。这里主要使用它来存储一些通用的JS库，比如JQuery，以达到节省带宽和提高加载速度的目的。
-
-以下是一些国内比较好使的CDN地址：
-
-http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js
-
-http://libs.baidu.com/jquery/1.9.1/jquery.min.js
-
-http://libs.useso.com/js/jquery/1.9.1/jquery.min.js
-
-这里是百度CDN库的说明：
-
-http://developer.baidu.com/wiki/index.php?title=docs/cplat/libs
-
 ## 动画
 
 HTML动画一般有两种实现方式：
@@ -342,7 +310,7 @@ http://daneden.github.io/animate.css/
 
 教程：
 
-http://www.w3cplus.com/css3/animate-css
+http://www.gbtags.com/technology/css/20120812-animate-css/
 
 ## UI控件库
 

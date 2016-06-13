@@ -37,6 +37,10 @@ http://blog.csdn.net/leixiaohua1020/
 
 中国传媒大学雷霄骅博士的blog，专注ffmpeg等的音视频研究。
 
+http://www.uedtech.com/
+
+UED方面的教程网站。
+
 ## 工具软件及其官网
 
 Box2D---www.box2d.org

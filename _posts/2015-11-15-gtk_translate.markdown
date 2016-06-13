@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Transifex与GTK文档翻译, Linux镜像文件, 外设接口杂谈, CSS动画
+title:  Transifex与GTK文档翻译, Linux镜像文件, 外设接口杂谈,  Javascript（一）
 category: technology 
 ---
 
@@ -222,46 +222,44 @@ I2C相比于UART和SPI，其优点在于一个接口可以外接多个设备（�
 
 SMBus(System Management Bus,系统管理总线)是1995年由Intel提出的，应用于移动PC和桌面PC系统中的低速率通讯总线。由于它大部分基于I2C总线规范，因此在Linux内核中，被归类为I2C总线。
 
-# CSS动画
+# Javascript
 
-### Step1：事件触发动画
+## 参考指南 & 教程
 
-网上的CSS动画例子，多数是加载网页时直接触发（这种最简单），少部分是鼠标移动到控件上时触发（这种方式主要使用了:hover选择器）。
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
 
-这里介绍一下，click事件触发动画的机制。示例代码：
+http://www.javascriptkit.com/jsref/
 
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/hello/super_button.html
+上面两个网址都是Javascript的参考指南，便于查找语法规则和标准函数的用法。
 
-1.在sb.css中，自定义按钮旋转动画的样式rotate_mill。
+http://www.w3school.com.cn
 
-2.在click事件处理函数中，使用addClass函数，将rotate_mill应用到控件上，就可以触发动画效果。
+这是一个中文的参考网站。内容包括HTML、CSS、JS等前端技术，以及其他一些后端技术。
 
-3.动画结束时，会触发AnimationEnd事件。在该事件处理函数中，使用removeClass函数，去掉rotate_mill样式，以恢复原状。否则，下次click时，由于样式没变化，就不会触发动画效果了。
+http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000
 
-4.和AnimationEnd类似的事件，还有AnimationIteration和AnimationStart。
+一个中文入门教程。该作者还编写了Python教程。
 
-## Step2：回调函数嵌套问题
+http://www.bootcss.com/
 
-在上面的例子中，所有的button都是同步动画的。如果想要一个接着一个播放动画的话。一种思路就是：在上一个动画的AnimationEnd事件处理函数中，启动下一个动画。但这种方法会导致回调函数的嵌套问题。
+这个网站虽然只是Bootstrap的教程网站，然而它首页的项目推荐，几乎涵盖了前端开发所用的各种JS库。
 
-首先需要明确一点：回调嵌套并没有执行效率的问题。JS脚本都是单线程执行的，因此无论采用何种写法，都不会改变函数的执行顺序。回调嵌套的问题主要出在可读性方面。
+## Javascript和C的互相调用
 
-回调嵌套的解决方法有三种：
+Javascript本质上是服务器发出的，由客户端执行的脚本。出于安全原因，本地功能比较弱。所谓Javascript和C的互相调用，基本上都依赖于浏览器的实现。比如，在IE中依赖于ActiveX插件，在Firefox中依赖于JSAPI。
 
-1.使用Promise。
+## CDN
 
-2.使用Generator。
+CDN的全称是Content Delivery Network，即内容分发网络。这里主要使用它来存储一些通用的JS库，比如JQuery，以达到节省带宽和提高加载速度的目的。
 
-3.使用递归函数。
+以下是一些国内比较好使的CDN地址：
 
-虽然JS递归函数的例子在教程中不太多，但和C语言类似，JS也拥有定义递归函数的能力，且语法也和C类似。这里使用递归函数解决回调嵌套的问题，代码在：
+http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js
 
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/hello/super_button2.html
+http://libs.baidu.com/jquery/1.9.1/jquery.min.js
 
-## Step3:延迟动画
+http://libs.useso.com/js/jquery/1.9.1/jquery.min.js
 
-除了Step2的办法之外，还可以用设置延迟属性animation-delay的办法，设定动画的播放次序。这种方法的灵活性超过前种方法，但控制难度较高，需要通过公式计算各动画的起始时间，以达到正确的效果。示例代码：
+这里是百度CDN库的说明：
 
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/hello/super_button3.html
-
-
+http://developer.baidu.com/wiki/index.php?title=docs/cplat/libs

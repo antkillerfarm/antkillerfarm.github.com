@@ -217,7 +217,7 @@ apt是一套完整的软件包管理方案。除了最常用apt-get之外，还�
 
 1.ubuntu tweak
 
-一个国内小伙写的工具。官网：
+一个国内小伙写的工具。(2016.5停止更新，不支持Ubuntu 16.04以上的版本。)官网：
 
 http://ubuntu-tweak.com/
 
@@ -335,22 +335,4 @@ Office | MS Office | LibreOffice
 流程图 | MS Visio | DIA、Kivio
 思维导图 | Mindmanager | FreeMind
 快速原型 | Axure RP | pencil
-
-# 发行版乱战
-
-Linux以发行版众多闻名于世。最近发现了以下网站，或可对各个发行版进行一个简单的比较。
-
-http://distrowatch.com/
-
-下面对几个主要的参数，进行一下点评：
-
-## Office
-
-主要是3个流派：
-
-1.StarOffice->OpenOffice.org->LibreOffice。最初由Sun主导，后来改为Google主导。
-
-2.KOffice->Calligra Office。KDE项目的成果。
-
-3.GOffice。Gnome项目的成果，和前两个相比，GOffice的组件比较独立，没有什么协同能力。
 

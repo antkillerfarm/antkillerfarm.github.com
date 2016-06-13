@@ -301,3 +301,36 @@ Ubuntu 16.04正式发布（2016.4.21）之后，我第一时间下载了下来�
 
 `sudo apt-get remove gvfs-backends`
 
+## 清理系统
+
+### 清理安装包
+
+`sudo apt-get clean`
+
+### 清理旧内核
+
+1.首先查看旧内核情况
+
+`dpkg --get-selections | grep linux`
+
+2.删除旧内核
+
+`sudo apt-get purge linux-image-4.4.0-21-generic linux-headers-4.4.0-21`
+
+# 发行版乱战
+
+Linux以发行版众多闻名于世。最近发现了以下网站，或可对各个发行版进行一个简单的比较。
+
+http://distrowatch.com/
+
+下面对几个主要的参数，进行一下点评：
+
+## Office
+
+主要是3个流派：
+
+1.StarOffice->OpenOffice.org->LibreOffice。最初由Sun主导，后来改为Google主导。
+
+2.KOffice->Calligra Office。KDE项目的成果。
+
+3.GOffice。Gnome项目的成果，和前两个相比，GOffice的组件比较独立，没有什么协同能力。
