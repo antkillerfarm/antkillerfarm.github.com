@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Raspberry Pi, CSS动画
+title:  Raspberry Pi, UPNP（二）
 category: technology 
 ---
 
@@ -207,55 +207,38 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/other/vncserver
 
 默认的hostname是raspberrypi。将/etc/hostname和/etc/hosts中的相应字段，改成你想要的名字，保存重启即可。
 
-# CSS动画
+# UPNP（二）
 
-### Step1：事件触发动画
+# 自制的Control Point示例
 
-网上的CSS动画例子，多数是加载网页时直接触发（这种最简单），少部分是鼠标移动到控件上时触发（这种方式主要使用了:hover选择器）。
+## 概述
 
-这里介绍一下，click事件触发动画的机制。示例代码：
+和gmediarender相比，libupnp的sample写的并不好。这主要体现在以下方面：
 
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/hello/super_button.html
+1.封装的层次太多。虽然这样一来，main函数看起来很简单，细节都被隐藏了起来。但隐藏的先决条件，是对用户使用的透明。而sample显然做不到这一点，于是，用户扩展业务功能的时候，还要翻越层层封装，才能找到需要修改的地方。
 
-1.在sb.css中，自定义按钮旋转动画的样式rotate_mill。
+2.使用不方便。设备功能的XML描述文件居然是写死的，扩展极为不易。（gmediarender的XML描述文件是动态生成的。）
 
-2.在click事件处理函数中，使用addClass函数，将rotate_mill应用到控件上，就可以触发动画效果。
+针对这些问题，我打算模仿gmediarender的写法，做一个Control Point的示例。
 
-3.动画结束时，会触发AnimationEnd事件。在该事件处理函数中，使用removeClass函数，去掉rotate_mill样式，以恢复原状。否则，下次click时，由于样式没变化，就不会触发动画效果了。
+其代码重构的核心是：将用户需要扩展的业务功能，抽象为数据结构，并将这些数据结构的内容定义放在一起，以便于用户的修改。换句话说，用户只需要修改数组的内容，而不必修改代码，即可扩展业务功能。
 
-4.和AnimationEnd类似的事件，还有AnimationIteration和AnimationStart。
+在功能上，为了使这个示例更有意义，这里选择gmediarender作为和示例配套的Device程序。因为，gmediarender实现的是一个有实用价值的协议规范，而非demo，所需处理的情况也比demo复杂的多。
 
-## Step2：回调函数嵌套问题
+## Step 1
 
-在上面的例子中，所有的button都是同步动画的。如果想要一个接着一个播放动画的话。一种思路就是：在上一个动画的AnimationEnd事件处理函数中，启动下一个动画。但这种方法会导致回调函数的嵌套问题。
+这次，我打算从头开始搭建Control Point示例。也就是从main函数出发，逐步完善相关功能。这一步的代码在：
 
-首先需要明确一点：回调嵌套并没有执行效率的问题。JS脚本都是单线程执行的，因此无论采用何种写法，都不会改变函数的执行顺序。回调嵌套的问题主要出在可读性方面。
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/upnp/step1
 
-回调嵌套的解决方法有三种：
+该程序主要实现：
 
-1.使用Promise。
+1.基本框架。包括初始化和注册Control Point。
 
-2.使用Generator。
+2.通过SSDP的搜索功能，搜索网络设备。
 
-3.使用递归函数。
+## Step 2
 
-虽然JS递归函数的例子在教程中不太多，但和C语言类似，JS也拥有定义递归函数的能力，且语法也和C类似。这里使用递归函数解决回调嵌套的问题，代码在：
+这一步的代码在：
 
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/hello/super_button2.html
-
-## Step3:延迟动画
-
-除了Step2的办法之外，还可以用设置延迟属性animation-delay的办法，设定动画的播放次序。这种方法的灵活性超过前种方法，但控制难度较高，需要通过公式计算各动画的起始时间，以达到正确的效果。示例代码：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/hello/super_button3.html
-
-这里还解决了Step2的一个Bug。在Step2中，每点击一次按钮，就会添加一次AnimationEnd事件处理函数，但是新添加的函数并不会覆盖原来的事件处理函数。而是在原来的事件处理函数之后，执行新添加的事件处理函数。利用console.log可以很容易的确认这一点。
-
-因此，AnimationEnd事件处理函数仅需要在开始时，添加一次即可。
-
-Step3还添加了fadeOutLeft动画，为了在两种动画之间切换，引入了全局变量flag，作为状态变量。
-
-由于JS事件处理函数，不能传递参数。因此，也就不能很方便的将动画开始播放时的flag值传递过去，留待动画结束时使用。所以，flag值只有在所有动画都结束之后，才能改变。
-
-这里通过添加引用计数的方法，来判定所有动画是否都已结束。不用担心引用计数的临界问题，因为JS是单线程执行的。
-
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/upnp/step2

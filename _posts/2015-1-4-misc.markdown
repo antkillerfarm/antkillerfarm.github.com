@@ -154,7 +154,11 @@ modules在/usr/lib/apache2下。
 
 3.如果需要缩放的话，调整保存的大小即可。
 
-## 内存数据库
+## Visio画各种括号(大括号，中括号等)
+
+依次点击“文件(File)”->“形状(Shapes)”->“其他Visio方案(Visio Extras)”->“标注(Callouts)”即可。
+
+# 内存数据库
 
 如GemFire。
 
