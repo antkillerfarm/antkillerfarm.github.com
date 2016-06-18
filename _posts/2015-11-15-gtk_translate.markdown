@@ -263,3 +263,21 @@ http://libs.useso.com/js/jquery/1.9.1/jquery.min.js
 这里是百度CDN库的说明：
 
 http://developer.baidu.com/wiki/index.php?title=docs/cplat/libs
+
+## Template Engine
+
+![](/images/article/web.png)
+
+在传统的Web开发模式中，HTML文件由CGI负责生成。然而生成HTML文件本身，就是一件麻烦事。纯用printf之类的方式，显然是一件费时费力的工作。
+
+这时，就需要Template Engine来加速这个过程。Template Engine会将Template Text转换成HTML。因此，只要Template Text的文法比HTML简单，则这个转换就是有意义的。
+
+Template Engine有很多种。例如：
+
+### hbs
+
+https://www.npmjs.com/package/hbs
+
+### jade
+
+http://jade-lang.com/

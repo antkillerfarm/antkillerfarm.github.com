@@ -260,6 +260,10 @@ https://github.com/mikebrady/shairport-sync
 
 这个分支添加了多设备音频流同步方面的内容。
 
+参考：
+
+http://raspberrypihq.com/how-to-turn-your-raspberry-pi-into-a-airplay-receiver-to-stream-music-from-your-iphone/
+
 和DLNA、Airplay类似的协议还有Miracast和腾讯的QPlay，其中的QPlay基本山寨DLNA。
 
 参考文献：

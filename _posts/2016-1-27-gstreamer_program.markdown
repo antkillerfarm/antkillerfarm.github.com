@@ -6,6 +6,18 @@ category: technology
 
 # GStreamer应用（续）
 
+## 多设备的网络时钟同步
+
+多个设备协同播放同一个媒体流的时候，设备之间存在着时钟同步的问题。针对这个问题，GStreamer提供了网络时钟同步的功能。
+
+这个功能主要涉及两个对象：GstNetTimeProvider和GstNetClientClock。前者用于提供时钟源，而后者负责获取时钟源的时钟。
+
+对于更精确的时钟同步，在GStreamer v1.6之后，还提供了GstPtpClock对象。这个对象仅提供了PTP协议的Client功能。
+
+PTP协议相关的规范是IEEE1588:2008。其服务器实现有：
+
+ptpd：http://ptpd.sourceforge.net/
+
 ## TCP远程播放
 
 除了本地播放之外，GStreamer亦支持远程播放。以下仅以TCP远程播放为例。
@@ -125,6 +137,14 @@ audioconvert用于转换不同格式的音频数据。这里的格式指的是�
 如果没有使用audioconvert做转换，可能会导致音频文件在某些设备上无法播放。毕竟设备不可能支持所有的位宽、大小端、采样率。
 
 类似的，还有videoconvert、autoconvert插件。
+
+## 多音箱网络同步播放
+
+http://www.tinylab.org/gstreamer-sdk-a-cross-platform-multimedia-framework/
+
+https://fosdem.org/2016/schedule/event/synchronised_gstreamer/attachments/slides/889/export/events/attachments/synchronised_gstreamer/slides/889/synchronised_multidevice_media_playback_with_GStreamer.pdf
+
+https://github.com/luisbg/synchronised_media_playback
 
 # GStreamer编程
 
@@ -276,24 +296,6 @@ http://www.jslint.com/
 
 jslint是一个JavaScript语法的检查工具。
 
-## Template Engine
-
-![](/images/article/web.png)
-
-在传统的Web开发模式中，HTML文件由CGI负责生成。然而生成HTML文件本身，就是一件麻烦事。纯用printf之类的方式，显然是一件费时费力的工作。
-
-这时，就需要Template Engine来加速这个过程。Template Engine会将Template Text转换成HTML。因此，只要Template Text的文法比HTML简单，则这个转换就是有意义的。
-
-Template Engine有很多种。例如：
-
-### hbs
-
-https://www.npmjs.com/package/hbs
-
-### jade
-
-http://jade-lang.com/
-
 ## 动画
 
 HTML动画一般有两种实现方式：
@@ -329,4 +331,8 @@ http://jqueryui.com/
 Yahoo User Interface library。这是一个大型的JS工具库，已经停止更新及维护。官网：
 
 http://yuilibrary.com/
+
+### Other
+
+Bootstrap、Foundation、Semantic UI。
 

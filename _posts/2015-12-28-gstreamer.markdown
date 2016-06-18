@@ -70,9 +70,13 @@ GStreamer提供了一个工具软件集——gstreamer-tools。其安装方法�
 
 `sudo apt-get install gstreamer-tools gstreamer1.0-tools`
 
-具体的工具列表参见
+它包括以下工具：
 
-http://blog.csdn.net/jackyy313/article/details/6275673
+gst-launch：创建GStreamer管道的原型验证工具。它是其中用的最广泛的工具——网上关于GStreamer的问题讨论，多数并不贴出代码，而是给出gst-launch形式的命令。
+
+gst-inspect：用于查询GStreamer插件的相关信息，也非常常用。比如，如果某个媒体文件无法播放，首先使用gst-inspect查询一下相关插件是否正确安装。
+
+其他的还有gst-typefind、gst-xmllaunch、gst-feedback。
 
 注意1.x系列的工具名和0.10.x系列的略有不同，例如`gst-launch`在1.x系列中叫做`gst-launch-1.0`。
 
@@ -113,18 +117,6 @@ gst-launch：这个工具可以用于创建并运行GStreamer管道。下面是�
 4.由于playbin采用了Auto plugging机制，因此类似autodetect、audioconvert之类的auto插件也是必选，否则会导致playbin的工作异常。
 
 此外，当播放某种文件格式失败的时候，可以尝试使用`gst-launch`命令播放，这时的log会比平时多一些，有助于确认问题所在。
-
-## 多设备的网络时钟同步
-
-多个设备协同播放同一个媒体流的时候，设备之间存在着时钟同步的问题。针对这个问题，GStreamer提供了网络时钟同步的功能。
-
-这个功能主要涉及两个对象：GstNetTimeProvider和GstNetClientClock。前者用于提供时钟源，而后者负责获取时钟源的时钟。
-
-对于更精确的时钟同步，在GStreamer v1.6之后，还提供了GstPtpClock对象。这个对象仅提供了PTP协议的Client功能。
-
-PTP协议相关的规范是IEEE1588:2008。其服务器实现有：
-
-ptpd：http://ptpd.sourceforge.net/
 
 ## 播放ape文件
 

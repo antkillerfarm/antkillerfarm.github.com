@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  网络杂谈, Camera, Ubuntu使用技巧（二）, Fedora
+title:  网络杂谈, Fedora, Ubuntu使用技巧（二）
 category: technology 
 ---
 
@@ -179,51 +179,6 @@ WPS分为PBC(BUTTON)和PIN两种方式
 
 输入完PIN码后,点下一步,一会儿后,WPS安全连接成功建立。
 
-# Camera
-
-常见的Camera从软件角度，可分为三类：
-
-1.Soc Camera。
-
-2.USB Camera。
-
-3.IP Camera。
-
-其中，前两类设备需要相关的驱动程序。Linux内核配置方法如下：
-
-{% highlight text %}
-Device Drivers --->
-    <*> Multimedia support --->
-    [*]   Cameras/video grabbers support
-    [*]   Media USB Adapters  --->
-        <*>   USB Video Class (UVC)
-        <*>   GSPCA based webcams  --->  
-    [*]   V4L platform devices  --->
-        <*>   SoC camera support
-{% endhighlight %}
-
-UVC是Microsoft与另外几家设备厂商联合推出的为USB视频捕获设备定义的协议标准，目前已成为USB org标准之一。
-
-GSPCA同样是一种标准，早期的很多摄像头用的就是这一标准。
-
-这两类设备的应用层接口为V4L2。教程可参见：
-
-http://blog.csdn.net/mmz_xiaokong/article/details/5666993
-
-对于UVC设备，可以用相关工具直接获取图像。常用的工具有：
-
-GTK+ UVC Viewer
-
-http://guvcview.sourceforge.net/
-
-luvcview
-
-https://github.com/ksv1986/luvcview
-
-IP Camera无须驱动，只要提供网口就行了。有的设备支持wifi，连网口也省了。
-
-IP Camera的应用层接口一般为网络协议接口，如TCP/IP、HTTP、RTP/RTSP等。
-
 # Fedora
 
 Fedora作为主要的Linux发行版之一，我虽然用的不多，但实际上这却是我最早接触的Linux发行版。后来换用Ubuntu，很大的原因是因为：这是Google为Android选择的开发平台。
@@ -317,6 +272,54 @@ Ubuntu 16.04正式发布（2016.4.21）之后，我第一时间下载了下来�
 
 `sudo apt-get purge linux-image-4.4.0-21-generic linux-headers-4.4.0-21`
 
+## Graphviz
+
+Graphviz是一个绘“图”软件。这里的“图”不是指一般意义上的图片或者照片，而是指数据结构或者图论中的抽象意义上的数学概念中的“图”。Graphviz就是一个用来将“图”可视化的工具集。
+
+官网：
+
+http://graphviz.org/
+
+源代码：
+
+https://github.com/ellson/graphviz/
+
+安装方法：
+
+`sudo apt-get install graphviz graphviz-dev`
+
+其中，后者是graphviz的开发工具包，便于其他软件集成graphviz的相关功能。
+
+graphviz包括了以下工具：
+
+### 图形生成类
+
+按照布局方式的不同，包括circo、dot、fdp、neato、osage、sfdp、twopi等命令。例如：
+
+`dot -Tpng hello.gv -o hello.png`
+
+该命令将hello.gv按照dot布局方式输出成png文件。
+
+### 图形查看类
+
+1.xdot
+
+`sudo apt-get install xdot`
+
+这个工具功能简单，只能按照dot布局方式查看文件。
+
+2.kgraphviewer
+
+`sudo apt-get install kgraphviewer-dev`
+
+这个工具可以选择查看的布局方式。
+
+### 编辑类
+
+包括leftty、dotty，界面丑陋，并不好用。
+
+还有个叫smyrna的工具，据称使用3D加速，可处理10000个结点的图。但是ubuntu下没有方便的安装方式。
+
 # 发行版乱战
 
 Linux以发行版众多闻名于世。最近发现了以下网站，或可对各个发行版进行一个简单的比较。
@@ -334,3 +337,4 @@ http://distrowatch.com/
 2.KOffice->Calligra Office。KDE项目的成果。
 
 3.GOffice。Gnome项目的成果，和前两个相比，GOffice的组件比较独立，没有什么协同能力。
+

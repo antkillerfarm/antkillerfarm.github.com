@@ -342,37 +342,36 @@ gmediarender的URI主要有两个即uri和next_uri。在pipeline的about-to-fini
 
 http://www.nongnu.org/gmediaserver/
 
-# upnp-inspector
+# 自制的Control Point示例
 
-upnp-inspector是一个局域网内的UPNP协议的嗅探分析器。可充当DMC，推送多媒体数据到相关DLNA设备。安装方法如下：
+## 概述
 
-`sudo apt-get install upnp-inspector`
+和gmediarender相比，libupnp的sample写的并不好。这主要体现在以下方面：
 
-upnp-inspector的功能包括：
+1.封装的层次太多。虽然这样一来，main函数看起来很简单，细节都被隐藏了起来。但隐藏的先决条件，是对用户使用的透明。而sample显然做不到这一点，于是，用户扩展业务功能的时候，还要翻越层层封装，才能找到需要修改的地方。
 
-1.列出局域网内的UPNP设备。
+2.使用不方便。设备功能的XML描述文件居然是写死的，扩展极为不易。（gmediarender的XML描述文件是动态生成的。）
 
-2.列出UPNP设备所支持的UPNP服务。
+针对这些问题，我打算模仿gmediarender的写法，做一个Control Point的示例。
 
-3.列出UPNP服务所支持的函数，并可发送相关函数。（左键双击树状列表中的函数名即可）
+其代码重构的核心是：将用户需要扩展的业务功能，抽象为数据结构，并将这些数据结构的内容定义放在一起，以便于用户的修改。换句话说，用户只需要修改数组的内容，而不必修改代码，即可扩展业务功能。
 
-upnp-inspector是coherence的一部分。后者是一个Python语言写的DLNA框架。它的官网：
+在功能上，为了使这个示例更有意义，这里选择gmediarender作为和示例配套的Device程序。因为，gmediarender实现的是一个有实用价值的协议规范，而非demo，所需处理的情况也比demo复杂的多。
 
-http://coherence-project.org/
+## Step 1
 
-upnp-inspector的代码地址：
+这次，我打算从头开始搭建Control Point示例。也就是从main函数出发，逐步完善相关功能。这一步的代码在：
 
-https://github.com/coherence-project/UPnP-Inspector
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/upnp/step1
 
-# libmcupnp
+该程序主要实现：
 
-libmcupnp是一个基于libupnp的Control Point实现，用C++写的。从代码来看，明显参考了libupnp里的demo示例。
+1.基本框架。包括初始化和注册Control Point。
 
-https://sourceforge.net/projects/libmcupnp/
+2.通过SSDP的搜索功能，搜索网络设备。
 
-# gupnp
+## Step 2
 
-这是GNOME项目的upnp库，使用libsoup处理HTTP，libxml处理XML。它的官网是：
+这一步的代码在：
 
-https://wiki.gnome.org/Projects/GUPnP
-
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/upnp/step2
