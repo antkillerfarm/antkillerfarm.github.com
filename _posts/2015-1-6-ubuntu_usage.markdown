@@ -213,6 +213,26 @@ apt是一套完整的软件包管理方案。除了最常用apt-get之外，还�
 
 添加新的软件源。
 
+## 软件包的网上查询
+
+使用apt-get获取软件虽然方便，但是从ubuntu的源获得的软件包和直接使用源码编译安装的包相比，包中的各个文件被分散在好多个文件夹中，查找起来很不方便。
+
+这时可以到这个网址：
+
+http://packages.ubuntu.com/
+
+去查找软件包里的文件清单，以弄清楚XX软件官网上所说的YY文件在ubuntu中到底放在哪里。
+
+该网站还可以下载源码包。以libupnp为例，从网上可以下载以下文件：
+
+libupnp_1.6.19+git20160116-1.dsc
+
+libupnp_1.6.19+git20160116.orig.tar.bz2
+
+libupnp_1.6.19+git20160116-1.debian.tar.xz
+
+其中，第二个文件是项目原始的源代码包，而第三个文件是debian项目的patch包。最终使用的代码，实际上是在第二个包上打上patch以后的结果。
+
 # 系统清理工具
 
 1.ubuntu tweak
@@ -322,17 +342,4 @@ Linux下的远程桌面软件主要有RealVNC和rdesktop。前者支持VNC协议
 使用方法：
 
 `rdesktop -u administrator -p ****** -a 16 192.168.1.1`
-
-# 文件校验和
-
-计算文件校验和，一般采用MD5和SHA算法。在Ubuntu中，这些算法的命令包括：md5sum、sha1sum(160-bit) ,sha224sum(224-bit) ,sha256sum(256-bit),sha384sum(384-bit),sha512sum(512-bit)等。
-
-# 产品设计工具
-
-类别 | 收费 | 免费
-|:--:|:--:|:--:|
-Office | MS Office | LibreOffice
-流程图 | MS Visio | DIA、Kivio
-思维导图 | Mindmanager | FreeMind
-快速原型 | Axure RP | pencil
 

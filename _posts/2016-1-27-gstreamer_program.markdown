@@ -12,11 +12,23 @@ category: technology
 
 这个功能主要涉及两个对象：GstNetTimeProvider和GstNetClientClock。前者用于提供时钟源，而后者负责获取时钟源的时钟。
 
+具体实现可参考以下文章：
+
+https://fosdem.org/2016/schedule/event/synchronised_gstreamer/attachments/slides/889/export/events/attachments/synchronised_gstreamer/slides/889/synchronised_multidevice_media_playback_with_GStreamer.pdf
+
+文章中的代码需要GStreamer v1.6以上才可编译。此外，compile文件也需要少许修改方可正常使用。这里给出一个autoconf版的demo：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gstreaamer/tutorials/sync_demo
+
 对于更精确的时钟同步，在GStreamer v1.6之后，还提供了GstPtpClock对象。这个对象仅提供了PTP协议的Client功能。
 
 PTP协议相关的规范是IEEE1588:2008。其服务器实现有：
 
 ptpd：http://ptpd.sourceforge.net/
+
+参考：
+
+http://www.tinylab.org/gstreamer-sdk-a-cross-platform-multimedia-framework/
 
 ## TCP远程播放
 
@@ -137,14 +149,6 @@ audioconvert用于转换不同格式的音频数据。这里的格式指的是�
 如果没有使用audioconvert做转换，可能会导致音频文件在某些设备上无法播放。毕竟设备不可能支持所有的位宽、大小端、采样率。
 
 类似的，还有videoconvert、autoconvert插件。
-
-## 多音箱网络同步播放
-
-http://www.tinylab.org/gstreamer-sdk-a-cross-platform-multimedia-framework/
-
-https://fosdem.org/2016/schedule/event/synchronised_gstreamer/attachments/slides/889/export/events/attachments/synchronised_gstreamer/slides/889/synchronised_multidevice_media_playback_with_GStreamer.pdf
-
-https://github.com/luisbg/synchronised_media_playback
 
 # GStreamer编程
 
