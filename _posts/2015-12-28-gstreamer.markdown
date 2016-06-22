@@ -74,19 +74,17 @@ GStreamer提供了一个工具软件集——gstreamer-tools。其安装方法�
 
 gst-launch：创建GStreamer管道的原型验证工具。它是其中用的最广泛的工具——网上关于GStreamer的问题讨论，多数并不贴出代码，而是给出gst-launch形式的命令。
 
+下面是一个播放mp3文件的示例:
+
+`gst-launch filesrc location=1.mp3 ! mad ! audioconvert ! autoaudiosink`
+
+需要注意的是上面的命令中，`!`两边都要留空格，不然命令会执行错误。
+
 gst-inspect：用于查询GStreamer插件的相关信息，也非常常用。比如，如果某个媒体文件无法播放，首先使用gst-inspect查询一下相关插件是否正确安装。
 
 其他的还有gst-typefind、gst-xmllaunch、gst-feedback。
 
 注意1.x系列的工具名和0.10.x系列的略有不同，例如`gst-launch`在1.x系列中叫做`gst-launch-1.0`。
-
-这里对其中的一些工具，稍作阐述。
-
-gst-launch：这个工具可以用于创建并运行GStreamer管道。下面是一个播放mp3文件的示例:
-
-`gst-launch filesrc location=1.mp3 ! mad ! audioconvert ! autoaudiosink`
-
-需要注意的是上面的命令中，`!`两边都要留空格，不然命令会执行错误。
 
 ## 播放视频
 

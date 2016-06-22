@@ -238,6 +238,24 @@ patch A C #给A打上diff文件得到B
 patch -R B C #B还原为A
 {% endhighlight %}
 
+# 批量patch
+
+## 给目录应用patch。
+
+`patch -p1 <1.patch`
+
+这种情况适合1.patch中包含对多个文件的修改时。
+
+## 批量应用patch
+
+有的时候，patch不是一个patch文件，而是一个目录中的若干个patch文件。这时可用如下办法：
+
+`find . -name "*.patch">1.txt`
+
+`sort 1.txt | xargs cat >2.patch`
+
+`patch -p1 <2.patch`
+
 # bash
 
 ## 查看当前使用的shell

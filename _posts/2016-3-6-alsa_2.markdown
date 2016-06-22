@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ALSA（二）, makefile, Autotools
+title:  ALSA（二）, makefile, Autotools, premake
 category: technology 
 ---
 
@@ -272,6 +272,12 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gtk_browser/cma
 CFLAGS的默认设置是`-g -O2`，可用以下命令修改之：
 
 `./configure CFLAGS="-g -O0"`
+
+或者也可以用`./configure --help`查看支持的编译选项。
+
+比如生成静态链接库，可使用以下命令：
+
+`./configure --enable-shared=no --enable-static=yes`
 
 3.设定so文件的导出符号表
 
