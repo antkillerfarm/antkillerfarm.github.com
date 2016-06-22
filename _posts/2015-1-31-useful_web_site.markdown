@@ -7,10 +7,6 @@ category: technology
 
 ## 教程类
 
-http://packages.ubuntu.com/
-
-使用apt-get获取软件虽然方便，但是从ubuntu的源获得的软件包和直接使用源码编译安装的包相比，包中的各个文件被分散在好多个文件夹中，查找起来很不方便。这时可以到这个网址，去查找软件包里的文件清单，以弄清楚XX软件官网上所说的YY文件在ubuntu中到底放在哪里。
-
 http://softwaredev.blog.sohu.com/105412003.html
 
 C++库大全

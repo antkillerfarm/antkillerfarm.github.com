@@ -220,7 +220,25 @@ $$blackhat(src)=close(src)-src$$
 
 # CSS动画
 
-### Step1：事件触发动画
+## 动画
+
+HTML动画一般有两种实现方式：
+
+1.JS。JS脚本通过动态改变HTML、CSS的内容来实现动画效果。这种方式功能全面，且可在旧版本浏览器中执行。
+
+2.CSS3。CSS3引入了一些动画属性，它由浏览器直接解释执行。这种方式执行效率很高，但需要浏览器本身支持CSS3。并且，有些复杂的动画，可能会超出CSS3的能力范围，这时不可避免的还是会用到JS。
+
+### Animate.css
+
+Animate.css是Daniel Eden使用CSS3的animation制作的动画效果的CSS集合。其官网是：
+
+http://daneden.github.io/animate.css/
+
+教程：
+
+http://www.gbtags.com/technology/css/20120812-animate-css/
+
+## Step1：事件触发动画
 
 网上的CSS动画例子，多数是加载网页时直接触发（这种最简单），少部分是鼠标移动到控件上时触发（这种方式主要使用了:hover选择器）。
 

@@ -114,6 +114,18 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gstreamer/tutor
 
 综上，GStreamer提供的原始的RTP播放，只适合诸如监控之类的媒体格式固定的管道。对于媒体格式不固定的管道，支持的并不好。
 
+## RTP播放状态问题
+
+RTP管道和其他GStreamer管道不同，其PLAYING状态更多表示它可以接收网络发过来的数据，但这个时候是否有数据正在播放，实际上是不得而知的。
+
+解决的办法是：
+
+1.向管道中添加queue组件。queue组件中的overrun、underrun事件可用于指示管道的微观状态。
+
+2.从宏观来看，如果管道处于播放状态，那么underrun事件会不断产生。一旦underrun事件停止产生，那也就表明近期没有数据发过来了，也就是管道处于空闲状态。
+
+一旦发现RTP管道从播放状态进入空闲状态，就要及时重置管道，不然扬声器可能会产生低音量的噪声。这可能和管道中残存的数据有关，原因不详。
+
 ## GStreamer对URI的支持
 
 GStreamer的playbin、uridecodebin插件都可以处理URI，但dataurisrc是个例外，它接收的不是如`http://`或`file://`这样的URI，而是RFC 2397格式的URI，如下所示：
@@ -299,24 +311,6 @@ new_pad_type = new_pad.query_caps(None).to_string()
 http://www.jslint.com/
 
 jslint是一个JavaScript语法的检查工具。
-
-## 动画
-
-HTML动画一般有两种实现方式：
-
-1.JS。JS脚本通过动态改变HTML、CSS的内容来实现动画效果。这种方式功能全面，且可在旧版本浏览器中执行。
-
-2.CSS3。CSS3引入了一些动画属性，它由浏览器直接解释执行。这种方式执行效率很高，但需要浏览器本身支持CSS3。并且，有些复杂的动画，可能会超出CSS3的能力范围，这时不可避免的还是会用到JS。
-
-### Animate.css
-
-Animate.css是Daniel Eden使用CSS3的animation制作的动画效果的CSS集合。其官网是：
-
-http://daneden.github.io/animate.css/
-
-教程：
-
-http://www.gbtags.com/technology/css/20120812-animate-css/
 
 ## UI控件库
 
