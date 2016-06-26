@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  图像处理理论, CSS动画
+title:  图像处理理论, lex&yacc
 category: technology 
 ---
 
@@ -218,83 +218,56 @@ $$blackhat(src)=close(src)-src$$
 
 黑帽运算后的效果图突出了比原图轮廓周围的区域更暗的区域。
 
-# CSS动画
+# lex&yacc （2014.2）
 
-## 动画
+* 前言
 
-HTML动画一般有两种实现方式：
+春节期间，空闲时间较多，于是研究了一下lex和yacc的用法。知道lex和yacc，那还是大四学习编译原理那门课时候的事情了。转眼之间，那已经是十年前的事情了。
 
-1.JS。JS脚本通过动态改变HTML、CSS的内容来实现动画效果。这种方式功能全面，且可在旧版本浏览器中执行。
+编译原理在整个大学期间的专业课中，属于难度比较高的课程。而且如果不是计算机专业的话，基本没有可能学到这门课。当时的课程作业是完成一个支持脚本绘图的软件。其难度即使以我现在的眼光来看，也颇不容易。当时只有少数人能够做出来，但基本上是参考教这门课的老师出的一本教辅书来写的。
 
-2.CSS3。CSS3引入了一些动画属性，它由浏览器直接解释执行。这种方式执行效率很高，但需要浏览器本身支持CSS3。并且，有些复杂的动画，可能会超出CSS3的能力范围，这时不可避免的还是会用到JS。
+这个课程作业之所以复杂，主要在于老师要求词法和语法的分析器都必须要自己编码。如果退一步，可以使用lex和yacc的话，就没有那么困难了。当然这也与大学里以传授理论为主的思想有关，我还是相当认同这一点的。
 
-### Animate.css
+再顺便说一句，lex的作者之一是google的前CEO Eric Schmidt，这是他20岁时，在贝尔实验室的作品。当然，不全是他的功劳。实际上lex和yacc都是贝尔实验室的作品，这从lex效仿yacc的书写风格就能略见一斑。相比而言，yacc的地位和复杂度更为重要些。
 
-Animate.css是Daniel Eden使用CSS3的animation制作的动画效果的CSS集合。其官网是：
+* 前置条件
 
-http://daneden.github.io/animate.css/
+要想研究lex和yacc，除了需要有C语言的基础之外。还需要对正则式和BNF（Backus-Naur Form）有所了解。顺便提一下，John Warner Backus，FORTRAN、ALGOL语言之父，1977年ACM图灵奖得主。他在中学时代居然是个勉强毕业的差生，在大学里换了两次专业，还是一事无成。。。
 
-教程：
+* 教材
 
-http://www.gbtags.com/technology/css/20120812-animate-css/
+LEX & YACC TUTORIAL by Tom Niemann——这本书比较简练，且附有代码，入门级的极品
 
-## Step1：事件触发动画
+Aho, Alfred V., Ravi Sethi and Jeffrey D. Ullman [2006]. Compilers, Prinicples, Techniques and Tools——这本书是编译原理方面的权威作品，堪称编译原理界的TAOCP，不过篇幅太长了。。。
 
-网上的CSS动画例子，多数是加载网页时直接触发（这种最简单），少部分是鼠标移动到控件上时触发（这种方式主要使用了:hover选择器）。
+* 心得
 
-这里介绍一下，click事件触发动画的机制。示例代码：
+lex生成的代码中，最重要的是yylex函数，该函数每匹配一个词，就返回一次。yacc生成的代码中，最重要的是yyparse函数，这个函数调用yylex函数以获得所需要的语法词汇。
 
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/hello/super_button.html
+lex的词法分析，依据用法的不同，可分为三类：
 
-1.在sb.css中，自定义按钮旋转动画的样式rotate_mill。
+1）需要匹配识别的词汇。
 
-2.在click事件处理函数中，使用addClass函数，将rotate_mill应用到控件上，就可以触发动画效果。
+2）需要过滤的词汇。一般是空白、TAB之类的分隔符。
 
-3.动画结束时，会触发AnimationEnd事件。在该事件处理函数中，使用removeClass函数，去掉rotate_mill样式，以恢复原状。否则，下次click时，由于样式没变化，就不会触发动画效果了。
+3）直译的词汇。就是那些lex不处理，也不吃掉，而是直接交给yacc分析的词汇。
 
-4.和AnimationEnd类似的事件，还有AnimationIteration和AnimationStart。
+这三类词汇必须仔细规划，因为被解析的文本中，一旦出现不在上述三类的任何一类中的词汇时，程序就会报错。
 
-## Step2：回调函数嵌套问题
+yacc的BNF中一般都要包括类似下面的语句：
 
-在上面的例子中，所有的button都是同步动画的。如果想要一个接着一个播放动画的话。一种思路就是：在上一个动画的AnimationEnd事件处理函数中，启动下一个动画。但这种方法会导致回调函数的嵌套问题。
+{% highlight c %}
+stmt_list:
+          stmt                  { }
+        | stmt_list stmt        { }
+        ;
+{% endhighlight %}
 
-首先需要明确一点：回调嵌套并没有执行效率的问题。JS脚本都是单线程执行的，因此无论采用何种写法，都不会改变函数的执行顺序。回调嵌套的问题主要出在可读性方面。
+其中stmt表示单个语句的语法目标，而stmt_list则是一系列语句的集合。
 
-回调嵌套的解决方法有三种：
+为什么要添加这一句呢？因为yacc在处理被解析的文本时，如果文本不能最终归结为一个单一的语法目标的时候，程序也会报错。
 
-1.使用Promise。
+代码示例参见：
 
-2.使用Generator。
-
-3.使用递归函数。
-
-虽然JS递归函数的例子在教程中不太多，但和C语言类似，JS也拥有定义递归函数的能力，且语法也和C类似。这里使用递归函数解决回调嵌套的问题，代码在：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/hello/super_button2.html
-
-## Step3:延迟动画
-
-除了Step2的办法之外，还可以用设置延迟属性animation-delay的办法，设定动画的播放次序。这种方法的灵活性超过前种方法，但控制难度较高，需要通过公式计算各动画的起始时间，以达到正确的效果。示例代码：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/hello/super_button3.html
-
-这里还解决了Step2的一个Bug。在Step2中，每点击一次按钮，就会添加一次AnimationEnd事件处理函数，但是新添加的函数并不会覆盖原来的事件处理函数。而是在原来的事件处理函数之后，执行新添加的事件处理函数。利用console.log可以很容易的确认这一点。
-
-因此，AnimationEnd事件处理函数仅需要在开始时，添加一次即可。
-
-Step3还添加了fadeOutLeft动画，为了在两种动画之间切换，引入了全局变量flag，作为状态变量。
-
-由于JS事件处理函数，不能传递参数。因此，也就不能很方便的将动画开始播放时的flag值传递过去，留待动画结束时使用。所以，flag值只有在所有动画都结束之后，才能改变。
-
-这里通过添加引用计数的方法，来判定所有动画是否都已结束。不用担心引用计数的临界问题，因为JS是单线程执行的。
-
-此外，还要注意display和opacity的差异，前者如果不显示了，就会彻底消失，而后者不显示时，仍然还会占据它原来所在的位置。
-
-## JS细节
-
-# `onclick`与`href='javascript:function()'`
-
-1.onclick事件会比href属性先执行。
-
-2.`<a href="javascript:void(0);" onclick="function()"></a>`或者`<a href="javascript:;" onclick="function()"></a>`表示这个链接不跳转，而执行一段js脚本。
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/mylex
 

@@ -1,34 +1,10 @@
 ---
 layout: post
-title:  GStreamer（二）, Javascript（二）
+title:  GStreamer（二）
 category: technology 
 ---
 
 # GStreamer应用（续）
-
-## 多设备的网络时钟同步
-
-多个设备协同播放同一个媒体流的时候，设备之间存在着时钟同步的问题。针对这个问题，GStreamer提供了网络时钟同步的功能。
-
-这个功能主要涉及两个对象：GstNetTimeProvider和GstNetClientClock。前者用于提供时钟源，而后者负责获取时钟源的时钟。
-
-具体实现可参考以下文章：
-
-https://fosdem.org/2016/schedule/event/synchronised_gstreamer/attachments/slides/889/export/events/attachments/synchronised_gstreamer/slides/889/synchronised_multidevice_media_playback_with_GStreamer.pdf
-
-文章中的代码需要GStreamer v1.6以上才可编译。此外，compile文件也需要少许修改方可正常使用。这里给出一个autoconf版的demo：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gstreaamer/tutorials/sync_demo
-
-对于更精确的时钟同步，在GStreamer v1.6之后，还提供了GstPtpClock对象。这个对象仅提供了PTP协议的Client功能。
-
-PTP协议相关的规范是IEEE1588:2008。其服务器实现有：
-
-ptpd：http://ptpd.sourceforge.net/
-
-参考：
-
-http://www.tinylab.org/gstreamer-sdk-a-cross-platform-multimedia-framework/
 
 ## TCP远程播放
 
@@ -113,6 +89,34 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gstreamer/tutor
 4.clock-rate似乎不能设置为90000之外的值，否则无法播放，原因不详。
 
 综上，GStreamer提供的原始的RTP播放，只适合诸如监控之类的媒体格式固定的管道。对于媒体格式不固定的管道，支持的并不好。
+
+## 多设备的网络时钟同步
+
+多个设备协同播放同一个媒体流的时候，设备之间存在着时钟同步的问题。针对这个问题，GStreamer提供了网络时钟同步的功能。
+
+这个功能主要涉及两个对象：GstNetTimeProvider和GstNetClientClock。前者用于提供时钟源，而后者负责获取时钟源的时钟。
+
+具体实现可参考以下文章：
+
+https://fosdem.org/2016/schedule/event/synchronised_gstreamer/attachments/slides/889/export/events/attachments/synchronised_gstreamer/slides/889/synchronised_multidevice_media_playback_with_GStreamer.pdf
+
+文章中的代码需要GStreamer v1.6以上才可编译。此外，compile文件也需要少许修改方可正常使用。这里给出一个autoconf版的demo：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gstreaamer/tutorials/sync_demo
+
+对于更精确的时钟同步，在GStreamer v1.6之后，还提供了GstPtpClock对象。这个对象仅提供了PTP协议的Client功能。
+
+PTP协议相关的规范是IEEE1588:2008。其服务器实现有：
+
+ptpd：http://ptpd.sourceforge.net/
+
+参考：
+
+http://www.tinylab.org/gstreamer-sdk-a-cross-platform-multimedia-framework/
+
+这篇文档提到queue可通过设置缓存大小，来达到延迟播放的效果，但实际上，并没有这个效果，原因不详。
+
+最简单的多设备协同播放，可使用一主多从式的RTP分发管道。需要注意的是，主设备不要使用本地解码管道，而要和从设备一样使用RTP传输播放管道（也就是自己发自己收），否则它和从设备之间会有播放不同步的情况发生。
 
 ## RTP播放状态问题
 
@@ -303,34 +307,4 @@ new_pad_type = new_pad.query_caps(None).to_string()
 {% endhighlight %}
 
 从这里也可以看出，gst_parse_launch会自动处理媒体流的格式匹配问题，而使用普通函数的时候，必须自己编程处理格式匹配的问题。
-
-# Javascript
-
-## jslint
-
-http://www.jslint.com/
-
-jslint是一个JavaScript语法的检查工具。
-
-## UI控件库
-
-### jQuery UI
-
-这是jQuery官方推出的UI库。官网：
-
-http://jqueryui.com/
-
-### jQuerytools
-
-另一个基于jQuery的UI库。
-
-### YUI
-
-Yahoo User Interface library。这是一个大型的JS工具库，已经停止更新及维护。官网：
-
-http://yuilibrary.com/
-
-### Other
-
-Bootstrap、Foundation、Semantic UI。
 

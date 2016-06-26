@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  硬件杂谈, NPM
+title:  硬件杂谈
 category: technology 
 ---
 
@@ -159,30 +159,3 @@ NorFLASH使用方便，易于连接，可以在芯片上直接运行代码，稳
 
 NandFLASH强调更高的性能，更低的成本，更小的体积，更长的使用寿命。这使NandFLASH很擅于存储纯资料或数据等，在嵌入式系统中用来支持文件系统。NandFLASH存在坏块问题。
 
-# NPM
-
-npm是node.js的软件包管理工具。它的官网是：
-
-https://www.npmjs.com/
-
-可用于搜索有用的软件包，避免重复造轮子。
-
-npm有两种安装方式：
-
-1.本地安装。
-
-`npm install xxx`
-
-这种方式下，相关依赖库被放到安装目录的node_modules文件夹下。
-
-2.全局安装。
-
-`sudo npm install -g xxx`
-
-这种方式下，相关依赖库被放到/usr/local/lib/node_modules下。
-
-普通的包管理工具，一般一个模块只有一个副本，但npm不是这样。比如，A和B都用到了C，那么npm安装之后，A和B的node_modules下都能找到C，无论是本地安装，还是全局安装。
-
-这样做的优点在于，A和B可以使用C的不同版本，且互不影响，缺点是占用的空间过大。
-
-然而也不用太过担心空间问题，npm有cache功能。下载的npm包放在~/.npm下，且每个包只有一份。所以暂时不用的工程，把node_modules删掉就行了。再次安装时，由于不用下载文件，速度还是非常快的。

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Transifex与GTK文档翻译, Linux镜像文件, 外设接口杂谈,  Javascript（一）
+title:  Transifex与GTK文档翻译, Linux镜像文件, 外设接口杂谈
 category: technology 
 ---
 
@@ -116,6 +116,14 @@ http://docs.transifex.com/client/
 
 这里不知是否存在bug，有的时候这个命令需要运行两次，第1次失败，第2次就可以看到最终的文档了。
 
+# GLib的Socket操作
+
+示例如下：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/glib/network
+
+需要注意的是，此例中Server端采用的是阻塞式操作，因此会将main loop阻塞住。如果main loop需要处理其他事件的话，这里可使用GThreadedSocketService启动单独的线程，处理之。
+
 # Linux镜像文件
 
 ## vmlinux
@@ -221,63 +229,3 @@ I2C相比于UART和SPI，其优点在于一个接口可以外接多个设备（�
 ## SMBus
 
 SMBus(System Management Bus,系统管理总线)是1995年由Intel提出的，应用于移动PC和桌面PC系统中的低速率通讯总线。由于它大部分基于I2C总线规范，因此在Linux内核中，被归类为I2C总线。
-
-# Javascript
-
-## 参考指南 & 教程
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
-
-http://www.javascriptkit.com/jsref/
-
-上面两个网址都是Javascript的参考指南，便于查找语法规则和标准函数的用法。
-
-http://www.w3school.com.cn
-
-这是一个中文的参考网站。内容包括HTML、CSS、JS等前端技术，以及其他一些后端技术。
-
-http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000
-
-一个中文入门教程。该作者还编写了Python教程。
-
-http://www.bootcss.com/
-
-这个网站虽然只是Bootstrap的教程网站，然而它首页的项目推荐，几乎涵盖了前端开发所用的各种JS库。
-
-## Javascript和C的互相调用
-
-Javascript本质上是服务器发出的，由客户端执行的脚本。出于安全原因，本地功能比较弱。所谓Javascript和C的互相调用，基本上都依赖于浏览器的实现。比如，在IE中依赖于ActiveX插件，在Firefox中依赖于JSAPI。
-
-## CDN
-
-CDN的全称是Content Delivery Network，即内容分发网络。这里主要使用它来存储一些通用的JS库，比如JQuery，以达到节省带宽和提高加载速度的目的。
-
-以下是一些国内比较好使的CDN地址：
-
-http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js
-
-http://libs.baidu.com/jquery/1.9.1/jquery.min.js
-
-http://libs.useso.com/js/jquery/1.9.1/jquery.min.js
-
-这里是百度CDN库的说明：
-
-http://developer.baidu.com/wiki/index.php?title=docs/cplat/libs
-
-## Template Engine
-
-![](/images/article/web.png)
-
-在传统的Web开发模式中，HTML文件由CGI负责生成。然而生成HTML文件本身，就是一件麻烦事。纯用printf之类的方式，显然是一件费时费力的工作。
-
-这时，就需要Template Engine来加速这个过程。Template Engine会将Template Text转换成HTML。因此，只要Template Text的文法比HTML简单，则这个转换就是有意义的。
-
-Template Engine有很多种。例如：
-
-### hbs
-
-https://www.npmjs.com/package/hbs
-
-### jade
-
-http://jade-lang.com/
