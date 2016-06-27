@@ -130,6 +130,8 @@ RTP管道和其他GStreamer管道不同，其PLAYING状态更多表示它可以�
 
 一旦发现RTP管道从播放状态进入空闲状态，就要及时重置管道，不然扬声器可能会产生低音量的噪声。这可能和管道中残存的数据有关，原因不详。
 
+简单的将管道设置为NULL，再设为PLAYING的方式，可以消除噪声
+
 ## GStreamer对URI的支持
 
 GStreamer的playbin、uridecodebin插件都可以处理URI，但dataurisrc是个例外，它接收的不是如`http://`或`file://`这样的URI，而是RFC 2397格式的URI，如下所示：

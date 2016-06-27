@@ -37,6 +37,10 @@ http://www.uedtech.com/
 
 UED方面的教程网站。
 
+https://github.com/HQarroum/awesome-iot
+
+一个物联网方面的资料汇总。
+
 ## 工具软件及其官网
 
 Box2D---www.box2d.org

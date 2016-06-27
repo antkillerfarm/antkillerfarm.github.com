@@ -6,6 +6,14 @@ category: technology
 
 # 图像处理理论
 
+## 灰度化
+
+以RGB格式的彩图为例，通常灰度化采用的方法主要有：
+
+方法1：$$Gray=(R+G+B)/3$$
+
+方法2：$$Gray=0.299R+0.587G+0.114B$$（这种参数考虑到了人眼的生理特点）
+
 ## 对比度和亮度
 
 $$
@@ -66,7 +74,7 @@ $$f\ast h=f\bigotimes rot180(h)$$
 
 ## 方框滤波（Box Filter）
 
-$$h=\alpha
+$$g=f\bigotimes h,h=\alpha
 \begin{bmatrix}
      1 & 1 & 1 & \cdots & 1 \\
      1 & 1 & 1 & \cdots & 1 \\
@@ -114,17 +122,17 @@ $$f(x,y)=\frac{1}{2\pi}e^{-\frac{x^2+y^2}{2}}=f(x)f(y)$$
 
 [正态分布的前世今生](http://www.52nlp.cn/%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83%E7%9A%84%E5%89%8D%E4%B8%96%E4%BB%8A%E7%94%9F%E4%B8%80)
 
-标准正态分布的最佳逼近符合杨辉三角，比如一个具有5个点的一维正态分布的最佳逼近为：
+标准正态分布的最佳逼近符合杨辉三角，比如一个具有5个点的一维标准正态分布的最佳逼近为：
 
 $$\left[ \begin{array}{ccccc} 1&4&6&4&1\end{array} \right]$$
 
 同理，最常用的3*3高斯滤波h矩阵为：
 
-$$\left[ \begin{array}{ccc} 1&1&1\\ 1&2&1 \\ 1&1&1\end{array} \right]$$
+$$\left[\begin{array}{c} 1\\2\\1\end{array} \right]\times \left[\begin{array}{ccc} 1&2&1\end{array} \right]=\left[\begin{array}{ccc} 1&2&1\\ 2&4&2 \\ 1&2&1\end{array} \right]$$
 
 其归一化形式为：
 
-$$\left[ \begin{array}{ccc} 0.1&0.1&0.1\\ 0.1&0.2&0.1 \\ 0.1&0.1&0.1\end{array} \right]$$
+$$\left[\begin{array}{ccc} 0.0625&0.125&0.0625\\ 0.125&0.25&0.125 \\ 0.0625&0.125&0.0625\end{array}\right]$$
 
 从效果来说，高斯滤波可产生类似毛玻璃的效果。
 
@@ -217,6 +225,16 @@ $$tophat(src)=src-open(src)$$
 $$blackhat(src)=close(src)-src$$
 
 黑帽运算后的效果图突出了比原图轮廓周围的区域更暗的区域。
+
+效果如下：
+
+![](/images/article/morphology.png)
+
+## 边缘检测算子
+
+### Roberts算子
+
+
 
 # lex&yacc （2014.2）
 
