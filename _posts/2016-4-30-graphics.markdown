@@ -44,7 +44,7 @@ $$U(A,2)$$的定义如下：
 
 相关（Correlation)算子
 
-$$g=f\bigotimes h$$
+$$g=f\otimes h$$
 
 的定义为：
 
@@ -68,13 +68,13 @@ $$g(i,j)=\sum_{k,l}f(i-k,j-l)h(k,l)$$
 
 显然
 
-$$f\ast h=f\bigotimes rot180(h)$$
+$$f\ast h=f\otimes rot180(h)$$
 
 其中，rotN表示将矩阵元素绕中心逆时针旋转N度，显然这里的N只有为90的倍数，才是有意义的。
 
 ## 方框滤波（Box Filter）
 
-$$g=f\bigotimes h,h=\alpha
+$$g=f\otimes h,h=\alpha
 \begin{bmatrix}
      1 & 1 & 1 & \cdots & 1 \\
      1 & 1 & 1 & \cdots & 1 \\
@@ -234,7 +234,17 @@ $$blackhat(src)=close(src)-src$$
 
 ### Roberts算子
 
+$$S_x=\left[\begin{array}{cc} 1&0\\ 0&-1\end{array} \right],S_y=\left[\begin{array}{cc} 0&-1\\ 1&0\end{array} \right]$$
 
+$$梯度G(i,j)=|S_x\otimes f|+|S_y\otimes f|$$
+
+$$=|f(i,j)-f(i+1,j+1)|+|f(i+1,j)-f(i,j-1)|$$
+
+### Sobel算子
+
+$$S_x=\left[\begin{array}{ccc} -1&0&1\\ -2&0&2 \\ -1&0&1\end{array} \right],S_y=\left[\begin{array}{ccc} 1&2&1\\ 0&0&0 \\ -1&-2&-1\end{array} \right]$$
+
+$$梯度G=|S_x\otimes f|+|S_y\otimes f|=|f(i,j)-f(i+1,j+1)|+|f(i+1,j)-f(i,j-1)|$$
 
 # lex&yacc （2014.2）
 
