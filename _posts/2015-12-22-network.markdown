@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  网络杂谈, Fedora, Ubuntu使用技巧（二）
+title:  网络杂谈, Ubuntu使用技巧（二）
 category: technology 
 ---
 
@@ -137,6 +137,8 @@ https://github.com/igniterealtime/Spark
 `ant`
 
 可执行程序：arget/build/bin/startup.sh
+
+登陆时的“服务器”一栏，要填写服务器名称，填IP地址是不行的。
 
 ## osip & eXosip
 

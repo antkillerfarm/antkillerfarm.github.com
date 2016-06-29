@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Cocos2d-x v3在Qt 5上的移植, awk&sed&grep, diff&patch, bash, 数据描述语言
+title:  Cocos2d-x v3在Qt 5上的移植, awk&sed&grep, lex&yacc
 category: technology 
 ---
 
@@ -228,103 +228,55 @@ grep -nri 'ruby' #n 显示行号，r 子目录搜索，i 忽略大小写
 ip addr show br-lan | grep 'inet ' | awk  '{print $2}' | sed 's/\/.*//g'
 {% endhighlight %}
 
-# diff&patch
+# lex&yacc （2014.2）
 
-diff/patch这对工具在数学上来说，diff是对2个集合求差，patch是求和。
+* 前言
 
-{% highlight bash %}
-diff -uNr A B > C #生成A和B的diff文件C,-uNr为最常用的选项
-patch A C #给A打上diff文件得到B
-patch -R B C #B还原为A
+春节期间，空闲时间较多，于是研究了一下lex和yacc的用法。知道lex和yacc，那还是大四学习编译原理那门课时候的事情了。转眼之间，那已经是十年前的事情了。
+
+编译原理在整个大学期间的专业课中，属于难度比较高的课程。而且如果不是计算机专业的话，基本没有可能学到这门课。当时的课程作业是完成一个支持脚本绘图的软件。其难度即使以我现在的眼光来看，也颇不容易。当时只有少数人能够做出来，但基本上是参考教这门课的老师出的一本教辅书来写的。
+
+这个课程作业之所以复杂，主要在于老师要求词法和语法的分析器都必须要自己编码。如果退一步，可以使用lex和yacc的话，就没有那么困难了。当然这也与大学里以传授理论为主的思想有关，我还是相当认同这一点的。
+
+再顺便说一句，lex的作者之一是google的前CEO Eric Schmidt，这是他20岁时，在贝尔实验室的作品。当然，不全是他的功劳。实际上lex和yacc都是贝尔实验室的作品，这从lex效仿yacc的书写风格就能略见一斑。相比而言，yacc的地位和复杂度更为重要些。
+
+* 前置条件
+
+要想研究lex和yacc，除了需要有C语言的基础之外。还需要对正则式和BNF（Backus-Naur Form）有所了解。顺便提一下，John Warner Backus，FORTRAN、ALGOL语言之父，1977年ACM图灵奖得主。他在中学时代居然是个勉强毕业的差生，在大学里换了两次专业，还是一事无成。。。
+
+* 教材
+
+LEX & YACC TUTORIAL by Tom Niemann——这本书比较简练，且附有代码，入门级的极品
+
+Aho, Alfred V., Ravi Sethi and Jeffrey D. Ullman [2006]. Compilers, Prinicples, Techniques and Tools——这本书是编译原理方面的权威作品，堪称编译原理界的TAOCP，不过篇幅太长了。。。
+
+* 心得
+
+lex生成的代码中，最重要的是yylex函数，该函数每匹配一个词，就返回一次。yacc生成的代码中，最重要的是yyparse函数，这个函数调用yylex函数以获得所需要的语法词汇。
+
+lex的词法分析，依据用法的不同，可分为三类：
+
+1）需要匹配识别的词汇。
+
+2）需要过滤的词汇。一般是空白、TAB之类的分隔符。
+
+3）直译的词汇。就是那些lex不处理，也不吃掉，而是直接交给yacc分析的词汇。
+
+这三类词汇必须仔细规划，因为被解析的文本中，一旦出现不在上述三类的任何一类中的词汇时，程序就会报错。
+
+yacc的BNF中一般都要包括类似下面的语句：
+
+{% highlight c %}
+stmt_list:
+          stmt                  { }
+        | stmt_list stmt        { }
+        ;
 {% endhighlight %}
 
-# 批量patch
+其中stmt表示单个语句的语法目标，而stmt_list则是一系列语句的集合。
 
-## 给目录应用patch。
+为什么要添加这一句呢？因为yacc在处理被解析的文本时，如果文本不能最终归结为一个单一的语法目标的时候，程序也会报错。
 
-`patch -p1 <1.patch`
+代码示例参见：
 
-这种情况适合1.patch中包含对多个文件的修改时。
-
-## 批量应用patch
-
-有的时候，patch不是一个patch文件，而是一个目录中的若干个patch文件。这时可用如下办法：
-
-`find . -name "*.patch">1.txt`
-
-`sort 1.txt | xargs cat >2.patch`
-
-`patch -p1 <2.patch`
-
-# bash
-
-## 查看当前使用的shell
-
-实时查看：
-
-`ps |  grep $$  |  awk '{print $4}'`
-
-非实时查看：
-
-`echo $SHELL`
-
-## return和exit的区别
-
-return用于函数的返回，它只能用在函数中。
-
-exit用于整个shell脚本的退出。
-
-## 预定义变量
-
-`$?`: 上条命令的返回值
-
-`$$`: 当前shell的PID。
-
-# 数据描述语言
-
-## JSON
-
-JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式。 易于人阅读和编写。同时也易于机器解析和生成。 它基于JavaScript Programming Language, Standard ECMA-262 3rd Edition - December 1999的一个子集。
-
-其官网为：
-
-http://json.org/
-
-官网上列出了各种语言的JSON解析库。其中C语言的解析库中以json-c最为流行，其官网为：
-
-https://github.com/json-c/json-c
-
-## BSON
-
-Binary JSON是在JSON的基础上，添加了索引及数据类型的一种二进制格式。相比JSON，它牺牲了可阅读性，得到了可遍历性和高效性。
-
-BSON最早由MongoDB项目提出并使用，它的官网为：
-
-http://bsonspec.org/
-
-从中可以看出大多数语言的BSON解析库，都是MongoDB项目提供的。
-
-## YAML
-
-YAML(Yet Another Markup Language)是JSON的超集。它没有JSON那么流行，主要被用于科学计算领域，比如OpenCV项目。它的官网为：
-
-http://yaml.org/
-
-这个网站很有特色，它本身就是一个YAML文件。
-
-## Protocol Buffers
-
-Protocol Buffers是Google公司开发的一种数据描述语言。它的官网为：
-
-https://github.com/google/protobuf
-
-这是一种注重效率，而可阅读性几乎为零的二进制格式。其效率超过BSON，但除非有相关格式文件，否则完全无法阅读。而BSON作为JSON的扩展，只有扩展的那部分不可读，其余部分仍保留JSON的可读性。
-
-格式文件是Protocol Buffers中的重要概念，也是和JSON等格式在使用思路上最大的区别。
-
-JSON采用的是，不同的语言提供不同的库来解析的方式。
-
-而Protocol Buffers使用同一个格式文件，为不同语言生成相应的代码。这和CORBA的做法很类似。
-
-与Protocol Buffers类似的方案，还有Facebook提出的Thrift、ZeroC提出的Slice和Hadoop Avro。
-
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/mylex

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Transifex与GTK文档翻译, Linux镜像文件, 外设接口杂谈
+title:  Transifex与GTK文档翻译, Linux镜像文件, 外设接口杂谈, Fedora
 category: technology 
 ---
 

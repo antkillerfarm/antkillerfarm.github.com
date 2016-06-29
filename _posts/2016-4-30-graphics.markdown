@@ -1,18 +1,10 @@
 ---
 layout: post
-title:  图像处理理论, lex&yacc
+title:  图像处理理论
 category: technology 
 ---
 
 # 图像处理理论
-
-## 灰度化
-
-以RGB格式的彩图为例，通常灰度化采用的方法主要有：
-
-方法1：$$Gray=(R+G+B)/3$$
-
-方法2：$$Gray=0.299R+0.587G+0.114B$$（这种参数考虑到了人眼的生理特点）
 
 ## 对比度和亮度
 
@@ -234,68 +226,46 @@ $$blackhat(src)=close(src)-src$$
 
 ### Roberts算子
 
-$$S_x=\left[\begin{array}{cc} 1&0\\ 0&-1\end{array} \right],S_y=\left[\begin{array}{cc} 0&-1\\ 1&0\end{array} \right]$$
+$$s_x=\left[\begin{array}{cc} 1&0\\ 0&-1\end{array} \right],s_y=\left[\begin{array}{cc} 0&-1\\ 1&0\end{array} \right]$$
 
-$$梯度G(i,j)=|S_x\otimes f|+|S_y\otimes f|$$
+$$梯度G(i,j)=|s_x\otimes f|+|s_y\otimes f|$$
 
 $$=|f(i,j)-f(i+1,j+1)|+|f(i+1,j)-f(i,j-1)|$$
 
+以下将$$s_x\otimes f$$简记做$$G_x$$。
+
 ### Sobel算子
 
-$$S_x=\left[\begin{array}{ccc} -1&0&1\\ -2&0&2 \\ -1&0&1\end{array} \right],S_y=\left[\begin{array}{ccc} 1&2&1\\ 0&0&0 \\ -1&-2&-1\end{array} \right]$$
+$$s_x=\left[\begin{array}{ccc} -1&0&1\\ -2&0&2 \\ -1&0&1\end{array} \right],s_y=\left[\begin{array}{ccc} 1&2&1\\ 0&0&0 \\ -1&-2&-1\end{array} \right]$$
 
-$$梯度G=|S_x\otimes f|+|S_y\otimes f|=|f(i,j)-f(i+1,j+1)|+|f(i+1,j)-f(i,j-1)|$$
+$$G=\sqrt{G_x^2+G_y^2}$$
 
-# lex&yacc （2014.2）
+$$梯度方向\theta=arctan(\frac{G_y}{G_x})$$
 
-* 前言
+### Prewitt算子
 
-春节期间，空闲时间较多，于是研究了一下lex和yacc的用法。知道lex和yacc，那还是大四学习编译原理那门课时候的事情了。转眼之间，那已经是十年前的事情了。
+$$s_x=\left[\begin{array}{ccc} -1&0&1\\ -1&0&1 \\ -1&0&1\end{array} \right],s_y=\left[\begin{array}{ccc} 1&1&1\\ 0&0&0 \\ -1&-1&-1\end{array} \right]$$
 
-编译原理在整个大学期间的专业课中，属于难度比较高的课程。而且如果不是计算机专业的话，基本没有可能学到这门课。当时的课程作业是完成一个支持脚本绘图的软件。其难度即使以我现在的眼光来看，也颇不容易。当时只有少数人能够做出来，但基本上是参考教这门课的老师出的一本教辅书来写的。
+其他与Sobel算子相同。
 
-这个课程作业之所以复杂，主要在于老师要求词法和语法的分析器都必须要自己编码。如果退一步，可以使用lex和yacc的话，就没有那么困难了。当然这也与大学里以传授理论为主的思想有关，我还是相当认同这一点的。
+## 灰度化
 
-再顺便说一句，lex的作者之一是google的前CEO Eric Schmidt，这是他20岁时，在贝尔实验室的作品。当然，不全是他的功劳。实际上lex和yacc都是贝尔实验室的作品，这从lex效仿yacc的书写风格就能略见一斑。相比而言，yacc的地位和复杂度更为重要些。
+以RGB格式的彩图为例，通常灰度化采用的方法主要有：
 
-* 前置条件
+方法1：$$Gray=(R+G+B)/3$$
 
-要想研究lex和yacc，除了需要有C语言的基础之外。还需要对正则式和BNF（Backus-Naur Form）有所了解。顺便提一下，John Warner Backus，FORTRAN、ALGOL语言之父，1977年ACM图灵奖得主。他在中学时代居然是个勉强毕业的差生，在大学里换了两次专业，还是一事无成。。。
+方法2：$$Gray=0.299R+0.587G+0.114B$$（这种参数考虑到了人眼的生理特点）
 
-* 教材
+## 二值化
 
-LEX & YACC TUTORIAL by Tom Niemann——这本书比较简练，且附有代码，入门级的极品
+二值图也就是黑白图。将灰度图转换成黑白图的过程，就是二值化。二值化的一般算法是：
 
-Aho, Alfred V., Ravi Sethi and Jeffrey D. Ullman [2006]. Compilers, Prinicples, Techniques and Tools——这本书是编译原理方面的权威作品，堪称编译原理界的TAOCP，不过篇幅太长了。。。
+$$
+g=\begin{cases}
+0,  & f<T \\
+1, & f\ge T \\
+\end{cases}
+$$
 
-* 心得
-
-lex生成的代码中，最重要的是yylex函数，该函数每匹配一个词，就返回一次。yacc生成的代码中，最重要的是yyparse函数，这个函数调用yylex函数以获得所需要的语法词汇。
-
-lex的词法分析，依据用法的不同，可分为三类：
-
-1）需要匹配识别的词汇。
-
-2）需要过滤的词汇。一般是空白、TAB之类的分隔符。
-
-3）直译的词汇。就是那些lex不处理，也不吃掉，而是直接交给yacc分析的词汇。
-
-这三类词汇必须仔细规划，因为被解析的文本中，一旦出现不在上述三类的任何一类中的词汇时，程序就会报错。
-
-yacc的BNF中一般都要包括类似下面的语句：
-
-{% highlight c %}
-stmt_list:
-          stmt                  { }
-        | stmt_list stmt        { }
-        ;
-{% endhighlight %}
-
-其中stmt表示单个语句的语法目标，而stmt_list则是一系列语句的集合。
-
-为什么要添加这一句呢？因为yacc在处理被解析的文本时，如果文本不能最终归结为一个单一的语法目标的时候，程序也会报错。
-
-代码示例参见：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/mylex
+其中$$T$$被称为阀值。阀值的确定方法有下面几种。
 
