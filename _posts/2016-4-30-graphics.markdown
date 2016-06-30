@@ -262,10 +262,31 @@ $$s_x=\left[\begin{array}{ccc} -1&0&1\\ -1&0&1 \\ -1&0&1\end{array} \right],s_y=
 
 $$
 g=\begin{cases}
-0,  & f<T \\
-1, & f\ge T \\
+0,  & f\le t \\
+1, & f>t \\
 \end{cases}
 $$
 
-其中$$T$$被称为阀值。阀值的确定方法有下面几种。
+其中$$t$$被称为阀值。阀值的确定方法有下面几种。
 
+### Otsu法
+
+该算法是日本人Otsu提出的一种动态阈值分割算法。它的主要思想是按照灰度特性将图像划分为背景和目标2部分（这里我们将$$f\le t$$的部分称为背景，其他部分称为目标。），选取门限值，使得背景和目标之间的方差最大。其步骤如下：
+
+1.建立图像灰度直方图（共有L个灰度级，每个出现概率为$$p_i$$）
+
+$$N=\sum_{i=0}^{L-1}n_i,p_i=\frac{n_i}{N}$$
+
+2.计算背景和目标的出现概率。
+
+$$p_A=\sum_{i=0}^{t}p_i,p_B=\sum_{i=t+1}^{L-1}p_i=1-p_A$$
+
+其中，A和B分别表示背景部分和目标部分。
+
+3.计算A和B两个区域的类间方差。
+
+$$\omega _A=\frac{\sum_{i=0}^{t}ip_i}{p_A},\omega _B=\frac{\sum_{i=t+1}^{L-1}ip_i}{p_B}(公式1)$$
+
+$$\omega _A=\frac{\sum_{i=0}^{t}ip_i}{p_A},\omega _B=\frac{\sum_{i=t+1}^{L-1}ip_i}{p_B}(公式2)$$
+
+$$\omega _A=\frac{\sum_{i=0}^{t}ip_i}{p_A},\omega _B=\frac{\sum_{i=t+1}^{L-1}ip_i}{p_B}(公式3)$$
