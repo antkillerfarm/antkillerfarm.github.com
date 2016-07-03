@@ -1,12 +1,10 @@
 ---
 layout: post
-title:  图像处理理论
+title:  图像处理理论（一）
 category: technology 
 ---
 
-# 图像处理理论
-
-## 对比度和亮度
+# 对比度和亮度
 
 $$
 g(i,j)=a\times f(i,j)+b
@@ -14,7 +12,7 @@ $$
 
 上式中$$f(i,j)$$和$$g(i,j)$$表示位于第i行，第j列的像素。上述线性变换中，a表示对比度，b表示亮度。
 
-## 邻域
+# 邻域
 
 $$\left[ \begin{array}{ccc} A_0&A_1&A_2\\ A_3&A&A_4 \\ A_5&A_6&A_7\end{array} \right]$$
 
@@ -32,7 +30,7 @@ $$U(A,2)$$的定义如下：
 
 这里的N被称为度数，也就是两点间的距离，即$$L(A,C)=N$$。
 
-## 相关算子
+# 相关算子
 
 相关（Correlation)算子
 
@@ -42,13 +40,13 @@ $$g=f\otimes h$$
 
 $$g(i,j)=\sum_{k,l}f(i+k,j+l)h(k,l)$$
 
-其中，h称为相关核(Kernel)，即滤波器的加权系数矩阵。相关核有个叫做锚点（anchor）的属性，也就是被滤波的那个点在核中的位置。以3*3的h矩阵为例，如果锚点在矩阵中央的话，则$$i-1\le k\le i+1,j-1\le l\le j+1$$。如果锚点在左上角的话，则$$i\le k\le i+2,j\le l\le j+2$$。
+其中，h称为相关核(Kernel)，即滤波器的加权系数矩阵，有的书上也称作“模板”。相关核有个叫做锚点（anchor）的属性，也就是被滤波的那个点在核中的位置。以3*3的h矩阵为例，如果锚点在矩阵中央的话，则$$i-1\le k\le i+1,j-1\le l\le j+1$$。如果锚点在左上角的话，则$$i\le k\le i+2,j\le l\le j+2$$。
 
 所有的点$$(k,l)$$组成的集合，叫做核空间。一般也简单记作$$X_{k,l}$$。这里的X可以是累加、求均值、求最大值、求最小值等集合运算符。
 
 此外，h矩阵还有是否归一化的属性。这里将计算矩阵中所有元素之和的操作，记作$$SUM(h)$$.则当$$SUM(h)=1$$时，h为归一化核。$$\frac{h}{SUM(h)}$$，称作核的归一化。
 
-## 卷积算子
+# 卷积算子
 
 卷积（Convolution)算子
 
@@ -64,7 +62,7 @@ $$f\ast h=f\otimes rot180(h)$$
 
 其中，rotN表示将矩阵元素绕中心逆时针旋转N度，显然这里的N只有为90的倍数，才是有意义的。
 
-## 方框滤波（Box Filter）
+# 方框滤波（Box Filter）
 
 $$g=f\otimes h,h=\alpha
 \begin{bmatrix}
@@ -82,7 +80,7 @@ $$
 
 当normalize=true时的方框滤波，也被称为均值滤波（Mean filter）。
 
-## 高斯滤波（Gauss filter）
+# 高斯滤波（Gauss filter）
 
 高斯平滑滤波器对于抑制服从正态分布的噪声非常有效。
 
@@ -222,19 +220,31 @@ $$blackhat(src)=close(src)-src$$
 
 ![](/images/article/morphology.png)
 
-## 边缘检测算子
+# 边缘检测
 
-### Roberts算子
+## 梯度
+
+从数学概念上来说，一维梯度G，实际上就是函数的斜率，也就是一阶导数。二维梯度G，一般用两个维度上的偏导数$$G_x$$和$$G_y$$来刻画。常见的方法有：
+
+$$G=|G_x|+|G_y|(模1)$$
+
+$$G=\sqrt{G_x^2+G_y^2}(模2)$$
+
+$$G=max(|G_x|,|G_y|)(模\infty)$$
+
+显然，梯度大的点，有很大可能是边缘点。常用的梯度算子有Roberts算子、Sobel算子和Prewitt算子。
+
+## Roberts算子
 
 $$s_x=\left[\begin{array}{cc} 1&0\\ 0&-1\end{array} \right],s_y=\left[\begin{array}{cc} 0&-1\\ 1&0\end{array} \right]$$
 
-$$梯度G(i,j)=|s_x\otimes f|+|s_y\otimes f|$$
+$$G(i,j)=|s_x\otimes f|+|s_y\otimes f|$$
 
 $$=|f(i,j)-f(i+1,j+1)|+|f(i+1,j)-f(i,j-1)|$$
 
 以下将$$s_x\otimes f$$简记做$$G_x$$。
 
-### Sobel算子
+## Sobel算子
 
 $$s_x=\left[\begin{array}{ccc} -1&0&1\\ -2&0&2 \\ -1&0&1\end{array} \right],s_y=\left[\begin{array}{ccc} 1&2&1\\ 0&0&0 \\ -1&-2&-1\end{array} \right]$$
 
@@ -242,51 +252,75 @@ $$G=\sqrt{G_x^2+G_y^2}$$
 
 $$梯度方向\theta=arctan(\frac{G_y}{G_x})$$
 
-### Prewitt算子
+## Prewitt算子
 
 $$s_x=\left[\begin{array}{ccc} -1&0&1\\ -1&0&1 \\ -1&0&1\end{array} \right],s_y=\left[\begin{array}{ccc} 1&1&1\\ 0&0&0 \\ -1&-1&-1\end{array} \right]$$
 
 其他与Sobel算子相同。
 
-## 灰度化
+## 拉普拉斯算子
 
-以RGB格式的彩图为例，通常灰度化采用的方法主要有：
+拉普拉斯算子是一种二阶微分算子，因此，它一般用二阶微分符号$$\nabla^2f$$来表示。其常用的相关核有：
 
-方法1：$$Gray=(R+G+B)/3$$
+$$h_1=\left[\begin{array}{ccc} 0&-1&0\\ -1&4&-1 \\ 0&-1&0\end{array} \right],h_2=\left[\begin{array}{ccc} -1&-1&-1\\ -1&8&-1 \\ -1&-1&-1\end{array} \right]$$
 
-方法2：$$Gray=0.299R+0.587G+0.114B$$（这种参数考虑到了人眼的生理特点）
+从中可以看出，拉普拉斯算子的相关核有以下特点：
 
-## 二值化
+1.各元素中心对称。
 
-二值图也就是黑白图。将灰度图转换成黑白图的过程，就是二值化。二值化的一般算法是：
+2.中心元素为正值。（在有些课本中，中心元素也可为负值，但相关公式就需要做相应的符号上的修改。在本教程中，中心元素一律为正值。）
 
-$$
-g=\begin{cases}
-0,  & f\le t \\
-1, & f>t \\
-\end{cases}
-$$
+3.所有元素的和为0。
 
-其中$$t$$被称为阀值。阀值的确定方法有下面几种。
+拉普拉斯算子和正态分布有很大关联，也有标准差$$\sigma$$的概念。一般来说，中心元素的值越大，$$\sigma$$越小。算子对图像的模糊（或锐化）程度与$$\sigma$$成正比。
 
-### Otsu法
+## 对称梯度算子
 
-该算法是日本人Otsu提出的一种动态阈值分割算法。它的主要思想是按照灰度特性将图像划分为背景和目标2部分（这里我们将$$f\le t$$的部分称为背景，其他部分称为目标。），选取门限值，使得背景和目标之间的方差最大。其步骤如下：
+$$s_x=\left[\begin{array}{ccc} -1&0&1\\ -d&0&d \\ -1&0&1\end{array} \right],s_y=\left[\begin{array}{ccc} 1&d&1\\ 0&0&0 \\ -1&-d&-1\end{array} \right]$$
 
-1.建立图像灰度直方图（共有L个灰度级，每个出现概率为$$p_i$$）
+可以看出Sobel算子$$(d=2)$$和Prewitt算子$$(d=1)$$，都是对称梯度算子的特例。d的常用值还有$$\sqrt{2}$$。
 
-$$N=\sum_{i=0}^{L-1}n_i,p_i=\frac{n_i}{N}$$
+## 波纹算子
 
-2.计算背景和目标的出现概率。
+$$s_x=\left[\begin{array}{ccc} 0&-1&d\\ 1&0&-1 \\ -d&1&0\end{array} \right],s_y=\left[\begin{array}{ccc} d&-1&0\\ -1&0&1 \\ 0&1&-d\end{array} \right]$$
 
-$$p_A=\sum_{i=0}^{t}p_i,p_B=\sum_{i=t+1}^{L-1}p_i=1-p_A$$
+对称梯度算子和波纹算子都属于边缘子空间基。
 
-其中，A和B分别表示背景部分和目标部分。
+## 直线算子
 
-3.计算A和B两个区域的类间方差。
+$$s_x=\left[\begin{array}{ccc} 0&1&0\\ -1&0&-1 \\ 0&1&0\end{array} \right],s_y=\left[\begin{array}{ccc} -1&0&1\\ 0&0&0 \\ 1&0&-1\end{array} \right]$$
 
-$$\omega _A=\frac{\sum_{i=0}^{t}ip_i}{p_A},\omega _B=\frac{\sum_{i=t+1}^{L-1}ip_i}{p_B}(公式1)$$
+直线算子和拉普拉斯算子都属于直线子空间基。
 
-$$\omega _A=\frac{\sum_{i=0}^{t}ip_i}{p_A},\omega _B=\frac{\sum_{i=t+1}^{L-1}ip_i}{p_B}(公式2)$$
+# 边界闭合
 
-$$\omega _A=\frac{\sum_{i=0}^{t}ip_i}{p_A},\omega _B=\frac{\sum_{i=t+1}^{L-1}ip_i}{p_B}(公式3)$$
+如果像素$$(s,t)$$在像素$$(x,y)$$的领域，且满足以下条件：
+
+$$|G(s,t)-G(x,y)|\le 幅度阀值T$$
+
+$$|\theta(s,t)-\theta(x,y)|\le 角度阀值A$$
+
+则可将像素$$(s,t)$$和像素$$(x,y)$$连接起来。
+
+# canny算法
+
+Canny边缘检测算子是John F.Canny于1986年开发出来的一个多级边缘检测算法。
+
+1.应用高斯滤波来平滑图像，目的是去除噪声。
+
+2.找寻图像的强度梯度（intensity gradients)
+
+3.应用非最大抑制（non-maximum suppression）技术来消除边误检（本来不是但检测出来是）。
+
+4.应用双阈值的方法来决定可能的（潜在的）边界。
+
+5.利用滞后技术来跟踪边界。
+
+1、2的基本原理，上面已经讨论过了，这里不再赘述。
+
+## 非最大抑制
+
+![](/images/article/non-maximum.png)
+
+图中的数字代表了像素点的梯度强度，箭头方向代表了梯度方向。以第二排第三个像素点为例，由于梯度方向向上，则将这一点的强度（7）与其上下两个像素点的强度（5和4）比较，由于这一点强度最大，则保留。
+

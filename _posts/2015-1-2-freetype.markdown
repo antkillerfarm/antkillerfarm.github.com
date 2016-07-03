@@ -114,7 +114,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/HelloSDL
 
 ## GIMP
 
-在linux下奋斗已经快半个月了，今天处理公务，需要处理一张图片，于是想到了GIMP。大名鼎鼎的linux两大GUI库之一的GTK就是在GIMP开发的过程中做出来的。GIMP功能很强大，不过它的使用方法和windows自带的画笔还是有差异的。
+在linux下奋斗已经快半个月了，今天处理公务，需要处理一张图片，于是想到了GIMP。大名鼎鼎的Linux两大GUI库之一的GTK就是在GIMP开发的过程中做出来的。GIMP功能很强大，不过它的使用方法和windows自带的画笔还是有差异的。
 
 1）画直线：
 
@@ -123,6 +123,10 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/HelloSDL
 2）截屏
 
 文件->创建->屏幕截图
+
+3）图片格式转换
+
+GIMP的格式转换功能非常强大，不但可以转换为常见的图片格式，还可以将图片导出成C语言头文件。但是需要注意的是，这些功能不在菜单项“另存为”中，而在菜单项“导出”中。
 
 ## Inkscape使用技巧
 
