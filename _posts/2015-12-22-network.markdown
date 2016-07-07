@@ -323,7 +323,28 @@ graphviz包括了以下工具：
 
 还有个叫smyrna的工具，据称使用3D加速，可处理10000个结点的图。但是ubuntu下没有方便的安装方式。
 
-# 发行版乱战
+## 文件校验和
+
+计算文件校验和，一般采用MD5和SHA算法。在Ubuntu中，这些算法的命令包括：md5sum、sha1sum(160-bit) ,sha224sum(224-bit) ,sha256sum(256-bit),sha384sum(384-bit),sha512sum(512-bit)等。
+
+## 产品设计工具
+
+类别 | 收费 | 免费
+|:--:|:--:|:--:|
+Office | MS Office | LibreOffice
+流程图 | MS Visio | DIA、Kivio
+思维导图 | Mindmanager | FreeMind
+快速原型 | Axure RP | pencil
+
+## GNU Octave
+
+GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。
+
+安装方法:
+
+`sudo apt-get install octave`
+
+## 发行版乱战
 
 Linux以发行版众多闻名于世。最近发现了以下网站，或可对各个发行版进行一个简单的比较。
 
@@ -331,7 +352,7 @@ http://distrowatch.com/
 
 下面对几个主要的参数，进行一下点评：
 
-## Office
+### Office
 
 主要是3个流派：
 
@@ -340,17 +361,4 @@ http://distrowatch.com/
 2.KOffice->Calligra Office。KDE项目的成果。
 
 3.GOffice。Gnome项目的成果，和前两个相比，GOffice的组件比较独立，没有什么协同能力。
-
-# 文件校验和
-
-计算文件校验和，一般采用MD5和SHA算法。在Ubuntu中，这些算法的命令包括：md5sum、sha1sum(160-bit) ,sha224sum(224-bit) ,sha256sum(256-bit),sha384sum(384-bit),sha512sum(512-bit)等。
-
-# 产品设计工具
-
-类别 | 收费 | 免费
-|:--:|:--:|:--:|
-Office | MS Office | LibreOffice
-流程图 | MS Visio | DIA、Kivio
-思维导图 | Mindmanager | FreeMind
-快速原型 | Axure RP | pencil
 
