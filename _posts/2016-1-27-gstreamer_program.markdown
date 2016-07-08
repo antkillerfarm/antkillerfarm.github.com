@@ -6,25 +6,7 @@ category: technology
 
 # GStreamer应用（续）
 
-## TCP远程播放
-
-除了本地播放之外，GStreamer亦支持远程播放。以下仅以TCP远程播放为例。
-
-TCP远程播放采用Client/Server模式。
-
-### step1
-
-1.首先打开播放端软件。（Server端）
-
-`gst-launch-1.0 tcpserversrc host="127.0.0.1" port=3000 ! decodebin ! autoaudiosink`
-
-2.打开多媒体发送端软件。（Clinet端）
-
-`gst-launch-1.0 filesrc location=./1.mp3 ! tcpclientsink host="127.0.0.1" port=3000`
-
-示例代码：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gstreamer/tutorials/cs
+## TCP远程播放（续）
 
 ### step2
 
@@ -168,6 +150,22 @@ audioconvert用于转换不同格式的音频数据。这里的格式指的是�
 
 类似的，还有videoconvert、autoconvert插件。
 
+## GStreamer的声道处理
+
+GStreamer的声道处理包含3个层次：媒体文件、媒体流、声道。简单来说就是：
+
+1.一个媒体文件包含若干媒体流。比如视频文件就至少包含一个视频流和一个音频流。而某些DVD媒体文件中，针对不同语言，往往有不同的音频流。比如一个汉语的音频流+一个英语的音频流。
+
+2.一个音频流包含若干声道。比如常见的2.1声道、5.1声道等。
+
+gst_player_get_media_info
+
+gst_player_audio_info_get_channels
+
+http://blog.csdn.net/sakulafly/article/details/22216775
+
+gst_player_get_pipeline
+
 # GStreamer编程
 
 ## 开发环境搭建
@@ -214,9 +212,11 @@ http://gstreamer.freedesktop.org/data/doc/gstreamer/head/pwg/html/index.html
 
 http://docs.gstreamer.com/display/GstSDK/Tutorials
 
-这里还有一个更全的代码示例：
+其他参考示例：
 
 https://github.com/rubenrua/GstreamerCodeSnippets
+
+https://github.com/sdroege/gst-player
 
 以下是教程的一些细节的学习心得。
 
