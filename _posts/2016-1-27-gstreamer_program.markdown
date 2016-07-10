@@ -12,7 +12,7 @@ category: technology
 
 来一个更复杂的例子：
 
-gst-launch-1.0 filesrc location=./1.mp3 ! tee name=tee0 tee0. ! queue ! tcpclientsink port=3000 tee0. ! queue ! decodebin ! autoaudiosink
+`gst-launch-1.0 filesrc location=./1.mp3 ! tee name=tee0 tee0. ! queue ! tcpclientsink port=3000 tee0. ! queue ! decodebin ! autoaudiosink`
 
 这个例子中，一个音频文件被tee分成了2份，一份远程播，一份自己播。
 
@@ -157,14 +157,6 @@ GStreamer的声道处理包含3个层次：媒体文件、媒体流、声道。�
 1.一个媒体文件包含若干媒体流。比如视频文件就至少包含一个视频流和一个音频流。而某些DVD媒体文件中，针对不同语言，往往有不同的音频流。比如一个汉语的音频流+一个英语的音频流。
 
 2.一个音频流包含若干声道。比如常见的2.1声道、5.1声道等。
-
-gst_player_get_media_info
-
-gst_player_audio_info_get_channels
-
-http://blog.csdn.net/sakulafly/article/details/22216775
-
-gst_player_get_pipeline
 
 # GStreamer编程
 
