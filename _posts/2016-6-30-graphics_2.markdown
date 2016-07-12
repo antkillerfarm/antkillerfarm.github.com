@@ -4,7 +4,27 @@ title:  图像处理理论（二）
 category: technology 
 ---
 
-# canny算法(续)
+# canny算法
+
+Canny边缘检测算子是John F.Canny于1986年开发出来的一个多级边缘检测算法。
+
+1.应用高斯滤波来平滑图像，目的是去除噪声。
+
+2.找寻图像的强度梯度（intensity gradients)
+
+3.应用非最大抑制（non-maximum suppression）技术来消除边误检（本来不是但检测出来是）。
+
+4.应用双阈值的方法来决定可能的（潜在的）边界。
+
+5.利用滞后技术来跟踪边界。
+
+1、2的基本原理，上面已经讨论过了，这里不再赘述。
+
+## 非最大抑制
+
+![](/images/article/non-maximum.png)
+
+图中的数字代表了像素点的梯度强度，箭头方向代表了梯度方向。以第二排第三个像素点为例，由于梯度方向向上，则将这一点的强度（7）与其上下两个像素点的强度（5和4）比较，由于这一点强度最大，则保留。
 
 ## 双阈值（Double Thresholding）
 
@@ -164,37 +184,4 @@ $$L_i=G_i-PyrUp(G_{i+1})=G_i-Up(G_{i+1})\otimes H_{5x5}$$
 ![](/images/article/laplacian_pyramid.jpg)
 
 图中最左列和最右列都是高斯金字塔，中间一列是拉普拉斯金字塔。
-
-# GStreamer
-
-gst_player_get_media_info
-
-gst_player_audio_info_get_channels
-
-http://blog.csdn.net/sakulafly/article/details/22216775
-
-gst_player_get_pipeline
-
-gstaudiochannels
-
-https://coaxion.net/blog/2014/08/gstreamer-playback-api/
-
-gst_audio_decoder_get_audio_info
-
-gst_discoverer_audio_info_get_channels
-
-gst-discoverer
-
-http://docs.gstreamer.com/display/GstSDK/Basic+tutorial+9%3A+Media+information+gathering
-
-caps = audio/x-raw-float, endianness=(int)1234, width=(int)32, channels=(int)2, rate=(int)48000, channel-positions=(GstAudioChannelPosition)< GST_AUDIO_CHANNEL_POSITION_FRONT_LEFT, GST_AUDIO_CHANNEL_POSITION_FRONT_RIGHT >
-
-Sender:
-
-`gst-launch filesrc location=/home/file.mp3 ! mad ! audioconvert ! audio/x-raw-int,channels=1,depth=16,width=16, rate=44100 ! rtpL16pay  ! udpsink host=192.168.1.103 port=5000`
-
-Receiver:
-
-`gst-launch udpsrc port=5000 caps="application/x-rtp, media=(string)audio, clock-rate=(int)44100, width=(int)16, height=(int)16, encoding-name=(string)L16, encoding-params=(string)1, channels=(int)1, channel-position=(int)1, payload=(int)96" ! gstrtpjitterbuffer do-lost=true ! rtpL16depay ! audioconvert ! alsasink sync=false`
-
 

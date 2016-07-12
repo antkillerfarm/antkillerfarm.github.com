@@ -100,6 +100,12 @@ http://www.tinylab.org/gstreamer-sdk-a-cross-platform-multimedia-framework/
 
 最简单的多设备协同播放，可使用一主多从式的RTP分发管道。需要注意的是，主设备不要使用本地解码管道，而要和从设备一样使用RTP传输播放管道（也就是自己发自己收），否则它和从设备之间会有播放不同步的情况发生。
 
+代码示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gstreamer/multi-room/gmediarender-2013-12-04
+
+这是一个在gmediarender的基础上修改而成的，多音箱协同播放的软件。支持DLNA协议，使用的时候，手机App向Master音箱推送歌曲即可。
+
 ## RTP播放状态问题
 
 RTP管道和其他GStreamer管道不同，其PLAYING状态更多表示它可以接收网络发过来的数据，但这个时候是否有数据正在播放，实际上是不得而知的。
@@ -150,6 +156,24 @@ audioconvert用于转换不同格式的音频数据。这里的格式指的是�
 
 类似的，还有videoconvert、autoconvert插件。
 
+## GstPlayer
+
+GstPlayer是GStreamer官方推出的播放器项目，旨在简化GStreamer API，以便于更多人使用GStreamer。
+
+GstPlayer的最终目标，是替换Totem项目当前的GStreamer实现。但从该项目目前还在Bad Plugins中，可以看出它距离自己的目标尚有一段距离。
+
+该项目的主页：
+
+https://gstreamer.freedesktop.org/projects/gstplayer.html
+
+示例代码：
+
+https://github.com/sdroege/gst-player
+
+https://coaxion.net/blog/2014/08/gstreamer-playback-api/
+
+这是其中一个主创的blog，讲述了项目的缘起和路线图。
+
 ## GStreamer的声道处理
 
 GStreamer的声道处理包含3个层次：媒体文件、媒体流、声道。简单来说就是：
@@ -157,6 +181,36 @@ GStreamer的声道处理包含3个层次：媒体文件、媒体流、声道。�
 1.一个媒体文件包含若干媒体流。比如视频文件就至少包含一个视频流和一个音频流。而某些DVD媒体文件中，针对不同语言，往往有不同的音频流。比如一个汉语的音频流+一个英语的音频流。
 
 2.一个音频流包含若干声道。比如常见的2.1声道、5.1声道等。
+
+### 媒体信息的解析
+
+可以使用gst-discoverer工具获得媒体信息，也可以使用gst_discoverer_XXX系列的函数编程实现相同的功能。
+
+从gst_discoverer_XXX系列的命名规则可以看出:
+
+gst_discoverer_info_XXX: 处理媒体文件
+
+gst_discoverer_stream_info_XXX: 处理媒体流
+
+gst_discoverer_audio_info_XXX: 处理音频流
+
+GstPlayer也提供了GstPlayerMediaInfo、GstPlayerStreamInfo、GstPlayerAudioInfo类用于解析媒体信息。可使用gst_player_get_media_info函数获得相关GstPlayerMediaInfo。
+
+参考：
+
+http://blog.csdn.net/sakulafly/article/details/22216775
+
+http://docs.gstreamer.com/display/GstSDK/Basic+tutorial+9%3A+Media+information+gathering
+
+### 媒体信息的设置
+
+Sender:
+
+`gst-launch filesrc location=/home/file.mp3 ! mad ! audioconvert ! audio/x-raw-int,channels=1,depth=16,width=16, rate=44100 ! rtpL16pay  ! udpsink host=192.168.1.103 port=5000`
+
+Receiver:
+
+`gst-launch udpsrc port=5000 caps="application/x-rtp, media=(string)audio, clock-rate=(int)44100, width=(int)16, height=(int)16, encoding-name=(string)L16, encoding-params=(string)1, channels=(int)1, channel-position=(int)1, payload=(int)96" ! gstrtpjitterbuffer do-lost=true ! rtpL16depay ! audioconvert ! alsasink sync=false`
 
 # GStreamer编程
 
@@ -208,8 +262,6 @@ http://docs.gstreamer.com/display/GstSDK/Tutorials
 
 https://github.com/rubenrua/GstreamerCodeSnippets
 
-https://github.com/sdroege/gst-player
-
 以下是教程的一些细节的学习心得。
 
 ### basic-tutorial-1.c
@@ -244,61 +296,4 @@ Pad Templates:
 {% endhighlight %}
 
 从中可知，tee插件SRC Pad的模板名就是`src%d`。
-
-## GStreamer的Python开发教程
-
-### Step 0
-
-教程的起点——helloworld。这是一个最基本的GStreamer播放器的例子，使用GTK作为GUI工具。
-
-代码参见：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/python-gst-player-example.py
-
-这个例子不能直接运行，需要根据具体情况，略作修改，修改的地方如下：
-
-1）self.uri存放用于播放的媒体文件的URI，注意这里是URI，而不是普通的路径，如果要指定本地文件的话，需要使用`file://`。
-
-2)出错的时候，先用`gst-inspect`检查一下，相应的插件是否安装好了。
-
-### Step 1
-
-在这一步中，我们给播放器添加了暂停和进度条控制的功能。
-
-代码参见：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/gstreamer/step1/my-gst-player.py
-
-### Step 2
-
-在这一步中，我们的修改如下：
-
-1.添加了快进和慢进的功能。
-
-2.使用gst_parse_launch创建pipeline。该pipeline可以播放视频文件。
-
-代码参见：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/gstreamer/step2/my-gst-player.py
-
-### Step 3
-
-在这一步中，我们使用一般的GStreamer函数构建和Step 2相同的pipeline。
-
-代码参见：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/gstreamer/step3/my-gst-player.py
-
-这里需要注意以下几点：
-
-1.随机Pad只能用pad-add消息回调的方式添加。
-
-2.以下代码片段在这里都可用，尽管不完全等效，请注意用法和差别：
-
-{% highlight python %}
-new_pad_type = new_pad.get_current_caps().get_structure(0).get_name()
-new_pad_type = new_pad.query_caps(None).to_string()
-{% endhighlight %}
-
-从这里也可以看出，gst_parse_launch会自动处理媒体流的格式匹配问题，而使用普通函数的时候，必须自己编程处理格式匹配的问题。
 
