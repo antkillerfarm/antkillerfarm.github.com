@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  二战漫谈（五）
+title:  二战漫谈（五）, 民国时期的学历重视度问题（二）
 category: non_technology 
 ---
 

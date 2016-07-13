@@ -89,7 +89,15 @@ http://www.alsrobot.cn/
 
 http://www.siasun.com/
 
-国内机器人巨头——新松公司
+国内机器人巨头——新松公司。
+
+http://www.cloudminds.com/
+
+云+智能机器人。
+
+https://www.wilddog.com/
+
+一个物联网后端云平台。
 
 ## 有用的blog
 

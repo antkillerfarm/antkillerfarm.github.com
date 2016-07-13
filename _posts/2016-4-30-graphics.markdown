@@ -164,27 +164,99 @@ $$w(i,j,k,l)=d(i,j,k,l)\cdot r(i,j,k,l)=exp\left(-\frac{(i-k)^2+(j-l)^2}{2\sigma
 
 ![](/images/article/bilateral_filter.png)
 
+## Steerable滤波
+
+高斯滤波是一种各向同性滤波，如果想要对特定方向进行滤波的话，可使用Steerable滤波。
+
+对最简二维高斯函数$$G(x,y)=e^{-(x^2+y^2)}$$求1阶偏导可得：
+
+$$G_1^0=\frac{\partial G(x,y)}{\partial x}=-2xe^{-(x^2+y^2)},G_1^{\frac{\pi}{2}}=\frac{\partial G(x,y)}{\partial y}=-2ye^{-(x^2+y^2)}$$
+
+这就是两个轴向上的1阶Steerable滤波函数。
+
+任意角度的1阶Steerable滤波函数为：
+
+$$G_1^{\theta}=cos\theta G_1^0+sin\theta G_1^{\frac{\pi}{2}}$$
+
+如果对高斯函数求2阶偏导,还可得到2阶Steerable滤波函数。进一步的讨论详见参考论文。
+
+参考：
+
+1991年IEEE论文：The Design and Use of Steerable Filters
+
+作者：William T. Freeman，斯坦福大学本科+斯坦福/康奈尔大学双料硕士+麻省理工学院博士，麻省理工学院教授。1987年，曾做为访问学者在太原理工大学待了一学年。不知道爱不爱吃刀削面(^ω^)
+
+Edward H. Adelson，密歇根大学博士，麻省理工学院教授。
+
 ## Gabor滤波
 
-一般的函数可以展开为幂级数或者傅立叶级数。这些级数中的幂函数或者正弦函数，被称作“基(basis)函数”。
+一般的函数可以展开为幂级数或者Fourier级数。这些级数中的幂函数或者正弦函数，被称作“基(basis)函数”。
 
 基的属性主要涉及“线性无关”和“正交”这两个名词。
 
-线性无关的几何含义：在$$R^3$$中，如果三个向量不共面，则它们相互线性无关。
+**线性无关**的几何含义：在$$R^3$$(3维空间)中，如果三个向量不共面，则它们相互线性无关。
 
 基如果线性无关，则其函数的级数展开式是唯一的。由于线性相关基使用的比较少，以下如无特指，基均为线性无关基。
 
-正交的几何含义：两个向量正交，则它们是相互垂直的。
+**正交**的几何含义：两个向量正交，则它们是相互垂直的。
 
 正交基一定线性无关，反之则不成立。一般采用施密特正交化方法，将线性无关基，转换为正交基。
 
-幂级数是线性无关基，而傅立叶级数是正交基。
+幂级数是线性无关基，而Fourier级数是正交基。
 
-除了以上两种常用的基函数外，其他函数也可以作为基函数。其中使用最多的基函数是小波函数，其变换也被称作小波变换。
+除了以上两种常用的基函数外，其他函数也可以作为基函数。其中使用最多的基函数是小波(wavelet)函数，其变换也被称作小波变换。
 
 需要指出的是，小波函数不是一个函数，而是一类函数。Gabor函数就是小波函数的其中一种，其定义如下：
 
-$$$$
+$$g_{t,n}(x)=g(x-al)e^{2\pi ibnx},-\infty<l,n<+\infty$$
+
+这里的$$a,b$$为常数，$$g$$为$$L^2(R)$$(立方可积函数)，且$$\parallel g\parallel=1$$。
+
+注：Dennis Gabor（1900~1979），全息学创始人，1971年获诺贝尔物理学奖，著有《Theory of Communication》（1946）。
+
+当$$g$$为高斯函数时，可得到Gabor wavelet：
+
+$$f(x)=e^{-(x-x_0)^2/a^2}e^{-ik_0(x-x_0)}$$
+
+Gabor wavelet的性质：
+
+1.Gabor wavelet不是正交基。
+
+2.Gabor wavelet的Fourier变换还是Gabor wavelet：
+
+$$F(k)=e^{-(k-k_0)^2a^2}e^{-ix_0(k-k_0)}$$
+
+3.从物理上来说，Gabor wavelet等效于在一个正弦载波上，调制一个高斯函数。这也是Dennis Gabor最早提出它的时候的用途。
+
+4.Fourier变换是信号在整个时域内的积分，因此反映的是信号频率的统计特性，没有局部化分析信号的功能。而Gabor变换是一种短时Fourier变换。
+
+将Gabor wavelet扩展到2维，可得到Gabor filter：
+
+$$g(x,y;\lambda,\theta,\psi,\sigma,\gamma)=exp\left(-\frac{x'^2+\gamma^2y'^2}{2\sigma^2}\right)exp\left(i\left(2\pi\frac{x'}{\lambda}+\psi\right)\right)$$
+
+其中，
+
+$$x'=xcos\theta+ysin\theta,y'=-xsin\theta+ycos\theta$$
+
+可以看出Gabor filter是一个复函数，其实部为：
+
+$$g(x,y;\lambda,\theta,\psi,\sigma,\gamma)=exp\left(-\frac{x'^2+\gamma^2y'^2}{2\sigma^2}\right)cos\left(2\pi\frac{x'}{\lambda}+\psi\right)$$
+
+其虚部为：
+
+$$g(x,y;\lambda,\theta,\psi,\sigma,\gamma)=exp\left(-\frac{x'^2+\gamma^2y'^2}{2\sigma^2}\right)sin\left(2\pi\frac{x'}{\lambda}+\psi\right)$$
+
+1987年，J.P. Jones和L.A. Palmer发现Gabor滤波器可以很好地近似单细胞的感受野函数（光强刺激下的传递函数）。
+
+此外，还有对数Gabor函数：
+
+$$G(f)=exp\left(\frac{-(log(f/f_0))^2}{2(log(\sigma/f_0))^2}\right)$$
+
+参考：
+
+1996年IEEE论文：Image Representation Using 2D Gabor Wavelets
+
+作者：Tai Sing Lee，哈佛大学博士，卡内基梅隆大学教授。
 
 # 膨胀与腐蚀(Dilation & Erosion)
 
@@ -241,86 +313,4 @@ $$blackhat(src)=close(src)-src$$
 效果如下：
 
 ![](/images/article/morphology.png)
-
-# 边缘检测
-
-## 梯度
-
-从数学概念上来说，一维梯度G，实际上就是函数的斜率，也就是一阶导数。二维梯度G，一般用两个维度上的偏导数$$G_x$$和$$G_y$$来刻画。常见的方法有：
-
-$$G=|G_x|+|G_y|(模1)$$
-
-$$G=\sqrt{G_x^2+G_y^2}(模2)$$
-
-$$G=max(|G_x|,|G_y|)(模\infty)$$
-
-显然，梯度大的点，有很大可能是边缘点。常用的梯度算子有Roberts算子、Sobel算子和Prewitt算子。
-
-## Roberts算子
-
-$$s_x=\left[\begin{array}{cc} 1&0\\ 0&-1\end{array} \right],s_y=\left[\begin{array}{cc} 0&-1\\ 1&0\end{array} \right]$$
-
-$$G(i,j)=|s_x\otimes f|+|s_y\otimes f|$$
-
-$$=|f(i,j)-f(i+1,j+1)|+|f(i+1,j)-f(i,j-1)|$$
-
-以下将$$s_x\otimes f$$简记做$$G_x$$。
-
-## Sobel算子
-
-$$s_x=\left[\begin{array}{ccc} -1&0&1\\ -2&0&2 \\ -1&0&1\end{array} \right],s_y=\left[\begin{array}{ccc} 1&2&1\\ 0&0&0 \\ -1&-2&-1\end{array} \right]$$
-
-$$G=\sqrt{G_x^2+G_y^2}$$
-
-$$梯度方向\theta=arctan(\frac{G_y}{G_x})$$
-
-## Prewitt算子
-
-$$s_x=\left[\begin{array}{ccc} -1&0&1\\ -1&0&1 \\ -1&0&1\end{array} \right],s_y=\left[\begin{array}{ccc} 1&1&1\\ 0&0&0 \\ -1&-1&-1\end{array} \right]$$
-
-其他与Sobel算子相同。
-
-## 拉普拉斯算子
-
-拉普拉斯算子是一种二阶微分算子，因此，它一般用二阶微分符号$$\nabla^2f$$来表示。其常用的相关核有：
-
-$$h_1=\left[\begin{array}{ccc} 0&-1&0\\ -1&4&-1 \\ 0&-1&0\end{array} \right],h_2=\left[\begin{array}{ccc} -1&-1&-1\\ -1&8&-1 \\ -1&-1&-1\end{array} \right]$$
-
-从中可以看出，拉普拉斯算子的相关核有以下特点：
-
-1.各元素中心对称。
-
-2.中心元素为正值。（在有些课本中，中心元素也可为负值，但相关公式就需要做相应的符号上的修改。在本教程中，中心元素一律为正值。）
-
-3.所有元素的和为0。
-
-拉普拉斯算子和正态分布有很大关联，也有标准差$$\sigma$$的概念。一般来说，中心元素的值越大，$$\sigma$$越小。算子对图像的模糊（或锐化）程度与$$\sigma$$成正比。
-
-## 对称梯度算子
-
-$$s_x=\left[\begin{array}{ccc} -1&0&1\\ -d&0&d \\ -1&0&1\end{array} \right],s_y=\left[\begin{array}{ccc} 1&d&1\\ 0&0&0 \\ -1&-d&-1\end{array} \right]$$
-
-可以看出Sobel算子$$(d=2)$$和Prewitt算子$$(d=1)$$，都是对称梯度算子的特例。d的常用值还有$$\sqrt{2}$$。
-
-## 波纹算子
-
-$$s_x=\left[\begin{array}{ccc} 0&-1&d\\ 1&0&-1 \\ -d&1&0\end{array} \right],s_y=\left[\begin{array}{ccc} d&-1&0\\ -1&0&1 \\ 0&1&-d\end{array} \right]$$
-
-对称梯度算子和波纹算子都属于边缘子空间基。
-
-## 直线算子
-
-$$s_x=\left[\begin{array}{ccc} 0&1&0\\ -1&0&-1 \\ 0&1&0\end{array} \right],s_y=\left[\begin{array}{ccc} -1&0&1\\ 0&0&0 \\ 1&0&-1\end{array} \right]$$
-
-直线算子和拉普拉斯算子都属于直线子空间基。
-
-# 边界闭合
-
-如果像素$$(s,t)$$在像素$$(x,y)$$的领域，且满足以下条件：
-
-$$|G(s,t)-G(x,y)|\le 幅度阀值T$$
-
-$$|\theta(s,t)-\theta(x,y)|\le 角度阀值A$$
-
-则可将像素$$(s,t)$$和像素$$(x,y)$$连接起来。
 

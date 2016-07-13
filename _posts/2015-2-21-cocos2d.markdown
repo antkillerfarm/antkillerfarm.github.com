@@ -333,6 +333,10 @@ http://blog.csdn.net/xiaowei_cqu
 
 另一个妹子的blog，也是计算机视觉方面的。重庆大学本科+北大硕士，现在Google北京。
 
+http://blog.csdn.net/jinshengtao
+
+一个计算机视觉、机器学习的blog。
+
 http://blog.csdn.net/mmz_xiaokong/article/details/7916163
 
 机器视觉开源处理库汇总。
