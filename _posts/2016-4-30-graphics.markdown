@@ -258,6 +258,14 @@ $$G(f)=exp\left(\frac{-(log(f/f_0))^2}{2(log(\sigma/f_0))^2}\right)$$
 
 作者：Tai Sing Lee，哈佛大学博士，卡内基梅隆大学教授。
 
+## Schmid滤波
+
+参考：
+
+2010年IEEE论文：Constructing models for content-based image retrieval
+
+作者：Cordelia Schmid，女，卡尔斯鲁厄理工学院博士。现在INRIA（法国国家信息与自动化研究所）从事研究工作。
+
 # 膨胀与腐蚀(Dilation & Erosion)
 
 腐蚀和膨胀是对白色部分（高亮部分）而言的，不是黑色部分。膨胀就是图像中的高亮部分进行膨胀，“领域扩张”，效果图拥有比原图更大的高亮区域。腐蚀就是原图中的高亮部分被腐蚀，“领域被蚕食”，效果图拥有比原图更小的高亮区域。
