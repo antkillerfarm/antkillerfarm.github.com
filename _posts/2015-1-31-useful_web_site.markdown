@@ -41,6 +41,10 @@ https://github.com/HQarroum/awesome-iot
 
 一个物联网方面的资料汇总。
 
+http://academic.research.microsoft.com/
+
+微软学术搜索，查论文的好帮手。
+
 ## 工具软件及其官网
 
 Box2D---www.box2d.org

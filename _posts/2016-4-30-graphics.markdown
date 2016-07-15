@@ -190,6 +190,8 @@ Edward H. Adelson，密歇根大学博士，麻省理工学院教授。
 
 ## Gabor滤波
 
+### Gabor滤波的数学原理
+
 一般的函数可以展开为幂级数或者Fourier级数。这些级数中的幂函数或者正弦函数，被称作“基(basis)函数”。
 
 基的属性主要涉及“线性无关”和“正交”这两个名词。
@@ -220,15 +222,13 @@ $$f(x)=e^{-(x-x_0)^2/a^2}e^{-ik_0(x-x_0)}$$
 
 Gabor wavelet的性质：
 
-1.Gabor wavelet不是正交基。
-
-2.Gabor wavelet的Fourier变换还是Gabor wavelet：
+1.Gabor wavelet的Fourier变换还是Gabor wavelet：
 
 $$F(k)=e^{-(k-k_0)^2a^2}e^{-ix_0(k-k_0)}$$
 
-3.从物理上来说，Gabor wavelet等效于在一个正弦载波上，调制一个高斯函数。这也是Dennis Gabor最早提出它的时候的用途。
+2.从物理上来说，Gabor wavelet等效于在一个正弦载波上，调制一个高斯函数。这也是Dennis Gabor最早提出它的时候的用途。
 
-4.Fourier变换是信号在整个时域内的积分，因此反映的是信号频率的统计特性，没有局部化分析信号的功能。而Gabor变换是一种短时Fourier变换。
+3.Fourier变换是信号在整个时域内的积分，因此反映的是信号频率的统计特性，没有局部化分析信号的功能。而Gabor变换是一种短时Fourier变换，具有良好的时频局部化特性。即非常容易地调整Gabor滤波器的方向、基频带宽及中心频率从而能够最好的兼顾信号在时空域和频域中的分辨能力；
 
 将Gabor wavelet扩展到2维，可得到Gabor filter：
 
@@ -238,6 +238,8 @@ $$g(x,y;\lambda,\theta,\psi,\sigma,\gamma)=exp\left(-\frac{x'^2+\gamma^2y'^2}{2\
 
 $$x'=xcos\theta+ysin\theta,y'=-xsin\theta+ycos\theta$$
 
+$$\lambda$$：正弦函数波长；$$\theta$$：Gabor核函数的方向；$$\psi$$：相位偏移；$$\sigma$$：高斯函数的标准差；$$\gamma$$： 空间的宽高比。
+
 可以看出Gabor filter是一个复函数，其实部为：
 
 $$g(x,y;\lambda,\theta,\psi,\sigma,\gamma)=exp\left(-\frac{x'^2+\gamma^2y'^2}{2\sigma^2}\right)cos\left(2\pi\frac{x'}{\lambda}+\psi\right)$$
@@ -246,17 +248,24 @@ $$g(x,y;\lambda,\theta,\psi,\sigma,\gamma)=exp\left(-\frac{x'^2+\gamma^2y'^2}{2\
 
 $$g(x,y;\lambda,\theta,\psi,\sigma,\gamma)=exp\left(-\frac{x'^2+\gamma^2y'^2}{2\sigma^2}\right)sin\left(2\pi\frac{x'}{\lambda}+\psi\right)$$
 
-1987年，J.P. Jones和L.A. Palmer发现Gabor滤波器可以很好地近似单细胞的感受野函数（光强刺激下的传递函数）。
-
 此外，还有对数Gabor函数：
 
 $$G(f)=exp\left(\frac{-(log(f/f_0))^2}{2(log(\sigma/f_0))^2}\right)$$
 
+### Gabor滤波的使用方法
+
+1987年，J.P. Jones和L.A. Palmer发现Gabor变换所采用的核（Kernels）与哺乳动物视觉皮层简单细胞2D感受野剖面（Profile）非常相似。
+
+
 参考：
 
-1996年IEEE论文：Image Representation Using 2D Gabor Wavelets
+1.1996年IEEE论文：Image Representation Using 2D Gabor Wavelets
 
 作者：Tai Sing Lee，哈佛大学博士，卡内基梅隆大学教授。
+
+2.1988年IEEE论文：Complete Discrete 2-D Gabor Transforms by Neural Networks for Image Analysis and Compression
+
+作者：JohnG. Daugman，哈佛大学博士，剑桥大学教授。
 
 ## Schmid滤波
 
@@ -286,39 +295,4 @@ $$g(i,j)=min_{k,l}f(i,j)$$
 
 ![](/images/article/dilate_erode.png)
 
-# 高级形态学操作
-
-1.开运算（Opening Operation）
-
-$$open(src)=dilate(erode(src))$$
-
-开运算可以用来消除小物体、在纤细点处分离物体、平滑较大物体的边界的同时并不明显改变其面积。
-
-2.闭运算(Closing Operation)
-
-$$close(src)=erode(dilate(src))$$
-
-闭运算能够排除小型黑洞(黑色区域)。
-
-3.形态学梯度（Morphological Gradient）
-
-$$morphgrad(src)=dilate(src)-erode(src)$$
-
-对二值图像进行这一操作可以将团块（blob）的边缘突出出来。我们可以用形态学梯度来保留物体的边缘轮廓。
-
-4.顶帽（Top Hat）
-
-$$tophat(src)=src-open(src)$$
-
-顶帽运算往往用来分离比邻近点亮一些的斑块。当一幅图像具有大幅的背景的时候，而微小物品比较有规律的情况下，可以使用顶帽运算进行背景提取。
-
-5.黑帽（Black Hat）
-
-$$blackhat(src)=close(src)-src$$
-
-黑帽运算后的效果图突出了比原图轮廓周围的区域更暗的区域。
-
-效果如下：
-
-![](/images/article/morphology.png)
 
