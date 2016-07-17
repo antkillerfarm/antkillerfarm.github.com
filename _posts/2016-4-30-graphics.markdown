@@ -62,6 +62,115 @@ $$f\ast h=f\otimes rot180(h)$$
 
 其中，rotN表示将矩阵元素绕中心逆时针旋转N度，显然这里的N只有为90的倍数，才是有意义的。
 
+# 灰度化 
+
+以RGB格式的彩图为例，通常灰度化采用的方法主要有：
+
+方法1：$$Gray=(R+G+B)/3$$
+
+方法2：$$Gray=max(R,G,B)$$
+
+方法3：$$Gray=0.299R+0.587G+0.114B$$（这种参数考虑到了人眼的生理特点）
+
+# 灰度直方图
+
+灰度直方图是灰度级的函数，描述图像中该灰度级的像素个数（或该灰度级像素出现的频率）：其横坐标是灰度级，纵坐标表示图像中该灰度级出现的个数（频率）。
+
+一维直方图的结构表示为:
+
+$$N(P)=[n_1,n_2,\dots,n_{L-1}]$$
+
+其中，L为灰度级的个数，$$n_i$$为每个灰度的像素个数。
+
+同理，可将灰度直方图的概念推广到单独的颜色通道，即所谓的颜色直方图。如下图所示：
+
+![](/images/article/gray_level.png)
+
+# 二值化
+
+二值图也就是黑白图。将灰度图转换成黑白图的过程，就是二值化。二值化的一般算法是：
+
+$$
+g=\begin{cases}
+0,  & f\le t \\
+1, & f>t \\
+\end{cases}
+$$
+
+其中$$t$$被称为阀值。阀值的确定方法有下面几种。
+
+## Otsu法（大津法或最大类间方差法）
+
+该算法是一种动态阈值分割算法。它的主要思想是按照灰度特性将图像划分为背景和目标2部分（这里我们将$$f\le t$$的部分称为背景，其他部分称为目标。），选取门限值，使得背景和目标之间的方差最大。
+
+注：Nobuyuki Otsu，东京大学博士，先后在筑波大学和东京大学担任教授。
+
+其步骤如下：
+
+1.建立图像灰度直方图（共有L个灰度级，每个灰度的像素个数为$$n_i$$，出现概率为$$p_i$$）
+
+$$N=\sum_{i=0}^{L-1}n_i,p_i=\frac{n_i}{N}$$
+
+2.计算背景和目标的出现概率。
+
+$$p_A=\sum_{i=0}^{t}p_i,p_B=\sum_{i=t+1}^{L-1}p_i=1-p_A$$
+
+其中，A和B分别表示背景部分和目标部分。
+
+3.计算A和B两个区域的类间方差。
+
+$$\omega_A=\frac{\sum_{i=0}^{t}ip_i}{p_A},\omega _B=\frac{\sum_{i=t+1}^{L-1}ip_i}{p_B}(公式1)$$
+
+公式1分别计算A和B区域的平均灰度值；
+
+$$\omega_0=p_A\omega_A+p_B\omega_B=\sum_{i=0}^{L-1}ip_i(公式2)$$
+
+公式2计算灰度图像全局的灰度平均值；
+
+$$\sigma^2=p_A(\omega_A-\omega_0)^2+p_B(\omega_B-\omega_0)^2(公式3)$$
+
+公式3计算A、B两个区域的类间方差。
+
+4.针对每一个灰度值，计算类间方差。选择方差最大的灰度值，作为阀值$$t$$。
+
+## 一维交叉熵值法
+
+对于两个分布R和Q，定义其信息交叉熵D如下：
+
+$$R=\{r_1,r_2,...,r_n\},Q=\{q_1,q_2,...,q_n\}$$
+
+$$D(Q,R)=\sum_{k=1}^{n}q_k log_2\frac{q_k}{r_k}$$
+
+注：严格来说，这里定义的是相对熵(relative entropy)，又称为KL散度（Kullback-Leibler divergence）或KL距离，是两个随机分布间距离的度量。从公式可以看出，KL距离和经典概率论中的二项分布有很密切的关系。
+
+交叉熵的严格定义参见：
+
+https://en.wikipedia.org/wiki/Cross_entropy
+
+http://www.voidcn.com/blog/rtygbwwwerr/article/p-5047519.html
+
+二值化过程实际上就是从分布$$R=\{r_1,r_2,...,r_L\}$$到分布$$Q=\{q_A,q_B\}$$的过程。
+
+因此
+
+$$D(t)=\sum_{i=0}^{t}ip_i log_2(\frac{p_i}{\omega_A})+\sum_{i=t+1}^{L-1}ip_i log_2(\frac{p_i}{\omega_B})$$
+
+其中，使得D最小的t即为最小交叉熵意义下的最优阈值。
+
+## 二维Otsu法
+
+Otsu法对噪音和目标大小十分敏感，它仅对类间方差为单峰的图像产生较好的分割效果。
+
+当目标与背景的大小比例悬殊时，类间方差准则函数可能呈现双峰或多峰，此时效果不好，但是Otsu法是用时最少的。
+
+二维Otsu法,在考虑像素点灰度级p的基础上,增加了对像素点邻域平均像素值s的考虑。
+
+如果p比s大很多，说明像素的灰度值远远大于其临域的灰度均值，故而该点很可能是噪声点，反之如果p比s小很多，即该点的像素值比其临域均值小很多，则说明是一个边缘点。这两种点在后续的计算中，都要去除掉。
+
+二维Otsu法的推导过程极为复杂，可参见：
+
+http://blog.csdn.net/likezhaobin/article/details/6915755
+
 # 方框滤波（Box Filter）
 
 $$g=f\otimes h,h=\alpha
@@ -126,7 +235,7 @@ $$\left[\begin{array}{ccc} 0.0625&0.125&0.0625\\ 0.125&0.25&0.125 \\ 0.0625&0.12
 
 从效果来说，高斯滤波可产生类似毛玻璃的效果。
 
-## 中值滤波（Median filter）
+# 中值滤波（Median filter）
 
 中值滤波是一种典型的非线性滤波技术，对于斑点噪声（speckle noise）和椒盐噪声（salt-and-pepper noise）来说尤其有用，对滤除脉冲干扰及图像扫描噪声非常有效，也常用于保护边缘信息。
 
@@ -164,117 +273,6 @@ $$w(i,j,k,l)=d(i,j,k,l)\cdot r(i,j,k,l)=exp\left(-\frac{(i-k)^2+(j-l)^2}{2\sigma
 
 ![](/images/article/bilateral_filter.png)
 
-## Steerable滤波
-
-高斯滤波是一种各向同性滤波，如果想要对特定方向进行滤波的话，可使用Steerable滤波。
-
-对最简二维高斯函数$$G(x,y)=e^{-(x^2+y^2)}$$求1阶偏导可得：
-
-$$G_1^0=\frac{\partial G(x,y)}{\partial x}=-2xe^{-(x^2+y^2)},G_1^{\frac{\pi}{2}}=\frac{\partial G(x,y)}{\partial y}=-2ye^{-(x^2+y^2)}$$
-
-这就是两个轴向上的1阶Steerable滤波函数。
-
-任意角度的1阶Steerable滤波函数为：
-
-$$G_1^{\theta}=cos\theta G_1^0+sin\theta G_1^{\frac{\pi}{2}}$$
-
-如果对高斯函数求2阶偏导,还可得到2阶Steerable滤波函数。进一步的讨论详见参考论文。
-
-参考：
-
-1991年IEEE论文：The Design and Use of Steerable Filters
-
-作者：William T. Freeman，斯坦福大学本科+斯坦福/康奈尔大学双料硕士+麻省理工学院博士，麻省理工学院教授。1987年，曾做为访问学者在太原理工大学待了一学年。不知道爱不爱吃刀削面(^ω^)
-
-Edward H. Adelson，密歇根大学博士，麻省理工学院教授。
-
-## Gabor滤波
-
-### Gabor滤波的数学原理
-
-一般的函数可以展开为幂级数或者Fourier级数。这些级数中的幂函数或者正弦函数，被称作“基(basis)函数”。
-
-基的属性主要涉及“线性无关”和“正交”这两个名词。
-
-**线性无关**的几何含义：在$$R^3$$(3维空间)中，如果三个向量不共面，则它们相互线性无关。
-
-基如果线性无关，则其函数的级数展开式是唯一的。由于线性相关基使用的比较少，以下如无特指，基均为线性无关基。
-
-**正交**的几何含义：两个向量正交，则它们是相互垂直的。
-
-正交基一定线性无关，反之则不成立。一般采用施密特正交化方法，将线性无关基，转换为正交基。
-
-幂级数是线性无关基，而Fourier级数是正交基。
-
-除了以上两种常用的基函数外，其他函数也可以作为基函数。其中使用最多的基函数是小波(wavelet)函数，其变换也被称作小波变换。
-
-需要指出的是，小波函数不是一个函数，而是一类函数。Gabor函数就是小波函数的其中一种，其定义如下：
-
-$$g_{t,n}(x)=g(x-al)e^{2\pi ibnx},-\infty<l,n<+\infty$$
-
-这里的$$a,b$$为常数，$$g$$为$$L^2(R)$$(立方可积函数)，且$$\parallel g\parallel=1$$。
-
-注：Dennis Gabor（1900~1979），全息学创始人，1971年获诺贝尔物理学奖，著有《Theory of Communication》（1946）。
-
-当$$g$$为高斯函数时，可得到Gabor wavelet：
-
-$$f(x)=e^{-(x-x_0)^2/a^2}e^{-ik_0(x-x_0)}$$
-
-Gabor wavelet的性质：
-
-1.Gabor wavelet的Fourier变换还是Gabor wavelet：
-
-$$F(k)=e^{-(k-k_0)^2a^2}e^{-ix_0(k-k_0)}$$
-
-2.从物理上来说，Gabor wavelet等效于在一个正弦载波上，调制一个高斯函数。这也是Dennis Gabor最早提出它的时候的用途。
-
-3.Fourier变换是信号在整个时域内的积分，因此反映的是信号频率的统计特性，没有局部化分析信号的功能。而Gabor变换是一种短时Fourier变换，具有良好的时频局部化特性。即非常容易地调整Gabor滤波器的方向、基频带宽及中心频率从而能够最好的兼顾信号在时空域和频域中的分辨能力；
-
-将Gabor wavelet扩展到2维，可得到Gabor filter：
-
-$$g(x,y;\lambda,\theta,\psi,\sigma,\gamma)=exp\left(-\frac{x'^2+\gamma^2y'^2}{2\sigma^2}\right)exp\left(i\left(2\pi\frac{x'}{\lambda}+\psi\right)\right)$$
-
-其中，
-
-$$x'=xcos\theta+ysin\theta,y'=-xsin\theta+ycos\theta$$
-
-$$\lambda$$：正弦函数波长；$$\theta$$：Gabor核函数的方向；$$\psi$$：相位偏移；$$\sigma$$：高斯函数的标准差；$$\gamma$$： 空间的宽高比。
-
-可以看出Gabor filter是一个复函数，其实部为：
-
-$$g(x,y;\lambda,\theta,\psi,\sigma,\gamma)=exp\left(-\frac{x'^2+\gamma^2y'^2}{2\sigma^2}\right)cos\left(2\pi\frac{x'}{\lambda}+\psi\right)$$
-
-其虚部为：
-
-$$g(x,y;\lambda,\theta,\psi,\sigma,\gamma)=exp\left(-\frac{x'^2+\gamma^2y'^2}{2\sigma^2}\right)sin\left(2\pi\frac{x'}{\lambda}+\psi\right)$$
-
-此外，还有对数Gabor函数：
-
-$$G(f)=exp\left(\frac{-(log(f/f_0))^2}{2(log(\sigma/f_0))^2}\right)$$
-
-### Gabor滤波的使用方法
-
-1987年，J.P. Jones和L.A. Palmer发现Gabor变换所采用的核（Kernels）与哺乳动物视觉皮层简单细胞2D感受野剖面（Profile）非常相似。
-
-
-参考：
-
-1.1996年IEEE论文：Image Representation Using 2D Gabor Wavelets
-
-作者：Tai Sing Lee，哈佛大学博士，卡内基梅隆大学教授。
-
-2.1988年IEEE论文：Complete Discrete 2-D Gabor Transforms by Neural Networks for Image Analysis and Compression
-
-作者：JohnG. Daugman，哈佛大学博士，剑桥大学教授。
-
-## Schmid滤波
-
-参考：
-
-2010年IEEE论文：Constructing models for content-based image retrieval
-
-作者：Cordelia Schmid，女，卡尔斯鲁厄理工学院博士。现在INRIA（法国国家信息与自动化研究所）从事研究工作。
-
 # 膨胀与腐蚀(Dilation & Erosion)
 
 腐蚀和膨胀是对白色部分（高亮部分）而言的，不是黑色部分。膨胀就是图像中的高亮部分进行膨胀，“领域扩张”，效果图拥有比原图更大的高亮区域。腐蚀就是原图中的高亮部分被腐蚀，“领域被蚕食”，效果图拥有比原图更小的高亮区域。
@@ -295,4 +293,39 @@ $$g(i,j)=min_{k,l}f(i,j)$$
 
 ![](/images/article/dilate_erode.png)
 
+# 高级形态学操作
+
+1.开运算（Opening Operation）
+
+$$open(src)=dilate(erode(src))$$
+
+开运算可以用来消除小物体、在纤细点处分离物体、平滑较大物体的边界的同时并不明显改变其面积。
+
+2.闭运算(Closing Operation)
+
+$$close(src)=erode(dilate(src))$$
+
+闭运算能够排除小型黑洞(黑色区域)。
+
+3.形态学梯度（Morphological Gradient）
+
+$$morphgrad(src)=dilate(src)-erode(src)$$
+
+对二值图像进行这一操作可以将团块（blob）的边缘突出出来。我们可以用形态学梯度来保留物体的边缘轮廓。
+
+4.顶帽（Top Hat）
+
+$$tophat(src)=src-open(src)$$
+
+顶帽运算往往用来分离比邻近点亮一些的斑块。当一幅图像具有大幅的背景的时候，而微小物品比较有规律的情况下，可以使用顶帽运算进行背景提取。
+
+5.黑帽（Black Hat）
+
+$$blackhat(src)=close(src)-src$$
+
+黑帽运算后的效果图突出了比原图轮廓周围的区域更暗的区域。
+
+效果如下：
+
+![](/images/article/morphology.png)
 

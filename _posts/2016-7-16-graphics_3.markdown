@@ -1,0 +1,193 @@
+---
+layout: post
+title:  Steerable滤波, Gabor滤波, Schmid滤波
+category: technology 
+---
+
+# Steerable滤波
+
+高斯滤波是一种各向同性滤波，如果想要对特定方向进行滤波的话，可使用Steerable滤波。
+
+对最简二维高斯函数$$G(x,y)=e^{-(x^2+y^2)}$$求1阶偏导可得：
+
+$$G_1^0=\frac{\partial G(x,y)}{\partial x}=-2xe^{-(x^2+y^2)},G_1^{\frac{\pi}{2}}=\frac{\partial G(x,y)}{\partial y}=-2ye^{-(x^2+y^2)}$$
+
+这就是两个轴向上的1阶Steerable滤波函数。
+
+任意角度的1阶Steerable滤波函数为：
+
+$$G_1^{\theta}=cos\theta G_1^0+sin\theta G_1^{\frac{\pi}{2}}$$
+
+如果对高斯函数求2阶偏导,还可得到2阶Steerable滤波函数。进一步的讨论详见参考论文。
+
+参考：
+
+1991年IEEE论文：The Design and Use of Steerable Filters
+
+作者：William T. Freeman，斯坦福大学本科+斯坦福/康奈尔大学双料硕士+麻省理工学院博士，麻省理工学院教授。1987年，曾做为访问学者在太原理工大学待了一学年。不知道爱不爱吃刀削面(^ω^)
+
+Edward H. Adelson，密歇根大学博士，麻省理工学院教授。
+
+# Gabor滤波
+
+## 基、线性无关、正交
+
+一般的函数可以展开为幂级数或者Fourier级数。这些级数中的幂函数或者正弦函数，被称作“基(basis)函数”。
+
+基的属性主要涉及“线性无关”和“正交”这两个名词。
+
+**线性无关**的几何含义：在$$R^3$$(3维空间)中，如果三个向量不共面，则它们相互线性无关。
+
+基如果线性无关，则其函数的级数展开式是唯一的。由于线性相关基使用的比较少，以下如无特指，基均为线性无关基。
+
+**正交**的几何含义：两个向量正交，则它们是相互垂直的。
+
+正交基一定线性无关，反之则不成立。一般采用施密特正交化方法，将线性无关基，转换为正交基。
+
+幂级数是线性无关基，而Fourier级数是正交基。
+
+## Gabor wavelet
+
+除了以上两种常用的基函数外，其他函数也可以作为基函数。其中使用最多的基函数是小波(wavelet)函数，其变换也被称作小波变换。
+
+需要指出的是，小波函数不是一个函数，而是一类函数。Gabor函数就是小波函数的其中一种，其定义如下：
+
+$$g_{t,n}(x)=g(x-al)e^{2\pi ibnx},-\infty<l,n<+\infty$$
+
+这里的$$a,b$$为常数，$$g$$为$$L^2(R)$$(立方可积函数)，且$$\parallel g\parallel=1$$。
+
+注：Dennis Gabor（1900~1979），全息学创始人，1971年获诺贝尔物理学奖，著有《Theory of Communication》（1946）。
+
+当$$g$$为高斯函数时，可得到Gabor wavelet：
+
+$$f(x)=e^{-(x-x_0)^2/a^2}e^{-ik_0(x-x_0)}$$
+
+Gabor wavelet的性质：
+
+1.Gabor wavelet的Fourier变换还是Gabor wavelet：
+
+$$F(k)=e^{-(k-k_0)^2a^2}e^{-ix_0(k-k_0)}$$
+
+2.从物理上来说，Gabor wavelet等效于在一个正弦载波（频域）上，调制一个高斯函数（时空域）。这也是Dennis Gabor最早提出它的时候的用途。
+
+3.Fourier变换是信号在整个时域内的积分，因此反映的是信号频率的统计特性，没有局部化分析信号的功能。而Gabor变换是一种短时Fourier变换，具有良好的时频局部化特性，即非常容易地调整Gabor滤波器的方向、基频带宽及中心频率，从而能够最好的兼顾信号在时空域和频域中的分辨能力。
+
+## Gabor filter
+
+将Gabor wavelet扩展到2维，可得到Gabor filter(图像实际上就是一种2维信号)：
+
+$$g(x,y;\lambda,\theta,\psi,\sigma,\gamma)=exp\left(-\frac{x'^2+\gamma^2y'^2}{2\sigma^2}\right)exp\left(i\left(2\pi\frac{x'}{\lambda}+\psi\right)\right)$$
+
+其中，
+
+$$x'=xcos\theta+ysin\theta,y'=-xsin\theta+ycos\theta$$
+
+$$\lambda$$：正弦函数波长；$$\theta$$：Gabor核函数的方向；$$\psi$$：相位偏移；$$\sigma$$：高斯函数的标准差；$$\gamma$$： 空间的宽高比。
+
+可以看出Gabor filter是一个复函数，其实部为：
+
+$$g(x,y;\lambda,\theta,\psi,\sigma,\gamma)=exp\left(-\frac{x'^2+\gamma^2y'^2}{2\sigma^2}\right)cos\left(2\pi\frac{x'}{\lambda}+\psi\right)$$
+
+其虚部为：
+
+$$g(x,y;\lambda,\theta,\psi,\sigma,\gamma)=exp\left(-\frac{x'^2+\gamma^2y'^2}{2\sigma^2}\right)sin\left(2\pi\frac{x'}{\lambda}+\psi\right)$$
+
+此外，还有对数Gabor函数：
+
+$$G(f)=exp\left(\frac{-(log(f/f_0))^2}{2(log(\sigma/f_0))^2}\right)$$
+
+## Gabor滤波的效果
+
+参考文献3，给出了Gabor滤波的效果图，如下所示：
+
+![](/images/article/gabor.png)
+
+**图1**
+
+从效果来看，该滤波可获得美术上的浮雕效果。但实际上，大多数的边缘检测算法都可得到类似效果，这并不是Gabor滤波的主流用法。
+
+以下对参考文献3做一个补充说明：
+
+1.Gabor滤波是复数域的，这点和之前提到的滤波算法有很大的不同。因此，Gabor滤波计算核的方法有3种：复数、实部和虚部。参考文献3采用的是实部法。1987年，J.P. Jones和L.A. Palmer发现Gabor变换所采用的核（Kernels）的实部与哺乳动物视觉皮层简单细胞2D感受野剖面（Profile）非常相似。
+
+2.实部计算的结果有正有负。参考文献3给出的归一化算法，很有通用性，摘录如下：
+
+$$G(x,y)=\frac{(f(x,y)-min(F))*D}{max(F)-min(F)}$$
+
+其中，F为源图像所有像素的集合，D为总的灰度级数。
+
+## Gabor滤波采样方式与图像压缩
+
+Gabor滤波和之前的滤波算法的另一大差异是：Gabor滤波核不是一个，而是由若干不同参数组合而成的一组核，其中的每一个参数组合被称为一个采样点。
+
+从Gabor filter的计算公式亦可看出，组成采样点的参数，既有时空域参数，也有频域参数。这些采样点在时空域和频域中如何分布，才能达到最终效果呢？
+
+由于Gabor filter不是正交基，因此针对采样点分布提出了**Tight Frame**的概念。参考文献1给出了满足Tight Frame要求的采样点分布方式（简称采样方式）的条件。这里的推导非常复杂，但从概念上可以类比信号处理中的奈奎斯特采样定理。
+
+Tight Frame有个重要特性：
+
+如果采样方式满足Tight Frame条件，且$$图像集B=Gabor(图像A),图像C=Gabor^{-1}(图像集B)$$，那么$$图像A\approx 图像C$$。其中的$$Gabor$$和$$Gabor^{-1}$$分别表示Gabor变换及其逆变换。
+
+参考文献2给出了采用上述方法对Lena图进行压缩并还原的例子。这也是Gabor滤波在图像处理领域的早期典型应用。
+
+## Gabor滤波与模式识别
+
+![](/images/article/gabor2.png)
+
+**图2**
+
+2000年以后，科学界对Gabor滤波的研究，主要集中在模式识别方面。比如图2就是参考文献4中给出的人脸识别方面的Gabor滤波效果图。其中，左边是原图，而右边是40组不同参数的Gabor滤波器所得到的滤波效果图。
+
+注：1幅原图变成40幅滤波效果图的过程，在数学上是个升维过程。在后处理阶段为了处理的方便，往往会进行数据降维，如参考文献5所示。
+
+从中还可以看出，虽然图1显示出一定的艺术处理效果，但大多数情况下，Gabor滤波所得的图像是如图2所示的极度扭曲而无明显意义的图片。Gabor滤波的真正用途，并不是给人看，而是给机器看。
+
+从上面的讨论可知，Gabor滤波是一种带通滤波，使用不同的时空域或频域参数，可以过滤出不同的时空域或频域特征。这些特征正是模式识别所需要的。
+
+![](/images/article/gabor3.png)
+
+**图3**
+
+图3是参考文献4给出的一种Gabor滤波器的使用场景图，从中可以看出Gabor滤波效果图是如何应用到人脸识别技术中的。
+
+必须指出的是：**Gabor滤波效果图的后处理方法有很多种，而图3仅是其中一种而已。**
+
+## 参考
+
+1.1996年IEEE论文：Image Representation Using 2D Gabor Wavelets
+
+作者：Tai Sing Lee，哈佛大学博士，卡内基梅隆大学教授。
+
+2.1988年IEEE论文：Complete Discrete 2-D Gabor Transforms by Neural Networks for Image Analysis and Compression
+
+作者：JohnG. Daugman，哈佛大学博士，剑桥大学教授。
+
+3.http://blog.csdn.net/xiaowei_cqu/article/details/24745945
+
+4.Face recognition using Ada-Boosted Gabor features
+
+作者：Peng Yang，Shiguang Shan，Wen Gao，Stan Z. Li，Dong Zhang，中科院计算所和微软亚洲研究院的几个小牛。
+
+5.http://www.cnblogs.com/Jack-Lee/p/3649114.html
+
+# Schmid滤波
+
+Schmid滤波器是一种类Gabor滤波器。其计算公式为：
+
+$$F(r,\sigma,\tau)=\frac{1}{Z}cos\left(\frac{2\pi\tau r}{\sigma}\right)e^{-\frac{r^2}{2\sigma^2}}$$
+
+下图是Schmid滤波器和Gabor滤波器的“核”图像。“核”图像是滤波器“核”函数的图像化展示。
+
+![](/images/article/gabor4.png)
+
+其中，前13个是Schmid滤波器，后8个是Gabor滤波器。“核”图像中的白色部分，实际上就是该滤波器的带通部分。
+
+从中可以看出，Gabor滤波器有方向性，而Schmid滤波器是各向同性的。
+
+## 参考
+
+2010年IEEE论文：Constructing models for content-based image retrieval
+
+作者：Cordelia Schmid，女，卡尔斯鲁厄理工学院博士。现在INRIA（法国国家信息与自动化研究所）从事研究工作。
+
+

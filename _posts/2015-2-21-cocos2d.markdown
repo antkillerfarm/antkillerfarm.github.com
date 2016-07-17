@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  cocos2d, Box2D, perl, OpenCV
+title:  cocos2d, Box2D, OpenCV
 category: technology 
 ---
 
@@ -271,22 +271,6 @@ DisplayLinkDirector::mainLoop
 
 Director::drawScene
 
-# perl
-
-中文教程：
-
-http://www.cbi.pku.edu.cn/chinese/documents/perl/index.htm
-
-perl的语法和C差别不算太大，好多语法大致上从关键字也可以猜出来。这里仅对一些符号做个简短的说明。
-
-`$name`：变量name。
-
-`@name`：数组name。
-
-`&name`：函数name。这种情况下，name的定义在使用之后。如果name的定义在使用之前，`&`可省略。
-
-`%name`：哈希数组name。
-
 # OpenCV
 
 ## 参考资料
@@ -312,6 +296,14 @@ http://itseez.com/
 http://docs.opencv.org/2.4/doc/tutorials/tutorials.html
 
 其他教程：
+
+http://download.csdn.net/detail/antkillerfarm/9578482
+
+《Learning OpenCV》，Gary Bradski和Adrian Kaehler合著的书籍。
+
+Gary Rost Bradski，UC Berkeley的本科+波士顿大学博士，斯坦福大学顾问教授。OpenCV项目创始人，有20年以上的相关经验。百度首席科学家吴恩达算是他的小弟吧。
+
+Adrian Kaehler，哥伦比亚大学博士。
 
 http://wiki.opencv.org.cn/
 
