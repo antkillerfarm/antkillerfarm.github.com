@@ -4,6 +4,62 @@ title:  图像处理理论（二）
 category: technology 
 ---
 
+# 膨胀与腐蚀(Dilation & Erosion)
+
+腐蚀和膨胀是对白色部分（高亮部分）而言的，不是黑色部分。膨胀就是图像中的高亮部分进行膨胀，“领域扩张”，效果图拥有比原图更大的高亮区域。腐蚀就是原图中的高亮部分被腐蚀，“领域被蚕食”，效果图拥有比原图更小的高亮区域。
+
+具体方法如下：
+
+1.膨胀。
+
+$$g(i,j)=max_{k,l}f(i,j)$$
+
+2.腐蚀。
+
+$$g(i,j)=min_{k,l}f(i,j)$$
+
+这里仿照C语言的记法，将膨胀操作记为$$dilate(src)$$，其中src表示源图像。同理，将腐蚀操作记为$$erode(src)$$。
+
+效果如下：
+
+![](/images/article/dilate_erode.png)
+
+# 高级形态学操作
+
+1.开运算（Opening Operation）
+
+$$open(src)=dilate(erode(src))$$
+
+开运算可以用来消除小物体、在纤细点处分离物体、平滑较大物体的边界的同时并不明显改变其面积。
+
+2.闭运算(Closing Operation)
+
+$$close(src)=erode(dilate(src))$$
+
+闭运算能够排除小型黑洞(黑色区域)。
+
+3.形态学梯度（Morphological Gradient）
+
+$$morphgrad(src)=dilate(src)-erode(src)$$
+
+对二值图像进行这一操作可以将团块（blob）的边缘突出出来。我们可以用形态学梯度来保留物体的边缘轮廓。
+
+4.顶帽（Top Hat）
+
+$$tophat(src)=src-open(src)$$
+
+顶帽运算往往用来分离比邻近点亮一些的斑块。当一幅图像具有大幅的背景的时候，而微小物品比较有规律的情况下，可以使用顶帽运算进行背景提取。
+
+5.黑帽（Black Hat）
+
+$$blackhat(src)=close(src)-src$$
+
+黑帽运算后的效果图突出了比原图轮廓周围的区域更暗的区域。
+
+效果如下：
+
+![](/images/article/morphology.png)
+
 # 边缘检测
 
 ## 梯度
@@ -119,6 +175,30 @@ Canny边缘检测算子是John F.Canny于1986年开发出来的一个多级边�
 参考：
 
 http://www.cse.iitd.ernet.in/~pkalra/csl783/canny.pdf
+
+# 距离变换
+
+距离变换(distance transform)是一种将二值图像灰度化的变换。
+
+方法：
+
+首先对图像进行二值化处理（这里的二值化通常是边缘检测后的结果），然后给每个像素赋值为离它最近的边界像素点与其的距离（Manhattan距离或欧氏距离），以得到distance metric(距离矩阵)，那么离边界越远的点越亮。
+
+效果图：
+
+![](/images/article/distance_trans.png)
+
+常用的距离公式有：
+
+$$\rho(r)=\frac{r^2}{2}$$
+
+$$\rho(r)=r$$
+
+$$\rho(r)=2\left(\sqrt{1+\frac{r^2}{2}}-1\right)$$
+
+$$\rho(r)=C^2\left(\frac{r}{C}-log\left(1+\frac{r}{C}\right)\right),C=1.3998$$
+
+$$\rho(r)=\frac{C^2}{2}\left[1-exp\left(-\left(\frac{r}{C}\right)^2\right)\right],C=2.9846$$
 
 # 锐化
 
