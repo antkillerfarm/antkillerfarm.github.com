@@ -188,6 +188,8 @@ http://www.cse.iitd.ernet.in/~pkalra/csl783/canny.pdf
 
 ![](/images/article/distance_trans.png)
 
+这种效果通常叫做羽化效果。
+
 常用的距离公式有：
 
 $$\rho(r)=\frac{r^2}{2}$$
