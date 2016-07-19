@@ -246,3 +246,9 @@ YYYY-MM-DDThh:mm:ss.sTZD (eg 1997-07-16T19:20:30.45+01:00)
 
 其中的TZD表示time zone designator。
 
+## wifi配置
+
+Linux下的wifi配置主要使用iw系列命令，包括iw、iwconfig、iwlist、iwpriv。参见：
+
+http://blog.csdn.net/liangyamin/article/details/7209761
+

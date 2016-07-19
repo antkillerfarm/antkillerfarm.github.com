@@ -329,6 +329,10 @@ http://blog.csdn.net/jinshengtao
 
 一个计算机视觉、机器学习的blog。
 
+http://www.cnblogs.com/jerrylead/
+
+一个机器学习的blog。
+
 http://blog.csdn.net/mmz_xiaokong/article/details/7916163
 
 机器视觉开源处理库汇总。
@@ -380,3 +384,4 @@ saturate_cast宏会对结果进行转换，以确保它在有效范围之内。
 OpenCV中的运算，除了软件实现之外，还有若干种硬件加速，包括OpenCL、CUDA和IPPICV。
 
 Intel针对自身的硬件加速，推出了IPP（Integrated Performance Primitives）软件包，但这个包是收费的。从OpenCV 3.0开始，Intel将IPP的一个子集提取出来，免费供OpenCV项目使用。这个子集，俗称“IPPICV”。
+

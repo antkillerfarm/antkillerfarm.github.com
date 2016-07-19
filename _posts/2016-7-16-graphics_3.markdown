@@ -1,8 +1,30 @@
 ---
 layout: post
-title:  Steerable滤波, Gabor滤波, Schmid滤波
+title:  双边滤波, Steerable滤波, Gabor滤波, Schmid滤波
 category: technology 
 ---
+
+## 双边滤波（Bilateral filter）
+
+双边滤波（Bilateral filter）是一种可以保边去噪的滤波器。其输出像素的值依赖于邻域像素的值的加权组合，即：
+
+$$g(i,j)=\frac{\sum_{k,l}f(k,l)w(i,j,k,l)}{\sum_{k,l}w(i,j,k,l)}$$
+
+也就是：
+
+$$h=\frac{w(i,j,k,l)}{\sum_{k,l}w(i,j,k,l)}$$
+
+其中，
+
+$$w(i,j,k,l)=d(i,j,k,l)\cdot r(i,j,k,l)=exp\left(-\frac{(i-k)^2+(j-l)^2}{2\sigma_d^2}\right)\cdot exp\left(-\frac{\|f(i,j)-f(k,l)\|^2}{2\sigma_r^2}\right)$$
+
+这里的$$d(i,j,k,l)$$由于只与定义域有关，通常叫做“定义域核”。实际上，这就是一个高斯滤波核。而$$r(i,j,k,l)$$由于和像素值的差有关（像素差越大，权重越小），也被叫做“值域核”。
+
+从效果来说，双边滤波可产生类似美肤的效果。皮肤上的皱纹和斑，与正常皮肤的差异，远小于黑白眼珠之间的差异，因此前者被平滑，而后者被保留。
+
+为了体现效果，这里来张大叔的照片。
+
+![](/images/article/bilateral_filter.png)
 
 # Steerable滤波
 

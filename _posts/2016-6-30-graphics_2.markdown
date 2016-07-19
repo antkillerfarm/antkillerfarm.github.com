@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  图像处理理论（二）
+title:  机器视觉理论（二）
 category: technology 
 ---
 
@@ -202,6 +202,48 @@ $$\rho(r)=C^2\left(\frac{r}{C}-log\left(1+\frac{r}{C}\right)\right),C=1.3998$$
 
 $$\rho(r)=\frac{C^2}{2}\left[1-exp\left(-\left(\frac{r}{C}\right)^2\right)\right],C=2.9846$$
 
+# 马氏距离
+
+Mahalanobis Distance是印度现代统计学之父Prasanta Chandra Mahalanobis于1936年提出的概念。
+
+p维空间的两点（两个p维向量x,y）的欧氏距离定义为：
+
+$$d_E(x,y)=\sqrt{(x_1-y_1)^2+...+(x_p-y_p)^2}=\sqrt{(x-y)^T(x-y)}（公式1）$$
+
+因此，x到原点的距离为：
+
+$$\parallel x\parallel=d_E(x,0)=\sqrt{(x_1)^2+...+(x_p)^2}（公式2）$$
+
+也就是：
+
+$$x_1^2+...+x_p^2=\parallel x\parallel^2（公式3）$$
+
+这实际上是个正球体的方程，也就是说观测数据x的各个分量对x至中心的欧氏距离贡献是相等的。然而在统计学中我们希望寻求这样一种距离，它的各个分量的作用程度是不同的。差别较大的分量应该接受较小的权重。
+
+于是，公式3可变形为椭球体方程：
+
+$$(\frac{x_1}{s_1})^2+...+(\frac{x_p}{s_p})^2=\parallel x\parallel^2（公式4）$$
+
+其中的$$s_i$$表示i分量的权重。
+
+公式4进一步整理，并扩展到两个p维向量x,y，可得马氏距离定义：
+
+$$d_M(x,y)=\sqrt{(\frac{x_1-y_1}{s_1})^2+...+(\frac{x_p-y_p}{s_p})^2}=\sqrt{(x-y)^TD^{-1}(x-y)}（公式5）$$
+
+其中，$$D=diag(s_1^2,...,s_p^2)$$。
+
+注意：这里p维向量是正交基，否则的话，D将不是主对角线矩阵，而是一个普通的协方差矩阵。显然如果D为单位矩阵的话，马氏距离就变成了欧氏距离。
+
+# 闵可夫斯基距离
+
+Hermann Minkowski（1864-1909），德国数学家，哥廷根大学数学教授，爱因斯坦的老师。
+
+Minkowski distance的定义：
+
+$$d(x,y)=\sqrt[\lambda]{\sum_{i=1}^{n}\mid x_i-y_i\mid^{\lambda}}$$
+
+显然，当$$\lambda=2$$时，该距离为欧氏距离。当$$\lambda=1$$时，也被称为CityBlock Distance或Manhattan Distance（曼哈顿距离）。
+
 # 锐化
 
 锐化是与模糊相反的图像操作，它的主要思想是增大图像色彩（或灰度）的对比度，简单的说就是：让亮的更亮，让暗的更暗。因此，锐化操作和边缘检测有很大的共同点，常用的锐化算法有梯度锐化和拉普拉斯锐化。
@@ -265,3 +307,10 @@ $$L_i=G_i-PyrUp(G_{i+1})=G_i-Up(G_{i+1})\otimes H_{5x5}$$
 
 # 霍夫变换
 
+# K-Means算法
+
+http://www.csdn.net/article/2012-07-03/2807073-k-means
+
+http://www.cnblogs.com/leoo2sk/archive/2010/09/20/k-means.html
+
+http://www.cnblogs.com/jerrylead/archive/2011/04/06/2006910.html
