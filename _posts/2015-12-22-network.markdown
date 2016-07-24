@@ -336,14 +336,6 @@ Office | MS Office | LibreOffice
 思维导图 | Mindmanager | FreeMind
 快速原型 | Axure RP | pencil
 
-## GNU Octave
-
-GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。
-
-安装方法:
-
-`sudo apt-get install octave`
-
 ## 发行版乱战
 
 Linux以发行版众多闻名于世。最近发现了以下网站，或可对各个发行版进行一个简单的比较。

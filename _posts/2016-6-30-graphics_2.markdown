@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器视觉理论（二）
+title:  图像处理理论（二）
 category: technology 
 ---
 
@@ -23,6 +23,8 @@ $$g(i,j)=min_{k,l}f(i,j)$$
 效果如下：
 
 ![](/images/article/dilate_erode.png)
+
+膨胀和腐蚀不仅是基本的形态学操作，而且也是一种滤波器。它们和中值滤波一样，都是百分比（percentile）滤波的特例。
 
 # 高级形态学操作
 
@@ -64,7 +66,9 @@ $$blackhat(src)=close(src)-src$$
 
 ## 梯度
 
-从数学概念上来说，一维梯度G，实际上就是函数的斜率，也就是一阶导数。二维梯度G，一般用两个维度上的偏导数$$G_x$$和$$G_y$$来刻画。常见的方法有：
+从数学概念上来说，一维梯度G，实际上就是函数的斜率，也就是一阶导数。二维梯度G是个向量，一般用两个维度上的偏导数$$G_x$$和$$G_y$$来刻画，即$$G=[G_x,G_y]$$。显然，沿梯度向量方向，函数值增加最快。
+
+梯度向量求模的常见的方法有：
 
 $$G=|G_x|+|G_y|(模1)$$
 
@@ -261,6 +265,8 @@ f, & G\le T \\
 
 $$g=f+\nabla^2f$$
 
+其中$$\nabla^2f$$表示f的二阶导数。
+
 # 图像金字塔
 
 一幅图像的金字塔是一系列以金字塔形状排列的分辨率逐步降低，且来源于同一张原始图的图像集合。
@@ -307,10 +313,4 @@ $$L_i=G_i-PyrUp(G_{i+1})=G_i-Up(G_{i+1})\otimes H_{5x5}$$
 
 # 霍夫变换
 
-# K-Means算法
 
-http://www.csdn.net/article/2012-07-03/2807073-k-means
-
-http://www.cnblogs.com/leoo2sk/archive/2010/09/20/k-means.html
-
-http://www.cnblogs.com/jerrylead/archive/2011/04/06/2006910.html

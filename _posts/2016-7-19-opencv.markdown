@@ -38,9 +38,11 @@ Gary Rost Bradski，UC Berkeley的本科+波士顿大学博士，斯坦福大学
 
 Adrian Kaehler，哥伦比亚大学博士。
 
+https://www.coursera.org/learn/machine-learning
+
 《斯坦福大学机器学习课程讲义》
 
-Andrew Ng，也就是吴恩达写的讲义。
+Andrew Ng，也就是吴恩达写的讲义，写的非常浅显易懂。
 
 http://wiki.opencv.org.cn/
 
@@ -121,4 +123,112 @@ saturate_cast宏会对结果进行转换，以确保它在有效范围之内。
 OpenCV中的运算，除了软件实现之外，还有若干种硬件加速，包括OpenCL、CUDA和IPPICV。
 
 Intel针对自身的硬件加速，推出了IPP（Integrated Performance Primitives）软件包，但这个包是收费的。从OpenCV 3.0开始，Intel将IPP的一个子集提取出来，免费供OpenCV项目使用。这个子集，俗称“IPPICV”。
+
+# GNU Octave
+
+GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。
+
+官网：
+
+https://gnu.org/software/octave/
+
+安装方法:
+
+`sudo apt-get install octave`
+
+# R
+
+R语言是另一个应用较广的数学工具语言和环境，主要应用于统计学和数据挖掘等领域。在这些领域，其影响力甚至超过了Matlab。
+
+R语言语法来自于1970年代贝尔实验室发明的S语言，因此又被称为“GNU S”。
+
+官网：
+
+https://www.r-project.org/
+
+软件仓库：
+
+https://cran.r-project.org/
+
+安装方法:
+
+`sudo apt-get install r-base r-base-dev`
+
+R语言有个和python类似的命令行交互环境。除此之外，还有第三方提供的GUI环境，最常用的是RStudio，其官网：
+
+https://www.rstudio.com/
+
+参考：
+
+http://cos.name/
+
+统计之都（Capital of Statistics，简称COS）成立于2006年5月，是一个旨在推广与应用统计学知识的网站和社区。
+
+http://yihui.name/
+
+谢益辉，Iowa State University博士，目前就职于RStudio。中国R语言会议、COS社区创办者。
+
+# 线性回归
+
+线性回归属于有监督学习（supervised learning）的其中一种方法。
+
+对于一个给定的训练集（training set）$$(x,y)$$，其中$$y=h(x)=h(x_1,x_2,...,x_n)$$，在$$h$$未知的情况下，求得$$h$$或者$$h$$的近似解的过程，被称为猜测（hypothesis）。hypothesis的目的是，能在给定$$x$$的情况下，预测$$y$$。
+
+如果$$y$$是连续函数，那么这个过程叫做回归（regression）问题。如果$$y$$是离散函数，那么这个过程叫做分类（classification）问题。
+
+$$h_{\theta}(x)=\theta_0+\theta_1x_1+...+\theta_nx_n=\sum_{i=0}^n\theta_ix_i=\theta^Tx（公式1）$$
+
+满足公式1条件的回归问题，被称作线性回归（Linear Regression）。
+
+为了评估公式1中待定系数$$\theta$$的预测准确度，我们定义如下代价函数（cost function）：
+
+$$J(\theta)=\frac{1}{2}\sum_{i=0}^m(h_{\theta}(x^{(i)})-y^{(i)})^2（公式2）$$
+
+其中，m表示训练集的个数（从0算起），$$x^{(i)}$$表示第i个训练样本。显然代价函数越小，预测准确度越高。
+
+## Jacobian矩阵
+
+Jacobian矩阵是矩阵A的一阶导数矩阵，定义如下：
+
+$$J(A)=\frac{\mathrm{d}f}{\mathrm{d}x}=
+\begin{bmatrix}
+     \frac{\partial f_1}{\partial x_1} & \cdots & \frac{\partial f_1}{\partial x_n} \\
+     \vdots & \ddots & \vdots \\
+     \frac{\partial f_m}{\partial x_1} & \cdots & \frac{\partial f_m}{\partial x_n}    
+\end{bmatrix}
+$$
+
+为了和上文的cost function有所区别，这里采用$$\nabla(A)$$表示Jacobian矩阵。
+
+## Hessian矩阵
+
+Hessian矩阵是矩阵A的二阶导数矩阵，定义如下：
+
+$$H(A)=
+\begin{bmatrix}
+     \frac{\partial^2 f}{\partial x_1^2} & \frac{\partial^2 f}{\partial x_1\partial x_2} & \cdots & \frac{\partial^2 f}{\partial x_1\partial x_n} \\
+     \frac{\partial^2 f}{\partial x_2\partial x_1} & \frac{\partial^2 f}{\partial x_2^2} & \cdots & \frac{\partial^2 f}{\partial x_2\partial x_n} \\
+     \vdots & \vdots & \ddots & \vdots \\
+     \frac{\partial^2 f}{\partial x_n\partial x_1} & \frac{\partial^2 f}{\partial x_n\partial x_2} & \cdots & \frac{\partial^2 f}{\partial x_n^2} \\    
+\end{bmatrix}
+$$
+
+因为$$\frac{\partial^2 f}{\partial x_i\partial x_j}=\frac{\partial^2 f}{\partial x_j\partial x_i}$$(Clairaut’s theorem)，所以Hessian矩阵通常是一个对称矩阵。
+
+## 梯度下降算法
+
+公式2的求极值问题，实际上就是求驻点（stationary point）的问题，即求$$\nabla(f)=0$$的点的问题。
+
+梯度下降（gradient descent）算法，从直观来说，就是沿着梯度向量的反方向，向坡底前进。
+
+
+
+# K-Means算法
+
+http://www.csdn.net/article/2012-07-03/2807073-k-means
+
+http://www.cnblogs.com/leoo2sk/archive/2010/09/20/k-means.html
+
+http://www.cnblogs.com/jerrylead/archive/2011/04/06/2006910.html
+
 
