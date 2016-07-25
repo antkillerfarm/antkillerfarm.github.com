@@ -198,7 +198,11 @@ $$J(A)=\frac{\mathrm{d}f}{\mathrm{d}x}=
 \end{bmatrix}
 $$
 
-为了和上文的cost function有所区别，这里采用$$\nabla(A)$$表示Jacobian矩阵。
+当$$m=1$$时，该矩阵又被称为梯度向量：
+
+$$\nabla(A)=\begin{bmatrix}
+     \frac{\partial f}{\partial x_1} & \cdots & \frac{\partial f}{\partial x_n} \\ 
+\end{bmatrix}$$
 
 ## Hessian矩阵
 
@@ -213,15 +217,31 @@ $$H(A)=
 \end{bmatrix}
 $$
 
-因为$$\frac{\partial^2 f}{\partial x_i\partial x_j}=\frac{\partial^2 f}{\partial x_j\partial x_i}$$(Clairaut’s theorem)，所以Hessian矩阵通常是一个对称矩阵。
+因为$$\frac{\partial^2 f}{\partial x_i\partial x_j}=\frac{\partial^2 f}{\partial x_j\partial x_i}$$(克莱罗定理，Clairaut’s theorem)，所以Hessian矩阵通常是一个对称矩阵。
+
+参考：
+
+http://blog.csdn.net/dsbatigol/article/details/12558891
 
 ## 梯度下降算法
 
 公式2的求极值问题，实际上就是求驻点（stationary point）的问题，即求$$\nabla(f)=0$$的点的问题。
 
-梯度下降（gradient descent）算法，从直观来说，就是沿着梯度向量的反方向，向坡底前进。
+梯度下降（gradient descent）算法的原理，从直观来说，就是沿着梯度向量的反方向，向坡底前进。该算法是一个递归算法，其迭代公式为：
+
+$$x_{k+1}=x_k-t_kA_k\nabla f(x_k)$$
+
+其中，$$t_k$$表示迭代的步长，$$\nabla f(x_k)$$为梯度向量，$$A_k$$为系数矩阵。根据$$t_k$$和$$A_k$$的取法不同会产生出各种各样的变种算法。
+
+例如，当$$A_k=H(x_k)^{-1}$$时，就是著名的牛顿迭代法（Newton Method）。可以证明，牛顿迭代法具有二阶收敛性（在二阶以内的所有系数矩阵中，收敛最快）。
 
 
+
+参考：
+
+http://freemind.pluskid.org/machine-learning/gradient-descent-wolfe-s-condition-and-logistic-regression/
+
+http://freemind.pluskid.org/machine-learning/newton-method/
 
 # K-Means算法
 
