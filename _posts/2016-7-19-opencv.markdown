@@ -261,6 +261,29 @@ $$\theta_j:=\theta_j-\alpha\frac{\partial J(\theta)}{\partial \theta_j}（公式
 
 可以看出，LMS的迭代公式是梯度下降算法的一个特例，其中，$$\alpha$$相当于步长，系数矩阵$$A=E$$，这里的$$E$$表示单位矩阵。
 
+将公式2代入公式3，可得：
+
+$$\theta_j:=\theta_j+\alpha(y^{(i)}-h_{\theta}(x^{(i)}))x^{(i)}_j（公式4）$$
+
+迭代方式分为两种：
+
+1.批量梯度下降（batch gradient descent）算法。方法如下：
+
+>Repeat until convergence {<br/>
+>$$\theta_j:=\theta_j+\alpha\sum_{i=1}^m(y^{(i)}-h_{\theta}(x^{(i)}))x^{(i)}_j$$(for every j)
+><br/>}
+
+2.随机梯度下降（stochastic gradient descent）算法。方法如下：
+
+Loop {
+
+for i=1 to m, {
+
+$$\theta_j:=\theta_j+\alpha\sum_{i=1}^m(y^{(i)}-h_{\theta}(x^{(i)}))x^{(i)}_j$$(for every j)
+
+}
+
+}
 
 
 # K-Means算法
