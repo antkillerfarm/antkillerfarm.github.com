@@ -188,7 +188,9 @@ $$h_{\theta}(x)=\theta_0+\theta_1x_1+...+\theta_nx_n=\sum_{i=0}^n\theta_ix_i=\th
 
 $$J(\theta)=\frac{1}{2}\sum_{i=0}^m(h_{\theta}(x^{(i)})-y^{(i)})^2（公式2）$$
 
-其中，m表示训练集的个数（从0算起），$$x^{(i)}$$表示第i个训练样本。显然代价函数越小，预测准确度越高。
+其中，m表示训练集的个数（从0算起），$$x^{(i)}$$表示第i个训练样本。
+
+代价函数的表达式，和正态分布的最大似然估计有关，这实际上就是正态分布的方差计算公式。显然，代价函数的值越小，预测准确度越高。
 
 ## Jacobian矩阵
 
@@ -245,6 +247,10 @@ $$x_{k+1}=x_k-t_kA_k\nabla f(x_k)$$
 迭代计算复杂度 | $$O(n)$$ | $$O(n^3)$$
 实现难点 | 步长需要一定的方法来确定。 | $$H(x_k)$$需要满秩，且$$H(x_k)^{-1}$$的计算比较复杂，尤其是维数很高的时候。
 
+梯度下降算法只有当函数为凸函数时，才会严格收敛到最小值。否则的话，可能只是极小值，而非最小值。如下图所示：
+
+![](/images/article/gradient_descent.png)
+
 参考：
 
 http://freemind.pluskid.org/machine-learning/gradient-descent-wolfe-s-condition-and-logistic-regression/
@@ -270,20 +276,48 @@ $$\theta_j:=\theta_j+\alpha(y^{(i)}-h_{\theta}(x^{(i)}))x^{(i)}_j（公式4）$$
 1.批量梯度下降（batch gradient descent）算法。方法如下：
 
 >Repeat until convergence {<br/>
+><span style="white-space: pre">	</span>
 >$$\theta_j:=\theta_j+\alpha\sum_{i=1}^m(y^{(i)}-h_{\theta}(x^{(i)}))x^{(i)}_j$$(for every j)
 ><br/>}
 
 2.随机梯度下降（stochastic gradient descent）算法。方法如下：
 
-Loop {
+>Loop {<br/>
+><span style="white-space: pre">	</span>for i=1 to m, {<br/>
+><span style="white-space: pre">	</span><span style="white-space: pre">	</span>
+>$$\theta_j:=\theta_j+\alpha(y^{(i)}-h_{\theta}(x^{(i)}))x^{(i)}_j$$(for every j)
+><br/><span style="white-space: pre">	</span>}
+><br/>}
 
-for i=1 to m, {
+名称 | 批量梯度下降 | 随机梯度下降
+|:--:|:--:|:--:|
+特点 | 每向前走一步，都需要遍历整个训练样本集。 | 一个样本接着一个样本的处理数据。
+计算复杂度 | 大 | 小
+收敛程度 | 收敛 | 由于新样本引入新的误差，该算法只能收敛到一定程度，而不能无限逼近最小值。
 
-$$\theta_j:=\theta_j+\alpha\sum_{i=1}^m(y^{(i)}-h_{\theta}(x^{(i)}))x^{(i)}_j$$(for every j)
+## 正规方程组算法
 
-}
+正规方程组（Normal Equations）算法，是传统的以解方程的方式求最小值的方法。
 
-}
+如果，令
+
+$$X=\begin{bmatrix}
+     (x^{(1)})^T \\ (x^{(2)})^T \\ \vdots \\ (x^{(m)})^T
+\end{bmatrix},
+\vec{y}=\begin{bmatrix}
+     (y^{(1)}) \\ (y^{(2)}) \\ \vdots \\ (y^{(m)})
+\end{bmatrix}$$
+
+则：
+
+$$\theta=(X^TX)^{-1}X^T\vec{y}$$
+
+这种解方程的算法，实际上就是通常所说的最小二乘法（Least squares）。
+
+优点：解是精确解，而不是近似解。不是迭代算法，程序实现简单。不在意$$X$$特征的scale。比如，特征向量$$X=\{x_1, x_2\}$$, 其中$$x_1$$的range为1~2000，而$$x_2$$的range为1~4，可以看到它们的范围相差了500倍。如果使用梯度下降方法的话，会导致椭圆变得很窄很长，而出现梯度下降困难，甚至无法下降梯度（因为导数乘上步长后可能会冲到椭圆的外面）的问题。
+
+缺点：维数高的时候，矩阵求逆运算的计算量很大。
+
 
 
 # K-Means算法
