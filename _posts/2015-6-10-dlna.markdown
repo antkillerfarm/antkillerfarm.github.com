@@ -314,6 +314,30 @@ https://www.freedesktop.org/wiki/Software/PulseAudio/
 
 https://rootprompt.apatsch.net/2013/04/23/raspberry-pi-network-audio-player-pulseaudio-dlna-and-bluetooth-a2dp-part-3-bluetooth/
 
+# 无线话筒
+
+传统的无线话筒采用模拟信号传输，原理和收音机广播类似。其无线信号发送频段一般在FM、VHF和UHF上，总的趋势就是频率越来越高。目前主流的是UHF。
+
+采用数字信号的无线话筒，其技术难点在于制定低延迟的音频传输协议。
+
+参考：
+
+http://www.ca001.com/thread-380980-1-1.html
+
+这篇文章讲述了Dante网络音频传输协议。
+
+http://www.studa.net/tongxin/091128/11441289.html
+
+浅谈Dante数字音频传输技术。
+
+https://www.audinate.com/
+
+提出Dante协议的公司。
+
+http://wenku.baidu.com/view/d0bcd929e2bd960590c67750.html
+
+IEEE Ethernet AVB协议简介。
+
 # diff&patch
 
 diff/patch这对工具在数学上来说，diff是对2个集合求差，patch是求和。
