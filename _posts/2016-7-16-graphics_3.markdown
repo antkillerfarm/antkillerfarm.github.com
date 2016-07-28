@@ -16,7 +16,7 @@ $$h=\frac{w(i,j,k,l)}{\sum_{k,l}w(i,j,k,l)}$$
 
 其中，
 
-$$w(i,j,k,l)=d(i,j,k,l)\cdot r(i,j,k,l)=exp\left(-\frac{(i-k)^2+(j-l)^2}{2\sigma_d^2}\right)\cdot exp\left(-\frac{\|f(i,j)-f(k,l)\|^2}{2\sigma_r^2}\right)$$
+$$w(i,j,k,l)=d(i,j,k,l)\cdot r(i,j,k,l)=\exp\left(-\frac{(i-k)^2+(j-l)^2}{2\sigma_d^2}\right)\cdot \exp\left(-\frac{\|f(i,j)-f(k,l)\|^2}{2\sigma_r^2}\right)$$
 
 这里的$$d(i,j,k,l)$$由于只与定义域有关，通常叫做“定义域核”。实际上，这就是一个高斯滤波核。而$$r(i,j,k,l)$$由于和像素值的差有关（像素差越大，权重越小），也被叫做“值域核”。
 
@@ -38,7 +38,7 @@ $$G_1^0=\frac{\partial G(x,y)}{\partial x}=-2xe^{-(x^2+y^2)},G_1^{\frac{\pi}{2}}
 
 任意角度的1阶Steerable滤波函数为：
 
-$$G_1^{\theta}=cos\theta G_1^0+sin\theta G_1^{\frac{\pi}{2}}$$
+$$G_1^{\theta}=\cos\theta G_1^0+\sin\theta G_1^{\frac{\pi}{2}}$$
 
 如果对高斯函数求2阶偏导,还可得到2阶Steerable滤波函数。进一步的讨论详见参考论文。
 
@@ -98,25 +98,25 @@ $$F(k)=e^{-(k-k_0)^2a^2}e^{-ix_0(k-k_0)}$$
 
 将Gabor wavelet扩展到2维，可得到Gabor filter(图像实际上就是一种2维信号)：
 
-$$g(x,y;\lambda,\theta,\psi,\sigma,\gamma)=exp\left(-\frac{x'^2+\gamma^2y'^2}{2\sigma^2}\right)exp\left(i\left(2\pi\frac{x'}{\lambda}+\psi\right)\right)$$
+$$g(x,y;\lambda,\theta,\psi,\sigma,\gamma)=\exp\left(-\frac{x'^2+\gamma^2y'^2}{2\sigma^2}\right)\exp\left(i\left(2\pi\frac{x'}{\lambda}+\psi\right)\right)$$
 
 其中，
 
-$$x'=xcos\theta+ysin\theta,y'=-xsin\theta+ycos\theta$$
+$$x'=x\cos\theta+y\sin\theta,y'=-x\sin\theta+y\cos\theta$$
 
 $$\lambda$$：正弦函数波长；$$\theta$$：Gabor核函数的方向；$$\psi$$：相位偏移；$$\sigma$$：高斯函数的标准差；$$\gamma$$： 空间的宽高比。
 
 可以看出Gabor filter是一个复函数，其实部为：
 
-$$g(x,y;\lambda,\theta,\psi,\sigma,\gamma)=exp\left(-\frac{x'^2+\gamma^2y'^2}{2\sigma^2}\right)cos\left(2\pi\frac{x'}{\lambda}+\psi\right)$$
+$$g(x,y;\lambda,\theta,\psi,\sigma,\gamma)=\exp\left(-\frac{x'^2+\gamma^2y'^2}{2\sigma^2}\right)\cos\left(2\pi\frac{x'}{\lambda}+\psi\right)$$
 
 其虚部为：
 
-$$g(x,y;\lambda,\theta,\psi,\sigma,\gamma)=exp\left(-\frac{x'^2+\gamma^2y'^2}{2\sigma^2}\right)sin\left(2\pi\frac{x'}{\lambda}+\psi\right)$$
+$$g(x,y;\lambda,\theta,\psi,\sigma,\gamma)=\exp\left(-\frac{x'^2+\gamma^2y'^2}{2\sigma^2}\right)\sin\left(2\pi\frac{x'}{\lambda}+\psi\right)$$
 
 此外，还有对数Gabor函数：
 
-$$G(f)=exp\left(\frac{-(log(f/f_0))^2}{2(log(\sigma/f_0))^2}\right)$$
+$$G(f)=\exp\left(\frac{-(log(f/f_0))^2}{2(log(\sigma/f_0))^2}\right)$$
 
 ## Gabor滤波的效果
 
@@ -196,7 +196,7 @@ Tight Frame有个重要特性：
 
 Schmid滤波器是一种类Gabor滤波器。其计算公式为：
 
-$$F(r,\sigma,\tau)=\frac{1}{Z}cos\left(\frac{2\pi\tau r}{\sigma}\right)e^{-\frac{r^2}{2\sigma^2}}$$
+$$F(r,\sigma,\tau)=\frac{1}{Z}\cos\left(\frac{2\pi\tau r}{\sigma}\right)e^{-\frac{r^2}{2\sigma^2}}$$
 
 下图是Schmid滤波器和Gabor滤波器的“核”图像。“核”图像是滤波器“核”函数的图像化展示。
 

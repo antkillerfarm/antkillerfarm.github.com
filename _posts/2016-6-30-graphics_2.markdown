@@ -204,7 +204,7 @@ $$\rho(r)=2\left(\sqrt{1+\frac{r^2}{2}}-1\right)$$
 
 $$\rho(r)=C^2\left(\frac{r}{C}-log\left(1+\frac{r}{C}\right)\right),C=1.3998$$
 
-$$\rho(r)=\frac{C^2}{2}\left[1-exp\left(-\left(\frac{r}{C}\right)^2\right)\right],C=2.9846$$
+$$\rho(r)=\frac{C^2}{2}\left[1-\exp\left(-\left(\frac{r}{C}\right)^2\right)\right],C=2.9846$$
 
 # 马氏距离
 

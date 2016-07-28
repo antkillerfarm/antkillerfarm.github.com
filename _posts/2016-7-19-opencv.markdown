@@ -171,3 +171,12 @@ http://cos.name/
 http://yihui.name/
 
 谢益辉，Iowa State University博士，目前就职于RStudio。中国R语言会议、COS社区创办者。
+
+# K-Means算法
+
+http://www.csdn.net/article/2012-07-03/2807073-k-means
+
+http://www.cnblogs.com/leoo2sk/archive/2010/09/20/k-means.html
+
+http://www.cnblogs.com/jerrylead/archive/2011/04/06/2006910.html
+

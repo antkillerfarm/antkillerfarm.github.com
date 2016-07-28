@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习
+title:  机器学习（一）
 category: technology 
 ---
 
@@ -22,7 +22,7 @@ $$J(\theta)=\frac{1}{2}\sum_{i=0}^m(h_{\theta}(x^{(i)})-y^{(i)})^2（公式2）$
 
 其中，m表示训练集的个数（从0算起），$$x^{(i)}$$表示第i个训练样本。
 
-代价函数的表达式，和正态分布的最大似然估计有关，这实际上就是正态分布的方差计算公式。显然，代价函数的值越小，预测准确度越高。
+代价函数的表达式，实际上就是正态分布的方差计算公式，它体现了拟合后的函数曲线与样本集之间的偏差程度。显然，代价函数的值越小，预测准确度越高。
 
 ## Jacobian矩阵
 
@@ -188,11 +188,69 @@ $$N(x)=\sum_{j=0}^ka_jn_j(x),n_j(x)=\prod_{i=0}^{j-1}(x-x_i),a_j=[y_0,...,y_j]$$
 
 $$J(\theta)=\frac{1}{2}\sum_{i=0}^m\omega^{(i)}(h_{\theta}(x^{(i)})-y^{(i)})^2（公式5）$$
 
-# K-Means算法
+其中，$$\omega^{(i)}$$被称为权重，它有多种选取方法，最常用的是：
 
-http://www.csdn.net/article/2012-07-03/2807073-k-means
+$$\omega^{(i)}=\exp\left(-\frac{(x^{(i)}-x)^2}{2\tau^2}\right)$$
 
-http://www.cnblogs.com/leoo2sk/archive/2010/09/20/k-means.html
+其中，$$\tau$$被称为带宽（bandwidth）。实际上，这就是一个高斯滤波器。离采样点x越近，其权重越接近1。
 
-http://www.cnblogs.com/jerrylead/archive/2011/04/06/2006910.html
+# 分类与逻辑回归
+
+## 二分类
+
+结果集y的取值只有0和1的分类问题被称为二分类，其中0被称为negative class，1被称为positive class，也可用“-”和“+”来表示。
+
+## 逻辑回归
+
+为了将线性回归的结果约束到$$[0,1]$$区间，我们将公式1修改为：
+
+$$h_\theta(x)=g(\theta^Tx)=\frac{1}{1+e^{-\theta^Tx}}(公式6)$$
+
+公式6又被称为logistic function或sigmoid function。函数$$g(z)$$的图像如下所示：
+
+![](/images/article/sigmoid_function.png)
+
+事实上，任何$$[0,1]$$区间的平滑增函数，都可以作为$$g(z)$$，但公式6的好处在于
+
+$$g'(z)=g(z)(1-g(z))$$
+
+评估逻辑回归的质量，需要用到最大似然估计方法。最大似然估计是在“模型已定，参数未知”的情况下，寻找使模型出现的概率最大的参数集$$\theta$$的方法。显然参数集$$\theta$$所确定模型，其出现概率越大，模型的准确度越高。
+
+最大似然估计中采样需满足一个很重要的假设，就是所有的采样都是独立同分布的。
+
+我们假设：
+
+$$P(y=1\mid x;\theta)=h_\theta(x),P(y=0\mid x;\theta)=1-h_\theta(x)$$
+
+则该二项分布的概率密度函数为：
+
+$$p(y\mid x;\theta)=(h_\theta(x))^y(1-h_\theta(x))^{1-y}$$
+
+其似然估计函数为：
+
+$$L(\theta)=p(\vec{y}\mid X;\theta)=\prod_{i=1}^m(h_\theta(x^{(i)}))^{y^{(i)}}(1-h_\theta(x^{(i)}))^{1-y^{(i)}}$$
+
+两边都取对数，得到对数化的似然估计函数：
+
+$$l(\theta)=\log L(\theta)=\sum_{i=1}^my^{(i)}\log h_\theta(x^{(i)})+(1-y^{(i)})\log(1-h_\theta(x^{(i)}))$$
+
+$$\frac{\partial l(\theta)}{\partial \theta_j}=(y-h_\theta(x))x_j$$
+
+按照随机梯度下降法，计算迭代公式：
+
+$$\theta_j:=\theta_j+\alpha(y^{(i)}-h_{\theta}(x^{(i)}))x^{(i)}_j$$
+
+可以看出，这和线性回归的迭代公式（公式4）完全相同。
+
+$$g(z)$$还可以取以下函数：
+
+$$g(z)=\begin{cases}
+1,  & z\ge 0 \\
+0, & z<0 \\
+\end{cases}$$
+
+这时又被叫做感知器学习（perceptron learning）算法。
+
+## 广义线性模型
+
 
