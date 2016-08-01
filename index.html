@@ -6,7 +6,7 @@ title: Antkillerfarm Hacking
 {% for category in site.categories %}
 {% capture cat %}{{ category | first }}{% endcapture %}
 
-<h2>{{ cat | capitalize }}</h2>
+<h2>{{site.categories[cat].size}} posts of {{cat | capitalize }} </h2>
     <ul class="posts">
     {% for post in site.categories[cat] %}
         <li>
@@ -15,3 +15,6 @@ title: Antkillerfarm Hacking
     {% endfor %}
     </ul>
 {% endfor %}
+
+<h1>Total {{site.posts.size}} posts</h1>
+    
