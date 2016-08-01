@@ -306,7 +306,17 @@ $$l(\theta)=\sum_{i=1}^m\log p(y^{(i)}\mid x^{(i)};\theta)=\sum_{i=1}^m\log\prod
 
 $$p(y\mid x)=\frac{p(x\mid y)p(y)}{p(x)}(公式1)$$
 
-由于我们关注的是y的离散值结果中哪个概率大（比如山羊概率和绵羊概率哪个大），而并不是关心具体的概率，因此上式改写为：
+其中，$$p(x\mid y)$$称为后验概率，$$p(y)$$称为先验概率。
 
-$$$$
+由于我们关注的是y的离散值结果中哪个概率大（比如山羊概率和绵羊概率哪个大），而并不是关心具体的概率，因此公式1可改写为：
+
+$$\arg\max_yp(y\mid x)=\arg\max_y\frac{p(x\mid y)p(y)}{p(x)}=\arg\max_yp(x\mid y)p(y)$$
+
+## 高斯判别分析
+
+高斯分布的向量形式$$N(\mu,\Sigma)$$的概率密度函数为：
+
+$$p(x;\mu,\Sigma)=\frac{1}{(2\pi)^{n/2}}$$
+
+高斯判别分析(GDA，Gaussian Discriminant Analysis)
 
