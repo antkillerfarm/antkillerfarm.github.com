@@ -149,7 +149,7 @@ static struct snd_soc_dai_driver tas5731_dai[] = {
 
 1）codec_name的命名规则。codec_name一般以X.Y-Z的形式命名。
 
-其中X为codec的I2C driver名称。注意这里的名称和I2C_BOARD_INFO中定义的名称不同，后者是根据i2c_device_id中定义的名称来命名的。
+其中X为codec的I2C driver名称。注意这里的名称和I2C_BOARD_INFO中定义的名称不同，后者是根据i2c_device_id中定义的名称来命名的。只是在这个例子中，两者恰好是一致的。
 
 Y表示I2C总线号。如果MCU有超过一条I2C总线的话，需要使用总线号加以区分。
 

@@ -244,7 +244,7 @@ Hermann Minkowski（1864-1909），德国数学家，哥廷根大学数学教授
 
 Minkowski distance的定义：
 
-$$d(x,y)=\sqrt[\lambda]{\sum_{i=1}^{n}\mid x_i-y_i\mid^{\lambda}}$$
+$$d(x,y)=\sqrt[\lambda]{\sum_{i=1}^{n}\vert x_i-y_i\vert^{\lambda}}$$
 
 显然，当$$\lambda=2$$时，该距离为欧氏距离。当$$\lambda=1$$时，也被称为CityBlock Distance或Manhattan Distance（曼哈顿距离）。
 
