@@ -124,6 +124,8 @@ $$\arg\max_yp(y\vert x)=\arg\max_y\frac{p(x\vert y)p(y)}{p(x)}=\arg\max_yp(x\ver
 
 $$p(x;\mu,\Sigma)=\frac{1}{(2\pi)^{n/2}\lvert\Sigma\rvert^{n/2}}\exp\left(-\frac{1}{2}(x-\mu)^T\Sigma^{-1}(x-\mu)\right)$$
 
-其中，其中\mu表示均值向量（mean vector）
+其中，$$\mu$$表示均值向量（Mean Vector），$$\Sigma$$表示协方差矩阵（Covariance Matrix）
 
-高斯判别分析(GDA，Gaussian Discriminant Analysis)
+高斯判别分析（GDA，Gaussian Discriminant Analysis）
+
+
