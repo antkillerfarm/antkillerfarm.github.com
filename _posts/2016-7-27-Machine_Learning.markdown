@@ -245,7 +245,7 @@ $$\theta_j:=\theta_j+\alpha(y^{(i)}-h_{\theta}(x^{(i)}))x^{(i)}_j$$
 $$g(z)$$还可以取以下函数：
 
 $$g(z)=\begin{cases}
-1,  & z\ge 0 \\
+1, & z\ge 0 \\
 0, & z<0 \\
 \end{cases}$$
 
