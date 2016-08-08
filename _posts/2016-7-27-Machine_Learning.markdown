@@ -8,11 +8,11 @@ category: technology
 
 线性回归属于有监督学习（supervised learning）的其中一种方法。
 
-对于一个给定的训练集（training set）$$(x,y)$$，其中$$y=h(x)=h(x_1,x_2,...,x_n)$$，在$$h$$未知的情况下，求得$$h$$或者$$h$$的近似解的过程，被称为猜测（hypothesis）。hypothesis的目的是，能在给定$$x$$的情况下，预测$$y$$。
+对于一个给定的训练集（training set）$$(x,y)$$，其中$$y=h(x)=h(x_1,x_2,\dots,x_n)$$，在$$h$$未知的情况下，求得$$h$$或者$$h$$的近似解的过程，被称为猜测（hypothesis）。hypothesis的目的是，能在给定$$x$$的情况下，预测$$y$$。
 
 如果$$y$$是连续函数，那么这个过程叫做回归（regression）问题。如果$$y$$是离散函数，那么这个过程叫做分类（classification）问题。
 
-$$h_{\theta}(x)=\theta_0+\theta_1x_1+...+\theta_nx_n=\sum_{i=0}^n\theta_ix_i=\theta^Tx（公式1）$$
+$$h_{\theta}(x)=\theta_0+\theta_1x_1+\dots+\theta_nx_n=\sum_{i=0}^n\theta_ix_i=\theta^Tx（公式1）$$
 
 满足公式1条件的回归问题，被称作线性回归（Linear Regression）。
 
@@ -36,6 +36,8 @@ $$J(A)=\frac{\mathrm{d}f}{\mathrm{d}x}=
 \end{bmatrix}
 $$
 
+注：Carl Gustav Jacob Jacobi，1804～1851，德国数学家，柏林大学博士。
+
 当$$m=1$$时，该矩阵又被称为梯度向量：
 
 $$\nabla(A)=\begin{bmatrix}
@@ -54,6 +56,8 @@ $$H(A)=
      \frac{\partial^2 f}{\partial x_n\partial x_1} & \frac{\partial^2 f}{\partial x_n\partial x_2} & \cdots & \frac{\partial^2 f}{\partial x_n^2} \\    
 \end{bmatrix}
 $$
+
+注：Ludwig Otto Hesse，1811～1874，德国数学家，毕业于柯尼斯堡大学，Jacobi的学生。
 
 因为$$\frac{\partial^2 f}{\partial x_i\partial x_j}=\frac{\partial^2 f}{\partial x_j\partial x_i}$$(克莱罗定理，Clairaut’s theorem)，所以Hessian矩阵通常是一个对称矩阵。
 
@@ -156,7 +160,7 @@ $$\theta=(X^TX)^{-1}X^T\vec{y}$$
 
 这里以一元函数为例，描述一下多项式插值问题。
 
-对于给定的$$k+1$$个点$$(x_0,y_0),...,(x_k,y_k)$$，求$$f(x)=\sum_{i=0}^ka_ix^i$$经过给定的$$k+1$$个点。显然$$k=1$$的时候，是线性插值。
+对于给定的$$k+1$$个点$$(x_0,y_0),\dots,(x_k,y_k)$$，求$$f(x)=\sum_{i=0}^ka_ix^i$$经过给定的$$k+1$$个点。显然$$k=1$$的时候，是线性插值。
 
 多项式插值算法有很多种，最经典是以下两种：
 
@@ -166,7 +170,7 @@ $$L(x)=\sum_{j=0}^ky_jl_j(x),l_j(x)=\prod_{0\le m\le k\atop m\neq j}\frac{x-x_m}
 
 2.牛顿插值算法（the interpolation polynomial in the Newton form）
 
-$$N(x)=\sum_{j=0}^ka_jn_j(x),n_j(x)=\prod_{i=0}^{j-1}(x-x_i),a_j=[y_0,...,y_j]$$
+$$N(x)=\sum_{j=0}^ka_jn_j(x),n_j(x)=\prod_{i=0}^{j-1}(x-x_i),a_j=[y_0,\dots,y_j]$$
 
 此外还有分段插值法，即将整个定义域分为若干区间，在区间内部进行线性插值或多项式插值。
 
@@ -178,7 +182,7 @@ $$N(x)=\sum_{j=0}^ka_jn_j(x),n_j(x)=\prod_{i=0}^{j-1}(x-x_i),a_j=[y_0,...,y_j]$$
 
 我们把左图的情况叫做欠拟合（Underfitting），右图的情况叫做过拟合（Overfitting）。
 
-这里换个角度看：如果我们把上述多项式回归中的$$x,x^2,...,x^n$$看作是线性回归时的特征集的话，那么多项式回归就可以转化成为线性回归。
+这里换个角度看：如果我们把上述多项式回归中的$$x,x^2,\dots,x^n$$看作是线性回归时的特征集的话，那么多项式回归就可以转化成为线性回归。
 
 从中可以看出，欠拟合或过拟合实际上就是线性回归中的特征集选取问题。特征集选取不当，就会导致预测不准。
 
@@ -214,40 +218,15 @@ $$h_\theta(x)=g(\theta^Tx)=\frac{1}{1+e^{-\theta^Tx}}(公式6)$$
 
 $$g'(z)=g(z)(1-g(z))$$
 
-评估逻辑回归（Logistic regression）的质量，需要用到最大似然估计（maximum likelihood estimator）方法。最大似然估计是在“模型已定，参数未知”的情况下，寻找使模型出现的概率最大的参数集$$\theta$$的方法。显然，参数集$$\theta$$所确定的模型，其出现概率越大，模型的准确度越高。
+评估逻辑回归（Logistic regression）的质量，需要用到最大似然估计（maximum likelihood estimator）方法（由Ronald Aylmer Fisher提出）。最大似然估计是在“模型已定，参数未知”的情况下，寻找使模型出现的概率最大的参数集$$\theta$$的方法。显然，参数集$$\theta$$所确定的模型，其出现概率越大，模型的准确度越高。
 
 最大似然估计中采样需满足一个很重要的假设，就是所有的采样都是独立同分布的。
 
-我们假设：
+$$L(\theta)=\prod_{i=1}^mf(x^{(i)},\theta)$$
 
-$$P(y=1\vert x;\theta)=h_\theta(x),P(y=0\vert x;\theta)=1-h_\theta(x)$$
+上式为似然估计函数，其中，$$f(x^{(i)},\theta)$$为样本$$x^{(i)}$$的概率密度函数。
 
-则该伯努利分布（Bernoulli distribution）的概率密度函数为：
+注：Ronald Aylmer Fisher，1890～1962，英国人，毕业于剑桥大学。尽管他被称作“一位几乎独自建立现代统计科学的天才”，然而他的本职工作是遗传学。他最大的贡献是利用统计分析的方法，揭示了孟德尔的遗传定律在达尔文自然选择学说中的作用，为后来遗传物质DNA的发现奠定了理论基础。
 
-$$p(y\vert x;\theta)=(h_\theta(x))^y(1-h_\theta(x))^{1-y}$$
-
-其似然估计函数为：
-
-$$L(\theta)=p(\vec{y}\vert X;\theta)=\prod_{i=1}^m(h_\theta(x^{(i)}))^{y^{(i)}}(1-h_\theta(x^{(i)}))^{1-y^{(i)}}$$
-
-两边都取对数，得到对数化的似然估计函数：
-
-$$l(\theta)=\log L(\theta)=\sum_{i=1}^my^{(i)}\log h_\theta(x^{(i)})+(1-y^{(i)})\log(1-h_\theta(x^{(i)}))$$
-
-$$\frac{\partial l(\theta)}{\partial \theta_j}=(y-h_\theta(x))x_j$$
-
-按照随机梯度下降法，计算迭代公式：
-
-$$\theta_j:=\theta_j+\alpha(y^{(i)}-h_{\theta}(x^{(i)}))x^{(i)}_j$$
-
-可以看出，这和线性回归的迭代公式（公式4）完全相同。
-
-$$g(z)$$还可以取以下函数：
-
-$$g(z)=\begin{cases}
-1, & z\ge 0 \\
-0, & z<0 \\
-\end{cases}$$
-
-这时又被叫做感知器学习（perceptron learning）算法。
+虽然对于Fisher来说，数理统计只是他研究工作的一个副产品，但他在1925年所著《研究工作者的统计方法》（Statistical Methods for Research Workers），其影响力超过了半个世纪，几乎当代所有自然科学和社会科学领域都在应用他所创立的理论。F分布就是以他的名字命名的。
 

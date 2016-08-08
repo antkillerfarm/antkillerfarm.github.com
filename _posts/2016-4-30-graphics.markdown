@@ -48,7 +48,7 @@ $$g(i,j)=\sum_{k,l}f(i+k,j+l)h(k,l)$$
 
 从相关算子的定义可以看出，它是向量内积运算的扩展。我们一般使用$$a\cdot b$$或者$$<a,b>$$表示向量的内积运算。即：
 
-$$<a,b>=a_0b_0+a_1b_1+...+a_nb_n$$
+$$<a,b>=a_0b_0+a_1b_1+\dots+a_nb_n$$
 
 # 卷积算子
 
@@ -185,7 +185,7 @@ $$\sigma^2=p_A(\omega_A-\omega_0)^2+p_B(\omega_B-\omega_0)^2(公式3)$$
 
 对于两个分布R和Q，定义其信息交叉熵D如下：
 
-$$R=\{r_1,r_2,...,r_n\},Q=\{q_1,q_2,...,q_n\}$$
+$$R=\{r_1,r_2,\dots,r_n\},Q=\{q_1,q_2,\dots,q_n\}$$
 
 $$D(Q,R)=\sum_{k=1}^{n}q_k log_2\frac{q_k}{r_k}$$
 
@@ -197,7 +197,7 @@ https://en.wikipedia.org/wiki/Cross_entropy
 
 http://www.voidcn.com/blog/rtygbwwwerr/article/p-5047519.html
 
-二值化过程实际上就是从分布$$R=\{r_1,r_2,...,r_L\}$$到分布$$Q=\{q_A,q_B\}$$的过程。
+二值化过程实际上就是从分布$$R=\{r_1,r_2,\dots,r_L\}$$到分布$$Q=\{q_A,q_B\}$$的过程。
 
 因此
 
