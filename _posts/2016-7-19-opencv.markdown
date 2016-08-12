@@ -268,4 +268,16 @@ $$\phi_j=p(y=j)=\frac{\sum_{i=1}^m1\{y^{(i)}=j\}+1}{m+k}$$
 
 # 支持向量机 Support Vector Machines
 
+支持向量机是目前最好的监督学习算法。
+
+我们首先来看一幅图：
+
+![](/images/article/SVM.png)
+
+上图中的x和o分别代表y的两种不同取值。前面提到线性回归的预测函数为：
+
+$$h_\theta(x)=g(\theta^Tx)$$
+
+
+
 
