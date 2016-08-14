@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  我的PC & 手机 & 平板简史
-category: technology 
+category: non_technology 
 ---
 
 # PC篇

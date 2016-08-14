@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  我的PC Game
-category: technology 
+category: non_technology 
 ---
 
 # 2010.2
@@ -141,6 +141,8 @@ PC平台：Pcpop的植物大战僵尸、Rovio的Bad Pigges、暴雪的炉石传�
 2015.11 探险者协会
 
 2016.4 上古之神的低语
+
+2016.8 卡拉赞之夜
 
 手机平台：部落战争。
 
