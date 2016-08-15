@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NoSQL, GStreamer（三）
+title:  NoSQL, GStreamer（三）, Java
 category: technology 
 ---
 
@@ -160,4 +160,32 @@ new_pad_type = new_pad.query_caps(None).to_string()
 {% endhighlight %}
 
 从这里也可以看出，gst_parse_launch会自动处理媒体流的格式匹配问题，而使用普通函数的时候，必须自己编程处理格式匹配的问题。
+
+# Java
+
+## Java反射机制
+
+Java反射机制容许程序在运行时加载、探知、使用编译期间完全未知的classes。参见：
+
+http://blog.csdn.net/yongjian1092/article/details/7364451
+
+反射机制的一个副产品是可以访问私有变量和私有方法。（笔试题的常客）
+
+http://blog.csdn.net/nisaijie/article/details/5692901
+
+## Ubuntu安装Eclipse、Spring
+
+1.安装Eclipse
+
+`sudo apt-get install eclipse`
+
+2.安装Spring
+
+`sudo apt-get install libspring-web-portlet-java`
+
+注意：ubuntu软件仓库中还有一个叫做spring的游戏引擎，不要弄错了。
+
+https://github.com/spring-guides/gs-rest-service
+
+http://www.mkyong.com/spring/quick-start-maven-spring-example/
 

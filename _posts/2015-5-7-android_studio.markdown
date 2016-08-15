@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Android Studio
+title:  Android Studio, Java构建工具
 category: technology 
 ---
 
@@ -219,16 +219,6 @@ https://android-git.linaro.org/git/
 
 Exagear、Winulator等，可以用来玩PC老游戏。
 
-# Java反射机制
-
-Java反射机制容许程序在运行时加载、探知、使用编译期间完全未知的classes。参见：
-
-http://blog.csdn.net/yongjian1092/article/details/7364451
-
-反射机制的一个副产品是可以访问私有变量和私有方法。（笔试题的常客）
-
-http://blog.csdn.net/nisaijie/article/details/5692901
-
 # Java构建工具
 
 构建工具的意义在于，提供一种独立于IDE的软件构建方式。而且通常来说，构建工具更适合特大项目的构建。比如，即使是以功能强大著称的Visual Studio，也提供nmake用以处理特大项目。
@@ -262,6 +252,8 @@ Maven最大的优点是，具备从网络上自动下载依赖的能力。比如
 https://repository.apache.org/
 
 http://ebr.springsource.com/repository/app/
+
+本地maven repository通常在~/.m2/repository/下，某些直接下载失败的包，可手动安装到该路径下。
 
 Maven入门教程：
 

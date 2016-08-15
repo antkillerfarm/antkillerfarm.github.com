@@ -130,7 +130,7 @@ $$\gamma=\min_{i=1,\dots,m}\gamma^{(i)}$$
 SVM算法的本质，就是求能使几何边距最大的w和b的取值，用数学语言描述就是求解问题：
 
 $$\begin{align}
-&\operatorname{max_{\gamma,w,b}}& & \gamma\\
+&\operatorname{max}_{\gamma,w,b}& & \gamma\\
 &\operatorname{s.t.}& & y^{(i)}(w^Tx+b)\ge\gamma,i=1,\dots,m\\
 & & & \|w\|=1
 \end{align}$$
@@ -140,14 +140,14 @@ $$\begin{align}
 这个问题等价于:
 
 $$\begin{align}
-&\operatorname{max_{\gamma,w,b}}& & \frac{\hat\gamma}{\|w\|}\\
+&\operatorname{max}_{\gamma,w,b}& & \frac{\hat\gamma}{\|w\|}\\
 &\operatorname{s.t.}& & y^{(i)}(w^Tx+b)\ge\hat\gamma,i=1,\dots,m
 \end{align}$$
 
 如果能通过比例变换使$$\hat\gamma=1$$，则问题化解为：
 
 $$\begin{align}
-&\operatorname{min_{\gamma,w,b}}& & \frac{1}{2}\|w\|^2\\
+&\operatorname{min}_{\gamma,w,b}& & \frac{1}{2}\|w\|^2\\
 &\operatorname{s.t.}& & y^{(i)}(w^Tx+b)\ge 1,i=1,\dots,m
 \end{align}$$
 
@@ -160,8 +160,22 @@ QP问题是有约束条件的优化问题（constrained optimization problem）�
 假设我们求解如下问题：
 
 $$\begin{align}
-&\operatorname{min_{\gamma,w,b}}& & \frac{1}{2}\|w\|^2\\
-&\operatorname{s.t.}& & y^{(i)}(w^Tx+b)\ge 1,i=1,\dots,m
+&\operatorname{min}_w& & f(w)\\
+&\operatorname{s.t.}& & g_i(w)\le 0,i=1,\dots,k\\
+& & & h_i(w)=0,i=1,\dots,l
 \end{align}$$
 
+这里将约束条件分为两类：
+
+1.$$h_i(w)=0$$代表的是约束条件为等式的情况。
+
+2.$$g_i(w)\le 0$$代表的是约束条件为不等式的情况。
+
+上述约束优化问题也被称为原始优化问题（primal optimization problem）。为了求解这个问题，我们定义广义拉格朗日（generalized Lagrangian）函数：
+
+$$\mathcal{L}(w,\alpha,\beta)=f(w)+\sum_{i=1}^k\alpha_ig_i(w)+\sum_{i=1}^l\beta_ih_i(w)$$
+
+利用这个函数可以将约束优化问题转化为无约束优化问题。其中的$$\alpha_i、\beta_i$$也被称作拉格朗日乘子（Lagrange multiplier）。
+
+$$\theta_\mathcal{P}(w)=\operatorname{max}_{\alpha,\beta:\alpha_i\ge 0} \mathcal{L}(w,\alpha,\beta)$$
 
