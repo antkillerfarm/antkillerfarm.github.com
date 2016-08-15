@@ -4,7 +4,7 @@ title:  Android Studio, Java构建工具
 category: technology 
 ---
 
-# Android Studio配置
+## Android Studio配置
 
 又是两年不曾摸过Android的开发了，一切又需要从头开始。这次卷土重来，windows已经不是我首选的平台了，因此以下的内容都是在Ubuntu 14.04下完成的。PS：除了网银、游戏、公司的工作，我现在已经基本不在windows下玩了。
 
@@ -26,7 +26,7 @@ category: technology
 
 3)mac：~/.gradle/wrapper/dists/gradle-1.6-bin/72srdo3a5eb3bic159kar72vok
 
-# 关于自动更新
+## 关于自动更新
 
 Android Studio有增量自动更新功能，虽然不是每次出新版本都要升级，但是其升级系统只支持若干个小版本之间的跳变升级。一但超出这个范围，就需要手动下载离线包来升级了。
 
@@ -61,6 +61,10 @@ https://dl.google.com/android/studio/patches/AI-130.737825-132.843336-patch-win.
 可以通过调整`-Xmx1024m`的值，解决该问题，默认是896m。
 
 查阅相关资料，可知32位OS的Java VM内存有上限，网上说是1.5G，但我这里，1G就是上限了。
+
+## 完整安装包
+
+https://dl.google.com/dl/android/studio/ide-zips/2.1.2.0/android-studio-ide-143.2915827-linux.zip
 
 ## Eclipse导出至Android Studio
 

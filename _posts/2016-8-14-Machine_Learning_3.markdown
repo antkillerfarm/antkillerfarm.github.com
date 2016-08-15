@@ -175,7 +175,28 @@ $$\begin{align}
 
 $$\mathcal{L}(w,\alpha,\beta)=f(w)+\sum_{i=1}^k\alpha_ig_i(w)+\sum_{i=1}^l\beta_ih_i(w)$$
 
-利用这个函数可以将约束优化问题转化为无约束优化问题。其中的$$\alpha_i、\beta_i$$也被称作拉格朗日乘子（Lagrange multiplier）。
+利用这个函数可以将约束优化问题转化为无约束优化问题。其中的$$\alpha_i$$、$$\beta_i$$也被称作拉格朗日乘子（Lagrange multiplier）。
 
-$$\theta_\mathcal{P}(w)=\operatorname{max}_{\alpha,\beta:\alpha_i\ge 0} \mathcal{L}(w,\alpha,\beta)$$
+$$\theta_\mathcal{P}(w)=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\mathcal{L}(w,\alpha,\beta)=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}f(w)+\sum_{i=1}^k\alpha_ig_i(w)+\sum_{i=1}^l\beta_ih_i(w)$$
+
+其中，$$\mathcal{P}$$代表原始优化问题。
+
+如果w不满足约束，也就是$$g_i(w)>0$$或$$h_i(w)\ne 0$$。这时由于$$\mathcal{L}$$函数是无约束函数，$$\alpha_i$$、$$\beta_i$$可以任意取值，因此$$\sum_{i=1}^k\alpha_ig_i(w)$$或$$\sum_{i=1}^l\beta_ih_i(w)$$并没有极值，也就是说$$\theta_\mathcal{P}(w)=\infty$$。
+
+反之,如果w满足约束，则$$\sum_{i=1}^k\alpha_ig_i(w)$$和$$\sum_{i=1}^l\beta_ih_i(w)$$都为0，因此$$\theta_\mathcal{P}(w)=f(w)$$。
+
+综上：
+
+$$\theta_\mathcal{P}(w)=\begin{cases}
+f(w), & w满足约束 \\
+\infty, & w不满足约束 \\
+\end{cases}$$
+
+Karush-Kuhn-Tucker(KKT) conditions
+
+注：Harold William Kuhn，1925～2014，美国数学家，普林斯顿大学教授。
+
+Albert William Tucker，1905～1995，加拿大数学家，普林斯顿大学教授。
+
+William Karush，1917～1997，加州州立大学北岭分校教授。（注意，California State University和University of California是不同的学校）
 
