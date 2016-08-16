@@ -35,7 +35,7 @@ $$\begin{align}p(x_1,\dots,x_{50000}\lvert y)&=p(x_1\lvert y)p(x_2\lvert y,x_1)p
 因此：
 
 $$\begin{align}p(y=1\lvert x)&=\frac{p(x\lvert y=1)p(y=1)}{p(x)}
-\\&=\frac{(\prod_{i=1}^np(x_i\lvert y=1))p(y=1)}{(\prod_{i=1}^np(x_i\lvert y=1))p(y=1)+(\prod_{i=1}^np(x_i\lvert y=0))p(y=0)}（公式1）
+\\&=\frac{(\prod_{i=1}^np(x_i\lvert y=1))p(y=1)}{(\prod_{i=1}^np(x_i\lvert y=1))p(y=1)+(\prod_{i=1}^np(x_i\lvert y=0))p(y=0)}\tag{1}
 \end{align}$$
 
 最大似然估计值为：
@@ -105,7 +105,7 @@ $$g(z)=\begin{cases}
 
 函数边距的定义如下：
 
-$$\hat\gamma=\min_{i=1,\dots,m}\hat\gamma^{(i)},\hat\gamma^{(i)}=y^{(i)}(w^Tx+b)$$
+$$\hat\gamma=\min_{i=1,\dots,m}\hat\gamma^{(i)},\hat\gamma^{(i)}=y^{(i)}(w^Tx^{(i)}+b)$$
 
 ![](/images/article/SVM.png)
 
@@ -131,7 +131,7 @@ SVM算法的本质，就是求能使几何边距最大的w和b的取值，用数
 
 $$\begin{align}
 &\operatorname{max}_{\gamma,w,b}& & \gamma\\
-&\operatorname{s.t.}& & y^{(i)}(w^Tx+b)\ge\gamma,i=1,\dots,m\\
+&\operatorname{s.t.}& & y^{(i)}(w^Tx^{(i)}+b)\ge\gamma,i=1,\dots,m\\
 & & & \|w\|=1
 \end{align}$$
 
@@ -141,14 +141,14 @@ $$\begin{align}
 
 $$\begin{align}
 &\operatorname{max}_{\gamma,w,b}& & \frac{\hat\gamma}{\|w\|}\\
-&\operatorname{s.t.}& & y^{(i)}(w^Tx+b)\ge\hat\gamma,i=1,\dots,m
+&\operatorname{s.t.}& & y^{(i)}(w^Tx^{(i)}+b)\ge\hat\gamma,i=1,\dots,m
 \end{align}$$
 
 如果能通过比例变换使$$\hat\gamma=1$$，则问题化解为：
 
 $$\begin{align}
 &\operatorname{min}_{\gamma,w,b}& & \frac{1}{2}\|w\|^2\\
-&\operatorname{s.t.}& & y^{(i)}(w^Tx+b)\ge 1,i=1,\dots,m
+&\operatorname{s.t.}& & y^{(i)}(w^Tx^{(i)}+b)\ge 1,i=1,\dots,m
 \end{align}$$
 
 这个问题实际上就是数学上的QP（Quadratic Programming）问题，采用这种方案的分类被称为最优边距分类（optimal margin classifier）。
@@ -215,12 +215,12 @@ $$d^*=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\underset{w}{\ope
 拉格朗日对偶公式中使$$p^*=d^*$$成立的条件，被称为KKT条件（Karush-Kuhn-Tucker conditions）：
 
 $$\begin{align}
-\frac{\partial}{\partial w_i}\mathcal{L}(w^*,\alpha^*,\beta^*) & =0,i=1,\dots,n & \tag{1}\label{1}\\
-\frac{\partial}{\partial \beta_i}\mathcal{L}(w^*,\alpha^*,\beta^*) & =0,i=1,\dots,l & \tag{2}\label{2}\\
-\alpha_i^*g_i(w^*)& =0,i=1,\dots,k & \tag{3}\label{3}\\
-g_i(w^*)& \le 0,i=1,\dots,k & \tag{4}\label{4}\\
-\alpha_i^* & \ge 0,i=1,\dots,k & \tag{5}\label{5}\\
+\frac{\partial}{\partial w_i}\mathcal{L}(w^*,\alpha^*,\beta^*) & =0,i=1,\dots,n & \\
+\frac{\partial}{\partial \beta_i}\mathcal{L}(w^*,\alpha^*,\beta^*) & =0,i=1,\dots,l & \\
+\alpha_i^*g_i(w^*)& =0,i=1,\dots,k & \tag{2}\\
+g_i(w^*)& \le 0,i=1,\dots,k & \\
+\alpha_i^* & \ge 0,i=1,\dots,k & \\
 \end{align}$$
 
-其中的$$w^*,\alpha^*,\beta^*$$表示满足KKT条件的相应变量的取值。条件3也被称为KKT对偶互补条件（KKT dual complementarity condition）。显然这些$$w^*,\alpha^*,\beta^*$$既是原始问题的解，也是对偶问题的解。
+其中的$$w^*,\alpha^*,\beta^*$$表示满足KKT条件的相应变量的取值。条件2也被称为KKT对偶互补条件（KKT dual complementarity condition）。显然这些$$w^*,\alpha^*,\beta^*$$既是原始问题的解，也是对偶问题的解。
 

@@ -80,11 +80,11 @@ $$\begin{align}& \eta=\mu \\& T(y)=y \\& a(\eta)=\frac{\mu^2}{2} \\& b(y)=\frac{
 
 广义线性模型（Generalized Linear Model，GLM）是解决指数类分布的回归问题的通用模型。它基于以下三个假设：
 
-$$y\lvert x;\theta \sim ExponentialFamily(\eta)(公式1)$$
+$$y\lvert x;\theta \sim ExponentialFamily(\eta) \tag{1}$$
 
-$$h(x)=E[T(y)\lvert x](公式2)$$
+$$h(x)=E[T(y)\lvert x] \tag{2}$$
 
-$$\eta=\theta^Tx(公式3)$$
+$$\eta=\theta^Tx \tag{3}$$
 
 下面以多项分布为例展示一下GLM的处理方法。
 
@@ -114,9 +114,13 @@ $$\begin{align}p(y:\phi)&=\phi_1^{1\{y=1\}}\phi_2^{1\{y=2\}}\cdots \phi_k^{1\{y=
 
 $$\eta=\begin{bmatrix} \log(\frac{\phi_1}{\phi_k}) \\ \log(\frac{\phi_2}{\phi_k}) \\ \vdots \\ \log(\frac{\phi_{k-1}}{\phi_k}) \end{bmatrix},a(\eta)=-\log(\phi_k),b(y)=1$$
 
-$$\eta_i=\log(\frac{\phi_i}{\phi_k})(公式4)\Rightarrow e^{\eta_i}=\frac{\phi_i}{\phi_k}\Rightarrow \phi_ke^{\eta_i}=\phi_i$$
+$$\eta_i=\log(\frac{\phi_i}{\phi_k})\tag{4}$$
 
-$$\Rightarrow \phi_k\sum_{i=1}^ke^{\eta_i}=\sum_{i=1}^k\phi_i=1\Rightarrow \phi_k=\frac{1}{\sum_{i=1}^ke^{\eta_i}}（公式5）$$
+$$\Rightarrow e^{\eta_i}=\frac{\phi_i}{\phi_k}\Rightarrow \phi_ke^{\eta_i}=\phi_i$$
+
+$$\Rightarrow \phi_k\sum_{i=1}^ke^{\eta_i}=\sum_{i=1}^k\phi_i=1$$
+
+$$\Rightarrow \phi_k=\frac{1}{\sum_{i=1}^ke^{\eta_i}}\tag{5}$$
 
 由公式4、5可得：
 
@@ -145,15 +149,15 @@ $$l(\theta)=\sum_{i=1}^m\log p(y^{(i)}\lvert x^{(i)};\theta)=\sum_{i=1}^m\log\pr
 
 由贝叶斯（Bayes）公式可知：
 
-$$p(y\lvert x)=\frac{p(x\lvert y)p(y)}{p(x\lvert y=1)p(y=1)+p(x\lvert y=0)p(y=0)}=\frac{p(x\lvert y)p(y)}{p(x)}(公式1)$$
+$$p(y\lvert x)=\frac{p(x\lvert y)p(y)}{p(x\lvert y=1)p(y=1)+p(x\lvert y=0)p(y=0)}=\frac{p(x\lvert y)p(y)}{p(x)} \tag{6}$$
 
 其中，$$p(x\lvert y)$$称为后验概率，$$p(y)$$称为先验概率。
 
 注：Thomas Bayes，1701~1761，英国统计学家。
 
-由于我们关注的是y的离散值结果中哪个概率大（比如山羊概率和绵羊概率哪个大），而并不是关心具体的概率，因此公式1可改写为：
+由于我们关注的是y的离散值结果中哪个概率大（比如山羊概率和绵羊概率哪个大），而并不是关心具体的概率，因此公式6可改写为：
 
-$$\arg\max_yp(y\lvert x)=\arg\max_y\frac{p(x\lvert y)p(y)}{p(x)}=\arg\max_yp(x\lvert y)p(y)(公式2)$$
+$$\arg\max_yp(y\lvert x)=\arg\max_y\frac{p(x\lvert y)p(y)}{p(x)}=\arg\max_yp(x\lvert y)p(y) \tag{7}$$
 
 ## 高斯分布的向量形式
 
@@ -217,7 +221,7 @@ $$p(x\lvert y=0)=\frac{1}{(2\pi)^{n/2}\lvert\Sigma\rvert^{n/2}}\exp\left(-\frac{
 
 $$p(x\lvert y=1)=\frac{1}{(2\pi)^{n/2}\lvert\Sigma\rvert^{n/2}}\exp\left(-\frac{1}{2}(x-\mu_1)^T\Sigma^{-1}(x-\mu_1)\right)=\frac{1}{A}\exp(f(\mu_1,\Sigma,x))$$
 
-将上面三个分布的概率密度函数代入公式2，可求得$$\arg\max_yp(y\lvert x)$$，然后进行最大似然估计，可得该GDA的最大似然估计参数为：（过程略）
+将上面三个分布的概率密度函数代入公式7，可求得$$\arg\max_yp(y\lvert x)$$，然后进行最大似然估计，可得该GDA的最大似然估计参数为：（过程略）
 
 $$\phi=\frac{1}{m}\sum_{i=1}^m1\{y^{(i)}=1\}$$
 

@@ -210,18 +210,47 @@ http://www.cnblogs.com/jerrylead/archive/2011/04/06/2006910.html
 
 ## KKT条件（续）
 
+严格的说，KKT条件是非线性约束优化问题存在最优解的必要条件。这个问题的充分条件比较复杂，这里不做讨论。
+
 注：Harold William Kuhn，1925～2014，美国数学家，普林斯顿大学教授。
 
 Albert William Tucker，1905～1995，加拿大数学家，普林斯顿大学教授。
 
 William Karush，1917～1997，美国数学家，加州州立大学北岭分校教授。（注意，California State University和University of California是不同的学校）
 
-## 支持向量（support vectors）
+## 支持向量
 
 针对最优边距分类问题，我们定义：
 
-$$g_i(w)=-y^{(i)}(w^Tx+b)+1\le 0$$
+$$g_i(w)=-y^{(i)}(w^Tx^{(i)}+b)+1\le 0$$
 
 由KKT对偶互补条件可知，如果$$\alpha_i>0$$，则$$g_i(w)=0$$。
 
-上图中的实线表示最大边距分割超平面。由之前对于边距的几何意义的讨论可知，只有
+![](/images/article/SVM_3.png)
+
+上图中的实线表示最大边距的分割超平面。由之前对于边距的几何意义的讨论可知，只有离该分界线最近的几个点（即图中的所示的两个x点和一个o点）才会取得约束条件的极值，即$$g_i(w)=0$$。也只有这几个点的$$\alpha_i>0$$，其余点的$$\alpha_i=0$$。这样的点被称作支持向量（support vectors）。显然支持向量的数量是远远小于样本集的数量的。
+
+为我们的问题构建拉格朗日函数如下：
+
+$$\mathcal{L}(w,b,\alpha)=\frac{1}{2}\|w\|^2-\sum_{i=1}^m\alpha_i[y^{(i)}(w^Tx^{(i)}+b)-1] \tag{1}$$
+
+为了求解
+
+$$\theta_\mathcal{D}(\alpha)=\underset{w,b}{\operatorname{min}}\mathcal{L}(w,b,\alpha)$$
+
+可得：
+
+$$\nabla_w\mathcal{L}(w,b,\alpha)=w-\sum_{i=1}^m\alpha_iy^{(i)}x^{(i)}=0$$
+
+即
+
+$$w=\sum_{i=1}^m\alpha_iy^{(i)}x^{(i)} \tag{2}$$
+
+对b求导可得：
+
+$$\frac{\partial}{\partial b}\mathcal{L}(w,b,\alpha)=\sum_{i=1}^m\alpha_iy^{(i)}=0 \tag{3}$$
+
+把公式2代入公式1，可得：
+
+$$\mathcal{L}(w,b,\alpha)=\sum_{i=1}^m\alpha_i-\frac{1}{2}$$
+

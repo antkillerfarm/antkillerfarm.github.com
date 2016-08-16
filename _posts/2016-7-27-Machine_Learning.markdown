@@ -12,13 +12,13 @@ category: technology
 
 如果$$y$$是连续函数，那么这个过程叫做回归（regression）问题。如果$$y$$是离散函数，那么这个过程叫做分类（classification）问题。
 
-$$h_{\theta}(x)=\theta_0+\theta_1x_1+\dots+\theta_nx_n=\sum_{i=0}^n\theta_ix_i=\theta^Tx（公式1）$$
+$$h_{\theta}(x)=\theta_0+\theta_1x_1+\dots+\theta_nx_n=\sum_{i=0}^n\theta_ix_i=\theta^Tx \tag{1}$$
 
 满足公式1条件的回归问题，被称作线性回归（Linear Regression）。
 
 为了评估公式1中待定系数$$\theta$$的预测准确度，我们定义如下代价函数（cost function）：
 
-$$J(\theta)=\frac{1}{2}\sum_{i=0}^m(h_{\theta}(x^{(i)})-y^{(i)})^2（公式2）$$
+$$J(\theta)=\frac{1}{2}\sum_{i=0}^m(h_{\theta}(x^{(i)})-y^{(i)})^2 \tag{2}$$
 
 其中，m表示训练集的个数（从0算起），$$x^{(i)}$$表示第i个训练样本。
 
@@ -97,7 +97,7 @@ http://freemind.pluskid.org/machine-learning/newton-method/
 
 LMS（least mean squares，最小均方）算法，也是一种迭代算法。其迭代公式为：
 
-$$\theta_j:=\theta_j-\alpha\frac{\partial J(\theta)}{\partial \theta_j}（公式3）$$
+$$\theta_j:=\theta_j-\alpha\frac{\partial J(\theta)}{\partial \theta_j} \tag{3}$$
 
 其中，$$:=$$表示赋值操作，$$J(\theta)$$是公式2所示的代价函数，$$\alpha$$被称作学习率（learning rate）。
 
@@ -105,7 +105,7 @@ $$\theta_j:=\theta_j-\alpha\frac{\partial J(\theta)}{\partial \theta_j}（公式
 
 将公式2代入公式3，可得：
 
-$$\theta_j:=\theta_j+\alpha(y^{(i)}-h_{\theta}(x^{(i)}))x^{(i)}_j（公式4）$$
+$$\theta_j:=\theta_j+\alpha(y^{(i)}-h_{\theta}(x^{(i)}))x^{(i)}_j \tag{4}$$
 
 迭代方式分为两种：
 
@@ -190,7 +190,7 @@ $$N(x)=\sum_{j=0}^ka_jn_j(x),n_j(x)=\prod_{i=0}^{j-1}(x-x_i),a_j=[y_0,\dots,y_j]
 
 局部加权线性回归（LWR，locally weighted linear regression）算法是一种对特征集选取不敏感的算法。它将公式2中的代价函数修改为：
 
-$$J(\theta)=\frac{1}{2}\sum_{i=0}^m\omega^{(i)}(h_{\theta}(x^{(i)})-y^{(i)})^2（公式5）$$
+$$J(\theta)=\frac{1}{2}\sum_{i=0}^m\omega^{(i)}(h_{\theta}(x^{(i)})-y^{(i)})^2 \tag{5}$$
 
 其中，$$\omega^{(i)}$$被称为权重，它有多种选取方法，最常用的是：
 
@@ -208,7 +208,7 @@ $$\omega^{(i)}=\exp\left(-\frac{(x^{(i)}-x)^2}{2\tau^2}\right)$$
 
 为了将线性回归的结果约束到$$[0,1]$$区间，我们将公式1修改为：
 
-$$h_\theta(x)=g(\theta^Tx)=\frac{1}{1+e^{-\theta^Tx}}(公式6)$$
+$$h_\theta(x)=g(\theta^Tx)=\frac{1}{1+e^{-\theta^Tx}} \tag{6}$$
 
 公式6又被称为logistic function或sigmoid function。函数$$g(z)$$的图像如下所示：
 
