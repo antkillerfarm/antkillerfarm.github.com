@@ -153,7 +153,7 @@ $$\begin{align}
 
 这个问题实际上就是数学上的QP（Quadratic Programming）问题，采用这种方案的分类被称为最优边距分类（optimal margin classifier）。
 
-## 拉格朗日对偶（Lagrange duality）
+## 拉格朗日对偶
 
 QP问题是有约束条件的优化问题（constrained optimization problem）的一种，下面让我们讨论一下解决这类问题的通用方法。
 
@@ -179,7 +179,7 @@ $$\mathcal{L}(w,\alpha,\beta)=f(w)+\sum_{i=1}^k\alpha_ig_i(w)+\sum_{i=1}^l\beta_
 
 $$\theta_\mathcal{P}(w)=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\mathcal{L}(w,\alpha,\beta)=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}f(w)+\sum_{i=1}^k\alpha_ig_i(w)+\sum_{i=1}^l\beta_ih_i(w)$$
 
-其中，$$\mathcal{P}$$代表原始优化问题。
+其中，$$\mathcal{P}$$代表原始优化问题，$$\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}$$表示在$$\alpha,\beta$$变化，而其他变量不变的情况下，求最大值。
 
 如果w不满足约束，也就是$$g_i(w)>0$$或$$h_i(w)\ne 0$$。这时由于$$\mathcal{L}$$函数是无约束函数，$$\alpha_i$$、$$\beta_i$$可以任意取值，因此$$\sum_{i=1}^k\alpha_ig_i(w)$$或$$\sum_{i=1}^l\beta_ih_i(w)$$并没有极值，也就是说$$\theta_\mathcal{P}(w)=\infty$$。
 
@@ -192,11 +192,35 @@ f(w), & w满足约束 \\
 \infty, & w不满足约束 \\
 \end{cases}$$
 
-Karush-Kuhn-Tucker(KKT) conditions
+我们定义：
 
-注：Harold William Kuhn，1925～2014，美国数学家，普林斯顿大学教授。
+$$p^*=\underset{w}{\operatorname{min}}\theta_\mathcal{P}(w)=\underset{w}{\operatorname{min}}\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\mathcal{L}(w,\alpha,\beta)$$
 
-Albert William Tucker，1905～1995，加拿大数学家，普林斯顿大学教授。
+下面我们定义对偶函数：
 
-William Karush，1917～1997，加州州立大学北岭分校教授。（注意，California State University和University of California是不同的学校）
+$$\theta_\mathcal{D}(w)=\underset{w}{\operatorname{min}}\mathcal{L}(w,\alpha,\beta)$$
+
+这里的$$\mathcal{D}$$代表原始优化问题的对偶优化问题。仿照原始优化问题定义如下：
+
+$$d^*=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\theta_\mathcal{D}(w)=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\underset{w}{\operatorname{min}}\mathcal{L}(w,\alpha,\beta)$$
+
+这里我们不加证明的给出如下公式：
+
+$$d^*=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\underset{w}{\operatorname{min}}\mathcal{L}(w,\alpha,\beta)\le\underset{w}{\operatorname{min}}\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\mathcal{L}(w,\alpha,\beta)=p^*$$
+
+这样的对偶问题被称作拉格朗日对偶（Lagrange duality）。
+
+## KKT条件
+
+拉格朗日对偶公式中使$$p^*=d^*$$成立的条件，被称为KKT条件（Karush-Kuhn-Tucker conditions）：
+
+$$\begin{align}
+\frac{\partial}{\partial w_i}\mathcal{L}(w^*,\alpha^*,\beta^*) & =0,i=1,\dots,n & \tag{1}\label{1}\\
+\frac{\partial}{\partial \beta_i}\mathcal{L}(w^*,\alpha^*,\beta^*) & =0,i=1,\dots,l & \tag{2}\label{2}\\
+\alpha_i^*g_i(w^*)& =0,i=1,\dots,k & \tag{3}\label{3}\\
+g_i(w^*)& \le 0,i=1,\dots,k & \tag{4}\label{4}\\
+\alpha_i^* & \ge 0,i=1,\dots,k & \tag{5}\label{5}\\
+\end{align}$$
+
+其中的$$w^*,\alpha^*,\beta^*$$表示满足KKT条件的相应变量的取值。条件3也被称为KKT对偶互补条件（KKT dual complementarity condition）。显然这些$$w^*,\alpha^*,\beta^*$$既是原始问题的解，也是对偶问题的解。
 

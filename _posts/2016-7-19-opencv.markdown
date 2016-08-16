@@ -208,4 +208,20 @@ http://www.cnblogs.com/jerrylead/archive/2011/04/06/2006910.html
 
 # Reinforcement Learning and Control
 
+## KKT条件（续）
 
+注：Harold William Kuhn，1925～2014，美国数学家，普林斯顿大学教授。
+
+Albert William Tucker，1905～1995，加拿大数学家，普林斯顿大学教授。
+
+William Karush，1917～1997，美国数学家，加州州立大学北岭分校教授。（注意，California State University和University of California是不同的学校）
+
+## 支持向量（support vectors）
+
+针对最优边距分类问题，我们定义：
+
+$$g_i(w)=-y^{(i)}(w^Tx+b)+1\le 0$$
+
+由KKT对偶互补条件可知，如果$$\alpha_i>0$$，则$$g_i(w)=0$$。
+
+上图中的实线表示最大边距分割超平面。由之前对于边距的几何意义的讨论可知，只有
