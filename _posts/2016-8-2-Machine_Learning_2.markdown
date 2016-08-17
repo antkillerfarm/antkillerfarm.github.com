@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二）
+title:  机器学习（二）——广义线性模型、生成学习算法
 category: technology 
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  双边滤波, Steerable滤波, Gabor滤波, Schmid滤波
+title:  图像处理理论（三）——双边滤波, Steerable滤波, Gabor滤波, Schmid滤波
 category: technology 
 ---
 

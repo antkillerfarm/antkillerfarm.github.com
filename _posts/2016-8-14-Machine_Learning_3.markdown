@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三）
+title:  机器学习（三）——朴素贝叶斯方法、SVM（上）
 category: technology 
 ---
 
