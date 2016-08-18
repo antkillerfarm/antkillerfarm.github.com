@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（四）——SVM（下）
+title:  机器学习（四）——SVM（中）
 category: technology 
 ---
 
@@ -147,6 +147,8 @@ $$K(x,z)=\exp\left(-\frac{\|x-z\|^2}{2\sigma^2}\right)$$
 
 注：$$(a+b)^n$$是个p为0.5的二项分布，由棣莫佛-拉普拉斯定理（de Moivre–Laplace theorem）可知，当$$n\to\infty$$时，它的极限是正态分布。
 
+![](/images/article/SVM_5.png)
+
 ## 核函数的有效性
 
 如果对于给定的核函数K，存在一个特征映射$$\phi$$，使得$$K(x,z)=\phi(x)^T\phi(z)$$，则称K为有效核函数。
@@ -176,6 +178,8 @@ $$w^Tx+b=\sum_{i\in SV}\alpha_iy^{(i)}\langle x^{(i)},x\rangle+b=\sum_{i\in SV}\
 
 我们之前讨论的情况都是建立在样例线性可分的假设上，当样例线性不可分时，我们可以尝试使用核函数来将特征映射到高维，这样很可能就可分了。然而，映射后我们也不能100%保证可分。那怎么办呢，我们需要将模型进行调整，以保证在不可分的情况下，也能够尽可能地找出分隔超平面。
 
+![](/images/article/SVM_6.png)
+
 上面的右图中可以看到一个离群点（可能是噪声），它会造成超平面的移动，从而导致边距缩小，可见以前的模型对噪声非常敏感。再有甚者，如果离群点在另外一个类中，那么这时候就是线性不可分的了。
 
 这时候应该允许一些点游离并在模型中违背限制条件（函数间隔大于1）。我们设计得到新的模型如下（也称软间隔）：
@@ -200,13 +204,22 @@ $$\begin{align}
 & & & \sum_{i=1}^m\alpha_iy^{(i)}=0
 \end{align}$$
 
-此时，我们发现没有了参数$$\xi_i$$，与之前模型唯一不同在于$$\alpha_i$$多了$$\alpha_i\le C$$的限制条件。需要提醒的是，b的求值公式也发生了改变，改变方法在SMO算法里面介绍。
+此时，我们发现没有了参数$$\xi_i$$，与之前模型唯一不同在于$$\alpha_i$$多了$$\alpha_i\le C$$的限制条件。需要注意的是，b的求值公式发生了改变，这将在SMO算法里面介绍。
 
 ## 坐标上升法
 
+$$\begin{align}
+&\operatorname{max}_\alpha & & W(\alpha_1,\dots,\alpha_m)
+\end{align}$$
 
+对于上面这个优化问题，除了之前介绍的梯度下降法和牛顿法之外，还有坐标上升法(Coordinate ascent)。其过程为：
 
-## 序列最小优化方法
+>Loop until convergence:{<br/>
+><span style="white-space: pre">	</span>for i=1 to m, {<br/>
+><span style="white-space: pre">	</span><span style="white-space: pre">	</span>
+>$$\alpha_i:=\arg\max_{\hat\alpha_i}W(\alpha_1,\dots,\alpha_{i-1},\hat\alpha_i,\alpha_{i+1},\dots,\alpha_m)$$
+><br/><span style="white-space: pre">	</span>}
+><br/>}
 
-注：John Carlton Platt，1963年生，14岁进入加州州立大学长滩分校，加州理工学院博士。先后供职于Synaptics和Microsoft Research，现为Google首席科学家。
+最里面语句的意思是固定除$$\alpha_i$$之外的所有$$\alpha_j(j\neq i)$$,这时W可看作只是关于$$\alpha_i$$的函数，那么直接对$$\alpha_i$$求导优化即可。这里我们进行最大化求导的顺序是从1到m,可以通过更改优化顺序来使W能够更快地增加并收敛。如果W在内循环中能够很快地达到最优,那么坐标上升法会是一个很高效的求极值方法。
 
