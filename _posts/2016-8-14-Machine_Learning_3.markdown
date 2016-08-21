@@ -76,7 +76,11 @@ $$\phi_j=p(y=j)=\frac{\sum_{i=1}^m1\{y^{(i)}=j\}+1}{m+k}$$
 
 # 支持向量机
 
-支持向量机（SVM，Support Vector Machines）是目前最好的监督学习算法。
+支持向量机（SVM，Support Vector Machines）是目前最好的监督学习算法。它由Vladimir Naumovich Vapnik与Alexey Ya. Chervonenkis于1963年提出。
+
+注：Vladimir Naumovich Vapnik，1936年生，乌兹别克国立大学学士，莫斯科控制科学学院博士，后成为该学院计算机科学研究部门负责人。1990年代末移民美国，先后供职于AT&T Bell、NEC、Facebook，伦敦大学和哥伦比亚大学教授。
+
+Alexey Yakovlevich Chervonenkis，1938～2014，俄罗斯数学家。俄罗斯科学院院士，伦敦大学教授。
 
 我们首先来看一幅图：
 
@@ -210,17 +214,5 @@ $$d^*=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\underset{w}{\ope
 
 这样的对偶问题被称作拉格朗日对偶（Lagrange duality）。
 
-## KKT条件
 
-拉格朗日对偶公式中使$$p^*=d^*$$成立的条件，被称为KKT条件（Karush-Kuhn-Tucker conditions）：
-
-$$\begin{align}
-\frac{\partial}{\partial w_i}\mathcal{L}(w^*,\alpha^*,\beta^*) & =0,i=1,\dots,n & \\
-\frac{\partial}{\partial \beta_i}\mathcal{L}(w^*,\alpha^*,\beta^*) & =0,i=1,\dots,l & \\
-\alpha_i^*g_i(w^*)& =0,i=1,\dots,k & \tag{2}\\
-g_i(w^*)& \le 0,i=1,\dots,k & \\
-\alpha_i^* & \ge 0,i=1,\dots,k & \\
-\end{align}$$
-
-其中的$$w^*,\alpha^*,\beta^*$$表示满足KKT条件的相应变量的取值。条件2也被称为KKT对偶互补条件（KKT dual complementarity condition）。显然这些$$w^*,\alpha^*,\beta^*$$既是原始问题的解，也是对偶问题的解。
 

@@ -132,6 +132,10 @@ https://www.zhihu.com/question/20691338
 
 机器学习该怎么入门？
 
+https://github.com/liuruoze/EasyPR
+
+一个开源的中文车牌识别系统。
+
 ## 使用细节
 
 ### saturate_cast
@@ -211,42 +215,5 @@ http://www.cnblogs.com/jerrylead/archive/2011/04/06/2006910.html
 # Independent Components Analysis
 
 # Reinforcement Learning and Control
-
-# 机器学习（五）——SVM（下）
-
-## 坐标上升法（续）
-
-![](/images/article/SVM_7.png)
-
-图中的直线表示迭代优化的路径，可以看到每一步前进路线都是平行于坐标轴的，因为每一步只优化一个变量。
-
-## 序列最小优化方法
-
-序列最小优化方法（Sequential Minimal Optimization，SMO）算法由Microsoft Research的John C. Platt在1998年提出，并成为最快的二次规划优化算法，特别针对SVM和数据稀疏时性能更优。关于SMO最好的资料就是他本人写的《Sequential Minimal Optimization A Fast Algorithm for Training Support Vector Machines》。
-
-注：John Carlton Platt，1963年生，14岁进入加州州立大学长滩分校，加州理工学院博士。先后供职于Synaptics和Microsoft Research，现为Google首席科学家。
-
-针对之前列出的SVM对偶优化问题：
-
-$$\begin{align}
-&\operatorname{max}_\alpha & & W(\alpha)=\sum_{i=1}^m\alpha_i-\frac{1}{2}\sum_{i,j=1}^my^{(i)}y^{(j)}\alpha_i\alpha_j\langle x^{(i)},x^{(j)}\rangle \tag{1}\\
-&\operatorname{s.t.}& & 0\le\alpha_i\le C,i=1,\dots,m \tag{2}\\
-& & & \sum_{i=1}^m\alpha_iy^{(i)}=0 \tag{3}
-\end{align}$$
-
-我们可以考虑使用坐标上升法，即首先固定除$$\alpha_1$$以外的所有参数,然后在$$\alpha_1$$上求极值。然而由于约束3的存在，把除$$\alpha_1$$以外的所有参数固定，实际上也就把$$\alpha_1$$给固定了。因此，需要一定的技巧来处理，比如:
-
->Repeat till convergence:{<br/>
-><span style="white-space: pre">	</span>1.挑选一对$$\alpha_i$$和$$\alpha_j$$（挑选的规则可以是启发式的，以收敛快为准则）<br/>
-><span style="white-space: pre">	</span>2.固定除$$\alpha_i$$和$$\alpha_j$$之外的其余参数，以确定W极值条件下的$$\alpha_i$$和$$\alpha_j$$
-><br/>}
-
-这里假设我们固定$$\alpha_3,\dots,\alpha_m$$，来优化$$\alpha_1$$和$$\alpha_2$$。由约束3可得：
-
-$$\alpha_1y^{(1)}+\alpha_2y^{(2)}=-\sum_{i=3}^m\alpha_iy^{(i)}=\zeta$$
-
-因为$$\alpha_3,\dots,\alpha_m$$的值已经固定，所以$$\zeta$$实际上是个常数。
-
-
 
 
