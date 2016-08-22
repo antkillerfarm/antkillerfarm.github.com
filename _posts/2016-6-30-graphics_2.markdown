@@ -210,6 +210,8 @@ $$\rho(r)=\frac{C^2}{2}\left[1-\exp\left(-\left(\frac{r}{C}\right)^2\right)\righ
 
 Mahalanobis Distance是印度现代统计学之父Prasanta Chandra Mahalanobis于1936年提出的概念。
 
+Prasanta Chandra Mahalanobis，1893~1972，印度统计学家，印度统计研究所创始人。
+
 p维空间的两点（两个p维向量x,y）的欧氏距离定义为：
 
 $$d_E(x,y)=\sqrt{(x_1-y_1)^2+\dots+(x_p-y_p)^2}=\sqrt{(x-y)^T(x-y)}（公式1）$$
