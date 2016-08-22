@@ -216,4 +216,6 @@ http://www.cnblogs.com/jerrylead/archive/2011/04/06/2006910.html
 
 # Reinforcement Learning and Control
 
+# 机器学习（五）——SVM（4）
 
+## 

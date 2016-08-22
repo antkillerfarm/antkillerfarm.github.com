@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（五）——SVM（下）
+title:  机器学习（五）——SVM（3）
 category: technology 
 ---
 
@@ -117,9 +117,9 @@ $$\alpha_2(K_{11}+K_{22}-2K_{12})=sw(K_{11}-K_{12})+y^{(2)}(v_1-v_2)+1-s \tag{6}
 
 $$\alpha_1y^{(1)}+\alpha_2y^{(2)}=-\sum_{i=3}^m\alpha_iy^{(i)}=\alpha_1^*y^{(1)}+\alpha_2^*y^{(2)}$$
 
-$$\alpha_1+s\alpha_2=w=\alpha_1^*+s\alpha_2^*$$
+$$\alpha_1+s\alpha_2=w=\alpha_1^*+s\alpha_2^* \tag{7}$$
 
-$$v_i=\sum_{j=3}^my^{(j)}\alpha_j^*K_{ij}=u_i-b^*-y^{(1)}\alpha_1^*K_{1i}-y^{(2)}\alpha_2^*K_{2i}$$
+$$v_i=\sum_{j=3}^my^{(j)}\alpha_j^*K_{ij}=u_i-b^*-y^{(1)}\alpha_1^*K_{1i}-y^{(2)}\alpha_2^*K_{2i} \tag{8}$$
 
 $$\begin{align}
 v_1-v_2&=(u_1-b^*-y^{(1)}\alpha_1^*K_{11}-y^{(2)}\alpha_2^*K_{21})-(u_2-b^*-y^{(1)}\alpha_1^*K_{12}-y^{(2)}\alpha_2^*K_{22})
@@ -144,7 +144,7 @@ $$\alpha_2(K_{11}+K_{22}-2K_{12})=s\alpha_1^*K_{11}+\alpha_2^*K_{11}-s\alpha_1^*
 
 $$\alpha_2(K_{11}+K_{22}-2K_{12})=\alpha_2^*(K_{11}+K_{22}-2K_{12})+y^{(2)}(u_1-u_2+y^{(2)}-y^{(1)})$$
 
-定义$$\eta=K_{11}+K_{22}-2K_{12},E_i=u_i-y^{(i)}$$，则：
+定义$$\eta=K_{11}+K_{22}-2K_{12},E_i=u_i-y^{(i)}$$。其中，$$\eta$$是W的二阶导数，而$$E_i$$是第i个训练样本的误差，即预测值和实际值的差。
 
 $$\alpha_2\eta=\alpha_2^*\eta+y^{(2)}(E_1-E_2)$$
 
@@ -160,12 +160,73 @@ L, & if \ \alpha_2^{new,unclipped}<L \\
 
 其中，$$\alpha_2^{new}$$是更新值。
 
+由公式7可得：
+
 $$\alpha_1+s\alpha_2=\alpha_1^{new}+s\alpha_2^{new}$$
 
 $$\alpha_1^{new}=\alpha_1+s(\alpha_2-\alpha_2^{new})$$
 
 在特殊情况下，$$\eta$$可能不为正，如果核函数K不满足Mercer定理，那么目标函数可能变得非正定，$$\eta$$可能出现负值。即使K是有效的核函数，如果训练样本中出现相同的特征x，那么$$\eta$$仍有可能为0。SMO算法在$$\eta$$不为正值的情况下仍有效。
 
-为保证有效性，我们可以推导出$$\eta$$就是W的二阶导数。当$$\eta\le 0$$时
+当$$\eta\le 0$$时，W本身没有极值，极值出现在边界处，即$$\alpha_2^{new}=L$$或$$\alpha_2^{new}=H$$。我们需要对边界的W值进行检查。
 
+这里首先对$$\alpha_2^{new}=L$$的情况做一下讨论。
+
+$$\alpha_1^{new}=L_1=\alpha_1+s(\alpha_2-L)$$
+
+由公式8可得：
+
+$$\begin{align}
+L_1-y^{(1)}L_1v_1&=L_1\left[(y^{(1)})^2-y^{(1)}(u_i-b-y^{(1)}\alpha_1K_{11}-y^{(2)}\alpha_2K_{21})\right]
+\\&=L_1\left[y^{(1)}(y^{(1)}-u_i+b)+\alpha_1K_{11}+s\alpha_2K_{12}\right]
+\\&=L_1\left[y^{(1)}(b-E_1)+\alpha_1K_{11}+s\alpha_2K_{12}\right]=L_1f_1
+\end{align}$$
+
+即
+
+$$f_1=y^{(1)}(b-E_1)+\alpha_1K_{11}+s\alpha_2K_{12}$$
+
+同理：
+
+$$L-y^{(2)}Lv_2=Lf_2$$
+
+$$f_2=y^{(2)}(b-E_2)+s\alpha_1K_{12}+\alpha_2K_{22}$$
+
+由公式5可得：
+
+$$W_L=L_1f_1+Lf_2-\frac{1}{2}L_1^2K_{11}-\frac{1}{2}L^2K_{22}-sLL_1K_{12}$$
+
+$$\alpha_2^{new}=H$$的情况，同理可得：
+
+$$\alpha_1^{new}=H_1=\alpha_1+s(\alpha_2-H)$$
+
+$$W_H=H_1f_1+Hf_2-\frac{1}{2}H_1^2K_{11}-\frac{1}{2}H^2K_{22}-sHH_1K_{12}$$
+
+根据$$W_H$$和$$W_L$$哪个是极值，可以反过来确定$$\alpha_2^{new}=L$$，还是$$\alpha_2^{new}=H$$。
+
+至此，迭代关系式除了b的推导式以外，都已经推出。
+
+由公式8可得：
+
+$$u_1^{new}-b^{new}-y^{(1)}\alpha_1^{new}K_{11}-y^{(2)}\alpha_2^{new}K_{12}=u_1-b-y^{(1)}\alpha_1K_{11}-y^{(2)}\alpha_2K_{12}$$
+
+迭代的目的是使预测更为准确，因此设置$$u_1^{new}=y^{(1)}$$是很直观的做法，因此：
+
+$$\begin{align}
+-b^{new}&=u_1-u_1^{new}+y^{(1)}(\alpha_1^{new}-\alpha_1)K_{11}+y^{(2)}(\alpha_2^{new}-\alpha_2)K_{12}
+\\&=(u_1-y^{(1)})+y^{(1)}(\alpha_1^{new}-\alpha_1)K_{11}+y^{(2)}(\alpha_2^{new}-\alpha_2)K_{12}
+\\&=E_1+y^{(1)}(\alpha_1^{new}-\alpha_1)K_{11}+y^{(2)}(\alpha_2^{new}-\alpha_2)K_{12}
+\end{align}$$
+
+上式是根据$$u_1$$得到的$$b^{new}$$，我们将之记作$$b_1$$。
+
+同理，可得：
+
+$$-b_2=E_2+y^{(1)}(\alpha_1^{new}-\alpha_1)K_{12}+y^{(2)}(\alpha_2^{new}-\alpha_2)K_{22}$$
+
+如果$$\alpha_1^{new}$$在边界内，则$$b^{new}=b_1$$；如果$$\alpha_2^{new}$$在边界内，则$$b^{new}=b_2$$。
+
+如果$$\alpha_1^{new}$$和$$\alpha_2^{new}$$都在边界内，则$$b^{new}=b_1=b_2$$。
+
+如果$$\alpha_1^{new}$$和$$\alpha_2^{new}$$都在边界上，则$$b_1$$和$$b_2$$之间的任意值都满足KKT条件，一般取$$b^{new}=\frac{b_1+b_2}{2}$$。
 
