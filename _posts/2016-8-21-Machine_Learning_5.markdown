@@ -85,39 +85,41 @@ $$\alpha_1=\frac{(\zeta-\alpha_2y^{(2)})}{y^{(1)}}$$
 
 $$\begin{align}
 \alpha_1&=\frac{(\zeta-\alpha_2y^{(2)})}{y^{(1)}}=\frac{(\zeta-\alpha_2y^{(2)})(y^{(1)})^2}{y^{(1)}}=(\zeta-\alpha_2y^{(2)})y^{(1)}
-\\&=y^{(1)}\zeta-y^{(1)}y^{(2)}\alpha_2=w-s\alpha_2
+\\&=y^{(1)}\zeta-y^{(1)}y^{(2)}\alpha_2=\omega-s\alpha_2
 \end{align}$$
+
+其中$$\omega=y^{(1)}\zeta$$。
 
 将上式代入公式5可得：
 
 $$\begin{align}
 W(\alpha)&=\alpha_1+\alpha_2-\frac{1}{2}\alpha_1^2K_{11}-\frac{1}{2}\alpha_2^2K_{22}-s\alpha_1\alpha_2K_{12}-y^{(1)}\alpha_1v_1-y^{(2)}\alpha_2v_2+\psi_3
-\\&=(w-s\alpha_2)+\alpha_2-\frac{1}{2}(w-s\alpha_2)^2K_{11}-\frac{1}{2}\alpha_2^2K_{22}-s(w-s\alpha_2)\alpha_2K_{12}
-\\&\qquad-y^{(1)}(w-s\alpha_2)v_1-y^{(2)}\alpha_2v_2+\psi_3
-\\&=(w-s\alpha_2)+\alpha_2-\frac{1}{2}(w-s\alpha_2)^2K_{11}-\frac{1}{2}\alpha_2^2K_{22}-sw\alpha_2K_{12}+s^2\alpha_2^2K_{12}
-\\&\qquad-y^{(1)}(w-s\alpha_2)v_1-y^{(2)}\alpha_2v_2+\psi_3
-\\&=(w-s\alpha_2)+\alpha_2-\frac{1}{2}(w-s\alpha_2)^2K_{11}-\frac{1}{2}\alpha_2^2K_{22}-sw\alpha_2K_{12}+\alpha_2^2K_{12}
-\\&\qquad-y^{(1)}(w-s\alpha_2)v_1-y^{(2)}\alpha_2v_2+\psi_3
+\\&=(\omega-s\alpha_2)+\alpha_2-\frac{1}{2}(\omega-s\alpha_2)^2K_{11}-\frac{1}{2}\alpha_2^2K_{22}-s(\omega-s\alpha_2)\alpha_2K_{12}
+\\&\qquad-y^{(1)}(\omega-s\alpha_2)v_1-y^{(2)}\alpha_2v_2+\psi_3
+\\&=(\omega-s\alpha_2)+\alpha_2-\frac{1}{2}(\omega-s\alpha_2)^2K_{11}-\frac{1}{2}\alpha_2^2K_{22}-s\omega\alpha_2K_{12}+s^2\alpha_2^2K_{12}
+\\&\qquad-y^{(1)}(\omega-s\alpha_2)v_1-y^{(2)}\alpha_2v_2+\psi_3
+\\&=(\omega-s\alpha_2)+\alpha_2-\frac{1}{2}(\omega-s\alpha_2)^2K_{11}-\frac{1}{2}\alpha_2^2K_{22}-s\omega\alpha_2K_{12}+\alpha_2^2K_{12}
+\\&\qquad-y^{(1)}(\omega-s\alpha_2)v_1-y^{(2)}\alpha_2v_2+\psi_3
 \end{align}$$
 
 对上式求导可得：
 
 $$\begin{align}
-\frac{\mathrm{d}W(\alpha)}{\mathrm{d}\alpha_2}&=-s+1+s(w-s\alpha_2)K_{11}-\alpha_2K_{22}-swK_{12}+2\alpha_2K_{12}+y^{(1)}sv_1-y^{(2)}v_2
-\\&=-s+1+swK_{11}-\alpha_2K_{11}-\alpha_2K_{22}-swK_{12}+2\alpha_2K_{12}+y^{(2)}v_1-y^{(2)}v_2=0
+\frac{\mathrm{d}W(\alpha)}{\mathrm{d}\alpha_2}&=-s+1+s(\omega-s\alpha_2)K_{11}-\alpha_2K_{22}-s\omega K_{12}+2\alpha_2K_{12}+y^{(1)}sv_1-y^{(2)}v_2
+\\&=-s+1+s\omega K_{11}-\alpha_2K_{11}-\alpha_2K_{22}-s\omega K_{12}+2\alpha_2K_{12}+y^{(2)}v_1-y^{(2)}v_2=0
 \end{align}$$
 
 所以：
 
-$$\alpha_2(K_{11}+K_{22}-2K_{12})=sw(K_{11}-K_{12})+y^{(2)}(v_1-v_2)+1-s \tag{6}$$
+$$\alpha_2(K_{11}+K_{22}-2K_{12})=s\omega(K_{11}-K_{12})+y^{(2)}(v_1-v_2)+1-s \tag{6}$$
 
-定义$$u=w^Tx+b$$，则根据上一节的公式6,可得$$u_i=\sum_{j=1}^m\alpha_jy^{(j)}K(x^{(i)},x^{(j)})+b$$
+定义$$u=w^Tx+b$$，则根据《机器学习（四）》一节的公式6,可得$$u_i=\sum_{j=1}^m\alpha_jy^{(j)}K(x^{(i)},x^{(j)})+b$$
 
 因为迭代前后约束条件3不变，所以：
 
 $$\alpha_1y^{(1)}+\alpha_2y^{(2)}=-\sum_{i=3}^m\alpha_iy^{(i)}=\alpha_1^*y^{(1)}+\alpha_2^*y^{(2)}$$
 
-$$\alpha_1+s\alpha_2=w=\alpha_1^*+s\alpha_2^* \tag{7}$$
+$$\alpha_1+s\alpha_2=\omega=\alpha_1^*+s\alpha_2^* \tag{7}$$
 
 $$v_i=\sum_{j=3}^my^{(j)}\alpha_j^*K_{ij}=u_i-b^*-y^{(1)}\alpha_1^*K_{1i}-y^{(2)}\alpha_2^*K_{2i} \tag{8}$$
 
@@ -136,7 +138,7 @@ y^{(2)}(v_1-v_2)+1-s&=y^{(2)}(u_1-u_2)-y^{(2)}y^{(1)}\alpha_1^*K_{11}-(y^{(2)})^
 
 这里的$$\alpha^*$$代表旧的迭代值，虽然它的含义和之前讨论KKT条件时的$$\alpha^*$$有所不同，但内涵是一致的——迭代值的极限是最优值，且迭代过程满足约束条件。其他变量也是类似的。
 
-将w、v代入公式6可得：
+将$$\omega$$、v代入公式6可得：
 
 $$\alpha_2(K_{11}+K_{22}-2K_{12})=s(\alpha_1^*+s\alpha_2^*)(K_{11}-K_{12})+y^{(2)}(v_1-v_2)+1-s$$
 
