@@ -213,3 +213,9 @@ http://www.cnblogs.com/jerrylead/archive/2011/04/06/2006910.html
 # Independent Components Analysis
 
 # Reinforcement Learning and Control
+
+# Linear Discriminant Analysis
+
+# Partial Least Squares Discriminant Analysis
+
+# 

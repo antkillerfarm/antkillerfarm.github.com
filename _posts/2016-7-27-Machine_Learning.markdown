@@ -4,6 +4,18 @@ title:  机器学习（一）——线性回归、分类与逻辑回归
 category: technology 
 ---
 
+# 序
+
+这是根据Andrew Ng的《机器学习讲义》，编写的系列blog。
+
+http://www.cnblogs.com/jerrylead/archive/2012/05/08/2489725.html
+
+这是网友jerrylead翻译整理的版本，也是本文的一个重要的参考。
+
+我写的版本在jerrylead版本的基础上，略有增删，添加了一下其他资料里的内容。
+
+还有就是使用Mathjax书写公式，便于其他人的修改与传播。
+
 # 线性回归
 
 线性回归属于有监督学习（supervised learning）的其中一种方法。
