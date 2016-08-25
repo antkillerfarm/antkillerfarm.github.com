@@ -12,6 +12,10 @@ http://www.cnblogs.com/jerrylead/archive/2012/05/08/2489725.html
 
 这是网友jerrylead翻译整理的版本，也是本文的一个重要的参考。
 
+http://www.tcse.cn/~xulijie/
+
+这是jerrylead的个人主页。
+
 我写的版本在jerrylead版本的基础上，略有增删，添加了一下其他资料里的内容。
 
 还有就是使用Mathjax书写公式，便于其他人的修改与传播。

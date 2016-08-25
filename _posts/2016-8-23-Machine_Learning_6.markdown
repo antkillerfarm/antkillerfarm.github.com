@@ -106,7 +106,48 @@ $$\hat\theta=\arg\min_\theta\hat\varepsilon(h_\theta)$$
 
 ERM是一类基本的学习算法，也是本节关注的焦点。
 
-我们定义预测函数类$$\mathcal{H}$$，用以表示解决某类学习问题的所有分类器的集合。
+我们定义预测函数类（hypothesis class ）$$\mathcal{H}$$，用以表示解决某类学习问题的所有分类器的集合。则ERM算法可表示为：
 
+$$\hat h=\arg\min_{h\in \mathcal{H}}\hat\varepsilon(h)$$
 
+## $$\mathcal{H}$$为有限集的情况
+
+根据之前的讨论，我们做如下定义：
+
+$$Z=1\{h_i(x)\neq y\}$$
+
+$$Z_j=1\{h_i(x^{(j)})\neq y^{(j)}\}$$
+
+$$\hat\varepsilon(h_i)=\frac{1}{m}\sum_{j=1}^mZ_j$$
+
+其中，$$h_i\in \mathcal{H}$$。
+
+由Hoeffding不等式可知：
+
+$$P(\lvert\varepsilon(h_i)-\hat\varepsilon(h_i)\rvert>\gamma)\le 2\exp(-2\gamma^2m)$$
+
+这个公式表明：对于特定的$$h_i$$，在m很大的情况下，训练误差有很大的概率接近于泛化误差。
+
+如果我们用$$A_i$$表示事件$$\lvert\varepsilon(h_i)-\hat\varepsilon(h_i)\rvert>\gamma$$，则上式可改为$$P(A_i)\le 2\exp(-2\gamma^2m)$$。
+
+$$P(\exists h\in\mathcal{H}.\lvert\varepsilon(h_i)-\hat\varepsilon(h_i)\rvert>\gamma)=P(A_1\cup \dots\cup A_k)$$
+
+$$\le \sum_{i=1}^kP(A_i)\le \sum_{i=1}^k2\exp(-2\gamma^2m)=2k\exp(-2\gamma^2m)$$
+
+$$\begin{align}
+&1-P(\exists h\in\mathcal{H}.\lvert\varepsilon(h_i)-\hat\varepsilon(h_i)\rvert>\gamma)=P(\lnot\exists h\in\mathcal{H}.\lvert\varepsilon(h_i)-\hat\varepsilon(h_i)\rvert>\gamma)
+\\&=P(\forall h\in\mathcal{H}.\lvert\varepsilon(h_i)-\hat\varepsilon(h_i)\rvert\le\gamma)\ge 1-2k\exp(-2\gamma^2m)
+\end{align}$$
+
+上面的结果表明，对于所有的$$h\in \mathcal{H}$$，实际上也有一个收敛限制。
+
+上式变形可得：
+
+$$m\ge \frac{1}{2\gamma^2}\log\frac{2k}{\delta}$$
+
+其中，$$\delta=2k\exp(-2\gamma^2m)$$。
+
+上面的公式表明，在给定$$\gamma$$和$$\delta$$的情况，至少需要多少训练样本
+
+## $$\mathcal{H}$$为无限集的情况
 
