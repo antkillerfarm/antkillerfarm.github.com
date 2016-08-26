@@ -159,3 +159,7 @@ NorFLASH使用方便，易于连接，可以在芯片上直接运行代码，稳
 
 NandFLASH强调更高的性能，更低的成本，更小的体积，更长的使用寿命。这使NandFLASH很擅于存储纯资料或数据等，在嵌入式系统中用来支持文件系统。NandFLASH存在坏块问题。
 
+# 海思Hi3531
+
+http://www.ebaina.com/bbs/forum-97-3.html
+
