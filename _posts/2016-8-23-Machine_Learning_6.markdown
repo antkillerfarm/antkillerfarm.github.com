@@ -155,13 +155,13 @@ $$m\ge \frac{1}{2\gamma^2}\log\frac{2k}{\delta}$$
 
 同样的，我们固定m和$$\delta$$，可得：
 
-$$\lvert\varepsilon(h_i)-\hat\varepsilon(h_i)\rvert\le \sqrt{\frac{1}{2m}\log\frac{2k}{\delta}}$$
+$$\lvert\varepsilon(h)-\hat\varepsilon(h)\rvert\le \sqrt{\frac{1}{2m}\log\frac{2k}{\delta}}$$
 
 如果我们定义$$h^*=\arg\min_{h\in \mathcal{H}}\varepsilon(h)$$，则根据一致收敛性质$$\lvert\varepsilon(h_i)-\hat\varepsilon(h_i)\rvert\le \gamma$$可得：
 
 $$\varepsilon(\hat h)\le \hat\varepsilon(\hat h)+\gamma$$
 
-因为$$\hat h$$已经是\hat \varepsilon(h)中最小的一个，因此$$\hat\varepsilon(\hat h)\le \hat\varepsilon(h)$$对所有都是成立的，其中当然包括$$h^*$$，即$$\hat\varepsilon(\hat h)\le \hat\varepsilon(h^*)$$。因此，上式可改为：
+因为$$\hat h$$已经是$$\hat \varepsilon(h)$$中最小的一个，因此$$\hat\varepsilon(\hat h)\le \hat\varepsilon(h)$$对所有都是成立的，其中当然包括$$h^*$$，即$$\hat\varepsilon(\hat h)\le \hat\varepsilon(h^*)$$。因此，上式可改为：
 
 $$\varepsilon(\hat h)\le \hat\varepsilon(h^*)+\gamma$$
 
@@ -169,5 +169,49 @@ $$\varepsilon(\hat h)\le \hat\varepsilon(h^*)+\gamma$$
 
 $$\varepsilon(\hat h)\le \varepsilon(h^*)+2\gamma$$
 
+这个公式表明，作为ERM结果的$$\hat h$$，比最好的h，至多只差$$2\gamma$$。
+
+我们将之前的结果合到一起，可得如下定理：
+
+令$$\lvert\mathcal{H}\rvert=k$$，并固定$$m,\delta$$的取值，且一致收敛的概率至少为$$1-\delta$$，则：
+
+$$\varepsilon(\hat h)\le \left(\min_{h\in \mathcal{H}}\varepsilon(h)\right)+2\sqrt{\frac{1}{2m}\log\frac{2k}{\delta}}$$
+
+假设我们需要从预测函数类$$\mathcal{H}$$切换到一个更大的预测函数类$$\mathcal{H'}\supseteq\mathcal{H}$$，则上面公式的第一项只会变得更小，也就是说偏差会变小，但由于k的增加，第二项会变大，也就是方差会变大。
+
+同理，可得以下针对m的定理：
+
+令$$\lvert\mathcal{H}\rvert=k$$，并固定$$\delta,\gamma$$的取值，为了保证$$\varepsilon(\hat h)\le \left(\min_{h\in \mathcal{H}}\varepsilon(h)\right)+2\gamma$$的概率至少为$$1-\delta$$，则：
+
+$$m\ge \frac{1}{2\gamma^2}\log\frac{2k}{\delta}=O\left(\frac{1}{\gamma^2}\log\frac{k}{\delta}\right)$$
+
 ## $$\mathcal{H}$$为无限集的情况
+
+某些预测函数的参数是实数，它实际上包含了无穷多个数。针对这样的情况，我们可以参照IEEE浮点数的规则，进行离散采样。
+
+IEEE浮点数由64bit的二进制数构成，因此d个实数参数组成的$$\mathcal{H}$$，可组成$$k=2^{64d}$$个不同的预测函数，因此：
+
+$$m\ge O\left(\frac{1}{\gamma^2}\log\frac{2^{64d}}{\delta}\right)=O\left(\frac{d}{\gamma^2}\log\frac{1}{\delta}\right)=O_{\gamma,\delta}(d)$$
+
+这里的下标$$\gamma,\delta$$表示一些依赖于它们的常量。从上式可以看出需要的训练样本的数量和预测模型的参数个数成线性关系。
+
+以上就是和ERM相关的算法的理论知识，至于其他非ERM算法理论仍在研究之中。
+
+下面是$$\mathcal{H}$$参数化的问题。一个线性分类器可以写为：
+
+$$h_\theta(x)=1\{\theta_0+\theta_1x_1+\dots+\theta_nx_n\ge 0\}$$
+
+这种形式有$$n+1$$个参数。
+
+但它也可以写为：
+
+$$h_{u,v}(x)=1\{(u_0^2-v_0^2)+(u_0^2-v_0^2)x_1+\dots+(u_n^2-v_n^2)x_n\ge 0\}$$
+
+这种形式有$$2n+2$$个参数。
+
+显然这两种形式在数学上是等价的，但参数的个数却不同。为此我们引入Vapnik-Chervonenkis维度（简称VC维度），用以刻画参数的个数。
+
+![](/images/article/VC.png)
+
+如上图所示，3个样本点有以上几种分布方式。毫无疑问，它们都能被$$h_\theta(x)=1\{\theta_0+\theta_1x_1+\theta_2x_2\ge 0\}$$所分割，且它们的训练误差为0。但如果是4个点的话，就不能无训练误差的分割了。我们将这种最大分割的个数称作VC维度，这里$$VC(\mathcal{H})=3$$。
 
