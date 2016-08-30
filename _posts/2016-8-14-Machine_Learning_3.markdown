@@ -4,6 +4,21 @@ title:  机器学习（三）——朴素贝叶斯方法、SVM（1）
 category: technology 
 ---
 
+## GDA vs 逻辑回归
+
+$$\begin{align}p(y=1\vert x)&=\frac{p(x\vert y=1)p(y=1)}{p(x\vert y=1)p(y=1)+p(x\vert y=0)p(y=0)}
+\\&=\frac{\frac{1}{A}\exp(f(\mu_0,\Sigma,x))\phi}{\frac{1}{A}\exp(f(\mu_0,\Sigma,x))\phi + \frac{1}{A}\exp(f(\mu_1,\Sigma,x))(1-\phi)}
+\\&=\frac{1}{1+\frac{\exp(f(\mu_1,\Sigma,x))(1-\phi)}{\exp(f(\mu_0,\Sigma,x))\phi}}
+\\&=\frac{1}{1+\exp(f(\mu_1,\Sigma,x)+\log(1-\phi)-f(\mu_0,\Sigma,x)-\log(\phi))}
+\\&=\frac{1}{1+\exp(-\theta^Tx)}
+\end{align}$$
+
+从上面的变换可以看出，GDA是逻辑回归的特例。
+
+一般来说，GDA的条件比逻辑回归严格。因此，如果模型符合GDA的话，采用GDA方法，收敛速度（指所需训练集的数量）比较快。
+
+而逻辑回归的鲁棒性较好，对于非GDA模型或者模型不够准确的情况，仍能收敛。
+
 ## 互不相容事件、独立事件与条件独立事件
 
 如果$$P(AB)=0$$,则事件A、B为互不相容事件。
@@ -195,24 +210,4 @@ $$\theta_\mathcal{P}(w)=\begin{cases}
 f(w), & w满足约束 \\
 \infty, & w不满足约束 \\
 \end{cases}$$
-
-我们定义：
-
-$$p^*=\underset{w}{\operatorname{min}}\theta_\mathcal{P}(w)=\underset{w}{\operatorname{min}}\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\mathcal{L}(w,\alpha,\beta)$$
-
-下面我们定义对偶函数：
-
-$$\theta_\mathcal{D}(w)=\underset{w}{\operatorname{min}}\mathcal{L}(w,\alpha,\beta)$$
-
-这里的$$\mathcal{D}$$代表原始优化问题的对偶优化问题。仿照原始优化问题定义如下：
-
-$$d^*=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\theta_\mathcal{D}(w)=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\underset{w}{\operatorname{min}}\mathcal{L}(w,\alpha,\beta)$$
-
-这里我们不加证明的给出如下公式：
-
-$$d^*=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\underset{w}{\operatorname{min}}\mathcal{L}(w,\alpha,\beta)\le\underset{w}{\operatorname{min}}\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\mathcal{L}(w,\alpha,\beta)=p^*$$
-
-这样的对偶问题被称作拉格朗日对偶（Lagrange duality）。
-
-
 
