@@ -98,9 +98,9 @@ $$D_{KL}(P\|Q)=\sum_iP(i)\log\frac{P(i)}{Q(i)}$$
 
 其中，P和Q是离散概率分布，$$P(i)$$和$$Q(i)$$是相应分布的概率密度函数。如果P和Q是连续随机变量的话，将上式中的累加符号换成积分符号即可。
 
-但KL散度并不是真正的度量（metric）。它不满足三角不等式(两边之和$$\ge$$第三边)，也不满足对称性（即$$D_{KL}(P\|Q)\neq D_{KL}(Q\|P)$$）。
+但KL散度并不是真正的度量（metric）。它既不满足三角不等式(两边之和$$\ge$$第三边)，也不满足对称性（即$$D_{KL}(P\|Q)\neq D_{KL}(Q\|P)$$）。
 
-注：Solomon Kullback，1907～1994，美国数学家和密码学家。乔治*华盛顿大学博士。NSA首任首席科学家。二战期间，参与破解德国的Enigma机器。
+注：Solomon Kullback，1907～1994，美国数学家和密码学家。乔治·华盛顿大学博士。NSA首任首席科学家。二战期间，参与破解德国的Enigma机器。
 
 Richard Leibler，1914～2003，美国数学家和密码学家。伊利诺伊大学博士。NSA高级主管，入选NSA名人堂。
 
@@ -116,4 +116,38 @@ $$MI(x_i,y)=\sum_{x_i\in X_i}\sum_{y\in Y}p(x_i,y)\log\frac{p(x_i,y)}{p(x_i)p(y)
 
 和KL散度类似，如果x和y是连续随机变量的话，将上式中的累加符号换成积分符号即可。
 
+MI也可以用KL散度来表示：
 
+$$MI(x_i,y)=KL(p(x_i,y)\|p(x_i)p(y))$$
+
+过滤特征选择方法的算法复杂度为$$O(n)$$。
+
+最后一个问题，选择多少个特征合适呢？按照$$S(i)$$从高到低的顺序，依次选择1到n个特征进行交叉验证，直到效果达到预期为止。
+
+## 贝叶斯统计和规则化
+
+前面提到最大似然（maximum likelihood）估计方法的公式如下：
+
+$$\theta_{ML}=\arg\max_\theta\prod_{i=1}^mp(y^{(i)}\vert x^{(i)};\theta)$$
+
+从频率统计（frequentist statistic）学派的观点来看，这里的$$\theta$$是一个未知的常数，我们的任务就是求出这个常数。然而从贝叶斯学派的观点来看，$$\theta$$是一个未知的随机变量。
+
+也就是说似然函数，对于前者来说，是这样的：$$\prod_{i=1}^mp(y^{(i)}\vert x^{(i)};\theta)$$；但对于后者来说，却是这样的：$$\prod_{i=1}^mp(y^{(i)}\vert x^{(i)},\theta)$$
+
+我们首先假定$$\theta$$的分布为$$p(\theta)$$，这种假定由于没有事实根据，通常被称作先验分布（prior distribution）。
+
+我们针对训练集$$S=\{(x^{(i)},y^{(i)})\}_{i=1}^m$$，训练得到预测函数。并按照如下公式计算后验分布（posterior distribution）：
+
+$$p(\theta\vert S)=\frac{p(S\vert\theta)p(\theta)}{p(S)}\tag{1}$$
+
+由全概率公式可得：
+
+$$p(S)=p(S\vert\theta_1)p(\theta_1)+\dots+p(S\vert\theta_n)p(\theta_n)$$
+
+上式的$$\theta_i$$表示$$\theta$$的各个取值区间，然而由于$$\theta$$是连续随机变量，根据微积分原理可得：
+
+$$p(S)=\int_\theta p(S\vert\theta)p(\theta)\mathrm{d}\theta\tag{2}$$
+
+又因为：
+
+$$p(S\vert\theta)=\prod_{i=1}^mp(y^{(i)},x^{(i)}\vert\theta)$$

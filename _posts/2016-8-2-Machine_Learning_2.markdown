@@ -8,15 +8,15 @@ category: technology
 
 我们假设：
 
-$$P(y=1\lvert x;\theta)=h_\theta(x),P(y=0\lvert x;\theta)=1-h_\theta(x)$$
+$$P(y=1\vert x;\theta)=h_\theta(x),P(y=0\vert x;\theta)=1-h_\theta(x)$$
 
 则该伯努利分布（Bernoulli distribution）的概率密度函数为：
 
-$$p(y\lvert x;\theta)=(h_\theta(x))^y(1-h_\theta(x))^{1-y}$$
+$$p(y\vert x;\theta)=(h_\theta(x))^y(1-h_\theta(x))^{1-y}$$
 
 其似然估计函数为：
 
-$$L(\theta)=p(\vec{y}\lvert X;\theta)=\prod_{i=1}^m(h_\theta(x^{(i)}))^{y^{(i)}}(1-h_\theta(x^{(i)}))^{1-y^{(i)}}$$
+$$L(\theta)=p(\vec{y}\vert X;\theta)=\prod_{i=1}^m(h_\theta(x^{(i)}))^{y^{(i)}}(1-h_\theta(x^{(i)}))^{1-y^{(i)}}$$
 
 两边都取对数，得到对数化的似然估计函数：
 
@@ -80,9 +80,9 @@ $$\begin{align}& \eta=\mu \\& T(y)=y \\& a(\eta)=\frac{\mu^2}{2} \\& b(y)=\frac{
 
 广义线性模型（Generalized Linear Model，GLM）是解决指数类分布的回归问题的通用模型。它基于以下三个假设：
 
-$$y\lvert x;\theta \sim ExponentialFamily(\eta) \tag{1}$$
+$$y\vert x;\theta \sim ExponentialFamily(\eta) \tag{1}$$
 
-$$h(x)=E[T(y)\lvert x] \tag{2}$$
+$$h(x)=E[T(y)\vert x] \tag{2}$$
 
 $$\eta=\theta^Tx \tag{3}$$
 
@@ -128,12 +128,12 @@ $$\phi_i=\frac{e^{\eta_i}}{\sum_{j=1}^ke^{\eta_j}}=\frac{e^{\theta_i^Tx}}{\sum_{
 
 这种从$$\eta$$映射到$$\phi$$的函数，被称作softmax函数。
 
-$$h_\theta(x)=E[T(y)\lvert x;\theta]=\begin{bmatrix} \phi_1 \\ \phi_2 \\ \vdots \\ \phi_{k-1} \end{bmatrix}
+$$h_\theta(x)=E[T(y)\vert x;\theta]=\begin{bmatrix} \phi_1 \\ \phi_2 \\ \vdots \\ \phi_{k-1} \end{bmatrix}
 =\begin{bmatrix} \frac{\exp(\theta_1^Tx)}{\sum_{j=1}^k\exp(\theta_j^Tx)} \\ \frac{\exp(\theta_2^Tx)}{\sum_{j=1}^k\exp(\theta_j^Tx)} \\ \vdots \\ \frac{\exp(\theta_{k-1}^Tx)}{\sum_{j=1}^k\exp(\theta_j^Tx)} \end{bmatrix}$$
 
 最大似然估计对数函数：
 
-$$l(\theta)=\sum_{i=1}^m\log p(y^{(i)}\lvert x^{(i)};\theta)=\sum_{i=1}^m\log\prod_{l=1}^k\left(\frac{\exp(\theta_{l}^Tx^{(i)})}{\sum_{j=1}^k\exp(\theta_j^Tx^{(i)})}\right)^{1\{y^{(i)}=l\}}$$
+$$l(\theta)=\sum_{i=1}^m\log p(y^{(i)}\vert x^{(i)};\theta)=\sum_{i=1}^m\log\prod_{l=1}^k\left(\frac{\exp(\theta_{l}^Tx^{(i)})}{\sum_{j=1}^k\exp(\theta_j^Tx^{(i)})}\right)^{1\{y^{(i)}=l\}}$$
 
 ## 机器学习的优化问题
 
@@ -143,21 +143,21 @@ $$l(\theta)=\sum_{i=1}^m\log p(y^{(i)}\lvert x^{(i)};\theta)=\sum_{i=1}^m\log\pr
 
 # 生成学习算法
 
-比如说，要确定一只羊是山羊还是绵羊。从历史数据中学习到模型，然后通过提取这只羊的特征，来预测出这只羊是山羊还是绵羊。这种方法叫做判别学习算法（DLA，Discriminative Learning Algorithm）。其形式化的写法是：$$p(y\lvert x)$$。
+比如说，要确定一只羊是山羊还是绵羊。从历史数据中学习到模型，然后通过提取这只羊的特征，来预测出这只羊是山羊还是绵羊。这种方法叫做判别学习算法（DLA，Discriminative Learning Algorithm）。其形式化的写法是：$$p(y\vert x)$$。
 
-换一种思路，我们可以根据山羊的特征首先学习出一个山羊模型，然后根据绵羊的特征学习出一个绵羊模型。然后从这只羊中提取特征，放到山羊模型中看概率是多少，再放到绵羊模型中看概率是多少，哪个大就是哪个。这种方法叫做生成学习算法（GLA，Generative Learning Algorithms）。其形式化的写法是：建立模型——$$p(x\lvert y)$$，应用模型——$$p(y)$$。
+换一种思路，我们可以根据山羊的特征首先学习出一个山羊模型，然后根据绵羊的特征学习出一个绵羊模型。然后从这只羊中提取特征，放到山羊模型中看概率是多少，再放到绵羊模型中看概率是多少，哪个大就是哪个。这种方法叫做生成学习算法（GLA，Generative Learning Algorithms）。其形式化的写法是：建立模型——$$p(x\vert y)$$，应用模型——$$p(y)$$。
 
 由贝叶斯（Bayes）公式可知：
 
-$$p(y\lvert x)=\frac{p(x\lvert y)p(y)}{p(x\lvert y=1)p(y=1)+p(x\lvert y=0)p(y=0)}=\frac{p(x\lvert y)p(y)}{p(x)} \tag{6}$$
+$$p(y\vert x)=\frac{p(x\vert y)p(y)}{p(x\vert y=1)p(y=1)+p(x\vert y=0)p(y=0)}=\frac{p(x\vert y)p(y)}{p(x)} \tag{6}$$
 
-其中，$$p(x\lvert y)$$称为后验概率，$$p(y)$$称为先验概率。
+其中，$$p(x\vert y)$$称为后验概率，$$p(y)$$称为先验概率。
 
 注：Thomas Bayes，1701~1761，英国统计学家。
 
 由于我们关注的是y的离散值结果中哪个概率大（比如山羊概率和绵羊概率哪个大），而并不是关心具体的概率，因此公式6可改写为：
 
-$$\arg\max_yp(y\lvert x)=\arg\max_y\frac{p(x\lvert y)p(y)}{p(x)}=\arg\max_yp(x\lvert y)p(y) \tag{7}$$
+$$\arg\max_yp(y\vert x)=\arg\max_y\frac{p(x\vert y)p(y)}{p(x)}=\arg\max_yp(x\vert y)p(y) \tag{7}$$
 
 ## 高斯分布的向量形式
 
@@ -207,9 +207,9 @@ $$\det(A) = \sum_{i_1,i_2,\ldots,i_n=1}^n \varepsilon_{i_1\cdots i_n}  a_{1,i_1}
 
 $$y\sim Bernoulli(\phi)$$
 
-$$x\lvert y=0\sim N(\mu_0,\Sigma)$$
+$$x\vert y=0\sim N(\mu_0,\Sigma)$$
 
-$$x\lvert y=1\sim N(\mu_1,\Sigma)$$
+$$x\vert y=1\sim N(\mu_1,\Sigma)$$
 
 注：这里只讨论y有两种分类的情况，且假设两种分类的$$\Sigma$$相同。
 
@@ -217,11 +217,11 @@ $$x\lvert y=1\sim N(\mu_1,\Sigma)$$
 
 $$p(y)=\phi^y(1-\phi)^{1-y}$$
 
-$$p(x\lvert y=0)=\frac{1}{(2\pi)^{n/2}\lvert\Sigma\rvert^{n/2}}\exp\left(-\frac{1}{2}(x-\mu_0)^T\Sigma^{-1}(x-\mu_0)\right)=\frac{1}{A}\exp(f(\mu_0,\Sigma,x))$$
+$$p(x\vert y=0)=\frac{1}{(2\pi)^{n/2}\lvert\Sigma\rvert^{n/2}}\exp\left(-\frac{1}{2}(x-\mu_0)^T\Sigma^{-1}(x-\mu_0)\right)=\frac{1}{A}\exp(f(\mu_0,\Sigma,x))$$
 
-$$p(x\lvert y=1)=\frac{1}{(2\pi)^{n/2}\lvert\Sigma\rvert^{n/2}}\exp\left(-\frac{1}{2}(x-\mu_1)^T\Sigma^{-1}(x-\mu_1)\right)=\frac{1}{A}\exp(f(\mu_1,\Sigma,x))$$
+$$p(x\vert y=1)=\frac{1}{(2\pi)^{n/2}\lvert\Sigma\rvert^{n/2}}\exp\left(-\frac{1}{2}(x-\mu_1)^T\Sigma^{-1}(x-\mu_1)\right)=\frac{1}{A}\exp(f(\mu_1,\Sigma,x))$$
 
-将上面三个分布的概率密度函数代入公式7，可求得$$\arg\max_yp(y\lvert x)$$，然后进行最大似然估计，可得该GDA的最大似然估计参数为：（过程略）
+将上面三个分布的概率密度函数代入公式7，可求得$$\arg\max_yp(y\vert x)$$，然后进行最大似然估计，可得该GDA的最大似然估计参数为：（过程略）
 
 $$\phi=\frac{1}{m}\sum_{i=1}^m1\{y^{(i)}=1\}$$
 
@@ -233,11 +233,11 @@ $$\Sigma=\frac{1}{m}\sum_{i=1}^m(x^{(i)}-\mu_{y^{(i)}})(x^{(i)}-\mu_{y^{(i)}})^T
 
 ![](/images/article/GDA.png)
 
-上图中的直线就是分界线$$p(y=1\lvert x)=0.5$$。
+上图中的直线就是分界线$$p(y=1\vert x)=0.5$$。
 
 ## GDA vs 逻辑回归
 
-$$\begin{align}p(y=1\lvert x)&=\frac{p(x\lvert y=1)p(y=1)}{p(x\lvert y=1)p(y=1)+p(x\lvert y=0)p(y=0)}
+$$\begin{align}p(y=1\vert x)&=\frac{p(x\vert y=1)p(y=1)}{p(x\vert y=1)p(y=1)+p(x\vert y=0)p(y=0)}
 \\&=\frac{\frac{1}{A}\exp(f(\mu_0,\Sigma,x))\phi}{\frac{1}{A}\exp(f(\mu_0,\Sigma,x))\phi + \frac{1}{A}\exp(f(\mu_1,\Sigma,x))(1-\phi)}
 \\&=\frac{1}{1+\frac{\exp(f(\mu_1,\Sigma,x))(1-\phi)}{\exp(f(\mu_0,\Sigma,x))\phi}}
 \\&=\frac{1}{1+\exp(f(\mu_1,\Sigma,x)+\log(1-\phi)-f(\mu_0,\Sigma,x)-\log(\phi))}
