@@ -4,6 +4,22 @@ title:  机器学习（三）——朴素贝叶斯方法、SVM（1）
 category: technology 
 ---
 
+## 高斯判别分析（续）
+
+将上面三个分布的概率密度函数代入第二节公式7，可求得$$\arg\max_yp(y\vert x)$$，然后进行最大似然估计，可得该GDA的最大似然估计参数为：（过程略）
+
+$$\phi=\frac{1}{m}\sum_{i=1}^m1\{y^{(i)}=1\}$$
+
+$$\mu_0=\frac{\sum_{i=1}^m1\{y^{(i)}=0\}x^{(i)}}{\sum_{i=1}^m1\{y^{(i)}=0\}}$$
+
+$$\mu_1=\frac{\sum_{i=1}^m1\{y^{(i)}=1\}x^{(i)}}{\sum_{i=1}^m1\{y^{(i)}=1\}}$$
+
+$$\Sigma=\frac{1}{m}\sum_{i=1}^m(x^{(i)}-\mu_{y^{(i)}})(x^{(i)}-\mu_{y^{(i)}})^T$$
+
+![](/images/article/GDA.png)
+
+上图中的直线就是分界线$$p(y=1\vert x)=0.5$$。
+
 ## GDA vs 逻辑回归
 
 $$\begin{align}p(y=1\vert x)&=\frac{p(x\vert y=1)p(y=1)}{p(x\vert y=1)p(y=1)+p(x\vert y=0)p(y=0)}
@@ -200,14 +216,4 @@ $$\theta_\mathcal{P}(w)=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}
 
 其中，$$\mathcal{P}$$代表原始优化问题，$$\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}$$表示在$$\alpha,\beta$$变化，而其他变量不变的情况下，求最大值。
 
-如果w不满足约束，也就是$$g_i(w)>0$$或$$h_i(w)\ne 0$$。这时由于$$\mathcal{L}$$函数是无约束函数，$$\alpha_i$$、$$\beta_i$$可以任意取值，因此$$\sum_{i=1}^k\alpha_ig_i(w)$$或$$\sum_{i=1}^l\beta_ih_i(w)$$并没有极值，也就是说$$\theta_\mathcal{P}(w)=\infty$$。
-
-反之,如果w满足约束，则$$\sum_{i=1}^k\alpha_ig_i(w)$$和$$\sum_{i=1}^l\beta_ih_i(w)$$都为0，因此$$\theta_\mathcal{P}(w)=f(w)$$。
-
-综上：
-
-$$\theta_\mathcal{P}(w)=\begin{cases}
-f(w), & w满足约束 \\
-\infty, & w不满足约束 \\
-\end{cases}$$
 

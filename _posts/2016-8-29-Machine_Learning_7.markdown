@@ -180,3 +180,13 @@ $$p(S)=\int_\theta p(S\vert\theta)p(\theta)\mathrm{d}\theta\tag{2}$$
 
 $$p(\theta\vert S)=\frac{p(S\vert\theta)p(\theta)}{\int_\theta p(S\vert\theta)p(\theta)\mathrm{d}\theta}=\frac{\left(\prod_{i=1}^mp(y^{(i)}\vert x^{(i)},\theta)\right)p(\theta)}{\int_\theta\left(\prod_{i=1}^mp(y^{(i)}\vert x^{(i)},\theta)\right)p(\theta)\mathrm{d}\theta}$$
 
+当我们针对新的样本x进行预测时，和上面的推导类似，可得：
+
+$$p(y\vert x,S)=\int_\theta p(y\vert x,\theta,S)p(\theta\vert S)\mathrm{d}\theta$$
+
+因为预测样本集和训练样本集的分布是独立的，因此上式又可写为：
+
+$$p(y\vert x,S)=\int_\theta p(y\vert x,\theta)p(\theta\vert S)\mathrm{d}\theta$$
+
+这个公式又被称作后验预测分布（Posterior predictive distribution）。
+

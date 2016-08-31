@@ -6,9 +6,15 @@ category: technology
 
 ## 逻辑回归(续)
 
-注：Ronald Aylmer Fisher，1890～1962，英国人，毕业于剑桥大学。尽管他被称作“一位几乎独自建立现代统计科学的天才”，然而他的本职工作是遗传学。他最大的贡献是利用统计分析的方法，揭示了孟德尔的遗传定律在达尔文自然选择学说中的作用，为后来遗传物质DNA的发现奠定了理论基础。
+注：Ronald Aylmer Fisher，1890～1962，英国人，毕业于剑桥大学。英国皇家学会会员。尽管他被称作“一位几乎独自建立现代统计科学的天才”，然而他的本职工作是遗传学。他最大的贡献是利用统计分析的方法，揭示了孟德尔的遗传定律在达尔文自然选择学说中的作用，为后来遗传物质DNA的发现奠定了理论基础。
 
 虽然对于Fisher来说，数理统计只是他研究工作的一个副产品，但他在1925年所著《研究工作者的统计方法》（Statistical Methods for Research Workers），其影响力超过了半个世纪，几乎当代所有自然科学和社会科学领域都在应用他所创立的理论。F分布就是以他的名字命名的。
+
+Karl Pearson，1857~1936，英国人，毕业于剑桥大学。英国皇家学会会员。发现了$$\chi^2$$分布。
+
+William Sealy Gosset，1876~1937，英国人，毕业于牛津大学。笔名Student，发现了Student's t-distribution。
+
+这三人被后人合称现代统计学的三大创始人。他们都不是博士，毕业后从事的职业，也不是数学。Fisher和Pearson研究遗传学，Gosset研究化学。可见，统计学的诞生，有着很强的应用属性。
 
 我们假设：
 
@@ -224,18 +230,4 @@ $$p(y)=\phi^y(1-\phi)^{1-y}$$
 $$p(x\vert y=0)=\frac{1}{(2\pi)^{n/2}\lvert\Sigma\rvert^{n/2}}\exp\left(-\frac{1}{2}(x-\mu_0)^T\Sigma^{-1}(x-\mu_0)\right)=\frac{1}{A}\exp(f(\mu_0,\Sigma,x))$$
 
 $$p(x\vert y=1)=\frac{1}{(2\pi)^{n/2}\lvert\Sigma\rvert^{n/2}}\exp\left(-\frac{1}{2}(x-\mu_1)^T\Sigma^{-1}(x-\mu_1)\right)=\frac{1}{A}\exp(f(\mu_1,\Sigma,x))$$
-
-将上面三个分布的概率密度函数代入公式7，可求得$$\arg\max_yp(y\vert x)$$，然后进行最大似然估计，可得该GDA的最大似然估计参数为：（过程略）
-
-$$\phi=\frac{1}{m}\sum_{i=1}^m1\{y^{(i)}=1\}$$
-
-$$\mu_0=\frac{\sum_{i=1}^m1\{y^{(i)}=0\}x^{(i)}}{\sum_{i=1}^m1\{y^{(i)}=0\}}$$
-
-$$\mu_1=\frac{\sum_{i=1}^m1\{y^{(i)}=1\}x^{(i)}}{\sum_{i=1}^m1\{y^{(i)}=1\}}$$
-
-$$\Sigma=\frac{1}{m}\sum_{i=1}^m(x^{(i)}-\mu_{y^{(i)}})(x^{(i)}-\mu_{y^{(i)}})^T$$
-
-![](/images/article/GDA.png)
-
-上图中的直线就是分界线$$p(y=1\vert x)=0.5$$。
 
