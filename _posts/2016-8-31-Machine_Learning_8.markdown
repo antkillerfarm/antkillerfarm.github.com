@@ -168,4 +168,13 @@ $$p(x^{(i)},z^{(i)})=p(x^{(i)}\vert z^{(i)})p(z^{(i)})$$
 
 $$\ell(\phi,\mu,\Sigma)=\sum_{i=1}^m\log p(x^{(i)};\phi,\mu,\Sigma)=\sum_{i=1}^m\log \sum_{z^{(i)}=1}^kp(x^{(i)}\vert z^{(i)};\mu,\Sigma)p(z^{(i)};\phi)$$
 
-这个式子的最大值是不能通过求导数为0的方法解决的，因为求导的结果不是close form。但是假设我们知道了每个样例的
+这个式子的最大值不能通过求导数为0的方法解决的，因为它不是close form。（多项分布的概率密度函数包含阶乘运算，不满足close form的定义。）
+
+为了简化问题，我们假设已经知道每个样例的
+
+参考：
+
+http://www.cse.psu.edu/~rtc12/CSE586/lectures/EMLectureFeb3.pdf
+
+
+
