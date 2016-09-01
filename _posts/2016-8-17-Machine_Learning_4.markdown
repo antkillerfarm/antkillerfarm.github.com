@@ -51,11 +51,11 @@ g_i(w^*)& \le 0,i=1,\dots,k & \\
 
 严格的说，KKT条件是非线性约束优化问题存在最优解的必要条件。这个问题的充分条件比较复杂，这里不做讨论。
 
-注：Harold William Kuhn，1925～2014，美国数学家，普林斯顿大学教授。
+>注：Harold William Kuhn，1925～2014，美国数学家，普林斯顿大学教授。
 
-Albert William Tucker，1905～1995，加拿大数学家，普林斯顿大学教授。
+>Albert William Tucker，1905～1995，加拿大数学家，普林斯顿大学教授。
 
-William Karush，1917～1997，美国数学家，加州州立大学北岭分校教授。（注意，California State University和University of California是不同的学校）
+>William Karush，1917～1997，美国数学家，加州州立大学北岭分校教授。（注意，California State University和University of California是不同的学校）
 
 ## 支持向量
 
@@ -188,7 +188,7 @@ $$K(x,z)=\exp\left(-\frac{\|x-z\|^2}{2\sigma^2}\right)$$
 
 这个核函数被称为高斯核函数（Gaussian kernel），对应的$$\phi(x)$$是个无限维的向量。
 
-注：$$(a+b)^n$$是个p为0.5的二项分布，由棣莫佛-拉普拉斯定理（de Moivre–Laplace theorem）可知，当$$n\to\infty$$时，它的极限是正态分布。
+>注：$$(a+b)^n$$是个p为0.5的二项分布，由棣莫佛-拉普拉斯定理（de Moivre–Laplace theorem）可知，当$$n\to\infty$$时，它的极限是正态分布。
 
 ![](/images/article/SVM_5.png)
 
@@ -209,7 +209,7 @@ $$\begin{align}z^TKz&=\sum_i\sum_jz_iK_{ij}z_j=\sum_i\sum_jz_i\phi(x^{(i)})^T\ph
 
 即K矩阵是半正定矩阵。事实上，K矩阵是对称半正定矩阵，不仅是K函数有效的必要条件，也是它的充分条件。相关的证明是由James Mercer给出的，被称为Mercer定理（Mercer Theorem）。
 
-注：James Mercer，1883-1932，英国数学家，英国皇家学会会员，毕业于剑桥大学。曾服役于英国皇家海军，参加了日德兰海战。
+>注：James Mercer，1883-1932，英国数学家，英国皇家学会会员，毕业于剑桥大学。曾服役于英国皇家海军，参加了日德兰海战。
 
 Mercer定理给出了不用找到$$\phi(x)$$，而判定$$K(x,z)$$是否有效的方法。因此寻找$$\phi(x)$$的步骤就可以跳过了，直接使用$$K(x,z)$$替换上面公式中的$$\langle x,z\rangle$$即可。例如：
 

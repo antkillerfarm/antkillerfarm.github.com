@@ -52,7 +52,7 @@ $$J(A)=\frac{\mathrm{d}f}{\mathrm{d}x}=
 \end{bmatrix}
 $$
 
-注：Carl Gustav Jacob Jacobi，1804～1851，德国数学家，柏林大学博士。
+>注：Carl Gustav Jacob Jacobi，1804～1851，德国数学家，柏林大学博士。
 
 当$$m=1$$时，该矩阵又被称为梯度向量：
 
@@ -73,7 +73,7 @@ $$H(A)=
 \end{bmatrix}
 $$
 
-注：Ludwig Otto Hesse，1811～1874，德国数学家，毕业于柯尼斯堡大学，Jacobi的学生。
+>注：Ludwig Otto Hesse，1811～1874，德国数学家，毕业于柯尼斯堡大学，Jacobi的学生。
 
 因为$$\frac{\partial^2 f}{\partial x_i\partial x_j}=\frac{\partial^2 f}{\partial x_j\partial x_i}$$(克莱罗定理，Clairaut’s theorem)，所以Hessian矩阵通常是一个对称矩阵。
 

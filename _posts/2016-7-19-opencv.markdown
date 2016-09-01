@@ -136,6 +136,10 @@ https://github.com/liuruoze/EasyPR
 
 一个开源的中文车牌识别系统。
 
+http://v.kuaidadi.com/
+
+滴滴快的大数据平台
+
 ## 使用细节
 
 ### saturate_cast

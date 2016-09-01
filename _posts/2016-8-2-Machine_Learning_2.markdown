@@ -6,15 +6,14 @@ category: technology
 
 ## 逻辑回归(续)
 
-注：Ronald Aylmer Fisher，1890～1962，英国人，毕业于剑桥大学。英国皇家学会会员。尽管他被称作“一位几乎独自建立现代统计科学的天才”，然而他的本职工作是遗传学。他最大的贡献是利用统计分析的方法，揭示了孟德尔的遗传定律在达尔文自然选择学说中的作用，为后来遗传物质DNA的发现奠定了理论基础。
+>注：Ronald Aylmer Fisher，1890～1962，英国人，毕业于剑桥大学。英国皇家学会会员。尽管他被称作“一位几乎独自建立现代统计科学的天才”，然而他的本职工作是遗传学。他最大的贡献是利用统计分析的方法，揭示了孟德尔的遗传定律在达尔文自然选择学说中的作用，为后来遗传物质DNA的发现奠定了理论基础。   
+>虽然对于Fisher来说，数理统计只是他研究工作的一个副产品，但他在1925年所著《研究工作者的统计方法》（Statistical Methods for Research Workers），其影响力超过了半个世纪，几乎当代所有自然科学和社会科学领域都在应用他所创立的理论。F分布就是以他的名字命名的。
 
-虽然对于Fisher来说，数理统计只是他研究工作的一个副产品，但他在1925年所著《研究工作者的统计方法》（Statistical Methods for Research Workers），其影响力超过了半个世纪，几乎当代所有自然科学和社会科学领域都在应用他所创立的理论。F分布就是以他的名字命名的。
+>Karl Pearson，1857~1936，英国人，毕业于剑桥大学。英国皇家学会会员。发现了$$\chi^2$$分布。
 
-Karl Pearson，1857~1936，英国人，毕业于剑桥大学。英国皇家学会会员。发现了$$\chi^2$$分布。
+>William Sealy Gosset，1876~1937，英国人，毕业于牛津大学。笔名Student，发现了Student's t-distribution。
 
-William Sealy Gosset，1876~1937，英国人，毕业于牛津大学。笔名Student，发现了Student's t-distribution。
-
-这三人被后人合称现代统计学的三大创始人。他们都不是博士，毕业后从事的职业，也不是数学。Fisher和Pearson研究遗传学，Gosset研究化学。可见，统计学的诞生，有着很强的应用属性。
+>这三人被后人合称现代统计学的三大创始人。他们都不是博士，毕业后从事的职业，也不是数学。Fisher和Pearson研究遗传学，Gosset研究化学。可见，统计学的诞生，有着很强的应用属性。
 
 我们假设：
 
@@ -30,9 +29,9 @@ $$L(\theta)=p(\vec{y}\vert X;\theta)=\prod_{i=1}^m(h_\theta(x^{(i)}))^{y^{(i)}}(
 
 两边都取对数，得到对数化的似然估计函数：
 
-$$l(\theta)=\log L(\theta)=\sum_{i=1}^my^{(i)}\log h_\theta(x^{(i)})+(1-y^{(i)})\log(1-h_\theta(x^{(i)}))$$
+$$\ell(\theta)=\log L(\theta)=\sum_{i=1}^my^{(i)}\log h_\theta(x^{(i)})+(1-y^{(i)})\log(1-h_\theta(x^{(i)}))$$
 
-$$\frac{\partial l(\theta)}{\partial \theta_j}=(y-h_\theta(x))x_j$$
+$$\frac{\partial \ell(\theta)}{\partial \theta_j}=(y-h_\theta(x))x_j$$
 
 按照随机梯度下降法，计算迭代公式：
 
@@ -143,7 +142,7 @@ $$h_\theta(x)=E[T(y)\vert x;\theta]=\begin{bmatrix} \phi_1 \\ \phi_2 \\ \vdots \
 
 最大似然估计对数函数：
 
-$$l(\theta)=\sum_{i=1}^m\log p(y^{(i)}\vert x^{(i)};\theta)=\sum_{i=1}^m\log\prod_{l=1}^k\left(\frac{\exp(\theta_{l}^Tx^{(i)})}{\sum_{j=1}^k\exp(\theta_j^Tx^{(i)})}\right)^{1\{y^{(i)}=l\}}$$
+$$\ell(\theta)=\sum_{i=1}^m\log p(y^{(i)}\vert x^{(i)};\theta)=\sum_{i=1}^m\log\prod_{l=1}^k\left(\frac{\exp(\theta_{l}^Tx^{(i)})}{\sum_{j=1}^k\exp(\theta_j^Tx^{(i)})}\right)^{1\{y^{(i)}=l\}}$$
 
 ## 机器学习的优化问题
 
@@ -163,7 +162,7 @@ $$p(y\vert x)=\frac{p(x\vert y)p(y)}{p(x\vert y=1)p(y=1)+p(x\vert y=0)p(y=0)}=\f
 
 其中，$$p(x\vert y)$$称为后验概率，$$p(y)$$称为先验概率。
 
-注：Thomas Bayes，1701~1761，英国统计学家。
+>注：Thomas Bayes，1701~1761，英国统计学家。
 
 由于我们关注的是y的离散值结果中哪个概率大（比如山羊概率和绵羊概率哪个大），而并不是关心具体的概率，因此公式6可改写为：
 
@@ -205,7 +204,7 @@ $$\varepsilon_{a_1 a_2 a_3 \ldots a_n} =
 0 & \text{otherwise}
 \end{cases}$$
 
-注：Tullio Levi-Civita，1873~1941，意大利数学家。他在张量微积分领域的贡献，帮助了相对论的确立。
+>注：Tullio Levi-Civita，1873~1941，意大利数学家。他在张量微积分领域的贡献，帮助了相对论的确立。
 
 莱布尼茨公式：
 
@@ -221,7 +220,7 @@ $$x\vert y=0\sim N(\mu_0,\Sigma)$$
 
 $$x\vert y=1\sim N(\mu_1,\Sigma)$$
 
-注：这里只讨论y有两种分类的情况，且假设两种分类的$$\Sigma$$相同。
+>注：这里只讨论y有两种分类的情况，且假设两种分类的$$\Sigma$$相同。
 
 相应的概率密度函数为：
 
