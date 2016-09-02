@@ -156,13 +156,17 @@ J函数表示每个样本点到其质心的距离平方和。K-means算法的目
 
 首先我们假设样本数据满足联合概率分布
 
-$$p(x^{(i)},z^{(i)})=p(x^{(i)}\vert z^{(i)})p(z^{(i)})$$
+$$p(x^{(i)},z^{(i)})=p(x^{(i)}\vert z^{(i)})p(z^{(i)})\tag{5}$$
 
 其中，$$z^{(i)}\sim Multinomial(\phi)$$（这里的$$\phi_j=p(z^{(i)}=j)$$，因此$$\phi_j\ge 0,\sum_{j=1}^k\phi_j=1$$），$$z^{(i)}$$的值为k个聚类之一。
 
-假定$$x^{(i)}\vert z^{(i)}\sim \mathcal{N}(\mu_j,\Sigma_j)$$，则该模型被称为高斯混合模型（mixture of Gaussians model）。
+假定$$x^{(i)}\vert z^{(i)}=j\sim \mathcal{N}(\mu_j,\Sigma_j)$$，则该模型被称为高斯混合模型（mixture of Gaussians model）。
 
 整个模型简单描述为对于每个样例$$x^{(i)}$$，我们先从k个类别中按多项式分布抽取一个$$z^{(i)}$$，然后根据$$z^{(i)}$$所对应的k个多值高斯分布中的一个生成样例$$x^{(i)}$$。注意的是这里的$$z^{(i)}$$是隐含的随机变量。
+
+因此，由全概率公式可得：
+
+$$p(x^{(i)};\phi,\mu,\Sigma)=\sum_{z^{(i)}=1}^kp(x^{(i)}\vert z^{(i)};\mu,\Sigma)p(z^{(i)};\phi)\tag{6}$$
 
 该模型的对数化似然函数为：
 
@@ -170,11 +174,9 @@ $$\ell(\phi,\mu,\Sigma)=\sum_{i=1}^m\log p(x^{(i)};\phi,\mu,\Sigma)=\sum_{i=1}^m
 
 这个式子的最大值不能通过求导数为0的方法解决的，因为它不是close form。（多项分布的概率密度函数包含阶乘运算，不满足close form的定义。）
 
-为了简化问题，我们假设已经知道每个样例的
+为了简化问题，我们假设已经知道每个样例的$$z^{(i)}$$值。
 
 参考：
 
 http://www.cse.psu.edu/~rtc12/CSE586/lectures/EMLectureFeb3.pdf
-
-
 

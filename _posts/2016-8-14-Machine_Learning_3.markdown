@@ -37,11 +37,11 @@ $$\begin{align}p(y=1\vert x)&=\frac{p(x\vert y=1)p(y=1)}{p(x\vert y=1)p(y=1)+p(x
 
 ## 互不相容事件、独立事件与条件独立事件
 
-如果$$P(AB)=0$$,则事件A、B为互不相容事件。
+如果$$P(AB)=0$$，则事件A、B为互不相容事件。
 
-如果$$P(AB)=P(A)P(B)或P(A)=P(A\vert B)$$,则事件A、B为独立事件。
+如果$$P(AB)=P(A)P(B)或P(A)=P(A\vert B)$$，则事件A、B为独立事件。
 
-如果$$P(AB\vert R)=P(A\vert R)P(B\vert R)$$,则事件A、B为条件R下的独立事件。
+如果$$P(AB\vert R)=P(A\vert R)P(B\vert R)$$，则事件A、B为条件R下的独立事件。
 
 可见，这三者是完全不同的数学概念，不要搞混了。
 
