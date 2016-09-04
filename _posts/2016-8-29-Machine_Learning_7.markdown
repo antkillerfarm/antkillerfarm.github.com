@@ -66,9 +66,9 @@ $$m=O_{\gamma,\delta}(d)$$
 
 因此，我们改进算法如下：
 
->1.从全部的训练数据S中随机选择70%的样例作为训练集$$S_{train}$$，剩余的30%作为测试集$$S_{CV}$$。<br/>
->2.在$$S_{train}$$上训练每一个$$M_i$$，得到预测函数$$h_i$$。<br/>
->3.在$$S_{CV}$$上测试每一个$$h_i$$，得到相应的经验误差$$\hat\varepsilon_{S_{CV}}(h_i)$$。<br/>
+>1.从全部的训练数据S中随机选择70%的样例作为训练集$$S_{train}$$，剩余的30%作为测试集$$S_{CV}$$。   
+>2.在$$S_{train}$$上训练每一个$$M_i$$，得到预测函数$$h_i$$。   
+>3.在$$S_{CV}$$上测试每一个$$h_i$$，得到相应的经验误差$$\hat\varepsilon_{S_{CV}}(h_i)$$。   
 >4.选择具有最小$$\hat\varepsilon_{S_{CV}}(h_i)$$的$$h_i$$，作为最佳模型。
 
 这种方法被称为hold-out交叉验证（cross validation），或者称为简单（simple）交叉验证。
@@ -81,9 +81,9 @@ $$m=O_{\gamma,\delta}(d)$$
 
 我们对简单交叉验证方法再做一次改进，如下：
 
->1.将全部训练集S分成k个不相交的子集，假设S中的训练样例个数为m，那么每一个子集有m/k个训练样例，相应的子集称作$$\{S_1,\dots,S_k\}$$。<br/>
->2.每次从模型集合$$\mathcal{M}$$中拿出来一个$$M_i$$，然后在S中选择出k-1个子集$$S_1\cup\dots\cup S_{j-1}\cup S_{j+1}\cup\dots\cup S_k$$，在这个集合上训练$$M_i$$得到预测函数$$h_{ij}$$。在$$S_j$$上测试$$h_{ij}$$，得到相应的经验误差$$\hat\varepsilon_{S_j}(h_{ij})$$。<br/>
->3.使用$$\frac{1}{k}\sum_{j=1}^k\hat\varepsilon_{S_j}(h_{ij})$$作为$$M_i$$泛化误差的估计值。<br/>
+>1.将全部训练集S分成k个不相交的子集，假设S中的训练样例个数为m，那么每一个子集有m/k个训练样例，相应的子集称作$$\{S_1,\dots,S_k\}$$。   
+>2.每次从模型集合$$\mathcal{M}$$中拿出来一个$$M_i$$，然后在S中选择出k-1个子集$$S_1\cup\dots\cup S_{j-1}\cup S_{j+1}\cup\dots\cup S_k$$，在这个集合上训练$$M_i$$得到预测函数$$h_{ij}$$。在$$S_j$$上测试$$h_{ij}$$，得到相应的经验误差$$\hat\varepsilon_{S_j}(h_{ij})$$。   
+>3.使用$$\frac{1}{k}\sum_{j=1}^k\hat\varepsilon_{S_j}(h_{ij})$$作为$$M_i$$泛化误差的估计值。   
 >4.选出泛化误差估计值最小的$$M_i$$，在S上重新训练，得到最终的预测函数$$h_i$$。
 
 这个方法被称为k-折叠（k-fold）交叉验证。一般来说k取值为10，这样训练数据稀疏时，基本上也能进行训练，缺点是训练和测试次数过多。
@@ -98,16 +98,14 @@ $$m=O_{\gamma,\delta}(d)$$
 
 对于n个特征的$$\mathcal{M}$$来说，根据特征是否包含在最终结果中，可以写出$$2^n$$个不同的$$M_i$$。直接使用上面的交叉验证方法，计算量过大。这时可以采用如下启发式算法：
 
->1.初始化特征集$$\mathcal{F}=\emptyset$$。<br/>
->2.Repeat {<br/>
-><span style="white-space: pre">	</span>(a)for 特征i=1 to n, {<br/>
-><span style="white-space: pre">	</span><span style="white-space: pre">	</span>
->如果$$i\notin\mathcal{F}$$，则$$\mathcal{F}_i=\mathcal{F}\cup\{i\}$$。<br/>
-><span style="white-space: pre">	</span><span style="white-space: pre">	</span>
->在$$\mathcal{F}_i$$上使用交叉验证方法评估它的泛化误差。
-><br/><span style="white-space: pre">	</span>}<br/>
-><span style="white-space: pre">	</span>(b)将第(a)步中最优的$$\mathcal{F}_i$$设为新的$$\mathcal{F}$$。
-><br/>}<br/>
+>1.初始化特征集$$\mathcal{F}=\emptyset$$。   
+>2.Repeat {   
+><span style="white-space: pre">	</span>(a)for 特征i=1 to n, {   
+><span style="white-space: pre">	     </span>如果$$i\notin\mathcal{F}$$，则$$\mathcal{F}_i=\mathcal{F}\cup\{i\}$$。   
+><span style="white-space: pre">	     </span>在$$\mathcal{F}_i$$上使用交叉验证方法评估它的泛化误差。   
+><span style="white-space: pre">	</span>}   
+><span style="white-space: pre">	</span>(b)将第(a)步中最优的$$\mathcal{F}_i$$设为新的$$\mathcal{F}$$。   
+>}   
 >3.选择并输出搜索过程中得到的最优子集。
 
 这个算法被称为前向搜索（forward search）。其外部循环的终止条件为$$\lvert\mathcal{F}\rvert$$达到n或者事先设定的门限值。

@@ -40,9 +40,9 @@ http://www.cs.cornell.edu/courses/cs5540/2010sp/lectures/Lec9.Estimation-continu
 
 与之相对的，还有一种边学习边预测的在线学习（online learning）算法。其步骤如下：
 
->1.$$i:=0$$。<br/>
->2.输入$$x^{(i)}$$，算法预测$$y^{(i)}$$。<br/>
->3.根据$$y^{(i)}$$的真实值，修正算法模型。这一步也被称作更新过程（update procedure）<br/>
+>1.$$i:=0$$。   
+>2.输入$$x^{(i)}$$，算法预测$$y^{(i)}$$。   
+>3.根据$$y^{(i)}$$的真实值，修正算法模型。这一步也被称作更新过程（update procedure）   
 >4.令$$i:=i+1$$，以处理下一个数据样本。
 
 在线学习的优点：
@@ -134,13 +134,15 @@ $$k\le (D/\gamma)^2$$
 
 K-Means算法的步骤如下:
 
->1.随机选取k个聚类质心点（cluster centroids）$$\mu_1,\dots,\mu_k$$<br/>
->2.重复下面过程直到收敛 {<br/>
-><span style="white-space: pre">	</span>对于每一个样例i，计算其应该属于的聚类：$$c^{(i)}:=\arg\min_j\|x^{(i)}-\mu_j\|^2$$<br/>
-><span style="white-space: pre">	</span>对于每一个聚类j，重新计算该聚类的质心：$$\mu_j:=\frac{\sum_{i=1}^m1\{c^{(i)}=j\}x^{(i)}}{\sum_{i=1}^m1\{c^{(i)}=j\}}$$。
-><br/>}
+>1.随机选取k个聚类质心点（cluster centroids）$$\mu_1,\dots,\mu_k$$   
+>2.重复下面过程直到收敛 {   
+><span style="white-space: pre">	</span>对于每一个样例i，计算其应该属于的聚类：$$c^{(i)}:=\arg\min_j\|x^{(i)}-\mu_j\|^2$$   
+><span style="white-space: pre">	</span>对于每一个聚类j，重新计算该聚类的质心：$$\mu_j:=\frac{\sum_{i=1}^m1\{c^{(i)}=j\}x^{(i)}}{\sum_{i=1}^m1\{c^{(i)}=j\}}$$。   
+>}
 
 其中，k是我们事先定义的聚类个数。下图展示了对n个样本点进行K-means聚类的效果，这里k取2。
+
+![](/images/article/k-means.png)
 
 K-means算法面对的第一个问题是如何保证收敛。前面的算法中强调结束条件就是收敛，可以证明的是K-means完全可以保证收敛性。下面我们定性的描述一下收敛性，我们定义畸变函数（distortion function）如下：
 
@@ -150,9 +152,19 @@ J函数表示每个样本点到其质心的距离平方和。K-means算法的目
 
 由于畸变函数J是非凸函数，意味着我们不能保证算法取得的最小值是全局最小值，也就是说k-means对质心初始位置的选取比较敏感。但一般情况下k-means达到的局部最优已经满足需求。但如果你怕陷入局部最优，那么可以选取不同的初始值跑多遍k-means，然后取其中最小的J对应的$$\mu$$和c输出。
 
+参考：
+
+http://www.csdn.net/article/2012-07-03/2807073-k-means
+
+http://www.cnblogs.com/leoo2sk/archive/2010/09/20/k-means.html
+
+http://www.cnblogs.com/jerrylead/archive/2011/04/06/2006910.html
+
 # 高斯混合模型和EM算法
 
 本篇讨论使用期望最大化算法（Expectation-Maximization）进行密度估计（density estimation）。
+
+从上面的讨论可以形象的看出，聚类问题实际就是在数据集上，找出一个个数据密度较高的“圆圈”。我们可以反过来思考这个问题：如果我们已知圆圈的圆心和半径，那么也可以根据圆心、半径以及样本分布模型，来随机生成这些数据。显然，这和前一种做法在效果上是等效的。
 
 首先我们假设样本数据满足联合概率分布
 
@@ -162,7 +174,9 @@ $$p(x^{(i)},z^{(i)})=p(x^{(i)}\vert z^{(i)})p(z^{(i)})\tag{5}$$
 
 假定$$x^{(i)}\vert z^{(i)}=j\sim \mathcal{N}(\mu_j,\Sigma_j)$$，则该模型被称为高斯混合模型（mixture of Gaussians model）。
 
-整个模型简单描述为对于每个样例$$x^{(i)}$$，我们先从k个类别中按多项式分布抽取一个$$z^{(i)}$$，然后根据$$z^{(i)}$$所对应的k个多值高斯分布中的一个生成样例$$x^{(i)}$$。注意的是这里的$$z^{(i)}$$是隐含的随机变量。
+整个模型简单描述为对于每个样例$$x^{(i)}$$，我们先从k个类别中按多项分布抽取一个$$z^{(i)}$$，然后根据$$z^{(i)}$$所对应的k个多值高斯分布中的一个生成样例$$x^{(i)}$$。注意的是这里的$$z^{(i)}$$是隐含的随机变量（latent random variables）。
+
+![](/images/article/EM.png)
 
 因此，由全概率公式可得：
 
@@ -174,9 +188,28 @@ $$\ell(\phi,\mu,\Sigma)=\sum_{i=1}^m\log p(x^{(i)};\phi,\mu,\Sigma)=\sum_{i=1}^m
 
 这个式子的最大值不能通过求导数为0的方法解决的，因为它不是close form。（多项分布的概率密度函数包含阶乘运算，不满足close form的定义。）
 
-为了简化问题，我们假设已经知道每个样例的$$z^{(i)}$$值。
+为了简化问题，我们假设已经知道每个样例的$$z^{(i)}$$值。这实际上就转化成《机器学习（二）》所提到的GDA模型。和之前模型的区别在于，$$z^{(i)}$$是多项分布，而且每个聚类的$$\Sigma$$都不相同，但结论是类似的。
 
-参考：
+这里的直接推导非常复杂，可参考以下文章：
 
 http://www.cse.psu.edu/~rtc12/CSE586/lectures/EMLectureFeb3.pdf
 
+上面这篇文章比较直观，比Andrew讲义的Problem Set详细的多。然而Andrew这样写是有原因的，在后面的章节，借助Jensen不等式，Andrew给出一个更简单且一般化的推导过程。
+
+接下来的问题就是：$$z^{(i)}$$的值我们是不知道的，该怎么办呢？
+
+EM算法的思路是：
+
+>1.猜测$$z^{(i)}$$的值。（这一步即所谓的Expectation，简称E-Step。）   
+>2.最大化计算，以更新模型的参数。（这一步即所谓的Maximization，简称M-Step。）
+
+具体到这里就是：
+
+>Repeat until convergence {   
+><span style="white-space: pre">	</span>(E-step) For each i, j：   
+><span style="white-space: pre">			</span>$$w_j^{(i)}:=p(z^{(i)}=j\vert x^{(i)};\phi,\mu,\Sigma)$$   
+><span style="white-space: pre">	</span>(M-step) Update the parameters：   
+><span style="white-space: pre">			</span>$$\phi_j:=\frac{1}{m}\sum_{i=1}^mw_j^{(i)}$$   
+><span style="white-space: pre">			</span>$$\mu_j:=\frac{\sum_{i=1}^mw_j^{(i)}x^{(i)}}{\sum_{i=1}^mw_j^{(i)}}$$   
+><span style="white-space: pre">			</span>$$\Sigma_j:=\frac{\sum_{i=1}^mw_j^{(i)}(x^{(i)}-\mu_j)(x^{(i)}-\mu_j)^T}{\sum_{i=1}^mw_j^{(i)}}$$   
+>}
