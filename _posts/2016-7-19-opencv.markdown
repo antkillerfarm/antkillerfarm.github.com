@@ -196,8 +196,6 @@ http://yihui.name/
 
 谢益辉，Iowa State University博士，目前就职于RStudio。中国R语言会议、COS社区创办者。
 
-# Factor analysis
-
 # Principal components analysis
 
 # Independent Components Analysis
@@ -209,10 +207,5 @@ http://yihui.name/
 # Partial Least Squares Discriminant Analysis
 
 Probability distribution function
-
-# 机器学习（十）——因子分析
-
-## 条件高斯分布
-
 
 
