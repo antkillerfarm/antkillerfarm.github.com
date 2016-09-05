@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（九）——EM算法、因子分析
+title:  机器学习（九）——EM算法
 category: technology 
 ---
 
@@ -206,9 +206,65 @@ $$\phi_j:=\frac{1}{m}\sum_{i=1}^mw_j^{(i)}$$
 
 之前的讨论都是基于样本个数m远大于特征数n的，现在来看看$$m\ll n$$的情况。
 
-这种情况本质上意味着，样本只覆盖了很小一部分的特征空间。当我们应用高斯模型的时候，会发现$$\Sigma$$根本就不存在，自然也就没法利用之前的方法了。
+这种情况本质上意味着，样本只覆盖了很小一部分的特征空间。当我们应用高斯模型的时候，会发现协方差矩阵$$\Sigma$$根本就不存在，自然也就没法利用之前的方法了。
 
 那么我们应该怎么办呢？
 
 ## 对$$\Sigma$$的限制
 
+有两种方法可以对$$\Sigma$$进行限制。
+
+方法一：
+
+设定$$\Sigma$$为对角线矩阵，即所有非对角线元素都是0。其对角线元素为：
+
+$$\Sigma_{jj}=\frac{1}{m}\sum_{i=1}^m(x_j^{(i)}-\mu_j)^2$$
+
+二维多元高斯分布在平面上的投影是个椭圆，中心点由$$\mu$$决定，椭圆的形状由$$\Sigma$$决定。 $$\Sigma$$如果变成对角阵，就意味着椭圆的两个轴都和坐标轴平行了。
+
+方法二：
+
+还可以进一步约束$$\Sigma$$，可以假设对角线上的元素都是相等的，即：
+
+$$\Sigma=\sigma^2I$$
+
+其中：
+
+$$\sigma=\frac{1}{mn}\sum_{j=1}^n\sum_{i=1}^m(x_j^{(i)}-\mu_j)^2$$
+
+这实际上也就是方法一中对角线元素的均值，反映到二维高斯分布图上就是椭圆变成圆。
+
+当我们要估计出完整的$$\Sigma$$时，我们需要$$m\ge n+1$$才能保证在最大似然估计下得出的$$\Sigma$$是非奇异的。然而在上面的任何一种假设限定条件下，只要$$m\ge 2$$就可以估计出限定的$$\Sigma$$。
+
+这样做的缺点也是显而易见的，我们认为特征间相互独立，这个假设太强。接下来，我们给出一种称为因子分析（factor analysis）的方法，使用更多的参数来分析特征间的关系，并且不需要计算一个完整的$$\Sigma$$。
+
+## 利用多变量高斯分布密度函数计算积分的技巧
+
+$$I(A,b,c)=\int_x\exp\left(-\frac{1}{2}(x^TAx+x^Tb+c)\right)\mathrm{d}x$$
+
+其中A为对称正定矩阵，b为向量。对于上面这样的积分，可以使用“完全配方法”的数学技巧求解。
+
+因为
+
+$$x^TAx+x^Tb+c=(x - h)^TA(x - h)+k$$
+
+其中$$h=-\frac{1}{2}A^{-1}b,k=c-\frac{1}{4}b^TA^{-1}b$$。
+
+所以
+
+$$\begin{align}
+I(A,b,c)&=\int_x\exp\left(-\frac{1}{2}((x - h)^TA(x - h)+k)\right)\mathrm{d}x
+\\&=\int_x\exp\left(-\frac{1}{2}(x - h)^TA(x - h)-\frac{1}{2}k\right)\mathrm{d}x
+\\&=\exp(-\frac{1}{2}k)\cdot\int_x\exp\left(-\frac{1}{2}(x - h)^TA(x - h)\right)\mathrm{d}x
+\end{align}$$
+
+令$$\mu=h,\Sigma=A^{-1}$$，则：
+
+$$I(A,b,c)=\frac{(2\pi)^{n/2}\lvert\Sigma\rvert^{n/2}}{\exp(\frac{1}{2}k)}\cdot\int_x\frac{1}{(2\pi)^{n/2}\lvert\Sigma\rvert^{n/2}}\exp\left(-\frac{1}{2}(x-\mu)^T\Sigma^{-1}(x-\mu)\right)\mathrm{d}x$$
+
+公式右侧的被积分函数，正好是多变量高斯分布密度函数，因此该积分值为1。于是：
+
+$$I(A,b,c)=\frac{(2\pi)^{n/2}\lvert\Sigma\rvert^{n/2}}{\exp(\frac{1}{2}k)}$$
+
+注：原始讲义里，Chuong B. Do写的《Gaussian processes》的附录A.1和本节内容类似，但推导过程有问题，疑似笔误，特更换为维基百科中的例子。（矩阵的完全配方那块的变换，我能推导出
+维基百科的结果，但推导不出Chuong B. Do的结果。）如有错误，望读者指出。
