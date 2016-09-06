@@ -248,17 +248,17 @@ $$I(A,b,c)=\int_x\exp\left(-\frac{1}{2}(x^TAx+x^Tb+c)\right)\mathrm{d}x$$
 
 $$x^TAx+x^Tb+c=(x - h)^TA(x - h)+k$$
 
-其中$$h=-\frac{1}{2}A^{-1}b,k=c-\frac{1}{4}b^TA^{-1}b$$。
+其中$$h=-\frac{A^{-1}b}{2},k=c-\frac{b^TA^{-1}b}{4}$$。
 
 所以
 
 $$\begin{align}
 I(A,b,c)&=\int_x\exp\left(-\frac{1}{2}((x - h)^TA(x - h)+k)\right)\mathrm{d}x
-\\&=\int_x\exp\left(-\frac{1}{2}(x - h)^TA(x - h)-\frac{1}{2}k\right)\mathrm{d}x
-\\&=\exp(-\frac{1}{2}k)\cdot\int_x\exp\left(-\frac{1}{2}(x - h)^TA(x - h)\right)\mathrm{d}x
+\\&=\int_x\exp\left(-\frac{1}{2}(x - h)^TA(x - h)-k/2\right)\mathrm{d}x
+\\&=\exp(-k/2)\cdot\int_x\exp\left(-\frac{1}{2}(x - h)^TA(x - h)\right)\mathrm{d}x
 \end{align}$$
 
 令$$\mu=h,\Sigma=A^{-1}$$，则：
 
-$$I(A,b,c)=\frac{(2\pi)^{n/2}\lvert\Sigma\rvert^{1/2}}{\exp(\frac{1}{2}k)}\cdot\int_x\frac{1}{(2\pi)^{n/2}\lvert\Sigma\rvert^{1/2}}\exp\left(-\frac{1}{2}(x-\mu)^T\Sigma^{-1}(x-\mu)\right)\mathrm{d}x$$
+$$I(A,b,c)=\frac{(2\pi)^{n/2}\lvert\Sigma\rvert^{1/2}}{\exp(k/2)}\cdot\int_x\frac{1}{(2\pi)^{n/2}\lvert\Sigma\rvert^{1/2}}\exp\left(-\frac{1}{2}(x-\mu)^T\Sigma^{-1}(x-\mu)\right)\mathrm{d}x$$
 

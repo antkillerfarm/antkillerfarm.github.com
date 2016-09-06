@@ -354,8 +354,16 @@ http://distrowatch.com/
 
 3.GOffice。Gnome项目的成果，和前两个相比，GOffice的组件比较独立，没有什么协同能力。
 
+## Firefox插件
+
+http://mozilla.com.cn/addon/76-pagesaver/
+
+这个插件可以将网页保存为图片。
+
 # ASCII表情
 
 ╮(╯_╰)╭
 
 (^ω^)
+
+
