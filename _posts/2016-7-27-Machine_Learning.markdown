@@ -241,7 +241,9 @@ $$g'(z)=g(z)(1-g(z))$$
 
 评估逻辑回归（Logistic regression）的质量，需要用到最大似然估计（maximum likelihood estimator）方法（由Ronald Aylmer Fisher提出）。最大似然估计是在“模型已定，参数未知”的情况下，寻找使模型出现的概率最大的参数集$$\theta$$的方法。显然，参数集$$\theta$$所确定的模型，其出现概率越大，模型的准确度越高。
 
-最大似然估计中采样需满足一个很重要的假设，就是所有的采样都是独立同分布的（independent and identically distributed，IID）。
+最大似然估计中采样需满足一个很重要的假设，就是所有的采样都是独立同分布的（independent and identically distributed，IID），即：
+
+$$f(x_1,\dots,x_n;\theta)=f(x_1;\theta)\times \dots \times f(x_n;\theta)$$
 
 似然估计函数如下所示：
 
