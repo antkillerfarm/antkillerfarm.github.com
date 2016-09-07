@@ -140,6 +140,10 @@ http://v.kuaidadi.com/
 
 滴滴快的大数据平台
 
+http://www.cs.waikato.ac.nz/ml/weka/
+
+一个Java写的数据分析工具。
+
 ## 使用细节
 
 ### saturate_cast
