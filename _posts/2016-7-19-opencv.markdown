@@ -200,7 +200,11 @@ http://yihui.name/
 
 谢益辉，Iowa State University博士，目前就职于RStudio。中国R语言会议、COS社区创办者。
 
-# Principal components analysis
+http://www.r-user.com/
+
+一个中文的R语言网站
+
+PDF：Probability distribution function
 
 # Independent Components Analysis
 
@@ -210,6 +214,29 @@ http://yihui.name/
 
 # Partial Least Squares Discriminant Analysis
 
-Probability distribution function
+# scrapy
 
+scrapy是一个Python写的网页抓取分析工具。网页抓取分析的学名叫做“Web scraping”，可在wiki上获得更多的相关信息。
+
+官网：
+
+https://scrapy.org/
+
+安装：
+
+`sudo apt install python-scrapy`
+
+参考：
+
+https://segmentfault.com/a/1190000000583419
+
+一个中文简易教程。
+
+https://github.com/scrapy/dirbot
+
+官方例程。
+
+http://www.cnblogs.com/fengzheng/p/4974509.html
+
+另一个中文简易教程。
 

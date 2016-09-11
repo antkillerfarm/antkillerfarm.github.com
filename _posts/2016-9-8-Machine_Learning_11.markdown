@@ -83,4 +83,10 @@ $$\mu$$
 
 # 主成分分析
 
+## 矩阵的特征值和特征向量
+
+https://en.wikipedia.org/wiki/QR_algorithm
+
+http://www.netlib.org/na-digest-html/07/v07n34.html
+
 
