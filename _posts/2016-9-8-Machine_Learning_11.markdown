@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（十一）——主成分分析
+title:  机器学习（十一）——机器学习中的矩阵方法
 category: technology 
 ---
 
@@ -77,7 +77,22 @@ $$\Lambda=\left(\sum_{i=1}^m(x^{(i)}-\mu)\mu_{z^{(i)}\vert x^{(i)}}^T\right)\lef
 
 此外，我们还可得出：（推导过程略）
 
-$$\mu$$
+$$\mu=\frac{1}{m}\sum_{i=1}^mx^{(i)}$$
+
+$$\begin{split}\Phi=\frac{1}{m}\sum_{i=1}^m\left(x^{(i)}(x^{(i)})^T-x^{(i)}\mu_{z^{(i)}\vert x^{(i)}}^T\Lambda^T-\Lambda\mu_{z^{(i)}\vert x^{(i)}}(x^{(i)})^T
+\\+\Lambda\left(\mu_{z^{(i)}\vert x^{(i)}}\mu_{z^{(i)}\vert x^{(i)}}^T+\Sigma_{z^{(i)}\vert x^{(i)}}\right)\Lambda^T\right)\end{split}$$
+
+# 机器学习中的矩阵方法
+
+在继续Andrew Ng的讲义之前，我们需要加强一些矩阵的相关知识。虽然Andrew Ng的讲义中已经包含了一个线性代数方面的简介，然而真的就只是简介而已，好多内容都没有。
+
+这里推荐一本书《Matrix Methods in Data Mining and Pattern Recognition》。作者：Lars Eld´en，执教于Linköping University数学系。
+
+http://www.cnblogs.com/daniel-D/p/3204508.html
+
+这是daniel-D写的中文笔记。
+
+## LU分解
 
 
 
@@ -85,8 +100,28 @@ $$\mu$$
 
 ## 矩阵的特征值和特征向量
 
+设A是一个n阶方阵，$$\lambda$$是一个数，如果方程$$AX=\lambda X$$存在非零解向量，则称$$\lambda$$为A的一个特征值，相应的非零解向量X称为属于特征值$$\lambda$$的特征向量。
+
+特征值和特征向量的特性包括：
+
+1.特征向量属于特定的特征值，离开特征值讨论特征向量是没有意义的。不同特征值对应的特征向量不会相等，但特征向量不能由特征值惟一确定。
+
+2.在复数范围内，n阶矩阵A有n个特征值。
+
+更多内容参见：
+
+http://course.tjau.edu.cn/xianxingdaishu/jiao/5.htm
+
+## QR算法
+
+任意实数方阵A，都能被分解为$$A=QR$$。这里的Q为正交单位阵，即$$Q^TQ=I$$。R是一个上三角矩阵。
+
 https://en.wikipedia.org/wiki/QR_algorithm
 
 http://www.netlib.org/na-digest-html/07/v07n34.html
+
+>注：
+
+Vera Nikolaevna Kublanovskaya，1920~2012，苏联数学家，女。终身供职于苏联科学院列宁格勒斯塔克罗夫数学研究所。52岁才拿到博士学位。
 
 
