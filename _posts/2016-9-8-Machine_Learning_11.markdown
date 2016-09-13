@@ -92,11 +92,86 @@ http://www.cnblogs.com/daniel-D/p/3204508.html
 
 这是daniel-D写的中文笔记。
 
+这一部分的内容属于数值计算领域，涉及的概念虽然不复杂，但提出一个高效算法，仍然不是件容易的事情。
+
+## 三角矩阵的求逆问题
+
+$$\begin{bmatrix}
+l_{11} & 0 & 0 \\
+l_{21} & l_{22} & 0 \\
+l_{31} & l_{32} & l_{33} \\  
+\end{bmatrix}
+\begin{bmatrix}
+u_{11} & u_{12} & u_{13} \\
+0 & u_{22} & u_{23} \\
+0 & 0 & u_{33} \\  
+\end{bmatrix}
+$$
+
+以3阶方阵为例，上面左边的矩阵被称为下三角矩阵（lower triangular matrix），而右边的矩阵被称为上三角矩阵（upper triangular matrix）。
+
+对于矩阵求逆问题来说，下三角矩阵是一类比较简单的矩阵，难度仅高于对角阵。
+
+下三角矩阵的逆矩阵也是下三角矩阵，因此：
+
+$$AA^{-1}=\begin{bmatrix}
+a_{11} & 0 & \dots & 0 \\
+a_{21} & a_{22} & \dots & 0 \\
+\dots & \dots & \dots & \dots \\
+a_{n1} & a_{n2} & \dots & a_{nn} \\  
+\end{bmatrix}
+\begin{bmatrix}
+b_{11} & 0 & \dots & 0 \\
+b_{21} & b_{22} & \dots & 0 \\
+\dots & \dots & \dots & \dots \\
+b_{n1} & b_{n2} & \dots & b_{nn} \\  
+\end{bmatrix}
+=\begin{bmatrix}
+1 & 0 & \dots & 0 \\
+0 & 1 & \dots & 0 \\
+\dots & \dots & \dots & \dots \\
+0 & 0 & \dots & 1 \\  
+\end{bmatrix}
+$$
+
+由矩阵乘法定义，可知：
+
+$$c_{ij}=\sum_{k=j}^ia_{ik}b_{kj}$$
+
+由$$c_{ij}=1,i=j$$，可得：$$b_{ii}=\frac{1}{a_{ii}}$$
+
+由$$c_{ij}=0,i\neq j$$，可得：
+
+$$c_{ij}=\sum_{k=j}^{i-1}a_{ik}b_{kj}+a_{ii}b_{ij}=0$$
+
+因此：
+
+$$b_{ij}=-\frac{1}{a_{ii}}\sum_{k=j}^{i-1}a_{ik}b_{kj}=-b_{ii}\sum_{k=j}^{i-1}a_{ik}b_{kj}$$
+
+上三角矩阵求逆，可通过转置转换成下三角矩阵求逆。这里会用到以下性质:
+
+$$(A^T)^{-1}=(A^{-1})^T$$
+
 ## LU分解
 
+LU分解可将矩阵A分解为$$A=LU$$，其中L是下三角矩阵，U是上三角矩阵。
+
+LU分解的用途很多，其中之一是求逆：
+
+$$A^{-1}=(LU)^{-1}=U^{-1}L^{-1}$$
+
+LU分解也有若干种算法，常见的包括Doolittle、Cholesky、Crout算法。
+
+>注：Myrick Hascall Doolittlee，1830~1913。
+
+>Andr´e-Louis Cholesky，1875~1918，法国数学家、工程师、军官。死于一战战场。
+
+>Prescott Durand Crout，1907~1984，美国数学家，22岁获MIT博士。
+
+这里只介绍一下Doolittle算法。
 
 
-# 主成分分析
+
 
 ## 矩阵的特征值和特征向量
 
@@ -120,8 +195,10 @@ https://en.wikipedia.org/wiki/QR_algorithm
 
 http://www.netlib.org/na-digest-html/07/v07n34.html
 
->注：
+>注：John G.F. Francis，1934年生，英国计算机科学家，剑桥大学肄业生。
 
-Vera Nikolaevna Kublanovskaya，1920~2012，苏联数学家，女。终身供职于苏联科学院列宁格勒斯塔克罗夫数学研究所。52岁才拿到博士学位。
+>Vera Nikolaevna Kublanovskaya，1920~2012，苏联数学家，女。终身供职于苏联科学院列宁格勒斯塔克罗夫数学研究所。52岁才拿到博士学位。
+
+# 主成分分析
 
 
