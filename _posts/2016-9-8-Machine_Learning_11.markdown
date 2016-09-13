@@ -84,7 +84,7 @@ $$\begin{split}\Phi=\frac{1}{m}\sum_{i=1}^m\left(x^{(i)}(x^{(i)})^T-x^{(i)}\mu_{
 
 # 机器学习中的矩阵方法
 
-在继续Andrew Ng的讲义之前，我们需要加强一些矩阵的相关知识。虽然Andrew Ng的讲义中已经包含了一个线性代数方面的简介，然而真的就只是简介而已，好多内容都没有。
+在继续Andrew Ng的讲义之前，我们需要加强一些矩阵的相关知识。虽然Andrew Ng的讲义中已经包含了一个线性代数方面的简介文章，然而真的就只是简介而已，好多内容都没有。
 
 这里推荐一本书《Matrix Methods in Data Mining and Pattern Recognition》。作者：Lars Eld´en，执教于Linköping University数学系。
 
@@ -110,7 +110,7 @@ $$
 
 以3阶方阵为例，上面左边的矩阵被称为下三角矩阵（lower triangular matrix），而右边的矩阵被称为上三角矩阵（upper triangular matrix）。
 
-对于矩阵求逆问题来说，下三角矩阵是一类比较简单的矩阵，难度仅高于对角阵。
+对于矩阵求逆问题来说，下三角矩阵是一类比较简单的矩阵，求逆难度仅高于对角阵。
 
 下三角矩阵的逆矩阵也是下三角矩阵，因此：
 
@@ -134,7 +134,7 @@ b_{n1} & b_{n2} & \dots & b_{nn} \\
 \end{bmatrix}
 $$
 
-由矩阵乘法定义，可知：
+由矩阵乘法定义，可得：
 
 $$c_{ij}=\sum_{k=j}^ia_{ik}b_{kj}$$
 
@@ -170,8 +170,44 @@ LU分解也有若干种算法，常见的包括Doolittle、Cholesky、Crout算�
 
 这里只介绍一下Doolittle算法。
 
+$$A=\begin{bmatrix}
+a_{11} & a_{12} & \dots & a_{1n} \\
+a_{21} & a_{22} & \dots & a_{2n} \\
+\dots & \dots & \dots & \dots \\
+a_{n1} & a_{n2} & \dots & a_{nn} \\  
+\end{bmatrix}=LU=
+\begin{bmatrix}
+1 & 0 & \dots & 0 \\
+l_{21} & 1 & \dots & 0 \\
+\dots & \dots & \dots & \dots \\
+l_{n1} & l_{n2} & \dots & 1 \\  
+\end{bmatrix}
+\begin{bmatrix}
+u_{11} & u_{12} & \dots & u_{1n} \\
+0 & u_{22} & \dots & u_{2n} \\
+\dots & \dots & \dots & \dots \\
+0 & 0 & \dots & u_{nn} \\  
+\end{bmatrix}
+$$
 
+由矩阵乘法定义，可知：
 
+$$a_{1j}=u_{1j},j=1,2,\dots,n$$
+
+$$a_{ij}=\begin{cases}
+\sum_{t=1}^jl_{it}u_{tj}, & j<i \\
+\sum_{t=1}^{i-1}l_{it}u_{tj}+u_{ij}, & j\ge i \\
+\end{cases}$$
+
+因此：
+
+>$$u_{1j}=a_{1j},j=1,2,\dots,n$$（U的第1行）   
+>$$l_{j1}=a_{j1}/u_{11},j=1,2,\dots,n$$（L的第1列）   
+>$$$$
+
+参见：
+
+http://www3.nd.edu/~zxu2/acms40390F11/Alg-LU-Crout.pdf
 
 ## 矩阵的特征值和特征向量
 
@@ -193,9 +229,17 @@ http://course.tjau.edu.cn/xianxingdaishu/jiao/5.htm
 
 https://en.wikipedia.org/wiki/QR_algorithm
 
-http://www.netlib.org/na-digest-html/07/v07n34.html
 
->注：John G.F. Francis，1934年生，英国计算机科学家，剑桥大学肄业生。
+
+QR算法于1961年，由John G.F. Francis和Vera Nikolaevna Kublanovskaya发现。
+
+>注：John G.F. Francis，1934年生，英国计算机科学家，剑桥大学肄业生。   
+>2000年，QR算法被IEEE计算机学会评为20世纪的top 10算法之一。然而直到那时，计算机界的数学家们竟然都没有见过Francis本尊，连这位大神是活着还是死了都不知道，仿佛他在发表完这篇惊世之作后就消失了一般。   
+>2007年，学界的两位大牛：Gene Howard Golub和Frank Detlev Uhlig（1972年获加州理工学院博士，Auburn University数学系教授），经过不懈努力和人肉搜索终于联系上了他。   
+>他一点都不知道自己N年前的研究被引用膜拜了无数次，得知自己的QR算法是二十世纪最NB的十大算法还有点小吃惊。这位神秘大牛竟然连TeX和Matlab都不知道。现在这位大牛73岁了，活到老学到老，还在远程教育大学Open University里补修当年没有修到的学位。   
+>2015年，University of Sussex授予他荣誉博士学位。   
+>相关内容参见：   
+>http://www.netlib.org/na-digest-html/07/v07n34.html
 
 >Vera Nikolaevna Kublanovskaya，1920~2012，苏联数学家，女。终身供职于苏联科学院列宁格勒斯塔克罗夫数学研究所。52岁才拿到博士学位。
 
