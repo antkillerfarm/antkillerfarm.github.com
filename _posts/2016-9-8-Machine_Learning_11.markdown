@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（十一）——机器学习中的矩阵方法
+title:  机器学习（十一）——机器学习中的矩阵方法（1）
 category: technology 
 ---
 
@@ -94,6 +94,10 @@ http://www.cnblogs.com/daniel-D/p/3204508.html
 
 这一部分的内容属于数值计算领域，涉及的概念虽然不复杂，但提出一个高效算法，仍然不是件容易的事情。
 
+还有另外一本书《Liner Algebra Done Right》，也值得推荐。这本书从定义矩阵算子，而不是通过行列式，来解释各种线性代数原理，提供了一种独特的视角。因为算子是有明确的几何或物理意义的，而行列式则不然。
+
+作者：Sheldon Jay Axler，1949年生，美国数学家。普林斯顿大学本科，UCB博士，MIT博士后，San Francisco State University教授。美国的数学系基本就是本科和博士，很少有硕士。因为数学，尤其是理论数学，需要高度的抽象思维能力，半调子的硕士，既不好找工作，也不好搞科研。
+
 ## 三角矩阵的求逆问题
 
 $$\begin{bmatrix}
@@ -160,7 +164,7 @@ LU分解的用途很多，其中之一是求逆：
 
 $$A^{-1}=(LU)^{-1}=U^{-1}L^{-1}$$
 
-LU分解也有若干种算法，常见的包括Doolittle、Cholesky、Crout算法。
+LU分解有若干种算法，常见的包括Doolittle、Cholesky、Crout算法。
 
 >注：Myrick Hascall Doolittlee，1830~1913。
 
@@ -203,46 +207,61 @@ $$a_{ij}=\begin{cases}
 
 >$$u_{1j}=a_{1j},j=1,2,\dots,n$$（U的第1行）   
 >$$l_{j1}=a_{j1}/u_{11},j=1,2,\dots,n$$（L的第1列）   
->$$$$
+>For $$i=2,3,\dots,n$$ do   
+><span style="white-space: pre">	</span>$$u_{ii}=a_{ii}-\sum_{t=1}^{i-1}l_{it}u_{tj}$$   
+><span style="white-space: pre">	</span>$$u_{ij}=a_{ij}-\sum_{t=1}^{i-1}l_{it}u_{tj}$$<span style="white-space: pre">		</span>for $$j=i+1,\dots,n$$（U的第i行）   
+><span style="white-space: pre">	</span>$$l_{ji}=\frac{a_{ji}-\sum_{t=1}^{i-1}l_{jt}u_{ti}}{u_{ii}}$$<span style="white-space: pre">	   </span>for $$j=i+1,\dots,n$$（L的第i列）   
+>End   
+>$$u_{nn}=a_{nn}-\sum_{t=1}^{n-1}l_{nt}u_{tn}$$
 
 参见：
 
 http://www3.nd.edu/~zxu2/acms40390F11/Alg-LU-Crout.pdf
 
-## 矩阵的特征值和特征向量
+## QR分解
 
-设A是一个n阶方阵，$$\lambda$$是一个数，如果方程$$AX=\lambda X$$存在非零解向量，则称$$\lambda$$为A的一个特征值，相应的非零解向量X称为属于特征值$$\lambda$$的特征向量。
+任意实数方阵A，都能被分解为$$A=QR$$。这里的Q为正交单位阵，即$$Q^TQ=I$$。R是一个上三角矩阵。这种分解被称为QR分解。
 
-特征值和特征向量的特性包括：
+QR分解也有若干种算法，常见的包括Gram–Schmidt、Householder和Givens算法。
 
-1.特征向量属于特定的特征值，离开特征值讨论特征向量是没有意义的。不同特征值对应的特征向量不会相等，但特征向量不能由特征值惟一确定。
+>注：Jørgen Pedersen Gram，1850～1916，丹麦数学家，在矩阵、数论、泛函等领域皆有贡献。他居然是被自行车撞死的...
 
-2.在复数范围内，n阶矩阵A有n个特征值。
+>Erhard Schmidt，1876～1959，德国数学家，哥廷根大学博士，柏林大学教授。David Hilbert的学生。20世纪数学界的几位超级大神之一。1933年前的哥廷根大学数学系，秒杀其他所有学校。所谓“一流的学生去哥廷根，智商欠费才去藤校”。
 
-更多内容参见：
+>Alston Scott Householder，1904～1993，美国数学家，芝加哥大学博士，田纳西大学教授。ACM主席。
 
-http://course.tjau.edu.cn/xianxingdaishu/jiao/5.htm
+>James Wallace Givens, Jr.，1910～1993，美国数学家，普林斯顿大学博士，西北大学教授。参与UNIVAC I机器项目（1951年），这是最早的商用计算机。
 
-## QR算法
+这里只介绍Gram–Schmidt算法，这个算法虽然名为Gram–Schmidt，然而拉普拉斯和柯西早就已经用过了。
 
-任意实数方阵A，都能被分解为$$A=QR$$。这里的Q为正交单位阵，即$$Q^TQ=I$$。R是一个上三角矩阵。
+首先介绍一下向量的投影运算的符号表示。
 
-https://en.wikipedia.org/wiki/QR_algorithm
+![](/images/article/Projection_and_rejection.png)
 
+如上图所示，根据余弦定理和向量点乘的定义可得：
 
+$$a\cdot b=|a||b|\cos \theta$$
 
-QR算法于1961年，由John G.F. Francis和Vera Nikolaevna Kublanovskaya发现。
+因此，向量a在向量b上的投影向量$$a_1$$，可表示为：
 
->注：John G.F. Francis，1934年生，英国计算机科学家，剑桥大学肄业生。   
->2000年，QR算法被IEEE计算机学会评为20世纪的top 10算法之一。然而直到那时，计算机界的数学家们竟然都没有见过Francis本尊，连这位大神是活着还是死了都不知道，仿佛他在发表完这篇惊世之作后就消失了一般。   
->2007年，学界的两位大牛：Gene Howard Golub和Frank Detlev Uhlig（1972年获加州理工学院博士，Auburn University数学系教授），经过不懈努力和人肉搜索终于联系上了他。   
->他一点都不知道自己N年前的研究被引用膜拜了无数次，得知自己的QR算法是二十世纪最NB的十大算法还有点小吃惊。这位神秘大牛竟然连TeX和Matlab都不知道。现在这位大牛73岁了，活到老学到老，还在远程教育大学Open University里补修当年没有修到的学位。   
->2015年，University of Sussex授予他荣誉博士学位。   
->相关内容参见：   
->http://www.netlib.org/na-digest-html/07/v07n34.html
+$$a_1=|a|\cos \theta\hat b=|a|\frac{a\cdot b}{|a||b|}\frac{b}{|b|}=\frac{a\cdot b}{|b|^2}b=\frac{a\cdot b}{b\cdot b}b=\frac{\langle a,b\rangle}{\langle b,b\rangle}b$$
 
->Vera Nikolaevna Kublanovskaya，1920~2012，苏联数学家，女。终身供职于苏联科学院列宁格勒斯塔克罗夫数学研究所。52岁才拿到博士学位。
+我们定义投影符号如下：
 
-# 主成分分析
+$$\mathrm{proj}_{\mathbf{e}}\mathbf{a}
+= \frac{\left\langle\mathbf{e},\mathbf{a}\right\rangle}{\left\langle\mathbf{e},\mathbf{e}\right\rangle}\mathbf{e}$$
 
+令$$A=[\mathbf{a}_1, \cdots, \mathbf{a}_n]$$，其中$$a_i$$为列向量。则：
+
+$$\begin{align}
+ \mathbf{u}_1 &= \mathbf{a}_1,
+  & \mathbf{e}_1 &= {\mathbf{u}_1 \over \|\mathbf{u}_1\|} \\
+ \mathbf{u}_2 &= \mathbf{a}_2-\mathrm{proj}_{\mathbf{u}_1}\,\mathbf{a}_2,
+  & \mathbf{e}_2 &= {\mathbf{u}_2 \over \|\mathbf{u}_2\|} \\
+ \mathbf{u}_3 &= \mathbf{a}_3-\mathrm{proj}_{\mathbf{u}_1}\,\mathbf{a}_3-\mathrm{proj}_{\mathbf{u}_2}\,\mathbf{a}_3,
+  & \mathbf{e}_3 &= {\mathbf{u}_3 \over \|\mathbf{u}_3\|} \\
+ & \vdots &&\vdots \\
+ \mathbf{u}_k &= \mathbf{a}_k-\sum_{j=1}^{k-1}\mathrm{proj}_{\mathbf{u}_j}\,\mathbf{a}_k,
+  &\mathbf{e}_k &= {\mathbf{u}_k\over\|\mathbf{u}_k\|}
+\end{align}$$
 
