@@ -282,7 +282,7 @@ www.360doc.com/content/14/0113/17/15109633_345010019.shtml
 
 ## 编译
 
-Hadoop目前不在Ubuntu的官方软件仓库中，无法使用apt-get安装。使用源代码编译Hadoop的相关步骤，可在源码包的BUILDING.txt中找到。这里仅作为补遗之用。
+Hadoop目前不在Ubuntu的官方软件仓库中，无法使用apt-get安装。使用源代码编译Hadoop的相关步骤，可在源码包的BUILDING.txt中找到。这里仅作为补遗之用。总的来说，如无必要还是直接下载bin包比较好，编译还是很麻烦的。
 
 ### 安装FindBugs
 
@@ -325,4 +325,6 @@ Hadoop有Single Node和Cluster两种安装模式。一般的部署，当然采�
 前者主要用于开发和学习之用。这里只讨论前者。
 
 Single Node又可分为两种模式：Standalone和Pseudo-Distributed。前者一般仅用于检验程序逻辑的正确性，因为这种模式下，并没有Hadoop常见的各种节点和HFS的概念，所有的程序都运行在一个Java进程中。而后者在配置和运行方面，与Cluster已经相差无几。
+
+http://www.cnblogs.com/serendipity/archive/2011/08/23/2151031.html
 

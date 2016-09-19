@@ -122,7 +122,7 @@ http://127.0.0.1:9090
 
 ## Spark
 
-Spark和Openfire都是Ignite Realtime的产品。
+Spark和Openfire都是Ignite Realtime的产品。Spark是一个Java写的XMPP客户端。注意，这个Spark和Hadoop生态圈的Spark不是同一个软件。
 
 我一开始直接下载二进制包，但无法运行，原因不详。
 
