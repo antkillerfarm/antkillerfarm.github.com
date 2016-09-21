@@ -144,6 +144,10 @@ http://www.cs.waikato.ac.nz/ml/weka/
 
 一个Java写的数据分析工具。
 
+http://echarts.baidu.com/echarts2/doc/example.html
+
+各种大数据展示用的图表。
+
 ## 使用细节
 
 ### saturate_cast
@@ -214,6 +218,10 @@ PDF：Probability distribution function
 
 # Partial Least Squares Discriminant Analysis
 
+# ALS（Alternating Least Squares）
+
+http://www.cnblogs.com/zwCHAN/p/4269027.html
+
 # scrapy
 
 scrapy是一个Python写的网页抓取分析工具。网页抓取分析的学名叫做“Web scraping”，可在wiki上获得更多的相关信息。
@@ -239,6 +247,14 @@ https://github.com/scrapy/dirbot
 http://www.cnblogs.com/fengzheng/p/4974509.html
 
 另一个中文简易教程。
+
+# Hbase
+
+http://hbase.apache.org/
+
+# Spark
+
+http://spark.apache.org/
 
 # Parquet
 
