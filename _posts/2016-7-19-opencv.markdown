@@ -270,6 +270,16 @@ http://blog.csdn.net/dc_726/article/details/41143175
 
 几张图看懂列式存储
 
+# Scala
+
+官网：
+
+http://www.scala-lang.org/
+
+教程：
+
+http://www.runoob.com/scala/scala-tutorial.html
+
 # 云计算论文集
 
 这里列出一些在这个领域产生重大影响的论文。仅作备忘，肯定不全，Google是其中的绝对主力。
