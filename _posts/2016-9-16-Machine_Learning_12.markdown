@@ -182,6 +182,23 @@ http://www.doc88.com/p-089411326888.html
 >3.$$$$   
 >4.$$$$   
 
+# 协同过滤的ALS算法
+
+
+
+## Tikhonov regularization
+
+
+
+>注：Andrey Nikolayevich Tikhonov，1906~1993，苏联数学家和地球物理学家。大地电磁学的发明人之一。苏联科学院院士。
+
+参考论文：
+
+Large-scale Parallel Collaborative Filtering forthe Netflix Prize
+
+https://en.wikipedia.org/wiki/Tikhonov_regularization
+
+http://www.mit.edu/~cuongng/Site/Publication_files/Tikhonov06.pdf
 
 
 
