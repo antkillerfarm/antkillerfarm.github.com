@@ -178,7 +178,7 @@ http://www.doc88.com/p-089411326888.html
 在进行PCA算法之前，我们首先要对数据进行预处理，使之规则化。其方法如下：
 
 >1.$$\mu=\frac{1}{m}\sum_{i=1}^mx^{(i)}$$   
->2.$$$$   
+>2.$$x^{(i)}:=x^{(i)}-\mu$$   
 >3.$$$$   
 >4.$$$$   
 
@@ -199,6 +199,10 @@ Large-scale Parallel Collaborative Filtering forthe Netflix Prize
 https://en.wikipedia.org/wiki/Tikhonov_regularization
 
 http://www.mit.edu/~cuongng/Site/Publication_files/Tikhonov06.pdf
+
+http://www.jos.org.cn/html/2014/9/4648.htm
+
+http://www.fuqingchuan.com/2015/03/812.html
 
 
 
