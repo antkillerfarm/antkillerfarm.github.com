@@ -34,7 +34,7 @@ $$\frac{\|\Delta x\|}{\|x\|}\le \frac{\|A\|\cdot\|A^{-1}\|\cdot\|\Delta b\|}{\|b
 
 $$\frac{\|\Delta x\|}{\|x\|}\le K(A)\frac{\|\Delta b\|}{\|b\|}$$
 
-同样的，我们针对A的扰动，导致的x的偏差，也可得到类似的结论：
+同样的，我们针对A的扰动，所导致的x的偏差，也可得到类似的结论：
 
 $$\frac{\|\Delta x\|}{\|x+\Delta x\|}\le K(A)\frac{\|\Delta A\|}{\|A\|}$$
 
