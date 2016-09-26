@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（十一）——机器学习中的矩阵方法（1）
+title:  机器学习（十一）——机器学习中的矩阵方法（1）LU分解、QR分解
 category: technology 
 ---
 

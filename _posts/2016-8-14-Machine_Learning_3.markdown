@@ -142,7 +142,7 @@ $$g(z)=\begin{cases}
 
 $$\hat\gamma=\min_{i=1,\dots,m}\hat\gamma^{(i)},\hat\gamma^{(i)}=y^{(i)}(w^Tx^{(i)}+b)$$
 
-![](/images/article/SVM.png)
+![](/images/article/SVM_2.png)
 
 几何边距的几何意义如上图所示。w是分界线的法向量，A的坐标是$$x^{(i)}$$，它到分界线的距离是$$\gamma^{(i)}$$，根据解析几何知识可知，A到分界线的垂足B的坐标为$$x^{(i)}-\gamma^{(i)}\frac{w}{\|w\|}$$。将其代入分界线方程$$w^Tx+b=0$$，可得：
 

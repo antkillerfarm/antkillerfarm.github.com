@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（十二）——机器学习中的矩阵方法（2）
+title:  机器学习（十二）——机器学习中的矩阵方法（2）特征值和奇异值
 category: technology 
 ---
 
@@ -159,50 +159,83 @@ http://www.doc88.com/p-089411326888.html
 
 >William Morton Kahan，1933年生，加拿大数学家，多伦多大学博士，UCB教授。图灵奖获得者（1989）。IEEE-754标准（即浮点数标准）的主要制订者，被称为“浮点数之父”。ACM院士。
 
-# 主成分分析
+## 矩阵的秩
 
-真实的训练数据总是存在各种各样的问题。
+一个矩阵A的列（行）秩是A的线性独立的列（行）的极大数。
 
-比如拿到一个汽车的样本，里面既有以“千米/每小时”度量的最大速度特征，也有“英里/小时”的最大速度特征。显然这两个特征有一个是多余的，我们需要找到，并去除这个冗余。
+下面不加证明的给出矩阵的秩的性质：
 
-再比如，针对飞行员的调查，包含两个特征：飞行的技能水平和对飞行的爱好程度。由于飞行员是很难培训的，因此如果没有对飞行的热爱，也就很难学好飞行。所以这两个特征实际上是强相关的（strongly correlated）。如下图所示：
+1.矩阵的行秩等于列秩，因此可统称为矩阵的秩。
 
-![](/images/article/PCA.png)
+2.秩是n的$$m\times n$$矩阵为列满秩阵；秩是n的$$n\times p$$矩阵为行满秩阵。
 
-我们的目标就是找出上图中所示的向量$$u_1$$。
+3.设$$A\in M_{m\times n}(F)$$，若A是行满秩阵，则$$m\le n$$；若A是列满秩阵 ，则$$n\le m$$。
 
-为了实现这两个目标，我们可以采用PCA（Principal components analysis）算法。
+4.设A为$$m\times n$$列满秩阵，则n元齐次线性方程组$$AX=0$$只有零解。
 
-## 数据的规则化处理
+5.线性方程组$$AX=B$$对任一m维列向量B都有解$$\Leftrightarrow$$系数矩阵A为行满秩阵。
 
-在进行PCA算法之前，我们首先要对数据进行预处理，使之规则化。其方法如下：
+参见：
 
->1.$$\mu=\frac{1}{m}\sum_{i=1}^mx^{(i)}$$   
->2.$$x^{(i)}:=x^{(i)}-\mu$$   
->3.$$$$   
->4.$$$$   
+http://wenku.baidu.com/view/9ce143eb81c758f5f61f6730.html
 
-# 协同过滤的ALS算法
+## 奇异矩阵
 
+对应的行列式等于0的方阵，被称为奇异矩阵（singular matrix）。
 
+奇异矩阵和线性相关、秩等概念密切相关。
 
-## Tikhonov regularization
+下面不加证明的给出奇异矩阵的性质：
 
+1.如果A为非奇异矩阵$$\Leftrightarrow$$A满秩。
 
+2.如果A为奇异矩阵，则AX=0有无穷解，AX=b有无穷解或者无解。如果A为非奇异矩阵，则AX=0有且只有唯一零解，AX=b有唯一解。
 
->注：Andrey Nikolayevich Tikhonov，1906~1993，苏联数学家和地球物理学家。大地电磁学的发明人之一。苏联科学院院士。
+对于A不是方阵的情况，一般使用$$A^TA$$来评估矩阵是否是奇异矩阵。
 
-参考论文：
+## 向量的范数
 
-Large-scale Parallel Collaborative Filtering forthe Netflix Prize
+范数（norm，也叫模）的定义比较抽象，这里我们使用闵可夫斯基距离，进行一个示意性的介绍。
 
-https://en.wikipedia.org/wiki/Tikhonov_regularization
+Minkowski distance的定义：
 
-http://www.mit.edu/~cuongng/Site/Publication_files/Tikhonov06.pdf
+$$d(x,y)=\sqrt[\lambda]{\sum_{i=1}^{n}\lvert x_i-y_i\lvert^{\lambda}}$$
 
-http://www.jos.org.cn/html/2014/9/4648.htm
+显然，当$$\lambda=2$$时，该距离为欧氏距离。当$$\lambda=1$$时，也被称为CityBlock Distance或Manhattan Distance（曼哈顿距离）。
 
-http://www.fuqingchuan.com/2015/03/812.html
+这里的$$\lambda$$就是范数。范数可用符号$$\|x\|_\lambda$$表示。常用的有：
 
+$$\|x\|_1=|x_1|+\dots+|x_n|$$
 
+$$\|x\|_2=\sqrt{x_1^2+\dots+x_n^2}$$
+
+$$\|x\|_\infty=max(|x_1|,\dots,|x_n|)$$
+
+范数满足如下不等式：
+
+$$\|A+B\|\le \|A\|+\|B\|(三角不等式)$$
+
+$$\|A\cdot B\|\le \|A\|\cdot\|B\|(余弦定理)$$
+
+## 病态矩阵
+
+现在有线性系统$$Ax = b$$：
+
+$$\begin{bmatrix} 400 & -201 \\-800 & 201 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}=\begin{bmatrix} 200 \\ -200 \end{bmatrix}$$
+
+很容易得到解为：$$x_1=-100,x_2=-200$$。如果在样本采集时存在一个微小的误差，比如，将 A矩阵的系数400改变成401：
+
+$$\begin{bmatrix} 401 & -201 \\-800 & 201 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}=\begin{bmatrix} 200 \\ -200 \end{bmatrix}$$
+
+则得到一个截然不同的解：$$x_1=40000,x_2=79800$$。
+
+当解集x对A和b的系数高度敏感，那么这样的方程组就是病态的 (ill-conditioned/ill-posed)。
+
+从上例的情况来看，矩阵的行向量$$\begin{bmatrix} 400 & -201\end{bmatrix}$$和$$\begin{bmatrix} -800 & 401\end{bmatrix}$$实际上是过于线性相关了，从而导致矩阵已经接近奇异矩阵（near singular matrix）。
+
+病态矩阵实际上就是奇异矩阵和近奇异矩阵的另一个说法。
+
+参见：
+
+http://www.cnblogs.com/daniel-D/p/3219802.html
 
