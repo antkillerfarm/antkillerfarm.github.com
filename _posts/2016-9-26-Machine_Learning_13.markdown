@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（十三）——机器学习中的矩阵方法（3）病态矩阵、规则化
+title:  机器学习（十三）——机器学习中的矩阵方法（3）病态矩阵、协同过滤的ALS算法
 category: technology 
 ---
 
@@ -58,7 +58,7 @@ https://en.wikipedia.org/wiki/Condition_number
 
 ## 矩阵规则化
 
-病态矩阵处理方法有很多，这里只介绍矩阵规则化方法。
+病态矩阵处理方法有很多，这里只介绍矩阵规则化（regularization）方法。
 
 机器学习领域，经常用到各种损失函数（loss function），也称花费函数（cost function）。这里我们用：
 
@@ -86,7 +86,7 @@ Ridge regression问题中规则化方法，又被称为$$L_2$$ regularization，
 
 https://en.wikipedia.org/wiki/Regularization_(mathematics)
 
-从形式上来看，对比之前提到的拉格朗日函数，我们可以发现规则化因子，实际上就是给损失函数增加了一个约束条件。它的好处是增加了解向量的稳定度，但缺点是增加了数值解和真实解之间的误差。
+从形式上来看，对比之前提到的拉格朗日函数，我们可以发现规则化因子，实际上就是给损失函数增加了一个约束条件。它的好处是增加了解向量的稳定度，缺点是增加了数值解和真实解之间的误差。
 
 参见：
 
@@ -118,7 +118,7 @@ ALS算法是2008年以来，用的比较多的协同过滤算法。它已经集�
 
 在实际使用中，由于n和m的数量都十分巨大，因此R矩阵的规模很容易就会突破1亿项。这时候，传统的矩阵分解方法对于这么大的数据量已经是很难处理了。
 
-另一方面，一个用户也不可能给所有商品评分，因此，R矩阵注定是个稀疏矩阵。
+另一方面，一个用户也不可能给所有商品评分，因此，R矩阵注定是个稀疏矩阵。矩阵中所缺失的评分，又叫做missing item。
 
 针对这样的特点，我们可以假设用户和商品之间存在若干关联维度（比如用户年龄、性别、受教育程度和商品的外观、价格等），我们只需要将R矩阵投射到这些维度上即可。这个投射的数学表示是：
 
@@ -128,22 +128,41 @@ $$R_{m\times n}\approx X_{m\times k}Y_{n\times k}^T\tag{1}$$
 
 一般情况下，k的值远小于n和m的值，从而达到了数据降维的目的。
 
-幸运的是，我们并不需要显式的定义这些关联维度，而只需要假定它们存在即可，因此这里的关联维度又被称为Latent factor。
+幸运的是，我们并不需要显式的定义这些关联维度，而只需要假定它们存在即可，因此这里的关联维度又被称为Latent factor。k的典型取值一般是20～200。
 
+为了使低秩矩阵X和Y尽可能地逼近R，需要最小化下面的平方误差损失函数：
 
+$$\min_{x_*,y_*}\sum_{u,i\text{ is known}}(r_{ui}-x_u^Ty_i)^2$$
 
+考虑到矩阵的稳定性问题，使用Tikhonov regularization，则上式变为：
 
+$$\min_{x_*,y_*}\sum_{u,i\text{ is known}}(r_{ui}-x_u^Ty_i)^2+\lambda(|x_u|^2+|y_i|^2)$$
 
+优化上式，得到训练结果矩阵$$X_{m\times k},Y_{n\times k}$$。预测时，将User和Item代入$$r_{ui}=x_u^Ty_i$$，即可得到相应的评分预测值。
 
+ALS算法的缺点在于：
+
+1.它是一个离线算法。
+
+2.无法准确评估新加入的用户或商品。这个问题也被称为Cold Start问题。
 
 参考论文：
 
-Large-scale Parallel Collaborative Filtering forthe Netflix Prize
+《Large-scale Parallel Collaborative Filtering forthe Netflix Prize》
 
+《Collaborative Filtering for Implicit Feedback Datasets》
+
+其他参考：
 
 http://www.jos.org.cn/html/2014/9/4648.htm
 
 http://www.fuqingchuan.com/2015/03/812.html
+
+http://www.docin.com/p-714582034.html
+
+http://www.tuicool.com/articles/fANvieZ
+
+http://www.68idc.cn/help/buildlang/ask/20150727462819.html
 
 # 主成分分析
 
