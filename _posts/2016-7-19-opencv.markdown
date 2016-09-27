@@ -148,6 +148,14 @@ http://echarts.baidu.com/echarts2/doc/example.html
 
 各种大数据展示用的图表。
 
+http://www.deeplearningbook.org/
+
+深度学习的书籍网站。
+
+https://zhuanlan.zhihu.com/p/22038289
+
+斯坦福CS231n课程翻译。
+
 ## 使用细节
 
 ### saturate_cast
