@@ -4,6 +4,18 @@ title:  机器学习（十三）——机器学习中的矩阵方法（3）病�
 category: technology 
 ---
 
+## 病态矩阵（续）
+
+当解集x对A和b的系数高度敏感，那么这样的方程组就是病态的 (ill-conditioned/ill-posed)。
+
+从上例的情况来看，矩阵的行向量$$\begin{bmatrix} 400 & -201\end{bmatrix}$$和$$\begin{bmatrix} -800 & 401\end{bmatrix}$$实际上是过于线性相关了，从而导致矩阵已经接近奇异矩阵（near singular matrix）。
+
+病态矩阵实际上就是奇异矩阵和近奇异矩阵的另一个说法。
+
+参见：
+
+http://www.cnblogs.com/daniel-D/p/3219802.html
+
 ## 矩阵的条件数
 
 我们首先假设向量b受到扰动，导致解集x产生偏差，即：
@@ -72,6 +84,8 @@ $$\min_f \sum_{i=1}^nV(f(\hat x_i),\hat y_i)+\lambda R(f)$$
 
 其中的$$\lambda$$表示规则化因子的权重。
 
+>注：稀疏矩阵并不一定是病态矩阵，比如单位阵就不是病态的。但是从系统论的角度，高维空间中样本量的稀疏，的确会带来很大的不确定性。
+
 函数V（又叫做Fit measure）和R（又叫做Entropy measure），在不同的算法中，有不同的取值。
 
 比如，在Ridge regression问题中：
@@ -88,6 +102,14 @@ https://en.wikipedia.org/wiki/Regularization_(mathematics)
 
 从形式上来看，对比之前提到的拉格朗日函数，我们可以发现规则化因子，实际上就是给损失函数增加了一个约束条件。它的好处是增加了解向量的稳定度，缺点是增加了数值解和真实解之间的误差。
 
+为了更便于理解规则化，这里以二维向量空间为例，给出了规则化因子对损失函数的约束效应。
+
+![](/images/article/L1_vs_L2.png)
+
+上图中的圆圈是损失函数的等高线，坐标原点是规则化因子的约束中心，左图的方形和右图的圆形是$$l_p$$ ball。图中的黑点是等高线和$$l_p$$ ball的焦点，实际上也就是这个带约束的优化问题的解。
+
+可以看出$$L_1$$ regularization的解一般出现在坐标轴上，因而其他坐标上的值就是0，因此，$$L_1$$ regularization会导致矩阵的稀疏。
+
 参见：
 
 https://en.wikipedia.org/wiki/Tikhonov_regularization
@@ -97,6 +119,8 @@ http://www.mit.edu/~cuongng/Site/Publication_files/Tikhonov06.pdf
 http://blog.csdn.net/zouxy09/article/details/24971995
 
 # 协同过滤的ALS算法
+
+## 协同过滤概述
 
 >注：最近研究商品推荐系统的算法，因此，Andrew Ng讲义的内容，后续再写。
 
@@ -111,6 +135,8 @@ http://www.cnblogs.com/luchen927/archive/2012/02/01/2325360.html
 ALS算法是2008年以来，用的比较多的协同过滤算法。它已经集成到Spark的Mllib库中，使用起来比较方便。
 
 从协同过滤的分类来说，ALS算法属于User-Item CF，也叫做混合CF。它同时考虑了User和Item两个方面。
+
+## ALS算法原理
 
 用户和商品的关系，可以抽象为如下的三元组：<User,Item,Rating>。其中，Rating是用户对商品的评分，表征用户对该商品的喜好程度。
 
@@ -130,13 +156,15 @@ $$R_{m\times n}\approx X_{m\times k}Y_{n\times k}^T\tag{1}$$
 
 幸运的是，我们并不需要显式的定义这些关联维度，而只需要假定它们存在即可，因此这里的关联维度又被称为Latent factor。k的典型取值一般是20～200。
 
+这种方法被称为概率矩阵分解算法(probabilistic matrix factorization，PMF)。ALS算法是PMF在数值计算方面的应用。
+
 为了使低秩矩阵X和Y尽可能地逼近R，需要最小化下面的平方误差损失函数：
 
 $$\min_{x_*,y_*}\sum_{u,i\text{ is known}}(r_{ui}-x_u^Ty_i)^2$$
 
 考虑到矩阵的稳定性问题，使用Tikhonov regularization，则上式变为：
 
-$$\min_{x_*,y_*}\sum_{u,i\text{ is known}}(r_{ui}-x_u^Ty_i)^2+\lambda(|x_u|^2+|y_i|^2)$$
+$$\min_{x_*,y_*}L(X,Y)=\min_{x_*,y_*}\sum_{u,i\text{ is known}}(r_{ui}-x_u^Ty_i)^2+\lambda(|x_u|^2+|y_i|^2)\tag{1}$$
 
 优化上式，得到训练结果矩阵$$X_{m\times k},Y_{n\times k}$$。预测时，将User和Item代入$$r_{ui}=x_u^Ty_i$$，即可得到相应的评分预测值。
 
@@ -146,44 +174,52 @@ ALS算法的缺点在于：
 
 2.无法准确评估新加入的用户或商品。这个问题也被称为Cold Start问题。
 
-参考论文：
+## ALS算法优化过程的推导
 
-《Large-scale Parallel Collaborative Filtering forthe Netflix Prize》
+公式1的直接优化是很困难的，因为X和Y的二元导数并不容易计算，这时可以使用类似坐标下降法的算法，固定其他维度，而只优化其中一个维度。
 
-《Collaborative Filtering for Implicit Feedback Datasets》
+对$$x_u$$求导，可得：
 
-其他参考：
+$$\begin{align}
+\frac{\partial L}{\partial x_u}&=-2\sum_i(r_{ui}-x_u^Ty_i)y_i+2\lambda x_u
+\\&=-2\sum_i(r_{ui}-y_i^Tx_u)y_i+2\lambda x_u
+\\&=-2Y^Tr_u+2Y^TYx_u+2\lambda x_u
+\end{align}$$
 
-http://www.jos.org.cn/html/2014/9/4648.htm
+令导数为0，可得：
 
-http://www.fuqingchuan.com/2015/03/812.html
+$$Y^TYx_u+\lambda Ix_u=Y^Tr_u\Rightarrow x_u=(Y^TY+\lambda I)^{-1}Y^Tr_u\tag{2}$$
 
-http://www.docin.com/p-714582034.html
+同理，对$$y_i$$求导，由于X和Y是对称的，因此可得类似的结论：
 
-http://www.tuicool.com/articles/fANvieZ
+$$y_i=(X^TX+\lambda I)^{-1}X^Tr_i\tag{3}$$
 
-http://www.68idc.cn/help/buildlang/ask/20150727462819.html
+因此整个优化迭代的过程为：
 
-# 主成分分析
+>Repeat until convergence {   
+><span style="white-space: pre">	</span>1.固定Y，使用公式2更新$$x_u$$。    
+><span style="white-space: pre">	</span>2.固定X，使用公式3更新$$y_i$$。    
+>}
 
-真实的训练数据总是存在各种各样的问题。
+一般使用RMSE（root-mean-square error）评估误差是否收敛，具体到这里就是：
 
-比如拿到一个汽车的样本，里面既有以“千米/每小时”度量的最大速度特征，也有“英里/小时”的最大速度特征。显然这两个特征有一个是多余的，我们需要找到，并去除这个冗余。
+$$RMSE=\sqrt{\frac{\sum(R-XY^T)^2}{N}}$$
 
-再比如，针对飞行员的调查，包含两个特征：飞行的技能水平和对飞行的爱好程度。由于飞行员是很难培训的，因此如果没有对飞行的热爱，也就很难学好飞行。所以这两个特征实际上是强相关的（strongly correlated）。如下图所示：
+其中，N为三元组<User,Item,Rating>的个数。当RMSE值变化很小时，就可以认为结果已经收敛。
 
-![](/images/article/PCA.png)
+因为这个迭代过程，交替优化X和Y，因此又被称作交替最小二乘算法（Alternating Least Squares，ALS）。
 
-我们的目标就是找出上图中所示的向量$$u_1$$。
+## 隐式反馈
 
-为了实现这两个目标，我们可以采用PCA（Principal components analysis）算法。
+用户给商品评分是个非常简单粗暴的用户行为。在实际的电商网站中，还有大量的用户行为，同样能够间接反映用户的喜好，比如用户的购买记录、搜索关键字，甚至是鼠标的移动。我们将这些间接用户行为称之为隐式反馈（implicit feedback），以区别于评分这样的显式反馈（explicit feedback）。
 
-## 数据的规则化处理
+隐式反馈有以下几个特点：
 
-在进行PCA算法之前，我们首先要对数据进行预处理，使之规则化。其方法如下：
+1.没有负面反馈（negative feedback）。用户一般会直接忽略不喜欢的商品，而不是给予负面评价。
 
->1.$$\mu=\frac{1}{m}\sum_{i=1}^mx^{(i)}$$   
->2.$$x^{(i)}:=x^{(i)}-\mu$$   
->3.$$$$   
->4.$$$$   
+2.隐式反馈包含大量噪声。比如，电视机在某一时间播放某一节目，然而用户已经睡着了，或者忘了换台。
+
+3.显式反馈表现的是用户的**喜好（preference）**，而隐式反馈表现的是用户的**信任（confidence）**。比如用户最喜欢的一般是电影，但观看时间最长的却是连续剧。大米购买的比较频繁，量也大，但未必是用户最想吃的食物。
+
+4.隐式反馈非常难以量化。
 

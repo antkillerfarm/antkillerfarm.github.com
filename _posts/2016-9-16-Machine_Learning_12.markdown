@@ -215,7 +215,7 @@ $$\|x\|_\infty=max(|x_1|,\dots,|x_n|)$$
 
 ![](/images/article/lp_ball.png)
 
-其中，0范数表示向量中非0元素的个数。
+其中，0范数表示向量中非0元素的个数。上图中的图形被称为$$l_p$$ ball。表征在同一范数条件下，具有相同距离的点的集合。
 
 范数满足如下不等式：
 
@@ -240,14 +240,3 @@ $$\begin{bmatrix} 400 & -201 \\-800 & 201 \end{bmatrix}\begin{bmatrix} x_1 \\ x_
 $$\begin{bmatrix} 401 & -201 \\-800 & 201 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}=\begin{bmatrix} 200 \\ -200 \end{bmatrix}$$
 
 则得到一个截然不同的解：$$x_1=40000,x_2=79800$$。
-
-当解集x对A和b的系数高度敏感，那么这样的方程组就是病态的 (ill-conditioned/ill-posed)。
-
-从上例的情况来看，矩阵的行向量$$\begin{bmatrix} 400 & -201\end{bmatrix}$$和$$\begin{bmatrix} -800 & 401\end{bmatrix}$$实际上是过于线性相关了，从而导致矩阵已经接近奇异矩阵（near singular matrix）。
-
-病态矩阵实际上就是奇异矩阵和近奇异矩阵的另一个说法。
-
-参见：
-
-http://www.cnblogs.com/daniel-D/p/3219802.html
-
