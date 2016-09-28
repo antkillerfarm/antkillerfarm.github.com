@@ -4,6 +4,37 @@ title:  机器学习（十四）——主成分分析
 category: technology 
 ---
 
+## ALS算法优化过程的推导（续）
+
+因此整个优化迭代的过程为：
+
+>Repeat until convergence {   
+><span style="white-space: pre">	</span>1.固定Y，使用公式2更新$$x_u$$。    
+><span style="white-space: pre">	</span>2.固定X，使用公式3更新$$y_i$$。    
+>}
+
+一般使用RMSE（root-mean-square error）评估误差是否收敛，具体到这里就是：
+
+$$RMSE=\sqrt{\frac{\sum(R-XY^T)^2}{N}}$$
+
+其中，N为三元组<User,Item,Rating>的个数。当RMSE值变化很小时，就可以认为结果已经收敛。
+
+因为这个迭代过程，交替优化X和Y，因此又被称作交替最小二乘算法（Alternating Least Squares，ALS）。
+
+## 隐式反馈
+
+用户给商品评分是个非常简单粗暴的用户行为。在实际的电商网站中，还有大量的用户行为，同样能够间接反映用户的喜好，比如用户的购买记录、搜索关键字，甚至是鼠标的移动。我们将这些间接用户行为称之为隐式反馈（implicit feedback），以区别于评分这样的显式反馈（explicit feedback）。
+
+隐式反馈有以下几个特点：
+
+1.没有负面反馈（negative feedback）。用户一般会直接忽略不喜欢的商品，而不是给予负面评价。
+
+2.隐式反馈包含大量噪声。比如，电视机在某一时间播放某一节目，然而用户已经睡着了，或者忘了换台。
+
+3.显式反馈表现的是用户的**喜好（preference）**，而隐式反馈表现的是用户的**信任（confidence）**。比如用户最喜欢的一般是电影，但观看时间最长的却是连续剧。大米购买的比较频繁，量也大，但未必是用户最想吃的食物。
+
+4.隐式反馈非常难以量化。
+
 ## ALS-WR
 
 针对隐式反馈，有ALS-WR算法（ALS with Weighted-$$\lambda$$-Regularization）。
@@ -77,6 +108,6 @@ http://www.68idc.cn/help/buildlang/ask/20150727462819.html
 
 >1.$$\mu=\frac{1}{m}\sum_{i=1}^mx^{(i)}$$   
 >2.$$x^{(i)}:=x^{(i)}-\mu$$   
->3.$$$$   
+>3.$$\sigma_j^2=\frac{1}{m}$$   
 >4.$$$$   
 

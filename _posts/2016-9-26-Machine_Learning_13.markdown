@@ -128,6 +128,43 @@ http://blog.csdn.net/zouxy09/article/details/24971995
 
 协同过滤是利用集体智慧的一个典型方法。要理解什么是协同过滤 (Collaborative Filtering,简称CF)，首先想一个简单的问题，如果你现在想看个电影，但你不知道具体看哪部，你会怎么做？大部分的人会问问周围的朋友，看看最近有什么好看的电影推荐，而我们一般更倾向于从口味比较类似的朋友那里得到推荐。这就是协同过滤的核心思想。
 
+如何找到相似的用户和物品呢？其实就是计算用户间以及物品间的相似度。以下是几种计算相似度的方法：
+
+欧氏距离：
+
+$$d(x,y)=\sqrt{\sum(x_i-y_i)^2},sim(x,y)=\frac{1}{1+d(x,y)}$$
+
+Cosine相似度：
+
+$$\cos(x,y)=\frac{\langle x,y\rangle}{|x||y|}=\frac{\sum x_iy_i}{\sqrt{\sum x_i^2}~\sqrt{\sum y_i^2}}$$
+
+皮尔逊相关系数（Pearson product-moment correlation coefficient，PPMCC or PCC）：
+
+$$\begin{align}
+p(x,y)&=\frac{cov(X,Y)}{\sigma_X\sigma_Y}=\frac{\operatorname{E}[XY]-\operatorname{E}[X]\operatorname{E}[Y]}{\sqrt{\operatorname{E}[X^2]-\operatorname{E}[X]^2}~\sqrt{\operatorname{E}[Y^2]- \operatorname{E}[Y]^2}}
+\\&=\frac{n\sum x_iy_i-\sum x_i\sum y_i}{\sqrt{n\sum x_i^2-(\sum x_i)^2}~\sqrt{n\sum y_i^2-(\sum y_i)^2}}
+\end{align}$$
+
+该系数由Karl Pearson发明。参见《机器学习（二）》中对Karl Pearson的简介。Fisher对该系数也有研究和贡献。
+
+参见：
+
+https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient
+
+Tanimoto系数：
+
+$$T(x,y)=\frac{|X\cap Y|}{|X\cup Y|}=\frac{|X\cap Y|}{|X|+|Y|-|X\cap Y|}=\frac{\sum x_iy_i}{\sqrt{\sum x_i^2}+\sqrt{\sum y_i^2}-\sum x_iy_i}$$
+
+该系数由Taffee T. Tanimoto于1960年提出。Tanimoto生平不详，从名字来看，应该是个日本人。在其他领域，它还有另一个名字Jaccard similarity coefficient。（两者的系数公式一致，但距离公式略有差异。）
+
+>Paul Jaccard，1868～1944，苏黎世联邦理工学院（ETH Zurich）博士，苏黎世联邦理工学院植物学教授。ETH Zurich可是出了24个诺贝尔奖得主的。
+
+参见：
+
+https://en.wikipedia.org/wiki/Jaccard_index
+
+## ALS算法原理
+
 http://www.cnblogs.com/luchen927/archive/2012/02/01/2325360.html
 
 上面的网页概括了ALS算法出现之前的协同过滤算法的概况。
@@ -135,8 +172,6 @@ http://www.cnblogs.com/luchen927/archive/2012/02/01/2325360.html
 ALS算法是2008年以来，用的比较多的协同过滤算法。它已经集成到Spark的Mllib库中，使用起来比较方便。
 
 从协同过滤的分类来说，ALS算法属于User-Item CF，也叫做混合CF。它同时考虑了User和Item两个方面。
-
-## ALS算法原理
 
 用户和商品的关系，可以抽象为如下的三元组：<User,Item,Rating>。其中，Rating是用户对商品的评分，表征用户对该商品的喜好程度。
 
@@ -194,32 +229,4 @@ $$Y^TYx_u+\lambda Ix_u=Y^Tr_u\Rightarrow x_u=(Y^TY+\lambda I)^{-1}Y^Tr_u\tag{2}$
 
 $$y_i=(X^TX+\lambda I)^{-1}X^Tr_i\tag{3}$$
 
-因此整个优化迭代的过程为：
-
->Repeat until convergence {   
-><span style="white-space: pre">	</span>1.固定Y，使用公式2更新$$x_u$$。    
-><span style="white-space: pre">	</span>2.固定X，使用公式3更新$$y_i$$。    
->}
-
-一般使用RMSE（root-mean-square error）评估误差是否收敛，具体到这里就是：
-
-$$RMSE=\sqrt{\frac{\sum(R-XY^T)^2}{N}}$$
-
-其中，N为三元组<User,Item,Rating>的个数。当RMSE值变化很小时，就可以认为结果已经收敛。
-
-因为这个迭代过程，交替优化X和Y，因此又被称作交替最小二乘算法（Alternating Least Squares，ALS）。
-
-## 隐式反馈
-
-用户给商品评分是个非常简单粗暴的用户行为。在实际的电商网站中，还有大量的用户行为，同样能够间接反映用户的喜好，比如用户的购买记录、搜索关键字，甚至是鼠标的移动。我们将这些间接用户行为称之为隐式反馈（implicit feedback），以区别于评分这样的显式反馈（explicit feedback）。
-
-隐式反馈有以下几个特点：
-
-1.没有负面反馈（negative feedback）。用户一般会直接忽略不喜欢的商品，而不是给予负面评价。
-
-2.隐式反馈包含大量噪声。比如，电视机在某一时间播放某一节目，然而用户已经睡着了，或者忘了换台。
-
-3.显式反馈表现的是用户的**喜好（preference）**，而隐式反馈表现的是用户的**信任（confidence）**。比如用户最喜欢的一般是电影，但观看时间最长的却是连续剧。大米购买的比较频繁，量也大，但未必是用户最想吃的食物。
-
-4.隐式反馈非常难以量化。
 
