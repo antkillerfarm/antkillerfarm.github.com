@@ -260,9 +260,41 @@ http://www.cnblogs.com/fengzheng/p/4974509.html
 
 http://hbase.apache.org/
 
+`sbin/start-dfs.sh`
+
+`bin/start-hbase.sh`
+
+http://www.cnblogs.com/cenyuhai/
+
+这个blog专注于hadoop、hbase、spark。
+
 # Spark
 
 http://spark.apache.org/
+
+## RDD
+
+Resilient Distributed Datasets是一个只读的，可分区的分布式数据集，这个数据集的全部或部分可以缓存在内存中，在多次计算间重用。RDD克服了传统的MapReduce所进行大量的磁盘IO操作。
+
+我的理解：RDD将计算包括中间结果，全部放到内存中，以节省磁盘IO操作。
+
+http://www.infoq.com/cn/articles/spark-core-rdd
+
+http://f.dataguru.cn/thread-475874-1-1.html
+
+## DataFrame和DataSet
+
+http://www.jianshu.com/p/c0181667daa0
+
+http://www.csdn.net/article/2015-02-17/2823997
+
+## Spark部署
+
+Spark没有服务程序，因此无须部署，只需要在集群中的某台机器上安装spark，进行任务提交即可。
+
+参见：
+
+http://blog.csdn.net/book_mmicky/article/details/25714287
 
 # Parquet
 

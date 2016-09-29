@@ -147,6 +147,12 @@ p(x,y)&=\frac{cov(X,Y)}{\sigma_X\sigma_Y}=\frac{\operatorname{E}[XY]-\operatorna
 
 该系数由Karl Pearson发明。参见《机器学习（二）》中对Karl Pearson的简介。Fisher对该系数也有研究和贡献。
 
+![](/images/article/pearson.png)
+
+如上图所示，Cosine相似度计算的是两个样本点和坐标原点之间的直线的夹角，而PCC计算的是两个样本点和数学期望点之间的直线的夹角。
+
+PCC能够有效解决不同用户评分尺度不一的问题。
+
 参见：
 
 https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient
@@ -228,5 +234,4 @@ $$Y^TYx_u+\lambda Ix_u=Y^Tr_u\Rightarrow x_u=(Y^TY+\lambda I)^{-1}Y^Tr_u\tag{2}$
 同理，对$$y_i$$求导，由于X和Y是对称的，因此可得类似的结论：
 
 $$y_i=(X^TX+\lambda I)^{-1}X^Tr_i\tag{3}$$
-
 
