@@ -108,6 +108,6 @@ http://www.68idc.cn/help/buildlang/ask/20150727462819.html
 
 >1.$$\mu=\frac{1}{m}\sum_{i=1}^mx^{(i)}$$   
 >2.$$x^{(i)}:=x^{(i)}-\mu$$   
->3.$$\sigma_j^2=\frac{1}{m}$$   
->4.$$$$   
+>3.$$\sigma_j^2=\frac{1}{m}\sum_i(x^{(i)})^2$$   
+>4.$$x_j^{(i)}:=x_j^{(i)}/\sigma_j$$   
 

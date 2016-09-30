@@ -226,9 +226,11 @@ PDF：Probability distribution function
 
 # Partial Least Squares Discriminant Analysis
 
-# ALS（Alternating Least Squares）
+GBRT这个算法有很多名字，但都是同一个算法： GBRT (Gradient BoostRegression Tree) 渐进梯度回归树 GBDT (Gradient BoostDecision Tree) 渐进梯度决策树 MART (MultipleAdditive Regression Tree) 多决策回归树 Tree Net决策树网络
 
-http://www.cnblogs.com/zwCHAN/p/4269027.html
+http://blog.csdn.net/u010691898/article/details/38292937
+
+http://www.cs.cmu.edu/~tom/
 
 # scrapy
 
