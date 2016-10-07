@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Emacs, Vi, Lisp, Logo, 小众语言集中营
+title:  Emacs, Vi, Logo, 小众语言集中营
 category: technology 
 ---
 
@@ -132,6 +132,61 @@ C代码相关的内容：
 
 5)csope中的initial directory表示全局的搜索目录。如果在同一个emacs实例中，打开多个工程的代码时，不要设置这个initial directory，否则所有工程代码都将在这个路径下搜索，而不是在各自的路径下搜索了。
 
+## GNU Global+emacs
+
+2016.10
+
+最近由于编写java代码，原有的cscope已经不满足需要了。上网一阵找寻，终于找到了解决方案。
+
+GNU GLOBAL是GNU项目提供的源代码标记系统。默认支持C、C++、Yacc、Java、PHP4、assembly等6种编程语言，并可通过插件支持多达25种编程语言。
+
+其官网为：
+
+https://www.gnu.org/software/global/
+
+插件主要基于Pygments和Exuberant Ctags项目，网址为：
+
+https://github.com/yoshizow/global-pygments-plugin
+
+http://ctags.sourceforge.net/
+
+安装步骤：
+
+1.安装GNU GLOBAL。
+
+`sudo apt-get install global`
+
+GLOBAL中虽然有gtags.el，然而并不好用。这一点官网上也认为debian的包太老了。
+
+2.安装ggtags。
+
+ggtags是GNU GLOBAL的一个前端。
+
+其官网：
+
+https://github.com/leoliu/ggtags
+
+安装方法：
+
+`M-x package-install ggtags`
+
+Emacs自从24.1之后，也开始支持软件仓库的概念。这对于一个有30年历史的老软件来说，实属不易。
+
+常见的软件仓库地址：
+
+https://stable.melpa.org/
+
+3.配置ggtags。
+
+在配置文件~/.emacs中添加：
+
+{% highlight lisp %}
+(add-hook 'c-mode-common-hook
+          (lambda ()
+            (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
+              (ggtags-mode 1))))
+{% endhighlight %}
+
 ## scratch缓冲区
 
 这是每次启动Emacs时，默认打开的几个缓冲区之一。正如缓冲区最上面的说明所说的，它的目的有两个：
@@ -159,26 +214,6 @@ C代码相关的内容：
 # Vi
 
 dd 删除整行
-
-# Lisp & GUI
-
-客观的说，目前开源领域并没有很好用的和Lisp配套的GUI工具集，几个开源实现要么完工度不高，要么过于古老，好几个的样式都是90年代中期的风格。
-
-更有人指出，GUI基本上是OO语言的天下了，Lisp根本不适合干这个事。
-
-不过事实的真相是：
-
-1.最早的交互式GUI生成工具是用Lisp写的。没错，就是苹果乔教主旗下的Interface Builder，时间是1986年。
-
-2.PTC公司的CAD系统是用Lisp和C++写的。
-
-3.苹果公司早期使用MCL作为GUI开发语言（from 1984），因此那个时代有大量的程序是用Lisp写的。包括Mac上最早的MS Word。Objective-C是乔教主到NextStep之后的事，最初和苹果并无交集。
-
-4.由于Mac在艺术家群体的流行。很多音乐软件是用Lisp写的，包括Open Music, PWGL, ScoreCleaner, Igor Engraver和Symbolic Composer等。
-
-5.有家叫做LispWorks（From 1989）的公司提供对Lisp GUI的商业支持，而且提供的界面并不逊色于GTK、Qt等当代GUI工具集。上面提到的音乐软件基本上都是基于LispWorks的。
-
-综上可见，Lisp开发GUI不是可能性的问题，而是一个有待重新发掘的问题。
 
 # Logo语言的安装
 

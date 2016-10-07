@@ -151,7 +151,7 @@ p(x,y)&=\frac{cov(X,Y)}{\sigma_X\sigma_Y}=\frac{\operatorname{E}[XY]-\operatorna
 
 如上图所示，Cosine相似度计算的是两个样本点和坐标原点之间的直线的夹角，而PCC计算的是两个样本点和数学期望点之间的直线的夹角。
 
-PCC能够有效解决不同用户评分尺度不一的问题。
+PCC能够有效解决，在协同过滤数据集中，不同用户评分尺度不一的问题。
 
 参见：
 
@@ -187,6 +187,8 @@ ALS算法是2008年以来，用的比较多的协同过滤算法。它已经集�
 
 另一方面，一个用户也不可能给所有商品评分，因此，R矩阵注定是个稀疏矩阵。矩阵中所缺失的评分，又叫做missing item。
 
+![](/images/article/ALS.png)
+
 针对这样的特点，我们可以假设用户和商品之间存在若干关联维度（比如用户年龄、性别、受教育程度和商品的外观、价格等），我们只需要将R矩阵投射到这些维度上即可。这个投射的数学表示是：
 
 $$R_{m\times n}\approx X_{m\times k}Y_{n\times k}^T\tag{1}$$
@@ -194,6 +196,8 @@ $$R_{m\times n}\approx X_{m\times k}Y_{n\times k}^T\tag{1}$$
 这里的$$\approx$$表明这个投射只是一个近似的空间变换。
 
 一般情况下，k的值远小于n和m的值，从而达到了数据降维的目的。
+
+![](/images/article/ALS_2.png)
 
 幸运的是，我们并不需要显式的定义这些关联维度，而只需要假定它们存在即可，因此这里的关联维度又被称为Latent factor。k的典型取值一般是20～200。
 
@@ -208,6 +212,10 @@ $$\min_{x_*,y_*}\sum_{u,i\text{ is known}}(r_{ui}-x_u^Ty_i)^2$$
 $$\min_{x_*,y_*}L(X,Y)=\min_{x_*,y_*}\sum_{u,i\text{ is known}}(r_{ui}-x_u^Ty_i)^2+\lambda(|x_u|^2+|y_i|^2)\tag{1}$$
 
 优化上式，得到训练结果矩阵$$X_{m\times k},Y_{n\times k}$$。预测时，将User和Item代入$$r_{ui}=x_u^Ty_i$$，即可得到相应的评分预测值。
+
+![](/images/article/ALS_3.png)
+
+![](/images/article/ALS_4.png)
 
 ALS算法的缺点在于：
 
@@ -226,12 +234,4 @@ $$\begin{align}
 \\&=-2\sum_i(r_{ui}-y_i^Tx_u)y_i+2\lambda x_u
 \\&=-2Y^Tr_u+2Y^TYx_u+2\lambda x_u
 \end{align}$$
-
-令导数为0，可得：
-
-$$Y^TYx_u+\lambda Ix_u=Y^Tr_u\Rightarrow x_u=(Y^TY+\lambda I)^{-1}Y^Tr_u\tag{2}$$
-
-同理，对$$y_i$$求导，由于X和Y是对称的，因此可得类似的结论：
-
-$$y_i=(X^TX+\lambda I)^{-1}X^Tr_i\tag{3}$$
 

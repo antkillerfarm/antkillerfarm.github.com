@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NoSQL, GStreamer（三）, Java
+title:  NoSQL, GStreamer（三）, Java, Lisp
 category: technology 
 ---
 
@@ -188,4 +188,27 @@ http://blog.csdn.net/nisaijie/article/details/5692901
 https://github.com/spring-guides/gs-rest-service
 
 http://www.mkyong.com/spring/quick-start-maven-spring-example/
+
+# Lisp & GUI
+
+客观的说，目前开源领域并没有很好用的和Lisp配套的GUI工具集，几个开源实现要么完工度不高，要么过于古老，好几个的样式都是90年代中期的风格。
+
+更有人指出，GUI基本上是OO语言的天下了，Lisp根本不适合干这个事。
+
+不过事实的真相是：
+
+1.最早的交互式GUI生成工具是用Lisp写的。没错，就是苹果乔教主旗下的Interface Builder，时间是1986年。
+
+2.PTC公司的CAD系统是用Lisp和C++写的。
+
+3.苹果公司早期使用MCL作为GUI开发语言（from 1984），因此那个时代有大量的程序是用Lisp写的。包括Mac上最早的MS Word。Objective-C是乔教主到NextStep之后的事，最初和苹果并无交集。
+
+4.由于Mac在艺术家群体的流行。很多音乐软件是用Lisp写的，包括Open Music, PWGL, ScoreCleaner, Igor Engraver和Symbolic Composer等。
+
+5.有家叫做LispWorks（From 1989）的公司提供对Lisp GUI的商业支持，而且提供的界面并不逊色于GTK、Qt等当代GUI工具集。上面提到的音乐软件基本上都是基于LispWorks的。
+
+综上可见，Lisp开发GUI不是可能性的问题，而是一个有待重新发掘的问题。
+
+
+
 

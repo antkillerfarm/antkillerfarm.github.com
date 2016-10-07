@@ -323,6 +323,18 @@ graphviz包括了以下工具：
 
 还有个叫smyrna的工具，据称使用3D加速，可处理10000个结点的图。但是ubuntu下没有方便的安装方式。
 
+## Android手机MTP连接Ubuntu
+
+`sudo add-apt-repository ppa:webupd8team/unstable`
+
+`sudo apt-get update`
+
+`sudo apt-get install go-mtpfs`
+
+`go-mtpfs /media/MyAndroid`
+
+`fusermount -u /media/MyAndroid`
+
 ## 文件校验和
 
 计算文件校验和，一般采用MD5和SHA算法。在Ubuntu中，这些算法的命令包括：md5sum、sha1sum(160-bit) ,sha224sum(224-bit) ,sha256sum(256-bit),sha384sum(384-bit),sha512sum(512-bit)等。
@@ -365,5 +377,4 @@ http://mozilla.com.cn/addon/76-pagesaver/
 ╮(╯_╰)╭
 
 (^ω^)
-
 

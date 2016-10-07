@@ -248,6 +248,10 @@ $$a\cdot b=|a||b|\cos \theta$$
 
 $$a_1=|a|\cos \theta\hat b=|a|\frac{a\cdot b}{|a||b|}\frac{b}{|b|}=\frac{a\cdot b}{|b|^2}b=\frac{a\cdot b}{b\cdot b}b=\frac{\langle a,b\rangle}{\langle b,b\rangle}b$$
 
+特别的，当b为单位向量时：
+
+$$a_1=\langle a,b\rangle\tag{3}$$
+
 我们定义投影符号如下：
 
 $$\mathrm{proj}_{\mathbf{e}}\mathbf{a}

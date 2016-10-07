@@ -154,7 +154,15 @@ http://www.deeplearningbook.org/
 
 https://zhuanlan.zhihu.com/p/22038289
 
-斯坦福CS231n课程翻译。
+斯坦福CS231n课程（卷积神经网络，CNN）翻译。
+
+http://www.zanmel.com/2015/12/14/10-great-datasets-on-movies/
+
+最知名的电影数据集。
+
+http://ufldl.stanford.edu/wiki/index.php/Main_Page
+
+斯坦福的《Unsupervised Feature Learning and Deep Learning》教程，该网站本身就有中文翻译。
 
 ## 使用细节
 
@@ -290,6 +298,8 @@ http://www.jianshu.com/p/c0181667daa0
 
 http://www.csdn.net/article/2015-02-17/2823997
 
+https://www.iteblog.com/pdf/1675
+
 ## Spark部署
 
 Spark没有服务程序，因此无须部署，只需要在集群中的某台机器上安装spark，进行任务提交即可。
@@ -297,6 +307,22 @@ Spark没有服务程序，因此无须部署，只需要在集群中的某台机
 参见：
 
 http://blog.csdn.net/book_mmicky/article/details/25714287
+
+## 基本统计操作
+
+1.统计列中不相同值的个数。
+
+方法一：
+
+比如在观众观影的表格中，找出观众的数量或电影的数量。
+
+`Dataset<Row> df = session.sql("SELECT userId FROM Movie group by userId");//df.count() is the count of different values`
+
+方法二：
+
+Spark中有个org.apache.spark.sql.functions类，专门针对数据集进行各种运算操作。其中的countDistinct方法可实现该功能。片段示例如下：
+
+`Dataset<Row> df2 = df.agg(functions.countDistinct("userId"));df2.show();`
 
 # Parquet
 
