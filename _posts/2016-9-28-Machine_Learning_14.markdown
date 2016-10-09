@@ -133,11 +133,39 @@ http://www.68idc.cn/help/buildlang/ask/20150727462819.html
 
 上图所示是5个样本在不同向量上的投影情况。其中，X表示样本点，而黑点表示样本在u上的投影。
 
-很显然，左图中的u就是我们需要求解的主成分的方向。和右图相比，左图中样本在u上的投影点，比较分散，也就是投影点之间的方差较大。
+很显然，左图中的u就是我们需要求解的主成分的方向。和右图相比，左图中各样本点x在u上的投影点比较分散，也就是投影点之间的方差较大。
 
 由《机器学习（十一）》一节的公式3，可知样本点x在单位向量u上的投影为：$$x^Tu$$。
 
 因此，这个问题的代价函数为：
 
-$$\frac{1}{m}$$
+$$\begin{align}
+&\frac{1}{m}\sum_{i=1}^m\left(x^{(i)^T}u\right)^2=\frac{1}{m}\sum_{i=1}^m\left(x^{(i)^T}u\right)^T\left(x^{(i)^T}u\right)
+\\&=\frac{1}{m}\sum_{i=1}^mu^Tx^{(i)}x^{(i)^T}u=u^T\left(\frac{1}{m}\sum_{i=1}^mx^{(i)}x^{(i)^T}\right)u=u^T\Sigma u
+\end{align}$$
+
+即：
+
+$$\begin{align}
+&\operatorname{max}_{u}& & u^T\Sigma u\\
+&\operatorname{s.t.}& & u^Tu=1
+\end{align}$$
+
+其拉格朗日函数为：
+
+$$\mathcal{L}(u)=u^T\Sigma u+\beta(u^Tu-1)$$
+
+对u求导可得：
+
+$$\nabla_u\mathcal{L}(u)=\Sigma u+\beta u$$
+
+这里的矩阵求导步骤，参见《机器学习（九）》中的公式5.12。
+
+从上式等于0可知，当$$\beta$$为$$\Sigma$$的特征值的时候，该代价函数得到最优解。
+
+
+
+
+
+
 

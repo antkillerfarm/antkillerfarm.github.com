@@ -4,7 +4,29 @@ title:  机器学习（十）——因子分析
 category: technology 
 ---
 
-## 利用多元高斯分布密度函数计算积分的技巧（续）
+## 利用多元高斯分布密度函数计算积分的技巧
+
+$$I(A,b,c)=\int_x\exp\left(-\frac{1}{2}(x^TAx+x^Tb+c)\right)\mathrm{d}x$$
+
+其中A为对称正定矩阵，b为向量。对于上面这样的积分，可以使用“完全配方法”（completion-of-squares）的数学技巧求解。
+
+因为
+
+$$x^TAx+x^Tb+c=(x-h)^TA(x-h)+k$$
+
+其中$$h=-\frac{A^{-1}b}{2},k=c-\frac{b^TA^{-1}b}{4}$$。
+
+所以
+
+$$\begin{align}
+I(A,b,c)&=\int_x\exp\left(-\frac{1}{2}((x - h)^TA(x - h)+k)\right)\mathrm{d}x
+\\&=\int_x\exp\left(-\frac{1}{2}(x - h)^TA(x - h)-k/2\right)\mathrm{d}x
+\\&=\exp(-k/2)\cdot\int_x\exp\left(-\frac{1}{2}(x - h)^TA(x - h)\right)\mathrm{d}x
+\end{align}$$
+
+令$$\mu=h,\Sigma=A^{-1}$$，则：
+
+$$I(A,b,c)=\frac{(2\pi)^{n/2}\lvert\Sigma\rvert^{1/2}}{\exp(k/2)}\cdot\int_x\frac{1}{(2\pi)^{n/2}\lvert\Sigma\rvert^{1/2}}\exp\left(-\frac{1}{2}(x-\mu)^T\Sigma^{-1}(x-\mu)\right)\mathrm{d}x$$
 
 公式右侧的被积分函数，正好是多元高斯分布密度函数，因此该积分值为1。于是：
 
@@ -227,19 +249,5 @@ $$\begin{align}
 
 $$\nabla_\Lambda\sum_{i=1}^m-E\left[\frac{1}{2}(x^{(i)}-\mu-\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu-\Lambda z^{(i)})\right]\tag{4}$$
 
-为了便于以下的讨论，我们引入符号“tr”，该符号表示矩阵的主对角线元素之和，也被叫做矩阵的“迹”（Trace）。按照通常的写法，在不至于误会的情况下，tr后面的括号会被省略。
 
-tr的其他性质还包括：
-
-$$\operatorname{tr}\,a=a,a\in R$$
-
-$$\operatorname{tr}(A + B) = \operatorname{tr}(A) + \operatorname{tr}(B)$$
-
-$$\operatorname{tr}(cA) = c \operatorname{tr}(A)$$
-
-$$\operatorname{tr}(A) = \operatorname{tr}(A^{\mathrm T})$$
-
-$$\operatorname{tr}(AB) = \operatorname{tr}(BA)$$
-
-$$\operatorname{tr}(ABCD) = \operatorname{tr}(BCDA) = \operatorname{tr}(CDAB) = \operatorname{tr}(DABC)$$
 
