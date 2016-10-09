@@ -4,7 +4,33 @@ title:  图像处理理论（三）——双边滤波, Steerable滤波, Gabor滤
 category: technology 
 ---
 
-## 双边滤波（Bilateral filter）
+## 拉普拉斯金字塔
+
+一般来说，由于PyrDown的过程会损失部分图像信息，因此通常情况下：
+
+$$G_i\neq PyrUp(PyrDown(G_i))$$
+
+为了使PyrUp和PyrDown可逆，这里引入拉普拉斯金字塔的概念。其定义如下：
+
+$$L_i=G_i-PyrUp(G_{i+1})=G_i-Up(G_{i+1})\otimes H_{5x5}$$
+
+其中UP操作是将源图像中位置为(x,y)的像素映射到目标图像的(2x+1,2y+1)位置，$$H_{5x5}$$表示5x5的高斯核。
+
+整个拉普拉斯金字塔运算过程可以通过下图来概括：
+
+![](/images/article/laplacian_pyramid.jpg)
+
+图中最左列和最右列都是高斯金字塔，中间一列是拉普拉斯金字塔。
+
+## Steerable金字塔
+
+将拉普拉斯金字塔中的高斯滤波函数，换成Steerable滤波函数即可。
+
+# 高斯背景
+
+# 霍夫变换
+
+# 双边滤波（Bilateral filter）
 
 双边滤波（Bilateral filter）是一种可以保边去噪的滤波器。其输出像素的值依赖于邻域像素的值的加权组合，即：
 
@@ -44,11 +70,11 @@ $$G_1^{\theta}=\cos\theta G_1^0+\sin\theta G_1^{\frac{\pi}{2}}$$
 
 参考：
 
-1991年IEEE论文：The Design and Use of Steerable Filters
+1991年IEEE论文：《The Design and Use of Steerable Filters》
 
-作者：William T. Freeman，斯坦福大学本科+斯坦福/康奈尔大学双料硕士+麻省理工学院博士，麻省理工学院教授。1987年，曾做为访问学者在太原理工大学待了一学年。不知道爱不爱吃刀削面(^ω^)
+>作者：William T. Freeman，斯坦福大学本科+斯坦福/康奈尔大学双料硕士+麻省理工学院博士，麻省理工学院教授。1987年，曾做为访问学者在太原理工大学待了一学年。不知道爱不爱吃刀削面(^ω^)
 
-Edward H. Adelson，密歇根大学博士，麻省理工学院教授。
+>Edward H. Adelson，密歇根大学博士，麻省理工学院教授。
 
 # Gabor滤波
 
@@ -78,7 +104,7 @@ $$g_{t,n}(x)=g(x-al)e^{2\pi ibnx},-\infty<l,n<+\infty$$
 
 这里的$$a,b$$为常数，$$g$$为$$L^2(R)$$(立方可积函数)，且$$\parallel g\parallel=1$$。
 
-注：Dennis Gabor（1900~1979），全息学创始人，1971年获诺贝尔物理学奖，著有《Theory of Communication》（1946）。
+>注：Dennis Gabor（1900~1979），全息学创始人，1971年获诺贝尔物理学奖，著有《Theory of Communication》（1946）。
 
 当$$g$$为高斯函数时，可得到Gabor wavelet：
 
@@ -160,7 +186,7 @@ Tight Frame有个重要特性：
 
 2000年以后，科学界对Gabor滤波的研究，主要集中在模式识别方面。比如图2就是参考文献4中给出的人脸识别方面的Gabor滤波效果图。其中，左边是原图，而右边是40组不同参数的Gabor滤波器所得到的滤波效果图。
 
-注：1幅原图变成40幅滤波效果图的过程，在数学上是个**升维**过程。在后处理阶段为了处理的方便，往往会进行数据**降维**，如参考文献5所示。
+>注：1幅原图变成40幅滤波效果图的过程，在数学上是个**升维**过程。在后处理阶段为了处理的方便，往往会进行数据**降维**，如参考文献5所示。
 
 从中还可以看出，虽然图1显示出一定的艺术处理效果，但大多数情况下，Gabor滤波所得的图像是如图2所示的极度扭曲而无明显意义的图片。Gabor滤波的真正用途，并不是给人看，而是给机器看。
 
@@ -176,19 +202,19 @@ Tight Frame有个重要特性：
 
 ## 参考
 
-1.1996年IEEE论文：Image Representation Using 2D Gabor Wavelets
+1.1996年IEEE论文：《Image Representation Using 2D Gabor Wavelets》
 
-作者：Tai Sing Lee，哈佛大学博士，卡内基梅隆大学教授。
+>作者：Tai Sing Lee，哈佛大学博士，卡内基梅隆大学教授。
 
-2.1988年IEEE论文：Complete Discrete 2-D Gabor Transforms by Neural Networks for Image Analysis and Compression
+2.1988年IEEE论文：《Complete Discrete 2-D Gabor Transforms by Neural Networks for Image Analysis and Compression》
 
-作者：JohnG. Daugman，哈佛大学博士，剑桥大学教授。
+>作者：JohnG. Daugman，哈佛大学博士，剑桥大学教授。
 
 3.http://blog.csdn.net/xiaowei_cqu/article/details/24745945
 
-4.Face recognition using Ada-Boosted Gabor features
+4.《Face recognition using Ada-Boosted Gabor features》
 
-作者：Peng Yang，Shiguang Shan，Wen Gao，Stan Z. Li，Dong Zhang，中科院计算所和微软亚洲研究院的几个小牛。
+>作者：Peng Yang，Shiguang Shan，Wen Gao，Stan Z. Li，Dong Zhang，中科院计算所和微软亚洲研究院的几个小牛。
 
 5.http://www.cnblogs.com/Jack-Lee/p/3649114.html
 
@@ -204,12 +230,12 @@ $$F(r,\sigma,\tau)=\frac{1}{Z}\cos\left(\frac{2\pi\tau r}{\sigma}\right)e^{-\fra
 
 其中，前13个是Schmid滤波器，后8个是Gabor滤波器。“核”图像中的白色部分，实际上就是该滤波器的带通部分。
 
-从中可以看出，Gabor滤波器有方向性，而Schmid滤波器是**各向同性**的。
+从中可以看出，Gabor滤波器有方向性，而Schmid滤波器是**各向同性**的环状滤波。
 
 ## 参考
 
-2010年IEEE论文：Constructing models for content-based image retrieval
+2010年IEEE论文：《Constructing models for content-based image retrieval》
 
-作者：Cordelia Schmid，女，卡尔斯鲁厄理工学院博士。现在INRIA（法国国家信息与自动化研究所）从事研究工作。
+>作者：Cordelia Schmid，女，卡尔斯鲁厄理工学院博士。现在INRIA（法国国家信息与自动化研究所）从事研究工作。
 
 

@@ -150,6 +150,8 @@ $$|\theta(s,t)-\theta(x,y)|\le 角度阀值A$$
 
 Canny边缘检测算子是John F.Canny于1986年开发出来的一个多级边缘检测算法。
 
+>John F. Canny，1958年生，澳大利亚计算机科学家。MIT博士，UCB教授。
+
 1.应用高斯滤波来平滑图像，目的是去除噪声。
 
 2.找寻图像的强度梯度（intensity gradients)
@@ -210,9 +212,8 @@ $$\rho(r)=\frac{C^2}{2}\left[1-\exp\left(-\left(\frac{r}{C}\right)^2\right)\righ
 
 Mahalanobis Distance是印度现代统计学之父Prasanta Chandra Mahalanobis于1936年提出的概念。
 
-注：Prasanta Chandra Mahalanobis，1893~1972，印度统计学家，剑桥大学博士，印度统计研究所创始人。
-
-印度的重点研究所一般叫做Institute of National Importance，共92所。Indian Statistical Institute是其中唯一一所和统计相关的研究所。教师255，学生375，这得是多精英的教育啊。其计算机科学专业排名印度第2。
+>注：Prasanta Chandra Mahalanobis，1893~1972，印度统计学家，剑桥大学博士，印度统计研究所创始人。   
+>印度的重点研究所一般叫做Institute of National Importance，共92所。Indian Statistical Institute是其中唯一一所和统计相关的研究所。教师255，学生375，这得是多精英的教育啊。其计算机科学专业排名印度第2。
 
 p维空间的两点（两个p维向量x,y）的欧氏距离定义为：
 
@@ -240,11 +241,11 @@ $$d_M(x,y)=\sqrt{(\frac{x_1-y_1}{s_1})^2+\dots+(\frac{x_p-y_p}{s_p})^2}=\sqrt{(x
 
 其中，$$D=diag(s_1^2,\dots,s_p^2)$$。
 
-注意：这里p维向量是正交基，否则的话，D将不是主对角线矩阵，而是一个普通的协方差矩阵。显然如果D为单位矩阵的话，马氏距离就变成了欧氏距离。
+>注意：这里p维向量是正交基，否则的话，D将不是主对角线矩阵，而是一个普通的协方差矩阵。显然如果D为单位矩阵的话，马氏距离就变成了欧氏距离。
 
 # 闵可夫斯基距离
 
-Hermann Minkowski（1864-1909），德国数学家，哥廷根大学数学教授，爱因斯坦的老师。
+>Hermann Minkowski（1864-1909），德国数学家，哥廷根大学数学教授，爱因斯坦的老师。
 
 Minkowski distance的定义：
 
@@ -291,30 +292,5 @@ $$g=f+\nabla^2f$$
 
 高斯金字塔是通过高斯平滑和亚采样获得一些列下采样图像，也就是说第K层高斯金字塔通过平滑、亚采样就可以获得K+1层高斯图像，高斯金字塔包含了一系列低通滤波器，其截至频率从上一层到下一层是以因子2逐渐增加，所以高斯金字塔可以跨越很大的频率范围。
 
-## 拉普拉斯金字塔
-
-一般来说，由于PyrDown的过程会损失部分图像信息，因此通常情况下：
-
-$$G_i\neq PyrUp(PyrDown(G_i))$$
-
-为了使PyrUp和PyrDown可逆，这里引入拉普拉斯金字塔的概念。其定义如下：
-
-$$L_i=G_i-PyrUp(G_{i+1})=G_i-Up(G_{i+1})\otimes H_{5x5}$$
-
-其中UP操作是将源图像中位置为(x,y)的像素映射到目标图像的(2x+1,2y+1)位置，$$H_{5x5}$$表示5x5的高斯核。
-
-整个拉普拉斯金字塔运算过程可以通过下图来概括：
-
-![](/images/article/laplacian_pyramid.jpg)
-
-图中最左列和最右列都是高斯金字塔，中间一列是拉普拉斯金字塔。
-
-## Steerable金字塔
-
-将拉普拉斯金字塔中的高斯滤波函数，换成Steerable滤波函数即可。
-
-# 高斯背景
-
-# 霍夫变换
 
 
