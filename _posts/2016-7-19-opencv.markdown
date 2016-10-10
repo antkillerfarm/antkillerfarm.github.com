@@ -310,6 +310,12 @@ http://blog.csdn.net/book_mmicky/article/details/25714287
 
 Spark虽然对Hadoop的版本有一定的要求，但是并不是太严重的问题。比如，目前最新的Spark 2.0.1（2016.10）仍然支持Hadoop 2.3，而后者是2014年2月出的版本。
 
+## Spark vs Hadoop
+
+http://www.bkjia.com/Linux/1076682.html
+
+https://www.dezyre.com/article/hadoop-mapreduce-vs-apache-spark-who-wins-the-battle/83
+
 ## 基本统计操作
 
 1.统计列中不相同值的个数。

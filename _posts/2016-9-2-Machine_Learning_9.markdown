@@ -198,11 +198,11 @@ $$\nabla_{A^T}\operatorname{tr}(ABA^TC)=B^TA^TC^T+BA^TC\tag{5.10}$$
 
 $$\nabla_A|A|=|A|(A^{-1})^T\tag{5.11}$$
 
-因为$$\mu_l^T\Sigma_l^{-1}\mu_l$$是实数，所以：
+因为$$\mu_l^T\Sigma_l^{-1}\mu_l$$是实数，由公式5.1可得：
 
 $$\nabla_{\mu_l}\mu_l^T\Sigma_l^{-1}\mu_l=\nabla_{\mu_l}\operatorname{tr}(\mu_l^T\Sigma_l^{-1}\mu_l)$$
 
-由公式5.8可得：
+由公式5.10可得：
 
 $$\nabla_{\mu_l}\operatorname{tr}(\mu_l^T\Sigma_l^{-1}\mu_l)=(\Sigma_l^{-1})^T(\mu_l^T)^TI^T+\Sigma_l^{-1}(\mu_l^T)^TI=(\Sigma_l^{-1})^T\mu_l+\Sigma_l^{-1}\mu_l$$
 
