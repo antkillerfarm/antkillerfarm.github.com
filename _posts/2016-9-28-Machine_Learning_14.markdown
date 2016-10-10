@@ -4,7 +4,41 @@ title:  机器学习（十四）——主成分分析
 category: technology 
 ---
 
-## ALS算法优化过程的推导（续）
+幸运的是，我们并不需要显式的定义这些关联维度，而只需要假定它们存在即可，因此这里的关联维度又被称为Latent factor。k的典型取值一般是20～200。
+
+这种方法被称为概率矩阵分解算法(probabilistic matrix factorization，PMF)。ALS算法是PMF在数值计算方面的应用。
+
+为了使低秩矩阵X和Y尽可能地逼近R，需要最小化下面的平方误差损失函数：
+
+$$\min_{x_*,y_*}\sum_{u,i\text{ is known}}(r_{ui}-x_u^Ty_i)^2$$
+
+考虑到矩阵的稳定性问题，使用Tikhonov regularization，则上式变为：
+
+$$\min_{x_*,y_*}L(X,Y)=\min_{x_*,y_*}\sum_{u,i\text{ is known}}(r_{ui}-x_u^Ty_i)^2+\lambda(|x_u|^2+|y_i|^2)\tag{1}$$
+
+优化上式，得到训练结果矩阵$$X_{m\times k},Y_{n\times k}$$。预测时，将User和Item代入$$r_{ui}=x_u^Ty_i$$，即可得到相应的评分预测值。
+
+![](/images/article/ALS_3.png)
+
+![](/images/article/ALS_4.png)
+
+ALS算法的缺点在于：
+
+1.它是一个离线算法。
+
+2.无法准确评估新加入的用户或商品。这个问题也被称为Cold Start问题。
+
+## ALS算法优化过程的推导
+
+公式1的直接优化是很困难的，因为X和Y的二元导数并不容易计算，这时可以使用类似坐标下降法的算法，固定其他维度，而只优化其中一个维度。
+
+对$$x_u$$求导，可得：
+
+$$\begin{align}
+\frac{\partial L}{\partial x_u}&=-2\sum_i(r_{ui}-x_u^Ty_i)y_i+2\lambda x_u
+\\&=-2\sum_i(r_{ui}-y_i^Tx_u)y_i+2\lambda x_u
+\\&=-2Y^Tr_u+2Y^TYx_u+2\lambda x_u
+\end{align}$$
 
 令导数为0，可得：
 
