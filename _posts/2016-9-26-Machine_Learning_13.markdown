@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（十三）——机器学习中的矩阵方法（3）病态矩阵、协同过滤的ALS算法
+title:  机器学习（十三）——机器学习中的矩阵方法（3）病态矩阵、协同过滤的ALS算法（1）
 category: technology 
 ---
 
@@ -163,6 +163,103 @@ https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient
 
 秩变量是一类不在乎值的具体大小，而只关心值的大小关系的统计量。
 
+<table>
+<tr>
+<th>$$X_i$$</th>
+<th>$$Y_i$$</th>
+<th>$$x_i$$</th>
+<th>$$y_i$$</th>
+<th>$$d_i$$</th>
+<th>$$d_i^2$$</th>
+</tr>
+<tr>
+<td>86</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>97</td>
+<td>20</td>
+<td>2</td>
+<td>6</td>
+<td>−4</td>
+<td>16</td>
+</tr>
+<tr>
+<td>99</td>
+<td>28</td>
+<td>3</td>
+<td>8</td>
+<td>−5</td>
+<td>25</td>
+</tr>
+<tr>
+<td>100</td>
+<td>27</td>
+<td>4</td>
+<td>7</td>
+<td>−3</td>
+<td>9</td>
+</tr>
+<tr>
+<td>101</td>
+<td>50</td>
+<td>5</td>
+<td>10</td>
+<td>−5</td>
+<td>25</td>
+</tr>
+<tr>
+<td>103</td>
+<td>29</td>
+<td>6</td>
+<td>9</td>
+<td>−3</td>
+<td>9</td>
+</tr>
+<tr>
+<td>106</td>
+<td>7</td>
+<td>7</td>
+<td>3</td>
+<td>4</td>
+<td>16</td>
+</tr>
+<tr>
+<td>110</td>
+<td>17</td>
+<td>8</td>
+<td>5</td>
+<td>3</td>
+<td>9</td>
+</tr>
+<tr>
+<td>112</td>
+<td>6</td>
+<td>9</td>
+<td>2</td>
+<td>7</td>
+<td>49</td>
+</tr>
+<tr>
+<td>113</td>
+<td>12</td>
+<td>10</td>
+<td>4</td>
+<td>6</td>
+<td>36</td>
+</tr>
+</table>
+
+如上表所示，$$X_i$$和$$Y_i$$是原始的变量值，$$x_i$$和$$y_i$$是rank之后的值，$$d_i=x_i-y_i$$。
+
+当$$X_i$$和$$Y_i$$没有重复值的时候，也可用如下公式计算相关系数：
+
+$$r_s = {1- \frac {6 \sum d_i^2}{n(n^2 - 1)}}$$
+
 >Charles Spearman，1863～1945，英国心理学家。这个人的经历比较独特，20岁从军，15年之后退役。然后，进入德国莱比锡大学读博，中间又被军队征召，参加了第二次布尔战争，因此，直到1906年才拿到博士学位。伦敦大学学院心理学教授。   
 >尽管他的学历和教职，都是心理学方面的。但他最大的贡献，却是在统计学领域。他也是因为在统计学方面的成就，得以当选皇家学会会员。   
 >话说那个时代的统计学大牛，除了Fisher之外，基本都是副业比主业强。只有Fisher，主业方面也是那么牛逼，不服不行啊。
@@ -173,7 +270,21 @@ https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient
 
 ### Kendall秩相关系数（Kendall rank correlation coefficient）
 
+对于秩变量对$$(x_i,y_i),(x_j,y_j)$$：
 
+$$(x_i-x_j)(y_i-y_j)\begin{cases}
+>0, & \text{concordant} \\
+=0, & \text{neither concordant nor discordant} \\
+<0, & \text{discordant} \\
+\end{cases}$$
+
+$$\tau = \frac{(\text{number of concordant pairs}) - (\text{number of discordant pairs})}{n (n-1) /2}$$
+
+>Sir Maurice George Kendall，1907~1983，英国统计学家。这个人职业生涯的大部分时间都是一个公务员，二战期间出任英国船运协会副总经理。1949年以后担任伦敦大学教授。
+
+参见：
+
+https://en.wikipedia.org/wiki/Kendall_rank_correlation_coefficient
 
 ### Tanimoto系数
 
@@ -196,25 +307,3 @@ http://www.cnblogs.com/luchen927/archive/2012/02/01/2325360.html
 ALS算法是2008年以来，用的比较多的协同过滤算法。它已经集成到Spark的Mllib库中，使用起来比较方便。
 
 从协同过滤的分类来说，ALS算法属于User-Item CF，也叫做混合CF。它同时考虑了User和Item两个方面。
-
-用户和商品的关系，可以抽象为如下的三元组：<User,Item,Rating>。其中，Rating是用户对商品的评分，表征用户对该商品的喜好程度。
-
-假设我们有一批用户数据，其中包含m个User和n个Item，则我们定义Rating矩阵$$R_{m\times n}$$，其中的元素$$r_{ui}$$表示第u个User对第i个Item的评分。
-
-在实际使用中，由于n和m的数量都十分巨大，因此R矩阵的规模很容易就会突破1亿项。这时候，传统的矩阵分解方法对于这么大的数据量已经是很难处理了。
-
-另一方面，一个用户也不可能给所有商品评分，因此，R矩阵注定是个稀疏矩阵。矩阵中所缺失的评分，又叫做missing item。
-
-![](/images/article/ALS.png)
-
-针对这样的特点，我们可以假设用户和商品之间存在若干关联维度（比如用户年龄、性别、受教育程度和商品的外观、价格等），我们只需要将R矩阵投射到这些维度上即可。这个投射的数学表示是：
-
-$$R_{m\times n}\approx X_{m\times k}Y_{n\times k}^T\tag{1}$$
-
-这里的$$\approx$$表明这个投射只是一个近似的空间变换。
-
-一般情况下，k的值远小于n和m的值，从而达到了数据降维的目的。
-
-![](/images/article/ALS_2.png)
-
-

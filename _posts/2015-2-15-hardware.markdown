@@ -163,3 +163,12 @@ NandFLASH强调更高的性能，更低的成本，更小的体积，更长的�
 
 http://www.ebaina.com/bbs/forum-97-3.html
 
+# Kettle
+
+ETL，是英文Extract-Transform-Load的缩写，用来描述将数据从来源端经过抽取（extract）、转换（transform）、加载（load）至目的端的过程。
+
+Kettle是一款国外开源的ETL工具。其官网为：
+
+http://community.pentaho.com/projects/data-integration/
+
+
