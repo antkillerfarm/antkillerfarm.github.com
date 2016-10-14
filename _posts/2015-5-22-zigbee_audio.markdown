@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Zigbee音频, 6LowPAN, IEEE 802, Hadoop
+title:  Zigbee音频, 6LowPAN, IEEE 802
 category: technology 
 ---
 

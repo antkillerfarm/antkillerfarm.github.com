@@ -32,9 +32,15 @@ R = \begin{bmatrix}
 
 ## 矩阵的特征值和特征向量
 
-设A是一个n阶方阵，$$\lambda$$是一个数，如果方程$$AX=\lambda X$$存在非零解向量，则称$$\lambda$$为A的一个特征值（Eigenvalue），相应的非零解向量X称为属于特征值$$\lambda$$的特征向量（eigenvector）。
+设A是一个n阶方阵，$$\lambda$$是一个数，如果方程$$Ax=\lambda x$$存在非零解向量，则称$$\lambda$$为A的一个特征值（Eigenvalue），相应的非零解向量x称为属于特征值$$\lambda$$的特征向量（eigenvector）。
 
-上面这个描述也可以记作：$$(A-\lambda I)x=0$$。这个公式通常用于，已知特征值，求解对应的特征向量。
+上面这个描述也可以记作：
+
+$$(A-\lambda I)x=0\tag{1}$$
+
+这个公式本身通常用于：已知特征值，求解对应的特征向量。
+
+其中，$$A-\lambda I$$被称为特征矩阵，而$$\lvert A-\lambda I \rvert=0$$被称为特征方程。求解特征方程可得到特征值。
 
 特征值和特征向量在有的书上也被称为本征值和本征向量。
 
@@ -53,6 +59,18 @@ http://course.tjau.edu.cn/xianxingdaishu/jiao/5.htm
 对矩阵A进行QR分解可得：$$A=QR$$
 
 因为Q是正交阵（$$Q^T=Q^{-1}$$），所以正交相似变换$$Q^TAQ$$和A有相同的特征值。
+
+证明：
+
+$$|Q^TAQ-\lambda I|=|Q^TAQ-Q^T(\lambda I)Q|=|Q^T(A-\lambda I)Q|\\=|Q^T|\cdot|A-\lambda I|\cdot|Q|=|Q^TQ|\cdot|A-\lambda I|=|I|\cdot|A-\lambda I|=|A-\lambda I|$$
+
+这里的证明，用到了行列式的如下性质：
+
+$$|I|=1$$
+
+$$|AB|=|A|\cdot|B|$$
+
+因为$$Q^TAQ$$和A的特征方程相同，所以它们的特征值也相同。证毕。
 
 由此产生如下迭代算法：
 
@@ -235,14 +253,3 @@ $$\|A\cdot B\|\le \|A\|\cdot\|B\|$$
 
 >注：矩阵范数要比向量范数复杂的多，还包含一些不可以由向量范数来诱导的范数，如Frobenius范数。而且只有极少数矩阵范数，可由简单表达式来表达。这里篇幅有限，不再赘述。
 
-## 病态矩阵
-
-现在有线性系统$$Ax = b$$：
-
-$$\begin{bmatrix} 400 & -201 \\-800 & 201 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}=\begin{bmatrix} 200 \\ -200 \end{bmatrix}$$
-
-很容易得到解为：$$x_1=-100,x_2=-200$$。如果在样本采集时存在一个微小的误差，比如，将 A矩阵的系数400改变成401：
-
-$$\begin{bmatrix} 401 & -201 \\-800 & 201 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}=\begin{bmatrix} 200 \\ -200 \end{bmatrix}$$
-
-则得到一个截然不同的解：$$x_1=40000,x_2=79800$$。
