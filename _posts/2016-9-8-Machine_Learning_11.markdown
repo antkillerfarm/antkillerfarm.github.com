@@ -6,7 +6,19 @@ category: technology
 
 ## 因子分析的EM估计（续）
 
-因为《机器学习（十）》的公式4中$$E[\cdot]$$部分的结果实际上是个实数，因此该公式可变形为：
+去掉和参数无关的部分后，可得：
+
+$$\begin{align}
+&\sum_{i=1}^mE\left[\log p(x^{(i)}\vert z^{(i)};\mu,\Lambda,\Psi)\right]
+\\&=\sum_{i=1}^mE\left[\frac{1}{(2\pi)^{n/2}\lvert\Psi\rvert^{1/2}}\exp\left(-\frac{1}{2}(x^{(i)}-\mu-\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu-\Lambda z^{(i)})\right)\right]
+\\&=\sum_{i=1}^mE\left[-\frac{1}{2}\log\lvert\Psi\rvert-\frac{n}{2}\log(2\pi)-\frac{1}{2}(x^{(i)}-\mu-\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu-\Lambda z^{(i)})\right]
+\end{align}$$
+
+去掉和$$\Lambda$$无关的部分，并求导可得：
+
+$$\nabla_\Lambda\sum_{i=1}^m-E\left[\frac{1}{2}(x^{(i)}-\mu-\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu-\Lambda z^{(i)})\right]\tag{1}$$
+
+因为公式1中$$E[\cdot]$$部分的结果实际上是个实数，因此该公式可变形为：
 
 $$\nabla_\Lambda\sum_{i=1}^m-E\left[\operatorname{tr}\left(\frac{1}{2}(x^{(i)}-\mu-\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu-\Lambda z^{(i)})\right)\right]$$
 
@@ -29,7 +41,7 @@ $$\begin{align}
 &\nabla_\Lambda\sum_{i=1}^m-E\left[\operatorname{tr}\left(\frac{1}{2}\left[(\Lambda z^{(i)})^T\Psi^{-1}\Lambda z^{(i)}-(x^{(i)}-\mu)^T\Psi^{-1}\Lambda z^{(i)}-(\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu)\right]\right)\right]
 \\&\begin{split}=\nabla_\Lambda\sum_{i=1}^m-E\left[\frac{1}{2}\operatorname{tr}\left((\Lambda z^{(i)})^T\Psi^{-1}\Lambda z^{(i)}\right)-\frac{1}{2}\operatorname{tr}\left((x^{(i)}-\mu)^T\Psi^{-1}\Lambda z^{(i)}\right)
 \\-\frac{1}{2}\operatorname{tr}\left((\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu)\right)\right]\end{split}
-\\&=\sum_{i=1}^m\nabla_\Lambda E\left[-\frac{1}{2}\operatorname{tr}\left(\Lambda^T \Psi^{-1}\Lambda z^{(i)}(z^{(i)})^T\right)+\operatorname{tr}\left(\Lambda^T \Psi^{-1}(x^{(i)}-\mu)(z^{(i)})^T\right)\right]\tag{1}
+\\&=\sum_{i=1}^m\nabla_\Lambda E\left[-\frac{1}{2}\operatorname{tr}\left(\Lambda^T \Psi^{-1}\Lambda z^{(i)}(z^{(i)})^T\right)+\operatorname{tr}\left(\Lambda^T \Psi^{-1}(x^{(i)}-\mu)(z^{(i)})^T\right)\right]\tag{2}
 \end{align}$$
 
 因为：
@@ -43,7 +55,7 @@ $$\begin{align}
 \\&=z^{(i)}(z^{(i)})^T\Lambda^T \Psi^{-1}+((z^{(i)})^T)^T(z^{(i)})^T\Lambda^T\Psi^{-1}=2z^{(i)}(z^{(i)})^T\Lambda^T \Psi^{-1}
 \end{align}$$
 
-代入公式1，可得：
+代入公式2，可得：
 
 $$\sum_{i=1}^mE\left[-\Psi^{-1}\Lambda z^{(i)}(z^{(i)})^T+\Psi^{-1}(x^{(i)}-\mu)(z^{(i)})^T\right]$$
 
@@ -53,7 +65,7 @@ $$\sum_{i=1}^m\Lambda E_{z^{(i)}\sim Q_i}\left[z^{(i)}(z^{(i)})^T\right]=\sum_{i
 
 因此：
 
-$$\Lambda=\left(\sum_{i=1}^m(x^{(i)}-\mu)E_{z^{(i)}\sim Q_i}\left[(z^{(i)})^T\right]\right)\left(\sum_{i=1}^m E_{z^{(i)}\sim Q_i}\left[z^{(i)}(z^{(i)})^T\right]\right)^{-1}\tag{2}$$
+$$\Lambda=\left(\sum_{i=1}^m(x^{(i)}-\mu)E_{z^{(i)}\sim Q_i}\left[(z^{(i)})^T\right]\right)\left(\sum_{i=1}^m E_{z^{(i)}\sim Q_i}\left[z^{(i)}(z^{(i)})^T\right]\right)^{-1}\tag{3}$$
 
 因为：
 
@@ -69,7 +81,7 @@ $$E_{z^{(i)}\sim Q_i}\left[(z^{(i)})^T\right]=\mu_{z^{(i)}\vert x^{(i)}}^T$$
 
 $$E_{z^{(i)}\sim Q_i}\left[z^{(i)}(z^{(i)})^T\right]=\mu_{z^{(i)}\vert x^{(i)}}\mu_{z^{(i)}\vert x^{(i)}}^T+\Sigma_{z^{(i)}\vert x^{(i)}}$$
 
-将上式代入公式2，可得：
+将上式代入公式3，可得：
 
 $$\Lambda=\left(\sum_{i=1}^m(x^{(i)}-\mu)\mu_{z^{(i)}\vert x^{(i)}}^T\right)\left(\sum_{i=1}^m \left(\mu_{z^{(i)}\vert x^{(i)}}\mu_{z^{(i)}\vert x^{(i)}}^T+\Sigma_{z^{(i)}\vert x^{(i)}}\right)\right)^{-1}$$
 
@@ -250,24 +262,11 @@ $$a_1=|a|\cos \theta\hat b=|a|\frac{a\cdot b}{|a||b|}\frac{b}{|b|}=\frac{a\cdot 
 
 特别的，当b为单位向量时：
 
-$$a_1=\langle a,b\rangle\tag{3}$$
+$$a_1=\langle a,b\rangle\tag{4}$$
 
 我们定义投影符号如下：
 
 $$\mathrm{proj}_{\mathbf{e}}\mathbf{a}
 = \frac{\left\langle\mathbf{e},\mathbf{a}\right\rangle}{\left\langle\mathbf{e},\mathbf{e}\right\rangle}\mathbf{e}$$
 
-令$$A=[\mathbf{a}_1, \cdots, \mathbf{a}_n]$$，其中$$a_i$$为列向量。则：
-
-$$\begin{align}
- \mathbf{u}_1 &= \mathbf{a}_1,
-  & \mathbf{e}_1 &= {\mathbf{u}_1 \over \|\mathbf{u}_1\|} \\
- \mathbf{u}_2 &= \mathbf{a}_2-\mathrm{proj}_{\mathbf{u}_1}\,\mathbf{a}_2,
-  & \mathbf{e}_2 &= {\mathbf{u}_2 \over \|\mathbf{u}_2\|} \\
- \mathbf{u}_3 &= \mathbf{a}_3-\mathrm{proj}_{\mathbf{u}_1}\,\mathbf{a}_3-\mathrm{proj}_{\mathbf{u}_2}\,\mathbf{a}_3,
-  & \mathbf{e}_3 &= {\mathbf{u}_3 \over \|\mathbf{u}_3\|} \\
- & \vdots &&\vdots \\
- \mathbf{u}_k &= \mathbf{a}_k-\sum_{j=1}^{k-1}\mathrm{proj}_{\mathbf{u}_j}\,\mathbf{a}_k,
-  &\mathbf{e}_k &= {\mathbf{u}_k\over\|\mathbf{u}_k\|}
-\end{align}$$
 

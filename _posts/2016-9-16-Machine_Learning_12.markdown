@@ -6,6 +6,20 @@ category: technology
 
 ## QR分解（续）
 
+令$$A=[\mathbf{a}_1, \cdots, \mathbf{a}_n]$$，其中$$a_i$$为列向量。则：
+
+$$\begin{align}
+ \mathbf{u}_1 &= \mathbf{a}_1,
+  & \mathbf{e}_1 &= {\mathbf{u}_1 \over \|\mathbf{u}_1\|} \\
+ \mathbf{u}_2 &= \mathbf{a}_2-\mathrm{proj}_{\mathbf{u}_1}\,\mathbf{a}_2,
+  & \mathbf{e}_2 &= {\mathbf{u}_2 \over \|\mathbf{u}_2\|} \\
+ \mathbf{u}_3 &= \mathbf{a}_3-\mathrm{proj}_{\mathbf{u}_1}\,\mathbf{a}_3-\mathrm{proj}_{\mathbf{u}_2}\,\mathbf{a}_3,
+  & \mathbf{e}_3 &= {\mathbf{u}_3 \over \|\mathbf{u}_3\|} \\
+ & \vdots &&\vdots \\
+ \mathbf{u}_k &= \mathbf{a}_k-\sum_{j=1}^{k-1}\mathrm{proj}_{\mathbf{u}_j}\,\mathbf{a}_k,
+  &\mathbf{e}_k &= {\mathbf{u}_k\over\|\mathbf{u}_k\|}
+\end{align}$$
+
 即：
 
 $$\begin{align}
@@ -234,22 +248,4 @@ $$\|x\|_1=|x_1|+\dots+|x_n|$$
 $$\|x\|_2=\sqrt{x_1^2+\dots+x_n^2}$$
 
 $$\|x\|_\infty=max(|x_1|,\dots,|x_n|)$$
-
-这里不做解释的给出如下示意图：
-
-![](/images/article/lp_ball.png)
-
-其中，0范数表示向量中非0元素的个数。上图中的图形被称为$$l_p$$ ball。表征在同一范数条件下，具有相同距离的点的集合。
-
-范数满足如下不等式：
-
-$$\|A+B\|\le \|A\|+\|B\|(三角不等式)$$
-
-向量范数推广可得到矩阵范数。某些矩阵范数满足如下公式：
-
-$$\|A\cdot B\|\le \|A\|\cdot\|B\|$$
-
-这种范数被称为相容范数。
-
->注：矩阵范数要比向量范数复杂的多，还包含一些不可以由向量范数来诱导的范数，如Frobenius范数。而且只有极少数矩阵范数，可由简单表达式来表达。这里篇幅有限，不再赘述。
 

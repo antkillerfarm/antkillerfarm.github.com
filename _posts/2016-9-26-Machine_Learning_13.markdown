@@ -4,6 +4,26 @@ title:  机器学习（十三）——机器学习中的矩阵方法（3）病�
 category: technology 
 ---
 
+## 向量的范数（续）
+
+这里不做解释的给出如下示意图：
+
+![](/images/article/lp_ball.png)
+
+其中，0范数表示向量中非0元素的个数。上图中的图形被称为$$l_p$$ ball。表征在同一范数条件下，具有相同距离的点的集合。
+
+范数满足如下不等式：
+
+$$\|A+B\|\le \|A\|+\|B\|(三角不等式)$$
+
+向量范数推广可得到矩阵范数。某些矩阵范数满足如下公式：
+
+$$\|A\cdot B\|\le \|A\|\cdot\|B\|$$
+
+这种范数被称为相容范数。
+
+>注：矩阵范数要比向量范数复杂的多，还包含一些不可以由向量范数来诱导的范数，如Frobenius范数。而且只有极少数矩阵范数，可由简单表达式来表达。这里篇幅有限，不再赘述。
+
 ## 病态矩阵
 
 现在有线性系统$$Ax = b$$：
@@ -296,14 +316,4 @@ $$\tau = \frac{(\text{number of concordant pairs}) - (\text{number of discordant
 
 https://en.wikipedia.org/wiki/Kendall_rank_correlation_coefficient
 
-### Tanimoto系数
 
-$$T(x,y)=\frac{|X\cap Y|}{|X\cup Y|}=\frac{|X\cap Y|}{|X|+|Y|-|X\cap Y|}=\frac{\sum x_iy_i}{\sqrt{\sum x_i^2}+\sqrt{\sum y_i^2}-\sum x_iy_i}$$
-
-该系数由Taffee T. Tanimoto于1960年提出。Tanimoto生平不详，从名字来看，应该是个日本人。在其他领域，它还有另一个名字Jaccard similarity coefficient。（两者的系数公式一致，但距离公式略有差异。）
-
->Paul Jaccard，1868～1944，苏黎世联邦理工学院（ETH Zurich）博士，苏黎世联邦理工学院植物学教授。ETH Zurich可是出了24个诺贝尔奖得主的。
-
-参见：
-
-https://en.wikipedia.org/wiki/Jaccard_index

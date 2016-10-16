@@ -4,6 +4,18 @@ title:  机器学习（十四）——协同过滤的ALS算法（2）、主成�
 category: technology 
 ---
 
+### Tanimoto系数
+
+$$T(x,y)=\frac{|X\cap Y|}{|X\cup Y|}=\frac{|X\cap Y|}{|X|+|Y|-|X\cap Y|}=\frac{\sum x_iy_i}{\sqrt{\sum x_i^2}+\sqrt{\sum y_i^2}-\sum x_iy_i}$$
+
+该系数由Taffee T. Tanimoto于1960年提出。Tanimoto生平不详，从名字来看，应该是个日本人。在其他领域，它还有另一个名字Jaccard similarity coefficient。（两者的系数公式一致，但距离公式略有差异。）
+
+>Paul Jaccard，1868～1944，苏黎世联邦理工学院（ETH Zurich）博士，苏黎世联邦理工学院植物学教授。ETH Zurich可是出了24个诺贝尔奖得主的。
+
+参见：
+
+https://en.wikipedia.org/wiki/Jaccard_index
+
 ## ALS算法原理
 
 http://www.cnblogs.com/luchen927/archive/2012/02/01/2325360.html
@@ -46,7 +58,7 @@ $$\min_{x_*,y_*}\sum_{u,i\text{ is known}}(r_{ui}-x_u^Ty_i)^2$$
 
 考虑到矩阵的稳定性问题，使用Tikhonov regularization，则上式变为：
 
-$$\min_{x_*,y_*}L(X,Y)=\min_{x_*,y_*}\sum_{u,i\text{ is known}}(r_{ui}-x_u^Ty_i)^2+\lambda(|x_u|^2+|y_i|^2)\tag{1}$$
+$$\min_{x_*,y_*}L(X,Y)=\min_{x_*,y_*}\sum_{u,i\text{ is known}}(r_{ui}-x_u^Ty_i)^2+\lambda(|x_u|^2+|y_i|^2)\tag{2}$$
 
 优化上式，得到训练结果矩阵$$X_{m\times k},Y_{n\times k}$$。预测时，将User和Item代入$$r_{ui}=x_u^Ty_i$$，即可得到相应的评分预测值。
 
@@ -64,7 +76,7 @@ ALS算法的缺点在于：
 
 ## ALS算法优化过程的推导
 
-公式1的直接优化是很困难的，因为X和Y的二元导数并不容易计算，这时可以使用类似坐标下降法的算法，固定其他维度，而只优化其中一个维度。
+公式2的直接优化是很困难的，因为X和Y的二元导数并不容易计算，这时可以使用类似坐标下降法的算法，固定其他维度，而只优化其中一个维度。
 
 对$$x_u$$求导，可得：
 
@@ -76,17 +88,17 @@ $$\begin{align}
 
 令导数为0，可得：
 
-$$Y^TYx_u+\lambda Ix_u=Y^Tr_u\Rightarrow x_u=(Y^TY+\lambda I)^{-1}Y^Tr_u\tag{2}$$
+$$Y^TYx_u+\lambda Ix_u=Y^Tr_u\Rightarrow x_u=(Y^TY+\lambda I)^{-1}Y^Tr_u\tag{3}$$
 
 同理，对$$y_i$$求导，由于X和Y是对称的，因此可得类似的结论：
 
-$$y_i=(X^TX+\lambda I)^{-1}X^Tr_i\tag{3}$$
+$$y_i=(X^TX+\lambda I)^{-1}X^Tr_i\tag{4}$$
 
 因此整个优化迭代的过程为：
 
 >Repeat until convergence {   
-><span style="white-space: pre">	</span>1.固定Y，使用公式2更新$$x_u$$。    
-><span style="white-space: pre">	</span>2.固定X，使用公式3更新$$y_i$$。    
+><span style="white-space: pre">	</span>1.固定Y，使用公式3更新$$x_u$$。    
+><span style="white-space: pre">	</span>2.固定X，使用公式4更新$$y_i$$。    
 >}
 
 一般使用RMSE（root-mean-square error）评估误差是否收敛，具体到这里就是：
@@ -211,7 +223,7 @@ http://www.68idc.cn/help/buildlang/ask/20150727462819.html
 
 很显然，左图中的u就是我们需要求解的主成分的方向。和右图相比，左图中各样本点x在u上的投影点比较分散，也就是投影点之间的方差较大。
 
-由《机器学习（十一）》一节的公式3，可知样本点x在单位向量u上的投影为：$$x^Tu$$。
+由《机器学习（十一）》一节的公式4，可知样本点x在单位向量u上的投影为：$$x^Tu$$。
 
 因此，这个问题的代价函数为：
 
@@ -250,15 +262,7 @@ u_1^Tx^{(i)}\\
 u_2^Tx^{(i)}\\
 \cdots \\
 u_k^Tx^{(i)}
-\end{bmatrix}\in R^k$$
+\end{bmatrix}\in R^k\tag{5}$$
 
 可以看出PCA算法实际上是个**降维（dimensionality reduction）**算法。
-
-为了便于理解PCA算法，我们以如下图片的处理过程为例，进行说明。
-
-![](/images/article/svd.png)
-
-**第一排从左往右依次为：原图（450*333）、k=1、k=5；第二排从左往右依次为：k=20、k=50。**
-
-从中可以看出，k=50时，图像的效果已经和原图相差无几。而原图是个450*333的高阶矩阵。
 

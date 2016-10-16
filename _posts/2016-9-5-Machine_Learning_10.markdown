@@ -4,6 +4,14 @@ title:  机器学习（十）——因子分析
 category: technology 
 ---
 
+## 对$$\Sigma$$的限制（续）
+
+这实际上也就是方法一中对角线元素的均值，反映到二维高斯分布图上就是椭圆变成圆。
+
+当我们要估计出完整的$$\Sigma$$时，我们需要$$m\ge n+1$$才能保证在最大似然估计下得出的$$\Sigma$$是非奇异的。然而在上面的任何一种假设限定条件下，只要$$m\ge 2$$就可以估计出限定的$$\Sigma$$。
+
+这样做的缺点也是显而易见的，我们认为特征间相互独立，这个假设太强。接下来，我们给出一种称为因子分析（factor analysis）的方法，使用更多的参数来分析特征间的关系，并且不需要计算一个完整的$$\Sigma$$。
+
 ## 利用多元高斯分布密度函数计算积分的技巧
 
 $$I(A,b,c)=\int_x\exp\left(-\frac{1}{2}(x^TAx+x^Tb+c)\right)\mathrm{d}x$$
@@ -237,15 +245,4 @@ $$\begin{align}
 \\&=\sum_{i=1}^m E_{z^{(i)}\sim Q_i}\left[\log p(x^{(i)}\vert z^{(i)};\mu,\Lambda,\Psi)+\log p(z^{(i)})-\log Q_i(z^{(i)})\right]
 \end{align}$$
 
-去掉和参数无关的部分后，可得：
-
-$$\begin{align}
-&\sum_{i=1}^mE\left[\log p(x^{(i)}\vert z^{(i)};\mu,\Lambda,\Psi)\right]
-\\&=\sum_{i=1}^mE\left[\frac{1}{(2\pi)^{n/2}\lvert\Psi\rvert^{1/2}}\exp\left(-\frac{1}{2}(x^{(i)}-\mu-\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu-\Lambda z^{(i)})\right)\right]
-\\&=\sum_{i=1}^mE\left[-\frac{1}{2}\log\lvert\Psi\rvert-\frac{n}{2}\log(2\pi)-\frac{1}{2}(x^{(i)}-\mu-\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu-\Lambda z^{(i)})\right]
-\end{align}$$
-
-去掉和$$\Lambda$$无关的部分，并求导可得：
-
-$$\nabla_\Lambda\sum_{i=1}^m-E\left[\frac{1}{2}(x^{(i)}-\mu-\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu-\Lambda z^{(i)})\right]\tag{4}$$
 
