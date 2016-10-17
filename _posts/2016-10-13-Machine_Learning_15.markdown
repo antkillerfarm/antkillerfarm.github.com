@@ -76,5 +76,26 @@ ICA的不确定性(ICA ambiguities)包括以下几种情形：
 
 2.无法确定W的尺度。比如$$x^{(i)}$$还可以写作$$x^{(i)}=2A \cdot (0.5)s^{(i)}$$，因此在不知道A的情况下，同样无法确定$$s^{(i)}$$的值。
 
-3.
+3.信号不能是高斯分布的。
+
+假设两个人发出的声音信号符合多值正态分布$$s\sim \mathcal{N}(0,I)$$，这里的I是一个2阶单位阵，则$$E[xx^T]=E[Ass^TA^T]=AA^T$$。
+
+假设R是正交矩阵，$$A'=AR,x'=A's$$，则$$E[xx^T]=E[A'ss^T(A')^T]=E[ARss^T(AR)^T]=ARR^TA^T=AA^T$$。
+
+可见，无论是A还是A'，观测值x都是一个$$\mathcal{N}(0,AA^T)$$的正态分布，也就是说A的值无法确定，那么W和s也就无法求出了。
+
+## 密度函数和线性变换
+
+
+
+## ICA算法
+
+
+
+>注：Terrence (Terry) Joseph Sejnowski，1947年生，美国科学家。普林斯顿大学博士，导师是神经网络界的大神John Hopfield。ICA算法和Boltzmann machine的发现人。
+
+>Tony Bell的个人主页：
+>http://cnl.salk.edu/~tony/index.html
+
+
 
