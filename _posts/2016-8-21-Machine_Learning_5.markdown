@@ -3,6 +3,7 @@ layout: post
 title:  机器学习（五）——SVM（3）
 category: technology 
 ---
+
 ## 规则化和不可分情况处理（续）
 
 这时候应该允许一些点游离并在模型中违背限制条件（函数间隔大于1）。我们设计得到新的模型如下（也称软间隔（Soft-margin））：

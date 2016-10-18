@@ -4,13 +4,31 @@ title:  机器学习（十四）——协同过滤的ALS算法（2）、主成�
 category: technology 
 ---
 
+### Kendall秩相关系数（Kendall rank correlation coefficient）
+
+对于秩变量对$$(x_i,y_i),(x_j,y_j)$$：
+
+$$(x_i-x_j)(y_i-y_j)\begin{cases}
+>0, & \text{concordant} \\
+=0, & \text{neither concordant nor discordant} \\
+<0, & \text{discordant} \\
+\end{cases}$$
+
+$$\tau = \frac{(\text{number of concordant pairs}) - (\text{number of discordant pairs})}{n (n-1) /2}$$
+
+>注：Sir Maurice George Kendall，1907~1983，英国统计学家。这个人职业生涯的大部分时间都是一个公务员，二战期间出任英国船运协会副总经理。1949年以后担任伦敦大学教授。
+
+参见：
+
+https://en.wikipedia.org/wiki/Kendall_rank_correlation_coefficient
+
 ### Tanimoto系数
 
 $$T(x,y)=\frac{|X\cap Y|}{|X\cup Y|}=\frac{|X\cap Y|}{|X|+|Y|-|X\cap Y|}=\frac{\sum x_iy_i}{\sqrt{\sum x_i^2}+\sqrt{\sum y_i^2}-\sum x_iy_i}$$
 
 该系数由Taffee T. Tanimoto于1960年提出。Tanimoto生平不详，从名字来看，应该是个日本人。在其他领域，它还有另一个名字Jaccard similarity coefficient。（两者的系数公式一致，但距离公式略有差异。）
 
->Paul Jaccard，1868～1944，苏黎世联邦理工学院（ETH Zurich）博士，苏黎世联邦理工学院植物学教授。ETH Zurich可是出了24个诺贝尔奖得主的。
+>注：Paul Jaccard，1868～1944，苏黎世联邦理工学院（ETH Zurich）博士，苏黎世联邦理工学院植物学教授。ETH Zurich可是出了24个诺贝尔奖得主的。
 
 参见：
 
@@ -96,9 +114,10 @@ $$y_i=(X^TX+\lambda I)^{-1}X^Tr_i\tag{4}$$
 
 因此整个优化迭代的过程为：
 
+>1.随机生成X、Y。（相当于给出一个迭代算法的初始解。）
 >Repeat until convergence {   
-><span style="white-space: pre">	</span>1.固定Y，使用公式3更新$$x_u$$。    
-><span style="white-space: pre">	</span>2.固定X，使用公式4更新$$y_i$$。    
+><span style="white-space: pre">	</span>2.固定Y，使用公式3更新$$x_u$$。    
+><span style="white-space: pre">	</span>3.固定X，使用公式4更新$$y_i$$。    
 >}
 
 一般使用RMSE（root-mean-square error）评估误差是否收敛，具体到这里就是：
@@ -215,6 +234,8 @@ http://www.68idc.cn/help/buildlang/ask/20150727462819.html
 
 虽然上面的办法，对于二次以上的偏差无能为力，然而多数情况下，这种处理，已经比原始状态好多了。
 
+## PCA算法推导
+
 回到之前的话题，为了找到主要的方向u，我们首先观察一下，样本点在u上的投影应该是什么样子的。
 
 ![](/images/article/PCA_2.png) | ![](/images/article/PCA_3.png)
@@ -242,27 +263,4 @@ $$\begin{align}
 其拉格朗日函数为：
 
 $$\mathcal{L}(u)=u^T\Sigma u-\lambda(u^Tu-1)$$
-
-对u求导可得：
-
-$$\nabla_u\mathcal{L}(u)=\Sigma u-\lambda u$$
-
-这里的矩阵求导步骤，参见《机器学习（九）》中的公式5.12的推导过程。
-
-令导数为0可得，当$$\lambda$$为$$\Sigma$$的特征值的时候，该代价函数得到最优解。
-
->注：这里的推导过程，求解的是1维的PCA，但结论对于k维的PCA也是成立的。
-
-一个n阶矩阵有n个特征值，这些特征值可按绝对值大小排序，绝对值越大的，越重要。其中最大的k个特征值，被称作k principal components，这就是主成分分析（Principal components analysis，PCA）算法的命名来历。
-
-我们以最大的k个特征值所对应的特征向量，构建样本空间Y：
-
-$$y^{(i)}=\begin{bmatrix}
-u_1^Tx^{(i)}\\
-u_2^Tx^{(i)}\\
-\cdots \\
-u_k^Tx^{(i)}
-\end{bmatrix}\in R^k\tag{5}$$
-
-可以看出PCA算法实际上是个**降维（dimensionality reduction）**算法。
 

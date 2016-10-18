@@ -94,6 +94,64 @@ http://www.cnblogs.com/cenyuhai/
 
 这个blog专注于hadoop、hbase、spark。
 
+## 基本概念
+
+HBase以表的形式存储数据。表有行和列组成。列划分为若干个列族/列簇(column family)。
+
+<table>
+<tbody>
+<tr border="1">
+<td rowspan="2"><strong>Row Key</strong></td>
+<td colspan="2"><strong>column-family1</strong></td>
+<td colspan="3"><strong>column-family2</strong></td>
+<td><strong>column-family3</strong></td></tr>
+<tr>
+<td><strong>column1</strong></td>
+<td><strong>column2</strong></td>
+<td><strong>column1</strong></td>
+<td><strong>column2</strong></td>
+<td><strong>column3</strong></td>
+<td><strong>column1</strong></td></tr>
+<tr>
+<td><strong>key1</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
+<tr>
+<td><strong>key2</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
+<tr>
+<td><strong>key3</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr></tbody></table>
+
+如上图所示，key1,key2,key3是三条记录的唯一的row key值，column-family1,column-family2,column-family3是三个列族，每个列族下又包括几列。比如，column-family1这个列族下包括两列，名字是column1和column2。
+
+## 常用的HBase Shell命令
+
+名称 | 命令表达式
+创建表 | create '表名称', '列名称1','列名称2','列名称N'
+添加记录 | put '表名称', '行名称', '列名称:', '值'
+查看记录 | get '表名称', '行名称'
+查看表中的记录总数 | count  '表名称'
+删除记录 | delete  '表名' ,'行名称' , '列名称'
+删除一张表 | 先要屏蔽该表，才能对该表进行删除，第一步 disable '表名称' 第二步  drop '表名称'
+查看所有记录 | scan "表名称"  
+查看某个表某个列中所有数据 | scan "表名称" , ['列名称:']
+更新记录 | 就是重写一遍进行覆盖
+
 # Spark
 
 http://spark.apache.org/

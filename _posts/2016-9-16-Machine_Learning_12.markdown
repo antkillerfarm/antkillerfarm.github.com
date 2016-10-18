@@ -241,11 +241,4 @@ $$d(x,y)=\sqrt[\lambda]{\sum_{i=1}^{n}\lvert x_i-y_i\lvert^{\lambda}}$$
 
 显然，当$$\lambda=2$$时，该距离为欧氏距离。当$$\lambda=1$$时，也被称为CityBlock Distance或Manhattan Distance（曼哈顿距离）。
 
-这里的$$\lambda$$就是范数。范数可用符号$$\|x\|_\lambda$$表示。常用的有：
-
-$$\|x\|_1=|x_1|+\dots+|x_n|$$
-
-$$\|x\|_2=\sqrt{x_1^2+\dots+x_n^2}$$
-
-$$\|x\|_\infty=max(|x_1|,\dots,|x_n|)$$
-
+这里的$$\lambda$$就是范数。

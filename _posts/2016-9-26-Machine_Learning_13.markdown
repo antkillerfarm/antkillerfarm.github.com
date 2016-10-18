@@ -6,6 +6,14 @@ category: technology
 
 ## 向量的范数（续）
 
+范数可用符号$$\|x\|_\lambda$$表示。常用的有：
+
+$$\|x\|_1=|x_1|+\dots+|x_n|$$
+
+$$\|x\|_2=\sqrt{x_1^2+\dots+x_n^2}$$
+
+$$\|x\|_\infty=max(|x_1|,\dots,|x_n|)$$
+
 这里不做解释的给出如下示意图：
 
 ![](/images/article/lp_ball.png)
@@ -290,30 +298,15 @@ https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient
 
 $$r_s = {1- \frac {6 \sum d_i^2}{n(n^2 - 1)}}$$
 
->Charles Spearman，1863～1945，英国心理学家。这个人的经历比较独特，20岁从军，15年之后退役。然后，进入德国莱比锡大学读博，中间又被军队征召，参加了第二次布尔战争，因此，直到1906年才拿到博士学位。伦敦大学学院心理学教授。   
+>注：Charles Spearman，1863～1945，英国心理学家。这个人的经历比较独特，20岁从军，15年之后退役。然后，进入德国莱比锡大学读博，中间又被军队征召，参加了第二次布尔战争，因此，直到1906年才拿到博士学位。伦敦大学学院心理学教授。   
 >尽管他的学历和教职，都是心理学方面的。但他最大的贡献，却是在统计学领域。他也是因为在统计学方面的成就，得以当选皇家学会会员。   
 >话说那个时代的统计学大牛，除了Fisher之外，基本都是副业比主业强。只有Fisher，主业方面也是那么牛逼，不服不行啊。
+
+![](/images/article/spearman.png)
+
+由上图可见，Pearson系数关注的是两个变量之间的线性相关度，而Spearman系数可以应用到非线性或者难以量化的领域。
 
 参见：
 
 https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient
-
-### Kendall秩相关系数（Kendall rank correlation coefficient）
-
-对于秩变量对$$(x_i,y_i),(x_j,y_j)$$：
-
-$$(x_i-x_j)(y_i-y_j)\begin{cases}
->0, & \text{concordant} \\
-=0, & \text{neither concordant nor discordant} \\
-<0, & \text{discordant} \\
-\end{cases}$$
-
-$$\tau = \frac{(\text{number of concordant pairs}) - (\text{number of discordant pairs})}{n (n-1) /2}$$
-
->Sir Maurice George Kendall，1907~1983，英国统计学家。这个人职业生涯的大部分时间都是一个公务员，二战期间出任英国船运协会副总经理。1949年以后担任伦敦大学教授。
-
-参见：
-
-https://en.wikipedia.org/wiki/Kendall_rank_correlation_coefficient
-
 

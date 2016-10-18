@@ -168,6 +168,10 @@ http://url.cn/40IkU7z
 
 盘点机器学习常用的35大算法
 
+https://www.zhihu.com/question/28810567
+
+ELM算法相关
+
 ## 使用细节
 
 ### saturate_cast
@@ -229,8 +233,6 @@ http://www.r-user.com/
 一个中文的R语言网站
 
 PDF：Probability distribution function
-
-# Independent Components Analysis
 
 # Reinforcement Learning and Control
 

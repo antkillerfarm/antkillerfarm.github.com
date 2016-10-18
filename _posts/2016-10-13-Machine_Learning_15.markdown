@@ -1,8 +1,33 @@
 ---
 layout: post
-title:  机器学习（十五）——独立成分分析
+title:  机器学习（十五）——独立成分分析、loss function比较
 category: technology 
 ---
+
+## PCA算法推导（续）
+
+对u求导可得：
+
+$$\nabla_u\mathcal{L}(u)=\Sigma u-\lambda u$$
+
+这里的矩阵求导步骤，参见《机器学习（九）》中的公式5.12的推导过程。
+
+令导数为0可得，当$$\lambda$$为$$\Sigma$$的特征值的时候，该代价函数得到最优解。
+
+>注：这里的推导过程，求解的是1维的PCA，但结论对于k维的PCA也是成立的。
+
+一个n阶矩阵有n个特征值，这些特征值可按绝对值大小排序，绝对值越大的，越重要。其中最大的k个特征值，被称作k principal components，这就是主成分分析（Principal components analysis，PCA）算法的命名来历。
+
+我们以最大的k个特征值所对应的特征向量，构建样本空间Y：
+
+$$y^{(i)}=\begin{bmatrix}
+u_1^Tx^{(i)}\\
+u_2^Tx^{(i)}\\
+\cdots \\
+u_k^Tx^{(i)}
+\end{bmatrix}\in R^k\tag{5}$$
+
+可以看出PCA算法实际上是个**降维（dimensionality reduction）**算法。
 
 ## PCA的用途
 
@@ -80,7 +105,9 @@ ICA的不确定性(ICA ambiguities)包括以下几种情形：
 
 假设两个人发出的声音信号符合多值正态分布$$s\sim \mathcal{N}(0,I)$$，这里的I是一个2阶单位阵，则$$E[xx^T]=E[Ass^TA^T]=AA^T$$。
 
-假设R是正交矩阵，$$A'=AR,x'=A's$$，则$$E[xx^T]=E[A'ss^T(A')^T]=E[ARss^T(AR)^T]=ARR^TA^T=AA^T$$。
+假设R是正交矩阵，$$A'=AR,x'=A's$$，则：
+
+$$E[xx^T]=E[A'ss^T(A')^T]=E[ARss^T(AR)^T]=ARR^TA^T=AA^T$$
 
 可见，无论是A还是A'，观测值x都是一个$$\mathcal{N}(0,AA^T)$$的正态分布，也就是说A的值无法确定，那么W和s也就无法求出了。
 
@@ -97,5 +124,23 @@ ICA的不确定性(ICA ambiguities)包括以下几种情形：
 >Tony Bell的个人主页：
 >http://cnl.salk.edu/~tony/index.html
 
+# loss function比较
 
+![](/images/article/loss_function.jpg)
+
+这里m代表了置信度，越靠近右边置信度越高。
+
+其中蓝色的阶跃函数又被称为Gold Standard，黄金标准，因为这是最准确无误的分类器loss function了。分对了loss为0，分错了loss为1，且loss不随到分界面的距离的增加而增加，也就是说这个分类器非常鲁棒。但可惜的是，它不连续，求解这个问题是NP-hard的，所以才有了各种我们熟知的分类器。
+
+其中红色线条就是SVM了，由于它在m=1处有个不可导的转折点，右边都是0，所以分类正确的置信度超过一定的数之后，对分界面的确定就没有一点贡献了。
+
+黄色线条是Logistic Regression的损失函数，与SVM不同的是，它非常平滑，但本质跟SVM差别不大。
+
+绿色线条是boost算法使用的损失函数。
+
+黑色线条是ELM（Extreme learning machine）算法的损失函数。它的优点是有解析解，不必使用梯度下降等迭代方法，可直接计算得到最优解。但缺点是随着分类的置信度的增加，loss不降反升，因此，最终准确率有限。此外，解析算法相比迭代算法，对于大数据的适应较差，也是该方法的局限所在。
+
+参见：
+
+https://www.zhihu.com/question/28810567
 
