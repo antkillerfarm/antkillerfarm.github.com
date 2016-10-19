@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  古希腊三大数学书（二）
+title:  古希腊三大数学书（二）、搞笑图片的数学原理
 category: non_technology 
 ---
 
@@ -54,4 +54,45 @@ category: non_technology
 
 推荐阅读《古今数学思想》一书，可以对数学史产生一个比较全面的认识。
 
+# 搞笑图片的数学原理
+
+![](/images/article/integral.jpg)
+
+这是一个在各论坛流传已久的图片。这个题目的描述虽不复杂，但仅凭大学本科的高等数学，实际上是搞不定这个问题的。
+
+首先需要明确的是，上图中的被积函数$$\frac{1-\cos x}{x^2}$$的原函数不是初等函数，因此无法使用牛顿-莱布尼茨公式，求解该积分值。
+
+它的解法其实图片中已经给出了线索，那就是傅立叶变换的能量公式。
+
+以下是推导步骤：
+
+利用半角公式进行变换。
+
+由半角公式：
+
+$$2\sin^2\frac{x}{2}=1-\cos x$$
+
+可得：
+
+$$\frac{1-\cos x}{x^2}=\frac{2\cdot\sin^2\frac{x}{2}}{4\cdot\frac{x^2}{4}}=\frac{1}{2}\left(\frac{\sin^2\frac{x}{2}}{\frac{x}{2}}\right)^2$$
+
+查常用函数的傅立叶变换表，可得：
+
+![](/images/article/fourier.png)
+
+代入能量公式，可得：
+
+$$\int_{-\infty}^{+\infty}\left(\frac{\sin^2\frac{x}{2}}{\frac{x}{2}}\right)^2\rm{d}x=2\pi\int_{-\infty}^{+\infty}(rect(t))^2\rm{d}t=2\pi\cdot 1$$
+
+因此：
+
+$$\int_{-\infty}^{+\infty}\frac{1-\cos x}{x^2}\rm{d}x=\frac{1}{2}\cdot 2\pi=\pi$$
+
+实际上，这类积分都是Dirichlet积分的变种，解法也不止一种。
+
+参见：
+
+http://wenku.baidu.com/view/bb9c8ffe910ef12d2af9e71a.html
+
+http://wenku.baidu.com/view/1b47c415cc7931b765ce1547.html
 
