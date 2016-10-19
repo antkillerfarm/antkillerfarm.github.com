@@ -113,16 +113,36 @@ $$E[xx^T]=E[A'ss^T(A')^T]=E[ARss^T(AR)^T]=ARR^TA^T=AA^T$$
 
 ## 密度函数和线性变换
 
+在讨论ICA的具体算法之前，我们先来回顾一下概率和线性代数里的知识。
 
+假设我们的随机变量s有概率密度（probability density）函数$$p_s(s)$$。为了简单，我们再假设s是实数，还有一个随机变量$$x=As$$，A和x都是实数。令$$p_x$$是x的概率密度，那么怎么求$$p_x$$呢？
+
+令$$W=A^{-1}$$，则$$s=Wx$$。然而$$p_x(x)\neq p_s(Wx)$$。
+
+这里以均匀分布（Uniform）为例讨论一下。令$$s\sim \text{Uniform}[0,1]$$，则$$p_s(s)=1$$。令$$A=2$$，则$$W=0.5$$，$$x=2s\sim \text{Uniform}[0,2]$$，因此$$p_x(x)=p_s(Wx)\lvert W \rvert$$。
+
+## 累积分布函数
+
+累积分布函数（cumulative distribution function，CDF）是概率论中的一个基本概念。它的定义如下：
+
+$$$$
 
 ## ICA算法
 
-
+ICA算法归功于Bell 和 Sejnowski，这里使用最大似然估计来解释算法。（原始论文中使用的是一个复杂的方法Infomax principal，这在最新的推导中已经不需要了。）
 
 >注：Terrence (Terry) Joseph Sejnowski，1947年生，美国科学家。普林斯顿大学博士，导师是神经网络界的大神John Hopfield。ICA算法和Boltzmann machine的发现人。
 
 >Tony Bell的个人主页：
 >http://cnl.salk.edu/~tony/index.html
+
+我们假定每个$$s_i$$有概率密度$$p_s$$，那么给定时刻原信号的联合分布就是：
+
+$$p(s)=\prod_{i=1}^np_s(s_i)$$
+
+因此：
+
+$$p(x)=\prod_{i=1}^np_s(w_i^Tx)\cdot |W|$$
 
 # loss function比较
 
@@ -138,7 +158,7 @@ $$E[xx^T]=E[A'ss^T(A')^T]=E[ARss^T(AR)^T]=ARR^TA^T=AA^T$$
 
 绿色线条是boost算法使用的损失函数。
 
-黑色线条是ELM（Extreme learning machine）算法的损失函数。它的优点是有解析解，不必使用梯度下降等迭代方法，可直接计算得到最优解。但缺点是随着分类的置信度的增加，loss不降反升，因此，最终准确率有限。此外，解析算法相比迭代算法，对于大数据的适应较差，也是该方法的局限所在。
+黑色线条是ELM（Extreme learning machine）算法的损失函数。它的优点是有解析解，不必使用梯度下降等迭代方法，可直接计算得到最优解。但缺点是随着分类的置信度的增加，loss不降反升，因此，最终准确率有限。此外，解析算法相比迭代算法，对于大数据的适应较差，这也是该方法的局限所在。
 
 参见：
 

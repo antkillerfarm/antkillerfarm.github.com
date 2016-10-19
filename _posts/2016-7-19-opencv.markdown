@@ -172,6 +172,10 @@ https://www.zhihu.com/question/28810567
 
 ELM算法相关
 
+https://tianchi.shuju.aliyun.com/
+
+天池大数据
+
 ## 使用细节
 
 ### saturate_cast

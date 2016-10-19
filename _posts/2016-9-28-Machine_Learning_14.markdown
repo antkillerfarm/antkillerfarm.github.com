@@ -114,7 +114,7 @@ $$y_i=(X^TX+\lambda I)^{-1}X^Tr_i\tag{4}$$
 
 因此整个优化迭代的过程为：
 
->1.随机生成X、Y。（相当于给出一个迭代算法的初始解。）
+>1.随机生成X、Y。（相当于对迭代算法给出一个初始解。）   
 >Repeat until convergence {   
 ><span style="white-space: pre">	</span>2.固定Y，使用公式3更新$$x_u$$。    
 ><span style="white-space: pre">	</span>3.固定X，使用公式4更新$$y_i$$。    
