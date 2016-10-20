@@ -74,7 +74,7 @@ $$2\sin^2\frac{x}{2}=1-\cos x$$
 
 可得：
 
-$$\frac{1-\cos x}{x^2}=\frac{2\cdot\sin^2\frac{x}{2}}{4\cdot\frac{x^2}{4}}=\frac{1}{2}\left(\frac{\sin^2\frac{x}{2}}{\frac{x}{2}}\right)^2$$
+$$\frac{1-\cos x}{x^2}=\frac{2\cdot\sin^2\frac{x}{2}}{4\cdot\frac{x^2}{4}}=\frac{1}{2}\left(\frac{\sin\frac{x}{2}}{\frac{x}{2}}\right)^2$$
 
 查常用函数的傅立叶变换表，可得：
 
@@ -82,7 +82,7 @@ $$\frac{1-\cos x}{x^2}=\frac{2\cdot\sin^2\frac{x}{2}}{4\cdot\frac{x^2}{4}}=\frac
 
 代入能量公式，可得：
 
-$$\int_{-\infty}^{+\infty}\left(\frac{\sin^2\frac{x}{2}}{\frac{x}{2}}\right)^2\rm{d}x=2\pi\int_{-\infty}^{+\infty}(rect(t))^2\rm{d}t=2\pi\cdot 1$$
+$$\int_{-\infty}^{+\infty}\left(\frac{\sin\frac{x}{2}}{\frac{x}{2}}\right)^2\rm{d}x=2\pi\int_{-\infty}^{+\infty}(rect(t))^2\rm{d}t=2\pi\cdot 1$$
 
 因此：
 

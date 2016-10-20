@@ -264,6 +264,10 @@ Kettle是一款国外开源的ETL工具。其官网为：
 
 http://community.pentaho.com/projects/data-integration/
 
+Sqoop是另一个数据转换工具，但是没有IDE。其官网：
+
+http://sqoop.apache.org/
+
 ## 文本处理
 
 Kettle的文本处理以“行”为单位。下图是一个实际的使用流程图：

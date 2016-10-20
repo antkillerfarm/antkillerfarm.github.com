@@ -25,7 +25,7 @@ u_1^Tx^{(i)}\\
 u_2^Tx^{(i)}\\
 \cdots \\
 u_k^Tx^{(i)}
-\end{bmatrix}\in R^k\tag{5}$$
+\end{bmatrix}\in R^k\tag{1}$$
 
 可以看出PCA算法实际上是个**降维（dimensionality reduction）**算法。
 
@@ -51,7 +51,7 @@ PCA的一个很大的优点是，它是完全无参数限制的。在PCA的计�
 
 $$Y_{k\times m}=\begin{bmatrix}y^{(1)} & \cdots & y^{(m)}\end{bmatrix}$$
 
-则由《机器学习（十四）》中的公式5可得：
+则由公式1可得：
 
 $$Y_{k\times m}=U_{n\times k}^TX_{n\times m}$$
 
@@ -125,7 +125,11 @@ $$E[xx^T]=E[A'ss^T(A')^T]=E[ARss^T(AR)^T]=ARR^TA^T=AA^T$$
 
 累积分布函数（cumulative distribution function，CDF）是概率论中的一个基本概念。它的定义如下：
 
-$$$$
+$$F(z_0)=P(z\le z_0)=\int_{-\infty}^{z_0}p_z(z)\rm{d} z$$
+
+可以看出：
+
+$$p_z(z)=F'(z)$$
 
 ## ICA算法
 
@@ -142,7 +146,23 @@ $$p(s)=\prod_{i=1}^np_s(s_i)$$
 
 因此：
 
-$$p(x)=\prod_{i=1}^np_s(w_i^Tx)\cdot |W|$$
+$$p(x)=\prod_{i=1}^np_s(w_i^Tx)\cdot |W|\tag{2}$$
+
+为了确定$$s_i$$的概率密度，我们首先要确定它的累计分布函数$$F(x)$$。而这需要满足两个性质：单调递增和在$$[0,1]$$区间。
+
+我们发现sigmoid函数很适合，它的定义域负无穷到正无穷，值域0到1，缓慢递增。因此，可以假定s的累积分布函数符合sigmoid函数：
+
+$$g(s)=\frac{1}{1+e^{-s}}$$
+
+求导，可得：
+
+$$p_s(s)=g'(s)=g(s)(1-g(s))$$
+
+>注：如果有其他先验信息的话，这里的$$g(s)$$也可以使用其他函数。否则的话，sigmoid函数能够在大多数问题上取得不错的效果。
+
+公式2的对数似然估计函数为：
+
+$$l(W)=\sum_{i=1}^m\left(\sum_{j=1}^m\right)$$
 
 # loss function比较
 

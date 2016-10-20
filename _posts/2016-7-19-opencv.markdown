@@ -38,16 +38,6 @@ Gary Rost Bradski，UC Berkeley的本科+波士顿大学博士，斯坦福大学
 
 Adrian Kaehler，哥伦比亚大学博士。
 
-https://www.coursera.org/learn/machine-learning
-
-《斯坦福大学机器学习课程讲义》
-
-Andrew Ng，也就是吴恩达写的讲义，写的非常浅显易懂。
-
-http://openclassroom.stanford.edu/MainFolder/VideoPage.php?course=MachineLearning
-
-Andrew Ng的公开课视频。
-
 http://wiki.opencv.org.cn/
 
 国人办的OpenCV中文网。
@@ -152,17 +142,9 @@ http://www.deeplearningbook.org/
 
 深度学习的书籍网站。
 
-https://zhuanlan.zhihu.com/p/22038289
-
-斯坦福CS231n课程（卷积神经网络，CNN）翻译。
-
 http://www.zanmel.com/2015/12/14/10-great-datasets-on-movies/
 
 最知名的电影数据集。
-
-http://ufldl.stanford.edu/wiki/index.php/Main_Page
-
-斯坦福的《Unsupervised Feature Learning and Deep Learning》教程，该网站本身就有中文翻译。
 
 http://url.cn/40IkU7z
 
@@ -175,6 +157,34 @@ ELM算法相关
 https://tianchi.shuju.aliyun.com/
 
 天池大数据
+
+https://www.kaggle.com/
+
+国外的一个大数据竞赛网站
+
+## 斯坦福相关课程
+
+http://cs224d.stanford.edu/
+
+CS224d: Deep Learning for Natural Language Processing
+
+http://ufldl.stanford.edu/wiki/index.php/Main_Page
+
+斯坦福的《Unsupervised Feature Learning and Deep Learning》教程，该网站本身就有中文翻译。
+
+https://zhuanlan.zhihu.com/p/22038289
+
+斯坦福CS231n课程（卷积神经网络，CNN）翻译。
+
+https://www.coursera.org/learn/machine-learning
+
+《斯坦福大学机器学习课程讲义》CS229
+
+Andrew Ng，也就是吴恩达写的讲义，写的非常浅显易懂。
+
+http://openclassroom.stanford.edu/MainFolder/VideoPage.php?course=MachineLearning
+
+Andrew Ng的公开课视频。
 
 ## 使用细节
 
