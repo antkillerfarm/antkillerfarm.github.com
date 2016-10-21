@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Zigbee音频, 6LowPAN, IEEE 802
+title:  Zigbee音频, 6LowPAN, IEEE 802, Kettle
 category: technology 
 ---
 
@@ -304,5 +304,7 @@ HDFS的处理比较简单，将普通例子中的本地文件路径，替换为h
 
 Hbase插件中的其他概念都比较好理解。唯一比较费解的是Mapping name这个名词，实际上它就是Hbase中表的列族/列簇(column family)。
 
+http://www.cnblogs.com/wxjnew/p/3620792.html
 
+http://blog.csdn.net/scorpio3k/article/details/7872179
 
