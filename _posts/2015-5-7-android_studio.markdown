@@ -257,6 +257,8 @@ https://repository.apache.org/
 
 http://ebr.springsource.com/repository/app/
 
+https://mvnrepository.com/
+
 本地maven repository通常在~/.m2/repository/下，某些直接下载失败的包，可手动安装到该路径下。
 
 Maven入门教程：

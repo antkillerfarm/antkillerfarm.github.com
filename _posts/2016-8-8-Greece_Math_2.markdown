@@ -95,4 +95,3 @@ $$\int_{-\infty}^{+\infty}\frac{1-\cos x}{x^2}\rm{d}x=\frac{1}{2}\cdot 2\pi=\pi$
 http://wenku.baidu.com/view/bb9c8ffe910ef12d2af9e71a.html
 
 http://wenku.baidu.com/view/1b47c415cc7931b765ce1547.html
-
