@@ -230,4 +230,6 @@ http://www.scala-lang.org/
 
 http://www.runoob.com/scala/scala-tutorial.html
 
+http://www.scala-sbt.org/release/docs/Installing-sbt-on-Linux.html
 
+http://ensime.github.io/getting_started/

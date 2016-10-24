@@ -191,7 +191,17 @@ http://www.mkyong.com/spring/quick-start-maven-spring-example/
 
 ## JavaFX
 
+使用Java开发GUI是一个很冷门的技能树，即使是多年的Java程序员，也未必接触过这个领域。我上次接触该技能，还是10年前的AWT时代。
 
+Java的GUI框架，大致有：
+
+1.awt。最古老的框架。
+
+2.swt。Eclipse项目的早期产物，现在Eclipse也不用它了。
+
+2.swing。和swt差不多同时期的东西，Sun的产物。
+
+3.JavaFX。目前最新的GUI框架，其设计思路和实现，均与WPF是同一档次，已经成为官方标准推荐框架，并集成到JRE中。
 
 # Lisp & GUI
 
