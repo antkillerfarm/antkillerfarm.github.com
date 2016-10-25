@@ -1,0 +1,144 @@
+---
+layout: post
+title:  小众语言集中营, Scala
+category: technology 
+---
+
+# 小众语言集中营
+
+## 前言
+
+自从John Warner Backus创立计算机语义学以来，人们发明的计算机语言已不下千种。基本上没有人能够对所有的语言都精通，实际上也没有这个必要。
+
+但我同样不赞成只会一种语言的工程师。因为每种语言之所以存在，必然有其合理之处，只会一种语言会严重局限程序员的眼界。
+
+比如说这篇文章中提到的：
+
+http://imgtec.eetrend.com/blog/5317
+
+“他的单位有一位写Ruby的老员工，一个庞大的工程，代码里面居然只有一个上帝类，就搞定了所有的问题。”
+
+上面这句话，在文中被作者引用来作为不会设计的典范。但是看看作者的知识背景就会发现，这个作者的眼界实际上局限在了面向对象的笼子里，他以为所有的东西都要组成对象才是合理的，反而忽视了设计的目的。
+
+我对这件事的解读是：如果那个老员工的代码能够只用一个类搞定所有的问题，且代码运行、功能扩展都没有大问题的话，那这个老员工就是一个优秀的设计者。即使他的设计思想不是面向对象的。
+
+Linus Torvalds在批评C++的时候，曾说过“好的设计才是第一位的，糟糕的设计用什么语言写出来都是垃圾。”
+
+反过来理解这句话，那就是：语言和设计思想都只是设计的外皮，而不是灵魂。
+
+## 面向过程的语言
+
+1.编译型
+
+首推C语言，没有之一。其次可以学学Pascal。其他的诸如Basic、Fortran、COBOL，基本上已经成为了历史，如果没有工作上的需要，就不要理会了。
+
+2.解释型
+
+一般用的比较多的是bash、Tcl、perl。随便学一个即可，这三个的使用都挺广泛的。
+
+## 面向对象的语言
+
+1.编译型
+
+首推C++。C++支持的编程泛型非常多，从某种意义上说，不是个纯粹的面向对象的语言。如果需要开发Mac和iPhone程序的，可以学学Objective-C。
+
+2.虚拟机型
+
+C#和Java，随便学一个。VB.NET、Groovy、Scala都属备选，各有各的好处，尤其后两者属于现在的热点，学学没准就用上了。
+
+3.解释性
+
+Python、Ruby，随便学一个。
+
+## 科学计算
+
+首推Matlab。这是一种面向矩阵的语言，它的所有数据类型都被理解为矩阵，而不是对象。
+
+## 函数式语言
+
+1.Haskell
+
+这种语言认为所有的数据类型都是函数。
+
+2.Lisp
+
+这种语言认为所有的数据和函数都是列表，也就是“数据结构”课程上所说的广义表。
+
+## 标记语言
+
+1.Tex
+
+这是《The Art of Computer Programming》一书的作者Donald Knuth的杰作。从中可以看到后来的HTML、JavaScript、CSS等的影子。MS Office中的格式刷也是参考了Tex的设计。
+
+Tex最为称道的是数学公式的排版。MS Office直到2007才有了类似的效果。
+
+Tex广泛应用于欧美国家科学论文的排版领域，成为顶级科学期刊事实上的格式标准，可说是科研狗的必备技能。
+
+2.数据描述类
+
+INI和Json。这两个比较简单，也非常好用，不多说了。备选有BSON、YAML、
+
+3.网页类
+
+XML、HTML、JavaScript必修。PHP、ASP、JSP，选修其中之一。Nodejs近来比较流行，值得投资。
+
+## 嵌入式语言
+
+首推Lua。它首先在游戏领域得到广泛使用，现在在其他领域用的也比较多了。我一直在想，如果Lua早发明30年，Emacs会不会使用Lua，而不是Lisp做为内置语言呢？
+
+## 形式语言
+
+并非所有的编程语言都具有实用性，有些语言的创制，另有其目的。
+
+比如Brainfuck语言。这个语言以出名难用著称，在网上，一般被归为奇技淫巧类语言。然而从语义学的角度，这个语言证明了在冯·诺依曼模型上，最多使用8个符号，就可以构建一个图灵完备语言。
+
+更多这类语言的知识参见：
+
+http://www.15yan.com/story/5Y8BZqIGwjg/
+
+# Scala
+
+官网：
+
+http://www.scala-lang.org/
+
+教程：
+
+http://www.runoob.com/scala/scala-tutorial.html
+
+## sbt
+
+sbt是scala的构建工具，其作用类似于Java的Ant和Maven。
+
+官网：
+
+http://www.scala-sbt.org/
+
+教程：
+
+https://github.com/CSUG/real_world_scala/blob/master/02_sbt.markdown
+
+### 安装
+
+{% highlight bash %}
+echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823
+sudo apt-get update
+sudo apt-get install sbt
+{% endhighlight %}
+
+参见：
+
+http://www.scala-sbt.org/release/docs/Installing-sbt-on-Linux.html
+
+### 常用命令
+
+sbt有一个和scala类似的命令行交互界面，可以输入相关的命令。其中常用的有：
+
+* compile
+
+* package
+
+* run
+
+

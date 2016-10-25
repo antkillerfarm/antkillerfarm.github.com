@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Qt, Python, perl
+title:  Qt, Python
 category: technology 
 ---
 
@@ -371,19 +371,3 @@ Python内置的urllib和urllib2模块都可用于获取HTTP网页，但使用范
     urllib2.install_opener(l_opener)
     usock = urllib2.urlopen('http://www.sohu.com')
 {% endhighlight %}
-
-# perl
-
-中文教程：
-
-http://www.cbi.pku.edu.cn/chinese/documents/perl/index.htm
-
-perl的语法和C差别不算太大，好多语法大致上从关键字也可以猜出来。这里仅对一些符号做个简短的说明。
-
-`$name`：变量name。
-
-`@name`：数组name。
-
-`&name`：函数name。这种情况下，name的定义在使用之后。如果name的定义在使用之前，`&`可省略。
-
-`%name`：哈希数组name。

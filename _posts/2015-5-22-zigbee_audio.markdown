@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Zigbee音频, 6LowPAN, IEEE 802, Kettle
+title:  Zigbee音频, 6LowPAN, IEEE 802
 category: technology 
 ---
 
@@ -255,56 +255,4 @@ Internet`---`设备A`***`设备B`***`设备C
 http://blog.csdn.net/xiaojsj111/article/details/30482001
 
 2）芯片不支持的，只能采用分时复用的方式，支持模式共存，又称softAP。
-
-# Kettle
-
-ETL，是英文Extract-Transform-Load的缩写，用来描述将数据从来源端经过抽取（extract）、转换（transform）、加载（load）至目的端的过程。这个过程有时又被叫做“数据清洗”。
-
-Kettle是一款国外开源的ETL工具。其官网为：
-
-http://community.pentaho.com/projects/data-integration/
-
-Sqoop是另一个数据转换工具，但是没有IDE。其官网：
-
-http://sqoop.apache.org/
-
-## 文本处理
-
-Kettle的文本处理以“行”为单位。下图是一个实际的使用流程图：
-
-![](/images/article/kettle.png)
-
-1.原始数据来自网络爬虫抓取的数据，它的主体是一个json文件，然而在每一条记录的前后都有一些特殊的字符串，因此从整体来说，并不是一个合法的json文件。
-
-2.采用“字符串替换”插件，去除非法字符串。这里需要注意的是，由于整个过程是数据流形式的，因此，无法在一个步骤中，同时去掉前后两个字符串，而必须分为两个步骤。
-
-3.替换之后，原先有字符串的行，可能变成空行，这是可以使用“过滤记录”插件。
-
-## 文件的增量处理
-
-![](/images/article/kettle_2.png)
-
-kettle没有提供直接的插件用于增量处理，因此需要自己设计增量处理的方法。
-
-增量处理的方法很多，这里仅展示其中一种方法：
-
-1.获得需要处理文件总表A。
-
-2.获得已经处理过的文件列表B。这个列表可以来源于数据库，也可来源于文本文件。这里采用后者。
-
-3.使用“合并记录”插件，从A中过滤掉B。“合并记录”插件的flagfield字段，会给出合并的结果。
-
-4.使用“过滤记录”插件，根据flagfield字段的结果，得到过滤后的列表C。C就是真正需要处理的文件列表了。
-
-## HDFS
-
-HDFS的处理比较简单，将普通例子中的本地文件路径，替换为hdfs://形式的hdfs路径即可。
-
-## Hbase
-
-Hbase插件中的其他概念都比较好理解。唯一比较费解的是Mapping name这个名词，实际上它就是Hbase中表的列族/列簇(column family)。
-
-http://www.cnblogs.com/wxjnew/p/3620792.html
-
-http://blog.csdn.net/scorpio3k/article/details/7872179
 
