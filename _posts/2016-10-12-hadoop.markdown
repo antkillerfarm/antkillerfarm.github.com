@@ -314,3 +314,12 @@ Storm是一个大数据领域的实时计算框架。
 
 http://storm.apache.org/
 
+教程：
+
+http://storm.apache.org/releases/current/Tutorial.html
+
+## Storm vs Spark
+
+http://blog.csdn.net/iefreer/article/details/32715153
+
+

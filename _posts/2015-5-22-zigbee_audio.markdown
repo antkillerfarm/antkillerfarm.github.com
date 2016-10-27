@@ -256,3 +256,6 @@ http://blog.csdn.net/xiaojsj111/article/details/30482001
 
 2）芯片不支持的，只能采用分时复用的方式，支持模式共存，又称softAP。
 
+# 舆情分析
+
+http://www.ibm.com/developerworks/cn/data/library/bd-1404optionanalysis/index.html

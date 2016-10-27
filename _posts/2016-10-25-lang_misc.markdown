@@ -141,4 +141,42 @@ sbt有一个和scala类似的命令行交互界面，可以输入相关的命令
 
 * run
 
+## GUI
+
+scala的GUI方案和Java完全一致，只要Java能用的GUI，scala都能用。这里仅以JavaFX为例讨论scala的GUI开发。
+
+方法一：采用一般的scala调用Java的方式。参见：
+
+http://alvinalexander.com/scala/scala-javafx-hello-world-example
+
+正如上面网页指出的，这里的main函数实际上是有一定技巧在里面的，写起来并不简洁，而且代码风格更像是Java，而不是scala。
+
+方法二：ScalaFX
+
+ScalaFX是对JavaFX的封装，风格更接近于scala。
+
+官网：
+
+http://www.scalafx.org/
+
+sbt支持：
+
+`libraryDependencies += "org.scalafx" %% "scalafx" % "8.0.92-R10"`
+
+# Clojure
+
+Clojure是Lisp语言在JVM上的实现。
+
+官网：
+
+http://clojure.org/
+
+http://leiningen.org/
+
+https://github.com/raju-bitter/clojure-javafx-example
+
+# 大数据开源项目的语言分布
+
+
+
 
