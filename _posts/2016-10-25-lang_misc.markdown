@@ -213,7 +213,17 @@ https://tonydeng.github.io/2016/07/19/leiningen-clojure-hello-world/
 
 ## JavaFX
 
-https://github.com/raju-bitter/clojure-javafx-example
+JavaFX和Clojure的结合，本来不是什么新鲜的东西，然而由于相关环境（JDK、leiningen）的演进，网上的demo已经大多不可用了。
+
+这些变动主要包括：
+
+1.由于JDK7的较新版本之后，JavaFX已经集成到JDK中，因此JavaFX的运行时jar不再需要了。相关依赖需要去除。
+
+2.由于leiningen新版本的改变，现在main函数必须在源代码和工程文件中显式定义。
+
+代码参见：
+
+https://github.com/antkillerfarm/antkillerfarm_rubbish/tree/master/clojure/javafx
 
 # Hadopp生态圈的语言分布
 
