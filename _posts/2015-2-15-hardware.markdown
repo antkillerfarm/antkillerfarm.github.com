@@ -167,7 +167,7 @@ http://www.ebaina.com/bbs/forum-97-3.html
 
 安装方法：
 
-sudo apt-get install mysql-server
+`sudo apt-get install mysql-server`
 
 http://www.cnblogs.com/wuhou/archive/2008/09/28/1301071.html
 

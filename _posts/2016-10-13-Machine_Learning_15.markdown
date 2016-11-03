@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（十五）——loss function比较、独立成分分析
-category: technology 
+category: theory 
 ---
 
 ## PCA算法推导（续）
@@ -145,7 +145,7 @@ $$E[xx^T]=E[A'ss^T(A')^T]=E[ARss^T(AR)^T]=ARR^TA^T=AA^T$$
 
 累积分布函数（cumulative distribution function，CDF）是概率论中的一个基本概念。它的定义如下：
 
-$$F(z_0)=P(z\le z_0)=\int_{-\infty}^{z_0}p_z(z)\rm{d} z$$
+$$F(z_0)=P(z\le z_0)=\int_{-\infty}^{z_0}p_z(z)\mathrm{d}z$$
 
 可以看出：
 

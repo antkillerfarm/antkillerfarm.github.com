@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（七）——规则化和模型选择
-category: technology 
+category: theory 
 ---
 
 ## $$\mathcal{H}$$为无限集的情况

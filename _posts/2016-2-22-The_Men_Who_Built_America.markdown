@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  The Men Who Built America（一）
-category: non_technology 
+category: essay 
 ---
 
 ## 序

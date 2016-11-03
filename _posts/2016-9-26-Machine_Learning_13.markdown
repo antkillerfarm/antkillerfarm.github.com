@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（十三）——机器学习中的矩阵方法（3）病态矩阵、协同过滤的ALS算法（1）
-category: technology 
+category: theory 
 ---
 
 ## 向量的范数（续）

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（十）——因子分析
-category: technology 
+category: theory 
 ---
 
 ## 对$$\Sigma$$的限制（续）

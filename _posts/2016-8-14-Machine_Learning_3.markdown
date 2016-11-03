@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（三）——朴素贝叶斯方法、SVM（1）
-category: technology 
+category: theory 
 ---
 
 ## 高斯判别分析（续）

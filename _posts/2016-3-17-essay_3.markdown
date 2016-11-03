@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 一元三次方程求根公式的恩恩怨怨
-category: non_technology 
+category: essay 
 ---
 
 # 一元三次方程求根公式的恩恩怨怨

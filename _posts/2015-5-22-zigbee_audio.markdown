@@ -259,3 +259,26 @@ http://blog.csdn.net/xiaojsj111/article/details/30482001
 # 舆情分析
 
 http://www.ibm.com/developerworks/cn/data/library/bd-1404optionanalysis/index.html
+
+# Ganglia
+
+Ganglia是伯克利开发的一个集群监控软件。可以监视和显示集群中的节点的各种状态信息，比如如：cpu 、mem、硬盘利用率， I/O负载、网络流量情况等，同时可以将历史数据以曲线方式通过php页面呈现。
+
+官网：
+
+http://ganglia.sourceforge.net/
+
+# Parquet
+
+Parquet是Twitter开源的一种供Hadoop使用的列式存储格式。
+
+参考：
+
+http://blog.csdn.net/dc_726/article/details/41777661
+
+从NSM到Parquet：存储结构的衍化
+
+http://blog.csdn.net/dc_726/article/details/41143175
+
+几张图看懂列式存储
+

@@ -225,6 +225,20 @@ JavaFX和Clojure的结合，本来不是什么新鲜的东西，然而由于相�
 
 https://github.com/antkillerfarm/antkillerfarm_rubbish/tree/master/clojure/javafx
 
+# Groovy
+
+Groovy是另一种JVM语言，也是与Java最兼容的语言。普通Java代码可以无修改的在Groovy中编译。Groovy源代码以.groovy为后缀。
+
+Groovy使用gradle作为自动管理工具。
+
+官网：
+
+http://www.groovy-lang.org/
+
+代码参见：
+
+https://github.com/antkillerfarm/antkillerfarm_rubbish/tree/master/groovy/javafx
+
 # Hadopp生态圈的语言分布
 
 项目 | 语言

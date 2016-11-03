@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  图像处理理论（一）——直方图、二值化、滤波基础
-category: technology 
+category: theory 
 ---
 
 # 对比度和亮度

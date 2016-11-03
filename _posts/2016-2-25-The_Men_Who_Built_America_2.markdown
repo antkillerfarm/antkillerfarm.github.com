@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  The Men Who Built America（二）
-category: non_technology 
+category: essay 
 ---
 
 ## 第五集：新的对手（续）

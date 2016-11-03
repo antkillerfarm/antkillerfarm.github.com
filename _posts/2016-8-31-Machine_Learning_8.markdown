@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（八）——在线学习、K-Means算法、混合高斯模型和EM算法
-category: technology 
+category: theory 
 ---
 
 ## 贝叶斯统计和规则化（续）

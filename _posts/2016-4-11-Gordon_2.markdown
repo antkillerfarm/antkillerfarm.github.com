@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  戈登的另一面（二），七年战争
-category: non_technology 
+category: essay 
 ---
 
 # 戈登的另一面（二）

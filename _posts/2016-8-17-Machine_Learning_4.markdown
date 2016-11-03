@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（四）——SVM（2）
-category: technology 
+category: theory 
 ---
 
 ## 拉格朗日对偶（续）

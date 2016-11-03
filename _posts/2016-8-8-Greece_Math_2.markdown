@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  古希腊三大数学书（二）、搞笑图片的数学原理
-category: non_technology 
+title:  古希腊三大数学书（二）, 搞笑图片的数学原理, 随机变量的特征函数
+category: essay 
 ---
 
 # 古希腊三大数学书（二）
@@ -82,11 +82,11 @@ $$\frac{1-\cos x}{x^2}=\frac{2\cdot\sin^2\frac{x}{2}}{4\cdot\frac{x^2}{4}}=\frac
 
 代入能量公式，可得：
 
-$$\int_{-\infty}^{+\infty}\left(\frac{\sin\frac{x}{2}}{\frac{x}{2}}\right)^2\rm{d}x=2\pi\int_{-\infty}^{+\infty}(rect(t))^2\rm{d}t=2\pi\cdot 1$$
+$$\int_{-\infty}^{+\infty}\left(\frac{\sin\frac{x}{2}}{\frac{x}{2}}\right)^2\mathrm{d}x=2\pi\int_{-\infty}^{+\infty}(rect(t))^2\mathrm{d}t=2\pi\cdot 1$$
 
 因此：
 
-$$\int_{-\infty}^{+\infty}\frac{1-\cos x}{x^2}\rm{d}x=\frac{1}{2}\cdot 2\pi=\pi$$
+$$\int_{-\infty}^{+\infty}\frac{1-\cos x}{x^2}\mathrm{d}x=\frac{1}{2}\cdot 2\pi=\pi$$
 
 实际上，这类积分都是Dirichlet积分的变种，解法也不止一种。
 
@@ -95,3 +95,24 @@ $$\int_{-\infty}^{+\infty}\frac{1-\cos x}{x^2}\rm{d}x=\frac{1}{2}\cdot 2\pi=\pi$
 http://wenku.baidu.com/view/bb9c8ffe910ef12d2af9e71a.html
 
 http://wenku.baidu.com/view/1b47c415cc7931b765ce1547.html
+
+# 随机变量的特征函数
+
+特征函数是描述随机变量概率分布的重要工具，其定义如下。
+
+设随机变量X的CDF为$$F_X(x)$$，则其特征函数定义为：
+
+$$\varphi_X(t)=E(e^{itX})=\int_{-\infty}^{+\infty}e^{itx}\mathrm{d}F_X(x)$$
+
+其中，$$i=\sqrt{-1}$$，并且
+
+$$e^{itx}=\cos(tx)+i\sin(tx)$$
+
+根据上述定义，$$\varphi_X(t)$$是$$F_X(x)$$的傅里叶变换。因此$$\varphi_X(t)$$和$$F_X(x)$$包含相同的信息，且是一一对应的。特别的，若X的PDF $$f_X(x)$$存在，则可通过傅立叶逆变换得到：
+
+$$f_X(x)=\frac{1}{2\pi}\int_{-\infty}^{+\infty}e^{-itx}\varphi_X(t)\mathrm{d}t$$
+
+特征函数具有连续可微等良好的分析性质，因此对于那些矩母函数（Moment Generating Function，MGF）不存在的分布（如柯西分布和对数正态分布）很有用处。
+
+特征函数本质上不是概率论的内容，而属于函数论的内容。不用傅立叶变换，用拉普拉斯变换、希尔伯特变换等等，也可能产生类似效果，当然具体结论会颇有不同。
+

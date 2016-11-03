@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  古希腊三大数学书（一）
-category: non_technology 
+category: essay 
 ---
 
 # 古希腊三大数学书（一）

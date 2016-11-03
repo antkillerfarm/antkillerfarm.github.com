@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  活佛趣谈, 民国时期的学历重视度问题（一）
-category: non_technology 
+category: essay 
 ---
 
 # 活佛趣谈

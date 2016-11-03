@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（九）——EM算法
-category: technology 
+category: theory 
 ---
 
 # 高斯混合模型和EM算法（续）

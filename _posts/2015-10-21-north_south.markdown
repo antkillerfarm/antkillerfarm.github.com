@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  两晋南北朝人物志（二）
-category: non_technology 
+category: essay 
 ---
 
 ## 石勒

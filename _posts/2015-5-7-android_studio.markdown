@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Android Studio, Java构建工具
+title:  Android Studio, Java
 category: technology 
 ---
 
@@ -223,81 +223,49 @@ https://android-git.linaro.org/git/
 
 Exagear、Winulator等，可以用来玩PC老游戏。
 
-# Java构建工具
+# Java
 
-构建工具的意义在于，提供一种独立于IDE的软件构建方式。而且通常来说，构建工具更适合特大项目的构建。比如，即使是以功能强大著称的Visual Studio，也提供nmake用以处理特大项目。
+## Java反射机制
 
-常用的Java构建工具主要有：Ant、Maven、Gradle。
+Java反射机制容许程序在运行时加载、探知、使用编译期间完全未知的classes。参见：
 
-## Ant
+http://blog.csdn.net/yongjian1092/article/details/7364451
 
-Ant作为最早的Java构建工具，使用最为广泛，一经使用即取代了之前的IDE工程文件。
+反射机制的一个副产品是可以访问私有变量和私有方法。（笔试题的常客）
 
-PS：那个时代最著名的Java IDE估计要算Borland的JBuilder了。
+http://blog.csdn.net/nisaijie/article/details/5692901
 
-Ant使用XML语言格式的配置文件，并可结合Ivy用以处理网络式的依赖管理。
+## Ubuntu安装Eclipse、Spring
 
-Ant入门教程：
+1.安装Eclipse
 
-http://ant.apache.org/manual/tutorial-HelloWorldWithAnt.html
+`sudo apt-get install eclipse`
 
-从设计思想来看，Ant非常类似make。除了建立依赖关系树之外，其他方面完全不限制编写者的发挥。因此，Ant的自由度很高，但缺点就是编写难度和make也类似。
+2.安装Spring
 
-代码示例：
+`sudo apt-get install libspring-web-portlet-java`
 
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/java_build/ant
+注意：ubuntu软件仓库中还有一个叫做spring的游戏引擎，不要弄错了。
 
-## Maven
+https://github.com/spring-guides/gs-rest-service
 
-Maven仍旧使用XML作为配置文件格式，但使用内置规则简化脚本的编写。
+http://www.mkyong.com/spring/quick-start-maven-spring-example/
 
-Maven最大的优点是，具备从网络上自动下载依赖的能力。比如，最常用的maven repository：
+## JavaFX
 
-https://repository.apache.org/
+使用Java开发GUI是一个很冷门的技能树，即使是多年的Java程序员，也未必接触过这个领域。我上次接触该技能，还是10年前的AWT时代。
 
-http://ebr.springsource.com/repository/app/
+Java的GUI框架，大致有：
 
-https://mvnrepository.com/
+1.awt。最古老的框架。
 
-本地maven repository通常在~/.m2/repository/下，某些直接下载失败的包，可手动安装到该路径下。
+2.swt。Eclipse项目的早期产物，现在Eclipse也不用它了。
 
-Maven入门教程：
+2.swing。和swt差不多同时期的东西，Sun的产物。
 
-http://www.oracle.com/technetwork/cn/community/java/apache-maven-getting-started-1-406235-zhs.html
+3.JavaFX。目前最新的GUI框架，其设计思路和实现，均与WPF是同一档次，已经成为官方推荐的标准框架，并集成到JRE中。
 
-Maven的缺点是规则的力量过于强大，对于规则覆盖不了的情况，很难处理。但好在多数项目并没有那么复杂的情况。
-
-针对规则的复杂，Maven提出了模板的概念，用以简化操作。命令是：
-
-`mvn archetype:generate`
-
-可选的模板参见：
-
-https://maven.apache.org/guides/introduction/introduction-to-archetypes.html
-
-代码示例：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/java_build/maven
-
-## Gradle
-
-XML作为配置文件格式，主要有两个缺点：
-
-1.各种标记占用的空间较大，不简洁。有用的信息淹没在各种标记中，反而降低了配置文件的可读性。
-
-2.XML本身的树状结构，对于条件编译（例如if分支）的情况，没有什么好的语法组织形式。
-
-针对以上问题，Gradle使用Groovy语言作为配置文件格式。它自2012年诞生以来，获得了快速普及，尤其是Google采用Gradle作为Android应用的默认构建工具。
-
-Gradle的设计思想已经脱离了make的范畴。make脚本也好，XML也好，都不是通用程序语言，无论设置再多的规则，也总有满足不了需求的时候。因此，Gradle使用Groovy这种通用程序语言来提供灵活性，同时使用plugin，尤其是官方提供的plugin，来设定规则。就好比是C语言+标准库，这样的组合够强吧。
-
-premake实际上也是类似的设计思路。
-
-代码示例：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/java_build/gradle
-
-# Ubuntu安装Oracle JDK
+## Ubuntu安装Oracle JDK
 
 `sudo apt-get install software-properties-common`
 
@@ -316,4 +284,5 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/java_build/grad
 `cd /usr/lib/jvm`
 
 `sudo ln -s java-7-oracle default-java`
+
 

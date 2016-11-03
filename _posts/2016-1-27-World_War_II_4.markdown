@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  二战漫谈（四）
-category: non_technology 
+category: essay 
 ---
 
 # 历史事件或人物的自我解读（续）

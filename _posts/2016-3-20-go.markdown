@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  写在AlphaGo与李世石的人机大战之后
-category: non_technology 
+category: essay 
 ---
 
 # 写在AlphaGo与李世石的人机大战之后

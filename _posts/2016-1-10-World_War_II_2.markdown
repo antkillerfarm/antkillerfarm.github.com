@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  二战漫谈（二）
-category: non_technology 
+category: essay 
 ---
 
 # 军队战斗力排行（续）

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  二战漫谈（三）
-category: non_technology 
+category: essay 
 ---
 
 # 各国伪政权和流亡政府（续）

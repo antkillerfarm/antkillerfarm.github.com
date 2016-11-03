@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（五）——SVM（3）
-category: technology 
+category: theory 
 ---
 
 ## 规则化和不可分情况处理（续）

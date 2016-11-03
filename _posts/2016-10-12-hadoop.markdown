@@ -190,6 +190,15 @@ http://www.bkjia.com/Linux/1076682.html
 
 https://www.dezyre.com/article/hadoop-mapreduce-vs-apache-spark-who-wins-the-battle/83
 
+## 控制日志输出等级
+
+有的时候为了防止控制台的日志输出过多，淹没了程序的正常输出，可以采用如下方法：
+
+{% highlight java %}
+SparkContext sc = SparkContext.getOrCreate(conf);
+sc.setLogLevel("WARN");
+{% endhighlight %}
+
 ## 基本统计操作
 
 1.统计列中不相同值的个数。
@@ -205,20 +214,6 @@ https://www.dezyre.com/article/hadoop-mapreduce-vs-apache-spark-who-wins-the-bat
 Spark中有个org.apache.spark.sql.functions类，专门针对数据集进行各种运算操作。其中的countDistinct方法可实现该功能。片段示例如下：
 
 `Dataset<Row> df2 = df.agg(functions.countDistinct("userId"));df2.show();`
-
-# Parquet
-
-Parquet是Twitter开源的一种供Hadoop使用的列式存储格式。
-
-参考：
-
-http://blog.csdn.net/dc_726/article/details/41777661
-
-从NSM到Parquet：存储结构的衍化
-
-http://blog.csdn.net/dc_726/article/details/41143175
-
-几张图看懂列式存储
 
 # Kettle
 
@@ -318,16 +313,23 @@ http://storm.apache.org/
 
 http://storm.apache.org/releases/current/Tutorial.html
 
+http://blog.csdn.net/rzhzhz/article/details/8788137
+
+http://ifeve.com/getting-started-with-stom-index/
+
+## Trident
+
+Trident是在storm基础上，一个以realtime计算为目标的高度抽象。它在提供处理大吞吐量数据能力的同时，也提供了低延时分布式查询和有状态流式处理的能力。
+
+教程：
+
+http://storm.apache.org/releases/current/Trident-tutorial.html
+
+http://blog.csdn.net/derekjiang/article/details/9126185
+
 ## Storm vs Spark
 
 http://blog.csdn.net/iefreer/article/details/32715153
 
-# Ganglia
-
-Ganglia是伯克利开发的一个集群监控软件。可以监视和显示集群中的节点的各种状态信息，比如如：cpu 、mem、硬盘利用率， I/O负载、网络流量情况等，同时可以将历史数据以曲线方式通过php页面呈现。
-
-官网：
-
-http://ganglia.sourceforge.net/
 
 

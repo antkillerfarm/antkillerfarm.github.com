@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（十二）——机器学习中的矩阵方法（2）特征值和奇异值
-category: technology 
+category: theory 
 ---
 
 ## QR分解（续）

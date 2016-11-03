@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  二战漫谈（五）, 民国时期的学历重视度问题（二）
-category: non_technology 
+category: essay 
 ---
 
 # 历史事件或人物的自我解读（续）

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  戈登的另一面（一）
-category: non_technology 
+category: essay 
 ---
 
 # 戈登的另一面

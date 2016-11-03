@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  图像处理理论（二）——形态学、边缘检测、图像金字塔
-category: technology 
+category: theory 
 ---
 
 # 膨胀与腐蚀(Dilation & Erosion)

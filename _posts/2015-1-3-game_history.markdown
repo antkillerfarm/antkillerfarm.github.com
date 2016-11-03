@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  我的PC Game
-category: non_technology 
+category: essay
 ---
 
 # 2010.2
