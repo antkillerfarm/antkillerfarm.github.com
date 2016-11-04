@@ -317,6 +317,10 @@ http://blog.csdn.net/rzhzhz/article/details/8788137
 
 http://ifeve.com/getting-started-with-stom-index/
 
+http://blog.csdn.net/NB_vol_1/article/details/46287077
+
+http://www.open-open.com/lib/view/open1374979211233.html
+
 ## Trident
 
 Trident是在storm基础上，一个以realtime计算为目标的高度抽象。它在提供处理大吞吐量数据能力的同时，也提供了低延时分布式查询和有状态流式处理的能力。
@@ -331,5 +335,7 @@ http://blog.csdn.net/derekjiang/article/details/9126185
 
 http://blog.csdn.net/iefreer/article/details/32715153
 
+## 问题汇总
 
+http://blog.sina.com.cn/s/blog_8c243ea30101k0k1.html
 

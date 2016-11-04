@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  古希腊三大数学书（二）, 搞笑图片的数学原理, 随机变量的特征函数
+title:  古希腊三大数学书（二）, 搞笑图片的数学原理, 随机变量的特征函数, 傅里叶变换, 拉普拉斯变换
 category: essay 
 ---
 
@@ -115,4 +115,66 @@ $$f_X(x)=\frac{1}{2\pi}\int_{-\infty}^{+\infty}e^{-itx}\varphi_X(t)\mathrm{d}t$$
 特征函数具有连续可微等良好的分析性质，因此对于那些矩母函数（Moment Generating Function，MGF）不存在的分布（如柯西分布和对数正态分布）很有用处。
 
 特征函数本质上不是概率论的内容，而属于函数论的内容。不用傅立叶变换，用拉普拉斯变换、希尔伯特变换等等，也可能产生类似效果，当然具体结论会颇有不同。
+
+# 傅里叶变换
+
+$$\hat{f}(\xi) = \int_{-\infty}^{+\infty} f(x)\ e^{- 2\pi i x \xi}\mathrm{d}x$$
+
+傅里叶变换是最基本的频域变换，这里不再赘述，只是提供一些有意思的图示。
+
+正弦波的叠加（傅里叶级数）：
+
+![](/images/article/Fourier_series_sawtooth_wave_circles_animation.gif)
+
+![](/images/article/Fourier_series_square_wave_circles_animation.gif)
+
+时域、频域、相位：
+
+![](/images/article/fourier.jpg)
+
+傅里叶级数与傅里叶变换：
+
+![](/images/article/fourier_2.jpg)
+
+欧拉公式：
+
+![](/images/article/euler.jpg)
+
+欧拉公式所描绘的，是一个随着时间变化，在复平面上做圆周运动的点，随着时间的改变，在时间轴上就成了一条螺旋线。如果只看它的实数部分，也就是螺旋线在左侧的投影，就是一个最基础的余弦函数。而右侧的投影则是一个正弦函数。
+
+**正弦波的叠加**，也可以理解为**螺旋线的叠加**在实数空间的投影。
+
+![](/images/article/fourier_3.jpg)
+
+参考：
+
+https://zhuanlan.zhihu.com/p/19763358
+
+# 拉普拉斯变换
+
+$$F(s) =\int_0^\infty e^{-st} f(t)\mathrm{d}t,s = \sigma + i \omega$$
+
+傅里叶变换的收敛有一个狄利克雷条件，要求信号绝对可积/绝对可和。
+
+为了使不满足这一条件的信号，也能读出它的“频率”，可以采用拉普拉斯变换和Z变换。它们对“频率”的含义做出了扩充，使得大多数有用信号都具有了对应的“频率”域表达式。
+
+拉普拉斯变换将频率从实数推广为复数，因而傅里叶变换变成了拉普拉斯变换的一个特例。当s为纯虚数时，$$x(t)$$的拉普拉斯变换，即为$$x(t)$$的傅里叶变换。
+
+从图像的角度来说，拉普拉斯变换得到的频谱是一个复平面上的函数。
+
+![](/images/article/laplace.jpg)
+
+而傅里叶变换得到的频谱，则是从虚轴上切一刀，得到的函数的剖面。
+
+![](/images/article/laplace_2.jpg)
+
+![](/images/article/laplace_3.jpg)
+
+参考：
+
+https://www.zhihu.com/question/22085329
+
+# 希尔伯特变换
+
+
 
