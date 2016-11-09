@@ -261,9 +261,6 @@ http://www.open-open.com/lib/view/open1374979211233.html
 
 `mvn compile exec:java -Dstorm.topology=org.apache.storm.starter.ExclamationTopology`
 
-
-
-
 ## Trident
 
 Trident是在storm基础上，一个以realtime计算为目标的高度抽象。它在提供处理大吞吐量数据能力的同时，也提供了低延时分布式查询和有状态流式处理的能力。
@@ -281,3 +278,10 @@ http://blog.csdn.net/iefreer/article/details/32715153
 ## 问题汇总
 
 http://blog.sina.com.cn/s/blog_8c243ea30101k0k1.html
+
+# Zookeeper
+
+http://www.cnblogs.com/lpshou/archive/2013/06/14/3136904.html
+
+http://www.ibm.com/developerworks/cn/opensource/os-cn-zookeeper/index.html
+

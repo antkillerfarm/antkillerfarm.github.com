@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenCV
+title:  OpenCV, 云计算论文集
 category: technology 
 ---
 
@@ -316,6 +316,8 @@ http://www.cnblogs.com/fengzheng/p/4974509.html
 
 《The Google File System》（2003）
 
+开源实现：Hadoop
+
 >作者：Sanjay Ghemawat，Ph.D. in Computer Science from MIT，2009年当选美国国家工程学院院士。
 
 >Howard Gobioff(1971 – 2008)，Carnegie Mellon University，Ph.D. Computer Science。
@@ -326,11 +328,15 @@ http://www.cnblogs.com/fengzheng/p/4974509.html
 
 《MapReduce: Simplified Data Processing on Large Clusters》（2004）
 
+开源实现：Hadoop
+
 >作者：Jeffrey Dean，University of Washington，Ph.D. Computer Science (1996)，2009年当选美国国家工程学院院士。
 
 >Sanjay Ghemawat。
 
 ## Bigtable
+
+开源实现：Hbase
 
 《Bigtable: A Distributed Storage System for Structured Data》（2006）
 
@@ -354,5 +360,12 @@ http://www.cnblogs.com/fengzheng/p/4974509.html
 
 >Andrey Gubarev, Jing Jing Long, Geoffrey Romer, Shiva Shivakumar, Matt Tolton, Theo Vassilakis
 
+## Chubby Lock
+
+《The Chubby lock service for loosely-coupled distributed systems》（2006）
+
+开源实现：Zookeeper
+
+>作者：Mike Burrows，1963年生，英国计算机学家。剑桥大学博士。2013年当选皇家学会会员。
 
 
