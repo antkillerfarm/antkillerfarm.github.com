@@ -316,7 +316,7 @@ http://www.cnblogs.com/fengzheng/p/4974509.html
 
 《The Google File System》（2003）
 
-开源实现：Hadoop
+开源实现：Hadoop HDFS
 
 >作者：Sanjay Ghemawat，Ph.D. in Computer Science from MIT，2009年当选美国国家工程学院院士。
 
@@ -328,7 +328,7 @@ http://www.cnblogs.com/fengzheng/p/4974509.html
 
 《MapReduce: Simplified Data Processing on Large Clusters》（2004）
 
-开源实现：Hadoop
+开源实现：Hadoop MapReduce
 
 >作者：Jeffrey Dean，University of Washington，Ph.D. Computer Science (1996)，2009年当选美国国家工程学院院士。
 

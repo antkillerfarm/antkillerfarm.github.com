@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Hadoop, Spark, Kettle
+title:  Hadoop, Spark
 category: technology 
 ---
 
@@ -22,11 +22,18 @@ http://hadoop.apache.org/
 
 http://hadoop.apache.org/docs/current/
 
-Hadoop框架及生态圈：
+广义的Hadoop包含一个庞大的生态圈：
 
 http://cqwjfck.blog.chinaunix.net/uid-22312037-id-3969789.html
 
 www.360doc.com/content/14/0113/17/15109633_345010019.shtml
+
+狭义的Hadoop包含如下组件：
+
+>Hadoop Common   
+>Hadoop Distributed File System(HDFS)   
+>Hadoop YARN   
+>Hadoop MapReduce
 
 ## 编译
 
@@ -81,6 +88,21 @@ http://www.cnblogs.com/serendipity/archive/2011/08/23/2151031.html
 hadoop fs：使用面最广，可以操作任何文件系统。
 
 hadoop dfs与hdfs dfs：只能操作HDFS文件系统相关（包括与Local FS间的操作），前者已经Deprecated，一般使用后者。
+
+## 服务端口
+
+Hadoop自带了一些web服务端口，如下表所示：
+
+默认端口 | 设置位置 | 描述信息
+8020 |  | namenode RPC交互端口
+8021 |  | JT RPC交互端口
+50030 | mapred.job.tracker.http.address | JOBTRACKER的HTTP服务器和端口
+50070 | dfs.http.address | NAMENODE的HTTP服务器和端口
+50010 | dfs.datanode.address | DATANODE控制端口，主要用于DATANODE初始化时，向NAMENODE提出注册和应答请求
+50020 | dfs.datanode.ipc.address | DATANODE的RPC服务器地址和端口
+50060 | mapred.task.tracker.http.address | TASKTRACKER的HTTP服务器和端口
+50075 | dfs.datanode.http.address | DATANODE的HTTP服务器和端口
+50090 | dfs.secondary.http.address | 辅助DATANODE的HTTP服务器和端口
 
 # Hbase
 
@@ -176,7 +198,7 @@ https://www.iteblog.com/pdf/1675
 
 ## Spark部署
 
-Spark没有服务程序，因此无须部署，只需要在集群中的某台机器上安装spark，进行任务提交即可。
+Spark没有服务程序，因此无须部署，只需要在集群中的某台机器上安装spark，进行任务提交即可。Spark的并行执行主要依赖Hadoop YARN。
 
 参见：
 
@@ -214,99 +236,5 @@ sc.setLogLevel("WARN");
 Spark中有个org.apache.spark.sql.functions类，专门针对数据集进行各种运算操作。其中的countDistinct方法可实现该功能。片段示例如下：
 
 `Dataset<Row> df2 = df.agg(functions.countDistinct("userId"));df2.show();`
-
-# Kettle
-
-ETL，是英文Extract-Transform-Load的缩写，用来描述将数据从来源端经过抽取（extract）、转换（transform）、加载（load）至目的端的过程。这个过程有时又被叫做“数据清洗”。
-
-Kettle是一款国外开源的ETL工具。其官网为：
-
-http://community.pentaho.com/projects/data-integration/
-
-从大的方面来说，Kettle的工作，可分为Job和Trans两类。
-
-Job是个大尺度的工作分类，它操作的对象是文件或数据库级别的。
-
-相对的，Trans只要是些小尺度的工作。它操作的对象是Row，也就是一条记录。
-
-Sqoop是另一个数据转换工具，但是没有IDE，功能也局限于数据格式的转换（仅相当于Kettle中的Trans）。其官网：
-
-http://sqoop.apache.org/
-
-Job可以调用Trans，也可以执行shell、SQL、Sqoop等多种脚本。因此，Kettle和Sqoop的关系不是二选一，而是可以协作的。
-
-Kettle是一个大的工具集，主要包括以下组件：
-
-1.spoon。Kettle的IDE。
-
-2.pan。用于执行Trans文件（以ktr为后缀）。
-
-3.Kitchen。用于执行Job文件（以kjb为后缀）。
-
-## 命令行执行Job和Trans
-
-`pan -file=/path/to/ktr`
-
-`kitchen -file=/path/to/kjb`
-
-参见：
-
-http://www.cnblogs.com/wxjnew/p/3620792.html
-
-官网资料：
-
-http://wiki.pentaho.com/display/EAI/Pan+User+Documentation
-
-http://wiki.pentaho.com/display/EAI/Kitchen+User+Documentation
-
-命令行不仅可以执行Job和Trans，还可以向Job和Trans传递参数。参见pan和kitchen命令的-param选项。
-
-Job和Trans对命令行参数的处理，有相关的插件，参见：
-
-http://blog.csdn.net/scorpio3k/article/details/7872179
-
-## 文本处理
-
-Kettle的文本处理以“行”为单位。下图是一个实际的使用流程图：
-
-![](/images/article/kettle.png)
-
-1.原始数据来自网络爬虫抓取的数据，它的主体是一个json文件，然而在每一条记录的前后都有一些特殊的字符串，因此从整体来说，并不是一个合法的json文件。
-
-2.采用“字符串替换”插件，去除非法字符串。这里需要注意的是，由于整个过程是数据流形式的，因此，无法在一个步骤中，同时去掉前后两个字符串，而必须分为两个步骤。
-
-3.替换之后，原先有字符串的行，可能变成空行，这是可以使用“过滤记录”插件。
-
-## 文件的增量处理
-
-![](/images/article/kettle_2.png)
-
-kettle没有提供直接的插件用于增量处理，因此需要自己设计增量处理的方法。
-
-增量处理的方法很多，这里仅展示其中一种方法：
-
-1.获得需要处理文件总表A。
-
-2.获得已经处理过的文件列表B。这个列表可以来源于数据库，也可来源于文本文件。这里采用后者。
-
-3.使用“合并记录”插件，从A中过滤掉B。“合并记录”插件的flagfield字段，会给出合并的结果。
-
-4.使用“过滤记录”插件，根据flagfield字段的结果，得到过滤后的列表C。C就是真正需要处理的文件列表了。
-
-## HDFS
-
-HDFS的处理比较简单，将普通例子中的本地文件路径，替换为hdfs://形式的hdfs路径即可。
-
-## Hbase
-
-Hbase插件中的其他概念都比较好理解。唯一比较费解的是Mapping name这个名词，实际上它就是Hbase中表的列族/列簇(column family)。
-
-# Solr
-
-http://blog.csdn.net/aidayei/article/details/6526986
-
-http://outofmemory.cn/code-snippet/3659/Solr-configuration-zhongwen-fenci-qi
-
-http://opennlp.apache.org/
 
 

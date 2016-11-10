@@ -281,7 +281,16 @@ http://blog.sina.com.cn/s/blog_8c243ea30101k0k1.html
 
 # Zookeeper
 
+bin/zkServer.sh status
+
 http://www.cnblogs.com/lpshou/archive/2013/06/14/3136904.html
 
 http://www.ibm.com/developerworks/cn/opensource/os-cn-zookeeper/index.html
 
+# Solr
+
+http://blog.csdn.net/aidayei/article/details/6526986
+
+http://outofmemory.cn/code-snippet/3659/Solr-configuration-zhongwen-fenci-qi
+
+http://opennlp.apache.org/
