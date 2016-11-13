@@ -192,6 +192,14 @@ http://openclassroom.stanford.edu/MainFolder/VideoPage.php?course=MachineLearnin
 
 Andrew Ng的公开课视频。
 
+http://old.sebug.net/paper/books/scipydoc/index.html
+
+用Python做科学计算
+
+https://www.zhihu.com/question/21664179
+
+如何在论文中画出漂亮的插图？
+
 ## 使用细节
 
 ### saturate_cast
