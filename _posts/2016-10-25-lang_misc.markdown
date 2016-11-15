@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  小众语言集中营, Scala, Clojure
+title:  小众语言集中营, Scala, Clojure, Groovy
 category: technology 
 ---
 

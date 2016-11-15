@@ -168,6 +168,18 @@ http://blog.csdn.net/pipisorry/article/details/46618991
 
 这两篇，都是马尔科夫随机过程相关的blog。
 
+http://mp.weixin.qq.com/s?__biz=MjM5MTQzNzU2NA==&mid=2651645872&idx=1&sn=e7b34d0df78a8eda7b71ecf169ce5c38
+
+分辨真假数据科学家的20个问题及回答
+
+http://old.sebug.net/paper/books/scipydoc/index.html
+
+用Python做科学计算
+
+https://www.zhihu.com/question/21664179
+
+如何在论文中画出漂亮的插图？
+
 ## 斯坦福相关课程
 
 http://cs224d.stanford.edu/
@@ -191,14 +203,6 @@ Andrew Ng，也就是吴恩达写的讲义，写的非常浅显易懂。
 http://openclassroom.stanford.edu/MainFolder/VideoPage.php?course=MachineLearning
 
 Andrew Ng的公开课视频。
-
-http://old.sebug.net/paper/books/scipydoc/index.html
-
-用Python做科学计算
-
-https://www.zhihu.com/question/21664179
-
-如何在论文中画出漂亮的插图？
 
 ## 使用细节
 

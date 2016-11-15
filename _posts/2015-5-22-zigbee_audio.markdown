@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Zigbee音频, 6LowPAN, IEEE 802
+title:  Zigbee音频, 6LowPAN, IEEE 802, Ganglia, Parquet
 category: technology 
 ---
 

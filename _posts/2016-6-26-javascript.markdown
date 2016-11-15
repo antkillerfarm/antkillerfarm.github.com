@@ -325,3 +325,9 @@ Step3还添加了fadeOutLeft动画，为了在两种动画之间切换，引入�
 
 2.`<a href="javascript:void(0);" onclick="function()"></a>`或者`<a href="javascript:;" onclick="function()"></a>`表示这个链接不跳转，而执行一段js脚本。
 
+# JS特效资料
+
+https://github.com/wagerfield/flat-surface-shader
+
+这个网站提供一种浮动的多边形表面的特效，适合作为登录页的背景。
+

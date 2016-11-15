@@ -229,56 +229,6 @@ WPS分为PBC(BUTTON)和PIN两种方式
 
 输入完PIN码后,点下一步,一会儿后,WPS安全连接成功建立。
 
-# Storm
-
-Storm是一个大数据领域的实时计算框架。
-
-官网：
-
-http://storm.apache.org/
-
-教程：
-
-http://storm.apache.org/releases/current/Tutorial.html
-
-http://blog.csdn.net/rzhzhz/article/details/8788137
-
-http://ifeve.com/getting-started-with-stom-index/
-
-http://blog.csdn.net/NB_vol_1/article/details/46287077
-
-http://www.open-open.com/lib/view/open1374979211233.html
-
-## 示例
-
-这里使用源代码中自带的示例。
-
-1.下载源代码。
-
-2.`mvn clean install -DskipTests=true`
-
-3.进入examples/storm-starter目录：
-
-`mvn compile exec:java -Dstorm.topology=org.apache.storm.starter.ExclamationTopology`
-
-## Trident
-
-Trident是在storm基础上，一个以realtime计算为目标的高度抽象。它在提供处理大吞吐量数据能力的同时，也提供了低延时分布式查询和有状态流式处理的能力。
-
-教程：
-
-http://storm.apache.org/releases/current/Trident-tutorial.html
-
-http://blog.csdn.net/derekjiang/article/details/9126185
-
-## Storm vs Spark
-
-http://blog.csdn.net/iefreer/article/details/32715153
-
-## 问题汇总
-
-http://blog.sina.com.cn/s/blog_8c243ea30101k0k1.html
-
 # Zookeeper
 
 bin/zkServer.sh status
@@ -289,8 +239,59 @@ http://www.ibm.com/developerworks/cn/opensource/os-cn-zookeeper/index.html
 
 # Solr
 
+## Solr和Lucene的关系
+
+Lucene是一个基于Java的全文信息检索工具包，它不是一个完整的搜索应用程序，而是为你的应用程序提供索引和搜索功能。
+
+Solr是一种开放源码的基于Lucene的Java搜索服务器。它是Lucene的子项目，是Lucene面向企业搜索应用的扩展。
+
+简单的说，Lucene是库，而Solr是一个调度Lucene库的Web服务器。
+
+## 概况
+
+官网：
+
+http://lucene.apache.org/solr/
+
+教程：
+
+http://lucene.apache.org/solr/quickstart.html
+
+网上的资料有些已经很老了，不看也罢。这是官方的Quick Start，必看之。
+
+相关资料：
+
+http://www.solr.cc/blog/
+
 http://blog.csdn.net/aidayei/article/details/6526986
 
 http://outofmemory.cn/code-snippet/3659/Solr-configuration-zhongwen-fenci-qi
 
 http://opennlp.apache.org/
+
+## start命令
+
+Solr的运行需要启动相应的服务程序。启动命令如下：
+
+`bin/solr start -e cloud -noprompt`
+
+其中的cloud表示SolrCloud示例模式，即在一台PC上启动若干进程的所谓伪分布式模式。除此之外，还有techproducts、dih、schemaless等示例模式。
+
+这些示例模式对于快速了解Solr很有帮助。
+
+## Post工具
+
+从本质来说，Solr是一个Web服务器。所有的服务请求都以http post的形式提交给Solr。因此，为了方便使用，Solr项目专门提供了post工具。
+
+post工具在bin文件夹下，是一个Unix shell脚本。对于Windows用户，Solr提供了post.jar可执行文件，它在example/exampledocs下。
+
+## SolrCloud
+
+这是官方Quick Start的默认模式。我们首先对一些概念进行一下讲解。（相关内容参见《Apache Solr Reference Guide》末尾的术语表）
+
+**Cluster：** 由若干Node组成的集群，使用Zookeeper进行协调。
+
+**Node：** 一个运行Solr的JVM实例。
+
+
+
