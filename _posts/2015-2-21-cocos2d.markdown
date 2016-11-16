@@ -325,6 +325,8 @@ $$
 
 # Blog维护日志
 
+2016.11.3 文章分为Technology、Theory、Essay三类。
+
 2016.8.1 添加blog数量的统计信息，将MathJax升级到2.6.1。
 
 2016.4.12 将MathJax等资源切换为国内的cdn。

@@ -182,8 +182,8 @@ $$p(x;\mu,\Sigma)=\frac{1}{(2\pi)^{n/2}\lvert\Sigma\rvert^{1/2}}\exp\left(-\frac
 
 首先，定义排列A的反序向量V（Inversion Vector）。下面举一个包含6个元素的例子：
 
-序列 | 4 1 5 2 6 3
-反序向量 | 0 1 0 2 0 3
+| 序列 | 4 1 5 2 6 3 |
+| 反序向量 | 0 1 0 2 0 3 |
 
 $$V_i=\sum_{j=1}^{i-1}f(i,j),
 f(i,j)=\begin{cases}

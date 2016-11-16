@@ -180,6 +180,18 @@ https://www.zhihu.com/question/21664179
 
 如何在论文中画出漂亮的插图？
 
+https://www.zhihu.com/question/28171555
+
+如何理解“量子退火”？
+
+https://zhuanlan.zhihu.com/p/20756711
+
+用Excel做出强大漂亮的数据地图
+
+https://commons.wikimedia.org/wiki/Main_Page
+
+一个图片资源站点
+
 ## 斯坦福相关课程
 
 http://cs224d.stanford.edu/

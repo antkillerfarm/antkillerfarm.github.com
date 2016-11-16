@@ -141,12 +141,12 @@ gst-launch-1.0 -v dataurisrc uri="data:image/png;base64,iVBORw0KGgo...." \
 
 ## GStreamer应用的内存占用情况
 
-场景 | 内存占用
+| 场景 | 内存占用 |
 |:--:|:--:|
-播放本地音频文件 | ～10MB
-播放远程音频文件 | ～25MB
-gmediarender（非播放状态） | 50MB～65MB
-gmediarender（播放状态）| 60MB～85MB
+| 播放本地音频文件 | ～10MB |
+| 播放远程音频文件 | ～25MB |
+| gmediarender（非播放状态） | 50MB～65MB |
+| gmediarender（播放状态）| 60MB～85MB |
 
 ## audioconvert
 

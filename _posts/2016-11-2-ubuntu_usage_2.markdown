@@ -114,12 +114,12 @@ graphviz包括了以下工具：
 
 # 产品设计工具
 
-类别 | 收费 | 免费
+| 类别 | 收费 | 免费 |
 |:--:|:--:|:--:|
-Office | MS Office | LibreOffice
-流程图 | MS Visio | DIA、Kivio
-思维导图 | Mindmanager | FreeMind
-快速原型 | Axure RP | pencil
+| Office | MS Office | LibreOffice |
+| 流程图 | MS Visio | DIA、Kivio |
+| 思维导图 | Mindmanager | FreeMind |
+| 快速原型 | Axure RP | pencil |
 
 # 发行版乱战
 

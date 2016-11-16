@@ -290,13 +290,13 @@ Pre-emphasis,预加重。与之对应的是De-emphasis去加重。是一项关�
 
 常见并行计算框架
 
-名称 | 优点 | 缺点
+| 名称 | 优点 | 缺点 |
 |:--:|:--:|:--:|
-CUDA | 生态系统良好，发展成熟。 | 只能NV的卡。
-OpenCL | 跨平台，很容易异构计算。 | 大家都把它当作干儿子，没人认真写它的驱动。
-C++ AMP | 基于Direct compute，易于使用。 | Windows Only。
-OpenMP | 移植改动少 | CPU多线程而已，和GPU无关。
-Metal | for iOS | -
+| CUDA | 生态系统良好，发展成熟。 | 只能NV的卡。 |
+| OpenCL | 跨平台，很容易异构计算。 | 大家都把它当作干儿子，没人认真写它的驱动。 |
+| C++ AMP | 基于Direct compute，易于使用。 | Windows Only。 |
+| OpenMP | 移植改动少 | CPU多线程而已，和GPU无关。 |
+| Metal | for iOS | - |
 
 其他的并行计算框架还有：OpenACC、AMD stream。
 

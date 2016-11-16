@@ -16,8 +16,8 @@ $$p(z^{(i)}=j\vert x^{(i)};\phi,\mu,\Sigma)=\frac{p(x^{(i)}\vert z^{(i)}=j;\mu,\
 
 K-means算法各个聚类的特征都是一样的，也就是“圆圈”的半径一致。而GMM算法的“圆圈”半径可以不同。如下面两图所示：
 
-![](/images/article/EM_2.png) | ![](/images/article/EM_3.png)
-K-means算法 | GMM算法
+| ![](/images/article/EM_2.png) | ![](/images/article/EM_3.png) |
+| K-means算法 | GMM算法 |
 
 GMM算法结果也是局部最优解。对其他参数取不同的初始值进行多次计算同样适用于GMM算法。
 

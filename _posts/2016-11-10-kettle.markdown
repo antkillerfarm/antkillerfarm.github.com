@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Kettle, Fedora, CentOS
+title:  Kettle, Fedora, CentOS, Solr
 category: technology 
 ---
 
@@ -158,4 +158,106 @@ start-stop-daemon是Ubuntu中用的比较多的工具，但是CentOS中并没有
 https://packagecloud.io/willgarcia/start-stop-daemon/install
 
 上面的网页提供了一种办法。但是由于网络不好，中间步骤的文件有时需要手动下载才行。
+
+# Solr
+
+## Solr和Lucene的关系
+
+Lucene是一个基于Java的全文信息检索工具包，它不是一个完整的搜索应用程序，而是为你的应用程序提供索引和搜索功能。
+
+Solr是一种开放源码的基于Lucene的Java搜索服务器。它是Lucene的子项目，是Lucene面向企业搜索应用的扩展。
+
+简单的说，Lucene是库，而Solr是一个调度Lucene库的Web服务器。
+
+## 概况
+
+官网：
+
+http://lucene.apache.org/solr/
+
+教程：
+
+http://lucene.apache.org/solr/quickstart.html
+
+网上的资料有些已经很老了，不看也罢。这是官方的Quick Start，必看之。
+
+相关资料：
+
+http://www.solr.cc/blog/
+
+http://blog.csdn.net/aidayei/article/details/6526986
+
+http://outofmemory.cn/code-snippet/3659/Solr-configuration-zhongwen-fenci-qi
+
+http://opennlp.apache.org/
+
+## start命令
+
+Solr的运行需要启动相应的服务程序。启动命令如下：
+
+`bin/solr start -e cloud -noprompt`
+
+其中的cloud表示SolrCloud示例模式，即在一台PC上启动若干进程的所谓伪分布式模式。除此之外，还有techproducts、dih、schemaless等示例模式。
+
+这些示例模式对于快速了解Solr很有帮助。
+
+## Post工具
+
+从本质来说，Solr是一个Web服务器。所有的服务请求都以http post的形式提交给Solr。因此，为了方便使用，Solr项目专门提供了post工具。
+
+post工具在bin文件夹下，是一个Unix shell脚本。对于Windows用户，Solr提供了post.jar可执行文件，它在example/exampledocs下。
+
+## SolrCloud
+
+这是官方Quick Start的默认模式。我们首先对一些概念进行一下讲解。（相关内容参见《Apache Solr Reference Guide》末尾的术语表）
+
+**Cluster：** 由若干Node组成的集群，使用Zookeeper进行协调。这是Solr中物理层面的最大单元。
+
+**Node：** 一个运行Solr的JVM实例。
+
+文件的**索引（index）**用于对文件资源进行定位，它分为**逻辑索引**和**物理索引**两种。从冗余备灾的角度出发，一个物理索引被备份到若干个Node中，而这些不同Node上内容相同的物理索引，由于表示的含义是相同的，因此从逻辑上说，算是同一个逻辑索引。
+
+在Solr中，物理索引被叫做**Replica**，其中副本个数被称为Replication Factor。一个Node可包含多个Replica。
+
+由于物理索引分散在若干不同Node中，因此，其对应的逻辑索引，也分散在若干不同Node中。这些逻辑索引的其中一个实例被称为**Core**。因此，Core和Replica是一一对应的（尽管它们的含义不同）。显然一个逻辑索引包含了若干个位于不同Node中的Core。
+
+若干个逻辑索引组成了一个**Shard**。而若干Shard组成一个**Collection**。Collection是Solr中逻辑层面的最大单元，类似于其他分布式系统中的Task。
+
+属于同一个**Shard**的若干个Replica中，有且仅有一个**Leader**，用于协调索引的更新。
+
+![](/images/article/solrcloud.png)
+
+上图是SolrCloud模式默认情况下的图示。
+
+其中包括一个名叫gettingstarted的Collection。这个Collection有两个Shard，每个Shard有两个Replica。
+
+这里来个今年美国大选的梗：
+
+>记的以前有人说硅谷的政治正确已经到给程序起名字不能带slave了。所以以前熟悉的master slave模式现在很少用了。现在叫leader follower，也可以叫master worker，就是不能有slave。
+
+## Quick Start
+
+这是官方Quick Start的摘要版本，相关步骤不做过多解释。
+
+1.启动Solr。
+
+`bin/solr start -e cloud -noprompt`
+
+2.查看Solr Admin UI。
+
+http://localhost:8983/solr/
+
+2.创建索引。
+
+`bin/post -c gettingstarted docs/`
+
+3.对索引结果进行查询搜索。
+
+Web方式：
+
+http://localhost:8983/solr/#/gettingstarted/query
+
+HTTP方式：
+
+http://localhost:8983/solr/gettingstarted/select?wt=json&indent=true&q=foundation
 

@@ -93,17 +93,18 @@ hadoop dfs与hdfs dfs：只能操作HDFS文件系统相关（包括与Local FS�
 
 Hadoop自带了一些web服务端口，如下表所示：
 
-默认端口 | 设置位置 | 描述信息
-8020 |  | namenode RPC交互端口
-8021 |  | JT RPC交互端口
-8080 |  | Storm UI
-50030 | mapred.job.tracker.http.address | JOBTRACKER的HTTP服务器和端口
-50070 | dfs.http.address | NAMENODE的HTTP服务器和端口
-50010 | dfs.datanode.address | DATANODE控制端口，主要用于DATANODE初始化时，向NAMENODE提出注册和应答请求
-50020 | dfs.datanode.ipc.address | DATANODE的RPC服务器地址和端口
-50060 | mapred.task.tracker.http.address | TASKTRACKER的HTTP服务器和端口
-50075 | dfs.datanode.http.address | DATANODE的HTTP服务器和端口
-50090 | dfs.secondary.http.address | 辅助DATANODE的HTTP服务器和端口
+| 默认端口 | 设置位置 | 描述信息 |
+|:--|:--|:--|
+| 8020 |  | namenode RPC交互端口 |
+| 8021 |  | JT RPC交互端口 |
+| 8080 |  | Storm UI |
+| 50030 | mapred.job.tracker.http.address | JOBTRACKER的HTTP服务器和端口 |
+| 50070 | dfs.http.address | NAMENODE的HTTP服务器和端口 |
+| 50010 | dfs.datanode.address | DATANODE控制端口，主要用于DATANODE初始化时，向NAMENODE提出注册和应答请求 |
+| 50020 | dfs.datanode.ipc.address | DATANODE的RPC服务器地址和端口 |
+| 50060 | mapred.task.tracker.http.address | TASKTRACKER的HTTP服务器和端口 |
+| 50075 | dfs.datanode.http.address | DATANODE的HTTP服务器和端口 |
+| 50090 | dfs.secondary.http.address | 辅助DATANODE的HTTP服务器和端口 |
 
 ## jps
 
@@ -115,15 +116,16 @@ jps是Java提供的虚拟机进程查看工具。
 
 和hadoop有关的进程包括：
 
-名称 | 说明
-QuorumPeerMain | ZooKeeper Daemon
-DataNode | HDFS Data Node
-HRegionServer | Hbase Region Server
-HMaster | Hbase Master
-NodeManager | YARN Node Manager
-ResourceManager | YARN Resource Manager
-nimbus | Storm nimbus
-supervisor | Storm supervisor
+| 名称 | 说明 |
+|:--|:--|
+| QuorumPeerMain | ZooKeeper Daemon |
+| DataNode | HDFS Data Node |
+| HRegionServer | Hbase Region Server |
+| HMaster | Hbase Master |
+| NodeManager | YARN Node Manager |
+| ResourceManager | YARN Resource Manager |
+| nimbus | Storm nimbus |
+| supervisor | Storm supervisor |
 
 # Hbase
 
@@ -184,16 +186,17 @@ HBase以表的形式存储数据。表有行和列组成。列划分为若干个
 
 ## 常用的HBase Shell命令
 
-名称 | 命令表达式
-创建表 | create '表名称', '列名称1','列名称2','列名称N'
-添加记录 | put '表名称', '行名称', '列名称:', '值'
-查看记录 | get '表名称', '行名称'
-查看表中的记录总数 | count  '表名称'
-删除记录 | delete  '表名' ,'行名称' , '列名称'
-删除一张表 | 先要屏蔽该表，才能对该表进行删除，第一步 disable '表名称' 第二步  drop '表名称'
-查看所有记录 | scan "表名称"  
-查看某个表某个列中所有数据 | scan "表名称" , ['列名称:']
-更新记录 | 就是重写一遍进行覆盖
+| 名称 | 命令表达式 |
+|:--|:--|
+| 创建表 | create '表名称', '列名称1','列名称2','列名称N' |
+| 添加记录 | put '表名称', '行名称', '列名称:', '值' |
+| 查看记录 | get '表名称', '行名称' |
+| 查看表中的记录总数 | count  '表名称' |
+| 删除记录 | delete  '表名' ,'行名称' , '列名称' |
+| 删除一张表 | 先要屏蔽该表，才能对该表进行删除，第一步 disable '表名称' 第二步  drop '表名称' |
+| 查看所有记录 | scan "表名称" |
+| 查看某个表某个列中所有数据 | scan "表名称" , ['列名称:'] |
+| 更新记录 | 就是重写一遍进行覆盖 |
 
 # Spark
 

@@ -95,11 +95,11 @@ $$x_{k+1}=x_k-t_kA_k\nabla f(x_k)$$
 
 ![](/images/article/Newton_method.png)
 
-名称 | 梯度下降算法 | 牛顿迭代法
+| 名称 | 梯度下降算法 | 牛顿迭代法 |
 |:--:|:--:|:--:|
-迭代次数 | 收敛慢，迭代次数多。 | 收敛快，迭代次数少。
-迭代计算复杂度 | $$O(n)$$ | $$O(n^3)$$
-实现难点 | 步长需要一定的方法来确定。 | $$H(x_k)$$需要满秩，且$$H(x_k)^{-1}$$的计算比较复杂，尤其是维数很高的时候。
+| 迭代次数 | 收敛慢，迭代次数多。 | 收敛快，迭代次数少。 |
+| 迭代计算复杂度 | $$O(n)$$ | $$O(n^3)$$ |
+| 实现难点 | 步长需要一定的方法来确定。 | $$H(x_k)$$需要满秩，且$$H(x_k)^{-1}$$的计算比较复杂，尤其是维数很高的时候。 |
 
 梯度下降算法只有当函数为凸函数时，才会严格收敛到最小值。否则的话，可能只是极小值，而非最小值。如下图所示：
 
@@ -107,8 +107,8 @@ $$x_{k+1}=x_k-t_kA_k\nabla f(x_k)$$
 
 凸集（Convex set）的图例如下所示：
 
-![](/images/article/Convex.png) | ![](/images/article/non-Convex.png) | ![](/images/article/convex_function.png)
-Convex set | non-Convex set | convex function
+| ![](/images/article/Convex.png) | ![](/images/article/non-Convex.png) | ![](/images/article/convex_function.png) |
+| Convex set | non-Convex set | convex function |
 
 参考：
 
@@ -146,11 +146,11 @@ $$\theta_j:=\theta_j+\alpha(y^{(i)}-h_{\theta}(x^{(i)}))x^{(i)}_j \tag{4}$$
 ><span style="white-space: pre">	</span>}   
 >}
 
-名称 | 批量梯度下降 | 随机梯度下降
+| 名称 | 批量梯度下降 | 随机梯度下降 |
 |:--:|:--:|:--:|
-特点 | 每向前走一步，都需要遍历整个训练样本集。 | 一个样本接着一个样本的处理数据。
-计算复杂度 | 大 | 小
-收敛程度 | 收敛 | 由于新样本引入新的误差，该算法只能收敛到一定程度，而不能无限逼近最小值。
+| 特点 | 每向前走一步，都需要遍历整个训练样本集。 | 一个样本接着一个样本的处理数据。 |
+| 计算复杂度 | 大 | 小 |
+| 收敛程度 | 收敛 | 由于新样本引入新的误差，该算法只能收敛到一定程度，而不能无限逼近最小值。 |
 
 ## 正规方程组算法
 

@@ -241,11 +241,12 @@ https://github.com/antkillerfarm/antkillerfarm_rubbish/tree/master/groovy/javafx
 
 # Hadopp生态圈的语言分布
 
-项目 | 语言
-Hadoop | Java
-Spark | 主要scala，少量Java
-Kafka | 主要Java，少量scala
-Storm | 主要Java，少量Clojure
+| 项目 | 语言 |
+|:--|:--|
+| Hadoop | Java |
+| Spark | 主要scala，少量Java |
+| Kafka | 主要Java，少量scala |
+| Storm | 主要Java，少量Clojure |
 
 这里需要指出的是，Storm虽然被称为是Clojure语言的最知名作品，然而Clojure所占的代码比并不高，还是Java居多。
 
