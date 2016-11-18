@@ -89,6 +89,16 @@ hadoop fs：使用面最广，可以操作任何文件系统。
 
 hadoop dfs与hdfs dfs：只能操作HDFS文件系统相关（包括与Local FS间的操作），前者已经Deprecated，一般使用后者。
 
+这些命令的选项大部分与linux shell相同，差异点主要在于：
+
+1.HDFS->Local FS。
+
+`hadoop fs -get`
+
+1.Local FS->HDFS。
+
+`hadoop fs -put`
+
 ## 服务端口
 
 Hadoop自带了一些web服务端口，如下表所示：

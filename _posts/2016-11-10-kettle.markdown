@@ -251,6 +251,8 @@ http://localhost:8983/solr/
 
 `bin/post -c gettingstarted docs/`
 
+索引文件默认存储在example/cloud下。
+
 3.对索引结果进行查询搜索。
 
 Web方式：
@@ -260,4 +262,30 @@ http://localhost:8983/solr/#/gettingstarted/query
 HTTP方式：
 
 http://localhost:8983/solr/gettingstarted/select?wt=json&indent=true&q=foundation
+
+## Luke
+
+Luke是一个查看Lucene/Solr/Elasticsearch索引文件的工具。其官网为：
+
+https://github.com/DmitryKey/luke
+
+## IKAnalyzer
+
+IKAnalyzer是一个中文分词器。作者：林良益。
+
+官网：
+
+http://git.oschina.net/wltea/IK-Analyzer-2012FF
+
+作者主页：
+
+https://my.oschina.net/linliangyi/home
+
+github上的fork：
+
+https://github.com/yozhao/IKAnalyzer
+
+# Lucene
+
+http://lucene.apache.org/core/6_3_0/index.html
 

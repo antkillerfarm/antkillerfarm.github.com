@@ -215,8 +215,6 @@ https://repository.apache.org/
 
 http://ebr.springsource.com/repository/app/
 
-https://mvnrepository.com/
-
 本地maven repository通常在~/.m2/repository/下，某些直接下载失败的包，可手动安装到该路径下。
 
 Maven入门教程：
@@ -236,6 +234,28 @@ https://maven.apache.org/guides/introduction/introduction-to-archetypes.html
 代码示例：
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/java_build/maven
+
+### 插件和依赖的版本控制
+
+Maven允许同一个软件包的不同版本安装在同一台PC上。比如程序A可以使用spring v3.1，而程序B可以使用spring v3.2。
+
+它的实现方式是：同一个软件包的不同版本，放在不同的路径下。
+
+插件和依赖一般使用version标签定义所使用的版本。版本标签在大多数示例中一般是固定值，这样可以确保部署的一致性。
+
+然而对于一些简单的demo，特别是比较老的demo来说，老旧的版本标签意味着，需要从repo中下载老的库，速度慢且占用空间大。
+
+因此，在开发用的机器上，通常需要将同一类应用的各个插件和依赖配置为同一版本，以节省空间。
+
+插件和依赖的版本号，可用以下网站查询：
+
+https://mvnrepository.com/
+
+此外，还可以用range dependency机制，直接使用最新版本。示例如下：
+
+`<version>[2.40.0,)</version>`
+
+这里的[2.40.0,)表示取2.40.0以上最新版本。注意只有依赖可以使用这种语法，插件是不行的。
 
 ### 更换mirror
 

@@ -231,10 +231,19 @@ WPS分为PBC(BUTTON)和PIN两种方式
 
 # Zookeeper
 
+http://zookeeper.apache.org/
+
 bin/zkServer.sh status
 
 http://www.cnblogs.com/lpshou/archive/2013/06/14/3136904.html
 
 http://www.ibm.com/developerworks/cn/opensource/os-cn-zookeeper/index.html
 
+# Jetty & Spring
+
+https://www.eclipse.org/jetty/
+
+http://spring.io/
+
+https://github.com/jasonish/jetty-springmvc-jsp-template
 
