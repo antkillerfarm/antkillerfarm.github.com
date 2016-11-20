@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Emacs, Vi, Logo, perl, Lisp
+title:  Emacs, Vi, Logo, perl, Lisp, Groovy
 category: technology 
 ---
 
@@ -305,3 +305,27 @@ perl的语法和C差别不算太大，好多语法大致上从关键字也可以
 
 综上可见，Lisp开发GUI不是可能性的问题，而是一个有待重新发掘的问题。
 
+# Groovy
+
+Groovy是另一种JVM语言，也是与Java最兼容的语言。普通Java代码可以无修改的在Groovy中编译。Groovy源代码以.groovy为后缀。
+
+Groovy使用gradle作为自动管理工具。
+
+官网：
+
+http://www.groovy-lang.org/
+
+代码参见：
+
+https://github.com/antkillerfarm/antkillerfarm_rubbish/tree/master/groovy/javafx
+
+# Hadopp生态圈的语言分布
+
+| 项目 | 语言 |
+|:--|:--|
+| Hadoop | Java |
+| Spark | 主要scala，少量Java |
+| Kafka | 主要Java，少量scala |
+| Storm | 主要Java，少量Clojure |
+
+这里需要指出的是，Storm虽然被称为是Clojure语言的最知名作品，然而Clojure所占的代码比并不高，还是Java居多。

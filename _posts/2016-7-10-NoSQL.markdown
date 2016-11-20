@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NoSQL, GStreamer（三）
+title:  NoSQL, GStreamer（三）, Clojure
 category: technology 
 ---
 
@@ -161,3 +161,64 @@ new_pad_type = new_pad.query_caps(None).to_string()
 
 从这里也可以看出，gst_parse_launch会自动处理媒体流的格式匹配问题，而使用普通函数的时候，必须自己编程处理格式匹配的问题。
 
+# Clojure
+
+Clojure是Lisp语言在JVM上的实现。源代码以.clj为后缀。
+
+官网：
+
+http://clojure.org/
+
+Clojure的安装主要有两种方法：
+
+1.
+
+`sudo apt-get install clojure1.6`
+
+2.Clojure的全部功能都被放在clojure-1.8.0.jar中，因此实际上并不需要安装。所谓安装，不过是下载jar，然后让程序能够找到jar即可。因此，更好的办法是利用我们下面提到的leiningen，自动下载相关依赖。
+
+## leiningen
+
+leiningen是Clojure的自动管理工具。
+
+官网：
+
+http://leiningen.org/
+
+project.clj是Leigingen为项目添加的配置文件，类似于Maven的pom.xml。
+
+project.clj中可以定义项目所需的Clojure的版本，并自动下载依赖。因此，很多Clojure项目在依赖上，往往只写leiningen和maven，根本就不提Clojure。这一点和其他编程语言，包括同为JVM语言的scala，还是差异挺大的。
+
+## Hello World
+
+1.
+
+`lein new app hello`
+
+2.
+
+`cd hello`
+
+`lein run`
+
+这里要注意路径，一定要在project.cl所在的路径下执行lein命令，否则会报如下错误：
+
+`No :main namespace specified in project.clj.`
+
+参见：
+
+https://tonydeng.github.io/2016/07/19/leiningen-clojure-hello-world/
+
+## JavaFX
+
+JavaFX和Clojure的结合，本来不是什么新鲜的东西，然而由于相关环境（JDK、leiningen）的演进，网上的demo已经大多不可用了。
+
+这些变动主要包括：
+
+1.由于JDK7的较新版本之后，JavaFX已经集成到JDK中，因此JavaFX的运行时jar不再需要了。相关依赖需要去除。
+
+2.由于leiningen新版本的改变，现在main函数必须在源代码和工程文件中显式定义。
+
+代码参见：
+
+https://github.com/antkillerfarm/antkillerfarm_rubbish/tree/master/clojure/javafx

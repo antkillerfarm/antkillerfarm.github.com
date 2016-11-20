@@ -240,42 +240,6 @@ https://gnu.org/software/octave/
 
 `sudo apt-get install octave`
 
-# R
-
-R语言是另一个应用较广的数学工具语言和环境，主要应用于统计学和数据挖掘等领域。在这些领域，其影响力甚至超过了Matlab。
-
-R语言的语法来自于1970年代贝尔实验室发明的S语言，因此又被称为“GNU S”。
-
-官网：
-
-https://www.r-project.org/
-
-软件仓库：
-
-https://cran.r-project.org/
-
-安装方法:
-
-`sudo apt-get install r-base r-base-dev`
-
-R语言有个和python类似的命令行交互环境。除此之外，还有第三方提供的GUI环境，最常用的是RStudio，其官网：
-
-https://www.rstudio.com/
-
-参考：
-
-http://cos.name/
-
-统计之都（Capital of Statistics，简称COS）成立于2006年5月，是一个旨在推广与应用统计学知识的网站和社区。
-
-http://yihui.name/
-
-谢益辉，Iowa State University博士，目前就职于RStudio。中国R语言会议、COS社区创办者。
-
-http://www.r-user.com/
-
-一个中文的R语言网站
-
 PDF：probability distribution function
 
 CDF：cumulative distribution function

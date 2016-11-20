@@ -62,7 +62,7 @@ category: essay
 
 首先需要明确的是，上图中的被积函数$$\frac{1-\cos x}{x^2}$$的原函数不是初等函数，因此无法使用牛顿-莱布尼茨公式，求解该积分值。
 
-它的解法其实图片中已经给出了线索，那就是傅立叶变换的能量公式。
+它的解法其实图片中已经给出了线索，那就是傅立叶变换的能量积分公式。
 
 以下是推导步骤：
 
@@ -80,7 +80,7 @@ $$\frac{1-\cos x}{x^2}=\frac{2\cdot\sin^2\frac{x}{2}}{4\cdot\frac{x^2}{4}}=\frac
 
 ![](/images/article/fourier.png)
 
-代入能量公式，可得：
+代入能量积分公式，可得：
 
 $$\int_{-\infty}^{+\infty}\left(\frac{\sin\frac{x}{2}}{\frac{x}{2}}\right)^2\mathrm{d}x=2\pi\int_{-\infty}^{+\infty}(rect(t))^2\mathrm{d}t=2\pi\cdot 1$$
 

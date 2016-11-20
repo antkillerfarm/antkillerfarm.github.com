@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  小众语言集中营, Scala, Clojure, Groovy
+title:  小众语言集中营, Scala, R
 category: technology 
 ---
 
@@ -163,92 +163,185 @@ sbt支持：
 
 `libraryDependencies += "org.scalafx" %% "scalafx" % "8.0.92-R10"`
 
-# Clojure
+# R
 
-Clojure是Lisp语言在JVM上的实现。源代码以.clj为后缀。
+R语言是另一个应用较广的数学工具语言和环境，主要应用于统计学和数据挖掘等领域。在这些领域，其影响力甚至超过了Matlab。
 
-官网：
-
-http://clojure.org/
-
-Clojure的安装主要有两种方法：
-
-1.
-
-`sudo apt-get install clojure1.6`
-
-2.Clojure的全部功能都被放在clojure-1.8.0.jar中，因此实际上并不需要安装。所谓安装，不过是下载jar，然后让程序能够找到jar即可。因此，更好的办法是利用我们下面提到的leiningen，自动下载相关依赖。
-
-## leiningen
-
-leiningen是Clojure的自动管理工具。
+R语言的语法来自于1970年代贝尔实验室发明的S语言，因此又被称为“GNU S”。
 
 官网：
 
-http://leiningen.org/
+https://www.r-project.org/
 
-project.clj是Leigingen为项目添加的配置文件，类似于Maven的pom.xml。
+软件仓库：
 
-project.clj中可以定义项目所需的Clojure的版本，并自动下载依赖。因此，很多Clojure项目在依赖上，往往只写leiningen和maven，根本就不提Clojure。这一点和其他编程语言，包括同为JVM语言的scala，还是差异挺大的。
+https://cran.r-project.org/
 
-## Hello World
+安装方法:
 
-1.
+`sudo apt-get install r-base r-base-dev`
 
-`lein new app hello`
+书籍：
 
-2.
+R语言的书籍主要有三本。
 
-`cd hello`
+1.《An Introduction to R》。这个是官网的免费书，焦点集中于语言本身，对标准库没有介绍。
 
-`lein run`
+2.《R Reference Card》。一个只有几页纸的卡片式书籍，列出了应用开发中涉及的主要函数的名称。
 
-这里要注意路径，一定要在project.cl所在的路径下执行lein命令，否则会报如下错误：
+3.《R in a Nutshell》。篇幅近600页，堪称R语言最权威书籍，兼顾语言和应用两方面。
 
-`No :main namespace specified in project.clj.`
+参考：
 
-参见：
+http://cos.name/
 
-https://tonydeng.github.io/2016/07/19/leiningen-clojure-hello-world/
+统计之都（Capital of Statistics，简称COS）成立于2006年5月，是一个旨在推广与应用统计学知识的网站和社区。
 
-## JavaFX
+http://yihui.name/
 
-JavaFX和Clojure的结合，本来不是什么新鲜的东西，然而由于相关环境（JDK、leiningen）的演进，网上的demo已经大多不可用了。
+谢益辉，Iowa State University博士，目前就职于RStudio。中国R语言会议、COS社区创办者。
 
-这些变动主要包括：
+http://www.r-user.com/
 
-1.由于JDK7的较新版本之后，JavaFX已经集成到JDK中，因此JavaFX的运行时jar不再需要了。相关依赖需要去除。
+一个中文的R语言网站
 
-2.由于leiningen新版本的改变，现在main函数必须在源代码和工程文件中显式定义。
+http://blog.fens.me/series-r/
 
-代码参见：
+R的极客理想系列文章。作者张丹，R语言资深用户，系统架构师。
 
-https://github.com/antkillerfarm/antkillerfarm_rubbish/tree/master/clojure/javafx
+http://www.r-tutor.com/
 
-# Groovy
+另一个大牛Chi Yau的网站。
 
-Groovy是另一种JVM语言，也是与Java最兼容的语言。普通Java代码可以无修改的在Groovy中编译。Groovy源代码以.groovy为后缀。
+## 交互环境
 
-Groovy使用gradle作为自动管理工具。
+R语言有个和python类似的命令行交互环境。
 
-官网：
+安装之后，运行R命令即可进入该环境（下文简称为shell），`>quit()`可退出shell。
 
-http://www.groovy-lang.org/
+除此之外，还有第三方提供的GUI环境，最常用的是RStudio，其官网：
 
-代码参见：
+https://www.rstudio.com/
 
-https://github.com/antkillerfarm/antkillerfarm_rubbish/tree/master/groovy/javafx
+## 执行脚本
 
-# Hadopp生态圈的语言分布
+R脚本一般以.R为后缀，其执行方法有两种：
 
-| 项目 | 语言 |
-|:--|:--|
-| Hadoop | Java |
-| Spark | 主要scala，少量Java |
-| Kafka | 主要Java，少量scala |
-| Storm | 主要Java，少量Clojure |
+1.Linux shell:`/usr/lib/R/bin/Rscript a.R`
 
-这里需要指出的是，Storm虽然被称为是Clojure语言的最知名作品，然而Clojure所占的代码比并不高，还是Java居多。
+2.R shell:`source(a.R)`
 
+## 帮助文档
+
+CRAN虽然提供了各个软件包的帮助文档，然而无论是数据的组织，还是界面，都不如RStudio，建议使用后者的帮助文档。
+
+## 安装软件包
+
+以rjson包为例：
+
+`install.packages("rjson")`
+
+这条命令会让你选择CRAN镜像，国内有三个镜像，速度都不错。
+
+使用软件包：
+
+`library(rjson)`
+
+## 语言细节
+
+R语言由于早期用户主要是非软件工程人员，因此，它是一个面向过程的语言。
+
+然而正如C语言向C++的演进，以及JavaScript向JQuery的演进一样，面向过程的语言经过一系列非常技巧性的封装之后，都能具备面向对象的能力。参见：
+
+http://blog.fens.me/r-object-oriented-intro/
+
+由于面向对象的特性比较高端，不易掌握，因此这里的讨论仍局限于面向过程领域，以C语言作为对比，列出R语言和它的区别。
+
+### 注释&行
+
+注释以`#`开始至行尾。没有多行注释符号，但可在RStudio中，选中相关行，进行注释。
+
+一般情况下，一行对应一条语句。一行有多个语句时，以`;`分隔。一条语句分散在多行时，以`+`作为续行符号。
+
+### 变量声明
+
+R和python类似，变量使用前无需声明类型。
+
+### 赋值
+
+除了`=`之外，还可以使用`<-、<<-、->、->>`进行赋值。上述符号中，箭头指向的变量为被赋值的变量，因此，R不仅可以进行常规的从右向左赋值，也可进行从左向右的赋值。例如：
+
+`3->a`
+
+### 下标
+
+数组（Array、Vector）下标从1开始。由于所有R变量都被当成向量，因此对于单元素的变量，`a`和`a[1]`是等价的。
+
+列表（List）的下标一般是个name。这里使用一个解析后的json文件作为示例，演示一下在复杂结构中下标的用法。
+
+{% highlight json %}
+{"data":[
+{"readCount":"97","title":"R1"},
+{"readCount":"469","title":"R2"}
+]}
+{% endhighlight %}
+
+假设这个json文件保存在列表json中，则`"readCount":"97"`需要这样引用：
+
+`json$data[[1]]$readCount`
+
+### for循环
+
+示例：
+
+`for (i in 2:5-1) {print(i)}`
+
+这里需要注意，`2:5-1`等价于`(2:5)-1`，而不是`2:(5-1)`，`:`比`-`的优先级高。
+
+### paste
+
+paste可将多个字符串连接到一起。这个函数的声明很有意思：
+
+`paste (..., sep = " ", collapse = NULL)`
+
+也就是说R支持不定参数，而且该参数并不一定在最后。可用如下方式避免参数指派上的混乱：
+
+`paste("1st", "2nd", "3rd", collapse = ", ")`
+
+### 自定义函数
+
+示例：
+
+{% highlight R %}
+add<-function(x,y){
+  return (x+y)
+}
+{% endhighlight %}
+
+这种方式和JavaScript十分类似。
+
+### 操作mysql数据库
+
+1.安装非R依赖。
+
+`install.packages`可以自动处理R依赖，然而它不能处理非R依赖。
+
+`sudo apt-get install libmysqlclient-dev`
+
+2.安装RMySQL包。
+
+`install.packages("RMySQL")`
+
+示例：
+
+{% highlight R %}
+conn<-dbConnect(MySQL(), dbname = "ml", username="root", password="123456")
+summary(conn)
+query<-dbSendQuery(conn, "SELECT * FROM csdn")
+data<-fetch(query, n = -1)
+dbClearResult(query)
+print(data)
+dbDisconnect(conn)
+{% endhighlight %}
 
 
