@@ -172,6 +172,10 @@ http://mp.weixin.qq.com/s?__biz=MjM5MTQzNzU2NA==&mid=2651645872&idx=1&sn=e7b34d0
 
 分辨真假数据科学家的20个问题及回答
 
+http://mp.weixin.qq.com/s?__biz=MzIzODExMDE5MA==&mid=2694182661&idx=1&sn=ddfb3f301f5021571992824b21ddcafe
+
+循环神经网络
+
 http://old.sebug.net/paper/books/scipydoc/index.html
 
 用Python做科学计算

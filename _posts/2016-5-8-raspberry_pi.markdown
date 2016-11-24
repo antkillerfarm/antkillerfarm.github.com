@@ -257,6 +257,16 @@ http://json.org/
 
 https://github.com/json-c/json-c
 
+和XML Path类似，JSON也定义了自己的JSON Path。参见：
+
+http://goessner.net/articles/JsonPath/
+
+参考：
+
+https://addons.mozilla.org/zh-CN/firefox/addon/jsonview/
+
+jsonview是一个用于检验JSON格式是否合法的Firefox插件。
+
 ## BSON
 
 Binary JSON是在JSON的基础上，添加了索引及数据类型的一种二进制格式。相比JSON，它牺牲了可阅读性，得到了可遍历性和高效性。
@@ -290,3 +300,5 @@ JSON采用的是，不同的语言提供不同的库来解析的方式。
 而Protocol Buffers使用同一个格式文件，为不同语言生成相应的代码。这和CORBA的做法很类似。
 
 与Protocol Buffers类似的方案，还有Facebook提出的Thrift、ZeroC提出的Slice和Hadoop Avro。
+
+

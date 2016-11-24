@@ -82,6 +82,10 @@ kettle没有提供直接的插件用于增量处理，因此需要自己设计�
 
 4.使用“过滤记录”插件，根据flagfield字段的结果，得到过滤后的列表C。C就是真正需要处理的文件列表了。
 
+## 字段合并操作
+
+Kettle并未提供“字段合并”的插件，因为这个功能如果使用Javascript的话，也就是一行的事情。
+
 ## HDFS
 
 HDFS的处理比较简单，将普通例子中的本地文件路径，替换为hdfs://形式的hdfs路径即可。
@@ -190,6 +194,10 @@ http://blog.csdn.net/aidayei/article/details/6526986
 http://outofmemory.cn/code-snippet/3659/Solr-configuration-zhongwen-fenci-qi
 
 http://opennlp.apache.org/
+
+http://www.importnew.com/12707.html
+
+全文检索引擎Solr系列—–全文检索基本原理
 
 ## start命令
 
