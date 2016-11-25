@@ -285,4 +285,17 @@ Java的GUI框架，大致有：
 
 `sudo ln -s java-7-oracle default-java`
 
+## Java的注释型配置
+
+Spring等框架中，有很多配置项是以注释的形式出现在代码中，这也成为Java代码中很有特色的一点。
+
+早期的Java代码中，虽然已经开始使用注释，然而这时的注释并不参与自身程序的运行，而主要是为第三方程序提供帮助，比如最著名的Java Doc。
+
+从Java 1.5之后，JDK开始提供相关的注释接口。参见：
+
+http://www.open-open.com/lib/view/open1353144218545.html
+
+还有一个叫做ADP4J用于简化处理注释。参见：
+
+http://www.open-open.com/lib/view/open1369278937654.html
 

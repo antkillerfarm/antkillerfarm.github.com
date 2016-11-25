@@ -290,6 +290,10 @@ http://repo2.maven.org/maven2/
 
 本来国内的OSChina有一个Maven mirror。但现在已经不可用了。
 
+### Eclipse工程转为Maven工程
+
+选择项目，右键点击->Configure->Convert to Maven Project
+
 ## uber-jar
 
 uber在德语中，表示above或over。uber-jar实际上就是将程序的依赖也打包，而生成的jar。例如maven中，可用：

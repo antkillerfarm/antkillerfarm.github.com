@@ -104,6 +104,10 @@ C代码相关的内容：
 
 以指定编码保存文件--M-x set-buffer-file-coding-system
 
+查看当前文件编码--M-x describe-coding-system
+
+这个命令可以查到emacs中支持的文件编码的名称。
+
 ## 使用cscope+emacs在Ubuntu 12.04下的注意事项
 
 1）除了安装cscope还需要安装cscope-el，不然找不到xcscope.el
@@ -333,3 +337,4 @@ https://github.com/antkillerfarm/antkillerfarm_rubbish/tree/master/groovy/javafx
 | Storm | 主要Java，少量Clojure |
 
 这里需要指出的是，Storm虽然被称为是Clojure语言的最知名作品，然而Clojure所占的代码比并不高，还是Java居多。
+

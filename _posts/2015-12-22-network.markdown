@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  网络杂谈
+title:  网络杂谈, 数据描述语言
 category: technology 
 ---
 
@@ -263,3 +263,64 @@ https://github.com/jasonish/jetty-springmvc-jsp-template
 
 一个Jetty+Spring MVC+JSP的demo。
 
+# 数据描述语言
+
+## JSON
+
+JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式。 易于人阅读和编写。同时也易于机器解析和生成。 它基于JavaScript Programming Language, Standard ECMA-262 3rd Edition - December 1999的一个子集。
+
+其官网为：
+
+http://json.org/
+
+官网上列出了各种语言的JSON解析库。其中C语言的解析库中以json-c最为流行，其官网为：
+
+https://github.com/json-c/json-c
+
+和XML Path类似，JSON也定义了自己的JSON Path。参见：
+
+http://goessner.net/articles/JsonPath/
+
+参考：
+
+https://addons.mozilla.org/zh-CN/firefox/addon/jsonview/
+
+jsonview是一个用于检验JSON格式是否合法的Firefox插件。
+
+http://www.bejson.com/
+
+一个在线验证JSON语法的库。
+
+## BSON
+
+Binary JSON是在JSON的基础上，添加了索引及数据类型的一种二进制格式。相比JSON，它牺牲了可阅读性，得到了可遍历性和高效性。
+
+BSON最早由MongoDB项目提出并使用，它的官网为：
+
+http://bsonspec.org/
+
+从中可以看出大多数语言的BSON解析库，都是MongoDB项目提供的。
+
+## YAML
+
+YAML(Yet Another Markup Language)是JSON的超集。它没有JSON那么流行，主要被用于科学计算领域，比如OpenCV项目。它的官网为：
+
+http://yaml.org/
+
+这个网站很有特色，它本身就是一个YAML文件。
+
+## Protocol Buffers
+
+Protocol Buffers是Google公司开发的一种数据描述语言。它的官网为：
+
+https://github.com/google/protobuf
+
+这是一种注重效率，而可阅读性几乎为零的二进制格式。其效率超过BSON，但除非有相关格式文件，否则完全无法阅读。而BSON作为JSON的扩展，只有扩展的那部分不可读，其余部分仍保留JSON的可读性。
+
+格式文件是Protocol Buffers中的重要概念，也是和JSON等格式在使用思路上最大的区别。
+
+JSON采用的是，不同的语言提供不同的库来解析的方式。
+
+而Protocol Buffers使用同一个格式文件，为不同语言生成相应的代码。这和CORBA的做法很类似。
+
+与Protocol Buffers类似的方案，还有Facebook提出的Thrift、ZeroC提出的Slice和Hadoop Avro。
