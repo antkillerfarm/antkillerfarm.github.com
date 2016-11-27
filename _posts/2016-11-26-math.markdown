@@ -1,0 +1,153 @@
+---
+layout: post
+title:  数学狂想曲——搞笑图片的数学原理, 随机变量的特征函数, 傅里叶变换, 拉普拉斯变换
+category: theory 
+---
+
+# 搞笑图片的数学原理
+
+![](/images/article/integral.jpg)
+
+这是一个在各论坛流传已久的图片。这个题目的描述虽不复杂，但仅凭大学本科的高等数学，实际上是搞不定这个问题的。
+
+首先需要明确的是，上图中的被积函数$$\frac{1-\cos x}{x^2}$$的原函数不是初等函数，因此无法使用牛顿-莱布尼茨公式，求解该积分值。
+
+它的解法其实图片中已经给出了线索，那就是傅立叶变换的能量积分公式。
+
+以下是推导步骤：
+
+利用半角公式进行变换。
+
+由半角公式：
+
+$$2\sin^2\frac{x}{2}=1-\cos x$$
+
+可得：
+
+$$\frac{1-\cos x}{x^2}=\frac{2\cdot\sin^2\frac{x}{2}}{4\cdot\frac{x^2}{4}}=\frac{1}{2}\left(\frac{\sin\frac{x}{2}}{\frac{x}{2}}\right)^2$$
+
+查常用函数的傅立叶变换表，可得：
+
+![](/images/article/fourier.png)
+
+代入能量积分公式，可得：
+
+$$\int_{-\infty}^{+\infty}\left(\frac{\sin\frac{x}{2}}{\frac{x}{2}}\right)^2\mathrm{d}x=2\pi\int_{-\infty}^{+\infty}(rect(t))^2\mathrm{d}t=2\pi\cdot 1$$
+
+因此：
+
+$$\int_{-\infty}^{+\infty}\frac{1-\cos x}{x^2}\mathrm{d}x=\frac{1}{2}\cdot 2\pi=\pi$$
+
+实际上，这类积分都是Dirichlet积分的变种，解法也不止一种。
+
+参见：
+
+http://wenku.baidu.com/view/bb9c8ffe910ef12d2af9e71a.html
+
+http://wenku.baidu.com/view/1b47c415cc7931b765ce1547.html
+
+下面回到原题，何为“能量积分”呢？
+
+由电学的功率公式和欧姆定理可得：
+
+$$W=UI=\frac{U^2}{R}=I^2R$$
+
+可见，无论$$f(t)$$表示电压U，还是表示电流I，$$[f(t)]^2$$都和功率成正比，即$$\int[f(t)]^2\mathrm{d}t$$和能量成正比。
+
+傅立叶变换的能量积分公式的物理意义是：**同一信号的时域能量积分等于它的频域能量积分**。通俗的说就是一个信号的能量，既可以看作是一段时间内信号能量的总和，也可看作是该信号各个频率分量的能量总和。
+
+在历史上，该公式由Marc-Antoine Parseval于1799年发现，最初主要用于研究复变函数，后来才应用到傅立叶变换和信号处理领域。
+
+它的更一般的描述为：**一个信号所含有的能量（功率）恒等于此信号在完备正交函数集中各分量能量（功率）之和**。
+
+>注：Marc-Antoine Parseval des Chênes，1755～1836，法国数学家。曾5次参选法国科学院院士，但都落选了。
+
+# 随机变量的特征函数
+
+特征函数是描述随机变量概率分布的重要工具，其定义如下。
+
+设随机变量X的CDF为$$F_X(x)$$，则其特征函数定义为：
+
+$$\varphi_X(t)=E(e^{itX})=\int_{-\infty}^{+\infty}e^{itx}\mathrm{d}F_X(x)$$
+
+其中，$$i=\sqrt{-1}$$，并且
+
+$$e^{itx}=\cos(tx)+i\sin(tx)$$
+
+根据上述定义，$$\varphi_X(t)$$是$$F_X(x)$$的傅里叶变换。因此$$\varphi_X(t)$$和$$F_X(x)$$包含相同的信息，且是一一对应的。特别的，若X的PDF $$f_X(x)$$存在，则可通过傅立叶逆变换得到：
+
+$$f_X(x)=\frac{1}{2\pi}\int_{-\infty}^{+\infty}e^{-itx}\varphi_X(t)\mathrm{d}t$$
+
+特征函数具有连续可微等良好的分析性质，因此对于那些矩母函数（Moment Generating Function，MGF）不存在的分布（如柯西分布和对数正态分布）很有用处。
+
+特征函数本质上不是概率论的内容，而属于函数论的内容。不用傅立叶变换，用拉普拉斯变换、希尔伯特变换等等，也可能产生类似效果，当然具体结论会颇有不同。
+
+# 傅里叶变换
+
+$$\hat{f}(\xi) = \int_{-\infty}^{+\infty} f(x)\ e^{- 2\pi i x \xi}\mathrm{d}x$$
+
+傅里叶变换是最基本的频域变换，这里不再赘述，只是提供一些有意思的图示。
+
+正弦波的叠加（傅里叶级数）：
+
+![](/images/article/Fourier_series_sawtooth_wave_circles_animation.gif)
+
+![](/images/article/Fourier_series_square_wave_circles_animation.gif)
+
+时域、频域、相位：
+
+![](/images/article/fourier.jpg)
+
+傅里叶级数与傅里叶变换：
+
+![](/images/article/fourier_2.jpg)
+
+欧拉公式：
+
+![](/images/article/euler.jpg)
+
+欧拉公式所描绘的，是一个随着时间变化，在复平面上做圆周运动的点，随着时间的改变，在时间轴上就成了一条螺旋线。如果只看它的实数部分，也就是螺旋线在左侧的投影，就是一个最基础的余弦函数。而右侧的投影则是一个正弦函数。
+
+**正弦波的叠加**，也可以理解为**螺旋线的叠加**在实数空间的投影。
+
+![](/images/article/fourier_3.jpg)
+
+参考：
+
+https://zhuanlan.zhihu.com/p/19763358
+
+# 拉普拉斯变换
+
+$$F(s) =\int_0^\infty e^{-st} f(t)\mathrm{d}t,s = \sigma + i \omega$$
+
+傅里叶变换的收敛有一个狄利克雷条件，要求信号绝对可积/绝对可和。
+
+为了使不满足这一条件的信号，也能读出它的“频率”，可以采用拉普拉斯变换和Z变换。它们对“频率”的含义做出了扩充，使得大多数有用信号都具有了对应的“频率”域表达式。
+
+拉普拉斯变换将频率从实数推广为复数，因而傅里叶变换变成了拉普拉斯变换的一个特例。当s为纯虚数时，$$x(t)$$的拉普拉斯变换，即为$$x(t)$$的傅里叶变换。
+
+从图像的角度来说，拉普拉斯变换得到的频谱是一个复平面上的函数。
+
+![](/images/article/laplace.jpg)
+
+而傅里叶变换得到的频谱，则是从虚轴上切一刀，得到的函数的剖面。
+
+![](/images/article/laplace_2.jpg)
+
+![](/images/article/laplace_3.jpg)
+
+参考：
+
+https://www.zhihu.com/question/22085329
+
+# 复变函数
+
+## 关键知识点
+
+1.复球面表示。
+
+2.条件严格性。
+
+点：连续<可导（可微）<可解析
+
+区域：连续<可导（可微）=可解析

@@ -172,7 +172,7 @@ melpa的安装方法：
 
 重启emacs之后，执行：
 
-`M-x package-load-list`
+`M-x list-packages`
 
 就可以看到melpa的软件包了。
 
