@@ -104,9 +104,11 @@ graphviz包括了以下工具：
 
 `sudo apt-get install go-mtpfs`
 
-`go-mtpfs /media/MyAndroid`
+`sudo chown <user name> /media/mtp`
 
-`fusermount -u /media/MyAndroid`
+`go-mtpfs /media/mtp`
+
+`fusermount -u /media/mtp`
 
 # 文件校验和
 
