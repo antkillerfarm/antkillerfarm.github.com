@@ -6,7 +6,7 @@ category: theory
 
 ## 因子分析的EM估计（续）
 
-去掉和参数无关的部分后，可得：
+去掉和各参数无关的部分后，可得：
 
 $$\begin{align}
 &\sum_{i=1}^mE\left[\log p(x^{(i)}\vert z^{(i)};\mu,\Lambda,\Psi)\right]

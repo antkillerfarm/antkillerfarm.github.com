@@ -177,6 +177,8 @@ https://www.r-project.org/
 
 https://cran.r-project.org/
 
+https://r-forge.r-project.org/
+
 安装方法:
 
 `sudo apt-get install r-base r-base-dev`

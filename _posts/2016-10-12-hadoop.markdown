@@ -139,15 +139,29 @@ jps是Java提供的虚拟机进程查看工具。
 
 # Hbase
 
+官网：
+
 http://hbase.apache.org/
+
+启动脚本：
+
+1.HDFS
 
 `sbin/start-dfs.sh`
 
+2.Hbase
+
 `bin/start-hbase.sh`
+
+参考：
 
 http://www.cnblogs.com/cenyuhai/
 
 这个blog专注于hadoop、hbase、spark。
+
+http://www.cnblogs.com/nexiyi/p/hbase_shell.html
+
+HBase的常用Shell命令
 
 ## 基本概念
 

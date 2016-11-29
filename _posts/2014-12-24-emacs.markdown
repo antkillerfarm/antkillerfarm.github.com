@@ -255,6 +255,18 @@ https://github.com/leoliu/ggtags
 
 http://ensime.github.io/getting_started/
 
+## 添加R支持
+
+我使用的是ESS插件。其官网为：
+
+http://ess.r-project.org/
+
+ESS基本涵盖了RStudio提供的大多数常用功能。但对于变量的查看支持有限，可以配合使用ess-R-data-view插件。其官网：
+
+https://github.com/myuhe/ess-R-data-view.el
+
+上述插件都可在melpa中找到。
+
 # Vi
 
 dd 删除整行

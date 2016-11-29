@@ -86,6 +86,12 @@ kettle没有提供直接的插件用于增量处理，因此需要自己设计�
 
 Kettle并未提供“字段合并”的插件，因为这个功能如果使用Javascript的话，也就是一行的事情。
 
+## 调用外部的Java库
+
+1.首先将该库的jar包，放到Kettle的lib文件夹下。
+
+2.其他步骤和一般Java程序没啥区别：import用到的package，然后写代码，over。
+
 ## HDFS
 
 HDFS的处理比较简单，将普通例子中的本地文件路径，替换为hdfs://形式的hdfs路径即可。

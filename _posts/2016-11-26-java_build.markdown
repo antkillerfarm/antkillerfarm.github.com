@@ -147,7 +147,7 @@ http://repo2.maven.org/maven2/
 
 这种方法下，jar可以和代码放在同一个文件夹下，以便分发。然而这种做法不是官方推荐的做法，在执行时，需要自己处理classpath的问题。
 
-这里吐槽一下Java。Java的classpath选项中，如果指定的jar不止一个，那个两个jar之间需用符号分隔。而这个分隔符在Windows上是`;`，而在Linux上是`:`。居然连这一点都没统一，实在无语。
+这里吐槽一下Java。Java的classpath选项中，如果指定的jar不止一个，那么两个jar之间需用符号分隔。这个分隔符在Windows上是`;`，而在Linux上是`:`。居然连这一点都没统一，实在无语。
 
 ## uber-jar
 
