@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Hadoop, Spark, Storm
+title:  Hadoop, Hbase, Spark
 category: technology 
 ---
 
@@ -124,6 +124,10 @@ jps是Java提供的虚拟机进程查看工具。
 
 `jps -ml`
 
+查到的进程，可用如下方法kill：
+
+`kill -9 <进程号>`
+
 和hadoop有关的进程包括：
 
 | 名称 | 说明 |
@@ -137,11 +141,21 @@ jps是Java提供的虚拟机进程查看工具。
 | nimbus | Storm nimbus |
 | supervisor | Storm supervisor |
 
+## MapReduce编程
+
+教程：
+
+http://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html
+
 # Hbase
 
 官网：
 
 http://hbase.apache.org/
+
+快速开始：
+
+http://hbase.apache.org/book.html#quickstart
 
 启动脚本：
 
@@ -162,6 +176,10 @@ http://www.cnblogs.com/cenyuhai/
 http://www.cnblogs.com/nexiyi/p/hbase_shell.html
 
 HBase的常用Shell命令
+
+http://www.cnblogs.com/Dreama/articles/2219190.html
+
+Hadoop+HBase伪分布式安装配置
 
 ## 基本概念
 
@@ -208,10 +226,21 @@ HBase以表的形式存储数据。表有行和列组成。列划分为若干个
 
 如上图所示，key1,key2,key3是三条记录的唯一的row key值，column-family1,column-family2,column-family3是三个列族，每个列族下又包括几列。比如，column-family1这个列族下包括两列，名字是column1和column2。
 
+HBase中，将一个Column Family中的列存在一起，而不同Column Family的数据则分开。
+
+不要在一张表里定义太多的column family。目前Hbase并不能很好的处理超过2~3个column family的表。因为某个column family在flush的时候，它邻近的column family也会因关联效应被触发flush，最终导致系统产生更多的I/O。
+
+吐槽一下。既然2~3个column family的表都支持的不好，那么似乎表明column family在现阶段只是一个设计的概念，离实用尚有距离。这样做的用意，大概是期待有一天Hbase把这个特性做好之后，上层应用可以无须修改吧。
+
 ## 常用的HBase Shell命令
+
+这些命令可在hbase的控制台输入。进入控制台：
+
+`bin/hbase shell`
 
 | 名称 | 命令表达式 |
 |:--|:--|
+| 查看当前用户 | whoami |
 | 创建表 | create '表名称', '列名称1','列名称2','列名称N' |
 | 添加记录 | put '表名称', '行名称', '列名称:', '值' |
 | 查看记录 | get '表名称', '行名称' |
@@ -284,74 +313,3 @@ sc.setLogLevel("WARN");
 Spark中有个org.apache.spark.sql.functions类，专门针对数据集进行各种运算操作。其中的countDistinct方法可实现该功能。片段示例如下：
 
 `Dataset<Row> df2 = df.agg(functions.countDistinct("userId"));df2.show();`
-
-# Storm
-
-Storm是一个大数据领域的实时计算框架。
-
-官网：
-
-http://storm.apache.org/
-
-教程：
-
-http://storm.apache.org/releases/current/Tutorial.html
-
-http://blog.csdn.net/rzhzhz/article/details/8788137
-
-http://ifeve.com/getting-started-with-stom-index/
-
-http://blog.csdn.net/NB_vol_1/article/details/46287077
-
-http://www.open-open.com/lib/view/open1374979211233.html
-
-## 示例
-
-这里使用源代码中自带的示例。
-
-1.下载源代码。
-
-2.`mvn clean install -DskipTests=true`
-
-3.进入examples/storm-starter目录：
-
-`mvn compile exec:java -Dstorm.topology=org.apache.storm.starter.ExclamationTopology`
-
-## Trident
-
-Trident是在storm基础上，一个以realtime计算为目标的高度抽象。它在提供处理大吞吐量数据能力的同时，也提供了低延时分布式查询和有状态流式处理的能力。
-
-教程：
-
-http://storm.apache.org/releases/current/Trident-tutorial.html
-
-http://blog.csdn.net/derekjiang/article/details/9126185
-
-## Storm vs Spark
-
-http://blog.csdn.net/iefreer/article/details/32715153
-
-## 问题汇总
-
-http://blog.sina.com.cn/s/blog_8c243ea30101k0k1.html
-
-## 集群部署
-
-Storm的本地模式，无须hadoop生态圈软件的支持，自己就能运行。但它的集群部署依赖Zookeeper和YARN。
-
-1.配置YARN和Zookeeper，并启动相关服务进程。
-
-2.配置Storm
-
-https://storm.apache.org/releases/current/Setting-up-a-Storm-cluster.html
-
-3.启动Nimbus和Supervisor
-
-Nimbus和Supervisor都是Storm服务进程，前者运行在Master上，而后者运行在Node上。这里的Master和Node，可以和Zookeeper或YARN设置的不同。
-
-Nimbus的作用是将运行的jar分发到各Node去执行。
-
-虽然`bin/storm nimbus`可以启动nimbus，然而这种方法启动的是前台进程，一旦退出终端，进程就会被杀死。可用如下方法解决之：
-
-`start-stop-daemon --start --background --exec /root/apache-storm-1.0.2/bin/storm nimbus`
-

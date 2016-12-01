@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲——搞笑图片的数学原理, 随机变量的特征函数, 傅里叶变换, 拉普拉斯变换
+title:  数学狂想曲——搞笑图片的数学原理, 欧拉公式, 傅里叶变换
 category: theory 
 ---
 
@@ -62,91 +62,13 @@ $$W=UI=\frac{U^2}{R}=I^2R$$
 
 >注：Marc-Antoine Parseval des Chênes，1755～1836，法国数学家。曾5次参选法国科学院院士，但都落选了。
 
-# 随机变量的特征函数
-
-特征函数是描述随机变量概率分布的重要工具，其定义如下。
-
-设随机变量X的CDF为$$F_X(x)$$，则其特征函数定义为：
-
-$$\varphi_X(t)=E(e^{itX})=\int_{-\infty}^{+\infty}e^{itx}\mathrm{d}F_X(x)$$
-
-其中，$$i=\sqrt{-1}$$，并且
-
-$$e^{itx}=\cos(tx)+i\sin(tx)$$
-
-根据上述定义，$$\varphi_X(t)$$是$$F_X(x)$$的傅里叶变换。因此$$\varphi_X(t)$$和$$F_X(x)$$包含相同的信息，且是一一对应的。特别的，若X的PDF $$f_X(x)$$存在，则可通过傅立叶逆变换得到：
-
-$$f_X(x)=\frac{1}{2\pi}\int_{-\infty}^{+\infty}e^{-itx}\varphi_X(t)\mathrm{d}t$$
-
-特征函数具有连续可微等良好的分析性质，因此对于那些矩母函数（Moment Generating Function，MGF）不存在的分布（如柯西分布和对数正态分布）很有用处。
-
-特征函数本质上不是概率论的内容，而属于函数论的内容。不用傅立叶变换，用拉普拉斯变换、希尔伯特变换等等，也可能产生类似效果，当然具体结论会颇有不同。
-
-# 傅里叶变换
-
-$$\hat{f}(\xi) = \int_{-\infty}^{+\infty} f(x)\ e^{- 2\pi i x \xi}\mathrm{d}x$$
-
-傅里叶变换是最基本的频域变换，这里不再赘述，只是提供一些有意思的图示。
-
-正弦波的叠加（傅里叶级数）：
-
-![](/images/article/Fourier_series_sawtooth_wave_circles_animation.gif)
-
-![](/images/article/Fourier_series_square_wave_circles_animation.gif)
-
-时域、频域、相位：
-
-![](/images/article/fourier.jpg)
-
-傅里叶级数与傅里叶变换：
-
-![](/images/article/fourier_2.jpg)
-
-欧拉公式：
-
-![](/images/article/euler.jpg)
-
-欧拉公式所描绘的，是一个随着时间变化，在复平面上做圆周运动的点，随着时间的改变，在时间轴上就成了一条螺旋线。如果只看它的实数部分，也就是螺旋线在左侧的投影，就是一个最基础的余弦函数。而右侧的投影则是一个正弦函数。
-
-**正弦波的叠加**，也可以理解为**螺旋线的叠加**在实数空间的投影。
-
-![](/images/article/fourier_3.jpg)
-
-参考：
-
-https://zhuanlan.zhihu.com/p/19763358
-
-# 拉普拉斯变换
-
-$$F(s) =\int_0^\infty e^{-st} f(t)\mathrm{d}t,s = \sigma + i \omega$$
-
-傅里叶变换的收敛有一个狄利克雷条件，要求信号绝对可积/绝对可和。
-
-为了使不满足这一条件的信号，也能读出它的“频率”，可以采用拉普拉斯变换和Z变换。它们对“频率”的含义做出了扩充，使得大多数有用信号都具有了对应的“频率”域表达式。
-
-拉普拉斯变换将频率从实数推广为复数，因而傅里叶变换变成了拉普拉斯变换的一个特例。当s为纯虚数时，$$x(t)$$的拉普拉斯变换，即为$$x(t)$$的傅里叶变换。
-
-从图像的角度来说，拉普拉斯变换得到的频谱是一个复平面上的函数。
-
-![](/images/article/laplace.jpg)
-
-而傅里叶变换得到的频谱，则是从虚轴上切一刀，得到的函数的剖面。
-
-![](/images/article/laplace_2.jpg)
-
-![](/images/article/laplace_3.jpg)
-
-参考：
-
-https://www.zhihu.com/question/22085329
-
 # 欧拉公式
 
 由于欧拉大神的贡献很多，数学上以其命名的公式也有很多，而且知名度都不低。日常使用时，如果不以领域做区分，人们根本就不知道谈论的是哪个欧拉公式。
 
 这里主要讨论复变函数领域的基石——欧拉公式：
 
-$$e^x=\cos x + i \sin x$$
+$$e^{ix}=\cos x + i \sin x$$
 
 ## 自然对数e
 
@@ -194,7 +116,7 @@ $$e=\lim_{n\to\infty} \left( 1 + \frac{1}{n} \right)^n$$
 
 对于那时期的人们来说，编制对数表是件巨大的工程，常需要花费数学家数年，甚至数十年的时间。
 
-在大量的实践中，人们发现采用$$\left( 1 + \frac{1}{n} \right)^n$$为底，可以很大程度的节省计算量。
+在大量的实践中，人们发现采用$$\left( 1 + \frac{1}{n} \right)^n,n \gg 0$$为底，可以很大程度的节省计算量。
 
 事实上，最早的几个对数表的作者中，纳皮尔采用$$\left( 1 + \frac{1}{10^7} \right)^{10^7}$$的倒数为底，而比尔吉采用$$\left( 1 + \frac{1}{10^4} \right)^{10^4}$$为底。这两个数分别是$$\frac{1}{e}$$和e的近似值。
 
@@ -256,11 +178,15 @@ $$\cos x=\frac{e^{\sqrt{-1}x}+e^{-\sqrt{-1}x}}{2},\sin x = \frac{e^{\sqrt{-1}x}-
 
 最后，在1748年，Euler指出：
 
-$$e^x=\cos x + i \sin x$$
+$$e^{ix}=\cos x + i \sin x$$
 
 >虚数符号i虽然也是Euler的发明，但那是1777年以后的事情了。这里用的是现代的表示方法。
 
 这个结果最早是Roger Cotes于1714年发现的，Euler算是重新发现。
+
+从牛顿到John Bernoulli、Euler，无穷数列成为当时数学家的一项工具。上述等式中很多都是基于函数的无穷数列展开式的性质得出的。
+
+但与现在主要采用泰勒展开式不同，当时更知名的展开公式是牛顿发明的二项式定理，泰勒展开式用的并不多。
 
 ## 复变Euler公式
 
@@ -270,20 +196,96 @@ Euler时代，人们虽然对于复数的性质做了颇多的探索，但仍难
 
 2.复数的实部和虚部是分开处理的，用途局限于求解实变量微积分。最典型的例子就是，Euler时代的Euler公式，其自变量x是实数。
 
+之后，随着复平面、复数的向量表示逐渐被人接受，人们开始倾向于接受复数是一种数，而不仅仅是一种解方程的技巧。
 
+在复数的系统化中，做出最大贡献的，当属Augustin-Louis Cauchy。
 
-# 复变函数
+具体到Euler公式，Cauchy针对复变函数的特性，定义了如下规则：
 
-## 关键知识点
+$$f(z)$$为一复变函数，且满足：
 
-1.复球面表示。
+1.$$f(z)$$在复平面内处处解析。
 
-2.条件严格性。
+2.$$f'(z)=f(z)$$。
 
-点：连续<可导（可微）<可解析
+3.当$$Im(z)=0$$时，$$f(z)=e^x$$，其中$$x=Re(z)$$。
 
-区域：连续<可导（可微）=可解析
+最终符合这一条件的函数为：
 
-3.函数可微的充要条件：Cauchy-Riemann Equations
+$$e^x(\cos y + i \sin y)$$
 
+因此，复变Euler公式为：
 
+$$e^z=e^x(\cos y + i \sin y)$$
+
+可见，**与原始的Euler公式不同，复变Euler公式不是证明出来的，而是定义出来的**。
+
+## 总结
+
+1.Cardano解三次方程发明虚数。
+
+2.高次幂运算催生对数表。
+
+3.对数表的编制过程中，发现了e。
+
+4.Euler根据无穷数列展开式，发现Euler公式。
+
+5.Cauchy定义了复变Euler公式。
+
+参考：
+
+《古今数学思想》
+
+《不可思议的e》
+
+# 傅里叶变换
+
+$$\hat{f}(\xi) = \int_{-\infty}^{+\infty} f(x)\ e^{- 2\pi i x \xi}\mathrm{d}x$$
+
+傅里叶变换是最基本的频域变换，这里不再赘述，只是提供一些有意思的图示。
+
+正弦波的叠加（傅里叶级数）：
+
+![](/images/article/Fourier_series_sawtooth_wave_circles_animation.gif)
+
+![](/images/article/Fourier_series_square_wave_circles_animation.gif)
+
+时域、频域、相位：
+
+![](/images/article/fourier.jpg)
+
+傅里叶级数与傅里叶变换：
+
+![](/images/article/fourier_2.jpg)
+
+欧拉公式：
+
+![](/images/article/euler.jpg)
+
+欧拉公式所描绘的，是一个随着时间变化，在复平面上做圆周运动的点，随着时间的改变，在时间轴上就成了一条螺旋线。如果只看它的实数部分，也就是螺旋线在左侧的投影，就是一个最基础的余弦函数。而右侧的投影则是一个正弦函数。
+
+**正弦波的叠加**，也可以理解为**螺旋线的叠加**在实数空间的投影。
+
+![](/images/article/fourier_3.jpg)
+
+参考：
+
+https://zhuanlan.zhihu.com/p/19763358
+
+# 一道证明题
+
+设A、B、C为任意可数有限集合，则
+
+$$size(A-C)\le size(A-B)+size(B-C)$$
+
+其中$$size(X)$$表示集合X中的元素个数。
+
+证明：
+
+$$A-C=\{x|x\in A \cap x\notin C\}=\{x|x\in A \cap (x\in B \cup x\notin B)\cap x\notin C\}
+\\=\{x|(x\in A \cap x\notin B \cap x\notin C) \cup (x\in A \cap x\in B \cap x\notin C) \}
+\\\subseteq \{x|(x\in A \cap x\notin B) \cup (x\in B \cap x\notin C) \}=(A-B)\cup (B-C)$$
+
+又因为：$$size(X\cup Y)\le size(X)+size(Y)$$，所以
+
+$$size(A-C)\le size((A-B)\cup (B-C))\le size(A-B)+size(B-C)$$
