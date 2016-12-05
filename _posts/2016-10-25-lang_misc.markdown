@@ -360,4 +360,11 @@ print(data)
 dbDisconnect(conn)
 {% endhighlight %}
 
+### 操作数据集
+
+参考：
+
+https://www.r-bloggers.com/select-operations-on-r-data-frames/
+
+http://www.burns-stat.com/translating-r-sql-basics/
 

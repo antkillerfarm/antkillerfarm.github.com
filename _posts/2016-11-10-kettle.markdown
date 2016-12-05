@@ -98,7 +98,21 @@ HDFS的处理比较简单，将普通例子中的本地文件路径，替换为h
 
 ## Hbase
 
-Hbase插件中的其他概念都比较好理解。唯一比较费解的是Mapping name这个名词，实际上它就是Hbase中表的列族/列簇(column family)。
+Hbase插件中比较费解的是Mapping name这个名词。
+
+从设计初衷来说，kettle本意上是打算利用Mapping将kettle字段映射为Hbase表格的列，从而达到分离两者概念的目的。然而当前的实现中，kettle的所有字段都必须导出到Hbase表格中，不然就会出如下错误：
+
+`Can't find incoming field "short_field1" defined in the mapping "mapping_test"`
+
+用户对Mapping所做的修改，仅限于修改字段名、设定Key、设定字段类型等。
+
+解决办法：
+
+使用“字段选择”插件过滤掉不必要的字段，然后再导出到Hbase。
+
+参见：
+
+http://forums.pentaho.com/archive/index.php/t-94392.html
 
 # Fedora
 
@@ -168,6 +182,38 @@ start-stop-daemon是Ubuntu中用的比较多的工具，但是CentOS中并没有
 https://packagecloud.io/willgarcia/start-stop-daemon/install
 
 上面的网页提供了一种办法。但是由于网络不好，中间步骤的文件有时需要手动下载才行。
+
+## 关于VNC
+
+1.安装
+
+`yum install tightvnc-server`
+
+这里虽然包名叫做tightvnc-server，但实际上用的是tigervnc-server，因此以后者为包名来安装也是可以的。
+
+2.初次启动，设置密码
+
+`vncpasswd`
+
+3.配置分辨率、端口
+
+修改/etc/sysconfig/vncservers：
+
+{% highlight bash %}
+## Single User ##
+VNCSERVERS="1:<user name>"
+VNCSERVERARGS[1]="-geometry 1280x1024"
+{% endhighlight %}
+
+默认端口一般是5900~5904。这里的数组下标表明它使用的端口是5901。
+
+4.启动服务
+
+`/etc/init.d/vncserver start`
+
+参考：
+
+http://www.tecmint.com/install-tightvnc-remote-desktop/
 
 # Solr
 
