@@ -299,3 +299,25 @@ http://www.open-open.com/lib/view/open1353144218545.html
 
 http://www.open-open.com/lib/view/open1369278937654.html
 
+## WebService
+
+WebService经过近二十年的发展，已经有非常多的框架了。知名的有：Axis1、Axis2、Xfire、CXF、JWS等。
+
+其中的JWS在JDK 1.6之后被集成到JDK中，成为了我学习的首选。
+
+JWS包含了JAX-WS、JAX-RS、JAXB、JAXR、SAAJ、StAX等组件。这里主要涉及的是JAX-WS。
+
+
+
+参考：
+
+http://www.blogjava.net/zjhiphop/archive/2009/04/29/webservice.html
+
+http://blog.csdn.net/lifetragedy/article/details/7205832
+
+https://my.oschina.net/fuckmylife0/blog/325432
+
+https://github.com/him-bhar/jax-ws
+
+
+

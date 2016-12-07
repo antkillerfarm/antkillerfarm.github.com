@@ -150,6 +150,50 @@ eXosip在osip上封装了一层，简化了在多媒体会话方面SIP协议的�
 
 http://savannah.nongnu.org/projects/exosip/
 
+## IRC
+
+最近，由于捣鼓VNC剪贴板没有结果，我不得不寻找它的替代方案，这时IRC进入了我的视线。
+
+IRC虽然没有XMPP那么强的功能，但毕竟是20年前的东西了，各种资料和支持都比较完善，使用配置也没有后者那么复杂，是个不错的东西。
+
+### IRC Server
+
+这里推荐两款：
+
+1.ircd-hybrid
+
+http://ircd-hybrid.org/
+
+2.unrealircd
+
+https://www.unrealircd.org/
+
+安装教程：
+
+http://soft.dog/2016/03/25/unrealircd-basic/
+
+### IRC Client
+
+开始使用的是hexchat。官网：
+
+https://hexchat.github.io
+
+Windows版本做的不错，但Linux版本老是运行不起来。。。
+
+最后一气之下，想到了emacs，而后者也不负所望。
+
+`M-x erc`
+
+### IRC命令
+
+常用IRC命令参见：
+
+https://en.wikipedia.org/wiki/List_of_Internet_Relay_Chat_commands
+
+注意细节如下：
+
+1.join命令中输入的channel名如果不存在，则会创建channel。相当于该命令既是加入命令，也是创建命令。
+
 ## NTP
 
 Network Time Protocol，是用来让计算机之间实现时间同步的协议。

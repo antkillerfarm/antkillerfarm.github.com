@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Ubuntu使用技巧（二）
+title:  Ubuntu使用技巧（二）, Fedora, CentOS
 category: technology 
 ---
 
@@ -167,7 +167,13 @@ Linux下的远程桌面软件主要有RealVNC和rdesktop。前者支持VNC协议
 
 `rdesktop -u administrator -p ****** -a 16 192.168.1.1`
 
-# sdkman
+# 安装工具
+
+目前研发用的主流操作系统越来越多，相比于10年前的Windows几乎一统天下，目前Linux、Mac OS X在开发群体中，也有一定的流行度。更不用说Linux本身还有众多的发行版，软件部署工作在这么复杂的环境中，实非易事。
+
+以下介绍的软件，都能不同程度的改善软件部署的工作。
+
+## sdkman
 
 sdkman(The Software Development Kit Manager), 中文名为:软件开发工具管理器．这个工具的主要用途是用来解决在类unix操作系统(如mac, linux等)中多种版本开发工具的切换, 安装和卸载的工作．对于windows系统的用户可以使用Powershell CLI来体验．
 
@@ -183,3 +189,129 @@ http://sdkman.io/
 
 http://blog.csdn.net/heiyouhei123/article/details/51103578
 
+## Flatpak
+
+http://flatpak.org/
+
+## Snap
+
+http://snapcraft.io/
+
+# Fedora
+
+Fedora作为主要的Linux发行版之一，我虽然用的不多，但实际上这却是我最早接触的Linux发行版。后来换用Ubuntu，很大的原因是因为：这是Google为Android选择的开发平台。
+
+最近因为工作需要重新捡起了Fedora。但公司所用的版本太过古老，还是2009年的Fedora 12。所以想了一下，开始试用最新的Fedora 22。这里是使用过程中的一些操作笔记。
+
+## 安装
+
+https://getfedora.org/
+
+这是官方的下载地址。这里我用的是Workstation版本。
+
+Fedora 22的默认桌面是GNOME 3.16，这一版的外观借鉴了Mac OS X的一些设计，让人眼前一亮。
+
+## 安装软件
+
+Fedora 22使用dnf替代yum。因此安装基本gcc开发环境，可用如下命令：
+
+`dnf install gcc kernel-devel patch bison flex subversion`
+
+如果下载速度较慢的话，可以在/etc/dnf/dnf.conf最后添加：
+
+`fastestmirror=true`
+
+保存后，执行
+
+{% highlight bash %}
+$ sudo dnf clean all
+$ sudo dnf makecache
+{% endhighlight %}
+
+此外，和Ubuntu一样，Fedora也有自己的网站可以查询软件包信息：
+
+https://admin.fedoraproject.org/pkgdb/
+
+## 共享文件夹
+
+我用的是VirtualBox的虚拟环境，因此除了在VirtualBox中，设置共享文件夹之外，还需对Fedora进行如下操作：
+
+1.添加用户到vboxsf中。
+
+`usermod -a -G vboxsf <your user name>`
+
+2.重启。（这一步必不可少，否则上面的配置不会生效。）
+
+这样就可以在Fedora中浏览共享文件夹了。
+
+# CentOS
+
+## 关于repo设置
+
+最近在数台PC上部署软件，系统都是CentOS 6。结果发现其中有一台机器无法使用yum安装软件。
+
+解决办法：
+
+1.进入/etc/yum.repos.d中删除CentOS6-Base.repo之外的所有文件。
+
+2.`yum clean all`
+
+第1步很重要，从事后情况来看，故障是由于某些之前的repo现在已经无法连接所致导致的。
+
+## start-stop-daemon
+
+start-stop-daemon是Ubuntu中用的比较多的工具，但是CentOS中并没有。由于start-stop-daemon在ubuntu的dpkg包中，和apt关系比较近，因此直接下载源码，也不是个好办法。
+
+https://packagecloud.io/willgarcia/start-stop-daemon/install
+
+上面的网页提供了一种办法。但是由于网络不好，中间步骤的文件有时需要手动下载才行。
+
+## 关于epel
+
+1.安装epel源
+
+`yum install epel-release`
+
+2.修改/etc/yum.repos.d/epel.repo
+
+将mirrorlist中的https修改为http。否则，会报如下错误：
+
+`Error: Cannot retrieve metalink for repository: epel`
+
+## DNF
+
+`yum install dnf`
+
+这个似乎需要Cent OS 7以上，Cent OS 6反正是不行的。
+
+## 关于VNC
+
+1.安装
+
+`yum install tightvnc-server`
+
+这里虽然包名叫做tightvnc-server，但实际上用的是tigervnc-server，因此以后者为包名来安装也是可以的。
+
+2.初次启动，设置密码
+
+`vncpasswd`
+
+3.配置分辨率、端口
+
+修改/etc/sysconfig/vncservers：
+
+{% highlight bash %}
+## Single User ##
+VNCSERVERS="1:<user name>"
+VNCSERVERARGS[1]="-geometry 1280x1024"
+{% endhighlight %}
+
+默认端口一般是5900~5904。这里的数组下标表明它使用的端口是5901。
+
+4.启动服务
+
+`/etc/init.d/vncserver start`
+
+参考：
+
+http://www.tecmint.com/install-tightvnc-remote-desktop/
