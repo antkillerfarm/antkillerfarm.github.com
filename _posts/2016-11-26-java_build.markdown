@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Java构建工具, Storm
+title:  Java构建工具, Storm, WebService
 category: technology 
 ---
 
@@ -263,4 +263,57 @@ Nimbus的作用是将运行的jar分发到各Node去执行。
 
 `start-stop-daemon --start --background --exec /root/apache-storm-1.0.2/bin/storm nimbus`
 
+# WebService
+
+WebService经过近二十年的发展，已经有非常多的框架了。知名的有：Axis1、Axis2、Xfire、CXF、JWS等。
+
+其中的JWS在JDK 1.6之后被集成到JDK中，成为了我学习的首选。
+
+JWS包含了JAX-WS、JAX-RS、JAXB、JAXR、SAAJ、StAX等组件。这里主要涉及的是JAX-WS。
+
+相关的demo参见：
+
+https://github.com/him-bhar/jax-ws
+
+以下仅对demo的代码和遇到的问题做一下说明。
+
+## 代码详解
+
+这个demo包括
+
+## 编译
+
+`mvn package`
+
+由于我使用的JDK是JDK 1.8，因此会遇到如下问题：
+
+`由于 accessExternalSchema属性设置的限制而不允许 'file' 访问, 因此无法读取方案文档'xjc.xsd'。`
+
+解决方法：
+
+{% highlight xml %}
+<plugin>
+    <groupId>org.jvnet.jax-ws-commons</groupId>
+    <artifactId>jaxws-maven-plugin</artifactId>
+    <version>2.3</version>
+    <configuration>
+        <!-- Needed with JAXP 1.5 -->
+        <vmArgs>
+            <vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
+        </vmArgs>
+    </configuration>
+</plugin>
+{% endhighlight %}
+
+这个问题是由于JDK 1.8以后相关权限变得更加严格所导致的。
+
+参见：
+
+https://my.oschina.net/fuckmylife0/blog/325432
+
+## 参考
+
+http://www.blogjava.net/zjhiphop/archive/2009/04/29/webservice.html
+
+http://blog.csdn.net/lifetragedy/article/details/7205832
 
