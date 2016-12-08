@@ -251,6 +251,8 @@ https://github.com/spring-guides/gs-rest-service
 
 http://www.mkyong.com/spring/quick-start-maven-spring-example/
 
+http://wiki.jikexueyuan.com/project/spring/
+
 ## JavaFX
 
 使用Java开发GUI是一个很冷门的技能树，即使是多年的Java程序员，也未必接触过这个领域。我上次接触该技能，还是10年前的AWT时代。

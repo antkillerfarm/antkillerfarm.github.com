@@ -211,6 +211,8 @@ Gradle Wrapper能够让你的工程在没有安装Gradle的机器上编译。
 
 2.`./gradlew run`
 
+类似的，maven也有一个Wrapper，有些工程里的mvnw或mvnw.cmd，就是这个Wrapper的文件。
+
 # WebService
 
 WebService经过近二十年的发展，已经有非常多的框架了。知名的有：Axis1、Axis2、Xfire、CXF、JWS等。
@@ -331,8 +333,6 @@ https://my.oschina.net/fuckmylife0/blog/325432
 ## jaxws-demo-client
 
 jaxws-demo-client就是具体的客户端实现了，可以看出相比于上一步的桩代码，这里的代码文件，数量上要少得多。
-
-
 
 
 
