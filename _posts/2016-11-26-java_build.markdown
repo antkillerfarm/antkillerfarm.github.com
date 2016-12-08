@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Java构建工具, Storm, WebService
+title:  Java构建工具, WebService
 category: technology 
 ---
 
@@ -30,7 +30,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/java_build/ant
 
 ## Maven
 
-Maven仍旧使用XML作为配置文件格式，但使用内置规则简化脚本的编写。
+Maven仍旧使用XML作为配置文件格式，但使用内置规则简化脚本的编写。其配置文件一般叫做pom.xml。
 
 Maven最大的优点是，具备从网络上自动下载依赖的能力。比如，最常用的maven repository：
 
@@ -58,19 +58,31 @@ https://maven.apache.org/guides/introduction/introduction-to-archetypes.html
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/java_build/maven
 
-### 插件和依赖的版本控制
+### 常用maven命令
+
+| 命令 | 含义 |
+|:--|:--|
+| `mvn compile` | 编译代码 |
+| `mvn package` | 打包操作 |
+| `mvn exec:java` | 执行程序 |
+| `mvn exec:exec` | 执行程序 |
+| `mvn clean` | 清理程序 |
+
+使用`mvn exec:java`，还是`mvn exec:exec`，一般根据pom.xml中定义的目标来确定，后者的语法更灵活，功能也更强。
+
+### 插件和依赖模块的版本控制
 
 Maven允许同一个软件包的不同版本安装在同一台PC上。比如程序A可以使用spring v3.1，而程序B可以使用spring v3.2。
 
 它的实现方式是：同一个软件包的不同版本，放在不同的路径下。
 
-插件和依赖一般使用version标签定义所使用的版本。版本标签在大多数示例中一般是固定值，这样可以确保部署的一致性。
+插件和依赖模块一般使用version标签定义所使用的版本。版本标签在大多数示例中一般是固定值，这样可以确保部署的一致性。
 
 然而对于一些简单的demo，特别是比较老的demo来说，老旧的版本标签意味着，需要从repo中下载老的库，速度慢且占用空间大。
 
-因此，在开发用的机器上，通常需要将同一类应用的各个插件和依赖配置为同一版本，以节省空间。
+因此，在开发用的机器上，通常需要将同一类应用的各个插件和依赖模块配置为同一版本，以节省空间。
 
-插件和依赖的版本号，可用以下网站查询：
+插件和依赖模块的版本号，可用以下网站查询：
 
 https://mvnrepository.com/
 
@@ -78,7 +90,7 @@ https://mvnrepository.com/
 
 `<version>[2.40.0,)</version>`
 
-这里的[2.40.0,)表示取2.40.0以上最新版本。注意只有依赖可以使用这种语法，插件是不行的。
+这里的[2.40.0,)表示取2.40.0以上最新版本。注意只有依赖模块可以使用这种语法，插件是不行的。
 
 ### 更换mirror
 
@@ -89,6 +101,8 @@ http://repo.maven.apache.org/maven2
 然而这个网址有的时候会比较慢，这时就需要更换更快的mirror。其方法为：
 
 修改`${user.home}/.m2/settings.xml`。
+
+>注意这个配置文件只对该repo生效，如果想全局有效的话，可修改/etc/maven/settings.xml。
 
 {% highlight xml %}
 <mirrors>
@@ -110,6 +124,10 @@ http://repo.maven.org/maven2/
 http://repo1.maven.org/maven2/
 
 http://repo2.maven.org/maven2/
+
+http://maven.aliyun.com/nexus/content/groups/public
+
+阿里云的mirror大概是2016年7、8月份推出的，速度非常快。
 
 本来国内的OSChina有一个Maven mirror。但现在已经不可用了。
 
@@ -193,76 +211,6 @@ Gradle Wrapper能够让你的工程在没有安装Gradle的机器上编译。
 
 2.`./gradlew run`
 
-# Storm
-
-Storm是一个大数据领域的实时计算框架。
-
-官网：
-
-http://storm.apache.org/
-
-教程：
-
-http://storm.apache.org/releases/current/Tutorial.html
-
-http://blog.csdn.net/rzhzhz/article/details/8788137
-
-http://ifeve.com/getting-started-with-stom-index/
-
-http://blog.csdn.net/NB_vol_1/article/details/46287077
-
-http://www.open-open.com/lib/view/open1374979211233.html
-
-## 示例
-
-这里使用源代码中自带的示例。
-
-1.下载源代码。
-
-2.`mvn clean install -DskipTests=true`
-
-3.进入examples/storm-starter目录：
-
-`mvn compile exec:java -Dstorm.topology=org.apache.storm.starter.ExclamationTopology`
-
-## Trident
-
-Trident是在storm基础上，一个以realtime计算为目标的高度抽象。它在提供处理大吞吐量数据能力的同时，也提供了低延时分布式查询和有状态流式处理的能力。
-
-教程：
-
-http://storm.apache.org/releases/current/Trident-tutorial.html
-
-http://blog.csdn.net/derekjiang/article/details/9126185
-
-## Storm vs Spark
-
-http://blog.csdn.net/iefreer/article/details/32715153
-
-## 问题汇总
-
-http://blog.sina.com.cn/s/blog_8c243ea30101k0k1.html
-
-## 集群部署
-
-Storm的本地模式，无须hadoop生态圈软件的支持，自己就能运行。但它的集群部署依赖Zookeeper和YARN。
-
-1.配置YARN和Zookeeper，并启动相关服务进程。
-
-2.配置Storm
-
-https://storm.apache.org/releases/current/Setting-up-a-Storm-cluster.html
-
-3.启动Nimbus和Supervisor
-
-Nimbus和Supervisor都是Storm服务进程，前者运行在Master上，而后者运行在Node上。这里的Master和Node，可以和Zookeeper或YARN设置的不同。
-
-Nimbus的作用是将运行的jar分发到各Node去执行。
-
-虽然`bin/storm nimbus`可以启动nimbus，然而这种方法启动的是前台进程，一旦退出终端，进程就会被杀死。可用如下方法解决之：
-
-`start-stop-daemon --start --background --exec /root/apache-storm-1.0.2/bin/storm nimbus`
-
 # WebService
 
 WebService经过近二十年的发展，已经有非常多的框架了。知名的有：Axis1、Axis2、Xfire、CXF、JWS等。
@@ -271,19 +219,88 @@ WebService经过近二十年的发展，已经有非常多的框架了。知名�
 
 JWS包含了JAX-WS、JAX-RS、JAXB、JAXR、SAAJ、StAX等组件。这里主要涉及的是JAX-WS。
 
-相关的demo参见：
+## 教程
+
+参考：
+
+http://www.blogjava.net/zjhiphop/archive/2009/04/29/webservice.html
+
+http://blog.csdn.net/lifetragedy/article/details/7205832
+
+以上两篇是中文blog。
+
+http://java.globinch.com/enterprise-java/web-services/jax-ws/java-jax-ws-tutorial-develop-web-services-clients-consumers/
+
+这个教程虽然是英文的，但质量超过前两篇。且该网站还有其他相关文章，质量也颇高。
+
+## demo
+
+本文相关的demo参见：
 
 https://github.com/him-bhar/jax-ws
 
-以下仅对demo的代码和遇到的问题做一下说明。
+这个demo包括jaxws-demo、jaxws-demo-client-stubs和jaxws-demo-client三个模块。
 
-## 代码详解
+使用这个demo会有若干问题，也可直接采用本人修改之后的代码：
 
-这个demo包括
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/java/jax-ws
 
-## 编译
+## 开发模型
 
-`mvn package`
+JAX-WS 2.0有两种开发过程：**自顶向下**和**自底向上**。自顶向下方式指通过一个WSDL文件来创建Web Service，自底向上是从Java类出发创建Web Service。
+
+**demo选用Server端通过Java Class生成webservice，而客户端通过wsdl生成Java调用类的做法。**
+
+这种方法的优点在于：
+
+1.服务端开发基于Java，基本不需要对WSDL有过多研究，上手简单。
+
+2.客户端通过wsdl生成Java调用类，可以很方便的导入第三方WebService，同样无需对WSDL有过多研究。
+
+综上，这实际上是个**由服务端驱动的开发模型**。
+
+## jaxws-demo的结构
+
+jaxws-demo包含了两个WebService例子分别是rpc_type和document_type。
+
+这两种类型实际上指的是SOAP Binding的类型。两者的区别参见：
+
+http://java.globinch.com/enterprise-java/web-services/soap-binding-document-rpc-style-web-services-difference/
+
+>吐槽一下，虽然这只是个基本的问题，然而中文blog中竟然没有令人满意的文章。   
+>这些文章的毛病在于：   
+>1.对Java和JWS过于细节，而忽视了交互报文。SOAP Binding类型主要是个通讯协议问题，而不是Java或者JWS的问题。   
+>2.没有比较交互报文，就来笼统的谈各自的优缺点的，都是耍流氓。
+
+从上文的交互报文可以看出，document_type虽然更复杂，但也更灵活。从直观来看，前者只有wsdl一个文件，而后者有wsdl和xsd两个文件。
+
+## jaxws-demo的部署
+
+jaxws-demo编译之后，除了生成相应的.class之外，还会生成对应的wsdl和xsd文件。
+
+通常的做法是将这些文件一起部署到诸如Tomcat之类的Web容器中。
+
+但JDK也提供了更简易的做法，使用javax.xml.ws.Endpoint类的publish方法，将WebService绑定到特定的URI上。
+
+这里我们将com.himanshu.poc.jaxws.service.deploy.EndpointPublisherDocument设为主类，并执行程序。
+
+在浏览器上输入：
+
+http://localhost:9999/ws/hellodocument?wsdl
+
+正常情况下会返回一个wsdl文件。
+
+## jaxws-demo-client-stubs
+
+JDK中，有两个和WebService相关的工具：
+
+JAXWS为我们提供了两个工具：
+
+**wsgen**。主要用于Server端通过Java类编译成Webservice及相关的wsdl文件。
+
+**wsimport**。主要用于Client端（调用端）通过wsdl编译出调用Server端的Java文件。
+
+jaxws-demo中，调用wsgen生成的wsdl和xsd文件，在这里被wsimport编译成客户端的桩代码。
 
 由于我使用的JDK是JDK 1.8，因此会遇到如下问题：
 
@@ -311,9 +328,11 @@ https://github.com/him-bhar/jax-ws
 
 https://my.oschina.net/fuckmylife0/blog/325432
 
-## 参考
+## jaxws-demo-client
 
-http://www.blogjava.net/zjhiphop/archive/2009/04/29/webservice.html
+jaxws-demo-client就是具体的客户端实现了，可以看出相比于上一步的桩代码，这里的代码文件，数量上要少得多。
 
-http://blog.csdn.net/lifetragedy/article/details/7205832
+
+
+
 

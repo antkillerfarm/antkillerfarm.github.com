@@ -262,3 +262,13 @@ http://www.infoq.com/cn/articles/inotify-linux-file-system-event-monitoring
 
 usr很多人都认为是user缩写，其实不然，这是unix system resource的缩写。
 
+## 常用命令示例
+
+`find . -name *.txt`
+
+查找文件夹（包括子文件夹）中所有的txt文件。
+
+`strings /lib/tls/libc.so.6 | grep GLIBC`
+
+strings能输出文件中的可打印字符串（可指定字符串的最小长度），通常用来查看非文本文件（如二进制可执行文件）中的可读内容。上例可查看glibc支持的版本。
+

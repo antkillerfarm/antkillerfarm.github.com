@@ -305,4 +305,23 @@ http://www.open-open.com/lib/view/open1369278937654.html
 
 这种设计方式对调试程序、模块测试很有帮助。我们可以设定某个小模块中的类为主类，来单独测试该模块，而不必将整个系统运行起来。
 
+## static block
+
+{% highlight java %}
+class A  
+{  
+    ...
+    static  
+    {  
+        System.out.println("static block executed.");  
+    }
+    ...
+}
+{% endhighlight %}
+
+这样的结构被称为static block，它会在类被加载的时候执行且仅会被执行一次，相当于是特殊的构造函数。
+
+参见：
+
+http://www.cnblogs.com/icejoywoo/archive/2011/05/09/2041449.html
 
