@@ -200,6 +200,10 @@ https://zhuanlan.zhihu.com/p/23866364
 
 从梯度下降到Hessian-Free优化
 
+https://zhuanlan.zhihu.com/p/22604627
+
+AI玩FPS游戏
+
 ## 斯坦福相关课程
 
 http://cs224d.stanford.edu/

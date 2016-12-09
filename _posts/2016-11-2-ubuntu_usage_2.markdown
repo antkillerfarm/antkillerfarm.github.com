@@ -315,3 +315,45 @@ VNCSERVERARGS[1]="-geometry 1280x1024"
 参考：
 
 http://www.tecmint.com/install-tightvnc-remote-desktop/
+
+# Spring
+
+Spring是一个Java Web应用框架。官网：
+
+http://spring.io/
+
+## Ubuntu安装Eclipse、Spring
+
+1.安装Eclipse
+
+`sudo apt-get install eclipse`
+
+2.安装Spring
+
+`sudo apt-get install libspring-web-portlet-java`
+
+注意：ubuntu软件仓库中还有一个叫做spring的游戏引擎，不要弄错了。
+
+http://www.mkyong.com/spring/quick-start-maven-spring-example/
+
+http://wiki.jikexueyuan.com/project/spring/
+
+## Restful
+
+http://spring.io/guides/gs/rest-service/
+
+## Spring Boot
+
+https://www.tianmaying.com/tutorial/deploy-spring-boot-application
+
+http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+
+Spring Boot默认的配置文件
+
+## WebService
+
+https://spring.io/guides/gs/producing-web-service/
+
+http://localhost:9999/ws/countries.wsdl
+
+

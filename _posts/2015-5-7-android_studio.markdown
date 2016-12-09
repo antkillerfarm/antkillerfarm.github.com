@@ -235,24 +235,6 @@ http://blog.csdn.net/yongjian1092/article/details/7364451
 
 http://blog.csdn.net/nisaijie/article/details/5692901
 
-## Ubuntu安装Eclipse、Spring
-
-1.安装Eclipse
-
-`sudo apt-get install eclipse`
-
-2.安装Spring
-
-`sudo apt-get install libspring-web-portlet-java`
-
-注意：ubuntu软件仓库中还有一个叫做spring的游戏引擎，不要弄错了。
-
-https://github.com/spring-guides/gs-rest-service
-
-http://www.mkyong.com/spring/quick-start-maven-spring-example/
-
-http://wiki.jikexueyuan.com/project/spring/
-
 ## JavaFX
 
 使用Java开发GUI是一个很冷门的技能树，即使是多年的Java程序员，也未必接触过这个领域。我上次接触该技能，还是10年前的AWT时代。

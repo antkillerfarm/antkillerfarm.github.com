@@ -334,9 +334,7 @@ http://www.ibm.com/developerworks/library/ws-restful/index.html
 
 还是那句老话，讨论一个通讯格式或协议，不讨论交互报文的都不是好文章，或者至少不是一个入门的好文章。
 
-常见的Web框架如Spring、Struts都提供了对Restful的支持。例如：
-
-http://spring.io/guides/gs/rest-service/
+常见的Web框架如Spring、Struts都提供了对Restful的支持。
 
 专门负责Restful的框架还有Jersey。其官网：
 
