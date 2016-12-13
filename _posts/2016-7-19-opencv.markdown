@@ -204,6 +204,26 @@ https://zhuanlan.zhihu.com/p/22604627
 
 AI玩FPS游戏
 
+http://blog.csdn.net/erlib/article/details/53585134
+
+深层神经网络结构及可能存在的致命问题详解
+
+http://www.csdn.net/article/2015-06-01/2824811
+
+深度学习-LeCun、Bengio和Hinton的联合综述
+
+http://yann.lecun.com/exdb/mnist/
+
+一个手写字符集
+
+https://www.tensorflow.org/
+
+Google主导的开源深度学习库
+
+http://www.csdn.net/article/2015-06-05/2824880
+
+深入浅出LSTM神经网络
+
 ## 斯坦福相关课程
 
 http://cs224d.stanford.edu/
