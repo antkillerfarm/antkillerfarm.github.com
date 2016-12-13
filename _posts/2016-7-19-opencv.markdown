@@ -220,9 +220,21 @@ https://www.tensorflow.org/
 
 Google主导的开源深度学习库
 
+playground.tensorflow.org/
+
+TensorFlow提供的一个可视化的神经网络展示。
+
 http://www.csdn.net/article/2015-06-05/2824880
 
 深入浅出LSTM神经网络
+
+https://colah.github.io/
+
+谷歌大牛Christopher Olah的blog。
+
+https://zhuanlan.zhihu.com/p/22888385
+
+深层学习为何要“Deep”
 
 ## 斯坦福相关课程
 
