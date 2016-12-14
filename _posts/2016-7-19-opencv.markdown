@@ -236,6 +236,30 @@ https://zhuanlan.zhihu.com/p/22888385
 
 深层学习为何要“Deep”
 
+http://www.speech.cs.cmu.edu/databases/an4/
+
+CMU的音频数据库，可用于语音识别
+
+http://www.xperseverance.net/blogs/2012/03/510/
+
+狄利克雷分布
+
+http://blog.csdn.net/u010945683/article/details/40987331
+
+遗传算法详解
+
+http://blog.csdn.net/u010945683/article/details/49149815
+
+共轭先验分布
+
+http://cos.name/2013/01/lda-math-gamma-function/
+
+神奇的Gamma函数
+
+http://cs.stanford.edu/people/karpathy/convnetjs//demo/classify2d.html
+
+这是一个2层神经网络的可视化demo
+
 ## 斯坦福相关课程
 
 http://cs224d.stanford.edu/
