@@ -252,13 +252,13 @@ http://blog.csdn.net/u010945683/article/details/49149815
 
 共轭先验分布
 
-http://cos.name/2013/01/lda-math-gamma-function/
-
-神奇的Gamma函数
-
 http://cs.stanford.edu/people/karpathy/convnetjs//demo/classify2d.html
 
 这是一个2层神经网络的可视化demo
+
+https://zhuanlan.zhihu.com/p/21294526
+
+卡尔曼滤波的科普文
 
 ## 斯坦福相关课程
 

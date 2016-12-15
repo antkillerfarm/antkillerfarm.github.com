@@ -103,6 +103,10 @@ https://www.wilddog.com/
 
 一个物联网后端云平台。
 
+http://blog.shengbin.me/posts/multi-user-video-conference-based-on-webrtc
+
+基于WebRTC的多人视频会议
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/
