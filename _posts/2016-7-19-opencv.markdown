@@ -260,6 +260,10 @@ https://zhuanlan.zhihu.com/p/21294526
 
 卡尔曼滤波的科普文
 
+http://blog.csdn.net/zddblog/article/details/7521424
+
+SIFT算法详解
+
 ## 斯坦福相关课程
 
 http://cs224d.stanford.edu/
