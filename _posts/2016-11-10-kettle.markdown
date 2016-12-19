@@ -234,7 +234,7 @@ https://github.com/DmitryKey/luke
 
 2.每个Replica存储的索引文件一般是不同的，因此使用Luke的时候，如果有些数据查询不到的话，可以到其他Replica下查询。
 
-## IKAnalyzerhttp://blog.csdn.net/frankcheng5143/article/details/52292897
+## IKAnalyzer
 
 IKAnalyzer是一个中文分词器。作者：林良益。
 

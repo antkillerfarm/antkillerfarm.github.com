@@ -70,7 +70,7 @@ https://zhuanlan.zhihu.com/p/20042215
 
 # 概率分布
 
-进入正题之前，先介绍两个函数：贝塔函数和伽马函数
+进入正题之前，先介绍两个函数：贝塔函数和伽马函数。
 
 ## 贝塔函数
 
@@ -160,13 +160,19 @@ $$\Pr(Y=k) = (1 - p)^k\,p\,$$
 
 泊松分布的独特之处，还在于它的两个要素t和k，一个是连续型随机变量，另一个是离散型随机变量。无形之中，它成为了这两类变量之间的桥梁。与此相关的数学分支，一般被称为泊松分析。
 
-
+仍以上面的例子为例，如果反过来，求两次来电的时间间隔t，则t符合**指数分布**。
 
 参考：
 
 https://www.zhihu.com/question/26441147
 
+http://www.ruanyifeng.com/blog/2015/06/poisson-distribution.html
 
+## 贝塔分布
+
+
+
+http://cos.name/2013/01/lda-math-beta-dirichlet/
 
 ![](/images/article/beta.png)
 
