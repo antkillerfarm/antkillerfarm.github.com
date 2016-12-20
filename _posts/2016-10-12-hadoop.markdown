@@ -181,6 +181,10 @@ http://www.cnblogs.com/Dreama/articles/2219190.html
 
 Hadoop+HBase伪分布式安装配置
 
+https://sourceforge.net/projects/haredbhbaseclie/
+
+HareDB HBase Client是一个Hbase的Web GUI客户端，比较好用。
+
 ## 基本概念
 
 HBase以表的形式存储数据。表有行和列组成。列划分为若干个列族/列簇(column family)。
@@ -313,6 +317,12 @@ sc.setLogLevel("WARN");
 Spark中有个org.apache.spark.sql.functions类，专门针对数据集进行各种运算操作。其中的countDistinct方法可实现该功能。片段示例如下：
 
 `Dataset<Row> df2 = df.agg(functions.countDistinct("userId"));df2.show();`
+
+## 参考
+
+http://www.cnblogs.com/zlslch/p/5723857.html
+
+Spark的各种算子
 
 # Restful
 

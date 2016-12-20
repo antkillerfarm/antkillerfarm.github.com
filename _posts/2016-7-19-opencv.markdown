@@ -264,6 +264,10 @@ http://blog.csdn.net/zddblog/article/details/7521424
 
 SIFT算法详解
 
+http://blog.csdn.net/baimafujinji
+
+一个算法牛人的blog
+
 ## 斯坦福相关课程
 
 http://cs224d.stanford.edu/

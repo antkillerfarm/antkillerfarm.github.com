@@ -215,6 +215,10 @@ http://www.r-tutor.com/
 
 另一个大牛Chi Yau的网站。
 
+https://ask.hellobi.com/blog/asxinyu/5721
+
+300+的R语言资源汇总
+
 ## 交互环境
 
 R语言有个和python类似的命令行交互环境。

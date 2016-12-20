@@ -96,6 +96,8 @@ $${\Gamma(1-x)\Gamma(x)}=\frac{\pi}{\sin(\pi x)},x\in{(0,1)}$$
 
 $$\Gamma({1 \over 2})=\sqrt{\pi}$$
 
+$$B(m,n) = \frac{\Gamma(m)\Gamma(n)}{\Gamma(m+n)}$$
+
 参考：
 
 http://blog.csdn.net/u010945683/article/details/48950063
@@ -170,9 +172,29 @@ http://www.ruanyifeng.com/blog/2015/06/poisson-distribution.html
 
 ## 贝塔分布
 
+设一事件A的概率$$p(A)=\theta$$，为了估计$$\theta$$的值，作了n次独立观察，其中事件A出现的次数为X。显然X服从二项分布$$X\sim B(n,\theta)$$。
 
+因此：
+
+$$p(X=x|\theta)= \binom{n}{x}\theta^{x}(1-\theta)^{n-x}$$
+
+利用贝叶斯公式，我们首先需要确定先验概率$$p(\theta)$$。在未得到其余信息前，我们只能认为$$\theta$$在(0,1)上均匀分布（即$$\theta\sim Uniform(0,1)$$），这是一种不失偏颇的先验估计。
+
+则联合概率分布为：
+
+$$p(x,\theta)=p(x|\theta)p(\theta)$$
+
+边缘概率分布：
+
+$$p(x)=\int_{0}^{1}p(x,\theta)d\theta \\
+= \int_{0}^{1}\binom{n}{x}\theta^{x}(1-\theta)^{n-x}d\theta\\
+={{\Gamma(x+1)\Gamma(n-x+1)}\over{\Gamma(n+2)}}$$
+
+参考：
 
 http://cos.name/2013/01/lda-math-beta-dirichlet/
+
+http://www.cs.cmu.edu/~epxing/Class/10701-08s/recitation/dirichlet.pdf
 
 ![](/images/article/beta.png)
 
