@@ -186,9 +186,11 @@ $$p(x,\theta)=p(x|\theta)p(\theta)$$
 
 边缘概率分布：
 
-$$p(x)=\int_{0}^{1}p(x,\theta)d\theta \\
-= \int_{0}^{1}\binom{n}{x}\theta^{x}(1-\theta)^{n-x}d\theta\\
-={{\Gamma(x+1)\Gamma(n-x+1)}\over{\Gamma(n+2)}}$$
+$$p(x)=\int_{0}^{1}p(x,\theta)d\theta=\int_{0}^{1}\binom{n}{x}\theta^{x}(1-\theta)^{n-x}d\theta=\frac{\Gamma(x+1)\Gamma(n-x+1)}{\Gamma(n+2)}$$
+
+综合以上，可得$$\theta$$的后验分布:
+
+$$p(\theta|x)=\frac{p(x,\theta)}{p(x)}=\frac{\Gamma(n+2)}{\Gamma(x+1)\Gamma(n-x+1)}\theta^{(x+1-1)}(1-\theta)^{(n-x+1)-1}$$
 
 参考：
 
