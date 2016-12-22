@@ -102,6 +102,16 @@ $$B(m,n) = \frac{\Gamma(m)\Gamma(n)}{\Gamma(m+n)}$$
 
 http://blog.csdn.net/u010945683/article/details/48950063
 
+## 排列组合
+
+排列组合是高中数学的内容，这里仅列出公式，以备参考。
+
+$$P^m_n=\frac{n!}{(n-m)!}$$
+
+$$C^m_n=\frac{P^m_n}{m!}=\frac{n!}{m!(n-m)!}$$
+
+$$C^m_n$$有时也被记作$$\binom{n}{m}$$，注意这两种表示法的上下标的顺序。
+
 ## 伯努利试验
 
 伯努利试验(Bernoulli experiment)是在同样的条件下重复地、**相互独立**地进行的一种随机试验。其特点是该随机试验只有两种可能结果：**发生**或者**不发生**。然后我们假设该项试验独立重复地进行了n次，那么我们就称这一系列重复独立的随机试验为n重伯努利试验，或称为伯努利概型。
@@ -170,7 +180,19 @@ https://www.zhihu.com/question/26441147
 
 http://www.ruanyifeng.com/blog/2015/06/poisson-distribution.html
 
-## 贝塔分布
+## 贝塔分布和共轭先验分布
+
+$$f(x;\alpha,\beta)=\frac{x^{\alpha-1}(1-x)^{\beta-1}}{B(\alpha,\beta)}$$
+
+贝塔分布的PDF和CDF如下图所示：
+
+![](/images/article/beta.png)
+
+![](/images/article/beta1.png)
+
+从上图可以看出它是个百变星君，它可以是凹的、凸的、单调上升的、单调下降的；可以是曲线也可以是直线。由于Beta分布能够拟合如此之多的形状，因此它在统计数据拟合中，被广泛使用。
+
+下面来讲一下Beta分布的推导，并引出共轭先验分布的概念。
 
 设一事件A的概率$$p(A)=\theta$$，为了估计$$\theta$$的值，作了n次独立观察，其中事件A出现的次数为X。显然X服从二项分布$$X\sim B(n,\theta)$$。
 
@@ -186,11 +208,46 @@ $$p(x,\theta)=p(x|\theta)p(\theta)$$
 
 边缘概率分布：
 
-$$p(x)=\int_{0}^{1}p(x,\theta)d\theta=\int_{0}^{1}\binom{n}{x}\theta^{x}(1-\theta)^{n-x}d\theta=\frac{\Gamma(x+1)\Gamma(n-x+1)}{\Gamma(n+2)}$$
+$$\begin{align}p(x)&=\int_{0}^{1}p(x,\theta)d\theta=\int_{0}^{1}\binom{n}{x}\theta^{x}(1-\theta)^{n-x}d\theta\\
+&=\binom{n}{x}B(x+1,n-x+1)=\binom{n}{x}\frac{\Gamma(x+1)\Gamma(n-x+1)}{\Gamma(n+2)}\end{align}$$
 
 综合以上，可得$$\theta$$的后验分布:
 
-$$p(\theta|x)=\frac{p(x,\theta)}{p(x)}=\frac{\Gamma(n+2)}{\Gamma(x+1)\Gamma(n-x+1)}\theta^{(x+1-1)}(1-\theta)^{(n-x+1)-1}$$
+$$p(\theta|x)=\frac{p(x,\theta)}{p(x)}=\frac{\theta^{(x+1)-1}(1-\theta)^{(n-x+1)-1}}{B(x+1,n-x+1)}$$
+
+因此：$$\theta \vert x\sim Beta(x+1,n-x+1)$$
+
+考虑到$$Uniform(0,1)=Beta(1,1)$$，因此在这个例子中，先验分布和后验分布，实际上是同一类型的分布。这种情况被称为共轭先验分布。
+
+**定义**：设$$\theta$$是某分布中的一个参数，$$\pi(\theta)$$是其先验分布。假如由抽样信息算得的后验分布$$\pi(\theta \vert x)$$与$$\pi(\theta)$$同属于一个分布族，则称$$\pi(\theta)$$是$$\theta$$的**共轭先验分布**。
+
+从这个定义可以看出，共轭先验分布是对某一分布中的参数而言的，离开指定参数及其所在的分布，谈论共轭先验分布是没有意义的。
+
+常见的共轭先验分布：
+
+| 总体分布 | 参数 | 共轭先验分布 |
+|:--:|:--:|:--:|
+| 二项分布 | 成功概率 | 贝塔分布 |
+| 泊松分布 | 均值 | 伽马分布 |
+| 指数分布 | 均值倒数 | 伽马分布 |
+| 正态分布（方差已知） | 均值 | 正态分布 |
+| 正态分布（方差未知） | 方差 | 倒伽马分布 |
+
+共轭先验分布中，由于先验分布和后验分布都是同一个分布族，因此有利于简化计算。同时，先验参数往往会传递到后验分布，这样就能够比较方便的确定参数的实际意义。
+
+## 多项分布和狄利克雷分布
+
+伯努利试验只有两个可能的实验结果，如果实验结果的个数超过2个，那么二项分布就变成了多项分布（multinomial distribution）：
+
+$$f(x_1,\ldots,x_k;n,p_1,\ldots,p_k)=\frac{n!}{x_1!\cdots x_k!} p_1^{x_1} \cdots p_k^{x_k}$$
+
+多项分布对应的共轭先验分布是狄利克雷分布（Dirichlet distribution）：
+
+$$f \left(x_1,\cdots, x_{K}; \alpha_1,\cdots, \alpha_K \right) = \frac{1}{\mathrm{B}(\boldsymbol\alpha)} \prod_{i=1}^K x_i^{\alpha_i - 1}$$
+
+这里引入向量表示的贝塔函数：
+
+$$\mathrm{B}(\boldsymbol\alpha) = \frac{\prod_{i=1}^K \Gamma(\alpha_i)}{\Gamma\left(\sum_{i=1}^K \alpha_i\right)},\qquad\boldsymbol{\alpha}=(\alpha_1,\cdots,\alpha_K)$$
 
 参考：
 
@@ -198,11 +255,7 @@ http://cos.name/2013/01/lda-math-beta-dirichlet/
 
 http://www.cs.cmu.edu/~epxing/Class/10701-08s/recitation/dirichlet.pdf
 
-![](/images/article/beta.png)
-
-![](/images/article/beta1.png)
-
-# 共轭先验分布
+## 各种概率分布的关系
 
 ![](/images/article/distribution.jpg)
 
