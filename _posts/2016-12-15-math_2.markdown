@@ -263,3 +263,23 @@ http://www.cs.cmu.edu/~epxing/Class/10701-08s/recitation/dirichlet.pdf
 
 http://www.math.wm.edu/~leemis/2008amstat.pdf
 
+# 统计模拟
+
+统计模拟是数理统计中非常有用的工具之一， 它是利用计算机产生某概率模型的随机数，再通过这些随机数来模拟真实模型。
+
+这方面的书籍首推Sheldon M.Ross所著的《Simulation》。
+
+>注：Sheldon M.Ross，斯坦福大学统计学博士（1968），UCB教授（1976～2004），南加州大学Industrial and Systems Engineering系主任。
+
+以下仅记录一些简单的结论。
+
+## 均匀分布
+
+通过线性同余发生器可以生成伪随机数，且该随机数满足均匀分布。
+
+$$x_n=ax_{n-1}\, \mathrm{modulo} \, m$$
+
+## 正态分布
+
+
+
