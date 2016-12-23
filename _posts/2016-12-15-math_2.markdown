@@ -249,6 +249,12 @@ $$f \left(x_1,\cdots, x_{K}; \alpha_1,\cdots, \alpha_K \right) = \frac{1}{\mathr
 
 $$\mathrm{B}(\boldsymbol\alpha) = \frac{\prod_{i=1}^K \Gamma(\alpha_i)}{\Gamma\left(\sum_{i=1}^K \alpha_i\right)},\qquad\boldsymbol{\alpha}=(\alpha_1,\cdots,\alpha_K)$$
 
+狄利克雷分布的密度函数如下所示(3维)：
+
+![](/images/article/dirichlet-distribution.png)
+
+上面的图，实际上是个4维图，只不过用一个平面上的三角形代表实验结果的3维而已。这也是一种高维数据可视化的方法。
+
 参考：
 
 http://cos.name/2013/01/lda-math-beta-dirichlet/
@@ -281,5 +287,16 @@ $$x_n=ax_{n-1}\, \mathrm{modulo} \, m$$
 
 ## 正态分布
 
+**Box-Muller变换**：如果随机变量$$U_1,U_2$$独立且$$U_1, U_2 \sim Uniform(0,1)$$，
 
+$$\begin{align} 
+Z_0 & = \sqrt{-2\ln U_1} cos(2\pi U_2) \\ 
+Z_1 & = \sqrt{-2\ln U_1} sin(2\pi U_2) 
+\end{align}$$
+
+则$$Z_0,Z_1$$独立且服从标准正态分布。
+
+>注：George Edward Pelham Box，1919~2013，英国统计学家。伦敦学院大学博士，先后供职于普林斯顿大学和威斯康辛-麦迪逊大学。Ronald Aylmer Fisher的女婿。英国皇家学会会员，美国统计协会主席，国际数理统计学会主席。
+
+>Mervin Edgar Muller，俄亥俄州立大学教授。
 
