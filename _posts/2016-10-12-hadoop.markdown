@@ -83,6 +83,18 @@ Single Node又可分为两种模式：Standalone和Pseudo-Distributed。前者�
 
 http://www.cnblogs.com/serendipity/archive/2011/08/23/2151031.html
 
+## CDH
+
+Cloudera’s Distribution Including Apache Hadoop，简称CDH，是目前用的比较多的Hadoop版本，相比于Apache官方的Hadoop来说，有以下优点：
+
+1.CDH基于稳定版Apache Hadoop，并应用了最新Bug修复或者Feature的Patch。Cloudera常年坚持季度发行Update版本，年度发行Release版本，更新速度比Apache官方快，而且在实际使用过程中，CDH表现无比稳定，并没有引入新的问题。
+
+2.CDH支持Yum/Apt包，Tar包，RPM包，Cloudera Manager四种方式安装，可自动处理软件包之间的依赖和版本匹配的问题。
+
+官网：
+
+www.cloudera.com/downloads/cdh.html
+
 ## 何时使用hadoop fs、hadoop dfs与hdfs dfs命令
 
 hadoop fs：使用面最广，可以操作任何文件系统。

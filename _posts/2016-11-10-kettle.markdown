@@ -136,6 +136,10 @@ http://lucene.apache.org/solr/quickstart.html
 
 网上的资料有些已经很老了，不看也罢。这是官方的Quick Start，必看之。
 
+除了Solr，类似的软件还有senseidb和elasticsearch。参见：
+
+http://www.cnblogs.com/ibook360/archive/2013/03/22/2975345.html
+
 相关资料：
 
 http://www.solr.cc/blog/

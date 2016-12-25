@@ -269,34 +269,4 @@ http://www.cs.cmu.edu/~epxing/Class/10701-08s/recitation/dirichlet.pdf
 
 http://www.math.wm.edu/~leemis/2008amstat.pdf
 
-# 统计模拟
-
-统计模拟是数理统计中非常有用的工具之一， 它是利用计算机产生某概率模型的随机数，再通过这些随机数来模拟真实模型。
-
-这方面的书籍首推Sheldon M.Ross所著的《Simulation》。
-
->注：Sheldon M.Ross，斯坦福大学统计学博士（1968），UCB教授（1976～2004），南加州大学Industrial and Systems Engineering系主任。
-
-以下仅记录一些简单的结论。
-
-## 均匀分布
-
-通过线性同余发生器可以生成伪随机数，且该随机数满足均匀分布。
-
-$$x_n=ax_{n-1}\, \mathrm{modulo} \, m$$
-
-## 正态分布
-
-**Box-Muller变换**：如果随机变量$$U_1,U_2$$独立且$$U_1, U_2 \sim Uniform(0,1)$$，
-
-$$\begin{align} 
-Z_0 & = \sqrt{-2\ln U_1} cos(2\pi U_2) \\ 
-Z_1 & = \sqrt{-2\ln U_1} sin(2\pi U_2) 
-\end{align}$$
-
-则$$Z_0,Z_1$$独立且服从标准正态分布。
-
->注：George Edward Pelham Box，1919~2013，英国统计学家。伦敦学院大学博士，先后供职于普林斯顿大学和威斯康辛-麦迪逊大学。Ronald Aylmer Fisher的女婿。英国皇家学会会员，美国统计协会主席，国际数理统计学会主席。
-
->Mervin Edgar Muller，俄亥俄州立大学教授。
 
