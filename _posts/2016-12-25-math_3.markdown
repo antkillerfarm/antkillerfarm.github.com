@@ -1,22 +1,8 @@
 ---
 layout: post
-title:  数学狂想曲（三）——复变函数, 随机变量序列的收敛性, 统计模拟, 隐式狄利克雷划分, 频率统计学派 vs. 贝叶斯学派
+title:  数学狂想曲（三）——随机变量序列的收敛性, 统计模拟, 隐式狄利克雷划分, 频率统计学派 vs. 贝叶斯学派
 category: theory 
 ---
-
-# 复变函数
-
-1.复球面表示。
-
-2.条件严格性。
-
-点域：连续<可导（可微）<可解析
-
-区域：连续<可导（可微）=可解析
-
-3.函数可微的充要条件：Cauchy-Riemann Equations
-
-4.复数在场论描述中的应用。
 
 # 随机变量序列的收敛性
 
@@ -113,9 +99,15 @@ $$\pi(i)P_{ij} = \pi(j)P_{ji} \quad\quad \text{for all} \quad i,j$$
 
 满足细致平稳条件的马氏链，其后续状态都是平稳分布状态，不会再改变。
 
+参考：
+
+http://blog.csdn.net/lanchunhui/article/details/50451620
+
+http://blog.csdn.net/pipisorry/article/details/46618991
+
 ## MCMC
 
-对于给定的概率分布$$p(x)$$，我们希望能有便捷的方式生成它对应的样本。由于马氏链能收敛到平稳分布，于是一个很的漂亮想法是：如果我们能构造一个转移矩阵为P的马氏链，使得该马氏链的平稳分布恰好是$$p(x)$$, 那么我们从任何一个初始状态$$x_0$$出发沿着马氏链转移, 得到一个转移序列$$x_0, x_1, x_2, \cdots x_n, x_{n+1}\cdots$$， 如果马氏链在第nn步已经收敛了，于是我们就得到了$$\pi(x)$$的样本$$x_n, x_{n+1}\cdots$$。
+对于给定的概率分布$$p(x)$$，我们希望能有便捷的方式生成它对应的样本。由于马氏链能收敛到平稳分布，于是一个很的漂亮想法是：如果我们能构造一个转移矩阵为P的马氏链，使得该马氏链的平稳分布恰好是$$p(x)$$，那么我们从任何一个初始状态$$x_0$$出发沿着马氏链转移，得到一个转移序列$$x_0, x_1, x_2, \cdots x_n, x_{n+1}\cdots$$，如果马氏链在第n步已经收敛了，于是我们就得到了$$\pi(x)$$的样本$$x_n, x_{n+1}\cdots$$。
 
 Markov Chain Monte Carlo算法的核心是引入一个参数$$\alpha(i,j)$$使得一个普通的马氏链，变成一个满足细致平稳条件的马氏链。即：
 
@@ -126,7 +118,7 @@ $$p(i) \underbrace{q(i,j)\alpha(i,j)}_{Q'(i,j)}
 
 >注：Nicholas Constantine Metropolis，1915~1999，希腊裔美籍物理学家。芝加哥大学博士，反复供职于Los Alamos和芝加哥大学。（其实也就这俩地方，只不过这边干几年到那边去，那边教几年书再回这边来，这么进进出出好几个来回而已）“曼哈顿计划”的主要科学家之一，战后主持MANIAC计算机的研制。
 
-$$\alpha$$的大小，决定了马氏链的收敛速度。$$\alpha$$也大，收敛越快。因此又有Metropolis–Hastings算法，其关键公式为：
+$$\alpha$$的大小，决定了马氏链的收敛速度。$$\alpha$$越大，收敛越快。因此又有Metropolis–Hastings算法，其关键公式为：
 
 $$\alpha(i,j) = \min\left\{\frac{p(j)q(j,i)}{p(i)q(i,j)},1\right\}$$
 
@@ -136,14 +128,25 @@ $$\alpha(i,j) = \min\left\{\frac{p(j)q(j,i)}{p(i)q(i,j)},1\right\}$$
 
 >注：Josiah Willard Gibbs，1839~1903，美国科学家。他在物理、化学和数学方面都有重大理论贡献。耶鲁大学博士和教授。统计力学的创始人。
 
-因为高维空间中，沿坐标轴方向上的两点之间的转移，满足细致平稳条件。因此
+因为高维空间中，沿坐标轴方向上的两点之间的转移，满足细致平稳条件。因此，Gibbs Sampling的核心就是沿坐标轴循环采样，该算法收敛之后的采样点即符合指定概率分布。
 
-参考：
+## Unigram Model
 
-http://blog.csdn.net/lanchunhui/article/details/50451620
+![](/images/article/unigram-model.jpg)
 
-http://blog.csdn.net/pipisorry/article/details/46618991
+![](/images/article/dirichlet-multinomial-unigram.jpg)
 
+$$Dir(\overrightarrow{p}|\overrightarrow{\alpha})+MultCount(\overrightarrow{n})=Dir(\overrightarrow{p}|\overrightarrow{\alpha}+\overrightarrow{n})$$
+
+## PLSA
+
+Probabilistic Latent Semantic Analysis
+
+![](/images/article/plsa-doc-topic-word.jpg)
+
+## LDA
+
+![](/images/article/lda-dice.jpg)
 
 # 频率统计学派 vs. 贝叶斯学派
 

@@ -84,15 +84,15 @@ https://www.zhihu.com/question/20296247/answer/29370489
 
 银行一般1年才付一次利息，根据下图，满1年后银行付给你1元利息（绿圆），存款余额=2元
 
-![](/images/article/e_1.jpg)
+![](/images/article/e_1.png)
 
 银行发善心，每半年付利息，你可以把利息提前存入，利息生利息(红圆)，1年存款余额=2.25元
 
-![](/images/article/e_2.jpg)
+![](/images/article/e_2.png)
 
 假设银行超级实在，每4个月就付利息，利息生利息(下图红圆、紫圆)，年底的余额≈2.37元
 
-![](/images/article/e_3.jpg)
+![](/images/article/e_3.png)
 
 假设银行人品爆发，一年365天，愿意天天付利息，这样利滚利的余额≈2.71456748202元
 

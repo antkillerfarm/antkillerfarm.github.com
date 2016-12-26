@@ -75,7 +75,7 @@ $$X_{n\times m}\approx U_{n\times k}Y_{k\times m}$$
 
 # loss function比较
 
-![](/images/article/loss_function.jpg)
+![](/images/article/loss_function.png)
 
 这里m代表了置信度，越靠近右边置信度越高。
 
