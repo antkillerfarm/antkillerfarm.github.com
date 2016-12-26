@@ -219,6 +219,10 @@ https://ask.hellobi.com/blog/asxinyu/5721
 
 300+的R语言资源汇总
 
+https://ask.hellobi.com/blog/EasyCharts/5777
+
+R绘制圣诞树
+
 ## 交互环境
 
 R语言有个和python类似的命令行交互环境。
