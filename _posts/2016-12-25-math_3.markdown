@@ -128,25 +128,65 @@ $$\alpha(i,j) = \min\left\{\frac{p(j)q(j,i)}{p(i)q(i,j)},1\right\}$$
 
 >注：Josiah Willard Gibbs，1839~1903，美国科学家。他在物理、化学和数学方面都有重大理论贡献。耶鲁大学博士和教授。统计力学的创始人。
 
-因为高维空间中，沿坐标轴方向上的两点之间的转移，满足细致平稳条件。因此，Gibbs Sampling的核心就是沿坐标轴循环采样，该算法收敛之后的采样点即符合指定概率分布。
+因为高维空间中，沿坐标轴方向上的两点之间的转移，满足细致平稳条件。因此，Gibbs Sampling的核心就是沿坐标轴循环迭代采样，该算法收敛之后的采样点即符合指定概率分布。
 
 ## Unigram Model
 
+假设我们的词典中一共有V个词$$v_1,v_2,\cdots v_V$$，那么最简单的Unigram Model是定义一个V面的骰子，每抛一次骰子，抛出的面就对应产生一个词。
+
+频率学派的Unigram Model如下图：
+
 ![](/images/article/unigram-model.jpg)
 
+贝叶斯学派的Unigram Model如下图：
+
 ![](/images/article/dirichlet-multinomial-unigram.jpg)
+
+这里使用Dirichlet分布的原因在于，数据采用多项分布，而Dirichlet分布正好是多项分布的共轭先验分布。
 
 $$Dir(\overrightarrow{p}|\overrightarrow{\alpha})+MultCount(\overrightarrow{n})=Dir(\overrightarrow{p}|\overrightarrow{\alpha}+\overrightarrow{n})$$
 
 ## PLSA
 
-Probabilistic Latent Semantic Analysis
+Probabilistic Latent Semantic Analysis是Thomas Hofmann于1999年在UCB读博期间提出的算法。
+
+原文：
+
+https://dslpitt.org/uai/papers/99/p289-hofmann.pdf
+
+示意图：
 
 ![](/images/article/plsa-doc-topic-word.jpg)
 
+PLSA将生成文档的过程，分为两个步骤：
+
+1.生成文档的主题。（doc->topic）
+
+2.根据主题生成相关的词.（topic->word）
+
+第m篇文档$$d_m$$中的每个词的生成概率为：
+
+$$p(w|d_m) = \sum_{z=1}^K p(w|z)p(z|d_m) = \sum_{z=1}^K \varphi_{zw} \theta_{mz}$$
+
 ## LDA
 
+利用贝叶斯学派的观点改造PLSA，可得：
+
 ![](/images/article/lda-dice.jpg)
+
+LDA生成模型包含两个过程：
+
+1.生成第m篇文档中的所有词对应的topics。
+
+$$\overrightarrow{\alpha}\xrightarrow[Dirichlet]{} \overrightarrow{\theta}_m \xrightarrow[Multinomial]{} \overrightarrow{z}_{m}$$
+
+2.K个由topics生成words的独立过程。
+
+$$\overrightarrow{\beta} \xrightarrow[Dirichlet]{} \overrightarrow{\varphi}_k \xrightarrow[Multinomial]{} \overrightarrow{w}_{(k)}$$
+
+因此，总共就是$$M+K$$个Dirichlet-Multinomial共轭结构。
+
+
 
 # 频率统计学派 vs. 贝叶斯学派
 
@@ -162,6 +202,26 @@ Probabilistic Latent Semantic Analysis
 
 然而，陈希孺院士告诉我们，两者各有优劣，尚未到一方决出胜负的阶段。比如，贝叶斯学派的先验估计，既是其成功的奥秘，也是其不成功的软肋。比如，对于“无信息先验分布”，目前尚处于“信则灵，不信则无”的境地。
 
-陈院士的观点是：各取所长，为我所用。
+陈院士的观点是：**各取所长，为我所用**。
+
+# 概率图模型
+
+probabilistic graphical model（PGM）最早由Judea Pearl发明。
+
+这方面比较重要的文章和书籍有：
+
+http://www.cis.upenn.edu/~mkearns/papers/barbados/jordan-tut.pdf
+
+Michael Irwin Jordan著。
+
+《Probabilistic Graphical Models: Principles and Techniques》，Daphne Koller，Nir Friedman著（2009年）。
+
+>注：Judea Pearl，1936年生，以色列-美国计算机科学家，UCLA教授。2011年获得图灵奖。
+
+>Michael Irwin Jordan，1956年生，美国计算机科学家。UCSD博士，先后执教于MIT和UCB。吴恩达的导师。
+
+>Daphne Koller，女，1968年生，以色列-美国计算机科学家。斯坦福大学博士及教授。和吴恩达共同创立在线教育平台Coursera。
+
+>Nir Friedman，1967年生，以色列计算机科学家。斯坦福大学博士，耶路撒冷希伯来大学教授。
 
 
