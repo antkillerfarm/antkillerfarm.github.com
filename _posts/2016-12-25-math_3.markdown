@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（三）——随机变量序列的收敛性, 统计模拟, 隐式狄利克雷划分, 频率统计学派 vs. 贝叶斯学派
+title:  数学狂想曲（三）——随机变量序列的收敛性, 统计模拟, 隐式狄利克雷划分
 category: theory 
 ---
 
@@ -146,6 +146,42 @@ $$\alpha(i,j) = \min\left\{\frac{p(j)q(j,i)}{p(i)q(i,j)},1\right\}$$
 
 $$Dir(\overrightarrow{p}|\overrightarrow{\alpha})+MultCount(\overrightarrow{n})=Dir(\overrightarrow{p}|\overrightarrow{\alpha}+\overrightarrow{n})$$
 
+和wiki上对Dirichlet分布的pdf函数的描述（参见《数学狂想曲（二）》中的公式1）不同，rickjin在这里采用了如下定义：
+
+$$Dir(\overrightarrow{p}|\overrightarrow{\alpha})= 
+\frac{1}{\Delta(\overrightarrow{\alpha})} \prod_{k=1}^V p_k^{\alpha_k -1}， 
+\quad \overrightarrow{\alpha}=(\alpha_1, \cdots, \alpha_V)$$
+
+其中：
+
+$$\Delta(\overrightarrow{\alpha}) = 
+\int \prod_{k=1}^V p_k^{\alpha_k -1} d\overrightarrow{p}$$
+
+可以看出两种描述中的$$\mathrm{B}(\boldsymbol\alpha)$$和$$\Delta(\overrightarrow{\alpha})$$是等价的。
+
+下面我们来证明这个结论，即：
+
+$$\mathrm{B}(\boldsymbol\alpha)=\int \prod_{k=1}^V p_k^{\alpha_k -1} d\overrightarrow{p}\tag{1}$$
+
+**证明**：这里为了简化问题，令V=3。则根据《数学狂想曲（二）》中的公式1可得：
+
+$$Dir(\overrightarrow{p}|\overrightarrow{\alpha})= 
+\frac{1}{\mathrm{B}(\alpha_1,\alpha_2,\alpha_3)}  p_1^{\alpha_1 -1}p_2^{\alpha_2 -1}p_3^{\alpha_3 -1}$$
+
+对该pdf进行积分：
+
+$$\int\int\int\frac{1}{\mathrm{B}(\alpha_1,\alpha_2,\alpha_3)}p_1^{\alpha_1 -1}p_2^{\alpha_2 -1}p_3^{\alpha_3 -1}\mathrm{d}p_1\mathrm{d}p_2\mathrm{d}p_3=\frac{1}{\mathrm{B}(\alpha_1,\alpha_2,\alpha_3)}\int p_1^{\alpha_1 -1}p_2^{\alpha_2 -1}p_3^{\alpha_3 -1}\mathrm{d}\overrightarrow{p}$$
+
+由pdf的定义可知，上面的积分值为1。
+
+因此：
+
+$$\mathrm{B}(\alpha_1,\alpha_2,\alpha_3)=\int p_1^{\alpha_1 -1}p_2^{\alpha_2 -1}p_3^{\alpha_3 -1}\mathrm{d}\overrightarrow{p}$$
+
+证毕。
+
+从上面的证明过程，可以看出公式1并不是恒等式，而是在Dirichlet分布下才成立的等式。这也是共轭先验分布能够简化计算的地方。
+
 ## PLSA
 
 Probabilistic Latent Semantic Analysis是Thomas Hofmann于1999年在UCB读博期间提出的算法。
@@ -186,42 +222,16 @@ $$\overrightarrow{\beta} \xrightarrow[Dirichlet]{} \overrightarrow{\varphi}_k \x
 
 因此，总共就是$$M+K$$个Dirichlet-Multinomial共轭结构。
 
+LDA的Gibbs Sampling图示：
 
+![](/images/article/gibbs-path-search.jpg)
 
-# 频率统计学派 vs. 贝叶斯学派
+LDA模型的目标有两个：
 
-对数学史感兴趣的朋友，可以看看陈希孺院士的《数理统计学简史》一书。rickjin文章的内容有相当部分取自该书。
+**训练模型**：估计模型中的参数：$$\overrightarrow{\varphi}_1, \cdots, \overrightarrow{\varphi}_K$$和$$\overrightarrow{\theta}_1, \cdots, \overrightarrow{\theta}_M$$。
 
->注：陈希孺，1934～2005，数理统计学家。1956年毕业于武汉大学数学系，1997年当选为中国科学院院士。
+由于参数$$\overrightarrow{\theta}_m$$是和训练语料中的每篇文档相关的，对于我们理解新的文档并无用处，所以工程上最终存储LDA模型时，一般没有必要保留。
 
-该书中关于频率统计学派和贝叶斯学派的争议，引起了我的注意。
-
-频率统计学派是所谓的正统派，由于其简单且便于理解的特点，多数入门级的数理统计学教程，一般都是按照该学派的思路写的。
-
-而贝叶斯学派可谓另辟蹊径，它和频率统计学派的差异，参见《机器学习（七）》。由于该派系的思想比较新颖，我一度以为它和频率统计学派的关系，就犹如相对论之于经典力学。
-
-然而，陈希孺院士告诉我们，两者各有优劣，尚未到一方决出胜负的阶段。比如，贝叶斯学派的先验估计，既是其成功的奥秘，也是其不成功的软肋。比如，对于“无信息先验分布”，目前尚处于“信则灵，不信则无”的境地。
-
-陈院士的观点是：**各取所长，为我所用**。
-
-# 概率图模型
-
-probabilistic graphical model（PGM）最早由Judea Pearl发明。
-
-这方面比较重要的文章和书籍有：
-
-http://www.cis.upenn.edu/~mkearns/papers/barbados/jordan-tut.pdf
-
-Michael Irwin Jordan著。
-
-《Probabilistic Graphical Models: Principles and Techniques》，Daphne Koller，Nir Friedman著（2009年）。
-
->注：Judea Pearl，1936年生，以色列-美国计算机科学家，UCLA教授。2011年获得图灵奖。
-
->Michael Irwin Jordan，1956年生，美国计算机科学家。UCSD博士，先后执教于MIT和UCB。吴恩达的导师。
-
->Daphne Koller，女，1968年生，以色列-美国计算机科学家。斯坦福大学博士及教授。和吴恩达共同创立在线教育平台Coursera。
-
->Nir Friedman，1967年生，以色列计算机科学家。斯坦福大学博士，耶路撒冷希伯来大学教授。
+**使用模型**：对于新来的一篇文档$$doc_{new}$$，我们能够计算这篇文档的topic分布$$\overrightarrow{\theta}_{new}$$。
 
 
