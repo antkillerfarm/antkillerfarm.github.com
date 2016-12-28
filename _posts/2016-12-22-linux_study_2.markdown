@@ -84,6 +84,49 @@ strings能输出文件中的可打印字符串（可指定字符串的最小长�
 
 陈院士的观点是：**各取所长，为我所用**。
 
+# 随机变量序列的收敛性
+
+弱收敛：$$F_n(x)\xrightarrow{W}F(x)$$
+
+依分布收敛：$$X_n\xrightarrow{L}X$$
+
+依概率收敛：$$X_n\xrightarrow{P}X$$
+
+r阶收敛：$$X_n\xrightarrow{r}X$$
+
+几乎处处收敛（almost everywhere convergent）：$$X_n\xrightarrow{a.e.}X$$ or $$X_n\xrightarrow{a.s.}X$$
+
+一致收敛（uniform convergence）：$$X_n\xrightarrow{u.c.}X$$
+
+以上概念实际上都是测度论的内容。具体到这里，弱收敛针对分布函数F，而其他收敛针对随机变量X。
+
+收敛严格性：
+
+$$X_n\xrightarrow{P}X>X_n\xrightarrow{L}X$$
+
+$$X_n\xrightarrow{r}X>X_n\xrightarrow{P}X$$
+
+$$X_n\xrightarrow{a.s.}X>X_n\xrightarrow{P}X$$
+
+大数定理：
+
+依概率收敛->弱大数定理
+
+几乎处处收敛->强大数定理
+
+# 统计力学与组合优化
+
+MCMC和Gibbs Sampling最早都是统计力学的概念，后来才被用于机器学习领域。现将统计力学与组合优化的对应关系罗列如下：
+
+| 统计力学 | 组合优化 |
+|:--:|:--:|
+| 样本 | 问题实例 |
+| 状态（构形） | 构形 |
+| 能量 | 代价函数 |
+| 温度 | 控制参数 |
+| 基态能量 | 最小代价 |
+| 基态构形 | 最小构形 |
+
 # 概率图模型
 
 probabilistic graphical model（PGM）最早由Judea Pearl发明。

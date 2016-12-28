@@ -1,38 +1,8 @@
 ---
 layout: post
-title:  数学狂想曲（三）——随机变量序列的收敛性, 统计模拟, 隐式狄利克雷划分
+title:  数学狂想曲（三）——统计模拟, 隐式狄利克雷划分
 category: theory 
 ---
-
-# 随机变量序列的收敛性
-
-弱收敛：$$F_n(x)\xrightarrow{W}F(x)$$
-
-依分布收敛：$$X_n\xrightarrow{L}X$$
-
-依概率收敛：$$X_n\xrightarrow{P}X$$
-
-r阶收敛：$$X_n\xrightarrow{r}X$$
-
-几乎处处收敛（almost everywhere convergent）：$$X_n\xrightarrow{a.e.}X$$ or $$X_n\xrightarrow{a.s.}X$$
-
-一致收敛（uniform convergence）：$$X_n\xrightarrow{u.c.}X$$
-
-以上概念实际上都是测度论的内容。具体到这里，弱收敛针对分布函数F，而其他收敛针对随机变量X。
-
-收敛严格性：
-
-$$X_n\xrightarrow{P}X>X_n\xrightarrow{L}X$$
-
-$$X_n\xrightarrow{r}X>X_n\xrightarrow{P}X$$
-
-$$X_n\xrightarrow{a.s.}X>X_n\xrightarrow{P}X$$
-
-大数定理：
-
-依概率收敛->弱大数定理
-
-几乎处处收敛->强大数定理
 
 # 统计模拟
 
@@ -71,7 +41,7 @@ Latent Dirichlet Allocation，简称LDA。注意不要和Linear Discriminant Ana
 
 这方面的文章，首推rickjin（靳志辉）写的《LDA数学八卦》一文。全文篇幅长达55页，我实在没有能力写的比他更好，因此这里就做一个摘要好了。
 
->注：靳志辉，北京大学计算机系计算语言所硕士，日本东京大学情报理工学院统计自然语言处理方向博士。2008 年加入腾讯，主要工作内容涉及统计自然语言处理和大规模并行机器学习工具的研发工作。 目前为腾讯社交与效果广告部质量研发中心总监，主要负责腾讯用户数据挖掘、精准广告定向、广告语义特征挖掘、广告转化率预估等工作。   
+>注：靳志辉，北京大学计算机系计算语言所硕士，日本东京大学情报理工学院统计自然语言处理方向博士。2008年加入腾讯，主要工作内容涉及统计自然语言处理和大规模并行机器学习工具的研发工作。目前为腾讯社交与效果广告部质量研发中心总监，主要负责腾讯用户数据挖掘、精准广告定向、广告语义特征挖掘、广告转化率预估等工作。   
 >他写的另一篇文章《正态分布的前世今生》，也是统计界著名的科普文，非常值得一看。
 
 ## 马氏链及其平稳分布
@@ -87,7 +57,7 @@ $$P(X_{t+1}=x|X_t, X_{t-1}, \cdots) =P(X_{t+1}=x|X_t)$$
 >Andrey(Andrei) Andreyevich Markov，1856~1922，俄国数学家。圣彼得堡大学博士，导师Pafnuty Chebyshev。最早研究随机过程的数学家之一。圣彼得堡学派的第二代领军人物，俄罗斯科学院院士。   
 >虽然现在将随机过程（stochastic process）划为数理统计科学的一部分，然而在19世纪末期，相关的研究者在学术界分属两个不同的团体。其中最典型的就是英国的剑桥学派（Pearson、Fisher等）和俄国的圣彼得堡学派（Chebyshev、Markov等）。因此将Markov称为统计学家是非常错误的观点。
 
-一些非周期的马氏链，经过若干次的状态转移之后，其状态概率会收敛到一个特定的数值，即平稳分布。
+一些非周期的马氏链，经过若干次的状态转移之后，其状态概率会收敛到一个特定的数值，即平稳分布（stationary distribution）。
 
 如各参考文献所示，这里一般会举社会学上的人口分层问题，引出马氏链的极限和平稳分布的概念。这里要特别注意马氏链收敛定理以及它的具体含义。
 
@@ -98,6 +68,8 @@ $$\pi(i)P_{ij} = \pi(j)P_{ji} \quad\quad \text{for all} \quad i,j$$
 则$$\pi(x)$$是马氏链的平稳分布，上式被称为细致平稳条件(detailed balance condition)。
 
 满足细致平稳条件的马氏链，其后续状态都是平稳分布状态，不会再改变。
+
+>注:细致平稳条件，比平稳分布的条件要强，因此它是平稳分布的充分条件，而非必要条件。
 
 参考：
 
@@ -170,7 +142,7 @@ $$Dir(\overrightarrow{p}|\overrightarrow{\alpha})=
 
 对该pdf进行积分：
 
-$$\int\int\int\frac{1}{\mathrm{B}(\alpha_1,\alpha_2,\alpha_3)}p_1^{\alpha_1 -1}p_2^{\alpha_2 -1}p_3^{\alpha_3 -1}\mathrm{d}p_1\mathrm{d}p_2\mathrm{d}p_3=\frac{1}{\mathrm{B}(\alpha_1,\alpha_2,\alpha_3)}\int p_1^{\alpha_1 -1}p_2^{\alpha_2 -1}p_3^{\alpha_3 -1}\mathrm{d}\overrightarrow{p}$$
+$$\iiint\frac{1}{\mathrm{B}(\alpha_1,\alpha_2,\alpha_3)}p_1^{\alpha_1 -1}p_2^{\alpha_2 -1}p_3^{\alpha_3 -1}\mathrm{d}p_1\mathrm{d}p_2\mathrm{d}p_3=\frac{1}{\mathrm{B}(\alpha_1,\alpha_2,\alpha_3)}\int p_1^{\alpha_1 -1}p_2^{\alpha_2 -1}p_3^{\alpha_3 -1}\mathrm{d}\overrightarrow{p}$$
 
 由pdf的定义可知，上面的积分值为1。
 
@@ -234,4 +206,21 @@ LDA模型的目标有两个：
 
 **使用模型**：对于新来的一篇文档$$doc_{new}$$，我们能够计算这篇文档的topic分布$$\overrightarrow{\theta}_{new}$$。
 
+## 参考
+
+http://www.arbylon.net/publications/text-est.pdf
+
+《Parameter estimation for text analysis》，Gregor Heinrich著
+
+http://www.inference.phy.cam.ac.uk/itprnn/book.pdf
+
+《Information Theory, Inference, and Learning Algorithms》，David J.C. MacKay著
+
+关于MCMC和Gibbs Sampling的更多的内容，可参考《Neural Networks and Learning Machines》，Simon Haykin著。该书有中文版。
+
+>注：Sir David John Cameron MacKay，1967～2016，加州理工学院博士，导师John Hopfield，剑桥大学教授。英国能源与气候变化部首席科学顾问，英国皇家学会会员。在机器学习领域和可持续能源领域有重大贡献。
+
+>Simon Haykin，英国伯明翰大学博士，加拿大McMaster University教授。初为雷达和信号处理专家，80年代中后期，转而从事神经计算方面的工作。加拿大皇家学会会员。
+
+http://www.cs.cmu.edu/~epxing/Class/10708-14/lectures/lecture17-MCMC.pdf
 
