@@ -336,6 +336,10 @@ http://www.cnblogs.com/zlslch/p/5723857.html
 
 Spark的各种算子
 
+http://mp.weixin.qq.com/s?__biz=MjM5NzAyNTE0Ng==&mid=2649517135&idx=2&sn=7fc02a006b7c5015f3492354d0e298a4&scene=0#rd
+
+Spark性能优化指南：高级篇
+
 # Restful
 
 相比于WebService，Restful是一种简单的多的编程风格。
