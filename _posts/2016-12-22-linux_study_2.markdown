@@ -147,4 +147,10 @@ Michael Irwin Jordan著。
 
 >Nir Friedman，1967年生，以色列计算机科学家。斯坦福大学博士，耶路撒冷希伯来大学教授。
 
+http://www.cs.cmu.edu/~epxing/Class/10708-14/lectures/
+
+CMU的邢波（Eric Xing）所开的概率图模型课程。
+
+
+
 
