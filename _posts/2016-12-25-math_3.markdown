@@ -125,4 +125,26 @@ BP算法的推导过程教材已经写的很好了，这里只补充一点：
 
 神经网络的参数的随机初始化的目的是使对称失效。否则的话，所有对称结点的权重都一致，也就无法区分并学习了。
 
+# PID算法
+
+PID算法是自动控制领域最基础应用最广泛的算法。它是三个单词proportional（P，比例）、integral（I，积分）和differential（D，微分）的缩写。
+
+$$(t) = K_\text{p} e(t) + K_\text{i} \int_0^t e(\tau) \,d\tau + K_\text{d} \frac{de(t)}{dt}$$
+
+参考：
+
+https://en.wikipedia.org/wiki/PID_controller
+
+《Feedback Control of Dynamic Systems》，Gene F. Franklin，J David Powell，Abbas Emami-Naeini著。
+
+>注：Gene F. Franklin，1927~2012，美国控制论学家。哥伦比亚大学博士，斯坦福大学教授。
+
+>J David Powell，美国航空航天学家。斯坦福大学博士和教授。
+
+>Abbas Emami-Naeini，斯坦福大学博士和讲师，SC Solutions公司总监。
+
+https://www.zhihu.com/question/23088613/answer/23942834
+
+http://blog.163.com/suyanqiang0613@126/blog/static/1100531332012111475650867/
+
 
