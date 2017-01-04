@@ -151,6 +151,16 @@ http://www.cs.cmu.edu/~epxing/Class/10708-14/lectures/
 
 CMU的邢波（Eric Xing）所开的概率图模型课程。
 
+# BugBrain
 
+BugBrain是一个神经网络相关的益智游戏。官网：
+
+http://www.biologic.com.au/bugbrain/
+
+# 协方差和相关系数
+
+$$Cov(X,Y)=E\{[X-E(X)][Y-E(Y)]\}$$
+
+$$\rho_{XY}=\frac{Cov(X,Y)}{\sqrt{D(X)}\sqrt{D(Y)}}$$
 
 
