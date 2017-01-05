@@ -157,10 +157,18 @@ BugBrain是一个神经网络相关的益智游戏。官网：
 
 http://www.biologic.com.au/bugbrain/
 
-# 协方差和相关系数
+# 随机过程常用公式
 
-$$Cov(X,Y)=E\{[X-E(X)][Y-E(Y)]\}$$
+| 名称 | 公式 |
+|:--:|:--:|
+| 期望 | $$EX=\int_{-\infty}^{+\infty}x\mathrm{d}F(x)$$，若存在密度函数则$$EX=\int_{-\infty}^{+\infty}xf(x)\mathrm{d}x$$ |
+| 方差 | $$DX=Var(X)=E(X-EX)^2$$ |
+| 协方差 | $$Cov(X,Y)=E\{\overline{[X-E(X)]}[Y-E(Y)]\}$$ |
+| 相关系数 | $$\rho_{XY}=\frac{Cov(X,Y)}{\sqrt{D(X)}\sqrt{D(Y)}}$$ |
+| 协方差矩阵 | $$\left[\begin{array}{ccc} Cov(X_1,X_1)&Cov(X_1,X_2)&\cdots&Cov(X_1,X_n)\\Cov(X_2,X_1)&Cov(X_2,X_2)&\cdots&Cov(X_2,X_n)\\ \vdots&\vdots&&\vdots \\Cov(X_n,X_1)&Cov(X_n,X_2)&\cdots&Cov(X_n,X_n)\end{array}\right]$$ |
+| 相关函数 | $$R(X,Y)=E[\overline{X}Y]$$ |
 
-$$\rho_{XY}=\frac{Cov(X,Y)}{\sqrt{D(X)}\sqrt{D(Y)}}$$
+
+
 
 

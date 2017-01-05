@@ -260,6 +260,8 @@ $$\begin{align}
 &\operatorname{s.t.}& & u^Tu=1
 \end{align}$$
 
+其中的矩阵$$\Sigma$$实际上是一个对角阵，对角线元素$$\sigma_{ii}$$表示x的第i维的方差。
+
 其拉格朗日函数为：
 
 $$\mathcal{L}(u)=u^T\Sigma u-\lambda(u^Tu-1)$$

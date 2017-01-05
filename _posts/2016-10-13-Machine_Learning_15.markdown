@@ -29,6 +29,36 @@ u_k^Tx^{(i)}
 
 可以看出PCA算法实际上是个**降维（dimensionality reduction）**算法。
 
+## PCA相关系数的推导
+
+$$\rho(y_k,x_i)$$表示第k个主成分与第i个变量的相关系数，也被称为因子负荷或主成分负荷。
+
+**推导**：
+
+相关系数的定义为：
+
+$$\rho_{XY}=\frac{Cov(X,Y)}{\sqrt{D(X)}\sqrt{D(Y)}}$$
+
+由特征值的定义可得：
+
+$$u_i^T\Sigma u_i=u_i^T\lambda_i u_i=\lambda_iu_i^Tu_i$$
+
+因为u是单位正交阵，所以：
+
+$$u_i^T\Sigma u_i=\lambda_i$$
+
+$$Var(y_k)=Var(u_k^Tx)=(u_k^Tx)(u_k^Tx)^T=u_k^Txx^Tu_k=u_k^T\Sigma u_k=\lambda_k$$
+
+令$$x=Ay$$，则：
+
+$$Cov(y_k,x_i)=Cov(y_k,a_{ik}y_k)=a_{ik}Cov(y_k,y_k)=a_{ik}Var(y_k)=a_{ik}\lambda_k$$
+
+$$Var(x_i)=\sigma_{ii}$$
+
+综上可得：
+
+$$\rho(y_k,x_i)=\frac{a_{ik}\lambda_k}{\sqrt{\lambda_k}\sqrt{\sigma_{ii}}}=\frac{a_{ik}\sqrt{\lambda_k}}{\sqrt{\sigma_{ii}}}$$
+
 ## PCA的用途
 
 为了便于理解PCA算法，我们以如下图片的处理过程为例，进行说明。
@@ -208,13 +238,4 @@ $$\nabla_W\ell(W)=\begin{bmatrix}
 最后，用通常的随机梯度上升算法，求得$$\ell(W)$$的最大值即可。
 
 >注意：我们计算最大似然估计时,假设了$$x^{(i)}$$和$$x^{(j)}$$之间是独立的，然而对于语音信号或者其他具有时间连续依赖特性(比如温度)上，这个假设不能成立。但是在数据足够多时，假设独立对效果影响不大。
-
-# 隐式狄利克雷划分
-
-Latent Dirichlet Allocation，简称LDA。注意不要和Linear Discriminant Analysis搞混了。
-
-这方面的文章，首推rickjin（靳志辉）写的《LDA数学八卦》一文。全文篇幅长达55页，我实在没有能力写的比他更好，因此这里就做一个摘要好了。
-
->注：靳志辉，北京大学计算机系计算语言所硕士，日本东京大学情报理工学院统计自然语言处理方向博士。2008年加入腾讯，主要工作内容涉及统计自然语言处理和大规模并行机器学习工具的研发工作。目前为腾讯社交与效果广告部质量研发中心总监，主要负责腾讯用户数据挖掘、精准广告定向、广告语义特征挖掘、广告转化率预估等工作。   
->他写的另一篇文章《正态分布的前世今生》，也是统计界著名的科普文，非常值得一看。
 

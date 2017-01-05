@@ -338,6 +338,8 @@ ACBM算法是在AC自动机的基础之上，引入了BM算法的多模扩展，
 
 http://blog.csdn.net/sealyao/article/details/6817944
 
+HNM：Hard Negative Mining
+
 # scrapy
 
 scrapy是一个Python写的网页抓取分析工具。网页抓取分析的学名叫做“Web scraping”，可在wiki上获得更多的相关信息。
