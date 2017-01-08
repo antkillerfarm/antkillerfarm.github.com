@@ -271,6 +271,14 @@ CRAN虽然提供了各个软件包的帮助文档，然而无论是数据的组�
 
 `library(rjson)`
 
+此外R还支持从github安装软件包，如下所示：
+
+{% highlight R %}
+install.packages("devtools")
+devtools::install_github("jlmelville/mnist")
+library(mnist)
+{% endhighlight %}
+
 ## 语言细节
 
 R语言由于早期用户主要是非软件工程人员，因此，它是一个面向过程的函数式语言。
@@ -383,4 +391,21 @@ dbDisconnect(conn)
 https://www.r-bloggers.com/select-operations-on-r-data-frames/
 
 http://www.burns-stat.com/translating-r-sql-basics/
+
+### MNIST
+
+https://github.com/jlmelville/mnist
+
+## ggplot2
+
+ggplot2是目前R上用的比较多的绘图工具集。官网：
+
+http://had.co.nz/ggplot2/
+
+参考：
+
+《ggplot2：数据分析与图形艺术》，Hadley Wickham著。
+
+>注：Hadley Wickham，ggplot2的作者，Rstudio的首席科学家。
+
 

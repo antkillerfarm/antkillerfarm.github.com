@@ -161,7 +161,7 @@ $$u(t) = K_\text{p} e(t) + K_\text{i} \int_0^t e(\tau) \,d\tau$$
 
 $$K_\text{i}$$被称为积分系数。积分环节的意义就相当于你增加了一个水龙头，这个水龙头的开关规则是水位比预定高度低就一直往大了拧，比预定高度高就往小了拧。如果漏水速度不变，那么总有一天这个水龙头出水的速度恰好跟漏水的速度相等了，系统就和第一小节的那个一样了。那时，静差就没有了。这就是所谓的积分环节可以消除系统静差。
 
-**场景3**：假设这个水箱不仅仅是装水的容器了，还需要持续稳定的给用户供水。
+**场景3**：假设用户的用水量是变化，即$$c(t)$$。
 
 $$u(t) = K_\text{p} e(t) + K_\text{i} \int_0^t e(\tau) \,d\tau + K_\text{d} \frac{de(t)}{dt}$$
 
@@ -180,5 +180,29 @@ https://en.wikipedia.org/wiki/PID_controller
 https://www.zhihu.com/question/23088613/answer/23942834
 
 http://blog.163.com/suyanqiang0613@126/blog/static/1100531332012111475650867/
+
+# GBDT
+
+GBRT这个算法有很多名字，但都是同一个算法：
+
+GBRT (Gradient BoostRegression Tree)渐进梯度回归树
+
+GBDT (Gradient BoostDecision Tree)渐进梯度决策树
+
+MART (Multiple Additive Regression Tree)多决策回归树
+
+Tree Net决策树网络
+
+参考：
+
+http://blog.csdn.net/u010691898/article/details/38292937
+
+http://www.cs.cmu.edu/~tom/
+
+http://blog.csdn.net/w28971023/article/details/8240756
+
+# FM：Factorization Machines
+
+http://blog.csdn.net/itplus/article/details/40534885
 
 

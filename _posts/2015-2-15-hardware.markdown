@@ -190,7 +190,6 @@ http://www.ebaina.com/bbs/forum-97-3.html
 | 显示数据表结构 | describe 表名; |
 | 创建自增ID | create table github(id int auto_increment primary key not null,name varchar(256)); |
 
-
 参考：
 
 http://www.cnblogs.com/wuhou/archive/2008/09/28/1301071.html

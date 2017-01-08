@@ -203,3 +203,18 @@ http://www.inference.phy.cam.ac.uk/itprnn/book.pdf
 
 http://www.cs.cmu.edu/~epxing/Class/10708-14/lectures/lecture17-MCMC.pdf
 
+# 决策树
+
+Decision Tree讲的最好的，首推周志华的《机器学习》。这里只对要点进行备忘。
+
+当前样本集合D中，第k类样本所占的比例为$$p_k(k=1,2,\dots,\vert y\vert)$$，则D的信息熵（information entropy）定义为：
+
+$$Ent(D)=-\sum_{k=1}^{|y|}p_k\log_2p_k$$
+
+假定离散属性a有V个可能的取值，若使用a对D进行划分，则第v个分支结点包含了D中所有在a上取值$$a^v$$的样本，记为$$D^v$$。则信息增益（information gain）为：
+
+$$Gain(D,a)=$$
+
+
+
+
