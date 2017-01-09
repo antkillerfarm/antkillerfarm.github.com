@@ -213,7 +213,7 @@ $$Ent(D)=-\sum_{k=1}^{|y|}p_k\log_2p_k$$
 
 假定离散属性a有V个可能的取值，若使用a对D进行划分，则第v个分支结点包含了D中所有在a上取值$$a^v$$的样本，记为$$D^v$$。则信息增益（information gain）为：
 
-$$Gain(D,a)=$$
+$$Gain(D,a)=Ent(D)-\sum_{v=1}^V\frac{|D^v|}{|D|}Ent(D^v)$$
 
 
 

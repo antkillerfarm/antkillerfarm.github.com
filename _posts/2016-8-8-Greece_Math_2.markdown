@@ -124,6 +124,10 @@ http://bbs.astron.ac.cn/forum.php?mod=viewthread&tid=100566
 
 岁首，业界最重要的事情莫过于AlphaGo以Master之名再度出山，60场快棋未遇敌手。牛逼！
 
+http://goeye-app.com/resources.html#cn
+
+精选在线棋谱资源
+
 # 复变函数
 
 1.复球面表示。

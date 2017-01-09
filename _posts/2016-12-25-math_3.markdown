@@ -157,13 +157,25 @@ $$u(t) = K_\text{p} e(t)\tag{1}$$
 
 为了平衡c，我们修改算法为：
 
-$$u(t) = K_\text{p} e(t) + K_\text{i} \int_0^t e(\tau) \,d\tau$$
+$$u(t) = K_\text{p} e(t) + K_\text{i} \int_0^t e(\tau) \,d\tau\tag{2}$$
 
 $$K_\text{i}$$被称为积分系数。积分环节的意义就相当于你增加了一个水龙头，这个水龙头的开关规则是水位比预定高度低就一直往大了拧，比预定高度高就往小了拧。如果漏水速度不变，那么总有一天这个水龙头出水的速度恰好跟漏水的速度相等了，系统就和第一小节的那个一样了。那时，静差就没有了。这就是所谓的积分环节可以消除系统静差。
 
-**场景3**：假设用户的用水量是变化，即$$c(t)$$。
+**场景3**：假设用户的用水量是变化的，即$$c(t)$$。
 
-$$u(t) = K_\text{p} e(t) + K_\text{i} \int_0^t e(\tau) \,d\tau + K_\text{d} \frac{de(t)}{dt}$$
+这时，如果仍采用公式2，则由于$$c(t)$$的变化，导致$$e(t)$$不恒为0。为了减小$$c(t)$$的变化，对$$e(t)$$的影响，我们继续修改算法：
+
+$$u(t) = K_\text{p} e(t) + K_\text{i} \int_0^t e(\tau) \,d\tau + K_\text{d} \frac{de(t)}{dt}\tag{3}$$
+
+$$K_\text{d}$$被称为微分系数。由于$$c(t)$$的变化不可能事先得知，因此，微分环节只能减小$$c(t)$$的变化所造成的影响，而不能消除。
+
+公式3在Laplace域可写做：
+
+$$L(s) = K_\text{p} + K_\text{i}/s + K_\text{d} s\tag{4}$$
+
+从公式4可以看出，PID controller的数学原理和锁相环（Phase-locked loop）非常类似，它们实际上都是Feedback Control系统。
+
+![](/images/article/PLL.png)
 
 参考：
 
@@ -183,7 +195,7 @@ http://blog.163.com/suyanqiang0613@126/blog/static/1100531332012111475650867/
 
 # GBDT
 
-GBRT这个算法有很多名字，但都是同一个算法：
+GBDT这个算法有很多名字，但都是同一个算法：
 
 GBRT (Gradient BoostRegression Tree)渐进梯度回归树
 
@@ -192,6 +204,30 @@ GBDT (Gradient BoostDecision Tree)渐进梯度决策树
 MART (Multiple Additive Regression Tree)多决策回归树
 
 Tree Net决策树网络
+
+GBDT属于集成学习（Ensemble Learning）的范畴。集成学习的思路是在对新的实例进行分类的时候，把若干个单个分类器集成起来，通过对多个分类器的分类结果进行某种组合来决定最终的分类，以取得比单个分类器更好的性能。
+
+集成学习的算法主要分为两大类：
+
+**并行算法**：
+
+**串行算法**：
+
+GBDT写的比较好的，有以下blog：
+
+http://blog.csdn.net/w28971023/article/details/8240756
+
+摘录要点如下：
+
+决策树分为两大类：
+
+**回归树**：用于预测实数值，如明天的温度、用户的年龄、网页的相关程度。其结果加减是有意义的，如10岁+5岁-3岁=12岁
+
+**分类树**：用于分类标签值，如晴天/阴天/雾/雨、用户性别、网页是否是垃圾页面。其结果加减无意义，如男+男+女=到底是男是女？
+
+GBDT的核心在于累加所有树的结果作为最终结果，所以GBDT中的树都是回归树，不是分类树。
+
+
 
 参考：
 
@@ -204,5 +240,38 @@ http://blog.csdn.net/w28971023/article/details/8240756
 # FM：Factorization Machines
 
 http://blog.csdn.net/itplus/article/details/40534885
+
+
+# 20世纪10大算法
+
+2000年，IEEE评选出20世纪10大算法。名单如下：
+
+1.[Metropolis Algorithm for Monte Carlo](http://en.wikipedia.org/wiki/Metropolis_Algorithm)
+
+2.[Simplex Method for Linear Programming](http://en.wikipedia.org/wiki/Simplex_Method)
+
+3.[Krylov Subspace Iteration Methods](http://en.wikipedia.org/wiki/Krylov_subspace_methods)
+
+4.[The Decompositional Approach to Matrix Computations](http://en.wikipedia.org/wiki/Matrix_(mathematics)#Decomposition)
+
+5.[The Fortran Optimizing Compiler](http://en.wikipedia.org/wiki/Fortran#History)
+
+6.[QR Algorithm for Computing Eigenvalues](http://en.wikipedia.org/wiki/QR_algorithm)
+
+7.[Quicksort Algorithm for Sorting](http://en.wikipedia.org/wiki/Quicksort)
+
+8.[Fast Fourier Transform](http://en.wikipedia.org/wiki/Fast_Fourier_Transform)
+
+9.[Integer Relation Detection](http://en.wikipedia.org/wiki/Integer_relation_algorithm)
+
+10.[Fast Multipole Method](http://en.wikipedia.org/wiki/Fast_Multipole_Method)
+
+详细内容参见：
+
+http://www.uta.edu/faculty/rcli/TopTen/topten.pdf
+
+中文版本：
+
+http://blog.csdn.net/v_JULY_v/article/details/6127953
 
 
