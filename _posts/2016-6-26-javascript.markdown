@@ -243,6 +243,7 @@ selector {property1: value1; property2: value2; ... propertyN: valueN}
 其中，CSS选择器用于将样式和内容绑定。常用语法如下：
 
 | 元素 | 类 | ID | 属性 | 后代 | 子元素 | 相邻兄弟 |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: |
 | p | .p | #p | p[attr] | p0 p1 | p0>p1 | p0+p1 |
 
 # CSS动画
