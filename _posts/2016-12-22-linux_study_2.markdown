@@ -219,13 +219,29 @@ CMU的邢波（Eric Xing）所开的概率图模型课程。
 
 # FM：Factorization Machines
 
-Factorization Machines是Steffen Rendle
+Factorization Machines是Steffen Rendle于2010年提出的算法。
 
->Steffen Rendle，弗赖堡大学博士，现为Google研究员。
+>注：Steffen Rendle，弗赖堡大学博士，现为Google研究员。libFM的作者，被誉为推荐系统的新星。
 
+FM算法实际上是一大类与矩阵分解有关的算法的广义模型。
 
+参考文献1是Rendle本人的论文，其中有章节证明了SVD++、PITF、FPMC等算法，都是FM算法的特例。《机器学习（十四）》中提到的ALS算法，也是FM的特例。
 
-http://blog.csdn.net/itplus/article/details/40534885
+参考文献2是国人写的中文说明，相对浅显一些。
+
+参考：
+
+1.https://www.ismll.uni-hildesheim.de/pub/pdfs/Rendle2010FM.pdf
+
+2.http://blog.csdn.net/itplus/article/details/40534885
+
+# PITF
+
+配对互动张量分解（Pairwise Interaction Tensor Factorization）算法，也是最早由Rendle引入推荐系统领域的。
+
+论文：
+
+http://www.wsdm-conference.org/2010/proceedings/docs/p81.pdf
 
 # word2vec
 
@@ -233,4 +249,17 @@ word2vec是Google于2013年开源推出的一个用于获取word vector的工具
 
 http://blog.csdn.net/itplus/article/details/37969519
 
+# 复变函数
+
+1.复球面表示。
+
+2.条件严格性。
+
+点域：连续<可导（可微）<可解析
+
+区域：连续<可导（可微）=可解析
+
+3.函数可微的充要条件：Cauchy-Riemann Equations
+
+4.复数在场论描述中的应用。
 
