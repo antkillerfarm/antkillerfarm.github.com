@@ -217,3 +217,20 @@ http://www.cs.cmu.edu/~epxing/Class/10708-14/lectures/
 
 CMU的邢波（Eric Xing）所开的概率图模型课程。
 
+# FM：Factorization Machines
+
+Factorization Machines是Steffen Rendle
+
+>Steffen Rendle，弗赖堡大学博士，现为Google研究员。
+
+
+
+http://blog.csdn.net/itplus/article/details/40534885
+
+# word2vec
+
+word2vec是Google于2013年开源推出的一个用于获取word vector的工具包。
+
+http://blog.csdn.net/itplus/article/details/37969519
+
+
