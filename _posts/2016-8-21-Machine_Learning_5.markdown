@@ -4,7 +4,32 @@ title:  机器学习（五）——SVM（3）
 category: theory 
 ---
 
-## 规则化和不可分情况处理（续）
+## 核函数的有效性（续）
+
+如果我们用$$\phi_k(x)$$表示$$\phi(x)$$第k个元素的话，则对于任意向量z：
+
+$$\begin{align}z^TKz&=\sum_i\sum_jz_iK_{ij}z_j=\sum_i\sum_jz_i\phi(x^{(i)})^T\phi(x^{(j)})z_j
+\\&=\sum_i\sum_jz_i\sum_k\phi_k(x^{(i)})\phi_k(x^{(j)})z_j=\sum_k\sum_i\sum_jz_i\phi_k(x^{(i)})\phi_k(x^{(j)})z_j
+\\&=\sum_k\left(\sum_iz_i\phi_k(x^{(i)})\right)^2\ge 0
+\end{align}$$
+
+即K矩阵是半正定矩阵。事实上，K矩阵是对称半正定矩阵，不仅是K函数有效的必要条件，也是它的充分条件。相关的证明是由James Mercer给出的，被称为Mercer定理（Mercer Theorem）。
+
+>注：James Mercer，1883-1932，英国数学家，英国皇家学会会员，毕业于剑桥大学。曾服役于英国皇家海军，参加了日德兰海战。
+
+Mercer定理给出了不用找到$$\phi(x)$$，而判定$$K(x,z)$$是否有效的方法。因此寻找$$\phi(x)$$的步骤就可以跳过了，直接使用$$K(x,z)$$替换上面公式中的$$\langle x,z\rangle$$即可。例如：
+
+$$w^Tx+b=\sum_{i\in SV}\alpha_iy^{(i)}\langle x^{(i)},x\rangle+b=\sum_{i\in SV}\alpha_iy^{(i)}K(x^{(i)},x)+b \tag{6}$$
+
+核函数不仅仅用在SVM上，但凡在一个算法中出现了$$\langle x,z\rangle$$，我们都可以使用$$K(x,z)$$去替换，这可以很好地改善我们算法的效率。因此，核函数更多的被看作是一种技巧而非理论（kernel trick）。
+
+## 规则化和不可分情况处理
+
+我们之前讨论的情况都是建立在样例线性可分的假设上，当样例线性不可分时，我们可以尝试使用核函数来将特征映射到高维，这样很可能就可分了。然而，映射后我们也不能100%保证可分。那怎么办呢，我们需要将模型进行调整，以保证在不可分的情况下，也能够尽可能地找出分隔超平面。
+
+![](/images/article/SVM_6.png)
+
+上面的右图中可以看到一个离群点（可能是噪声），它会造成超平面的移动，从而导致边距缩小，可见以前的模型对噪声非常敏感。再有甚者，如果离群点在另外一个类中，那么这时候就是线性不可分的了。
 
 这时候应该允许一些点游离并在模型中违背限制条件（函数间隔大于1）。我们设计得到新的模型如下（也称软间隔（Soft-margin））：
 
@@ -161,55 +186,4 @@ y^{(2)}(v_1-v_2)+1-s&=y^{(2)}(u_1-u_2)-y^{(2)}y^{(1)}\alpha_1^*K_{11}-(y^{(2)})^
 \\&=y^{(2)}(u_1-u_2+y^{(2)}-y^{(1)})-s\alpha_1^*K_{11}-\alpha_2^*K_{21}+s\alpha_1^*K_{12}+\alpha_2^*K_{22}
 \end{align}$$
 
-这里的$$\alpha^*$$代表旧的迭代值，虽然它的含义和之前讨论KKT条件时的$$\alpha^*$$有所不同，但内涵是一致的——迭代值的极限是最优值，且迭代过程满足约束条件。其他变量也是类似的。
-
-将$$\omega$$、v代入公式6可得：
-
-$$\alpha_2(K_{11}+K_{22}-2K_{12})=s(\alpha_1^*+s\alpha_2^*)(K_{11}-K_{12})+y^{(2)}(v_1-v_2)+1-s$$
-
-$$\alpha_2(K_{11}+K_{22}-2K_{12})=s\alpha_1^*K_{11}+\alpha_2^*K_{11}-s\alpha_1^*K_{12}-\alpha_2^*K_{12}+y^{(2)}(v_1-v_2)+1-s$$
-
-$$\alpha_2(K_{11}+K_{22}-2K_{12})=\alpha_2^*(K_{11}+K_{22}-2K_{12})+y^{(2)}(u_1-u_2+y^{(2)}-y^{(1)})$$
-
-定义$$\eta=K_{11}+K_{22}-2K_{12},E_i=u_i-y^{(i)}$$。其中，$$\eta$$是W的二阶导数，而$$E_i$$是第i个训练样本的误差，即预测值和实际值的差。
-
-$$\alpha_2\eta=\alpha_2^*\eta+y^{(2)}(E_1-E_2)$$
-
-$$\alpha_2^{new,unclipped}=\alpha_2+\frac{y^{(2)}(E_1-E_2)}{\eta}$$
-
-$$\alpha_2^{new,unclipped}$$是无约束的$$W(\alpha_2)$$问题的最优值。如果考虑约束条件则有：
-
-$$\alpha_2^{new}=\begin{cases}
-H, & if \ \alpha_2^{new,unclipped}>H \\
-\alpha_2^{new,unclipped}, & if \ L\le \alpha_2^{new,unclipped} \le H \\
-L, & if \ \alpha_2^{new,unclipped}<L \\
-\end{cases}$$
-
-其中，$$\alpha_2^{new}$$是更新值。
-
-由公式7可得：
-
-$$\alpha_1+s\alpha_2=\alpha_1^{new}+s\alpha_2^{new}$$
-
-$$\alpha_1^{new}=\alpha_1+s(\alpha_2-\alpha_2^{new})$$
-
-在特殊情况下，$$\eta$$可能不为正，如果核函数K不满足Mercer定理，那么目标函数可能变得非正定，$$\eta$$可能出现负值。即使K是有效的核函数，如果训练样本中出现相同的特征x，那么$$\eta$$仍有可能为0。SMO算法在$$\eta$$不为正值的情况下仍有效。
-
-当$$\eta\le 0$$时，W本身没有极值，极值出现在边界处，即$$\alpha_2^{new}=L$$或$$\alpha_2^{new}=H$$。我们需要对边界的W值进行检查。
-
-这里首先对$$\alpha_2^{new}=L$$的情况做一下讨论。
-
-$$\alpha_1^{new}=L_1=\alpha_1+s(\alpha_2-L)$$
-
-由公式8可得：
-
-$$\begin{align}
-L_1-y^{(1)}L_1v_1&=L_1\left[(y^{(1)})^2-y^{(1)}(u_i-b-y^{(1)}\alpha_1K_{11}-y^{(2)}\alpha_2K_{21})\right]
-\\&=L_1\left[y^{(1)}(y^{(1)}-u_i+b)+\alpha_1K_{11}+s\alpha_2K_{12}\right]
-\\&=L_1\left[y^{(1)}(b-E_1)+\alpha_1K_{11}+s\alpha_2K_{12}\right]=L_1f_1
-\end{align}$$
-
-即
-
-$$f_1=y^{(1)}(b-E_1)+\alpha_1K_{11}+s\alpha_2K_{12}$$
 

@@ -4,6 +4,82 @@ title:  机器学习（十六）——隐式狄利克雷划分
 category: theory 
 ---
 
+## 密度函数和线性变换
+
+在讨论ICA的具体算法之前，我们先来回顾一下概率和线性代数里的知识。
+
+假设我们的随机变量s有概率密度（probability density）函数$$p_s(s)$$。为了简单，我们再假设s是实数，还有一个随机变量$$x=As$$，A和x都是实数。令$$p_x$$是x的概率密度，那么怎么求$$p_x$$呢？
+
+令$$W=A^{-1}$$，则$$s=Wx$$。然而$$p_x(x)\neq p_s(Wx)$$。
+
+这里以均匀分布（Uniform）为例讨论一下。令$$s\sim \text{Uniform}[0,1]$$，则$$p_s(s)=1$$。令$$A=2$$，则$$W=0.5$$，$$x=2s\sim \text{Uniform}[0,2]$$，因此$$p_x(x)=p_s(Wx)\lvert W \rvert$$。
+
+## 累积分布函数
+
+累积分布函数（cumulative distribution function，CDF）是概率论中的一个基本概念。它的定义如下：
+
+$$F(z_0)=P(z\le z_0)=\int_{-\infty}^{z_0}p_z(z)\mathrm{d}z$$
+
+可以看出：
+
+$$p_z(z)=F'(z)$$
+
+## ICA算法
+
+ICA算法归功于Bell 和 Sejnowski，这里使用最大似然估计来解释算法。（原始论文中使用的是一个复杂的方法Infomax principal，这在最新的推导中已经不需要了。）
+
+>注：Terrence (Terry) Joseph Sejnowski，1947年生，美国科学家。普林斯顿大学博士，导师是神经网络界的大神John Hopfield。ICA算法和Boltzmann machine的发现人。
+
+>Tony Bell的个人主页：
+>http://cnl.salk.edu/~tony/index.html
+
+我们假定每个$$s_i$$有概率密度$$p_s$$，那么给定时刻原信号的联合分布就是：
+
+$$p(s)=\prod_{i=1}^np_s(s_i)$$
+
+因此：
+
+$$p(x)=\prod_{i=1}^np_s(w_i^Tx)\cdot |W|\tag{2}$$
+
+为了确定$$s_i$$的概率密度，我们首先要确定它的累计分布函数$$F(x)$$。而这需要满足两个性质：单调递增和在$$[0,1]$$区间。
+
+我们发现sigmoid函数很适合，它的定义域负无穷到正无穷，值域0到1，缓慢递增。因此，可以假定s的累积分布函数符合sigmoid函数：
+
+$$g(s)=\frac{1}{1+e^{-s}}$$
+
+求导，可得：
+
+$$p_s(s)=g'(s)=g(s)(1-g(s))$$
+
+这里的推导参见《机器学习（一）》的公式7。
+
+>注：如果有其他先验信息的话，这里的$$g(s)$$也可以使用其他函数。否则的话，sigmoid函数能够在大多数问题上取得不错的效果。
+
+公式2的对数似然估计函数为：
+
+$$\ell(W)=\sum_{i=1}^m\left(\sum_{j=1}^m\log g'(w_j^Tx^{(i)})+\log|W|\right)\tag{3}$$
+
+因为：
+
+$$\begin{align}
+(\log g'(s))'&=(\log [g(s)(1-g(s))])'=(\log g(s))'+(\log (1-g(s)))'
+\\&=\frac{g'(s)}{g(s)}+\frac{(1-g(s))'}{(1-g(s))}=\frac{g(s)(1-g(s))}{g(s)}-\frac{g(s)(1-g(s))}{(1-g(s))}
+\\&=1-2g(s)
+\end{align}$$
+
+又因为《机器学习（十）》的公式5.11，可得公式3的导数为：
+
+$$\nabla_W\ell(W)=\begin{bmatrix}
+1-2g(w_1^Tx^{(i)}) \\
+1-2g(w_2^Tx^{(i)}) \\
+\vdots \\
+1-2g(w_n^Tx^{(i)})
+\end{bmatrix}x^{(i)^T}+(W^T)^{-1}$$
+
+最后，用通常的随机梯度上升算法，求得$$\ell(W)$$的最大值即可。
+
+>注意：我们计算最大似然估计时,假设了$$x^{(i)}$$和$$x^{(j)}$$之间是独立的，然而对于语音信号或者其他具有时间连续依赖特性(比如温度)上，这个假设不能成立。但是在数据足够多时，假设独立对效果影响不大。
+
 # 隐式狄利克雷划分
 
 Latent Dirichlet Allocation，简称LDA。注意不要和Linear Discriminant Analysis搞混了。
@@ -130,91 +206,3 @@ $$\mathrm{B}(\alpha_1,\alpha_2,\alpha_3)=\int p_1^{\alpha_1 -1}p_2^{\alpha_2 -1}
 证毕。
 
 从上面的证明过程，可以看出公式1并不是恒等式，而是在Dirichlet分布下才成立的等式。这也是共轭先验分布能够简化计算的地方。
-
-## PLSA
-
-Probabilistic Latent Semantic Analysis是Thomas Hofmann于1999年在UCB读博期间提出的算法。
-
-原文：
-
-https://dslpitt.org/uai/papers/99/p289-hofmann.pdf
-
-示意图：
-
-![](/images/article/plsa-doc-topic-word.jpg)
-
-PLSA将生成文档的过程，分为两个步骤：
-
-1.生成文档的主题。（doc->topic）
-
-2.根据主题生成相关的词.（topic->word）
-
-第m篇文档$$d_m$$中的每个词的生成概率为：
-
-$$p(w|d_m) = \sum_{z=1}^K p(w|z)p(z|d_m) = \sum_{z=1}^K \varphi_{zw} \theta_{mz}$$
-
-## LDA
-
-利用贝叶斯学派的观点改造PLSA，可得：
-
-![](/images/article/lda-dice.jpg)
-
-LDA生成模型包含两个过程：
-
-1.生成第m篇文档中的所有词对应的topics。
-
-$$\overrightarrow{\alpha}\xrightarrow[Dirichlet]{} \overrightarrow{\theta}_m \xrightarrow[Multinomial]{} \overrightarrow{z}_{m}$$
-
-2.K个由topics生成words的独立过程。
-
-$$\overrightarrow{\beta} \xrightarrow[Dirichlet]{} \overrightarrow{\varphi}_k \xrightarrow[Multinomial]{} \overrightarrow{w}_{(k)}$$
-
-因此，总共就是$$M+K$$个Dirichlet-Multinomial共轭结构。
-
-LDA的Gibbs Sampling图示：
-
-![](/images/article/gibbs-path-search.jpg)
-
-LDA模型的目标有两个：
-
-**训练模型**：估计模型中的参数：$$\overrightarrow{\varphi}_1, \cdots, \overrightarrow{\varphi}_K$$和$$\overrightarrow{\theta}_1, \cdots, \overrightarrow{\theta}_M$$。
-
-由于参数$$\overrightarrow{\theta}_m$$是和训练语料中的每篇文档相关的，对于我们理解新的文档并无用处，所以工程上最终存储LDA模型时，一般没有必要保留。
-
-**使用模型**：对于新来的一篇文档$$doc_{new}$$，我们能够计算这篇文档的topic分布$$\overrightarrow{\theta}_{new}$$。
-
-从最终给出的算法可以看出，虽然LDA用到了MCMC和Gibbs Sampling算法，但最终目的并不是生成符合相应分布的随机数，而是求出模型参数$$\overrightarrow{\varphi}$$的值，并用于预测。
-
-## 参考
-
-http://www.arbylon.net/publications/text-est.pdf
-
-《Parameter estimation for text analysis》，Gregor Heinrich著
-
-http://www.inference.phy.cam.ac.uk/itprnn/book.pdf
-
-《Information Theory, Inference, and Learning Algorithms》，David J.C. MacKay著
-
-关于MCMC和Gibbs Sampling的更多的内容，可参考《Neural Networks and Learning Machines》，Simon Haykin著。该书有中文版。
-
->注：Sir David John Cameron MacKay，1967～2016，加州理工学院博士，导师John Hopfield，剑桥大学教授。英国能源与气候变化部首席科学顾问，英国皇家学会会员。在机器学习领域和可持续能源领域有重大贡献。
-
->Simon Haykin，英国伯明翰大学博士，加拿大McMaster University教授。初为雷达和信号处理专家，80年代中后期，转而从事神经计算方面的工作。加拿大皇家学会会员。
-
-http://www.cs.cmu.edu/~epxing/Class/10708-14/lectures/lecture17-MCMC.pdf
-
-# 决策树
-
-Decision Tree讲的最好的，首推周志华的《机器学习》。这里只对要点进行备忘。
-
-当前样本集合D中，第k类样本所占的比例为$$p_k(k=1,2,\dots,\vert y\vert)$$，则D的信息熵（information entropy）定义为：
-
-$$Ent(D)=-\sum_{k=1}^{|y|}p_k\log_2p_k$$
-
-假定离散属性a有V个可能的取值，若使用a对D进行划分，则第v个分支结点包含了D中所有在a上取值$$a^v$$的样本，记为$$D^v$$。则信息增益（information gain）为：
-
-$$Gain(D,a)=Ent(D)-\sum_{v=1}^V\frac{|D^v|}{|D|}Ent(D^v)$$
-
-
-
-

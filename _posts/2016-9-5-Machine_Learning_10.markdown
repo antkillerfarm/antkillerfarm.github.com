@@ -4,7 +4,101 @@ title:  机器学习（十）——因子分析
 category: theory 
 ---
 
-## 对$$\Sigma$$的限制（续）
+tr的其他性质还包括：
+
+$$\operatorname{tr}\,a=a,a\in R\tag{5.1}$$
+
+$$\operatorname{tr}(A + B) = \operatorname{tr}(A) + \operatorname{tr}(B)\tag{5.2}$$
+
+$$\operatorname{tr}(cA) = c \operatorname{tr}(A)\tag{5.3}$$
+
+$$\operatorname{tr}(A) = \operatorname{tr}(A^{\mathrm T})\tag{5.4}$$
+
+$$\operatorname{tr}(AB) = \operatorname{tr}(BA)\tag{5.5}$$
+
+$$\operatorname{tr}(ABCD) = \operatorname{tr}(BCDA) = \operatorname{tr}(CDAB) = \operatorname{tr}(DABC)\tag{5.6}$$
+
+$$\nabla_A\operatorname{tr}(AB)=B^T\tag{5.7}$$
+
+$$\nabla_{A^T}f(A)=(\nabla_Af(A))^T\tag{5.8}$$
+
+$$\nabla_A\operatorname{tr}(ABA^TC)=CAB+C^TAB^T\tag{5.9}$$
+
+$$\nabla_{A^T}\operatorname{tr}(ABA^TC)=B^TA^TC^T+BA^TC\tag{5.10}$$
+
+$$\nabla_A|A|=|A|(A^{-1})^T\tag{5.11}$$
+
+因为$$\mu_l^T\Sigma_l^{-1}\mu_l$$是实数，由公式5.1可得：
+
+$$\nabla_{\mu_l}\mu_l^T\Sigma_l^{-1}\mu_l=\nabla_{\mu_l}\operatorname{tr}(\mu_l^T\Sigma_l^{-1}\mu_l)$$
+
+由公式5.10可得：
+
+$$\nabla_{\mu_l}\operatorname{tr}(\mu_l^T\Sigma_l^{-1}\mu_l)=(\Sigma_l^{-1})^T(\mu_l^T)^TI^T+\Sigma_l^{-1}(\mu_l^T)^TI=(\Sigma_l^{-1})^T\mu_l+\Sigma_l^{-1}\mu_l$$
+
+因为$$\Sigma_l^{-1}$$是对称矩阵，因此，综上可得：
+
+$$\nabla_{\mu_l}\mu_l^T\Sigma_l^{-1}\mu_l=2\Sigma_l^{-1}\mu_l\tag{5.12}$$
+
+回到正题，令《机器学习（九）》公式4等于0，可得：
+
+$$\mu_j:=\frac{\sum_{i=1}^mw_j^{(i)}x^{(i)}}{\sum_{i=1}^mw_j^{(i)}}$$
+
+同样的，对$$\phi_j$$求导，可得：
+
+$$\sum_{i=1}^m\sum_{j=1}^kw_j^{(i)}\log\phi_j$$
+
+因为存在$$\sum_{j=1}^k\phi_j=1$$这样的约束，因此需要使用拉格朗日函数：
+
+$$\mathcal{L}(\phi)=\sum_{i=1}^m\sum_{j=1}^kw_j^{(i)}\log\phi_j+\beta(\sum_{j=1}^k\phi_j-1)$$
+
+这里的$$\beta$$是拉格朗日乘子，$$\phi_j\ge 0$$的约束条件不用考虑，因为对$$\log\phi_j$$求导已经隐含了这个条件。
+
+因此：
+
+$$\frac{\partial\mathcal{L}(\phi)}{\partial\phi_j}=\sum_{i=1}^m\frac{w_j^{(i)}}{\phi_j}+\beta$$
+
+令上式等于0，可得：
+
+$$\frac{\sum_{i=1}^mw_j^{(i)}}{\phi_j}=-\beta=\frac{\sum_{i=1}^m\sum_{j=1}^kw_j^{(i)}}{\sum_{j=1}^k\phi_j}$$
+
+因为$$\sum_{j=1}^k\phi_j=1,\sum_{j=1}^kw_j^{(i)}=1$$，所以：
+
+$$-\beta=\frac{\sum_{i=1}^m1}{1}=m$$
+
+因此：
+
+$$\phi_j:=\frac{1}{m}\sum_{i=1}^mw_j^{(i)}$$  
+
+# 因子分析
+
+之前的讨论都是基于样本个数m远大于特征数n的，现在来看看$$m\ll n$$的情况。
+
+这种情况本质上意味着，样本只覆盖了很小一部分的特征空间。当我们应用高斯模型的时候，会发现协方差矩阵$$\Sigma$$根本就不存在，自然也就没法利用之前的方法了。
+
+那么我们应该怎么办呢？
+
+## 对$$\Sigma$$的限制
+
+有两种方法可以对$$\Sigma$$进行限制。
+
+方法一：
+
+设定$$\Sigma$$为对角线矩阵，即所有非对角线元素都是0。其对角线元素为：
+
+$$\Sigma_{jj}=\frac{1}{m}\sum_{i=1}^m(x_j^{(i)}-\mu_j)^2$$
+
+二维多元高斯分布在平面上的投影是个椭圆，中心点由$$\mu$$决定，椭圆的形状由$$\Sigma$$决定。$$\Sigma$$如果变成对角阵，就意味着椭圆的两个轴都和坐标轴平行了。
+
+方法二：
+
+还可以进一步约束$$\Sigma$$，可以假设对角线上的元素都是相等的，即：
+
+$$\Sigma=\sigma^2I$$
+
+其中：
+
+$$\sigma=\frac{1}{mn}\sum_{j=1}^n\sum_{i=1}^m(x_j^{(i)}-\mu_j)^2$$
 
 这实际上也就是方法一中对角线元素的均值，反映到二维高斯分布图上就是椭圆变成圆。
 
@@ -165,84 +259,5 @@ $$\begin{align}
 从上式可以看出采用极大似然估计和采用代价函数$$J(\theta)$$的效果是一样的。其中：
 
 $$J(\theta)=\frac{1}{2}\sum_{i=1}^m\left(y^{(i)}-\theta^Tx^{(i)}\right)^2$$
-
-## 因子分析模型
-
-假设z和x的联合分布为：
-
-$$\begin{bmatrix} z \\ x \end{bmatrix}\sim N(\mu_{zx},\Sigma)$$
-
-我们的任务就是求出$$\mu_{zx}$$和$$\Sigma$$。
-
-因为：
-
-$$E[x]=E[\mu+\Lambda z+\epsilon]=\mu+\Lambda E[z]+E[\epsilon]=\mu$$
-
-所以：
-
-$$\mu_{zx}=\begin{bmatrix} \vec{0} \\ \mu \end{bmatrix}$$
-
-因为：
-
-$$\Sigma=\begin{bmatrix} \Sigma_{zz} & \Sigma_{zx} \\ \Sigma_{xz} & \Sigma_{xx} \end{bmatrix}$$
-
-所以我们只要分别计算这四个值即可。
-
-因为$$z\sim N(0,I)$$，所以$$\Sigma_{zz}=I$$。
-
-$$\begin{align}
-\Sigma_{zx}&=E[(z-E[z])(x-E[x])^T]=E[(z-0)(\mu+\Lambda z+\epsilon-\mu)^T]=E[z(\Lambda z+\epsilon)^T]
-\\&=E[z(\Lambda z)^T+z\epsilon^T]=E[zz^T\Lambda^T+z\epsilon^T]=E[zz^T]\Lambda^T+E[z\epsilon^T]
-\end{align}$$
-
-因为z和$$\epsilon$$是相互独立的随机变量，因此$$E[z\epsilon^T]=E[z]E[\epsilon^T]=0$$。
-
-又因为$$E[zz^T]=Cov(z)=I$$，所以$$\Sigma_{zx}=\Lambda^T$$。
-
-$$\begin{align}
-\Sigma_{xx}&=E[(x-E[x])(x-E[x])^T]=E[(\mu+\Lambda z+\epsilon-\mu)(\mu+\Lambda z+\epsilon-\mu)^T]
-\\&=E[(\Lambda z+\epsilon)(\Lambda z^T+\epsilon^T)]=E[\Lambda z(\Lambda z)^T+\epsilon(\Lambda z)^T+\Lambda z\epsilon^T+\epsilon\epsilon^T]
-\\&=E[\Lambda zz^T\Lambda^T+\epsilon z^T\Lambda^T+\Lambda z\epsilon^T+\epsilon\epsilon^T]
-\\&=\Lambda E[zz^T]\Lambda^T+E[\epsilon z^T]\Lambda^T+\Lambda E[z\epsilon^T]+E[\epsilon\epsilon^T]
-\\&=\Lambda I\Lambda^T+0+0+\Psi=\Lambda \Lambda^T+\Psi
-\end{align}$$
-
-把这些结果合在一起，可得：
-
-$$\begin{bmatrix} z \\ x \end{bmatrix}\sim N\left(\begin{bmatrix} \vec{0} \\ \mu \end{bmatrix},\begin{bmatrix} I & \Lambda^T \\ \Lambda & \Lambda \Lambda^T+\Psi \end{bmatrix}\right)\tag{3}$$
-
-从这个结论可以看出：$$x\sim N(\mu,\Lambda \Lambda^T+\Psi)$$
-
-因此它的对数似然函数为：
-
-$$\ell(\mu,\Lambda,\Psi)=\log\prod_{i=1}^m\frac{1}{(2\pi)^{n/2}\lvert\Lambda \Lambda^T+\Psi\rvert^{1/2}}\exp\left(-\frac{1}{2}(x^{(i)}-\mu)^T(\Lambda \Lambda^T+\Psi)^{-1}(x^{(i)}-\mu)\right)$$
-
-但这个函数是很难最大化的，需要使用EM算法解决之。
-
-## 因子分析的EM估计
-
-E-step比较简单。由公式1、2、3，可得：
-
-$$\mu_{z^{(i)}\vert x^{(i)}}=\Lambda^T(\Lambda \Lambda^T+\Psi)^{-1}(x^{(i)}-\mu)$$
-
-$$\Sigma_{z^{(i)}\vert x^{(i)}}=I-\Lambda^T(\Lambda \Lambda^T+\Psi)^{-1}\Lambda$$
-
-因此：
-
-$$Q_i(z^{(i)})=\frac{1}{(2\pi)^{n/2}\lvert\Sigma_{z^{(i)}\vert x^{(i)}}\rvert^{1/2}}\exp\left(-\frac{1}{2}(x^{(i)}-\mu_{z^{(i)}\vert x^{(i)}})^T\Sigma_{z^{(i)}\vert x^{(i)}}^{-1}(x^{(i)}-\mu_{z^{(i)}\vert x^{(i)}})\right)$$
-
-M-step的最大化的目标是：
-
-$$\sum_{i=1}^m\int_{z^{(i)}}Q_i(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\mu,\Lambda,\Psi)}{Q_i(z^{(i)})}\mathrm{d}z^{(i)}$$
-
-下面我们重点求$$\Lambda$$的估计公式。
-
-首先将上式简化为:
-
-$$\begin{align}
-&\sum_{i=1}^m\int_{z^{(i)}}Q_i(z^{(i)})\log\frac{p(x^{(i)}\vert z^{(i)};\mu,\Lambda,\Psi)p(z^{(i)})}{Q_i(z^{(i)})}\mathrm{d}z^{(i)}
-\\&=\sum_{i=1}^m\int_{z^{(i)}}Q_i(z^{(i)})\left[\log p(x^{(i)}\vert z^{(i)};\mu,\Lambda,\Psi)+\log p(z^{(i)})-\log Q_i(z^{(i)})\right]\mathrm{d}z^{(i)}
-\\&=\sum_{i=1}^m E_{z^{(i)}\sim Q_i}\left[\log p(x^{(i)}\vert z^{(i)};\mu,\Lambda,\Psi)+\log p(z^{(i)})-\log Q_i(z^{(i)})\right]
-\end{align}$$
 
 

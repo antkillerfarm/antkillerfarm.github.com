@@ -4,7 +4,84 @@ title:  机器学习（十三）——机器学习中的矩阵方法（3）病�
 category: theory 
 ---
 
-## 向量的范数（续）
+## 奇异值分解
+
+奇异值分解（Singular value decomposition，SVD）定理：
+
+设$$M\in R^{m\times n}$$，则必存在正交矩阵$$U=[u_1,\dots,u_m]\in R^{m\times m}$$和$$V=[v_1,\dots,v_n]\in R^{n\times n}$$使得：
+
+$$U^TMV=\begin{bmatrix}
+\Sigma_r & 0 \\
+0 & 0 
+\end{bmatrix}$$
+
+其中，$$\Sigma_r=diag(\sigma_1,\dots,\sigma_r),\sigma_1\ge \dots\ge \sigma_r>0$$。
+
+当M为复矩阵时，将U、V改为酉矩阵（unitary matrix）即可。（吐槽一下，酉矩阵这个翻译真的好烂，和天干地支半毛钱关系都没有。）
+
+奇异值分解也可写为另一种形式：
+
+$$M=U\Sigma V^*$$
+
+其几何意义如下图所示：
+
+![](/images/article/Singular-Value-Decomposition.png)
+
+虽然，我们可以通过计算矩阵$$\sqrt{M^*M}$$的特征值的方法，计算奇异值，然而这个方法的计算量十分巨大。1965年，Gene Howard Golub和William Morton Kahan发明了目前较为通用的算法。但该方法比较复杂，这里不作介绍。
+
+参见：
+
+http://www.doc88.com/p-089411326888.html
+
+>Gene Howard Golub，1932～2007，美国数学家，斯坦福大学教授。
+
+>William Morton Kahan，1933年生，加拿大数学家，多伦多大学博士，UCB教授。图灵奖获得者（1989）。IEEE-754标准（即浮点数标准）的主要制订者，被称为“浮点数之父”。ACM院士。
+
+## 矩阵的秩
+
+一个矩阵A的列（行）秩是A的线性独立的列（行）的极大数。
+
+下面不加证明的给出矩阵的秩的性质：
+
+1.矩阵的行秩等于列秩，因此可统称为矩阵的秩。
+
+2.秩是n的$$m\times n$$矩阵为列满秩阵；秩是n的$$n\times p$$矩阵为行满秩阵。
+
+3.设$$A\in M_{m\times n}(F)$$，若A是行满秩阵，则$$m\le n$$；若A是列满秩阵 ，则$$n\le m$$。
+
+4.设A为$$m\times n$$列满秩阵，则n元齐次线性方程组$$AX=0$$只有零解。
+
+5.线性方程组$$AX=B$$对任一m维列向量B都有解$$\Leftrightarrow$$系数矩阵A为行满秩阵。
+
+参见：
+
+http://wenku.baidu.com/view/9ce143eb81c758f5f61f6730.html
+
+## 奇异矩阵
+
+对应的行列式等于0的方阵，被称为奇异矩阵（singular matrix）。
+
+奇异矩阵和线性相关、秩等概念密切相关。
+
+下面不加证明的给出奇异矩阵的性质：
+
+1.如果A为非奇异矩阵$$\Leftrightarrow$$A满秩。
+
+2.如果A为奇异矩阵，则AX=0有无穷解，AX=b有无穷解或者无解。如果A为非奇异矩阵，则AX=0有且只有唯一零解，AX=b有唯一解。
+
+对于A不是方阵的情况，一般使用$$A^TA$$来评估矩阵是否是奇异矩阵。
+
+## 向量的范数
+
+范数（norm，也叫模）的定义比较抽象，这里我们使用闵可夫斯基距离，进行一个示意性的介绍。
+
+Minkowski distance的定义：
+
+$$d(x,y)=\sqrt[\lambda]{\sum_{i=1}^{n}\lvert x_i-y_i\lvert^{\lambda}}$$
+
+显然，当$$\lambda=2$$时，该距离为欧氏距离。当$$\lambda=1$$时，也被称为CityBlock Distance或Manhattan Distance（曼哈顿距离）。
+
+这里的$$\lambda$$就是范数。
 
 范数可用符号$$\|x\|_\lambda$$表示。常用的有：
 
@@ -182,131 +259,3 @@ $$\begin{align}
 p(x,y)&=\frac{cov(X,Y)}{\sigma_X\sigma_Y}=\frac{\operatorname{E}[XY]-\operatorname{E}[X]\operatorname{E}[Y]}{\sqrt{\operatorname{E}[X^2]-\operatorname{E}[X]^2}~\sqrt{\operatorname{E}[Y^2]- \operatorname{E}[Y]^2}}
 \\&=\frac{n\sum x_iy_i-\sum x_i\sum y_i}{\sqrt{n\sum x_i^2-(\sum x_i)^2}~\sqrt{n\sum y_i^2-(\sum y_i)^2}}
 \end{align}$$
-
-该系数由Karl Pearson发明。参见《机器学习（二）》中对Karl Pearson的简介。Fisher对该系数也有研究和贡献。
-
-![](/images/article/pearson.png)
-
-如上图所示，Cosine相似度计算的是两个样本点和坐标原点之间的直线的夹角，而PCC计算的是两个样本点和数学期望点之间的直线的夹角。
-
-PCC能够有效解决，在协同过滤数据集中，不同用户评分尺度不一的问题。
-
-参见：
-
-https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient
-
-### Spearman秩相关系数（Spearman's rank correlation coefficient）
-
-对秩变量（ranked variables）套用PCC公式，即可得Spearman秩相关系数。
-
-秩变量是一类不在乎值的具体大小，而只关心值的大小关系的统计量。
-
-<table>
-<tr>
-<th>$$X_i$$</th>
-<th>$$Y_i$$</th>
-<th>$$x_i$$</th>
-<th>$$y_i$$</th>
-<th>$$d_i$$</th>
-<th>$$d_i^2$$</th>
-</tr>
-<tr>
-<td>86</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>97</td>
-<td>20</td>
-<td>2</td>
-<td>6</td>
-<td>−4</td>
-<td>16</td>
-</tr>
-<tr>
-<td>99</td>
-<td>28</td>
-<td>3</td>
-<td>8</td>
-<td>−5</td>
-<td>25</td>
-</tr>
-<tr>
-<td>100</td>
-<td>27</td>
-<td>4</td>
-<td>7</td>
-<td>−3</td>
-<td>9</td>
-</tr>
-<tr>
-<td>101</td>
-<td>50</td>
-<td>5</td>
-<td>10</td>
-<td>−5</td>
-<td>25</td>
-</tr>
-<tr>
-<td>103</td>
-<td>29</td>
-<td>6</td>
-<td>9</td>
-<td>−3</td>
-<td>9</td>
-</tr>
-<tr>
-<td>106</td>
-<td>7</td>
-<td>7</td>
-<td>3</td>
-<td>4</td>
-<td>16</td>
-</tr>
-<tr>
-<td>110</td>
-<td>17</td>
-<td>8</td>
-<td>5</td>
-<td>3</td>
-<td>9</td>
-</tr>
-<tr>
-<td>112</td>
-<td>6</td>
-<td>9</td>
-<td>2</td>
-<td>7</td>
-<td>49</td>
-</tr>
-<tr>
-<td>113</td>
-<td>12</td>
-<td>10</td>
-<td>4</td>
-<td>6</td>
-<td>36</td>
-</tr>
-</table>
-
-如上表所示，$$X_i$$和$$Y_i$$是原始的变量值，$$x_i$$和$$y_i$$是rank之后的值，$$d_i=x_i-y_i$$。
-
-当$$X_i$$和$$Y_i$$没有重复值的时候，也可用如下公式计算相关系数：
-
-$$r_s = {1- \frac {6 \sum d_i^2}{n(n^2 - 1)}}$$
-
->注：Charles Spearman，1863～1945，英国心理学家。这个人的经历比较独特，20岁从军，15年之后退役。然后，进入德国莱比锡大学读博，中间又被军队征召，参加了第二次布尔战争，因此，直到1906年才拿到博士学位。伦敦大学学院心理学教授。   
->尽管他的学历和教职，都是心理学方面的。但他最大的贡献，却是在统计学领域。他也是因为在统计学方面的成就，得以当选皇家学会会员。   
->话说那个时代的统计学大牛，除了Fisher之外，基本都是副业比主业强。只有Fisher，主业方面也是那么牛逼，不服不行啊。
-
-![](/images/article/spearman.png)
-
-由上图可见，Pearson系数关注的是两个变量之间的线性相关度，而Spearman系数可以应用到非线性或者难以量化的领域。
-
-参见：
-
-https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient
-

@@ -1,10 +1,62 @@
 ---
 layout: post
-title:  机器学习（九）——EM算法
+title:  机器学习（九）——混合高斯模型和EM算法
 category: theory 
 ---
 
-# 高斯混合模型和EM算法（续）
+# 高斯混合模型和EM算法
+
+本篇讨论使用期望最大化算法（Expectation-Maximization）进行密度估计（density estimation）。
+
+从上面的讨论可以形象的看出，聚类问题实际就是在数据集上，找出一个个数据密度较高的“圆圈”。我们可以反过来思考这个问题：如果我们已知圆圈的圆心和半径，那么也可以根据圆心、半径以及样本分布模型，来随机生成这些数据。显然，这和前一种做法在效果上是等效的。
+
+首先我们假设样本数据满足联合概率分布
+
+$$p(x^{(i)},z^{(i)})=p(x^{(i)}\vert z^{(i)})p(z^{(i)})\tag{5}$$
+
+其中，$$z^{(i)}\sim Multinomial(\phi)$$（这里的$$\phi_j=p(z^{(i)}=j)$$，因此$$\phi_j\ge 0,\sum_{j=1}^k\phi_j=1$$），$$z^{(i)}$$的值为k个聚类之一。
+
+假定$$x^{(i)}\vert z^{(i)}=j\sim \mathcal{N}(\mu_j,\Sigma_j)$$，则该模型被称为高斯混合模型（mixture of Gaussians model）。
+
+整个模型简单描述为对于每个样例$$x^{(i)}$$，我们先从k个类别中按多项分布抽取一个$$z^{(i)}$$，然后根据$$z^{(i)}$$所对应的k个多值高斯分布中的一个生成样例$$x^{(i)}$$。注意的是这里的$$z^{(i)}$$是隐含的随机变量（latent random variables）。
+
+![](/images/article/EM.png)
+
+因此，由全概率公式可得：
+
+$$p(x^{(i)};\phi,\mu,\Sigma)=\sum_{z^{(i)}=1}^kp(x^{(i)}\vert z^{(i)};\mu,\Sigma)p(z^{(i)};\phi)\tag{6}$$
+
+该模型的对数化似然函数为：
+
+$$\ell(\phi,\mu,\Sigma)=\sum_{i=1}^m\log p(x^{(i)};\phi,\mu,\Sigma)=\sum_{i=1}^m\log \sum_{z^{(i)}=1}^kp(x^{(i)}\vert z^{(i)};\mu,\Sigma)p(z^{(i)};\phi)$$
+
+这个式子的最大值不能通过求导数为0的方法解决的，因为它不是close form。（多项分布的概率密度函数包含阶乘运算，不满足close form的定义。）
+
+为了简化问题，我们假设已经知道每个样例的$$z^{(i)}$$值。这实际上就转化成《机器学习（二）》所提到的GDA模型。和之前模型的区别在于，$$z^{(i)}$$是多项分布，而且每个聚类的$$\Sigma$$都不相同，但结论是类似的。
+
+这里的直接推导非常复杂，可参考以下文章：
+
+http://www.cse.psu.edu/~rtc12/CSE586/lectures/EMLectureFeb3.pdf
+
+上面这篇文章比较直观，比Andrew讲义的Problem Set详细的多。然而Andrew这样写是有原因的，在后面的章节，借助Jensen不等式，Andrew给出一个更简单且一般化的推导过程。
+
+接下来的问题就是：$$z^{(i)}$$的值我们是不知道的，该怎么办呢？
+
+EM算法的思路是：
+
+>1.猜测$$z^{(i)}$$的值。（这一步即所谓的Expectation，简称E-Step。）   
+>2.最大化计算，以更新模型的参数。（这一步即所谓的Maximization，简称M-Step。）
+
+具体到这里就是：
+
+>Repeat until convergence {   
+><span style="white-space: pre">	</span>(E-step) For each i, j：   
+><span style="white-space: pre">			</span>$$w_j^{(i)}:=p(z^{(i)}=j\vert x^{(i)};\phi,\mu,\Sigma)$$   
+><span style="white-space: pre">	</span>(M-step) Update the parameters：   
+><span style="white-space: pre">			</span>$$\phi_j:=\frac{1}{m}\sum_{i=1}^mw_j^{(i)}$$   
+><span style="white-space: pre">			</span>$$\mu_j:=\frac{\sum_{i=1}^mw_j^{(i)}x^{(i)}}{\sum_{i=1}^mw_j^{(i)}}$$   
+><span style="white-space: pre">			</span>$$\Sigma_j:=\frac{\sum_{i=1}^mw_j^{(i)}(x^{(i)}-\mu_j)(x^{(i)}-\mu_j)^T}{\sum_{i=1}^mw_j^{(i)}}$$   
+>}
 
 E-Step中，根据贝叶斯公式可得：
 
@@ -173,100 +225,4 @@ $$\begin{align}
 \end{align}$$
 
 这里对最后一步的推导，做一个说明。为了便于以下的讨论，我们引入符号“tr”，该符号表示矩阵的主对角线元素之和，也被叫做矩阵的“迹”（Trace）。按照通常的写法，在不至于误会的情况下，tr后面的括号会被省略。
-
-tr的其他性质还包括：
-
-$$\operatorname{tr}\,a=a,a\in R\tag{5.1}$$
-
-$$\operatorname{tr}(A + B) = \operatorname{tr}(A) + \operatorname{tr}(B)\tag{5.2}$$
-
-$$\operatorname{tr}(cA) = c \operatorname{tr}(A)\tag{5.3}$$
-
-$$\operatorname{tr}(A) = \operatorname{tr}(A^{\mathrm T})\tag{5.4}$$
-
-$$\operatorname{tr}(AB) = \operatorname{tr}(BA)\tag{5.5}$$
-
-$$\operatorname{tr}(ABCD) = \operatorname{tr}(BCDA) = \operatorname{tr}(CDAB) = \operatorname{tr}(DABC)\tag{5.6}$$
-
-$$\nabla_A\operatorname{tr}(AB)=B^T\tag{5.7}$$
-
-$$\nabla_{A^T}f(A)=(\nabla_Af(A))^T\tag{5.8}$$
-
-$$\nabla_A\operatorname{tr}(ABA^TC)=CAB+C^TAB^T\tag{5.9}$$
-
-$$\nabla_{A^T}\operatorname{tr}(ABA^TC)=B^TA^TC^T+BA^TC\tag{5.10}$$
-
-$$\nabla_A|A|=|A|(A^{-1})^T\tag{5.11}$$
-
-因为$$\mu_l^T\Sigma_l^{-1}\mu_l$$是实数，由公式5.1可得：
-
-$$\nabla_{\mu_l}\mu_l^T\Sigma_l^{-1}\mu_l=\nabla_{\mu_l}\operatorname{tr}(\mu_l^T\Sigma_l^{-1}\mu_l)$$
-
-由公式5.10可得：
-
-$$\nabla_{\mu_l}\operatorname{tr}(\mu_l^T\Sigma_l^{-1}\mu_l)=(\Sigma_l^{-1})^T(\mu_l^T)^TI^T+\Sigma_l^{-1}(\mu_l^T)^TI=(\Sigma_l^{-1})^T\mu_l+\Sigma_l^{-1}\mu_l$$
-
-因为$$\Sigma_l^{-1}$$是对称矩阵，因此，综上可得：
-
-$$\nabla_{\mu_l}\mu_l^T\Sigma_l^{-1}\mu_l=2\Sigma_l^{-1}\mu_l\tag{5.12}$$
-
-回到正题，令公式4等于0，可得：
-
-$$\mu_j:=\frac{\sum_{i=1}^mw_j^{(i)}x^{(i)}}{\sum_{i=1}^mw_j^{(i)}}$$
-
-同样的，对$$\phi_j$$求导，可得：
-
-$$\sum_{i=1}^m\sum_{j=1}^kw_j^{(i)}\log\phi_j$$
-
-因为存在$$\sum_{j=1}^k\phi_j=1$$这样的约束，因此需要使用拉格朗日函数：
-
-$$\mathcal{L}(\phi)=\sum_{i=1}^m\sum_{j=1}^kw_j^{(i)}\log\phi_j+\beta(\sum_{j=1}^k\phi_j-1)$$
-
-这里的$$\beta$$是拉格朗日乘子，$$\phi_j\ge 0$$的约束条件不用考虑，因为对$$\log\phi_j$$求导已经隐含了这个条件。
-
-因此：
-
-$$\frac{\partial\mathcal{L}(\phi)}{\partial\phi_j}=\sum_{i=1}^m\frac{w_j^{(i)}}{\phi_j}+\beta$$
-
-令上式等于0，可得：
-
-$$\frac{\sum_{i=1}^mw_j^{(i)}}{\phi_j}=-\beta=\frac{\sum_{i=1}^m\sum_{j=1}^kw_j^{(i)}}{\sum_{j=1}^k\phi_j}$$
-
-因为$$\sum_{j=1}^k\phi_j=1,\sum_{j=1}^kw_j^{(i)}=1$$，所以：
-
-$$-\beta=\frac{\sum_{i=1}^m1}{1}=m$$
-
-因此：
-
-$$\phi_j:=\frac{1}{m}\sum_{i=1}^mw_j^{(i)}$$  
-
-# 因子分析
-
-之前的讨论都是基于样本个数m远大于特征数n的，现在来看看$$m\ll n$$的情况。
-
-这种情况本质上意味着，样本只覆盖了很小一部分的特征空间。当我们应用高斯模型的时候，会发现协方差矩阵$$\Sigma$$根本就不存在，自然也就没法利用之前的方法了。
-
-那么我们应该怎么办呢？
-
-## 对$$\Sigma$$的限制
-
-有两种方法可以对$$\Sigma$$进行限制。
-
-方法一：
-
-设定$$\Sigma$$为对角线矩阵，即所有非对角线元素都是0。其对角线元素为：
-
-$$\Sigma_{jj}=\frac{1}{m}\sum_{i=1}^m(x_j^{(i)}-\mu_j)^2$$
-
-二维多元高斯分布在平面上的投影是个椭圆，中心点由$$\mu$$决定，椭圆的形状由$$\Sigma$$决定。$$\Sigma$$如果变成对角阵，就意味着椭圆的两个轴都和坐标轴平行了。
-
-方法二：
-
-还可以进一步约束$$\Sigma$$，可以假设对角线上的元素都是相等的，即：
-
-$$\Sigma=\sigma^2I$$
-
-其中：
-
-$$\sigma=\frac{1}{mn}\sum_{j=1}^n\sum_{i=1}^m(x_j^{(i)}-\mu_j)^2$$
 

@@ -1,10 +1,87 @@
 ---
 layout: post
-title:  机器学习（十一）——机器学习中的矩阵方法（1）LU分解、QR分解
+title:  机器学习（十一）——机器学习中的矩阵方法（1）LU分解
 category: theory 
 ---
 
-## 因子分析的EM估计（续）
+## 因子分析模型
+
+假设z和x的联合分布为：
+
+$$\begin{bmatrix} z \\ x \end{bmatrix}\sim N(\mu_{zx},\Sigma)$$
+
+我们的任务就是求出$$\mu_{zx}$$和$$\Sigma$$。
+
+因为：
+
+$$E[x]=E[\mu+\Lambda z+\epsilon]=\mu+\Lambda E[z]+E[\epsilon]=\mu$$
+
+所以：
+
+$$\mu_{zx}=\begin{bmatrix} \vec{0} \\ \mu \end{bmatrix}$$
+
+因为：
+
+$$\Sigma=\begin{bmatrix} \Sigma_{zz} & \Sigma_{zx} \\ \Sigma_{xz} & \Sigma_{xx} \end{bmatrix}$$
+
+所以我们只要分别计算这四个值即可。
+
+因为$$z\sim N(0,I)$$，所以$$\Sigma_{zz}=I$$。
+
+$$\begin{align}
+\Sigma_{zx}&=E[(z-E[z])(x-E[x])^T]=E[(z-0)(\mu+\Lambda z+\epsilon-\mu)^T]=E[z(\Lambda z+\epsilon)^T]
+\\&=E[z(\Lambda z)^T+z\epsilon^T]=E[zz^T\Lambda^T+z\epsilon^T]=E[zz^T]\Lambda^T+E[z\epsilon^T]
+\end{align}$$
+
+因为z和$$\epsilon$$是相互独立的随机变量，因此$$E[z\epsilon^T]=E[z]E[\epsilon^T]=0$$。
+
+又因为$$E[zz^T]=Cov(z)=I$$，所以$$\Sigma_{zx}=\Lambda^T$$。
+
+$$\begin{align}
+\Sigma_{xx}&=E[(x-E[x])(x-E[x])^T]=E[(\mu+\Lambda z+\epsilon-\mu)(\mu+\Lambda z+\epsilon-\mu)^T]
+\\&=E[(\Lambda z+\epsilon)(\Lambda z^T+\epsilon^T)]=E[\Lambda z(\Lambda z)^T+\epsilon(\Lambda z)^T+\Lambda z\epsilon^T+\epsilon\epsilon^T]
+\\&=E[\Lambda zz^T\Lambda^T+\epsilon z^T\Lambda^T+\Lambda z\epsilon^T+\epsilon\epsilon^T]
+\\&=\Lambda E[zz^T]\Lambda^T+E[\epsilon z^T]\Lambda^T+\Lambda E[z\epsilon^T]+E[\epsilon\epsilon^T]
+\\&=\Lambda I\Lambda^T+0+0+\Psi=\Lambda \Lambda^T+\Psi
+\end{align}$$
+
+把这些结果合在一起，可得：
+
+$$\begin{bmatrix} z \\ x \end{bmatrix}\sim N\left(\begin{bmatrix} \vec{0} \\ \mu \end{bmatrix},\begin{bmatrix} I & \Lambda^T \\ \Lambda & \Lambda \Lambda^T+\Psi \end{bmatrix}\right)\tag{1}$$
+
+从这个结论可以看出：$$x\sim N(\mu,\Lambda \Lambda^T+\Psi)$$
+
+因此它的对数似然函数为：
+
+$$\ell(\mu,\Lambda,\Psi)=\log\prod_{i=1}^m\frac{1}{(2\pi)^{n/2}\lvert\Lambda \Lambda^T+\Psi\rvert^{1/2}}\exp\left(-\frac{1}{2}(x^{(i)}-\mu)^T(\Lambda \Lambda^T+\Psi)^{-1}(x^{(i)}-\mu)\right)$$
+
+但这个函数是很难最大化的，需要使用EM算法解决之。
+
+## 因子分析的EM估计
+
+E-step比较简单。由《机器学习（十）》公式1、2和公式1，可得：
+
+$$\mu_{z^{(i)}\vert x^{(i)}}=\Lambda^T(\Lambda \Lambda^T+\Psi)^{-1}(x^{(i)}-\mu)$$
+
+$$\Sigma_{z^{(i)}\vert x^{(i)}}=I-\Lambda^T(\Lambda \Lambda^T+\Psi)^{-1}\Lambda$$
+
+因此：
+
+$$Q_i(z^{(i)})=\frac{1}{(2\pi)^{n/2}\lvert\Sigma_{z^{(i)}\vert x^{(i)}}\rvert^{1/2}}\exp\left(-\frac{1}{2}(x^{(i)}-\mu_{z^{(i)}\vert x^{(i)}})^T\Sigma_{z^{(i)}\vert x^{(i)}}^{-1}(x^{(i)}-\mu_{z^{(i)}\vert x^{(i)}})\right)$$
+
+M-step的最大化的目标是：
+
+$$\sum_{i=1}^m\int_{z^{(i)}}Q_i(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\mu,\Lambda,\Psi)}{Q_i(z^{(i)})}\mathrm{d}z^{(i)}$$
+
+下面我们重点求$$\Lambda$$的估计公式。
+
+首先将上式简化为:
+
+$$\begin{align}
+&\sum_{i=1}^m\int_{z^{(i)}}Q_i(z^{(i)})\log\frac{p(x^{(i)}\vert z^{(i)};\mu,\Lambda,\Psi)p(z^{(i)})}{Q_i(z^{(i)})}\mathrm{d}z^{(i)}
+\\&=\sum_{i=1}^m\int_{z^{(i)}}Q_i(z^{(i)})\left[\log p(x^{(i)}\vert z^{(i)};\mu,\Lambda,\Psi)+\log p(z^{(i)})-\log Q_i(z^{(i)})\right]\mathrm{d}z^{(i)}
+\\&=\sum_{i=1}^m E_{z^{(i)}\sim Q_i}\left[\log p(x^{(i)}\vert z^{(i)};\mu,\Lambda,\Psi)+\log p(z^{(i)})-\log Q_i(z^{(i)})\right]
+\end{align}$$
 
 去掉和各参数无关的部分后，可得：
 
@@ -16,9 +93,9 @@ $$\begin{align}
 
 去掉和$$\Lambda$$无关的部分，并求导可得：
 
-$$\nabla_\Lambda\sum_{i=1}^m-E\left[\frac{1}{2}(x^{(i)}-\mu-\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu-\Lambda z^{(i)})\right]\tag{1}$$
+$$\nabla_\Lambda\sum_{i=1}^m-E\left[\frac{1}{2}(x^{(i)}-\mu-\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu-\Lambda z^{(i)})\right]\tag{2}$$
 
-因为公式1中$$E[\cdot]$$部分的结果实际上是个实数，因此该公式可变形为：
+因为公式2中$$E[\cdot]$$部分的结果实际上是个实数，因此该公式可变形为：
 
 $$\nabla_\Lambda\sum_{i=1}^m-E\left[\operatorname{tr}\left(\frac{1}{2}(x^{(i)}-\mu-\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu-\Lambda z^{(i)})\right)\right]$$
 
@@ -41,7 +118,7 @@ $$\begin{align}
 &\nabla_\Lambda\sum_{i=1}^m-E\left[\operatorname{tr}\left(\frac{1}{2}\left[(\Lambda z^{(i)})^T\Psi^{-1}\Lambda z^{(i)}-(x^{(i)}-\mu)^T\Psi^{-1}\Lambda z^{(i)}-(\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu)\right]\right)\right]
 \\&\begin{split}=\nabla_\Lambda\sum_{i=1}^m-E\left[\frac{1}{2}\operatorname{tr}\left((\Lambda z^{(i)})^T\Psi^{-1}\Lambda z^{(i)}\right)-\frac{1}{2}\operatorname{tr}\left((x^{(i)}-\mu)^T\Psi^{-1}\Lambda z^{(i)}\right)
 \\-\frac{1}{2}\operatorname{tr}\left((\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu)\right)\right]\end{split}
-\\&=\sum_{i=1}^m\nabla_\Lambda E\left[-\frac{1}{2}\operatorname{tr}\left(\Lambda^T \Psi^{-1}\Lambda z^{(i)}(z^{(i)})^T\right)+\operatorname{tr}\left(\Lambda^T \Psi^{-1}(x^{(i)}-\mu)(z^{(i)})^T\right)\right]\tag{2}
+\\&=\sum_{i=1}^m\nabla_\Lambda E\left[-\frac{1}{2}\operatorname{tr}\left(\Lambda^T \Psi^{-1}\Lambda z^{(i)}(z^{(i)})^T\right)+\operatorname{tr}\left(\Lambda^T \Psi^{-1}(x^{(i)}-\mu)(z^{(i)})^T\right)\right]\tag{3}
 \end{align}$$
 
 因为：
@@ -55,7 +132,7 @@ $$\begin{align}
 \\&=z^{(i)}(z^{(i)})^T\Lambda^T \Psi^{-1}+((z^{(i)})^T)^T(z^{(i)})^T\Lambda^T\Psi^{-1}=2z^{(i)}(z^{(i)})^T\Lambda^T \Psi^{-1}
 \end{align}$$
 
-代入公式2，可得：
+代入公式3，可得：
 
 $$\sum_{i=1}^mE\left[-\Psi^{-1}\Lambda z^{(i)}(z^{(i)})^T+\Psi^{-1}(x^{(i)}-\mu)(z^{(i)})^T\right]$$
 
@@ -65,7 +142,7 @@ $$\sum_{i=1}^m\Lambda E_{z^{(i)}\sim Q_i}\left[z^{(i)}(z^{(i)})^T\right]=\sum_{i
 
 因此：
 
-$$\Lambda=\left(\sum_{i=1}^m(x^{(i)}-\mu)E_{z^{(i)}\sim Q_i}\left[(z^{(i)})^T\right]\right)\left(\sum_{i=1}^m E_{z^{(i)}\sim Q_i}\left[z^{(i)}(z^{(i)})^T\right]\right)^{-1}\tag{3}$$
+$$\Lambda=\left(\sum_{i=1}^m(x^{(i)}-\mu)E_{z^{(i)}\sim Q_i}\left[(z^{(i)})^T\right]\right)\left(\sum_{i=1}^m E_{z^{(i)}\sim Q_i}\left[z^{(i)}(z^{(i)})^T\right]\right)^{-1}\tag{4}$$
 
 因为：
 
@@ -81,7 +158,7 @@ $$E_{z^{(i)}\sim Q_i}\left[(z^{(i)})^T\right]=\mu_{z^{(i)}\vert x^{(i)}}^T$$
 
 $$E_{z^{(i)}\sim Q_i}\left[z^{(i)}(z^{(i)})^T\right]=\mu_{z^{(i)}\vert x^{(i)}}\mu_{z^{(i)}\vert x^{(i)}}^T+\Sigma_{z^{(i)}\vert x^{(i)}}$$
 
-将上式代入公式3，可得：
+将上式代入公式4，可得：
 
 $$\Lambda=\left(\sum_{i=1}^m(x^{(i)}-\mu)\mu_{z^{(i)}\vert x^{(i)}}^T\right)\left(\sum_{i=1}^m \left(\mu_{z^{(i)}\vert x^{(i)}}\mu_{z^{(i)}\vert x^{(i)}}^T+\Sigma_{z^{(i)}\vert x^{(i)}}\right)\right)^{-1}$$
 
@@ -185,88 +262,4 @@ LU分解有若干种算法，常见的包括Doolittle、Cholesky、Crout算法�
 >Andr´e-Louis Cholesky，1875~1918，法国数学家、工程师、军官。死于一战战场。
 
 >Prescott Durand Crout，1907~1984，美国数学家，22岁获MIT博士。
-
-这里只介绍一下Doolittle算法。
-
-$$A=\begin{bmatrix}
-a_{11} & a_{12} & \dots & a_{1n} \\
-a_{21} & a_{22} & \dots & a_{2n} \\
-\dots & \dots & \dots & \dots \\
-a_{n1} & a_{n2} & \dots & a_{nn} \\  
-\end{bmatrix}=LU=
-\begin{bmatrix}
-1 & 0 & \dots & 0 \\
-l_{21} & 1 & \dots & 0 \\
-\dots & \dots & \dots & \dots \\
-l_{n1} & l_{n2} & \dots & 1 \\  
-\end{bmatrix}
-\begin{bmatrix}
-u_{11} & u_{12} & \dots & u_{1n} \\
-0 & u_{22} & \dots & u_{2n} \\
-\dots & \dots & \dots & \dots \\
-0 & 0 & \dots & u_{nn} \\  
-\end{bmatrix}
-$$
-
-由矩阵乘法定义，可知：
-
-$$a_{1j}=u_{1j},j=1,2,\dots,n$$
-
-$$a_{ij}=\begin{cases}
-\sum_{t=1}^jl_{it}u_{tj}, & j<i \\
-\sum_{t=1}^{i-1}l_{it}u_{tj}+u_{ij}, & j\ge i \\
-\end{cases}$$
-
-因此：
-
->$$u_{1j}=a_{1j},j=1,2,\dots,n$$（U的第1行）   
->$$l_{j1}=a_{j1}/u_{11},j=1,2,\dots,n$$（L的第1列）   
->For $$i=2,3,\dots,n$$ do   
-><span style="white-space: pre">	</span>$$u_{ii}=a_{ii}-\sum_{t=1}^{i-1}l_{it}u_{tj}$$   
-><span style="white-space: pre">	</span>$$u_{ij}=a_{ij}-\sum_{t=1}^{i-1}l_{it}u_{tj}$$<span style="white-space: pre">		</span>for $$j=i+1,\dots,n$$（U的第i行）   
-><span style="white-space: pre">	</span>$$l_{ji}=\frac{a_{ji}-\sum_{t=1}^{i-1}l_{jt}u_{ti}}{u_{ii}}$$<span style="white-space: pre">	   </span>for $$j=i+1,\dots,n$$（L的第i列）   
->End   
->$$u_{nn}=a_{nn}-\sum_{t=1}^{n-1}l_{nt}u_{tn}$$
-
-参见：
-
-http://www3.nd.edu/~zxu2/acms40390F11/Alg-LU-Crout.pdf
-
-## QR分解
-
-任意实数方阵A，都能被分解为$$A=QR$$。这里的Q为正交单位阵，即$$Q^TQ=I$$。R是一个上三角矩阵。这种分解被称为QR分解。
-
-QR分解也有若干种算法，常见的包括Gram–Schmidt、Householder和Givens算法。
-
->注：Jørgen Pedersen Gram，1850～1916，丹麦数学家，在矩阵、数论、泛函等领域皆有贡献。他居然是被自行车撞死的...
-
->Erhard Schmidt，1876～1959，德国数学家，哥廷根大学博士，柏林大学教授。David Hilbert的学生。20世纪数学界的几位超级大神之一。1933年前的哥廷根大学数学系，秒杀其他所有学校。所谓“一流的学生去哥廷根，智商欠费才去藤校”。
-
->Alston Scott Householder，1904～1993，美国数学家，芝加哥大学博士，田纳西大学教授。ACM主席。
-
->James Wallace Givens, Jr.，1910～1993，美国数学家，普林斯顿大学博士，西北大学教授。参与UNIVAC I机器项目（1951年），这是最早的商用计算机。
-
-这里只介绍Gram–Schmidt算法，这个算法虽然名为Gram–Schmidt，然而拉普拉斯和柯西早就已经用过了。
-
-首先介绍一下向量的投影运算的符号表示。
-
-![](/images/article/Projection_and_rejection.png)
-
-如上图所示，根据余弦定理和向量点乘的定义可得：
-
-$$a\cdot b=|a||b|\cos \theta$$
-
-因此，向量a在向量b上的投影向量$$a_1$$，可表示为：
-
-$$a_1=|a|\cos \theta\hat b=|a|\frac{a\cdot b}{|a||b|}\frac{b}{|b|}=\frac{a\cdot b}{|b|^2}b=\frac{a\cdot b}{b\cdot b}b=\frac{\langle a,b\rangle}{\langle b,b\rangle}b$$
-
-特别的，当b为单位向量时：
-
-$$a_1=\langle a,b\rangle\tag{4}$$
-
-我们定义投影符号如下：
-
-$$\mathrm{proj}_{\mathbf{e}}\mathbf{a}
-= \frac{\left\langle\mathbf{e},\mathbf{a}\right\rangle}{\left\langle\mathbf{e},\mathbf{e}\right\rangle}\mathbf{e}$$
-
 

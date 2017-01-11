@@ -1,12 +1,47 @@
 ---
 layout: post
-title:  机器学习（三）——朴素贝叶斯方法、SVM（1）
+title:  机器学习（三）——朴素贝叶斯方法, SVM（1）
 category: theory 
 ---
 
-## 高斯判别分析（续）
+## 矩阵行列式计算(续)
 
-将上面三个分布的概率密度函数代入第二节公式7，可求得$$\arg\max_yp(y\vert x)$$，然后进行最大似然估计，可得该GDA的最大似然估计参数为：（过程略）
+定义勒维奇维塔符号(Levi-Civita symbol)如下：
+
+$$\varepsilon_{a_1 a_2 a_3 \ldots a_n} =
+\begin{cases}
++1 & \text{if }(a_1 , a_2 , a_3 , \ldots , a_n) \text{ is an even permutation of } (1,2,3,\dots,n) \\
+-1 & \text{if }(a_1 , a_2 , a_3 , \ldots , a_n) \text{ is an odd permutation of } (1,2,3,\dots,n) \\
+0 & \text{otherwise}
+\end{cases}$$
+
+>注：Tullio Levi-Civita，1873~1941，意大利数学家。他在张量微积分领域的贡献，帮助了相对论的确立。
+
+莱布尼茨公式：
+
+$$\det(A) = \sum_{i_1,i_2,\ldots,i_n=1}^n \varepsilon_{i_1\cdots i_n}  a_{1,i_1} \cdots a_{n,i_n}$$
+
+## 高斯判别分析
+
+高斯判别分析（GDA，Gaussian Discriminant Analysis）模型需要满足以下条件：
+
+$$y\sim Bernoulli(\phi)$$
+
+$$x\vert y=0\sim N(\mu_0,\Sigma)$$
+
+$$x\vert y=1\sim N(\mu_1,\Sigma)$$
+
+>注：这里只讨论y有两种分类的情况，且假设两种分类的$$\Sigma$$相同。
+
+相应的概率密度函数为：
+
+$$p(y)=\phi^y(1-\phi)^{1-y}$$
+
+$$p(x\vert y=0)=\frac{1}{(2\pi)^{n/2}\lvert\Sigma\rvert^{1/2}}\exp\left(-\frac{1}{2}(x-\mu_0)^T\Sigma^{-1}(x-\mu_0)\right)=\frac{1}{A}\exp(f(\mu_0,\Sigma,x))$$
+
+$$p(x\vert y=1)=\frac{1}{(2\pi)^{n/2}\lvert\Sigma\rvert^{1/2}}\exp\left(-\frac{1}{2}(x-\mu_1)^T\Sigma^{-1}(x-\mu_1)\right)=\frac{1}{A}\exp(f(\mu_1,\Sigma,x))$$
+
+将上面三个分布的概率密度函数代入《机器学习（二）》公式7，可求得$$\arg\max_yp(y\vert x)$$，然后进行最大似然估计，可得该GDA的最大似然估计参数为：（过程略）
 
 $$\phi=\frac{1}{m}\sum_{i=1}^m1\{y^{(i)}=1\}$$
 
@@ -187,33 +222,4 @@ $$\begin{align}
 \end{align}$$
 
 这个问题实际上就是数学上的QP（Quadratic Programming）问题，采用这种方案的分类被称为最优边距分类（optimal margin classifier）。
-
-## 拉格朗日对偶
-
-QP问题是有约束条件的优化问题（constrained optimization problem）的一种，下面让我们讨论一下解决这类问题的通用方法。
-
-假设我们求解如下问题：
-
-$$\begin{align}
-&\operatorname{min}_w& & f(w)\\
-&\operatorname{s.t.}& & g_i(w)\le 0,i=1,\dots,k\\
-& & & h_i(w)=0,i=1,\dots,l
-\end{align}$$
-
-这里将约束条件分为两类：
-
-1.$$h_i(w)=0$$代表的是约束条件为等式的情况。
-
-2.$$g_i(w)\le 0$$代表的是约束条件为不等式的情况。
-
-上述约束优化问题也被称为原始优化问题（primal optimization problem）。为了求解这个问题，我们定义广义拉格朗日（generalized Lagrangian）函数：
-
-$$\mathcal{L}(w,\alpha,\beta)=f(w)+\sum_{i=1}^k\alpha_ig_i(w)+\sum_{i=1}^l\beta_ih_i(w)$$
-
-利用这个函数可以将约束优化问题转化为无约束优化问题。其中的$$\alpha_i$$、$$\beta_i$$也被称作拉格朗日乘子（Lagrange multiplier）。
-
-$$\theta_\mathcal{P}(w)=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\mathcal{L}(w,\alpha,\beta)=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}f(w)+\sum_{i=1}^k\alpha_ig_i(w)+\sum_{i=1}^l\beta_ih_i(w)$$
-
-其中，$$\mathcal{P}$$代表原始优化问题，$$\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}$$表示在$$\alpha,\beta$$变化，而其他变量不变的情况下，求最大值。
-
 

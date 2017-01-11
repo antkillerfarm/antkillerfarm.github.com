@@ -1,10 +1,20 @@
 ---
 layout: post
-title:  机器学习（二）——广义线性模型、生成学习算法
+title:  机器学习（二）——广义线性模型, 生成学习算法
 category: theory 
 ---
 
 ## 逻辑回归(续)
+
+评估逻辑回归（Logistic regression）的质量，需要用到最大似然估计（maximum likelihood estimator）方法（由Ronald Aylmer Fisher提出）。最大似然估计是在“模型已定，参数未知”的情况下，寻找使模型出现的概率最大的参数集$$\theta$$的方法。显然，参数集$$\theta$$所确定的模型，其出现概率越大，模型的准确度越高。
+
+最大似然估计中采样需满足一个很重要的假设，就是所有的采样都是独立同分布的（independent and identically distributed，IID），即：
+
+$$f(x_1,\dots,x_n;\theta)=f(x_1;\theta)\times \dots \times f(x_n;\theta)$$
+
+似然估计函数如下所示：
+
+$$L(\theta)=\prod_{i=1}^mp(y^{(i)}\vert x^{(i)};\theta)$$
 
 >注：Ronald Aylmer Fisher，1890～1962，英国人，毕业于剑桥大学。英国皇家学会会员，皇家统计学会主席。尽管他被称作“一位几乎独自建立现代统计科学的天才”，然而他的本职工作是遗传学。他最大的贡献是利用统计分析的方法，揭示了孟德尔的遗传定律在达尔文自然选择学说中的作用，为后来遗传物质DNA的发现奠定了理论基础。   
 >虽然对于Fisher来说，数理统计只是他研究工作的一个副产品，但他在1925年所著《研究工作者的统计方法》（Statistical Methods for Research Workers），其影响力超过了半个世纪，几乎当代所有自然科学和社会科学领域都在应用他所创立的理论。F分布就是以他的名字命名的。
@@ -195,38 +205,4 @@ f(i,j)=\begin{cases}
 
 总序数为奇数的排列被称为奇排列（Odd Permutations），为偶数的排列被称为偶排列（Even Permutations）。
 
-定义勒维奇维塔符号(Levi-Civita symbol)如下：
-
-$$\varepsilon_{a_1 a_2 a_3 \ldots a_n} =
-\begin{cases}
-+1 & \text{if }(a_1 , a_2 , a_3 , \ldots , a_n) \text{ is an even permutation of } (1,2,3,\dots,n) \\
--1 & \text{if }(a_1 , a_2 , a_3 , \ldots , a_n) \text{ is an odd permutation of } (1,2,3,\dots,n) \\
-0 & \text{otherwise}
-\end{cases}$$
-
->注：Tullio Levi-Civita，1873~1941，意大利数学家。他在张量微积分领域的贡献，帮助了相对论的确立。
-
-莱布尼茨公式：
-
-$$\det(A) = \sum_{i_1,i_2,\ldots,i_n=1}^n \varepsilon_{i_1\cdots i_n}  a_{1,i_1} \cdots a_{n,i_n}$$
-
-## 高斯判别分析
-
-高斯判别分析（GDA，Gaussian Discriminant Analysis）模型需要满足以下条件：
-
-$$y\sim Bernoulli(\phi)$$
-
-$$x\vert y=0\sim N(\mu_0,\Sigma)$$
-
-$$x\vert y=1\sim N(\mu_1,\Sigma)$$
-
->注：这里只讨论y有两种分类的情况，且假设两种分类的$$\Sigma$$相同。
-
-相应的概率密度函数为：
-
-$$p(y)=\phi^y(1-\phi)^{1-y}$$
-
-$$p(x\vert y=0)=\frac{1}{(2\pi)^{n/2}\lvert\Sigma\rvert^{1/2}}\exp\left(-\frac{1}{2}(x-\mu_0)^T\Sigma^{-1}(x-\mu_0)\right)=\frac{1}{A}\exp(f(\mu_0,\Sigma,x))$$
-
-$$p(x\vert y=1)=\frac{1}{(2\pi)^{n/2}\lvert\Sigma\rvert^{1/2}}\exp\left(-\frac{1}{2}(x-\mu_1)^T\Sigma^{-1}(x-\mu_1)\right)=\frac{1}{A}\exp(f(\mu_1,\Sigma,x))$$
 
