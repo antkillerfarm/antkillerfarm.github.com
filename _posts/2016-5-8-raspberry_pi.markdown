@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Raspberry Pi, UPNP（二）
+title:  Raspberry Pi, UPNP（二）, Scala
 category: technology 
 ---
 
@@ -209,7 +209,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/other/vncserver
 
 # UPNP（二）
 
-# upnp-inspector
+## upnp-inspector
 
 upnp-inspector是一个局域网内的UPNP协议的嗅探分析器。可充当DMC，推送多媒体数据到相关DLNA设备。安装方法如下：
 
@@ -231,15 +231,82 @@ upnp-inspector的代码地址：
 
 https://github.com/coherence-project/UPnP-Inspector
 
-# libmcupnp
+## libmcupnp
 
 libmcupnp是一个基于libupnp的Control Point实现，用C++写的。从代码来看，明显参考了libupnp里的demo示例。
 
 https://sourceforge.net/projects/libmcupnp/
 
-# gupnp
+## gupnp
 
 这是GNOME项目的upnp库，使用libsoup处理HTTP，libxml处理XML。它的官网是：
 
 https://wiki.gnome.org/Projects/GUPnP
+
+# Scala
+
+官网：
+
+http://www.scala-lang.org/
+
+教程：
+
+http://www.runoob.com/scala/scala-tutorial.html
+
+## sbt
+
+sbt是scala的构建工具，其作用类似于Java的Ant和Maven。
+
+官网：
+
+http://www.scala-sbt.org/
+
+教程：
+
+https://github.com/CSUG/real_world_scala/blob/master/02_sbt.markdown
+
+### 安装
+
+{% highlight bash %}
+echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823
+sudo apt-get update
+sudo apt-get install sbt
+{% endhighlight %}
+
+参见：
+
+http://www.scala-sbt.org/release/docs/Installing-sbt-on-Linux.html
+
+### 常用命令
+
+sbt有一个和scala类似的命令行交互界面，可以输入相关的命令。其中常用的有：
+
+* compile
+
+* package
+
+* run
+
+## GUI
+
+scala的GUI方案和Java完全一致，只要Java能用的GUI，scala都能用。这里仅以JavaFX为例讨论scala的GUI开发。
+
+方法一：采用一般的scala调用Java的方式。参见：
+
+http://alvinalexander.com/scala/scala-javafx-hello-world-example
+
+正如上面网页指出的，这里的main函数实际上是有一定技巧在里面的，写起来并不简洁，而且代码风格更像是Java，而不是scala。
+
+方法二：ScalaFX
+
+ScalaFX是对JavaFX的封装，风格更接近于scala。
+
+官网：
+
+http://www.scalafx.org/
+
+sbt支持：
+
+`libraryDependencies += "org.scalafx" %% "scalafx" % "8.0.92-R10"`
 

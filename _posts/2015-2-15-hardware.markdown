@@ -196,3 +196,8 @@ http://www.cnblogs.com/wuhou/archive/2008/09/28/1301071.html
 
 http://www.cnblogs.com/wanghetao/p/3806888.html
 
+## 执行脚本
+
+mysql命令行下执行：
+
+`source a.sql`
