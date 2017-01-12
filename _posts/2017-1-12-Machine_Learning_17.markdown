@@ -153,3 +153,45 @@ https://arxiv.org/pdf/1603.02754v3.pdf
 
 https://www.zhihu.com/question/41354392
 
+# 关联规则挖掘
+
+## 基本概念
+
+关联规则挖掘（Association rule mining）是机器学习的一个子领域。它最早的案例就是以下的**尿布和啤酒**的故事：
+
+>沃尔玛曾今对数据仓库中一年多的原始交易数据进行了详细的分析，发现与尿布一起被购买最多的商品竟然是啤酒。   
+>借助数据仓库和关联规则，发现了这个隐藏在背后的事实：**美国妇女经常会嘱咐丈夫下班后为孩子买尿布，而30%~40%的丈夫在买完尿布之后又要顺便购买自己爱喝的啤酒。**   
+>根据这个发现，沃尔玛调整了货架的位置，把尿布和啤酒放在一起销售，大大增加了销量。
+
+这里借用一个引例来介绍关联规则挖掘的基本概念。
+
+| 交易号TID | 顾客购买的商品 | 交易号TID | 顾客购买的商品 |
+|:--:|:--|:--:|:--|
+| T1 | bread, cream, milk, tea | T6 | bread, tea |
+| T2 | bread, cream, milk | T7 | beer, milk, tea |
+| T3 | cake, milk | T8 | bread, tea |
+| T4 | milk, tea | T9 | bread, cream, milk, tea |
+| T5 | bread, cake, milk | T10 | bread, milk, tea |
+
+**定义一**：设$$I={i_1,i_2,\dots,i_m}$$，是m个不同的项目的集合，每个$$i_k$$称为一个**项目**。项目的集合I称为**项集**。其元素的个数称为项集的长度，长度为k的项集称为k-项集。引例中每个商品就是一个项目，项集为I={bread, beer, cake,cream, milk, tea}，I的长度为6。
+
+**定义二**：每笔交易T是项集I的一个子集。对应每一个交易有一个唯一标识交易号，记作TID。交易全体构成了交易数据库D，$$\vert D\vert$$等于D中交易的个数。引例中包含10笔交易，因此$$\vert D\vert=10$$。
+
+**定义三**：对于项集X，设定count(X⊆T)为交易集D中包含X的交易的数量，则项集X的支持度为：
+
+$$support(X)=count(X⊆T)/|D|$$
+
+引例中X={bread, milk}出现在T1，T2，T5，T9和T10中，所以支持度为0.5。
+
+
+
+参考：
+
+http://zhan.renren.com/dmeryuyang?gid=3602888498023976650&checked=true
+
+http://blog.csdn.net/lizhengnanhua/article/details/9061755
+
+http://blog.csdn.net/OpenNaive/article/details/7047823
+
+## FP-growth
+
