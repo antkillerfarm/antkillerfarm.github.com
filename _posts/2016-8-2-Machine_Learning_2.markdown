@@ -83,6 +83,8 @@ $$\begin{align}p(y:\phi)&=\phi^y(1-\phi)^{1-y}=\exp(\log(\phi^y(1-\phi)^{1-y}))
 
 $$\begin{align}& b(y)=1 \\& \eta=\log(\frac{\phi}{1-\phi})\Rightarrow \phi=\frac{1}{1+e^{-\eta}} \\& T(y)=y \\& a(\eta)=-\log(1-\phi) \\\end{align}$$
 
+其中，$$\log(\frac{\phi}{1-\phi})$$被称为Logit函数，从上面的推导可看出，它和sigmoid函数是有相当深的渊源的。
+
 高斯分布到指数类分布的变换过程如下：
 
 $$\begin{align}p(y;\mu)&=\frac{1}{\sqrt{2\pi}}\exp\left(-\frac{1}{2}(y-\mu)^2\right)
@@ -97,13 +99,29 @@ $$\begin{align}& \eta=\mu \\& T(y)=y \\& a(\eta)=\frac{\mu^2}{2} \\& b(y)=\frac{
 
 ## 广义线性模型
 
-广义线性模型（Generalized Linear Model，GLM）是解决指数类分布的回归问题的通用模型。它基于以下三个假设：
+广义线性模型（Generalized Linear Model，GLM）是解决指数类分布的回归问题的通用模型。
+
+它的建模过程如下：
+
+1.首先弄清楚y服从什么分布：
 
 $$y\vert x;\theta \sim ExponentialFamily(\eta) \tag{1}$$
 
-$$h(x)=E[T(y)\vert x] \tag{2}$$
+2.为参数$$\eta$$设置linear predictor：
 
-$$\eta=\theta^Tx \tag{3}$$
+$$\eta=\theta^Tx \tag{2}$$
+
+公式2实际上就是通常意义上的线性模型，即simple linear model。
+
+3.寻找一个合适的link function，将Y的均值映射到linear predictor上，使得：
+
+$$g(h(x))=\eta \tag{3}$$
+
+其中，$$h(x)=E[T(y)\vert x]$$
+
+可见，上一节中的$$\eta$$实际上就是link function。
+
+从上一节的推导还可看出，simple linear model对应的是高斯分布，而其他分布则需要link function进行扩展，这也是广义线性模型得名的由来。
 
 下面以多项分布为例展示一下GLM的处理方法。
 
@@ -153,6 +171,10 @@ $$h_\theta(x)=E[T(y)\vert x;\theta]=\begin{bmatrix} \phi_1 \\ \phi_2 \\ \vdots \
 最大似然估计对数函数：
 
 $$\ell(\theta)=\sum_{i=1}^m\log p(y^{(i)}\vert x^{(i)};\theta)=\sum_{i=1}^m\log\prod_{l=1}^k\left(\frac{\exp(\theta_{l}^Tx^{(i)})}{\sum_{j=1}^k\exp(\theta_j^Tx^{(i)})}\right)^{1\{y^{(i)}=l\}}$$
+
+GLM更多的内容可参见：
+
+http://statmath.wu.ac.at/courses/heather_turner/
 
 ## 机器学习的优化问题
 

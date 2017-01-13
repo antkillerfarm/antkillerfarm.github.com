@@ -335,8 +335,6 @@ https://www.r-bloggers.com/select-operations-on-r-data-frames/
 
 http://www.burns-stat.com/translating-r-sql-basics/
 
-### 
-
 ### MNIST
 
 https://github.com/jlmelville/mnist
