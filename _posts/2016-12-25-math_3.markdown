@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  数学狂想曲（三）——统计模拟
+title:  数学狂想曲（三）——统计杂谈, PID算法, 20世纪10大算法, 矩阵&向量的积
 category: theory 
 ---
 
-# 统计模拟
+# 统计杂谈
+
+## 统计模拟
 
 统计模拟是数理统计中非常有用的工具之一， 它是利用计算机产生某概率模型的随机数，再通过这些随机数来模拟真实模型。
 
@@ -14,13 +16,13 @@ category: theory
 
 以下仅记录一些简单的结论。
 
-## 均匀分布
+### 均匀分布
 
 通过线性同余发生器可以生成伪随机数，且该随机数满足均匀分布。
 
 $$x_n=ax_{n-1}\quad \mathrm{modulo} \quad m$$
 
-## 正态分布
+### 正态分布
 
 **Box-Muller变换**：如果随机变量$$U_1,U_2$$独立且$$U_1, U_2 \sim Uniform(0,1)$$，
 
@@ -34,6 +36,35 @@ Z_1 & = \sqrt{-2\ln U_1} sin(2\pi U_2)
 >注：George Edward Pelham Box，1919~2013，英国统计学家。伦敦学院大学博士，先后供职于普林斯顿大学和威斯康辛-麦迪逊大学。Ronald Aylmer Fisher的女婿。英国皇家学会会员，美国统计协会主席，数理统计学会（这是一个国际组织）主席。
 
 >Mervin Edgar Muller，俄亥俄州立大学教授。
+
+## 统计力学与组合优化
+
+MCMC和Gibbs Sampling最早都是统计力学的概念，后来才被用于机器学习领域。现将统计力学与组合优化的对应关系罗列如下：
+
+| 统计力学 | 组合优化 |
+|:--:|:--:|
+| 样本 | 问题实例 |
+| 状态（构形） | 构形 |
+| 能量 | 代价函数 |
+| 温度 | 控制参数 |
+| 基态能量 | 最小代价 |
+| 基态构形 | 最小构形 |
+
+## 频率统计学派 vs. 贝叶斯学派
+
+对数学史感兴趣的朋友，可以看看陈希孺院士的《数理统计学简史》一书。rickjin文章的内容有相当部分取自该书。
+
+>注：陈希孺，1934～2005，数理统计学家。1956年毕业于武汉大学数学系，1997年当选为中国科学院院士。
+
+该书中关于频率统计学派和贝叶斯学派的争议，引起了我的注意。
+
+频率统计学派是所谓的正统派，由于其简单且便于理解的特点，多数入门级的数理统计学教程，一般都是按照该学派的思路写的。
+
+而贝叶斯学派可谓另辟蹊径，它和频率统计学派的差异，参见《机器学习（七）》。由于该派系的思想比较新颖，我一度以为它和频率统计学派的关系，就犹如相对论之于经典力学。
+
+然而，陈希孺院士告诉我们，两者各有优劣，尚未到一方决出胜负的阶段。比如，贝叶斯学派的先验估计，既是其成功的奥秘，也是其不成功的软肋。比如，对于“无信息先验分布”，目前尚处于“信则灵，不信则无”的境地。
+
+陈院士的观点是：**各取所长，为我所用**。
 
 # PID算法
 
@@ -135,4 +166,122 @@ http://www.uta.edu/faculty/rcli/TopTen/topten.pdf
 
 http://blog.csdn.net/v_JULY_v/article/details/6127953
 
+# 矩阵&向量的积
+
+矩阵&向量有很多种积的定义，特罗列如下：
+
+## 向量的点积
+
+Dot product，又称inner product。
+
+代数定义：
+
+$$\mathbf{a}\cdot\mathbf{b}=\sum_{i=1}^n a_ib_i=a_1b_1+a_2b_2+\cdots+a_nb_n$$
+
+几何定义：
+
+$$\mathbf{a}\cdot\mathbf{b}=\|\mathbf{a}\|\ \|\mathbf{b}\|\cos(\theta)$$
+
+复变积分定义：
+
+$$\left\langle \psi , \chi \right\rangle = \int_a^b \psi(x) \overline{\chi(x)} d x $$
+
+## 矩阵的积
+
+matrix product的定义如下（以3阶方阵为例）：
+
+$$\mathbf{AB} = \begin{pmatrix}
+a & b & c \\
+p & q & r \\
+u & v & w
+\end{pmatrix} \begin{pmatrix}
+\alpha & \beta & \gamma \\
+\lambda & \mu & \nu \\
+\rho & \sigma & \tau \\
+\end{pmatrix} =\begin{pmatrix}
+a\alpha + b\lambda + c\rho & a\beta + b\mu + c\sigma & a\gamma + b\nu + c\tau \\
+p\alpha + q\lambda + r\rho & p\beta + q\mu + r\sigma & p\gamma + q\nu + r\tau \\
+u\alpha + v\lambda + w\rho & u\beta + v\mu + w\sigma & u\gamma + v\nu + w\tau
+\end{pmatrix}$$
+
+可以看出，积矩阵的每个元素是矩阵A、B相应行列向量的内积。
+
+## 向量的向量积
+
+Cross product是一个向量，其定义如下：
+
+$$\mathbf{a} \times \mathbf{b} = \left\| \mathbf{a} \right\| \left\| \mathbf{b} \right\| \sin (\theta) \ \mathbf{n}$$
+
+## 向量的笛卡尔积
+
+Cartesian product实际上是集合论中的概念。
+
+$$A\times B = \{1,2\} \times \{3,4\} = \{(1,3), (1,4), (2,3), (2,4)\}$$
+
+## 向量的张量积
+
+Tensor product，又称outer product。
+
+$$\begin{align}\mathbf{u} \otimes \mathbf{v} = \mathbf{u} \mathbf{v}^\mathrm{T}
+= \begin{bmatrix}u_1 \\ u_2 \\ u_3 \\ u_4\end{bmatrix}
+\begin{bmatrix}v_1 & v_2 & v_3\end{bmatrix}
+= \begin{bmatrix}u_1v_1 & u_1v_2 & u_1v_3 \\ u_2v_1 & u_2v_2 & u_2v_3 \\ u_3v_1 & u_3v_2 & u_3v_3 \\ u_4v_1 & u_4v_2 & u_4v_3\end{bmatrix}\end{align}$$
+
+可以看出，Tensor product和Cartesian product，虽然形式上都是各向量的组合，然而前者是2维的，而后者是1维的。
+
+## 矩阵的张量积
+
+张量积推广到矩阵，即所谓Kronecker product。
+
+$$\mathbf{A}\otimes\mathbf{B} = \begin{bmatrix} a_{11} \mathbf{B} & \cdots & a_{1n}\mathbf{B} \\ \vdots & \ddots & \vdots \\ a_{m1} \mathbf{B} & \cdots & a_{mn} \mathbf{B} \end{bmatrix}$$
+
+## Hadamard product
+
+又叫Schur product或entrywise product。
+
+$$\left(\begin{array}{ccc}
+    \mathrm{a}_{11} & \mathrm{a}_{12} & \mathrm{a}_{13}\\
+    \mathrm{a}_{21} & \mathrm{a}_{22} & \mathrm{a}_{23}\\
+    \mathrm{a}_{31} & \mathrm{a}_{32} & \mathrm{a}_{33}
+  \end{array}\right) \circ \left(\begin{array}{ccc}
+    \mathrm{b}_{11} & \mathrm{b}_{12} & \mathrm{b}_{13}\\
+    \mathrm{b}_{21} & \mathrm{b}_{22} & \mathrm{b}_{23}\\
+    \mathrm{b}_{31} & \mathrm{b}_{32} & \mathrm{b}_{33}
+  \end{array}\right) = \left(\begin{array}{ccc}
+    \mathrm{a}_{11}\, \mathrm{b}_{11} & \mathrm{a}_{12}\, \mathrm{b}_{12} & \mathrm{a}_{13}\, \mathrm{b}_{13}\\
+    \mathrm{a}_{21}\, \mathrm{b}_{21} & \mathrm{a}_{22}\, \mathrm{b}_{22} & \mathrm{a}_{23}\, \mathrm{b}_{23}\\
+    \mathrm{a}_{31}\, \mathrm{b}_{31} & \mathrm{a}_{32}\, \mathrm{b}_{32} & \mathrm{a}_{33}\, \mathrm{b}_{33}
+  \end{array}\right)$$
+
+# 随机过程
+
+## 随机变量序列的收敛性
+
+弱收敛：$$F_n(x)\xrightarrow{W}F(x)$$
+
+依分布收敛：$$X_n\xrightarrow{L}X$$
+
+依概率收敛：$$X_n\xrightarrow{P}X$$
+
+r阶收敛：$$X_n\xrightarrow{r}X$$
+
+几乎处处收敛（almost everywhere convergent）：$$X_n\xrightarrow{a.e.}X$$ or $$X_n\xrightarrow{a.s.}X$$
+
+一致收敛（uniform convergence）：$$X_n\xrightarrow{u.c.}X$$
+
+以上概念实际上都是测度论的内容。具体到这里，弱收敛针对分布函数F，而其他收敛针对随机变量X。
+
+收敛严格性：
+
+$$X_n\xrightarrow{P}X>X_n\xrightarrow{L}X$$
+
+$$X_n\xrightarrow{r}X>X_n\xrightarrow{P}X$$
+
+$$X_n\xrightarrow{a.s.}X>X_n\xrightarrow{P}X$$
+
+大数定理：
+
+依概率收敛->弱大数定理
+
+几乎处处收敛->强大数定理
 

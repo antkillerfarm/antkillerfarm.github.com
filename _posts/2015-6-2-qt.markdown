@@ -153,7 +153,19 @@ Ubuntu下的安装方法是：
 
 使用方法是：
 
-`sudo pip install <package name>`
+`pip install <package name>`
+
+有的python包因为包含不可移植的二进制文件，使用pip安装的时候会出错。这时，可在ubuntu官网搜索安装相应的python包。
+
+对于可移植的python包，直接使用pip安装即可，在ubuntu官网搜也搜不到的。
+
+## iPython
+
+ipython是一个 python 的交互式 shell，比默认的python shell 好用得多，支持变量自动补全，自动缩进，支持 bash shell 命令，内置了许多很有用的功能和函数。
+
+在较新的ipython版本中，添加了ipython notebook的功能，弥补了ipython shell下代码不易保存等缺点，并且在使用 --pylab inline选项后，可以在代码执行后立即显示运行结果（包括图片，数据表格等），因此在数据分析中运用十分广泛。
+
+`sudo apt-get install ipython ipython-notebook`
 
 ## 软件发布工具
 
@@ -348,26 +360,13 @@ self.player.seek(1.0, Gst.Format.TIME, Gst.SeekFlags.FLUSH, Gst.SeekType.SET,\
 
 `c_long(Gst.CLOCK_TIME_NONE).value`
 
-## 如何通过需认证的代理获取HTTP网页
+## Python中的括号
 
-Python内置的urllib和urllib2模块都可用于获取HTTP网页，但使用范围是不同的。urllib只支持HTTP 0.9和HTTP 1.0，所以如果只是使用代理可以使用urllib.FancyURLopener类，如果该代理还需要认证的话urllib就不行了。因为代理认证是HTTP 1.1中引入的。
+Python主要有三种数据类型：字典、列表、元组。其分别由花括号，中括号，小括号表示。如：
 
-这时可以考虑使用urllib2模块。代码如下：
+字典：dic={'a':12,'b':34}
 
-{% highlight python %}
-    import urllib2
-    l_proxy_info = {
-    'user' : 'user',
-    'pass' : 'pass',
-    'host' : 'host',
-    'port' : 3128
-    }
+列表：list=[1,2,3,4]
 
-    l_proxy_support = urllib2.ProxyHandler({"http" : \
-    "http://%(user)s:%(pass)s@%(host)s:%(port)d" %
-    l_proxy_info})
-    l_opener = urllib2.build_opener(l_proxy_support, urllib2.HTTPHandler)
+元组：tup=(1,2,3,4)
 
-    urllib2.install_opener(l_opener)
-    usock = urllib2.urlopen('http://www.sohu.com')
-{% endhighlight %}

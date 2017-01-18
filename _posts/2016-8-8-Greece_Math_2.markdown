@@ -128,90 +128,16 @@ http://goeye-app.com/resources.html#cn
 
 精选在线棋谱资源
 
-# 矩阵&向量的积
+# 复变函数
 
-矩阵&向量有很多种积的定义，特罗列如下：
+1.复球面表示。
 
-## 向量的点积
+2.条件严格性。
 
-Dot product，又称inner product。
+点域：连续<可导（可微）<可解析
 
-代数定义：
+区域：连续<可导（可微）=可解析
 
-$$\mathbf{a}\cdot\mathbf{b}=\sum_{i=1}^n a_ib_i=a_1b_1+a_2b_2+\cdots+a_nb_n$$
+3.函数可微的充要条件：Cauchy-Riemann Equations
 
-几何定义：
-
-$$\mathbf{a}\cdot\mathbf{b}=\|\mathbf{a}\|\ \|\mathbf{b}\|\cos(\theta)$$
-
-复变积分定义：
-
-$$\left\langle \psi , \chi \right\rangle = \int_a^b \psi(x) \overline{\chi(x)} d x $$
-
-## 矩阵的积
-
-matrix product的定义如下（以3阶方阵为例）：
-
-$$\mathbf{AB} = \begin{pmatrix}
-a & b & c \\
-p & q & r \\
-u & v & w
-\end{pmatrix} \begin{pmatrix}
-\alpha & \beta & \gamma \\
-\lambda & \mu & \nu \\
-\rho & \sigma & \tau \\
-\end{pmatrix} =\begin{pmatrix}
-a\alpha + b\lambda + c\rho & a\beta + b\mu + c\sigma & a\gamma + b\nu + c\tau \\
-p\alpha + q\lambda + r\rho & p\beta + q\mu + r\sigma & p\gamma + q\nu + r\tau \\
-u\alpha + v\lambda + w\rho & u\beta + v\mu + w\sigma & u\gamma + v\nu + w\tau
-\end{pmatrix}$$
-
-可以看出，积矩阵的每个元素是矩阵A、B相应行列向量的内积。
-
-## 向量的向量积
-
-Cross product是一个向量，其定义如下：
-
-$$\mathbf{a} \times \mathbf{b} = \left\| \mathbf{a} \right\| \left\| \mathbf{b} \right\| \sin (\theta) \ \mathbf{n}$$
-
-## 向量的笛卡尔积
-
-Cartesian product实际上是集合论中的概念。
-
-$$A\times B = \{1,2\} \times \{3,4\} = \{(1,3), (1,4), (2,3), (2,4)\}$$
-
-## 向量的张量积
-
-Tensor product，又称outer product。
-
-$$\begin{align}\mathbf{u} \otimes \mathbf{v} = \mathbf{u} \mathbf{v}^\mathrm{T}
-= \begin{bmatrix}u_1 \\ u_2 \\ u_3 \\ u_4\end{bmatrix}
-\begin{bmatrix}v_1 & v_2 & v_3\end{bmatrix}
-= \begin{bmatrix}u_1v_1 & u_1v_2 & u_1v_3 \\ u_2v_1 & u_2v_2 & u_2v_3 \\ u_3v_1 & u_3v_2 & u_3v_3 \\ u_4v_1 & u_4v_2 & u_4v_3\end{bmatrix}\end{align}$$
-
-可以看出，Tensor product和Cartesian product，虽然形式上都是各向量的组合，然而前者是2维的，而后者是1维的。
-
-## 矩阵的张量积
-
-张量积推广到矩阵，即所谓Kronecker product。
-
-$$\mathbf{A}\otimes\mathbf{B} = \begin{bmatrix} a_{11} \mathbf{B} & \cdots & a_{1n}\mathbf{B} \\ \vdots & \ddots & \vdots \\ a_{m1} \mathbf{B} & \cdots & a_{mn} \mathbf{B} \end{bmatrix}$$
-
-## Hadamard product
-
-又叫Schur product或entrywise product。
-
-$$\left(\begin{array}{ccc}
-    \mathrm{a}_{11} & \mathrm{a}_{12} & \mathrm{a}_{13}\\
-    \mathrm{a}_{21} & \mathrm{a}_{22} & \mathrm{a}_{23}\\
-    \mathrm{a}_{31} & \mathrm{a}_{32} & \mathrm{a}_{33}
-  \end{array}\right) \circ \left(\begin{array}{ccc}
-    \mathrm{b}_{11} & \mathrm{b}_{12} & \mathrm{b}_{13}\\
-    \mathrm{b}_{21} & \mathrm{b}_{22} & \mathrm{b}_{23}\\
-    \mathrm{b}_{31} & \mathrm{b}_{32} & \mathrm{b}_{33}
-  \end{array}\right) = \left(\begin{array}{ccc}
-    \mathrm{a}_{11}\, \mathrm{b}_{11} & \mathrm{a}_{12}\, \mathrm{b}_{12} & \mathrm{a}_{13}\, \mathrm{b}_{13}\\
-    \mathrm{a}_{21}\, \mathrm{b}_{21} & \mathrm{a}_{22}\, \mathrm{b}_{22} & \mathrm{a}_{23}\, \mathrm{b}_{23}\\
-    \mathrm{a}_{31}\, \mathrm{b}_{31} & \mathrm{a}_{32}\, \mathrm{b}_{32} & \mathrm{a}_{33}\, \mathrm{b}_{33}
-  \end{array}\right)$$
-
+4.复数在场论描述中的应用。

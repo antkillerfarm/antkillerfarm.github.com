@@ -163,41 +163,4 @@ NandFLASH强调更高的性能，更低的成本，更小的体积，更长的�
 
 http://www.ebaina.com/bbs/forum-97-3.html
 
-# Mysql
 
-## 安装
-
-`sudo apt-get install mysql-server mysql-client mysql-workbench`
-
-其中，mysql-workbench是一个查看mysql的GUI工具。
-
-安装过程中，会提示输入root用户的密码。注意：这里的root是mysql的登录帐号，而不是系统的登录帐号。
-
-## 常用操作
-
-登录方法：
-
-`mysql -u root -p`
-
-语句以“;”结尾。
-
-| 名称 | 操作 |
-|:--|:--|
-| 添加用户 | insert into mysql.user(Host,User,Password) <br/>values("localhost","test",password("1234")); |
-| 列出所有数据库 | show database; |
-| 切换数据库 | use 数据库名; |
-| 列出所有表 | show tables; |
-| 显示数据表结构 | describe 表名; |
-| 创建自增ID | create table github(id int auto_increment primary key not null,name varchar(256)); |
-
-参考：
-
-http://www.cnblogs.com/wuhou/archive/2008/09/28/1301071.html
-
-http://www.cnblogs.com/wanghetao/p/3806888.html
-
-## 执行脚本
-
-mysql命令行下执行：
-
-`source a.sql`

@@ -327,6 +327,10 @@ print(data)
 dbDisconnect(conn)
 {% endhighlight %}
 
+### 内置数据集
+
+R语言本身已经内置了一些数据集，可以`data()`查看之。
+
 ### 操作数据集
 
 参考：

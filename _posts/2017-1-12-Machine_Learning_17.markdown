@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（十七）——决策树
+title:  机器学习（十七）——决策树, 推荐系统进阶
 category: theory 
 ---
 
@@ -88,6 +88,32 @@ $$Ent(D)=-\sum_{k=1}^{|y|}p_k\log_2p_k$$
 
 $$Gain(D,a)=Ent(D)-\sum_{v=1}^V\frac{|D^v|}{|D|}Ent(D^v)$$
 
+增益率（gain ratio）：
+
+$$Gain\_ratio(D,a)=\frac{Gain(D,a)}{IV(a)}$$
+
+其中
+
+$$IV(a)=-\sum_{v=1}^V\frac{|D^v|}{|D|}\log_2 \frac{|D^v|}{|D|}$$
+
+基尼值：
+
+$$Gini(D)=1-\sum_{k=1}^{|y|}p_k^2$$
+
+基尼指数：
+
+$$Gini\_index(D,a)=\sum_{v=1}^V\frac{|D^v|}{|D|}Gini(D^v)$$
+
+各种决策树和它的划分依据如下表所示：
+
+| 名称 | 划分依据 |
+|:--:|:--:|
+| ID3 | Gain |
+| C4.5 | Gain_ratio |
+| CART | Gini_index |
+
+决策树是一种可以将训练误差变为0的算法，只要每个样本对应一个叶子结点即可，然而这样做会导致过拟合。为了限制树的生长，我们可以加入阈值，当增益大于阈值时才让节点分裂。
+
 # GBDT
 
 GBDT这个算法有很多名字，但都是同一个算法：
@@ -138,7 +164,7 @@ http://www.cs.cmu.edu/~tom/
 
 XGBoost是陈天奇于2014年提出的一套并行boost算法的工具库。
 
->注：陈天奇，华盛顿大学计算机系博士生，研究方向为大规模机器学习。上海交通大学本科（2006～2010）和硕士（2010～2013）。
+>注：陈天奇，华盛顿大学计算机系博士生，研究方向为大规模机器学习。上海交通大学本科（2006～2010）和硕士（2010～2013）。   
 >http://homes.cs.washington.edu/~tqchen/
 
 原始论文：
@@ -149,9 +175,55 @@ https://arxiv.org/pdf/1603.02754v3.pdf
 
 从算法实现的角度，把握一个机器学习算法的关键点有两个，一个是loss function的理解(包括对特征X/标签Y配对的建模，以及基于X/Y配对建模的loss function的设计，前者应用于inference，后者应用于training，而前者又是后者的组成部分)，另一个是对求解过程的把握。这两个点串接在一起构成了算法实现的主框架。
 
+GBDT的求解算法，具体到每颗树来说，其实就是不断地寻找分割点(split point)，将样本集进行分割，初始情况下，所有样本都处于一个结点（即根结点），随着树的分裂过程的展开，样本会分配到分裂开的子结点上。分割点的选择通过枚举训练样本集上的特征值来完成，分割点的选择依据则是减少Loss。
+
+XGBoost的步骤：
+
+I. 对loss function进行二阶Taylor Expansion，展开以后的形式里，当前待学习的Tree是变量，需要进行优化求解。
+
+II. Tree的优化过程，包括两个环节：
+
+I). 枚举每个叶结点上的特征潜在的分裂点
+
+II). 对每个潜在的分裂点，计算如果以这个分裂点对叶结点进行分割以后，分割前和分割后的loss function的变化情况。
+
+因为Loss Function满足累积性(对MLE取log的好处)，并且每个叶结点对应的weight的求取是独立于其他叶结点的（只跟落在这个叶结点上的样本有关），所以，不同叶结点上的loss function满足单调累加性，只要保证每个叶结点上的样本累积loss function最小化，整体样本集的loss function也就最小化了。
+
+可见，XGBoost算法之所以能够并行，其要害在于其中枚举分裂点的计算，是能够分布式并行计算的。
+
 参考：
 
 https://www.zhihu.com/question/41354392
+
+# 推荐系统进阶
+
+除了《机器学习（十三～十五）》提及的ALS和PCA之外，相关的算法还包括：
+
+# FM：Factorization Machines
+
+Factorization Machines是Steffen Rendle于2010年提出的算法。
+
+>注：Steffen Rendle，弗赖堡大学博士，现为Google研究员。libFM的作者，被誉为推荐系统的新星。
+
+FM算法实际上是一大类与矩阵分解有关的算法的广义模型。
+
+参考文献1是Rendle本人的论文，其中有章节证明了SVD++、PITF、FPMC等算法，都是FM算法的特例。《机器学习（十四）》中提到的ALS算法，也是FM的特例。
+
+参考文献2是国人写的中文说明，相对浅显一些。
+
+参考：
+
+1.https://www.ismll.uni-hildesheim.de/pub/pdfs/Rendle2010FM.pdf
+
+2.http://blog.csdn.net/itplus/article/details/40534885
+
+# PITF
+
+配对互动张量分解（Pairwise Interaction Tensor Factorization）算法，也是最早由Rendle引入推荐系统领域的。
+
+论文：
+
+http://www.wsdm-conference.org/2010/proceedings/docs/p81.pdf
 
 # 关联规则挖掘
 
@@ -172,26 +244,4 @@ https://www.zhihu.com/question/41354392
 | T3 | cake, milk | T8 | bread, tea |
 | T4 | milk, tea | T9 | bread, cream, milk, tea |
 | T5 | bread, cake, milk | T10 | bread, milk, tea |
-
-**定义一**：设$$I={i_1,i_2,\dots,i_m}$$，是m个不同的项目的集合，每个$$i_k$$称为一个**项目**。项目的集合I称为**项集**。其元素的个数称为项集的长度，长度为k的项集称为k-项集。引例中每个商品就是一个项目，项集为$$I={bread, beer, cake,cream, milk, tea}$$，I的长度为6。
-
-**定义二**：每笔交易T是项集I的一个子集。对应每一个交易有一个唯一标识交易号，记作TID。交易全体构成了交易数据库D，$$\vert D\vert$$等于D中交易的个数。引例中包含10笔交易，因此$$\vert D\vert=10$$。
-
-**定义三**：对于项集X，设定count(X⊆T)为交易集D中包含X的交易的数量，则项集X的支持度为：
-
-$$support(X)=count(X⊆T)/|D|$$
-
-引例中X={bread, milk}出现在T1，T2，T5，T9和T10中，所以支持度为0.5。
-
-
-
-参考：
-
-http://zhan.renren.com/dmeryuyang?gid=3602888498023976650&checked=true
-
-http://blog.csdn.net/lizhengnanhua/article/details/9061755
-
-http://blog.csdn.net/OpenNaive/article/details/7047823
-
-## FP-growth
 
