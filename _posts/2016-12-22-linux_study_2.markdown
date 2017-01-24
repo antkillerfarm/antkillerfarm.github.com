@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  linux学习心得（二）, 知名数据集
+title:  linux学习心得（二）, 知名数据集, Python（二）
 category: technology 
 ---
 
@@ -82,18 +82,6 @@ MNIST是一个手写字符集，也是学习深度学习和SVM的入门必备数
 
 http://yann.lecun.com/exdb/mnist/
 
->注：Yann LeCun，中文名燕乐存，1960年生，法国科学家。Pierre and Marie Curie University博士。Geoffrey Hinton是他博士后时代的导师。CNN的发明人。纽约大学教授，Facebook AI研究所主任。
-
->Léon Bottou，法国科学家，随机梯度下降算法的发明人。
-
->Yoshua Bengio，1964年生，法国出生的加拿大科学家。深度学习的另一个宗师。
-
->这三个法国佬，都是好基友。只不过Yann LeCun和Yoshua Bengio研究神经网络，而Léon Bottou研究SVM，学术上分属不同派系。
-
->Geoffrey Everest Hinton，1947年生，英国出生的加拿大科学家，爱丁堡大学博士，多伦多大学教授。连接主义的代表人物，多层神经网络的宗师。英国皇家学会会员。
-
->一般将Geoffrey Hinton、Yann LeCun和Yoshua Bengio并称为深度学习的三大宗师。
-
 MNIST是NIST的一个子集，包含了6万个训练样本和1万个测试样本。为了避免碎小文件的问题，所有的手写字符图片都被放到一个文件中。整个数据集包含4个这样的文件。它们的格式说明，实际上在官网就有，只是比较靠后面，容易被忽视。
 
 ## Iris flower Data Set
@@ -122,21 +110,39 @@ http://archive.ics.uci.edu/ml/datasets
 
 http://www.numpy.org/
 
+https://docs.scipy.org/doc/numpy-dev/user/quickstart.html
+
+https://docs.scipy.org/doc/numpy/reference/
+
 ## SciPy
 
 http://www.scipy.org/
+
+https://docs.scipy.org/doc/scipy/reference/
 
 ## scikit-learn
 
 http://scikit-learn.org/stable/index.html
 
+http://scikit-learn.org/stable/user_guide.html
+
+http://scikit-learn.org/stable/tutorial/index.html
+
+http://scikit-learn.org/stable/modules/classes.html
+
 ## matplotlib
 
 http://matplotlib.org/
 
+http://matplotlib.org/1.5.3/api/index.html
+
 ## pandas
 
 http://pandas.pydata.org/
+
+http://pandas.pydata.org/pandas-docs/stable/
+
+http://pandas.pydata.org/pandas-docs/stable/api.html
 
 ## mysql
 

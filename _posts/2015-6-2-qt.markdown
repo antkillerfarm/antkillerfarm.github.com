@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Qt, Python
+title:  Qt, Python（一）
 category: technology 
 ---
 

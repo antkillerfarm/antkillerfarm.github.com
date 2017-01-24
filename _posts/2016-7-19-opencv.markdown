@@ -236,7 +236,13 @@ http://cs.stanford.edu/people/karpathy/convnetjs//demo/classify2d.html
 
 https://zhuanlan.zhihu.com/p/21294526
 
+http://www.cs.unc.edu/~welch/media/pdf/kalman_intro.pdf
+
 卡尔曼滤波的科普文
+
+http://wenku.baidu.com/view/44a63fd2b14e852458fb577f.html
+
+kriging插值
 
 http://blog.csdn.net/zddblog/article/details/7521424
 
@@ -260,7 +266,11 @@ http://www.biologic.com.au/bugbrain/
 
 http://blog.csdn.net/v_JULY_v/article/details/52683959
 
-没GPU也能玩梵高作画：Ubuntu tensorflow CPU版 
+没GPU也能玩梵高作画：Ubuntu tensorflow CPU版
+
+http://mp.weixin.qq.com/s/QhP3wRGbrO7sYSDNm8z0gQ
+
+常用推荐算法（50页干货）
 
 ## 斯坦福相关课程
 
@@ -309,52 +319,6 @@ https://gnu.org/software/octave/
 安装方法:
 
 `sudo apt-get install octave`
-
-PDF：probability distribution function
-
-CDF：cumulative distribution function
-
-# Reinforcement Learning and Control
-
-# Linear Discriminant Analysis
-
-# Partial Least Squares Discriminant Analysis
-
-ARIMA模型全称为差分自回归移动平均模型(Autoregressive Integrated Moving Average Model,简记ARIMA)，也叫求和自回归移动平均模型，是由博克思(Box)和詹金斯(Jenkins)于70年代初提出的一著名时间序列预测方法，所以又称为box-jenkins模型、博克思-詹金斯法。
-
-ACBM算法：
-
-ACBM算法是在AC自动机的基础之上，引入了BM算法的多模扩展，实现的高效的多模匹配。和AC自动机不同的是，ACBM算法不需要扫描目标文本串中的每一个字符，可以利用本次匹配不成功的信息，跳过尽可能多的字符，实现高效匹配。
-
-http://blog.csdn.net/sealyao/article/details/6817944
-
-HNM：Hard Negative Mining
-
-# scrapy
-
-scrapy是一个Python写的网页抓取分析工具。网页抓取分析的学名叫做“Web scraping”，可在wiki上获得更多的相关信息。
-
-官网：
-
-https://scrapy.org/
-
-安装：
-
-`sudo apt install python-scrapy`
-
-参考：
-
-https://segmentfault.com/a/1190000000583419
-
-一个中文简易教程。
-
-https://github.com/scrapy/dirbot
-
-官方例程。
-
-http://www.cnblogs.com/fengzheng/p/4974509.html
-
-另一个中文简易教程。
 
 # 云计算论文集
 

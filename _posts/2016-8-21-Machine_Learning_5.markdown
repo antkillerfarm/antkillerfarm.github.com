@@ -6,13 +6,6 @@ category: theory
 
 ## 核函数的有效性（续）
 
-如果我们用$$\phi_k(x)$$表示$$\phi(x)$$第k个元素的话，则对于任意向量z：
-
-$$\begin{align}z^TKz&=\sum_i\sum_jz_iK_{ij}z_j=\sum_i\sum_jz_i\phi(x^{(i)})^T\phi(x^{(j)})z_j
-\\&=\sum_i\sum_jz_i\sum_k\phi_k(x^{(i)})\phi_k(x^{(j)})z_j=\sum_k\sum_i\sum_jz_i\phi_k(x^{(i)})\phi_k(x^{(j)})z_j
-\\&=\sum_k\left(\sum_iz_i\phi_k(x^{(i)})\right)^2\ge 0
-\end{align}$$
-
 即K矩阵是半正定矩阵。事实上，K矩阵是对称半正定矩阵，不仅是K函数有效的必要条件，也是它的充分条件。相关的证明是由James Mercer给出的，被称为Mercer定理（Mercer Theorem）。
 
 >注：James Mercer，1883-1932，英国数学家，英国皇家学会会员，毕业于剑桥大学。曾服役于英国皇家海军，参加了日德兰海战。
@@ -22,6 +15,25 @@ Mercer定理给出了不用找到$$\phi(x)$$，而判定$$K(x,z)$$是否有效�
 $$w^Tx+b=\sum_{i\in SV}\alpha_iy^{(i)}\langle x^{(i)},x\rangle+b=\sum_{i\in SV}\alpha_iy^{(i)}K(x^{(i)},x)+b \tag{6}$$
 
 核函数不仅仅用在SVM上，但凡在一个算法中出现了$$\langle x,z\rangle$$，我们都可以使用$$K(x,z)$$去替换，这可以很好地改善我们算法的效率。因此，核函数更多的被看作是一种技巧而非理论（kernel trick）。
+
+## 构造新核的技术
+
+给定有效的核$$ k_1(x,x') $$和$$ k_2(x, x') $$，下面的新核也是有效的：
+
+$$\begin{eqnarray}
+k(x,x') &=& k_1(x,x')
+\\ k(x,x') &=& f(x)k_1(x,x')f(x')
+\\ k(x,x') &=& q(k_1(x,x'))
+\\ k(x,x') &=& exp(k_1(x,x'))
+\\ k(x,x') &=& k_1(x,x') + k_2(x,x')
+\\ k(x,x') &=& k_1(x,x')k_2(x,x')
+\\ k(x,x') &=& k_3(\phi{x},\phi{x'})
+\\ k(x,x') &=& x^TAx'
+\\ k(x,x') &=& k_a(x_a,x_a') + k_b(x_b,x_b')
+\\ k(x,x') &=& k_a(x_a,x_a')k_b(x_b,x_b')
+\end{eqnarray}$$
+
+其中$$ c > 0 $$是一个常数，$$ f(\cdot) $$是任意函数，$$ q(\cdot) $$是一个系数非负的多项式，$$ \phi(x) $$是一个从$$ x $$到$$ \mathbb{R}^M $$的函数，$$ k_3(\cdot, \cdot) $$是$$ \mathbb{R}^M $$中的一个有效的核，$$ A $$是一个对称半正定矩阵，$$ x_a, x_b $$是变量（未必不相交），且$$ x = (x_a, x_b) $$。$$ k_a,k_b $$是各自空间的有效的核函数。 
 
 ## 规则化和不可分情况处理
 
@@ -177,13 +189,4 @@ $$\begin{align}
 v_1-v_2&=(u_1-b^*-y^{(1)}\alpha_1^*K_{11}-y^{(2)}\alpha_2^*K_{21})-(u_2-b^*-y^{(1)}\alpha_1^*K_{12}-y^{(2)}\alpha_2^*K_{22})
 \\&=u_1-u_2-y^{(1)}\alpha_1^*K_{11}-y^{(2)}\alpha_2^*K_{21}+y^{(1)}\alpha_1^*K_{12}+y^{(2)}\alpha_2^*K_{22}
 \end{align}$$
-
-$$\begin{align}
-y^{(2)}(v_1-v_2)+1-s&=y^{(2)}(u_1-u_2)-y^{(2)}y^{(1)}\alpha_1^*K_{11}-(y^{(2)})^2\alpha_2^*K_{21}+y^{(2)}y^{(1)}\alpha_1^*K_{12}
-\\&\qquad+(y^{(2)})^2\alpha_2^*K_{22}+(y^{(2)})^2-y^{(2)}y^{(1)}
-\\&=y^{(2)}(u_1-u_2)-s\alpha_1^*K_{11}-\alpha_2^*K_{21}+s\alpha_1^*K_{12}
-\\&\qquad+\alpha_2^*K_{22}+(y^{(2)})^2-y^{(2)}y^{(1)}
-\\&=y^{(2)}(u_1-u_2+y^{(2)}-y^{(1)})-s\alpha_1^*K_{11}-\alpha_2^*K_{21}+s\alpha_1^*K_{12}+\alpha_2^*K_{22}
-\end{align}$$
-
 

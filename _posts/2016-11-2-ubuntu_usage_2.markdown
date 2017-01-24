@@ -32,6 +32,10 @@ Ubuntu 16.04正式发布（2016.4.21）之后，我第一时间下载了下来�
 
 `sudo apt-get remove gvfs-backends`
 
+# apt vs. apt-get
+
+在ubuntu14.04以后，apt逐渐取代apt-get，称为默认的软件升级工具。基本可以认为apt=apt-get+apt-cache。
+
 # 清理系统
 
 ## 清理安装包
@@ -355,5 +359,31 @@ Spring Boot默认的配置文件
 https://spring.io/guides/gs/producing-web-service/
 
 http://localhost:9999/ws/countries.wsdl
+
+# scrapy
+
+scrapy是一个Python写的网页抓取分析工具。网页抓取分析的学名叫做“Web scraping”，可在wiki上获得更多的相关信息。
+
+官网：
+
+https://scrapy.org/
+
+安装：
+
+`sudo apt install python-scrapy`
+
+参考：
+
+https://segmentfault.com/a/1190000000583419
+
+一个中文简易教程。
+
+https://github.com/scrapy/dirbot
+
+官方例程。
+
+http://www.cnblogs.com/fengzheng/p/4974509.html
+
+另一个中文简易教程。
 
 

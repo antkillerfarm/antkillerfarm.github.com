@@ -16,6 +16,22 @@ http://www.useit.com.cn/thread-13132-1-1.html
 
 其他参考文献将在相关部分列出。
 
+Deep Learning圈子的主要人物：
+
+![](/images/article/DL_NB.png)
+
+>注：Yann LeCun，中文名燕乐存，1960年生，法国科学家。Pierre and Marie Curie University博士。Geoffrey Hinton是他博士后时代的导师。CNN的发明人。纽约大学教授，Facebook AI研究所主任。
+
+>Léon Bottou，法国科学家，随机梯度下降算法的发明人。
+
+>Yoshua Bengio，1964年生，法国出生的加拿大科学家。深度学习的另一个宗师。
+
+>这三个法国佬，都是好基友。只不过Yann LeCun和Yoshua Bengio研究神经网络，而Léon Bottou研究SVM，学术上分属不同派系。
+
+>Geoffrey Everest Hinton，1947年生，英国出生的加拿大科学家，爱丁堡大学博士，多伦多大学教授。连接主义的代表人物，多层神经网络的宗师。英国皇家学会会员。
+
+>一般将Geoffrey Hinton、Yann LeCun和Yoshua Bengio并称为深度学习的三大宗师。
+
 # MP神经元模型
 
 MP神经元模型是1943年，由Warren McCulloch和Walter Pitts提出的。
