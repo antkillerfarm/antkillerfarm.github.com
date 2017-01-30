@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（四）——随机过程
+title:  数学狂想曲（四）——随机过程, 玻尔兹曼分布
 category: theory 
 ---
 
@@ -32,3 +32,162 @@ category: theory
 
 2.对于正态过程，严平稳过程和宽平稳过程是等价的。
 
+# 玻尔兹曼分布
+
+Boltzmann distribution（又叫Gibbs distribution）本来是脱胎于热力学和统计力学的分布，但在量子力学和机器学习领域也得到了广泛的应用。
+
+>注：Ludwig Eduard Boltzmann，1844～1906，奥地利物理学家，统计力学的奠基人之一。维也纳大学博士，先后执教于格拉茨大学、维也纳大学、慕尼黑大学和莱比锡大学。英国皇家学会会员。
+
+## 信息熵
+
+设概率实验X有n个可能的独立结局，即n个随机事件$$A_1,\dots,A_n$$，每个随机事件的概率为$$p_1,\dots,p_n$$。则信息熵的定义为：
+
+$$H_n=-k\sum_{i=1}^{n}p_i\ln p_i\tag{1}$$
+
+其中k为一正常数。可以看出$$H_n$$实际上是$$p_i$$的泛函。
+
+以下我们主要从信息熵的角度出发研究玻尔兹曼分布。但不能忽视的是，玻尔兹曼分布最早脱胎于热力学，而信息熵与热力学统计物理中的熵，虽然数学形式一致，但本质是不同的。两者相差一个玻尔兹曼常数。参见：
+
+https://www.zhihu.com/question/20992022/answer/50458123
+
+信息熵与热力学统计物理中的熵有什么区别和联系？
+
+>注：信息熵的定义有多种，公式1给出的是Shannon熵的定义，除此之外还有von Neumann熵、Renyi熵等。以下如无特殊指出，信息熵均指Shannon熵。
+
+## 最大信息熵原理
+
+事实上，有些随机事件其概率往往不可能直接计算，平常我们对具体问题作出处理时，掌握的仅仅是一些与随机事件有关的随机变量的统计平均值，以及某些其他制约条件。而当一个随机变量的平均值给定时，还可以有多种概率分布与之相容。现在的问题是如何从这些相容的概率分布中挑选出“最可几”的分布来作为实际上的分布。显然，要做到这点，必须有个挑选标准，最大信息熵原理就可作为这种挑选标准。
+
+>注：最可几分布（Most Probable Distribution），又称最概然分布。它表征在特定系统的特定状态下，出现概率最大的分布。从它的定义可以看出，它实际上不是一种特定的分布，而更像是符合某一特定目标的分布。   
+>比如，麦克斯韦-玻尔兹曼分布、费米-狄拉克分布和玻色-爱因斯坦分布，是热力学常见的三种最可几分布。但它们所处的系统，以及系统的状态各不相同。
+
+最大熵原理是1957年由E.T.Jaynes提出的，其主要思想是，在只掌握关于未知分布的部分知识时，应该选取符合这些知识但熵值最大的概率分布。其实质就是，在已知部分知识的前提下，关于未知分布最合理的推断就是符合已知知识最不确定或最随机的推断，这是我们可以作出的唯一不偏不倚的选择，任何其它的选择都意味着我们增加了其它的约束和假设，这些约束和假设根据我们掌握的信息无法作出。
+
+>注：Edwin Thompson Jaynes，1922～1998，美国统计学家。普林斯顿大学博士，华盛顿大学教授。
+
+假定系统涉及的M个随机变量$$f_i^{(j)}(j=1,\dots,M)$$的期望值$$F_j$$已知，即：
+
+$$F_j=\sum_{i=1}^{n}f_i^{(j)}p_i\tag{2}$$
+
+其中$$f_i^{(j)}$$表示第j个随机变量在状态i中的取值。$$p_i$$满足归一化条件：
+
+$$\sum_{i=1}^{n}p_i=1\tag{3}$$
+
+将公式2和公式3所述的两个约束，代入公式1，可得如下Lagrange乘子：
+
+$$J(p_i)=H_n/k-\alpha(\sum_{i=1}^{n}p_i-1)-\sum_{j=1}^{M}\beta_j(\sum_{i=1}^{n}f_i^{(j)}p_i-F_j)
+\\=-\sum_{i=1}^{n}p_i\ln p_i-\alpha\sum_{i=1}^{n}p_i+\alpha-\sum_{j=1}^{M}\sum_{i=1}^{n}\beta_jf_i^{(j)}p_i+\sum_{j=1}^{M}\beta_jF_j$$
+
+对$$p_i$$求导，可得：
+
+$$\frac{\partial J(p_i)}{\partial p_i}=-\ln p_i-1-\alpha-\sum_{j=1}^{M}\beta_jf_i^{(j)}$$
+
+令上式等于0，可得：
+
+$$p_i=\exp(-1-\alpha-\sum_{j=1}^{M}\beta_jf_i^{(j)})\tag{4}$$
+
+公式4就是一般情况下的最大信息熵公式。
+
+## 相关名词辨析
+
+这里有三个非常容易混淆的名词需要解释。
+
+Maxwell–Boltzmann statistics是研究热平衡状态下无相互作用的物体粒子的能量均值分布的统计学分支。
+
+Boltzmann distribution表征一个包含各种能量状态的系统中粒子的概率分布。
+
+Maxwell-Boltzmann distribution表征粒子的能级和速度的分布。
+
+简而言之，Maxwell–Boltzmann statistics是基于特定假设的统计学分支。而后两者则是具体情况下的概率分布。
+
+与Maxwell–Boltzmann statistics相对应的概念是Bose–Einstein statistics和Fermi–Dirac statistics。后两者分别对应玻色子和费米子的热力学统计。
+
+参考：
+
+https://en.wikipedia.org/wiki/Maxwell–Boltzmann_statistics
+
+https://en.wikipedia.org/wiki/Boltzmann_distribution
+
+https://en.wikipedia.org/wiki/Maxwell–Boltzmann_distribution
+
+## 玻尔兹曼分布的推导
+
+Maxwell–Boltzmann statistics研究的对象是一个由N（N很大）个微观粒子组成的近独立体系，体系的总能量E等于各个粒子能量之和。通常微观粒子的状态和能量是量子化的（即所谓能级），每一能级上又具有若干个量子态。为此，可引入下列符号：
+
+| 名称 | 符号 |
+|:--:|:--:|
+| 单粒子状态编号 | $$1,\dots,n$$ |
+| 能级 | $$E_1,\dots,E_n$$ |
+| 量子态数 | $$g_1,\dots,g_n$$ |
+
+令$$m=g_1+\dots+g_n$$，$$p_s$$为任何一个确定的微观粒子处于第s个量子态上的概率。因此，相应的信息熵和概率分布的归一化条件为：
+
+$$H_m=-k\sum_{s=1}^{m}p_s\ln p_s\tag{5}$$
+
+$$\sum_{s=1}^{m}p_s=1\tag{6}$$
+
+由于N是个大数，可以认为第s个量子态上的微观粒子数为$$N_s=Np_s$$，体系的总能量为：
+
+$$E=\sum_{s=1}^{m}E_sN_s=\sum_{s=1}^{m}E_sNp_s\tag{7}$$
+
+和公式4的推导过程类似，Maxwell–Boltzmann statistics条件下的信息熵最大值的概率分布为：
+
+$$p_s=\exp(-1-\alpha-\beta E_s)\tag{8}$$
+
+由$$p_s$$的归一化条件可得：
+
+$$p_s=\frac{1}{Z}e^{-\beta E_s}\tag{9}$$
+
+其中：
+
+$$Z=\sum_{s=1}^{m}e^{-\beta E_s}$$
+
+于是，当体系处于热平衡状态时，第s个量子态上的粒子数可表为：
+
+$$N_s=Np_s=\frac{N}{Z}e^{-\beta E_s}\tag{10}$$
+
+考虑到同一单粒子能级$$E_i$$上的$$g_i$$个量子态均具有相同的能量$$E_i$$，因此：
+
+$$N_i=N_sg_i\tag{11}$$
+
+由气体分子的速度分布可得：
+
+$$\beta=\frac{1}{kT}\tag{12}$$
+
+其中，k是Boltzmann常数，T是热力学温度。
+
+将公式11、12代入公式10可得：
+
+$$N_i=\frac{Ng_ie^{-E_i/kT}}{\sum_{i=1}^{n}g_ie^{-E_i/kT}}$$
+
+上式就是Boltzmann distribution的PDF。
+
+## 参考
+
+http://wenku.baidu.com/view/ccb7956db84ae45c3b358ca7.html
+
+http://www.cs.toronto.edu/~fritz/absps/cogscibm.pdf
+
+http://www.cs.toronto.edu/~hinton/absps/dbm.pdf
+
+http://www.cs.toronto.edu/~hinton/absps/guideTR.pdf
+
+http://www.cnblogs.com/tianchi/archive/2013/03/14/2959716.html
+
+# 张量分析
+
+
+
+# 复变函数
+
+1.复球面表示。
+
+2.条件严格性。
+
+点域：连续<可导（可微）<可解析
+
+区域：连续<可导（可微）=可解析
+
+3.函数可微的充要条件：Cauchy-Riemann Equations
+
+4.复数在场论描述中的应用。

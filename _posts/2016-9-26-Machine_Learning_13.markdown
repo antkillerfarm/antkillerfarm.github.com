@@ -225,6 +225,8 @@ https://en.wikipedia.org/wiki/Regularization_(mathematics)
 
 可以看出$$L_1$$ regularization的解一般出现在坐标轴上，因而其他坐标上的值就是0，因此，$$L_1$$ regularization会导致矩阵的稀疏。
 
+$$L_1$$ regularization又被称为Lasso（least absolute shrinkage and selection operator） regression。
+
 参见：
 
 https://en.wikipedia.org/wiki/Tikhonov_regularization

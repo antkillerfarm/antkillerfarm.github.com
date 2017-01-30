@@ -108,23 +108,47 @@ http://archive.ics.uci.edu/ml/datasets
 
 ## NumPy
 
+NumPy是python语言所有数学计算库的基础。它主要提供了矩阵运算的功能。
+
+官网：
+
 http://www.numpy.org/
 
+教程：
+
 https://docs.scipy.org/doc/numpy-dev/user/quickstart.html
+
+API参考：
 
 https://docs.scipy.org/doc/numpy/reference/
 
 ## SciPy
 
+SciPy提供了一些更高阶的数学运算库，比如：积分、插值、信号处理、傅立叶变换、矩阵特征值、统计计算等。
+
+SciPy提供的功能主要仍局限于数学运算，而并未提升到算法的层面。这也是它和scikit-learn或其他高级库的差别所在。
+
+官网：
+
 http://www.scipy.org/
+
+API参考：
 
 https://docs.scipy.org/doc/scipy/reference/
 
 ## scikit-learn
 
+scikit-learn提供了常见的机器学习算法的实现。
+
+官网：
+
 http://scikit-learn.org/stable/index.html
 
+教程：
+
 http://scikit-learn.org/stable/user_guide.html
+
+API参考：
 
 http://scikit-learn.org/stable/tutorial/index.html
 
@@ -132,15 +156,29 @@ http://scikit-learn.org/stable/modules/classes.html
 
 ## matplotlib
 
+matplotlib是一个高阶的图形库，主要提供生成图表等数据可视化方面的功能。
+
+官网：
+
 http://matplotlib.org/
+
+API参考：
 
 http://matplotlib.org/1.5.3/api/index.html
 
 ## pandas
 
+pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。
+
+官网：
+
 http://pandas.pydata.org/
 
+文档：
+
 http://pandas.pydata.org/pandas-docs/stable/
+
+API参考：
 
 http://pandas.pydata.org/pandas-docs/stable/api.html
 
@@ -165,30 +203,6 @@ http://tensorflowtutorial.net/tensorflow-tutorial
 教程中文版：
 
 http://wiki.jikexueyuan.com/project/tensorflow-zh/
-
-# 概率图模型
-
-probabilistic graphical model（PGM）最早由Judea Pearl发明。
-
-这方面比较重要的文章和书籍有：
-
-http://www.cis.upenn.edu/~mkearns/papers/barbados/jordan-tut.pdf
-
-Michael Irwin Jordan著。
-
-《Probabilistic Graphical Models: Principles and Techniques》，Daphne Koller，Nir Friedman著（2009年）。
-
->注：Judea Pearl，1936年生，以色列-美国计算机科学家，UCLA教授。2011年获得图灵奖。
-
->Michael Irwin Jordan，1956年生，美国计算机科学家。UCSD博士，先后执教于MIT和UCB。吴恩达的导师。
-
->Daphne Koller，女，1968年生，以色列-美国计算机科学家。斯坦福大学博士及教授。和吴恩达共同创立在线教育平台Coursera。
-
->Nir Friedman，1967年生，以色列计算机科学家。斯坦福大学博士，耶路撒冷希伯来大学教授。
-
-http://www.cs.cmu.edu/~epxing/Class/10708-14/lectures/
-
-CMU的邢波（Eric Xing）所开的概率图模型课程。
 
 # Python
 

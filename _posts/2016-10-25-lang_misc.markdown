@@ -164,6 +164,10 @@ http://url.cn/42zYptF
 
 最全的训练数据集
 
+https://mousieur-g.github.io/
+
+一个R机器学习实战的blog
+
 ## 交互环境
 
 R语言有个和python类似的命令行交互环境。
