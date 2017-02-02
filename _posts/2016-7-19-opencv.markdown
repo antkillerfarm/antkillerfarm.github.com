@@ -272,6 +272,14 @@ http://mp.weixin.qq.com/s/QhP3wRGbrO7sYSDNm8z0gQ
 
 常用推荐算法（50页干货）
 
+http://www.cvpapers.com/datasets.html
+
+常见的cvpr研究的数据库下载链接
+
+http://blog.csdn.net/life_is_amazing/article/details/51884237
+
+这个博客不错,一些深度学习资源链接
+
 ## 斯坦福相关课程
 
 http://cs224d.stanford.edu/

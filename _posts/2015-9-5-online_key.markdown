@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  在线激活流程研究, 芯片杂烩, 软件滤波算法
+title:  在线激活流程研究, 芯片杂烩, Mysql
 category: technology 
 ---
 
@@ -144,97 +144,81 @@ F表示相关的算法。只有符合F算法的P和U，才能通过程序的验�
   </tr>
 </table>
 
-# 软件滤波算法
+# Mysql
 
-## 限幅滤波法
+## 安装
 
-方法：根据经验判断，确定两次采样允许的最大偏差值（设为A），每次检测到新值时判断：如果本次值与上次值之差<=A，则本次值有效，如果本次值与上次值之差>A，则本次值有效，放弃本次值，用上次值代替本次值。
+`sudo apt-get install mysql-server mysql-client mysql-workbench`
 
-优点：能有效克服因偶然要素惹起的脉冲干扰。
+其中，mysql-workbench是一个查看mysql的GUI工具。
 
-缺点：无法抑制那种周期性的干扰，平滑度差。
+安装过程中，会提示输入root用户的密码。注意：这里的root是mysql的登录帐号，而不是系统的登录帐号。
 
-## 中位值滤波法
+·/etc/my.cnf是默认的MySQL配置文件。
 
-方法：连续采样N次（N取奇数），把N次采样值按大小陈列，取中位值（第$$\frac{(N-1)}{2}$$个值）为本次有效值。
+## 常用操作
 
-优点：能有效克服因偶然要素惹起的波动干扰，对变化缓慢的被测参数有良好的滤波效果。
+登录方法：
 
-缺点：对快速变化的参数不宜。
+`mysql -u root -p`
 
-## 算术平均滤波法
+语句以“;”结尾。
 
-方法：连续取N个采样值进行算术平均运算，N值较大时：信号平滑度较高，但灵敏度较低；N值较小时：信号平滑度较低，但灵敏度较高。
+| 名称 | 操作 |
+|:--|:--|
+| 添加用户 | insert into mysql.user(Host,User,Password) <br/>values("localhost","test",password("1234")); |
+| 列出所有数据库 | show database; |
+| 切换数据库 | use 数据库名; |
+| 列出所有表 | show tables; |
+| 显示数据表结构 | describe 表名; |
+| 创建自增ID | create table github(id int auto_increment primary key not null,name varchar(256)); |
+| 查询头N条记录 | select * from shop_info limit N; |
+| 删除记录 | delete from shop_info where shop_id="1"; |
+| 排序+别名+分组+count | select city_name,count(*) as city_count from shop_info group by city_name <br/>order by city_count desc limit 5; |
+| 两列排序+两列相乘 | select shop_id,count(*)*per_pay from shop_info order by per_pay desc,shop_id desc; |
+| 每日统计 | select count(shop_id),date(time_stamp) as dates from user_pay <br/>where shop_id='1234' group by dates order by dates asc; |
 
-优点：适用于对普通具有随机干扰的信号进行滤波，这样信号的特点是有一个平均值，信号在某一数值范围附近上下波动。
+参考：
 
-缺点：对于测量速度较慢或要求数据计算速度较快的实时控制不适用，比较浪费RAM 。
+http://www.cnblogs.com/wuhou/archive/2008/09/28/1301071.html
 
-## 递推平均滤波法（又称滑动平均滤波法）
+http://www.cnblogs.com/wanghetao/p/3806888.html
 
-方法：把连续取的N个采样值看成一个队列，队列的长度固定为N，每次采样到一个新数据放入队尾，并扔掉原来队首的一次数据(先进先出) 。把队列中的N个数据进行算术平均运算，就可获得新的滤波结果。
+## 执行脚本
 
-优点：对周期性干扰有良好的抑制效用，平滑度高，适用于高频振荡系统。
+mysql命令行下执行：
 
-缺点：灵敏度低，对偶然出现的脉冲性干扰的抑制效用较差，不易消弭由于脉冲干扰所引起的采样值偏差，不适用于脉冲干扰比较严重的场合，比较浪费RAM。
+`source a.sql`
 
-## 中位值平均滤波法（又称防脉冲干扰平均滤波法）
+## 导入csv文件
 
-方法：相当于“中位值滤波法”+“算术平均滤波法”，连续采样N个数据，去掉一个最大值和一个最小值，然后计算N-2个数据的算术平均值。。
+http://www.mysqltutorial.org/import-csv-file-mysql-table/
 
-优点：融合了两种滤波法的优点，对于偶然出现的脉冲性干扰，可消弭由于脉冲干扰所惹起的采样值偏差。
+示例：
 
-缺点：测量速度较慢，和算术平均滤波法一样，比较浪费RAM。
+{% highlight sql %}
+LOAD DATA LOCAL INFILE 'c:/tmp/discounts.csv' 
+INTO TABLE discounts 
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+{% endhighlight %}
 
-## 限幅平均滤波法
+上面的语句中，LOCAL必不可少，否则会报如下错误：
 
-方法：相当于“限幅滤波法”+“递推平均滤波法”，每次采样到的新数据先进行限幅处理，再送入队列进行递推平均滤波处理。
+`ERROR 1290 (HY000): The MySQL server is running with the --secure-file-priv option so it cannot execute this statement`
 
-优点：融合了两种滤波法的优点，对于偶然出现的脉冲性干扰，可消弭由于脉冲干扰所惹起的采样值偏差。
+## 日志
 
-缺点：比较浪费RAM。
+http://www.cnblogs.com/jevo/p/3281139.html
 
-## 一阶滞后滤波法
+## 时间的格式
 
-方法：取a=0~1，本次滤波结果=(1-a)*本次采样值+a*上次滤波结果。
-
-优点：对周期性干扰具有良好的抑制造用，适用于波动频率较高的场合。
-
-缺点：相位滞后，灵敏度低，滞后程度取决于a值大小，不能消弭滤波频率高于采样频率的1/2的干扰信号。
-
-## 加权递推平均滤波法
-
-方法：这是对递推平均滤波法的改进，即不同时刻的数据加以不同的权，通常是，越接近现时刻的材料，权取得越大，给予新采样值的权系数越大，则灵敏度越高，但信号平滑度越低。
-
-优点：适用于有较大纯滞后事件常数的对象和采样周期较短的系统。
-
-缺点：对于纯滞后事件常数较小，采样周期较长，变化缓慢的信号，不能迅速反应系统当前所受干扰的严重程度，滤波效果差。
-
-## 消抖滤波法
-
-方法：设置一个滤波计数器，将每次采样值与当前有效值比较：如果采样值等于当前有效值，则计数器清零。如果采样值不等于当前有效值，则计数器+1，并判断计数器能否>=下限N(溢出)，如果计数器溢出，则将本次值交换当前有效值，并清计数器。
-
-优点：对于变化缓慢的被测参数有较好的滤波效果，可避免在临界值附近控制器的反复开/关跳动或显示器上数值抖动。
-
-缺点：对于快速变化的参数不宜，如果在计数器溢出的那一次采样到的值恰好是干扰值，则会将干扰值当作有效值导入系统。
-
-## 限幅消抖滤波法
-
-方法：相当于“限幅滤波法”+“消抖滤波法”，先限幅后消抖。
-
-优点：承继了“限幅”和“消抖”的优点，改进了“消抖滤波法”中的某些缺陷，避免将干扰值导入系统。
-
-缺点：对于快速变化的参数不宜。
-
-## IIR数字滤波
-
-方法：确定信号带宽，滤之。
-
-$$Y(n)=a_1*Y(n-1)+a_2*Y(n-2)+...+a_k*Y(n-k)+$$
-
-$$b_0*X(n)+b_1*X(n-1)+b_2*X(n-2)+...+b_k*X(n-k)$$
-
-优点：高通，低通，带通，带阻任意。design简单(用matlab）。
-
-缺点：运算量大。
+| 名称 | 格式 |
+|:--|:--|
+| DATE | YYYY-MM-DD |
+| DATETIME | YYYY-MM-DD HH:MM:SS |
+| TIMESTAMP | YYYY-MM-DD HH:MM:SS |
+| YEAR | YYYY或YY |
 

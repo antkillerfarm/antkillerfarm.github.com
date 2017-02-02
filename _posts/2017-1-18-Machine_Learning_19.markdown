@@ -4,9 +4,25 @@ title:  机器学习（十九）——word2vec
 category: theory 
 ---
 
-# ROC和AUC
+# P-R、ROC和AUC
 
-Receiver operating characteristic
+很多学习器是为测试样本产生一个实值或概率预测，然后将这个预测值与一个分类阈值（threshold）进行比较，若大于阈值则分为正类，否则为反类。这个实值或概率预测结果的好坏，直接决定了学习器的泛化能力。实际上，根据这个实值或概率预测结果，我们可将测试样本进行排序，“最可能”是正例的排在最前面，“最不可能”是正例的排在最后面。这样，分类过程就相当于在这个排序中以某个“截断点”（cut point）将样本分为两部分，前一部分判作正例，后一部分则判作反例。
+
+在不同的应用任务中，我们可根据任务需求来采用不同的截断点，例如若我们更重视 “查准率”（precision），则可选择排序中靠前的位置进行截断，若更重视“查全率”（recall），则可选择靠后的位置进行截断。
+
+对于二分类问题，可将样例根据其真实类别与学习器预测类别的组合划分为真正例（true positive）、假正例（false positive）、真反例（true negative）和假反例（true negative）。
+
+查准率P和查全率R的定义如下：
+
+$$P=\frac{TP}{TP+FP},R=\frac{TP}{TP+FN}$$
+
+以P和R为坐标轴，所形成的曲线就是P-R曲线。
+
+ROC（Receiver operating characteristic）曲线的纵轴是真正例率（True Positive Rate，TPR），横轴是假正例率（False Positive Rate，FPR）。其定义如下：
+
+$$TPR=\frac{TP}{TP+FN},FPR=\frac{FP}{TN+FP}$$
+
+ROC曲线下方的面积被称为AUC（Area Under ROC Curve）。
 
 # word2vec
 

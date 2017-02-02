@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Ubuntu使用技巧（二）, Fedora, CentOS
+title:  Ubuntu使用技巧（二）, Fedora, CentOS, Spring, scrapy
 category: technology 
 ---
 

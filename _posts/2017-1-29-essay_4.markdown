@@ -14,3 +14,82 @@ http://goeye-app.com/resources.html#cn
 
 精选在线棋谱资源
 
+# 张量分析
+
+在同构的意义下，第零阶张量（r = 0）为标量（Scalar），第一阶张量（r = 1）为向量（Vector），第二阶张量（r = 2）则成为矩阵（Matrix）。
+
+《张量分析》，黄克智著。
+
+>注：黄克智，1927年生，固体力学家。江西中正大学本科+清华硕士+莫斯科大学博士（因应召回国，放弃博士学位）。清华大学工程力学系教授、工程力学研究所所长，中国科学院院士。断裂力学领域权威。
+
+# 随机过程
+
+## 随机变量序列的收敛性
+
+弱收敛：$$F_n(x)\xrightarrow{W}F(x)$$
+
+依分布收敛：$$X_n\xrightarrow{L}X$$
+
+依概率收敛：$$X_n\xrightarrow{P}X$$
+
+r阶收敛：$$X_n\xrightarrow{r}X$$
+
+几乎处处收敛（almost everywhere convergent）：$$X_n\xrightarrow{a.e.}X$$ or $$X_n\xrightarrow{a.s.}X$$
+
+一致收敛（uniform convergence）：$$X_n\xrightarrow{u.c.}X$$
+
+以上概念实际上都是测度论的内容。具体到这里，弱收敛针对分布函数F，而其他收敛针对随机变量X。
+
+收敛严格性：
+
+$$X_n\xrightarrow{P}X>X_n\xrightarrow{L}X$$
+
+$$X_n\xrightarrow{r}X>X_n\xrightarrow{P}X$$
+
+$$X_n\xrightarrow{a.s.}X>X_n\xrightarrow{P}X$$
+
+大数定理：
+
+依概率收敛->弱大数定理
+
+几乎处处收敛->强大数定理
+
+## 随机过程常用公式或符号
+
+| 名称 | 公式或符号 |
+|:--:|:--:|
+| 期望 | $$EX=\int_{-\infty}^{+\infty}x\mathrm{d}F(x)$$，若存在密度函数则$$EX=\int_{-\infty}^{+\infty}xf(x)\mathrm{d}x$$ |
+| 方差 | $$DX=Var(X)=E(X-EX)^2$$ |
+| 协方差 | $$Cov(X,Y)=E\{\overline{[X-E(X)]}[Y-E(Y)]\}$$ |
+| 相关系数 | $$\rho_{XY}=\frac{Cov(X,Y)}{\sqrt{D(X)}\sqrt{D(Y)}}$$ |
+| 协方差矩阵 | $$\left[\begin{array}{ccc} Cov(X_1,X_1)&Cov(X_1,X_2)&\cdots&Cov(X_1,X_n)\\Cov(X_2,X_1)&Cov(X_2,X_2)&\cdots&Cov(X_2,X_n)\\ \vdots&\vdots&&\vdots \\Cov(X_n,X_1)&Cov(X_n,X_2)&\cdots&Cov(X_n,X_n)\end{array}\right]$$ |
+| 相关函数 | $$R(X,Y)=E[\overline{X}Y]$$ |
+| 均方极限 | $${l.i.m}_{n \to +\infty}X$$ |
+
+## 平稳过程
+
+严平稳过程：有限维分布。
+
+宽平稳过程：二阶矩。
+
+不要被名字迷惑了，由于两者关注的东西不同，一般情况下，严平稳过程不一定是宽平稳过程，宽平稳过程也不一定是严平稳过程。
+
+只有以下特例：
+
+1.对于二阶矩过程，严平稳过程一定是宽平稳过程。
+
+2.对于正态过程，严平稳过程和宽平稳过程是等价的。
+
+# 复变函数
+
+1.复球面表示。
+
+2.条件严格性。
+
+点域：连续<可导（可微）<可解析
+
+区域：连续<可导（可微）=可解析
+
+3.函数可微的充要条件：Cauchy-Riemann Equations
+
+4.复数在场论描述中的应用。
