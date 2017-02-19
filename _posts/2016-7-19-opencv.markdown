@@ -62,6 +62,10 @@ http://blog.csdn.net/jinshengtao
 
 一个计算机视觉、机器学习的blog。
 
+http://blog.csdn.net/cuoqu/
+
+一个计算机视觉、机器学习的blog。
+
 http://www.cnblogs.com/jerrylead/
 
 一个机器学习的blog。
@@ -153,14 +157,6 @@ http://url.cn/40IkU7z
 https://www.zhihu.com/question/28810567
 
 ELM算法相关
-
-https://tianchi.shuju.aliyun.com/
-
-天池大数据
-
-https://www.kaggle.com/
-
-国外的一个大数据竞赛网站
 
 http://mp.weixin.qq.com/s?__biz=MjM5MTQzNzU2NA==&mid=2651645872&idx=1&sn=e7b34d0df78a8eda7b71ecf169ce5c38
 
@@ -280,11 +276,53 @@ http://blog.csdn.net/life_is_amazing/article/details/51884237
 
 这个博客不错,一些深度学习资源链接
 
+http://blog.csdn.net/lwzkiller/article/details/54633670
+
+Harris角点检测原理详解
+
+http://mp.weixin.qq.com/s/wCDGPBYoOCzLtJBnPbTz9w
+
+神经网络结构解析
+
+http://blog.csdn.net/zwgdft/article/category/6432397
+
+创业公司做数据分析
+
+http://blog.csdn.net/changyuanchn/article/details/15681853
+
+深度学习之autoencoder
+
+http://www.cnblogs.com/neopenx/p/4370350.html
+
+降噪自动编码器（Denoising Autoencoder)
+
+http://lib.csdn.net/article/deeplearning/58185
+
+BP神经网络与卷积神经网络
+
+http://blog.csdn.net/Fate_fjh/article/details/52882134
+
+卷积神经网络系列blog
+
+http://www.cnblogs.com/yhlx125/p/4707693.html
+
+SLAM(simultaneous localization and mapping)学习笔记
+
+http://www.cnblogs.com/gaoxiang12/p/5113334.html
+
+视觉SLAM中的数学基础
+
+https://www.zhihu.com/question/25371476
+
+怎样从实际场景上理解粒子滤波（Particle Filter）？
+
+LIDAR：LIght Detection And Ranging
+
+http://mp.weixin.qq.com/s/Jiis7j3W3D5GG_ZdxplY7Q
+
+淘宝搜索/推荐系统背后深度强化学习与自适应在线学习的实践之路
+
 ## 斯坦福相关课程
-
-http://cs224d.stanford.edu/
-
-CS224d: Deep Learning for Natural Language Processing
 
 http://ufldl.stanford.edu/wiki/index.php/Main_Page
 
@@ -303,6 +341,10 @@ Andrew Ng，也就是吴恩达写的讲义，写的非常浅显易懂。
 http://openclassroom.stanford.edu/MainFolder/VideoPage.php?course=MachineLearning
 
 Andrew Ng的公开课视频。
+
+http://www.cc.gatech.edu/~lsong/teaching/
+
+佐治亚理工学院宋乐副教授的课件库。
 
 ## 使用细节
 
@@ -379,6 +421,8 @@ https://gnu.org/software/octave/
 >Jeffrey Dean, Michael Epstein, Andrew Fikes, Christopher Frost, JJ Furman, Sanjay Ghemawat, Andrey Gubarev, Christopher Heiser, Peter Hochschild, Wilson Hsieh,Sebastian Kanthak, Eugene Kogan, Hongyi Li, Alexander Lloyd, Sergey Melnik, David Mwaura,David Nagle, Sean Quinlan, Rajesh Rao, Lindsay Rolig, Yasushi Saito, Michal Szymaniak,Christopher Taylor, Ruth Wang, Dale Woodford
 
 ## Dremel
+
+Dremel是Google的“交互式”数据分析系统。可以组建成规模上千的集群，处理PB级别的数据，是MapReduce的有力补充。
 
 《Dremel: Interactive Analysis of WebScaleDatasets》（2006）
 

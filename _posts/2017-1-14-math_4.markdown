@@ -4,6 +4,22 @@ title:  数学狂想曲（四）——软件滤波算法, 玻尔兹曼分布
 category: theory 
 ---
 
+## Hadamard product（续）
+
+$$\left(\begin{array}{ccc}
+    \mathrm{a}_{11} & \mathrm{a}_{12} & \mathrm{a}_{13}\\
+    \mathrm{a}_{21} & \mathrm{a}_{22} & \mathrm{a}_{23}\\
+    \mathrm{a}_{31} & \mathrm{a}_{32} & \mathrm{a}_{33}
+  \end{array}\right) \circ \left(\begin{array}{ccc}
+    \mathrm{b}_{11} & \mathrm{b}_{12} & \mathrm{b}_{13}\\
+    \mathrm{b}_{21} & \mathrm{b}_{22} & \mathrm{b}_{23}\\
+    \mathrm{b}_{31} & \mathrm{b}_{32} & \mathrm{b}_{33}
+  \end{array}\right) = \left(\begin{array}{ccc}
+    \mathrm{a}_{11}\, \mathrm{b}_{11} & \mathrm{a}_{12}\, \mathrm{b}_{12} & \mathrm{a}_{13}\, \mathrm{b}_{13}\\
+    \mathrm{a}_{21}\, \mathrm{b}_{21} & \mathrm{a}_{22}\, \mathrm{b}_{22} & \mathrm{a}_{23}\, \mathrm{b}_{23}\\
+    \mathrm{a}_{31}\, \mathrm{b}_{31} & \mathrm{a}_{32}\, \mathrm{b}_{32} & \mathrm{a}_{33}\, \mathrm{b}_{33}
+  \end{array}\right)$$
+
 # 软件滤波算法
 
 ## 限幅滤波法
@@ -158,11 +174,11 @@ $$p_i=\exp(-1-\alpha-\sum_{j=1}^{M}\beta_jf_i^{(j)})\tag{4}$$
 
 这里有三个非常容易混淆的名词需要解释。
 
-Maxwell–Boltzmann statistics是研究热平衡状态下无相互作用的物体粒子的能量均值分布的统计学分支。
+**Maxwell–Boltzmann statistics**是研究热平衡状态下无相互作用的物体粒子的能量均值分布的统计学分支。
 
-Boltzmann distribution表征一个包含各种能量状态的系统中粒子的概率分布。
+**Boltzmann distribution**表征一个包含各种能量状态的系统中粒子的概率分布。
 
-Maxwell-Boltzmann distribution表征粒子的能级和速度的分布。
+**Maxwell-Boltzmann distribution**表征粒子的能级和速度的分布。
 
 简而言之，Maxwell–Boltzmann statistics是基于特定假设的统计学分支。而后两者则是具体情况下的概率分布。
 
@@ -186,57 +202,4 @@ Maxwell–Boltzmann statistics研究的对象是一个由N（N很大）个微观
 | 能级 | $$E_1,\dots,E_n$$ |
 | 量子态数 | $$g_1,\dots,g_n$$ |
 
-令$$m=g_1+\dots+g_n$$，$$p_s$$为任何一个确定的微观粒子处于第s个量子态上的概率。因此，相应的信息熵和概率分布的归一化条件为：
-
-$$H_m=-k\sum_{s=1}^{m}p_s\ln p_s\tag{5}$$
-
-$$\sum_{s=1}^{m}p_s=1\tag{6}$$
-
-由于N是个大数，可以认为第s个量子态上的微观粒子数为$$N_s=Np_s$$，体系的总能量为：
-
-$$E=\sum_{s=1}^{m}E_sN_s=\sum_{s=1}^{m}E_sNp_s\tag{7}$$
-
-和公式4的推导过程类似，Maxwell–Boltzmann statistics条件下的信息熵最大值的概率分布为：
-
-$$p_s=\exp(-1-\alpha-\beta E_s)\tag{8}$$
-
-由$$p_s$$的归一化条件可得：
-
-$$p_s=\frac{1}{Z}e^{-\beta E_s}\tag{9}$$
-
-其中：
-
-$$Z=\sum_{s=1}^{m}e^{-\beta E_s}$$
-
-于是，当体系处于热平衡状态时，第s个量子态上的粒子数可表为：
-
-$$N_s=Np_s=\frac{N}{Z}e^{-\beta E_s}\tag{10}$$
-
-考虑到同一单粒子能级$$E_i$$上的$$g_i$$个量子态均具有相同的能量$$E_i$$，因此：
-
-$$N_i=N_sg_i\tag{11}$$
-
-由气体分子的速度分布可得：
-
-$$\beta=\frac{1}{kT}\tag{12}$$
-
-其中，k是Boltzmann常数，T是热力学温度。
-
-将公式11、12代入公式10可得：
-
-$$N_i=\frac{Ng_ie^{-E_i/kT}}{\sum_{i=1}^{n}g_ie^{-E_i/kT}}$$
-
-上式就是Boltzmann distribution的PDF。
-
-## 参考
-
-http://wenku.baidu.com/view/ccb7956db84ae45c3b358ca7.html
-
-http://www.cs.toronto.edu/~fritz/absps/cogscibm.pdf
-
-http://www.cs.toronto.edu/~hinton/absps/dbm.pdf
-
-http://www.cs.toronto.edu/~hinton/absps/guideTR.pdf
-
-http://www.cnblogs.com/tianchi/archive/2013/03/14/2959716.html
 

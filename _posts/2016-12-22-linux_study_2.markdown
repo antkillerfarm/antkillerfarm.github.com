@@ -108,6 +108,18 @@ linux下可以使用tesseract作为OCR工具。安装方法：
 
 `tesseract ./111.png 1 -l chi_sim+eng`
 
+## DosBox
+
+DosBox是Linux平台玩DOS老游戏的法宝。
+
+安装：
+
+`sudo apt install dosbox`
+
+启动DosBox之后，需要使用如下命令加载本地文件夹：
+
+`mount c ~/dosprom`
+
 # 知名数据集
 
 ## MNIST
@@ -226,6 +238,10 @@ TensorFlow是Google主导的开源深度学习库。官网：
 
 https://www.tensorflow.org/
 
+代码：
+
+https://github.com/tensorflow/tensorflow
+
 TensorFlow提供了一个可视化的神经网络展示：
 
 http://playground.tensorflow.org/
@@ -238,6 +254,12 @@ http://tensorflowtutorial.net/tensorflow-tutorial
 
 http://wiki.jikexueyuan.com/project/tensorflow-zh/
 
+安装：
+
+`pip install tensorflow`
+
+由于我的PC显卡不合要求，因此直接安装的是CPU版本，这也是最通用的版本。
+
 # Python
 
 ## 如何通过需认证的代理获取HTTP网页
@@ -247,20 +269,80 @@ Python内置的urllib和urllib2模块都可用于获取HTTP网页，但使用范
 这时可以考虑使用urllib2模块。代码如下：
 
 {% highlight python %}
-    import urllib2
-    l_proxy_info = {
-    'user' : 'user',
-    'pass' : 'pass',
-    'host' : 'host',
-    'port' : 3128
-    }
+import urllib2
+l_proxy_info = {
+'user' : 'user',
+'pass' : 'pass',
+'host' : 'host',
+'port' : 3128
+}
 
-    l_proxy_support = urllib2.ProxyHandler({"http" : \
-    "http://%(user)s:%(pass)s@%(host)s:%(port)d" %
-    l_proxy_info})
-    l_opener = urllib2.build_opener(l_proxy_support, urllib2.HTTPHandler)
+l_proxy_support = urllib2.ProxyHandler({"http" : "http://%(user)s:%(pass)s@%(host)s:%(port)d" % l_proxy_info})
+l_opener = urllib2.build_opener(l_proxy_support, urllib2.HTTPHandler)
 
-    urllib2.install_opener(l_opener)
-    usock = urllib2.urlopen('http://www.sohu.com')
+urllib2.install_opener(l_opener)
+usock = urllib2.urlopen('http://www.sohu.com')
 {% endhighlight %}
+
+## 时间、日期数据的格式处理。
+
+时间数据上的格式处理，主要指strftime和strptime函数。其中前者可将时间数据转换成指定格式的字符串，而后者则将字符串转换成时间数据。
+
+{% highlight python %}
+import time
+a = "2013-10-10 23:40:00"
+timeArray = time.strptime(a, "%Y-%m-%d %H:%M:%S")
+otherStyleTime = time.strftime("%Y/%m/%d %H:%M:%S", timeArray)
+{% endhighlight %}
+
+日期方面也是类似的做法。
+
+## 星期处理
+
+`datetime(2002, 12, 4).isoweekday() == 3`
+
+`datetime(2001, 12, 31).isocalendar() == (2002, 1, 1)#(year, week number, weekday)`
+
+从上面的例子还可以看出，isocalendar可以完美的处理跨年问题。
+
+## 参数传递
+
+基本数据类型：数值型，字符串，布尔，是值传递；其他的是引用传递，包括类类型，列表，字典。
+
+## list操作
+
+{% highlight python %}
+L.append(var)   #追加元素
+L.extend(list)  #追加list，即合并list到L上
+{% endhighlight %}
+
+# Restful
+
+相比于WebService，Restful是一种简单的多的编程风格。
+
+比如我们使用搜索引擎的时候，输入的地址：
+
+`https://www.bing.com/search?q=java+restful`
+
+就是一个典型的Restful请求。
+
+有关Restful风格的内容参见：
+
+https://segmentfault.com/a/1190000006735330
+
+http://www.drdobbs.com/web-development/restful-web-services-a-tutorial/240169069
+
+http://www.ibm.com/developerworks/library/ws-restful/index.html
+
+还是那句老话，讨论一个通讯格式或协议，不讨论交互报文的都不是好文章，或者至少不是一个入门的好文章。
+
+常见的Web框架如Spring、Struts都提供了对Restful的支持。
+
+专门负责Restful的框架还有Jersey。其官网：
+
+https://jersey.java.net/
+
+示例：
+
+https://github.com/feuyeux/jax-rs2-guide-II
 

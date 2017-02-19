@@ -107,6 +107,10 @@ http://blog.shengbin.me/posts/multi-user-video-conference-based-on-webrtc
 
 基于WebRTC的多人视频会议
 
+https://github.com/mozillazg/python-pinyin
+
+python版的汉字转拼音软件
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/
@@ -222,22 +226,4 @@ PS：这是一篇自己写于2011.11的文章，转眼间已经3年半过去了�
 还有矩阵论，工作上主要是用它来求解多元线性方程组。如果不是线性方程组的话，还要使用Jacobi矩阵将之线性化，然后矩阵求逆，计算出最终结果。当然还有Kalman滤波的使用，考虑到Kalman滤波和Google的PageRank算法都是基于随机过程的，所以Kalman滤波的应用范围应该还是很广的。
 
 可惜对随机过程完全不了解，打算最近研究研究。
-
-## OA办公软件
-
-工作9年，先后服务于4家公司，OA软件也算见识了一些。
-
-第一家公司，用了一套作坊OA。说它作坊，是因为这是老板的一个朋友的作坊做出来的东西。代码极度差劲，以至于我这样的网站外行，都能改出不少问题来。
-
-第二家公司是外企，用他们国外的OA系统。除了文字是英语之外，其他的中规中矩。
-
-第三家公司，用的是用友致远OA系统。也是中规中矩，语言换成了中文，好用了一些。
-
-第四家公司，使用企明岛的OA平台。上手感觉很惊艳，UI甩开之前的产品一条街。
-
-详细了解之后，才知道：
-
-1.yammer是OA 2.0的鼻祖。
-
-2.国内的同类产品还有：明道，纷享，伙伴，企明岛，tita，UU社区，云之家等。
 

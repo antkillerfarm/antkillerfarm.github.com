@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（十九）——word2vec
+title:  机器学习（十九）——KNN
 category: theory 
 ---
 
@@ -23,6 +23,22 @@ ROC（Receiver operating characteristic）曲线的纵轴是真正例率（True 
 $$TPR=\frac{TP}{TP+FN},FPR=\frac{FP}{TN+FP}$$
 
 ROC曲线下方的面积被称为AUC（Area Under ROC Curve）。
+
+# KNN
+
+K最近邻(k-Nearest Neighbor，KNN)分类算法，是一个理论上比较成熟的方法，也是最简单的机器学习算法之一。
+
+该方法的思路是：如果一个样本在特征空间中的k个最相似(即特征空间中最邻近)的样本中的大多数属于某一个类别，则该样本也属于这个类别。
+
+KNN算法中，所选择的邻居都是已经正确分类的对象。该方法在定类决策上只依据最邻近的一个或者几个样本的类别来决定待分样本所属的类别。
+
+KNN方法虽然从原理上也依赖于极限定理，但在类别决策时，只与极少量的相邻样本有关。由于KNN方法主要靠周围有限的邻近的样本，而不是靠判别类域的方法来确定所属类别的，因此对于类域的交叉或重叠较多的待分样本集来说，KNN方法较其他方法更为适合。
+
+## 和K-means的区别
+
+虽然K-means和KNN都有计算点之间最近距离的步骤，然而两者的目的是不同的：K-means是聚类算法，而KNN是分类算法。
+
+一个常见的应用是：使用K-means对训练样本进行聚类，然后使用KNN对预测样本进行分类。
 
 # word2vec
 
@@ -48,9 +64,7 @@ http://www.cnblogs.com/fengfenggirl/p/iForest.html
 
 1.定义一个模型，用训练数据训练模型的参数，然后用训练好的模型进行预测。这种方法的缺点在于，预测效果和模型与样本的匹配程度有关。比如对非线性样本采用线性模型，其预测效果通常不会太好。但是增加模型的复杂度，又会导致过拟合。
 
-2.定义一个函数分布，赋予每一种可能的函数一个先验概率，可能性越大的函数，其先验概率越大。
-
-
+2.定义一个函数分布，赋予每一种可能的函数一个先验概率，可能性越大的函数，其先验概率越大。但是可能的函数往往为一个不可数集，即有无限个可能的函数，随之引入一个新的问题：如何在有限的时间内对这些无限的函数进行选择？一种有效解决方法就是高斯过程回归(Gaussian process regression，GPR)。
 
 >注：Radford M. Neal，1956年生，加拿大科学家。多伦多大学博士（1995）和教授。贝叶斯神经网络的发明人。导师为Geoffrey Hinton。   
 >个人主页：http://www.cs.toronto.edu/~radford/
@@ -74,6 +88,16 @@ http://wenku.baidu.com/view/72f80113915f804d2b16c173.html
 # Partial Least Squares Discriminant Analysis
 
 ARIMA模型全称为差分自回归移动平均模型(Autoregressive Integrated Moving Average Model,简记ARIMA)，也叫求和自回归移动平均模型，是由博克思(Box)和詹金斯(Jenkins)于70年代初提出的一著名时间序列预测方法，所以又称为box-jenkins模型、博克思-詹金斯法。
+
+http://people.duke.edu/%7Ernau/411home.htm
+
+回归和时间序列分析
+
+http://www.stat.berkeley.edu/~bartlett/courses/153-fall2010/
+
+berkeley的时间序列分析课程
+
+《应用时间序列分析》，王燕著。
 
 ACBM算法：
 
@@ -106,5 +130,50 @@ Michael Irwin Jordan著。
 http://www.cs.cmu.edu/~epxing/Class/10708-14/lectures/
 
 CMU的邢波（Eric Xing）所开的概率图模型课程。
+
+# Probabilistic Robotics
+
+这篇心得主要根据Sebastian Thrun的Probabilistic Robotics课程的ppt来写。
+
+>注：Sebastian Thrun，德国波恩大学博士（1995年）。先后执教于CMU和Stanford。
+
+网址：
+
+http://robots.stanford.edu/probabilistic-robotics/ppt/
+
+## 贝叶斯过滤器
+
+假定我们需要根据测量值z来判断门的开关。显然，这里的$$P(open\vert z)$$是诊断式（**diagnostic**）问题，而$$P(z\vert open)$$是因果式（**causal**）问题。通常来说，后者比较容易获取，而前者可以基于后者使用贝叶斯公式计算得到。
+
+一般将$$P(z\vert x)$$称为Sensor model。
+
+针对多相关测量值问题，这里有一个和朴素贝叶斯假设相仿的Markov assumption：
+
+$$P(x|z_1,\dots,z_n)=\frac{P(z_n|x)P(x|z_1,\dots,z_{n-1})}{P(z_n|z_1,\dots,z_{n-1})}(\text{Bayes' theorem})
+\\=\eta P(z_n|x)P(x|z_1,\dots,z_{n-1})=\eta_{1,\dots,n}\prod_{i=1}^nP(z_i|x)P(x)(\text{Markov assumption})$$
+
+除了测量值z之外，一般的控制系统中还有动作（action）的概念。比如打开门就是一个action。action会导致系统的状态发生改变（也可不变）。如下图所示：
+
+![](/images/article/state_trans.png)
+
+# HMM
+
+https://www.zhihu.com/question/20962240
+
+如何用简单易懂的例子解释隐马尔可夫模型？
+
+http://www.cnblogs.com/kaituorensheng/archive/2012/11/29/2795499.html
+
+隐马尔可夫模型
+
+https://www.zhihu.com/question/20136144
+
+谁能通俗的讲解下viterbi算法吗？
+
+# 机器学习语录
+
+这里收录一些网上的只言片语式的心得，以区别于一般的教程。
+
+>首先要考虑你的数据维度是线性相关的还是非线性相关的，数据是稀疏的还是稠密的，正例反例比例是多少，数据量是否充足。数据是否具有可分类性。是否需要降维。是否有噪音，是否有异常点等，然后去选择分类策略。通常包括数据采集，预处理，分类训练，预测，后处理等过程。
 
 

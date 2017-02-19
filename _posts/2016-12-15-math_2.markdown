@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（二）——拉普拉斯变换, 随机变量的特征函数, 双曲函数和悬链线, 概率分布
+title:  数学狂想曲（二）——拉普拉斯变换, 随机变量的特征函数, 双曲函数和悬链线, 概率分布（1）
 category: theory 
 ---
 
@@ -68,7 +68,7 @@ https://zhuanlan.zhihu.com/p/20042215
 
 ![](/images/article/hyperbolic.jpg)
 
-# 概率分布
+# 概率分布（1）
 
 进入正题之前，先介绍两个函数：贝塔函数和伽马函数。
 

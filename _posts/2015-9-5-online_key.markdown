@@ -177,6 +177,10 @@ F表示相关的算法。只有符合F算法的P和U，才能通过程序的验�
 | 排序+别名+分组+count | select city_name,count(*) as city_count from shop_info group by city_name <br/>order by city_count desc limit 5; |
 | 两列排序+两列相乘 | select shop_id,count(*)*per_pay from shop_info order by per_pay desc,shop_id desc; |
 | 每日统计 | select count(shop_id),date(time_stamp) as dates from user_pay <br/>where shop_id='1234' group by dates order by dates asc; |
+| 年月日 | select year(ordertime),month(ordertime),day(ordertime) from book; |
+| 周数+星期几 | select week(ordertime),weekday(ordertime) from book; |
+| 统计表中的记录条数 | select count(*) from user_pay; |
+| 统计某一列中不同值的个数 | select count(distinct user_id) from user_pay; |
 
 参考：
 
@@ -221,4 +225,25 @@ http://www.cnblogs.com/jevo/p/3281139.html
 | DATETIME | YYYY-MM-DD HH:MM:SS |
 | TIMESTAMP | YYYY-MM-DD HH:MM:SS |
 | YEAR | YYYY或YY |
+
+## 中间数据的存储
+
+有的时候，SQL中间处理的结果需要存储起来，以备后用。这时有两种办法：
+
+1.创建View。
+
+{% highlight sql %}
+CREATE VIEW view_name AS
+SELECT column_name(s)
+FROM table_name
+WHERE condition;
+{% endhighlight %}
+
+View并不在数据库中存储数据，而是在查询时，执行其中的select语句（每次查询，都会执行），生成中间结果。因此，View从原理来说，更像是一种语法糖，而非存储机制。
+
+2.使用select语句创建table。
+
+`Create table new_table_name (Select * from old_table_name);`
+
+这种方法会将中间结果存储到数据库中，下次使用的时候，就无需重新生成了。但缺点是原table中的更新不会体现到新table中，只适合处理历史数据。
 
