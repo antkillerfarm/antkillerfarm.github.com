@@ -4,6 +4,8 @@ title:  机器学习（十七）——决策树, 推荐系统进阶
 category: theory 
 ---
 
+# 隐式狄利克雷划分（续）
+
 ## PLSA
 
 Probabilistic Latent Semantic Analysis是Thomas Hofmann于1999年在UCB读博期间提出的算法。
@@ -118,9 +120,9 @@ $$Gini\_index(D,a)=\sum_{v=1}^V\frac{|D^v|}{|D|}Gini(D^v)$$
 
 GBDT这个算法有很多名字，但都是同一个算法：
 
-GBRT (Gradient BoostRegression Tree)渐进梯度回归树
+GBRT (Gradient Boost Regression Tree)渐进梯度回归树
 
-GBDT (Gradient BoostDecision Tree)渐进梯度决策树
+GBDT (Gradient Boost Decision Tree)渐进梯度决策树
 
 MART (Multiple Additive Regression Tree)多决策回归树
 

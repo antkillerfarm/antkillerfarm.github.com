@@ -182,9 +182,9 @@ API参考：
 
 https://docs.scipy.org/doc/scipy/reference/
 
-## scikit-learn
+## Scikit-learn
 
-scikit-learn提供了常见的机器学习算法的实现。
+Scikit-learn提供了常见的机器学习算法的实现。
 
 官网：
 
@@ -200,9 +200,9 @@ http://scikit-learn.org/stable/tutorial/index.html
 
 http://scikit-learn.org/stable/modules/classes.html
 
-## matplotlib
+## Matplotlib
 
-matplotlib是一个高阶的图形库，主要提供生成图表等数据可视化方面的功能。
+Matplotlib是一个高阶的图形库，主要提供生成图表等数据可视化方面的功能。
 
 官网：
 
@@ -212,9 +212,9 @@ API参考：
 
 http://matplotlib.org/1.5.3/api/index.html
 
-## pandas
+## Pandas
 
-pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。
+Pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。
 
 官网：
 
@@ -316,33 +316,39 @@ L.append(var)   #追加元素
 L.extend(list)  #追加list，即合并list到L上
 {% endhighlight %}
 
-# Restful
+# HMM
 
-相比于WebService，Restful是一种简单的多的编程风格。
+![](/images/article/HMM.png)
 
-比如我们使用搜索引擎的时候，输入的地址：
+![](/images/article/HMM_2.png)
 
-`https://www.bing.com/search?q=java+restful`
+![](/images/article/HMM_3.png)
 
-就是一个典型的Restful请求。
+和HMM模型相关的算法主要分为三类，分别解决三种问题：
 
-有关Restful风格的内容参见：
+1）**知道骰子有几种（隐含状态数量），每种骰子是什么（转换概率），根据掷骰子掷出的结果（可见状态链），我想知道每次掷出来的都是哪种骰子（隐含状态链）。**
 
-https://segmentfault.com/a/1190000006735330
+这个问题呢，在语音识别领域呢，叫做解码问题。这个问题其实有两种解法，会给出两个不同的答案。每个答案都对，只不过这些答案的意义不一样。第一种解法求最大似然状态路径，说通俗点呢，就是我求一串骰子序列，这串骰子序列产生观测结果的概率最大。第二种解法呢，就不是求一组骰子序列了，而是求每次掷出的骰子分别是某种骰子的概率。比如说我看到结果后，我可以求得第一次掷骰子是D4的概率是0.5，D6的概率是0.3，D8的概率是0.2.第一种解法我会在下面说到，但是第二种解法我就不写在这里了，如果大家有兴趣，我们另开一个问题继续写吧。
 
-http://www.drdobbs.com/web-development/restful-web-services-a-tutorial/240169069
+2）**还是知道骰子有几种（隐含状态数量），每种骰子是什么（转换概率），根据掷骰子掷出的结果（可见状态链），我想知道掷出这个结果的概率。**
 
-http://www.ibm.com/developerworks/library/ws-restful/index.html
+看似这个问题意义不大，因为你掷出来的结果很多时候都对应了一个比较大的概率。问这个问题的目的呢，其实是检测观察到的结果和已知的模型是否吻合。如果很多次结果都对应了比较小的概率，那么就说明我们已知的模型很有可能是错的，有人偷偷把我们的骰子給换了。
 
-还是那句老话，讨论一个通讯格式或协议，不讨论交互报文的都不是好文章，或者至少不是一个入门的好文章。
+3）**知道骰子有几种（隐含状态数量），不知道每种骰子是什么（转换概率），观测到很多次掷骰子的结果（可见状态链），我想反推出每种骰子是什么（转换概率）。**
 
-常见的Web框架如Spring、Struts都提供了对Restful的支持。
+这个问题很重要，因为这是最常见的情况。很多时候我们只有可见结果，不知道HMM模型里的参数，我们需要从可见结果估计出这些参数，这是建模的一个必要步骤。
 
-专门负责Restful的框架还有Jersey。其官网：
+参考：
 
-https://jersey.java.net/
+https://www.zhihu.com/question/20962240
 
-示例：
+如何用简单易懂的例子解释隐马尔可夫模型？
 
-https://github.com/feuyeux/jax-rs2-guide-II
+http://www.cnblogs.com/kaituorensheng/archive/2012/11/29/2795499.html
+
+隐马尔可夫模型
+
+https://www.zhihu.com/question/20136144
+
+谁能通俗的讲解下viterbi算法吗？
 

@@ -1,0 +1,247 @@
+---
+layout: post
+title:  数学狂想曲（五）——概率分布（2）, 马氏距离, 闵可夫斯基距离
+category: theory 
+---
+
+## 玻尔兹曼分布的推导（续）
+
+令$$m=g_1+\dots+g_n$$，$$p_s$$为任何一个确定的微观粒子处于第s个量子态上的概率。因此，相应的信息熵和概率分布的归一化条件为：
+
+$$H_m=-k\sum_{s=1}^{m}p_s\ln p_s\tag{5}$$
+
+$$\sum_{s=1}^{m}p_s=1\tag{6}$$
+
+由于N是个大数，可以认为第s个量子态上的微观粒子数为$$N_s=Np_s$$，体系的总能量为：
+
+$$E=\sum_{s=1}^{m}E_sN_s=\sum_{s=1}^{m}E_sNp_s\tag{7}$$
+
+和公式4的推导过程类似，Maxwell–Boltzmann statistics条件下的信息熵最大值的概率分布为：
+
+$$p_s=\exp(-1-\alpha-\beta E_s)\tag{8}$$
+
+由$$p_s$$的归一化条件可得：
+
+$$p_s=\frac{1}{Z}e^{-\beta E_s}\tag{9}$$
+
+其中：
+
+$$Z=\sum_{s=1}^{m}e^{-\beta E_s}$$
+
+于是，当体系处于热平衡状态时，第s个量子态上的粒子数可表为：
+
+$$N_s=Np_s=\frac{N}{Z}e^{-\beta E_s}\tag{10}$$
+
+考虑到同一单粒子能级$$E_i$$上的$$g_i$$个量子态均具有相同的能量$$E_i$$，因此：
+
+$$N_i=N_sg_i\tag{11}$$
+
+由气体分子的速度分布可得：
+
+$$\beta=\frac{1}{kT}\tag{12}$$
+
+其中，k是Boltzmann常数，T是热力学温度。
+
+将公式11、12代入公式10可得：
+
+$$N_i=\frac{Ng_ie^{-E_i/kT}}{\sum_{i=1}^{n}g_ie^{-E_i/kT}}$$
+
+上式就是Boltzmann distribution的PDF。
+
+## 参考
+
+http://wenku.baidu.com/view/ccb7956db84ae45c3b358ca7.html
+
+http://www.cs.toronto.edu/~fritz/absps/cogscibm.pdf
+
+http://www.cs.toronto.edu/~hinton/absps/dbm.pdf
+
+http://www.cs.toronto.edu/~hinton/absps/guideTR.pdf
+
+http://www.cnblogs.com/tianchi/archive/2013/03/14/2959716.html
+
+# 概率分布（2）
+
+上一篇《概率分布（1）》写的意犹未尽，这里继续写。本篇主要关注$$\chi^2$$分布、t分布和F分布，也就是统计学的三大祖师爷各自的看家本领。
+
+## $$\chi^2$$分布
+
+设$$X_1,\dots,X_n$$是来自总体$$N(0,1)$$的样本，则称统计量
+
+$$\chi^2=X_1^2+\dots+X_n^2\tag{1}$$
+
+服从自由度为n的$$\chi^2$$分布（chi-squared distribution），记作$$\chi^2\sim \chi^2(n)$$。其PDF为：
+
+$$f(x;\,n) =
+\begin{cases}
+  \dfrac{x^{(n/2-1)} e^{-x/2}}{2^{n/2} \Gamma\left(\frac n 2 \right)},  & x > 0; \\ 0, & \text{otherwise}.
+\end{cases}$$
+
+## t分布
+
+设$$X\sim N(0,1),Y\sim\chi^2(n)$$，并且X、Y独立，则称随机变量
+
+$$t=\frac{X}{\sqrt{Y/n}}\tag{2}$$
+
+服从自由度为n的t分布（t distribution），记作$$t\sim t(n)$$。其PDF为：
+
+$$f(t) = \frac{\Gamma(\frac{n+1}{2})} {\sqrt{n\pi}\,\Gamma(\frac{n}{2})} \left(1+\frac{t^2}{n} \right)^{\!-\frac{n+1}{2}}$$
+
+## F分布
+
+设$$U\sim \chi^2(d_1),V\sim\chi^2(d_2)$$，并且U、V独立，则称随机变量
+
+$$F=\frac{U/d_1}{V/d_2}\tag{3}$$
+
+服从自由度为$$(d_1,d_2)$$的F分布（F distribution），记作$$F\sim F(d_1,d_2)$$。其PDF为：
+
+$$\begin{align}
+f(x; d_1,d_2) &= \frac{\sqrt{\frac{(d_1\,x)^{d_1}\,\,d_2^{d_2}} {(d_1\,x+d_2)^{d_1+d_2}}}} {x\,\mathrm{B}\!\left(\frac{d_1}{2},\frac{d_2}{2}\right)} \\
+&=\frac{1}{\mathrm{B}\!\left(\frac{d_1}{2},\frac{d_2}{2}\right)} \left(\frac{d_1}{d_2}\right)^{\frac{d_1}{2}} x^{\frac{d_1}{2} - 1} \left(1+\frac{d_1}{d_2}\,x\right)^{-\frac{d_1+d_2}{2}}
+\end{align}$$
+
+显然：
+
+$$\frac{1}{F}\sim F(d_2,d_1)$$
+
+## 假设检验
+
+假设检验就是根据样本对所提出的假设$$H_0$$作判断。
+
+如果$$P\{拒绝H_0\vert H_0为真\}\le \alpha$$，则接受$$H_0$$。
+
+这里的$$\alpha$$被称作**显著性水平**。假设检验$$H_0$$所涉及的统计量被称作**检验统计量**。
+
+下表是正态总体均值、方差的检验法表格：
+
+| $$H_0$$ | 检验统计量 | $$H_0$$为真时的统计量分布 |
+|:--:|:--:|:--:|
+| $$\mu=\mu_0(\sigma^2已知)$$ | $$z=\frac{\overline x-\mu_0}{\sigma/\sqrt n}$$ | $$N(0,1)$$ |
+| $$\mu=\mu_0(\sigma^2未知)$$ | $$t=\frac{\overline x-\mu_0}{s/\sqrt n}$$ | $$t(n-1)$$ |
+| $$\mu_1-\mu_2=\delta(\sigma_1^2,\sigma_2^2已知)$$ | $$Z=\frac{\overline x-\overline y-\delta}{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}}$$ | $$N(0,1)$$ |
+| $$\mu_1-\mu_2=\delta(\sigma_1^2=\sigma_2^2=\sigma^2未知)$$ | $$t=\frac{\overline x-\overline y-\delta}{s_w\sqrt{\frac{1}{n_1}+\frac{1}{n_2}}},s_w^2=\frac{(n_1-1)s_1^2+(n_2-1)s_2^2}{n_1+n_2-2}$$ | $$t(n_1+n_2-2)$$ |
+| $$\sigma^2=\sigma_0^2(\mu未知)$$ | $$\chi^2=\frac{(n-1)s^2}{\sigma_0^2}$$ | $$\chi^2(n-1)$$ |
+| $$\sigma_1^2=\sigma_2^2(\mu_1,\mu_2未知)$$ | $$F=\frac{s_1^2}{s_2^2}$$ | $$F(n_1-1,n_2-1)$$ |
+| $$\mu_d=0(成对数据)$$ | $$t=\frac{\overline d-0}{s/\sqrt n}$$ | $$t(n-1)$$ |
+
+上面这些和$$\chi^2$$分布、t分布、F分布有关的假设检验，又被称作**$$\chi^2$$检验、t检验和F检验**。对均值的假设检验，被称为$$\mu$$检验。
+
+上面这些都是正态样本的参数检验。
+
+对于非参数检验或者非正态样本检验，其他的检验方法还有Wilcoxon signed-rank test、Kruskal–Wallis test、Friedman test等。
+
+>注：Frank Wilcoxon，1892～1965，美国化学家。康奈尔大学博士。先后供职于几家美国化工企业的研究机构。
+
+>William Henry ("Bill") Kruskal，1919～2005，美国数学家。哥伦比亚大学博士，芝加哥大学教授。
+
+>Milton Friedman，1912～2006，美国经济学家。哥伦比亚大学博士，芝加哥大学教授。1976年获诺贝尔经济学奖。芝加哥学派第二代的领军人物。
+
+>Wilson Allen Wallis，1912～1998，美国经济学家。先后就读于明尼苏达大学和芝加哥大学，但是没有博士学位。罗彻斯特大学校长。从艾森豪威尔到里根的历届共和党总统的顾问。Milton Friedman的至交。其父Wilson Dallam Wallis为美国人类学家，明尼苏达大学教授。
+
+## 一元线性回归的显著性检验
+
+假设y关于x的回归具有形式$$a+bx$$，则$$H_0:b=0$$。
+
+这里使用t检验法进行假设检验。
+
+首先，不加证明的给出如下结论：
+
+**推论1**：$$\overline y\sim N(a+b\overline x,\sigma^2/n)$$
+
+**推论2**：$$\hat b\sim N(b,\sigma^2/S_{xx})$$
+
+**推论3**：$$\hat y_0=\hat a+\hat b x_0=\overline y+\hat b(x_0-\overline x)\sim N\left(a+bx_0,\left[\frac{1}{n}+\frac{(x_0-\overline x)^2}{S_{xx}}\right]\sigma^2\right)$$
+
+**推论4**：$$Q_e/\sigma^2\sim \chi^2(n-2)$$
+
+**推论5**：$$\overline y,\hat b,Q_e$$相互独立。
+
+**推论6**：若$$y_0=a+bx_0+\epsilon_0$$与$$y_1,\dots,y_n$$独立，则$$y_0,\hat y_0,Q_e$$相互独立。
+
+其中，$$\overline y$$表示y的均值，而$$\hat y$$表示y的估计值,$$S_{xx}$$表示方差，$$Q_e$$为残差平方和$$\sum_{i=1}^n(y_i-\hat y_i)^2$$。
+
+由推论4可得：
+
+$$E(Q_e/\sigma^2)=n-2$$
+
+即：
+
+$$Q_e=\hat\sigma^2(n-2)\tag{3}$$
+
+由推论2和5、公式2和3，可得：
+
+$$\frac{\hat b-b}{\sqrt{\sigma^2/S_{xx}}}\bigg /\sqrt{\frac{(n-2)\hat \sigma^2}{\sigma^2}\bigg /(n-2)}\sim t(n-2)$$
+
+即：
+
+$$\frac{\hat b-b}{\hat \sigma}\sqrt{S_{xx}}\sim t(n-2)$$
+
+当假设$$H_0$$被拒绝时，认为回归效果是显著的，反之就认为回归效果不显著。
+
+不显著的原因可能有以下几种：
+
+1.影响y取值的，除了x，还有其他不可忽略因素。
+
+2.y与x的关系不是线性的，存在其他的关系。
+
+3.y与x不存在关系。
+
+# 马氏距离
+
+Mahalanobis Distance是印度现代统计学之父Prasanta Chandra Mahalanobis于1936年提出的概念。
+
+>注：Prasanta Chandra Mahalanobis，1893~1972，印度统计学家，剑桥大学博士，印度统计研究所创始人。   
+>印度的重点研究所一般叫做Institute of National Importance，共92所。Indian Statistical Institute是其中唯一一所和统计相关的研究所。教师255，学生375，这得是多精英的教育啊。其计算机科学专业排名印度第2。
+
+p维空间的两点（两个p维向量x,y）的欧氏距离定义为：
+
+$$d_E(x,y)=\sqrt{(x_1-y_1)^2+\dots+(x_p-y_p)^2}=\sqrt{(x-y)^T(x-y)}（公式1）$$
+
+因此，x到原点的距离为：
+
+$$\parallel x\parallel=d_E(x,0)=\sqrt{(x_1)^2+\dots+(x_p)^2}（公式2）$$
+
+也就是：
+
+$$x_1^2+\dots+x_p^2=\parallel x\parallel^2（公式3）$$
+
+这实际上是个正球体的方程，也就是说观测数据x的各个分量对x至中心的欧氏距离贡献是相等的。然而在统计学中我们希望寻求这样一种距离，它的各个分量的作用程度是不同的。差别较大的分量应该接受较小的权重。
+
+于是，公式3可变形为椭球体方程：
+
+$$(\frac{x_1}{s_1})^2+\dots+(\frac{x_p}{s_p})^2=\parallel x\parallel^2（公式4）$$
+
+其中的$$s_i$$表示i分量的权重。
+
+公式4进一步整理，并扩展到两个p维向量x,y，可得马氏距离定义：
+
+$$d_M(x,y)=\sqrt{(\frac{x_1-y_1}{s_1})^2+\dots+(\frac{x_p-y_p}{s_p})^2}=\sqrt{(x-y)^TD^{-1}(x-y)}（公式5）$$
+
+其中，$$D=diag(s_1^2,\dots,s_p^2)$$。
+
+>注意：这里p维向量是正交基，否则的话，D将不是主对角线矩阵，而是一个普通的协方差矩阵。显然如果D为单位矩阵的话，马氏距离就变成了欧氏距离。
+
+马氏距离不受量纲的影响，两点之间的马氏距离与原始数据的测量单位无关。比如体重和身高数据，如果采用欧氏距离，则会由于量纲的不同，而无法比较。
+
+由标准化数据和中心化数据(即原始数据与均值之差）计算出的二点之间的马氏距离相同。马氏距离还可以排除变量之间的相关性的干扰。它的缺点是夸大了变化微小的变量的作用。
+
+马氏距离的特点还包括：
+
+1）马氏距离的计算是建立在总体样本的基础上的，这一点可以从上述协方差矩阵的解释中可以得出，也就是说，如果拿同样的两个样本，放入两个不同的总体中，最后计算得出的两个样本间的马氏距离通常是不相同的，除非这两个总体的协方差矩阵碰巧相同；
+
+2）在计算马氏距离过程中，要求总体样本数大于样本的维数，否则得到的总体样本协方差矩阵逆矩阵不存在，这种情况下，用欧式距离来代替马氏距离，也可以理解为，如果样本数小于样本的维数，这种情况下求其中两个样本的距离，采用欧式距离计算即可。
+
+3）还有一种情况，满足了条件总体样本数大于样本的维数，但是协方差矩阵的逆矩阵仍然不存在，比如A（3，4），B（5，6）；C（7，8），这种情况是因为这三个样本在其所处的二维空间平面内共线。这种情况下，也采用欧式距离计算。
+
+4）在实际应用中“总体样本数大于样本的维数”这个条件是很容易满足的，而所有样本点出现3）中所描述的情况是很少出现的，所以在绝大多数情况下，马氏距离是可以顺利计算的，但是马氏距离的计算是不稳定的，不稳定的来源是协方差矩阵，这也是马氏距离与欧式距离的最大差异之处。
+
+# 闵可夫斯基距离
+
+>Hermann Minkowski（1864-1909），德国数学家，哥廷根大学数学教授，爱因斯坦的老师。
+
+Minkowski distance的定义：
+
+$$d(x,y)=\sqrt[\lambda]{\sum_{i=1}^{n}\lvert x_i-y_i\lvert^{\lambda}}$$
+
+显然，当$$\lambda=2$$时，该距离为欧氏距离。当$$\lambda=1$$时，也被称为CityBlock Distance或Manhattan Distance（曼哈顿距离）。
+

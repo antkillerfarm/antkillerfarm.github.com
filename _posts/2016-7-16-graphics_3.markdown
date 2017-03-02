@@ -1,76 +1,8 @@
 ---
 layout: post
-title:  图像处理理论（三）——图像金字塔, 双边滤波, Steerable滤波, Gabor滤波, Schmid滤波
+title:  图像处理理论（三）——Steerable滤波, Gabor滤波, Schmid滤波, 霍夫变换
 category: theory 
 ---
-
-# 图像金字塔
-
-一幅图像的金字塔是一系列以金字塔形状排列的分辨率逐步降低，且来源于同一张原始图的图像集合。
-
-![](/images/article/image_pyramid.png)
-
-图像金字塔在机器视觉和图像压缩领域使用的比较多，比如OpenGL中的纹理处理。
-
-图像金字塔有两种基本操作：
-
-1.对图像向上采样：PyrUp——图像尺寸加倍。
-
-2.对图像向下采样：PyrDown——图像尺寸减半。
-
-这两种操作由于是针对图像尺寸而言的，因此，其方向和上图所示的金字塔的方向**相反**。
-
-## 高斯金字塔
-
-高斯金字塔是通过高斯平滑和亚采样获得一些列下采样图像，也就是说第K层高斯金字塔通过平滑、亚采样就可以获得K+1层高斯图像，高斯金字塔包含了一系列低通滤波器，其截至频率从上一层到下一层是以因子2逐渐增加，所以高斯金字塔可以跨越很大的频率范围。
-
-## 拉普拉斯金字塔
-
-一般来说，由于PyrDown的过程会损失部分图像信息，因此通常情况下：
-
-$$G_i\neq PyrUp(PyrDown(G_i))$$
-
-为了使PyrUp和PyrDown可逆，这里引入拉普拉斯金字塔的概念。其定义如下：
-
-$$L_i=G_i-PyrUp(G_{i+1})=G_i-Up(G_{i+1})\otimes H_{5x5}$$
-
-其中UP操作是将源图像中位置为(x,y)的像素映射到目标图像的(2x+1,2y+1)位置，$$H_{5x5}$$表示5x5的高斯核。
-
-整个拉普拉斯金字塔运算过程可以通过下图来概括：
-
-![](/images/article/laplacian_pyramid.jpg)
-
-图中最左列和最右列都是高斯金字塔，中间一列是拉普拉斯金字塔。
-
-## Steerable金字塔
-
-将拉普拉斯金字塔中的高斯滤波函数，换成Steerable滤波函数即可。
-
-# 高斯背景
-
-# 霍夫变换
-
-# 双边滤波（Bilateral filter）
-
-双边滤波（Bilateral filter）是一种可以保边去噪的滤波器。其输出像素的值依赖于邻域像素的值的加权组合，即：
-
-$$g(i,j)=\frac{\sum_{k,l}f(k,l)w(i,j,k,l)}{\sum_{k,l}w(i,j,k,l)}$$
-
-也就是：
-
-$$h=\frac{w(i,j,k,l)}{\sum_{k,l}w(i,j,k,l)}$$
-
-其中，
-
-$$w(i,j,k,l)=d(i,j,k,l)\cdot r(i,j,k,l)=\exp\left(-\frac{(i-k)^2+(j-l)^2}{2\sigma_d^2}\right)\cdot \exp\left(-\frac{\|f(i,j)-f(k,l)\|^2}{2\sigma_r^2}\right)$$
-
-这里的$$d(i,j,k,l)$$由于只与定义域有关，通常叫做“定义域核”。实际上，这就是一个高斯滤波核。而$$r(i,j,k,l)$$由于和像素值的差有关（像素差越大，权重越小），也被叫做“值域核”。
-
-从效果来说，双边滤波可产生类似美肤的效果。皮肤上的皱纹和斑，与正常皮肤的差异，远小于黑白眼珠之间的差异，因此前者被平滑，而后者被保留。
-
-为了体现效果，这里来张大叔的照片。
-
-![](/images/article/bilateral_filter.png)
 
 # Steerable滤波
 
@@ -258,4 +190,23 @@ $$F(r,\sigma,\tau)=\frac{1}{Z}\cos\left(\frac{2\pi\tau r}{\sigma}\right)e^{-\fra
 
 >作者：Cordelia Schmid，女，卡尔斯鲁厄理工学院博士。现在INRIA（法国国家信息与自动化研究所）从事研究工作。
 
+# 高斯背景
+
+# 霍夫变换
+
+Hough Transform最早是Paul V.C. Hough于1962年在一篇专利中提出的。1972年，Richard O. Duda和Peter E. Hart对其进行扩展，发表论文《Use of the Hough Transformation to Detect Lines and Curves in Pictures》。但是直到1981年，Dana H. Ballard发表《Generalizing the Hough transform to detect arbitrary shapes》之后，它才被人广泛使用。
+
+>注：Paul V.C. Hough，生平不详。只知道是个物理学家，曾在Brookhaven National Laboratory工作过。
+
+>Richard O. Duda，MIT博士，圣何塞州立大学教授。曾供职于SRI International。
+
+>Peter E. Hart，斯坦福大学博士。SRI International研究员。
+
+>Dana Harry Ballard，1946年生，UCI博士，德克萨斯大学教授。
+
+
+
+http://www.cs.jhu.edu/~misha/Fall04/GHT1.pdf
+
+http://blog.csdn.net/poem_qianmo/article/details/26977557
 

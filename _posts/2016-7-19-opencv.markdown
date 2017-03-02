@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenCV, 云计算论文集
+title:  OpenCV, 云计算论文集, 名校机器学习相关课程
 category: technology 
 ---
 
@@ -230,12 +230,6 @@ http://cs.stanford.edu/people/karpathy/convnetjs//demo/classify2d.html
 
 这是一个2层神经网络的可视化demo
 
-https://zhuanlan.zhihu.com/p/21294526
-
-http://www.cs.unc.edu/~welch/media/pdf/kalman_intro.pdf
-
-卡尔曼滤波的科普文
-
 http://wenku.baidu.com/view/44a63fd2b14e852458fb577f.html
 
 kriging插值
@@ -322,29 +316,9 @@ http://mp.weixin.qq.com/s/Jiis7j3W3D5GG_ZdxplY7Q
 
 淘宝搜索/推荐系统背后深度强化学习与自适应在线学习的实践之路
 
-## 斯坦福相关课程
+http://mp.weixin.qq.com/s/gHM7qh7UTKzatdg34cgfDQ
 
-http://ufldl.stanford.edu/wiki/index.php/Main_Page
-
-斯坦福的《Unsupervised Feature Learning and Deep Learning》教程，该网站本身就有中文翻译。
-
-https://zhuanlan.zhihu.com/p/22038289
-
-斯坦福CS231n课程（卷积神经网络，CNN）翻译。
-
-https://www.coursera.org/learn/machine-learning
-
-《斯坦福大学机器学习课程讲义》CS229
-
-Andrew Ng，也就是吴恩达写的讲义，写的非常浅显易懂。
-
-http://openclassroom.stanford.edu/MainFolder/VideoPage.php?course=MachineLearning
-
-Andrew Ng的公开课视频。
-
-http://www.cc.gatech.edu/~lsong/teaching/
-
-佐治亚理工学院宋乐副教授的课件库。
+强化学习全解
 
 ## 使用细节
 
@@ -437,5 +411,42 @@ Dremel是Google的“交互式”数据分析系统。可以组建成规模上�
 开源实现：Zookeeper
 
 >作者：Mike Burrows，1963年生，英国计算机学家。剑桥大学博士。2013年当选皇家学会会员。
+
+# 名校机器学习相关课程
+
+http://ufldl.stanford.edu/wiki/index.php/Main_Page
+
+斯坦福的《Unsupervised Feature Learning and Deep Learning》教程，该网站本身就有中文翻译。
+
+https://zhuanlan.zhihu.com/p/22038289
+
+斯坦福CS231n课程（卷积神经网络，CNN）翻译。
+
+https://www.coursera.org/learn/machine-learning
+
+《斯坦福大学机器学习课程讲义》CS229
+
+Andrew Ng，也就是吴恩达写的讲义，写的非常浅显易懂。
+
+http://openclassroom.stanford.edu/MainFolder/VideoPage.php?course=MachineLearning
+
+Andrew Ng的公开课视频。
+
+http://www.cc.gatech.edu/~lsong/teaching/
+
+佐治亚理工学院宋乐副教授的课件库。
+
+http://web.cs.iastate.edu/~cs577/
+
+Problem Solving Techniques for Applied Computer Science
+
+https://onlinecourses.science.psu.edu/stat857/
+
+Applied Data Mining and Statistical Learning
+
+http://www.cs.unc.edu/~lazebnik/spring11/
+
+Computer Vision
+
 
 

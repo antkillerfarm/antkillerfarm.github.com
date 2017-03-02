@@ -248,6 +248,12 @@ HBase中，将一个Column Family中的列存在一起，而不同Column Family�
 
 吐槽一下。既然2~3个column family的表都支持的不好，那么似乎表明column family在现阶段只是一个设计的概念，离实用尚有距离。这样做的用意，大概是期待有一天Hbase把这个特性做好之后，上层应用可以无须修改吧。
 
+## HBase架构
+
+![](/images/article/hbase.jpg)
+
+HBase在物理上是HDFS上的文件，因此它也是主从结构的。
+
 ## 常用的HBase Shell命令
 
 这些命令可在hbase的控制台输入。进入控制台：
@@ -283,4 +289,33 @@ HBase中，将一个Column Family中的列存在一起，而不同Column Family�
 
 http://blog.csdn.net/dhtx_wzgl/article/details/49423979
 
+# Restful
+
+相比于WebService，Restful是一种简单的多的编程风格。
+
+比如我们使用搜索引擎的时候，输入的地址：
+
+`https://www.bing.com/search?q=java+restful`
+
+就是一个典型的Restful请求。
+
+有关Restful风格的内容参见：
+
+https://segmentfault.com/a/1190000006735330
+
+http://www.drdobbs.com/web-development/restful-web-services-a-tutorial/240169069
+
+http://www.ibm.com/developerworks/library/ws-restful/index.html
+
+还是那句老话，讨论一个通讯格式或协议，不讨论交互报文的都不是好文章，或者至少不是一个入门的好文章。
+
+常见的Web框架如Spring、Struts都提供了对Restful的支持。
+
+专门负责Restful的框架还有Jersey。其官网：
+
+https://jersey.java.net/
+
+示例：
+
+https://github.com/feuyeux/jax-rs2-guide-II
 

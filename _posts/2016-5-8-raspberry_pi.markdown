@@ -96,14 +96,12 @@ Raspberry Pi 3B的GPIO接口图如下所示：
 
 其中，串口和树莓派的连线方式如下：
 
-{% highlight text %}
-串口   树莓派
---------------------
-VCC      +3.3V
-RX       TXD
-TX       RXD
-GND      Ground
-{% endhighlight %}
+| 串口 | 树莓派 |
+|:--:|:--:|
+| VCC | +3.3V |
+| RX | TXD |
+| TX | RXD |
+| GND | Ground |
 
 这里我犯了一个错误，将VCC接到+5V上，差点将串口转接板烧掉。用户如果无法判断自己串口设备的VCC，建议先接上+3.3V试试。
 

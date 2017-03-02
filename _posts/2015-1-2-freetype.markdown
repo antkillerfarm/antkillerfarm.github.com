@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  FreeType, FFmpeg, SDL, 图像处理软件, Mac OS X, Objective-C, Flume & Kafka
+title:  FreeType, FFmpeg, SDL, 图像处理软件, Mac OS X, Objective-C, Flume & Kafka, OA办公软件
 category: technology 
 ---
 

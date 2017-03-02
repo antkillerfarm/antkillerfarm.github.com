@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（一）——MP神经元模型, BP算法, Spark
+title:  深度学习（一）——MP神经元模型, BP算法, NLP, Spark, 时间序列分析
 category: theory 
 ---
 
@@ -261,5 +261,44 @@ http://www.cnblogs.com/bluejoe/p/5115846.html
 http://www.cnblogs.com/bluejoe/p/5115845.html
 
 Hive体系结构介绍
+
+# Reinforcement Learning and Control
+
+# Linear Discriminant Analysis
+
+# Partial Least Squares Discriminant Analysis
+
+ACBM算法：
+
+ACBM算法是在AC（Aho-Corasick）自动机（UNIX上的fgrep命令使用的就是AC算法）的基础之上，引入了BM（Boyer-Moore）算法的多模扩展，实现的高效的多模匹配。和AC自动机不同的是，ACBM算法不需要扫描目标文本串中的每一个字符，可以利用本次匹配不成功的信息，跳过尽可能多的字符，实现高效匹配。
+
+http://blog.csdn.net/sealyao/article/details/6817944
+
+>注： Alfred Vaino Aho，1941年生，加拿大计算机科学家。普林斯顿大学博士，长期供职于贝尔实验室，后为哥伦比亚大学教授。egrep和fgrep的发明人，AWK语言的联合发明人。著有《Principles of Compiler Design Compilers: Principles, Techniques, and Tools》。该书由于封面上有龙图案，又被称为“龙书”，是编译原理方面的权威书籍。2003年获IEEE John von Neumann Medal。
+
+>Margaret John Corasick，贝尔实验室研究员。
+
+>Robert Stephen Boyer，德克萨斯大学教授。
+
+>J Strother Moore，德克萨斯大学教授。Boyer的好朋友，两人的绝大多数成就都是合作完成的。
+
+HNM：Hard Negative Mining
+
+# 时间序列分析
+
+ARIMA模型全称为差分自回归移动平均模型(Autoregressive Integrated Moving Average Model,简记ARIMA)，也叫求和自回归移动平均模型，是由George Edward Pelham Box和Gwilym Meirion Jenkins于70年代初提出的一著名时间序列预测方法，所以又称为box-jenkins模型、博克思-詹金斯法。
+
+>注：Gwilym Meirion Jenkins，1932～1982，英国统计学家。伦敦大学学院博士，兰卡斯特大学教授。
+
+http://people.duke.edu/%7Ernau/411home.htm
+
+回归和时间序列分析
+
+http://www.stat.berkeley.edu/~bartlett/courses/153-fall2010/
+
+berkeley的时间序列分析课程
+
+《应用时间序列分析》，王燕著。
+
 
 

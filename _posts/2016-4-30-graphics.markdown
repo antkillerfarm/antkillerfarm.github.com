@@ -4,6 +4,22 @@ title:  图像处理理论（一）——直方图, 二值化, 滤波基础
 category: theory 
 ---
 
+# 书籍
+
+《Digital Image Processing》，Rafael C. Gonzalez、Richard E. Woods著。
+
+>注：Rafael C. Gonzalez，佛罗里达大学博士，田纳西大学教授。
+
+>Richard E. Woods，田纳西大学博士和教授。
+
+《Image Processing, Analysis and Machine Vision》，Milan Sonka、Vaclav Hlavac、Roger Boyle著。
+
+>注：Milan Sonka，艾奥瓦大学教授。
+
+>Vaclav Hlavac，捷克科技大学博士和教授。
+
+>Roger Boyle，利兹大学教授。
+
 # 对比度和亮度
 
 $$
@@ -282,20 +298,4 @@ $$\left[\begin{array}{c} 1\\2\\1\end{array} \right]\times \left[\begin{array}{cc
 $$\left[\begin{array}{ccc} 0.0625&0.125&0.0625\\ 0.125&0.25&0.125 \\ 0.0625&0.125&0.0625\end{array}\right]$$
 
 从效果来说，高斯滤波可产生类似毛玻璃的效果。
-
-# 中值滤波（Median filter）
-
-中值滤波是一种典型的非线性滤波技术，对于斑点噪声（speckle noise）和椒盐噪声（salt-and-pepper noise）来说尤其有用，对滤除脉冲干扰及图像扫描噪声非常有效，也常用于保护边缘信息。
-
-以3*3的滤波窗口为例，计算以点$$[i,j]$$为中心的像素中值步骤如下：
-
-1）对$$U^+(A,1)$$的9个像素点$$a_0\sim a_8$$，按强度值大小排列像素点，得到有序数组$$A_0\sim A_8$$
-
-2）选择排序像素集的中间值$$A_4$$作为点$$[i,j]$$的新值。
-
-从效果来说，中值滤波可产生类似油彩画的效果。
-
-上面这些滤波的效果如图所示：
-
-![](/images/article/img_filter.png)
 

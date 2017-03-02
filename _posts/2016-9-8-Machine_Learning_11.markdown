@@ -263,3 +263,24 @@ LU分解有若干种算法，常见的包括Doolittle、Cholesky、Crout算法�
 
 >Prescott Durand Crout，1907~1984，美国数学家，22岁获MIT博士。
 
+这里只介绍一下Doolittle算法。
+
+$$A=\begin{bmatrix}
+a_{11} & a_{12} & \dots & a_{1n} \\
+a_{21} & a_{22} & \dots & a_{2n} \\
+\dots & \dots & \dots & \dots \\
+a_{n1} & a_{n2} & \dots & a_{nn} \\  
+\end{bmatrix}=LU=
+\begin{bmatrix}
+1 & 0 & \dots & 0 \\
+l_{21} & 1 & \dots & 0 \\
+\dots & \dots & \dots & \dots \\
+l_{n1} & l_{n2} & \dots & 1 \\  
+\end{bmatrix}
+\begin{bmatrix}
+u_{11} & u_{12} & \dots & u_{1n} \\
+0 & u_{22} & \dots & u_{2n} \\
+\dots & \dots & \dots & \dots \\
+0 & 0 & \dots & u_{nn} \\  
+\end{bmatrix}
+$$

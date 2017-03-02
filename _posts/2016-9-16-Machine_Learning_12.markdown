@@ -6,27 +6,6 @@ category: theory
 
 ## LU分解（续）
 
-这里只介绍一下Doolittle算法。
-
-$$A=\begin{bmatrix}
-a_{11} & a_{12} & \dots & a_{1n} \\
-a_{21} & a_{22} & \dots & a_{2n} \\
-\dots & \dots & \dots & \dots \\
-a_{n1} & a_{n2} & \dots & a_{nn} \\  
-\end{bmatrix}=LU=
-\begin{bmatrix}
-1 & 0 & \dots & 0 \\
-l_{21} & 1 & \dots & 0 \\
-\dots & \dots & \dots & \dots \\
-l_{n1} & l_{n2} & \dots & 1 \\  
-\end{bmatrix}
-\begin{bmatrix}
-u_{11} & u_{12} & \dots & u_{1n} \\
-0 & u_{22} & \dots & u_{2n} \\
-\dots & \dots & \dots & \dots \\
-0 & 0 & \dots & u_{nn} \\  
-\end{bmatrix}
-$$
 
 由矩阵乘法定义，可知：
 
@@ -247,3 +226,25 @@ https://www.zhihu.com/question/22237507/answer/53804902
 
 http://www.ams.org/samplings/feature-column/fcarc-svd
 
+## 奇异值分解
+
+奇异值分解（Singular value decomposition，SVD）定理：
+
+设$$M\in R^{m\times n}$$，则必存在正交矩阵$$U=[u_1,\dots,u_m]\in R^{m\times m}$$和$$V=[v_1,\dots,v_n]\in R^{n\times n}$$使得：
+
+$$U^TMV=\begin{bmatrix}
+\Sigma_r & 0 \\
+0 & 0 
+\end{bmatrix}$$
+
+其中，$$\Sigma_r=diag(\sigma_1,\dots,\sigma_r),\sigma_1\ge \dots\ge \sigma_r>0$$。
+
+当M为复矩阵时，将U、V改为酉矩阵（unitary matrix）即可。（吐槽一下，酉矩阵这个翻译真的好烂，和天干地支半毛钱关系都没有。）
+
+奇异值分解也可写为另一种形式：
+
+$$M=U\Sigma V^*$$
+
+其几何意义如下图所示：
+
+![](/images/article/Singular-Value-Decomposition.png)

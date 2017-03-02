@@ -4,28 +4,7 @@ title:  机器学习（十三）——机器学习中的矩阵方法（3）病�
 category: theory 
 ---
 
-## 奇异值分解
-
-奇异值分解（Singular value decomposition，SVD）定理：
-
-设$$M\in R^{m\times n}$$，则必存在正交矩阵$$U=[u_1,\dots,u_m]\in R^{m\times m}$$和$$V=[v_1,\dots,v_n]\in R^{n\times n}$$使得：
-
-$$U^TMV=\begin{bmatrix}
-\Sigma_r & 0 \\
-0 & 0 
-\end{bmatrix}$$
-
-其中，$$\Sigma_r=diag(\sigma_1,\dots,\sigma_r),\sigma_1\ge \dots\ge \sigma_r>0$$。
-
-当M为复矩阵时，将U、V改为酉矩阵（unitary matrix）即可。（吐槽一下，酉矩阵这个翻译真的好烂，和天干地支半毛钱关系都没有。）
-
-奇异值分解也可写为另一种形式：
-
-$$M=U\Sigma V^*$$
-
-其几何意义如下图所示：
-
-![](/images/article/Singular-Value-Decomposition.png)
+## 奇异值分解（续）
 
 虽然，我们可以通过计算矩阵$$\sqrt{M^*M}$$的特征值的方法，计算奇异值，然而这个方法的计算量十分巨大。1965年，Gene Howard Golub和William Morton Kahan发明了目前较为通用的算法。但该方法比较复杂，这里不作介绍。
 
@@ -70,6 +49,22 @@ http://wenku.baidu.com/view/9ce143eb81c758f5f61f6730.html
 2.如果A为奇异矩阵，则AX=0有无穷解，AX=b有无穷解或者无解。如果A为非奇异矩阵，则AX=0有且只有唯一零解，AX=b有唯一解。
 
 对于A不是方阵的情况，一般使用$$A^TA$$来评估矩阵是否是奇异矩阵。
+
+## 正定矩阵
+
+positive definite matrix的定义：
+
+一个n阶的实对称矩阵M是正定的的条件是当且仅当对于所有的非零实系数向量z，都有$$z^TMz>0$$。
+
+正定矩阵A的性质：
+
+1.正定矩阵的任一主子矩阵也是正定矩阵。
+
+2.A的特征值和各阶顺序主子式全为正。
+
+3.若A为n阶正定矩阵，则A为n阶可逆矩阵。
+
+类似的还可以定义负定矩阵、半正定矩阵（非负定矩阵）。
 
 ## 向量的范数
 
