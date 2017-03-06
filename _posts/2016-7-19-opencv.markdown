@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenCV, 云计算论文集, 名校机器学习相关课程
+title:  OpenCV, 名校机器学习相关课程
 category: technology 
 ---
 
@@ -320,6 +320,16 @@ http://mp.weixin.qq.com/s/gHM7qh7UTKzatdg34cgfDQ
 
 强化学习全解
 
+https://zhuanlan.zhihu.com/p/25549497
+
+https://zhuanlan.zhihu.com/p/25549585
+
+126篇殿堂级深度学习论文分类整理 从入门到应用（上）（下）
+
+http://www.cnblogs.com/ello/archive/2012/04/28/2475419.html
+
+浅析人脸检测之Haar分类器方法
+
 ## 使用细节
 
 ### saturate_cast
@@ -343,74 +353,6 @@ https://gnu.org/software/octave/
 安装方法:
 
 `sudo apt-get install octave`
-
-# 云计算论文集
-
-这里列出一些在这个领域产生重大影响的论文。仅作备忘，肯定不全，Google是其中的绝对主力。
-
-## CAP
-
-《Towards Robust Distributed Systems》（2000）
-
->作者：Eric Brewer是University of California, Berkeley的计算机科学教授，在Google担任基础设施方面的VP。他的研究兴趣包括云计算、可伸缩的服务器、传感器网络，还有适合发展中地区应用的技术。他还帮助建立了美国联邦政府的门户网站USA.gov。Brewer从MIT获得电子工程和计算机科学的博士学位。他是National Academy of Engineering的院士。联系方式：brewer@cs.berkeley.edu
-
-## GFS
-
-《The Google File System》（2003）
-
-开源实现：Hadoop HDFS
-
->作者：Sanjay Ghemawat，Ph.D. in Computer Science from MIT，2009年当选美国国家工程学院院士。
-
->Howard Gobioff(1971 – 2008)，Carnegie Mellon University，Ph.D. Computer Science。
-
->Shun-Tak Leung，University of Washington，Ph.D. Computer Science。
-
-## MapReduce
-
-《MapReduce: Simplified Data Processing on Large Clusters》（2004）
-
-开源实现：Hadoop MapReduce
-
->作者：Jeffrey Dean，University of Washington，Ph.D. Computer Science (1996)，2009年当选美国国家工程学院院士。
-
->Sanjay Ghemawat。
-
-## Bigtable
-
-开源实现：Hbase
-
-《Bigtable: A Distributed Storage System for Structured Data》（2006）
-
->作者：Fay W. Chang，Carnegie Mellon University，Ph.D. Computer Science 。
-
->Jeffrey Dean, Sanjay Ghemawat, Wilson C. Hsieh, Deborah A. Wallach, Mike Burrows, Tushar Chandra, Andrew Fikes, Robert E. Gruber
-
-## Spanner
-
-《Spanner: Google’s Globally-Distributed Database》（2012）
-
->作者：James C. Corbett，PhD in Computer Science from the University of Massachusetts at Amherst.
-
->Jeffrey Dean, Michael Epstein, Andrew Fikes, Christopher Frost, JJ Furman, Sanjay Ghemawat, Andrey Gubarev, Christopher Heiser, Peter Hochschild, Wilson Hsieh,Sebastian Kanthak, Eugene Kogan, Hongyi Li, Alexander Lloyd, Sergey Melnik, David Mwaura,David Nagle, Sean Quinlan, Rajesh Rao, Lindsay Rolig, Yasushi Saito, Michal Szymaniak,Christopher Taylor, Ruth Wang, Dale Woodford
-
-## Dremel
-
-Dremel是Google的“交互式”数据分析系统。可以组建成规模上千的集群，处理PB级别的数据，是MapReduce的有力补充。
-
-《Dremel: Interactive Analysis of WebScaleDatasets》（2006）
-
->作者：Sergey Melnik, Ph.D. in Computer Science from the University of Leipzig, Germany. Microsoft Research (2003-2008), Google(since 2008)
-
->Andrey Gubarev, Jing Jing Long, Geoffrey Romer, Shiva Shivakumar, Matt Tolton, Theo Vassilakis
-
-## Chubby Lock
-
-《The Chubby lock service for loosely-coupled distributed systems》（2006）
-
-开源实现：Zookeeper
-
->作者：Mike Burrows，1963年生，英国计算机学家。剑桥大学博士。2013年当选皇家学会会员。
 
 # 名校机器学习相关课程
 

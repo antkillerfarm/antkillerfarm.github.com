@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（一）——MP神经元模型, BP算法, NLP, Spark, 时间序列分析
+title:  深度学习（一）——MP神经元模型, BP算法, NLP, 时间序列分析
 category: theory 
 ---
 
@@ -155,112 +155,7 @@ http://www.shareditor.com/bloglistbytag/?tagname=%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%
 
 实战课程：自己动手做聊天机器人
 
-# Spark
-
-官网：
-
-http://spark.apache.org/
-
-## RDD
-
-Resilient Distributed Datasets是一个只读的，可分区的分布式数据集，这个数据集的全部或部分可以缓存在内存中，在多次计算间重用。RDD克服了传统的MapReduce所进行大量的磁盘IO操作。
-
-我的理解：RDD将计算包括中间结果，全部放到内存中，以节省磁盘IO操作。
-
-http://www.infoq.com/cn/articles/spark-core-rdd
-
-http://f.dataguru.cn/thread-475874-1-1.html
-
-## DataFrame和DataSet
-
-http://www.jianshu.com/p/c0181667daa0
-
-http://www.csdn.net/article/2015-02-17/2823997
-
-https://www.iteblog.com/pdf/1675
-
-## transformation & action
-
-transformation是得到一个新的RDD，方式很多，比如从数据源生成一个新的RDD，从RDD生成一个新的RDD。
-
-action是得到一个值，或者一个结果（直接将RDDcache到内存中）。
-
-所有的transformation都是采用的懒策略，就是如果只是将transformation提交是不会执行计算的，计算只有在action被提交的时候才被触发。
-
-## Spark部署
-
-Spark没有服务程序，因此无须部署，只需要在集群中的某台机器上安装spark，进行任务提交即可。Spark的并行执行主要依赖Hadoop YARN。
-
-参见：
-
-http://blog.csdn.net/book_mmicky/article/details/25714287
-
-Spark虽然对Hadoop的版本有一定的要求，但是并不是太严重的问题。比如，目前最新的Spark 2.0.1（2016.10）仍然支持Hadoop 2.3，而后者是2014年2月出的版本。
-
-## shuffle
-
-![](/images/article/mapreduce-process.png)
-
-上图描述了MapReduce算法的整个流程，其中shuffle phase就是介于Map phase和Reduce phase之间的那一堆连线。很显然，shuffle虽然是MapReduce算法提出的概念，但在各类分布式计算框架中普遍存在，也是影响计算效率的关键点和框架设计的难点之一。
-
-参考：
-
-http://jerryshao.me/architecture/2014/01/04/spark-shuffle-detail-investigation/
-
-## 控制日志输出等级
-
-有的时候为了防止控制台的日志输出过多，淹没了程序的正常输出，可以采用如下方法：
-
-{% highlight java %}
-SparkContext sc = SparkContext.getOrCreate(conf);
-sc.setLogLevel("WARN");
-{% endhighlight %}
-
-## 基本统计操作
-
-1.统计列中不相同值的个数。
-
-方法一：
-
-比如在观众观影的表格中，找出观众的数量或电影的数量。
-
-`Dataset<Row> df = session.sql("SELECT userId FROM Movie group by userId");//df.count() is the count of different values`
-
-方法二：
-
-Spark中有个org.apache.spark.sql.functions类，专门针对数据集进行各种运算操作。其中的countDistinct方法可实现该功能。片段示例如下：
-
-`Dataset<Row> df2 = df.agg(functions.countDistinct("userId"));df2.show();`
-
-## 参考
-
-http://www.cnblogs.com/zlslch/p/5723857.html
-
-Spark的各种算子
-
-http://mp.weixin.qq.com/s?__biz=MjM5NzAyNTE0Ng==&mid=2649517135&idx=2&sn=7fc02a006b7c5015f3492354d0e298a4&scene=0#rd
-
-Spark性能优化指南：高级篇
-
-https://www.zhihu.com/question/23079001
-
-内存有限的情况下，Spark如何处理T级别的数据
-
-https://www.zhihu.com/question/26568496
-
-与Hadoop对比，如何看待Spark技术？
-
-http://www.csdn.net/article/1970-01-01/2825748
-
-如何利用“图计算”实现大规模实时预测分析
-
-http://www.cnblogs.com/bluejoe/p/5115846.html
-
-学习GraphX
-
-http://www.cnblogs.com/bluejoe/p/5115845.html
-
-Hive体系结构介绍
+## 
 
 # Reinforcement Learning and Control
 
@@ -286,13 +181,7 @@ HNM：Hard Negative Mining
 
 # 时间序列分析
 
-ARIMA模型全称为差分自回归移动平均模型(Autoregressive Integrated Moving Average Model,简记ARIMA)，也叫求和自回归移动平均模型，是由George Edward Pelham Box和Gwilym Meirion Jenkins于70年代初提出的一著名时间序列预测方法，所以又称为box-jenkins模型、博克思-詹金斯法。
-
->注：Gwilym Meirion Jenkins，1932～1982，英国统计学家。伦敦大学学院博士，兰卡斯特大学教授。
-
-http://people.duke.edu/%7Ernau/411home.htm
-
-回归和时间序列分析
+## 书籍和教程
 
 http://www.stat.berkeley.edu/~bartlett/courses/153-fall2010/
 
@@ -300,5 +189,24 @@ berkeley的时间序列分析课程
 
 《应用时间序列分析》，王燕著。
 
+## 互相关函数和自相关函数
 
+Cross-correlation
 
+Autocorrelation
+
+$$(f \star g)(\tau)\ \stackrel{\mathrm{def}}{=} \int_{-\infty}^{\infty} f^*(t)\ g(t+\tau)\,dt,$$
+
+$$R_{ff}(\tau) = (f * g_{-1}(\overline{f}))(\tau) = \int_{-\infty}^\infty f(u+\tau)\overline{f}(u)\, {\rm d}u = \int_{-\infty}^\infty f(u)\overline{f}(u-\tau)\, {\rm d}u$$
+
+$$g_{-1}(f)(u)=f(-u)$$
+
+## ARIMA
+
+ARIMA模型全称为差分自回归移动平均模型(Autoregressive Integrated Moving Average Model,简记ARIMA)，也叫求和自回归移动平均模型，是由George Edward Pelham Box和Gwilym Meirion Jenkins于70年代初提出的一著名时间序列预测方法，所以又称为box-jenkins模型、博克思-詹金斯法。
+
+>注：Gwilym Meirion Jenkins，1932～1982，英国统计学家。伦敦大学学院博士，兰卡斯特大学教授。
+
+http://people.duke.edu/%7Ernau/411home.htm
+
+回归和时间序列分析
