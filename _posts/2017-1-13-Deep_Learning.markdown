@@ -210,3 +210,4 @@ ARIMA模型全称为差分自回归移动平均模型(Autoregressive Integrated 
 http://people.duke.edu/%7Ernau/411home.htm
 
 回归和时间序列分析
+

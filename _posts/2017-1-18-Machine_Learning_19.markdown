@@ -50,6 +50,8 @@ http://blog.csdn.net/itplus/article/details/37969519
 
 https://github.com/tmikolov/word2vec
 
+http://wei-li.cnblogs.com/p/word2vec.html
+
 # 异常点检测
 
 http://chuansong.me/n/377440751130
