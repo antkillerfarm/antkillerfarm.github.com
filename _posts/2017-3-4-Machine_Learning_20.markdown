@@ -4,6 +4,14 @@ title:  机器学习（二十）——
 category: theory 
 ---
 
+# loss function详解
+
+Symmetric mean absolute percentage error (SMAPE or sMAPE)
+
+$$\text{SMAPE} = \frac 1 n \sum_{t=1}^n \frac{\left|F_t-A_t\right|}{(A_t+F_t)/2}$$
+
+$$\text{SMAPE} = \frac{100\%}{n} \sum_{t=1}^n \frac{|F_t-A_t|}{|A_t|+|F_t|}$$
+
 # 机器学习语录
 
 这里收录一些网上的只言片语式的心得，以区别于一般的教程。
