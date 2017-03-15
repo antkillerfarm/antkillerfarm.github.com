@@ -223,6 +223,14 @@ https://es.xiaoleilu.com/
 
 Elasticsearch 权威指南（中文版）
 
+https://zhuanlan.zhihu.com/p/24428355
+
+使用ElasticSearch踩过的坑
+
+https://zhuanlan.zhihu.com/p/25723815
+
+GitHub|教你快速使用Tensorflow/Elasticsearch实现全文的图片搜索
+
 # Redis
 
 REmote DIctionary Server(Redis) 是一个由Salvatore Sanfilippo写的key-value存储系统。
