@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  天池大赛
+title:  天池大赛, Storm
 category: technology 
 ---
 
@@ -181,6 +181,73 @@ $$W(0)=\frac{W(-1)+\frac{W(-2)+W(-3)}{2}}{2}$$
 
 采用类似双十一效应的刷榜方式，实际上还可以进一步提高结果，最终我的成绩定格在0.8137。但是，这种方式显然不是我想要的，我不想再这样在没有理论依据的情况下，单纯用凑数字的方式提高成绩，于是我的参赛之旅也就终结于此了（2.21）。况且这种方式也有其极限，我估计其极限最多也就是0.809。想获得更好的成绩，一定要有其他更好的思路才行。
 
+# Storm
 
+Storm是一个大数据领域的实时计算框架。
 
+官网：
+
+http://storm.apache.org/
+
+教程：
+
+http://storm.apache.org/releases/current/Tutorial.html
+
+http://blog.csdn.net/rzhzhz/article/details/8788137
+
+http://ifeve.com/getting-started-with-stom-index/
+
+http://blog.csdn.net/NB_vol_1/article/details/46287077
+
+http://www.open-open.com/lib/view/open1374979211233.html
+
+## 示例
+
+这里使用源代码中自带的示例。
+
+1.下载源代码。
+
+2.`mvn clean install -DskipTests=true`
+
+3.进入examples/storm-starter目录：
+
+`mvn compile exec:java -Dstorm.topology=org.apache.storm.starter.ExclamationTopology`
+
+## Trident
+
+Trident是在storm基础上，一个以realtime计算为目标的高度抽象。它在提供处理大吞吐量数据能力的同时，也提供了低延时分布式查询和有状态流式处理的能力。
+
+教程：
+
+http://storm.apache.org/releases/current/Trident-tutorial.html
+
+http://blog.csdn.net/derekjiang/article/details/9126185
+
+## Storm vs Spark
+
+http://blog.csdn.net/iefreer/article/details/32715153
+
+## 问题汇总
+
+http://blog.sina.com.cn/s/blog_8c243ea30101k0k1.html
+
+## 集群部署
+
+Storm的本地模式，无须hadoop生态圈软件的支持，自己就能运行。但它的集群部署依赖Zookeeper和YARN。
+
+1.配置YARN和Zookeeper，并启动相关服务进程。
+
+2.配置Storm
+
+https://storm.apache.org/releases/current/Setting-up-a-Storm-cluster.html
+
+3.启动Nimbus和Supervisor
+
+Nimbus和Supervisor都是Storm服务进程，前者运行在Master上，而后者运行在Node上。这里的Master和Node，可以和Zookeeper或YARN设置的不同。
+
+Nimbus的作用是将运行的jar分发到各Node去执行。
+
+虽然`bin/storm nimbus`可以启动nimbus，然而这种方法启动的是前台进程，一旦退出终端，进程就会被杀死。可用如下方法解决之：
+
+`start-stop-daemon --start --background --exec /root/apache-storm-1.0.2/bin/storm nimbus`
 

@@ -60,6 +60,10 @@ https://www.zhihu.com/question/20136144
 
 谁能通俗的讲解下viterbi算法吗？
 
+# CRF
+
+条件随机场(Conditional Random Field)由Lafferty等人于2001年提出，结合了最大熵模型和隐马尔可夫模型的特点，是一种无向图模型，近年来在分词、词性标注和命名实体识别等序列标注任务中取得了很好的效果。
+
 # 机器学习相关术语表
 
 | 缩写 | 全称 | 中文名 | 备注 |
@@ -115,4 +119,5 @@ https://www.zhihu.com/question/20136144
 | HNM | Hard Negative Mining | 硬负挖掘 |  |
 | ACBM | Aho-Corasick Boyer-Moore |  |  |
 | LASSO | Least Absolute Shrinkage and Selection Operator | 最小绝对收缩和选择算子 |  |
+| CRF | Conditional Random Field | 条件随机场 |  |
 

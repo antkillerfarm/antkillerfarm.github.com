@@ -309,3 +309,9 @@ class A
 
 http://www.cnblogs.com/icejoywoo/archive/2011/05/09/2041449.html
 
+## POJO
+
+POJO（Plain Ordinary Java Object）：简单的Java对象。
+
+这个名词被创造出来，用以和JavaBean做一个区分。后者通常是被容器所创建，还要实现Serializable接口用于实现Bean的持久性。
+

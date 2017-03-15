@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  云计算论文集, Spark
+title:  云计算论文集, Spark, Elasticsearch, Redis
 category: technology 
 ---
 
@@ -178,4 +178,61 @@ http://www.cnblogs.com/bluejoe/p/5115846.html
 http://www.cnblogs.com/bluejoe/p/5115845.html
 
 Hive体系结构介绍
+
+# Elasticsearch
+
+https://www.elastic.co/downloads/elasticsearch
+
+http://cloud.51cto.com/art/201505/476450.htm
+
+五类Elasticsearch扩展性插件推荐
+
+http://blog.csdn.net/cnweike/article/details/33736429
+
+Elasticsearch基础教程
+
+https://github.com/moshe/elasticsearch_loader
+
+一个csv数据导入工具
+
+http://blog.csdn.net/a809146548/article/details/52371110
+
+[Logstash]使用详解
+
+http://www.cnblogs.com/ajianbeyourself/p/5529575.html
+
+Elasticsearch教程-从入门到精通
+
+http://www.2cto.com/article/201509/443094.html
+
+Elk大数据查询系列：Elasticsearch与Logstash基础篇
+
+http://www.tuicool.com/articles/YR7RRr
+
+ELK(ElasticSearch, Logstash, Kibana)搭建实时日志分析平台
+
+http://467754239.blog.51cto.com/4878013/1700828/
+
+ELK 日志分析系统
+
+https://www.ibm.com/developerworks/cn/opensource/os-cn-elk/
+
+集中式日志系统 ELK 协议栈详解
+
+https://es.xiaoleilu.com/
+
+Elasticsearch 权威指南（中文版）
+
+# Redis
+
+REmote DIctionary Server(Redis) 是一个由Salvatore Sanfilippo写的key-value存储系统。
+
+http://www.runoob.com/redis/redis-tutorial.html
+
+Redis教程
+
+http://www.yiibai.com/redis/
+
+另一个Redis教程
+
 

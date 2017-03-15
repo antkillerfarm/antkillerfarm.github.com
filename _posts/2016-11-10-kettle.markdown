@@ -151,13 +151,25 @@ http://www.solr.cc/blog/
 
 http://blog.csdn.net/aidayei/article/details/6526986
 
+solr中文分词
+
 http://outofmemory.cn/code-snippet/3659/Solr-configuration-zhongwen-fenci-qi
+
+Solr配置中文分词器
 
 http://opennlp.apache.org/
 
 http://www.importnew.com/12707.html
 
 全文检索引擎Solr系列—–全文检索基本原理
+
+http://iamyida.iteye.com/category/338597
+
+跟益达学Solr5系列教程
+
+http://iamyida.iteye.com/category/335240
+
+跟益达学Lucene5系列教程
 
 ## start命令
 
@@ -243,6 +255,22 @@ https://github.com/DmitryKey/luke
 
 2.每个Replica存储的索引文件一般是不同的，因此使用Luke的时候，如果有些数据查询不到的话，可以到其他Replica下查询。
 
+## Solr的配置
+
+1.Node配置
+
+solr.xml
+
+2.Core配置
+
+全局配置：core.properties
+
+Solr配置：solrconfig.xml
+
+数据域配置：schema.xml
+
+3.
+
 ## IKAnalyzer
 
 IKAnalyzer是一个中文分词器。作者：林良益。
@@ -265,76 +293,20 @@ http://blog.csdn.net/frankcheng5143/article/details/52292897
 
 这个网页提供了将IKAnalyzer集成到Solr 6的办法，经测试对Solr 6.3也是适用的。
 
+## Ansj
+
+Ansj是一个开源的Java中文分词工具，基于中科院的ictclas中文分词算法，比其他常用的开源分词工具（如mmseg4j）的分词准确率更高。
+
+https://github.com/ansjsun/ansj_seg
+
+## Solrj
+
+https://wiki.apache.org/solr/Solrj
+
+https://cwiki.apache.org/confluence/display/solr/Using+SolrJ
+
 # Lucene
 
 http://lucene.apache.org/core/6_3_0/index.html
 
-# Storm
 
-Storm是一个大数据领域的实时计算框架。
-
-官网：
-
-http://storm.apache.org/
-
-教程：
-
-http://storm.apache.org/releases/current/Tutorial.html
-
-http://blog.csdn.net/rzhzhz/article/details/8788137
-
-http://ifeve.com/getting-started-with-stom-index/
-
-http://blog.csdn.net/NB_vol_1/article/details/46287077
-
-http://www.open-open.com/lib/view/open1374979211233.html
-
-## 示例
-
-这里使用源代码中自带的示例。
-
-1.下载源代码。
-
-2.`mvn clean install -DskipTests=true`
-
-3.进入examples/storm-starter目录：
-
-`mvn compile exec:java -Dstorm.topology=org.apache.storm.starter.ExclamationTopology`
-
-## Trident
-
-Trident是在storm基础上，一个以realtime计算为目标的高度抽象。它在提供处理大吞吐量数据能力的同时，也提供了低延时分布式查询和有状态流式处理的能力。
-
-教程：
-
-http://storm.apache.org/releases/current/Trident-tutorial.html
-
-http://blog.csdn.net/derekjiang/article/details/9126185
-
-## Storm vs Spark
-
-http://blog.csdn.net/iefreer/article/details/32715153
-
-## 问题汇总
-
-http://blog.sina.com.cn/s/blog_8c243ea30101k0k1.html
-
-## 集群部署
-
-Storm的本地模式，无须hadoop生态圈软件的支持，自己就能运行。但它的集群部署依赖Zookeeper和YARN。
-
-1.配置YARN和Zookeeper，并启动相关服务进程。
-
-2.配置Storm
-
-https://storm.apache.org/releases/current/Setting-up-a-Storm-cluster.html
-
-3.启动Nimbus和Supervisor
-
-Nimbus和Supervisor都是Storm服务进程，前者运行在Master上，而后者运行在Node上。这里的Master和Node，可以和Zookeeper或YARN设置的不同。
-
-Nimbus的作用是将运行的jar分发到各Node去执行。
-
-虽然`bin/storm nimbus`可以启动nimbus，然而这种方法启动的是前台进程，一旦退出终端，进程就会被杀死。可用如下方法解决之：
-
-`start-stop-daemon --start --background --exec /root/apache-storm-1.0.2/bin/storm nimbus`

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Zigbee音频, 6LowPAN, IEEE 802, Ganglia, Parquet
+title:  Zigbee音频, 6LowPAN, IEEE 802, Ganglia, Parquet, Velocity, ActiveMQ
 category: technology 
 ---
 
@@ -281,5 +281,19 @@ http://blog.csdn.net/dc_726/article/details/41777661
 http://blog.csdn.net/dc_726/article/details/41143175
 
 几张图看懂列式存储
+
+# Velocity
+
+Velocity是一个基于java的模板引擎（template engine），它允许任何人仅仅简单的使用模板语言（template language）来引用由java代码定义的对象。
+
+Velocity基本等价于之前的JSP，但语法规则和后者有较大差异，其所使用的模板文件为.vm文件。
+
+# ActiveMQ
+
+ActiveMQ 是Apache出品，最流行的，能力强劲的开源消息总线。
+
+http://blog.csdn.net/jiuqiyuliang/article/details/46701559
+
+深入浅出JMS(一)--JMS基本概念
 
 
