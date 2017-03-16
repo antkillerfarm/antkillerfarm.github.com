@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Kettle, Solr, Storm
+title:  Kettle, Solr
 category: technology 
 ---
 
