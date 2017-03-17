@@ -6,6 +6,10 @@ category: theory
 
 # loss function详解
 
+Mean Squared Error(MSE)/Mean Squared Deviation(MSD)
+
+$$\operatorname{MSE}=\frac{1}{n}\sum_{i=1}^n(\hat{Y_i} - Y_i)^2$$
+
 Symmetric mean absolute percentage error (SMAPE or sMAPE)
 
 $$\text{SMAPE} = \frac 1 n \sum_{t=1}^n \frac{\left|F_t-A_t\right|}{(A_t+F_t)/2}$$
@@ -86,7 +90,7 @@ https://www.zhihu.com/question/20136144
 | EM | Expectation-Maximization | 期望最大化 |  |
 | GMM | Mixture of Gaussians Model | 高斯混合模型 |  |
 | SVD | Singular Value Decomposition | 奇异值分解 |  |
-| PPMCC or PCC | Pearson Product-Moment Correlation Coefficient | 皮尔逊相关系数 |  |
+| PPMCC/PCC | Pearson Product-Moment Correlation Coefficient | 皮尔逊相关系数 |  |
 | PMF | Probabilistic Matrix Factorization | 概率矩阵分解算法 |  |
 | RMSE | Root-Mean-Square Error | 均方根误差 |  |
 | ALS | Alternating Least Squares | 交替最小二乘算法 |  |
@@ -98,7 +102,7 @@ https://www.zhihu.com/question/20136144
 | ECDF | Empirical Distribution Function | 实证分配函数 |  |
 | LDA | Latent Dirichlet Allocation | 隐式狄利克雷划分 |  |
 | LDA | Linear Discriminant Analysis | 线性判别分析 |  |
-| MCMC | Markov Chain Monte Carlo | 马尔可夫蒙特卡罗 |  |
+| MCMC | Markov Chain Monte Carlo | 马尔可夫链蒙特卡罗 |  |
 | MRF | Markov Random Field | 马尔可夫随机场 |  |
 | PLSA | Probabilistic Latent Semantic Analysis | 概率隐含语义分析 |  |
 | GBDT | Gradient Boost Decision Tree | 渐进梯度决策树 |  |
@@ -120,4 +124,4 @@ https://www.zhihu.com/question/20136144
 | ACBM | Aho-Corasick Boyer-Moore |  |  |
 | LASSO | Least Absolute Shrinkage and Selection Operator | 最小绝对收缩和选择算子 |  |
 | CRF | Conditional Random Field | 条件随机场 |  |
-
+| MSE/MSD | Mean Squared Error/Mean Squared Deviation | 均方误差 |  |

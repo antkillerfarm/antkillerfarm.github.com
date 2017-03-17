@@ -252,6 +252,107 @@ bin/kibana
 
 http://localhost:5601/
 
+## ES的存储层次
+
+ES和MySQL的层级对应关系如下：
+
+| mysql | 数据库databases | 表tables | 行rows | 列columns |
+|:--:|:--:|:--:|:--:|:--:|
+| es | 索引indices | 类型document types | 文档documents | 字段fields |
+
+以如下conf文件为例：
+
+```
+input { stdin { } }
+output {
+  elasticsearch { hosts => ["localhost:9200"] index => "msg" document_type => "true_msg"}
+  stdout { codec => rubydebug }
+}
+```
+
+其查询语句为：
+
+```
+GET msg/true_msg/_search
+{
+  "query": {
+    "match_all": {}
+  },
+  "_source": ["message"]
+}
+```
+
+## 编写LogStash的conf
+
+LogStash的conf包含3个部分：input,filter,output。其中filter为可选项，其余为必选项。
+
+同一个大括号内的若干命令为顺序执行的关系。使用`if{}else{}`实现条件控制。
+
+### Sample 1
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/helloworld/logstash/logstash-csv.conf
+
+这个示例展示了如何导入csv数据文件，如何创建ES的index和document_type。
+
+由于我们使用的csv文件是GBK编码的，直接导入会有乱码，因此，这个示例还有如何转换文件编码格式的方法。
+
+### Sample 2
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/helloworld/logstash/logstash-csv1.conf
+
+这个示例展示了如何将一个csv文件的前两列写入一个ES表，而将后一列写入另一个ES表。
+
+本例使用了type作为条件，进行条件分支判断。但是这个方法不是最优的，因为csv文件被读取了2次。
+
+### Sample 3
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/helloworld/logstash/logstash-csv2.conf
+
+这个示例的目标和Sample 2相同。
+
+这里采用clone filter，生成了另一个type不同的事件，从而达到分支的目的。
+
+## ES的查询示例
+
+### 添加数据
+
+```
+PUT /customer/external/1?pretty
+{
+  "name": "John Doe"
+}
+```
+
+### 删除数据
+
+`DELETE /customer?pretty`
+
+查询删除：
+
+```
+GET msg/true_msg/_delete_by_query
+{
+  "query": {
+    "match_all": {}
+  }
+}
+```
+
+### 关键字查询
+
+简单查询：
+
+```
+GET msg/true_msg/_search
+{
+  "query": {
+    "match": { "message": "购物车" }
+  }
+}
+```
+
+上面的查询有个问题，只要出现“购物车”三个字中任何一个字的message，都会被选中。
+
 ## 参考
 
 http://cloud.51cto.com/art/201505/476450.htm
@@ -262,10 +363,6 @@ http://blog.csdn.net/cnweike/article/details/33736429
 
 Elasticsearch基础教程
 
-https://github.com/moshe/elasticsearch_loader
-
-一个csv数据导入工具
-
 http://blog.csdn.net/a809146548/article/details/52371110
 
 Logstash使用详解
@@ -274,7 +371,7 @@ http://www.cnblogs.com/ajianbeyourself/p/5529575.html
 
 Elasticsearch教程-从入门到精通
 
-http://www.2cto.com/article/201509/443094.html
+http://www.freebuf.com/sectool/78225.html
 
 Elk大数据查询系列：Elasticsearch与Logstash基础篇
 
@@ -288,11 +385,15 @@ ELK 日志分析系统
 
 https://www.ibm.com/developerworks/cn/opensource/os-cn-elk/
 
-集中式日志系统 ELK 协议栈详解
+集中式日志系统ELK协议栈详解
 
 https://es.xiaoleilu.com/
 
-Elasticsearch 权威指南（中文版）
+Elasticsearch权威指南（中文版）
+
+http://udn.yyuap.com/doc/logstash-best-practice-cn/
+
+logstash最佳实践
 
 https://zhuanlan.zhihu.com/p/24428355
 

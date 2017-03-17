@@ -338,6 +338,10 @@ https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap
 
 深度学习论文阅读路线图
 
+https://zhuanlan.zhihu.com/p/25821063
+
+循环神经网络——scan实现LSTM
+
 ## 使用细节
 
 ### saturate_cast

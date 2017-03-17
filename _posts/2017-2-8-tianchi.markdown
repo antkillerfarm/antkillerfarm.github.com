@@ -181,6 +181,26 @@ $$W(0)=\frac{W(-1)+\frac{W(-2)+W(-3)}{2}}{2}$$
 
 采用类似双十一效应的刷榜方式，实际上还可以进一步提高结果，最终我的成绩定格在0.8137。但是，这种方式显然不是我想要的，我不想再这样在没有理论依据的情况下，单纯用凑数字的方式提高成绩，于是我的参赛之旅也就终结于此了（2.21）。况且这种方式也有其极限，我估计其极限最多也就是0.809。想获得更好的成绩，一定要有其他更好的思路才行。
 
+## 比赛结果及代码
+
+最终结果：第1赛季排名：91 第2赛季排名：166
+
+源代码：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/tc/tc0215.py
+
+创建数据库的SQL语句：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/helloworld/mysql/tc.sql
+
+导入数据的SQL语句：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/helloworld/mysql/import.sql
+
+其他相关中间结果表的SQL语句：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/helloworld/mysql/tc_view.sql
+
 # Storm
 
 Storm是一个大数据领域的实时计算框架。
