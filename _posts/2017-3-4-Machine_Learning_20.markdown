@@ -68,6 +68,30 @@ https://www.zhihu.com/question/20136144
 
 条件随机场(Conditional Random Field)由Lafferty等人于2001年提出，结合了最大熵模型和隐马尔可夫模型的特点，是一种无向图模型，近年来在分词、词性标注和命名实体识别等序列标注任务中取得了很好的效果。
 
+# 概率图模型
+
+probabilistic graphical model（PGM）最早由Judea Pearl发明。
+
+这方面比较重要的文章和书籍有：
+
+http://www.cis.upenn.edu/~mkearns/papers/barbados/jordan-tut.pdf
+
+Michael Irwin Jordan著。
+
+《Probabilistic Graphical Models: Principles and Techniques》，Daphne Koller，Nir Friedman著（2009年）。
+
+>注：Judea Pearl，1936年生，以色列-美国计算机科学家，UCLA教授。2011年获得图灵奖。
+
+>Michael Irwin Jordan，1956年生，美国计算机科学家。UCSD博士，先后执教于MIT和UCB。吴恩达的导师。
+
+>Daphne Koller，女，1968年生，以色列-美国计算机科学家。斯坦福大学博士及教授。和吴恩达共同创立在线教育平台Coursera。
+
+>Nir Friedman，1967年生，以色列计算机科学家。斯坦福大学博士，耶路撒冷希伯来大学教授。
+
+http://www.cs.cmu.edu/~epxing/Class/10708-14/lectures/
+
+CMU的邢波（Eric Xing）所开的概率图模型课程。
+
 # 机器学习相关术语表
 
 | 缩写 | 全称 | 中文名 | 备注 |

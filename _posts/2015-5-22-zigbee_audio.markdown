@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Zigbee音频, 6LowPAN, IEEE 802, Ganglia, Parquet, Velocity, ActiveMQ, Dubbo
+title:  Zigbee音频, 6LowPAN, IEEE 802, Ganglia, Parquet, Velocity, ActiveMQ, Dubbo, Redis
 category: technology 
 ---
 
@@ -306,4 +306,15 @@ http://dubbo.io/
 
 官网的用户指南写的不错，非常值得一看。
 
+# Redis
+
+REmote DIctionary Server(Redis) 是一个由Salvatore Sanfilippo写的key-value存储系统。
+
+http://www.runoob.com/redis/redis-tutorial.html
+
+Redis教程
+
+http://www.yiibai.com/redis/
+
+另一个Redis教程
 

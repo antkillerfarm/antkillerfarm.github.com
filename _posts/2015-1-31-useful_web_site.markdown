@@ -111,6 +111,10 @@ https://github.com/mozillazg/python-pinyin
 
 python版的汉字转拼音软件
 
+http://blog.csdn.net/gzh0222/article/details/8540604
+
+lvs、haproxy、nginx 负载均衡的比较分析
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

@@ -342,6 +342,10 @@ https://zhuanlan.zhihu.com/p/25821063
 
 循环神经网络——scan实现LSTM
 
+http://www.sogou.com/labs/
+
+搜狗实验室的网站可以下载很多NLP和图片识别方面的数据
+
 ## 使用细节
 
 ### saturate_cast

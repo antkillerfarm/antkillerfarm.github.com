@@ -40,6 +40,26 @@ KNN方法虽然从原理上也依赖于极限定理，但在类别决策时，�
 
 一个常见的应用是：使用K-means对训练样本进行聚类，然后使用KNN对预测样本进行分类。
 
+## KNN在时间序列分析上的应用
+
+KNN虽然主要是个分类算法，但通过构建特殊的模型，亦可应用于其他领域。其中，KNN在时间序列分析上的应用，就是一个很有技巧性的事情。
+
+假设已知时间序列$$X:\{x_1,\dots,x_n\}$$，来预测$$x_{n+1}$$。
+
+首先，我们选取$$x_{n+1}$$之前的最近m个序列值，作为预测值的特征向量$$X_{m\{n+1\}}$$。这里的m一般根据时间序列的周期来选择，比如商场客流的周期一般为一周。
+
+$$X_{m\{n+1\}}$$和预测值$$x_{n+1}$$组成了扩展向量$$[X_{m\{n+1\}},x_{n+1}]$$。为了表明$$x_{n+1}$$是预测值的事实，上述向量又写作$$[X_{m\{n+1\}},y_{n+1}]$$。
+
+依此类推，对于X中的任意$$x_i$$，我们都可以构建扩展向量$$[X_{m\{i\}},y_{i}]$$。即我们假定，$$x_i$$的值由它之前的m个序列值唯一确定。显然，由于是已经发生了的事件，这里的$$y_{i}$$都是已知的。
+
+在X中，这样的m维特征向量共有$$n-m$$个。使用KNN算法，获得与$$X_{m\{n+1\}}$$最邻近的k个特征向量$$X_{m\{i\}}$$。然后根据这k个特征向量的时间和相似度，对k个$$y_{i}$$值进行加权平均，以获得最终的预测值$$y_{n+1}$$。
+
+参考：
+
+http://www.doc88.com/p-1416660147532.html
+
+KNN算法在股票预测中的应用
+
 # word2vec
 
 word2vec是Google于2013年开源推出的一个用于获取word vector的工具包。作者是Tomas Mikolov。
@@ -82,30 +102,6 @@ http://www.gaussianprocess.org/gpml/chapters/RW.pdf
 http://people.cs.umass.edu/~wallach/talks/gp_intro.pdf
 
 http://wenku.baidu.com/view/72f80113915f804d2b16c173.html
-
-# 概率图模型
-
-probabilistic graphical model（PGM）最早由Judea Pearl发明。
-
-这方面比较重要的文章和书籍有：
-
-http://www.cis.upenn.edu/~mkearns/papers/barbados/jordan-tut.pdf
-
-Michael Irwin Jordan著。
-
-《Probabilistic Graphical Models: Principles and Techniques》，Daphne Koller，Nir Friedman著（2009年）。
-
->注：Judea Pearl，1936年生，以色列-美国计算机科学家，UCLA教授。2011年获得图灵奖。
-
->Michael Irwin Jordan，1956年生，美国计算机科学家。UCSD博士，先后执教于MIT和UCB。吴恩达的导师。
-
->Daphne Koller，女，1968年生，以色列-美国计算机科学家。斯坦福大学博士及教授。和吴恩达共同创立在线教育平台Coursera。
-
->Nir Friedman，1967年生，以色列计算机科学家。斯坦福大学博士，耶路撒冷希伯来大学教授。
-
-http://www.cs.cmu.edu/~epxing/Class/10708-14/lectures/
-
-CMU的邢波（Eric Xing）所开的概率图模型课程。
 
 # Probabilistic Robotics
 

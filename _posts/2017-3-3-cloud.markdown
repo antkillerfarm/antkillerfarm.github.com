@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  云计算论文集, Spark, Elasticsearch, Redis
+title:  云计算论文集, Spark, Elasticsearch
 category: technology 
 ---
 
@@ -12,7 +12,7 @@ category: technology
 
 《Towards Robust Distributed Systems》（2000）
 
->作者：Eric Brewer是University of California, Berkeley的计算机科学教授，在Google担任基础设施方面的VP。他的研究兴趣包括云计算、可伸缩的服务器、传感器网络，还有适合发展中地区应用的技术。他还帮助建立了美国联邦政府的门户网站USA.gov。Brewer从MIT获得电子工程和计算机科学的博士学位。他是National Academy of Engineering的院士。联系方式：brewer@cs.berkeley.edu
+>作者：Eric Brewer是University of California, Berkeley的计算机科学教授，在Google担任基础设施方面的VP。他的研究兴趣包括云计算、可伸缩的服务器、传感器网络，还有适合发展中地区应用的技术。他还帮助建立了美国联邦政府的门户网站USA.gov。Brewer从MIT获得电子工程和计算机科学的博士学位。他是National Academy of Engineering的院士。
 
 ## GFS
 
@@ -410,17 +410,4 @@ http://www.cnblogs.com/buzzlight/p/logstash_elasticsearch_kibana_log.html
 http://blog.csdn.net/longxibendi/article/details/35237543/
 
 ELK入门学习资源索引
-
-# Redis
-
-REmote DIctionary Server(Redis) 是一个由Salvatore Sanfilippo写的key-value存储系统。
-
-http://www.runoob.com/redis/redis-tutorial.html
-
-Redis教程
-
-http://www.yiibai.com/redis/
-
-另一个Redis教程
-
 
