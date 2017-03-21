@@ -115,6 +115,10 @@ http://blog.csdn.net/gzh0222/article/details/8540604
 
 lvs、haproxy、nginx 负载均衡的比较分析
 
+http://chongzhuang.windowszj.com/
+
+系统之家一键重装
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

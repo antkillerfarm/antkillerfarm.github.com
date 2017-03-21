@@ -116,7 +116,7 @@ cmd
 
 现将安装步骤罗列如下：
 
-1.在https://msys2.github.io/，下载安装程序，并按照网页提示，更新pacman。
+1.在http://www.msys2.org/，下载安装程序，并按照网页提示，更新pacman。
 
 2.使用pacman下载必要的开发包。
 
@@ -127,6 +127,12 @@ cmd
 `pacman -Syu`: 更新已安装的软件包。
 
 MSYS2提供的环境除了安装友好，便于更新之外，对bash的支持也优于之前的版本。现在已经不需要单独为Windows平台提供特殊的makefile文件了。
+
+还可在如下网址查询packages：
+
+https://github.com/Alexpux/MINGW-packages
+
+https://github.com/Alexpux/MSYS2-packages
 
 # GTK & OpenGL
 

@@ -157,8 +157,6 @@ http://outofmemory.cn/code-snippet/3659/Solr-configuration-zhongwen-fenci-qi
 
 Solr配置中文分词器
 
-http://opennlp.apache.org/
-
 http://www.importnew.com/12707.html
 
 全文检索引擎Solr系列—–全文检索基本原理

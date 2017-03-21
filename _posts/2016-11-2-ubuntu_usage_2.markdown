@@ -201,6 +201,10 @@ http://flatpak.org/
 
 http://snapcraft.io/
 
+# Putty
+
+putty在ubuntu平台的复制粘贴，依赖于鼠标中键。
+
 # Fedora
 
 Fedora作为主要的Linux发行版之一，我虽然用的不多，但实际上这却是我最早接触的Linux发行版。后来换用Ubuntu，很大的原因是因为：这是Google为Android选择的开发平台。

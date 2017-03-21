@@ -136,7 +136,7 @@ http://ccl.pku.edu.cn/alcourse/nlp/
 
 http://ccl.pku.edu.cn/alcourse/nlp/LectureNotes/Natural%20Language%20Processing%20with%20Python.pdf
 
-《Natural Language Processing with Python》，Steven Bird、Ewan Klein、Edward Loper著。
+《Natural Language Processing with Python》，Steven Bird、Ewan Klein、Edward Loper著。这本书的作者们创建了著名的NLTK工具库。
 
 >注：Steven Bird，爱丁堡大学博士，墨尔本大学副教授。   
 >http://www.stevenbird.net/about.html
@@ -155,7 +155,23 @@ http://www.shareditor.com/bloglistbytag/?tagname=%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%
 
 实战课程：自己动手做聊天机器人
 
-## 
+## 工具
+
+### Natural Language Toolkit(NLTK)
+
+http://www.nltk.org/
+
+### OpenNLP
+
+http://opennlp.apache.org/
+
+### FudanNLP
+
+https://github.com/FudanNLP/fnlp
+
+### Stanford CoreNLP
+
+http://stanfordnlp.github.io/CoreNLP/
 
 # Reinforcement Learning and Control
 
