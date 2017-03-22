@@ -350,6 +350,10 @@ https://www.zhihu.com/question/41233373
 
 如果你是面试官，你怎么去判断一个面试者的深度学习水平？
 
+http://www.cnblogs.com/neopenx
+
+合肥工业大学某博士生的blog
+
 ## 使用细节
 
 ### saturate_cast

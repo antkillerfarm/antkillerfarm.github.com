@@ -196,6 +196,100 @@ GET msg/true_msg/_search
 
 上面的查询有个问题，只要出现“购物车”三个字中任何一个字的message，都会被选中。
 
+全字匹配：
+
+
+```
+GET msg/true_msg/_search
+{
+  "query": {
+    "multi_match": {
+      "query": "购物车",
+      "type": "phrase",
+      "slop": 0,
+      "fields": ["message"]
+    } 
+  },
+  "highlight": {  
+    "pre_tags": [  
+      "<b>"  
+    ],  
+    "post_tags": [  
+      "</b>"  
+    ],  
+    "fragment_size": 100,  
+    "number_of_fragments": 2,  
+    "fields": {  
+      "message": {}  
+    }
+  }
+}
+```
+
+上面的例子同时展示了highlight的用法。
+
+## ES中文分词
+
+ES的中文分词功能，以插件的形式提供。主要包括官方维护的Smartcn和Medcl维护的IK、Mmseg。
+
+### Smartcn
+
+安装方法：
+
+`sudo bin/elasticsearch-plugin install analysis-smartcn`
+
+这个例子同时展示了ES在线安装插件的方法。插件安装成功之后，需要重启ES，使之生效。
+
+验证：
+
+```
+POST msg/true_msg/_analyze
+{
+  "analyzer": "smartcn",
+  "text": "我爱北京天安门"
+}
+```
+
+### IK
+
+官网：
+
+https://github.com/medcl/elasticsearch-analysis-ik
+
+IK包含了两个Analyzer:ik_smart,ik_max_word，两个Tokenizer:ik_smart,ik_max_word。
+
+ik_max_word: 会将文本做最细粒度的拆分，比如会将“中华人民共和国国歌”拆分为“中华人民共和国,中华人民,中华,华人,人民共和国,人民,人,民,共和国,共和,和,国国,国歌”，会穷尽各种可能的组合；
+
+ik_smart: 会做最粗粒度的拆分，比如会将“中华人民共和国国歌”拆分为“中华人民共和国,国歌”。
+
+### Mmseg
+
+官网：
+
+https://github.com/medcl/elasticsearch-analysis-mmseg
+
+这里官网的代码有些问题，需要修改。向src/main/assemblies/plugin.xml添加：
+
+`<id>releases</id>`
+
+这个插件包含：
+
+analyzers: mmseg_maxword,mmseg_complex,mmseg_simple
+
+tokenizers: mmseg_maxword,mmseg_complex,mmseg_simple
+
+token_filter: cut_letter_digit
+
+### 其他
+
+汉字/拼音转换：
+
+https://github.com/medcl/elasticsearch-analysis-pinyin
+
+简/繁转换：
+
+https://github.com/medcl/elasticsearch-analysis-stconvert
+
 ## ELK的配置部署
 
 ### Elasticsearch
@@ -237,10 +331,10 @@ jre/lib/security/java.policy文件中新增
 修改/etc/security/limits.conf：（需要root权限）
 
 ```
-es               soft    nproc          65536
-es               hard    nproc          65536
-es               soft    nofile         65536
-es               hard    nofile         65536
+es  soft    nproc     65536
+es  hard    nproc     65536
+es  soft    nofile    65536
+es  hard    nofile    65536
 ```
 
 重新登录es用户后，修改生效。
