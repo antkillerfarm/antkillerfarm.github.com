@@ -325,6 +325,8 @@ $$
 
 # Blog维护日志
 
+2017.3.22 评论系统切换到https://commentit.io。
+
 2017.3.4 文章数达到100篇。
 
 2016.11.3 文章分为Technology、Theory、Essay三类。
