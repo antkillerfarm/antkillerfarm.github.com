@@ -25,6 +25,8 @@ layout: default
   })();
 </script>
 
+<h2>{{ page.path }}</h2>
+
 {%if page.comments %}
   {% assign sorted_comments = (page.comments | sort: 'date') %}
 {% endif %}
