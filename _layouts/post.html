@@ -7,45 +7,13 @@ layout: default
 <div class='body'>{{ content }}</div>
 </div>
 
-<noscript>Please enable JavaScript to view the comment form powered by <a href="https://commentit.io/">Comm(ent|it)</a></noscript>
-<div id="commentit"></div>
-<script type="text/javascript">
-  /** CONFIGURATION VARIABLES **/
-  var commentitUsername = 'antkillerfarm';
-  var commentitRepo = 'antkillerfarm/antkillerfarm.github.io';
-  var commentitPath = '{{ page.path }}';
-
-  /** DON'T EDIT FOLLOWING LINES **/
-  (function() {
-      var commentit = document.createElement('script');
-      commentit.type = 'text/javascript';
-      commentit.async = true;
-      commentit.src = 'https://commentit.io/static/embed/dist/commentit.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(commentit);
-  })();
-</script>
-
-<h2>{{ page.path }}</h2>
-
-{%if page.comments %}
-  {% assign sorted_comments = (page.comments | sort: 'date') %}
-{% endif %}
-{% for c in sorted_comments %}
-  <div class="media">
-    <div class="media-left">
-      <img src="{{ c.author.picture }}" alt="{{ c.author.displayName}}" height="73" width="73">
+<style>.gc-comments {font:12px/1.5 Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}</style>
+<script src="/css/gc.js"></script>
+<div class="gc-comments" data-repos="antkillerfarm/antkillerfarm.github.com" data-issues="1" >
+    <div class="gc-comments-info">
+        想在此留下评论，请访问 <a target="_blank" href="issues_link">issues_link</a> 提交评论
     </div>
-    <div class="media-body">
-      <p class="text-muted">
-        <a href="{{ c.author.url }}">{{ c.author.displayName }}</a>
-        on {{ c.date | date_to_string }}
-      </p>
-      <p>{{ c.content | newline_to_br }}</p>
-    </div>
-  </div>
-{% else %}
-  There are no comments on this post.
-{% endfor %}
+</div>
 
 <div id="related">
   <h2>Related Posts</h2>
