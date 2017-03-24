@@ -34,6 +34,10 @@ git://git.kernel.org/pub/scm/linux/kernel/git/tglx/history.git
 
 最后再吐槽一下git，这么大的库，居然不支持断点续传，也不支持object的原子下载。。。相比之下，svn虽然也不能断点续传，但是这次下载一个文件，下次就不用再下载了。考虑到代码文件也不可能太大，这样也就基本够用了。
 
+2017.3
+
+提交数量至662282。
+
 # 从git log看git的发展史
 
 Linux源代码由于历史久远，最初的版本历史已不可考证，至少无法从git log考证。但git本身的历史，则是一笔笔的都记录在git log中。

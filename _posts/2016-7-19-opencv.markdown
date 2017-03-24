@@ -354,6 +354,10 @@ http://www.cnblogs.com/neopenx
 
 合肥工业大学某博士生的blog
 
+http://www.hackcv.com/index.php/archives/104/
+
+CNN的直观解释
+
 ## 使用细节
 
 ### saturate_cast
@@ -416,5 +420,5 @@ Computer Vision
 
 http://www.cnblogs.com/wei-li/archive/2012/03/24/2406404.html
 
-网络公开课资源 ——关注CS/AI/Math
+网络公开课资源——关注CS/AI/Math
 

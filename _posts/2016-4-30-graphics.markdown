@@ -62,10 +62,6 @@ $$g(i,j)=\sum_{k,l}f(i+k,j+l)h(k,l)$$
 
 此外，h矩阵还有是否归一化的属性。这里将计算矩阵中所有元素之和的操作，记作$$SUM(h)$$.则当$$SUM(h)=1$$时，h为归一化核。$$\frac{h}{SUM(h)}$$，称作核的归一化。
 
-从相关算子的定义可以看出，它是向量内积运算的扩展。我们一般使用$$a\cdot b$$或者$$\langle a,b\rangle$$表示向量的内积运算。即：
-
-$$\langle a,b\rangle=a_0b_0+a_1b_1+\dots+a_nb_n$$
-
 # 卷积算子
 
 卷积（Convolution)算子

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 640 480">
+ <title>comparison convolution correlation</title>
+ <desc>Visual comparison of convolution, cross-correlation and autocorrelation of two signals by CMG Lee.</desc>
+ <style type="text/css">
+  text { fill:#000000; }
+  #graph_gg,#graph_gf,#graph_ff { stroke:#000000; }
+  #graph_f  { stroke:#0000ff; }
+  #graph_g  { stroke:#ff0000; }
+  .point_1  { stroke:#cc9900; fill:#cc9900; }
+  .point_2  { stroke:#00cc00; fill:#00cc00; }
+  .point_3  { stroke:#0099cc; fill:#0099cc; }
+  #pointers { stroke:#999999; fill:#999999; }
+ </style>
+ <defs>
+  <path id="arrowhead" d="M -3,2 L 0,-1 L 3,2" stroke="none"/>
+  <g id="arrow_1" transform="scale(2)"><path d="M 0,0 V  -5"/><use xlink:href="#arrowhead" transform="translate(0, -5)"/><use xlink:href="#arrowhead" transform="scale(-1)"/></g>
+  <g id="arrow_3" transform="scale(2)"><path d="M 0,0 V -15"/><use xlink:href="#arrowhead" transform="translate(0,-15)"/><use xlink:href="#arrowhead" transform="scale(-1)"/></g>
+  <g id="arrow_4" transform="scale(2)"><path d="M 0,0 V -20"/><use xlink:href="#arrowhead" transform="translate(0,-20)"/><use xlink:href="#arrowhead" transform="scale(-1)"/></g>
+  <g id="arrow_8" transform="scale(2)"><path d="M 0,0 V -40"/><use xlink:href="#arrowhead" transform="translate(0,-40)"/><use xlink:href="#arrowhead" transform="scale(-1)"/></g>
+  <g id="pointers" stroke-width="1">
+   <g transform="translate(-40,0)">
+    <path d="M 0 5 V 35"/>
+    <use xlink:href="#arrowhead" transform="translate(0,5)"/>
+   </g>
+   <g transform="translate(-20,0)">
+    <path d="M 0 5 V 65"/>
+    <use xlink:href="#arrowhead" transform="translate(0,5)"/>
+   </g>
+   <g>
+    <path d="M 0 5 V 75"/>
+    <use xlink:href="#arrowhead" transform="translate(0,5)"/>
+   </g>
+   <g transform="translate(20,0)">
+    <path d="M 0 5 V 65"/>
+    <use xlink:href="#arrowhead" transform="translate(0,5)"/>
+   </g>
+   <g transform="translate(40,0)">
+    <path d="M 0 5 V 35"/>
+    <use xlink:href="#arrowhead" transform="translate(0,5)"/>
+   </g>
+  </g>
+  <path id="graph_f"  d="M -55,0 H -10 V -22 V -20 H 10 V 0 H 55"/>
+  <path id="graph_g"  d="M -55,0 H -10       V -20 L 10,0   H 55"/>
+  <path id="graph_gg" d="M -55,0 H -20 Q -10,  0 0,-20 Q 10,  0 20,0 H 55"/>
+  <path id="graph_gf" d="M -55,0 H -20 Q -10,  0 0,-20 Q 10,-20 20,0 H 55"/>
+  <path id="graph_ff" d="M -55,0 H -20 L         0,-40 L        20,0 H 55"/>
+  <use  id="graph_f_rev"     xlink:href="#graph_f"     transform="scale(-1,1)"/>
+  <use  id="graph_g_rev"     xlink:href="#graph_g"     transform="scale(-1,1)"/>
+  <use  id="graph_fg"        xlink:href="#graph_gf"    transform="scale(-1,1)"/>
+  <use  id="graph_big_f"     xlink:href="#graph_f"     transform="scale(2)"/>
+  <use  id="graph_big_g"     xlink:href="#graph_g"     transform="scale(2)"/>
+  <use  id="graph_big_f_rev" xlink:href="#graph_f_rev" transform="scale(2)"/>
+  <use  id="graph_big_g_rev" xlink:href="#graph_g_rev" transform="scale(2)"/>
+  <use  id="graph_big_fg"    xlink:href="#graph_fg"    transform="scale(2)"/>
+  <use  id="graph_big_gg"    xlink:href="#graph_gg"    transform="scale(2)"/>
+  <use  id="graph_big_gf"    xlink:href="#graph_gf"    transform="scale(2)"/>
+  <use  id="graph_big_ff"    xlink:href="#graph_ff"    transform="scale(2)"/>
+  <clipPath id="clip_graph_f"><use xlink:href="#graph_f"/></clipPath>
+  <clipPath id="clip_graph_g"><use xlink:href="#graph_g"/></clipPath>
+  <clipPath id="clip_point"><rect x="-35" y="-25"   width="70"  height="30"  /></clipPath>
+  <clipPath id="clip_set"  ><rect x="-95" y="-4999" width="190" height="9999"/></clipPath>
+ </defs>
+
+ <g font-family="Helvetica,Arial,sans-serif" font-size="24" text-anchor="middle" stroke-width="2" stroke-linejoin="round" fill="none">
+  <circle cx="0" cy="0" r="99999" fill="#ffffff"/>
+  <g transform="translate(100,23)" clip-path="url(#clip_set)">
+   <text x="0" y="0">Convolution</text>
+   <g transform="translate(0, 60)"><text x="-65" y="-20">f</text><use xlink:href="#graph_big_f"/></g>
+   <g transform="translate(0,110)"><text x="-65" y="-20">g</text><use xlink:href="#graph_big_g"/></g>
+   <g transform="translate(0,190)">
+    <text x="-65" y="-20">f&#8727;g</text><use xlink:href="#graph_big_fg"/>
+    <use xlink:href="#arrow_3" class="point_1" transform="translate(-20,0)"/>
+    <use xlink:href="#arrow_4" class="point_2" transform="translate(  0,0)"/>
+    <use xlink:href="#arrow_1" class="point_3" transform="translate( 20,0)"/>
+    <use xlink:href="#pointers"/>
+    <g transform="translate(-60,40)" clip-path="url(#clip_point)">
+     <use xlink:href="#graph_f"/>
+     <use xlink:href="#graph_g_rev" transform="translate(-20,0)"/>
+     <use xlink:href="#graph_f" stroke-opacity="0.5"/>
+    </g>
+    <g transform="translate(-45,70)" clip-path="url(#clip_point)">
+     <g clip-path="url(#clip_graph_f)"><use xlink:href="#graph_g_rev" class="point_1" transform="translate(-10,0)"/></g>
+     <use xlink:href="#graph_f"/>
+     <use xlink:href="#graph_g_rev" transform="translate(-10,0)"/>
+     <use xlink:href="#graph_f" stroke-opacity="0.5"/>
+    </g>
+    <g transform="translate(0,100)" clip-path="url(#clip_point)">
+     <use xlink:href="#graph_f"/>
+     <use xlink:href="#graph_g_rev" class="point_2"/>
+     <use xlink:href="#graph_f" stroke-opacity="0.5"/>
+    </g>
+    <g transform="translate(45,70)" clip-path="url(#clip_point)">
+     <g clip-path="url(#clip_graph_f)"><use xlink:href="#graph_g_rev" class="point_3" transform="translate(10,0)"/></g>
+     <use xlink:href="#graph_f"/>
+     <use xlink:href="#graph_g_rev" transform="translate(10,0)"/>
+     <use xlink:href="#graph_f" stroke-opacity="0.5"/>
+    </g>
+    <g transform="translate(60,40)" clip-path="url(#clip_point)">
+     <use xlink:href="#graph_f"/>
+     <use xlink:href="#graph_g_rev" transform="translate(20,0)"/>
+     <use xlink:href="#graph_f" stroke-opacity="0.5"/>
+    </g>
+   </g>
+   <g transform="translate(0,350)">
+    <text x="-65" y="-20">g&#8727;f</text><use xlink:href="#graph_big_fg"/>
+    <use xlink:href="#arrow_3" class="point_1" transform="translate(-20,0)"/>
+    <use xlink:href="#arrow_4" class="point_2" transform="translate(  0,0)"/>
+    <use xlink:href="#arrow_1" class="point_3" transform="translate( 20,0)"/>
+    <use xlink:href="#pointers"/>
+    <g transform="translate(-60,40)" clip-path="url(#clip_point)">
+     <use xlink:href="#graph_g"/>
+     <use xlink:href="#graph_f_rev" transform="translate(-20,0)"/>
+     <use xlink:href="#graph_g" stroke-opacity="0.5"/>
+    </g>
+    <g transform="translate(-45,70)" clip-path="url(#clip_point)">
+     <g clip-path="url(#clip_graph_g)"><use xlink:href="#graph_f_rev" class="point_1" transform="translate(-10,0)"/></g>
+     <use xlink:href="#graph_g"/>
+     <use xlink:href="#graph_f_rev" transform="translate(-10,0)"/>
+     <use xlink:href="#graph_g" stroke-opacity="0.5"/>
+    </g>
+    <g transform="translate(0,100)" clip-path="url(#clip_point)">
+     <use xlink:href="#graph_g" class="point_2"/>
+     <use xlink:href="#graph_f_rev"/>
+     <use xlink:href="#graph_g" stroke-opacity="0.5"/>
+    </g>
+    <g transform="translate(45,70)" clip-path="url(#clip_point)">
+     <g clip-path="url(#clip_graph_g)"><use xlink:href="#graph_f_rev" class="point_3" transform="translate(10,0)"/></g>
+     <use xlink:href="#graph_g"/>
+     <use xlink:href="#graph_f_rev" transform="translate(10,0)"/>
+     <use xlink:href="#graph_g" stroke-opacity="0.5"/>
+    </g>
+    <g transform="translate(60,40)" clip-path="url(#clip_point)">
+     <use xlink:href="#graph_g"/>
+     <use xlink:href="#graph_f_rev" transform="translate(20,0)"/>
+     <use xlink:href="#graph_g" stroke-opacity="0.5"/>
+    </g>
+   </g>
+  </g>
+
+  <g transform="translate(320,23)" clip-path="url(#clip_set)">
+   <text x="0" y="0">Cross-correlation</text>
+   <g transform="translate(0, 60)"><text x="-65" y="-20">f</text><use xlink:href="#graph_big_f"/></g>
+   <g transform="translate(0,110)"><text x="-65" y="-20">g</text><use xlink:href="#graph_big_g"/></g>
+   <g transform="translate(0,190)">
+    <text x="-65" y="-20">g&#8902;f</text><use xlink:href="#graph_big_gf"/>
+    <use xlink:href="#arrow_1" class="point_1" transform="translate(-20,0)"/>
+    <use xlink:href="#arrow_4" class="point_2" transform="translate(  0,0)"/>
+    <use xlink:href="#arrow_3" class="point_3" transform="translate( 20,0)"/>
+    <use xlink:href="#pointers"/>
+    <g transform="translate(-60,40)" clip-path="url(#clip_point)">
+     <use xlink:href="#graph_f"/>
+     <use xlink:href="#graph_g" transform="translate(-20,0)"/>
+     <use xlink:href="#graph_f" stroke-opacity="0.5"/>
+    </g>
+    <g transform="translate(-45,70)" clip-path="url(#clip_point)">
+     <g clip-path="url(#clip_graph_f)"><use xlink:href="#graph_g" class="point_1" transform="translate(-10,0)"/></g>
+     <use xlink:href="#graph_f"/>
+     <use xlink:href="#graph_g" transform="translate(-10,0)"/>
+     <use xlink:href="#graph_f" stroke-opacity="0.5"/>
+    </g>
+    <g transform="translate(0,100)" clip-path="url(#clip_point)">
+     <use xlink:href="#graph_f"/>
+     <use xlink:href="#graph_g" class="point_2"/>
+     <use xlink:href="#graph_f" stroke-opacity="0.5"/>
+    </g>
+    <g transform="translate(45,70)" clip-path="url(#clip_point)">
+     <g clip-path="url(#clip_graph_f)"><use xlink:href="#graph_g" class="point_3" transform="translate(10,0)"/></g>
+     <use xlink:href="#graph_f"/>
+     <use xlink:href="#graph_g" transform="translate(10,0)"/>
+     <use xlink:href="#graph_f" stroke-opacity="0.5"/>
+    </g>
+    <g transform="translate(60,40)" clip-path="url(#clip_point)">
+     <use xlink:href="#graph_f"/>
+     <use xlink:href="#graph_g" transform="translate(20,0)"/>
+     <use xlink:href="#graph_f" stroke-opacity="0.5"/>
+    </g>
+   </g>
+   <g transform="translate(0,350)">
+    <text x="-65" y="-20">f&#8902;g</text><use xlink:href="#graph_big_fg"/>
+    <use xlink:href="#arrow_3" class="point_1" transform="translate(-20,0)"/>
+    <use xlink:href="#arrow_4" class="point_2" transform="translate(  0,0)"/>
+    <use xlink:href="#arrow_1" class="point_3" transform="translate( 20,0)"/>
+    <use xlink:href="#pointers"/>
+    <g transform="translate(-60,40)" clip-path="url(#clip_point)">
+     <use xlink:href="#graph_g"/>
+     <use xlink:href="#graph_f" transform="translate(-20,0)"/>
+     <use xlink:href="#graph_g" stroke-opacity="0.5"/>
+    </g>
+    <g transform="translate(-45,70)" clip-path="url(#clip_point)">
+     <g clip-path="url(#clip_graph_g)"><use xlink:href="#graph_f" class="point_1" transform="translate(-10,0)"/></g>
+     <use xlink:href="#graph_g"/>
+     <use xlink:href="#graph_f" transform="translate(-10,0)"/>
+     <use xlink:href="#graph_g" stroke-opacity="0.5"/>
+    </g>
+    <g transform="translate(0,100)" clip-path="url(#clip_point)">
+     <use xlink:href="#graph_g" class="point_2"/>
+     <use xlink:href="#graph_f"/>
+     <use xlink:href="#graph_g" stroke-opacity="0.5"/>
+    </g>
+    <g transform="translate(45,70)" clip-path="url(#clip_point)">
+     <g clip-path="url(#clip_graph_g)"><use xlink:href="#graph_f" class="point_3" transform="translate(10,0)"/></g>
+     <use xlink:href="#graph_g"/>
+     <use xlink:href="#graph_f" transform="translate(10,0)"/>
+     <use xlink:href="#graph_g" stroke-opacity="0.5"/>
+    </g>
+    <g transform="translate(60,40)" clip-path="url(#clip_point)">
+     <use xlink:href="#graph_g"/>
+     <use xlink:href="#graph_f" transform="translate(20,0)"/>
+     <use xlink:href="#graph_g" stroke-opacity="0.5"/>
+    </g>
+   </g>
+  </g>
+
+  <g transform="translate(540,23)" clip-path="url(#clip_set)">
+   <text x="0" y="0">Autocorrelation</text>
+   <g transform="translate(0, 60)"><text x="-65" y="-20">f</text><use xlink:href="#graph_big_f"/></g>
+   <g transform="translate(0,110)"><text x="-65" y="-20">g</text><use xlink:href="#graph_big_g"/></g>
+   <g transform="translate(0,190)">
+    <text x="-65" y="-20">f&#8902;f</text><use xlink:href="#graph_big_ff"/>
+    <use xlink:href="#arrow_4" class="point_1" transform="translate(-20,0)"/>
+    <use xlink:href="#arrow_8" class="point_2" transform="translate(  0,0)"/>
+    <use xlink:href="#arrow_4" class="point_3" transform="translate( 20,0)"/>
+    <use xlink:href="#pointers"/>
+    <g transform="translate(-60,40)" clip-path="url(#clip_point)">
+     <use xlink:href="#graph_f" transform="translate(-20,0)"/>
+     <use xlink:href="#graph_f" stroke-opacity="0.5"/>
+    </g>
+    <g transform="translate(-45,70)" clip-path="url(#clip_point)">
+     <g clip-path="url(#clip_graph_f)"><use xlink:href="#graph_f" class="point_1" transform="translate(-10,0)"/></g>
+     <use xlink:href="#graph_f" transform="translate(-10,0)"/>
+     <use xlink:href="#graph_f" stroke-opacity="0.5"/>
+    </g>
+    <g transform="translate(0,100)" clip-path="url(#clip_point)">
+     <use xlink:href="#graph_f" class="point_2"/>
+     <use xlink:href="#graph_f" stroke-opacity="0.5"/>
+    </g>
+    <g transform="translate(45,70)" clip-path="url(#clip_point)">
+     <g clip-path="url(#clip_graph_f)"><use xlink:href="#graph_f" class="point_3" transform="translate(10,0)"/></g>
+     <use xlink:href="#graph_f" transform="translate(10,0)"/>
+     <use xlink:href="#graph_f" stroke-opacity="0.5"/>
+    </g>
+    <g transform="translate(60,40)" clip-path="url(#clip_point)">
+     <use xlink:href="#graph_f" transform="translate(20,0)"/>
+     <use xlink:href="#graph_f" stroke-opacity="0.5"/>
+    </g>
+   </g>
+   <g transform="translate(0,350)">
+    <text x="-65" y="-20">g&#8902;g</text><use xlink:href="#graph_big_gg"/>
+    <use xlink:href="#arrow_1" class="point_1" transform="translate(-20,0)"/>
+    <use xlink:href="#arrow_4" class="point_2" transform="translate(  0,0)"/>
+    <use xlink:href="#arrow_1" class="point_3" transform="translate( 20,0)"/>
+    <use xlink:href="#pointers"/>
+    <g transform="translate(-60,40)" clip-path="url(#clip_point)">
+     <use xlink:href="#graph_g" transform="translate(-20,0)"/>
+     <use xlink:href="#graph_g" stroke-opacity="0.5"/>
+    </g>
+    <g transform="translate(-45,70)" clip-path="url(#clip_point)">
+     <g clip-path="url(#clip_graph_g)"><use xlink:href="#graph_g" class="point_1" transform="translate(-10,0)"/></g>
+     <use xlink:href="#graph_g" transform="translate(-10,0)"/>
+     <use xlink:href="#graph_g" stroke-opacity="0.5"/>
+    </g>
+    <g transform="translate(0,100)" clip-path="url(#clip_point)">
+     <use xlink:href="#graph_g" class="point_2"/>
+     <use xlink:href="#graph_g" stroke-opacity="0.5"/>
+    </g>
+    <g transform="translate(45,70)" clip-path="url(#clip_point)">
+     <g clip-path="url(#clip_graph_g)"><use xlink:href="#graph_g" class="point_3" transform="translate(10,0)"/></g>
+     <use xlink:href="#graph_g" transform="translate(10,0)"/>
+     <use xlink:href="#graph_g" stroke-opacity="0.5"/>
+    </g>
+    <g transform="translate(60,40)" clip-path="url(#clip_point)">
+     <use xlink:href="#graph_g" transform="translate(20,0)"/>
+     <use xlink:href="#graph_g" stroke-opacity="0.5"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

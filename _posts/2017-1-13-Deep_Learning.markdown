@@ -20,7 +20,7 @@ Deep Learning圈子的主要人物：
 
 ![](/images/article/DL_NB.png)
 
->注：Yann LeCun，中文名燕乐存，1960年生，法国科学家。Pierre and Marie Curie University博士。Geoffrey Hinton是他博士后时代的导师。CNN的发明人。纽约大学教授，Facebook AI研究所主任。
+>注：Yann LeCun，1960年生，法国科学家。Pierre and Marie Curie University博士。Geoffrey Hinton是他博士后时代的导师。CNN的发明人。纽约大学教授，Facebook AI研究所主任。由于他的姓名发音非常东方化，因此被网友起了很多中文名如燕乐存、杨乐康等。2017.3，Yann访华期间正式公布中文名：杨立昆。
 
 >Léon Bottou，法国科学家，随机梯度下降算法的发明人。
 
@@ -51,14 +51,6 @@ MP神经元模型如下图所示：
 $$y_j=\sum _{i=1}^nw_{ij}x_i-\theta_j$$
 
 上式其实就是《机器学习（一）》中提到的逻辑回归。
-
-除了阶跃函数和Sigmod函数之外，常用的神经元激活函数，还有双曲正切函数：
-
-$$f(z)=\tanh(x)=\frac{\sinh(x)}{\cosh(x)}=\frac{e^x-e^{-x}}{e^x+e^{-x}}$$
-
-其导数为：
-
-$$f'(z)=1-(f(z))^2$$
 
 生物神经元和MP神经元模型的对应关系如下表：
 
@@ -118,11 +110,45 @@ BP算法的推导过程教材已经写的很好了，这里只补充一点：
 
 如上图所示，sigmoid函数不是线性的，一个小的输出值的改变，对应了比较大的输入值改变。换句话说，就是输出值的梯度较大，而输入值的梯度较小。而梯度在基于梯度下降的优化问题中，是至关重要的。
 
-随着层数的增多，反向传递的残差梯度会越来越小，这样的现象，被称作梯度消失（Vanishing Gradient）。它导致的结果是，虽然靠近输出端的神经网络已经训练好了，但输入端的神经网络仍处于随机状态。
+随着层数的增多，反向传递的残差梯度会越来越小，这样的现象，被称作梯度消失（Vanishing Gradient）。它导致的结果是，虽然靠近输出端的神经网络已经训练好了，但输入端的神经网络仍处于随机状态。也就是说，靠近输入端的神经网络，有和没有都是一样的效果，完全体现不了深度神经网络的优越性。
+
+# 神经元激活函数
+
+## tanh函数
+
+除了阶跃函数和Sigmod函数之外，常用的神经元激活函数，还有双曲正切函数（tanh函数）：
+
+$$f(z)=\tanh(x)=\frac{\sinh(x)}{\cosh(x)}=\frac{e^x-e^{-x}}{e^x+e^{-x}}$$
+
+其导数为：
+
+$$f'(z)=1-(f(z))^2$$
+
+![](/images/article/sigmoid_vs_tanh.png)
+
+上图是sigmoid函数（蓝）和tanh函数（绿）的曲线图。
+
+![](/images/article/sigmoid_vs_tanh_2.png)
+
+上图是sigmoid函数（蓝）和tanh函数（绿）的梯度曲线图。从中可以看出tanh函数的梯度比sigmoid函数大，因此有利于残差梯度的反向传递，这是tanh函数优于sigmoid函数的地方。但是总的来说，由于两者曲线类似，因此tanh函数仍被归类于sigmoid函数族中。
+
+下图是一些sigmoid函数族的曲线图：
+
+![](/images/article/Gjl-t.svg)
+
+有关sigmoid函数和tanh函数的权威论述，参见Yann LeCun的论文：
+
+http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf
+
+## ReLU
+
+
 
 参考：
 
 http://www.cnblogs.com/neopenx/p/4453161.html
+
+https://en.wikipedia.org/wiki/Activation_function
 
 # NLP
 
@@ -219,23 +245,13 @@ berkeley的时间序列分析课程
 
 《应用时间序列分析》，王燕著。
 
-## 互相关函数和自相关函数
-
-Cross-correlation
-
-Autocorrelation
-
-$$(f \star g)(\tau)\ \stackrel{\mathrm{def}}{=} \int_{-\infty}^{\infty} f^*(t)\ g(t+\tau)\,dt,$$
-
-$$R_{ff}(\tau) = (f * g_{-1}(\overline{f}))(\tau) = \int_{-\infty}^\infty f(u+\tau)\overline{f}(u)\, {\rm d}u = \int_{-\infty}^\infty f(u)\overline{f}(u-\tau)\, {\rm d}u$$
-
-$$g_{-1}(f)(u)=f(-u)$$
-
 ## ARIMA
 
 ARIMA模型全称为差分自回归移动平均模型(Autoregressive Integrated Moving Average Model,简记ARIMA)，也叫求和自回归移动平均模型，是由George Edward Pelham Box和Gwilym Meirion Jenkins于70年代初提出的一著名时间序列预测方法，所以又称为box-jenkins模型、博克思-詹金斯法。
 
 >注：Gwilym Meirion Jenkins，1932～1982，英国统计学家。伦敦大学学院博士，兰卡斯特大学教授。
+
+教程：
 
 http://people.duke.edu/%7Ernau/411home.htm
 

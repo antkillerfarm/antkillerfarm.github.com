@@ -158,6 +158,10 @@ N增加到多大，才能把整个版本库下载完呢？
 
 如果使用TortoiseGit的话，下载完全之后，再git pull的话，就没有depth选项了。
 
+下载失败，会在本地留下一堆无用的临时文件，可用`git prune`清除之。
+
+日常使用中，git版本库更新次数越多，碎小文件越多。这时可用`git gc`将之打包成几个大文件。
+
 参考文章：
 
 http://blogs.atlassian.com/2014/05/handle-big-repositories-git/

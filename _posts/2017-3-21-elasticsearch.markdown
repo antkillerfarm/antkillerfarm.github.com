@@ -8,7 +8,7 @@ category: technology
 
 ## 概况
 
-Elasticsearch最早是由Shay Banon于2010年发起的开源项目，目前已经成立了公司专门运作该项目。
+Elasticsearch（简称ES）最早是由Shay Banon于2010年发起的开源项目，目前已经成立了公司专门运作该项目。
 
 官网：
 
@@ -183,7 +183,7 @@ GET msg/true_msg/_delete_by_query
 
 ### 关键字查询
 
-简单查询：
+**简单查询**：
 
 ```
 GET msg/true_msg/_search
@@ -196,7 +196,7 @@ GET msg/true_msg/_search
 
 上面的查询有个问题，只要出现“购物车”三个字中任何一个字的message，都会被选中。
 
-全字匹配：
+**全字匹配**
 
 
 ```
@@ -227,6 +227,48 @@ GET msg/true_msg/_search
 ```
 
 上面的例子同时展示了highlight的用法。
+
+**统计词频**
+
+```
+GET twitter/tweet/5/_termvectors?pretty=true
+{
+  "fields" : ["text"],
+  "offsets" : true,
+  "payloads" : true,
+  "positions" : true,
+  "term_statistics" : true,
+  "field_statistics" : true
+}
+```
+
+统计结果包括Field统计和Term统计两类。
+
+**Field统计**：
+
+doc_count：doc的数量，这里的doc通常对应Logstash导入的一条记录。
+
+sum_ttf：所有doc中包含的词的总和。
+
+sum_doc_freq：所有doc中包含的独立词的总和。
+
+例如如下语句：
+
+`twitter test test test`
+
+ttf统计中认为这是4个词，而doc_freq中认为这是2个词，因为test重复出现了3次，这里只能算作1个词。
+
+**Term统计**：
+
+term_freq：该词在本doc中出现的次数。
+
+ttf：该词在所有doc中出现的次数。
+
+doc_freq：该词在所有doc中独立出现的次数。
+
+可见_termvectors的查询虽然针对的是某个文件，但返回的结果中，却包含了全局的统计数据。
+
+>注：这里的全局，严格来说只到分片一级。当index比较大的时候，往往数据会保存到多个分片中。这样的话，不同doc所对应的全局统计结果，往往会有所不同。可以通过设置，实现真正的全局统计，但一般无此必要。
 
 ## ES中文分词
 
@@ -289,6 +331,33 @@ https://github.com/medcl/elasticsearch-analysis-pinyin
 简/繁转换：
 
 https://github.com/medcl/elasticsearch-analysis-stconvert
+
+### Mapping
+
+```
+PUT knowledge_lib2
+{
+  "mappings": {
+    "question2": {
+      "properties": { 
+        "ShortCutCode":    { "type": "text"  }, 
+        "ShortCutID":     { "type": "text" , "analyzer": "ik_smart" }, 
+        "ShortCutType":      { "type": "text"}  
+      }
+    }
+  }
+}
+```
+
+参考：
+
+http://www.cnblogs.com/eggTwo/p/4390620.html
+
+ElasticSearch系列学习
+
+http://blog.csdn.net/lvhong84/article/details/23936697
+
+elasticsearch中的mapping简介
 
 ## ELK的配置部署
 
@@ -356,6 +425,10 @@ es  hard    nofile    65536
 参考：
 
 http://stackoverflow.com/questions/42300463/elasticsearch-5-x-bootstrap-checks-failing
+
+5.数据存储
+
+默认情况下，data和log都在ES文件夹下的同名文件夹下。可在config/elasticsearch.yml中修改之。
 
 ## 参考
 
