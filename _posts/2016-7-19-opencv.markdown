@@ -358,6 +358,10 @@ http://www.hackcv.com/index.php/archives/104/
 
 CNN的直观解释
 
+https://woaielf.github.io/
+
+一个医学妹子的blog，有大量的数据挖掘的思维导图。
+
 ## 使用细节
 
 ### saturate_cast

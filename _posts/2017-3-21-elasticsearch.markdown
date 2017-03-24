@@ -256,7 +256,7 @@ sum_doc_freq：所有doc中包含的独立词的总和。
 
 `twitter test test test`
 
-ttf统计中认为这是4个词，而doc_freq中认为这是2个词，因为test重复出现了3次，这里只能算作1个词。
+ttf统计中认为这是4个词，而doc_freq中认为这是2个词，因为test重复出现了3次，这里只能算作1个词。注意这里的独立词是针对doc而言的，在不同doc中出现的test被认为是2个词。
 
 **Term统计**：
 
