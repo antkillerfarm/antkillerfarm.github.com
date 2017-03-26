@@ -67,6 +67,70 @@ http://goeye-app.com/resources.html#cn
 
 国家到了如此地步，除我等为其死，毫无其他办法。更相信，只要我等能本此决心，我们国家及我五千年历史之民族，决不至亡于区区三岛倭奴之手。为国家民族死之决心，海不清，石不烂，决不半点改变。——张自忠
 
+# 对Geoffrey Everest Hinton的深度挖掘
+
+有人说当代的数学家谱系是一棵树，根源基本都可追溯到欧拉、高斯等人头上。那么深度学习的谱系是什么样的呢？这里以深度学习的鼻祖Geoffrey Everest Hinton为基点，挖掘一下Hinton的师承脉络。
+
+1.Geoffrey Everest Hinton，1947～，加拿大认知心理学家、计算机科学家。
+
+2.Hugh Christopher Longuet-Higgins，1927～2004，英国化学家、认知学家。
+
+3.Charles Alfred Coulson，1910～1974，英国应用数学家、化学家。
+
+4.Sir John Edward Lennard-Jones，1894～1954，英国数学家、计算化学家。
+
+5.Sir Ralph Howard Fowler，1889～1944，英国物理学家、天文学家。
+
+6.Archibald Vivian Hill，1886～1977，英国生理学家。
+
+7.Sir Walter Morley Fletcher，1873～1933，英国生理学家。
+
+8.John Newport Langley，1852～1925，英国生理学家。
+
+9.Sir Michael Foster，1836～1907，英国生理学家。
+
+10.Thomas Henry Huxley，1825～1895，英国生物学家。
+
+11.Thomas Wharton Jones，1808～1891，英国眼科医生、生理学家。
+
+12.William Mackenzie，1791～1868，英国眼科医生。
+
+13.Georg Joseph Beer，1763～1821，奥地利眼科医生。
+
+14.Joseph Barth，1746～1818，奥地利眼科医生。
+
+15.Anton von Störck，1731～1803，奥地利医师。
+
+16.Gerard van Swieten，1700～1772，荷兰裔奥地利医师。
+
+17.Herman Boerhaave，1668～1738，荷兰植物学家、医师。
+
+18.Burchard de Volder，1643～1709，荷兰自然哲学家。
+
+19.Franciscus Sylvius，1614～1672，荷兰医师、化学家、生理学家、解剖学家。
+
+20.Otto Heurnius，1577～1652，荷兰医师、神学家、哲学家。
+
+21.Johannes Heurnius，1543～1601，荷兰医师、自然哲学家。
+
+22.Hieronymus Fabricius，1537～1619，意大利解剖学家、外科医生。
+
+23.Gabriele Falloppio，1523～1562，意大利医师、解剖学家。
+
+24.Antonio Musa Brassavola，1500～1555，意大利医师、解剖学家、植物学家。
+
+25.Niccolò Leoniceno，1428～1524，意大利医师、人类学家。
+
+26.Pietro Roccabonella，这个人的生平以及之前的师承，在wiki上已经不可考证。
+
+从上面的数据我们可以看出以下有趣的事实：
+
+1.Hinton在英国读书，却在北美发展，反映了大英帝国在二战后的急剧衰落和瓦解。
+
+2.在Fowler之前，这一派系主要和生理学、医学相关，而和数理化关系不大。这体现了第二次工业革命对教育界的影响。
+
+3.科技的中心经历了意大利->荷兰->奥地利->英国的改变，客观反映了各国在不同时期的历史发展状况。
+
 # 随机过程
 
 ## 随机变量序列的收敛性
@@ -126,5 +190,49 @@ $$X_n\xrightarrow{a.s.}X>X_n\xrightarrow{P}X$$
 2.对于正态过程，严平稳过程和宽平稳过程是等价的。
 
 # 高斯背景
+
+# Reinforcement Learning and Control
+
+# Linear Discriminant Analysis
+
+# Partial Least Squares Discriminant Analysis
+
+ACBM算法：
+
+ACBM算法是在AC（Aho-Corasick）自动机（UNIX上的fgrep命令使用的就是AC算法）的基础之上，引入了BM（Boyer-Moore）算法的多模扩展，实现的高效的多模匹配。和AC自动机不同的是，ACBM算法不需要扫描目标文本串中的每一个字符，可以利用本次匹配不成功的信息，跳过尽可能多的字符，实现高效匹配。
+
+http://blog.csdn.net/sealyao/article/details/6817944
+
+>注： Alfred Vaino Aho，1941年生，加拿大计算机科学家。普林斯顿大学博士，长期供职于贝尔实验室，后为哥伦比亚大学教授。egrep和fgrep的发明人，AWK语言的联合发明人。著有《Principles of Compiler Design Compilers: Principles, Techniques, and Tools》。该书由于封面上有龙图案，又被称为“龙书”，是编译原理方面的权威书籍。2003年获IEEE John von Neumann Medal。
+
+>Margaret John Corasick，贝尔实验室研究员。
+
+>Robert Stephen Boyer，德克萨斯大学教授。
+
+>J Strother Moore，德克萨斯大学教授。Boyer的好朋友，两人的绝大多数成就都是合作完成的。
+
+HNM：Hard Negative Mining
+
+# 时间序列分析
+
+## 书籍和教程
+
+http://www.stat.berkeley.edu/~bartlett/courses/153-fall2010/
+
+berkeley的时间序列分析课程
+
+《应用时间序列分析》，王燕著。
+
+## ARIMA
+
+ARIMA模型全称为差分自回归移动平均模型(Autoregressive Integrated Moving Average Model,简记ARIMA)，也叫求和自回归移动平均模型，是由George Edward Pelham Box和Gwilym Meirion Jenkins于70年代初提出的一著名时间序列预测方法，所以又称为box-jenkins模型、博克思-詹金斯法。
+
+>注：Gwilym Meirion Jenkins，1932～1982，英国统计学家。伦敦大学学院博士，兰卡斯特大学教授。
+
+教程：
+
+http://people.duke.edu/%7Ernau/411home.htm
+
+回归和时间序列分析
 
 

@@ -362,6 +362,10 @@ https://woaielf.github.io/
 
 一个医学妹子的blog，有大量的数据挖掘的思维导图。
 
+https://www.zhihu.com/question/20398418
+
+语音识别的技术原理是什么？
+
 ## 使用细节
 
 ### saturate_cast
