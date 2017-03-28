@@ -228,7 +228,7 @@ GET msg/true_msg/_search
 
 上面的例子同时展示了highlight的用法。
 
-**统计词频**
+### 统计词频
 
 ```
 GET twitter/tweet/5/_termvectors?pretty=true
@@ -269,6 +269,22 @@ doc_freq：该词在所有doc中独立出现的次数。
 可见_termvectors的查询虽然针对的是某个文件，但返回的结果中，却包含了全局的统计数据。
 
 >注：这里的全局，严格来说只到分片一级。当index比较大的时候，往往数据会保存到多个分片中。这样的话，不同doc所对应的全局统计结果，往往会有所不同。可以通过设置，实现真正的全局统计，但一般无此必要。
+
+### 查询mapping
+
+`GET /index/_mapping/type`
+
+### 查询系统状态
+
+查询系统状态一般使用cat系列API。例如：
+
+`GET /_cat/indices?v`
+
+查询index信息。结果一般有Green、Yellow和Red三种系统状态。Green和Red比较好理解，Yellow一般是指服务可用，但没有备份，这在单机版的ES中出现的比较多。
+
+`GET /_cat/plugins?v`
+
+查询插件信息
 
 ## ES中文分词
 
@@ -430,61 +446,24 @@ http://stackoverflow.com/questions/42300463/elasticsearch-5-x-bootstrap-checks-f
 
 默认情况下，data和log都在ES文件夹下的同名文件夹下。可在config/elasticsearch.yml中修改之。
 
-## 参考
+## Java REST Client
 
-http://cloud.51cto.com/art/201505/476450.htm
+ES的Client支持多种语言。其中，Java语言有两种API：Java API和Java REST API。其中，前者对后者的调用进行了封装，但由于REST命令可以直接在kibana中调试，实际使用中，反而后者更方便一些。
 
-五类Elasticsearch扩展性插件推荐
+Java REST API的示例参见：
 
-http://blog.csdn.net/cnweike/article/details/33736429
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/elasticsearch/es_client_hello
 
-Elasticsearch基础教程
+其中，test1函数给出了基本的查询示例。test2函数给出了json格式查询的示例，test3函数对查询返回的json数据采用jackson的树模型进行解析，test3函数对查询返回的json数据采用jackson的流模型进行解析。
 
-http://blog.csdn.net/a809146548/article/details/52371110
+更全面的示例参见：
 
-Logstash使用详解
+https://github.com/Top-Q/elasticsearch-client
 
-http://www.cnblogs.com/ajianbeyourself/p/5529575.html
+## logstash-output-jdbc
 
-Elasticsearch教程-从入门到精通
+`bin/logstash-plugin install logstash-output-jdbc`
 
-http://www.freebuf.com/sectool/78225.html
+https://github.com/theangryangel/logstash-output-jdbc/blob/master/examples/mysql.md
 
-Elk大数据查询系列：Elasticsearch与Logstash基础篇
-
-http://www.tuicool.com/articles/YR7RRr
-
-ELK搭建实时日志分析平台
-
-http://467754239.blog.51cto.com/4878013/1700828/
-
-ELK 日志分析系统
-
-https://www.ibm.com/developerworks/cn/opensource/os-cn-elk/
-
-集中式日志系统ELK协议栈详解
-
-https://es.xiaoleilu.com/
-
-Elasticsearch权威指南（中文版）
-
-http://udn.yyuap.com/doc/logstash-best-practice-cn/
-
-logstash最佳实践
-
-https://zhuanlan.zhihu.com/p/24428355
-
-使用ElasticSearch踩过的坑
-
-https://zhuanlan.zhihu.com/p/25723815
-
-教你快速使用Tensorflow/Elasticsearch实现全文的图片搜索
-
-http://www.cnblogs.com/buzzlight/p/logstash_elasticsearch_kibana_log.html
-
-使用logstash+elasticsearch+kibana快速搭建日志平台
-
-http://blog.csdn.net/longxibendi/article/details/35237543/
-
-ELK入门学习资源索引
 

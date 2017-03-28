@@ -92,6 +92,10 @@ http://blog.csdn.net/wang7dao/article/details/7684998
 
 strings能输出文件中的可打印字符串（可指定字符串的最小长度），通常用来查看非文本文件（如二进制可执行文件）中的可读内容。上例可查看glibc支持的版本。
 
+`ps -efww`
+
+ps默认只显示当前用户的进程。这里是全显示的示例。
+
 ## GnuGo
 
 GnuGo是一个著名的开源围棋软件，但是它只有文字界面。一般使用Quarry作为它的GUI。
