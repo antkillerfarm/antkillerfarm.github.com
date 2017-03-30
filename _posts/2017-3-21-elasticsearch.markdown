@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Elasticsearch
+title:  Elasticsearch（一）
 category: technology 
 ---
 
@@ -157,50 +157,70 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/helloworld/logs
 
 ## ES的查询示例
 
-### 添加数据
-
-```
-PUT /customer/external/1?pretty
+<table>
+  <tr>
+    <th width="15%">名称</th>
+    <th width="30%">命令</th>
+    <th width="55%">说明</th>
+  </tr>
+  <tr>
+    <td>指定ID添加数据</td>
+    <td>
+    <pre class="highlight"><code>PUT /customer/external/1
 {
   "name": "John Doe"
-}
-```
+}</code></pre>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>自动ID添加数据</td>
+    <td>
+    <pre class="highlight"><code>POST /customer/external/
+{
+  "name": "John Doe"
+}</code></pre>
 
-### 删除数据
-
-`DELETE /customer?pretty`
-
-查询删除：
-
-```
-GET msg/true_msg/_delete_by_query
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>删除数据</td>
+    <td>
+    <pre class="highlight"><code>DELETE /customer</code></pre>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>查询删除</td>
+    <td>
+    <pre class="highlight"><code>GET msg/true_msg/_delete_by_query
 {
   "query": {
     "match_all": {}
   }
-}
-```
-
-### 关键字查询
-
-**简单查询**：
-
-```
-GET msg/true_msg/_search
+}</code></pre>
+    </td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>简单查询</td>
+    <td>
+    <pre class="highlight"><code>GET msg/true_msg/_search
 {
+  "from" : 0,
+  "size" : 20,
   "query": {
     "match": { "message": "购物车" }
   }
-}
-```
-
-上面的查询有个问题，只要出现“购物车”三个字中任何一个字的message，都会被选中。
-
-**全字匹配**
-
-
-```
-GET msg/true_msg/_search
+}</code></pre>
+    </td>
+    <td>本查询有个问题，只要出现“购物车”三个字中任何一个字的message，都会被选中。同时展示了from和size的用法。</td>
+  </tr>
+  <tr>
+    <td>全字匹配查询</td>
+    <td>
+    <pre class="highlight"><code>GET msg/true_msg/_search
 {
   "query": {
     "multi_match": {
@@ -223,15 +243,14 @@ GET msg/true_msg/_search
       "message": {}  
     }
   }
-}
-```
-
-上面的例子同时展示了highlight的用法。
-
-### 统计词频
-
-```
-GET twitter/tweet/5/_termvectors?pretty=true
+}</code></pre>
+    </td>
+    <td>本查询同时展示了highlight的用法</td>
+  </tr>
+  <tr>
+    <td>统计词频</td>
+    <td>
+    <pre class="highlight"><code>GET twitter/tweet/5/_termvectors
 {
   "fields" : ["text"],
   "offsets" : true,
@@ -239,52 +258,75 @@ GET twitter/tweet/5/_termvectors?pretty=true
   "positions" : true,
   "term_statistics" : true,
   "field_statistics" : true
-}
-```
-
-统计结果包括Field统计和Term统计两类。
-
-**Field统计**：
-
-doc_count：doc的数量，这里的doc通常对应Logstash导入的一条记录。
-
-sum_ttf：所有doc中包含的词的总和。
-
-sum_doc_freq：所有doc中包含的独立词的总和。
-
-例如如下语句：
-
-`twitter test test test`
-
-ttf统计中认为这是4个词，而doc_freq中认为这是2个词，因为test重复出现了3次，这里只能算作1个词。注意这里的独立词是针对doc而言的，在不同doc中出现的test被认为是2个词。
-
-**Term统计**：
-
-term_freq：该词在本doc中出现的次数。
-
-ttf：该词在所有doc中出现的次数。
-
-doc_freq：该词在所有doc中独立出现的次数。
-
-可见_termvectors的查询虽然针对的是某个文件，但返回的结果中，却包含了全局的统计数据。
-
->注：这里的全局，严格来说只到分片一级。当index比较大的时候，往往数据会保存到多个分片中。这样的话，不同doc所对应的全局统计结果，往往会有所不同。可以通过设置，实现真正的全局统计，但一般无此必要。
-
-### 查询mapping
-
-`GET /index/_mapping/type`
-
-### 查询系统状态
-
-查询系统状态一般使用cat系列API。例如：
-
-`GET /_cat/indices?v`
-
-查询index信息。结果一般有Green、Yellow和Red三种系统状态。Green和Red比较好理解，Yellow一般是指服务可用，但没有备份，这在单机版的ES中出现的比较多。
-
-`GET /_cat/plugins?v`
-
-查询插件信息
+}</code></pre>
+    </td>
+    <td>统计结果包括Field统计和Term统计两类。<br/>
+<strong>Field统计：</strong><br/>
+doc_count：doc的数量，这里的doc通常对应Logstash导入的一条记录。<br/>
+sum_ttf：所有doc中包含的词的总和。<br/>
+sum_doc_freq：所有doc中包含的独立词的总和。<br/>
+例如如下语句：<br/>
+twitter test test test<br/>
+ttf统计中认为这是4个词，而doc_freq中认为这是2个词，因为test重复出现了3次，这里只能算作1个词。注意这里的独立词是针对doc而言的，在不同doc中出现的test被认为是2个词。<br/>
+<strong>Term统计：</strong><br/>
+term_freq：该词在本doc中出现的次数。<br/>
+ttf：该词在所有doc中出现的次数。<br/>
+doc_freq：该词在所有doc中独立出现的次数。<br/>
+可见_termvectors的查询虽然针对的是某个文件，但返回的结果中，却包含了全局的统计数据。<br/>
+<strong>注：</strong>这里的全局，严格来说只到分片一级。当index比较大的时候，往往数据会保存到多个分片中。这样的话，不同doc所对应的全局统计结果，往往会有所不同。可以通过设置，实现真正的全局统计，但一般无此必要。</td>
+  </tr>
+  <tr>
+    <td>查询mapping</td>
+    <td>
+    <pre class="highlight"><code>GET /index/_mapping/type</code></pre>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>查询index信息</td>
+    <td>
+    <pre class="highlight"><code>GET /_cat/indices?v</code></pre>
+    </td>
+    <td>结果一般有Green、Yellow和Red三种系统状态。Green和Red比较好理解，Yellow一般是指服务可用，但没有备份，这在单机版的ES中出现的比较多。</td>
+  </tr>
+  <tr>
+    <td>查询插件信息</td>
+    <td>
+    <pre class="highlight"><code>GET /_cat/plugins?v</code></pre>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Mapping</td>
+    <td>
+    <pre class="highlight"><code>PUT knowledge_lib2
+{
+  "mappings": {
+    "question2": {
+      "properties": { 
+        "ShortCutCode":{ "type": "text"  }, 
+        "ShortCutID":{ "type": "text" ,
+	               "analyzer": "ik_smart" }, 
+        "ShortCutType":{ "type": "text"}  
+      }
+    }
+  }
+}</code></pre>
+    </td>
+    <td>参考：<br/>
+http://www.cnblogs.com/eggTwo/p/4390620.html<br/>
+ElasticSearch系列学习<br/>
+http://blog.csdn.net/lvhong84/article/details/23936697<br/>
+elasticsearch中的mapping简介</td>
+  </tr>
+  <tr>
+    <td>查询数量</td>
+    <td>
+    <pre class="highlight"><code>GET twitter/tweet/_count</code></pre>
+    </td>
+    <td></td>
+  </tr>
+</table>
 
 ## ES中文分词
 
@@ -347,123 +389,4 @@ https://github.com/medcl/elasticsearch-analysis-pinyin
 简/繁转换：
 
 https://github.com/medcl/elasticsearch-analysis-stconvert
-
-### Mapping
-
-```
-PUT knowledge_lib2
-{
-  "mappings": {
-    "question2": {
-      "properties": { 
-        "ShortCutCode":    { "type": "text"  }, 
-        "ShortCutID":     { "type": "text" , "analyzer": "ik_smart" }, 
-        "ShortCutType":      { "type": "text"}  
-      }
-    }
-  }
-}
-```
-
-参考：
-
-http://www.cnblogs.com/eggTwo/p/4390620.html
-
-ElasticSearch系列学习
-
-http://blog.csdn.net/lvhong84/article/details/23936697
-
-elasticsearch中的mapping简介
-
-## ELK的配置部署
-
-### Elasticsearch
-
-配置文件：
-
-config/elasticsearch.yml
-
-配置文件本身修改难度不大，但部署中还是遇到好多的坑。
-
-1.安装JDK
-
-ES 5.X需要JDK 8才行，然而公司的服务器是JDK 7，为了不干扰已有的服务，需要修改bin/elasticsearch脚本中的JAVA_HOME变量。
-
-同时运行两个JDK的方法还有很多种，比如下面提到的创建新用户，然后修改用户配置的的方法。
-
-2.新建用户
-
-ES不允许以root用户执行。因此需要创建新用户：
-
-`adduser es`
-
-3.
-
->access denied (javax.management.MBeanTrustPermission register) 
-
-jre/lib/security/java.policy文件中新增
-
-`permission javax.management.MBeanTrustPermission "register";`
-
-4.以es用户的身份解压各压缩包，否则会有一大堆的权限错误。
-
-5.Bootstrap checks failing
-
-当配置的host不是localhost的时候，ES会进行Bootstrap checks。其主要目的是增加ES能够获得的各种资源。一般不推荐在实际生产环境中，关闭Bootstrap checks。
-
->max file descriptors [4096] for elasticsearch process is too low, increase to at least [65536]
-
-修改/etc/security/limits.conf：（需要root权限）
-
-```
-es  soft    nproc     65536
-es  hard    nproc     65536
-es  soft    nofile    65536
-es  hard    nofile    65536
-```
-
-重新登录es用户后，修改生效。
-
-在bin/elasticsearch的开头添加：
-
-`ulimit -n 65536`
-
->注：ulimit增加的资源数，不能超过limits.conf中的数量，否则会报错。
-
->max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
-
-修改/etc/sysctl.conf：（需要root权限）
-
-`vm.max_map_count=262144`
-
-执行`sysctl -p`使配置生效。
-
-参考：
-
-http://stackoverflow.com/questions/42300463/elasticsearch-5-x-bootstrap-checks-failing
-
-5.数据存储
-
-默认情况下，data和log都在ES文件夹下的同名文件夹下。可在config/elasticsearch.yml中修改之。
-
-## Java REST Client
-
-ES的Client支持多种语言。其中，Java语言有两种API：Java API和Java REST API。其中，前者对后者的调用进行了封装，但由于REST命令可以直接在kibana中调试，实际使用中，反而后者更方便一些。
-
-Java REST API的示例参见：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/elasticsearch/es_client_hello
-
-其中，test1函数给出了基本的查询示例。test2函数给出了json格式查询的示例，test3函数对查询返回的json数据采用jackson的树模型进行解析，test3函数对查询返回的json数据采用jackson的流模型进行解析。
-
-更全面的示例参见：
-
-https://github.com/Top-Q/elasticsearch-client
-
-## logstash-output-jdbc
-
-`bin/logstash-plugin install logstash-output-jdbc`
-
-https://github.com/theangryangel/logstash-output-jdbc/blob/master/examples/mysql.md
-
 

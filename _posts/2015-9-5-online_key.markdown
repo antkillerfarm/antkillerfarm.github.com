@@ -173,6 +173,7 @@ F表示相关的算法。只有符合F算法的P和U，才能通过程序的验�
 | 显示数据表结构 | describe 表名; |
 | 创建自增ID | create table github(id int auto_increment primary key not null,name varchar(256)); |
 | 查询头N条记录 | select * from shop_info limit N; |
+| 检索记录行 6-15 | select * from table limit 5,10; |
 | 删除记录 | delete from shop_info where shop_id="1"; |
 | 排序+别名+分组+count | select city_name,count(*) as city_count from shop_info group by city_name <br/>order by city_count desc limit 5; |
 | 两列排序+两列相乘 | select shop_id,count(*)*per_pay from shop_info order by per_pay desc,shop_id desc; |
