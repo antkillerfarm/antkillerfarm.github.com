@@ -209,6 +209,14 @@ http://www.shareditor.com/bloglistbytag/?tagname=%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%
 
 实战课程：自己动手做聊天机器人
 
+http://www.newsmth.net/bbsdoc.php?board=NLP
+
+水木NLP板块
+
+http://www.icst.pku.edu.cn/lcwm/
+
+北京大学计算机科学技术研究所语言计算与互联网挖掘研究室
+
 ## 工具
 
 ### Natural Language Toolkit(NLTK)

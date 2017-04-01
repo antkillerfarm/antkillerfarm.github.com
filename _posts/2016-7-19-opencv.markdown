@@ -366,6 +366,10 @@ https://www.zhihu.com/question/20398418
 
 语音识别的技术原理是什么？
 
+http://www.newsmth.net/bbstcon.php?board=NLP&gid=15714
+
+旺旺客服文本关键词提取
+
 ## 使用细节
 
 ### saturate_cast

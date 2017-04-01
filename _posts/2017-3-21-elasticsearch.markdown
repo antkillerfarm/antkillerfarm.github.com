@@ -215,7 +215,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/helloworld/logs
   }
 }</code></pre>
     </td>
-    <td>本查询有个问题，只要出现“购物车”三个字中任何一个字的message，都会被选中。同时展示了from和size的用法。</td>
+    <td>本查询有个问题，只要出现“购物车”三个字中任何一个字的message，都会被选中。同时展示了from和size的用法。更多内容参见：http://www.w2bc.com/article/109597</td>
   </tr>
   <tr>
     <td>全字匹配查询</td>

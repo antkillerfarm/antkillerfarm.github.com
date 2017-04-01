@@ -213,6 +213,8 @@ sed -n '/\$/p' ab #查询包括关键字$所在所有行，使用反斜线\屏�
 
 sed -n '/ruby/p' ab | sed 's/ruby/bird/g'    #替换ruby为bird
 sed -n '/ruby/p' ab | sed 's/ruby//g'        #删除ruby
+
+sed -e 's/.$//' mydos.txt > myunix.txt #dos->unix
 {% endhighlight %}
 
 ## grep

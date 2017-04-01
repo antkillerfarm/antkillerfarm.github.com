@@ -72,6 +72,8 @@ https://github.com/tmikolov/word2vec
 
 http://wei-li.cnblogs.com/p/word2vec.html
 
+`time ./word2phrase -train 1.txt -output 2.txt -threshold 100 -debug 2`
+
 # 异常点检测
 
 http://chuansong.me/n/377440751130

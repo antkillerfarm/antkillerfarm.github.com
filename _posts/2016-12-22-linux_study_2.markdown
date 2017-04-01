@@ -96,6 +96,8 @@ strings能输出文件中的可打印字符串（可指定字符串的最小长�
 
 ps默认只显示当前用户的进程。这里是全显示的示例。
 
+`iconv -f gbk -t utf-8 -c 1.txt -o 2.txt`
+
 ## GnuGo
 
 GnuGo是一个著名的开源围棋软件，但是它只有文字界面。一般使用Quarry作为它的GUI。
