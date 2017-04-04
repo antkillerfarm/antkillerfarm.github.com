@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（十五）——主成分分析, loss function比较、独立成分分析
+title:  机器学习（十五）——主成分分析, loss function比较, 独立成分分析
 category: theory 
 ---
 
@@ -173,6 +173,20 @@ $$X_{n\times m}\approx U_{n\times k}Y_{k\times m}$$
 其中蓝色的阶跃函数又被称为Gold Standard，黄金标准，因为这是最准确无误的分类器loss function了。分对了loss为0，分错了loss为1，且loss不随到分界面的距离的增加而增加，也就是说这个分类器非常鲁棒。但可惜的是，它不连续，求解这个问题是NP-hard的，所以才有了各种我们熟知的分类器。
 
 其中红色线条就是SVM了，由于它在m=1处有个不可导的转折点，右边都是0，所以分类正确的置信度超过一定的数之后，对分界面的确定就没有一点贡献了。
+
+《机器学习（五）》中提到的SVM软间隔，其所使用的loss function，又被称为Hinge loss函数：
+
+$$l_{hinge}(z)=\max(0,1-z)$$
+
+除此之外，exponential loss函数：
+
+$$l_{exp}(z)=\exp(-z)$$
+
+和logistic loss函数：
+
+$$l_{log}(z)=\log(1+\exp(-z))$$
+
+也是较常用的SVM loss function。
 
 黄色线条是Logistic Regression的损失函数，与SVM不同的是，它非常平滑，但本质跟SVM差别不大。
 

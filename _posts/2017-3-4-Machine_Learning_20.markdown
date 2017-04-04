@@ -92,6 +92,8 @@ http://www.cs.cmu.edu/~epxing/Class/10708-14/lectures/
 
 CMU的邢波（Eric Xing）所开的概率图模型课程。
 
+## 
+
 # 机器学习相关术语表
 
 | 缩写 | 全称 | 中文名 | 备注 |
