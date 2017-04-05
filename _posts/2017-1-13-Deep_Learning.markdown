@@ -217,6 +217,10 @@ http://www.icst.pku.edu.cn/lcwm/
 
 北京大学计算机科学技术研究所语言计算与互联网挖掘研究室
 
+https://github.com/rockingdingo/deepnlp
+
+NLP深度学习方面的代码库
+
 ## 工具
 
 ### Natural Language Toolkit(NLTK)

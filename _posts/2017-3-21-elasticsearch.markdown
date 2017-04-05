@@ -390,3 +390,17 @@ https://github.com/medcl/elasticsearch-analysis-pinyin
 
 https://github.com/medcl/elasticsearch-analysis-stconvert
 
+## ES Cluster
+
+![](/images/article/es_cluster.png)
+
+上图是ES Cluster的示意图。其中：
+
+**Node**：集群中的计算机。
+
+**Shard**：每个Index对应一个Shard。
+
+**Replica**：一个Shard可以有N个Replica。这样的话，一个Index在集群中，就有1+N份数据了。
+
+集群会根据Node的增减，自动调整Shard和Replica的分布。换句话说，只有超过1+N个Node同时掉线，才会导致某个Index的掉线。
+

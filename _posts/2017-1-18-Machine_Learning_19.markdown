@@ -60,20 +60,6 @@ http://www.doc88.com/p-1416660147532.html
 
 KNN算法在股票预测中的应用
 
-# word2vec
-
-word2vec是Google于2013年开源推出的一个用于获取word vector的工具包。作者是Tomas Mikolov。
-
->注：Tomas Mikolov，捷克布尔诺科技大学博士。先后在Google、Facebook担任研究员。
-
-http://blog.csdn.net/itplus/article/details/37969519
-
-https://github.com/tmikolov/word2vec
-
-http://wei-li.cnblogs.com/p/word2vec.html
-
-`time ./word2phrase -train 1.txt -output 2.txt -threshold 100 -debug 2`
-
 # 异常点检测
 
 http://chuansong.me/n/377440751130
