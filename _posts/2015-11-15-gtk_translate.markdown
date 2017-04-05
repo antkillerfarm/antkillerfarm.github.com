@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Transifex与GTK文档翻译, Linux镜像文件, 外设接口杂谈
+title:  Transifex与GTK文档翻译, Linux镜像文件, 外设接口杂谈, 中文编码格式问题, Ansible
 category: technology 
 ---
 
@@ -239,4 +239,18 @@ GB系列按照发布时间的顺序，又包括GB2312、GBK和GB18030三种格�
 除此之外，能表示中文的还有Unicode系列。比如，Java内部使用的UTF16BE，以及网络上用的比较多的UTF8。
 
 需要指出的是，由于各种编码格式的字节数不尽相同，单独对文章中的某些字段进行转码，常会由于字节对齐的问题，而产生异常的结果。最好是在一种编码下生成整个文档之后，统一转换成另一种格式。
+
+# Ansible
+
+Ansible is Simple IT Automation——简单的自动化IT工具。这个工具的目标有这么几项：让我们自动化部署APP；自动化管理配置项；自动化的持续交付；自动化的（AWS）云服务管理。简单的说就是：**批量的在远程服务器上执行命令**
+
+官网：
+
+https://www.ansible.com/
+
+参考：
+
+http://www.ansible.com.cn/
+
+Ansible中文权威指南
 
