@@ -112,7 +112,7 @@ CMU的邢波（Eric Xing）所开的概率图模型课程。
 
 ## 贝叶斯网络
 
-概率图模型的三要素：Graph、Model和Data。
+概率图模型的三要素：Graph：$$\mathcal{G}$$、Model：$$\mathcal{M}$$和Data：$$\mathcal{D}\equiv\{X^{(i)}_1,\dots,X^{(i)}_m\}^N_{i=1}$$。
 
 它要解决的三大问题：
 
@@ -120,11 +120,11 @@ CMU的邢波（Eric Xing）所开的概率图模型课程。
 
 2.**推断**。根据模型/数据，推断答案。
 
-$$P(x_i|D)$$
+$$e.g.:P(x_i|\mathcal{D})$$
 
 3.**学习**。根据数据确定哪个模型是正确的。
 
-$$P(x_i|D)$$
+$$e.g.:\mathcal{M}=\arg\max_{\mathcal{M}\in M}F(\mathcal{D};\mathcal{M})$$
 
 # 机器学习语录
 
@@ -137,7 +137,6 @@ $$P(x_i|D)$$
 角度值是数据分析中常见的值，然而它不是线性的，比如0度和359度之间只相差1度，然而数值上却差了359度，因此无法将角度值直接代入线性回归等模型。因为后者的loss函数是用线性的欧氏距离定义的，角度显然不满足要求。
 
 既然角度在一维上不是线性的，那么二维呢？没错，可以采用复数坐标(x,y)来表示角度，这样角度就是线性的了。
-
 
 # 机器学习相关术语表
 
@@ -196,3 +195,5 @@ $$P(x_i|D)$$
 | LASSO | Least Absolute Shrinkage and Selection Operator | 最小绝对收缩和选择算子 |  |
 | CRF | Conditional Random Field | 条件随机场 |  |
 | MSE/MSD | Mean Squared Error/Mean Squared Deviation | 均方误差 |  |
+
+

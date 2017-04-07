@@ -221,6 +221,10 @@ https://github.com/rockingdingo/deepnlp
 
 NLP深度学习方面的代码库
 
+https://liweinlp.com/
+
+NLP专家李维的blog
+
 ## 工具
 
 ### Natural Language Toolkit(NLTK)
@@ -238,4 +242,31 @@ https://github.com/FudanNLP/fnlp
 ### Stanford CoreNLP
 
 http://stanfordnlp.github.io/CoreNLP/
+
+### THUCTC
+
+THUCTC(THU Chinese Text Classification)是由清华大学自然语言处理实验室推出的中文文本分类工具包。
+
+http://thuctc.thunlp.org/
+
+### gensim
+
+gensim是Python语言的计算文本相似度的程序包。
+
+http://radimrehurek.com/gensim/index.html
+
+### GloVe
+
+GloVe:Global Vectors for Word Representation
+
+https://nlp.stanford.edu/projects/glove/
+
+### textsum
+
+textsum是一个基于深度学习的文本自动摘要工具。
+
+https://github.com/tensorflow/models/tree/master/textsum
+
+http://www.jiqizhixin.com/article/1449
+
 

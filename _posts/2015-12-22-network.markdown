@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  网络杂谈
+title:  网络杂谈, MongoDB
 category: technology 
 ---
 
@@ -302,4 +302,29 @@ https://www.eclipse.org/jetty/
 https://github.com/jasonish/jetty-springmvc-jsp-template
 
 一个Jetty+Spring MVC+JSP的demo。
+
+# MongoDB
+
+MongoDB是一个介于关系数据库和非关系数据库之间的产品，是非关系数据库当中功能最丰富，最像关系数据库的。他支持的数据结构非常松散，是类似json的bson格式，因此可以存储比较复杂的数据类型。
+
+官网：
+
+https://www.mongodb.com/
+
+参考：
+
+https://docs.mongodb.com/manual/reference/sql-comparison/
+
+这里提供了MongoDB查询语法和SQL查询之间的对应关系表。
+
+https://docs.mongodb.com/manual/reference/sql-aggregation-comparison/
+
+这是上面表格的高级版本，专门处理group by的情况。这种情况也叫做Aggregation。
+
+## Robomongo
+
+Robomongo是一个开源的MongoDB的前端工具，基于Qt编写。官网：
+
+https://robomongo.org/
+
 

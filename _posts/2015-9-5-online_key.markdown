@@ -248,8 +248,20 @@ View并不在数据库中存储数据，而是在查询时，执行其中的sele
 
 这种方法会将中间结果存储到数据库中，下次使用的时候，就无需重新生成了。但缺点是原table中的更新不会体现到新table中，只适合处理历史数据。
 
+## 模糊查询
+
 http://www.cnblogs.com/GT_Andy/archive/2009/12/25/1921914.html
 
-SQL 模糊查询
+# OpenAI Gym
+
+Openai gym是一个用于开发和比较强化学习（reinforcement learning，RL）算法的工具包，与其他的数值计算库兼容，如tensorflow或者theano库。现在主要支持的是python语言，以后将支持其他语言。
+
+官网：
+
+https://gym.openai.com/
+
+参考：
+
+http://tech.163.com/16/0510/09/BMMOPSCR00094OE0.html
 
 

@@ -394,6 +394,26 @@ http://www.cnblogs.com/Determined22/
 
 Determined22的blog
 
+http://blog.csdn.net/hjimce/article/category/3163421
+
+一个深度学习的blog
+
+https://github.com/ematvey/tensorflow-seq2seq-tutorials
+
+一步步的seq2seq教程
+
+http://www.cnblogs.com/maybe2030/p/5427148.html
+
+文本深度表示模型——word2vec&doc2vec词向量模型
+
+https://www.zhihu.com/question/29978268
+
+如何用word2vec计算两个句子之间的相似度？
+
+http://www.cnblogs.com/xxey/p/4277181.html
+
+Beam Search（集束搜索/束搜索）
+
 ## 使用细节
 
 ### saturate_cast
@@ -457,4 +477,8 @@ Computer Vision
 http://www.cnblogs.com/wei-li/archive/2012/03/24/2406404.html
 
 网络公开课资源——关注CS/AI/Math
+
+http://www.cs.columbia.edu/~blei/seminar/2016_discrete_data/index.html
+
+Probabilistic Models of Discrete Data
 

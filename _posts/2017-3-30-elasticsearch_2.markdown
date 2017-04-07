@@ -181,3 +181,7 @@ http://blog.csdn.net/longxibendi/article/details/35237543/
 
 ELK入门学习资源索引
 
+http://www.jianshu.com/p/0b4346f503e3
+
+探索elasticsearch。该文包含如何使用ES进行TF/IDF的方法
+
