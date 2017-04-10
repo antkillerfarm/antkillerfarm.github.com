@@ -482,3 +482,8 @@ http://www.cs.columbia.edu/~blei/seminar/2016_discrete_data/index.html
 
 Probabilistic Models of Discrete Data
 
+http://speech.ee.ntu.edu.tw/~tlkagk/courses_MLDS17.html
+
+台湾大学李宏毅副教授的深度学习课程
+
+

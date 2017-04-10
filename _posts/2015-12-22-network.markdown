@@ -311,6 +311,10 @@ MongoDB是一个介于关系数据库和非关系数据库之间的产品，是�
 
 https://www.mongodb.com/
 
+安装：
+
+https://docs.mongodb.com/getting-started/shell/tutorial/install-mongodb-on-ubuntu/
+
 参考：
 
 https://docs.mongodb.com/manual/reference/sql-comparison/

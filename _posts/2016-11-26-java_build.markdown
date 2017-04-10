@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Java构建工具, WebService
+title:  Java构建工具
 category: technology 
 ---
 
@@ -167,7 +167,7 @@ http://maven.aliyun.com/nexus/content/groups/public
 
 这里吐槽一下Java。Java的classpath选项中，如果指定的jar不止一个，那么两个jar之间需用符号分隔。这个分隔符在Windows上是`;`，而在Linux上是`:`。居然连这一点都没统一，实在无语。
 
-## uber-jar
+### uber-jar
 
 uber在德语中，表示above或over。uber-jar实际上就是将程序的依赖也打包，而生成的jar。例如maven中，可用：
 
@@ -176,6 +176,18 @@ uber在德语中，表示above或over。uber-jar实际上就是将程序的依�
 生成uber-jar。
 
 此外，maven shade plugin和dependency-reduced-pom.xml实际上也与uber-jar有关。
+
+### 搭建Maven私服
+
+Artifactory可用于搭建团队内部的Maven私服。官网：
+
+https://www.jfrog.com/open-source/
+
+正常运行项目的maven命令，向artifactory索求jar。如果artifactory已经下载了就会直接返回给你，还没有的就会去那几个repo官方站下载。
+
+参考：
+
+http://blog.csdn.net/calvinxiu/article/details/1713323
 
 ## Gradle
 
@@ -212,127 +224,6 @@ Gradle Wrapper能够让你的工程在没有安装Gradle的机器上编译。
 2.`./gradlew run`
 
 类似的，maven也有一个Wrapper，有些工程里的mvnw或mvnw.cmd，就是这个Wrapper的文件。
-
-# WebService
-
-WebService经过近二十年的发展，已经有非常多的框架了。知名的有：Axis1、Axis2、Xfire、CXF、JWS等。
-
-其中的JWS在JDK 1.6之后被集成到JDK中，成为了我学习的首选。
-
-JWS包含了JAX-WS、JAX-RS、JAXB、JAXR、SAAJ、StAX等组件。这里主要涉及的是JAX-WS。
-
-## 教程
-
-参考：
-
-http://www.blogjava.net/zjhiphop/archive/2009/04/29/webservice.html
-
-http://blog.csdn.net/lifetragedy/article/details/7205832
-
-以上两篇是中文blog。
-
-http://java.globinch.com/enterprise-java/web-services/jax-ws/java-jax-ws-tutorial-develop-web-services-clients-consumers/
-
-这个教程虽然是英文的，但质量超过前两篇。且该网站还有其他相关文章，质量也颇高。
-
-## demo
-
-本文相关的demo参见：
-
-https://github.com/him-bhar/jax-ws
-
-这个demo包括jaxws-demo、jaxws-demo-client-stubs和jaxws-demo-client三个模块。
-
-使用这个demo会有若干问题，也可直接采用本人修改之后的代码：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/java/jax-ws
-
-## 开发模型
-
-JAX-WS 2.0有两种开发过程：**自顶向下**和**自底向上**。自顶向下方式指通过一个WSDL文件来创建Web Service，自底向上是从Java类出发创建Web Service。
-
-**demo选用Server端通过Java Class生成webservice，而客户端通过wsdl生成Java调用类的做法。**
-
-这种方法的优点在于：
-
-1.服务端开发基于Java，基本不需要对WSDL有过多研究，上手简单。
-
-2.客户端通过wsdl生成Java调用类，可以很方便的导入第三方WebService，同样无需对WSDL有过多研究。
-
-综上，这实际上是个**由服务端驱动的开发模型**。
-
-## jaxws-demo的结构
-
-jaxws-demo包含了两个WebService例子分别是rpc_type和document_type。
-
-这两种类型实际上指的是SOAP Binding的类型。两者的区别参见：
-
-http://java.globinch.com/enterprise-java/web-services/soap-binding-document-rpc-style-web-services-difference/
-
->吐槽一下，虽然这只是个基本的问题，然而中文blog中竟然没有令人满意的文章。   
->这些文章的毛病在于：   
->1.对Java和JWS过于细节，而忽视了交互报文。SOAP Binding类型主要是个通讯协议问题，而不是Java或者JWS的问题。   
->2.没有比较交互报文，就来笼统的谈各自的优缺点的，都是耍流氓。
-
-从上文的交互报文可以看出，document_type虽然更复杂，但也更灵活。从直观来看，前者只有wsdl一个文件，而后者有wsdl和xsd两个文件。
-
-## jaxws-demo的部署
-
-jaxws-demo编译之后，除了生成相应的.class之外，还会生成对应的wsdl和xsd文件。
-
-通常的做法是将这些文件一起部署到诸如Tomcat之类的Web容器中。
-
-但JDK也提供了更简易的做法，使用javax.xml.ws.Endpoint类的publish方法，将WebService绑定到特定的URI上。
-
-这里我们将com.himanshu.poc.jaxws.service.deploy.EndpointPublisherDocument设为主类，并执行程序。
-
-在浏览器上输入：
-
-http://localhost:9999/ws/hellodocument?wsdl
-
-正常情况下会返回一个wsdl文件。
-
-## jaxws-demo-client-stubs
-
-JDK中，有两个和WebService相关的工具：
-
-JAXWS为我们提供了两个工具：
-
-**wsgen**。主要用于Server端通过Java类编译成Webservice及相关的wsdl文件。
-
-**wsimport**。主要用于Client端（调用端）通过wsdl编译出调用Server端的Java文件。
-
-jaxws-demo中，调用wsgen生成的wsdl和xsd文件，在这里被wsimport编译成客户端的桩代码。
-
-由于我使用的JDK是JDK 1.8，因此会遇到如下问题：
-
-`由于 accessExternalSchema属性设置的限制而不允许 'file' 访问, 因此无法读取方案文档'xjc.xsd'。`
-
-解决方法：
-
-{% highlight xml %}
-<plugin>
-    <groupId>org.jvnet.jax-ws-commons</groupId>
-    <artifactId>jaxws-maven-plugin</artifactId>
-    <version>2.3</version>
-    <configuration>
-        <!-- Needed with JAXP 1.5 -->
-        <vmArgs>
-            <vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
-        </vmArgs>
-    </configuration>
-</plugin>
-{% endhighlight %}
-
-这个问题是由于JDK 1.8以后相关权限变得更加严格所导致的。
-
-参见：
-
-https://my.oschina.net/fuckmylife0/blog/325432
-
-## jaxws-demo-client
-
-jaxws-demo-client就是具体的客户端实现了，可以看出相比于上一步的桩代码，这里的代码文件，数量上要少得多。
 
 
 
