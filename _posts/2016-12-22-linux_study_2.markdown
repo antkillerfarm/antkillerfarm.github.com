@@ -234,6 +234,16 @@ API参考：
 
 http://pandas.pydata.org/pandas-docs/stable/api.html
 
+参考：
+
+http://www.cnblogs.com/chaosimple/p/4153083.html
+
+十分钟搞定pandas
+
+http://pandas.pydata.org/pandas-docs/stable/comparison_with_sql.html
+
+Pandas和SQL的比较
+
 ## mysql
 
 http://www.runoob.com/python/python-mysql.html
@@ -321,5 +331,4 @@ otherStyleTime = time.strftime("%Y/%m/%d %H:%M:%S", timeArray)
 L.append(var)   #追加元素
 L.extend(list)  #追加list，即合并list到L上
 {% endhighlight %}
-
 

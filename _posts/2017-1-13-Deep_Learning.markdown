@@ -229,7 +229,15 @@ NLP专家李维的blog
 
 ### Natural Language Toolkit(NLTK)
 
+官网：
+
 http://www.nltk.org/
+
+可使用nltk.download()下载相关nltk官方提供的各种资源。
+
+参考：
+
+http://www.cnblogs.com/baiboy/p/nltk3.html
 
 ### OpenNLP
 
@@ -242,6 +250,22 @@ https://github.com/FudanNLP/fnlp
 ### Stanford CoreNLP
 
 http://stanfordnlp.github.io/CoreNLP/
+
+### HanLP
+
+HanLP是一个目前留学日本的中国学生的作品。
+
+官网：
+
+http://hanlp.linrunsoft.com/
+
+作者blog：
+
+http://www.hankcs.com/
+
+Github：
+
+https://github.com/hankcs/HanLP/
 
 ### THUCTC
 
@@ -268,5 +292,21 @@ textsum是一个基于深度学习的文本自动摘要工具。
 https://github.com/tensorflow/models/tree/master/textsum
 
 http://www.jiqizhixin.com/article/1449
+
+### jieba
+
+https://github.com/fxsjy/jieba
+
+### NLPIR
+
+NLPIR汉语分词系统(又名ICTCLAS2013)，是中科院张华平博士的作品。官网：
+
+http://ictclas.nlpir.org/
+
+## 词性标注
+
+http://jacoxu.com/ictpos3-0%E6%B1%89%E8%AF%AD%E8%AF%8D%E6%80%A7%E6%A0%87%E8%AE%B0%E9%9B%86/
+
+ICTPOS3.0汉语词性标记集
 
 

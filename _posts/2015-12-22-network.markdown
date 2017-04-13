@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  网络杂谈, MongoDB
+title:  网络杂谈, MongoDB, Docker
 category: technology 
 ---
 
@@ -302,6 +302,28 @@ https://www.eclipse.org/jetty/
 https://github.com/jasonish/jetty-springmvc-jsp-template
 
 一个Jetty+Spring MVC+JSP的demo。
+
+# Docker
+
+Docker是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的Linux机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。
+
+官网：
+
+https://www.docker.com/
+
+下图显示了Docker和VM之间的差别：
+
+![](/images/article/docker_vs_vm.png)
+
+参考：
+
+http://blog.csdn.net/colorant/article/details/20608157
+
+快速理解Docker
+
+http://www.cnblogs.com/zhangmingcheng/p/5730070.html
+
+Docker数据管理
 
 # MongoDB
 

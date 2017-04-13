@@ -414,6 +414,10 @@ http://www.cnblogs.com/xxey/p/4277181.html
 
 Beam Search（集束搜索/束搜索）
 
+http://www.jianshu.com/p/9dc9f41f0b29
+
+理解LSTM网络
+
 ## 使用细节
 
 ### saturate_cast
