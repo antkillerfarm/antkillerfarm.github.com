@@ -14,7 +14,22 @@ category: theory
 
 http://www.useit.com.cn/thread-13132-1-1.html
 
-其他参考文献将在相关部分列出。
+《Deep Learning》，Ian Goodfellow、Yoshua Bengio、Aaron Courville著。
+
+原版：
+
+http://www.deeplearningbook.org/
+
+中文版：
+
+https://github.com/exacity/deeplearningbook-chinese
+
+>注：这本书基于markdown文件，使用tex编译而成，可作为编写大型书的代码参考项目。   
+>安装方法：   
+>`sudo apt install texlive-xetex texlive-lang-chinese texlive-science xindy`   
+>`make`
+
+其他参考文献将在各相关部分列出。
 
 Deep Learning圈子的主要人物：
 

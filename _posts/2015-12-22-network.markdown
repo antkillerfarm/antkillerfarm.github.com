@@ -353,4 +353,30 @@ Robomongo是一个开源的MongoDB的前端工具，基于Qt编写。官网：
 
 https://robomongo.org/
 
+# WebSocket
+
+在浏览器中通过http仅能实现单向的通信。AJAX通过轮询方式，达到全双工通信，但效率不高。
+
+面对这种状况，HTML5定义了WebSocket协议（基于TCP），能更好的节省服务器资源和带宽并达到实时通讯。
+
+浏览器请求
+
+```
+GET /webfin/websocket/ HTTP/1.1
+　　Host: localhost
+　　Upgrade: websocket
+　Connection: Upgrade
+　　Sec-WebSocket-Key: xqBt3ImNzJbYqRINxEFlkg==
+　　Origin: http://www.sohu.com
+　　Sec-WebSocket-Version: 13
+```
+
+服务器回应
+
+```
+HTTP/1.1 101 Switching Protocols
+　　Upgrade: websocket
+　　Connection: Upgrade
+　　Sec-WebSocket-Accept: K7DJLdLooIwIG/MOpvWFB3y3FE8=
+```
 
