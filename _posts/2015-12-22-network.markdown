@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  网络杂谈, MongoDB, Docker
+title:  网络杂谈, Docker, MongoDB
 category: technology 
 ---
 
@@ -361,7 +361,7 @@ https://robomongo.org/
 
 浏览器请求
 
-```
+{% highlight text %}
 GET /webfin/websocket/ HTTP/1.1
 　　Host: localhost
 　　Upgrade: websocket
@@ -369,14 +369,14 @@ GET /webfin/websocket/ HTTP/1.1
 　　Sec-WebSocket-Key: xqBt3ImNzJbYqRINxEFlkg==
 　　Origin: http://www.sohu.com
 　　Sec-WebSocket-Version: 13
-```
+{% endhighlight %}
 
 服务器回应
 
-```
+{% highlight text %}
 HTTP/1.1 101 Switching Protocols
 　　Upgrade: websocket
 　　Connection: Upgrade
 　　Sec-WebSocket-Accept: K7DJLdLooIwIG/MOpvWFB3y3FE8=
-```
+{% endhighlight %}
 

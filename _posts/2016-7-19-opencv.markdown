@@ -102,10 +102,6 @@ http://www.scratchapixel.com/
 
 一个学习图像处理的网站。
 
-http://www.52nlp.cn/
-
-一个国内的自然语言处理的网站。
-
 http://www.cs.rug.nl/~imaging/
 
 一个在线的图像处理网站。
@@ -417,6 +413,14 @@ Beam Search（集束搜索/束搜索）
 http://www.jianshu.com/p/9dc9f41f0b29
 
 理解LSTM网络
+
+http://www.infoq.com/cn/articles/we-are-bringing-learning-to-rank-to-elasticsearch
+
+在Elasticsearch中应用机器学习排序LTR
+
+https://github.com/neozhaoliang/pywonderland/tree/master/
+
+如何用Python画各种著名数学图案
 
 ## 使用细节
 

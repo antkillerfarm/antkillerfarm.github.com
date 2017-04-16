@@ -213,13 +213,13 @@ Jackson是常用的Java语言的JSON库。
 
 Maven安装：
 
-```
+{% highlight text %}
 <dependency>
 	<groupId>com.fasterxml.jackson.core</groupId>
 	<artifactId>jackson-databind</artifactId>
 	<version>2.6.4</version>
 </dependency>
-```
+{% endhighlight %}
 
 Jackson提供了三种处理方法：
 

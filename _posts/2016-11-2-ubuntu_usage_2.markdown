@@ -211,6 +211,18 @@ XMind是一款开源的思维导图工具，比FreeMind更友好。官网：
 
 https://www.xmind.net/
 
+# Chrome
+
+`sudo wget http://www.linuxidc.com/files/repo/google-chrome.list -P /etc/apt/sources.list.d/`
+
+`wget -q -O - https://dl.google.com/linux/linux_signing_key.pub  | sudo apt-key add -`
+
+`sudo apt update`
+
+`sudo apt-get install google-chrome-stable`
+
+`google-chrome-stable`
+
 # Fedora
 
 Fedora作为主要的Linux发行版之一，我虽然用的不多，但实际上这却是我最早接触的Linux发行版。后来换用Ubuntu，很大的原因是因为：这是Google为Android选择的开发平台。

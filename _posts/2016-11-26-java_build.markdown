@@ -235,7 +235,7 @@ https://zeroc.com/downloads/ice
 
 安装：
 
-```
+{% highlight bash %}
 wget https://zeroc.com/download/GPG-KEY-zeroc-release
 sudo apt-key add GPG-KEY-zeroc-release
 sudo apt-add-repository "deb http://zeroc.com/download/apt/ubuntu16.04 stable main"
@@ -243,7 +243,8 @@ sudo apt-get update
 sudo apt-get install zeroc-ice-all-runtime zeroc-ice-all-dev
 sudo apt-get install libssl-dev
 pip install zeroc-ice
-```
+{% endhighlight %}
+
 多语言demo：
 
 https://github.com/zeroc-ice/ice-demos
