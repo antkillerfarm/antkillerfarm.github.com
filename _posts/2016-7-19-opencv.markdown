@@ -126,14 +126,6 @@ https://github.com/liuruoze/EasyPR
 
 一个开源的中文车牌识别系统。
 
-http://v.kuaidadi.com/
-
-滴滴快的大数据平台
-
-http://www.cs.waikato.ac.nz/ml/weka/
-
-一个Java写的数据分析工具。
-
 http://echarts.baidu.com/echarts2/doc/example.html
 
 各种大数据展示用的图表。
@@ -326,10 +318,6 @@ http://www.cnblogs.com/ello/archive/2012/04/28/2475419.html
 
 浅析人脸检测之Haar分类器方法
 
-http://mp.weixin.qq.com/s/idz6b2rls97W4Iw6J-ubng
-
-美团点评SQL优化工具SQLAdvisor开源
-
 https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap
 
 深度学习论文阅读路线图
@@ -362,30 +350,6 @@ https://www.zhihu.com/question/20398418
 
 语音识别的技术原理是什么？
 
-http://www.newsmth.net/bbstcon.php?board=NLP&gid=15714
-
-旺旺客服文本关键词提取
-
-https://zhuanlan.zhihu.com/p/25928551
-
-用深度学习（CNN RNN Attention）解决大规模文本分类问题-综述和实践
-
-https://www.geekhub.cn/a/1163.html
-
-宋睿华：好玩的文本生成
-
-http://blog.csdn.net/sunlylorn/article/details/50607376
-
-seq2seq模型
-
-http://chuansong.me/n/521727951619
-
-Seq2Seq的DIY简介
-
-http://www.cnblogs.com/Determined22/p/6650373.html
-
-DL4NLP——seq2seq+attention机制的应用：文档自动摘要（Automatic Text Summarization）
-
 http://www.cnblogs.com/Determined22/
 
 Determined22的blog
@@ -397,14 +361,6 @@ http://blog.csdn.net/hjimce/article/category/3163421
 https://github.com/ematvey/tensorflow-seq2seq-tutorials
 
 一步步的seq2seq教程
-
-http://www.cnblogs.com/maybe2030/p/5427148.html
-
-文本深度表示模型——word2vec&doc2vec词向量模型
-
-https://www.zhihu.com/question/29978268
-
-如何用word2vec计算两个句子之间的相似度？
 
 http://www.cnblogs.com/xxey/p/4277181.html
 
@@ -421,6 +377,18 @@ http://www.infoq.com/cn/articles/we-are-bringing-learning-to-rank-to-elasticsear
 https://github.com/neozhaoliang/pywonderland/tree/master/
 
 如何用Python画各种著名数学图案
+
+https://pjreddie.com/darknet/yolo/
+
+YOLO: Real-Time Object Detection。一个基于神经网络的实时对象检测软件。
+
+http://mp.weixin.qq.com/s/JZ1ceGQDmQUaNW5wl6biLA
+
+TensorFlow实现流行机器学习算法教程汇集
+
+http://mp.weixin.qq.com/s/kbHzA3h-CfTRcnkViY37MQ
+
+详解CNN五大经典模型:Lenet，Alexnet，Googlenet，VGG，DRL
 
 ## 使用细节
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（六）——马氏距离, 自相关&互相关&卷积
+title:  数学狂想曲（六）——马氏距离, 自相关&互相关&卷积, NLP
 category: theory 
 ---
 
@@ -94,5 +94,190 @@ $$\langle a,b\rangle=a_0b_0+a_1b_1+\dots+a_nb_n$$
 《张量分析》，黄克智著。
 
 >注：黄克智，1927年生，固体力学家。江西中正大学本科+清华硕士+莫斯科大学博士（因应召回国，放弃博士学位）。清华大学工程力学系教授、工程力学研究所所长，中国科学院院士。断裂力学领域权威。
+
+# NLP
+
+自然语言处理（Natural Language Processing）是深度学习的主要应用领域之一。
+
+## 教程
+
+http://cs224d.stanford.edu/
+
+CS224d: Deep Learning for Natural Language Processing
+
+http://web.stanford.edu/class/cs224n/syllabus.html
+
+cs224d课程的课件
+
+http://demo.clab.cs.cmu.edu/NLP/
+
+CMU的NLP教程。该网页下方还有美国其他高校的NLP课程的链接。
+
+http://ccl.pku.edu.cn/alcourse/nlp/
+
+北京大学的NLP教程，特色：中文处理。
+
+## 书籍
+
+http://ccl.pku.edu.cn/alcourse/nlp/LectureNotes/Natural%20Language%20Processing%20with%20Python.pdf
+
+《Natural Language Processing with Python》，Steven Bird、Ewan Klein、Edward Loper著。这本书的作者们创建了著名的NLTK工具库。
+
+>注：Steven Bird，爱丁堡大学博士，墨尔本大学副教授。   
+>http://www.stevenbird.net/about.html
+
+>Ewan Klein，苏格兰人，哥伦比亚大学博士（1978年），爱丁堡大学教授。
+
+>Edward Loper，宾夕法尼亚大学博士。
+
+## 网站
+
+http://www.52nlp.cn/
+
+一个自然语言处理爱好者的群体博客。包括52nlp、rickjin、liwei等国内外华人大牛。
+
+http://www.shareditor.com/bloglistbytag/?tagname=%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%81%9A%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA
+
+实战课程：自己动手做聊天机器人
+
+http://www.newsmth.net/bbsdoc.php?board=NLP
+
+水木NLP板块
+
+http://www.icst.pku.edu.cn/lcwm/
+
+北京大学计算机科学技术研究所语言计算与互联网挖掘研究室
+
+https://github.com/rockingdingo/deepnlp
+
+NLP深度学习方面的代码库
+
+https://liweinlp.com/
+
+NLP专家李维的blog
+
+## 工具
+
+### Natural Language Toolkit(NLTK)
+
+官网：
+
+http://www.nltk.org/
+
+可使用nltk.download()下载相关nltk官方提供的各种资源。
+
+参考：
+
+http://www.cnblogs.com/baiboy/p/nltk3.html
+
+### OpenNLP
+
+http://opennlp.apache.org/
+
+### FudanNLP
+
+https://github.com/FudanNLP/fnlp
+
+### Stanford CoreNLP
+
+http://stanfordnlp.github.io/CoreNLP/
+
+### HanLP
+
+HanLP是一个目前留学日本的中国学生的作品。
+
+官网：
+
+http://hanlp.linrunsoft.com/
+
+作者blog：
+
+http://www.hankcs.com/
+
+Github：
+
+https://github.com/hankcs/HanLP/
+
+### THUCTC
+
+THUCTC(THU Chinese Text Classification)是由清华大学自然语言处理实验室推出的中文文本分类工具包。
+
+http://thuctc.thunlp.org/
+
+### gensim
+
+gensim是Python语言的计算文本相似度的程序包。
+
+http://radimrehurek.com/gensim/index.html
+
+### GloVe
+
+GloVe:Global Vectors for Word Representation
+
+https://nlp.stanford.edu/projects/glove/
+
+### textsum
+
+textsum是一个基于深度学习的文本自动摘要工具。
+
+https://github.com/tensorflow/models/tree/master/textsum
+
+http://www.jiqizhixin.com/article/1449
+
+### jieba
+
+https://github.com/fxsjy/jieba
+
+### NLPIR
+
+NLPIR汉语分词系统(又名ICTCLAS2013)，是中科院张华平博士的作品。官网：
+
+http://ictclas.nlpir.org/
+
+### 其他
+
+https://github.com/mozillazg/python-pinyin
+
+python版的汉字转拼音软件
+
+## 词性标注
+
+http://jacoxu.com/ictpos3-0%E6%B1%89%E8%AF%AD%E8%AF%8D%E6%80%A7%E6%A0%87%E8%AE%B0%E9%9B%86/
+
+ICTPOS3.0汉语词性标记集
+
+## 有用的资料
+
+http://www.newsmth.net/bbstcon.php?board=NLP&gid=15714
+
+旺旺客服文本关键词提取
+
+https://zhuanlan.zhihu.com/p/25928551
+
+用深度学习（CNN RNN Attention）解决大规模文本分类问题-综述和实践
+
+https://www.geekhub.cn/a/1163.html
+
+宋睿华：好玩的文本生成
+
+http://blog.csdn.net/sunlylorn/article/details/50607376
+
+seq2seq模型
+
+http://chuansong.me/n/521727951619
+
+Seq2Seq的DIY简介
+
+http://www.cnblogs.com/Determined22/p/6650373.html
+
+DL4NLP——seq2seq+attention机制的应用：文档自动摘要（Automatic Text Summarization）
+
+http://www.cnblogs.com/maybe2030/p/5427148.html
+
+文本深度表示模型——word2vec&doc2vec词向量模型
+
+https://www.zhihu.com/question/29978268
+
+如何用word2vec计算两个句子之间的相似度？
 
 

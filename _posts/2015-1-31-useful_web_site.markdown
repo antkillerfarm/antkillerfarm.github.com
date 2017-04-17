@@ -107,10 +107,6 @@ http://blog.shengbin.me/posts/multi-user-video-conference-based-on-webrtc
 
 基于WebRTC的多人视频会议
 
-https://github.com/mozillazg/python-pinyin
-
-python版的汉字转拼音软件
-
 http://blog.csdn.net/gzh0222/article/details/8540604
 
 lvs、haproxy、nginx 负载均衡的比较分析
@@ -118,6 +114,18 @@ lvs、haproxy、nginx 负载均衡的比较分析
 http://chongzhuang.windowszj.com/
 
 系统之家一键重装
+
+http://mp.weixin.qq.com/s/idz6b2rls97W4Iw6J-ubng
+
+美团点评SQL优化工具SQLAdvisor开源
+
+http://v.kuaidadi.com/
+
+滴滴快的大数据平台
+
+http://www.cs.waikato.ac.nz/ml/weka/
+
+一个Java写的数据分析工具。
 
 ## 有用的blog
 
