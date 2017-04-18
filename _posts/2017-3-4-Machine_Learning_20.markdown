@@ -6,15 +6,29 @@ category: theory
 
 # loss function详解
 
-Mean Squared Error(MSE)/Mean Squared Deviation(MSD)
+**Mean Squared Error(MSE)/Mean Squared Deviation(MSD)**
 
 $$\operatorname{MSE}=\frac{1}{n}\sum_{i=1}^n(\hat{Y_i} - Y_i)^2$$
 
-Symmetric mean absolute percentage error (SMAPE or sMAPE)
+**Symmetric Mean Absolute Percentage Error(SMAPE or sMAPE)**
+
+MSE定义的误差，实际上是向量空间中的欧氏距离，这也可称为绝对误差。而有些情况下，可能相对误差（即百分比误差）更有意义些：
 
 $$\text{SMAPE} = \frac 1 n \sum_{t=1}^n \frac{\left|F_t-A_t\right|}{(A_t+F_t)/2}$$
 
+上式的问题在于$$A_t+F_t\le 0$$时，该值无意义。为了解决该问题，可用如下变种：
+
 $$\text{SMAPE} = \frac{100\%}{n} \sum_{t=1}^n \frac{|F_t-A_t|}{|A_t|+|F_t|}$$
+
+**Mean Absolute Error(MAE)**
+
+$$\mathrm{MAE} = \frac{1}{n}\sum_{i=1}^n \left| f_i-y_i\right| =\frac{1}{n}\sum_{i=1}^n \left| e_i \right|$$
+
+这个是MSE的1范数版本。
+
+**Mean Percentage Error(MPE)**
+
+$$\text{MPE} = \frac{100\%}{n}\sum_{t=1}^n \frac{a_t-f_t}{a_t}$$
 
 # word2vec
 
@@ -120,11 +134,11 @@ CMU的邢波（Eric Xing）所开的概率图模型课程。
 
 2.**推断**。根据模型/数据，推断答案。
 
-$$e.g.:P(x_i|\mathcal{D})$$
+$$\text{e.g.}:P(x_i|\mathcal{D})$$
 
 3.**学习**。根据数据确定哪个模型是正确的。
 
-$$e.g.:\mathcal{M}=\arg\max_{\mathcal{M}\in M}F(\mathcal{D};\mathcal{M})$$
+$$\text{e.g.}:\mathcal{M}=\arg\max_{\mathcal{M}\in M}F(\mathcal{D};\mathcal{M})$$
 
 # 机器学习语录
 
