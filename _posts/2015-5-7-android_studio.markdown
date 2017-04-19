@@ -315,8 +315,10 @@ POJO（Plain Ordinary Java Object）：简单的Java对象。
 
 这个名词被创造出来，用以和JavaBean做一个区分。后者通常是被容器所创建，还要实现Serializable接口用于实现Bean的持久性。
 
-## IntelliJ IDEA快捷键
+## IntelliJ IDEA
 
 Alt+Enter：自动import
+
+双编辑窗口：在代码的标签上右键->Split Horizontally
 
 

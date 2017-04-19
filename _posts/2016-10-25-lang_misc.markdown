@@ -168,6 +168,10 @@ https://mousieur-g.github.io/
 
 一个R机器学习实战的blog
 
+http://yanping.me/shiny-tutorial/
+
+Shiny中文教程
+
 ## 交互环境
 
 R语言有个和python类似的命令行交互环境。

@@ -182,22 +182,6 @@ https://github.com/FudanNLP/fnlp
 
 http://stanfordnlp.github.io/CoreNLP/
 
-### HanLP
-
-HanLP是一个目前留学日本的中国学生的作品。
-
-官网：
-
-http://hanlp.linrunsoft.com/
-
-作者blog：
-
-http://www.hankcs.com/
-
-Github：
-
-https://github.com/hankcs/HanLP/
-
 ### THUCTC
 
 THUCTC(THU Chinese Text Classification)是由清华大学自然语言处理实验室推出的中文文本分类工具包。
@@ -233,6 +217,34 @@ https://github.com/fxsjy/jieba
 NLPIR汉语分词系统(又名ICTCLAS2013)，是中科院张华平博士的作品。官网：
 
 http://ictclas.nlpir.org/
+
+### HanLP
+
+HanLP是一个目前留学日本的中国学生的作品。
+
+官网：
+
+http://hanlp.linrunsoft.com/
+
+作者blog：
+
+http://www.hankcs.com/
+
+Github：
+
+https://github.com/hankcs/HanLP/
+
+从作者的名气来说，HanLP无疑是最低的，性能也不见得有多好。然而对于初学者来说，这却是最适合的工具。这主要体现在以下几个方面：
+
+1.中文处理能力。NLTK和OpenNLP对中文支持非常差，这里不光是中文分词的问题，有些NLP算法需要一定的语言模型数据，但浏览NLTK官方的模型库，基本找不到中文模型数据。
+
+2.jieba、IK之类的功能太单一，多数局限在中文分词方面领域。gensim、THUCTC专注于NLP的某一方面，也不是通用工具。
+
+3.NLPIR和Stanford CoreNLP算是功能最强的工具包了。前者的问题在于收费不开源，后者的问题在于缺少中文文档。FudanNLP的相关文档较少，文档友好度不如HanLP。
+
+4.HanLP在主页上提供了相关算法的blog，便于初学者快速掌握相关概念。其词典是明文发布，便于用户修改。HanLP执行时，会将明文词典以特定结构缓存，以提高执行效率。
+
+>注：不要以为中文有分词问题，就比别的语言复杂，英文还有词根问题呢。。。每种语言都不简单。
 
 ### 其他
 
@@ -279,5 +291,13 @@ http://www.cnblogs.com/maybe2030/p/5427148.html
 https://www.zhihu.com/question/29978268
 
 如何用word2vec计算两个句子之间的相似度？
+
+https://github.com/Gii16/TreeDrawer
+
+A small tool to draw a only-text tree as the result of stanford coreNLP
+
+http://www.cnblogs.com/CheeseZH/p/5768389.html
+
+依存句法分析与语义依存分析的区别
 
 

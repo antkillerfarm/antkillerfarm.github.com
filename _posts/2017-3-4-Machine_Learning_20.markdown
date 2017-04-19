@@ -140,6 +140,8 @@ $$\text{e.g.}:P(x_i|\mathcal{D})$$
 
 $$\text{e.g.}:\mathcal{M}=\arg\max_{\mathcal{M}\in M}F(\mathcal{D};\mathcal{M})$$
 
+![](/images/article/PGM.png)
+
 # 机器学习语录
 
 这里收录一些网上的只言片语式的心得，以区别于一般的教程。
@@ -209,5 +211,7 @@ $$\text{e.g.}:\mathcal{M}=\arg\max_{\mathcal{M}\in M}F(\mathcal{D};\mathcal{M})$
 | LASSO | Least Absolute Shrinkage and Selection Operator | 最小绝对收缩和选择算子 |  |
 | CRF | Conditional Random Field | 条件随机场 |  |
 | MSE/MSD | Mean Squared Error/Mean Squared Deviation | 均方误差 |  |
-
+| SMAPE | Symmetric Mean Absolute Percentage Error | 对称平均绝对百分比误差 |  |
+| MAE | Mean Absolute Error | 平均绝对值误差 |  |
+| MPE | Mean Percentage Error | 平均百分比误差 |  |
 

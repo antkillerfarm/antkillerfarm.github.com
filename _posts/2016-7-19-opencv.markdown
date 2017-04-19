@@ -390,6 +390,14 @@ http://mp.weixin.qq.com/s/kbHzA3h-CfTRcnkViY37MQ
 
 详解CNN五大经典模型:Lenet，Alexnet，Googlenet，VGG，DRL
 
+http://blog.csdn.net/u012328159/article/details/69898137
+
+几种常见的激活函数
+
+http://www.csdn.net/article/2014-06-06/2820111-100-Interesting-Data-Sets-for-Statistics/1
+
+100+诡异的数据集
+
 ## 使用细节
 
 ### saturate_cast
