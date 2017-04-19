@@ -24,7 +24,7 @@ $$\text{SMAPE} = \frac{100\%}{n} \sum_{t=1}^n \frac{|F_t-A_t|}{|A_t|+|F_t|}$$
 
 $$\mathrm{MAE} = \frac{1}{n}\sum_{i=1}^n \left| f_i-y_i\right| =\frac{1}{n}\sum_{i=1}^n \left| e_i \right|$$
 
-这个是MSE的1范数版本。
+这个可以看作是MSE的1范数版本。
 
 **Mean Percentage Error(MPE)**
 
@@ -141,6 +141,8 @@ $$\text{e.g.}:P(x_i|\mathcal{D})$$
 $$\text{e.g.}:\mathcal{M}=\arg\max_{\mathcal{M}\in M}F(\mathcal{D};\mathcal{M})$$
 
 ![](/images/article/PGM.png)
+
+上图是PGM的一个示例。
 
 # 机器学习语录
 
