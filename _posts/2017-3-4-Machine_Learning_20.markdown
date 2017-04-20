@@ -52,6 +52,12 @@ word2vec包中还有一个word2phrase的程序，这个程序可以根据统计�
 
 我以金庸的小说为语料进行测试。从结果来看，这种方法对于人名、地名、武功招式名等专有名词，分词效果较好。但对于具有语法结构的句子，分词效果较差。比如“那人”其实是两个单字词，但却被word2phrase认为是一个双字词。
 
+`./word2vec -train resultbig.txt -output vectors.bin -cbow 0 -size 200 -window 5 -negative 0 -hs 1 -sample 1e-3 -threads 12 -binary 1`
+
+`./distance vectors.bin`
+
+训练之后的结果文件中，保存着每个词的向量。可将binary选项设为0，来查看相应结果的明文。
+
 参考：
 
 http://blog.csdn.net/itplus/article/details/37969519
@@ -59,6 +65,8 @@ http://blog.csdn.net/itplus/article/details/37969519
 https://github.com/tmikolov/word2vec
 
 http://wei-li.cnblogs.com/p/word2vec.html
+
+http://www.cnblogs.com/wowarsenal/p/3293586.html
 
 # HMM
 
@@ -124,7 +132,7 @@ http://www.cs.cmu.edu/~epxing/Class/10708-14/lectures/
 
 CMU的邢波（Eric Xing）所开的概率图模型课程。
 
-## 贝叶斯网络
+## 概述
 
 概率图模型的三要素：Graph：$$\mathcal{G}$$、Model：$$\mathcal{M}$$和Data：$$\mathcal{D}\equiv\{X^{(i)}_1,\dots,X^{(i)}_m\}^N_{i=1}$$。
 
@@ -142,7 +150,9 @@ $$\text{e.g.}:\mathcal{M}=\arg\max_{\mathcal{M}\in M}F(\mathcal{D};\mathcal{M})$
 
 ![](/images/article/PGM.png)
 
-上图是PGM的一个示例。
+上图是PGM的一个示例。其中$$X_i$$表示随机变量，图中共有8个随机变量，假设它们均为二值变量，则整个状态空间共有$$2^8$$种组合。遍历这样大的状态空间无疑是一件极为费力事情。
+
+
 
 # 机器学习语录
 

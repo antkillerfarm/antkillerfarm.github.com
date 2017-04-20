@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  linux学习心得（二）, 知名数据集, Python（二）
+title:  linux学习心得（二）, 知名数据集, Python（二）, 运维工具集
 category: technology 
 ---
 
@@ -331,4 +331,44 @@ otherStyleTime = time.strftime("%Y/%m/%d %H:%M:%S", timeArray)
 L.append(var)   #追加元素
 L.extend(list)  #追加list，即合并list到L上
 {% endhighlight %}
+
+# 运维工具集
+
+## Zabbix
+
+zabbix是一个基于WEB界面的提供分布式系统监视以及网络监视功能的企业级的开源解决方案。
+
+http://www.zabbix.com/
+
+## Cacti
+
+Cacti是一套基于PHP,MySQL,SNMP及RRDTool开发的网络流量监测图形分析工具。
+
+http://cacti.net/
+
+## Nagios
+
+Nagios是一款开源的免费网络监视工具，能有效监控Windows、Linux和Unix的主机状态，交换机路由器等网络设备，打印机等。
+
+https://www.nagios.org/
+
+# Ganglia
+
+Ganglia是伯克利开发的一个集群监控软件。可以监视和显示集群中的节点的各种状态信息，比如如：cpu 、mem、硬盘利用率， I/O负载、网络流量情况等，同时可以将历史数据以曲线方式通过php页面呈现。
+
+官网：
+
+http://ganglia.sourceforge.net/
+
+## Jenkins
+
+Jenkins是一个开源软件项目，旨在提供一个开放易用的软件平台，使软件的持续集成变成可能。
+
+https://jenkins.io/index.html
+
+## Walle
+
+Walle一个web部署系统工具，配置简单、功能完善、界面流畅、开箱即用！支持git、svn版本管理，支持各种web代码发布，PHP，Python，JAVA等代码的发布、回滚，可以通过web来一键完成。
+
+https://walle-web.io/
 
