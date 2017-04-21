@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Java构建工具, ZeroC ICE
+title:  Java构建工具, ZeroC ICE, word2vec
 category: technology 
 ---
 
@@ -267,3 +267,56 @@ Github：
 
 https://github.com/hprose
 
+# word2vec
+
+word2vec是Google于2013年开源推出的一个用于获取word vector的工具包。作者是Tomas Mikolov。
+
+Github：
+
+https://github.com/tmikolov/word2vec
+
+>注：Tomas Mikolov，捷克布尔诺科技大学博士。先后在Google、Facebook担任研究员。
+
+word2vec包中还有一个word2phrase的程序，这个程序可以根据统计信息由单词生成短语。考虑到中文的字和词之间的关系，实际上也可以用它来进行无先验数据的分词。
+
+>注：NLP中的先验数据，最出名的当属分词词典。除此之外，还包括HMM的转移矩阵表等。
+
+其一般方法为：
+
+1.对原始语料按字切分，以空格分隔，相当于认为一个字就是一个词，即**单字成词**。
+
+2.使用word2phrase**组字成词**。
+
+`time ./word2phrase -train 1.txt -output 2.txt -threshold 100 -debug 2`
+
+3.由于word2phrase最多只考虑到2-gram。因此，对于超过3个字以上的词语，需要迭代执行word2phrase。
+
+我以金庸的小说为语料进行测试。从结果来看，这种方法对于人名、地名、武功招式名等专有名词，分词效果较好。但对于具有语法结构的句子，分词效果较差。比如“那人”其实是两个单字词，但却被word2phrase认为是一个双字词。
+
+`./word2vec -train resultbig.txt -output vectors.bin -cbow 0 -size 200 -window 5 -negative 0 -hs 1 -sample 1e-3 -threads 12 -binary 1`
+
+`./distance vectors.bin`
+
+训练之后的结果文件中，保存着每个词的向量。可将binary选项设为0，来查看相应结果的明文。
+
+明文和二进制数据之间的转换可使用gensim工具，参见：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/nlp/hello_gensim.py
+
+参考：
+
+http://blog.csdn.net/itplus/article/details/37969519
+
+word2vec 中的数学原理详解
+
+http://wei-li.cnblogs.com/p/word2vec.html
+
+文本深度表示模型Word2Vec
+
+http://www.cnblogs.com/wowarsenal/p/3293586.html
+
+用中文把玩Google开源的Deep-Learning项目word2vec
+
+http://www.jianshu.com/p/05800a28c5e4
+
+使用 word2vec 训练wiki中英文语料库

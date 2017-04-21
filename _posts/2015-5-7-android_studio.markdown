@@ -321,4 +321,14 @@ Alt+Enter：自动import
 
 双编辑窗口：在代码的标签上右键->Split Horizontally
 
+# Machine Learning之Java篇
+
+## ND4J
+
+http://nd4j.org/
+
+## DL4J
+
+https://deeplearning4j.org/
+
 

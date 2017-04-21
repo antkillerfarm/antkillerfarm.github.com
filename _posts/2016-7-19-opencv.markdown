@@ -398,6 +398,18 @@ http://www.csdn.net/article/2014-06-06/2820111-100-Interesting-Data-Sets-for-Sta
 
 100+诡异的数据集
 
+http://mp.weixin.qq.com/s/dvuX3Ih_DZrv0kgqFn8-lg
+
+卷积神经网络结构变化——可变形卷积网络deformable convolutional networks
+
+http://mp.weixin.qq.com/s/upblqKf0m_15o4L1fF0EEQ
+
+深度学习模型转换器
+
+http://mp.weixin.qq.com/s/Cg9tHG1YgDCdI3NPYl5-vQ
+
+如何用Soft-NMS实现目标检测并提升准确率
+
 ## 使用细节
 
 ### saturate_cast

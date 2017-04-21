@@ -126,6 +126,18 @@ DosBox是Linux平台玩DOS老游戏的法宝。
 
 `mount c ~/dosprom`
 
+## 大文件处理
+
+在“大数据”时代，我们会经常遇到有大文本文件（上 GB 或更大）的情况。传统的文本编辑软件对处理这样的大文件不太有效，当我们试图打开一个大文件时会经常由于内存不足而郁闷的不行。
+
+如果你只需要查看一个文本文件，并不对它做编辑，可以考虑下glogg。
+
+`sudo apt-get install glogg`
+
+如果需要修改的话，可以使用JOE。
+
+`sudo apt-get install joe`
+
 # 知名数据集
 
 ## MNIST
