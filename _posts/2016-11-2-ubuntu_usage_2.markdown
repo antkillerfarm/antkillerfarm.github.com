@@ -223,6 +223,14 @@ https://www.xmind.net/
 
 `google-chrome-stable`
 
+安装flash：
+
+1、首先在adobe官网下载tar.gz格式的linux安装包，之后将其解压。
+
+2.`sudo gedit /usr/share/applications/google-chrome.desktop`
+
+3.将`Exec=/usr/bin/google-chrome-stable %U`后，添加`--ppapi-flash-path=path/libpepflashplayer.so --ppapi-flash-version=<version>`
+
 # Fedora
 
 Fedora作为主要的Linux发行版之一，我虽然用的不多，但实际上这却是我最早接触的Linux发行版。后来换用Ubuntu，很大的原因是因为：这是Google为Android选择的开发平台。

@@ -127,6 +127,10 @@ http://www.cs.waikato.ac.nz/ml/weka/
 
 一个Java写的数据分析工具。
 
+http://mp.weixin.qq.com/s/Bk5k6vRG4Rq4iCtmtYDEGQ
+
+Leaf——美团点评分布式ID生成系统
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

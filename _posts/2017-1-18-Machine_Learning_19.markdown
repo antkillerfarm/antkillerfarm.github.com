@@ -1,28 +1,144 @@
 ---
 layout: post
-title:  机器学习（十九）——KNN
+title:  机器学习（十九）——PageRank算法, KNN, Probabilistic Robotics
 category: theory 
 ---
 
-# P-R、ROC和AUC
+# PageRank算法
 
-很多学习器是为测试样本产生一个实值或概率预测，然后将这个预测值与一个分类阈值（threshold）进行比较，若大于阈值则分为正类，否则为反类。这个实值或概率预测结果的好坏，直接决定了学习器的泛化能力。实际上，根据这个实值或概率预测结果，我们可将测试样本进行排序，“最可能”是正例的排在最前面，“最不可能”是正例的排在最后面。这样，分类过程就相当于在这个排序中以某个“截断点”（cut point）将样本分为两部分，前一部分判作正例，后一部分则判作反例。
+## 概述（续）
 
-在不同的应用任务中，我们可根据任务需求来采用不同的截断点，例如若我们更重视 “查准率”（precision），则可选择排序中靠前的位置进行截断，若更重视“查全率”（recall），则可选择靠后的位置进行截断。
+对于某个互联网网页A来说，该网页PageRank的计算基于以下两个基本假设： 
 
-对于二分类问题，可将样例根据其真实类别与学习器预测类别的组合划分为真正例（true positive）、假正例（false positive）、真反例（true negative）和假反例（true negative）。
+**数量假设**：在Web图模型中，如果一个页面节点接收到的其他网页指向的入链数量越多，那么这个页面越重要。
 
-查准率P和查全率R的定义如下：
+**质量假设**：指向页面A的入链质量不同，质量高的页面会通过链接向其他页面传递更多的权重。所以越是质量高的页面指向页面A，则页面A越重要。
 
-$$P=\frac{TP}{TP+FP},R=\frac{TP}{TP+FN}$$
+利用以上两个假设，PageRank算法刚开始赋予每个网页相同的重要性得分，通过迭代递归计算来更新每个页面节点的PageRank得分，直到得分稳定为止。 PageRank计算得出的结果是网页的重要性评价，这和用户输入的查询是没有任何关系的，即算法是主题无关的。
 
-以P和R为坐标轴，所形成的曲线就是P-R曲线。
+**优点**：
 
-ROC（Receiver operating characteristic）曲线的纵轴是真正例率（True Positive Rate，TPR），横轴是假正例率（False Positive Rate，FPR）。其定义如下：
+这是一个与查询无关的静态算法，所有网页的PageRank值通过离线计算获得；有效减少在线查询时的计算量，极大降低了查询响应时间。
 
-$$TPR=\frac{TP}{TP+FN},FPR=\frac{FP}{TN+FP}$$
+**缺点**：
 
-ROC曲线下方的面积被称为AUC（Area Under ROC Curve）。
+1）人们的查询具有主题特征，PageRank忽略了主题相关性，导致结果的相关性和主题性降低
+
+2）旧的页面等级会比新页面高。因为即使是非常好的新页面也不会有很多上游链接，除非它是某个站点的子站点。
+
+## 马尔可夫链
+
+Markov链的基本定义参见《机器学习（十六）》。
+
+这里补充一些定义：
+
+**定义1**：设C为状态空间的一个子集，如果从C内任一状态i不能到C外的任何状态，则称C为**闭集**。除了整个状态空间之外，没有别的闭集的Markov链被称为**不可约的**。
+
+如果用状态转移图表示Markov链的话，上面的定义表征了Markov链的**连通性**。
+
+**定义2**：如果有正整数d，只有当$$n=d,2d,\dots$$时，$$P_{ii}^{(n)}>0$$，或者说当n不能被d整除时，$$P_{ii}^{(n)}=0$$，则称i状态为**周期性状态**。如果除了$$d=1$$之外，使$$P_{ii}^{(n)}>0$$的各n值没有公约数，则称该状态i为**非周期性状态**。
+
+这个定义表征了Markov链各状态的**独立性**。
+
+**定义3**：
+
+$$f_{ij}^{(n)}=P(X_{m+v}\neq j,X_{m+n}=j|X_m=i)$$
+
+其中，$$n>1,1\le v\le n-1$$。
+
+上式表示由i出发，首次到达j的概率，也叫**首中概率**。
+
+相应的还有**最终概率**：
+
+$$f_{ij}=\sum_{n=1}^\infty f_{ij}^{(n)}$$
+
+**定义4**：
+
+如果$$f_{ii}=1$$, 则称状态i为**常返**的，如果$$f_{ii}<1$$, 则称状态i为**非常返**的。
+
+令$$u_i=\sum_{n=1}^\infty nf_{ii}^{(n)}$$，则$$u_i$$表示由i出发i，再返回i的**平均返回时间**。
+
+如果$$u_i=\infty$$，则称i为**零常返**的。
+
+常返态表征Markov链的极限分布。显然如果长期来看，状态i“入不敷出”的话，则其最终的极限概率为0。
+
+根据上面的定义，还可得到Markov链的三个推论：
+
+**推论1**：有限状态的不可约非周期Markov链必存在平稳分布。
+
+**推论2**：若不可约Markov链的所有状态是非常返或零常返的，则不存在平稳分布。
+
+**推论3**：若$$X_j$$是不可约的非周期的Markov链的平稳分布，则$$\lim_{n\to\infty}P_{ij}^{(n)}=X_j$$，即极限分布等于平稳分布。
+
+## 简易推导
+
+![](/images/article/page_rank.jpg)
+
+上图是一个Web图模型的示例。其中的节点表示网页，箭头表示网页链接。因此，从图论的角度来说，这是一个有向图。而从随机过程的角度，这也可以看做是一个Markov链。
+
+上图中，A有两个入链B和C，则：
+
+$$PR(A)=PR(B)+PR(C)$$
+
+然而图中除了C之外，B和D都不止有一条出链，所以上面的计算式并不准确：
+
+$$PR(A) = \frac{PR(B)}{2} + \frac{PR(C)}{1}$$
+
+一般化，即：
+
+$$PR(A)= \frac{PR(B)}{L(B)}+ \frac{PR(C)}{L(C)}$$
+
+其中，L表示外链个数。
+
+更一般化，可得：
+
+$$PR(u) = \sum_{v \in B_u} \frac{PR(v)}{L(v)}$$
+
+这里有两种异常情况需要处理。
+
+1.互联网中不乏一些没有出链的网页，为了满足Markov链的收敛性，设定其对所有的网页（包括它自己）都有出链。
+
+2.互联网中一个网页只有对自己的出链，或者几个网页的出链形成一个循环圈。那么在不断地迭代过程中，这一个或几个网页的PR值将只增不减，显然不合理。
+
+对于这种情况，我们假定有一个确定的概率$$\alpha$$会输入网址直接跳转到一个随机的网页，并且跳转到每个网页的概率是一样的。即：
+
+$$PR(p_{i}) = \alpha \sum_{p_{j} \in M_{p_{i}}} \frac{PR(p_{j})}{L(p_{j})} + \frac{(1 - \alpha)}{N}$$
+
+$$\alpha$$也叫阻尼系数，一般设定为0.85。
+
+由Markov链的收敛性可知，无论每个网页的PR初始值如何设定，都不影响最终的PR值。
+
+在实际计算中，由于网页数量众多，而其中的链接关系相对较少，因此这个计算过程，实际上是一个巨维稀疏矩阵的凸优化问题，此处不再赘述。
+
+## TextRank
+
+TextRank算法是PageRank算法在NLP领域的扩展，被广泛用于自动摘要和提取关键词。
+
+将原文本拆分为句子，在每个句子中过滤掉停用词（可选），并只保留指定词性的单词（可选）。由此可以得到句子的集合和单词的集合。
+
+每个单词作为TextRank中的一个节点。假设一个句子依次由下面的单词组成：$$w_1,\dots,w_n$$。从中取出k个连续的单词序列，组成一个窗口。我们认为窗口中任意两个单词间存在一个无向边，从而构建出一个图模型。
+
+对该图模型应用PageRank算法，可得：
+
+$$WS(V_i)=(1-d)+d\sum_{V_j \in In(V_i)}\frac{w_{ji}}{\sum_{V_k \in Out(V_j)}w_{jk}}WS(V_j)$$
+
+上式的W为权重（也可叫做结点相似度），一般采用以下定义：
+
+$$W(S_i,S_j)=\frac{|\{w_k|w_k\in S_i \& w_k\in S_j\}|}{\log(|S_i|)+\log(|S_j|)}$$
+
+其中，$$\vert S_i\vert$$是句子i的单词数。
+
+上面说的是关键词的计算方法。计算自动摘要的时候，将句子定义为结点，并认为全部句子都是相邻的即可。自动摘要所用的权重函数，一般采用BM25算法。
+
+## 参考
+
+http://www.cnblogs.com/rubinorth/p/5799848.html
+
+http://blog.csdn.net/hguisu/article/details/7996185
+
+http://www.docin.com/p-1231683333.html
+
+http://www.docin.com/p-630952720.html
 
 # KNN
 
@@ -59,37 +175,6 @@ $$X_{m\{n+1\}}$$和预测值$$x_{n+1}$$组成了扩展向量$$[X_{m\{n+1\}},x_{n
 http://www.doc88.com/p-1416660147532.html
 
 KNN算法在股票预测中的应用
-
-# 异常点检测
-
-http://chuansong.me/n/377440751130
-
-http://jiangshuxia.9.blog.163.com/blog/static/3487586020083662621887/
-
-http://www.cnblogs.com/fengfenggirl/p/iForest.html
-
-# 高斯过程回归
-
-从大的分类来说，机器学习的算法可分为两类：
-
-1.定义一个模型，用训练数据训练模型的参数，然后用训练好的模型进行预测。这种方法的缺点在于，预测效果和模型与样本的匹配程度有关。比如对非线性样本采用线性模型，其预测效果通常不会太好。但是增加模型的复杂度，又会导致过拟合。
-
-2.定义一个函数分布，赋予每一种可能的函数一个先验概率，可能性越大的函数，其先验概率越大。但是可能的函数往往为一个不可数集，即有无限个可能的函数，随之引入一个新的问题：如何在有限的时间内对这些无限的函数进行选择？一种有效解决方法就是高斯过程回归(Gaussian process regression，GPR)。
-
->注：Radford M. Neal，1956年生，加拿大科学家。多伦多大学博士（1995）和教授。贝叶斯神经网络的发明人。导师为Geoffrey Hinton。   
->个人主页：http://www.cs.toronto.edu/~radford/
-
->Danie G. Krige，1919～2013，南非矿业工程师和统计学家，威特沃特斯兰德大学教授。地理统计学早期的代表人物之一。
-
-http://www.cnblogs.com/hxsyl/p/5229746.html
-
-https://mqshen.gitbooks.io/prml/content/Chapter6/gaussian/gaussian_processes_regression.html
-
-http://www.gaussianprocess.org/gpml/chapters/RW.pdf
-
-http://people.cs.umass.edu/~wallach/talks/gp_intro.pdf
-
-http://wenku.baidu.com/view/72f80113915f804d2b16c173.html
 
 # Probabilistic Robotics
 
@@ -151,69 +236,4 @@ $$\begin{align}
 \\&=\eta P(z_t\vert x_t)\int P(x_t\vert u_t,x_{t-1})P(x_{t-1}\vert u_1,z_1,\dots,z_{t-1})\mathrm{d}x_{t-1}(\text{Markov})
 \\&=\eta P(z_t\vert x_t)\int P(x_t\vert u_t,x_{t-1})\mathbf{Bel(x_{t-1})}\mathrm{d}x_{t-1}
 \end{align}$$
-
-上式也可以写作：
-
-**预测**：
-
-$$\overline{\mathbf{Bel(x_t)}}=\int P(x_t\vert u_t,x_{t-1})\mathbf{Bel(x_{t-1})}\mathrm{d}x_{t-1}$$
-
-**修正**：
-
-$$\mathbf{Bel(x_t)}=\eta P(z_t\vert x_t)\overline{\mathbf{Bel(x_t)}}$$
-
-熟悉卡尔曼滤波的同学大概已经看出来了。没错！贝叶斯过滤器是一大类算法的统称。这些算法包括Kalman filters、Particle filters、Hidden Markov models、Dynamic Bayesian networks、Partially Observable Markov Decision Processes (POMDPs)等。
-
-## 递归最小二乘法
-
-http://www.blog.huajh7.com/adaptive-filters-lms-rls-kalman-filter-1/
-
-## 卡尔曼滤波
-
->注：Rudolf (Rudi) Emil Kálmán，1930～2016，匈牙利出生的美国科学家。哥伦比亚大学博士（1957），先后执教于斯坦福大学和佛罗里达大学。现代控制理论的里程碑人物，美国科学院院士。   
->卡尔曼滤波从纯数学的角度讲，并没有多大意义。因此，主流数学家们在很长一段时间内，并不承认Kálmán是数学家。只是由于卡尔曼滤波在工程界的巨大影响力，才不得不于2012年，授予其美国数学协会院士。
-
-Kalman filters是一种高斯线性滤波器。
-
-参考：
-
-http://www.cs.unc.edu/~welch/media/pdf/kalman_intro.pdf
-
-Gregory Francis Welch写的卡尔曼滤波科普文。
-
->注：Gregory Francis Welch，北卡罗莱娜大学博士（1997）。中佛罗里达大学教授。
-
-http://www.cs.unc.edu/~welch/kalman/media/misc/kalman_intro_chinese.zip
-
-上文的中文版。
-
-https://zhuanlan.zhihu.com/p/21294526
-
-知乎诸位大神的科普文。
-
-http://www.docin.com/p-976961701.html
-
-动态相对定位中自适应滤波方法的研究
-
-《自适应动态导航定位》，杨元喜著。
-
->注：杨元喜，1956年生，大地测量学家。中国科学院院士。
-
-# 自适应滤波器
-
-《自适应滤波器原理》，Simon Haykin著。
-
->注：Simon Haykin，英国伯明翰大学博士，加拿大麦克马斯特大学教授。加拿大皇家学会会员。自适应信号处理领域的权威。
-
-## 基本估计
-
-三种基本的信息处理运算：
-
-**滤波（Filter）**：利用$$[0,t]$$的数据，来估计t时刻信息的运算过程。
-
-**平滑（Smoothing）**：利用$$[0,t]$$的数据，来估计$$t'(t'<t)$$时刻信息的运算过程。
-
-**预测（Prediction）**：利用$$[0,t]$$的数据，来估计$$t+\tau(\tau>0)$$时刻信息的运算过程。
-
-可见，滤波和预测是实时运算，而平滑是非实时运算。
 

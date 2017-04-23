@@ -131,6 +131,10 @@ http://maven.aliyun.com/nexus/content/groups/public
 
 本来国内的OSChina有一个Maven mirror。但现在已经不可用了。
 
+http://jcenter.bintray.com
+
+jcenter是JFrog的产品，后者专注于maven部署，因此该网站拥有的jar最全且新，速度也不慢。
+
 ### Eclipse工程转为Maven工程
 
 选择项目，右键点击->Configure->Convert to Maven Project

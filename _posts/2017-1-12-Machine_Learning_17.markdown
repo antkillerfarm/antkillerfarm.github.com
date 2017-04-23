@@ -247,3 +247,4 @@ http://www.wsdm-conference.org/2010/proceedings/docs/p81.pdf
 | T4 | milk, tea | T9 | bread, cream, milk, tea |
 | T5 | bread, cake, milk | T10 | bread, milk, tea |
 
+**定义一**：设$$I=\{i_1,i_2,\dots,i_m\}$$，是m个不同的项目的集合，每个$$i_k$$称为一个**项目**。项目的集合I称为**项集**。其元素的个数称为项集的长度，长度为k的项集称为k-项集。引例中每个商品就是一个项目，项集为$$I=\{bread, beer, cake,cream, milk, tea\}$$，I的长度为6。

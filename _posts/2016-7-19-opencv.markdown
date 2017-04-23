@@ -410,6 +410,18 @@ http://mp.weixin.qq.com/s/Cg9tHG1YgDCdI3NPYl5-vQ
 
 如何用Soft-NMS实现目标检测并提升准确率
 
+http://mp.weixin.qq.com/s/YRwGwelyA3VOYZ4XGAjUBw
+
+CNN 感受野首次可视化：深入解读及计算指南
+
+http://mp.weixin.qq.com/s/UkZdUcdz7h4DqcyjSbNncw
+
+zi2zi：用条件生成对抗网络玩转中文书法，绝妙汉字字体自动生成
+
+http://mp.weixin.qq.com/s/V-QCRXt5wAfSCiNT955W0A
+
+外卖订单量预测异常报警模型实践
+
 ## 使用细节
 
 ### saturate_cast
@@ -481,5 +493,4 @@ Probabilistic Models of Discrete Data
 http://speech.ee.ntu.edu.tw/~tlkagk/courses_MLDS17.html
 
 台湾大学李宏毅副教授的深度学习课程
-
 

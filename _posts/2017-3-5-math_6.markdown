@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（六）——马氏距离, 自相关&互相关&卷积, NLP
+title:  数学狂想曲（六）——马氏距离, NLP
 category: theory 
 ---
 
@@ -52,26 +52,6 @@ $$d_M(x,y)=\sqrt{(\frac{x_1-y_1}{s_1})^2+\dots+(\frac{x_p-y_p}{s_p})^2}=\sqrt{(x
 3）还有一种情况，满足了条件总体样本数大于样本的维数，但是协方差矩阵的逆矩阵仍然不存在，比如A（3，4），B（5，6）；C（7，8），这种情况是因为这三个样本在其所处的二维空间平面内共线。这种情况下，也采用欧式距离计算。
 
 4）在实际应用中“总体样本数大于样本的维数”这个条件是很容易满足的，而所有样本点出现3）中所描述的情况是很少出现的，所以在绝大多数情况下，马氏距离是可以顺利计算的，但是马氏距离的计算是不稳定的，不稳定的来源是协方差矩阵，这也是马氏距离与欧式距离的最大差异之处。
-
-# 自相关&互相关&卷积
-
-![](/images/article/Comparison_convolution_correlation.svg)
-
-1.**自相关（Autocorrelation）**。这个最简单，就是平移之后，自己和自己比。显然当平移为0的时候，自相关值最大，因此这类操作通常用于信号的检测。信号接收端模拟发射端的信号序列，对实际接收到的信号进行相关操作，只有当两者的序列接近重合时，才会检测到信号峰值。
-
-2.**互相关（Cross-correlation）**。检测两个序列的相似度，显然两者越相似，互相关值越大。这在统计学方面用的比较多。
-
-3.**卷积（Convolution）**。卷积主要用于线性时不变系统的信号处理。相比于互相关操作，卷积有个旋转180度的操作，这里解释一下它的物理意义。
-
-例如，当一个拳击选手遭到对方连续两次击打身体的同一部位时，第二次被击打时他感觉到的疼痛是第一次被击打所遗留的疼痛与第二次被击打的疼痛之和。即：
-
-$$f(2)=f_1(2)+f_2(1)$$
-
-其中，$$f_i(t)$$中，i表示第i次击打，t表示击打发生之后经过的时间。可以看出i和t的顺序正好是相反的，这也就是Convolution这个名词的本意。这里假设g为常数。
-
-4.这三个操作在离散域最终都可以变为求和操作，也就是向量内积运算。我们一般使用$$a\cdot b$$或者$$\langle a,b\rangle$$表示向量的内积运算。即：
-
-$$\langle a,b\rangle=a_0b_0+a_1b_1+\dots+a_nb_n$$
 
 # 复变函数
 
@@ -202,8 +182,6 @@ http://www.open-open.com/lib/view/open1444351655682.html
 
 情感分析的新方法——基于Word2Vec/Doc2Vec/Python
 
-
-
 ### GloVe
 
 GloVe:Global Vectors for Word Representation
@@ -227,6 +205,10 @@ https://github.com/fxsjy/jieba
 NLPIR汉语分词系统(又名ICTCLAS2013)，是中科院张华平博士的作品。官网：
 
 http://ictclas.nlpir.org/
+
+### snownlp
+
+https://github.com/isnowfy/snownlp
 
 ### HanLP
 
@@ -321,5 +303,13 @@ https://wenku.baidu.com/view/d38ab1e8856a561252d36fab.html
 https://zhuanlan.zhihu.com/p/26461511
 
 关于WordNet，我的一些用法和思路
+
+http://mp.weixin.qq.com/s/YUV2YDXCH9fS_3ckPPBsFQ
+
+手把手教你如何用TensorFlow实现基于DNN的文本分类
+
+http://mp.weixin.qq.com/s/XPlyWdfZbOR5z25Ly-bUGQ
+
+如何在Pytorch中通过OpenNMT系统实现神经机器翻译
 
 

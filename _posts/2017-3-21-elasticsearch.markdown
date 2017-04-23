@@ -404,3 +404,35 @@ https://github.com/medcl/elasticsearch-analysis-stconvert
 
 集群会根据Node的增减，自动调整Shard和Replica的分布。换句话说，只有超过1+N个Node同时掉线，才会导致某个Index的掉线。
 
+## ELK的配置部署
+
+### Elasticsearch
+
+配置文件：
+
+config/elasticsearch.yml
+
+配置文件本身修改难度不大，但部署中还是遇到好多的坑。
+
+1.安装JDK
+
+ES 5.X需要JDK 8才行，然而公司的服务器是JDK 7，为了不干扰已有的服务，需要修改bin/elasticsearch脚本中的JAVA_HOME变量。
+
+同时运行两个JDK的方法还有很多种，比如下面提到的创建新用户，然后修改用户配置的的方法。
+
+2.新建用户
+
+ES不允许以root用户执行。因此需要创建新用户：
+
+`adduser es`
+
+3.
+
+>access denied (javax.management.MBeanTrustPermission register) 
+
+jre/lib/security/java.policy文件中新增
+
+`permission javax.management.MBeanTrustPermission "register";`
+
+4.以es用户的身份解压各压缩包，否则会有一大堆的权限错误。
+

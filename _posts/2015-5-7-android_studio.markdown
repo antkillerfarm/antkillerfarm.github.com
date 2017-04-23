@@ -325,10 +325,19 @@ Alt+Enter：自动import
 
 ## ND4J
 
+numpy的等价物。
+
 http://nd4j.org/
 
 ## DL4J
 
+TensorFlow的等价物。
+
 https://deeplearning4j.org/
 
+## Joinery
+
+Pandas的等价物。
+
+https://github.com/cardillo/joinery
 
