@@ -422,6 +422,8 @@ http://mp.weixin.qq.com/s/V-QCRXt5wAfSCiNT955W0A
 
 外卖订单量预测异常报警模型实践
 
+https://jizhi.im/blog/post/45_questions_deep_learning?from=timeline
+
 ## 使用细节
 
 ### saturate_cast

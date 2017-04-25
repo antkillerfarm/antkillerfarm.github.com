@@ -123,10 +123,6 @@ http://v.kuaidadi.com/
 
 滴滴快的大数据平台
 
-http://www.cs.waikato.ac.nz/ml/weka/
-
-一个Java写的数据分析工具。
-
 http://mp.weixin.qq.com/s/Bk5k6vRG4Rq4iCtmtYDEGQ
 
 Leaf——美团点评分布式ID生成系统

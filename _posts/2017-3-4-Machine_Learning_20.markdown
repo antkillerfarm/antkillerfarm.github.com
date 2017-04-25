@@ -115,7 +115,7 @@ http://www.cnblogs.com/kaituorensheng/archive/2012/11/29/2795499.html
 
 Viterbi算法是求解最大似然状态路径的常用算法，被广泛应用于通信和NLP领域。
 
->注：Andrew James Viterbi，1935年生，意大利裔美国工程师，高通公司联合创始人。MIT本硕+南加州大学博士。viterbi算法和CDMA标准是他作出的最大贡献。
+>注：Andrew James Viterbi，1935年生，意大利裔美国工程师、企业家，高通公司联合创始人。MIT本硕+南加州大学博士。viterbi算法和CDMA标准的主要发明人。
 
 ![](/images/article/HMM_4.png)
 
@@ -211,11 +211,13 @@ $$DM:P(Y,R|O)\to P(Y|O)$$
 
 首先给出几个术语的定义：
 
-**有向无环图(Directed Acyclic Graph, DAG)**：这个的字面意思很清楚，不解释。
+**有向无环图(Directed Acyclic Graph, DAG)**：这个术语的字面意思很清楚，不解释。
 
-**马尔可夫毯(Markov Blanket, MB)**：结点A的父结点+A的子结点+A的子结点的其他父结点。如下图所示：
+**马尔可夫毯(Markov Blanket, MB)**：有向图——结点A的父结点+A的子结点+A的子结点的其他父结点。如下图所示：
 
 ![](/images/article/Markov_blanket.png)
+
+无向图——结点A的邻近结点。
 
 下图是图模型的部分变种之间的关系图。
 
