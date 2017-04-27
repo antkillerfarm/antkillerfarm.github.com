@@ -193,9 +193,26 @@ II). 对每个潜在的分裂点，计算如果以这个分裂点对叶结点进
 
 可见，XGBoost算法之所以能够并行，其要害在于其中枚举分裂点的计算，是能够分布式并行计算的。
 
+官网：
+
+https://xgboost.readthedocs.io/en/latest/
+
+GitHub：
+
+https://xgboost.readthedocs.io/en/latest/
+
+编译：
+
+{% highlight java %}
+git clone --recursive https://github.com/dmlc/xgboost
+cd xgboost; make -j4
+{% endhighlight %}
+
 参考：
 
 https://www.zhihu.com/question/41354392
+
+http://blog.csdn.net/sb19931201/article/details/52577592
 
 # 推荐系统进阶
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Ubuntu使用技巧（二）, Fedora, CentOS, Spring, scrapy
+title:  Ubuntu使用技巧（二）, Fedora, CentOS, scrapy
 category: technology 
 ---
 
@@ -195,11 +195,21 @@ http://blog.csdn.net/heiyouhei123/article/details/51103578
 
 ## Flatpak
 
+Linux社区出现了两种新的应用打包格式，其一是Ubuntu力推的snap格式，另一种是Red Hat主导开发的Flatpak格式，两种包格式都利用了沙盒隔离应用，增强安全性。
+
+支持snap包的开源软件包括了Firefox、LibreOffice、Krita和Mycroft等，而提供了Flatpak包的应用有LibreOffice、GIMP、InkScape、MyPaint和Darktable。
+
 http://flatpak.org/
 
 ## Snap
 
 http://snapcraft.io/
+
+## Conda
+
+Conda 是一个开源的软件包管理系统和环境管理系统，用于安装多个版本的软件包及其依赖关系，并在它们之间轻松切换。它是目前最流行的Python环境管理工具。
+
+https://conda.io/docs/
 
 # Putty
 
@@ -349,46 +359,6 @@ VNCSERVERARGS[1]="-geometry 1280x1024"
 参考：
 
 http://www.tecmint.com/install-tightvnc-remote-desktop/
-
-# Spring
-
-Spring是一个Java Web应用框架。官网：
-
-http://spring.io/
-
-## Ubuntu安装Eclipse、Spring
-
-1.安装Eclipse
-
-`sudo apt-get install eclipse`
-
-2.安装Spring
-
-`sudo apt-get install libspring-web-portlet-java`
-
-注意：ubuntu软件仓库中还有一个叫做spring的游戏引擎，不要弄错了。
-
-http://www.mkyong.com/spring/quick-start-maven-spring-example/
-
-http://wiki.jikexueyuan.com/project/spring/
-
-## Restful
-
-http://spring.io/guides/gs/rest-service/
-
-## Spring Boot
-
-https://www.tianmaying.com/tutorial/deploy-spring-boot-application
-
-http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
-
-Spring Boot默认的配置文件
-
-## WebService
-
-https://spring.io/guides/gs/producing-web-service/
-
-http://localhost:9999/ws/countries.wsdl
 
 # scrapy
 

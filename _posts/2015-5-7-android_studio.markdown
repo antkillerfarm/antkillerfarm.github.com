@@ -62,6 +62,8 @@ https://dl.google.com/android/studio/patches/AI-130.737825-132.843336-patch-win.
 
 查阅相关资料，可知32位OS的Java VM内存有上限，网上说是1.5G，但我这里，1G就是上限了。
 
+IntelliJ IDEA安装更新包的方法与Android Studio一致，但需要添加log4j.jar到classpath。
+
 ## 完整安装包
 
 https://dl.google.com/dl/android/studio/ide-zips/2.1.2.0/android-studio-ide-143.2915827-linux.zip
@@ -320,6 +322,4 @@ POJO（Plain Ordinary Java Object）：简单的Java对象。
 Alt+Enter：自动import
 
 双编辑窗口：在代码的标签上右键->Split Horizontally
-
-
 
