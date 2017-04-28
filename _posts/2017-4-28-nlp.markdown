@@ -1,0 +1,346 @@
+---
+layout: post
+title:  NLP, Machine Learning之Java篇
+category: technology 
+---
+
+# NLP
+
+自然语言处理（Natural Language Processing）是深度学习的主要应用领域之一。
+
+## 教程
+
+http://cs224d.stanford.edu/
+
+CS224d: Deep Learning for Natural Language Processing
+
+http://web.stanford.edu/class/cs224n/syllabus.html
+
+cs224d课程的课件
+
+http://demo.clab.cs.cmu.edu/NLP/
+
+CMU的NLP教程。该网页下方还有美国其他高校的NLP课程的链接。
+
+http://ccl.pku.edu.cn/alcourse/nlp/
+
+北京大学的NLP教程，特色：中文处理。
+
+## 书籍
+
+http://ccl.pku.edu.cn/alcourse/nlp/LectureNotes/Natural%20Language%20Processing%20with%20Python.pdf
+
+《Natural Language Processing with Python》，Steven Bird、Ewan Klein、Edward Loper著。这本书的作者们创建了著名的NLTK工具库。
+
+>注：Steven Bird，爱丁堡大学博士，墨尔本大学副教授。   
+>http://www.stevenbird.net/about.html
+
+>Ewan Klein，苏格兰人，哥伦比亚大学博士（1978年），爱丁堡大学教授。
+
+>Edward Loper，宾夕法尼亚大学博士。
+
+## 网站
+
+http://www.52nlp.cn/
+
+一个自然语言处理爱好者的群体博客。包括52nlp、rickjin、liwei等国内外华人大牛。
+
+http://www.shareditor.com/bloglistbytag/?tagname=%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%81%9A%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA
+
+实战课程：自己动手做聊天机器人
+
+http://www.newsmth.net/bbsdoc.php?board=NLP
+
+水木NLP板块
+
+http://www.icst.pku.edu.cn/lcwm/
+
+北京大学计算机科学技术研究所语言计算与互联网挖掘研究室
+
+https://github.com/rockingdingo/deepnlp
+
+NLP深度学习方面的代码库
+
+https://liweinlp.com/
+
+NLP专家李维的blog
+
+## 工具
+
+### Natural Language Toolkit(NLTK)
+
+官网：
+
+http://www.nltk.org/
+
+可使用nltk.download()下载相关nltk官方提供的各种资源。
+
+参考：
+
+http://www.cnblogs.com/baiboy/p/nltk3.html
+
+### OpenNLP
+
+http://opennlp.apache.org/
+
+### FudanNLP
+
+https://github.com/FudanNLP/fnlp
+
+### Stanford CoreNLP
+
+http://stanfordnlp.github.io/CoreNLP/
+
+### THUCTC
+
+THUCTC(THU Chinese Text Classification)是由清华大学自然语言处理实验室推出的中文文本分类工具包。
+
+http://thuctc.thunlp.org/
+
+### gensim
+
+gensim是Python语言的计算文本相似度的程序包。
+
+http://radimrehurek.com/gensim/index.html
+
+`pip install --upgrade gensim`
+
+参考：
+
+http://www.open-open.com/lib/view/open1444351655682.html
+
+情感分析的新方法——基于Word2Vec/Doc2Vec/Python
+
+### GloVe
+
+GloVe:Global Vectors for Word Representation
+
+https://nlp.stanford.edu/projects/glove/
+
+### textsum
+
+textsum是一个基于深度学习的文本自动摘要工具。
+
+https://github.com/tensorflow/models/tree/master/textsum
+
+http://www.jiqizhixin.com/article/1449
+
+### jieba
+
+https://github.com/fxsjy/jieba
+
+### NLPIR
+
+NLPIR汉语分词系统(又名ICTCLAS2013)，是中科院张华平博士的作品。官网：
+
+http://ictclas.nlpir.org/
+
+### snownlp
+
+https://github.com/isnowfy/snownlp
+
+### HanLP
+
+HanLP是一个目前留学日本的中国学生的作品。
+
+官网：
+
+http://hanlp.linrunsoft.com/
+
+作者blog：
+
+http://www.hankcs.com/
+
+Github：
+
+https://github.com/hankcs/HanLP/
+
+从作者的名气来说，HanLP无疑是最低的，性能也不见得有多好。然而对于初学者来说，这却是最适合的工具。这主要体现在以下几个方面：
+
+1.中文处理能力。NLTK和OpenNLP对中文支持非常差，这里不光是中文分词的问题，有些NLP算法需要一定的语言模型数据，但浏览NLTK官方的模型库，基本找不到中文模型数据。
+
+2.jieba、IK之类的功能太单一，多数局限在中文分词方面领域。gensim、THUCTC专注于NLP的某一方面，也不是通用工具。
+
+3.NLPIR和Stanford CoreNLP算是功能最强的工具包了。前者的问题在于收费不开源，后者的问题在于缺少中文文档。FudanNLP的相关文档较少，文档友好度不如HanLP。
+
+4.HanLP在主页上提供了相关算法的blog，便于初学者快速掌握相关概念。其词典是明文发布，便于用户修改。HanLP执行时，会将明文词典以特定结构缓存，以提高执行效率。
+
+>注：不要以为中文有分词问题，就比别的语言复杂，英文还有词根问题呢。。。每种语言都不简单。
+
+### 其他
+
+https://github.com/mozillazg/python-pinyin
+
+python版的汉字转拼音软件
+
+## 词性标注
+
+http://jacoxu.com/ictpos3-0%E6%B1%89%E8%AF%AD%E8%AF%8D%E6%80%A7%E6%A0%87%E8%AE%B0%E9%9B%86/
+
+ICTPOS3.0汉语词性标记集
+
+## 有用的资料
+
+https://github.com/ematvey/tensorflow-seq2seq-tutorials
+
+一步步的seq2seq教程
+
+https://zhuanlan.zhihu.com/p/25928551
+
+用深度学习（CNN RNN Attention）解决大规模文本分类问题-综述和实践
+
+https://www.geekhub.cn/a/1163.html
+
+宋睿华：好玩的文本生成
+
+http://blog.csdn.net/sunlylorn/article/details/50607376
+
+seq2seq模型
+
+http://chuansong.me/n/521727951619
+
+Seq2Seq的DIY简介
+
+http://www.cnblogs.com/Determined22/p/6650373.html
+
+DL4NLP——seq2seq+attention机制的应用：文档自动摘要（Automatic Text Summarization）
+
+http://www.cnblogs.com/maybe2030/p/5427148.html
+
+文本深度表示模型——word2vec&doc2vec词向量模型
+
+https://www.zhihu.com/question/29978268
+
+如何用word2vec计算两个句子之间的相似度？
+
+https://github.com/Gii16/TreeDrawer
+
+A small tool to draw a only-text tree as the result of stanford coreNLP
+
+http://www.cnblogs.com/CheeseZH/p/5768389.html
+
+依存句法分析与语义依存分析的区别
+
+http://www.taodocs.com/p-4795349.html
+
+基于大规模问答语料的问题检索系统
+
+https://wenku.baidu.com/view/d38ab1e8856a561252d36fab.html
+
+短文本相似度计算在用户交互式问答系统中的应用
+
+https://zhuanlan.zhihu.com/p/26461511
+
+关于WordNet，我的一些用法和思路
+
+http://mp.weixin.qq.com/s/YUV2YDXCH9fS_3ckPPBsFQ
+
+手把手教你如何用TensorFlow实现基于DNN的文本分类
+
+http://mp.weixin.qq.com/s/XPlyWdfZbOR5z25Ly-bUGQ
+
+如何在Pytorch中通过OpenNMT系统实现神经机器翻译
+
+# Machine Learning之Java篇
+
+http://machinelearningmastery.com/java-machine-learning/
+
+这篇文章包含了很多Machine Learning方面的软件和库。
+
+## ND4J
+
+numpy的等价物。
+
+http://nd4j.org/
+
+## DL4J
+
+TensorFlow的等价物。
+
+https://deeplearning4j.org/
+
+## Joinery
+
+Pandas的等价物。
+
+https://github.com/cardillo/joinery
+
+## Weka
+
+Weka是一款开源的机器学习以及数据挖掘软件。主要开发者来自新西兰的the University of Waikato。
+
+官网：
+
+http://www.cs.waikato.ac.nz/ml/weka/
+
+Weka不仅有GUI，而且也为开发提供了API，是单机Machine Learning的Java首选。国内的京东用的比较多。
+
+GitHub：
+
+https://github.com/bnjmn/weka
+
+API Doc：
+
+http://weka.sourceforge.net/doc.stable-3-8/
+
+Weka除了基本库之外，还有许多扩展包：
+
+http://weka.sourceforge.net/packageMetaData/
+
+参考：
+
+https://weka.wikispaces.com/Use+Weka+in+your+Java+code
+
+如何在Java代码中使用Weka
+
+## ELKI
+
+ELKI是另一个数据挖掘软件，也有GUI和API。ELKI主要专注于聚类和异常检测算法。
+
+官网：
+
+https://elki-project.github.io/algorithms/
+
+GitHub：
+
+https://github.com/elki-project/elki
+
+# Spring
+
+Spring是一个Java Web应用框架。官网：
+
+http://spring.io/
+
+## Ubuntu安装Eclipse、Spring
+
+1.安装Eclipse
+
+`sudo apt-get install eclipse`
+
+2.安装Spring
+
+`sudo apt-get install libspring-web-portlet-java`
+
+注意：ubuntu软件仓库中还有一个叫做spring的游戏引擎，不要弄错了。
+
+http://www.mkyong.com/spring/quick-start-maven-spring-example/
+
+http://wiki.jikexueyuan.com/project/spring/
+
+## Restful
+
+http://spring.io/guides/gs/rest-service/
+
+## Spring Boot
+
+https://www.tianmaying.com/tutorial/deploy-spring-boot-application
+
+http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+
+Spring Boot默认的配置文件
+
+## WebService
+
+https://spring.io/guides/gs/producing-web-service/
+
+http://localhost:9999/ws/countries.wsdl

@@ -311,7 +311,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/nlp/h
 
 http://blog.csdn.net/itplus/article/details/37969519
 
-word2vec 中的数学原理详解
+word2vec中的数学原理详解
 
 http://wei-li.cnblogs.com/p/word2vec.html
 
@@ -323,4 +323,4 @@ http://www.cnblogs.com/wowarsenal/p/3293586.html
 
 http://www.jianshu.com/p/05800a28c5e4
 
-使用 word2vec 训练wiki中英文语料库
+使用word2vec训练wiki中英文语料库

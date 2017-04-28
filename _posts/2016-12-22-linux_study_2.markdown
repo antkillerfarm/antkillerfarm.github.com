@@ -168,6 +168,16 @@ http://archive.ics.uci.edu/ml/datasets
 
 其中包含360+的数据集，实在是个宝库啊。
 
+## 其他
+
+http://www.csdn.net/article/2014-06-06/2820111-100-Interesting-Data-Sets-for-Statistics/1
+
+100+诡异的数据集
+
+http://www.sogou.com/labs/
+
+搜狗实验室的网站可以下载很多NLP和图片识别方面的数据
+
 # Machine Learning之Python篇
 
 ## NumPy
@@ -288,6 +298,16 @@ http://wiki.jikexueyuan.com/project/tensorflow-zh/
 
 由于我的PC显卡不合要求，因此直接安装的是CPU版本，这也是最通用的版本。
 
+## 参考
+
+https://github.com/neozhaoliang/pywonderland/tree/master/
+
+如何用Python画各种著名数学图案
+
+http://old.sebug.net/paper/books/scipydoc/index.html
+
+用Python做科学计算
+
 # Python
 
 ## 如何通过需认证的代理获取HTTP网页
@@ -384,43 +404,4 @@ Walle一个web部署系统工具，配置简单、功能完善、界面流畅、
 
 https://walle-web.io/
 
-# Spring
-
-Spring是一个Java Web应用框架。官网：
-
-http://spring.io/
-
-## Ubuntu安装Eclipse、Spring
-
-1.安装Eclipse
-
-`sudo apt-get install eclipse`
-
-2.安装Spring
-
-`sudo apt-get install libspring-web-portlet-java`
-
-注意：ubuntu软件仓库中还有一个叫做spring的游戏引擎，不要弄错了。
-
-http://www.mkyong.com/spring/quick-start-maven-spring-example/
-
-http://wiki.jikexueyuan.com/project/spring/
-
-## Restful
-
-http://spring.io/guides/gs/rest-service/
-
-## Spring Boot
-
-https://www.tianmaying.com/tutorial/deploy-spring-boot-application
-
-http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
-
-Spring Boot默认的配置文件
-
-## WebService
-
-https://spring.io/guides/gs/producing-web-service/
-
-http://localhost:9999/ws/countries.wsdl
 

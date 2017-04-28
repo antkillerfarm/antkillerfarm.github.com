@@ -154,10 +154,6 @@ http://mp.weixin.qq.com/s?__biz=MzIzODExMDE5MA==&mid=2694182661&idx=1&sn=ddfb3f3
 
 循环神经网络
 
-http://old.sebug.net/paper/books/scipydoc/index.html
-
-用Python做科学计算
-
 https://www.zhihu.com/question/21664179
 
 如何在论文中画出漂亮的插图？
@@ -326,10 +322,6 @@ https://zhuanlan.zhihu.com/p/25821063
 
 循环神经网络——scan实现LSTM
 
-http://www.sogou.com/labs/
-
-搜狗实验室的网站可以下载很多NLP和图片识别方面的数据
-
 https://www.zhihu.com/question/41233373
 
 如果你是面试官，你怎么去判断一个面试者的深度学习水平？
@@ -358,10 +350,6 @@ http://blog.csdn.net/hjimce/article/category/3163421
 
 一个深度学习的blog
 
-https://github.com/ematvey/tensorflow-seq2seq-tutorials
-
-一步步的seq2seq教程
-
 http://www.cnblogs.com/xxey/p/4277181.html
 
 Beam Search（集束搜索/束搜索）
@@ -373,10 +361,6 @@ http://www.jianshu.com/p/9dc9f41f0b29
 http://www.infoq.com/cn/articles/we-are-bringing-learning-to-rank-to-elasticsearch
 
 在Elasticsearch中应用机器学习排序LTR
-
-https://github.com/neozhaoliang/pywonderland/tree/master/
-
-如何用Python画各种著名数学图案
 
 https://pjreddie.com/darknet/yolo/
 
@@ -393,10 +377,6 @@ http://mp.weixin.qq.com/s/kbHzA3h-CfTRcnkViY37MQ
 http://blog.csdn.net/u012328159/article/details/69898137
 
 几种常见的激活函数
-
-http://www.csdn.net/article/2014-06-06/2820111-100-Interesting-Data-Sets-for-Statistics/1
-
-100+诡异的数据集
 
 http://mp.weixin.qq.com/s/dvuX3Ih_DZrv0kgqFn8-lg
 
@@ -423,6 +403,14 @@ http://mp.weixin.qq.com/s/V-QCRXt5wAfSCiNT955W0A
 外卖订单量预测异常报警模型实践
 
 https://jizhi.im/blog/post/45_questions_deep_learning?from=timeline
+
+http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww
+
+MIT最新算法，双向传播比BP快25倍
+
+http://mp.weixin.qq.com/s/Aw2INWuwPlXmkPEY0CZf6g
+
+深度学习在推荐算法上的应用进展
 
 ## 使用细节
 
