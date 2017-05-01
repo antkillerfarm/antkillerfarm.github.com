@@ -66,10 +66,6 @@ http://blog.csdn.net/cuoqu/
 
 一个计算机视觉、机器学习的blog。
 
-http://www.cnblogs.com/jerrylead/
-
-一个机器学习的blog。
-
 http://blog.csdn.net/mmz_xiaokong/article/details/7916163
 
 机器视觉开源处理库汇总。
@@ -106,73 +102,17 @@ http://www.cs.rug.nl/~imaging/
 
 一个在线的图像处理网站。
 
-http://www.open-open.com/lib/view/open1420687784625.html
-
-机器学习平台、框架、库和软件集合。
-
-http://blog.exbot.net/
-
-一个机器人技术方面的网站。
-
-http://www.ros.org/
-
-ROS(Robot Operating System）是一个机器人软件平台，前身是斯坦福人工智能实验室为了支持斯坦福智能机器人STAIR而建立的项目。
-
-https://www.zhihu.com/question/20691338
-
-机器学习该怎么入门？
-
 https://github.com/liuruoze/EasyPR
 
 一个开源的中文车牌识别系统。
-
-http://echarts.baidu.com/echarts2/doc/example.html
-
-各种大数据展示用的图表。
 
 http://www.deeplearningbook.org/
 
 深度学习的书籍网站。
 
-http://www.zanmel.com/2015/12/14/10-great-datasets-on-movies/
-
-最知名的电影数据集。
-
-http://url.cn/40IkU7z
-
-盘点机器学习常用的35大算法
-
-https://www.zhihu.com/question/28810567
-
-ELM算法相关
-
-http://mp.weixin.qq.com/s?__biz=MjM5MTQzNzU2NA==&mid=2651645872&idx=1&sn=e7b34d0df78a8eda7b71ecf169ce5c38
-
-分辨真假数据科学家的20个问题及回答
-
 http://mp.weixin.qq.com/s?__biz=MzIzODExMDE5MA==&mid=2694182661&idx=1&sn=ddfb3f301f5021571992824b21ddcafe
 
 循环神经网络
-
-https://www.zhihu.com/question/21664179
-
-如何在论文中画出漂亮的插图？
-
-https://www.zhihu.com/question/28171555
-
-如何理解“量子退火”？
-
-https://zhuanlan.zhihu.com/p/20756711
-
-用Excel做出强大漂亮的数据地图
-
-https://commons.wikimedia.org/wiki/Main_Page
-
-一个图片资源站点
-
-https://zhuanlan.zhihu.com/p/23866364
-
-从梯度下降到Hessian-Free优化
 
 https://zhuanlan.zhihu.com/p/22604627
 
@@ -198,37 +138,13 @@ https://zhuanlan.zhihu.com/p/22888385
 
 深层学习为何要“Deep”
 
-http://www.speech.cs.cmu.edu/databases/an4/
-
-CMU的音频数据库，可用于语音识别
-
-http://blog.csdn.net/u010945683/article/details/40987331
-
-遗传算法详解
-
-http://blog.csdn.net/u010945683/article/details/49149815
-
-共轭先验分布
-
 http://cs.stanford.edu/people/karpathy/convnetjs//demo/classify2d.html
 
 这是一个2层神经网络的可视化demo
 
-http://wenku.baidu.com/view/44a63fd2b14e852458fb577f.html
-
-kriging插值
-
 http://blog.csdn.net/zddblog/article/details/7521424
 
 SIFT算法详解
-
-http://blog.csdn.net/baimafujinji
-
-一个算法牛人的blog
-
-http://www.flickering.cn/
-
-腾讯效果广告平台部的技术blog。
 
 http://bindog.github.io/blog/2015/08/20/microsoft-malware-classification
 
@@ -241,10 +157,6 @@ http://www.biologic.com.au/bugbrain/
 http://blog.csdn.net/v_JULY_v/article/details/52683959
 
 没GPU也能玩梵高作画：Ubuntu tensorflow CPU版
-
-http://mp.weixin.qq.com/s/QhP3wRGbrO7sYSDNm8z0gQ
-
-常用推荐算法（50页干货）
 
 http://www.cvpapers.com/datasets.html
 
@@ -262,10 +174,6 @@ http://mp.weixin.qq.com/s/wCDGPBYoOCzLtJBnPbTz9w
 
 神经网络结构解析
 
-http://blog.csdn.net/zwgdft/article/category/6432397
-
-创业公司做数据分析
-
 http://blog.csdn.net/changyuanchn/article/details/15681853
 
 深度学习之autoencoder
@@ -281,20 +189,6 @@ BP神经网络与卷积神经网络
 http://blog.csdn.net/Fate_fjh/article/details/52882134
 
 卷积神经网络系列blog
-
-http://www.cnblogs.com/yhlx125/p/4707693.html
-
-SLAM(simultaneous localization and mapping)学习笔记
-
-http://www.cnblogs.com/gaoxiang12/p/5113334.html
-
-视觉SLAM中的数学基础
-
-https://www.zhihu.com/question/25371476
-
-怎样从实际场景上理解粒子滤波（Particle Filter）？
-
-LIDAR：LIght Detection And Ranging
 
 http://mp.weixin.qq.com/s/Jiis7j3W3D5GG_ZdxplY7Q
 
@@ -328,15 +222,11 @@ https://www.zhihu.com/question/41233373
 
 http://www.cnblogs.com/neopenx
 
-合肥工业大学某博士生的blog
+合肥工业大学某博士生的blog，偏深度学习
 
 http://www.hackcv.com/index.php/archives/104/
 
 CNN的直观解释
-
-https://woaielf.github.io/
-
-一个医学妹子的blog，有大量的数据挖掘的思维导图。
 
 https://www.zhihu.com/question/20398418
 
@@ -358,17 +248,9 @@ http://www.jianshu.com/p/9dc9f41f0b29
 
 理解LSTM网络
 
-http://www.infoq.com/cn/articles/we-are-bringing-learning-to-rank-to-elasticsearch
-
-在Elasticsearch中应用机器学习排序LTR
-
 https://pjreddie.com/darknet/yolo/
 
 YOLO: Real-Time Object Detection。一个基于神经网络的实时对象检测软件。
-
-http://mp.weixin.qq.com/s/JZ1ceGQDmQUaNW5wl6biLA
-
-TensorFlow实现流行机器学习算法教程汇集
 
 http://mp.weixin.qq.com/s/kbHzA3h-CfTRcnkViY37MQ
 
@@ -398,11 +280,9 @@ http://mp.weixin.qq.com/s/UkZdUcdz7h4DqcyjSbNncw
 
 zi2zi：用条件生成对抗网络玩转中文书法，绝妙汉字字体自动生成
 
-http://mp.weixin.qq.com/s/V-QCRXt5wAfSCiNT955W0A
-
-外卖订单量预测异常报警模型实践
-
 https://jizhi.im/blog/post/45_questions_deep_learning?from=timeline
+
+45个问题测出你的深度学习基本功
 
 http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww
 
@@ -411,6 +291,18 @@ MIT最新算法，双向传播比BP快25倍
 http://mp.weixin.qq.com/s/Aw2INWuwPlXmkPEY0CZf6g
 
 深度学习在推荐算法上的应用进展
+
+https://zhuanlan.zhihu.com/p/25382177
+
+AI芯片怎么降功耗？
+
+http://mp.weixin.qq.com/s/8omONLSUA3cyxAQZVzBjCg
+
+5本深度学习和10本机器学习书籍
+
+http://mp.weixin.qq.com/s/ZKMi4gRfDRcTxzKlTQb-Mw
+
+计算机视觉识别简史：从AlexNet、ResNet到Mask RCNN
 
 ## 使用细节
 

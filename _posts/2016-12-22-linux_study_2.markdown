@@ -178,6 +178,14 @@ http://www.sogou.com/labs/
 
 搜狗实验室的网站可以下载很多NLP和图片识别方面的数据
 
+http://www.zanmel.com/2015/12/14/10-great-datasets-on-movies/
+
+最知名的电影数据集。
+
+http://www.speech.cs.cmu.edu/databases/an4/
+
+CMU的音频数据库，可用于语音识别
+
 # Machine Learning之Python篇
 
 ## NumPy

@@ -127,6 +127,10 @@ http://mp.weixin.qq.com/s/Bk5k6vRG4Rq4iCtmtYDEGQ
 
 Leaf——美团点评分布式ID生成系统
 
+https://commons.wikimedia.org/wiki/Main_Page
+
+一个图片资源站点
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

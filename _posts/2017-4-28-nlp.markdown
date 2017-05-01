@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NLP, Machine Learning之Java篇
+title:  NLP, Spring, Machine Learning之Java篇, ML参考资源, 机器人参考资源
 category: technology 
 ---
 
@@ -344,3 +344,126 @@ Spring Boot默认的配置文件
 https://spring.io/guides/gs/producing-web-service/
 
 http://localhost:9999/ws/countries.wsdl
+
+# ML参考资源
+
+http://www.cnblogs.com/jerrylead/
+
+一个机器学习的blog。
+
+http://www.open-open.com/lib/view/open1420687784625.html
+
+机器学习平台、框架、库和软件集合。
+
+https://www.zhihu.com/question/20691338
+
+机器学习该怎么入门？
+
+http://echarts.baidu.com/echarts2/doc/example.html
+
+各种大数据展示用的图表。
+
+http://url.cn/40IkU7z
+
+盘点机器学习常用的35大算法
+
+https://www.zhihu.com/question/28810567
+
+ELM算法相关
+
+http://mp.weixin.qq.com/s?__biz=MjM5MTQzNzU2NA==&mid=2651645872&idx=1&sn=e7b34d0df78a8eda7b71ecf169ce5c38
+
+分辨真假数据科学家的20个问题及回答
+
+https://www.zhihu.com/question/21664179
+
+如何在论文中画出漂亮的插图？
+
+https://www.zhihu.com/question/28171555
+
+如何理解“量子退火”？
+
+https://zhuanlan.zhihu.com/p/20756711
+
+用Excel做出强大漂亮的数据地图
+
+https://zhuanlan.zhihu.com/p/23866364
+
+从梯度下降到Hessian-Free优化
+
+http://blog.csdn.net/u010945683/article/details/40987331
+
+遗传算法详解
+
+http://blog.csdn.net/u010945683/article/details/49149815
+
+共轭先验分布
+
+http://wenku.baidu.com/view/44a63fd2b14e852458fb577f.html
+
+kriging插值
+
+http://blog.csdn.net/baimafujinji
+
+一个算法牛人的blog
+
+http://www.flickering.cn/
+
+腾讯效果广告平台部的技术blog。
+
+http://mp.weixin.qq.com/s/QhP3wRGbrO7sYSDNm8z0gQ
+
+常用推荐算法（50页干货）
+
+http://blog.csdn.net/zwgdft/article/category/6432397
+
+创业公司做数据分析
+
+https://woaielf.github.io/
+
+一个医学妹子的blog，有大量的数据挖掘的思维导图。
+
+http://www.infoq.com/cn/articles/we-are-bringing-learning-to-rank-to-elasticsearch
+
+在Elasticsearch中应用机器学习排序LTR
+
+http://mp.weixin.qq.com/s/JZ1ceGQDmQUaNW5wl6biLA
+
+TensorFlow实现流行机器学习算法教程汇集
+
+http://mp.weixin.qq.com/s/V-QCRXt5wAfSCiNT955W0A
+
+外卖订单量预测异常报警模型实践
+
+http://mp.weixin.qq.com/s/omiyerWFmVPTE5XW6j7txQ
+
+45个回归问题测试题（附答案）
+
+http://mp.weixin.qq.com/s/v0z-s72juBF6Wwb9tc_Z_g
+
+深入理解空间搜索算法
+
+# 机器人参考资源
+
+http://blog.exbot.net/
+
+一个机器人技术方面的网站。
+
+http://www.ros.org/
+
+ROS(Robot Operating System）是一个机器人软件平台，前身是斯坦福人工智能实验室为了支持斯坦福智能机器人STAIR而建立的项目。
+
+http://www.cnblogs.com/yhlx125/p/4707693.html
+
+SLAM(simultaneous localization and mapping)学习笔记
+
+http://www.cnblogs.com/gaoxiang12/p/5113334.html
+
+视觉SLAM中的数学基础
+
+https://www.zhihu.com/question/25371476
+
+怎样从实际场景上理解粒子滤波（Particle Filter）？
+
+LIDAR：LIght Detection And Ranging
+
