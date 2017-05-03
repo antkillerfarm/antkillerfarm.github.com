@@ -105,6 +105,10 @@ http://radimrehurek.com/gensim/index.html
 
 `pip install --upgrade gensim`
 
+GitHub：
+
+https://github.com/RaRe-Technologies/gensim
+
 参考：
 
 http://www.open-open.com/lib/view/open1444351655682.html
@@ -246,6 +250,10 @@ http://mp.weixin.qq.com/s/XPlyWdfZbOR5z25Ly-bUGQ
 http://machinelearningmastery.com/java-machine-learning/
 
 这篇文章包含了很多Machine Learning方面的软件和库。
+
+http://www.algorithmdog.com/fast-fasttext
+
+Mikolov文本分类新作fastText
 
 ## ND4J
 
@@ -442,6 +450,10 @@ http://mp.weixin.qq.com/s/omiyerWFmVPTE5XW6j7txQ
 http://mp.weixin.qq.com/s/v0z-s72juBF6Wwb9tc_Z_g
 
 深入理解空间搜索算法
+
+https://zhuanlan.zhihu.com/p/23036112
+
+推荐系统常用的推荐算法
 
 # 机器人参考资源
 

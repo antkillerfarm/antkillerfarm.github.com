@@ -324,3 +324,9 @@ http://www.cnblogs.com/wowarsenal/p/3293586.html
 http://www.jianshu.com/p/05800a28c5e4
 
 使用word2vec训练wiki中英文语料库
+
+http://cs.stanford.edu/~quocle/paragraph_vector.pdf
+
+Doc2Vec的论文。
+
+

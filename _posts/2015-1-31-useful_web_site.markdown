@@ -131,6 +131,10 @@ https://commons.wikimedia.org/wiki/Main_Page
 
 一个图片资源站点
 
+http://www.fhdq.net/
+
+常用符号大全
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/
