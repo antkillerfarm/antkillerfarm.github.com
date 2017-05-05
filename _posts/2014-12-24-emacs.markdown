@@ -329,7 +329,7 @@ perl的语法和C差别不算太大，好多语法大致上从关键字也可以
 
 Groovy是另一种JVM语言，也是与Java最兼容的语言。普通Java代码可以无修改的在Groovy中编译。Groovy源代码以.groovy为后缀。
 
-Groovy使用gradle作为自动管理工具。
+Groovy使用Gradle或Grape作为自动管理工具，其中后者是Groovy原生支持的，但是现在已经不如前者流行了。
 
 官网：
 

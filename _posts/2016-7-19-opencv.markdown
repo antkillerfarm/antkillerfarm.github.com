@@ -320,6 +320,10 @@ http://mp.weixin.qq.com/s/bpODRWFm0vxdwr-JNkVKlA
 
 小心深度学习这个“坑”（入门误区详细版）
 
+https://github.com/hindupuravinash/the-gan-zoo
+
+GAN的各种变种。
+
 ## 使用细节
 
 ### saturate_cast

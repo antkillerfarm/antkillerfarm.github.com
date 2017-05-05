@@ -75,5 +75,108 @@ $$d_M(x,y)=\sqrt{(\frac{x_1-y_1}{s_1})^2+\dots+(\frac{x_p-y_p}{s_p})^2}=\sqrt{(x
 
 >注：黄克智，1927年生，固体力学家。江西中正大学本科+清华硕士+莫斯科大学博士（因应召回国，放弃博士学位）。清华大学工程力学系教授、工程力学研究所所长，中国科学院院士。断裂力学领域权威。
 
+# 随机过程
+
+## 随机变量序列的收敛性
+
+弱收敛：$$F_n(x)\xrightarrow{W}F(x)$$
+
+依分布收敛：$$X_n\xrightarrow{L}X$$
+
+依概率收敛：$$X_n\xrightarrow{P}X$$
+
+r阶收敛：$$X_n\xrightarrow{r}X$$
+
+几乎处处收敛（almost everywhere convergent）：$$X_n\xrightarrow{a.e.}X$$ or $$X_n\xrightarrow{a.s.}X$$
+
+一致收敛（uniform convergence）：$$X_n\xrightarrow{u.c.}X$$
+
+以上概念实际上都是测度论的内容。具体到这里，弱收敛针对分布函数F，而其他收敛针对随机变量X。
+
+收敛严格性：
+
+$$X_n\xrightarrow{P}X>X_n\xrightarrow{L}X$$
+
+$$X_n\xrightarrow{r}X>X_n\xrightarrow{P}X$$
+
+$$X_n\xrightarrow{a.s.}X>X_n\xrightarrow{P}X$$
+
+大数定理：
+
+依概率收敛->弱大数定理
+
+几乎处处收敛->强大数定理
+
+## 随机过程常用公式或符号
+
+| 名称 | 公式或符号 |
+|:--:|:--:|
+| 期望 | $$EX=\int_{-\infty}^{+\infty}x\mathrm{d}F(x)$$，若存在密度函数则$$EX=\int_{-\infty}^{+\infty}xf(x)\mathrm{d}x$$ |
+| 方差 | $$DX=Var(X)=E(X-EX)^2$$ |
+| 协方差 | $$Cov(X,Y)=E\{\overline{[X-E(X)]}[Y-E(Y)]\}$$ |
+| 相关系数 | $$\rho_{XY}=\frac{Cov(X,Y)}{\sqrt{D(X)}\sqrt{D(Y)}}$$ |
+| 协方差矩阵 | $$\left[\begin{array}{ccc} Cov(X_1,X_1)&Cov(X_1,X_2)&\cdots&Cov(X_1,X_n)\\Cov(X_2,X_1)&Cov(X_2,X_2)&\cdots&Cov(X_2,X_n)\\ \vdots&\vdots&&\vdots \\Cov(X_n,X_1)&Cov(X_n,X_2)&\cdots&Cov(X_n,X_n)\end{array}\right]$$ |
+| 相关函数 | $$R(X,Y)=E[\overline{X}Y]$$ |
+| 均方极限 | $${l.i.m}_{n \to +\infty}X$$ |
+
+## 平稳过程
+
+严平稳过程：有限维分布。
+
+宽平稳过程：二阶矩。
+
+不要被名字迷惑了，由于两者关注的东西不同，一般情况下，严平稳过程不一定是宽平稳过程，宽平稳过程也不一定是严平稳过程。
+
+只有以下特例：
+
+1.对于二阶矩过程，严平稳过程一定是宽平稳过程。
+
+2.对于正态过程，严平稳过程和宽平稳过程是等价的。
+
+# 高斯背景
+
+# Reinforcement Learning and Control
+
+# Linear Discriminant Analysis
+
+# Partial Least Squares Discriminant Analysis
+
+ACBM算法：
+
+ACBM算法是在AC（Aho-Corasick）自动机（UNIX上的fgrep命令使用的就是AC算法）的基础之上，引入了BM（Boyer-Moore）算法的多模扩展，实现的高效的多模匹配。和AC自动机不同的是，ACBM算法不需要扫描目标文本串中的每一个字符，可以利用本次匹配不成功的信息，跳过尽可能多的字符，实现高效匹配。
+
+http://blog.csdn.net/sealyao/article/details/6817944
+
+>注： Alfred Vaino Aho，1941年生，加拿大计算机科学家。普林斯顿大学博士，长期供职于贝尔实验室，后为哥伦比亚大学教授。egrep和fgrep的发明人，AWK语言的联合发明人。著有《Principles of Compiler Design Compilers: Principles, Techniques, and Tools》。该书由于封面上有龙图案，又被称为“龙书”，是编译原理方面的权威书籍。2003年获IEEE John von Neumann Medal。
+
+>Margaret John Corasick，贝尔实验室研究员。
+
+>Robert Stephen Boyer，德克萨斯大学教授。
+
+>J Strother Moore，德克萨斯大学教授。Boyer的好朋友，两人的绝大多数成就都是合作完成的。
+
+HNM：Hard Negative Mining
+
+# 时间序列分析
+
+## 书籍和教程
+
+http://www.stat.berkeley.edu/~bartlett/courses/153-fall2010/
+
+berkeley的时间序列分析课程
+
+《应用时间序列分析》，王燕著。
+
+## ARIMA
+
+ARIMA模型全称为差分自回归移动平均模型(Autoregressive Integrated Moving Average Model,简记ARIMA)，也叫求和自回归移动平均模型，是由George Edward Pelham Box和Gwilym Meirion Jenkins于70年代初提出的一著名时间序列预测方法，所以又称为box-jenkins模型、博克思-詹金斯法。
+
+>注：Gwilym Meirion Jenkins，1932～1982，英国统计学家。伦敦大学学院博士，兰卡斯特大学教授。
+
+教程：
+
+http://people.duke.edu/%7Ernau/411home.htm
+
+回归和时间序列分析
 
 

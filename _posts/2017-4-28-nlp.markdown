@@ -139,6 +139,12 @@ NLPIR汉语分词系统(又名ICTCLAS2013)，是中科院张华平博士的作�
 
 http://ictclas.nlpir.org/
 
+参考：
+
+http://ictclas.nlpir.org/nlpir/
+
+这个网页对于NLP的大多数功能进行了可视化的展示。NLP入门必看。
+
 ### snownlp
 
 https://github.com/isnowfy/snownlp
@@ -313,6 +319,14 @@ GitHub：
 
 https://github.com/elki-project/elki
 
+## java-string-similarity
+
+这个库虽然功能有限，但却针对字符处理进行了优化。比如Jaccard距离，weka没有实现，ELKI提供的是通用的集合类实现，用起来没有java-string-similarity方便。
+
+官网：
+
+https://github.com/tdebatty/java-string-similarity
+
 # Spring
 
 Spring是一个Java Web应用框架。官网：
@@ -454,6 +468,10 @@ http://mp.weixin.qq.com/s/v0z-s72juBF6Wwb9tc_Z_g
 https://zhuanlan.zhihu.com/p/23036112
 
 推荐系统常用的推荐算法
+
+https://github.com/josephmisiti/awesome-machine-learning
+
+各种语言的机器学习工具库
 
 # 机器人参考资源
 
