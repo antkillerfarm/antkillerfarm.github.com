@@ -179,4 +179,44 @@ http://people.duke.edu/%7Ernau/411home.htm
 
 回归和时间序列分析
 
+# Earth mover's distance
+
+https://vincentherrmann.github.io/blog/wasserstein/
+
+http://chaofan.io/archives/earth-movers-distance-%e6%8e%a8%e5%9c%9f%e6%9c%ba%e8%b7%9d%e7%a6%bb
+
+# 高斯过程回归
+
+从大的分类来说，机器学习的算法可分为两类：
+
+1.定义一个模型，用训练数据训练模型的参数，然后用训练好的模型进行预测。这种方法的缺点在于，预测效果和模型与样本的匹配程度有关。比如对非线性样本采用线性模型，其预测效果通常不会太好。但是增加模型的复杂度，又会导致过拟合。
+
+2.定义一个函数分布，赋予每一种可能的函数一个先验概率，可能性越大的函数，其先验概率越大。但是可能的函数往往为一个不可数集，即有无限个可能的函数，随之引入一个新的问题：如何在有限的时间内对这些无限的函数进行选择？一种有效解决方法就是高斯过程回归(Gaussian process regression，GPR)。
+
+>注：Radford M. Neal，1956年生，加拿大科学家。多伦多大学博士（1995）和教授。贝叶斯神经网络的发明人。导师为Geoffrey Hinton。   
+>个人主页：http://www.cs.toronto.edu/~radford/
+
+>Danie G. Krige，1919～2013，南非矿业工程师和统计学家，威特沃特斯兰德大学教授。地理统计学早期的代表人物之一。
+
+http://www.cnblogs.com/hxsyl/p/5229746.html
+
+https://mqshen.gitbooks.io/prml/content/Chapter6/gaussian/gaussian_processes_regression.html
+
+http://www.gaussianprocess.org/gpml/chapters/RW.pdf
+
+http://people.cs.umass.edu/~wallach/talks/gp_intro.pdf
+
+http://wenku.baidu.com/view/72f80113915f804d2b16c173.html
+
+# CRF
+
+条件随机场(Conditional Random Field)由Lafferty等人于2001年提出，结合了最大熵模型和隐马尔可夫模型的特点，是一种无向图模型，近年来在分词、词性标注和命名实体识别等序列标注任务中取得了很好的效果。
+
+# 异常点检测
+
+http://chuansong.me/n/377440751130
+
+http://jiangshuxia.9.blog.163.com/blog/static/3487586020083662621887/
+
+http://www.cnblogs.com/fengfenggirl/p/iForest.html
 

@@ -341,4 +341,3 @@ https://cwiki.apache.org/confluence/display/solr/Using+SolrJ
 
 http://lucene.apache.org/core/6_3_0/index.html
 
-

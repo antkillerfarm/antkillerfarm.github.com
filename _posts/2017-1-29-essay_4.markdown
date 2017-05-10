@@ -1,24 +1,10 @@
 ---
 layout: post
-title: 我的手机简史，对Geoffrey Everest Hinton的深度挖掘
+title: 我的手机简史（二），对Geoffrey Everest Hinton的深度挖掘
 category: essay 
 ---
 
-# 手机篇
-
-2015.3
-
-## 1.家里的第一部手机（2000）
-
-第一部手机当然是老爸的。这是一部西门子手机，黑白屏的。用了一年多就由于电池问题退役了。
-
-## 2.老爸的第二部手机，也是我的第一部手机（2002）
-
-Moto T720彩屏手机。2002年买的，当时的梦幻配置，要3000左右呢。后来在2003年底的时候，转给了我使用。然后一直用到2009年初，前后7年时间。最后连充电器都用坏了，电池也不行了，才不得不退役。
-
-## 3.我的第二部手机（2009）
-
-一部Moto的低端机，396元到手。可惜电池不给力，加之我已经工作了，也有能力给自己一个好用的。于是到2010年11月的时候，换了下一部手机。
+# 手机篇（续）
 
 ## 4.我的第三部手机（2010）
 
@@ -164,4 +150,62 @@ http://dmg.org/
 http://blog.csdn.net/litaoshoujiao/article/details/8537599
 
 https://www.ibm.com/developerworks/cn/xml/x-1107xuj/
+
+# Spring
+
+Spring是一个Java Web应用框架。官网：
+
+http://spring.io/
+
+## Ubuntu安装Eclipse、Spring
+
+1.安装Eclipse
+
+`sudo apt-get install eclipse`
+
+2.安装Spring
+
+`sudo apt-get install libspring-web-portlet-java`
+
+注意：ubuntu软件仓库中还有一个叫做spring的游戏引擎，不要弄错了。
+
+http://www.mkyong.com/spring/quick-start-maven-spring-example/
+
+http://wiki.jikexueyuan.com/project/spring/
+
+## Restful
+
+http://spring.io/guides/gs/rest-service/
+
+## Spring Boot
+
+https://www.tianmaying.com/tutorial/deploy-spring-boot-application
+
+http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+
+Spring Boot默认的配置文件
+
+## WebService
+
+https://spring.io/guides/gs/producing-web-service/
+
+http://localhost:9999/ws/countries.wsdl
+
+# Log4j & SLF4J & Logback
+
+Log4j是Apache的一个开源项目，通过使用Log4j，我们可以控制日志信息输送的目的地是控制台、文件、GUI组件，甚至是套接口服务器、NT的事件记录器、UNIX Syslog守护进程等；我们也可以控制每一条日志的输出格式；通过定义每一条日志信息的级别，我们能够更加细致地控制日志的生成过程。
+
+SLF4J，即简单日志门面（Simple Logging Facade for Java），不是具体的日志解决方案，它只服务于各种各样的日志系统。按照官方的说法，SLF4J是一个用于日志系统的简单Facade，允许最终用户在部署其应用时使用其所希望的日志System。
+
+假设你打算将你使用log4j的产品卖给要求使用JDK 1.4 Logging的用户时，面对成千上万的log4j调用的修改，相信这绝对不是一件轻松的事情。但是如果开始便使用SLF4J，那么这种转换将是非常轻松的事情。
+
+Logback是由log4j创始人设计的另一个开源日志组件。官方网站：
+
+http://logback.qos.ch
+
+上面三者可以组合使用（slf4j+log4j和slf4j+logback），它们的配置文件主要是logback.xml和log4j.properties。
+
+参见：
+
+http://wuyilun2.blog.163.com/blog/static/9853110201111595858365/
 

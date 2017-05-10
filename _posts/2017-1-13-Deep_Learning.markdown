@@ -125,7 +125,9 @@ BP算法的推导过程教材已经写的很好了，这里只补充一点：
 
 如上图所示，sigmoid函数不是线性的，一个小的输出值的改变，对应了比较大的输入值改变。换句话说，就是输出值的梯度较大，而输入值的梯度较小。而梯度在基于梯度下降的优化问题中，是至关重要的。
 
-随着层数的增多，反向传递的残差梯度会越来越小，这样的现象，被称作梯度消失（Vanishing Gradient）。它导致的结果是，虽然靠近输出端的神经网络已经训练好了，但输入端的神经网络仍处于随机状态。也就是说，靠近输入端的神经网络，有和没有都是一样的效果，完全体现不了深度神经网络的优越性。
+随着层数的增多，反向传递的残差梯度会越来越小，这样的现象，被称作**梯度消失**（Vanishing Gradient）。它导致的结果是，虽然靠近输出端的神经网络已经训练好了，但输入端的神经网络仍处于随机状态。也就是说，靠近输入端的神经网络，有和没有都是一样的效果，完全体现不了深度神经网络的优越性。
+
+和梯度消失相反的概念是**梯度爆炸**，也就是神经网络无法收敛。
 
 # 神经元激活函数
 
@@ -177,6 +179,16 @@ http://www.cnblogs.com/neopenx/p/4453161.html
 
 https://en.wikipedia.org/wiki/Activation_function
 
+# 深度学习中epoch、batch size、iterations的区别
+
+one epoch：所有的训练样本完成一次Forword运算以及一次BP运算
+
+batch size：一次Forword运算以及BP运算中所需要的训练样本数目，其实深度学习每一次参数的更新所需要损失函数并不是由一个{data：label}获得的，而是由一组数据加权得到的，这一组数据的数量就是[batch size]。当然batch size 越大，所需的内存就越大，要量力而行。
+
+iterations（迭代）：每一次迭代都是一次权重更新，每一次权重更新需要batch size个数据进行Forward运算得到损失函数，再BP算法更新参数。
+
+最后可以得到一个公式 one epoch = numbers of iterations = N = 训练样本的数量/batch size  
+
 # P-R、ROC和AUC
 
 很多学习器是为测试样本产生一个实值或概率预测，然后将这个预测值与一个分类阈值（threshold）进行比较，若大于阈值则分为正类，否则为反类。这个实值或概率预测结果的好坏，直接决定了学习器的泛化能力。实际上，根据这个实值或概率预测结果，我们可将测试样本进行排序，“最可能”是正例的排在最前面，“最不可能”是正例的排在最后面。这样，分类过程就相当于在这个排序中以某个“截断点”（cut point）将样本分为两部分，前一部分判作正例，后一部分则判作反例。
@@ -196,39 +208,4 @@ ROC（Receiver operating characteristic）曲线的纵轴是真正例率（True 
 $$TPR=\frac{TP}{TP+FN},FPR=\frac{FP}{TN+FP}$$
 
 ROC曲线下方的面积被称为AUC（Area Under ROC Curve）。
-
-# 高斯过程回归
-
-从大的分类来说，机器学习的算法可分为两类：
-
-1.定义一个模型，用训练数据训练模型的参数，然后用训练好的模型进行预测。这种方法的缺点在于，预测效果和模型与样本的匹配程度有关。比如对非线性样本采用线性模型，其预测效果通常不会太好。但是增加模型的复杂度，又会导致过拟合。
-
-2.定义一个函数分布，赋予每一种可能的函数一个先验概率，可能性越大的函数，其先验概率越大。但是可能的函数往往为一个不可数集，即有无限个可能的函数，随之引入一个新的问题：如何在有限的时间内对这些无限的函数进行选择？一种有效解决方法就是高斯过程回归(Gaussian process regression，GPR)。
-
->注：Radford M. Neal，1956年生，加拿大科学家。多伦多大学博士（1995）和教授。贝叶斯神经网络的发明人。导师为Geoffrey Hinton。   
->个人主页：http://www.cs.toronto.edu/~radford/
-
->Danie G. Krige，1919～2013，南非矿业工程师和统计学家，威特沃特斯兰德大学教授。地理统计学早期的代表人物之一。
-
-http://www.cnblogs.com/hxsyl/p/5229746.html
-
-https://mqshen.gitbooks.io/prml/content/Chapter6/gaussian/gaussian_processes_regression.html
-
-http://www.gaussianprocess.org/gpml/chapters/RW.pdf
-
-http://people.cs.umass.edu/~wallach/talks/gp_intro.pdf
-
-http://wenku.baidu.com/view/72f80113915f804d2b16c173.html
-
-# CRF
-
-条件随机场(Conditional Random Field)由Lafferty等人于2001年提出，结合了最大熵模型和隐马尔可夫模型的特点，是一种无向图模型，近年来在分词、词性标注和命名实体识别等序列标注任务中取得了很好的效果。
-
-# 异常点检测
-
-http://chuansong.me/n/377440751130
-
-http://jiangshuxia.9.blog.163.com/blog/static/3487586020083662621887/
-
-http://www.cnblogs.com/fengfenggirl/p/iForest.html
 

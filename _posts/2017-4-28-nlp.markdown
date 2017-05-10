@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NLP, Spring, Machine Learning之Java篇, ML参考资源, 机器人参考资源
+title:  NLP, Machine Learning之Java篇, ML参考资源, 机器人参考资源
 category: technology 
 ---
 
@@ -25,6 +25,10 @@ CMU的NLP教程。该网页下方还有美国其他高校的NLP课程的链接�
 http://ccl.pku.edu.cn/alcourse/nlp/
 
 北京大学的NLP教程，特色：中文处理。
+
+http://www.cs.columbia.edu/~cs4705/
+
+COMS W4705: Natural Language Processing
 
 ## 书籍
 
@@ -183,6 +187,10 @@ https://github.com/mozillazg/python-pinyin
 
 python版的汉字转拼音软件
 
+https://github.com/ysc/word
+
+Java分布式中文分词组件-word分词
+
 ## 词性标注
 
 http://jacoxu.com/ictpos3-0%E6%B1%89%E8%AF%AD%E8%AF%8D%E6%80%A7%E6%A0%87%E8%AE%B0%E9%9B%86/
@@ -251,15 +259,25 @@ http://mp.weixin.qq.com/s/XPlyWdfZbOR5z25Ly-bUGQ
 
 如何在Pytorch中通过OpenNMT系统实现神经机器翻译
 
+http://www.algorithmdog.com/fast-fasttext
+
+Mikolov文本分类新作fastText
+
+http://mp.weixin.qq.com/s?__biz=MzI4MDYzNzg4Mw==&mid=2247483922&idx=1&sn=cffbaf797cc58e303a65a8a2ae370b86
+
+句法分析（syntactic parsing）在NLP领域的应用是怎样的？
+
+## 论文
+
+《Distant Supervision for relation extraction without labeled data》
+
+《Using Recurrent Neural Networks for Slot Filling in Spoken Language Understanding》
+
 # Machine Learning之Java篇
 
 http://machinelearningmastery.com/java-machine-learning/
 
 这篇文章包含了很多Machine Learning方面的软件和库。
-
-http://www.algorithmdog.com/fast-fasttext
-
-Mikolov文本分类新作fastText
 
 ## ND4J
 
@@ -326,46 +344,6 @@ https://github.com/elki-project/elki
 官网：
 
 https://github.com/tdebatty/java-string-similarity
-
-# Spring
-
-Spring是一个Java Web应用框架。官网：
-
-http://spring.io/
-
-## Ubuntu安装Eclipse、Spring
-
-1.安装Eclipse
-
-`sudo apt-get install eclipse`
-
-2.安装Spring
-
-`sudo apt-get install libspring-web-portlet-java`
-
-注意：ubuntu软件仓库中还有一个叫做spring的游戏引擎，不要弄错了。
-
-http://www.mkyong.com/spring/quick-start-maven-spring-example/
-
-http://wiki.jikexueyuan.com/project/spring/
-
-## Restful
-
-http://spring.io/guides/gs/rest-service/
-
-## Spring Boot
-
-https://www.tianmaying.com/tutorial/deploy-spring-boot-application
-
-http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
-
-Spring Boot默认的配置文件
-
-## WebService
-
-https://spring.io/guides/gs/producing-web-service/
-
-http://localhost:9999/ws/countries.wsdl
 
 # ML参考资源
 
