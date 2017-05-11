@@ -317,3 +317,5 @@ jaxws-demo-client就是具体的客户端实现了，可以看出相比于上一
 | SMAPE | Symmetric Mean Absolute Percentage Error | 对称平均绝对百分比误差 |  |
 | MAE | Mean Absolute Error | 平均绝对值误差 |  |
 | MPE | Mean Percentage Error | 平均百分比误差 |  |
+| DSSM | Deep Structured Semantic Model | 深度结构语义模型 |  |
+

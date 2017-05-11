@@ -352,6 +352,14 @@ https://github.com/jinfagang/pytorch_style_transfer
 
 这个和上面的一样，不过是用pytorch实现的。
 
+http://mp.weixin.qq.com/s/2TUw_2d36uFAiJTkvaaqpA
+
+解读Keras在ImageNet中的应用：详解5种主要的图像识别模型
+
+http://mp.weixin.qq.com/s/zNmJuevHaagKbyGFdKTwoQ
+
+tensorflow实现基于深度学习的图像补全
+
 ## 使用细节
 
 ### saturate_cast
@@ -423,4 +431,8 @@ Probabilistic Models of Discrete Data
 http://speech.ee.ntu.edu.tw/~tlkagk/courses_MLDS17.html
 
 台湾大学李宏毅副教授的深度学习课程
+
+http://mp.weixin.qq.com/s/dtg-alezht56mu_vOA4Lrg
+
+14所世界顶级名校在线免费算法课程。这里的课程主要是非机器学习类的计算机算法。
 
