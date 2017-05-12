@@ -360,6 +360,14 @@ http://mp.weixin.qq.com/s/zNmJuevHaagKbyGFdKTwoQ
 
 tensorflow实现基于深度学习的图像补全
 
+http://kubicode.me/
+
+一个深度学习的blog
+
+http://mp.weixin.qq.com/s/bzwG0QxnP2drqS4RwcZlBg
+
+微软详解：到底什么是生成式对抗网络GAN？
+
 ## 使用细节
 
 ### saturate_cast

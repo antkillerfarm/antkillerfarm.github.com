@@ -201,6 +201,14 @@ http://jacoxu.com/ictpos3-0%E6%B1%89%E8%AF%AD%E8%AF%8D%E6%80%A7%E6%A0%87%E8%AE%B
 
 ICTPOS3.0汉语词性标记集
 
+## Word Hashing
+
+Word Hashing是非常重要的一个trick，以英文单词来说，比如good，他可以写成`#good#`，然后按tri-grams来进行分解为`#go goo ood od#`，再将这个tri-grams灌入到bag-of-word中，这种方式可以非常有效的解决vocabulary太大的问题(因为在真实的web search中vocabulary就是异常的大)，另外也不会出现oov问题，因此英文单词才26个，3个字母的组合都是有限的，很容易枚举光。
+
+那么问题就来了，这样两个不同的单词会不会产出相同的tri-grams，paper里面做了统计，说了这个冲突的概率非常的低，500K个word可以降到30k维，冲突的概率为0.0044%。
+
+但是在中文场景下，这个Word Hashing估计没有这么有效了。
+
 ## 有用的资料
 
 https://github.com/ematvey/tensorflow-seq2seq-tutorials
@@ -283,6 +291,10 @@ http://mp.weixin.qq.com/s/lmHWo9MUdv7ZMI7ARNmTSw
 
 拆开阿里小蜜的内核，看智能人机交互的实现逻辑
 
+https://www.microsoft.com/en-us/research/project/dssm/
+
+微软的DSSM模型
+
 ## 论文
 
 《Distant Supervision for relation extraction without labeled data》
@@ -326,6 +338,10 @@ https://www.zhihu.com/question/21664179
 https://www.zhihu.com/question/28171555
 
 如何理解“量子退火”？
+
+http://mp.weixin.qq.com/s/FjET9HFNjVVMjqQM2KhtKA
+
+5分钟看懂中国最新的量子计算机
 
 https://zhuanlan.zhihu.com/p/20756711
 

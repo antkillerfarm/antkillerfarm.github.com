@@ -310,12 +310,13 @@ jaxws-demo-client就是具体的客户端实现了，可以看出相比于上一
 | IIR | Infinite Impulse Response | 无限脉冲响应 |  |
 | FIR | Finite Impulse Response | 有限脉冲响应 |  |
 | HNM | Hard Negative Mining | 硬负挖掘 |  |
-| ACBM | Aho-Corasick Boyer-Moore |  |  |
+| ACBM | Aho-Corasick Boyer-Moore |  | 一种字符串匹配算法 |
 | LASSO | Least Absolute Shrinkage and Selection Operator | 最小绝对收缩和选择算子 |  |
 | CRF | Conditional Random Field | 条件随机场 |  |
 | MSE/MSD | Mean Squared Error/Mean Squared Deviation | 均方误差 |  |
 | SMAPE | Symmetric Mean Absolute Percentage Error | 对称平均绝对百分比误差 |  |
 | MAE | Mean Absolute Error | 平均绝对值误差 |  |
 | MPE | Mean Percentage Error | 平均百分比误差 |  |
-| DSSM | Deep Structured Semantic Model | 深度结构语义模型 |  |
+| DSSM | Deep Structured Semantic Model / Deep Semantic Similarity Model | 深度结构语义模型 |  |
+| OOV | out-of-vocabulary |  | 无论多大的单词表都会遇到生词。 |
 

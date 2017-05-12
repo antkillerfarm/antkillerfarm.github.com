@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  linux学习心得（二）, 知名数据集, Python（二）, 运维工具集, Spring
+title:  linux学习心得（二）, 知名数据集, Python（二）, 运维工具集
 category: technology 
 ---
 
@@ -315,6 +315,10 @@ https://github.com/neozhaoliang/pywonderland/tree/master/
 http://old.sebug.net/paper/books/scipydoc/index.html
 
 用Python做科学计算
+
+https://github.com/yahoo/TensorFlowOnSpark
+
+TensorFlow On Spark
 
 # Python
 
