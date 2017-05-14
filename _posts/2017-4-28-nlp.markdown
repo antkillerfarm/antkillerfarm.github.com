@@ -295,6 +295,10 @@ https://www.microsoft.com/en-us/research/project/dssm/
 
 微软的DSSM模型
 
+http://www.csdn.net/article/2015-08-28/2825569
+
+递归神经网络不可思议的有效性
+
 ## 论文
 
 《Distant Supervision for relation extraction without labeled data》

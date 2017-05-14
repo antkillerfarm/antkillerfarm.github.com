@@ -223,5 +223,15 @@ $$DM:P(Y,R|O)\to P(Y|O)$$
 
 ![](/images/article/Generative_Models.png)
 
+# CRF
 
+条件随机场(Conditional Random Field)由Lafferty等人于2001年提出，结合了最大熵模型和隐马尔可夫模型的特点，是一种无向图模型，近年来在分词、词性标注和命名实体识别等序列标注任务中取得了很好的效果。
+
+# 异常点检测
+
+http://chuansong.me/n/377440751130
+
+http://jiangshuxia.9.blog.163.com/blog/static/3487586020083662621887/
+
+http://www.cnblogs.com/fengfenggirl/p/iForest.html
 

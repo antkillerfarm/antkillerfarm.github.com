@@ -187,25 +187,42 @@ batch size：一次Forword运算以及BP运算中所需要的训练样本数目�
 
 iterations（迭代）：每一次迭代都是一次权重更新，每一次权重更新需要batch size个数据进行Forward运算得到损失函数，再BP算法更新参数。
 
-最后可以得到一个公式 one epoch = numbers of iterations = N = 训练样本的数量/batch size  
+最后可以得到一个公式 one epoch = numbers of iterations = N = 训练样本的数量/batch size
 
-# P-R、ROC和AUC
+# Dropout
 
-很多学习器是为测试样本产生一个实值或概率预测，然后将这个预测值与一个分类阈值（threshold）进行比较，若大于阈值则分为正类，否则为反类。这个实值或概率预测结果的好坏，直接决定了学习器的泛化能力。实际上，根据这个实值或概率预测结果，我们可将测试样本进行排序，“最可能”是正例的排在最前面，“最不可能”是正例的排在最后面。这样，分类过程就相当于在这个排序中以某个“截断点”（cut point）将样本分为两部分，前一部分判作正例，后一部分则判作反例。
+Dropout是神经网络中解决过拟合问题的一种常见方法。
 
-在不同的应用任务中，我们可根据任务需求来采用不同的截断点，例如若我们更重视 “查准率”（precision），则可选择排序中靠前的位置进行截断，若更重视“查全率”（recall），则可选择靠后的位置进行截断。
+它的具体做法是：
 
-对于二分类问题，可将样例根据其真实类别与学习器预测类别的组合划分为真正例（true positive）、假正例（false positive）、真反例（true negative）和假反例（true negative）。
+![](/images/article/DropOut.png)
 
-查准率P和查全率R的定义如下：
+1.每次训练时，随机隐藏部分隐层神经元。
 
-$$P=\frac{TP}{TP+FP},R=\frac{TP}{TP+FN}$$
+2.根据样本值，修改未隐藏的神经元的参数。隐藏的神经元的参数保持不变。
 
-以P和R为坐标轴，所形成的曲线就是P-R曲线。
+3.下次训练时，重新随机选择需要隐藏的神经元。
 
-ROC（Receiver operating characteristic）曲线的纵轴是真正例率（True Positive Rate，TPR），横轴是假正例率（False Positive Rate，FPR）。其定义如下：
+由于神经网络的非线性，Dropout的理论证明尚属空白，这里只有一些直观解释。
 
-$$TPR=\frac{TP}{TP+FN},FPR=\frac{FP}{TN+FP}$$
+1.dropout掉不同的隐藏神经元就类似在训练不同的网络，整个dropout过程就相当于对很多个不同的神经网络取平均。而不同的网络产生不同的过拟合，一些互为“反向”的拟合相互抵消就可以达到整体上减少过拟合。这实际上就是bagging的思想。
 
-ROC曲线下方的面积被称为AUC（Area Under ROC Curve）。
+2.因为dropout程序导致两个神经元不一定每次都在一个dropout网络中出现。这会迫使网络去学习更加鲁棒的特征。换句话说，假如我们的神经网络是在做出某种预测，它不应该对一些特定的线索片段太过敏感，即使丢失特定的线索，它也应该可以从众多其它线索中学习一些共同的模式（鲁棒性）。
+
+除了Dropout之外，还有DropConnect。两者原理上类似，后者只隐藏神经元之间的连接。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/23178423
+
+Dropout解决过拟合问题
+
+# Vanilla
+
+Vanilla是神经网络领域的常见词汇，比如Vanilla Neural Networks、Vanilla CNN等。Vanilla本意是香草，在这里基本等同于raw。比如Vanilla Neural Networks实际上就是BP神经网络，而Vanilla CNN实际上就是最原始的CNN。
+
+![](/images/article/LeNet_5.jpg)
+
+![](/images/article/reinforcement_learning.png)
+
 

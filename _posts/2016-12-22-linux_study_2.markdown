@@ -320,6 +320,10 @@ https://github.com/yahoo/TensorFlowOnSpark
 
 TensorFlow On Spark
 
+https://silencezjl.coding.me/2017/05/01/%E5%81%B7%E4%B8%80%E6%B3%A2%E8%B5%84%E6%BA%90/
+
+各种TensorFlow资源
+
 # Python
 
 ## 如何通过需认证的代理获取HTTP网页

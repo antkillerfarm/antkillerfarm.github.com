@@ -368,6 +368,14 @@ http://mp.weixin.qq.com/s/bzwG0QxnP2drqS4RwcZlBg
 
 微软详解：到底什么是生成式对抗网络GAN？
 
+http://mp.weixin.qq.com/s/6I0Z_yY7UT_7qOKOWcd7Mw
+
+李飞飞发表研究新成果：视觉推理的推断和执行程序！
+
+https://theneuralperspective.com/tag/tutorials/
+
+一些深度学习的教程。
+
 ## 使用细节
 
 ### saturate_cast
@@ -443,4 +451,9 @@ http://speech.ee.ntu.edu.tw/~tlkagk/courses_MLDS17.html
 http://mp.weixin.qq.com/s/dtg-alezht56mu_vOA4Lrg
 
 14所世界顶级名校在线免费算法课程。这里的课程主要是非机器学习类的计算机算法。
+
+http://mp.weixin.qq.com/s/qW_RZ--df6MjaKNgNdjeWA
+
+10所世界顶级名校的25门在线免费机器学习课程！
+
 
