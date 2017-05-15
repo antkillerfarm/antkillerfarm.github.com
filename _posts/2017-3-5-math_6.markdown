@@ -179,12 +179,6 @@ http://people.duke.edu/%7Ernau/411home.htm
 
 回归和时间序列分析
 
-# Earth mover's distance
-
-https://vincentherrmann.github.io/blog/wasserstein/
-
-http://chaofan.io/archives/earth-movers-distance-%e6%8e%a8%e5%9c%9f%e6%9c%ba%e8%b7%9d%e7%a6%bb
-
 # 高斯过程回归
 
 从大的分类来说，机器学习的算法可分为两类：

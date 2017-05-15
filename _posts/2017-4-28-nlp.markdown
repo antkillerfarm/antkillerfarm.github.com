@@ -305,6 +305,18 @@ http://www.csdn.net/article/2015-08-28/2825569
 
 《Using Recurrent Neural Networks for Slot Filling in Spoken Language Understanding》
 
+《Convolutional Neural Networks for Sentence Classification》：TextCNN的开山之作
+
+# 知识图谱
+
+https://wenku.baidu.com/view/38ad3ef7e109581b6bd97f19227916888586b959.html
+
+知识图谱构建技术综述
+
+https://wenku.baidu.com/view/e69a3619fe00bed5b9f3f90f76c66137ee064f15.html
+
+知识图谱技术综述
+
 # ML参考资源
 
 http://www.cnblogs.com/jerrylead/
@@ -418,6 +430,10 @@ https://github.com/josephmisiti/awesome-machine-learning
 http://mp.weixin.qq.com/s/xP4lnLXwGlYE_RmJfRwJ4w
 
 关于如何解释机器学习的一些方法
+
+http://blog.csdn.net/pi9nc/article/details/27649323
+
+一个Q-learning算法的简明教程
 
 # 机器人参考资源
 

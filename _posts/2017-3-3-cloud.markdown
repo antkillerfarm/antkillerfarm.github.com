@@ -290,27 +290,3 @@ JSON采用的是，不同的语言提供不同的库来解析的方式。
 **预测（Prediction）**：利用$$[0,t]$$的数据，来估计$$t+\tau(\tau>0)$$时刻信息的运算过程。
 
 可见，滤波和预测是实时运算，而平滑是非实时运算。
-
-# 机器学习相关术语表
-
-| 缩写 | 全称 | 中文名 | 备注 |
-|:--:|:--:|:--:|:--:|
-| LR | Linear Regression | 线性回归 |  |
-| LS | Least Squares | 最小二乘法 |  |
-| LWR | Locally Weighted linear Regression | 局部加权线性回归 |  |
-| LR | Logistic Regression | 逻辑回归 |  |
-| MLE | Maximum Likelihood Estimator | 最大似然估计 |  |
-| GLM | Generalized Linear Model | 广义线性模型 |  |
-| IID | Independent and Identically Distributed | 独立同分布 |  |
-| DLA | Discriminative Learning Algorithm | 判别学习算法 |  |
-| GLA | Generative Learning Algorithms | 生成学习算法 |  |
-| GDA | Gaussian Discriminant Analysis | 高斯判别分析 |  |
-| NB | Naive Bayes | 朴素贝叶斯 |  |
-| SVM | Support Vector Machines | 支持向量机 |  |
-| SMO | Sequential Minimal Optimization | 序列最小优化方法 |  |
-| PAC | Probably Approximately Correct | 可能近似正确 |  |
-| ERM | Empirical Risk Minimization | 经验风险最小化 |  |
-| EM | Expectation-Maximization | 期望最大化 |  |
-| GMM | Mixture of Gaussians Model | 高斯混合模型 |  |
-| SVD | Singular Value Decomposition | 奇异值分解 |  |
-| PPMCC/PCC | Pearson Product-Moment Correlation Coefficient | 皮尔逊相关系数 |  |

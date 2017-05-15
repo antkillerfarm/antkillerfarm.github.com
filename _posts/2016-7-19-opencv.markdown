@@ -364,17 +364,13 @@ http://kubicode.me/
 
 一个深度学习的blog
 
-http://mp.weixin.qq.com/s/bzwG0QxnP2drqS4RwcZlBg
+http://www.leiphone.com/news/201609/303vE8MIwFC7E3DB.html
 
-微软详解：到底什么是生成式对抗网络GAN？
+Google最新开源Inception-ResNet-v2，借助残差网络进一步提升图像分类水准
 
-http://mp.weixin.qq.com/s/6I0Z_yY7UT_7qOKOWcd7Mw
+## 论文
 
-李飞飞发表研究新成果：视觉推理的推断和执行程序！
-
-https://theneuralperspective.com/tag/tutorials/
-
-一些深度学习的教程。
+《Moving Gradients: A Path-Based Method for Plausible Image Interpolation》：视频帧插值算法
 
 ## 使用细节
 
