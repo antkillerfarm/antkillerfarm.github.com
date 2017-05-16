@@ -202,8 +202,7 @@ HareDB HBase Client是一个Hbase的Web GUI客户端，比较好用。
 HBase以表的形式存储数据。表有行和列组成。列划分为若干个列族/列簇(column family)。
 
 <table>
-<tbody>
-<tr border="1">
+<tr>
 <td rowspan="2"><strong>Row Key</strong></td>
 <td colspan="2"><strong>column-family1</strong></td>
 <td colspan="3"><strong>column-family2</strong></td>
@@ -238,7 +237,7 @@ HBase以表的形式存储数据。表有行和列组成。列划分为若干个
 <td></td>
 <td></td>
 <td></td>
-<td></td></tr></tbody></table>
+<td></td></tr></table>
 
 如上图所示，key1,key2,key3是三条记录的唯一的row key值，column-family1,column-family2,column-family3是三个列族，每个列族下又包括几列。比如，column-family1这个列族下包括两列，名字是column1和column2。
 

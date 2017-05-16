@@ -341,40 +341,4 @@ https://cwiki.apache.org/confluence/display/solr/Using+SolrJ
 
 http://lucene.apache.org/core/6_3_0/index.html
 
-# 深度学习参考资源
 
-http://mp.weixin.qq.com/s/bzwG0QxnP2drqS4RwcZlBg
-
-微软详解：到底什么是生成式对抗网络GAN？
-
-http://mp.weixin.qq.com/s/6I0Z_yY7UT_7qOKOWcd7Mw
-
-李飞飞发表研究新成果：视觉推理的推断和执行程序！
-
-https://theneuralperspective.com/tag/tutorials/
-
-一些深度学习的教程。
-
-https://github.com/jinfagang/pytorch_name_net
-
-PyTorch人工智能自动取名
-
-http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg
-
-GitHub 最受欢迎深度学习项目Top 20
-
-http://lamda.nju.edu.cn/yangjw/project/drlintro.html
-
-深度强化学习初探
-
-https://zhuanlan.zhihu.com/p/21498750
-
-深度强化学习导引
-
-http://mp.weixin.qq.com/s/SgN9uDTiBTATF5AaZiSMYQ
-
-深度学习中的怪圈
-
-http://mp.weixin.qq.com/s/-Av3-ZNi6UGlKNv_jduAeQ
-
-微软新论文：如何利用深度特征流提高视频识别准确率？

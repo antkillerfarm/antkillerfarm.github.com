@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NLP, Machine Learning之Java篇, ML参考资源, 机器人参考资源
+title:  NLP, Java（二）, Spring
 category: technology 
 ---
 
@@ -317,145 +317,107 @@ https://wenku.baidu.com/view/e69a3619fe00bed5b9f3f90f76c66137ee064f15.html
 
 知识图谱技术综述
 
-# ML参考资源
+# Java各集合类的比较 
 
-http://www.cnblogs.com/jerrylead/
+<table>
+<tr>
+<td colspan="2"></td>
+<td>有序否</td>
+<td>允许元素重复否</td>
+</tr>
+<tr>
+<td colspan="2">Collection</td>
+<td>否</td>
+<td>是</td>
+</tr>
+<tr>
+<td colspan="2">List</td>
+<td>是</td>
+<td>是</td>
+</tr>
+<tr>
+<td rowspan="3">Set</td>
+<td>AbstractSet</td>
+<td rowspan="2">否</td>
+<td rowspan="3">否</td>
+</tr>
+<tr>
+<td>HashSet</td>
+</tr>
+<tr>
+<td>TreeSet</td>
+<td>是（用二叉树排序）</td>
+</tr>
+<tr>
+<td rowspan="3">Map</td>
+<td>AbstractMap</td>
+<td rowspan="2">否</td>
+<td rowspan="3">使用key-value来映射和存储数据，Key必须惟一，value可以重复</td>
+</tr>
+<tr>
+<td>HashMap</td>
+</tr>
+<tr>
+<td>TreeSet</td>
+<td>是（用二叉树排序）</td>
+</tr>
+</table>
 
-一个机器学习的blog。
+# Log4j & SLF4J & Logback
 
-http://www.open-open.com/lib/view/open1420687784625.html
+Log4j是Apache的一个开源项目，通过使用Log4j，我们可以控制日志信息输送的目的地是控制台、文件、GUI组件，甚至是套接口服务器、NT的事件记录器、UNIX Syslog守护进程等；我们也可以控制每一条日志的输出格式；通过定义每一条日志信息的级别，我们能够更加细致地控制日志的生成过程。
 
-机器学习平台、框架、库和软件集合。
+SLF4J，即简单日志门面（Simple Logging Facade for Java），不是具体的日志解决方案，它只服务于各种各样的日志系统。按照官方的说法，SLF4J是一个用于日志系统的简单Facade，允许最终用户在部署其应用时使用其所希望的日志System。
 
-https://www.zhihu.com/question/20691338
+假设你打算将你使用log4j的产品卖给要求使用JDK 1.4 Logging的用户时，面对成千上万的log4j调用的修改，相信这绝对不是一件轻松的事情。但是如果开始便使用SLF4J，那么这种转换将是非常轻松的事情。
 
-机器学习该怎么入门？
+Logback是由log4j创始人设计的另一个开源日志组件。官方网站：
 
-http://echarts.baidu.com/echarts2/doc/example.html
+http://logback.qos.ch
 
-各种大数据展示用的图表。
+上面三者可以组合使用（slf4j+log4j和slf4j+logback），它们的配置文件主要是logback.xml和log4j.properties。
 
-http://url.cn/40IkU7z
+参见：
 
-盘点机器学习常用的35大算法
+http://wuyilun2.blog.163.com/blog/static/9853110201111595858365/
 
-https://www.zhihu.com/question/28810567
+# Spring
 
-ELM算法相关
+Spring是一个Java Web应用框架。官网：
 
-http://mp.weixin.qq.com/s?__biz=MjM5MTQzNzU2NA==&mid=2651645872&idx=1&sn=e7b34d0df78a8eda7b71ecf169ce5c38
+http://spring.io/
 
-分辨真假数据科学家的20个问题及回答
+## Ubuntu安装Eclipse、Spring
 
-https://www.zhihu.com/question/21664179
+1.安装Eclipse
 
-如何在论文中画出漂亮的插图？
+`sudo apt-get install eclipse`
 
-https://www.zhihu.com/question/28171555
+2.安装Spring
 
-如何理解“量子退火”？
+`sudo apt-get install libspring-web-portlet-java`
 
-http://mp.weixin.qq.com/s/FjET9HFNjVVMjqQM2KhtKA
+注意：ubuntu软件仓库中还有一个叫做spring的游戏引擎，不要弄错了。
 
-5分钟看懂中国最新的量子计算机
+http://www.mkyong.com/spring/quick-start-maven-spring-example/
 
-https://zhuanlan.zhihu.com/p/20756711
+http://wiki.jikexueyuan.com/project/spring/
 
-用Excel做出强大漂亮的数据地图
+## Restful
 
-https://zhuanlan.zhihu.com/p/23866364
+http://spring.io/guides/gs/rest-service/
 
-从梯度下降到Hessian-Free优化
+## Spring Boot
 
-http://blog.csdn.net/u010945683/article/details/40987331
+https://www.tianmaying.com/tutorial/deploy-spring-boot-application
 
-遗传算法详解
+http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
 
-http://blog.csdn.net/u010945683/article/details/49149815
+Spring Boot默认的配置文件
 
-共轭先验分布
+## WebService
 
-http://wenku.baidu.com/view/44a63fd2b14e852458fb577f.html
+https://spring.io/guides/gs/producing-web-service/
 
-kriging插值
-
-http://blog.csdn.net/baimafujinji
-
-一个算法牛人的blog
-
-http://www.flickering.cn/
-
-腾讯效果广告平台部的技术blog。
-
-http://mp.weixin.qq.com/s/QhP3wRGbrO7sYSDNm8z0gQ
-
-常用推荐算法（50页干货）
-
-http://blog.csdn.net/zwgdft/article/category/6432397
-
-创业公司做数据分析
-
-https://woaielf.github.io/
-
-一个医学妹子的blog，有大量的数据挖掘的思维导图。
-
-http://www.infoq.com/cn/articles/we-are-bringing-learning-to-rank-to-elasticsearch
-
-在Elasticsearch中应用机器学习排序LTR
-
-http://mp.weixin.qq.com/s/JZ1ceGQDmQUaNW5wl6biLA
-
-TensorFlow实现流行机器学习算法教程汇集
-
-http://mp.weixin.qq.com/s/V-QCRXt5wAfSCiNT955W0A
-
-外卖订单量预测异常报警模型实践
-
-http://mp.weixin.qq.com/s/omiyerWFmVPTE5XW6j7txQ
-
-45个回归问题测试题（附答案）
-
-http://mp.weixin.qq.com/s/v0z-s72juBF6Wwb9tc_Z_g
-
-深入理解空间搜索算法
-
-https://zhuanlan.zhihu.com/p/23036112
-
-推荐系统常用的推荐算法
-
-https://github.com/josephmisiti/awesome-machine-learning
-
-各种语言的机器学习工具库
-
-http://mp.weixin.qq.com/s/xP4lnLXwGlYE_RmJfRwJ4w
-
-关于如何解释机器学习的一些方法
-
-http://blog.csdn.net/pi9nc/article/details/27649323
-
-一个Q-learning算法的简明教程
-
-# 机器人参考资源
-
-http://blog.exbot.net/
-
-一个机器人技术方面的网站。
-
-http://www.ros.org/
-
-ROS(Robot Operating System）是一个机器人软件平台，前身是斯坦福人工智能实验室为了支持斯坦福智能机器人STAIR而建立的项目。
-
-http://www.cnblogs.com/yhlx125/p/4707693.html
-
-SLAM(simultaneous localization and mapping)学习笔记
-
-http://www.cnblogs.com/gaoxiang12/p/5113334.html
-
-视觉SLAM中的数学基础
-
-https://www.zhihu.com/question/25371476
-
-怎样从实际场景上理解粒子滤波（Particle Filter）？
-
-LIDAR：LIght Detection And Ranging
+http://localhost:9999/ws/countries.wsdl
 
