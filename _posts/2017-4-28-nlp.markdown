@@ -299,6 +299,18 @@ http://www.csdn.net/article/2015-08-28/2825569
 
 递归神经网络不可思议的有效性
 
+http://mp.weixin.qq.com/s/5kKkZp6Y3_TgHl98dtYNiw
+
+NLP领域中文vs英文有什么异同点，中文NLP有什么独特的地方?
+
+http://shiyanjun.cn/archives/548.html
+
+使用libsvm+tfidf实现文本分类
+
+http://licstar.net/archives/328
+
+词向量和语言模型
+
 ## 论文
 
 《Distant Supervision for relation extraction without labeled data》

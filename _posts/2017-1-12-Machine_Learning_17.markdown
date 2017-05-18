@@ -214,6 +214,12 @@ https://www.zhihu.com/question/41354392
 
 http://blog.csdn.net/sb19931201/article/details/52577592
 
+# Bagging和随机森林
+
+Bagging主要是通过随机选择样本集，来改变各并行计算决策树的结果，从而达到并行计算的效果。这相当于通过加入样本的扰动，来提供泛化能力。
+
+随机森林除了样本扰动之外，还通过随机选择属性集，并从中选择一个最优属性划分的方式，进一步提升了模型的泛化能力。
+
 # 推荐系统进阶
 
 除了《机器学习（十三～十五）》提及的ALS和PCA之外，相关的算法还包括：
@@ -254,14 +260,4 @@ http://www.wsdm-conference.org/2010/proceedings/docs/p81.pdf
 >借助数据仓库和关联规则，发现了这个隐藏在背后的事实：**美国妇女经常会嘱咐丈夫下班后为孩子买尿布，而30%~40%的丈夫在买完尿布之后又要顺便购买自己爱喝的啤酒。**   
 >根据这个发现，沃尔玛调整了货架的位置，把尿布和啤酒放在一起销售，大大增加了销量。
 
-这里借用一个引例来介绍关联规则挖掘的基本概念。
 
-| 交易号TID | 顾客购买的商品 | 交易号TID | 顾客购买的商品 |
-|:--:|:--|:--:|:--|
-| T1 | bread, cream, milk, tea | T6 | bread, tea |
-| T2 | bread, cream, milk | T7 | beer, milk, tea |
-| T3 | cake, milk | T8 | bread, tea |
-| T4 | milk, tea | T9 | bread, cream, milk, tea |
-| T5 | bread, cake, milk | T10 | bread, milk, tea |
-
-**定义一**：设$$I=\{i_1,i_2,\dots,i_m\}$$，是m个不同的项目的集合，每个$$i_k$$称为一个**项目**。项目的集合I称为**项集**。其元素的个数称为项集的长度，长度为k的项集称为k-项集。引例中每个商品就是一个项目，项集为$$I=\{bread, beer, cake,cream, milk, tea\}$$，I的长度为6。

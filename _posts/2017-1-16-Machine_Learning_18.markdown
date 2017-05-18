@@ -8,6 +8,18 @@ category: theory
 
 ## 基本概念（续）
 
+这里借用一个引例来介绍关联规则挖掘的基本概念。
+
+| 交易号TID | 顾客购买的商品 | 交易号TID | 顾客购买的商品 |
+|:--:|:--|:--:|:--|
+| T1 | bread, cream, milk, tea | T6 | bread, tea |
+| T2 | bread, cream, milk | T7 | beer, milk, tea |
+| T3 | cake, milk | T8 | bread, tea |
+| T4 | milk, tea | T9 | bread, cream, milk, tea |
+| T5 | bread, cake, milk | T10 | bread, milk, tea |
+
+**定义一**：设$$I=\{i_1,i_2,\dots,i_m\}$$，是m个不同的项目的集合，每个$$i_k$$称为一个**项目**。项目的集合I称为**项集**。其元素的个数称为项集的长度，长度为k的项集称为k-项集。引例中每个商品就是一个项目，项集为$$I=\{bread, beer, cake,cream, milk, tea\}$$，I的长度为6。
+
 **定义二**：每笔**交易T**是项集I的一个子集。对应每一个交易有一个唯一标识交易号，记作TID。交易全体构成了**交易数据库D**，$$\vert D\vert$$等于D中交易的个数。引例中包含10笔交易，因此$$\vert D\vert=10$$。
 
 **定义三**：对于项集X，设定$$count(X\subseteq T)$$为交易集D中包含X的交易的数量，则项集X的**支持度**为：
@@ -192,20 +204,3 @@ $$cosine(A,B)=\frac{P(A\cap B)}{sqrt(P(A)*P(B))}=sqrt(P(A|B)*P(B|A))\\=sqrt(conf
 
 $$Leverage(A,B) = P(A\cap B)-P(A)P(B)$$
 
-### 不平衡因子
-
-imbalance ratio的定义：
-
-$$IR(A,B)=\frac{|support(A)-support(B)|}{(support(A)+support(B)-support(A\cap B))}$$
-
-全自信度、最大自信度、Kulc、cosine，Leverage是不受空值影响的，这在处理大数据集是优势更加明显，因为大数据中空记录更多，根据分析我们推荐使用kulc准则和不平衡因子结合的方法。
-
-参考：
-
-http://www.cnblogs.com/fengfenggirl/p/associate_measure.html
-
-# PageRank算法
-
-## 概述
-
-在PageRank提出之前，已经有研究者提出利用网页的入链数量来进行链接分析计算，这种入链方法假设一个网页的入链越多，则该网页越重要。早期的很多搜索引擎也采纳了入链数量作为链接分析方法，对于搜索引擎效果提升也有较明显的效果。 PageRank除了考虑到入链数量的影响，还参考了网页质量因素，两者相结合获得了更好的网页重要性评价标准。

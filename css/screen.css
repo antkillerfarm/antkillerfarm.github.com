@@ -28,23 +28,28 @@ body {
 
 h1 {
   font-size: 140%;
+  box-shadow: 1px 1px 1px 1px rgb(95, 90, 75), 1px 1px 6px 1px rgba(10, 10, 0, 0.5);
+  background: none repeat 0% 0% rgb(27,161,226);
+  color: rgb(255, 255, 255);
+}
+
+h1.titlex {
+  box-shadow: none;
+  background: none;
+  color: rgb(0, 0, 0);
 }
 
 h2 {
   font-size: 120%;
+  border-bottom: 1px solid #999;
 }
 
 h3 {
-  font-size: 100%;
-  font-style:oblique;
+  font-size: 110%;  
 }
 
 h4, h5, h6 {
   font-size: 100%;
-}
-
-h1 {
-  margin-bottom: 1em;
 }
 
 p {

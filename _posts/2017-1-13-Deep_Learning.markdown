@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（一）——MP神经元模型, BP算法
+title:  深度学习（一）——MP神经元模型, BP算法, 神经元激活函数, Dropout
 category: theory 
 ---
 
@@ -179,15 +179,23 @@ http://www.cnblogs.com/neopenx/p/4453161.html
 
 https://en.wikipedia.org/wiki/Activation_function
 
-# 深度学习中epoch、batch size、iterations的区别
+## ReLU
 
-one epoch：所有的训练样本完成一次Forword运算以及一次BP运算
+ReLU(Rectified Linear Units)激活函数的定义如下：
 
-batch size：一次Forword运算以及BP运算中所需要的训练样本数目，其实深度学习每一次参数的更新所需要损失函数并不是由一个{data：label}获得的，而是由一组数据加权得到的，这一组数据的数量就是[batch size]。当然batch size 越大，所需的内存就越大，要量力而行。
+$$f(x) = \max(0, x)$$
 
-iterations（迭代）：每一次迭代都是一次权重更新，每一次权重更新需要batch size个数据进行Forward运算得到损失函数，再BP算法更新参数。
+其函数曲线如下图中的蓝线所示：
 
-最后可以得到一个公式 one epoch = numbers of iterations = N = 训练样本的数量/batch size
+![](/images/article/Rectifier_and_softplus_functions.svg)
+
+从上图可以看出，ReLU相对于Sigmoid，在解决了梯度消失问题的同时，也增加了神经网络的稀疏性，因此ReLU的收敛速度远高于Sigmod，并成为目前最常用的激活函数。
+
+由于ReLU的曲线不是连续可导的，因此有的时候，会用SoftPlus函数（上图中的绿线）替代。其定义为：
+
+$$f(x) = \ln(1 + e^x)$$
+
+除此之外，ReLU函数族还包括Leaky ReLU、PReLU、RReLU、ELU等。
 
 # Dropout
 
@@ -211,18 +219,23 @@ Dropout是神经网络中解决过拟合问题的一种常见方法。
 
 除了Dropout之外，还有DropConnect。两者原理上类似，后者只隐藏神经元之间的连接。
 
+总的来说，Dropout类似于机器学习中的L1、L2规则化等增加稀疏性的算法，也类似于随机森林、模拟退火之类的增加随机性的算法。
+
 参考：
 
 https://zhuanlan.zhihu.com/p/23178423
 
 Dropout解决过拟合问题
 
-# Vanilla
+# 深度学习常用术语解释
 
-Vanilla是神经网络领域的常见词汇，比如Vanilla Neural Networks、Vanilla CNN等。Vanilla本意是香草，在这里基本等同于raw。比如Vanilla Neural Networks实际上就是BP神经网络，而Vanilla CNN实际上就是最原始的CNN。
+## 深度学习中epoch、batch size、iterations的区别
 
-![](/images/article/LeNet_5.jpg)
+one epoch：所有的训练样本完成一次Forword运算以及一次BP运算
 
-![](/images/article/reinforcement_learning.png)
+batch size：一次Forword运算以及BP运算中所需要的训练样本数目，其实深度学习每一次参数的更新所需要损失函数并不是由一个{data：label}获得的，而是由一组数据加权得到的，这一组数据的数量就是[batch size]。当然batch size 越大，所需的内存就越大，要量力而行。
 
+iterations（迭代）：每一次迭代都是一次权重更新，每一次权重更新需要batch size个数据进行Forward运算得到损失函数，再BP算法更新参数。
+
+最后可以得到一个公式 one epoch = numbers of iterations = N = 训练样本的数量/batch size
 

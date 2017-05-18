@@ -4,6 +4,50 @@ title:  机器学习（二十一）——EMD、机器学习相关术语表
 category: theory 
 ---
 
+# 概率图模型
+
+## 概述（续）
+
+根据模型的不同，PGM又可分为生成模型（Generative Model, GM）和判别模型（Discriminative Model, DM）。两者的区别在《机器学习（二）》中已经简单提到过，这里做一个扩展。
+
+之前提到的机器学习算法，主要是建立特征向量X和标签Y之间的联系。但是实际情况下，X中的状态不一定都能得到，因此可以根据可见性，将X分为可观测变量集合O和其他变量集合R，Y也不一定是一个标签，而可能是一个变量集合。即：
+
+$$GM:P(Y,R,O)\to P(Y|O)$$
+
+$$DM:P(Y,R|O)\to P(Y|O)$$
+
+注意，在贝叶斯学派的观点中，模型的参数也是随机变量，因此，R在某些情况下，不仅包含不可观测的变量，也包含模型参数。
+
+## 贝叶斯网络
+
+贝叶斯网络是最简单的有向图模型。
+
+首先给出几个术语的定义：
+
+**有向无环图(Directed Acyclic Graph, DAG)**：这个术语的字面意思很清楚，不解释。
+
+**马尔可夫毯(Markov Blanket, MB)**：有向图——结点A的父结点+A的子结点+A的子结点的其他父结点。如下图所示：
+
+![](/images/article/Markov_blanket.png)
+
+无向图——结点A的邻近结点。
+
+下图是图模型的部分变种之间的关系图。
+
+![](/images/article/Generative_Models.png)
+
+# CRF
+
+条件随机场(Conditional Random Field)由Lafferty等人于2001年提出，结合了最大熵模型和隐马尔可夫模型的特点，是一种无向图模型，近年来在分词、词性标注和命名实体识别等序列标注任务中取得了很好的效果。
+
+# 异常点检测
+
+http://chuansong.me/n/377440751130
+
+http://jiangshuxia.9.blog.163.com/blog/static/3487586020083662621887/
+
+http://www.cnblogs.com/fengfenggirl/p/iForest.html
+
 # Earth mover's distance
 
 推土机距离（EMD）是两个概率分布之间的距离度量的一种方式。如果将区间D的概率分布比作沙堆P，那么$$P_r$$和$$P_\theta$$之间的EMD距离，就是推土机将$$P_r$$改造为$$P_\theta$$所需要的工作量。
@@ -108,3 +152,5 @@ http://chaofan.io/archives/earth-movers-distance-%e6%8e%a8%e5%9c%9f%e6%9c%ba%e8%
 | DQN | Deep Q-Learning Network |  |  |
 | EMD | Earth Mover's Distance | 推土机距离 |  |
 | ED | Edit Distance | 编辑距离 |  |
+| MLP | MultiLayer Perceptron | 多层感知器 |  |
+

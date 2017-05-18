@@ -4,9 +4,25 @@ title:  机器学习（十九）——PageRank算法, KNN, Probabilistic Robotic
 category: theory 
 ---
 
+# 关联规则评价（续）
+
+### 不平衡因子
+
+imbalance ratio的定义：
+
+$$IR(A,B)=\frac{|support(A)-support(B)|}{(support(A)+support(B)-support(A\cap B))}$$
+
+全自信度、最大自信度、Kulc、cosine，Leverage是不受空值影响的，这在处理大数据集是优势更加明显，因为大数据中空记录更多，根据分析我们推荐使用kulc准则和不平衡因子结合的方法。
+
+参考：
+
+http://www.cnblogs.com/fengfenggirl/p/associate_measure.html
+
 # PageRank算法
 
-## 概述（续）
+## 概述
+
+在PageRank提出之前，已经有研究者提出利用网页的入链数量来进行链接分析计算，这种入链方法假设一个网页的入链越多，则该网页越重要。早期的很多搜索引擎也采纳了入链数量作为链接分析方法，对于搜索引擎效果提升也有较明显的效果。 PageRank除了考虑到入链数量的影响，还参考了网页质量因素，两者相结合获得了更好的网页重要性评价标准。
 
 对于某个互联网网页A来说，该网页PageRank的计算基于以下两个基本假设： 
 
@@ -200,40 +216,4 @@ $$P(x|z_1,\dots,z_n)=\frac{P(z_n|x)P(x|z_1,\dots,z_{n-1})}{P(z_n|z_1,\dots,z_{n-
 >注：以下的推导过程注释中，如无特别说明。均以Bayes指代Bayes' theorem，以Markov指代Markov assumption。
 
 上式中的$$\eta$$表示概率的归一化系数。
-
-除了测量值z之外，一般的控制系统中还有动作（Action）的概念。比如打开门就是一个Action。Action会导致系统的状态发生改变（也可不变）。如下图所示：
-
-![](/images/article/state_trans.png)
-
-通常，将$$P(x\vert u,x')$$称作**Action Model**。其中，u表示Action，而x'表示系统的上一个状态。
-
-一般的，**新的测量值会减少系统的不确定度，而新的Action会增加系统的不确定度。**
-
-综上，一个贝叶斯过滤器（Bayes Filters）的框架包括：
-
-输入：
-
-1.观测值z和Action u的序列：$$d_t=\{u_1,z_1,\dots,u_t,z_t\}$$
-
-2.Sensor model：$$P(z\vert x)$$
-
-3.Action model：$$P(x\vert u,x')$$
-
-4.系统状态的先验概率：$$P(x)$$
-
-输出：
-
-1.估计动态系统的状态X。
-
-2.状态的后验概率，也叫**Belief**：
-
-$$\begin{align}
-\mathbf{Bel(x_t)}&=P(x_t\vert u_1,z_1,\dots,u_t,z_t)
-\\&=\eta P(z_t\vert x_t,u_1,z_1,\dots,u_t)P(x_t\vert u_1,z_1,\dots,u_t)(\text{Bayes})
-\\&=\eta P(z_t\vert x_t)P(x_t\vert u_1,z_1,\dots,u_t)(\text{Markov})
-\\&=\eta P(z_t\vert x_t)\int P(x_t\vert u_1,z_1,\dots,u_t,x_{t-1})P(x_{t-1}\vert u_1,z_1,\dots,u_t)\mathrm{d}x_{t-1}(\text{Total prob.})
-\\&=\eta P(z_t\vert x_t)\int P(x_t\vert u_t,x_{t-1})P(x_{t-1}\vert u_1,z_1,\dots,u_t)\mathrm{d}x_{t-1}(\text{Markov})
-\\&=\eta P(z_t\vert x_t)\int P(x_t\vert u_t,x_{t-1})P(x_{t-1}\vert u_1,z_1,\dots,z_{t-1})\mathrm{d}x_{t-1}(\text{Markov})
-\\&=\eta P(z_t\vert x_t)\int P(x_t\vert u_t,x_{t-1})\mathbf{Bel(x_{t-1})}\mathrm{d}x_{t-1}
-\end{align}$$
 

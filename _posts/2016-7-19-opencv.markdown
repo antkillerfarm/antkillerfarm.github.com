@@ -182,14 +182,6 @@ http://www.cnblogs.com/neopenx/p/4370350.html
 
 降噪自动编码器（Denoising Autoencoder)
 
-http://lib.csdn.net/article/deeplearning/58185
-
-BP神经网络与卷积神经网络
-
-http://blog.csdn.net/Fate_fjh/article/details/52882134
-
-卷积神经网络系列blog
-
 http://mp.weixin.qq.com/s/Jiis7j3W3D5GG_ZdxplY7Q
 
 淘宝搜索/推荐系统背后深度强化学习与自适应在线学习的实践之路
@@ -224,10 +216,6 @@ http://www.cnblogs.com/neopenx
 
 合肥工业大学某博士生的blog，偏深度学习
 
-http://www.hackcv.com/index.php/archives/104/
-
-CNN的直观解释
-
 https://www.zhihu.com/question/20398418
 
 语音识别的技术原理是什么？
@@ -252,17 +240,9 @@ https://pjreddie.com/darknet/yolo/
 
 YOLO: Real-Time Object Detection。一个基于神经网络的实时对象检测软件。
 
-http://mp.weixin.qq.com/s/kbHzA3h-CfTRcnkViY37MQ
-
-详解CNN五大经典模型:Lenet，Alexnet，Googlenet，VGG，DRL
-
 http://blog.csdn.net/u012328159/article/details/69898137
 
 几种常见的激活函数
-
-http://mp.weixin.qq.com/s/dvuX3Ih_DZrv0kgqFn8-lg
-
-卷积神经网络结构变化——可变形卷积网络deformable convolutional networks
 
 http://mp.weixin.qq.com/s/upblqKf0m_15o4L1fF0EEQ
 
@@ -271,10 +251,6 @@ http://mp.weixin.qq.com/s/upblqKf0m_15o4L1fF0EEQ
 http://mp.weixin.qq.com/s/Cg9tHG1YgDCdI3NPYl5-vQ
 
 如何用Soft-NMS实现目标检测并提升准确率
-
-http://mp.weixin.qq.com/s/YRwGwelyA3VOYZ4XGAjUBw
-
-CNN 感受野首次可视化：深入解读及计算指南
 
 http://mp.weixin.qq.com/s/UkZdUcdz7h4DqcyjSbNncw
 
@@ -300,10 +276,6 @@ http://mp.weixin.qq.com/s/8omONLSUA3cyxAQZVzBjCg
 
 5本深度学习和10本机器学习书籍
 
-http://mp.weixin.qq.com/s/ZKMi4gRfDRcTxzKlTQb-Mw
-
-计算机视觉识别简史：从AlexNet、ResNet到Mask RCNN
-
 http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw
 
 周志华教授gcForest（多粒度级联森林）算法预测股指期货涨跌
@@ -311,10 +283,6 @@ http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw
 http://mp.weixin.qq.com/s/KQxGQdLa3XzKVIFYqlrV7g
 
 人脸检测与识别的趋势和分析
-
-http://mp.weixin.qq.com/s?__biz=MzU0NTAyNTQ1OQ==&mid=2247484026&idx=2&sn=bc58406f81c61400a2f314369bbaf324
-
-值得一看——机器学习中容易犯下的错
 
 ## 论文
 

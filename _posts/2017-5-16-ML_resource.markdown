@@ -122,6 +122,14 @@ http://blog.csdn.net/pi9nc/article/details/27649323
 
 一个Q-learning算法的简明教程
 
+http://mp.weixin.qq.com/s?__biz=MzU0NTAyNTQ1OQ==&mid=2247484026&idx=2&sn=bc58406f81c61400a2f314369bbaf324
+
+值得一看——机器学习中容易犯下的错
+
+https://mp.weixin.qq.com/s/xGPiaXTnQad3RcMwIELP4w
+
+流式聚类算法
+
 # 深度学习参考资源
 
 http://mp.weixin.qq.com/s/bzwG0QxnP2drqS4RwcZlBg
@@ -176,10 +184,6 @@ http://mp.weixin.qq.com/s/YGXAAvHgXqsZXCMJ2dyDEw
 
 深度学习的四大失败
 
-http://mp.weixin.qq.com/s/5kKkZp6Y3_TgHl98dtYNiw
-
-NLP领域中文vs英文有什么异同点，中文NLP有什么独特的地方?
-
 http://mp.weixin.qq.com/s/XH1dXWSPiQMAHYR0_-xylA
 
 精选深度学习在文本、视觉、语音等领域的论文集
@@ -196,10 +200,6 @@ https://github.com/jinfagang/pytorch_style_transfer
 
 这个和上面的一样，不过是用pytorch实现的。
 
-http://mp.weixin.qq.com/s/2TUw_2d36uFAiJTkvaaqpA
-
-解读Keras在ImageNet中的应用：详解5种主要的图像识别模型
-
 http://mp.weixin.qq.com/s/zNmJuevHaagKbyGFdKTwoQ
 
 tensorflow实现基于深度学习的图像补全
@@ -208,17 +208,9 @@ http://kubicode.me/
 
 一个深度学习的blog
 
-http://www.leiphone.com/news/201609/303vE8MIwFC7E3DB.html
-
-Google最新开源Inception-ResNet-v2，借助残差网络进一步提升图像分类水准
-
 http://mp.weixin.qq.com/s/lLPRwInF5qaw7ewYHOpPyw
 
 深度强化学习资料
-
-https://zhuanlan.zhihu.com/p/22094600
-
-Deep Learning回顾之LeNet、AlexNet、GoogLeNet、VGG、ResNet
 
 # 机器人参考资源
 

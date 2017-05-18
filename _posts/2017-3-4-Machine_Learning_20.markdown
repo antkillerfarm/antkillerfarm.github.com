@@ -4,7 +4,45 @@ title:  机器学习（二十）——loss function详解, HMM, 概率图模型
 category: theory 
 ---
 
+# Probabilistic Robotics
+
 ## 贝叶斯过滤器（续）
+
+除了测量值z之外，一般的控制系统中还有动作（Action）的概念。比如打开门就是一个Action。Action会导致系统的状态发生改变（也可不变）。如下图所示：
+
+![](/images/article/state_trans.png)
+
+通常，将$$P(x\vert u,x')$$称作**Action Model**。其中，u表示Action，而x'表示系统的上一个状态。
+
+一般的，**新的测量值会减少系统的不确定度，而新的Action会增加系统的不确定度。**
+
+综上，一个贝叶斯过滤器（Bayes Filters）的框架包括：
+
+输入：
+
+1.观测值z和Action u的序列：$$d_t=\{u_1,z_1,\dots,u_t,z_t\}$$
+
+2.Sensor model：$$P(z\vert x)$$
+
+3.Action model：$$P(x\vert u,x')$$
+
+4.系统状态的先验概率：$$P(x)$$
+
+输出：
+
+1.估计动态系统的状态X。
+
+2.状态的后验概率，也叫**Belief**：
+
+$$\begin{align}
+\mathbf{Bel(x_t)}&=P(x_t\vert u_1,z_1,\dots,u_t,z_t)
+\\&=\eta P(z_t\vert x_t,u_1,z_1,\dots,u_t)P(x_t\vert u_1,z_1,\dots,u_t)(\text{Bayes})
+\\&=\eta P(z_t\vert x_t)P(x_t\vert u_1,z_1,\dots,u_t)(\text{Markov})
+\\&=\eta P(z_t\vert x_t)\int P(x_t\vert u_1,z_1,\dots,u_t,x_{t-1})P(x_{t-1}\vert u_1,z_1,\dots,u_t)\mathrm{d}x_{t-1}(\text{Total prob.})
+\\&=\eta P(z_t\vert x_t)\int P(x_t\vert u_t,x_{t-1})P(x_{t-1}\vert u_1,z_1,\dots,u_t)\mathrm{d}x_{t-1}(\text{Markov})
+\\&=\eta P(z_t\vert x_t)\int P(x_t\vert u_t,x_{t-1})P(x_{t-1}\vert u_1,z_1,\dots,z_{t-1})\mathrm{d}x_{t-1}(\text{Markov})
+\\&=\eta P(z_t\vert x_t)\int P(x_t\vert u_t,x_{t-1})\mathbf{Bel(x_{t-1})}\mathrm{d}x_{t-1}
+\end{align}$$
 
 上式也可以写作：
 
@@ -194,44 +232,4 @@ $$P(X_1,\dots,X_8)=P(X_2)P(X_4|X_2)P(X_5|X_2)P(X_1)P(X_3|X_1)\\P(X_6|X_3,X_4)P(X
 2.无向边表示变量间的**相关**关系。这样的PGM，常称为Markov Random Field（MRF）或Undirected Graphical model（UGM）。
 
 >注：因果关系是一种强逻辑关系，需要变量间有深刻的内在联系。而相关关系要弱的多，典型的例子就是《机器学习（十七）》中的尿布和啤酒的故事。尿布和啤酒虽然正相关，然而它们本身却没有多大的联系。
-
-根据模型的不同，PGM又可分为生成模型（Generative Model, GM）和判别模型（Discriminative Model, DM）。两者的区别在《机器学习（二）》中已经简单提到过，这里做一个扩展。
-
-之前提到的机器学习算法，主要是建立特征向量X和标签Y之间的联系。但是实际情况下，X中的状态不一定都能得到，因此可以根据可见性，将X分为可观测变量集合O和其他变量集合R，Y也不一定是一个标签，而可能是一个变量集合。即：
-
-$$GM:P(Y,R,O)\to P(Y|O)$$
-
-$$DM:P(Y,R|O)\to P(Y|O)$$
-
-注意，在贝叶斯学派的观点中，模型的参数也是随机变量，因此，R在某些情况下，不仅包含不可观测的变量，也包含模型参数。
-
-## 贝叶斯网络
-
-贝叶斯网络是最简单的有向图模型。
-
-首先给出几个术语的定义：
-
-**有向无环图(Directed Acyclic Graph, DAG)**：这个术语的字面意思很清楚，不解释。
-
-**马尔可夫毯(Markov Blanket, MB)**：有向图——结点A的父结点+A的子结点+A的子结点的其他父结点。如下图所示：
-
-![](/images/article/Markov_blanket.png)
-
-无向图——结点A的邻近结点。
-
-下图是图模型的部分变种之间的关系图。
-
-![](/images/article/Generative_Models.png)
-
-# CRF
-
-条件随机场(Conditional Random Field)由Lafferty等人于2001年提出，结合了最大熵模型和隐马尔可夫模型的特点，是一种无向图模型，近年来在分词、词性标注和命名实体识别等序列标注任务中取得了很好的效果。
-
-# 异常点检测
-
-http://chuansong.me/n/377440751130
-
-http://jiangshuxia.9.blog.163.com/blog/static/3487586020083662621887/
-
-http://www.cnblogs.com/fengfenggirl/p/iForest.html
 
