@@ -62,6 +62,10 @@ http://goeye-app.com/resources.html#cn
 
 滴滴和Uber合并时，笑到最后的 Uber创始人卡拉尼克，在股权结构上，Uber是滴滴名副其实的第一大股东。
 
+## 2017.5
+
+![](/images/article/bit_coin.png)
+
 # 对Geoffrey Everest Hinton的深度挖掘
 
 有人说当代的数学家谱系是一棵树，根源基本都可追溯到欧拉、高斯等人头上。那么深度学习的谱系是什么样的呢？这里以深度学习的鼻祖Geoffrey Everest Hinton为基点，挖掘一下Hinton的师承脉络。

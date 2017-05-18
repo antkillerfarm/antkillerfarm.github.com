@@ -56,9 +56,13 @@ LDA模型的目标有两个：
 
 由于参数$$\overrightarrow{\theta}_m$$是和训练语料中的每篇文档相关的，对于我们理解新的文档并无用处，所以工程上最终存储LDA模型时，一般没有必要保留。
 
+这一步实际上是一个**聚类**的过程。
+
 **使用模型**：对于新来的一篇文档$$doc_{new}$$，我们能够计算这篇文档的topic分布$$\overrightarrow{\theta}_{new}$$。
 
 从最终给出的算法可以看出，虽然LDA用到了MCMC和Gibbs Sampling算法，但最终目的并不是生成符合相应分布的随机数，而是求出模型参数$$\overrightarrow{\varphi}$$的值，并用于预测。
+
+这一步实际上是一个**分类**的过程。可见，LDA不仅可用于聚类，也可用于分类，是一种无监督的学习算法。
 
 ## 参考
 
@@ -77,6 +81,14 @@ http://www.inference.phy.cam.ac.uk/itprnn/book.pdf
 >Simon Haykin，英国伯明翰大学博士，加拿大McMaster University教授。初为雷达和信号处理专家，80年代中后期，转而从事神经计算方面的工作。加拿大皇家学会会员。
 
 http://www.cs.cmu.edu/~epxing/Class/10708-14/lectures/lecture17-MCMC.pdf
+
+http://max.book118.com/html/2015/0513/16864294.shtm
+
+基于LDA分析的词聚类算法
+
+http://www.doc88.com/p-9159009103987.html
+
+基于 LDA 的博客分类算法
 
 # 决策树
 

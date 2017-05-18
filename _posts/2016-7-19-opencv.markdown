@@ -284,6 +284,22 @@ http://mp.weixin.qq.com/s/KQxGQdLa3XzKVIFYqlrV7g
 
 人脸检测与识别的趋势和分析
 
+http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks
+
+神经网络的分布式训练
+
+https://www.zhihu.com/question/35887527
+
+如何评价rcnn、fast-rcnn和faster-rcnn这一系列方法？
+
+https://www.zhihu.com/question/47642307
+
+语音识别中的CTC方法的基本原理
+
+https://zhuanlan.zhihu.com/p/21344595
+
+端到端的OCR：验证码识别(LSTM+CTC)
+
 ## 论文
 
 《Moving Gradients: A Path-Based Method for Plausible Image Interpolation》：视频帧插值算法

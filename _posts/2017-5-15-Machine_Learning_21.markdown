@@ -153,4 +153,7 @@ http://chaofan.io/archives/earth-movers-distance-%e6%8e%a8%e5%9c%9f%e6%9c%ba%e8%
 | EMD | Earth Mover's Distance | 推土机距离 |  |
 | ED | Edit Distance | 编辑距离 |  |
 | MLP | MultiLayer Perceptron | 多层感知器 |  |
+| CTC | Connectionist Temporal Classification |  | 新词无常用译名 |
+| RNN | Recurrent Neural Network | 循环神经网络 |  |
+| RNN | Recursive Neural Network | 递归神经网络 | 已没落 |
 

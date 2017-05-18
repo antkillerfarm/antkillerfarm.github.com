@@ -311,6 +311,10 @@ http://licstar.net/archives/328
 
 词向量和语言模型
 
+http://www.toutiao.com/a6236100205026328834/
+
+深度学习：推动NLP领域发展的新引擎
+
 ## 论文
 
 《Distant Supervision for relation extraction without labeled data》

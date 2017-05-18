@@ -62,6 +62,8 @@ CNN的直观解释
 
 ### 卷积
 
+
+
 实际上，传统MLP（MultiLayer Perceptron）网络就是犯了这个错误，1D全连接的神经元控制了太多参数，不利于学习到稀疏特征。
 
 CNN网络，2D全连接的神经元则控制了局部感受野，有利于解离出稀疏特征。
@@ -123,4 +125,12 @@ CNN网络，2D全连接的神经元则控制了局部感受野，有利于解离
 http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/
 
 ![](/images/article/Autoencoder.png)
+
+# Neural Network Zoo
+
+![](/images/article/Neural_Networks.png)
+
+上图的原地址为：
+
+http://www.asimovinstitute.org/neural-network-zoo/
 
