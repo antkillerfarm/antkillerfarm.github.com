@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  linux学习心得（二）, 知名数据集, Python（二）, 运维工具集
+title:  linux学习心得（二）, 知名数据集, Python（二）
 category: technology 
 ---
 
@@ -160,6 +160,26 @@ Iris是一种叫做鸢尾的植物。Iris flower Data Set是Ronald Fisher在1936
 
 https://en.wikipedia.org/wiki/Iris_flower_data_set
 
+## CIFAR-10
+
+CIFAR-10是由Hinton的两个大弟子Alex Krizhevsky、Ilya Sutskever收集的一个用于普适物体识别的数据集。Cifar是加拿大政府牵头投资的一个先进科学项目研究所。
+
+说白了，就是看你穷的没钱搞研究，就施舍给你。Hinton、Bengio和他的学生在2004年拿到了Cifar投资的少量资金，建立了神经计算和自适应感知项目。
+
+这个项目结集了不少计算机科学家、生物学家、电气工程师、神经科学家、物理学家、心理学家，加速推动了DL的进程。从这个阵容来看，DL已经和ML系的数据挖掘分的很远了。
+
+DL强调的是自适应感知和人工智能，是计算机与神经科学交叉。DM强调的是高速、大数据、统计数学分析，是计算机和数学的交叉。
+
+CIFAR-10由60000张32*32的RGB彩色图片构成，共10个分类。50000张训练，10000张测试（交叉验证）。这个数据集最大的特点在于将识别迁移到了普适物体，而且应用于多分类（姊妹数据集CIFAR-10达到100类，ILSVRC比赛则是1000类）。
+
+官网：
+
+https://www.cs.toronto.edu/~kriz/cifar.html
+
+参考：
+
+http://www.cnblogs.com/neopenx/p/4480701.html
+
 ## UCI数据集
 
 UCI大学有个专门提供数据集的网站：
@@ -185,144 +205,6 @@ http://www.zanmel.com/2015/12/14/10-great-datasets-on-movies/
 http://www.speech.cs.cmu.edu/databases/an4/
 
 CMU的音频数据库，可用于语音识别
-
-# Machine Learning之Python篇
-
-## NumPy
-
-NumPy是python语言所有数学计算库的基础。它主要提供了矩阵运算的功能。
-
-官网：
-
-http://www.numpy.org/
-
-教程：
-
-https://docs.scipy.org/doc/numpy-dev/user/quickstart.html
-
-API参考：
-
-https://docs.scipy.org/doc/numpy/reference/
-
-## SciPy
-
-SciPy提供了一些更高阶的数学运算库，比如：积分、插值、信号处理、傅立叶变换、矩阵特征值、统计计算等。
-
-SciPy提供的功能主要仍局限于数学运算，而并未提升到算法的层面。这也是它和scikit-learn或其他高级库的差别所在。
-
-官网：
-
-http://www.scipy.org/
-
-API参考：
-
-https://docs.scipy.org/doc/scipy/reference/
-
-## Scikit-learn
-
-Scikit-learn提供了常见的机器学习算法的实现。
-
-官网：
-
-http://scikit-learn.org/stable/index.html
-
-教程：
-
-http://scikit-learn.org/stable/user_guide.html
-
-API参考：
-
-http://scikit-learn.org/stable/tutorial/index.html
-
-http://scikit-learn.org/stable/modules/classes.html
-
-## Matplotlib
-
-Matplotlib是一个高阶的图形库，主要提供生成图表等数据可视化方面的功能。
-
-官网：
-
-http://matplotlib.org/
-
-API参考：
-
-http://matplotlib.org/1.5.3/api/index.html
-
-## Pandas
-
-Pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。
-
-官网：
-
-http://pandas.pydata.org/
-
-文档：
-
-http://pandas.pydata.org/pandas-docs/stable/
-
-API参考：
-
-http://pandas.pydata.org/pandas-docs/stable/api.html
-
-参考：
-
-http://www.cnblogs.com/chaosimple/p/4153083.html
-
-十分钟搞定pandas
-
-http://pandas.pydata.org/pandas-docs/stable/comparison_with_sql.html
-
-Pandas和SQL的比较
-
-## mysql
-
-http://www.runoob.com/python/python-mysql.html
-
-## TensorFlow
-
-TensorFlow是Google主导的开源深度学习库。官网：
-
-https://www.tensorflow.org/
-
-代码：
-
-https://github.com/tensorflow/tensorflow
-
-TensorFlow提供了一个可视化的神经网络展示：
-
-http://playground.tensorflow.org/
-
-TensorFlow的教程：
-
-http://tensorflowtutorial.net/tensorflow-tutorial
-
-教程中文版：
-
-http://wiki.jikexueyuan.com/project/tensorflow-zh/
-
-安装：
-
-`pip install tensorflow`
-
-由于我的PC显卡不合要求，因此直接安装的是CPU版本，这也是最通用的版本。
-
-## 参考
-
-https://github.com/neozhaoliang/pywonderland/tree/master/
-
-如何用Python画各种著名数学图案
-
-http://old.sebug.net/paper/books/scipydoc/index.html
-
-用Python做科学计算
-
-https://github.com/yahoo/TensorFlowOnSpark
-
-TensorFlow On Spark
-
-https://silencezjl.coding.me/2017/05/01/%E5%81%B7%E4%B8%80%E6%B3%A2%E8%B5%84%E6%BA%90/
-
-各种TensorFlow资源
 
 # Python
 
@@ -379,45 +261,4 @@ otherStyleTime = time.strftime("%Y/%m/%d %H:%M:%S", timeArray)
 L.append(var)   #追加元素
 L.extend(list)  #追加list，即合并list到L上
 {% endhighlight %}
-
-# 运维工具集
-
-## Zabbix
-
-zabbix是一个基于WEB界面的提供分布式系统监视以及网络监视功能的企业级的开源解决方案。
-
-http://www.zabbix.com/
-
-## Cacti
-
-Cacti是一套基于PHP,MySQL,SNMP及RRDTool开发的网络流量监测图形分析工具。
-
-http://cacti.net/
-
-## Nagios
-
-Nagios是一款开源的免费网络监视工具，能有效监控Windows、Linux和Unix的主机状态，交换机路由器等网络设备，打印机等。
-
-https://www.nagios.org/
-
-# Ganglia
-
-Ganglia是伯克利开发的一个集群监控软件。可以监视和显示集群中的节点的各种状态信息，比如如：cpu 、mem、硬盘利用率， I/O负载、网络流量情况等，同时可以将历史数据以曲线方式通过php页面呈现。
-
-官网：
-
-http://ganglia.sourceforge.net/
-
-## Jenkins
-
-Jenkins是一个开源软件项目，旨在提供一个开放易用的软件平台，使软件的持续集成变成可能。
-
-https://jenkins.io/index.html
-
-## Walle
-
-Walle一个web部署系统工具，配置简单、功能完善、界面流畅、开箱即用！支持git、svn版本管理，支持各种web代码发布，PHP，Python，JAVA等代码的发布、回滚，可以通过web来一键完成。
-
-https://walle-web.io/
-
 

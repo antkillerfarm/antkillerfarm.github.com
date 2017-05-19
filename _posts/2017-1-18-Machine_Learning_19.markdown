@@ -1,10 +1,30 @@
 ---
 layout: post
-title:  机器学习（十九）——PageRank算法, KNN, Probabilistic Robotics
+title:  机器学习（十九）——PageRank算法, KNN, loss function详解
 category: theory 
 ---
 
 # 关联规则评价（续）
+
+### 全自信度
+
+$$all\_confidence(A,B)=\frac{P(A\cap B)}{max\{P(A),P(B)\}}\\=min\{P(B|A),P(A|B)\}=min\{confidence(A\to B),confidence(B\to A)\}$$
+
+### 最大自信度
+
+$$max\_confidence(A,B)=max\{confidence(A\to B),confidence(B\to A)\}$$
+
+### Kulc
+
+$$kulc(A,B)=\frac{confidence(A\to B)+confidence(B\to A)}{2}$$
+
+### cosine距离
+
+$$cosine(A,B)=\frac{P(A\cap B)}{sqrt(P(A)*P(B))}=sqrt(P(A|B)*P(B|A))\\=sqrt(confidence(A\to B)*confidence(B\to A))$$
+
+### Leverage
+
+$$Leverage(A,B) = P(A\cap B)-P(A)P(B)$$
 
 ### 不平衡因子
 
@@ -192,28 +212,29 @@ http://www.doc88.com/p-1416660147532.html
 
 KNN算法在股票预测中的应用
 
-# Probabilistic Robotics
+# loss function详解
 
-这篇心得主要根据Sebastian Thrun的Probabilistic Robotics课程的ppt来写。
+**Mean Squared Error(MSE)/Mean Squared Deviation(MSD)**
 
->注：Sebastian Thrun，德国波恩大学博士（1995年）。先后执教于CMU和Stanford。
+$$\operatorname{MSE}=\frac{1}{n}\sum_{i=1}^n(\hat{Y_i} - Y_i)^2$$
 
-网址：
+**Symmetric Mean Absolute Percentage Error(SMAPE or sMAPE)**
 
-http://robots.stanford.edu/probabilistic-robotics/ppt/
+MSE定义的误差，实际上是向量空间中的欧氏距离，这也可称为绝对误差。而有些情况下，可能相对误差（即百分比误差）更有意义些：
 
-## 贝叶斯过滤器
+$$\text{SMAPE} = \frac 1 n \sum_{t=1}^n \frac{\left|F_t-A_t\right|}{(A_t+F_t)/2}$$
 
-假定我们需要根据测量值z来判断门的开关。显然，这里的$$P(open\vert z)$$是诊断式（**diagnostic**）问题，而$$P(z\vert open)$$是因果式（**causal**）问题。通常来说，后者比较容易获取，而前者可以基于后者使用贝叶斯公式计算得到。
+上式的问题在于$$A_t+F_t\le 0$$时，该值无意义。为了解决该问题，可用如下变种：
 
-一般将$$P(z\vert x)$$称为**Sensor model**。
+$$\text{SMAPE} = \frac{100\%}{n} \sum_{t=1}^n \frac{|F_t-A_t|}{|A_t|+|F_t|}$$
 
-针对多相关测量值问题，这里有一个和朴素贝叶斯假设相仿的**Markov assumption**——假设$$z_n$$独立于$$z_1,\dots,z_{n-1}$$（即“现在”不依赖于“过去”），则：
+**Mean Absolute Error(MAE)**
 
-$$P(x|z_1,\dots,z_n)=\frac{P(z_n|x)P(x|z_1,\dots,z_{n-1})}{P(z_n|z_1,\dots,z_{n-1})}(\text{Bayes})
-\\=\eta P(z_n|x)P(x|z_1,\dots,z_{n-1})=\eta_{1,\dots,n}\prod_{i=1}^nP(z_i|x)P(x)(\text{Markov})$$
+$$\mathrm{MAE} = \frac{1}{n}\sum_{i=1}^n \left| f_i-y_i\right| =\frac{1}{n}\sum_{i=1}^n \left| e_i \right|$$
 
->注：以下的推导过程注释中，如无特别说明。均以Bayes指代Bayes' theorem，以Markov指代Markov assumption。
+这个可以看作是MSE的1范数版本。
 
-上式中的$$\eta$$表示概率的归一化系数。
+**Mean Percentage Error(MPE)**
+
+$$\text{MPE} = \frac{100\%}{n}\sum_{t=1}^n \frac{a_t-f_t}{a_t}$$
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ML参考资源, 深度学习参考资源, 机器人参考资源, Machine Learning之Java篇, PMML
+title:  ML参考资源, DL参考资源, Machine Learning之Java篇, PMML, Machine Learning之Python篇
 category: technology 
 ---
 
@@ -45,6 +45,10 @@ https://www.zhihu.com/question/28171555
 http://mp.weixin.qq.com/s/FjET9HFNjVVMjqQM2KhtKA
 
 5分钟看懂中国最新的量子计算机
+
+https://mp.weixin.qq.com/s/WcRYHwXnv9FWpMcOEwIdQg
+
+量子计算的发展及核心问题
 
 https://zhuanlan.zhihu.com/p/20756711
 
@@ -130,7 +134,11 @@ https://mp.weixin.qq.com/s/xGPiaXTnQad3RcMwIELP4w
 
 流式聚类算法
 
-# 深度学习参考资源
+https://wenku.baidu.com/view/4169e77f27284b73f2425047.html
+
+层次聚类
+
+# DL参考资源
 
 http://mp.weixin.qq.com/s/bzwG0QxnP2drqS4RwcZlBg
 
@@ -212,30 +220,6 @@ http://mp.weixin.qq.com/s/lLPRwInF5qaw7ewYHOpPyw
 
 深度强化学习资料
 
-# 机器人参考资源
-
-http://blog.exbot.net/
-
-一个机器人技术方面的网站。
-
-http://www.ros.org/
-
-ROS(Robot Operating System）是一个机器人软件平台，前身是斯坦福人工智能实验室为了支持斯坦福智能机器人STAIR而建立的项目。
-
-http://www.cnblogs.com/yhlx125/p/4707693.html
-
-SLAM(simultaneous localization and mapping)学习笔记
-
-http://www.cnblogs.com/gaoxiang12/p/5113334.html
-
-视觉SLAM中的数学基础
-
-https://www.zhihu.com/question/25371476
-
-怎样从实际场景上理解粒子滤波（Particle Filter）？
-
-LIDAR：LIght Detection And Ranging
-
 # Machine Learning之Java篇
 
 http://machinelearningmastery.com/java-machine-learning/
@@ -308,6 +292,10 @@ https://github.com/elki-project/elki
 
 https://github.com/tdebatty/java-string-similarity
 
+## LDA4j
+
+https://github.com/hankcs/LDA4j
+
 # PMML
 
 PMML(Predictive Model Markup Language) 是一个开放的工业标准，它以 XML 为载体将上述数据挖掘任务标准化，可以把某一产品所创建的数据挖掘方案应用于任何其它遵从 PMML 标准的产品或平台中 , 而不需考虑分析和预测过程中的具体实现细节。使得模型的部署摆脱了模型开发和产品整合的束缚，为商业智能产品、数据仓库和云计算中的数据挖掘模型的应用环境开拓了新的篇章。
@@ -321,4 +309,166 @@ http://dmg.org/
 http://blog.csdn.net/litaoshoujiao/article/details/8537599
 
 https://www.ibm.com/developerworks/cn/xml/x-1107xuj/
+
+# Machine Learning之Python篇
+
+## NumPy
+
+NumPy是python语言所有数学计算库的基础。它主要提供了矩阵运算的功能。
+
+官网：
+
+http://www.numpy.org/
+
+教程：
+
+https://docs.scipy.org/doc/numpy-dev/user/quickstart.html
+
+API参考：
+
+https://docs.scipy.org/doc/numpy/reference/
+
+## SciPy
+
+SciPy提供了一些更高阶的数学运算库，比如：积分、插值、信号处理、傅立叶变换、矩阵特征值、统计计算等。
+
+SciPy提供的功能主要仍局限于数学运算，而并未提升到算法的层面。这也是它和scikit-learn或其他高级库的差别所在。
+
+官网：
+
+http://www.scipy.org/
+
+API参考：
+
+https://docs.scipy.org/doc/scipy/reference/
+
+## Scikit-learn
+
+Scikit-learn提供了常见的机器学习算法的实现。
+
+官网：
+
+http://scikit-learn.org/stable/index.html
+
+教程：
+
+http://scikit-learn.org/stable/user_guide.html
+
+API参考：
+
+http://scikit-learn.org/stable/tutorial/index.html
+
+http://scikit-learn.org/stable/modules/classes.html
+
+## Matplotlib
+
+Matplotlib是一个高阶的图形库，主要提供生成图表等数据可视化方面的功能。
+
+官网：
+
+http://matplotlib.org/
+
+API参考：
+
+http://matplotlib.org/1.5.3/api/index.html
+
+## Pandas
+
+Pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。
+
+官网：
+
+http://pandas.pydata.org/
+
+文档：
+
+http://pandas.pydata.org/pandas-docs/stable/
+
+API参考：
+
+http://pandas.pydata.org/pandas-docs/stable/api.html
+
+参考：
+
+http://www.cnblogs.com/chaosimple/p/4153083.html
+
+十分钟搞定pandas
+
+http://pandas.pydata.org/pandas-docs/stable/comparison_with_sql.html
+
+Pandas和SQL的比较
+
+## mysql
+
+http://www.runoob.com/python/python-mysql.html
+
+## TensorFlow
+
+TensorFlow是Google主导的开源深度学习库。官网：
+
+https://www.tensorflow.org/
+
+代码：
+
+https://github.com/tensorflow/tensorflow
+
+TensorFlow提供了一个可视化的神经网络展示：
+
+http://playground.tensorflow.org/
+
+还有若干已经实现好的经典神经网络模型（比如Autoencoder、ResNet等）：
+
+https://github.com/tensorflow/models/
+
+TensorFlow的教程：
+
+http://tensorflowtutorial.net/tensorflow-tutorial
+
+教程中文版：
+
+http://wiki.jikexueyuan.com/project/tensorflow-zh/
+
+安装：
+
+`pip install tensorflow`
+
+由于我的PC显卡不合要求，因此直接安装的是CPU版本，这也是最通用的版本。
+
+## 参考
+
+https://github.com/neozhaoliang/pywonderland/tree/master/
+
+如何用Python画各种著名数学图案
+
+http://old.sebug.net/paper/books/scipydoc/index.html
+
+用Python做科学计算
+
+https://github.com/yahoo/TensorFlowOnSpark
+
+TensorFlow On Spark
+
+https://silencezjl.coding.me/2017/05/01/%E5%81%B7%E4%B8%80%E6%B3%A2%E8%B5%84%E6%BA%90/
+
+各种TensorFlow资源
+
+https://github.com/zsdev2015/machine_learning
+
+某国内小牛写的中文入门demo，注释非常详细
+
+## 我的TensorFlow实践
+
+### MNIST+Softmax
+
+代码：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_mnist.py
+
+### MNIST+CNN
+
+代码：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_cnn.py
+
+第一个例子中，我对CPU的计算能力还没有切肤之痛，但在这里使用CPU差不多要花半个小时时间。。。
 

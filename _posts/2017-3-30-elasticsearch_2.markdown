@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Elasticsearch（二）, WebService
+title:  Elasticsearch（二）, WebService, 机器人参考资源
 category: technology 
 ---
 
@@ -275,4 +275,31 @@ https://my.oschina.net/fuckmylife0/blog/325432
 ## jaxws-demo-client
 
 jaxws-demo-client就是具体的客户端实现了，可以看出相比于上一步的桩代码，这里的代码文件，数量上要少得多。
+# 机器人参考资源
+
+http://blog.exbot.net/
+
+一个机器人技术方面的网站。
+
+http://www.ros.org/
+
+ROS(Robot Operating System）是一个机器人软件平台，前身是斯坦福人工智能实验室为了支持斯坦福智能机器人STAIR而建立的项目。
+
+http://www.cnblogs.com/yhlx125/p/4707693.html
+
+SLAM(simultaneous localization and mapping)学习笔记
+
+http://www.cnblogs.com/gaoxiang12/p/5113334.html
+
+视觉SLAM中的数学基础
+
+https://www.zhihu.com/question/25371476
+
+怎样从实际场景上理解粒子滤波（Particle Filter）？
+
+LIDAR：LIght Detection And Ranging
+
+https://zhuanlan.zhihu.com/p/26988866
+
+机器人学习Robot Learning的发展
 

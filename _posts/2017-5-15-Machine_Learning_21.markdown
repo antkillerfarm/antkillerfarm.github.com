@@ -74,6 +74,24 @@ https://vincentherrmann.github.io/blog/wasserstein/
 
 http://chaofan.io/archives/earth-movers-distance-%e6%8e%a8%e5%9c%9f%e6%9c%ba%e8%b7%9d%e7%a6%bb
 
+# 自适应滤波器
+
+《自适应滤波器原理》，Simon Haykin著。
+
+>注：Simon Haykin，英国伯明翰大学博士，加拿大麦克马斯特大学教授。加拿大皇家学会会员。自适应信号处理领域的权威。
+
+## 基本估计
+
+三种基本的信息处理运算：
+
+**滤波（Filter）**：利用$$[0,t]$$的数据，来估计t时刻信息的运算过程。
+
+**平滑（Smoothing）**：利用$$[0,t]$$的数据，来估计$$t'(t'<t)$$时刻信息的运算过程。
+
+**预测（Prediction）**：利用$$[0,t]$$的数据，来估计$$t+\tau(\tau>0)$$时刻信息的运算过程。
+
+可见，滤波和预测是实时运算，而平滑是非实时运算。
+
 # 机器学习语录
 
 这里收录一些网上的只言片语式的心得，以区别于一般的教程。

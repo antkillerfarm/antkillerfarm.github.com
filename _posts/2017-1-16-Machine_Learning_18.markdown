@@ -6,7 +6,13 @@ category: theory
 
 # 关联规则挖掘
 
-## 基本概念（续）
+## 基本概念
+
+关联规则挖掘（Association rule mining）是机器学习的一个子领域。它最早的案例就是以下的**尿布和啤酒**的故事：
+
+>沃尔玛曾今对数据仓库中一年多的原始交易数据进行了详细的分析，发现与尿布一起被购买最多的商品竟然是啤酒。   
+>借助数据仓库和关联规则，发现了这个隐藏在背后的事实：**美国妇女经常会嘱咐丈夫下班后为孩子买尿布，而30%~40%的丈夫在买完尿布之后又要顺便购买自己爱喝的啤酒。**   
+>根据这个发现，沃尔玛调整了货架的位置，把尿布和啤酒放在一起销售，大大增加了销量。
 
 这里借用一个引例来介绍关联规则挖掘的基本概念。
 
@@ -183,24 +189,4 @@ $$\chi^2 = \sum_{i=1}^n \frac{(O_i - E_i)^2}{E_i}$$
 经计算可得表2的卡方系数为555.6。基于置信水平和自由度$$(r-1)*(c-1)=(行数-1)*(列数-1)=1$$，查表得到自信度为(1-0.001)的值为6.63。
 
 555.6>6.63，因此拒绝A、B独立的假设，即认为A、B是相关的，而$$E(买影片，买游戏)=4500>4000$$,因此认为A、B呈负相关。
-
-### 全自信度
-
-$$all\_confidence(A,B)=\frac{P(A\cap B)}{max\{P(A),P(B)\}}\\=min\{P(B|A),P(A|B)\}=min\{confidence(A\to B),confidence(B\to A)\}$$
-
-### 最大自信度
-
-$$max\_confidence(A,B)=max\{confidence(A\to B),confidence(B\to A)\}$$
-
-### Kulc
-
-$$kulc(A,B)=\frac{confidence(A\to B)+confidence(B\to A)}{2}$$
-
-### cosine距离
-
-$$cosine(A,B)=\frac{P(A\cap B)}{sqrt(P(A)*P(B))}=sqrt(P(A|B)*P(B|A))\\=sqrt(confidence(A\to B)*confidence(B\to A))$$
-
-### Leverage
-
-$$Leverage(A,B) = P(A\cap B)-P(A)P(B)$$
 

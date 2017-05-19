@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  云计算论文集, Spark, 数据描述语言
+title:  云计算论文集, Spark, 数据描述语言, 运维工具集
 category: technology 
 ---
 
@@ -273,20 +273,42 @@ JSON采用的是，不同的语言提供不同的库来解析的方式。
 
 与Protocol Buffers类似的方案，还有Facebook提出的Thrift、ZeroC提出的Slice和Hadoop Avro。
 
-# 自适应滤波器
+# 运维工具集
 
-《自适应滤波器原理》，Simon Haykin著。
+## Zabbix
 
->注：Simon Haykin，英国伯明翰大学博士，加拿大麦克马斯特大学教授。加拿大皇家学会会员。自适应信号处理领域的权威。
+zabbix是一个基于WEB界面的提供分布式系统监视以及网络监视功能的企业级的开源解决方案。
 
-## 基本估计
+http://www.zabbix.com/
 
-三种基本的信息处理运算：
+## Cacti
 
-**滤波（Filter）**：利用$$[0,t]$$的数据，来估计t时刻信息的运算过程。
+Cacti是一套基于PHP,MySQL,SNMP及RRDTool开发的网络流量监测图形分析工具。
 
-**平滑（Smoothing）**：利用$$[0,t]$$的数据，来估计$$t'(t'<t)$$时刻信息的运算过程。
+http://cacti.net/
 
-**预测（Prediction）**：利用$$[0,t]$$的数据，来估计$$t+\tau(\tau>0)$$时刻信息的运算过程。
+## Nagios
 
-可见，滤波和预测是实时运算，而平滑是非实时运算。
+Nagios是一款开源的免费网络监视工具，能有效监控Windows、Linux和Unix的主机状态，交换机路由器等网络设备，打印机等。
+
+https://www.nagios.org/
+
+# Ganglia
+
+Ganglia是伯克利开发的一个集群监控软件。可以监视和显示集群中的节点的各种状态信息，比如如：cpu 、mem、硬盘利用率， I/O负载、网络流量情况等，同时可以将历史数据以曲线方式通过php页面呈现。
+
+官网：
+
+http://ganglia.sourceforge.net/
+
+## Jenkins
+
+Jenkins是一个开源软件项目，旨在提供一个开放易用的软件平台，使软件的持续集成变成可能。
+
+https://jenkins.io/index.html
+
+## Walle
+
+Walle一个web部署系统工具，配置简单、功能完善、界面流畅、开箱即用！支持git、svn版本管理，支持各种web代码发布，PHP，Python，JAVA等代码的发布、回滚，可以通过web来一键完成。
+
+https://walle-web.io/
