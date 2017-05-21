@@ -1,8 +1,28 @@
 ---
 layout: post
-title:  机器学习（二十）——HMM, Probabilistic Robotics, 概率图模型
+title:  机器学习（二十）——HMM, Probabilistic Robotics
 category: theory 
 ---
+
+# P-R、ROC和AUC
+
+很多学习器是为测试样本产生一个实值或概率预测，然后将这个预测值与一个分类阈值（threshold）进行比较，若大于阈值则分为正类，否则为反类。这个实值或概率预测结果的好坏，直接决定了学习器的泛化能力。实际上，根据这个实值或概率预测结果，我们可将测试样本进行排序，“最可能”是正例的排在最前面，“最不可能”是正例的排在最后面。这样，分类过程就相当于在这个排序中以某个“截断点”（cut point）将样本分为两部分，前一部分判作正例，后一部分则判作反例。
+
+在不同的应用任务中，我们可根据任务需求来采用不同的截断点，例如若我们更重视 “查准率”（precision），则可选择排序中靠前的位置进行截断，若更重视“查全率”（recall），则可选择靠后的位置进行截断。
+
+对于二分类问题，可将样例根据其真实类别与学习器预测类别的组合划分为真正例（true positive）、假正例（false positive）、真反例（true negative）和假反例（true negative）。
+
+查准率P和查全率R的定义如下：
+
+$$P=\frac{TP}{TP+FP},R=\frac{TP}{TP+FN}$$
+
+以P和R为坐标轴，所形成的曲线就是P-R曲线。
+
+ROC（Receiver operating characteristic）曲线的纵轴是真正例率（True Positive Rate，TPR），横轴是假正例率（False Positive Rate，FPR）。其定义如下：
+
+$$TPR=\frac{TP}{TP+FN},FPR=\frac{FP}{TN+FP}$$
+
+ROC曲线下方的面积被称为AUC（Area Under ROC Curve）。
 
 # HMM
 
@@ -172,6 +192,8 @@ http://www.docin.com/p-976961701.html
 
 # 概率图模型
 
+## 资料
+
 probabilistic graphical model（PGM）最早由Judea Pearl发明。
 
 这方面比较重要的文章和书籍有：
@@ -193,38 +215,3 @@ Michael Irwin Jordan著。
 http://www.cs.cmu.edu/~epxing/Class/10708-14/lectures/
 
 CMU的邢波（Eric Xing）所开的概率图模型课程。
-
-## 概述
-
-概率图模型的三要素：Graph：$$\mathcal{G}$$、Model：$$\mathcal{M}$$和Data：$$\mathcal{D}\equiv\{X^{(i)}_1,\dots,X^{(i)}_m\}^N_{i=1}$$。
-
-它要解决的三大问题：
-
-1.**表示**。如何获取或定义真实世界的不确定度？如何对领域知识/假设/约束编码？
-
-2.**推断**。根据模型/数据，推断答案。
-
-$$\text{e.g.}:P(x_i|\mathcal{D})$$
-
-3.**学习**。根据数据确定哪个模型是正确的。
-
-$$\text{e.g.}:\mathcal{M}=\arg\max_{\mathcal{M}\in M}F(\mathcal{D};\mathcal{M})$$
-
-![](/images/article/PGM.png)
-
-上图是PGM的一个示例。其中$$X_i$$表示随机变量，图中共有8个随机变量，假设它们均为二值变量，则整个状态空间共有$$2^8$$种组合。遍历这样大的状态空间无疑是一件极为费力的事情。
-
-如果$$X_i$$是条件独立的话，则由上图可得：
-
-$$P(X_1,\dots,X_8)=P(X_2)P(X_4|X_2)P(X_5|X_2)P(X_1)P(X_3|X_1)\\P(X_6|X_3,X_4)P(X_7|X_6)P(X_8|X_5,X_6)$$
-
-这样，状态空间就缩小为$$2+4+4+2+4+8+4+8=36$$种组合了。
-
-根据边的类型，PGM可分为两类：
-
-1.有向边表示变量间的**因果**关系。这样的PGM，常称为Bayesia Network（BN）或Directed Graphical Model（DGM）。
-
-2.无向边表示变量间的**相关**关系。这样的PGM，常称为Markov Random Field（MRF）或Undirected Graphical model（UGM）。
-
->注：因果关系是一种强逻辑关系，需要变量间有深刻的内在联系。而相关关系要弱的多，典型的例子就是《机器学习（十七）》中的尿布和啤酒的故事。尿布和啤酒虽然正相关，然而它们本身却没有多大的联系。
-

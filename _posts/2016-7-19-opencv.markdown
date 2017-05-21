@@ -300,6 +300,14 @@ https://zhuanlan.zhihu.com/p/21344595
 
 端到端的OCR：验证码识别(LSTM+CTC)
 
+https://zhuanlan.zhihu.com/p/26882794
+
+Google深度揭秘TPU
+
+http://mp.weixin.qq.com/s/IfEgSOIkIPA-YtC9NQW1ng
+
+非神经网络的深度模型gcForest
+
 ## 论文
 
 《Moving Gradients: A Path-Based Method for Plausible Image Interpolation》：视频帧插值算法
