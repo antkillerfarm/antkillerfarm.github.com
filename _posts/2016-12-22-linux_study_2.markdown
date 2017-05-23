@@ -206,6 +206,14 @@ http://www.speech.cs.cmu.edu/databases/an4/
 
 CMU的音频数据库，可用于语音识别
 
+http://blog.csdn.net/wangkr111/article/details/44514097
+
+肤色检测&人脸检测数据集等链接大集合
+
+http://blog.sciencenet.cn/blog-1239700-853296.html
+
+视觉研究的前世今生
+
 # Python
 
 ## 如何通过需认证的代理获取HTTP网页
@@ -261,4 +269,10 @@ otherStyleTime = time.strftime("%Y/%m/%d %H:%M:%S", timeArray)
 L.append(var)   #追加元素
 L.extend(list)  #追加list，即合并list到L上
 {% endhighlight %}
+
+## 相关资源
+
+http://www.lfd.uci.edu/~gohlke/pythonlibs/
+
+Unofficial Windows Binaries for Python Extension Packages
 

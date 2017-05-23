@@ -309,10 +309,6 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/nlp/h
 
 参考：
 
-http://blog.csdn.net/itplus/article/details/37969519
-
-word2vec中的数学原理详解
-
 http://wei-li.cnblogs.com/p/word2vec.html
 
 文本深度表示模型Word2Vec

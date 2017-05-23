@@ -22,11 +22,27 @@ momentum是梯度下降法中一种常用的加速技术。如果上一次的mom
 
 ## Batch Normalization
 
+Batch Normalization是Google提出的一种神经网络优化技巧。
+
+原始论文：
+
+《Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift》
+
+![](/images/article/Gradient_Vanish.png)
+
+上图是Hinton在2015年的讲座中的例子。从中可以看出，反向传递的梯度大小不仅和激活函数有关，也和每一层的权值大小有关。
+
+通常来说，越靠近输出层，由于该层网络已被充分训练，其权值越大，反之则越小。这实际上也是梯度消失的一种原因。
+
+更一般的，如果一层的权值显著异于相邻的层，从系统的角度出发，这一层也是不稳定的。Batch Normalization将各层的权值归一化，从而改善了神经网络的性能。它的优点有：
+
 1.提高梯度在网络中的流动。Normalization能够使特征全部缩放到[0,1]，这样在反向传播时候的梯度都是在1左右，避免了梯度消失现象。
 
 2.提升学习速率。归一化后的数据能够快速的达到收敛。
 
 3.减少模型训练对初始化的依赖。
+
+参考：
 
 http://www.cnblogs.com/neopenx/p/5211969.html
 
@@ -35,6 +51,10 @@ http://www.cnblogs.com/neopenx/p/5211969.html
 https://www.zhihu.com/question/38102762
 
 深度学习中 Batch Normalization为什么效果好？
+
+http://jiangqh.info/Batch-Normalization%E8%AF%A6%E8%A7%A3/
+
+Batch Normalization详解
 
 # CNN
 
@@ -134,7 +154,7 @@ http://mp.weixin.qq.com/s/2TUw_2d36uFAiJTkvaaqpA
 
 # Autoencoder
 
-Bengio在2003年的A neural probabilistic language model中指出，维度过高，会导致每次学习，都会强制改变大部分参数。
+Bengio在2003年的《A neural probabilistic language model》中指出，维度过高，会导致每次学习，都会强制改变大部分参数。
 
 由此发生蝴蝶效应，本来很好的参数，可能就因为一个小小传播误差，就改的乱七八糟。
 
@@ -156,14 +176,6 @@ Autoencoder的结构如上图所示。它的特殊之处在于：
 
 http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/
 
-# Neural Network Zoo
-
-![](/images/article/Neural_Networks.png)
-
-上图的原地址为：
-
-http://www.asimovinstitute.org/neural-network-zoo/
-
 # 词向量
 
 ## One-hot Representation
@@ -180,13 +192,41 @@ One-hot Representation的缺点在于：
 
 1.该表示法中，由于任意两个单词的词向量都是正交的，因此无法反映单词之间的语义相似度。
 
-2.一个词库的大小是$$10^5$$以上的量级
+2.一个词库的大小是$$10^5$$以上的量级。维度过高，会妨碍神经网络学习到稀疏特征。
 
-Word Embedding
+## Word Embedding
+
+针对One-hot Representation的不足，Bengio提出了Distributed Representation，也称为。
+
+![](/images/article/word_vector.png)
+
+Word Embedding的思路如上图所示，即想办法**将高维的One-hot词向量映射到低维的语义空间中**。
+
+Bengio自己提出了一种基于神经网络的Word Embedding的方案，然而由于计算量过大，目前已经被淘汰了。
 
 参考：
 
 http://www.cnblogs.com/neopenx/p/4570648.html
+
+词向量概况
+
+## word2vec
+
+除了Bengio方案之外，早期人们还尝试过基于共生矩阵（Co-occurrence Matrix）SVD分解的Word Embedding方案。该方案对于少量语料有不错的效果，但一旦语料增大，计算量即呈指数级上升。
+
+Tomas Mikolov于2013年对Bengio方案进行了简化改进，提出了目前最为常用的word2vec方案。
+
+介绍word2vec的数学原理比较好的有：
+
+《Deep Learning实战之word2vec》，网易有道的邓澍军、陆光明、夏龙著。
+
+《word2vec中的数学》，peghoty著。该书的网页版：
+
+http://blog.csdn.net/itplus/article/details/37969519
+
+![](/images/article/word2vec.png)
+
+除了word2vec之外，类似的Word Embedding方案还有SENNA、RNN-LM、Glove等。但影响力仍以word2vec最大。
 
 # RNN
 
@@ -196,3 +236,16 @@ http://www.cnblogs.com/neopenx/p/4570648.html
 
 ![](/images/article/reinforcement_learning.png)
 
+# 神经元激活函数进阶
+
+https://zhuanlan.zhihu.com/p/22142013
+
+深度学习中的激活函数导引
+
+# Neural Network Zoo
+
+![](/images/article/Neural_Networks.png)
+
+上图的原地址为：
+
+http://www.asimovinstitute.org/neural-network-zoo/

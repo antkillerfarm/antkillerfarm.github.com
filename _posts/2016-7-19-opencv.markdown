@@ -308,6 +308,18 @@ http://mp.weixin.qq.com/s/IfEgSOIkIPA-YtC9NQW1ng
 
 非神经网络的深度模型gcForest
 
+https://mp.weixin.qq.com/s/JnGpVQDF95hHTirrZyJc_g
+
+一个降低深度学习时间，空间，经济成本的解决方案
+
+https://zhuanlan.zhihu.com/p/25335957
+
+人脸检测与深度学习
+
+http://www.leiphone.com/news/201608/MPXlWtGaJLPYL7NB.html
+
+人脸检测发展：从VJ到深度学习
+
 ## 论文
 
 《Moving Gradients: A Path-Based Method for Plausible Image Interpolation》：视频帧插值算法

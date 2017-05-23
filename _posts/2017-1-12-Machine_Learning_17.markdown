@@ -203,7 +203,7 @@ II). 对每个潜在的分裂点，计算如果以这个分裂点对叶结点进
 
 因为Loss Function满足累积性(对MLE取log的好处)，并且每个叶结点对应的weight的求取是独立于其他叶结点的（只跟落在这个叶结点上的样本有关），所以，不同叶结点上的loss function满足单调累加性，只要保证每个叶结点上的样本累积loss function最小化，整体样本集的loss function也就最小化了。
 
-可见，XGBoost算法之所以能够并行，其要害在于其中枚举分裂点的计算，是能够分布式并行计算的。
+**可见，XGBoost算法之所以能够并行，其要害在于其中枚举分裂点的计算，是能够分布式并行计算的。**
 
 官网：
 
@@ -211,7 +211,7 @@ https://xgboost.readthedocs.io/en/latest/
 
 GitHub：
 
-https://xgboost.readthedocs.io/en/latest/
+https://github.com/dmlc/xgboost
 
 编译：
 
