@@ -135,6 +135,10 @@ http://www.fhdq.net/
 
 常用符号大全
 
+http://www.sobot.com/production/dataStatistics.html
+
+智齿科技，一家智能客服领域的公司
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

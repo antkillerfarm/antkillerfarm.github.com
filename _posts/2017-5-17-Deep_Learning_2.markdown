@@ -214,6 +214,12 @@ http://www.cnblogs.com/neopenx/p/4570648.html
 
 除了Bengio方案之外，早期人们还尝试过基于共生矩阵（Co-occurrence Matrix）SVD分解的Word Embedding方案。该方案对于少量语料有不错的效果，但一旦语料增大，计算量即呈指数级上升。
 
+这类方案的典型是Latent Semantic Analysis(LSA)，也被叫做Latent Semantic Indexing(LSI)。参见：
+
+http://www.cnblogs.com/kemaswill/archive/2013/04/17/3022100.html
+
+Latent Semantic Analysis(LSA/LSI)算法简介
+
 Tomas Mikolov于2013年对Bengio方案进行了简化改进，提出了目前最为常用的word2vec方案。
 
 介绍word2vec的数学原理比较好的有：
@@ -249,3 +255,5 @@ https://zhuanlan.zhihu.com/p/22142013
 上图的原地址为：
 
 http://www.asimovinstitute.org/neural-network-zoo/
+
+

@@ -124,3 +124,4 @@ http://chaofan.io/archives/earth-movers-distance-%e6%8e%a8%e5%9c%9f%e6%9c%ba%e8%
 
 可见，滤波和预测是实时运算，而平滑是非实时运算。
 
+

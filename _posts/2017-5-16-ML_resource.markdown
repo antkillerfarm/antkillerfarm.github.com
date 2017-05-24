@@ -456,6 +456,10 @@ https://github.com/zsdev2015/machine_learning
 
 某国内小牛写的中文入门demo，注释非常详细
 
+https://morvanzhou.github.io/tutorials/
+
+一个以python语言教学的ML、DL教程，比较通俗易懂。
+
 ## 我的TensorFlow实践
 
 ### MNIST+Softmax

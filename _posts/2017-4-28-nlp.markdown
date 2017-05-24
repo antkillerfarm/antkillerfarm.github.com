@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NLP, Java（二）
+title:  NLP
 category: technology 
 ---
 
@@ -336,69 +336,5 @@ https://wenku.baidu.com/view/38ad3ef7e109581b6bd97f19227916888586b959.html
 https://wenku.baidu.com/view/e69a3619fe00bed5b9f3f90f76c66137ee064f15.html
 
 知识图谱技术综述
-
-# Java各集合类的比较 
-
-<table>
-<tr>
-<td colspan="2"></td>
-<td>有序否</td>
-<td>允许元素重复否</td>
-</tr>
-<tr>
-<td colspan="2">Collection</td>
-<td>否</td>
-<td>是</td>
-</tr>
-<tr>
-<td colspan="2">List</td>
-<td>是</td>
-<td>是</td>
-</tr>
-<tr>
-<td rowspan="3">Set</td>
-<td>AbstractSet</td>
-<td rowspan="2">否</td>
-<td rowspan="3">否</td>
-</tr>
-<tr>
-<td>HashSet</td>
-</tr>
-<tr>
-<td>TreeSet</td>
-<td>是（用二叉树排序）</td>
-</tr>
-<tr>
-<td rowspan="3">Map</td>
-<td>AbstractMap</td>
-<td rowspan="2">否</td>
-<td rowspan="3">使用key-value来映射和存储数据，Key必须惟一，value可以重复</td>
-</tr>
-<tr>
-<td>HashMap</td>
-</tr>
-<tr>
-<td>TreeSet</td>
-<td>是（用二叉树排序）</td>
-</tr>
-</table>
-
-# Log4j & SLF4J & Logback
-
-Log4j是Apache的一个开源项目，通过使用Log4j，我们可以控制日志信息输送的目的地是控制台、文件、GUI组件，甚至是套接口服务器、NT的事件记录器、UNIX Syslog守护进程等；我们也可以控制每一条日志的输出格式；通过定义每一条日志信息的级别，我们能够更加细致地控制日志的生成过程。
-
-SLF4J，即简单日志门面（Simple Logging Facade for Java），不是具体的日志解决方案，它只服务于各种各样的日志系统。按照官方的说法，SLF4J是一个用于日志系统的简单Facade，允许最终用户在部署其应用时使用其所希望的日志System。
-
-假设你打算将你使用log4j的产品卖给要求使用JDK 1.4 Logging的用户时，面对成千上万的log4j调用的修改，相信这绝对不是一件轻松的事情。但是如果开始便使用SLF4J，那么这种转换将是非常轻松的事情。
-
-Logback是由log4j创始人设计的另一个开源日志组件。官方网站：
-
-http://logback.qos.ch
-
-上面三者可以组合使用（slf4j+log4j和slf4j+logback），它们的配置文件主要是logback.xml和log4j.properties。
-
-参见：
-
-http://wuyilun2.blog.163.com/blog/static/9853110201111595858365/
 
 

@@ -320,6 +320,18 @@ http://www.leiphone.com/news/201608/MPXlWtGaJLPYL7NB.html
 
 人脸检测发展：从VJ到深度学习
 
+https://mp.weixin.qq.com/s/1X9xiZkmVPI-j-aipr-ocg
+
+AlphaGo Master最新架构和算法，谷歌云与TPU拆解
+
+https://mp.weixin.qq.com/s/Jof-u8oUuLR4v7t3jjXEmA
+
+GPU和线下训练
+
+https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
+
+20万、50万、100万的算法工程师，到底有什么区别？
+
 ## 论文
 
 《Moving Gradients: A Path-Based Method for Plausible Image Interpolation》：视频帧插值算法
@@ -403,5 +415,4 @@ http://mp.weixin.qq.com/s/dtg-alezht56mu_vOA4Lrg
 http://mp.weixin.qq.com/s/qW_RZ--df6MjaKNgNdjeWA
 
 10所世界顶级名校的25门在线免费机器学习课程！
-
 

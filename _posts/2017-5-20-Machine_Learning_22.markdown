@@ -88,5 +88,7 @@ category: theory
 | RNN | Recursive Neural Network | 递归神经网络 | 已没落 |
 | CNN | Convolutional Neural Network | 卷积神经网络 |  |
 | NLP | Natural Language Processing | 自然语言处理 |  |
+| HDP | Hierarchical Dirichlet Processes | 分层狄利克雷进程 |  |
+| LSA/LSI | Latent Semantic Analysis/Latent Semantic Indexing | 隐式语义分析/隐式语义序列 |  |
 
 
