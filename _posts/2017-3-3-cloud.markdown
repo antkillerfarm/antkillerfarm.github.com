@@ -307,6 +307,10 @@ Jenkins是一个开源软件项目，旨在提供一个开放易用的软件平�
 
 https://jenkins.io/index.html
 
+自动化部署的其中一种方案：
+
+gitlab管理代码版本，触发jenkins自动构建+测试，然后走迭代或者发布，全部环境都在docker内。
+
 ## Walle
 
 Walle一个web部署系统工具，配置简单、功能完善、界面流畅、开箱即用！支持git、svn版本管理，支持各种web代码发布，PHP，Python，JAVA等代码的发布、回滚，可以通过web来一键完成。

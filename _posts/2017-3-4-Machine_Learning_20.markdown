@@ -32,7 +32,7 @@ ROC曲线下方的面积被称为AUC（Area Under ROC Curve）。
 
 ![](/images/article/HMM_3.png)
 
-和HMM模型相关的算法主要分为三类，分别解决三种问题：
+和HMM（Hidden Markov Model，隐马尔可夫模型）模型相关的算法主要分为三类，分别解决三种问题：
 
 1）**知道骰子有几种（隐含状态数量），每种骰子是什么（转换概率），根据掷骰子掷出的结果（可见状态链），我想知道每次掷出来的都是哪种骰子（隐含状态链）。**
 
@@ -58,7 +58,7 @@ http://www.cnblogs.com/kaituorensheng/archive/2012/11/29/2795499.html
 
 ## Viterbi算法
 
-Viterbi算法是求解最大似然状态路径的常用算法，被广泛应用于通信和NLP领域。
+Viterbi算法是求解最大似然状态路径的常用算法，被广泛应用于通信（CDMA技术的理论基础之一）和NLP领域。
 
 >注：Andrew James Viterbi，1935年生，意大利裔美国工程师、企业家，高通公司联合创始人。MIT本硕+南加州大学博士。viterbi算法和CDMA标准的主要发明人。
 
@@ -81,6 +81,16 @@ forward算法是求解问题2的常用算法。
 ![](/images/article/forward_algorithm.png)
 
 上图是某骰子序列的穷举计算过程，可以看出第3步计算的概率和公式的某些项，实际上在之前的步骤中已经计算出来了，前向递推的计算量并没有想象中的大。
+
+## HMM在NLP领域的应用
+
+具体到分词系统，可以将“标签”当作隐含状态，“字或词”当作可见状态。那么，几个NLP的问题就可以转化为：
+
+词性标注：给定一个词的序列（也就是句子），找出最可能的词性序列（标签是词性）。如ansj分词和ICTCLAS分词等。
+
+分词：给定一个字的序列，找出最可能的标签序列（断句符号：[词尾]或[非词尾]构成的序列）。结巴分词目前就是利用BMES标签来分词的，B（开头）,M（中间),E(结尾),S(独立成词）
+
+命名实体识别：给定一个词的序列，找出最可能的标签序列（内外符号：[内]表示词属于命名实体，[外]表示不属于）。如ICTCLAS实现的人名识别、翻译人名识别、地名识别都是用同一个Tagger实现的。
 
 # Probabilistic Robotics
 
@@ -190,28 +200,4 @@ http://www.docin.com/p-976961701.html
 
 >注：杨元喜，1956年生，大地测量学家。中国科学院院士。
 
-# 概率图模型
 
-## 资料
-
-probabilistic graphical model（PGM）最早由Judea Pearl发明。
-
-这方面比较重要的文章和书籍有：
-
-http://www.cis.upenn.edu/~mkearns/papers/barbados/jordan-tut.pdf
-
-Michael Irwin Jordan著。
-
-《Probabilistic Graphical Models: Principles and Techniques》，Daphne Koller，Nir Friedman著（2009年）。
-
->注：Judea Pearl，1936年生，以色列-美国计算机科学家，UCLA教授。2011年获得图灵奖。
-
->Michael Irwin Jordan，1956年生，美国计算机科学家。UCSD博士，先后执教于MIT和UCB。吴恩达的导师。
-
->Daphne Koller，女，1968年生，以色列-美国计算机科学家。斯坦福大学博士及教授。和吴恩达共同创立在线教育平台Coursera。
-
->Nir Friedman，1967年生，以色列计算机科学家。斯坦福大学博士，耶路撒冷希伯来大学教授。
-
-http://www.cs.cmu.edu/~epxing/Class/10708-14/lectures/
-
-CMU的邢波（Eric Xing）所开的概率图模型课程。

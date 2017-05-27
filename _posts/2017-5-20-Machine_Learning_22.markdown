@@ -89,6 +89,7 @@ category: theory
 | CNN | Convolutional Neural Network | 卷积神经网络 |  |
 | NLP | Natural Language Processing | 自然语言处理 |  |
 | HDP | Hierarchical Dirichlet Processes | 分层狄利克雷进程 |  |
-| LSA/LSI | Latent Semantic Analysis/Latent Semantic Indexing | 隐式语义分析/隐式语义序列 |  |
-
+| LSA/LSI | Latent Semantic Analysis/Latent Semantic Indexing | 隐式语义分析/隐式语义索引 |  |
+| NER | Named Entity Recognition | 命名实体识别 |  |
+| NER | Named Entity Recognition | 命名实体识别 |  |
 

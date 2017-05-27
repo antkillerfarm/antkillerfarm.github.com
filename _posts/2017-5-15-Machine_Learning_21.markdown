@@ -4,7 +4,31 @@ title:  机器学习（二十一）——概率图模型, EMD
 category: theory 
 ---
 
-# 概率图模型（续）
+# 概率图模型
+
+## 资料
+
+probabilistic graphical model（PGM）最早由Judea Pearl发明。
+
+这方面比较重要的文章和书籍有：
+
+http://www.cis.upenn.edu/~mkearns/papers/barbados/jordan-tut.pdf
+
+Michael Irwin Jordan著。
+
+《Probabilistic Graphical Models: Principles and Techniques》，Daphne Koller，Nir Friedman著（2009年）。
+
+>注：Judea Pearl，1936年生，以色列-美国计算机科学家，UCLA教授。2011年获得图灵奖。
+
+>Michael Irwin Jordan，1956年生，美国计算机科学家。UCSD博士，先后执教于MIT和UCB。吴恩达的导师。
+
+>Daphne Koller，女，1968年生，以色列-美国计算机科学家。斯坦福大学博士及教授。和吴恩达共同创立在线教育平台Coursera。
+
+>Nir Friedman，1967年生，以色列计算机科学家。斯坦福大学博士，耶路撒冷希伯来大学教授。
+
+http://www.cs.cmu.edu/~epxing/Class/10708-14/lectures/
+
+CMU的邢波（Eric Xing）所开的概率图模型课程。
 
 ## 概述
 
@@ -36,7 +60,7 @@ $$P(X_1,\dots,X_8)=P(X_2)P(X_4|X_2)P(X_5|X_2)P(X_1)P(X_3|X_1)\\P(X_6|X_3,X_4)P(X
 
 1.有向边表示变量间的**因果**关系。这样的PGM，常称为Bayesia Network（BN）或Directed Graphical Model（DGM）。
 
-2.无向边表示变量间的**相关**关系。这样的PGM，常称为Markov Random Field（MRF）或Undirected Graphical model（UGM）。
+2.无向边表示变量间的**相关**关系。这样的PGM，常称为Markov Random Field（MRF）或Undirected Graphical Model（UGM）。
 
 >注：因果关系是一种强逻辑关系，需要变量间有深刻的内在联系。而相关关系要弱的多，典型的例子就是《机器学习（十七）》中的尿布和啤酒的故事。尿布和啤酒虽然正相关，然而它们本身却没有多大的联系。
 
@@ -106,6 +130,26 @@ https://vincentherrmann.github.io/blog/wasserstein/
 
 http://chaofan.io/archives/earth-movers-distance-%e6%8e%a8%e5%9c%9f%e6%9c%ba%e8%b7%9d%e7%a6%bb
 
+# LSA
+
+Latent Semantic Analysis（隐式语义分析），也叫Latent Semantic Indexing。它是PCA算法在NLP领域的一个应用。
+
+在TF-IDF模型中，所有词构成一个高维的语义空间，每个文档在这个空间中被映射为一个点，这种方法维数一般比较高而且每个词作为一维割裂了词与词之间的关系。所以为了解决这个问题，我们要把词和文档同等对待，构造一个维数不高的语义空间，每个词和每个文档都是被映射到这个空间中的一个点。用数学来表示这个思想就是说，我们考察的概率既包括文档的概率，也包括词的概率，以及他们的联合概率。
+
+为了加入语义方面的信息，我们设计一个假想的隐含类包括在文档和词之间，具体思路是这样的：
+
+
+
+参考：
+
+http://www.cnblogs.com/kemaswill/archive/2013/04/17/3022100.html
+
+Latent Semantic Analysis(LSA/LSI)算法简介
+
+http://blog.csdn.net/u013802188/article/details/40903471
+
+隐含语义索引（Latent Semantic Indexing ）
+
 # 自适应滤波器
 
 《自适应滤波器原理》，Simon Haykin著。
@@ -123,5 +167,4 @@ http://chaofan.io/archives/earth-movers-distance-%e6%8e%a8%e5%9c%9f%e6%9c%ba%e8%
 **预测（Prediction）**：利用$$[0,t]$$的数据，来估计$$t+\tau(\tau>0)$$时刻信息的运算过程。
 
 可见，滤波和预测是实时运算，而平滑是非实时运算。
-
 

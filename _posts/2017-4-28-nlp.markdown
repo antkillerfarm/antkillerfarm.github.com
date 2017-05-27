@@ -133,6 +133,8 @@ https://github.com/tensorflow/models/tree/master/textsum
 
 http://www.jiqizhixin.com/article/1449
 
+http://blog.csdn.net/tensorflowshizhan/article/details/69230070
+
 ### jieba
 
 https://github.com/fxsjy/jieba
@@ -271,10 +273,6 @@ http://mp.weixin.qq.com/s/XPlyWdfZbOR5z25Ly-bUGQ
 
 如何在Pytorch中通过OpenNMT系统实现神经机器翻译
 
-http://www.algorithmdog.com/fast-fasttext
-
-Mikolov文本分类新作fastText
-
 http://mp.weixin.qq.com/s?__biz=MzI4MDYzNzg4Mw==&mid=2247483922&idx=1&sn=cffbaf797cc58e303a65a8a2ae370b86
 
 句法分析（syntactic parsing）在NLP领域的应用是怎样的？
@@ -319,6 +317,22 @@ http://dataunion.org/9331.html
 
 深度学习、自然语言处理和表征方法
 
+https://www.zhihu.com/question/46272554
+
+如何评价SyntaxNet
+
+https://mp.weixin.qq.com/s/-y2vth2OGx9rAsPvEknVTg
+
+神经网络结构在命名实体识别（NER）中的应用
+
+http://www.cnblogs.com/robert-dlut/
+
+一个NLP方面的blog
+
+http://www.wildml.com/2016/07/deep-learning-for-chatbots-2-retrieval-based-model-tensorflow/
+
+IMPLEMENTING A RETRIEVAL-BASED MODEL IN TENSORFLOW
+
 ## 论文
 
 《Distant Supervision for relation extraction without labeled data》
@@ -337,4 +351,7 @@ https://wenku.baidu.com/view/e69a3619fe00bed5b9f3f90f76c66137ee064f15.html
 
 知识图谱技术综述
 
+https://wenku.baidu.com/view/b3858227c5da50e2534d7f08.html
+
+知识图谱技术原理介绍
 

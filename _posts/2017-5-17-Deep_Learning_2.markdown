@@ -12,7 +12,7 @@ Vanilla是神经网络领域的常见词汇，比如Vanilla Neural Networks、Va
 
 ## weight decay
 
-weight decay（权值衰减）的使用既不是为了提高你所说的收敛精确度也不是为了提高收敛速度，其最终目的是防止过拟合。在损失函数中，weight decay是放在正则项（regularization）前面的一个系数，正则项一般指示模型的复杂度，所以weight decay的作用是调节模型复杂度对损失函数的影响，若weight decay很大，则复杂的模型损失函数的值也就大。
+weight decay（权值衰减）的使用既不是为了提高收敛精确度，也不是为了提高收敛速度，其最终目的是防止过拟合。在损失函数中，weight decay是放在正则项（regularization）前面的一个系数，正则项一般指示模型的复杂度，所以weight decay的作用是调节模型复杂度对损失函数的影响，若weight decay很大，则复杂的模型损失函数的值也就大。
 
 https://mp.weixin.qq.com/s/W4d2fkiJig--PuDPM11ozA
 
@@ -55,6 +55,16 @@ https://www.zhihu.com/question/38102762
 http://jiangqh.info/Batch-Normalization%E8%AF%A6%E8%A7%A3/
 
 Batch Normalization详解
+
+## 鞍点
+
+鞍点（Saddle point）在微分方程中，沿着某一方向是稳定的，另一条方向是不稳定的奇点，叫做鞍点。在泛函中，既不是极大值点也不是极小值点的临界点，叫做鞍点。在矩阵中，一个数在所在行中是最大值，在所在列中是最小值，则被称为鞍点。在物理上要广泛一些，指在一个方向是极大值，另一个方向是极小值的点。
+
+![](/images/article/Saddle_point.png)
+
+上图是$$z=x^2-y^2$$的曲面图，其中的原点就是鞍点。上图形似马鞍，故名。
+
+LeCun和Bengio的研究表明，在high-D(高维)的情况下，局部最小会随着维度的增加，指数型的减少，在深度学习中，一个点是局部最小的概率非常小，同时鞍点无处不在。
 
 # CNN
 
@@ -214,11 +224,7 @@ http://www.cnblogs.com/neopenx/p/4570648.html
 
 除了Bengio方案之外，早期人们还尝试过基于共生矩阵（Co-occurrence Matrix）SVD分解的Word Embedding方案。该方案对于少量语料有不错的效果，但一旦语料增大，计算量即呈指数级上升。
 
-这类方案的典型是Latent Semantic Analysis(LSA)，也被叫做Latent Semantic Indexing(LSI)。参见：
-
-http://www.cnblogs.com/kemaswill/archive/2013/04/17/3022100.html
-
-Latent Semantic Analysis(LSA/LSI)算法简介
+这类方案的典型是Latent Semantic Analysis(LSA)。参见《机器学习（二十一）》
 
 Tomas Mikolov于2013年对Bengio方案进行了简化改进，提出了目前最为常用的word2vec方案。
 
@@ -234,26 +240,15 @@ http://blog.csdn.net/itplus/article/details/37969519
 
 除了word2vec之外，类似的Word Embedding方案还有SENNA、RNN-LM、Glove等。但影响力仍以word2vec最大。
 
-# RNN
+## FastText
 
+Word2Vec作者Mikolov加盟Facebook之后，提出了文本分类新作FastText。
 
+FastText模型架构和Word2Vec中的CBOW模型很类似。不同之处在于，FastText预测标签，而CBOW模型预测中间词。
 
-# 深度强化学习
+http://www.algorithmdog.com/fast-fasttext
 
-![](/images/article/reinforcement_learning.png)
+Github：
 
-# 神经元激活函数进阶
-
-https://zhuanlan.zhihu.com/p/22142013
-
-深度学习中的激活函数导引
-
-# Neural Network Zoo
-
-![](/images/article/Neural_Networks.png)
-
-上图的原地址为：
-
-http://www.asimovinstitute.org/neural-network-zoo/
-
+https://github.com/facebookresearch/fastText
 
