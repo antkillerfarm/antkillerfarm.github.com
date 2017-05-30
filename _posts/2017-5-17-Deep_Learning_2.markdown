@@ -4,7 +4,17 @@ title:  深度学习（二）——深度学习常用术语解释, CNN, Autoenco
 category: theory 
 ---
 
-# 深度学习常用术语解释（续）
+# 深度学习常用术语解释
+
+## 深度学习中epoch、batch size、iterations的区别
+
+one epoch：所有的训练样本完成一次Forword运算以及一次BP运算
+
+batch size：一次Forword运算以及BP运算中所需要的训练样本数目，其实深度学习每一次参数的更新所需要损失函数并不是由一个{data：label}获得的，而是由一组数据加权得到的，这一组数据的数量就是[batch size]。当然batch size越大，所需的内存就越大，要量力而行。
+
+iterations（迭代）：每一次迭代都是一次权重更新，每一次权重更新需要batch size个数据进行Forward运算得到损失函数，再BP算法更新参数。
+
+最后可以得到一个公式one epoch = numbers of iterations = N = 训练样本的数量/batch size
 
 ## Vanilla
 
@@ -65,6 +75,16 @@ Batch Normalization详解
 上图是$$z=x^2-y^2$$的曲面图，其中的原点就是鞍点。上图形似马鞍，故名。
 
 LeCun和Bengio的研究表明，在high-D(高维)的情况下，局部最小会随着维度的增加，指数型的减少，在深度学习中，一个点是局部最小的概率非常小，同时鞍点无处不在。
+
+## 欠拟合和过拟合
+
+在DL领域，欠拟合意味着神经网络没有学到该学习的特征，而过拟合则意味着神经网络学习到了不该学习的特征。
+
+在之前的描述中，我们一直强调过拟合的风险，然而实际上，欠拟合才是DL最大的敌人。
+
+首先，神经网络对于学习样本数量的要求非常高，基本比浅层模型多2～3个数量级，因此过拟合的风险并不太大。
+
+其次，过拟合的危害也没有欠拟合那么高。欠拟合可能会导致同样的训练样本，在两次不同训练中，所生成的模型，对于同一测试样本集的大多数结论完全相反。而过拟合并没有这么夸张的效果。
 
 # CNN
 
@@ -219,36 +239,4 @@ Bengio自己提出了一种基于神经网络的Word Embedding的方案，然而
 http://www.cnblogs.com/neopenx/p/4570648.html
 
 词向量概况
-
-## word2vec
-
-除了Bengio方案之外，早期人们还尝试过基于共生矩阵（Co-occurrence Matrix）SVD分解的Word Embedding方案。该方案对于少量语料有不错的效果，但一旦语料增大，计算量即呈指数级上升。
-
-这类方案的典型是Latent Semantic Analysis(LSA)。参见《机器学习（二十一）》
-
-Tomas Mikolov于2013年对Bengio方案进行了简化改进，提出了目前最为常用的word2vec方案。
-
-介绍word2vec的数学原理比较好的有：
-
-《Deep Learning实战之word2vec》，网易有道的邓澍军、陆光明、夏龙著。
-
-《word2vec中的数学》，peghoty著。该书的网页版：
-
-http://blog.csdn.net/itplus/article/details/37969519
-
-![](/images/article/word2vec.png)
-
-除了word2vec之外，类似的Word Embedding方案还有SENNA、RNN-LM、Glove等。但影响力仍以word2vec最大。
-
-## FastText
-
-Word2Vec作者Mikolov加盟Facebook之后，提出了文本分类新作FastText。
-
-FastText模型架构和Word2Vec中的CBOW模型很类似。不同之处在于，FastText预测标签，而CBOW模型预测中间词。
-
-http://www.algorithmdog.com/fast-fasttext
-
-Github：
-
-https://github.com/facebookresearch/fastText
 

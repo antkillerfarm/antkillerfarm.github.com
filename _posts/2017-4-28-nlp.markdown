@@ -333,6 +333,10 @@ http://www.wildml.com/2016/07/deep-learning-for-chatbots-2-retrieval-based-model
 
 IMPLEMENTING A RETRIEVAL-BASED MODEL IN TENSORFLOW
 
+https://mp.weixin.qq.com/s/vGUizRVnosd7cgxha-pimw
+
+200行Python代码实现感知机词性标注器
+
 ## 论文
 
 《Distant Supervision for relation extraction without labeled data》

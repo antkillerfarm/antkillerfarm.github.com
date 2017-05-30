@@ -344,6 +344,18 @@ http://www.csdn.net/article/2015-09-16/2825716
 
 Yoshua Bengio等大神传授：26条深度学习经验
 
+http://mp.weixin.qq.com/s/G4lQqiiVvmCW9SmX2blDEg
+
+实战——目标检测与识别
+
+https://mp.weixin.qq.com/s/L04yE6J8n-Z7Cl9yt6kphA
+
+约翰霍普金斯大学计算机科学系Jason Eisner教授总结了一系列的自然语言处理优秀教学资源
+
+http://www.jianshu.com/p/e2d2d7cbbe49
+
+50行代码实现GAN
+
 ## 论文
 
 《Moving Gradients: A Path-Based Method for Plausible Image Interpolation》：视频帧插值算法
