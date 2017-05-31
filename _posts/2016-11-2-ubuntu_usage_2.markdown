@@ -388,4 +388,7 @@ http://www.cnblogs.com/fengzheng/p/4974509.html
 
 另一个中文简易教程。
 
+https://mp.weixin.qq.com/s/nIcUBS0lRrOwVUHoWmKecw
+
+爬虫系列之使用scrapy框架
 

@@ -206,6 +206,14 @@ Autoencoder的结构如上图所示。它的特殊之处在于：
 
 http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/
 
+http://blog.csdn.net/changyuanchn/article/details/15681853
+
+深度学习之autoencoder
+
+http://www.cnblogs.com/neopenx/p/4370350.html
+
+降噪自动编码器（Denoising Autoencoder)
+
 # 词向量
 
 ## One-hot Representation

@@ -48,7 +48,27 @@ CBOW（Continuous Bag-of-Words Model）模型和Skip-gram（Continuous Skip-gram
 
 ### Hierarchical Softmax
 
-Softmax
+word2vec的输出层有两种模型：Hierarchical Softmax和Negative Sampling。
+
+Softmax是DL中常用的输出层结构，它表征**多分类中的每一个分类所对应的概率**。
+
+Hierarchical Softmax是Softmax的一个变种。这时的输出层不再是一个扁平的多分类层，而变成了一个层次化的二分类层。
+
+Hierarchical Softmax一般基于Huffman编码构建。在本例中，我们首先统计词频，以获得每个词所对应的Huffman编码，然后输出层会利用Huffman编码所对应的层次二叉树的路径来计算每个词的概率，并逆传播到隐藏层。
+
+由Huffman编码的特性可知，Hierarchical Softmax的计算量要小于一般的Softmax。
+
+### Negative Sampling
+
+在CBOW模型中，已知w的上下文Context(w)需要预测w，则w就是正样本，而其他词是负样本。
+
+负样本那么多，该如何选取呢？Negative Sampling就是一种对负样本采样的方法。
+
+![](/images/article/Negative_Sampling.png)
+
+上图是Negative Sampling的原理图。L轴表示的是词频分布，很明显这是一个非等距剖分。而M轴是一个等距剖分。
+
+每次生成一个M轴上的随机数，将之映射到L轴上的一个单词。映射方法如上图中的虚线所示。
 
 除了word2vec之外，类似的Word Embedding方案还有SENNA、RNN-LM、Glove等。但影响力仍以word2vec最大。
 
@@ -66,6 +86,18 @@ https://github.com/facebookresearch/fastText
 
 # RNN
 
+RNN是Recurrent Neural Network和Recursive Neural Network的简称。前者主要用于处理和时序相关的输入，而后者目前已经没落。本文只讨论前者。
+
+![](/images/article/RNN.png)
+
+上图是
+
+参考：
+
+http://blog.csdn.net/aws3217150/article/details/50768453
+
+递归神经网络(RNN)简介
+
 http://blog.csdn.net/heyongluoyao8/article/details/48636251
 
 循环神经网络(RNN, Recurrent Neural Networks)介绍
@@ -77,6 +109,24 @@ http://mp.weixin.qq.com/s?__biz=MzIzODExMDE5MA==&mid=2694182661&idx=1&sn=ddfb3f3
 http://www.wildml.com/2015/10/recurrent-neural-networks-tutorial-part-3-backpropagation-through-time-and-vanishing-gradients/
 
 Backpropagation Through Time算法
+
+# LSTM
+
+http://www.jianshu.com/p/9dc9f41f0b29
+
+理解LSTM网络
+
+http://www.csdn.net/article/2015-06-05/2824880
+
+深入浅出LSTM神经网络
+
+https://zhuanlan.zhihu.com/p/25821063
+
+循环神经网络——scan实现LSTM
+
+http://blog.csdn.net/a635661820/article/details/45390671
+
+LSTM简介以及数学推导(FULL BPTT)
 
 # 深度强化学习
 
@@ -91,6 +141,32 @@ https://www.nervanasys.com/demystifying-deep-reinforcement-learning/
 https://zhuanlan.zhihu.com/p/22142013
 
 深度学习中的激活函数导引
+
+http://blog.csdn.net/u012328159/article/details/69898137
+
+几种常见的激活函数
+
+# GAN
+
+http://www.jianshu.com/p/e2d2d7cbbe49
+
+50行代码实现GAN
+
+http://mp.weixin.qq.com/s/bzwG0QxnP2drqS4RwcZlBg
+
+微软详解：到底什么是生成式对抗网络GAN？
+
+https://mp.weixin.qq.com/s/oCDlhzjOYTIhsr5JuoRCJQ
+
+IRGAN：大一统信息检索模型的博弈竞争
+
+https://mp.weixin.qq.com/s/QacQCrjh3KmrQSMp-G_rEg
+
+贝叶斯生成对抗网络
+
+https://github.com/hindupuravinash/the-gan-zoo
+
+GAN的各种变种。
 
 # Neural Network Zoo
 

@@ -138,11 +138,23 @@ https://wenku.baidu.com/view/4169e77f27284b73f2425047.html
 
 层次聚类
 
+http://bindog.github.io/blog/2015/08/20/microsoft-malware-classification
+
+利用机器学习进行恶意代码分类
+
 # DL参考资源
 
-http://mp.weixin.qq.com/s/bzwG0QxnP2drqS4RwcZlBg
+https://zhuanlan.zhihu.com/p/22888385
 
-微软详解：到底什么是生成式对抗网络GAN？
+深层学习为何要“Deep”
+
+http://blog.csdn.net/erlib/article/details/53585134
+
+深层神经网络结构及可能存在的致命问题详解
+
+http://www.csdn.net/article/2015-06-01/2824811
+
+深度学习-LeCun、Bengio和Hinton的联合综述
 
 http://mp.weixin.qq.com/s/6I0Z_yY7UT_7qOKOWcd7Mw
 
@@ -179,10 +191,6 @@ http://mp.weixin.qq.com/s/-Av3-ZNi6UGlKNv_jduAeQ
 http://mp.weixin.qq.com/s/bpODRWFm0vxdwr-JNkVKlA
 
 小心深度学习这个“坑”（入门误区详细版）
-
-https://github.com/hindupuravinash/the-gan-zoo
-
-GAN的各种变种。
 
 http://mp.weixin.qq.com/s/9fJT0dMLvYQdfMVvSEiG4A
 

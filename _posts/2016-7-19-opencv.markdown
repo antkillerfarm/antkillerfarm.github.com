@@ -110,41 +110,29 @@ http://www.deeplearningbook.org/
 
 深度学习的书籍网站。
 
+http://blog.csdn.net/zddblog/article/details/7521424
+
+SIFT算法详解
+
+http://blog.csdn.net/lwzkiller/article/details/54633670
+
+Harris角点检测原理详解
+
+http://www.cnblogs.com/ello/archive/2012/04/28/2475419.html
+
+浅析人脸检测之Haar分类器方法
+
 https://zhuanlan.zhihu.com/p/22604627
 
 AI玩FPS游戏
-
-http://blog.csdn.net/erlib/article/details/53585134
-
-深层神经网络结构及可能存在的致命问题详解
-
-http://www.csdn.net/article/2015-06-01/2824811
-
-深度学习-LeCun、Bengio和Hinton的联合综述
-
-http://www.csdn.net/article/2015-06-05/2824880
-
-深入浅出LSTM神经网络
 
 https://colah.github.io/
 
 谷歌大牛Christopher Olah的blog。
 
-https://zhuanlan.zhihu.com/p/22888385
-
-深层学习为何要“Deep”
-
 http://cs.stanford.edu/people/karpathy/convnetjs//demo/classify2d.html
 
 这是一个2层神经网络的可视化demo
-
-http://blog.csdn.net/zddblog/article/details/7521424
-
-SIFT算法详解
-
-http://bindog.github.io/blog/2015/08/20/microsoft-malware-classification
-
-利用机器学习进行恶意代码分类
 
 BugBrain是一个神经网络相关的益智游戏。官网：
 
@@ -162,21 +150,9 @@ http://blog.csdn.net/life_is_amazing/article/details/51884237
 
 这个博客不错,一些深度学习资源链接
 
-http://blog.csdn.net/lwzkiller/article/details/54633670
-
-Harris角点检测原理详解
-
 http://mp.weixin.qq.com/s/wCDGPBYoOCzLtJBnPbTz9w
 
 神经网络结构解析
-
-http://blog.csdn.net/changyuanchn/article/details/15681853
-
-深度学习之autoencoder
-
-http://www.cnblogs.com/neopenx/p/4370350.html
-
-降噪自动编码器（Denoising Autoencoder)
 
 http://mp.weixin.qq.com/s/Jiis7j3W3D5GG_ZdxplY7Q
 
@@ -192,17 +168,9 @@ https://zhuanlan.zhihu.com/p/25549585
 
 126篇殿堂级深度学习论文分类整理 从入门到应用（上）（下）
 
-http://www.cnblogs.com/ello/archive/2012/04/28/2475419.html
-
-浅析人脸检测之Haar分类器方法
-
 https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap
 
 深度学习论文阅读路线图
-
-https://zhuanlan.zhihu.com/p/25821063
-
-循环神经网络——scan实现LSTM
 
 https://www.zhihu.com/question/41233373
 
@@ -228,17 +196,9 @@ http://www.cnblogs.com/xxey/p/4277181.html
 
 Beam Search（集束搜索/束搜索）
 
-http://www.jianshu.com/p/9dc9f41f0b29
-
-理解LSTM网络
-
 https://pjreddie.com/darknet/yolo/
 
 YOLO: Real-Time Object Detection。一个基于神经网络的实时对象检测软件。
-
-http://blog.csdn.net/u012328159/article/details/69898137
-
-几种常见的激活函数
 
 http://mp.weixin.qq.com/s/upblqKf0m_15o4L1fF0EEQ
 
@@ -352,9 +312,17 @@ https://mp.weixin.qq.com/s/L04yE6J8n-Z7Cl9yt6kphA
 
 约翰霍普金斯大学计算机科学系Jason Eisner教授总结了一系列的自然语言处理优秀教学资源
 
-http://www.jianshu.com/p/e2d2d7cbbe49
+https://mp.weixin.qq.com/s/KoRXcV-ujIT-5eO4RUkWYw
 
-50行代码实现GAN
+基于TensorFlow和OpenCV实现文档检测功能！
+
+https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/content/
+
+某人写的AI心得
+
+https://mp.weixin.qq.com/s/ywCnn1jXAU95RCY8PIusig
+
+十个机器学习误区 By 李飞飞
 
 ## 论文
 
@@ -439,4 +407,8 @@ http://mp.weixin.qq.com/s/dtg-alezht56mu_vOA4Lrg
 http://mp.weixin.qq.com/s/qW_RZ--df6MjaKNgNdjeWA
 
 10所世界顶级名校的25门在线免费机器学习课程！
+
+http://www.cs.cmu.edu/~tom/10701_sp11/lectures.shtml
+
+CMU的Machine Learning
 

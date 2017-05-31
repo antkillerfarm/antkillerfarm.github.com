@@ -211,6 +211,16 @@ Word Hashing是非常重要的一个trick，以英文单词来说，比如good�
 
 但是在中文场景下，这个Word Hashing估计没有这么有效了。
 
+## 词汇共现
+
+词汇共现是指词汇在文档集中共同出现。以一个词为中心，可以找到一组经常与之搭配出现的词，作为它的共现词汇集。
+
+词汇共现的其中一种用例：
+
+有若干关键词，比如：水果、天气、风，有若干描述词，比如，很甜、晴朗、很大，然后现在要找出他们之间的搭配，在这个例子里，我们最终要找到：水果很甜、天气晴朗、风很大
+
+http://sewm.pku.edu.cn/TianwangLiterature/SEWM/2005(5)/%5b%b3%c2%c1%88,%20et%20al.,2005%5d/050929.pdf
+
 ## 有用的资料
 
 https://github.com/ematvey/tensorflow-seq2seq-tutorials
@@ -358,4 +368,3 @@ https://wenku.baidu.com/view/e69a3619fe00bed5b9f3f90f76c66137ee064f15.html
 https://wenku.baidu.com/view/b3858227c5da50e2534d7f08.html
 
 知识图谱技术原理介绍
-
