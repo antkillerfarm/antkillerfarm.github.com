@@ -6,6 +6,22 @@ category: theory
 
 # 词向量（续）
 
+## Word Embedding
+
+针对One-hot Representation的不足，Bengio提出了Distributed Representation，也称为Word Embedding。
+
+![](/images/article/word_vector.png)
+
+Word Embedding的思路如上图所示，即想办法**将高维的One-hot词向量映射到低维的语义空间中**。
+
+Bengio自己提出了一种基于神经网络的Word Embedding的方案，然而由于计算量过大，目前已经被淘汰了。
+
+参考：
+
+http://www.cnblogs.com/neopenx/p/4570648.html
+
+词向量概况
+
 ## word2vec
 
 除了Bengio方案之外，早期人们还尝试过基于共生矩阵（Co-occurrence Matrix）SVD分解的Word Embedding方案。该方案对于少量语料有不错的效果，但一旦语料增大，计算量即呈指数级上升。
@@ -72,6 +88,18 @@ Hierarchical Softmax一般基于Huffman编码构建。在本例中，我们首�
 
 除了word2vec之外，类似的Word Embedding方案还有SENNA、RNN-LM、Glove等。但影响力仍以word2vec最大。
 
+## doc2vec
+
+doc2vec是Mikolov在word2vec的基础上提出的一种生成句子向量的方法。
+
+论文：
+
+《Distributed Representations of Sentences and Documents》
+
+http://cs.stanford.edu/~quocle/paragraph_vector.pdf
+
+![](/images/article/doc2vec.png)
+
 ## FastText
 
 Word2Vec作者Mikolov加盟Facebook之后，提出了文本分类新作FastText。
@@ -90,7 +118,7 @@ RNN是Recurrent Neural Network和Recursive Neural Network的简称。前者主�
 
 ![](/images/article/RNN.png)
 
-上图是
+上图是RNN的结构图。
 
 参考：
 
@@ -167,13 +195,4 @@ https://mp.weixin.qq.com/s/QacQCrjh3KmrQSMp-G_rEg
 https://github.com/hindupuravinash/the-gan-zoo
 
 GAN的各种变种。
-
-# Neural Network Zoo
-
-![](/images/article/Neural_Networks.png)
-
-上图的原地址为：
-
-http://www.asimovinstitute.org/neural-network-zoo/
-
 

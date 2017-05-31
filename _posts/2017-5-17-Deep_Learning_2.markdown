@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二）——深度学习常用术语解释, CNN, Autoencoder
+title:  深度学习（二）——深度学习常用术语解释, Neural Network Zoo, CNN, Autoencoder
 category: theory 
 ---
 
@@ -85,6 +85,16 @@ LeCun和Bengio的研究表明，在high-D(高维)的情况下，局部最小会�
 首先，神经网络对于学习样本数量的要求非常高，基本比浅层模型多2～3个数量级，因此过拟合的风险并不太大。
 
 其次，过拟合的危害也没有欠拟合那么高。欠拟合可能会导致同样的训练样本，在两次不同训练中，所生成的模型，对于同一测试样本集的大多数结论完全相反。而过拟合并没有这么夸张的效果。
+
+# Neural Network Zoo
+
+在继续后续讲解之前，我们首先给出常见神经网络的结构图：
+
+![](/images/article/Neural_Networks.png)
+
+上图的原地址为：
+
+http://www.asimovinstitute.org/neural-network-zoo/
 
 # CNN
 
@@ -202,6 +212,8 @@ Autoencoder的结构如上图所示。它的特殊之处在于：
 
 但是，不是所有的数据都能够降维，而这种情况通常会导致Autoencoder的训练失败。
 
+和Autoencoder类似的神经网络还有：Denoising Autoencoder（DAE）、Variational Autoencoder（VAE）、Sparse Autoencoder（SAE）。
+
 参考：
 
 http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/
@@ -231,20 +243,4 @@ One-hot Representation的缺点在于：
 1.该表示法中，由于任意两个单词的词向量都是正交的，因此无法反映单词之间的语义相似度。
 
 2.一个词库的大小是$$10^5$$以上的量级。维度过高，会妨碍神经网络学习到稀疏特征。
-
-## Word Embedding
-
-针对One-hot Representation的不足，Bengio提出了Distributed Representation，也称为。
-
-![](/images/article/word_vector.png)
-
-Word Embedding的思路如上图所示，即想办法**将高维的One-hot词向量映射到低维的语义空间中**。
-
-Bengio自己提出了一种基于神经网络的Word Embedding的方案，然而由于计算量过大，目前已经被淘汰了。
-
-参考：
-
-http://www.cnblogs.com/neopenx/p/4570648.html
-
-词向量概况
 

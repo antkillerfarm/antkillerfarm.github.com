@@ -291,46 +291,6 @@ http://blog.csdn.net/frankcheng5143/article/details/52292897
 
 这个网页提供了将IKAnalyzer集成到Solr 6的办法，经测试对Solr 6.3也是适用的。
 
-## NLPchina
-
-NLPchina(中国自然语言处理开源组织)旗下有许多好用的工具。
-
-官网：
-
-http://www.nlpcn.org/
-
-Github：
-
-https://github.com/NLPchina
-
-### Ansj
-
-Ansj是一个NLPchina旗下的开源的Java中文分词工具，基于中科院的ictclas中文分词算法，比其他常用的开源分词工具（如mmseg4j）的分词准确率更高。
-
-https://github.com/NLPchina/ansj_seg
-
-### Word2VEC_java
-
-word2vec java版本的一个实现。
-
-https://github.com/NLPchina/Word2VEC_java
-
-doc2vec java版本的一个实现，基于Word2VEC_java。
-
-https://github.com/yao8839836/doc2vec_java
-
-### ansj_fast_lda
-
-LDA算法的Java包。
-
-https://github.com/NLPchina/ansj_fast_lda
-
-### nlp-lang
-
-这个项目是一个基本包.封装了大多数nlp项目中常用工具
-
-https://github.com/NLPchina/nlp-lang
-
 ## Solrj
 
 https://wiki.apache.org/solr/Solrj

@@ -221,6 +221,46 @@ Word Hashing是非常重要的一个trick，以英文单词来说，比如good�
 
 http://sewm.pku.edu.cn/TianwangLiterature/SEWM/2005(5)/%5b%b3%c2%c1%88,%20et%20al.,2005%5d/050929.pdf
 
+## NLPchina
+
+NLPchina(中国自然语言处理开源组织)旗下有许多好用的工具。
+
+官网：
+
+http://www.nlpcn.org/
+
+Github：
+
+https://github.com/NLPchina
+
+### Ansj
+
+Ansj是一个NLPchina旗下的开源的Java中文分词工具，基于中科院的ictclas中文分词算法，比其他常用的开源分词工具（如mmseg4j）的分词准确率更高。
+
+https://github.com/NLPchina/ansj_seg
+
+### Word2VEC_java
+
+word2vec java版本的一个实现。
+
+https://github.com/NLPchina/Word2VEC_java
+
+doc2vec java版本的一个实现，基于Word2VEC_java。
+
+https://github.com/yao8839836/doc2vec_java
+
+### ansj_fast_lda
+
+LDA算法的Java包。
+
+https://github.com/NLPchina/ansj_fast_lda
+
+### nlp-lang
+
+这个项目是一个基本包.封装了大多数nlp项目中常用工具
+
+https://github.com/NLPchina/nlp-lang
+
 ## 有用的资料
 
 https://github.com/ematvey/tensorflow-seq2seq-tutorials
@@ -368,3 +408,4 @@ https://wenku.baidu.com/view/e69a3619fe00bed5b9f3f90f76c66137ee064f15.html
 https://wenku.baidu.com/view/b3858227c5da50e2534d7f08.html
 
 知识图谱技术原理介绍
+
