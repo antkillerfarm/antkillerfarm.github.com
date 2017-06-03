@@ -100,6 +100,12 @@ http://cs.stanford.edu/~quocle/paragraph_vector.pdf
 
 ![](/images/article/doc2vec.png)
 
+上图是doc2vec的框架图，可以看出
+
+https://www.zhihu.com/question/33952003
+
+如何通过词向量技术来计算2个文档的相似度?
+
 ## FastText
 
 Word2Vec作者Mikolov加盟Facebook之后，提出了文本分类新作FastText。
@@ -111,6 +117,18 @@ http://www.algorithmdog.com/fast-fasttext
 Github：
 
 https://github.com/facebookresearch/fastText
+
+## Item2Vec
+
+本质上，word2vec模型是在word-context的co-occurrence矩阵基础上建立起来的。因此，任何基于co-occurrence矩阵的算法模型，都可以套用word2vec算法的思路加以改进。
+
+比如，推荐系统领域的协同过滤算法。
+
+协同过滤算法是建立在一个user-item的co-occurrence矩阵的基础上，通过行向量或列向量的相似性进行推荐。如果我们将同一个user购买的item视为一个context，就可以建立一个item-context的矩阵。进一步的，可以在这个矩阵上借鉴CBoW模型或Skip-gram模型计算出item的向量表达，在更高阶上计算item间的相似度。
+
+论文：
+
+《Item2Vec: Neural Item Embedding for Collaborative Filtering》
 
 # RNN
 
@@ -173,6 +191,10 @@ https://zhuanlan.zhihu.com/p/22142013
 http://blog.csdn.net/u012328159/article/details/69898137
 
 几种常见的激活函数
+
+https://mp.weixin.qq.com/s/Hic01RxwWT_YwnErsJaipQ
+
+什么是激活函数？
 
 # GAN
 

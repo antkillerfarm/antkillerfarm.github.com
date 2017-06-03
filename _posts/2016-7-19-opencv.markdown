@@ -324,6 +324,10 @@ https://mp.weixin.qq.com/s/ywCnn1jXAU95RCY8PIusig
 
 十个机器学习误区 By 李飞飞
 
+https://mp.weixin.qq.com/s/TGuEvNXw_9S5-9a3KyDvvw
+
+基于图卷积网络的图深度学习
+
 ## 论文
 
 《Moving Gradients: A Path-Based Method for Plausible Image Interpolation》：视频帧插值算法

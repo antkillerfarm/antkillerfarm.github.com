@@ -37,6 +37,10 @@ Z_1 & = \sqrt{-2\ln U_1} sin(2\pi U_2)
 
 >Mervin Edgar Muller，俄亥俄州立大学教授。
 
+https://mp.weixin.qq.com/s?__biz=MzI1MTIzMzI2MA==&mid=2650561098&idx=1&sn=675375265279cce7fdb1ecd94fd7a549
+
+生成特定分布随机数的方法
+
 ## 统计力学与组合优化
 
 MCMC和Gibbs Sampling最早都是统计力学的概念，后来才被用于机器学习领域。现将统计力学与组合优化的对应关系罗列如下：

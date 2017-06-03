@@ -147,15 +147,7 @@ $$X_n\xrightarrow{a.s.}X>X_n\xrightarrow{P}X$$
 
 2.对于正态过程，严平稳过程和宽平稳过程是等价的。
 
-# 高斯背景
-
-# Reinforcement Learning and Control
-
-# Linear Discriminant Analysis
-
-# Partial Least Squares Discriminant Analysis
-
-ACBM算法：
+# ACBM算法
 
 ACBM算法是在AC（Aho-Corasick）自动机（UNIX上的fgrep命令使用的就是AC算法）的基础之上，引入了BM（Boyer-Moore）算法的多模扩展，实现的高效的多模匹配。和AC自动机不同的是，ACBM算法不需要扫描目标文本串中的每一个字符，可以利用本次匹配不成功的信息，跳过尽可能多的字符，实现高效匹配。
 
@@ -215,4 +207,18 @@ http://www.gaussianprocess.org/gpml/chapters/RW.pdf
 http://people.cs.umass.edu/~wallach/talks/gp_intro.pdf
 
 http://wenku.baidu.com/view/72f80113915f804d2b16c173.html
+
+# 垃圾筐
+
+高斯背景
+
+Reinforcement Learning and Control
+
+Linear Discriminant Analysis
+
+Partial Least Squares Discriminant Analysis
+
+http://blog.codinglabs.org/articles/algorithms-for-cardinality-estimation-part-i.html
+
+解读Cardinality Estimation算法
 

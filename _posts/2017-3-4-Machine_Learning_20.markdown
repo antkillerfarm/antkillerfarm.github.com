@@ -166,3 +166,25 @@ Baum–Welch算法是求解问题3的常用算法。
 
 命名实体识别：给定一个词的序列，找出最可能的标签序列（内外符号：[内]表示词属于命名实体，[外]表示不属于）。如ICTCLAS实现的人名识别、翻译人名识别、地名识别都是用同一个Tagger实现的。
 
+# AutoML
+
+尽管现在已经有许多成熟的ML算法，然而大多数ML任务仍依赖于专业人员的手工编程实现。
+
+然而但凡做过若干同类项目的人都明白，在算法选择和参数调优的过程中，有大量的套路可以遵循。
+
+比如有人就总结出参加kaggle比赛的套路：
+
+http://www.jianshu.com/p/63ef4b87e197
+
+一个框架解决几乎所有机器学习问题
+
+https://mlwave.com/kaggle-ensembling-guide/
+
+Kaggle Ensembling Guide
+
+既然是套路，那么就有将之自动化的可能，比如下面网页中，就有好几个AutoML的框架：
+
+https://mp.weixin.qq.com/s/QIR_l8OqvCQzXXXVY2WA1w
+
+十大你不可忽视的机器学习项目
+
