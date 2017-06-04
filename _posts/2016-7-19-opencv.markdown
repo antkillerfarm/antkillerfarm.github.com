@@ -106,10 +106,6 @@ https://github.com/liuruoze/EasyPR
 
 一个开源的中文车牌识别系统。
 
-http://www.deeplearningbook.org/
-
-深度学习的书籍网站。
-
 http://blog.csdn.net/zddblog/article/details/7521424
 
 SIFT算法详解
@@ -121,6 +117,10 @@ Harris角点检测原理详解
 http://www.cnblogs.com/ello/archive/2012/04/28/2475419.html
 
 浅析人脸检测之Haar分类器方法
+
+https://mp.weixin.qq.com/s/N2z2c6X7IAsjMbZv9DSNpA
+
+有效遮挡检测的鲁棒人脸识别
 
 https://zhuanlan.zhihu.com/p/22604627
 

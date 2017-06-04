@@ -276,3 +276,15 @@ http://www.lfd.uci.edu/~gohlke/pythonlibs/
 
 Unofficial Windows Binaries for Python Extension Packages
 
+## 处理eml文件
+
+代码示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/misc/hello_eml.py
+
+这个示例主要使用email包来解析eml文件。
+
+同时为了处理其中的html的内容，还用到了Beautiful Soup包。其网址为：
+
+https://www.crummy.com/software/BeautifulSoup/
+

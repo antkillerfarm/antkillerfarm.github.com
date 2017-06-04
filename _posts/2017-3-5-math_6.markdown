@@ -222,3 +222,8 @@ http://blog.codinglabs.org/articles/algorithms-for-cardinality-estimation-part-i
 
 解读Cardinality Estimation算法
 
+http://blog.csdn.net/icvpr/article/details/12342159
+
+局部敏感哈希(Locality-Sensitive Hashing, LSH)方法介绍
+
+

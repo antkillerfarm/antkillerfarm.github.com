@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三）——词向量, 神经元激活函数进阶
+title:  深度学习（三）——词向量, RNN
 category: theory 
 ---
 
@@ -90,6 +90,10 @@ Hierarchical Softmax一般基于Huffman编码构建。在本例中，我们首�
 
 ## doc2vec
 
+我们知道，word是sentence的基本组成单位。一个最简单也是最直接得到sentence embedding的方法是将组成sentence的所有word的embedding向量全部加起来。
+
+显然，这种简单粗暴的方法会丢失很多信息。
+
 doc2vec是Mikolov在word2vec的基础上提出的一种生成句子向量的方法。
 
 论文：
@@ -100,7 +104,9 @@ http://cs.stanford.edu/~quocle/paragraph_vector.pdf
 
 ![](/images/article/doc2vec.png)
 
-上图是doc2vec的框架图，可以看出
+上图是doc2vec的框架图，可以看出doc2vec的原理与word2vec基本一致，区别仅在于前者多出来一个Paragraph Vector参与CBOW或Skip-gram的训练。
+
+Paragraph Vector可以和Word Vector一起生成，也可以单独生成，也就是训练时，采用预训练的Word Vector，并只改变Paragraph Vector的值。
 
 https://www.zhihu.com/question/33952003
 
@@ -130,13 +136,39 @@ https://github.com/facebookresearch/fastText
 
 《Item2Vec: Neural Item Embedding for Collaborative Filtering》
 
+## word2vec/doc2vec的缺点
+
+1.word2vec/doc2vec基于BOW（Bag Of Word，词袋）模型。该模型的特点是忽略词序，因此对于那些交换词序会改变含义的句子，无法准确评估它们的区别。
+
+2.虽然我们一般使用word2vec/doc2vec来比较文本相似度，但是从原理来说，word2vec/doc2vec提供的是关联性（relatedness），而不是相似性（similarity）。这会带来以下问题：不但近义词的词向量相似，反义词的词向量也相似。因为它们和其他词的关系（也就是语境）是类似的。
+
+3.由于一个词只有一个向量来表示，因此，无法处理一词多义的情况。
+
+参考：
+
+https://www.zhihu.com/question/22266868
+
+Word2Vec如何解决多义词的问题？
+
+## 参考
+
+http://www.cnblogs.com/iloveai/p/word2vec.html
+
+word2vec前世今生
+
 # RNN
 
 RNN是Recurrent Neural Network和Recursive Neural Network的简称。前者主要用于处理和时序相关的输入，而后者目前已经没落。本文只讨论前者。
 
 ![](/images/article/RNN.png)
 
-上图是RNN的结构图。
+上图是RNN的结构图。其中，展开箭头左边是RNN的静态结构图。不同于之前的神经网络表示，这里的圆形不是单个神经元，而是一层神经元。权值也不是单个权权值，而是权值矩阵。
+
+从静态结构图可以看出RNN实际上和3层MLP的结构，是基本类似的。差别在于RNN的隐藏层多了一个指向自己的环状结构。
+
+《On the difficulty of training recurrent neural networks》
+
+http://proceedings.mlr.press/v28/pascanu13.pdf
 
 参考：
 
@@ -156,6 +188,10 @@ http://www.wildml.com/2015/10/recurrent-neural-networks-tutorial-part-3-backprop
 
 Backpropagation Through Time算法
 
+http://chuansong.me/n/464503442191
+
+Tomas Mikolov详解RNN与机器智能的实现
+
 # LSTM
 
 http://www.jianshu.com/p/9dc9f41f0b29
@@ -173,48 +209,4 @@ https://zhuanlan.zhihu.com/p/25821063
 http://blog.csdn.net/a635661820/article/details/45390671
 
 LSTM简介以及数学推导(FULL BPTT)
-
-# 深度强化学习
-
-![](/images/article/reinforcement_learning.png)
-
-https://www.nervanasys.com/demystifying-deep-reinforcement-learning/
-
-深度强化学习揭秘
-
-# 神经元激活函数进阶
-
-https://zhuanlan.zhihu.com/p/22142013
-
-深度学习中的激活函数导引
-
-http://blog.csdn.net/u012328159/article/details/69898137
-
-几种常见的激活函数
-
-https://mp.weixin.qq.com/s/Hic01RxwWT_YwnErsJaipQ
-
-什么是激活函数？
-
-# GAN
-
-http://www.jianshu.com/p/e2d2d7cbbe49
-
-50行代码实现GAN
-
-http://mp.weixin.qq.com/s/bzwG0QxnP2drqS4RwcZlBg
-
-微软详解：到底什么是生成式对抗网络GAN？
-
-https://mp.weixin.qq.com/s/oCDlhzjOYTIhsr5JuoRCJQ
-
-IRGAN：大一统信息检索模型的博弈竞争
-
-https://mp.weixin.qq.com/s/QacQCrjh3KmrQSMp-G_rEg
-
-贝叶斯生成对抗网络
-
-https://github.com/hindupuravinash/the-gan-zoo
-
-GAN的各种变种。
 

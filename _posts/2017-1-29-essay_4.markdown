@@ -129,3 +129,48 @@ http://goeye-app.com/resources.html#cn
 2.在Fowler之前，这一派系主要和生理学、医学相关，而和数理化关系不大。这体现了第二次工业革命对教育界的影响。
 
 3.科技的中心经历了意大利->荷兰->奥地利->英国的改变，客观反映了各国在不同时期的历史发展状况。
+
+# 神经元激活函数进阶
+
+https://zhuanlan.zhihu.com/p/22142013
+
+深度学习中的激活函数导引
+
+http://blog.csdn.net/u012328159/article/details/69898137
+
+几种常见的激活函数
+
+https://mp.weixin.qq.com/s/Hic01RxwWT_YwnErsJaipQ
+
+什么是激活函数？
+
+# 深度强化学习
+
+![](/images/article/reinforcement_learning.png)
+
+https://www.nervanasys.com/demystifying-deep-reinforcement-learning/
+
+深度强化学习揭秘
+
+# GAN
+
+http://www.jianshu.com/p/e2d2d7cbbe49
+
+50行代码实现GAN
+
+http://mp.weixin.qq.com/s/bzwG0QxnP2drqS4RwcZlBg
+
+微软详解：到底什么是生成式对抗网络GAN？
+
+https://mp.weixin.qq.com/s/oCDlhzjOYTIhsr5JuoRCJQ
+
+IRGAN：大一统信息检索模型的博弈竞争
+
+https://mp.weixin.qq.com/s/QacQCrjh3KmrQSMp-G_rEg
+
+贝叶斯生成对抗网络
+
+https://github.com/hindupuravinash/the-gan-zoo
+
+GAN的各种变种。
+

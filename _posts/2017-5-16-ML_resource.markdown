@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ML参考资源, DL参考资源, Machine Learning之Java篇, PMML, Machine Learning之Python篇
+title:  ML参考资源, DL参考资源, PMML, Machine Learning之Python篇
 category: technology 
 ---
 
@@ -142,6 +142,10 @@ http://bindog.github.io/blog/2015/08/20/microsoft-malware-classification
 
 利用机器学习进行恶意代码分类
 
+https://mp.weixin.qq.com/s/3fsV-9pYlLk6wvFa0mJ8pg
+
+如何解释机器学习模型和结果？
+
 # DL参考资源
 
 https://zhuanlan.zhihu.com/p/22888385
@@ -228,81 +232,17 @@ http://mp.weixin.qq.com/s/lLPRwInF5qaw7ewYHOpPyw
 
 深度强化学习资料
 
-# Machine Learning之Java篇
+https://mp.weixin.qq.com/s/ZlCI02UdRuFBc-uKqIPE_w
 
-http://machinelearningmastery.com/java-machine-learning/
+深度学习多任务学习综述
 
-这篇文章包含了很多Machine Learning方面的软件和库。
+https://mp.weixin.qq.com/s/pbyByPoZ9SVoP9B7pJMxXg
 
-## ND4J
+深度卷积网络迁移学习的脸部表情识别
 
-numpy的等价物。
+https://mp.weixin.qq.com/s/8wuG95Ha-vO0fxes_oBLZg
 
-http://nd4j.org/
-
-## DL4J
-
-TensorFlow的等价物。
-
-https://deeplearning4j.org/
-
-## Joinery
-
-Pandas的等价物。
-
-https://github.com/cardillo/joinery
-
-## Weka
-
-Weka是一款开源的机器学习以及数据挖掘软件。主要开发者来自新西兰的the University of Waikato。
-
-官网：
-
-http://www.cs.waikato.ac.nz/ml/weka/
-
-Weka不仅有GUI，而且也为开发提供了API，是单机Machine Learning的Java首选。国内的京东用的比较多。
-
-GitHub：
-
-https://github.com/bnjmn/weka
-
-API Doc：
-
-http://weka.sourceforge.net/doc.stable-3-8/
-
-Weka除了基本库之外，还有许多扩展包：
-
-http://weka.sourceforge.net/packageMetaData/
-
-参考：
-
-https://weka.wikispaces.com/Use+Weka+in+your+Java+code
-
-如何在Java代码中使用Weka
-
-## ELKI
-
-ELKI是另一个数据挖掘软件，也有GUI和API。ELKI主要专注于聚类和异常检测算法。
-
-官网：
-
-https://elki-project.github.io/algorithms/
-
-GitHub：
-
-https://github.com/elki-project/elki
-
-## java-string-similarity
-
-这个库虽然功能有限，但却针对字符处理进行了优化。比如Jaccard距离，weka没有实现，ELKI提供的是通用的集合类实现，用起来没有java-string-similarity方便。
-
-官网：
-
-https://github.com/tdebatty/java-string-similarity
-
-## LDA4j
-
-https://github.com/hankcs/LDA4j
+Variational AutoEncoders
 
 # PMML
 

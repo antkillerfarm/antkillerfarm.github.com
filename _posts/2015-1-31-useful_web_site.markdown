@@ -139,6 +139,10 @@ http://www.sobot.com/production/dataStatistics.html
 
 智齿科技，一家智能客服领域的公司
 
+http://www.jiqizhixin.com/
+
+机器之心，一家AI方面的传媒
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/
