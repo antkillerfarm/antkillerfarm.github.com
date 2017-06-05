@@ -93,3 +93,33 @@ category: theory
 | NER | Named Entity Recognition | 命名实体识别 |  |
 | NER | Named Entity Recognition | 命名实体识别 |  |
 
+# CRF
+
+条件随机场(Conditional Random Field)由Lafferty等人于2001年提出，结合了最大熵模型和隐马尔可夫模型的特点，是一种无向图模型，近年来在分词、词性标注和命名实体识别等序列标注任务中取得了很好的效果。
+
+# 异常点检测
+
+http://chuansong.me/n/377440751130
+
+http://jiangshuxia.9.blog.163.com/blog/static/3487586020083662621887/
+
+http://www.cnblogs.com/fengfenggirl/p/iForest.html
+
+# 自适应滤波器
+
+《自适应滤波器原理》，Simon Haykin著。
+
+>注：Simon Haykin，英国伯明翰大学博士，加拿大麦克马斯特大学教授。加拿大皇家学会会员。自适应信号处理领域的权威。
+
+## 基本估计
+
+三种基本的信息处理运算：
+
+**滤波（Filter）**：利用$$[0,t]$$的数据，来估计t时刻信息的运算过程。
+
+**平滑（Smoothing）**：利用$$[0,t]$$的数据，来估计$$t'(t'<t)$$时刻信息的运算过程。
+
+**预测（Prediction）**：利用$$[0,t]$$的数据，来估计$$t+\tau(\tau>0)$$时刻信息的运算过程。
+
+可见，滤波和预测是实时运算，而平滑是非实时运算。
+

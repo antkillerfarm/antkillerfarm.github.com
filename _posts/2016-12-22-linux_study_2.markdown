@@ -210,9 +210,9 @@ http://blog.csdn.net/wangkr111/article/details/44514097
 
 肤色检测&人脸检测数据集等链接大集合
 
-http://blog.sciencenet.cn/blog-1239700-853296.html
+https://mp.weixin.qq.com/s/tewjGzfAVCKcG1dlURxyeg
 
-视觉研究的前世今生
+MIT发布的10大自然语言处理数据集和语料库
 
 # Python
 

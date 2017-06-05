@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（十七）——决策树, 推荐系统进阶
+title:  机器学习（十七）——推荐系统进阶, 决策树
 category: theory 
 ---
 
@@ -64,6 +64,36 @@ LDA模型的目标有两个：
 
 这一步实际上是一个**分类**的过程。可见，LDA不仅可用于聚类，也可用于分类，是一种无监督的学习算法。
 
+## 如何确定LDA的topic个数
+
+这个问题上，业界最常用的指标包括Perplexity，MPI-score等。简单的说就是Perplexity越小，且topic个数越少越好。
+
+从模型的角度解决主题个数的话，可以在LDA的基础上融入嵌套中餐馆过程(nested Chinese Restaurant Process)，印度自助餐厅过程(Indian Buffet Process)等。因此就诞生了这样一些主题模型：
+
+1. hierarchical Latent Dirichlet Allocation (hLDA)  (2003_NIPS_Hierarchical topic models and the nested Chinese restaurant process)
+
+2. hierarchical Dirichlet process (HDP)  (2006_NIPS_Hierarchical dirichlet processes)
+
+3. Indian Buffet Process Compound Dirichlet Process (ICD)  (2010_ICML_The IBP compound Dirichlet process and its application to focused topic modeling)
+
+4. Non-parametric Topic Over Time (npTOT)  (2013_SDM_A nonparametric mixture model for topic modeling over time)
+
+5. collapsed Gibbs Samplingalgorithm for the Dirichlet Multinomial Mixture Model (GSDMM)  (2014_SIGKDD_A Dirichlet Multinomial Mixture Model-based Approach for Short Text Clustering)
+
+这些主题模型都被叫做非参数主题模型(Non-parametric Topic Model)，最初可追溯到David M. Blei于2003年提出hLDA那篇文章(2003_NIPS_Hierarchical topic models and the nested Chinese restaurant process)。非参数主题模型是基于贝叶斯概率的与参数无关的主题模型。这里的参数无关主要是指模型本身可以“**随着观测数据的增长而相应调整**”，即主题模型的主题个数能够随着文档数目的变化而相应调整，无需事先人为指定。
+
+参考：
+
+https://www.zhihu.com/question/32286630
+
+怎么确定LDA的topic个数？
+
+## LDA漫游指南
+
+除了rickjin的《LDA数学八卦》之外，马晨写的《LDA漫游指南》也是这方面的中文新作。
+
+该书的数学推导部分主要沿用rickjin的内容，但加入了Blei提出的变分贝叶斯方法。此外，还对LDA的代码实现、并行计算和大数据处理进行了深入的讨论。
+
 ## 参考
 
 http://www.arbylon.net/publications/text-est.pdf
@@ -88,7 +118,41 @@ http://max.book118.com/html/2015/0513/16864294.shtm
 
 http://www.doc88.com/p-9159009103987.html
 
-基于 LDA 的博客分类算法
+基于LDA的博客分类算法
+
+http://blog.csdn.net/sinat_26917383/article/details/52095013
+
+基于LDA的Topic Model变形+一些NLP开源项目
+
+# 推荐系统进阶
+
+除了《机器学习（十三～十五）》提及的ALS和PCA之外，相关的算法还包括：
+
+# FM：Factorization Machines
+
+Factorization Machines是Steffen Rendle于2010年提出的算法。
+
+>注：Steffen Rendle，弗赖堡大学博士，现为Google研究员。libFM的作者，被誉为推荐系统的新星。
+
+FM算法实际上是一大类与矩阵分解有关的算法的广义模型。
+
+参考文献1是Rendle本人的论文，其中有章节证明了SVD++、PITF、FPMC等算法，都是FM算法的特例。《机器学习（十四）》中提到的ALS算法，也是FM的特例。
+
+参考文献2是国人写的中文说明，相对浅显一些。
+
+参考：
+
+1.https://www.ismll.uni-hildesheim.de/pub/pdfs/Rendle2010FM.pdf
+
+2.http://blog.csdn.net/itplus/article/details/40534885
+
+# PITF
+
+配对互动张量分解（Pairwise Interaction Tensor Factorization）算法，也是最早由Rendle引入推荐系统领域的。
+
+论文：
+
+http://www.wsdm-conference.org/2010/proceedings/docs/p81.pdf
 
 # 决策树
 
@@ -128,7 +192,7 @@ $$Gini\_index(D,a)=\sum_{v=1}^V\frac{|D^v|}{|D|}Gini(D^v)$$
 
 决策树是一种可以将训练误差变为0的算法，只要每个样本对应一个叶子结点即可，然而这样做会导致过拟合。为了限制树的生长，我们可以加入阈值，当增益大于阈值时才让节点分裂。
 
-# GBDT
+## GBDT
 
 GBDT这个算法有很多名字，但都是同一个算法：
 
@@ -174,7 +238,13 @@ http://blog.csdn.net/u010691898/article/details/38292937
 
 http://www.cs.cmu.edu/~tom/
 
-# XGBoost
+## Bagging和随机森林
+
+Bagging主要是通过随机选择样本集，来改变各并行计算决策树的结果，从而达到并行计算的效果。这相当于通过加入样本的扰动，来提供泛化能力。
+
+随机森林除了样本扰动之外，还通过随机选择属性集，并从中选择一个最优属性划分的方式，进一步提升了模型的泛化能力。
+
+## XGBoost
 
 XGBoost是陈天奇于2014年提出的一套并行boost算法的工具库。
 
@@ -184,81 +254,4 @@ XGBoost是陈天奇于2014年提出的一套并行boost算法的工具库。
 原始论文：
 
 https://arxiv.org/pdf/1603.02754v3.pdf
-
-参考文献中的部分结论非常精彩，摘录如下。
-
-从算法实现的角度，把握一个机器学习算法的关键点有两个，一个是loss function的理解(包括对特征X/标签Y配对的建模，以及基于X/Y配对建模的loss function的设计，前者应用于inference，后者应用于training，而前者又是后者的组成部分)，另一个是对求解过程的把握。这两个点串接在一起构成了算法实现的主框架。
-
-GBDT的求解算法，具体到每颗树来说，其实就是不断地寻找分割点(split point)，将样本集进行分割，初始情况下，所有样本都处于一个结点（即根结点），随着树的分裂过程的展开，样本会分配到分裂开的子结点上。分割点的选择通过枚举训练样本集上的特征值来完成，分割点的选择依据则是减少Loss。
-
-XGBoost的步骤：
-
-I. 对loss function进行二阶Taylor Expansion，展开以后的形式里，当前待学习的Tree是变量，需要进行优化求解。
-
-II. Tree的优化过程，包括两个环节：
-
-I). 枚举每个叶结点上的特征潜在的分裂点
-
-II). 对每个潜在的分裂点，计算如果以这个分裂点对叶结点进行分割以后，分割前和分割后的loss function的变化情况。
-
-因为Loss Function满足累积性(对MLE取log的好处)，并且每个叶结点对应的weight的求取是独立于其他叶结点的（只跟落在这个叶结点上的样本有关），所以，不同叶结点上的loss function满足单调累加性，只要保证每个叶结点上的样本累积loss function最小化，整体样本集的loss function也就最小化了。
-
-**可见，XGBoost算法之所以能够并行，其要害在于其中枚举分裂点的计算，是能够分布式并行计算的。**
-
-官网：
-
-https://xgboost.readthedocs.io/en/latest/
-
-GitHub：
-
-https://github.com/dmlc/xgboost
-
-编译：
-
-{% highlight java %}
-git clone --recursive https://github.com/dmlc/xgboost
-cd xgboost; make -j4
-{% endhighlight %}
-
-参考：
-
-https://www.zhihu.com/question/41354392
-
-http://blog.csdn.net/sb19931201/article/details/52577592
-
-# Bagging和随机森林
-
-Bagging主要是通过随机选择样本集，来改变各并行计算决策树的结果，从而达到并行计算的效果。这相当于通过加入样本的扰动，来提供泛化能力。
-
-随机森林除了样本扰动之外，还通过随机选择属性集，并从中选择一个最优属性划分的方式，进一步提升了模型的泛化能力。
-
-# 推荐系统进阶
-
-除了《机器学习（十三～十五）》提及的ALS和PCA之外，相关的算法还包括：
-
-# FM：Factorization Machines
-
-Factorization Machines是Steffen Rendle于2010年提出的算法。
-
->注：Steffen Rendle，弗赖堡大学博士，现为Google研究员。libFM的作者，被誉为推荐系统的新星。
-
-FM算法实际上是一大类与矩阵分解有关的算法的广义模型。
-
-参考文献1是Rendle本人的论文，其中有章节证明了SVD++、PITF、FPMC等算法，都是FM算法的特例。《机器学习（十四）》中提到的ALS算法，也是FM的特例。
-
-参考文献2是国人写的中文说明，相对浅显一些。
-
-参考：
-
-1.https://www.ismll.uni-hildesheim.de/pub/pdfs/Rendle2010FM.pdf
-
-2.http://blog.csdn.net/itplus/article/details/40534885
-
-# PITF
-
-配对互动张量分解（Pairwise Interaction Tensor Factorization）算法，也是最早由Rendle引入推荐系统领域的。
-
-论文：
-
-http://www.wsdm-conference.org/2010/proceedings/docs/p81.pdf
 

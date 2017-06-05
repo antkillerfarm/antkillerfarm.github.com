@@ -144,6 +144,8 @@ https://github.com/facebookresearch/fastText
 
 3.由于一个词只有一个向量来表示，因此，无法处理一词多义的情况。
 
+然而关联性并非都是坏事，有的时候也会起到意想不到的效果。比如在客服对话的案例中，客户可能会提供自己的收货地址，显然每个客户的地址都是不同的，但是有意思的是，这些地址的词向量是非常相似的。
+
 参考：
 
 https://www.zhihu.com/question/22266868
@@ -162,9 +164,11 @@ RNN是Recurrent Neural Network和Recursive Neural Network的简称。前者主�
 
 ![](/images/article/RNN.png)
 
-上图是RNN的结构图。其中，展开箭头左边是RNN的静态结构图。不同于之前的神经网络表示，这里的圆形不是单个神经元，而是一层神经元。权值也不是单个权权值，而是权值矩阵。
+上图是RNN的结构图。其中，展开箭头左边是RNN的静态结构图。不同于之前的神经网络表示，这里的圆形不是单个神经元，而是一层神经元。权值也不是单个权值，而是权值向量。
 
 从静态结构图可以看出RNN实际上和3层MLP的结构，是基本类似的。差别在于RNN的隐藏层多了一个指向自己的环状结构。
+
+上图的展开箭头右边是RNN的时序展开结构图。
 
 《On the difficulty of training recurrent neural networks》
 
@@ -188,7 +192,7 @@ http://www.wildml.com/2015/10/recurrent-neural-networks-tutorial-part-3-backprop
 
 Backpropagation Through Time算法
 
-http://chuansong.me/n/464503442191
+https://baijia.baidu.com/s?old_id=560025
 
 Tomas Mikolov详解RNN与机器智能的实现
 

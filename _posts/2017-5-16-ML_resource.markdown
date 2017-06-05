@@ -146,6 +146,10 @@ https://mp.weixin.qq.com/s/3fsV-9pYlLk6wvFa0mJ8pg
 
 如何解释机器学习模型和结果？
 
+https://mp.weixin.qq.com/s/e0jXXCIhbaZz7xaCZl-YmA
+
+如何处理不均衡数据？
+
 # DL参考资源
 
 https://zhuanlan.zhihu.com/p/22888385

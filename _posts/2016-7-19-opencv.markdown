@@ -122,6 +122,10 @@ https://mp.weixin.qq.com/s/N2z2c6X7IAsjMbZv9DSNpA
 
 有效遮挡检测的鲁棒人脸识别
 
+http://blog.sciencenet.cn/blog-1239700-853296.html
+
+视觉研究的前世今生
+
 https://zhuanlan.zhihu.com/p/22604627
 
 AI玩FPS游戏
@@ -327,6 +331,14 @@ https://mp.weixin.qq.com/s/ywCnn1jXAU95RCY8PIusig
 https://mp.weixin.qq.com/s/TGuEvNXw_9S5-9a3KyDvvw
 
 基于图卷积网络的图深度学习
+
+https://mp.weixin.qq.com/s/JAVzy8gy7k4EesBBHvEZLg
+
+亚马逊用机器学习自动调优数据库管理系统
+
+https://mp.weixin.qq.com/s/Cvk_cePK9iQd8JIKKDDrmQ
+
+强化学习的核心基础概念及实现
 
 ## 论文
 

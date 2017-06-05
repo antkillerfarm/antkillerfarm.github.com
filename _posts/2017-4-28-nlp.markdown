@@ -387,6 +387,10 @@ https://mp.weixin.qq.com/s/vGUizRVnosd7cgxha-pimw
 
 200行Python代码实现感知机词性标注器
 
+http://www.jiqizhixin.com/article/2727
+
+ACL 2017中国研究论文解读：读懂中国自然语言处理前沿进展
+
 ## 论文
 
 《Distant Supervision for relation extraction without labeled data》
