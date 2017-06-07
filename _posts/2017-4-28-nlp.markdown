@@ -24,7 +24,7 @@ CMU的NLP教程。该网页下方还有美国其他高校的NLP课程的链接�
 
 http://ccl.pku.edu.cn/alcourse/nlp/
 
-北京大学的NLP教程，特色：中文处理。
+北京大学的NLP教程，特色：中文处理。缺点：传统方法居多，深度学习未涉及。
 
 http://www.cs.columbia.edu/~cs4705/
 
@@ -221,6 +221,16 @@ Word Hashing是非常重要的一个trick，以英文单词来说，比如good�
 
 http://sewm.pku.edu.cn/TianwangLiterature/SEWM/2005(5)/%5b%b3%c2%c1%88,%20et%20al.,2005%5d/050929.pdf
 
+## 关键词提取
+
+主要三种方法：
+
+1.基于统计特征，如TF-IDF。
+
+2.基于词图模型，如TextRank。
+
+3.基于主题模型，如LDA。
+
 ## NLPchina
 
 NLPchina(中国自然语言处理开源组织)旗下有许多好用的工具。
@@ -390,6 +400,22 @@ https://mp.weixin.qq.com/s/vGUizRVnosd7cgxha-pimw
 http://www.jiqizhixin.com/article/2727
 
 ACL 2017中国研究论文解读：读懂中国自然语言处理前沿进展
+
+https://mp.weixin.qq.com/s/ssWi6XIebW8M6_JePG7RZg
+
+微软的NLP帝国
+
+http://blog.csdn.net/lcj369387335/article/details/69845385
+
+自动文档摘要评价方法---Edmundson和ROUGE
+
+https://github.com/lianwj/cnn-text-classification-tf
+
+Convolutional Neural Network for Text Classification in Tensorflow
+
+http://blog.csdn.net/skytree/article/details/43672627
+
+2013年7月做的一个自动应答机器人的架构
 
 ## 论文
 

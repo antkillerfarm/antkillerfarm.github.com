@@ -340,6 +340,14 @@ https://mp.weixin.qq.com/s/Cvk_cePK9iQd8JIKKDDrmQ
 
 强化学习的核心基础概念及实现
 
+https://mp.weixin.qq.com/s/1A6p672z4Yz__MF6TWORSw
+
+备战医疗大赛必看！
+
+https://mp.weixin.qq.com/s/LQFuXgI7uZK2UKRfZvlVbA
+
+Variational AutoEncoder
+
 ## 论文
 
 《Moving Gradients: A Path-Based Method for Plausible Image Interpolation》：视频帧插值算法

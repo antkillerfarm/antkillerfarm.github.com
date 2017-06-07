@@ -198,6 +198,10 @@ Tomas Mikolov详解RNN与机器智能的实现
 
 # LSTM
 
+![](/images/article/LSTM.png)
+
+
+
 http://www.jianshu.com/p/9dc9f41f0b29
 
 理解LSTM网络
@@ -213,4 +217,6 @@ https://zhuanlan.zhihu.com/p/25821063
 http://blog.csdn.net/a635661820/article/details/45390671
 
 LSTM简介以及数学推导(FULL BPTT)
+
+
 
