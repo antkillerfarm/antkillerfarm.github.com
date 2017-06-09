@@ -150,6 +150,10 @@ https://mp.weixin.qq.com/s/e0jXXCIhbaZz7xaCZl-YmA
 
 如何处理不均衡数据？
 
+http://www.jianshu.com/p/1aa67a321e33
+
+SVM和Logistic Regression分别在什么时候使用？
+
 # DL参考资源
 
 https://zhuanlan.zhihu.com/p/22888385

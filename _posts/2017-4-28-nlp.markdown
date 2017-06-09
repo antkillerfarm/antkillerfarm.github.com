@@ -417,6 +417,10 @@ http://blog.csdn.net/skytree/article/details/43672627
 
 2013年7月做的一个自动应答机器人的架构
 
+https://mp.weixin.qq.com/s/mq0PdX6oB2kr_5FyoLA4ug
+
+机器人数学考了134分，要上清华北大NLP是最大难关
+
 ## 论文
 
 《Distant Supervision for relation extraction without labeled data》
