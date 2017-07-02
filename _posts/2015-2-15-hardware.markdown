@@ -163,4 +163,10 @@ NandFLASH强调更高的性能，更低的成本，更小的体积，更长的�
 
 http://www.ebaina.com/bbs/forum-97-3.html
 
+# English
+
+state of the art： 目前最高水平
+
+w.r.t.： 关于
+
 

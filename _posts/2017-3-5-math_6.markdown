@@ -161,30 +161,6 @@ http://blog.csdn.net/sealyao/article/details/6817944
 
 >J Strother Moore，德克萨斯大学教授。Boyer的好朋友，两人的绝大多数成就都是合作完成的。
 
-HNM：Hard Negative Mining
-
-# 时间序列分析
-
-## 书籍和教程
-
-http://www.stat.berkeley.edu/~bartlett/courses/153-fall2010/
-
-berkeley的时间序列分析课程
-
-《应用时间序列分析》，王燕著。
-
-## ARIMA
-
-ARIMA模型全称为差分自回归移动平均模型(Autoregressive Integrated Moving Average Model,简记ARIMA)，也叫求和自回归移动平均模型，是由George Edward Pelham Box和Gwilym Meirion Jenkins于70年代初提出的一著名时间序列预测方法，所以又称为box-jenkins模型、博克思-詹金斯法。
-
->注：Gwilym Meirion Jenkins，1932～1982，英国统计学家。伦敦大学学院博士，兰卡斯特大学教授。
-
-教程：
-
-http://people.duke.edu/%7Ernau/411home.htm
-
-回归和时间序列分析
-
 # 高斯过程回归
 
 从大的分类来说，机器学习的算法可分为两类：
@@ -218,6 +194,8 @@ Linear Discriminant Analysis
 
 Partial Least Squares Discriminant Analysis
 
+HNM：Hard Negative Mining
+
 http://blog.codinglabs.org/articles/algorithms-for-cardinality-estimation-part-i.html
 
 解读Cardinality Estimation算法
@@ -229,4 +207,12 @@ http://blog.csdn.net/icvpr/article/details/12342159
 http://www.cnblogs.com/wentingtu/archive/2012/03/13/2393993.html
 
 Learning to Rank入门小结
+
+FPN (Feature Pyramid Network)
+
+从DPM，RCNN，fast-RCNN到faster-RCNN，现在又来个mask-RCNN
+
+http://www.cnblogs.com/pinard/p/6221564.html
+
+谱聚类（spectral clustering）原理总结
 

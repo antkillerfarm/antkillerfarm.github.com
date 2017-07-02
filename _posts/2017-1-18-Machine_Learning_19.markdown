@@ -232,11 +232,11 @@ http://www.docin.com/p-630952720.html
 
 # loss function详解
 
-**Mean Squared Error(MSE)/Mean Squared Deviation(MSD)**
+## Mean Squared Error(MSE)/Mean Squared Deviation(MSD)
 
 $$\operatorname{MSE}=\frac{1}{n}\sum_{i=1}^n(\hat{Y_i} - Y_i)^2$$
 
-**Symmetric Mean Absolute Percentage Error(SMAPE or sMAPE)**
+## Symmetric Mean Absolute Percentage Error(SMAPE or sMAPE)
 
 MSE定义的误差，实际上是向量空间中的欧氏距离，这也可称为绝对误差。而有些情况下，可能相对误差（即百分比误差）更有意义些：
 
@@ -246,13 +246,13 @@ $$\text{SMAPE} = \frac 1 n \sum_{t=1}^n \frac{\left|F_t-A_t\right|}{(A_t+F_t)/2}
 
 $$\text{SMAPE} = \frac{100\%}{n} \sum_{t=1}^n \frac{|F_t-A_t|}{|A_t|+|F_t|}$$
 
-**Mean Absolute Error(MAE)**
+## Mean Absolute Error(MAE)
 
 $$\mathrm{MAE} = \frac{1}{n}\sum_{i=1}^n \left| f_i-y_i\right| =\frac{1}{n}\sum_{i=1}^n \left| e_i \right|$$
 
 这个可以看作是MSE的1范数版本。
 
-**Mean Percentage Error(MPE)**
+## Mean Percentage Error(MPE)
 
 $$\text{MPE} = \frac{100\%}{n}\sum_{t=1}^n \frac{a_t-f_t}{a_t}$$
 

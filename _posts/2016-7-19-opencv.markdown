@@ -50,21 +50,9 @@ http://blog.csdn.net/column/details/opencv-tutorial.html
 
 另一个国人写的OpenCV入门指南。
 
-http://blog.csdn.net/abcjennifer
+blog.csdn.net/jia20003/
 
-一个浙大妹子的blog，关注计算机视觉、机器学习。现在百度深度学习实验室。
-
-http://blog.csdn.net/xiaowei_cqu
-
-另一个妹子的blog，也是计算机视觉方面的。重庆大学本科+北大硕士，现在Google北京。
-
-http://blog.csdn.net/jinshengtao
-
-一个计算机视觉、机器学习的blog。
-
-http://blog.csdn.net/cuoqu/
-
-一个计算机视觉、机器学习的blog。
+一个OpenCV on Android的blog。
 
 http://blog.csdn.net/mmz_xiaokong/article/details/7916163
 
@@ -88,7 +76,7 @@ caffe的代码地址。
 
 http://deeplearning.net/software/theano/
 
-Theano的主页
+Theano的主页。
 
 https://github.com/Theano/Theano
 
@@ -129,10 +117,6 @@ http://blog.sciencenet.cn/blog-1239700-853296.html
 https://zhuanlan.zhihu.com/p/22604627
 
 AI玩FPS游戏
-
-https://colah.github.io/
-
-谷歌大牛Christopher Olah的blog。
 
 http://cs.stanford.edu/people/karpathy/convnetjs//demo/classify2d.html
 
@@ -180,29 +164,13 @@ https://www.zhihu.com/question/41233373
 
 如果你是面试官，你怎么去判断一个面试者的深度学习水平？
 
-http://www.cnblogs.com/neopenx
-
-合肥工业大学某博士生的blog，偏深度学习
-
 https://www.zhihu.com/question/20398418
 
 语音识别的技术原理是什么？
 
-http://www.cnblogs.com/Determined22/
-
-Determined22的blog
-
-http://blog.csdn.net/hjimce/article/category/3163421
-
-一个深度学习的blog
-
 http://www.cnblogs.com/xxey/p/4277181.html
 
 Beam Search（集束搜索/束搜索）
-
-https://pjreddie.com/darknet/yolo/
-
-YOLO: Real-Time Object Detection。一个基于神经网络的实时对象检测软件。
 
 http://mp.weixin.qq.com/s/upblqKf0m_15o4L1fF0EEQ
 
@@ -228,6 +196,10 @@ http://mp.weixin.qq.com/s/Aw2INWuwPlXmkPEY0CZf6g
 
 深度学习在推荐算法上的应用进展
 
+http://i.dataguru.cn/mportal.php?mod=view&aid=11463
+
+深度学习在推荐领域的应用
+
 https://zhuanlan.zhihu.com/p/25382177
 
 AI芯片怎么降功耗？
@@ -239,10 +211,6 @@ http://mp.weixin.qq.com/s/8omONLSUA3cyxAQZVzBjCg
 http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw
 
 周志华教授gcForest（多粒度级联森林）算法预测股指期货涨跌
-
-http://mp.weixin.qq.com/s/KQxGQdLa3XzKVIFYqlrV7g
-
-人脸检测与识别的趋势和分析
 
 http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks
 
@@ -272,17 +240,13 @@ https://mp.weixin.qq.com/s/JnGpVQDF95hHTirrZyJc_g
 
 一个降低深度学习时间，空间，经济成本的解决方案
 
-https://zhuanlan.zhihu.com/p/25335957
-
-人脸检测与深度学习
-
-http://www.leiphone.com/news/201608/MPXlWtGaJLPYL7NB.html
-
-人脸检测发展：从VJ到深度学习
-
 https://mp.weixin.qq.com/s/1X9xiZkmVPI-j-aipr-ocg
 
 AlphaGo Master最新架构和算法，谷歌云与TPU拆解
+
+https://mp.weixin.qq.com/s/8HIZRhb-KJOtPnQtQ3GQVg
+
+第一代芯片是CPU，第二代是GPU，第三代是什么？
 
 https://mp.weixin.qq.com/s/Jof-u8oUuLR4v7t3jjXEmA
 
@@ -348,6 +312,18 @@ https://mp.weixin.qq.com/s/LQFuXgI7uZK2UKRfZvlVbA
 
 Variational AutoEncoder
 
+https://mp.weixin.qq.com/s/0OlKixcT20wao4xkWa6M5A
+
+超越蒙特卡洛树搜索：北大提出深度交替网络和长期评估围棋模型
+
+https://mp.weixin.qq.com/s/U0K79ELLj4wsOR4sd5G4Vw
+
+Vicarious详解新型图式网络：赋予强化学习泛化能力
+
+https://mp.weixin.qq.com/s/gfuO7CwfFiNC-iqDquDKQQ
+
+五个案例，三大心得——带你进阶深度学习的实践应用之路
+
 ## 论文
 
 《Moving Gradients: A Path-Based Method for Plausible Image Interpolation》：视频帧插值算法
@@ -385,6 +361,10 @@ http://ufldl.stanford.edu/wiki/index.php/Main_Page
 https://zhuanlan.zhihu.com/p/22038289
 
 斯坦福CS231n课程（卷积神经网络，CNN）翻译。
+
+https://mp.weixin.qq.com/s/TL15EgRfbIFnaOo6-SimfQ
+
+斯坦福CS231n(李飞飞):卷积神经网络视觉识别课程讲义（完整版）
 
 https://www.coursera.org/learn/machine-learning
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NLP
+title:  NLP, NLP参考资源
 category: technology 
 ---
 
@@ -43,6 +43,10 @@ http://ccl.pku.edu.cn/alcourse/nlp/LectureNotes/Natural%20Language%20Processing%
 
 >Edward Loper，宾夕法尼亚大学博士。
 
+https://mp.weixin.qq.com/s/0HmsMytif3INqAX1Si5ukA
+
+推荐5本经典自然语言处理书籍
+
 ## 网站
 
 http://www.52nlp.cn/
@@ -68,6 +72,22 @@ NLP深度学习方面的代码库
 https://liweinlp.com/
 
 NLP专家李维的blog
+
+http://www.shuang0420.com/
+
+一个NLP方面的blog
+
+http://www.cnblogs.com/Determined22/
+
+一个DL+ML+NLP的blog
+
+http://www.cnblogs.com/robert-dlut/
+
+一个NLP方面的blog
+
+blog.csdn.net/hellonlp/
+
+一个NLP方面的blog
 
 ## 工具
 
@@ -197,40 +217,6 @@ http://jena.apache.org/
 
 jena是一个语义网络、知识图谱相关的软件。
 
-## 词性标注
-
-http://jacoxu.com/ictpos3-0%E6%B1%89%E8%AF%AD%E8%AF%8D%E6%80%A7%E6%A0%87%E8%AE%B0%E9%9B%86/
-
-ICTPOS3.0汉语词性标记集
-
-## Word Hashing
-
-Word Hashing是非常重要的一个trick，以英文单词来说，比如good，他可以写成`#good#`，然后按tri-grams来进行分解为`#go goo ood od#`，再将这个tri-grams灌入到bag-of-word中，这种方式可以非常有效的解决vocabulary太大的问题(因为在真实的web search中vocabulary就是异常的大)，另外也不会出现oov问题，因此英文单词才26个，3个字母的组合都是有限的，很容易枚举光。
-
-那么问题就来了，这样两个不同的单词会不会产出相同的tri-grams，paper里面做了统计，说了这个冲突的概率非常的低，500K个word可以降到30k维，冲突的概率为0.0044%。
-
-但是在中文场景下，这个Word Hashing估计没有这么有效了。
-
-## 词汇共现
-
-词汇共现是指词汇在文档集中共同出现。以一个词为中心，可以找到一组经常与之搭配出现的词，作为它的共现词汇集。
-
-词汇共现的其中一种用例：
-
-有若干关键词，比如：水果、天气、风，有若干描述词，比如，很甜、晴朗、很大，然后现在要找出他们之间的搭配，在这个例子里，我们最终要找到：水果很甜、天气晴朗、风很大
-
-http://sewm.pku.edu.cn/TianwangLiterature/SEWM/2005(5)/%5b%b3%c2%c1%88,%20et%20al.,2005%5d/050929.pdf
-
-## 关键词提取
-
-主要三种方法：
-
-1.基于统计特征，如TF-IDF。
-
-2.基于词图模型，如TextRank。
-
-3.基于主题模型，如LDA。
-
 ## NLPchina
 
 NLPchina(中国自然语言处理开源组织)旗下有许多好用的工具。
@@ -271,39 +257,89 @@ https://github.com/NLPchina/ansj_fast_lda
 
 https://github.com/NLPchina/nlp-lang
 
-## 有用的资料
+## 词性标注
 
-https://github.com/ematvey/tensorflow-seq2seq-tutorials
+http://jacoxu.com/ictpos3-0%E6%B1%89%E8%AF%AD%E8%AF%8D%E6%80%A7%E6%A0%87%E8%AE%B0%E9%9B%86/
 
-一步步的seq2seq教程
+ICTPOS3.0汉语词性标记集
 
-https://zhuanlan.zhihu.com/p/25928551
+## Word Hashing
 
-用深度学习（CNN RNN Attention）解决大规模文本分类问题-综述和实践
+Word Hashing是非常重要的一个trick，以英文单词来说，比如good，他可以写成`#good#`，然后按tri-grams来进行分解为`#go goo ood od#`，再将这个tri-grams灌入到bag-of-word中，这种方式可以非常有效的解决vocabulary太大的问题(因为在真实的web search中vocabulary就是异常的大)，另外也不会出现oov问题，因此英文单词才26个，3个字母的组合都是有限的，很容易枚举光。
+
+那么问题就来了，这样两个不同的单词会不会产出相同的tri-grams，paper里面做了统计，说了这个冲突的概率非常的低，500K个word可以降到30k维，冲突的概率为0.0044%。
+
+但是在中文场景下，这个Word Hashing估计没有这么有效了。
+
+## 词汇共现
+
+词汇共现是指词汇在文档集中共同出现。以一个词为中心，可以找到一组经常与之搭配出现的词，作为它的共现词汇集。
+
+词汇共现的其中一种用例：
+
+有若干关键词，比如：水果、天气、风，有若干描述词，比如，很甜、晴朗、很大，然后现在要找出他们之间的搭配，在这个例子里，我们最终要找到：水果很甜、天气晴朗、风很大
+
+http://sewm.pku.edu.cn/TianwangLiterature/SEWM/2005(5)/%5b%b3%c2%c1%88,%20et%20al.,2005%5d/050929.pdf
+
+## 关键词提取
+
+主要三种方法：
+
+1.基于统计特征，如TF-IDF。
+
+2.基于词图模型，如TextRank。
+
+3.基于主题模型，如LDA。
+
+## 自然语言理解
+
+Natural language understanding(NLU)属于NLP的一个分支，属于人工智能的一个部分，用来解决机器理解人类语言的问题，属于人工智能的核心难题。
+
+![](/images/article/domain_slot.png)
+
+上图是语义理解中，最有实用价值的框架语义表示（frame semantics representation）的原理简图。
+
+参考：
+
+http://www.shuang0420.com/2017/04/27/NLP%E7%AC%94%E8%AE%B0%20-%20NLU%E4%B9%8B%E6%84%8F%E5%9B%BE%E5%88%86%E7%B1%BB/
+
+NLU之意图分类
+
+## 知识图谱
+
+https://wenku.baidu.com/view/38ad3ef7e109581b6bd97f19227916888586b959.html
+
+知识图谱构建技术综述
+
+https://wenku.baidu.com/view/e69a3619fe00bed5b9f3f90f76c66137ee064f15.html
+
+知识图谱技术综述
+
+https://wenku.baidu.com/view/b3858227c5da50e2534d7f08.html
+
+知识图谱技术原理介绍
+
+https://mp.weixin.qq.com/s/JLYegFP7kEg6n34crgP09g
+
+基于知识图谱的问答系统关键技术研究
+
+## 论文
+
+《Distant Supervision for relation extraction without labeled data》
+
+《Using Recurrent Neural Networks for Slot Filling in Spoken Language Understanding》
+
+《Convolutional Neural Networks for Sentence Classification》：TextCNN的开山之作
+
+# NLP参考资源
+
+https://mp.weixin.qq.com/s/4eyxX_EfrImGXnYmTRUFHw
+
+自然语言处理(NLP)入门指南
 
 https://www.geekhub.cn/a/1163.html
 
 宋睿华：好玩的文本生成
-
-http://blog.csdn.net/sunlylorn/article/details/50607376
-
-seq2seq模型
-
-http://chuansong.me/n/521727951619
-
-Seq2Seq的DIY简介
-
-http://www.cnblogs.com/Determined22/p/6650373.html
-
-DL4NLP——seq2seq+attention机制的应用：文档自动摘要（Automatic Text Summarization）
-
-http://www.cnblogs.com/maybe2030/p/5427148.html
-
-文本深度表示模型——word2vec&doc2vec词向量模型
-
-https://www.zhihu.com/question/29978268
-
-如何用word2vec计算两个句子之间的相似度？
 
 https://github.com/Gii16/TreeDrawer
 
@@ -361,34 +397,6 @@ http://mp.weixin.qq.com/s/5kKkZp6Y3_TgHl98dtYNiw
 
 NLP领域中文vs英文有什么异同点，中文NLP有什么独特的地方?
 
-http://shiyanjun.cn/archives/548.html
-
-使用libsvm+tfidf实现文本分类
-
-http://licstar.net/archives/328
-
-词向量和语言模型
-
-http://www.toutiao.com/a6236100205026328834/
-
-深度学习：推动NLP领域发展的新引擎
-
-http://dataunion.org/9331.html
-
-深度学习、自然语言处理和表征方法
-
-https://www.zhihu.com/question/46272554
-
-如何评价SyntaxNet
-
-https://mp.weixin.qq.com/s/-y2vth2OGx9rAsPvEknVTg
-
-神经网络结构在命名实体识别（NER）中的应用
-
-http://www.cnblogs.com/robert-dlut/
-
-一个NLP方面的blog
-
 http://www.wildml.com/2016/07/deep-learning-for-chatbots-2-retrieval-based-model-tensorflow/
 
 IMPLEMENTING A RETRIEVAL-BASED MODEL IN TENSORFLOW
@@ -397,49 +405,16 @@ https://mp.weixin.qq.com/s/vGUizRVnosd7cgxha-pimw
 
 200行Python代码实现感知机词性标注器
 
-http://www.jiqizhixin.com/article/2727
+http://www.jianshu.com/p/43db6425ad33
 
-ACL 2017中国研究论文解读：读懂中国自然语言处理前沿进展
+如何为聊天机器人设计数据通道
 
-https://mp.weixin.qq.com/s/ssWi6XIebW8M6_JePG7RZg
+https://mp.weixin.qq.com/s/H7m7lqWpK27pJp9obXxlIQ
 
-微软的NLP帝国
+见微知著，从细节处提升词向量的表示能力
 
-http://blog.csdn.net/lcj369387335/article/details/69845385
+https://baijia.baidu.com/s?id=1571333621049553
 
-自动文档摘要评价方法---Edmundson和ROUGE
+对比神经机器翻译和统计机器翻译：NMT的六大挑战
 
-https://github.com/lianwj/cnn-text-classification-tf
-
-Convolutional Neural Network for Text Classification in Tensorflow
-
-http://blog.csdn.net/skytree/article/details/43672627
-
-2013年7月做的一个自动应答机器人的架构
-
-https://mp.weixin.qq.com/s/mq0PdX6oB2kr_5FyoLA4ug
-
-机器人数学考了134分，要上清华北大NLP是最大难关
-
-## 论文
-
-《Distant Supervision for relation extraction without labeled data》
-
-《Using Recurrent Neural Networks for Slot Filling in Spoken Language Understanding》
-
-《Convolutional Neural Networks for Sentence Classification》：TextCNN的开山之作
-
-# 知识图谱
-
-https://wenku.baidu.com/view/38ad3ef7e109581b6bd97f19227916888586b959.html
-
-知识图谱构建技术综述
-
-https://wenku.baidu.com/view/e69a3619fe00bed5b9f3f90f76c66137ee064f15.html
-
-知识图谱技术综述
-
-https://wenku.baidu.com/view/b3858227c5da50e2534d7f08.html
-
-知识图谱技术原理介绍
 

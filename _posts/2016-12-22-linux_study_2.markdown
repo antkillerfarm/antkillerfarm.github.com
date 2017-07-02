@@ -138,6 +138,14 @@ DosBox是Linux平台玩DOS老游戏的法宝。
 
 `sudo apt-get install joe`
 
+## Linux知识图谱
+
+![](/images/article/linux_perf_tools_full.png)
+
+原图地址：
+
+http://www.brendangregg.com/linuxperf.html
+
 # 知名数据集
 
 ## MNIST
@@ -180,6 +188,20 @@ https://www.cs.toronto.edu/~kriz/cifar.html
 
 http://www.cnblogs.com/neopenx/p/4480701.html
 
+## ImageNet
+
+ImageNet是由李飞飞等创建的一个计算机视觉系统识别项目，是目前世界上图像识别最大的数据库。
+
+主页：
+
+http://www.image-net.org/
+
+>注：李飞飞（Fei-Fei Li），1976年生，普林斯顿大学本科（1995～1999）+加州理工学院博士（2001～2005）。先后执教于UIUC、普林斯顿、斯坦福等学校。   
+>个人主页：   
+>http://vision.stanford.edu/feifeili/
+
+需要注意的是，由于ImageNet的数据过于庞大，因此主页下载的数据文件，仅仅只是图片的URL而已。
+
 ## UCI数据集
 
 UCI大学有个专门提供数据集的网站：
@@ -213,6 +235,10 @@ http://blog.csdn.net/wangkr111/article/details/44514097
 https://mp.weixin.qq.com/s/tewjGzfAVCKcG1dlURxyeg
 
 MIT发布的10大自然语言处理数据集和语料库
+
+https://github.com/candlewill/Dialog_Corpus/blob/master/README.md
+
+用于对话系统的中英文语料
 
 # Python
 

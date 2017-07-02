@@ -88,6 +88,10 @@ https://www.zhihu.com/question/32286630
 
 怎么确定LDA的topic个数？
 
+http://blog.csdn.net/luo123n/article/details/48902815
+
+Perplexity详解
+
 ## LDA漫游指南
 
 除了rickjin的《LDA数学八卦》之外，马晨写的《LDA漫游指南》也是这方面的中文新作。

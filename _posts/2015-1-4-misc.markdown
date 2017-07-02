@@ -227,6 +227,7 @@ grub-install --root-directory=/mnt /dev/sda
 
 10）initrd和vmlinuz。initrd包括image-initrd和cpio-initrd。zImage和bzImage的区别和作用。
 
-11）在逛Ubuntu软件中心的时候，发现了Batttle of Wesnoth这个开源的回合制战旗游戏。试着玩了一下，感觉蛮不错的。正好这个项目在Source Forge上使用Git管理源代码。考虑到Android Source也是用Git管理的，于是就用Git下载了Batttle of Wesnoth的source来熟悉一下Git的用法。
+11）在逛Ubuntu软件中心的时候，发现了Battle of Wesnoth这个开源的回合制战旗游戏。试着玩了一下，感觉蛮不错的。正好这个项目在Source Forge上使用Git管理源代码。考虑到Android Source也是用Git管理的，于是就用Git下载了Battle of Wesnoth的source来熟悉一下Git的用法。
 
 12）在linux下有个叫做gitk的Git GUI工具。
+

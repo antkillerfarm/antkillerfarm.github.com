@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ML参考资源, DL参考资源, PMML, Machine Learning之Python篇
+title:  ML参考资源, PMML, Machine Learning之Python篇
 category: technology 
 ---
 
@@ -22,17 +22,29 @@ http://echarts.baidu.com/echarts2/doc/example.html
 
 各种大数据展示用的图表。
 
-http://url.cn/40IkU7z
-
-盘点机器学习常用的35大算法
-
 https://www.zhihu.com/question/28810567
 
 ELM算法相关
 
+http://url.cn/40IkU7z
+
+盘点机器学习常用的35大算法
+
 http://mp.weixin.qq.com/s?__biz=MjM5MTQzNzU2NA==&mid=2651645872&idx=1&sn=e7b34d0df78a8eda7b71ecf169ce5c38
 
 分辨真假数据科学家的20个问题及回答
+
+http://mp.weixin.qq.com/s/omiyerWFmVPTE5XW6j7txQ
+
+45个回归问题测试题（附答案）
+
+https://mp.weixin.qq.com/s/X-Na57dKQ43LsILR_gX4Sw
+
+考察数据科学家和分析师的41个统计学问题
+
+https://mp.weixin.qq.com/s/VKQufVUQ3TP5m7_2vOxnEQ
+
+通过Faster R-CNN实现当前最佳的目标计数
 
 https://www.zhihu.com/question/21664179
 
@@ -102,10 +114,6 @@ http://mp.weixin.qq.com/s/V-QCRXt5wAfSCiNT955W0A
 
 外卖订单量预测异常报警模型实践
 
-http://mp.weixin.qq.com/s/omiyerWFmVPTE5XW6j7txQ
-
-45个回归问题测试题（附答案）
-
 http://mp.weixin.qq.com/s/v0z-s72juBF6Wwb9tc_Z_g
 
 深入理解空间搜索算法
@@ -150,107 +158,57 @@ https://mp.weixin.qq.com/s/e0jXXCIhbaZz7xaCZl-YmA
 
 如何处理不均衡数据？
 
+https://mp.weixin.qq.com/s/2j_6hdq-MhybO_B0S7DRCA
+
+如何解决机器学习中数据不平衡问题
+
 http://www.jianshu.com/p/1aa67a321e33
 
 SVM和Logistic Regression分别在什么时候使用？
 
-# DL参考资源
+https://mp.weixin.qq.com/s/1ijibTVgvF-RhS9H0zM8hQ
 
-https://zhuanlan.zhihu.com/p/22888385
+ML\DL\NLP\DM等8大领域经典模型和知识！
 
-深层学习为何要“Deep”
+https://mp.weixin.qq.com/s/MtnHYmPVoDAid9SNHnlzUw
 
-http://blog.csdn.net/erlib/article/details/53585134
+阿里妈妈首次公开自研CTR预估核心算法MLR
 
-深层神经网络结构及可能存在的致命问题详解
+https://mp.weixin.qq.com/s/ykCMNrfKO0Gt_yji7cEA2g
 
-http://www.csdn.net/article/2015-06-01/2824811
+机器学习算法基于信用卡消费记录做信用评分
 
-深度学习-LeCun、Bengio和Hinton的联合综述
+https://mp.weixin.qq.com/s/dcb7DRlK6azZHBym4gAVYQ
 
-http://mp.weixin.qq.com/s/6I0Z_yY7UT_7qOKOWcd7Mw
+海量数据处理算法总结
 
-李飞飞发表研究新成果：视觉推理的推断和执行程序！
+https://mp.weixin.qq.com/s/goupgFyxjHouj2zML0XCPg
 
-https://theneuralperspective.com/tag/tutorials/
+如何使用JavaScript构建机器学习模型
 
-一些深度学习的教程。
+https://mp.weixin.qq.com/s/jeloJDgfa3eFXUPduhesVA
 
-https://github.com/jinfagang/pytorch_name_net
+logistic函数和softmax函数
 
-PyTorch人工智能自动取名
+https://mp.weixin.qq.com/s/5tUQ9B5juP-Vg8z-gp60rg
 
-http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg
+详解支持向量机SVM：快速可靠的分类算法
 
-GitHub 最受欢迎深度学习项目Top 20
+https://mp.weixin.qq.com/s/G5a0YK39RZzgce_szbwoTA
 
-http://lamda.nju.edu.cn/yangjw/project/drlintro.html
+你点一次广告，会创造多少价值？
 
-深度强化学习初探
+https://mp.weixin.qq.com/s/ukiF5uZgt45fJVxexG7UwQ
 
-https://zhuanlan.zhihu.com/p/21498750
+为什么要对数据进行归一化处理？
 
-深度强化学习导引
+http://www.aixchina.net/Article/178589
 
-http://mp.weixin.qq.com/s/SgN9uDTiBTATF5AaZiSMYQ
+券商大数据平台架构设计实践以及人工智能应用探讨总结
 
-深度学习中的怪圈
+https://zhuanlan.zhihu.com/p/25509178
 
-http://mp.weixin.qq.com/s/-Av3-ZNi6UGlKNv_jduAeQ
-
-微软新论文：如何利用深度特征流提高视频识别准确率？
-
-http://mp.weixin.qq.com/s/bpODRWFm0vxdwr-JNkVKlA
-
-小心深度学习这个“坑”（入门误区详细版）
-
-http://mp.weixin.qq.com/s/9fJT0dMLvYQdfMVvSEiG4A
-
-深度学习的时间序列模型评价
-
-http://mp.weixin.qq.com/s/YGXAAvHgXqsZXCMJ2dyDEw
-
-深度学习的四大失败
-
-http://mp.weixin.qq.com/s/XH1dXWSPiQMAHYR0_-xylA
-
-精选深度学习在文本、视觉、语音等领域的论文集
-
-https://mp.weixin.qq.com/s/39kfsTRmHsrVgOJu8yGJ4Q
-
-神经网络介绍—利用反向传播算法的模式学习
-
-https://github.com/cysmith/neural-style-tf
-
-TensorFlow (Python API) implementation of Neural Style.这个项目实现了两张图片的画风融合，非常牛。
-
-https://github.com/jinfagang/pytorch_style_transfer
-
-这个和上面的一样，不过是用pytorch实现的。
-
-http://mp.weixin.qq.com/s/zNmJuevHaagKbyGFdKTwoQ
-
-tensorflow实现基于深度学习的图像补全
-
-http://kubicode.me/
-
-一个深度学习的blog
-
-http://mp.weixin.qq.com/s/lLPRwInF5qaw7ewYHOpPyw
-
-深度强化学习资料
-
-https://mp.weixin.qq.com/s/ZlCI02UdRuFBc-uKqIPE_w
-
-深度学习多任务学习综述
-
-https://mp.weixin.qq.com/s/pbyByPoZ9SVoP9B7pJMxXg
-
-深度卷积网络迁移学习的脸部表情识别
-
-https://mp.weixin.qq.com/s/8wuG95Ha-vO0fxes_oBLZg
-
-Variational AutoEncoders
+解析微信朋友圈的lookalike算法
 
 # PMML
 
@@ -390,6 +348,10 @@ http://wiki.jikexueyuan.com/project/tensorflow-zh/
 
 由于我的PC显卡不合要求，因此直接安装的是CPU版本，这也是最通用的版本。
 
+TensorFlow技术栈：
+
+![](/images/article/tensorflow_layer.png)
+
 ## 参考
 
 https://github.com/neozhaoliang/pywonderland/tree/master/
@@ -415,6 +377,14 @@ https://github.com/zsdev2015/machine_learning
 https://morvanzhou.github.io/tutorials/
 
 一个以python语言教学的ML、DL教程，比较通俗易懂。
+
+https://mp.weixin.qq.com/s/gJBDXf_5ViPR9dNm3eH2Hg
+
+TensorFlow初学者必须了解的55个经典案例
+
+https://mp.weixin.qq.com/s/bjxJyOitynRtCoW0FX1gXw
+
+一文带你入门Tensorflow
 
 ## 我的TensorFlow实践
 

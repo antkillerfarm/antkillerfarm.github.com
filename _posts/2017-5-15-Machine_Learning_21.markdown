@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十一）——KNN, Probabilistic Robotics, 概率图模型
+title:  机器学习（二十一）——KNN, Optimizer, 单分类SVM&多分类SVM
 category: theory 
 ---
 
@@ -40,199 +40,220 @@ http://www.doc88.com/p-1416660147532.html
 
 KNN算法在股票预测中的应用
 
-# Probabilistic Robotics
+# Optimizer
 
-这篇心得主要根据Sebastian Thrun的Probabilistic Robotics课程的ppt来写。
+在《机器学习（一）》中，我们已经指出梯度下降是解决凸优化问题的一般方法。而如何更有效率的梯度下降，就是本节中Optimizer的责任了。
 
->注：Sebastian Thrun，德国波恩大学博士（1995年）。先后执教于CMU和Stanford。
+## Momentum
 
-网址：
+Momentum是梯度下降法中一种常用的加速技术。其公式为：
 
-http://robots.stanford.edu/probabilistic-robotics/ppt/
+$$v_t = \gamma v_{t-1} + \eta \nabla_\theta J( \theta)$$
 
-## 贝叶斯过滤器
+$$\theta = \theta - v_t$$
 
-假定我们需要根据测量值z来判断门的开关。显然，这里的$$P(open\vert z)$$是诊断式（**diagnostic**）问题，而$$P(z\vert open)$$是因果式（**causal**）问题。通常来说，后者比较容易获取，而前者可以基于后者使用贝叶斯公式计算得到。
+从上式可以看出，参数的更新值$$v_t$$，不仅取决于当前梯度$$\nabla_\theta J( \theta)$$，还取决于上一刻的速度$$v_{t-1}$$。
 
-一般将$$P(z\vert x)$$称为**Sensor model**。
+## Nesterov accelerated gradient
 
-针对多相关测量值问题，这里有一个和朴素贝叶斯假设相仿的**Markov assumption**——假设$$z_n$$独立于$$z_1,\dots,z_{n-1}$$（即“现在”不依赖于“过去”），则：
+该方法是Momentum的一个变种。其公式为：
 
-$$P(x|z_1,\dots,z_n)=\frac{P(z_n|x)P(x|z_1,\dots,z_{n-1})}{P(z_n|z_1,\dots,z_{n-1})}(\text{Bayes})
-\\=\eta P(z_n|x)P(x|z_1,\dots,z_{n-1})=\eta_{1,\dots,n}\prod_{i=1}^nP(z_i|x)P(x)(\text{Markov})$$
+$$v_t = \gamma v_{t-1} + \eta \nabla_\theta J( \theta - \gamma v_{t-1})$$
 
->注：以下的推导过程注释中，如无特别说明。均以Bayes指代Bayes' theorem，以Markov指代Markov assumption。
+$$\theta = \theta - v_t$$
 
-上式中的$$\eta$$表示概率的归一化系数。
+## Adagrad
 
-除了测量值z之外，一般的控制系统中还有动作（Action）的概念。比如打开门就是一个Action。Action会导致系统的状态发生改变（也可不变）。如下图所示：
+Momentum算法中所有的参数$$\theta$$都使用同一个学习率，而Adagrad采用了另一种方法进行优化：为每个参数确定不同的学习率。
 
-![](/images/article/state_trans.png)
+Adagrad的基本思想：给经常更新的参数一个较小的学习率，而给很少更新的参数一个较大的学习率。
 
-通常，将$$P(x\vert u,x')$$称作**Action Model**。其中，u表示Action，而x'表示系统的上一个状态。
+其公式为：
 
-一般的，**新的测量值会减少系统的不确定度，而新的Action会增加系统的不确定度。**
+$$g_{t, i} = \nabla_\theta J( \theta_i )$$
 
-综上，一个贝叶斯过滤器（Bayes Filters）的框架包括：
+$$\theta_{t+1, i} = \theta_{t, i} - \dfrac{\eta}{\sqrt{G_{t, ii} + \epsilon}} \cdot g_{t, i}$$
 
-输入：
+其中，$$G_{t, ii}$$表示参数$$\theta_i$$梯度平方和的历史累积值，$$\epsilon$$是为了防止分母为0，而加入的平滑项，数量级一般为$$10^{-8}$$。
 
-1.观测值z和Action u的序列：$$d_t=\{u_1,z_1,\dots,u_t,z_t\}$$
+有趣的是，如果去掉上式中的根号，则其效果会变糟。
 
-2.Sensor model：$$P(z\vert x)$$
+Adagrad的优点在于：它是一个自适应算法，初值选择显得不太重要了。
 
-3.Action model：$$P(x\vert u,x')$$
+Adagrad的缺点在于：训练越往后，G越大，从而学习率越小。如果在训练完成之前，学习率变为0，就会导致提前结束训练。
 
-4.系统状态的先验概率：$$P(x)$$
+## Adadelta
 
-输出：
+为了克服Adagrad的缺点，Matthew D. Zeiler于2012年提出了Adadelta算法。
 
-1.估计动态系统的状态X。
+该算法不再使用历史累积值，而是只取最近的w个状态，这样就不会让梯度被惩罚至0。
 
-2.状态的后验概率，也叫**Belief**：
+为了避免保存前w个状态的梯度平方和，可做如下变换：
+
+$$E[g^2]_t = \gamma E[g^2]_{t-1} + (1 - \gamma) g^2_t$$
+
+$$\theta_{t+1} = \theta_{t} - \dfrac{\eta}{\sqrt{E[g^2]_t + \epsilon}} g_{t}$$
+
+上边的公式，就是Hinton在同一年提出的**RMSprop算法**。其中的$$\gamma E[g^2]_{t-1}$$即可看作是前w个状态的滤波值，也可看作是Momentum算法中动量值。
+
+Adadelta在RMSprop的基础上更进一步：
+
+$$RMS[g]_{t}=\sqrt{E[g^{2}]_{t}+\epsilon }$$
+
+$$\Delta \theta_t = - \dfrac{RMS[\Delta \theta]_{t-1}}{RMS[g]_{t}} g_{t}$$
+
+也就是说，Adadelta不仅考虑了梯度的平方和，也考虑了更新量的平方和。
+
+## Adam
+
+Adaptive Moment Estimation借用了卡尔曼滤波的思想，对$$g_t,g_t^2$$进行滤波：
+
+$$m_t = \beta_1 m_{t-1} + (1 - \beta_1) g_t$$
+
+$$v_t = \beta_2 v_{t-1} + (1 - \beta_2) g_t^2$$
+
+估计：
+
+$$\hat{m}_t = \dfrac{m_t}{1 - \beta^t_1}$$
+
+$$\hat{v}_t = \dfrac{v_t}{1 - \beta^t_2}$$
+
+更新：
+
+$$\theta_{t+1} = \theta_{t} - \dfrac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \hat{m}_t$$
+
+## 参考
+
+http://sebastianruder.com/optimizing-gradient-descent/
+
+An overview of gradient descent optimization algorithms
+
+https://morvanzhou.github.io/tutorials/machine-learning/ML-intro/3-06-speed-up-learning/
+
+加速神经网络训练
+
+http://www.cnblogs.com/neopenx/p/4768388.html
+
+自适应学习率调整：AdaDelta
+
+# 单分类SVM&多分类SVM
+
+原始的SVM主要用于二分类，然而稍加变化，也可用于单分类和多分类。
+
+## 单分类SVM
+
+单分类任务是一类特殊的分类任务。在该任务中，大多数样本只有positive一类标签，而其他样本则笼统的划为另一类。
+
+单分类SVM（也叫Support Vector Domain Description(SVDD)）是一种单分类算法。和普通SVM相比，它不再使用maximum margin了，因为这里并没有两类的data。
+
+单分类SVM的目标，实际上是确定positive样本的boundary。boundary之外的数据，会被分为另一类。这实际上就是一种异常检测的算法了。它主要适用于negative样本的特征不容易确定的场景。
+
+![](/images/article/one_class_svm.png)
+
+这里可以假设最好的boundary要远离feature space中的原点。左边是在original space中的boundary，可以看到有很多的boundary都符合要求，但是比较靠谱的是找一个比较紧（closeness）的boundary（红色的）。这个目标转换到feature space就是找一个离原点比较远的boundary，同样是红色的直线。
+
+当然这些约束条件都是人为加上去的，你可以按照你自己的需要采取相应的约束条件。比如让data的中心离原点最远。
+
+下面我们讨论一下SVDD的算法实现。
+
+首先定义需要最小化的目标函数：
 
 $$\begin{align}
-\mathbf{Bel(x_t)}&=P(x_t\vert u_1,z_1,\dots,u_t,z_t)
-\\&=\eta P(z_t\vert x_t,u_1,z_1,\dots,u_t)P(x_t\vert u_1,z_1,\dots,u_t)(\text{Bayes})
-\\&=\eta P(z_t\vert x_t)P(x_t\vert u_1,z_1,\dots,u_t)(\text{Markov})
-\\&=\eta P(z_t\vert x_t)\int P(x_t\vert u_1,z_1,\dots,u_t,x_{t-1})P(x_{t-1}\vert u_1,z_1,\dots,u_t)\mathrm{d}x_{t-1}(\text{Total prob.})
-\\&=\eta P(z_t\vert x_t)\int P(x_t\vert u_t,x_{t-1})P(x_{t-1}\vert u_1,z_1,\dots,u_t)\mathrm{d}x_{t-1}(\text{Markov})
-\\&=\eta P(z_t\vert x_t)\int P(x_t\vert u_t,x_{t-1})P(x_{t-1}\vert u_1,z_1,\dots,z_{t-1})\mathrm{d}x_{t-1}(\text{Markov})
-\\&=\eta P(z_t\vert x_t)\int P(x_t\vert u_t,x_{t-1})\mathbf{Bel(x_{t-1})}\mathrm{d}x_{t-1}
+&\operatorname{min}& & F(R,a,\xi_i) = R^2 + C \sum_{i=1}^N \xi_i\\
+&\operatorname{s.t.}& & (x_i - a)^T (x_i - a) \leq R^2 + \xi_i\text{,} \qquad \xi_i \geq 0
 \end{align}$$
 
-上式也可以写作：
+这里a表示形状的中心，R表示半径，C和$$\xi$$的含义与普通SVM相同。
 
-**预测**：
+Lagrangian算子：
 
-$$\overline{\mathbf{Bel(x_t)}}=\int P(x_t\vert u_t,x_{t-1})\mathbf{Bel(x_{t-1})}\mathrm{d}x_{t-1}$$
+$$L(R,a,\alpha_i,\xi_i) = R^2 + C \sum_{i=1}^N \xi_i - \sum_{i=1}^N \gamma_i \xi_i - \sum_{i=1}^N \alpha_i \left(  R^2 + \xi_i - (x_i - c)^T (x_i - c) \right)$$
 
-**修正**：
+对偶问题：
 
-$$\mathbf{Bel(x_t)}=\eta P(z_t\vert x_t)\overline{\mathbf{Bel(x_t)}}$$
+$$L = \sum_{i=1}^N \alpha_i (x_i^T \cdot x_i) - \sum_{i,j=1}^N \alpha_i \alpha_j (x_i^T \cdot x_i)$$
 
-熟悉卡尔曼滤波的同学大概已经看出来了。没错！贝叶斯过滤器是一大类算法的统称。这些算法包括Kalman filters、Particle filters、Hidden Markov models、Dynamic Bayesian networks、Partially Observable Markov Decision Processes (POMDPs)等。
+使用核函数：
 
-## 递归最小二乘法
+$$L = \sum_{i=1}^N \alpha_i K(x_i,x_i) - \sum_{i,j=1}^N \alpha_i \alpha_j K(x_i,x_j)$$
 
-http://www.blog.huajh7.com/adaptive-filters-lms-rls-kalman-filter-1/
+预测函数：
 
-## 卡尔曼滤波
+$$y(x) = \sum_{i=1}^N \alpha_i K(x,x_n) + b$$
 
->注：Rudolf (Rudi) Emil Kálmán，1930～2016，匈牙利出生的美国科学家。哥伦比亚大学博士（1957），先后执教于斯坦福大学和佛罗里达大学。现代控制理论的里程碑人物，美国科学院院士。   
->卡尔曼滤波从纯数学的角度讲，并没有多大意义。因此，主流数学家们在很长一段时间内，并不承认Kálmán是数学家。只是由于卡尔曼滤波在工程界的巨大影响力，才不得不于2012年，授予其美国数学协会院士。
-
-Kalman filters是一种高斯线性滤波器。
+根据计算结果的符号，来判定是正常样本，还是异常样本。
 
 参考：
 
-http://www.cs.unc.edu/~welch/media/pdf/kalman_intro.pdf
+https://www.projectrhea.org/rhea/index.php/One_class_svm
 
-Gregory Francis Welch写的卡尔曼滤波科普文。
+One-Class Support Vector Machines for Anomaly Detection
 
->注：Gregory Francis Welch，北卡罗莱娜大学博士（1997）。中佛罗里达大学教授。
+https://www.zhihu.com/question/22365729
 
-http://www.cs.unc.edu/~welch/kalman/media/misc/kalman_intro_chinese.zip
+什么是一类支持向量机（one class SVM）
 
-上文的中文版。
+## 多分类SVM
 
-https://zhuanlan.zhihu.com/p/21294526
+多分类任务除了使用多分类算法之外，也可以通过对两分类算法的组合来实施多分类。常用的方法有两种：one-against-rest和DAG SVM。
 
-知乎诸位大神的科普文。
+### one-against-rest
 
-http://www.docin.com/p-976961701.html
+比如我们有5个类别，第一次就把类别1的样本定为正样本，其余2，3，4，5的样本合起来定为负样本，这样得到一个两类分类器，它能够指出一篇文章是还是不是第1类的；第二次我们把类别2的样本定为正样本，把1，3，4，5的样本合起来定为负样本，得到一个分类器，如此下去，我们可以得到5个这样的两类分类器（总是和类别的数目一致）。
 
-动态相对定位中自适应滤波方法的研究
+但有时也会出现两种很尴尬的情况，例如拿一篇文章问了一圈，每一个分类器都说它是属于它那一类的，或者每一个分类器都说它不是它那一类的，前者叫分类重叠现象，后者叫不可分类现象。
 
-《自适应动态导航定位》，杨元喜著。
+分类重叠倒还好办，随便选一个结果都不至于太离谱，或者看看这篇文章到各个超平面的距离，哪个远就判给哪个。不可分类现象就着实难办了，只能把它分给第6个类别了……
 
->注：杨元喜，1956年生，大地测量学家。中国科学院院士。
+更要命的是，本来各个类别的样本数目是差不多的，但“其余”的那一类样本数总是要数倍于正类（因为它是除正类以外其他类别的样本之和嘛），这就人为的造成了“数据集偏斜”问题。
 
-# 概率图模型
+### DAG SVM
 
-## 资料
+![](/images/article/dag_svm.png)
 
-probabilistic graphical model（PGM）最早由Judea Pearl发明。
+DAG SVM（也称one-against-one）的分类思路如上图所示。
 
-这方面比较重要的文章和书籍有：
+粗看起来DAG SVM的分类次数远超one-against-rest，然而由于每次分类都只使用了部分数据，因此，DAG SVM的计算量反而更小。
 
-http://www.cis.upenn.edu/~mkearns/papers/barbados/jordan-tut.pdf
+其次，DAG SVM的误差上限有理论保障，而one-against-rest则不然（准确率可能降为0）。
 
-Michael Irwin Jordan著。
+显然，上面提到的两种方法，不仅可用于SVM，也适用于其他二分类算法。
 
-《Probabilistic Graphical Models: Principles and Techniques》，Daphne Koller，Nir Friedman著（2009年）。
+参考：
 
->注：Judea Pearl，1936年生，以色列-美国计算机科学家，UCLA教授。2011年获得图灵奖。
+http://www.blogjava.net/zhenandaci/archive/2009/03/26/262113.html
 
->Michael Irwin Jordan，1956年生，美国计算机科学家。UCSD博士，先后执教于MIT和UCB。吴恩达的导师。
+将SVM用于多类分类
 
->Daphne Koller，女，1968年生，以色列-美国计算机科学家。斯坦福大学博士及教授。和吴恩达共同创立在线教育平台Coursera。
+# 时间序列分析
 
->Nir Friedman，1967年生，以色列计算机科学家。斯坦福大学博士，耶路撒冷希伯来大学教授。
+## 书籍和教程
 
-http://www.cs.cmu.edu/~epxing/Class/10708-14/lectures/
+http://www.stat.berkeley.edu/~bartlett/courses/153-fall2010/
 
-CMU的邢波（Eric Xing）所开的概率图模型课程。
+berkeley的时间序列分析课程
+
+http://people.duke.edu/%7Ernau/411home.htm
+
+回归和时间序列分析
+
+《应用时间序列分析》，王燕著。
 
 ## 概述
 
-概率图模型的三要素：Graph：$$\mathcal{G}$$、Model：$$\mathcal{M}$$和Data：$$\mathcal{D}\equiv\{X^{(i)}_1,\dots,X^{(i)}_m\}^N_{i=1}$$。
+时间序列，就是按时间顺序排列的，随时间变化的数据序列。
 
-它要解决的三大问题：
+生活中各领域各行业太多时间序列的数据了，销售额，顾客数，访问量，股价，油价，GDP，气温...
 
-1.**表示**。如何获取或定义真实世界的不确定度？如何对领域知识/假设/约束编码？
+随机过程的特征有均值、方差、协方差等。
 
-2.**推断**。根据模型/数据，推断答案。
+如果随机过程的特征随着时间变化，则此过程是非平稳的；相反，如果随机过程的特征不随时间而变化，就称此过程是平稳的。
 
-$$\text{e.g.}:P(x_i|\mathcal{D})$$
+下图所示，左边非稳定，右边稳定。
 
-3.**学习**。根据数据确定哪个模型是正确的。
+![](/images/article/time_series.png)
 
-$$\text{e.g.}:\mathcal{M}=\arg\max_{\mathcal{M}\in M}F(\mathcal{D};\mathcal{M})$$
+非平稳时间序列分析时，若导致非平稳的原因是确定的，可以用的方法主要有趋势拟合模型、季节调整模型、移动平均、指数平滑等方法。
 
-![](/images/article/PGM.png)
-
-上图是PGM的一个示例。其中$$X_i$$表示随机变量，图中共有8个随机变量，假设它们均为二值变量，则整个状态空间共有$$2^8$$种组合。遍历这样大的状态空间无疑是一件极为费力的事情。
-
-如果$$X_i$$是条件独立的话，则由上图可得：
-
-$$P(X_1,\dots,X_8)=P(X_2)P(X_4|X_2)P(X_5|X_2)P(X_1)P(X_3|X_1)\\P(X_6|X_3,X_4)P(X_7|X_6)P(X_8|X_5,X_6)$$
-
-这样，状态空间就缩小为$$2+4+4+2+4+8+4+8=36$$种组合了。
-
-根据边的类型，PGM可分为两类：
-
-1.有向边表示变量间的**因果**关系。这样的PGM，常称为Bayesia Network（BN）或Directed Graphical Model（DGM）。
-
-2.无向边表示变量间的**相关**关系。这样的PGM，常称为Markov Random Field（MRF）或Undirected Graphical Model（UGM）。
-
->注：因果关系是一种强逻辑关系，需要变量间有深刻的内在联系。而相关关系要弱的多，典型的例子就是《机器学习（十七）》中的尿布和啤酒的故事。尿布和啤酒虽然正相关，然而它们本身却没有多大的联系。
-
-根据模型的不同，PGM又可分为生成模型（Generative Model, GM）和判别模型（Discriminative Model, DM）。两者的区别在《机器学习（二）》中已经简单提到过，这里做一个扩展。
-
-之前提到的机器学习算法，主要是建立特征向量X和标签Y之间的联系。但是实际情况下，X中的状态不一定都能得到，因此可以根据可见性，将X分为可观测变量集合O和其他变量集合R，Y也不一定是一个标签，而可能是一个变量集合。即：
-
-$$GM:P(Y,R,O)\to P(Y|O)$$
-
-$$DM:P(Y,R|O)\to P(Y|O)$$
-
-注意，在贝叶斯学派的观点中，模型的参数也是随机变量，因此，R在某些情况下，不仅包含不可观测的变量，也包含模型参数。
-
-## 贝叶斯网络
-
-贝叶斯网络是最简单的有向图模型。
-
-首先给出几个术语的定义：
-
-**有向无环图(Directed Acyclic Graph, DAG)**：这个术语的字面意思很清楚，不解释。
-
-**马尔可夫毯(Markov Blanket, MB)**：有向图——结点A的父结点+A的子结点+A的子结点的其他父结点。如下图所示：
-
-![](/images/article/Markov_blanket.png)
-
-无向图——结点A的邻近结点。
-
-下图是图模型的部分变种之间的关系图。
-
-![](/images/article/Generative_Models.png)
+若导致非平稳的原因是随机的，方法主要有ARIMA及自回归条件异方差模型等。
 

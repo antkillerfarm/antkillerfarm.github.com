@@ -1,125 +1,217 @@
 ---
 layout: post
-title:  机器学习（二十二）——机器学习相关术语表
+title:  机器学习（二十二）——时间序列分析, NLP机器翻译常用评价度量, Probabilistic Robotics
 category: theory 
 ---
 
-# 机器学习语录
+# 时间序列分析（续）
 
-这里收录一些网上的只言片语式的心得，以区别于一般的教程。
+## ARIMA
 
->首先要考虑你的数据维度是线性相关的还是非线性相关的，数据是稀疏的还是稠密的，正例反例比例是多少，数据量是否充足。数据是否具有可分类性。是否需要降维。是否有噪音，是否有异常点等，然后去选择分类策略。通常包括数据采集，预处理，分类训练，预测，后处理等过程。
+ARIMA模型全称为差分自回归移动平均模型(Autoregressive Integrated Moving Average Model,简记ARIMA)，也叫求和自回归移动平均模型，是由George Edward Pelham Box和Gwilym Meirion Jenkins于70年代初提出的一著名时间序列预测方法，所以又称为box-jenkins模型、博克思-詹金斯法。
 
-# 角度值的特征化
+>注：Gwilym Meirion Jenkins，1932～1982，英国统计学家。伦敦大学学院博士，兰卡斯特大学教授。
 
-角度值是数据分析中常见的值，然而它不是线性的，比如0度和359度之间只相差1度，然而数值上却差了359度，因此无法将角度值直接代入线性回归等模型。因为后者的loss函数是用线性的欧氏距离定义的，角度显然不满足要求。
+同《数学狂想曲（三）》中的PID算法一样，ARIMA模型实际上是三个简单模型的组合。
 
-既然角度在一维上不是线性的，那么二维呢？没错，可以采用复数坐标(x,y)来表示角度，这样角度就是线性的了。
+### AR模型
 
-# 机器学习相关术语表
+$$X_t = c + \sum_{i=1}^p \varphi_i X_{t-i}+ \varepsilon_t$$
 
-| 缩写 | 全称 | 中文名 | 备注 |
-|:--:|:--:|:--:|:--:|
-| LR | Linear Regression | 线性回归 |  |
-| LS | Least Squares | 最小二乘法 |  |
-| LWR | Locally Weighted linear Regression | 局部加权线性回归 |  |
-| LR | Logistic Regression | 逻辑回归 |  |
-| MLE | Maximum Likelihood Estimator | 最大似然估计 |  |
-| GLM | Generalized Linear Model | 广义线性模型 |  |
-| IID | Independent and Identically Distributed | 独立同分布 |  |
-| DLA | Discriminative Learning Algorithm | 判别学习算法 |  |
-| GLA | Generative Learning Algorithms | 生成学习算法 |  |
-| GDA | Gaussian Discriminant Analysis | 高斯判别分析 |  |
-| NB | Naive Bayes | 朴素贝叶斯 |  |
-| SVM | Support Vector Machines | 支持向量机 |  |
-| SMO | Sequential Minimal Optimization | 序列最小优化方法 |  |
-| PAC | Probably Approximately Correct | 可能近似正确 |  |
-| ERM | Empirical Risk Minimization | 经验风险最小化 |  |
-| EM | Expectation-Maximization | 期望最大化 |  |
-| GMM | Mixture of Gaussians Model | 高斯混合模型 |  |
-| SVD | Singular Value Decomposition | 奇异值分解 |  |
-| PPMCC/PCC | Pearson Product-Moment Correlation Coefficient | 皮尔逊相关系数 |  |
-| PMF | Probabilistic Matrix Factorization | 概率矩阵分解算法 |  |
-| RMSE | Root-Mean-Square Error | 均方根误差 |  |
-| ALS | Alternating Least Squares | 交替最小二乘算法 |  |
-| PCA | Principal Components Analysis | 主成分分析 |  |
-| ELM | Extreme Learning Machine | 极限学习机 |  |
-| ICA | Independent Components Analysis | 独立成分分析 |  |
-| CDF | Cumulative Distribution Function | 累积分布函数 |  |
-| PDF | Probability Density Function | 概率密度函数 |  |
-| ECDF | Empirical Distribution Function | 实证分配函数 |  |
-| LDA | Latent Dirichlet Allocation | 隐式狄利克雷划分 |  |
-| LDA | Linear Discriminant Analysis | 线性判别分析 |  |
-| MCMC | Markov Chain Monte Carlo | 马尔可夫链蒙特卡罗 |  |
-| MRF | Markov Random Field | 马尔可夫随机场 |  |
-| PLSA | Probabilistic Latent Semantic Analysis | 概率隐含语义分析 |  |
-| GBDT | Gradient Boost Decision Tree | 渐进梯度决策树 |  |
-| FM | Factorization Machines | 因子分解机 |  |
-| PITF | Pairwise Interaction Tensor Factorization | 配对互动张量分解 |  |
-| ARM | Association Rule Mining | 关联规则挖掘 |  |
-| ROC | Receiver Operating Characteristic | 受试者工作特征 |  |
-| AUC | Area Under ROC Curve | ROC曲线下面积 |  |
-| KNN | k-Nearest Neighbor | K最近邻 |  |
-| GPR | Gaussian Process Regression | 高斯过程回归 |  |
-| PGM | Probabilistic Graphical Model | 概率图模型 |  |
-| PID | Proportional-Integral-Differential | 比例积分微分 |  |
-| HMM | Hidden Markov Model | 隐马尔可夫模型 |  |
-| PLSDA | Partial Least Squares Discriminant Analysis | 偏最小二乘判别分析 |  |
-| ARIMA | Autoregressive Integrated Moving Average Model | 差分自回归移动平均模型 |  |
-| IIR | Infinite Impulse Response | 无限脉冲响应 |  |
-| FIR | Finite Impulse Response | 有限脉冲响应 |  |
-| HNM | Hard Negative Mining | 硬负挖掘 |  |
-| ACBM | Aho-Corasick Boyer-Moore |  | 一种字符串匹配算法 |
-| LASSO | Least Absolute Shrinkage and Selection Operator | 最小绝对收缩和选择算子 |  |
-| CRF | Conditional Random Field | 条件随机场 |  |
-| MSE/MSD | Mean Squared Error/Mean Squared Deviation | 均方误差 |  |
-| SMAPE | Symmetric Mean Absolute Percentage Error | 对称平均绝对百分比误差 |  |
-| MAE | Mean Absolute Error | 平均绝对值误差 |  |
-| MPE | Mean Percentage Error | 平均百分比误差 |  |
-| DSSM | Deep Structured Semantic Model / Deep Semantic Similarity Model | 深度结构语义模型 |  |
-| OOV | out-of-vocabulary |  | 无论多大的单词表都会遇到生词。 |
-| DRL | Deep Reinforcement Learning | 深度强化学习 |  |
-| DQN | Deep Q-Learning Network |  |  |
-| EMD | Earth Mover's Distance | 推土机距离 |  |
-| ED | Edit Distance | 编辑距离 |  |
-| MLP | MultiLayer Perceptron | 多层感知器 |  |
-| CTC | Connectionist Temporal Classification |  | 新词无常用译名 |
-| RNN | Recurrent Neural Network | 循环神经网络 |  |
-| RNN | Recursive Neural Network | 递归神经网络 | 已没落 |
-| CNN | Convolutional Neural Network | 卷积神经网络 |  |
-| NLP | Natural Language Processing | 自然语言处理 |  |
-| HDP | Hierarchical Dirichlet Processes | 分层狄利克雷进程 |  |
-| LSA/LSI | Latent Semantic Analysis/Latent Semantic Indexing | 隐式语义分析/隐式语义索引 |  |
-| NER | Named Entity Recognition | 命名实体识别 |  |
-| NER | Named Entity Recognition | 命名实体识别 |  |
+其中，p为阶数，$$\varepsilon_t$$为白噪声。上式又记作AR(p)。显然，AR模型是一个系统状态模型。
 
-# CRF
+### MA模型
 
-条件随机场(Conditional Random Field)由Lafferty等人于2001年提出，结合了最大熵模型和隐马尔可夫模型的特点，是一种无向图模型，近年来在分词、词性标注和命名实体识别等序列标注任务中取得了很好的效果。
+$$X_t = \mu + \varepsilon_t + \sum_{i=1}^q \theta_i \varepsilon_{t-i}$$
 
-# 异常点检测
+上式记作MA(q)，其中q和$$\varepsilon_t$$的含义与上同。MA模型是一个噪声模型。
 
-http://chuansong.me/n/377440751130
+### ARMA模型
 
-http://jiangshuxia.9.blog.163.com/blog/static/3487586020083662621887/
+AR模型和MA模型合起来，就是ARMA模型：
 
-http://www.cnblogs.com/fengfenggirl/p/iForest.html
+$$X_t = c + \varepsilon_t +  \sum_{i=1}^p \varphi_i X_{t-i} + \sum_{i=1}^q \theta_i \varepsilon_{t-i}$$
 
-# 自适应滤波器
+### Lag operator
 
-《自适应滤波器原理》，Simon Haykin著。
+在继续下面的描述之前，我们先来定义一下Lag operator--L。
 
->注：Simon Haykin，英国伯明翰大学博士，加拿大麦克马斯特大学教授。加拿大皇家学会会员。自适应信号处理领域的权威。
+$$L X_t = X_{t-1} \; \text{or} \; X_t = L X_{t+1}$$
 
-## 基本估计
+### I模型
 
-三种基本的信息处理运算：
+$$(1-L)^d X_t$$
 
-**滤波（Filter）**：利用$$[0,t]$$的数据，来估计t时刻信息的运算过程。
+上式中d为阶数，因此上式也记作I(d)。显然$$I(0)=X_t$$。
 
-**平滑（Smoothing）**：利用$$[0,t]$$的数据，来估计$$t'(t'<t)$$时刻信息的运算过程。
+I模型有什么用呢？我们观察一下I(1)：
 
-**预测（Prediction）**：利用$$[0,t]$$的数据，来估计$$t+\tau(\tau>0)$$时刻信息的运算过程。
+$$(1-L) X_t = X_t - X_{t-1} = \Delta X$$
 
-可见，滤波和预测是实时运算，而平滑是非实时运算。
+有的时候，虽然I(0)不是平稳序列，但I(1)是平稳序列，这时我们称该序列是**1阶平稳序列**。n阶的情况，可依此类推。
+
+### ARIMA模型
+
+$$Y_t = (1-L)^d X_t$$
+
+$$\left( 1 - \sum_{i=1}^p \phi_i L^i \right) Y_t = \left( 1 + \sum_{i=1}^q \theta_i L^i \right) \varepsilon_t$$
+
+从上式可以看出，ARIMA模型实际上就是利用I模型，将时间序列转化为平稳序列之后的ARMA模型。
+
+>注：上面的内容只是对ARIMA模型给出一个简单的定义。实际的假设检验、参数估计的步骤，还是比较复杂的，完全可以写本书来说。
+
+参考：
+
+https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average
+
+https://en.wikipedia.org/wiki/Autoregressive%E2%80%93moving-average_model
+
+https://zhuanlan.zhihu.com/p/23534595
+
+时间序列分析：结合ARMA的卡尔曼滤波算法（该文的参考文献中有不少好文）
+
+http://blog.csdn.net/aliceyangxi1987/article/details/71079522
+
+用ARIMA模型做需求预测
+
+# 推荐算法中的常用排序算法
+
+## Pointwise方法
+
+Pranking (NIPS 2002), OAP-BPM (EMCL 2003), Ranking with Large Margin Principles (NIPS 2002), Constraint Ordinal Regression (ICML 2005)。
+
+## Pairwise方法
+
+Learning to Retrieve Information (SCC 1995), Learning to Order Things (NIPS 1998), Ranking SVM (ICANN 1999), RankBoost (JMLR 2003), LDM (SIGIR 2005), RankNet (ICML 2005), Frank (SIGIR 2007), MHR(SIGIR 2007), Round Robin Ranking (ECML 2003), GBRank (SIGIR 2007), QBRank (NIPS 2007), MPRank (ICML 2007), IRSVM (SIGIR 2006)。
+
+## Listwise方法
+
+LambdaRank (NIPS 2006), AdaRank (SIGIR 2007), SVM-MAP (SIGIR 2007), SoftRank (LR4IR 2007), GPRank (LR4IR 2007), CCA (SIGIR 2007), RankCosine (IP&M 2007), ListNet (ICML 2007), ListMLE (ICML 2008) 。
+
+# NLP机器翻译常用评价度量
+
+机器翻译的评价指标主要有：BLEU、NIST、Rouge、METEOR等。
+
+参考：
+
+http://blog.csdn.net/joshuaxx316/article/details/58696552
+
+BLEU，ROUGE，METEOR，ROUGE-浅述自然语言处理机器翻译常用评价度量
+
+http://blog.csdn.net/guolindonggld/article/details/56966200
+
+机器翻译评价指标之BLEU
+
+http://blog.csdn.net/han_xiaoyang/article/details/10118517
+
+机器翻译评估标准介绍和计算方法
+
+# Probabilistic Robotics
+
+这篇心得主要根据Sebastian Thrun的Probabilistic Robotics课程的ppt来写。
+
+>注：Sebastian Thrun，德国波恩大学博士（1995年）。先后执教于CMU和Stanford。
+
+网址：
+
+http://robots.stanford.edu/probabilistic-robotics/ppt/
+
+## 贝叶斯过滤器
+
+假定我们需要根据测量值z来判断门的开关。显然，这里的$$P(open\vert z)$$是诊断式（**diagnostic**）问题，而$$P(z\vert open)$$是因果式（**causal**）问题。通常来说，后者比较容易获取，而前者可以基于后者使用贝叶斯公式计算得到。
+
+一般将$$P(z\vert x)$$称为**Sensor model**。
+
+针对多相关测量值问题，这里有一个和朴素贝叶斯假设相仿的**Markov assumption**——假设$$z_n$$独立于$$z_1,\dots,z_{n-1}$$（即“现在”不依赖于“过去”），则：
+
+$$P(x|z_1,\dots,z_n)=\frac{P(z_n|x)P(x|z_1,\dots,z_{n-1})}{P(z_n|z_1,\dots,z_{n-1})}(\text{Bayes})
+\\=\eta P(z_n|x)P(x|z_1,\dots,z_{n-1})=\eta_{1,\dots,n}\prod_{i=1}^nP(z_i|x)P(x)(\text{Markov})$$
+
+>注：以下的推导过程注释中，如无特别说明。均以Bayes指代Bayes' theorem，以Markov指代Markov assumption。
+
+上式中的$$\eta$$表示概率的归一化系数。
+
+除了测量值z之外，一般的控制系统中还有动作（Action）的概念。比如打开门就是一个Action。Action会导致系统的状态发生改变（也可不变）。如下图所示：
+
+![](/images/article/state_trans.png)
+
+通常，将$$P(x\vert u,x')$$称作**Action Model**。其中，u表示Action，而x'表示系统的上一个状态。
+
+一般的，**新的测量值会减少系统的不确定度，而新的Action会增加系统的不确定度。**
+
+综上，一个贝叶斯过滤器（Bayes Filters）的框架包括：
+
+输入：
+
+1.观测值z和Action u的序列：$$d_t=\{u_1,z_1,\dots,u_t,z_t\}$$
+
+2.Sensor model：$$P(z\vert x)$$
+
+3.Action model：$$P(x\vert u,x')$$
+
+4.系统状态的先验概率：$$P(x)$$
+
+输出：
+
+1.估计动态系统的状态X。
+
+2.状态的后验概率，也叫**Belief**：
+
+$$\begin{align}
+\mathbf{Bel(x_t)}&=P(x_t\vert u_1,z_1,\dots,u_t,z_t)
+\\&=\eta P(z_t\vert x_t,u_1,z_1,\dots,u_t)P(x_t\vert u_1,z_1,\dots,u_t)(\text{Bayes})
+\\&=\eta P(z_t\vert x_t)P(x_t\vert u_1,z_1,\dots,u_t)(\text{Markov})
+\\&=\eta P(z_t\vert x_t)\int P(x_t\vert u_1,z_1,\dots,u_t,x_{t-1})P(x_{t-1}\vert u_1,z_1,\dots,u_t)\mathrm{d}x_{t-1}(\text{Total prob.})
+\\&=\eta P(z_t\vert x_t)\int P(x_t\vert u_t,x_{t-1})P(x_{t-1}\vert u_1,z_1,\dots,u_t)\mathrm{d}x_{t-1}(\text{Markov})
+\\&=\eta P(z_t\vert x_t)\int P(x_t\vert u_t,x_{t-1})P(x_{t-1}\vert u_1,z_1,\dots,z_{t-1})\mathrm{d}x_{t-1}(\text{Markov})
+\\&=\eta P(z_t\vert x_t)\int P(x_t\vert u_t,x_{t-1})\mathbf{Bel(x_{t-1})}\mathrm{d}x_{t-1}
+\end{align}$$
+
+上式也可以写作：
+
+**预测**：
+
+$$\overline{\mathbf{Bel(x_t)}}=\int P(x_t\vert u_t,x_{t-1})\mathbf{Bel(x_{t-1})}\mathrm{d}x_{t-1}$$
+
+**修正**：
+
+$$\mathbf{Bel(x_t)}=\eta P(z_t\vert x_t)\overline{\mathbf{Bel(x_t)}}$$
+
+熟悉卡尔曼滤波的同学大概已经看出来了。没错！贝叶斯过滤器是一大类算法的统称。这些算法包括Kalman filters、Particle filters、Hidden Markov models、Dynamic Bayesian networks、Partially Observable Markov Decision Processes (POMDPs)等。
+
+## 递归最小二乘法
+
+http://www.blog.huajh7.com/adaptive-filters-lms-rls-kalman-filter-1/
+
+## 卡尔曼滤波
+
+>注：Rudolf (Rudi) Emil Kálmán，1930～2016，匈牙利出生的美国科学家。哥伦比亚大学博士（1957），先后执教于斯坦福大学和佛罗里达大学。现代控制理论的里程碑人物，美国科学院院士。   
+>卡尔曼滤波从纯数学的角度讲，并没有多大意义。因此，主流数学家们在很长一段时间内，并不承认Kálmán是数学家。只是由于卡尔曼滤波在工程界的巨大影响力，才不得不于2012年，授予其美国数学协会院士。
+
+Kalman filters是一种高斯线性滤波器。
+
+参考：
+
+http://www.cs.unc.edu/~welch/media/pdf/kalman_intro.pdf
+
+Gregory Francis Welch写的卡尔曼滤波科普文。
+
+>注：Gregory Francis Welch，北卡罗莱娜大学博士（1997）。中佛罗里达大学教授。
+
+http://www.cs.unc.edu/~welch/kalman/media/misc/kalman_intro_chinese.zip
+
+上文的中文版。
+
+https://zhuanlan.zhihu.com/p/21294526
+
+知乎诸位大神的科普文。
+
+http://www.docin.com/p-976961701.html
+
+动态相对定位中自适应滤波方法的研究
+
+《自适应动态导航定位》，杨元喜著。
+
+>注：杨元喜，1956年生，大地测量学家。中国科学院院士。
+
 

@@ -24,6 +24,14 @@ $$TPR=\frac{TP}{TP+FN},FPR=\frac{FP}{TN+FP}$$
 
 ROC曲线下方的面积被称为AUC（Area Under ROC Curve）。
 
+更多内容参见下图：
+
+![](/images/article/sensitivity_and_specificity.png)
+
+原图地址：
+
+https://en.wikipedia.org/wiki/Sensitivity_and_specificity
+
 # Earth mover's distance
 
 推土机距离（EMD）是两个概率分布之间的距离度量的一种方式。如果将区间D的概率分布比作沙堆P，那么$$P_r$$和$$P_\theta$$之间的EMD距离，就是推土机将$$P_r$$改造为$$P_\theta$$所需要的工作量。
@@ -187,4 +195,23 @@ Kaggle Ensembling Guide
 https://mp.weixin.qq.com/s/QIR_l8OqvCQzXXXVY2WA1w
 
 十大你不可忽视的机器学习项目
+
+下面给几个套路图：
+
+![](/images/article/ML.png)
+
+参考：
+
+http://blog.csdn.net/aliceyangxi1987/article/details/71079448
+
+一个框架解决几乎所有机器学习问题
+
+https://docs.microsoft.com/en-us/azure/machine-learning/machine-learning-algorithm-cheat-sheet
+
+MS提供的ML算法选择指南
+
+https://mp.weixin.qq.com/s/53AcAZcCKBZI-i1CORl0bQ
+
+分分钟带你杀入Kaggle Top 1%
+
 

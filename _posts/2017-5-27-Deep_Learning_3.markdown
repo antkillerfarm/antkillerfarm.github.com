@@ -4,7 +4,43 @@ title:  深度学习（三）——词向量, RNN
 category: theory 
 ---
 
-# 词向量（续）
+# Autoencoder（续）
+
+粗看起来，这类恒等变换没有太大意义。然而这类恒等变换之所以能够成立，最根本的地方在于，隐藏层的神经元具有表达输出样本的能力，也就是用低维表达高维的能力。反过来，我们就可以利用这一点，实现数据的降维操作。
+
+但是，不是所有的数据都能够降维，而这种情况通常会导致Autoencoder的训练失败。
+
+和Autoencoder类似的神经网络还有：Denoising Autoencoder（DAE）、Variational Autoencoder（VAE）、Sparse Autoencoder（SAE）。
+
+参考：
+
+http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/
+
+http://blog.csdn.net/changyuanchn/article/details/15681853
+
+深度学习之autoencoder
+
+http://www.cnblogs.com/neopenx/p/4370350.html
+
+降噪自动编码器（Denoising Autoencoder)
+
+# 词向量
+
+## One-hot Representation
+
+NLP是ML和DL的重要研究领域。但是多数的ML或DL算法都是针对数值进行计算的，因此如何将自然语言中的文本表示为数值，就成为了一个重要的基础问题。
+
+词向量顾名思义就是单词的向量化表示。最简单的词向量表示法当属**One-hot Representation**：
+
+假设语料库的单词表中有N个单词，则词向量可表示为N维向量$$[0,\dots,0,1,0,\dots,0]$$
+
+这种表示法由于N维向量中只有一个非零元素，故名。该非零元素的序号，就是所表示的单词在单词表中的序号。
+
+One-hot Representation的缺点在于：
+
+1.该表示法中，由于任意两个单词的词向量都是正交的，因此无法反映单词之间的语义相似度。
+
+2.一个词库的大小是$$10^5$$以上的量级。维度过高，会妨碍神经网络学习到稀疏特征。
 
 ## Word Embedding
 
@@ -67,6 +103,8 @@ CBOW（Continuous Bag-of-Words Model）模型和Skip-gram（Continuous Skip-gram
 word2vec的输出层有两种模型：Hierarchical Softmax和Negative Sampling。
 
 Softmax是DL中常用的输出层结构，它表征**多分类中的每一个分类所对应的概率**。
+
+然而在这里，每个分类表示一个单词，即：分类的个数=词汇表的单词个数。如此众多的分类直接映射到隐层，显然并不容易训练出有效特征。
 
 Hierarchical Softmax是Softmax的一个变种。这时的输出层不再是一个扁平的多分类层，而变成了一个层次化的二分类层。
 
@@ -146,6 +184,8 @@ https://github.com/facebookresearch/fastText
 
 然而关联性并非都是坏事，有的时候也会起到意想不到的效果。比如在客服对话的案例中，客户可能会提供自己的收货地址，显然每个客户的地址都是不同的，但是有意思的是，这些地址的词向量是非常相似的。
 
+总之，**只利用无标注数据训练得到的Word Embedding在匹配度计算的实用效果上和主题模型技术相差不大，它们本质上都是基于共现信息的训练。**
+
 参考：
 
 https://www.zhihu.com/question/22266868
@@ -158,7 +198,17 @@ http://www.cnblogs.com/iloveai/p/word2vec.html
 
 word2vec前世今生
 
+http://www.cnblogs.com/maybe2030/p/5427148.html
+
+文本深度表示模型——word2vec&doc2vec词向量模型
+
+https://www.zhihu.com/question/29978268
+
+如何用word2vec计算两个句子之间的相似度？
+
 # RNN
+
+## RNN的基本结构
 
 RNN是Recurrent Neural Network和Recursive Neural Network的简称。前者主要用于处理和时序相关的输入，而后者目前已经没落。本文只讨论前者。
 
@@ -168,55 +218,15 @@ RNN是Recurrent Neural Network和Recursive Neural Network的简称。前者主�
 
 从静态结构图可以看出RNN实际上和3层MLP的结构，是基本类似的。差别在于RNN的隐藏层多了一个指向自己的环状结构。
 
-上图的展开箭头右边是RNN的时序展开结构图。
+上图的展开箭头右边是RNN的时序展开结构图。从纵向来看，它只是一个3层的浅层神经网络，然而从横向来看，它却是一个深层的神经网络。可见神经网络深浅与否，不仅和模型本身的层数有关，也与神经元之间的连接方式密切相关。
 
-《On the difficulty of training recurrent neural networks》
+虽然理论上，我们可以给每一时刻赋予不同的$$U,V,W$$，然而出于简化计算和稀疏度的考量，RNN所有时刻的$$U,V,W$$都是相同的。
 
-http://proceedings.mlr.press/v28/pascanu13.pdf
+RNN的误差反向传播算法，被称作**Backpropagation Through Time**。其主要公式如下：
 
-参考：
+$$\nabla U=\frac{\partial E}{\partial U}=\sum_t\frac{\partial e_t}{\partial U} \\\nabla V=\frac{\partial E}{\partial V}=\sum_t\frac{\partial e_t}{\partial V} \\\nabla W=\frac{\partial E}{\partial W}=\sum_t\frac{\partial e_t}{\partial W}$$
 
-http://blog.csdn.net/aws3217150/article/details/50768453
+从上式可以看出，三个误差梯度实际上都是**时域的积分**。
 
-递归神经网络(RNN)简介
-
-http://blog.csdn.net/heyongluoyao8/article/details/48636251
-
-循环神经网络(RNN, Recurrent Neural Networks)介绍
-
-http://mp.weixin.qq.com/s?__biz=MzIzODExMDE5MA==&mid=2694182661&idx=1&sn=ddfb3f301f5021571992824b21ddcafe
-
-循环神经网络
-
-http://www.wildml.com/2015/10/recurrent-neural-networks-tutorial-part-3-backpropagation-through-time-and-vanishing-gradients/
-
-Backpropagation Through Time算法
-
-https://baijia.baidu.com/s?old_id=560025
-
-Tomas Mikolov详解RNN与机器智能的实现
-
-# LSTM
-
-![](/images/article/LSTM.png)
-
-
-
-http://www.jianshu.com/p/9dc9f41f0b29
-
-理解LSTM网络
-
-http://www.csdn.net/article/2015-06-05/2824880
-
-深入浅出LSTM神经网络
-
-https://zhuanlan.zhihu.com/p/25821063
-
-循环神经网络——scan实现LSTM
-
-http://blog.csdn.net/a635661820/article/details/45390671
-
-LSTM简介以及数学推导(FULL BPTT)
-
-
+正因为RNN的状态和过去、现在都有关系，因此，RNN也被看作是一种拥有“记忆性”的神经网络。
 

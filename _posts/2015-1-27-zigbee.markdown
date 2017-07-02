@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ZigBee，ZStack
+title:  ZigBee, ZStack
 category: technology 
 ---
 

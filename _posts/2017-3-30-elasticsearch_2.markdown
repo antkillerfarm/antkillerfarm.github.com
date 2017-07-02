@@ -307,6 +307,10 @@ https://mp.weixin.qq.com/s/tH-1XTEC-S7bIFoDdDK5CQ
 
 如何给机器人一双慧眼：从视觉SLAM技术说起！
 
+https://mp.weixin.qq.com/s/YLhECwwig9f21zk1-PNiTw
+
+25篇车辆检测与分类DL文章读懂自动驾驶
+
 # Spring
 
 Spring是一个Java Web应用框架。官网：

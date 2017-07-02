@@ -4,11 +4,23 @@ title:  深度学习（二）——深度学习常用术语解释, Neural Networ
 category: theory 
 ---
 
+# Dropout（续）
+
+除了Dropout之外，还有**DropConnect**。两者原理上类似，后者只隐藏神经元之间的连接。
+
+总的来说，Dropout类似于机器学习中的L1、L2规则化等增加稀疏性的算法，也类似于随机森林、模拟退火之类的增加随机性的算法。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/23178423
+
+Dropout解决过拟合问题
+
 # 深度学习常用术语解释
 
 ## 深度学习中epoch、batch size、iterations的区别
 
-one epoch：所有的训练样本完成一次Forword运算以及一次BP运算
+one epoch：所有的训练样本完成一次Forword运算以及一次BP运算。
 
 batch size：一次Forword运算以及BP运算中所需要的训练样本数目，其实深度学习每一次参数的更新所需要损失函数并不是由一个{data：label}获得的，而是由一组数据加权得到的，这一组数据的数量就是[batch size]。当然batch size越大，所需的内存就越大，要量力而行。
 
@@ -25,10 +37,6 @@ Vanilla是神经网络领域的常见词汇，比如Vanilla Neural Networks、Va
 weight decay（权值衰减）的使用既不是为了提高收敛精确度，也不是为了提高收敛速度，其最终目的是防止过拟合。在损失函数中，weight decay是放在正则项（regularization）前面的一个系数，正则项一般指示模型的复杂度，所以weight decay的作用是调节模型复杂度对损失函数的影响，若weight decay很大，则复杂的模型损失函数的值也就大。
 
 https://mp.weixin.qq.com/s/W4d2fkiJig--PuDPM11ozA
-
-## momentum
-
-momentum是梯度下降法中一种常用的加速技术。如果上一次的momentum与这一次的负梯度方向是相同的，那这次下降的幅度就会加大，所以这样做能够达到加速收敛的过程。
 
 ## Batch Normalization
 
@@ -52,6 +60,32 @@ Batch Normalization是Google提出的一种神经网络优化技巧。
 
 3.减少模型训练对初始化的依赖。
 
+类似的概念还有Weight Normalization和Layer Normalization。
+
+以下是它们的特点：
+
+### Batch Normalization
+
+对于batch size比较小的时候，效果非常不好，而batch size越大，那么效果则越好，因为其本质上是要通过mini-batch得到对整个数据集的无偏估计；
+
+在训练阶段和推理阶段的计算过程是不一样的；
+
+在CNN上表现较好，而不适用于RNN甚至LSTM
+
+### Weight Normalization
+
+计算简单，易于理解
+
+相比于其他两种方法，其训练起来不太稳定，非常依赖于输入数据的分布。
+
+### Layer Normalization
+
+不依赖于batch size的大小，即使对于batch size为1的在线学习，也可以完美适应；
+
+训练阶段和推理阶段的计算过程完全一样。
+
+适用于RNN或LSTM，而在CNN上表现一般。
+
 参考：
 
 http://www.cnblogs.com/neopenx/p/5211969.html
@@ -65,6 +99,14 @@ https://www.zhihu.com/question/38102762
 http://jiangqh.info/Batch-Normalization%E8%AF%A6%E8%A7%A3/
 
 Batch Normalization详解
+
+https://mp.weixin.qq.com/s/OAn8y_uJTgyrtS2ZCyudlg
+
+Batch Normalization原理及其TensorFlow实现
+
+https://mp.weixin.qq.com/s/EBRYlCoj9rwf0NQY0B4nhQ
+
+Layer Normalization原理及其TensorFlow实现
 
 ## 鞍点
 
@@ -84,7 +126,13 @@ LeCun和Bengio的研究表明，在high-D(高维)的情况下，局部最小会�
 
 首先，神经网络对于学习样本数量的要求非常高，基本比浅层模型多2～3个数量级，因此过拟合的风险并不太大。
 
-其次，过拟合的危害也没有欠拟合那么高。欠拟合可能会导致同样的训练样本，在两次不同训练中，所生成的模型，对于同一测试样本集的大多数结论完全相反。而过拟合并没有这么夸张的效果。
+其次，过拟合的危害也没有欠拟合那么高。比如下面的场景：
+
+1.对同一训练样本集$$T_1$$，进行两次训练，分别得到模型$$M_1,M_2$$。
+
+2.使用$$M_1,M_2$$对同一测试样本集$$T_2$$进行预测，得到预测结果集$$P_1,P_2$$。
+
+3.如果$$P_1,P_2$$的结论基本相反的话，则说明发生了欠拟合现象。而过拟合则并没有这么夸张的效果。
 
 # Neural Network Zoo
 
@@ -95,6 +143,18 @@ LeCun和Bengio的研究表明，在high-D(高维)的情况下，局部最小会�
 上图的原地址为：
 
 http://www.asimovinstitute.org/neural-network-zoo/
+
+单元结构：
+
+![](/images/article/neuralnetworkcells.png)
+
+层结构：
+
+![](/images/article/neuralnetworkgraphs.png)
+
+上图的原地址为：
+
+http://www.asimovinstitute.org/neural-network-zoo-prequel-cells-layers/
 
 # CNN
 
@@ -119,6 +179,10 @@ CNN的直观解释
 这里以最经典的LeNet-5为例，提点一下CNN的要点。
 
 ![](/images/article/LeNet_5.jpg)
+
+LeNet-5的caffe模板：
+
+https://github.com/BVLC/caffe/blob/master/examples/mnist/lenet.prototxt
 
 ### 卷积
 
@@ -154,6 +218,22 @@ LeNet-5最后一步的Gaussian Connections是一个当年的历史遗迹，目�
 
 上图是若干ML、DL算法按照不同维度划分的情况。
 
+## CNN的反向传播算法
+
+由于卷积和池化两层，不是一般的神经网络结构。因此CNN的反向传播算法实际上也是很有技巧的。
+
+参见：
+
+http://www.cnblogs.com/pinard/p/6494810.html
+
+卷积神经网络(CNN)反向传播算法
+
+卷积的反向传播，有时也被称为反卷积。
+
+![](/images/article/dcign.png)
+
+上图是Deep convolutional inverse graphics networks的结构图。DCIGN实际上是一个正向CNN连上一个反向CNN，以实现图片合成的目的。
+
 ## 参考
 
 http://lib.csdn.net/article/deeplearning/58185
@@ -164,10 +244,6 @@ http://blog.csdn.net/Fate_fjh/article/details/52882134
 
 卷积神经网络系列blog
 
-http://mp.weixin.qq.com/s/ZKMi4gRfDRcTxzKlTQb-Mw
-
-计算机视觉识别简史：从AlexNet、ResNet到Mask RCNN
-
 http://mp.weixin.qq.com/s/YRwGwelyA3VOYZ4XGAjUBw
 
 CNN 感受野首次可视化：深入解读及计算指南
@@ -175,22 +251,6 @@ CNN 感受野首次可视化：深入解读及计算指南
 http://mp.weixin.qq.com/s/dvuX3Ih_DZrv0kgqFn8-lg
 
 卷积神经网络结构变化——可变形卷积网络deformable convolutional networks
-
-http://mp.weixin.qq.com/s/kbHzA3h-CfTRcnkViY37MQ
-
-详解CNN五大经典模型:Lenet，Alexnet，Googlenet，VGG，DRL
-
-https://zhuanlan.zhihu.com/p/22094600
-
-Deep Learning回顾之LeNet、AlexNet、GoogLeNet、VGG、ResNet
-
-http://www.leiphone.com/news/201609/303vE8MIwFC7E3DB.html
-
-Google最新开源Inception-ResNet-v2，借助残差网络进一步提升图像分类水准
-
-http://mp.weixin.qq.com/s/2TUw_2d36uFAiJTkvaaqpA
-
-解读Keras在ImageNet中的应用：详解5种主要的图像识别模型
 
 # Autoencoder
 
@@ -208,39 +268,4 @@ Autoencoder的结构如上图所示。它的特殊之处在于：
 
 2.隐藏层的神经元数量小于样本的维度。
 
-粗看起来，这类恒等变换没有太大意义。然而这类恒等变换之所以能够成立，最根本的地方在于，隐藏层的神经元具有表达输出样本的能力，也就是用低维表达高维的能力。反过来，我们就可以利用这一点，实现数据的降维操作。
-
-但是，不是所有的数据都能够降维，而这种情况通常会导致Autoencoder的训练失败。
-
-和Autoencoder类似的神经网络还有：Denoising Autoencoder（DAE）、Variational Autoencoder（VAE）、Sparse Autoencoder（SAE）。
-
-参考：
-
-http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/
-
-http://blog.csdn.net/changyuanchn/article/details/15681853
-
-深度学习之autoencoder
-
-http://www.cnblogs.com/neopenx/p/4370350.html
-
-降噪自动编码器（Denoising Autoencoder)
-
-# 词向量
-
-## One-hot Representation
-
-NLP是ML和DL的重要研究领域。但是多数的ML或DL算法都是针对数值进行计算的，因此如何将自然语言中的文本表示为数值，就成为了一个重要的基础问题。
-
-词向量顾名思义就是单词的向量化表示。最简单的词向量表示法当属**One-hot Representation**：
-
-假设语料库的单词表中有N个单词，则词向量可表示为N维向量$$[0,\dots,0,1,0,\dots,0]$$
-
-这种表示法由于N维向量中只有一个非零元素，故名。该非零元素的序号，就是所表示的单词在单词表中的序号。
-
-One-hot Representation的缺点在于：
-
-1.该表示法中，由于任意两个单词的词向量都是正交的，因此无法反映单词之间的语义相似度。
-
-2.一个词库的大小是$$10^5$$以上的量级。维度过高，会妨碍神经网络学习到稀疏特征。
 
