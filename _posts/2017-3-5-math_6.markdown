@@ -210,8 +210,6 @@ Learning to Rank入门小结
 
 FPN (Feature Pyramid Network)
 
-从DPM，RCNN，fast-RCNN到faster-RCNN，现在又来个mask-RCNN
-
 http://www.cnblogs.com/pinard/p/6221564.html
 
 谱聚类（spectral clustering）原理总结

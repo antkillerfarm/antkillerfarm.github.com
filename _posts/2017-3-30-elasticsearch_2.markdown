@@ -155,6 +155,10 @@ http://www.jianshu.com/p/0b4346f503e3
 
 探索elasticsearch。该文包含如何使用ES进行TF/IDF的方法
 
+https://my.oschina.net/taogang/blog/983586
+
+ElasticSearch对比Splunk
+
 # WebService
 
 WebService经过近二十年的发展，已经有非常多的框架了。知名的有：Axis1、Axis2、Xfire、CXF、JWS等。

@@ -1,10 +1,20 @@
 ---
 layout: post
-title:  深度学习（四）——LSTM, 神经元激活函数进阶, DRN, Bi-directional RNN, Attention
+title:  深度学习（四）——LSTM, 神经元激活函数进阶, DRN, Bi-directional RNN
 category: theory 
 ---
 
-# RNN（续）
+# RNN
+
+## RNN的基本结构（续）
+
+RNN的误差反向传播算法，被称作**Backpropagation Through Time**。其主要公式如下：
+
+$$\nabla U=\frac{\partial E}{\partial U}=\sum_t\frac{\partial e_t}{\partial U} \\\nabla V=\frac{\partial E}{\partial V}=\sum_t\frac{\partial e_t}{\partial V} \\\nabla W=\frac{\partial E}{\partial W}=\sum_t\frac{\partial e_t}{\partial W}$$
+
+从上式可以看出，三个误差梯度实际上都是**时域的积分**。
+
+正因为RNN的状态和过去、现在都有关系，因此，RNN也被看作是一种拥有“记忆性”的神经网络。
 
 ## RNN的训练困难
 
@@ -55,6 +65,10 @@ https://sanwen8.cn/p/3f8sRTh.html
 http://blog.csdn.net/shenxiaolu1984/article/details/71508892
 
 RNN的梯度消失/爆炸与正交初始化
+
+https://mp.weixin.qq.com/s/vHQ1WbADHAISXCGxOqnP2A
+
+看大牛如何复盘递归神经网络！
 
 # LSTM
 
@@ -147,6 +161,10 @@ https://mp.weixin.qq.com/s/x3y9WTuVFYQb60eJvw02HQ
 
 如何解决LSTM循环神经网络中的超长序列问题
 
+https://mp.weixin.qq.com/s/IhCfoabRrtjvQBIQMaPpNQ
+
+从任务到可视化，如何理解LSTM网络中的神经元
+
 # 神经元激活函数进阶
 
 在《深度学习（一、二）》中，我们探讨了ReLU相对于sigmoid函数的改进，以及一些保证深度神经网络能够训练的措施。然而即便如此，深度神经网络的训练仍然是一件非常困难的事情，还需要更多的技巧和方法。
@@ -235,23 +253,5 @@ https://www.leiphone.com/news/201608/vhqwt5eWmUsLBcnv.html
 ![](/images/article/Bi_directional_RNN.png)
 
 从图中可以看出，Bi-directional RNN有两个隐层，分别处理前向和后向的时序信息。
-
-# Attention
-
-倒序句子这种方法属于“hack”手段。它属于被实践证明有效的方法，而不是有理论依据的解决方法。
-
-大多数翻译的基准都是用法语、德语等语种，它们和英语非常相似（即使汉语的词序与英语也极其相似）。但是有些语种（像日语）句子的最后一个词语在英语译文中对第一个词语有高度预言性。那么，倒序输入将使得结果更糟糕。
-
-还有其它办法吗？那就是Attention机制。
-
-![](/images/article/attention.png)
-
-上图是Attention机制的结构图。y是编码器生成的译文词语，x是原文的词语。上图使用了双向递归网络，但这并不是重点，你先忽略反向的路径吧。重点在于现在每个解码器输出的词语$$y_t$$取决于所有输入状态的一个权重组合，而不只是最后一个状态。a是决定每个输入状态对输出状态的权重贡献。因此，如果$$a_{3,2}$$的值很大，这意味着解码器在生成译文的第三个词语时，会更关注于原文句子的第二个状态。a求和的结果通常归一化到1（因此它是输入状态的一个分布）。
-
-Attention机制的一个主要优势是它让我们能够解释并可视化整个模型。举个例子，通过对attention权重矩阵a的可视化，我们能够理解模型翻译的过程。
-
-![](/images/article/attention_2.png)
-
-我们注意到当从法语译为英语时，网络模型顺序地关注每个输入状态，但有时输出一个词语时会关注两个原文的词语，比如将“la Syrie”翻译为“Syria”。
 
 

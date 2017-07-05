@@ -169,4 +169,6 @@ state of the art： 目前最高水平
 
 w.r.t.： 关于
 
+Curriculum Vitae：拉丁语。原意指生活道路，现引申为简历，多指学术履历，缩写是CV。
+
 

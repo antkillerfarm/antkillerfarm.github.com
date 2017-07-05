@@ -168,7 +168,9 @@ https://mp.weixin.qq.com/s/HJ6uZEYOQFvgR5bZBs5_dA
 
 全球100款大数据工具汇总
 
+https://mp.weixin.qq.com/s/0ek_bGUZ2EbYEX-kq3YByg
 
+大数据：目前99%数据是无用僵尸数据，90%的数据产品是伪需求！
 
 ## 有用的blog
 

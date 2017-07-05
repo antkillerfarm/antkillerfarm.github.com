@@ -162,6 +162,10 @@ https://mp.weixin.qq.com/s/2j_6hdq-MhybO_B0S7DRCA
 
 如何解决机器学习中数据不平衡问题
 
+https://mp.weixin.qq.com/s/gEq7opXLukWD5MVhw_buGA
+
+七招教你处理非平衡数据
+
 http://www.jianshu.com/p/1aa67a321e33
 
 SVM和Logistic Regression分别在什么时候使用？
@@ -209,6 +213,18 @@ http://www.aixchina.net/Article/178589
 https://zhuanlan.zhihu.com/p/25509178
 
 解析微信朋友圈的lookalike算法
+
+https://mp.weixin.qq.com/s/XX0hBHKUgyK6v3iy-wkTmw
+
+机器学习各类算法比较
+
+https://mp.weixin.qq.com/s/LuuvvL9yZ3ucXxRq0pZfsg
+
+优化策略：Label Smoothing Regularization_LSR原理分析
+
+https://mp.weixin.qq.com/s/ghJohTkCuHPub-iD8UphKw
+
+如何用Python和机器学习炒股赚钱？
 
 # PMML
 

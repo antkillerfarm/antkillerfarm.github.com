@@ -1,10 +1,26 @@
 ---
 layout: post
-title:  深度学习（五）——seq2seq, DMN, CNN进化史
+title:  深度学习（五）——Attention, seq2seq, DMN, CNN进化史
 category: theory 
 ---
 
-# Attention（续）
+# Attention
+
+倒序句子这种方法属于“hack”手段。它属于被实践证明有效的方法，而不是有理论依据的解决方法。
+
+大多数翻译的基准都是用法语、德语等语种，它们和英语非常相似（即使汉语的词序与英语也极其相似）。但是有些语种（像日语）句子的最后一个词语在英语译文中对第一个词语有高度预言性。那么，倒序输入将使得结果更糟糕。
+
+还有其它办法吗？那就是Attention机制。
+
+![](/images/article/attention.png)
+
+上图是Attention机制的结构图。y是编码器生成的译文词语，x是原文的词语。上图使用了双向递归网络，但这并不是重点，你先忽略反向的路径吧。重点在于现在每个解码器输出的词语$$y_t$$取决于所有输入状态的一个权重组合，而不只是最后一个状态。a是决定每个输入状态对输出状态的权重贡献。因此，如果$$a_{3,2}$$的值很大，这意味着解码器在生成译文的第三个词语时，会更关注于原文句子的第二个状态。a求和的结果通常归一化到1（因此它是输入状态的一个分布）。
+
+Attention机制的一个主要优势是它让我们能够解释并可视化整个模型。举个例子，通过对attention权重矩阵a的可视化，我们能够理解模型翻译的过程。
+
+![](/images/article/attention_2.png)
+
+我们注意到当从法语译为英语时，网络模型顺序地关注每个输入状态，但有时输出一个词语时会关注两个原文的词语，比如将“la Syrie”翻译为“Syria”。
 
 如果再仔细观察attention的等式，我们会发现attention机制有一定的成本。我们需要为每个输入输出组合分别计算attention值。50个单词的输入序列和50个单词的输出序列需要计算2500个attention值。这还不算太糟糕，但如果你做字符级别的计算，而且字符序列长达几百个字符，那么attention机制将会变得代价昂贵。
 
@@ -132,7 +148,7 @@ http://blog.csdn.net/javafreely/article/details/71994247
 
 ## AlexNet
 
-2012年，Imagenet比赛冠军的model——Alexnet（以第一作者alex命名）的结构图如下：
+2012年，ILSVRC比赛冠军的model——Alexnet（以第一作者Alex命名）的结构图如下：
 
 ![](/images/article/AlexNet.png)
 
@@ -160,9 +176,45 @@ AlexNet作为第一个现代意义上的CNN，它的意义主要包括：
 
 5.当然最应该感谢的是李飞飞团队搞出来的标注数据集合ImageNet。
 
+>注：ILSVRC（Large Scale Visual Recognition Challenge）大赛，在2016年以前，一直是CV界的顶级赛事。但随着技术的成熟，目前的科研重点已经转移到了其他领域。
+
 ## VGG
 
+Visual Geometry Group是牛津大学的一个科研团队。他们推出的一系列深度模型，被称作VGG模型。
 
+VGG的结构图如下：
+
+![](/images/article/vgg.png)
+
+该系列包括A/A-LRN/B/C/D/E等6个不同的型号。其中的D/E，根据其神经网络的层数，也被称为VGG16/VGG19。
+
+从原理角度，VGG相比AlexNet并没有太多的改进。其最主要的意义就是实践了“**神经网络越深越好**”的理念。也是自那时起，神经网络逐渐有了“深度学习”这个别名。
+
+## GoogleNet
+
+GoogleNet的进化道路和VGG有所不同。VGG实际上就是“大力出奇迹”的暴力模型，其他地方不足称道。
+
+而GoogleNet不仅继承了VGG“越深越好”的理念，对于网络结构本身也作了大胆的创新。可以对比的是，AlexNet有60M个参数，而GoogleNet只有4M个参数。
+
+因此，在ILSVRC 2014大赛中，GoogleNet获得第一名，而VGG屈居第二。
+
+![](/images/article/GoogleNet.jpg)
+
+上图是GoogleNet的结构图。从中可以看出，GoogleNet除了AlexNet的基本要素之外，还有被称作Inception的结构。
+
+![](/images/article/inception.png)
+
+上图是Inception的结构图。它的原理实际上就是**将不同尺寸的卷积组合起来，以提供不同尺寸的特征**。
+
+原始的GoogleNet也被称作Inception-v1。在后面的几年，GoogleNet还提出了几种改进的版本，最新的一个是Inception-v4（2016.8）。
+
+论文：
+
+《Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning》
+
+Inception系列的改进方向基本都集中在构建不同的Inception模型上。
+
+GoogleNet的另一个改进是**减少了全连接层**（Full Connection, FC），这是减少模型参数的一个重要改进。事实上，在稍后的实践中，人们发现去掉VGG的第一个FC层，对于效果几乎没有任何影响。
 
 ## 参考
 
@@ -202,4 +254,7 @@ http://simtalk.cn/2016/09/12/CNNs/
 
 CNN简介
 
+http://www.cnblogs.com/Allen-rg/p/5833919.html
+
+GoogLeNet学习心得
 

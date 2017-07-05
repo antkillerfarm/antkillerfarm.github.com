@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 我的手机简史（二），对Geoffrey Everest Hinton的深度挖掘
+title: 我的手机简史（二），对Geoffrey Everest Hinton的深度挖掘, Thach Weave, VT引信
 category: essay 
 ---
 

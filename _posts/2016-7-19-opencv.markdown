@@ -216,10 +216,6 @@ http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-t
 
 神经网络的分布式训练
 
-https://www.zhihu.com/question/35887527
-
-如何评价rcnn、fast-rcnn和faster-rcnn这一系列方法？
-
 https://www.zhihu.com/question/47642307
 
 语音识别中的CTC方法的基本原理
@@ -275,10 +271,6 @@ Yoshua Bengio等大神传授：26条深度学习经验
 http://mp.weixin.qq.com/s/G4lQqiiVvmCW9SmX2blDEg
 
 实战——目标检测与识别
-
-https://mp.weixin.qq.com/s/L04yE6J8n-Z7Cl9yt6kphA
-
-约翰霍普金斯大学计算机科学系Jason Eisner教授总结了一系列的自然语言处理优秀教学资源
 
 https://mp.weixin.qq.com/s/KoRXcV-ujIT-5eO4RUkWYw
 
@@ -415,4 +407,8 @@ http://mp.weixin.qq.com/s/qW_RZ--df6MjaKNgNdjeWA
 http://www.cs.cmu.edu/~tom/10701_sp11/lectures.shtml
 
 CMU的Machine Learning
+
+https://mp.weixin.qq.com/s/MlM39pbyr5G7Crgq0j4PGw
+
+Bengio领衔：DeepMind、谷歌大脑核心研究员2017深度学习最新报告（该课程只适合有深度学习基础的人）
 

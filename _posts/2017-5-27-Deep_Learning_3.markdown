@@ -24,6 +24,14 @@ http://www.cnblogs.com/neopenx/p/4370350.html
 
 降噪自动编码器（Denoising Autoencoder)
 
+https://zhuanlan.zhihu.com/p/27549418
+
+花式解释AutoEncoder与VAE
+
+https://mp.weixin.qq.com/s/lODy8ucB3Bw9Y1sy1NxTJg
+
+无监督学习中的两个非概率模型：稀疏编码与自编码器
+
 # 词向量
 
 ## One-hot Representation
@@ -206,6 +214,10 @@ https://www.zhihu.com/question/29978268
 
 如何用word2vec计算两个句子之间的相似度？
 
+https://mp.weixin.qq.com/s/wcFlZPbB5dl6C87kdfjmKw
+
+NE(Network Embedding)论文小览
+
 # RNN
 
 ## RNN的基本结构
@@ -222,11 +234,4 @@ RNN是Recurrent Neural Network和Recursive Neural Network的简称。前者主�
 
 虽然理论上，我们可以给每一时刻赋予不同的$$U,V,W$$，然而出于简化计算和稀疏度的考量，RNN所有时刻的$$U,V,W$$都是相同的。
 
-RNN的误差反向传播算法，被称作**Backpropagation Through Time**。其主要公式如下：
-
-$$\nabla U=\frac{\partial E}{\partial U}=\sum_t\frac{\partial e_t}{\partial U} \\\nabla V=\frac{\partial E}{\partial V}=\sum_t\frac{\partial e_t}{\partial V} \\\nabla W=\frac{\partial E}{\partial W}=\sum_t\frac{\partial e_t}{\partial W}$$
-
-从上式可以看出，三个误差梯度实际上都是**时域的积分**。
-
-正因为RNN的状态和过去、现在都有关系，因此，RNN也被看作是一种拥有“记忆性”的神经网络。
 
