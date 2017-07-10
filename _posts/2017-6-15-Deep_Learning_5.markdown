@@ -60,6 +60,10 @@ http://blog.csdn.net/leo_xu06/article/details/53491400
 
 视觉注意力的循环神经网络模型
 
+https://mp.weixin.qq.com/s/xr_1ZYbvADMMwgxLEAflCw
+
+如何在语言翻译中理解Attention Mechanism？
+
 # seq2seq
 
 seq2seq最早用于Neural Machine Translation领域（与之相对应的有Statistical Machine Translation）。训练后的seq2seq模型，可以根据输入语句，自动生成翻译后的输出语句。

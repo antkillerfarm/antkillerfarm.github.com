@@ -6,6 +6,8 @@ category: theory
 
 # 目标检测
 
+## 概述
+
 object detection是计算机视觉的一个重要的分支。类似的分支还有目标分割、目标识别和目标跟踪。
 
 以下摘录自Sensetime CTO曹旭东的解读：
@@ -30,29 +32,21 @@ https://mp.weixin.qq.com/s/r9tXvKIN-eqKW_65yFyOew
 
 谷歌开源TensorFlow Object Detection API
 
-## YOLO
+## 进化史
 
-YOLO: Real-Time Object Detection，是一个基于神经网络的实时对象检测软件。
+DPM(2007)->RCNN(2014)->Fast RCNN->Faster RCNN
 
-官网：
-
-https://pjreddie.com/darknet/yolo/
-
-## SSD
-
-论文：
-
-《SSD: Single Shot MultiBox Detector》
+![](/images/article/rcnn_2.png)
 
 参考：
 
-http://www.jianshu.com/p/ebebfcd274e6
+http://blog.csdn.net/ttransposition/article/details/12966521
 
-Caffe-SSD 训练自己的数据集教程
+DPM(Deformable Parts Model)--原理
 
 # RCNN
 
-《深度学习（五）》中提到的AlexNet、VGG、GoogleNet主要用于图片分类。而这里介绍的RCNN主要用于目标检测。
+《深度学习（五）》中提到的AlexNet、VGG、GoogleNet主要用于图片分类。而这里介绍的RCNN(Regions with CNN)主要用于目标检测。
 
 ## 车牌识别的另一种思路
 
@@ -91,18 +85,57 @@ RCNN相对传统方法的改进：
 
 **速度**：经典的目标检测算法使用滑动窗法依次判断所有可能的区域。RCNN则(采用Selective Search方法)预先提取一系列较可能是物体的候选区域，之后仅在这些候选区域上(采用CNN)提取特征，进行判断。
 
-**训练集**：经典的目标检测算法在区域中提取人工设定的特征。RCNN则采用深度网络进行特征提取。使用两个数据库：一个较大的识别库（ImageNet ILSVC 2012）：标定每张图片中物体的类别。一千万图像，1000类。一个较小的检测库（PASCAL VOC 2007）：标定每张图片中，物体的类别和位置，一万图像，20类。RCNN使用识别库进行预训练得到CNN（有监督预训练），而后用检测库调优参数，最后在检测库上评测。
+**训练集**：经典的目标检测算法在区域中提取人工设定的特征。RCNN则采用深度网络进行特征提取。
 
+使用两个数据库：
 
+一个较大的识别库（ImageNet ILSVC 2012）：标定每张图片中物体的类别。一千万图像，1000类。
 
+一个较小的检测库（PASCAL VOC 2007）：标定每张图片中，物体的类别和位置，一万图像，20类。
+
+RCNN使用识别库进行预训练得到CNN（有监督预训练），而后用检测库调优参数，最后在检测库上评测。
+
+## RCNN算法的基本流程
+
+![](/images/article/rcnn.png)
+
+候选区域生成：一张图像生成1K~2K个候选区域 （采用Selective Search 方法）。
+
+特征提取：对每个候选区域，使用深度卷积网络提取特征（CNN）。
+
+类别判断：特征送入每一类的SVM 分类器，判别是否属于该类。
+
+位置精修：使用回归器精细修正候选框位置。
 
 参考：
-
-从DPM，RCNN，fast-RCNN到faster-RCNN，现在又来个mask-RCNN
 
 https://zhuanlan.zhihu.com/p/23006190
 
 RCNN-将CNN引入目标检测的开山之作
+
+https://zhuanlan.zhihu.com/p/24774302
+
+SPPNet-引入空间金字塔池化改进RCNN
+
+https://zhuanlan.zhihu.com/p/24780395
+
+Fast R-CNN
+
+https://zhuanlan.zhihu.com/p/24916624
+
+Faster R-CNN
+
+https://zhuanlan.zhihu.com/p/24916786
+
+图解YOLO
+
+https://zhuanlan.zhihu.com/p/24954433
+
+SSD
+
+https://zhuanlan.zhihu.com/p/25167153
+
+YOLO2
 
 https://www.zhihu.com/question/35887527
 
@@ -112,9 +145,71 @@ http://blog.csdn.net/tangwei2014/article/details/50915317
 
 论文阅读笔记：You Only Look Once: Unified, Real-Time Object Detection
 
+http://blog.csdn.net/shenxiaolu1984/article/details/51066975
+
+RCNN算法详解
+
+http://blog.csdn.net/shenxiaolu1984/article/details/51036677
+
+Fast RCNN算法详解
+
+http://blog.csdn.net/shenxiaolu1984/article/details/51152614
+
+Faster RCNN算法详解
+
+https://mp.weixin.qq.com/s/XorPkuIdhRNI1zGLwg-55A
+
+斯坦福新深度学习系统 NoScope：视频对象检测快1000倍
+
+https://mp.weixin.qq.com/s/XbgmLmlt5X4TX5CP59gyoA
+
+目标检测算法精彩集锦
+
+https://mp.weixin.qq.com/s/BgTc1SE2IzNH27OC2P2CFg
+
+CVPR：经典再现，全内容跟踪
+
+## YOLO
+
+YOLO: Real-Time Object Detection，是一个基于神经网络的实时对象检测软件。
+
+官网：
+
+https://pjreddie.com/darknet/yolo/
+
+## SSD
+
+论文：
+
+《SSD: Single Shot MultiBox Detector》
+
+参考：
+
+http://www.jianshu.com/p/ebebfcd274e6
+
+Caffe-SSD 训练自己的数据集教程
+
 # 深度强化学习
 
+## 教程
+
+http://incompleteideas.net/sutton/book/the-book-2nd.html
+
+《Reinforcement Learning: An Introduction》，Richard S. Sutton和Andrew G. Barto著。
+
+>注：Richard S. Sutton，加拿大计算机科学家，麻省大学阿姆赫斯特分校博士（1984年），阿尔伯塔大学教授。强化学习之父，研究该领域长达三十余年。
+
+>Andrew G. Barto，麻省大学阿姆赫斯特分校教授。Richard S. Sutton的导师。
+
+http://web.stanford.edu/class/cs234/syllabus.html
+
+CS234: Reinforcement Learning
+
+## 概述
+
 ![](/images/article/reinforcement_learning.png)
+
+## 参考
 
 https://www.nervanasys.com/demystifying-deep-reinforcement-learning/
 
@@ -124,3 +219,10 @@ http://blog.csdn.net/young_gy/article/details/73485518
 
 强化学习之Q-learning简介
 
+https://zhuanlan.zhihu.com/p/24446336
+
+深度强化学习 Deep Reinforcement Learning 学习整理
+
+https://mp.weixin.qq.com/s/KNXD-MpVHQRXYvJKTqn6WA
+
+完善强化学习安全性：UC Berkeley提出约束型策略优化新算法

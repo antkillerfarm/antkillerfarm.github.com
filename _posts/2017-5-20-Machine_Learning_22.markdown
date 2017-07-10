@@ -106,6 +106,10 @@ http://blog.csdn.net/han_xiaoyang/article/details/10118517
 
 机器翻译评估标准介绍和计算方法
 
+http://blog.csdn.net/lcj369387335/article/details/69845385
+
+自动文档摘要评价方法---Edmundson和ROUGE
+
 # Probabilistic Robotics
 
 这篇心得主要根据Sebastian Thrun的Probabilistic Robotics课程的ppt来写。

@@ -200,6 +200,14 @@ https://www.zhihu.com/question/22266868
 
 Word2Vec如何解决多义词的问题？
 
+## All is Embedding
+
+向量化是机器学习处理非数值数据的必经之路。因此除了词向量之外，还有其他的Embedding。比如Network Embedding。
+
+https://mp.weixin.qq.com/s/wcFlZPbB5dl6C87kdfjmKw
+
+NE(Network Embedding)论文小览
+
 ## 参考
 
 http://www.cnblogs.com/iloveai/p/word2vec.html
@@ -214,9 +222,9 @@ https://www.zhihu.com/question/29978268
 
 如何用word2vec计算两个句子之间的相似度？
 
-https://mp.weixin.qq.com/s/wcFlZPbB5dl6C87kdfjmKw
+https://mp.weixin.qq.com/s/kGi-Hf7CX6OKcCMe7IC7zA
 
-NE(Network Embedding)论文小览
+NLP之Wrod2Vec三部曲
 
 # RNN
 

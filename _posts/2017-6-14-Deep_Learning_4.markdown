@@ -70,6 +70,10 @@ https://mp.weixin.qq.com/s/vHQ1WbADHAISXCGxOqnP2A
 
 看大牛如何复盘递归神经网络！
 
+https://mp.weixin.qq.com/s/0V9DeG39is_BxAYX0Yomww
+
+为何循环神经网络在众多机器学习方法中脱颖而出？ 
+
 # LSTM
 
 本篇笔记主要摘自：
@@ -164,6 +168,10 @@ https://mp.weixin.qq.com/s/x3y9WTuVFYQb60eJvw02HQ
 https://mp.weixin.qq.com/s/IhCfoabRrtjvQBIQMaPpNQ
 
 从任务到可视化，如何理解LSTM网络中的神经元
+
+https://mp.weixin.qq.com/s/GGpaFZ0crP_NQ564d79hFw
+
+LSTM、GRU与神经图灵机：详解深度学习最热门的循环神经网络
 
 # 神经元激活函数进阶
 

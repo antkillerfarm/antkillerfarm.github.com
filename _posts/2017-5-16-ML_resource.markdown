@@ -226,6 +226,22 @@ https://mp.weixin.qq.com/s/ghJohTkCuHPub-iD8UphKw
 
 如何用Python和机器学习炒股赚钱？
 
+https://mp.weixin.qq.com/s/tJ_FbL2nFQfkvKqpQJ8kmg
+
+从特征分解到协方差矩阵：详细剖析和实现PCA算法
+
+https://mp.weixin.qq.com/s/NcBGYtgiWa0uY48wnFOoVg
+
+机器学习之决策树算法
+
+https://mp.weixin.qq.com/s/D7vghfvUayLNyz5vnXurdg
+
+谷歌投资“算法商店”创始人：打造AI操作系统
+
+https://mp.weixin.qq.com/s/fXlbB7KmiX0iIv6xwSxNIA
+
+梯度下降法的三种形式BGD、SGD以及MBGD
+
 # PMML
 
 PMML(Predictive Model Markup Language) 是一个开放的工业标准，它以 XML 为载体将上述数据挖掘任务标准化，可以把某一产品所创建的数据挖掘方案应用于任何其它遵从 PMML 标准的产品或平台中 , 而不需考虑分析和预测过程中的具体实现细节。使得模型的部署摆脱了模型开发和产品整合的束缚，为商业智能产品、数据仓库和云计算中的数据挖掘模型的应用环境开拓了新的篇章。

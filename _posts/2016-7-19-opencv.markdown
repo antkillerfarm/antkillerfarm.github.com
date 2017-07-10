@@ -54,6 +54,10 @@ blog.csdn.net/jia20003/
 
 一个OpenCV on Android的blog。
 
+http://blog.csdn.net/soidnhp
+
+一个CV的blog。
+
 http://blog.csdn.net/mmz_xiaokong/article/details/7916163
 
 机器视觉开源处理库汇总。
@@ -204,6 +208,26 @@ https://zhuanlan.zhihu.com/p/25382177
 
 AI芯片怎么降功耗？
 
+https://zhuanlan.zhihu.com/p/26882794
+
+Google深度揭秘TPU
+
+https://mp.weixin.qq.com/s/1X9xiZkmVPI-j-aipr-ocg
+
+AlphaGo Master最新架构和算法，谷歌云与TPU拆解
+
+https://mp.weixin.qq.com/s/8HIZRhb-KJOtPnQtQ3GQVg
+
+第一代芯片是CPU，第二代是GPU，第三代是什么？
+
+https://mp.weixin.qq.com/s/Jof-u8oUuLR4v7t3jjXEmA
+
+GPU和线下训练
+
+https://mp.weixin.qq.com/s/2aE5fzGZeyX-oFyWbcbA5A
+
+揭开神经网络加速器的神秘面纱之DianNao
+
 http://mp.weixin.qq.com/s/8omONLSUA3cyxAQZVzBjCg
 
 5本深度学习和10本机器学习书籍
@@ -224,10 +248,6 @@ https://zhuanlan.zhihu.com/p/21344595
 
 端到端的OCR：验证码识别(LSTM+CTC)
 
-https://zhuanlan.zhihu.com/p/26882794
-
-Google深度揭秘TPU
-
 http://mp.weixin.qq.com/s/IfEgSOIkIPA-YtC9NQW1ng
 
 非神经网络的深度模型gcForest
@@ -235,18 +255,6 @@ http://mp.weixin.qq.com/s/IfEgSOIkIPA-YtC9NQW1ng
 https://mp.weixin.qq.com/s/JnGpVQDF95hHTirrZyJc_g
 
 一个降低深度学习时间，空间，经济成本的解决方案
-
-https://mp.weixin.qq.com/s/1X9xiZkmVPI-j-aipr-ocg
-
-AlphaGo Master最新架构和算法，谷歌云与TPU拆解
-
-https://mp.weixin.qq.com/s/8HIZRhb-KJOtPnQtQ3GQVg
-
-第一代芯片是CPU，第二代是GPU，第三代是什么？
-
-https://mp.weixin.qq.com/s/Jof-u8oUuLR4v7t3jjXEmA
-
-GPU和线下训练
 
 https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
 
@@ -411,4 +419,9 @@ CMU的Machine Learning
 https://mp.weixin.qq.com/s/MlM39pbyr5G7Crgq0j4PGw
 
 Bengio领衔：DeepMind、谷歌大脑核心研究员2017深度学习最新报告（该课程只适合有深度学习基础的人）
+
+https://mp.weixin.qq.com/s/a5MBQqYCWmUMLpVXhOvg8Q
+
+Yoshua Bengio深度学习暑期课程
+
 

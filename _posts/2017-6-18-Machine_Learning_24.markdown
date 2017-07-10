@@ -88,7 +88,7 @@ category: theory
 | NMT | Neural Machine Translation | 神经机器翻译 |  |
 | SMT | Statistical Machine Translation | 统计机器翻译 |  |
 | DMN | Dynamic Memory Networks | 动态记忆网络 |  |
-|  |  |  |  |
+| GAN | Generative Adversarial Networks | 生成对抗式网络 |  |
 |  |  |  |  |
 |  |  |  |  |
 

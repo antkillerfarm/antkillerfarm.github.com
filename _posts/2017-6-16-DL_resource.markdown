@@ -64,6 +64,10 @@ https://zhuanlan.zhihu.com/c_94953554
 
 深度炼丹
 
+http://blog.csdn.net/shenxiaolu1984
+
+一个DL+CV的blog
+
 ## 文章
 
 https://zhuanlan.zhihu.com/p/22888385
@@ -226,10 +230,6 @@ https://mp.weixin.qq.com/s/PKqDlbKynnCLE6JAy0NuQQ
 
 谷歌深度学习公开课任务 1: notMNIST
 
-https://mp.weixin.qq.com/s/xa3F3kCprE6DEQclas4umg
-
-GAN的数学原理
-
 https://mp.weixin.qq.com/s/PF6-txnq3SV258EfNVufSw
 
 深度学习与XGBoost在小数据集上的测评
@@ -282,125 +282,61 @@ https://mp.weixin.qq.com/s/dR2nhGqpz7OdmxKPYSaaxw
 
 如何理解空洞卷积（dilated convolution）？
 
-# NLP参考资源
+https://mp.weixin.qq.com/s/pnCdKcdRCxhFEcXyWb9xlQ
 
-https://mp.weixin.qq.com/s/L04yE6J8n-Z7Cl9yt6kphA
+深度学习助力实现智能行为分析和事件识别
 
-约翰霍普金斯大学计算机科学系Jason Eisner教授总结了一系列的自然语言处理优秀教学资源
+https://mp.weixin.qq.com/s/b0LZ2-4_hCqvxICMGzkqjg
 
-http://www.jiqizhixin.com/article/2727
+最详尽的神经网络基础
 
-ACL 2017中国研究论文解读：读懂中国自然语言处理前沿进展
+https://mp.weixin.qq.com/s/M120ZRfLoT9abWZOmgj-TQ
 
-https://mp.weixin.qq.com/s/ssWi6XIebW8M6_JePG7RZg
+面部识别技术能用来识别鲸鱼？
 
-微软的NLP帝国
+https://mp.weixin.qq.com/s/chsDjS39qcoHICUNbSdQHQ
 
-http://blog.csdn.net/lcj369387335/article/details/69845385
+长文揭秘图像处理和卷积神经网络架构
 
-自动文档摘要评价方法---Edmundson和ROUGE
+https://mp.weixin.qq.com/s/4JFzgFTvAvBs74V7AQUCrQ
 
-https://github.com/lianwj/cnn-text-classification-tf
+让照片走两步：骨骼框架辅助的人物动作生成模型
 
-Convolutional Neural Network for Text Classification in Tensorflow
+https://mp.weixin.qq.com/s/Jdd7S6JFKRdsVe2w-W01IA
 
-http://blog.csdn.net/skytree/article/details/43672627
+Facebook田渊栋开源游戏平台ELF，简化版《星际争霸》完美测试人工智能
 
-2013年7月做的一个自动应答机器人的架构
+https://mp.weixin.qq.com/s/GyE9qdXPGvrq12dMAf4nrQ
 
-https://mp.weixin.qq.com/s/mq0PdX6oB2kr_5FyoLA4ug
+论文推荐：QA，增强学习，知识图谱，机器阅读理解
 
-机器人数学考了134分，要上清华北大NLP是最大难关
+https://mp.weixin.qq.com/s/AjoBOYES4CNm68bWcBTb3A
 
-http://www.jeyzhang.com/cnn-apply-on-modelling-sentence.html
+看深度学习框架排名第一的TensorFlow如何进行时序预测！
 
-卷积神经网络(CNN)在句子建模上的应用
+https://mp.weixin.qq.com/s/DQcRqWALLuPpNabCv83Vcg
 
-https://mp.weixin.qq.com/s/uRR4Vh3PC8SFw-PD9FQLpw
+自动机器学习，神经网络自主编程
 
-命名实体识别（NER）的二三事
+https://mp.weixin.qq.com/s/xbimfckVD0Ol0T1n0-_ktA
 
-http://shiyanjun.cn/archives/548.html
+从浅层模型到深度模型：概览机器学习优化算法
 
-使用libsvm+tfidf实现文本分类
+https://mp.weixin.qq.com/s/hGvQvddD3i858XSK4z08Ug
 
-http://licstar.net/archives/328
+主要推荐系统算法总结及Youtube深度学习推荐算法实例概括
 
-词向量和语言模型
+https://mp.weixin.qq.com/s/UrMsMHAkqNHJEl5lhAvLtA
 
-http://www.toutiao.com/a6236100205026328834/
+腾讯提出并行贝叶斯在线深度学习框架PBODL：预测广告系统的点击率
 
-深度学习：推动NLP领域发展的新引擎
+https://mp.weixin.qq.com/s/cIGuJvYr4lZW01TdINBJnA
 
-http://dataunion.org/9331.html
+深度压缩网络：较大程度减少了网络参数存储问题
 
-深度学习、自然语言处理和表征方法
+https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg
 
-https://www.zhihu.com/question/46272554
+旷视科技提出新型卷积网络ShuffleNet，专为移动端设计
 
-如何评价SyntaxNet
 
-https://mp.weixin.qq.com/s/-y2vth2OGx9rAsPvEknVTg
-
-神经网络结构在命名实体识别（NER）中的应用
-
-https://mp.weixin.qq.com/s/PxyazOPKV3eB-qat8hM9ZQ
-
-神经网络语义匹配技术
-
-https://mp.weixin.qq.com/s/JgQAMknL4x7nMONzZua7tg
-
-深度学习要多深，才能读懂人话？阿里小蜜前沿探索
-
-https://mp.weixin.qq.com/s/yN0lOmA0XmqIntqLgwn-TQ
-
-我们眼中的“关系抽取”
-
-http://www.jianshu.com/p/f45c3540c56e
-
-Chatbot 架构
-
-https://mp.weixin.qq.com/s/0Jz_BSe6DI29gvWiy7poBw
-
-基于深度学习和经典方法的文本分类
-
-https://mp.weixin.qq.com/s/6cTG9347dOLxiUs_-tdpnQ
-
-百度开源：语义匹配应用介绍和源代码
-
-https://mp.weixin.qq.com/s/zfgx2iViwFm-tzBGvgHVuw
-
-百度开源：语义表示应用介绍和源代码
-
-https://mp.weixin.qq.com/s/CxpyMUPnKFCTpw6WgG0kqg
-
-依存句法分析的任务以及形式化定义
-
-http://www.csdn.net/article/2015-02-05/2823865
-
-让机器搞懂100万种隐含语义，腾讯Peacock大规模主题模型首次全揭秘
-
-https://mp.weixin.qq.com/s/1TcIC2BFmswQAoC-86QBaw
-
-基于句法结构与语义信息核函数的搭配关系抽取
-
-https://mp.weixin.qq.com/s/NDsQzT4nktbw1fHLLFUhEQ
-
-KBQA: 基于开放域知识库上的QA系统
-
-http://www.jianshu.com/p/efe92bdb435d
-
-语言模型：Trigram 模型的平滑估计
-
-https://mp.weixin.qq.com/s/t2eP09f7tLwhgLO9m1S-9Q
-
-阿里自然语言处理成果
-
-https://mp.weixin.qq.com/s/ROs1Gp_gbgRHUXA5I4yx-g
-
-NLP2005年以来大突破：语义角色标记深度模型
-
-https://mp.weixin.qq.com/s/xMCu8bbrJSVLEpUdd_RIGw
-
-你是合格的数据科学家吗？30道题测试你的NLP水平
 

@@ -192,7 +192,7 @@ http://www.cnblogs.com/neopenx/p/4480701.html
 
 ImageNet是由李飞飞等创建的一个计算机视觉系统识别项目，是目前世界上图像识别最大的数据库。
 
-主页：
+官网：
 
 http://www.image-net.org/
 
@@ -201,6 +201,16 @@ http://www.image-net.org/
 >http://vision.stanford.edu/feifeili/
 
 需要注意的是，由于ImageNet的数据过于庞大，因此主页下载的数据文件，仅仅只是图片的URL而已。
+
+## PASCAL VOC
+
+PASCAL VOC是一个标有物体类别和位置的图片库。
+
+官网：
+
+http://host.robots.ox.ac.uk/pascal/VOC/
+
+2005～2012年期间，围绕着该数据集展开了Pascal VOC挑战赛。
 
 ## UCI数据集
 
