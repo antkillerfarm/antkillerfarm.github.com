@@ -74,6 +74,10 @@ http://blog.csdn.net/u010945683/article/details/40987331
 
 遗传算法详解
 
+https://mp.weixin.qq.com/s/v1tLGUJ4My-tVWziSURHzA
+
+遗传算法的基本概念和实现
+
 http://blog.csdn.net/u010945683/article/details/49149815
 
 共轭先验分布
@@ -166,6 +170,10 @@ https://mp.weixin.qq.com/s/gEq7opXLukWD5MVhw_buGA
 
 七招教你处理非平衡数据
 
+https://mp.weixin.qq.com/s/f6zi_FlygorqUIQFgWKMfA
+
+评测时如何构造训练数据分布与测试数据分布保持一致
+
 http://www.jianshu.com/p/1aa67a321e33
 
 SVM和Logistic Regression分别在什么时候使用？
@@ -241,6 +249,18 @@ https://mp.weixin.qq.com/s/D7vghfvUayLNyz5vnXurdg
 https://mp.weixin.qq.com/s/fXlbB7KmiX0iIv6xwSxNIA
 
 梯度下降法的三种形式BGD、SGD以及MBGD
+
+https://mp.weixin.qq.com/s/R_0_E5Ieaj9KiWgg1prxeg
+
+为什么梯度的方向与等高线切线方向垂直？
+
+https://zhuanlan.zhihu.com/p/22852262
+
+经典决策树，条件推断树，随机森林，SVM的R实现
+
+https://mp.weixin.qq.com/s/D7p7W0Oe6EPmJeoWACQ44w
+
+如何送货最省钱？菜鸟自研核心引擎架构首次曝光！
 
 # PMML
 

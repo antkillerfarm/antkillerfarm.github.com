@@ -250,6 +250,10 @@ https://github.com/candlewill/Dialog_Corpus/blob/master/README.md
 
 用于对话系统的中英文语料
 
+http://www.cvpapers.com/datasets.html
+
+常见的cvpr研究的数据库下载链接
+
 # Python
 
 ## 如何通过需认证的代理获取HTTP网页

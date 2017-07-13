@@ -181,4 +181,3 @@ $$D_{KL}(P\|Q)=\sum_iP(i)\log\frac{P(i)}{Q(i)}$$
 
 >Richard Leibler，1914～2003，美国数学家和密码学家。伊利诺伊大学博士。NSA高级主管，入选NSA名人堂。
 
-

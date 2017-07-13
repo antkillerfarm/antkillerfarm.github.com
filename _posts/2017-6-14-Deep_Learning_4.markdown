@@ -72,7 +72,11 @@ https://mp.weixin.qq.com/s/vHQ1WbADHAISXCGxOqnP2A
 
 https://mp.weixin.qq.com/s/0V9DeG39is_BxAYX0Yomww
 
-为何循环神经网络在众多机器学习方法中脱颖而出？ 
+为何循环神经网络在众多机器学习方法中脱颖而出？
+
+https://mp.weixin.qq.com/s/-Am9Z4_SsOc-fZA_54Qg3A
+
+深度理解RNN：时间序列数据的首选神经网络！
 
 # LSTM
 

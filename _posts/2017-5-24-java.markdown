@@ -244,5 +244,9 @@ https://github.com/yuantiku/ytk-learn
 
 https://github.com/yuantiku/ytk-mp4j
 
+## 参考
 
+https://mp.weixin.qq.com/s/WsjZERRkgnReWuDw_z5Hxw
+
+LibRec：一个覆盖70多种算法的推荐系统开源库！
 

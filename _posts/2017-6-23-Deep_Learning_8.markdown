@@ -14,6 +14,10 @@ https://www.zhihu.com/question/47642307
 
 语音识别中的CTC方法的基本原理
 
+https://www.zhihu.com/question/20398418
+
+语音识别的技术原理是什么？
+
 https://www.zhihu.com/question/55851184
 
 基于CTC等端到端语音识别方法的出现是否标志着统治数年的HMM方法终结？
@@ -46,4 +50,7 @@ https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw
 
 SampleRNN语音合成模型
 
+https://zhuanlan.zhihu.com/p/21344595
+
+端到端的OCR：验证码识别(LSTM+CTC)
 

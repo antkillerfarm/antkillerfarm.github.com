@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十五）——
+title:  机器学习（二十五）——机器学习语录
 category: theory 
 ---
 

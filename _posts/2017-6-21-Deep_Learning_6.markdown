@@ -32,6 +32,10 @@ https://mp.weixin.qq.com/s/r9tXvKIN-eqKW_65yFyOew
 
 谷歌开源TensorFlow Object Detection API
 
+https://mp.weixin.qq.com/s/-PeXMU_gkcT5YnMcLoaKag
+
+CVPR清华大学研究，高效视觉目标检测框架RON
+
 ## 进化史
 
 DPM(2007)->RCNN(2014)->Fast RCNN->Faster RCNN
@@ -167,7 +171,19 @@ https://mp.weixin.qq.com/s/XbgmLmlt5X4TX5CP59gyoA
 
 https://mp.weixin.qq.com/s/BgTc1SE2IzNH27OC2P2CFg
 
-CVPR：经典再现，全内容跟踪
+CVPR-I
+
+https://mp.weixin.qq.com/s/qMdnp9ZdlYIja2vNEKuRNQ
+
+CVPR—II
+
+https://mp.weixin.qq.com/s/tc1PsIoF1RN1sx_IFPmtWQ
+
+CVPR—III
+
+https://mp.weixin.qq.com/s/bpCn2nREHzazJYq6B9vMHg
+
+目标识别算法的进展
 
 ## YOLO
 
@@ -226,3 +242,18 @@ https://zhuanlan.zhihu.com/p/24446336
 https://mp.weixin.qq.com/s/KNXD-MpVHQRXYvJKTqn6WA
 
 完善强化学习安全性：UC Berkeley提出约束型策略优化新算法
+
+http://mp.weixin.qq.com/s/gHM7qh7UTKzatdg34cgfDQ
+
+强化学习全解
+
+http://mp.weixin.qq.com/s/lLPRwInF5qaw7ewYHOpPyw
+
+深度强化学习资料
+
+https://mp.weixin.qq.com/s/f6sq8cSaU1cuzt7jhsK8Ig
+
+强化学习（Reinforcement Learning）基础介绍
+
+
+

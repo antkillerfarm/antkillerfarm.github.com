@@ -344,4 +344,25 @@ https://mp.weixin.qq.com/s/klfTdvfti0xCg2lGitG4hg
 
 用户表示方法对新浪微博中用户属性分类性能影响的研究
 
+https://mp.weixin.qq.com/s/HNu3GOBFqFE3p6Z95cThaQ
+
+情感计算是人机交互核心？谈深度学习在情感分析中的应用
+
+https://mp.weixin.qq.com/s/gyuq2ujb1tiAvAlXtZY4Eg
+
+聊聊“事件抽取”
+
+https://mp.weixin.qq.com/s/sM72a52wz6eXSkcgnd4JJw
+
+人类与机器人，如何能像朋友一样愉快聊天？
+
+https://mp.weixin.qq.com/s/cEmtOAtfP2gSBlaPfGXb3w
+
+多源信息表示学习在知识图谱中的应用
+
+https://mp.weixin.qq.com/s/-D-5p_7DfvR3D7cZjlUmUA
+
+TensorFlow 谷歌神经机器翻译:从零开始打造属于你的翻译系统
+
+
 

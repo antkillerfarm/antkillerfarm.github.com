@@ -130,14 +130,6 @@ BugBrain是一个神经网络相关的益智游戏。官网：
 
 http://www.biologic.com.au/bugbrain/
 
-http://blog.csdn.net/v_JULY_v/article/details/52683959
-
-没GPU也能玩梵高作画：Ubuntu tensorflow CPU版
-
-http://www.cvpapers.com/datasets.html
-
-常见的cvpr研究的数据库下载链接
-
 http://blog.csdn.net/life_is_amazing/article/details/51884237
 
 这个博客不错,一些深度学习资源链接
@@ -149,10 +141,6 @@ http://mp.weixin.qq.com/s/wCDGPBYoOCzLtJBnPbTz9w
 http://mp.weixin.qq.com/s/Jiis7j3W3D5GG_ZdxplY7Q
 
 淘宝搜索/推荐系统背后深度强化学习与自适应在线学习的实践之路
-
-http://mp.weixin.qq.com/s/gHM7qh7UTKzatdg34cgfDQ
-
-强化学习全解
 
 https://zhuanlan.zhihu.com/p/25549497
 
@@ -168,10 +156,6 @@ https://www.zhihu.com/question/41233373
 
 如果你是面试官，你怎么去判断一个面试者的深度学习水平？
 
-https://www.zhihu.com/question/20398418
-
-语音识别的技术原理是什么？
-
 http://www.cnblogs.com/xxey/p/4277181.html
 
 Beam Search（集束搜索/束搜索）
@@ -183,10 +167,6 @@ http://mp.weixin.qq.com/s/upblqKf0m_15o4L1fF0EEQ
 http://mp.weixin.qq.com/s/Cg9tHG1YgDCdI3NPYl5-vQ
 
 如何用Soft-NMS实现目标检测并提升准确率
-
-http://mp.weixin.qq.com/s/UkZdUcdz7h4DqcyjSbNncw
-
-zi2zi：用条件生成对抗网络玩转中文书法，绝妙汉字字体自动生成
 
 https://jizhi.im/blog/post/45_questions_deep_learning?from=timeline
 
@@ -239,14 +219,6 @@ http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw
 http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks
 
 神经网络的分布式训练
-
-https://www.zhihu.com/question/47642307
-
-语音识别中的CTC方法的基本原理
-
-https://zhuanlan.zhihu.com/p/21344595
-
-端到端的OCR：验证码识别(LSTM+CTC)
 
 http://mp.weixin.qq.com/s/IfEgSOIkIPA-YtC9NQW1ng
 
@@ -423,5 +395,9 @@ Bengio领衔：DeepMind、谷歌大脑核心研究员2017深度学习最新报�
 https://mp.weixin.qq.com/s/a5MBQqYCWmUMLpVXhOvg8Q
 
 Yoshua Bengio深度学习暑期课程
+
+http://elmos.scripts.mit.edu/mathofdeeplearning/
+
+Mathematical Aspects of Deep Learning
 
 

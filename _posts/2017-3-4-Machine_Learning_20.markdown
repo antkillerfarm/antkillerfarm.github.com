@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十）——EMD, LSA, HMM
+title:  机器学习（二十）——EMD, LSA, HMM, AutoML
 category: theory 
 ---
 

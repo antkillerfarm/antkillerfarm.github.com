@@ -134,22 +134,6 @@ https://mp.weixin.qq.com/s/39kfsTRmHsrVgOJu8yGJ4Q
 
 神经网络介绍—利用反向传播算法的模式学习
 
-https://github.com/cysmith/neural-style-tf
-
-TensorFlow (Python API) implementation of Neural Style.这个项目实现了两张图片的画风融合，非常牛。
-
-https://github.com/jinfagang/pytorch_style_transfer
-
-这个和上面的一样，不过是用pytorch实现的。
-
-http://mp.weixin.qq.com/s/zNmJuevHaagKbyGFdKTwoQ
-
-tensorflow实现基于深度学习的图像补全
-
-http://mp.weixin.qq.com/s/lLPRwInF5qaw7ewYHOpPyw
-
-深度强化学习资料
-
 https://mp.weixin.qq.com/s/ZlCI02UdRuFBc-uKqIPE_w
 
 深度学习多任务学习综述
@@ -241,10 +225,6 @@ https://mp.weixin.qq.com/s/1JwLP0FmV1AGJ65iDgLWQw
 https://mp.weixin.qq.com/s/yQG0983RjQHIkt9oBlkDqQ
 
 瞎谈CNN：通过优化求解输入图像
-
-https://mp.weixin.qq.com/s/bpCn2nREHzazJYq6B9vMHg
-
-目标识别算法的进展
 
 https://mp.weixin.qq.com/s/T-v9OTcJa5OQ71QmYrFtbg
 
@@ -338,5 +318,24 @@ https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg
 
 旷视科技提出新型卷积网络ShuffleNet，专为移动端设计
 
+https://mp.weixin.qq.com/s/yHtqWJUpCIvTStKW5TINaA
+
+Youtube 短视频推荐系统变迁：从机器学习到深度学习
+
+https://mp.weixin.qq.com/s/WzSO_XobY6kesDm4sF-hBg
+
+深度学习之推荐篇
+
+https://mp.weixin.qq.com/s/xvRtuOlUbgD3gWhKQ2jbSQ
+
+深度学习参数技巧
+
+https://mp.weixin.qq.com/s/QjoxqCpN5JDroBowWmVk1Q
+
+边玩边入门深度学习，我们帮你找了10个简易应用demo
+
+https://mp.weixin.qq.com/s/UboQNEywHSBAYc0740qmzQ
+
+让机器学会创造新的概念：DeepMind提出符号-概念关联网络SCAN
 
 
