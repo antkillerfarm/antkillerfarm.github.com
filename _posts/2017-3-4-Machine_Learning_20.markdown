@@ -216,4 +216,7 @@ https://mp.weixin.qq.com/s/53AcAZcCKBZI-i1CORl0bQ
 
 分分钟带你杀入Kaggle Top 1%
 
+https://mp.weixin.qq.com/s/NwVGkAcoDmyXKrYFUaK2Bw
+
+如何在机器学习竞赛中更胜一筹？
 

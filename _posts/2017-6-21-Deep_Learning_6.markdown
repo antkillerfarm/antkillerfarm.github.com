@@ -185,6 +185,10 @@ https://mp.weixin.qq.com/s/bpCn2nREHzazJYq6B9vMHg
 
 目标识别算法的进展
 
+https://mp.weixin.qq.com/s/YzxaS4KQmpbUSnyOwccn4A
+
+基于深度学习的目标检测技术进展与展望
+
 ## YOLO
 
 YOLO: Real-Time Object Detection，是一个基于神经网络的实时对象检测软件。
@@ -255,5 +259,11 @@ https://mp.weixin.qq.com/s/f6sq8cSaU1cuzt7jhsK8Ig
 
 强化学习（Reinforcement Learning）基础介绍
 
+https://mp.weixin.qq.com/s/TGN6Zhrea2LPxdkspVTlAw
 
+算法工程师入门——增强学习
+
+https://mp.weixin.qq.com/s/aVWHlwOmNIqOlu3025_RXQ
+
+DeepMind提出多任务强化学习新方法Distral
 

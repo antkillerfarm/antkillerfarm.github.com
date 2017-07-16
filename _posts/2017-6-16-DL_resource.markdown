@@ -320,7 +320,7 @@ https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg
 
 https://mp.weixin.qq.com/s/yHtqWJUpCIvTStKW5TINaA
 
-Youtube 短视频推荐系统变迁：从机器学习到深度学习
+Youtube短视频推荐系统变迁：从机器学习到深度学习
 
 https://mp.weixin.qq.com/s/WzSO_XobY6kesDm4sF-hBg
 
@@ -337,5 +337,22 @@ https://mp.weixin.qq.com/s/QjoxqCpN5JDroBowWmVk1Q
 https://mp.weixin.qq.com/s/UboQNEywHSBAYc0740qmzQ
 
 让机器学会创造新的概念：DeepMind提出符号-概念关联网络SCAN
+
+https://mp.weixin.qq.com/s/QD6BdAB332xHoSH3dIfM5Q
+
+学习顶级玩家Replay，人工智能学会了星际争霸的“大局观”
+
+https://mp.weixin.qq.com/s/BWc8nRbOF1IfwbBtmLnhnA
+
+从全连接层到大型卷积核：深度学习语义分割全指南
+
+https://mp.weixin.qq.com/s/mEnYNs9tP-246lVM3WFgZg
+
+颜水成团队CVPR新架构，提速300%
+
+https://mp.weixin.qq.com/s/2FDVt1-U6f0gicCVtZh4cA
+
+伯克利联合OpenAI发布新型深度学习方法TCML：学习通用型算法
+
 
 

@@ -250,3 +250,103 @@ https://mp.weixin.qq.com/s/WsjZERRkgnReWuDw_z5Hxw
 
 LibRec：一个覆盖70多种算法的推荐系统开源库！
 
+# TensorFlow
+
+## 概述
+
+TensorFlow是Google主导的开源深度学习库。官网：
+
+https://www.tensorflow.org/
+
+代码：
+
+https://github.com/tensorflow/tensorflow
+
+TensorFlow提供了一个可视化的神经网络展示：
+
+http://playground.tensorflow.org/
+
+还有若干已经实现好的经典神经网络模型（比如Autoencoder、ResNet等）：
+
+https://github.com/tensorflow/models/
+
+TensorFlow的教程：
+
+http://tensorflowtutorial.net/tensorflow-tutorial
+
+教程中文版：
+
+http://wiki.jikexueyuan.com/project/tensorflow-zh/
+
+安装：
+
+`pip install tensorflow`
+
+由于我的PC显卡不合要求，因此直接安装的是CPU版本，这也是最通用的版本。
+
+TensorFlow技术栈：
+
+![](/images/article/tensorflow_layer.png)
+
+## 参考
+
+https://github.com/yahoo/TensorFlowOnSpark
+
+TensorFlow On Spark
+
+https://silencezjl.coding.me/2017/05/01/%E5%81%B7%E4%B8%80%E6%B3%A2%E8%B5%84%E6%BA%90/
+
+各种TensorFlow资源
+
+https://github.com/zsdev2015/machine_learning
+
+某国内小牛写的中文入门demo，注释非常详细
+
+https://morvanzhou.github.io/tutorials/
+
+一个以python语言教学的ML、DL教程，比较通俗易懂。
+
+https://mp.weixin.qq.com/s/gJBDXf_5ViPR9dNm3eH2Hg
+
+TensorFlow初学者必须了解的55个经典案例
+
+https://mp.weixin.qq.com/s/bjxJyOitynRtCoW0FX1gXw
+
+一文带你入门Tensorflow
+
+https://mp.weixin.qq.com/s/zmTqWNXlYcDyZb_dmEo_5Q
+
+TensorFlow/PyTorch/Sklearn实现的五十种机器学习模型
+
+https://mp.weixin.qq.com/s/O5vvGKHWkJQWzeiL7A_S_g
+
+TensorFlow简单介绍
+
+https://mp.weixin.qq.com/s/OmVAnkHV2aI4D4pMKyVjCQ
+
+基于TensorFlow理解三大降维技术：PCA、t-SNE和自编码器
+
+https://mp.weixin.qq.com/s/5wy6yqaW_9pMBhgw8qDdOQ
+
+基于TensorFlow打造强化学习API
+
+https://mp.weixin.qq.com/s/YOyOR8fdaEKcydAywcc-HA
+
+如何使用TensorFlow API构建视频物体识别系统
+
+## 我的TensorFlow实践
+
+### MNIST+Softmax
+
+代码：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_mnist.py
+
+### MNIST+CNN
+
+代码：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_cnn.py
+
+第一个例子中，我对CPU的计算能力还没有切肤之痛，但在这里使用CPU差不多要花半个小时时间。。。
+

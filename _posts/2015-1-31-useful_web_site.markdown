@@ -184,6 +184,14 @@ https://mp.weixin.qq.com/s/2-PB-5tTNeGPLPHQBdRwBA
 
 40张动态图详解全部传感器工作原理
 
+https://mp.weixin.qq.com/s/tPzBlQGxGq1WEnXz5ggpxg
+
+sysbench在美团点评中的应用
+
+https://mp.weixin.qq.com/s/aumZu90B4gZQ4nKNY4PRxA
+
+Redux从设计到源码
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/
@@ -363,6 +371,19 @@ https://mp.weixin.qq.com/s/cEmtOAtfP2gSBlaPfGXb3w
 https://mp.weixin.qq.com/s/-D-5p_7DfvR3D7cZjlUmUA
 
 TensorFlow 谷歌神经机器翻译:从零开始打造属于你的翻译系统
+
+https://mp.weixin.qq.com/s/JAWDiNUfU62n8lDRG8zzRw
+
+嘿，朋友，老夫掐指一算你就是“水军”
+
+https://mp.weixin.qq.com/s/5ajhhc4mpIhoqkl5VkGnaw
+
+深度学习实现问答机器人
+
+https://mp.weixin.qq.com/s/wH-YYzifsEqMCD_4n8B-Kw
+
+12张图看懂Gartner《智能客服机器人行业最佳实践》报告
+
 
 
 

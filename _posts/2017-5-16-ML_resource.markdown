@@ -262,6 +262,18 @@ https://mp.weixin.qq.com/s/D7p7W0Oe6EPmJeoWACQ44w
 
 如何送货最省钱？菜鸟自研核心引擎架构首次曝光！
 
+https://mp.weixin.qq.com/s/UA0OOIYKcddwb3gzWWTktg
+
+什么是张量、数据立体、矩阵、向量和纯数
+
+https://www.zhihu.com/question/60017224/
+
+如何评价2017知乎看山杯机器学习比赛？
+
+https://mp.weixin.qq.com/s/2QHG0D1j0hQyErYg7Cp53w
+
+最全面的感知机总结
+
 # PMML
 
 PMML(Predictive Model Markup Language) 是一个开放的工业标准，它以 XML 为载体将上述数据挖掘任务标准化，可以把某一产品所创建的数据挖掘方案应用于任何其它遵从 PMML 标准的产品或平台中 , 而不需考虑分析和预测过程中的具体实现细节。使得模型的部署摆脱了模型开发和产品整合的束缚，为商业智能产品、数据仓库和云计算中的数据挖掘模型的应用环境开拓了新的篇章。
@@ -368,42 +380,6 @@ Pandas和SQL的比较
 
 http://www.runoob.com/python/python-mysql.html
 
-## TensorFlow
-
-TensorFlow是Google主导的开源深度学习库。官网：
-
-https://www.tensorflow.org/
-
-代码：
-
-https://github.com/tensorflow/tensorflow
-
-TensorFlow提供了一个可视化的神经网络展示：
-
-http://playground.tensorflow.org/
-
-还有若干已经实现好的经典神经网络模型（比如Autoencoder、ResNet等）：
-
-https://github.com/tensorflow/models/
-
-TensorFlow的教程：
-
-http://tensorflowtutorial.net/tensorflow-tutorial
-
-教程中文版：
-
-http://wiki.jikexueyuan.com/project/tensorflow-zh/
-
-安装：
-
-`pip install tensorflow`
-
-由于我的PC显卡不合要求，因此直接安装的是CPU版本，这也是最通用的版本。
-
-TensorFlow技术栈：
-
-![](/images/article/tensorflow_layer.png)
-
 ## 参考
 
 https://github.com/neozhaoliang/pywonderland/tree/master/
@@ -414,43 +390,6 @@ http://old.sebug.net/paper/books/scipydoc/index.html
 
 用Python做科学计算
 
-https://github.com/yahoo/TensorFlowOnSpark
+https://pan.baidu.com/s/1qYPUHNQ
 
-TensorFlow On Spark
-
-https://silencezjl.coding.me/2017/05/01/%E5%81%B7%E4%B8%80%E6%B3%A2%E8%B5%84%E6%BA%90/
-
-各种TensorFlow资源
-
-https://github.com/zsdev2015/machine_learning
-
-某国内小牛写的中文入门demo，注释非常详细
-
-https://morvanzhou.github.io/tutorials/
-
-一个以python语言教学的ML、DL教程，比较通俗易懂。
-
-https://mp.weixin.qq.com/s/gJBDXf_5ViPR9dNm3eH2Hg
-
-TensorFlow初学者必须了解的55个经典案例
-
-https://mp.weixin.qq.com/s/bjxJyOitynRtCoW0FX1gXw
-
-一文带你入门Tensorflow
-
-## 我的TensorFlow实践
-
-### MNIST+Softmax
-
-代码：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_mnist.py
-
-### MNIST+CNN
-
-代码：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_cnn.py
-
-第一个例子中，我对CPU的计算能力还没有切肤之痛，但在这里使用CPU差不多要花半个小时时间。。。
-
+小抄合集

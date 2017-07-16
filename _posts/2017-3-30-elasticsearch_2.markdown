@@ -315,6 +315,10 @@ https://mp.weixin.qq.com/s/YLhECwwig9f21zk1-PNiTw
 
 25篇车辆检测与分类DL文章读懂自动驾驶
 
+https://mp.weixin.qq.com/s/vKkjYdf6Ast7wWcW9oIEuA
+
+88 美元的自动驾驶“自制原子弹”，最著名黑客详解panda系统
+
 # Spring
 
 Spring是一个Java Web应用框架。官网：
