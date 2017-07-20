@@ -6,9 +6,25 @@ category: technology
 
 # ML参考资源
 
+## blog
+
 http://www.cnblogs.com/jerrylead/
 
 一个机器学习的blog。
+
+http://blog.csdn.net/baimafujinji
+
+一个算法牛人的blog
+
+http://www.flickering.cn/
+
+腾讯效果广告平台部的技术blog。
+
+https://woaielf.github.io/
+
+一个医学妹子的blog，有大量的数据挖掘的思维导图。
+
+## 文章
 
 http://www.open-open.com/lib/view/open1420687784625.html
 
@@ -86,14 +102,6 @@ http://wenku.baidu.com/view/44a63fd2b14e852458fb577f.html
 
 kriging插值
 
-http://blog.csdn.net/baimafujinji
-
-一个算法牛人的blog
-
-http://www.flickering.cn/
-
-腾讯效果广告平台部的技术blog。
-
 http://mp.weixin.qq.com/s/QhP3wRGbrO7sYSDNm8z0gQ
 
 常用推荐算法（50页干货）
@@ -101,10 +109,6 @@ http://mp.weixin.qq.com/s/QhP3wRGbrO7sYSDNm8z0gQ
 http://blog.csdn.net/zwgdft/article/category/6432397
 
 创业公司做数据分析
-
-https://woaielf.github.io/
-
-一个医学妹子的blog，有大量的数据挖掘的思维导图。
 
 http://www.infoq.com/cn/articles/we-are-bringing-learning-to-rank-to-elasticsearch
 
@@ -274,6 +278,34 @@ https://mp.weixin.qq.com/s/2QHG0D1j0hQyErYg7Cp53w
 
 最全面的感知机总结
 
+https://mp.weixin.qq.com/s/svmHc7S9S-SXz3YrOCJeGw
+
+数据挖掘知识点整理
+
+https://mp.weixin.qq.com/s/I5NUF5GraCwCVoSdUQNsmw
+
+如何用Python和机器学习炒股赚钱？
+
+https://mp.weixin.qq.com/s/9llI8EPy2PNBYZ4Q_LdOFg
+
+深度学习中的基础线代知识-初学者指南
+
+https://mp.weixin.qq.com/s/DxNtgyuNzNqpbZ_9k8uflQ
+
+谷歌开源机器学习可视化工具 Facets：从全新角度观察数据
+
+https://mp.weixin.qq.com/s/dYCtth0r2Gme5iGSviVmBQ
+
+基于Spark的机器学习痛点，风控和模型优化案例分析！
+
+https://mp.weixin.qq.com/s/oipXH06mgmPBwLQdbe-g4w
+
+数据分析与挖掘、数据科学的96个在线学习课程
+
+https://mp.weixin.qq.com/s/q5mPN_rt1Af5L2fnxuTdCA
+
+46款数据可视化分析工具大集合
+
 # PMML
 
 PMML(Predictive Model Markup Language) 是一个开放的工业标准，它以 XML 为载体将上述数据挖掘任务标准化，可以把某一产品所创建的数据挖掘方案应用于任何其它遵从 PMML 标准的产品或平台中 , 而不需考虑分析和预测过程中的具体实现细节。使得模型的部署摆脱了模型开发和产品整合的束缚，为商业智能产品、数据仓库和云计算中的数据挖掘模型的应用环境开拓了新的篇章。
@@ -393,3 +425,13 @@ http://old.sebug.net/paper/books/scipydoc/index.html
 https://pan.baidu.com/s/1qYPUHNQ
 
 小抄合集
+
+https://mp.weixin.qq.com/s/HKHLiCqEAtoCAqf4CHv86w
+
+python机器学习算法代码实现
+
+https://mp.weixin.qq.com/s/1--i1OhxRNPvNnmP9bFo3g
+
+全机器学习和Python的27个速查表
+
+

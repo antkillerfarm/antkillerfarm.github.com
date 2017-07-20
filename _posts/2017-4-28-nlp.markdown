@@ -323,6 +323,18 @@ https://mp.weixin.qq.com/s/JLYegFP7kEg6n34crgP09g
 
 基于知识图谱的问答系统关键技术研究
 
+https://mp.weixin.qq.com/s/XgKvh63wgEe-CR9bchp03Q
+
+什么是知识图谱？
+
+https://mp.weixin.qq.com/s/iqFXvhvYfOejaeNAhXxJEg
+
+当知识图谱遇上聊天机器人
+
+https://mp.weixin.qq.com/s/U-dlYhnaR8OQw2UKYKUWKQ
+
+知识图谱前沿技术课程实录
+
 ## 论文
 
 《Distant Supervision for relation extraction without labeled data》
@@ -404,17 +416,3 @@ IMPLEMENTING A RETRIEVAL-BASED MODEL IN TENSORFLOW
 https://mp.weixin.qq.com/s/vGUizRVnosd7cgxha-pimw
 
 200行Python代码实现感知机词性标注器
-
-http://www.jianshu.com/p/43db6425ad33
-
-如何为聊天机器人设计数据通道
-
-https://mp.weixin.qq.com/s/H7m7lqWpK27pJp9obXxlIQ
-
-见微知著，从细节处提升词向量的表示能力
-
-https://baijia.baidu.com/s?id=1571333621049553
-
-对比神经机器翻译和统计机器翻译：NMT的六大挑战
-
-

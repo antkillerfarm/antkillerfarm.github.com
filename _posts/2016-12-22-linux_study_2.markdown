@@ -254,6 +254,14 @@ http://www.cvpapers.com/datasets.html
 
 常见的cvpr研究的数据库下载链接
 
+http://universaldependencies.org/
+
+一个依存语法方面的标注数据集。这类数据也叫做treebank数据，原因是依存语法生成的结果是一棵语法树。
+
+https://zhuanlan.zhihu.com/p/25138563
+
+各领域公开数据集下载
+
 # Python
 
 ## 如何通过需认证的代理获取HTTP网页

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Java（二）, 推荐系统的工程细节, Machine Learning之Java篇
+title:  Java（二）, 推荐系统的工程细节, Machine Learning之Java篇, TensorFlow
 category: technology 
 ---
 
@@ -333,6 +333,10 @@ https://mp.weixin.qq.com/s/5wy6yqaW_9pMBhgw8qDdOQ
 https://mp.weixin.qq.com/s/YOyOR8fdaEKcydAywcc-HA
 
 如何使用TensorFlow API构建视频物体识别系统
+
+https://mp.weixin.qq.com/s/gnDTOLWuPZiCVzspTk_zCQ
+
+TensorFlow轻度入门
 
 ## 我的TensorFlow实践
 

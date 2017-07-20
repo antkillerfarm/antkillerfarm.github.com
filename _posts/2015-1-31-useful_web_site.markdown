@@ -192,6 +192,38 @@ https://mp.weixin.qq.com/s/aumZu90B4gZQ4nKNY4PRxA
 
 Redux从设计到源码
 
+https://mp.weixin.qq.com/s/0FZEEGP_ncojzCpwGUyvXg
+
+两个案例，掌握AI在大数据领域的前沿应用
+
+https://zhuanlan.zhihu.com/p/27925292
+
+潜伏、破局与变革：人脸识别技术国内机场发展简史
+
+https://mp.weixin.qq.com/s/sVeKBTytHdGa3zZ-He9Mpw
+
+AI工程师为什么要了解架构？
+
+https://mp.weixin.qq.com/s/GR2DmDt6ZFeUU4s_DP2FGg
+
+如何将云计算云趋势讲清楚
+
+https://mp.weixin.qq.com/s/S1_zB-BOAp387JvI8W-VrA
+
+想要双11抢单快？靠这个技术提速9MS
+
+https://zhuanlan.zhihu.com/p/27971065
+
+关于多正则匹配
+
+https://mp.weixin.qq.com/s/vJX6ZoDKe2GfADZtEDVoiw
+
+同程旅游实时计算的演进
+
+https://mp.weixin.qq.com/s/D_-v3OR4GYXa3coOzjHYmw
+
+TechFin趋势下如何应对超大规模实时分布式关系网络
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/
@@ -211,6 +243,18 @@ GNOME
 http://ftp.gnome.org/pub/GNOME/sources/
 
 # NLP参考资源
+
+http://www.jianshu.com/p/43db6425ad33
+
+如何为聊天机器人设计数据通道
+
+https://mp.weixin.qq.com/s/H7m7lqWpK27pJp9obXxlIQ
+
+见微知著，从细节处提升词向量的表示能力
+
+https://baijia.baidu.com/s?id=1571333621049553
+
+对比神经机器翻译和统计机器翻译：NMT的六大挑战
 
 https://mp.weixin.qq.com/s/L04yE6J8n-Z7Cl9yt6kphA
 
@@ -384,6 +428,19 @@ https://mp.weixin.qq.com/s/wH-YYzifsEqMCD_4n8B-Kw
 
 12张图看懂Gartner《智能客服机器人行业最佳实践》报告
 
+https://mp.weixin.qq.com/s/PRhhpoYqjMSZCPgrcfqibw
 
+基于序列到序列模型的句子级复述生成
 
+https://mp.weixin.qq.com/s/oMKhVtCTmQKLTmhMx008MA
+
+基于背景知识的对话模型
+
+https://mp.weixin.qq.com/s/eq1I92rjIAWEpYw-1fEHeQ
+
+从Facebook AI Research开源fastText谈起文本分类：词向量模性、深度表征和全连接
+
+https://mp.weixin.qq.com/s/hGGT61frDfm-PQHjSnI3Tw
+
+自然语言处理中CNN模型几种常见的Max Pooling操作
 

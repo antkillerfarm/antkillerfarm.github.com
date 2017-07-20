@@ -68,6 +68,10 @@ http://blog.csdn.net/shenxiaolu1984
 
 一个DL+CV的blog
 
+http://www.cnblogs.com/maybe2030/
+
+一个DL+ML的blog
+
 ## 文章
 
 https://zhuanlan.zhihu.com/p/22888385
@@ -354,5 +358,28 @@ https://mp.weixin.qq.com/s/2FDVt1-U6f0gicCVtZh4cA
 
 伯克利联合OpenAI发布新型深度学习方法TCML：学习通用型算法
 
+https://mp.weixin.qq.com/s/1HA6XKnWpqVd8k7IIfzB7w
+
+利用卷积自编码器对图片进行降噪
+
+https://mp.weixin.qq.com/s/isE8kriDUrMx3IBKjMtUHg
+
+非常详细的神经网络入门解释
+
+https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
+
+NTIRE2017夺冠论文：用于单一图像超分辨率的增强型深度残差网络
+
+https://mp.weixin.qq.com/s/WMakTEN68KPi7X9kMQetiw
+
+OpenAI:3段视频演示无人驾驶目标检测强大的对抗性样本！
+
+https://mp.weixin.qq.com/s/_dDLbPwpgoOdLc83_JQEuA
+
+CVPR现场会议合集及CCCV内容跟踪
+
+https://mp.weixin.qq.com/s/-G94Mj-8972i2HtEcIZDpA
+
+人脸识别世界杯榜单出炉，微软百万名人识别竞赛冠军分享
 
 

@@ -1,8 +1,48 @@
 ---
 layout: post
-title:  深度学习（八）——CTC
+title:  深度学习（八）——依存分析, CTC
 category: theory 
 ---
+
+# GAN
+
+## 参考（续）
+
+https://zhuanlan.zhihu.com/p/27199954
+
+用GAN去除动作片中的马赛克和衣服
+
+https://zhuanlan.zhihu.com/p/27012520
+
+从头开始GAN
+
+https://mp.weixin.qq.com/s/Qzlg1MzRT3josy2RJpQSVg
+
+Image to Image Translation Using GAN
+
+https://mp.weixin.qq.com/s/AswdyjPeKbX7yhAPloP2og
+
+基于对抗学习的生成式对话模型
+
+# 依存分析
+
+## 概况
+
+Dependency Parsing是NLP领域的一项重要工作。
+
+![](/images/article/dependency_parsing.png)
+
+依存分析的基本目标是**对一句话构建一个表达词与词之间依赖关系的语法树**，如上图所示。
+
+## 传统方法
+
+这里以2003年提出的Greedy transition-based parsing算法为例，介绍一下依存分析的传统做法。
+
+![](/images/article/tbp.png)
+
+![](/images/article/tbp_2.png)
+
+上图演示了ROOT结点是如何一步步“吃”进词语（即Shift操作），并生成依存分析树的过程。
 
 # CTC
 
@@ -53,4 +93,12 @@ SampleRNN语音合成模型
 https://zhuanlan.zhihu.com/p/21344595
 
 端到端的OCR：验证码识别(LSTM+CTC)
+
+https://mp.weixin.qq.com/s/zEqgDh6_fnDgXEI8MC9cmg
+
+端对端的深度卷积神经网络在语音识别中的应用
+
+
+
+
 

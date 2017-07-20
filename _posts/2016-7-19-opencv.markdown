@@ -126,6 +126,10 @@ https://mp.weixin.qq.com/s/Vbu-qzyD169TSrQIJgzm7w
 
 研究人脸识别技术必须知道的十个基本概念
 
+https://zhuanlan.zhihu.com/p/26630215
+
+浅谈手势识别在直播中的运用
+
 https://zhuanlan.zhihu.com/p/22604627
 
 AI玩FPS游戏
@@ -215,6 +219,10 @@ GPU和线下训练
 https://mp.weixin.qq.com/s/2aE5fzGZeyX-oFyWbcbA5A
 
 揭开神经网络加速器的神秘面纱之DianNao
+
+https://mp.weixin.qq.com/s/VAFb0DAZAUyDnjE6SlNcXw
+
+如何对比评价各种深度神经网络硬件？不妨给它们跑个分
 
 http://mp.weixin.qq.com/s/8omONLSUA3cyxAQZVzBjCg
 
@@ -404,8 +412,16 @@ https://mp.weixin.qq.com/s/a5MBQqYCWmUMLpVXhOvg8Q
 
 Yoshua Bengio深度学习暑期课程
 
+https://mp.weixin.qq.com/s/CxKicJBvnk6FYWE4KuVmHw
+
+二十六条深度学习经验，来自蒙特利尔深度学习
+
 http://elmos.scripts.mit.edu/mathofdeeplearning/
 
 Mathematical Aspects of Deep Learning
+
+http://ciml.info/
+
+马里兰大学的机器学习课程
 
 

@@ -36,6 +36,10 @@ https://mp.weixin.qq.com/s/-PeXMU_gkcT5YnMcLoaKag
 
 CVPR清华大学研究，高效视觉目标检测框架RON
 
+https://mp.weixin.qq.com/s/_cOuhToH8KvZldNfraumSQ
+
+什么促使了候选目标的有效检测？
+
 ## 进化史
 
 DPM(2007)->RCNN(2014)->Fast RCNN->Faster RCNN
@@ -241,7 +245,7 @@ http://blog.csdn.net/young_gy/article/details/73485518
 
 https://zhuanlan.zhihu.com/p/24446336
 
-深度强化学习 Deep Reinforcement Learning 学习整理
+深度强化学习Deep Reinforcement Learning学习整理
 
 https://mp.weixin.qq.com/s/KNXD-MpVHQRXYvJKTqn6WA
 
@@ -266,4 +270,9 @@ https://mp.weixin.qq.com/s/TGN6Zhrea2LPxdkspVTlAw
 https://mp.weixin.qq.com/s/aVWHlwOmNIqOlu3025_RXQ
 
 DeepMind提出多任务强化学习新方法Distral
+
+https://mp.weixin.qq.com/s/laKJ_jfNR5L1uMML9wkS1A
+
+强化学习（Reinforcement Learning）算法基础及分类
+
 

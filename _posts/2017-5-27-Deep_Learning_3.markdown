@@ -134,6 +134,8 @@ Hierarchical Softmax一般基于Huffman编码构建。在本例中，我们首�
 
 除了word2vec之外，类似的Word Embedding方案还有SENNA、RNN-LM、Glove等。但影响力仍以word2vec最大。
 
+Skip-Gram Negative Sampling，又被简称为SGNS。
+
 ## doc2vec
 
 我们知道，word是sentence的基本组成单位。一个最简单也是最直接得到sentence embedding的方法是将组成sentence的所有word的embedding向量全部加起来。

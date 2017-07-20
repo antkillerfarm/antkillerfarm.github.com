@@ -92,11 +92,9 @@ $$JS\Big(p_1(x),p_2(x)\Big)=\frac{1}{2}KL\Big(p_1(x)\|p_2(x)\Big)+\frac{1}{2}KL\
 
 >注：Claude Elwood Shannon，1916～2001，美国数学家，信息论之父。密歇根大学双学士+MIT博士。先后供职于贝尔实验室和MIT。
 
->注：Rudolf Otto Sigismund Lipschitz，1832～1903，德国数学家，先后就读于柯尼斯堡大学和柏林大学，导师Dirichlet。波恩大学教授。
-
 KL散度和JS散度，也是Ian Goodfellow在原始GAN论文中，给出的评价指标。
 
-但是，虽然KL散度和JS散度，在这里起着距离的作用，但它们**不是距离**，它们不满足距离的三角不等式，因此只能叫“散度”。
+虽然KL散度和JS散度，在这里起着距离的作用，但它们**不是距离**，它们不满足距离的三角不等式，因此只能叫“散度”。
 
 ## 神经距离
 
@@ -142,9 +140,66 @@ $$L=\frac{1}{M}\sum_{i=1}^M D\Big(y_i,\Theta\Big)$$
 
 $$\arg \min_G \max_D V(G,D)$$
 
+具体的做法是：
+
+### Step1
+
+随机初始化$$G(X,\theta)$$，固定它，然后生成一批Y，这时候我们要训练$$D(Y,\Theta)$$，既然L代表的是“与指定样本Z的差异”，那么，如果将指定样本Z代入L，结果应该是越小越好，而将Y代入L，结果应该是越大越好，所以
+
+$$\begin{aligned}\Theta =& \mathop{\arg\min}_{\Theta} L = \mathop{\arg\min}_{\Theta} \frac{1}{N}\sum_{i=1}^N D\Big(z_i,\Theta\Big)\\ 
+\Theta =& \mathop{\arg\max}_{\Theta} L = \mathop{\arg\max}_{\Theta} \frac{1}{M}\sum_{i=1}^M D\Big(y_i,\Theta\Big)\end{aligned}$$
+
+然而有两个目标并不容易平衡，所以干脆都取同样的样本数B（一个batch），然后一起训练就好：
+
+$$\begin{aligned}\Theta =& \mathop{\arg\min}_{\Theta} L_1\\ 
+=&\mathop{\arg\min}_{\Theta} \frac{1}{B}\sum_{i=1}^B\left[D\Big(z_i,\Theta\Big)-D\Big(y_i,\Theta\Big)\right]\end{aligned}$$
+
+### Step2
+
+$$G(X,\theta)$$希望它生成的样本越接近真实样本越好，因此这时候把$$\Theta$$固定，只训练$$\theta$$让L越来越小：
+
+$$\begin{aligned}\theta =& \mathop{\arg\min}_{\theta} L_2\\ 
+=&\mathop{\arg\min}_{\theta} \frac{1}{B}\sum_{i=1}^B\left[D\Big(G(x_i,\theta),\Theta\Big)\right]\end{aligned}$$
+
+## Lipschitz约束
+
+稍微思考一下，我们就发现，问题还没完。我们目前还没有对D做约束，不难发现，无约束的话Loss基本上会直接跑到负无穷去了～
+
+最简单的方案就是采用Lipschitz约束：
+
+$$\| D(y,\theta) - D(y' , \theta) \| \leq C \|y-y'\|$$
+
+也可写作：
+
+$$\left\| \frac{\partial D(y,\Theta)}{\partial y}\right\| \leq C$$
+
+>注：Rudolf Otto Sigismund Lipschitz，1832～1903，德国数学家，先后就读于柯尼斯堡大学和柏林大学，导师Dirichlet。波恩大学教授。
+
 ## WGAN
 
+KL散度和JS散度由于不是距离，数学特性并不够好。因此，Martín Arjovsky于2017年1月，提出了Wasserstein GAN。
 
+其中的一项改进就是使用Wasserstein距离替代KL散度和JS散度。Wasserstein距离的定义参看《机器学习（二十）》。
+
+WGAN极大程度的改善了GAN训练困难的问题，成为当前GAN研究的主流。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/25071913
+
+令人拍案叫绝的Wasserstein GAN
+
+## GAN的发展
+
+最早的GAN出现在2014年6月，但直到2015年底，也只有5个变种，发展并不迅速。
+
+2016年，GAN开始发力，年底时已有52个变种。2017年6月底，更达到142个变种。
+
+参考：
+
+https://github.com/hindupuravinash/the-gan-zoo
+
+GAN的各种变种。
 
 ## 参考
 
@@ -167,10 +222,6 @@ IRGAN：大一统信息检索模型的博弈竞争
 https://mp.weixin.qq.com/s/QacQCrjh3KmrQSMp-G_rEg
 
 贝叶斯生成对抗网络
-
-https://github.com/hindupuravinash/the-gan-zoo
-
-GAN的各种变种。
 
 https://zhuanlan.zhihu.com/p/24897387
 
@@ -215,5 +266,4 @@ tensorflow实现基于深度学习的图像补全
 https://zhuanlan.zhihu.com/p/25204020
 
 条条大路通罗马LS-GAN：把GAN建立在Lipschitz密度上
-
 

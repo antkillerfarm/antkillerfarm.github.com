@@ -4,13 +4,7 @@ title:  深度学习（五）——Attention, seq2seq, DMN, CNN进化史
 category: theory 
 ---
 
-# Attention
-
-倒序句子这种方法属于“hack”手段。它属于被实践证明有效的方法，而不是有理论依据的解决方法。
-
-大多数翻译的基准都是用法语、德语等语种，它们和英语非常相似（即使汉语的词序与英语也极其相似）。但是有些语种（像日语）句子的最后一个词语在英语译文中对第一个词语有高度预言性。那么，倒序输入将使得结果更糟糕。
-
-还有其它办法吗？那就是Attention机制。
+# Attention（续）
 
 ![](/images/article/attention.png)
 
@@ -180,7 +174,7 @@ AlexNet作为第一个现代意义上的CNN，它的意义主要包括：
 
 5.当然最应该感谢的是李飞飞团队搞出来的标注数据集合ImageNet。
 
->注：ILSVRC（Large Scale Visual Recognition Challenge）大赛，在2016年以前，一直是CV界的顶级赛事。但随着技术的成熟，目前的科研重点已经转移到了其他领域。
+>注：ILSVRC（Large Scale Visual Recognition Challenge）大赛，在2016年以前，一直是CV界的顶级赛事。但随着技术的成熟，目前的科研重点已经从物体识别转移到了物体理解领域。2017年将是该赛事的最后一届。WebVision有望接替该赛事，成为下一个目标。
 
 ## VGG
 

@@ -252,6 +252,10 @@ http://mp.weixin.qq.com/s/dvuX3Ih_DZrv0kgqFn8-lg
 
 卷积神经网络结构变化——可变形卷积网络deformable convolutional networks
 
+https://mp.weixin.qq.com/s/EJyG3Y4EHTGMm_Q1mY4RvA
+
+CNN入门手册（上）
+
 # Autoencoder
 
 Bengio在2003年的《A neural probabilistic language model》中指出，维度过高，会导致每次学习，都会强制改变大部分参数。
