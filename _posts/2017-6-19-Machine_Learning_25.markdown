@@ -46,3 +46,29 @@ http://www.cnblogs.com/fengfenggirl/p/iForest.html
 
 可见，滤波和预测是实时运算，而平滑是非实时运算。
 
+# NLP参考资源
+
+https://mp.weixin.qq.com/s/wH-YYzifsEqMCD_4n8B-Kw
+
+12张图看懂Gartner《智能客服机器人行业最佳实践》报告
+
+https://mp.weixin.qq.com/s/PRhhpoYqjMSZCPgrcfqibw
+
+基于序列到序列模型的句子级复述生成
+
+https://mp.weixin.qq.com/s/oMKhVtCTmQKLTmhMx008MA
+
+基于背景知识的对话模型
+
+https://mp.weixin.qq.com/s/eq1I92rjIAWEpYw-1fEHeQ
+
+从Facebook AI Research开源fastText谈起文本分类：词向量模性、深度表征和全连接
+
+https://mp.weixin.qq.com/s/hGGT61frDfm-PQHjSnI3Tw
+
+自然语言处理中CNN模型几种常见的Max Pooling操作
+
+https://mp.weixin.qq.com/s/PGj1IjLPz-RmTaLbcnYNCw
+
+自然语言处理领军人刘兵：没有终身学习，机器不可能智能
+

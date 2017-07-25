@@ -256,6 +256,18 @@ https://mp.weixin.qq.com/s/EJyG3Y4EHTGMm_Q1mY4RvA
 
 CNN入门手册（上）
 
+https://mp.weixin.qq.com/s/T3tHFdjnQh4asE0V25vTog
+
+CNN入门手册（中）
+
+https://mp.weixin.qq.com/s/chsDjS39qcoHICUNbSdQHQ
+
+长文揭秘图像处理和卷积神经网络架构
+
+https://mp.weixin.qq.com/s/nIbfiDXkqkpdLzQo2Gmc2Q
+
+利用卷积神经网络处理CIFAR图像分类
+
 # Autoencoder
 
 Bengio在2003年的《A neural probabilistic language model》中指出，维度过高，会导致每次学习，都会强制改变大部分参数。

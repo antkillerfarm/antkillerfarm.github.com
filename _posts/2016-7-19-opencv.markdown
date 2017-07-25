@@ -224,6 +224,10 @@ https://mp.weixin.qq.com/s/VAFb0DAZAUyDnjE6SlNcXw
 
 如何对比评价各种深度神经网络硬件？不妨给它们跑个分
 
+https://mp.weixin.qq.com/s/zTO4UZ3zDLZL0GOjv0YqrQ
+
+GPU加速深度学习
+
 http://mp.weixin.qq.com/s/8omONLSUA3cyxAQZVzBjCg
 
 5本深度学习和10本机器学习书籍
@@ -388,7 +392,7 @@ http://www.cs.columbia.edu/~blei/seminar/2016_discrete_data/index.html
 
 Probabilistic Models of Discrete Data
 
-http://speech.ee.ntu.edu.tw/~tlkagk/courses_MLDS17.html
+http://speech.ee.ntu.edu.tw/~tlkagk/courses.html
 
 台湾大学李宏毅副教授的深度学习课程
 
@@ -423,5 +427,13 @@ Mathematical Aspects of Deep Learning
 http://ciml.info/
 
 马里兰大学的机器学习课程
+
+http://mbmlbook.com/toc.html
+
+Chris Bishop发布在线新书。Bishop 2007年的《Pattern Recognition And Machine Learning》一书绝对是经典之作，然而难度偏高。这本是入门级别的。
+
+https://mp.weixin.qq.com/s/6XEUATgudV9AT7Y8FLfdlQ
+
+台大林轩田：机器学习基石（全套65课中文视频）
 
 

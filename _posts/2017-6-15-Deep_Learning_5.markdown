@@ -4,7 +4,13 @@ title:  深度学习（五）——Attention, seq2seq, DMN, CNN进化史
 category: theory 
 ---
 
-# Attention（续）
+# Attention
+
+倒序句子这种方法属于“hack”手段。它属于被实践证明有效的方法，而不是有理论依据的解决方法。
+
+大多数翻译的基准都是用法语、德语等语种，它们和英语非常相似（即使汉语的词序与英语也极其相似）。但是有些语种（像日语）句子的最后一个词语在英语译文中对第一个词语有高度预言性。那么，倒序输入将使得结果更糟糕。
+
+还有其它办法吗？那就是Attention机制。
 
 ![](/images/article/attention.png)
 
@@ -101,6 +107,10 @@ The Unreasonable Effectiveness of Recurrent Neural Networks
 https://mp.weixin.qq.com/s/8u3v9XzECkwcNn5Ay-kYQQ
 
 基于Depthwise Separable Convolutions的Seq2Seq模型_SliceNet原理解析
+
+https://mp.weixin.qq.com/s/H6eYxS7rXGDH_B8Znrxqsg
+
+seq2seq中的beam search算法过程
 
 # DMN
 
@@ -231,28 +241,4 @@ Deep Learning回顾之LeNet、AlexNet、GoogLeNet、VGG、ResNet
 http://www.leiphone.com/news/201609/303vE8MIwFC7E3DB.html
 
 Google最新开源Inception-ResNet-v2，借助残差网络进一步提升图像分类水准
-
-http://mp.weixin.qq.com/s/2TUw_2d36uFAiJTkvaaqpA
-
-解读Keras在ImageNet中的应用：详解5种主要的图像识别模型
-
-https://zhuanlan.zhihu.com/p/27642620
-
-YJango的卷积神经网络——介绍
-
-https://www.zybuluo.com/coolwyj/note/202469
-
-ImageNet Classification with Deep Convolutional Neural Networks
-
-http://simtalk.cn/2016/09/20/AlexNet/
-
-AlexNet简介
-
-http://simtalk.cn/2016/09/12/CNNs/
-
-CNN简介
-
-http://www.cnblogs.com/Allen-rg/p/5833919.html
-
-GoogLeNet学习心得
 

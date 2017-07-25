@@ -224,6 +224,14 @@ GitHub：
 
 https://github.com/elki-project/elki
 
+## smile
+
+Statistical Machine Intelligence and Learning Engine虽然没有GUI，但却有一个类似Spark的命令行界面，以及类似Matplotlib的数据可视化接口。这是一个
+
+官网：
+
+https://haifengl.github.io/smile/
+
 ## java-string-similarity
 
 这个库虽然功能有限，但却针对字符处理进行了优化。比如Jaccard距离，weka没有实现，ELKI提供的是通用的集合类实现，用起来没有java-string-similarity方便。
@@ -337,6 +345,10 @@ https://mp.weixin.qq.com/s/YOyOR8fdaEKcydAywcc-HA
 https://mp.weixin.qq.com/s/gnDTOLWuPZiCVzspTk_zCQ
 
 TensorFlow轻度入门
+
+https://mp.weixin.qq.com/s/MYBTWL3X_OhLZL6C4rISzw
+
+TensorFlow训练线性回归
 
 ## 我的TensorFlow实践
 

@@ -177,6 +177,10 @@ https://mp.weixin.qq.com/s/GGpaFZ0crP_NQ564d79hFw
 
 LSTM、GRU与神经图灵机：详解深度学习最热门的循环神经网络
 
+https://mp.weixin.qq.com/s/0bBTVjkfAK2EzQiaFcUjBA
+
+LSTM入门必读：从基础知识到工作方式详解
+
 # 神经元激活函数进阶
 
 在《深度学习（一、二）》中，我们探讨了ReLU相对于sigmoid函数的改进，以及一些保证深度神经网络能够训练的措施。然而即便如此，深度神经网络的训练仍然是一件非常困难的事情，还需要更多的技巧和方法。
@@ -217,6 +221,22 @@ https://mp.weixin.qq.com/s/Hic01RxwWT_YwnErsJaipQ
 
 什么是激活函数？
 
+## 其他激活函数
+
+### hard tanh
+
+$$\text{HardTanh}(x)=\begin{cases}
+-1, & x<-1 \\
+x, & -1\le x \le 1 \\
+1, & x>1 \\
+\end{cases}$$
+
+![](/images/article/hard_tanh.png)
+
+### soft sign
+
+$$\text{softsign}(x)=\frac{x}{1+|x|}$$
+
 # Deep Residual Network
 
 无论采用何种方法，可训练的神经网络的层数都不可能无限深。有的时候，即使没有梯度消失，也存在训练退化（即深层网络的效果还不如浅层网络）的问题。
@@ -246,6 +266,14 @@ https://www.leiphone.com/news/201608/vhqwt5eWmUsLBcnv.html
 
 何恺明的深度残差网络PPT
 
+https://mp.weixin.qq.com/s/kcTQVesjUIPNcz2YTxVUBQ
+
+ResNet 6大变体：何恺明,孙剑,颜水成引领计算机视觉这两年
+
+https://mp.weixin.qq.com/s/5M3QiUVoA8QDIZsHjX5hRw
+
+一文弄懂ResNet有多大威力？最近又有了哪些变体？
+
 # Bi-directional RNN
 
 众所周知，RNN在处理长距离依赖关系时会出现问题。LSTM虽然改进了一些，但也只能缓解问题，而不能解决该问题。
@@ -266,10 +294,3 @@ https://www.leiphone.com/news/201608/vhqwt5eWmUsLBcnv.html
 
 从图中可以看出，Bi-directional RNN有两个隐层，分别处理前向和后向的时序信息。
 
-# Attention
-
-倒序句子这种方法属于“hack”手段。它属于被实践证明有效的方法，而不是有理论依据的解决方法。
-
-大多数翻译的基准都是用法语、德语等语种，它们和英语非常相似（即使汉语的词序与英语也极其相似）。但是有些语种（像日语）句子的最后一个词语在英语译文中对第一个词语有高度预言性。那么，倒序输入将使得结果更糟糕。
-
-还有其它办法吗？那就是Attention机制。

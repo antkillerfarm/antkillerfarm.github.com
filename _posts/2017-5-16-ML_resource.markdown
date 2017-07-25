@@ -306,6 +306,26 @@ https://mp.weixin.qq.com/s/q5mPN_rt1Af5L2fnxuTdCA
 
 46款数据可视化分析工具大集合
 
+http://blog.csdn.net/u013709270/article/details/72967462
+
+机器学习中的数据不平衡解决方案大全
+
+https://mp.weixin.qq.com/s/-Zji6xGISaUzFhQ6tMlQqw
+
+最大似然估计与最小二乘法的一点浅见
+
+https://mp.weixin.qq.com/s/ttCfpEomKLJUC1C3xK64HA
+
+10幅图解释机器学习中的基本概念
+
+https://mp.weixin.qq.com/s/ubpRPQ7-1nvY5CzICWi1Cg
+
+似乎没区别，但你混淆过验证集和测试集吗？
+
+https://mp.weixin.qq.com/s/wk3_wG1xSuMX1HjJeEgErQ
+
+kmeans聚类理论篇K的选择（轮廓系数）
+
 # PMML
 
 PMML(Predictive Model Markup Language) 是一个开放的工业标准，它以 XML 为载体将上述数据挖掘任务标准化，可以把某一产品所创建的数据挖掘方案应用于任何其它遵从 PMML 标准的产品或平台中 , 而不需考虑分析和预测过程中的具体实现细节。使得模型的部署摆脱了模型开发和产品整合的束缚，为商业智能产品、数据仓库和云计算中的数据挖掘模型的应用环境开拓了新的篇章。
@@ -321,6 +341,10 @@ http://blog.csdn.net/litaoshoujiao/article/details/8537599
 https://www.ibm.com/developerworks/cn/xml/x-1107xuj/
 
 # Machine Learning之Python篇
+
+## 概述
+
+![](/images/article/python_for_big_data.jpg)
 
 ## NumPy
 
@@ -433,5 +457,9 @@ python机器学习算法代码实现
 https://mp.weixin.qq.com/s/1--i1OhxRNPvNnmP9bFo3g
 
 全机器学习和Python的27个速查表
+
+https://mp.weixin.qq.com/s/PtZ3YvFrUgbK5y3pcAeW9A
+
+使用OpenCV和Python实现的机器学习
 
 

@@ -72,6 +72,8 @@ http://www.cnblogs.com/maybe2030/
 
 一个DL+ML的blog
 
+https://sherlockliao.github.io/
+
 ## 文章
 
 https://zhuanlan.zhihu.com/p/22888385
@@ -278,10 +280,6 @@ https://mp.weixin.qq.com/s/M120ZRfLoT9abWZOmgj-TQ
 
 面部识别技术能用来识别鲸鱼？
 
-https://mp.weixin.qq.com/s/chsDjS39qcoHICUNbSdQHQ
-
-长文揭秘图像处理和卷积神经网络架构
-
 https://mp.weixin.qq.com/s/4JFzgFTvAvBs74V7AQUCrQ
 
 让照片走两步：骨骼框架辅助的人物动作生成模型
@@ -381,5 +379,48 @@ CVPR现场会议合集及CCCV内容跟踪
 https://mp.weixin.qq.com/s/-G94Mj-8972i2HtEcIZDpA
 
 人脸识别世界杯榜单出炉，微软百万名人识别竞赛冠军分享
+
+https://mp.weixin.qq.com/s/-Jn4UbZ6EqRYceJqI1l16g
+
+一文简短介绍Caffe
+
+https://mp.weixin.qq.com/s/6_cW22DCzSw3DpUDrLXLcA
+
+OpenAI提出强化学习近端策略优化，可替代策略梯度法
+
+https://mp.weixin.qq.com/s/hkcVhyqiDW--F3QxucgEcA
+
+亚马逊开源神经机器翻译框架Sockeye：基于Apache MXNet的NMT平台
+
+https://mp.weixin.qq.com/s/TWdeHVCgEf54STvdA1QUPg
+
+DeepMin哈萨比斯长文：伟大的AI离不开神经科学
+
+https://mp.weixin.qq.com/s/qReN6z8s45870HSMCMNatw
+
+微软亚洲研究院CVPR 2017 Oral论文：逐层集中Attention的卷积模型
+
+https://mp.weixin.qq.com/s/oNPrmIm1SOlA9tuyQZFr9w
+
+让机器人学会理解语义概念：谷歌提出深度视觉新技术
+
+https://mp.weixin.qq.com/s/HD370E4cCYvy_pdEKAvLIA
+
+教机器学习编程
+
+https://mp.weixin.qq.com/s/AS1VFjBFnSk19QJ28tBVWA
+
+NIPS 2017斯坦福赛题大公开：强化学习模拟人类肌肉骨骼模型
+
+https://mp.weixin.qq.com/s/x0r-2J_YdYgIQlRDqvGofg
+
+CVPR 2017论文解读：用于单目图像车辆3D检测的多任务网络
+
+https://mp.weixin.qq.com/s/fY4vF0aPexwFi2Fu4grdzg
+
+大规模视觉理解竞赛WebVision冠军分享
+
+
+
 
 

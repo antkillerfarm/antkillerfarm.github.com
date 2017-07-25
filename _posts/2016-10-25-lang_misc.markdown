@@ -156,7 +156,7 @@ https://ask.hellobi.com/blog/EasyCharts/5777
 
 R绘制圣诞树
 
-http://mp.weixin.qq.com/s?__biz=MzIxNjA2ODUzNg==&mid=2651435295&idx=1&sn=968d9950e54c34e2a2ddd4186c28c7c7&chksm=8c73a9c8bb0420de7ea5e709d4dc78dce977677cefdfaec48db6f4532c8613ab6ca0f623bc83#rd
+http://mp.weixin.qq.com/s?__biz=MzIxNjA2ODUzNg==&mid=2651435295&idx=1&sn=968d9950e54c34e2a2ddd4186c28c7c7
 
 数据分析案例--以上海二手房为例
 
@@ -171,6 +171,10 @@ https://mousieur-g.github.io/
 http://yanping.me/shiny-tutorial/
 
 Shiny中文教程
+
+https://mp.weixin.qq.com/s?__biz=MzA3Njc0NzA0MA==&mid=2653191385&idx=1&sn=23c13aa4f3ab4ffe5a902abd8fc0613e
+
+那些年倒腾的R语言学习笔记
 
 ## 交互环境
 

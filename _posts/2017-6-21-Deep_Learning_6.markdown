@@ -4,6 +4,34 @@ title:  深度学习（六）——目标检测, RCNN, 深度强化学习
 category: theory 
 ---
 
+# CNN进化史
+
+## 参考（续）
+
+http://mp.weixin.qq.com/s/2TUw_2d36uFAiJTkvaaqpA
+
+解读Keras在ImageNet中的应用：详解5种主要的图像识别模型
+
+https://zhuanlan.zhihu.com/p/27642620
+
+YJango的卷积神经网络——介绍
+
+https://www.zybuluo.com/coolwyj/note/202469
+
+ImageNet Classification with Deep Convolutional Neural Networks
+
+http://simtalk.cn/2016/09/20/AlexNet/
+
+AlexNet简介
+
+http://simtalk.cn/2016/09/12/CNNs/
+
+CNN简介
+
+http://www.cnblogs.com/Allen-rg/p/5833919.html
+
+GoogLeNet学习心得
+
 # 目标检测
 
 ## 概述
@@ -274,5 +302,10 @@ DeepMind提出多任务强化学习新方法Distral
 https://mp.weixin.qq.com/s/laKJ_jfNR5L1uMML9wkS1A
 
 强化学习（Reinforcement Learning）算法基础及分类
+
+https://zhuanlan.zhihu.com/p/27699682
+
+荐译一篇通俗易懂的策略梯度（Policy Gradient）方法讲解
+
 
 

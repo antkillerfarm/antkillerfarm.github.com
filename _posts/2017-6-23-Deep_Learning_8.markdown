@@ -24,6 +24,10 @@ https://mp.weixin.qq.com/s/AswdyjPeKbX7yhAPloP2og
 
 基于对抗学习的生成式对话模型
 
+https://mp.weixin.qq.com/s/uyn41vKKoptXPZXBP2vVDQ
+
+生成对抗网络（GAN）之MNIST数据生成
+
 # 依存分析
 
 ## 概况
@@ -43,6 +47,35 @@ Dependency Parsing是NLP领域的一项重要工作。
 ![](/images/article/tbp_2.png)
 
 上图演示了ROOT结点是如何一步步“吃”进词语（即Shift操作），并生成依存分析树的过程。
+
+这些步骤被称作transition，这在传统做法中，通常是一堆文法规则。
+
+## 依存分析的准确度指标
+
+![](/images/article/dependency_accuracy.png)
+
+依存分析的准确度指标主要有UAS和LAS两种。
+
+上图是某句话的依存分析结果。其中Gold表示正确答案，而Parsed表示算法的计算结果。结果的第二列是依存结点，0表示ROOT；第4列是单词的词性。
+
+Unlabeled attachment score是指依存结点是否正确。以上图中的例子为例，就是4/5=80%。
+
+Labeled	attachment score不仅考虑依存结点是否正确，还考虑词性是否正确。用样以上图为例，则是2/5=40%。
+
+## 深度方法
+
+深度方法的开山之作是陈丹琦2014年的论文：
+
+《A Fast and Accurate Dependency Parser using Neural Networks》
+
+![](/images/article/dependency_parser_nn.png)
+
+上图是该方案的结构图。
+
+我们之前已经指出，在传统方法中，transition是由单词、词性和依赖关系所确定的。只是这种确定的规则比较复杂，不易提炼出有效特征。
+
+参照我们在CNN中的作为，特征提取这一步骤可以由神经网络来完成。因此，在这里
+
 
 # CTC
 
@@ -98,7 +131,14 @@ https://mp.weixin.qq.com/s/zEqgDh6_fnDgXEI8MC9cmg
 
 端对端的深度卷积神经网络在语音识别中的应用
 
+# NLP的女学霸们
 
+http://cs.stanford.edu/people/danqi/
 
+陈丹琦，清华本科（姚班）（2012）+斯坦福博士生。
+
+https://homes.cs.washington.edu/~luheng/
+
+何律恒，上海交大本科（2010）+宾夕法尼亚大学硕士（2012）+华盛顿大学博士生。
 
 
