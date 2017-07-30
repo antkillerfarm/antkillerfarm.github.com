@@ -343,3 +343,12 @@ http://www.leiphone.com/news/201608/MPXlWtGaJLPYL7NB.html
 
 人脸检测发展：从VJ到深度学习
 
+https://mp.weixin.qq.com/s/ZZmLbFzi843g0k3gTncQmA
+
+拿下人脸识别“世界杯”冠军！松下-NUS和美国东北大学实战分享
+
+https://mp.weixin.qq.com/s/DYCXef_09yFFNR0uHL2Q0Q
+
+基于Python的开源人脸识别库：离线识别率高达99.38%
+
+

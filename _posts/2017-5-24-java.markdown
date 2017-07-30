@@ -350,6 +350,28 @@ https://mp.weixin.qq.com/s/MYBTWL3X_OhLZL6C4rISzw
 
 TensorFlow训练线性回归
 
+http://www.jianshu.com/p/d443aab9bcb1
+
+在TensorFlow上使用LSTM进行情感分析
+
+https://mp.weixin.qq.com/s/5QYlh6gV9IqdQfraK4DC8w
+
+10种深度学习算法的TensorFlow实现
+
+https://mp.weixin.qq.com/s/68vaQRqUo8u09iheKzFVEw
+
+玩转TensorFlow深度学习
+
+https://mp.weixin.qq.com/s/TZMOO_LFCxk297lKNQfvGQ
+
+TensorFlow从基础到实战：一步步教你创建交通标志分类神经网络
+
+## 基本概念
+
+**Variables**：训练模型的时候，那些在样本之间表示结点状态的变量。一般来说，就是神经网络的参数。
+
+**Placeholders**：对于每个样本都不相同的变量。比如神经网络的输入变量x和输出变量y。
+
 ## 我的TensorFlow实践
 
 ### MNIST+Softmax

@@ -46,29 +46,67 @@ http://www.cnblogs.com/fengfenggirl/p/iForest.html
 
 可见，滤波和预测是实时运算，而平滑是非实时运算。
 
-# NLP参考资源
+# DL参考资源
 
-https://mp.weixin.qq.com/s/wH-YYzifsEqMCD_4n8B-Kw
+https://mp.weixin.qq.com/s/x0r-2J_YdYgIQlRDqvGofg
 
-12张图看懂Gartner《智能客服机器人行业最佳实践》报告
+CVPR 2017论文解读：用于单目图像车辆3D检测的多任务网络
 
-https://mp.weixin.qq.com/s/PRhhpoYqjMSZCPgrcfqibw
+https://mp.weixin.qq.com/s/fY4vF0aPexwFi2Fu4grdzg
 
-基于序列到序列模型的句子级复述生成
+大规模视觉理解竞赛WebVision冠军分享
 
-https://mp.weixin.qq.com/s/oMKhVtCTmQKLTmhMx008MA
+https://mp.weixin.qq.com/s/cO1VlYGwdRBAbPs7IgvcAA
 
-基于背景知识的对话模型
+超越传统强化学习的价值分布方法
 
-https://mp.weixin.qq.com/s/eq1I92rjIAWEpYw-1fEHeQ
+https://mp.weixin.qq.com/s/HlqzSdhj3Q3nX4Zl63PM0A
 
-从Facebook AI Research开源fastText谈起文本分类：词向量模性、深度表征和全连接
+商汤科技23篇论文横扫CVPR
 
-https://mp.weixin.qq.com/s/hGGT61frDfm-PQHjSnI3Tw
+https://mp.weixin.qq.com/s/TelGG-uVQyxwQjiDGE1pqA
 
-自然语言处理中CNN模型几种常见的Max Pooling操作
+特征金字塔网络FPN
 
-https://mp.weixin.qq.com/s/PGj1IjLPz-RmTaLbcnYNCw
+https://mp.weixin.qq.com/s/RpaOrngeXTKycLb3iCygZw
 
-自然语言处理领军人刘兵：没有终身学习，机器不可能智能
+利用贝叶斯神经网络进行随机动力系统中的学习与策略搜索
+
+https://mp.weixin.qq.com/s/j5YPHYEPioLiEIDc6lK3kA
+
+在线视频衣物精确检索技术，开启刷剧败明星同款时代
+
+https://mp.weixin.qq.com/s/6KC1vhKcyqQ0eZEXJyPqVA
+
+密集连接卷积网络
+
+https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
+
+北大：一种基于新闻特征抽取和循环神经网络的股票预测方法
+
+https://mp.weixin.qq.com/s/5DtTgc9bIrdXQkmuqRm8CA
+
+谷歌大脑迁移学习：减少调参，直接在数据集中学习最佳图像架构
+
+https://mp.weixin.qq.com/s/bMW2go3QefbgYMqVSzyy_g
+
+腾讯AI Lab深度解读CVPR五大前沿
+
+https://mp.weixin.qq.com/s/DGPI-nASWnsO9t-_AnQnbw
+
+OpenAI 新研究：通过自适应参数噪声提升强化学习性能
+
+https://mp.weixin.qq.com/s/cANlqQAI-A2mC9vnd3imQA
+
+Instance-Aware图像语义分割
+
+https://mp.weixin.qq.com/s/_dHjZQ_7_7H34PHhV_lC3w
+
+全新强化学习算法详解，看贝叶斯神经网络如何进行策略搜索
+
+https://www.leiphone.com/news/201707/mFuwXGvZBhoVQD5S.html
+
+一秒分辨出杨臣刚、王大治和孙楠，这个黑产居然用AI 来"打码"
+
+
 

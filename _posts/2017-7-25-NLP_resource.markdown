@@ -6,6 +6,30 @@ category: technology
 
 # NLP参考资源
 
+http://mp.weixin.qq.com/s/lmHWo9MUdv7ZMI7ARNmTSw
+
+拆开阿里小蜜的内核，看智能人机交互的实现逻辑
+
+https://www.microsoft.com/en-us/research/project/dssm/
+
+微软的DSSM模型
+
+http://www.csdn.net/article/2015-08-28/2825569
+
+递归神经网络不可思议的有效性
+
+http://mp.weixin.qq.com/s/5kKkZp6Y3_TgHl98dtYNiw
+
+NLP领域中文vs英文有什么异同点，中文NLP有什么独特的地方?
+
+http://www.wildml.com/2016/07/deep-learning-for-chatbots-2-retrieval-based-model-tensorflow/
+
+IMPLEMENTING A RETRIEVAL-BASED MODEL IN TENSORFLOW
+
+https://mp.weixin.qq.com/s/vGUizRVnosd7cgxha-pimw
+
+200行Python代码实现感知机词性标注器
+
 http://www.jianshu.com/p/43db6425ad33
 
 如何为聊天机器人设计数据通道
@@ -185,5 +209,58 @@ https://mp.weixin.qq.com/s/JAWDiNUfU62n8lDRG8zzRw
 https://mp.weixin.qq.com/s/5ajhhc4mpIhoqkl5VkGnaw
 
 深度学习实现问答机器人
+
+http://blog.csdn.net/a635661820/article/details/43906731
+
+Statistical language model统计语言模型 
+
+https://mp.weixin.qq.com/s/vNzUngc-boG4QYmf_8lFfw
+
+自动为词汇推荐义原组合
+
+https://mp.weixin.qq.com/s/IvbJ_d7z91BCcRVpJ9_jMA
+
+如何用深度学习做自然语言处理？这里有份最佳实践清单
+
+https://mp.weixin.qq.com/s/wH-YYzifsEqMCD_4n8B-Kw
+
+12张图看懂Gartner《智能客服机器人行业最佳实践》报告
+
+https://mp.weixin.qq.com/s/PRhhpoYqjMSZCPgrcfqibw
+
+基于序列到序列模型的句子级复述生成
+
+https://mp.weixin.qq.com/s/oMKhVtCTmQKLTmhMx008MA
+
+基于背景知识的对话模型
+
+https://mp.weixin.qq.com/s/eq1I92rjIAWEpYw-1fEHeQ
+
+从Facebook AI Research开源fastText谈起文本分类：词向量模性、深度表征和全连接
+
+https://mp.weixin.qq.com/s/hGGT61frDfm-PQHjSnI3Tw
+
+自然语言处理中CNN模型几种常见的Max Pooling操作
+
+https://mp.weixin.qq.com/s/PGj1IjLPz-RmTaLbcnYNCw
+
+自然语言处理领军人刘兵：没有终身学习，机器不可能智能
+
+https://mp.weixin.qq.com/s/jk1XgnuydrsTg3HvV0CVvw
+
+当深度学习遇见自动文本摘要
+
+https://mp.weixin.qq.com/s/DhiCkZd4TU4YIAm83e_vLg
+
+更近人类的对话系统自动评测方法
+
+https://mp.weixin.qq.com/s/2aKoOx18RB0GGQTzb3Tjzg
+
+Facebook开源DrQA的PyTorch实现：基于维基百科的问答系统
+
+https://mp.weixin.qq.com/s/9uG8lqr2Kn0vzZKyjLHNGg
+
+从文本挖掘综述分类、聚类和信息提取等算法
+
 
 

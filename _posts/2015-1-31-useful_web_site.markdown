@@ -244,6 +244,26 @@ https://mp.weixin.qq.com/s/Q_YfMcmI6W4lQFpGxpV_aQ
 
 以云计算为名之微软生死战略大逃亡
 
+https://mp.weixin.qq.com/s/oDRH0GJIy3pyN4AypvBOEw
+
+架构师是如何炼成的？以天猫APP架构&开发模式升级工程为例
+
+https://mp.weixin.qq.com/s/5gUm_xNkHGxpnUSgZaLmJw
+
+关于大数据，你应该知道的75个专业术语
+
+https://mp.weixin.qq.com/s/gyuKlDwlIqaZmC3w-r8oqg
+
+手机相机如何排名
+
+https://mp.weixin.qq.com/s/-2kGkJzjay2WJzIpMs2Adw
+
+IEEE 盘点27款震撼世界的芯片
+
+https://mp.weixin.qq.com/s/5KA7jtlRmnXxijGQhU1k4A
+
+DeepMind哈萨比斯狂推的神经科学，入门需要看什么书？
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

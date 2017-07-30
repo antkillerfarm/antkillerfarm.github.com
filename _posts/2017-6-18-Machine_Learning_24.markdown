@@ -90,6 +90,10 @@ category: theory
 | DMN | Dynamic Memory Networks | 动态记忆网络 |  |
 | GAN | Generative Adversarial Networks | 生成对抗式网络 |  |
 | SGNS | Skip-Gram Negative Sampling |  |  |
+|  | Semi-supervised Learning | 半监督学习 |  |
+|  | Transfer Learning | 迁移学习 |  |
+|  | Text Classification | 文本分类 |  |
 |  |  |  |  |
 |  |  |  |  |
+
 

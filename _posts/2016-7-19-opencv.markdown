@@ -142,35 +142,9 @@ BugBrain是一个神经网络相关的益智游戏。官网：
 
 http://www.biologic.com.au/bugbrain/
 
-http://blog.csdn.net/life_is_amazing/article/details/51884237
-
-这个博客不错,一些深度学习资源链接
-
-http://mp.weixin.qq.com/s/wCDGPBYoOCzLtJBnPbTz9w
-
-神经网络结构解析
-
-http://mp.weixin.qq.com/s/Jiis7j3W3D5GG_ZdxplY7Q
-
-淘宝搜索/推荐系统背后深度强化学习与自适应在线学习的实践之路
-
-https://zhuanlan.zhihu.com/p/25549497
-
-https://zhuanlan.zhihu.com/p/25549585
-
-126篇殿堂级深度学习论文分类整理 从入门到应用（上）（下）
-
-https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap
-
-深度学习论文阅读路线图
-
 https://www.zhihu.com/question/41233373
 
 如果你是面试官，你怎么去判断一个面试者的深度学习水平？
-
-http://www.cnblogs.com/xxey/p/4277181.html
-
-Beam Search（集束搜索/束搜索）
 
 http://mp.weixin.qq.com/s/upblqKf0m_15o4L1fF0EEQ
 
@@ -179,70 +153,6 @@ http://mp.weixin.qq.com/s/upblqKf0m_15o4L1fF0EEQ
 http://mp.weixin.qq.com/s/Cg9tHG1YgDCdI3NPYl5-vQ
 
 如何用Soft-NMS实现目标检测并提升准确率
-
-https://jizhi.im/blog/post/45_questions_deep_learning?from=timeline
-
-45个问题测出你的深度学习基本功
-
-http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww
-
-MIT最新算法，双向传播比BP快25倍
-
-http://mp.weixin.qq.com/s/Aw2INWuwPlXmkPEY0CZf6g
-
-深度学习在推荐算法上的应用进展
-
-http://i.dataguru.cn/mportal.php?mod=view&aid=11463
-
-深度学习在推荐领域的应用
-
-https://zhuanlan.zhihu.com/p/25382177
-
-AI芯片怎么降功耗？
-
-https://zhuanlan.zhihu.com/p/26882794
-
-Google深度揭秘TPU
-
-https://mp.weixin.qq.com/s/1X9xiZkmVPI-j-aipr-ocg
-
-AlphaGo Master最新架构和算法，谷歌云与TPU拆解
-
-https://mp.weixin.qq.com/s/8HIZRhb-KJOtPnQtQ3GQVg
-
-第一代芯片是CPU，第二代是GPU，第三代是什么？
-
-https://mp.weixin.qq.com/s/Jof-u8oUuLR4v7t3jjXEmA
-
-GPU和线下训练
-
-https://mp.weixin.qq.com/s/2aE5fzGZeyX-oFyWbcbA5A
-
-揭开神经网络加速器的神秘面纱之DianNao
-
-https://mp.weixin.qq.com/s/VAFb0DAZAUyDnjE6SlNcXw
-
-如何对比评价各种深度神经网络硬件？不妨给它们跑个分
-
-https://mp.weixin.qq.com/s/zTO4UZ3zDLZL0GOjv0YqrQ
-
-GPU加速深度学习
-
-http://mp.weixin.qq.com/s/8omONLSUA3cyxAQZVzBjCg
-
-5本深度学习和10本机器学习书籍
-
-http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw
-
-周志华教授gcForest（多粒度级联森林）算法预测股指期货涨跌
-
-http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks
-
-神经网络的分布式训练
-
-http://mp.weixin.qq.com/s/IfEgSOIkIPA-YtC9NQW1ng
-
-非神经网络的深度模型gcForest
 
 https://mp.weixin.qq.com/s/JnGpVQDF95hHTirrZyJc_g
 
@@ -264,45 +174,17 @@ https://www.oreilly.com/learning/caption-this-with-tensorflow
 
 图片字幕生成
 
-http://www.csdn.net/article/2015-09-16/2825716
-
-Yoshua Bengio等大神传授：26条深度学习经验
-
-http://mp.weixin.qq.com/s/G4lQqiiVvmCW9SmX2blDEg
-
-实战——目标检测与识别
-
-https://mp.weixin.qq.com/s/KoRXcV-ujIT-5eO4RUkWYw
-
-基于TensorFlow和OpenCV实现文档检测功能！
-
 https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/content/
 
 某人写的AI心得
-
-https://mp.weixin.qq.com/s/ywCnn1jXAU95RCY8PIusig
-
-十个机器学习误区 By 李飞飞
-
-https://mp.weixin.qq.com/s/TGuEvNXw_9S5-9a3KyDvvw
-
-基于图卷积网络的图深度学习
 
 https://mp.weixin.qq.com/s/JAVzy8gy7k4EesBBHvEZLg
 
 亚马逊用机器学习自动调优数据库管理系统
 
-https://mp.weixin.qq.com/s/Cvk_cePK9iQd8JIKKDDrmQ
-
-强化学习的核心基础概念及实现
-
 https://mp.weixin.qq.com/s/1A6p672z4Yz__MF6TWORSw
 
 备战医疗大赛必看！
-
-https://mp.weixin.qq.com/s/LQFuXgI7uZK2UKRfZvlVbA
-
-Variational AutoEncoder
 
 https://mp.weixin.qq.com/s/0OlKixcT20wao4xkWa6M5A
 
@@ -315,6 +197,110 @@ Vicarious详解新型图式网络：赋予强化学习泛化能力
 https://mp.weixin.qq.com/s/gfuO7CwfFiNC-iqDquDKQQ
 
 五个案例，三大心得——带你进阶深度学习的实践应用之路
+
+http://mp.weixin.qq.com/s/6I0Z_yY7UT_7qOKOWcd7Mw
+
+李飞飞发表研究新成果：视觉推理的推断和执行程序！
+
+http://mp.weixin.qq.com/s/-Av3-ZNi6UGlKNv_jduAeQ
+
+微软新论文：如何利用深度特征流提高视频识别准确率？
+
+http://mp.weixin.qq.com/s/XH1dXWSPiQMAHYR0_-xylA
+
+精选深度学习在文本、视觉、语音等领域的论文集
+
+https://mp.weixin.qq.com/s/pbyByPoZ9SVoP9B7pJMxXg
+
+深度卷积网络迁移学习的脸部表情识别
+
+https://mp.weixin.qq.com/s/bGbslnuG80S6gPwD4FHuMg
+
+深度学习助力前端开发：自动生成GUI图代码
+
+https://mp.weixin.qq.com/s/eCtqMIo3_UDxAR4fWzMjZQ
+
+站在锤子手机背后，小源科技用 AI 打造短信场景服务
+
+https://mp.weixin.qq.com/s/SZlFgnUBL0T6yNa-i_WLvg
+
+领域适应性Domain Adaptation、One-shot/zero-shot Learning概述
+
+https://mp.weixin.qq.com/s/g2PcmsDW9ixUCh_yP8W-Vg
+
+各类Seq2Seq模型对比及《Attention Is All You Need》中技术详解
+
+https://mp.weixin.qq.com/s/FtI94xY6a8TEvFCHfjMnmA
+
+小组讨论谷歌机器翻译Attention is All You Need
+
+http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
+
+《Large Scale Distributed Deep Networks》中译文
+
+https://www.zhihu.com/question/56676679/answer/151505274
+
+机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
+
+https://mp.weixin.qq.com/s/PKqDlbKynnCLE6JAy0NuQQ
+
+谷歌深度学习公开课任务 1: notMNIST
+
+https://mp.weixin.qq.com/s/PF6-txnq3SV258EfNVufSw
+
+深度学习与XGBoost在小数据集上的测评
+
+https://mp.weixin.qq.com/s/yQG0983RjQHIkt9oBlkDqQ
+
+瞎谈CNN：通过优化求解输入图像
+
+https://mp.weixin.qq.com/s/T-v9OTcJa5OQ71QmYrFtbg
+
+斯坦福大学提出SGD动量自调节器YellowFin
+
+https://mp.weixin.qq.com/s/sCxyk8WEb8W2-mq-tTQs6A
+
+LeCun台大演讲
+
+https://mp.weixin.qq.com/s/SPdkJTYU80bioNdZrBj4cw
+
+卷积优化-Cpython(Cuda)施工和分析
+
+https://mp.weixin.qq.com/s/IS5iAPZeUrvvyWs29O8Ukg
+
+通过提取神经元知识实现人脸模型压缩
+
+https://mp.weixin.qq.com/s/qWJarPrjOrwxSX77xQ9rCw
+
+面向卷积神经网络的卷积核冗余消除策略
+
+https://mp.weixin.qq.com/s/dR2nhGqpz7OdmxKPYSaaxw
+
+如何理解空洞卷积（dilated convolution）？
+
+https://mp.weixin.qq.com/s/pnCdKcdRCxhFEcXyWb9xlQ
+
+深度学习助力实现智能行为分析和事件识别
+
+https://mp.weixin.qq.com/s/M120ZRfLoT9abWZOmgj-TQ
+
+面部识别技术能用来识别鲸鱼？
+
+https://mp.weixin.qq.com/s/4JFzgFTvAvBs74V7AQUCrQ
+
+让照片走两步：骨骼框架辅助的人物动作生成模型
+
+https://mp.weixin.qq.com/s/Jdd7S6JFKRdsVe2w-W01IA
+
+Facebook田渊栋开源游戏平台ELF，简化版《星际争霸》完美测试人工智能
+
+https://mp.weixin.qq.com/s/GyE9qdXPGvrq12dMAf4nrQ
+
+论文推荐：QA，增强学习，知识图谱，机器阅读理解
+
+https://mp.weixin.qq.com/s/DQcRqWALLuPpNabCv83Vcg
+
+自动机器学习，神经网络自主编程
 
 ## 论文
 
@@ -435,5 +421,9 @@ Chris Bishop发布在线新书。Bishop 2007年的《Pattern Recognition And Mac
 https://mp.weixin.qq.com/s/6XEUATgudV9AT7Y8FLfdlQ
 
 台大林轩田：机器学习基石（全套65课中文视频）
+
+http://yerevann.com/a-guide-to-deep-learning/
+
+国外网红的深度学习指南
 
 

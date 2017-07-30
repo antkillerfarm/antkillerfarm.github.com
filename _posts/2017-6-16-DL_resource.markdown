@@ -74,7 +74,19 @@ http://www.cnblogs.com/maybe2030/
 
 https://sherlockliao.github.io/
 
+一个Pytorch+DL的blog
+
+https://zhuanlan.zhihu.com/ai-insight
+
+一个DL+ML的blog
+
 ## 文章
+
+### 教程
+
+https://theneuralperspective.com/tag/tutorials/
+
+一些深度学习的教程。
 
 https://zhuanlan.zhihu.com/p/22888385
 
@@ -88,237 +100,101 @@ http://www.csdn.net/article/2015-06-01/2824811
 
 深度学习-LeCun、Bengio和Hinton的联合综述
 
-http://mp.weixin.qq.com/s/6I0Z_yY7UT_7qOKOWcd7Mw
-
-李飞飞发表研究新成果：视觉推理的推断和执行程序！
-
-https://theneuralperspective.com/tag/tutorials/
-
-一些深度学习的教程。
-
-https://github.com/jinfagang/pytorch_name_net
-
-PyTorch人工智能自动取名
-
-http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg
-
-GitHub 最受欢迎深度学习项目Top 20
-
-http://lamda.nju.edu.cn/yangjw/project/drlintro.html
-
-深度强化学习初探
-
-https://zhuanlan.zhihu.com/p/21498750
-
-深度强化学习导引
-
 http://mp.weixin.qq.com/s/SgN9uDTiBTATF5AaZiSMYQ
 
 深度学习中的怪圈
-
-http://mp.weixin.qq.com/s/-Av3-ZNi6UGlKNv_jduAeQ
-
-微软新论文：如何利用深度特征流提高视频识别准确率？
 
 http://mp.weixin.qq.com/s/bpODRWFm0vxdwr-JNkVKlA
 
 小心深度学习这个“坑”（入门误区详细版）
 
-http://mp.weixin.qq.com/s/9fJT0dMLvYQdfMVvSEiG4A
-
-深度学习的时间序列模型评价
-
 http://mp.weixin.qq.com/s/YGXAAvHgXqsZXCMJ2dyDEw
 
 深度学习的四大失败
-
-http://mp.weixin.qq.com/s/XH1dXWSPiQMAHYR0_-xylA
-
-精选深度学习在文本、视觉、语音等领域的论文集
 
 https://mp.weixin.qq.com/s/39kfsTRmHsrVgOJu8yGJ4Q
 
 神经网络介绍—利用反向传播算法的模式学习
 
-https://mp.weixin.qq.com/s/ZlCI02UdRuFBc-uKqIPE_w
-
-深度学习多任务学习综述
-
-https://mp.weixin.qq.com/s/pbyByPoZ9SVoP9B7pJMxXg
-
-深度卷积网络迁移学习的脸部表情识别
-
-https://mp.weixin.qq.com/s/HmkTkv7QT08lGtJsHD7EvQ
-
-迁移学习（Transfer Learning）技术概述
-
-https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA
-
-多任务学习-Multitask Learning概述
-
-https://mp.weixin.qq.com/s/LKjVfhyhL4GVx6l5WC6-CQ
-
-如何用深度学习实现用户行为预测与推荐
-
-https://mp.weixin.qq.com/s/bGbslnuG80S6gPwD4FHuMg
-
-深度学习助力前端开发：自动生成GUI图代码
-
-https://mp.weixin.qq.com/s/IE6blClvhYlq3-QAGHo5ww
-
-TensorFlow分布式计算机制解读：以数据并行为重
-
-https://mp.weixin.qq.com/s/eCtqMIo3_UDxAR4fWzMjZQ
-
-站在锤子手机背后，小源科技用 AI 打造短信场景服务
-
-https://mp.weixin.qq.com/s/SZlFgnUBL0T6yNa-i_WLvg
-
-领域适应性Domain Adaptation、One-shot/zero-shot Learning概述
-
-https://mp.weixin.qq.com/s/g2PcmsDW9ixUCh_yP8W-Vg
-
-各类Seq2Seq模型对比及《Attention Is All You Need》中技术详解
-
-https://mp.weixin.qq.com/s/FtI94xY6a8TEvFCHfjMnmA
-
-小组讨论谷歌机器翻译Attention is All You Need
-
 https://mp.weixin.qq.com/s/0sFjbw5A760foRdiiq-N5A
 
 深度学习必知必会25个概念
 
-http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
+https://mp.weixin.qq.com/s/C87vBloGcdJZTB27Q6WzRQ
 
-《Large Scale Distributed Deep Networks》中译文
+训练的神经网络不工作？一文带你跨过这37个坑
 
-https://mp.weixin.qq.com/s/7R-Gvegnta9XBwIaSPBL_Q
+https://mp.weixin.qq.com/s/isE8kriDUrMx3IBKjMtUHg
 
-基于Tensorflow的验证码识别
+非常详细的神经网络入门解释
 
-https://mp.weixin.qq.com/s/tyWUxJndljOSZT1-aYPgeg
+https://mp.weixin.qq.com/s/xvRtuOlUbgD3gWhKQ2jbSQ
 
-Keras入门必看教程
-
-https://mp.weixin.qq.com/s/QXOy2jo4RhCZrD5bSVzBOQ
-
-共享相关任务表征，一文读懂深度神经网络多任务学习
-
-https://zhuanlan.zhihu.com/p/25954683
-
-Mask R-CNN个人理解
-
-https://www.zhihu.com/question/56676679/answer/151505274
-
-机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
-
-https://mp.weixin.qq.com/s/Shz6BmsOrtbEFtoJRSkl9A
-
-简单车牌检测
-
-https://mp.weixin.qq.com/s/PKqDlbKynnCLE6JAy0NuQQ
-
-谷歌深度学习公开课任务 1: notMNIST
-
-https://mp.weixin.qq.com/s/PF6-txnq3SV258EfNVufSw
-
-深度学习与XGBoost在小数据集上的测评
-
-https://mp.weixin.qq.com/s/1JwLP0FmV1AGJ65iDgLWQw
-
-神经网络模型压缩技术
-
-https://mp.weixin.qq.com/s/yQG0983RjQHIkt9oBlkDqQ
-
-瞎谈CNN：通过优化求解输入图像
-
-https://mp.weixin.qq.com/s/T-v9OTcJa5OQ71QmYrFtbg
-
-斯坦福大学提出SGD动量自调节器YellowFin
-
-https://mp.weixin.qq.com/s/sCxyk8WEb8W2-mq-tTQs6A
-
-LeCun台大演讲
-
-https://mp.weixin.qq.com/s/SPdkJTYU80bioNdZrBj4cw
-
-卷积优化-Cpython(Cuda)施工和分析
-
-https://mp.weixin.qq.com/s/IS5iAPZeUrvvyWs29O8Ukg
-
-通过提取神经元知识实现人脸模型压缩
-
-https://mp.weixin.qq.com/s/lVja7woyFWpmr9sH0CitAA
-
-BMXNet：基于MXNet的开源二值神经网络实现
-
-http://blog.csdn.net/tangwei2014/article/details/55077172
-
-二值化神经网络介绍
+深度学习参数技巧
 
 https://mp.weixin.qq.com/s/oJ_ZHLg3I0PJYowGXgT0Kg
 
 深度学习研究综述
 
-https://mp.weixin.qq.com/s/qWJarPrjOrwxSX77xQ9rCw
-
-面向卷积神经网络的卷积核冗余消除策略
-
-https://mp.weixin.qq.com/s/dR2nhGqpz7OdmxKPYSaaxw
-
-如何理解空洞卷积（dilated convolution）？
-
-https://mp.weixin.qq.com/s/pnCdKcdRCxhFEcXyWb9xlQ
-
-深度学习助力实现智能行为分析和事件识别
-
 https://mp.weixin.qq.com/s/b0LZ2-4_hCqvxICMGzkqjg
 
 最详尽的神经网络基础
 
-https://mp.weixin.qq.com/s/M120ZRfLoT9abWZOmgj-TQ
+https://zhuanlan.zhihu.com/p/25549497
 
-面部识别技术能用来识别鲸鱼？
+https://zhuanlan.zhihu.com/p/25549585
 
-https://mp.weixin.qq.com/s/4JFzgFTvAvBs74V7AQUCrQ
+126篇殿堂级深度学习论文分类整理 从入门到应用（上）（下）
 
-让照片走两步：骨骼框架辅助的人物动作生成模型
+https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap
 
-https://mp.weixin.qq.com/s/Jdd7S6JFKRdsVe2w-W01IA
+深度学习论文阅读路线图
 
-Facebook田渊栋开源游戏平台ELF，简化版《星际争霸》完美测试人工智能
+http://mp.weixin.qq.com/s/8omONLSUA3cyxAQZVzBjCg
 
-https://mp.weixin.qq.com/s/GyE9qdXPGvrq12dMAf4nrQ
+5本深度学习和10本机器学习书籍
 
-论文推荐：QA，增强学习，知识图谱，机器阅读理解
+https://jizhi.im/blog/post/45_questions_deep_learning?from=timeline
 
-https://mp.weixin.qq.com/s/AjoBOYES4CNm68bWcBTb3A
+45个问题测出你的深度学习基本功
 
-看深度学习框架排名第一的TensorFlow如何进行时序预测！
+http://www.csdn.net/article/2015-09-16/2825716
 
-https://mp.weixin.qq.com/s/DQcRqWALLuPpNabCv83Vcg
+Yoshua Bengio等大神传授：26条深度学习经验
 
-自动机器学习，神经网络自主编程
+https://mp.weixin.qq.com/s/ywCnn1jXAU95RCY8PIusig
 
-https://mp.weixin.qq.com/s/xbimfckVD0Ol0T1n0-_ktA
+十个机器学习误区 By 李飞飞
 
-从浅层模型到深度模型：概览机器学习优化算法
+http://blog.csdn.net/life_is_amazing/article/details/51884237
+
+这个博客不错,一些深度学习资源链接
+
+http://mp.weixin.qq.com/s/wCDGPBYoOCzLtJBnPbTz9w
+
+神经网络结构解析
+
+https://mp.weixin.qq.com/s/yJQK0iLHurY0ShOAAEjmOg
+
+大牛的《深度学习》笔记，Deep Learning速成教程
+
+https://mp.weixin.qq.com/s/FRo-KiSK9eUfOFrN1dMZvA
+
+聊聊数据挖掘竞赛中的套路与深度学习的局限
+
+### 推荐系统
+
+http://mp.weixin.qq.com/s/Aw2INWuwPlXmkPEY0CZf6g
+
+深度学习在推荐算法上的应用进展
+
+http://i.dataguru.cn/mportal.php?mod=view&aid=11463
+
+深度学习在推荐领域的应用
 
 https://mp.weixin.qq.com/s/hGvQvddD3i858XSK4z08Ug
 
 主要推荐系统算法总结及Youtube深度学习推荐算法实例概括
-
-https://mp.weixin.qq.com/s/UrMsMHAkqNHJEl5lhAvLtA
-
-腾讯提出并行贝叶斯在线深度学习框架PBODL：预测广告系统的点击率
-
-https://mp.weixin.qq.com/s/cIGuJvYr4lZW01TdINBJnA
-
-深度压缩网络：较大程度减少了网络参数存储问题
-
-https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg
-
-旷视科技提出新型卷积网络ShuffleNet，专为移动端设计
 
 https://mp.weixin.qq.com/s/yHtqWJUpCIvTStKW5TINaA
 
@@ -328,13 +204,197 @@ https://mp.weixin.qq.com/s/WzSO_XobY6kesDm4sF-hBg
 
 深度学习之推荐篇
 
-https://mp.weixin.qq.com/s/xvRtuOlUbgD3gWhKQ2jbSQ
+https://mp.weixin.qq.com/s/LKjVfhyhL4GVx6l5WC6-CQ
 
-深度学习参数技巧
+如何用深度学习实现用户行为预测与推荐
+
+https://mp.weixin.qq.com/s/UrMsMHAkqNHJEl5lhAvLtA
+
+腾讯提出并行贝叶斯在线深度学习框架PBODL：预测广告系统的点击率
+
+http://mp.weixin.qq.com/s/Jiis7j3W3D5GG_ZdxplY7Q
+
+淘宝搜索/推荐系统背后深度强化学习与自适应在线学习的实践之路
+
+https://mp.weixin.qq.com/s/847h4ITQMtUlZcurJ9Vlvg
+
+深度学习在美团点评推荐平台排序中的运用
+
+### TPU & GPU & 并行
+
+https://zhuanlan.zhihu.com/p/25382177
+
+AI芯片怎么降功耗？
+
+https://zhuanlan.zhihu.com/p/26882794
+
+Google深度揭秘TPU
+
+https://mp.weixin.qq.com/s/1X9xiZkmVPI-j-aipr-ocg
+
+AlphaGo Master最新架构和算法，谷歌云与TPU拆解
+
+https://mp.weixin.qq.com/s/8HIZRhb-KJOtPnQtQ3GQVg
+
+第一代芯片是CPU，第二代是GPU，第三代是什么？
+
+https://mp.weixin.qq.com/s/Jof-u8oUuLR4v7t3jjXEmA
+
+GPU和线下训练
+
+https://mp.weixin.qq.com/s/2aE5fzGZeyX-oFyWbcbA5A
+
+揭开神经网络加速器的神秘面纱之DianNao
+
+https://mp.weixin.qq.com/s/VAFb0DAZAUyDnjE6SlNcXw
+
+如何对比评价各种深度神经网络硬件？不妨给它们跑个分
+
+https://mp.weixin.qq.com/s/zTO4UZ3zDLZL0GOjv0YqrQ
+
+GPU加速深度学习
+
+https://mp.weixin.qq.com/s/IE6blClvhYlq3-QAGHo5ww
+
+TensorFlow分布式计算机制解读：以数据并行为重
+
+http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks
+
+神经网络的分布式训练
+
+https://mp.weixin.qq.com/s/7vxJTh4IHeqUsc7IsLFLSA
+
+解密哈萨比斯投资的IPU，他们要分英伟达一杯羹
+
+### 算法
+
+http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww
+
+MIT最新算法，双向传播比BP快25倍
+
+http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw
+
+周志华教授gcForest（多粒度级联森林）算法预测股指期货涨跌
+
+http://mp.weixin.qq.com/s/IfEgSOIkIPA-YtC9NQW1ng
+
+非神经网络的深度模型gcForest
+
+https://mp.weixin.qq.com/s/TGuEvNXw_9S5-9a3KyDvvw
+
+基于图卷积网络的图深度学习
+
+https://mp.weixin.qq.com/s/FLrnRF8UQg6vLn-sndSpiw
+
+代替支持向量机，南大周志华组提出多类最优边界分配机mcODM
+
+http://mp.weixin.qq.com/s/9fJT0dMLvYQdfMVvSEiG4A
+
+深度学习的时间序列模型评价
+
+https://mp.weixin.qq.com/s/HmkTkv7QT08lGtJsHD7EvQ
+
+迁移学习（Transfer Learning）技术概述
+
+https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA
+
+多任务学习-Multitask Learning概述
+
+https://mp.weixin.qq.com/s/ZlCI02UdRuFBc-uKqIPE_w
+
+深度学习多任务学习综述
+
+https://mp.weixin.qq.com/s/QXOy2jo4RhCZrD5bSVzBOQ
+
+共享相关任务表征，一文读懂深度神经网络多任务学习
+
+https://zhuanlan.zhihu.com/p/25954683
+
+Mask R-CNN个人理解
+
+https://mp.weixin.qq.com/s/lVja7woyFWpmr9sH0CitAA
+
+BMXNet：基于MXNet的开源二值神经网络实现
+
+http://blog.csdn.net/tangwei2014/article/details/55077172
+
+二值化神经网络介绍
+
+https://mp.weixin.qq.com/s/1JwLP0FmV1AGJ65iDgLWQw
+
+神经网络模型压缩技术
+
+https://mp.weixin.qq.com/s/LQFuXgI7uZK2UKRfZvlVbA
+
+Variational AutoEncoder
+
+http://www.cnblogs.com/xxey/p/4277181.html
+
+Beam Search（集束搜索/束搜索）
+
+https://mp.weixin.qq.com/s/xbimfckVD0Ol0T1n0-_ktA
+
+从浅层模型到深度模型：概览机器学习优化算法
+
+https://mp.weixin.qq.com/s/cIGuJvYr4lZW01TdINBJnA
+
+深度压缩网络：较大程度减少了网络参数存储问题
+
+### 实战
+
+https://github.com/jinfagang/pytorch_name_net
+
+PyTorch人工智能自动取名
+
+http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg
+
+GitHub最受欢迎深度学习项目Top 20
+
+https://mp.weixin.qq.com/s/-Jn4UbZ6EqRYceJqI1l16g
+
+一文简短介绍Caffe
+
+https://mp.weixin.qq.com/s/50uGupiwU2UVuVeMm_bTag
+
+李沐介绍MXNet新接口Gluon：高效支持命令式与符号式编程
+
+https://mp.weixin.qq.com/s/7R-Gvegnta9XBwIaSPBL_Q
+
+基于Tensorflow的验证码识别
+
+https://mp.weixin.qq.com/s/tyWUxJndljOSZT1-aYPgeg
+
+Keras入门必看教程
+
+https://mp.weixin.qq.com/s/Shz6BmsOrtbEFtoJRSkl9A
+
+简单车牌检测
 
 https://mp.weixin.qq.com/s/QjoxqCpN5JDroBowWmVk1Q
 
 边玩边入门深度学习，我们帮你找了10个简易应用demo
+
+https://mp.weixin.qq.com/s/AjoBOYES4CNm68bWcBTb3A
+
+看深度学习框架排名第一的TensorFlow如何进行时序预测！
+
+http://mp.weixin.qq.com/s/G4lQqiiVvmCW9SmX2blDEg
+
+实战——目标检测与识别
+
+https://mp.weixin.qq.com/s/KoRXcV-ujIT-5eO4RUkWYw
+
+基于TensorFlow和OpenCV实现文档检测功能！
+
+https://mp.weixin.qq.com/s/1HA6XKnWpqVd8k7IIfzB7w
+
+利用卷积自编码器对图片进行降噪
+
+### Other
+
+https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg
+
+旷视科技提出新型卷积网络ShuffleNet，专为移动端设计
 
 https://mp.weixin.qq.com/s/UboQNEywHSBAYc0740qmzQ
 
@@ -356,14 +416,6 @@ https://mp.weixin.qq.com/s/2FDVt1-U6f0gicCVtZh4cA
 
 伯克利联合OpenAI发布新型深度学习方法TCML：学习通用型算法
 
-https://mp.weixin.qq.com/s/1HA6XKnWpqVd8k7IIfzB7w
-
-利用卷积自编码器对图片进行降噪
-
-https://mp.weixin.qq.com/s/isE8kriDUrMx3IBKjMtUHg
-
-非常详细的神经网络入门解释
-
 https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
 
 NTIRE2017夺冠论文：用于单一图像超分辨率的增强型深度残差网络
@@ -380,10 +432,6 @@ https://mp.weixin.qq.com/s/-G94Mj-8972i2HtEcIZDpA
 
 人脸识别世界杯榜单出炉，微软百万名人识别竞赛冠军分享
 
-https://mp.weixin.qq.com/s/-Jn4UbZ6EqRYceJqI1l16g
-
-一文简短介绍Caffe
-
 https://mp.weixin.qq.com/s/6_cW22DCzSw3DpUDrLXLcA
 
 OpenAI提出强化学习近端策略优化，可替代策略梯度法
@@ -394,7 +442,7 @@ https://mp.weixin.qq.com/s/hkcVhyqiDW--F3QxucgEcA
 
 https://mp.weixin.qq.com/s/TWdeHVCgEf54STvdA1QUPg
 
-DeepMin哈萨比斯长文：伟大的AI离不开神经科学
+DeepMind哈萨比斯长文：伟大的AI离不开神经科学
 
 https://mp.weixin.qq.com/s/qReN6z8s45870HSMCMNatw
 
@@ -411,16 +459,5 @@ https://mp.weixin.qq.com/s/HD370E4cCYvy_pdEKAvLIA
 https://mp.weixin.qq.com/s/AS1VFjBFnSk19QJ28tBVWA
 
 NIPS 2017斯坦福赛题大公开：强化学习模拟人类肌肉骨骼模型
-
-https://mp.weixin.qq.com/s/x0r-2J_YdYgIQlRDqvGofg
-
-CVPR 2017论文解读：用于单目图像车辆3D检测的多任务网络
-
-https://mp.weixin.qq.com/s/fY4vF0aPexwFi2Fu4grdzg
-
-大规模视觉理解竞赛WebVision冠军分享
-
-
-
 
 

@@ -279,6 +279,7 @@ https://my.oschina.net/fuckmylife0/blog/325432
 ## jaxws-demo-client
 
 jaxws-demo-client就是具体的客户端实现了，可以看出相比于上一步的桩代码，这里的代码文件，数量上要少得多。
+
 # 机器人参考资源
 
 http://blog.exbot.net/
@@ -311,13 +312,17 @@ https://mp.weixin.qq.com/s/tH-1XTEC-S7bIFoDdDK5CQ
 
 如何给机器人一双慧眼：从视觉SLAM技术说起！
 
+http://www.cnblogs.com/gaoxiang12/p/3695962.html
+
+视觉SLAM漫谈
+
 https://mp.weixin.qq.com/s/YLhECwwig9f21zk1-PNiTw
 
 25篇车辆检测与分类DL文章读懂自动驾驶
 
 https://mp.weixin.qq.com/s/vKkjYdf6Ast7wWcW9oIEuA
 
-88 美元的自动驾驶“自制原子弹”，最著名黑客详解panda系统
+88美元的自动驾驶“自制原子弹”，最著名黑客详解panda系统
 
 https://zhuanlan.zhihu.com/p/27935902
 
@@ -326,6 +331,22 @@ https://zhuanlan.zhihu.com/p/27935902
 https://mp.weixin.qq.com/s/pPPq3b1yj92RaGgIpTAhqQ
 
 一文看透汽车无人驾驶技术、产品和市场
+
+https://mp.weixin.qq.com/s/ZePNQ3l3uMMIlndk20sOVA
+
+基于视频的无监督深度和车辆运动估计
+
+https://mp.weixin.qq.com/s/xr-2cNoSYpCftLI3dV6zEw
+
+如何使用深度强化学习帮助自动驾驶汽车通过交叉路口？
+
+https://mp.weixin.qq.com/s/FebViO0PM-cMWJN6rXU6Rg
+
+详解工业机器人典型的控制系统及结构
+
+https://mp.weixin.qq.com/s/zIYgNQcuxDJboABzXSPGQw
+
+迈向几何型深度SLAM
 
 # Spring
 

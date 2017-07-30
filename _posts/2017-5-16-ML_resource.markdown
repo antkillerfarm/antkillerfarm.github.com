@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/XX0hBHKUgyK6v3iy-wkTmw
 
 机器学习各类算法比较
 
+https://mp.weixin.qq.com/s/8oAOzImyZj5idLDt4z9WNA
+
+机器学习算法再比较
+
 https://mp.weixin.qq.com/s/LuuvvL9yZ3ucXxRq0pZfsg
 
 优化策略：Label Smoothing Regularization_LSR原理分析
@@ -325,6 +329,14 @@ https://mp.weixin.qq.com/s/ubpRPQ7-1nvY5CzICWi1Cg
 https://mp.weixin.qq.com/s/wk3_wG1xSuMX1HjJeEgErQ
 
 kmeans聚类理论篇K的选择（轮廓系数）
+
+https://mp.weixin.qq.com/s/u-6nPrb4r9AS2gtrl5s-FA
+
+LDA(Linear Discriminant Analysis)算法介绍
+
+https://mp.weixin.qq.com/s/lNYKzNU6VcT7orPCotbUdg
+
+用机器学习检测异常点击流
 
 # PMML
 
@@ -462,4 +474,7 @@ https://mp.weixin.qq.com/s/PtZ3YvFrUgbK5y3pcAeW9A
 
 使用OpenCV和Python实现的机器学习
 
+https://mp.weixin.qq.com/s/wbcAIrI0eNALfKhgkZQYTQ
+
+用Python也能进军金融领域？这有一份股票交易策略开发指南
 

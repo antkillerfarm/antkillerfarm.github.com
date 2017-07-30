@@ -229,6 +229,12 @@ YOLO: Real-Time Object Detection，是一个基于神经网络的实时对象检
 
 https://pjreddie.com/darknet/yolo/
 
+参考：
+
+https://mp.weixin.qq.com/s/n51XtGAsaDDAatXYychXrg
+
+YOLO比R-CNN快1000倍，比Fast R-CNN快100倍的实时对象检测！
+
 ## SSD
 
 论文：
@@ -307,5 +313,16 @@ https://zhuanlan.zhihu.com/p/27699682
 
 荐译一篇通俗易懂的策略梯度（Policy Gradient）方法讲解
 
+https://mp.weixin.qq.com/s/Cvk_cePK9iQd8JIKKDDrmQ
+
+强化学习的核心基础概念及实现
+
+http://lamda.nju.edu.cn/yangjw/project/drlintro.html
+
+深度强化学习初探
+
+https://zhuanlan.zhihu.com/p/21498750
+
+深度强化学习导引
 
 

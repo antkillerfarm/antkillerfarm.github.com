@@ -30,6 +30,10 @@ http://www.cs.columbia.edu/~cs4705/
 
 COMS W4705: Natural Language Processing
 
+https://mp.weixin.qq.com/s/TSc4E8lKwgc-EvzP8OlJeg
+
+初学者如何查阅自然语言处理（NLP）领域学术资料
+
 ## 书籍
 
 http://ccl.pku.edu.cn/alcourse/nlp/LectureNotes/Natural%20Language%20Processing%20with%20Python.pdf
@@ -56,10 +60,6 @@ http://www.52nlp.cn/
 http://www.shareditor.com/bloglistbytag/?tagname=%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%81%9A%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA
 
 实战课程：自己动手做聊天机器人
-
-http://www.newsmth.net/bbsdoc.php?board=NLP
-
-水木NLP板块
 
 http://www.icst.pku.edu.cn/lcwm/
 
@@ -138,6 +138,10 @@ https://github.com/RaRe-Technologies/gensim
 http://www.open-open.com/lib/view/open1444351655682.html
 
 情感分析的新方法——基于Word2Vec/Doc2Vec/Python
+
+http://blog.csdn.net/Star_Bob/article/details/47808499
+
+Gensim Word2vec使用教程
 
 ### GloVe
 
@@ -393,26 +397,4 @@ https://speechlab.sjtu.edu.cn/pages/sz128/homepage/year/10/27/survey-on-grammar-
 
 论文调研：基于“规则、槽值”检索的口语语义理解
 
-http://mp.weixin.qq.com/s/lmHWo9MUdv7ZMI7ARNmTSw
 
-拆开阿里小蜜的内核，看智能人机交互的实现逻辑
-
-https://www.microsoft.com/en-us/research/project/dssm/
-
-微软的DSSM模型
-
-http://www.csdn.net/article/2015-08-28/2825569
-
-递归神经网络不可思议的有效性
-
-http://mp.weixin.qq.com/s/5kKkZp6Y3_TgHl98dtYNiw
-
-NLP领域中文vs英文有什么异同点，中文NLP有什么独特的地方?
-
-http://www.wildml.com/2016/07/deep-learning-for-chatbots-2-retrieval-based-model-tensorflow/
-
-IMPLEMENTING A RETRIEVAL-BASED MODEL IN TENSORFLOW
-
-https://mp.weixin.qq.com/s/vGUizRVnosd7cgxha-pimw
-
-200行Python代码实现感知机词性标注器

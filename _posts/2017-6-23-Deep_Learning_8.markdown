@@ -48,7 +48,11 @@ Dependency Parsing是NLP领域的一项重要工作。
 
 上图演示了ROOT结点是如何一步步“吃”进词语（即Shift操作），并生成依存分析树的过程。
 
-这些步骤被称作transition，这在传统做法中，通常是一堆文法规则。
+这里的每一步被称作**transition**。
+
+transition中箭头左边的部分是以ROOT为栈底的**stack**，右边的部分是待处理文本的**buffer**，**A**表示依赖关系树。
+
+stack+buffer+A构成了一个**configuration**。GTBP算法的难点，在于如何根据configuration，确定下一步的transition。这在传统做法中，通常是一堆文法规则，或者特征的分类。
 
 ## 依存分析的准确度指标
 
@@ -72,10 +76,37 @@ Labeled	attachment score不仅考虑依存结点是否正确，还考虑词性�
 
 上图是该方案的结构图。
 
-我们之前已经指出，在传统方法中，transition是由单词、词性和依赖关系所确定的。只是这种确定的规则比较复杂，不易提炼出有效特征。
+我们之前已经指出，在传统方法中，transition是由单词、词性和依赖关系树所确定的。只是这种确定的规则比较复杂，不易提炼出有效特征。
 
-参照我们在CNN中的作为，特征提取这一步骤可以由神经网络来完成。因此，在这里
+参照我们在CNN中的作为，特征提取这一步骤可以由神经网络来完成。因此，在这里我们将configuration的各个组成部分分别向量化，然后合成为一个长向量，作为Input layer。
 
+这里采用以下的Cube函数作为激活函数，也是该文的一大创见：
+
+$$h=(W_1^w x^w + W_1^t x^t + W_1^l x^l + b_1)^3$$
+
+Output layer是一个softmax的多分类层，每个分类对应一个transition。
+
+## SyntaxNet
+
+2015年David Weiss在陈丹琦方案的基础上，做了一些改进。
+
+论文：
+
+《Structured Training for Neural Network Transition-Based Parsing》
+
+![](/images/article/dependency_parser_nn_2.png)
+
+
+
+## NLP的女学霸们
+
+http://cs.stanford.edu/people/danqi/
+
+陈丹琦，清华本科（姚班）（2012）+斯坦福博士生。
+
+https://homes.cs.washington.edu/~luheng/
+
+何律恒，上海交大本科（2010）+宾夕法尼亚大学硕士（2012）+华盛顿大学博士生。
 
 # CTC
 
@@ -130,15 +161,5 @@ https://zhuanlan.zhihu.com/p/21344595
 https://mp.weixin.qq.com/s/zEqgDh6_fnDgXEI8MC9cmg
 
 端对端的深度卷积神经网络在语音识别中的应用
-
-# NLP的女学霸们
-
-http://cs.stanford.edu/people/danqi/
-
-陈丹琦，清华本科（姚班）（2012）+斯坦福博士生。
-
-https://homes.cs.washington.edu/~luheng/
-
-何律恒，上海交大本科（2010）+宾夕法尼亚大学硕士（2012）+华盛顿大学博士生。
 
 
