@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  IT杂谈
+title:  IT杂谈, Groovy
 category: technology 
 ---
 
@@ -123,4 +123,29 @@ PS：这里吐槽一下IT技术进步的速度，以基于文本的搜索为例�
 如果你在2008年的时候，掌握这门手艺，至少也可以到Robin手下获得一份不错的薪水。
 
 如果你在2016年的时候，掌握这门手艺，那么你离失业已经不远了。因为，几乎不会有老板，会为了一个15年前的老技术而投资招人。
+
+# Groovy
+
+Groovy是另一种JVM语言，也是与Java最兼容的语言。普通Java代码可以无修改的在Groovy中编译。Groovy源代码以.groovy为后缀。
+
+Groovy使用Gradle或Grape作为自动管理工具，其中后者是Groovy原生支持的，但是现在已经不如前者流行了。
+
+官网：
+
+http://www.groovy-lang.org/
+
+代码参见：
+
+https://github.com/antkillerfarm/antkillerfarm_rubbish/tree/master/groovy/javafx
+
+# Hadopp生态圈的语言分布
+
+| 项目 | 语言 |
+|:--|:--|
+| Hadoop | Java |
+| Spark | 主要scala，少量Java |
+| Kafka | 主要Java，少量scala |
+| Storm | 主要Java，少量Clojure |
+
+这里需要指出的是，Storm虽然被称为是Clojure语言的最知名作品，然而Clojure所占的代码比并不高，还是Java居多。
 

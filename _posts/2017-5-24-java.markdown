@@ -366,6 +366,10 @@ https://mp.weixin.qq.com/s/TZMOO_LFCxk297lKNQfvGQ
 
 TensorFlow从基础到实战：一步步教你创建交通标志分类神经网络
 
+http://blog.csdn.net/u012436149
+
+一个TensorFlow+PyTorch的blog
+
 ## 基本概念
 
 **Variables**：训练模型的时候，那些在样本之间表示结点状态的变量。一般来说，就是神经网络的参数。

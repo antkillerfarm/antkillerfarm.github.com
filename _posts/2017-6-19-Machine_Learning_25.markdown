@@ -108,5 +108,7 @@ https://www.leiphone.com/news/201707/mFuwXGvZBhoVQD5S.html
 
 一秒分辨出杨臣刚、王大治和孙楠，这个黑产居然用AI 来"打码"
 
+http://mp.weixin.qq.com/s/Bt6EMD4opHCnRoHKYitsUA
 
+结合人类视觉注意力进行图像分类
 
