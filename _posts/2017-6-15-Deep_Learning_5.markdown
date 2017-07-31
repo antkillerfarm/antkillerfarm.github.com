@@ -246,3 +246,7 @@ http://www.leiphone.com/news/201609/303vE8MIwFC7E3DB.html
 
 Google最新开源Inception-ResNet-v2，借助残差网络进一步提升图像分类水准
 
+https://mp.weixin.qq.com/s/x3bSu9ecl3dldCbvS1rT1g
+
+站在巨人的肩膀上，深度学习的9篇开山之作
+

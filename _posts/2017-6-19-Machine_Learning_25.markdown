@@ -112,3 +112,8 @@ http://mp.weixin.qq.com/s/Bt6EMD4opHCnRoHKYitsUA
 
 结合人类视觉注意力进行图像分类
 
+https://mp.weixin.qq.com/s/M4U0RKcFqZKZAiwK5IyOFA
+
+GAN之父Ian Goodfellow在Quora：机器学习十问十答
+
+

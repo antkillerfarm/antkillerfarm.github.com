@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Emacs, Vi, Logo, perl, Lisp, Groovy
+title:  Emacs, Vi, Logo, perl, Lisp
 category: technology 
 ---
 

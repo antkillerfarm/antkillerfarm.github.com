@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: David M. Jones的奇遇
 category: essay 
@@ -61,6 +61,10 @@ David M. Jones没有越狱，所以活到了苏联人解放集中营的时候。
 “他接手的是一个犁耕手种的俄国，而留下的却是装备有原子武器的苏联。”——丘吉尔对斯大林的评价（1959年）
 
 # OpenVX
+
+
+
+![](/images/article/openvx.png)
 
 官网：
 
