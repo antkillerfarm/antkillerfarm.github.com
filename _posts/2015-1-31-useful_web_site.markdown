@@ -264,6 +264,18 @@ https://mp.weixin.qq.com/s/5KA7jtlRmnXxijGQhU1k4A
 
 DeepMind哈萨比斯狂推的神经科学，入门需要看什么书？
 
+http://tieba.baidu.com/p/2155772860
+
+GPU和Shader技术的基础知识
+
+http://www.cnblogs.com/geniusalex/archive/2008/12/26/1941766.html
+
+CPU GPU设计工作原理
+
+https://mp.weixin.qq.com/s/WZyuTtEfaTFLnCfvhOrp7g
+
+虚拟化原理和分类
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

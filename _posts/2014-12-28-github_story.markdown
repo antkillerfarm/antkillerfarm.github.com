@@ -39,8 +39,12 @@ https://github.com/trending/python?since=monthly
 作为生活在水深火热的墙内人民，有必要进行下面一步修改gem的源，方便我们更快的下载所需的组件：
 
 {% highlight bash %}
-sudo gem sources --add https://ruby.taobao.org/ --remove https://rubygems.org/
+sudo gem sources --add https://gems.ruby-china.org/ --remove https://rubygems.org/
 {% endhighlight %}
+
+>**关于 Windows 下证书无法验证问题 (certificate verify failed)**   
+>ruby 没有包含 SSL 证书，所以 https 的链接被服务器拒绝。   
+>解决方法很简单，首先在这里下载证书 http://curl.haxx.se/ca/cacert.pem, 然后在环境变量里设置SSL_CERT_FILE这个环境变量，并指向cacert.pem文件。
 
 3.安装ruby-dev
 

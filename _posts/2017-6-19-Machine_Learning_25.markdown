@@ -48,6 +48,18 @@ http://www.cnblogs.com/fengfenggirl/p/iForest.html
 
 # DL参考资源
 
+https://mp.weixin.qq.com/s/Jdd7S6JFKRdsVe2w-W01IA
+
+Facebook田渊栋开源游戏平台ELF，简化版《星际争霸》完美测试人工智能
+
+https://mp.weixin.qq.com/s/GyE9qdXPGvrq12dMAf4nrQ
+
+论文推荐：QA，增强学习，知识图谱，机器阅读理解
+
+https://mp.weixin.qq.com/s/DQcRqWALLuPpNabCv83Vcg
+
+自动机器学习，神经网络自主编程
+
 https://mp.weixin.qq.com/s/x0r-2J_YdYgIQlRDqvGofg
 
 CVPR 2017论文解读：用于单目图像车辆3D检测的多任务网络
@@ -116,4 +128,25 @@ https://mp.weixin.qq.com/s/M4U0RKcFqZKZAiwK5IyOFA
 
 GAN之父Ian Goodfellow在Quora：机器学习十问十答
 
+https://mp.weixin.qq.com/s/1E9gunSpgYt5xl9Q_uQNJg
+
+使用深度学习进行医疗影像分析：文件格式篇
+
+https://mp.weixin.qq.com/s/PiQB2AvhtDceMJxYN8O8jA
+
+通用卷积神经网络交错组卷积
+
+# ML参考资源
+
+https://mp.weixin.qq.com/s/XnMXXFEBPXnEUk3jdMMoXA
+
+从决策树到随机森林：树型算法的原理与实现
+
+https://mp.weixin.qq.com/s/MfYRipBX4la5jEG-ZMBhEw
+
+详解LinearSVM
+
+https://mp.weixin.qq.com/s/8ZEUNIXHu7iF1hHk7e0gdw
+
+Spark 机器学习的加速器：Spark on Angel
 

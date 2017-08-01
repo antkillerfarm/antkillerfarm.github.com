@@ -126,6 +126,10 @@ https://mp.weixin.qq.com/s/Vbu-qzyD169TSrQIJgzm7w
 
 研究人脸识别技术必须知道的十个基本概念
 
+https://zhuanlan.zhihu.com/p/23255241
+
+人脸识别应用之“变脸”
+
 https://zhuanlan.zhihu.com/p/26630215
 
 浅谈手势识别在直播中的运用
@@ -289,18 +293,6 @@ https://mp.weixin.qq.com/s/M120ZRfLoT9abWZOmgj-TQ
 https://mp.weixin.qq.com/s/4JFzgFTvAvBs74V7AQUCrQ
 
 让照片走两步：骨骼框架辅助的人物动作生成模型
-
-https://mp.weixin.qq.com/s/Jdd7S6JFKRdsVe2w-W01IA
-
-Facebook田渊栋开源游戏平台ELF，简化版《星际争霸》完美测试人工智能
-
-https://mp.weixin.qq.com/s/GyE9qdXPGvrq12dMAf4nrQ
-
-论文推荐：QA，增强学习，知识图谱，机器阅读理解
-
-https://mp.weixin.qq.com/s/DQcRqWALLuPpNabCv83Vcg
-
-自动机器学习，神经网络自主编程
 
 ## 论文
 

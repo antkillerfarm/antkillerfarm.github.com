@@ -20,7 +20,7 @@ Dropout解决过拟合问题
 
 ## 深度学习中epoch、batch size、iterations的区别
 
-one epoch：所有的训练样本完成一次Forword运算以及一次BP运算。
+one epoch：所有的训练样本完成一次Forword运算和BP运算。
 
 batch size：一次Forword运算以及BP运算中所需要的训练样本数目，其实深度学习每一次参数的更新所需要损失函数并不是由一个{data：label}获得的，而是由一组数据加权得到的，这一组数据的数量就是[batch size]。当然batch size越大，所需的内存就越大，要量力而行。
 

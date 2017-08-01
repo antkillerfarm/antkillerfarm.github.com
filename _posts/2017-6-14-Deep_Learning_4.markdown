@@ -278,6 +278,10 @@ https://mp.weixin.qq.com/s/5M3QiUVoA8QDIZsHjX5hRw
 
 一文弄懂ResNet有多大威力？最近又有了哪些变体？
 
+http://www.jianshu.com/p/b724411571ab
+
+ResNet到底深不深？
+
 # Bi-directional RNN
 
 众所周知，RNN在处理长距离依赖关系时会出现问题。LSTM虽然改进了一些，但也只能缓解问题，而不能解决该问题。

@@ -6,7 +6,27 @@ category: theory
 
 # CNN进化史
 
-## 参考（续）
+## 参考
+
+http://mp.weixin.qq.com/s/ZKMi4gRfDRcTxzKlTQb-Mw
+
+计算机视觉识别简史：从AlexNet、ResNet到Mask RCNN
+
+http://mp.weixin.qq.com/s/kbHzA3h-CfTRcnkViY37MQ
+
+详解CNN五大经典模型:Lenet，Alexnet，Googlenet，VGG，DRL
+
+https://zhuanlan.zhihu.com/p/22094600
+
+Deep Learning回顾之LeNet、AlexNet、GoogLeNet、VGG、ResNet
+
+http://www.leiphone.com/news/201609/303vE8MIwFC7E3DB.html
+
+Google最新开源Inception-ResNet-v2，借助残差网络进一步提升图像分类水准
+
+https://mp.weixin.qq.com/s/x3bSu9ecl3dldCbvS1rT1g
+
+站在巨人的肩膀上，深度学习的9篇开山之作
 
 http://mp.weixin.qq.com/s/2TUw_2d36uFAiJTkvaaqpA
 
@@ -246,6 +266,44 @@ YOLO比R-CNN快1000倍，比Fast R-CNN快100倍的实时对象检测！
 http://www.jianshu.com/p/ebebfcd274e6
 
 Caffe-SSD 训练自己的数据集教程
+
+# fine-tuning
+
+https://zhuanlan.zhihu.com/p/22624331
+
+fine-tuning:利用已有模型训练其他数据集
+
+http://www.cnblogs.com/louyihang-loves-baiyan/p/5038758.html
+
+Caffe fine-tuning微调网络
+
+http://blog.csdn.net/sinat_26917383/article/details/54999868
+
+caffe中fine-tuning模型三重天（函数详解、框架简述）+微调技巧
+
+http://yongyuan.name/blog/layer-selection-and-finetune-for-cbir.html
+
+图像检索：layer选择与fine-tuning性能提升验证
+
+https://www.zhihu.com/question/49534423
+
+迁移学习与fine-tuning有什么区别？
+
+# 模型压缩
+
+https://stanford.edu/~songhan/
+
+《Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding》
+
+《Learning both Weights and Connections for Efficient Neural Networks》
+
+https://www.zhihu.com/question/62068158
+
+如何评价图森科技连发的三篇关于深度模型压缩的文章？
+
+https://zhuanlan.zhihu.com/p/24337627
+
+深度压缩之蒸馏模型
 
 # 深度强化学习
 

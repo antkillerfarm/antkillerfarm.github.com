@@ -228,25 +228,24 @@ Inception系列的改进方向基本都集中在构建不同的Inception模型�
 
 GoogleNet的另一个改进是**减少了全连接层**（Full Connection, FC），这是减少模型参数的一个重要改进。事实上，在稍后的实践中，人们发现去掉VGG的第一个FC层，对于效果几乎没有任何影响。
 
-## 参考
+## SqueezeNet
 
-http://mp.weixin.qq.com/s/ZKMi4gRfDRcTxzKlTQb-Mw
+GoogleNet之后，最有名的CNN模型当属何恺明的Deep Residual Network。DRN在《深度学习（四）》中已有提及，这里不再赘述。
 
-计算机视觉识别简史：从AlexNet、ResNet到Mask RCNN
 
-http://mp.weixin.qq.com/s/kbHzA3h-CfTRcnkViY37MQ
 
-详解CNN五大经典模型:Lenet，Alexnet，Googlenet，VGG，DRL
+参见：
 
-https://zhuanlan.zhihu.com/p/22094600
+http://blog.csdn.net/xbinworld/article/details/50897870
 
-Deep Learning回顾之LeNet、AlexNet、GoogLeNet、VGG、ResNet
+最新SqueezeNet模型详解，CNN模型参数降低50倍，压缩461倍！
 
-http://www.leiphone.com/news/201609/303vE8MIwFC7E3DB.html
+http://www.jianshu.com/p/8e269451795d
 
-Google最新开源Inception-ResNet-v2，借助残差网络进一步提升图像分类水准
+神经网络瘦身：SqueezeNet
 
-https://mp.weixin.qq.com/s/x3bSu9ecl3dldCbvS1rT1g
+http://blog.csdn.net/shenxiaolu1984/article/details/51444525
 
-站在巨人的肩膀上，深度学习的9篇开山之作
+超轻量级网络SqueezeNet算法详解
+
 

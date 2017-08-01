@@ -80,6 +80,10 @@ https://zhuanlan.zhihu.com/ai-insight
 
 一个DL+ML的blog
 
+http://yongyuan.name/blog/
+
+一个DL+CV的blog
+
 ## 文章
 
 ### 教程
@@ -357,6 +361,10 @@ https://mp.weixin.qq.com/s/-Jn4UbZ6EqRYceJqI1l16g
 https://mp.weixin.qq.com/s/50uGupiwU2UVuVeMm_bTag
 
 李沐介绍MXNet新接口Gluon：高效支持命令式与符号式编程
+
+https://mp.weixin.qq.com/s/VRmhAluhKWxyPbStmMoWtg
+
+一张速查表实现Apache MXNet深度学习框架五大特征的开发利用
 
 https://mp.weixin.qq.com/s/7R-Gvegnta9XBwIaSPBL_Q
 
