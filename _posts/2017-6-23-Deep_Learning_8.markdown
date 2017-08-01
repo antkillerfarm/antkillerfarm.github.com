@@ -6,7 +6,83 @@ category: theory
 
 # GAN
 
-## 参考（续）
+## GAN的发展
+
+最早的GAN出现在2014年6月，但直到2015年底，也只有5个变种，发展并不迅速。
+
+2016年，GAN开始发力，年底时已有52个变种。2017年6月底，更达到142个变种。
+
+参考：
+
+https://github.com/hindupuravinash/the-gan-zoo
+
+GAN的各种变种。
+
+## 参考
+
+https://mp.weixin.qq.com/s/xa3F3kCprE6DEQclas4umg
+
+GAN的数学原理
+
+http://www.jianshu.com/p/e2d2d7cbbe49
+
+50行代码实现GAN
+
+http://mp.weixin.qq.com/s/bzwG0QxnP2drqS4RwcZlBg
+
+微软详解：到底什么是生成式对抗网络GAN？
+
+https://mp.weixin.qq.com/s/oCDlhzjOYTIhsr5JuoRCJQ
+
+IRGAN：大一统信息检索模型的博弈竞争
+
+https://mp.weixin.qq.com/s/QacQCrjh3KmrQSMp-G_rEg
+
+贝叶斯生成对抗网络
+
+https://zhuanlan.zhihu.com/p/24897387
+
+GAN的基本原理、应用和走向
+
+https://mp.weixin.qq.com/s/E28lA-fcAQ6Sp6Qv64H3TQ
+
+GAN in NLP
+
+https://mp.weixin.qq.com/s/7-oHa-8Q8ThcctaVOZFfew
+
+Facebook创意生成网络CAN，比GAN更有创造力
+
+https://mp.weixin.qq.com/s/aSQ2-QxbToGF0ROyjxw2yw
+
+萌物生成器：如何使用四种GAN制造猫图
+
+https://mp.weixin.qq.com/s/YUMIL-f019vKpQ84mKS-8g
+
+这篇TensorFlow实例教程文章告诉你GANs为何引爆机器学习？
+
+http://mp.weixin.qq.com/s/UkZdUcdz7h4DqcyjSbNncw
+
+zi2zi：用条件生成对抗网络玩转中文书法，绝妙汉字字体自动生成
+
+http://blog.csdn.net/v_JULY_v/article/details/52683959
+
+没GPU也能玩梵高作画：Ubuntu tensorflow CPU版
+
+https://github.com/cysmith/neural-style-tf
+
+TensorFlow (Python API) implementation of Neural Style.这个项目实现了两张图片的画风融合，非常牛。
+
+https://github.com/jinfagang/pytorch_style_transfer
+
+这个和上面的一样，不过是用pytorch实现的。
+
+http://mp.weixin.qq.com/s/zNmJuevHaagKbyGFdKTwoQ
+
+tensorflow实现基于深度学习的图像补全
+
+https://zhuanlan.zhihu.com/p/25204020
+
+条条大路通罗马LS-GAN：把GAN建立在Lipschitz密度上
 
 https://zhuanlan.zhihu.com/p/27199954
 

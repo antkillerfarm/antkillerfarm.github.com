@@ -58,10 +58,6 @@ https://mp.weixin.qq.com/s/X-Na57dKQ43LsILR_gX4Sw
 
 考察数据科学家和分析师的41个统计学问题
 
-https://mp.weixin.qq.com/s/VKQufVUQ3TP5m7_2vOxnEQ
-
-通过Faster R-CNN实现当前最佳的目标计数
-
 https://www.zhihu.com/question/21664179
 
 如何在论文中画出漂亮的插图？
@@ -162,18 +158,6 @@ https://mp.weixin.qq.com/s/3fsV-9pYlLk6wvFa0mJ8pg
 
 如何解释机器学习模型和结果？
 
-https://mp.weixin.qq.com/s/e0jXXCIhbaZz7xaCZl-YmA
-
-如何处理不均衡数据？
-
-https://mp.weixin.qq.com/s/2j_6hdq-MhybO_B0S7DRCA
-
-如何解决机器学习中数据不平衡问题
-
-https://mp.weixin.qq.com/s/gEq7opXLukWD5MVhw_buGA
-
-七招教你处理非平衡数据
-
 https://mp.weixin.qq.com/s/f6zi_FlygorqUIQFgWKMfA
 
 评测时如何构造训练数据分布与测试数据分布保持一致
@@ -246,10 +230,6 @@ https://mp.weixin.qq.com/s/tJ_FbL2nFQfkvKqpQJ8kmg
 
 从特征分解到协方差矩阵：详细剖析和实现PCA算法
 
-https://mp.weixin.qq.com/s/NcBGYtgiWa0uY48wnFOoVg
-
-机器学习之决策树算法
-
 https://mp.weixin.qq.com/s/D7vghfvUayLNyz5vnXurdg
 
 谷歌投资“算法商店”创始人：打造AI操作系统
@@ -261,10 +241,6 @@ https://mp.weixin.qq.com/s/fXlbB7KmiX0iIv6xwSxNIA
 https://mp.weixin.qq.com/s/R_0_E5Ieaj9KiWgg1prxeg
 
 为什么梯度的方向与等高线切线方向垂直？
-
-https://zhuanlan.zhihu.com/p/22852262
-
-经典决策树，条件推断树，随机森林，SVM的R实现
 
 https://mp.weixin.qq.com/s/D7p7W0Oe6EPmJeoWACQ44w
 
@@ -309,10 +285,6 @@ https://mp.weixin.qq.com/s/oipXH06mgmPBwLQdbe-g4w
 https://mp.weixin.qq.com/s/q5mPN_rt1Af5L2fnxuTdCA
 
 46款数据可视化分析工具大集合
-
-http://blog.csdn.net/u013709270/article/details/72967462
-
-机器学习中的数据不平衡解决方案大全
 
 https://mp.weixin.qq.com/s/-Zji6xGISaUzFhQ6tMlQqw
 
@@ -451,6 +423,18 @@ Pandas和SQL的比较
 ## mysql
 
 http://www.runoob.com/python/python-mysql.html
+
+## chainer
+
+chainer是一个日本人写的基于python的深度学习框架。
+
+官网：
+
+https://chainer.org/
+
+代码：
+
+https://github.com/chainer/chainer
 
 ## 参考
 

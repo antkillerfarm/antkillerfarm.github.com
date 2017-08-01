@@ -138,10 +138,6 @@ https://mp.weixin.qq.com/s/PiQB2AvhtDceMJxYN8O8jA
 
 # ML参考资源
 
-https://mp.weixin.qq.com/s/XnMXXFEBPXnEUk3jdMMoXA
-
-从决策树到随机森林：树型算法的原理与实现
-
 https://mp.weixin.qq.com/s/MfYRipBX4la5jEG-ZMBhEw
 
 详解LinearSVM

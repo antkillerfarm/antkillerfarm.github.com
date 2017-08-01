@@ -259,3 +259,17 @@ XGBoost是陈天奇于2014年提出的一套并行boost算法的工具库。
 
 https://arxiv.org/pdf/1603.02754v3.pdf
 
+## 参考
+
+https://mp.weixin.qq.com/s/XnMXXFEBPXnEUk3jdMMoXA
+
+从决策树到随机森林：树型算法的原理与实现
+
+https://mp.weixin.qq.com/s/NcBGYtgiWa0uY48wnFOoVg
+
+机器学习之决策树算法
+
+https://zhuanlan.zhihu.com/p/22852262
+
+经典决策树，条件推断树，随机森林，SVM的R实现
+

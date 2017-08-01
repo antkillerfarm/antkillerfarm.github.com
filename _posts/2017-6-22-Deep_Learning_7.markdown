@@ -1,8 +1,86 @@
 ---
 layout: post
-title:  深度学习（七）——GAN
+title:  深度学习（七）——深度强化学习, GAN
 category: theory 
 ---
+
+# 深度强化学习
+
+## 教程
+
+http://incompleteideas.net/sutton/book/the-book-2nd.html
+
+《Reinforcement Learning: An Introduction》，Richard S. Sutton和Andrew G. Barto著。
+
+>注：Richard S. Sutton，加拿大计算机科学家，麻省大学阿姆赫斯特分校博士（1984年），阿尔伯塔大学教授。强化学习之父，研究该领域长达三十余年。
+
+>Andrew G. Barto，麻省大学阿姆赫斯特分校教授。Richard S. Sutton的导师。
+
+http://web.stanford.edu/class/cs234/syllabus.html
+
+CS234: Reinforcement Learning
+
+## 概述
+
+![](/images/article/reinforcement_learning.png)
+
+## 参考
+
+https://www.nervanasys.com/demystifying-deep-reinforcement-learning/
+
+深度强化学习揭秘
+
+http://blog.csdn.net/young_gy/article/details/73485518
+
+强化学习之Q-learning简介
+
+https://zhuanlan.zhihu.com/p/24446336
+
+深度强化学习Deep Reinforcement Learning学习整理
+
+https://mp.weixin.qq.com/s/KNXD-MpVHQRXYvJKTqn6WA
+
+完善强化学习安全性：UC Berkeley提出约束型策略优化新算法
+
+http://mp.weixin.qq.com/s/gHM7qh7UTKzatdg34cgfDQ
+
+强化学习全解
+
+http://mp.weixin.qq.com/s/lLPRwInF5qaw7ewYHOpPyw
+
+深度强化学习资料
+
+https://mp.weixin.qq.com/s/f6sq8cSaU1cuzt7jhsK8Ig
+
+强化学习（Reinforcement Learning）基础介绍
+
+https://mp.weixin.qq.com/s/TGN6Zhrea2LPxdkspVTlAw
+
+算法工程师入门——增强学习
+
+https://mp.weixin.qq.com/s/aVWHlwOmNIqOlu3025_RXQ
+
+DeepMind提出多任务强化学习新方法Distral
+
+https://mp.weixin.qq.com/s/laKJ_jfNR5L1uMML9wkS1A
+
+强化学习（Reinforcement Learning）算法基础及分类
+
+https://zhuanlan.zhihu.com/p/27699682
+
+荐译一篇通俗易懂的策略梯度（Policy Gradient）方法讲解
+
+https://mp.weixin.qq.com/s/Cvk_cePK9iQd8JIKKDDrmQ
+
+强化学习的核心基础概念及实现
+
+http://lamda.nju.edu.cn/yangjw/project/drlintro.html
+
+深度强化学习初探
+
+https://zhuanlan.zhihu.com/p/21498750
+
+深度强化学习导引
 
 # GAN
 
@@ -188,82 +266,4 @@ WGAN极大程度的改善了GAN训练困难的问题，成为当前GAN研究的�
 https://zhuanlan.zhihu.com/p/25071913
 
 令人拍案叫绝的Wasserstein GAN
-
-## GAN的发展
-
-最早的GAN出现在2014年6月，但直到2015年底，也只有5个变种，发展并不迅速。
-
-2016年，GAN开始发力，年底时已有52个变种。2017年6月底，更达到142个变种。
-
-参考：
-
-https://github.com/hindupuravinash/the-gan-zoo
-
-GAN的各种变种。
-
-## 参考
-
-https://mp.weixin.qq.com/s/xa3F3kCprE6DEQclas4umg
-
-GAN的数学原理
-
-http://www.jianshu.com/p/e2d2d7cbbe49
-
-50行代码实现GAN
-
-http://mp.weixin.qq.com/s/bzwG0QxnP2drqS4RwcZlBg
-
-微软详解：到底什么是生成式对抗网络GAN？
-
-https://mp.weixin.qq.com/s/oCDlhzjOYTIhsr5JuoRCJQ
-
-IRGAN：大一统信息检索模型的博弈竞争
-
-https://mp.weixin.qq.com/s/QacQCrjh3KmrQSMp-G_rEg
-
-贝叶斯生成对抗网络
-
-https://zhuanlan.zhihu.com/p/24897387
-
-GAN的基本原理、应用和走向
-
-https://mp.weixin.qq.com/s/E28lA-fcAQ6Sp6Qv64H3TQ
-
-GAN in NLP
-
-https://mp.weixin.qq.com/s/7-oHa-8Q8ThcctaVOZFfew
-
-Facebook创意生成网络CAN，比GAN更有创造力
-
-https://mp.weixin.qq.com/s/aSQ2-QxbToGF0ROyjxw2yw
-
-萌物生成器：如何使用四种GAN制造猫图
-
-https://mp.weixin.qq.com/s/YUMIL-f019vKpQ84mKS-8g
-
-这篇TensorFlow实例教程文章告诉你GANs为何引爆机器学习？
-
-http://mp.weixin.qq.com/s/UkZdUcdz7h4DqcyjSbNncw
-
-zi2zi：用条件生成对抗网络玩转中文书法，绝妙汉字字体自动生成
-
-http://blog.csdn.net/v_JULY_v/article/details/52683959
-
-没GPU也能玩梵高作画：Ubuntu tensorflow CPU版
-
-https://github.com/cysmith/neural-style-tf
-
-TensorFlow (Python API) implementation of Neural Style.这个项目实现了两张图片的画风融合，非常牛。
-
-https://github.com/jinfagang/pytorch_style_transfer
-
-这个和上面的一样，不过是用pytorch实现的。
-
-http://mp.weixin.qq.com/s/zNmJuevHaagKbyGFdKTwoQ
-
-tensorflow实现基于深度学习的图像补全
-
-https://zhuanlan.zhihu.com/p/25204020
-
-条条大路通罗马LS-GAN：把GAN建立在Lipschitz密度上
 

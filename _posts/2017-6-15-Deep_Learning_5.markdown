@@ -232,7 +232,15 @@ GoogleNet的另一个改进是**减少了全连接层**（Full Connection, FC）
 
 GoogleNet之后，最有名的CNN模型当属何恺明的Deep Residual Network。DRN在《深度学习（四）》中已有提及，这里不再赘述。
 
+DRN之后，学界的研究重点，由如何提升精度，转变为如何用更少的参数和计算量来达到同样的精度。SqueezeNet就是其中的代表。
 
+论文：
+
+《SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size》
+
+代码：
+
+https://github.com/DeepScale/SqueezeNet
 
 参见：
 
