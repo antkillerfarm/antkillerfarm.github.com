@@ -302,3 +302,8 @@ ResNet到底深不深？
 
 从图中可以看出，Bi-directional RNN有两个隐层，分别处理前向和后向的时序信息。
 
+除了原始的Bi-directional RNN之外，后来还出现了Deep Bi-directional RNN。
+
+![](/images/article/Deep_Bi_RNN.png)
+
+上图是包含3个隐层的Deep Bi-directional RNN。

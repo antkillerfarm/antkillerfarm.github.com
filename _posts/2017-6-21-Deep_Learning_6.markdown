@@ -1,10 +1,40 @@
 ---
 layout: post
-title:  深度学习（六）——目标检测, RCNN, fine-tuning
+title:  深度学习（六）——目标检测, RCNN
 category: theory 
 ---
 
 # CNN进化史
+
+## SqueezeNet（续）
+
+SqueezeNet最大的创新点在于使用Fire Module替换大尺寸的卷积层。
+
+![](/images/article/SqueezeNet.png)
+
+上图是Fire Module的结构示意图。它采用squeeze层+expand层两个小卷积层，替换了AlexNet的大尺寸卷积层。其中，$$N_{squeeze}<N_{expand}$$，N表示每层的卷积个数。
+
+这里需要特别指出的是：expand层采用了2种不同尺寸的卷积，这也是当前设计的一个趋势。
+
+这个趋势在GoogleNet中已经有所体现，在ResNet中也间接隐含。
+
+![](/images/article/expand_ResNet.png)
+
+上图是ResNet的展开图，可见展开之后的ResNet，实际上等效于一个多尺寸交错混编的复杂卷积网。其思路和GoogleNet实际上是一致的。
+
+参见：
+
+http://blog.csdn.net/xbinworld/article/details/50897870
+
+最新SqueezeNet模型详解，CNN模型参数降低50倍，压缩461倍！
+
+http://www.jianshu.com/p/8e269451795d
+
+神经网络瘦身：SqueezeNet
+
+http://blog.csdn.net/shenxiaolu1984/article/details/51444525
+
+超轻量级网络SqueezeNet算法详解
 
 ## 参考
 
@@ -270,40 +300,6 @@ YOLO比R-CNN快1000倍，比Fast R-CNN快100倍的实时对象检测！
 http://www.jianshu.com/p/ebebfcd274e6
 
 Caffe-SSD 训练自己的数据集教程
-
-# fine-tuning
-
-fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
-
-举个例子，假设今天老板给你一个新的数据集，让你做一下图片分类，这个数据集是关于Flowers的。问题是，数据集中flower的类别很少，数据集中的数据也不多，你发现从零训练开始训练CNN的效果很差，很容易过拟合。怎么办呢，于是你想到了使用Transfer Learning，用别人已经训练好的Imagenet的模型来做。
-
-由于ImageNet数以百万计带标签的训练集数据，使得如CaffeNet之类的预训练的模型具有非常强大的泛化能力，这些预训练的模型的中间层包含非常多一般性的视觉元素，我们只需要对他的后几层进行微调，再应用到我们的数据上，通常就可以得到非常好的结果。最重要的是，**在目标任务上达到很高performance所需要的数据的量相对很少**。
-
-虽然从理论角度尚无法完全解释fine-tuning的原理，但是还是可以给出一些直观的解释。我们知道，CNN越靠近输入端，其抽取的图像特征越原始。比如最初的一层通常只能抽取一些线条之类的元素。越上层，其特征越抽象。
-
-而现实的图像无论多么复杂，总是由简单特征拼凑而成的。因此，无论最终的分类结果差异如何巨大，其底层的图像特征却几乎一致。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/22624331
-
-fine-tuning:利用已有模型训练其他数据集
-
-http://www.cnblogs.com/louyihang-loves-baiyan/p/5038758.html
-
-Caffe fine-tuning微调网络
-
-http://blog.csdn.net/sinat_26917383/article/details/54999868
-
-caffe中fine-tuning模型三重天（函数详解、框架简述）+微调技巧
-
-http://yongyuan.name/blog/layer-selection-and-finetune-for-cbir.html
-
-图像检索：layer选择与fine-tuning性能提升验证
-
-https://www.zhihu.com/question/49534423
-
-迁移学习与fine-tuning有什么区别？
 
 
 

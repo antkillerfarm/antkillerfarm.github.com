@@ -246,21 +246,3 @@ DRN之后，学界的研究重点，由如何提升精度，转变为如何用�
 
 https://github.com/DeepScale/SqueezeNet
 
-![](/images/article/SqueezeNet.png)
-
-
-参见：
-
-http://blog.csdn.net/xbinworld/article/details/50897870
-
-最新SqueezeNet模型详解，CNN模型参数降低50倍，压缩461倍！
-
-http://www.jianshu.com/p/8e269451795d
-
-神经网络瘦身：SqueezeNet
-
-http://blog.csdn.net/shenxiaolu1984/article/details/51444525
-
-超轻量级网络SqueezeNet算法详解
-
-

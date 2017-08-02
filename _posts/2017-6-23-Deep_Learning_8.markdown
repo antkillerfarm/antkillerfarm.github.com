@@ -1,22 +1,10 @@
 ---
 layout: post
-title:  深度学习（八）——模型压缩, 依存分析, CTC
+title:  深度学习（八）——fine-tuning, 依存分析, 深度强化学习, CTC
 category: theory 
 ---
 
 # GAN
-
-## GAN的发展
-
-最早的GAN出现在2014年6月，但直到2015年底，也只有5个变种，发展并不迅速。
-
-2016年，GAN开始发力，年底时已有52个变种。2017年6月底，更达到142个变种。
-
-参考：
-
-https://github.com/hindupuravinash/the-gan-zoo
-
-GAN的各种变种。
 
 ## 参考
 
@@ -108,33 +96,39 @@ https://mp.weixin.qq.com/s/sxa0BfXtylHXzjq0YBn-Kg
 
 伯克利图像迁移cycleGAN，猫狗互换效果感人
 
-# 模型压缩
+# fine-tuning
 
-对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。
+fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
 
-此外，对于一些较大的模型（如VGG），即使机器再给力，单位时间内能处理的图像数量，往往也无法达到实际应用的要求。这点在自动驾驶和视频处理领域显得尤为突出。
+举个例子，假设今天老板给你一个新的数据集，让你做一下图片分类，这个数据集是关于Flowers的。问题是，数据集中flower的类别很少，数据集中的数据也不多，你发现从零训练开始训练CNN的效果很差，很容易过拟合。怎么办呢，于是你想到了使用Transfer Learning，用别人已经训练好的Imagenet的模型来做。
 
-这里首先提到的是韩松的两篇论文：
+由于ImageNet数以百万计带标签的训练集数据，使得如CaffeNet之类的预训练的模型具有非常强大的泛化能力，这些预训练的模型的中间层包含非常多一般性的视觉元素，我们只需要对他的后几层进行微调，再应用到我们的数据上，通常就可以得到非常好的结果。最重要的是，**在目标任务上达到很高performance所需要的数据的量相对很少**。
 
-《Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding》
+虽然从理论角度尚无法完全解释fine-tuning的原理，但是还是可以给出一些直观的解释。我们知道，CNN越靠近输入端，其抽取的图像特征越原始。比如最初的一层通常只能抽取一些线条之类的元素。越上层，其特征越抽象。
 
-《Learning both Weights and Connections for Efficient Neural Networks》
+而现实的图像无论多么复杂，总是由简单特征拼凑而成的。因此，无论最终的分类结果差异如何巨大，其底层的图像特征却几乎一致。
 
->韩松，清华本科（2012）+Stanford博士（2017）。MIT AP（from 2018）。   
->个人主页：   
->https://stanford.edu/~songhan/
+参考：
 
-韩松也是SqueezeNet的二作。
+https://zhuanlan.zhihu.com/p/22624331
 
-![](/images/article/nn_compression.png)
+fine-tuning:利用已有模型训练其他数据集
 
-https://www.zhihu.com/question/62068158
+http://www.cnblogs.com/louyihang-loves-baiyan/p/5038758.html
 
-如何评价图森科技连发的三篇关于深度模型压缩的文章？
+Caffe fine-tuning微调网络
 
-https://zhuanlan.zhihu.com/p/24337627
+http://blog.csdn.net/sinat_26917383/article/details/54999868
 
-深度压缩之蒸馏模型
+caffe中fine-tuning模型三重天（函数详解、框架简述）+微调技巧
+
+http://yongyuan.name/blog/layer-selection-and-finetune-for-cbir.html
+
+图像检索：layer选择与fine-tuning性能提升验证
+
+https://www.zhihu.com/question/49534423
+
+迁移学习与fine-tuning有什么区别？
 
 # 依存分析
 
@@ -213,6 +207,84 @@ http://cs.stanford.edu/people/danqi/
 https://homes.cs.washington.edu/~luheng/
 
 何律恒，上海交大本科（2010）+宾夕法尼亚大学硕士（2012）+华盛顿大学博士生。
+
+# 深度强化学习
+
+## 教程
+
+http://incompleteideas.net/sutton/book/the-book-2nd.html
+
+《Reinforcement Learning: An Introduction》，Richard S. Sutton和Andrew G. Barto著。
+
+>注：Richard S. Sutton，加拿大计算机科学家，麻省大学阿姆赫斯特分校博士（1984年），阿尔伯塔大学教授。强化学习之父，研究该领域长达三十余年。
+
+>Andrew G. Barto，麻省大学阿姆赫斯特分校教授。Richard S. Sutton的导师。
+
+http://web.stanford.edu/class/cs234/syllabus.html
+
+CS234: Reinforcement Learning
+
+## 概述
+
+![](/images/article/reinforcement_learning.png)
+
+## 参考
+
+https://www.nervanasys.com/demystifying-deep-reinforcement-learning/
+
+深度强化学习揭秘
+
+http://blog.csdn.net/young_gy/article/details/73485518
+
+强化学习之Q-learning简介
+
+https://zhuanlan.zhihu.com/p/24446336
+
+深度强化学习Deep Reinforcement Learning学习整理
+
+https://mp.weixin.qq.com/s/KNXD-MpVHQRXYvJKTqn6WA
+
+完善强化学习安全性：UC Berkeley提出约束型策略优化新算法
+
+http://mp.weixin.qq.com/s/gHM7qh7UTKzatdg34cgfDQ
+
+强化学习全解
+
+http://mp.weixin.qq.com/s/lLPRwInF5qaw7ewYHOpPyw
+
+深度强化学习资料
+
+https://mp.weixin.qq.com/s/f6sq8cSaU1cuzt7jhsK8Ig
+
+强化学习（Reinforcement Learning）基础介绍
+
+https://mp.weixin.qq.com/s/TGN6Zhrea2LPxdkspVTlAw
+
+算法工程师入门——增强学习
+
+https://mp.weixin.qq.com/s/aVWHlwOmNIqOlu3025_RXQ
+
+DeepMind提出多任务强化学习新方法Distral
+
+https://mp.weixin.qq.com/s/laKJ_jfNR5L1uMML9wkS1A
+
+强化学习（Reinforcement Learning）算法基础及分类
+
+https://zhuanlan.zhihu.com/p/27699682
+
+荐译一篇通俗易懂的策略梯度（Policy Gradient）方法讲解
+
+https://mp.weixin.qq.com/s/Cvk_cePK9iQd8JIKKDDrmQ
+
+强化学习的核心基础概念及实现
+
+http://lamda.nju.edu.cn/yangjw/project/drlintro.html
+
+深度强化学习初探
+
+https://zhuanlan.zhihu.com/p/21498750
+
+深度强化学习导引
 
 # CTC
 

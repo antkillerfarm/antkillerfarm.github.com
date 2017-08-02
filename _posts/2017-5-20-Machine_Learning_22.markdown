@@ -134,9 +134,13 @@ http://blog.csdn.net/lcj369387335/article/details/69845385
 
 1.主动学习。
 
-2.
+2.半监督学习。
+
+3.推断学习。
 
 ## 协同训练算法
+
+
 
 http://www.cnblogs.com/liqizhou/archive/2012/05/11/2496162.html
 
