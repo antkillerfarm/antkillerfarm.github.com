@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十二）——时间序列分析, NLP机器翻译常用评价度量, Tri-training
+title:  机器学习（二十二）——时间序列分析, NLP机器翻译常用评价度量, Tri-training, 数据不平衡问题
 category: theory 
 ---
 

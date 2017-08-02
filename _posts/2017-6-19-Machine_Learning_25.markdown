@@ -20,6 +20,10 @@ category: theory
 
 条件随机场(Conditional Random Field)由Lafferty等人于2001年提出，结合了最大熵模型和隐马尔可夫模型的特点，是一种无向图模型，近年来在分词、词性标注和命名实体识别等序列标注任务中取得了很好的效果。
 
+https://mp.weixin.qq.com/s/heYpeVLrZBRjXtMQou2BAA
+
+如何轻松愉快的理解条件随机场（CRF）？
+
 # 异常点检测
 
 http://chuansong.me/n/377440751130
@@ -135,6 +139,18 @@ https://mp.weixin.qq.com/s/1E9gunSpgYt5xl9Q_uQNJg
 https://mp.weixin.qq.com/s/PiQB2AvhtDceMJxYN8O8jA
 
 通用卷积神经网络交错组卷积
+
+https://mp.weixin.qq.com/s/r01vfSKb4VpFXVyokb54Bg
+
+MIT开放图像标注工具LabelMe源代码：助力机器视觉的发展
+
+https://mp.weixin.qq.com/s/tLqsWWhzUU6TkDbhnxxZow
+
+Momenta详解ImageNet 2017夺冠架构SENet
+
+https://mp.weixin.qq.com/s/30dK7nGJOWIaa1j9QElrYA
+
+详解帝国理工集成工具TensorLayer：控制深度学习开发复杂度
 
 # ML参考资源
 

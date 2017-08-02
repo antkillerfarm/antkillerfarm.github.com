@@ -348,6 +348,10 @@ https://mp.weixin.qq.com/s/zIYgNQcuxDJboABzXSPGQw
 
 迈向几何型深度SLAM
 
+https://mp.weixin.qq.com/s/LO7Vo7zmC-avdijP7T9o8w
+
+对比激光SLAM与视觉SLAM：谁会成为未来主流趋势？
+
 # Spring
 
 Spring是一个Java Web应用框架。官网：

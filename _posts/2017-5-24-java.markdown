@@ -370,6 +370,10 @@ http://blog.csdn.net/u012436149
 
 一个TensorFlow+PyTorch的blog
 
+https://mp.weixin.qq.com/s/HUUwtyjRllg-5olqYHK4XA
+
+基于TensorFlow的开源项目FaceRank
+
 ## 基本概念
 
 **Variables**：训练模型的时候，那些在样本之间表示结点状态的变量。一般来说，就是神经网络的参数。

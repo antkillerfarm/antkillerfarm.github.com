@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（八）——依存分析, CTC
+title:  深度学习（八）——模型压缩, 依存分析, CTC
 category: theory 
 ---
 
@@ -104,6 +104,38 @@ https://mp.weixin.qq.com/s/uyn41vKKoptXPZXBP2vVDQ
 
 生成对抗网络（GAN）之MNIST数据生成
 
+https://mp.weixin.qq.com/s/sxa0BfXtylHXzjq0YBn-Kg
+
+伯克利图像迁移cycleGAN，猫狗互换效果感人
+
+# 模型压缩
+
+对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。
+
+此外，对于一些较大的模型（如VGG），即使机器再给力，单位时间内能处理的图像数量，往往也无法达到实际应用的要求。这点在自动驾驶和视频处理领域显得尤为突出。
+
+这里首先提到的是韩松的两篇论文：
+
+《Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding》
+
+《Learning both Weights and Connections for Efficient Neural Networks》
+
+>韩松，清华本科（2012）+Stanford博士（2017）。MIT AP（from 2018）。   
+>个人主页：   
+>https://stanford.edu/~songhan/
+
+韩松也是SqueezeNet的二作。
+
+![](/images/article/nn_compression.png)
+
+https://www.zhihu.com/question/62068158
+
+如何评价图森科技连发的三篇关于深度模型压缩的文章？
+
+https://zhuanlan.zhihu.com/p/24337627
+
+深度压缩之蒸馏模型
+
 # 依存分析
 
 ## 概况
@@ -171,8 +203,6 @@ Output layer是一个softmax的多分类层，每个分类对应一个transition
 《Structured Training for Neural Network Transition-Based Parsing》
 
 ![](/images/article/dependency_parser_nn_2.png)
-
-
 
 ## NLP的女学霸们
 

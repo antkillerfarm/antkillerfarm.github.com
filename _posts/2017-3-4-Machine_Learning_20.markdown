@@ -220,3 +220,7 @@ https://mp.weixin.qq.com/s/NwVGkAcoDmyXKrYFUaK2Bw
 
 如何在机器学习竞赛中更胜一筹？
 
+https://mp.weixin.qq.com/s/hf4IOAayS29i6GB9m4GHcA
+
+全自动机器学习：ML工程师屠龙利器
+

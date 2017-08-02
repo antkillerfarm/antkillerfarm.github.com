@@ -64,6 +64,10 @@ https://mp.weixin.qq.com/s/xr_1ZYbvADMMwgxLEAflCw
 
 如何在语言翻译中理解Attention Mechanism？
 
+https://mp.weixin.qq.com/s/Nyq_36aFmQYRWdpgbgxpuA
+
+将注意力机制引入RNN，解决5大应用领域的序列预测问题
+
 # seq2seq
 
 seq2seq最早用于Neural Machine Translation领域（与之相对应的有Statistical Machine Translation）。训练后的seq2seq模型，可以根据输入语句，自动生成翻译后的输出语句。
@@ -241,6 +245,9 @@ DRN之后，学界的研究重点，由如何提升精度，转变为如何用�
 代码：
 
 https://github.com/DeepScale/SqueezeNet
+
+![](/images/article/SqueezeNet.png)
+
 
 参见：
 

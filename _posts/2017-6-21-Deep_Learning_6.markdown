@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（六）——目标检测, RCNN
+title:  深度学习（六）——目标检测, RCNN, fine-tuning
 category: theory 
 ---
 
@@ -273,6 +273,18 @@ Caffe-SSD 训练自己的数据集教程
 
 # fine-tuning
 
+fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
+
+举个例子，假设今天老板给你一个新的数据集，让你做一下图片分类，这个数据集是关于Flowers的。问题是，数据集中flower的类别很少，数据集中的数据也不多，你发现从零训练开始训练CNN的效果很差，很容易过拟合。怎么办呢，于是你想到了使用Transfer Learning，用别人已经训练好的Imagenet的模型来做。
+
+由于ImageNet数以百万计带标签的训练集数据，使得如CaffeNet之类的预训练的模型具有非常强大的泛化能力，这些预训练的模型的中间层包含非常多一般性的视觉元素，我们只需要对他的后几层进行微调，再应用到我们的数据上，通常就可以得到非常好的结果。最重要的是，**在目标任务上达到很高performance所需要的数据的量相对很少**。
+
+虽然从理论角度尚无法完全解释fine-tuning的原理，但是还是可以给出一些直观的解释。我们知道，CNN越靠近输入端，其抽取的图像特征越原始。比如最初的一层通常只能抽取一些线条之类的元素。越上层，其特征越抽象。
+
+而现实的图像无论多么复杂，总是由简单特征拼凑而成的。因此，无论最终的分类结果差异如何巨大，其底层的图像特征却几乎一致。
+
+参考：
+
 https://zhuanlan.zhihu.com/p/22624331
 
 fine-tuning:利用已有模型训练其他数据集
@@ -293,26 +305,5 @@ https://www.zhihu.com/question/49534423
 
 迁移学习与fine-tuning有什么区别？
 
-# 模型压缩
-
-这里首先提到的是韩松的两篇论文：
-
-《Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding》
-
-《Learning both Weights and Connections for Efficient Neural Networks》
-
->韩松，清华本科（2012）+Stanford博士（2017）。MIT AP（from 2018）。   
->个人主页：   
->https://stanford.edu/~songhan/
-
-韩松也是SqueezeNet的二作。
-
-https://www.zhihu.com/question/62068158
-
-如何评价图森科技连发的三篇关于深度模型压缩的文章？
-
-https://zhuanlan.zhihu.com/p/24337627
-
-深度压缩之蒸馏模型
 
 

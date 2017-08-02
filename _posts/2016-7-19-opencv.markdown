@@ -70,14 +70,6 @@ http://deeplearning.net/
 
 一个深度学习方面的资料网站。从该网站提供的招聘信息来看，caffe、Theano、Torch是目前主流的三大框架库。
 
-http://caffe.berkeleyvision.org/
-
-caffe是贾扬清写的一个深度学习框架。这哥们是清华的本硕+UCB的博士。
-
-https://github.com/BVLC/caffe
-
-caffe的代码地址。
-
 http://deeplearning.net/software/theano/
 
 Theano的主页。
@@ -142,9 +134,9 @@ http://cs.stanford.edu/people/karpathy/convnetjs//demo/classify2d.html
 
 这是一个2层神经网络的可视化demo
 
-BugBrain是一个神经网络相关的益智游戏。官网：
-
 http://www.biologic.com.au/bugbrain/
+
+BugBrain是一个神经网络相关的益智游戏。
 
 https://www.zhihu.com/question/41233373
 
@@ -417,5 +409,9 @@ https://mp.weixin.qq.com/s/6XEUATgudV9AT7Y8FLfdlQ
 http://yerevann.com/a-guide-to-deep-learning/
 
 国外网红的深度学习指南
+
+https://am207.github.io/2017/
+
+哈佛课程：Advanced Scientific Computing: Stochastic Optimization Methods. Monte Carlo Methods for Inference and Data Analysis
 
 

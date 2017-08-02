@@ -78,11 +78,72 @@ https://www.khronos.org/openvx/
 
 上图给出了OpenVX的主要用途，以及它和Khronos其他兄弟项目之间的关系。
 
-OpenVX SC（Safety Critical）
+OpenVX本身也是一个系列标准。它包括：
 
-## NNEF（Neural Network Exchange Format）
+**OpenVX**：一个传统的CV接口。提供包括直方图、Harris、Canny等特征算子的API。
+
+**OpenVX SC（Safety Critical）**：安全版的OpenVX。
+
+**OpenVX NN Extension**：专门用于提供NN加速方面的API。目前主要集中于CNN的加速，即卷积、池化等操作，对其他NN支持有限。此外，这些API主要用于预测，而非训练。
+
+## NNEF
+
+Neural Network Exchange Format是Khronos制定的用于交换NN模型数据的数据格式标准。
 
 官网：
 
 https://www.khronos.org/nnef
+
+# Caffe
+
+Convolutional Architecture for Fast Feature Embedding是贾扬清写的一个深度学习框架。
+
+>注：贾扬清，清华的本硕（2009）+UCB的博士（2014）。先后在Google和Facebook任研究员。知乎名人。   
+>个人主页：   
+>http://daggerfs.com/
+
+官网：
+
+http://caffe.berkeleyvision.org/
+
+代码：
+
+https://github.com/BVLC/caffe
+
+API：
+
+http://caffe.berkeleyvision.org/doxygen/index.html
+
+## 运行方式
+
+Caffe有两种运行方式：
+
+1.编程式。这种模式也是TensorFlow采用的方式，即直接在main函数中调用Caffe函数。
+
+示例：
+
+examples/cpp_classification/classification.cpp
+
+2.命令行式。这种模式适合于流程比较简单的情况。使用caffe工具加载模板文件进行训练或预测。
+
+示例：
+
+examples/mnist/train_lenet.sh
+
+## 模板文件和模型文件
+
+prototxt：模板文件。定义NN中的层之类的结构。
+
+caffemodel：模型文件。训练好的模型可以放在模型文件中，以便于今后的预测。
+
+## blob
+
+blob是Caffe中用于数据操作和交换的数据结构。简单来说，就是一个4维数组：number,channel,height,width。
+
+
+参考：
+
+https://mp.weixin.qq.com/s/-Jn4UbZ6EqRYceJqI1l16g
+
+一文简短介绍Caffe
 

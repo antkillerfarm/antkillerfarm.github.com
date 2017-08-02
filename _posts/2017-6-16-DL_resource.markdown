@@ -224,6 +224,10 @@ https://mp.weixin.qq.com/s/847h4ITQMtUlZcurJ9Vlvg
 
 深度学习在美团点评推荐平台排序中的运用
 
+https://mp.weixin.qq.com/s/AICgNDyWASx_B8NzWcFTqA
+
+一文综述所有用于推荐系统的深度学习方法
+
 ### TPU & GPU & 并行
 
 https://zhuanlan.zhihu.com/p/25382177
@@ -353,10 +357,6 @@ PyTorch人工智能自动取名
 http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg
 
 GitHub最受欢迎深度学习项目Top 20
-
-https://mp.weixin.qq.com/s/-Jn4UbZ6EqRYceJqI1l16g
-
-一文简短介绍Caffe
 
 https://mp.weixin.qq.com/s/50uGupiwU2UVuVeMm_bTag
 
