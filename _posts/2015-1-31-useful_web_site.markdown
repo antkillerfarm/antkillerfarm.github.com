@@ -284,6 +284,14 @@ https://mp.weixin.qq.com/s/FoRiGINPsMu1FKa7MvMvoQ
 
 全球100款大数据工具汇总，入行必备
 
+https://mp.weixin.qq.com/s/Y7qZlJdJ8fav5BXFGwdSOQ
+
+Graph Analysis and Its Application
+
+https://mp.weixin.qq.com/s/z3N5v4H_W2sxh2XPpFbAcA
+
+云端的SRE发展与实践
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

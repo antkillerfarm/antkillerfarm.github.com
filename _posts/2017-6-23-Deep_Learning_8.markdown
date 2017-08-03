@@ -198,6 +198,8 @@ Output layer是一个softmax的多分类层，每个分类对应一个transition
 
 ![](/images/article/dependency_parser_nn_2.png)
 
+![](/images/article/Convolutional_Sequence_to_Sequence_Learning.png)
+
 ## NLP的女学霸们
 
 http://cs.stanford.edu/people/danqi/

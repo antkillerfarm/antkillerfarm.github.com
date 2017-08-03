@@ -474,3 +474,8 @@ https://mp.weixin.qq.com/s/e--IeRTRZMqhs_DSJKpgyQ
 
 特征工程之Scikit-learn
 
+https://mp.weixin.qq.com/s/z3N5v4H_W2sxh2XPpFbAcA
+
+除了Python，这些语言写的机器学习项目也很牛
+
+
