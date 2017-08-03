@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Elasticsearch（二）, WebService, 机器人参考资源, Spring
+title:  Elasticsearch（二）, WebService, 机器人参考资源
 category: technology 
 ---
 
@@ -351,45 +351,5 @@ https://mp.weixin.qq.com/s/zIYgNQcuxDJboABzXSPGQw
 https://mp.weixin.qq.com/s/LO7Vo7zmC-avdijP7T9o8w
 
 对比激光SLAM与视觉SLAM：谁会成为未来主流趋势？
-
-# Spring
-
-Spring是一个Java Web应用框架。官网：
-
-http://spring.io/
-
-## Ubuntu安装Eclipse、Spring
-
-1.安装Eclipse
-
-`sudo apt-get install eclipse`
-
-2.安装Spring
-
-`sudo apt-get install libspring-web-portlet-java`
-
-注意：ubuntu软件仓库中还有一个叫做spring的游戏引擎，不要弄错了。
-
-http://www.mkyong.com/spring/quick-start-maven-spring-example/
-
-http://wiki.jikexueyuan.com/project/spring/
-
-## Restful
-
-http://spring.io/guides/gs/rest-service/
-
-## Spring Boot
-
-https://www.tianmaying.com/tutorial/deploy-spring-boot-application
-
-http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
-
-Spring Boot默认的配置文件
-
-## WebService
-
-https://spring.io/guides/gs/producing-web-service/
-
-http://localhost:9999/ws/countries.wsdl
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  这些年微软相关的技术总结, Javascript在客户端的使用
+title:  这些年微软相关的技术总结, Spring, scrapy
 category: technology 
 ---
 
@@ -125,6 +125,10 @@ win32控制台工程，如果在运行时，不希望有控制台窗口，只要
 
 `system("pause");`
 
+## 9.快速在指定文件夹打开命令行
+
+按住Shift键不放，同时右击鼠标，这时在出来的右键菜单里会出现一个"打开命令行" 的菜单选项。
+
 # Windows Mobile
 
 ## 1.自动打开微软蓝牙
@@ -190,31 +194,76 @@ EVC下将MFC的工程分为PPC和wince两种，而VS2005下，不再区分这两
 
 使用tapiRequestMakeCall函数。
 
-# Javascript在客户端的使用
+# Spring
 
-Javascript在服务器前端的成功，促使人们思考其在客户端的使用。
+Spring是一个Java Web应用框架。官网：
 
-最早的尝试，是MS提供的web broswer控件（例如MFC的CHtmlView类）。然而，当时的目的，并不是美化应用程序外观，而只是给程序提供一个访问互联网的机会。其最常见的用处，就是给About添加一个网站链接。这种方式不光用途简陋，更关键的是从外观来看，网页和应用程序完全是两种风格。
+http://spring.io/
 
-网站的外观在随后的几年中进化的很快，由于CSS和Javascript的出现，网页前端不再是一成不变的静态网页，而是具有了一定的动画和交互能力。强大的功能促进了分工的发展，网站设计逐渐分成了前端和后端两大工种。这种分工又促进了网页交互技术的进步。
+## Ubuntu安装Eclipse、Spring
 
-反观普通的应用程序，由于受限于编程的复杂度，前端人员一直难于介入，很多年都处于停滞阶段。这期间一些不甘平庸的公司，在UI技术方面也做了一些尝试。
+1.安装Eclipse
 
-首先是DirectUI。这个是MS对于Win32窗口模型的一个重大改进。
+`sudo apt-get install eclipse`
 
-在原始的Win32窗口模型中，每个控件都是一个窗口，拥有一个窗口句柄（相当于窗口资源的描述符）。窗口事件的处理和资源管理都在OS层面进行，开销比较大。（比如包含10000个按钮的窗口怎么处理的问题）窗口之间的交互，比如透明、动画，也由于需要跨窗口句柄，而变得非常复杂。
+2.安装Spring
 
-DirectUI的思路，是将控件降级为贴图，并接管整体窗口事件的处理，以模拟的方式实现控件的行为。开销和扩展性得到了很大的提升。
+`sudo apt-get install libspring-web-portlet-java`
 
-DirectUI技术最早出现在Windows XP中。比如，“我的电脑”左侧的控制面板。由于它的HWND的名字叫做DirectUI，故名。GTK项目实际上也采用了类似的方案。
+注意：ubuntu软件仓库中还有一个叫做spring的游戏引擎，不要弄错了。
 
-DirectUI技术国内做的比较好的有:
+http://www.mkyong.com/spring/quick-start-maven-spring-example/
 
-https://www.douban.com/group/topic/27583755/
+http://wiki.jikexueyuan.com/project/spring/
 
-各种DirectUI技术，普遍引入了UI配置文件的概念，而且UI配置文件的功能也越来越强。比如，GTK的设计器Glade，早期的时候是根据UI设计，导出代码，但现在已经改为导出UI配置文件了。
+## Restful
 
-然而，由于低层实现的限制，这些UI配置文件语法各异，虽然有设计器来简化设计难度，但注定不能做的太复杂。因此，功能上无论如何都无法与网页相比，更不必说和HTML 5相比了。
+http://spring.io/guides/gs/rest-service/
 
-2012年以后，以CEF（Chromium Embedded Framework）和XULRunner为代表的浏览器派，开始逐渐崭露头角。从此，开发桌面应用程序，不再是Javascript的禁区。桌面应用UI和网页前端开始呈现融合的局面。
+## Spring Boot
+
+https://www.tianmaying.com/tutorial/deploy-spring-boot-application
+
+http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+
+Spring Boot默认的配置文件
+
+## WebService
+
+https://spring.io/guides/gs/producing-web-service/
+
+http://localhost:9999/ws/countries.wsdl
+
+# scrapy
+
+scrapy是一个Python写的网页抓取分析工具。网页抓取分析的学名叫做“Web scraping”，可在wiki上获得更多的相关信息。
+
+官网：
+
+https://scrapy.org/
+
+安装：
+
+`sudo apt install python-scrapy`
+
+`scrapy crawl csdn`
+
+参考：
+
+https://segmentfault.com/a/1190000000583419
+
+一个中文简易教程。
+
+https://github.com/scrapy/dirbot
+
+官方例程。
+
+http://www.cnblogs.com/fengzheng/p/4974509.html
+
+另一个中文简易教程。
+
+https://mp.weixin.qq.com/s/nIcUBS0lRrOwVUHoWmKecw
+
+爬虫系列之使用scrapy框架
+
 

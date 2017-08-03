@@ -152,6 +152,10 @@ https://mp.weixin.qq.com/s/30dK7nGJOWIaa1j9QElrYA
 
 详解帝国理工集成工具TensorLayer：控制深度学习开发复杂度
 
+http://stanford.edu/~rezab/nips2014workshop/slides/jeff.pdf
+
+Techniques and Systems for Training Large Neural Networks Quickly
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/MfYRipBX4la5jEG-ZMBhEw

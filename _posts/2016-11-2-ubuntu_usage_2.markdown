@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Ubuntu使用技巧（二）, Fedora, CentOS, scrapy
+title:  Ubuntu使用技巧（二）, Fedora, CentOS
 category: technology 
 ---
 
@@ -365,36 +365,4 @@ VNCSERVERARGS[1]="-geometry 1280x1024"
 参考：
 
 http://www.tecmint.com/install-tightvnc-remote-desktop/
-
-# scrapy
-
-scrapy是一个Python写的网页抓取分析工具。网页抓取分析的学名叫做“Web scraping”，可在wiki上获得更多的相关信息。
-
-官网：
-
-https://scrapy.org/
-
-安装：
-
-`sudo apt install python-scrapy`
-
-`scrapy crawl csdn`
-
-参考：
-
-https://segmentfault.com/a/1190000000583419
-
-一个中文简易教程。
-
-https://github.com/scrapy/dirbot
-
-官方例程。
-
-http://www.cnblogs.com/fengzheng/p/4974509.html
-
-另一个中文简易教程。
-
-https://mp.weixin.qq.com/s/nIcUBS0lRrOwVUHoWmKecw
-
-爬虫系列之使用scrapy框架
 

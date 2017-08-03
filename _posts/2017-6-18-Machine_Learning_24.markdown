@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十四）——机器学习相关术语表
+title:  机器学习（二十四）——机器学习相关术语表, 模型压缩
 category: theory 
 ---
 
@@ -132,13 +132,35 @@ https://www.zhihu.com/question/62068158
 
 图森的思路比较有意思。其中的方法之一，是利用L1规则化会导致结果的稀疏化的特性，制造出一批接近0的参数。从而达到去除不重要的参数的目的。
 
+除此之外，矩阵量化、Kronecker内积、霍夫曼编码、模型剪枝等也是常见的模型压缩方法。
+
 当然最系统的做法还属Geoffrey Hinton的论文：
 
 《Distilling the Knowledge in a Neural Network》
+
+图森科技的后两篇论文也是在Hinton论文的基础上改进的。
+
+
 
 参考：
 
 https://zhuanlan.zhihu.com/p/24337627
 
 深度压缩之蒸馏模型
+
+https://zhuanlan.zhihu.com/p/24894102
+
+《Distilling the Knowledge in a Neural Network》阅读笔记
+
+https://luofanghao.github.io/2016/07/20/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0%20%E3%80%8ADistilling%20the%20Knowledge%20in%20a%20Neural%20Network%E3%80%8B/
+
+论文笔记 《Distilling the Knowledge in a Neural Network》
+
+http://blog.csdn.net/zhongshaoyy/article/details/53582048
+
+蒸馏神经网络
+
+https://www.zhihu.com/question/50519680
+
+如何理解soft target这一做法？
 

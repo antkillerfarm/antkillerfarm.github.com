@@ -273,3 +273,7 @@ https://zhuanlan.zhihu.com/p/22852262
 
 经典决策树，条件推断树，随机森林，SVM的R实现
 
+https://mp.weixin.qq.com/s/x06axCC1ZTgezqEYjjNIsw
+
+Xgboost初见面
+

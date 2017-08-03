@@ -276,6 +276,14 @@ https://mp.weixin.qq.com/s/WZyuTtEfaTFLnCfvhOrp7g
 
 虚拟化原理和分类
 
+https://mp.weixin.qq.com/s/NqLpT47ZWD6oJzfo_tWceA
+
+Paxos（分布式一致性算法）
+
+https://mp.weixin.qq.com/s/FoRiGINPsMu1FKa7MvMvoQ
+
+全球100款大数据工具汇总，入行必备
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

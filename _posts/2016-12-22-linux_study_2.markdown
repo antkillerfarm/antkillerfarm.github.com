@@ -336,3 +336,9 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/misc/hel
 
 https://www.crummy.com/software/BeautifulSoup/
 
+参见：
+
+https://mp.weixin.qq.com/s/p86yvl3uAm3FXw4V9NlNoA
+
+一文带你上手Python网页抓取神器BeautifulSoup库
+

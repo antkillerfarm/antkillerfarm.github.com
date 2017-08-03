@@ -6,7 +6,35 @@ category: theory
 
 # CNN进化史
 
-## SqueezeNet（续）
+## GoogleNet（续）
+
+![](/images/article/inception.png)
+
+上图是Inception的结构图。它的原理实际上就是**将不同尺寸的卷积组合起来，以提供不同尺寸的特征**。
+
+原始的GoogleNet也被称作Inception-v1。在后面的几年，GoogleNet还提出了几种改进的版本，最新的一个是Inception-v4（2016.8）。
+
+论文：
+
+《Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning》
+
+Inception系列的改进方向基本都集中在构建不同的Inception模型上。
+
+GoogleNet的另一个改进是**减少了全连接层**（Full Connection, FC），这是减少模型参数的一个重要改进。事实上，在稍后的实践中，人们发现去掉VGG的第一个FC层，对于效果几乎没有任何影响。
+
+## SqueezeNet
+
+GoogleNet之后，最有名的CNN模型当属何恺明的Deep Residual Network。DRN在《深度学习（四）》中已有提及，这里不再赘述。
+
+DRN之后，学界的研究重点，由如何提升精度，转变为如何用更少的参数和计算量来达到同样的精度。SqueezeNet就是其中的代表。
+
+论文：
+
+《SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size》
+
+代码：
+
+https://github.com/DeepScale/SqueezeNet
 
 SqueezeNet最大的创新点在于使用Fire Module替换大尺寸的卷积层。
 
