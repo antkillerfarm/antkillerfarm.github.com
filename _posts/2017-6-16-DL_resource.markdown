@@ -186,6 +186,10 @@ https://mp.weixin.qq.com/s/FRo-KiSK9eUfOFrN1dMZvA
 
 聊聊数据挖掘竞赛中的套路与深度学习的局限
 
+https://mp.weixin.qq.com/s/h1mXHJrUpK2_3RcfYXujqw
+
+深度学习调参入门之小技巧
+
 ### 推荐系统
 
 http://mp.weixin.qq.com/s/Aw2INWuwPlXmkPEY0CZf6g
@@ -451,21 +455,4 @@ https://mp.weixin.qq.com/s/hkcVhyqiDW--F3QxucgEcA
 https://mp.weixin.qq.com/s/TWdeHVCgEf54STvdA1QUPg
 
 DeepMind哈萨比斯长文：伟大的AI离不开神经科学
-
-https://mp.weixin.qq.com/s/qReN6z8s45870HSMCMNatw
-
-微软亚洲研究院CVPR 2017 Oral论文：逐层集中Attention的卷积模型
-
-https://mp.weixin.qq.com/s/oNPrmIm1SOlA9tuyQZFr9w
-
-让机器人学会理解语义概念：谷歌提出深度视觉新技术
-
-https://mp.weixin.qq.com/s/HD370E4cCYvy_pdEKAvLIA
-
-教机器学习编程
-
-https://mp.weixin.qq.com/s/AS1VFjBFnSk19QJ28tBVWA
-
-NIPS 2017斯坦福赛题大公开：强化学习模拟人类肌肉骨骼模型
-
 

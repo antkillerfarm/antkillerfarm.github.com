@@ -262,6 +262,14 @@ https://mp.weixin.qq.com/s/9uG8lqr2Kn0vzZKyjLHNGg
 
 从文本挖掘综述分类、聚类和信息提取等算法
 
+https://mp.weixin.qq.com/s/GYTxN5X7MnSQ4k5bD2l-PQ
+
+Salesforce的爱因斯坦AI最新NLP研究，通过情境化词向量从翻译中学习!
+
+https://mp.weixin.qq.com/s/kMQ7q4EyBQUH1DEEhQWdCQ
+
+Familia：开源的中文主题模型应用工具包
+
 # Javascript在客户端的使用
 
 Javascript在服务器前端的成功，促使人们思考其在客户端的使用。

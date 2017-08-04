@@ -374,6 +374,10 @@ https://mp.weixin.qq.com/s/HUUwtyjRllg-5olqYHK4XA
 
 基于TensorFlow的开源项目FaceRank
 
+https://mp.weixin.qq.com/s/N2OP1uX7JjfIJQ_B4NHKpw
+
+横向对比三大分布式机器学习平台：Spark、PMLS、TensorFlow
+
 ## 基本概念
 
 **Variables**：训练模型的时候，那些在样本之间表示结点状态的变量。一般来说，就是神经网络的参数。

@@ -292,6 +292,10 @@ https://mp.weixin.qq.com/s/z3N5v4H_W2sxh2XPpFbAcA
 
 云端的SRE发展与实践
 
+https://mp.weixin.qq.com/s/2_zdY4NoOPXq75H1A15R8w
+
+VMM的功能和分类
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

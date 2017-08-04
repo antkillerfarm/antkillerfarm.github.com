@@ -86,6 +86,10 @@ https://mp.weixin.qq.com/s/tIXJNkT9gIjGYZz7dekiNw
 
 手把手教你写一个RNN
 
+https://mp.weixin.qq.com/s/BqVicouktsZu8xLVR-XnFg
+
+完全图解RNN、RNN变体、Seq2Seq、Attention机制
+
 # LSTM
 
 本篇笔记主要摘自：

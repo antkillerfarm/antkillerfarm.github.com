@@ -156,6 +156,30 @@ http://stanford.edu/~rezab/nips2014workshop/slides/jeff.pdf
 
 Techniques and Systems for Training Large Neural Networks Quickly
 
+https://mp.weixin.qq.com/s/m_2LE2QN_8_a1hti6G0Cow
+
+Netflix开源稀疏数据专用神经网络库：Vectorflow！
+
+https://mp.weixin.qq.com/s/rlkZ82FcYMOmYoLjiCTN7g
+
+一张图看懂人工智能知识体系
+
+https://mp.weixin.qq.com/s/qReN6z8s45870HSMCMNatw
+
+微软亚洲研究院CVPR 2017 Oral论文：逐层集中Attention的卷积模型
+
+https://mp.weixin.qq.com/s/oNPrmIm1SOlA9tuyQZFr9w
+
+让机器人学会理解语义概念：谷歌提出深度视觉新技术
+
+https://mp.weixin.qq.com/s/HD370E4cCYvy_pdEKAvLIA
+
+教机器学习编程
+
+https://mp.weixin.qq.com/s/AS1VFjBFnSk19QJ28tBVWA
+
+NIPS 2017斯坦福赛题大公开：强化学习模拟人类肌肉骨骼模型
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/MfYRipBX4la5jEG-ZMBhEw
@@ -165,4 +189,10 @@ https://mp.weixin.qq.com/s/MfYRipBX4la5jEG-ZMBhEw
 https://mp.weixin.qq.com/s/8ZEUNIXHu7iF1hHk7e0gdw
 
 Spark 机器学习的加速器：Spark on Angel
+
+https://mp.weixin.qq.com/s/9cnXRCOmFwNnll-H0ts-FQ
+
+如何解决租房烦恼？阿里工程师写了一套神奇的代码
+
+
 
