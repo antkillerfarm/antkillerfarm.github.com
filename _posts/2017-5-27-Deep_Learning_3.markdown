@@ -1,10 +1,52 @@
 ---
 layout: post
-title:  深度学习（三）——词向量, RNN
+title:  深度学习（三）——Autoencoder, 词向量
 category: theory 
 ---
 
-# Autoencoder（续）
+# CNN
+
+## 参考（续）
+
+http://mp.weixin.qq.com/s/dvuX3Ih_DZrv0kgqFn8-lg
+
+卷积神经网络结构变化——可变形卷积网络deformable convolutional networks
+
+https://mp.weixin.qq.com/s/EJyG3Y4EHTGMm_Q1mY4RvA
+
+CNN入门手册（上）
+
+https://mp.weixin.qq.com/s/T3tHFdjnQh4asE0V25vTog
+
+CNN入门手册（中）
+
+https://mp.weixin.qq.com/s/chsDjS39qcoHICUNbSdQHQ
+
+长文揭秘图像处理和卷积神经网络架构
+
+https://mp.weixin.qq.com/s/nIbfiDXkqkpdLzQo2Gmc2Q
+
+利用卷积神经网络处理CIFAR图像分类
+
+https://mp.weixin.qq.com/s/5BMU7SRQeuDg68XDcOUBZw
+
+训练集样本不平衡问题对CNN的影响
+
+# Autoencoder
+
+Bengio在2003年的《A neural probabilistic language model》中指出，维度过高，会导致每次学习，都会强制改变大部分参数。
+
+由此发生蝴蝶效应，本来很好的参数，可能就因为一个小小传播误差，就改的乱七八糟。
+
+因此，数据降维是数据预处理中，非常重要的一环。常用的降维算法，除了线性的PCA算法之外，还有非线性的Autoencoder。
+
+![](/images/article/Autoencoder.png)
+
+Autoencoder的结构如上图所示。它的特殊之处在于：
+
+1.输入样本就是输出样本。
+
+2.隐藏层的神经元数量小于样本的维度。
 
 粗看起来，这类恒等变换没有太大意义。然而这类恒等变换之所以能够成立，最根本的地方在于，隐藏层的神经元具有表达输出样本的能力，也就是用低维表达高维的能力。反过来，我们就可以利用这一点，实现数据的降维操作。
 
@@ -213,39 +255,4 @@ NE(Network Embedding)论文小览
 https://mp.weixin.qq.com/s/zTNX_LeVMeHhJG7kPewn2g
 
 除了自然语言处理，你还可以用Word2Vec做什么？
-
-## 参考
-
-http://www.cnblogs.com/iloveai/p/word2vec.html
-
-word2vec前世今生
-
-http://www.cnblogs.com/maybe2030/p/5427148.html
-
-文本深度表示模型——word2vec&doc2vec词向量模型
-
-https://www.zhihu.com/question/29978268
-
-如何用word2vec计算两个句子之间的相似度？
-
-https://mp.weixin.qq.com/s/kGi-Hf7CX6OKcCMe7IC7zA
-
-NLP之Wrod2Vec三部曲
-
-# RNN
-
-## RNN的基本结构
-
-RNN是Recurrent Neural Network和Recursive Neural Network的简称。前者主要用于处理和时序相关的输入，而后者目前已经没落。本文只讨论前者。
-
-![](/images/article/RNN.png)
-
-上图是RNN的结构图。其中，展开箭头左边是RNN的静态结构图。不同于之前的神经网络表示，这里的圆形不是单个神经元，而是一层神经元。权值也不是单个权值，而是权值向量。
-
-从静态结构图可以看出RNN实际上和3层MLP的结构，是基本类似的。差别在于RNN的隐藏层多了一个指向自己的环状结构。
-
-上图的展开箭头右边是RNN的时序展开结构图。从纵向来看，它只是一个3层的浅层神经网络，然而从横向来看，它却是一个深层的神经网络。可见神经网络深浅与否，不仅和模型本身的层数有关，也与神经元之间的连接方式密切相关。
-
-虽然理论上，我们可以给每一时刻赋予不同的$$U,V,W$$，然而出于简化计算和稀疏度的考量，RNN所有时刻的$$U,V,W$$都是相同的。
-
 

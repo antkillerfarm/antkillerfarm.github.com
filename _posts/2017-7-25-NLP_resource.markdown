@@ -112,7 +112,7 @@ https://mp.weixin.qq.com/s/yN0lOmA0XmqIntqLgwn-TQ
 
 http://www.jianshu.com/p/f45c3540c56e
 
-Chatbot 架构
+Chatbot架构
 
 https://mp.weixin.qq.com/s/0Jz_BSe6DI29gvWiy7poBw
 
@@ -144,7 +144,7 @@ KBQA: 基于开放域知识库上的QA系统
 
 http://www.jianshu.com/p/efe92bdb435d
 
-语言模型：Trigram 模型的平滑估计
+语言模型：Trigram模型的平滑估计
 
 https://mp.weixin.qq.com/s/t2eP09f7tLwhgLO9m1S-9Q
 

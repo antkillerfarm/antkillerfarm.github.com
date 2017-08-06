@@ -1,12 +1,44 @@
 ---
 layout: post
-title:  深度学习（四）——LSTM, 神经元激活函数进阶, DRN
+title:  深度学习（四）——RNN, LSTM, 神经元激活函数进阶, DRN
 category: theory 
 ---
 
+# 词向量
+
+## 参考
+
+http://www.cnblogs.com/iloveai/p/word2vec.html
+
+word2vec前世今生
+
+http://www.cnblogs.com/maybe2030/p/5427148.html
+
+文本深度表示模型——word2vec&doc2vec词向量模型
+
+https://www.zhihu.com/question/29978268
+
+如何用word2vec计算两个句子之间的相似度？
+
+https://mp.weixin.qq.com/s/kGi-Hf7CX6OKcCMe7IC7zA
+
+NLP之Wrod2Vec三部曲
+
 # RNN
 
-## RNN的基本结构（续）
+## RNN的基本结构
+
+RNN是Recurrent Neural Network和Recursive Neural Network的简称。前者主要用于处理和时序相关的输入，而后者目前已经没落。本文只讨论前者。
+
+![](/images/article/RNN.png)
+
+上图是RNN的结构图。其中，展开箭头左边是RNN的静态结构图。不同于之前的神经网络表示，这里的圆形不是单个神经元，而是一层神经元。权值也不是单个权值，而是权值向量。
+
+从静态结构图可以看出RNN实际上和3层MLP的结构，是基本类似的。差别在于RNN的隐藏层多了一个指向自己的环状结构。
+
+上图的展开箭头右边是RNN的时序展开结构图。从纵向来看，它只是一个3层的浅层神经网络，然而从横向来看，它却是一个深层的神经网络。可见神经网络深浅与否，不仅和模型本身的层数有关，也与神经元之间的连接方式密切相关。
+
+虽然理论上，我们可以给每一时刻赋予不同的$$U,V,W$$，然而出于简化计算和稀疏度的考量，RNN所有时刻的$$U,V,W$$都是相同的。
 
 RNN的误差反向传播算法，被称作**Backpropagation Through Time**。其主要公式如下：
 
@@ -257,37 +289,4 @@ $$\text{softsign}(x)=\frac{x}{1+|x|}$$
 
 >注：何恺明，清华本科+香港中文大学博士（2011）。先后在MS和Facebook担任研究员。   
 >个人主页：http://kaiminghe.com/
-
-残差网络的明显特征是有着相当深的深度，从32层到152层，其深度远远超过了之前提出的深度网络结构，而后又针对小数据设计了1001层的网络结构。
-
-其简化版的结构图如下所示：
-
-![](/images/article/drn.png)
-
-简单的说，就是把前面的层跨几层直接接到后面去，以使误差梯度能够传的更远一些。
-
-DRN的基本思想倒不是什么新东西了，在2003年Bengio提出的词向量模型中，就已经采用了这样的思路。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/22447440
-
-深度残差网络
-
-https://www.leiphone.com/news/201608/vhqwt5eWmUsLBcnv.html
-
-何恺明的深度残差网络PPT
-
-https://mp.weixin.qq.com/s/kcTQVesjUIPNcz2YTxVUBQ
-
-ResNet 6大变体：何恺明,孙剑,颜水成引领计算机视觉这两年
-
-https://mp.weixin.qq.com/s/5M3QiUVoA8QDIZsHjX5hRw
-
-一文弄懂ResNet有多大威力？最近又有了哪些变体？
-
-http://www.jianshu.com/p/b724411571ab
-
-ResNet到底深不深？
-
 

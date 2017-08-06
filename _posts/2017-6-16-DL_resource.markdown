@@ -232,6 +232,10 @@ https://mp.weixin.qq.com/s/AICgNDyWASx_B8NzWcFTqA
 
 一文综述所有用于推荐系统的深度学习方法
 
+https://mp.weixin.qq.com/s/zSBpqhoyROh74UZEItBanA
+
+基于概率隐层模型的购物搭配推送：阿里巴巴提出新型用户偏好预测模型
+
 ### TPU & GPU & 并行
 
 https://zhuanlan.zhihu.com/p/25382177

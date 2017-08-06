@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  深度学习（二）——深度学习常用术语解释, Neural Network Zoo, CNN, Autoencoder
+title:  深度学习（二）——深度学习常用术语解释, Neural Network Zoo, CNN
 category: theory 
 ---
 
 # Dropout（续）
+
+2.因为dropout程序导致两个神经元不一定每次都在一个dropout网络中出现。这会迫使网络去学习更加鲁棒的特征。换句话说，假如我们的神经网络是在做出某种预测，它不应该对一些特定的线索片段太过敏感，即使丢失特定的线索，它也应该可以从众多其它线索中学习一些共同的模式（鲁棒性）。
 
 除了Dropout之外，还有**DropConnect**。两者原理上类似，后者只隐藏神经元之间的连接。
 
@@ -192,11 +194,17 @@ https://github.com/BVLC/caffe/blob/master/examples/mnist/lenet.prototxt
 
 比如，LeNet-5的C1:6@28*28，其中的6就是算子的个数。显然算子的个数越多，计算越慢。但太少的话，又会导致提取的特征数太少，神经网络学不到东西。
 
-除此之外，卷积还包含了图片的空间二维信息，它和后面的Pooling操作一道，起到了空间降维的作用。
+需要注意的是，传统的CV算法中，通常只有单一的卷积运算。而CNN中的卷积层，实际上包括了**卷积+激活**两种运算，即：
+
+$$L_2=\sigma(Conv(L_1,W)+b)$$
+
+因此，相比全连接层而言，卷积层每次只有部分元素参与到最终的激活运算。从宏观角度看，这些元素实际上对应了图片的局部空间二维信息，它和后面的Pooling操作一道，起到了空间降维的作用。
 
 实际上，传统的MLP（MultiLayer Perceptron）网络，就是由于1D全连接的神经元控制了太多参数，而不利于学习到稀疏特征。
 
 CNN网络中，2D全连接的神经元则控制了局部感受野，有利于解离出稀疏特征。
+
+至于激活函数，则是为了保证变换的非线性。这也是CNN被归类为NN的根本原因。
 
 ### 池化
 
@@ -232,7 +240,7 @@ http://www.cnblogs.com/pinard/p/6494810.html
 
 ![](/images/article/dcign.png)
 
-上图是Deep convolutional inverse graphics networks的结构图。DCIGN实际上是一个正向CNN连上一个反向CNN，以实现图片合成的目的。
+上图是Deep convolutional inverse graphics networks的结构图。DCIGN实际上是一个正向CNN连上一个反向CNN，以实现图片合成的目的。其原理可参考《深度学习（三）》中的Autoencoder。
 
 ## 参考
 
@@ -247,41 +255,4 @@ http://blog.csdn.net/Fate_fjh/article/details/52882134
 http://mp.weixin.qq.com/s/YRwGwelyA3VOYZ4XGAjUBw
 
 CNN 感受野首次可视化：深入解读及计算指南
-
-http://mp.weixin.qq.com/s/dvuX3Ih_DZrv0kgqFn8-lg
-
-卷积神经网络结构变化——可变形卷积网络deformable convolutional networks
-
-https://mp.weixin.qq.com/s/EJyG3Y4EHTGMm_Q1mY4RvA
-
-CNN入门手册（上）
-
-https://mp.weixin.qq.com/s/T3tHFdjnQh4asE0V25vTog
-
-CNN入门手册（中）
-
-https://mp.weixin.qq.com/s/chsDjS39qcoHICUNbSdQHQ
-
-长文揭秘图像处理和卷积神经网络架构
-
-https://mp.weixin.qq.com/s/nIbfiDXkqkpdLzQo2Gmc2Q
-
-利用卷积神经网络处理CIFAR图像分类
-
-# Autoencoder
-
-Bengio在2003年的《A neural probabilistic language model》中指出，维度过高，会导致每次学习，都会强制改变大部分参数。
-
-由此发生蝴蝶效应，本来很好的参数，可能就因为一个小小传播误差，就改的乱七八糟。
-
-因此，数据降维是数据预处理中，非常重要的一环。常用的降维算法，除了线性的PCA算法之外，还有非线性的Autoencoder。
-
-![](/images/article/Autoencoder.png)
-
-Autoencoder的结构如上图所示。它的特殊之处在于：
-
-1.输入样本就是输出样本。
-
-2.隐藏层的神经元数量小于样本的维度。
-
 

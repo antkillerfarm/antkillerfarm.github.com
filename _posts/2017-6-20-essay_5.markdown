@@ -140,10 +140,10 @@ caffemodel：模型文件。训练好的模型可以放在模型文件中，以�
 
 blob是Caffe中用于数据操作和交换的数据结构。简单来说，就是一个4维数组：number,channel,height,width。
 
-
-参考：
+## 参考
 
 https://mp.weixin.qq.com/s/-Jn4UbZ6EqRYceJqI1l16g
 
 一文简短介绍Caffe
+
 

@@ -4,9 +4,31 @@ title:  深度学习（六）——目标检测, RCNN
 category: theory 
 ---
 
-# CNN进化史
+# CNN进化史（续）
 
-## GoogleNet（续）
+## VGG
+
+Visual Geometry Group是牛津大学的一个科研团队。他们推出的一系列深度模型，被称作VGG模型。
+
+VGG的结构图如下：
+
+![](/images/article/vgg.png)
+
+该系列包括A/A-LRN/B/C/D/E等6个不同的型号。其中的D/E，根据其神经网络的层数，也被称为VGG16/VGG19。
+
+从原理角度，VGG相比AlexNet并没有太多的改进。其最主要的意义就是实践了“**神经网络越深越好**”的理念。也是自那时起，神经网络逐渐有了“深度学习”这个别名。
+
+## GoogleNet
+
+GoogleNet的进化道路和VGG有所不同。VGG实际上就是“大力出奇迹”的暴力模型，其他地方不足称道。
+
+而GoogleNet不仅继承了VGG“越深越好”的理念，对于网络结构本身也作了大胆的创新。可以对比的是，AlexNet有60M个参数，而GoogleNet只有4M个参数。
+
+因此，在ILSVRC 2014大赛中，GoogleNet获得第一名，而VGG屈居第二。
+
+![](/images/article/GoogleNet.jpg)
+
+上图是GoogleNet的结构图。从中可以看出，GoogleNet除了AlexNet的基本要素之外，还有被称作Inception的结构。
 
 ![](/images/article/inception.png)
 
@@ -270,64 +292,4 @@ Fast RCNN算法详解
 http://blog.csdn.net/shenxiaolu1984/article/details/51152614
 
 Faster RCNN算法详解
-
-https://mp.weixin.qq.com/s/XorPkuIdhRNI1zGLwg-55A
-
-斯坦福新深度学习系统 NoScope：视频对象检测快1000倍
-
-https://mp.weixin.qq.com/s/XbgmLmlt5X4TX5CP59gyoA
-
-目标检测算法精彩集锦
-
-https://mp.weixin.qq.com/s/BgTc1SE2IzNH27OC2P2CFg
-
-CVPR-I
-
-https://mp.weixin.qq.com/s/qMdnp9ZdlYIja2vNEKuRNQ
-
-CVPR—II
-
-https://mp.weixin.qq.com/s/tc1PsIoF1RN1sx_IFPmtWQ
-
-CVPR—III
-
-https://mp.weixin.qq.com/s/bpCn2nREHzazJYq6B9vMHg
-
-目标识别算法的进展
-
-https://mp.weixin.qq.com/s/YzxaS4KQmpbUSnyOwccn4A
-
-基于深度学习的目标检测技术进展与展望
-
-https://mp.weixin.qq.com/s/VKQufVUQ3TP5m7_2vOxnEQ
-
-通过Faster R-CNN实现当前最佳的目标计数
-
-## YOLO
-
-YOLO: Real-Time Object Detection，是一个基于神经网络的实时对象检测软件。
-
-官网：
-
-https://pjreddie.com/darknet/yolo/
-
-参考：
-
-https://mp.weixin.qq.com/s/n51XtGAsaDDAatXYychXrg
-
-YOLO比R-CNN快1000倍，比Fast R-CNN快100倍的实时对象检测！
-
-## SSD
-
-论文：
-
-《SSD: Single Shot MultiBox Detector》
-
-参考：
-
-http://www.jianshu.com/p/ebebfcd274e6
-
-Caffe-SSD 训练自己的数据集教程
-
-
 

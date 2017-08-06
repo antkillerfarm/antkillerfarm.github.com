@@ -4,6 +4,68 @@ title:  深度学习（七）——GAN
 category: theory 
 ---
 
+# RCNN
+
+## RCNN算法的基本流程（续）
+
+https://mp.weixin.qq.com/s/XorPkuIdhRNI1zGLwg-55A
+
+斯坦福新深度学习系统 NoScope：视频对象检测快1000倍
+
+https://mp.weixin.qq.com/s/XbgmLmlt5X4TX5CP59gyoA
+
+目标检测算法精彩集锦
+
+https://mp.weixin.qq.com/s/BgTc1SE2IzNH27OC2P2CFg
+
+CVPR-I
+
+https://mp.weixin.qq.com/s/qMdnp9ZdlYIja2vNEKuRNQ
+
+CVPR—II
+
+https://mp.weixin.qq.com/s/tc1PsIoF1RN1sx_IFPmtWQ
+
+CVPR—III
+
+https://mp.weixin.qq.com/s/bpCn2nREHzazJYq6B9vMHg
+
+目标识别算法的进展
+
+https://mp.weixin.qq.com/s/YzxaS4KQmpbUSnyOwccn4A
+
+基于深度学习的目标检测技术进展与展望
+
+https://mp.weixin.qq.com/s/VKQufVUQ3TP5m7_2vOxnEQ
+
+通过Faster R-CNN实现当前最佳的目标计数
+
+## YOLO
+
+YOLO: Real-Time Object Detection，是一个基于神经网络的实时对象检测软件。
+
+官网：
+
+https://pjreddie.com/darknet/yolo/
+
+参考：
+
+https://mp.weixin.qq.com/s/n51XtGAsaDDAatXYychXrg
+
+YOLO比R-CNN快1000倍，比Fast R-CNN快100倍的实时对象检测！
+
+## SSD
+
+论文：
+
+《SSD: Single Shot MultiBox Detector》
+
+参考：
+
+http://www.jianshu.com/p/ebebfcd274e6
+
+Caffe-SSD 训练自己的数据集教程
+
 # GAN
 
 ## 概况

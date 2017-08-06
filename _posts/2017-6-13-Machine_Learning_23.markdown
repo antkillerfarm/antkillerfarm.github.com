@@ -1,8 +1,26 @@
 ---
 layout: post
-title:  机器学习（二十三）——Probabilistic Robotics, 概率图模型
+title:  机器学习（二十三）——数据不平衡问题, Probabilistic Robotics, 概率图模型
 category: theory 
 ---
+
+# 数据不平衡问题
+
+https://mp.weixin.qq.com/s/e0jXXCIhbaZz7xaCZl-YmA
+
+如何处理不均衡数据？
+
+https://mp.weixin.qq.com/s/2j_6hdq-MhybO_B0S7DRCA
+
+如何解决机器学习中数据不平衡问题
+
+https://mp.weixin.qq.com/s/gEq7opXLukWD5MVhw_buGA
+
+七招教你处理非平衡数据
+
+http://blog.csdn.net/u013709270/article/details/72967462
+
+机器学习中的数据不平衡解决方案大全
 
 # Probabilistic Robotics
 

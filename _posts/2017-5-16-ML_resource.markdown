@@ -90,6 +90,10 @@ https://mp.weixin.qq.com/s/v1tLGUJ4My-tVWziSURHzA
 
 遗传算法的基本概念和实现
 
+https://mp.weixin.qq.com/s/rXDj5ryRvjbkenp9IEokDQ
+
+一文读懂遗传算法工作原理
+
 http://blog.csdn.net/u010945683/article/details/49149815
 
 共轭先验分布
@@ -478,4 +482,7 @@ https://mp.weixin.qq.com/s/z3N5v4H_W2sxh2XPpFbAcA
 
 除了Python，这些语言写的机器学习项目也很牛
 
+https://mp.weixin.qq.com/s/U2cDVRxZPVsqoL-zHn__CA
+
+Python做机器学习之路
 

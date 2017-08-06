@@ -390,6 +390,10 @@ https://mp.weixin.qq.com/s/CxKicJBvnk6FYWE4KuVmHw
 
 二十六条深度学习经验，来自蒙特利尔深度学习
 
+https://mp.weixin.qq.com/s/Bv1psJFFnZdYWW9reCbtrQ
+
+2017年蒙特利尔深度学习暑期学校ppt分享
+
 http://elmos.scripts.mit.edu/mathofdeeplearning/
 
 Mathematical Aspects of Deep Learning

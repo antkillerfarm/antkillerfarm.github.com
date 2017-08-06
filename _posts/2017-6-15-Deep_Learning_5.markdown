@@ -1,8 +1,42 @@
 ---
 layout: post
-title:  深度学习（五）—— Bi-directional RNN, Attention, seq2seq, DMN, CNN进化史
+title:  深度学习（五）——Bi-directional RNN, Attention, seq2seq, DMN, CNN进化史
 category: theory 
 ---
+
+# Deep Residual Network（续）
+
+残差网络的明显特征是有着相当深的深度，从32层到152层，其深度远远超过了之前提出的深度网络结构，而后又针对小数据设计了1001层的网络结构。
+
+其简化版的结构图如下所示：
+
+![](/images/article/drn.png)
+
+简单的说，就是把前面的层跨几层直接接到后面去，以使误差梯度能够传的更远一些。
+
+DRN的基本思想倒不是什么新东西了，在2003年Bengio提出的词向量模型中，就已经采用了这样的思路。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/22447440
+
+深度残差网络
+
+https://www.leiphone.com/news/201608/vhqwt5eWmUsLBcnv.html
+
+何恺明的深度残差网络PPT
+
+https://mp.weixin.qq.com/s/kcTQVesjUIPNcz2YTxVUBQ
+
+ResNet 6大变体：何恺明,孙剑,颜水成引领计算机视觉这两年
+
+https://mp.weixin.qq.com/s/5M3QiUVoA8QDIZsHjX5hRw
+
+一文弄懂ResNet有多大威力？最近又有了哪些变体？
+
+http://www.jianshu.com/p/b724411571ab
+
+ResNet到底深不深？
 
 # Bi-directional RNN
 
@@ -152,6 +186,10 @@ https://mp.weixin.qq.com/s/U1yHIc5Zq0yKCezRm185VA
 
 Attentive Sequence to Sequence Networks
 
+https://mp.weixin.qq.com/s/cGXANj7BB2ktTdPAL4ZEWA
+
+图解神经网络机器翻译原理：LSTM、seq2seq到Zero-Shot
+
 # DMN
 
 Question answering是自然语言处理领域的一个复杂问题。它需要对文本的理解力和推理能力。大部分NLP问题都可以转化为一个QA问题。Dynamic Memory Networks可以用来处理QA问题。DMN的输入包含事实输入，问题输入，经过内部处理形成片段记忆，最终产生问题的答案。
@@ -225,29 +263,4 @@ AlexNet作为第一个现代意义上的CNN，它的意义主要包括：
 5.当然最应该感谢的是李飞飞团队搞出来的标注数据集合ImageNet。
 
 >注：ILSVRC（Large Scale Visual Recognition Challenge）大赛，在2016年以前，一直是CV界的顶级赛事。但随着技术的成熟，目前的科研重点已经从物体识别转移到了物体理解领域。2017年将是该赛事的最后一届。WebVision有望接替该赛事，成为下一个目标。
-
-## VGG
-
-Visual Geometry Group是牛津大学的一个科研团队。他们推出的一系列深度模型，被称作VGG模型。
-
-VGG的结构图如下：
-
-![](/images/article/vgg.png)
-
-该系列包括A/A-LRN/B/C/D/E等6个不同的型号。其中的D/E，根据其神经网络的层数，也被称为VGG16/VGG19。
-
-从原理角度，VGG相比AlexNet并没有太多的改进。其最主要的意义就是实践了“**神经网络越深越好**”的理念。也是自那时起，神经网络逐渐有了“深度学习”这个别名。
-
-## GoogleNet
-
-GoogleNet的进化道路和VGG有所不同。VGG实际上就是“大力出奇迹”的暴力模型，其他地方不足称道。
-
-而GoogleNet不仅继承了VGG“越深越好”的理念，对于网络结构本身也作了大胆的创新。可以对比的是，AlexNet有60M个参数，而GoogleNet只有4M个参数。
-
-因此，在ILSVRC 2014大赛中，GoogleNet获得第一名，而VGG屈居第二。
-
-![](/images/article/GoogleNet.jpg)
-
-上图是GoogleNet的结构图。从中可以看出，GoogleNet除了AlexNet的基本要素之外，还有被称作Inception的结构。
-
 

@@ -296,6 +296,10 @@ https://mp.weixin.qq.com/s/2_zdY4NoOPXq75H1A15R8w
 
 VMM的功能和分类
 
+https://mp.weixin.qq.com/s/B486kp-GNshNVIi756lL9Q
+
+块存储、文件存储、对象存储本质差别
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

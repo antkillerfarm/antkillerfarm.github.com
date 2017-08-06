@@ -28,9 +28,15 @@ https://mp.weixin.qq.com/s/heYpeVLrZBRjXtMQou2BAA
 
 http://chuansong.me/n/377440751130
 
+异常点检测算法（一）
+
 http://jiangshuxia.9.blog.163.com/blog/static/3487586020083662621887/
 
+异常(Outlier)检测算法综述
+
 http://www.cnblogs.com/fengfenggirl/p/iForest.html
+
+异常检测算法--Isolation Forest
 
 # 自适应滤波器
 
@@ -180,6 +186,10 @@ https://mp.weixin.qq.com/s/AS1VFjBFnSk19QJ28tBVWA
 
 NIPS 2017斯坦福赛题大公开：强化学习模拟人类肌肉骨骼模型
 
+https://mp.weixin.qq.com/s/EA5FgDeFI_w-kSfMpf5Yxw
+
+神经网络视觉分类算法的意外弱点
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/MfYRipBX4la5jEG-ZMBhEw
@@ -194,5 +204,8 @@ https://mp.weixin.qq.com/s/9cnXRCOmFwNnll-H0ts-FQ
 
 如何解决租房烦恼？阿里工程师写了一套神奇的代码
 
+https://mp.weixin.qq.com/s/V0FBq2gbqyop8HwgLoPJXw
+
+“表”解机器学习
 
 
