@@ -344,10 +344,6 @@ https://mp.weixin.qq.com/s/LQFuXgI7uZK2UKRfZvlVbA
 
 Variational AutoEncoder
 
-http://www.cnblogs.com/xxey/p/4277181.html
-
-Beam Search（集束搜索/束搜索）
-
 https://mp.weixin.qq.com/s/xbimfckVD0Ol0T1n0-_ktA
 
 从浅层模型到深度模型：概览机器学习优化算法
@@ -361,6 +357,10 @@ https://mp.weixin.qq.com/s/cIGuJvYr4lZW01TdINBJnA
 https://github.com/jinfagang/pytorch_name_net
 
 PyTorch人工智能自动取名
+
+https://mp.weixin.qq.com/s/UGGrK5LwOP2aLVTz0AGMDw
+
+如何通过PyTorch实现Tensor
 
 http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg
 
@@ -381,6 +381,10 @@ https://mp.weixin.qq.com/s/7R-Gvegnta9XBwIaSPBL_Q
 https://mp.weixin.qq.com/s/tyWUxJndljOSZT1-aYPgeg
 
 Keras入门必看教程
+
+https://mp.weixin.qq.com/s/57j-YxA4ODMy0RybI8n7uQ
+
+教你在R中使用Keras和TensorFlow构建深度学习模型
 
 https://mp.weixin.qq.com/s/Shz6BmsOrtbEFtoJRSkl9A
 
@@ -443,20 +447,4 @@ OpenAI:3段视频演示无人驾驶目标检测强大的对抗性样本！
 https://mp.weixin.qq.com/s/_dDLbPwpgoOdLc83_JQEuA
 
 CVPR现场会议合集及CCCV内容跟踪
-
-https://mp.weixin.qq.com/s/-G94Mj-8972i2HtEcIZDpA
-
-人脸识别世界杯榜单出炉，微软百万名人识别竞赛冠军分享
-
-https://mp.weixin.qq.com/s/6_cW22DCzSw3DpUDrLXLcA
-
-OpenAI提出强化学习近端策略优化，可替代策略梯度法
-
-https://mp.weixin.qq.com/s/hkcVhyqiDW--F3QxucgEcA
-
-亚马逊开源神经机器翻译框架Sockeye：基于Apache MXNet的NMT平台
-
-https://mp.weixin.qq.com/s/TWdeHVCgEf54STvdA1QUPg
-
-DeepMind哈萨比斯长文：伟大的AI离不开神经科学
 

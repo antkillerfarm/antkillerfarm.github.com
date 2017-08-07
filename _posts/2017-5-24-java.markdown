@@ -296,6 +296,16 @@ TensorFlow技术栈：
 
 ![](/images/article/tensorflow_layer.png)
 
+## 图计算
+
+http://www.algorithmdog.com/dynamic-tensorflow
+
+动态图计算：Tensorflow 第一次清晰地在设计理念上领先
+
+https://zhuanlan.zhihu.com/p/23932714
+
+YJango的TensorFlow整体把握
+
 ## 参考
 
 https://github.com/yahoo/TensorFlowOnSpark
@@ -382,7 +392,9 @@ https://github.com/jinfagang/rl_atari_pytorch
 
 ReinforcementLearning Learn Play Atari Using DDPG and LSTM.
 
+https://mp.weixin.qq.com/s/JSZwQkyxSSwfBWKJ578j3A
 
+TensorFlow最好的入门文章
 
 ## 基本概念
 

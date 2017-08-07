@@ -486,3 +486,7 @@ https://mp.weixin.qq.com/s/U2cDVRxZPVsqoL-zHn__CA
 
 Python做机器学习之路
 
+https://mp.weixin.qq.com/s/LgVS5N80UlCeEfrPtyUF4Q
+
+深度学习矩阵运算的概念和代码实现
+

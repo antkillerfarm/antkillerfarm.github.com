@@ -86,6 +86,12 @@ OpenVX本身也是一个系列标准。它包括：
 
 **OpenVX NN Extension**：专门用于提供NN加速方面的API。目前主要集中于CNN的加速，即卷积、池化等操作，对其他NN支持有限。此外，这些API主要用于预测，而非训练。
 
+Khronos官方提供了一个OpenVX的软件参考实现，用于软硬件厂商的测试工作。
+
+相关API文档和参考实现（sample code）参见：
+
+https://www.khronos.org/registry/OpenVX/
+
 ## NNEF
 
 Neural Network Exchange Format是Khronos制定的用于交换NN模型数据的数据格式标准。

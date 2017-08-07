@@ -4,6 +4,34 @@ title:  深度学习（九）——深度强化学习, CTC
 category: theory 
 ---
 
+# 依存分析（续）
+
+## NLP的女学霸们
+
+http://cs.stanford.edu/people/danqi/
+
+陈丹琦，清华本科（姚班）（2012）+斯坦福博士生。
+
+https://homes.cs.washington.edu/~luheng/
+
+何律恒，上海交大本科（2010）+宾夕法尼亚大学硕士（2012）+华盛顿大学博士生。
+
+## CNN在NLP中的应用
+
+虽然基本上，CV界是CNN的天下，NLP界是RNN的地盘。然而，两者的界限并不是泾渭分明的。比如下图就是一个CNN在NLP中的应用示例：
+
+![](/images/article/Convolutional_Sequence_to_Sequence_Learning.png)
+
+## TWE
+
+http://nlp.csai.tsinghua.edu.cn/~lzy/publications/aaai2015_twe.pdf
+
+Topical Word Embeddings
+
+TWE的代码：
+
+https://github.com/largelymfs/topical_word_embeddings
+
 # 深度强化学习
 
 ## 教程

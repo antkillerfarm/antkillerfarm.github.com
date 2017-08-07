@@ -206,3 +206,17 @@ http://lamda.nju.edu.cn/huangsj/dm11/files/gaoy.pdf
 
 半监督学习中的几种协同训练算法
 
+## Beam Search
+
+http://people.csail.mit.edu/srush/optbeam.pdf
+
+Optimal Beam Search for Machine Translation
+
+http://www.cnblogs.com/xxey/p/4277181.html
+
+Beam Search（集束搜索/束搜索）
+
+http://blog.csdn.net/girlhpp/article/details/19400731
+
+束搜索算法（Andrew Jungwirth 初稿）BEAM Search
+

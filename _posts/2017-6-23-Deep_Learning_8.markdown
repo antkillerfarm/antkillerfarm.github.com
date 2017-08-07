@@ -108,6 +108,10 @@ https://mp.weixin.qq.com/s/YXWTslQXIKVihBb2Bgtafg
 
 GAN在信息检索领域的应用
 
+http://mp.weixin.qq.com/s/21CN4hAA6p7ZjWsO1sT2rA
+
+一文看懂生成式对抗网络GANs：介绍指南及前景展望
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
@@ -285,22 +289,6 @@ Output layer是一个softmax的多分类层，每个分类对应一个transition
 1.由1个隐层改为两个隐层。
 
 2.
-
-## NLP的女学霸们
-
-http://cs.stanford.edu/people/danqi/
-
-陈丹琦，清华本科（姚班）（2012）+斯坦福博士生。
-
-https://homes.cs.washington.edu/~luheng/
-
-何律恒，上海交大本科（2010）+宾夕法尼亚大学硕士（2012）+华盛顿大学博士生。
-
-## CNN在NLP中的应用
-
-虽然基本上，CV界是CNN的天下，NLP界是RNN的地盘。然而，两者的界限并不是泾渭分明的。比如下图就是一个CNN在NLP中的应用示例：
-
-![](/images/article/Convolutional_Sequence_to_Sequence_Learning.png)
 
 
 

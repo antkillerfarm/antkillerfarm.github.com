@@ -58,6 +58,22 @@ http://www.cnblogs.com/fengfenggirl/p/iForest.html
 
 # DL参考资源
 
+https://mp.weixin.qq.com/s/-G94Mj-8972i2HtEcIZDpA
+
+人脸识别世界杯榜单出炉，微软百万名人识别竞赛冠军分享
+
+https://mp.weixin.qq.com/s/6_cW22DCzSw3DpUDrLXLcA
+
+OpenAI提出强化学习近端策略优化，可替代策略梯度法
+
+https://mp.weixin.qq.com/s/hkcVhyqiDW--F3QxucgEcA
+
+亚马逊开源神经机器翻译框架Sockeye：基于Apache MXNet的NMT平台
+
+https://mp.weixin.qq.com/s/TWdeHVCgEf54STvdA1QUPg
+
+DeepMind哈萨比斯长文：伟大的AI离不开神经科学
+
 https://mp.weixin.qq.com/s/Jdd7S6JFKRdsVe2w-W01IA
 
 Facebook田渊栋开源游戏平台ELF，简化版《星际争霸》完美测试人工智能
@@ -189,6 +205,10 @@ NIPS 2017斯坦福赛题大公开：强化学习模拟人类肌肉骨骼模型
 https://mp.weixin.qq.com/s/EA5FgDeFI_w-kSfMpf5Yxw
 
 神经网络视觉分类算法的意外弱点
+
+https://mp.weixin.qq.com/s/CXKuSMi0Vd43BGDf5BgoqA
+
+弱监督视频物体识别新方法：香港科技大学联合CMU提出TD-Graph LSTM
 
 # ML参考资源
 
