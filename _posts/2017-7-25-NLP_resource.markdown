@@ -270,6 +270,14 @@ https://mp.weixin.qq.com/s/kMQ7q4EyBQUH1DEEhQWdCQ
 
 Familia：开源的中文主题模型应用工具包
 
+https://mp.weixin.qq.com/s/p8gEbamEbJBp_wzsy8_21A
+
+词义的动态变迁
+
+https://mp.weixin.qq.com/s/GUUkXrB1iyg4rQbBtICq6A
+
+通过NMT训练的通用语境词向量：NLP中的预训练模型？
+
 # Javascript在客户端的使用
 
 Javascript在服务器前端的成功，促使人们思考其在客户端的使用。

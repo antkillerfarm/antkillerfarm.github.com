@@ -216,6 +216,8 @@ https://www.zhihu.com/question/50519680
 
 如何理解soft target这一做法？
 
+《Articulatory and Spectrum Features Integration using Generalized Distillation Framework》
+
 # 依存分析
 
 ## 概况
@@ -290,5 +292,9 @@ Output layer是一个softmax的多分类层，每个分类对应一个transition
 
 2.
 
+《Opinion Mining with Deep Recurrent Neural Networks》
 
+![](/images/article/Pointer_Sentinel_Mixture_Models.png)
+
+《Pointer Sentinel Mixture Models》
 

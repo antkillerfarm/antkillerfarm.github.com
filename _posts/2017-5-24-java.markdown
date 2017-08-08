@@ -418,3 +418,38 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tenso
 
 第一个例子中，我对CPU的计算能力还没有切肤之痛，但在这里使用CPU差不多要花半个小时时间。。。
 
+### Fused Graph
+
+Fused Graph是TensorFlow新推出的概念。这里以softmax运算为例，讲一下它的基本思想。
+
+![](/images/article/fused_graph.png)
+
+上图是softmax运算的计算图。
+
+
+
+Qualcomm Hexagon平台的Fused Graph实现可参见：
+
+tensorflow/core/kernels/hexagon
+
+参考：
+
+https://developers.googleblog.com/2017/03/xla-tensorflow-compiled.html
+
+XLA - TensorFlow, compiled
+
+### Eigen
+
+Eigen是一个线性代数方面的C++模板库。tensorflow和caffe2都使用了这个库。
+
+官网：
+
+http://eigen.tuxfamily.org/
+
+参见：
+
+https://zhuanlan.zhihu.com/p/26512099
+
+tensorflow和caffe2
+
+

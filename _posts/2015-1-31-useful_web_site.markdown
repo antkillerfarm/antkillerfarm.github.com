@@ -300,6 +300,14 @@ https://mp.weixin.qq.com/s/B486kp-GNshNVIi756lL9Q
 
 块存储、文件存储、对象存储本质差别
 
+https://mp.weixin.qq.com/s/sCJFFZm-soWAt8kDyYulPQ
+
+99%留学生都不知道的Paper写作神器，Google从此是路人
+
+https://mp.weixin.qq.com/s/eNiD18IPbhdmrL_nuMjqCQ
+
+拍立淘技术框架及核心算法，日均UV超千万
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

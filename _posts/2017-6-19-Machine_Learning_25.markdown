@@ -210,22 +210,21 @@ https://mp.weixin.qq.com/s/CXKuSMi0Vd43BGDf5BgoqA
 
 弱监督视频物体识别新方法：香港科技大学联合CMU提出TD-Graph LSTM
 
-# ML参考资源
+https://mp.weixin.qq.com/s/uh-Gh8BSxBi-jjG6-d7-UQ
 
-https://mp.weixin.qq.com/s/MfYRipBX4la5jEG-ZMBhEw
+TACOTRON一种端到端的Text-to-Speech合成模型
 
-详解LinearSVM
+https://mp.weixin.qq.com/s/7NpJJn4k5oGPOB04S9Jyqw
 
-https://mp.weixin.qq.com/s/8ZEUNIXHu7iF1hHk7e0gdw
+DeepMind新论文，关联推理为什么是智能最重要的特征
 
-Spark 机器学习的加速器：Spark on Angel
+https://mp.weixin.qq.com/s/V6JQuACFbDWBl-iYkDnRig
 
-https://mp.weixin.qq.com/s/9cnXRCOmFwNnll-H0ts-FQ
+自动修复Bug正确率达78.3%，北大、微软等提出ACS技术
 
-如何解决租房烦恼？阿里工程师写了一套神奇的代码
+https://mp.weixin.qq.com/s/0Q-Kg6pNVRl3tqv8-wH-bg
 
-https://mp.weixin.qq.com/s/V0FBq2gbqyop8HwgLoPJXw
+Facebook开源史上最大星际争霸AI研究数据集
 
-“表”解机器学习
 
 

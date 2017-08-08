@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ML参考资源, PMML, Machine Learning之Python篇
+title:  ML参考资源, PMML
 category: technology 
 ---
 
@@ -322,6 +322,22 @@ https://mp.weixin.qq.com/s/rCCYmwmwodWKS0ZG4COPNg
 
 第四范式戴文渊：机器学习教科书的7大经典问题
 
+https://mp.weixin.qq.com/s/MfYRipBX4la5jEG-ZMBhEw
+
+详解LinearSVM
+
+https://mp.weixin.qq.com/s/8ZEUNIXHu7iF1hHk7e0gdw
+
+Spark 机器学习的加速器：Spark on Angel
+
+https://mp.weixin.qq.com/s/9cnXRCOmFwNnll-H0ts-FQ
+
+如何解决租房烦恼？阿里工程师写了一套神奇的代码
+
+https://mp.weixin.qq.com/s/V0FBq2gbqyop8HwgLoPJXw
+
+“表”解机器学习
+
 # PMML
 
 PMML(Predictive Model Markup Language) 是一个开放的工业标准，它以 XML 为载体将上述数据挖掘任务标准化，可以把某一产品所创建的数据挖掘方案应用于任何其它遵从 PMML 标准的产品或平台中 , 而不需考虑分析和预测过程中的具体实现细节。使得模型的部署摆脱了模型开发和产品整合的束缚，为商业智能产品、数据仓库和云计算中的数据挖掘模型的应用环境开拓了新的篇章。
@@ -336,157 +352,4 @@ http://blog.csdn.net/litaoshoujiao/article/details/8537599
 
 https://www.ibm.com/developerworks/cn/xml/x-1107xuj/
 
-# Machine Learning之Python篇
-
-## 概述
-
-![](/images/article/python_for_big_data.jpg)
-
-## NumPy
-
-NumPy是python语言所有数学计算库的基础。它主要提供了矩阵运算的功能。
-
-官网：
-
-http://www.numpy.org/
-
-教程：
-
-https://docs.scipy.org/doc/numpy-dev/user/quickstart.html
-
-API参考：
-
-https://docs.scipy.org/doc/numpy/reference/
-
-## SciPy
-
-SciPy提供了一些更高阶的数学运算库，比如：积分、插值、信号处理、傅立叶变换、矩阵特征值、统计计算等。
-
-SciPy提供的功能主要仍局限于数学运算，而并未提升到算法的层面。这也是它和scikit-learn或其他高级库的差别所在。
-
-官网：
-
-http://www.scipy.org/
-
-API参考：
-
-https://docs.scipy.org/doc/scipy/reference/
-
-## Scikit-learn
-
-Scikit-learn提供了常见的机器学习算法的实现。
-
-官网：
-
-http://scikit-learn.org/stable/index.html
-
-教程：
-
-http://scikit-learn.org/stable/user_guide.html
-
-API参考：
-
-http://scikit-learn.org/stable/tutorial/index.html
-
-http://scikit-learn.org/stable/modules/classes.html
-
-## Matplotlib
-
-Matplotlib是一个高阶的图形库，主要提供生成图表等数据可视化方面的功能。
-
-官网：
-
-http://matplotlib.org/
-
-API参考：
-
-http://matplotlib.org/1.5.3/api/index.html
-
-## Pandas
-
-Pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。
-
-官网：
-
-http://pandas.pydata.org/
-
-文档：
-
-http://pandas.pydata.org/pandas-docs/stable/
-
-API参考：
-
-http://pandas.pydata.org/pandas-docs/stable/api.html
-
-参考：
-
-http://www.cnblogs.com/chaosimple/p/4153083.html
-
-十分钟搞定pandas
-
-http://pandas.pydata.org/pandas-docs/stable/comparison_with_sql.html
-
-Pandas和SQL的比较
-
-## mysql
-
-http://www.runoob.com/python/python-mysql.html
-
-## chainer
-
-chainer是一个日本人写的基于python的深度学习框架。
-
-官网：
-
-https://chainer.org/
-
-代码：
-
-https://github.com/chainer/chainer
-
-## 参考
-
-https://github.com/neozhaoliang/pywonderland/tree/master/
-
-如何用Python画各种著名数学图案
-
-http://old.sebug.net/paper/books/scipydoc/index.html
-
-用Python做科学计算
-
-https://pan.baidu.com/s/1qYPUHNQ
-
-小抄合集
-
-https://mp.weixin.qq.com/s/HKHLiCqEAtoCAqf4CHv86w
-
-python机器学习算法代码实现
-
-https://mp.weixin.qq.com/s/1--i1OhxRNPvNnmP9bFo3g
-
-全机器学习和Python的27个速查表
-
-https://mp.weixin.qq.com/s/PtZ3YvFrUgbK5y3pcAeW9A
-
-使用OpenCV和Python实现的机器学习
-
-https://mp.weixin.qq.com/s/wbcAIrI0eNALfKhgkZQYTQ
-
-用Python也能进军金融领域？这有一份股票交易策略开发指南
-
-https://mp.weixin.qq.com/s/e--IeRTRZMqhs_DSJKpgyQ
-
-特征工程之Scikit-learn
-
-https://mp.weixin.qq.com/s/z3N5v4H_W2sxh2XPpFbAcA
-
-除了Python，这些语言写的机器学习项目也很牛
-
-https://mp.weixin.qq.com/s/U2cDVRxZPVsqoL-zHn__CA
-
-Python做机器学习之路
-
-https://mp.weixin.qq.com/s/LgVS5N80UlCeEfrPtyUF4Q
-
-深度学习矩阵运算的概念和代码实现
 

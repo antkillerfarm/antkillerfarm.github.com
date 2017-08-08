@@ -159,14 +159,6 @@ Ubuntu下的安装方法是：
 
 对于可移植的python包，直接使用pip安装即可，在ubuntu官网搜也搜不到的。
 
-## iPython
-
-ipython是一个 python 的交互式 shell，比默认的python shell 好用得多，支持变量自动补全，自动缩进，支持 bash shell 命令，内置了许多很有用的功能和函数。
-
-在较新的ipython版本中，添加了ipython notebook的功能，弥补了ipython shell下代码不易保存等缺点，并且在使用 --pylab inline选项后，可以在代码执行后立即显示运行结果（包括图片，数据表格等），因此在数据分析中运用十分广泛。
-
-`sudo apt-get install ipython ipython-notebook`
-
 ## 软件发布工具
 
 ### distutils

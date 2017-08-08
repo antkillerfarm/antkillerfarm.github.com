@@ -236,6 +236,10 @@ http://www.cnblogs.com/pinard/p/6494810.html
 
 卷积神经网络(CNN)反向传播算法
 
+http://blog.csdn.net/zy3381/article/details/44409535
+
+CNN误差反传时旋转卷积核的简明分析
+
 卷积的反向传播，有时也被称为反卷积。
 
 ![](/images/article/dcign.png)
