@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  云计算论文集, Spark, 数据描述语言, 运维工具集
+title:  云计算论文集, Spark, 数据描述语言
 category: technology 
 ---
 
@@ -86,15 +86,25 @@ Resilient Distributed Datasets是一个只读的，可分区的分布式数据�
 
 http://www.infoq.com/cn/articles/spark-core-rdd
 
+理解Spark的核心RDD
+
 http://f.dataguru.cn/thread-475874-1-1.html
+
+Spark RDD详解
 
 ## DataFrame和DataSet
 
 http://www.jianshu.com/p/c0181667daa0
 
+RDD、DataFrame和DataSet的区别
+
 http://www.csdn.net/article/2015-02-17/2823997
 
+Spark新年福音：一个用于大规模数据科学的API——DataFrame
+
 https://www.iteblog.com/pdf/1675
+
+Spark 2.0介绍：从RDD API迁移到DataSet API
 
 ## transformation & action
 
@@ -148,6 +158,14 @@ sc.setLogLevel("WARN");
 Spark中有个org.apache.spark.sql.functions类，专门针对数据集进行各种运算操作。其中的countDistinct方法可实现该功能。片段示例如下：
 
 `Dataset<Row> df2 = df.agg(functions.countDistinct("userId"));df2.show();`
+
+## MLlib
+
+MLlib是Spark的机器学习库。官网：
+
+https://spark.apache.org/mllib/
+
+和Spark的其他部分一样，MLlib也存在RDD API和DataFrame API两套API。其中前者已经停止开发，而后者的设计思想显然来自R语言。RDD API在spark.mllib包中，而DataFrame API在spark.ml包中。
 
 ## 参考
 
@@ -272,54 +290,4 @@ JSON采用的是，不同的语言提供不同的库来解析的方式。
 而Protocol Buffers使用同一个格式文件，为不同语言生成相应的代码。这和CORBA的做法很类似。
 
 与Protocol Buffers类似的方案，还有Facebook提出的Thrift、ZeroC提出的Slice和Hadoop Avro。
-
-# 运维工具集
-
-## Zabbix
-
-zabbix是一个基于WEB界面的提供分布式系统监视以及网络监视功能的企业级的开源解决方案。
-
-http://www.zabbix.com/
-
-## Cacti
-
-Cacti是一套基于PHP,MySQL,SNMP及RRDTool开发的网络流量监测图形分析工具。
-
-http://cacti.net/
-
-## Nagios
-
-Nagios是一款开源的免费网络监视工具，能有效监控Windows、Linux和Unix的主机状态，交换机路由器等网络设备，打印机等。
-
-https://www.nagios.org/
-
-# Ganglia
-
-Ganglia是伯克利开发的一个集群监控软件。可以监视和显示集群中的节点的各种状态信息，比如如：cpu 、mem、硬盘利用率， I/O负载、网络流量情况等，同时可以将历史数据以曲线方式通过php页面呈现。
-
-官网：
-
-http://ganglia.sourceforge.net/
-
-## Jenkins
-
-Jenkins是一个开源软件项目，旨在提供一个开放易用的软件平台，使软件的持续集成变成可能。
-
-https://jenkins.io/index.html
-
-自动化部署的其中一种方案：
-
-gitlab管理代码版本，触发jenkins自动构建+测试，然后走迭代或者发布，全部环境都在docker内。
-
-## Walle
-
-Walle一个web部署系统工具，配置简单、功能完善、界面流畅、开箱即用！支持git、svn版本管理，支持各种web代码发布，PHP，Python，JAVA等代码的发布、回滚，可以通过web来一键完成。
-
-https://walle-web.io/
-
-## JMeter
-
-Apache JMeter是Apache组织开发的基于Java的压力测试工具。用于对软件做压力测试，它最初被设计用于Web应用测试，但后来扩展到其他测试领域。 它可以用于测试静态和动态资源，例如静态文件、Java 小服务程序、CGI 脚本、Java 对象、数据库、FTP 服务器， 等等。JMeter 可以用于对服务器、网络或对象模拟巨大的负载，来自不同压力类别下测试它们的强度和分析整体性能。
-
-http://jmeter.apache.org/
 

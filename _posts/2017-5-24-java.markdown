@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Java（二）, 推荐系统的工程细节, Machine Learning之Java篇, TensorFlow
+title:  Java（二）, Machine Learning之Java篇, TensorFlow
 category: technology 
 ---
 
@@ -82,83 +82,6 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/java/HanLP/Know
 
 3.不想序列化的成员使用transient关键字修饰。
 
-# 推荐系统的工程细节
-
-推荐系统不仅是算法，还包括若干工程细节。这些细节虽然不算复杂，够不上算法的层面，然而对产品的成败，却有举足轻重的作用。
-
-## 一般架构
-
-![](/images/article/suggest.png)
-
-## 用户数据
-
-用户自然特征：性别，年龄，地域，教育水平，出生日期，职业，星座
-
-用户兴趣特征：兴趣爱好，使用网站，浏览/收藏内容，互动内容，品牌偏好，产品偏好
-
-用户社会特征：婚姻状况，家庭情况，社交/信息渠道偏好
-
-用户消费特征：收入状况，购买力水平，已购商品，购买渠道偏好，最后购买时间，购买频次
-
-## 评价推荐质量
-
-以今日头条类的新闻推荐为例，评估指标一般为：
-
-1. 平均转化率（点击量/曝光量）
-
-2. 人均阅读篇数（点击PV/点击UV）
-
-3. 平均阅读完成率
-
-4. 人均阅读时长（这个会受文章长度影响）
-
-5. 用户互动数据（评论、分享）
-
-对评估指标的选取一般遵循以下原则：
-
-1.用户满意度。
-
-2.预测准确度。
-
-3.覆盖率。
-
-4.多样性。
-
-5.新颖性。
-
-6.惊喜度。
-
-7.信任度。
-
-8.实时性
-
-9.鲁棒性
-
-测试方法一般包括：
-
-A/B测试、双盲交叉验证
-
-需要思考的问题
-
-1.新用户/新商品的冷启动问题。
-
-2.马太效应问题。这在推荐算法中也叫做banana problem。原因是在美国这边的超市，几乎所有人都爱买banana，因为最便宜，也好吃也健康。所以过多的数据量可能会导致一个超市推荐算法疯狂推荐Banana给所有人。
-
-参考：
-
-https://www.zhihu.com/question/26990692
-
-类似今日头条这样的个性化推荐网站怎么评价推荐质量的优劣？
-
-https://www.zhihu.com/question/19660417
-
-为什么那么多牛人成天在研究讨论算法，系统自动推荐的东西还是不能令人满意呢？
-
-## 术语
-
-GMV (Gross Merchandise Volume) 成交额
-
-![](/images/article/pv.jpg)
 
 # Machine Learning之Java篇
 
@@ -424,9 +347,9 @@ Fused Graph是TensorFlow新推出的概念。这里以softmax运算为例，讲�
 
 ![](/images/article/fused_graph.png)
 
-上图是softmax运算的计算图。
+上图是softmax运算的计算图，图中总共有4个operation。Fused Graph则将这4个op整合为1个op，发给运算单元。
 
-
+这样不同的硬件厂商就可以自行对这个整合的op进行解释。功能强的硬件，可能直接就支持softmax运算。功能弱的硬件也不怕，反正总归可以将softmax分解为基本运算的。
 
 Qualcomm Hexagon平台的Fused Graph实现可参见：
 
