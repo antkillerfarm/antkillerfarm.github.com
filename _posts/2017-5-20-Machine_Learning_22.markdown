@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十二）——时间序列分析, NLP机器翻译常用评价度量, Tri-training
+title:  机器学习（二十二）——时间序列分析, NLP机器翻译常用评价度量, Tri-training, Beam Search
 category: theory 
 ---
 
@@ -206,7 +206,19 @@ http://lamda.nju.edu.cn/huangsj/dm11/files/gaoy.pdf
 
 半监督学习中的几种协同训练算法
 
-## Beam Search
+# Beam Search
+
+Beam Search（集束搜索）是一种启发式图搜索算法，通常用在图的解空间比较大的情况下，为了减少搜索所占用的空间和时间，在每一步深度扩展的时候，剪掉一些质量比较差的结点，保留下一些质量较高的结点。
+
+这样减少了空间消耗，并提高了时间效率，但缺点就是有可能存在潜在的最佳方案被丢弃，因此Beam Search算法是不完全的，一般用于解空间较大的系统中。
+
+![](/images/article/beam_search.png)
+
+上图是一个Beam Search的剪枝示意图。
+
+Beam Search主要用于机器翻译、语音识别等系统。这类系统虽然从理论来说，也就是个多分类系统，然而由于分类数等于词汇数，简单的套用softmax之类的多分类方案，明显是计算量过于巨大了。
+
+参见：
 
 http://people.csail.mit.edu/srush/optbeam.pdf
 

@@ -1,10 +1,38 @@
 ---
 layout: post
-title:  深度学习（四）——RNN, LSTM, 神经元激活函数进阶, DRN
+title:  深度学习（四）——RNN, LSTM, 神经元激活函数进阶 
 category: theory 
 ---
 
 # 词向量
+
+## word2vec/doc2vec的缺点（续）
+
+2.虽然我们一般使用word2vec/doc2vec来比较文本相似度，但是从原理来说，word2vec/doc2vec提供的是关联性（relatedness），而不是相似性（similarity）。这会带来以下问题：不但近义词的词向量相似，反义词的词向量也相似。因为它们和其他词的关系（也就是语境）是类似的。
+
+3.由于一个词只有一个向量来表示，因此，无法处理一词多义的情况。
+
+然而关联性并非都是坏事，有的时候也会起到意想不到的效果。比如在客服对话的案例中，客户可能会提供自己的收货地址，显然每个客户的地址都是不同的，但是有意思的是，这些地址的词向量是非常相似的。
+
+总之，**只利用无标注数据训练得到的Word Embedding在匹配度计算的实用效果上和主题模型技术相差不大，它们本质上都是基于共现信息的训练。**
+
+参考：
+
+https://www.zhihu.com/question/22266868
+
+Word2Vec如何解决多义词的问题？
+
+## All is Embedding
+
+向量化是机器学习处理非数值数据的必经之路。因此除了词向量之外，还有其他的Embedding。比如Network Embedding。
+
+https://mp.weixin.qq.com/s/wcFlZPbB5dl6C87kdfjmKw
+
+NE(Network Embedding)论文小览
+
+https://mp.weixin.qq.com/s/zTNX_LeVMeHhJG7kPewn2g
+
+除了自然语言处理，你还可以用Word2Vec做什么？
 
 ## 参考
 
@@ -248,45 +276,4 @@ LSTM入门必读：从基础知识到工作方式详解
 但是ReLU并不完美。它在x<0时硬饱和，而当x>0时，导数为1。所以，ReLU能够在x>0时保持梯度不衰减，从而缓解梯度消失问题。但随着训练的推进，部分输入会落入硬饱和区，导致对应权重无法更新。这种现象被称为**神经元死亡**。
 
 ReLU还经常被“诟病”的另一个问题是输出具有**偏移现象**，即输出均值恒大于零。偏移现象和神经元死亡会共同影响网络的收敛性。实验表明，如果不采用Batch Normalization，即使用MSRA初始化30层以上的ReLU网络，最终也难以收敛。
-
-为了解决上述问题，人们提出了Leaky ReLU、PReLU、RReLU、ELU、Maxout等ReLU的变种。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/22142013
-
-深度学习中的激活函数导引
-
-http://blog.csdn.net/u012328159/article/details/69898137
-
-几种常见的激活函数
-
-https://mp.weixin.qq.com/s/Hic01RxwWT_YwnErsJaipQ
-
-什么是激活函数？
-
-## 其他激活函数
-
-### hard tanh
-
-$$\text{HardTanh}(x)=\begin{cases}
--1, & x<-1 \\
-x, & -1\le x \le 1 \\
-1, & x>1 \\
-\end{cases}$$
-
-![](/images/article/hard_tanh.png)
-
-### soft sign
-
-$$\text{softsign}(x)=\frac{x}{1+|x|}$$
-
-# Deep Residual Network
-
-无论采用何种方法，可训练的神经网络的层数都不可能无限深。有的时候，即使没有梯度消失，也存在训练退化（即深层网络的效果还不如浅层网络）的问题。
-
-最终2015年，微软亚洲研究院的何恺明等人，使用残差网络ResNet参加了当年的ILSVRC，在图像分类、目标检测等任务中的表现大幅超越前一年的比赛的性能水准，并最终取得冠军。
-
->注：何恺明，清华本科+香港中文大学博士（2011）。先后在MS和Facebook担任研究员。   
->个人主页：http://kaiminghe.com/
 

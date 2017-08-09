@@ -6,6 +6,50 @@ category: theory
 
 # 依存分析（续）
 
+## 深度方法
+
+深度方法的开山之作是陈丹琦2014年的论文：
+
+《A Fast and Accurate Dependency Parser using Neural Networks》
+
+![](/images/article/dependency_parser_nn.png)
+
+上图是该方案的结构图。
+
+我们之前已经指出，在传统方法中，transition是由单词、词性和依赖关系树所确定的。只是这种确定的规则比较复杂，不易提炼出有效特征。
+
+参照我们在CNN中的作为，特征提取这一步骤可以由神经网络来完成。因此，在这里我们将configuration的各个组成部分分别向量化，然后合成为一个长向量，作为Input layer。
+
+这里采用以下的Cube函数作为激活函数，这也是该文的一大创见：
+
+$$h=(W_1^w x^w + W_1^t x^t + W_1^l x^l + b_1)^3$$
+
+Output layer是一个softmax的多分类层，每个分类对应一个transition。
+
+## SyntaxNet
+
+2015年David Weiss在陈丹琦方案的基础上，做了一些改进。
+
+论文：
+
+《Structured Training for Neural Network Transition-Based Parsing》
+
+![](/images/article/dependency_parser_nn_2.png)
+
+上图是Weiss方案的结构图。该方案相比陈丹琦方案的改进如下：
+
+1.由1个隐层改为两个隐层。
+
+2.添加Perceptron Layer作为输出层。（Perceptron Layer的含义参见《机器学习（二十二）》中对于Beam Search的解释）
+
+3.全局使用Tri-training算法作为半监督的集成学习算法。（Tri-training算法参见《机器学习（二十二）》）
+
+《Opinion Mining with Deep Recurrent Neural Networks》
+
+![](/images/article/Pointer_Sentinel_Mixture_Models.png)
+
+《Pointer Sentinel Mixture Models》
+
 ## NLP的女学霸们
 
 http://cs.stanford.edu/people/danqi/
@@ -21,6 +65,8 @@ https://homes.cs.washington.edu/~luheng/
 虽然基本上，CV界是CNN的天下，NLP界是RNN的地盘。然而，两者的界限并不是泾渭分明的。比如下图就是一个CNN在NLP中的应用示例：
 
 ![](/images/article/Convolutional_Sequence_to_Sequence_Learning.png)
+
+卷积本质上是一个局部运算。对词向量的卷积，实际上等效于n-gram的词袋模型。
 
 ## TWE
 

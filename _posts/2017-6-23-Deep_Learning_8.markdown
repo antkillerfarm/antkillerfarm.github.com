@@ -4,7 +4,47 @@ title:  深度学习（八）——fine-tuning, 模型压缩, 依存分析
 category: theory 
 ---
 
-# GAN
+# GAN（续）
+
+## Lipschitz约束
+
+稍微思考一下，我们就发现，问题还没完。我们目前还没有对D做约束，不难发现，无约束的话Loss基本上会直接跑到负无穷去了～
+
+最简单的方案就是采用Lipschitz约束：
+
+$$\| D(y,\theta) - D(y' , \theta) \| \leq C \|y-y'\|$$
+
+也可写作：
+
+$$\left\| \frac{\partial D(y,\Theta)}{\partial y}\right\| \leq C$$
+
+>注：Rudolf Otto Sigismund Lipschitz，1832～1903，德国数学家，先后就读于柯尼斯堡大学和柏林大学，导师Dirichlet。波恩大学教授。
+
+## WGAN
+
+KL散度和JS散度由于不是距离，数学特性并不够好。因此，Martín Arjovsky于2017年1月，提出了Wasserstein GAN。
+
+其中的一项改进就是使用Wasserstein距离替代KL散度和JS散度。Wasserstein距离的定义参看《机器学习（二十）》。
+
+WGAN极大程度的改善了GAN训练困难的问题，成为当前GAN研究的主流。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/25071913
+
+令人拍案叫绝的Wasserstein GAN
+
+## GAN的发展
+
+最早的GAN出现在2014年6月，但直到2015年底，也只有5个变种，发展并不迅速。
+
+2016年，GAN开始发力，年底时已有52个变种。2017年6月底，更达到142个变种。
+
+参考：
+
+https://github.com/hindupuravinash/the-gan-zoo
+
+GAN的各种变种。
 
 ## 参考
 
@@ -260,45 +300,4 @@ Unlabeled attachment score是指依存结点是否正确。以上图中的例子
 
 Labeled	attachment score不仅考虑依存结点是否正确，还考虑词性是否正确。用样以上图为例，则是2/5=40%。
 
-## 深度方法
-
-深度方法的开山之作是陈丹琦2014年的论文：
-
-《A Fast and Accurate Dependency Parser using Neural Networks》
-
-![](/images/article/dependency_parser_nn.png)
-
-上图是该方案的结构图。
-
-我们之前已经指出，在传统方法中，transition是由单词、词性和依赖关系树所确定的。只是这种确定的规则比较复杂，不易提炼出有效特征。
-
-参照我们在CNN中的作为，特征提取这一步骤可以由神经网络来完成。因此，在这里我们将configuration的各个组成部分分别向量化，然后合成为一个长向量，作为Input layer。
-
-这里采用以下的Cube函数作为激活函数，这也是该文的一大创见：
-
-$$h=(W_1^w x^w + W_1^t x^t + W_1^l x^l + b_1)^3$$
-
-Output layer是一个softmax的多分类层，每个分类对应一个transition。
-
-## SyntaxNet
-
-2015年David Weiss在陈丹琦方案的基础上，做了一些改进。
-
-论文：
-
-《Structured Training for Neural Network Transition-Based Parsing》
-
-![](/images/article/dependency_parser_nn_2.png)
-
-上图是Weiss方案的结构图。该方案相比陈丹琦方案的改进如下：
-
-1.由1个隐层改为两个隐层。
-
-2.
-
-《Opinion Mining with Deep Recurrent Neural Networks》
-
-![](/images/article/Pointer_Sentinel_Mixture_Models.png)
-
-《Pointer Sentinel Mixture Models》
 

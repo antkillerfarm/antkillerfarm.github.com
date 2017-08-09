@@ -4,6 +4,16 @@ title:  深度学习（二）——Dropout, 深度学习常用术语解释, Neur
 category: theory 
 ---
 
+# 神经元激活函数
+
+## ReLU（续）
+
+由于ReLU的曲线不是连续可导的，因此有的时候，会用SoftPlus函数（上图中的绿线）替代。其定义为：
+
+$$f(x) = \ln(1 + e^x)$$
+
+除此之外，ReLU函数族还包括Leaky ReLU、PReLU、RReLU、ELU等。
+
 # Dropout
 
 Dropout是神经网络中解决过拟合问题的一种常见方法。
@@ -235,34 +245,3 @@ Pooling操作（也称Subsampling）使输入表示（特征维度）变得更�
 ### Gaussian Connections
 
 LeNet-5最后一步的Gaussian Connections是一个当年的历史遗迹，目前已经被Softmax所取代。它的含义在上面提到的Yann LeCun的原始论文中有描述。
-
-### 其他
-
-![](/images/article/CNN_1.jpg)
-
-上图展示了不同分类的图片特征在特征空间中的分布，可以看出在CNN的低层中，这些特征是混杂在一起的；而到了CNN的高层，这些特征就被区分开来了。
-
-![](/images/article/CNN_2.jpg)
-
-上图是若干ML、DL算法按照不同维度划分的情况。
-
-## CNN的反向传播算法
-
-由于卷积和池化两层，不是一般的神经网络结构。因此CNN的反向传播算法实际上也是很有技巧的。
-
-参见：
-
-http://www.cnblogs.com/pinard/p/6494810.html
-
-卷积神经网络(CNN)反向传播算法
-
-http://blog.csdn.net/zy3381/article/details/44409535
-
-CNN误差反传时旋转卷积核的简明分析
-
-卷积的反向传播，有时也被称为反卷积。
-
-![](/images/article/dcign.png)
-
-上图是Deep convolutional inverse graphics networks的结构图。DCIGN实际上是一个正向CNN连上一个反向CNN，以实现图片合成的目的。其原理可参考《深度学习（三）》中的Autoencoder。
-

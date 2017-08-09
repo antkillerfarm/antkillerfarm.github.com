@@ -6,6 +6,36 @@ category: theory
 
 # CNN（续）
 
+### 其他
+
+![](/images/article/CNN_1.jpg)
+
+上图展示了不同分类的图片特征在特征空间中的分布，可以看出在CNN的低层中，这些特征是混杂在一起的；而到了CNN的高层，这些特征就被区分开来了。
+
+![](/images/article/CNN_2.jpg)
+
+上图是若干ML、DL算法按照不同维度划分的情况。
+
+## CNN的反向传播算法
+
+由于卷积和池化两层，不是一般的神经网络结构。因此CNN的反向传播算法实际上也是很有技巧的。
+
+参见：
+
+http://www.cnblogs.com/pinard/p/6494810.html
+
+卷积神经网络(CNN)反向传播算法
+
+http://blog.csdn.net/zy3381/article/details/44409535
+
+CNN误差反传时旋转卷积核的简明分析
+
+卷积的反向传播，有时也被称为反卷积。
+
+![](/images/article/dcign.png)
+
+上图是Deep convolutional inverse graphics networks的结构图。DCIGN实际上是一个正向CNN连上一个反向CNN，以实现图片合成的目的。其原理可参考《深度学习（三）》中的Autoencoder。
+
 ## 参考
 
 http://lib.csdn.net/article/deeplearning/58185
@@ -241,30 +271,4 @@ https://github.com/facebookresearch/fastText
 ## word2vec/doc2vec的缺点
 
 1.word2vec/doc2vec基于BOW（Bag Of Word，词袋）模型。该模型的特点是忽略词序，因此对于那些交换词序会改变含义的句子，无法准确评估它们的区别。
-
-2.虽然我们一般使用word2vec/doc2vec来比较文本相似度，但是从原理来说，word2vec/doc2vec提供的是关联性（relatedness），而不是相似性（similarity）。这会带来以下问题：不但近义词的词向量相似，反义词的词向量也相似。因为它们和其他词的关系（也就是语境）是类似的。
-
-3.由于一个词只有一个向量来表示，因此，无法处理一词多义的情况。
-
-然而关联性并非都是坏事，有的时候也会起到意想不到的效果。比如在客服对话的案例中，客户可能会提供自己的收货地址，显然每个客户的地址都是不同的，但是有意思的是，这些地址的词向量是非常相似的。
-
-总之，**只利用无标注数据训练得到的Word Embedding在匹配度计算的实用效果上和主题模型技术相差不大，它们本质上都是基于共现信息的训练。**
-
-参考：
-
-https://www.zhihu.com/question/22266868
-
-Word2Vec如何解决多义词的问题？
-
-## All is Embedding
-
-向量化是机器学习处理非数值数据的必经之路。因此除了词向量之外，还有其他的Embedding。比如Network Embedding。
-
-https://mp.weixin.qq.com/s/wcFlZPbB5dl6C87kdfjmKw
-
-NE(Network Embedding)论文小览
-
-https://mp.weixin.qq.com/s/zTNX_LeVMeHhJG7kPewn2g
-
-除了自然语言处理，你还可以用Word2Vec做什么？
 

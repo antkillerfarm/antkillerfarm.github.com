@@ -242,10 +242,3 @@ $$f(x) = \max(0, x)$$
 ![](/images/article/Rectifier_and_softplus_functions.svg)
 
 从上图可以看出，ReLU相对于Sigmoid，在解决了梯度消失问题的同时，也增加了神经网络的稀疏性，因此ReLU的收敛速度远高于Sigmod，并成为目前最常用的激活函数。
-
-由于ReLU的曲线不是连续可导的，因此有的时候，会用SoftPlus函数（上图中的绿线）替代。其定义为：
-
-$$f(x) = \ln(1 + e^x)$$
-
-除此之外，ReLU函数族还包括Leaky ReLU、PReLU、RReLU、ELU等。
-

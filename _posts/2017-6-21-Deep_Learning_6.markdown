@@ -6,6 +6,38 @@ category: theory
 
 # CNN进化史（续）
 
+## AlexNet
+
+2012年，ILSVRC比赛冠军的model——Alexnet（以第一作者Alex命名）的结构图如下：
+
+![](/images/article/AlexNet.png)
+
+换个视角：
+
+![](/images/article/AlexNet_2.png)
+
+AlexNet的caffe模板：
+
+https://github.com/BVLC/caffe/blob/master/models/bvlc_alexnet/deploy.prototxt
+
+其中的LRN（Local Response Normalization）层也是当年的遗迹，被后来的实践证明，对于最终效果和运算量没有太大帮助，因此也就慢慢废弃了。
+
+虽然，LeNet-5是CNN的开山之作（它不是最早的CNN，但却是奠定了现代CNN理论基础的模型），但是毕竟年代久远，和现代实用的CNN相比，结构实在过于原始。
+
+AlexNet作为第一个现代意义上的CNN，它的意义主要包括：
+
+1.Data Augmentation。包括水平翻转、随机裁剪、平移变换、颜色、光照变换等。
+
+2.Dropout。
+
+3.ReLU激活函数。
+
+4.多GPU并行计算。
+
+5.当然最应该感谢的是李飞飞团队搞出来的标注数据集合ImageNet。
+
+>注：ILSVRC（Large Scale Visual Recognition Challenge）大赛，在2016年以前，一直是CV界的顶级赛事。但随着技术的成熟，目前的科研重点已经从物体识别转移到了物体理解领域。2017年将是该赛事的最后一届。WebVision有望接替该赛事，成为下一个目标。
+
 ## VGG
 
 Visual Geometry Group是牛津大学的一个科研团队。他们推出的一系列深度模型，被称作VGG模型。
@@ -230,66 +262,4 @@ RCNN相对传统方法的改进：
 一个较小的检测库（PASCAL VOC 2007）：标定每张图片中，物体的类别和位置，一万图像，20类。
 
 RCNN使用识别库进行预训练得到CNN（有监督预训练），而后用检测库调优参数，最后在检测库上评测。
-
-## RCNN算法的基本流程
-
-![](/images/article/rcnn.png)
-
-候选区域生成：一张图像生成1K~2K个候选区域 （采用Selective Search 方法）。
-
-特征提取：对每个候选区域，使用深度卷积网络提取特征（CNN）。
-
-类别判断：特征送入每一类的SVM 分类器，判别是否属于该类。
-
-位置精修：使用回归器精细修正候选框位置。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/23006190
-
-RCNN-将CNN引入目标检测的开山之作
-
-https://zhuanlan.zhihu.com/p/24774302
-
-SPPNet-引入空间金字塔池化改进RCNN
-
-https://zhuanlan.zhihu.com/p/24780395
-
-Fast R-CNN
-
-https://zhuanlan.zhihu.com/p/24916624
-
-Faster R-CNN
-
-https://zhuanlan.zhihu.com/p/24916786
-
-图解YOLO
-
-https://zhuanlan.zhihu.com/p/24954433
-
-SSD
-
-https://zhuanlan.zhihu.com/p/25167153
-
-YOLO2
-
-https://www.zhihu.com/question/35887527
-
-如何评价rcnn、fast-rcnn和faster-rcnn这一系列方法？
-
-http://blog.csdn.net/tangwei2014/article/details/50915317
-
-论文阅读笔记：You Only Look Once: Unified, Real-Time Object Detection
-
-http://blog.csdn.net/shenxiaolu1984/article/details/51066975
-
-RCNN算法详解
-
-http://blog.csdn.net/shenxiaolu1984/article/details/51036677
-
-Fast RCNN算法详解
-
-http://blog.csdn.net/shenxiaolu1984/article/details/51152614
-
-Faster RCNN算法详解
 

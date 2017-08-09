@@ -4,9 +4,69 @@ title:  深度学习（七）——GAN
 category: theory 
 ---
 
-# RCNN
+# RCNN（续）
 
-## RCNN算法的基本流程（续）
+## RCNN算法的基本流程
+
+![](/images/article/rcnn.png)
+
+候选区域生成：一张图像生成1K~2K个候选区域 （采用Selective Search 方法）。
+
+特征提取：对每个候选区域，使用深度卷积网络提取特征（CNN）。
+
+类别判断：特征送入每一类的SVM 分类器，判别是否属于该类。
+
+位置精修：使用回归器精细修正候选框位置。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/23006190
+
+RCNN-将CNN引入目标检测的开山之作
+
+https://zhuanlan.zhihu.com/p/24774302
+
+SPPNet-引入空间金字塔池化改进RCNN
+
+https://zhuanlan.zhihu.com/p/24780395
+
+Fast R-CNN
+
+https://zhuanlan.zhihu.com/p/24916624
+
+Faster R-CNN
+
+https://zhuanlan.zhihu.com/p/24916786
+
+图解YOLO
+
+https://zhuanlan.zhihu.com/p/24954433
+
+SSD
+
+https://zhuanlan.zhihu.com/p/25167153
+
+YOLO2
+
+https://www.zhihu.com/question/35887527
+
+如何评价rcnn、fast-rcnn和faster-rcnn这一系列方法？
+
+http://blog.csdn.net/tangwei2014/article/details/50915317
+
+论文阅读笔记：You Only Look Once: Unified, Real-Time Object Detection
+
+http://blog.csdn.net/shenxiaolu1984/article/details/51066975
+
+RCNN算法详解
+
+http://blog.csdn.net/shenxiaolu1984/article/details/51036677
+
+Fast RCNN算法详解
+
+http://blog.csdn.net/shenxiaolu1984/article/details/51152614
+
+Faster RCNN算法详解
 
 https://mp.weixin.qq.com/s/XorPkuIdhRNI1zGLwg-55A
 
@@ -223,42 +283,3 @@ $$G(X,\theta)$$希望它生成的样本越接近真实样本越好，因此这�
 $$\begin{aligned}\theta =& \mathop{\arg\min}_{\theta} L_2\\ 
 =&\mathop{\arg\min}_{\theta} \frac{1}{B}\sum_{i=1}^B\left[D\Big(G(x_i,\theta),\Theta\Big)\right]\end{aligned}$$
 
-## Lipschitz约束
-
-稍微思考一下，我们就发现，问题还没完。我们目前还没有对D做约束，不难发现，无约束的话Loss基本上会直接跑到负无穷去了～
-
-最简单的方案就是采用Lipschitz约束：
-
-$$\| D(y,\theta) - D(y' , \theta) \| \leq C \|y-y'\|$$
-
-也可写作：
-
-$$\left\| \frac{\partial D(y,\Theta)}{\partial y}\right\| \leq C$$
-
->注：Rudolf Otto Sigismund Lipschitz，1832～1903，德国数学家，先后就读于柯尼斯堡大学和柏林大学，导师Dirichlet。波恩大学教授。
-
-## WGAN
-
-KL散度和JS散度由于不是距离，数学特性并不够好。因此，Martín Arjovsky于2017年1月，提出了Wasserstein GAN。
-
-其中的一项改进就是使用Wasserstein距离替代KL散度和JS散度。Wasserstein距离的定义参看《机器学习（二十）》。
-
-WGAN极大程度的改善了GAN训练困难的问题，成为当前GAN研究的主流。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/25071913
-
-令人拍案叫绝的Wasserstein GAN
-
-## GAN的发展
-
-最早的GAN出现在2014年6月，但直到2015年底，也只有5个变种，发展并不迅速。
-
-2016年，GAN开始发力，年底时已有52个变种。2017年6月底，更达到142个变种。
-
-参考：
-
-https://github.com/hindupuravinash/the-gan-zoo
-
-GAN的各种变种。

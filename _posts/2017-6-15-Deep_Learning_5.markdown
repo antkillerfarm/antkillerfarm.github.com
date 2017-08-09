@@ -1,10 +1,53 @@
 ---
 layout: post
-title:  深度学习（五）——Bi-directional RNN, Attention, seq2seq, DMN, CNN进化史
+title:  深度学习（五）——DRN, Bi-directional RNN, Attention, seq2seq, DMN, CNN进化史
 category: theory 
 ---
 
-# Deep Residual Network（续）
+# 神经元激活函数进阶
+
+## ReLU的缺点（续）
+
+为了解决上述问题，人们提出了Leaky ReLU、PReLU、RReLU、ELU、Maxout等ReLU的变种。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/22142013
+
+深度学习中的激活函数导引
+
+http://blog.csdn.net/u012328159/article/details/69898137
+
+几种常见的激活函数
+
+https://mp.weixin.qq.com/s/Hic01RxwWT_YwnErsJaipQ
+
+什么是激活函数？
+
+## 其他激活函数
+
+### hard tanh
+
+$$\text{HardTanh}(x)=\begin{cases}
+-1, & x<-1 \\
+x, & -1\le x \le 1 \\
+1, & x>1 \\
+\end{cases}$$
+
+![](/images/article/hard_tanh.png)
+
+### soft sign
+
+$$\text{softsign}(x)=\frac{x}{1+|x|}$$
+
+# Deep Residual Network
+
+无论采用何种方法，可训练的神经网络的层数都不可能无限深。有的时候，即使没有梯度消失，也存在训练退化（即深层网络的效果还不如浅层网络）的问题。
+
+最终2015年，微软亚洲研究院的何恺明等人，使用残差网络ResNet参加了当年的ILSVRC，在图像分类、目标检测等任务中的表现大幅超越前一年的比赛的性能水准，并最终取得冠军。
+
+>注：何恺明，清华本科+香港中文大学博士（2011）。先后在MS和Facebook担任研究员。   
+>个人主页：http://kaiminghe.com/
 
 残差网络的明显特征是有着相当深的深度，从32层到152层，其深度远远超过了之前提出的深度网络结构，而后又针对小数据设计了1001层的网络结构。
 
@@ -232,35 +275,4 @@ http://blog.csdn.net/javafreely/article/details/71994247
 
 ![](/images/article/CNN_3.png)
 
-## AlexNet
-
-2012年，ILSVRC比赛冠军的model——Alexnet（以第一作者Alex命名）的结构图如下：
-
-![](/images/article/AlexNet.png)
-
-换个视角：
-
-![](/images/article/AlexNet_2.png)
-
-AlexNet的caffe模板：
-
-https://github.com/BVLC/caffe/blob/master/models/bvlc_alexnet/deploy.prototxt
-
-其中的LRN（Local Response Normalization）层也是当年的遗迹，被后来的实践证明，对于最终效果和运算量没有太大帮助，因此也就慢慢废弃了。
-
-虽然，LeNet-5是CNN的开山之作（它不是最早的CNN，但却是奠定了现代CNN理论基础的模型），但是毕竟年代久远，和现代实用的CNN相比，结构实在过于原始。
-
-AlexNet作为第一个现代意义上的CNN，它的意义主要包括：
-
-1.Data Augmentation。包括水平翻转、随机裁剪、平移变换、颜色、光照变换等。
-
-2.Dropout。
-
-3.ReLU激活函数。
-
-4.多GPU并行计算。
-
-5.当然最应该感谢的是李飞飞团队搞出来的标注数据集合ImageNet。
-
->注：ILSVRC（Large Scale Visual Recognition Challenge）大赛，在2016年以前，一直是CV界的顶级赛事。但随着技术的成熟，目前的科研重点已经从物体识别转移到了物体理解领域。2017年将是该赛事的最后一届。WebVision有望接替该赛事，成为下一个目标。
 
