@@ -112,6 +112,10 @@ http://mp.weixin.qq.com/s/21CN4hAA6p7ZjWsO1sT2rA
 
 一文看懂生成式对抗网络GANs：介绍指南及前景展望
 
+https://mp.weixin.qq.com/s/YLys6L9WT7eCC-xGr1j0Iw
+
+带多分类判别器的GAN模型
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。

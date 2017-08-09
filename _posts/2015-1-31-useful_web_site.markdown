@@ -308,6 +308,10 @@ https://mp.weixin.qq.com/s/eNiD18IPbhdmrL_nuMjqCQ
 
 拍立淘技术框架及核心算法，日均UV超千万
 
+https://mp.weixin.qq.com/s/4lZ7My6cs4-VJQ1qGhQxZg
+
+AliSQL X-Cluste：基于X-Paxos的高性能强一致MySQL数据库
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

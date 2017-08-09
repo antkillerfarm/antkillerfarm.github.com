@@ -1,10 +1,26 @@
 ---
 layout: post
-title:  深度学习（二）——深度学习常用术语解释, Neural Network Zoo, CNN
+title:  深度学习（二）——Dropout, 深度学习常用术语解释, Neural Network Zoo, CNN
 category: theory 
 ---
 
-# Dropout（续）
+# Dropout
+
+Dropout是神经网络中解决过拟合问题的一种常见方法。
+
+它的具体做法是：
+
+![](/images/article/DropOut.png)
+
+1.每次训练时，随机隐藏部分隐层神经元。
+
+2.根据样本值，修改未隐藏的神经元的参数。隐藏的神经元的参数保持不变。
+
+3.下次训练时，重新随机选择需要隐藏的神经元。
+
+由于神经网络的非线性，Dropout的理论证明尚属空白，这里只有一些直观解释。
+
+1.dropout掉不同的隐藏神经元就类似在训练不同的网络，整个dropout过程就相当于对很多个不同的神经网络取平均。而不同的网络产生不同的过拟合，一些互为“反向”的拟合相互抵消就可以达到整体上减少过拟合。这实际上就是bagging的思想。
 
 2.因为dropout程序导致两个神经元不一定每次都在一个dropout网络中出现。这会迫使网络去学习更加鲁棒的特征。换句话说，假如我们的神经网络是在做出某种预测，它不应该对一些特定的线索片段太过敏感，即使丢失特定的线索，它也应该可以从众多其它线索中学习一些共同的模式（鲁棒性）。
 
@@ -109,6 +125,10 @@ Batch Normalization原理及其TensorFlow实现
 https://mp.weixin.qq.com/s/EBRYlCoj9rwf0NQY0B4nhQ
 
 Layer Normalization原理及其TensorFlow实现
+
+http://blog.csdn.net/u013709270/article/details/70949304
+
+深度神经网络训练的必知技巧
 
 ## 鞍点
 
@@ -245,18 +265,4 @@ CNN误差反传时旋转卷积核的简明分析
 ![](/images/article/dcign.png)
 
 上图是Deep convolutional inverse graphics networks的结构图。DCIGN实际上是一个正向CNN连上一个反向CNN，以实现图片合成的目的。其原理可参考《深度学习（三）》中的Autoencoder。
-
-## 参考
-
-http://lib.csdn.net/article/deeplearning/58185
-
-BP神经网络与卷积神经网络
-
-http://blog.csdn.net/Fate_fjh/article/details/52882134
-
-卷积神经网络系列blog
-
-http://mp.weixin.qq.com/s/YRwGwelyA3VOYZ4XGAjUBw
-
-CNN 感受野首次可视化：深入解读及计算指南
 

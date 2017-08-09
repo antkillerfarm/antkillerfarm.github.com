@@ -142,9 +142,17 @@ prototxt：模板文件。定义NN中的层之类的结构。
 
 caffemodel：模型文件。训练好的模型可以放在模型文件中，以便于今后的预测。
 
-## blob
+## 术语
 
-blob是Caffe中用于数据操作和交换的数据结构。简单来说，就是一个4维数组：number,channel,height,width。
+**blob**：Caffe中用于数据操作和交换的数据结构。简单来说，就是一个4维数组：number,channel,height,width。
+
+**lr_mult**：学习率因子。基数是solver在运行时采用的学习率。
+
+**decay_mult**：衰减因子。基数含义同上。
+
+lr_mult参数和decay_mult参数的存在，允许不同的层有不同的学习率或衰减率。
+
+在一个卷积层中，通常会有2组lr_mult参数和decay_mult参数，其中前一组是weight参数的学习率或衰减率，而后一组是bias参数的。
 
 ## 参考
 

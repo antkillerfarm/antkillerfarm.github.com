@@ -4,9 +4,21 @@ title:  深度学习（三）——Autoencoder, 词向量
 category: theory 
 ---
 
-# CNN
+# CNN（续）
 
-## 参考（续）
+## 参考
+
+http://lib.csdn.net/article/deeplearning/58185
+
+BP神经网络与卷积神经网络
+
+http://blog.csdn.net/Fate_fjh/article/details/52882134
+
+卷积神经网络系列blog
+
+http://mp.weixin.qq.com/s/YRwGwelyA3VOYZ4XGAjUBw
+
+CNN 感受野首次可视化：深入解读及计算指南
 
 http://mp.weixin.qq.com/s/dvuX3Ih_DZrv0kgqFn8-lg
 

@@ -291,3 +291,29 @@ JSON采用的是，不同的语言提供不同的库来解析的方式。
 
 与Protocol Buffers类似的方案，还有Facebook提出的Thrift、ZeroC提出的Slice和Hadoop Avro。
 
+# WebSocket
+
+在浏览器中通过http仅能实现单向的通信。AJAX通过轮询方式，达到全双工通信，但效率不高。
+
+面对这种状况，HTML5定义了WebSocket协议（基于TCP），能更好的节省服务器资源和带宽并达到实时通讯。
+
+浏览器请求
+
+{% highlight text %}
+GET /webfin/websocket/ HTTP/1.1
+　　Host: localhost
+　　Upgrade: websocket
+　Connection: Upgrade
+　　Sec-WebSocket-Key: xqBt3ImNzJbYqRINxEFlkg==
+　　Origin: http://www.sohu.com
+　　Sec-WebSocket-Version: 13
+{% endhighlight %}
+
+服务器回应
+
+{% highlight text %}
+HTTP/1.1 101 Switching Protocols
+　　Upgrade: websocket
+　　Connection: Upgrade
+　　Sec-WebSocket-Accept: K7DJLdLooIwIG/MOpvWFB3y3FE8=
+{% endhighlight %}

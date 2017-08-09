@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（一）——MP神经元模型, BP算法, 神经元激活函数, Dropout
+title:  深度学习（一）——MP神经元模型, BP算法, 神经元激活函数
 category: theory 
 ---
 
@@ -143,6 +143,32 @@ $$\frac{\partial E_k}{\partial w_{hj}}=\frac{\partial E_k}{\partial \hat y_j^k}\
 
 神经网络的参数的**随机初始化**的目的是使对称失效。否则的话，所有对称结点的权重都一致，也就无法区分并学习了。
 
+随机初始化的方法有如下几种：
+
+1.Gaussian。用给定均值和方差的Gaussian分布设定随机值。这也是最常用的方法。
+
+2.Xavier。该方法基于Gaussian分布或均匀分布产生随机数。其中分布W的均值为零，方差公式如下：
+
+$$\text{Var}(W)=\frac{1}{n_{in}}$$
+
+其中，$$n_{in}$$表示需要输入层的神经元的个数。也有如下变种：
+
+$$\text{Var}(W)=\frac{2}{n_{in}+n_{out}}$$
+
+其中，$$n_{out}$$表示需要输出层的神经元的个数。
+
+3.MSRA。该方法基于零均值的Gaussian分布产生随机数。Gaussian分布的标准差为：
+
+$$\sqrt{\frac{2}{n_l}}$$
+
+其中，$$n_l=k_l^2d_{l-1}$$，$$k_l$$表示l层的filter的大小，$$d_{l-1}$$表示l-1层的filter的数量。
+
+参见：
+
+http://blog.csdn.net/xizero00/article/details/51013088
+
+Different Methods for Weight Initialization in Deep Learning
+
 # BP算法的缺点
 
 虽然传统的BP算法，理论上可以支持任意深度的神经网络。然而实际使用中，却很少能支持3层以上的神经网络。
@@ -222,22 +248,4 @@ $$f(x) = \max(0, x)$$
 $$f(x) = \ln(1 + e^x)$$
 
 除此之外，ReLU函数族还包括Leaky ReLU、PReLU、RReLU、ELU等。
-
-# Dropout
-
-Dropout是神经网络中解决过拟合问题的一种常见方法。
-
-它的具体做法是：
-
-![](/images/article/DropOut.png)
-
-1.每次训练时，随机隐藏部分隐层神经元。
-
-2.根据样本值，修改未隐藏的神经元的参数。隐藏的神经元的参数保持不变。
-
-3.下次训练时，重新随机选择需要隐藏的神经元。
-
-由于神经网络的非线性，Dropout的理论证明尚属空白，这里只有一些直观解释。
-
-1.dropout掉不同的隐藏神经元就类似在训练不同的网络，整个dropout过程就相当于对很多个不同的神经网络取平均。而不同的网络产生不同的过拟合，一些互为“反向”的拟合相互抵消就可以达到整体上减少过拟合。这实际上就是bagging的思想。
 

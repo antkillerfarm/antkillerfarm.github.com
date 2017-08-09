@@ -278,6 +278,14 @@ https://mp.weixin.qq.com/s/GUUkXrB1iyg4rQbBtICq6A
 
 通过NMT训练的通用语境词向量：NLP中的预训练模型？
 
+https://mp.weixin.qq.com/s/62b7kK0StmwTP_DGusE0MA
+
+MIT自然语言处理数据集和语料库
+
+https://mp.weixin.qq.com/s/GSHk-otPeyGZN5xRNehAyw
+
+KBQA从入门到放弃—入门篇
+
 # Javascript在客户端的使用
 
 Javascript在服务器前端的成功，促使人们思考其在客户端的使用。
