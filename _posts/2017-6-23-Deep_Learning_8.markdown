@@ -1,10 +1,39 @@
 ---
 layout: post
-title:  深度学习（八）——fine-tuning, 模型压缩, 依存分析
+title:  深度学习（八）——fine-tuning, 模型压缩
 category: theory 
 ---
 
 # GAN（续）
+
+## 如何对抗
+
+因为$$D(Y,\Theta)$$的均值，也就是L，是度量两个分布的差异程度，这就意味着，L要能够将两个分布区分开来，即L越大越好；但是我们最终的目的，是希望通过均匀分布而生成我们指定的分布，所以$$G(X,\theta)$$则希望两个分布越来越接近，即L越小越好。
+
+形式化的描述就是：
+
+$$\arg \min_G \max_D V(G,D)$$
+
+具体的做法是：
+
+### Step1
+
+随机初始化$$G(X,\theta)$$，固定它，然后生成一批Y，这时候我们要训练$$D(Y,\Theta)$$，既然L代表的是“与指定样本Z的差异”，那么，如果将指定样本Z代入L，结果应该是越小越好，而将Y代入L，结果应该是越大越好，所以
+
+$$\begin{aligned}\Theta =& \mathop{\arg\min}_{\Theta} L = \mathop{\arg\min}_{\Theta} \frac{1}{N}\sum_{i=1}^N D\Big(z_i,\Theta\Big)\\ 
+\Theta =& \mathop{\arg\max}_{\Theta} L = \mathop{\arg\max}_{\Theta} \frac{1}{M}\sum_{i=1}^M D\Big(y_i,\Theta\Big)\end{aligned}$$
+
+然而有两个目标并不容易平衡，所以干脆都取同样的样本数B（一个batch），然后一起训练就好：
+
+$$\begin{aligned}\Theta =& \mathop{\arg\min}_{\Theta} L_1\\ 
+=&\mathop{\arg\min}_{\Theta} \frac{1}{B}\sum_{i=1}^B\left[D\Big(z_i,\Theta\Big)-D\Big(y_i,\Theta\Big)\right]\end{aligned}$$
+
+### Step2
+
+$$G(X,\theta)$$希望它生成的样本越接近真实样本越好，因此这时候把$$\Theta$$固定，只训练$$\theta$$让L越来越小：
+
+$$\begin{aligned}\theta =& \mathop{\arg\min}_{\theta} L_2\\ 
+=&\mathop{\arg\min}_{\theta} \frac{1}{B}\sum_{i=1}^B\left[D\Big(G(x_i,\theta),\Theta\Big)\right]\end{aligned}$$
 
 ## Lipschitz约束
 
@@ -156,6 +185,10 @@ https://mp.weixin.qq.com/s/YLys6L9WT7eCC-xGr1j0Iw
 
 带多分类判别器的GAN模型
 
+https://mp.weixin.qq.com/s/0tTLotV-8w2j3VdkH-qjCQ
+
+让机器告诉你故事的结局应该是什么：利用GAN进行故事型常识阅读理解
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
@@ -262,42 +295,5 @@ https://www.zhihu.com/question/50519680
 
 《Articulatory and Spectrum Features Integration using Generalized Distillation Framework》
 
-# 依存分析
-
-## 概况
-
-Dependency Parsing是NLP领域的一项重要工作。
-
-![](/images/article/dependency_parsing.png)
-
-依存分析的基本目标是**对一句话构建一个表达词与词之间依赖关系的语法树**，如上图所示。
-
-## 传统方法
-
-这里以2003年提出的Greedy transition-based parsing算法为例，介绍一下依存分析的传统做法。
-
-![](/images/article/tbp.png)
-
-![](/images/article/tbp_2.png)
-
-上图演示了ROOT结点是如何一步步“吃”进词语（即Shift操作），并生成依存分析树的过程。
-
-这里的每一步被称作**transition**。
-
-transition中箭头左边的部分是以ROOT为栈底的**stack**，右边的部分是待处理文本的**buffer**，**A**表示依赖关系树。
-
-stack+buffer+A构成了一个**configuration**。GTBP算法的难点，在于如何根据configuration，确定下一步的transition。这在传统做法中，通常是一堆文法规则，或者特征的分类。
-
-## 依存分析的准确度指标
-
-![](/images/article/dependency_accuracy.png)
-
-依存分析的准确度指标主要有UAS和LAS两种。
-
-上图是某句话的依存分析结果。其中Gold表示正确答案，而Parsed表示算法的计算结果。结果的第二列是依存结点，0表示ROOT；第4列是单词的词性。
-
-Unlabeled attachment score是指依存结点是否正确。以上图中的例子为例，就是4/5=80%。
-
-Labeled	attachment score不仅考虑依存结点是否正确，还考虑词性是否正确。用样以上图为例，则是2/5=40%。
 
 

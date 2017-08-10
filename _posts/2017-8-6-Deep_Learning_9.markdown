@@ -1,10 +1,46 @@
 ---
 layout: post
-title:  深度学习（九）——深度强化学习, CTC
+title:  深度学习（九）——依存分析, 深度强化学习, CTC
 category: theory 
 ---
 
-# 依存分析（续）
+# 依存分析
+
+## 概况
+
+Dependency Parsing是NLP领域的一项重要工作。
+
+![](/images/article/dependency_parsing.png)
+
+依存分析的基本目标是**对一句话构建一个表达词与词之间依赖关系的语法树**，如上图所示。
+
+## 传统方法
+
+这里以2003年提出的Greedy transition-based parsing算法为例，介绍一下依存分析的传统做法。
+
+![](/images/article/tbp.png)
+
+![](/images/article/tbp_2.png)
+
+上图演示了ROOT结点是如何一步步“吃”进词语（即Shift操作），并生成依存分析树的过程。
+
+这里的每一步被称作**transition**。
+
+transition中箭头左边的部分是以ROOT为栈底的**stack**，右边的部分是待处理文本的**buffer**，**A**表示依赖关系树。
+
+stack+buffer+A构成了一个**configuration**。GTBP算法的难点，在于如何根据configuration，确定下一步的transition。这在传统做法中，通常是一堆文法规则，或者特征的分类。
+
+## 依存分析的准确度指标
+
+![](/images/article/dependency_accuracy.png)
+
+依存分析的准确度指标主要有UAS和LAS两种。
+
+上图是某句话的依存分析结果。其中Gold表示正确答案，而Parsed表示算法的计算结果。结果的第二列是依存结点，0表示ROOT；第4列是单词的词性。
+
+Unlabeled attachment score是指依存结点是否正确。以上图中的例子为例，就是4/5=80%。
+
+Labeled	attachment score不仅考虑依存结点是否正确，还考虑词性是否正确。用样以上图为例，则是2/5=40%。
 
 ## 深度方法
 
@@ -50,6 +86,10 @@ Output layer是一个softmax的多分类层，每个分类对应一个transition
 
 《Pointer Sentinel Mixture Models》
 
+https://www.zhihu.com/question/46272554
+
+如何评价SyntaxNet？
+
 ## NLP的女学霸们
 
 http://cs.stanford.edu/people/danqi/
@@ -67,6 +107,16 @@ https://homes.cs.washington.edu/~luheng/
 ![](/images/article/Convolutional_Sequence_to_Sequence_Learning.png)
 
 卷积本质上是一个局部运算。对词向量的卷积，实际上等效于n-gram的词袋模型。
+
+参见：
+
+http://www.jeyzhang.com/cnn-apply-on-modelling-sentence.html
+
+卷积神经网络(CNN)在句子建模上的应用
+
+https://mp.weixin.qq.com/s/hGGT61frDfm-PQHjSnI3Tw
+
+自然语言处理中CNN模型几种常见的Max Pooling操作
 
 ## TWE
 
@@ -156,6 +206,10 @@ https://zhuanlan.zhihu.com/p/21498750
 
 深度强化学习导引
 
+https://mp.weixin.qq.com/s/RnUWHa6QzgJbE_XqLeAQmg
+
+深度强化学习，决策与控制
+
 # CTC
 
 Connectionist Temporal Classification，是一种改进的RNN模型。它主要解决的是时序模型中，输入数大于输出数，输入输出如何对齐的问题。
@@ -209,4 +263,16 @@ https://zhuanlan.zhihu.com/p/21344595
 https://mp.weixin.qq.com/s/zEqgDh6_fnDgXEI8MC9cmg
 
 端对端的深度卷积神经网络在语音识别中的应用
+
+# WFST
+
+Weighted-Finite-State-Transducer
+
+https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/ParallelizingWFSTSpeechDecoders.ICASSP2016.pdf
+
+PARALLELIZING WFST SPEECH DECODERS
+
+http://www.cs.nyu.edu/~mohri/pub/csl01.pdf
+
+Weighted Finite-State Transducers in Speech Recognition
 

@@ -10,15 +10,43 @@ category: theory
 
 ![](/images/article/rcnn.png)
 
-候选区域生成：一张图像生成1K~2K个候选区域 （采用Selective Search 方法）。
+RCNN算法分为4个步骤：
+
+候选区域生成：一张图像生成1K~2K个候选区域（采用Selective Search方法）。
 
 特征提取：对每个候选区域，使用深度卷积网络提取特征（CNN）。
 
-类别判断：特征送入每一类的SVM 分类器，判别是否属于该类。
+类别判断：特征送入每一类的SVM分类器，判别是否属于该类。
 
 位置精修：使用回归器精细修正候选框位置。
 
-参考：
+## Selective Search
+
+论文：
+
+https://www.koen.me/research/pub/uijlings-ijcv2013-draft.pdf
+
+Selective Search for Object Recognition
+
+Selective Search的主要思想:
+
+1.使用一种过分割手段，将图像分割成小区域 (1k~2k 个)。
+
+2.查看现有小区域，按照合并规则合并可能性最高的相邻两个区域。重复直到整张图像合并成一个区域位置。
+
+3.输出所有曾经存在过的区域，所谓候选区域。
+
+其中合并规则如下： 优先合并以下四种区域：
+
+1.颜色（颜色直方图）相近的 。
+
+2.纹理（梯度直方图）相近的 。
+
+3.合并后总面积小的：保证合并操作的尺度较为均匀，避免一个大区域陆续“吃掉”其他小区域 （例：设有区域a-b-c-d-e-f-g-h。较好的合并方式是：ab-cd-ef-gh -> abcd-efgh -> abcdefgh。 不好的合并方法是：ab-c-d-e-f-g-h ->abcd-e-f-g-h ->abcdef-gh -> abcdefgh）
+
+4.合并后，总面积在其BBOX中所占比例大的：保证合并后形状规则。
+
+## 参考
 
 https://zhuanlan.zhihu.com/p/23006190
 
@@ -254,32 +282,4 @@ $$L=\frac{1}{M}\sum_{i=1}^M D\Big(y_i,\Theta\Big)$$
 
 这里的神经网络$$D(Y,\Theta)$$，实际上就是GAN的另一个主角——**鉴别者**。这里的D是**Discriminator**的意思。
 
-## 如何对抗
-
-因为$$D(Y,\Theta)$$的均值，也就是L，是度量两个分布的差异程度，这就意味着，L要能够将两个分布区分开来，即L越大越好；但是我们最终的目的，是希望通过均匀分布而生成我们指定的分布，所以$$G(X,\theta)$$则希望两个分布越来越接近，即L越小越好。
-
-形式化的描述就是：
-
-$$\arg \min_G \max_D V(G,D)$$
-
-具体的做法是：
-
-### Step1
-
-随机初始化$$G(X,\theta)$$，固定它，然后生成一批Y，这时候我们要训练$$D(Y,\Theta)$$，既然L代表的是“与指定样本Z的差异”，那么，如果将指定样本Z代入L，结果应该是越小越好，而将Y代入L，结果应该是越大越好，所以
-
-$$\begin{aligned}\Theta =& \mathop{\arg\min}_{\Theta} L = \mathop{\arg\min}_{\Theta} \frac{1}{N}\sum_{i=1}^N D\Big(z_i,\Theta\Big)\\ 
-\Theta =& \mathop{\arg\max}_{\Theta} L = \mathop{\arg\max}_{\Theta} \frac{1}{M}\sum_{i=1}^M D\Big(y_i,\Theta\Big)\end{aligned}$$
-
-然而有两个目标并不容易平衡，所以干脆都取同样的样本数B（一个batch），然后一起训练就好：
-
-$$\begin{aligned}\Theta =& \mathop{\arg\min}_{\Theta} L_1\\ 
-=&\mathop{\arg\min}_{\Theta} \frac{1}{B}\sum_{i=1}^B\left[D\Big(z_i,\Theta\Big)-D\Big(y_i,\Theta\Big)\right]\end{aligned}$$
-
-### Step2
-
-$$G(X,\theta)$$希望它生成的样本越接近真实样本越好，因此这时候把$$\Theta$$固定，只训练$$\theta$$让L越来越小：
-
-$$\begin{aligned}\theta =& \mathop{\arg\min}_{\theta} L_2\\ 
-=&\mathop{\arg\min}_{\theta} \frac{1}{B}\sum_{i=1}^B\left[D\Big(G(x_i,\theta),\Theta\Big)\right]\end{aligned}$$
 

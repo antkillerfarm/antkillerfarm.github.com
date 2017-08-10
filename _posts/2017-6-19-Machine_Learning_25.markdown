@@ -226,5 +226,24 @@ https://mp.weixin.qq.com/s/0Q-Kg6pNVRl3tqv8-wH-bg
 
 Facebook开源史上最大星际争霸AI研究数据集
 
+https://mp.weixin.qq.com/s/_5tyt7pU0gIXbkmTOVEtDw
+
+嫌图片太大？！卷积神经网络轻松实现无损压缩到20%！
+
+https://mp.weixin.qq.com/s/66yXsRIeZdHfoZkJkci24w
+
+地平线黄李超开讲：深度学习和物体检测！
+
+https://mp.weixin.qq.com/s/KxQ-GRnEYEdmS2H-DHIHOg
+
+南京理工大学ICCV 2017论文：图像超分辨率模型MemNet
+
+https://mp.weixin.qq.com/s/8xSqmBbaFZ-oww4w-dOmeg
+
+吴恩达对话 Hinton、Bengio、Goodfellow
+
+https://mp.weixin.qq.com/s/KbFvs8EcEfm29zhLCPt0Iw
+
+DeepMind进军星际争霸2，谷歌Facebook打响通用AI战争
 
 

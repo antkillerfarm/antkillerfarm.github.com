@@ -100,6 +100,20 @@ Neural Network Exchange Format是Khronos制定的用于交换NN模型数据的�
 
 https://www.khronos.org/nnef
 
+## OpenCL
+
+官网：
+
+https://www.khronos.org/opencl/
+
+![](/images/article/simd_mimd.png)
+
+参考：
+
+http://blog.csdn.net/leonwei/article/details/8880012
+
+从零开始学习OpenCL开发（一）架构
+
 # Caffe
 
 Convolutional Architecture for Fast Feature Embedding是贾扬清写的一个深度学习框架。
@@ -142,6 +156,10 @@ prototxt：模板文件。定义NN中的层之类的结构。
 
 caffemodel：模型文件。训练好的模型可以放在模型文件中，以便于今后的预测。
 
+Caffe官网上有个Model Zoo，可从中获得一些经典模型的模板文件和模型文件。网址：
+
+https://github.com/BVLC/caffe/wiki/Model-Zoo
+
 ## 术语
 
 **blob**：Caffe中用于数据操作和交换的数据结构。简单来说，就是一个4维数组：number,channel,height,width。
@@ -154,11 +172,34 @@ lr_mult参数和decay_mult参数的存在，允许不同的层有不同的学习
 
 在一个卷积层中，通常会有2组lr_mult参数和decay_mult参数，其中前一组是weight参数的学习率或衰减率，而后一组是bias参数的。
 
+{% highlight txt %}
+param {
+    lr_mult: 1
+    decay_mult: 1
+}
+param {
+    lr_mult: 2
+    decay_mult: 0
+}
+{% endhighlight %}
+
+上面这组参数被实践证明，是比较work的参数。
+
+**flatten**：将n * c * h * w的blob，转换成n * (c*h*w)的结构。
+
 ## 参考
 
 https://mp.weixin.qq.com/s/-Jn4UbZ6EqRYceJqI1l16g
 
 一文简短介绍Caffe
+
+## Caffe2
+
+2017.4，贾扬清推出了全新设计的Caffe2。由于是全新设计，Caffe2和Caffe不兼容，完全可看为是一个新的DL框架。
+
+官网：
+
+https://caffe2.ai/
 
 # 推荐系统的工程细节
 
@@ -221,6 +262,8 @@ A/B测试、双盲交叉验证
 1.新用户/新商品的冷启动问题。
 
 2.马太效应问题。这在推荐算法中也叫做banana problem。原因是在美国这边的超市，几乎所有人都爱买banana，因为最便宜，也好吃也健康。所以过多的数据量可能会导致一个超市推荐算法疯狂推荐Banana给所有人。
+
+PS：NLP领域的TF-IDF算法可有效防止马太效应问题。
 
 参考：
 

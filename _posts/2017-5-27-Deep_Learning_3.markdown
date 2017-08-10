@@ -74,6 +74,10 @@ https://mp.weixin.qq.com/s/5BMU7SRQeuDg68XDcOUBZw
 
 训练集样本不平衡问题对CNN的影响
 
+https://mp.weixin.qq.com/s/p-wZ_6ZQW-zXzDqmRenNow
+
+深度学习入门：几幅手稿讲解CNN
+
 # Autoencoder
 
 Bengio在2003年的《A neural probabilistic language model》中指出，维度过高，会导致每次学习，都会强制改变大部分参数。

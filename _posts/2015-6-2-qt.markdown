@@ -159,6 +159,24 @@ Ubuntu下的安装方法是：
 
 对于可移植的python包，直接使用pip安装即可，在ubuntu官网搜也搜不到的。
 
+## IDE
+
+官方自带的IDLE，以现代IDE的观点来看，只是个精致的小玩具而已。
+
+在Anaconda出现之前，ActivePython曾是Windows平台最好的python发行版，它自带的PythonWin是个不错的IDE，但界面还是差了些，比VC6还差的远。
+
+除此之外，我还用过UliPad（2007年前后）。它是国内python的元老级人物limodou（一个70后程序员）的作品。官网：
+
+https://github.com/limodou/ulipad
+
+UliPad的界面就和其他现代IDE差不多了。
+
+最近比较流行的IDE，当属pycharm。官网：
+
+https://www.jetbrains.com/pycharm/
+
+相信熟悉Android Studio和IDEA的同学一定会觉得很亲切。没错，他们都是同一家公司的产品。
+
 ## 软件发布工具
 
 ### distutils

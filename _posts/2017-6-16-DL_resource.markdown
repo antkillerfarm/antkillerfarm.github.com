@@ -282,6 +282,10 @@ https://mp.weixin.qq.com/s/7vxJTh4IHeqUsc7IsLFLSA
 
 解密哈萨比斯投资的IPU，他们要分英伟达一杯羹
 
+https://mp.weixin.qq.com/s/B4aQp_0YvS0jyUHNLQ5rRA
+
+IBM发布新型分布式深度学习系统：结合软硬件实现当前最优性能
+
 ### 算法
 
 http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww

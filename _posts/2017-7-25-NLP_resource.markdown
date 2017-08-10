@@ -66,10 +66,6 @@ https://mp.weixin.qq.com/s/mq0PdX6oB2kr_5FyoLA4ug
 
 机器人数学考了134分，要上清华北大NLP是最大难关
 
-http://www.jeyzhang.com/cnn-apply-on-modelling-sentence.html
-
-卷积神经网络(CNN)在句子建模上的应用
-
 https://mp.weixin.qq.com/s/uRR4Vh3PC8SFw-PD9FQLpw
 
 命名实体识别（NER）的二三事
@@ -238,10 +234,6 @@ https://mp.weixin.qq.com/s/eq1I92rjIAWEpYw-1fEHeQ
 
 从Facebook AI Research开源fastText谈起文本分类：词向量模性、深度表征和全连接
 
-https://mp.weixin.qq.com/s/hGGT61frDfm-PQHjSnI3Tw
-
-自然语言处理中CNN模型几种常见的Max Pooling操作
-
 https://mp.weixin.qq.com/s/PGj1IjLPz-RmTaLbcnYNCw
 
 自然语言处理领军人刘兵：没有终身学习，机器不可能智能
@@ -285,6 +277,10 @@ MIT自然语言处理数据集和语料库
 https://mp.weixin.qq.com/s/GSHk-otPeyGZN5xRNehAyw
 
 KBQA从入门到放弃—入门篇
+
+http://www.jianshu.com/p/371a9dd9bba1
+
+五个入门深度学习自然语言处理资源
 
 # Javascript在客户端的使用
 
