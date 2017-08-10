@@ -282,6 +282,14 @@ http://www.jianshu.com/p/371a9dd9bba1
 
 五个入门深度学习自然语言处理资源
 
+https://mp.weixin.qq.com/s/Ks9BVr6YC-naX2-iadI78w
+
+自然语言理解-从规则到深度学习
+
+https://mp.weixin.qq.com/s/c7nXiFCI3urS0cbSUSsgYg
+
+哈工大刘挺教授：自然语言处理的十个发展趋势
+
 # Javascript在客户端的使用
 
 Javascript在服务器前端的成功，促使人们思考其在客户端的使用。

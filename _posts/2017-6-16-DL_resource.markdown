@@ -286,6 +286,10 @@ https://mp.weixin.qq.com/s/B4aQp_0YvS0jyUHNLQ5rRA
 
 IBM发布新型分布式深度学习系统：结合软硬件实现当前最优性能
 
+https://zhuanlan.zhihu.com/p/28445511
+
+浅析深度学习框架设计中的关键技术
+
 ### 算法
 
 http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww

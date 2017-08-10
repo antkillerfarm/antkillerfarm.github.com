@@ -240,10 +240,19 @@ https://mp.weixin.qq.com/s/KxQ-GRnEYEdmS2H-DHIHOg
 
 https://mp.weixin.qq.com/s/8xSqmBbaFZ-oww4w-dOmeg
 
-吴恩达对话 Hinton、Bengio、Goodfellow
+吴恩达对话Hinton、Bengio、Goodfellow
 
 https://mp.weixin.qq.com/s/KbFvs8EcEfm29zhLCPt0Iw
 
 DeepMind进军星际争霸2，谷歌Facebook打响通用AI战争
+
+https://zhuanlan.zhihu.com/p/28444154
+
+Seeta看AI：从大数据驱动到X数据驱动
+
+https://zhuanlan.zhihu.com/p/28445169
+
+毕彦超：物体识别与物体知识表征的认知神经基础
+
 
 
