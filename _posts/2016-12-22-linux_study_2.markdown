@@ -342,3 +342,29 @@ https://mp.weixin.qq.com/s/p86yvl3uAm3FXw4V9NlNoA
 
 一文带你上手Python网页抓取神器BeautifulSoup库
 
+## Sqlite
+
+Ubuntu下的安装方法是：
+
+`sudo apt-get install sqlite`
+
+Python自带了pysqlite包，用于调用sqlite。
+
+pysqlite的helloworld程序可参见：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/pysqlite-helloworld.py
+
+可以使用sqlite_bro软件包，查看sqlite数据库。安装方法：
+
+`sudo pip install sqlite_bro`
+
+## Python中的括号
+
+Python主要有三种数据类型：字典、列表、元组。其分别由花括号，中括号，小括号表示。如：
+
+字典：dic={'a':12,'b':34}
+
+列表：list=[1,2,3,4]
+
+元组：tup=(1,2,3,4)
+

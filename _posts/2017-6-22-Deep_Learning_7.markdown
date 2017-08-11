@@ -42,7 +42,7 @@ Selective Search的主要思想:
 
 2.纹理（梯度直方图）相近的 。
 
-3.合并后总面积小的：保证合并操作的尺度较为均匀，避免一个大区域陆续“吃掉”其他小区域 （例：设有区域a-b-c-d-e-f-g-h。较好的合并方式是：ab-cd-ef-gh -> abcd-efgh -> abcdefgh。 不好的合并方法是：ab-c-d-e-f-g-h ->abcd-e-f-g-h ->abcdef-gh -> abcdefgh）
+3.合并后总面积小的：保证合并操作的尺度较为均匀，避免一个大区域陆续“吃掉”其他小区域（例：设有区域a-b-c-d-e-f-g-h。较好的合并方式是：ab-cd-ef-gh -> abcd-efgh -> abcdefgh。不好的合并方法是：ab-c-d-e-f-g-h ->abcd-e-f-g-h ->abcdef-gh -> abcdefgh）
 
 4.合并后，总面积在其BBOX中所占比例大的：保证合并后形状规则。
 
@@ -51,6 +51,10 @@ Selective Search的主要思想:
 https://zhuanlan.zhihu.com/p/23006190
 
 RCNN-将CNN引入目标检测的开山之作
+
+http://www.cnblogs.com/edwardbi/p/5647522.html
+
+Tensorflow tflearn编写RCNN
 
 https://zhuanlan.zhihu.com/p/24774302
 

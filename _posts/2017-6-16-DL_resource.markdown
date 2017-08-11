@@ -418,6 +418,10 @@ https://mp.weixin.qq.com/s/1HA6XKnWpqVd8k7IIfzB7w
 
 利用卷积自编码器对图片进行降噪
 
+https://mp.weixin.qq.com/s/ObIYpiH7MLZEi5XzXdGBYg
+
+10大深度学习架构
+
 ### Other
 
 https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg

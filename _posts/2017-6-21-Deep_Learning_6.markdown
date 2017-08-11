@@ -90,6 +90,12 @@ DRN之后，学界的研究重点，由如何提升精度，转变为如何用�
 
 https://github.com/DeepScale/SqueezeNet
 
+Caffe版本
+
+https://github.com/vonclites/squeezenet
+
+TensorFlow版本
+
 SqueezeNet最大的创新点在于使用Fire Module替换大尺寸的卷积层。
 
 ![](/images/article/SqueezeNet.png)

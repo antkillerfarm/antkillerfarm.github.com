@@ -352,8 +352,8 @@ http://dmg.org/
 
 参考：
 
-http://blog.csdn.net/litaoshoujiao/article/details/8537599
-
 https://www.ibm.com/developerworks/cn/xml/x-1107xuj/
+
+PMML标准介绍及其在数据挖掘任务中的应用
 
 

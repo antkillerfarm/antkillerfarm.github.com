@@ -379,4 +379,16 @@ https://zhuanlan.zhihu.com/p/26512099
 
 tensorflow和caffe2
 
+## Slim
+
+原始的TensorFlow API由于过于简单，在实际使用中多有不便。因此TensorFlow又提供了一套Slim API，用以简化编程。和Keras这样的前端不同，Slim API可以和TensorFlow API混编。或者说两者本来就是一体的。
+
+代码：
+
+tensorflow/contrib/slim
+
+示例：
+
+https://github.com/mnuke/tf-slim-mnist
+
 

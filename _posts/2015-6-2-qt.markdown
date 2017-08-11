@@ -159,6 +159,22 @@ Ubuntu下的安装方法是：
 
 对于可移植的python包，直接使用pip安装即可，在ubuntu官网搜也搜不到的。
 
+pip的cache路径：
+
+win7：
+
+c:\用户\(你的用户名)\AppData\Local\pip\cache\
+
+linux:
+
+~/.cache/pip
+
+离线安装法：
+
+在有网络的机器上安装好相关包之后，使用如下命令可以导出相关安装包（包括依赖包）：
+
+`pip download <package name>`
+
 ## IDE
 
 官方自带的IDLE，以现代IDE的观点来看，只是个精致的小玩具而已。
@@ -257,22 +273,6 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/pygtk-he
 
 这里必须指出的是，PyGObject依赖的接口文件只有在dev包中才有。安装相关Glib项目时，一定要选择名称以-dev结尾的包。
 
-## Sqlite
-
-Ubuntu下的安装方法是：
-
-`sudo apt-get install sqlite`
-
-Python自带了pysqlite包，用于调用sqlite。
-
-pysqlite的helloworld程序可参见：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/pysqlite-helloworld.py
-
-可以使用sqlite_bro软件包，查看sqlite数据库。安装方法：
-
-`sudo pip install sqlite_bro`
-
 ## python调用GTK函数的一般规则
 
 众所周知，GTK库是用C语言编写的，其相关的文档提供的也是C函数的接口，python接口的文档相对较少，获得也不太容易。因此有必要掌握一下这方面基本的命名规则。（这里只讲方法，对深层次的调用原理不做探究。）
@@ -370,13 +370,4 @@ self.player.seek(1.0, Gst.Format.TIME, Gst.SeekFlags.FLUSH, Gst.SeekType.SET,\
 
 `c_long(Gst.CLOCK_TIME_NONE).value`
 
-## Python中的括号
-
-Python主要有三种数据类型：字典、列表、元组。其分别由花括号，中括号，小括号表示。如：
-
-字典：dic={'a':12,'b':34}
-
-列表：list=[1,2,3,4]
-
-元组：tup=(1,2,3,4)
 

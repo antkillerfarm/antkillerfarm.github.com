@@ -278,6 +278,10 @@ https://mp.weixin.qq.com/s/GSHk-otPeyGZN5xRNehAyw
 
 KBQA从入门到放弃—入门篇
 
+https://mp.weixin.qq.com/s/QjGOrv6dCe6tJ_LFcFDF6g
+
+揭开知识库问答KB-QA的面纱2·语义解析篇
+
 http://www.jianshu.com/p/371a9dd9bba1
 
 五个入门深度学习自然语言处理资源

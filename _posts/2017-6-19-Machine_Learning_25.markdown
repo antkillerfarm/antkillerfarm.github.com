@@ -254,5 +254,13 @@ https://zhuanlan.zhihu.com/p/28445169
 
 毕彦超：物体识别与物体知识表征的认知神经基础
 
+https://mp.weixin.qq.com/s/WTRD3wRQ_wSXjjlt7jiwSg
+
+CommandCenter：基于暴雪官方API的星际争霸2 AI Bot
+
+https://mp.weixin.qq.com/s/SBppyDBWqQUariiHbpaq1w
+
+实时深度学习的推理加速和连续学习
+
 
 
