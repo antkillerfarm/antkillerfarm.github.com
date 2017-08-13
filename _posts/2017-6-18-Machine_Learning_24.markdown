@@ -302,3 +302,6 @@ https://mp.weixin.qq.com/s/bGudwxu8c0LIxv1h64qZtQ
 
 Python3实现决策树算法
 
+https://mp.weixin.qq.com/s?__biz=MzA3MTM3NTA5Ng==&mid=2651056396&idx=1&sn=dabbda2c433e54a2bad506fc13bfd743
+
+<<战狼Ⅱ>>豆瓣十二万影评浅析

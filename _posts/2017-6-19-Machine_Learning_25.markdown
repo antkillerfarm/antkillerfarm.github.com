@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十五）——机器学习语录
+title:  机器学习（二十五）——机器学习语录, OpenVX
 category: theory 
 ---
 
@@ -262,5 +262,85 @@ https://mp.weixin.qq.com/s/SBppyDBWqQUariiHbpaq1w
 
 实时深度学习的推理加速和连续学习
 
+https://mp.weixin.qq.com/s/VAEH_241IAuEH5S6H6ep5w
 
+UC伯克利提出新型视觉描述系统，物体描述无需大量样本
+
+https://mp.weixin.qq.com/s/v_TLYYq6cFWuwR9tXM8m-A
+
+如何通过CRF-RNN模型实现图像语义分割任务
+
+# OpenVX
+
+## Khronos Group
+
+Khronos Group是一个行业组织，创建开放标准以实现并行计算、图形、视觉、传感处理和动态媒体在各种平台和设备上的编写和加速。Khronos标准包括 Vulkan, OpenGL, OpenGL ES, WebGL, OpenCL, SPIR, SYCL, WebCL, OpenVX, EGL, OpenMAX, OpenVG, OpenSL ES, StreamInput, COLLADA 和 glTF。
+
+简单来说，Khronos的任务就是创建一个统一的硬件和软件之间的API，这样无论软件厂商，还是硬件厂商，都能各行其道，互不干扰了。
+
+## 概述
+
+官网：
+
+https://www.khronos.org/openvx/
+
+![](/images/article/openvx.png)
+
+上图给出了OpenVX的主要用途，以及它和Khronos其他兄弟项目之间的关系。
+
+OpenVX本身也是一个系列标准。它包括：
+
+**OpenVX**：一个传统的CV接口。提供包括直方图、Harris、Canny等特征算子的API。
+
+**OpenVX SC（Safety Critical）**：安全版的OpenVX。
+
+**OpenVX NN Extension**：专门用于提供NN加速方面的API。目前主要集中于CNN的加速，即卷积、池化等操作，对其他NN支持有限。此外，这些API主要用于预测，而非训练。
+
+Khronos官方提供了一个OpenVX的软件参考实现，用于软硬件厂商的测试工作。
+
+相关API文档和参考实现（sample code）参见：
+
+https://www.khronos.org/registry/OpenVX/
+
+## NNEF
+
+Neural Network Exchange Format是Khronos制定的用于交换NN模型数据的数据格式标准。
+
+官网：
+
+https://www.khronos.org/nnef
+
+## OpenCL
+
+官网：
+
+https://www.khronos.org/opencl/
+
+按照Michael J. Flynn的分类方法，计算机的体系结构可分为如下四类：
+
+**Single instruction stream single data stream (SISD)**
+
+**Single instruction stream, multiple data streams (SIMD)**
+
+**Multiple instruction streams, single data stream (MISD)**
+
+**Multiple instruction streams, multiple data streams (MIMD)**
+
+![](/images/article/simd_mimd.png)
+
+原图地址：
+
+https://en.wikipedia.org/wiki/Flynn%27s_taxonomy
+
+CPU通常是SISD和SIMD的，而GPU则是MISD的，超级计算机则是MIMD的。
+
+OpenCL是一个硬件中立标准，原则上和计算机的体系结构无关。当然现实中，我们主要使用GPU进行运算加速。
+
+和OpenGL、OpenVX的专用性不同，OpenCL主要定位于通用数学运算。OpenGL年代久远也就罢了。对于像OpenVX这样的新标准，有的时候其内部实现也有可能依赖于OpenCL。毕竟无论哪个领域的专用计算，最终都可以分解为基本的数学运算。
+
+参考：
+
+http://blog.csdn.net/leonwei/article/details/8880012
+
+从零开始学习OpenCL开发（一）架构
 

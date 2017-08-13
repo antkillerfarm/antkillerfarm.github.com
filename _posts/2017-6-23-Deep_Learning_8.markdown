@@ -1,227 +1,253 @@
 ---
 layout: post
-title:  深度学习（八）——fine-tuning, 模型压缩
+title:  深度学习（八）——目标检测, RCNN, 模型压缩
 category: theory 
 ---
 
-# GAN（续）
+# 目标检测
 
-## 如何对抗
+## 概述（续）
 
-因为$$D(Y,\Theta)$$的均值，也就是L，是度量两个分布的差异程度，这就意味着，L要能够将两个分布区分开来，即L越大越好；但是我们最终的目的，是希望通过均匀分布而生成我们指定的分布，所以$$G(X,\theta)$$则希望两个分布越来越接近，即L越小越好。
-
-形式化的描述就是：
-
-$$\arg \min_G \max_D V(G,D)$$
-
-具体的做法是：
-
-### Step1
-
-随机初始化$$G(X,\theta)$$，固定它，然后生成一批Y，这时候我们要训练$$D(Y,\Theta)$$，既然L代表的是“与指定样本Z的差异”，那么，如果将指定样本Z代入L，结果应该是越小越好，而将Y代入L，结果应该是越大越好，所以
-
-$$\begin{aligned}\Theta =& \mathop{\arg\min}_{\Theta} L = \mathop{\arg\min}_{\Theta} \frac{1}{N}\sum_{i=1}^N D\Big(z_i,\Theta\Big)\\ 
-\Theta =& \mathop{\arg\max}_{\Theta} L = \mathop{\arg\max}_{\Theta} \frac{1}{M}\sum_{i=1}^M D\Big(y_i,\Theta\Big)\end{aligned}$$
-
-然而有两个目标并不容易平衡，所以干脆都取同样的样本数B（一个batch），然后一起训练就好：
-
-$$\begin{aligned}\Theta =& \mathop{\arg\min}_{\Theta} L_1\\ 
-=&\mathop{\arg\min}_{\Theta} \frac{1}{B}\sum_{i=1}^B\left[D\Big(z_i,\Theta\Big)-D\Big(y_i,\Theta\Big)\right]\end{aligned}$$
-
-### Step2
-
-$$G(X,\theta)$$希望它生成的样本越接近真实样本越好，因此这时候把$$\Theta$$固定，只训练$$\theta$$让L越来越小：
-
-$$\begin{aligned}\theta =& \mathop{\arg\min}_{\theta} L_2\\ 
-=&\mathop{\arg\min}_{\theta} \frac{1}{B}\sum_{i=1}^B\left[D\Big(G(x_i,\theta),\Theta\Big)\right]\end{aligned}$$
-
-## Lipschitz约束
-
-稍微思考一下，我们就发现，问题还没完。我们目前还没有对D做约束，不难发现，无约束的话Loss基本上会直接跑到负无穷去了～
-
-最简单的方案就是采用Lipschitz约束：
-
-$$\| D(y,\theta) - D(y' , \theta) \| \leq C \|y-y'\|$$
-
-也可写作：
-
-$$\left\| \frac{\partial D(y,\Theta)}{\partial y}\right\| \leq C$$
-
->注：Rudolf Otto Sigismund Lipschitz，1832～1903，德国数学家，先后就读于柯尼斯堡大学和柏林大学，导师Dirichlet。波恩大学教授。
-
-## WGAN
-
-KL散度和JS散度由于不是距离，数学特性并不够好。因此，Martín Arjovsky于2017年1月，提出了Wasserstein GAN。
-
-其中的一项改进就是使用Wasserstein距离替代KL散度和JS散度。Wasserstein距离的定义参看《机器学习（二十）》。
-
-WGAN极大程度的改善了GAN训练困难的问题，成为当前GAN研究的主流。
+RCNN系列算法还是将物体检测分为两个步骤。现在还有一些工作是端到端(end-to-end)的物体检测，比如说YOLO(You Only Look Once: Unified, Real-Time Object Detection)和SSD(SSD: Single Shot MultiBox Detector)这样的算法。这两个算法号称和faster RCNN精度相似但速度更快。物体检测正负样本极端非均衡，two-stage cascade可以更好的应对非均衡。端到端学习是否可以超越faster RCNN还需要更多研究实验。
 
 参考：
 
-https://zhuanlan.zhihu.com/p/25071913
+https://www.zhihu.com/question/34223049
 
-令人拍案叫绝的Wasserstein GAN
+从近两年的CVPR会议来看，目标检测的研究方向是怎么样的？
 
-## GAN的发展
+https://zhuanlan.zhihu.com/p/21533724
 
-最早的GAN出现在2014年6月，但直到2015年底，也只有5个变种，发展并不迅速。
+对话CVPR2016：目标检测新进展
 
-2016年，GAN开始发力，年底时已有52个变种。2017年6月底，更达到142个变种。
+https://mp.weixin.qq.com/s/r9tXvKIN-eqKW_65yFyOew
+
+谷歌开源TensorFlow Object Detection API
+
+https://mp.weixin.qq.com/s/-PeXMU_gkcT5YnMcLoaKag
+
+CVPR清华大学研究，高效视觉目标检测框架RON
+
+https://mp.weixin.qq.com/s/_cOuhToH8KvZldNfraumSQ
+
+什么促使了候选目标的有效检测？
+
+## 进化史
+
+DPM(2007)->RCNN(2014)->Fast RCNN->Faster RCNN
+
+![](/images/article/rcnn_2.png)
 
 参考：
 
-https://github.com/hindupuravinash/the-gan-zoo
+http://blog.csdn.net/ttransposition/article/details/12966521
 
-GAN的各种变种。
+DPM(Deformable Parts Model)--原理
+
+# RCNN
+
+《深度学习（五）》中提到的AlexNet、VGG、GoogleNet主要用于图片分类。而这里介绍的RCNN(Regions with CNN)主要用于目标检测。
+
+## 车牌识别的另一种思路
+
+在介绍RCNN之前，我首先介绍一下2013年的一个车牌识别项目的解决思路。
+
+车牌识别差不多是深度学习应用到CV领域之前，CV领域少数几个达到实用价值的应用之一。国内在2010～2015年前后，有许多公司都做过类似的项目。其产品更是随处可见，很多停车场已经利用该技术，自动识别车辆信息。
+
+车牌识别的难度不高——无论是目标字符集，还是目标字体，都很有限。但也有它的技术难点：
+
+1.计算资源有限。通常就是PC，甚至嵌入式设备，不可能用大规模集群来计算。
+
+2.有实时性的要求，通常处理时间不超过3s。
+
+因此，如何快速的在图片中找到车牌所在区域，就成为了关键问题。
+
+常规的做法，通常是根据颜色、形状找到车牌所在区域，但鲁棒性不佳。后来，有个同事提出了改进方法：
+
+1.在整个图片中，基于haar算子，寻找疑似数字的区域。
+
+2.将数字聚集的区域设定为疑似车牌所在区域。
+
+3.投入更大运算量，以识别车牌上的文字。（这一步是常规做法。）
+
+## RCNN的基本原理
+
+RCNN是Ross Girshick于2014年提出的深度模型。
+
+>注：Ross Girshick（网名：rbg），芝加哥大学博士（2012），Facebook研究员。他和何恺明被誉为CV界深度学习的**双子新星**。   
+>个人主页：http://www.rossgirshick.info/
+
+论文：
+
+《Rich feature hierarchies for accurate object detection and semantic segmentation》
+
+RCNN相对传统方法的改进：
+
+**速度**：经典的目标检测算法使用滑动窗法依次判断所有可能的区域。RCNN则(采用Selective Search方法)预先提取一系列较可能是物体的候选区域，之后仅在这些候选区域上(采用CNN)提取特征，进行判断。
+
+**训练集**：经典的目标检测算法在区域中提取人工设定的特征。RCNN则采用深度网络进行特征提取。
+
+使用两个数据库：
+
+一个较大的识别库（ImageNet ILSVC 2012）：标定每张图片中物体的类别。一千万图像，1000类。
+
+一个较小的检测库（PASCAL VOC 2007）：标定每张图片中，物体的类别和位置，一万图像，20类。
+
+RCNN使用识别库进行预训练得到CNN（有监督预训练），而后用检测库调优参数，最后在检测库上评测。
+
+## RCNN算法的基本流程
+
+![](/images/article/rcnn.png)
+
+RCNN算法分为4个步骤：
+
+候选区域生成：一张图像生成1K~2K个候选区域（采用Selective Search方法）。
+
+特征提取：对每个候选区域，使用深度卷积网络提取特征（CNN）。
+
+类别判断：特征送入每一类的SVM分类器，判别是否属于该类。
+
+位置精修：使用回归器精细修正候选框位置。
+
+## Selective Search
+
+论文：
+
+https://www.koen.me/research/pub/uijlings-ijcv2013-draft.pdf
+
+Selective Search for Object Recognition
+
+Selective Search的主要思想:
+
+1.使用一种过分割手段，将图像分割成小区域 (1k~2k 个)。
+
+2.查看现有小区域，按照合并规则合并可能性最高的相邻两个区域。重复直到整张图像合并成一个区域位置。
+
+3.输出所有曾经存在过的区域，所谓候选区域。
+
+其中合并规则如下： 优先合并以下四种区域：
+
+1.颜色（颜色直方图）相近的 。
+
+2.纹理（梯度直方图）相近的 。
+
+3.合并后总面积小的：保证合并操作的尺度较为均匀，避免一个大区域陆续“吃掉”其他小区域（例：设有区域a-b-c-d-e-f-g-h。较好的合并方式是：ab-cd-ef-gh -> abcd-efgh -> abcdefgh。不好的合并方法是：ab-c-d-e-f-g-h ->abcd-e-f-g-h ->abcdef-gh -> abcdefgh）
+
+4.合并后，总面积在其BBOX中所占比例大的：保证合并后形状规则。
+
+![](/images/article/rcnn_3.png)
 
 ## 参考
 
-https://mp.weixin.qq.com/s/xa3F3kCprE6DEQclas4umg
+https://zhuanlan.zhihu.com/p/23006190
 
-GAN的数学原理
+RCNN-将CNN引入目标检测的开山之作
 
-http://www.jianshu.com/p/e2d2d7cbbe49
+http://www.cnblogs.com/edwardbi/p/5647522.html
 
-50行代码实现GAN
+Tensorflow tflearn编写RCNN
 
-http://mp.weixin.qq.com/s/bzwG0QxnP2drqS4RwcZlBg
+https://zhuanlan.zhihu.com/p/24774302
 
-微软详解：到底什么是生成式对抗网络GAN？
+SPPNet-引入空间金字塔池化改进RCNN
 
-https://mp.weixin.qq.com/s/oCDlhzjOYTIhsr5JuoRCJQ
+https://zhuanlan.zhihu.com/p/24780395
 
-IRGAN：大一统信息检索模型的博弈竞争
+Fast R-CNN
 
-https://mp.weixin.qq.com/s/QacQCrjh3KmrQSMp-G_rEg
+https://zhuanlan.zhihu.com/p/24916624
 
-贝叶斯生成对抗网络
+Faster R-CNN
 
-https://zhuanlan.zhihu.com/p/24897387
+https://zhuanlan.zhihu.com/p/24916786
 
-GAN的基本原理、应用和走向
+图解YOLO
 
-https://mp.weixin.qq.com/s/E28lA-fcAQ6Sp6Qv64H3TQ
+https://zhuanlan.zhihu.com/p/24954433
 
-GAN in NLP
+SSD
 
-https://mp.weixin.qq.com/s/7-oHa-8Q8ThcctaVOZFfew
+https://zhuanlan.zhihu.com/p/25167153
 
-Facebook创意生成网络CAN，比GAN更有创造力
+YOLO2
 
-https://mp.weixin.qq.com/s/aSQ2-QxbToGF0ROyjxw2yw
+https://www.zhihu.com/question/35887527
 
-萌物生成器：如何使用四种GAN制造猫图
+如何评价rcnn、fast-rcnn和faster-rcnn这一系列方法？
 
-https://mp.weixin.qq.com/s/YUMIL-f019vKpQ84mKS-8g
+http://blog.csdn.net/tangwei2014/article/details/50915317
 
-这篇TensorFlow实例教程文章告诉你GANs为何引爆机器学习？
+论文阅读笔记：You Only Look Once: Unified, Real-Time Object Detection
 
-http://mp.weixin.qq.com/s/UkZdUcdz7h4DqcyjSbNncw
+http://blog.csdn.net/shenxiaolu1984/article/details/51066975
 
-zi2zi：用条件生成对抗网络玩转中文书法，绝妙汉字字体自动生成
+RCNN算法详解
 
-http://blog.csdn.net/v_JULY_v/article/details/52683959
+http://blog.csdn.net/shenxiaolu1984/article/details/51036677
 
-没GPU也能玩梵高作画：Ubuntu tensorflow CPU版
+Fast RCNN算法详解
 
-https://github.com/cysmith/neural-style-tf
+http://blog.csdn.net/shenxiaolu1984/article/details/51152614
 
-TensorFlow (Python API) implementation of Neural Style.这个项目实现了两张图片的画风融合，非常牛。
+Faster RCNN算法详解
 
-https://github.com/jinfagang/pytorch_style_transfer
+https://mp.weixin.qq.com/s/XorPkuIdhRNI1zGLwg-55A
 
-这个和上面的一样，不过是用pytorch实现的。
+斯坦福新深度学习系统 NoScope：视频对象检测快1000倍
 
-http://mp.weixin.qq.com/s/zNmJuevHaagKbyGFdKTwoQ
+https://mp.weixin.qq.com/s/XbgmLmlt5X4TX5CP59gyoA
 
-tensorflow实现基于深度学习的图像补全
+目标检测算法精彩集锦
 
-https://zhuanlan.zhihu.com/p/25204020
+https://mp.weixin.qq.com/s/BgTc1SE2IzNH27OC2P2CFg
 
-条条大路通罗马LS-GAN：把GAN建立在Lipschitz密度上
+CVPR-I
 
-https://zhuanlan.zhihu.com/p/27199954
+https://mp.weixin.qq.com/s/qMdnp9ZdlYIja2vNEKuRNQ
 
-用GAN去除动作片中的马赛克和衣服
+CVPR—II
 
-https://zhuanlan.zhihu.com/p/27012520
+https://mp.weixin.qq.com/s/tc1PsIoF1RN1sx_IFPmtWQ
 
-从头开始GAN
+CVPR—III
 
-https://mp.weixin.qq.com/s/Qzlg1MzRT3josy2RJpQSVg
+https://mp.weixin.qq.com/s/bpCn2nREHzazJYq6B9vMHg
 
-Image to Image Translation Using GAN
+目标识别算法的进展
 
-https://mp.weixin.qq.com/s/AswdyjPeKbX7yhAPloP2og
+https://mp.weixin.qq.com/s/YzxaS4KQmpbUSnyOwccn4A
 
-基于对抗学习的生成式对话模型
+基于深度学习的目标检测技术进展与展望
 
-https://mp.weixin.qq.com/s/uyn41vKKoptXPZXBP2vVDQ
+https://mp.weixin.qq.com/s/VKQufVUQ3TP5m7_2vOxnEQ
 
-生成对抗网络（GAN）之MNIST数据生成
+通过Faster R-CNN实现当前最佳的目标计数
 
-https://mp.weixin.qq.com/s/sxa0BfXtylHXzjq0YBn-Kg
+## YOLO
 
-伯克利图像迁移cycleGAN，猫狗互换效果感人
+YOLO: Real-Time Object Detection，是一个基于神经网络的实时对象检测软件。
 
-https://mp.weixin.qq.com/s/aMfPBl6E5SxckQdSAGTkBg
+官网：
 
-Pytorch教程：Facebook发布的LR-GAN如何生成图像？
-
-https://zhuanlan.zhihu.com/p/28342644
-
-CycleGAN的原理与实验详解
-
-https://mp.weixin.qq.com/s/YXWTslQXIKVihBb2Bgtafg
-
-GAN在信息检索领域的应用
-
-http://mp.weixin.qq.com/s/21CN4hAA6p7ZjWsO1sT2rA
-
-一文看懂生成式对抗网络GANs：介绍指南及前景展望
-
-https://mp.weixin.qq.com/s/YLys6L9WT7eCC-xGr1j0Iw
-
-带多分类判别器的GAN模型
-
-https://mp.weixin.qq.com/s/0tTLotV-8w2j3VdkH-qjCQ
-
-让机器告诉你故事的结局应该是什么：利用GAN进行故事型常识阅读理解
-
-# fine-tuning
-
-fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
-
-举个例子，假设今天老板给你一个新的数据集，让你做一下图片分类，这个数据集是关于Flowers的。问题是，数据集中flower的类别很少，数据集中的数据也不多，你发现从零训练开始训练CNN的效果很差，很容易过拟合。怎么办呢，于是你想到了使用Transfer Learning，用别人已经训练好的Imagenet的模型来做。
-
-由于ImageNet数以百万计带标签的训练集数据，使得如CaffeNet之类的预训练的模型具有非常强大的泛化能力，这些预训练的模型的中间层包含非常多一般性的视觉元素，我们只需要对他的后几层进行微调，再应用到我们的数据上，通常就可以得到非常好的结果。最重要的是，**在目标任务上达到很高performance所需要的数据的量相对很少**。
-
-虽然从理论角度尚无法完全解释fine-tuning的原理，但是还是可以给出一些直观的解释。我们知道，CNN越靠近输入端，其抽取的图像特征越原始。比如最初的一层通常只能抽取一些线条之类的元素。越上层，其特征越抽象。
-
-而现实的图像无论多么复杂，总是由简单特征拼凑而成的。因此，无论最终的分类结果差异如何巨大，其底层的图像特征却几乎一致。
+https://pjreddie.com/darknet/yolo/
 
 参考：
 
-https://zhuanlan.zhihu.com/p/22624331
+https://mp.weixin.qq.com/s/n51XtGAsaDDAatXYychXrg
 
-fine-tuning:利用已有模型训练其他数据集
+YOLO比R-CNN快1000倍，比Fast R-CNN快100倍的实时对象检测！
 
-http://www.cnblogs.com/louyihang-loves-baiyan/p/5038758.html
+## SSD
 
-Caffe fine-tuning微调网络
+论文：
 
-http://blog.csdn.net/sinat_26917383/article/details/54999868
+《SSD: Single Shot MultiBox Detector》
 
-caffe中fine-tuning模型三重天（函数详解、框架简述）+微调技巧
+参考：
 
-http://yongyuan.name/blog/layer-selection-and-finetune-for-cbir.html
+http://www.jianshu.com/p/ebebfcd274e6
 
-图像检索：layer选择与fine-tuning性能提升验证
-
-https://www.zhihu.com/question/49534423
-
-迁移学习与fine-tuning有什么区别？
+Caffe-SSD 训练自己的数据集教程
 
 # 模型压缩
 
@@ -269,31 +295,7 @@ https://www.zhihu.com/question/62068158
 
 图森科技的后两篇论文也是在Hinton论文的基础上改进的。
 
-
-
-参考：
-
-https://zhuanlan.zhihu.com/p/24337627
-
-深度压缩之蒸馏模型
-
-https://zhuanlan.zhihu.com/p/24894102
-
-《Distilling the Knowledge in a Neural Network》阅读笔记
-
-https://luofanghao.github.io/2016/07/20/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0%20%E3%80%8ADistilling%20the%20Knowledge%20in%20a%20Neural%20Network%E3%80%8B/
-
-论文笔记 《Distilling the Knowledge in a Neural Network》
-
-http://blog.csdn.net/zhongshaoyy/article/details/53582048
-
-蒸馏神经网络
-
-https://www.zhihu.com/question/50519680
-
-如何理解soft target这一做法？
+论文：
 
 《Articulatory and Spectrum Features Integration using Generalized Distillation Framework》
-
-
 

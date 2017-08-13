@@ -175,6 +175,10 @@ linux:
 
 `pip download <package name>`
 
+和apt不同，pip没有自动更新的功能，但可以手动更新：
+
+`pip install --upgrade <package name>`
+
 ## IDE
 
 官方自带的IDLE，以现代IDE的观点来看，只是个精致的小玩具而已。
@@ -273,101 +277,86 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/pygtk-he
 
 这里必须指出的是，PyGObject依赖的接口文件只有在dev包中才有。安装相关Glib项目时，一定要选择名称以-dev结尾的包。
 
-## python调用GTK函数的一般规则
+## 时间、日期数据的格式处理。
 
-众所周知，GTK库是用C语言编写的，其相关的文档提供的也是C函数的接口，python接口的文档相对较少，获得也不太容易。因此有必要掌握一下这方面基本的命名规则。（这里只讲方法，对深层次的调用原理不做探究。）
-
-1）类初始化函数
-
-C:`GtkWidget * gtk_button_new (void);`
-
-python:`button = Gtk.Button()`
-
-这里除了把C函数式的写法，替换成python的类的写法之外，并无其他差异。
-
-2）普通类成员函数
-
-C:`void gtk_container_add (GtkContainer *container, GtkWidget *widget);`
-
-python:`button.add(image)`
-
-可以看出，C函数的第一个表示self类指针的参数被省略掉了。
-
-3）回调函数
-
-这里以按钮的click事件回调为例：
-
-C:`void user_function (GtkButton *button, gpointer user_data)`
-
-python:
-
-`button.connect("clicked", self.playToggled)`
-
-`def playToggled(self, w):`
-
-这里的情况要复杂的多。首先在事件回调注册的时候，由于我们并没有给user_data赋值，因此照理说playToggled函数，只有button这一个参数。但实际传递给playToggled函数的有两个参数，self是一个用于占位的参数，w对应button，没有东西对应user_data。
-
-4）用于输出的参数
-
-C:`void gst_message_parse_error (GstMessage *message, GError **gerror, gchar **debug);`
-
-python:`err, debug = message.parse_error()`
-
-这个例子中的gerror和debug都是用于输出的参数。如果只想得到其一，还可用以下方法:
-
-`debug = message.parse_error()[2]`
-
-5）枚举类型
-
-C:
-
-{% highlight c %}
-enum GstSeekFlags
-{
-  GST_SEEK_FLAG_FLUSH,
-  ...
-}
-{% endhighlight %}
-
-python:`Gst.SeekFlags.FLUSH`
-
-6）宏常量
-
-C:`#define GST_CLOCK_TIME_NONE ((GstClockTime) -1)`
-
-python:`Gst.CLOCK_TIME_NONE`
-
-7）类型转换
-
-大多数情况下，类型转换自动完成，并无什么问题。这里只讨论特殊的情况。
-
-C:
-
-{% highlight c %}
-gst_element_seek (pipeline, 1.0, GST_FORMAT_TIME, GST_SEEK_FLAG_FLUSH,
-                         GST_SEEK_TYPE_SET, time_nanoseconds,
-                         GST_SEEK_TYPE_NONE, GST_CLOCK_TIME_NONE))
-{% endhighlight %}
-
-python:
+时间数据上的格式处理，主要指strftime和strptime函数。其中前者可将时间数据转换成指定格式的字符串，而后者则将字符串转换成时间数据。
 
 {% highlight python %}
-self.player.seek(1.0, Gst.Format.TIME, Gst.SeekFlags.FLUSH, Gst.SeekType.SET,\
-                 time_nanoseconds, Gst.SeekType.NONE, Gst.CLOCK_TIME_NONE)
+import time
+a = "2013-10-10 23:40:00"
+timeArray = time.strptime(a, "%Y-%m-%d %H:%M:%S")
+otherStyleTime = time.strftime("%Y/%m/%d %H:%M:%S", timeArray)
 {% endhighlight %}
 
-这里首先按照一般的方法，将C代码转化成python代码。但是运行之后，产生如下错误：
+日期方面也是类似的做法。
 
-`OverflowError: long too big to convert`
+## 星期处理
 
-究其原因，gst_element_seek的最后一个参数是uint64类型的。但python原生并不支持该类型，而是将之转换成int类型（实际上是int64类型），这样的话，GST_CLOCK_TIME_NONE的值显然超出了int64所能表示的范围。
+`datetime(2002, 12, 4).isoweekday() == 3`
 
-解决的办法是使用ctypes库，将
+`datetime(2001, 12, 31).isocalendar() == (2002, 1, 1)#(year, week number, weekday)`
 
-`Gst.CLOCK_TIME_NONE`
+从上面的例子还可以看出，isocalendar可以完美的处理跨年问题。
 
-改为
+## 参数传递
 
-`c_long(Gst.CLOCK_TIME_NONE).value`
+基本数据类型：数值型，字符串，布尔，是值传递；其他的是引用传递，包括类类型，列表，字典。
+
+## list操作
+
+{% highlight python %}
+L.append(var)   #追加元素
+L.extend(list)  #追加list，即合并list到L上
+{% endhighlight %}
+
+## 相关资源
+
+http://www.lfd.uci.edu/~gohlke/pythonlibs/
+
+Unofficial Windows Binaries for Python Extension Packages
+
+## 处理eml文件
+
+代码示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/misc/hello_eml.py
+
+这个示例主要使用email包来解析eml文件。
+
+同时为了处理其中的html的内容，还用到了Beautiful Soup包。其网址为：
+
+https://www.crummy.com/software/BeautifulSoup/
+
+参见：
+
+https://mp.weixin.qq.com/s/p86yvl3uAm3FXw4V9NlNoA
+
+一文带你上手Python网页抓取神器BeautifulSoup库
+
+## Sqlite
+
+Ubuntu下的安装方法是：
+
+`sudo apt-get install sqlite`
+
+Python自带了pysqlite包，用于调用sqlite。
+
+pysqlite的helloworld程序可参见：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/pysqlite-helloworld.py
+
+可以使用sqlite_bro软件包，查看sqlite数据库。安装方法：
+
+`sudo pip install sqlite_bro`
+
+## Python中的括号
+
+Python主要有三种数据类型：字典、列表、元组。其分别由花括号，中括号，小括号表示。如：
+
+字典：dic={'a':12,'b':34}
+
+列表：list=[1,2,3,4]
+
+元组：tup=(1,2,3,4)
 
 

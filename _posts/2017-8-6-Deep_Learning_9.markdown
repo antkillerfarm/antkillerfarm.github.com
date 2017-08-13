@@ -4,6 +4,38 @@ title:  深度学习（九）——依存分析, 深度强化学习, CTC
 category: theory 
 ---
 
+# 模型压缩（续）
+
+参考：
+
+https://zhuanlan.zhihu.com/p/24337627
+
+深度压缩之蒸馏模型
+
+https://zhuanlan.zhihu.com/p/24894102
+
+《Distilling the Knowledge in a Neural Network》阅读笔记
+
+https://luofanghao.github.io/2016/07/20/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0%20%E3%80%8ADistilling%20the%20Knowledge%20in%20a%20Neural%20Network%E3%80%8B/
+
+论文笔记 《Distilling the Knowledge in a Neural Network》
+
+http://blog.csdn.net/zhongshaoyy/article/details/53582048
+
+蒸馏神经网络
+
+https://www.zhihu.com/question/50519680
+
+如何理解soft target这一做法？
+
+https://mp.weixin.qq.com/s/0KlnQ8UUxpyhBRdeo0EOAA
+
+用于网络压缩的滤波器级别剪枝算法ThiNet
+
+https://mp.weixin.qq.com/s/lO2UM04PfSM5VJYh6vINhw
+
+为模型减减肥：谈谈移动／嵌入式端的深度学习
+
 # 依存分析
 
 ## 概况
@@ -127,6 +159,10 @@ Topical Word Embeddings
 TWE的代码：
 
 https://github.com/largelymfs/topical_word_embeddings
+
+![](/images/article/sogou.jpg)
+
+上图可以看出英语的确是世界语言啊。
 
 # 深度强化学习
 

@@ -1,262 +1,12 @@
 ---
 layout: post
-title:  深度学习（七）——GAN
+title:  深度学习（七）——fine-tuning
 category: theory 
 ---
 
-# RCNN（续）
-
-## RCNN算法的基本流程
-
-![](/images/article/rcnn.png)
-
-RCNN算法分为4个步骤：
-
-候选区域生成：一张图像生成1K~2K个候选区域（采用Selective Search方法）。
-
-特征提取：对每个候选区域，使用深度卷积网络提取特征（CNN）。
-
-类别判断：特征送入每一类的SVM分类器，判别是否属于该类。
-
-位置精修：使用回归器精细修正候选框位置。
-
-## Selective Search
-
-论文：
-
-https://www.koen.me/research/pub/uijlings-ijcv2013-draft.pdf
-
-Selective Search for Object Recognition
-
-Selective Search的主要思想:
-
-1.使用一种过分割手段，将图像分割成小区域 (1k~2k 个)。
-
-2.查看现有小区域，按照合并规则合并可能性最高的相邻两个区域。重复直到整张图像合并成一个区域位置。
-
-3.输出所有曾经存在过的区域，所谓候选区域。
-
-其中合并规则如下： 优先合并以下四种区域：
-
-1.颜色（颜色直方图）相近的 。
-
-2.纹理（梯度直方图）相近的 。
-
-3.合并后总面积小的：保证合并操作的尺度较为均匀，避免一个大区域陆续“吃掉”其他小区域（例：设有区域a-b-c-d-e-f-g-h。较好的合并方式是：ab-cd-ef-gh -> abcd-efgh -> abcdefgh。不好的合并方法是：ab-c-d-e-f-g-h ->abcd-e-f-g-h ->abcdef-gh -> abcdefgh）
-
-4.合并后，总面积在其BBOX中所占比例大的：保证合并后形状规则。
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/23006190
-
-RCNN-将CNN引入目标检测的开山之作
-
-http://www.cnblogs.com/edwardbi/p/5647522.html
-
-Tensorflow tflearn编写RCNN
-
-https://zhuanlan.zhihu.com/p/24774302
-
-SPPNet-引入空间金字塔池化改进RCNN
-
-https://zhuanlan.zhihu.com/p/24780395
-
-Fast R-CNN
-
-https://zhuanlan.zhihu.com/p/24916624
-
-Faster R-CNN
-
-https://zhuanlan.zhihu.com/p/24916786
-
-图解YOLO
-
-https://zhuanlan.zhihu.com/p/24954433
-
-SSD
-
-https://zhuanlan.zhihu.com/p/25167153
-
-YOLO2
-
-https://www.zhihu.com/question/35887527
-
-如何评价rcnn、fast-rcnn和faster-rcnn这一系列方法？
-
-http://blog.csdn.net/tangwei2014/article/details/50915317
-
-论文阅读笔记：You Only Look Once: Unified, Real-Time Object Detection
-
-http://blog.csdn.net/shenxiaolu1984/article/details/51066975
-
-RCNN算法详解
-
-http://blog.csdn.net/shenxiaolu1984/article/details/51036677
-
-Fast RCNN算法详解
-
-http://blog.csdn.net/shenxiaolu1984/article/details/51152614
-
-Faster RCNN算法详解
-
-https://mp.weixin.qq.com/s/XorPkuIdhRNI1zGLwg-55A
-
-斯坦福新深度学习系统 NoScope：视频对象检测快1000倍
-
-https://mp.weixin.qq.com/s/XbgmLmlt5X4TX5CP59gyoA
-
-目标检测算法精彩集锦
-
-https://mp.weixin.qq.com/s/BgTc1SE2IzNH27OC2P2CFg
-
-CVPR-I
-
-https://mp.weixin.qq.com/s/qMdnp9ZdlYIja2vNEKuRNQ
-
-CVPR—II
-
-https://mp.weixin.qq.com/s/tc1PsIoF1RN1sx_IFPmtWQ
-
-CVPR—III
-
-https://mp.weixin.qq.com/s/bpCn2nREHzazJYq6B9vMHg
-
-目标识别算法的进展
-
-https://mp.weixin.qq.com/s/YzxaS4KQmpbUSnyOwccn4A
-
-基于深度学习的目标检测技术进展与展望
-
-https://mp.weixin.qq.com/s/VKQufVUQ3TP5m7_2vOxnEQ
-
-通过Faster R-CNN实现当前最佳的目标计数
-
-## YOLO
-
-YOLO: Real-Time Object Detection，是一个基于神经网络的实时对象检测软件。
-
-官网：
-
-https://pjreddie.com/darknet/yolo/
-
-参考：
-
-https://mp.weixin.qq.com/s/n51XtGAsaDDAatXYychXrg
-
-YOLO比R-CNN快1000倍，比Fast R-CNN快100倍的实时对象检测！
-
-## SSD
-
-论文：
-
-《SSD: Single Shot MultiBox Detector》
-
-参考：
-
-http://www.jianshu.com/p/ebebfcd274e6
-
-Caffe-SSD 训练自己的数据集教程
-
 # GAN
 
-## 概况
-
-GAN是“生成对抗网络”（Generative Adversarial Networks）的简称，由2014年还在蒙特利尔读博士的Ian Goodfellow引入深度学习领域。
-
->注：Ian J. Goodfellow，斯坦福大学本硕+蒙特利尔大学博士。导师是Yoshua Bengio。现为Google研究员。   
->个人主页：   
->http://www.iangoodfellow.com/
-
-论文：
-
-《Generative Adversarial Nets》
-
-教程：
-
-http://www.iangoodfellow.com/slides/2016-12-04-NIPS.pdf
-
-## 通俗解释
-
-对于GAN来说，最通俗的解释就是**“伪造者-鉴别者”**的解释，如艺术画的伪造者和鉴别者。一开始伪造者和鉴别者的水平都不高，但是鉴别者还是比较容易鉴别出伪造者伪造出来的艺术画。但随着伪造者对伪造技术的学习后，其伪造的艺术画会让鉴别者识别错误；或者随着鉴别者对鉴别技术的学习后，能够很简单的鉴别出伪造者伪造的艺术画。这是一个双方不断学习技术，以达到最高的伪造和鉴别水平的过程。
-
-从上面的解释可以看出，GAN实际上一种**零和游戏上的无监督算法**。
-
-## 基本原理
-
-上面的解释虽然通俗，却并未涉及算法的实现。要实现上述原理，至少要解决三个问题：
-
-**1.什么是伪造者。**
-
-**2.什么是鉴别者。**
-
-**3.如何对抗。**
-
-以下文章的组织顺序，主要参考下文：
-
-http://kexue.fm/archives/4439/
-
-互怼的艺术：从零直达WGAN-GP
-
-老规矩，摘要+点评。
-
-## 伪造者
-
-伪造者在这里实际上是一种Generative算法。伪造的内容是：**将随机噪声映射为我们所希望的正样本**。
-
-随机噪声我们一般定义为**均匀分布**，于是上面的问题可以转化为：**如何将均匀分布X映射为正样本分布Y**。
-
-首先，我们思考一个简单的问题：如何将$$U[0,1]$$映射为$$N(0,1)$$？
-
-理论上的做法是：将$$X∼U[0,1]$$经过函数$$Y=f(X)$$映射之后，就有$$Y∼N(0,1)$$了。设$$\rho(x)$$是$$U[0,1]$$是概率密度函数，那么$$[x,x+dx]$$和$$[y,y+dy]$$这两个区间的概率应该相等，而根据概率密度定义，$$\rho(x)$$不是概率，$$\rho(x)dx$$才是概率，因此有：
-
-$$\rho(x)dx=\frac{1}{\sqrt{2\pi}}\exp\left(-\frac{y^2}{2}\right)dy$$
-
-即：
-
-$$\int_{0}^x \rho(t)dt=\int_{-\infty}^{y}\frac{1}{\sqrt{2\pi}}\exp\left(-\frac{t^2}{2}\right)dt=\Phi(y)$$
-
-其中，$$\Phi(y)$$是标准正态分布的累积分布函数，所以
-
-$$y=\Phi^{-1}\left(\int_0^x \rho(t)dt\right)$$
-
-注意到累积分布函数是无法用初等函数显式表示出来的，更不用说它的逆函数了。说白了，$$Y=f(X)$$的f的确是存在的，但很复杂，以上解只是一个记号，该算的还是要用计算机算。
-
-正态分布是常见的、相对简单的分布，但这个映射已经这么复杂了。如果换了任意分布，甚至概率密度函数都不能显式写出来，那么复杂度可想而知～
-
-考虑到我们**总可以用一个神经网络来拟合任意函数**。这里不妨用一个带有多个参数的神经网络$$G(X,\theta)$$去拟合f？只要把参数$$\theta$$训练好，就可以认为$$Y=G(X,\theta)$$了。这里的G是**Generator**的意思。
-
-## 正样本分布
-
-如上所述，一般的正样本分布是很难给出概率密度函数的。然而，我们可以换个角度思考问题。
-
-假设有一批服从某个指定分布的数据$$Z=(z_1,z_2,\dots,z_N)$$，根据概率论的相关定义，我们至少可以使用**离散采样**的方法，根据Z中的样本分布，来近似求出Z的指定分布。下文如无特殊指出，**均以Z中的样本分布来代替Z的指定分布，简称Z的分布**。
-
-那么接着就有另一个问题：**如何评估$$G(X,\theta)$$生成的样本的分布和Z的分布之间的差异呢？**
-
-## KL散度
-
-比较两个分布的差异的最常用指标是KL散度。其定义参见《机器学习（七）》。
-
-## JS散度
-
-因为KL散度不是对称的，有时候将它对称化，即得到JS散度（Jensen–Shannon divergence）：
-
-$$JS\Big(p_1(x),p_2(x)\Big)=\frac{1}{2}KL\Big(p_1(x)\|p_2(x)\Big)+\frac{1}{2}KL\Big(p_2(x)\|p_1(x)\Big)$$
-
->注：Claude Elwood Shannon，1916～2001，美国数学家，信息论之父。密歇根大学双学士+MIT博士。先后供职于贝尔实验室和MIT。
-
-KL散度和JS散度，也是Ian Goodfellow在原始GAN论文中，给出的评价指标。
-
-虽然KL散度和JS散度，在这里起着距离的作用，但它们**不是距离**，它们不满足距离的三角不等式，因此只能叫“散度”。
-
-## 神经距离
-
-假设我们可以将实数域分成若干个不相交的区间$$I_1,I_2,\dots,I_K$$，那么就可以估算一下给定分布Z的概率分布：
-
-$$p_z(I_i)=\frac{1}{N}\sum_{j=1}^{N}\#(z_j\in I_i)$$
-
-其中$$\#(z_j\in I_i)$$表示如果$$z_j\in I_i$$，那么取值为1，否则为0。
+## 神经距离（续）
 
 接着我们生成M个均匀随机数$$x_1,x_2,\dots,x_M$$（这里不一定要$$M=N$$，还是那句话，我们比较的是分布，不是样本本身，因此多一个少一个样本，对分布的估算也差不了多少。），根据$$Y=G(X,\theta)$$计算对应的$$y_1,y_2,\dots,y_M$$，然后根据公式可以计算：
 
@@ -286,4 +36,240 @@ $$L=\frac{1}{M}\sum_{i=1}^M D\Big(y_i,\Theta\Big)$$
 
 这里的神经网络$$D(Y,\Theta)$$，实际上就是GAN的另一个主角——**鉴别者**。这里的D是**Discriminator**的意思。
 
+## 如何对抗
+
+因为$$D(Y,\Theta)$$的均值，也就是L，是度量两个分布的差异程度，这就意味着，L要能够将两个分布区分开来，即L越大越好；但是我们最终的目的，是希望通过均匀分布而生成我们指定的分布，所以$$G(X,\theta)$$则希望两个分布越来越接近，即L越小越好。
+
+形式化的描述就是：
+
+$$\arg \min_G \max_D V(G,D)$$
+
+具体的做法是：
+
+### Step1
+
+随机初始化$$G(X,\theta)$$，固定它，然后生成一批Y，这时候我们要训练$$D(Y,\Theta)$$，既然L代表的是“与指定样本Z的差异”，那么，如果将指定样本Z代入L，结果应该是越小越好，而将Y代入L，结果应该是越大越好，所以
+
+$$\begin{aligned}\Theta =& \mathop{\arg\min}_{\Theta} L = \mathop{\arg\min}_{\Theta} \frac{1}{N}\sum_{i=1}^N D\Big(z_i,\Theta\Big)\\ 
+\Theta =& \mathop{\arg\max}_{\Theta} L = \mathop{\arg\max}_{\Theta} \frac{1}{M}\sum_{i=1}^M D\Big(y_i,\Theta\Big)\end{aligned}$$
+
+然而有两个目标并不容易平衡，所以干脆都取同样的样本数B（一个batch），然后一起训练就好：
+
+$$\begin{aligned}\Theta =& \mathop{\arg\min}_{\Theta} L_1\\ 
+=&\mathop{\arg\min}_{\Theta} \frac{1}{B}\sum_{i=1}^B\left[D\Big(z_i,\Theta\Big)-D\Big(y_i,\Theta\Big)\right]\end{aligned}$$
+
+### Step2
+
+$$G(X,\theta)$$希望它生成的样本越接近真实样本越好，因此这时候把$$\Theta$$固定，只训练$$\theta$$让L越来越小：
+
+$$\begin{aligned}\theta =& \mathop{\arg\min}_{\theta} L_2\\ 
+=&\mathop{\arg\min}_{\theta} \frac{1}{B}\sum_{i=1}^B\left[D\Big(G(x_i,\theta),\Theta\Big)\right]\end{aligned}$$
+
+## Lipschitz约束
+
+稍微思考一下，我们就发现，问题还没完。我们目前还没有对D做约束，不难发现，无约束的话Loss基本上会直接跑到负无穷去了～
+
+最简单的方案就是采用Lipschitz约束：
+
+$$\| D(y,\theta) - D(y' , \theta) \| \leq C \|y-y'\|$$
+
+也可写作：
+
+$$\left\| \frac{\partial D(y,\Theta)}{\partial y}\right\| \leq C$$
+
+>注：Rudolf Otto Sigismund Lipschitz，1832～1903，德国数学家，先后就读于柯尼斯堡大学和柏林大学，导师Dirichlet。波恩大学教授。
+
+## WGAN
+
+KL散度和JS散度由于不是距离，数学特性并不够好。因此，Martín Arjovsky于2017年1月，提出了Wasserstein GAN。
+
+其中的一项改进就是使用Wasserstein距离替代KL散度和JS散度。Wasserstein距离的定义参看《机器学习（二十）》。
+
+WGAN极大程度的改善了GAN训练困难的问题，成为当前GAN研究的主流。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/25071913
+
+令人拍案叫绝的Wasserstein GAN
+
+## GAN的发展
+
+最早的GAN出现在2014年6月，但直到2015年底，也只有5个变种，发展并不迅速。
+
+2016年，GAN开始发力，年底时已有52个变种。2017年6月底，更达到142个变种。
+
+参考：
+
+https://github.com/hindupuravinash/the-gan-zoo
+
+GAN的各种变种。
+
+## 参考
+
+https://mp.weixin.qq.com/s/xa3F3kCprE6DEQclas4umg
+
+GAN的数学原理
+
+http://www.jianshu.com/p/e2d2d7cbbe49
+
+50行代码实现GAN
+
+http://mp.weixin.qq.com/s/bzwG0QxnP2drqS4RwcZlBg
+
+微软详解：到底什么是生成式对抗网络GAN？
+
+https://mp.weixin.qq.com/s/oCDlhzjOYTIhsr5JuoRCJQ
+
+IRGAN：大一统信息检索模型的博弈竞争
+
+https://mp.weixin.qq.com/s/QacQCrjh3KmrQSMp-G_rEg
+
+贝叶斯生成对抗网络
+
+https://zhuanlan.zhihu.com/p/24897387
+
+GAN的基本原理、应用和走向
+
+https://mp.weixin.qq.com/s/E28lA-fcAQ6Sp6Qv64H3TQ
+
+GAN in NLP
+
+https://mp.weixin.qq.com/s/7-oHa-8Q8ThcctaVOZFfew
+
+Facebook创意生成网络CAN，比GAN更有创造力
+
+https://mp.weixin.qq.com/s/aSQ2-QxbToGF0ROyjxw2yw
+
+萌物生成器：如何使用四种GAN制造猫图
+
+https://mp.weixin.qq.com/s/YUMIL-f019vKpQ84mKS-8g
+
+这篇TensorFlow实例教程文章告诉你GANs为何引爆机器学习？
+
+http://mp.weixin.qq.com/s/UkZdUcdz7h4DqcyjSbNncw
+
+zi2zi：用条件生成对抗网络玩转中文书法，绝妙汉字字体自动生成
+
+http://blog.csdn.net/v_JULY_v/article/details/52683959
+
+没GPU也能玩梵高作画：Ubuntu tensorflow CPU版
+
+https://github.com/cysmith/neural-style-tf
+
+TensorFlow (Python API) implementation of Neural Style.这个项目实现了两张图片的画风融合，非常牛。
+
+https://github.com/jinfagang/pytorch_style_transfer
+
+这个和上面的一样，不过是用pytorch实现的。
+
+http://mp.weixin.qq.com/s/zNmJuevHaagKbyGFdKTwoQ
+
+tensorflow实现基于深度学习的图像补全
+
+https://zhuanlan.zhihu.com/p/25204020
+
+条条大路通罗马LS-GAN：把GAN建立在Lipschitz密度上
+
+https://zhuanlan.zhihu.com/p/27199954
+
+用GAN去除动作片中的马赛克和衣服
+
+https://zhuanlan.zhihu.com/p/27012520
+
+从头开始GAN
+
+https://mp.weixin.qq.com/s/Qzlg1MzRT3josy2RJpQSVg
+
+Image to Image Translation Using GAN
+
+https://mp.weixin.qq.com/s/AswdyjPeKbX7yhAPloP2og
+
+基于对抗学习的生成式对话模型
+
+https://mp.weixin.qq.com/s/uyn41vKKoptXPZXBP2vVDQ
+
+生成对抗网络（GAN）之MNIST数据生成
+
+https://mp.weixin.qq.com/s/sxa0BfXtylHXzjq0YBn-Kg
+
+伯克利图像迁移cycleGAN，猫狗互换效果感人
+
+https://mp.weixin.qq.com/s/aMfPBl6E5SxckQdSAGTkBg
+
+Pytorch教程：Facebook发布的LR-GAN如何生成图像？
+
+https://zhuanlan.zhihu.com/p/28342644
+
+CycleGAN的原理与实验详解
+
+https://mp.weixin.qq.com/s/YXWTslQXIKVihBb2Bgtafg
+
+GAN在信息检索领域的应用
+
+http://mp.weixin.qq.com/s/21CN4hAA6p7ZjWsO1sT2rA
+
+一文看懂生成式对抗网络GANs：介绍指南及前景展望
+
+https://mp.weixin.qq.com/s/YLys6L9WT7eCC-xGr1j0Iw
+
+带多分类判别器的GAN模型
+
+https://mp.weixin.qq.com/s/0tTLotV-8w2j3VdkH-qjCQ
+
+让机器告诉你故事的结局应该是什么：利用GAN进行故事型常识阅读理解
+
+https://mp.weixin.qq.com/s/lqQeCpLQVqSdJPWx0oxs2g
+
+例解生成对抗网络
+
+https://mp.weixin.qq.com/s/fMtuJbWG_d9zyCZ0oYyX_w
+
+经得住考验的“假图片”：用TensorFlow为神经网络生成对抗样本
+
+# fine-tuning
+
+fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
+
+举个例子，假设今天老板给你一个新的数据集，让你做一下图片分类，这个数据集是关于Flowers的。问题是，数据集中flower的类别很少，数据集中的数据也不多，你发现从零训练开始训练CNN的效果很差，很容易过拟合。怎么办呢，于是你想到了使用Transfer Learning，用别人已经训练好的Imagenet的模型来做。
+
+由于ImageNet数以百万计带标签的训练集数据，使得如CaffeNet之类的预训练的模型具有非常强大的泛化能力，这些预训练的模型的中间层包含非常多一般性的视觉元素，我们只需要对他的后几层进行微调，再应用到我们的数据上，通常就可以得到非常好的结果。最重要的是，**在目标任务上达到很高performance所需要的数据的量相对很少**。
+
+虽然从理论角度尚无法完全解释fine-tuning的原理，但是还是可以给出一些直观的解释。我们知道，CNN越靠近输入端，其抽取的图像特征越原始。比如最初的一层通常只能抽取一些线条之类的元素。越上层，其特征越抽象。
+
+而现实的图像无论多么复杂，总是由简单特征拼凑而成的。因此，无论最终的分类结果差异如何巨大，其底层的图像特征却几乎一致。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/22624331
+
+fine-tuning:利用已有模型训练其他数据集
+
+http://www.cnblogs.com/louyihang-loves-baiyan/p/5038758.html
+
+Caffe fine-tuning微调网络
+
+http://blog.csdn.net/sinat_26917383/article/details/54999868
+
+caffe中fine-tuning模型三重天（函数详解、框架简述）+微调技巧
+
+http://yongyuan.name/blog/layer-selection-and-finetune-for-cbir.html
+
+图像检索：layer选择与fine-tuning性能提升验证
+
+h1ttps://www.zhihu.com/question/49534423
+
+迁移学习与fine-tuning有什么区别？
+
+# 目标检测
+
+## 概述
+
+object detection是计算机视觉的一个重要的分支。类似的分支还有目标分割、目标识别和目标跟踪。
+
+以下摘录自Sensetime CTO曹旭东的解读：
+
+传统方法使用滑动窗口的框架，把一张图分解成几百万个不同位置不同尺度的子窗口，针对每一个窗口使用分类器判断是否包含目标物体。传统方法针对不同的类别的物体，一般会设计不同的特征和分类算法，比如人脸检测的经典算法是**Harr特征+Adaboosting分类器**；行人检测的经典算法是**HOG(histogram of gradients)+Support Vector Machine**；一般性物体的检测的话是**HOG特征+DPM(deformable part model)的算法**。
+
+基于深度学习的物体检测的经典算法是RCNN系列：RCNN，fast RCNN(Ross Girshick)，faster RCNN(少卿、凯明、孙剑、Ross)。这三个工作的核心思想是分别是：使用更好的CNN模型判断候选区域的类别；复用预计算的sharing feature map加快模型训练和物体检测的速度；进一步使用sharing feature map大幅提高计算候选区域的速度。其实基于深度学习的物体检测也可以看成对海量滑动窗口分类，只是用全卷积的方式。
 

@@ -294,6 +294,10 @@ https://mp.weixin.qq.com/s/c7nXiFCI3urS0cbSUSsgYg
 
 哈工大刘挺教授：自然语言处理的十个发展趋势
 
+https://mp.weixin.qq.com/s/wJry8N4FC9KVv_bVGuzXXw
+
+LinkedIn文本分析平台：主题挖掘的四大技术步骤
+
 # Javascript在客户端的使用
 
 Javascript在服务器前端的成功，促使人们思考其在客户端的使用。

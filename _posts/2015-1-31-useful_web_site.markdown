@@ -312,6 +312,10 @@ https://mp.weixin.qq.com/s/4lZ7My6cs4-VJQ1qGhQxZg
 
 AliSQL X-Cluste：基于X-Paxos的高性能强一致MySQL数据库
 
+https://mp.weixin.qq.com/s/Zp3ULgogMNVoqw6EO_KoBA
+
+高性能分布式PaaS平台基本原理
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/
