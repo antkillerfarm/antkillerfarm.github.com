@@ -95,6 +95,8 @@ RCNN相对传统方法的改进：
 
 RCNN使用识别库进行预训练得到CNN（有监督预训练），而后用检测库调优参数，最后在检测库上评测。
 
+这实际上就是《深度学习（七）》中提到的fine-tuning的思想。
+
 ## RCNN算法的基本流程
 
 ![](/images/article/rcnn.png)
@@ -133,9 +135,21 @@ Selective Search的主要思想:
 
 3.合并后总面积小的：保证合并操作的尺度较为均匀，避免一个大区域陆续“吃掉”其他小区域（例：设有区域a-b-c-d-e-f-g-h。较好的合并方式是：ab-cd-ef-gh -> abcd-efgh -> abcdefgh。不好的合并方法是：ab-c-d-e-f-g-h ->abcd-e-f-g-h ->abcdef-gh -> abcdefgh）
 
-4.合并后，总面积在其BBOX中所占比例大的：保证合并后形状规则。
+4.合并后，总面积在其bounding box中所占比例大的：保证合并后形状规则。
 
 ![](/images/article/rcnn_3.png)
+
+上图中的那些方框，就是bounding box。
+
+一般使用IOU（Intersection over Union，交并比）指标，来衡量两个bounding box的重叠度：
+
+$$IOU(A,B)=\frac{A \cap B}{A \cup B}$$
+
+## 非极大值抑制（NMS）
+
+Non-Maximum Suppression顾名思义就是抑制不是极大值的元素，搜索局部的极大值。这个局部代表的是一个邻域，邻域有两个参数可变，一是邻域的维数，二是邻域的大小。
+
+
 
 ## 参考
 

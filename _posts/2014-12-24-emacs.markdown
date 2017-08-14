@@ -277,6 +277,14 @@ https://github.com/myuhe/ess-R-data-view.el
 
 dd 删除整行
 
+# Source Insight
+
+Shift+F8：高亮选中的字
+
+http://www.cnblogs.com/bluestorm/archive/2012/10/28/2743792.html
+
+Source Insight常用设置和快捷键大全
+
 # Logo语言的安装
 
 Logo语言是我学习计算机时的启蒙语言。那是初一、初二的时候，当时的电脑还是运行Dos的386系统，我们在原始的命令行下，津津有味的编着代码。那时候电脑可是稀罕物，为了节约上机时间，程序都是事先写到小本本上的，我至今还保留着当时的作业本。

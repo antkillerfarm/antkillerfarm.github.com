@@ -346,6 +346,14 @@ https://mp.weixin.qq.com/s?__biz=MzU3NTE1OTE0Ng==&mid=2247483709&idx=1&sn=6e1a81
 
 如何定义信用评分中的“好”、“坏”人？
 
+https://mp.weixin.qq.com/s/i2Ex8Zmu2ZzHPcoPr-1Rlw
+
+太阳系相关图，教你优雅的打开“可视化”的大门
+
+https://mp.weixin.qq.com/s/h8qkDt7fmFzVxQcKkwqRzQ
+
+滴滴KDD2017论文：基于组合优化的出租车分单模型
+
 # PMML
 
 PMML(Predictive Model Markup Language) 是一个开放的工业标准，它以 XML 为载体将上述数据挖掘任务标准化，可以把某一产品所创建的数据挖掘方案应用于任何其它遵从 PMML 标准的产品或平台中 , 而不需考虑分析和预测过程中的具体实现细节。使得模型的部署摆脱了模型开发和产品整合的束缚，为商业智能产品、数据仓库和云计算中的数据挖掘模型的应用环境开拓了新的篇章。

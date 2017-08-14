@@ -422,6 +422,10 @@ https://mp.weixin.qq.com/s/ObIYpiH7MLZEi5XzXdGBYg
 
 10大深度学习架构
 
+https://mp.weixin.qq.com/s/H-oAETObn0SLUxK8--xudg
+
+Keras+OpenAI强化学习实践：行为-评判模型
+
 ### Other
 
 https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg

@@ -218,4 +218,13 @@ $$DM:P(Y,R|O)\to P(Y|O)$$
 
 ![](/images/article/Generative_Models.png)
 
+# DL参考资源
+
+https://mp.weixin.qq.com/s/xnbNkKOomwvwYC_ThKPJ_g
+
+田渊栋报告：游戏中的人工智能：成就与挑战
+
+https://mp.weixin.qq.com/s/W4zwKqkVQN4v-IKzGrkudg
+
+通过传递不变性实现自监督视觉表征学习
 

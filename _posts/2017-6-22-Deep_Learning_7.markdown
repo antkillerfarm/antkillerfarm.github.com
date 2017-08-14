@@ -227,6 +227,10 @@ https://mp.weixin.qq.com/s/fMtuJbWG_d9zyCZ0oYyX_w
 
 经得住考验的“假图片”：用TensorFlow为神经网络生成对抗样本
 
+https://zhuanlan.zhihu.com/p/28488946
+
+AI可能真的要代替插画师了……
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。

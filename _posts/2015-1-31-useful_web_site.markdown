@@ -316,6 +316,10 @@ https://mp.weixin.qq.com/s/Zp3ULgogMNVoqw6EO_KoBA
 
 高性能分布式PaaS平台基本原理
 
+https://mp.weixin.qq.com/s/EcAAc_ypajEKXUQbOoYAMA
+
+如何选择IR filter
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/
