@@ -120,6 +120,10 @@ https://mp.weixin.qq.com/s/lODy8ucB3Bw9Y1sy1NxTJg
 
 无监督学习中的两个非概率模型：稀疏编码与自编码器
 
+https://mp.weixin.qq.com/s/LQFuXgI7uZK2UKRfZvlVbA
+
+Variational AutoEncoder
+
 # 词向量
 
 ## One-hot Representation

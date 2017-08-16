@@ -228,3 +228,12 @@ https://mp.weixin.qq.com/s/W4zwKqkVQN4v-IKzGrkudg
 
 通过传递不变性实现自监督视觉表征学习
 
+http://mp.weixin.qq.com/s/LAgDobWyK0SOH08GCLXG7A
+
+减少30%流量，增加清晰度：MIT提出人工智能视频缓存新算法
+
+http://mp.weixin.qq.com/s/SNfSY4CKhX1RDWd4itPx2Q
+
+马里兰大学论文：训练深度神经网络中的一致性难题
+
+

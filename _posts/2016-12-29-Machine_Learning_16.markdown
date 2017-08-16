@@ -120,7 +120,11 @@ $$\pi(i)P_{ij} = \pi(j)P_{ji} \quad\quad \text{for all} \quad i,j$$
 
 http://blog.csdn.net/lanchunhui/article/details/50451620
 
+重温马尔科夫随机过程
+
 http://blog.csdn.net/pipisorry/article/details/46618991
+
+马尔科夫模型
 
 ## MCMC
 
@@ -206,3 +210,5 @@ $$\mathrm{B}(\alpha_1,\alpha_2,\alpha_3)=\int p_1^{\alpha_1 -1}p_2^{\alpha_2 -1}
 证毕。
 
 从上面的证明过程，可以看出公式1并不是恒等式，而是在Dirichlet分布下才成立的等式。这也是共轭先验分布能够简化计算的地方。
+
+

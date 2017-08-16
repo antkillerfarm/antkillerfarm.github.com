@@ -82,7 +82,6 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/java/HanLP/Know
 
 3.不想序列化的成员使用transient关键字修饰。
 
-
 # Machine Learning之Java篇
 
 http://machinelearningmastery.com/java-machine-learning/
@@ -219,7 +218,53 @@ TensorFlow技术栈：
 
 ![](/images/article/tensorflow_layer.png)
 
+## 基本概念
+
+**Variables**：训练模型的时候，那些在样本之间表示结点状态的变量。一般来说，就是神经网络的参数。
+
+**Placeholders**：对于每个样本都不相同的变量。比如神经网络的输入变量x和输出变量y。
+
 ## 图计算
+
+图计算是各个深度学习框架的中心概念，这里单独提出来讨论一下。
+
+![](/images/article/fused_graph.png)
+
+上图是softmax运算的计算图示例。计算图是一个有向无环图，它的结点代表原始数据和计算中间结果，边代表数据的流向。计算操作被称为**Operation**。
+
+因此，**计算图实际上是工作流（work flow）思想在数值计算领域的拓展**。这种流水线一般被称为**Graph**。
+
+流水线有了，还要有被加工的数据。数据在流水线上被加工的执行过程，被称为**Session**。
+
+Graph和Session的关系，类似于类和对象的关系。Session是Graph的动态实例。
+
+图计算的大致步骤如下：（这里以OpenVX函数为例，因为它更接近底层和硬件。）
+
+1.vxCreateGraph。创建计算图。
+
+2.vxProcessGraph。运行计算图。
+
+在大多数Tensorflow示例中，你看不到Graph的身影。但它并不是不存在，而是默认所有新加入的Operation都添加到默认的Graph。
+
+以下是使用多个Graph的示例：
+
+{% highlight python %}
+import tensorflow as tf
+g1 = tf.Graph()
+with g1.as_default():
+    c1 = tf.constant([1.0])
+with tf.Graph().as_default() as g2:
+    c2 = tf.constant([2.0])
+
+with tf.Session(graph=g1) as sess1:
+    print sess1.run(c1)
+with tf.Session(graph=g2) as sess2:
+    print sess2.run(c2)
+{% endhighlight %}
+
+Tensorflow对计算图的简化，不仅在于使用默认的Graph。还在于可以只计算部分的Graph。以上面的softmax运算为例，如果`sess.run(add)`的话，后面的ReLU和softmax运算都不会被执行。
+
+参考：
 
 http://www.algorithmdog.com/dynamic-tensorflow
 
@@ -228,6 +273,54 @@ http://www.algorithmdog.com/dynamic-tensorflow
 https://zhuanlan.zhihu.com/p/23932714
 
 YJango的TensorFlow整体把握
+
+http://www.cnblogs.com/lienhua34/p/5998853.html
+
+Tensorflow学习笔记2：About Session, Graph, Operation and Tensor
+
+## Fused Graph
+
+Fused Graph是TensorFlow新推出的概念。这里以softmax运算为例，讲一下它的基本思想。
+
+上面的softmax运算计算图中，总共有4个operation。Fused Graph则将这4个op整合为1个op，发给运算单元。
+
+这样不同的硬件厂商就可以自行对这个整合的op进行解释。功能强的硬件，可能直接就支持softmax运算。功能弱的硬件也不怕，反正总归可以将softmax分解为基本运算的。
+
+Qualcomm Hexagon平台的Fused Graph实现可参见：
+
+tensorflow/core/kernels/hexagon
+
+参考：
+
+https://developers.googleblog.com/2017/03/xla-tensorflow-compiled.html
+
+XLA - TensorFlow, compiled
+
+## Eigen
+
+Eigen是一个线性代数方面的C++模板库。tensorflow和caffe2都使用了这个库。
+
+官网：
+
+http://eigen.tuxfamily.org/
+
+参见：
+
+https://zhuanlan.zhihu.com/p/26512099
+
+tensorflow和caffe2
+
+## Slim
+
+原始的TensorFlow API由于过于简单，在实际使用中多有不便。因此TensorFlow又提供了一套Slim API，用以简化编程。和Keras这样的前端不同，Slim API可以和TensorFlow API混编。或者说两者本来就是一体的。
+
+代码：
+
+tensorflow/contrib/slim
+
+示例：
+
+https://github.com/mnuke/tf-slim-mnist
 
 ## 参考
 
@@ -323,12 +416,6 @@ https://mp.weixin.qq.com/s/jMPVl3CWvL7MSzq5F12YxQ
 
 维度、广播操作与可视化：如何高效使用TensorFlow
 
-## 基本概念
-
-**Variables**：训练模型的时候，那些在样本之间表示结点状态的变量。一般来说，就是神经网络的参数。
-
-**Placeholders**：对于每个样本都不相同的变量。比如神经网络的输入变量x和输出变量y。
-
 ## 我的TensorFlow实践
 
 ### MNIST+Softmax
@@ -344,51 +431,5 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tenso
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_cnn.py
 
 第一个例子中，我对CPU的计算能力还没有切肤之痛，但在这里使用CPU差不多要花半个小时时间。。。
-
-### Fused Graph
-
-Fused Graph是TensorFlow新推出的概念。这里以softmax运算为例，讲一下它的基本思想。
-
-![](/images/article/fused_graph.png)
-
-上图是softmax运算的计算图，图中总共有4个operation。Fused Graph则将这4个op整合为1个op，发给运算单元。
-
-这样不同的硬件厂商就可以自行对这个整合的op进行解释。功能强的硬件，可能直接就支持softmax运算。功能弱的硬件也不怕，反正总归可以将softmax分解为基本运算的。
-
-Qualcomm Hexagon平台的Fused Graph实现可参见：
-
-tensorflow/core/kernels/hexagon
-
-参考：
-
-https://developers.googleblog.com/2017/03/xla-tensorflow-compiled.html
-
-XLA - TensorFlow, compiled
-
-### Eigen
-
-Eigen是一个线性代数方面的C++模板库。tensorflow和caffe2都使用了这个库。
-
-官网：
-
-http://eigen.tuxfamily.org/
-
-参见：
-
-https://zhuanlan.zhihu.com/p/26512099
-
-tensorflow和caffe2
-
-## Slim
-
-原始的TensorFlow API由于过于简单，在实际使用中多有不便。因此TensorFlow又提供了一套Slim API，用以简化编程。和Keras这样的前端不同，Slim API可以和TensorFlow API混编。或者说两者本来就是一体的。
-
-代码：
-
-tensorflow/contrib/slim
-
-示例：
-
-https://github.com/mnuke/tf-slim-mnist
 
 

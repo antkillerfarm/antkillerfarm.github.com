@@ -278,9 +278,9 @@ https://mp.weixin.qq.com/s/GSHk-otPeyGZN5xRNehAyw
 
 KBQA从入门到放弃—入门篇
 
-https://mp.weixin.qq.com/s/QjGOrv6dCe6tJ_LFcFDF6g
+https://mp.weixin.qq.com/s/-Zz5Cv4QJaRHdBFrGyBuLg
 
-揭开知识库问答KB-QA的面纱2·语义解析篇
+KBQA从入门到放弃 - Part 2
 
 http://www.jianshu.com/p/371a9dd9bba1
 
@@ -297,6 +297,10 @@ https://mp.weixin.qq.com/s/c7nXiFCI3urS0cbSUSsgYg
 https://mp.weixin.qq.com/s/wJry8N4FC9KVv_bVGuzXXw
 
 LinkedIn文本分析平台：主题挖掘的四大技术步骤
+
+http://mp.weixin.qq.com/s/Or6oDt0aZFlnlMr8EBr-xQ
+
+三角兽首席科学家王宝勋：热度之下的对话生成
 
 # Javascript在客户端的使用
 

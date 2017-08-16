@@ -6,6 +6,26 @@ category: theory
 
 # 模型压缩（续）
 
+其次还可以看看图森科技的论文：
+
+https://www.zhihu.com/question/62068158
+
+如何评价图森科技连发的三篇关于深度模型压缩的文章？
+
+图森的思路比较有意思。其中的方法之一，是利用L1规则化会导致结果的稀疏化的特性，制造出一批接近0的参数。从而达到去除不重要的参数的目的。
+
+除此之外，矩阵量化、Kronecker内积、霍夫曼编码、模型剪枝等也是常见的模型压缩方法。
+
+当然最系统的做法还属Geoffrey Hinton的论文：
+
+《Distilling the Knowledge in a Neural Network》
+
+图森科技的后两篇论文也是在Hinton论文的基础上改进的。
+
+论文：
+
+《Articulatory and Spectrum Features Integration using Generalized Distillation Framework》
+
 参考：
 
 https://zhuanlan.zhihu.com/p/24337627
@@ -35,6 +55,14 @@ https://mp.weixin.qq.com/s/0KlnQ8UUxpyhBRdeo0EOAA
 https://mp.weixin.qq.com/s/lO2UM04PfSM5VJYh6vINhw
 
 为模型减减肥：谈谈移动／嵌入式端的深度学习
+
+https://mp.weixin.qq.com/s/cIGuJvYr4lZW01TdINBJnA
+
+深度压缩网络：较大程度减少了网络参数存储问题
+
+https://mp.weixin.qq.com/s/1JwLP0FmV1AGJ65iDgLWQw
+
+神经网络模型压缩技术
 
 # 依存分析
 

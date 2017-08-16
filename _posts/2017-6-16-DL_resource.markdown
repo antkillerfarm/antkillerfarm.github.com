@@ -236,6 +236,10 @@ https://mp.weixin.qq.com/s/zSBpqhoyROh74UZEItBanA
 
 基于概率隐层模型的购物搭配推送：阿里巴巴提出新型用户偏好预测模型
 
+http://mp.weixin.qq.com/s/nmLNKscP1qxyv_aoSrwEEw
+
+基于大规模图计算的本地算法对展示广告的行为预测
+
 ### TPU & GPU & 并行
 
 https://zhuanlan.zhihu.com/p/25382177
@@ -344,21 +348,17 @@ http://blog.csdn.net/tangwei2014/article/details/55077172
 
 二值化神经网络介绍
 
-https://mp.weixin.qq.com/s/1JwLP0FmV1AGJ65iDgLWQw
-
-神经网络模型压缩技术
-
-https://mp.weixin.qq.com/s/LQFuXgI7uZK2UKRfZvlVbA
-
-Variational AutoEncoder
-
 https://mp.weixin.qq.com/s/xbimfckVD0Ol0T1n0-_ktA
 
 从浅层模型到深度模型：概览机器学习优化算法
 
-https://mp.weixin.qq.com/s/cIGuJvYr4lZW01TdINBJnA
+https://mp.weixin.qq.com/s/Lp2pq95woQ5-E3RemdRnyw
 
-深度压缩网络：较大程度减少了网络参数存储问题
+动态层归一化（Dynamic Layer Normalization）
+
+https://mp.weixin.qq.com/s/09uzm9LJxJwLL-bEoayJbg
+
+深度学习中的常见分布
 
 ### 实战
 

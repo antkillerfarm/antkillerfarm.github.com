@@ -320,6 +320,14 @@ https://mp.weixin.qq.com/s/EcAAc_ypajEKXUQbOoYAMA
 
 如何选择IR filter
 
+https://mp.weixin.qq.com/s/LMz6ru3nyld7fnDLcQOepg
+
+如何搭建大规模机器学习平台？以阿里和蚂蚁的多个实际场景为例
+
+https://mp.weixin.qq.com/s/5rNpp2cYZhcOKZCiy4LkMQ
+
+SAR成像原理及图像鉴赏
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

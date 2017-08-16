@@ -102,6 +102,14 @@ http://www.cnblogs.com/ello/archive/2012/04/28/2475419.html
 
 浅析人脸检测之Haar分类器方法
 
+https://mp.weixin.qq.com/s/zZNJKUYlmKKSuSRCM1sgeg
+
+OpenCV二维码检测与定位
+
+https://mp.weixin.qq.com/s/R2kGr7NHorfnpHV9OD18Qw
+
+基于OpenCV的摄像头圆心计算
+
 https://mp.weixin.qq.com/s/N2z2c6X7IAsjMbZv9DSNpA
 
 有效遮挡检测的鲁棒人脸识别
@@ -216,7 +224,7 @@ https://mp.weixin.qq.com/s/bGbslnuG80S6gPwD4FHuMg
 
 https://mp.weixin.qq.com/s/eCtqMIo3_UDxAR4fWzMjZQ
 
-站在锤子手机背后，小源科技用 AI 打造短信场景服务
+站在锤子手机背后，小源科技用AI打造短信场景服务
 
 https://mp.weixin.qq.com/s/SZlFgnUBL0T6yNa-i_WLvg
 
@@ -418,4 +426,7 @@ https://am207.github.io/2017/
 
 哈佛课程：Advanced Scientific Computing: Stochastic Optimization Methods. Monte Carlo Methods for Inference and Data Analysis
 
+https://www.deeplearning.ai/
+
+吴恩达离开百度之后开设的DL教程
 
