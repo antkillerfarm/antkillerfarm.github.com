@@ -294,6 +294,38 @@ https://zhuanlan.zhihu.com/p/28445511
 
 浅析深度学习框架设计中的关键技术
 
+https://zhuanlan.zhihu.com/p/26594188
+
+浅析Yann LeCun提到的两款Dataflow Chip
+
+https://zhuanlan.zhihu.com/p/26552293
+
+Dataflow架构和神经网络加速器
+
+https://zhuanlan.zhihu.com/p/25728988
+
+AI芯片的几种选择，你更看好哪个？
+
+https://zhuanlan.zhihu.com/p/25510056
+
+ISSCC 2017看AI芯片的四大趋势
+
+https://zhuanlan.zhihu.com/p/26404565
+
+AI芯片四大流派论剑，中国能否弯道超车？
+
+https://zhuanlan.zhihu.com/p/27472524
+
+从 AI 芯片说起，一起来看芯片门类
+
+https://mp.weixin.qq.com/s/Cy_vb0PpcvGTDmlMt1VkSw
+
+从GPU、TPU到FPGA及其它：一文读懂神经网络硬件平台战局
+
+https://mp.weixin.qq.com/s/RKRDBiBzG5u2P2eaqNAFbg
+
+机器学习的处理器列表
+
 ### 算法
 
 http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww
@@ -456,15 +488,4 @@ https://mp.weixin.qq.com/s/2FDVt1-U6f0gicCVtZh4cA
 
 伯克利联合OpenAI发布新型深度学习方法TCML：学习通用型算法
 
-https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
-
-NTIRE2017夺冠论文：用于单一图像超分辨率的增强型深度残差网络
-
-https://mp.weixin.qq.com/s/WMakTEN68KPi7X9kMQetiw
-
-OpenAI:3段视频演示无人驾驶目标检测强大的对抗性样本！
-
-https://mp.weixin.qq.com/s/_dDLbPwpgoOdLc83_JQEuA
-
-CVPR现场会议合集及CCCV内容跟踪
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（八）——目标检测, RCNN, 模型压缩
+title:  深度学习（八）——目标检测, RCNN
 category: theory 
 ---
 
@@ -123,6 +123,14 @@ Selective Search的主要思想:
 
 **Step 1**：使用一种过分割手段，将图像分割成小区域 (1k~2k 个)。
 
+这里的步骤实际上并不简单，可参考论文：
+
+《Efficient Graph-Based Image Segmentation》
+
+中文版：
+
+http://blog.csdn.net/surgewong/article/details/39008861
+
 **Step 2**：查看现有小区域，按照合并规则合并可能性最高的相邻两个区域。重复直到整张图像合并成一个区域位置。
 
 **Step 3**：输出所有曾经存在过的区域，所谓候选区域。
@@ -136,6 +144,16 @@ Selective Search的主要思想:
 3.合并后总面积小的：保证合并操作的尺度较为均匀，避免一个大区域陆续“吃掉”其他小区域（例：设有区域a-b-c-d-e-f-g-h。较好的合并方式是：ab-cd-ef-gh -> abcd-efgh -> abcdefgh。不好的合并方法是：ab-c-d-e-f-g-h ->abcd-e-f-g-h ->abcdef-gh -> abcdefgh）
 
 4.合并后，总面积在其bounding box中所占比例大的：保证合并后形状规则。
+
+Step2和Step3可参考论文：
+
+《Selective Search for Object Recognition》
+
+中文版：
+
+http://blog.csdn.net/surgewong/article/details/39316931
+
+http://blog.csdn.net/charwing/article/details/27180421
 
 ![](/images/article/rcnn_3.png)
 
@@ -272,34 +290,4 @@ YOLO比R-CNN快1000倍，比Fast R-CNN快100倍的实时对象检测！
 http://www.jianshu.com/p/ebebfcd274e6
 
 Caffe-SSD 训练自己的数据集教程
-
-# 模型压缩
-
-对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。
-
-此外，对于一些较大的模型（如VGG），即使机器再给力，单位时间内能处理的图像数量，往往也无法达到实际应用的要求。这点在自动驾驶和视频处理领域显得尤为突出。
-
-这里首先提到的是韩松的两篇论文：
-
-《Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding》
-
-《Learning both Weights and Connections for Efficient Neural Networks》
-
->韩松，清华本科（2012）+Stanford博士（2017）。MIT AP（from 2018）。   
->个人主页：   
->https://stanford.edu/~songhan/
-
-韩松也是SqueezeNet的二作。
-
-![](/images/article/nn_compression.png)
-
-韩松论文的中心思想如上图所示。简单来说，就是去掉原有模型的一些不重要的参数、结点和层。
-
-参数的选择，相对比较简单。参数的绝对值越接近零，它对结果的贡献就越小。这一点和稀疏矩阵有些类似。
-
-结点和层的选择，相对麻烦一些，需要通过算法得到不重要的层。
-
-比如可以逐个将每一层50%的参数置零，查看模型性能。对性能影响不大的层就是不重要的。
-
-虽然这些参数、结点和层相对不重要，但是去掉之后，仍然会对准确度有所影响。这时可以对精简之后的模型，用训练样本进行re-train，通过残差对模型进行一定程度的修正，以提高准确度。
 

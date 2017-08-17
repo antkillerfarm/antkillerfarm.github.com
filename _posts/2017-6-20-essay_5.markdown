@@ -187,6 +187,10 @@ param {
 
 **flatten**：将n * c * h * w的blob，转换成n * (c*h*w)的结构。
 
+## 代码
+
+Caffe的代码相对比较简单，符合个人作品的特点。Caffe没有计算图的概念，所有操作都聚焦于NN本身，对于实际业务的支持有限。但简单的结构非常适合于学术界的使用。
+
 ## 参考
 
 https://mp.weixin.qq.com/s/-Jn4UbZ6EqRYceJqI1l16g

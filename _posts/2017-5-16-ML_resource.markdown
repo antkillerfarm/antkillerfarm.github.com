@@ -24,6 +24,10 @@ https://woaielf.github.io/
 
 一个医学妹子的blog，有大量的数据挖掘的思维导图。
 
+https://mp.weixin.qq.com/s/n2EVcM5ezS1htzXy3PLVnw
+
+机器学习中的数学基础(包含大量网络课程)
+
 ## 文章
 
 http://www.open-open.com/lib/view/open1420687784625.html
@@ -357,6 +361,10 @@ https://mp.weixin.qq.com/s/h8qkDt7fmFzVxQcKkwqRzQ
 https://mp.weixin.qq.com/s/5W24x067Dc1-136lGF8XuQ
 
 计算机科学中最重要的32个算法
+
+https://mp.weixin.qq.com/s/wTwx0JULdBc3cqxPhig8UA
+
+感知机更新算法正确性的直观理解
 
 # PMML
 

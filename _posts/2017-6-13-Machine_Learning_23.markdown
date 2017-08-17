@@ -220,6 +220,30 @@ $$DM:P(Y,R|O)\to P(Y|O)$$
 
 # DL参考资源
 
+https://mp.weixin.qq.com/s/SBppyDBWqQUariiHbpaq1w
+
+实时深度学习的推理加速和连续学习
+
+https://mp.weixin.qq.com/s/VAEH_241IAuEH5S6H6ep5w
+
+UC伯克利提出新型视觉描述系统，物体描述无需大量样本
+
+https://mp.weixin.qq.com/s/v_TLYYq6cFWuwR9tXM8m-A
+
+如何通过CRF-RNN模型实现图像语义分割任务
+
+https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
+
+NTIRE2017夺冠论文：用于单一图像超分辨率的增强型深度残差网络
+
+https://mp.weixin.qq.com/s/WMakTEN68KPi7X9kMQetiw
+
+OpenAI:3段视频演示无人驾驶目标检测强大的对抗性样本！
+
+https://mp.weixin.qq.com/s/_dDLbPwpgoOdLc83_JQEuA
+
+CVPR现场会议合集及CCCV内容跟踪
+
 https://mp.weixin.qq.com/s/xnbNkKOomwvwYC_ThKPJ_g
 
 田渊栋报告：游戏中的人工智能：成就与挑战
@@ -236,4 +260,12 @@ http://mp.weixin.qq.com/s/SNfSY4CKhX1RDWd4itPx2Q
 
 马里兰大学论文：训练深度神经网络中的一致性难题
 
+https://mp.weixin.qq.com/s/BWBrso7O1O3Rfxa4QWZH4g
 
+分分钟学会基于深度学习的图像真实风格迁移！
+
+# ML参考资源
+
+https://mp.weixin.qq.com/s/4O1_9ly5DxpdjzQ2Nilcpw
+
+关于机器学习算法你必须了解的几点内容！

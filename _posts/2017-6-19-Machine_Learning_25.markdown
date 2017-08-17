@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十五）——机器学习语录, OpenVX
+title:  机器学习（二十五）——机器学习语录, OpenVX, NVIDIA
 category: theory 
 ---
 
@@ -258,18 +258,6 @@ https://mp.weixin.qq.com/s/WTRD3wRQ_wSXjjlt7jiwSg
 
 CommandCenter：基于暴雪官方API的星际争霸2 AI Bot
 
-https://mp.weixin.qq.com/s/SBppyDBWqQUariiHbpaq1w
-
-实时深度学习的推理加速和连续学习
-
-https://mp.weixin.qq.com/s/VAEH_241IAuEH5S6H6ep5w
-
-UC伯克利提出新型视觉描述系统，物体描述无需大量样本
-
-https://mp.weixin.qq.com/s/v_TLYYq6cFWuwR9tXM8m-A
-
-如何通过CRF-RNN模型实现图像语义分割任务
-
 # OpenVX
 
 ## Khronos Group
@@ -343,4 +331,36 @@ OpenCL是一个硬件中立标准，原则上和计算机的体系结构无关�
 http://blog.csdn.net/leonwei/article/details/8880012
 
 从零开始学习OpenCL开发（一）架构
+
+# NVIDIA
+
+NVIDIA作为行业龙头，其影响力甚至在Khronos Group之上，它提出的标准很多成为了行业的事实标准。
+
+## CUDA
+
+CUDA是NVIDIA最早推出的通用数学运算库。除了基本的数学运算之外，还提供了一些工具包：
+
+cuBLAS：线性计算库。
+
+NVBLAS：多GPU版的cuBLAS。
+
+cuFFT：FFT计算库。
+
+nvGRAPH：图计算库。（这里的图是数学图论中的图，和DL框架中的计算图是两回事。）
+
+cuRAND：随机数生成库。
+
+cuSPARSE；稀疏矩阵计算库。
+
+cuSOLVER：解线性方程的计算库。包括解稠密方程的cuSolverDN、解稀疏方程的cuSolverSP和矩阵分解的cuSolverRF。
+
+## Deep Learning SDK
+
+cuDNN：DL计算库。
+
+NCCL：多结点、多GPU的通信库。
+
+TensorRT：嵌入式设备上专用于DL inference的计算库。
+
+
 

@@ -302,6 +302,14 @@ http://mp.weixin.qq.com/s/Or6oDt0aZFlnlMr8EBr-xQ
 
 三角兽首席科学家王宝勋：热度之下的对话生成
 
+https://mp.weixin.qq.com/s/i4u4Ty8kC0zzUpmRqj8g7A
+
+473个模型试验告诉你文本分类中的最好编码方式
+
+https://mp.weixin.qq.com/s/-gnzRjLerqIyLPLBkZNmcA
+
+深度学习在NLP中的运用？从分词、词性到机器翻译、对话系统
+
 # Javascript在客户端的使用
 
 Javascript在服务器前端的成功，促使人们思考其在客户端的使用。
