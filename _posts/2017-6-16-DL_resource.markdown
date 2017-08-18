@@ -326,6 +326,10 @@ https://mp.weixin.qq.com/s/RKRDBiBzG5u2P2eaqNAFbg
 
 机器学习的处理器列表
 
+https://mp.weixin.qq.com/s/7JGLm-hkCZBNDLA98qvWNA
+
+自动生成硬件优化内核：陈天奇等人发布深度学习编译器TVM
+
 ### 算法
 
 http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww

@@ -264,8 +264,29 @@ https://mp.weixin.qq.com/s/BWBrso7O1O3Rfxa4QWZH4g
 
 分分钟学会基于深度学习的图像真实风格迁移！
 
+https://mp.weixin.qq.com/s/5Vg9RFvyNv6T7QkIfPm1aQ
+
+DOTA2中打败Dendi的AI如何炼出？
+
+https://mp.weixin.qq.com/s/ViQqeER1NXtJOtnLg76TWg
+
+关于远程监督，我们来推荐几篇值得读的论文
+
+https://mp.weixin.qq.com/s/DEJ0z2CahZIrhTE3VXNVvg
+
+基于注意力机制学习的人脸幻构
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/4O1_9ly5DxpdjzQ2Nilcpw
 
 关于机器学习算法你必须了解的几点内容！
+
+https://mp.weixin.qq.com/s/h8qkDt7fmFzVxQcKkwqRzQ
+
+滴滴KDD2017论文：基于组合优化的出租车分单模型
+
+https://mp.weixin.qq.com/s/AsZyjwUclEoxxl2VRBekHA
+
+拟合目标函数后验分布的调参利器：贝叶斯优化
+

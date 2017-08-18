@@ -416,6 +416,10 @@ https://mp.weixin.qq.com/s/jMPVl3CWvL7MSzq5F12YxQ
 
 维度、广播操作与可视化：如何高效使用TensorFlow
 
+https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
+
+简易浣熊识别器是如何实现的
+
 ## 我的TensorFlow实践
 
 ### MNIST+Softmax

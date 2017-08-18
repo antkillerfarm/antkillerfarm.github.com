@@ -302,6 +302,10 @@ https://mp.weixin.qq.com/s/ttCfpEomKLJUC1C3xK64HA
 
 10幅图解释机器学习中的基本概念
 
+https://mp.weixin.qq.com/s/eSAbkGYzfAiEpiOYTT5Z0A
+
+图解机器学习十大算法
+
 https://mp.weixin.qq.com/s/ubpRPQ7-1nvY5CzICWi1Cg
 
 似乎没区别，但你混淆过验证集和测试集吗？
@@ -353,10 +357,6 @@ https://mp.weixin.qq.com/s?__biz=MzU3NTE1OTE0Ng==&mid=2247483709&idx=1&sn=6e1a81
 https://mp.weixin.qq.com/s/i2Ex8Zmu2ZzHPcoPr-1Rlw
 
 太阳系相关图，教你优雅的打开“可视化”的大门
-
-https://mp.weixin.qq.com/s/h8qkDt7fmFzVxQcKkwqRzQ
-
-滴滴KDD2017论文：基于组合优化的出租车分单模型
 
 https://mp.weixin.qq.com/s/5W24x067Dc1-136lGF8XuQ
 

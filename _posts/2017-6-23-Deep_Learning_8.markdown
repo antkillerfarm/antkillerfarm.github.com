@@ -32,6 +32,10 @@ https://mp.weixin.qq.com/s/_cOuhToH8KvZldNfraumSQ
 
 什么促使了候选目标的有效检测？
 
+https://mp.weixin.qq.com/s/LAy1LKGj5HOh_e9jPgvfQw
+
+视觉目标检测和识别之过去，现在及可能
+
 ## 进化史
 
 DPM(2007)->RCNN(2014)->Fast RCNN->Faster RCNN
@@ -290,4 +294,12 @@ YOLO比R-CNN快1000倍，比Fast R-CNN快100倍的实时对象检测！
 http://www.jianshu.com/p/ebebfcd274e6
 
 Caffe-SSD 训练自己的数据集教程
+
+## ENet
+
+https://github.com/TimoSaemann/ENet
+
+《ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation》
+
+http://blog.csdn.net/zijinxuxu/article/details/67638290
 

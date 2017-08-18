@@ -220,6 +220,14 @@ https://github.com/largelymfs/topical_word_embeddings
 
 上图可以看出英语的确是世界语言啊。
 
+## 无监督的机器翻译
+
+无监督的机器翻译，其要点主要在于比较两种语言的语料的词向量，并找出词语间的对应关系。
+
+参见：
+
+http://nlp.csai.tsinghua.edu.cn/~zm/
+
 # 深度强化学习
 
 ## 教程

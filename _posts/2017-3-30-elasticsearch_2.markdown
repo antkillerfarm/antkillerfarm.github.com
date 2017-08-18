@@ -352,4 +352,12 @@ https://mp.weixin.qq.com/s/LO7Vo7zmC-avdijP7T9o8w
 
 对比激光SLAM与视觉SLAM：谁会成为未来主流趋势？
 
+https://mp.weixin.qq.com/s/Tfqqs_aOBIObeAMfG-9e4w
+
+SLAM入门+典型SLAM应用及解决方案
+
+https://mp.weixin.qq.com/s/97bIBKTADd2oIUBAabM04Q
+
+实时SLAM的未来以及深度学习与SLAM的比较
+
 
