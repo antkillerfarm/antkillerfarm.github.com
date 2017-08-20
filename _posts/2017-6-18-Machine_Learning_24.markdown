@@ -310,3 +310,29 @@ https://mp.weixin.qq.com/s/fXI5suCVna6fBxPnVyKevw
 
 浅谈NumPy和Pandas库
 
+# ML参考资源
+
+https://mp.weixin.qq.com/s/4O1_9ly5DxpdjzQ2Nilcpw
+
+关于机器学习算法你必须了解的几点内容！
+
+https://mp.weixin.qq.com/s/h8qkDt7fmFzVxQcKkwqRzQ
+
+滴滴KDD2017论文：基于组合优化的出租车分单模型
+
+https://mp.weixin.qq.com/s/AsZyjwUclEoxxl2VRBekHA
+
+拟合目标函数后验分布的调参利器：贝叶斯优化
+
+https://mp.weixin.qq.com/s/XuoeOqGT_mJcFP08ZLq38g
+
+如何选择一个合适的数据图表？
+
+https://mp.weixin.qq.com/s/Fa7P3v969JRr6OOAyrGptA
+
+数据驱动决策的13种思维
+
+https://mp.weixin.qq.com/s/K3EVwRFBJufXK5QKSQsPbQ
+
+这是一份为数据科学初学者准备的Kaggle竞赛指南
+

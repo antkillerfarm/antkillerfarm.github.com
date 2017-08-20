@@ -218,6 +218,31 @@ TensorFlow技术栈：
 
 ![](/images/article/tensorflow_layer.png)
 
+## 源代码编译
+
+**Step 1**：安装Bazel。
+
+{% highlight bash %}
+echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
+curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
+sudo apt-get update && sudo apt-get install bazel
+{% endhighlight %}
+
+**Step 2**：编译TensorFlow。
+
+{% highlight bash %}
+./configure
+# configure的时候要选择一些东西是否支持，这里建议都选N，不然后面会包错，如果支持显卡，就在cuda的时候选择y
+bazel build --config=opt //tensorflow/tools/pip_package:build_pip_package # CPU only
+bazel build --config=opt --config=cuda //tensorflow/tools/pip_package:build_pip_package # GPU
+{% endhighlight %}
+
+参考：
+
+http://www.jianshu.com/p/b1faa10c9238
+
+TensorFlow CPU环境SSE/AVX/FMA指令集编译
+
 ## 基本概念
 
 **Variables**：训练模型的时候，那些在样本之间表示结点状态的变量。一般来说，就是神经网络的参数。
@@ -363,62 +388,6 @@ https://mp.weixin.qq.com/s/OmVAnkHV2aI4D4pMKyVjCQ
 https://mp.weixin.qq.com/s/5wy6yqaW_9pMBhgw8qDdOQ
 
 基于TensorFlow打造强化学习API
-
-https://mp.weixin.qq.com/s/YOyOR8fdaEKcydAywcc-HA
-
-如何使用TensorFlow API构建视频物体识别系统
-
-https://mp.weixin.qq.com/s/gnDTOLWuPZiCVzspTk_zCQ
-
-TensorFlow轻度入门
-
-https://mp.weixin.qq.com/s/MYBTWL3X_OhLZL6C4rISzw
-
-TensorFlow训练线性回归
-
-http://www.jianshu.com/p/d443aab9bcb1
-
-在TensorFlow上使用LSTM进行情感分析
-
-https://mp.weixin.qq.com/s/5QYlh6gV9IqdQfraK4DC8w
-
-10种深度学习算法的TensorFlow实现
-
-https://mp.weixin.qq.com/s/68vaQRqUo8u09iheKzFVEw
-
-玩转TensorFlow深度学习
-
-https://mp.weixin.qq.com/s/TZMOO_LFCxk297lKNQfvGQ
-
-TensorFlow从基础到实战：一步步教你创建交通标志分类神经网络
-
-http://blog.csdn.net/u012436149
-
-一个TensorFlow+PyTorch的blog
-
-https://mp.weixin.qq.com/s/HUUwtyjRllg-5olqYHK4XA
-
-基于TensorFlow的开源项目FaceRank
-
-https://mp.weixin.qq.com/s/N2OP1uX7JjfIJQ_B4NHKpw
-
-横向对比三大分布式机器学习平台：Spark、PMLS、TensorFlow
-
-https://github.com/jinfagang/rl_atari_pytorch
-
-ReinforcementLearning Learn Play Atari Using DDPG and LSTM.
-
-https://mp.weixin.qq.com/s/JSZwQkyxSSwfBWKJ578j3A
-
-TensorFlow最好的入门文章
-
-https://mp.weixin.qq.com/s/jMPVl3CWvL7MSzq5F12YxQ
-
-维度、广播操作与可视化：如何高效使用TensorFlow
-
-https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
-
-简易浣熊识别器是如何实现的
 
 ## 我的TensorFlow实践
 

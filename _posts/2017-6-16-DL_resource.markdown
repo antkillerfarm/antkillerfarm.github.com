@@ -190,6 +190,10 @@ https://mp.weixin.qq.com/s/h1mXHJrUpK2_3RcfYXujqw
 
 深度学习调参入门之小技巧
 
+https://mp.weixin.qq.com/s/qR1qagsS9YVxNye5DWG23Q
+
+值得收藏的深度学习思维导图
+
 ### 推荐系统
 
 http://mp.weixin.qq.com/s/Aw2INWuwPlXmkPEY0CZf6g
@@ -316,7 +320,7 @@ AI芯片四大流派论剑，中国能否弯道超车？
 
 https://zhuanlan.zhihu.com/p/27472524
 
-从 AI 芯片说起，一起来看芯片门类
+从AI芯片说起，一起来看芯片门类
 
 https://mp.weixin.qq.com/s/Cy_vb0PpcvGTDmlMt1VkSw
 
@@ -329,6 +333,10 @@ https://mp.weixin.qq.com/s/RKRDBiBzG5u2P2eaqNAFbg
 https://mp.weixin.qq.com/s/7JGLm-hkCZBNDLA98qvWNA
 
 自动生成硬件优化内核：陈天奇等人发布深度学习编译器TVM
+
+https://mp.weixin.qq.com/s/4Ii3um3jqfm5yKKxZAFdmA
+
+继1小时训练ImageNet之后，大批量训练扩展到了3万2千个样本
 
 ### 算法
 

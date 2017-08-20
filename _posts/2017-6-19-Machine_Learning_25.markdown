@@ -332,6 +332,14 @@ http://blog.csdn.net/leonwei/article/details/8880012
 
 从零开始学习OpenCL开发（一）架构
 
+## MKL
+
+Intel Math Kernel Library是一套经过高度优化和广泛线程化的数学例程，专为需要极致性能的科学、工程及金融等领域的应用而设计。
+
+官网：
+
+https://software.intel.com/zh-cn/mkl
+
 # NVIDIA
 
 NVIDIA作为行业龙头，其影响力甚至在Khronos Group之上，它提出的标准很多成为了行业的事实标准。

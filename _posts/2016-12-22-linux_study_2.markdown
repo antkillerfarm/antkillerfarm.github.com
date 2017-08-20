@@ -200,6 +200,12 @@ http://www.image-net.org/
 >个人主页：   
 >http://vision.stanford.edu/feifeili/
 
+http://ai.stanford.edu/~syyeung/
+
+http://cs.stanford.edu/people/karpathy/
+
+http://www.arxiv-sanity.com/
+
 需要注意的是，由于ImageNet的数据过于庞大，因此主页下载的数据文件，仅仅只是图片的URL而已。
 
 ## PASCAL VOC

@@ -157,11 +157,19 @@ https://nlp.stanford.edu/projects/glove/
 
 textsum是一个基于深度学习的文本自动摘要工具。
 
+代码：
+
 https://github.com/tensorflow/models/tree/master/textsum
+
+参考：
 
 http://www.jiqizhixin.com/article/1449
 
+谷歌开源新的TensorFlow文本自动摘要代码
+
 http://blog.csdn.net/tensorflowshizhan/article/details/69230070
+
+TensorFlow文本摘要生成 - 基于注意力的序列到序列模型
 
 ### jieba
 
@@ -400,4 +408,9 @@ facebook的一个开源的翻译类深度学习项目。
 https://speechlab.sjtu.edu.cn/pages/sz128/homepage/year/10/27/survey-on-grammar-retrieval/
 
 论文调研：基于“规则、槽值”检索的口语语义理解
+
+http://geek.csdn.net/news/detail/230350
+
+无监督对话数据清洗利器：Data Purification Framework
+
 

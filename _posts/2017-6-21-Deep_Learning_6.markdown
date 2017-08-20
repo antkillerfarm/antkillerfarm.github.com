@@ -170,6 +170,10 @@ http://www.cnblogs.com/Allen-rg/p/5833919.html
 
 GoogLeNet学习心得
 
+https://mp.weixin.qq.com/s/I94gGXXW_eE5hSHIBOsJFQ
+
+无需数学背景，读懂ResNet、Inception和Xception三大变革性架构
+
 # GAN
 
 ## 概况

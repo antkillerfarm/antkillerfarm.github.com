@@ -140,6 +140,12 @@ $$\alpha_i=C \Leftrightarrow y^{(i)}u_i\le 1$$
 
 最后的收敛条件是在界内（$$0<\alpha_i<C$$）的样例都能够遵循KKT条件，且其对应的$$\alpha_i$$只在极小的范围内变动。
 
+参考：
+
+https://mp.weixin.qq.com/s/pXhNRAvJI88tycMsrWhgcQ
+
+机器学习中的算法：支持向量机(SVM)基础
+
 # 学习理论
 
 ## 偏差和方差

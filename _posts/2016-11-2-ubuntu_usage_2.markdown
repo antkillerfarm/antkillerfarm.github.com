@@ -366,3 +366,32 @@ VNCSERVERARGS[1]="-geometry 1280x1024"
 
 http://www.tecmint.com/install-tightvnc-remote-desktop/
 
+# TensorFlow
+
+## 参考
+
+https://mp.weixin.qq.com/s/YOyOR8fdaEKcydAywcc-HA
+
+如何使用TensorFlow API构建视频物体识别系统
+
+https://mp.weixin.qq.com/s/gnDTOLWuPZiCVzspTk_zCQ
+
+TensorFlow轻度入门
+
+https://mp.weixin.qq.com/s/MYBTWL3X_OhLZL6C4rISzw
+
+TensorFlow训练线性回归
+
+http://www.jianshu.com/p/d443aab9bcb1
+
+在TensorFlow上使用LSTM进行情感分析
+
+https://mp.weixin.qq.com/s/5QYlh6gV9IqdQfraK4DC8w
+
+10种深度学习算法的TensorFlow实现
+
+https://zhuanlan.zhihu.com/p/28475975
+
+如何优雅地用TensorFlow预测时间序列：TFTS库详细教程
+
+

@@ -58,6 +58,10 @@ http://blog.csdn.net/soidnhp
 
 一个CV的blog。
 
+http://blog.csdn.net/liulina603
+
+一个CV的blog。
+
 http://blog.csdn.net/mmz_xiaokong/article/details/7916163
 
 机器视觉开源处理库汇总。

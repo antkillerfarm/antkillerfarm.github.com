@@ -276,17 +276,32 @@ https://mp.weixin.qq.com/s/DEJ0z2CahZIrhTE3VXNVvg
 
 基于注意力机制学习的人脸幻构
 
-# ML参考资源
+https://mp.weixin.qq.com/s/z1APyCxlOEPHn48OeJAHkQ
 
-https://mp.weixin.qq.com/s/4O1_9ly5DxpdjzQ2Nilcpw
+基于深度学习的视频内容识别
 
-关于机器学习算法你必须了解的几点内容！
+https://mp.weixin.qq.com/s/c2oMJfE95I1ciEtvdTlb4A
 
-https://mp.weixin.qq.com/s/h8qkDt7fmFzVxQcKkwqRzQ
+完全脱离预训练模型的目标检测方法
 
-滴滴KDD2017论文：基于组合优化的出租车分单模型
+https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
 
-https://mp.weixin.qq.com/s/AsZyjwUclEoxxl2VRBekHA
+谷歌提出多图像抠图算法，并弥补水印技术的一致性漏洞
 
-拟合目标函数后验分布的调参利器：贝叶斯优化
+https://zhuanlan.zhihu.com/p/28639662
+
+百家争鸣的Meta Learning/Learning to learn
+
+https://mp.weixin.qq.com/s/kMTMjlLgcR24DT7CXvezsA
+
+深度学习概念、架构和tensorflow的思维导图！
+
+https://mp.weixin.qq.com/s/Tx9JJ0cIo_rH7BDjd_hkvw
+
+Hinton碰撞LeCun：CNN有两大缺陷，要用capsule做下一代CNN
+
+https://www.jiqizhixin.com/articles/2017-07-27-2
+
+CVPR 2017李飞飞总结8年ImageNet历史，宣布挑战赛最终归于Kaggle
+
 

@@ -231,6 +231,10 @@ https://zhuanlan.zhihu.com/p/28488946
 
 AI可能真的要代替插画师了……
 
+https://mp.weixin.qq.com/s/OXN8Y5truLeslX8-UWgqmg
+
+宅男的福音：用GAN自动生成二次元萌妹子
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
