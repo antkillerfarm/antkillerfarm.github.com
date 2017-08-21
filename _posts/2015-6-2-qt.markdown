@@ -359,43 +359,4 @@ Python主要有三种数据类型：字典、列表、元组。其分别由花�
 
 元组：tup=(1,2,3,4)
 
-# TensorFlow
-
-## 参考
-
-https://mp.weixin.qq.com/s/68vaQRqUo8u09iheKzFVEw
-
-玩转TensorFlow深度学习
-
-https://mp.weixin.qq.com/s/TZMOO_LFCxk297lKNQfvGQ
-
-TensorFlow从基础到实战：一步步教你创建交通标志分类神经网络
-
-http://blog.csdn.net/u012436149
-
-一个TensorFlow+PyTorch的blog
-
-https://mp.weixin.qq.com/s/HUUwtyjRllg-5olqYHK4XA
-
-基于TensorFlow的开源项目FaceRank
-
-https://mp.weixin.qq.com/s/N2OP1uX7JjfIJQ_B4NHKpw
-
-横向对比三大分布式机器学习平台：Spark、PMLS、TensorFlow
-
-https://github.com/jinfagang/rl_atari_pytorch
-
-ReinforcementLearning Learn Play Atari Using DDPG and LSTM.
-
-https://mp.weixin.qq.com/s/JSZwQkyxSSwfBWKJ578j3A
-
-TensorFlow最好的入门文章
-
-https://mp.weixin.qq.com/s/jMPVl3CWvL7MSzq5F12YxQ
-
-维度、广播操作与可视化：如何高效使用TensorFlow
-
-https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
-
-简易浣熊识别器是如何实现的
 

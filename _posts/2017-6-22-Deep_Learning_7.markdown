@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（七）——fine-tuning
+title:  深度学习（七）——fine-tuning, 李飞飞
 category: theory 
 ---
 
@@ -269,15 +269,31 @@ h1ttps://www.zhihu.com/question/49534423
 
 迁移学习与fine-tuning有什么区别？
 
-# 目标检测
+# 李飞飞
 
-## 概述
+## AI大佬
 
-object detection是计算机视觉的一个重要的分支。类似的分支还有目标分割、目标识别和目标跟踪。
+李飞飞是吴恩达之后的华裔AI新大佬。巧合的是，他们都是斯坦福AP+AI lab的主任，只不过吴是李的前任而已。
 
-以下摘录自Sensetime CTO曹旭东的解读：
+**李飞飞（Fei-Fei Li）**，1976年生，成都人，16岁移民美国。普林斯顿大学本科（1995～1999）+加州理工学院博士（2001～2005）。先后执教于UIUC、普林斯顿、斯坦福等学校。
 
-传统方法使用滑动窗口的框架，把一张图分解成几百万个不同位置不同尺度的子窗口，针对每一个窗口使用分类器判断是否包含目标物体。传统方法针对不同的类别的物体，一般会设计不同的特征和分类算法，比如人脸检测的经典算法是**Harr特征+Adaboosting分类器**；行人检测的经典算法是**HOG(histogram of gradients)+Support Vector Machine**；一般性物体的检测的话是**HOG特征+DPM(deformable part model)的算法**。
+个人主页：
 
-基于深度学习的物体检测的经典算法是RCNN系列：RCNN，fast RCNN(Ross Girshick)，faster RCNN(少卿、凯明、孙剑、Ross)。这三个工作的核心思想是分别是：使用更好的CNN模型判断候选区域的类别；复用预计算的sharing feature map加快模型训练和物体检测的速度；进一步使用sharing feature map大幅提高计算候选区域的速度。其实基于深度学习的物体检测也可以看成对海量滑动窗口分类，只是用全卷积的方式。
+http://vision.stanford.edu/feifeili/
+
+## 大佬的门徒
+
+比如可爱的妹子**Serena Yeung**。这个妹子是斯坦福的本硕博。出身不详，但从姓名的英文拼法来看，应该是美国土生的华裔。Yeung是杨、阳、羊等姓的传统英文拼法，但显然不是大陆推行的拼音拼法。（可以对比的是Fei-Fei Li和Bruce Lee，对于姓的不同拼法）
+
+个人主页：
+
+http://ai.stanford.edu/~syyeung/
+
+还有当红的“辣子鸡”：**Andrej Karpathy**，多伦多大学本科（2009）+英属不列颠哥伦比亚大学硕士（2011）+斯坦福博士（2015）。现任特斯拉AI总监。
+
+吐槽一下：英属不列颠哥伦比亚大学其实是加拿大的一所大学。
+
+个人主页：
+
+http://cs.stanford.edu/people/karpathy/
 

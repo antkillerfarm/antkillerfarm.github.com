@@ -196,16 +196,6 @@ ImageNet是由李飞飞等创建的一个计算机视觉系统识别项目，是
 
 http://www.image-net.org/
 
->注：李飞飞（Fei-Fei Li），1976年生，普林斯顿大学本科（1995～1999）+加州理工学院博士（2001～2005）。先后执教于UIUC、普林斯顿、斯坦福等学校。   
->个人主页：   
->http://vision.stanford.edu/feifeili/
-
-http://ai.stanford.edu/~syyeung/
-
-http://cs.stanford.edu/people/karpathy/
-
-http://www.arxiv-sanity.com/
-
 需要注意的是，由于ImageNet的数据过于庞大，因此主页下载的数据文件，仅仅只是图片的URL而已。
 
 ## PASCAL VOC

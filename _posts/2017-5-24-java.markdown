@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Java（二）, Machine Learning之Java篇, TensorFlow
+title:  Java（二）, Machine Learning之Java篇, 深度强化学习
 category: technology 
 ---
 
@@ -180,229 +180,278 @@ https://mp.weixin.qq.com/s/WsjZERRkgnReWuDw_z5Hxw
 
 LibRec：一个覆盖70多种算法的推荐系统开源库！
 
-# TensorFlow
+# 深度强化学习
+
+## 教程
+
+http://incompleteideas.net/sutton/book/the-book-2nd.html
+
+《Reinforcement Learning: An Introduction》，Richard S. Sutton和Andrew G. Barto著。
+
+>注：Richard S. Sutton，加拿大计算机科学家，麻省大学阿姆赫斯特分校博士（1984年），阿尔伯塔大学教授。强化学习之父，研究该领域长达三十余年。
+
+>Andrew G. Barto，麻省大学阿姆赫斯特分校教授。Richard S. Sutton的导师。
+
+http://web.stanford.edu/class/cs234/syllabus.html
+
+CS234: Reinforcement Learning
 
 ## 概述
 
-TensorFlow是Google主导的开源深度学习库。官网：
-
-https://www.tensorflow.org/
-
-代码：
-
-https://github.com/tensorflow/tensorflow
-
-TensorFlow提供了一个可视化的神经网络展示：
-
-http://playground.tensorflow.org/
-
-还有若干已经实现好的经典神经网络模型（比如Autoencoder、ResNet等）：
-
-https://github.com/tensorflow/models/
-
-TensorFlow的教程：
-
-http://tensorflowtutorial.net/tensorflow-tutorial
-
-教程中文版：
-
-http://wiki.jikexueyuan.com/project/tensorflow-zh/
-
-安装：
-
-`pip install tensorflow`
-
-由于我的PC显卡不合要求，因此直接安装的是CPU版本，这也是最通用的版本。
-
-TensorFlow技术栈：
-
-![](/images/article/tensorflow_layer.png)
-
-## 源代码编译
-
-**Step 1**：安装Bazel。
-
-{% highlight bash %}
-echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
-curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
-sudo apt-get update && sudo apt-get install bazel
-{% endhighlight %}
-
-**Step 2**：编译TensorFlow。
-
-{% highlight bash %}
-./configure
-# configure的时候要选择一些东西是否支持，这里建议都选N，不然后面会包错，如果支持显卡，就在cuda的时候选择y
-bazel build --config=opt //tensorflow/tools/pip_package:build_pip_package # CPU only
-bazel build --config=opt --config=cuda //tensorflow/tools/pip_package:build_pip_package # GPU
-{% endhighlight %}
-
-参考：
-
-http://www.jianshu.com/p/b1faa10c9238
-
-TensorFlow CPU环境SSE/AVX/FMA指令集编译
-
-## 基本概念
-
-**Variables**：训练模型的时候，那些在样本之间表示结点状态的变量。一般来说，就是神经网络的参数。
-
-**Placeholders**：对于每个样本都不相同的变量。比如神经网络的输入变量x和输出变量y。
-
-## 图计算
-
-图计算是各个深度学习框架的中心概念，这里单独提出来讨论一下。
-
-![](/images/article/fused_graph.png)
-
-上图是softmax运算的计算图示例。计算图是一个有向无环图，它的结点代表原始数据和计算中间结果，边代表数据的流向。计算操作被称为**Operation**。
-
-因此，**计算图实际上是工作流（work flow）思想在数值计算领域的拓展**。这种流水线一般被称为**Graph**。
-
-流水线有了，还要有被加工的数据。数据在流水线上被加工的执行过程，被称为**Session**。
-
-Graph和Session的关系，类似于类和对象的关系。Session是Graph的动态实例。
-
-图计算的大致步骤如下：（这里以OpenVX函数为例，因为它更接近底层和硬件。）
-
-1.vxCreateGraph。创建计算图。
-
-2.vxProcessGraph。运行计算图。
-
-在大多数Tensorflow示例中，你看不到Graph的身影。但它并不是不存在，而是默认所有新加入的Operation都添加到默认的Graph。
-
-以下是使用多个Graph的示例：
-
-{% highlight python %}
-import tensorflow as tf
-g1 = tf.Graph()
-with g1.as_default():
-    c1 = tf.constant([1.0])
-with tf.Graph().as_default() as g2:
-    c2 = tf.constant([2.0])
-
-with tf.Session(graph=g1) as sess1:
-    print sess1.run(c1)
-with tf.Session(graph=g2) as sess2:
-    print sess2.run(c2)
-{% endhighlight %}
-
-Tensorflow对计算图的简化，不仅在于使用默认的Graph。还在于可以只计算部分的Graph。以上面的softmax运算为例，如果`sess.run(add)`的话，后面的ReLU和softmax运算都不会被执行。
-
-参考：
-
-http://www.algorithmdog.com/dynamic-tensorflow
-
-动态图计算：Tensorflow 第一次清晰地在设计理念上领先
-
-https://zhuanlan.zhihu.com/p/23932714
-
-YJango的TensorFlow整体把握
-
-http://www.cnblogs.com/lienhua34/p/5998853.html
-
-Tensorflow学习笔记2：About Session, Graph, Operation and Tensor
-
-## Fused Graph
-
-Fused Graph是TensorFlow新推出的概念。这里以softmax运算为例，讲一下它的基本思想。
-
-上面的softmax运算计算图中，总共有4个operation。Fused Graph则将这4个op整合为1个op，发给运算单元。
-
-这样不同的硬件厂商就可以自行对这个整合的op进行解释。功能强的硬件，可能直接就支持softmax运算。功能弱的硬件也不怕，反正总归可以将softmax分解为基本运算的。
-
-Qualcomm Hexagon平台的Fused Graph实现可参见：
-
-tensorflow/core/kernels/hexagon
-
-参考：
-
-https://developers.googleblog.com/2017/03/xla-tensorflow-compiled.html
-
-XLA - TensorFlow, compiled
-
-## Eigen
-
-Eigen是一个线性代数方面的C++模板库。tensorflow和caffe2都使用了这个库。
-
-官网：
-
-http://eigen.tuxfamily.org/
-
-参见：
-
-https://zhuanlan.zhihu.com/p/26512099
-
-tensorflow和caffe2
-
-## Slim
-
-原始的TensorFlow API由于过于简单，在实际使用中多有不便。因此TensorFlow又提供了一套Slim API，用以简化编程。和Keras这样的前端不同，Slim API可以和TensorFlow API混编。或者说两者本来就是一体的。
-
-代码：
-
-tensorflow/contrib/slim
-
-示例：
-
-https://github.com/mnuke/tf-slim-mnist
+![](/images/article/reinforcement_learning.png)
 
 ## 参考
 
-https://github.com/yahoo/TensorFlowOnSpark
+https://www.nervanasys.com/demystifying-deep-reinforcement-learning/
 
-TensorFlow On Spark
+深度强化学习揭秘
 
-https://silencezjl.coding.me/2017/05/01/%E5%81%B7%E4%B8%80%E6%B3%A2%E8%B5%84%E6%BA%90/
+http://blog.csdn.net/young_gy/article/details/73485518
 
-各种TensorFlow资源
+强化学习之Q-learning简介
 
-https://github.com/zsdev2015/machine_learning
+https://zhuanlan.zhihu.com/p/24446336
 
-某国内小牛写的中文入门demo，注释非常详细
+深度强化学习Deep Reinforcement Learning学习整理
 
-https://morvanzhou.github.io/tutorials/
+https://mp.weixin.qq.com/s/KNXD-MpVHQRXYvJKTqn6WA
 
-一个以python语言教学的ML、DL教程，比较通俗易懂。
+完善强化学习安全性：UC Berkeley提出约束型策略优化新算法
 
-https://mp.weixin.qq.com/s/gJBDXf_5ViPR9dNm3eH2Hg
+http://mp.weixin.qq.com/s/gHM7qh7UTKzatdg34cgfDQ
 
-TensorFlow初学者必须了解的55个经典案例
+强化学习全解
 
-https://mp.weixin.qq.com/s/bjxJyOitynRtCoW0FX1gXw
+http://mp.weixin.qq.com/s/lLPRwInF5qaw7ewYHOpPyw
 
-一文带你入门Tensorflow
+深度强化学习资料
 
-https://mp.weixin.qq.com/s/zmTqWNXlYcDyZb_dmEo_5Q
+https://mp.weixin.qq.com/s/f6sq8cSaU1cuzt7jhsK8Ig
 
-TensorFlow/PyTorch/Sklearn实现的五十种机器学习模型
+强化学习（Reinforcement Learning）基础介绍
 
-https://mp.weixin.qq.com/s/O5vvGKHWkJQWzeiL7A_S_g
+https://mp.weixin.qq.com/s/TGN6Zhrea2LPxdkspVTlAw
 
-TensorFlow简单介绍
+算法工程师入门——增强学习
 
-https://mp.weixin.qq.com/s/OmVAnkHV2aI4D4pMKyVjCQ
+https://mp.weixin.qq.com/s/aVWHlwOmNIqOlu3025_RXQ
 
-基于TensorFlow理解三大降维技术：PCA、t-SNE和自编码器
+DeepMind提出多任务强化学习新方法Distral
 
-https://mp.weixin.qq.com/s/5wy6yqaW_9pMBhgw8qDdOQ
+https://mp.weixin.qq.com/s/laKJ_jfNR5L1uMML9wkS1A
 
-基于TensorFlow打造强化学习API
+强化学习（Reinforcement Learning）算法基础及分类
 
-## 我的TensorFlow实践
+https://zhuanlan.zhihu.com/p/27699682
 
-### MNIST+Softmax
+荐译一篇通俗易懂的策略梯度（Policy Gradient）方法讲解
 
-代码：
+https://mp.weixin.qq.com/s/Cvk_cePK9iQd8JIKKDDrmQ
 
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_mnist.py
+强化学习的核心基础概念及实现
 
-### MNIST+CNN
+http://lamda.nju.edu.cn/yangjw/project/drlintro.html
 
-代码：
+深度强化学习初探
 
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_cnn.py
+https://zhuanlan.zhihu.com/p/21498750
 
-第一个例子中，我对CPU的计算能力还没有切肤之痛，但在这里使用CPU差不多要花半个小时时间。。。
+深度强化学习导引
+
+https://mp.weixin.qq.com/s/RnUWHa6QzgJbE_XqLeAQmg
+
+深度强化学习，决策与控制
+
+https://mp.weixin.qq.com/s/W9yhj7_frLYWJocoBR1TMQ
+
+避免AI错把黑人识别为大猩猩：伯克利大学提出协同反向强化学习
+
+https://mp.weixin.qq.com/s/R308ohdMU8b7Ap4CLofvDg
+
+OpenAI开源算法ACKTR与A2C：把可扩展的自然梯度应用到强化学习
+
+# DL参考资源
+
+https://mp.weixin.qq.com/s/SBppyDBWqQUariiHbpaq1w
+
+实时深度学习的推理加速和连续学习
+
+https://mp.weixin.qq.com/s/VAEH_241IAuEH5S6H6ep5w
+
+UC伯克利提出新型视觉描述系统，物体描述无需大量样本
+
+https://mp.weixin.qq.com/s/v_TLYYq6cFWuwR9tXM8m-A
+
+如何通过CRF-RNN模型实现图像语义分割任务
+
+https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
+
+NTIRE2017夺冠论文：用于单一图像超分辨率的增强型深度残差网络
+
+https://mp.weixin.qq.com/s/WMakTEN68KPi7X9kMQetiw
+
+OpenAI:3段视频演示无人驾驶目标检测强大的对抗性样本！
+
+https://mp.weixin.qq.com/s/_dDLbPwpgoOdLc83_JQEuA
+
+CVPR现场会议合集及CCCV内容跟踪
+
+https://mp.weixin.qq.com/s/xnbNkKOomwvwYC_ThKPJ_g
+
+田渊栋报告：游戏中的人工智能：成就与挑战
+
+https://mp.weixin.qq.com/s/W4zwKqkVQN4v-IKzGrkudg
+
+通过传递不变性实现自监督视觉表征学习
+
+http://mp.weixin.qq.com/s/LAgDobWyK0SOH08GCLXG7A
+
+减少30%流量，增加清晰度：MIT提出人工智能视频缓存新算法
+
+http://mp.weixin.qq.com/s/SNfSY4CKhX1RDWd4itPx2Q
+
+马里兰大学论文：训练深度神经网络中的一致性难题
+
+https://mp.weixin.qq.com/s/BWBrso7O1O3Rfxa4QWZH4g
+
+分分钟学会基于深度学习的图像真实风格迁移！
+
+https://mp.weixin.qq.com/s/5Vg9RFvyNv6T7QkIfPm1aQ
+
+DOTA2中打败Dendi的AI如何炼出？
+
+https://mp.weixin.qq.com/s/ViQqeER1NXtJOtnLg76TWg
+
+关于远程监督，我们来推荐几篇值得读的论文
+
+https://mp.weixin.qq.com/s/DEJ0z2CahZIrhTE3VXNVvg
+
+基于注意力机制学习的人脸幻构
+
+https://mp.weixin.qq.com/s/z1APyCxlOEPHn48OeJAHkQ
+
+基于深度学习的视频内容识别
+
+https://mp.weixin.qq.com/s/c2oMJfE95I1ciEtvdTlb4A
+
+完全脱离预训练模型的目标检测方法
+
+https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
+
+谷歌提出多图像抠图算法，并弥补水印技术的一致性漏洞
+
+https://zhuanlan.zhihu.com/p/28639662
+
+百家争鸣的Meta Learning/Learning to learn
+
+https://mp.weixin.qq.com/s/kMTMjlLgcR24DT7CXvezsA
+
+深度学习概念、架构和tensorflow的思维导图！
+
+https://mp.weixin.qq.com/s/Tx9JJ0cIo_rH7BDjd_hkvw
+
+Hinton碰撞LeCun：CNN有两大缺陷，要用capsule做下一代CNN
+
+https://www.jiqizhixin.com/articles/2017-07-27-2
+
+CVPR 2017李飞飞总结8年ImageNet历史，宣布挑战赛最终归于Kaggle
+
+https://mp.weixin.qq.com/s/-G94Mj-8972i2HtEcIZDpA
+
+人脸识别世界杯榜单出炉，微软百万名人识别竞赛冠军分享
+
+https://mp.weixin.qq.com/s/6_cW22DCzSw3DpUDrLXLcA
+
+OpenAI提出强化学习近端策略优化，可替代策略梯度法
+
+https://mp.weixin.qq.com/s/hkcVhyqiDW--F3QxucgEcA
+
+亚马逊开源神经机器翻译框架Sockeye：基于Apache MXNet的NMT平台
+
+https://mp.weixin.qq.com/s/TWdeHVCgEf54STvdA1QUPg
+
+DeepMind哈萨比斯长文：伟大的AI离不开神经科学
+
+https://mp.weixin.qq.com/s/Jdd7S6JFKRdsVe2w-W01IA
+
+Facebook田渊栋开源游戏平台ELF，简化版《星际争霸》完美测试人工智能
+
+https://mp.weixin.qq.com/s/GyE9qdXPGvrq12dMAf4nrQ
+
+论文推荐：QA，增强学习，知识图谱，机器阅读理解
+
+https://mp.weixin.qq.com/s/DQcRqWALLuPpNabCv83Vcg
+
+自动机器学习，神经网络自主编程
+
+https://mp.weixin.qq.com/s/x0r-2J_YdYgIQlRDqvGofg
+
+CVPR 2017论文解读：用于单目图像车辆3D检测的多任务网络
+
+https://mp.weixin.qq.com/s/fY4vF0aPexwFi2Fu4grdzg
+
+大规模视觉理解竞赛WebVision冠军分享
+
+https://mp.weixin.qq.com/s/cO1VlYGwdRBAbPs7IgvcAA
+
+超越传统强化学习的价值分布方法
+
+https://mp.weixin.qq.com/s/HlqzSdhj3Q3nX4Zl63PM0A
+
+商汤科技23篇论文横扫CVPR
+
+https://mp.weixin.qq.com/s/TelGG-uVQyxwQjiDGE1pqA
+
+特征金字塔网络FPN
+
+https://mp.weixin.qq.com/s/RpaOrngeXTKycLb3iCygZw
+
+利用贝叶斯神经网络进行随机动力系统中的学习与策略搜索
+
+https://mp.weixin.qq.com/s/j5YPHYEPioLiEIDc6lK3kA
+
+在线视频衣物精确检索技术，开启刷剧败明星同款时代
+
+https://mp.weixin.qq.com/s/6KC1vhKcyqQ0eZEXJyPqVA
+
+密集连接卷积网络
+
+https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
+
+北大：一种基于新闻特征抽取和循环神经网络的股票预测方法
+
+https://mp.weixin.qq.com/s/5DtTgc9bIrdXQkmuqRm8CA
+
+谷歌大脑迁移学习：减少调参，直接在数据集中学习最佳图像架构
+
+# ML参考资源
+
+https://mp.weixin.qq.com/s/4O1_9ly5DxpdjzQ2Nilcpw
+
+关于机器学习算法你必须了解的几点内容！
+
+https://mp.weixin.qq.com/s/h8qkDt7fmFzVxQcKkwqRzQ
+
+滴滴KDD2017论文：基于组合优化的出租车分单模型
+
+https://mp.weixin.qq.com/s/AsZyjwUclEoxxl2VRBekHA
+
+拟合目标函数后验分布的调参利器：贝叶斯优化
+
+https://mp.weixin.qq.com/s/XuoeOqGT_mJcFP08ZLq38g
+
+如何选择一个合适的数据图表？
+
+https://mp.weixin.qq.com/s/Fa7P3v969JRr6OOAyrGptA
+
+数据驱动决策的13种思维
+
+https://mp.weixin.qq.com/s/K3EVwRFBJufXK5QKSQsPbQ
+
+这是一份为数据科学初学者准备的Kaggle竞赛指南
+
+https://mp.weixin.qq.com/s/g1PWYFvxyoEZ8uX_GBwKSQ
+
+学会数据分析背后的挖掘思维，分析就完成了一半!
 
 

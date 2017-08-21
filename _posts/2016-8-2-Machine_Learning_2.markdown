@@ -165,6 +165,8 @@ $$\phi_i=\frac{e^{\eta_i}}{\sum_{j=1}^ke^{\eta_j}}=\frac{e^{\theta_i^Tx}}{\sum_{
 
 这种从$$\eta$$映射到$$\phi$$的函数，被称作softmax函数。
 
+>注：由于softmax函数给出的是分类结果的概率，因此对于某些分类结果中，所有类别概率都很低的情况，我们有理由认为遇到了未知的类别。softmax函数的这种概率可解释性，是它优于其他loss function的地方。
+
 $$h_\theta(x)=E[T(y)\vert x;\theta]=\begin{bmatrix} \phi_1 \\ \phi_2 \\ \vdots \\ \phi_{k-1} \end{bmatrix}
 =\begin{bmatrix} \frac{\exp(\theta_1^Tx)}{\sum_{j=1}^k\exp(\theta_j^Tx)} \\ \frac{\exp(\theta_2^Tx)}{\sum_{j=1}^k\exp(\theta_j^Tx)} \\ \vdots \\ \frac{\exp(\theta_{k-1}^Tx)}{\sum_{j=1}^k\exp(\theta_j^Tx)} \end{bmatrix}$$
 
@@ -175,6 +177,8 @@ $$\ell(\theta)=\sum_{i=1}^m\log p(y^{(i)}\vert x^{(i)};\theta)=\sum_{i=1}^m\log\
 GLM更多的内容可参见：
 
 http://statmath.wu.ac.at/courses/heather_turner/
+
+INTRODUCTION TO GENERALIZED LINEAR MODELS
 
 ## 机器学习的优化问题
 
@@ -199,32 +203,4 @@ $$p(y\vert x)=\frac{p(x\vert y)p(y)}{p(x\vert y=1)p(y=1)+p(x\vert y=0)p(y=0)}=\f
 由于我们关注的是y的离散值结果中哪个概率大（比如山羊概率和绵羊概率哪个大），而并不是关心具体的概率，因此公式6可改写为：
 
 $$\arg\max_yp(y\vert x)=\arg\max_y\frac{p(x\vert y)p(y)}{p(x)}=\arg\max_yp(x\vert y)p(y) \tag{7}$$
-
-## 高斯分布的向量形式
-
-高斯分布的向量形式$$N(\mu,\Sigma)$$的概率密度函数为：
-
-$$p(x;\mu,\Sigma)=\frac{1}{(2\pi)^{n/2}\lvert\Sigma\rvert^{1/2}}\exp\left(-\frac{1}{2}(x-\mu)^T\Sigma^{-1}(x-\mu)\right)$$
-
-其中，$$\mu$$表示均值向量（Mean Vector），$$\Sigma$$表示协方差矩阵（Covariance Matrix），$$\lvert\Sigma\rvert$$表示协方差矩阵的行列式。
-
-## 矩阵行列式计算
-
-对于高阶矩阵行列式，一般采用莱布尼茨公式（Leibniz Formula）或拉普拉斯公式（Laplace Formula）计算。
-
-首先，定义排列A的反序向量V（Inversion Vector）。下面举一个包含6个元素的例子：
-
-| 序列 | 4 1 5 2 6 3 |
-| 反序向量 | 0 1 0 2 0 3 |
-
-$$V_i=\sum_{j=1}^{i-1}f(i,j),
-f(i,j)=\begin{cases}
-1, & A_i<A_j \\
-0, & A_i>A_j \\
-\end{cases}$$
-
-反序向量的模被称为总序数（Total Order），例如上面例子的总序数为$$1+2+3=6$$。
-
-总序数为奇数的排列被称为奇排列（Odd Permutations），为偶数的排列被称为偶排列（Even Permutations）。
-
 

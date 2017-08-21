@@ -4,7 +4,32 @@ title:  机器学习（三）——朴素贝叶斯方法, SVM（1）
 category: theory 
 ---
 
-## 矩阵行列式计算(续)
+## 高斯分布的向量形式
+
+高斯分布的向量形式$$N(\mu,\Sigma)$$的概率密度函数为：
+
+$$p(x;\mu,\Sigma)=\frac{1}{(2\pi)^{n/2}\lvert\Sigma\rvert^{1/2}}\exp\left(-\frac{1}{2}(x-\mu)^T\Sigma^{-1}(x-\mu)\right)$$
+
+其中，$$\mu$$表示均值向量（Mean Vector），$$\Sigma$$表示协方差矩阵（Covariance Matrix），$$\lvert\Sigma\rvert$$表示协方差矩阵的行列式。
+
+## 矩阵行列式计算
+
+对于高阶矩阵行列式，一般采用莱布尼茨公式（Leibniz Formula）或拉普拉斯公式（Laplace Formula）计算。
+
+首先，定义排列A的反序向量V（Inversion Vector）。下面举一个包含6个元素的例子：
+
+| 序列 | 4 1 5 2 6 3 |
+| 反序向量 | 0 1 0 2 0 3 |
+
+$$V_i=\sum_{j=1}^{i-1}f(i,j),
+f(i,j)=\begin{cases}
+1, & A_i<A_j \\
+0, & A_i>A_j \\
+\end{cases}$$
+
+反序向量的模被称为总序数（Total Order），例如上面例子的总序数为$$1+2+3=6$$。
+
+总序数为奇数的排列被称为奇排列（Odd Permutations），为偶数的排列被称为偶排列（Even Permutations）。
 
 定义勒维奇维塔符号(Levi-Civita symbol)如下：
 
@@ -184,42 +209,4 @@ $$\hat\gamma=\min_{i=1,\dots,m}\hat\gamma^{(i)},\hat\gamma^{(i)}=y^{(i)}(w^Tx^{(
 $$w^T\left(x^{(i)}-\gamma^{(i)}\frac{w}{\|w\|}\right)+b=0\Rightarrow w^Tx^{(i)}-\gamma^{(i)}\frac{w^Tw}{\|w\|}+b=0$$
 
 $$\Rightarrow w^Tx^{(i)}+b=\gamma^{(i)}\frac{\|w\|^2}{\|w\|}\Rightarrow \gamma^{(i)}=\frac{w^Tx^{(i)}+b}{\|w\|}=\left(\frac{w}{\|w\|}\right)^Tx^{(i)}+\frac{b}{\|w\|}$$
-
-正是A在边界线上方时的情况，扩展到整个坐标系的话，上式可改为：
-
-$$\gamma^{(i)}=y^{(i)}\left(\left(\frac{w}{\|w\|}\right)^Tx^{(i)}+\frac{b}{\|w\|}\right)$$
-
-同理，可得几何边距的定义为：
-
-$$\gamma=\min_{i=1,\dots,m}\gamma^{(i)}$$
-
-从函数边距和几何边距的定义可以看出，如果等比例缩放w和b的话，其几何边距不变，且当$$\|w\|=1$$时，函数边距和几何边距相等。
-
-## 最优边距分类
-
-SVM算法的本质，就是求能使几何边距最大的w和b的取值，用数学语言描述就是求解问题：
-
-$$\begin{align}
-&\operatorname{max}_{\gamma,w,b}& & \gamma\\
-&\operatorname{s.t.}& & y^{(i)}(w^Tx^{(i)}+b)\ge\gamma,i=1,\dots,m\\
-& & & \|w\|=1
-\end{align}$$
-
->注：上式中的$$\operatorname{s.t.}$$是subject to的缩写，表示极值问题的约束条件。
-
-这个问题等价于:
-
-$$\begin{align}
-&\operatorname{max}_{\gamma,w,b}& & \frac{\hat\gamma}{\|w\|}\\
-&\operatorname{s.t.}& & y^{(i)}(w^Tx^{(i)}+b)\ge\hat\gamma,i=1,\dots,m
-\end{align}$$
-
-如果能通过比例变换使$$\hat\gamma=1$$，则问题化解为：
-
-$$\begin{align}
-&\operatorname{min}_{\gamma,w,b}& & \frac{1}{2}\|w\|^2\\
-&\operatorname{s.t.}& & y^{(i)}(w^Tx^{(i)}+b)\ge 1,i=1,\dots,m
-\end{align}$$
-
-这个问题实际上就是数学上的QP（Quadratic Programming）问题，采用这种方案的分类被称为最优边距分类（optimal margin classifier）。
 

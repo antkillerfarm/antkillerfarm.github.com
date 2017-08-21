@@ -4,6 +4,46 @@ title:  机器学习（四）——SVM（2）
 category: theory 
 ---
 
+## 函数边距和几何边距（续）
+
+这是A在边界线上方时的情况，扩展到整个坐标系的话，上式可改为：
+
+$$\gamma^{(i)}=y^{(i)}\left(\left(\frac{w}{\|w\|}\right)^Tx^{(i)}+\frac{b}{\|w\|}\right)$$
+
+同理，可得几何边距的定义为：
+
+$$\gamma=\min_{i=1,\dots,m}\gamma^{(i)}$$
+
+从函数边距和几何边距的定义可以看出，如果等比例缩放w和b的话，其几何边距不变，且当$$\|w\|=1$$时，函数边距和几何边距相等。
+
+## 最优边距分类
+
+SVM算法的本质，就是求能使几何边距最大的w和b的取值，用数学语言描述就是求解问题：
+
+$$\begin{align}
+&\operatorname{max}_{\gamma,w,b}& & \gamma\\
+&\operatorname{s.t.}& & y^{(i)}(w^Tx^{(i)}+b)\ge\gamma,i=1,\dots,m\\
+& & & \|w\|=1
+\end{align}$$
+
+>注：上式中的$$\operatorname{s.t.}$$是subject to的缩写，表示极值问题的约束条件。
+
+这个问题等价于:
+
+$$\begin{align}
+&\operatorname{max}_{\gamma,w,b}& & \frac{\hat\gamma}{\|w\|}\\
+&\operatorname{s.t.}& & y^{(i)}(w^Tx^{(i)}+b)\ge\hat\gamma,i=1,\dots,m
+\end{align}$$
+
+如果能通过比例变换使$$\hat\gamma=1$$，则问题化解为：
+
+$$\begin{align}
+&\operatorname{min}_{\gamma,w,b}& & \frac{1}{2}\|w\|^2\\
+&\operatorname{s.t.}& & y^{(i)}(w^Tx^{(i)}+b)\ge 1,i=1,\dots,m
+\end{align}$$
+
+这个问题实际上就是数学上的QP（Quadratic Programming）问题，采用这种方案的分类被称为最优边距分类（optimal margin classifier）。
+
 ## 拉格朗日对偶
 
 QP问题是有约束条件的优化问题（constrained optimization problem）的一种，下面让我们讨论一下解决这类问题的通用方法。
@@ -204,31 +244,4 @@ x_3x_1 \\ x_3x_2 \\ x_3x_3 \\
 \sqrt{2c}x_1 \\ \sqrt{2c}x_2 \\ \sqrt{2c}x_3 \\ c
 \end{bmatrix}$$
 
-更一般的，对于$$K(x,z)=(x^Tz+c)^d$$，其对应的$$\phi(x)$$是$$\begin{pmatrix} n+d \\ d \\ \end{pmatrix}$$维向量。
 
-我们也可以从另外的角度观察$$K(x,z)=\phi(x)^T\phi(z)$$。从内积的几何意义来看，如果$$\phi(x)$$和$$\phi(z)$$夹角越小，则$$K(x,z)$$的值越大；反之，如果$$\phi(x)$$和$$\phi(z)$$的夹角越接近正交，则$$K(x,z)$$的值越小。因此，$$K(x,z)$$也叫做$$\phi(x)$$和$$\phi(z)$$的余弦相似度。
-
-讨论另一个核函数：
-
-$$K(x,z)=\exp\left(-\frac{\|x-z\|^2}{2\sigma^2}\right)$$
-
-这个核函数被称为高斯核函数（Gaussian kernel），对应的$$\phi(x)$$是个无限维的向量。
-
->注：$$(a+b)^n$$是个p为0.5的二项分布，由棣莫佛-拉普拉斯定理（de Moivre–Laplace theorem）可知，当$$n\to\infty$$时，它的极限是正态分布。
-
-![](/images/article/SVM_5.png)
-
-## 核函数的有效性
-
-如果对于给定的核函数K，存在一个特征映射$$\phi$$，使得$$K(x,z)=\phi(x)^T\phi(z)$$，则称K为有效核函数。
-
-我们首先假设K为有效核函数，来看看它有什么性质。假设有m个样本$$\{x^{(1)},\dots,x^{(m)}\}$$，我们定义$$m\times m$$维的矩阵k：$$K_{ij}=K(x_i,x_j)$$。这个矩阵被称为核矩阵（Kernel matrix）。
-
-$$K_{ij}=K(x_i,x_j)=\phi(x^{(i)})^T\phi(x^{(j)})=\phi(x^{(j)})^T\phi(x^{(i)})=K(x_j,x_i)=K_{ji}$$
-
-如果我们用$$\phi_k(x)$$表示$$\phi(x)$$第k个元素的话，则对于任意向量z：
-
-$$\begin{align}z^TKz&=\sum_i\sum_jz_iK_{ij}z_j=\sum_i\sum_jz_i\phi(x^{(i)})^T\phi(x^{(j)})z_j
-\\&=\sum_i\sum_jz_i\sum_k\phi_k(x^{(i)})\phi_k(x^{(j)})z_j=\sum_k\sum_i\sum_jz_i\phi_k(x^{(i)})\phi_k(x^{(j)})z_j
-\\&=\sum_k\left(\sum_iz_i\phi_k(x^{(i)})\right)^2\ge 0
-\end{align}$$

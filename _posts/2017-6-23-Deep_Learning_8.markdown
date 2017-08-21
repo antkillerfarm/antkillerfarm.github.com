@@ -4,9 +4,39 @@ title:  深度学习（八）——目标检测, RCNN
 category: theory 
 ---
 
+# 李飞飞
+
+## 大佬的门徒（续）
+
+Andrej Karpathy建了一个检索arxiv的网站，主要搜集了近3年来的ML/DL领域的论文。网址：
+
+http://www.arxiv-sanity.com/
+
+## 学神
+
+应该说李飞飞和吴恩达都是万里挑一的超卓人物，但是和学神还是有所差距。下面是两个80后的华裔学神，他们都已经是正教授了：
+
+尹希，1983年生，哈佛大学物理系教授。
+
+张锋，1982年生，MIT教授，生物学家。
+
+这两个人都是有机会挑战诺奖的人，而李和吴暂时还没有这个可能性。
+
+## 网红
+
+http://zacklipton.com/
+
 # 目标检测
 
-## 概述（续）
+## 概述
+
+object detection是计算机视觉的一个重要的分支。类似的分支还有目标分割、目标识别和目标跟踪。
+
+以下摘录自Sensetime CTO曹旭东的解读：
+
+传统方法使用滑动窗口的框架，把一张图分解成几百万个不同位置不同尺度的子窗口，针对每一个窗口使用分类器判断是否包含目标物体。传统方法针对不同的类别的物体，一般会设计不同的特征和分类算法，比如人脸检测的经典算法是**Harr特征+Adaboosting分类器**；行人检测的经典算法是**HOG(histogram of gradients)+Support Vector Machine**；一般性物体的检测的话是**HOG特征+DPM(deformable part model)的算法**。
+
+基于深度学习的物体检测的经典算法是RCNN系列：RCNN，fast RCNN(Ross Girshick)，faster RCNN(少卿、凯明、孙剑、Ross)。这三个工作的核心思想是分别是：使用更好的CNN模型判断候选区域的类别；复用预计算的sharing feature map加快模型训练和物体检测的速度；进一步使用sharing feature map大幅提高计算候选区域的速度。其实基于深度学习的物体检测也可以看成对海量滑动窗口分类，只是用全卷积的方式。
 
 RCNN系列算法还是将物体检测分为两个步骤。现在还有一些工作是端到端(end-to-end)的物体检测，比如说YOLO(You Only Look Once: Unified, Real-Time Object Detection)和SSD(SSD: Single Shot MultiBox Detector)这样的算法。这两个算法号称和faster RCNN精度相似但速度更快。物体检测正负样本极端非均衡，two-stage cascade可以更好的应对非均衡。端到端学习是否可以超越faster RCNN还需要更多研究实验。
 
@@ -47,6 +77,24 @@ DPM(2007)->RCNN(2014)->Fast RCNN->Faster RCNN
 http://blog.csdn.net/ttransposition/article/details/12966521
 
 DPM(Deformable Parts Model)--原理
+
+## CV实践难点
+
+从理论上说，无论是传统CV，还是新近崛起的DL CV，其本质都是通过比对目标图片和训练图片的相似度，从而得到识别的结果。
+
+CV的输入一般是由像素组成的矩阵。相比其他领域的数据挖掘而言，CV的实践难点主要包括：
+
+1.视角的改变。照相机的移动会导致像素矩阵发生平移、旋转等变换。
+
+2.光照影响。同一物体在不同光照条件下的影像有所不同。
+
+3.形变。典型的例子是动物的运动，会导致外观的改变。
+
+4.遮挡。待识别物体通常不是完全可见的。
+
+5.背景。雪地、沙滩等不同场景，会影响物体的识别。
+
+6.同类差异。比如各种猫都是猫，但它们的外观有细微的差异。
 
 # RCNN
 
@@ -183,127 +231,4 @@ Non-Maximum Suppression顾名思义就是抑制不是极大值的元素，搜索
 
 
 
-## 参考
-
-https://zhuanlan.zhihu.com/p/23006190
-
-RCNN-将CNN引入目标检测的开山之作
-
-http://www.cnblogs.com/edwardbi/p/5647522.html
-
-Tensorflow tflearn编写RCNN
-
-https://zhuanlan.zhihu.com/p/24774302
-
-SPPNet-引入空间金字塔池化改进RCNN
-
-https://zhuanlan.zhihu.com/p/24780395
-
-Fast R-CNN
-
-https://zhuanlan.zhihu.com/p/24916624
-
-Faster R-CNN
-
-https://zhuanlan.zhihu.com/p/24916786
-
-图解YOLO
-
-https://zhuanlan.zhihu.com/p/24954433
-
-SSD
-
-https://zhuanlan.zhihu.com/p/25167153
-
-YOLO2
-
-https://www.zhihu.com/question/35887527
-
-如何评价rcnn、fast-rcnn和faster-rcnn这一系列方法？
-
-http://blog.csdn.net/tangwei2014/article/details/50915317
-
-论文阅读笔记：You Only Look Once: Unified, Real-Time Object Detection
-
-http://blog.csdn.net/shenxiaolu1984/article/details/51066975
-
-RCNN算法详解
-
-http://blog.csdn.net/shenxiaolu1984/article/details/51036677
-
-Fast RCNN算法详解
-
-http://blog.csdn.net/shenxiaolu1984/article/details/51152614
-
-Faster RCNN算法详解
-
-https://mp.weixin.qq.com/s/XorPkuIdhRNI1zGLwg-55A
-
-斯坦福新深度学习系统 NoScope：视频对象检测快1000倍
-
-https://mp.weixin.qq.com/s/XbgmLmlt5X4TX5CP59gyoA
-
-目标检测算法精彩集锦
-
-https://mp.weixin.qq.com/s/BgTc1SE2IzNH27OC2P2CFg
-
-CVPR-I
-
-https://mp.weixin.qq.com/s/qMdnp9ZdlYIja2vNEKuRNQ
-
-CVPR—II
-
-https://mp.weixin.qq.com/s/tc1PsIoF1RN1sx_IFPmtWQ
-
-CVPR—III
-
-https://mp.weixin.qq.com/s/bpCn2nREHzazJYq6B9vMHg
-
-目标识别算法的进展
-
-https://mp.weixin.qq.com/s/YzxaS4KQmpbUSnyOwccn4A
-
-基于深度学习的目标检测技术进展与展望
-
-https://mp.weixin.qq.com/s/VKQufVUQ3TP5m7_2vOxnEQ
-
-通过Faster R-CNN实现当前最佳的目标计数
-
-https://mp.weixin.qq.com/s/JPCQqyzR8xIUyAdk_RI5dA
-
-RCNN, Fast-RCNN, Faster-RCNN那些你必须知道的事！
-
-## YOLO
-
-YOLO: Real-Time Object Detection，是一个基于神经网络的实时对象检测软件。
-
-官网：
-
-https://pjreddie.com/darknet/yolo/
-
-参考：
-
-https://mp.weixin.qq.com/s/n51XtGAsaDDAatXYychXrg
-
-YOLO比R-CNN快1000倍，比Fast R-CNN快100倍的实时对象检测！
-
-## SSD
-
-论文：
-
-《SSD: Single Shot MultiBox Detector》
-
-参考：
-
-http://www.jianshu.com/p/ebebfcd274e6
-
-Caffe-SSD 训练自己的数据集教程
-
-## ENet
-
-https://github.com/TimoSaemann/ENet
-
-《ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation》
-
-http://blog.csdn.net/zijinxuxu/article/details/67638290
 

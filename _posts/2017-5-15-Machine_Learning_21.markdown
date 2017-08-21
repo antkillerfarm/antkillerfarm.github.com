@@ -1,8 +1,128 @@
 ---
 layout: post
-title:  机器学习（二十一）——KNN, Optimizer, 单分类SVM&多分类SVM
+title:  机器学习（二十一）——AutoML, KNN, Optimizer
 category: theory 
 ---
+
+# HMM（续）
+
+2）**还是知道骰子有几种（隐含状态数量），每种骰子是什么（转换概率），根据掷骰子掷出的结果（可见状态链），我想知道掷出这个结果的概率。**
+
+看似这个问题意义不大，因为你掷出来的结果很多时候都对应了一个比较大的概率。问这个问题的目的呢，其实是检测观察到的结果和已知的模型是否吻合。如果很多次结果都对应了比较小的概率，那么就说明我们已知的模型很有可能是错的，有人偷偷把我们的骰子給换了。问题2的更一般的用法是：从若干种模型中选择一个概率最大的模型。
+
+3）**知道骰子有几种（隐含状态数量），不知道每种骰子是什么（转换概率），观测到很多次掷骰子的结果（可见状态链），我想反推出每种骰子是什么（转换概率）。**
+
+这个问题很重要，因为这是最常见的情况。很多时候我们只有可见结果，不知道HMM模型里的参数，我们需要从可见结果估计出这些参数，这是建模的一个必要步骤。
+
+参考：
+
+https://www.zhihu.com/question/20962240
+
+如何用简单易懂的例子解释隐马尔可夫模型？
+
+http://www.cnblogs.com/kaituorensheng/archive/2012/11/29/2795499.html
+
+隐马尔可夫模型
+
+https://mp.weixin.qq.com/s/9MmHDVDal57pdotwxAn_uQ
+
+HMM模型详解
+
+## Viterbi算法
+
+Viterbi算法是求解最大似然状态路径的常用算法，被广泛应用于通信（CDMA技术的理论基础之一）和NLP领域。
+
+>注：Andrew James Viterbi，1935年生，意大利裔美国工程师、企业家，高通公司联合创始人。MIT本硕+南加州大学博士。viterbi算法和CDMA标准的主要发明人。
+
+![](/images/article/HMM_4.png)
+
+上图是一个HMM模型的概率图表示，其中{'Healthy','Fever'}是隐含状态，而{'normal','cold','dizzy'}是可见状态，边是各状态的转移概率。
+
+![](/images/article/Viterbi_animated_demo.gif)
+
+上图是Viterbi算法的动画图。简单来说就是，从开始状态之后的每一步，都选择最大似然状态的路径。由于每一步都是最优方案，因此整个路径也是最优路径。
+
+参考：
+
+https://mp.weixin.qq.com/s/FQ520ojMmbFhNMoNCVTKug
+
+通俗理解维特比算法
+
+## 前向算法
+
+forward算法是求解问题2的常用算法。
+
+仍以上面的掷骰子为例，要算用正常的三个骰子掷出这个结果的概率，其实就是将所有可能情况的概率进行加和计算。同样，简单而暴力的方法就是把穷举所有的骰子序列，还是计算每个骰子序列对应的概率，但是这回，我们不挑最大值了，而是把所有算出来的概率相加，得到的总概率就是我们要求的结果。
+
+穷举法的计算量太大，不适用于计算较长的马尔可夫链。但是我们可以观察一下穷举法的计算步骤。
+
+![](/images/article/forward_algorithm.png)
+
+上图是某骰子序列的穷举计算过程，可以看出第3步计算的概率和公式的某些项，实际上在之前的步骤中已经计算出来了，前向递推的计算量并没有想象中的大。
+
+## Baum–Welch算法
+
+Baum–Welch算法是求解问题3的常用算法。
+
+## HMM在NLP领域的应用
+
+具体到分词系统，可以将“标签”当作隐含状态，“字或词”当作可见状态。那么，几个NLP的问题就可以转化为：
+
+词性标注：给定一个词的序列（也就是句子），找出最可能的词性序列（标签是词性）。如ansj分词和ICTCLAS分词等。
+
+分词：给定一个字的序列，找出最可能的标签序列（断句符号：[词尾]或[非词尾]构成的序列）。结巴分词目前就是利用BMES标签来分词的，B（开头）,M（中间),E(结尾),S(独立成词）
+
+命名实体识别：给定一个词的序列，找出最可能的标签序列（内外符号：[内]表示词属于命名实体，[外]表示不属于）。如ICTCLAS实现的人名识别、翻译人名识别、地名识别都是用同一个Tagger实现的。
+
+# AutoML
+
+尽管现在已经有许多成熟的ML算法，然而大多数ML任务仍依赖于专业人员的手工编程实现。
+
+然而但凡做过若干同类项目的人都明白，在算法选择和参数调优的过程中，有大量的套路可以遵循。
+
+比如有人就总结出参加kaggle比赛的套路：
+
+http://www.jianshu.com/p/63ef4b87e197
+
+一个框架解决几乎所有机器学习问题
+
+https://mlwave.com/kaggle-ensembling-guide/
+
+Kaggle Ensembling Guide
+
+既然是套路，那么就有将之自动化的可能，比如下面网页中，就有好几个AutoML的框架：
+
+https://mp.weixin.qq.com/s/QIR_l8OqvCQzXXXVY2WA1w
+
+十大你不可忽视的机器学习项目
+
+下面给几个套路图：
+
+![](/images/article/ML.png)
+
+参考：
+
+http://blog.csdn.net/aliceyangxi1987/article/details/71079448
+
+一个框架解决几乎所有机器学习问题
+
+https://docs.microsoft.com/en-us/azure/machine-learning/machine-learning-algorithm-cheat-sheet
+
+MS提供的ML算法选择指南
+
+https://mp.weixin.qq.com/s/53AcAZcCKBZI-i1CORl0bQ
+
+分分钟带你杀入Kaggle Top 1%
+
+https://mp.weixin.qq.com/s/NwVGkAcoDmyXKrYFUaK2Bw
+
+如何在机器学习竞赛中更胜一筹？
+
+https://mp.weixin.qq.com/s/hf4IOAayS29i6GB9m4GHcA
+
+全自动机器学习：ML工程师屠龙利器
+
+
 
 # KNN
 
@@ -140,115 +260,3 @@ https://mp.weixin.qq.com/s/VoBK-l_ieSg2UupC2ix2pA
 
 听说你了解深度学习最常用的学习算法：Adam优化算法？
 
-# 单分类SVM&多分类SVM
-
-原始的SVM主要用于二分类，然而稍加变化，也可用于单分类和多分类。
-
-## 单分类SVM
-
-单分类任务是一类特殊的分类任务。在该任务中，大多数样本只有positive一类标签，而其他样本则笼统的划为另一类。
-
-单分类SVM（也叫Support Vector Domain Description(SVDD)）是一种单分类算法。和普通SVM相比，它不再使用maximum margin了，因为这里并没有两类的data。
-
-单分类SVM的目标，实际上是确定positive样本的boundary。boundary之外的数据，会被分为另一类。这实际上就是一种异常检测的算法了。它主要适用于negative样本的特征不容易确定的场景。
-
-![](/images/article/one_class_svm.png)
-
-这里可以假设最好的boundary要远离feature space中的原点。左边是在original space中的boundary，可以看到有很多的boundary都符合要求，但是比较靠谱的是找一个比较紧（closeness）的boundary（红色的）。这个目标转换到feature space就是找一个离原点比较远的boundary，同样是红色的直线。
-
-当然这些约束条件都是人为加上去的，你可以按照你自己的需要采取相应的约束条件。比如让data的中心离原点最远。
-
-下面我们讨论一下SVDD的算法实现。
-
-首先定义需要最小化的目标函数：
-
-$$\begin{align}
-&\operatorname{min}& & F(R,a,\xi_i) = R^2 + C \sum_{i=1}^N \xi_i\\
-&\operatorname{s.t.}& & (x_i - a)^T (x_i - a) \leq R^2 + \xi_i\text{,} \qquad \xi_i \geq 0
-\end{align}$$
-
-这里a表示形状的中心，R表示半径，C和$$\xi$$的含义与普通SVM相同。
-
-Lagrangian算子：
-
-$$L(R,a,\alpha_i,\xi_i) = R^2 + C \sum_{i=1}^N \xi_i - \sum_{i=1}^N \gamma_i \xi_i - \sum_{i=1}^N \alpha_i \left(  R^2 + \xi_i - (x_i - c)^T (x_i - c) \right)$$
-
-对偶问题：
-
-$$L = \sum_{i=1}^N \alpha_i (x_i^T \cdot x_i) - \sum_{i,j=1}^N \alpha_i \alpha_j (x_i^T \cdot x_i)$$
-
-使用核函数：
-
-$$L = \sum_{i=1}^N \alpha_i K(x_i,x_i) - \sum_{i,j=1}^N \alpha_i \alpha_j K(x_i,x_j)$$
-
-预测函数：
-
-$$y(x) = \sum_{i=1}^N \alpha_i K(x,x_n) + b$$
-
-根据计算结果的符号，来判定是正常样本，还是异常样本。
-
-参考：
-
-https://www.projectrhea.org/rhea/index.php/One_class_svm
-
-One-Class Support Vector Machines for Anomaly Detection
-
-https://www.zhihu.com/question/22365729
-
-什么是一类支持向量机（one class SVM）
-
-## 多分类SVM
-
-多分类任务除了使用多分类算法之外，也可以通过对两分类算法的组合来实施多分类。常用的方法有两种：one-against-rest和DAG SVM。
-
-### one-against-rest
-
-比如我们有5个类别，第一次就把类别1的样本定为正样本，其余2，3，4，5的样本合起来定为负样本，这样得到一个两类分类器，它能够指出一篇文章是还是不是第1类的；第二次我们把类别2的样本定为正样本，把1，3，4，5的样本合起来定为负样本，得到一个分类器，如此下去，我们可以得到5个这样的两类分类器（总是和类别的数目一致）。
-
-但有时也会出现两种很尴尬的情况，例如拿一篇文章问了一圈，每一个分类器都说它是属于它那一类的，或者每一个分类器都说它不是它那一类的，前者叫分类重叠现象，后者叫不可分类现象。
-
-分类重叠倒还好办，随便选一个结果都不至于太离谱，或者看看这篇文章到各个超平面的距离，哪个远就判给哪个。不可分类现象就着实难办了，只能把它分给第6个类别了……
-
-更要命的是，本来各个类别的样本数目是差不多的，但“其余”的那一类样本数总是要数倍于正类（因为它是除正类以外其他类别的样本之和嘛），这就人为的造成了“数据集偏斜”问题。
-
-### DAG SVM
-
-![](/images/article/dag_svm.png)
-
-DAG SVM（也称one-against-one）的分类思路如上图所示。
-
-粗看起来DAG SVM的分类次数远超one-against-rest，然而由于每次分类都只使用了部分数据，因此，DAG SVM的计算量反而更小。
-
-其次，DAG SVM的误差上限有理论保障，而one-against-rest则不然（准确率可能降为0）。
-
-显然，上面提到的两种方法，不仅可用于SVM，也适用于其他二分类算法。
-
-参考：
-
-http://www.blogjava.net/zhenandaci/archive/2009/03/26/262113.html
-
-将SVM用于多类分类
-
-# 时间序列分析
-
-## 书籍和教程
-
-http://www.stat.berkeley.edu/~bartlett/courses/153-fall2010/
-
-berkeley的时间序列分析课程
-
-http://people.duke.edu/%7Ernau/411home.htm
-
-回归和时间序列分析
-
-《应用时间序列分析》，王燕著。
-
-## 概述
-
-时间序列，就是按时间顺序排列的，随时间变化的数据序列。
-
-生活中各领域各行业太多时间序列的数据了，销售额，顾客数，访问量，股价，油价，GDP，气温...
-
-随机过程的特征有均值、方差、协方差等。
-
-如果随机过程的特征随着时间变化，则此过程是非平稳的；相反，如果随机过程的特征不随时间而变化，就称此过程是平稳的。

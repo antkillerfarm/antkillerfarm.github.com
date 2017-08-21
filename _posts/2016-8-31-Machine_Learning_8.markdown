@@ -1,8 +1,44 @@
 ---
 layout: post
-title:  机器学习（八）——在线学习, K-Means算法
+title:  机器学习（八）——在线学习
 category: theory 
 ---
+
+## 特征选择（续）
+
+对于n个特征的$$\mathcal{M}$$来说，根据特征是否包含在最终结果中，可以写出$$2^n$$个不同的$$M_i$$。直接使用上面的交叉验证方法，计算量过大。这时可以采用如下启发式算法：
+
+>1.初始化特征集$$\mathcal{F}=\emptyset$$。   
+>2.Repeat {   
+><span style="white-space: pre">	</span>(a)for 特征i=1 to n, {   
+><span style="white-space: pre">	     </span>如果$$i\notin\mathcal{F}$$，则$$\mathcal{F}_i=\mathcal{F}\cup\{i\}$$。   
+><span style="white-space: pre">	     </span>在$$\mathcal{F}_i$$上使用交叉验证方法评估它的泛化误差。   
+><span style="white-space: pre">	</span>}   
+><span style="white-space: pre">	</span>(b)将第(a)步中最优的$$\mathcal{F}_i$$设为新的$$\mathcal{F}$$。   
+>}   
+>3.选择并输出搜索过程中得到的最优子集。
+
+这个算法被称为前向搜索（forward search）。其外部循环的终止条件为$$\lvert\mathcal{F}\rvert$$达到n或者事先设定的门限值。
+
+前向搜索属于wrapper model特征选择方法的一种。 Wrapper这里指不断地使用不同的特征子集来测试学习的算法。
+
+除了前向搜索之外，还有后向搜索（backward search）算法。它和前者的区别在于，它的初始集合为全集，然后每次删除一个特征，并评价，直到$$\lvert\mathcal{F}\rvert$$达到阈值或者为空，然后选择最佳的$$\mathcal{F}$$即可。
+
+可以看出无论前向搜索，还是后向搜索，其算法复杂度都是$$O(n^2)$$。
+
+## KL散度
+
+KL散度（Kullback–Leibler divergence）是两个随机分布间距离的度量。其定义如下：
+
+$$D_{KL}(P\|Q)=\sum_iP(i)\log\frac{P(i)}{Q(i)}$$
+
+其中，P和Q是离散概率分布，$$P(i)$$和$$Q(i)$$是相应分布的概率密度函数。如果P和Q是连续随机变量的话，将上式中的累加符号换成积分符号即可。
+
+但KL散度并不是真正的度量（metric）。它既不满足三角不等式(两边之和$$\ge$$第三边)，也不满足对称性（即$$D_{KL}(P\|Q)\neq D_{KL}(Q\|P)$$）。
+
+>注：Solomon Kullback，1907～1994，美国数学家和密码学家。乔治·华盛顿大学博士。NSA首任首席科学家。二战期间，参与破解德国的Enigma机器。
+
+>Richard Leibler，1914～2003，美国数学家和密码学家。伊利诺伊大学博士。NSA高级主管，入选NSA名人堂。
 
 ## 过滤特征选择方法
 
@@ -188,42 +224,5 @@ $$k\le (D/\gamma)^2$$
 
 聚类算法属于无监督学习算法的一种。它的训练样本中只有$$x^{(i)}$$，而没有$$y^{(i)}$$。聚类的目的是找到每个样本x潜在的类别y，并将同类别y的样本x放在一起，形成一个聚类（clusters）。样本$$x^{(i)}$$所属的聚类用$$c^{(i)}$$表示。
 
-K-Means算法的步骤如下:
-
->1.随机选取k个聚类质心点（cluster centroids）$$\mu_1,\dots,\mu_k$$   
->2.重复下面过程直到收敛 {   
-><span style="white-space: pre">	</span>对于每一个样例i，计算其应该属于的聚类：$$c^{(i)}:=\arg\min_j\|x^{(i)}-\mu_j\|^2$$   
-><span style="white-space: pre">	</span>对于每一个聚类j，重新计算该聚类的质心：$$\mu_j:=\frac{\sum_{i=1}^m1\{c^{(i)}=j\}x^{(i)}}{\sum_{i=1}^m1\{c^{(i)}=j\}}$$。   
->}
-
-其中，k是我们事先定义的聚类个数。下图展示了对n个样本点进行K-means聚类的效果，这里k取2。
-
-![](/images/article/k-means.png)
-
-K-means算法面对的第一个问题是如何保证收敛。前面的算法中强调结束条件就是收敛，可以证明的是K-means完全可以保证收敛性。下面我们定性的描述一下收敛性，我们定义畸变函数（distortion function）如下：
-
-$$J(c,\mu)=\sum_{i=1}^m\|x^{(i)}-\mu_{c^{(i)}}\|^2$$
-
-J函数表示每个样本点到其质心的距离平方和。K-means算法的目的是要将J调整到最小。假设当前J没有达到最小值，那么首先可以固定每个类的质心$$\mu_j$$，调整每个样例的所属的类别$$c^{(i)}$$来让J函数减小，同样，固定$$c^{(i)}$$，调整每个类的质心$$\mu_j$$，也可以使J减小。 这两个过程就是内循环中使J单调递减的过程。当J递减到最小时，$$\mu$$和c也同时收敛。（在理论上，可以有多组不同的$$\mu$$和c值，能够使得J取得最小值，但这种现象实际上很少见。）
-
-由于畸变函数J是非凸函数，意味着我们不能保证算法取得的最小值是全局最小值，也就是说k-means对质心初始位置的选取比较敏感。但一般情况下k-means达到的局部最优已经满足需求。但如果你怕陷入局部最优，那么可以选取不同的初始值跑多遍k-means，然后取其中最小的J对应的$$\mu$$和c输出。
-
-参考：
-
-http://www.csdn.net/article/2012-07-03/2807073-k-means
-
-http://www.cnblogs.com/leoo2sk/archive/2010/09/20/k-means.html
-
-http://www.cnblogs.com/jerrylead/archive/2011/04/06/2006910.html
-
-## 聚类结果的评价
-
-可考虑用以下几个指标来评价聚类效果：
-
-1.聚类中心之间的距离。距离值大，通常可考虑分为不同类。
-
-2.聚类域中的样本数目。样本数目少且聚类中心距离远，可考虑是否为噪声。
-
-3.聚类域内样本的距离方差。方差过大的样本可考虑是否属于这一类。
 
 

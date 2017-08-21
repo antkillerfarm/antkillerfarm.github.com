@@ -332,6 +332,10 @@ https://mp.weixin.qq.com/s/vOJPxzH_1SUyXzNeE85zHQ
 
 编译器入门：没有siri的那些年，我们如何实现人机对话？
 
+https://mp.weixin.qq.com/s/yR_wENRSbxvfrcYr9O9BuQ
+
+23个Python爬虫开源项目代码：爬取微信、淘宝、豆瓣、知乎、微博等
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

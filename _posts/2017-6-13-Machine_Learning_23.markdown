@@ -1,8 +1,112 @@
 ---
 layout: post
-title:  机器学习（二十三）——数据不平衡问题, Probabilistic Robotics, 概率图模型
+title:  机器学习（二十三）——Beam Search, 数据不平衡问题, Probabilistic Robotics, 概率图模型
 category: theory 
 ---
+
+# Tri-training（续）
+
+## 协同训练算法
+
+协同训练（co-training）算法是一种多学习器的半监督学习算法。它是多视图（multi-view）学习的代表。
+
+以电影为例，它拥有多个属性集：图像、声音、字幕等。每个属性集就构成了一个视图。
+
+协同训练假设不同的视图具有“相容性”。所谓相容性是指，如果一个电影从图像判断，像是动作片，那么从声音判断，也有很大可能是动作片。
+
+协同训练的算法流程：
+
+1.在每个视图上，基于有标记数据，分别训练出一个分类器。
+
+2.每个分类器挑选自己最有把握的未标记数据，赋予伪标记。
+
+3.其他分类器利用伪标记，进一步训练模型，最终达到相互促进的目的。
+
+理论上，如果不同视图之间具有完全相容性，则模型准确度可达到任意上限。而实际中，虽然很难满足完全相容性假设，但该算法仍能有效提升模型的准确度。
+
+原始的协同训练算法的主要局限在于，构造视图在工程上是件很有难度的事情。后续的一些改进算法针对这点，在应用范围上做了不少改进。如基于不同学习算法、不同的数据采样、不同的参数设置的协同训练算法。
+
+理论研究表明，只要弱学习器之间具有显著分歧（或差异），即可通过相互提供伪标记的方式提升泛化性能。因此，协同训练算法又被称为**基于分歧的算法**。
+
+## Tri-training
+
+2005年，周志华提出了Tri-training算法。该算法的流程如下：
+
+1.首先对有标记示例集进行可重复取样(bootstrap sampling)以获得三个有标记训练集，然后从每个训练集产生一个分类器。
+
+2.在协同训练过程中,各分类器所获得的新标记示例都由其余两个分类器协作提供，具体来说，如果两个分类器对同一个未标记示例的预测相同，则该示例就被认为具有较高的标记置信度，并在标记后被加入第三个分类器的有标记训练集。
+
+参考：
+
+http://www.cnblogs.com/liqizhou/archive/2012/05/11/2496162.html
+
+Tri-training, 协同训练算法
+
+## Co-Forest & Co-Trade
+
+Co-Forest & Co-Trade是周志华在Tri-training基础上的改进算法。
+
+参考：
+
+http://lamda.nju.edu.cn/huangsj/dm11/files/gaoy.pdf
+
+半监督学习中的几种协同训练算法
+
+# Beam Search
+
+Beam Search（集束搜索）是一种启发式图搜索算法，通常用在图的解空间比较大的情况下，为了减少搜索所占用的空间和时间，在每一步深度扩展的时候，剪掉一些质量比较差的结点，保留下一些质量较高的结点。
+
+这样减少了空间消耗，并提高了时间效率，但缺点就是有可能存在潜在的最佳方案被丢弃，因此Beam Search算法是不完全的，一般用于解空间较大的系统中。
+
+![](/images/article/beam_search.png)
+
+上图是一个Beam Search的剪枝示意图。
+
+Beam Search主要用于机器翻译、语音识别等系统。这类系统虽然从理论来说，也就是个多分类系统，然而由于分类数等于词汇数，简单的套用softmax之类的多分类方案，明显是计算量过于巨大了。
+
+PS：中文验证码识别估计也可以采用该技术。
+
+参见：
+
+http://people.csail.mit.edu/srush/optbeam.pdf
+
+Optimal Beam Search for Machine Translation
+
+http://www.cnblogs.com/xxey/p/4277181.html
+
+Beam Search（集束搜索/束搜索）
+
+http://blog.csdn.net/girlhpp/article/details/19400731
+
+束搜索算法（Andrew Jungwirth 初稿）BEAM Search
+
+# ILSVRC 2010考古
+
+ILSVRC 2010的冠军是NEC和UIUC的联合队伍。这也是DL于2012年大放光彩之前比较杰出的成果。虽然现在它通常作为反面教材，出现在与DL的对比场景中，然而不可否认的是，
+
+![](/images/article/ILSVRC_2010.png)
+
+http://blog.csdn.net/dujian996099665/article/details/8886576
+
+opencv学习之（三）-LBP算法的研究及其实现
+
+http://blog.csdn.net/chlele0105/article/details/16972695
+
+SPM:Spatial Pyramid Matching for Recognizing Natural Scene Categories空间金字塔匹配
+
+# 模型驱动 vs 数据驱动
+
+最近阅读了这篇文章，深有感慨：
+
+https://mp.weixin.qq.com/s/N7DE0kvf8THhJQwroHj4vA
+
+成不了AI高手？因为你根本不懂数据！听听这位老教授多年心血练就的最实用统计学
+
+>注：吴喜之教授是我国著名的统计学家，退休前在中国人民大学统计学院任统计学教授。吴教授上世纪六十年代就读于北京大学数学力学系，八十年代出国深造，在美国北卡罗来纳大学获得统计学博士学位，是改革开放之后第一批留美并获得统计学博士学位的中国学者。多年来吴教授在国内外数十所高校讲授统计学课程，在国内统计学界享有盛誉。其知名的学生有李舰和刘思喆。
+
+>李舰，从2003年开始，一直把R当作随身武器奋战在统计学和数据分析的第一线，是Rweibo、Rwordseg、tmcn等高质量R包的作者，在业界积累了大量的经验，目前供职于Mango Solutions（中国），任数据总监。
+
+>刘思喆，2012至2016年就职于京东商城，推荐系统平台部高级经理，主要负责和推荐系统离线、在线相关的用户行为、商品特征的建模，以及数据监控平台。因工作业绩，在《京东技术解密》一书中获“数据达人”称号。
 
 # 数据不平衡问题
 
@@ -147,161 +251,5 @@ Michael Irwin Jordan著。
 >注：Judea Pearl，1936年生，以色列-美国计算机科学家，UCLA教授。2011年获得图灵奖。
 
 >Michael Irwin Jordan，1956年生，美国计算机科学家。UCSD博士，先后执教于MIT和UCB。吴恩达的导师。
-
->Daphne Koller，女，1968年生，以色列-美国计算机科学家。斯坦福大学博士及教授。和吴恩达共同创立在线教育平台Coursera。
-
->Nir Friedman，1967年生，以色列计算机科学家。斯坦福大学博士，耶路撒冷希伯来大学教授。
-
-http://www.cs.cmu.edu/~epxing/Class/10708-14/lectures/
-
-CMU的邢波（Eric Xing）所开的概率图模型课程。
-
-## 概述
-
-概率图模型的三要素：Graph：$$\mathcal{G}$$、Model：$$\mathcal{M}$$和Data：$$\mathcal{D}\equiv\{X^{(i)}_1,\dots,X^{(i)}_m\}^N_{i=1}$$。
-
-它要解决的三大问题：
-
-1.**表示**。如何获取或定义真实世界的不确定度？如何对领域知识/假设/约束编码？
-
-2.**推断**。根据模型/数据，推断答案。
-
-$$\text{e.g.}:P(x_i|\mathcal{D})$$
-
-3.**学习**。根据数据确定哪个模型是正确的。
-
-$$\text{e.g.}:\mathcal{M}=\arg\max_{\mathcal{M}\in M}F(\mathcal{D};\mathcal{M})$$
-
-![](/images/article/PGM.png)
-
-上图是PGM的一个示例。其中$$X_i$$表示随机变量，图中共有8个随机变量，假设它们均为二值变量，则整个状态空间共有$$2^8$$种组合。遍历这样大的状态空间无疑是一件极为费力的事情。
-
-如果$$X_i$$是条件独立的话，则由上图可得：
-
-$$P(X_1,\dots,X_8)=P(X_2)P(X_4|X_2)P(X_5|X_2)P(X_1)P(X_3|X_1)\\P(X_6|X_3,X_4)P(X_7|X_6)P(X_8|X_5,X_6)$$
-
-这样，状态空间就缩小为$$2+4+4+2+4+8+4+8=36$$种组合了。
-
-根据边的类型，PGM可分为两类：
-
-1.有向边表示变量间的**因果**关系。这样的PGM，常称为Bayesia Network（BN）或Directed Graphical Model（DGM）。
-
-2.无向边表示变量间的**相关**关系。这样的PGM，常称为Markov Random Field（MRF）或Undirected Graphical Model（UGM）。
-
->注：因果关系是一种强逻辑关系，需要变量间有深刻的内在联系。而相关关系要弱的多，典型的例子就是《机器学习（十七）》中的尿布和啤酒的故事。尿布和啤酒虽然正相关，然而它们本身却没有多大的联系。
-
-根据模型的不同，PGM又可分为生成模型（Generative Model, GM）和判别模型（Discriminative Model, DM）。两者的区别在《机器学习（二）》中已经简单提到过，这里做一个扩展。
-
-之前提到的机器学习算法，主要是建立特征向量X和标签Y之间的联系。但是实际情况下，X中的状态不一定都能得到，因此可以根据可见性，将X分为可观测变量集合O和其他变量集合R，Y也不一定是一个标签，而可能是一个变量集合。即：
-
-$$GM:P(Y,R,O)\to P(Y|O)$$
-
-$$DM:P(Y,R|O)\to P(Y|O)$$
-
-注意，在贝叶斯学派的观点中，模型的参数也是随机变量，因此，R在某些情况下，不仅包含不可观测的变量，也包含模型参数。
-
-## 贝叶斯网络
-
-贝叶斯网络是最简单的有向图模型。
-
-首先给出几个术语的定义：
-
-**有向无环图(Directed Acyclic Graph, DAG)**：这个术语的字面意思很清楚，不解释。
-
-**马尔可夫毯(Markov Blanket, MB)**：有向图——结点A的父结点+A的子结点+A的子结点的其他父结点。如下图所示：
-
-![](/images/article/Markov_blanket.png)
-
-无向图——结点A的邻近结点。
-
-下图是图模型的部分变种之间的关系图。
-
-![](/images/article/Generative_Models.png)
-
-# DL参考资源
-
-https://mp.weixin.qq.com/s/SBppyDBWqQUariiHbpaq1w
-
-实时深度学习的推理加速和连续学习
-
-https://mp.weixin.qq.com/s/VAEH_241IAuEH5S6H6ep5w
-
-UC伯克利提出新型视觉描述系统，物体描述无需大量样本
-
-https://mp.weixin.qq.com/s/v_TLYYq6cFWuwR9tXM8m-A
-
-如何通过CRF-RNN模型实现图像语义分割任务
-
-https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
-
-NTIRE2017夺冠论文：用于单一图像超分辨率的增强型深度残差网络
-
-https://mp.weixin.qq.com/s/WMakTEN68KPi7X9kMQetiw
-
-OpenAI:3段视频演示无人驾驶目标检测强大的对抗性样本！
-
-https://mp.weixin.qq.com/s/_dDLbPwpgoOdLc83_JQEuA
-
-CVPR现场会议合集及CCCV内容跟踪
-
-https://mp.weixin.qq.com/s/xnbNkKOomwvwYC_ThKPJ_g
-
-田渊栋报告：游戏中的人工智能：成就与挑战
-
-https://mp.weixin.qq.com/s/W4zwKqkVQN4v-IKzGrkudg
-
-通过传递不变性实现自监督视觉表征学习
-
-http://mp.weixin.qq.com/s/LAgDobWyK0SOH08GCLXG7A
-
-减少30%流量，增加清晰度：MIT提出人工智能视频缓存新算法
-
-http://mp.weixin.qq.com/s/SNfSY4CKhX1RDWd4itPx2Q
-
-马里兰大学论文：训练深度神经网络中的一致性难题
-
-https://mp.weixin.qq.com/s/BWBrso7O1O3Rfxa4QWZH4g
-
-分分钟学会基于深度学习的图像真实风格迁移！
-
-https://mp.weixin.qq.com/s/5Vg9RFvyNv6T7QkIfPm1aQ
-
-DOTA2中打败Dendi的AI如何炼出？
-
-https://mp.weixin.qq.com/s/ViQqeER1NXtJOtnLg76TWg
-
-关于远程监督，我们来推荐几篇值得读的论文
-
-https://mp.weixin.qq.com/s/DEJ0z2CahZIrhTE3VXNVvg
-
-基于注意力机制学习的人脸幻构
-
-https://mp.weixin.qq.com/s/z1APyCxlOEPHn48OeJAHkQ
-
-基于深度学习的视频内容识别
-
-https://mp.weixin.qq.com/s/c2oMJfE95I1ciEtvdTlb4A
-
-完全脱离预训练模型的目标检测方法
-
-https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
-
-谷歌提出多图像抠图算法，并弥补水印技术的一致性漏洞
-
-https://zhuanlan.zhihu.com/p/28639662
-
-百家争鸣的Meta Learning/Learning to learn
-
-https://mp.weixin.qq.com/s/kMTMjlLgcR24DT7CXvezsA
-
-深度学习概念、架构和tensorflow的思维导图！
-
-https://mp.weixin.qq.com/s/Tx9JJ0cIo_rH7BDjd_hkvw
-
-Hinton碰撞LeCun：CNN有两大缺陷，要用capsule做下一代CNN
-
-https://www.jiqizhixin.com/articles/2017-07-27-2
-
-CVPR 2017李飞飞总结8年ImageNet历史，宣布挑战赛最终归于Kaggle
 
 

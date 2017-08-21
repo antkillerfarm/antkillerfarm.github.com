@@ -1,10 +1,93 @@
 ---
 layout: post
-title:  机器学习（十七）——推荐系统进阶, 决策树
+title:  机器学习（十七）——推荐系统进阶
 category: theory 
 ---
 
-# 隐式狄利克雷划分（续）
+# 隐式狄利克雷划分
+
+## MCMC（续）
+
+Markov Chain Monte Carlo算法的核心是引入一个参数$$\alpha(i,j)$$使得一个普通的马氏链，变成一个满足细致平稳条件的马氏链。即：
+
+$$p(i) \underbrace{q(i,j)\alpha(i,j)}_{Q'(i,j)} 
+= p(j) \underbrace{q(j,i)\alpha(j,i)}_{Q'(j,i)}  \quad$$
+
+以上即为Metropolis算法。
+
+>注：Nicholas Constantine Metropolis，1915~1999，希腊裔美籍物理学家。芝加哥大学博士，反复供职于Los Alamos和芝加哥大学。（其实也就这俩地方，只不过这边干几年到那边去，那边教几年书再回这边来，这么进进出出好几个来回而已）“曼哈顿计划”的主要科学家之一，战后主持MANIAC计算机的研制。
+
+$$\alpha$$的大小，决定了马氏链的收敛速度。$$\alpha$$越大，收敛越快。因此又有Metropolis–Hastings算法，其关键公式为：
+
+$$\alpha(i,j) = \min\left\{\frac{p(j)q(j,i)}{p(i)q(i,j)},1\right\}$$
+
+>注：Wilfred Keith Hastings，1930~2016，美国统计学家，多伦多大学博士，维多利亚大学教授。
+
+## Gibbs Sampling
+
+这个算法虽然以Gibbs命名，但却是Geman兄弟于1984年研究Gibbs random field时，发现的算法。
+
+>注：Josiah Willard Gibbs，1839~1903，美国科学家。他在物理、化学和数学方面都有重大理论贡献。耶鲁大学博士和教授。统计力学的创始人。
+
+>Donald Jay Geman，1943年生，美国数学家。美国西北大学博士，布朗大学教授。随机森林算法的早期研究者之一。
+
+>Stuart Alan Geman，1949年生，美国数学家。MIT博士，约翰霍普金斯大学教授。美国科学院院士。最早将Markov random field（MRF）应用于机器视觉和机器学习。
+
+因为高维空间中，沿坐标轴方向上的两点之间的转移，满足细致平稳条件。因此，Gibbs Sampling的核心就是沿坐标轴循环迭代采样，该算法收敛之后的采样点即符合指定概率分布。
+
+这里需要特别指出的是，Gibbs Sampling比Metropolis–Hastings算法高效的原因在于：Gibbs Sampling每次沿坐标轴的转移是必然会被接受的，即$$\alpha=1$$。
+
+## Unigram Model
+
+假设我们的词典中一共有V个词$$v_1,v_2,\cdots v_V$$，那么最简单的Unigram Model是定义一个V面的骰子，每抛一次骰子，抛出的面就对应产生一个词。
+
+频率学派的Unigram Model如下图：
+
+![](/images/article/unigram-model.jpg)
+
+贝叶斯学派的Unigram Model如下图：
+
+![](/images/article/dirichlet-multinomial-unigram.jpg)
+
+这里使用Dirichlet分布的原因在于，数据采用多项分布，而Dirichlet分布正好是多项分布的共轭先验分布。
+
+$$Dir(\overrightarrow{p}|\overrightarrow{\alpha})+MultCount(\overrightarrow{n})=Dir(\overrightarrow{p}|\overrightarrow{\alpha}+\overrightarrow{n})$$
+
+和wiki上对Dirichlet分布的pdf函数的描述（参见《数学狂想曲（二）》中的公式1）不同，rickjin在这里采用了如下定义：
+
+$$Dir(\overrightarrow{p}|\overrightarrow{\alpha})= 
+\frac{1}{\Delta(\overrightarrow{\alpha})} \prod_{k=1}^V p_k^{\alpha_k -1}， 
+\quad \overrightarrow{\alpha}=(\alpha_1, \cdots, \alpha_V)$$
+
+其中：
+
+$$\Delta(\overrightarrow{\alpha}) = 
+\int \prod_{k=1}^V p_k^{\alpha_k -1} d\overrightarrow{p}$$
+
+可以看出两种描述中的$$\mathrm{B}(\boldsymbol\alpha)$$和$$\Delta(\overrightarrow{\alpha})$$是等价的。
+
+下面我们来证明这个结论，即：
+
+$$\mathrm{B}(\boldsymbol\alpha)=\int \prod_{k=1}^V p_k^{\alpha_k -1} d\overrightarrow{p}\tag{1}$$
+
+**证明**：这里为了简化问题，令V=3。则根据《数学狂想曲（二）》中的公式1可得：
+
+$$Dir(\overrightarrow{p}|\overrightarrow{\alpha})= 
+\frac{1}{\mathrm{B}(\alpha_1,\alpha_2,\alpha_3)}  p_1^{\alpha_1 -1}p_2^{\alpha_2 -1}p_3^{\alpha_3 -1}$$
+
+对该pdf进行积分：
+
+$$\iiint\frac{1}{\mathrm{B}(\alpha_1,\alpha_2,\alpha_3)}p_1^{\alpha_1 -1}p_2^{\alpha_2 -1}p_3^{\alpha_3 -1}\mathrm{d}p_1\mathrm{d}p_2\mathrm{d}p_3=\frac{1}{\mathrm{B}(\alpha_1,\alpha_2,\alpha_3)}\int p_1^{\alpha_1 -1}p_2^{\alpha_2 -1}p_3^{\alpha_3 -1}\mathrm{d}\overrightarrow{p}$$
+
+由pdf的定义可知，上面的积分值为1。
+
+因此：
+
+$$\mathrm{B}(\alpha_1,\alpha_2,\alpha_3)=\int p_1^{\alpha_1 -1}p_2^{\alpha_2 -1}p_3^{\alpha_3 -1}\mathrm{d}\overrightarrow{p}$$
+
+证毕。
+
+从上面的证明过程，可以看出公式1并不是恒等式，而是在Dirichlet分布下才成立的等式。这也是共轭先验分布能够简化计算的地方。
 
 ## PLSA
 
@@ -157,123 +240,4 @@ FM算法实际上是一大类与矩阵分解有关的算法的广义模型。
 论文：
 
 http://www.wsdm-conference.org/2010/proceedings/docs/p81.pdf
-
-# 决策树
-
-Decision Tree讲的最好的，首推周志华的《机器学习》。这里只对要点进行备忘。
-
-当前样本集合D中，第k类样本所占的比例为$$p_k(k=1,2,\dots,\vert y\vert)$$，则D的信息熵（information entropy）定义为：
-
-$$Ent(D)=-\sum_{k=1}^{|y|}p_k\log_2p_k$$
-
-假定离散属性a有V个可能的取值，若使用a对D进行划分，则第v个分支结点包含了D中所有在a上取值$$a^v$$的样本，记为$$D^v$$。则信息增益（information gain）为：
-
-$$Gain(D,a)=Ent(D)-\sum_{v=1}^V\frac{|D^v|}{|D|}Ent(D^v)$$
-
-增益率（gain ratio）：
-
-$$Gain\_ratio(D,a)=\frac{Gain(D,a)}{IV(a)}$$
-
-其中
-
-$$IV(a)=-\sum_{v=1}^V\frac{|D^v|}{|D|}\log_2 \frac{|D^v|}{|D|}$$
-
-基尼值：
-
-$$Gini(D)=1-\sum_{k=1}^{|y|}p_k^2$$
-
-基尼指数：
-
-$$Gini\_index(D,a)=\sum_{v=1}^V\frac{|D^v|}{|D|}Gini(D^v)$$
-
-各种决策树和它的划分依据如下表所示：
-
-| 名称 | 划分依据 |
-|:--:|:--:|
-| ID3 | Gain |
-| C4.5 | Gain_ratio |
-| CART | Gini_index |
-
-决策树是一种可以将训练误差变为0的算法，只要每个样本对应一个叶子结点即可，然而这样做会导致过拟合。为了限制树的生长，我们可以加入阈值，当增益大于阈值时才让节点分裂。
-
-## GBDT
-
-GBDT这个算法有很多名字，但都是同一个算法：
-
-GBRT (Gradient Boost Regression Tree)渐进梯度回归树
-
-GBDT (Gradient Boost Decision Tree)渐进梯度决策树
-
-MART (Multiple Additive Regression Tree)多决策回归树
-
-Tree Net决策树网络
-
-GBDT属于集成学习（Ensemble Learning）的范畴。集成学习的思路是在对新的实例进行分类的时候，把若干个单个分类器集成起来，通过对多个分类器的分类结果进行某种组合来决定最终的分类，以取得比单个分类器更好的性能。
-
-集成学习的算法主要分为两大类：
-
-**并行算法**：若干个不同的分类器同时分类，选择票数多的分类结果。这类算法包括bagging和随机森林等。
-
-**串行算法**：使用同种或不同的分类器，不断迭代。每次迭代的目标是缩小残差或者提高预测错误项的权重。这类算法包括Adaboost和GBDT等。
-
-GBDT写的比较好的，有以下blog：
-
-http://blog.csdn.net/w28971023/article/details/8240756
-
-摘录要点如下：
-
-决策树分为两大类：
-
-**回归树**：用于预测实数值，如明天的温度、用户的年龄、网页的相关程度。其结果加减是有意义的，如10岁+5岁-3岁=12岁。
-
-**分类树**：用于分类标签值，如晴天/阴天/雾/雨、用户性别、网页是否是垃圾页面。其结果加减无意义，如男+男+女=到底是男是女？
-
-GBDT的核心在于**累加所有树的结果作为最终结果**。例如根到某叶子结点的路径上的决策值为10岁、5岁、-3岁，则该叶子的最终结果为10岁+5岁-3岁=12岁。
-
-所以**GBDT中的树都是回归树，不是分类树**。
-
-上面举的例子中，越靠近叶子，其决策值的绝对值越小。这不是偶然的。决策树的基本思路就是“分而治之”，自然越靠近根结点，其划分的粒度越粗。每划分一次，预测误差（即残差）越小，这样也就变相提高了下一步划分中预测错误项的权重，这就是算法名称中Gradient的由来。
-
-为了防止过拟合，GBDT还采用了Shrinkage（缩减）的思想，每次只走一小步来逐渐逼近结果，这样各个树的残差就是渐变的，而不是陡变的。
-
-参考：
-
-http://blog.csdn.net/u010691898/article/details/38292937
-
-http://www.cs.cmu.edu/~tom/
-
-## Bagging和随机森林
-
-Bagging主要是通过随机选择样本集，来改变各并行计算决策树的结果，从而达到并行计算的效果。这相当于通过加入样本的扰动，来提供泛化能力。
-
-随机森林除了样本扰动之外，还通过随机选择属性集，并从中选择一个最优属性划分的方式，进一步提升了模型的泛化能力。
-
-## XGBoost
-
-XGBoost是陈天奇于2014年提出的一套并行boost算法的工具库。
-
->注：陈天奇，华盛顿大学计算机系博士生，研究方向为大规模机器学习。上海交通大学本科（2006～2010）和硕士（2010～2013）。   
->http://homes.cs.washington.edu/~tqchen/
-
-原始论文：
-
-https://arxiv.org/pdf/1603.02754v3.pdf
-
-## 参考
-
-https://mp.weixin.qq.com/s/XnMXXFEBPXnEUk3jdMMoXA
-
-从决策树到随机森林：树型算法的原理与实现
-
-https://mp.weixin.qq.com/s/NcBGYtgiWa0uY48wnFOoVg
-
-机器学习之决策树算法
-
-https://zhuanlan.zhihu.com/p/22852262
-
-经典决策树，条件推断树，随机森林，SVM的R实现
-
-https://mp.weixin.qq.com/s/x06axCC1ZTgezqEYjjNIsw
-
-Xgboost初见面
 

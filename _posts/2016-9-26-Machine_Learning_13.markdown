@@ -1,10 +1,83 @@
 ---
 layout: post
-title:  机器学习（十三）——机器学习中的矩阵方法（3）病态矩阵, 协同过滤的ALS算法（1）
+title:  机器学习（十三）——机器学习中的矩阵方法（2）特征值和奇异值, 病态矩阵
 category: theory 
 ---
 
-## 奇异值分解（续）
+## QR算法（续）
+
+>Vera Nikolaevna Kublanovskaya，1920~2012，苏联数学家，女。终身供职于苏联科学院列宁格勒斯塔克罗夫数学研究所。52岁才拿到博士学位。
+
+需要指出的是，QR算法可求出矩阵的所有特征值，如果只求某一个特征值的话，还有其他一些更快的算法。详见：
+
+https://en.wikipedia.org/wiki/Eigenvalue_algorithm
+
+## 矩阵的奇异值
+
+在进一步讨论之前，我们首先介绍一下矩阵特征值的几何意义。
+
+首先，矩阵是对线性变换的表示，确定了定义域空间V与目标空间W的两组基，就可以很自然地得到该线性变换的矩阵表示。
+
+线性空间变换的几何含义如下图所示：
+
+![](/images/article/svd_2.png)
+
+图中的坐标轴，就是线性空间的**基**。
+
+线性变换主要有三种几何效果：**旋转、缩放、投影**。
+
+其中，旋转和缩放不改变向量的维数。矩阵特征值运算，实际上就是将向量V旋转缩放到一个正交基W上。因为V和W等维，所以要求矩阵必须是方阵。
+
+正交化过程，代表旋转变换，又被称为**等距同构**。（旋转变换，可以理解为向量的正向旋转，也可以理解为坐标轴的反向旋转，这里理解为后者，会容易一些。）**特征值代表缩放变换的缩放因子。**
+
+而对于一般矩阵而言，我们还需要进行投影变换，将n维向量V映射为m维向量W。那么投影变换选择什么矩阵呢？
+
+我们知道，对于复数z，可写成：
+
+$$z=\left(\frac{z}{|z|}\right)|z|=\left(\frac{z}{|z|}\right)\sqrt{\overline z z}$$
+
+其中$$\overline z$$是z的共轭复数。也就是说，一个复数可以表示为一个单位向量乘以一个模。
+
+类似的，我们定义共轭矩阵$$M^*_{ij}=\overline{M_{ji}}$$，这实际上就是矩阵M转置之后，再将每个元素值设为它的共轭复数。因此：
+
+$$M^*=(\overline M)^T=\overline{M^T}$$
+
+仿照着复数的写法，矩阵M可以表示为：$$M=S\sqrt{M^*M}$$
+
+这里的S表示等距同构。（单位向量相当于给模一个旋转变换，也就是等距同构。）由于$$\sqrt{M^*M}$$是正定对称方阵，因此它实际上也是能够被正交化的。所以对于一般矩阵来说，我们总能够找到两个正交基，并在这两个基之间进行投影变换。
+
+>注意：我们刚才是用与复数类比的方式，得到投影变换矩阵$$\sqrt{M^*M}$$。但是类比不能代替严格的数学证明。幸运的是，上述结论已经被严格证明了。
+
+我们将矩阵$$\sqrt{M^*M}$$的特征值，称作奇异值（Singular value）。可以看出，如果M是对称方阵的话，则M的奇异值等于M的特征值的绝对值。
+
+参见：
+
+https://www.zhihu.com/question/22237507/answer/53804902
+
+http://www.ams.org/samplings/feature-column/fcarc-svd
+
+## 奇异值分解
+
+奇异值分解（Singular value decomposition，SVD）定理：
+
+设$$M\in R^{m\times n}$$，则必存在正交矩阵$$U=[u_1,\dots,u_m]\in R^{m\times m}$$和$$V=[v_1,\dots,v_n]\in R^{n\times n}$$使得：
+
+$$U^TMV=\begin{bmatrix}
+\Sigma_r & 0 \\
+0 & 0 
+\end{bmatrix}$$
+
+其中，$$\Sigma_r=diag(\sigma_1,\dots,\sigma_r),\sigma_1\ge \dots\ge \sigma_r>0$$。
+
+当M为复矩阵时，将U、V改为酉矩阵（unitary matrix）即可。（吐槽一下，酉矩阵这个翻译真的好烂，和天干地支半毛钱关系都没有。）
+
+奇异值分解也可写为另一种形式：
+
+$$M=U\Sigma V^*$$
+
+其几何意义如下图所示：
+
+![](/images/article/Singular-Value-Decomposition.png)
 
 虽然，我们可以通过计算矩阵$$\sqrt{M^*M}$$的特征值的方法，计算奇异值，然而这个方法的计算量十分巨大。1965年，Gene Howard Golub和William Morton Kahan发明了目前较为通用的算法。但该方法比较复杂，这里不作介绍。
 
@@ -182,7 +255,7 @@ https://en.wikipedia.org/wiki/Condition_number
 
 病态矩阵处理方法有很多，这里只介绍矩阵规则化（regularization）方法。
 
-机器学习领域，经常用到各种损失函数（loss function），也称花费函数（cost function）。这里我们用：
+机器学习领域，经常用到各种损失函数（loss function）。这里我们用：
 
 $$\min_f \sum_{i=1}^nV(f(\hat x_i),\hat y_i)$$
 
@@ -194,65 +267,4 @@ $$\min_f \sum_{i=1}^nV(f(\hat x_i),\hat y_i)+\lambda R(f)$$
 
 其中的$$\lambda$$表示规则化因子的权重。
 
->注：稀疏矩阵并不一定是病态矩阵，比如单位阵就不是病态的。但是从系统论的角度，高维空间中样本量的稀疏，的确会带来很大的不确定性。
 
-函数V（又叫做Fit measure）和R（又叫做Entropy measure），在不同的算法中，有不同的取值。
-
-比如，在Ridge regression问题中：
-
-$$\text{Fit measure}:\|Y-X\beta\|_2,\text{Entropy measure}:\|\beta\|_2$$
-
-Ridge regression问题中规则化方法，又被称为$$L_2$$ regularization，或Tikhonov regularization。
-
->注：Andrey Nikolayevich Tikhonov，1906~1993，苏联数学家和地球物理学家。大地电磁学的发明人之一。苏联科学院院士。著有《Solutions of Ill-posed problems》一书。
-
-更多的V和R取值参见：
-
-https://en.wikipedia.org/wiki/Regularization_(mathematics)
-
-从形式上来看，对比之前提到的拉格朗日函数，我们可以发现规则化因子，实际上就是给损失函数增加了一个约束条件。它的好处是增加了解向量的稳定度，缺点是增加了数值解和真实解之间的误差。
-
-为了更便于理解规则化，这里以二维向量空间为例，给出了规则化因子对损失函数的约束效应。
-
-![](/images/article/L1_vs_L2.png)
-
-上图中的圆圈是损失函数的等高线，坐标原点是规则化因子的约束中心，左图的方形和右图的圆形是$$l_p$$ ball。图中的黑点是等高线和$$l_p$$ ball的焦点，实际上也就是这个带约束的优化问题的解。
-
-可以看出$$L_1$$ regularization的解一般出现在坐标轴上，因而其他坐标上的值就是0，因此，$$L_1$$ regularization会导致矩阵的稀疏。
-
-$$L_1$$ regularization又被称为Lasso（least absolute shrinkage and selection operator） regression。
-
-参见：
-
-https://en.wikipedia.org/wiki/Tikhonov_regularization
-
-http://www.mit.edu/~cuongng/Site/Publication_files/Tikhonov06.pdf
-
-http://blog.csdn.net/zouxy09/article/details/24971995
-
-# 协同过滤的ALS算法
-
-## 协同过滤概述
-
->注：最近研究商品推荐系统的算法，因此，Andrew Ng讲义的内容，后续再写。
-
-协同过滤是目前很多电商、社交网站的用户推荐系统的算法基础，也是目前工业界应用最广泛的机器学习领域。
-
-协同过滤是利用集体智慧的一个典型方法。要理解什么是协同过滤 (Collaborative Filtering,简称CF)，首先想一个简单的问题，如果你现在想看个电影，但你不知道具体看哪部，你会怎么做？大部分的人会问问周围的朋友，看看最近有什么好看的电影推荐，而我们一般更倾向于从口味比较类似的朋友那里得到推荐。这就是协同过滤的核心思想。
-
-如何找到相似的用户和物品呢？其实就是计算用户间以及物品间的相似度。以下是几种计算相似度的方法：
-
-### 欧氏距离
-
-$$d(x,y)=\sqrt{\sum(x_i-y_i)^2},sim(x,y)=\frac{1}{1+d(x,y)}$$
-
-### Cosine相似度
-
-$$\cos(x,y)=\frac{\langle x,y\rangle}{|x||y|}=\frac{\sum x_iy_i}{\sqrt{\sum x_i^2}~\sqrt{\sum y_i^2}}$$
-
-### 皮尔逊相关系数（Pearson product-moment correlation coefficient，PPMCC or PCC）：
-
-$$\begin{align}
-p(x,y)&=\frac{cov(X,Y)}{\sigma_X\sigma_Y}=\frac{\operatorname{E}[XY]-\operatorname{E}[X]\operatorname{E}[Y]}{\sqrt{\operatorname{E}[X^2]-\operatorname{E}[X]^2}~\sqrt{\operatorname{E}[Y^2]- \operatorname{E}[Y]^2}}
-\\&=\frac{n\sum x_iy_i-\sum x_i\sum y_i}{\sqrt{n\sum x_i^2-(\sum x_i)^2}~\sqrt{n\sum y_i^2-(\sum y_i)^2}}
-\end{align}$$

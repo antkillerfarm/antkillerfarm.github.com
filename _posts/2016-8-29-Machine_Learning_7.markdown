@@ -4,7 +4,55 @@ title:  机器学习（七）——规则化和模型选择
 category: theory 
 ---
 
-## $$\mathcal{H}$$为有限集的情况（续）
+## 学习理论的预备知识（续）
+
+$$\varepsilon(h)=P^{(x,y)~\mathcal{D}}(h(x)\neq y)$$
+
+$$\varepsilon(h)$$表示泛化误差，$$(x,y)$$表示被预测的样本，$$\mathcal{D}$$表示样本所遵循的概率分布。
+
+>注意：$$\hat\varepsilon(h)$$和$$\varepsilon(h)$$针对的样本集是不同的，后面定义的变量h和$$\hat h$$也遵循相同的约定。
+
+这里我们假设：训练数据和预测数据都具有相同的概率分布$$\mathcal{D}$$。这个假设是PAC理论的假设之一。
+
+PAC（Probably approximately correct）理论是Leslie Valiant于1984年提出的。这里的大部分讨论都和PAC有关。
+
+>注：Leslie Valiant，1949年生，英国计算机科学家，华威大学博士。哈佛大学教授，英国皇家学会会员，图灵奖获得者（2010）。
+
+对于线性分类$$h_\theta(x)=1\{\theta^Tx\ge 0\}$$来说，寻找合适的参数$$\theta$$，还有另一种方法，即最小化训练误差，并令：
+
+$$\hat\theta=\arg\min_\theta\hat\varepsilon(h_\theta)$$
+
+我们将这个过程称为经验风险最小化（empirical risk minimization，ERM）。其最终的预测函数为$$\hat h=h_{\hat\theta}$$。
+
+ERM是一类基本的学习算法，也是本节关注的焦点。
+
+我们定义预测函数类（hypothesis class ）$$\mathcal{H}$$，用以表示解决某类学习问题的所有可能的分类器的集合。（实际上也就是参数$$\theta$$所有可能取值的集合。）则ERM算法可表示为：
+
+$$\hat h=\arg\min_{h\in \mathcal{H}}\hat\varepsilon(h)$$
+
+## $$\mathcal{H}$$为有限集的情况
+
+根据之前的讨论，我们做如下定义：
+
+$$Z=1\{h_i(x)\neq y\}$$
+
+$$Z_j=1\{h_i(x^{(j)})\neq y^{(j)}\}$$
+
+$$\hat\varepsilon(h_i)=\frac{1}{m}\sum_{j=1}^mZ_j$$
+
+其中，$$h_i\in \mathcal{H}$$。
+
+由Hoeffding不等式可知：
+
+$$P(\lvert\varepsilon(h_i)-\hat\varepsilon(h_i)\rvert>\gamma)\le 2\exp(-2\gamma^2m)$$
+
+这个公式表明：对于特定的$$h_i$$，在m很大的情况下，训练误差有很大的概率接近于泛化误差。
+
+如果我们用$$A_i$$表示事件$$\lvert\varepsilon(h_i)-\hat\varepsilon(h_i)\rvert>\gamma$$，则上式可改为$$P(A_i)\le 2\exp(-2\gamma^2m)$$。
+
+$$P(\exists h\in\mathcal{H}.\lvert\varepsilon(h_i)-\hat\varepsilon(h_i)\rvert>\gamma)=P(A_1\cup \dots\cup A_k)$$
+
+$$\le \sum_{i=1}^kP(A_i)\le \sum_{i=1}^k2\exp(-2\gamma^2m)=2k\exp(-2\gamma^2m)$$
 
 $$\begin{align}
 &1-P(\exists h\in\mathcal{H}.\lvert\varepsilon(h_i)-\hat\varepsilon(h_i)\rvert>\gamma)=P(\lnot\exists h\in\mathcal{H}.\lvert\varepsilon(h_i)-\hat\varepsilon(h_i)\rvert>\gamma)
@@ -146,38 +194,3 @@ $$m=O_{\gamma,\delta}(d)$$
 特征选择（Feature Selection）严格来说也是模型选择中的一种。
 
 假设我们想对维度为n的样本点进行回归，如果，n远远大于训练样例数m，且你认为其中只有很少的特征起关键作用的话，就可以对整个特征集进行特征选择，以减少特征的数量。
-
-对于n个特征的$$\mathcal{M}$$来说，根据特征是否包含在最终结果中，可以写出$$2^n$$个不同的$$M_i$$。直接使用上面的交叉验证方法，计算量过大。这时可以采用如下启发式算法：
-
->1.初始化特征集$$\mathcal{F}=\emptyset$$。   
->2.Repeat {   
-><span style="white-space: pre">	</span>(a)for 特征i=1 to n, {   
-><span style="white-space: pre">	     </span>如果$$i\notin\mathcal{F}$$，则$$\mathcal{F}_i=\mathcal{F}\cup\{i\}$$。   
-><span style="white-space: pre">	     </span>在$$\mathcal{F}_i$$上使用交叉验证方法评估它的泛化误差。   
-><span style="white-space: pre">	</span>}   
-><span style="white-space: pre">	</span>(b)将第(a)步中最优的$$\mathcal{F}_i$$设为新的$$\mathcal{F}$$。   
->}   
->3.选择并输出搜索过程中得到的最优子集。
-
-这个算法被称为前向搜索（forward search）。其外部循环的终止条件为$$\lvert\mathcal{F}\rvert$$达到n或者事先设定的门限值。
-
-前向搜索属于wrapper model特征选择方法的一种。 Wrapper这里指不断地使用不同的特征子集来测试学习的算法。
-
-除了前向搜索之外，还有后向搜索（backward search）算法。它和前者的区别在于，它的初始集合为全集，然后每次删除一个特征，并评价，直到$$\lvert\mathcal{F}\rvert$$达到阈值或者为空，然后选择最佳的$$\mathcal{F}$$即可。
-
-可以看出无论前向搜索，还是后向搜索，其算法复杂度都是$$O(n^2)$$。
-
-## KL散度
-
-KL散度（Kullback–Leibler divergence）是两个随机分布间距离的度量。其定义如下：
-
-$$D_{KL}(P\|Q)=\sum_iP(i)\log\frac{P(i)}{Q(i)}$$
-
-其中，P和Q是离散概率分布，$$P(i)$$和$$Q(i)$$是相应分布的概率密度函数。如果P和Q是连续随机变量的话，将上式中的累加符号换成积分符号即可。
-
-但KL散度并不是真正的度量（metric）。它既不满足三角不等式(两边之和$$\ge$$第三边)，也不满足对称性（即$$D_{KL}(P\|Q)\neq D_{KL}(Q\|P)$$）。
-
->注：Solomon Kullback，1907～1994，美国数学家和密码学家。乔治·华盛顿大学博士。NSA首任首席科学家。二战期间，参与破解德国的Enigma机器。
-
->Richard Leibler，1914～2003，美国数学家和密码学家。伊利诺伊大学博士。NSA高级主管，入选NSA名人堂。
-

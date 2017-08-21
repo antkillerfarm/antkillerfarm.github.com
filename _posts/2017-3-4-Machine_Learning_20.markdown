@@ -1,8 +1,126 @@
 ---
 layout: post
-title:  机器学习（二十）——EMD, LSA, HMM, AutoML
+title:  机器学习（二十）——loss function详解, EMD, LSA, HMM
 category: theory 
 ---
+
+# PageRank算法
+
+## 马尔可夫链（续）
+
+**定义4**：
+
+如果$$f_{ii}=1$$, 则称状态i为**常返**的，如果$$f_{ii}<1$$, 则称状态i为**非常返**的。
+
+令$$u_i=\sum_{n=1}^\infty nf_{ii}^{(n)}$$，则$$u_i$$表示由i出发i，再返回i的**平均返回时间**。
+
+如果$$u_i=\infty$$，则称i为**零常返**的。
+
+常返态表征Markov链的极限分布。显然如果长期来看，状态i“入不敷出”的话，则其最终的极限概率为0。
+
+根据上面的定义，还可得到Markov链的三个推论：
+
+**推论1**：有限状态的不可约非周期Markov链必存在平稳分布。
+
+**推论2**：若不可约Markov链的所有状态是非常返或零常返的，则不存在平稳分布。
+
+**推论3**：若$$X_j$$是不可约的非周期的Markov链的平稳分布，则$$\lim_{n\to\infty}P_{ij}^{(n)}=X_j$$，即极限分布等于平稳分布。
+
+## 简易推导
+
+![](/images/article/page_rank.jpg)
+
+上图是一个Web图模型的示例。其中的节点表示网页，箭头表示网页链接。因此，从图论的角度来说，这是一个有向图。而从随机过程的角度，这也可以看做是一个Markov链。
+
+上图中，A有两个入链B和C，则：
+
+$$PR(A)=PR(B)+PR(C)$$
+
+然而图中除了C之外，B和D都不止有一条出链，所以上面的计算式并不准确：
+
+$$PR(A) = \frac{PR(B)}{2} + \frac{PR(C)}{1}$$
+
+一般化，即：
+
+$$PR(A)= \frac{PR(B)}{L(B)}+ \frac{PR(C)}{L(C)}$$
+
+其中，L表示外链个数。
+
+更一般化，可得：
+
+$$PR(u) = \sum_{v \in B_u} \frac{PR(v)}{L(v)}$$
+
+这里有两种异常情况需要处理。
+
+1.互联网中不乏一些没有出链的网页，为了满足Markov链的收敛性，设定其对所有的网页（包括它自己）都有出链。
+
+2.互联网中一个网页只有对自己的出链，或者几个网页的出链形成一个循环圈。那么在不断地迭代过程中，这一个或几个网页的PR值将只增不减，显然不合理。
+
+对于这种情况，我们假定有一个确定的概率$$\alpha$$会输入网址直接跳转到一个随机的网页，并且跳转到每个网页的概率是一样的。即：
+
+$$PR(p_{i}) = \alpha \sum_{p_{j} \in M_{p_{i}}} \frac{PR(p_{j})}{L(p_{j})} + \frac{(1 - \alpha)}{N}$$
+
+$$\alpha$$也叫阻尼系数，一般设定为0.85。
+
+由Markov链的收敛性可知，无论每个网页的PR初始值如何设定，都不影响最终的PR值。
+
+在实际计算中，由于网页数量众多，而其中的链接关系相对较少，因此这个计算过程，实际上是一个巨维稀疏矩阵的凸优化问题，此处不再赘述。
+
+## TextRank
+
+TextRank算法是PageRank算法在NLP领域的扩展，被广泛用于自动摘要和提取关键词。
+
+将原文本拆分为句子，在每个句子中过滤掉停用词（可选），并只保留指定词性的单词（可选）。由此可以得到句子的集合和单词的集合。
+
+每个单词作为TextRank中的一个节点。假设一个句子依次由下面的单词组成：$$w_1,\dots,w_n$$。从中取出k个连续的单词序列，组成一个窗口。我们认为窗口中任意两个单词间存在一个无向边，从而构建出一个图模型。
+
+对该图模型应用PageRank算法，可得：
+
+$$WS(V_i)=(1-d)+d\sum_{V_j \in In(V_i)}\frac{w_{ji}}{\sum_{V_k \in Out(V_j)}w_{jk}}WS(V_j)$$
+
+上式的W为权重（也可叫做结点相似度），一般采用以下定义：
+
+$$W(S_i,S_j)=\frac{|\{w_k|w_k\in S_i \& w_k\in S_j\}|}{\log(|S_i|)+\log(|S_j|)}$$
+
+其中，$$\vert S_i\vert$$是句子i的单词数。
+
+上面说的是关键词的计算方法。计算自动摘要的时候，将句子定义为结点，并认为全部句子都是相邻的即可。自动摘要所用的权重函数，一般采用BM25算法。
+
+## 参考
+
+http://www.cnblogs.com/rubinorth/p/5799848.html
+
+http://blog.csdn.net/hguisu/article/details/7996185
+
+http://www.docin.com/p-1231683333.html
+
+http://www.docin.com/p-630952720.html
+
+# loss function详解
+
+## Mean Squared Error(MSE)/Mean Squared Deviation(MSD)
+
+$$\operatorname{MSE}=\frac{1}{n}\sum_{i=1}^n(\hat{Y_i} - Y_i)^2$$
+
+## Symmetric Mean Absolute Percentage Error(SMAPE or sMAPE)
+
+MSE定义的误差，实际上是向量空间中的欧氏距离，这也可称为绝对误差。而有些情况下，可能相对误差（即百分比误差）更有意义些：
+
+$$\text{SMAPE} = \frac 1 n \sum_{t=1}^n \frac{\left|F_t-A_t\right|}{(A_t+F_t)/2}$$
+
+上式的问题在于$$A_t+F_t\le 0$$时，该值无意义。为了解决该问题，可用如下变种：
+
+$$\text{SMAPE} = \frac{100\%}{n} \sum_{t=1}^n \frac{|F_t-A_t|}{|A_t|+|F_t|}$$
+
+## Mean Absolute Error(MAE)
+
+$$\mathrm{MAE} = \frac{1}{n}\sum_{i=1}^n \left| f_i-y_i\right| =\frac{1}{n}\sum_{i=1}^n \left| e_i \right|$$
+
+这个可以看作是MSE的1范数版本。
+
+## Mean Percentage Error(MPE)
+
+$$\text{MPE} = \frac{100\%}{n}\sum_{t=1}^n \frac{a_t-f_t}{a_t}$$
 
 # P-R、ROC和AUC
 
@@ -117,120 +235,3 @@ http://www.shareditor.com/blogshow/?blogId=90
 1）**知道骰子有几种（隐含状态数量），每种骰子是什么（转换概率），根据掷骰子掷出的结果（可见状态链），我想知道每次掷出来的都是哪种骰子（隐含状态链）。**
 
 这个问题呢，在语音识别领域呢，叫做解码问题。这个问题其实有两种解法，会给出两个不同的答案。每个答案都对，只不过这些答案的意义不一样。第一种解法求最大似然状态路径，说通俗点呢，就是我求一串骰子序列，这串骰子序列产生观测结果的概率最大。第二种解法呢，就不是求一组骰子序列了，而是求每次掷出的骰子分别是某种骰子的概率。比如说我看到结果后，我可以求得第一次掷骰子是D4的概率是0.5，D6的概率是0.3，D8的概率是0.2。
-
-2）**还是知道骰子有几种（隐含状态数量），每种骰子是什么（转换概率），根据掷骰子掷出的结果（可见状态链），我想知道掷出这个结果的概率。**
-
-看似这个问题意义不大，因为你掷出来的结果很多时候都对应了一个比较大的概率。问这个问题的目的呢，其实是检测观察到的结果和已知的模型是否吻合。如果很多次结果都对应了比较小的概率，那么就说明我们已知的模型很有可能是错的，有人偷偷把我们的骰子給换了。问题2的更一般的用法是：从若干种模型中选择一个概率最大的模型。
-
-3）**知道骰子有几种（隐含状态数量），不知道每种骰子是什么（转换概率），观测到很多次掷骰子的结果（可见状态链），我想反推出每种骰子是什么（转换概率）。**
-
-这个问题很重要，因为这是最常见的情况。很多时候我们只有可见结果，不知道HMM模型里的参数，我们需要从可见结果估计出这些参数，这是建模的一个必要步骤。
-
-参考：
-
-https://www.zhihu.com/question/20962240
-
-如何用简单易懂的例子解释隐马尔可夫模型？
-
-http://www.cnblogs.com/kaituorensheng/archive/2012/11/29/2795499.html
-
-隐马尔可夫模型
-
-https://mp.weixin.qq.com/s/9MmHDVDal57pdotwxAn_uQ
-
-HMM模型详解
-
-## Viterbi算法
-
-Viterbi算法是求解最大似然状态路径的常用算法，被广泛应用于通信（CDMA技术的理论基础之一）和NLP领域。
-
->注：Andrew James Viterbi，1935年生，意大利裔美国工程师、企业家，高通公司联合创始人。MIT本硕+南加州大学博士。viterbi算法和CDMA标准的主要发明人。
-
-![](/images/article/HMM_4.png)
-
-上图是一个HMM模型的概率图表示，其中{'Healthy','Fever'}是隐含状态，而{'normal','cold','dizzy'}是可见状态，边是各状态的转移概率。
-
-![](/images/article/Viterbi_animated_demo.gif)
-
-上图是Viterbi算法的动画图。简单来说就是，从开始状态之后的每一步，都选择最大似然状态的路径。由于每一步都是最优方案，因此整个路径也是最优路径。
-
-参考：
-
-https://mp.weixin.qq.com/s/FQ520ojMmbFhNMoNCVTKug
-
-通俗理解维特比算法
-
-## 前向算法
-
-forward算法是求解问题2的常用算法。
-
-仍以上面的掷骰子为例，要算用正常的三个骰子掷出这个结果的概率，其实就是将所有可能情况的概率进行加和计算。同样，简单而暴力的方法就是把穷举所有的骰子序列，还是计算每个骰子序列对应的概率，但是这回，我们不挑最大值了，而是把所有算出来的概率相加，得到的总概率就是我们要求的结果。
-
-穷举法的计算量太大，不适用于计算较长的马尔可夫链。但是我们可以观察一下穷举法的计算步骤。
-
-![](/images/article/forward_algorithm.png)
-
-上图是某骰子序列的穷举计算过程，可以看出第3步计算的概率和公式的某些项，实际上在之前的步骤中已经计算出来了，前向递推的计算量并没有想象中的大。
-
-## Baum–Welch算法
-
-Baum–Welch算法是求解问题3的常用算法。
-
-## HMM在NLP领域的应用
-
-具体到分词系统，可以将“标签”当作隐含状态，“字或词”当作可见状态。那么，几个NLP的问题就可以转化为：
-
-词性标注：给定一个词的序列（也就是句子），找出最可能的词性序列（标签是词性）。如ansj分词和ICTCLAS分词等。
-
-分词：给定一个字的序列，找出最可能的标签序列（断句符号：[词尾]或[非词尾]构成的序列）。结巴分词目前就是利用BMES标签来分词的，B（开头）,M（中间),E(结尾),S(独立成词）
-
-命名实体识别：给定一个词的序列，找出最可能的标签序列（内外符号：[内]表示词属于命名实体，[外]表示不属于）。如ICTCLAS实现的人名识别、翻译人名识别、地名识别都是用同一个Tagger实现的。
-
-# AutoML
-
-尽管现在已经有许多成熟的ML算法，然而大多数ML任务仍依赖于专业人员的手工编程实现。
-
-然而但凡做过若干同类项目的人都明白，在算法选择和参数调优的过程中，有大量的套路可以遵循。
-
-比如有人就总结出参加kaggle比赛的套路：
-
-http://www.jianshu.com/p/63ef4b87e197
-
-一个框架解决几乎所有机器学习问题
-
-https://mlwave.com/kaggle-ensembling-guide/
-
-Kaggle Ensembling Guide
-
-既然是套路，那么就有将之自动化的可能，比如下面网页中，就有好几个AutoML的框架：
-
-https://mp.weixin.qq.com/s/QIR_l8OqvCQzXXXVY2WA1w
-
-十大你不可忽视的机器学习项目
-
-下面给几个套路图：
-
-![](/images/article/ML.png)
-
-参考：
-
-http://blog.csdn.net/aliceyangxi1987/article/details/71079448
-
-一个框架解决几乎所有机器学习问题
-
-https://docs.microsoft.com/en-us/azure/machine-learning/machine-learning-algorithm-cheat-sheet
-
-MS提供的ML算法选择指南
-
-https://mp.weixin.qq.com/s/53AcAZcCKBZI-i1CORl0bQ
-
-分分钟带你杀入Kaggle Top 1%
-
-https://mp.weixin.qq.com/s/NwVGkAcoDmyXKrYFUaK2Bw
-
-如何在机器学习竞赛中更胜一筹？
-
-https://mp.weixin.qq.com/s/hf4IOAayS29i6GB9m4GHcA
-
-全自动机器学习：ML工程师屠龙利器
-

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四）——RNN, LSTM, 神经元激活函数进阶 
+title:  深度学习（四）——RNN, LSTM, 神经元激活函数进阶
 category: theory 
 ---
 

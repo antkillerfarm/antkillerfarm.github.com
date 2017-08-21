@@ -1,8 +1,129 @@
 ---
 layout: post
-title:  机器学习（十五）——主成分分析, loss function比较, 独立成分分析
+title:  机器学习（十五）——协同过滤的ALS算法（2）, 主成分分析
 category: theory 
 ---
+
+## ALS算法优化过程的推导
+
+公式2的直接优化是很困难的，因为X和Y的二元导数并不容易计算，这时可以使用类似坐标下降法的算法，固定其他维度，而只优化其中一个维度。
+
+对$$x_u$$求导，可得：
+
+$$\begin{align}
+\frac{\partial L}{\partial x_u}&=-2\sum_i(r_{ui}-x_u^Ty_i)y_i+2\lambda x_u
+\\&=-2\sum_i(r_{ui}-y_i^Tx_u)y_i+2\lambda x_u
+\\&=-2Y^Tr_u+2Y^TYx_u+2\lambda x_u
+\end{align}$$
+
+令导数为0，可得：
+
+$$Y^TYx_u+\lambda Ix_u=Y^Tr_u\Rightarrow x_u=(Y^TY+\lambda I)^{-1}Y^Tr_u\tag{3}$$
+
+同理，对$$y_i$$求导，由于X和Y是对称的，因此可得类似的结论：
+
+$$y_i=(X^TX+\lambda I)^{-1}X^Tr_i\tag{4}$$
+
+因此整个优化迭代的过程为：
+
+>1.随机生成X、Y。（相当于对迭代算法给出一个初始解。）   
+>Repeat until convergence {   
+><span style="white-space: pre">	</span>2.固定Y，使用公式3更新$$x_u$$。    
+><span style="white-space: pre">	</span>3.固定X，使用公式4更新$$y_i$$。    
+>}
+
+一般使用RMSE（root-mean-square error）评估误差是否收敛，具体到这里就是：
+
+$$RMSE=\sqrt{\frac{\sum(R-XY^T)^2}{N}}$$
+
+其中，N为三元组<User,Item,Rating>的个数。当RMSE值变化很小时，就可以认为结果已经收敛。
+
+算法复杂度：
+
+1.求$$x_u$$：$$O(k^2N+k^3m)$$
+
+2.求$$y_i$$：$$O(k^2N+k^3n)$$
+
+可以看出当k一定的时候，这个算法的复杂度是**线性**的。
+
+因为这个迭代过程，交替优化X和Y，因此又被称作交替最小二乘算法（Alternating Least Squares，ALS）。
+
+## 隐式反馈
+
+用户给商品评分是个非常简单粗暴的用户行为。在实际的电商网站中，还有大量的用户行为，同样能够间接反映用户的喜好，比如用户的购买记录、搜索关键字，甚至是鼠标的移动。我们将这些间接用户行为称之为隐式反馈（implicit feedback），以区别于评分这样的显式反馈（explicit feedback）。
+
+隐式反馈有以下几个特点：
+
+1.没有负面反馈（negative feedback）。用户一般会直接忽略不喜欢的商品，而不是给予负面评价。
+
+2.隐式反馈包含大量噪声。比如，电视机在某一时间播放某一节目，然而用户已经睡着了，或者忘了换台。
+
+3.显式反馈表现的是用户的**喜好（preference）**，而隐式反馈表现的是用户的**信任（confidence）**。比如用户最喜欢的一般是电影，但观看时间最长的却是连续剧。大米购买的比较频繁，量也大，但未必是用户最想吃的食物。
+
+4.隐式反馈非常难以量化。
+
+## ALS-WR
+
+针对隐式反馈，有ALS-WR算法（ALS with Weighted-$$\lambda$$-Regularization）。
+
+首先将用户反馈分类：
+
+$$p_{ui}=\begin{cases}
+1, & \text{preference} \\
+0, & \text{no preference} \\
+\end{cases}$$
+
+但是喜好是有程度差异的，因此需要定义程度系数：
+
+$$c_{ui}=1+\alpha r_{ui}$$
+
+这里的$$r_{ui}$$表示原始量化值，比如观看电影的时间；
+
+这个公式里的1表示最低信任度，$$\alpha$$表示根据用户行为所增加的信任度。
+
+最终，损失函数变为：
+
+$$\min_{x_*,y_*}L(X,Y)=\min_{x_*,y_*}\sum_{u,i}c_{ui}(p_{ui}-x_u^Ty_i)^2+\lambda(\sum_u|x_u|^2+\sum_i|y_i|^2)$$
+
+除此之外，我们还可以使用指数函数来定义$$c_{ui}$$：
+
+$$c_{ui}=1+\alpha \log(1+r_{ui}/\epsilon)$$
+
+ALS-WR没有考虑到时序行为的影响，时序行为相关的内容，可参见：
+
+http://www.jos.org.cn/1000-9825/4478.htm
+
+## 参考
+
+参考论文：
+
+《Large-scale Parallel Collaborative Filtering forthe Netflix Prize》
+
+《Collaborative Filtering for Implicit Feedback Datasets》
+
+《Matrix Factorization Techniques for Recommender Systems》
+
+其他参考：
+
+http://www.jos.org.cn/html/2014/9/4648.htm
+
+基于大规模隐式反馈的个性化推荐
+
+http://www.fuqingchuan.com/2015/03/812.html
+
+协同过滤之ALS-WR算法
+
+http://www.docin.com/p-714582034.html
+
+基于矩阵分解的协同过滤算法
+
+http://www.tuicool.com/articles/fANvieZ
+
+Spark MLlib中的协同过滤
+
+http://www.68idc.cn/help/buildlang/ask/20150727462819.html
+
+Alternating Least Squares(ASL) 的数学推导
 
 # 主成分分析
 
@@ -163,78 +284,4 @@ $$X_{n\times m}\approx U_{n\times k}Y_{k\times m}$$
 ## PCA和特征选择的区别
 
 两者虽然都是降维算法，但特征选择是在原有的n个特征中选择k个特征，而PCA是重建k个新的特征。
-
-# loss function比较
-
-![](/images/article/loss_function.png)
-
-这里m代表了置信度，越靠近右边置信度越高。
-
-其中蓝色的阶跃函数又被称为Gold Standard，黄金标准，因为这是最准确无误的分类器loss function了。分对了loss为0，分错了loss为1，且loss不随到分界面的距离的增加而增加，也就是说这个分类器非常鲁棒。但可惜的是，它不连续，求解这个问题是NP-hard的，所以才有了各种我们熟知的分类器。
-
-其中红色线条就是SVM了，由于它在m=1处有个不可导的转折点，右边都是0，所以分类正确的置信度超过一定的数之后，对分界面的确定就没有一点贡献了。
-
-《机器学习（五）》中提到的SVM软间隔，其所使用的loss function，又被称为Hinge loss函数：
-
-$$l_{hinge}(z)=\max(0,1-z)$$
-
-除此之外，exponential loss函数：
-
-$$l_{exp}(z)=\exp(-z)$$
-
-和logistic loss函数：
-
-$$l_{log}(z)=\log(1+\exp(-z))$$
-
-也是较常用的SVM loss function。
-
-黄色线条是Logistic Regression的损失函数，与SVM不同的是，它非常平滑，但本质跟SVM差别不大。
-
-绿色线条是boost算法使用的损失函数。
-
-黑色线条是ELM（Extreme learning machine）算法的损失函数。它的优点是有解析解，不必使用梯度下降等迭代方法，可直接计算得到最优解。但缺点是随着分类的置信度的增加，loss不降反升，因此，最终准确率有限。此外，解析算法相比迭代算法，对于大数据的适应较差，这也是该方法的局限所在。
-
-参见：
-
-https://www.zhihu.com/question/28810567
-
-# 独立成分分析
-
-这一节我们将讲述独立成分分析（Independent Components Analysis，ICA）算法。
-
-首先，我们介绍一下经典的鸡尾酒宴会问题(cocktail party problem)。
-
-假设在party中有n个人，他们可以同时说话，我们也在房间中放置了n个声音接收器(Microphone)用来记录声音。宴会过后，我们从n个麦克风中得到了m组数据$$x^{(i)}$$，其中的i表示采样的时间顺序。由于宴会上人们的说话声是混杂在一起的，因此，采样得到的声音也是混杂不清的，那么我们是否有办法从混杂的数据中，提取出每个人的声音呢？
-
-为了更为正式的描述这个问题，我们假设数据$$s\in R^n$$是由n个独立的源生成的。我们接收到的信号可写作：$$x=As$$。其中，A被称为混合矩阵（mixing matrix）。在这个问题中，$$s^{(i)}$$是一个n维向量，$$s_j^{(i)}$$表示第j个说话者在i时刻的声音。同理，$$x_j^{(i)}$$表示第j个麦克风在i时刻的记录下的数据。
-
-我们把$$W=A^{-1}$$称作unmixing matrix。我们的目标就是找到W，然后利用$$s=Wx$$，求得s。我们使用$$w_i^T$$表示W矩阵的第i行，因此：$$s_j^{(i)}=w_j^Tx^{(i)}$$。
-
-## ICA的不确定性
-
-不幸的是，在没有源和混合矩阵的先验知识的情况下，仅凭$$x^{(i)}$$是没有办法求出W的。为了说明这一点，我们引入置换矩阵的概念。
-
-置换矩阵（permutation matrix）是一种元素只由0和1组成的方块矩阵。置换矩阵的每一行和每一列都恰好只有一个1，其余的系数都是0。它的例子如下：
-
-$$P=\begin{bmatrix}0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 1 \end{bmatrix};
-P=\begin{bmatrix}0 & 1 \\ 1 & 0 \end{bmatrix};
-P=\begin{bmatrix}1 & 0 \\ 0 & 1 \end{bmatrix}$$
-
-在线性代数中，每个n阶的置换矩阵都代表了一个对n个元素（n维空间的基）的置换。当一个矩阵乘上一个置换矩阵时，所得到的是原来矩阵的横行（置换矩阵在左）或纵列（置换矩阵在右）经过置换后得到的矩阵。
-
-ICA的不确定性(ICA ambiguities)包括以下几种情形：
-
-1.无法区分W和WP。比如改变说话人的编号，会改变$$s^{(i)}$$的值，但却不会改变$$x^{(i)}$$的值，因此也就无法确定$$s^{(i)}$$的值了。
-
-2.无法确定W的尺度。比如$$x^{(i)}$$还可以写作$$x^{(i)}=2A \cdot (0.5)s^{(i)}$$，因此在不知道A的情况下，同样无法确定$$s^{(i)}$$的值。
-
-3.信号不能是高斯分布的。
-
-假设两个人发出的声音信号符合多值正态分布$$s\sim \mathcal{N}(0,I)$$，这里的I是一个2阶单位阵，则$$E[xx^T]=E[Ass^TA^T]=AA^T$$。
-
-假设R是正交矩阵，$$A'=AR,x'=A's$$，则：
-
-$$E[xx^T]=E[A'ss^T(A')^T]=E[ARss^T(AR)^T]=ARR^TA^T=AA^T$$
-
-可见，无论是A还是A'，观测值x都是一个$$\mathcal{N}(0,AA^T)$$的正态分布，也就是说A的值无法确定，那么W和s也就无法求出了。
 

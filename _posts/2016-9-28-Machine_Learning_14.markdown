@@ -1,10 +1,73 @@
 ---
 layout: post
-title:  机器学习（十四）——协同过滤的ALS算法（2）
+title:  机器学习（十四）——协同过滤的ALS算法（1）
 category: theory 
 ---
 
-### 皮尔逊相关系数（续）
+## 矩阵规则化（续）
+
+>注：稀疏矩阵并不一定是病态矩阵，比如单位阵就不是病态的。但是从系统论的角度，高维空间中样本量的稀疏，的确会带来很大的不确定性。
+
+函数V（又叫做Fit measure）和R（又叫做Entropy measure），在不同的算法中，有不同的取值。
+
+比如，在Ridge regression问题中：
+
+$$\text{Fit measure}:\|Y-X\beta\|_2,\text{Entropy measure}:\|\beta\|_2$$
+
+Ridge regression问题中规则化方法，又被称为$$L_2$$ regularization，或Tikhonov regularization。
+
+>注：Andrey Nikolayevich Tikhonov，1906~1993，苏联数学家和地球物理学家。大地电磁学的发明人之一。苏联科学院院士。著有《Solutions of Ill-posed problems》一书。
+
+更多的V和R取值参见：
+
+https://en.wikipedia.org/wiki/Regularization_(mathematics)
+
+从形式上来看，对比之前提到的拉格朗日函数，我们可以发现规则化因子，实际上就是给损失函数增加了一个约束条件。它的好处是增加了解向量的稳定度，缺点是增加了数值解和真实解之间的误差。
+
+为了更便于理解规则化，这里以二维向量空间为例，给出了规则化因子对损失函数的约束效应。
+
+![](/images/article/L1_vs_L2.png)
+
+上图中的圆圈是损失函数的等高线，坐标原点是规则化因子的约束中心，左图的方形和右图的圆形是$$l_p$$ ball。图中的黑点是等高线和$$l_p$$ ball的焦点，实际上也就是这个带约束的优化问题的解。
+
+可以看出$$L_1$$ regularization的解一般出现在坐标轴上，因而其他坐标上的值就是0，因此，$$L_1$$ regularization会导致矩阵的稀疏。
+
+$$L_1$$ regularization又被称为Lasso（least absolute shrinkage and selection operator） regression。
+
+参见：
+
+https://en.wikipedia.org/wiki/Tikhonov_regularization
+
+http://www.mit.edu/~cuongng/Site/Publication_files/Tikhonov06.pdf
+
+http://blog.csdn.net/zouxy09/article/details/24971995
+
+# 协同过滤的ALS算法
+
+## 协同过滤概述
+
+>注：最近研究商品推荐系统的算法，因此，Andrew Ng讲义的内容，后续再写。
+
+协同过滤是目前很多电商、社交网站的用户推荐系统的算法基础，也是目前工业界应用最广泛的机器学习领域。
+
+协同过滤是利用集体智慧的一个典型方法。要理解什么是协同过滤 (Collaborative Filtering,简称CF)，首先想一个简单的问题，如果你现在想看个电影，但你不知道具体看哪部，你会怎么做？大部分的人会问问周围的朋友，看看最近有什么好看的电影推荐，而我们一般更倾向于从口味比较类似的朋友那里得到推荐。这就是协同过滤的核心思想。
+
+如何找到相似的用户和物品呢？其实就是计算用户间以及物品间的相似度。以下是几种计算相似度的方法：
+
+### 欧氏距离
+
+$$d(x,y)=\sqrt{\sum(x_i-y_i)^2},sim(x,y)=\frac{1}{1+d(x,y)}$$
+
+### Cosine相似度
+
+$$\cos(x,y)=\frac{\langle x,y\rangle}{|x||y|}=\frac{\sum x_iy_i}{\sqrt{\sum x_i^2}~\sqrt{\sum y_i^2}}$$
+
+### 皮尔逊相关系数（Pearson product-moment correlation coefficient，PPMCC or PCC）：
+
+$$\begin{align}
+p(x,y)&=\frac{cov(X,Y)}{\sigma_X\sigma_Y}=\frac{\operatorname{E}[XY]-\operatorname{E}[X]\operatorname{E}[Y]}{\sqrt{\operatorname{E}[X^2]-\operatorname{E}[X]^2}~\sqrt{\operatorname{E}[Y^2]- \operatorname{E}[Y]^2}}
+\\&=\frac{n\sum x_iy_i-\sum x_i\sum y_i}{\sqrt{n\sum x_i^2-(\sum x_i)^2}~\sqrt{n\sum y_i^2-(\sum y_i)^2}}
+\end{align}$$
 
 该系数由Karl Pearson发明。参见《机器学习（二）》中对Karl Pearson的简介。Fisher对该系数也有研究和贡献。
 
@@ -220,116 +283,4 @@ ALS算法的缺点在于：
 1.它是一个离线算法。
 
 2.无法准确评估新加入的用户或商品。这个问题也被称为Cold Start问题。
-
-## ALS算法优化过程的推导
-
-公式2的直接优化是很困难的，因为X和Y的二元导数并不容易计算，这时可以使用类似坐标下降法的算法，固定其他维度，而只优化其中一个维度。
-
-对$$x_u$$求导，可得：
-
-$$\begin{align}
-\frac{\partial L}{\partial x_u}&=-2\sum_i(r_{ui}-x_u^Ty_i)y_i+2\lambda x_u
-\\&=-2\sum_i(r_{ui}-y_i^Tx_u)y_i+2\lambda x_u
-\\&=-2Y^Tr_u+2Y^TYx_u+2\lambda x_u
-\end{align}$$
-
-令导数为0，可得：
-
-$$Y^TYx_u+\lambda Ix_u=Y^Tr_u\Rightarrow x_u=(Y^TY+\lambda I)^{-1}Y^Tr_u\tag{3}$$
-
-同理，对$$y_i$$求导，由于X和Y是对称的，因此可得类似的结论：
-
-$$y_i=(X^TX+\lambda I)^{-1}X^Tr_i\tag{4}$$
-
-因此整个优化迭代的过程为：
-
->1.随机生成X、Y。（相当于对迭代算法给出一个初始解。）   
->Repeat until convergence {   
-><span style="white-space: pre">	</span>2.固定Y，使用公式3更新$$x_u$$。    
-><span style="white-space: pre">	</span>3.固定X，使用公式4更新$$y_i$$。    
->}
-
-一般使用RMSE（root-mean-square error）评估误差是否收敛，具体到这里就是：
-
-$$RMSE=\sqrt{\frac{\sum(R-XY^T)^2}{N}}$$
-
-其中，N为三元组<User,Item,Rating>的个数。当RMSE值变化很小时，就可以认为结果已经收敛。
-
-算法复杂度：
-
-1.求$$x_u$$：$$O(k^2N+k^3m)$$
-
-2.求$$y_i$$：$$O(k^2N+k^3n)$$
-
-可以看出当k一定的时候，这个算法的复杂度是**线性**的。
-
-因为这个迭代过程，交替优化X和Y，因此又被称作交替最小二乘算法（Alternating Least Squares，ALS）。
-
-## 隐式反馈
-
-用户给商品评分是个非常简单粗暴的用户行为。在实际的电商网站中，还有大量的用户行为，同样能够间接反映用户的喜好，比如用户的购买记录、搜索关键字，甚至是鼠标的移动。我们将这些间接用户行为称之为隐式反馈（implicit feedback），以区别于评分这样的显式反馈（explicit feedback）。
-
-隐式反馈有以下几个特点：
-
-1.没有负面反馈（negative feedback）。用户一般会直接忽略不喜欢的商品，而不是给予负面评价。
-
-2.隐式反馈包含大量噪声。比如，电视机在某一时间播放某一节目，然而用户已经睡着了，或者忘了换台。
-
-3.显式反馈表现的是用户的**喜好（preference）**，而隐式反馈表现的是用户的**信任（confidence）**。比如用户最喜欢的一般是电影，但观看时间最长的却是连续剧。大米购买的比较频繁，量也大，但未必是用户最想吃的食物。
-
-4.隐式反馈非常难以量化。
-
-## ALS-WR
-
-针对隐式反馈，有ALS-WR算法（ALS with Weighted-$$\lambda$$-Regularization）。
-
-首先将用户反馈分类：
-
-$$p_{ui}=\begin{cases}
-1, & \text{preference} \\
-0, & \text{no preference} \\
-\end{cases}$$
-
-但是喜好是有程度差异的，因此需要定义程度系数：
-
-$$c_{ui}=1+\alpha r_{ui}$$
-
-这里的$$r_{ui}$$表示原始量化值，比如观看电影的时间；
-
-这个公式里的1表示最低信任度，$$\alpha$$表示根据用户行为所增加的信任度。
-
-最终，损失函数变为：
-
-$$\min_{x_*,y_*}L(X,Y)=\min_{x_*,y_*}\sum_{u,i}c_{ui}(p_{ui}-x_u^Ty_i)^2+\lambda(\sum_u|x_u|^2+\sum_i|y_i|^2)$$
-
-除此之外，我们还可以使用指数函数来定义$$c_{ui}$$：
-
-$$c_{ui}=1+\alpha \log(1+r_{ui}/\epsilon)$$
-
-ALS-WR没有考虑到时序行为的影响，时序行为相关的内容，可参见：
-
-http://www.jos.org.cn/1000-9825/4478.htm
-
-## 参考
-
-参考论文：
-
-《Large-scale Parallel Collaborative Filtering forthe Netflix Prize》
-
-《Collaborative Filtering for Implicit Feedback Datasets》
-
-《Matrix Factorization Techniques for Recommender Systems》
-
-其他参考：
-
-http://www.jos.org.cn/html/2014/9/4648.htm
-
-http://www.fuqingchuan.com/2015/03/812.html
-
-http://www.docin.com/p-714582034.html
-
-http://www.tuicool.com/articles/fANvieZ
-
-http://www.68idc.cn/help/buildlang/ask/20150727462819.html
-
 

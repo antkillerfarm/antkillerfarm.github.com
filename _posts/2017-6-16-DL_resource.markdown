@@ -84,6 +84,10 @@ http://yongyuan.name/blog/
 
 一个DL+CV的blog
 
+https://zhuanlan.zhihu.com/dlgirls
+
+写给妹子的深度学习教程
+
 ## 文章
 
 ### 教程
@@ -473,31 +477,5 @@ https://mp.weixin.qq.com/s/ObIYpiH7MLZEi5XzXdGBYg
 https://mp.weixin.qq.com/s/H-oAETObn0SLUxK8--xudg
 
 Keras+OpenAI强化学习实践：行为-评判模型
-
-### Other
-
-https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg
-
-旷视科技提出新型卷积网络ShuffleNet，专为移动端设计
-
-https://mp.weixin.qq.com/s/UboQNEywHSBAYc0740qmzQ
-
-让机器学会创造新的概念：DeepMind提出符号-概念关联网络SCAN
-
-https://mp.weixin.qq.com/s/QD6BdAB332xHoSH3dIfM5Q
-
-学习顶级玩家Replay，人工智能学会了星际争霸的“大局观”
-
-https://mp.weixin.qq.com/s/BWc8nRbOF1IfwbBtmLnhnA
-
-从全连接层到大型卷积核：深度学习语义分割全指南
-
-https://mp.weixin.qq.com/s/mEnYNs9tP-246lVM3WFgZg
-
-颜水成团队CVPR新架构，提速300%
-
-https://mp.weixin.qq.com/s/2FDVt1-U6f0gicCVtZh4cA
-
-伯克利联合OpenAI发布新型深度学习方法TCML：学习通用型算法
 
 
