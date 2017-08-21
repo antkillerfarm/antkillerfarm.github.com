@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（十七）——推荐系统进阶
+title:  机器学习（十七）——隐式狄利克雷划分, 推荐系统进阶
 category: theory 
 ---
 

@@ -160,6 +160,20 @@ Caffe官网上有个Model Zoo，可从中获得一些经典模型的模板文件
 
 https://github.com/BVLC/caffe/wiki/Model-Zoo
 
+## prototxt文件的可视化
+
+1.使用在线工具netscope。
+
+https://ethereon.github.io/netscope/quickstart.html
+
+2.使用自带draw_net.py脚本。
+
+参考：
+
+http://www.cnblogs.com/zjutzz/p/5955218.html
+
+caffe绘制网络结构图
+
 ## 术语
 
 **blob**：Caffe中用于数据操作和交换的数据结构。简单来说，就是一个4维数组：number,channel,height,width。
@@ -230,5 +244,21 @@ https://mp.weixin.qq.com/s/mEnYNs9tP-246lVM3WFgZg
 https://mp.weixin.qq.com/s/2FDVt1-U6f0gicCVtZh4cA
 
 伯克利联合OpenAI发布新型深度学习方法TCML：学习通用型算法
+
+http://mp.weixin.qq.com/s/eXY0jVdWMg3B_CQ514ngsA
+
+深度学习各方面应用
+
+http://mp.weixin.qq.com/s/oBy_Xl7FSBUd46H9E8yUbA
+
+AI博士五星指南：入行自评，选大公司还是初创企业
+
+https://mp.weixin.qq.com/s/Ns8oD_HBpFoumMMDbMq8-g
+
+DeepMind视频行为分类竞赛，百度IDL获第一
+
+https://mp.weixin.qq.com/s/8a4hTHJ1F-dUiUI12COJkA
+
+电话诈骗层出不穷？一家「接地气」的公司正在用人工智能解决这个社会顽疾
 
 

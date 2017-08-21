@@ -454,4 +454,7 @@ https://mp.weixin.qq.com/s/g1PWYFvxyoEZ8uX_GBwKSQ
 
 学会数据分析背后的挖掘思维，分析就完成了一半!
 
+https://mp.weixin.qq.com/s/-n-5Cp_hgkvdmsHGWEIpWw
+
+自动化机器学习第一步：使用Hyperopt自动选择超参数
 

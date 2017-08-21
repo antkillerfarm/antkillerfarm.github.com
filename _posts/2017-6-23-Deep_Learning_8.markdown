@@ -8,21 +8,41 @@ category: theory
 
 ## 大佬的门徒（续）
 
+还有当红的“辣子鸡”：**Andrej Karpathy**，多伦多大学本科（2009）+英属不列颠哥伦比亚大学硕士（2011）+斯坦福博士（2015）。现任特斯拉AI总监。
+
+吐槽一下：英属不列颠哥伦比亚大学其实是加拿大的一所大学。
+
+个人主页：
+
+http://cs.stanford.edu/people/karpathy/
+
 Andrej Karpathy建了一个检索arxiv的网站，主要搜集了近3年来的ML/DL领域的论文。网址：
 
 http://www.arxiv-sanity.com/
+
+**Jia Li**，李飞飞的开山大弟子，追随她从UIUC、普林斯顿到斯坦福。目前又追随其到Google。大约是知道自己的名字是个大路货，她的笔名叫做Li-Jia Li。
+
+个人主页：
+
+http://vision.stanford.edu/lijiali/
 
 ## 学神
 
 应该说李飞飞和吴恩达都是万里挑一的超卓人物，但是和学神还是有所差距。下面是两个80后的华裔学神，他们都已经是正教授了：
 
-尹希，1983年生，哈佛大学物理系教授。
+**尹希**，1983年生，哈佛大学物理系教授。
 
-张锋，1982年生，MIT教授，生物学家。
+**张锋**，1982年生，MIT教授，生物学家。
 
 这两个人都是有机会挑战诺奖的人，而李和吴暂时还没有这个可能性。
 
 ## 网红
+
+这里收录了一些非李飞飞门下的AI网红。
+
+**Zachary Chase Lipton**，1985年生，哥伦比亚大学本科+UCSD博士，CMU的AP。他的另一身份——Jazz歌手，可比他的学术成就知名多了。
+
+个人主页：
 
 http://zacklipton.com/
 
@@ -127,11 +147,16 @@ CV的输入一般是由像素组成的矩阵。相比其他领域的数据挖掘
 RCNN是Ross Girshick于2014年提出的深度模型。
 
 >注：Ross Girshick（网名：rbg），芝加哥大学博士（2012），Facebook研究员。他和何恺明被誉为CV界深度学习的**双子新星**。   
->个人主页：http://www.rossgirshick.info/
+>个人主页：   
+>http://www.rossgirshick.info/
 
 论文：
 
 《Rich feature hierarchies for accurate object detection and semantic segmentation》
+
+代码：
+
+https://github.com/rbgirshick/rcnn
 
 RCNN相对传统方法的改进：
 
@@ -173,7 +198,7 @@ Selective Search for Object Recognition
 
 Selective Search的主要思想:
 
-**Step 1**：使用一种过分割手段，将图像分割成小区域 (1k~2k 个)。
+**Step 1**：使用一种过分割手段，将图像分割成小区域 (1k~2k个)。
 
 这里的步骤实际上并不简单，可参考论文：
 
@@ -217,6 +242,8 @@ $$IOU(A,B)=\frac{A \cap B}{A \cup B}$$
 
 ## 非极大值抑制（NMS）
 
+RCNN会从一张图片中找出n个可能是物体的矩形框，然后为每个矩形框为做类别分类概率（如上图所示）。我们需要判别哪些矩形框是没用的。
+
 Non-Maximum Suppression顾名思义就是抑制不是极大值的元素，搜索局部的极大值。这个局部代表的是一个邻域，邻域有两个参数可变，一是邻域的维数，二是邻域的大小。
 
 下面举例说明NMS的做法：
@@ -228,7 +255,4 @@ Non-Maximum Suppression顾名思义就是抑制不是极大值的元素，搜索
 **Step 2**：假设B、D与F的重叠度超过阈值，那么就扔掉B、D；并标记第一个矩形框F，是我们保留下来的。（**抑制领域内的非极大值**）
 
 **Step 3**：从剩下的矩形框A、C、E中，选择概率最大的E，然后判断E与A、C的重叠度，重叠度大于一定的阈值，那么就扔掉；并标记E是我们保留下来的第二个矩形框。（**确定下一个领域，并抑制该领域内的非极大值**）
-
-
-
 

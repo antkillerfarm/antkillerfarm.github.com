@@ -96,7 +96,7 @@ $$\nabla_{\mu_l}\operatorname{tr}(\mu_l^T\Sigma_l^{-1}\mu_l)=(\Sigma_l^{-1})^T(\
 
 $$\nabla_{\mu_l}\mu_l^T\Sigma_l^{-1}\mu_l=2\Sigma_l^{-1}\mu_l\tag{5.12}$$
 
-回到正题，令《机器学习（九）》公式4等于0，可得：
+回到正题，令公式4等于0，可得：
 
 $$\mu_j:=\frac{\sum_{i=1}^mw_j^{(i)}x^{(i)}}{\sum_{i=1}^mw_j^{(i)}}$$
 

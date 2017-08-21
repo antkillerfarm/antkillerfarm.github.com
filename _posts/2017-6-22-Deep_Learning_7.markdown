@@ -289,11 +289,3 @@ http://vision.stanford.edu/feifeili/
 
 http://ai.stanford.edu/~syyeung/
 
-还有当红的“辣子鸡”：**Andrej Karpathy**，多伦多大学本科（2009）+英属不列颠哥伦比亚大学硕士（2011）+斯坦福博士（2015）。现任特斯拉AI总监。
-
-吐槽一下：英属不列颠哥伦比亚大学其实是加拿大的一所大学。
-
-个人主页：
-
-http://cs.stanford.edu/people/karpathy/
-

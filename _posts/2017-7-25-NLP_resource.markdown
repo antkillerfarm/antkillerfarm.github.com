@@ -310,6 +310,10 @@ https://mp.weixin.qq.com/s/-gnzRjLerqIyLPLBkZNmcA
 
 深度学习在NLP中的运用？从分词、词性到机器翻译、对话系统
 
+https://mp.weixin.qq.com/s/TjFzJVOowfceHwJNUItcxQ
+
+从语言学到深度学习NLP，一文概述自然语言处理
+
 # Javascript在客户端的使用
 
 Javascript在服务器前端的成功，促使人们思考其在客户端的使用。

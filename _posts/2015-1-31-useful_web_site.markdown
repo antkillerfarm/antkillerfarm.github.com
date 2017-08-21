@@ -336,6 +336,10 @@ https://mp.weixin.qq.com/s/yR_wENRSbxvfrcYr9O9BuQ
 
 23个Python爬虫开源项目代码：爬取微信、淘宝、豆瓣、知乎、微博等
 
+https://mp.weixin.qq.com/s/Ga13C1gTSk1adYgcBeJfwA
+
+一拍脑袋就要用MapReduce？你以为你是Google啊
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

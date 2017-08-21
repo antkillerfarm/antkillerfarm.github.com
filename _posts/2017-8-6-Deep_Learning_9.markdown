@@ -6,6 +6,14 @@ category: theory
 
 # RCNN（续）
 
+## 正负样本问题
+
+一张照片我们得到了2000个候选框。然而人工标注的数据一张图片中就只标注了正确的bounding box，我们搜索出来的2000个矩形框也不可能会出现一个与人工标注完全匹配的候选框。因此在CNN阶段我们需要用IOU为2000个bounding box打标签。
+
+如果用selective search挑选出来的候选框与物体的人工标注矩形框的重叠区域IoU大于0.5，那么我们就把这个候选框标注成物体类别（正样本），否则我们就把它当做背景类别（负样本）。
+
+
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/23006190
@@ -95,6 +103,10 @@ https://mp.weixin.qq.com/s/VKQufVUQ3TP5m7_2vOxnEQ
 https://mp.weixin.qq.com/s/JPCQqyzR8xIUyAdk_RI5dA
 
 RCNN, Fast-RCNN, Faster-RCNN那些你必须知道的事！
+
+http://blog.csdn.net/messiran10/article/details/49132053
+
+Caffe matlab之基于Alex network的特征提取 
 
 ## YOLO
 
@@ -290,7 +302,7 @@ Output layer是一个softmax的多分类层，每个分类对应一个transition
 
 1.由1个隐层改为两个隐层。
 
-2.添加Perceptron Layer作为输出层。（Perceptron Layer的含义参见《机器学习（二十二）》中对于Beam Search的解释）
+2.添加Perceptron Layer作为输出层。（Perceptron Layer的含义参见《机器学习（二十三）》中对于Beam Search的解释）
 
 3.全局使用Tri-training算法作为半监督的集成学习算法。（Tri-training算法参见《机器学习（二十二）》）
 
@@ -348,9 +360,13 @@ https://github.com/largelymfs/topical_word_embeddings
 
 ## 无监督的机器翻译
 
-无监督的机器翻译，其要点主要在于比较两种语言的语料的词向量，并找出词语间的对应关系。
+无监督的机器翻译，其要点主要在于比较两种语言语料的词向量空间，以找出词语间的对应关系。
+
+由word2vec的原理可知，由于训练时神经元是随机初始化的，因此即使是同样的语料，两次训练得到的词向量一般也不会相同，更不用说不同语料了。因此直接比较两个词向量空间中的词向量，是行不通的。
 
 参见：
 
 http://nlp.csai.tsinghua.edu.cn/~zm/
+
+张檬，清华本科（2013）+博士（在读）。
 

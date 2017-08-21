@@ -78,7 +78,7 @@ L, & if \ \alpha_2^{new,unclipped}<L \\
 
 其中，$$\alpha_2^{new}$$是更新值。
 
-由《机器学习（五）》公式7可得：
+由公式7可得：
 
 $$\alpha_1+s\alpha_2=\alpha_1^{new}+s\alpha_2^{new}$$
 
@@ -92,7 +92,7 @@ $$\alpha_1^{new}=\alpha_1+s(\alpha_2-\alpha_2^{new})$$
 
 $$\alpha_1^{new}=L_1=\alpha_1+s(\alpha_2-L)$$
 
-由《机器学习（五）》公式8可得：
+由公式8可得：
 
 $$\begin{align}
 L_1-y^{(1)}L_1v_1&=L_1\left[(y^{(1)})^2-y^{(1)}(u_i-b-y^{(1)}\alpha_1K_{11}-y^{(2)}\alpha_2K_{21})\right]
@@ -124,7 +124,7 @@ $$W_H=H_1f_1+Hf_2-\frac{1}{2}H_1^2K_{11}-\frac{1}{2}H^2K_{22}-sHH_1K_{12}$$
 
 至此，迭代关系式除了b的推导式以外，都已经推出。
 
-由《机器学习（五）》中的公式8可得：
+由公式8可得：
 
 $$u_1^{new}-b^{new}-y^{(1)}\alpha_1^{new}K_{11}-y^{(2)}\alpha_2^{new}K_{12}=u_1-b-y^{(1)}\alpha_1K_{11}-y^{(2)}\alpha_2K_{12}$$
 
