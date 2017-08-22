@@ -1,0 +1,315 @@
+---
+layout: post
+title:  Caffe, Python（二）, 推荐系统的工程细节
+category: technology 
+---
+
+# Caffe
+
+Convolutional Architecture for Fast Feature Embedding是贾扬清写的一个深度学习框架。
+
+>注：贾扬清，清华的本硕（2009）+UCB的博士（2014）。先后在Google和Facebook任研究员。知乎名人。   
+>个人主页：   
+>http://daggerfs.com/
+
+官网：
+
+http://caffe.berkeleyvision.org/
+
+代码：
+
+https://github.com/BVLC/caffe
+
+API：
+
+http://caffe.berkeleyvision.org/doxygen/index.html
+
+## 运行方式
+
+Caffe有两种运行方式：
+
+1.编程式。这种模式也是TensorFlow采用的方式，即直接在main函数中调用Caffe函数。
+
+示例：
+
+examples/cpp_classification/classification.cpp
+
+2.命令行式。这种模式适合于流程比较简单的情况。使用caffe工具加载模板文件进行训练或预测。
+
+示例：
+
+examples/mnist/train_lenet.sh
+
+## 模板文件和模型文件
+
+prototxt：模板文件。定义NN中的层之类的结构。
+
+caffemodel：模型文件。训练好的模型可以放在模型文件中，以便于今后的预测。
+
+Caffe官网上有个Model Zoo，可从中获得一些经典模型的模板文件和模型文件。网址：
+
+https://github.com/BVLC/caffe/wiki/Model-Zoo
+
+## prototxt文件的可视化
+
+1.使用在线工具netscope。
+
+https://ethereon.github.io/netscope/quickstart.html
+
+2.使用自带draw_net.py脚本。
+
+参考：
+
+http://www.cnblogs.com/zjutzz/p/5955218.html
+
+caffe绘制网络结构图
+
+## 术语
+
+**blob**：Caffe中用于数据操作和交换的数据结构。简单来说，就是一个4维数组：number,channel,height,width。
+
+**lr_mult**：学习率因子。基数是solver在运行时采用的学习率。
+
+**decay_mult**：衰减因子。基数含义同上。
+
+lr_mult参数和decay_mult参数的存在，允许不同的层有不同的学习率或衰减率。
+
+在一个卷积层中，通常会有2组lr_mult参数和decay_mult参数，其中前一组是weight参数的学习率或衰减率，而后一组是bias参数的。
+
+{% highlight txt %}
+param {
+    lr_mult: 1
+    decay_mult: 1
+}
+param {
+    lr_mult: 2
+    decay_mult: 0
+}
+{% endhighlight %}
+
+上面这组参数被实践证明，是比较work的参数。
+
+**flatten**：将n * c * h * w的blob，转换成n * (c*h*w)的结构。
+
+## 代码
+
+Caffe的代码相对比较简单，符合个人作品的特点。Caffe没有计算图的概念，所有操作都聚焦于NN本身，对于实际业务的支持有限。但简单的结构非常适合于学术界的使用。
+
+## 参考
+
+https://mp.weixin.qq.com/s/-Jn4UbZ6EqRYceJqI1l16g
+
+一文简短介绍Caffe
+
+## Caffe2
+
+2017.4，贾扬清推出了全新设计的Caffe2。由于是全新设计，Caffe2和Caffe不兼容，完全可看为是一个新的DL框架。
+
+官网：
+
+https://caffe2.ai/
+
+# Python
+
+## 如何通过需认证的代理获取HTTP网页
+
+Python内置的urllib和urllib2模块都可用于获取HTTP网页，但使用范围是不同的。urllib只支持HTTP 0.9和HTTP 1.0，所以如果只是使用代理可以使用urllib.FancyURLopener类，如果该代理还需要认证的话urllib就不行了。因为代理认证是HTTP 1.1中引入的。
+
+这时可以考虑使用urllib2模块。代码如下：
+
+{% highlight python %}
+import urllib2
+l_proxy_info = {
+'user' : 'user',
+'pass' : 'pass',
+'host' : 'host',
+'port' : 3128
+}
+
+l_proxy_support = urllib2.ProxyHandler({"http" : "http://%(user)s:%(pass)s@%(host)s:%(port)d" % l_proxy_info})
+l_opener = urllib2.build_opener(l_proxy_support, urllib2.HTTPHandler)
+
+urllib2.install_opener(l_opener)
+usock = urllib2.urlopen('http://www.sohu.com')
+{% endhighlight %}
+
+## python调用GTK函数的一般规则
+
+众所周知，GTK库是用C语言编写的，其相关的文档提供的也是C函数的接口，python接口的文档相对较少，获得也不太容易。因此有必要掌握一下这方面基本的命名规则。（这里只讲方法，对深层次的调用原理不做探究。）
+
+1）类初始化函数
+
+C:`GtkWidget * gtk_button_new (void);`
+
+python:`button = Gtk.Button()`
+
+这里除了把C函数式的写法，替换成python的类的写法之外，并无其他差异。
+
+2）普通类成员函数
+
+C:`void gtk_container_add (GtkContainer *container, GtkWidget *widget);`
+
+python:`button.add(image)`
+
+可以看出，C函数的第一个表示self类指针的参数被省略掉了。
+
+3）回调函数
+
+这里以按钮的click事件回调为例：
+
+C:`void user_function (GtkButton *button, gpointer user_data)`
+
+python:
+
+`button.connect("clicked", self.playToggled)`
+
+`def playToggled(self, w):`
+
+这里的情况要复杂的多。首先在事件回调注册的时候，由于我们并没有给user_data赋值，因此照理说playToggled函数，只有button这一个参数。但实际传递给playToggled函数的有两个参数，self是一个用于占位的参数，w对应button，没有东西对应user_data。
+
+4）用于输出的参数
+
+C:`void gst_message_parse_error (GstMessage *message, GError **gerror, gchar **debug);`
+
+python:`err, debug = message.parse_error()`
+
+这个例子中的gerror和debug都是用于输出的参数。如果只想得到其一，还可用以下方法:
+
+`debug = message.parse_error()[2]`
+
+5）枚举类型
+
+C:
+
+{% highlight c %}
+enum GstSeekFlags
+{
+  GST_SEEK_FLAG_FLUSH,
+  ...
+}
+{% endhighlight %}
+
+python:`Gst.SeekFlags.FLUSH`
+
+6）宏常量
+
+C:`#define GST_CLOCK_TIME_NONE ((GstClockTime) -1)`
+
+python:`Gst.CLOCK_TIME_NONE`
+
+7）类型转换
+
+大多数情况下，类型转换自动完成，并无什么问题。这里只讨论特殊的情况。
+
+C:
+
+{% highlight c %}
+gst_element_seek (pipeline, 1.0, GST_FORMAT_TIME, GST_SEEK_FLAG_FLUSH,
+                         GST_SEEK_TYPE_SET, time_nanoseconds,
+                         GST_SEEK_TYPE_NONE, GST_CLOCK_TIME_NONE))
+{% endhighlight %}
+
+python:
+
+{% highlight python %}
+self.player.seek(1.0, Gst.Format.TIME, Gst.SeekFlags.FLUSH, Gst.SeekType.SET,\
+                 time_nanoseconds, Gst.SeekType.NONE, Gst.CLOCK_TIME_NONE)
+{% endhighlight %}
+
+这里首先按照一般的方法，将C代码转化成python代码。但是运行之后，产生如下错误：
+
+`OverflowError: long too big to convert`
+
+究其原因，gst_element_seek的最后一个参数是uint64类型的。但python原生并不支持该类型，而是将之转换成int类型（实际上是int64类型），这样的话，GST_CLOCK_TIME_NONE的值显然超出了int64所能表示的范围。
+
+解决的办法是使用ctypes库，将
+
+`Gst.CLOCK_TIME_NONE`
+
+改为
+
+`c_long(Gst.CLOCK_TIME_NONE).value`
+
+# 推荐系统的工程细节
+
+推荐系统不仅是算法，还包括若干工程细节。这些细节虽然不算复杂，够不上算法的层面，然而对产品的成败，却有举足轻重的作用。
+
+## 一般架构
+
+![](/images/article/suggest.png)
+
+## 用户数据
+
+用户自然特征：性别，年龄，地域，教育水平，出生日期，职业，星座
+
+用户兴趣特征：兴趣爱好，使用网站，浏览/收藏内容，互动内容，品牌偏好，产品偏好
+
+用户社会特征：婚姻状况，家庭情况，社交/信息渠道偏好
+
+用户消费特征：收入状况，购买力水平，已购商品，购买渠道偏好，最后购买时间，购买频次
+
+## 评价推荐质量
+
+以今日头条类的新闻推荐为例，评估指标一般为：
+
+1. 平均转化率（点击量/曝光量）
+
+2. 人均阅读篇数（点击PV/点击UV）
+
+3. 平均阅读完成率
+
+4. 人均阅读时长（这个会受文章长度影响）
+
+5. 用户互动数据（评论、分享）
+
+对评估指标的选取一般遵循以下原则：
+
+1.用户满意度。
+
+2.预测准确度。
+
+3.覆盖率。
+
+4.多样性。
+
+5.新颖性。
+
+6.惊喜度。
+
+7.信任度。
+
+8.实时性
+
+9.鲁棒性
+
+测试方法一般包括：
+
+A/B测试、双盲交叉验证
+
+需要思考的问题
+
+1.新用户/新商品的冷启动问题。
+
+2.马太效应问题。这在推荐算法中也叫做banana problem。原因是在美国这边的超市，几乎所有人都爱买banana，因为最便宜，也好吃也健康。所以过多的数据量可能会导致一个超市推荐算法疯狂推荐Banana给所有人。
+
+PS：NLP领域的TF-IDF算法可有效防止马太效应问题。
+
+参考：
+
+https://www.zhihu.com/question/26990692
+
+类似今日头条这样的个性化推荐网站怎么评价推荐质量的优劣？
+
+https://www.zhihu.com/question/19660417
+
+为什么那么多牛人成天在研究讨论算法，系统自动推荐的东西还是不能令人满意呢？
+
+## 术语
+
+GMV (Gross Merchandise Volume) 成交额
+
+![](/images/article/pv.jpg)
+
+Click-Through-Rate, 网络广告（图片广告/文字广告/关键词广告/排名广告/视频广告等）的点击到达率，即该广告的点击量（严格的来说，可以是到达目标页面的数量）除以广告的浏览量（PV- Page View）。
+
+

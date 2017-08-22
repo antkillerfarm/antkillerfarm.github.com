@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（九）——模型压缩
+title:  深度学习（九）——SPPNet, 模型压缩
 category: theory 
 ---
 
@@ -12,8 +12,6 @@ category: theory
 
 如果用selective search挑选出来的候选框与物体的人工标注矩形框的重叠区域IoU大于0.5，那么我们就把这个候选框标注成物体类别（正样本），否则我们就把它当做背景类别（负样本）。
 
-
-
 ## 参考
 
 https://zhuanlan.zhihu.com/p/23006190
@@ -23,10 +21,6 @@ RCNN-将CNN引入目标检测的开山之作
 http://www.cnblogs.com/edwardbi/p/5647522.html
 
 Tensorflow tflearn编写RCNN
-
-https://zhuanlan.zhihu.com/p/24774302
-
-SPPNet-引入空间金字塔池化改进RCNN
 
 https://zhuanlan.zhihu.com/p/24780395
 
@@ -106,7 +100,23 @@ RCNN, Fast-RCNN, Faster-RCNN那些你必须知道的事！
 
 http://blog.csdn.net/messiran10/article/details/49132053
 
-Caffe matlab之基于Alex network的特征提取 
+Caffe matlab之基于Alex network的特征提取
+
+# SPPNet
+
+SPPNet是何恺明2014年的作品。
+
+![](/images/article/rcnn_vs_spp.png)
+
+论文：
+
+《Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition》
+
+参考：
+
+https://zhuanlan.zhihu.com/p/24774302
+
+SPPNet-引入空间金字塔池化改进RCNN
 
 ## YOLO
 

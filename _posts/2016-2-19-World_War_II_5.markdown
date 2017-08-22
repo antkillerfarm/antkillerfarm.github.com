@@ -167,7 +167,7 @@ https://www.zhihu.com/question/40167866
 
 学数学的和学物理的，真心惹不起啊。。。
 
-#3 2016.8.6
+## 2016.8.6
 
 https://www.zhihu.com/question/20890194
 

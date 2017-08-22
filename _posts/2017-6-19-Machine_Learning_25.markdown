@@ -1,334 +1,198 @@
 ---
 layout: post
-title:  机器学习（二十五）——机器学习语录, OpenVX, NVIDIA
+title:  机器学习（二十五）——概率图模型, 机器学习的算法体系&相关术语表
 category: theory 
 ---
 
-# 机器学习语录
+# 概率图模型
 
-这里收录一些网上的只言片语式的心得，以区别于一般的教程。
+## 资料
 
->首先要考虑你的数据维度是线性相关的还是非线性相关的，数据是稀疏的还是稠密的，正例反例比例是多少，数据量是否充足。数据是否具有可分类性。是否需要降维。是否有噪音，是否有异常点等，然后去选择分类策略。通常包括数据采集，预处理，分类训练，预测，后处理等过程。
+probabilistic graphical model（PGM）最早由Judea Pearl发明。
 
-# 角度值的特征化
+这方面比较重要的文章和书籍有：
 
-角度值是数据分析中常见的值，然而它不是线性的，比如0度和359度之间只相差1度，然而数值上却差了359度，因此无法将角度值直接代入线性回归等模型。因为后者的loss函数是用线性的欧氏距离定义的，角度显然不满足要求。
+http://www.cis.upenn.edu/~mkearns/papers/barbados/jordan-tut.pdf
 
-既然角度在一维上不是线性的，那么二维呢？没错，可以采用复数坐标(x,y)来表示角度，这样角度就是线性的了。
+Michael Irwin Jordan著。
 
-# CRF
+《Probabilistic Graphical Models: Principles and Techniques》，Daphne Koller，Nir Friedman著（2009年）。
 
-条件随机场(Conditional Random Field)由Lafferty等人于2001年提出，结合了最大熵模型和隐马尔可夫模型的特点，是一种无向图模型，近年来在分词、词性标注和命名实体识别等序列标注任务中取得了很好的效果。
+>注：Judea Pearl，1936年生，以色列-美国计算机科学家，UCLA教授。2011年获得图灵奖。
 
-https://mp.weixin.qq.com/s/heYpeVLrZBRjXtMQou2BAA
+>Michael Irwin Jordan，1956年生，美国计算机科学家。UCSD博士，先后执教于MIT和UCB。吴恩达的导师。
 
-如何轻松愉快的理解条件随机场（CRF）？
+>Daphne Koller，女，1968年生，以色列-美国计算机科学家。斯坦福大学博士及教授。和吴恩达共同创立在线教育平台Coursera。
 
-# 异常点检测
+>Nir Friedman，1967年生，以色列计算机科学家。斯坦福大学博士，耶路撒冷希伯来大学教授。
 
-http://chuansong.me/n/377440751130
+http://www.cs.cmu.edu/~epxing/Class/10708-14/lectures/
 
-异常点检测算法（一）
-
-http://jiangshuxia.9.blog.163.com/blog/static/3487586020083662621887/
-
-异常(Outlier)检测算法综述
-
-http://www.cnblogs.com/fengfenggirl/p/iForest.html
-
-异常检测算法--Isolation Forest
-
-# 自适应滤波器
-
-《自适应滤波器原理》，Simon Haykin著。
-
->注：Simon Haykin，英国伯明翰大学博士，加拿大麦克马斯特大学教授。加拿大皇家学会会员。自适应信号处理领域的权威。
-
-## 基本估计
-
-三种基本的信息处理运算：
-
-**滤波（Filter）**：利用$$[0,t]$$的数据，来估计t时刻信息的运算过程。
-
-**平滑（Smoothing）**：利用$$[0,t]$$的数据，来估计$$t'(t'<t)$$时刻信息的运算过程。
-
-**预测（Prediction）**：利用$$[0,t]$$的数据，来估计$$t+\tau(\tau>0)$$时刻信息的运算过程。
-
-可见，滤波和预测是实时运算，而平滑是非实时运算。
-
-# DL参考资源
-
-https://mp.weixin.qq.com/s/bMW2go3QefbgYMqVSzyy_g
-
-腾讯AI Lab深度解读CVPR五大前沿
-
-https://mp.weixin.qq.com/s/DGPI-nASWnsO9t-_AnQnbw
-
-OpenAI 新研究：通过自适应参数噪声提升强化学习性能
-
-https://mp.weixin.qq.com/s/cANlqQAI-A2mC9vnd3imQA
-
-Instance-Aware图像语义分割
-
-https://mp.weixin.qq.com/s/_dHjZQ_7_7H34PHhV_lC3w
-
-全新强化学习算法详解，看贝叶斯神经网络如何进行策略搜索
-
-https://www.leiphone.com/news/201707/mFuwXGvZBhoVQD5S.html
-
-一秒分辨出杨臣刚、王大治和孙楠，这个黑产居然用AI 来"打码"
-
-http://mp.weixin.qq.com/s/Bt6EMD4opHCnRoHKYitsUA
-
-结合人类视觉注意力进行图像分类
-
-https://mp.weixin.qq.com/s/M4U0RKcFqZKZAiwK5IyOFA
-
-GAN之父Ian Goodfellow在Quora：机器学习十问十答
-
-https://mp.weixin.qq.com/s/1E9gunSpgYt5xl9Q_uQNJg
-
-使用深度学习进行医疗影像分析：文件格式篇
-
-https://mp.weixin.qq.com/s/PiQB2AvhtDceMJxYN8O8jA
-
-通用卷积神经网络交错组卷积
-
-https://mp.weixin.qq.com/s/r01vfSKb4VpFXVyokb54Bg
-
-MIT开放图像标注工具LabelMe源代码：助力机器视觉的发展
-
-https://mp.weixin.qq.com/s/tLqsWWhzUU6TkDbhnxxZow
-
-Momenta详解ImageNet 2017夺冠架构SENet
-
-https://mp.weixin.qq.com/s/30dK7nGJOWIaa1j9QElrYA
-
-详解帝国理工集成工具TensorLayer：控制深度学习开发复杂度
-
-http://stanford.edu/~rezab/nips2014workshop/slides/jeff.pdf
-
-Techniques and Systems for Training Large Neural Networks Quickly
-
-https://mp.weixin.qq.com/s/m_2LE2QN_8_a1hti6G0Cow
-
-Netflix开源稀疏数据专用神经网络库：Vectorflow！
-
-https://mp.weixin.qq.com/s/rlkZ82FcYMOmYoLjiCTN7g
-
-一张图看懂人工智能知识体系
-
-https://mp.weixin.qq.com/s/qReN6z8s45870HSMCMNatw
-
-微软亚洲研究院CVPR 2017 Oral论文：逐层集中Attention的卷积模型
-
-https://mp.weixin.qq.com/s/oNPrmIm1SOlA9tuyQZFr9w
-
-让机器人学会理解语义概念：谷歌提出深度视觉新技术
-
-https://mp.weixin.qq.com/s/HD370E4cCYvy_pdEKAvLIA
-
-教机器学习编程
-
-https://mp.weixin.qq.com/s/AS1VFjBFnSk19QJ28tBVWA
-
-NIPS 2017斯坦福赛题大公开：强化学习模拟人类肌肉骨骼模型
-
-https://mp.weixin.qq.com/s/EA5FgDeFI_w-kSfMpf5Yxw
-
-神经网络视觉分类算法的意外弱点
-
-https://mp.weixin.qq.com/s/CXKuSMi0Vd43BGDf5BgoqA
-
-弱监督视频物体识别新方法：香港科技大学联合CMU提出TD-Graph LSTM
-
-https://mp.weixin.qq.com/s/uh-Gh8BSxBi-jjG6-d7-UQ
-
-TACOTRON一种端到端的Text-to-Speech合成模型
-
-https://mp.weixin.qq.com/s/7NpJJn4k5oGPOB04S9Jyqw
-
-DeepMind新论文，关联推理为什么是智能最重要的特征
-
-https://mp.weixin.qq.com/s/V6JQuACFbDWBl-iYkDnRig
-
-自动修复Bug正确率达78.3%，北大、微软等提出ACS技术
-
-https://mp.weixin.qq.com/s/0Q-Kg6pNVRl3tqv8-wH-bg
-
-Facebook开源史上最大星际争霸AI研究数据集
-
-https://mp.weixin.qq.com/s/_5tyt7pU0gIXbkmTOVEtDw
-
-嫌图片太大？！卷积神经网络轻松实现无损压缩到20%！
-
-https://mp.weixin.qq.com/s/66yXsRIeZdHfoZkJkci24w
-
-地平线黄李超开讲：深度学习和物体检测！
-
-https://mp.weixin.qq.com/s/KxQ-GRnEYEdmS2H-DHIHOg
-
-南京理工大学ICCV 2017论文：图像超分辨率模型MemNet
-
-https://mp.weixin.qq.com/s/8xSqmBbaFZ-oww4w-dOmeg
-
-吴恩达对话Hinton、Bengio、Goodfellow
-
-https://mp.weixin.qq.com/s/KbFvs8EcEfm29zhLCPt0Iw
-
-DeepMind进军星际争霸2，谷歌Facebook打响通用AI战争
-
-https://zhuanlan.zhihu.com/p/28444154
-
-Seeta看AI：从大数据驱动到X数据驱动
-
-https://zhuanlan.zhihu.com/p/28445169
-
-毕彦超：物体识别与物体知识表征的认知神经基础
-
-https://mp.weixin.qq.com/s/WTRD3wRQ_wSXjjlt7jiwSg
-
-CommandCenter：基于暴雪官方API的星际争霸2 AI Bot
-
-https://mp.weixin.qq.com/s/SBppyDBWqQUariiHbpaq1w
-
-实时深度学习的推理加速和连续学习
-
-https://mp.weixin.qq.com/s/VAEH_241IAuEH5S6H6ep5w
-
-UC伯克利提出新型视觉描述系统，物体描述无需大量样本
-
-https://mp.weixin.qq.com/s/v_TLYYq6cFWuwR9tXM8m-A
-
-如何通过CRF-RNN模型实现图像语义分割任务
-
-https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
-
-NTIRE2017夺冠论文：用于单一图像超分辨率的增强型深度残差网络
-
-https://mp.weixin.qq.com/s/cyX_FzHF-6df9_AMUDu1aQ
-
-One Model To Learn Them All
-
-https://mp.weixin.qq.com/s/lSd6Gaf9RrmgZCd_EcQQOg
-
-Bengio高徒演讲：深度学习三板斧：网络架构、学习算法和时空层级
-
-https://mp.weixin.qq.com/s/qaxzSSDuuscwL5tt0QCQ0Q
-
-破解人类识别文字之谜：对图像中的字母进行无监督学习
-
-# OpenVX
-
-## Khronos Group
-
-Khronos Group是一个行业组织，创建开放标准以实现并行计算、图形、视觉、传感处理和动态媒体在各种平台和设备上的编写和加速。Khronos标准包括 Vulkan, OpenGL, OpenGL ES, WebGL, OpenCL, SPIR, SYCL, WebCL, OpenVX, EGL, OpenMAX, OpenVG, OpenSL ES, StreamInput, COLLADA 和 glTF。
-
-简单来说，Khronos的任务就是创建一个统一的硬件和软件之间的API，这样无论软件厂商，还是硬件厂商，都能各行其道，互不干扰了。
+CMU的邢波（Eric Xing）所开的概率图模型课程。
 
 ## 概述
 
-官网：
+概率图模型的三要素：Graph：$$\mathcal{G}$$、Model：$$\mathcal{M}$$和Data：$$\mathcal{D}\equiv\{X^{(i)}_1,\dots,X^{(i)}_m\}^N_{i=1}$$。
 
-https://www.khronos.org/openvx/
+它要解决的三大问题：
 
-![](/images/article/openvx.png)
+1.**表示**。如何获取或定义真实世界的不确定度？如何对领域知识/假设/约束编码？
 
-上图给出了OpenVX的主要用途，以及它和Khronos其他兄弟项目之间的关系。
+2.**推断**。根据模型/数据，推断答案。
 
-OpenVX本身也是一个系列标准。它包括：
+$$\text{e.g.}:P(x_i|\mathcal{D})$$
 
-**OpenVX**：一个传统的CV接口。提供包括直方图、Harris、Canny等特征算子的API。
+3.**学习**。根据数据确定哪个模型是正确的。
 
-**OpenVX SC（Safety Critical）**：安全版的OpenVX。
+$$\text{e.g.}:\mathcal{M}=\arg\max_{\mathcal{M}\in M}F(\mathcal{D};\mathcal{M})$$
 
-**OpenVX NN Extension**：专门用于提供NN加速方面的API。目前主要集中于CNN的加速，即卷积、池化等操作，对其他NN支持有限。此外，这些API主要用于预测，而非训练。
+![](/images/article/PGM.png)
 
-Khronos官方提供了一个OpenVX的软件参考实现，用于软硬件厂商的测试工作。
+上图是PGM的一个示例。其中$$X_i$$表示随机变量，图中共有8个随机变量，假设它们均为二值变量，则整个状态空间共有$$2^8$$种组合。遍历这样大的状态空间无疑是一件极为费力的事情。
 
-相关API文档和参考实现（sample code）参见：
+如果$$X_i$$是条件独立的话，则由上图可得：
 
-https://www.khronos.org/registry/OpenVX/
+$$P(X_1,\dots,X_8)=P(X_2)P(X_4|X_2)P(X_5|X_2)P(X_1)P(X_3|X_1)\\P(X_6|X_3,X_4)P(X_7|X_6)P(X_8|X_5,X_6)$$
 
-## NNEF
+这样，状态空间就缩小为$$2+4+4+2+4+8+4+8=36$$种组合了。
 
-Neural Network Exchange Format是Khronos制定的用于交换NN模型数据的数据格式标准。
+根据边的类型，PGM可分为两类：
 
-官网：
+1.有向边表示变量间的**因果**关系。这样的PGM，常称为Bayesia Network（BN）或Directed Graphical Model（DGM）。
 
-https://www.khronos.org/nnef
+2.无向边表示变量间的**相关**关系。这样的PGM，常称为Markov Random Field（MRF）或Undirected Graphical Model（UGM）。
 
-## OpenCL
+>注：因果关系是一种强逻辑关系，需要变量间有深刻的内在联系。而相关关系要弱的多，典型的例子就是《机器学习（十七）》中的尿布和啤酒的故事。尿布和啤酒虽然正相关，然而它们本身却没有多大的联系。
 
-官网：
+根据模型的不同，PGM又可分为生成模型（Generative Model, GM）和判别模型（Discriminative Model, DM）。两者的区别在《机器学习（二）》中已经简单提到过，这里做一个扩展。
 
-https://www.khronos.org/opencl/
+之前提到的机器学习算法，主要是建立特征向量X和标签Y之间的联系。但是实际情况下，X中的状态不一定都能得到，因此可以根据可见性，将X分为可观测变量集合O和其他变量集合R，Y也不一定是一个标签，而可能是一个变量集合。即：
 
-按照Michael J. Flynn的分类方法，计算机的体系结构可分为如下四类：
+$$GM:P(Y,R,O)\to P(Y|O)$$
 
-**Single instruction stream single data stream (SISD)**
+$$DM:P(Y,R|O)\to P(Y|O)$$
 
-**Single instruction stream, multiple data streams (SIMD)**
+注意，在贝叶斯学派的观点中，模型的参数也是随机变量，因此，R在某些情况下，不仅包含不可观测的变量，也包含模型参数。
 
-**Multiple instruction streams, single data stream (MISD)**
+## 贝叶斯网络
 
-**Multiple instruction streams, multiple data streams (MIMD)**
+贝叶斯网络是最简单的有向图模型。
 
-![](/images/article/simd_mimd.png)
+首先给出几个术语的定义：
 
-原图地址：
+**有向无环图(Directed Acyclic Graph, DAG)**：这个术语的字面意思很清楚，不解释。
 
-https://en.wikipedia.org/wiki/Flynn%27s_taxonomy
+**马尔可夫毯(Markov Blanket, MB)**：有向图——结点A的父结点+A的子结点+A的子结点的其他父结点。如下图所示：
 
-CPU通常是SISD和SIMD的，而GPU则是MISD的，超级计算机则是MIMD的。
+![](/images/article/Markov_blanket.png)
 
-OpenCL是一个硬件中立标准，原则上和计算机的体系结构无关。当然现实中，我们主要使用GPU进行运算加速。
+无向图——结点A的邻近结点。
 
-和OpenGL、OpenVX的专用性不同，OpenCL主要定位于通用数学运算。OpenGL年代久远也就罢了。对于像OpenVX这样的新标准，有的时候其内部实现也有可能依赖于OpenCL。毕竟无论哪个领域的专用计算，最终都可以分解为基本的数学运算。
+下图是图模型的部分变种之间的关系图。
 
-参考：
+![](/images/article/Generative_Models.png)
 
-http://blog.csdn.net/leonwei/article/details/8880012
+# 机器学习的算法体系&相关术语表
 
-从零开始学习OpenCL开发（一）架构
+## 算法体系
 
-## MKL
+![](/images/article/ML_2.png)
 
-Intel Math Kernel Library是一套经过高度优化和广泛线程化的数学例程，专为需要极致性能的科学、工程及金融等领域的应用而设计。
+原文：
 
-官网：
+https://mp.weixin.qq.com/s/HapJwwmN3-dbQvzp2jzt1w
 
-https://software.intel.com/zh-cn/mkl
+一文看懂机器学习的算法体系
 
-# NVIDIA
+## 相关术语表
 
-NVIDIA作为行业龙头，其影响力甚至在Khronos Group之上，它提出的标准很多成为了行业的事实标准。
-
-## CUDA
-
-CUDA是NVIDIA最早推出的通用数学运算库。除了基本的数学运算之外，还提供了一些工具包：
-
-cuBLAS：线性计算库。
-
-NVBLAS：多GPU版的cuBLAS。
-
-cuFFT：FFT计算库。
-
-nvGRAPH：图计算库。（这里的图是数学图论中的图，和DL框架中的计算图是两回事。）
-
-cuRAND：随机数生成库。
-
-cuSPARSE；稀疏矩阵计算库。
-
-cuSOLVER：解线性方程的计算库。包括解稠密方程的cuSolverDN、解稀疏方程的cuSolverSP和矩阵分解的cuSolverRF。
-
-## Deep Learning SDK
-
-cuDNN：DL计算库。
-
-NCCL：多结点、多GPU的通信库。
-
-TensorRT：嵌入式设备上专用于DL inference的计算库。
-
-
+| 缩写 | 全称 | 中文名 | 备注 |
+|:--:|:--:|:--:|:--:|
+| LR | Linear Regression | 线性回归 |  |
+| LS | Least Squares | 最小二乘法 |  |
+| LWR | Locally Weighted linear Regression | 局部加权线性回归 |  |
+| LR | Logistic Regression | 逻辑回归 |  |
+| MLE | Maximum Likelihood Estimator | 最大似然估计 |  |
+| GLM | Generalized Linear Model | 广义线性模型 |  |
+| IID | Independent and Identically Distributed | 独立同分布 |  |
+| DLA | Discriminative Learning Algorithm | 判别学习算法 |  |
+| GLA | Generative Learning Algorithms | 生成学习算法 |  |
+| GDA | Gaussian Discriminant Analysis | 高斯判别分析 |  |
+| NB | Naive Bayes | 朴素贝叶斯 |  |
+| SVM | Support Vector Machines | 支持向量机 |  |
+| SMO | Sequential Minimal Optimization | 序列最小优化方法 |  |
+| PAC | Probably Approximately Correct | 可能近似正确 |  |
+| ERM | Empirical Risk Minimization | 经验风险最小化 |  |
+| EM | Expectation-Maximization | 期望最大化 |  |
+| GMM | Mixture of Gaussians Model | 高斯混合模型 |  |
+| SVD | Singular Value Decomposition | 奇异值分解 |  |
+| PPMCC/PCC | Pearson Product-Moment Correlation Coefficient | 皮尔逊相关系数 |  |
+| PMF | Probabilistic Matrix Factorization | 概率矩阵分解算法 |  |
+| RMSE | Root-Mean-Square Error | 均方根误差 |  |
+| ALS | Alternating Least Squares | 交替最小二乘算法 |  |
+| PCA | Principal Components Analysis | 主成分分析 |  |
+| ELM | Extreme Learning Machine | 极限学习机 |  |
+| ICA | Independent Components Analysis | 独立成分分析 |  |
+| CDF | Cumulative Distribution Function | 累积分布函数 |  |
+| PDF | Probability Density Function | 概率密度函数 |  |
+| ECDF | Empirical Distribution Function | 实证分配函数 |  |
+| LDA | Latent Dirichlet Allocation | 隐式狄利克雷划分 |  |
+| LDA | Linear Discriminant Analysis | 线性判别分析 |  |
+| MCMC | Markov Chain Monte Carlo | 马尔可夫链蒙特卡罗 |  |
+| MRF | Markov Random Field | 马尔可夫随机场 |  |
+| PLSA | Probabilistic Latent Semantic Analysis | 概率隐含语义分析 |  |
+| GBDT | Gradient Boost Decision Tree | 渐进梯度决策树 |  |
+| FM | Factorization Machines | 因子分解机 |  |
+| PITF | Pairwise Interaction Tensor Factorization | 配对互动张量分解 |  |
+| ARM | Association Rule Mining | 关联规则挖掘 |  |
+| ROC | Receiver Operating Characteristic | 受试者工作特征 |  |
+| AUC | Area Under ROC Curve | ROC曲线下面积 |  |
+| KNN | k-Nearest Neighbor | K最近邻 |  |
+| GPR | Gaussian Process Regression | 高斯过程回归 |  |
+| PGM | Probabilistic Graphical Model | 概率图模型 |  |
+| PID | Proportional-Integral-Differential | 比例积分微分 |  |
+| HMM | Hidden Markov Model | 隐马尔可夫模型 |  |
+| PLSDA | Partial Least Squares Discriminant Analysis | 偏最小二乘判别分析 |  |
+| ARIMA | Autoregressive Integrated Moving Average Model | 差分自回归移动平均模型 |  |
+| IIR | Infinite Impulse Response | 无限脉冲响应 |  |
+| FIR | Finite Impulse Response | 有限脉冲响应 |  |
+| HNM | Hard Negative Mining | 硬负挖掘 |  |
+| ACBM | Aho-Corasick Boyer-Moore |  | 一种字符串匹配算法 |
+| LASSO | Least Absolute Shrinkage and Selection Operator | 最小绝对收缩和选择算子 |  |
+| CRF | Conditional Random Field | 条件随机场 |  |
+| MSE/MSD | Mean Squared Error/Mean Squared Deviation | 均方误差 |  |
+| SMAPE | Symmetric Mean Absolute Percentage Error | 对称平均绝对百分比误差 |  |
+| MAE | Mean Absolute Error | 平均绝对值误差 |  |
+| MPE | Mean Percentage Error | 平均百分比误差 |  |
+| DSSM | Deep Structured Semantic Model / Deep Semantic Similarity Model | 深度结构语义模型 |  |
+| OOV | out-of-vocabulary |  | 无论多大的单词表都会遇到生词。 |
+| DRL | Deep Reinforcement Learning | 深度强化学习 |  |
+| DQN | Deep Q-Learning Network |  |  |
+| EMD | Earth Mover's Distance | 推土机距离 |  |
+| ED | Edit Distance | 编辑距离 |  |
+| MLP | MultiLayer Perceptron | 多层感知器 |  |
+| CTC | Connectionist Temporal Classification |  | 新词无常用译名 |
+| RNN | Recurrent Neural Network | 循环神经网络 |  |
+| RNN | Recursive Neural Network | 递归神经网络 | 已没落 |
+| CNN | Convolutional Neural Network | 卷积神经网络 |  |
+| NLP | Natural Language Processing | 自然语言处理 |  |
+| HDP | Hierarchical Dirichlet Processes | 分层狄利克雷进程 |  |
+| LSA/LSI | Latent Semantic Analysis/Latent Semantic Indexing | 隐式语义分析/隐式语义索引 |  |
+| NER | Named Entity Recognition | 命名实体识别 |  |
+| LSTM | Long Short-Term Memory | 长时记忆 |  |
+| GRU | Gated Recurrent Unit |  |  |
+| DRN | Deep Residual Network | 深度残差网络 |  |
+| SVDD | Support Vector Domain Description | 支持向量域描述 |  |
+| NMT | Neural Machine Translation | 神经机器翻译 |  |
+| BLEU | Bilingual Evaluation Understudy | 双语评估替代 |  |
+| NMT | Neural Machine Translation | 神经机器翻译 |  |
+| SMT | Statistical Machine Translation | 统计机器翻译 |  |
+| DMN | Dynamic Memory Networks | 动态记忆网络 |  |
+| GAN | Generative Adversarial Networks | 生成对抗式网络 |  |
+| SGNS | Skip-Gram Negative Sampling |  |  |
+|  | Semi-supervised Learning | 半监督学习 |  |
+|  | Transfer Learning | 迁移学习 |  |
+|  | Text Classification | 文本分类 |  |
+|  |  |  |  |
+|  |  |  |  |
 

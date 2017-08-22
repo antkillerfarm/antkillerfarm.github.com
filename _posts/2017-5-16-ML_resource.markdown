@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ML参考资源, PMML, 推荐系统的工程细节
+title:  ML参考资源, PMML
 category: technology 
 ---
 
@@ -366,6 +366,38 @@ https://mp.weixin.qq.com/s/wTwx0JULdBc3cqxPhig8UA
 
 感知机更新算法正确性的直观理解
 
+https://mp.weixin.qq.com/s/4O1_9ly5DxpdjzQ2Nilcpw
+
+关于机器学习算法你必须了解的几点内容！
+
+https://mp.weixin.qq.com/s/h8qkDt7fmFzVxQcKkwqRzQ
+
+滴滴KDD2017论文：基于组合优化的出租车分单模型
+
+https://mp.weixin.qq.com/s/AsZyjwUclEoxxl2VRBekHA
+
+拟合目标函数后验分布的调参利器：贝叶斯优化
+
+https://mp.weixin.qq.com/s/XuoeOqGT_mJcFP08ZLq38g
+
+如何选择一个合适的数据图表？
+
+https://mp.weixin.qq.com/s/Fa7P3v969JRr6OOAyrGptA
+
+数据驱动决策的13种思维
+
+https://mp.weixin.qq.com/s/K3EVwRFBJufXK5QKSQsPbQ
+
+这是一份为数据科学初学者准备的Kaggle竞赛指南
+
+https://mp.weixin.qq.com/s/g1PWYFvxyoEZ8uX_GBwKSQ
+
+学会数据分析背后的挖掘思维，分析就完成了一半!
+
+https://mp.weixin.qq.com/s/-n-5Cp_hgkvdmsHGWEIpWw
+
+自动化机器学习第一步：使用Hyperopt自动选择超参数
+
 # PMML
 
 PMML(Predictive Model Markup Language) 是一个开放的工业标准，它以 XML 为载体将上述数据挖掘任务标准化，可以把某一产品所创建的数据挖掘方案应用于任何其它遵从 PMML 标准的产品或平台中 , 而不需考虑分析和预测过程中的具体实现细节。使得模型的部署摆脱了模型开发和产品整合的束缚，为商业智能产品、数据仓库和云计算中的数据挖掘模型的应用环境开拓了新的篇章。
@@ -379,86 +411,4 @@ http://dmg.org/
 https://www.ibm.com/developerworks/cn/xml/x-1107xuj/
 
 PMML标准介绍及其在数据挖掘任务中的应用
-
-# 推荐系统的工程细节
-
-推荐系统不仅是算法，还包括若干工程细节。这些细节虽然不算复杂，够不上算法的层面，然而对产品的成败，却有举足轻重的作用。
-
-## 一般架构
-
-![](/images/article/suggest.png)
-
-## 用户数据
-
-用户自然特征：性别，年龄，地域，教育水平，出生日期，职业，星座
-
-用户兴趣特征：兴趣爱好，使用网站，浏览/收藏内容，互动内容，品牌偏好，产品偏好
-
-用户社会特征：婚姻状况，家庭情况，社交/信息渠道偏好
-
-用户消费特征：收入状况，购买力水平，已购商品，购买渠道偏好，最后购买时间，购买频次
-
-## 评价推荐质量
-
-以今日头条类的新闻推荐为例，评估指标一般为：
-
-1. 平均转化率（点击量/曝光量）
-
-2. 人均阅读篇数（点击PV/点击UV）
-
-3. 平均阅读完成率
-
-4. 人均阅读时长（这个会受文章长度影响）
-
-5. 用户互动数据（评论、分享）
-
-对评估指标的选取一般遵循以下原则：
-
-1.用户满意度。
-
-2.预测准确度。
-
-3.覆盖率。
-
-4.多样性。
-
-5.新颖性。
-
-6.惊喜度。
-
-7.信任度。
-
-8.实时性
-
-9.鲁棒性
-
-测试方法一般包括：
-
-A/B测试、双盲交叉验证
-
-需要思考的问题
-
-1.新用户/新商品的冷启动问题。
-
-2.马太效应问题。这在推荐算法中也叫做banana problem。原因是在美国这边的超市，几乎所有人都爱买banana，因为最便宜，也好吃也健康。所以过多的数据量可能会导致一个超市推荐算法疯狂推荐Banana给所有人。
-
-PS：NLP领域的TF-IDF算法可有效防止马太效应问题。
-
-参考：
-
-https://www.zhihu.com/question/26990692
-
-类似今日头条这样的个性化推荐网站怎么评价推荐质量的优劣？
-
-https://www.zhihu.com/question/19660417
-
-为什么那么多牛人成天在研究讨论算法，系统自动推荐的东西还是不能令人满意呢？
-
-## 术语
-
-GMV (Gross Merchandise Volume) 成交额
-
-![](/images/article/pv.jpg)
-
-Click-Through-Rate, 网络广告（图片广告/文字广告/关键词广告/排名广告/视频广告等）的点击到达率，即该广告的点击量（严格的来说，可以是到达目标页面的数量）除以广告的浏览量（PV- Page View）。
 
