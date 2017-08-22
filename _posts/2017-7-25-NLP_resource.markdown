@@ -314,6 +314,14 @@ https://mp.weixin.qq.com/s/TjFzJVOowfceHwJNUItcxQ
 
 从语言学到深度学习NLP，一文概述自然语言处理
 
+https://mp.weixin.qq.com/s/r9WRkmApBaHvlCQ5F5ypjg
+
+神奇的神经机器翻译：从发展脉络到未来前景
+
+https://mp.weixin.qq.com/s/rLFm2J6Bao6H5Qj9Fw0wUg
+
+百度陈翔 ：基于机器学习的搜索语义理解技术！
+
 # Javascript在客户端的使用
 
 Javascript在服务器前端的成功，促使人们思考其在客户端的使用。

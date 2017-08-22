@@ -146,6 +146,24 @@ DosBox是Linux平台玩DOS老游戏的法宝。
 
 http://www.brendangregg.com/linuxperf.html
 
+## minicom
+
+1.查看串口设备
+
+`ls -l /dev`
+
+2.连接串口设备
+
+`minicom -D /dev/ttyS0`
+
+3.菜单
+
+Ctrl+A Z
+
+4.退出
+
+Ctrl+A X
+
 # 知名数据集
 
 ## MNIST

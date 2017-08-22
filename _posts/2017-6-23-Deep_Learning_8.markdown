@@ -116,6 +116,8 @@ CV的输入一般是由像素组成的矩阵。相比其他领域的数据挖掘
 
 6.同类差异。比如各种猫都是猫，但它们的外观有细微的差异。
 
+![](/images/article/cv_problem.png)
+
 # RCNN
 
 《深度学习（五）》中提到的AlexNet、VGG、GoogleNet主要用于图片分类。而这里介绍的RCNN(Regions with CNN)主要用于目标检测。

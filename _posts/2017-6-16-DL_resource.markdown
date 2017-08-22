@@ -478,4 +478,7 @@ https://mp.weixin.qq.com/s/H-oAETObn0SLUxK8--xudg
 
 Keras+OpenAI强化学习实践：行为-评判模型
 
+https://mp.weixin.qq.com/s/2lcOfU3X27YYqbWS341jcg
+
+Keras+OpenAI强化学习实践：深度Q网络
 

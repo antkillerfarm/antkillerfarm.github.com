@@ -235,6 +235,10 @@ https://mp.weixin.qq.com/s/OXN8Y5truLeslX8-UWgqmg
 
 宅男的福音：用GAN自动生成二次元萌妹子
 
+https://mp.weixin.qq.com/s/LAS0KgPiVekGdQXbqlw1cQ
+
+深度学习的三大生成模型：VAE、GAN、GAN的变种
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。

@@ -1,10 +1,26 @@
 ---
 layout: post
-title:  机器学习（二十三）——Beam Search, 数据不平衡问题, Probabilistic Robotics, 概率图模型
+title:  机器学习（二十三）——Beam Search, 数据不平衡问题, Probabilistic Robotics
 category: theory 
 ---
 
 # Tri-training（续）
+
+### 纯半监督学习和推断学习
+
+纯半监督学习和推断学习，都属于广义上的半监督学习。和主动学习不同，半监督学习无需专家提供的外部信息。
+
+但标记数据总归不能无中生有，半监督学习的实现有赖于若干假设，其中主要有聚类假设和流形假设两种。其本质都是“相似的样本拥有相似的输出”。
+
+纯半监督学习假定未标记数据为训练样本集，而推断学习则认为未标记数据为测试样本集。
+
+虽然多数情况下，半监督学习能有效提升模型的泛化性能，然而这并不是绝对的。当半监督学习之后，模型的泛化性能反而下降时，我们首先需要检查数据是否满足算法所依赖的假设。
+
+参考：
+
+http://www.cnblogs.com/chaosimple/p/3147974.html
+
+半监督学习
 
 ## 协同训练算法
 
@@ -234,22 +250,6 @@ http://www.docin.com/p-976961701.html
 
 >注：杨元喜，1956年生，大地测量学家。中国科学院院士。
 
-# 概率图模型
 
-## 资料
-
-probabilistic graphical model（PGM）最早由Judea Pearl发明。
-
-这方面比较重要的文章和书籍有：
-
-http://www.cis.upenn.edu/~mkearns/papers/barbados/jordan-tut.pdf
-
-Michael Irwin Jordan著。
-
-《Probabilistic Graphical Models: Principles and Techniques》，Daphne Koller，Nir Friedman著（2009年）。
-
->注：Judea Pearl，1936年生，以色列-美国计算机科学家，UCLA教授。2011年获得图灵奖。
-
->Michael Irwin Jordan，1956年生，美国计算机科学家。UCSD博士，先后执教于MIT和UCB。吴恩达的导师。
 
 

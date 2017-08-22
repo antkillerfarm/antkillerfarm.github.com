@@ -190,6 +190,34 @@ https://mp.weixin.qq.com/s/WTRD3wRQ_wSXjjlt7jiwSg
 
 CommandCenter：基于暴雪官方API的星际争霸2 AI Bot
 
+https://mp.weixin.qq.com/s/SBppyDBWqQUariiHbpaq1w
+
+实时深度学习的推理加速和连续学习
+
+https://mp.weixin.qq.com/s/VAEH_241IAuEH5S6H6ep5w
+
+UC伯克利提出新型视觉描述系统，物体描述无需大量样本
+
+https://mp.weixin.qq.com/s/v_TLYYq6cFWuwR9tXM8m-A
+
+如何通过CRF-RNN模型实现图像语义分割任务
+
+https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
+
+NTIRE2017夺冠论文：用于单一图像超分辨率的增强型深度残差网络
+
+https://mp.weixin.qq.com/s/cyX_FzHF-6df9_AMUDu1aQ
+
+One Model To Learn Them All
+
+https://mp.weixin.qq.com/s/lSd6Gaf9RrmgZCd_EcQQOg
+
+Bengio高徒演讲：深度学习三板斧：网络架构、学习算法和时空层级
+
+https://mp.weixin.qq.com/s/qaxzSSDuuscwL5tt0QCQ0Q
+
+破解人类识别文字之谜：对图像中的字母进行无监督学习
+
 # OpenVX
 
 ## Khronos Group

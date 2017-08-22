@@ -1,12 +1,26 @@
 ---
 layout: post
-title:  机器学习（二十四）——机器学习的算法体系&相关术语表, Machine Learning之Python篇
+title:  机器学习（二十四）——概率图模型, 机器学习的算法体系&相关术语表, Machine Learning之Python篇
 category: theory 
 ---
 
 # 概率图模型
 
-## 资料（续）
+## 资料
+
+probabilistic graphical model（PGM）最早由Judea Pearl发明。
+
+这方面比较重要的文章和书籍有：
+
+http://www.cis.upenn.edu/~mkearns/papers/barbados/jordan-tut.pdf
+
+Michael Irwin Jordan著。
+
+《Probabilistic Graphical Models: Principles and Techniques》，Daphne Koller，Nir Friedman著（2009年）。
+
+>注：Judea Pearl，1936年生，以色列-美国计算机科学家，UCLA教授。2011年获得图灵奖。
+
+>Michael Irwin Jordan，1956年生，美国计算机科学家。UCSD博士，先后执教于MIT和UCB。吴恩达的导师。
 
 >Daphne Koller，女，1968年生，以色列-美国计算机科学家。斯坦福大学博士及教授。和吴恩达共同创立在线教育平台Coursera。
 
