@@ -115,6 +115,10 @@ http://www.jianshu.com/p/e2d2d7cbbe49
 
 50行代码实现GAN
 
+https://mp.weixin.qq.com/s/YnOF9CCUFvtaiTY8HXYOuw
+
+深入浅出：GAN原理与应用入门介绍
+
 http://mp.weixin.qq.com/s/bzwG0QxnP2drqS4RwcZlBg
 
 微软详解：到底什么是生成式对抗网络GAN？

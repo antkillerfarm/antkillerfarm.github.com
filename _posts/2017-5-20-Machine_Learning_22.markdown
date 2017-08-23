@@ -1,8 +1,46 @@
 ---
 layout: post
-title:  机器学习（二十二）——单分类SVM&多分类SVM, 时间序列分析, NLP机器翻译常用评价度量, Tri-training
+title:  机器学习（二十二）——单分类SVM&多分类SVM, 时间序列分析, NLP机器翻译常用评价度量
 category: theory 
 ---
+
+# Optimizer（续）
+
+## Adam
+
+Adaptive Moment Estimation借用了卡尔曼滤波的思想，对$$g_t,g_t^2$$进行滤波：
+
+$$m_t = \beta_1 m_{t-1} + (1 - \beta_1) g_t$$
+
+$$v_t = \beta_2 v_{t-1} + (1 - \beta_2) g_t^2$$
+
+估计：
+
+$$\hat{m}_t = \dfrac{m_t}{1 - \beta^t_1}$$
+
+$$\hat{v}_t = \dfrac{v_t}{1 - \beta^t_2}$$
+
+更新：
+
+$$\theta_{t+1} = \theta_{t} - \dfrac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \hat{m}_t$$
+
+## 参考
+
+http://sebastianruder.com/optimizing-gradient-descent/
+
+An overview of gradient descent optimization algorithms
+
+https://morvanzhou.github.io/tutorials/machine-learning/ML-intro/3-06-speed-up-learning/
+
+加速神经网络训练
+
+http://www.cnblogs.com/neopenx/p/4768388.html
+
+自适应学习率调整：AdaDelta
+
+https://mp.weixin.qq.com/s/VoBK-l_ieSg2UupC2ix2pA
+
+听说你了解深度学习最常用的学习算法：Adam优化算法？
 
 # 单分类SVM&多分类SVM
 
@@ -244,29 +282,5 @@ http://blog.csdn.net/han_xiaoyang/article/details/10118517
 http://blog.csdn.net/lcj369387335/article/details/69845385
 
 自动文档摘要评价方法---Edmundson和ROUGE
-
-# Tri-training
-
-## 半监督学习
-
-之前提到的算法，多数都属于监督学习算法。其特点在于，构建一个包含标记数据的训练集，用来训练算法模型。
-
-然而，获得标记数据是一个费时费力的高成本过程，实际工作中，更有可能的情况是：少量标记数据+大量未标记数据。
-
-未标记数据的处理方式，一般有如下三种：
-
-![](/images/article/Semi_supervised_Learning.png)
-
-### 主动学习
-
-1.根据标记数据生成一个简单的模型A。
-
-2.挑出对改善模型性能帮助最大的样本数据B。
-
-3.通过查询行业专家获得B的真实标记。
-
-4.根据B的真实标记，更新模型A。
-
-以SVM为例，对于改善模型性能帮助最大的样本往往是位于分类边界的样本，可将这些样本挑出来，查询它的标记。
 
 

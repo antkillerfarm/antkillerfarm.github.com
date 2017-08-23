@@ -194,10 +194,6 @@ https://mp.weixin.qq.com/s/h1mXHJrUpK2_3RcfYXujqw
 
 深度学习调参入门之小技巧
 
-https://mp.weixin.qq.com/s/qR1qagsS9YVxNye5DWG23Q
-
-值得收藏的深度学习思维导图
-
 ### TPU & GPU & 并行
 
 https://zhuanlan.zhihu.com/p/25382177

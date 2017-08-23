@@ -302,3 +302,12 @@ http://mp.weixin.qq.com/s/ddTNr-967IahTZ2X1LNSEQ
 
 盘点影响计算机视觉Top100论文：从ResNet到AlexNet
 
+https://mp.weixin.qq.com/s/r6Dnv3v6TYwTsAQJTDR0Mg
+
+熬过深宫十几载，深度学习上位这五年
+
+https://mp.weixin.qq.com/s/fEKc6yFZwTPAHjXJlcHA-w
+
+香港科技大学提出L2T框架：学习如何迁移学习
+
+

@@ -76,6 +76,8 @@ Baum–Welch算法是求解问题3的常用算法。
 
 # AutoML
 
+## 概述
+
 尽管现在已经有许多成熟的ML算法，然而大多数ML任务仍依赖于专业人员的手工编程实现。
 
 然而但凡做过若干同类项目的人都明白，在算法选择和参数调优的过程中，有大量的套路可以遵循。
@@ -100,7 +102,23 @@ https://mp.weixin.qq.com/s/QIR_l8OqvCQzXXXVY2WA1w
 
 ![](/images/article/ML.png)
 
-参考：
+## 超参数
+
+所谓hyper-parameters，就是机器学习模型里面的框架参数，比如聚类方法里面类的个数，或者话题模型里面话题的个数等等，都称为超参数。它们跟训练过程中学习的参数（权重）是不一样的，通常是手工设定，不断试错调整，或者对一系列穷举出来的参数组合一通枚举（叫做网格搜索）。
+
+AutoML很大程度上就是自动化寻找合适的hyper-parameters的方案或方法。
+
+参见：
+
+http://blog.csdn.net/xiewenbo/article/details/51585054
+
+什么是超参数
+
+http://www.cnblogs.com/fhsy9373/p/6993675.html
+
+如何选取一个神经网络中的超参数hyper-parameters
+
+## 参考
 
 http://blog.csdn.net/aliceyangxi1987/article/details/71079448
 
@@ -121,8 +139,6 @@ https://mp.weixin.qq.com/s/NwVGkAcoDmyXKrYFUaK2Bw
 https://mp.weixin.qq.com/s/hf4IOAayS29i6GB9m4GHcA
 
 全自动机器学习：ML工程师屠龙利器
-
-
 
 # KNN
 
@@ -224,39 +240,4 @@ $$\Delta \theta_t = - \dfrac{RMS[\Delta \theta]_{t-1}}{RMS[g]_{t}} g_{t}$$
 
 也就是说，Adadelta不仅考虑了梯度的平方和，也考虑了更新量的平方和。
 
-## Adam
-
-Adaptive Moment Estimation借用了卡尔曼滤波的思想，对$$g_t,g_t^2$$进行滤波：
-
-$$m_t = \beta_1 m_{t-1} + (1 - \beta_1) g_t$$
-
-$$v_t = \beta_2 v_{t-1} + (1 - \beta_2) g_t^2$$
-
-估计：
-
-$$\hat{m}_t = \dfrac{m_t}{1 - \beta^t_1}$$
-
-$$\hat{v}_t = \dfrac{v_t}{1 - \beta^t_2}$$
-
-更新：
-
-$$\theta_{t+1} = \theta_{t} - \dfrac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \hat{m}_t$$
-
-## 参考
-
-http://sebastianruder.com/optimizing-gradient-descent/
-
-An overview of gradient descent optimization algorithms
-
-https://morvanzhou.github.io/tutorials/machine-learning/ML-intro/3-06-speed-up-learning/
-
-加速神经网络训练
-
-http://www.cnblogs.com/neopenx/p/4768388.html
-
-自适应学习率调整：AdaDelta
-
-https://mp.weixin.qq.com/s/VoBK-l_ieSg2UupC2ix2pA
-
-听说你了解深度学习最常用的学习算法：Adam优化算法？
 

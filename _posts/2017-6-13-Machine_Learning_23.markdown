@@ -1,10 +1,32 @@
 ---
 layout: post
-title:  机器学习（二十三）——Beam Search, 数据不平衡问题
+title:  机器学习（二十三）——Tri-training, Beam Search, 数据不平衡问题
 category: theory 
 ---
 
-# Tri-training（续）
+# Tri-training
+
+## 半监督学习
+
+之前提到的算法，多数都属于监督学习算法。其特点在于，构建一个包含标记数据的训练集，用来训练算法模型。
+
+然而，获得标记数据是一个费时费力的高成本过程，实际工作中，更有可能的情况是：少量标记数据+大量未标记数据。
+
+未标记数据的处理方式，一般有如下三种：
+
+![](/images/article/Semi_supervised_Learning.png)
+
+### 主动学习
+
+1.根据标记数据生成一个简单的模型A。
+
+2.挑出对改善模型性能帮助最大的样本数据B。
+
+3.通过查询行业专家获得B的真实标记。
+
+4.根据B的真实标记，更新模型A。
+
+以SVM为例，对于改善模型性能帮助最大的样本往往是位于分类边界的样本，可将这些样本挑出来，查询它的标记。
 
 ### 纯半监督学习和推断学习
 
@@ -102,11 +124,15 @@ ILSVRC 2010的冠军是NEC和UIUC的联合队伍。这也是DL于2012年大放�
 
 ![](/images/article/ILSVRC_2010.png)
 
+上图是NEC算法的基本流程图。这里不打算描述整个算法，而仅对其中涉及的术语做一个解释。
 
+## LBP
 
 http://blog.csdn.net/dujian996099665/article/details/8886576
 
 opencv学习之（三）-LBP算法的研究及其实现
+
+## SPM
 
 http://blog.csdn.net/chlele0105/article/details/16972695
 

@@ -98,6 +98,32 @@ https://mp.weixin.qq.com/s/WTRD3wRQ_wSXjjlt7jiwSg
 
 CommandCenter：基于暴雪官方API的星际争霸2 AI Bot
 
+## 量子计算 & 遗传算法
+
+https://www.zhihu.com/question/28171555
+
+如何理解“量子退火”？
+
+http://mp.weixin.qq.com/s/FjET9HFNjVVMjqQM2KhtKA
+
+5分钟看懂中国最新的量子计算机
+
+https://mp.weixin.qq.com/s/WcRYHwXnv9FWpMcOEwIdQg
+
+量子计算的发展及核心问题
+
+http://blog.csdn.net/u010945683/article/details/40987331
+
+遗传算法详解
+
+https://mp.weixin.qq.com/s/v1tLGUJ4My-tVWziSURHzA
+
+遗传算法的基本概念和实现
+
+https://mp.weixin.qq.com/s/rXDj5ryRvjbkenp9IEokDQ
+
+一文读懂遗传算法工作原理
+
 ## Other
 
 http://cs.stanford.edu/people/karpathy/convnetjs//demo/classify2d.html

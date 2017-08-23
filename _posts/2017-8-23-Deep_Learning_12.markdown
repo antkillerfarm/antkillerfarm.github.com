@@ -1,61 +1,100 @@
 ---
 layout: post
-title:  深度学习（十二）——语音识别
+title:  深度学习（十二）——深度强化学习
 category: theory 
 ---
 
-# 语音识别
+# 深度强化学习
 
-Connectionist Temporal Classification，是一种改进的RNN模型。它主要解决的是时序模型中，输入数大于输出数，输入输出如何对齐的问题。
+## 教程
 
-参考：
+http://incompleteideas.net/sutton/book/the-book-2nd.html
 
-https://www.zhihu.com/question/47642307
+《Reinforcement Learning: An Introduction》，Richard S. Sutton和Andrew G. Barto著。
 
-语音识别中的CTC方法的基本原理
+>注：Richard S. Sutton，加拿大计算机科学家，麻省大学阿姆赫斯特分校博士（1984年），阿尔伯塔大学教授。强化学习之父，研究该领域长达三十余年。
 
-https://www.zhihu.com/question/20398418
+>Andrew G. Barto，麻省大学阿姆赫斯特分校教授。Richard S. Sutton的导师。
 
-语音识别的技术原理是什么？
+http://web.stanford.edu/class/cs234/syllabus.html
 
-https://www.zhihu.com/question/55851184
+CS234: Reinforcement Learning
 
-基于CTC等端到端语音识别方法的出现是否标志着统治数年的HMM方法终结？
+## 概述
 
-https://www.zhihu.com/question/46829056
+![](/images/article/reinforcement_learning.png)
 
-语音识别领域的最新进展目前是什么样的水准？
+## 参考
 
-https://zhuanlan.zhihu.com/p/27064536
+https://www.nervanasys.com/demystifying-deep-reinforcement-learning/
 
-用Wavenet做中文语音识别
+深度强化学习揭秘
 
-https://www.zhihu.com/question/29168274
+http://blog.csdn.net/young_gy/article/details/73485518
 
-语音识别中，如何理解HMM是一个生成模型，而DNN是一个判别模型呢？
+强化学习之Q-learning简介
 
-https://zhuanlan.zhihu.com/p/24979135
+https://zhuanlan.zhihu.com/p/24446336
 
-从声学模型算法总结2016年语音识别的重大进步
+深度强化学习Deep Reinforcement Learning学习整理
 
-https://mp.weixin.qq.com/s/LsVhMaHrh8JgfpDra6KSPw
+https://mp.weixin.qq.com/s/KNXD-MpVHQRXYvJKTqn6WA
 
-横向对比5大开源语音识别工具包
+完善强化学习安全性：UC Berkeley提出约束型策略优化新算法
 
-https://mp.weixin.qq.com/s/-NTQG7_-GqGQWrRhiGgAQQ
+http://mp.weixin.qq.com/s/gHM7qh7UTKzatdg34cgfDQ
 
-详述DeepMind wavenet原理及其TensorFlow实现
+强化学习全解
 
-https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw
+http://mp.weixin.qq.com/s/lLPRwInF5qaw7ewYHOpPyw
 
-SampleRNN语音合成模型
+深度强化学习资料
 
-https://zhuanlan.zhihu.com/p/21344595
+https://mp.weixin.qq.com/s/f6sq8cSaU1cuzt7jhsK8Ig
 
-端到端的OCR：验证码识别(LSTM+CTC)
+强化学习（Reinforcement Learning）基础介绍
 
-https://mp.weixin.qq.com/s/zEqgDh6_fnDgXEI8MC9cmg
+https://mp.weixin.qq.com/s/TGN6Zhrea2LPxdkspVTlAw
 
-端对端的深度卷积神经网络在语音识别中的应用
+算法工程师入门——增强学习
 
+https://mp.weixin.qq.com/s/aVWHlwOmNIqOlu3025_RXQ
+
+DeepMind提出多任务强化学习新方法Distral
+
+https://mp.weixin.qq.com/s/laKJ_jfNR5L1uMML9wkS1A
+
+强化学习（Reinforcement Learning）算法基础及分类
+
+https://zhuanlan.zhihu.com/p/27699682
+
+荐译一篇通俗易懂的策略梯度（Policy Gradient）方法讲解
+
+https://mp.weixin.qq.com/s/Cvk_cePK9iQd8JIKKDDrmQ
+
+强化学习的核心基础概念及实现
+
+http://lamda.nju.edu.cn/yangjw/project/drlintro.html
+
+深度强化学习初探
+
+https://zhuanlan.zhihu.com/p/21498750
+
+深度强化学习导引
+
+https://mp.weixin.qq.com/s/RnUWHa6QzgJbE_XqLeAQmg
+
+深度强化学习，决策与控制
+
+https://mp.weixin.qq.com/s/W9yhj7_frLYWJocoBR1TMQ
+
+避免AI错把黑人识别为大猩猩：伯克利大学提出协同反向强化学习
+
+https://mp.weixin.qq.com/s/R308ohdMU8b7Ap4CLofvDg
+
+OpenAI开源算法ACKTR与A2C：把可扩展的自然梯度应用到强化学习
+
+https://mp.weixin.qq.com/s/-JHHOQPB6pKVuge64NkMuQ
+
+DeepMind主攻的深度强化学习3大核心算法及7大挑战
 

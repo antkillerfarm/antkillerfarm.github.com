@@ -66,18 +66,6 @@ https://www.zhihu.com/question/21664179
 
 如何在论文中画出漂亮的插图？
 
-https://www.zhihu.com/question/28171555
-
-如何理解“量子退火”？
-
-http://mp.weixin.qq.com/s/FjET9HFNjVVMjqQM2KhtKA
-
-5分钟看懂中国最新的量子计算机
-
-https://mp.weixin.qq.com/s/WcRYHwXnv9FWpMcOEwIdQg
-
-量子计算的发展及核心问题
-
 https://zhuanlan.zhihu.com/p/20756711
 
 用Excel做出强大漂亮的数据地图
@@ -85,18 +73,6 @@ https://zhuanlan.zhihu.com/p/20756711
 https://zhuanlan.zhihu.com/p/23866364
 
 从梯度下降到Hessian-Free优化
-
-http://blog.csdn.net/u010945683/article/details/40987331
-
-遗传算法详解
-
-https://mp.weixin.qq.com/s/v1tLGUJ4My-tVWziSURHzA
-
-遗传算法的基本概念和实现
-
-https://mp.weixin.qq.com/s/rXDj5ryRvjbkenp9IEokDQ
-
-一文读懂遗传算法工作原理
 
 http://blog.csdn.net/u010945683/article/details/49149815
 
@@ -397,6 +373,10 @@ https://mp.weixin.qq.com/s/g1PWYFvxyoEZ8uX_GBwKSQ
 https://mp.weixin.qq.com/s/-n-5Cp_hgkvdmsHGWEIpWw
 
 自动化机器学习第一步：使用Hyperopt自动选择超参数
+
+https://mp.weixin.qq.com/s/_rKnE833oPkRTUfkZGn7fQ
+
+机器学习之集成学习
 
 # PMML
 

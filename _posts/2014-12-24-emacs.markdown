@@ -297,7 +297,9 @@ Source Insight常用设置和快捷键大全
 
 ## 分栏显示
 
-右键点击文件标签->New Horizontal/Vertical Tab Group
+1.Window -> New Window
+
+2.Window -> New Vertical Tab Group
 
 # Logo语言的安装
 

@@ -52,6 +52,10 @@ https://mp.weixin.qq.com/s/kGi-Hf7CX6OKcCMe7IC7zA
 
 NLP之Wrod2Vec三部曲
 
+https://mp.weixin.qq.com/s/VMK_UpOUI0y7apTGR02D1Q
+
+图解Word2Vec
+
 # RNN
 
 ## RNN的基本结构

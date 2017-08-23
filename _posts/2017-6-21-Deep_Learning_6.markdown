@@ -198,6 +198,8 @@ http://www.iangoodfellow.com/slides/2016-12-04-NIPS.pdf
 
 从上面的解释可以看出，GAN实际上一种**零和游戏上的无监督算法**。
 
+![](/images/article/GAN.png)
+
 ## 基本原理
 
 上面的解释虽然通俗，却并未涉及算法的实现。要实现上述原理，至少要解决三个问题：
