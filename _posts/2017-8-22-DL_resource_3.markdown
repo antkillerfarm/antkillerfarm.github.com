@@ -310,4 +310,13 @@ https://mp.weixin.qq.com/s/fEKc6yFZwTPAHjXJlcHA-w
 
 香港科技大学提出L2T框架：学习如何迁移学习
 
+https://zhuanlan.zhihu.com/p/28654835
+
+视觉推理（Visual Reasoning），神经网络也可以有逻辑
+
+https://mp.weixin.qq.com/s/88tBoAVziGEFXIGfvZZp8g
+
+深度学习图像处理项目集锦：生成可爱的动漫头像，骡子变斑马等入选
+
+
 
