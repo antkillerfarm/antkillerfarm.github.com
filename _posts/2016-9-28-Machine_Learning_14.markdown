@@ -34,6 +34,8 @@ https://en.wikipedia.org/wiki/Regularization_(mathematics)
 
 $$L_1$$ regularization又被称为Lasso（least absolute shrinkage and selection operator） regression。
 
+从贝叶斯统计的角度来看，规则化相当于增加了一个先验分布，比如$$L_2$$ regularization对应的贝叶斯先验分布是正态分布。
+
 参见：
 
 https://en.wikipedia.org/wiki/Tikhonov_regularization
@@ -41,6 +43,8 @@ https://en.wikipedia.org/wiki/Tikhonov_regularization
 http://www.mit.edu/~cuongng/Site/Publication_files/Tikhonov06.pdf
 
 http://blog.csdn.net/zouxy09/article/details/24971995
+
+机器学习中的范数规则化之（一）L0、L1与L2范数
 
 # 协同过滤的ALS算法
 

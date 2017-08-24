@@ -58,4 +58,9 @@ https://mp.weixin.qq.com/s/zEqgDh6_fnDgXEI8MC9cmg
 
 端对端的深度卷积神经网络在语音识别中的应用
 
+https://mp.weixin.qq.com/s/pimQBFd5uxrZk4dSgUsblg
+
+苹果机器学习期刊「Siri三部曲」之一：通过跨带宽和跨语言初始化提升神经网络声学模型
+
+
 

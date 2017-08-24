@@ -288,6 +288,10 @@ https://mp.weixin.qq.com/s/4Ii3um3jqfm5yKKxZAFdmA
 
 继1小时训练ImageNet之后，大批量训练扩展到了3万2千个样本
 
+https://mp.weixin.qq.com/s/kOCftzSbHe2mvDmlRp-ihA
+
+Jeff Dean：AI对计算机系统设计的影响
+
 ### 算法
 
 http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww
@@ -427,4 +431,10 @@ Keras+OpenAI强化学习实践：行为-评判模型
 https://mp.weixin.qq.com/s/2lcOfU3X27YYqbWS341jcg
 
 Keras+OpenAI强化学习实践：深度Q网络
+
+https://mp.weixin.qq.com/s/-39_7SbRFChDOOpcpJjVMQ
+
+如何在浏览器使用synaptic.js训练简单的神经网络推荐系统
+
+
 

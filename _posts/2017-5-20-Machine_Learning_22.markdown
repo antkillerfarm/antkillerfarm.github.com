@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十二）——单分类SVM&多分类SVM, 时间序列分析, NLP机器翻译常用评价度量
+title:  机器学习（二十二）——单分类SVM&多分类SVM, 时间序列分析, 推荐算法中的常用排序算法, NLP机器翻译常用评价度量
 category: theory 
 ---
 
@@ -131,15 +131,21 @@ http://www.blogjava.net/zhenandaci/archive/2009/03/26/262113.html
 
 将SVM用于多类分类
 
-## Hinge loss
+## Hinge Loss
 
-在之前的SVM的推导中，我们主要是从解析几何的角度，给出了SVM的计算公式。但SVM实际上也是有loss function的。
-
-SVM的loss function，一般叫做Hinge loss，其公式如下：
+在之前的SVM的推导中，我们主要是从解析几何的角度，给出了SVM的计算公式。但SVM实际上也是有loss function的：
 
 $$\ell(y) = \max(0, 1-t \cdot y)$$
 
 其中，$$t=\pm 1$$表示分类标签，$$y=w \cdot x+b$$表示分类超平面计算的score。可以看出当t和y有相同的符号时（意味着 y 预测出正确的分类），loss为0。反之，则会根据y线性增加one-sided error。
+
+![](/images/article/hinge_loss.png)
+
+由于其函数形状像个合叶，因此又名Hinge Loss函数。
+
+多分类SVM的Hinge Loss公式：
+
+$$\ell(y) = \sum_{t \ne y} \max(0, 1 + \mathbf{w}_t \mathbf{x} - \mathbf{w}_y \mathbf{x})$$
 
 参见：
 

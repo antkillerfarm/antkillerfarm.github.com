@@ -206,6 +206,10 @@ https://mp.weixin.qq.com/s/fXI5suCVna6fBxPnVyKevw
 
 浅谈NumPy和Pandas库
 
+https://mp.weixin.qq.com/s/QIfxxY6z7y77RDE_8gDEIg
+
+并行运算Process Pools
+
 # OpenVX
 
 ## Khronos Group
@@ -237,6 +241,16 @@ Khronos官方提供了一个OpenVX的软件参考实现，用于软硬件厂商�
 相关API文档和参考实现（sample code）参见：
 
 https://www.khronos.org/registry/OpenVX/
+
+## Host & Device
+
+和OpenGL类似，一般将CPU称作Host，而将GPU称作Device。App运行在Host上，而硬件加速由Device实现。
+
+Device上的内存一般不能直接访问，需要使用vxCreateScalar、vxCreateTensor之类的API，将相关数据传到Device上。
+
+类似的，有些API也分为Host版本和Device版本，前者用于Host和Device之间的数据交换，而后者用于Device内部数据的交换。
+
+比如，vxCreateTensorAddressing和vxCreateTensorView，都是选择tensor的某一部分，前者是Host API，而后者是Device API。
 
 ## NNEF
 

@@ -138,7 +138,9 @@ SPPNet的核心思想如上图所示：在feature map上提取ROI特征，这样
 
 ![](/images/article/spp.png)
 
+**Step 1**：为图像建立不同尺度的图像金字塔。上图为3层。
 
+**Step 2**：
 
 参考：
 
