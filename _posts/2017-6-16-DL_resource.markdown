@@ -194,6 +194,10 @@ https://mp.weixin.qq.com/s/h1mXHJrUpK2_3RcfYXujqw
 
 深度学习调参入门之小技巧
 
+https://mp.weixin.qq.com/s/SZykoxDFaMlxpu79bXEIig
+
+MIT的周博磊博士如何解释深度学习模型
+
 ### TPU & GPU & 并行
 
 https://zhuanlan.zhihu.com/p/25382177

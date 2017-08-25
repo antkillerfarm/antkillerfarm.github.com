@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（七）——fine-tuning, 李飞飞
+title:  深度学习（七）——fine-tuning
 category: theory 
 ---
 
@@ -243,6 +243,14 @@ https://mp.weixin.qq.com/s/LAS0KgPiVekGdQXbqlw1cQ
 
 深度学习的三大生成模型：VAE、GAN、GAN的变种
 
+https://mp.weixin.qq.com/s/N7YU-YeXiVX7gSB-mzYgnw
+
+生成式对抗网络GAN的研究进展与展望
+
+https://mp.weixin.qq.com/s/gDzti2DISq_cwGbP5T7ICQ
+
+聊聊对抗自编码器
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
@@ -276,24 +284,4 @@ http://yongyuan.name/blog/layer-selection-and-finetune-for-cbir.html
 h1ttps://www.zhihu.com/question/49534423
 
 迁移学习与fine-tuning有什么区别？
-
-# 李飞飞
-
-## AI大佬
-
-李飞飞是吴恩达之后的华裔AI新大佬。巧合的是，他们都是斯坦福AP+AI lab的主任，只不过吴是李的前任而已。
-
-**李飞飞（Fei-Fei Li）**，1976年生，成都人，16岁移民美国。普林斯顿大学本科（1995～1999）+加州理工学院博士（2001～2005）。先后执教于UIUC、普林斯顿、斯坦福等学校。
-
-个人主页：
-
-http://vision.stanford.edu/feifeili/
-
-## 大佬的门徒
-
-比如可爱的妹子**Serena Yeung**。这个妹子是斯坦福的本硕博。出身不详，但从姓名的英文拼法来看，应该是美国土生的华裔。Yeung是杨、阳、羊等姓的传统英文拼法，但显然不是大陆推行的拼音拼法。（可以对比的是Fei-Fei Li和Bruce Lee，对于姓的不同拼法）
-
-个人主页：
-
-http://ai.stanford.edu/~syyeung/
 

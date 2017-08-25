@@ -1,8 +1,30 @@
 ---
 layout: post
-title:  深度学习（十三）——语音识别
+title:  深度学习（十三）——迁移学习, 语音识别
 category: theory 
 ---
+
+# 迁移学习
+
+https://zhuanlan.zhihu.com/wjdml
+
+《小王爱迁移》系列blog
+
+https://mp.weixin.qq.com/s/BWBrso7O1O3Rfxa4QWZH4g
+
+分分钟学会基于深度学习的图像真实风格迁移！
+
+https://mp.weixin.qq.com/s/5DtTgc9bIrdXQkmuqRm8CA
+
+谷歌大脑迁移学习：减少调参，直接在数据集中学习最佳图像架构
+
+https://mp.weixin.qq.com/s/fEKc6yFZwTPAHjXJlcHA-w
+
+香港科技大学提出L2T框架：学习如何迁移学习
+
+https://mp.weixin.qq.com/s/pbyByPoZ9SVoP9B7pJMxXg
+
+深度卷积网络迁移学习的脸部表情识别
 
 # 语音识别
 

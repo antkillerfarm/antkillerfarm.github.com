@@ -116,3 +116,8 @@ https://zhuanlan.zhihu.com/p/25138563
 
 各领域公开数据集下载
 
+https://mp.weixin.qq.com/s/pB9IRbvvscichAWy0hzxUQ
+
+谷歌开放语音命令数据集，助力初学者利用深度学习解决音频识别问题
+
+

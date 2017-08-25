@@ -194,10 +194,6 @@ http://mp.weixin.qq.com/s/XH1dXWSPiQMAHYR0_-xylA
 
 精选深度学习在文本、视觉、语音等领域的论文集
 
-https://mp.weixin.qq.com/s/pbyByPoZ9SVoP9B7pJMxXg
-
-深度卷积网络迁移学习的脸部表情识别
-
 https://mp.weixin.qq.com/s/bGbslnuG80S6gPwD4FHuMg
 
 深度学习助力前端开发：自动生成GUI图代码

@@ -340,6 +340,14 @@ https://mp.weixin.qq.com/s/Ga13C1gTSk1adYgcBeJfwA
 
 一拍脑袋就要用MapReduce？你以为你是Google啊
 
+https://mp.weixin.qq.com/s/OtVRL37CNt_d5yEJPzzBzg
+
+一个由正则表达式引发的血案
+
+https://mp.weixin.qq.com/s/oddiCH7TCUBn8CkIYdaNZA
+
+08年江泽民就提出：机器学习会有所做为，加大GPU技术研究，SaaS是软件转型机遇
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

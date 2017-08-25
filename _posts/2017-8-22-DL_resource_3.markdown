@@ -10,10 +10,6 @@ http://mp.weixin.qq.com/s/SNfSY4CKhX1RDWd4itPx2Q
 
 马里兰大学论文：训练深度神经网络中的一致性难题
 
-https://mp.weixin.qq.com/s/BWBrso7O1O3Rfxa4QWZH4g
-
-分分钟学会基于深度学习的图像真实风格迁移！
-
 https://mp.weixin.qq.com/s/ViQqeER1NXtJOtnLg76TWg
 
 关于远程监督，我们来推荐几篇值得读的论文
@@ -109,10 +105,6 @@ https://mp.weixin.qq.com/s/6KC1vhKcyqQ0eZEXJyPqVA
 https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
 
 北大：一种基于新闻特征抽取和循环神经网络的股票预测方法
-
-https://mp.weixin.qq.com/s/5DtTgc9bIrdXQkmuqRm8CA
-
-谷歌大脑迁移学习：减少调参，直接在数据集中学习最佳图像架构
 
 https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg
 
@@ -306,10 +298,6 @@ https://mp.weixin.qq.com/s/r6Dnv3v6TYwTsAQJTDR0Mg
 
 熬过深宫十几载，深度学习上位这五年
 
-https://mp.weixin.qq.com/s/fEKc6yFZwTPAHjXJlcHA-w
-
-香港科技大学提出L2T框架：学习如何迁移学习
-
 https://zhuanlan.zhihu.com/p/28654835
 
 视觉推理（Visual Reasoning），神经网络也可以有逻辑
@@ -318,5 +306,27 @@ https://mp.weixin.qq.com/s/88tBoAVziGEFXIGfvZZp8g
 
 深度学习图像处理项目集锦：生成可爱的动漫头像，骡子变斑马等入选
 
+https://mp.weixin.qq.com/s/i9AXKsd6XVxyuaTCKsAj3g
 
+像Sheldon一样对“讽刺语言”分辨无能？别怕，MIT最新算法帮你助攻
+
+https://mp.weixin.qq.com/s/zWmJ3uXnFtXaI2BotoadHA
+
+从技术到产品，苹果Siri深度学习语音合成技术揭秘
+
+https://mp.weixin.qq.com/s/-T5k2ViPjvEoXccKt-_J3Q
+
+中科院自动化研究所提出 FaceBoxes：实时、高准确率的 CPU 面部检测器
+
+https://mp.weixin.qq.com/s/-kXWmaIfw67rvb8IRi5mCQ
+
+视频行为理解新边界
+
+https://mp.weixin.qq.com/s/rxP9PlTJJdw5VmGbwRPMog
+
+解决3D重建难题，伯克利大学根据单张平面彩图重建高精度3D结构
+
+https://mp.weixin.qq.com/s/ty8RyPREo_EA7O8vA2pQuQ
+
+AI编曲震撼人心，RNN生成流行音乐
 

@@ -24,7 +24,7 @@ http://playground.tensorflow.org/
 
 https://github.com/tensorflow/models/
 
-TensorFlow的教程：
+TensorFlow的官方教程：
 
 http://tensorflowtutorial.net/tensorflow-tutorial
 
@@ -41,6 +41,30 @@ http://wiki.jikexueyuan.com/project/tensorflow-zh/
 TensorFlow技术栈：
 
 ![](/images/article/tensorflow_layer.png)
+
+## CS 20SI
+
+斯坦福最近专门为Tensorflow开设了一门课程：CS 20SI: Tensorflow for Deep Learning Research。
+
+网址：
+
+https://web.stanford.edu/class/cs20si/syllabus.html
+
+课程的主讲Chip Huyen，一个越南妹子，目前在斯坦福读本科（大三）。应该说本科生上讲台的确是一件稀罕事，在这里为斯坦福的学术氛围点赞。
+
+个人主页：
+
+https://huyenchip.com
+
+不用为课程的质量担心，Chip Huyen的师兄们客串了很多节课，Andrej Karpathy为课程设计了网页。
+
+Chip Huyen可谓是一战成名。但也带来了烦恼，再去请教别人的时候，总有助教或同学会反问：“这些你不该早就知道了么？你不就是教这些的么？”
+
+参见：
+
+http://www.sohu.com/a/164277987_473283
+
+一名在斯坦福教授TensorFlow教师的“忏悔”：我觉得自己像个骗子
 
 ## 源代码编译
 
@@ -272,6 +296,10 @@ https://mp.weixin.qq.com/s/5QYlh6gV9IqdQfraK4DC8w
 https://zhuanlan.zhihu.com/p/28475975
 
 如何优雅地用TensorFlow预测时间序列：TFTS库详细教程
+
+https://mp.weixin.qq.com/s/CqOo7Fu6t5-yJiYhzo03oQ
+
+利用TensorFlow和神经网络来处理文本分类问题
 
 ## 我的TensorFlow实践
 
