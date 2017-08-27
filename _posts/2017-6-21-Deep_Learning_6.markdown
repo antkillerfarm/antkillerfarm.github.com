@@ -1,10 +1,36 @@
 ---
 layout: post
-title:  深度学习（六）——GAN
+title:  深度学习（六）——CNN进化史
 category: theory 
 ---
 
-# CNN进化史（续）
+# CNN进化史
+
+## 计算机视觉
+
+![](/images/article/computer_vision.jpg)
+
+6大关键技术：
+
+![](/images/article/computer_vision_2.jpg)
+
+**图像分类**：根据图像的主要内容进行分类。数据集：MNIST, CIFAR, ImageNet
+
+**物体定位**：预测包含主要物体的图像区域，以便识别区域中的物体。数据集：ImageNet
+
+**物体识别**：定位并分类图像中出现的所有物体。这一过程通常包括：划出区域然后对其中的物体进行分类。数据集：PASCAL, COCO
+
+**语义分割**：把图像中的每一个像素分到其所属物体类别，在样例中如人类、绵羊和草地。数据集：PASCAL, COCO
+
+**实例分割**：把图像中的每一个像素分到其所属物体实例。数据集：PASCAL, COCO
+
+**关键点检测**：检测物体上一组预定义关键点的位置，例如人体上或者人脸上的关键点。数据集：COCO
+
+## CNN简史
+
+![](/images/article/computer_vision_3.jpg)
+
+![](/images/article/CNN_3.png)
 
 ## AlexNet
 
@@ -174,6 +200,10 @@ https://mp.weixin.qq.com/s/I94gGXXW_eE5hSHIBOsJFQ
 
 无需数学背景，读懂ResNet、Inception和Xception三大变革性架构
 
+https://mp.weixin.qq.com/s/iN2LDAQ2ee-rQnlD3N1yaw
+
+变形卷积核、可分离卷积？CNN中十大拍案叫绝的操作！
+
 # GAN
 
 ## 概况
@@ -251,29 +281,4 @@ $$y=\Phi^{-1}\left(\int_0^x \rho(t)dt\right)$$
 假设有一批服从某个指定分布的数据$$Z=(z_1,z_2,\dots,z_N)$$，根据概率论的相关定义，我们至少可以使用**离散采样**的方法，根据Z中的样本分布，来近似求出Z的指定分布。下文如无特殊指出，**均以Z中的样本分布来代替Z的指定分布，简称Z的分布**。
 
 那么接着就有另一个问题：**如何评估$$G(X,\theta)$$生成的样本的分布和Z的分布之间的差异呢？**
-
-## KL散度
-
-比较两个分布的差异的最常用指标是KL散度。其定义参见《机器学习（八）》。
-
-## JS散度
-
-因为KL散度不是对称的，有时候将它对称化，即得到JS散度（Jensen–Shannon divergence）：
-
-$$JS\Big(p_1(x),p_2(x)\Big)=\frac{1}{2}KL\Big(p_1(x)\|p_2(x)\Big)+\frac{1}{2}KL\Big(p_2(x)\|p_1(x)\Big)$$
-
->注：Claude Elwood Shannon，1916～2001，美国数学家，信息论之父。密歇根大学双学士+MIT博士。先后供职于贝尔实验室和MIT。
-
-KL散度和JS散度，也是Ian Goodfellow在原始GAN论文中，给出的评价指标。
-
-虽然KL散度和JS散度，在这里起着距离的作用，但它们**不是距离**，它们不满足距离的三角不等式，因此只能叫“散度”。
-
-## 神经距离
-
-假设我们可以将实数域分成若干个不相交的区间$$I_1,I_2,\dots,I_K$$，那么就可以估算一下给定分布Z的概率分布：
-
-$$p_z(I_i)=\frac{1}{N}\sum_{j=1}^{N}\#(z_j\in I_i)$$
-
-其中$$\#(z_j\in I_i)$$表示如果$$z_j\in I_i$$，那么取值为1，否则为0。
-
 

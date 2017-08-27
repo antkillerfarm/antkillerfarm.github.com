@@ -106,10 +106,6 @@ https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
 
 北大：一种基于新闻特征抽取和循环神经网络的股票预测方法
 
-https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg
-
-旷视科技提出新型卷积网络ShuffleNet，专为移动端设计
-
 https://mp.weixin.qq.com/s/UboQNEywHSBAYc0740qmzQ
 
 让机器学会创造新的概念：DeepMind提出符号-概念关联网络SCAN
@@ -329,4 +325,14 @@ https://mp.weixin.qq.com/s/rxP9PlTJJdw5VmGbwRPMog
 https://mp.weixin.qq.com/s/ty8RyPREo_EA7O8vA2pQuQ
 
 AI编曲震撼人心，RNN生成流行音乐
+
+https://mp.weixin.qq.com/s/calUA-Ddq-mq4uHrExtfBQ
+
+实习生通关秘籍】我在谷歌大脑开挂的一年
+
+https://mp.weixin.qq.com/s/YbdiEHb8ld1pp1ehgBzTOQ
+
+将未来信息作为正则项，Twin Networks加强RNN对长期依赖的建模能力
+
+
 

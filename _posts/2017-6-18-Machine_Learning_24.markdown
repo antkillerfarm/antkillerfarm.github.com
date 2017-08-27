@@ -1,114 +1,86 @@
 ---
 layout: post
-title:  机器学习（二十四）——Probabilistic Robotics
+title:  机器学习（二十四）——Beam Search, 数据不平衡问题
 category: theory 
 ---
 
-# Probabilistic Robotics
+## Tri-training（续）
 
-这篇心得主要根据Sebastian Thrun的Probabilistic Robotics课程的ppt来写。
-
->注：Sebastian Thrun，德国波恩大学博士（1995年）。先后执教于CMU和Stanford。
-
-网址：
-
-http://robots.stanford.edu/probabilistic-robotics/ppt/
-
-## 贝叶斯过滤器
-
-假定我们需要根据测量值z来判断门的开关。显然，这里的$$P(open\vert z)$$是诊断式（**diagnostic**）问题，而$$P(z\vert open)$$是因果式（**causal**）问题。通常来说，后者比较容易获取，而前者可以基于后者使用贝叶斯公式计算得到。
-
-一般将$$P(z\vert x)$$称为**Sensor model**。
-
-针对多相关测量值问题，这里有一个和朴素贝叶斯假设相仿的**Markov assumption**——假设$$z_n$$独立于$$z_1,\dots,z_{n-1}$$（即“现在”不依赖于“过去”），则：
-
-$$P(x|z_1,\dots,z_n)=\frac{P(z_n|x)P(x|z_1,\dots,z_{n-1})}{P(z_n|z_1,\dots,z_{n-1})}(\text{Bayes})
-\\=\eta P(z_n|x)P(x|z_1,\dots,z_{n-1})=\eta_{1,\dots,n}\prod_{i=1}^nP(z_i|x)P(x)(\text{Markov})$$
-
->注：以下的推导过程注释中，如无特别说明。均以Bayes指代Bayes' theorem，以Markov指代Markov assumption。
-
-上式中的$$\eta$$表示概率的归一化系数。
-
-除了测量值z之外，一般的控制系统中还有动作（Action）的概念。比如打开门就是一个Action。Action会导致系统的状态发生改变（也可不变）。如下图所示：
-
-![](/images/article/state_trans.png)
-
-通常，将$$P(x\vert u,x')$$称作**Action Model**。其中，u表示Action，而x'表示系统的上一个状态。
-
-一般的，**新的测量值会减少系统的不确定度，而新的Action会增加系统的不确定度。**
-
-综上，一个贝叶斯过滤器（Bayes Filters）的框架包括：
-
-输入：
-
-1.观测值z和Action u的序列：$$d_t=\{u_1,z_1,\dots,u_t,z_t\}$$
-
-2.Sensor model：$$P(z\vert x)$$
-
-3.Action model：$$P(x\vert u,x')$$
-
-4.系统状态的先验概率：$$P(x)$$
-
-输出：
-
-1.估计动态系统的状态X。
-
-2.状态的后验概率，也叫**Belief**：
-
-$$\begin{align}
-\mathbf{Bel(x_t)}&=P(x_t\vert u_1,z_1,\dots,u_t,z_t)
-\\&=\eta P(z_t\vert x_t,u_1,z_1,\dots,u_t)P(x_t\vert u_1,z_1,\dots,u_t)(\text{Bayes})
-\\&=\eta P(z_t\vert x_t)P(x_t\vert u_1,z_1,\dots,u_t)(\text{Markov})
-\\&=\eta P(z_t\vert x_t)\int P(x_t\vert u_1,z_1,\dots,u_t,x_{t-1})P(x_{t-1}\vert u_1,z_1,\dots,u_t)\mathrm{d}x_{t-1}(\text{Total prob.})
-\\&=\eta P(z_t\vert x_t)\int P(x_t\vert u_t,x_{t-1})P(x_{t-1}\vert u_1,z_1,\dots,u_t)\mathrm{d}x_{t-1}(\text{Markov})
-\\&=\eta P(z_t\vert x_t)\int P(x_t\vert u_t,x_{t-1})P(x_{t-1}\vert u_1,z_1,\dots,z_{t-1})\mathrm{d}x_{t-1}(\text{Markov})
-\\&=\eta P(z_t\vert x_t)\int P(x_t\vert u_t,x_{t-1})\mathbf{Bel(x_{t-1})}\mathrm{d}x_{t-1}
-\end{align}$$
-
-上式也可以写作：
-
-**预测**：
-
-$$\overline{\mathbf{Bel(x_t)}}=\int P(x_t\vert u_t,x_{t-1})\mathbf{Bel(x_{t-1})}\mathrm{d}x_{t-1}$$
-
-**修正**：
-
-$$\mathbf{Bel(x_t)}=\eta P(z_t\vert x_t)\overline{\mathbf{Bel(x_t)}}$$
-
-熟悉卡尔曼滤波的同学大概已经看出来了。没错！贝叶斯过滤器是一大类算法的统称。这些算法包括Kalman filters、Particle filters、Hidden Markov models、Dynamic Bayesian networks、Partially Observable Markov Decision Processes (POMDPs)等。
-
-## 递归最小二乘法
-
-http://www.blog.huajh7.com/adaptive-filters-lms-rls-kalman-filter-1/
-
-## 卡尔曼滤波
-
->注：Rudolf (Rudi) Emil Kálmán，1930～2016，匈牙利出生的美国科学家。哥伦比亚大学博士（1957），先后执教于斯坦福大学和佛罗里达大学。现代控制理论的里程碑人物，美国科学院院士。   
->卡尔曼滤波从纯数学的角度讲，并没有多大意义。因此，主流数学家们在很长一段时间内，并不承认Kálmán是数学家。只是由于卡尔曼滤波在工程界的巨大影响力，才不得不于2012年，授予其美国数学协会院士。
-
-Kalman filters是一种高斯线性滤波器。
+2.在协同训练过程中,各分类器所获得的新标记示例都由其余两个分类器协作提供，具体来说，如果两个分类器对同一个未标记示例的预测相同，则该示例就被认为具有较高的标记置信度，并在标记后被加入第三个分类器的有标记训练集。
 
 参考：
 
-http://www.cs.unc.edu/~welch/media/pdf/kalman_intro.pdf
+http://www.cnblogs.com/liqizhou/archive/2012/05/11/2496162.html
 
-Gregory Francis Welch写的卡尔曼滤波科普文。
+Tri-training, 协同训练算法
 
->注：Gregory Francis Welch，北卡罗莱娜大学博士（1997）。中佛罗里达大学教授。
+## Co-Forest & Co-Trade
 
-http://www.cs.unc.edu/~welch/kalman/media/misc/kalman_intro_chinese.zip
+Co-Forest & Co-Trade是周志华在Tri-training基础上的改进算法。
 
-上文的中文版。
+参考：
 
-https://zhuanlan.zhihu.com/p/21294526
+http://lamda.nju.edu.cn/huangsj/dm11/files/gaoy.pdf
 
-知乎诸位大神的科普文。
+半监督学习中的几种协同训练算法
 
-http://www.docin.com/p-976961701.html
+# Beam Search
 
-动态相对定位中自适应滤波方法的研究
+Beam Search（集束搜索）是一种启发式图搜索算法，通常用在图的解空间比较大的情况下，为了减少搜索所占用的空间和时间，在每一步深度扩展的时候，剪掉一些质量比较差的结点，保留下一些质量较高的结点。
 
-《自适应动态导航定位》，杨元喜著。
+这样减少了空间消耗，并提高了时间效率，但缺点就是有可能存在潜在的最佳方案被丢弃，因此Beam Search算法是不完全的，一般用于解空间较大的系统中。
 
->注：杨元喜，1956年生，大地测量学家。中国科学院院士。
+![](/images/article/beam_search.png)
+
+上图是一个Beam Search的剪枝示意图。
+
+Beam Search主要用于机器翻译、语音识别等系统。这类系统虽然从理论来说，也就是个多分类系统，然而由于分类数等于词汇数，简单的套用softmax之类的多分类方案，明显是计算量过于巨大了。
+
+PS：中文验证码识别估计也可以采用该技术。
+
+参见：
+
+http://people.csail.mit.edu/srush/optbeam.pdf
+
+Optimal Beam Search for Machine Translation
+
+http://www.cnblogs.com/xxey/p/4277181.html
+
+Beam Search（集束搜索/束搜索）
+
+http://blog.csdn.net/girlhpp/article/details/19400731
+
+束搜索算法（Andrew Jungwirth 初稿）BEAM Search
+
+# 模型驱动 vs 数据驱动
+
+最近阅读了这篇文章，深有感慨：
+
+https://mp.weixin.qq.com/s/N7DE0kvf8THhJQwroHj4vA
+
+成不了AI高手？因为你根本不懂数据！听听这位老教授多年心血练就的最实用统计学
+
+>注：吴喜之教授是我国著名的统计学家，退休前在中国人民大学统计学院任统计学教授。吴教授上世纪六十年代就读于北京大学数学力学系，八十年代出国深造，在美国北卡罗来纳大学获得统计学博士学位，是改革开放之后第一批留美并获得统计学博士学位的中国学者。多年来吴教授在国内外数十所高校讲授统计学课程，在国内统计学界享有盛誉。其知名的学生有李舰和刘思喆。
+
+>李舰，从2003年开始，一直把R当作随身武器奋战在统计学和数据分析的第一线，是Rweibo、Rwordseg、tmcn等高质量R包的作者，在业界积累了大量的经验，目前供职于Mango Solutions（中国），任数据总监。
+
+>刘思喆，2012至2016年就职于京东商城，推荐系统平台部高级经理，主要负责和推荐系统离线、在线相关的用户行为、商品特征的建模，以及数据监控平台。因工作业绩，在《京东技术解密》一书中获“数据达人”称号。
+
+# 数据不平衡问题
+
+https://mp.weixin.qq.com/s/e0jXXCIhbaZz7xaCZl-YmA
+
+如何处理不均衡数据？
+
+https://mp.weixin.qq.com/s/2j_6hdq-MhybO_B0S7DRCA
+
+如何解决机器学习中数据不平衡问题
+
+https://mp.weixin.qq.com/s/gEq7opXLukWD5MVhw_buGA
+
+七招教你处理非平衡数据
+
+http://blog.csdn.net/u013709270/article/details/72967462
+
+机器学习中的数据不平衡解决方案大全
 

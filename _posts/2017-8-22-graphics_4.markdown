@@ -1,0 +1,138 @@
+---
+layout: post
+title:  图像处理理论（四）——霍夫变换, SIFT
+category: theory 
+---
+
+# 霍夫变换（续）
+
+![](/images/article/R_theta_line.gif)
+
+如上图所示，一条直线的解析方程在x-y坐标系下是：
+
+$$y=mx+b$$
+
+而在极坐标系下则为：
+
+$$r= x\cos\theta + y\sin\theta$$
+
+上式中包含两个参数$$r,\theta$$，由$$r-\theta$$组成的平面又被称作parameter space或Hough space。
+
+对于一个给定点$$(x_0,y_0)$$我们在$$r-\theta$$平面绘出所有通过它的直线, 将得到一条正弦曲线。如下图所示：
+
+![](/images/article/hough.jpg)
+
+对于同一直线上的三点$$(x_0,y_0),(x_1,y_1),(x_2,y_2)$$，它们在$$r-\theta$$平面上的三条正弦曲线交于一点$$(r,\theta)$$，而这一点正好是该直线在极坐标系下的解析方程的参数值。如下图所示：
+
+![](/images/article/hough_2.jpg)
+
+可以想像，如果该直线上的点更多一些，那么在$$r-\theta$$平面上就有更多的正弦曲线交于一点，最终情况将如下图所示：
+
+![](/images/article/Hough-example-result-en.png)
+
+由此，我们可以总结Hough Transform的一般过程：
+
+1.首先对图片进行边缘化处理。
+
+2.将边缘上的点映射到parameter space中。
+
+3.追踪图像中每个点对应曲线间的交点. 如果交于一点的曲线的数量超过了阈值, 那么可以认为这个交点所代表的参数对在原图像中为一条直线。
+
+上面说的是霍夫线变换，类似的还有霍夫圆变换。只不过圆的参数有三个，即：
+
+$$(x_{center},y_{center},r)$$
+
+高维parameter space的积分，由于运算量比较大，因此又有霍夫梯度法之类的改进算法。
+
+参考：
+
+http://www.cs.jhu.edu/~misha/Fall04/GHT1.pdf
+
+http://blog.csdn.net/poem_qianmo/article/details/26977557
+
+# SIFT
+
+## 概述
+
+SIFT算法是CV领域在DL进入之前的20年中，最重要的成果。
+
+尺度不变特征转换(Scale-invariant feature transform或SIFT)是一种电脑视觉的算法用来侦测与描述影像中的局部性特征，它在尺度空间中寻找极值点，并提取出其位置、尺度、旋转不变量，此算法由David Lowe在1999年所发表，2004年完善总结。
+
+>注：David G. Lowe，英属不列颠哥伦比亚大学（UBC）本科+斯坦福博士（1985）。UBC教授，Google资深科学家。   
+>个人主页：   
+>http://www.cs.ubc.ca/~lowe/   
+>他在个人主页中提供了一份CV界知名的公司或研究机构的名单：   
+>http://www.cs.ubc.ca/~lowe/vision.html
+
+## 尺度空间
+
+尺度空间(scale space)思想最早是由Iijima于1962年提出的，后经witkin和Koenderink等人的推广逐渐得到关注，在计算机视觉领域使用广泛。
+
+尺度空间理论的基本思想是：在图像信息处理模型中引入一个被视为尺度的参数，通过连续变化尺度参数获得多尺度下的尺度空间表示序列，对这些序列进行尺度空间主轮廓的提取，并以该主轮廓作为一种特征向量，实现边缘、角点检测和不同分辨率上的特征提取等。
+
+尺度空间方法将传统的单尺度图像信息处理技术纳入尺度不断变化的动态分析框架中，更容易获取图像的本质特征。尺度空间中各尺度图像的模糊程度逐渐变大，能够模拟人在距离目标由近到远时目标在视网膜上的形成过程。
+
+尺度空间的应用实例就是**图像金字塔**。
+
+## 尺度空间的视觉不变性
+
+视觉不变性是对尺度空间算子提出的一种要求：
+
+1.对图像的分析不受图像的灰度水平和对比度变化的影响，即满足灰度不变性和对比度不变性。这主要体现了物体的**光照变化**。
+
+2.对图像的分析和图像的位置、大小、角度以及仿射变换无关，即满足平移不变性、尺度不变性、欧几里德不变性以及仿射不变性。这主要体现了物体的**空间位置变化**。
+
+## 参考
+
+http://blog.csdn.net/zddblog/article/details/7521424
+
+SIFT算法详解
+
+# 从BOW到SPM
+
+## BOW
+
+Bag-of-words模型是信息检索领域常用的文档表示方法。在信息检索中，BOW模型假定对于一个文档，忽略它的单词顺序和语法、句法等要素，将其仅仅看作是若干个词汇的集合，文档中每个单词的出现都是独立的，不依赖于其它单词是否出现。
+
+为了表示一幅图像，我们可以将图像看作文档，即若干个“视觉词汇”的集合，同样的，视觉词汇相互之间没有顺序。
+
+![](/images/article/cv_bow.jpg)
+
+由于图像中的词汇不像文本文档中的那样是现成的，我们需要首先从图像中提取出相互独立的视觉词汇，这通常需要经过三个步骤：（1）特征检测，（2）特征表示，（3）单词本的生成。
+
+而SIFT算法是提取图像中局部不变特征的应用最广泛的算法，因此我们可以用SIFT算法从图像中提取不变特征点，作为视觉词汇，并构造单词表，用单词表中的单词表示一幅图像。
+
+
+
+参考：
+
+http://blog.csdn.net/v_JULY_v/article/details/6555899
+
+SIFT算法的应用--目标识别之Bag-of-words模型
+
+## SPM
+
+http://blog.csdn.net/chlele0105/article/details/16972695
+
+SPM:Spatial Pyramid Matching for Recognizing Natural Scene Categories空间金字塔匹配
+
+http://blog.csdn.net/jwh_bupt/article/details/9625469
+
+Spatial Pyramid Matching 小结
+
+# ILSVRC 2010考古
+
+ILSVRC 2010的冠军是NEC和UIUC的联合队伍。这也是DL于2012年大放光彩之前比较杰出的成果。虽然现在它通常作为反面教材，出现在与DL的对比场景中，然而不可否认的是，它仍然是一个算法的杰作。
+
+![](/images/article/ILSVRC_2010.png)
+
+上图是NEC算法的基本流程图。这里不打算描述整个算法，而仅对其中涉及的术语做一个解释。
+
+## LBP
+
+http://blog.csdn.net/dujian996099665/article/details/8886576
+
+opencv学习之（三）-LBP算法的研究及其实现
+
+
+

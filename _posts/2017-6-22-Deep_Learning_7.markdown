@@ -1,12 +1,34 @@
 ---
 layout: post
-title:  深度学习（七）——fine-tuning
+title:  深度学习（七）—— GAN
 category: theory 
 ---
 
-# GAN
+# GAN（续）
 
-## 神经距离（续）
+## KL散度
+
+比较两个分布的差异的最常用指标是KL散度。其定义参见《机器学习（八）》。
+
+## JS散度
+
+因为KL散度不是对称的，有时候将它对称化，即得到JS散度（Jensen–Shannon divergence）：
+
+$$JS\Big(p_1(x),p_2(x)\Big)=\frac{1}{2}KL\Big(p_1(x)\|p_2(x)\Big)+\frac{1}{2}KL\Big(p_2(x)\|p_1(x)\Big)$$
+
+>注：Claude Elwood Shannon，1916～2001，美国数学家，信息论之父。密歇根大学双学士+MIT博士。先后供职于贝尔实验室和MIT。
+
+KL散度和JS散度，也是Ian Goodfellow在原始GAN论文中，给出的评价指标。
+
+虽然KL散度和JS散度，在这里起着距离的作用，但它们**不是距离**，它们不满足距离的三角不等式，因此只能叫“散度”。
+
+## 神经距离
+
+假设我们可以将实数域分成若干个不相交的区间$$I_1,I_2,\dots,I_K$$，那么就可以估算一下给定分布Z的概率分布：
+
+$$p_z(I_i)=\frac{1}{N}\sum_{j=1}^{N}\#(z_j\in I_i)$$
+
+其中$$\#(z_j\in I_i)$$表示如果$$z_j\in I_i$$，那么取值为1，否则为0。
 
 接着我们生成M个均匀随机数$$x_1,x_2,\dots,x_M$$（这里不一定要$$M=N$$，还是那句话，我们比较的是分布，不是样本本身，因此多一个少一个样本，对分布的估算也差不了多少。），根据$$Y=G(X,\theta)$$计算对应的$$y_1,y_2,\dots,y_M$$，然后根据公式可以计算：
 
@@ -118,6 +140,10 @@ http://www.jianshu.com/p/e2d2d7cbbe49
 https://mp.weixin.qq.com/s/YnOF9CCUFvtaiTY8HXYOuw
 
 深入浅出：GAN原理与应用入门介绍
+
+http://blog.csdn.net/u011534057/article/category/6396518
+
+GAN系列blog
 
 http://mp.weixin.qq.com/s/bzwG0QxnP2drqS4RwcZlBg
 
@@ -250,38 +276,4 @@ https://mp.weixin.qq.com/s/N7YU-YeXiVX7gSB-mzYgnw
 https://mp.weixin.qq.com/s/gDzti2DISq_cwGbP5T7ICQ
 
 聊聊对抗自编码器
-
-# fine-tuning
-
-fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
-
-举个例子，假设今天老板给你一个新的数据集，让你做一下图片分类，这个数据集是关于Flowers的。问题是，数据集中flower的类别很少，数据集中的数据也不多，你发现从零训练开始训练CNN的效果很差，很容易过拟合。怎么办呢，于是你想到了使用Transfer Learning，用别人已经训练好的Imagenet的模型来做。
-
-由于ImageNet数以百万计带标签的训练集数据，使得如CaffeNet之类的预训练的模型具有非常强大的泛化能力，这些预训练的模型的中间层包含非常多一般性的视觉元素，我们只需要对他的后几层进行微调，再应用到我们的数据上，通常就可以得到非常好的结果。最重要的是，**在目标任务上达到很高performance所需要的数据的量相对很少**。
-
-虽然从理论角度尚无法完全解释fine-tuning的原理，但是还是可以给出一些直观的解释。我们知道，CNN越靠近输入端，其抽取的图像特征越原始。比如最初的一层通常只能抽取一些线条之类的元素。越上层，其特征越抽象。
-
-而现实的图像无论多么复杂，总是由简单特征拼凑而成的。因此，无论最终的分类结果差异如何巨大，其底层的图像特征却几乎一致。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/22624331
-
-fine-tuning:利用已有模型训练其他数据集
-
-http://www.cnblogs.com/louyihang-loves-baiyan/p/5038758.html
-
-Caffe fine-tuning微调网络
-
-http://blog.csdn.net/sinat_26917383/article/details/54999868
-
-caffe中fine-tuning模型三重天（函数详解、框架简述）+微调技巧
-
-http://yongyuan.name/blog/layer-selection-and-finetune-for-cbir.html
-
-图像检索：layer选择与fine-tuning性能提升验证
-
-h1ttps://www.zhihu.com/question/49534423
-
-迁移学习与fine-tuning有什么区别？
 

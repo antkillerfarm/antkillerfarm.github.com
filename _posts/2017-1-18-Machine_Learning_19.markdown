@@ -1,10 +1,129 @@
 ---
 layout: post
-title:  机器学习（十九）——PageRank算法
+title:  机器学习（十九）——关联规则挖掘
 category: theory 
 ---
 
-# 关联规则挖掘（续）
+XGBoost的步骤：
+
+I. 对loss function进行二阶Taylor Expansion，展开以后的形式里，当前待学习的Tree是变量，需要进行优化求解。
+
+II. Tree的优化过程，包括两个环节：
+
+I). 枚举每个叶结点上的特征潜在的分裂点
+
+II). 对每个潜在的分裂点，计算如果以这个分裂点对叶结点进行分割以后，分割前和分割后的loss function的变化情况。
+
+因为Loss Function满足累积性(对MLE取log的好处)，并且每个叶结点对应的weight的求取是独立于其他叶结点的（只跟落在这个叶结点上的样本有关），所以，不同叶结点上的loss function满足单调累加性，只要保证每个叶结点上的样本累积loss function最小化，整体样本集的loss function也就最小化了。
+
+**可见，XGBoost算法之所以能够并行，其要害在于其中枚举分裂点的计算，是能够分布式并行计算的。**
+
+官网：
+
+https://xgboost.readthedocs.io/en/latest/
+
+GitHub：
+
+https://github.com/dmlc/xgboost
+
+编译：
+
+{% highlight java %}
+git clone --recursive https://github.com/dmlc/xgboost
+cd xgboost; make -j4
+{% endhighlight %}
+
+## 参考
+
+https://www.zhihu.com/question/41354392
+
+机器学习算法中GBDT和XGBOOST的区别有哪些？
+
+http://blog.csdn.net/sb19931201/article/details/52577592
+
+xgboost入门与实战
+
+https://mp.weixin.qq.com/s/XnMXXFEBPXnEUk3jdMMoXA
+
+从决策树到随机森林：树型算法的原理与实现
+
+https://mp.weixin.qq.com/s/NcBGYtgiWa0uY48wnFOoVg
+
+机器学习之决策树算法
+
+https://zhuanlan.zhihu.com/p/22852262
+
+经典决策树，条件推断树，随机森林，SVM的R实现
+
+https://mp.weixin.qq.com/s/x06axCC1ZTgezqEYjjNIsw
+
+Xgboost初见面
+
+# 关联规则挖掘
+
+## 基本概念
+
+关联规则挖掘（Association rule mining）是机器学习的一个子领域。它最早的案例就是以下的**尿布和啤酒**的故事：
+
+>沃尔玛曾今对数据仓库中一年多的原始交易数据进行了详细的分析，发现与尿布一起被购买最多的商品竟然是啤酒。   
+>借助数据仓库和关联规则，发现了这个隐藏在背后的事实：**美国妇女经常会嘱咐丈夫下班后为孩子买尿布，而30%~40%的丈夫在买完尿布之后又要顺便购买自己爱喝的啤酒。**   
+>根据这个发现，沃尔玛调整了货架的位置，把尿布和啤酒放在一起销售，大大增加了销量。
+
+这里借用一个引例来介绍关联规则挖掘的基本概念。
+
+| 交易号TID | 顾客购买的商品 | 交易号TID | 顾客购买的商品 |
+|:--:|:--|:--:|:--|
+| T1 | bread, cream, milk, tea | T6 | bread, tea |
+| T2 | bread, cream, milk | T7 | beer, milk, tea |
+| T3 | cake, milk | T8 | bread, tea |
+| T4 | milk, tea | T9 | bread, cream, milk, tea |
+| T5 | bread, cake, milk | T10 | bread, milk, tea |
+
+**定义一**：设$$I=\{i_1,i_2,\dots,i_m\}$$，是m个不同的项目的集合，每个$$i_k$$称为一个**项目**。项目的集合I称为**项集**。其元素的个数称为项集的长度，长度为k的项集称为k-项集。引例中每个商品就是一个项目，项集为$$I=\{bread, beer, cake,cream, milk, tea\}$$，I的长度为6。
+
+**定义二**：每笔**交易T**是项集I的一个子集。对应每一个交易有一个唯一标识交易号，记作TID。交易全体构成了**交易数据库D**，$$\vert D\vert$$等于D中交易的个数。引例中包含10笔交易，因此$$\vert D\vert=10$$。
+
+**定义三**：对于项集X，设定$$count(X\subseteq T)$$为交易集D中包含X的交易的数量，则项集X的**支持度**为：
+
+$$support(X)=\frac{count(X\subseteq T)}{|D|}$$
+
+引例中$$X=\{bread, milk\}$$出现在T1，T2，T5，T9和T10中，所以支持度为0.5。
+
+**定义四**：**最小支持度**是项集的最小支持阀值，记为$$SUP_{min}$$，代表了用户关心的关联规则的最低重要性。支持度不小于$$SUP_{min}$$的项集称为频繁集，长度为k的频繁集称为k-频繁集。如果设定$$SUP_{min}$$为0.3，引例中$$\{bread, milk\}$$的支持度是0.5，所以是2-频繁集。
+
+**定义五**：**关联规则**是一个蕴含式：
+
+$$R：X\Rightarrow Y$$
+
+其中$$X\subset I$$，$$Y\subset I$$，并且$$X\cap Y=\varnothing$$。表示项集X在某一交易中出现，则导致Y以某一概率也会出现。用户关心的关联规则，可以用两个标准来衡量：支持度和可信度。
+
+**定义六**：关联规则R的**支持度**是交易集同时包含X和Y的交易数与$$\vert D\vert$$之比。即：
+
+$$support(X\Rightarrow Y)=\frac{count(X\cap Y)}{|D|}$$
+
+支持度反映了X、Y同时出现的概率。关联规则的支持度等于频繁集的支持度。
+
+**定义七**：对于关联规则R，**可信度**是指包含X和Y的交易数与包含X的交易数之比。即：
+
+$$confidence(X\Rightarrow Y)=\frac{support(X\Rightarrow Y)}{support(X)}$$
+
+可信度反映了如果交易中包含X，则交易包含Y的概率。一般来说，只有支持度和可信度较高的关联规则才是用户感兴趣的。
+
+**定义八**：设定关联规则的最小支持度和最小可信度为$$SUP_{min}$$和$$CONF_{min}$$。规则R的支持度和可信度均不小于$$SUP_{min}$$和$$CONF_{min}$$，则称为**强关联规则**。关联规则挖掘的目的就是找出强关联规则，从而指导商家的决策。
+
+这八个定义包含了关联规则相关的几个重要基本概念，关联规则挖掘主要有两个问题：
+
+1.找出交易数据库中所有大于或等于用户指定的最小支持度的频繁项集。
+
+2.利用频繁项集生成所需要的关联规则，根据用户设定的最小可信度筛选出强关联规则。
+
+其中，步骤1是关联规则挖掘算法的难点，下文介绍的Apriori算法和FP-growth算法，都是解决步骤1问题的算法。
+
+参考：
+
+http://blog.csdn.net/OpenNaive/article/details/7047823
+
+关联规则挖掘（一）：基本概念
 
 ## Apriori算法
 
@@ -81,139 +200,5 @@ $$support(买游戏光碟\to 买影片光碟)=4000/10000=40\%$$
 $$confidence(买游戏光碟\to 买影片光碟)=4000/6000=66\%$$
 
 这条规则的支持度和自信度都满足要求，因此我们很兴奋，我们找到了一条强规则，于是我们建议超市把影片光碟和游戏光碟放在一起，可以提高销量。
-
-可是我们想想，一个喜欢的玩游戏的人会有时间看影片么，这个规则是不是有问题，事实上这条规则误导了我们。在整个数据集中买影片光碟的概率p(买影片)=7500/10000=75%，而买游戏的人也买影片的概率只有66%，66%<75%恰恰说明了买游戏光碟抑制了影片光碟的购买，也就是说买了游戏光碟的人更倾向于不买影片光碟，这才是符合现实的。
-
-从上面的例子我们看到，支持度和自信度并不总能成功滤掉那些我们不感兴趣的规则，因此我们需要一些新的评价标准，下面介绍几种评价标准：
-
-### 相关性系数
-
-相关性系数的英文名是Lift，这就是一个单词，而不是缩写。
-
-$$\mathrm{lift}(X\Rightarrow Y) = \frac{ \mathrm{supp}(X \cup Y)}{ \mathrm{supp}(X) \times \mathrm{supp}(Y) }$$
-
-$$\mathrm{lift}(X\Rightarrow Y)\begin{cases}
->1, & 正相关 \\
-=1, & 独立 \\
-<1, & 负相关 \\
-\end{cases}$$
-
-实际运用中，正相关和负相关都是我们需要关注的，而独立往往是我们不需要的。显然：
-
-$$\mathrm{lift}(X\Rightarrow Y)=\mathrm{lift}(Y\Rightarrow X)$$
-
-### 确信度
-
-Conviction的定义如下：
-
-$$\mathrm{conv}(X\Rightarrow Y) =\frac{ 1 - \mathrm{supp}(Y) }{ 1 - \mathrm{conf}(X\Rightarrow Y)}$$
-
-它的值越大，表明X、Y的独立性越小。
-
-### 卡方系数
-
-卡方系数是与卡方分布有关的一个指标。参见：
-
-https://en.wikipedia.org/wiki/Chi-squared_distribution
-
-$$\chi^2 = \sum_{i=1}^n \frac{(O_i - E_i)^2}{E_i}$$
-
->注：上式最早是Pearson给出的。
-
-公式中的$$O_i$$表示数据的实际值，$$E_i$$表示期望值，不理解没关系，我们看一个例子就明白了。
-
-| 表2 | 买游戏 | 不买游戏 | 行总计 |
-|:--:|:--|:--:|:--|
-| 买影片 | 4000(4500) | 3500(3000) | 7500 |
-| 不买影片 | 2000(1500) | 500(1000) | 2500 |
-| 列总计 | 6000 | 4000 | 10000 |
-
-表2的括号中表示的是期望值。以第1行第1列的4500为例，其计算方法为：7500×6000/10000。
-
-经计算可得表2的卡方系数为555.6。基于置信水平和自由度$$(r-1)*(c-1)=(行数-1)*(列数-1)=1$$，查表得到自信度为(1-0.001)的值为6.63。
-
-555.6>6.63，因此拒绝A、B独立的假设，即认为A、B是相关的，而$$E(买影片，买游戏)=4500>4000$$,因此认为A、B呈负相关。
-
-### 全自信度
-
-$$all\_confidence(A,B)=\frac{P(A\cap B)}{max\{P(A),P(B)\}}\\=min\{P(B|A),P(A|B)\}=min\{confidence(A\to B),confidence(B\to A)\}$$
-
-### 最大自信度
-
-$$max\_confidence(A,B)=max\{confidence(A\to B),confidence(B\to A)\}$$
-
-### Kulc
-
-$$kulc(A,B)=\frac{confidence(A\to B)+confidence(B\to A)}{2}$$
-
-### cosine距离
-
-$$cosine(A,B)=\frac{P(A\cap B)}{sqrt(P(A)*P(B))}=sqrt(P(A|B)*P(B|A))\\=sqrt(confidence(A\to B)*confidence(B\to A))$$
-
-### Leverage
-
-$$Leverage(A,B) = P(A\cap B)-P(A)P(B)$$
-
-### 不平衡因子
-
-imbalance ratio的定义：
-
-$$IR(A,B)=\frac{|support(A)-support(B)|}{(support(A)+support(B)-support(A\cap B))}$$
-
-全自信度、最大自信度、Kulc、cosine，Leverage是不受空值影响的，这在处理大数据集是优势更加明显，因为大数据中空记录更多，根据分析我们推荐使用kulc准则和不平衡因子结合的方法。
-
-参考：
-
-http://www.cnblogs.com/fengfenggirl/p/associate_measure.html
-
-# PageRank算法
-
-## 概述
-
-在PageRank提出之前，已经有研究者提出利用网页的入链数量来进行链接分析计算，这种入链方法假设一个网页的入链越多，则该网页越重要。早期的很多搜索引擎也采纳了入链数量作为链接分析方法，对于搜索引擎效果提升也有较明显的效果。 PageRank除了考虑到入链数量的影响，还参考了网页质量因素，两者相结合获得了更好的网页重要性评价标准。
-
-对于某个互联网网页A来说，该网页PageRank的计算基于以下两个基本假设： 
-
-**数量假设**：在Web图模型中，如果一个页面节点接收到的其他网页指向的入链数量越多，那么这个页面越重要。
-
-**质量假设**：指向页面A的入链质量不同，质量高的页面会通过链接向其他页面传递更多的权重。所以越是质量高的页面指向页面A，则页面A越重要。
-
-利用以上两个假设，PageRank算法刚开始赋予每个网页相同的重要性得分，通过迭代递归计算来更新每个页面节点的PageRank得分，直到得分稳定为止。 PageRank计算得出的结果是网页的重要性评价，这和用户输入的查询是没有任何关系的，即算法是主题无关的。
-
-**优点**：
-
-这是一个与查询无关的静态算法，所有网页的PageRank值通过离线计算获得；有效减少在线查询时的计算量，极大降低了查询响应时间。
-
-**缺点**：
-
-1）人们的查询具有主题特征，PageRank忽略了主题相关性，导致结果的相关性和主题性降低
-
-2）旧的页面等级会比新页面高。因为即使是非常好的新页面也不会有很多上游链接，除非它是某个站点的子站点。
-
-## 马尔可夫链
-
-Markov链的基本定义参见《机器学习（十六）》。
-
-这里补充一些定义：
-
-**定义1**：设C为状态空间的一个子集，如果从C内任一状态i不能到C外的任何状态，则称C为**闭集**。除了整个状态空间之外，没有别的闭集的Markov链被称为**不可约的**。
-
-如果用状态转移图表示Markov链的话，上面的定义表征了Markov链的**连通性**。
-
-**定义2**：如果有正整数d，只有当$$n=d,2d,\dots$$时，$$P_{ii}^{(n)}>0$$，或者说当n不能被d整除时，$$P_{ii}^{(n)}=0$$，则称i状态为**周期性状态**。如果除了$$d=1$$之外，使$$P_{ii}^{(n)}>0$$的各n值没有公约数，则称该状态i为**非周期性状态**。
-
-这个定义表征了Markov链各状态的**独立性**。
-
-**定义3**：
-
-$$f_{ij}^{(n)}=P(X_{m+v}\neq j,X_{m+n}=j|X_m=i)$$
-
-其中，$$n>1,1\le v\le n-1$$。
-
-上式表示由i出发，首次到达j的概率，也叫**首中概率**。
-
-相应的还有**最终概率**：
-
-$$f_{ij}=\sum_{n=1}^\infty f_{ij}^{(n)}$$
 
 

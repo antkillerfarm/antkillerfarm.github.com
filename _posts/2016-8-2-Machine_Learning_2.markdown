@@ -4,7 +4,25 @@ title:  机器学习（二）——广义线性模型, 生成学习算法
 category: theory 
 ---
 
-## 逻辑回归(续)
+# 分类与逻辑回归
+
+## 二分类
+
+结果集y的取值只有0和1的分类问题被称为二分类，其中0被称为negative class，1被称为positive class，也可用“-”和“+”来表示。
+
+## 逻辑回归
+
+为了将线性回归的结果约束到$$[0,1]$$区间，我们将公式1修改为：
+
+$$h_\theta(x)=g(\theta^Tx)=\frac{1}{1+e^{-\theta^Tx}} \tag{6}$$
+
+公式6又被称为logistic function或sigmoid function。函数$$g(z)$$的图像如下所示：
+
+![](/images/article/sigmoid_function.png)
+
+事实上，任何$$[0,1]$$区间的平滑增函数，都可以作为$$g(z)$$，但公式6的好处在于
+
+$$g'(z)=\frac{1}{(1+e^{-z})^2}e^{-z}=\frac{1}{(1+e^{-z})}\left(1-\frac{1}{(1+e^{-z})}\right)=g(z)(1-g(z))\tag{7}$$
 
 评估逻辑回归（Logistic regression）的质量，需要用到最大似然估计（maximum likelihood estimator）方法（由Ronald Aylmer Fisher提出）。最大似然估计是在“模型已定，参数未知”的情况下，寻找使模型出现的概率最大的参数集$$\theta$$的方法。显然，参数集$$\theta$$所确定的模型，其出现概率越大，模型的准确度越高。
 
@@ -191,16 +209,3 @@ INTRODUCTION TO GENERALIZED LINEAR MODELS
 比如说，要确定一只羊是山羊还是绵羊。从历史数据中学习到模型，然后通过提取这只羊的特征，来预测出这只羊是山羊还是绵羊。这种方法叫做判别学习算法（DLA，Discriminative Learning Algorithm）。其形式化的写法是：$$p(y\vert x)$$。
 
 换一种思路，我们可以根据山羊的特征首先学习出一个山羊模型，然后根据绵羊的特征学习出一个绵羊模型。然后从这只羊中提取特征，放到山羊模型中看概率是多少，再放到绵羊模型中看概率是多少，哪个大就是哪个。这种方法叫做生成学习算法（GLA，Generative Learning Algorithms）。其形式化的写法是：建立模型——$$p(x\vert y)$$，应用模型——$$p(y)$$。
-
-由贝叶斯（Bayes）公式可知：
-
-$$p(y\vert x)=\frac{p(x\vert y)p(y)}{p(x\vert y=1)p(y=1)+p(x\vert y=0)p(y=0)}=\frac{p(x\vert y)p(y)}{p(x)} \tag{6}$$
-
-其中，$$p(x\vert y)$$称为后验概率，$$p(y)$$称为先验概率。
-
->注：Thomas Bayes，1701~1761，英国统计学家。
-
-由于我们关注的是y的离散值结果中哪个概率大（比如山羊概率和绵羊概率哪个大），而并不是关心具体的概率，因此公式6可改写为：
-
-$$\arg\max_yp(y\vert x)=\arg\max_y\frac{p(x\vert y)p(y)}{p(x)}=\arg\max_yp(x\vert y)p(y) \tag{7}$$
-

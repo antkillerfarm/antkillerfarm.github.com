@@ -1,12 +1,68 @@
 ---
 layout: post
-title:  深度学习（九）——SPPNet
+title:  深度学习（九）——SPPNet, Fast R-CNN
 category: theory 
 ---
 
-# RCNN
+# RCNN（续）
 
-## 非极大值抑制（NMS）（续）
+## Selective Search
+
+论文：
+
+https://www.koen.me/research/pub/uijlings-ijcv2013-draft.pdf
+
+Selective Search for Object Recognition
+
+Selective Search的主要思想:
+
+**Step 1**：使用一种过分割手段，将图像分割成小区域 (1k~2k个)。
+
+这里的步骤实际上并不简单，可参考论文：
+
+《Efficient Graph-Based Image Segmentation》
+
+中文版：
+
+http://blog.csdn.net/surgewong/article/details/39008861
+
+**Step 2**：查看现有小区域，按照合并规则合并可能性最高的相邻两个区域。重复直到整张图像合并成一个区域位置。
+
+**Step 3**：输出所有曾经存在过的区域，所谓候选区域。
+
+其中合并规则如下：优先合并以下四种区域：
+
+1.颜色（颜色直方图）相近的。
+
+2.纹理（梯度直方图）相近的。
+
+3.合并后总面积小的：保证合并操作的尺度较为均匀，避免一个大区域陆续“吃掉”其他小区域（例：设有区域a-b-c-d-e-f-g-h。较好的合并方式是：ab-cd-ef-gh -> abcd-efgh -> abcdefgh。不好的合并方法是：ab-c-d-e-f-g-h ->abcd-e-f-g-h ->abcdef-gh -> abcdefgh）
+
+4.合并后，总面积在其bounding box中所占比例大的：保证合并后形状规则。
+
+Step2和Step3可参考论文：
+
+《Selective Search for Object Recognition》
+
+中文版：
+
+http://blog.csdn.net/surgewong/article/details/39316931
+
+http://blog.csdn.net/charwing/article/details/27180421
+
+![](/images/article/rcnn_3.png)
+
+上图中的那些方框，就是bounding box。
+
+一般使用IOU（Intersection over Union，交并比）指标，来衡量两个bounding box的重叠度：
+
+$$IOU(A,B)=\frac{A \cap B}{A \cup B}$$
+
+## 非极大值抑制（NMS）
+
+RCNN会从一张图片中找出n个可能是物体的矩形框，然后为每个矩形框为做类别分类概率（如上图所示）。我们需要判别哪些矩形框是没用的。
+
+Non-Maximum Suppression顾名思义就是抑制不是极大值的元素，搜索局部的极大值。这个局部代表的是一个邻域，邻域有两个参数可变，一是邻域的维数，二是邻域的大小。
 
 下面举例说明NMS的做法：
 
@@ -24,6 +80,10 @@ category: theory
 
 如果用selective search挑选出来的候选框与物体的人工标注矩形框的重叠区域IoU大于0.5，那么我们就把这个候选框标注成物体类别（正样本），否则我们就把它当做背景类别（负样本）。
 
+## 总结
+
+![](/images/article/rcnn_p.png)
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/23006190
@@ -34,25 +94,13 @@ http://www.cnblogs.com/edwardbi/p/5647522.html
 
 Tensorflow tflearn编写RCNN
 
-https://zhuanlan.zhihu.com/p/24780395
+http://blog.csdn.net/u011534057/article/category/6178027
 
-Fast R-CNN
+RCNN系列blog
 
 https://zhuanlan.zhihu.com/p/24916624
 
 Faster R-CNN
-
-https://zhuanlan.zhihu.com/p/24916786
-
-图解YOLO
-
-https://zhuanlan.zhihu.com/p/24954433
-
-SSD
-
-https://zhuanlan.zhihu.com/p/25167153
-
-YOLO2
 
 https://www.zhihu.com/question/35887527
 
@@ -65,10 +113,6 @@ http://blog.csdn.net/tangwei2014/article/details/50915317
 http://blog.csdn.net/shenxiaolu1984/article/details/51066975
 
 RCNN算法详解
-
-http://blog.csdn.net/shenxiaolu1984/article/details/51036677
-
-Fast RCNN算法详解
 
 http://blog.csdn.net/shenxiaolu1984/article/details/51152614
 
@@ -152,7 +196,11 @@ SPPNet的核心思想如上图所示：在feature map上提取ROI特征，这样
 
 **Step 1**：为图像建立不同尺度的图像金字塔。上图为3层。
 
-**Step 2**：
+**Step 2**：将图像金字塔中包含的feature映射到固定尺寸的向量中。上图为$$(16+4+1)\times 256$$维向量。
+
+总结：
+
+![](/images/article/spp_p.png)
 
 参考：
 
@@ -160,37 +208,17 @@ https://zhuanlan.zhihu.com/p/24774302
 
 SPPNet-引入空间金字塔池化改进RCNN
 
-## YOLO
+# Fast R-CNN
 
-YOLO: Real-Time Object Detection，是一个基于神经网络的实时对象检测软件。
 
-官网：
-
-https://pjreddie.com/darknet/yolo/
 
 参考：
 
-https://mp.weixin.qq.com/s/n51XtGAsaDDAatXYychXrg
+https://zhuanlan.zhihu.com/p/24780395
 
-YOLO比R-CNN快1000倍，比Fast R-CNN快100倍的实时对象检测！
+Fast R-CNN
 
-## SSD
+http://blog.csdn.net/shenxiaolu1984/article/details/51036677
 
-论文：
-
-《SSD: Single Shot MultiBox Detector》
-
-参考：
-
-http://www.jianshu.com/p/ebebfcd274e6
-
-Caffe-SSD 训练自己的数据集教程
-
-## ENet
-
-https://github.com/TimoSaemann/ENet
-
-《ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation》
-
-http://blog.csdn.net/zijinxuxu/article/details/67638290
+Fast RCNN算法详解
 

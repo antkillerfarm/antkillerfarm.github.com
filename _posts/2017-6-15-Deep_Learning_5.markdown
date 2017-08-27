@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（五）——DRN, Bi-directional RNN, Attention, seq2seq, DMN, CNN进化史
+title:  深度学习（五）——DRN, Bi-directional RNN, Attention, seq2seq, DMN
 category: theory 
 ---
 
@@ -246,33 +246,4 @@ DMN可进行端到端的训练，并在多种任务上取得了state-of-the-art�
 http://blog.csdn.net/javafreely/article/details/71994247
 
 动态记忆网络
-
-# CNN进化史
-
-## 计算机视觉
-
-![](/images/article/computer_vision.jpg)
-
-6大关键技术：
-
-![](/images/article/computer_vision_2.jpg)
-
-**图像分类**：根据图像的主要内容进行分类。数据集：MNIST, CIFAR, ImageNet
-
-**物体定位**：预测包含主要物体的图像区域，以便识别区域中的物体。数据集：ImageNet
-
-**物体识别**：定位并分类图像中出现的所有物体。这一过程通常包括：划出区域然后对其中的物体进行分类。数据集：PASCAL, COCO
-
-**语义分割**：把图像中的每一个像素分到其所属物体类别，在样例中如人类、绵羊和草地。数据集：PASCAL, COCO
-
-**实例分割**：把图像中的每一个像素分到其所属物体实例。数据集：PASCAL, COCO
-
-**关键点检测**：检测物体上一组预定义关键点的位置，例如人体上或者人脸上的关键点。数据集：COCO
-
-## CNN简史
-
-![](/images/article/computer_vision_3.jpg)
-
-![](/images/article/CNN_3.png)
-
 

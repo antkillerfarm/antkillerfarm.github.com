@@ -1,8 +1,118 @@
 ---
 layout: post
-title:  机器学习（十八）——决策树, 关联规则挖掘
+title:  机器学习（十八）——推荐系统进阶, 决策树
 category: theory 
 ---
+
+## LDA（续）
+
+LDA模型的目标有两个：
+
+**训练模型**：估计模型中的参数：$$\overrightarrow{\varphi}_1, \cdots, \overrightarrow{\varphi}_K$$和$$\overrightarrow{\theta}_1, \cdots, \overrightarrow{\theta}_M$$。
+
+由于参数$$\overrightarrow{\theta}_m$$是和训练语料中的每篇文档相关的，对于我们理解新的文档并无用处，所以工程上最终存储LDA模型时，一般没有必要保留。
+
+这一步实际上是一个**聚类**的过程。
+
+**使用模型**：对于新来的一篇文档$$doc_{new}$$，我们能够计算这篇文档的topic分布$$\overrightarrow{\theta}_{new}$$。
+
+从最终给出的算法可以看出，虽然LDA用到了MCMC和Gibbs Sampling算法，但最终目的并不是生成符合相应分布的随机数，而是求出模型参数$$\overrightarrow{\varphi}$$的值，并用于预测。
+
+这一步实际上是一个**分类**的过程。可见，LDA不仅可用于聚类，也可用于分类，是一种无监督的学习算法。
+
+## 如何确定LDA的topic个数
+
+这个问题上，业界最常用的指标包括Perplexity，MPI-score等。简单的说就是Perplexity越小，且topic个数越少越好。
+
+从模型的角度解决主题个数的话，可以在LDA的基础上融入嵌套中餐馆过程(nested Chinese Restaurant Process)，印度自助餐厅过程(Indian Buffet Process)等。因此就诞生了这样一些主题模型：
+
+1. hierarchical Latent Dirichlet Allocation (hLDA)  (2003_NIPS_Hierarchical topic models and the nested Chinese restaurant process)
+
+2. hierarchical Dirichlet process (HDP)  (2006_NIPS_Hierarchical dirichlet processes)
+
+3. Indian Buffet Process Compound Dirichlet Process (ICD)  (2010_ICML_The IBP compound Dirichlet process and its application to focused topic modeling)
+
+4. Non-parametric Topic Over Time (npTOT)  (2013_SDM_A nonparametric mixture model for topic modeling over time)
+
+5. collapsed Gibbs Samplingalgorithm for the Dirichlet Multinomial Mixture Model (GSDMM)  (2014_SIGKDD_A Dirichlet Multinomial Mixture Model-based Approach for Short Text Clustering)
+
+这些主题模型都被叫做非参数主题模型(Non-parametric Topic Model)，最初可追溯到David M. Blei于2003年提出hLDA那篇文章(2003_NIPS_Hierarchical topic models and the nested Chinese restaurant process)。非参数主题模型是基于贝叶斯概率的与参数无关的主题模型。这里的参数无关主要是指模型本身可以“**随着观测数据的增长而相应调整**”，即主题模型的主题个数能够随着文档数目的变化而相应调整，无需事先人为指定。
+
+参考：
+
+https://www.zhihu.com/question/32286630
+
+怎么确定LDA的topic个数？
+
+http://blog.csdn.net/luo123n/article/details/48902815
+
+Perplexity详解
+
+## LDA漫游指南
+
+除了rickjin的《LDA数学八卦》之外，马晨写的《LDA漫游指南》也是这方面的中文新作。
+
+该书的数学推导部分主要沿用rickjin的内容，但加入了Blei提出的变分贝叶斯方法。此外，还对LDA的代码实现、并行计算和大数据处理进行了深入的讨论。
+
+## 参考
+
+http://www.arbylon.net/publications/text-est.pdf
+
+《Parameter estimation for text analysis》，Gregor Heinrich著
+
+http://www.inference.phy.cam.ac.uk/itprnn/book.pdf
+
+《Information Theory, Inference, and Learning Algorithms》，David J.C. MacKay著
+
+关于MCMC和Gibbs Sampling的更多的内容，可参考《Neural Networks and Learning Machines》，Simon Haykin著。该书有中文版。
+
+>注：Sir David John Cameron MacKay，1967～2016，加州理工学院博士，导师John Hopfield，剑桥大学教授。英国能源与气候变化部首席科学顾问，英国皇家学会会员。在机器学习领域和可持续能源领域有重大贡献。
+
+>Simon Haykin，英国伯明翰大学博士，加拿大McMaster University教授。初为雷达和信号处理专家，80年代中后期，转而从事神经计算方面的工作。加拿大皇家学会会员。
+
+http://www.cs.cmu.edu/~epxing/Class/10708-14/lectures/lecture17-MCMC.pdf
+
+http://max.book118.com/html/2015/0513/16864294.shtm
+
+基于LDA分析的词聚类算法
+
+http://www.doc88.com/p-9159009103987.html
+
+基于LDA的博客分类算法
+
+http://blog.csdn.net/sinat_26917383/article/details/52095013
+
+基于LDA的Topic Model变形+一些NLP开源项目
+
+# 推荐系统进阶
+
+除了《机器学习（十三～十五）》提及的ALS和PCA之外，相关的算法还包括：
+
+# FM：Factorization Machines
+
+Factorization Machines是Steffen Rendle于2010年提出的算法。
+
+>注：Steffen Rendle，弗赖堡大学博士，现为Google研究员。libFM的作者，被誉为推荐系统的新星。
+
+FM算法实际上是一大类与矩阵分解有关的算法的广义模型。
+
+参考文献1是Rendle本人的论文，其中有章节证明了SVD++、PITF、FPMC等算法，都是FM算法的特例。《机器学习（十四）》中提到的ALS算法，也是FM的特例。
+
+参考文献2是国人写的中文说明，相对浅显一些。
+
+参考：
+
+1.https://www.ismll.uni-hildesheim.de/pub/pdfs/Rendle2010FM.pdf
+
+2.http://blog.csdn.net/itplus/article/details/40534885
+
+# PITF
+
+配对互动张量分解（Pairwise Interaction Tensor Factorization）算法，也是最早由Rendle引入推荐系统领域的。
+
+论文：
+
+http://www.wsdm-conference.org/2010/proceedings/docs/p81.pdf
 
 # 决策树
 
@@ -111,123 +221,3 @@ https://arxiv.org/pdf/1603.02754v3.pdf
 
 GBDT的求解算法，具体到每颗树来说，其实就是不断地寻找分割点(split point)，将样本集进行分割，初始情况下，所有样本都处于一个结点（即根结点），随着树的分裂过程的展开，样本会分配到分裂开的子结点上。分割点的选择通过枚举训练样本集上的特征值来完成，分割点的选择依据则是减少Loss。
 
-XGBoost的步骤：
-
-I. 对loss function进行二阶Taylor Expansion，展开以后的形式里，当前待学习的Tree是变量，需要进行优化求解。
-
-II. Tree的优化过程，包括两个环节：
-
-I). 枚举每个叶结点上的特征潜在的分裂点
-
-II). 对每个潜在的分裂点，计算如果以这个分裂点对叶结点进行分割以后，分割前和分割后的loss function的变化情况。
-
-因为Loss Function满足累积性(对MLE取log的好处)，并且每个叶结点对应的weight的求取是独立于其他叶结点的（只跟落在这个叶结点上的样本有关），所以，不同叶结点上的loss function满足单调累加性，只要保证每个叶结点上的样本累积loss function最小化，整体样本集的loss function也就最小化了。
-
-**可见，XGBoost算法之所以能够并行，其要害在于其中枚举分裂点的计算，是能够分布式并行计算的。**
-
-官网：
-
-https://xgboost.readthedocs.io/en/latest/
-
-GitHub：
-
-https://github.com/dmlc/xgboost
-
-编译：
-
-{% highlight java %}
-git clone --recursive https://github.com/dmlc/xgboost
-cd xgboost; make -j4
-{% endhighlight %}
-
-## 参考
-
-https://www.zhihu.com/question/41354392
-
-机器学习算法中GBDT和XGBOOST的区别有哪些？
-
-http://blog.csdn.net/sb19931201/article/details/52577592
-
-xgboost入门与实战
-
-https://mp.weixin.qq.com/s/XnMXXFEBPXnEUk3jdMMoXA
-
-从决策树到随机森林：树型算法的原理与实现
-
-https://mp.weixin.qq.com/s/NcBGYtgiWa0uY48wnFOoVg
-
-机器学习之决策树算法
-
-https://zhuanlan.zhihu.com/p/22852262
-
-经典决策树，条件推断树，随机森林，SVM的R实现
-
-https://mp.weixin.qq.com/s/x06axCC1ZTgezqEYjjNIsw
-
-Xgboost初见面
-
-# 关联规则挖掘
-
-## 基本概念
-
-关联规则挖掘（Association rule mining）是机器学习的一个子领域。它最早的案例就是以下的**尿布和啤酒**的故事：
-
->沃尔玛曾今对数据仓库中一年多的原始交易数据进行了详细的分析，发现与尿布一起被购买最多的商品竟然是啤酒。   
->借助数据仓库和关联规则，发现了这个隐藏在背后的事实：**美国妇女经常会嘱咐丈夫下班后为孩子买尿布，而30%~40%的丈夫在买完尿布之后又要顺便购买自己爱喝的啤酒。**   
->根据这个发现，沃尔玛调整了货架的位置，把尿布和啤酒放在一起销售，大大增加了销量。
-
-这里借用一个引例来介绍关联规则挖掘的基本概念。
-
-| 交易号TID | 顾客购买的商品 | 交易号TID | 顾客购买的商品 |
-|:--:|:--|:--:|:--|
-| T1 | bread, cream, milk, tea | T6 | bread, tea |
-| T2 | bread, cream, milk | T7 | beer, milk, tea |
-| T3 | cake, milk | T8 | bread, tea |
-| T4 | milk, tea | T9 | bread, cream, milk, tea |
-| T5 | bread, cake, milk | T10 | bread, milk, tea |
-
-**定义一**：设$$I=\{i_1,i_2,\dots,i_m\}$$，是m个不同的项目的集合，每个$$i_k$$称为一个**项目**。项目的集合I称为**项集**。其元素的个数称为项集的长度，长度为k的项集称为k-项集。引例中每个商品就是一个项目，项集为$$I=\{bread, beer, cake,cream, milk, tea\}$$，I的长度为6。
-
-**定义二**：每笔**交易T**是项集I的一个子集。对应每一个交易有一个唯一标识交易号，记作TID。交易全体构成了**交易数据库D**，$$\vert D\vert$$等于D中交易的个数。引例中包含10笔交易，因此$$\vert D\vert=10$$。
-
-**定义三**：对于项集X，设定$$count(X\subseteq T)$$为交易集D中包含X的交易的数量，则项集X的**支持度**为：
-
-$$support(X)=\frac{count(X\subseteq T)}{|D|}$$
-
-引例中$$X=\{bread, milk\}$$出现在T1，T2，T5，T9和T10中，所以支持度为0.5。
-
-**定义四**：**最小支持度**是项集的最小支持阀值，记为$$SUP_{min}$$，代表了用户关心的关联规则的最低重要性。支持度不小于$$SUP_{min}$$的项集称为频繁集，长度为k的频繁集称为k-频繁集。如果设定$$SUP_{min}$$为0.3，引例中$$\{bread, milk\}$$的支持度是0.5，所以是2-频繁集。
-
-**定义五**：**关联规则**是一个蕴含式：
-
-$$R：X\Rightarrow Y$$
-
-其中$$X\subset I$$，$$Y\subset I$$，并且$$X\cap Y=\varnothing$$。表示项集X在某一交易中出现，则导致Y以某一概率也会出现。用户关心的关联规则，可以用两个标准来衡量：支持度和可信度。
-
-**定义六**：关联规则R的**支持度**是交易集同时包含X和Y的交易数与$$\vert D\vert$$之比。即：
-
-$$support(X\Rightarrow Y)=\frac{count(X\cap Y)}{|D|}$$
-
-支持度反映了X、Y同时出现的概率。关联规则的支持度等于频繁集的支持度。
-
-**定义七**：对于关联规则R，**可信度**是指包含X和Y的交易数与包含X的交易数之比。即：
-
-$$confidence(X\Rightarrow Y)=\frac{support(X\Rightarrow Y)}{support(X)}$$
-
-可信度反映了如果交易中包含X，则交易包含Y的概率。一般来说，只有支持度和可信度较高的关联规则才是用户感兴趣的。
-
-**定义八**：设定关联规则的最小支持度和最小可信度为$$SUP_{min}$$和$$CONF_{min}$$。规则R的支持度和可信度均不小于$$SUP_{min}$$和$$CONF_{min}$$，则称为**强关联规则**。关联规则挖掘的目的就是找出强关联规则，从而指导商家的决策。
-
-这八个定义包含了关联规则相关的几个重要基本概念，关联规则挖掘主要有两个问题：
-
-1.找出交易数据库中所有大于或等于用户指定的最小支持度的频繁项集。
-
-2.利用频繁项集生成所需要的关联规则，根据用户设定的最小可信度筛选出强关联规则。
-
-其中，步骤1是关联规则挖掘算法的难点，下文介绍的Apriori算法和FP-growth算法，都是解决步骤1问题的算法。
-
-参考：
-
-http://blog.csdn.net/OpenNaive/article/details/7047823
-
-关联规则挖掘（一）：基本概念

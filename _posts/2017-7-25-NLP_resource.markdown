@@ -326,4 +326,9 @@ https://mp.weixin.qq.com/s/BWg77FZ2IugBhO_HWHpfHw
 
 深度学习在自然语言处理中的应用综述
 
+https://mp.weixin.qq.com/s/jYUAKyTpm69J6Q34A06E-w
+
+百度提出冷聚变方法：使用语言模型训练Seq2Seq模型
+
+
 

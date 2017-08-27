@@ -228,8 +228,6 @@ http://blog.csdn.net/luo123n/article/details/48574123
 
 PMI（Pointwise Mutual Information）
 
-http://blog.csdn.net/zddblog/article/details/7521424
 
-SIFT算法详解
 
 

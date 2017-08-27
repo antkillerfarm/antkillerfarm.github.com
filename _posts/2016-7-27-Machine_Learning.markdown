@@ -83,6 +83,12 @@ $$
 
 http://blog.csdn.net/dsbatigol/article/details/12558891
 
+梯度（gradient）、雅克比矩阵（Jacobian）、海森矩阵（Hessian）
+
+https://mp.weixin.qq.com/s/_5ta9BuATamhcqyd9v8vEQ
+
+矩阵、向量求导法则全览
+
 ## 梯度下降算法
 
 公式2的求极值问题，实际上就是求驻点（stationary point）的问题，即求$$\nabla(f)=0$$的点的问题。
@@ -226,25 +232,5 @@ $$\omega^{(i)}=\exp\left(-\frac{(x^{(i)}-x)^2}{2\tau^2}\right)$$
 ## 回归分析和相关分析的区别
 
 回归分析是找出x和y之间的关系，而相关分析是找出x的各个分量之间的关系，和y并没有关系。
-
-# 分类与逻辑回归
-
-## 二分类
-
-结果集y的取值只有0和1的分类问题被称为二分类，其中0被称为negative class，1被称为positive class，也可用“-”和“+”来表示。
-
-## 逻辑回归
-
-为了将线性回归的结果约束到$$[0,1]$$区间，我们将公式1修改为：
-
-$$h_\theta(x)=g(\theta^Tx)=\frac{1}{1+e^{-\theta^Tx}} \tag{6}$$
-
-公式6又被称为logistic function或sigmoid function。函数$$g(z)$$的图像如下所示：
-
-![](/images/article/sigmoid_function.png)
-
-事实上，任何$$[0,1]$$区间的平滑增函数，都可以作为$$g(z)$$，但公式6的好处在于
-
-$$g'(z)=\frac{1}{(1+e^{-z})^2}e^{-z}=\frac{1}{(1+e^{-z})}\left(1-\frac{1}{(1+e^{-z})}\right)=g(z)(1-g(z))\tag{7}$$
 
 

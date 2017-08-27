@@ -164,3 +164,28 @@ Ctrl+A Z
 
 Ctrl+A X
 
+# TikZ
+
+安装：
+
+`sudo apt install qtikz`
+
+参考：
+
+http://www.hahack.com/tools/pgftikz-resources/
+
+PGF/TikZ资源汇总
+
+http://www.texample.net/tikz/examples/kalman-filter/
+
+Example: Kalman Filter System Model
+
+http://www.fuzihao.org/blog/2015/08/11/TikZ%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/
+
+TikZ入门教程
+
+http://www.cnblogs.com/wangl393/
+
+一个TikZ的blog
+
+

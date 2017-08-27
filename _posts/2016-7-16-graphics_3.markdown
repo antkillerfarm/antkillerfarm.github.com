@@ -1,8 +1,30 @@
 ---
 layout: post
-title:  图像处理理论（三）——Steerable滤波, Gabor滤波, Schmid滤波, 霍夫变换
+title:  图像处理理论（三）——双边滤波, Steerable滤波, Gabor滤波, Schmid滤波
 category: theory 
 ---
+
+# 双边滤波（Bilateral filter）
+
+双边滤波（Bilateral filter）是一种可以保边去噪的滤波器。其输出像素的值依赖于邻域像素的值的加权组合，即：
+
+$$g(i,j)=\frac{\sum_{k,l}f(k,l)w(i,j,k,l)}{\sum_{k,l}w(i,j,k,l)}$$
+
+也就是：
+
+$$h=\frac{w(i,j,k,l)}{\sum_{k,l}w(i,j,k,l)}$$
+
+其中，
+
+$$w(i,j,k,l)=d(i,j,k,l)\cdot r(i,j,k,l)=\exp\left(-\frac{(i-k)^2+(j-l)^2}{2\sigma_d^2}\right)\cdot \exp\left(-\frac{\|f(i,j)-f(k,l)\|^2}{2\sigma_r^2}\right)$$
+
+这里的$$d(i,j,k,l)$$由于只与定义域有关，通常叫做“定义域核”。实际上，这就是一个高斯滤波核。而$$r(i,j,k,l)$$由于和像素值的差有关（像素差越大，权重越小），也被叫做“值域核”。
+
+从效果来说，双边滤波可产生类似美肤的效果。皮肤上的皱纹和斑，与正常皮肤的差异，远小于黑白眼珠之间的差异，因此前者被平滑，而后者被保留。
+
+为了体现效果，这里来张大叔的照片。
+
+![](/images/article/bilateral_filter.png)
 
 # Steerable滤波
 
@@ -201,48 +223,4 @@ Hough Transform最早是Paul V.C. Hough于1962年在一篇专利中提出的。1
 >Peter E. Hart，斯坦福大学博士。SRI International研究员。
 
 >Dana Harry Ballard，1946年生，UCI博士，德克萨斯大学教授。
-
-![](/images/article/R_theta_line.gif)
-
-如上图所示，一条直线的解析方程在x-y坐标系下是：
-
-$$y=mx+b$$
-
-而在极坐标系下则为：
-
-$$r= x\cos\theta + y\sin\theta$$
-
-上式中包含两个参数$$r,\theta$$，由$$r-\theta$$组成的平面又被称作parameter space或Hough space。
-
-对于一个给定点$$(x_0,y_0)$$我们在$$r-\theta$$平面绘出所有通过它的直线, 将得到一条正弦曲线。如下图所示：
-
-![](/images/article/hough.jpg)
-
-对于同一直线上的三点$$(x_0,y_0),(x_1,y_1),(x_2,y_2)$$，它们在$$r-\theta$$平面上的三条正弦曲线交于一点$$(r,\theta)$$，而这一点正好是该直线在极坐标系下的解析方程的参数值。如下图所示：
-
-![](/images/article/hough_2.jpg)
-
-可以想像，如果该直线上的点更多一些，那么在$$r-\theta$$平面上就有更多的正弦曲线交于一点，最终情况将如下图所示：
-
-![](/images/article/Hough-example-result-en.png)
-
-由此，我们可以总结Hough Transform的一般过程：
-
-1.首先对图片进行边缘化处理。
-
-2.将边缘上的点映射到parameter space中。
-
-3.追踪图像中每个点对应曲线间的交点. 如果交于一点的曲线的数量超过了阈值, 那么可以认为这个交点所代表的参数对在原图像中为一条直线。
-
-上面说的是霍夫线变换，类似的还有霍夫圆变换。只不过圆的参数有三个，即：
-
-$$(x_{center},y_{center},r)$$
-
-高维parameter space的积分，由于运算量比较大，因此又有霍夫梯度法之类的改进算法。
-
-参考：
-
-http://www.cs.jhu.edu/~misha/Fall04/GHT1.pdf
-
-http://blog.csdn.net/poem_qianmo/article/details/26977557
 

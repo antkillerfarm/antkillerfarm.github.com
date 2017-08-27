@@ -1,10 +1,51 @@
 ---
 layout: post
-title:  机器学习（七）——规则化和模型选择
+title:  机器学习（七）——学习理论, 规则化和模型选择
 category: theory 
 ---
 
-## 学习理论的预备知识（续）
+## 学习理论的预备知识
+
+学习理论（learning theory）主要解决三大问题：
+
+1.偏差和方差的权衡。这实际上是模型选择的问题。如何才能自动确定模型的阶数呢？
+
+2.如何关联模型误差和泛化误差？
+
+3.如何确定我们的学习算法是有效的？
+
+首先介绍两个定理：
+
+**The union bound定理**：
+
+如果$$A_1,\dots,A_k$$是k个不同的事件，则：
+
+$$P(A_1\cup \dots\cup A_k)\le P(A_1)+\dots+P(A_k)$$
+
+**Hoeffding不等式**：
+
+$$Z_1,\dots,Z_m$$是m个独立且具有相同分布的随机变量（independent and identically distributed，IID）。如果它们满足Bernoulli($$\phi$$)分布，即$$P(Z_i=1)=\phi,P(Z_i=0)=1-\phi$$，则：
+
+$$P(\lvert\phi-\hat\phi\rvert>\gamma)\le 2\exp(-2\gamma^2m)$$
+
+其中，$$\hat\phi=(1/m)\sum_{i=1}^mZ_i$$，$$\gamma$$是大于0的任意常数。
+
+这个不等式是Wassily Hoeffding于1963年证明的。它表明样本数量越大，则随机变量的平均值越接近其数学期望值。
+
+>注：Wassily Hoeffding，1914~1991，芬兰统计学家，柏林大学博士，无偏统计学（U-statistics）创始人。
+
+这个不等式在统计学领域也叫做Chernoff bound，但实际上是Herman Chernoff的朋友Herman Rubin发现的。他们的关系有点像苹果公司的那两个Steve，都是统计学领域的巨擘。
+
+>注：Herman Chernoff，1923年生，美国数学家、物理学家，布朗大学博士，先后执教于MIT和哈佛。
+
+>Herman Rubin，1926年生，美国数学家，21岁获得芝加哥大学的博士学位。现为普渡大学教授。   
+>Herman Chernoff写过一篇文章回忆他和Herman Rubin的友谊，其中提到后者IQ 180，比他牛多了。其实，Herman Chernoff 24岁获得博士学位，也是妥妥的学霸级人物。
+
+以下假定y的取值为0或1，则：
+
+$$\hat\varepsilon(h)=\frac{1}{m}\sum_{i=1}^m1\{h(x^{(i)})\neq y^{(i)}\}$$
+
+$$\hat\varepsilon(h)$$被称作训练误差（training error），也叫做经验风险（empirical risk）或经验误差（empirical error），它表征的是在训练样本集上，预测函数误分类的比率。
 
 $$\varepsilon(h)=P^{(x,y)~\mathcal{D}}(h(x)\neq y)$$
 
@@ -172,25 +213,4 @@ $$m=O_{\gamma,\delta}(d)$$
 
 这种方法被称为hold-out交叉验证（cross validation），或者称为简单（simple）交叉验证。
 
-由于$$S_{train}$$和$$S_{CV}$$是随机选取的，因此我们可以认为这里的经验误差$$\hat\varepsilon_{S_{CV}}(h_i)$$是$$h_i$$的泛化误差的一个很好的估计值。测试集一般占所有样本数的1/4~1/3，这里的30%是一个典型值。
 
-还可以对模型作改进，当选出最佳的模型$$M_i$$后，再在全部数据S上做一次训练，显然训练数据越多，模型参数越准确。
-
-简单交叉验证方法的缺点在于得到的最佳模型是在70%的训练数据上选出来的，不代表在全部训练数据上是最佳的。还有当训练数据本来就很少时，再分出测试集后，训练数据就太少了。
-
-我们对简单交叉验证方法再做一次改进，如下：
-
->1.将全部训练集S分成k个不相交的子集，假设S中的训练样例个数为m，那么每一个子集有m/k个训练样例，相应的子集称作$$\{S_1,\dots,S_k\}$$。   
->2.每次从模型集合$$\mathcal{M}$$中拿出来一个$$M_i$$，然后在S中选择出k-1个子集$$S_1\cup\dots\cup S_{j-1}\cup S_{j+1}\cup\dots\cup S_k$$，在这个集合上训练$$M_i$$得到预测函数$$h_{ij}$$。在$$S_j$$上测试$$h_{ij}$$，得到相应的经验误差$$\hat\varepsilon_{S_j}(h_{ij})$$。   
->3.使用$$\frac{1}{k}\sum_{j=1}^k\hat\varepsilon_{S_j}(h_{ij})$$作为$$M_i$$泛化误差的估计值。   
->4.选出泛化误差估计值最小的$$M_i$$，在S上重新训练，得到最终的预测函数$$h_i$$。
-
-这个方法被称为k-折叠（k-fold）交叉验证。一般来说k取值为10，这样训练数据稀疏时，基本上也能进行训练，缺点是训练和测试次数过多。
-
-更极端的，如果$$k=m$$，则该方法又被称为leave-one-out交叉验证。
-
-## 特征选择
-
-特征选择（Feature Selection）严格来说也是模型选择中的一种。
-
-假设我们想对维度为n的样本点进行回归，如果，n远远大于训练样例数m，且你认为其中只有很少的特征起关键作用的话，就可以对整个特征集进行特征选择，以减少特征的数量。

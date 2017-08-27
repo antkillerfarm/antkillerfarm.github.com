@@ -4,7 +4,68 @@ title:  机器学习（九）——K-Means算法, 高斯混合模型和EM算法
 category: theory 
 ---
 
-# K-Means算法（续）
+# 在线学习（续）
+
+这个定理是Henry David Block和Albert B. J. Novikoff于1962年提出的。
+
+>注：Henry David Block，1920～1978，美国数学家。   
+>这个人的经历有点非典型。20岁本科毕业，由于专业是文学和心理学，结果找不到工作。只好回炉，又读了个土木工程的本科。   
+>二战期间在Goodyear的飞机工厂（没错，就是那个卖轮胎的Goodyear）担任测试工程师。在那里碰到一个当医生的英国妹子，搞定之。   
+>1946年，他老婆在Iowa State University获得了一个职位，于是他也跟着搬了过去。估计是无所事事，他经常到大学里蹭课，然后就发现自己对数学很感兴趣。   
+>于是继续读书，1949年拿到博士学位。经过几年助教生涯之后，最终成为康奈尔大学应用数学教授。   
+>话说，根据缩写找人真是太痛苦了，很多资料都不是你要找的人，Block又是个大路货。我最后是在他的一位同事的论文中找到他的全名的。那篇论文发表于1985年，距离他去世已经7年，但他仍是作者之一，可见人缘不错。
+
+>Albert B. J. Novikoff，全名不详，只知道是纽约大学教授。从岁数来看应该已经退休了。
+
+下面给出这个定理的证明过程：
+
+由公式3可知，$$\theta$$的值只有在发生预测错误的时候才会改变，因此我们可以使用$$\theta^{(k)}$$表示第k个错误。同时令$$\theta^{{1}}=0$$。
+
+根据更新公式可得：
+
+$$(\theta^{(k+1)})^Tu=(\theta^{(k)})^Tu+y^{(i)}(x^{(i)})^Tu\ge (\theta^{(k)})^Tu+\gamma$$
+
+所以：
+
+$$(\theta^{(2)})^Tu\ge (\theta^{(1)})^Tu+\gamma=\gamma$$
+
+$$(\theta^{(3)})^Tu\ge (\theta^{(2)})^Tu+\gamma\ge 2\gamma$$
+
+由数学归纳法可得：
+
+$$(\theta^{(k+1)})^Tu\ge k\gamma\tag{4}$$
+
+另外，
+
+$$\|\theta^{(k+1)}\|^2=\|\theta^{(k)}+y^{(i)}x^{(i)}\|^2=\|\theta^{(k)}\|^2+\|y^{(i)}x^{(i)}\|^2+2y^{(i)}(x^{(i)})^T\theta^{(k)}$$
+
+由感知器算法的定义可得:
+
+$$y^{(i)}(x^{(i)})^T\theta^{(k)}\le 0$$
+
+所以：
+
+$$\|\theta^{(k+1)}\|^2\le \|\theta^{(k)}\|^2+\|x^{(i)}\|^2\le \|\theta^{(k)}\|^2+D^2$$
+
+同样，由数学归纳法可得：
+
+$$\|\theta^{(k+1)}\|^2\le kD^2\tag{5}$$
+
+因为：
+
+$$(\theta^{(k+1)})^Tu=\|\theta^{(k+1)}\|\cdot\|u\|\cdot \cos\phi\le \|\theta^{(k+1)}\|\cdot\|u\|=\|\theta^{(k+1)}\|\tag{6}$$
+
+由公式4、5、6可得：
+
+$$\sqrt{k}D\ge \|\theta^{(k+1)}\|\ge (\theta^{(k+1)})^Tu\ge k\gamma$$
+
+所以：
+
+$$k\le (D/\gamma)^2$$
+
+# K-Means算法
+
+聚类算法属于无监督学习算法的一种。它的训练样本中只有$$x^{(i)}$$，而没有$$y^{(i)}$$。聚类的目的是找到每个样本x潜在的类别y，并将同类别y的样本x放在一起，形成一个聚类（clusters）。样本$$x^{(i)}$$所属的聚类用$$c^{(i)}$$表示。
 
 K-Means算法的步骤如下:
 
@@ -152,63 +213,4 @@ $$\ell(\theta)=\sum_{i=1}^m\log p(x^{(i)};\theta)=\sum_{i=1}^m\log \sum_zp(x^{(i
 根据这个公式直接求$$\theta$$一般比较困难，但是如果确定了z之后，求解就容易了。
 
 EM算法是一种解决存在隐含变量优化问题的有效方法。既然不能直接最大化$$\ell(\theta)$$，我们可以不断地建立$$\ell(\theta)$$的下界(E-Step),然后优化下界(M-Step)。
-
-这里首先假设$$z^{(i)}$$的分布为$$Q_i$$。显然：
-
-$$\sum_zQ_i(z)=1,Q_i(z)\ge 0$$
-
-$$\begin{align}
-\ell(\theta)&=\sum_{i=1}^m\log \sum_{z^{(i)}}p(x^{(i)},z^{(i)};\theta)
-\\&=\sum_{i=1}^m\log \sum_{z^{(i)}}Q_i(z^{(i)})\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}
-\\&\ge\sum_{i=1}^m\sum_{z^{(i)}}Q_i(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}\tag{2}
-\end{align}$$
-
-这里解释一下最后一步的不等式变换。
-
-首先，根据数学期望的定义公式：
-
-$$E[X]=\sum_{i=1}^nx_ip_i$$
-
-可知：
-
-$$\sum_{z^{(i)}}Q_i(z^{(i)})\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}=E\left[\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}\right]$$
-
-又因为$$f(x)=\log x$$是凹函数，根据Jensen不等式可得：
-
-$$f\left(E_{z^{(i)}\sim Q_i}\left[\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}\right]\right)\ge E_{z^{(i)}\sim Q_i}\left[f\left(\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}\right)\right]$$
-
-综上，公式2给出了$$\ell(\theta)$$的下界。对于$$Q_i$$的选择，有多种可能，那种更好的？
-
-假设$$\theta$$已经给定，那么$$\ell(\theta)$$的值就取决于$$Q_i(z^{(i)})$$和$$p(x^{(i)},z^{(i)})$$了。我们可以通过调整这两个概率，使下界不断上升，以逼近$$\ell(\theta)$$的真实值。当不等式变成等式时，下界达到最大值。
-
-由Jensen不等式相等的条件可知，$$\ell(\theta)$$的下界达到最大值的条件为：
-
-$$\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}=c$$
-
-其中c为常数。
-
-这实际上表明：
-
-$$Q_i(z^{(i)})\propto p(x^{(i)},z^{(i)};\theta)$$
-
-其中的$$\propto$$符号是两者成正比例的意思。
-
-从中还可以推导出：
-
-$$\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}=c=\frac{\sum_zp(x^{(i)},z^{(i)};\theta)}{\sum_zQ_i(z^{(i)})}$$
-
-因为$$\sum_zQ_i(z^{(i)})=1$$，所以上式可变形为：
-
-$$Q_i(z^{(i)})=\frac{p(x^{(i)},z^{(i)};\theta)}{\sum_zp(x^{(i)},z^{(i)};\theta)}=\frac{p(x^{(i)},z^{(i)};\theta)}{p(x^{(i)};\theta)}=p(z^{(i)}\vert x^{(i)};\theta)$$
-
-可见，当$$Q_i(z^{(i)})$$为$$z^{(i)}$$的后验分布时，$$\ell(\theta)$$的下界达到最大值。
-
-因此，EM算法的过程为：
-
->Repeat until convergence {   
-><span style="white-space: pre">	</span>(E-step) For each i：   
-><span style="white-space: pre">			</span>$$Q_i(z^{(i)}):=p(z^{(i)}\vert x^{(i)};\theta)$$   
-><span style="white-space: pre">	</span>(M-step) Update the parameters：   
-><span style="white-space: pre">			</span>$$\theta:=\arg\max_\theta\sum_i\sum_zQ_i(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}$$      
->}
 

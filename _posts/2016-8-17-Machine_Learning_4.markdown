@@ -6,6 +6,14 @@ category: theory
 
 ## 函数边距和几何边距（续）
 
+![](/images/article/SVM_2.png)
+
+几何边距的几何意义如上图所示。w是分界线的法向量，A的坐标是$$x^{(i)}$$，它到分界线的距离是$$\gamma^{(i)}$$，根据解析几何知识可知，A到分界线的垂足B的坐标为$$x^{(i)}-\gamma^{(i)}\frac{w}{\|w\|}$$。将其代入分界线方程$$w^Tx+b=0$$，可得：
+
+$$w^T\left(x^{(i)}-\gamma^{(i)}\frac{w}{\|w\|}\right)+b=0\Rightarrow w^Tx^{(i)}-\gamma^{(i)}\frac{w^Tw}{\|w\|}+b=0$$
+
+$$\Rightarrow w^Tx^{(i)}+b=\gamma^{(i)}\frac{\|w\|^2}{\|w\|}\Rightarrow \gamma^{(i)}=\frac{w^Tx^{(i)}+b}{\|w\|}=\left(\frac{w}{\|w\|}\right)^Tx^{(i)}+\frac{b}{\|w\|}$$
+
 这是A在边界线上方时的情况，扩展到整个坐标系的话，上式可改为：
 
 $$\gamma^{(i)}=y^{(i)}\left(\left(\frac{w}{\|w\|}\right)^Tx^{(i)}+\frac{b}{\|w\|}\right)$$
@@ -218,30 +226,5 @@ $$K(x,z)=\phi(x)^T\phi(z)$$
 $$\begin{align}K(x,z)&=(x^Tz)^2=\left(\sum_{i=1}^nx_iz_i\right)\left(\sum_{i=1}^nx_iz_i\right)
 \\&=\sum_{i=1}^n\sum_{j=1}^nx_ix_jz_iz_j=\sum_{i,j=1}^n(x_ix_j)(z_iz_j)
 \end{align}$$
-
-根据上式可得：（这里假设$$n=3$$）
-
-$$\phi(x)=\begin{bmatrix}
-x_1x_1 \\ x_1x_2 \\ x_1x_3 \\
-x_2x_1 \\ x_2x_2 \\ x_2x_3 \\
-x_3x_1 \\ x_3x_2 \\ x_3x_3 \\
-\end{bmatrix}$$
-
-可以看出$$\phi(x)$$的计算复杂度是$$O(n^2)$$，而$$(x^Tz)^2$$的计算复杂度是$$O(n)$$。
-
-下面我们讨论其他几种常用核函数和它对应的$$\phi(x)$$。
-
-$$\begin{align}K(x,z)&=(x^Tz+c)^2
-\\&=\sum_{i,j=1}^n(x_ix_j)(z_iz_j)+\sum_{i=1}^n(\sqrt{2c}x_i)(\sqrt{2c}z_i)+c^2
-\end{align}$$
-
-同样的：（$$n=3$$）
-
-$$\phi(x)=\begin{bmatrix}
-x_1x_1 \\ x_1x_2 \\ x_1x_3 \\
-x_2x_1 \\ x_2x_2 \\ x_2x_3 \\
-x_3x_1 \\ x_3x_2 \\ x_3x_3 \\
-\sqrt{2c}x_1 \\ \sqrt{2c}x_2 \\ \sqrt{2c}x_3 \\ c
-\end{bmatrix}$$
 
 

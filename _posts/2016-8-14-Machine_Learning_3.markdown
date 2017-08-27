@@ -4,6 +4,20 @@ title:  机器学习（三）——朴素贝叶斯方法, SVM（1）
 category: theory 
 ---
 
+# 生成学习算法（续）
+
+由贝叶斯（Bayes）公式可知：
+
+$$p(y\vert x)=\frac{p(x\vert y)p(y)}{p(x\vert y=1)p(y=1)+p(x\vert y=0)p(y=0)}=\frac{p(x\vert y)p(y)}{p(x)} \tag{6}$$
+
+其中，$$p(x\vert y)$$称为后验概率，$$p(y)$$称为先验概率。
+
+>注：Thomas Bayes，1701~1761，英国统计学家。
+
+由于我们关注的是y的离散值结果中哪个概率大（比如山羊概率和绵羊概率哪个大），而并不是关心具体的概率，因此公式6可改写为：
+
+$$\arg\max_yp(y\vert x)=\arg\max_y\frac{p(x\vert y)p(y)}{p(x)}=\arg\max_yp(x\vert y)p(y) \tag{7}$$
+
 ## 高斯分布的向量形式
 
 高斯分布的向量形式$$N(\mu,\Sigma)$$的概率密度函数为：
@@ -201,12 +215,4 @@ $$g(z)=\begin{cases}
 函数边距的定义如下：
 
 $$\hat\gamma=\min_{i=1,\dots,m}\hat\gamma^{(i)},\hat\gamma^{(i)}=y^{(i)}(w^Tx^{(i)}+b)$$
-
-![](/images/article/SVM_2.png)
-
-几何边距的几何意义如上图所示。w是分界线的法向量，A的坐标是$$x^{(i)}$$，它到分界线的距离是$$\gamma^{(i)}$$，根据解析几何知识可知，A到分界线的垂足B的坐标为$$x^{(i)}-\gamma^{(i)}\frac{w}{\|w\|}$$。将其代入分界线方程$$w^Tx+b=0$$，可得：
-
-$$w^T\left(x^{(i)}-\gamma^{(i)}\frac{w}{\|w\|}\right)+b=0\Rightarrow w^Tx^{(i)}-\gamma^{(i)}\frac{w^Tw}{\|w\|}+b=0$$
-
-$$\Rightarrow w^Tx^{(i)}+b=\gamma^{(i)}\frac{\|w\|^2}{\|w\|}\Rightarrow \gamma^{(i)}=\frac{w^Tx^{(i)}+b}{\|w\|}=\left(\frac{w}{\|w\|}\right)^Tx^{(i)}+\frac{b}{\|w\|}$$
 

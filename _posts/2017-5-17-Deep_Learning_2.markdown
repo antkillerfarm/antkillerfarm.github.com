@@ -245,3 +245,6 @@ Pooling操作（也称Subsampling）使输入表示（特征维度）变得更�
 ### Gaussian Connections
 
 LeNet-5最后一步的Gaussian Connections是一个当年的历史遗迹，目前已经被Softmax所取代。它的含义在上面提到的Yann LeCun的原始论文中有描述。
+
+>注意：现代版的LeNet-5最后一步的Softmax层，实际上包含了$$Wx+b$$和Softmax两种计算。相当于用Softmax函数替换Sigmoid/ReLU函数。
+

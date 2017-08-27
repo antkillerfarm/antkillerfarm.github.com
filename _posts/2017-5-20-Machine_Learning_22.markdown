@@ -1,10 +1,174 @@
 ---
 layout: post
-title:  机器学习（二十二）——单分类SVM&多分类SVM, 时间序列分析, 推荐算法中的常用排序算法, NLP机器翻译常用评价度量
+title:  机器学习（二十二）——AutoML, KNN, Optimizer, 单分类SVM&多分类SVM
 category: theory 
 ---
 
-# Optimizer（续）
+# AutoML
+
+## 概述
+
+尽管现在已经有许多成熟的ML算法，然而大多数ML任务仍依赖于专业人员的手工编程实现。
+
+然而但凡做过若干同类项目的人都明白，在算法选择和参数调优的过程中，有大量的套路可以遵循。
+
+比如有人就总结出参加kaggle比赛的套路：
+
+http://www.jianshu.com/p/63ef4b87e197
+
+一个框架解决几乎所有机器学习问题
+
+https://mlwave.com/kaggle-ensembling-guide/
+
+Kaggle Ensembling Guide
+
+既然是套路，那么就有将之自动化的可能，比如下面网页中，就有好几个AutoML的框架：
+
+https://mp.weixin.qq.com/s/QIR_l8OqvCQzXXXVY2WA1w
+
+十大你不可忽视的机器学习项目
+
+下面给几个套路图：
+
+![](/images/article/ML.png)
+
+## 超参数
+
+所谓hyper-parameters，就是机器学习模型里面的框架参数，比如聚类方法里面类的个数，或者话题模型里面话题的个数等等，都称为超参数。它们跟训练过程中学习的参数（权重）是不一样的，通常是手工设定，不断试错调整，或者对一系列穷举出来的参数组合一通枚举（叫做网格搜索）。
+
+AutoML很大程度上就是自动化寻找合适的hyper-parameters的方案或方法。
+
+参见：
+
+http://blog.csdn.net/xiewenbo/article/details/51585054
+
+什么是超参数
+
+http://www.cnblogs.com/fhsy9373/p/6993675.html
+
+如何选取一个神经网络中的超参数hyper-parameters
+
+## 参考
+
+http://blog.csdn.net/aliceyangxi1987/article/details/71079448
+
+一个框架解决几乎所有机器学习问题
+
+https://docs.microsoft.com/en-us/azure/machine-learning/machine-learning-algorithm-cheat-sheet
+
+MS提供的ML算法选择指南
+
+https://mp.weixin.qq.com/s/53AcAZcCKBZI-i1CORl0bQ
+
+分分钟带你杀入Kaggle Top 1%
+
+https://mp.weixin.qq.com/s/NwVGkAcoDmyXKrYFUaK2Bw
+
+如何在机器学习竞赛中更胜一筹？
+
+https://mp.weixin.qq.com/s/hf4IOAayS29i6GB9m4GHcA
+
+全自动机器学习：ML工程师屠龙利器
+
+# KNN
+
+K最近邻(k-Nearest Neighbor，KNN)分类算法，是一个理论上比较成熟的方法，也是最简单的机器学习算法之一。
+
+该方法的思路是：如果一个样本在特征空间中的k个最相似(即特征空间中最邻近)的样本中的大多数属于某一个类别，则该样本也属于这个类别。
+
+KNN算法中，所选择的邻居都是已经正确分类的对象。该方法在定类决策上只依据最邻近的一个或者几个样本的类别来决定待分样本所属的类别。
+
+KNN方法虽然从原理上也依赖于极限定理，但在类别决策时，只与极少量的相邻样本有关。由于KNN方法主要靠周围有限的邻近的样本，而不是靠判别类域的方法来确定所属类别的，因此对于类域的交叉或重叠较多的待分样本集来说，KNN方法较其他方法更为适合。
+
+## 和K-means的区别
+
+虽然K-means和KNN都有计算点之间最近距离的步骤，然而两者的目的是不同的：K-means是聚类算法，而KNN是分类算法。
+
+一个常见的应用是：使用K-means对训练样本进行聚类，然后使用KNN对预测样本进行分类。
+
+## KNN在时间序列分析上的应用
+
+KNN虽然主要是个分类算法，但通过构建特殊的模型，亦可应用于其他领域。其中，KNN在时间序列分析上的应用，就是一个很有技巧性的事情。
+
+假设已知时间序列$$X:\{x_1,\dots,x_n\}$$，来预测$$x_{n+1}$$。
+
+首先，我们选取$$x_{n+1}$$之前的最近m个序列值，作为预测值的特征向量$$X_{m\{n+1\}}$$。这里的m一般根据时间序列的周期来选择，比如商场客流的周期一般为一周。
+
+$$X_{m\{n+1\}}$$和预测值$$x_{n+1}$$组成了扩展向量$$[X_{m\{n+1\}},x_{n+1}]$$。为了表明$$x_{n+1}$$是预测值的事实，上述向量又写作$$[X_{m\{n+1\}},y_{n+1}]$$。
+
+依此类推，对于X中的任意$$x_i$$，我们都可以构建扩展向量$$[X_{m\{i\}},y_{i}]$$。即我们假定，$$x_i$$的值由它之前的m个序列值唯一确定。显然，由于是已经发生了的事件，这里的$$y_{i}$$都是已知的。
+
+在X中，这样的m维特征向量共有$$n-m$$个。使用KNN算法，获得与$$X_{m\{n+1\}}$$最邻近的k个特征向量$$X_{m\{i\}}$$。然后根据这k个特征向量的时间和相似度，对k个$$y_{i}$$值进行加权平均，以获得最终的预测值$$y_{n+1}$$。
+
+参考：
+
+http://www.doc88.com/p-1416660147532.html
+
+KNN算法在股票预测中的应用
+
+# Optimizer
+
+在《机器学习（一）》中，我们已经指出梯度下降是解决凸优化问题的一般方法。而如何更有效率的梯度下降，就是本节中Optimizer的责任了。
+
+## Momentum
+
+Momentum是梯度下降法中一种常用的加速技术。其公式为：
+
+$$v_t = \gamma v_{t-1} + \eta \nabla_\theta J( \theta)$$
+
+$$\theta = \theta - v_t$$
+
+从上式可以看出，参数的更新值$$v_t$$，不仅取决于当前梯度$$\nabla_\theta J( \theta)$$，还取决于上一刻的速度$$v_{t-1}$$。
+
+## Nesterov accelerated gradient
+
+该方法是Momentum的一个变种。其公式为：
+
+$$v_t = \gamma v_{t-1} + \eta \nabla_\theta J( \theta - \gamma v_{t-1})$$
+
+$$\theta = \theta - v_t$$
+
+## Adagrad
+
+Momentum算法中所有的参数$$\theta$$都使用同一个学习率，而Adagrad采用了另一种方法进行优化：为每个参数确定不同的学习率。
+
+Adagrad的基本思想：给经常更新的参数一个较小的学习率，而给很少更新的参数一个较大的学习率。
+
+其公式为：
+
+$$g_{t, i} = \nabla_\theta J( \theta_i )$$
+
+$$\theta_{t+1, i} = \theta_{t, i} - \dfrac{\eta}{\sqrt{G_{t, ii} + \epsilon}} \cdot g_{t, i}$$
+
+其中，$$G_{t, ii}$$表示参数$$\theta_i$$梯度平方和的历史累积值，$$\epsilon$$是为了防止分母为0，而加入的平滑项，数量级一般为$$10^{-8}$$。
+
+有趣的是，如果去掉上式中的根号，则其效果会变糟。
+
+Adagrad的优点在于：它是一个自适应算法，初值选择显得不太重要了。
+
+Adagrad的缺点在于：训练越往后，G越大，从而学习率越小。如果在训练完成之前，学习率变为0，就会导致提前结束训练。
+
+## Adadelta
+
+为了克服Adagrad的缺点，Matthew D. Zeiler于2012年提出了Adadelta算法。
+
+该算法不再使用历史累积值，而是只取最近的w个状态，这样就不会让梯度被惩罚至0。
+
+为了避免保存前w个状态的梯度平方和，可做如下变换：
+
+$$E[g^2]_t = \gamma E[g^2]_{t-1} + (1 - \gamma) g^2_t$$
+
+$$\theta_{t+1} = \theta_{t} - \dfrac{\eta}{\sqrt{E[g^2]_t + \epsilon}} g_{t}$$
+
+上边的公式，就是Hinton在同一年提出的**RMSprop算法**。其中的$$\gamma E[g^2]_{t-1}$$即可看作是前w个状态的滤波值，也可看作是Momentum算法中动量值。
+
+Adadelta在RMSprop的基础上更进一步：
+
+$$RMS[g]_{t}=\sqrt{E[g^{2}]_{t}+\epsilon }$$
+
+$$\Delta \theta_t = - \dfrac{RMS[\Delta \theta]_{t-1}}{RMS[g]_{t}} g_{t}$$
+
+也就是说，Adadelta不仅考虑了梯度的平方和，也考虑了更新量的平方和。
 
 ## Adam
 
@@ -98,195 +262,4 @@ One-Class Support Vector Machines for Anomaly Detection
 https://www.zhihu.com/question/22365729
 
 什么是一类支持向量机（one class SVM）
-
-## 多分类SVM
-
-多分类任务除了使用多分类算法之外，也可以通过对两分类算法的组合来实施多分类。常用的方法有两种：one-against-rest和DAG SVM。
-
-### one-against-rest
-
-比如我们有5个类别，第一次就把类别1的样本定为正样本，其余2，3，4，5的样本合起来定为负样本，这样得到一个两类分类器，它能够指出一篇文章是还是不是第1类的；第二次我们把类别2的样本定为正样本，把1，3，4，5的样本合起来定为负样本，得到一个分类器，如此下去，我们可以得到5个这样的两类分类器（总是和类别的数目一致）。
-
-但有时也会出现两种很尴尬的情况，例如拿一篇文章问了一圈，每一个分类器都说它是属于它那一类的，或者每一个分类器都说它不是它那一类的，前者叫分类重叠现象，后者叫不可分类现象。
-
-分类重叠倒还好办，随便选一个结果都不至于太离谱，或者看看这篇文章到各个超平面的距离，哪个远就判给哪个。不可分类现象就着实难办了，只能把它分给第6个类别了……
-
-更要命的是，本来各个类别的样本数目是差不多的，但“其余”的那一类样本数总是要数倍于正类（因为它是除正类以外其他类别的样本之和嘛），这就人为的造成了“数据集偏斜”问题。
-
-### DAG SVM
-
-![](/images/article/dag_svm.png)
-
-DAG SVM（也称one-against-one）的分类思路如上图所示。
-
-粗看起来DAG SVM的分类次数远超one-against-rest，然而由于每次分类都只使用了部分数据，因此，DAG SVM的计算量反而更小。
-
-其次，DAG SVM的误差上限有理论保障，而one-against-rest则不然（准确率可能降为0）。
-
-显然，上面提到的两种方法，不仅可用于SVM，也适用于其他二分类算法。
-
-参考：
-
-http://www.blogjava.net/zhenandaci/archive/2009/03/26/262113.html
-
-将SVM用于多类分类
-
-## Hinge Loss
-
-在之前的SVM的推导中，我们主要是从解析几何的角度，给出了SVM的计算公式。但SVM实际上也是有loss function的：
-
-$$\ell(y) = \max(0, 1-t \cdot y)$$
-
-其中，$$t=\pm 1$$表示分类标签，$$y=w \cdot x+b$$表示分类超平面计算的score。可以看出当t和y有相同的符号时（意味着 y 预测出正确的分类），loss为0。反之，则会根据y线性增加one-sided error。
-
-![](/images/article/hinge_loss.png)
-
-由于其函数形状像个合叶，因此又名Hinge Loss函数。
-
-多分类SVM的Hinge Loss公式：
-
-$$\ell(y) = \sum_{t \ne y} \max(0, 1 + \mathbf{w}_t \mathbf{x} - \mathbf{w}_y \mathbf{x})$$
-
-参见：
-
-http://www.jianshu.com/p/4a40f90f0d98
-
-Hinge loss
-
-# 时间序列分析
-
-## 书籍和教程
-
-http://www.stat.berkeley.edu/~bartlett/courses/153-fall2010/
-
-berkeley的时间序列分析课程
-
-http://people.duke.edu/%7Ernau/411home.htm
-
-回归和时间序列分析
-
-《应用时间序列分析》，王燕著。
-
-## 概述
-
-时间序列，就是按时间顺序排列的，随时间变化的数据序列。
-
-生活中各领域各行业太多时间序列的数据了，销售额，顾客数，访问量，股价，油价，GDP，气温...
-
-随机过程的特征有均值、方差、协方差等。
-
-如果随机过程的特征随着时间变化，则此过程是非平稳的；相反，如果随机过程的特征不随时间而变化，就称此过程是平稳的。
-
-下图所示，左边非稳定，右边稳定。
-
-![](/images/article/time_series.png)
-
-非平稳时间序列分析时，若导致非平稳的原因是确定的，可以用的方法主要有趋势拟合模型、季节调整模型、移动平均、指数平滑等方法。
-
-若导致非平稳的原因是随机的，方法主要有ARIMA及自回归条件异方差模型等。
-
-## ARIMA
-
-ARIMA模型全称为差分自回归移动平均模型(Autoregressive Integrated Moving Average Model,简记ARIMA)，也叫求和自回归移动平均模型，是由George Edward Pelham Box和Gwilym Meirion Jenkins于70年代初提出的一著名时间序列预测方法，所以又称为box-jenkins模型、博克思-詹金斯法。
-
->注：Gwilym Meirion Jenkins，1932～1982，英国统计学家。伦敦大学学院博士，兰卡斯特大学教授。
-
-同《数学狂想曲（三）》中的PID算法一样，ARIMA模型实际上是三个简单模型的组合。
-
-### AR模型
-
-$$X_t = c + \sum_{i=1}^p \varphi_i X_{t-i}+ \varepsilon_t$$
-
-其中，p为阶数，$$\varepsilon_t$$为白噪声。上式又记作AR(p)。显然，AR模型是一个系统状态模型。
-
-### MA模型
-
-$$X_t = \mu + \varepsilon_t + \sum_{i=1}^q \theta_i \varepsilon_{t-i}$$
-
-上式记作MA(q)，其中q和$$\varepsilon_t$$的含义与上同。MA模型是一个噪声模型。
-
-### ARMA模型
-
-AR模型和MA模型合起来，就是ARMA模型：
-
-$$X_t = c + \varepsilon_t +  \sum_{i=1}^p \varphi_i X_{t-i} + \sum_{i=1}^q \theta_i \varepsilon_{t-i}$$
-
-### Lag operator
-
-在继续下面的描述之前，我们先来定义一下Lag operator--L。
-
-$$L X_t = X_{t-1} \; \text{or} \; X_t = L X_{t+1}$$
-
-### I模型
-
-$$(1-L)^d X_t$$
-
-上式中d为阶数，因此上式也记作I(d)。显然$$I(0)=X_t$$。
-
-I模型有什么用呢？我们观察一下I(1)：
-
-$$(1-L) X_t = X_t - X_{t-1} = \Delta X$$
-
-有的时候，虽然I(0)不是平稳序列，但I(1)是平稳序列，这时我们称该序列是**1阶平稳序列**。n阶的情况，可依此类推。
-
-### ARIMA模型
-
-$$Y_t = (1-L)^d X_t$$
-
-$$\left( 1 - \sum_{i=1}^p \phi_i L^i \right) Y_t = \left( 1 + \sum_{i=1}^q \theta_i L^i \right) \varepsilon_t$$
-
-从上式可以看出，ARIMA模型实际上就是利用I模型，将时间序列转化为平稳序列之后的ARMA模型。
-
->注：上面的内容只是对ARIMA模型给出一个简单的定义。实际的假设检验、参数估计的步骤，还是比较复杂的，完全可以写本书来说。
-
-参考：
-
-https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average
-
-https://en.wikipedia.org/wiki/Autoregressive%E2%80%93moving-average_model
-
-https://zhuanlan.zhihu.com/p/23534595
-
-时间序列分析：结合ARMA的卡尔曼滤波算法（该文的参考文献中有不少好文）
-
-http://blog.csdn.net/aliceyangxi1987/article/details/71079522
-
-用ARIMA模型做需求预测
-
-# 推荐算法中的常用排序算法
-
-## Pointwise方法
-
-Pranking (NIPS 2002), OAP-BPM (EMCL 2003), Ranking with Large Margin Principles (NIPS 2002), Constraint Ordinal Regression (ICML 2005)。
-
-## Pairwise方法
-
-Learning to Retrieve Information (SCC 1995), Learning to Order Things (NIPS 1998), Ranking SVM (ICANN 1999), RankBoost (JMLR 2003), LDM (SIGIR 2005), RankNet (ICML 2005), Frank (SIGIR 2007), MHR(SIGIR 2007), Round Robin Ranking (ECML 2003), GBRank (SIGIR 2007), QBRank (NIPS 2007), MPRank (ICML 2007), IRSVM (SIGIR 2006)。
-
-## Listwise方法
-
-LambdaRank (NIPS 2006), AdaRank (SIGIR 2007), SVM-MAP (SIGIR 2007), SoftRank (LR4IR 2007), GPRank (LR4IR 2007), CCA (SIGIR 2007), RankCosine (IP&M 2007), ListNet (ICML 2007), ListMLE (ICML 2008) 。
-
-# NLP机器翻译常用评价度量
-
-机器翻译的评价指标主要有：BLEU、NIST、Rouge、METEOR等。
-
-参考：
-
-http://blog.csdn.net/joshuaxx316/article/details/58696552
-
-BLEU，ROUGE，METEOR，ROUGE-浅述自然语言处理机器翻译常用评价度量
-
-http://blog.csdn.net/guolindonggld/article/details/56966200
-
-机器翻译评价指标之BLEU
-
-http://blog.csdn.net/han_xiaoyang/article/details/10118517
-
-机器翻译评估标准介绍和计算方法
-
-http://blog.csdn.net/lcj369387335/article/details/69845385
-
-自动文档摘要评价方法---Edmundson和ROUGE
-
 

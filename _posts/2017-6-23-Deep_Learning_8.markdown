@@ -1,8 +1,42 @@
 ---
 layout: post
-title:  深度学习（八）——李飞飞, 目标检测, RCNN
+title:  深度学习（八）——fine-tuning, 李飞飞, 目标检测, RCNN
 category: theory 
 ---
+
+# fine-tuning
+
+fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
+
+举个例子，假设今天老板给你一个新的数据集，让你做一下图片分类，这个数据集是关于Flowers的。问题是，数据集中flower的类别很少，数据集中的数据也不多，你发现从零训练开始训练CNN的效果很差，很容易过拟合。怎么办呢，于是你想到了使用Transfer Learning，用别人已经训练好的Imagenet的模型来做。
+
+由于ImageNet数以百万计带标签的训练集数据，使得如CaffeNet之类的预训练的模型具有非常强大的泛化能力，这些预训练的模型的中间层包含非常多一般性的视觉元素，我们只需要对他的后几层进行微调，再应用到我们的数据上，通常就可以得到非常好的结果。最重要的是，**在目标任务上达到很高performance所需要的数据的量相对很少**。
+
+虽然从理论角度尚无法完全解释fine-tuning的原理，但是还是可以给出一些直观的解释。我们知道，CNN越靠近输入端，其抽取的图像特征越原始。比如最初的一层通常只能抽取一些线条之类的元素。越上层，其特征越抽象。
+
+而现实的图像无论多么复杂，总是由简单特征拼凑而成的。因此，无论最终的分类结果差异如何巨大，其底层的图像特征却几乎一致。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/22624331
+
+fine-tuning:利用已有模型训练其他数据集
+
+http://www.cnblogs.com/louyihang-loves-baiyan/p/5038758.html
+
+Caffe fine-tuning微调网络
+
+http://blog.csdn.net/sinat_26917383/article/details/54999868
+
+caffe中fine-tuning模型三重天（函数详解、框架简述）+微调技巧
+
+http://yongyuan.name/blog/layer-selection-and-finetune-for-cbir.html
+
+图像检索：layer选择与fine-tuning性能提升验证
+
+h1ttps://www.zhihu.com/question/49534423
+
+迁移学习与fine-tuning有什么区别？
 
 # 李飞飞
 
@@ -205,62 +239,4 @@ RCNN算法分为4个步骤：
 **Step 3**：类别判断。特征送入每一类的SVM分类器，判别是否属于该类。
 
 **Step 4**：位置精修。使用回归器精细修正候选框位置。
-
-## Selective Search
-
-论文：
-
-https://www.koen.me/research/pub/uijlings-ijcv2013-draft.pdf
-
-Selective Search for Object Recognition
-
-Selective Search的主要思想:
-
-**Step 1**：使用一种过分割手段，将图像分割成小区域 (1k~2k个)。
-
-这里的步骤实际上并不简单，可参考论文：
-
-《Efficient Graph-Based Image Segmentation》
-
-中文版：
-
-http://blog.csdn.net/surgewong/article/details/39008861
-
-**Step 2**：查看现有小区域，按照合并规则合并可能性最高的相邻两个区域。重复直到整张图像合并成一个区域位置。
-
-**Step 3**：输出所有曾经存在过的区域，所谓候选区域。
-
-其中合并规则如下：优先合并以下四种区域：
-
-1.颜色（颜色直方图）相近的。
-
-2.纹理（梯度直方图）相近的。
-
-3.合并后总面积小的：保证合并操作的尺度较为均匀，避免一个大区域陆续“吃掉”其他小区域（例：设有区域a-b-c-d-e-f-g-h。较好的合并方式是：ab-cd-ef-gh -> abcd-efgh -> abcdefgh。不好的合并方法是：ab-c-d-e-f-g-h ->abcd-e-f-g-h ->abcdef-gh -> abcdefgh）
-
-4.合并后，总面积在其bounding box中所占比例大的：保证合并后形状规则。
-
-Step2和Step3可参考论文：
-
-《Selective Search for Object Recognition》
-
-中文版：
-
-http://blog.csdn.net/surgewong/article/details/39316931
-
-http://blog.csdn.net/charwing/article/details/27180421
-
-![](/images/article/rcnn_3.png)
-
-上图中的那些方框，就是bounding box。
-
-一般使用IOU（Intersection over Union，交并比）指标，来衡量两个bounding box的重叠度：
-
-$$IOU(A,B)=\frac{A \cap B}{A \cup B}$$
-
-## 非极大值抑制（NMS）
-
-RCNN会从一张图片中找出n个可能是物体的矩形框，然后为每个矩形框为做类别分类概率（如上图所示）。我们需要判别哪些矩形框是没用的。
-
-Non-Maximum Suppression顾名思义就是抑制不是极大值的元素，搜索局部的极大值。这个局部代表的是一个邻域，邻域有两个参数可变，一是邻域的维数，二是邻域的大小。
 

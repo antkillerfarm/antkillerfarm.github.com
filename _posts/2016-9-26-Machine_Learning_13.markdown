@@ -1,10 +1,78 @@
 ---
 layout: post
-title:  机器学习（十三）——机器学习中的矩阵方法（2）特征值和奇异值, 病态矩阵
+title:  机器学习（十三）——机器学习中的矩阵方法（2）QR分解, 特征值和奇异值
 category: theory 
 ---
 
-## QR算法（续）
+## 矩阵的特征值和特征向量
+
+设A是一个n阶方阵，$$\lambda$$是一个数，如果方程$$Ax=\lambda x$$存在非零解向量，则称$$\lambda$$为A的一个特征值（Eigenvalue），相应的非零解向量x称为属于特征值$$\lambda$$的特征向量（eigenvector）。
+
+上面这个描述也可以记作：
+
+$$(A-\lambda I)x=0\tag{2}$$
+
+这个公式本身通常用于：已知特征值，求解对应的特征向量。
+
+其中，$$A-\lambda I$$被称为特征矩阵，而$$\lvert A-\lambda I \rvert=0$$被称为特征方程。求解特征方程可得到特征值。
+
+特征值和特征向量在有的书上也被称为本征值和本征向量。
+
+特征值和特征向量的特性包括：
+
+1.特征向量属于特定的特征值，离开特征值讨论特征向量是没有意义的。不同特征值对应的特征向量不会相等，但特征向量不能由特征值唯一确定。
+
+2.在复数范围内，n阶矩阵A有n个特征值。在这些特征值中，模最大的那个特征值即主特征值（对于实数阵即绝对值最大的特征值），主特征值对应的特征向量称为主特征向量。
+
+更多内容参见：
+
+http://course.tjau.edu.cn/xianxingdaishu/jiao/5.htm
+
+## QR算法
+
+对矩阵A进行QR分解可得：$$A=QR$$
+
+因为Q是正交阵（$$Q^T=Q^{-1}$$），所以正交相似变换$$Q^TAQ$$和A有相同的特征值。
+
+证明：
+
+$$|Q^TAQ-\lambda I|=|Q^TAQ-Q^T(\lambda I)Q|=|Q^T(A-\lambda I)Q|\\=|Q^T|\cdot|A-\lambda I|\cdot|Q|=|Q^TQ|\cdot|A-\lambda I|=|I|\cdot|A-\lambda I|=|A-\lambda I|$$
+
+这里的证明，用到了行列式的如下性质：
+
+$$|I|=1$$
+
+$$|AB|=|A|\cdot|B|$$
+
+因为$$Q^TAQ$$和A的特征方程相同，所以它们的特征值也相同。证毕。
+
+由此产生如下迭代算法：
+
+>Repeat until convergence {   
+><span style="white-space: pre">	</span>1.$$A_k=Q_kR_k$$（QR分解）   
+><span style="white-space: pre">	</span>2.$$A_{k+1}=Q_k^TA_kQ_k=Q_k^{-1}Q_kR_kQ_k=R_kQ_k$$   
+>}
+
+这个算法的收敛性证明比较复杂，这里只给出结论：
+
+$$\lim_{k\to\infty}A_k=\begin{bmatrix}
+\lambda_1 & u_{12} &  \dots  & u_{1n} \\
+0 & \lambda_2 &  \dots  & u_{2n} \\
+\dots & \dots & \ddots & \dots \\
+0 & 0 & \dots & \lambda_n 
+\end{bmatrix}$$
+
+其中，$$\lambda_i$$为矩阵的特征值。$$u_{ij}$$表示任意值，它们的极限可能并不存在。
+
+QR算法于1961年，由John G.F. Francis和Vera Nikolaevna Kublanovskaya发现。
+
+>注：John G.F. Francis，1934年生，英国计算机科学家，剑桥大学肄业生。   
+>2000年，QR算法被IEEE计算机学会评为20世纪的top 10算法之一。然而直到那时，计算机界的数学家们竟然都没有见过Francis本尊，连这位大神是活着还是死了都不知道，仿佛他在发表完这篇惊世之作后就消失了一般。   
+>2007年，学界的两位大牛：Gene Howard Golub（SVD算法发明人之一，后文会提到。）和Frank Detlev Uhlig（1972年获加州理工学院博士，Auburn University数学系教授），经过不懈努力和人肉搜索终于联系上了他。   
+>他一点都不知道自己N年前的研究被引用膜拜了无数次，得知自己的QR算法是二十世纪最NB的十大算法还有点小吃惊。这位神秘大牛竟然连TeX和Matlab都不知道。现在这位大牛73岁了，活到老学到老，还在远程教育大学Open University里补修当年没有修到的学位。   
+>2015年，University of Sussex授予他荣誉博士学位。   
+>相关内容参见：   
+>http://www.netlib.org/na-digest-html/07/v07n34.html
 
 >Vera Nikolaevna Kublanovskaya，1920~2012，苏联数学家，女。终身供职于苏联科学院列宁格勒斯塔克罗夫数学研究所。52岁才拿到博士学位。
 
@@ -176,95 +244,5 @@ $$\|A\cdot B\|\le \|A\|\cdot\|B\|$$
 这种范数被称为相容范数。
 
 >注：矩阵范数要比向量范数复杂的多，还包含一些不可以由向量范数来诱导的范数，如Frobenius范数。而且只有极少数矩阵范数，可由简单表达式来表达。这里篇幅有限，不再赘述。
-
-## 病态矩阵
-
-现在有线性系统$$Ax = b$$：
-
-$$\begin{bmatrix} 400 & -201 \\-800 & 201 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}=\begin{bmatrix} 200 \\ -200 \end{bmatrix}$$
-
-很容易得到解为：$$x_1=-100,x_2=-200$$。如果在样本采集时存在一个微小的误差，比如，将 A矩阵的系数400改变成401：
-
-$$\begin{bmatrix} 401 & -201 \\-800 & 201 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}=\begin{bmatrix} 200 \\ -200 \end{bmatrix}$$
-
-则得到一个截然不同的解：$$x_1=40000,x_2=79800$$。
-
-当解集x对A和b的系数高度敏感，那么这样的方程组就是病态的 (ill-conditioned/ill-posed)。
-
-从上例的情况来看，矩阵的行向量$$\begin{bmatrix} 400 & -201\end{bmatrix}$$和$$\begin{bmatrix} -800 & 401\end{bmatrix}$$实际上是过于线性相关了，从而导致矩阵已经接近奇异矩阵（near singular matrix）。
-
-病态矩阵实际上就是奇异矩阵和近奇异矩阵的另一个说法。
-
-参见：
-
-http://www.cnblogs.com/daniel-D/p/3219802.html
-
-## 矩阵的条件数
-
-我们首先假设向量b受到扰动，导致解集x产生偏差，即：
-
-$$A(x+\Delta x)=b+\Delta b$$
-
-也就是：
-
-$$A\Delta x=\Delta b$$
-
-因此，由矩阵相容性可得：
-
-$$\|\Delta x\|\le \|A^{-1}\|\cdot\|\Delta b\|$$
-
-同时，由于：
-
-$$\|A\|\cdot\|x\|\ge\|b\|$$
-
-所以：
-
-$$\frac{\|\Delta x\|}{\|A\|\cdot\|x\|}\le \frac{\|A^{-1}\|\cdot\|\Delta b\|}{\|b\|}$$
-
-即：
-
-$$\frac{\|\Delta x\|}{\|x\|}\le \frac{\|A\|\cdot\|A^{-1}\|\cdot\|\Delta b\|}{\|b\|}$$
-
-我们定义矩阵的条件数$$K(A)=\|A\|\cdot\|A^{-1}\|$$，则上式可写为：
-
-$$\frac{\|\Delta x\|}{\|x\|}\le K(A)\frac{\|\Delta b\|}{\|b\|}$$
-
-同样的，我们针对A的扰动，所导致的x的偏差，也可得到类似的结论：
-
-$$\frac{\|\Delta x\|}{\|x+\Delta x\|}\le K(A)\frac{\|\Delta A\|}{\|A\|}$$
-
-可见，矩阵的条件数是描述输入扰动对输出结果影响的量度。显然，条件数越大，矩阵越病态。
-
-然而这个定义，在病态矩阵的条件下，并不能直接用于数值计算。因为浮点数所引入的微小的量化误差，也会导致求逆结果的很大误差。所以通常情况下，一般使用矩阵的特征值或奇异值来计算条件数。
-
-假设A是2阶方阵，它有两个单位特征向量$$x_1,x_2$$和相应的特征值$$\lambda_1,\lambda_2$$。
-
-由之前的讨论可知，$$x_1,x_2$$是相互正交的。因此，向量b能够被$$x_1,x_2$$的线性组合所表示，即：
-
-$$b=mx_1+nx_2=\frac{m}{\lambda_1}\lambda_1x_1+\frac{n}{\lambda_2}\lambda_2x_2=A(\frac{m}{\lambda_1}x_1+\frac{n}{\lambda_2}x_2)$$
-
-从这里可以看出，b在$$x_1,x_2$$上的扰动，所带来的影响，和特征值$$\lambda_1,\lambda_2$$有很密切的关系。奇异值实际上也有类似的特点。
-
-因此，一般情况下，条件数也可以由最大奇异值与最小奇异值之间的比值，或者最大特征值和最小特征值之间的比值来表示。这里的最大和最小，都是针对绝对值而言的。
-
-参见：
-
-https://en.wikipedia.org/wiki/Condition_number
-
-## 矩阵规则化
-
-病态矩阵处理方法有很多，这里只介绍矩阵规则化（regularization）方法。
-
-机器学习领域，经常用到各种损失函数（loss function）。这里我们用：
-
-$$\min_f \sum_{i=1}^nV(f(\hat x_i),\hat y_i)$$
-
-表示损失函数。
-
-当样本数远小于特征向量维数时，损失函数所表示的矩阵是一个稀疏矩阵，而且往往还是一个病态矩阵。这时，就需要引入规则化因子用以改善损失函数的稳定性：
-
-$$\min_f \sum_{i=1}^nV(f(\hat x_i),\hat y_i)+\lambda R(f)$$
-
-其中的$$\lambda$$表示规则化因子的权重。
 
 

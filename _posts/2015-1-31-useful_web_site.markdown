@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  有用的网址集合, 运维工具集
+title:  有用的网址集合
 category: technology 
 ---
 
@@ -87,6 +87,8 @@ http://www.gooseeker.com/
 https://coderpad.io/
 
 这个网站比较有意思，可以在线编程写代码，适用于公司远程面试程序员。
+
+## Other
 
 http://www.alsrobot.cn/
 
@@ -348,6 +350,22 @@ https://mp.weixin.qq.com/s/oddiCH7TCUBn8CkIYdaNZA
 
 08年江泽民就提出：机器学习会有所做为，加大GPU技术研究，SaaS是软件转型机遇
 
+https://mp.weixin.qq.com/s/QpTsZr2d_tW6X7j7Ksf3yQ
+
+行进中换轮胎——万字长文解析美团和大众点评两大数据平台是怎么融合的
+
+https://mp.weixin.qq.com/s/JeqjD5NYGyG17o5csfzp7w
+
+镜像/容器/仓库/数据卷基本命令
+
+https://mp.weixin.qq.com/s/09BlPee0-kP-At2aDyDbMw
+
+中国数据库40年历史：隐秘的江湖与恩怨
+
+https://mp.weixin.qq.com/s/INlW41lJWWjfAHJAnnfB8A
+
+程序员不能错过的28份技术知识图谱，你的进阶路上必备
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/
@@ -366,53 +384,4 @@ GNOME
 
 http://ftp.gnome.org/pub/GNOME/sources/
 
-# 运维工具集
-
-## Zabbix
-
-zabbix是一个基于WEB界面的提供分布式系统监视以及网络监视功能的企业级的开源解决方案。
-
-http://www.zabbix.com/
-
-## Cacti
-
-Cacti是一套基于PHP,MySQL,SNMP及RRDTool开发的网络流量监测图形分析工具。
-
-http://cacti.net/
-
-## Nagios
-
-Nagios是一款开源的免费网络监视工具，能有效监控Windows、Linux和Unix的主机状态，交换机路由器等网络设备，打印机等。
-
-https://www.nagios.org/
-
-# Ganglia
-
-Ganglia是伯克利开发的一个集群监控软件。可以监视和显示集群中的节点的各种状态信息，比如如：cpu 、mem、硬盘利用率， I/O负载、网络流量情况等，同时可以将历史数据以曲线方式通过php页面呈现。
-
-官网：
-
-http://ganglia.sourceforge.net/
-
-## Jenkins
-
-Jenkins是一个开源软件项目，旨在提供一个开放易用的软件平台，使软件的持续集成变成可能。
-
-https://jenkins.io/index.html
-
-自动化部署的其中一种方案：
-
-gitlab管理代码版本，触发jenkins自动构建+测试，然后走迭代或者发布，全部环境都在docker内。
-
-## Walle
-
-Walle一个web部署系统工具，配置简单、功能完善、界面流畅、开箱即用！支持git、svn版本管理，支持各种web代码发布，PHP，Python，JAVA等代码的发布、回滚，可以通过web来一键完成。
-
-https://walle-web.io/
-
-## JMeter
-
-Apache JMeter是Apache组织开发的基于Java的压力测试工具。用于对软件做压力测试，它最初被设计用于Web应用测试，但后来扩展到其他测试领域。 它可以用于测试静态和动态资源，例如静态文件、Java 小服务程序、CGI 脚本、Java 对象、数据库、FTP 服务器， 等等。JMeter 可以用于对服务器、网络或对象模拟巨大的负载，来自不同压力类别下测试它们的强度和分析整体性能。
-
-http://jmeter.apache.org/
 

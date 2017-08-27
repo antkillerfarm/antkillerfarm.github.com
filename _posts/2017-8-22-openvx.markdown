@@ -1,0 +1,130 @@
+---
+layout: post
+title:  OpenVX, NVIDIA
+category: technology 
+---
+
+# OpenVX
+
+## Khronos Group
+
+Khronos Group是一个行业组织，创建开放标准以实现并行计算、图形、视觉、传感处理和动态媒体在各种平台和设备上的编写和加速。Khronos标准包括 Vulkan, OpenGL, OpenGL ES, WebGL, OpenCL, SPIR, SYCL, WebCL, OpenVX, EGL, OpenMAX, OpenVG, OpenSL ES, StreamInput, COLLADA 和 glTF。
+
+简单来说，Khronos的任务就是创建一个统一的硬件和软件之间的API，这样无论软件厂商，还是硬件厂商，都能各行其道，互不干扰了。
+
+## 概述
+
+官网：
+
+https://www.khronos.org/openvx/
+
+![](/images/article/openvx.png)
+
+上图给出了OpenVX的主要用途，以及它和Khronos其他兄弟项目之间的关系。
+
+OpenVX本身也是一个系列标准。它包括：
+
+**OpenVX**：一个传统的CV接口。提供包括直方图、Harris、Canny等特征算子的API。
+
+**OpenVX SC（Safety Critical）**：安全版的OpenVX。
+
+**OpenVX NN Extension**：专门用于提供NN加速方面的API。目前主要集中于CNN的加速，即卷积、池化等操作，对其他NN支持有限。此外，这些API主要用于预测，而非训练。
+
+Khronos官方提供了一个OpenVX的软件参考实现，用于软硬件厂商的测试工作。
+
+相关API文档和参考实现（sample code）参见：
+
+https://www.khronos.org/registry/OpenVX/
+
+## Host & Device
+
+和OpenGL类似，一般将CPU称作Host，而将GPU称作Device。App运行在Host上，而硬件加速由Device实现。
+
+Device上的内存一般不能直接访问，需要使用vxCreateScalar、vxCreateTensor之类的API，将相关数据传到Device上。
+
+类似的，有些API也分为Host版本和Device版本，前者用于Host和Device之间的数据交换，而后者用于Device内部数据的交换。
+
+比如，vxCreateTensorAddressing和vxCreateTensorView，都是选择tensor的某一部分，前者是Host API，而后者是Device API。
+
+## NNEF
+
+Neural Network Exchange Format是Khronos制定的用于交换NN模型数据的数据格式标准。
+
+官网：
+
+https://www.khronos.org/nnef
+
+## OpenCL
+
+官网：
+
+https://www.khronos.org/opencl/
+
+按照Michael J. Flynn的分类方法，计算机的体系结构可分为如下四类：
+
+**Single instruction stream single data stream (SISD)**
+
+**Single instruction stream, multiple data streams (SIMD)**
+
+**Multiple instruction streams, single data stream (MISD)**
+
+**Multiple instruction streams, multiple data streams (MIMD)**
+
+![](/images/article/simd_mimd.png)
+
+原图地址：
+
+https://en.wikipedia.org/wiki/Flynn%27s_taxonomy
+
+CPU通常是SISD和SIMD的，而GPU则是MISD的，超级计算机则是MIMD的。
+
+OpenCL是一个硬件中立标准，原则上和计算机的体系结构无关。当然现实中，我们主要使用GPU进行运算加速。
+
+和OpenGL、OpenVX的专用性不同，OpenCL主要定位于通用数学运算。OpenGL年代久远也就罢了。对于像OpenVX这样的新标准，有的时候其内部实现也有可能依赖于OpenCL。毕竟无论哪个领域的专用计算，最终都可以分解为基本的数学运算。
+
+参考：
+
+http://blog.csdn.net/leonwei/article/details/8880012
+
+从零开始学习OpenCL开发（一）架构
+
+## MKL
+
+Intel Math Kernel Library是一套经过高度优化和广泛线程化的数学例程，专为需要极致性能的科学、工程及金融等领域的应用而设计。
+
+官网：
+
+https://software.intel.com/zh-cn/mkl
+
+# NVIDIA
+
+NVIDIA作为行业龙头，其影响力甚至在Khronos Group之上，它提出的标准很多成为了行业的事实标准。
+
+## CUDA
+
+CUDA是NVIDIA最早推出的通用数学运算库。除了基本的数学运算之外，还提供了一些工具包：
+
+cuBLAS：线性计算库。
+
+NVBLAS：多GPU版的cuBLAS。
+
+cuFFT：FFT计算库。
+
+nvGRAPH：图计算库。（这里的图是数学图论中的图，和DL框架中的计算图是两回事。）
+
+cuRAND：随机数生成库。
+
+cuSPARSE；稀疏矩阵计算库。
+
+cuSOLVER：解线性方程的计算库。包括解稠密方程的cuSolverDN、解稀疏方程的cuSolverSP和矩阵分解的cuSolverRF。
+
+## Deep Learning SDK
+
+cuDNN：DL计算库。
+
+NCCL：多结点、多GPU的通信库。
+
+TensorRT：嵌入式设备上专用于DL inference的计算库。
+
+
+

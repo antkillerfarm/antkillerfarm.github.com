@@ -1,12 +1,144 @@
 ---
 layout: post
-title:  机器学习（二十）——loss function详解, EMD, LSA, HMM
+title:  机器学习（二十）——PageRank算法, loss function详解
 category: theory 
 ---
 
+## 关联规则评价（续）
+
+可是我们想想，一个喜欢的玩游戏的人会有时间看影片么，这个规则是不是有问题，事实上这条规则误导了我们。在整个数据集中买影片光碟的概率p(买影片)=7500/10000=75%，而买游戏的人也买影片的概率只有66%，66%<75%恰恰说明了买游戏光碟抑制了影片光碟的购买，也就是说买了游戏光碟的人更倾向于不买影片光碟，这才是符合现实的。
+
+从上面的例子我们看到，支持度和自信度并不总能成功滤掉那些我们不感兴趣的规则，因此我们需要一些新的评价标准，下面介绍几种评价标准：
+
+### 相关性系数
+
+相关性系数的英文名是Lift，这就是一个单词，而不是缩写。
+
+$$\mathrm{lift}(X\Rightarrow Y) = \frac{ \mathrm{supp}(X \cup Y)}{ \mathrm{supp}(X) \times \mathrm{supp}(Y) }$$
+
+$$\mathrm{lift}(X\Rightarrow Y)\begin{cases}
+>1, & 正相关 \\
+=1, & 独立 \\
+<1, & 负相关 \\
+\end{cases}$$
+
+实际运用中，正相关和负相关都是我们需要关注的，而独立往往是我们不需要的。显然：
+
+$$\mathrm{lift}(X\Rightarrow Y)=\mathrm{lift}(Y\Rightarrow X)$$
+
+### 确信度
+
+Conviction的定义如下：
+
+$$\mathrm{conv}(X\Rightarrow Y) =\frac{ 1 - \mathrm{supp}(Y) }{ 1 - \mathrm{conf}(X\Rightarrow Y)}$$
+
+它的值越大，表明X、Y的独立性越小。
+
+### 卡方系数
+
+卡方系数是与卡方分布有关的一个指标。参见：
+
+https://en.wikipedia.org/wiki/Chi-squared_distribution
+
+$$\chi^2 = \sum_{i=1}^n \frac{(O_i - E_i)^2}{E_i}$$
+
+>注：上式最早是Pearson给出的。
+
+公式中的$$O_i$$表示数据的实际值，$$E_i$$表示期望值，不理解没关系，我们看一个例子就明白了。
+
+| 表2 | 买游戏 | 不买游戏 | 行总计 |
+|:--:|:--|:--:|:--|
+| 买影片 | 4000(4500) | 3500(3000) | 7500 |
+| 不买影片 | 2000(1500) | 500(1000) | 2500 |
+| 列总计 | 6000 | 4000 | 10000 |
+
+表2的括号中表示的是期望值。以第1行第1列的4500为例，其计算方法为：7500×6000/10000。
+
+经计算可得表2的卡方系数为555.6。基于置信水平和自由度$$(r-1)*(c-1)=(行数-1)*(列数-1)=1$$，查表得到自信度为(1-0.001)的值为6.63。
+
+555.6>6.63，因此拒绝A、B独立的假设，即认为A、B是相关的，而$$E(买影片，买游戏)=4500>4000$$,因此认为A、B呈负相关。
+
+### 全自信度
+
+$$all\_confidence(A,B)=\frac{P(A\cap B)}{max\{P(A),P(B)\}}\\=min\{P(B|A),P(A|B)\}=min\{confidence(A\to B),confidence(B\to A)\}$$
+
+### 最大自信度
+
+$$max\_confidence(A,B)=max\{confidence(A\to B),confidence(B\to A)\}$$
+
+### Kulc
+
+$$kulc(A,B)=\frac{confidence(A\to B)+confidence(B\to A)}{2}$$
+
+### cosine距离
+
+$$cosine(A,B)=\frac{P(A\cap B)}{sqrt(P(A)*P(B))}=sqrt(P(A|B)*P(B|A))\\=sqrt(confidence(A\to B)*confidence(B\to A))$$
+
+### Leverage
+
+$$Leverage(A,B) = P(A\cap B)-P(A)P(B)$$
+
+### 不平衡因子
+
+imbalance ratio的定义：
+
+$$IR(A,B)=\frac{|support(A)-support(B)|}{(support(A)+support(B)-support(A\cap B))}$$
+
+全自信度、最大自信度、Kulc、cosine，Leverage是不受空值影响的，这在处理大数据集是优势更加明显，因为大数据中空记录更多，根据分析我们推荐使用kulc准则和不平衡因子结合的方法。
+
+参考：
+
+http://www.cnblogs.com/fengfenggirl/p/associate_measure.html
+
 # PageRank算法
 
-## 马尔可夫链（续）
+## 概述
+
+在PageRank提出之前，已经有研究者提出利用网页的入链数量来进行链接分析计算，这种入链方法假设一个网页的入链越多，则该网页越重要。早期的很多搜索引擎也采纳了入链数量作为链接分析方法，对于搜索引擎效果提升也有较明显的效果。 PageRank除了考虑到入链数量的影响，还参考了网页质量因素，两者相结合获得了更好的网页重要性评价标准。
+
+对于某个互联网网页A来说，该网页PageRank的计算基于以下两个基本假设： 
+
+**数量假设**：在Web图模型中，如果一个页面节点接收到的其他网页指向的入链数量越多，那么这个页面越重要。
+
+**质量假设**：指向页面A的入链质量不同，质量高的页面会通过链接向其他页面传递更多的权重。所以越是质量高的页面指向页面A，则页面A越重要。
+
+利用以上两个假设，PageRank算法刚开始赋予每个网页相同的重要性得分，通过迭代递归计算来更新每个页面节点的PageRank得分，直到得分稳定为止。 PageRank计算得出的结果是网页的重要性评价，这和用户输入的查询是没有任何关系的，即算法是主题无关的。
+
+**优点**：
+
+这是一个与查询无关的静态算法，所有网页的PageRank值通过离线计算获得；有效减少在线查询时的计算量，极大降低了查询响应时间。
+
+**缺点**：
+
+1）人们的查询具有主题特征，PageRank忽略了主题相关性，导致结果的相关性和主题性降低
+
+2）旧的页面等级会比新页面高。因为即使是非常好的新页面也不会有很多上游链接，除非它是某个站点的子站点。
+
+## 马尔可夫链
+
+Markov链的基本定义参见《机器学习（十六）》。
+
+这里补充一些定义：
+
+**定义1**：设C为状态空间的一个子集，如果从C内任一状态i不能到C外的任何状态，则称C为**闭集**。除了整个状态空间之外，没有别的闭集的Markov链被称为**不可约的**。
+
+如果用状态转移图表示Markov链的话，上面的定义表征了Markov链的**连通性**。
+
+**定义2**：如果有正整数d，只有当$$n=d,2d,\dots$$时，$$P_{ii}^{(n)}>0$$，或者说当n不能被d整除时，$$P_{ii}^{(n)}=0$$，则称i状态为**周期性状态**。如果除了$$d=1$$之外，使$$P_{ii}^{(n)}>0$$的各n值没有公约数，则称该状态i为**非周期性状态**。
+
+这个定义表征了Markov链各状态的**独立性**。
+
+**定义3**：
+
+$$f_{ij}^{(n)}=P(X_{m+v}\neq j,X_{m+n}=j|X_m=i)$$
+
+其中，$$n>1,1\le v\le n-1$$。
+
+上式表示由i出发，首次到达j的概率，也叫**首中概率**。
+
+相应的还有**最终概率**：
+
+$$f_{ij}=\sum_{n=1}^\infty f_{ij}^{(n)}$$
 
 **定义4**：
 
@@ -122,116 +254,3 @@ $$\mathrm{MAE} = \frac{1}{n}\sum_{i=1}^n \left| f_i-y_i\right| =\frac{1}{n}\sum_
 
 $$\text{MPE} = \frac{100\%}{n}\sum_{t=1}^n \frac{a_t-f_t}{a_t}$$
 
-# P-R、ROC和AUC
-
-很多学习器是为测试样本产生一个实值或概率预测，然后将这个预测值与一个分类阈值（threshold）进行比较，若大于阈值则分为正类，否则为反类。这个实值或概率预测结果的好坏，直接决定了学习器的泛化能力。实际上，根据这个实值或概率预测结果，我们可将测试样本进行排序，“最可能”是正例的排在最前面，“最不可能”是正例的排在最后面。这样，分类过程就相当于在这个排序中以某个“截断点”（cut point）将样本分为两部分，前一部分判作正例，后一部分则判作反例。
-
-在不同的应用任务中，我们可根据任务需求来采用不同的截断点，例如若我们更重视 “查准率”（precision），则可选择排序中靠前的位置进行截断，若更重视“查全率”（recall，也称召回率），则可选择靠后的位置进行截断。
-
-对于二分类问题，可将样例根据其真实类别与学习器预测类别的组合划分为真正例（true positive）、假正例（false positive）、真反例（true negative）和假反例（true negative）。
-
-查准率P和查全率R的定义如下：
-
-$$P=\frac{TP}{TP+FP},R=\frac{TP}{TP+FN}$$
-
-以P和R为坐标轴，所形成的曲线就是P-R曲线。
-
-ROC（Receiver operating characteristic）曲线的纵轴是真正例率（True Positive Rate，TPR），横轴是假正例率（False Positive Rate，FPR）。其定义如下：
-
-$$TPR=\frac{TP}{TP+FN},FPR=\frac{FP}{TN+FP}$$
-
-ROC曲线下方的面积被称为AUC（Area Under ROC Curve）。
-
-更多内容参见下图：
-
-![](/images/article/sensitivity_and_specificity.png)
-
-原图地址：
-
-https://en.wikipedia.org/wiki/Sensitivity_and_specificity
-
-# Earth mover's distance
-
-推土机距离（EMD）是两个概率分布之间的距离度量的一种方式。如果将区间D的概率分布比作沙堆P，那么$$P_r$$和$$P_\theta$$之间的EMD距离，就是推土机将$$P_r$$改造为$$P_\theta$$所需要的工作量。
-
-![](/images/article/earth_move.png)
-
-EMD的计算公式为：
-
-$$EMD(P_r,P_\theta) = \frac{\sum_{i=1}^m \sum_{j=1}^n f_{i,j}d_{i,j}}{\sum_{i=1}^m \sum_{j=1}^n f_{i,j}}$$
-
-其中，f表示土方量，d表示运输距离。
-
-EMD可以是多维分布之间的距离。一维的EMD也被称为Match distance。
-
-EMD有时也称作Wasserstein距离。
-
-在文本处理中，有一个和EMD类似的编辑距离（Edit distance），也叫做Levenshtein distance。它是指两个字串之间，由一个转成另一个所需的最少编辑操作次数。许可的编辑操作包括将一个字符替换成另一个字符，插入一个字符，删除一个字符。一般来说，编辑距离越小，两个串的相似度越大。
-
->注：严格来说，Edit distance是一系列字符串相似距离的统称。除了Levenshtein distance之外，还包括Hamming distance等。
-
->Vladimir Levenshtein，1935年生，俄罗斯数学家，毕业于莫斯科州立大学。2006年获得IEEE Richard W. Hamming Medal。
-
-参考：
-
-https://vincentherrmann.github.io/blog/wasserstein/
-
-http://chaofan.io/archives/earth-movers-distance-%e6%8e%a8%e5%9c%9f%e6%9c%ba%e8%b7%9d%e7%a6%bb
-
-# LSA
-
-## 基本原理
-
-Latent Semantic Analysis（隐式语义分析），也叫Latent Semantic Indexing。它是PCA算法在NLP领域的一个应用。
-
-在TF-IDF模型中，所有词构成一个高维的语义空间，每个文档在这个空间中被映射为一个点，这种方法维数一般比较高而且每个词作为一维割裂了词与词之间的关系。
-
-为了解决这个问题，我们要把词和文档同等对待，构造一个维数不高的语义空间，每个词和每个文档都是被映射到这个空间中的一个点。
-
-LSA的思想就是说，我们考察的概率既包括文档的概率，也包括词的概率，以及他们的联合概率。
-
-为了加入语义方面的信息，我们设计一个假想的隐含类包括在文档和词之间，具体思路是这样的：
-
-1.选择一个文档的概率是$$p(d)$$
-
-2.找到一个隐含类的概率是$$p(z\vert d)$$
-
-3.生成一个词w的概率为$$p(w\vert z)$$
-
-## 实现方法
-
-![](/images/article/Topic_model_scheme.jpg)
-
-上图中，行表示单词，列表示文档，单元格的值表示单词在文档中的权重，一般可由TF-IDF生成。
-
-聪明的读者看到这里应该已经反应过来了，这不就是《机器学习（十四）》中提到的协同过滤的商品打分矩阵吗？
-
-没错！LSA的实现方法的确与之类似。多数的blog讲解LSA算法原理时，由于单词-文档矩阵较小，直接采用了矩阵的SVD分解，少数给出了EM算法实现，实际上就是ALS或其变种。
-
-参考：
-
-http://www.cnblogs.com/kemaswill/archive/2013/04/17/3022100.html
-
-Latent Semantic Analysis(LSA/LSI)算法简介
-
-http://blog.csdn.net/u013802188/article/details/40903471
-
-隐含语义索引（Latent Semantic Indexing）
-
-http://www.shareditor.com/blogshow/?blogId=90
-
-比TF-IDF更好的隐含语义索引模型是个什么鬼
-
-# HMM
-
-![](/images/article/HMM.png)
-
-![](/images/article/HMM_2.png)
-
-![](/images/article/HMM_3.png)
-
-和HMM（Hidden Markov Model，隐马尔可夫模型）模型相关的算法主要分为三类，分别解决三种问题：
-
-1）**知道骰子有几种（隐含状态数量），每种骰子是什么（转换概率），根据掷骰子掷出的结果（可见状态链），我想知道每次掷出来的都是哪种骰子（隐含状态链）。**
-
-这个问题呢，在语音识别领域呢，叫做解码问题。这个问题其实有两种解法，会给出两个不同的答案。每个答案都对，只不过这些答案的意义不一样。第一种解法求最大似然状态路径，说通俗点呢，就是我求一串骰子序列，这串骰子序列产生观测结果的概率最大。第二种解法呢，就不是求一组骰子序列了，而是求每次掷出的骰子分别是某种骰子的概率。比如说我看到结果后，我可以求得第一次掷骰子是D4的概率是0.5，D6的概率是0.3，D8的概率是0.2。
