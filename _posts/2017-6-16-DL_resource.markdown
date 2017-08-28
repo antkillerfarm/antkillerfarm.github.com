@@ -198,6 +198,10 @@ https://mp.weixin.qq.com/s/SZykoxDFaMlxpu79bXEIig
 
 MIT的周博磊博士如何解释深度学习模型
 
+https://mp.weixin.qq.com/s/Ywx8TyVkEkE6KXnaW2SvxQ
+
+国内大互联网公司机器学习/深度学习面试题
+
 ### TPU & GPU & 并行
 
 https://zhuanlan.zhihu.com/p/25382177
@@ -329,10 +333,6 @@ https://mp.weixin.qq.com/s/FLrnRF8UQg6vLn-sndSpiw
 http://mp.weixin.qq.com/s/9fJT0dMLvYQdfMVvSEiG4A
 
 深度学习的时间序列模型评价
-
-https://mp.weixin.qq.com/s/HmkTkv7QT08lGtJsHD7EvQ
-
-迁移学习（Transfer Learning）技术概述
 
 https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA
 

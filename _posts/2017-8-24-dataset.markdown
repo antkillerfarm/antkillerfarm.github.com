@@ -124,3 +124,9 @@ https://mp.weixin.qq.com/s/Kxnvv1i0nvkg0vUDBlx6MA
 
 向机器学习偏见开战：谷歌展示全球涂鸦数据集分析结果
 
+https://mp.weixin.qq.com/s/SKZhcd3QpoVMubTkD14iWw
+
+Fashion-MNIST：替代MNIST手写数字集的图像数据集
+
+
+

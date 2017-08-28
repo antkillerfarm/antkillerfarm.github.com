@@ -66,7 +66,13 @@ caffe绘制网络结构图
 
 ## 术语
 
-**blob**：Caffe中用于数据操作和交换的数据结构。简单来说，就是一个4维数组：number,channel,height,width。这样的排列格式又被称作NCHW格式。相对的，TensorFlow使用的是NHWC格式。
+**blob**：Caffe中用于数据操作和交换的数据结构。简单来说，就是一个4维数组，格式如下表所示：
+
+| 名称 | 格式 | 
+|:--:|:--:|
+| Caffe | number,channel,height,width |
+| TensorFlow | number,height,width,channel |
+| OpenVX | width,height,channel,number |
 
 **lr_mult**：学习率因子。基数是solver在运行时采用的学习率。
 

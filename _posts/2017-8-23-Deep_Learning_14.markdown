@@ -6,6 +6,10 @@ category: theory
 
 # 迁移学习
 
+https://mp.weixin.qq.com/s/HmkTkv7QT08lGtJsHD7EvQ
+
+迁移学习（Transfer Learning）技术概述
+
 https://zhuanlan.zhihu.com/wjdml
 
 《小王爱迁移》系列blog
@@ -25,6 +29,10 @@ https://mp.weixin.qq.com/s/fEKc6yFZwTPAHjXJlcHA-w
 https://mp.weixin.qq.com/s/pbyByPoZ9SVoP9B7pJMxXg
 
 深度卷积网络迁移学习的脸部表情识别
+
+https://www.zhihu.com/question/50996014
+
+什么是One/zero-shot learning？
 
 # 语音识别
 

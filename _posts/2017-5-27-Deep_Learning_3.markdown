@@ -78,6 +78,10 @@ https://mp.weixin.qq.com/s/p-wZ_6ZQW-zXzDqmRenNow
 
 深度学习入门：几幅手稿讲解CNN
 
+https://mp.weixin.qq.com/s/xXf7hTfH-vx4YbzlZVQucA
+
+CNN入门再介绍
+
 # Autoencoder
 
 Bengio在2003年的《A neural probabilistic language model》中指出，维度过高，会导致每次学习，都会强制改变大部分参数。
@@ -123,6 +127,10 @@ https://mp.weixin.qq.com/s/lODy8ucB3Bw9Y1sy1NxTJg
 https://mp.weixin.qq.com/s/LQFuXgI7uZK2UKRfZvlVbA
 
 Variational AutoEncoder
+
+https://mp.weixin.qq.com/s/lnSMdOk8fYfdU4aGeI5j7Q
+
+未标注的数据如何处理？一文读懂变分自编码器VAE
 
 # 词向量
 
