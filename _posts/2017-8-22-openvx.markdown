@@ -46,6 +46,16 @@ Device上的内存一般不能直接访问，需要使用vxCreateScalar、vxCrea
 
 比如，vxCreateTensorAddressing和vxCreateTensorView，都是选择tensor的某一部分，前者是Host API，而后者是Device API。
 
+## 数组的存储格式
+
+和OpenGL一样，OpenVX中的tensor，也是列优先存储的。而C语言是行优先存储的。
+
+行优先/列优先的概念参见：
+
+http://blog.csdn.net/zhoxier/article/details/8058176
+
+数组按行/列存储
+
 ## NNEF
 
 Neural Network Exchange Format是Khronos制定的用于交换NN模型数据的数据格式标准。
@@ -87,6 +97,22 @@ OpenCL是一个硬件中立标准，原则上和计算机的体系结构无关�
 http://blog.csdn.net/leonwei/article/details/8880012
 
 从零开始学习OpenCL开发（一）架构
+
+## SYCL
+
+SYCL是Khronos提供的基于OpenCL的C++接口层。
+
+官网：
+
+https://www.khronos.org/sycl
+
+## ComputeCpp
+
+ComputeCpp是Codeplay公司提供的SYCL接口的实现。它除了支持OpenCL之外，还支持CUDA和C++AMP。
+
+官网：
+
+https://www.codeplay.com/products/computesuite/computecpp
 
 ## MKL
 

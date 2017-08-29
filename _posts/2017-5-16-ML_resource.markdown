@@ -390,6 +390,10 @@ https://mp.weixin.qq.com/s/c4Lp4D-COP2I12zRC9beIA
 
 从Boosting到Stacking，概览集成学习的方法与性能
 
+https://mp.weixin.qq.com/s?__biz=MzU3ODIwMjA3NQ==&mid=2247483661&idx=1&sn=5efbd5aabd294ce39f1b9ae05f066a28
+
+现金贷、消费金融反欺诈规则设置
+
 # PMML
 
 PMML(Predictive Model Markup Language) 是一个开放的工业标准，它以 XML 为载体将上述数据挖掘任务标准化，可以把某一产品所创建的数据挖掘方案应用于任何其它遵从 PMML 标准的产品或平台中 , 而不需考虑分析和预测过程中的具体实现细节。使得模型的部署摆脱了模型开发和产品整合的束缚，为商业智能产品、数据仓库和云计算中的数据挖掘模型的应用环境开拓了新的篇章。

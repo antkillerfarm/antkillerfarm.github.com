@@ -88,6 +88,10 @@ https://zhuanlan.zhihu.com/dlgirls
 
 写给妹子的深度学习教程
 
+http://blog.csdn.net/u014114990
+
+一个DL的blog
+
 ## 文章
 
 ### 教程

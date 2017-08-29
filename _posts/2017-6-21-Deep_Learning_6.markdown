@@ -1,8 +1,78 @@
 ---
 layout: post
-title:  深度学习（六）——CNN进化史
+title:  深度学习（六）——seq2seq, DMN, CNN进化史
 category: theory 
 ---
+
+# seq2seq
+
+seq2seq最早用于Neural Machine Translation领域（与之相对应的有Statistical Machine Translation）。训练后的seq2seq模型，可以根据输入语句，自动生成翻译后的输出语句。
+
+![](/images/article/seq2seq.png)
+
+上图是seq2seq的结构图。可以看出seq2seq实际上是一种Encoder-Decoder结构。
+
+在Encoder阶段，RNN依次读入输入序列。但由于这时，没有输出序列与之对应，因此这仅仅相当于一个对隐层的编码过程，即将句子的语义编码为隐层的状态向量。
+
+从中发现一个问题：状态向量的维数决定了存储的语义的内容上限（显然不能指望，一个200维的向量，能够表示一部百科全书。）因此，seq2seq通常只用于短文本的翻译。
+
+在Decoder阶段，我们根据输出序列，反向修正RNN的参数，以达到训练神经网络的目的。
+
+参考：
+
+https://github.com/ematvey/tensorflow-seq2seq-tutorials
+
+一步步的seq2seq教程
+
+http://blog.csdn.net/sunlylorn/article/details/50607376
+
+seq2seq模型
+
+http://datartisan.com/article/detail/120.html
+
+Seq2Seq的DIY简介
+
+http://www.cnblogs.com/Determined22/p/6650373.html
+
+DL4NLP——seq2seq+attention机制的应用：文档自动摘要（Automatic Text Summarization）
+
+http://blog.csdn.net/young_gy/article/details/73412285
+
+基于RNN的语言模型与机器翻译NMT
+
+http://karpathy.github.io/2015/05/21/rnn-effectiveness/
+
+The Unreasonable Effectiveness of Recurrent Neural Networks
+
+https://mp.weixin.qq.com/s/8u3v9XzECkwcNn5Ay-kYQQ
+
+基于Depthwise Separable Convolutions的Seq2Seq模型_SliceNet原理解析
+
+https://mp.weixin.qq.com/s/H6eYxS7rXGDH_B8Znrxqsg
+
+seq2seq中的beam search算法过程
+
+https://mp.weixin.qq.com/s/U1yHIc5Zq0yKCezRm185VA
+
+Attentive Sequence to Sequence Networks
+
+https://mp.weixin.qq.com/s/cGXANj7BB2ktTdPAL4ZEWA
+
+图解神经网络机器翻译原理：LSTM、seq2seq到Zero-Shot
+
+# DMN
+
+Question answering是自然语言处理领域的一个复杂问题。它需要对文本的理解力和推理能力。大部分NLP问题都可以转化为一个QA问题。Dynamic Memory Networks可以用来处理QA问题。DMN的输入包含事实输入，问题输入，经过内部处理形成片段记忆，最终产生问题的答案。
+
+DMN可进行端到端的训练，并在多种任务上取得了state-of-the-art的效果：包括QA（Facebook 的 bAbI 数据集），情感分析文本分类（Stanford Sentiment Treebank）和词性标注（WSJ-PTB）。
+
+![](/images/article/DMN.png)
+
+参考：
+
+http://blog.csdn.net/javafreely/article/details/71994247
+
+动态记忆网络
 
 # CNN进化史
 
@@ -230,55 +300,4 @@ http://www.iangoodfellow.com/slides/2016-12-04-NIPS.pdf
 
 ![](/images/article/GAN.png)
 
-## 基本原理
-
-上面的解释虽然通俗，却并未涉及算法的实现。要实现上述原理，至少要解决三个问题：
-
-**1.什么是伪造者。**
-
-**2.什么是鉴别者。**
-
-**3.如何对抗。**
-
-以下文章的组织顺序，主要参考下文：
-
-http://kexue.fm/archives/4439/
-
-互怼的艺术：从零直达WGAN-GP
-
-老规矩，摘要+点评。
-
-## 伪造者
-
-伪造者在这里实际上是一种Generative算法。伪造的内容是：**将随机噪声映射为我们所希望的正样本**。
-
-随机噪声我们一般定义为**均匀分布**，于是上面的问题可以转化为：**如何将均匀分布X映射为正样本分布Y**。
-
-首先，我们思考一个简单的问题：如何将$$U[0,1]$$映射为$$N(0,1)$$？
-
-理论上的做法是：将$$X∼U[0,1]$$经过函数$$Y=f(X)$$映射之后，就有$$Y∼N(0,1)$$了。设$$\rho(x)$$是$$U[0,1]$$是概率密度函数，那么$$[x,x+dx]$$和$$[y,y+dy]$$这两个区间的概率应该相等，而根据概率密度定义，$$\rho(x)$$不是概率，$$\rho(x)dx$$才是概率，因此有：
-
-$$\rho(x)dx=\frac{1}{\sqrt{2\pi}}\exp\left(-\frac{y^2}{2}\right)dy$$
-
-即：
-
-$$\int_{0}^x \rho(t)dt=\int_{-\infty}^{y}\frac{1}{\sqrt{2\pi}}\exp\left(-\frac{t^2}{2}\right)dt=\Phi(y)$$
-
-其中，$$\Phi(y)$$是标准正态分布的累积分布函数，所以
-
-$$y=\Phi^{-1}\left(\int_0^x \rho(t)dt\right)$$
-
-注意到累积分布函数是无法用初等函数显式表示出来的，更不用说它的逆函数了。说白了，$$Y=f(X)$$的f的确是存在的，但很复杂，以上解只是一个记号，该算的还是要用计算机算。
-
-正态分布是常见的、相对简单的分布，但这个映射已经这么复杂了。如果换了任意分布，甚至概率密度函数都不能显式写出来，那么复杂度可想而知～
-
-考虑到我们**总可以用一个神经网络来拟合任意函数**。这里不妨用一个带有多个参数的神经网络$$G(X,\theta)$$去拟合f？只要把参数$$\theta$$训练好，就可以认为$$Y=G(X,\theta)$$了。这里的G是**Generator**的意思。
-
-## 正样本分布
-
-如上所述，一般的正样本分布是很难给出概率密度函数的。然而，我们可以换个角度思考问题。
-
-假设有一批服从某个指定分布的数据$$Z=(z_1,z_2,\dots,z_N)$$，根据概率论的相关定义，我们至少可以使用**离散采样**的方法，根据Z中的样本分布，来近似求出Z的指定分布。下文如无特殊指出，**均以Z中的样本分布来代替Z的指定分布，简称Z的分布**。
-
-那么接着就有另一个问题：**如何评估$$G(X,\theta)$$生成的样本的分布和Z的分布之间的差异呢？**
 

@@ -1,12 +1,38 @@
 ---
 layout: post
-title:  深度学习（四）——RNN, LSTM, 神经元激活函数进阶
+title:  深度学习（四）——RNN, LSTM
 category: theory 
 ---
 
-# 词向量
+# 词向量（续）
 
-## word2vec/doc2vec的缺点（续）
+## FastText
+
+Word2Vec作者Mikolov加盟Facebook之后，提出了文本分类新作FastText。
+
+FastText模型架构和Word2Vec中的CBOW模型很类似。不同之处在于，FastText预测标签，而CBOW模型预测中间词。
+
+http://www.algorithmdog.com/fast-fasttext
+
+Github：
+
+https://github.com/facebookresearch/fastText
+
+## Item2Vec
+
+本质上，word2vec模型是在word-context的co-occurrence矩阵基础上建立起来的。因此，任何基于co-occurrence矩阵的算法模型，都可以套用word2vec算法的思路加以改进。
+
+比如，推荐系统领域的协同过滤算法。
+
+协同过滤算法是建立在一个user-item的co-occurrence矩阵的基础上，通过行向量或列向量的相似性进行推荐。如果我们将同一个user购买的item视为一个context，就可以建立一个item-context的矩阵。进一步的，可以在这个矩阵上借鉴CBoW模型或Skip-gram模型计算出item的向量表达，在更高阶上计算item间的相似度。
+
+论文：
+
+《Item2Vec: Neural Item Embedding for Collaborative Filtering》
+
+## word2vec/doc2vec的缺点
+
+1.word2vec/doc2vec基于BOW（Bag Of Word，词袋）模型。该模型的特点是忽略词序，因此对于那些交换词序会改变含义的句子，无法准确评估它们的区别。
 
 2.虽然我们一般使用word2vec/doc2vec来比较文本相似度，但是从原理来说，word2vec/doc2vec提供的是关联性（relatedness），而不是相似性（similarity）。这会带来以下问题：不但近义词的词向量相似，反义词的词向量也相似。因为它们和其他词的关系（也就是语境）是类似的。
 
@@ -264,28 +290,4 @@ LSTM入门详解
 https://mp.weixin.qq.com/s/MQR7c57NL4b5i4MRA2JgWA
 
 用Python实现CNN长短期记忆网络！
-
-# 神经元激活函数进阶
-
-在《深度学习（一、二）》中，我们探讨了ReLU相对于sigmoid函数的改进，以及一些保证深度神经网络能够训练的措施。然而即便如此，深度神经网络的训练仍然是一件非常困难的事情，还需要更多的技巧和方法。
-
-## 激活函数的作用
-
-神经网络中激活函数的主要作用是提供网络的**非线性建模能力**，如不特别说明，激活函数一般而言是非线性函数。
-
-假设一个神经网络中仅包含线性卷积和全连接运算，那么该网络仅能够表达线性映射，即便增加网络的深度也依旧还是线性映射，难以有效建模实际环境中非线性分布的数据。
-
-加入非线性激活函数之后，深度神经网络才具备了分层的非线性映射学习能力。因此，激活函数是深度神经网络中不可或缺的部分。
-
->注意：其实也有采用线性激活函数的神经网络，亦被称为linear neurons。但是这些神经网络，基本只有学术价值而无实际意义。
-
-## ReLU的缺点
-
-深度神经网络的训练问题，最早是2006年Hinton使用**分层无监督预训练**的方法解决的，然而该方法使用起来很不方便。
-
-而深度网络的**直接监督式训练**的最终突破，最主要的原因是采用了新型激活函数ReLU。
-
-但是ReLU并不完美。它在x<0时硬饱和，而当x>0时，导数为1。所以，ReLU能够在x>0时保持梯度不衰减，从而缓解梯度消失问题。但随着训练的推进，部分输入会落入硬饱和区，导致对应权重无法更新。这种现象被称为**神经元死亡**。
-
-ReLU还经常被“诟病”的另一个问题是输出具有**偏移现象**，即输出均值恒大于零。偏移现象和神经元死亡会共同影响网络的收敛性。实验表明，如果不采用Batch Normalization，即使用MSRA初始化30层以上的ReLU网络，最终也难以收敛。
 

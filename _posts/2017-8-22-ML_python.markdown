@@ -218,4 +218,10 @@ https://mp.weixin.qq.com/s/AHz81u8SGyi9_k40040QVg
 
 Python机器学习入门到进阶
 
+https://mp.weixin.qq.com/s/hFg1TvNocrMi5CpDtvRLcQ
+
+推荐一个计算“造人”成功与否的贝叶斯模型！
+
+
+
 

@@ -4,7 +4,59 @@ title:  深度学习（七）—— GAN
 category: theory 
 ---
 
-# GAN（续）
+# GAN
+
+## 基本原理
+
+上面的解释虽然通俗，却并未涉及算法的实现。要实现上述原理，至少要解决三个问题：
+
+**1.什么是伪造者。**
+
+**2.什么是鉴别者。**
+
+**3.如何对抗。**
+
+以下文章的组织顺序，主要参考下文：
+
+http://kexue.fm/archives/4439/
+
+互怼的艺术：从零直达WGAN-GP
+
+老规矩，摘要+点评。
+
+## 伪造者
+
+伪造者在这里实际上是一种Generative算法。伪造的内容是：**将随机噪声映射为我们所希望的正样本**。
+
+随机噪声我们一般定义为**均匀分布**，于是上面的问题可以转化为：**如何将均匀分布X映射为正样本分布Y**。
+
+首先，我们思考一个简单的问题：如何将$$U[0,1]$$映射为$$N(0,1)$$？
+
+理论上的做法是：将$$X∼U[0,1]$$经过函数$$Y=f(X)$$映射之后，就有$$Y∼N(0,1)$$了。设$$\rho(x)$$是$$U[0,1]$$是概率密度函数，那么$$[x,x+dx]$$和$$[y,y+dy]$$这两个区间的概率应该相等，而根据概率密度定义，$$\rho(x)$$不是概率，$$\rho(x)dx$$才是概率，因此有：
+
+$$\rho(x)dx=\frac{1}{\sqrt{2\pi}}\exp\left(-\frac{y^2}{2}\right)dy$$
+
+即：
+
+$$\int_{0}^x \rho(t)dt=\int_{-\infty}^{y}\frac{1}{\sqrt{2\pi}}\exp\left(-\frac{t^2}{2}\right)dt=\Phi(y)$$
+
+其中，$$\Phi(y)$$是标准正态分布的累积分布函数，所以
+
+$$y=\Phi^{-1}\left(\int_0^x \rho(t)dt\right)$$
+
+注意到累积分布函数是无法用初等函数显式表示出来的，更不用说它的逆函数了。说白了，$$Y=f(X)$$的f的确是存在的，但很复杂，以上解只是一个记号，该算的还是要用计算机算。
+
+正态分布是常见的、相对简单的分布，但这个映射已经这么复杂了。如果换了任意分布，甚至概率密度函数都不能显式写出来，那么复杂度可想而知～
+
+考虑到我们**总可以用一个神经网络来拟合任意函数**。这里不妨用一个带有多个参数的神经网络$$G(X,\theta)$$去拟合f？只要把参数$$\theta$$训练好，就可以认为$$Y=G(X,\theta)$$了。这里的G是**Generator**的意思。
+
+## 正样本分布
+
+如上所述，一般的正样本分布是很难给出概率密度函数的。然而，我们可以换个角度思考问题。
+
+假设有一批服从某个指定分布的数据$$Z=(z_1,z_2,\dots,z_N)$$，根据概率论的相关定义，我们至少可以使用**离散采样**的方法，根据Z中的样本分布，来近似求出Z的指定分布。下文如无特殊指出，**均以Z中的样本分布来代替Z的指定分布，简称Z的分布**。
+
+那么接着就有另一个问题：**如何评估$$G(X,\theta)$$生成的样本的分布和Z的分布之间的差异呢？**
 
 ## KL散度
 
@@ -228,52 +280,4 @@ https://mp.weixin.qq.com/s/sxa0BfXtylHXzjq0YBn-Kg
 https://mp.weixin.qq.com/s/aMfPBl6E5SxckQdSAGTkBg
 
 Pytorch教程：Facebook发布的LR-GAN如何生成图像？
-
-https://zhuanlan.zhihu.com/p/28342644
-
-CycleGAN的原理与实验详解
-
-https://mp.weixin.qq.com/s/YXWTslQXIKVihBb2Bgtafg
-
-GAN在信息检索领域的应用
-
-http://mp.weixin.qq.com/s/21CN4hAA6p7ZjWsO1sT2rA
-
-一文看懂生成式对抗网络GANs：介绍指南及前景展望
-
-https://mp.weixin.qq.com/s/YLys6L9WT7eCC-xGr1j0Iw
-
-带多分类判别器的GAN模型
-
-https://mp.weixin.qq.com/s/0tTLotV-8w2j3VdkH-qjCQ
-
-让机器告诉你故事的结局应该是什么：利用GAN进行故事型常识阅读理解
-
-https://mp.weixin.qq.com/s/lqQeCpLQVqSdJPWx0oxs2g
-
-例解生成对抗网络
-
-https://mp.weixin.qq.com/s/fMtuJbWG_d9zyCZ0oYyX_w
-
-经得住考验的“假图片”：用TensorFlow为神经网络生成对抗样本
-
-https://zhuanlan.zhihu.com/p/28488946
-
-AI可能真的要代替插画师了……
-
-https://mp.weixin.qq.com/s/OXN8Y5truLeslX8-UWgqmg
-
-宅男的福音：用GAN自动生成二次元萌妹子
-
-https://mp.weixin.qq.com/s/LAS0KgPiVekGdQXbqlw1cQ
-
-深度学习的三大生成模型：VAE、GAN、GAN的变种
-
-https://mp.weixin.qq.com/s/N7YU-YeXiVX7gSB-mzYgnw
-
-生成式对抗网络GAN的研究进展与展望
-
-https://mp.weixin.qq.com/s/gDzti2DISq_cwGbP5T7ICQ
-
-聊聊对抗自编码器
 

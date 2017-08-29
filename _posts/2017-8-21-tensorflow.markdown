@@ -301,6 +301,10 @@ https://mp.weixin.qq.com/s/CqOo7Fu6t5-yJiYhzo03oQ
 
 利用TensorFlow和神经网络来处理文本分类问题
 
+https://mp.weixin.qq.com/s/VlvQmrS7Qi2qq6fTBXKTYw
+
+从零开始用TensorFlow搭建卷积神经网络
+
 ## 我的TensorFlow实践
 
 ### MNIST+Softmax

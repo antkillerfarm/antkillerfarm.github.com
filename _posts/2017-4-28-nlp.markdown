@@ -38,6 +38,10 @@ https://zhuanlan.zhihu.com/kb-qa
 
 揭开知识库问答KB-QA的面纱（知识图谱方面的系列专栏）
 
+http://web.stanford.edu/~jurafsky/slp3/ed3book.pdf
+
+《语音与语言处理》第三版，NLP和语音合成方面的专著
+
 ## 书籍
 
 http://ccl.pku.edu.cn/alcourse/nlp/LectureNotes/Natural%20Language%20Processing%20with%20Python.pdf

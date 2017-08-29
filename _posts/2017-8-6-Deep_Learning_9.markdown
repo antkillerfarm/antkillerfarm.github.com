@@ -6,6 +6,52 @@ category: theory
 
 # RCNN（续）
 
+## RCNN的基本原理
+
+RCNN是Ross Girshick于2014年提出的深度模型。
+
+>注：Ross Girshick（网名：rbg），芝加哥大学博士（2012），Facebook研究员。他和何恺明被誉为CV界深度学习的**双子新星**。   
+>个人主页：   
+>http://www.rossgirshick.info/
+
+论文：
+
+《Rich feature hierarchies for accurate object detection and semantic segmentation》
+
+代码：
+
+https://github.com/rbgirshick/rcnn
+
+RCNN相对传统方法的改进：
+
+**速度**：经典的目标检测算法使用滑动窗法依次判断所有可能的区域。RCNN则(采用Selective Search方法)预先提取一系列较可能是物体的候选区域，之后仅在这些候选区域上(采用CNN)提取特征，进行判断。
+
+**训练集**：经典的目标检测算法在区域中提取人工设定的特征。RCNN则采用深度网络进行特征提取。
+
+使用两个数据库：
+
+一个较大的识别库（ImageNet ILSVC 2012）：标定每张图片中物体的类别。一千万图像，1000类。
+
+一个较小的检测库（PASCAL VOC 2007）：标定每张图片中，物体的类别和位置，一万图像，20类。
+
+RCNN使用识别库进行预训练得到CNN（有监督预训练），而后用检测库调优参数，最后在检测库上评测。
+
+这实际上就是《深度学习（七）》中提到的fine-tuning的思想。
+
+## RCNN算法的基本流程
+
+![](/images/article/rcnn.png)
+
+RCNN算法分为4个步骤：
+
+**Step 1**：候选区域生成。一张图像生成1K~2K个候选区域（采用Selective Search方法）。
+
+**Step 2**：特征提取。对每个候选区域，使用深度卷积网络提取特征（CNN）。
+
+**Step 3**：类别判断。特征送入每一类的SVM分类器，判别是否属于该类。
+
+**Step 4**：位置精修。使用回归器精细修正候选框位置。
+
 ## Selective Search
 
 论文：

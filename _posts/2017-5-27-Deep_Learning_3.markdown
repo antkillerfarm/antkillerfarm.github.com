@@ -16,6 +16,46 @@ category: theory
 
 上图是若干ML、DL算法按照不同维度划分的情况。
 
+## 多通道卷积
+
+MNIST的例子中，由于图像是单通道（灰度图）的，因此，多数教程都只是展示了单通道卷积的计算步骤：
+
+$$g(i,j)=\sum_{k,l}f(i+k,j+l)h(k,l)$$
+
+而多通道（例如彩色图像的RGB三通道）卷积实际上就是将各通道卷积之后的结果再加在一起：
+
+$$g(i,j)=\sum_{c,k,l}f(i+k,j+l)h(k,l)$$
+
+![](/images/article/conv_1.png)
+
+上图展示了一个4通道图像经卷积之后，得到2通道图像的过程。
+
+从中可以得出以下结论：
+
+1.RGB通道信息在卷积之后，就不复存在了。无论输入图像有多少个通道，输出图像的通道数只和feature的个数相关。
+
+2.即使是LeNet-5的MNIST示例中，实际上也是有多通道卷积的，只不过不在第一个卷积层而已。
+
+3.多通道卷积除了二维空间信息的卷积之外，还包括了通道间信息的卷积。这也是CNN中1*1卷积的意义之一。
+
+多通道卷积操作最终可以转化为矩阵运算，如下图所示：
+
+![](/images/article/conv.jpg)
+
+参见：
+
+http://blog.csdn.net/u014114990/article/details/51125776
+
+多通道(比如RGB三通道)卷积过程
+
+https://www.zhihu.com/question/56024942
+
+卷积神经网络中用1*1卷积有什么作用或者好处呢？
+
+https://www.zhihu.com/question/28385679
+
+在Caffe中如何计算卷积？
+
 ## CNN的反向传播算法
 
 由于卷积和池化两层，不是一般的神经网络结构。因此CNN的反向传播算法实际上也是很有技巧的。
@@ -259,32 +299,4 @@ Paragraph Vector可以和Word Vector一起生成，也可以单独生成，也�
 https://www.zhihu.com/question/33952003
 
 如何通过词向量技术来计算2个文档的相似度?
-
-## FastText
-
-Word2Vec作者Mikolov加盟Facebook之后，提出了文本分类新作FastText。
-
-FastText模型架构和Word2Vec中的CBOW模型很类似。不同之处在于，FastText预测标签，而CBOW模型预测中间词。
-
-http://www.algorithmdog.com/fast-fasttext
-
-Github：
-
-https://github.com/facebookresearch/fastText
-
-## Item2Vec
-
-本质上，word2vec模型是在word-context的co-occurrence矩阵基础上建立起来的。因此，任何基于co-occurrence矩阵的算法模型，都可以套用word2vec算法的思路加以改进。
-
-比如，推荐系统领域的协同过滤算法。
-
-协同过滤算法是建立在一个user-item的co-occurrence矩阵的基础上，通过行向量或列向量的相似性进行推荐。如果我们将同一个user购买的item视为一个context，就可以建立一个item-context的矩阵。进一步的，可以在这个矩阵上借鉴CBoW模型或Skip-gram模型计算出item的向量表达，在更高阶上计算item间的相似度。
-
-论文：
-
-《Item2Vec: Neural Item Embedding for Collaborative Filtering》
-
-## word2vec/doc2vec的缺点
-
-1.word2vec/doc2vec基于BOW（Bag Of Word，词袋）模型。该模型的特点是忽略词序，因此对于那些交换词序会改变含义的句子，无法准确评估它们的区别。
 

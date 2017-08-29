@@ -4,6 +4,58 @@ title:  深度学习（八）——fine-tuning, 李飞飞, 目标检测, RCNN
 category: theory 
 ---
 
+# GAN
+
+## 参考（续）
+
+https://zhuanlan.zhihu.com/p/28342644
+
+CycleGAN的原理与实验详解
+
+https://mp.weixin.qq.com/s/YXWTslQXIKVihBb2Bgtafg
+
+GAN在信息检索领域的应用
+
+http://mp.weixin.qq.com/s/21CN4hAA6p7ZjWsO1sT2rA
+
+一文看懂生成式对抗网络GANs：介绍指南及前景展望
+
+https://mp.weixin.qq.com/s/YLys6L9WT7eCC-xGr1j0Iw
+
+带多分类判别器的GAN模型
+
+https://mp.weixin.qq.com/s/0tTLotV-8w2j3VdkH-qjCQ
+
+让机器告诉你故事的结局应该是什么：利用GAN进行故事型常识阅读理解
+
+https://mp.weixin.qq.com/s/lqQeCpLQVqSdJPWx0oxs2g
+
+例解生成对抗网络
+
+https://mp.weixin.qq.com/s/fMtuJbWG_d9zyCZ0oYyX_w
+
+经得住考验的“假图片”：用TensorFlow为神经网络生成对抗样本
+
+https://zhuanlan.zhihu.com/p/28488946
+
+AI可能真的要代替插画师了……
+
+https://mp.weixin.qq.com/s/OXN8Y5truLeslX8-UWgqmg
+
+宅男的福音：用GAN自动生成二次元萌妹子
+
+https://mp.weixin.qq.com/s/LAS0KgPiVekGdQXbqlw1cQ
+
+深度学习的三大生成模型：VAE、GAN、GAN的变种
+
+https://mp.weixin.qq.com/s/N7YU-YeXiVX7gSB-mzYgnw
+
+生成式对抗网络GAN的研究进展与展望
+
+https://mp.weixin.qq.com/s/gDzti2DISq_cwGbP5T7ICQ
+
+聊聊对抗自编码器
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
@@ -194,49 +246,4 @@ CV的输入一般是由像素组成的矩阵。相比其他领域的数据挖掘
 
 **Step 3**：投入更大运算量，以识别车牌上的文字。（这一步是常规做法。）
 
-## RCNN的基本原理
-
-RCNN是Ross Girshick于2014年提出的深度模型。
-
->注：Ross Girshick（网名：rbg），芝加哥大学博士（2012），Facebook研究员。他和何恺明被誉为CV界深度学习的**双子新星**。   
->个人主页：   
->http://www.rossgirshick.info/
-
-论文：
-
-《Rich feature hierarchies for accurate object detection and semantic segmentation》
-
-代码：
-
-https://github.com/rbgirshick/rcnn
-
-RCNN相对传统方法的改进：
-
-**速度**：经典的目标检测算法使用滑动窗法依次判断所有可能的区域。RCNN则(采用Selective Search方法)预先提取一系列较可能是物体的候选区域，之后仅在这些候选区域上(采用CNN)提取特征，进行判断。
-
-**训练集**：经典的目标检测算法在区域中提取人工设定的特征。RCNN则采用深度网络进行特征提取。
-
-使用两个数据库：
-
-一个较大的识别库（ImageNet ILSVC 2012）：标定每张图片中物体的类别。一千万图像，1000类。
-
-一个较小的检测库（PASCAL VOC 2007）：标定每张图片中，物体的类别和位置，一万图像，20类。
-
-RCNN使用识别库进行预训练得到CNN（有监督预训练），而后用检测库调优参数，最后在检测库上评测。
-
-这实际上就是《深度学习（七）》中提到的fine-tuning的思想。
-
-## RCNN算法的基本流程
-
-![](/images/article/rcnn.png)
-
-RCNN算法分为4个步骤：
-
-**Step 1**：候选区域生成。一张图像生成1K~2K个候选区域（采用Selective Search方法）。
-
-**Step 2**：特征提取。对每个候选区域，使用深度卷积网络提取特征（CNN）。
-
-**Step 3**：类别判断。特征送入每一类的SVM分类器，判别是否属于该类。
-
-**Step 4**：位置精修。使用回归器精细修正候选框位置。
 

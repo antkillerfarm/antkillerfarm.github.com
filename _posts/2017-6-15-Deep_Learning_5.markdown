@@ -1,28 +1,35 @@
 ---
 layout: post
-title:  深度学习（五）——DRN, Bi-directional RNN, Attention, seq2seq, DMN
+title:  深度学习（五）——神经元激活函数进阶, DRN, Bi-directional RNN, Attention
 category: theory 
 ---
 
-# 神经元激活函数进阶
+# 神经元激活函数进阶（续）
 
-## ReLU的缺点（续）
+在《深度学习（一、二）》中，我们探讨了ReLU相对于sigmoid函数的改进，以及一些保证深度神经网络能够训练的措施。然而即便如此，深度神经网络的训练仍然是一件非常困难的事情，还需要更多的技巧和方法。
+
+## 激活函数的作用
+
+神经网络中激活函数的主要作用是提供网络的**非线性建模能力**，如不特别说明，激活函数一般而言是非线性函数。
+
+假设一个神经网络中仅包含线性卷积和全连接运算，那么该网络仅能够表达线性映射，即便增加网络的深度也依旧还是线性映射，难以有效建模实际环境中非线性分布的数据。
+
+加入非线性激活函数之后，深度神经网络才具备了分层的非线性映射学习能力。因此，激活函数是深度神经网络中不可或缺的部分。
+
+>注意：其实也有采用线性激活函数的神经网络，亦被称为linear neurons。但是这些神经网络，基本只有学术价值而无实际意义。
+
+## ReLU的缺点
+
+深度神经网络的训练问题，最早是2006年Hinton使用**分层无监督预训练**的方法解决的，然而该方法使用起来很不方便。
+
+而深度网络的**直接监督式训练**的最终突破，最主要的原因是采用了新型激活函数ReLU。
+
+但是ReLU并不完美。它在x<0时硬饱和，而当x>0时，导数为1。所以，ReLU能够在x>0时保持梯度不衰减，从而缓解梯度消失问题。但随着训练的推进，部分输入会落入硬饱和区，导致对应权重无法更新。这种现象被称为**神经元死亡**。
+
+ReLU还经常被“诟病”的另一个问题是输出具有**偏移现象**，即输出均值恒大于零。偏移现象和神经元死亡会共同影响网络的收敛性。实验表明，如果不采用Batch Normalization，即使用MSRA初始化30层以上的ReLU网络，最终也难以收敛。
+
 
 为了解决上述问题，人们提出了Leaky ReLU、PReLU、RReLU、ELU、Maxout等ReLU的变种。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/22142013
-
-深度学习中的激活函数导引
-
-http://blog.csdn.net/u012328159/article/details/69898137
-
-几种常见的激活函数
-
-https://mp.weixin.qq.com/s/Hic01RxwWT_YwnErsJaipQ
-
-什么是激活函数？
 
 ## 其他激活函数
 
@@ -39,6 +46,24 @@ x, & -1\le x \le 1 \\
 ### soft sign
 
 $$\text{softsign}(x)=\frac{x}{1+|x|}$$
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/22142013
+
+深度学习中的激活函数导引
+
+http://blog.csdn.net/u012328159/article/details/69898137
+
+几种常见的激活函数
+
+https://mp.weixin.qq.com/s/Hic01RxwWT_YwnErsJaipQ
+
+什么是激活函数？
+
+https://mp.weixin.qq.com/s/4gElB_8AveWuDVjtLw5JUA
+
+深度学习激活函数大全
 
 # Deep Residual Network
 
@@ -176,74 +201,4 @@ https://mp.weixin.qq.com/s/xr_1ZYbvADMMwgxLEAflCw
 https://mp.weixin.qq.com/s/Nyq_36aFmQYRWdpgbgxpuA
 
 将注意力机制引入RNN，解决5大应用领域的序列预测问题
-
-# seq2seq
-
-seq2seq最早用于Neural Machine Translation领域（与之相对应的有Statistical Machine Translation）。训练后的seq2seq模型，可以根据输入语句，自动生成翻译后的输出语句。
-
-![](/images/article/seq2seq.png)
-
-上图是seq2seq的结构图。可以看出seq2seq实际上是一种Encoder-Decoder结构。
-
-在Encoder阶段，RNN依次读入输入序列。但由于这时，没有输出序列与之对应，因此这仅仅相当于一个对隐层的编码过程，即将句子的语义编码为隐层的状态向量。
-
-从中发现一个问题：状态向量的维数决定了存储的语义的内容上限（显然不能指望，一个200维的向量，能够表示一部百科全书。）因此，seq2seq通常只用于短文本的翻译。
-
-在Decoder阶段，我们根据输出序列，反向修正RNN的参数，以达到训练神经网络的目的。
-
-参考：
-
-https://github.com/ematvey/tensorflow-seq2seq-tutorials
-
-一步步的seq2seq教程
-
-http://blog.csdn.net/sunlylorn/article/details/50607376
-
-seq2seq模型
-
-http://datartisan.com/article/detail/120.html
-
-Seq2Seq的DIY简介
-
-http://www.cnblogs.com/Determined22/p/6650373.html
-
-DL4NLP——seq2seq+attention机制的应用：文档自动摘要（Automatic Text Summarization）
-
-http://blog.csdn.net/young_gy/article/details/73412285
-
-基于RNN的语言模型与机器翻译NMT
-
-http://karpathy.github.io/2015/05/21/rnn-effectiveness/
-
-The Unreasonable Effectiveness of Recurrent Neural Networks
-
-https://mp.weixin.qq.com/s/8u3v9XzECkwcNn5Ay-kYQQ
-
-基于Depthwise Separable Convolutions的Seq2Seq模型_SliceNet原理解析
-
-https://mp.weixin.qq.com/s/H6eYxS7rXGDH_B8Znrxqsg
-
-seq2seq中的beam search算法过程
-
-https://mp.weixin.qq.com/s/U1yHIc5Zq0yKCezRm185VA
-
-Attentive Sequence to Sequence Networks
-
-https://mp.weixin.qq.com/s/cGXANj7BB2ktTdPAL4ZEWA
-
-图解神经网络机器翻译原理：LSTM、seq2seq到Zero-Shot
-
-# DMN
-
-Question answering是自然语言处理领域的一个复杂问题。它需要对文本的理解力和推理能力。大部分NLP问题都可以转化为一个QA问题。Dynamic Memory Networks可以用来处理QA问题。DMN的输入包含事实输入，问题输入，经过内部处理形成片段记忆，最终产生问题的答案。
-
-DMN可进行端到端的训练，并在多种任务上取得了state-of-the-art的效果：包括QA（Facebook 的 bAbI 数据集），情感分析文本分类（Stanford Sentiment Treebank）和词性标注（WSJ-PTB）。
-
-![](/images/article/DMN.png)
-
-参考：
-
-http://blog.csdn.net/javafreely/article/details/71994247
-
-动态记忆网络
 
