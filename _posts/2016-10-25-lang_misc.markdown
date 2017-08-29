@@ -367,4 +367,10 @@ http://had.co.nz/ggplot2/
 
 >注：Hadley Wickham，ggplot2的作者，Rstudio的首席科学家。
 
+## 参考
+
+http://blog.csdn.net/yepeng2007fei/article/details/77677625
+
+批量读取文本文件并生成自己的肖像词云
+
 

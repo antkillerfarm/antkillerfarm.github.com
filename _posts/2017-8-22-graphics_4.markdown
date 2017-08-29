@@ -82,6 +82,40 @@ SIFT算法是CV领域在DL进入之前的20年中，最重要的成果。
 
 2.对图像的分析和图像的位置、大小、角度以及仿射变换无关，即满足平移不变性、尺度不变性、欧几里德不变性以及仿射不变性。这主要体现了物体的**空间位置变化**。
 
+## DOG & LOG
+
+DOG（Difference of Gaussians）和LOG（Laplacian of Gaussian）是尺度空间常用的两种算子。
+
+DOG的定义如下：
+
+$$\Gamma_{\sigma_1,\sigma_2}(x) = I*\frac{1}{\sigma_1\sqrt{2\pi}} \, e^{-(x^2)/(2\sigma^2_1)}-I*\frac{1}{\sigma_2\sqrt{2\pi}} \, e^{-(x^2)/(2\sigma_2^2)}$$
+
+DOG实际上就是两个不同方差的Gaussian核做差。它最典型的用法就是《图像处理理论（二）》中提到的**高斯差分金字塔**。
+
+LOG的计算分2步：
+
+1.计算Gaussian核和图像的卷积$$G(x,y)*f(x,y)$$。
+
+其中：
+
+$$G(x,y) = \frac{1}{2\pi \sigma^2} \exp \left(-\frac{x^2 + y^2}{2 \sigma^2}\right)$$
+
+2.对结果应用Laplace算子。
+
+Laplace算子的定义为：
+
+$$\Delta f = \nabla^2 f = \nabla \cdot \nabla f$$
+
+其中：
+
+$$\nabla = \left ( \frac{\partial}{\partial x_1} , \ldots , \frac{\partial}{\partial x_n} \right )$$
+
+参见：
+
+http://blog.csdn.net/kezunhai/article/details/11579785
+
+高斯拉普拉斯算子（Laplace of Gaussian）
+
 ## 参考
 
 http://blog.csdn.net/zddblog/article/details/7521424
@@ -98,7 +132,13 @@ Bag-of-words模型是信息检索领域常用的文档表示方法。在信息�
 
 ![](/images/article/cv_bow.jpg)
 
-由于图像中的词汇不像文本文档中的那样是现成的，我们需要首先从图像中提取出相互独立的视觉词汇，这通常需要经过三个步骤：（1）特征检测，（2）特征表示，（3）单词本的生成。
+由于图像中的词汇不像文本文档中的那样是现成的，我们需要首先从图像中提取出相互独立的视觉词汇，这通常需要经过三个步骤：
+
+（1）特征检测。
+
+（2）特征表示。
+
+（3）单词本的生成。
 
 而SIFT算法是提取图像中局部不变特征的应用最广泛的算法，因此我们可以用SIFT算法从图像中提取不变特征点，作为视觉词汇，并构造单词表，用单词表中的单词表示一幅图像。
 
