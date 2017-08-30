@@ -90,10 +90,6 @@ http://mp.weixin.qq.com/s/YRwGwelyA3VOYZ4XGAjUBw
 
 CNN 感受野首次可视化：深入解读及计算指南
 
-http://mp.weixin.qq.com/s/dvuX3Ih_DZrv0kgqFn8-lg
-
-卷积神经网络结构变化——可变形卷积网络deformable convolutional networks
-
 https://mp.weixin.qq.com/s/EJyG3Y4EHTGMm_Q1mY4RvA
 
 CNN入门手册（上）

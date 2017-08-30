@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十）——YOLO
+title:  深度学习（十）——YOLO, 花式卷积
 category: theory 
 ---
 
@@ -53,4 +53,39 @@ https://github.com/TimoSaemann/ENet
 《ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation》
 
 http://blog.csdn.net/zijinxuxu/article/details/67638290
+
+# 花式卷积
+
+https://github.com/vdumoulin/conv_arithmetic
+
+Convolution arithmetic
+
+http://deeplearning.net/software/theano_versions/dev/tutorial/conv_arithmetic.html
+
+Convolution arithmetic
+
+https://mp.weixin.qq.com/s/dR2nhGqpz7OdmxKPYSaaxw
+
+如何理解空洞卷积（dilated convolution）？
+
+https://mp.weixin.qq.com/s/CLFbhWMcat4rN8YS_7q25g
+
+这12张图生动的告诉你，深度学习中的卷积网络是怎么一回事？
+
+http://mp.weixin.qq.com/s/dvuX3Ih_DZrv0kgqFn8-lg
+
+卷积神经网络结构变化——可变形卷积网络deformable convolutional networks
+
+http://cs.nyu.edu/~fergus/drafts/utexas2.pdf
+
+Deconvolutional Networks
+
+https://zhuanlan.zhihu.com/p/22245268
+
+CNN-反卷积
+
+http://bonerkiller.coding.me/2016/10/29/2016-10-29-deconv/
+
+Transposed Convolution, Fractionally Strided Convolution or Deconvolution（中文blog）
+
 

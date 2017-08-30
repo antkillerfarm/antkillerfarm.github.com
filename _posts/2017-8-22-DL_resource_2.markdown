@@ -234,10 +234,6 @@ https://mp.weixin.qq.com/s/yQG0983RjQHIkt9oBlkDqQ
 
 瞎谈CNN：通过优化求解输入图像
 
-https://mp.weixin.qq.com/s/T-v9OTcJa5OQ71QmYrFtbg
-
-斯坦福大学提出SGD动量自调节器YellowFin
-
 https://mp.weixin.qq.com/s/sCxyk8WEb8W2-mq-tTQs6A
 
 LeCun台大演讲
@@ -253,10 +249,6 @@ https://mp.weixin.qq.com/s/IS5iAPZeUrvvyWs29O8Ukg
 https://mp.weixin.qq.com/s/qWJarPrjOrwxSX77xQ9rCw
 
 面向卷积神经网络的卷积核冗余消除策略
-
-https://mp.weixin.qq.com/s/dR2nhGqpz7OdmxKPYSaaxw
-
-如何理解空洞卷积（dilated convolution）？
 
 https://mp.weixin.qq.com/s/pnCdKcdRCxhFEcXyWb9xlQ
 

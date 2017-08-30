@@ -100,7 +100,7 @@ LOG的计算分2步：
 
 $$G(x,y) = \frac{1}{2\pi \sigma^2} \exp \left(-\frac{x^2 + y^2}{2 \sigma^2}\right)$$
 
-2.对结果应用Laplace算子。
+2.对第1步的结果应用Laplace算子。
 
 Laplace算子的定义为：
 
@@ -110,11 +110,49 @@ $$\Delta f = \nabla^2 f = \nabla \cdot \nabla f$$
 
 $$\nabla = \left ( \frac{\partial}{\partial x_1} , \ldots , \frac{\partial}{\partial x_n} \right )$$
 
+因为：
+
+$$\Delta[G(x,y)*f(x,y)] = [\Delta G(x,y)]*f(x,y)$$
+
+一般将$$[\Delta G(x,y)]$$，称为LOG算子。
+
+![](/images/article/dog_vs_log.jpg)
+
+从上图可以看出两者的函数图像是非常相似的。
+
 参见：
 
 http://blog.csdn.net/kezunhai/article/details/11579785
 
 高斯拉普拉斯算子（Laplace of Gaussian）
+
+## 构建DOG金字塔
+
+《图像处理理论（二）》中提到的DOG金字塔只用了一个5*5的Gaussian核。如果使用多种Gaussian核，就可得到如下所示的DOG金字塔。
+
+![](/images/article/dog_pyramid.jpg)
+
+上图中，尺度相同，Gaussian核不同的图片被分为一组（Octave）。
+
+## 空间极值点检测
+
+关键点是由DOG空间的局部极值点组成的，关键点的初步探查是通过同一组内各DoG相邻两层图像之间比较完成的。
+
+为了寻找DoG函数的极值点，每一个像素点要和它所有的相邻点比较，看其是否比它的图像域和尺度域的相邻点大或者小。
+
+![](/images/article/dog_pyramid_2.jpg)
+
+如上图所示，中间的检测点要与同尺度的8个相邻点和上下相邻尺度对应的9×2个点共26个点比较，以确保在尺度空间和二维图像空间都检测到极值点。
+
+当然这样产生的极值点并不全都是稳定的特征点，因为某些极值点响应较弱，而且DOG算子会产生较强的边缘响应。
+
+## 关键点定位
+
+![](/images/article/extreme_point.jpg)
+
+离散空间的极值点并不是真正的极值点，上图显示了二维函数离散空间得到的极值点与连续空间极值点的差别。利用已知的离散空间点插值得到的连续空间极值点的方法叫做子像素插值（Sub-pixel Interpolation）。
+
+
 
 ## 参考
 

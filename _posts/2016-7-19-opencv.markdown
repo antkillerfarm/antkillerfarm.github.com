@@ -278,6 +278,10 @@ https://www.deeplearning.ai/
 
 吴恩达离开百度之后开设的DL教程
 
+https://study.163.com/topics/deepLearning/
+
+这是网易提供的deeplearning.ai课程的中文版
+
 https://github.com/dformoso/machine-learning-mindmap
 
 ML思维导图

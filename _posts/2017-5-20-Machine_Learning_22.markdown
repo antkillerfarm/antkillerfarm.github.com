@@ -206,6 +206,14 @@ https://mp.weixin.qq.com/s/VoBK-l_ieSg2UupC2ix2pA
 
 听说你了解深度学习最常用的学习算法：Adam优化算法？
 
+https://mp.weixin.qq.com/s/T-v9OTcJa5OQ71QmYrFtbg
+
+斯坦福大学提出SGD动量自调节器YellowFin
+
+https://mp.weixin.qq.com/s/4XOI8Dq6fqe8rhtJjeyxeA
+
+超级收敛：使用超大学习率超快速训练残差网络
+
 # 单分类SVM&多分类SVM
 
 原始的SVM主要用于二分类，然而稍加变化，也可用于单分类和多分类。

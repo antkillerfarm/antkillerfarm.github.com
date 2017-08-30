@@ -262,6 +262,10 @@ https://mp.weixin.qq.com/s/SBppyDBWqQUariiHbpaq1w
 
 实时深度学习的推理加速和连续学习
 
+https://mp.weixin.qq.com/s/83HufWMDnuXIOCCfgqeDJw
+
+为什么说持续学习才是AI的关键
+
 https://mp.weixin.qq.com/s/VAEH_241IAuEH5S6H6ep5w
 
 UC伯克利提出新型视觉描述系统，物体描述无需大量样本

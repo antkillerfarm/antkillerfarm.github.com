@@ -4,12 +4,6 @@ title:  数学狂想曲（六）——闵可夫斯基距离, 马氏距离
 category: theory 
 ---
 
-# 花式卷积
-
-https://mp.weixin.qq.com/s/CLFbhWMcat4rN8YS_7q25g
-
-这12张图生动的告诉你，深度学习中的卷积网络是怎么一回事？
-
 # 闵可夫斯基距离
 
 >Hermann Minkowski（1864-1909），德国数学家，哥廷根大学数学教授，爱因斯坦的老师。

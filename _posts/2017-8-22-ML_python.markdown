@@ -222,6 +222,8 @@ https://mp.weixin.qq.com/s/hFg1TvNocrMi5CpDtvRLcQ
 
 推荐一个计算“造人”成功与否的贝叶斯模型！
 
+http://www.sohu.com/a/168170785_642762
 
+基于机器学习的Python信用卡欺诈检测
 
 

@@ -355,6 +355,10 @@ https://mp.weixin.qq.com/s/U-dlYhnaR8OQw2UKYKUWKQ
 
 知识图谱前沿技术课程实录
 
+https://mp.weixin.qq.com/s/MZE_SXsNg6Yt4dz2fmB1sA
+
+阿里知识图谱首次曝光：每天千万级拦截量，亿级别全量智能审核
+
 ## 论文
 
 《Distant Supervision for relation extraction without labeled data》
