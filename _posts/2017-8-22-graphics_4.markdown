@@ -50,6 +50,22 @@ http://www.cs.jhu.edu/~misha/Fall04/GHT1.pdf
 
 http://blog.csdn.net/poem_qianmo/article/details/26977557
 
+# HOG
+
+Histogram of oriented gradients是一种用于物体检测的算子。
+
+![](/images/article/hog.png)
+
+HOG的计算步骤，如上图所示：
+
+1.首先将图像均匀的分为若干个区域。这样的区域一般叫做Bin或Cell。
+
+参考：
+
+http://blog.csdn.net/liulina603/article/details/8291093
+
+HOG特征
+
 # SIFT
 
 ## 概述

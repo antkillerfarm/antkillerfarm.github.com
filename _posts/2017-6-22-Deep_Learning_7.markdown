@@ -173,6 +173,12 @@ https://zhuanlan.zhihu.com/p/25071913
 
 2016年，GAN开始发力，年底时已有52个变种。2017年6月底，更达到142个变种。
 
+![](/images/article/GAN_structure.png)
+
+上图的源地址：
+
+https://github.com/hwalsuklee/tensorflow-generative-model-collections
+
 参考：
 
 https://github.com/hindupuravinash/the-gan-zoo
