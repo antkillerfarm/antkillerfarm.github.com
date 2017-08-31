@@ -42,6 +42,10 @@ http://web.stanford.edu/~jurafsky/slp3/ed3book.pdf
 
 《语音与语言处理》第三版，NLP和语音合成方面的专著
 
+https://mp.weixin.qq.com/s/5KhTWdOk-b84DXmoVr68-A
+
+CIPS ATT 2017 文本分析和自然语言课程PPT
+
 ## 书籍
 
 http://ccl.pku.edu.cn/alcourse/nlp/LectureNotes/Natural%20Language%20Processing%20with%20Python.pdf

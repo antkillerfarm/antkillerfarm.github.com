@@ -148,11 +148,17 @@ https://github.com/elki-project/elki
 
 ## smile
 
-Statistical Machine Intelligence and Learning Engine虽然没有GUI，但却有一个类似Spark的命令行界面，以及类似Matplotlib的数据可视化接口。这是一个
+Statistical Machine Intelligence and Learning Engine虽然没有GUI，但却有一个类似Spark的命令行界面，以及类似Matplotlib的数据可视化接口。这是一个留美华人工程师写的统计和NLP方面的库。
 
 官网：
 
 https://haifengl.github.io/smile/
+
+参考：
+
+https://mp.weixin.qq.com/s/UZWSUUuPWcyv6yUx-woF4g
+
+Smile实战（一）SVM
 
 ## java-string-similarity
 

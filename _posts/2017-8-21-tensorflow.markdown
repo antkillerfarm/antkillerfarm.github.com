@@ -195,6 +195,28 @@ tensorflow/contrib/slim
 
 https://github.com/mnuke/tf-slim-mnist
 
+参见：
+
+http://geek.csdn.net/news/detail/126133
+
+如何用TensorFlow和TF-Slim实现图像分类与分割
+
+http://www.infoq.com/cn/articles/introduction-of-tensorflow-part06
+
+深入浅出TensorFlow（六）TensorFlow高层封装
+
+实战心得：
+
+tf-slim-mnist例子中mnist数据不是原始格式的，而是经过了`datasets/download_and_convert_mnist.py`的转换。
+
+该示例执行时也没有控制台的输出信息，一度让我觉得很不方便。后来才发现，原来可以用TensorBoard查看log文件夹。
+
+TensorBoard是一个http服务，用以监控TensorFlow的执行。
+
+`tensorboard --logdir=log`
+
+启动之后，用浏览器打开`http://localhost:6006`即可。
+
 ## 参考
 
 https://github.com/yahoo/TensorFlowOnSpark

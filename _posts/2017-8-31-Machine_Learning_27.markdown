@@ -38,6 +38,10 @@ http://www.cnblogs.com/fengfenggirl/p/iForest.html
 
 异常检测算法--Isolation Forest
 
+https://mp.weixin.qq.com/s/xsuLIMPJVCThBGMRlz09Hg
+
+Isolation Forest算法原理详解
+
 # 自适应滤波器
 
 《自适应滤波器原理》，Simon Haykin著。

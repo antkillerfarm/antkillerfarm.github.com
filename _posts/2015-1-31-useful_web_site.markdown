@@ -366,6 +366,10 @@ https://mp.weixin.qq.com/s/INlW41lJWWjfAHJAnnfB8A
 
 程序员不能错过的28份技术知识图谱，你的进阶路上必备
 
+https://mp.weixin.qq.com/s/VRvPHc3v824tZ1kednFZ9Q
+
+阿里政务云技术架构探讨
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

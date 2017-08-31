@@ -108,19 +108,33 @@ Jekyll原生支持maruku，rdiscount，kramdown，redcarpet等markdown渲染器�
 
 `git stash pop`
 
-4.查看远程仓库的地址
+4.回退和前进
+
+回退历史版本：
+
+`git checkout`
+
+回退之后，如果不满意，就需要前进操作，以恢复后续的更新。然而这个时候有个麻烦的地方，在`git log`中已经找不到后续的更新记录，也就查不到commit id。这时可以用`git reflog`查看git操作记录，以获得想要的commit id，并checkout之。
+
+5.查看远程仓库的地址
 
 有的时候时间一长，就会搞忘当初下载代码时的远程仓库的地址。这时可以使用`git remote -v`查看之。
 
-5.check out有submodule的版本库
+6.check out有submodule的版本库
 
 `git clone --recursive URL`
 
-6.checkout和reset的区别
+7.checkout和reset的区别
 
-在恢复历史版本的时候，checkout只是检出历史版本，而不会删除历史版本之后的版本记录，但reset就不同了，reset相当于版本库回退到历史版本，因此后续的版本记录都没有了。
+http://wbj05791467.blog.163.com/blog/static/120329697201331735158420/
 
-7.制作和应用patch
+git reset和git checkout
+
+https://segmentfault.com/a/1190000006185954
+
+git的reset和checkout的区别
+
+8.制作和应用patch
 
 制作patch主要有两种方式：`git diff`和`git format-patch`。前者生成通用patch，而后者生成git专用patch。使用示例：
 
@@ -128,7 +142,7 @@ Jekyll原生支持maruku，rdiscount，kramdown，redcarpet等markdown渲染器�
 
 应用patch：`git am`
 
-8.使用tag
+9.使用tag
 
 打标签：
 
@@ -142,7 +156,7 @@ Jekyll原生支持maruku，rdiscount，kramdown，redcarpet等markdown渲染器�
 
 `git checkout v0.1.2`
 
-9.强制更新
+10.强制更新
 
 当发生冲突，需要放弃修改，强制更新的时候，可以：
 
@@ -217,46 +231,4 @@ http://blogs.atlassian.com/2014/05/handle-big-repositories-git/
 而现在的话，你可以有别的选择，比如ifttt.com。ifttt是If this then that的缩写。国内的山寨版本有“如果云”。这些网站允许你自己创建一定的规则，来完成一定的动作。具体到当前的目标，就是创建以下规则：一旦rss的内容有更新，就立即将新内容以电子邮件的方式发送到我的邮箱里。
 
 剩下的问题就简单了，找一个好用的邮箱。使用邮箱的手机客户端，将邮件下载到手机上，这样每天的早报就有了:)
-
-## 版本管理工具的前世今生
-
-参考Wiki的相关词条，可将版本工具分为三代：
-
-1.本地版本管理
-	
-开源：SCCS (1972) RCS (1982)
-
-私有：PVCS (1985) QVCS (1991)
-
-以RCS最为著名，不过由于年代久远，我从来没用过。
-
-2.客户端/服务器版本管理
-
-开源：CVS (1986, 1990 in C) CVSNT (1998) QVCS Enterprise (1998) Subversion (2000)
-
-私有：Software Change Manager (1970s) Panvalet (1970s) Endevor (1980s) DSEE (1984) Synergy (1990) ClearCase (1992) CMVC (1994) Visual SourceSafe (1994) Perforce (1995) StarTeam (1995) Integrity (2001) Surround SCM (2002) AccuRev SCM (2002) SourceAnywhere (2003) Vault (2003) Team Foundation Server (2005) Team Concert (2008)
-
-我用过的包括CVS、SVN、ClearCase和Visual SourceSafe。
-
-这一代的工具，以CVS为开端。ClearCase和Visual SourceSafe与CVS差不多同时期，因此功能上也多有相同，总的来说就是ClearCase功能强，但不好用。SourceSafe好用，但功能差。
-
-其中，ClearCase我在之前的公司有用过，当时为了简单的check in和check out，竟然还需要编写脚本以简化流程。不过功能的确是没的说，分支合并权限都不在话下。
-
-VSS以现在的角度来看，基本就是个垃圾了，它是MS收购的一家公司的产品，目的是填补VS在这方面的空白。但这样弱的工具，即使MS内部的人也基本不用，这也是后来MS发布Team Foundation Server的重要原因。
-
-SVN是这一代的集大成者，使用简单的同时，仍保有相当强度的功能，唯一诟病的就是合并功能太弱。
-
-3.分布式版本管理
-
-开源：GNU arch (2001) Darcs (2002) DCVS (2002) ArX (2003) Monotone (2003) SVK (2003) Codeville (2005) Bazaar (2005) Git (2005) Mercurial (2005) Fossil (2007) Veracity (2010)
-
-私有：TeamWare (1990s?) Code Co-op (1997) BitKeeper (1998) Plastic SCM (2006)
-
-早期比较有名的是BitKeeper。它在2002~2005年是Linux Kernel所使用的版本工具。Linus曾经非常喜欢它。可惜后来由于商业利益的关系，开发者的要挟惹毛了Linus。大神发威开发了Git，从此BitKeeper也就无人问津了。
-
-从这件事情可以看出，Linus其实并不是一个像Richard Stallman那样的开源洁癖狂，现有的东西够用，他就懒得节外生枝了。但也不要因此小看他的水平，大神发起威来，搞死像BitKeeper这样的工具还是绰绰有余的。
-
-目前较为主流的Bazaar、Git和Mercurial都出现在2005年，这并不是偶然的。实际上都是BitKeeper和开源社区之间战争的产物。
-
-后Git时代的工具，如Fossil和Veracity，相比Git来说，对权限、BUG跟踪之类的功能做了进一步的扩展。
 
