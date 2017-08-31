@@ -256,7 +256,7 @@ SPPNet-引入空间金字塔池化改进RCNN
 
 # Fast R-CNN
 
-
+![](/images/article/fast_rcnn_p.png)
 
 参考：
 

@@ -338,5 +338,17 @@ https://mp.weixin.qq.com/s/YbdiEHb8ld1pp1ehgBzTOQ
 
 将未来信息作为正则项，Twin Networks加强RNN对长期依赖的建模能力
 
+https://mp.weixin.qq.com/s/fqpZ8EHgiNupXumvTMSecw
+
+北大团队研发“车脸”识别系统，不看车牌看外观特征实现精确识别
+
+https://mp.weixin.qq.com/s/ws1R-VPyJY6J18OttBDYog
+
+超少量数据训练神经网络：IEEE论文提出径向变换实现图像增强
+
+https://mp.weixin.qq.com/s/eyl0NMa1p_RmQIwnweuBgw
+
+10张图盘点计算机视觉、语音和文本理解里程碑
+
 
 

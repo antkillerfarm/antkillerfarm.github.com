@@ -327,6 +327,10 @@ https://mp.weixin.qq.com/s/VlvQmrS7Qi2qq6fTBXKTYw
 
 从零开始用TensorFlow搭建卷积神经网络
 
+https://mp.weixin.qq.com/s/hETnA81WlkMG3rftAHg9bw
+
+PyTorch和TensorFlow哪家强：九项对比读懂各自长项短板
+
 ## 我的TensorFlow实践
 
 ### MNIST+Softmax
