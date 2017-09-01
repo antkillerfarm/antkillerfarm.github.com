@@ -52,6 +52,16 @@ Ubuntu 16.04正式发布（2016.4.21）之后，我第一时间下载了下来�
 
 `sudo apt-get purge linux-image-4.4.0-21-generic linux-headers-4.4.0-21`
 
+# 查看版本号
+
+## 查看ubuntu版本号
+
+`cat /etc/issue`
+
+## 查看内核版本号
+
+`cat /proc/version`
+
 # Graphviz
 
 Graphviz是一个绘“图”软件。这里的“图”不是指一般意义上的图片或者照片，而是指数据结构或者图论中的抽象意义上的数学概念中的“图”。Graphviz就是一个用来将“图”可视化的工具集。

@@ -363,6 +363,10 @@ https://mp.weixin.qq.com/s/MZE_SXsNg6Yt4dz2fmB1sA
 
 阿里知识图谱首次曝光：每天千万级拦截量，亿级别全量智能审核
 
+https://mp.weixin.qq.com/s/WIro7pk7kboMvdwpZOSdQA
+
+东南大学漆桂林：知识图谱的应用
+
 ## 论文
 
 《Distant Supervision for relation extraction without labeled data》
@@ -388,41 +392,5 @@ A small tool to draw a only-text tree as the result of stanford coreNLP
 http://www.cnblogs.com/CheeseZH/p/5768389.html
 
 依存句法分析与语义依存分析的区别
-
-http://www.taodocs.com/p-4795349.html
-
-基于大规模问答语料的问题检索系统
-
-https://wenku.baidu.com/view/d38ab1e8856a561252d36fab.html
-
-短文本相似度计算在用户交互式问答系统中的应用
-
-https://zhuanlan.zhihu.com/p/26461511
-
-关于WordNet，我的一些用法和思路
-
-http://mp.weixin.qq.com/s/YUV2YDXCH9fS_3ckPPBsFQ
-
-手把手教你如何用TensorFlow实现基于DNN的文本分类
-
-http://mp.weixin.qq.com/s/XPlyWdfZbOR5z25Ly-bUGQ
-
-如何在Pytorch中通过OpenNMT系统实现神经机器翻译
-
-http://mp.weixin.qq.com/s?__biz=MzI4MDYzNzg4Mw==&mid=2247483922&idx=1&sn=cffbaf797cc58e303a65a8a2ae370b86
-
-句法分析（syntactic parsing）在NLP领域的应用是怎样的？
-
-https://github.com/facebookresearch/fairseq
-
-facebook的一个开源的翻译类深度学习项目。
-
-https://speechlab.sjtu.edu.cn/pages/sz128/homepage/year/10/27/survey-on-grammar-retrieval/
-
-论文调研：基于“规则、槽值”检索的口语语义理解
-
-http://geek.csdn.net/news/detail/230350
-
-无监督对话数据清洗利器：Data Purification Framework
 
 

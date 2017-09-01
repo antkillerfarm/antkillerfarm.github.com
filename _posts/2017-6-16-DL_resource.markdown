@@ -206,6 +206,10 @@ https://mp.weixin.qq.com/s/Ywx8TyVkEkE6KXnaW2SvxQ
 
 国内大互联网公司机器学习/深度学习面试题
 
+https://mp.weixin.qq.com/s/FlDYExlQDXBbASS7hnyTsA
+
+神经网络调试手册：从数据集与神经网络说起
+
 ### TPU & GPU & 并行
 
 https://zhuanlan.zhihu.com/p/25382177

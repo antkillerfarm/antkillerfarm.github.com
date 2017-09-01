@@ -84,8 +84,11 @@ https://zhuanlan.zhihu.com/p/22245268
 
 CNN-反卷积
 
-http://bonerkiller.coding.me/2016/10/29/2016-10-29-deconv/
+http://buptldy.github.io/2016/10/29/2016-10-29-deconv/
 
 Transposed Convolution, Fractionally Strided Convolution or Deconvolution（中文blog）
 
+https://buptldy.github.io/2016/10/01/2016-10-01-im2col/
+
+Implementing convolution as a matrix multiplication（中文blog）
 

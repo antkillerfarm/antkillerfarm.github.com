@@ -6,6 +6,42 @@ category: technology
 
 # NLP参考资源
 
+http://www.taodocs.com/p-4795349.html
+
+基于大规模问答语料的问题检索系统
+
+https://wenku.baidu.com/view/d38ab1e8856a561252d36fab.html
+
+短文本相似度计算在用户交互式问答系统中的应用
+
+https://zhuanlan.zhihu.com/p/26461511
+
+关于WordNet，我的一些用法和思路
+
+http://mp.weixin.qq.com/s/YUV2YDXCH9fS_3ckPPBsFQ
+
+手把手教你如何用TensorFlow实现基于DNN的文本分类
+
+http://mp.weixin.qq.com/s/XPlyWdfZbOR5z25Ly-bUGQ
+
+如何在Pytorch中通过OpenNMT系统实现神经机器翻译
+
+http://mp.weixin.qq.com/s?__biz=MzI4MDYzNzg4Mw==&mid=2247483922&idx=1&sn=cffbaf797cc58e303a65a8a2ae370b86
+
+句法分析（syntactic parsing）在NLP领域的应用是怎样的？
+
+https://github.com/facebookresearch/fairseq
+
+facebook的一个开源的翻译类深度学习项目。
+
+https://speechlab.sjtu.edu.cn/pages/sz128/homepage/year/10/27/survey-on-grammar-retrieval/
+
+论文调研：基于“规则、槽值”检索的口语语义理解
+
+http://geek.csdn.net/news/detail/230350
+
+无监督对话数据清洗利器：Data Purification Framework
+
 http://mp.weixin.qq.com/s/lmHWo9MUdv7ZMI7ARNmTSw
 
 拆开阿里小蜜的内核，看智能人机交互的实现逻辑
@@ -329,6 +365,10 @@ https://mp.weixin.qq.com/s/BWg77FZ2IugBhO_HWHpfHw
 https://mp.weixin.qq.com/s/jYUAKyTpm69J6Q34A06E-w
 
 百度提出冷聚变方法：使用语言模型训练Seq2Seq模型
+
+https://mp.weixin.qq.com/s/_UC2jlOfb34tfB_tsEXjMg
+
+谷歌全新神经网络架构Transformer：基于自注意力机制，擅长自然语言理解
 
 
 

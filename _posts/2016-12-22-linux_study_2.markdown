@@ -98,6 +98,12 @@ ps默认只显示当前用户的进程。这里是全显示的示例。
 
 `iconv -f gbk -t utf-8 -c 1.txt -o 2.txt`
 
+将文件从gbk编码转为utf-8编码。
+
+`mount -t nfs 192.168.0.1:/tmp /mnt/nfs`
+
+挂载NFS。
+
 ## GnuGo
 
 GnuGo是一个著名的开源围棋软件，但是它只有文字界面。一般使用Quarry作为它的GUI。

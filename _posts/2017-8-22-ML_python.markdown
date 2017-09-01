@@ -226,4 +226,7 @@ http://www.sohu.com/a/168170785_642762
 
 基于机器学习的Python信用卡欺诈检测
 
+https://mp.weixin.qq.com/s/p69x5YyWxMulxx_OwX3nzQ
+
+TuChart：基于Tushare和Echarts的股票数据视觉化应用
 
