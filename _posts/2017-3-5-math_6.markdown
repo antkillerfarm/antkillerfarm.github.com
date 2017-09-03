@@ -67,6 +67,10 @@ $$d_M(x,y)=\sqrt{(\frac{x_1-y_1}{s_1})^2+\dots+(\frac{x_p-y_p}{s_p})^2}=\sqrt{(x
 
 ![](/images/article/math_trench.jpg)
 
+# Gabriel's Horn
+
+![](/images/article/GabrielHorn.png)
+
 # 复变函数
 
 1.复球面表示。

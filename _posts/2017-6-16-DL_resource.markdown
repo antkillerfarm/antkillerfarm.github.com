@@ -210,111 +210,9 @@ https://mp.weixin.qq.com/s/FlDYExlQDXBbASS7hnyTsA
 
 神经网络调试手册：从数据集与神经网络说起
 
-### TPU & GPU & 并行
+http://www.jianshu.com/p/c9952d861328
 
-https://zhuanlan.zhihu.com/p/25382177
-
-AI芯片怎么降功耗？
-
-https://zhuanlan.zhihu.com/p/26882794
-
-Google深度揭秘TPU
-
-https://mp.weixin.qq.com/s/1X9xiZkmVPI-j-aipr-ocg
-
-AlphaGo Master最新架构和算法，谷歌云与TPU拆解
-
-https://mp.weixin.qq.com/s/8HIZRhb-KJOtPnQtQ3GQVg
-
-第一代芯片是CPU，第二代是GPU，第三代是什么？
-
-https://mp.weixin.qq.com/s/Jof-u8oUuLR4v7t3jjXEmA
-
-GPU和线下训练
-
-https://mp.weixin.qq.com/s/2aE5fzGZeyX-oFyWbcbA5A
-
-揭开神经网络加速器的神秘面纱之DianNao
-
-https://mp.weixin.qq.com/s/VAFb0DAZAUyDnjE6SlNcXw
-
-如何对比评价各种深度神经网络硬件？不妨给它们跑个分
-
-https://mp.weixin.qq.com/s/zTO4UZ3zDLZL0GOjv0YqrQ
-
-GPU加速深度学习
-
-https://mp.weixin.qq.com/s/IE6blClvhYlq3-QAGHo5ww
-
-TensorFlow分布式计算机制解读：以数据并行为重
-
-http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks
-
-神经网络的分布式训练
-
-https://mp.weixin.qq.com/s/7vxJTh4IHeqUsc7IsLFLSA
-
-解密哈萨比斯投资的IPU，他们要分英伟达一杯羹
-
-https://mp.weixin.qq.com/s/B4aQp_0YvS0jyUHNLQ5rRA
-
-IBM发布新型分布式深度学习系统：结合软硬件实现当前最优性能
-
-https://zhuanlan.zhihu.com/p/28445511
-
-浅析深度学习框架设计中的关键技术
-
-https://zhuanlan.zhihu.com/p/26594188
-
-浅析Yann LeCun提到的两款Dataflow Chip
-
-https://zhuanlan.zhihu.com/p/26552293
-
-Dataflow架构和神经网络加速器
-
-https://zhuanlan.zhihu.com/p/25728988
-
-AI芯片的几种选择，你更看好哪个？
-
-https://zhuanlan.zhihu.com/p/25510056
-
-ISSCC 2017看AI芯片的四大趋势
-
-https://zhuanlan.zhihu.com/p/26404565
-
-AI芯片四大流派论剑，中国能否弯道超车？
-
-https://zhuanlan.zhihu.com/p/27472524
-
-从AI芯片说起，一起来看芯片门类
-
-https://mp.weixin.qq.com/s/Cy_vb0PpcvGTDmlMt1VkSw
-
-从GPU、TPU到FPGA及其它：一文读懂神经网络硬件平台战局
-
-https://mp.weixin.qq.com/s/RKRDBiBzG5u2P2eaqNAFbg
-
-机器学习的处理器列表
-
-https://mp.weixin.qq.com/s/7JGLm-hkCZBNDLA98qvWNA
-
-自动生成硬件优化内核：陈天奇等人发布深度学习编译器TVM
-
-https://mp.weixin.qq.com/s/4Ii3um3jqfm5yKKxZAFdmA
-
-继1小时训练ImageNet之后，大批量训练扩展到了3万2千个样本
-
-https://mp.weixin.qq.com/s/kOCftzSbHe2mvDmlRp-ihA
-
-Jeff Dean：AI对计算机系统设计的影响
-
-https://mp.weixin.qq.com/s/XjNPaL6PC9LHX1PEGn5UZg
-
-微软实时AI系统“脑波计划”有多牛？看完秒懂！
-
-https://mp.weixin.qq.com/s/OkqUulFYHQSdgAbf9Fi9LA
-
-CoCoA：大规模机器学习的分布式优化通用框架
+如何设计一个深度学习项目
 
 ### 算法
 
@@ -408,10 +306,6 @@ https://mp.weixin.qq.com/s/VRmhAluhKWxyPbStmMoWtg
 
 一张速查表实现Apache MXNet深度学习框架五大特征的开发利用
 
-https://mp.weixin.qq.com/s/7R-Gvegnta9XBwIaSPBL_Q
-
-基于Tensorflow的验证码识别
-
 https://mp.weixin.qq.com/s/tyWUxJndljOSZT1-aYPgeg
 
 Keras入门必看教程
@@ -427,10 +321,6 @@ https://mp.weixin.qq.com/s/Shz6BmsOrtbEFtoJRSkl9A
 https://mp.weixin.qq.com/s/QjoxqCpN5JDroBowWmVk1Q
 
 边玩边入门深度学习，我们帮你找了10个简易应用demo
-
-https://mp.weixin.qq.com/s/AjoBOYES4CNm68bWcBTb3A
-
-看深度学习框架排名第一的TensorFlow如何进行时序预测！
 
 http://mp.weixin.qq.com/s/G4lQqiiVvmCW9SmX2blDEg
 
@@ -460,5 +350,36 @@ https://mp.weixin.qq.com/s/-39_7SbRFChDOOpcpJjVMQ
 
 如何在浏览器使用synaptic.js训练简单的神经网络推荐系统
 
+https://mp.weixin.qq.com/s/iwPI8g2JwabwiCO8kfw8Hw
 
+用开源工具DIY车牌识别系统
 
+https://mp.weixin.qq.com/s/ObIYpiH7MLZEi5XzXdGBYg
+
+从TensorFlow到PyTorch：九大深度学习框架哪款最适合你？
+
+### 量子计算 & 遗传算法
+
+https://www.zhihu.com/question/28171555
+
+如何理解“量子退火”？
+
+http://mp.weixin.qq.com/s/FjET9HFNjVVMjqQM2KhtKA
+
+5分钟看懂中国最新的量子计算机
+
+https://mp.weixin.qq.com/s/WcRYHwXnv9FWpMcOEwIdQg
+
+量子计算的发展及核心问题
+
+http://blog.csdn.net/u010945683/article/details/40987331
+
+遗传算法详解
+
+https://mp.weixin.qq.com/s/v1tLGUJ4My-tVWziSURHzA
+
+遗传算法的基本概念和实现
+
+https://mp.weixin.qq.com/s/rXDj5ryRvjbkenp9IEokDQ
+
+一文读懂遗传算法工作原理

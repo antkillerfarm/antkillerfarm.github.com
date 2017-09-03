@@ -254,3 +254,8 @@ $$\mathrm{MAE} = \frac{1}{n}\sum_{i=1}^n \left| f_i-y_i\right| =\frac{1}{n}\sum_
 
 $$\text{MPE} = \frac{100\%}{n}\sum_{t=1}^n \frac{a_t-f_t}{a_t}$$
 
+不同的loss函数有不同的用途，比如softmax一般用Cross Entropy作为loss函数。如下图所示：
+
+![](/images/article/cross_vs_mse.png)
+
+

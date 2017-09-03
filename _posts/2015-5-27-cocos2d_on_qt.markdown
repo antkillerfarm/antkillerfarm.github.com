@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Cocos2d-x v3在Qt 5上的移植, awk&sed&grep, lex&yacc
+title:  Cocos2d-x v3在Qt 5上的移植, lex&yacc, ANTLR
 category: technology 
 ---
 
@@ -179,56 +179,6 @@ https://github.com/ascetic85/quick-cocos2d-x-20130509
 
 这个代码有些老，是基于cocos2d-x v2的，但是基本的思路是一样的。
 
-# awk&sed&grep
-
-这三个工具是文本处理中用的比较多的工具，各有各的特色，且都支持正则表达式。
-
-一般来说，行处理优先考虑使用sed和grep，列处理优先考虑使用awk。通常情况下，组合使用多个命令，其命令编写的难度小于只使用一个命令。比如sed和grep也可以进行列处理，但语法难度远超awk，反之亦然。
-
-这里不打算列出各个命令的选项，而仅列出使用它们的一些示例：
-
-这里假设我们有一文件名为ab。
-
-## awk
-
-{% highlight bash %}
-awk '{print $1}' ab #显示第一列
-{% endhighlight %}
-
-## sed
-
-{% highlight bash %}
-sed '1d' ab #删除第一行 
-sed '$d' ab #删除最后一行
-sed '1,2d' ab #删除第一行到第二行
-sed '2,$d' ab #删除第二行到最后一行
-
-sed -n '1p' ab    #显示第一行 
-sed -n '$p' ab    #显示最后一行
-sed -n '1,2p' ab  #显示第一行到第二行
-sed -n '2,$p' ab  #显示第二行到最后一行
-
-sed -n '/ruby/p' ab #查询包括关键字ruby所在所有行
-sed -n '/\$/p' ab #查询包括关键字$所在所有行，使用反斜线\屏蔽特殊含义
-
-sed -n '/ruby/p' ab | sed 's/ruby/bird/g'    #替换ruby为bird
-sed -n '/ruby/p' ab | sed 's/ruby//g'        #删除ruby
-
-sed -e 's/.$//' mydos.txt > myunix.txt #dos->unix
-{% endhighlight %}
-
-## grep
-
-{% highlight bash %}
-grep 'ruby' ab #查询包括关键字ruby所在所有行
-grep -nri 'ruby' #n 显示行号，r 子目录搜索，i 忽略大小写
-{% endhighlight %}
-
-## 综合
-
-{% highlight bash %}
-ip addr show br-lan | grep 'inet ' | awk  '{print $2}' | sed 's/\/.*//g'
-{% endhighlight %}
 
 # lex&yacc （2014.2）
 
@@ -282,3 +232,22 @@ stmt_list:
 代码示例参见：
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/mylex
+
+# ANTLR
+
+ANTLR—Another Tool for Language Recognition，其前身是PCCTS，它为包括Java，C++，C#在内的语言提供了一个通过语法描述来自动构造自定义语言的识别器（recognizer），编译器（parser）和解释器（translator）的框架。
+
+官网：
+
+http://www.antlr.org/
+
+参考：
+
+http://yuzhouwan.com/posts/55501/
+
+Antlr
+
+https://www.ibm.com/developerworks/cn/java/j-lo-antlr/index.html
+
+使用Antlr开发领域语言
+

@@ -156,7 +156,7 @@ https://mp.weixin.qq.com/s/_dHjZQ_7_7H34PHhV_lC3w
 
 https://www.leiphone.com/news/201707/mFuwXGvZBhoVQD5S.html
 
-一秒分辨出杨臣刚、王大治和孙楠，这个黑产居然用AI 来"打码"
+一秒分辨出杨臣刚、王大治和孙楠，这个黑产居然用AI来"打码"
 
 http://mp.weixin.qq.com/s/Bt6EMD4opHCnRoHKYitsUA
 
@@ -349,4 +349,13 @@ https://mp.weixin.qq.com/s/ws1R-VPyJY6J18OttBDYog
 https://mp.weixin.qq.com/s/eyl0NMa1p_RmQIwnweuBgw
 
 10张图盘点计算机视觉、语音和文本理解里程碑
+
+https://mp.weixin.qq.com/s/3bAn-ev14lO9uxQzE0Tk0Q
+
+如何使用深度学习去除人物图像背景
+
+https://mp.weixin.qq.com/s/MnK2LTWR9qEKiiz3OMsSMQ
+
+深度学习漂亮的图像软分割一览
+
 

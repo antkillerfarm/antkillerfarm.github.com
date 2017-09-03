@@ -98,31 +98,123 @@ https://mp.weixin.qq.com/s/WTRD3wRQ_wSXjjlt7jiwSg
 
 CommandCenter：基于暴雪官方API的星际争霸2 AI Bot
 
-## 量子计算 & 遗传算法
+https://mp.weixin.qq.com/s/cCnSvD5oEWZSu48Oyec-Kg
 
-https://www.zhihu.com/question/28171555
+从FPS到RTS，一文概述游戏人工智能中的深度学习算法
 
-如何理解“量子退火”？
+## TPU & GPU & 并行
 
-http://mp.weixin.qq.com/s/FjET9HFNjVVMjqQM2KhtKA
+https://zhuanlan.zhihu.com/p/25382177
 
-5分钟看懂中国最新的量子计算机
+AI芯片怎么降功耗？
 
-https://mp.weixin.qq.com/s/WcRYHwXnv9FWpMcOEwIdQg
+https://zhuanlan.zhihu.com/p/26882794
 
-量子计算的发展及核心问题
+Google深度揭秘TPU
 
-http://blog.csdn.net/u010945683/article/details/40987331
+https://mp.weixin.qq.com/s/1X9xiZkmVPI-j-aipr-ocg
 
-遗传算法详解
+AlphaGo Master最新架构和算法，谷歌云与TPU拆解
 
-https://mp.weixin.qq.com/s/v1tLGUJ4My-tVWziSURHzA
+https://mp.weixin.qq.com/s/8HIZRhb-KJOtPnQtQ3GQVg
 
-遗传算法的基本概念和实现
+第一代芯片是CPU，第二代是GPU，第三代是什么？
 
-https://mp.weixin.qq.com/s/rXDj5ryRvjbkenp9IEokDQ
+https://mp.weixin.qq.com/s/Jof-u8oUuLR4v7t3jjXEmA
 
-一文读懂遗传算法工作原理
+GPU和线下训练
+
+https://mp.weixin.qq.com/s/2aE5fzGZeyX-oFyWbcbA5A
+
+揭开神经网络加速器的神秘面纱之DianNao
+
+https://mp.weixin.qq.com/s/VAFb0DAZAUyDnjE6SlNcXw
+
+如何对比评价各种深度神经网络硬件？不妨给它们跑个分
+
+https://mp.weixin.qq.com/s/zTO4UZ3zDLZL0GOjv0YqrQ
+
+GPU加速深度学习
+
+https://mp.weixin.qq.com/s/IE6blClvhYlq3-QAGHo5ww
+
+TensorFlow分布式计算机制解读：以数据并行为重
+
+http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks
+
+神经网络的分布式训练
+
+https://mp.weixin.qq.com/s/7vxJTh4IHeqUsc7IsLFLSA
+
+解密哈萨比斯投资的IPU，他们要分英伟达一杯羹
+
+https://mp.weixin.qq.com/s/B4aQp_0YvS0jyUHNLQ5rRA
+
+IBM发布新型分布式深度学习系统：结合软硬件实现当前最优性能
+
+https://zhuanlan.zhihu.com/p/28445511
+
+浅析深度学习框架设计中的关键技术
+
+https://zhuanlan.zhihu.com/p/26594188
+
+浅析Yann LeCun提到的两款Dataflow Chip
+
+https://zhuanlan.zhihu.com/p/26552293
+
+Dataflow架构和神经网络加速器
+
+https://zhuanlan.zhihu.com/p/25728988
+
+AI芯片的几种选择，你更看好哪个？
+
+https://zhuanlan.zhihu.com/p/25510056
+
+ISSCC 2017看AI芯片的四大趋势
+
+https://zhuanlan.zhihu.com/p/26404565
+
+AI芯片四大流派论剑，中国能否弯道超车？
+
+https://zhuanlan.zhihu.com/p/27472524
+
+从AI芯片说起，一起来看芯片门类
+
+https://mp.weixin.qq.com/s/Cy_vb0PpcvGTDmlMt1VkSw
+
+从GPU、TPU到FPGA及其它：一文读懂神经网络硬件平台战局
+
+https://mp.weixin.qq.com/s/RKRDBiBzG5u2P2eaqNAFbg
+
+机器学习的处理器列表
+
+https://mp.weixin.qq.com/s/7JGLm-hkCZBNDLA98qvWNA
+
+自动生成硬件优化内核：陈天奇等人发布深度学习编译器TVM
+
+https://mp.weixin.qq.com/s/4Ii3um3jqfm5yKKxZAFdmA
+
+继1小时训练ImageNet之后，大批量训练扩展到了3万2千个样本
+
+https://mp.weixin.qq.com/s/kOCftzSbHe2mvDmlRp-ihA
+
+Jeff Dean：AI对计算机系统设计的影响
+
+https://mp.weixin.qq.com/s/XjNPaL6PC9LHX1PEGn5UZg
+
+微软实时AI系统“脑波计划”有多牛？看完秒懂！
+
+https://mp.weixin.qq.com/s/OkqUulFYHQSdgAbf9Fi9LA
+
+CoCoA：大规模机器学习的分布式优化通用框架
+
+https://mp.weixin.qq.com/s/bL1PoUjZ_sH2VKcBxI6N5A
+
+Wave公司发布数据流处理架构DPU
+
+https://mp.weixin.qq.com/s/1r7G84les7FihqPbSiS0Ng
+
+华为首款手机端AI芯片麒麟970
 
 ## Other
 
@@ -201,10 +293,6 @@ https://mp.weixin.qq.com/s/bGbslnuG80S6gPwD4FHuMg
 https://mp.weixin.qq.com/s/eCtqMIo3_UDxAR4fWzMjZQ
 
 站在锤子手机背后，小源科技用AI打造短信场景服务
-
-https://mp.weixin.qq.com/s/SZlFgnUBL0T6yNa-i_WLvg
-
-领域适应性Domain Adaptation、One-shot/zero-shot Learning概述
 
 https://mp.weixin.qq.com/s/g2PcmsDW9ixUCh_yP8W-Vg
 

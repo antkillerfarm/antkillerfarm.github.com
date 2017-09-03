@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十一）——模型压缩
+title:  深度学习（十一）——模型压缩, 人脸识别
 category: theory 
 ---
 
@@ -107,6 +107,56 @@ https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg
 https://mp.weixin.qq.com/s/UYk3YQmFW7-44RUojUqfGg
 
 上交大ICCV：精度保证下的新型深度网络压缩框架
+
+# 人脸识别
+
+## OpenFace
+
+OpenFace是一款开源的人脸识别软件。它的原理基于CVPR 2015年的论文：FaceNet。由于采用了深度学习技术，OpenFace对人脸识别的准确率，大大超过了OpenCV。
+
+OpenFace是用Python和Torch编写的。
+
+官网：
+
+https://cmusatyalab.github.io/openface/
+
+## 参考
+
+http://www.cnblogs.com/pandaroll/p/6590339.html
+
+开源人脸识别openface
+
+http://mp.weixin.qq.com/s/KQxGQdLa3XzKVIFYqlrV7g
+
+人脸检测与识别的趋势和分析
+
+https://zhuanlan.zhihu.com/p/25335957
+
+人脸检测与深度学习
+
+http://www.leiphone.com/news/201608/MPXlWtGaJLPYL7NB.html
+
+人脸检测发展：从VJ到深度学习
+
+https://mp.weixin.qq.com/s/ZZmLbFzi843g0k3gTncQmA
+
+拿下人脸识别“世界杯”冠军！松下-NUS和美国东北大学实战分享
+
+https://mp.weixin.qq.com/s/DYCXef_09yFFNR0uHL2Q0Q
+
+基于Python的开源人脸识别库：离线识别率高达99.38%
+
+blog.csdn.net/qq_14845119/article/details/52680940
+
+MTCNN（Multi-task convolutional neural networks）人脸对齐
+
+http://blog.csdn.net/shuzfan/article/details/50358809
+
+人脸检测——CascadeCNN
+
+http://blog.csdn.net/shuzfan/article/details/52668935
+
+人脸检测——MTCNN
 
 
 

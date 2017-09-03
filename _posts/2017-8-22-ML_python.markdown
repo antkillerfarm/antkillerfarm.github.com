@@ -230,3 +230,9 @@ https://mp.weixin.qq.com/s/p69x5YyWxMulxx_OwX3nzQ
 
 TuChart：基于Tushare和Echarts的股票数据视觉化应用
 
+https://mp.weixin.qq.com/s/Xl9ZT7_I8P_ZU4O8j6bS5Q
+
+基于Python的人脸识别：识别准确率高达99.38%！
+
+
+

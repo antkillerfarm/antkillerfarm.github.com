@@ -367,6 +367,10 @@ https://mp.weixin.qq.com/s/WIro7pk7kboMvdwpZOSdQA
 
 东南大学漆桂林：知识图谱的应用
 
+https://mp.weixin.qq.com/s/z1hhG4GaBQXPHHt9UGZPnA
+
+东南大学高桓：知识图谱表示学习
+
 ## 论文
 
 《Distant Supervision for relation extraction without labeled data》

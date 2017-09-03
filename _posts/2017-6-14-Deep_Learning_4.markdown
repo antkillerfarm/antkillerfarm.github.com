@@ -126,6 +126,40 @@ $$||\prod_{k<i\le t} \frac{\partial h_{i}}{\partial h_{i-1}}|| \le \eta^{t-k}$$
 
 还可使用正交初始化技术，在训练之初就将$$\eta$$调整到1附近。
 
+## RNN的历史
+
+上面研究的RNN结构，又被称为Elman RNN。最早是Jeffrey Elman于1990年发明的。
+
+$$\begin{align}
+h_t &= \sigma_h(W_{h} x_t + U_{h} h_{t-1} + b_h) \\
+y_t &= \sigma_y(W_{y} h_t + b_y)
+\end{align}$$
+
+论文：
+
+《Finding Structure in Time》
+
+>Jeffrey Locke Elman，1948年生，Harvard College本科（1969年）+University of Texas博士（1977年）。University of California, San Diego教授，American Academy of Arts and Sciences院士（2015年）。 美国心理学会会员。  
+>个人主页：   
+>https://tatar.ucsd.edu/jeffelman/
+
+>Harvard College是Harvard University最古老的本部，目前一般提供本科教育。它和其他许多研究生院以及相关部门，共同组成了Harvard University。类似的还有Yale College和Yale University。
+
+>American Academy of Arts and Sciences建于1780年。当时，美国正在法国等国的协助下与英国作战，所以美国的创立者选择比照包括作家、人文学者、科学家、军事家、政治家在内的法兰西学术院，建立新大陆的学术院。   
+>后来，林肯总统比照英国皇家学会，于1863年创建了主要涵盖自然科学的National Academy of Sciences，United States。   
+>这两个学院是美国学术界最权威的组织。
+
+>美国的创立者，一般被翻译为Founding Fathers of the United States。此外还有一个更响亮的称号76ers。没错，就是NBA那支球队的名字。
+
+除了Elman RNN之外，还有Jordan RNN。（没错，吴恩达的导师的作品）
+
+$$\begin{align}
+h_t &= \sigma_h(W_{h} x_t + U_{h} y_{t-1} + b_h) \\
+y_t &= \sigma_y(W_{y} h_t + b_y)
+\end{align}$$
+
+Elman RNN的记忆来自于隐层单元，而Jordan RNN的记忆来自于输出层单元。
+
 ## 参考
 
 http://blog.csdn.net/aws3217150/article/details/50768453
@@ -253,41 +287,4 @@ LSTM主要包括以下4个步骤（也可称为4个功能或门）：
 
 上图是一个改动较大的变体**Gated Recurrent Unit（GRU）**。它将忘记门和输入门合成了一个单一的 更新门。同样还混合了细胞状态和隐藏状态，和其他一些改动。最终的模型比标准的 LSTM 模型要简单，也是非常流行的变体。
 
-## 参考
-
-http://www.csdn.net/article/2015-06-05/2824880
-
-深入浅出LSTM神经网络
-
-https://zhuanlan.zhihu.com/p/25821063
-
-循环神经网络——scan实现LSTM
-
-http://blog.csdn.net/a635661820/article/details/45390671
-
-LSTM简介以及数学推导(FULL BPTT)
-
-https://mp.weixin.qq.com/s/x3y9WTuVFYQb60eJvw02HQ
-
-如何解决LSTM循环神经网络中的超长序列问题
-
-https://mp.weixin.qq.com/s/IhCfoabRrtjvQBIQMaPpNQ
-
-从任务到可视化，如何理解LSTM网络中的神经元
-
-https://mp.weixin.qq.com/s/GGpaFZ0crP_NQ564d79hFw
-
-LSTM、GRU与神经图灵机：详解深度学习最热门的循环神经网络
-
-https://mp.weixin.qq.com/s/0bBTVjkfAK2EzQiaFcUjBA
-
-LSTM入门必读：从基础知识到工作方式详解
-
-https://mp.weixin.qq.com/s/jcS4IX7LKCt1E2FVzLWzDw
-
-LSTM入门详解
-
-https://mp.weixin.qq.com/s/MQR7c57NL4b5i4MRA2JgWA
-
-用Python实现CNN长短期记忆网络！
 

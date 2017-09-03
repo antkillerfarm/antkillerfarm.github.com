@@ -343,6 +343,14 @@ http://blog.csdn.net/wiinter_fdd/article/details/72821923
 
 Tensorflow中的模型持久化
 
+https://mp.weixin.qq.com/s/7R-Gvegnta9XBwIaSPBL_Q
+
+基于Tensorflow的验证码识别
+
+https://mp.weixin.qq.com/s/Es_5KUnkDzMwf_8WD8aW3g
+
+GitHub万星：适用于初学者的TensorFlow代码资源集
+
 ## 我的TensorFlow实践
 
 ### MNIST+Softmax

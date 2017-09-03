@@ -290,6 +290,10 @@ https://github.com/dformoso/deeplearning-mindmap
 
 DL思维导图
 
+http://neuralnetworksanddeeplearning.com/
+
+Michael Nielsen写的DL blog。
+
 # Javascript在客户端的使用
 
 Javascript在服务器前端的成功，促使人们思考其在客户端的使用。

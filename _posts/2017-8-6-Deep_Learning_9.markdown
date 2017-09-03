@@ -96,6 +96,10 @@ http://blog.csdn.net/surgewong/article/details/39316931
 
 http://blog.csdn.net/charwing/article/details/27180421
 
+Selective Search的效果类似下图：
+
+![](/images/article/selective_search.png)
+
 ![](/images/article/rcnn_3.png)
 
 上图中的那些方框，就是bounding box。
@@ -126,7 +130,15 @@ Non-Maximum Suppression顾名思义就是抑制不是极大值的元素，搜索
 
 如果用selective search挑选出来的候选框与物体的人工标注矩形框的重叠区域IoU大于0.5，那么我们就把这个候选框标注成物体类别（正样本），否则我们就把它当做背景类别（负样本）。
 
+## 评价标准
+
+http://blog.sina.com.cn/s/blog_9db078090102whzw.html
+
+多标签图像分类任务的评价方法-mAP
+
 ## 总结
+
+![](/images/article/rcnn_p_2.png)
 
 ![](/images/article/rcnn_p.png)
 
@@ -255,6 +267,18 @@ https://zhuanlan.zhihu.com/p/24774302
 SPPNet-引入空间金字塔池化改进RCNN
 
 # Fast R-CNN
+
+Fast R-CNN是Ross Girshick于2015年祭出的又一大招。
+
+论文：
+
+《Fast R-CNN》
+
+代码：
+
+https://github.com/rbgirshick/fast-rcnn
+
+![](/images/article/fast_rcnn_p_2.png)
 
 ![](/images/article/fast_rcnn_p.png)
 

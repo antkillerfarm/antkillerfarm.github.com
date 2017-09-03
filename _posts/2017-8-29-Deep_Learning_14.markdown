@@ -34,6 +34,14 @@ https://www.zhihu.com/question/50996014
 
 什么是One/zero-shot learning？
 
+https://mp.weixin.qq.com/s/SZlFgnUBL0T6yNa-i_WLvg
+
+领域适应性Domain Adaptation、One-shot/zero-shot Learning概述
+
+https://mp.weixin.qq.com/s/sAf2fLLnKHOs433pV_6bSQ
+
+One-shot Learning：孪生网络少样本精准分类
+
 # 语音识别
 
 Connectionist Temporal Classification，是一种改进的RNN模型。它主要解决的是时序模型中，输入数大于输出数，输入输出如何对齐的问题。
@@ -95,5 +103,10 @@ https://mp.weixin.qq.com/s/pimQBFd5uxrZk4dSgUsblg
 https://mp.weixin.qq.com/s/u1R7NUg_kgI_mpjIFrO02A
 
 探索Siri背后的技术：将逆文本标准化（ITN）转化为标签问题
+
+https://mp.weixin.qq.com/s/2xpwLVHT8qU68uoV7Uj2cw
+
+小米的语音识别系统是如何搭建的
+
 
 

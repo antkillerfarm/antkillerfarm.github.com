@@ -160,6 +160,8 @@ $$\theta_j:=\theta_j+\alpha(y^{(i)}-h_{\theta}(x^{(i)}))x^{(i)}_j \tag{4}$$
 | 计算复杂度 | 大 | 小 |
 | 收敛程度 | 收敛 | 由于新样本引入新的误差，该算法只能收敛到一定程度，而不能无限逼近最小值。 |
 
+![](/images/article/ogd_vs_mini_batch.png)
+
 ## 正规方程组算法
 
 正规方程组（Normal Equations）算法，是传统的以解方程的方式求最小值的方法。

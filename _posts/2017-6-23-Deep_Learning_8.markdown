@@ -56,6 +56,10 @@ https://mp.weixin.qq.com/s/gDzti2DISq_cwGbP5T7ICQ
 
 聊聊对抗自编码器
 
+https://mp.weixin.qq.com/s/3Aq1HXpBzgNdcB130tCKbQ
+
+GAN网络图像翻译机：图像复原、模糊变清晰、素描变彩图
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。

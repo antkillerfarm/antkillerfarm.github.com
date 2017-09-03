@@ -4,6 +4,46 @@ title:  深度学习（五）——神经元激活函数进阶, DRN, Bi-directio
 category: theory 
 ---
 
+# LSTM（续）
+
+## 参考
+
+http://www.csdn.net/article/2015-06-05/2824880
+
+深入浅出LSTM神经网络
+
+https://zhuanlan.zhihu.com/p/25821063
+
+循环神经网络——scan实现LSTM
+
+http://blog.csdn.net/a635661820/article/details/45390671
+
+LSTM简介以及数学推导(FULL BPTT)
+
+https://mp.weixin.qq.com/s/x3y9WTuVFYQb60eJvw02HQ
+
+如何解决LSTM循环神经网络中的超长序列问题
+
+https://mp.weixin.qq.com/s/IhCfoabRrtjvQBIQMaPpNQ
+
+从任务到可视化，如何理解LSTM网络中的神经元
+
+https://mp.weixin.qq.com/s/GGpaFZ0crP_NQ564d79hFw
+
+LSTM、GRU与神经图灵机：详解深度学习最热门的循环神经网络
+
+https://mp.weixin.qq.com/s/0bBTVjkfAK2EzQiaFcUjBA
+
+LSTM入门必读：从基础知识到工作方式详解
+
+https://mp.weixin.qq.com/s/jcS4IX7LKCt1E2FVzLWzDw
+
+LSTM入门详解
+
+https://mp.weixin.qq.com/s/MQR7c57NL4b5i4MRA2JgWA
+
+用Python实现CNN长短期记忆网络！
+
 # 神经元激活函数进阶
 
 在《深度学习（一、二）》中，我们探讨了ReLU相对于sigmoid函数的改进，以及一些保证深度神经网络能够训练的措施。然而即便如此，深度神经网络的训练仍然是一件非常困难的事情，还需要更多的技巧和方法。
