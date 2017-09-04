@@ -106,6 +106,7 @@ https://mp.weixin.qq.com/s/OY56lJ_NFf5vVAgKfKyx2A
 
 利用强化学习自动搜索最优化方法
 
+https://mp.weixin.qq.com/s/zWo2iSiJBEBwnFF478xxfQ
 
-
+DeepMind：探索人类行为中的强化学习机制
 

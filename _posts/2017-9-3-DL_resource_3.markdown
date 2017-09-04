@@ -358,4 +358,9 @@ https://mp.weixin.qq.com/s/MnK2LTWR9qEKiiz3OMsSMQ
 
 深度学习漂亮的图像软分割一览
 
+https://mp.weixin.qq.com/s/ZV32xDgGTriIAUbHohc90Q
+
+4个学生，1个暑假，百度深度学习开源平台PaddlePaddle诞生了智能桃子分拣器
+
+
 

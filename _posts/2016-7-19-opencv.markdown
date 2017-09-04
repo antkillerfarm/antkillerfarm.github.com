@@ -294,6 +294,10 @@ http://neuralnetworksanddeeplearning.com/
 
 Michael Nielsen写的DL blog。
 
+https://cs.nju.edu.cn/zlj/Courses.html
+
+南京大学张利军：数据挖掘和优化
+
 # Javascript在客户端的使用
 
 Javascript在服务器前端的成功，促使人们思考其在客户端的使用。

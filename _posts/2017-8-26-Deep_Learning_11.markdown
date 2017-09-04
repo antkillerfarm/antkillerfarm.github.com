@@ -108,6 +108,10 @@ https://mp.weixin.qq.com/s/UYk3YQmFW7-44RUojUqfGg
 
 上交大ICCV：精度保证下的新型深度网络压缩框架
 
+https://mp.weixin.qq.com/s/f3bmtbCY5BfA4v3movwLVg
+
+向手机端神经网络进发：MobileNet压缩指南
+
 # 人脸识别
 
 ## OpenFace

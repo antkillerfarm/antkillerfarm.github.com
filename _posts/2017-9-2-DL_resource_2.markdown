@@ -216,6 +216,10 @@ https://mp.weixin.qq.com/s/1r7G84les7FihqPbSiS0Ng
 
 华为首款手机端AI芯片麒麟970
 
+https://mp.weixin.qq.com/s/8RDHTn6P63otKXUdrHhbjw
+
+一文看懂AI芯片产业生态及竞争格局
+
 ## Other
 
 http://cs.stanford.edu/people/karpathy/convnetjs//demo/classify2d.html
