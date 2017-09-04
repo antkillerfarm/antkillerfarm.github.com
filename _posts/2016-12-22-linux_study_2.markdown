@@ -174,7 +174,11 @@ Ctrl+A X
 
 安装：
 
-`sudo apt install qtikz`
+`sudo apt install qtikz texlive-fonts-recommended`
+
+在线编辑：
+
+https://www.sharelatex.com/
 
 参考：
 

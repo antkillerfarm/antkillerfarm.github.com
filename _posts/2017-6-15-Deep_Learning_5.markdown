@@ -71,6 +71,14 @@ ReLU还经常被“诟病”的另一个问题是输出具有**偏移现象**，
 
 为了解决上述问题，人们提出了Leaky ReLU、PReLU、RReLU、ELU、Maxout等ReLU的变种。
 
+## Maxout
+
+
+
+http://blog.csdn.net/hjimce/article/details/50414467
+
+Maxout网络学习
+
 ## 其他激活函数
 
 ### hard tanh
