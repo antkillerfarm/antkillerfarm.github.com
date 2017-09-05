@@ -102,7 +102,7 @@ ps默认只显示当前用户的进程。这里是全显示的示例。
 
 `mount -t nfs 192.168.0.1:/tmp /mnt/nfs`
 
-挂载NFS。
+挂载NFS。挂载点（即上例中的/mnt/nfs）必须事先创建。
 
 ## GnuGo
 
@@ -186,9 +186,9 @@ http://www.hahack.com/tools/pgftikz-resources/
 
 PGF/TikZ资源汇总
 
-http://www.texample.net/tikz/examples/kalman-filter/
+http://www.texample.net/tikz/examples/
 
-Example: Kalman Filter System Model
+各种tikz示例的网站
 
 http://www.fuzihao.org/blog/2015/08/11/TikZ%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/
 
@@ -197,6 +197,10 @@ TikZ入门教程
 http://www.cnblogs.com/wangl393/
 
 一个TikZ的blog
+
+https://sandrocirulli.net/how-to-plot-functions-with-latex/
+
+安装pgfplots
 
 # MobaXterm
 

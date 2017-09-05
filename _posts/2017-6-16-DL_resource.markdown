@@ -214,6 +214,10 @@ http://www.jianshu.com/p/c9952d861328
 
 如何设计一个深度学习项目
 
+http://theorangeduck.com/page/neural-network-not-working
+
+My Neural Network isn't working! What should I do?
+
 ### 算法
 
 http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww
@@ -305,6 +309,10 @@ https://mp.weixin.qq.com/s/50uGupiwU2UVuVeMm_bTag
 https://mp.weixin.qq.com/s/VRmhAluhKWxyPbStmMoWtg
 
 一张速查表实现Apache MXNet深度学习框架五大特征的开发利用
+
+http://zh.gluon.ai/index.html
+
+李沐：《动手学深度学习》（使用Gluon）
 
 https://mp.weixin.qq.com/s/tyWUxJndljOSZT1-aYPgeg
 

@@ -298,6 +298,14 @@ https://cs.nju.edu.cn/zlj/Courses.html
 
 南京大学张利军：数据挖掘和优化
 
+https://nndl.github.io/
+
+复旦邱锡鹏（FudanNLP项目负责人）：神经网络与深度学习
+
+http://joanbruna.github.io/stat212b/
+
+Stat212b：Topics Course on Deep Learning——加州大学伯克利分校统计系Joan Bruna（Yann LeCun博士后）以统计的角度讲解DL。
+
 # Javascript在客户端的使用
 
 Javascript在服务器前端的成功，促使人们思考其在客户端的使用。
