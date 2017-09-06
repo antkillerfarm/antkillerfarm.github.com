@@ -360,4 +360,12 @@ https://mp.weixin.qq.com/s/97bIBKTADd2oIUBAabM04Q
 
 实时SLAM的未来以及深度学习与SLAM的比较
 
+http://mp.weixin.qq.com/s/KcHlWmIdKpjledwWFdNbCw
+
+自动驾驶汽车到底涉及了哪些技术？
+
+http://mp.weixin.qq.com/s/SWUQvR6qA2JKjaclWskUTQ
+
+DeepTest：可自动测试深度神经网络驾驶系统
+
 

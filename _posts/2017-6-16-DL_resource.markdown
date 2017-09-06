@@ -354,6 +354,10 @@ https://mp.weixin.qq.com/s/2lcOfU3X27YYqbWS341jcg
 
 Keras+OpenAI强化学习实践：深度Q网络
 
+http://mp.weixin.qq.com/s/kvQlzafLAn_8YgBmib3P0g
+
+手把手教你在Amazon EC2上安装Keras
+
 https://mp.weixin.qq.com/s/-39_7SbRFChDOOpcpJjVMQ
 
 如何在浏览器使用synaptic.js训练简单的神经网络推荐系统

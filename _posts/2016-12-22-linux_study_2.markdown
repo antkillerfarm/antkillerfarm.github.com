@@ -180,6 +180,10 @@ Ctrl+A X
 
 https://www.sharelatex.com/
 
+代码示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/tikz
+
 参考：
 
 http://www.hahack.com/tools/pgftikz-resources/
