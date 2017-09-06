@@ -1,10 +1,55 @@
 ---
 layout: post
-title:  深度学习（五）——神经元激活函数进阶, DRN, Bi-directional RNN, Attention
+title:  深度学习（五）——神经元激活函数进阶, DRN, Bi-directional RNN
 category: theory 
 ---
 
 # LSTM（续）
+
+## 步骤详解
+
+神经网络的设计方式和其他算法不同，我们不需要指定具体的参数，而只需要给出一个功能的实现机制，然后借助误差的反向传播算法，训练得到相应的参数。这一点在LSTM上体现的尤为明显。
+
+LSTM主要包括以下4个步骤（也可称为4个功能或门）：
+
+### 决定丢弃信息
+
+![](/images/article/LSTM_1.png)
+
+这一部分也被称为**忘记门**。
+
+### 确定更新的信息
+
+![](/images/article/LSTM_2.png)
+
+这一部分也被称为**输入门**。
+
+### 更新细胞状态
+
+![](/images/article/LSTM_3.png)
+
+### 输出信息
+
+![](/images/article/LSTM_4.png)
+
+显然，在这里不同的参数会对上述4个功能进行任意组合，从而最终达到长时记忆的目的。
+
+>注意：在一般的神经网络中，激活函数可以随意选择，无论是传统的sigmoid，还是新的tanh、ReLU，都不影响模型的大致效果。（差异主要体现在训练的收敛速度上，最终结果也可能会有细微影响。）   
+>**但是，LSTM模型的上述函数不可随意替换，切记。**
+
+## LSTM的变体
+
+![](/images/article/LSTM_5.png)
+
+上图中的LSTM变体被称为**peephole connection**。其实就是将细胞状态加入各门的输入中。可以全部添加，也可以部分添加。
+
+![](/images/article/LSTM_6.png)
+
+上图中的LSTM变体被称为**coupled** 忘记和输入门。它将忘记和输入门连在了一起。
+
+![](/images/article/LSTM_7.png)
+
+上图是一个改动较大的变体**Gated Recurrent Unit（GRU）**。它将忘记门和输入门合成了一个单一的 更新门。同样还混合了细胞状态和隐藏状态，和其他一些改动。最终的模型比标准的 LSTM 模型要简单，也是非常流行的变体。
 
 ## 参考
 
@@ -73,7 +118,25 @@ ReLU还经常被“诟病”的另一个问题是输出具有**偏移现象**，
 
 ## Maxout
 
+Maxout Networks是Ian J. Goodfellow于2013年提出的一大类激活函数。
 
+![](/images/article/maxout.png)
+
+上图是Maxout Networks的结构图。传统的激活函数一般是这样的形式：$$\sigma(Wx+b)$$
+
+Maxout Networks将$$Wx+b$$这部分运算，分成k个组。每组的w和b都不相同。然后对每组计算结果$$z_{ij}$$取最大值。
+
+从这个意义来说，ReLU可以看做是Maxout的特殊情况，即：
+
+$$y=\max(W_1x+b_1,W_2x+b_2)=\max(0,Wx+b)$$
+
+更多的情况参见下图：
+
+![](/images/article/maxout_2.png)
+
+从Maxout Networks的角度来看，ReLU和DropOut实际上是非常类似的。
+
+参考：
 
 http://blog.csdn.net/hjimce/article/details/50414467
 
@@ -185,68 +248,4 @@ ResNet到底深不深？
 https://mp.weixin.qq.com/s/_CENjzEK1kjsFpvX0H5gpQ
 
 结合堆叠与深度转换的新型神经翻译架构：爱丁堡大学提出BiDeep RNN
-
-# Attention
-
-倒序句子这种方法属于“hack”手段。它属于被实践证明有效的方法，而不是有理论依据的解决方法。
-
-大多数翻译的基准都是用法语、德语等语种，它们和英语非常相似（即使汉语的词序与英语也极其相似）。但是有些语种（像日语）句子的最后一个词语在英语译文中对第一个词语有高度预言性。那么，倒序输入将使得结果更糟糕。
-
-还有其它办法吗？那就是Attention机制。
-
-![](/images/article/attention.png)
-
-上图是Attention机制的结构图。y是编码器生成的译文词语，x是原文的词语。上图使用了双向递归网络，但这并不是重点，你先忽略反向的路径吧。重点在于现在每个解码器输出的词语$$y_t$$取决于所有输入状态的一个权重组合，而不只是最后一个状态。a是决定每个输入状态对输出状态的权重贡献。因此，如果$$a_{3,2}$$的值很大，这意味着解码器在生成译文的第三个词语时，会更关注于原文句子的第二个状态。a求和的结果通常归一化到1（因此它是输入状态的一个分布）。
-
-Attention机制的一个主要优势是它让我们能够解释并可视化整个模型。举个例子，通过对attention权重矩阵a的可视化，我们能够理解模型翻译的过程。
-
-![](/images/article/attention_2.png)
-
-我们注意到当从法语译为英语时，网络模型顺序地关注每个输入状态，但有时输出一个词语时会关注两个原文的词语，比如将“la Syrie”翻译为“Syria”。
-
-如果再仔细观察attention的等式，我们会发现attention机制有一定的成本。我们需要为每个输入输出组合分别计算attention值。50个单词的输入序列和50个单词的输出序列需要计算2500个attention值。这还不算太糟糕，但如果你做字符级别的计算，而且字符序列长达几百个字符，那么attention机制将会变得代价昂贵。
-
-attention机制解决的根本问题是允许网络返回到输入序列，而不是把所有信息编码成固定长度的向量。正如我在上面提到，我认为使用attention有点儿用词不当。换句话说，attention机制只是简单地让网络模型访问它的内部存储器，也就是编码器的隐藏状态。在这种解释中，网络选择从记忆中检索东西，而不是选择“注意”什么。不同于典型的内存，这里的内存访问机制是弹性的，也就是说模型检索到的是所有内存位置的加权组合，而不是某个独立离散位置的值。弹性的内存访问机制好处在于我们可以很容易地用反向传播算法端到端地训练网络模型（虽然有non-fuzzy的方法，其中的梯度使用抽样方法计算，而不是反向传播）。
-
-论文：
-
-《Learning to combine foveal glimpses with a third-order Boltzmann machine》
-
-《Learning where to Attend with Deep Architectures for Image Tracking》
-
-《Neural Machine Translation by Jointly Learning to Align and Translate》
-
-参考：
-
-http://blog.csdn.net/malefactor/article/details/50550211
-
-自然语言处理中的Attention Model
-
-https://yq.aliyun.com/articles/65356
-
-图文结合详解深度学习Memory & Attention
-
-http://www.cosmosshadow.com/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/2016/03/08/Attention.html
-
-Attention
-
-http://geek.csdn.net/news/detail/50558
-
-深度学习和自然语言处理中的attention和memory机制
-
-https://zhuanlan.zhihu.com/p/25928551
-
-用深度学习（CNN RNN Attention）解决大规模文本分类问题-综述和实践
-
-http://blog.csdn.net/leo_xu06/article/details/53491400
-
-视觉注意力的循环神经网络模型
-
-https://mp.weixin.qq.com/s/xr_1ZYbvADMMwgxLEAflCw
-
-如何在语言翻译中理解Attention Mechanism？
-
-https://mp.weixin.qq.com/s/Nyq_36aFmQYRWdpgbgxpuA
-
-将注意力机制引入RNN，解决5大应用领域的序列预测问题
 

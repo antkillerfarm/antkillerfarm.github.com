@@ -4,7 +4,139 @@ title:  深度学习（七）—— GAN
 category: theory 
 ---
 
+# CNN进化史（续）
+
+## SqueezeNet
+
+GoogleNet之后，最有名的CNN模型当属何恺明的Deep Residual Network。DRN在《深度学习（五）》中已有提及，这里不再赘述。
+
+DRN之后，学界的研究重点，由如何提升精度，转变为如何用更少的参数和计算量来达到同样的精度。SqueezeNet就是其中的代表。
+
+论文：
+
+《SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size》
+
+代码：
+
+https://github.com/DeepScale/SqueezeNet
+
+Caffe版本
+
+https://github.com/vonclites/squeezenet
+
+TensorFlow版本
+
+SqueezeNet最大的创新点在于使用Fire Module替换大尺寸的卷积层。
+
+![](/images/article/SqueezeNet.png)
+
+上图是Fire Module的结构示意图。它采用squeeze层+expand层两个小卷积层，替换了AlexNet的大尺寸卷积层。其中，$$N_{squeeze}<N_{expand}$$，N表示每层的卷积个数。
+
+这里需要特别指出的是：expand层采用了2种不同尺寸的卷积，这也是当前设计的一个趋势。
+
+这个趋势在GoogleNet中已经有所体现，在ResNet中也间接隐含。
+
+![](/images/article/expand_ResNet.png)
+
+上图是ResNet的展开图，可见展开之后的ResNet，实际上等效于一个多尺寸交错混编的复杂卷积网。其思路和GoogleNet实际上是一致的。
+
+参见：
+
+http://blog.csdn.net/xbinworld/article/details/50897870
+
+最新SqueezeNet模型详解，CNN模型参数降低50倍，压缩461倍！
+
+http://www.jianshu.com/p/8e269451795d
+
+神经网络瘦身：SqueezeNet
+
+http://blog.csdn.net/shenxiaolu1984/article/details/51444525
+
+超轻量级网络SqueezeNet算法详解
+
+## 参考
+
+http://mp.weixin.qq.com/s/ZKMi4gRfDRcTxzKlTQb-Mw
+
+计算机视觉识别简史：从AlexNet、ResNet到Mask RCNN
+
+http://mp.weixin.qq.com/s/kbHzA3h-CfTRcnkViY37MQ
+
+详解CNN五大经典模型:Lenet，Alexnet，Googlenet，VGG，DRL
+
+https://zhuanlan.zhihu.com/p/22094600
+
+Deep Learning回顾之LeNet、AlexNet、GoogLeNet、VGG、ResNet
+
+http://www.leiphone.com/news/201609/303vE8MIwFC7E3DB.html
+
+Google最新开源Inception-ResNet-v2，借助残差网络进一步提升图像分类水准
+
+https://mp.weixin.qq.com/s/x3bSu9ecl3dldCbvS1rT1g
+
+站在巨人的肩膀上，深度学习的9篇开山之作
+
+http://mp.weixin.qq.com/s/2TUw_2d36uFAiJTkvaaqpA
+
+解读Keras在ImageNet中的应用：详解5种主要的图像识别模型
+
+https://zhuanlan.zhihu.com/p/27642620
+
+YJango的卷积神经网络——介绍
+
+https://www.zybuluo.com/coolwyj/note/202469
+
+ImageNet Classification with Deep Convolutional Neural Networks
+
+http://simtalk.cn/2016/09/20/AlexNet/
+
+AlexNet简介
+
+http://simtalk.cn/2016/09/12/CNNs/
+
+CNN简介
+
+http://www.cnblogs.com/Allen-rg/p/5833919.html
+
+GoogLeNet学习心得
+
+https://mp.weixin.qq.com/s/I94gGXXW_eE5hSHIBOsJFQ
+
+无需数学背景，读懂ResNet、Inception和Xception三大变革性架构
+
+https://mp.weixin.qq.com/s/iN2LDAQ2ee-rQnlD3N1yaw
+
+变形卷积核、可分离卷积？CNN中十大拍案叫绝的操作！
+
+https://mp.weixin.qq.com/s/ToogpkDo-DpQaSoRoalnPg
+
+没看过这5个模型，不要说你玩过CNN!
+
 # GAN
+
+## 概况
+
+GAN是“生成对抗网络”（Generative Adversarial Networks）的简称，由2014年还在蒙特利尔读博士的Ian Goodfellow引入深度学习领域。
+
+>注：Ian J. Goodfellow，斯坦福大学本硕+蒙特利尔大学博士。导师是Yoshua Bengio。现为Google研究员。   
+>个人主页：   
+>http://www.iangoodfellow.com/
+
+论文：
+
+《Generative Adversarial Nets》
+
+教程：
+
+http://www.iangoodfellow.com/slides/2016-12-04-NIPS.pdf
+
+## 通俗解释
+
+对于GAN来说，最通俗的解释就是**“伪造者-鉴别者”**的解释，如艺术画的伪造者和鉴别者。一开始伪造者和鉴别者的水平都不高，但是鉴别者还是比较容易鉴别出伪造者伪造出来的艺术画。但随着伪造者对伪造技术的学习后，其伪造的艺术画会让鉴别者识别错误；或者随着鉴别者对鉴别技术的学习后，能够很简单的鉴别出伪造者伪造的艺术画。这是一个双方不断学习技术，以达到最高的伪造和鉴别水平的过程。
+
+从上面的解释可以看出，GAN实际上一种**零和游戏上的无监督算法**。
+
+![](/images/article/GAN.png)
 
 ## 基本原理
 
@@ -109,181 +241,4 @@ $$L=\frac{1}{M}\sum_{i=1}^M D\Big(y_i,\Theta\Big)$$
 上式可以简单的理解为：**分布之间的距离，等于单个样本的距离的平均**。
 
 这里的神经网络$$D(Y,\Theta)$$，实际上就是GAN的另一个主角——**鉴别者**。这里的D是**Discriminator**的意思。
-
-## 如何对抗
-
-因为$$D(Y,\Theta)$$的均值，也就是L，是度量两个分布的差异程度，这就意味着，L要能够将两个分布区分开来，即L越大越好；但是我们最终的目的，是希望通过均匀分布而生成我们指定的分布，所以$$G(X,\theta)$$则希望两个分布越来越接近，即L越小越好。
-
-形式化的描述就是：
-
-$$\arg \min_G \max_D V(G,D)$$
-
-具体的做法是：
-
-### Step1
-
-随机初始化$$G(X,\theta)$$，固定它，然后生成一批Y，这时候我们要训练$$D(Y,\Theta)$$，既然L代表的是“与指定样本Z的差异”，那么，如果将指定样本Z代入L，结果应该是越小越好，而将Y代入L，结果应该是越大越好，所以
-
-$$\begin{aligned}\Theta =& \mathop{\arg\min}_{\Theta} L = \mathop{\arg\min}_{\Theta} \frac{1}{N}\sum_{i=1}^N D\Big(z_i,\Theta\Big)\\ 
-\Theta =& \mathop{\arg\max}_{\Theta} L = \mathop{\arg\max}_{\Theta} \frac{1}{M}\sum_{i=1}^M D\Big(y_i,\Theta\Big)\end{aligned}$$
-
-然而有两个目标并不容易平衡，所以干脆都取同样的样本数B（一个batch），然后一起训练就好：
-
-$$\begin{aligned}\Theta =& \mathop{\arg\min}_{\Theta} L_1\\ 
-=&\mathop{\arg\min}_{\Theta} \frac{1}{B}\sum_{i=1}^B\left[D\Big(z_i,\Theta\Big)-D\Big(y_i,\Theta\Big)\right]\end{aligned}$$
-
-### Step2
-
-$$G(X,\theta)$$希望它生成的样本越接近真实样本越好，因此这时候把$$\Theta$$固定，只训练$$\theta$$让L越来越小：
-
-$$\begin{aligned}\theta =& \mathop{\arg\min}_{\theta} L_2\\ 
-=&\mathop{\arg\min}_{\theta} \frac{1}{B}\sum_{i=1}^B\left[D\Big(G(x_i,\theta),\Theta\Big)\right]\end{aligned}$$
-
-## Lipschitz约束
-
-稍微思考一下，我们就发现，问题还没完。我们目前还没有对D做约束，不难发现，无约束的话Loss基本上会直接跑到负无穷去了～
-
-最简单的方案就是采用Lipschitz约束：
-
-$$\| D(y,\theta) - D(y' , \theta) \| \leq C \|y-y'\|$$
-
-也可写作：
-
-$$\left\| \frac{\partial D(y,\Theta)}{\partial y}\right\| \leq C$$
-
->注：Rudolf Otto Sigismund Lipschitz，1832～1903，德国数学家，先后就读于柯尼斯堡大学和柏林大学，导师Dirichlet。波恩大学教授。
-
-## WGAN
-
-KL散度和JS散度由于不是距离，数学特性并不够好。因此，Martín Arjovsky于2017年1月，提出了Wasserstein GAN。
-
-其中的一项改进就是使用Wasserstein距离替代KL散度和JS散度。Wasserstein距离的定义参看《机器学习（二十）》。
-
-WGAN极大程度的改善了GAN训练困难的问题，成为当前GAN研究的主流。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/25071913
-
-令人拍案叫绝的Wasserstein GAN
-
-## GAN的发展
-
-最早的GAN出现在2014年6月，但直到2015年底，也只有5个变种，发展并不迅速。
-
-2016年，GAN开始发力，年底时已有52个变种。2017年6月底，更达到142个变种。
-
-![](/images/article/GAN_structure.png)
-
-上图的源地址：
-
-https://github.com/hwalsuklee/tensorflow-generative-model-collections
-
-参考：
-
-https://github.com/hindupuravinash/the-gan-zoo
-
-GAN的各种变种。
-
-## 参考
-
-https://mp.weixin.qq.com/s/xa3F3kCprE6DEQclas4umg
-
-GAN的数学原理
-
-http://www.jianshu.com/p/e2d2d7cbbe49
-
-50行代码实现GAN
-
-https://mp.weixin.qq.com/s/YnOF9CCUFvtaiTY8HXYOuw
-
-深入浅出：GAN原理与应用入门介绍
-
-http://blog.csdn.net/u011534057/article/category/6396518
-
-GAN系列blog
-
-http://mp.weixin.qq.com/s/bzwG0QxnP2drqS4RwcZlBg
-
-微软详解：到底什么是生成式对抗网络GAN？
-
-https://mp.weixin.qq.com/s/oCDlhzjOYTIhsr5JuoRCJQ
-
-IRGAN：大一统信息检索模型的博弈竞争
-
-https://mp.weixin.qq.com/s/QacQCrjh3KmrQSMp-G_rEg
-
-贝叶斯生成对抗网络
-
-https://zhuanlan.zhihu.com/p/24897387
-
-GAN的基本原理、应用和走向
-
-https://mp.weixin.qq.com/s/E28lA-fcAQ6Sp6Qv64H3TQ
-
-GAN in NLP
-
-https://mp.weixin.qq.com/s/7-oHa-8Q8ThcctaVOZFfew
-
-Facebook创意生成网络CAN，比GAN更有创造力
-
-https://mp.weixin.qq.com/s/aSQ2-QxbToGF0ROyjxw2yw
-
-萌物生成器：如何使用四种GAN制造猫图
-
-https://mp.weixin.qq.com/s/YUMIL-f019vKpQ84mKS-8g
-
-这篇TensorFlow实例教程文章告诉你GANs为何引爆机器学习？
-
-http://mp.weixin.qq.com/s/UkZdUcdz7h4DqcyjSbNncw
-
-zi2zi：用条件生成对抗网络玩转中文书法，绝妙汉字字体自动生成
-
-http://blog.csdn.net/v_JULY_v/article/details/52683959
-
-没GPU也能玩梵高作画：Ubuntu tensorflow CPU版
-
-https://github.com/cysmith/neural-style-tf
-
-TensorFlow (Python API) implementation of Neural Style.这个项目实现了两张图片的画风融合，非常牛。
-
-https://github.com/jinfagang/pytorch_style_transfer
-
-这个和上面的一样，不过是用pytorch实现的。
-
-http://mp.weixin.qq.com/s/zNmJuevHaagKbyGFdKTwoQ
-
-tensorflow实现基于深度学习的图像补全
-
-https://zhuanlan.zhihu.com/p/25204020
-
-条条大路通罗马LS-GAN：把GAN建立在Lipschitz密度上
-
-https://zhuanlan.zhihu.com/p/27199954
-
-用GAN去除动作片中的马赛克和衣服
-
-https://zhuanlan.zhihu.com/p/27012520
-
-从头开始GAN
-
-https://mp.weixin.qq.com/s/Qzlg1MzRT3josy2RJpQSVg
-
-Image to Image Translation Using GAN
-
-https://mp.weixin.qq.com/s/AswdyjPeKbX7yhAPloP2og
-
-基于对抗学习的生成式对话模型
-
-https://mp.weixin.qq.com/s/uyn41vKKoptXPZXBP2vVDQ
-
-生成对抗网络（GAN）之MNIST数据生成
-
-https://mp.weixin.qq.com/s/sxa0BfXtylHXzjq0YBn-Kg
-
-伯克利图像迁移cycleGAN，猫狗互换效果感人
-
-https://mp.weixin.qq.com/s/aMfPBl6E5SxckQdSAGTkBg
-
-Pytorch教程：Facebook发布的LR-GAN如何生成图像？
 

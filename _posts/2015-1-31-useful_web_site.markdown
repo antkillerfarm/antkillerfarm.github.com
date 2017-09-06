@@ -374,6 +374,10 @@ https://mp.weixin.qq.com/s/y_F6ZoqTY58xl0OnvaVpnw
 
 大规模机器学习框架的四重境界
 
+https://mp.weixin.qq.com/s/9BRrkSwba9IM62gMwzIuDQ
+
+大数据相关试题
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

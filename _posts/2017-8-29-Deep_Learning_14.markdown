@@ -1,112 +1,112 @@
 ---
 layout: post
-title:  深度学习（十四）——迁移学习, 语音识别
+title:  深度学习（十四）——深度强化学习
 category: theory 
 ---
 
-# 迁移学习
+# 深度强化学习
 
-https://mp.weixin.qq.com/s/HmkTkv7QT08lGtJsHD7EvQ
+## 教程
 
-迁移学习（Transfer Learning）技术概述
+http://incompleteideas.net/sutton/book/the-book-2nd.html
 
-https://zhuanlan.zhihu.com/wjdml
+《Reinforcement Learning: An Introduction》，Richard S. Sutton和Andrew G. Barto著。
 
-《小王爱迁移》系列blog
+>注：Richard S. Sutton，加拿大计算机科学家，麻省大学阿姆赫斯特分校博士（1984年），阿尔伯塔大学教授。强化学习之父，研究该领域长达三十余年。
 
-https://mp.weixin.qq.com/s/BWBrso7O1O3Rfxa4QWZH4g
+>Andrew G. Barto，麻省大学阿姆赫斯特分校教授。Richard S. Sutton的导师。
 
-分分钟学会基于深度学习的图像真实风格迁移！
+http://web.stanford.edu/class/cs234/syllabus.html
 
-https://mp.weixin.qq.com/s/5DtTgc9bIrdXQkmuqRm8CA
+CS234: Reinforcement Learning
 
-谷歌大脑迁移学习：减少调参，直接在数据集中学习最佳图像架构
+## 概述
 
-https://mp.weixin.qq.com/s/fEKc6yFZwTPAHjXJlcHA-w
+![](/images/article/reinforcement_learning.png)
 
-香港科技大学提出L2T框架：学习如何迁移学习
+## 参考
 
-https://mp.weixin.qq.com/s/pbyByPoZ9SVoP9B7pJMxXg
+https://www.nervanasys.com/demystifying-deep-reinforcement-learning/
 
-深度卷积网络迁移学习的脸部表情识别
+深度强化学习揭秘
 
-https://www.zhihu.com/question/50996014
+http://blog.csdn.net/young_gy/article/details/73485518
 
-什么是One/zero-shot learning？
+强化学习之Q-learning简介
 
-https://mp.weixin.qq.com/s/SZlFgnUBL0T6yNa-i_WLvg
+https://zhuanlan.zhihu.com/p/24446336
 
-领域适应性Domain Adaptation、One-shot/zero-shot Learning概述
+深度强化学习Deep Reinforcement Learning学习整理
 
-https://mp.weixin.qq.com/s/sAf2fLLnKHOs433pV_6bSQ
+https://mp.weixin.qq.com/s/KNXD-MpVHQRXYvJKTqn6WA
 
-One-shot Learning：孪生网络少样本精准分类
+完善强化学习安全性：UC Berkeley提出约束型策略优化新算法
 
-# 语音识别
+http://mp.weixin.qq.com/s/gHM7qh7UTKzatdg34cgfDQ
 
-Connectionist Temporal Classification，是一种改进的RNN模型。它主要解决的是时序模型中，输入数大于输出数，输入输出如何对齐的问题。
+强化学习全解
 
-参考：
+http://mp.weixin.qq.com/s/lLPRwInF5qaw7ewYHOpPyw
 
-https://www.zhihu.com/question/47642307
+深度强化学习资料
 
-语音识别中的CTC方法的基本原理
+https://mp.weixin.qq.com/s/f6sq8cSaU1cuzt7jhsK8Ig
 
-https://www.zhihu.com/question/20398418
+强化学习（Reinforcement Learning）基础介绍
 
-语音识别的技术原理是什么？
+https://mp.weixin.qq.com/s/TGN6Zhrea2LPxdkspVTlAw
 
-https://www.zhihu.com/question/55851184
+算法工程师入门——增强学习
 
-基于CTC等端到端语音识别方法的出现是否标志着统治数年的HMM方法终结？
+https://mp.weixin.qq.com/s/aVWHlwOmNIqOlu3025_RXQ
 
-https://www.zhihu.com/question/46829056
+DeepMind提出多任务强化学习新方法Distral
 
-语音识别领域的最新进展目前是什么样的水准？
+https://mp.weixin.qq.com/s/laKJ_jfNR5L1uMML9wkS1A
 
-https://zhuanlan.zhihu.com/p/27064536
+强化学习（Reinforcement Learning）算法基础及分类
 
-用Wavenet做中文语音识别
+https://zhuanlan.zhihu.com/p/27699682
 
-https://www.zhihu.com/question/29168274
+荐译一篇通俗易懂的策略梯度（Policy Gradient）方法讲解
 
-语音识别中，如何理解HMM是一个生成模型，而DNN是一个判别模型呢？
+https://mp.weixin.qq.com/s/Cvk_cePK9iQd8JIKKDDrmQ
 
-https://zhuanlan.zhihu.com/p/24979135
+强化学习的核心基础概念及实现
 
-从声学模型算法总结2016年语音识别的重大进步
+http://lamda.nju.edu.cn/yangjw/project/drlintro.html
 
-https://mp.weixin.qq.com/s/LsVhMaHrh8JgfpDra6KSPw
+深度强化学习初探
 
-横向对比5大开源语音识别工具包
+https://zhuanlan.zhihu.com/p/21498750
 
-https://mp.weixin.qq.com/s/-NTQG7_-GqGQWrRhiGgAQQ
+深度强化学习导引
 
-详述DeepMind wavenet原理及其TensorFlow实现
+https://mp.weixin.qq.com/s/RnUWHa6QzgJbE_XqLeAQmg
 
-https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw
+深度强化学习，决策与控制
 
-SampleRNN语音合成模型
+https://mp.weixin.qq.com/s/W9yhj7_frLYWJocoBR1TMQ
 
-https://zhuanlan.zhihu.com/p/21344595
+避免AI错把黑人识别为大猩猩：伯克利大学提出协同反向强化学习
 
-端到端的OCR：验证码识别(LSTM+CTC)
+https://mp.weixin.qq.com/s/R308ohdMU8b7Ap4CLofvDg
 
-https://mp.weixin.qq.com/s/zEqgDh6_fnDgXEI8MC9cmg
+OpenAI开源算法ACKTR与A2C：把可扩展的自然梯度应用到强化学习
 
-端对端的深度卷积神经网络在语音识别中的应用
+https://mp.weixin.qq.com/s/-JHHOQPB6pKVuge64NkMuQ
 
-https://mp.weixin.qq.com/s/pimQBFd5uxrZk4dSgUsblg
+DeepMind主攻的深度强化学习3大核心算法及7大挑战
 
-苹果机器学习期刊「Siri三部曲」之一：通过跨带宽和跨语言初始化提升神经网络声学模型
+https://mp.weixin.qq.com/s/YQpuYuzk0jv5OngH5u8bEg
 
-https://mp.weixin.qq.com/s/u1R7NUg_kgI_mpjIFrO02A
+阿里菜鸟物流：使用深度强化学习方法求解一类新型三维装箱问题
 
-探索Siri背后的技术：将逆文本标准化（ITN）转化为标签问题
+https://mp.weixin.qq.com/s/OY56lJ_NFf5vVAgKfKyx2A
 
-https://mp.weixin.qq.com/s/2xpwLVHT8qU68uoV7Uj2cw
+利用强化学习自动搜索最优化方法
 
-小米的语音识别系统是如何搭建的
+https://mp.weixin.qq.com/s/zWo2iSiJBEBwnFF478xxfQ
 
-
+DeepMind：探索人类行为中的强化学习机制
 

@@ -60,6 +60,12 @@ https://www.zhihu.com/question/28385679
 
 由于卷积和池化两层，不是一般的神经网络结构。因此CNN的反向传播算法实际上也是很有技巧的。
 
+相关推导见参考文献，这里只给出结论：
+
+正向：$$Y=X*K$$
+
+反向：$$\Delta X = \Delta Y * rot_{180}(K)$$
+
 参见：
 
 http://www.cnblogs.com/pinard/p/6494810.html
@@ -272,27 +278,4 @@ Hierarchical Softmax一般基于Huffman编码构建。在本例中，我们首�
 
 Skip-Gram Negative Sampling，又被简称为SGNS。
 
-## doc2vec
-
-我们知道，word是sentence的基本组成单位。一个最简单也是最直接得到sentence embedding的方法是将组成sentence的所有word的embedding向量全部加起来。
-
-显然，这种简单粗暴的方法会丢失很多信息。
-
-doc2vec是Mikolov在word2vec的基础上提出的一种生成句子向量的方法。
-
-论文：
-
-《Distributed Representations of Sentences and Documents》
-
-http://cs.stanford.edu/~quocle/paragraph_vector.pdf
-
-![](/images/article/doc2vec.png)
-
-上图是doc2vec的框架图，可以看出doc2vec的原理与word2vec基本一致，区别仅在于前者多出来一个Paragraph Vector参与CBOW或Skip-gram的训练。
-
-Paragraph Vector可以和Word Vector一起生成，也可以单独生成，也就是训练时，采用预训练的Word Vector，并只改变Paragraph Vector的值。
-
-https://www.zhihu.com/question/33952003
-
-如何通过词向量技术来计算2个文档的相似度?
 

@@ -370,5 +370,8 @@ https://mp.weixin.qq.com/s/_UC2jlOfb34tfB_tsEXjMg
 
 谷歌全新神经网络架构Transformer：基于自注意力机制，擅长自然语言理解
 
+https://mp.weixin.qq.com/s/9HeLayEDTUCy_ACJUV8fYA
+
+中文分词调研：任何声称在PKU上拿到97%以上所谓“准确率”的说法，可信度都不高！
 
 

@@ -1,10 +1,128 @@
 ---
 layout: post
-title:  深度学习（九）——SPPNet, Fast R-CNN
+title:  深度学习（九）——目标检测, RCNN
 category: theory 
 ---
 
-# RCNN（续）
+# 李飞飞（续）
+
+## 学神
+
+应该说李飞飞和吴恩达都是万里挑一的超卓人物，但是和学神还是有所差距。下面是两个80后的华裔学神，他们都已经是正教授了：
+
+**尹希**，1983年生，哈佛大学物理系教授。
+
+**张锋**，1982年生，MIT教授，生物学家。
+
+这两个人都是有机会挑战诺奖的人，而李和吴暂时还没有这个可能性。
+
+## 网红
+
+这里收录了一些非李飞飞门下的AI网红。
+
+**Zachary Chase Lipton**，1985年生，哥伦比亚大学本科+UCSD博士，CMU的AP。他的另一身份——Jazz歌手，可比他的学术成就知名多了。
+
+个人主页：
+
+http://zacklipton.com/
+
+# 目标检测
+
+## 概述
+
+object detection是计算机视觉的一个重要的分支。类似的分支还有目标分割、目标识别和目标跟踪。
+
+以下摘录自Sensetime CTO曹旭东的解读：
+
+传统方法使用滑动窗口的框架，把一张图分解成几百万个不同位置不同尺度的子窗口，针对每一个窗口使用分类器判断是否包含目标物体。传统方法针对不同的类别的物体，一般会设计不同的特征和分类算法，比如人脸检测的经典算法是**Harr特征+Adaboosting分类器**；行人检测的经典算法是**HOG(histogram of gradients)+Support Vector Machine**；一般性物体的检测的话是**HOG特征+DPM(deformable part model)的算法**。
+
+基于深度学习的物体检测的经典算法是RCNN系列：RCNN，fast RCNN(Ross Girshick)，faster RCNN(少卿、凯明、孙剑、Ross)。这三个工作的核心思想是分别是：使用更好的CNN模型判断候选区域的类别；复用预计算的sharing feature map加快模型训练和物体检测的速度；进一步使用sharing feature map大幅提高计算候选区域的速度。其实基于深度学习的物体检测也可以看成对海量滑动窗口分类，只是用全卷积的方式。
+
+RCNN系列算法还是将物体检测分为两个步骤。现在还有一些工作是端到端(end-to-end)的物体检测，比如说YOLO(You Only Look Once: Unified, Real-Time Object Detection)和SSD(SSD: Single Shot MultiBox Detector)这样的算法。这两个算法号称和faster RCNN精度相似但速度更快。物体检测正负样本极端非均衡，two-stage cascade可以更好的应对非均衡。端到端学习是否可以超越faster RCNN还需要更多研究实验。
+
+参考：
+
+https://www.zhihu.com/question/34223049
+
+从近两年的CVPR会议来看，目标检测的研究方向是怎么样的？
+
+https://zhuanlan.zhihu.com/p/21533724
+
+对话CVPR2016：目标检测新进展
+
+https://mp.weixin.qq.com/s/r9tXvKIN-eqKW_65yFyOew
+
+谷歌开源TensorFlow Object Detection API
+
+https://mp.weixin.qq.com/s/-PeXMU_gkcT5YnMcLoaKag
+
+CVPR清华大学研究，高效视觉目标检测框架RON
+
+https://mp.weixin.qq.com/s/_cOuhToH8KvZldNfraumSQ
+
+什么促使了候选目标的有效检测？
+
+https://mp.weixin.qq.com/s/LAy1LKGj5HOh_e9jPgvfQw
+
+视觉目标检测和识别之过去，现在及可能
+
+## 进化史
+
+DPM(2007)->RCNN(2014)->Fast RCNN->Faster RCNN
+
+![](/images/article/rcnn_2.png)
+
+参考：
+
+http://blog.csdn.net/ttransposition/article/details/12966521
+
+DPM(Deformable Parts Model)--原理
+
+## CV实践的难点
+
+从理论上说，无论是传统CV，还是新近崛起的DL CV，其本质都是通过比对目标图片和训练图片的相似度，从而得到识别的结果。
+
+CV的输入一般是由像素组成的矩阵。相比其他领域的数据挖掘而言，CV的实践难点主要包括：
+
+1.视角的改变。照相机的移动会导致像素矩阵发生平移、旋转等变换。
+
+2.光照影响。同一物体在不同光照条件下的影像有所不同。
+
+3.形变。典型的例子是动物的运动，会导致外观的改变。
+
+4.遮挡。待识别物体通常不是完全可见的。
+
+5.背景。雪地、沙滩等不同场景，会影响物体的识别。
+
+6.同类差异。比如各种猫都是猫，但它们的外观有细微的差异。
+
+![](/images/article/cv_problem.png)
+
+# RCNN
+
+《深度学习（五）》中提到的AlexNet、VGG、GoogleNet主要用于图片分类。而这里介绍的RCNN(Regions with CNN)主要用于目标检测。
+
+## 车牌识别的另一种思路
+
+在介绍RCNN之前，我首先介绍一下2013年的一个车牌识别项目的解决思路。
+
+车牌识别差不多是深度学习应用到CV领域之前，CV领域少数几个达到实用价值的应用之一。国内在2010～2015年前后，有许多公司都做过类似的项目。其产品更是随处可见，很多停车场已经利用该技术，自动识别车辆信息。
+
+车牌识别的难度不高——无论是目标字符集，还是目标字体，都很有限。但也有它的技术难点：
+
+1.计算资源有限。通常就是PC，甚至嵌入式设备，不可能用大规模集群来计算。
+
+2.有实时性的要求，通常处理时间不超过3s。
+
+因此，如何快速的在图片中找到车牌所在区域，就成为了关键问题。
+
+常规的做法，通常是根据颜色、形状找到车牌所在区域，但鲁棒性不佳。后来，有个同事提出了改进方法：
+
+**Step 1**：在整个图片中，基于haar算子，寻找疑似数字的区域。
+
+**Step 2**：将数字聚集的区域设定为疑似车牌所在区域。
+
+**Step 3**：投入更大运算量，以识别车牌上的文字。（这一步是常规做法。）
 
 ## RCNN的基本原理
 
@@ -130,165 +248,5 @@ Non-Maximum Suppression顾名思义就是抑制不是极大值的元素，搜索
 
 如果用selective search挑选出来的候选框与物体的人工标注矩形框的重叠区域IoU大于0.5，那么我们就把这个候选框标注成物体类别（正样本），否则我们就把它当做背景类别（负样本）。
 
-## 评价标准
 
-http://blog.sina.com.cn/s/blog_9db078090102whzw.html
-
-多标签图像分类任务的评价方法-mAP
-
-## 总结
-
-![](/images/article/rcnn_p_2.png)
-
-![](/images/article/rcnn_p.png)
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/23006190
-
-RCNN-将CNN引入目标检测的开山之作
-
-http://www.cnblogs.com/edwardbi/p/5647522.html
-
-Tensorflow tflearn编写RCNN
-
-http://blog.csdn.net/u011534057/article/category/6178027
-
-RCNN系列blog
-
-https://zhuanlan.zhihu.com/p/24916624
-
-Faster R-CNN
-
-https://www.zhihu.com/question/35887527
-
-如何评价rcnn、fast-rcnn和faster-rcnn这一系列方法？
-
-http://blog.csdn.net/tangwei2014/article/details/50915317
-
-论文阅读笔记：You Only Look Once: Unified, Real-Time Object Detection
-
-http://blog.csdn.net/shenxiaolu1984/article/details/51066975
-
-RCNN算法详解
-
-http://blog.csdn.net/shenxiaolu1984/article/details/51152614
-
-Faster RCNN算法详解
-
-https://mp.weixin.qq.com/s/XorPkuIdhRNI1zGLwg-55A
-
-斯坦福新深度学习系统 NoScope：视频对象检测快1000倍
-
-https://mp.weixin.qq.com/s/XbgmLmlt5X4TX5CP59gyoA
-
-目标检测算法精彩集锦
-
-https://mp.weixin.qq.com/s/BgTc1SE2IzNH27OC2P2CFg
-
-CVPR-I
-
-https://mp.weixin.qq.com/s/qMdnp9ZdlYIja2vNEKuRNQ
-
-CVPR—II
-
-https://mp.weixin.qq.com/s/tc1PsIoF1RN1sx_IFPmtWQ
-
-CVPR—III
-
-https://mp.weixin.qq.com/s/bpCn2nREHzazJYq6B9vMHg
-
-目标识别算法的进展
-
-https://mp.weixin.qq.com/s/YzxaS4KQmpbUSnyOwccn4A
-
-基于深度学习的目标检测技术进展与展望
-
-https://mp.weixin.qq.com/s/VKQufVUQ3TP5m7_2vOxnEQ
-
-通过Faster R-CNN实现当前最佳的目标计数
-
-https://mp.weixin.qq.com/s/JPCQqyzR8xIUyAdk_RI5dA
-
-RCNN, Fast-RCNN, Faster-RCNN那些你必须知道的事！
-
-http://blog.csdn.net/messiran10/article/details/49132053
-
-Caffe matlab之基于Alex network的特征提取
-
-# SPPNet
-
-SPPNet是何恺明2014年的作品。
-
-论文：
-
-《Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition》
-
-在RCNN算法中，一张图片会有1~2k个候选框，每一个都要单独输入CNN做卷积等操作很费时。而且这些候选框可能很多都是重合的，重复的CNN操作从信息论的角度，也是相当冗余的。
-
-![](/images/article/rcnn_vs_spp.png)
-
-SPPNet的核心思想如上图所示：在feature map上提取ROI特征，这样就只需要在整幅图像上做一次卷积。
-
-这个想法说起来简单，但落到实地，还有如下问题需要解决：
-
-**Problem 1**：原始图像的ROI如何映射到特征图（一系列卷积层的最后输出）。
-
-**Problem 2**：ROI的在特征图上的对应的特征区域的维度不满足全连接层的输入要求怎么办（又不可能像在原始ROI图像上那样进行截取和缩放）？
-
-对于Problem 2我们分析一下：
-
-这个问题涉及的流程主要有: 图像输入->卷积层1->池化1->...->卷积层n->池化n->全连接层。
-
-引发问题的原因主要有：全连接层的输入维度是固定死的，导致池化n的输出必须与之匹配，继而导致图像输入的尺寸必须固定。
-
-解决办法可能有：
-
-1.想办法让不同尺寸的图像也可以使池化n产生固定的输出维度。（打破图像输入的固定性）
-
-2.想办法让全连接层（罪魁祸首）可以接受非固定的输入维度。（打破全连接层的固定性，继而也打破了图像输入的固定性）
-
-以上的方法1就是SPPnet的思想。
-
-![](/images/article/spp.png)
-
-**Step 1**：为图像建立不同尺度的图像金字塔。上图为3层。
-
-**Step 2**：将图像金字塔中包含的feature映射到固定尺寸的向量中。上图为$$(16+4+1)\times 256$$维向量。
-
-总结：
-
-![](/images/article/spp_p.png)
-
-参考：
-
-https://zhuanlan.zhihu.com/p/24774302
-
-SPPNet-引入空间金字塔池化改进RCNN
-
-# Fast R-CNN
-
-Fast R-CNN是Ross Girshick于2015年祭出的又一大招。
-
-论文：
-
-《Fast R-CNN》
-
-代码：
-
-https://github.com/rbgirshick/fast-rcnn
-
-![](/images/article/fast_rcnn_p_2.png)
-
-![](/images/article/fast_rcnn_p.png)
-
-参考：
-
-https://zhuanlan.zhihu.com/p/24780395
-
-Fast R-CNN
-
-http://blog.csdn.net/shenxiaolu1984/article/details/51036677
-
-Fast RCNN算法详解
 

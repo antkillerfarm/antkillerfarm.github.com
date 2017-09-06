@@ -102,6 +102,10 @@ https://mp.weixin.qq.com/s/cCnSvD5oEWZSu48Oyec-Kg
 
 从FPS到RTS，一文概述游戏人工智能中的深度学习算法
 
+https://mp.weixin.qq.com/s/CQmZcwI4bgrEiWHP0gBLfQ
+
+DeepMind星际争霸2开源机器学习平台入门
+
 ## TPU & GPU & 并行
 
 https://zhuanlan.zhihu.com/p/25382177

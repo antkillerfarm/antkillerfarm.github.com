@@ -351,6 +351,10 @@ https://mp.weixin.qq.com/s/Es_5KUnkDzMwf_8WD8aW3g
 
 GitHub万星：适用于初学者的TensorFlow代码资源集
 
+https://mp.weixin.qq.com/s/3QgtemxxsQmuNQVEdpiMwA
+
+如何做准确率达98%的交通标志识别系统？
+
 ## 我的TensorFlow实践
 
 ### MNIST+Softmax

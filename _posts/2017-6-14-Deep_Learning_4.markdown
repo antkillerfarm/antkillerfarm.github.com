@@ -6,6 +6,30 @@ category: theory
 
 # 词向量（续）
 
+## doc2vec
+
+我们知道，word是sentence的基本组成单位。一个最简单也是最直接得到sentence embedding的方法是将组成sentence的所有word的embedding向量全部加起来。
+
+显然，这种简单粗暴的方法会丢失很多信息。
+
+doc2vec是Mikolov在word2vec的基础上提出的一种生成句子向量的方法。
+
+论文：
+
+《Distributed Representations of Sentences and Documents》
+
+http://cs.stanford.edu/~quocle/paragraph_vector.pdf
+
+![](/images/article/doc2vec.png)
+
+上图是doc2vec的框架图，可以看出doc2vec的原理与word2vec基本一致，区别仅在于前者多出来一个Paragraph Vector参与CBOW或Skip-gram的训练。
+
+Paragraph Vector可以和Word Vector一起生成，也可以单独生成，也就是训练时，采用预训练的Word Vector，并只改变Paragraph Vector的值。
+
+https://www.zhihu.com/question/33952003
+
+如何通过词向量技术来计算2个文档的相似度?
+
 ## FastText
 
 Word2Vec作者Mikolov加盟Facebook之后，提出了文本分类新作FastText。
@@ -242,49 +266,5 @@ $$h_t=\sigma (W\cdot [h_{t-1},x_t]+b)$$
 
 LSTM不仅添加了历史状态$$h_{t-1}$$，还添加了所谓的**细胞状态**$$C_{t-1}$$，即上图中图像上部的水平横线。
 
-## 步骤详解
-
-神经网络的设计方式和其他算法不同，我们不需要指定具体的参数，而只需要给出一个功能的实现机制，然后借助误差的反向传播算法，训练得到相应的参数。这一点在LSTM上体现的尤为明显。
-
-LSTM主要包括以下4个步骤（也可称为4个功能或门）：
-
-### 决定丢弃信息
-
-![](/images/article/LSTM_1.png)
-
-这一部分也被称为**忘记门**。
-
-### 确定更新的信息
-
-![](/images/article/LSTM_2.png)
-
-这一部分也被称为**输入门**。
-
-### 更新细胞状态
-
-![](/images/article/LSTM_3.png)
-
-### 输出信息
-
-![](/images/article/LSTM_4.png)
-
-显然，在这里不同的参数会对上述4个功能进行任意组合，从而最终达到长时记忆的目的。
-
->注意：在一般的神经网络中，激活函数可以随意选择，无论是传统的sigmoid，还是新的tanh、ReLU，都不影响模型的大致效果。（差异主要体现在训练的收敛速度上，最终结果也可能会有细微影响。）   
->**但是，LSTM模型的上述函数不可随意替换，切记。**
-
-## LSTM的变体
-
-![](/images/article/LSTM_5.png)
-
-上图中的LSTM变体被称为**peephole connection**。其实就是将细胞状态加入各门的输入中。可以全部添加，也可以部分添加。
-
-![](/images/article/LSTM_6.png)
-
-上图中的LSTM变体被称为**coupled** 忘记和输入门。它将忘记和输入门连在了一起。
-
-![](/images/article/LSTM_7.png)
-
-上图是一个改动较大的变体**Gated Recurrent Unit（GRU）**。它将忘记门和输入门合成了一个单一的 更新门。同样还混合了细胞状态和隐藏状态，和其他一些改动。最终的模型比标准的 LSTM 模型要简单，也是非常流行的变体。
 
 
