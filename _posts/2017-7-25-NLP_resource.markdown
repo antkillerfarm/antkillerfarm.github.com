@@ -374,4 +374,7 @@ https://mp.weixin.qq.com/s/9HeLayEDTUCy_ACJUV8fYA
 
 中文分词调研：任何声称在PKU上拿到97%以上所谓“准确率”的说法，可信度都不高！
 
+http://mp.weixin.qq.com/s/fn9WKu0_aH2-lx6VvxC_RA
+
+生成式关键短语识别
 

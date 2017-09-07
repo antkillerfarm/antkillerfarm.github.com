@@ -378,6 +378,10 @@ https://mp.weixin.qq.com/s/9BRrkSwba9IM62gMwzIuDQ
 
 大数据相关试题
 
+http://mp.weixin.qq.com/s/ETbHjXLJIeaWo-XIHHtMkQ
+
+大数据告诉你：逃离北上广，他们都去了哪里？
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/
