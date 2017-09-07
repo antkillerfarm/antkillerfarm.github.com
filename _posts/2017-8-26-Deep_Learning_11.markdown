@@ -88,3 +88,13 @@ https://buptldy.github.io/2016/10/01/2016-10-01-im2col/
 
 Implementing convolution as a matrix multiplication（中文blog）
 
+# 花式池化
+
+![](/images/article/max_pooling.png)
+
+参考：
+
+http://www.cnblogs.com/tornadomeet/p/3432093.html
+
+Stochastic Pooling简单理解
+

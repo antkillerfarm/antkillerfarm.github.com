@@ -280,10 +280,6 @@ https://mp.weixin.qq.com/s/09uzm9LJxJwLL-bEoayJbg
 
 深度学习中的常见分布
 
-https://mp.weixin.qq.com/s/vAjWHpn5HP_lwSv49g71SA
-
-新型半参数变分自动编码器DeepCoder：可分层级编码人脸动作
-
 https://wenku.baidu.com/view/98590eedaeaad1f346933f88.html
 
 小波神经网络简介

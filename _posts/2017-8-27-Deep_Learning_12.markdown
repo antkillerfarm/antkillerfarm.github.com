@@ -162,5 +162,37 @@ http://blog.csdn.net/shuzfan/article/details/52668935
 
 人脸检测——MTCNN
 
+https://mp.weixin.qq.com/s/eOxd5XbeyVcRYyAAmPr20Q
 
+利用空间融合卷积神经网络通过面部关键点进行伪装人脸识别
+
+https://mp.weixin.qq.com/s/vAjWHpn5HP_lwSv49g71SA
+
+新型半参数变分自动编码器DeepCoder：可分层级编码人脸动作
+
+https://mp.weixin.qq.com/s/IS5iAPZeUrvvyWs29O8Ukg
+
+通过提取神经元知识实现人脸模型压缩
+
+https://mp.weixin.qq.com/s/DEJ0z2CahZIrhTE3VXNVvg
+
+基于注意力机制学习的人脸幻构
+
+https://mp.weixin.qq.com/s/-G94Mj-8972i2HtEcIZDpA
+
+人脸识别世界杯榜单出炉，微软百万名人识别竞赛冠军分享
+
+# Network In Network
+
+http://blog.csdn.net/sheng_ai/article/details/41313883
+
+Network In Network(精读)
+
+http://blog.csdn.net/zhufenghao/article/details/52526611
+
+Network In Network
+
+http://www.cnblogs.com/dmzhuo/p/5868346.html
+
+读论文“Network in Network”——ICLR 2014
 

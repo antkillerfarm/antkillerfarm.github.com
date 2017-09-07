@@ -14,10 +14,6 @@ https://mp.weixin.qq.com/s/ViQqeER1NXtJOtnLg76TWg
 
 关于远程监督，我们来推荐几篇值得读的论文
 
-https://mp.weixin.qq.com/s/DEJ0z2CahZIrhTE3VXNVvg
-
-基于注意力机制学习的人脸幻构
-
 https://mp.weixin.qq.com/s/z1APyCxlOEPHn48OeJAHkQ
 
 基于深度学习的视频内容识别
@@ -45,10 +41,6 @@ Hinton碰撞LeCun：CNN有两大缺陷，要用capsule做下一代CNN
 https://www.jiqizhixin.com/articles/2017-07-27-2
 
 CVPR 2017李飞飞总结8年ImageNet历史，宣布挑战赛最终归于Kaggle
-
-https://mp.weixin.qq.com/s/-G94Mj-8972i2HtEcIZDpA
-
-人脸识别世界杯榜单出炉，微软百万名人识别竞赛冠军分享
 
 https://mp.weixin.qq.com/s/6_cW22DCzSw3DpUDrLXLcA
 

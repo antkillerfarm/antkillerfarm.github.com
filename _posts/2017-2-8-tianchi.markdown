@@ -215,6 +215,12 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/helloworld/mysq
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/helloworld/mysql/tc_view.sql
 
+## 尾声
+
+https://mp.weixin.qq.com/s/1T5Iv87JRVdTS66yAzs-DQ
+
+IJCAI获奖团队答辩干货独家放送
+
 # Storm
 
 Storm是一个大数据领域的实时计算框架。

@@ -120,6 +120,10 @@ http://www.cnblogs.com/neopenx/p/5211969.html
 
 从Bayesian角度浅析Batch Normalization
 
+http://blog.csdn.net/hjimce/article/details/50866313
+
+Batch Normalization学习笔记
+
 https://www.zhihu.com/question/38102762
 
 深度学习中 Batch Normalization为什么效果好？

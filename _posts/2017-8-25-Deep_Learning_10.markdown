@@ -6,6 +6,28 @@ category: theory
 
 # RCNN（续）
 
+## 非极大值抑制（NMS）
+
+RCNN会从一张图片中找出n个可能是物体的矩形框，然后为每个矩形框为做类别分类概率（如上图所示）。我们需要判别哪些矩形框是没用的。
+
+Non-Maximum Suppression顾名思义就是抑制不是极大值的元素，搜索局部的极大值。这个局部代表的是一个邻域，邻域有两个参数可变，一是邻域的维数，二是邻域的大小。
+
+下面举例说明NMS的做法：
+
+假设有6个矩形框，根据分类器的类别和分类概率做排序，假设从小到大属于车辆的概率分别为A、B、C、D、E、F。
+
+**Step 1**：从最大概率矩形框F开始，分别判断A~E与F的重叠度IOU是否大于某个设定的阈值。（**确定领域**）
+
+**Step 2**：假设B、D与F的重叠度超过阈值，那么就扔掉B、D；并标记第一个矩形框F，是我们保留下来的。（**抑制领域内的非极大值**）
+
+**Step 3**：从剩下的矩形框A、C、E中，选择概率最大的E，然后判断E与A、C的重叠度，重叠度大于一定的阈值，那么就扔掉；并标记E是我们保留下来的第二个矩形框。（**确定下一个领域，并抑制该领域内的非极大值**）
+
+## 正负样本问题
+
+一张照片我们得到了2000个候选框。然而人工标注的数据一张图片中就只标注了正确的bounding box，我们搜索出来的2000个矩形框也不可能会出现一个与人工标注完全匹配的候选框。因此在CNN阶段我们需要用IOU为2000个bounding box打标签。
+
+如果用selective search挑选出来的候选框与物体的人工标注矩形框的重叠区域IoU大于0.5，那么我们就把这个候选框标注成物体类别（正样本），否则我们就把它当做背景类别（负样本）。
+
 ## 评价标准
 
 http://blog.sina.com.cn/s/blog_9db078090102whzw.html
@@ -32,53 +54,9 @@ http://blog.csdn.net/u011534057/article/category/6178027
 
 RCNN系列blog
 
-https://www.zhihu.com/question/35887527
-
-如何评价rcnn、fast-rcnn和faster-rcnn这一系列方法？
-
-http://blog.csdn.net/tangwei2014/article/details/50915317
-
-论文阅读笔记：You Only Look Once: Unified, Real-Time Object Detection
-
 http://blog.csdn.net/shenxiaolu1984/article/details/51066975
 
 RCNN算法详解
-
-https://mp.weixin.qq.com/s/XorPkuIdhRNI1zGLwg-55A
-
-斯坦福新深度学习系统 NoScope：视频对象检测快1000倍
-
-https://mp.weixin.qq.com/s/XbgmLmlt5X4TX5CP59gyoA
-
-目标检测算法精彩集锦
-
-https://mp.weixin.qq.com/s/BgTc1SE2IzNH27OC2P2CFg
-
-CVPR-I
-
-https://mp.weixin.qq.com/s/qMdnp9ZdlYIja2vNEKuRNQ
-
-CVPR—II
-
-https://mp.weixin.qq.com/s/tc1PsIoF1RN1sx_IFPmtWQ
-
-CVPR—III
-
-https://mp.weixin.qq.com/s/bpCn2nREHzazJYq6B9vMHg
-
-目标识别算法的进展
-
-https://mp.weixin.qq.com/s/YzxaS4KQmpbUSnyOwccn4A
-
-基于深度学习的目标检测技术进展与展望
-
-https://mp.weixin.qq.com/s/JPCQqyzR8xIUyAdk_RI5dA
-
-RCNN, Fast-RCNN, Faster-RCNN那些你必须知道的事！
-
-http://blog.csdn.net/messiran10/article/details/49132053
-
-Caffe matlab之基于Alex network的特征提取
 
 # SPPNet
 
@@ -193,6 +171,10 @@ https://zhuanlan.zhihu.com/p/24916786
 https://mp.weixin.qq.com/s/n51XtGAsaDDAatXYychXrg
 
 YOLO比R-CNN快1000倍，比Fast R-CNN快100倍的实时对象检测！
+
+http://blog.csdn.net/tangwei2014/article/details/50915317
+
+论文阅读笔记：You Only Look Once: Unified, Real-Time Object Detection
 
 https://mp.weixin.qq.com/s/Wqj6EM33p-rjPIHnFKtmCw
 

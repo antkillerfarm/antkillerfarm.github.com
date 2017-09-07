@@ -338,10 +338,6 @@ https://mp.weixin.qq.com/s/SPdkJTYU80bioNdZrBj4cw
 
 卷积优化-Cpython(Cuda)施工和分析
 
-https://mp.weixin.qq.com/s/IS5iAPZeUrvvyWs29O8Ukg
-
-通过提取神经元知识实现人脸模型压缩
-
 https://mp.weixin.qq.com/s/qWJarPrjOrwxSX77xQ9rCw
 
 面向卷积神经网络的卷积核冗余消除策略
