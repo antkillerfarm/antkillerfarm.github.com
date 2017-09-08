@@ -64,6 +64,14 @@ Neural Network Exchange Format是Khronos制定的用于交换NN模型数据的�
 
 https://www.khronos.org/nnef
 
+和它竞争的标准还有微软和Facebook联合推出的Open Neural Network Exchange。
+
+参见：
+
+https://mp.weixin.qq.com/s/etSrI8Z3-NWbrqNWIbfzjw
+
+微软Facebook联手发布AI生态系统
+
 ## OpenCL
 
 官网：

@@ -110,6 +110,10 @@ http://blog.csdn.net/messiran10/article/details/49132053
 
 Caffe matlab之基于Alex network的特征提取
 
+https://mp.weixin.qq.com/s/YovhKYeGGLqSxxSqMNsbKg
+
+基于深度学习的目标检测学习总结
+
 ## 进化史
 
 DPM(2007)->RCNN(2014)->Fast RCNN->Faster RCNN

@@ -50,6 +50,8 @@ http://blog.csdn.net/zijinxuxu/article/details/67638290
 
 在DL中，卷积实际上是一大类计算的总称。除了原始的卷积、反卷积之外，还有各种各样的花式卷积。
 
+
+
 参考：
 
 https://github.com/vdumoulin/conv_arithmetic
@@ -87,6 +89,10 @@ Transposed Convolution, Fractionally Strided Convolution or Deconvolution（中�
 https://buptldy.github.io/2016/10/01/2016-10-01-im2col/
 
 Implementing convolution as a matrix multiplication（中文blog）
+
+https://mp.weixin.qq.com/s/iN2LDAQ2ee-rQnlD3N1yaw
+
+变形卷积核、可分离卷积？CNN中十大拍案叫绝的操作！
 
 # 花式池化
 

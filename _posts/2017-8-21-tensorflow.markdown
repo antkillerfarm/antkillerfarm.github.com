@@ -243,6 +243,10 @@ https://mp.weixin.qq.com/s/gJBDXf_5ViPR9dNm3eH2Hg
 
 TensorFlow初学者必须了解的55个经典案例
 
+http://mp.weixin.qq.com/s/JZ1ceGQDmQUaNW5wl6biLA
+
+TensorFlow实现流行机器学习算法教程汇集
+
 https://mp.weixin.qq.com/s/bjxJyOitynRtCoW0FX1gXw
 
 一文带你入门Tensorflow

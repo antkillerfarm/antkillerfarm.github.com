@@ -74,6 +74,14 @@ https://mp.weixin.qq.com/s/hf4IOAayS29i6GB9m4GHcA
 
 全自动机器学习：ML工程师屠龙利器
 
+https://mp.weixin.qq.com/s/h2QQhoBfnEhU12RgatT3EA
+
+机器学习都能自动化了？
+
+https://mp.weixin.qq.com/s/-n-5Cp_hgkvdmsHGWEIpWw
+
+自动化机器学习第一步：使用Hyperopt自动选择超参数
+
 # KNN
 
 K最近邻(k-Nearest Neighbor，KNN)分类算法，是一个理论上比较成熟的方法，也是最简单的机器学习算法之一。

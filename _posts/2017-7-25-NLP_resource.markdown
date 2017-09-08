@@ -378,3 +378,12 @@ http://mp.weixin.qq.com/s/fn9WKu0_aH2-lx6VvxC_RA
 
 生成式关键短语识别
 
+https://mp.weixin.qq.com/s/M6ufA_9jyGjDCOSDNDrIYg
+
+CMU神经网络自然语言处理课程推荐的学习资料（非教程）
+
+https://mp.weixin.qq.com/s/xHeEFuv1m1jXFig4tXZY8w
+
+自然语言处理（NLP）快速入门指南
+
+

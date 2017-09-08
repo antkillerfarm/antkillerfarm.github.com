@@ -196,3 +196,8 @@ http://www.cnblogs.com/dmzhuo/p/5868346.html
 
 读论文“Network in Network”——ICLR 2014
 
+https://mp.weixin.qq.com/s/kn9JS55wIW2cfpUv7Jm0eQ
+
+深度学习教你如何“以貌取人”！
+
+

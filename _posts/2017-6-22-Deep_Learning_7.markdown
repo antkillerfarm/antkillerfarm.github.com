@@ -104,10 +104,6 @@ https://mp.weixin.qq.com/s/I94gGXXW_eE5hSHIBOsJFQ
 
 无需数学背景，读懂ResNet、Inception和Xception三大变革性架构
 
-https://mp.weixin.qq.com/s/iN2LDAQ2ee-rQnlD3N1yaw
-
-变形卷积核、可分离卷积？CNN中十大拍案叫绝的操作！
-
 https://mp.weixin.qq.com/s/ToogpkDo-DpQaSoRoalnPg
 
 没看过这5个模型，不要说你玩过CNN!

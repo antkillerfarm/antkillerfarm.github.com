@@ -382,6 +382,18 @@ http://mp.weixin.qq.com/s/ETbHjXLJIeaWo-XIHHtMkQ
 
 大数据告诉你：逃离北上广，他们都去了哪里？
 
+http://www.chinacloud.cn/show.aspx?id=24053&cid=22
+
+区块链与大数据究竟有着怎样的关系？
+
+https://mp.weixin.qq.com/s/l56o316HJL9__DmUAKoHTg
+
+结构化存储云HBase技术架构及最佳实践
+
+http://www.jizhuomi.com/internet/346.html
+
+比特史记--建国录
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

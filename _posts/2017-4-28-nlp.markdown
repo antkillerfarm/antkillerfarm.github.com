@@ -379,6 +379,10 @@ https://mp.weixin.qq.com/s/z1hhG4GaBQXPHHt9UGZPnA
 
 东南大学高桓：知识图谱表示学习
 
+https://mp.weixin.qq.com/s/JZYH_m1eS93KRjkWA82GoA
+
+复旦肖仰华：基于知识图谱的问答系统
+
 ## 论文
 
 《Distant Supervision for relation extraction without labeled data》
