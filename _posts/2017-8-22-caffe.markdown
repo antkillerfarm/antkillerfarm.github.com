@@ -111,6 +111,10 @@ https://mp.weixin.qq.com/s/-Jn4UbZ6EqRYceJqI1l16g
 
 一文简短介绍Caffe
 
+http://blog.csdn.net/haluoluo211/article/details/77918156
+
+caffe python图片训练识别实例
+
 ## Caffe2
 
 2017.4，贾扬清推出了全新设计的Caffe2。由于是全新设计，Caffe2和Caffe不兼容，完全可看为是一个新的DL框架。

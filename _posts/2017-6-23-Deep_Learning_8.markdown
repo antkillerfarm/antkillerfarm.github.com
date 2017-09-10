@@ -99,6 +99,10 @@ http://blog.csdn.net/u011534057/article/category/6396518
 
 GAN系列blog
 
+https://mp.weixin.qq.com/s/4CypEZscTfmUzOk-p_rZog
+
+生成对抗网络初学入门：一文读懂GAN的基本原理
+
 http://mp.weixin.qq.com/s/bzwG0QxnP2drqS4RwcZlBg
 
 微软详解：到底什么是生成式对抗网络GAN？
@@ -283,7 +287,7 @@ http://vision.stanford.edu/feifeili/
 
 ## 大佬的门徒
 
-比如可爱的妹子**Serena Yeung**。这个妹子是斯坦福的本硕博。出身不详，但从姓名的英文拼法来看，应该是美国土生的华裔。Yeung是杨、阳、羊等姓的传统英文拼法，但显然不是大陆推行的拼音拼法。（可以对比的是Fei-Fei Li和Bruce Lee，对于姓的不同拼法）
+比如可爱的妹子**Serena Yeung**。这个妹子是斯坦福的本硕博。出身不详，但从姓名的英文拼法来看，应该是美国土生的华裔。Yeung是杨、阳、羊等姓的传统英文拼法，但显然不是大陆推行的拼音拼法。（可以对比的是Fei-Fei Li和Bruce Lee，对于同一个姓的不同拼法。）
 
 个人主页：
 

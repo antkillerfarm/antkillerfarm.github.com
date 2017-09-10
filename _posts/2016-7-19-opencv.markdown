@@ -306,6 +306,10 @@ http://joanbruna.github.io/stat212b/
 
 Stat212b：Topics Course on Deep Learning——加州大学伯克利分校统计系Joan Bruna（Yann LeCun博士后）以统计的角度讲解DL。
 
+https://blogs.princeton.edu/imabandit/orf523-the-complexities-of-optimization/
+
+ORF523: The complexities of optimization
+
 # Javascript在客户端的使用
 
 Javascript在服务器前端的成功，促使人们思考其在客户端的使用。

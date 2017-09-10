@@ -1,8 +1,59 @@
 ---
 layout: post
-title:  机器学习（二十三）——时间序列分析, 推荐算法中的常用排序算法, NLP机器翻译常用评价度量, Tri-training
+title:  机器学习（二十三）——单分类SVM&多分类SVM, 时间序列分析, 推荐算法中的常用排序算法
 category: theory 
 ---
+
+# 单分类SVM&多分类SVM
+
+## 单分类SVM（续）
+
+单分类SVM的目标，实际上是确定positive样本的boundary。boundary之外的数据，会被分为另一类。这实际上就是一种异常检测的算法了。它主要适用于negative样本的特征不容易确定的场景。
+
+![](/images/article/one_class_svm.png)
+
+这里可以假设最好的boundary要远离feature space中的原点。左边是在original space中的boundary，可以看到有很多的boundary都符合要求，但是比较靠谱的是找一个比较紧（closeness）的boundary（红色的）。这个目标转换到feature space就是找一个离原点比较远的boundary，同样是红色的直线。
+
+当然这些约束条件都是人为加上去的，你可以按照你自己的需要采取相应的约束条件。比如让data的中心离原点最远。
+
+下面我们讨论一下SVDD的算法实现。
+
+首先定义需要最小化的目标函数：
+
+$$\begin{align}
+&\operatorname{min}& & F(R,a,\xi_i) = R^2 + C \sum_{i=1}^N \xi_i\\
+&\operatorname{s.t.}& & (x_i - a)^T (x_i - a) \leq R^2 + \xi_i\text{,} \qquad \xi_i \geq 0
+\end{align}$$
+
+这里a表示形状的中心，R表示半径，C和$$\xi$$的含义与普通SVM相同。
+
+Lagrangian算子：
+
+$$L(R,a,\alpha_i,\xi_i) = R^2 + C \sum_{i=1}^N \xi_i - \sum_{i=1}^N \gamma_i \xi_i - \sum_{i=1}^N \alpha_i \left(  R^2 + \xi_i - (x_i - c)^T (x_i - c) \right)$$
+
+对偶问题：
+
+$$L = \sum_{i=1}^N \alpha_i (x_i^T \cdot x_i) - \sum_{i,j=1}^N \alpha_i \alpha_j (x_i^T \cdot x_i)$$
+
+使用核函数：
+
+$$L = \sum_{i=1}^N \alpha_i K(x_i,x_i) - \sum_{i,j=1}^N \alpha_i \alpha_j K(x_i,x_j)$$
+
+预测函数：
+
+$$y(x) = \sum_{i=1}^N \alpha_i K(x,x_n) + b$$
+
+根据计算结果的符号，来判定是正常样本，还是异常样本。
+
+参考：
+
+https://www.projectrhea.org/rhea/index.php/One_class_svm
+
+One-Class Support Vector Machines for Anomaly Detection
+
+https://www.zhihu.com/question/22365729
+
+什么是一类支持向量机（one class SVM）
 
 ## 多分类SVM
 
@@ -172,28 +223,6 @@ Learning to Retrieve Information (SCC 1995), Learning to Order Things (NIPS 1998
 
 LambdaRank (NIPS 2006), AdaRank (SIGIR 2007), SVM-MAP (SIGIR 2007), SoftRank (LR4IR 2007), GPRank (LR4IR 2007), CCA (SIGIR 2007), RankCosine (IP&M 2007), ListNet (ICML 2007), ListMLE (ICML 2008) 。
 
-# NLP机器翻译常用评价度量
-
-机器翻译的评价指标主要有：BLEU、NIST、Rouge、METEOR等。
-
-参考：
-
-http://blog.csdn.net/joshuaxx316/article/details/58696552
-
-BLEU，ROUGE，METEOR，ROUGE-浅述自然语言处理机器翻译常用评价度量
-
-http://blog.csdn.net/guolindonggld/article/details/56966200
-
-机器翻译评价指标之BLEU
-
-http://blog.csdn.net/han_xiaoyang/article/details/10118517
-
-机器翻译评估标准介绍和计算方法
-
-http://blog.csdn.net/lcj369387335/article/details/69845385
-
-自动文档摘要评价方法---Edmundson和ROUGE
-
 # Tri-training
 
 ## 半监督学习
@@ -217,49 +246,5 @@ http://blog.csdn.net/lcj369387335/article/details/69845385
 4.根据B的真实标记，更新模型A。
 
 以SVM为例，对于改善模型性能帮助最大的样本往往是位于分类边界的样本，可将这些样本挑出来，查询它的标记。
-
-### 纯半监督学习和推断学习
-
-纯半监督学习和推断学习，都属于广义上的半监督学习。和主动学习不同，半监督学习无需专家提供的外部信息。
-
-但标记数据总归不能无中生有，半监督学习的实现有赖于若干假设，其中主要有聚类假设和流形假设两种。其本质都是“相似的样本拥有相似的输出”。
-
-纯半监督学习假定未标记数据为训练样本集，而推断学习则认为未标记数据为测试样本集。
-
-虽然多数情况下，半监督学习能有效提升模型的泛化性能，然而这并不是绝对的。当半监督学习之后，模型的泛化性能反而下降时，我们首先需要检查数据是否满足算法所依赖的假设。
-
-参考：
-
-http://www.cnblogs.com/chaosimple/p/3147974.html
-
-半监督学习
-
-## 协同训练算法
-
-协同训练（co-training）算法是一种多学习器的半监督学习算法。它是多视图（multi-view）学习的代表。
-
-以电影为例，它拥有多个属性集：图像、声音、字幕等。每个属性集就构成了一个视图。
-
-协同训练假设不同的视图具有“相容性”。所谓相容性是指，如果一个电影从图像判断，像是动作片，那么从声音判断，也有很大可能是动作片。
-
-协同训练的算法流程：
-
-1.在每个视图上，基于有标记数据，分别训练出一个分类器。
-
-2.每个分类器挑选自己最有把握的未标记数据，赋予伪标记。
-
-3.其他分类器利用伪标记，进一步训练模型，最终达到相互促进的目的。
-
-理论上，如果不同视图之间具有完全相容性，则模型准确度可达到任意上限。而实际中，虽然很难满足完全相容性假设，但该算法仍能有效提升模型的准确度。
-
-原始的协同训练算法的主要局限在于，构造视图在工程上是件很有难度的事情。后续的一些改进算法针对这点，在应用范围上做了不少改进。如基于不同学习算法、不同的数据采样、不同的参数设置的协同训练算法。
-
-理论研究表明，只要弱学习器之间具有显著分歧（或差异），即可通过相互提供伪标记的方式提升泛化性能。因此，协同训练算法又被称为**基于分歧的算法**。
-
-## Tri-training
-
-2005年，周志华提出了Tri-training算法。该算法的流程如下：
-
-1.首先对有标记示例集进行可重复取样(bootstrap sampling)以获得三个有标记训练集，然后从每个训练集产生一个分类器。
 
 

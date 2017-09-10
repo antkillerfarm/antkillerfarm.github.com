@@ -226,7 +226,7 @@ https://mp.weixin.qq.com/s/8RDHTn6P63otKXUdrHhbjw
 
 ## Other
 
-http://cs.stanford.edu/people/karpathy/convnetjs//demo/classify2d.html
+http://cs.stanford.edu/people/karpathy/convnetjs/demo/classify2d.html
 
 这是一个2层神经网络的可视化demo
 

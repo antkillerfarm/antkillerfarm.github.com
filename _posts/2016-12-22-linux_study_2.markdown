@@ -184,6 +184,12 @@ https://www.sharelatex.com/
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/tikz
 
+由于qtikz对于某些包支持的不好，我也不知道该怎样配置，因此采用了原始的命令行方式：
+
+`pdflatex xxx.tex`
+
+`evince xxx.pdf`
+
 参考：
 
 http://www.hahack.com/tools/pgftikz-resources/

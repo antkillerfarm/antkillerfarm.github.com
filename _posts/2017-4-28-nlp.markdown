@@ -54,6 +54,10 @@ http://phontron.com/class/mtandseq2seq2017/
 
 CMU Machine Translation and Sequence to Sequence Models
 
+https://github.com/oxford-cs-deepnlp-2017/lectures
+
+Oxford Deep NLP 2017 course
+
 ## 书籍
 
 http://ccl.pku.edu.cn/alcourse/nlp/LectureNotes/Natural%20Language%20Processing%20with%20Python.pdf
@@ -234,6 +238,20 @@ https://github.com/hankcs/HanLP/
 4.HanLP在主页上提供了相关算法的blog，便于初学者快速掌握相关概念。其词典是明文发布，便于用户修改。HanLP执行时，会将明文词典以特定结构缓存，以提高执行效率。
 
 >注：不要以为中文有分词问题，就比别的语言复杂，英文还有词根问题呢。。。每种语言都不简单。
+
+## AllenNLP
+
+AllenNLP是Allen AI实验室的作品，采用深度学习技术，基于PyTorch开发。
+
+官网：
+
+http://allennlp.org/
+
+Allen AI实验室由微软联合创始人Paul G. Allen投资创立。
+
+官网：
+
+http://allenai.org/
 
 ### 其他
 

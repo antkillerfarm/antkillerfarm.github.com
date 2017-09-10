@@ -282,6 +282,30 @@ jaxws-demo-client就是具体的客户端实现了，可以看出相比于上一
 
 # 机器人参考资源
 
+## 课程
+
+http://selfdrivingcars.mit.edu/
+
+MIT 6.S094: Deep Learning for Self-Driving Cars
+
+>主讲：Lex Fridman，MIT博士后。   
+>个人主页：   
+>http://lexfridman.com/
+
+这个课程不仅提供了课件，还提供了DeepTraffic和DeepTesla两个小工具供学生验证自己的算法。这两个工具是用ConvNetJS编写的。
+
+ConvNetJS是Andrej Karpathy编写的基于JavaScript的DL框架。
+
+官网：
+
+http://cs.stanford.edu/people/karpathy/convnetjs/
+
+代码：
+
+https://github.com/karpathy/convnetjs
+
+## 文章
+
 http://blog.exbot.net/
 
 一个机器人技术方面的网站。
@@ -367,5 +391,10 @@ http://mp.weixin.qq.com/s/KcHlWmIdKpjledwWFdNbCw
 http://mp.weixin.qq.com/s/SWUQvR6qA2JKjaclWskUTQ
 
 DeepTest：可自动测试深度神经网络驾驶系统
+
+https://mp.weixin.qq.com/s/Rmvksy54iKgcyd7bqy_oxQ
+
+机器人开源操作系统ROS入门
+
 
 

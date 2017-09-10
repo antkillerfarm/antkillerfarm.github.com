@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十二）——AutoML, KNN, Optimizer, 单分类SVM&多分类SVM
+title:  机器学习（二十二）——AutoML, KNN, Optimizer
 category: theory 
 ---
 
@@ -170,6 +170,10 @@ Adagrad的缺点在于：训练越往后，G越大，从而学习率越小。如
 
 为了克服Adagrad的缺点，Matthew D. Zeiler于2012年提出了Adadelta算法。
 
+>注：Matthew D. Zeiler，多伦多大学本科（2009）+纽约大学博士（2013）。Clarifai创始人和CEO。读书期间，他还创立了一家给大学生卖习题册的公司。   
+>个人主页：   
+>http://www.matthewzeiler.com/
+
 该算法不再使用历史累积值，而是只取最近的w个状态，这样就不会让梯度被惩罚至0。
 
 为了避免保存前w个状态的梯度平方和，可做如下变换：
@@ -206,6 +210,34 @@ $$\hat{v}_t = \dfrac{v_t}{1 - \beta^t_2}$$
 
 $$\theta_{t+1} = \theta_{t} - \dfrac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \hat{m}_t$$
 
+## Nesterov’s Accelerated Gradient Descent
+
+>注：Yurii Nesterov，莫斯科大学应用数学系本科（1977年），凸优化理论专家。法国鲁汶天主教大学教授。2009年获John von Neumann Theory Prize。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/22810533
+
+比Momentum更快：揭开Nesterov Accelerated Gradient的真面目
+
+https://zhuanlan.zhihu.com/p/27435669
+
+从Nesterov的角度看：我们为什么要研究凸优化？
+
+https://www.cs.cmu.edu/~ggordon/10725-F12/slides/09-acceleration.pdf
+
+Accelerated first-order methods
+
+## Nadam
+
+http://cs229.stanford.edu/proj2015/054_report.pdf
+
+ncorporating Nesterov Momentum into Adam
+
+## AdaSecant
+
+《ADASECANT: Robust Adaptive Secant Method for Stochastic Gradient》
+
 ## 参考
 
 http://sebastianruder.com/optimizing-gradient-descent/
@@ -232,6 +264,14 @@ https://mp.weixin.qq.com/s/4XOI8Dq6fqe8rhtJjeyxeA
 
 超级收敛：使用超大学习率超快速训练残差网络
 
+http://mp.weixin.qq.com/s/Q5kBCNZs3a6oiznC9-2bVg
+
+Michael Jordan新研究官方解读：如何有效地避开鞍点
+
+https://mp.weixin.qq.com/s/q7BI-YyhtmNzUfBMTKVdqQ
+
+Hitting time analysis of SGLD！
+
 # 单分类SVM&多分类SVM
 
 原始的SVM主要用于二分类，然而稍加变化，也可用于单分类和多分类。
@@ -241,51 +281,4 @@ https://mp.weixin.qq.com/s/4XOI8Dq6fqe8rhtJjeyxeA
 单分类任务是一类特殊的分类任务。在该任务中，大多数样本只有positive一类标签，而其他样本则笼统的划为另一类。
 
 单分类SVM（也叫Support Vector Domain Description(SVDD)）是一种单分类算法。和普通SVM相比，它不再使用maximum margin了，因为这里并没有两类的data。
-
-单分类SVM的目标，实际上是确定positive样本的boundary。boundary之外的数据，会被分为另一类。这实际上就是一种异常检测的算法了。它主要适用于negative样本的特征不容易确定的场景。
-
-![](/images/article/one_class_svm.png)
-
-这里可以假设最好的boundary要远离feature space中的原点。左边是在original space中的boundary，可以看到有很多的boundary都符合要求，但是比较靠谱的是找一个比较紧（closeness）的boundary（红色的）。这个目标转换到feature space就是找一个离原点比较远的boundary，同样是红色的直线。
-
-当然这些约束条件都是人为加上去的，你可以按照你自己的需要采取相应的约束条件。比如让data的中心离原点最远。
-
-下面我们讨论一下SVDD的算法实现。
-
-首先定义需要最小化的目标函数：
-
-$$\begin{align}
-&\operatorname{min}& & F(R,a,\xi_i) = R^2 + C \sum_{i=1}^N \xi_i\\
-&\operatorname{s.t.}& & (x_i - a)^T (x_i - a) \leq R^2 + \xi_i\text{,} \qquad \xi_i \geq 0
-\end{align}$$
-
-这里a表示形状的中心，R表示半径，C和$$\xi$$的含义与普通SVM相同。
-
-Lagrangian算子：
-
-$$L(R,a,\alpha_i,\xi_i) = R^2 + C \sum_{i=1}^N \xi_i - \sum_{i=1}^N \gamma_i \xi_i - \sum_{i=1}^N \alpha_i \left(  R^2 + \xi_i - (x_i - c)^T (x_i - c) \right)$$
-
-对偶问题：
-
-$$L = \sum_{i=1}^N \alpha_i (x_i^T \cdot x_i) - \sum_{i,j=1}^N \alpha_i \alpha_j (x_i^T \cdot x_i)$$
-
-使用核函数：
-
-$$L = \sum_{i=1}^N \alpha_i K(x_i,x_i) - \sum_{i,j=1}^N \alpha_i \alpha_j K(x_i,x_j)$$
-
-预测函数：
-
-$$y(x) = \sum_{i=1}^N \alpha_i K(x,x_n) + b$$
-
-根据计算结果的符号，来判定是正常样本，还是异常样本。
-
-参考：
-
-https://www.projectrhea.org/rhea/index.php/One_class_svm
-
-One-Class Support Vector Machines for Anomaly Detection
-
-https://www.zhihu.com/question/22365729
-
-什么是一类支持向量机（one class SVM）
 

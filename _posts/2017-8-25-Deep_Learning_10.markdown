@@ -28,6 +28,16 @@ Non-Maximum Suppression顾名思义就是抑制不是极大值的元素，搜索
 
 如果用selective search挑选出来的候选框与物体的人工标注矩形框的重叠区域IoU大于0.5，那么我们就把这个候选框标注成物体类别（正样本），否则我们就把它当做背景类别（负样本）。
 
+## 使用SVM的问题
+
+CNN训练的时候，本来就是对bounding box的物体进行识别分类训练，在训练的时候，最后一层softmax就是分类层。那么为什么作者闲着没事干要先用CNN做特征提取（提取fc7层数据），然后再把提取的特征用于训练SVM分类器？
+
+这个是因为SVM训练和cnn训练过程的正负样本定义方式各有不同，导致最后采用CNN softmax输出比采用SVM精度还低。
+
+事情是这样的，cnn在训练的时候，对训练数据做了比较宽松的标注，比如一个bounding box可能只包含物体的一部分，那么我也把它标注为正样本，用于训练cnn；采用这个方法的主要原因在于因为CNN容易过拟合，所以需要大量的训练数据，所以在CNN训练阶段我们是对Bounding box的位置限制条件限制的比较松(IOU只要大于0.5都被标注为正样本了)；
+
+然而SVM训练的时候，因为SVM适用于少样本训练，所以对于训练样本数据的IOU要求比较严格，我们只有当bounding box把整个物体都包含进去了，我们才把它标注为物体类别，然后训练SVM。
+
 ## 评价标准
 
 http://blog.sina.com.cn/s/blog_9db078090102whzw.html
@@ -102,6 +112,12 @@ SPPNet的核心思想如上图所示：在feature map上提取ROI特征，这样
 
 ![](/images/article/spp_p.png)
 
+从上图可以看出，由于卷积策略的不同，SPPnet的流程和RCNN也有一点微小的差异：
+
+1.RCNN是先选择区域，然后对区域进行卷积，并检测。
+
+2.SPPnet是先统一卷积，然后做区域检测。
+
 参考：
 
 https://zhuanlan.zhihu.com/p/24774302
@@ -121,6 +137,20 @@ Fast R-CNN是Ross Girshick于2015年祭出的又一大招。
 https://github.com/rbgirshick/fast-rcnn
 
 ![](/images/article/fast_rcnn_p_2.png)
+
+上图是Fast R-CNN的结构图。从该图可以看出Fast R-CNN和SPPnet的主要差异在于：
+
+1.使用ROI Pooling，替换SPP。
+
+2.去掉了SVM分类。
+
+以下将对这两个方面，做一个简述。
+
+## ROI Pooling
+
+
+
+## 总结
 
 ![](/images/article/fast_rcnn_p.png)
 
@@ -153,34 +183,4 @@ Faster RCNN算法详解
 https://mp.weixin.qq.com/s/VKQufVUQ3TP5m7_2vOxnEQ
 
 通过Faster R-CNN实现当前最佳的目标计数
-
-# YOLO
-
-YOLO: Real-Time Object Detection，是一个基于神经网络的实时对象检测软件。
-
-官网：
-
-https://pjreddie.com/darknet/yolo/
-
-参考：
-
-https://zhuanlan.zhihu.com/p/24916786
-
-图解YOLO
-
-https://mp.weixin.qq.com/s/n51XtGAsaDDAatXYychXrg
-
-YOLO比R-CNN快1000倍，比Fast R-CNN快100倍的实时对象检测！
-
-http://blog.csdn.net/tangwei2014/article/details/50915317
-
-论文阅读笔记：You Only Look Once: Unified, Real-Time Object Detection
-
-https://mp.weixin.qq.com/s/Wqj6EM33p-rjPIHnFKtmCw
-
-计算机是怎样快速看懂图片的：比R-CNN快1000倍的YOLO算法
-
-https://zhuanlan.zhihu.com/p/25167153
-
-YOLO2
 

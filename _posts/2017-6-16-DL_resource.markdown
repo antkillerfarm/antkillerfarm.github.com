@@ -8,6 +8,10 @@ category: technology
 
 ## blog
 
+http://www.msra.cn/zh-cn/news?wd&content-type=posts
+
+MSRA的文章官网
+
 http://blog.csdn.net/abcjennifer
 
 一个浙大妹子的blog，关注计算机视觉、机器学习。现在百度深度学习实验室。
@@ -28,7 +32,7 @@ http://kexue.fm/category/Big-Data/
 
 苏剑林的blog。
 
-blog.csdn.net/shenxiaolu1984
+http://blog.csdn.net/shenxiaolu1984
 
 一个深度学习的blog。
 
@@ -89,6 +93,10 @@ https://zhuanlan.zhihu.com/dlgirls
 写给妹子的深度学习教程
 
 http://blog.csdn.net/u014114990
+
+一个DL的blog
+
+http://www.jianshu.com/u/b20d6310182a
 
 一个DL的blog
 
@@ -217,6 +225,10 @@ http://www.jianshu.com/p/c9952d861328
 http://theorangeduck.com/page/neural-network-not-working
 
 My Neural Network isn't working! What should I do?
+
+https://mp.weixin.qq.com/s/9xVMh2Zf9fP0_vXRoTe7ng
+
+详解前馈、卷积和循环神经网络技术
 
 ### 算法
 
@@ -365,6 +377,10 @@ https://mp.weixin.qq.com/s/iwPI8g2JwabwiCO8kfw8Hw
 https://mp.weixin.qq.com/s/ObIYpiH7MLZEi5XzXdGBYg
 
 从TensorFlow到PyTorch：九大深度学习框架哪款最适合你？
+
+https://mp.weixin.qq.com/s/bU541QHjC4grICDjnTSYDA
+
+10大深度学习框架实验对比
 
 ### 量子计算 & 遗传算法
 

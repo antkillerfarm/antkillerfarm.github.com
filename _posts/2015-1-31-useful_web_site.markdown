@@ -386,13 +386,29 @@ http://www.chinacloud.cn/show.aspx?id=24053&cid=22
 
 区块链与大数据究竟有着怎样的关系？
 
-https://mp.weixin.qq.com/s/l56o316HJL9__DmUAKoHTg
+http://www.msra.cn/zh-cn/news/features/blockchain-20161213
 
-结构化存储云HBase技术架构及最佳实践
+一文读懂区块链上的隐私与监管问题
 
 http://www.jizhuomi.com/internet/346.html
 
 比特史记--建国录
+
+https://mp.weixin.qq.com/s/l56o316HJL9__DmUAKoHTg
+
+结构化存储云HBase技术架构及最佳实践
+
+https://www.zhihu.com/question/30022694/answer/224543003
+
+田渊栋：作为入行数年的专业科研工作者，你每周看几篇paper？
+
+https://mp.weixin.qq.com/s/T4XULnykHANEetmDIhZdaw
+
+mobile camera sensor技术方向选择的经验与教训
+
+https://mp.weixin.qq.com/s/T7bVFQqzTbZJ7GuQDiNwoA
+
+人工智能在iOS开发上的应用和机会
 
 ## 有用的blog
 

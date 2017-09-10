@@ -354,5 +354,12 @@ https://mp.weixin.qq.com/s/ZV32xDgGTriIAUbHohc90Q
 
 4个学生，1个暑假，百度深度学习开源平台PaddlePaddle诞生了智能桃子分拣器
 
+https://mp.weixin.qq.com/s/0BZxFKjcwxKj7R66NRIWqQ
+
+UC Berkeley新研究：多视角图像3D模型重建技术
+
+https://mp.weixin.qq.com/s/3R8zaFUKFTvp0uE8lY44WA
+
+首个应用残差学习的深度目标跟踪算法
 
 

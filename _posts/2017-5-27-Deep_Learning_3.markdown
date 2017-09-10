@@ -6,6 +6,18 @@ category: theory
 
 # CNN（续）
 
+### 池化
+
+Pooling操作（也称Subsampling）使输入表示（特征维度）变得更小，并且网络中的参数和计算的数量更加可控的减小，因此，可以控制过拟合。
+
+它还可使网络对于输入图像中更小的变化、冗余和变换变得不变性。
+
+### Gaussian Connections
+
+LeNet-5最后一步的Gaussian Connections是一个当年的历史遗迹，目前已经被Softmax所取代。它的含义在上面提到的Yann LeCun的原始论文中有描述。
+
+>注意：现代版的LeNet-5最后一步的Softmax层，实际上包含了$$Wx+b$$和Softmax两种计算。相当于用Softmax函数替换Sigmoid/ReLU函数。
+
 ### 其他
 
 ![](/images/article/CNN_1.jpg)

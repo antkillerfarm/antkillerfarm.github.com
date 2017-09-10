@@ -386,4 +386,6 @@ https://mp.weixin.qq.com/s/xHeEFuv1m1jXFig4tXZY8w
 
 自然语言处理（NLP）快速入门指南
 
+https://mp.weixin.qq.com/s/VPs6OB81K1H7_TMV9xLUVQ
 
+零基础进行神经网络语言建模

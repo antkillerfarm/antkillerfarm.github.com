@@ -16,6 +16,8 @@ $$f(x) = \ln(1 + e^x)$$
 
 # Dropout
 
+## Dropout训练阶段
+
 Dropout是神经网络中解决过拟合问题的一种常见方法。
 
 它的具体做法是：
@@ -44,6 +46,10 @@ https://zhuanlan.zhihu.com/p/23178423
 
 Dropout解决过拟合问题
 
+## Dropout预测阶段
+
+
+
 # 深度学习常用术语解释
 
 ## 深度学习中epoch、batch size、iterations的区别
@@ -62,9 +68,24 @@ Vanilla是神经网络领域的常见词汇，比如Vanilla Neural Networks、Va
 
 ## weight decay
 
-weight decay（权值衰减）的使用既不是为了提高收敛精确度，也不是为了提高收敛速度，其最终目的是防止过拟合。在损失函数中，weight decay是放在正则项（regularization）前面的一个系数，正则项一般指示模型的复杂度，所以weight decay的作用是调节模型复杂度对损失函数的影响，若weight decay很大，则复杂的模型损失函数的值也就大。
+在《机器学习（十四）》中，我们已经指出了规则化在防止病态矩阵中的应用。实际上，规则化也是防止过拟合的重要手段。
 
-https://mp.weixin.qq.com/s/W4d2fkiJig--PuDPM11ozA
+$$J(W,b)= \left[ \frac{1}{m} \sum_{i=1}^m J(W,b;x^{(i)},y^{(i)}) \right] + \frac{\lambda}{2} \sum_{l=1}^{n_l-1} \; \sum_{i=1}^{s_l} \; \sum_{j=1}^{s_{l+1}} \left( W^{(l)}_{ji} \right)^2$$
+
+上式中在普通loss函数后，添加的规则项也被称作weight decay。
+
+weight decay的误差反向传播公式如下：
+
+$$\frac{\partial}{\partial W_{ij}^{(l)}} J(W,b) =
+\left[ \frac{1}{m} \sum_{i=1}^m \frac{\partial}{\partial W_{ij}^{(l)}} J(W,b; x^{(i)}, y^{(i)}) \right] + \lambda W_{ij}^{(l)}$$
+
+$$W^{(l)} = W^{(l)} - \alpha \left[ \left(\frac{1}{m} \Delta W^{(l)} \right) + \lambda W^{(l)}\right]=(1-\lambda)W^{(l)}-\alpha \left(\frac{1}{m} \Delta W^{(l)} \right)$$
+
+参考：
+
+https://www.zhihu.com/question/24529483
+
+在神经网络中weight decay起到的做用是什么？momentum呢？normalization呢？
 
 ## Batch Normalization
 
@@ -151,6 +172,8 @@ http://blog.csdn.net/u013709270/article/details/70949304
 ![](/images/article/Saddle_point.png)
 
 上图是$$z=x^2-y^2$$的曲面图，其中的原点就是鞍点。上图形似马鞍，故名。
+
+![](/images/article/Ackley.png)
 
 LeCun和Bengio的研究表明，在high-D(高维)的情况下，局部最小会随着维度的增加，指数型的减少，在深度学习中，一个点是局部最小的概率非常小，同时鞍点无处不在。
 
@@ -239,16 +262,3 @@ $$L_2=\sigma(Conv(L_1,W)+b)$$
 CNN网络中，2D全连接的神经元则控制了局部感受野，有利于解离出稀疏特征。
 
 至于激活函数，则是为了保证变换的非线性。这也是CNN被归类为NN的根本原因。
-
-### 池化
-
-Pooling操作（也称Subsampling）使输入表示（特征维度）变得更小，并且网络中的参数和计算的数量更加可控的减小，因此，可以控制过拟合。
-
-它还可使网络对于输入图像中更小的变化、冗余和变换变得不变性。
-
-### Gaussian Connections
-
-LeNet-5最后一步的Gaussian Connections是一个当年的历史遗迹，目前已经被Softmax所取代。它的含义在上面提到的Yann LeCun的原始论文中有描述。
-
->注意：现代版的LeNet-5最后一步的Softmax层，实际上包含了$$Wx+b$$和Softmax两种计算。相当于用Softmax函数替换Sigmoid/ReLU函数。
-
