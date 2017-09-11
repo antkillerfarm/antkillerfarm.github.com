@@ -34,6 +34,14 @@ https://zhuanlan.zhihu.com/p/25167153
 
 YOLO2
 
+http://lanbing510.info/2017/08/28/YOLO-SSD.html
+
+目标检测之YOLO，SSD
+
+http://lanbing510.info/2017/09/04/YOLOV2.html
+
+目标检测之YOLOv2
+
 # SSD
 
 SSD是Wei Liu于2016年提出的算法。

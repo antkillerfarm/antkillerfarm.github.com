@@ -4,7 +4,21 @@ title:  深度学习（三）——Autoencoder, 词向量
 category: theory 
 ---
 
-# CNN（续）
+# CNN
+
+### 卷积（续）
+
+需要注意的是，传统的CV算法中，通常只有单一的卷积运算。而CNN中的卷积层，实际上包括了**卷积+激活**两种运算，即：
+
+$$L_2=\sigma(Conv(L_1,W)+b)$$
+
+因此，相比全连接层而言，卷积层每次只有部分元素参与到最终的激活运算。从宏观角度看，这些元素实际上对应了图片的局部空间二维信息，它和后面的Pooling操作一道，起到了空间降维的作用。
+
+实际上，传统的MLP（MultiLayer Perceptron）网络，就是由于1D全连接的神经元控制了太多参数，而不利于学习到稀疏特征。
+
+CNN网络中，2D全连接的神经元则控制了局部感受野，有利于解离出稀疏特征。
+
+至于激活函数，则是为了保证变换的非线性。这也是CNN被归类为NN的根本原因。
 
 ### 池化
 
@@ -273,21 +287,5 @@ Hierarchical Softmax是Softmax的一个变种。这时的输出层不再是一�
 Hierarchical Softmax一般基于Huffman编码构建。在本例中，我们首先统计词频，以获得每个词所对应的Huffman编码，然后输出层会利用Huffman编码所对应的层次二叉树的路径来计算每个词的概率，并逆传播到隐藏层。
 
 由Huffman编码的特性可知，Hierarchical Softmax的计算量要小于一般的Softmax。
-
-### Negative Sampling
-
-在CBOW模型中，已知w的上下文Context(w)需要预测w，则w就是正样本，而其他词是负样本。
-
-负样本那么多，该如何选取呢？Negative Sampling就是一种对负样本采样的方法。
-
-![](/images/article/Negative_Sampling.png)
-
-上图是Negative Sampling的原理图。L轴表示的是词频分布，很明显这是一个非等距剖分。而M轴是一个等距剖分。
-
-每次生成一个M轴上的随机数，将之映射到L轴上的一个单词。映射方法如上图中的虚线所示。
-
-除了word2vec之外，类似的Word Embedding方案还有SENNA、RNN-LM、Glove等。但影响力仍以word2vec最大。
-
-Skip-Gram Negative Sampling，又被简称为SGNS。
 
 

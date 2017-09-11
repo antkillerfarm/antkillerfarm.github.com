@@ -106,6 +106,14 @@ http://www.msra.cn/zh-cn/news/features/deformable-convolutional-networks-2017060
 
 可变形卷积网络：计算机新“视”界
 
+https://mp.weixin.qq.com/s/ybI8kJPRn7sH-hJbc5uqnw
+
+CMU研究者探索新卷积方法：在实验中可媲美基准CNN
+
+https://mp.weixin.qq.com/s/qReN6z8s45870HSMCMNatw
+
+微软亚洲研究院：逐层集中Attention的卷积模型
+
 # 花式池化
 
 池化和卷积一样，都是信号采样的一种方式。相比于卷积的千变万化，池化要简单的多。
@@ -119,6 +127,10 @@ http://www.msra.cn/zh-cn/news/features/deformable-convolutional-networks-2017060
 ICLR2013上，Zeiler提出了另一种pooling手段stochastic pooling。只需对Pooling区域中的元素按照其概率值大小随机选择，即元素值大的被选中的概率也大。而不像max-pooling那样，永远只取那个最大值元素。
 
 池化的反向传播也比较简单。以上图的Max Pooling为例，由于取的是最大值7,因此，误差只要传递给7所在的神经元即可。
+
+这里再次强调一下，池化只是对信号的下采样。对于图像来说，这种下采样保留了图像的某些特征，因而是有意义的。但对于另外的任务则未必如此。
+
+比如，AlphaGo采用CNN识别棋局，但对棋局来说，下采样显然是没有什么物理意义的，因此，**AlphaGo的CNN是没有Pooling的**。
 
 参考：
 

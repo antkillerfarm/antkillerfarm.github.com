@@ -68,6 +68,18 @@ https://mp.weixin.qq.com/s/Nyq_36aFmQYRWdpgbgxpuA
 
 将注意力机制引入RNN，解决5大应用领域的序列预测问题
 
+https://mp.weixin.qq.com/s/2gxp7A38epQWoy7wK8Nl6A
+
+谷歌翻译最新突破，“关注机制”让机器读懂词与词的联系
+
+https://mp.weixin.qq.com/s/g2PcmsDW9ixUCh_yP8W-Vg
+
+各类Seq2Seq模型对比及《Attention Is All You Need》中技术详解
+
+https://mp.weixin.qq.com/s/FtI94xY6a8TEvFCHfjMnmA
+
+小组讨论谷歌机器翻译Attention is All You Need
+
 # seq2seq
 
 seq2seq最早用于Neural Machine Translation领域（与之相对应的有Statistical Machine Translation）。训练后的seq2seq模型，可以根据输入语句，自动生成翻译后的输出语句。
@@ -123,6 +135,10 @@ Attentive Sequence to Sequence Networks
 https://mp.weixin.qq.com/s/cGXANj7BB2ktTdPAL4ZEWA
 
 图解神经网络机器翻译原理：LSTM、seq2seq到Zero-Shot
+
+https://mp.weixin.qq.com/s/jYUAKyTpm69J6Q34A06E-w
+
+百度提出冷聚变方法：使用语言模型训练Seq2Seq模型
 
 # DMN
 

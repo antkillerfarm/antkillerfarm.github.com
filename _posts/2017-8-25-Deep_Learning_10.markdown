@@ -148,7 +148,31 @@ https://github.com/rbgirshick/fast-rcnn
 
 ## ROI Pooling
 
+SPP将图像pooling成多个固定尺度，而RoI只将图像pooling到单个固定的尺度。（虽然多尺度学习能提高一点点mAP，不过计算量成倍的增加。）
 
+普通pooling操作中，pooling区域的大小一旦选定，就不再变化。
+
+而ROI Pooling中，为了将ROI区域pooling到单个固定的目标尺度，我们需要根据ROI区域和目标尺度的大小，动态计算pooling区域的大小。
+
+## Bounding-box Regression
+
+从Fast R-CNN的结构图可以看出，与一般的CNN不同，它在FC之后，实际上有两个输出层：第一个是针对每个ROI区域的分类概率预测（上图中的Linear+softmax），第二个则是针对每个ROI区域坐标的偏移优化（上图中的Linear）。
+
+然后，这两个输出层（即两个Task）再合并为一个multi-task，并定义统一的loss。
+
+![](/images/article/fast_rcnn_multi_task.png)
+
+由于两个Task的信息互为补充，使得分类预测任务的softmax准确率大为提升，SVM也就没有存在的必要了。
+
+## 全连接层提速
+
+Fast R-CNN的论文中还提到了全连接层提速的概念。这个概念本身和Fast R-CNN倒没有多大关系。因此，完全可以将之推广到其他场合。
+
+![](/images/article/fc_svd.png)
+
+它的主要思路是，在两个大的FC层（假设尺寸为u、v）之间，利用SVD算法加入一个小的FC层（假设尺寸为t），从而减少了计算量。
+
+$$u*v\to u*t+t*v$$
 
 ## 总结
 
@@ -165,6 +189,16 @@ http://blog.csdn.net/shenxiaolu1984/article/details/51036677
 Fast RCNN算法详解
 
 # Faster-RCNN
+
+Faster-RCNN是任少卿2016年提出的新算法。Ross Girshick和何恺明也是论文的作者之一。
+
+>注：任少卿，中科大本科（2011年）+博士（2016年）。Momenta联合创始人+技术总监。
+
+论文：
+
+《Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks》
+
+Fast R-CNN
 
 ![](/images/article/faster_rcnn_p.png)
 

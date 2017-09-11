@@ -224,6 +224,14 @@ https://mp.weixin.qq.com/s/8RDHTn6P63otKXUdrHhbjw
 
 一文看懂AI芯片产业生态及竞争格局
 
+https://mp.weixin.qq.com/s/y9dVg9YtfWxu6NcW-fxi6Q
+
+内存带宽与计算能力，谁才是决定深度学习执行性能的关键？
+
+https://mp.weixin.qq.com/s/ToIDncp9dS_qk47PsdZm5A
+
+杜克大学：分布式深度学习训练算法TernGrad
+
 ## Other
 
 http://cs.stanford.edu/people/karpathy/convnetjs/demo/classify2d.html
@@ -301,14 +309,6 @@ https://mp.weixin.qq.com/s/bGbslnuG80S6gPwD4FHuMg
 https://mp.weixin.qq.com/s/eCtqMIo3_UDxAR4fWzMjZQ
 
 站在锤子手机背后，小源科技用AI打造短信场景服务
-
-https://mp.weixin.qq.com/s/g2PcmsDW9ixUCh_yP8W-Vg
-
-各类Seq2Seq模型对比及《Attention Is All You Need》中技术详解
-
-https://mp.weixin.qq.com/s/FtI94xY6a8TEvFCHfjMnmA
-
-小组讨论谷歌机器翻译Attention is All You Need
 
 http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
 

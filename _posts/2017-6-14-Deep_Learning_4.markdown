@@ -6,6 +6,22 @@ category: theory
 
 # 词向量（续）
 
+### Negative Sampling
+
+在CBOW模型中，已知w的上下文Context(w)需要预测w，则w就是正样本，而其他词是负样本。
+
+负样本那么多，该如何选取呢？Negative Sampling就是一种对负样本采样的方法。
+
+![](/images/article/Negative_Sampling.png)
+
+上图是Negative Sampling的原理图。L轴表示的是词频分布，很明显这是一个非等距剖分。而M轴是一个等距剖分。
+
+每次生成一个M轴上的随机数，将之映射到L轴上的一个单词。映射方法如上图中的虚线所示。
+
+除了word2vec之外，类似的Word Embedding方案还有SENNA、RNN-LM、Glove等。但影响力仍以word2vec最大。
+
+Skip-Gram Negative Sampling，又被简称为SGNS。
+
 ## doc2vec
 
 我们知道，word是sentence的基本组成单位。一个最简单也是最直接得到sentence embedding的方法是将组成sentence的所有word的embedding向量全部加起来。
@@ -237,34 +253,5 @@ https://mp.weixin.qq.com/s/tIXJNkT9gIjGYZz7dekiNw
 https://mp.weixin.qq.com/s/BqVicouktsZu8xLVR-XnFg
 
 完全图解RNN、RNN变体、Seq2Seq、Attention机制
-
-# LSTM
-
-本篇笔记主要摘自：
-
-http://www.jianshu.com/p/9dc9f41f0b29
-
-理解LSTM网络
-
-## LSTM结构图
-
-为了解决原始RNN只有短时记忆的问题，人们又提出了一个RNN的变种——LSTM（Long Short-Term Memory）。其结构图如下所示：
-
-![](/images/article/LSTM.png)
-
-和RNN的时序展开图类似，这里的每个方框表示**某个时刻从输入层到隐层的映射**。
-
-我们首先回顾一下之前的模型在这里的处理。
-
-MLP的该映射关系为：
-
-$$h=\sigma (W\cdot x+b)$$
-
-RNN在上式基础上添加了历史状态$$h_{t-1}$$：
-
-$$h_t=\sigma (W\cdot [h_{t-1},x_t]+b)$$
-
-LSTM不仅添加了历史状态$$h_{t-1}$$，还添加了所谓的**细胞状态**$$C_{t-1}$$，即上图中图像上部的水平横线。
-
 
 

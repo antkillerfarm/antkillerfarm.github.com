@@ -4,7 +4,33 @@ title:  深度学习（五）——神经元激活函数进阶, DRN, Bi-directio
 category: theory 
 ---
 
-# LSTM（续）
+# LSTM
+
+本篇笔记主要摘自：
+
+http://www.jianshu.com/p/9dc9f41f0b29
+
+理解LSTM网络
+
+## LSTM结构图
+
+为了解决原始RNN只有短时记忆的问题，人们又提出了一个RNN的变种——LSTM（Long Short-Term Memory）。其结构图如下所示：
+
+![](/images/article/LSTM.png)
+
+和RNN的时序展开图类似，这里的每个方框表示**某个时刻从输入层到隐层的映射**。
+
+我们首先回顾一下之前的模型在这里的处理。
+
+MLP的该映射关系为：
+
+$$h=\sigma (W\cdot x+b)$$
+
+RNN在上式基础上添加了历史状态$$h_{t-1}$$：
+
+$$h_t=\sigma (W\cdot [h_{t-1},x_t]+b)$$
+
+LSTM不仅添加了历史状态$$h_{t-1}$$，还添加了所谓的**细胞状态**$$C_{t-1}$$，即上图中图像上部的水平横线。
 
 ## 步骤详解
 

@@ -190,10 +190,6 @@ https://mp.weixin.qq.com/s/rlkZ82FcYMOmYoLjiCTN7g
 
 一张图看懂人工智能知识体系
 
-https://mp.weixin.qq.com/s/qReN6z8s45870HSMCMNatw
-
-微软亚洲研究院CVPR 2017 Oral论文：逐层集中Attention的卷积模型
-
 https://mp.weixin.qq.com/s/oNPrmIm1SOlA9tuyQZFr9w
 
 让机器人学会理解语义概念：谷歌提出深度视觉新技术
@@ -361,5 +357,9 @@ UC Berkeley新研究：多视角图像3D模型重建技术
 https://mp.weixin.qq.com/s/3R8zaFUKFTvp0uE8lY44WA
 
 首个应用残差学习的深度目标跟踪算法
+
+https://mp.weixin.qq.com/s/ciqQMezcB-oM24X8eQqTNg
+
+花式玩耍Spatial Transformation Networks
 
 

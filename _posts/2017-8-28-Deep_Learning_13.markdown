@@ -182,6 +182,10 @@ https://mp.weixin.qq.com/s/-G94Mj-8972i2HtEcIZDpA
 
 人脸识别世界杯榜单出炉，微软百万名人识别竞赛冠军分享
 
+https://mp.weixin.qq.com/s/bqWle_188lhYO4hpCfafkQ
+
+用浏览器做人脸检测，竟然这么简单？
+
 # Network In Network
 
 http://blog.csdn.net/sheng_ai/article/details/41313883
