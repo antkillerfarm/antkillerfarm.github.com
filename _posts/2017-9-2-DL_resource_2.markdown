@@ -106,6 +106,14 @@ https://mp.weixin.qq.com/s/CQmZcwI4bgrEiWHP0gBLfQ
 
 DeepMind星际争霸2开源机器学习平台入门
 
+https://zhuanlan.zhihu.com/p/28434323
+
+迈向通用人工智能：星际争霸2人工智能研究环境SC2LE完全入门指南
+
+https://zhuanlan.zhihu.com/p/29246185
+
+重现DeepMind星际争霸强化学习算法
+
 ## TPU & GPU & 并行
 
 https://zhuanlan.zhihu.com/p/25382177

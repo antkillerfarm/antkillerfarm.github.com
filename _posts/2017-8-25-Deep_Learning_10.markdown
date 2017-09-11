@@ -192,7 +192,9 @@ Fast RCNN算法详解
 
 Faster-RCNN是任少卿2016年提出的新算法。Ross Girshick和何恺明也是论文的作者之一。
 
->注：任少卿，中科大本科（2011年）+博士（2016年）。Momenta联合创始人+技术总监。
+>注：任少卿，中科大本科（2011年）+博士（2016年）。Momenta联合创始人+技术总监。   
+>个人主页：   
+>http://shaoqingren.com/
 
 论文：
 
@@ -202,7 +204,9 @@ Fast R-CNN
 
 ![](/images/article/faster_rcnn_p.png)
 
-Region Proposal Networks
+## Region Proposal Networks
+
+
 
 参考：
 

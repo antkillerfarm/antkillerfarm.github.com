@@ -142,6 +142,10 @@ https://zhuanlan.zhihu.com/p/26630215
 
 浅谈手势识别在直播中的运用
 
+https://mp.weixin.qq.com/s/A8foIEN6baR2fxsyZYSmIg
+
+基于OpenCV实现手写体数字训练与识别
+
 ## 论文
 
 《Moving Gradients: A Path-Based Method for Plausible Image Interpolation》：视频帧插值算法
