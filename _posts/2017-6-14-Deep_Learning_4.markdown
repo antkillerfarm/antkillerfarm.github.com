@@ -254,4 +254,11 @@ https://mp.weixin.qq.com/s/BqVicouktsZu8xLVR-XnFg
 
 完全图解RNN、RNN变体、Seq2Seq、Attention机制
 
+https://mp.weixin.qq.com/s/gGGXKT2fTn2xPPvo7PE8IA
+
+像训练CNN一样快速训练RNN：全新RNN实现，比优化后的LSTM快10倍
+
+https://mp.weixin.qq.com/s/0TLaC8ACXAFEK5aMNK9O-Q
+
+简单循环单元SRU：像CNN一样快速训练RNN
 

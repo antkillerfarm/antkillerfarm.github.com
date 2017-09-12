@@ -100,6 +100,10 @@ http://www.jianshu.com/u/b20d6310182a
 
 一个DL的blog
 
+http://blog.csdn.net/xizero00
+
+一个DL的blog
+
 ## 文章
 
 ### 教程
@@ -395,6 +399,10 @@ http://mp.weixin.qq.com/s/FjET9HFNjVVMjqQM2KhtKA
 https://mp.weixin.qq.com/s/WcRYHwXnv9FWpMcOEwIdQg
 
 量子计算的发展及核心问题
+
+https://mp.weixin.qq.com/s/Fb6EsXz8avFkGY7sMdNF6A
+
+用量子计算辅助深度学习：研究者提出量子辅助Helmholtz机
 
 http://blog.csdn.net/u010945683/article/details/40987331
 

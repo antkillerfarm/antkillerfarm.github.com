@@ -146,6 +146,10 @@ https://mp.weixin.qq.com/s/A8foIEN6baR2fxsyZYSmIg
 
 基于OpenCV实现手写体数字训练与识别
 
+https://mp.weixin.qq.com/s/KTLzq6JJxmgIgOwwEEqCRA
+
+人脸检测的C/C++源代码
+
 ## 论文
 
 《Moving Gradients: A Path-Based Method for Plausible Image Interpolation》：视频帧插值算法

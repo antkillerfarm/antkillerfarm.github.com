@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十）——SPPNet, Fast R-CNN, Faster-RCNN, YOLO
+title:  深度学习（十）——SPPNet, Fast R-CNN, Faster R-CNN
 category: theory 
 ---
 
@@ -37,6 +37,12 @@ CNN训练的时候，本来就是对bounding box的物体进行识别分类训�
 事情是这样的，cnn在训练的时候，对训练数据做了比较宽松的标注，比如一个bounding box可能只包含物体的一部分，那么我也把它标注为正样本，用于训练cnn；采用这个方法的主要原因在于因为CNN容易过拟合，所以需要大量的训练数据，所以在CNN训练阶段我们是对Bounding box的位置限制条件限制的比较松(IOU只要大于0.5都被标注为正样本了)；
 
 然而SVM训练的时候，因为SVM适用于少样本训练，所以对于训练样本数据的IOU要求比较严格，我们只有当bounding box把整个物体都包含进去了，我们才把它标注为物体类别，然后训练SVM。
+
+## CNN base
+
+目标检测任务不是一个独立的任务，而是在目标分类基础之上的进一步衍生。因此，无论何种目标检测框架都需要一个目标分类的CNN作为base，仅对其最上层的FC层做一定的修改。
+
+VGG、AlexNet都是常见的CNN base。
 
 ## 评价标准
 
@@ -86,6 +92,20 @@ SPPNet的核心思想如上图所示：在feature map上提取ROI特征，这样
 
 **Problem 1**：原始图像的ROI如何映射到特征图（一系列卷积层的最后输出）。
 
+这里的计算比较复杂，要点在于：选择原始图像ROI的左上角和右下角，将之映射到feature map上的两个对应点，从而得到feature map上的ROI。
+
+![](/images/article/roi_original_to_feature.png)
+
+参见：
+
+https://zhuanlan.zhihu.com/p/24780433
+
+原始图片中的ROI如何映射到到feature map?
+
+http://www.cnblogs.com/objectDetect/p/5947169.html
+
+卷积神经网络物体检测之感受野大小计算
+
 **Problem 2**：ROI的在特征图上的对应的特征区域的维度不满足全连接层的输入要求怎么办（又不可能像在原始ROI图像上那样进行截取和缩放）？
 
 对于Problem 2我们分析一下：
@@ -116,13 +136,17 @@ SPPNet的核心思想如上图所示：在feature map上提取ROI特征，这样
 
 1.RCNN是先选择区域，然后对区域进行卷积，并检测。
 
-2.SPPnet是先统一卷积，然后做区域检测。
+2.SPPnet是先统一卷积，然后应用选择区域，做区域检测。
 
 参考：
 
 https://zhuanlan.zhihu.com/p/24774302
 
 SPPNet-引入空间金字塔池化改进RCNN
+
+http://kaiminghe.com/iccv15tutorial/iccv2015_tutorial_convolutional_feature_maps_kaiminghe.pdf
+
+何恺明：Convolutional Feature Maps
 
 # Fast R-CNN
 
@@ -188,9 +212,9 @@ http://blog.csdn.net/shenxiaolu1984/article/details/51036677
 
 Fast RCNN算法详解
 
-# Faster-RCNN
+# Faster R-CNN
 
-Faster-RCNN是任少卿2016年提出的新算法。Ross Girshick和何恺明也是论文的作者之一。
+Faster-RCNN是任少卿2016年在MSRA提出的新算法。Ross Girshick和何恺明也是论文的作者之一。
 
 >注：任少卿，中科大本科（2011年）+博士（2016年）。Momenta联合创始人+技术总监。   
 >个人主页：   
@@ -200,13 +224,45 @@ Faster-RCNN是任少卿2016年提出的新算法。Ross Girshick和何恺明也�
 
 《Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks》
 
-Fast R-CNN
+![](/images/article/faster_rcnn_p_2.png)
 
-![](/images/article/faster_rcnn_p.png)
+上图是Faster R-CNN的结构图。
+
+Fast R-CNN尽管已经很优秀了，然而还有一个最大的问题在于：proposal阶段没有整合到CNN中。
+
+这个问题带来了两个不良影响：
+
+1.非end-to-end模型导致程序流程比较复杂。
+
+2.随着后续CNN步骤的简化，生成2k个候选bbox的Selective Search算法成为了整个计算过程的性能瓶颈。（无法利用GPU）
 
 ## Region Proposal Networks
 
+Faster R-CNN最重要的改进就是使用区域生成网络（Region Proposal Networks）替换Selective Search。因此，faster RCNN也可以简单地看做是“**RPN+fast RCNN**”。
 
+![](/images/article/rpn.png)
+
+上图是RPN的结构图。和SPPNet的ROI映射做法类似，RPN直接在feature map，而不是原图像上，生成区域。
+
+由于Faster R-CNN最后会对bbox位置进行精调，因此这里生成区域的时候，只要大致准确即可。
+
+![](/images/article/rpn_feature_map.png)
+
+由于CNN所生成的feature map的尺寸，通常小于原图像。因此将feature map的点映射回原图像，就变成了上图所示的稀疏网点。这些网点也被称为原图感受野的中心点。
+
+把网点当成基准点，然后围绕这个基准点选取k个不同scale、aspect ratio的anchor。论文中用了3个scale（三种面积$$\left\{ 128^2, 256^2, 521^2  \right\}$$，如上图的红绿蓝三色所示），3个aspect ratio（{1:1,1:2,2:1}，如上图的同色方框所示）。
+
+![](/images/article/Anchors.png)
+
+anchor的后处理如上图所示。
+
+![](/images/article/Anchor_Pyramid.png)
+
+上图展示了Image/Feature Pyramid、Filter Pyramid和Anchor Pyramid的区别。
+
+## 总结
+
+![](/images/article/faster_rcnn_p.png)
 
 参考：
 

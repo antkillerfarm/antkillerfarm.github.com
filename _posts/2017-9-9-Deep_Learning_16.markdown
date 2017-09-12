@@ -112,5 +112,8 @@ https://mp.weixin.qq.com/s/xAO7mX64miTXE8E2vZ5q_w
 
 Facebook开源TTS神经网络VoiceLoop：基于室外声音的语音合成
 
+https://mp.weixin.qq.com/s/CVBSvQwnDqT-IVCZV7idog
+
+极限元语音算法专家刘斌：基于深度学习的语音生成问题
 
 

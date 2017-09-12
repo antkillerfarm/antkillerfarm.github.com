@@ -6,11 +6,23 @@ category: theory
 
 # YOLO
 
-YOLO: Real-Time Object Detection，是一个基于神经网络的实时对象检测软件。
+YOLO: Real-Time Object Detection，是一个基于神经网络的实时对象检测软件。它的原理基于Joseph Chet Redmon 2016年的论文：
+
+《You Only Look Once: Unified, Real-Time Object Detection》
+
+这也是Ross Girshick去Facebook之后，参与的又一力作。
 
 官网：
 
 https://pjreddie.com/darknet/yolo/
+
+>注：Joseph Chet Redmon，Middlebury College本科+华盛顿大学博士（在读）。
+
+## 概述
+
+从R-CNN到Fast R-CNN一直采用的思路是proposal+分类（proposal提供位置信息，分类提供类别信息），这也被称作two-stage cascade。
+
+YOLO不仅是end-to-end，而且还提供了另一种更为直接的思路： 直接在输出层回归bounding box的位置和bounding box所属的类别(整张图作为网络的输入，把Object Detection的问题转化成一个 Regression 问题)。
 
 参考：
 
@@ -83,5 +95,24 @@ https://github.com/TimoSaemann/ENet
 《ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation》
 
 http://blog.csdn.net/zijinxuxu/article/details/67638290
+
+# Ultra Deep Network
+
+## FractalNet
+
+论文：
+
+《FractalNet: Ultra-Deep Neural Networks without Residuals》
+
+![](/images/article/FractalNet.png)
+
+## Resnet in Resnet
+
+论文：
+
+《Resnet in Resnet: Generalizing Residual Architectures》
+
+![](/images/article/RiR.png)
+
 
 

@@ -359,6 +359,10 @@ https://mp.weixin.qq.com/s/3QgtemxxsQmuNQVEdpiMwA
 
 如何做准确率达98%的交通标志识别系统？
 
+https://mp.weixin.qq.com/s/pSE2V8wD3_KHMI71kLTXng
+
+如何基于TensorFlow使用LSTM和CNN实现时序分类任务
+
 ## 我的TensorFlow实践
 
 ### MNIST+Softmax

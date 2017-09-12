@@ -226,10 +226,6 @@ https://mp.weixin.qq.com/s/sM72a52wz6eXSkcgnd4JJw
 
 人类与机器人，如何能像朋友一样愉快聊天？
 
-https://mp.weixin.qq.com/s/cEmtOAtfP2gSBlaPfGXb3w
-
-多源信息表示学习在知识图谱中的应用
-
 https://mp.weixin.qq.com/s/-D-5p_7DfvR3D7cZjlUmUA
 
 TensorFlow 谷歌神经机器翻译:从零开始打造属于你的翻译系统
@@ -385,3 +381,13 @@ https://mp.weixin.qq.com/s/xHeEFuv1m1jXFig4tXZY8w
 https://mp.weixin.qq.com/s/VPs6OB81K1H7_TMV9xLUVQ
 
 零基础进行神经网络语言建模
+
+http://blog.csdn.net/xizero00/article/details/51182003
+
+论文阅读：End-To-End Memory Networks
+
+http://geek.csdn.net/news/detail/135736
+
+漫谈词向量之基于Softmax与Sampling的方法
+
+

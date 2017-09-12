@@ -410,6 +410,10 @@ https://mp.weixin.qq.com/s/T7bVFQqzTbZJ7GuQDiNwoA
 
 人工智能在iOS开发上的应用和机会
 
+https://mp.weixin.qq.com/s/qopknJ8l93aJ8iUGzsFhMQ
+
+以太坊是什么鬼？！媲美比特币的加密币大揭秘
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/
