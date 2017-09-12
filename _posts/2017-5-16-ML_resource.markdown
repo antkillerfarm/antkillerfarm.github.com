@@ -114,10 +114,6 @@ http://mp.weixin.qq.com/s/xP4lnLXwGlYE_RmJfRwJ4w
 
 关于如何解释机器学习的一些方法
 
-http://blog.csdn.net/pi9nc/article/details/27649323
-
-一个Q-learning算法的简明教程
-
 http://mp.weixin.qq.com/s?__biz=MzU0NTAyNTQ1OQ==&mid=2247484026&idx=2&sn=bc58406f81c61400a2f314369bbaf324
 
 值得一看——机器学习中容易犯下的错

@@ -16,7 +16,7 @@ YOLO: Real-Time Object Detection，是一个基于神经网络的实时对象检
 
 https://pjreddie.com/darknet/yolo/
 
->注：Joseph Chet Redmon，Middlebury College本科+华盛顿大学博士（在读）。
+>注：Joseph Chet Redmon，Middlebury College本科+华盛顿大学博士（在读）。网名：pjreddie。
 
 ## 概述
 
