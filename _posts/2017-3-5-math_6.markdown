@@ -252,6 +252,6 @@ http://blog.csdn.net/luo123n/article/details/48574123
 
 PMI（Pointwise Mutual Information）
 
-
+borel function
 
 

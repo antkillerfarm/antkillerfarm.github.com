@@ -373,4 +373,8 @@ http://blog.csdn.net/yepeng2007fei/article/details/77677625
 
 批量读取文本文件并生成自己的肖像词云
 
+https://mp.weixin.qq.com/s/W91sppqv3iGtaZPY99suDQ
+
+MIT手把手教你一步步创建自己的R程序包
+
 

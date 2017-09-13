@@ -240,15 +240,33 @@ https://mp.weixin.qq.com/s/ToIDncp9dS_qk47PsdZm5A
 
 杜克大学：分布式深度学习训练算法TernGrad
 
+https://mp.weixin.qq.com/s/jjT0x99ht8xtfWmzL-0R1A
+
+深度学习的IR“之争”
+
+## 面试
+
+https://www.zhihu.com/question/41233373
+
+如果你是面试官，你怎么去判断一个面试者的深度学习水平？
+
+https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
+
+20万、50万、100万的算法工程师，到底有什么区别？
+
+https://www.zhihu.com/question/56676679/answer/151505274
+
+机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
+
+https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
+
+面试官是如何看出你机器学习水平的？
+
 ## Other
 
 http://cs.stanford.edu/people/karpathy/convnetjs/demo/classify2d.html
 
 这是一个2层神经网络的可视化demo
-
-https://www.zhihu.com/question/41233373
-
-如果你是面试官，你怎么去判断一个面试者的深度学习水平？
 
 http://mp.weixin.qq.com/s/upblqKf0m_15o4L1fF0EEQ
 
@@ -261,10 +279,6 @@ http://mp.weixin.qq.com/s/Cg9tHG1YgDCdI3NPYl5-vQ
 https://mp.weixin.qq.com/s/JnGpVQDF95hHTirrZyJc_g
 
 一个降低深度学习时间，空间，经济成本的解决方案
-
-https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
-
-20万、50万、100万的算法工程师，到底有什么区别？
 
 https://mp.weixin.qq.com/s/d-Rt3Bz4Qzf3qaoSxiTlGA
 
@@ -321,10 +335,6 @@ https://mp.weixin.qq.com/s/eCtqMIo3_UDxAR4fWzMjZQ
 http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
 
 《Large Scale Distributed Deep Networks》中译文
-
-https://www.zhihu.com/question/56676679/answer/151505274
-
-机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
 
 https://mp.weixin.qq.com/s/PKqDlbKynnCLE6JAy0NuQQ
 

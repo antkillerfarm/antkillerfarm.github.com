@@ -22,7 +22,9 @@ https://pjreddie.com/darknet/yolo/
 
 从R-CNN到Fast R-CNN一直采用的思路是proposal+分类（proposal提供位置信息，分类提供类别信息），这也被称作two-stage cascade。
 
-YOLO不仅是end-to-end，而且还提供了另一种更为直接的思路： 直接在输出层回归bounding box的位置和bounding box所属的类别(整张图作为网络的输入，把Object Detection的问题转化成一个 Regression 问题)。
+YOLO不仅是end-to-end，而且还提供了另一种更为直接的思路：直接在输出层回归bounding box的位置和bounding box所属的类别(整张图作为网络的输入，把Object Detection的问题转化成一个 Regression 问题)。
+
+![](/images/article/yolo.png)
 
 参考：
 

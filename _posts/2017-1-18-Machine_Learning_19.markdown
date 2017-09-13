@@ -59,6 +59,10 @@ https://mp.weixin.qq.com/s/x06axCC1ZTgezqEYjjNIsw
 
 Xgboost初见面
 
+https://mp.weixin.qq.com/s/f3QVbJiC6gLEptKwFZ-7ZQ
+
+竞赛大杀器XGBoost，你还可以这样玩~
+
 # 关联规则挖掘
 
 ## 基本概念

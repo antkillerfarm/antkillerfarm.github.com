@@ -134,10 +134,6 @@ https://mp.weixin.qq.com/s/bMW2go3QefbgYMqVSzyy_g
 
 腾讯AI Lab深度解读CVPR五大前沿
 
-https://mp.weixin.qq.com/s/DGPI-nASWnsO9t-_AnQnbw
-
-OpenAI 新研究：通过自适应参数噪声提升强化学习性能
-
 https://mp.weixin.qq.com/s/cANlqQAI-A2mC9vnd3imQA
 
 Instance-Aware图像语义分割
@@ -361,5 +357,9 @@ https://mp.weixin.qq.com/s/3R8zaFUKFTvp0uE8lY44WA
 https://mp.weixin.qq.com/s/ciqQMezcB-oM24X8eQqTNg
 
 花式玩耍Spatial Transformation Networks
+
+https://mp.weixin.qq.com/s/kbqTHIOzAj1aERl4tm-kVA
+
+2017上半年无监督特征学习研究成果汇总
 
 

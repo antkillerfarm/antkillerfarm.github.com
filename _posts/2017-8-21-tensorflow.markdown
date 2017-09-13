@@ -363,6 +363,14 @@ https://mp.weixin.qq.com/s/pSE2V8wD3_KHMI71kLTXng
 
 如何基于TensorFlow使用LSTM和CNN实现时序分类任务
 
+https://mp.weixin.qq.com/s/dHkmDvFVUGmt4Ch-gv3s1g
+
+一步一步带你用TensorFlow玩转LSTM
+
+https://mp.weixin.qq.com/s/Bx5Djj-RE0jPJ7LjyQ7GPg
+
+基于gym和tensorflow的强化学习算法实现
+
 ## 我的TensorFlow实践
 
 ### MNIST+Softmax
