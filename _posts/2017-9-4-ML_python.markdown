@@ -246,6 +246,9 @@ https://mp.weixin.qq.com/s/tN7KVBA9GqdjpAjW-_WF8Q
 
 Python学习者最易上手的机器学习漫游指南
 
+https://mp.weixin.qq.com/s/MmuxNA8Xm6uRiVNGhDnyFw
+
+Scikit-learn实战之数据预处理
 
 
 
