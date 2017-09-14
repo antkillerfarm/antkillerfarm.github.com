@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NLP, NLP参考资源（一）
+title:  NLP, 知识图谱参考资源
 category: technology 
 ---
 
@@ -355,7 +355,15 @@ http://www.shuang0420.com/2017/04/27/NLP%E7%AC%94%E8%AE%B0%20-%20NLU%E4%B9%8B%E6
 
 NLU之意图分类
 
-## 知识图谱
+## 论文
+
+《Distant Supervision for relation extraction without labeled data》
+
+《Using Recurrent Neural Networks for Slot Filling in Spoken Language Understanding》
+
+《Convolutional Neural Networks for Sentence Classification》：TextCNN的开山之作
+
+# 知识图谱参考资源
 
 https://wenku.baidu.com/view/38ad3ef7e109581b6bd97f19227916888586b959.html
 
@@ -405,30 +413,8 @@ https://mp.weixin.qq.com/s/cEmtOAtfP2gSBlaPfGXb3w
 
 多源信息表示学习在知识图谱中的应用
 
-## 论文
+https://mp.weixin.qq.com/s/cL1aKdu8ig8-ocOPirXk2w
 
-《Distant Supervision for relation extraction without labeled data》
-
-《Using Recurrent Neural Networks for Slot Filling in Spoken Language Understanding》
-
-《Convolutional Neural Networks for Sentence Classification》：TextCNN的开山之作
-
-# NLP参考资源
-
-https://mp.weixin.qq.com/s/4eyxX_EfrImGXnYmTRUFHw
-
-自然语言处理(NLP)入门指南
-
-https://www.geekhub.cn/a/1163.html
-
-宋睿华：好玩的文本生成
-
-https://github.com/Gii16/TreeDrawer
-
-A small tool to draw a only-text tree as the result of stanford coreNLP
-
-http://www.cnblogs.com/CheeseZH/p/5768389.html
-
-依存句法分析与语义依存分析的区别
+如何构建知识图谱
 
 

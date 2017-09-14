@@ -91,6 +91,14 @@ http://www.jianshu.com/p/b1faa10c9238
 
 TensorFlow CPU环境SSE/AVX/FMA指令集编译
 
+http://www.hankcs.com/ml/compile-and-install-tensorflow-from-source.html
+
+从源码编译安装TensorFlow
+
+http://blog.csdn.net/sinat_28731575/article/details/74633476
+
+Mac下使用源码编译安装TensorFlow CPU版本
+
 ## 基本概念
 
 **Variables**：训练模型的时候，那些在样本之间表示结点状态的变量。一般来说，就是神经网络的参数。

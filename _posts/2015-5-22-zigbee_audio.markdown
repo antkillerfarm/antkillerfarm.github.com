@@ -320,3 +320,8 @@ Trie树也称字典树，因为其效率很高，所以在在字符串查找、�
 
 ![](/images/article/trie.jpg)
 
+参考：
+
+https://mp.weixin.qq.com/s/J7C70ASC6GZJqmqut0Z6Ag
+
+双数组Trie树(DoubleArrayTrie)Java实现

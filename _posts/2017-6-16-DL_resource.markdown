@@ -386,6 +386,10 @@ https://mp.weixin.qq.com/s/bU541QHjC4grICDjnTSYDA
 
 10大深度学习框架实验对比
 
+https://mp.weixin.qq.com/s/Ez9zn6HN4tX_QFpGDWs_rA
+
+30行JavaScript代码，教你分分钟创建神经网络
+
 ### 量子计算 & 遗传算法
 
 https://www.zhihu.com/question/28171555
@@ -403,6 +407,10 @@ https://mp.weixin.qq.com/s/WcRYHwXnv9FWpMcOEwIdQg
 https://mp.weixin.qq.com/s/Fb6EsXz8avFkGY7sMdNF6A
 
 用量子计算辅助深度学习：研究者提出量子辅助Helmholtz机
+
+https://mp.weixin.qq.com/s/8Gnk2bidyQ89VvKEcWKABw
+
+量子计算时代的机器学习
 
 http://blog.csdn.net/u010945683/article/details/40987331
 

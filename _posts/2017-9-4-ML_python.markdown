@@ -250,5 +250,8 @@ https://mp.weixin.qq.com/s/MmuxNA8Xm6uRiVNGhDnyFw
 
 Scikit-learn实战之数据预处理
 
+https://mp.weixin.qq.com/s/V1EVdhX6-c1VNGNBgscFeA
+
+用Python统计新浪微博各种表情使用频率
 
 

@@ -26,7 +26,19 @@ YOLO不仅是end-to-end，而且还提供了另一种更为直接的思路：直
 
 ![](/images/article/yolo.png)
 
+上图是YOLO的大致流程：
 
+**Step 1**：Resize成448*448，图片分割得到7*7网格(cell)。
+
+**Step 2**：CNN提取特征和预测：卷积部分负责提特征。全连接部分负责预测：
+
+a) $$7\times 7\times 2=98$$个bounding box(bbox) 的坐标$$x_{center},y_{center},w,h$$和是否有物体的confidence。
+
+b) $$7\times 7=49$$个cell所属20个物体的概率。
+
+![](/images/article/yolo_2.png)
+
+**Step 3**：过滤bbox（通过NMS）。
 
 参考：
 

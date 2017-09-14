@@ -1,10 +1,26 @@
 ---
 layout: post
-title:  NLP参考资源（二）
+title:  NLP参考资源
 category: technology 
 ---
 
 # NLP参考资源
+
+https://mp.weixin.qq.com/s/4eyxX_EfrImGXnYmTRUFHw
+
+自然语言处理(NLP)入门指南
+
+https://www.geekhub.cn/a/1163.html
+
+宋睿华：好玩的文本生成
+
+https://github.com/Gii16/TreeDrawer
+
+A small tool to draw a only-text tree as the result of stanford coreNLP
+
+http://www.cnblogs.com/CheeseZH/p/5768389.html
+
+依存句法分析与语义依存分析的区别
 
 http://www.taodocs.com/p-4795349.html
 
@@ -389,5 +405,9 @@ http://blog.csdn.net/xizero00/article/details/51182003
 http://geek.csdn.net/news/detail/135736
 
 漫谈词向量之基于Softmax与Sampling的方法
+
+https://mp.weixin.qq.com/s/rF4zKCbj3Jh8dDR1239lpA
+
+基于双语主题模型的跨语言层次分类体系匹配
 
 
