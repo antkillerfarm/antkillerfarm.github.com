@@ -40,6 +40,22 @@ b) $$7\times 7=49$$个cell所属20个物体的概率。
 
 **Step 3**：过滤bbox（通过NMS）。
 
+![](/images/article/yolo_3.png)
+
+![](/images/article/yolo_4.png)
+
+## YOLOv2
+
+YOLOv2又名YOLO9000，是Redmon 2016年12月提出的一个YOLO改进版本。
+
+论文：
+
+《YOLO9000: Better, Faster, Stronger》
+
+
+
+![](/images/article/yolov2.png)
+
 参考：
 
 https://zhuanlan.zhihu.com/p/24916786
