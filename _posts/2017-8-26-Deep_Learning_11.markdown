@@ -42,7 +42,13 @@ b) $$7\times 7=49$$个cell所属20个物体的概率。
 
 ![](/images/article/yolo_3.png)
 
+上图是YOLO的网络结构图。从表面看，YOLO的输出只有一个，似乎比Faster RCNN两个输出少一个，然而这个输出本身，实际上要复杂的多。
+
+YOLO的输出是一个$$7\times 7\times 30$$的tensor，其中$$7\times 7$$对应图片分割的7*7网格。30表明每个网格对应一个30维的向量。
+
 ![](/images/article/yolo_4.png)
+
+上图是这个30维向量的编码方式。
 
 ## YOLOv2
 
@@ -52,7 +58,7 @@ YOLOv2又名YOLO9000，是Redmon 2016年12月提出的一个YOLO改进版本。
 
 《YOLO9000: Better, Faster, Stronger》
 
-
+YOLOv2对于输出向量的编码方式进行了改进，如下图所示：
 
 ![](/images/article/yolov2.png)
 

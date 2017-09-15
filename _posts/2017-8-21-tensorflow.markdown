@@ -32,9 +32,13 @@ http://tensorflowtutorial.net/tensorflow-tutorial
 
 http://wiki.jikexueyuan.com/project/tensorflow-zh/
 
+TensorFlow中文社区：
+
+http://www.tensorfly.cn/
+
 安装：
 
-`pip install tensorflow`
+`sudo pip install tensorflow`
 
 由于我的PC显卡不合要求，因此直接安装的是CPU版本，这也是最通用的版本。
 
@@ -83,7 +87,14 @@ sudo apt-get update && sudo apt-get install bazel
 # configure的时候要选择一些东西是否支持，这里建议都选N，不然后面会包错，如果支持显卡，就在cuda的时候选择y
 bazel build --config=opt //tensorflow/tools/pip_package:build_pip_package # CPU only
 bazel build --config=opt --config=cuda //tensorflow/tools/pip_package:build_pip_package # GPU
+bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg #生成wheel文件
 {% endhighlight %}
+
+**Step 3**：安装TensorFlow。
+
+`sudo pip uninstall tensorflow`
+
+`sudo pip install /tmp/tensorflow_pkg/tensorflow-1.3.0-cp27-cp27mu-linux_x86_64.whl`
 
 参考：
 
