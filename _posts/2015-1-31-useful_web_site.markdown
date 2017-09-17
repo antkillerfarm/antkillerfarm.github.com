@@ -414,6 +414,12 @@ https://mp.weixin.qq.com/s/qopknJ8l93aJ8iUGzsFhMQ
 
 以太坊是什么鬼？！媲美比特币的加密币大揭秘
 
+https://mp.weixin.qq.com/s/tIau6pRZU0r4Aasofca5yQ
+
+50张动图带你走进神奇的物理化学生物世界，超震撼！
+
+
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

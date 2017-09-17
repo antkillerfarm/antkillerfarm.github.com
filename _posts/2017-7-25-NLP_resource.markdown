@@ -414,3 +414,7 @@ https://mp.weixin.qq.com/s/gQ9dV-IPWHTOLbI6u0D67g
 
 可解释推荐系统：身怀绝技，一招击中用户心理
 
+https://mp.weixin.qq.com/s/M_ZN0YuvegAnc2GXCZTt9Q
+
+初学者指南：神经网络在自然语言处理中的应用
+

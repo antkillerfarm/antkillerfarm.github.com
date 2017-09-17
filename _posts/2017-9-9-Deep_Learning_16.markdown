@@ -116,4 +116,8 @@ https://mp.weixin.qq.com/s/CVBSvQwnDqT-IVCZV7idog
 
 极限元语音算法专家刘斌：基于深度学习的语音生成问题
 
+https://mp.weixin.qq.com/s/cYBMy4TIhcutvrAt0y70Ow
+
+腾讯AI Lab副主任俞栋：过去两年基于深度学习的声学模型进展
+
 

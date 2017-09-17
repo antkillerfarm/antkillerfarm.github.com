@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  版本管理工具的前世今生
+title:  版本管理工具的前世今生, TensorFlow（二）
 category: technology 
 ---
 
@@ -45,4 +45,94 @@ SVN是这一代的集大成者，使用简单的同时，仍保有相当强度�
 目前较为主流的Bazaar、Git和Mercurial都出现在2005年，这并不是偶然的。实际上都是BitKeeper和开源社区之间战争的产物。
 
 后Git时代的工具，如Fossil和Veracity，相比Git来说，对权限、BUG跟踪之类的功能做了进一步的扩展。
+
+# TensorFlow
+
+## 参考
+
+https://mp.weixin.qq.com/s/JSZwQkyxSSwfBWKJ578j3A
+
+TensorFlow最好的入门文章
+
+https://mp.weixin.qq.com/s/jMPVl3CWvL7MSzq5F12YxQ
+
+维度、广播操作与可视化：如何高效使用TensorFlow
+
+https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
+
+简易浣熊识别器是如何实现的
+
+https://mp.weixin.qq.com/s/YOyOR8fdaEKcydAywcc-HA
+
+如何使用TensorFlow API构建视频物体识别系统
+
+https://mp.weixin.qq.com/s/gnDTOLWuPZiCVzspTk_zCQ
+
+TensorFlow轻度入门
+
+https://mp.weixin.qq.com/s/MYBTWL3X_OhLZL6C4rISzw
+
+TensorFlow训练线性回归
+
+http://www.jianshu.com/p/d443aab9bcb1
+
+在TensorFlow上使用LSTM进行情感分析
+
+https://mp.weixin.qq.com/s/5QYlh6gV9IqdQfraK4DC8w
+
+10种深度学习算法的TensorFlow实现
+
+https://zhuanlan.zhihu.com/p/28475975
+
+如何优雅地用TensorFlow预测时间序列：TFTS库详细教程
+
+https://mp.weixin.qq.com/s/zZCEOdNQsPovn_i-C57Z9g
+
+如何使用最流行框架Tensorflow进行时间序列分析？
+
+https://mp.weixin.qq.com/s/CqOo7Fu6t5-yJiYhzo03oQ
+
+利用TensorFlow和神经网络来处理文本分类问题
+
+https://mp.weixin.qq.com/s/VlvQmrS7Qi2qq6fTBXKTYw
+
+从零开始用TensorFlow搭建卷积神经网络
+
+https://mp.weixin.qq.com/s/hETnA81WlkMG3rftAHg9bw
+
+PyTorch和TensorFlow哪家强：九项对比读懂各自长项短板
+
+http://blog.csdn.net/wiinter_fdd/article/details/72821923
+
+Tensorflow中的模型持久化
+
+https://mp.weixin.qq.com/s/7R-Gvegnta9XBwIaSPBL_Q
+
+基于Tensorflow的验证码识别
+
+https://mp.weixin.qq.com/s/Es_5KUnkDzMwf_8WD8aW3g
+
+GitHub万星：适用于初学者的TensorFlow代码资源集
+
+https://mp.weixin.qq.com/s/3QgtemxxsQmuNQVEdpiMwA
+
+如何做准确率达98%的交通标志识别系统？
+
+https://mp.weixin.qq.com/s/pSE2V8wD3_KHMI71kLTXng
+
+如何基于TensorFlow使用LSTM和CNN实现时序分类任务
+
+https://mp.weixin.qq.com/s/dHkmDvFVUGmt4Ch-gv3s1g
+
+一步一步带你用TensorFlow玩转LSTM
+
+https://mp.weixin.qq.com/s/Bx5Djj-RE0jPJ7LjyQ7GPg
+
+基于gym和tensorflow的强化学习算法实现
+
+https://mp.weixin.qq.com/s/3URLEdhB8hs0XXekKbvsnw
+
+使用TensorFlow在卷积神经网络上实现L2约束的softmax损失函数
+
+
 

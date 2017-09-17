@@ -366,6 +366,18 @@ https://mp.weixin.qq.com/s/ceCC7Q6yr0QKESeZXi6lWQ
 
 堆叠解卷积网络实现图像语义分割顶尖效果
 
+https://mp.weixin.qq.com/s/tZoD4RfkDDDBxTgqDJvI3g
+
+35个热门又实用的开源 AI 项目！
+
+https://mp.weixin.qq.com/s/nK__d-PV6DY5mDfA_UgDmQ
+
+全解：目标检测，图像分类、分割、生成……
+
+https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
+
+终身机器学习: 一种持续学习的范式
+
 
 
 

@@ -186,6 +186,14 @@ https://mp.weixin.qq.com/s/bqWle_188lhYO4hpCfafkQ
 
 用浏览器做人脸检测，竟然这么简单？
 
+https://mp.weixin.qq.com/s/kn9JS55wIW2cfpUv7Jm0eQ
+
+深度学习教你如何“以貌取人”！
+
+https://mp.weixin.qq.com/s/3xEDtMoe0iRQSZiN5A1FGw
+
+IPHONE X“刷脸”技术奥秘大揭底
+
 # Network In Network
 
 http://blog.csdn.net/sheng_ai/article/details/41313883
@@ -200,8 +208,6 @@ http://www.cnblogs.com/dmzhuo/p/5868346.html
 
 读论文“Network in Network”——ICLR 2014
 
-https://mp.weixin.qq.com/s/kn9JS55wIW2cfpUv7Jm0eQ
 
-深度学习教你如何“以貌取人”！
 
 

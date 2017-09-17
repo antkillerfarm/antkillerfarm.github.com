@@ -272,6 +272,10 @@ https://mp.weixin.qq.com/s/q7BI-YyhtmNzUfBMTKVdqQ
 
 Hitting time analysis of SGLD！
 
+https://mp.weixin.qq.com/s/0V8B-u5_bRM5Fu9oOAYjqw
+
+清华大学：通过在单纯形上软门限投影的加速随机贪心坐标下降
+
 # 单分类SVM&多分类SVM
 
 原始的SVM主要用于二分类，然而稍加变化，也可用于单分类和多分类。

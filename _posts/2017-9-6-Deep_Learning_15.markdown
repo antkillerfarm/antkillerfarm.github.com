@@ -118,4 +118,12 @@ https://mp.weixin.qq.com/s/TpRXxP25-3uqpgC9CBi-3Q
 
 Yoshua Bengio等人提出MILABOT：强化学习聊天机器人
 
+https://mp.weixin.qq.com/s/uDFsWebfLmka-zZX3Y_8kg
+
+深度强化学习在面向任务的对话管理中的应用
+
+https://mp.weixin.qq.com/s/GNbCu1lbOmwJDCU3vgMbtQ
+
+OpenAI发布多智能体深度强化学习新算法LOLA
+
 

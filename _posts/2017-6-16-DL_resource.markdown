@@ -390,6 +390,14 @@ https://mp.weixin.qq.com/s/Ez9zn6HN4tX_QFpGDWs_rA
 
 30行JavaScript代码，教你分分钟创建神经网络
 
+https://mp.weixin.qq.com/s/qLax1Jb0OOfFOU68wn_2PA
+
+从三大神经网络，测试对比TensorFlow、MXNet、CNTK、Theano四个框架
+
+https://mp.weixin.qq.com/s/zeZs48XbYJGhvOoIysZ8QA
+
+Docker Compose+GPU+TensorFlow所产生的奇妙火花
+
 ### 量子计算 & 遗传算法
 
 https://www.zhihu.com/question/28171555
@@ -411,6 +419,10 @@ https://mp.weixin.qq.com/s/Fb6EsXz8avFkGY7sMdNF6A
 https://mp.weixin.qq.com/s/8Gnk2bidyQ89VvKEcWKABw
 
 量子计算时代的机器学习
+
+https://mp.weixin.qq.com/s/XWFnRSj_y-W7VHctgQLpdA
+
+一文读懂量子机器学习
 
 http://blog.csdn.net/u010945683/article/details/40987331
 

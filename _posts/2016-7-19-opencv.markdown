@@ -150,6 +150,14 @@ https://mp.weixin.qq.com/s/KTLzq6JJxmgIgOwwEEqCRA
 
 人脸检测的C/C++源代码
 
+https://mp.weixin.qq.com/s/zPjkAwsjW-k1llB24bN7Eg
+
+OpenCV3.3深度学习模块(DNN)应用-图像分类
+
+https://mp.weixin.qq.com/s/g-F-D5PC75BjbaRBmifnZw
+
+人脸Haar特征与快速计算神器：积分图
+
 ## 论文
 
 《Moving Gradients: A Path-Based Method for Plausible Image Interpolation》：视频帧插值算法
@@ -165,6 +173,10 @@ saturate_cast宏会对结果进行转换，以确保它在有效范围之内。
 OpenCV中的运算，除了软件实现之外，还有若干种硬件加速，包括OpenCL、CUDA和IPPICV。
 
 Intel针对自身的硬件加速，推出了IPP（Integrated Performance Primitives）软件包，但这个包是收费的。从OpenCV 3.0开始，Intel将IPP的一个子集提取出来，免费供OpenCV项目使用。这个子集，俗称“IPPICV”。
+
+### 神经网络
+
+OpenCV提供了对于神经网络的支持。然而由于DL框架的专业性，OpenCV提供的支持更多的局限于模型的推断，而不是训练。
 
 # GNU Octave
 

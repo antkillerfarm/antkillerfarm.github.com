@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  TensorFlow
+title:  TensorFlow（一）
 category: technology 
 ---
 
@@ -80,6 +80,10 @@ curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
 sudo apt-get update && sudo apt-get install bazel
 {% endhighlight %}
 
+Bazel的官网文档：
+
+https://docs.bazel.build/versions/master/bazel-user-manual.html
+
 **Step 2**：编译TensorFlow。
 
 {% highlight bash %}
@@ -90,11 +94,25 @@ bazel build --config=opt --config=cuda //tensorflow/tools/pip_package:build_pip_
 bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg #生成wheel文件
 {% endhighlight %}
 
+configure脚本会自动选择CPU指令集优化，因此源代码编译的TensorFlow，肯定比pip安装的要运行的快。
+
+bazel编译相当消耗资源，在配置低的机器上，可通过如下选项限制使用资源的数量。（最常出现的后果是内存耗尽导致的假死。）
+
+`--jobs n --local_resources availableRAM(MB),availableCPU,availableIO`
+
+例子：
+
+`bazel build --jobs 2 --local_resources 850,3.0,1.0 --config=opt //tensorflow/tools/pip_package:build_pip_package `
+
+按照我的实践`--local_resources`其实用处不大，有的C++文件编译需要上GB空间，即使有约束也会突破。而`--jobs`相对好一些，一般按照每个job 1.5GB来估算，就可以保证TensorFlow顺利编译成功。
+
 **Step 3**：安装TensorFlow。
 
 `sudo pip uninstall tensorflow`
 
 `sudo pip install /tmp/tensorflow_pkg/tensorflow-1.3.0-cp27-cp27mu-linux_x86_64.whl`
+
+加入CPU指令集优化之后的版本，要比通用版快50%～100%，因此，编译源码安装还是很有价值的。
 
 参考：
 
@@ -112,9 +130,19 @@ Mac下使用源码编译安装TensorFlow CPU版本
 
 ## 基本概念
 
-**Variables**：训练模型的时候，那些在样本之间表示结点状态的变量。一般来说，就是神经网络的参数。
+**Variables**：维持图执行过程中的状态信息的变量。一般来说，这就是神经网络的参数。
 
 **Placeholders**：对于每个样本都不相同的变量。比如神经网络的输入变量x和输出变量y。
+
+声明：
+
+`x = tf.placeholder(tf.float32, [None, 784])`
+
+Placeholders在图的执行过程中，需要由真实的tensor填充之：
+
+`sess.run(train_step, feed_dict={x: batch_xs, y_: batch_ys})`
+
+这里的batch_xs就是用来填充x的tensor。
 
 ## 图计算
 
@@ -236,6 +264,22 @@ TensorBoard是一个http服务，用以监控TensorFlow的执行。
 
 启动之后，用浏览器打开`http://localhost:6006`即可。
 
+## 我的TensorFlow实践
+
+### MNIST+Softmax
+
+代码：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_mnist.py
+
+### MNIST+CNN
+
+代码：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_cnn.py
+
+第一个例子中，我对CPU的计算能力还没有切肤之痛，但在这里使用CPU差不多要花半个小时时间。。。
+
 ## 参考
 
 https://mp.weixin.qq.com/s/IzijD8Sh3G2WsCz7aaxyhg
@@ -309,101 +353,4 @@ https://mp.weixin.qq.com/s/N2OP1uX7JjfIJQ_B4NHKpw
 https://github.com/jinfagang/rl_atari_pytorch
 
 ReinforcementLearning Learn Play Atari Using DDPG and LSTM.
-
-https://mp.weixin.qq.com/s/JSZwQkyxSSwfBWKJ578j3A
-
-TensorFlow最好的入门文章
-
-https://mp.weixin.qq.com/s/jMPVl3CWvL7MSzq5F12YxQ
-
-维度、广播操作与可视化：如何高效使用TensorFlow
-
-https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
-
-简易浣熊识别器是如何实现的
-
-https://mp.weixin.qq.com/s/YOyOR8fdaEKcydAywcc-HA
-
-如何使用TensorFlow API构建视频物体识别系统
-
-https://mp.weixin.qq.com/s/gnDTOLWuPZiCVzspTk_zCQ
-
-TensorFlow轻度入门
-
-https://mp.weixin.qq.com/s/MYBTWL3X_OhLZL6C4rISzw
-
-TensorFlow训练线性回归
-
-http://www.jianshu.com/p/d443aab9bcb1
-
-在TensorFlow上使用LSTM进行情感分析
-
-https://mp.weixin.qq.com/s/5QYlh6gV9IqdQfraK4DC8w
-
-10种深度学习算法的TensorFlow实现
-
-https://zhuanlan.zhihu.com/p/28475975
-
-如何优雅地用TensorFlow预测时间序列：TFTS库详细教程
-
-https://mp.weixin.qq.com/s/zZCEOdNQsPovn_i-C57Z9g
-
-如何使用最流行框架Tensorflow进行时间序列分析？
-
-https://mp.weixin.qq.com/s/CqOo7Fu6t5-yJiYhzo03oQ
-
-利用TensorFlow和神经网络来处理文本分类问题
-
-https://mp.weixin.qq.com/s/VlvQmrS7Qi2qq6fTBXKTYw
-
-从零开始用TensorFlow搭建卷积神经网络
-
-https://mp.weixin.qq.com/s/hETnA81WlkMG3rftAHg9bw
-
-PyTorch和TensorFlow哪家强：九项对比读懂各自长项短板
-
-http://blog.csdn.net/wiinter_fdd/article/details/72821923
-
-Tensorflow中的模型持久化
-
-https://mp.weixin.qq.com/s/7R-Gvegnta9XBwIaSPBL_Q
-
-基于Tensorflow的验证码识别
-
-https://mp.weixin.qq.com/s/Es_5KUnkDzMwf_8WD8aW3g
-
-GitHub万星：适用于初学者的TensorFlow代码资源集
-
-https://mp.weixin.qq.com/s/3QgtemxxsQmuNQVEdpiMwA
-
-如何做准确率达98%的交通标志识别系统？
-
-https://mp.weixin.qq.com/s/pSE2V8wD3_KHMI71kLTXng
-
-如何基于TensorFlow使用LSTM和CNN实现时序分类任务
-
-https://mp.weixin.qq.com/s/dHkmDvFVUGmt4Ch-gv3s1g
-
-一步一步带你用TensorFlow玩转LSTM
-
-https://mp.weixin.qq.com/s/Bx5Djj-RE0jPJ7LjyQ7GPg
-
-基于gym和tensorflow的强化学习算法实现
-
-## 我的TensorFlow实践
-
-### MNIST+Softmax
-
-代码：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_mnist.py
-
-### MNIST+CNN
-
-代码：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_cnn.py
-
-第一个例子中，我对CPU的计算能力还没有切肤之痛，但在这里使用CPU差不多要花半个小时时间。。。
-
 

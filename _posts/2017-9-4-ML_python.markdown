@@ -10,6 +10,12 @@ category: technology
 
 ![](/images/article/python_for_big_data.jpg)
 
+## 教程
+
+https://ljalphabeta.gitbooks.io/python-/content/
+
+《Python机器学习》中文版
+
 ## Anaconda
 
 Anaconda是一个科学计算方面的python发行版，下面提到的所有工具都可以通过Anaconda一站式安装。
