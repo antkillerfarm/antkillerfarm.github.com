@@ -126,4 +126,8 @@ https://mp.weixin.qq.com/s/GNbCu1lbOmwJDCU3vgMbtQ
 
 OpenAI发布多智能体深度强化学习新算法LOLA
 
+https://mp.weixin.qq.com/s/nYOOwVoijl1p4V0A7yaI3w
+
+机遇与挑战：用强化学习自动搜索优化算法
+
 

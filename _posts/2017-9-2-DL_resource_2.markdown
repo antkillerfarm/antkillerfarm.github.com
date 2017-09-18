@@ -244,6 +244,14 @@ https://mp.weixin.qq.com/s/jjT0x99ht8xtfWmzL-0R1A
 
 深度学习的IR“之争”
 
+https://mp.weixin.qq.com/s/K_dohaZbCISZlxe1Utu50w
+
+如何用FPGA加速卷积神经网络(CNN)？
+
+https://mp.weixin.qq.com/s/kPrZ0PuevXEJjVB7RXs70g
+
+谷歌TPU率队，颠覆3350亿美元的半导体行业
+
 ## 面试
 
 https://www.zhihu.com/question/41233373

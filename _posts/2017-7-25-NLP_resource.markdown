@@ -418,3 +418,7 @@ https://mp.weixin.qq.com/s/M_ZN0YuvegAnc2GXCZTt9Q
 
 初学者指南：神经网络在自然语言处理中的应用
 
+https://mp.weixin.qq.com/s/ouNxUvWC_mxap6P5z6_dFA
+
+教聊天机器人进行多轮对话
+

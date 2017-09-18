@@ -33,6 +33,10 @@ git clone --recursive https://github.com/dmlc/xgboost
 cd xgboost; make -j4
 {% endhighlight %}
 
+安装：
+
+`cd python-package; sudo python setup.py install`
+
 ## 参考
 
 https://www.zhihu.com/question/41354392

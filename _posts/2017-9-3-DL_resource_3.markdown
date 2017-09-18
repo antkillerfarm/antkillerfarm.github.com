@@ -378,6 +378,11 @@ https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
 
 终身机器学习: 一种持续学习的范式
 
+https://mp.weixin.qq.com/s/aCWAU2RXk9fTzfFqOyjqUw
 
+能自主学习的人工突触，为无监督学习开辟新的路径
 
+https://mp.weixin.qq.com/s/9kMz-eNRwC51Fi0-7BfKzA
+
+Active Learning: 一个降低深度学习时间，空间，经济成本的解决方案
 

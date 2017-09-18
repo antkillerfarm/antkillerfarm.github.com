@@ -82,6 +82,10 @@ https://mp.weixin.qq.com/s/-n-5Cp_hgkvdmsHGWEIpWw
 
 自动化机器学习第一步：使用Hyperopt自动选择超参数
 
+https://mp.weixin.qq.com/s/Nbwii7Di_h5Ewy5p5xzBdQ
+
+解决机器学习问题有通法
+
 # KNN
 
 K最近邻(k-Nearest Neighbor，KNN)分类算法，是一个理论上比较成熟的方法，也是最简单的机器学习算法之一。
