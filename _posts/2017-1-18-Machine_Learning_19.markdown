@@ -33,9 +33,13 @@ git clone --recursive https://github.com/dmlc/xgboost
 cd xgboost; make -j4
 {% endhighlight %}
 
-安装：
+python安装：
 
 `cd python-package; sudo python setup.py install`
+
+XGBoost提供了两种接口：普通接口和sklearn接口。后者的示例如下：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/hello/decision_tree.py
 
 ## 参考
 
@@ -65,7 +69,7 @@ Xgboost初见面
 
 https://mp.weixin.qq.com/s/f3QVbJiC6gLEptKwFZ-7ZQ
 
-竞赛大杀器XGBoost，你还可以这样玩~
+竞赛大杀器XGBoost，你还可以这样玩
 
 # 关联规则挖掘
 
