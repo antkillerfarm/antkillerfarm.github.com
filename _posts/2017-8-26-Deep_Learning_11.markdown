@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十一）——YOLO, SSD
+title:  深度学习（十一）——YOLO, SSD, Ultra Deep Network
 category: theory 
 ---
 
@@ -152,5 +152,13 @@ http://blog.csdn.net/zijinxuxu/article/details/67638290
 
 ![](/images/article/RiR.png)
 
+## Highway
 
+论文：
+
+《Training Very Deep Networks》
+
+![](/images/article/highway.png)
+
+Resnet对于残差的跨层传递是无条件的，而Highway则是有条件的。这种条件开关被称为gate，它也是由网络训练得到的。
 

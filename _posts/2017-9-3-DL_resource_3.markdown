@@ -386,3 +386,12 @@ https://mp.weixin.qq.com/s/9kMz-eNRwC51Fi0-7BfKzA
 
 Active Learning: 一个降低深度学习时间，空间，经济成本的解决方案
 
+https://mp.weixin.qq.com/s/0IAdT2cP_OIGwwXmMaCFfw
+
+如何利用深度学习诊断心脏病？
+
+https://mp.weixin.qq.com/s/PsIa3XDFqZlY2tKcvqvddw
+
+Training RNNs as Fast as CNNs
+
+

@@ -252,24 +252,6 @@ https://mp.weixin.qq.com/s/kPrZ0PuevXEJjVB7RXs70g
 
 谷歌TPU率队，颠覆3350亿美元的半导体行业
 
-## 面试
-
-https://www.zhihu.com/question/41233373
-
-如果你是面试官，你怎么去判断一个面试者的深度学习水平？
-
-https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
-
-20万、50万、100万的算法工程师，到底有什么区别？
-
-https://www.zhihu.com/question/56676679/answer/151505274
-
-机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
-
-https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
-
-面试官是如何看出你机器学习水平的？
-
 ## Other
 
 http://cs.stanford.edu/people/karpathy/convnetjs/demo/classify2d.html
@@ -395,4 +377,6 @@ https://mp.weixin.qq.com/s/W4zwKqkVQN4v-IKzGrkudg
 http://mp.weixin.qq.com/s/LAgDobWyK0SOH08GCLXG7A
 
 减少30%流量，增加清晰度：MIT提出人工智能视频缓存新算法
+
+
 

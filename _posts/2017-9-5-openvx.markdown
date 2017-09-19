@@ -100,6 +100,8 @@ OpenCL是一个硬件中立标准，原则上和计算机的体系结构无关�
 
 和OpenGL、OpenVX的专用性不同，OpenCL主要定位于通用数学运算。OpenGL年代久远也就罢了。对于像OpenVX这样的新标准，有的时候其内部实现也有可能依赖于OpenCL。毕竟无论哪个领域的专用计算，最终都可以分解为基本的数学运算。
 
+简单来说，**OpenVX的封装粒度在层一级，而OpenCL最多只提供到矩阵运算一级的API**。
+
 参考：
 
 http://blog.csdn.net/leonwei/article/details/8880012

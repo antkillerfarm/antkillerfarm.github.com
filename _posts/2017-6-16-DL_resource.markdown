@@ -104,6 +104,10 @@ http://blog.csdn.net/xizero00
 
 一个DL的blog
 
+http://shuokay.com/
+
+一个DL的blog
+
 ## 文章
 
 ### 教程
@@ -326,14 +330,6 @@ http://zh.gluon.ai/index.html
 
 李沐：《动手学深度学习》（使用Gluon）
 
-https://mp.weixin.qq.com/s/tyWUxJndljOSZT1-aYPgeg
-
-Keras入门必看教程
-
-https://mp.weixin.qq.com/s/57j-YxA4ODMy0RybI8n7uQ
-
-教你在R中使用Keras和TensorFlow构建深度学习模型
-
 https://mp.weixin.qq.com/s/Shz6BmsOrtbEFtoJRSkl9A
 
 简单车牌检测
@@ -357,18 +353,6 @@ https://mp.weixin.qq.com/s/1HA6XKnWpqVd8k7IIfzB7w
 https://mp.weixin.qq.com/s/ObIYpiH7MLZEi5XzXdGBYg
 
 10大深度学习架构
-
-https://mp.weixin.qq.com/s/H-oAETObn0SLUxK8--xudg
-
-Keras+OpenAI强化学习实践：行为-评判模型
-
-https://mp.weixin.qq.com/s/2lcOfU3X27YYqbWS341jcg
-
-Keras+OpenAI强化学习实践：深度Q网络
-
-http://mp.weixin.qq.com/s/kvQlzafLAn_8YgBmib3P0g
-
-手把手教你在Amazon EC2上安装Keras
 
 https://mp.weixin.qq.com/s/-39_7SbRFChDOOpcpJjVMQ
 
@@ -439,3 +423,21 @@ https://mp.weixin.qq.com/s/v1tLGUJ4My-tVWziSURHzA
 https://mp.weixin.qq.com/s/rXDj5ryRvjbkenp9IEokDQ
 
 一文读懂遗传算法工作原理
+
+### 面试
+
+https://www.zhihu.com/question/41233373
+
+如果你是面试官，你怎么去判断一个面试者的深度学习水平？
+
+https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
+
+20万、50万、100万的算法工程师，到底有什么区别？
+
+https://www.zhihu.com/question/56676679/answer/151505274
+
+机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
+
+https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
+
+面试官是如何看出你机器学习水平的？

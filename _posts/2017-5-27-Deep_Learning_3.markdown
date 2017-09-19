@@ -74,10 +74,6 @@ http://blog.csdn.net/u014114990/article/details/51125776
 
 多通道(比如RGB三通道)卷积过程
 
-https://www.zhihu.com/question/56024942
-
-卷积神经网络中用1*1卷积有什么作用或者好处呢？
-
 https://www.zhihu.com/question/28385679
 
 在Caffe中如何计算卷积？

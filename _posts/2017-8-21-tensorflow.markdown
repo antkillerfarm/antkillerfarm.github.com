@@ -230,9 +230,27 @@ https://zhuanlan.zhihu.com/p/26512099
 
 tensorflow和caffe2
 
-## Slim
+## TensorFlow高层封装
 
-原始的TensorFlow API由于过于简单，在实际使用中多有不便。因此TensorFlow又提供了一套Slim API，用以简化编程。和Keras这样的前端不同，Slim API可以和TensorFlow API混编。或者说两者本来就是一体的。
+目前对TensorFlow的主要封装有4个：
+
+1.TensorFlow-Slim。主要提供了层一级的封装。粒度和OpenVX类似。
+
+2.tf.contrib.learn（之前也被称为skflow）。提供了类似sklearn的接口。
+
+3.第三个是TFLearn。在tf.contrib.learn上的封装。需单独安装：
+
+`sudo pip install tflearn`
+
+4.Keras。
+
+参见：
+
+http://www.infoq.com/cn/articles/introduction-of-tensorflow-part06
+
+深入浅出TensorFlow（六）TensorFlow高层封装
+
+## Slim
 
 代码：
 
@@ -247,10 +265,6 @@ https://github.com/mnuke/tf-slim-mnist
 http://geek.csdn.net/news/detail/126133
 
 如何用TensorFlow和TF-Slim实现图像分类与分割
-
-http://www.infoq.com/cn/articles/introduction-of-tensorflow-part06
-
-深入浅出TensorFlow（六）TensorFlow高层封装
 
 实战心得：
 

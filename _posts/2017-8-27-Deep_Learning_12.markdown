@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十二）——花式卷积, 花式池化, Batch Normalization
+title:  深度学习（十二）——花式卷积, 花式池化, Batch Normalization, Softmax详解
 category: theory 
 ---
 
@@ -59,6 +59,24 @@ MSRA于2017年提出了可变形卷积核的概念。
 《Deformable Convolutional Networks》
 
 ![](/images/article/Deformable_convolution.png)
+
+## 1*1卷积
+
+1、升维或降维。
+
+如果卷积的输出输入都只是一个平面，那么1x1卷积核并没有什么意义，它是完全不考虑像素与周边其他像素关系。 但卷积的输出输入是长方体，所以1x1卷积实际上是对每个像素点，在不同的channels上进行线性组合（信息整合），且保留了图片的原有平面结构，调控depth，从而完成升维或降维的功能。
+
+![](/images/article/conv_1x1.png)
+
+2、加入非线性。卷积层之后经过激励层，1*1的卷积在前一层的学习表示上添加了非线性激励（ non-linear activation ），提升网络的表达能力；
+
+3.促进不同通道之间的信息交换。
+
+参考：
+
+https://www.zhihu.com/question/56024942
+
+卷积神经网络中用1*1卷积有什么作用或者好处呢？
 
 ## 参考
 
@@ -132,6 +150,8 @@ ICLR2013上，Zeiler提出了另一种pooling手段stochastic pooling。只需�
 
 比如，AlphaGo采用CNN识别棋局，但对棋局来说，下采样显然是没有什么物理意义的，因此，**AlphaGo的CNN是没有Pooling的**。
 
+除此之外，还有ROI Pooling操作。（参见《深度学习（十）》）
+
 参考：
 
 http://www.cnblogs.com/tornadomeet/p/3432093.html
@@ -191,5 +211,49 @@ $$z=g(Wu+b)\rightarrow z=g(BN(Wu+b))=g(BN(Wu))$$
 从另一个角度来看，BN的均值、方差操作，相当于去除一阶和二阶信息，而只保留网络的高阶信息，即非线性部分。因此，上式最后一步中b被忽略，也就不难理解了。
 
 BN的误差反向算法相对复杂，这里不再赘述。
+
+# Softmax详解
+
+首先给出Softmax function的定义:
+
+$$y_c=\zeta(\textbf{z})_c = \dfrac{e^{z_c}}{\sum_{d=1}^C{e^{z_d}}} \text{  for } c=1, \dots, C$$
+
+从中可以很容易的发现，如果$$z_c$$的值过大，朴素的直接计算会上溢出或下溢出。
+
+解决办法：
+
+$$z_c\leftarrow z_c-a,a=\max\{z_1,\dots,z_C\}$$
+
+证明：
+
+$$\zeta(\textbf{z-a})_c = \dfrac{e^{z_c}\cdot e^{-a}}{\sum_{d=1}^C{e^{z_d}\cdot e^{-a}}} = \dfrac{e^{z_c}}{\sum_{d=1}^C{e^{z_d}}} = \zeta(\textbf{z})_c$$
+
+Softmax的损失函数是cross entropy loss function：
+
+$$\xi(X, Y) = \sum_{i=1}^n \xi(\textbf{t}_i, \textbf{y}_i) = - \sum_{i=1}^n \sum_{i=c}^C t_{ic} \cdot \log(y_{ic})$$
+
+Softmax的反向传播算法：
+
+$$\begin{align}
+\dfrac{\partial\xi}{\partial z_i} &= - \sum_{j=1}^C \dfrac{\partial t_j \log(y_j)}{\partial z_i} \\
+&= - \sum_{j=1}^C t_j \dfrac{\partial \log(y_j)}{\partial z_i} \\
+&= - \sum_{j=1}^C t_j \dfrac{1}{y_j} \dfrac{\partial y_j}{\partial z_i} \\
+&= - \dfrac{t_i}{y_i} \dfrac{\partial y_i}{\partial z_i} - \sum_{j \neq i}^C \dfrac{t_j}{y_j} \dfrac{\partial y_j}{\partial z_i} \\
+&= - \dfrac{t_i}{y_i} y_i(1-y_i) - \sum_{j \neq i}^{C} \dfrac{t_j}{y_j}(-y_jy_j) \\
+&= -t_i + t_iy_i + \sum_{j \neq i}^{C} t_jy_i \\
+&= -t_i + \sum_{j=1}^C t_jy_i \\
+&= -t_i + y_i \sum_{j=1}^C t_j \\
+&= y_i - t_i
+\end{align}$$
+
+参考：
+
+https://mp.weixin.qq.com/s/2xYgaeLlmmUfxiHCbCa8dQ
+
+softmax函数计算时候为什么要减去一个最大值？
+
+http://shuokay.com/2016/07/20/softmax-loss/
+
+Softmax 输出及其反向传播推导
 
 

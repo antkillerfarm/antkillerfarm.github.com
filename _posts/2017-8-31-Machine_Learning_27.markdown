@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十七）——机器学习语录
+title:  机器学习（二十七）——机器学习语录, Keras
 category: theory 
 ---
 
@@ -63,5 +63,49 @@ Isolation Forest算法原理详解
 http://blog.csdn.net/pi9nc/article/details/27649323
 
 一个Q-learning算法的简明教程
+
+# Keras
+
+Keras是深度学习的前端框架的集大成者，其后端可支持tensorflow、cntk、theano等。
+
+所谓DL前端框架一般只提供对于DL的高层抽象和封装，至于具体的运算则由具体的后端来实现。
+
+官网：
+
+https://keras.io/
+
+代码：
+
+https://github.com/fchollet/keras/
+
+安装：
+
+`sudo pip install keras`
+
+参考：
+
+https://mp.weixin.qq.com/s/tyWUxJndljOSZT1-aYPgeg
+
+Keras入门必看教程
+
+https://mp.weixin.qq.com/s/57j-YxA4ODMy0RybI8n7uQ
+
+教你在R中使用Keras和TensorFlow构建深度学习模型
+
+https://mp.weixin.qq.com/s/H-oAETObn0SLUxK8--xudg
+
+Keras+OpenAI强化学习实践：行为-评判模型
+
+https://mp.weixin.qq.com/s/2lcOfU3X27YYqbWS341jcg
+
+Keras+OpenAI强化学习实践：深度Q网络
+
+http://mp.weixin.qq.com/s/kvQlzafLAn_8YgBmib3P0g
+
+手把手教你在Amazon EC2上安装Keras
+
+http://www.jianshu.com/p/20585e3b6d02
+
+Keras TensorFlow教程：如何从零开发一个复杂深度学习模型
 
 
