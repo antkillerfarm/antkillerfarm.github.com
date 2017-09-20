@@ -260,21 +260,3 @@ anchor的后处理如上图所示。
 
 上图展示了Image/Feature Pyramid、Filter Pyramid和Anchor Pyramid的区别。
 
-## 总结
-
-![](/images/article/faster_rcnn_p.png)
-
-参考：
-
-https://zhuanlan.zhihu.com/p/24916624
-
-Faster R-CNN
-
-http://blog.csdn.net/shenxiaolu1984/article/details/51152614
-
-Faster RCNN算法详解
-
-https://mp.weixin.qq.com/s/VKQufVUQ3TP5m7_2vOxnEQ
-
-通过Faster R-CNN实现当前最佳的目标计数
-

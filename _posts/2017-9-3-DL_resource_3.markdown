@@ -394,4 +394,11 @@ https://mp.weixin.qq.com/s/PsIa3XDFqZlY2tKcvqvddw
 
 Training RNNs as Fast as CNNs
 
+https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og
+
+贝叶斯学习与未来人工智能
+
+https://mp.weixin.qq.com/s/Zd4rFU7Lebr4zmzxThNyVw
+
+详解珠算：清华大学开源的贝叶斯深度学习库
 

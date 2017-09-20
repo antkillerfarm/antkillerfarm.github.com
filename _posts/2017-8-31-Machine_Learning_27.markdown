@@ -108,4 +108,16 @@ http://www.jianshu.com/p/20585e3b6d02
 
 Keras TensorFlow教程：如何从零开发一个复杂深度学习模型
 
+# 机器人参考资源
+
+https://mp.weixin.qq.com/s/Rmvksy54iKgcyd7bqy_oxQ
+
+机器人开源操作系统ROS入门
+
+https://mp.weixin.qq.com/s/09v9gj1cmf4zIJAGqHnJWw
+
+视觉SLAM中的直接法在智能驾驶中的应用实践！
+
+
+
 

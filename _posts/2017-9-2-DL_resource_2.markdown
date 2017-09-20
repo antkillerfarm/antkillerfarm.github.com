@@ -252,6 +252,10 @@ https://mp.weixin.qq.com/s/kPrZ0PuevXEJjVB7RXs70g
 
 谷歌TPU率队，颠覆3350亿美元的半导体行业
 
+https://mp.weixin.qq.com/s/rhtrN2qDspGkpJYDAVSX7w
+
+UC Berkeley展示全新并行处理方法
+
 ## Other
 
 http://cs.stanford.edu/people/karpathy/convnetjs/demo/classify2d.html

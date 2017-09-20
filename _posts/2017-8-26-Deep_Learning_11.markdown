@@ -4,6 +4,54 @@ title:  深度学习（十一）——YOLO, SSD, Ultra Deep Network
 category: theory 
 ---
 
+# Faster R-CNN（续）
+
+## 定义损失函数
+
+对于每个anchor，首先在后面接上一个二分类softmax，有2个score 输出用以表示其是一个物体的概率与不是一个物体的概率 ($$p_i$$)。这个概率也可以理解为前景与后景，或者物体和背景的概率。
+
+然后再接上一个bounding box的regressor 输出代表这个anchor的4个坐标位置（$$t_i$$），因此RPN的总体Loss函数可以定义为 ：
+
+$$L(\{p_i\},\{t_i\})=\frac{1}{N_{cls}}\sum_iL_{cls}(p_i,p_i^*)+\lambda \frac{1}{N_{reg}}\sum_ip_i^*L_{reg}(t_i,t_i^*)$$
+
+该公式的含义和计算都比较复杂，这里不再赘述。
+
+## RPN和Fast R-CNN协同训练
+
+我们知道，如果是分别训练两种不同任务的网络模型，即使它们的结构、参数完全一致，但各自的卷积层内的卷积核也会向着不同的方向改变，导致无法共享网络权重，论文作者提出了几种可能的方式。
+
+### Alternating training
+
+此方法其实就是一个不断迭代的训练过程，既然分别训练RPN和Fast-RCNN可能让网络朝不同的方向收敛，a)那么我们可以先独立训练RPN，然后用这个RPN的网络权重对Fast-RCNN网络进行初始化并且用之前RPN输出proposal作为此时Fast-RCNN的输入训练Fast R-CNN。b) 用Fast R-CNN的网络参数去初始化RPN。之后不断迭代这个过程，即循环训练RPN、Fast-RCNN。
+
+![](/images/article/alternating_training.png)
+
+### Approximate joint training or Non-approximate training
+
+这两种方式，不再是串行训练RPN和Fast-RCNN，而是尝试把二者融入到一个网络内训练。融合方式和上面的Faster R-CNN结构图类似。细节不再赘述。
+
+4.4-Step Alternating Training
+
+这是作者发布的源代码中采用的方法。
+
+## 总结
+
+![](/images/article/faster_rcnn_p.png)
+
+参考：
+
+https://zhuanlan.zhihu.com/p/24916624
+
+Faster R-CNN
+
+http://blog.csdn.net/shenxiaolu1984/article/details/51152614
+
+Faster RCNN算法详解
+
+https://mp.weixin.qq.com/s/VKQufVUQ3TP5m7_2vOxnEQ
+
+通过Faster R-CNN实现当前最佳的目标计数
+
 # YOLO
 
 YOLO: Real-Time Object Detection，是一个基于神经网络的实时对象检测软件。它的原理基于Joseph Chet Redmon 2016年的论文：

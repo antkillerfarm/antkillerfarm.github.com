@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Emacs, Vi, Logo, perl, Lisp
+title:  Emacs, Vi, Logo
 category: technology 
 ---
 
@@ -275,7 +275,35 @@ https://github.com/myuhe/ess-R-data-view.el
 
 # Vi
 
-dd 删除整行
+## 常用操作
+
+`dd`——删除整行
+
+`/`是向下查找，而`?`是向上查找，n是继续查找。
+
+`u`——撤销上一个编辑操作
+
+## 分栏显示
+
+`:new`——创建一个空白分栏界面，和原文件窗口上下排列。
+
+`:split`——将当前文件分成上下两栏显示。
+
+`:vnew`和`:vsplit`——功能相同，不同的是新窗口是左右排列的。
+
+`:only`——取消分屏。
+
+按下ctrl+w之后再利用方向键或者h,j,k,l可以选择当前激活的窗口。
+
+把光标移动到下一个的屏：ctrl+w w
+
+把光标移动到上一个的屏：ctrl+w p
+
+关闭其他窗口：Ctrl + w, o
+
+关闭当前屏：Ctrl+w，c
+
+`:vertical diffsplit file2`——垂直对比两个文档。
 
 # Source Insight
 
@@ -319,39 +347,5 @@ http://www.cs.berkeley.edu/~bh/logo.html
 
 再一次看到熟悉的命令行界面和海龟了:)
 
-# perl
 
-中文教程：
-
-http://www.cbi.pku.edu.cn/chinese/documents/perl/index.htm
-
-perl的语法和C差别不算太大，好多语法大致上从关键字也可以猜出来。这里仅对一些符号做个简短的说明。
-
-`$name`：变量name。
-
-`@name`：数组name。
-
-`&name`：函数name。这种情况下，name的定义在使用之后。如果name的定义在使用之前，`&`可省略。
-
-`%name`：哈希数组name。
-
-# Lisp & GUI
-
-客观的说，目前开源领域并没有很好用的和Lisp配套的GUI工具集，几个开源实现要么完工度不高，要么过于古老，好几个的样式都是90年代中期的风格。
-
-更有人指出，GUI基本上是OO语言的天下了，Lisp根本不适合干这个事。
-
-不过事实的真相是：
-
-1.最早的交互式GUI生成工具是用Lisp写的。没错，就是苹果乔教主旗下的Interface Builder，时间是1986年。
-
-2.PTC公司的CAD系统是用Lisp和C++写的。
-
-3.苹果公司早期使用MCL作为GUI开发语言（from 1984），因此那个时代有大量的程序是用Lisp写的。包括Mac上最早的MS Word。Objective-C是乔教主到NextStep之后的事，最初和苹果并无交集。
-
-4.由于Mac在艺术家群体的流行。很多音乐软件是用Lisp写的，包括Open Music, PWGL, ScoreCleaner, Igor Engraver和Symbolic Composer等。
-
-5.有家叫做LispWorks（From 1989）的公司提供对Lisp GUI的商业支持，而且提供的界面并不逊色于GTK、Qt等当代GUI工具集。上面提到的音乐软件基本上都是基于LispWorks的。
-
-综上可见，Lisp开发GUI不是可能性的问题，而是一个有待重新发掘的问题。
 

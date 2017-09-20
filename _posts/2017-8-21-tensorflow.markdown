@@ -278,6 +278,16 @@ TensorBoard是一个http服务，用以监控TensorFlow的执行。
 
 启动之后，用浏览器打开`http://localhost:6006`即可。
 
+## TFRecord
+
+TFRecord是TensorFlow官方定义的存放样本数据文件。
+
+参考：
+
+http://www.cnblogs.com/antflow/p/7299029.html
+
+TFRecord的使用
+
 ## 我的TensorFlow实践
 
 ### MNIST+Softmax

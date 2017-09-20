@@ -422,3 +422,8 @@ https://mp.weixin.qq.com/s/ouNxUvWC_mxap6P5z6_dFA
 
 教聊天机器人进行多轮对话
 
+https://mp.weixin.qq.com/s/fZv9FgbdQ1bWPoNdl9sF1A
+
+“宝石迷阵” x 信息检索
+
+

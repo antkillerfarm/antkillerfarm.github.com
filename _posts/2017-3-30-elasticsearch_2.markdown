@@ -392,9 +392,4 @@ http://mp.weixin.qq.com/s/SWUQvR6qA2JKjaclWskUTQ
 
 DeepTest：可自动测试深度神经网络驾驶系统
 
-https://mp.weixin.qq.com/s/Rmvksy54iKgcyd7bqy_oxQ
-
-机器人开源操作系统ROS入门
-
-
 

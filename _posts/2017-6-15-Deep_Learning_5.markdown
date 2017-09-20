@@ -208,6 +208,14 @@ https://mp.weixin.qq.com/s/4gElB_8AveWuDVjtLw5JUA
 
 最终2015年，微软亚洲研究院的何恺明等人，使用残差网络ResNet参加了当年的ILSVRC，在图像分类、目标检测等任务中的表现大幅超越前一年的比赛的性能水准，并最终取得冠军。
 
+论文：
+
+《Deep Residual Learning for Image Recognition》
+
+代码：
+
+https://github.com/KaimingHe/deep-residual-networks
+
 >注：何恺明，清华本科+香港中文大学博士（2011）。先后在MS和Facebook担任研究员。   
 >个人主页：http://kaiminghe.com/
 
@@ -220,6 +228,12 @@ https://mp.weixin.qq.com/s/4gElB_8AveWuDVjtLw5JUA
 简单的说，就是把前面的层跨几层直接接到后面去，以使误差梯度能够传的更远一些。
 
 DRN的基本思想倒不是什么新东西了，在2003年Bengio提出的词向量模型中，就已经采用了这样的思路。
+
+DRN的实现依赖于下图所示的res block：
+
+![](/images/article/res_block.png)
+
+从中可以看出，所谓残差跨层传递，其实就是将本层ternsor $$\mathcal{F}(x)$$和跨层tensor x加在一起而已。
 
 参考：
 

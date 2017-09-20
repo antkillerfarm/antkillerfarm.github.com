@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Cocos2d-x v3在Qt 5上的移植, lex&yacc, ANTLR
+title:  Cocos2d-x v3在Qt 5上的移植, lex&yacc, ANTLR, perl
 category: technology 
 ---
 
@@ -251,3 +251,18 @@ https://www.ibm.com/developerworks/cn/java/j-lo-antlr/index.html
 
 使用Antlr开发领域语言
 
+# perl
+
+中文教程：
+
+http://www.cbi.pku.edu.cn/chinese/documents/perl/index.htm
+
+perl的语法和C差别不算太大，好多语法大致上从关键字也可以猜出来。这里仅对一些符号做个简短的说明。
+
+`$name`：变量name。
+
+`@name`：数组name。
+
+`&name`：函数name。这种情况下，name的定义在使用之后。如果name的定义在使用之前，`&`可省略。
+
+`%name`：哈希数组name。
