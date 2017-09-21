@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十七）——机器学习语录, Keras
+title:  机器学习（二十七）——机器学习语录, Keras, LightGBM
 category: theory 
 ---
 
@@ -107,6 +107,44 @@ http://mp.weixin.qq.com/s/kvQlzafLAn_8YgBmib3P0g
 http://www.jianshu.com/p/20585e3b6d02
 
 Keras TensorFlow教程：如何从零开发一个复杂深度学习模型
+
+# LightGBM
+
+LightGBM是微软推出的boosting框架。
+
+代码：
+
+https://github.com/Microsoft/LightGBM
+
+文档：
+
+https://lightgbm.readthedocs.io/en/latest/
+
+参考：
+
+http://www.msra.cn/zh-cn/news/features/lightgbm-20170105
+
+微软亚洲研究院：LightGBM介绍
+
+https://zhuanlan.zhihu.com/p/25308051
+
+比XGBOOST更快--LightGBM介绍
+
+https://www.zhihu.com/question/51644470
+
+如何看待微软新开源的LightGBM?
+
+http://www.cnblogs.com/rocketfan/p/6005353.html
+
+LightGBM中GBDT的实现
+
+https://zhuanlan.zhihu.com/p/28768447
+
+一个例子读懂LightGBM的模型文件
+
+https://zhuanlan.zhihu.com/p/27916208
+
+LightGBM调参指南(带贝叶斯优化代码)
 
 # 机器人参考资源
 

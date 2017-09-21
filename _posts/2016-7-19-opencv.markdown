@@ -324,11 +324,15 @@ https://nndl.github.io/
 
 http://joanbruna.github.io/stat212b/
 
-Stat212b：Topics Course on Deep Learning——加州大学伯克利分校统计系Joan Bruna（Yann LeCun博士后）以统计的角度讲解DL。
+Stat 212b：Topics Course on Deep Learning——加州大学伯克利分校统计系Joan Bruna（Yann LeCun博士后）以统计的角度讲解DL。
 
 https://blogs.princeton.edu/imabandit/orf523-the-complexities-of-optimization/
 
-ORF523: The complexities of optimization
+ORF 523: The complexities of optimization
+
+https://cs.brown.edu/courses/csci1460
+
+CSCI 1460: Introduction to Computational Linguistics
 
 # Javascript在客户端的使用
 

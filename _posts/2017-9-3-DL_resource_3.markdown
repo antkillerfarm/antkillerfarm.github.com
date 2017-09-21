@@ -402,3 +402,7 @@ https://mp.weixin.qq.com/s/Zd4rFU7Lebr4zmzxThNyVw
 
 详解珠算：清华大学开源的贝叶斯深度学习库
 
+https://mp.weixin.qq.com/s/vUK2NneOs8OR0vcJEZNbrA
+
+田渊栋等人论文：何时卷积滤波器容易学习？
+

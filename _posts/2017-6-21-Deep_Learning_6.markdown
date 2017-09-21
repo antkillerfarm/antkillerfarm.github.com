@@ -140,6 +140,10 @@ https://mp.weixin.qq.com/s/jYUAKyTpm69J6Q34A06E-w
 
 百度提出冷聚变方法：使用语言模型训练Seq2Seq模型
 
+https://mp.weixin.qq.com/s/Fp6G1aI_utDd_kTbdHvEVQ
+
+完全基于卷积神经网络的seq2seq
+
 # DMN
 
 Question answering是自然语言处理领域的一个复杂问题。它需要对文本的理解力和推理能力。大部分NLP问题都可以转化为一个QA问题。Dynamic Memory Networks可以用来处理QA问题。DMN的输入包含事实输入，问题输入，经过内部处理形成片段记忆，最终产生问题的答案。

@@ -101,6 +101,14 @@ Batch Normalization是Google提出的一种神经网络优化技巧。
 
 《Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift》
 
+![](/images/article/normalize.png)
+
+上图直观的展示了Normalize的效果。
+
+![](/images/article/whiten.png)
+
+与Normalization相关的概念，还有Decorrelate和Whiten。
+
 ![](/images/article/Gradient_Vanish.png)
 
 上图是Hinton在2015年的讲座中的例子。从中可以看出，反向传递的梯度大小不仅和激活函数有关，也和每一层的权值大小有关。

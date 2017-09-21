@@ -288,6 +288,10 @@ http://www.cnblogs.com/antflow/p/7299029.html
 
 TFRecord的使用
 
+https://zhuanlan.zhihu.com/p/27481108
+
+TensorFlow直接读取图片和读写TFRecords速度对比
+
 ## 我的TensorFlow实践
 
 ### MNIST+Softmax

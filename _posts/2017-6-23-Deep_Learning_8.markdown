@@ -251,6 +251,10 @@ fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训
 
 而现实的图像无论多么复杂，总是由简单特征拼凑而成的。因此，无论最终的分类结果差异如何巨大，其底层的图像特征却几乎一致。
 
+![](/images/article/trans_learn.png)
+
+fine-tuning也是图像目标检测、语义分割的基础。
+
 参考：
 
 https://zhuanlan.zhihu.com/p/22624331

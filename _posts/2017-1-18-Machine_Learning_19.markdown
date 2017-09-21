@@ -4,6 +4,8 @@ title:  机器学习（十九）——关联规则挖掘
 category: theory 
 ---
 
+## XGBoost（续）
+
 XGBoost的步骤：
 
 I. 对loss function进行二阶Taylor Expansion，展开以后的形式里，当前待学习的Tree是变量，需要进行优化求解。

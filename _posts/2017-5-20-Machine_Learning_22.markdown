@@ -150,6 +150,22 @@ $$v_t = \gamma v_{t-1} + \eta \nabla_\theta J( \theta - \gamma v_{t-1})$$
 
 $$\theta = \theta - v_t$$
 
+>注：Yurii Nesterov，莫斯科大学应用数学系本科（1977年），凸优化理论专家。法国鲁汶天主教大学教授。2009年获John von Neumann Theory Prize。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/22810533
+
+比Momentum更快：揭开Nesterov Accelerated Gradient的真面目
+
+https://zhuanlan.zhihu.com/p/27435669
+
+从Nesterov的角度看：我们为什么要研究凸优化？
+
+https://www.cs.cmu.edu/~ggordon/10725-F12/slides/09-acceleration.pdf
+
+Accelerated first-order methods
+
 ## Adagrad
 
 Momentum算法中所有的参数$$\theta$$都使用同一个学习率，而Adagrad采用了另一种方法进行优化：为每个参数确定不同的学习率。
@@ -214,24 +230,6 @@ $$\hat{v}_t = \dfrac{v_t}{1 - \beta^t_2}$$
 
 $$\theta_{t+1} = \theta_{t} - \dfrac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \hat{m}_t$$
 
-## Nesterov’s Accelerated Gradient Descent
-
->注：Yurii Nesterov，莫斯科大学应用数学系本科（1977年），凸优化理论专家。法国鲁汶天主教大学教授。2009年获John von Neumann Theory Prize。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/22810533
-
-比Momentum更快：揭开Nesterov Accelerated Gradient的真面目
-
-https://zhuanlan.zhihu.com/p/27435669
-
-从Nesterov的角度看：我们为什么要研究凸优化？
-
-https://www.cs.cmu.edu/~ggordon/10725-F12/slides/09-acceleration.pdf
-
-Accelerated first-order methods
-
 ## Nadam
 
 http://cs229.stanford.edu/proj2015/054_report.pdf
@@ -241,6 +239,12 @@ ncorporating Nesterov Momentum into Adam
 ## AdaSecant
 
 《ADASECANT: Robust Adaptive Secant Method for Stochastic Gradient》
+
+## 二阶Optimizer
+
+虽然二阶Optimizer的收敛效果优于一阶Optimizer，但由于计算量较大，通常用的较少。
+
+常用的算法有BGFS和L-BFGS。
 
 ## 参考
 

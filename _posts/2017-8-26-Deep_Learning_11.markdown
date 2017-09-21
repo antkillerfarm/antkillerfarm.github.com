@@ -30,9 +30,19 @@ $$L(\{p_i\},\{t_i\})=\frac{1}{N_{cls}}\sum_iL_{cls}(p_i,p_i^*)+\lambda \frac{1}{
 
 这两种方式，不再是串行训练RPN和Fast-RCNN，而是尝试把二者融入到一个网络内训练。融合方式和上面的Faster R-CNN结构图类似。细节不再赘述。
 
-4.4-Step Alternating Training
+### 4-Step Alternating Training
 
 这是作者发布的源代码中采用的方法。
+
+第一步：用ImageNet模型初始化，独立训练一个RPN网络；
+
+第二步：仍然用ImageNet模型初始化，但是使用上一步RPN网络产生的proposal作为输入，训练一个Fast-RCNN网络，至此，两个网络每一层的参数完全不共享；
+
+第三步：使用第二步的Fast-RCNN网络参数初始化一个新的RPN网络，但是把RPN、Fast-RCNN共享的那些卷积层的learning rate设置为0，也就是不更新，仅仅更新RPN特有的那些网络层，重新训练，此时，两个网络已经共享了所有公共的卷积层；
+
+第四步：仍然固定共享的那些网络层，把Fast-RCNN特有的网络层也加入进来，形成一个unified network，继续训练，fine tune Fast-RCNN特有的网络层，此时，该网络已经实现我们设想的目标，即网络内部预测proposal并实现检测的功能。
+
+![](/images/article/4_Step_Alternating_Training.png)
 
 ## 总结
 
@@ -78,15 +88,13 @@ YOLO不仅是end-to-end，而且还提供了另一种更为直接的思路：直
 
 **Step 1**：Resize成448*448，图片分割得到7*7网格(cell)。
 
-**Step 2**：CNN提取特征和预测：卷积部分负责提特征。全连接部分负责预测：
+**Step 2**：CNN提取特征和预测：卷积部分负责提特征。全连接部分负责预测。
 
 a) $$7\times 7\times 2=98$$个bounding box(bbox) 的坐标$$x_{center},y_{center},w,h$$和是否有物体的confidence。
 
-b) $$7\times 7=49$$个cell所属20个物体的概率。
+b) $$7\times 7=49$$个cell所属20个物体分类的概率。
 
 ![](/images/article/yolo_2.png)
-
-**Step 3**：过滤bbox（通过NMS）。
 
 ![](/images/article/yolo_3.png)
 
@@ -96,7 +104,21 @@ YOLO的输出是一个$$7\times 7\times 30$$的tensor，其中$$7\times 7$$对�
 
 ![](/images/article/yolo_4.png)
 
-上图是这个30维向量的编码方式。
+上图是这个30维向量的编码方式：2个bbox+confidence是$$5\times 2=10$$维，20个物体分类的概率占其余20维。
+
+总结一下，输出tersor的维度是：$$S\times S \times (B \times 5 + C)$$
+
+这里的confidence代表了所预测的box中含有object的置信度和这个box预测的有多准两重信息：
+
+$$\text{confidence} = \text{Pr}(Object) ∗ \text{IOU}_{pred}^{truth}$$
+
+在loss函数设计方面，简单的把结果堆在一起，然后认为它们的重要程度都一样，这显然是不合理的，每个loss项之前的参数$$\lambda$$就是用来设定权重的。
+
+**Step 3**：过滤bbox（通过NMS）。
+
+![](/images/article/yolo_5.png)
+
+上图是Test阶段的NMS的过程示意图。
 
 ## YOLOv2
 
@@ -174,13 +196,41 @@ http://blog.csdn.net/jesse_mx/article/details/74011886
 
 SSD: Single Shot MultiBox Detector模型fine-tune和网络架构
 
-## ENet
+# ENet
 
-https://github.com/TimoSaemann/ENet
+![](/images/article/image_enet.png)
+
+论文：
 
 《ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation》
 
+代码：
+
+https://github.com/TimoSaemann/ENet
+
+参考：
+
 http://blog.csdn.net/zijinxuxu/article/details/67638290
+
+论文中文版blog
+
+# OpenPose
+
+![](/images/article/openpose.png)
+
+论文：
+
+《Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields》
+
+《Hand Keypoint Detection in Single Images using Multiview Bootstrapping》
+
+《Convolutional pose machines》
+
+代码：
+
+https://github.com/CMU-Perceptual-Computing-Lab/openpose
+
+
 
 # Ultra Deep Network
 
@@ -209,4 +259,34 @@ http://blog.csdn.net/zijinxuxu/article/details/67638290
 ![](/images/article/highway.png)
 
 Resnet对于残差的跨层传递是无条件的，而Highway则是有条件的。这种条件开关被称为gate，它也是由网络训练得到的。
+
+# NN的INT8计算
+
+## 概述
+
+NN的INT8计算是近来NN计算优化的方向之一。这方面的文章以Xilinx的白皮书较为经典：
+
+https://china.xilinx.com/support/documentation/white_papers/c_wp486-deep-learning-int8.pdf
+
+利用Xilinx器件的INT8优化开展深度学习
+
+论文：
+
+《On the efficient representation and execution of deep acoustic models》
+
+参考：
+
+https://www.chiphell.com/thread-1620755-1-1.html
+
+新Titan X的INT8计算到底是什么鬼
+
+## NN硬件的指标术语
+
+MACC：multiply-accumulate，乘法累加。
+
+FLOPS：Floating-point Operations Per Second，每秒所执行的浮点运算次数。
+
+显然NN的INT8计算主要以MACC为单位。
+
+
 

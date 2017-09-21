@@ -124,6 +124,10 @@ $$L_1$$ regularization又被称为Lasso（least absolute shrinkage and selection
 
 从贝叶斯统计的角度来看，规则化相当于增加了一个先验分布，比如$$L_2$$ regularization对应的贝叶斯先验分布是正态分布。
 
+除此之外，还有混合使用规则化的情况，比如：
+
+$$\min_f \sum_{i=1}^nV(f(\hat x_i),\hat y_i)+\lambda \|\beta\|_1 + \eta  \|\beta\|_2$$
+
 参见：
 
 https://en.wikipedia.org/wiki/Tikhonov_regularization

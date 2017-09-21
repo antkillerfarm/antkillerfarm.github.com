@@ -115,6 +115,18 @@ Caffe的代码相对比较简单，符合个人作品的特点。
 
 Caffe没有计算图的概念，所有操作都聚焦于NN本身，对于实际业务的支持有限。其结构主要针对CNN进行设计，通用性无法和TensorFlow相比。但相对简单的结构，非常适合CV用途，成为了目前CV DL的事实标准。
 
+## Ristretto Caffe
+
+Ristretto Caffe是一个caffe扩展，支持fp16和int8等特殊格式的数据的转换和运算。
+
+官网：
+
+http://lepsucd.com/?page_id=621
+
+代码：
+
+https://github.com/pmgysel/caffe
+
 ## 参考
 
 https://mp.weixin.qq.com/s/-Jn4UbZ6EqRYceJqI1l16g

@@ -260,4 +260,8 @@ https://mp.weixin.qq.com/s/V1EVdhX6-c1VNGNBgscFeA
 
 用Python统计新浪微博各种表情使用频率
 
+https://mp.weixin.qq.com/s/UOJsoB_YwBunj0YNShF11w
+
+深度学习 + OpenCV，Python实现实时视频目标检测
+
 

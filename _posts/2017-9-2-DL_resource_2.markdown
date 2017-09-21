@@ -256,6 +256,10 @@ https://mp.weixin.qq.com/s/rhtrN2qDspGkpJYDAVSX7w
 
 UC Berkeley展示全新并行处理方法
 
+http://web.cecs.pdx.edu/~mperkows/temp/May22/0020.Matrix-multiplication-systolic.pdf
+
+矩阵乘法器原理
+
 ## Other
 
 http://cs.stanford.edu/people/karpathy/convnetjs/demo/classify2d.html

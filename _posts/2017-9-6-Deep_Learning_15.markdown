@@ -130,4 +130,8 @@ https://mp.weixin.qq.com/s/nYOOwVoijl1p4V0A7yaI3w
 
 机遇与挑战：用强化学习自动搜索优化算法
 
+https://mp.weixin.qq.com/s/uymKtR_7IgMpfXcekfkCDg
+
+从强化学习基本概念到Q学习的实现，打造自己的迷宫智能体
+
 
