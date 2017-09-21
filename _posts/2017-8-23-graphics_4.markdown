@@ -66,6 +66,10 @@ http://blog.csdn.net/liulina603/article/details/8291093
 
 HOG特征
 
+https://mp.weixin.qq.com/s/1l1OU81-BDlvyLZo6eM-4g
+
+方向梯度直方图
+
 # SIFT
 
 ## 概述

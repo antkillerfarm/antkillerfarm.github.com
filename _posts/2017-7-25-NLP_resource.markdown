@@ -426,4 +426,9 @@ https://mp.weixin.qq.com/s/fZv9FgbdQ1bWPoNdl9sF1A
 
 “宝石迷阵”与信息检索
 
+http://www.jianshu.com/p/0273c377c34e
+
+机器学习算法在文本分类中的应用综述
+
+
 
