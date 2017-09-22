@@ -430,5 +430,7 @@ http://www.jianshu.com/p/0273c377c34e
 
 机器学习算法在文本分类中的应用综述
 
+https://mp.weixin.qq.com/s/BcUB3bXrPJF0WQetWs7Law
 
+用深度学习解决自然语言处理中的7大问题，文本分类、语言建模、机器翻译等
 

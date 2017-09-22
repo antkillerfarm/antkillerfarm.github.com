@@ -406,3 +406,13 @@ https://mp.weixin.qq.com/s/vUK2NneOs8OR0vcJEZNbrA
 
 田渊栋等人论文：何时卷积滤波器容易学习？
 
+https://mp.weixin.qq.com/s/pdv-T69rz4jO47CMf-CUhg
+
+“信息瓶颈”理论揭示深度学习本质
+
+https://zhuanlan.zhihu.com/p/29435406
+
+浅析 Hinton 最近提出的Capsule计划
+
+
+

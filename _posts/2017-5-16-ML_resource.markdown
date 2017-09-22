@@ -28,6 +28,10 @@ https://mp.weixin.qq.com/s/n2EVcM5ezS1htzXy3PLVnw
 
 机器学习中的数学基础(包含大量网络课程)
 
+http://www.cnblogs.com/kemaswill/
+
+一个ML的blog
+
 ## 文章
 
 http://www.open-open.com/lib/view/open1420687784625.html

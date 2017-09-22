@@ -445,3 +445,8 @@ https://www.zhihu.com/question/56676679/answer/151505274
 https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
 
 面试官是如何看出你机器学习水平的？
+
+https://mp.weixin.qq.com/s?__biz=MzI3NTA0MzM1OQ==&mid=2651615534&idx=1&sn=00ecd7dc1d8472c070e720a1b63f04c4
+
+我如何考察面试者的机器学习水平
+

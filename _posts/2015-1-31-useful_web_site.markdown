@@ -418,7 +418,13 @@ https://mp.weixin.qq.com/s/tIau6pRZU0r4Aasofca5yQ
 
 50张动图带你走进神奇的物理化学生物世界，超震撼！
 
+https://mp.weixin.qq.com/s/ORZ4MrCPgta8Oeg-ns8cQQ
 
+人工智能在线特征系统中的生产调度
+
+https://mp.weixin.qq.com/s/v_BsfSFp-LwiCOFKaMIS_g
+
+后摩尔时代，如何给你的CPU减负？
 
 ## 有用的blog
 

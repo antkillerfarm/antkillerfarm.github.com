@@ -246,11 +246,19 @@ ncorporating Nesterov Momentum into Adam
 
 常用的算法有BGFS和L-BFGS。
 
+http://www.cnblogs.com/kemaswill/p/3352898.html
+
+优化算法-BFGS
+
 ## 参考
 
 http://sebastianruder.com/optimizing-gradient-descent/
 
 An overview of gradient descent optimization algorithms
+
+https://mp.weixin.qq.com/s/cOCCapYrmrS_DyPkj_XRlg
+
+常见的几种最优化方法
 
 https://morvanzhou.github.io/tutorials/machine-learning/ML-intro/3-06-speed-up-learning/
 

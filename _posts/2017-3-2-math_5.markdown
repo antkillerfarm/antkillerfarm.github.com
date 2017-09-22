@@ -50,15 +50,37 @@ $$N_i=\frac{Ng_ie^{-E_i/kT}}{\sum_{i=1}^{n}g_ie^{-E_i/kT}}$$
 
 ## 参考
 
+http://www.taodocs.com/p-62206829.html
+
+《受限波尔兹曼机简介》张春霞著
+
 http://wenku.baidu.com/view/ccb7956db84ae45c3b358ca7.html
+
+波尔兹曼统计分布律的推导的新方法
 
 http://www.cs.toronto.edu/~fritz/absps/cogscibm.pdf
 
+A Learning Algorithm for Boltzmann Machines
+
 http://www.cs.toronto.edu/~hinton/absps/dbm.pdf
+
+Deep Boltzmann Machines
 
 http://www.cs.toronto.edu/~hinton/absps/guideTR.pdf
 
+A Practical Guide to Training Restricted Boltzmann Machines
+
 http://www.cnblogs.com/tianchi/archive/2013/03/14/2959716.html
+
+Boltzmann machine
+
+http://www.cnblogs.com/kemaswill/p/3269138.html
+
+基于受限玻尔兹曼机(RBM)的协同过滤
+
+http://www.cnblogs.com/kemaswill/p/3203605.html
+
+受限波尔兹曼机简介
 
 # 概率分布（2）
 
@@ -235,19 +257,5 @@ KS检验更深入的解释，涉及到布朗运动和维纳过程，这里不再
 
 2.**互相关（Cross-correlation）**。检测两个序列的相似度，显然两者越相似，互相关值越大。这在统计学方面用的比较多。
 
-3.**卷积（Convolution）**。卷积主要用于线性时不变系统的信号处理。相比于互相关操作，卷积有个旋转180度的操作，这里解释一下它的物理意义。
 
-例如，当一个拳击选手遭到对方连续两次击打身体的同一部位时，第二次被击打时他感觉到的疼痛是第一次被击打所遗留的疼痛与第二次被击打的疼痛之和。即：
-
-$$f(2)=f_1(2)+f_2(1)$$
-
-其中，$$f_i(t)$$中，i表示第i次击打，t表示击打发生之后经过的时间。可以看出i和t的顺序正好是相反的，这也就是Convolution这个名词的本意。这里假设g为常数。
-
-4.这三个操作在离散域最终都可以变为求和操作，也就是向量内积运算。我们一般使用$$a\cdot b$$或者$$\langle a,b\rangle$$表示向量的内积运算。即：
-
-$$\langle a,b\rangle=a_0b_0+a_1b_1+\dots+a_nb_n$$
-
-卷积最经典的应用，当属信号处理领域的傅里叶变换：
-
-$$\mathcal{F}\{f * g\} = k\cdot \mathcal{F}\{f\}\cdot \mathcal{F}\{g\}$$
 

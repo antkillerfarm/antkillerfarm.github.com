@@ -264,4 +264,7 @@ https://mp.weixin.qq.com/s/UOJsoB_YwBunj0YNShF11w
 
 深度学习 + OpenCV，Python实现实时视频目标检测
 
+https://mp.weixin.qq.com/s/5peMiGXNnviAjMP76tV3pw
+
+Python高性能计算库——Numba
 
