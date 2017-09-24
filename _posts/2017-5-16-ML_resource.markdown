@@ -74,10 +74,6 @@ https://zhuanlan.zhihu.com/p/20756711
 
 用Excel做出强大漂亮的数据地图
 
-https://zhuanlan.zhihu.com/p/23866364
-
-从梯度下降到Hessian-Free优化
-
 http://blog.csdn.net/u010945683/article/details/49149815
 
 共轭先验分布
@@ -142,10 +138,6 @@ https://mp.weixin.qq.com/s/f6zi_FlygorqUIQFgWKMfA
 
 评测时如何构造训练数据分布与测试数据分布保持一致
 
-http://www.jianshu.com/p/1aa67a321e33
-
-SVM和Logistic Regression分别在什么时候使用？
-
 https://mp.weixin.qq.com/s/1ijibTVgvF-RhS9H0zM8hQ
 
 ML\DL\NLP\DM等8大领域经典模型和知识！
@@ -169,10 +161,6 @@ https://mp.weixin.qq.com/s/goupgFyxjHouj2zML0XCPg
 https://mp.weixin.qq.com/s/jeloJDgfa3eFXUPduhesVA
 
 logistic函数和softmax函数
-
-https://mp.weixin.qq.com/s/5tUQ9B5juP-Vg8z-gp60rg
-
-详解支持向量机SVM：快速可靠的分类算法
 
 https://mp.weixin.qq.com/s/G5a0YK39RZzgce_szbwoTA
 
@@ -198,29 +186,13 @@ https://mp.weixin.qq.com/s/8oAOzImyZj5idLDt4z9WNA
 
 机器学习算法再比较
 
-https://mp.weixin.qq.com/s/LuuvvL9yZ3ucXxRq0pZfsg
-
-优化策略：Label Smoothing Regularization_LSR原理分析
-
 https://mp.weixin.qq.com/s/ghJohTkCuHPub-iD8UphKw
 
 如何用Python和机器学习炒股赚钱？
 
-https://mp.weixin.qq.com/s/tJ_FbL2nFQfkvKqpQJ8kmg
-
-从特征分解到协方差矩阵：详细剖析和实现PCA算法
-
 https://mp.weixin.qq.com/s/D7vghfvUayLNyz5vnXurdg
 
 谷歌投资“算法商店”创始人：打造AI操作系统
-
-https://mp.weixin.qq.com/s/fXlbB7KmiX0iIv6xwSxNIA
-
-梯度下降法的三种形式BGD、SGD以及MBGD
-
-https://mp.weixin.qq.com/s/R_0_E5Ieaj9KiWgg1prxeg
-
-为什么梯度的方向与等高线切线方向垂直？
 
 https://mp.weixin.qq.com/s/D7p7W0Oe6EPmJeoWACQ44w
 
@@ -301,10 +273,6 @@ Kaggle求生
 https://mp.weixin.qq.com/s/rCCYmwmwodWKS0ZG4COPNg
 
 第四范式戴文渊：机器学习教科书的7大经典问题
-
-https://mp.weixin.qq.com/s/MfYRipBX4la5jEG-ZMBhEw
-
-详解LinearSVM
 
 https://mp.weixin.qq.com/s/8ZEUNIXHu7iF1hHk7e0gdw
 

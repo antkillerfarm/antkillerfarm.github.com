@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四）——RNN, LSTM
+title:  深度学习（四）——RNN
 category: theory 
 ---
 

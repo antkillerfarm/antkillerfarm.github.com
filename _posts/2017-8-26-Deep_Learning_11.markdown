@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十一）——YOLO, SSD, Ultra Deep Network
+title:  深度学习（十一）——YOLO, SSD, YOLOv2
 category: theory 
 ---
 
@@ -120,19 +120,7 @@ $$\text{confidence} = \text{Pr}(Object) ∗ \text{IOU}_{pred}^{truth}$$
 
 上图是Test阶段的NMS的过程示意图。
 
-## YOLOv2
-
-YOLOv2又名YOLO9000，是Redmon 2016年12月提出的一个YOLO改进版本。
-
-论文：
-
-《YOLO9000: Better, Faster, Stronger》
-
-YOLOv2对于输出向量的编码方式进行了改进，如下图所示：
-
-![](/images/article/yolov2.png)
-
-参考：
+## 参考
 
 https://zhuanlan.zhihu.com/p/24916786
 
@@ -150,17 +138,9 @@ https://mp.weixin.qq.com/s/Wqj6EM33p-rjPIHnFKtmCw
 
 计算机是怎样快速看懂图片的：比R-CNN快1000倍的YOLO算法
 
-https://zhuanlan.zhihu.com/p/25167153
-
-YOLO2
-
 http://lanbing510.info/2017/08/28/YOLO-SSD.html
 
 目标检测之YOLO，SSD
-
-http://lanbing510.info/2017/09/04/YOLOV2.html
-
-目标检测之YOLOv2
 
 # SSD
 
@@ -178,6 +158,14 @@ https://github.com/weiliu89/caffe
 >个人主页：   
 >http://www.cs.unc.edu/~wliu/
 
+YOLO有一些缺陷：每个网格只预测一个物体，容易造成漏检；对于物体的尺度相对比较敏感，对于尺度变化较大的物体泛化能力较差。
+
+针对YOLO中的这些不足，SSD在这两方面都有所改进，同时兼顾了mAP和实时性的要求。其思路就是Faster R-CNN+YOLO，利用YOLO的思路和Faster R-CNN的anchor box的思想。
+
+![](/images/article/ssd.png)
+
+上图是SSD的网络结构图。
+
 参考：
 
 http://www.jianshu.com/p/ebebfcd274e6
@@ -194,99 +182,89 @@ SSD详解
 
 http://blog.csdn.net/jesse_mx/article/details/74011886
 
-SSD: Single Shot MultiBox Detector模型fine-tune和网络架构
+SSD模型fine-tune和网络架构
 
-# ENet
+http://blog.csdn.net/u010167269/article/details/52563573
 
-![](/images/article/image_enet.png)
+SSD论文阅读
 
-论文：
+http://blog.csdn.net/zijin0802034/article/details/53288773
 
-《ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation》
+另一个SSD论文阅读
 
-代码：
+http://www.lai18.com/content/24600342.html
 
-https://github.com/TimoSaemann/ENet
+还是一个SSD论文阅读
 
-参考：
+# YOLOv2
 
-http://blog.csdn.net/zijinxuxu/article/details/67638290
-
-论文中文版blog
-
-# OpenPose
-
-![](/images/article/openpose.png)
+面对SSD的攻势，Redmon不甘示弱，于2016年12月提出了YOLOv2（又名YOLO9000）。YOLOv2对YOLO做了较多改进，实际上更像是SSD的升级版。
 
 论文：
 
-《Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields》
+《YOLO9000: Better, Faster, Stronger》
 
-《Hand Keypoint Detection in Single Images using Multiview Bootstrapping》
+实际上，论文的内容也正如标题所言，主要分为Better, Faster, Stronger三个部分。
 
-《Convolutional pose machines》
+## Better
 
-代码：
+### batch normalization
 
-https://github.com/CMU-Perceptual-Computing-Lab/openpose
+YOLOv2网络通过在每一个卷积层后添加batch normalization，极大的改善了收敛速度同时减少了对其它regularization方法的依赖（舍弃了dropout优化后依然没有过拟合），使得mAP获得了2%的提升。
 
+### High Resolution Classifier
 
+所有state-of-the-art的检测方法基本上都会使用ImageNet预训练过的模型（classifier）来提取特征，例如AlexNet输入图片会被resize到不足256 * 256，这导致分辨率不够高，给检测带来困难。所以YOLO(v1)先以分辨率224*224训练分类网络，然后需要增加分辨率到448*448，这样做不仅切换为检测算法也改变了分辨率。所以作者想能不能在预训练的时候就把分辨率提高了，训练的时候只是由分类算法切换为检测算法。
 
-# Ultra Deep Network
+YOLOv2首先修改预训练分类网络的分辨率为448*448，在ImageNet数据集上训练10轮（10 epochs）。这个过程让网络有足够的时间调整filter去适应高分辨率的输入。然后fine tune为检测网络。mAP获得了4%的提升。
 
-## FractalNet
-
-论文：
-
-《FractalNet: Ultra-Deep Neural Networks without Residuals》
-
-![](/images/article/FractalNet.png)
-
-## Resnet in Resnet
-
-论文：
-
-《Resnet in Resnet: Generalizing Residual Architectures》
-
-![](/images/article/RiR.png)
-
-## Highway
-
-论文：
-
-《Training Very Deep Networks》
-
-![](/images/article/highway.png)
-
-Resnet对于残差的跨层传递是无条件的，而Highway则是有条件的。这种条件开关被称为gate，它也是由网络训练得到的。
-
-# NN的INT8计算
-
-## 概述
-
-NN的INT8计算是近来NN计算优化的方向之一。这方面的文章以Xilinx的白皮书较为经典：
-
-https://china.xilinx.com/support/documentation/white_papers/c_wp486-deep-learning-int8.pdf
-
-利用Xilinx器件的INT8优化开展深度学习
-
-论文：
-
-《On the efficient representation and execution of deep acoustic models》
-
-参考：
-
-https://www.chiphell.com/thread-1620755-1-1.html
-
-新Titan X的INT8计算到底是什么鬼
-
-## NN硬件的指标术语
-
-MACC：multiply-accumulate，乘法累加。
-
-FLOPS：Floating-point Operations Per Second，每秒所执行的浮点运算次数。
-
-显然NN的INT8计算主要以MACC为单位。
+## Faster
 
 
+
+## Stronger
+
+YOLOv2对于输出向量的编码方式进行了改进，如下图所示：
+
+![](/images/article/yolov2.png)
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/25167153
+
+YOLO2
+
+http://blog.csdn.net/jesse_mx/article/details/53925356
+
+YOLOv2 论文笔记
+
+http://lanbing510.info/2017/09/04/YOLOV2.html
+
+目标检测之YOLOv2
+
+# 其它目标检测网络
+
+## A-Fast-RCNN
+
+A-Fast-RCNN首次将对抗学习引入到了目标检测领域，idea是非常创新的。
+
+http://blog.csdn.net/jesse_mx/article/details/72955981
+
+A-Fast-RCNN论文笔记
+
+## R-FCN
+
+FCN在目标检测领域的应用。
+
+http://blog.csdn.net/zijin0802034/article/details/53411041
+
+R-FCN: Object Detection via Region-based Fully Convolutional Networks
+
+## G-CNN
+
+G-CNN是MaryLand大学的工作，论文主要的思路也是消除region proposal，和YOLO，SSD不同，G-CNN的工作借鉴了迭代的想法，把边框检测等价于找到初始边框到最终目标的一个路径。但是使用one-step regression不能处理这个非线性的过程，所以作者采用迭代的方法逐步接近最终的目标。
+
+http://blog.csdn.net/zijin0802034/article/details/53535647
+
+G-CNN: an Iterative Grid Based Object Detector
 

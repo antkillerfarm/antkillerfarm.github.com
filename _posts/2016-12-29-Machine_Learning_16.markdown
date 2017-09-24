@@ -133,6 +133,12 @@ $$X_{n\times m}\approx U_{n\times k}Y_{k\times m}$$
 
 两者虽然都是降维算法，但特征选择是在原有的n个特征中选择k个特征，而PCA是重建k个新的特征。
 
+参考：
+
+https://mp.weixin.qq.com/s/tJ_FbL2nFQfkvKqpQJ8kmg
+
+从特征分解到协方差矩阵：详细剖析和实现PCA算法
+
 # loss function比较
 
 ![](/images/article/loss_function.png)

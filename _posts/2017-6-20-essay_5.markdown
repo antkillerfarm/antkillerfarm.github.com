@@ -114,6 +114,16 @@ David M. Jones没有越狱，所以活到了苏联人解放集中营的时候。
 
 814空战胜利80周年涂装
 
+# AlphaGo
+
+樊麾讲解AlphaGo与李世石的五番棋：
+
+https://deepmind.com/research/alphago/alphago-games-simplified-chinese/
+
+论文：
+
+《Mastering the game of Go with deep neural networks and tree search》
+
 # 世说新语（续）
 
 ## 2017.8

@@ -138,6 +138,10 @@ http://blog.csdn.net/zouxy09/article/details/24971995
 
 机器学习中的范数规则化之（一）L0、L1与L2范数
 
+https://mp.weixin.qq.com/s/pZko9gM5sbFhMl8P8TCFww
+
+机器学习损失函数、L1-L2正则化的前世今生
+
 # 协同过滤的ALS算法
 
 ## 协同过滤概述

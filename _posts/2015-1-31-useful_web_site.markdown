@@ -426,6 +426,10 @@ https://mp.weixin.qq.com/s/v_BsfSFp-LwiCOFKaMIS_g
 
 后摩尔时代，如何给你的CPU减负？
 
+https://mp.weixin.qq.com/s/77BgUiwjQ8ryGNRjMCiBoQ
+
+“雷达电子战”常用公式
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

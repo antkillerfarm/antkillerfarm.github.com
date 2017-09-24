@@ -222,6 +222,18 @@ https://mp.weixin.qq.com/s/pXhNRAvJI88tycMsrWhgcQ
 
 机器学习中的算法：支持向量机(SVM)基础
 
+http://www.jianshu.com/p/1aa67a321e33
+
+SVM和Logistic Regression分别在什么时候使用？
+
+https://mp.weixin.qq.com/s/5tUQ9B5juP-Vg8z-gp60rg
+
+详解支持向量机SVM：快速可靠的分类算法
+
+https://mp.weixin.qq.com/s/MfYRipBX4la5jEG-ZMBhEw
+
+详解LinearSVM
+
 # 学习理论
 
 ## 偏差和方差

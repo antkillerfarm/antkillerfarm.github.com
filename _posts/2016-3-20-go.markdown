@@ -140,6 +140,3 @@ http://www.goratings.org/
 
 2000年以后，三国相继放弃升段制度，而采用赛事升段的方式。这种方式目前来看，对于限制高段棋手数量很有效果，但随着赛事的增多，仍有泛滥的可能。
 
-樊麾讲解AlphaGo与李世石的五番棋：
-
-https://deepmind.com/research/alphago/alphago-games-simplified-chinese/

@@ -164,7 +164,7 @@ https://github.com/rbgirshick/fast-rcnn
 
 上图是Fast R-CNN的结构图。从该图可以看出Fast R-CNN和SPPnet的主要差异在于：
 
-1.使用ROI Pooling，替换SPP。
+1.使用ROI（Region of interest） Pooling，替换SPP。
 
 2.去掉了SVM分类。
 

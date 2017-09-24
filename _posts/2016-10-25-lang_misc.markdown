@@ -377,4 +377,9 @@ https://mp.weixin.qq.com/s/W91sppqv3iGtaZPY99suDQ
 
 MIT手把手教你一步步创建自己的R程序包
 
+https://mp.weixin.qq.com/s/Gzoxa4jjWzprsSn9yRVlOg
+
+基于自然语言识别下的流失用户预警
+
+
 

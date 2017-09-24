@@ -151,6 +151,10 @@ Batch Normalization是Google提出的一种神经网络优化技巧。
 
 参考：
 
+http://blog.csdn.net/malefactor/article/details/51476961
+
+Batch Normalization导读
+
 http://www.cnblogs.com/neopenx/p/5211969.html
 
 从Bayesian角度浅析Batch Normalization
@@ -158,6 +162,10 @@ http://www.cnblogs.com/neopenx/p/5211969.html
 http://blog.csdn.net/hjimce/article/details/50866313
 
 Batch Normalization学习笔记
+
+https://buptldy.github.io/2016/08/18/2016-08-18-Batch_Normalization/
+
+Implementation of Batch Normalization Layer（中文blog）
 
 https://www.zhihu.com/question/38102762
 

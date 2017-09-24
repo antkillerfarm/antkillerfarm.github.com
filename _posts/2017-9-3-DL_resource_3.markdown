@@ -6,34 +6,6 @@ category: technology
 
 # DL参考资源
 
-http://mp.weixin.qq.com/s/SNfSY4CKhX1RDWd4itPx2Q
-
-马里兰大学论文：训练深度神经网络中的一致性难题
-
-https://mp.weixin.qq.com/s/ViQqeER1NXtJOtnLg76TWg
-
-关于远程监督，我们来推荐几篇值得读的论文
-
-https://mp.weixin.qq.com/s/z1APyCxlOEPHn48OeJAHkQ
-
-基于深度学习的视频内容识别
-
-https://mp.weixin.qq.com/s/c2oMJfE95I1ciEtvdTlb4A
-
-完全脱离预训练模型的目标检测方法
-
-https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
-
-谷歌提出多图像抠图算法，并弥补水印技术的一致性漏洞
-
-https://zhuanlan.zhihu.com/p/28639662
-
-百家争鸣的Meta Learning/Learning to learn
-
-https://mp.weixin.qq.com/s/kMTMjlLgcR24DT7CXvezsA
-
-深度学习概念、架构和tensorflow的思维导图！
-
 https://mp.weixin.qq.com/s/Tx9JJ0cIo_rH7BDjd_hkvw
 
 Hinton碰撞LeCun：CNN有两大缺陷，要用capsule做下一代CNN
@@ -42,21 +14,9 @@ https://www.jiqizhixin.com/articles/2017-07-27-2
 
 CVPR 2017李飞飞总结8年ImageNet历史，宣布挑战赛最终归于Kaggle
 
-https://mp.weixin.qq.com/s/6_cW22DCzSw3DpUDrLXLcA
-
-OpenAI提出强化学习近端策略优化，可替代策略梯度法
-
-https://mp.weixin.qq.com/s/hkcVhyqiDW--F3QxucgEcA
-
-亚马逊开源神经机器翻译框架Sockeye：基于Apache MXNet的NMT平台
-
 https://mp.weixin.qq.com/s/TWdeHVCgEf54STvdA1QUPg
 
 DeepMind哈萨比斯长文：伟大的AI离不开神经科学
-
-https://mp.weixin.qq.com/s/GyE9qdXPGvrq12dMAf4nrQ
-
-论文推荐：QA，增强学习，知识图谱，机器阅读理解
 
 https://mp.weixin.qq.com/s/DQcRqWALLuPpNabCv83Vcg
 
@@ -102,10 +62,6 @@ https://mp.weixin.qq.com/s/UboQNEywHSBAYc0740qmzQ
 
 让机器学会创造新的概念：DeepMind提出符号-概念关联网络SCAN
 
-https://mp.weixin.qq.com/s/BWc8nRbOF1IfwbBtmLnhnA
-
-从全连接层到大型卷积核：深度学习语义分割全指南
-
 https://mp.weixin.qq.com/s/mEnYNs9tP-246lVM3WFgZg
 
 颜水成团队CVPR新架构，提速300%
@@ -133,10 +89,6 @@ https://mp.weixin.qq.com/s/8a4hTHJ1F-dUiUI12COJkA
 https://mp.weixin.qq.com/s/bMW2go3QefbgYMqVSzyy_g
 
 腾讯AI Lab深度解读CVPR五大前沿
-
-https://mp.weixin.qq.com/s/cANlqQAI-A2mC9vnd3imQA
-
-Instance-Aware图像语义分割
 
 https://mp.weixin.qq.com/s/_dHjZQ_7_7H34PHhV_lC3w
 
@@ -206,10 +158,6 @@ https://mp.weixin.qq.com/s/CXKuSMi0Vd43BGDf5BgoqA
 
 弱监督视频物体识别新方法：香港科技大学联合CMU提出TD-Graph LSTM
 
-https://mp.weixin.qq.com/s/uh-Gh8BSxBi-jjG6-d7-UQ
-
-TACOTRON一种端到端的Text-to-Speech合成模型
-
 https://mp.weixin.qq.com/s/7NpJJn4k5oGPOB04S9Jyqw
 
 DeepMind新论文，关联推理为什么是智能最重要的特征
@@ -253,10 +201,6 @@ https://mp.weixin.qq.com/s/83HufWMDnuXIOCCfgqeDJw
 https://mp.weixin.qq.com/s/VAEH_241IAuEH5S6H6ep5w
 
 UC伯克利提出新型视觉描述系统，物体描述无需大量样本
-
-https://mp.weixin.qq.com/s/v_TLYYq6cFWuwR9tXM8m-A
-
-如何通过CRF-RNN模型实现图像语义分割任务
 
 https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
 
@@ -362,17 +306,9 @@ https://mp.weixin.qq.com/s/kbqTHIOzAj1aERl4tm-kVA
 
 2017上半年无监督特征学习研究成果汇总
 
-https://mp.weixin.qq.com/s/ceCC7Q6yr0QKESeZXi6lWQ
-
-堆叠解卷积网络实现图像语义分割顶尖效果
-
 https://mp.weixin.qq.com/s/tZoD4RfkDDDBxTgqDJvI3g
 
 35个热门又实用的开源 AI 项目！
-
-https://mp.weixin.qq.com/s/nK__d-PV6DY5mDfA_UgDmQ
-
-全解：目标检测，图像分类、分割、生成……
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
 
@@ -413,6 +349,26 @@ https://mp.weixin.qq.com/s/pdv-T69rz4jO47CMf-CUhg
 https://zhuanlan.zhihu.com/p/29435406
 
 浅析 Hinton 最近提出的Capsule计划
+
+https://mp.weixin.qq.com/s/e4hriDvTRLkg-mIifVWayw
+
+如何解决深度学习中的多体问题
+
+https://mp.weixin.qq.com/s/qTnFQK0CkvdJfZaKj2wUtQ
+
+海康威视联合提出注意力聚焦网络FAN：提升场景文本识别精确度
+
+https://mp.weixin.qq.com/s/iXmjuBh2zzno7-D9ClYbSA
+
+讲解DeepMind论文：AI在复杂环境中学习运动
+
+https://mp.weixin.qq.com/s/sYXVqnk5p8tvl6s0EIkr3w
+
+游戏代理框架，帮助您创建AI来玩任何您拥有的游戏！
+
+https://mp.weixin.qq.com/s/9ZQc3RqCCcWYDplZ4RU2oA
+
+清华段路明组发现深度学习和量子物理重要关联
 
 
 

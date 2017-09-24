@@ -156,6 +156,10 @@ https://mp.weixin.qq.com/s/09v9gj1cmf4zIJAGqHnJWw
 
 视觉SLAM中的直接法在智能驾驶中的应用实践！
 
+https://mp.weixin.qq.com/s/0njQq6QAfIdwsF5gTvk1Wg
+
+惯性导航系统：现代军事系统的核心技术产品
+
 
 
 

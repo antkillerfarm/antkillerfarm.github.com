@@ -118,6 +118,10 @@ https://mp.weixin.qq.com/s/nGSaQXm8AczYodtmHD1qNA
 
 深度学习目标检测模型全面综述：Faster R-CNN、R-FCN和SSD
 
+https://mp.weixin.qq.com/s/c2oMJfE95I1ciEtvdTlb4A
+
+完全脱离预训练模型的目标检测方法
+
 ## 进化史
 
 DPM(2007)->RCNN(2014)->Fast RCNN->Faster RCNN

@@ -70,6 +70,10 @@ https://mp.weixin.qq.com/s/1l1OU81-BDlvyLZo6eM-4g
 
 方向梯度直方图
 
+https://buptldy.github.io/2016/03/31/2016-03-31-HOG%20Note/
+
+《Histograms of Oriented Gradients for Human Detection》Note
+
 # SIFT
 
 ## 概述

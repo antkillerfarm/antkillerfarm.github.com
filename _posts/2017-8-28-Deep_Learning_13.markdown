@@ -1,213 +1,259 @@
 ---
 layout: post
-title:  深度学习（十三）——模型压缩, 人脸识别, Network In Network
+title:  深度学习（十三）——花式卷积, 花式池化, Batch Normalization, Softmax详解
 category: theory 
 ---
 
-# 模型压缩
+# 花式卷积
 
-对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。
+在DL中，卷积实际上是一大类计算的总称。除了原始的卷积、反卷积（Deconvolution）之外，还有各种各样的花式卷积。
 
-此外，对于一些较大的模型（如VGG），即使机器再给力，单位时间内能处理的图像数量，往往也无法达到实际应用的要求。这点在自动驾驶和视频处理领域显得尤为突出。
+## 卷积在CNN和数学领域中的概念差异
 
-这里首先提到的是韩松的两篇论文：
+首先需要明确一点，CNN中的卷积和反卷积，实际上和数学意义上的卷积、反卷积是有差异的。
 
-《Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding》
+数学上的卷积主要用于傅立叶变换，在计算中有个时域上的反向操作，并不是简单的向量内积运算。在信号处理领域，卷积主要用作**信号的采样**。
 
-《Learning both Weights and Connections for Efficient Neural Networks》
+数学上的反卷积主要作为卷积的逆运算，相当于**信号的重建**，或者解微分方程。因此，它的难度远远大于卷积运算，常见的有Wiener deconvolution、Richardson–Lucy deconvolution等。
 
->韩松，清华本科（2012）+Stanford博士（2017）。MIT AP（from 2018）。   
->个人主页：   
->https://stanford.edu/~songhan/
+CNN的反卷积就简单多了，它只是误差的反向算法而已。因此，也有人用back convolution, transpose convolution这样更精确的说法，来描述CNN的误差反向算法。
 
-韩松也是SqueezeNet的二作。
+## Dilated convolution
 
-![](/images/article/nn_compression.png)
+![](/images/article/dilation.gif)
 
-韩松论文的中心思想如上图所示。简单来说，就是去掉原有模型的一些不重要的参数、结点和层。
+上图是Dilated convolution的操作。
 
-参数的选择，相对比较简单。参数的绝对值越接近零，它对结果的贡献就越小。这一点和稀疏矩阵有些类似。
+![](/images/article/no_padding_strides_transposed.gif)
 
-结点和层的选择，相对麻烦一些，需要通过算法得到不重要的层。
+上图是transpose convolution的操作。它和Dilated convolution的差别在于，前者是图像上有洞，而后者是kernel上有洞。
 
-比如可以逐个将每一层50%的参数置零，查看模型性能。对性能影响不大的层就是不重要的。
+## 分组卷积
 
-虽然这些参数、结点和层相对不重要，但是去掉之后，仍然会对准确度有所影响。这时可以对精简之后的模型，用训练样本进行re-train，通过残差对模型进行一定程度的修正，以提高准确度。
+![](/images/article/AlexNet.png)
 
-其次还可以看看图森科技的论文：
+分组卷积最早在AlexNet中出现，由于当时的硬件资源有限，训练AlexNet时卷积操作不能全部放在同一个GPU处理，因此作者把feature maps分给2个GPU分别进行处理，最后把2个GPU的结果进行融合。
 
-https://www.zhihu.com/question/62068158
+在AlexNet的Group Convolution当中，特征的通道被平均分到不同组里面，最后再通过两个全连接层来融合特征，这样一来，就只能在最后时刻才融合不同组之间的特征，对模型的泛化性是相当不利的。
 
-如何评价图森科技连发的三篇关于深度模型压缩的文章？
+为了解决这个问题，ShuffleNet在每一次层叠这种Group conv层前，都进行一次channel shuffle，shuffle过的通道被分配到不同组当中。进行完一次group conv之后，再一次channel shuffle，然后分到下一层组卷积当中，以此循环。
 
-图森的思路比较有意思。其中的方法之一，是利用L1规则化会导致结果的稀疏化的特性，制造出一批接近0的参数。从而达到去除不重要的参数的目的。
-
-除此之外，矩阵量化、Kronecker内积、霍夫曼编码、模型剪枝等也是常见的模型压缩方法。
-
-当然最系统的做法还属Geoffrey Hinton的论文：
-
-《Distilling the Knowledge in a Neural Network》
-
-图森科技的后两篇论文也是在Hinton论文的基础上改进的。
+![](/images/article/ShuffleNet.jpg)
 
 论文：
 
-《Articulatory and Spectrum Features Integration using Generalized Distillation Framework》
+《ShuffleNet: An Extremely Efficient Convolutional Neural Network for Mobile Devices》
+
+无论是在Inception、DenseNet或者ShuffleNet里面，我们对所有通道产生的特征都是不分权重直接结合的，那为什么要认为所有通道的特征对模型的作用就是相等的呢？这是一个好问题，于是，ImageNet2017冠军SEnet就出来了。
+
+论文：
+
+《Squeeze-and-Excitation Networks》
+
+## 可变形卷积核
+
+MSRA于2017年提出了可变形卷积核的概念。
+
+论文：
+
+《Deformable Convolutional Networks》
+
+![](/images/article/Deformable_convolution.png)
+
+## 1*1卷积
+
+1、升维或降维。
+
+如果卷积的输出输入都只是一个平面，那么1x1卷积核并没有什么意义，它是完全不考虑像素与周边其他像素关系。 但卷积的输出输入是长方体，所以1x1卷积实际上是对每个像素点，在不同的channels上进行线性组合（信息整合），且保留了图片的原有平面结构，调控depth，从而完成升维或降维的功能。
+
+![](/images/article/conv_1x1.png)
+
+2、加入非线性。卷积层之后经过激励层，1*1的卷积在前一层的学习表示上添加了非线性激励（ non-linear activation ），提升网络的表达能力；
+
+3.促进不同通道之间的信息交换。
 
 参考：
 
-https://zhuanlan.zhihu.com/p/24337627
+https://www.zhihu.com/question/56024942
 
-深度压缩之蒸馏模型
-
-https://zhuanlan.zhihu.com/p/24894102
-
-《Distilling the Knowledge in a Neural Network》阅读笔记
-
-https://luofanghao.github.io/2016/07/20/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0%20%E3%80%8ADistilling%20the%20Knowledge%20in%20a%20Neural%20Network%E3%80%8B/
-
-论文笔记 《Distilling the Knowledge in a Neural Network》
-
-http://blog.csdn.net/zhongshaoyy/article/details/53582048
-
-蒸馏神经网络
-
-https://www.zhihu.com/question/50519680
-
-如何理解soft target这一做法？
-
-https://mp.weixin.qq.com/s/0KlnQ8UUxpyhBRdeo0EOAA
-
-用于网络压缩的滤波器级别剪枝算法ThiNet
-
-https://mp.weixin.qq.com/s/lO2UM04PfSM5VJYh6vINhw
-
-为模型减减肥：谈谈移动／嵌入式端的深度学习
-
-https://mp.weixin.qq.com/s/cIGuJvYr4lZW01TdINBJnA
-
-深度压缩网络：较大程度减少了网络参数存储问题
-
-https://mp.weixin.qq.com/s/1JwLP0FmV1AGJ65iDgLWQw
-
-神经网络模型压缩技术
-
-https://mp.weixin.qq.com/s/Xqc4UgcfCUWYOeGhjNpidA
-
-CNN模型压缩与加速算法综述
-
-https://mp.weixin.qq.com/s/rzv8VCAxBQi0HsUcnLqqUA
-
-处理移动端传感器时序数据的深度学习框架：DeepSense
-
-https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg
-
-旷视科技提出新型卷积网络ShuffleNet，专为移动端设计
-
-https://mp.weixin.qq.com/s/UYk3YQmFW7-44RUojUqfGg
-
-上交大ICCV：精度保证下的新型深度网络压缩框架
-
-https://mp.weixin.qq.com/s/f3bmtbCY5BfA4v3movwLVg
-
-向手机端神经网络进发：MobileNet压缩指南
-
-# 人脸识别
-
-## OpenFace
-
-OpenFace是一款开源的人脸识别软件。它的原理基于CVPR 2015年的论文：FaceNet。由于采用了深度学习技术，OpenFace对人脸识别的准确率，大大超过了OpenCV。
-
-OpenFace是用Python和Torch编写的。
-
-官网：
-
-https://cmusatyalab.github.io/openface/
+卷积神经网络中用1*1卷积有什么作用或者好处呢？
 
 ## 参考
 
-http://www.cnblogs.com/pandaroll/p/6590339.html
+https://github.com/vdumoulin/conv_arithmetic
 
-开源人脸识别openface
+Convolution arithmetic
 
-http://mp.weixin.qq.com/s/KQxGQdLa3XzKVIFYqlrV7g
+http://deeplearning.net/software/theano_versions/dev/tutorial/conv_arithmetic.html
 
-人脸检测与识别的趋势和分析
+Convolution arithmetic
 
-https://zhuanlan.zhihu.com/p/25335957
+https://mp.weixin.qq.com/s/dR2nhGqpz7OdmxKPYSaaxw
 
-人脸检测与深度学习
+如何理解空洞卷积（dilated convolution）？
 
-http://www.leiphone.com/news/201608/MPXlWtGaJLPYL7NB.html
+https://mp.weixin.qq.com/s/CLFbhWMcat4rN8YS_7q25g
 
-人脸检测发展：从VJ到深度学习
+这12张图生动的告诉你，深度学习中的卷积网络是怎么一回事？
 
-https://mp.weixin.qq.com/s/ZZmLbFzi843g0k3gTncQmA
+http://mp.weixin.qq.com/s/dvuX3Ih_DZrv0kgqFn8-lg
 
-拿下人脸识别“世界杯”冠军！松下-NUS和美国东北大学实战分享
+卷积神经网络结构变化——可变形卷积网络deformable convolutional networks
 
-https://mp.weixin.qq.com/s/DYCXef_09yFFNR0uHL2Q0Q
+http://cs.nyu.edu/~fergus/drafts/utexas2.pdf
 
-基于Python的开源人脸识别库：离线识别率高达99.38%
+Deconvolutional Networks
 
-blog.csdn.net/qq_14845119/article/details/52680940
+https://zhuanlan.zhihu.com/p/22245268
 
-MTCNN（Multi-task convolutional neural networks）人脸对齐
+CNN-反卷积
 
-http://blog.csdn.net/shuzfan/article/details/50358809
+http://buptldy.github.io/2016/10/29/2016-10-29-deconv/
 
-人脸检测——CascadeCNN
+Transposed Convolution, Fractionally Strided Convolution or Deconvolution（中文blog）
 
-http://blog.csdn.net/shuzfan/article/details/52668935
+https://buptldy.github.io/2016/10/01/2016-10-01-im2col/
 
-人脸检测——MTCNN
+Implementing convolution as a matrix multiplication（中文blog）
 
-https://mp.weixin.qq.com/s/eOxd5XbeyVcRYyAAmPr20Q
+https://mp.weixin.qq.com/s/iN2LDAQ2ee-rQnlD3N1yaw
 
-利用空间融合卷积神经网络通过面部关键点进行伪装人脸识别
+变形卷积核、可分离卷积？CNN中十大拍案叫绝的操作！
 
-https://mp.weixin.qq.com/s/vAjWHpn5HP_lwSv49g71SA
+http://www.msra.cn/zh-cn/news/features/deformable-convolutional-networks-20170609
 
-新型半参数变分自动编码器DeepCoder：可分层级编码人脸动作
+可变形卷积网络：计算机新“视”界
 
-https://mp.weixin.qq.com/s/IS5iAPZeUrvvyWs29O8Ukg
+https://mp.weixin.qq.com/s/ybI8kJPRn7sH-hJbc5uqnw
 
-通过提取神经元知识实现人脸模型压缩
+CMU研究者探索新卷积方法：在实验中可媲美基准CNN
 
-https://mp.weixin.qq.com/s/DEJ0z2CahZIrhTE3VXNVvg
+https://mp.weixin.qq.com/s/qReN6z8s45870HSMCMNatw
 
-基于注意力机制学习的人脸幻构
+微软亚洲研究院：逐层集中Attention的卷积模型
 
-https://mp.weixin.qq.com/s/-G94Mj-8972i2HtEcIZDpA
+# 花式池化
 
-人脸识别世界杯榜单出炉，微软百万名人识别竞赛冠军分享
+池化和卷积一样，都是信号采样的一种方式。相比于卷积的千变万化，池化要简单的多。
 
-https://mp.weixin.qq.com/s/bqWle_188lhYO4hpCfafkQ
+池化的一般步骤是：选择区域P，令$$Y=f(P)$$。这里的f为池化函数。
 
-用浏览器做人脸检测，竟然这么简单？
+![](/images/article/max_pooling.png)
 
-https://mp.weixin.qq.com/s/kn9JS55wIW2cfpUv7Jm0eQ
+上图是Max Pooling的示意图。除了max之外，常用的池化函数还有mean、min等。
 
-深度学习教你如何“以貌取人”！
+ICLR2013上，Zeiler提出了另一种pooling手段stochastic pooling。只需对Pooling区域中的元素按照其概率值大小随机选择，即元素值大的被选中的概率也大。而不像max-pooling那样，永远只取那个最大值元素。
 
-https://mp.weixin.qq.com/s/3xEDtMoe0iRQSZiN5A1FGw
+池化的反向传播也比较简单。以上图的Max Pooling为例，由于取的是最大值7,因此，误差只要传递给7所在的神经元即可。
 
-IPHONE X“刷脸”技术奥秘大揭底
+这里再次强调一下，池化只是对信号的下采样。对于图像来说，这种下采样保留了图像的某些特征，因而是有意义的。但对于另外的任务则未必如此。
 
-# Network In Network
+比如，AlphaGo采用CNN识别棋局，但对棋局来说，下采样显然是没有什么物理意义的，因此，**AlphaGo的CNN是没有Pooling的**。
 
-http://blog.csdn.net/sheng_ai/article/details/41313883
+除此之外，还有ROI Pooling操作。（参见《深度学习（十）》）
 
-Network In Network(精读)
+参考：
 
-http://blog.csdn.net/zhufenghao/article/details/52526611
+http://www.cnblogs.com/tornadomeet/p/3432093.html
 
-Network In Network
+Stochastic Pooling简单理解
 
-http://www.cnblogs.com/dmzhuo/p/5868346.html
+# Batch Normalization
 
-读论文“Network in Network”——ICLR 2014
+在《深度学习（二）》中，我们已经简单的介绍了Batch Normalization的基本概念。这里主要讲述一下它的实现细节。
 
+我们知道在神经网络训练开始前，都要对输入数据做一个归一化处理，那么具体为什么需要归一化呢？归一化后有什么好处呢？
 
+原因在于神经网络学习过程本质就是为了学习数据分布，一旦训练数据与测试数据的分布不同，那么网络的泛化能力也大大降低；另外一方面，一旦每批训练数据的分布各不相同(batch梯度下降)，那么网络就要在每次迭代都去学习适应不同的分布，这样将会大大降低网络的训练速度，这也正是为什么我们需要对数据都要做一个归一化预处理的原因。
+
+对输入数据归一化，早就是一种基本操作了。然而这样只对神经网络的输入层有效。更好的办法是对每一层都进行归一化。
+
+然而简单的归一化，会破坏神经网络的特征。（归一化是线性操作，但神经网络本身是非线性的，不具备线性不变性。）因此，如何归一化，实际上是个很有技巧的事情。
+
+首先，我们回顾一下归一化的一般做法：
+
+$$\hat x^{(k)} = \frac{x^{(k)} - E[x^{(k)}]}{\sqrt{Var[x^{(k)}]}}$$
+
+其中，$$x = (x^{(0)},x^{(1)},…x^{(d)})$$表示d维的输入向量。
+
+接着，定义归一化变换函数：
+
+$$y^{(k)}=\gamma^{(k)}\hat x^{(k)}+\beta^{(k)}$$
+
+这里的$$\gamma^{(k)},\beta^{(k)}$$是待学习的参数。
+
+BN的主要思想是用同一batch的样本分布来近似整体的样本分布。显然，batch size越大，这种近似也就越准确。
+
+用$$\mathcal{B}=\{x_{1,\dots,m}\}$$表示batch，则BN的计算过程如下：
+
+1.计算mini-batch mean。
+
+$$\mu_\mathcal{B}\leftarrow \frac{1}{m}\sum_{i=1}^mx_i$$
+
+2.计算mini-batch variance。
+
+$$\sigma_\mathcal{B}^2\leftarrow \frac{1}{m}\sum_{i=1}^m(x_i-\mu_\mathcal{B})^2$$
+
+3.normalize。
+
+$$\hat x_i\leftarrow \frac{x_i-\mu_\mathcal{B}}{\sqrt{\sigma_\mathcal{B}^2+\epsilon}}$$
+
+这里的$$\epsilon$$是为了数值的稳定性而添加的常数。
+
+4.scale and shift。
+
+$$y_i=\gamma\hat x_i+\beta\equiv BN_{\gamma,\beta}(x_i)$$
+
+在实际使用中，BN计算和卷积计算一样，都被当作神经网络的其中一层。即：
+
+$$z=g(Wu+b)\rightarrow z=g(BN(Wu+b))=g(BN(Wu))$$
+
+从另一个角度来看，BN的均值、方差操作，相当于去除一阶和二阶信息，而只保留网络的高阶信息，即非线性部分。因此，上式最后一步中b被忽略，也就不难理解了。
+
+BN的误差反向算法相对复杂，这里不再赘述。
+
+# Softmax详解
+
+首先给出Softmax function的定义:
+
+$$y_c=\zeta(\textbf{z})_c = \dfrac{e^{z_c}}{\sum_{d=1}^C{e^{z_d}}} \text{  for } c=1, \dots, C$$
+
+从中可以很容易的发现，如果$$z_c$$的值过大，朴素的直接计算会上溢出或下溢出。
+
+解决办法：
+
+$$z_c\leftarrow z_c-a,a=\max\{z_1,\dots,z_C\}$$
+
+证明：
+
+$$\zeta(\textbf{z-a})_c = \dfrac{e^{z_c}\cdot e^{-a}}{\sum_{d=1}^C{e^{z_d}\cdot e^{-a}}} = \dfrac{e^{z_c}}{\sum_{d=1}^C{e^{z_d}}} = \zeta(\textbf{z})_c$$
+
+Softmax的损失函数是cross entropy loss function：
+
+$$\xi(X, Y) = \sum_{i=1}^n \xi(\textbf{t}_i, \textbf{y}_i) = - \sum_{i=1}^n \sum_{i=c}^C t_{ic} \cdot \log(y_{ic})$$
+
+Softmax的反向传播算法：
+
+$$\begin{align}
+\dfrac{\partial\xi}{\partial z_i} &= - \sum_{j=1}^C \dfrac{\partial t_j \log(y_j)}{\partial z_i} \\
+&= - \sum_{j=1}^C t_j \dfrac{\partial \log(y_j)}{\partial z_i} \\
+&= - \sum_{j=1}^C t_j \dfrac{1}{y_j} \dfrac{\partial y_j}{\partial z_i} \\
+&= - \dfrac{t_i}{y_i} \dfrac{\partial y_i}{\partial z_i} - \sum_{j \neq i}^C \dfrac{t_j}{y_j} \dfrac{\partial y_j}{\partial z_i} \\
+&= - \dfrac{t_i}{y_i} y_i(1-y_i) - \sum_{j \neq i}^{C} \dfrac{t_j}{y_j}(-y_jy_j) \\
+&= -t_i + t_iy_i + \sum_{j \neq i}^{C} t_jy_i \\
+&= -t_i + \sum_{j=1}^C t_jy_i \\
+&= -t_i + y_i \sum_{j=1}^C t_j \\
+&= y_i - t_i
+\end{align}$$
+
+参考：
+
+https://mp.weixin.qq.com/s/2xYgaeLlmmUfxiHCbCa8dQ
+
+softmax函数计算时候为什么要减去一个最大值？
+
+http://shuokay.com/2016/07/20/softmax-loss/
+
+Softmax 输出及其反向传播推导
 
 

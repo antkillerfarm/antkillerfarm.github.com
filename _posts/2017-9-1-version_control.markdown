@@ -134,5 +134,30 @@ https://mp.weixin.qq.com/s/3URLEdhB8hs0XXekKbvsnw
 
 使用TensorFlow在卷积神经网络上实现L2约束的softmax损失函数
 
+https://mp.weixin.qq.com/s/dgLJrn3omUKMqmqTIEcoyg
+
+Tensorflow实现DDPG
+
+https://mp.weixin.qq.com/s/FdPrRQr0LukcWh7B703MlQ
+
+利用tf.gradients在TensorFlow中实现梯度下降
+
+# NLP参考资源
+
+https://mp.weixin.qq.com/s/GyE9qdXPGvrq12dMAf4nrQ
+
+论文推荐：QA，增强学习，知识图谱，机器阅读理解
+
+https://mp.weixin.qq.com/s/eCtqMIo3_UDxAR4fWzMjZQ
+
+站在锤子手机背后，小源科技用AI打造短信场景服务
+
+https://mp.weixin.qq.com/s/hkcVhyqiDW--F3QxucgEcA
+
+亚马逊开源神经机器翻译框架Sockeye：基于Apache MXNet的NMT平台
+
+https://mp.weixin.qq.com/s/vgejlnsBlOKMMRt-M3-d-w
+
+深思考：实现人机多轮交互突破是攻克图灵测试的核心
 
 

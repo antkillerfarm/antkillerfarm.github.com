@@ -180,6 +180,12 @@ http://blog.csdn.net/javafreely/article/details/71994247
 
 **关键点检测**：检测物体上一组预定义关键点的位置，例如人体上或者人脸上的关键点。数据集：COCO
 
+参考：
+
+https://mp.weixin.qq.com/s/nK__d-PV6DY5mDfA_UgDmQ
+
+全解：目标检测，图像分类、分割、生成……
+
 ## CNN简史
 
 ![](/images/article/computer_vision_3.jpg)
@@ -222,6 +228,10 @@ AlexNet作为第一个现代意义上的CNN，它的意义主要包括：
 
 Visual Geometry Group是牛津大学的一个科研团队。他们推出的一系列深度模型，被称作VGG模型。
 
+代码：
+
+http://www.robots.ox.ac.uk/~vgg/research/very_deep/
+
 VGG的结构图如下：
 
 ![](/images/article/vgg.png)
@@ -251,6 +261,10 @@ GoogleNet的进化道路和VGG有所不同。VGG实际上就是“大力出奇�
 论文：
 
 《Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning》
+
+代码：
+
+https://github.com/BVLC/caffe/tree/master/models/bvlc_googlenet
 
 Inception系列的改进方向基本都集中在构建不同的Inception模型上。
 

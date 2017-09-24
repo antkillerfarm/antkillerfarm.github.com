@@ -132,5 +132,6 @@ https://mp.weixin.qq.com/s/SKZhcd3QpoVMubTkD14iWw
 
 Fashion-MNIST：替代MNIST手写数字集的图像数据集
 
+http://www.cvlibs.net/datasets/kitti/
 
-
+KITTI Vision Benchmark Suite：一个自动驾驶方面的数据库。包括GPS、雷达、摄像头等数据。

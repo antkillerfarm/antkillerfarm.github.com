@@ -292,6 +292,22 @@ https://mp.weixin.qq.com/s/0V8B-u5_bRM5Fu9oOAYjqw
 
 清华大学：通过在单纯形上软门限投影的加速随机贪心坐标下降
 
+https://mp.weixin.qq.com/s/fXlbB7KmiX0iIv6xwSxNIA
+
+梯度下降法的三种形式BGD、SGD以及MBGD
+
+https://mp.weixin.qq.com/s/R_0_E5Ieaj9KiWgg1prxeg
+
+为什么梯度的方向与等高线切线方向垂直？
+
+https://mp.weixin.qq.com/s/LuuvvL9yZ3ucXxRq0pZfsg
+
+优化策略：Label Smoothing Regularization_LSR原理分析
+
+https://zhuanlan.zhihu.com/p/23866364
+
+从梯度下降到Hessian-Free优化
+
 # 单分类SVM&多分类SVM
 
 原始的SVM主要用于二分类，然而稍加变化，也可用于单分类和多分类。

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（五）——神经元激活函数进阶, DRN, Bi-directional RNN
+title:  深度学习（五）——LSTM, 神经元激活函数进阶, DRN, Bi-directional RNN
 category: theory 
 ---
 

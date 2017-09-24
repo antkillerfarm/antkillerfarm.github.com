@@ -158,6 +158,34 @@ TuShare是一个免费、开源的python财经数据接口包。主要实现对�
 
 http://tushare.org/
 
+## skimage
+
+skimage相当于python版本的OpenCV。
+
+官网：
+
+http://scikit-image.org/
+
+参考：
+
+https://buptldy.github.io/2016/03/31/2016-03-31-Skimage%20hog/
+
+Compute the HOG descriptor by skimage
+
+## Numba
+
+NumPy的一个高速版本，能完成前者大部分的功能。
+
+官网：
+
+http://numba.pydata.org/
+
+参考：
+
+https://mp.weixin.qq.com/s/5peMiGXNnviAjMP76tV3pw
+
+Python高性能计算库——Numba
+
 ## 参考
 
 https://github.com/neozhaoliang/pywonderland/tree/master/
@@ -264,7 +292,12 @@ https://mp.weixin.qq.com/s/UOJsoB_YwBunj0YNShF11w
 
 深度学习 + OpenCV，Python实现实时视频目标检测
 
-https://mp.weixin.qq.com/s/5peMiGXNnviAjMP76tV3pw
+https://mp.weixin.qq.com/s/YCNnfR9XAP0i-Qs-DIpOCg
 
-Python高性能计算库——Numba
+6段Python代码刻画深度学习历史：从最小二乘法到深度神经网络
+
+https://mp.weixin.qq.com/s/a7TLJD1-k3AlJ_ENPoJpwA
+
+用Python分析《红楼梦》，后四十回是曹雪芹所写吗？
+
 

@@ -260,6 +260,14 @@ http://web.cecs.pdx.edu/~mperkows/temp/May22/0020.Matrix-multiplication-systolic
 
 矩阵乘法器原理
 
+http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
+
+《Large Scale Distributed Deep Networks》中译文
+
+https://mp.weixin.qq.com/s/ASqpPSIgW_bcFPBfRYz7Xg
+
+哈佛大学提出在云、边缘与终端设备上的分布式深度神经网络DDNN
+
 ## Other
 
 http://cs.stanford.edu/people/karpathy/convnetjs/demo/classify2d.html
@@ -326,14 +334,6 @@ https://mp.weixin.qq.com/s/bGbslnuG80S6gPwD4FHuMg
 
 深度学习助力前端开发：自动生成GUI图代码
 
-https://mp.weixin.qq.com/s/eCtqMIo3_UDxAR4fWzMjZQ
-
-站在锤子手机背后，小源科技用AI打造短信场景服务
-
-http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
-
-《Large Scale Distributed Deep Networks》中译文
-
 https://mp.weixin.qq.com/s/PKqDlbKynnCLE6JAy0NuQQ
 
 谷歌深度学习公开课任务 1: notMNIST
@@ -385,6 +385,30 @@ https://mp.weixin.qq.com/s/W4zwKqkVQN4v-IKzGrkudg
 http://mp.weixin.qq.com/s/LAgDobWyK0SOH08GCLXG7A
 
 减少30%流量，增加清晰度：MIT提出人工智能视频缓存新算法
+
+http://mp.weixin.qq.com/s/SNfSY4CKhX1RDWd4itPx2Q
+
+马里兰大学论文：训练深度神经网络中的一致性难题
+
+https://mp.weixin.qq.com/s/ViQqeER1NXtJOtnLg76TWg
+
+关于远程监督，我们来推荐几篇值得读的论文
+
+https://mp.weixin.qq.com/s/z1APyCxlOEPHn48OeJAHkQ
+
+基于深度学习的视频内容识别
+
+https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
+
+谷歌提出多图像抠图算法，并弥补水印技术的一致性漏洞
+
+https://zhuanlan.zhihu.com/p/28639662
+
+百家争鸣的Meta Learning/Learning to learn
+
+https://mp.weixin.qq.com/s/kMTMjlLgcR24DT7CXvezsA
+
+深度学习概念、架构和tensorflow的思维导图！
 
 
 
