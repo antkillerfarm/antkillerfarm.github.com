@@ -168,7 +168,21 @@ YOLO有一些缺陷：每个网格只预测一个物体，容易造成漏检；�
 
 1.采用VGG16的基础网络结构，使用前面的前5层。
 
-2.
+2.使用Dilated convolution将fc6和fc7层转化成两个卷积层。
+
+3.再额外增加了3个卷积层，和一个average pool层。不同层次的feature map分别用于default box的偏移以及不同类别得分的预测。
+
+4.通过NMS得到最终的检测结果。
+
+这些增加的卷积层的feature map的大小变化比较大，允许能够检测出不同尺度下的物体：在低层的feature map，感受野比较小，高层的感受野比较大，在不同的feature map进行卷积，可以达到多尺度的目的。
+
+![](/images/article/ssd_2.png)
+
+上图是从另一个角度观察SSD，可以看出SSD可检出8372个候选box。
+
+![](/images/article/ssd_3.png)
+
+和YOLO一样，卷积层的每个点都是一个vector，含义也和YOLO类似，只是分类的时候，多了一个背景的类别，所以就成了20+1类。
 
 参考：
 

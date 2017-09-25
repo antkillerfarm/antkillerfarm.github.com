@@ -46,6 +46,10 @@ https://mp.weixin.qq.com/s/J8ZmIVKd-4X3hMGGIJWoDQ
 
 一文看懂迁移学习：从基础概念到技术研究！
 
+https://mp.weixin.qq.com/s/qYoTgqwjaUlEycuk9LlonA
+
+迁移学习：6张图像vs13000张图像，超越2013 Kaggle猫狗识别竞赛领先水平
+
 # 语音识别
 
 Connectionist Temporal Classification，是一种改进的RNN模型。它主要解决的是时序模型中，输入数大于输出数，输入输出如何对齐的问题。

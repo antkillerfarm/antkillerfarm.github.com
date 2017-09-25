@@ -122,14 +122,6 @@ http://mp.weixin.qq.com/s/idz6b2rls97W4Iw6J-ubng
 
 美团点评SQL优化工具SQLAdvisor开源
 
-http://v.kuaidadi.com/
-
-滴滴快的大数据平台
-
-http://mp.weixin.qq.com/s/Bk5k6vRG4Rq4iCtmtYDEGQ
-
-Leaf——美团点评分布式ID生成系统
-
 https://commons.wikimedia.org/wiki/Main_Page
 
 一个图片资源站点
@@ -158,26 +150,6 @@ https://mp.weixin.qq.com/s/6gX1UFSykuzw358ARUzifw
 
 张溪梦：14年数据分析经历，我总结为这三点“道、术、器”
 
-https://mp.weixin.qq.com/s/NF1tQaOTFklGM5U9kQ7yKA
-
-终于把区块链的技术与应用讲清楚了
-
-https://mp.weixin.qq.com/s/GXGSDxukbIAM5W-YSX0pDg
-
-美团点评数据库高可用架构的演进与设想
-
-https://mp.weixin.qq.com/s/HJ6uZEYOQFvgR5bZBs5_dA
-
-全球100款大数据工具汇总
-
-https://mp.weixin.qq.com/s/0ek_bGUZ2EbYEX-kq3YByg
-
-大数据：目前99%数据是无用僵尸数据，90%的数据产品是伪需求！
-
-https://mp.weixin.qq.com/s/kPmvBCcS0O-jTgE_VAysug
-
-人工智能在线特征系统中的数据存取技术
-
 https://mp.weixin.qq.com/s/YNMw8u7O6u7Bc4-mnrwRXg
 
 老听别人说加密算法，现在给你个机会深入了解下
@@ -202,57 +174,13 @@ https://zhuanlan.zhihu.com/p/27925292
 
 潜伏、破局与变革：人脸识别技术国内机场发展简史
 
-https://mp.weixin.qq.com/s/sVeKBTytHdGa3zZ-He9Mpw
-
-AI工程师为什么要了解架构？
-
-https://mp.weixin.qq.com/s/GR2DmDt6ZFeUU4s_DP2FGg
-
-如何将云计算云趋势讲清楚
-
-https://mp.weixin.qq.com/s/S1_zB-BOAp387JvI8W-VrA
-
-想要双11抢单快？靠这个技术提速9MS
-
 https://zhuanlan.zhihu.com/p/27971065
 
 关于多正则匹配
 
-https://mp.weixin.qq.com/s/vJX6ZoDKe2GfADZtEDVoiw
-
-同程旅游实时计算的演进
-
-https://mp.weixin.qq.com/s/D_-v3OR4GYXa3coOzjHYmw
-
-TechFin趋势下如何应对超大规模实时分布式关系网络
-
 http://blog.csdn.net/u013709270/article/details/53470428
 
 跳跃表的原理及实现
-
-https://mp.weixin.qq.com/s/JgC0FvN1bue6ctxfWB6IfQ
-
-教你从0到1打造轻量级图像识别服务框架！
-
-https://mp.weixin.qq.com/s/HNH5DPp55A9thV7lPzQolA
-
-中国移动一级业务支撑系统网状网PaaS之路
-
-https://mp.weixin.qq.com/s/zuTgPlNSUpUBp8eZUFMbPA
-
-OpenStack的架构详解
-
-https://mp.weixin.qq.com/s/Q_YfMcmI6W4lQFpGxpV_aQ
-
-以云计算为名之微软生死战略大逃亡
-
-https://mp.weixin.qq.com/s/oDRH0GJIy3pyN4AypvBOEw
-
-架构师是如何炼成的？以天猫APP架构&开发模式升级工程为例
-
-https://mp.weixin.qq.com/s/5gUm_xNkHGxpnUSgZaLmJw
-
-关于大数据，你应该知道的75个专业术语
 
 https://mp.weixin.qq.com/s/gyuKlDwlIqaZmC3w-r8oqg
 
@@ -278,21 +206,9 @@ https://mp.weixin.qq.com/s/WZyuTtEfaTFLnCfvhOrp7g
 
 虚拟化原理和分类
 
-https://mp.weixin.qq.com/s/NqLpT47ZWD6oJzfo_tWceA
-
-Paxos（分布式一致性算法）
-
-https://mp.weixin.qq.com/s/FoRiGINPsMu1FKa7MvMvoQ
-
-全球100款大数据工具汇总，入行必备
-
 https://mp.weixin.qq.com/s/Y7qZlJdJ8fav5BXFGwdSOQ
 
 Graph Analysis and Its Application
-
-https://mp.weixin.qq.com/s/z3N5v4H_W2sxh2XPpFbAcA
-
-云端的SRE发展与实践
 
 https://mp.weixin.qq.com/s/2_zdY4NoOPXq75H1A15R8w
 
@@ -306,25 +222,13 @@ https://mp.weixin.qq.com/s/sCJFFZm-soWAt8kDyYulPQ
 
 99%留学生都不知道的Paper写作神器，Google从此是路人
 
-https://mp.weixin.qq.com/s/eNiD18IPbhdmrL_nuMjqCQ
-
-拍立淘技术框架及核心算法，日均UV超千万
-
 https://mp.weixin.qq.com/s/4lZ7My6cs4-VJQ1qGhQxZg
 
 AliSQL X-Cluste：基于X-Paxos的高性能强一致MySQL数据库
 
-https://mp.weixin.qq.com/s/Zp3ULgogMNVoqw6EO_KoBA
-
-高性能分布式PaaS平台基本原理
-
 https://mp.weixin.qq.com/s/EcAAc_ypajEKXUQbOoYAMA
 
 如何选择IR filter
-
-https://mp.weixin.qq.com/s/LMz6ru3nyld7fnDLcQOepg
-
-如何搭建大规模机器学习平台？以阿里和蚂蚁的多个实际场景为例
 
 https://mp.weixin.qq.com/s/5rNpp2cYZhcOKZCiy4LkMQ
 
@@ -338,10 +242,6 @@ https://mp.weixin.qq.com/s/yR_wENRSbxvfrcYr9O9BuQ
 
 23个Python爬虫开源项目代码：爬取微信、淘宝、豆瓣、知乎、微博等
 
-https://mp.weixin.qq.com/s/Ga13C1gTSk1adYgcBeJfwA
-
-一拍脑袋就要用MapReduce？你以为你是Google啊
-
 https://mp.weixin.qq.com/s/OtVRL37CNt_d5yEJPzzBzg
 
 一个由正则表达式引发的血案
@@ -349,10 +249,6 @@ https://mp.weixin.qq.com/s/OtVRL37CNt_d5yEJPzzBzg
 https://mp.weixin.qq.com/s/oddiCH7TCUBn8CkIYdaNZA
 
 08年江泽民就提出：机器学习会有所做为，加大GPU技术研究，SaaS是软件转型机遇
-
-https://mp.weixin.qq.com/s/QpTsZr2d_tW6X7j7Ksf3yQ
-
-行进中换轮胎——万字长文解析美团和大众点评两大数据平台是怎么融合的
 
 https://mp.weixin.qq.com/s/JeqjD5NYGyG17o5csfzp7w
 
@@ -366,38 +262,6 @@ https://mp.weixin.qq.com/s/INlW41lJWWjfAHJAnnfB8A
 
 程序员不能错过的28份技术知识图谱，你的进阶路上必备
 
-https://mp.weixin.qq.com/s/VRvPHc3v824tZ1kednFZ9Q
-
-阿里政务云技术架构探讨
-
-https://mp.weixin.qq.com/s/y_F6ZoqTY58xl0OnvaVpnw
-
-大规模机器学习框架的四重境界
-
-https://mp.weixin.qq.com/s/9BRrkSwba9IM62gMwzIuDQ
-
-大数据相关试题
-
-http://mp.weixin.qq.com/s/ETbHjXLJIeaWo-XIHHtMkQ
-
-大数据告诉你：逃离北上广，他们都去了哪里？
-
-http://www.chinacloud.cn/show.aspx?id=24053&cid=22
-
-区块链与大数据究竟有着怎样的关系？
-
-http://www.msra.cn/zh-cn/news/features/blockchain-20161213
-
-一文读懂区块链上的隐私与监管问题
-
-http://www.jizhuomi.com/internet/346.html
-
-比特史记--建国录
-
-https://mp.weixin.qq.com/s/l56o316HJL9__DmUAKoHTg
-
-结构化存储云HBase技术架构及最佳实践
-
 https://www.zhihu.com/question/30022694/answer/224543003
 
 田渊栋：作为入行数年的专业科研工作者，你每周看几篇paper？
@@ -410,17 +274,9 @@ https://mp.weixin.qq.com/s/T7bVFQqzTbZJ7GuQDiNwoA
 
 人工智能在iOS开发上的应用和机会
 
-https://mp.weixin.qq.com/s/qopknJ8l93aJ8iUGzsFhMQ
-
-以太坊是什么鬼？！媲美比特币的加密币大揭秘
-
 https://mp.weixin.qq.com/s/tIau6pRZU0r4Aasofca5yQ
 
 50张动图带你走进神奇的物理化学生物世界，超震撼！
-
-https://mp.weixin.qq.com/s/ORZ4MrCPgta8Oeg-ns8cQQ
-
-人工智能在线特征系统中的生产调度
 
 https://mp.weixin.qq.com/s/v_BsfSFp-LwiCOFKaMIS_g
 
@@ -447,5 +303,153 @@ ftp://mirrors.ustc.edu.cn/gnu/
 GNOME
 
 http://ftp.gnome.org/pub/GNOME/sources/
+
+## 大数据平台
+
+http://v.kuaidadi.com/
+
+滴滴快的大数据平台
+
+http://mp.weixin.qq.com/s/Bk5k6vRG4Rq4iCtmtYDEGQ
+
+Leaf——美团点评分布式ID生成系统
+
+https://mp.weixin.qq.com/s/GXGSDxukbIAM5W-YSX0pDg
+
+美团点评数据库高可用架构的演进与设想
+
+https://mp.weixin.qq.com/s/HJ6uZEYOQFvgR5bZBs5_dA
+
+全球100款大数据工具汇总
+
+https://mp.weixin.qq.com/s/0ek_bGUZ2EbYEX-kq3YByg
+
+大数据：目前99%数据是无用僵尸数据，90%的数据产品是伪需求！
+
+https://mp.weixin.qq.com/s/kPmvBCcS0O-jTgE_VAysug
+
+人工智能在线特征系统中的数据存取技术
+
+https://mp.weixin.qq.com/s/sVeKBTytHdGa3zZ-He9Mpw
+
+AI工程师为什么要了解架构？
+
+https://mp.weixin.qq.com/s/GR2DmDt6ZFeUU4s_DP2FGg
+
+如何将云计算云趋势讲清楚
+
+https://mp.weixin.qq.com/s/S1_zB-BOAp387JvI8W-VrA
+
+想要双11抢单快？靠这个技术提速9MS
+
+https://mp.weixin.qq.com/s/vJX6ZoDKe2GfADZtEDVoiw
+
+同程旅游实时计算的演进
+
+https://mp.weixin.qq.com/s/D_-v3OR4GYXa3coOzjHYmw
+
+TechFin趋势下如何应对超大规模实时分布式关系网络
+
+https://mp.weixin.qq.com/s/JgC0FvN1bue6ctxfWB6IfQ
+
+教你从0到1打造轻量级图像识别服务框架！
+
+https://mp.weixin.qq.com/s/HNH5DPp55A9thV7lPzQolA
+
+中国移动一级业务支撑系统网状网PaaS之路
+
+https://mp.weixin.qq.com/s/zuTgPlNSUpUBp8eZUFMbPA
+
+OpenStack的架构详解
+
+https://mp.weixin.qq.com/s/Q_YfMcmI6W4lQFpGxpV_aQ
+
+以云计算为名之微软生死战略大逃亡
+
+https://mp.weixin.qq.com/s/oDRH0GJIy3pyN4AypvBOEw
+
+架构师是如何炼成的？以天猫APP架构&开发模式升级工程为例
+
+https://mp.weixin.qq.com/s/5gUm_xNkHGxpnUSgZaLmJw
+
+关于大数据，你应该知道的75个专业术语
+
+https://mp.weixin.qq.com/s/NqLpT47ZWD6oJzfo_tWceA
+
+Paxos（分布式一致性算法）
+
+https://mp.weixin.qq.com/s/z3N5v4H_W2sxh2XPpFbAcA
+
+云端的SRE发展与实践
+
+https://mp.weixin.qq.com/s/eNiD18IPbhdmrL_nuMjqCQ
+
+拍立淘技术框架及核心算法，日均UV超千万
+
+https://mp.weixin.qq.com/s/Zp3ULgogMNVoqw6EO_KoBA
+
+高性能分布式PaaS平台基本原理
+
+https://mp.weixin.qq.com/s/LMz6ru3nyld7fnDLcQOepg
+
+如何搭建大规模机器学习平台？以阿里和蚂蚁的多个实际场景为例
+
+https://mp.weixin.qq.com/s/Ga13C1gTSk1adYgcBeJfwA
+
+一拍脑袋就要用MapReduce？你以为你是Google啊
+
+https://mp.weixin.qq.com/s/QpTsZr2d_tW6X7j7Ksf3yQ
+
+行进中换轮胎——万字长文解析美团和大众点评两大数据平台是怎么融合的
+
+https://mp.weixin.qq.com/s/VRvPHc3v824tZ1kednFZ9Q
+
+阿里政务云技术架构探讨
+
+https://mp.weixin.qq.com/s/y_F6ZoqTY58xl0OnvaVpnw
+
+大规模机器学习框架的四重境界
+
+https://mp.weixin.qq.com/s/9BRrkSwba9IM62gMwzIuDQ
+
+大数据相关试题
+
+http://mp.weixin.qq.com/s/ETbHjXLJIeaWo-XIHHtMkQ
+
+大数据告诉你：逃离北上广，他们都去了哪里？
+
+https://mp.weixin.qq.com/s/l56o316HJL9__DmUAKoHTg
+
+结构化存储云HBase技术架构及最佳实践
+
+https://mp.weixin.qq.com/s/ORZ4MrCPgta8Oeg-ns8cQQ
+
+人工智能在线特征系统中的生产调度
+
+## 区块链
+
+https://mp.weixin.qq.com/s/NF1tQaOTFklGM5U9kQ7yKA
+
+终于把区块链的技术与应用讲清楚了
+
+http://www.chinacloud.cn/show.aspx?id=24053&cid=22
+
+区块链与大数据究竟有着怎样的关系？
+
+http://www.msra.cn/zh-cn/news/features/blockchain-20161213
+
+一文读懂区块链上的隐私与监管问题
+
+http://www.jizhuomi.com/internet/346.html
+
+比特史记--建国录
+
+https://mp.weixin.qq.com/s/HCF5rtAuhPuw789r6yMPIg
+
+当人工智能遇到区块链，是惊鸿一瞥还是天长地久？
+
+https://mp.weixin.qq.com/s/qopknJ8l93aJ8iUGzsFhMQ
+
+以太坊是什么鬼？！媲美比特币的加密币大揭秘
 
 

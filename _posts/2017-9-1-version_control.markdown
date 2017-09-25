@@ -160,4 +160,12 @@ https://mp.weixin.qq.com/s/vgejlnsBlOKMMRt-M3-d-w
 
 深思考：实现人机多轮交互突破是攻克图灵测试的核心
 
+https://mp.weixin.qq.com/s/0wMTL7x87YXiin3xkf8eJA
+
+中文文本分类技术实践与分享
+
+https://mp.weixin.qq.com/s/27Mbw2ViT8eJPJasD6tdfw
+
+神经混合模型：提升模型性能，显著降低困惑度
+
 

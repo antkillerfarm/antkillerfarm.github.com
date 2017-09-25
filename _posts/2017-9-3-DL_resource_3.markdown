@@ -374,3 +374,8 @@ https://mp.weixin.qq.com/s/0KaSWHi8r9kSXxlwswIY5g
 
 乔宇：深度模型让机器理解场景
 
+https://mp.weixin.qq.com/s/shBHKh2emSIL5uWV7po8cw
+
+梅涛：“看图说话”
+
+

@@ -114,7 +114,11 @@ https://zhuanlan.zhihu.com/p/29246185
 
 重现DeepMind星际争霸强化学习算法
 
-## TPU & GPU & 并行
+https://mp.weixin.qq.com/s/SAp0alFSLKN1CHX0_vdTjg
+
+扑克AI对抗人类30年历史，解密冷扑大师前世今生
+
+## TPU & GPU
 
 https://zhuanlan.zhihu.com/p/25382177
 
@@ -148,33 +152,13 @@ https://mp.weixin.qq.com/s/zTO4UZ3zDLZL0GOjv0YqrQ
 
 GPU加速深度学习
 
-https://mp.weixin.qq.com/s/IE6blClvhYlq3-QAGHo5ww
-
-TensorFlow分布式计算机制解读：以数据并行为重
-
-http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks
-
-神经网络的分布式训练
-
 https://mp.weixin.qq.com/s/7vxJTh4IHeqUsc7IsLFLSA
 
 解密哈萨比斯投资的IPU，他们要分英伟达一杯羹
 
-https://mp.weixin.qq.com/s/B4aQp_0YvS0jyUHNLQ5rRA
-
-IBM发布新型分布式深度学习系统：结合软硬件实现当前最优性能
-
-https://zhuanlan.zhihu.com/p/28445511
-
-浅析深度学习框架设计中的关键技术
-
 https://zhuanlan.zhihu.com/p/26594188
 
 浅析Yann LeCun提到的两款Dataflow Chip
-
-https://zhuanlan.zhihu.com/p/26552293
-
-Dataflow架构和神经网络加速器
 
 https://zhuanlan.zhihu.com/p/25728988
 
@@ -200,6 +184,60 @@ https://mp.weixin.qq.com/s/RKRDBiBzG5u2P2eaqNAFbg
 
 机器学习的处理器列表
 
+https://mp.weixin.qq.com/s/bL1PoUjZ_sH2VKcBxI6N5A
+
+Wave公司发布数据流处理架构DPU
+
+https://mp.weixin.qq.com/s/1r7G84les7FihqPbSiS0Ng
+
+华为首款手机端AI芯片麒麟970
+
+https://mp.weixin.qq.com/s/8RDHTn6P63otKXUdrHhbjw
+
+一文看懂AI芯片产业生态及竞争格局
+
+https://mp.weixin.qq.com/s/y9dVg9YtfWxu6NcW-fxi6Q
+
+内存带宽与计算能力，谁才是决定深度学习执行性能的关键？
+
+https://mp.weixin.qq.com/s/K_dohaZbCISZlxe1Utu50w
+
+如何用FPGA加速卷积神经网络(CNN)？
+
+https://mp.weixin.qq.com/s/kPrZ0PuevXEJjVB7RXs70g
+
+谷歌TPU率队，颠覆3350亿美元的半导体行业
+
+http://web.cecs.pdx.edu/~mperkows/temp/May22/0020.Matrix-multiplication-systolic.pdf
+
+矩阵乘法器原理
+
+https://mp.weixin.qq.com/s/z68hk1yqg60QCjgTyzgG2w
+
+GPU深度学习的“加速神器” 
+
+## 并行 & 框架
+
+https://zhuanlan.zhihu.com/p/26552293
+
+Dataflow架构和神经网络加速器
+
+https://zhuanlan.zhihu.com/p/28445511
+
+浅析深度学习框架设计中的关键技术
+
+https://mp.weixin.qq.com/s/B4aQp_0YvS0jyUHNLQ5rRA
+
+IBM发布新型分布式深度学习系统：结合软硬件实现当前最优性能
+
+http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks
+
+神经网络的分布式训练
+
+https://mp.weixin.qq.com/s/IE6blClvhYlq3-QAGHo5ww
+
+TensorFlow分布式计算机制解读：以数据并行为重
+
 https://mp.weixin.qq.com/s/7JGLm-hkCZBNDLA98qvWNA
 
 自动生成硬件优化内核：陈天奇等人发布深度学习编译器TVM
@@ -220,53 +258,25 @@ https://mp.weixin.qq.com/s/OkqUulFYHQSdgAbf9Fi9LA
 
 CoCoA：大规模机器学习的分布式优化通用框架
 
-https://mp.weixin.qq.com/s/bL1PoUjZ_sH2VKcBxI6N5A
+https://mp.weixin.qq.com/s/jjT0x99ht8xtfWmzL-0R1A
 
-Wave公司发布数据流处理架构DPU
-
-https://mp.weixin.qq.com/s/1r7G84les7FihqPbSiS0Ng
-
-华为首款手机端AI芯片麒麟970
-
-https://mp.weixin.qq.com/s/8RDHTn6P63otKXUdrHhbjw
-
-一文看懂AI芯片产业生态及竞争格局
-
-https://mp.weixin.qq.com/s/y9dVg9YtfWxu6NcW-fxi6Q
-
-内存带宽与计算能力，谁才是决定深度学习执行性能的关键？
+深度学习的IR“之争”
 
 https://mp.weixin.qq.com/s/ToIDncp9dS_qk47PsdZm5A
 
 杜克大学：分布式深度学习训练算法TernGrad
 
-https://mp.weixin.qq.com/s/jjT0x99ht8xtfWmzL-0R1A
-
-深度学习的IR“之争”
-
-https://mp.weixin.qq.com/s/K_dohaZbCISZlxe1Utu50w
-
-如何用FPGA加速卷积神经网络(CNN)？
-
-https://mp.weixin.qq.com/s/kPrZ0PuevXEJjVB7RXs70g
-
-谷歌TPU率队，颠覆3350亿美元的半导体行业
-
 https://mp.weixin.qq.com/s/rhtrN2qDspGkpJYDAVSX7w
 
 UC Berkeley展示全新并行处理方法
 
-http://web.cecs.pdx.edu/~mperkows/temp/May22/0020.Matrix-multiplication-systolic.pdf
+https://mp.weixin.qq.com/s/ASqpPSIgW_bcFPBfRYz7Xg
 
-矩阵乘法器原理
+哈佛大学提出在云、边缘与终端设备上的分布式深度神经网络DDNN
 
 http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
 
 《Large Scale Distributed Deep Networks》中译文
-
-https://mp.weixin.qq.com/s/ASqpPSIgW_bcFPBfRYz7Xg
-
-哈佛大学提出在云、边缘与终端设备上的分布式深度神经网络DDNN
 
 ## Other
 
