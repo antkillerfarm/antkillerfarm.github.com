@@ -386,6 +386,10 @@ https://mp.weixin.qq.com/s/hRH7hVsaQBqf0vhD_BqBgg
 
 五大深度学习框架三类神经网络全面测评
 
+https://mp.weixin.qq.com/s/9X77MPcQOQPwZaOVIVfo9Q
+
+用PyTorch搭建抽取式摘要系统
+
 ### 量子计算 & 遗传算法
 
 https://www.zhihu.com/question/28171555

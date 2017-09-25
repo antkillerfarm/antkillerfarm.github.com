@@ -62,6 +62,10 @@ http://mp.weixin.qq.com/s/omiyerWFmVPTE5XW6j7txQ
 
 45个回归问题测试题（附答案）
 
+https://mp.weixin.qq.com/s/zQIWye-4Y0u1dfpnolOVjA
+
+看一看你机器学习掌握得怎么样了？
+
 https://mp.weixin.qq.com/s/X-Na57dKQ43LsILR_gX4Sw
 
 考察数据科学家和分析师的41个统计学问题
@@ -385,6 +389,10 @@ https://mp.weixin.qq.com/s/4NDVjCXprHQvcH2Qji_5Rw
 https://mp.weixin.qq.com/s/psMlGLOZcmX-SmEKr2gUOg
 
 从贝叶斯定理到概率分布：综述概率论基本定义
+
+https://mp.weixin.qq.com/s/yGQSihfBDcXgqBnvvpQDog
+
+蒙特卡罗方法入门
 
 # PMML
 

@@ -370,5 +370,7 @@ https://mp.weixin.qq.com/s/9ZQc3RqCCcWYDplZ4RU2oA
 
 清华段路明组发现深度学习和量子物理重要关联
 
+https://mp.weixin.qq.com/s/0KaSWHi8r9kSXxlwswIY5g
 
+乔宇：深度模型让机器理解场景
 

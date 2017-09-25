@@ -300,4 +300,8 @@ https://mp.weixin.qq.com/s/a7TLJD1-k3AlJ_ENPoJpwA
 
 用Python分析《红楼梦》，后四十回是曹雪芹所写吗？
 
+https://mp.weixin.qq.com/s/MUMQuZLDE5iyogLnIIBaMw
+
+7步让你从零开始掌握Python机器学习！
+
 

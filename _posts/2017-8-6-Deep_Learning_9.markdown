@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（九）——目标检测, RCNN
+title:  深度学习（九）——花式卷积, 花式池化, Batch Normalization, Softmax详解
 category: theory 
 ---
 
@@ -26,259 +26,258 @@ category: theory
 
 http://zacklipton.com/
 
-# 目标检测
+# 花式卷积
 
-## 概述
+在DL中，卷积实际上是一大类计算的总称。除了原始的卷积、反卷积（Deconvolution）之外，还有各种各样的花式卷积。
 
-object detection是计算机视觉的一个重要的分支。类似的分支还有目标分割、目标识别和目标跟踪。
+## 卷积在CNN和数学领域中的概念差异
 
-以下摘录自Sensetime CTO曹旭东的解读：
+首先需要明确一点，CNN中的卷积和反卷积，实际上和数学意义上的卷积、反卷积是有差异的。
 
-传统方法使用滑动窗口的框架，把一张图分解成几百万个不同位置不同尺度的子窗口，针对每一个窗口使用分类器判断是否包含目标物体。传统方法针对不同的类别的物体，一般会设计不同的特征和分类算法，比如人脸检测的经典算法是**Harr特征+Adaboosting分类器**；行人检测的经典算法是**HOG(histogram of gradients)+Support Vector Machine**；一般性物体的检测的话是**HOG特征+DPM(deformable part model)的算法**。
+数学上的卷积主要用于傅立叶变换，在计算中有个时域上的反向操作，并不是简单的向量内积运算。在信号处理领域，卷积主要用作**信号的采样**。
 
-基于深度学习的物体检测的经典算法是RCNN系列：RCNN，fast RCNN(Ross Girshick)，faster RCNN(少卿、凯明、孙剑、Ross)。这三个工作的核心思想是分别是：使用更好的CNN模型判断候选区域的类别；复用预计算的sharing feature map加快模型训练和物体检测的速度；进一步使用sharing feature map大幅提高计算候选区域的速度。其实基于深度学习的物体检测也可以看成对海量滑动窗口分类，只是用全卷积的方式。
+数学上的反卷积主要作为卷积的逆运算，相当于**信号的重建**，或者解微分方程。因此，它的难度远远大于卷积运算，常见的有Wiener deconvolution、Richardson–Lucy deconvolution等。
 
-RCNN系列算法还是将物体检测分为两个步骤。现在还有一些工作是端到端(end-to-end)的物体检测，比如说YOLO(You Only Look Once: Unified, Real-Time Object Detection)和SSD(SSD: Single Shot MultiBox Detector)这样的算法。这两个算法号称和faster RCNN精度相似但速度更快。物体检测正负样本极端非均衡，two-stage cascade可以更好的应对非均衡。端到端学习是否可以超越faster RCNN还需要更多研究实验。
+CNN的反卷积就简单多了，它只是误差的反向算法而已。因此，也有人用back convolution, transpose convolution这样更精确的说法，来描述CNN的误差反向算法。
 
-参考：
+## Dilated convolution
 
-https://www.zhihu.com/question/34223049
+![](/images/article/dilation.gif)
 
-从近两年的CVPR会议来看，目标检测的研究方向是怎么样的？
+上图是Dilated convolution的操作。又叫做多孔卷积(atrous convolution)。
 
-https://zhuanlan.zhihu.com/p/21533724
+![](/images/article/no_padding_strides_transposed.gif)
 
-对话CVPR2016：目标检测新进展
+上图是transpose convolution的操作。它和Dilated convolution的差别在于，前者是图像上有洞，而后者是kernel上有洞。
 
-https://mp.weixin.qq.com/s/r9tXvKIN-eqKW_65yFyOew
+和池化相比，Dilated convolution实际上也是一种下采样，只不过采样的位置是固定的，因而能够更好的保持空间结构信息。
 
-谷歌开源TensorFlow Object Detection API
+## 分组卷积
 
-https://mp.weixin.qq.com/s/-PeXMU_gkcT5YnMcLoaKag
+![](/images/article/AlexNet.png)
 
-CVPR清华大学研究，高效视觉目标检测框架RON
+分组卷积最早在AlexNet中出现，由于当时的硬件资源有限，训练AlexNet时卷积操作不能全部放在同一个GPU处理，因此作者把feature maps分给2个GPU分别进行处理，最后把2个GPU的结果进行融合。
 
-https://mp.weixin.qq.com/s/_cOuhToH8KvZldNfraumSQ
+在AlexNet的Group Convolution当中，特征的通道被平均分到不同组里面，最后再通过两个全连接层来融合特征，这样一来，就只能在最后时刻才融合不同组之间的特征，对模型的泛化性是相当不利的。
 
-什么促使了候选目标的有效检测？
+为了解决这个问题，ShuffleNet在每一次层叠这种Group conv层前，都进行一次channel shuffle，shuffle过的通道被分配到不同组当中。进行完一次group conv之后，再一次channel shuffle，然后分到下一层组卷积当中，以此循环。
 
-https://mp.weixin.qq.com/s/LAy1LKGj5HOh_e9jPgvfQw
-
-视觉目标检测和识别之过去，现在及可能
-
-https://mp.weixin.qq.com/s/ZHRP5xnQxex7lQJsCxwblA
-
-深度学习目标检测的主要问题和挑战！
-
-https://mp.weixin.qq.com/s/XorPkuIdhRNI1zGLwg-55A
-
-斯坦福新深度学习系统 NoScope：视频对象检测快1000倍
-
-https://mp.weixin.qq.com/s/XbgmLmlt5X4TX5CP59gyoA
-
-目标检测算法精彩集锦
-
-https://mp.weixin.qq.com/s/BgTc1SE2IzNH27OC2P2CFg
-
-CVPR-I
-
-https://mp.weixin.qq.com/s/qMdnp9ZdlYIja2vNEKuRNQ
-
-CVPR—II
-
-https://mp.weixin.qq.com/s/tc1PsIoF1RN1sx_IFPmtWQ
-
-CVPR—III
-
-https://mp.weixin.qq.com/s/bpCn2nREHzazJYq6B9vMHg
-
-目标识别算法的进展
-
-https://mp.weixin.qq.com/s/YzxaS4KQmpbUSnyOwccn4A
-
-基于深度学习的目标检测技术进展与展望
-
-https://mp.weixin.qq.com/s/JPCQqyzR8xIUyAdk_RI5dA
-
-RCNN, Fast-RCNN, Faster-RCNN那些你必须知道的事！
-
-https://www.zhihu.com/question/35887527
-
-如何评价rcnn、fast-rcnn和faster-rcnn这一系列方法？
-
-http://blog.csdn.net/messiran10/article/details/49132053
-
-Caffe matlab之基于Alex network的特征提取
-
-https://mp.weixin.qq.com/s/YovhKYeGGLqSxxSqMNsbKg
-
-基于深度学习的目标检测学习总结
-
-https://mp.weixin.qq.com/s/nGSaQXm8AczYodtmHD1qNA
-
-深度学习目标检测模型全面综述：Faster R-CNN、R-FCN和SSD
-
-https://mp.weixin.qq.com/s/c2oMJfE95I1ciEtvdTlb4A
-
-完全脱离预训练模型的目标检测方法
-
-## 进化史
-
-DPM(2007)->RCNN(2014)->Fast RCNN->Faster RCNN
-
-![](/images/article/rcnn_2.png)
-
-参考：
-
-http://blog.csdn.net/ttransposition/article/details/12966521
-
-DPM(Deformable Parts Model)--原理
-
-## CV实践的难点
-
-从理论上说，无论是传统CV，还是新近崛起的DL CV，其本质都是通过比对目标图片和训练图片的相似度，从而得到识别的结果。
-
-CV的输入一般是由像素组成的矩阵。相比其他领域的数据挖掘而言，CV的实践难点主要包括：
-
-1.视角的改变。照相机的移动会导致像素矩阵发生平移、旋转等变换。
-
-2.光照影响。同一物体在不同光照条件下的影像有所不同。
-
-3.形变。典型的例子是动物的运动，会导致外观的改变。
-
-4.遮挡。待识别物体通常不是完全可见的。
-
-5.背景。雪地、沙滩等不同场景，会影响物体的识别。
-
-6.同类差异。比如各种猫都是猫，但它们的外观有细微的差异。
-
-![](/images/article/cv_problem.png)
-
-# RCNN
-
-《深度学习（五）》中提到的AlexNet、VGG、GoogleNet主要用于图片分类。而这里介绍的RCNN(Regions with CNN)主要用于目标检测。
-
-## 车牌识别的另一种思路
-
-在介绍RCNN之前，我首先介绍一下2013年的一个车牌识别项目的解决思路。
-
-车牌识别差不多是深度学习应用到CV领域之前，CV领域少数几个达到实用价值的应用之一。国内在2010～2015年前后，有许多公司都做过类似的项目。其产品更是随处可见，很多停车场已经利用该技术，自动识别车辆信息。
-
-车牌识别的难度不高——无论是目标字符集，还是目标字体，都很有限。但也有它的技术难点：
-
-1.计算资源有限。通常就是PC，甚至嵌入式设备，不可能用大规模集群来计算。
-
-2.有实时性的要求，通常处理时间不超过3s。
-
-因此，如何快速的在图片中找到车牌所在区域，就成为了关键问题。
-
-常规的做法，通常是根据颜色、形状找到车牌所在区域，但鲁棒性不佳。后来，有个同事提出了改进方法：
-
-**Step 1**：在整个图片中，基于haar算子，寻找疑似数字的区域。
-
-**Step 2**：将数字聚集的区域设定为疑似车牌所在区域。
-
-**Step 3**：投入更大运算量，以识别车牌上的文字。（这一步是常规做法。）
-
-## RCNN的基本原理
-
-RCNN是Ross Girshick于2014年提出的深度模型。
-
->注：Ross Girshick（网名：rbg），芝加哥大学博士（2012），Facebook研究员。他和何恺明被誉为CV界深度学习的**双子新星**。   
->个人主页：   
->http://www.rossgirshick.info/
+![](/images/article/ShuffleNet.jpg)
 
 论文：
 
-《Rich feature hierarchies for accurate object detection and semantic segmentation》
+《ShuffleNet: An Extremely Efficient Convolutional Neural Network for Mobile Devices》
 
-代码：
-
-https://github.com/rbgirshick/rcnn
-
-RCNN相对传统方法的改进：
-
-**速度**：经典的目标检测算法使用滑动窗法依次判断所有可能的区域。RCNN则(采用Selective Search方法)预先提取一系列较可能是物体的候选区域，之后仅在这些候选区域上(采用CNN)提取特征，进行判断。
-
-**训练集**：经典的目标检测算法在区域中提取人工设定的特征。RCNN则采用深度网络进行特征提取。
-
-使用两个数据库：
-
-一个较大的识别库（ImageNet ILSVC 2012）：标定每张图片中物体的类别。一千万图像，1000类。
-
-一个较小的检测库（PASCAL VOC 2007）：标定每张图片中，物体的类别和位置，一万图像，20类。
-
-RCNN使用识别库进行预训练得到CNN（有监督预训练），而后用检测库调优参数，最后在检测库上评测。
-
-这实际上就是《深度学习（七）》中提到的fine-tuning的思想。
-
-## RCNN算法的基本流程
-
-![](/images/article/rcnn.png)
-
-RCNN算法分为4个步骤：
-
-**Step 1**：候选区域生成。一张图像生成1K~2K个候选区域（采用Selective Search方法）。
-
-**Step 2**：特征提取。对每个候选区域，使用深度卷积网络提取特征（CNN）。
-
-**Step 3**：类别判断。特征送入每一类的SVM分类器，判别是否属于该类。
-
-**Step 4**：位置精修。使用回归器精细修正候选框位置。
-
-## Selective Search
+无论是在Inception、DenseNet或者ShuffleNet里面，我们对所有通道产生的特征都是不分权重直接结合的，那为什么要认为所有通道的特征对模型的作用就是相等的呢？这是一个好问题，于是，ImageNet2017冠军SEnet就出来了。
 
 论文：
 
-https://www.koen.me/research/pub/uijlings-ijcv2013-draft.pdf
+《Squeeze-and-Excitation Networks》
 
-Selective Search for Object Recognition
+## 可变形卷积核
 
-Selective Search的主要思想:
+MSRA于2017年提出了可变形卷积核的概念。
 
-**Step 1**：使用一种过分割手段，将图像分割成小区域 (1k~2k个)。
+论文：
 
-这里的步骤实际上并不简单，可参考论文：
+《Deformable Convolutional Networks》
 
-《Efficient Graph-Based Image Segmentation》
+![](/images/article/Deformable_convolution.png)
 
-中文版：
+## 1*1卷积
 
-http://blog.csdn.net/surgewong/article/details/39008861
+1、升维或降维。
 
-**Step 2**：查看现有小区域，按照合并规则合并可能性最高的相邻两个区域。重复直到整张图像合并成一个区域位置。
+如果卷积的输出输入都只是一个平面，那么1x1卷积核并没有什么意义，它是完全不考虑像素与周边其他像素关系。 但卷积的输出输入是长方体，所以1x1卷积实际上是对每个像素点，在不同的channels上进行线性组合（信息整合），且保留了图片的原有平面结构，调控depth，从而完成升维或降维的功能。
 
-**Step 3**：输出所有曾经存在过的区域，所谓候选区域。
+![](/images/article/conv_1x1.png)
 
-其中合并规则如下：优先合并以下四种区域：
+2、加入非线性。卷积层之后经过激励层，1*1的卷积在前一层的学习表示上添加了非线性激励（ non-linear activation ），提升网络的表达能力；
 
-1.颜色（颜色直方图）相近的。
+3.促进不同通道之间的信息交换。
 
-2.纹理（梯度直方图）相近的。
+参考：
 
-3.合并后总面积小的：保证合并操作的尺度较为均匀，避免一个大区域陆续“吃掉”其他小区域（例：设有区域a-b-c-d-e-f-g-h。较好的合并方式是：ab-cd-ef-gh -> abcd-efgh -> abcdefgh。不好的合并方法是：ab-c-d-e-f-g-h ->abcd-e-f-g-h ->abcdef-gh -> abcdefgh）
+https://www.zhihu.com/question/56024942
 
-4.合并后，总面积在其bounding box中所占比例大的：保证合并后形状规则。
+卷积神经网络中用1*1卷积有什么作用或者好处呢？
 
-Step2和Step3可参考论文：
+## 参考
 
-《Selective Search for Object Recognition》
+https://github.com/vdumoulin/conv_arithmetic
 
-中文版：
+Convolution arithmetic
 
-http://blog.csdn.net/surgewong/article/details/39316931
+http://deeplearning.net/software/theano_versions/dev/tutorial/conv_arithmetic.html
 
-http://blog.csdn.net/charwing/article/details/27180421
+Convolution arithmetic
 
-Selective Search的效果类似下图：
+https://mp.weixin.qq.com/s/dR2nhGqpz7OdmxKPYSaaxw
 
-![](/images/article/selective_search.png)
+如何理解空洞卷积（dilated convolution）？
 
-![](/images/article/rcnn_3.png)
+https://mp.weixin.qq.com/s/CLFbhWMcat4rN8YS_7q25g
 
-上图中的那些方框，就是bounding box。
+这12张图生动的告诉你，深度学习中的卷积网络是怎么一回事？
 
-一般使用IOU（Intersection over Union，交并比）指标，来衡量两个bounding box的重叠度：
+http://mp.weixin.qq.com/s/dvuX3Ih_DZrv0kgqFn8-lg
 
-$$IOU(A,B)=\frac{A \cap B}{A \cup B}$$
+卷积神经网络结构变化——可变形卷积网络deformable convolutional networks
+
+http://cs.nyu.edu/~fergus/drafts/utexas2.pdf
+
+Deconvolutional Networks
+
+https://zhuanlan.zhihu.com/p/22245268
+
+CNN-反卷积
+
+http://buptldy.github.io/2016/10/29/2016-10-29-deconv/
+
+Transposed Convolution, Fractionally Strided Convolution or Deconvolution（中文blog）
+
+https://buptldy.github.io/2016/10/01/2016-10-01-im2col/
+
+Implementing convolution as a matrix multiplication（中文blog）
+
+https://mp.weixin.qq.com/s/iN2LDAQ2ee-rQnlD3N1yaw
+
+变形卷积核、可分离卷积？CNN中十大拍案叫绝的操作！
+
+http://www.msra.cn/zh-cn/news/features/deformable-convolutional-networks-20170609
+
+可变形卷积网络：计算机新“视”界
+
+https://mp.weixin.qq.com/s/ybI8kJPRn7sH-hJbc5uqnw
+
+CMU研究者探索新卷积方法：在实验中可媲美基准CNN
+
+https://mp.weixin.qq.com/s/qReN6z8s45870HSMCMNatw
+
+微软亚洲研究院：逐层集中Attention的卷积模型
+
+# 花式池化
+
+池化和卷积一样，都是信号采样的一种方式。相比于卷积的千变万化，池化要简单的多。
+
+池化的一般步骤是：选择区域P，令$$Y=f(P)$$。这里的f为池化函数。
+
+![](/images/article/max_pooling.png)
+
+上图是Max Pooling的示意图。除了max之外，常用的池化函数还有mean、min等。
+
+ICLR2013上，Zeiler提出了另一种pooling手段stochastic pooling。只需对Pooling区域中的元素按照其概率值大小随机选择，即元素值大的被选中的概率也大。而不像max-pooling那样，永远只取那个最大值元素。
+
+池化的反向传播也比较简单。以上图的Max Pooling为例，由于取的是最大值7,因此，误差只要传递给7所在的神经元即可。
+
+这里再次强调一下，池化只是对信号的下采样。对于图像来说，这种下采样保留了图像的某些特征，因而是有意义的。但对于另外的任务则未必如此。
+
+比如，AlphaGo采用CNN识别棋局，但对棋局来说，下采样显然是没有什么物理意义的，因此，**AlphaGo的CNN是没有Pooling的**。
+
+除此之外，还有ROI Pooling操作。（参见《深度学习（十）》）
+
+参考：
+
+http://www.cnblogs.com/tornadomeet/p/3432093.html
+
+Stochastic Pooling简单理解
+
+# Batch Normalization
+
+在《深度学习（二）》中，我们已经简单的介绍了Batch Normalization的基本概念。这里主要讲述一下它的实现细节。
+
+我们知道在神经网络训练开始前，都要对输入数据做一个归一化处理，那么具体为什么需要归一化呢？归一化后有什么好处呢？
+
+原因在于神经网络学习过程本质就是为了学习数据分布，一旦训练数据与测试数据的分布不同，那么网络的泛化能力也大大降低；另外一方面，一旦每批训练数据的分布各不相同(batch梯度下降)，那么网络就要在每次迭代都去学习适应不同的分布，这样将会大大降低网络的训练速度，这也正是为什么我们需要对数据都要做一个归一化预处理的原因。
+
+对输入数据归一化，早就是一种基本操作了。然而这样只对神经网络的输入层有效。更好的办法是对每一层都进行归一化。
+
+然而简单的归一化，会破坏神经网络的特征。（归一化是线性操作，但神经网络本身是非线性的，不具备线性不变性。）因此，如何归一化，实际上是个很有技巧的事情。
+
+首先，我们回顾一下归一化的一般做法：
+
+$$\hat x^{(k)} = \frac{x^{(k)} - E[x^{(k)}]}{\sqrt{Var[x^{(k)}]}}$$
+
+其中，$$x = (x^{(0)},x^{(1)},…x^{(d)})$$表示d维的输入向量。
+
+接着，定义归一化变换函数：
+
+$$y^{(k)}=\gamma^{(k)}\hat x^{(k)}+\beta^{(k)}$$
+
+这里的$$\gamma^{(k)},\beta^{(k)}$$是待学习的参数。
+
+BN的主要思想是用同一batch的样本分布来近似整体的样本分布。显然，batch size越大，这种近似也就越准确。
+
+用$$\mathcal{B}=\{x_{1,\dots,m}\}$$表示batch，则BN的计算过程如下：
+
+1.计算mini-batch mean。
+
+$$\mu_\mathcal{B}\leftarrow \frac{1}{m}\sum_{i=1}^mx_i$$
+
+2.计算mini-batch variance。
+
+$$\sigma_\mathcal{B}^2\leftarrow \frac{1}{m}\sum_{i=1}^m(x_i-\mu_\mathcal{B})^2$$
+
+3.normalize。
+
+$$\hat x_i\leftarrow \frac{x_i-\mu_\mathcal{B}}{\sqrt{\sigma_\mathcal{B}^2+\epsilon}}$$
+
+这里的$$\epsilon$$是为了数值的稳定性而添加的常数。
+
+4.scale and shift。
+
+$$y_i=\gamma\hat x_i+\beta\equiv BN_{\gamma,\beta}(x_i)$$
+
+在实际使用中，BN计算和卷积计算一样，都被当作神经网络的其中一层。即：
+
+$$z=g(Wu+b)\rightarrow z=g(BN(Wu+b))=g(BN(Wu))$$
+
+从另一个角度来看，BN的均值、方差操作，相当于去除一阶和二阶信息，而只保留网络的高阶信息，即非线性部分。因此，上式最后一步中b被忽略，也就不难理解了。
+
+BN的误差反向算法相对复杂，这里不再赘述。
+
+# Softmax详解
+
+首先给出Softmax function的定义:
+
+$$y_c=\zeta(\textbf{z})_c = \dfrac{e^{z_c}}{\sum_{d=1}^C{e^{z_d}}} \text{  for } c=1, \dots, C$$
+
+从中可以很容易的发现，如果$$z_c$$的值过大，朴素的直接计算会上溢出或下溢出。
+
+解决办法：
+
+$$z_c\leftarrow z_c-a,a=\max\{z_1,\dots,z_C\}$$
+
+证明：
+
+$$\zeta(\textbf{z-a})_c = \dfrac{e^{z_c}\cdot e^{-a}}{\sum_{d=1}^C{e^{z_d}\cdot e^{-a}}} = \dfrac{e^{z_c}}{\sum_{d=1}^C{e^{z_d}}} = \zeta(\textbf{z})_c$$
+
+Softmax的损失函数是cross entropy loss function：
+
+$$\xi(X, Y) = \sum_{i=1}^n \xi(\textbf{t}_i, \textbf{y}_i) = - \sum_{i=1}^n \sum_{i=c}^C t_{ic} \cdot \log(y_{ic})$$
+
+Softmax的反向传播算法：
+
+$$\begin{align}
+\dfrac{\partial\xi}{\partial z_i} &= - \sum_{j=1}^C \dfrac{\partial t_j \log(y_j)}{\partial z_i} \\
+&= - \sum_{j=1}^C t_j \dfrac{\partial \log(y_j)}{\partial z_i} \\
+&= - \sum_{j=1}^C t_j \dfrac{1}{y_j} \dfrac{\partial y_j}{\partial z_i} \\
+&= - \dfrac{t_i}{y_i} \dfrac{\partial y_i}{\partial z_i} - \sum_{j \neq i}^C \dfrac{t_j}{y_j} \dfrac{\partial y_j}{\partial z_i} \\
+&= - \dfrac{t_i}{y_i} y_i(1-y_i) - \sum_{j \neq i}^{C} \dfrac{t_j}{y_j}(-y_jy_j) \\
+&= -t_i + t_iy_i + \sum_{j \neq i}^{C} t_jy_i \\
+&= -t_i + \sum_{j=1}^C t_jy_i \\
+&= -t_i + y_i \sum_{j=1}^C t_j \\
+&= y_i - t_i
+\end{align}$$
+
+参考：
+
+https://mp.weixin.qq.com/s/2xYgaeLlmmUfxiHCbCa8dQ
+
+softmax函数计算时候为什么要减去一个最大值？
+
+http://shuokay.com/2016/07/20/softmax-loss/
+
+Softmax 输出及其反向传播推导
+
 

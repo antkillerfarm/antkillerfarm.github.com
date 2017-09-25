@@ -42,6 +42,10 @@ https://mp.weixin.qq.com/s/sAf2fLLnKHOs433pV_6bSQ
 
 One-shot Learning：孪生网络少样本精准分类
 
+https://mp.weixin.qq.com/s/J8ZmIVKd-4X3hMGGIJWoDQ
+
+一文看懂迁移学习：从基础概念到技术研究！
+
 # 语音识别
 
 Connectionist Temporal Classification，是一种改进的RNN模型。它主要解决的是时序模型中，输入数大于输出数，输入输出如何对齐的问题。
