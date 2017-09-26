@@ -378,4 +378,9 @@ https://mp.weixin.qq.com/s/shBHKh2emSIL5uWV7po8cw
 
 梅涛：“看图说话”
 
+https://mp.weixin.qq.com/s/BQy3qpmQqeQquhf92hwcvQ
+
+2017 VQA Challenge第一名技术报告
+
+
 

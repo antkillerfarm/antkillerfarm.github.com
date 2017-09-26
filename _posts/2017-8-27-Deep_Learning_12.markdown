@@ -76,6 +76,16 @@ https://pjreddie.com/darknet/yolo/
 
 >注：Joseph Chet Redmon，Middlebury College本科+华盛顿大学博士（在读）。网名：pjreddie。
 
+pjreddie不仅是个算法达人，也是个造轮子的高手。YOLO的原始代码基于他本人编写的DL框架——darknet。
+
+darknet代码：
+
+https://github.com/pjreddie/darknet/
+
+YOLO的caffe版本有很多（当然都是非官方的），这里推荐：
+
+https://github.com/yeahkun/caffe-yolo
+
 ## 概述
 
 从R-CNN到Fast R-CNN一直采用的思路是proposal+分类（proposal提供位置信息，分类提供类别信息），这也被称作two-stage cascade。
@@ -142,6 +152,10 @@ http://lanbing510.info/2017/08/28/YOLO-SSD.html
 
 目标检测之YOLO，SSD
 
+http://www.yeahkun.com/2016/09/06/object-detection-you-only-look-once-caffe-shi-xian/
+
+Object detection: You Look Only Once(YOLO)
+
 # SSD
 
 SSD是Wei Liu于2016年提出的算法。
@@ -157,6 +171,8 @@ https://github.com/weiliu89/caffe
 >Wei Liu，南京大学本科（2009）+北卡罗莱娜大学博士（在读）。   
 >个人主页：   
 >http://www.cs.unc.edu/~wliu/
+
+## 网络结构
 
 YOLO有一些缺陷：每个网格只预测一个物体，容易造成漏检；对于物体的尺度相对比较敏感，对于尺度变化较大的物体泛化能力较差。
 
@@ -178,13 +194,21 @@ YOLO有一些缺陷：每个网格只预测一个物体，容易造成漏检；�
 
 ![](/images/article/ssd_2.png)
 
-上图是从另一个角度观察SSD，可以看出SSD可检出8372个候选box。
+上图是从另一个角度观察SSD，可以看出SSD可检出8372个default box。这里沿用Faster R-CNN的Anchor方法生成default box。
 
 ![](/images/article/ssd_3.png)
 
 和YOLO一样，卷积层的每个点都是一个vector，含义也和YOLO类似，只是分类的时候，多了一个背景的类别，所以就成了20+1类。
 
-参考：
+## 训练策略
+
+监督学习训练的关键点：如何把标注信息(ground true box,ground true category)映射到（default box上）？
+
+### 正负样本
+
+
+
+## 参考
 
 http://www.jianshu.com/p/ebebfcd274e6
 
@@ -216,7 +240,7 @@ http://www.lai18.com/content/24600342.html
 
 # YOLOv2
 
-面对SSD的攻势，Redmon不甘示弱，于2016年12月提出了YOLOv2（又名YOLO9000）。YOLOv2对YOLO做了较多改进，实际上更像是SSD的升级版。
+面对SSD的攻势，pjreddie不甘示弱，于2016年12月提出了YOLOv2（又名YOLO9000）。YOLOv2对YOLO做了较多改进，实际上更像是SSD的升级版。
 
 论文：
 
