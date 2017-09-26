@@ -142,6 +142,10 @@ https://mp.weixin.qq.com/s/FdPrRQr0LukcWh7B703MlQ
 
 利用tf.gradients在TensorFlow中实现梯度下降
 
+https://mp.weixin.qq.com/s/a68brFJthczgwiFoUBh30A
+
+TensorFlow数据集和估算器介绍
+
 # NLP参考资源
 
 https://mp.weixin.qq.com/s/GyE9qdXPGvrq12dMAf4nrQ

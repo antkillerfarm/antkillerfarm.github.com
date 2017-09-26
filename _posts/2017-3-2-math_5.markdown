@@ -126,6 +126,12 @@ f(x; d_1,d_2) &= \frac{\sqrt{\frac{(d_1\,x)^{d_1}\,\,d_2^{d_2}} {(d_1\,x+d_2)^{d
 
 $$\frac{1}{F}\sim F(d_2,d_1)$$
 
+参考：
+
+https://mp.weixin.qq.com/s/X0nSqiQoJpEur7PM1tM-0A
+
+每个数据科学专家都应该知道的六个概率分布
+
 ## 假设检验
 
 假设检验就是根据样本对所提出的假设$$H_0$$作判断。

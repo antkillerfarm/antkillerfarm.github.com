@@ -381,5 +381,8 @@ https://mp.weixin.qq.com/s/Gzoxa4jjWzprsSn9yRVlOg
 
 基于自然语言识别下的流失用户预警
 
+https://mp.weixin.qq.com/s?__biz=MzA3MTM3NTA5Ng==&mid=2651056658&idx=1&sn=ae2792da4f037eaf9038f54a11753b0c
+
+利用算法识别糖尿病患者
 
 
