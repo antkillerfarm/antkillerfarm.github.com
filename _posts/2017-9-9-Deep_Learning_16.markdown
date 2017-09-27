@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十六）——深度强化学习
+title:  深度学习（十六）——深度强化学习, Ultra Deep Network, Network In Network
 category: theory 
 ---
 
@@ -142,5 +142,73 @@ https://mp.weixin.qq.com/s/4H2isN27elFL0dxTuGPw6Q
 
 穆黎森讲增强学习
 
+# Ultra Deep Network
 
+## FractalNet
+
+论文：
+
+《FractalNet: Ultra-Deep Neural Networks without Residuals》
+
+![](/images/article/FractalNet.png)
+
+## Resnet in Resnet
+
+论文：
+
+《Resnet in Resnet: Generalizing Residual Architectures》
+
+![](/images/article/RiR.png)
+
+## Highway
+
+论文：
+
+《Training Very Deep Networks》
+
+![](/images/article/highway.png)
+
+Resnet对于残差的跨层传递是无条件的，而Highway则是有条件的。这种条件开关被称为gate，它也是由网络训练得到的。
+
+# NN的INT8计算
+
+## 概述
+
+NN的INT8计算是近来NN计算优化的方向之一。这方面的文章以Xilinx的白皮书较为经典：
+
+https://china.xilinx.com/support/documentation/white_papers/c_wp486-deep-learning-int8.pdf
+
+利用Xilinx器件的INT8优化开展深度学习
+
+论文：
+
+《On the efficient representation and execution of deep acoustic models》
+
+参考：
+
+https://www.chiphell.com/thread-1620755-1-1.html
+
+新Titan X的INT8计算到底是什么鬼
+
+## NN硬件的指标术语
+
+MACC：multiply-accumulate，乘法累加。
+
+FLOPS：Floating-point Operations Per Second，每秒所执行的浮点运算次数。
+
+显然NN的INT8计算主要以MACC为单位。
+
+# Network In Network
+
+http://blog.csdn.net/sheng_ai/article/details/41313883
+
+Network In Network(精读)
+
+http://blog.csdn.net/zhufenghao/article/details/52526611
+
+Network In Network
+
+http://www.cnblogs.com/dmzhuo/p/5868346.html
+
+读论文“Network in Network”——ICLR 2014
 

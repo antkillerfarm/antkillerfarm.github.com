@@ -52,6 +52,10 @@ VGG、AlexNet都是常见的CNN base。
 
 ## 评价标准
 
+目标检测一般采用mAP作为评价标准。
+
+参考：
+
 http://blog.sina.com.cn/s/blog_9db078090102whzw.html
 
 多标签图像分类任务的评价方法-mAP
@@ -258,15 +262,5 @@ Faster R-CNN最重要的改进就是使用区域生成网络（Region Proposal N
 
 ![](/images/article/rpn_feature_map.png)
 
-由于CNN所生成的feature map的尺寸，通常小于原图像。因此将feature map的点映射回原图像，就变成了上图所示的稀疏网点。这些网点也被称为原图感受野的中心点。
 
-把网点当成基准点，然后围绕这个基准点选取k个不同scale、aspect ratio的anchor。论文中用了3个scale（三种面积$$\left\{ 128^2, 256^2, 521^2  \right\}$$，如上图的红绿蓝三色所示），3个aspect ratio（{1:1,1:2,2:1}，如上图的同色方框所示）。
-
-![](/images/article/Anchors.png)
-
-anchor的后处理如上图所示。
-
-![](/images/article/Anchor_Pyramid.png)
-
-上图展示了Image/Feature Pyramid、Filter Pyramid和Anchor Pyramid的区别。
 

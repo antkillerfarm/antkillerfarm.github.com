@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三）——朴素贝叶斯方法, SVM（1）
+title:  机器学习（三）——生成学习算法, 朴素贝叶斯方法, SVM（1）
 category: theory 
 ---
 

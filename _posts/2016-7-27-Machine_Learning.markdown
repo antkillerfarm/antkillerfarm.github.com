@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（一）——线性回归, 分类与逻辑回归
+title:  机器学习（一）——线性回归
 category: theory 
 ---
 

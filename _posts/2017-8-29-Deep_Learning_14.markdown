@@ -124,6 +124,14 @@ OpenFace是用Python和Torch编写的。
 
 https://cmusatyalab.github.io/openface/
 
+## Cascade CNN
+
+《A Convolutional Neural Network Cascade for Face Detection》
+
+http://blog.csdn.net/shuzfan/article/details/50358809
+
+人脸检测——CascadeCNN
+
 ## 参考
 
 http://www.cnblogs.com/pandaroll/p/6590339.html
@@ -153,10 +161,6 @@ https://mp.weixin.qq.com/s/DYCXef_09yFFNR0uHL2Q0Q
 blog.csdn.net/qq_14845119/article/details/52680940
 
 MTCNN（Multi-task convolutional neural networks）人脸对齐
-
-http://blog.csdn.net/shuzfan/article/details/50358809
-
-人脸检测——CascadeCNN
 
 http://blog.csdn.net/shuzfan/article/details/52668935
 
@@ -205,5 +209,4 @@ https://mp.weixin.qq.com/s/Z06oUe7oExgkKZ8g2_PnPw
 https://mp.weixin.qq.com/s/tS_9gS2ADoEdSKCLB-cxpA
 
 刘小明教授为你讲解人脸识别
-
 

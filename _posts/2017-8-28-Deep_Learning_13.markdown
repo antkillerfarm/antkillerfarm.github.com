@@ -1,8 +1,54 @@
 ---
 layout: post
-title:  深度学习（十三）——语义分割, Ultra Deep Network, Network In Network
+title:  深度学习（十三）——YOLOv2, 语义分割
 category: theory 
 ---
+
+# YOLOv2
+
+面对SSD的攻势，pjreddie不甘示弱，于2016年12月提出了YOLOv2（又名YOLO9000）。YOLOv2对YOLO做了较多改进，实际上更像是SSD的升级版。
+
+论文：
+
+《YOLO9000: Better, Faster, Stronger》
+
+实际上，论文的内容也正如标题所言，主要分为Better, Faster, Stronger三个部分。
+
+## Better
+
+### batch normalization
+
+YOLOv2网络通过在每一个卷积层后添加batch normalization，极大的改善了收敛速度同时减少了对其它regularization方法的依赖（舍弃了dropout优化后依然没有过拟合），使得mAP获得了2%的提升。
+
+### High Resolution Classifier
+
+所有state-of-the-art的检测方法基本上都会使用ImageNet预训练过的模型（classifier）来提取特征，例如AlexNet输入图片会被resize到不足256 * 256，这导致分辨率不够高，给检测带来困难。所以YOLO(v1)先以分辨率224*224训练分类网络，然后需要增加分辨率到448*448，这样做不仅切换为检测算法也改变了分辨率。所以作者想能不能在预训练的时候就把分辨率提高了，训练的时候只是由分类算法切换为检测算法。
+
+YOLOv2首先修改预训练分类网络的分辨率为448*448，在ImageNet数据集上训练10轮（10 epochs）。这个过程让网络有足够的时间调整filter去适应高分辨率的输入。然后fine tune为检测网络。mAP获得了4%的提升。
+
+## Faster
+
+
+
+## Stronger
+
+YOLOv2对于输出向量的编码方式进行了改进，如下图所示：
+
+![](/images/article/yolov2.png)
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/25167153
+
+YOLO2
+
+http://blog.csdn.net/jesse_mx/article/details/53925356
+
+YOLOv2 论文笔记
+
+http://lanbing510.info/2017/09/04/YOLOV2.html
+
+目标检测之YOLOv2
 
 # 其它目标检测网络
 
@@ -121,75 +167,5 @@ http://blog.csdn.net/zijinxuxu/article/details/67638290
 https://github.com/CMU-Perceptual-Computing-Lab/openpose
 
 
-
-# Ultra Deep Network
-
-## FractalNet
-
-论文：
-
-《FractalNet: Ultra-Deep Neural Networks without Residuals》
-
-![](/images/article/FractalNet.png)
-
-## Resnet in Resnet
-
-论文：
-
-《Resnet in Resnet: Generalizing Residual Architectures》
-
-![](/images/article/RiR.png)
-
-## Highway
-
-论文：
-
-《Training Very Deep Networks》
-
-![](/images/article/highway.png)
-
-Resnet对于残差的跨层传递是无条件的，而Highway则是有条件的。这种条件开关被称为gate，它也是由网络训练得到的。
-
-# NN的INT8计算
-
-## 概述
-
-NN的INT8计算是近来NN计算优化的方向之一。这方面的文章以Xilinx的白皮书较为经典：
-
-https://china.xilinx.com/support/documentation/white_papers/c_wp486-deep-learning-int8.pdf
-
-利用Xilinx器件的INT8优化开展深度学习
-
-论文：
-
-《On the efficient representation and execution of deep acoustic models》
-
-参考：
-
-https://www.chiphell.com/thread-1620755-1-1.html
-
-新Titan X的INT8计算到底是什么鬼
-
-## NN硬件的指标术语
-
-MACC：multiply-accumulate，乘法累加。
-
-FLOPS：Floating-point Operations Per Second，每秒所执行的浮点运算次数。
-
-显然NN的INT8计算主要以MACC为单位。
-
-# Network In Network
-
-http://blog.csdn.net/sheng_ai/article/details/41313883
-
-Network In Network(精读)
-
-http://blog.csdn.net/zhufenghao/article/details/52526611
-
-Network In Network
-
-http://www.cnblogs.com/dmzhuo/p/5868346.html
-
-读论文“Network in Network”——ICLR 2014
 
 

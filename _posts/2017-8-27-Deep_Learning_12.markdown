@@ -1,16 +1,28 @@
 ---
 layout: post
-title:  深度学习（十二）——YOLO, SSD, YOLOv2
+title:  深度学习（十二）——YOLO, SSD
 category: theory 
 ---
 
-# Faster R-CNN（续）
+## Region Proposal Networks（续）
+
+由于CNN所生成的feature map的尺寸，通常小于原图像。因此将feature map的点映射回原图像，就变成了上图所示的稀疏网点。这些网点也被称为原图感受野的中心点。
+
+把网点当成基准点，然后围绕这个基准点选取k个不同scale、aspect ratio的anchor。论文中用了3个scale（三种面积$$\left\{ 128^2, 256^2, 521^2  \right\}$$，如上图的红绿蓝三色所示），3个aspect ratio（{1:1,1:2,2:1}，如上图的同色方框所示）。
+
+![](/images/article/Anchors.png)
+
+anchor的后处理如上图所示。
+
+![](/images/article/Anchor_Pyramid.png)
+
+上图展示了Image/Feature Pyramid、Filter Pyramid和Anchor Pyramid的区别。
 
 ## 定义损失函数
 
 对于每个anchor，首先在后面接上一个二分类softmax，有2个score 输出用以表示其是一个物体的概率与不是一个物体的概率 ($$p_i$$)。这个概率也可以理解为前景与后景，或者物体和背景的概率。
 
-然后再接上一个bounding box的regressor 输出代表这个anchor的4个坐标位置（$$t_i$$），因此RPN的总体Loss函数可以定义为 ：
+然后再接上一个bounding box的regressor输出代表这个anchor的4个坐标位置（$$t_i$$），因此RPN的总体Loss函数可以定义为 ：
 
 $$L(\{p_i\},\{t_i\})=\frac{1}{N_{cls}}\sum_iL_{cls}(p_i,p_i^*)+\lambda \frac{1}{N_{reg}}\sum_ip_i^*L_{reg}(t_i,t_i^*)$$
 
@@ -200,11 +212,19 @@ YOLO有一些缺陷：每个网格只预测一个物体，容易造成漏检；�
 
 和YOLO一样，卷积层的每个点都是一个vector，含义也和YOLO类似，只是分类的时候，多了一个背景的类别，所以就成了20+1类。
 
+YOLO中，由于每个格子只有1个default box，所以对于一个格子中包含两个物体的情况是无能为力的。SSD的Anchor方法略微改善了这方面的性能，但对于超过Anchor数量的情况，仍然无能为力。因此，这两者对于小目标的检测，没有RCNN系列算法的效果好。
+
 ## 训练策略
 
 监督学习训练的关键点：如何把标注信息(ground true box,ground true category)映射到（default box上）？
 
 ### 正负样本
+
+与ground truth box的IOU大于0.5的default box，被定为该ground truth box的正样本，其它的default box则为负样本。
+
+而一般的MultiBox算法中，只有IOU最大的default box才是正样本。
+
+显然，在SSD中，一个ground truth box可能对应多个default box。
 
 
 
@@ -238,49 +258,8 @@ http://www.lai18.com/content/24600342.html
 
 还是一个SSD论文阅读
 
-# YOLOv2
+https://www.zhihu.com/question/49455386
 
-面对SSD的攻势，pjreddie不甘示弱，于2016年12月提出了YOLOv2（又名YOLO9000）。YOLOv2对YOLO做了较多改进，实际上更像是SSD的升级版。
+为什么SSD(Single Shot MultiBox Detector)对小目标的检测效果不好？
 
-论文：
-
-《YOLO9000: Better, Faster, Stronger》
-
-实际上，论文的内容也正如标题所言，主要分为Better, Faster, Stronger三个部分。
-
-## Better
-
-### batch normalization
-
-YOLOv2网络通过在每一个卷积层后添加batch normalization，极大的改善了收敛速度同时减少了对其它regularization方法的依赖（舍弃了dropout优化后依然没有过拟合），使得mAP获得了2%的提升。
-
-### High Resolution Classifier
-
-所有state-of-the-art的检测方法基本上都会使用ImageNet预训练过的模型（classifier）来提取特征，例如AlexNet输入图片会被resize到不足256 * 256，这导致分辨率不够高，给检测带来困难。所以YOLO(v1)先以分辨率224*224训练分类网络，然后需要增加分辨率到448*448，这样做不仅切换为检测算法也改变了分辨率。所以作者想能不能在预训练的时候就把分辨率提高了，训练的时候只是由分类算法切换为检测算法。
-
-YOLOv2首先修改预训练分类网络的分辨率为448*448，在ImageNet数据集上训练10轮（10 epochs）。这个过程让网络有足够的时间调整filter去适应高分辨率的输入。然后fine tune为检测网络。mAP获得了4%的提升。
-
-## Faster
-
-
-
-## Stronger
-
-YOLOv2对于输出向量的编码方式进行了改进，如下图所示：
-
-![](/images/article/yolov2.png)
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/25167153
-
-YOLO2
-
-http://blog.csdn.net/jesse_mx/article/details/53925356
-
-YOLOv2 论文笔记
-
-http://lanbing510.info/2017/09/04/YOLOV2.html
-
-目标检测之YOLOv2
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  图像处理理论（四）——霍夫变换, SIFT
+title:  图像处理理论（四）——霍夫变换, HOG, SIFT
 category: theory 
 ---
 

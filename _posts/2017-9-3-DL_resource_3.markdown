@@ -386,3 +386,11 @@ https://mp.weixin.qq.com/s/1Gdx-U3DRZtSJoFyCLnD0w
 
 深度学习之Sequence Learning
 
+http://www.jianshu.com/p/f9ca56d6407d
+
+深度学习在股票市场的应用
+
+https://mp.weixin.qq.com/s/UDAcjmCOUdzbXaAgKWOczQ
+
+深度判别和共享特征学习的图像分类
+
