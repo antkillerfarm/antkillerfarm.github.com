@@ -187,6 +187,10 @@ http://blog.csdn.net/u013709270/article/details/70949304
 
 深度神经网络训练的必知技巧
 
+https://mp.weixin.qq.com/s/Oy2GIZLbQxmXMCLzMapWHQ
+
+Batch Normalization的分析与展望
+
 ## 鞍点
 
 鞍点（Saddle point）在微分方程中，沿着某一方向是稳定的，另一条方向是不稳定的奇点，叫做鞍点。在泛函中，既不是极大值点也不是极小值点的临界点，叫做鞍点。在矩阵中，一个数在所在行中是最大值，在所在列中是最小值，则被称为鞍点。在物理上要广泛一些，指在一个方向是极大值，另一个方向是极小值的点。

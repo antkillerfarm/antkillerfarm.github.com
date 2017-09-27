@@ -348,7 +348,7 @@ https://mp.weixin.qq.com/s/pdv-T69rz4jO47CMf-CUhg
 
 https://zhuanlan.zhihu.com/p/29435406
 
-浅析 Hinton 最近提出的Capsule计划
+浅析Hinton最近提出的Capsule计划
 
 https://mp.weixin.qq.com/s/e4hriDvTRLkg-mIifVWayw
 
@@ -382,5 +382,7 @@ https://mp.weixin.qq.com/s/BQy3qpmQqeQquhf92hwcvQ
 
 2017 VQA Challenge第一名技术报告
 
+https://mp.weixin.qq.com/s/1Gdx-U3DRZtSJoFyCLnD0w
 
+深度学习之Sequence Learning
 

@@ -74,6 +74,10 @@ https://mp.weixin.qq.com/s/xnbNkKOomwvwYC_ThKPJ_g
 
 田渊栋报告：游戏中的人工智能：成就与挑战
 
+https://mp.weixin.qq.com/s/napcf9UDwTVmUXV7BBzdaw
+
+田渊栋：深度学习如何进行游戏推理？
+
 https://mp.weixin.qq.com/s/5Vg9RFvyNv6T7QkIfPm1aQ
 
 DOTA2中打败Dendi的AI如何炼出？
@@ -184,6 +188,18 @@ https://mp.weixin.qq.com/s/RKRDBiBzG5u2P2eaqNAFbg
 
 机器学习的处理器列表
 
+https://mp.weixin.qq.com/s/8RDHTn6P63otKXUdrHhbjw
+
+一文看懂AI芯片产业生态及竞争格局
+
+https://mp.weixin.qq.com/s/-FwuhibwwG6CFUcZXNBTFA
+
+投资者梳理AI芯片产业，一文秒懂AI芯片生态！
+
+https://zhuanlan.zhihu.com/p/28325678
+
+零基础看懂全球AI芯片：详解“xPU”
+
 https://mp.weixin.qq.com/s/bL1PoUjZ_sH2VKcBxI6N5A
 
 Wave公司发布数据流处理架构DPU
@@ -191,10 +207,6 @@ Wave公司发布数据流处理架构DPU
 https://mp.weixin.qq.com/s/1r7G84les7FihqPbSiS0Ng
 
 华为首款手机端AI芯片麒麟970
-
-https://mp.weixin.qq.com/s/8RDHTn6P63otKXUdrHhbjw
-
-一文看懂AI芯片产业生态及竞争格局
 
 https://mp.weixin.qq.com/s/y9dVg9YtfWxu6NcW-fxi6Q
 
@@ -277,6 +289,14 @@ https://mp.weixin.qq.com/s/ASqpPSIgW_bcFPBfRYz7Xg
 http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
 
 《Large Scale Distributed Deep Networks》中译文
+
+https://mp.weixin.qq.com/s/X7XG51yohLnEZ_Jg6XK9oQ
+
+Caffe作者贾扬清教你怎样打造更加优秀的深度学习架构
+
+https://mp.weixin.qq.com/s/_mrYI7McMBUx0lEh4rNiYQ
+
+百度开源移动端深度学习框架MDL，手机部署CNN支持iOS GPU
 
 ## Other
 

@@ -138,4 +138,9 @@ https://mp.weixin.qq.com/s/6_cW22DCzSw3DpUDrLXLcA
 
 OpenAI提出强化学习近端策略优化，可替代策略梯度法
 
+https://mp.weixin.qq.com/s/4H2isN27elFL0dxTuGPw6Q
+
+穆黎森讲增强学习
+
+
 

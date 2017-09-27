@@ -22,7 +22,7 @@ Anaconda是一个科学计算方面的python发行版，下面提到的所有工
 
 官网：
 
-https://www.continuum.io/downloads
+https://www.anaconda.com/download/
 
 ## NumPy
 

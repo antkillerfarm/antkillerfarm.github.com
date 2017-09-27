@@ -100,6 +100,26 @@ https://mp.weixin.qq.com/s/c2oMJfE95I1ciEtvdTlb4A
 
 完全脱离预训练模型的目标检测方法
 
+https://mp.weixin.qq.com/s/NV2hWofOCractLt45-wI1A
+
+山世光：基于深度学习的目标检测技术进展与展望
+
+https://mp.weixin.qq.com/s/zJ3EN175_9num2OknVvnyA
+
+邬书哲：物体检测算法的革新与传承
+
+https://mp.weixin.qq.com/s/1vOdOMyByBacSBMVrscq5Q
+
+黄畅：基于DenesBox的目标检测在自动驾驶中的应用
+
+https://mp.weixin.qq.com/s/6rSeJOqbKyrDj3FpS8J5eg
+
+黄李超讲物体检测
+
+https://mp.weixin.qq.com/s/JjsAnB_OxKS1Af9XAtw5sA
+
+一文带你读懂深度学习框架下的目标检测
+
 ## 进化史
 
 DPM(2007)->RCNN(2014)->Fast RCNN->Faster RCNN

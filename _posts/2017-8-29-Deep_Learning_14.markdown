@@ -198,4 +198,12 @@ https://mp.weixin.qq.com/s/s5HL6y2P9_KqpSAQg08URw
 
 世界最大人脸对齐数据集ICCV 2017：距离解决人脸对齐已不远
 
+https://mp.weixin.qq.com/s/Z06oUe7oExgkKZ8g2_PnPw
+
+科普人脸表情识别技术
+
+https://mp.weixin.qq.com/s/tS_9gS2ADoEdSKCLB-cxpA
+
+刘小明教授为你讲解人脸识别
+
 

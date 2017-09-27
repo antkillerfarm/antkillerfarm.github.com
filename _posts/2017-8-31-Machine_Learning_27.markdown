@@ -160,6 +160,16 @@ https://mp.weixin.qq.com/s/0njQq6QAfIdwsF5gTvk1Wg
 
 惯性导航系统：现代军事系统的核心技术产品
 
+https://mp.weixin.qq.com/s/CHhek4wK42oQkGtneyZymw
 
+SLAM：基础知识
+
+https://mp.weixin.qq.com/s/mjhPt2fnFSYlr8q-C_i-0g
+
+SLAM：视觉里程计
+
+https://mp.weixin.qq.com/s/ANP_dlwWjhe-lXzf2ocKkg
+
+视觉SLAM中直接法的应用实践
 
 

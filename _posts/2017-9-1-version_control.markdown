@@ -146,6 +146,14 @@ https://mp.weixin.qq.com/s/a68brFJthczgwiFoUBh30A
 
 TensorFlow数据集和估算器介绍
 
+https://github.com/indiejoseph/cnn-text-classification-tf-chinese
+
+CNN for Chinese Text Classification in Tensorflow
+
+https://mp.weixin.qq.com/s/yc1ssCzaPzI4UUsl4jl5Yw
+
+用TensorFlow和TensorBoard从零开始构建ConvNet
+
 # NLP参考资源
 
 https://mp.weixin.qq.com/s/GyE9qdXPGvrq12dMAf4nrQ
@@ -171,5 +179,10 @@ https://mp.weixin.qq.com/s/0wMTL7x87YXiin3xkf8eJA
 https://mp.weixin.qq.com/s/27Mbw2ViT8eJPJasD6tdfw
 
 神经混合模型：提升模型性能，显著降低困惑度
+
+https://mp.weixin.qq.com/s/nIMk-xl8Wzy1ANcT3ApAng
+
+百度提出问答模型GNR：检索速度提高25倍
+
 
 

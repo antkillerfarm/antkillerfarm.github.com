@@ -56,6 +56,10 @@ http://blog.sina.com.cn/s/blog_9db078090102whzw.html
 
 多标签图像分类任务的评价方法-mAP
 
+https://www.zhihu.com/question/41540197
+
+mean average precision（MAP）在计算机视觉中是如何计算和应用的？
+
 ## 总结
 
 ![](/images/article/rcnn_p_2.png)

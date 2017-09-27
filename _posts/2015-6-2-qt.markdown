@@ -351,7 +351,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/pysqlite
 
 ## Python中的括号
 
-Python主要有三种数据类型：字典、列表、元组。其分别由花括号，中括号，小括号表示。如：
+Python主要有三种数据类型：字典（Key/Value对）、列表（变长数组）、元组（定长数组）。其分别由花括号，中括号，小括号表示。如：
 
 字典：dic={'a':12,'b':34}
 

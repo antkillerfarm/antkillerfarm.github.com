@@ -46,10 +46,6 @@ prototxt：模板文件。定义NN中的层之类的结构。
 
 caffemodel：模型文件。训练好的模型可以放在模型文件中，以便于今后的预测。
 
-Caffe官网上有个Model Zoo，可从中获得一些经典模型的模板文件和模型文件。网址：
-
-https://github.com/BVLC/caffe/wiki/Model-Zoo
-
 除了模板文件和模型文件之外，有的时候训练样本也需要打包存储，以防止小文件过多导致的IO速度问题。
 
 Caffe生成的数据分为2种格式：Lmdb和Leveldb。它们都是键/值对（Key/Value Pair）嵌入式数据库管理系统编程库。
@@ -59,6 +55,14 @@ Caffe生成的数据分为2种格式：Lmdb和Leveldb。它们都是键/值对�
 http://www.cnblogs.com/yymn/p/4479216.html
 
 Caffe1——Mnist数据集创建lmdb或leveldb类型的数据
+
+https://github.com/BVLC/caffe/wiki/Model-Zoo
+
+Caffe官网上有个Model Zoo，可从中获得一些经典模型的模板文件和模型文件。
+
+https://github.com/soeaver/caffe-model
+
+另一个网友版Model Zoo
 
 ## prototxt文件的可视化
 

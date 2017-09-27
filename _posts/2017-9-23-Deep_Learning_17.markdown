@@ -136,6 +136,20 @@ https://mp.weixin.qq.com/s/uh-Gh8BSxBi-jjG6-d7-UQ
 
 TACOTRON一种端到端的Text-to-Speech合成模型
 
+https://mp.weixin.qq.com/s/UGhkTavbh21vBhtrrBeTfw
+
+麦克风阵列的语音信号处理技术
+
+https://mp.weixin.qq.com/s/1ZWrTdd3S5zYRyANfFmBOw
+
+声学模型
+
+https://mp.weixin.qq.com/s/mY2__KWvdAd8ZcNm-voSsg
+
+语音识别之解码器技术简介
+
+
+
 # Spiking Neuron Networks
 
 除了基于BP算法的NN之外，Spiking Neuron Networks也是一大类NN。Spiking NN和人脑结构更相似，功耗也更小，但是相关训练和数据量化的算法尚不成熟，属于潜力股。
