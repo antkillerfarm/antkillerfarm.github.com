@@ -4,6 +4,42 @@ title:  深度学习（十三）——YOLOv2, 语义分割
 category: theory 
 ---
 
+# SSD（续）
+
+## 参考
+
+http://www.jianshu.com/p/ebebfcd274e6
+
+Caffe-SSD训练自己的数据集教程
+
+https://zhuanlan.zhihu.com/p/24954433
+
+SSD
+
+http://blog.csdn.net/zy1034092330/article/details/72862030
+
+SSD详解
+
+http://blog.csdn.net/jesse_mx/article/details/74011886
+
+SSD模型fine-tune和网络架构
+
+http://blog.csdn.net/u010167269/article/details/52563573
+
+SSD论文阅读
+
+http://blog.csdn.net/zijin0802034/article/details/53288773
+
+另一个SSD论文阅读
+
+http://www.lai18.com/content/24600342.html
+
+还是一个SSD论文阅读
+
+https://www.zhihu.com/question/49455386
+
+为什么SSD(Single Shot MultiBox Detector)对小目标的检测效果不好？
+
 # YOLOv2
 
 面对SSD的攻势，pjreddie不甘示弱，于2016年12月提出了YOLOv2（又名YOLO9000）。YOLOv2对YOLO做了较多改进，实际上更像是SSD的升级版。

@@ -172,4 +172,9 @@ https://mp.weixin.qq.com/s/ANP_dlwWjhe-lXzf2ocKkg
 
 视觉SLAM中直接法的应用实践
 
+https://www.zhihu.com/question/47736315
+
+通俗的解释欧拉角，之后为何要引入四元数？
+
+
 

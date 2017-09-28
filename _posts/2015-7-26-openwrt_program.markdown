@@ -115,18 +115,6 @@ $ echo $TERMINFO
 /lib/terminfo/
 {% endhighlight %}
 
-设置环境变量的方法：
-
-1）临时的：使用export命令声明即可，变量在关闭shell时失效。示例如下：
-
-`export PATH=/home/xyz/bin:$PATH;`
-
-2）永久的：需要修改配置文件，变量永久生效。
-
-在/etc/profile文件中添加变量（对所有用户生效）。修改文件后要想马上生效，还要运行`source /etc/profile`，不然只能在下次重进此用户时生效。
-
-在用户目录下的.bash_profile文件中增加变量（对该用户生效）。同样需要source才能马上生效。
-
 # procd
 
 procd是OpenWrt中很重要的一个守护进程。它的作用主要有：

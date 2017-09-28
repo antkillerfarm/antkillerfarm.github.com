@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十一）——SPPNet, Fast R-CNN, Faster R-CNN
+title:  深度学习（十一）——SPPNet, Fast R-CNN
 category: theory 
 ---
 
@@ -52,7 +52,19 @@ VGG、AlexNet都是常见的CNN base。
 
 ## 评价标准
 
-目标检测一般采用mAP作为评价标准。
+目标检测一般采用mAP（mean Average Precision）作为评价标准。AP的含义参见《机器学习（二十一）》。
+
+对于多分类任务来说，每个分类都有一个AP，将这些AP平均（或加权平均）之后，就得到了mAP。
+
+目前，目标检测领域的mAP，一般以PASCAL VOC 2012的标准为准。文档参见：
+
+http://host.robots.ox.ac.uk/pascal/VOC/voc2012/devkit_doc.pdf
+
+对于目标检测任务来说，除了分类之外，还有box准确度的问题。一般IOU大于0.5的被认为是正样本，反之则是负样本。
+
+PASCAL VOC还对P-R曲线的采样做出规定。2012之前的标准中，P-R曲线只需要对recall值进行10等分采样即可。而2012标准规定，对每个recall值都要进行采样。
+
+http://host.robots.ox.ac.uk/pascal/VOC/voc2012/devkit_doc.pdf
 
 参考：
 
@@ -249,18 +261,5 @@ Fast R-CNN尽管已经很优秀了，然而还有一个最大的问题在于：p
 1.非end-to-end模型导致程序流程比较复杂。
 
 2.随着后续CNN步骤的简化，生成2k个候选bbox的Selective Search算法成为了整个计算过程的性能瓶颈。（无法利用GPU）
-
-## Region Proposal Networks
-
-Faster R-CNN最重要的改进就是使用区域生成网络（Region Proposal Networks）替换Selective Search。因此，faster RCNN也可以简单地看做是“**RPN+fast RCNN**”。
-
-![](/images/article/rpn.png)
-
-上图是RPN的结构图。和SPPNet的ROI映射做法类似，RPN直接在feature map，而不是原图像上，生成区域。
-
-由于Faster R-CNN最后会对bbox位置进行精调，因此这里生成区域的时候，只要大致准确即可。
-
-![](/images/article/rpn_feature_map.png)
-
 
 

@@ -112,6 +112,10 @@ https://mp.weixin.qq.com/s/f3bmtbCY5BfA4v3movwLVg
 
 向手机端神经网络进发：MobileNet压缩指南
 
+https://mp.weixin.qq.com/s/ZuEi32ZBSjruvtyUimBgxQ
+
+揭秘支付宝中的深度学习引擎：xNN
+
 # 人脸识别
 
 ## OpenFace

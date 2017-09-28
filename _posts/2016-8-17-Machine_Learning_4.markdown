@@ -109,12 +109,6 @@ $$d^*=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\underset{w}{\ope
 
 这样的对偶问题被称作拉格朗日对偶（Lagrange duality）。
 
-参考：
-
-https://mp.weixin.qq.com/s/AKTGyHlbCj0P949K-LAv6A
-
-拉格朗日乘数法
-
 ## KKT条件
 
 拉格朗日对偶公式中使$$p^*=d^*$$成立的条件，被称为KKT条件（Karush-Kuhn-Tucker conditions）：
@@ -136,6 +130,16 @@ g_i(w^*)& \le 0,i=1,\dots,k & \\
 >Albert William Tucker，1905～1995，加拿大数学家，普林斯顿大学教授。
 
 >William Karush，1917～1997，美国数学家，加州州立大学北岭分校教授。（注意，California State University和University of California是不同的学校）
+
+参考：
+
+https://mp.weixin.qq.com/s/AKTGyHlbCj0P949K-LAv6A
+
+拉格朗日乘数法
+
+https://www.zhihu.com/question/64834116
+
+拉格朗日乘子法漏解的情况？
 
 ## 支持向量
 

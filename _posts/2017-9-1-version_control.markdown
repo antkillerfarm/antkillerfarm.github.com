@@ -154,6 +154,10 @@ https://mp.weixin.qq.com/s/yc1ssCzaPzI4UUsl4jl5Yw
 
 用TensorFlow和TensorBoard从零开始构建ConvNet
 
+https://mp.weixin.qq.com/s/hquOoKeeHQXqWcHM6Bkvbw
+
+如何训练一个简单的音频识别网络
+
 # NLP参考资源
 
 https://mp.weixin.qq.com/s/GyE9qdXPGvrq12dMAf4nrQ
@@ -183,6 +187,14 @@ https://mp.weixin.qq.com/s/27Mbw2ViT8eJPJasD6tdfw
 https://mp.weixin.qq.com/s/nIMk-xl8Wzy1ANcT3ApAng
 
 百度提出问答模型GNR：检索速度提高25倍
+
+https://mp.weixin.qq.com/s/eDA6-BqPmjGBOPsOom0VIw
+
+自动组合神经网络做问答系统！
+
+https://mp.weixin.qq.com/s/vt25TVX-tcurtAC63dYYNA
+
+让聊天机器人同你聊得更带劲 - 对话策略学习
 
 
 

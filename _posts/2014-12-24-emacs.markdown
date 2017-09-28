@@ -273,6 +273,12 @@ https://github.com/myuhe/ess-R-data-view.el
 
 然后再回到Options菜单，点Save Options。这一步可千万别忘了，否则，关闭窗口后，重新打开又会出现同样的症状。
 
+## grep在windows版本中的使用
+
+1.将msys2的bin添加到系统环境变量PATH中。
+
+2.搜索中文时，不要用引号括起来，否则什么都找不到。
+
 # Vi
 
 ## 常用操作
@@ -288,6 +294,10 @@ https://github.com/myuhe/ess-R-data-view.el
 `:行号`——跳转到行号
 
 ## 分栏显示
+
+`vim -on file1 file2 ...`：上下分屏。n为分屏个数。
+
+`vim -On file1 file2 ...`：左右分屏。
 
 `:new`——创建一个空白分栏界面，和原文件窗口上下排列。
 

@@ -248,6 +248,10 @@ http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw
 
 周志华教授gcForest（多粒度级联森林）算法预测股指期货涨跌
 
+https://mp.weixin.qq.com/s/dEmox_pi6KGXwFoevbv14Q
+
+周志华：首个基于森林的自编码器，性能优于DNN
+
 http://mp.weixin.qq.com/s/IfEgSOIkIPA-YtC9NQW1ng
 
 非神经网络的深度模型gcForest
@@ -431,6 +435,10 @@ https://mp.weixin.qq.com/s/rXDj5ryRvjbkenp9IEokDQ
 https://mp.weixin.qq.com/s/wvcpx41O2763OgA8uYSFHw
 
 AI系统首次实现真正自主编程：利用遗传算法，完爆初级程序员
+
+https://mp.weixin.qq.com/s/sxnI5n5ACT6UHC6VDdUwQQ
+
+结合遗传算法与DNN的EDEN：自动搜索神经网络架构与超参数
 
 ### 面试
 

@@ -4,9 +4,9 @@ title:  linux学习心得（二）
 category: technology 
 ---
 
-## 查看内存使用情况
+# 查看内存使用情况
 
-### top命令
+## top命令
 
 top命令可在进程这一级查看内存、运行时间、CPU等的使用情况。并可根据不同属性对结果排序：
 
@@ -18,17 +18,17 @@ M：按%MEM排序
 
 注：运行top命令之后，输入相应字符即可切换排序。
 
-### free命令
+## free命令
 
 free命令的内容比较概括，主要包含系统内存的整体使用情况，不深入到进程一级。
 
 ## 查看查看磁盘IO情况
 
-### vmstat
+## vmstat
 
 `vmstat`
 
-### iostat
+## iostat
 
 `iostat -d -k 1 10 #查看TPS和吞吐量信息`
 
@@ -36,11 +36,11 @@ free命令的内容比较概括，主要包含系统内存的整体使用情况�
 
 `iostat -c 1 10 #查看cpu状态`
 
-### iotop
+## iotop
 
 `sudo iotop`
 
-### dstat
+## dstat
 
 dstat是后起之秀，号称可以替代vmstat、iostat、ifstat。
 
@@ -56,27 +56,27 @@ YYYY-MM-DDThh:mm:ss.sTZD (eg 1997-07-16T19:20:30.45+01:00)
 
 其中的TZD表示time zone designator。
 
-## wifi配置
+# wifi配置
 
 Linux下的wifi配置主要使用iw系列命令，包括iw、iwconfig、iwlist、iwpriv。参见：
 
 http://blog.csdn.net/liangyamin/article/details/7209761
 
-## Inotify
+# Inotify
 
 一种高效、实时的Linux文件系统事件监控框架。参考文档：
 
 http://www.infoq.com/cn/articles/inotify-linux-file-system-event-monitoring
 
-## /usr
+# /usr
 
 usr很多人都认为是user缩写，其实不然，这是unix system resource的缩写。
 
-## lsof命令
+# lsof命令
 
 lsof(list open files)是一个列出当前系统打开文件的工具。在linux环境下，任何事物都以文件的形式存在，通过文件不仅仅可以访问常规数据，还可以访问网络连接和硬件。所以如传输控制协议 (TCP) 和用户数据报协议 (UDP) 套接字等，系统在后台都为该应用程序分配了一个文件描述符，无论这个文件的本质如何，该文件描述符为应用程序与基础操作系统之间的交互提供了通用接口。因为应用程序打开文件的描述符列表提供了大量关于这个应用程序本身的信息，因此通过lsof工具能够查看这个列表对系统监测以及排错将是很有帮助的。
 
-## nc命令
+# nc命令
 
 NetCat，在网络工具中有“瑞士军刀”美誉。它短小精悍（1.84版本也不过25k，旧版本或缩减版甚至更小）、功能实用，被设计为一个简单、可靠的网络工具，可通过TCP或UDP协议传输读写数据。同时，它还是一个网络应用Debug分析器，因为它可以根据需要创建各种不同类型的网络连接。
 
@@ -104,13 +104,13 @@ ps默认只显示当前用户的进程。这里是全显示的示例。
 
 挂载NFS。挂载点（即上例中的/mnt/nfs）必须事先创建。
 
-## GnuGo
+# GnuGo
 
 GnuGo是一个著名的开源围棋软件，但是它只有文字界面。一般使用Quarry作为它的GUI。
 
 `sudo apt-get install quarry`
 
-## OCR
+# OCR
 
 linux下可以使用tesseract作为OCR工具。安装方法：
 
@@ -120,7 +120,7 @@ linux下可以使用tesseract作为OCR工具。安装方法：
 
 `tesseract ./111.png 1 -l chi_sim+eng`
 
-## DosBox
+# DosBox
 
 DosBox是Linux平台玩DOS老游戏的法宝。
 
@@ -132,7 +132,7 @@ DosBox是Linux平台玩DOS老游戏的法宝。
 
 `mount c ~/dosprom`
 
-## 大文件处理
+# 大文件处理
 
 在“大数据”时代，我们会经常遇到有大文本文件（上 GB 或更大）的情况。传统的文本编辑软件对处理这样的大文件不太有效，当我们试图打开一个大文件时会经常由于内存不足而郁闷的不行。
 
@@ -144,7 +144,7 @@ DosBox是Linux平台玩DOS老游戏的法宝。
 
 `sudo apt-get install joe`
 
-## Linux知识图谱
+# Linux知识图谱
 
 ![](/images/article/linux_perf_tools_full.png)
 
@@ -152,7 +152,7 @@ DosBox是Linux平台玩DOS老游戏的法宝。
 
 http://www.brendangregg.com/linuxperf.html
 
-## minicom
+# minicom
 
 1.查看串口设备
 
@@ -218,4 +218,23 @@ MobaXterm是一个远程终端登录软件。
 
 http://mobaxterm.mobatek.net/
 
+# 环境变量
+
+设置环境变量的方法：
+
+1）临时的：使用export命令声明即可，变量在关闭shell时失效。示例如下：
+
+`export PATH=/home/xyz/bin:$PATH;`
+
+2）永久的：需要修改配置文件，变量永久生效。
+
+在/etc/profile文件中添加变量（对所有用户生效）。修改文件后要想马上生效，还要运行`source /etc/profile`，不然只能在下次重进此用户时生效。
+
+在用户目录下的.bash_profile文件中增加变量（对该用户生效）。同样需要source才能马上生效。
+
+重要的环境变量：
+
+PATH：可执行文件路径。
+
+LD_LIBRARY_PATH：动态链接库文件路径
 

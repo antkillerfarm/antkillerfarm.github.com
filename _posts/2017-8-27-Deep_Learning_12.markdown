@@ -1,10 +1,22 @@
 ---
 layout: post
-title:  深度学习（十二）——YOLO, SSD
+title:  深度学习（十二）——Faster R-CNN, YOLO, SSD
 category: theory 
 ---
 
-## Region Proposal Networks（续）
+# Faster R-CNN（续）
+
+## Region Proposal Networks
+
+Faster R-CNN最重要的改进就是使用区域生成网络（Region Proposal Networks）替换Selective Search。因此，faster RCNN也可以简单地看做是“**RPN+fast RCNN**”。
+
+![](/images/article/rpn.png)
+
+上图是RPN的结构图。和SPPNet的ROI映射做法类似，RPN直接在feature map，而不是原图像上，生成区域。
+
+由于Faster R-CNN最后会对bbox位置进行精调，因此这里生成区域的时候，只要大致准确即可。
+
+![](/images/article/rpn_feature_map.png)
 
 由于CNN所生成的feature map的尺寸，通常小于原图像。因此将feature map的点映射回原图像，就变成了上图所示的稀疏网点。这些网点也被称为原图感受野的中心点。
 
@@ -226,40 +238,5 @@ YOLO中，由于每个格子只有1个default box，所以对于一个格子中�
 
 显然，在SSD中，一个ground truth box可能对应多个default box。
 
-
-
-## 参考
-
-http://www.jianshu.com/p/ebebfcd274e6
-
-Caffe-SSD训练自己的数据集教程
-
-https://zhuanlan.zhihu.com/p/24954433
-
-SSD
-
-http://blog.csdn.net/zy1034092330/article/details/72862030
-
-SSD详解
-
-http://blog.csdn.net/jesse_mx/article/details/74011886
-
-SSD模型fine-tune和网络架构
-
-http://blog.csdn.net/u010167269/article/details/52563573
-
-SSD论文阅读
-
-http://blog.csdn.net/zijin0802034/article/details/53288773
-
-另一个SSD论文阅读
-
-http://www.lai18.com/content/24600342.html
-
-还是一个SSD论文阅读
-
-https://www.zhihu.com/question/49455386
-
-为什么SSD(Single Shot MultiBox Detector)对小目标的检测效果不好？
 
 

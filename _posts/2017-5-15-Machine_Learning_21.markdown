@@ -16,13 +16,17 @@ category: theory
 
 $$P=\frac{TP}{TP+FP},R=\frac{TP}{TP+FN}$$
 
-以P和R为坐标轴，所形成的曲线就是P-R曲线。
+以P和R为坐标轴，所形成的曲线就是P-R曲线。曲线下方的面积一般称为AP（Average Precision）。
+
+![](/images/article/AP.png)
 
 ROC（Receiver operating characteristic）曲线的纵轴是真正例率（True Positive Rate，TPR），横轴是假正例率（False Positive Rate，FPR）。其定义如下：
 
 $$TPR=\frac{TP}{TP+FN},FPR=\frac{FP}{TN+FP}$$
 
 ROC曲线下方的面积被称为AUC（Area Under ROC Curve）。
+
+![](/images/article/ROC.gif)
 
 更多内容参见下图：
 
@@ -31,6 +35,18 @@ ROC曲线下方的面积被称为AUC（Area Under ROC Curve）。
 原图地址：
 
 https://en.wikipedia.org/wiki/Sensitivity_and_specificity
+
+除此之外，还有F-measure：
+
+![](/images/article/P_R_F.gif)
+
+如果是做搜索，那就是保证召回的情况下提升准确率；如果做疾病监测、反垃圾，则是保准确率的条件下，提升召回率。所以，在两者都要求高的情况下，可以用F-measure来衡量。
+
+Accuracy和Precision是一对容易混淆的概念。其一般定义如下图所示：
+
+![](/images/article/Accuracy_and_precision.svg)
+
+当然，这个定义和机器学习中的定义无关，主要用于物理和统计领域。
 
 # Earth mover's distance
 
