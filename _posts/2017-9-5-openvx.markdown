@@ -132,6 +132,46 @@ Intel Math Kernel Library是一套经过高度优化和广泛线程化的数学�
 
 https://software.intel.com/zh-cn/mkl
 
+## NetLib
+
+NetLib是一个数学方面的网站，收集了大量的数学软件和论文。官网：
+
+http://www.netlib.org/
+
+知名软件LAPACK（Linear Algebra PACKage）和BLAS (Basic Linear Algebra Subprograms)的官网就在NetLib：
+
+http://www.netlib.org/lapack/index.html
+
+http://www.netlib.org/blas/index.html
+
+LAPACK和BLAS的历史非常悠久，是用Fortran语言编写的。
+
+## 常用线性代数库
+
+### ATLAS（Automatically Tuned Linear Algebra Soft）
+
+代码：
+
+https://sourceforge.net/projects/math-atlas/
+
+安装：
+
+`sudo apt-get install libatlas-base-dev`
+
+### OpenBLAS
+
+官网：
+
+http://www.openblas.net/
+
+代码：
+
+https://github.com/xianyi/OpenBLAS
+
+>作者：张先轶，北京理工大学本硕（2005年、2007年）+中科院博士（2014年）。PerfXLab（澎峰科技）创始人。   
+>个人主页：   
+>http://xianyi.github.io/index_cn.htm
+
 # NVIDIA
 
 NVIDIA作为行业龙头，其影响力甚至在Khronos Group之上，它提出的标准很多成为了行业的事实标准。

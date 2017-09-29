@@ -194,7 +194,12 @@ https://mp.weixin.qq.com/s/eDA6-BqPmjGBOPsOom0VIw
 
 https://mp.weixin.qq.com/s/vt25TVX-tcurtAC63dYYNA
 
-让聊天机器人同你聊得更带劲 - 对话策略学习
+让聊天机器人同你聊得更带劲-对话策略学习
+
+https://mp.weixin.qq.com/s/2dTCvWujgJ71Dsbm-pGcrA
+
+谷歌的多语种神经网络翻译系统！
+
 
 
 
