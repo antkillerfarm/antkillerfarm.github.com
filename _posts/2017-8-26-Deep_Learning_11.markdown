@@ -64,8 +64,6 @@ http://host.robots.ox.ac.uk/pascal/VOC/voc2012/devkit_doc.pdf
 
 PASCAL VOC还对P-R曲线的采样做出规定。2012之前的标准中，P-R曲线只需要对recall值进行10等分采样即可。而2012标准规定，对每个recall值都要进行采样。
 
-http://host.robots.ox.ac.uk/pascal/VOC/voc2012/devkit_doc.pdf
-
 参考：
 
 http://blog.sina.com.cn/s/blog_9db078090102whzw.html
@@ -249,6 +247,12 @@ Faster-RCNN是任少卿2016年在MSRA提出的新算法。Ross Girshick和何恺
 论文：
 
 《Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks》
+
+代码：
+
+https://github.com/ShaoqingRen/faster_rcnn
+
+https://github.com/rbgirshick/py-faster-rcnn
 
 ![](/images/article/faster_rcnn_p_2.png)
 

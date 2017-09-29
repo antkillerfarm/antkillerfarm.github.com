@@ -37,8 +37,6 @@ Linear Discriminant Analysis
 
 Partial Least Squares Discriminant Analysis
 
-HNM：Hard Negative Mining
-
 http://blog.codinglabs.org/articles/algorithms-for-cardinality-estimation-part-i.html
 
 解读Cardinality Estimation算法

@@ -86,6 +86,10 @@ https://mp.weixin.qq.com/s/VKQufVUQ3TP5m7_2vOxnEQ
 
 通过Faster R-CNN实现当前最佳的目标计数
 
+http://blog.csdn.net/zy1034092330/article/details/62044941
+
+Faster RCNN详解
+
 # YOLO
 
 YOLO: Real-Time Object Detection，是一个基于神经网络的实时对象检测软件。它的原理基于Joseph Chet Redmon 2016年的论文：
@@ -180,6 +184,10 @@ http://www.yeahkun.com/2016/09/06/object-detection-you-only-look-once-caffe-shi-
 
 Object detection: You Look Only Once(YOLO)
 
+http://blog.csdn.net/zy1034092330/article/details/72807924
+
+YOLO
+
 # SSD
 
 SSD是Wei Liu于2016年提出的算法。
@@ -224,7 +232,7 @@ YOLO有一些缺陷：每个网格只预测一个物体，容易造成漏检；�
 
 和YOLO一样，卷积层的每个点都是一个vector，含义也和YOLO类似，只是分类的时候，多了一个背景的类别，所以就成了20+1类。
 
-YOLO中，由于每个格子只有1个default box，所以对于一个格子中包含两个物体的情况是无能为力的。SSD的Anchor方法略微改善了这方面的性能，但对于超过Anchor数量的情况，仍然无能为力。因此，这两者对于小目标的检测，没有RCNN系列算法的效果好。
+在YOLO中，由于每个格子只有1个default box，所以对于一个格子中包含两个物体的情况是无能为力的。SSD的Anchor方法略微改善了这方面的性能，但对于超过Anchor数量的情况，仍然无能为力。因此，这两者对于小目标的检测，没有RCNN系列算法的效果好。
 
 ## 训练策略
 
@@ -238,5 +246,8 @@ YOLO中，由于每个格子只有1个default box，所以对于一个格子中�
 
 显然，在SSD中，一个ground truth box可能对应多个default box。
 
+![](/images/article/ssd.jpg)
+
+例如上图，有两个default box与猫匹配，一个default box与狗匹配。
 
 

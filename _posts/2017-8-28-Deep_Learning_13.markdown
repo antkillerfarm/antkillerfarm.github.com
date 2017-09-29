@@ -6,6 +6,26 @@ category: theory
 
 # SSD（续）
 
+### Hard Negative Mining
+
+Hard Negative Mining是机器学习领域的一个常用技巧。
+
+对于正负样本数量不均衡的数据集（这里假设负样本数量远大于正样本数量），通常的做法有：
+
+1.增加正样本的数量。这个过程通常叫做数据增强（Data Augmentation）。例如对图片进行旋转、位移得到新的正样本。
+
+2.减少负样本的数量。这里实际上是一个筛选有价值的负样本的过程。Hard Negative Mining就属于这类方法，它认为负样本的分数越高，越有价值。
+
+具体到图像分类任务就是：那些不包含该物体但分值却很高的样本。通俗的讲，就是那些容易被混淆的负样本。
+
+3.修改正负判定门限，以匹配正负样本比例。例如，提高IOU门限。
+
+4.异常点检测。
+
+在SSD中，用于预测的feature map上的每个点都对应有6个不同的default box，绝大部分的default box都是负样本，导致了正负样本不平衡。
+
+在训练过程中，采用了Hard Negative Mining的策略（根据confidence loss对所有的box进行排序，使正负例的比例保持在1:3）来平衡正负样本的比率。
+
 ## 参考
 
 http://www.jianshu.com/p/ebebfcd274e6
