@@ -394,5 +394,8 @@ https://mp.weixin.qq.com/s/UDAcjmCOUdzbXaAgKWOczQ
 
 深度判别和共享特征学习的图像分类
 
+https://mp.weixin.qq.com/s/d9XmDCahK6UBlYWhI0D5jQ
+
+深度线性神经网络也能做非线性计算，OpenAI使用进化策略新发现
 
 

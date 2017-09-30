@@ -6,6 +6,22 @@ category: theory
 
 # SSD（续）
 
+## 训练策略
+
+监督学习训练的关键点：如何把标注信息(ground true box,ground true category)映射到（default box上）？
+
+### 正负样本
+
+与ground truth box的IOU大于0.5的default box，被定为该ground truth box的正样本，其它的default box则为负样本。
+
+而一般的MultiBox算法中，只有IOU最大的default box才是正样本。
+
+显然，在SSD中，一个ground truth box可能对应多个default box。
+
+![](/images/article/ssd.jpg)
+
+例如上图，有两个default box与猫匹配，一个default box与狗匹配。
+
 ### Hard Negative Mining
 
 Hard Negative Mining是机器学习领域的一个常用技巧。
@@ -25,6 +41,20 @@ Hard Negative Mining是机器学习领域的一个常用技巧。
 在SSD中，用于预测的feature map上的每个点都对应有6个不同的default box，绝大部分的default box都是负样本，导致了正负样本不平衡。
 
 在训练过程中，采用了Hard Negative Mining的策略（根据confidence loss对所有的box进行排序，使正负例的比例保持在1:3）来平衡正负样本的比率。
+
+## Caffe实现的细节问题
+
+![](/images/article/ssd_4.png)
+
+上图是SSD末端的caffe结构图。我们注意到在flatten之前有个permute的操作。这个实际上还是和caffe blob的格式有关。
+
+只有flatten的效果：[B, C*H*W]
+
+permute+flatten的效果：[B, H*W*C]
+
+C在最后，意味着同一个点的不同通道的信息挨着放在一起，从而保证了信息的局部空间性保持不变。
+
+显然，这里如果是TensorFlow的tensor结构的话，permute就没有存在的必要了。
 
 ## 参考
 

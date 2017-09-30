@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Ubuntu使用技巧（二）, Fedora, CentOS
+title:  Ubuntu使用技巧（二）, CentOS
 category: technology 
 ---
 
@@ -31,10 +31,6 @@ Ubuntu 16.04正式发布（2016.4.21）之后，我第一时间下载了下来�
 这是一个ISP DNS导致的问题。其中一个解决方法：
 
 `sudo apt-get remove gvfs-backends`
-
-# apt vs. apt-get
-
-在ubuntu14.04以后，apt逐渐取代apt-get，称为默认的软件升级工具。基本可以认为apt=apt-get+apt-cache。
 
 # 清理系统
 
@@ -161,6 +157,18 @@ http://mozilla.com.cn/addon/76-pagesaver/
 
 这个插件可以将网页保存为图片。
 
+# Virtual MIDI Piano Keyboard
+
+VMPK是一款MIDI生成工具软件，也就是俗称的“虚拟电子琴”软件。但它本身只生成MIDI输出，需要配合使用MIDI后处理软件，才能发声。常见的MIDI后处理软件有Qsynth、TiMidity。
+
+# 便签软件
+
+主要有两类便签软件：
+
+1.支持超链接的便签。典型的有Gnote和Tomboy，这两个软件都有内容检索的功能。
+
+2.桌面随意贴。典型的有Indicator Stickynotes和Knotes。后者有内容检索的功能，而前者没有。
+
 # ASCII表情
 
 ╮(╯_╰)╭
@@ -257,52 +265,37 @@ Ctrl+Alt+T：启动Terminal
 
 Ctrl+Super+D：最小化所有窗口
 
-# Fedora
+# 桌面主题
 
-Fedora作为主要的Linux发行版之一，我虽然用的不多，但实际上这却是我最早接触的Linux发行版。后来换用Ubuntu，很大的原因是因为：这是Google为Android选择的开发平台。
+用腻了系统自带的桌面主题之后，我打算换个新鲜一些的桌面主题，比如Mac OS X风格的。
 
-最近因为工作需要重新捡起了Fedora。但公司所用的版本太过古老，还是2009年的Fedora 12。所以想了一下，开始试用最新的Fedora 22。这里是使用过程中的一些操作笔记。
+1.安装主题修改工具
 
-## 安装
+`sudo apt-get install unity-tweak-tool`
 
-https://getfedora.org/
-
-这是官方的下载地址。这里我用的是Workstation版本。
-
-Fedora 22的默认桌面是GNOME 3.16，这一版的外观借鉴了Mac OS X的一些设计，让人眼前一亮。
-
-## 安装软件
-
-Fedora 22使用dnf替代yum。因此安装基本gcc开发环境，可用如下命令：
-
-`dnf install gcc kernel-devel patch bison flex subversion`
-
-如果下载速度较慢的话，可以在/etc/dnf/dnf.conf最后添加：
-
-`fastestmirror=true`
-
-保存后，执行
+2.安装Mac OS X主题
 
 {% highlight bash %}
-$ sudo dnf clean all
-$ sudo dnf makecache
+sudo add-apt-repository ppa:noobslab/themes
+sudo apt-get update
+sudo apt-get install mac-ithemes-v3 mac-icons-v3
 {% endhighlight %}
 
-此外，和Ubuntu一样，Fedora也有自己的网站可以查询软件包信息：
+3.Cairo Dock
 
-https://admin.fedoraproject.org/pkgdb/
+做完上面两步之后，基本的Mac OS X风格已经有了，但Mac最经典的Dock启动器还没有。这里介绍一下Cairo Dock。
 
-## 共享文件夹
+安装方法：
 
-我用的是VirtualBox的虚拟环境，因此除了在VirtualBox中，设置共享文件夹之外，还需对Fedora进行如下操作：
+`sudo apt-get install cairo-dock`
 
-1.添加用户到vboxsf中。
+Cairo Dock不仅具有类似Mac OS X的风格，还有其他的风格可供选择下载。比如我使用的是Chrome风格。
 
-`usermod -a -G vboxsf <your user name>`
+4.其他主题
 
-2.重启。（这一步必不可少，否则上面的配置不会生效。）
+http://www.ubuntuthemes.org/
 
-这样就可以在Fedora中浏览共享文件夹了。
+这个网站收集了很多桌面主题，但是需要注册，因为有些主题是收费的。
 
 # CentOS
 

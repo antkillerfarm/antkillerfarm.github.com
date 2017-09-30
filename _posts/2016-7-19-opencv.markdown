@@ -76,7 +76,7 @@ http://blog.csdn.net/mmz_xiaokong/article/details/7916189
 
 http://deeplearning.net/
 
-一个深度学习方面的资料网站。从该网站提供的招聘信息来看，caffe、Theano、Torch是目前主流的三大框架库。
+一个深度学习方面的资料网站。
 
 http://deeplearning.net/software/theano/
 

@@ -179,6 +179,14 @@ linux:
 
 `pip install --upgrade <package name>`
 
+更换源：
+
+`pip install -i  https://pypi.tuna.tsinghua.edu.cn/simple  <package name>`
+
+指定版本：
+
+`pip install -v pycrypto==2.3`
+
 ## IDE
 
 官方自带的IDLE，以现代IDE的观点来看，只是个精致的小玩具而已。

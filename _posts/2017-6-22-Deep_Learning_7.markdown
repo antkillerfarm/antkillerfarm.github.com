@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（七）—— GAN
+title:  深度学习（七）——GAN
 category: theory 
 ---
 
@@ -53,6 +53,48 @@ http://www.jianshu.com/p/8e269451795d
 http://blog.csdn.net/shenxiaolu1984/article/details/51444525
 
 超轻量级网络SqueezeNet算法详解
+
+## 其他知名CNN
+
+# Network In Network
+
+论文：
+
+《Network In Network》
+
+![](/images/article/nin.png)
+
+参考：
+
+http://blog.csdn.net/sheng_ai/article/details/41313883
+
+Network In Network(精读)
+
+http://blog.csdn.net/zhufenghao/article/details/52526611
+
+Network In Network
+
+http://www.cnblogs.com/dmzhuo/p/5868346.html
+
+读论文“Network in Network”——ICLR 2014
+
+# ZF Net
+
+论文：
+
+《Visualizing and understandingConvolutional Networks》
+
+本文是Matthew D.Zeiler 和Rob Fergus于（纽约大学）2013年撰写的论文，主要通过Deconvnet（反卷积）来可视化卷积网络，来理解卷积网络，并调整卷积网络；本文通过Deconvnet技术，可视化Alex-net，并指出了Alex-net的一些不足，最后修改网络结构，使得分类结果提升。
+
+参考：
+
+http://blog.csdn.net/u011534057/article/details/51274862
+
+论文阅读笔记
+
+http://blog.csdn.net/whiteinblue/article/details/43312059
+
+另一篇论文阅读笔记
 
 ## 参考
 

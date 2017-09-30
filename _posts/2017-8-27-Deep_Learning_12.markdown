@@ -32,13 +32,19 @@ anchor的后处理如上图所示。
 
 ## 定义损失函数
 
-对于每个anchor，首先在后面接上一个二分类softmax，有2个score 输出用以表示其是一个物体的概率与不是一个物体的概率 ($$p_i$$)。这个概率也可以理解为前景与后景，或者物体和背景的概率。
+![](/images/article/faster_rcnn_p_3.png)
+
+对于每个anchor，首先在后面接上一个二分类softmax（上图左边的Softmax），有2个score输出用以表示其是一个物体的概率与不是一个物体的概率 ($$p_i$$)。这个概率也可以理解为前景与后景，或者物体和背景的概率。
 
 然后再接上一个bounding box的regressor输出代表这个anchor的4个坐标位置（$$t_i$$），因此RPN的总体Loss函数可以定义为 ：
 
 $$L(\{p_i\},\{t_i\})=\frac{1}{N_{cls}}\sum_iL_{cls}(p_i,p_i^*)+\lambda \frac{1}{N_{reg}}\sum_ip_i^*L_{reg}(t_i,t_i^*)$$
 
 该公式的含义和计算都比较复杂，这里不再赘述。
+
+上图中，二分类softmax前后各添加了一个reshape layer，是什么原因呢？
+
+这与caffe的实现的有关。bg/fg anchors的矩阵，其在caffe blob中的存储形式为[batch size, 2*9, H, W]。这里的2代表二分类，9是anchor的个数。因为这里的softmax只分两类，所以在进行计算之前需要将blob变为[batch size, 2, 9*H, W]。之后再reshape回复原状。
 
 ## RPN和Fast R-CNN协同训练
 
@@ -233,21 +239,5 @@ YOLO有一些缺陷：每个网格只预测一个物体，容易造成漏检；�
 和YOLO一样，卷积层的每个点都是一个vector，含义也和YOLO类似，只是分类的时候，多了一个背景的类别，所以就成了20+1类。
 
 在YOLO中，由于每个格子只有1个default box，所以对于一个格子中包含两个物体的情况是无能为力的。SSD的Anchor方法略微改善了这方面的性能，但对于超过Anchor数量的情况，仍然无能为力。因此，这两者对于小目标的检测，没有RCNN系列算法的效果好。
-
-## 训练策略
-
-监督学习训练的关键点：如何把标注信息(ground true box,ground true category)映射到（default box上）？
-
-### 正负样本
-
-与ground truth box的IOU大于0.5的default box，被定为该ground truth box的正样本，其它的default box则为负样本。
-
-而一般的MultiBox算法中，只有IOU最大的default box才是正样本。
-
-显然，在SSD中，一个ground truth box可能对应多个default box。
-
-![](/images/article/ssd.jpg)
-
-例如上图，有两个default box与猫匹配，一个default box与狗匹配。
 
 

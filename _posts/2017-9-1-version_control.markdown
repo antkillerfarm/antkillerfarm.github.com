@@ -50,6 +50,50 @@ SVN是这一代的集大成者，使用简单的同时，仍保有相当强度�
 
 ## 参考
 
+https://mp.weixin.qq.com/s/bjxJyOitynRtCoW0FX1gXw
+
+一文带你入门Tensorflow
+
+https://mp.weixin.qq.com/s/zmTqWNXlYcDyZb_dmEo_5Q
+
+TensorFlow/PyTorch/Sklearn实现的五十种机器学习模型
+
+https://mp.weixin.qq.com/s/O5vvGKHWkJQWzeiL7A_S_g
+
+TensorFlow简单介绍
+
+https://mp.weixin.qq.com/s/OmVAnkHV2aI4D4pMKyVjCQ
+
+基于TensorFlow理解三大降维技术：PCA、t-SNE和自编码器
+
+https://mp.weixin.qq.com/s/5wy6yqaW_9pMBhgw8qDdOQ
+
+基于TensorFlow打造强化学习API
+
+https://mp.weixin.qq.com/s/68vaQRqUo8u09iheKzFVEw
+
+玩转TensorFlow深度学习
+
+https://mp.weixin.qq.com/s/TZMOO_LFCxk297lKNQfvGQ
+
+TensorFlow从基础到实战：一步步教你创建交通标志分类神经网络
+
+http://blog.csdn.net/u012436149
+
+一个TensorFlow+PyTorch的blog
+
+https://mp.weixin.qq.com/s/HUUwtyjRllg-5olqYHK4XA
+
+基于TensorFlow的开源项目FaceRank
+
+https://mp.weixin.qq.com/s/N2OP1uX7JjfIJQ_B4NHKpw
+
+横向对比三大分布式机器学习平台：Spark、PMLS、TensorFlow
+
+https://github.com/jinfagang/rl_atari_pytorch
+
+ReinforcementLearning Learn Play Atari Using DDPG and LSTM.
+
 https://mp.weixin.qq.com/s/JSZwQkyxSSwfBWKJ578j3A
 
 TensorFlow最好的入门文章
@@ -157,6 +201,10 @@ https://mp.weixin.qq.com/s/yc1ssCzaPzI4UUsl4jl5Yw
 https://mp.weixin.qq.com/s/hquOoKeeHQXqWcHM6Bkvbw
 
 如何训练一个简单的音频识别网络
+
+https://mp.weixin.qq.com/s/KohwsQQetwjfTj-PXvLjwA
+
+使用MNIST数据集，在TensorFlow上实现基础LSTM网络
 
 # NLP参考资源
 

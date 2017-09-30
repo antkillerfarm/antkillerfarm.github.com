@@ -394,6 +394,10 @@ https://mp.weixin.qq.com/s/9X77MPcQOQPwZaOVIVfo9Q
 
 用PyTorch搭建抽取式摘要系统
 
+https://mp.weixin.qq.com/s/y5LLraGWuYUbOted9N-GWQ
+
+如何从TensorFlow转入PyTorch
+
 ### 量子计算 & 遗传算法
 
 https://www.zhihu.com/question/28171555

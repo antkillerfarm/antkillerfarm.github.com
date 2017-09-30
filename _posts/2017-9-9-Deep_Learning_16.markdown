@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十六）——深度强化学习, Ultra Deep Network, Network In Network
+title:  深度学习（十六）——深度强化学习, Ultra Deep Network
 category: theory 
 ---
 
@@ -198,17 +198,4 @@ FLOPS：Floating-point Operations Per Second，每秒所执行的浮点运算次
 
 显然NN的INT8计算主要以MACC为单位。
 
-# Network In Network
-
-http://blog.csdn.net/sheng_ai/article/details/41313883
-
-Network In Network(精读)
-
-http://blog.csdn.net/zhufenghao/article/details/52526611
-
-Network In Network
-
-http://www.cnblogs.com/dmzhuo/p/5868346.html
-
-读论文“Network in Network”——ICLR 2014
 
