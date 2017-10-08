@@ -304,4 +304,23 @@ https://mp.weixin.qq.com/s/MUMQuZLDE5iyogLnIIBaMw
 
 7步让你从零开始掌握Python机器学习！
 
+http://mp.weixin.qq.com/s/5vI1Ii6bd_IzrXKHlvULSQ
+
+是学习Java还是Python？一张图告诉你！
+
+http://mp.weixin.qq.com/s/Ergq5KKM5vWLWirTf9loEw
+
+7步让你从零开始掌握Python机器学习！
+
+https://mp.weixin.qq.com/s/Ty46-s0kvr2MpbUhQPXJfQ
+
+朴素贝叶斯实战篇之新浪新闻分类
+
+https://mp.weixin.qq.com/s/CMxo4FNxWYyoG-gxAgtzyA
+
+从零开始：手把手教你安装深度学习操作系统、驱动和各种python库！
+
+https://github.com/leetmaa/KMCLib
+
+KMCLib - a general framework for lattice kinetic Monte Carlo (KMC) simulations
 

@@ -8,6 +8,10 @@ category: theory
 
 这是根据Andrew Ng的《机器学习讲义》编写的系列blog。
 
+>吴恩达，英文名Andrew Ng，1976年生，华裔，在香港和新加坡长大。CMU本科+MIT硕士（1998年）+UCB博士（2002年）。斯坦福大学副教授，百度前首席科学家。   
+>个人主页：   
+>http://www.andrewng.org/
+
 http://www.cnblogs.com/jerrylead/archive/2012/05/08/2489725.html
 
 这是网友jerrylead翻译整理的版本，也是本文的一个重要的参考。
@@ -19,6 +23,12 @@ http://www.tcse.cn/~xulijie/
 我写的版本在jerrylead版本的基础上，略有增删，添加了一下其他资料里的内容。
 
 还有就是使用Mathjax书写公式，便于其他人的修改与传播。
+
+该系列讲义实际上也就是网上非常知名的斯坦福CS229课程。该课程官网：
+
+http://cs229.stanford.edu/syllabus.html
+
+用吴恩达自己的话来说，他还拿着斯坦福教职，很大程度就是想教这门课。因此，该课程内容每年都有小幅更新。
 
 # 线性回归
 

@@ -226,7 +226,11 @@ http://web.cecs.pdx.edu/~mperkows/temp/May22/0020.Matrix-multiplication-systolic
 
 https://mp.weixin.qq.com/s/z68hk1yqg60QCjgTyzgG2w
 
-GPU深度学习的“加速神器” 
+GPU深度学习的“加速神器”
+
+https://mp.weixin.qq.com/s/BD-HAILp3TPvBFlIy6QC4w
+
+一文看懂机器视觉芯片
 
 ## 并行 & 框架
 
@@ -297,6 +301,10 @@ Caffe作者贾扬清教你怎样打造更加优秀的深度学习架构
 https://mp.weixin.qq.com/s/_mrYI7McMBUx0lEh4rNiYQ
 
 百度开源移动端深度学习框架MDL，手机部署CNN支持iOS GPU
+
+https://mp.weixin.qq.com/s/qkvX0rmEe0yQ-BhCmWAXSQ
+
+李沐：AWS开源端到端AI框架编译器NNVM
 
 ## Other
 

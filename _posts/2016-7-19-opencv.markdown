@@ -158,6 +158,18 @@ https://mp.weixin.qq.com/s/g-F-D5PC75BjbaRBmifnZw
 
 人脸Haar特征与快速计算神器：积分图
 
+https://mp.weixin.qq.com/s/PNpm286T2CDFXPuEUEP3jw
+
+OpenCV3.3深度学习模块-对象检测演示
+
+http://mp.weixin.qq.com/s/jfDH_Cq9UDudNNGLeLy2uA
+
+Python3.6+OpenCV3.3开发环境搭建
+
+https://mp.weixin.qq.com/s/PxsS0mgdCTQ_l7ZdjmmrvQ
+
+摄影爱好者玩编程：利用Python和OpenCV打造专业级长时曝光摄影图
+
 ## 论文
 
 《Moving Gradients: A Path-Based Method for Plausible Image Interpolation》：视频帧插值算法

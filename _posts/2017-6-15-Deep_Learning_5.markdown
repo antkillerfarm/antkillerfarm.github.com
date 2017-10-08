@@ -115,6 +115,14 @@ https://mp.weixin.qq.com/s/MQR7c57NL4b5i4MRA2JgWA
 
 用Python实现CNN长短期记忆网络！
 
+http://mp.weixin.qq.com/s/V2-grLPdZ66FOiC2duc-EA
+
+如何判断LSTM模型中的过拟合与欠拟合
+
+http://mp.weixin.qq.com/s/3nwgft9c27ih172ANwHzvg
+
+从零开始：如何使用LSTM预测汇率变化趋势
+
 # 神经元激活函数进阶
 
 在《深度学习（一、二）》中，我们探讨了ReLU相对于sigmoid函数的改进，以及一些保证深度神经网络能够训练的措施。然而即便如此，深度神经网络的训练仍然是一件非常困难的事情，还需要更多的技巧和方法。

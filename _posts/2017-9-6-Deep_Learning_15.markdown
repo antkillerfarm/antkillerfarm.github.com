@@ -1,146 +1,220 @@
 ---
 layout: post
-title:  深度学习（十五）——依存分析
+title:  深度学习（十五）——模型压缩, 人脸识别
 category: theory 
 ---
 
-# 依存分析
+# 模型压缩
 
-## 概况
+对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。
 
-Dependency Parsing是NLP领域的一项重要工作。
+此外，对于一些较大的模型（如VGG），即使机器再给力，单位时间内能处理的图像数量，往往也无法达到实际应用的要求。这点在自动驾驶和视频处理领域显得尤为突出。
 
-![](/images/article/dependency_parsing.png)
+这里首先提到的是韩松的两篇论文：
 
-依存分析的基本目标是**对一句话构建一个表达词与词之间依赖关系的语法树**，如上图所示。
+《Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding》
 
-## 传统方法
+《Learning both Weights and Connections for Efficient Neural Networks》
 
-这里以2003年提出的Greedy transition-based parsing算法为例，介绍一下依存分析的传统做法。
+>韩松，清华本科（2012）+Stanford博士（2017）。MIT AP（from 2018）。   
+>个人主页：   
+>https://stanford.edu/~songhan/
 
-![](/images/article/tbp.png)
+韩松也是SqueezeNet的二作。
 
-![](/images/article/tbp_2.png)
+![](/images/article/nn_compression.png)
 
-上图演示了ROOT结点是如何一步步“吃”进词语（即Shift操作），并生成依存分析树的过程。
+韩松论文的中心思想如上图所示。简单来说，就是去掉原有模型的一些不重要的参数、结点和层。
 
-这里的每一步被称作**transition**。
+参数的选择，相对比较简单。参数的绝对值越接近零，它对结果的贡献就越小。这一点和稀疏矩阵有些类似。
 
-transition中箭头左边的部分是以ROOT为栈底的**stack**，右边的部分是待处理文本的**buffer**，**A**表示依赖关系树。
+结点和层的选择，相对麻烦一些，需要通过算法得到不重要的层。
 
-stack+buffer+A构成了一个**configuration**。GTBP算法的难点，在于如何根据configuration，确定下一步的transition。这在传统做法中，通常是一堆文法规则，或者特征的分类。
+比如可以逐个将每一层50%的参数置零，查看模型性能。对性能影响不大的层就是不重要的。
 
-## 依存分析的准确度指标
+虽然这些参数、结点和层相对不重要，但是去掉之后，仍然会对准确度有所影响。这时可以对精简之后的模型，用训练样本进行re-train，通过残差对模型进行一定程度的修正，以提高准确度。
 
-![](/images/article/dependency_accuracy.png)
+其次还可以看看图森科技的论文：
 
-依存分析的准确度指标主要有UAS和LAS两种。
+https://www.zhihu.com/question/62068158
 
-上图是某句话的依存分析结果。其中Gold表示正确答案，而Parsed表示算法的计算结果。结果的第二列是依存结点，0表示ROOT；第4列是单词的词性。
+如何评价图森科技连发的三篇关于深度模型压缩的文章？
 
-Unlabeled attachment score是指依存结点是否正确。以上图中的例子为例，就是4/5=80%。
+图森的思路比较有意思。其中的方法之一，是利用L1规则化会导致结果的稀疏化的特性，制造出一批接近0的参数。从而达到去除不重要的参数的目的。
 
-Labeled	attachment score不仅考虑依存结点是否正确，还考虑词性是否正确。用样以上图为例，则是2/5=40%。
+除此之外，矩阵量化、Kronecker内积、霍夫曼编码、模型剪枝等也是常见的模型压缩方法。
 
-## 深度方法
+当然最系统的做法还属Geoffrey Hinton的论文：
 
-深度方法的开山之作是陈丹琦2014年的论文：
+《Distilling the Knowledge in a Neural Network》
 
-《A Fast and Accurate Dependency Parser using Neural Networks》
-
-![](/images/article/dependency_parser_nn.png)
-
-上图是该方案的结构图。
-
-我们之前已经指出，在传统方法中，transition是由单词、词性和依赖关系树所确定的。只是这种确定的规则比较复杂，不易提炼出有效特征。
-
-参照我们在CNN中的作为，特征提取这一步骤可以由神经网络来完成。因此，在这里我们将configuration的各个组成部分分别向量化，然后合成为一个长向量，作为Input layer。
-
-这里采用以下的Cube函数作为激活函数，这也是该文的一大创见：
-
-$$h=(W_1^w x^w + W_1^t x^t + W_1^l x^l + b_1)^3$$
-
-Output layer是一个softmax的多分类层，每个分类对应一个transition。
-
-## SyntaxNet
-
-2015年David Weiss在陈丹琦方案的基础上，做了一些改进。
+图森科技的后两篇论文也是在Hinton论文的基础上改进的。
 
 论文：
 
-《Structured Training for Neural Network Transition-Based Parsing》
+《Articulatory and Spectrum Features Integration using Generalized Distillation Framework》
 
-![](/images/article/dependency_parser_nn_2.png)
+参考：
 
-上图是Weiss方案的结构图。该方案相比陈丹琦方案的改进如下：
+https://zhuanlan.zhihu.com/p/24337627
 
-1.由1个隐层改为两个隐层。
+深度压缩之蒸馏模型
 
-2.添加Perceptron Layer作为输出层。（Perceptron Layer的含义参见《机器学习（二十三）》中对于Beam Search的解释）
+https://zhuanlan.zhihu.com/p/24894102
 
-3.全局使用Tri-training算法作为半监督的集成学习算法。（Tri-training算法参见《机器学习（二十二）》）
+《Distilling the Knowledge in a Neural Network》阅读笔记
 
-《Opinion Mining with Deep Recurrent Neural Networks》
+https://luofanghao.github.io/2016/07/20/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0%20%E3%80%8ADistilling%20the%20Knowledge%20in%20a%20Neural%20Network%E3%80%8B/
 
-![](/images/article/Pointer_Sentinel_Mixture_Models.png)
+论文笔记 《Distilling the Knowledge in a Neural Network》
 
-《Pointer Sentinel Mixture Models》
+http://blog.csdn.net/zhongshaoyy/article/details/53582048
 
-https://www.zhihu.com/question/46272554
+蒸馏神经网络
 
-如何评价SyntaxNet？
+https://www.zhihu.com/question/50519680
 
-## NLP的女学霸们
+如何理解soft target这一做法？
 
-http://cs.stanford.edu/people/danqi/
+https://mp.weixin.qq.com/s/0KlnQ8UUxpyhBRdeo0EOAA
 
-陈丹琦，清华本科（姚班）（2012）+斯坦福博士生。
+用于网络压缩的滤波器级别剪枝算法ThiNet
 
-https://homes.cs.washington.edu/~luheng/
+https://mp.weixin.qq.com/s/lO2UM04PfSM5VJYh6vINhw
 
-何律恒，上海交大本科（2010）+宾夕法尼亚大学硕士（2012）+华盛顿大学博士生。
+为模型减减肥：谈谈移动／嵌入式端的深度学习
 
-## CNN在NLP中的应用
+https://mp.weixin.qq.com/s/cIGuJvYr4lZW01TdINBJnA
 
-虽然基本上，CV界是CNN的天下，NLP界是RNN的地盘。然而，两者的界限并不是泾渭分明的。比如下图就是一个CNN在NLP中的应用示例：
+深度压缩网络：较大程度减少了网络参数存储问题
 
-![](/images/article/Convolutional_Sequence_to_Sequence_Learning.png)
+https://mp.weixin.qq.com/s/1JwLP0FmV1AGJ65iDgLWQw
 
-卷积本质上是一个局部运算。对词向量的卷积，实际上等效于n-gram的词袋模型。
+神经网络模型压缩技术
 
-参见：
+https://mp.weixin.qq.com/s/Xqc4UgcfCUWYOeGhjNpidA
 
-http://www.jeyzhang.com/cnn-apply-on-modelling-sentence.html
+CNN模型压缩与加速算法综述
 
-卷积神经网络(CNN)在句子建模上的应用
+https://mp.weixin.qq.com/s/rzv8VCAxBQi0HsUcnLqqUA
 
-https://mp.weixin.qq.com/s/hGGT61frDfm-PQHjSnI3Tw
+处理移动端传感器时序数据的深度学习框架：DeepSense
 
-自然语言处理中CNN模型几种常见的Max Pooling操作
+https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg
 
-## TWE
+旷视科技提出新型卷积网络ShuffleNet，专为移动端设计
 
-http://nlp.csai.tsinghua.edu.cn/~lzy/publications/aaai2015_twe.pdf
+https://mp.weixin.qq.com/s/UYk3YQmFW7-44RUojUqfGg
 
-Topical Word Embeddings
+上交大ICCV：精度保证下的新型深度网络压缩框架
 
-TWE的代码：
+https://mp.weixin.qq.com/s/f3bmtbCY5BfA4v3movwLVg
 
-https://github.com/largelymfs/topical_word_embeddings
+向手机端神经网络进发：MobileNet压缩指南
 
-![](/images/article/sogou.jpg)
+https://mp.weixin.qq.com/s/ZuEi32ZBSjruvtyUimBgxQ
 
-上图可以看出英语的确是世界语言啊。
+揭秘支付宝中的深度学习引擎：xNN
 
-## 无监督的机器翻译
+http://mp.weixin.qq.com/s/iapih9Mme-VKCfsFCmO7hQ
 
-无监督的机器翻译，其要点主要在于比较两种语言语料的词向量空间，以找出词语间的对应关系。
+简单聊聊压缩网络
 
-由word2vec的原理可知，由于训练时神经元是随机初始化的，因此即使是同样的语料，两次训练得到的词向量一般也不会相同，更不用说不同语料了。因此直接比较两个词向量空间中的词向量，是行不通的。
+# 人脸识别
 
-参见：
+## OpenFace
 
-http://nlp.csai.tsinghua.edu.cn/~zm/
+OpenFace是一款开源的人脸识别软件。它的原理基于CVPR 2015年的论文：FaceNet。由于采用了深度学习技术，OpenFace对人脸识别的准确率，大大超过了OpenCV。
 
-张檬，清华本科（2013）+博士（在读）。
+OpenFace是用Python和Torch编写的。
+
+官网：
+
+https://cmusatyalab.github.io/openface/
+
+## Cascade CNN
+
+《A Convolutional Neural Network Cascade for Face Detection》
+
+http://blog.csdn.net/shuzfan/article/details/50358809
+
+人脸检测——CascadeCNN
+
+## 参考
+
+http://www.cnblogs.com/pandaroll/p/6590339.html
+
+开源人脸识别openface
+
+http://mp.weixin.qq.com/s/KQxGQdLa3XzKVIFYqlrV7g
+
+人脸检测与识别的趋势和分析
+
+https://zhuanlan.zhihu.com/p/25335957
+
+人脸检测与深度学习
+
+http://www.leiphone.com/news/201608/MPXlWtGaJLPYL7NB.html
+
+人脸检测发展：从VJ到深度学习
+
+https://mp.weixin.qq.com/s/ZZmLbFzi843g0k3gTncQmA
+
+拿下人脸识别“世界杯”冠军！松下-NUS和美国东北大学实战分享
+
+https://mp.weixin.qq.com/s/DYCXef_09yFFNR0uHL2Q0Q
+
+基于Python的开源人脸识别库：离线识别率高达99.38%
+
+blog.csdn.net/qq_14845119/article/details/52680940
+
+MTCNN（Multi-task convolutional neural networks）人脸对齐
+
+http://blog.csdn.net/shuzfan/article/details/52668935
+
+人脸检测——MTCNN
+
+https://mp.weixin.qq.com/s/eOxd5XbeyVcRYyAAmPr20Q
+
+利用空间融合卷积神经网络通过面部关键点进行伪装人脸识别
+
+https://mp.weixin.qq.com/s/vAjWHpn5HP_lwSv49g71SA
+
+新型半参数变分自动编码器DeepCoder：可分层级编码人脸动作
+
+https://mp.weixin.qq.com/s/IS5iAPZeUrvvyWs29O8Ukg
+
+通过提取神经元知识实现人脸模型压缩
+
+https://mp.weixin.qq.com/s/DEJ0z2CahZIrhTE3VXNVvg
+
+基于注意力机制学习的人脸幻构
+
+https://mp.weixin.qq.com/s/-G94Mj-8972i2HtEcIZDpA
+
+人脸识别世界杯榜单出炉，微软百万名人识别竞赛冠军分享
+
+https://mp.weixin.qq.com/s/bqWle_188lhYO4hpCfafkQ
+
+用浏览器做人脸检测，竟然这么简单？
+
+https://mp.weixin.qq.com/s/kn9JS55wIW2cfpUv7Jm0eQ
+
+深度学习教你如何“以貌取人”！
+
+https://mp.weixin.qq.com/s/3xEDtMoe0iRQSZiN5A1FGw
+
+IPHONE X“刷脸”技术奥秘大揭底
+
+https://mp.weixin.qq.com/s/s5HL6y2P9_KqpSAQg08URw
+
+世界最大人脸对齐数据集ICCV 2017：距离解决人脸对齐已不远
+
+https://mp.weixin.qq.com/s/Z06oUe7oExgkKZ8g2_PnPw
+
+科普人脸表情识别技术
+
+https://mp.weixin.qq.com/s/tS_9gS2ADoEdSKCLB-cxpA
+
+刘小明教授为你讲解人脸识别
 

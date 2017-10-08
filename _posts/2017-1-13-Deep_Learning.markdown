@@ -57,6 +57,10 @@ Deep Learning圈子的主要人物：
 
 >一般将Geoffrey Hinton、Yann LeCun和Yoshua Bengio并称为深度学习的三大宗师。
 
+![](/images/article/author_network.png)
+
+上图是一个更大的DL牛人关系图。
+
 # MP神经元模型
 
 MP神经元模型是1943年，由Warren McCulloch和Walter Pitts提出的。
@@ -168,6 +172,10 @@ $$\sqrt{\frac{2}{n_l}}$$
 http://blog.csdn.net/xizero00/article/details/51013088
 
 Different Methods for Weight Initialization in Deep Learning
+
+https://mp.weixin.qq.com/s/xqWli1xnsGkqYDUjgvOnkQ
+
+反向传播神经网络极简入门
 
 # BP算法的缺点
 

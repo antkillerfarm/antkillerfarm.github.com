@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  IT杂谈, Groovy, C/C++编程心得（二）
+title:  IT杂谈, Groovy, C/C++编程心得（二）, scrapy
 category: technology 
 ---
 
@@ -172,4 +172,37 @@ http://blog.chinaunix.net/uid-7426920-id-2627743.html
 **主要的不同**：malloc不初始化分配的内存，已分配的内存中可以是任意的值。calloc初始化已分配的内存为0。
 
 **次要的不同**：calloc返回的是一个数组，而malloc返回的是一个对象。
+
+# scrapy
+
+scrapy是一个Python写的网页抓取分析工具。网页抓取分析的学名叫做“Web scraping”，可在wiki上获得更多的相关信息。
+
+官网：
+
+https://scrapy.org/
+
+安装：
+
+`sudo apt install python-scrapy`
+
+`scrapy crawl csdn`
+
+参考：
+
+https://segmentfault.com/a/1190000000583419
+
+一个中文简易教程。
+
+https://github.com/scrapy/dirbot
+
+官方例程。
+
+http://www.cnblogs.com/fengzheng/p/4974509.html
+
+另一个中文简易教程。
+
+https://mp.weixin.qq.com/s/nIcUBS0lRrOwVUHoWmKecw
+
+爬虫系列之使用scrapy框架
+
 

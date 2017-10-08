@@ -390,6 +390,10 @@ https://mp.weixin.qq.com/s/psMlGLOZcmX-SmEKr2gUOg
 
 从贝叶斯定理到概率分布：综述概率论基本定义
 
+http://mp.weixin.qq.com/s/axwRMb8lCyMEh2WGIZR1rA
+
+实例详解贝叶斯推理的原理
+
 https://mp.weixin.qq.com/s/yGQSihfBDcXgqBnvvpQDog
 
 蒙特卡罗方法入门
@@ -405,6 +409,26 @@ https://mp.weixin.qq.com/s/2YFjtQn9c8g7mgH5tl-egg
 https://mp.weixin.qq.com/s/0QMjw2cfZu_31BWfpKXMbg
 
 数据挖掘中的十大实用方法，可能你并不一定都熟悉！
+
+http://mp.weixin.qq.com/s/DG5VbDgOcqlRhbEbiP9_aw
+
+Kaggle机器学习之模型融合（stacking）心得
+
+http://mp.weixin.qq.com/s/LMEOL6KUYPnKfSMs1R6d1g
+
+搜寻失落的信号：无监督学习面临的众多挑战
+
+http://mp.weixin.qq.com/s/lvGPcID0f8Jark8ag5NGfQ
+
+机器学习面试题目总结
+
+http://mp.weixin.qq.com/s/AlBWioRkf88dw69C4SAZ8w
+
+谷歌：无需学编程，用手机摄像头和浏览器即可机器学习
+
+https://mp.weixin.qq.com/s/Roum90M-FIhIcuh2mh9gWg
+
+全解机器学习3大分类6大算法的优势和劣势！
 
 # PMML
 

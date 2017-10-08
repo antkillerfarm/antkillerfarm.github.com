@@ -318,15 +318,16 @@ HTTP/1.1 101 Switching Protocols
 　　Sec-WebSocket-Accept: K7DJLdLooIwIG/MOpvWFB3y3FE8=
 {% endhighlight %}
 
-# WFST
+# premake
 
-Weighted-Finite-State-Transducer
+premake是一个轻量级的构建系统。这里所谓的轻量级是和Autotools、CMake相比。
 
-https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/ParallelizingWFSTSpeechDecoders.ICASSP2016.pdf
+Autotools在Unix平台的功能最为全面。CMake添加了对Windows平台的支持，但在Unix平台上，仍不得不借助部分Autotools工具的功能，比如pkg-config。
 
-PARALLELIZING WFST SPEECH DECODERS
+这两个重量级工具，都有很多重量级的使用者，一般不必担心功能不够使的情况。它们的缺点是，使用了特殊的DSL（Domain Specific Language），用户需要花费额外的学习时间来学习这些DSL。
 
-http://www.cs.nyu.edu/~mohri/pub/csl01.pdf
+premake使用lua语言编写，语法比CMake更简单。它的官网是：
 
-Weighted Finite-State Transducers in Speech Recognition
+http://premake.github.io/
 
+premake的缺点在于，它基本上是个人作品，全职开发人员太少，导致功能有限，目前尚无特大项目使用该系统，其功能性和可靠性受到质疑。

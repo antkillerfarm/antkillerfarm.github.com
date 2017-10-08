@@ -233,22 +233,4 @@ static PlaylistTypes special_types[] = {
 
 我这里采用glob2文件，既方便修改，其占用空间也在可接受的范围内。
 
-## TCP远程播放
 
-除了本地播放之外，GStreamer亦支持远程播放。以下仅以TCP远程播放为例。
-
-TCP远程播放采用Client/Server模式。
-
-### step1
-
-1.首先打开播放端软件。（Server端）
-
-`gst-launch-1.0 tcpserversrc host="127.0.0.1" port=3000 ! decodebin ! autoaudiosink`
-
-2.打开多媒体发送端软件。（Clinet端）
-
-`gst-launch-1.0 filesrc location=./1.mp3 ! tcpclientsink host="127.0.0.1" port=3000`
-
-示例代码：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gstreamer/tutorials/cs

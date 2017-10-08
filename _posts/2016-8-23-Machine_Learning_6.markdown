@@ -234,6 +234,10 @@ https://mp.weixin.qq.com/s/MfYRipBX4la5jEG-ZMBhEw
 
 详解LinearSVM
 
+https://mp.weixin.qq.com/s/AaTlJTWR3lWdx3_gGurVeQ
+
+从大间隔分类器到核函数：全面理解支持向量机
+
 # 学习理论
 
 ## 偏差和方差

@@ -122,6 +122,10 @@ http://www.doc88.com/p-1416660147532.html
 
 KNN算法在股票预测中的应用
 
+https://zhuanlan.zhihu.com/p/29838009
+
+K近邻算法
+
 # Optimizer
 
 在《机器学习（一）》中，我们已经指出梯度下降是解决凸优化问题的一般方法。而如何更有效率的梯度下降，就是本节中Optimizer的责任了。
@@ -307,6 +311,10 @@ https://mp.weixin.qq.com/s/LuuvvL9yZ3ucXxRq0pZfsg
 https://zhuanlan.zhihu.com/p/23866364
 
 从梯度下降到Hessian-Free优化
+
+https://mp.weixin.qq.com/s/0gdGNv98DytB8KxwVu_M0A
+
+通俗易懂讲解Deep Learning最优化方法之AdaGrad
 
 # 单分类SVM&多分类SVM
 

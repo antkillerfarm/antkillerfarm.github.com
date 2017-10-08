@@ -196,3 +196,10 @@ https://mp.weixin.qq.com/s/HapJwwmN3-dbQvzp2jzt1w
 |  |  |  |  |
 |  |  |  |  |
 
+参考：
+
+https://mp.weixin.qq.com/s/6KRNawRE1i8de3ctgv6aVg
+
+机器学习词汇表：纵览机器学习基本词汇与概念
+
+

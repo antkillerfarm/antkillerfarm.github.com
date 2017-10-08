@@ -283,16 +283,4 @@ CFLAGS的默认设置是`-g -O2`，可用以下命令修改之：
 
 `libtool --mode=link gcc -o libfoo.la foo.lo -export-symbols=foo.sym`
 
-# premake
 
-premake是一个轻量级的构建系统。这里所谓的轻量级是和Autotools、CMake相比。
-
-Autotools在Unix平台的功能最为全面。CMake添加了对Windows平台的支持，但在Unix平台上，仍不得不借助部分Autotools工具的功能，比如pkg-config。
-
-这两个重量级工具，都有很多重量级的使用者，一般不必担心功能不够使的情况。它们的缺点是，使用了特殊的DSL（Domain Specific Language），用户需要花费额外的学习时间来学习这些DSL。
-
-premake使用lua语言编写，语法比CMake更简单。它的官网是：
-
-http://premake.github.io/
-
-premake的缺点在于，它基本上是个人作品，全职开发人员太少，导致功能有限，目前尚无特大项目使用该系统，其功能性和可靠性受到质疑。

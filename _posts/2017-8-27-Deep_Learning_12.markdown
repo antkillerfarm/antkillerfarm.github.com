@@ -1,10 +1,64 @@
 ---
 layout: post
-title:  深度学习（十二）——Faster R-CNN, YOLO, SSD
+title:  深度学习（十二）——Faster R-CNN, YOLO 
 category: theory 
 ---
 
-# Faster R-CNN（续）
+# Fast R-CNN（续）
+
+## 全连接层提速
+
+Fast R-CNN的论文中还提到了全连接层提速的概念。这个概念本身和Fast R-CNN倒没有多大关系。因此，完全可以将之推广到其他场合。
+
+![](/images/article/fc_svd.png)
+
+它的主要思路是，在两个大的FC层（假设尺寸为u、v）之间，利用SVD算法加入一个小的FC层（假设尺寸为t），从而减少了计算量。
+
+$$u*v\to u*t+t*v$$
+
+## 总结
+
+![](/images/article/fast_rcnn_p.png)
+
+参考：
+
+https://zhuanlan.zhihu.com/p/24780395
+
+Fast R-CNN
+
+http://blog.csdn.net/shenxiaolu1984/article/details/51036677
+
+Fast RCNN算法详解
+
+# Faster R-CNN
+
+Faster-RCNN是任少卿2016年在MSRA提出的新算法。Ross Girshick和何恺明也是论文的作者之一。
+
+>注：任少卿，中科大本科（2011年）+博士（2016年）。Momenta联合创始人+技术总监。   
+>个人主页：   
+>http://shaoqingren.com/
+
+论文：
+
+《Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks》
+
+代码：
+
+https://github.com/ShaoqingRen/faster_rcnn
+
+https://github.com/rbgirshick/py-faster-rcnn
+
+![](/images/article/faster_rcnn_p_2.png)
+
+上图是Faster R-CNN的结构图。
+
+Fast R-CNN尽管已经很优秀了，然而还有一个最大的问题在于：proposal阶段没有整合到CNN中。
+
+这个问题带来了两个不良影响：
+
+1.非end-to-end模型导致程序流程比较复杂。
+
+2.随着后续CNN步骤的简化，生成2k个候选bbox的Selective Search算法成为了整个计算过程的性能瓶颈。（无法利用GPU）
 
 ## Region Proposal Networks
 
@@ -44,7 +98,7 @@ $$L(\{p_i\},\{t_i\})=\frac{1}{N_{cls}}\sum_iL_{cls}(p_i,p_i^*)+\lambda \frac{1}{
 
 上图中，二分类softmax前后各添加了一个reshape layer，是什么原因呢？
 
-这与caffe的实现的有关。bg/fg anchors的矩阵，其在caffe blob中的存储形式为[batch size, 2*9, H, W]。这里的2代表二分类，9是anchor的个数。因为这里的softmax只分两类，所以在进行计算之前需要将blob变为[batch size, 2, 9*H, W]。之后再reshape回复原状。
+这与caffe的实现的有关。bg/fg anchors的矩阵，其在caffe blob中的存储形式为[batch size, 2 * 9, H, W]。这里的2代表二分类，9是anchor的个数。因为这里的softmax只分两类，所以在进行计算之前需要将blob变为$$[batch size, 2, 9 * H, W]。之后再reshape回复原状。
 
 ## RPN和Fast R-CNN协同训练
 
@@ -209,35 +263,4 @@ https://github.com/weiliu89/caffe
 >Wei Liu，南京大学本科（2009）+北卡罗莱娜大学博士（在读）。   
 >个人主页：   
 >http://www.cs.unc.edu/~wliu/
-
-## 网络结构
-
-YOLO有一些缺陷：每个网格只预测一个物体，容易造成漏检；对于物体的尺度相对比较敏感，对于尺度变化较大的物体泛化能力较差。
-
-针对YOLO中的这些不足，SSD在这两方面都有所改进，同时兼顾了mAP和实时性的要求。其思路就是Faster R-CNN+YOLO，利用YOLO的思路和Faster R-CNN的anchor box的思想。
-
-![](/images/article/ssd.png)
-
-上图是SSD的网络结构图。其特点为：
-
-1.采用VGG16的基础网络结构，使用前面的前5层。
-
-2.使用Dilated convolution将fc6和fc7层转化成两个卷积层。
-
-3.再额外增加了3个卷积层，和一个average pool层。不同层次的feature map分别用于default box的偏移以及不同类别得分的预测。
-
-4.通过NMS得到最终的检测结果。
-
-这些增加的卷积层的feature map的大小变化比较大，允许能够检测出不同尺度下的物体：在低层的feature map，感受野比较小，高层的感受野比较大，在不同的feature map进行卷积，可以达到多尺度的目的。
-
-![](/images/article/ssd_2.png)
-
-上图是从另一个角度观察SSD，可以看出SSD可检出8372个default box。这里沿用Faster R-CNN的Anchor方法生成default box。
-
-![](/images/article/ssd_3.png)
-
-和YOLO一样，卷积层的每个点都是一个vector，含义也和YOLO类似，只是分类的时候，多了一个背景的类别，所以就成了20+1类。
-
-在YOLO中，由于每个格子只有1个default box，所以对于一个格子中包含两个物体的情况是无能为力的。SSD的Anchor方法略微改善了这方面的性能，但对于超过Anchor数量的情况，仍然无能为力。因此，这两者对于小目标的检测，没有RCNN系列算法的效果好。
-
 

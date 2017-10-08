@@ -6,7 +6,25 @@ category: technology
 
 # GStreamer应用（续）
 
-## TCP远程播放（续）
+## TCP远程播放
+
+除了本地播放之外，GStreamer亦支持远程播放。以下仅以TCP远程播放为例。
+
+TCP远程播放采用Client/Server模式。
+
+### step1
+
+1.首先打开播放端软件。（Server端）
+
+`gst-launch-1.0 tcpserversrc host="127.0.0.1" port=3000 ! decodebin ! autoaudiosink`
+
+2.打开多媒体发送端软件。（Clinet端）
+
+`gst-launch-1.0 filesrc location=./1.mp3 ! tcpclientsink host="127.0.0.1" port=3000`
+
+示例代码：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gstreamer/tutorials/cs
 
 ### step2
 
@@ -262,38 +280,4 @@ http://docs.gstreamer.com/display/GstSDK/Tutorials
 
 https://github.com/rubenrua/GstreamerCodeSnippets
 
-以下是教程的一些细节的学习心得。
-
-### basic-tutorial-1.c
-
-{% highlight c %}
-/* Build the pipeline */
-pipeline = gst_parse_launch ("playbin2 uri=http://docs.gstreamer.com/media/sintel_trailer-480p.webm", NULL);
-{% endhighlight %}
-
-从这个教程可以看出，我们可以直接使用gst_parse_launch创建pipeline。
-
-### basic-tutorial-7.c
-
-{% highlight c %}
-tee_src_pad_template = gst_element_class_get_pad_template (GST_ELEMENT_GET_CLASS (tee), "src%d");
-{% endhighlight %}
-
-这是代码的其中一段，这里只谈谈`src%d`是怎么来的。使用gst-inspect工具查询tee插件的信息，得到如下内容：
-
-{% highlight bash %}
-Pad Templates:
-  SRC template: 'src%d'
-    Availability: On request
-      Has request_new_pad() function: gst_tee_request_new_pad
-    Capabilities:
-      ANY
-
-  SINK template: 'sink'
-    Availability: Always
-    Capabilities:
-      ANY
-{% endhighlight %}
-
-从中可知，tee插件SRC Pad的模板名就是`src%d`。
 

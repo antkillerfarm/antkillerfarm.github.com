@@ -6,6 +6,62 @@ category: theory
 
 # RCNN（续）
 
+## Selective Search
+
+论文：
+
+https://www.koen.me/research/pub/uijlings-ijcv2013-draft.pdf
+
+Selective Search for Object Recognition
+
+Selective Search的主要思想:
+
+**Step 1**：使用一种过分割手段，将图像分割成小区域 (1k~2k个)。
+
+这里的步骤实际上并不简单，可参考论文：
+
+《Efficient Graph-Based Image Segmentation》
+
+中文版：
+
+http://blog.csdn.net/surgewong/article/details/39008861
+
+**Step 2**：查看现有小区域，按照合并规则合并可能性最高的相邻两个区域。重复直到整张图像合并成一个区域位置。
+
+**Step 3**：输出所有曾经存在过的区域，所谓候选区域。
+
+其中合并规则如下：优先合并以下四种区域：
+
+1.颜色（颜色直方图）相近的。
+
+2.纹理（梯度直方图）相近的。
+
+3.合并后总面积小的：保证合并操作的尺度较为均匀，避免一个大区域陆续“吃掉”其他小区域（例：设有区域a-b-c-d-e-f-g-h。较好的合并方式是：ab-cd-ef-gh -> abcd-efgh -> abcdefgh。不好的合并方法是：ab-c-d-e-f-g-h ->abcd-e-f-g-h ->abcdef-gh -> abcdefgh）
+
+4.合并后，总面积在其bounding box中所占比例大的：保证合并后形状规则。
+
+Step2和Step3可参考论文：
+
+《Selective Search for Object Recognition》
+
+中文版：
+
+http://blog.csdn.net/surgewong/article/details/39316931
+
+http://blog.csdn.net/charwing/article/details/27180421
+
+Selective Search的效果类似下图：
+
+![](/images/article/selective_search.png)
+
+![](/images/article/rcnn_3.png)
+
+上图中的那些方框，就是bounding box。
+
+一般使用IOU（Intersection over Union，交并比）指标，来衡量两个bounding box的重叠度：
+
+$$IOU(A,B)=\frac{A \cap B}{A \cup B}$$
+
 ## 非极大值抑制（NMS）
 
 RCNN会从一张图片中找出n个可能是物体的矩形框，然后为每个矩形框为做类别分类概率（如上图所示）。我们需要判别哪些矩形框是没用的。
@@ -97,6 +153,10 @@ RCNN系列blog
 http://blog.csdn.net/shenxiaolu1984/article/details/51066975
 
 RCNN算法详解
+
+http://mp.weixin.qq.com/s/_U6EJBP_qmx68ih00IhGjQ
+
+Object Detection R-CNN
 
 # SPPNet
 
@@ -211,59 +271,5 @@ SPP将图像pooling成多个固定尺度，而RoI只将图像pooling到单个固
 ![](/images/article/fast_rcnn_multi_task.png)
 
 由于两个Task的信息互为补充，使得分类预测任务的softmax准确率大为提升，SVM也就没有存在的必要了。
-
-## 全连接层提速
-
-Fast R-CNN的论文中还提到了全连接层提速的概念。这个概念本身和Fast R-CNN倒没有多大关系。因此，完全可以将之推广到其他场合。
-
-![](/images/article/fc_svd.png)
-
-它的主要思路是，在两个大的FC层（假设尺寸为u、v）之间，利用SVD算法加入一个小的FC层（假设尺寸为t），从而减少了计算量。
-
-$$u*v\to u*t+t*v$$
-
-## 总结
-
-![](/images/article/fast_rcnn_p.png)
-
-参考：
-
-https://zhuanlan.zhihu.com/p/24780395
-
-Fast R-CNN
-
-http://blog.csdn.net/shenxiaolu1984/article/details/51036677
-
-Fast RCNN算法详解
-
-# Faster R-CNN
-
-Faster-RCNN是任少卿2016年在MSRA提出的新算法。Ross Girshick和何恺明也是论文的作者之一。
-
->注：任少卿，中科大本科（2011年）+博士（2016年）。Momenta联合创始人+技术总监。   
->个人主页：   
->http://shaoqingren.com/
-
-论文：
-
-《Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks》
-
-代码：
-
-https://github.com/ShaoqingRen/faster_rcnn
-
-https://github.com/rbgirshick/py-faster-rcnn
-
-![](/images/article/faster_rcnn_p_2.png)
-
-上图是Faster R-CNN的结构图。
-
-Fast R-CNN尽管已经很优秀了，然而还有一个最大的问题在于：proposal阶段没有整合到CNN中。
-
-这个问题带来了两个不良影响：
-
-1.非end-to-end模型导致程序流程比较复杂。
-
-2.随着后续CNN步骤的简化，生成2k个候选bbox的Selective Search算法成为了整个计算过程的性能瓶颈。（无法利用GPU）
 
 

@@ -1,8 +1,14 @@
 ---
 layout: post
-title:  这些年微软相关的技术总结, Spring, scrapy
+title:  这些年微软相关的技术总结
 category: technology 
 ---
+
+# 入行以来涉及的技术简史（续）
+
+## 4.其他
+
+研究生时代研究过CORBA技术，主要用于通信运营商的网管系统的应用。工作之后，很久都没有听说过这个名词。前段时间，在招聘网上，搜了一下，发现CORBA技术本身并未灭绝，但是用途居然还是局限在网管系统的应用上。而且由于体系的庞大低效，原先使用CORBA构筑的GNOME桌面等PC程序，也将IPC转为更高效（但不通用，也不支持联网）的DBUS技术了。
 
 # C#相关
 
@@ -111,11 +117,18 @@ http://topic.csdn.net/t/20050525/17/4035191.html
 
 执行.bat文件时，如果不想让它运行完后直接关闭窗口，可以为该文件创建快捷方式，右键点击该快捷方式，在“属性”的“快捷方式”页的“目标”栏的最前面添加`%comspec% /k`。
 
-## 7.工程向导
+## 7.如何在bat文件中编写脚本，使得启动命令行之后，能在命令行下执行命令？
+
+`cmd /k dir`
+
+如上所示的命令，在启动命令行之后，会在命令行下执行dir命令。
+
+
+## 8.工程向导
 
 某些SDK可能比较古老，没有匹配VS2005的向导文件，可以采用以下办法试试：找到向导对应的.vsz文件，将Wizard所在行改为Wizard=VsWizard.VsWizardEngine.8.0，但不同版本的向导之间，还是有差别的，因此这一招在某些情况下，可能无效。
 
-## 8.
+## 9.
 
 win32控制台工程，如果在运行时，不希望有控制台窗口，只要在程序中加上：
 
@@ -125,7 +138,7 @@ win32控制台工程，如果在运行时，不希望有控制台窗口，只要
 
 `system("pause");`
 
-## 9.自定义宏
+## 10.自定义宏
 
 环境变量的有效范围是整个系统，如果想定义仅针对项目的环境变量，可以使用自定义宏。
 
@@ -202,76 +215,18 @@ EVC下将MFC的工程分为PPC和wince两种，而VS2005下，不再区分这两
 
 使用tapiRequestMakeCall函数。
 
-# Spring
+# Visio
 
-Spring是一个Java Web应用框架。官网：
+## 如何保存成图片
 
-http://spring.io/
+1.选中打算保存的区域。
 
-## Ubuntu安装Eclipse、Spring
+2.“文件”->“另存为”。
 
-1.安装Eclipse
+3.如果需要缩放的话，调整保存的大小即可。
 
-`sudo apt-get install eclipse`
+## Visio画各种括号(大括号，中括号等)
 
-2.安装Spring
-
-`sudo apt-get install libspring-web-portlet-java`
-
-注意：ubuntu软件仓库中还有一个叫做spring的游戏引擎，不要弄错了。
-
-http://www.mkyong.com/spring/quick-start-maven-spring-example/
-
-http://wiki.jikexueyuan.com/project/spring/
-
-## Restful
-
-http://spring.io/guides/gs/rest-service/
-
-## Spring Boot
-
-https://www.tianmaying.com/tutorial/deploy-spring-boot-application
-
-http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
-
-Spring Boot默认的配置文件
-
-## WebService
-
-https://spring.io/guides/gs/producing-web-service/
-
-http://localhost:9999/ws/countries.wsdl
-
-# scrapy
-
-scrapy是一个Python写的网页抓取分析工具。网页抓取分析的学名叫做“Web scraping”，可在wiki上获得更多的相关信息。
-
-官网：
-
-https://scrapy.org/
-
-安装：
-
-`sudo apt install python-scrapy`
-
-`scrapy crawl csdn`
-
-参考：
-
-https://segmentfault.com/a/1190000000583419
-
-一个中文简易教程。
-
-https://github.com/scrapy/dirbot
-
-官方例程。
-
-http://www.cnblogs.com/fengzheng/p/4974509.html
-
-另一个中文简易教程。
-
-https://mp.weixin.qq.com/s/nIcUBS0lRrOwVUHoWmKecw
-
-爬虫系列之使用scrapy框架
+依次点击“文件(File)”->“形状(Shapes)”->“其他Visio方案(Visio Extras)”->“标注(Callouts)”即可。
 
 

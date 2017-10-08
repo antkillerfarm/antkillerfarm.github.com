@@ -88,7 +88,7 @@ Fabrice Bellard是我崇拜的一位高人。他除了发明ffmpeg之外，还�
 
 http://dranger.com/ffmpeg/
 
-这篇文章是使用ffmpeg做二次开发的入门手册，写的不错。特将要点翻译摘录如下：
+这篇文章是使用ffmpeg做二次开发的入门手册，写的不错。
 
 ## ffmpeg常见用法
 
@@ -98,11 +98,17 @@ http://dranger.com/ffmpeg/
 
 2.转换视频的尺寸
 
-`ffmpeg -i src.mp4 -s 960x540 des.mp4`
+`ffmpeg -i src.mp4 -s 960x540 -acodec copy des.mp4`
 
 3.屏幕录像
 
 `ffmpeg -f alsa -ac 2 -i pulse -f x11grab -r 30 -s 1024x768 -i :0.0 -acodec pcm_s16le -vcodec libx264 -preset ultrafast -crf 0 -threads 0 output.mkv`
+
+参考：
+
+http://www.cnblogs.com/dwdxdy/p/3240167.html
+
+FFmpeg常用基本命令
 
 # SDL
 

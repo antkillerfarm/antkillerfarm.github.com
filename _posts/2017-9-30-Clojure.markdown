@@ -1,0 +1,147 @@
+---
+layout: post
+title:  Clojure, Spring
+category: technology 
+---
+
+# Clojure
+
+Clojure是Lisp语言在JVM上的实现。源代码以.clj为后缀。
+
+官网：
+
+http://clojure.org/
+
+Clojure的安装主要有两种方法：
+
+1.
+
+`sudo apt-get install clojure1.6`
+
+2.Clojure的全部功能都被放在clojure-1.8.0.jar中，因此实际上并不需要安装。所谓安装，不过是下载jar，然后让程序能够找到jar即可。因此，更好的办法是利用我们下面提到的leiningen，自动下载相关依赖。
+
+## leiningen
+
+leiningen是Clojure的自动管理工具。
+
+官网：
+
+http://leiningen.org/
+
+project.clj是Leigingen为项目添加的配置文件，类似于Maven的pom.xml。
+
+project.clj中可以定义项目所需的Clojure的版本，并自动下载依赖。因此，很多Clojure项目在依赖上，往往只写leiningen和maven，根本就不提Clojure。这一点和其他编程语言，包括同为JVM语言的scala，还是差异挺大的。
+
+## Hello World
+
+1.
+
+`lein new app hello`
+
+2.
+
+`cd hello`
+
+`lein run`
+
+这里要注意路径，一定要在project.cl所在的路径下执行lein命令，否则会报如下错误：
+
+`No :main namespace specified in project.clj.`
+
+参见：
+
+https://tonydeng.github.io/2016/07/19/leiningen-clojure-hello-world/
+
+## JavaFX
+
+JavaFX和Clojure的结合，本来不是什么新鲜的东西，然而由于相关环境（JDK、leiningen）的演进，网上的demo已经大多不可用了。
+
+这些变动主要包括：
+
+1.由于JDK7的较新版本之后，JavaFX已经集成到JDK中，因此JavaFX的运行时jar不再需要了。相关依赖需要去除。
+
+2.由于leiningen新版本的改变，现在main函数必须在源代码和工程文件中显式定义。
+
+代码参见：
+
+https://github.com/antkillerfarm/antkillerfarm_rubbish/tree/master/clojure/javafx
+
+# Spring
+
+Spring是一个Java Web应用框架。官网：
+
+http://spring.io/
+
+## Ubuntu安装Eclipse、Spring
+
+1.安装Eclipse
+
+`sudo apt-get install eclipse`
+
+2.安装Spring
+
+`sudo apt-get install libspring-web-portlet-java`
+
+注意：ubuntu软件仓库中还有一个叫做spring的游戏引擎，不要弄错了。
+
+http://www.mkyong.com/spring/quick-start-maven-spring-example/
+
+http://wiki.jikexueyuan.com/project/spring/
+
+## Restful
+
+http://spring.io/guides/gs/rest-service/
+
+## Spring Boot
+
+https://www.tianmaying.com/tutorial/deploy-spring-boot-application
+
+http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+
+Spring Boot默认的配置文件
+
+## WebService
+
+https://spring.io/guides/gs/producing-web-service/
+
+http://localhost:9999/ws/countries.wsdl
+
+# DL参考资源
+
+http://mp.weixin.qq.com/s/D2Nw3oKF2DYgMZysmi_ysg
+
+通过Crowd Layer，利用众包标注数据集进行深度学习
+
+http://mp.weixin.qq.com/s/9mtgdNynv92FC2dA8-5KJA
+
+VAE和Adam发明人博士论文：变分推理和深度学习
+
+http://mp.weixin.qq.com/s/Y-PvMz_Vz8nBGRZo9dwUCA
+
+中科院步态识别技术：不看脸 50米内在人群中认出你！
+
+http://mp.weixin.qq.com/s/sIIoGilZgQHn4jDiYzEelw
+
+大咖解读Bengio笔记——邓侃：用深度学习模型，解构并重构人类思维
+
+http://mp.weixin.qq.com/s/Ybq6hSTPpyYQSNGJg1tgeQ
+
+AI距离匹敌人类大脑还有多远？人工神经网络和生物神经网络最详细对比
+
+http://mp.weixin.qq.com/s/UKu9T5zS1Z2dfNB1YsYGkQ
+
+NEAT学习：教机器自我编程
+
+http://mp.weixin.qq.com/s/vhBOrR6uTL2vGXnYC8BS1w
+
+Windows版深度学习软件安装指南
+
+https://mp.weixin.qq.com/s/PMnNay4CRgVghA4fU9oLqg
+
+牛津大学研发类脑光子芯片，运算速度超人脑1000倍
+
+https://mp.weixin.qq.com/s/MqnJ39GPrzP4xJWDZi9gnQ
+
+博士生开源深度学习C++库DLL：快速构建卷积受限玻尔兹曼机
+
+

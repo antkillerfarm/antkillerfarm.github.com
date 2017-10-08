@@ -150,6 +150,10 @@ https://mp.weixin.qq.com/s/Q4snAlAi8tPQAyGm0qUy4w
 
 CNN的全面解析
 
+https://mp.weixin.qq.com/s/Do6erhin3W4dK_-RTAyD6A
+
+卷积神经网络(CNN)概念解释
+
 # Autoencoder
 
 Bengio在2003年的《A neural probabilistic language model》中指出，维度过高，会导致每次学习，都会强制改变大部分参数。
@@ -203,6 +207,10 @@ https://mp.weixin.qq.com/s/lnSMdOk8fYfdU4aGeI5j7Q
 https://mp.weixin.qq.com/s/QuDa__mi1NX1wOxo5Ki94A
 
 深度学习：自动编码器基础和类型
+
+http://blog.csdn.net/losteng/article/details/51067216
+
+CAE(Convolutional Auto-Encode) 卷积自编码
 
 # 词向量
 

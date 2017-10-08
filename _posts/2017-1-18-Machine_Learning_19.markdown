@@ -81,6 +81,10 @@ https://mp.weixin.qq.com/s/LC41Mk7Sjm30qr1KXsZd8Q
 
 机器学习利器——决策树和随机森林！
 
+http://blog.csdn.net/u013709270/article/details/78156207
+
+Python机器学习实战之手撕XGBoost
+
 # 关联规则挖掘
 
 ## 基本概念

@@ -176,6 +176,12 @@ https://github.com/xianyi/OpenBLAS
 
 NVIDIA作为行业龙头，其影响力甚至在Khronos Group之上，它提出的标准很多成为了行业的事实标准。
 
+## 术语
+
+iGPU：Integrated Graphics Processing Unit。
+
+dGPU：Discrete Graphics Processing Unit。
+
 ## CUDA
 
 CUDA是NVIDIA最早推出的通用数学运算库。除了基本的数学运算之外，还提供了一些工具包：
@@ -202,5 +208,24 @@ NCCL：多结点、多GPU的通信库。
 
 TensorRT：嵌入式设备上专用于DL inference的计算库。
 
+## CUDA实战
+
+安装：
+
+http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
+
+参考：
+
+http://ishare.iask.sina.com.cn/f/17211495.html
+
+深入浅出谈CUDA技术
+
+http://peghoty.blog.163.com/blog/static/493464092013016113254852/
+
+CUDA编程入门
+
+http://blog.csdn.net/xsc_c/article/category/2186063
+
+某人的并行计算专栏
 
 

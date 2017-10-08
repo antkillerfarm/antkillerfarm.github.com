@@ -252,22 +252,6 @@ GoogleNet的进化道路和VGG有所不同。VGG实际上就是“大力出奇�
 
 上图是GoogleNet的结构图。从中可以看出，GoogleNet除了AlexNet的基本要素之外，还有被称作Inception的结构。
 
-![](/images/article/inception.png)
 
-上图是Inception的结构图。它的原理实际上就是**将不同尺寸的卷积组合起来，以提供不同尺寸的特征**。
-
-原始的GoogleNet也被称作Inception-v1。在后面的几年，GoogleNet还提出了几种改进的版本，最新的一个是Inception-v4（2016.8）。
-
-论文：
-
-《Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning》
-
-代码：
-
-https://github.com/BVLC/caffe/tree/master/models/bvlc_googlenet
-
-Inception系列的改进方向基本都集中在构建不同的Inception模型上。
-
-GoogleNet的另一个改进是**减少了全连接层**（Full Connection, FC），这是减少模型参数的一个重要改进。事实上，在稍后的实践中，人们发现去掉VGG的第一个FC层，对于效果几乎没有任何影响。
 
 

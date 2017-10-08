@@ -385,4 +385,6 @@ https://mp.weixin.qq.com/s?__biz=MzA3MTM3NTA5Ng==&mid=2651056658&idx=1&sn=ae2792
 
 利用算法识别糖尿病患者
 
+https://mp.weixin.qq.com/s?__biz=MzA3MTM3NTA5Ng==&mid=2651056727&idx=2&sn=46e6b4cca2f8dad97774c2e666284f3a
 
+R语言中文社区历史文章整理

@@ -286,6 +286,18 @@ https://mp.weixin.qq.com/s/77BgUiwjQ8ryGNRjMCiBoQ
 
 “雷达电子战”常用公式
 
+http://mp.weixin.qq.com/s/aftxoxvzefZtzbGK3XrmuA
+
+李沐：博士这五年
+
+https://mp.weixin.qq.com/s/1IHHo4sV79sXdtXNzKNhMA
+
+计算摄影--google相机的王者之道
+
+https://mp.weixin.qq.com/s/tsidF_I5-QfaKUlX6Smtsg
+
+这有300+门刚刚开课的编程计算机科学免费课程大集合
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/
@@ -425,6 +437,10 @@ https://mp.weixin.qq.com/s/l56o316HJL9__DmUAKoHTg
 https://mp.weixin.qq.com/s/ORZ4MrCPgta8Oeg-ns8cQQ
 
 人工智能在线特征系统中的生产调度
+
+http://www.ibm.com/developerworks/cn/data/library/bd-1404optionanalysis/index.html
+
+基于大数据的中文舆情分析
 
 ## 区块链
 

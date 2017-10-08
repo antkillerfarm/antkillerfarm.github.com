@@ -238,6 +238,10 @@ https://mp.weixin.qq.com/s/9xVMh2Zf9fP0_vXRoTe7ng
 
 详解前馈、卷积和循环神经网络技术
 
+https://mp.weixin.qq.com/s/xwYldlEjJ9Co9uo8o0mlKQ
+
+深度学习之DNN的多种正则化方式
+
 ### 算法
 
 http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww
@@ -398,6 +402,10 @@ https://mp.weixin.qq.com/s/y5LLraGWuYUbOted9N-GWQ
 
 如何从TensorFlow转入PyTorch
 
+http://mp.weixin.qq.com/s/Z5X7Vamuw1BwtienhOrSvQ
+
+解构TensorFlow, 学习MXNet--新一代深度学习系统的核心思想
+
 ### 量子计算 & 遗传算法
 
 https://www.zhihu.com/question/28171555
@@ -444,6 +452,14 @@ https://mp.weixin.qq.com/s/sxnI5n5ACT6UHC6VDdUwQQ
 
 结合遗传算法与DNN的EDEN：自动搜索神经网络架构与超参数
 
+https://mp.weixin.qq.com/s/NfFgOiBKOgsDAIfkXC4crQ
+
+利用达尔文的理论学习遗传算法
+
+http://pytlab.org/2017/09/19/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95%E4%B8%AD%E5%87%A0%E7%A7%8D%E4%B8%8D%E5%90%8C%E9%80%89%E6%8B%A9%E7%AE%97%E5%AD%90%E7%9A%84%E6%AF%94%E8%BE%83/
+
+遗传算法中几种不同选择算子
+
 ### 面试
 
 https://www.zhihu.com/question/41233373
@@ -465,4 +481,8 @@ https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
 https://mp.weixin.qq.com/s?__biz=MzI3NTA0MzM1OQ==&mid=2651615534&idx=1&sn=00ecd7dc1d8472c070e720a1b63f04c4
 
 我如何考察面试者的机器学习水平
+
+https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
+
+谷歌等巨头机器学习面试题：从逻辑回归到智力测验
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  CC2530, 各种智能家居通信技术比较
+title:  CC2530, Trie树, Parquet, Dubbo, Redis
 category: technology 
 ---
 
@@ -200,73 +200,82 @@ CC2530的空中升级可以使用以下两种方法：
 
 但由于即使最优化的Zstack协议栈也至少有140KB，而CC2530最多只有256KB，因此第2个条件实际上是不可能满足的。
 
-# 各种智能家居通信技术比较
+# Wifi设备的三种模式
 
-<table>
-  <tr>
-    <th>名称</th>
-    <th>概况</th>
-    <th>优点</th>
-    <th>缺点</th>
-  </tr>
-  <tr>
-    <td>Zigbee</td>
-    <td>基于IEEE 802.15.4的一种近程（10米~100米）、低速率（250Kbps标称速率）、低功耗的无线网络技术。</td>
-    <td>具有低复杂度、低功耗、低速率、低成本、自组网、高可靠、超视距的特点。</td>
-    <td>协议Profile比较复杂，导致厂家的各自为政，产品兼容性较差。</td>
-  </tr>
-  <tr>
-    <td>Z-Wave</td>
-    <td>由丹麦公司Zensys所一手主导的无线组网规格。</td>
-    <td>Z-wave联盟的成员均是已经在智能家居领域有现行产品的厂商，产品兼容性好。</td>
-    <td>技术把持在Zensys手中，产业链较封闭，芯片可选余地不大，渐趋式微。</td>
-  </tr>
-  <tr>
-    <td>KNX</td>
-    <td>Konnex协会提出的家庭、楼宇自动化的有线解决方案。</td>
-    <td>历史悠久，功能丰富，标准完善，厂商支持度比较高。在西欧和北欧比较流行。</td>
-    <td>虽然新的标准中可以使用868 MHz的RF进行无线传输，但总的来说，还是个有线方案。适合楼宇建筑时的预装，而不适合后期的智能改造。</td>
-  </tr>
-  <tr>
-    <td>BlueTooth Low Energy（BLE）</td>
-    <td>基于IEEE 802.15.1的的低功耗无线通讯技术。</td>
-    <td>只是协议升级，无需硬件升级，可充分利用现有手机的蓝牙功能，快速部署智能终端。</td>
-    <td>不支持网状网络，不支持多跳。因此要求传输双方都必须在无线信号可直接到达的范围之内。这一点直接限制了传输的距离。BLE 4.1之后，虽然可以自组Mesh网，但硬件须升级。</td>
-  </tr>
-  <tr>
-    <td>SUB 1G</td>
-    <td>1GHz以下的ISM无线通讯技术。</td>
-    <td>传输距离可达2~100km。</td>
-    <td>协议栈依赖芯片厂商提供。更像一种通讯方式，而非通讯解决方案。</td>
-  </tr>
-  <tr>
-    <td>Low Power Wifi</td>
-    <td>低功耗的wifi技术，有两个变种：普通型和802.11ah。</td>
-    <td>传输速度高。普通型兼容现有wifi设备。802.11ah穿透性好。</td>
-    <td>功耗仍然比Zigbee和BLE大一个数量级。</td>
-  </tr>
-  <tr>
-    <td>Thread</td>
-    <td>Google在IEEE 802.15.4的基础上构建的6LowPan方案。</td>
-    <td>由于MAC层和Zigbee相同，因此具备Zigbee的大多数优点，且协议更友好（设计思想接近IPV6）。</td>
-    <td>不兼容现有设备，市场前景有待观察。</td>
-  </tr>
-  <tr>
-    <td>UWB(Ultra Wideband)</td>
-    <td>一种无载波通信技术，利用纳秒至微微秒级的非正弦波窄脉冲传输数据。</td>
-    <td>UWB能在10米左右的范围内实现数百Mbit/s至数Gbit/s的数据传输速率。</td>
-    <td>尚处于试验阶段，没有成功的产品。</td>
-  </tr>
-  <tr>
-    <td>电力载波</td>
-    <td>基于电力线传输的有线通讯协议。</td>
-    <td>无须布线，传输速度高（500Mbps），距离远（500m）。</td>
-    <td>不适合无电力线的场景。</td>
-  </tr>
-  <tr>
-    <td>NB-LTE & NB-CIoT</td>
-    <td>都是蜂窝无线通信网向物联网进军的产物。前者由Nokia、Ericsson和Intel提出，而后者由华为提出。</td>
-    <td>号称与现有LTE网络兼容，但2015年9月才推出，具体规格不详。</td>
-    <td></td>
-  </tr>
-</table>
+通常情况下，两个Wifi设备的连接方式如下所示：
+
+Internet`---`设备A`***`设备B （`---`表示有线连接，`***`表示Wifi连接，下同。）
+
+其中设备A的工作模式被称作AP（Access Point），设备B的工作模式被称作STA（Station）。
+
+如果两个Wifi设备是这样连接的话：
+
+Internet`---`设备A`***`设备B`***`设备C
+
+这种情况下，设备B对于设备C来说是AP，但对于设备A来说，却只是一个Client，因此这种模式又被称为AP Client或者AP+STA。这种模式也称作Wifi repeater。其实现原理有以下几种：
+
+1.两个独立的物理网卡，一个AP，一个STA。
+
+2.一个物理网卡上虚拟两个虚拟网卡，一个AP，一个STA。
+
+这个类型又有两个子类型：
+
+1）有的厂家芯片支持模式共存。这时只要驱动支持即可。
+
+参考文献：
+
+http://blog.csdn.net/xiaojsj111/article/details/30482001
+
+2）芯片不支持的，只能采用分时复用的方式，支持模式共存，又称softAP。
+
+# Trie树
+
+Trie树也称字典树，因为其效率很高，所以在在字符串查找、前缀匹配等中应用很广泛，其高效率是以空间为代价的。
+
+下面以英文单词构建的字典树为例，这棵Trie树中每个结点包括26个孩子结点，因为总共有26个英文字母(假设单词都是小写字母组成)。
+
+如给出字符串"abc","ab","bd","dda"，根据该字符串序列构建一棵Trie树。则构建的树如下:
+
+![](/images/article/trie.jpg)
+
+参考：
+
+https://mp.weixin.qq.com/s/J7C70ASC6GZJqmqut0Z6Ag
+
+双数组Trie树(DoubleArrayTrie)Java实现
+
+# Parquet
+
+Parquet是Twitter开源的一种供Hadoop使用的列式存储格式。
+
+参考：
+
+http://blog.csdn.net/dc_726/article/details/41777661
+
+从NSM到Parquet：存储结构的衍化
+
+http://blog.csdn.net/dc_726/article/details/41143175
+
+几张图看懂列式存储
+
+# Dubbo
+
+Dubbo是一个分布式服务框架，致力于提供高性能和透明化的RPC远程服务调用方案，是阿里巴巴SOA服务化治理方案的核心框架，每天为2,000+个服务提供3,000,000,000+次访问量支持，并被广泛应用于阿里巴巴集团的各成员站点。
+
+官网：
+
+http://dubbo.io/
+
+官网的用户指南写的不错，非常值得一看。
+
+# Redis
+
+REmote DIctionary Server(Redis) 是一个由Salvatore Sanfilippo写的key-value存储系统。
+
+http://www.runoob.com/redis/redis-tutorial.html
+
+Redis教程
+
+http://www.yiibai.com/redis/
+
+另一个Redis教程

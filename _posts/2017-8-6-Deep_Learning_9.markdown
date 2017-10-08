@@ -1,10 +1,46 @@
 ---
 layout: post
-title:  深度学习（九）——花式卷积, 花式池化, Batch Normalization, Softmax详解
+title:  深度学习（九）——李飞飞, 花式卷积, 花式池化, Batch Normalization
 category: theory 
 ---
 
-# 李飞飞（续）
+# 李飞飞
+
+## AI大佬
+
+李飞飞是吴恩达之后的华裔AI新大佬。巧合的是，他们都是斯坦福AP+AI lab的主任，只不过吴是李的前任而已。
+
+**李飞飞（Fei-Fei Li）**，1976年生，成都人，16岁移民美国。普林斯顿大学本科（1995～1999）+加州理工学院博士（2001～2005）。先后执教于UIUC、普林斯顿、斯坦福等学校。
+
+个人主页：
+
+http://vision.stanford.edu/feifeili/
+
+## 大佬的门徒
+
+比如可爱的妹子**Serena Yeung**。这个妹子是斯坦福的本硕博。出身不详，但从姓名的英文拼法来看，应该是美国土生的华裔。Yeung是杨、阳、羊等姓的传统英文拼法，但显然不是大陆推行的拼音拼法。（可以对比的是Fei-Fei Li和Bruce Lee，对于同一个姓的不同拼法。）
+
+个人主页：
+
+http://ai.stanford.edu/~syyeung/
+
+还有当红的“辣子鸡”：**Andrej Karpathy**，多伦多大学本科（2009）+英属不列颠哥伦比亚大学硕士（2011）+斯坦福博士（2015）。现任特斯拉AI总监。
+
+吐槽一下：英属不列颠哥伦比亚大学其实是加拿大的一所大学。
+
+个人主页：
+
+http://cs.stanford.edu/people/karpathy/
+
+Andrej Karpathy建了一个检索arxiv的网站，主要搜集了近3年来的ML/DL领域的论文。网址：
+
+http://www.arxiv-sanity.com/
+
+**李佳（Jia Li）**，李飞飞的开山大弟子，追随她从UIUC、普林斯顿到斯坦福。目前又追随其到Google。大约是知道自己的名字是个大路货，她的笔名叫做Li-Jia Li。
+
+个人主页：
+
+http://vision.stanford.edu/lijiali/
 
 ## 学神
 
@@ -120,6 +156,10 @@ https://mp.weixin.qq.com/s/CLFbhWMcat4rN8YS_7q25g
 
 这12张图生动的告诉你，深度学习中的卷积网络是怎么一回事？
 
+https://mp.weixin.qq.com/s/kJEeKzC9pC375EjIJpTuzg
+
+一文全解深度学习中的卷积
+
 http://mp.weixin.qq.com/s/dvuX3Ih_DZrv0kgqFn8-lg
 
 卷积神经网络结构变化——可变形卷积网络deformable convolutional networks
@@ -182,6 +222,10 @@ http://www.cnblogs.com/tornadomeet/p/3432093.html
 
 Stochastic Pooling简单理解
 
+http://mp.weixin.qq.com/s/XzOri12hwyOCdI1TgGQV3w
+
+新型池化层sort_pool2d实现更快更好的收敛：表现优于最大池化层
+
 # Batch Normalization
 
 在《深度学习（二）》中，我们已经简单的介绍了Batch Normalization的基本概念。这里主要讲述一下它的实现细节。
@@ -218,66 +262,6 @@ $$\mu_\mathcal{B}\leftarrow \frac{1}{m}\sum_{i=1}^mx_i$$
 
 $$\sigma_\mathcal{B}^2\leftarrow \frac{1}{m}\sum_{i=1}^m(x_i-\mu_\mathcal{B})^2$$
 
-3.normalize。
 
-$$\hat x_i\leftarrow \frac{x_i-\mu_\mathcal{B}}{\sqrt{\sigma_\mathcal{B}^2+\epsilon}}$$
-
-这里的$$\epsilon$$是为了数值的稳定性而添加的常数。
-
-4.scale and shift。
-
-$$y_i=\gamma\hat x_i+\beta\equiv BN_{\gamma,\beta}(x_i)$$
-
-在实际使用中，BN计算和卷积计算一样，都被当作神经网络的其中一层。即：
-
-$$z=g(Wu+b)\rightarrow z=g(BN(Wu+b))=g(BN(Wu))$$
-
-从另一个角度来看，BN的均值、方差操作，相当于去除一阶和二阶信息，而只保留网络的高阶信息，即非线性部分。因此，上式最后一步中b被忽略，也就不难理解了。
-
-BN的误差反向算法相对复杂，这里不再赘述。
-
-# Softmax详解
-
-首先给出Softmax function的定义:
-
-$$y_c=\zeta(\textbf{z})_c = \dfrac{e^{z_c}}{\sum_{d=1}^C{e^{z_d}}} \text{  for } c=1, \dots, C$$
-
-从中可以很容易的发现，如果$$z_c$$的值过大，朴素的直接计算会上溢出或下溢出。
-
-解决办法：
-
-$$z_c\leftarrow z_c-a,a=\max\{z_1,\dots,z_C\}$$
-
-证明：
-
-$$\zeta(\textbf{z-a})_c = \dfrac{e^{z_c}\cdot e^{-a}}{\sum_{d=1}^C{e^{z_d}\cdot e^{-a}}} = \dfrac{e^{z_c}}{\sum_{d=1}^C{e^{z_d}}} = \zeta(\textbf{z})_c$$
-
-Softmax的损失函数是cross entropy loss function：
-
-$$\xi(X, Y) = \sum_{i=1}^n \xi(\textbf{t}_i, \textbf{y}_i) = - \sum_{i=1}^n \sum_{i=c}^C t_{ic} \cdot \log(y_{ic})$$
-
-Softmax的反向传播算法：
-
-$$\begin{align}
-\dfrac{\partial\xi}{\partial z_i} &= - \sum_{j=1}^C \dfrac{\partial t_j \log(y_j)}{\partial z_i} \\
-&= - \sum_{j=1}^C t_j \dfrac{\partial \log(y_j)}{\partial z_i} \\
-&= - \sum_{j=1}^C t_j \dfrac{1}{y_j} \dfrac{\partial y_j}{\partial z_i} \\
-&= - \dfrac{t_i}{y_i} \dfrac{\partial y_i}{\partial z_i} - \sum_{j \neq i}^C \dfrac{t_j}{y_j} \dfrac{\partial y_j}{\partial z_i} \\
-&= - \dfrac{t_i}{y_i} y_i(1-y_i) - \sum_{j \neq i}^{C} \dfrac{t_j}{y_j}(-y_jy_j) \\
-&= -t_i + t_iy_i + \sum_{j \neq i}^{C} t_jy_i \\
-&= -t_i + \sum_{j=1}^C t_jy_i \\
-&= -t_i + y_i \sum_{j=1}^C t_j \\
-&= y_i - t_i
-\end{align}$$
-
-参考：
-
-https://mp.weixin.qq.com/s/2xYgaeLlmmUfxiHCbCa8dQ
-
-softmax函数计算时候为什么要减去一个最大值？
-
-http://shuokay.com/2016/07/20/softmax-loss/
-
-Softmax 输出及其反向传播推导
 
 

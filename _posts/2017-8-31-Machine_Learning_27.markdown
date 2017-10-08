@@ -108,6 +108,14 @@ http://www.jianshu.com/p/20585e3b6d02
 
 Keras TensorFlow教程：如何从零开发一个复杂深度学习模型
 
+http://mp.weixin.qq.com/s/sQKhopzS4EOcYwjrM8E7xQ
+
+十分钟搞定Keras序列到序列学习
+
+http://mp.weixin.qq.com/s/F2gBP23LCEF72QDlugbBZQ
+
+详解如何使用Keras实现Wassertein GAN
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。
@@ -176,5 +184,8 @@ https://www.zhihu.com/question/47736315
 
 通俗的解释欧拉角，之后为何要引入四元数？
 
+https://mp.weixin.qq.com/s/pL2S3UypKJgpP32QLRR5BQ
+
+视觉SLAM漫淡：机器人即时定位与地图构建！
 
 

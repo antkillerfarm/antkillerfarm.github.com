@@ -4,7 +4,27 @@ title:  深度学习（七）——GAN
 category: theory 
 ---
 
-# CNN进化史（续）
+# CNN进化史
+
+## GoogleNet（续）
+
+![](/images/article/inception.png)
+
+上图是Inception的结构图。它的原理实际上就是**将不同尺寸的卷积组合起来，以提供不同尺寸的特征**。
+
+原始的GoogleNet也被称作Inception-v1。在后面的几年，GoogleNet还提出了几种改进的版本，最新的一个是Inception-v4（2016.8）。
+
+论文：
+
+《Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning》
+
+代码：
+
+https://github.com/BVLC/caffe/tree/master/models/bvlc_googlenet
+
+Inception系列的改进方向基本都集中在构建不同的Inception模型上。
+
+GoogleNet的另一个改进是**减少了全连接层**（Full Connection, FC），这是减少模型参数的一个重要改进。事实上，在稍后的实践中，人们发现去掉VGG的第一个FC层，对于效果几乎没有任何影响。
 
 ## SqueezeNet
 
@@ -243,40 +263,4 @@ $$JS\Big(p_1(x),p_2(x)\Big)=\frac{1}{2}KL\Big(p_1(x)\|p_2(x)\Big)+\frac{1}{2}KL\
 KL散度和JS散度，也是Ian Goodfellow在原始GAN论文中，给出的评价指标。
 
 虽然KL散度和JS散度，在这里起着距离的作用，但它们**不是距离**，它们不满足距离的三角不等式，因此只能叫“散度”。
-
-## 神经距离
-
-假设我们可以将实数域分成若干个不相交的区间$$I_1,I_2,\dots,I_K$$，那么就可以估算一下给定分布Z的概率分布：
-
-$$p_z(I_i)=\frac{1}{N}\sum_{j=1}^{N}\#(z_j\in I_i)$$
-
-其中$$\#(z_j\in I_i)$$表示如果$$z_j\in I_i$$，那么取值为1，否则为0。
-
-接着我们生成M个均匀随机数$$x_1,x_2,\dots,x_M$$（这里不一定要$$M=N$$，还是那句话，我们比较的是分布，不是样本本身，因此多一个少一个样本，对分布的估算也差不了多少。），根据$$Y=G(X,\theta)$$计算对应的$$y_1,y_2,\dots,y_M$$，然后根据公式可以计算：
-
-$$p_y(I_i)=\frac{1}{M}\sum_{j=1}^{M}(y_j\in I_i)$$
-
-现在有了$$p_z(I_i)$$和$$p_y(I_i)$$，那么我们就可以算它们的差距了，比如可以选择JS距离
-
-$$\text{Loss} = JS\Big(p_y(I_i), p_z(I_i)\Big)$$
-
-假如我们只研究单变量概率分布之间的变换，那上述过程完全够了。然而，很多真正有意义的事情都是多元的，比如在MNIST上做实验，想要将随机噪声变换成手写数字图像。要注意MNIST的图像是28*28=784像素的，假如每个像素都是随机的，那么这就是一个784元的概率分布。按照我们前面分区间来计算KL距离或者JS距离，哪怕每个像素只分两个区间，那么就有$$2^{784}\approx 10^{236}$$个区间，这是何其巨大的计算量！
-
-为此，我们用神经网络L定义距离：
-
-$$L\Big(\{y_i\}_{i=1}^M, \{z_i\}_{i=1}^N, \Theta\Big)$$
-
-其中，$$\Theta$$为神经网络的参数。
-
-对于特定的任务来说，$$\{z_i\}_{i=1}^N$$是给定的，并非变量，因此上式可简写成：
-
-$$L\Big(\{y_i\}_{i=1}^M, \Theta\Big)$$
-
-通常，我们采用如下的L实现：
-
-$$L=\frac{1}{M}\sum_{i=1}^M D\Big(y_i,\Theta\Big)$$
-
-上式可以简单的理解为：**分布之间的距离，等于单个样本的距离的平均**。
-
-这里的神经网络$$D(Y,\Theta)$$，实际上就是GAN的另一个主角——**鉴别者**。这里的D是**Discriminator**的意思。
 

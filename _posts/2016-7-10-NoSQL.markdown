@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NoSQL, GStreamer（三）, Clojure
+title:  NoSQL, GStreamer（三）, Velocity, ActiveMQ, 12306
 category: technology 
 ---
 
@@ -84,25 +84,60 @@ NoSQL领域的相关知识点参见如下思维导图：
 
 http://www.infoq.com/cn/articles/cap-twelve-years-later-how-the-rules-have-changed
 
+CAP理论十二年回顾："规则"变了
+
 http://www.cnblogs.com/hustcat/archive/2010/09/07/1820970.html
+
+ACID、Data Replication、CAP与BASE
 
 http://www.cnblogs.com/mmjx/archive/2011/12/19/2290540.html
 
+CAP 理论
+
 http://blog.csdn.net/yangbutao/article/details/8365695
+
+分布式数据库的一致性探讨
 
 http://www.cnblogs.com/me115/p/3835050.html
 
-## 12306
-
-http://www.csdn.net/article/2015-02-10/2823900
-
-技术揭秘12306改造
-
-https://www.zhihu.com/question/21217971/answer/17575573
-
-超级计算机能不能用于12306？
+《NoSQL精粹》思维导图读书笔记
 
 # GStreamer编程（续）
+
+以下是教程的一些细节的学习心得。
+
+### basic-tutorial-1.c
+
+{% highlight c %}
+/* Build the pipeline */
+pipeline = gst_parse_launch ("playbin2 uri=http://docs.gstreamer.com/media/sintel_trailer-480p.webm", NULL);
+{% endhighlight %}
+
+从这个教程可以看出，我们可以直接使用gst_parse_launch创建pipeline。
+
+### basic-tutorial-7.c
+
+{% highlight c %}
+tee_src_pad_template = gst_element_class_get_pad_template (GST_ELEMENT_GET_CLASS (tee), "src%d");
+{% endhighlight %}
+
+这是代码的其中一段，这里只谈谈`src%d`是怎么来的。使用gst-inspect工具查询tee插件的信息，得到如下内容：
+
+{% highlight bash %}
+Pad Templates:
+  SRC template: 'src%d'
+    Availability: On request
+      Has request_new_pad() function: gst_tee_request_new_pad
+    Capabilities:
+      ANY
+
+  SINK template: 'sink'
+    Availability: Always
+    Capabilities:
+      ANY
+{% endhighlight %}
+
+从中可知，tee插件SRC Pad的模板名就是`src%d`。
 
 ## GStreamer的Python开发教程
 
@@ -161,64 +196,38 @@ new_pad_type = new_pad.query_caps(None).to_string()
 
 从这里也可以看出，gst_parse_launch会自动处理媒体流的格式匹配问题，而使用普通函数的时候，必须自己编程处理格式匹配的问题。
 
-# Clojure
+# Velocity
 
-Clojure是Lisp语言在JVM上的实现。源代码以.clj为后缀。
+Velocity是一个基于java的模板引擎（template engine），它允许任何人仅仅简单的使用模板语言（template language）来引用由java代码定义的对象。
 
-官网：
+Velocity基本等价于之前的JSP，但语法规则和后者有较大差异，其所使用的模板文件为.vm文件。
 
-http://clojure.org/
+# ActiveMQ
 
-Clojure的安装主要有两种方法：
+ActiveMQ 是Apache出品，最流行的，能力强劲的开源消息总线。
 
-1.
+http://blog.csdn.net/jiuqiyuliang/article/details/46701559
 
-`sudo apt-get install clojure1.6`
+深入浅出JMS(一)--JMS基本概念
 
-2.Clojure的全部功能都被放在clojure-1.8.0.jar中，因此实际上并不需要安装。所谓安装，不过是下载jar，然后让程序能够找到jar即可。因此，更好的办法是利用我们下面提到的leiningen，自动下载相关依赖。
+# 12306
 
-## leiningen
+http://www.csdn.net/article/2015-02-10/2823900
 
-leiningen是Clojure的自动管理工具。
+技术揭秘12306改造
 
-官网：
+https://www.zhihu.com/question/21217971/answer/17575573
 
-http://leiningen.org/
+超级计算机能不能用于12306？
 
-project.clj是Leigingen为项目添加的配置文件，类似于Maven的pom.xml。
+## GemFire
 
-project.clj中可以定义项目所需的Clojure的版本，并自动下载依赖。因此，很多Clojure项目在依赖上，往往只写leiningen和maven，根本就不提Clojure。这一点和其他编程语言，包括同为JVM语言的scala，还是差异挺大的。
+GemFire是一个内存数据库。官网：
 
-## Hello World
+https://pivotal.io/pivotal-gemfire
 
-1.
+参考：
 
-`lein new app hello`
+http://soft.zhiding.cn/software_zone/2013/1230/3007113.shtml
 
-2.
-
-`cd hello`
-
-`lein run`
-
-这里要注意路径，一定要在project.cl所在的路径下执行lein命令，否则会报如下错误：
-
-`No :main namespace specified in project.clj.`
-
-参见：
-
-https://tonydeng.github.io/2016/07/19/leiningen-clojure-hello-world/
-
-## JavaFX
-
-JavaFX和Clojure的结合，本来不是什么新鲜的东西，然而由于相关环境（JDK、leiningen）的演进，网上的demo已经大多不可用了。
-
-这些变动主要包括：
-
-1.由于JDK7的较新版本之后，JavaFX已经集成到JDK中，因此JavaFX的运行时jar不再需要了。相关依赖需要去除。
-
-2.由于leiningen新版本的改变，现在main函数必须在源代码和工程文件中显式定义。
-
-代码参见：
-
-https://github.com/antkillerfarm/antkillerfarm_rubbish/tree/master/clojure/javafx
+12306采用Pivotal GemFire分布式解决方案解决尖峰高流量并发问题

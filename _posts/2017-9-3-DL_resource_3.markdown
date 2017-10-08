@@ -398,4 +398,23 @@ https://mp.weixin.qq.com/s/d9XmDCahK6UBlYWhI0D5jQ
 
 深度线性神经网络也能做非线性计算，OpenAI使用进化策略新发现
 
+https://mp.weixin.qq.com/s/PtQSktfTpqzWB92jelgbTA
+
+Representation Learning on Network网络表示学习笔记
+
+https://mp.weixin.qq.com/s/ZDPPWH570Vc6e1irwP1b1Q
+
+精细识别现实世界图像：李飞飞团队提出半监督适应性模型
+
+https://mp.weixin.qq.com/s/4dlWdPOCbYedu02aLAQ04Q
+
+MIT“创世纪”机器学习新系统，自动生成补丁修复Bug
+
+https://mp.weixin.qq.com/s/vRHA3Hf1ivsgKBB2XuECNg
+
+李飞飞论文：神经网络是怎样给一幅图增加文字描述，实现“看图说话”的？
+
+http://mp.weixin.qq.com/s/rS4xCsytYGqBLMUzlyA12A
+
+构建多层感知器神经网络对数字图片进行文本识别
 

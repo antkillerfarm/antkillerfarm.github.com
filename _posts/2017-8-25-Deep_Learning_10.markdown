@@ -1,8 +1,72 @@
 ---
 layout: post
-title:  深度学习（十）——目标检测, RCNN
+title:  深度学习（十）——Softmax详解, 目标检测, RCNN
 category: theory 
 ---
+
+# Batch Normalization（续）
+
+3.normalize。
+
+$$\hat x_i\leftarrow \frac{x_i-\mu_\mathcal{B}}{\sqrt{\sigma_\mathcal{B}^2+\epsilon}}$$
+
+这里的$$\epsilon$$是为了数值的稳定性而添加的常数。
+
+4.scale and shift。
+
+$$y_i=\gamma\hat x_i+\beta\equiv BN_{\gamma,\beta}(x_i)$$
+
+在实际使用中，BN计算和卷积计算一样，都被当作神经网络的其中一层。即：
+
+$$z=g(Wu+b)\rightarrow z=g(BN(Wu+b))=g(BN(Wu))$$
+
+从另一个角度来看，BN的均值、方差操作，相当于去除一阶和二阶信息，而只保留网络的高阶信息，即非线性部分。因此，上式最后一步中b被忽略，也就不难理解了。
+
+BN的误差反向算法相对复杂，这里不再赘述。
+
+# Softmax详解
+
+首先给出Softmax function的定义:
+
+$$y_c=\zeta(\textbf{z})_c = \dfrac{e^{z_c}}{\sum_{d=1}^C{e^{z_d}}} \text{  for } c=1, \dots, C$$
+
+从中可以很容易的发现，如果$$z_c$$的值过大，朴素的直接计算会上溢出或下溢出。
+
+解决办法：
+
+$$z_c\leftarrow z_c-a,a=\max\{z_1,\dots,z_C\}$$
+
+证明：
+
+$$\zeta(\textbf{z-a})_c = \dfrac{e^{z_c}\cdot e^{-a}}{\sum_{d=1}^C{e^{z_d}\cdot e^{-a}}} = \dfrac{e^{z_c}}{\sum_{d=1}^C{e^{z_d}}} = \zeta(\textbf{z})_c$$
+
+Softmax的损失函数是cross entropy loss function：
+
+$$\xi(X, Y) = \sum_{i=1}^n \xi(\textbf{t}_i, \textbf{y}_i) = - \sum_{i=1}^n \sum_{i=c}^C t_{ic} \cdot \log(y_{ic})$$
+
+Softmax的反向传播算法：
+
+$$\begin{align}
+\dfrac{\partial\xi}{\partial z_i} &= - \sum_{j=1}^C \dfrac{\partial t_j \log(y_j)}{\partial z_i} \\
+&= - \sum_{j=1}^C t_j \dfrac{\partial \log(y_j)}{\partial z_i} \\
+&= - \sum_{j=1}^C t_j \dfrac{1}{y_j} \dfrac{\partial y_j}{\partial z_i} \\
+&= - \dfrac{t_i}{y_i} \dfrac{\partial y_i}{\partial z_i} - \sum_{j \neq i}^C \dfrac{t_j}{y_j} \dfrac{\partial y_j}{\partial z_i} \\
+&= - \dfrac{t_i}{y_i} y_i(1-y_i) - \sum_{j \neq i}^{C} \dfrac{t_j}{y_j}(-y_jy_j) \\
+&= -t_i + t_iy_i + \sum_{j \neq i}^{C} t_jy_i \\
+&= -t_i + \sum_{j=1}^C t_jy_i \\
+&= -t_i + y_i \sum_{j=1}^C t_j \\
+&= y_i - t_i
+\end{align}$$
+
+参考：
+
+https://mp.weixin.qq.com/s/2xYgaeLlmmUfxiHCbCa8dQ
+
+softmax函数计算时候为什么要减去一个最大值？
+
+http://shuokay.com/2016/07/20/softmax-loss/
+
+Softmax 输出及其反向传播推导
 
 # 目标检测
 
@@ -126,6 +190,8 @@ DPM(2007)->RCNN(2014)->Fast RCNN->Faster RCNN
 
 ![](/images/article/rcnn_2.png)
 
+![](/images/article/rcnn_4.jpg)
+
 参考：
 
 http://blog.csdn.net/ttransposition/article/details/12966521
@@ -223,60 +289,4 @@ RCNN算法分为4个步骤：
 **Step 3**：类别判断。特征送入每一类的SVM分类器，判别是否属于该类。
 
 **Step 4**：位置精修。使用回归器精细修正候选框位置。
-
-## Selective Search
-
-论文：
-
-https://www.koen.me/research/pub/uijlings-ijcv2013-draft.pdf
-
-Selective Search for Object Recognition
-
-Selective Search的主要思想:
-
-**Step 1**：使用一种过分割手段，将图像分割成小区域 (1k~2k个)。
-
-这里的步骤实际上并不简单，可参考论文：
-
-《Efficient Graph-Based Image Segmentation》
-
-中文版：
-
-http://blog.csdn.net/surgewong/article/details/39008861
-
-**Step 2**：查看现有小区域，按照合并规则合并可能性最高的相邻两个区域。重复直到整张图像合并成一个区域位置。
-
-**Step 3**：输出所有曾经存在过的区域，所谓候选区域。
-
-其中合并规则如下：优先合并以下四种区域：
-
-1.颜色（颜色直方图）相近的。
-
-2.纹理（梯度直方图）相近的。
-
-3.合并后总面积小的：保证合并操作的尺度较为均匀，避免一个大区域陆续“吃掉”其他小区域（例：设有区域a-b-c-d-e-f-g-h。较好的合并方式是：ab-cd-ef-gh -> abcd-efgh -> abcdefgh。不好的合并方法是：ab-c-d-e-f-g-h ->abcd-e-f-g-h ->abcdef-gh -> abcdefgh）
-
-4.合并后，总面积在其bounding box中所占比例大的：保证合并后形状规则。
-
-Step2和Step3可参考论文：
-
-《Selective Search for Object Recognition》
-
-中文版：
-
-http://blog.csdn.net/surgewong/article/details/39316931
-
-http://blog.csdn.net/charwing/article/details/27180421
-
-Selective Search的效果类似下图：
-
-![](/images/article/selective_search.png)
-
-![](/images/article/rcnn_3.png)
-
-上图中的那些方框，就是bounding box。
-
-一般使用IOU（Intersection over Union，交并比）指标，来衡量两个bounding box的重叠度：
-
-$$IOU(A,B)=\frac{A \cap B}{A \cup B}$$
 

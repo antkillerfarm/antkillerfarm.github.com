@@ -1,10 +1,46 @@
 ---
 layout: post
-title:  深度学习（八）——fine-tuning, 李飞飞
+title:  深度学习（八）——fine-tuning
 category: theory 
 ---
 
 # GAN（续）
+
+## 神经距离
+
+假设我们可以将实数域分成若干个不相交的区间$$I_1,I_2,\dots,I_K$$，那么就可以估算一下给定分布Z的概率分布：
+
+$$p_z(I_i)=\frac{1}{N}\sum_{j=1}^{N}\#(z_j\in I_i)$$
+
+其中$$\#(z_j\in I_i)$$表示如果$$z_j\in I_i$$，那么取值为1，否则为0。
+
+接着我们生成M个均匀随机数$$x_1,x_2,\dots,x_M$$（这里不一定要$$M=N$$，还是那句话，我们比较的是分布，不是样本本身，因此多一个少一个样本，对分布的估算也差不了多少。），根据$$Y=G(X,\theta)$$计算对应的$$y_1,y_2,\dots,y_M$$，然后根据公式可以计算：
+
+$$p_y(I_i)=\frac{1}{M}\sum_{j=1}^{M}(y_j\in I_i)$$
+
+现在有了$$p_z(I_i)$$和$$p_y(I_i)$$，那么我们就可以算它们的差距了，比如可以选择JS距离
+
+$$\text{Loss} = JS\Big(p_y(I_i), p_z(I_i)\Big)$$
+
+假如我们只研究单变量概率分布之间的变换，那上述过程完全够了。然而，很多真正有意义的事情都是多元的，比如在MNIST上做实验，想要将随机噪声变换成手写数字图像。要注意MNIST的图像是28*28=784像素的，假如每个像素都是随机的，那么这就是一个784元的概率分布。按照我们前面分区间来计算KL距离或者JS距离，哪怕每个像素只分两个区间，那么就有$$2^{784}\approx 10^{236}$$个区间，这是何其巨大的计算量！
+
+为此，我们用神经网络L定义距离：
+
+$$L\Big(\{y_i\}_{i=1}^M, \{z_i\}_{i=1}^N, \Theta\Big)$$
+
+其中，$$\Theta$$为神经网络的参数。
+
+对于特定的任务来说，$$\{z_i\}_{i=1}^N$$是给定的，并非变量，因此上式可简写成：
+
+$$L\Big(\{y_i\}_{i=1}^M, \Theta\Big)$$
+
+通常，我们采用如下的L实现：
+
+$$L=\frac{1}{M}\sum_{i=1}^M D\Big(y_i,\Theta\Big)$$
+
+上式可以简单的理解为：**分布之间的距离，等于单个样本的距离的平均**。
+
+这里的神经网络$$D(Y,\Theta)$$，实际上就是GAN的另一个主角——**鉴别者**。这里的D是**Discriminator**的意思。
 
 ## 如何对抗
 
@@ -239,6 +275,10 @@ https://mp.weixin.qq.com/s/3Aq1HXpBzgNdcB130tCKbQ
 
 GAN网络图像翻译机：图像复原、模糊变清晰、素描变彩图
 
+https://mp.weixin.qq.com/s/mPtv1fQd0NBgdY2b_ALNTQ
+
+机器之心GitHub项目：GAN完整理论推导与实现，Perfect！
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
@@ -276,43 +316,5 @@ http://yongyuan.name/blog/layer-selection-and-finetune-for-cbir.html
 h1ttps://www.zhihu.com/question/49534423
 
 迁移学习与fine-tuning有什么区别？
-
-# 李飞飞
-
-## AI大佬
-
-李飞飞是吴恩达之后的华裔AI新大佬。巧合的是，他们都是斯坦福AP+AI lab的主任，只不过吴是李的前任而已。
-
-**李飞飞（Fei-Fei Li）**，1976年生，成都人，16岁移民美国。普林斯顿大学本科（1995～1999）+加州理工学院博士（2001～2005）。先后执教于UIUC、普林斯顿、斯坦福等学校。
-
-个人主页：
-
-http://vision.stanford.edu/feifeili/
-
-## 大佬的门徒
-
-比如可爱的妹子**Serena Yeung**。这个妹子是斯坦福的本硕博。出身不详，但从姓名的英文拼法来看，应该是美国土生的华裔。Yeung是杨、阳、羊等姓的传统英文拼法，但显然不是大陆推行的拼音拼法。（可以对比的是Fei-Fei Li和Bruce Lee，对于同一个姓的不同拼法。）
-
-个人主页：
-
-http://ai.stanford.edu/~syyeung/
-
-还有当红的“辣子鸡”：**Andrej Karpathy**，多伦多大学本科（2009）+英属不列颠哥伦比亚大学硕士（2011）+斯坦福博士（2015）。现任特斯拉AI总监。
-
-吐槽一下：英属不列颠哥伦比亚大学其实是加拿大的一所大学。
-
-个人主页：
-
-http://cs.stanford.edu/people/karpathy/
-
-Andrej Karpathy建了一个检索arxiv的网站，主要搜集了近3年来的ML/DL领域的论文。网址：
-
-http://www.arxiv-sanity.com/
-
-**李佳（Jia Li）**，李飞飞的开山大弟子，追随她从UIUC、普林斯顿到斯坦福。目前又追随其到Google。大约是知道自己的名字是个大路货，她的笔名叫做Li-Jia Li。
-
-个人主页：
-
-http://vision.stanford.edu/lijiali/
 
 

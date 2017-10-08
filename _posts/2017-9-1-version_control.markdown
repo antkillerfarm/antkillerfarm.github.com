@@ -206,6 +206,18 @@ https://mp.weixin.qq.com/s/KohwsQQetwjfTj-PXvLjwA
 
 使用MNIST数据集，在TensorFlow上实现基础LSTM网络
 
+http://mp.weixin.qq.com/s/ioaS7RQ6bsJs4_X0G4ZHyQ
+
+如何优雅地用TensorFlow预测时间序列：TFTS库详细教程
+
+http://mp.weixin.qq.com/s/hpv6bzr-5VZet-UCHOCQLQ
+
+谷歌TFX：基于TensorFlow可大规模扩展的机器学习平台
+
+https://mp.weixin.qq.com/s/GaK_iSTBl7B4LTdaOtiR_Q
+
+香港科技大学TensorFlow课件分享
+
 # NLP参考资源
 
 https://mp.weixin.qq.com/s/GyE9qdXPGvrq12dMAf4nrQ
@@ -248,6 +260,17 @@ https://mp.weixin.qq.com/s/2dTCvWujgJ71Dsbm-pGcrA
 
 谷歌的多语种神经网络翻译系统！
 
+https://mp.weixin.qq.com/s/AqvzxiI7cNesdGt_IfVb-w
+
+Highway Networks For Sentence Classification
+
+http://mp.weixin.qq.com/s/k4dxj6qTGKNyoTn1uTb_aA
+
+李航：深度学习NLP的现有优势与未来挑战
+
+http://mp.weixin.qq.com/s/ZrFcpYf7E57j8E6zQsBexg
+
+引入秘密武器强化学习，发掘GAN在NLP领域的潜力
 
 
 

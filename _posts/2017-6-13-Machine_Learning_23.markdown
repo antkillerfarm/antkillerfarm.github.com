@@ -109,6 +109,10 @@ http://www.jianshu.com/p/4a40f90f0d98
 
 Hinge loss
 
+http://mp.weixin.qq.com/s/96_u9QM63SISwTbimmH6wA
+
+支持向量回归机
+
 # 时间序列分析
 
 ## 书籍和教程
