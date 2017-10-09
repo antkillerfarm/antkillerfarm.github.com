@@ -98,7 +98,7 @@ http://dranger.com/ffmpeg/
 
 2.转换视频的尺寸
 
-`ffmpeg -i src.mp4 -s 960x540 -acodec copy des.mp4`
+`ffmpeg -i src.mp4 -s 540x960 -acodec copy des.mp4`
 
 3.屏幕录像
 
@@ -251,3 +251,5 @@ http://www.cnblogs.com/lishouguang/p/4560858.html
 1.yammer是OA 2.0的鼻祖。
 
 2.国内的同类产品还有：明道，纷享，伙伴，企明岛，tita，UU社区，云之家等。
+
+

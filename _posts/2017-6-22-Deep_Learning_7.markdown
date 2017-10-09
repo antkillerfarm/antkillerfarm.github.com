@@ -76,7 +76,7 @@ http://blog.csdn.net/shenxiaolu1984/article/details/51444525
 
 ## 其他知名CNN
 
-# Network In Network
+### Network In Network
 
 论文：
 
@@ -98,7 +98,7 @@ http://www.cnblogs.com/dmzhuo/p/5868346.html
 
 读论文“Network in Network”——ICLR 2014
 
-# ZF Net
+### ZF Net
 
 论文：
 

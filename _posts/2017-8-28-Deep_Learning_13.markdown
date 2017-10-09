@@ -4,7 +4,53 @@ title:  深度学习（十三）——SSD, YOLOv2
 category: theory 
 ---
 
-# SSD（续）
+# YOLO（续）
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/24916786
+
+图解YOLO
+
+https://mp.weixin.qq.com/s/n51XtGAsaDDAatXYychXrg
+
+YOLO比R-CNN快1000倍，比Fast R-CNN快100倍的实时对象检测！
+
+http://blog.csdn.net/tangwei2014/article/details/50915317
+
+论文阅读笔记：You Only Look Once: Unified, Real-Time Object Detection
+
+https://mp.weixin.qq.com/s/Wqj6EM33p-rjPIHnFKtmCw
+
+计算机是怎样快速看懂图片的：比R-CNN快1000倍的YOLO算法
+
+http://lanbing510.info/2017/08/28/YOLO-SSD.html
+
+目标检测之YOLO，SSD
+
+http://www.yeahkun.com/2016/09/06/object-detection-you-only-look-once-caffe-shi-xian/
+
+Object detection: You Look Only Once(YOLO)
+
+http://blog.csdn.net/zy1034092330/article/details/72807924
+
+YOLO
+
+# SSD
+
+SSD是Wei Liu于2016年提出的算法。
+
+论文：
+
+《SSD: Single Shot MultiBox Detector》
+
+代码：
+
+https://github.com/weiliu89/caffe
+
+>Wei Liu，南京大学本科（2009）+北卡罗莱娜大学博士（在读）。   
+>个人主页：   
+>http://www.cs.unc.edu/~wliu/
 
 ## 网络结构
 
@@ -78,9 +124,9 @@ Hard Negative Mining是机器学习领域的一个常用技巧。
 
 上图是SSD末端的caffe结构图。我们注意到在flatten之前有个permute的操作。这个实际上还是和caffe blob的格式有关。
 
-只有flatten的效果：[B, C * H * W]
+只有flatten的效果：[B, CxHxW]
 
-permute+flatten的效果：[B, H * W * C]
+permute+flatten的效果：[B, HxWxC]
 
 C在最后，意味着同一个点的不同通道的信息挨着放在一起，从而保证了信息的局部空间性保持不变。
 
@@ -138,9 +184,9 @@ YOLOv2网络通过在每一个卷积层后添加batch normalization，极大的�
 
 ### High Resolution Classifier
 
-所有state-of-the-art的检测方法基本上都会使用ImageNet预训练过的模型（classifier）来提取特征，例如AlexNet输入图片会被resize到不足256 * 256，这导致分辨率不够高，给检测带来困难。所以YOLO(v1)先以分辨率224*224训练分类网络，然后需要增加分辨率到448*448，这样做不仅切换为检测算法也改变了分辨率。所以作者想能不能在预训练的时候就把分辨率提高了，训练的时候只是由分类算法切换为检测算法。
+所有state-of-the-art的检测方法基本上都会使用ImageNet预训练过的模型（classifier）来提取特征，例如AlexNet输入图片会被resize到不足256x256，这导致分辨率不够高，给检测带来困难。所以YOLO(v1)先以分辨率224x224训练分类网络，然后需要增加分辨率到448x448，这样做不仅切换为检测算法也改变了分辨率。所以作者想能不能在预训练的时候就把分辨率提高了，训练的时候只是由分类算法切换为检测算法。
 
-YOLOv2首先修改预训练分类网络的分辨率为448*448，在ImageNet数据集上训练10轮（10 epochs）。这个过程让网络有足够的时间调整filter去适应高分辨率的输入。然后fine tune为检测网络。mAP获得了4%的提升。
+YOLOv2首先修改预训练分类网络的分辨率为448x448，在ImageNet数据集上训练10轮（10 epochs）。这个过程让网络有足够的时间调整filter去适应高分辨率的输入。然后fine tune为检测网络。mAP获得了4%的提升。
 
 ### Convolutional With Anchor Boxes
 
@@ -152,7 +198,7 @@ YOLOv2首先修改预训练分类网络的分辨率为448*448，在ImageNet数�
 
 其主要思路是：将对类别的预测放到anchor box中。
 
-同时，由于分辨率的提高，cell的数量由7×7改为13×13。这样一来就有13×13×9=1521个boxes了。因此，YOLOv2比YOLO在检测小物体方面有一定的优势。
+同时，由于分辨率的提高，cell的数量由7x7改为13x13。这样一来就有13x13x9=1521个boxes了。因此，YOLOv2比YOLO在检测小物体方面有一定的优势。
 
 ### Dimension Clusters
 
@@ -178,7 +224,11 @@ Faser R-CNN和SSD都在不同层次的特征图上产生区域建议以获得多
 
 YOLOv2使用了一种不同的方法，简单添加一个passthrough layer，把浅层特征图（分辨率为26x26）连接到深层特征图。
 
+具体操作如下：
 
+1.叠加相邻空间位置的特征到不同通道，将26x26x512的特征图叠加成13x13x2048的特征图。
+
+2.将浅层特征图（13x13x2048）和深层特征图（13x13x1024）合并为一个（13x13x3072）tensor。
 
 ## Faster
 
@@ -202,29 +252,4 @@ http://lanbing510.info/2017/09/04/YOLOV2.html
 
 目标检测之YOLOv2
 
-# 其它目标检测网络
-
-## A-Fast-RCNN
-
-A-Fast-RCNN首次将对抗学习引入到了目标检测领域，idea是非常创新的。
-
-http://blog.csdn.net/jesse_mx/article/details/72955981
-
-A-Fast-RCNN论文笔记
-
-## R-FCN
-
-FCN在目标检测领域的应用。
-
-http://blog.csdn.net/zijin0802034/article/details/53411041
-
-R-FCN: Object Detection via Region-based Fully Convolutional Networks
-
-## G-CNN
-
-G-CNN是MaryLand大学的工作，论文主要的思路也是消除region proposal，和YOLO，SSD不同，G-CNN的工作借鉴了迭代的想法，把边框检测等价于找到初始边框到最终目标的一个路径。但是使用one-step regression不能处理这个非线性的过程，所以作者采用迭代的方法逐步接近最终的目标。
-
-http://blog.csdn.net/zijin0802034/article/details/53535647
-
-G-CNN: an Iterative Grid Based Object Detector
 

@@ -1,10 +1,56 @@
 ---
 layout: post
-title:  深度学习（十一）——SPPNet, Fast R-CNN
+title:  深度学习（十一）——RCNN, SPPNet
 category: theory 
 ---
 
 # RCNN（续）
+
+## RCNN的基本原理
+
+RCNN是Ross Girshick于2014年提出的深度模型。
+
+>注：Ross Girshick（网名：rbg），芝加哥大学博士（2012），Facebook研究员。他和何恺明被誉为CV界深度学习的**双子新星**。   
+>个人主页：   
+>http://www.rossgirshick.info/
+
+论文：
+
+《Rich feature hierarchies for accurate object detection and semantic segmentation》
+
+代码：
+
+https://github.com/rbgirshick/rcnn
+
+RCNN相对传统方法的改进：
+
+**速度**：经典的目标检测算法使用滑动窗法依次判断所有可能的区域。RCNN则(采用Selective Search方法)预先提取一系列较可能是物体的候选区域，之后仅在这些候选区域上(采用CNN)提取特征，进行判断。
+
+**训练集**：经典的目标检测算法在区域中提取人工设定的特征。RCNN则采用深度网络进行特征提取。
+
+使用两个数据库：
+
+一个较大的识别库（ImageNet ILSVC 2012）：标定每张图片中物体的类别。一千万图像，1000类。
+
+一个较小的检测库（PASCAL VOC 2007）：标定每张图片中，物体的类别和位置，一万图像，20类。
+
+RCNN使用识别库进行预训练得到CNN（有监督预训练），而后用检测库调优参数，最后在检测库上评测。
+
+这实际上就是《深度学习（七）》中提到的fine-tuning的思想。
+
+## RCNN算法的基本流程
+
+![](/images/article/rcnn.png)
+
+RCNN算法分为4个步骤：
+
+**Step 1**：候选区域生成。一张图像生成1K~2K个候选区域（采用Selective Search方法）。
+
+**Step 2**：特征提取。对每个候选区域，使用深度卷积网络提取特征（CNN）。
+
+**Step 3**：类别判断。特征送入每一类的SVM分类器，判别是否属于该类。
+
+**Step 4**：位置精修。使用回归器精细修正候选框位置。
 
 ## Selective Search
 
@@ -211,65 +257,5 @@ http://www.cnblogs.com/objectDetect/p/5947169.html
 **Step 1**：为图像建立不同尺度的图像金字塔。上图为3层。
 
 **Step 2**：将图像金字塔中包含的feature映射到固定尺寸的向量中。上图为$$(16+4+1)\times 256$$维向量。
-
-总结：
-
-![](/images/article/spp_p.png)
-
-从上图可以看出，由于卷积策略的不同，SPPnet的流程和RCNN也有一点微小的差异：
-
-1.RCNN是先选择区域，然后对区域进行卷积，并检测。
-
-2.SPPnet是先统一卷积，然后应用选择区域，做区域检测。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/24774302
-
-SPPNet-引入空间金字塔池化改进RCNN
-
-http://kaiminghe.com/iccv15tutorial/iccv2015_tutorial_convolutional_feature_maps_kaiminghe.pdf
-
-何恺明：Convolutional Feature Maps
-
-# Fast R-CNN
-
-Fast R-CNN是Ross Girshick于2015年祭出的又一大招。
-
-论文：
-
-《Fast R-CNN》
-
-代码：
-
-https://github.com/rbgirshick/fast-rcnn
-
-![](/images/article/fast_rcnn_p_2.png)
-
-上图是Fast R-CNN的结构图。从该图可以看出Fast R-CNN和SPPnet的主要差异在于：
-
-1.使用ROI（Region of interest） Pooling，替换SPP。
-
-2.去掉了SVM分类。
-
-以下将对这两个方面，做一个简述。
-
-## ROI Pooling
-
-SPP将图像pooling成多个固定尺度，而RoI只将图像pooling到单个固定的尺度。（虽然多尺度学习能提高一点点mAP，不过计算量成倍的增加。）
-
-普通pooling操作中，pooling区域的大小一旦选定，就不再变化。
-
-而ROI Pooling中，为了将ROI区域pooling到单个固定的目标尺度，我们需要根据ROI区域和目标尺度的大小，动态计算pooling区域的大小。
-
-## Bounding-box Regression
-
-从Fast R-CNN的结构图可以看出，与一般的CNN不同，它在FC之后，实际上有两个输出层：第一个是针对每个ROI区域的分类概率预测（上图中的Linear+softmax），第二个则是针对每个ROI区域坐标的偏移优化（上图中的Linear）。
-
-然后，这两个输出层（即两个Task）再合并为一个multi-task，并定义统一的loss。
-
-![](/images/article/fast_rcnn_multi_task.png)
-
-由于两个Task的信息互为补充，使得分类预测任务的softmax准确率大为提升，SVM也就没有存在的必要了。
 
 

@@ -4,6 +4,32 @@ title:  深度学习（十四）——语义分割, FCN
 category: theory 
 ---
 
+# 其它目标检测网络
+
+## A-Fast-RCNN
+
+A-Fast-RCNN首次将对抗学习引入到了目标检测领域，idea是非常创新的。
+
+http://blog.csdn.net/jesse_mx/article/details/72955981
+
+A-Fast-RCNN论文笔记
+
+## R-FCN
+
+FCN在目标检测领域的应用。
+
+http://blog.csdn.net/zijin0802034/article/details/53411041
+
+R-FCN: Object Detection via Region-based Fully Convolutional Networks
+
+## G-CNN
+
+G-CNN是MaryLand大学的工作，论文主要的思路也是消除region proposal，和YOLO，SSD不同，G-CNN的工作借鉴了迭代的想法，把边框检测等价于找到初始边框到最终目标的一个路径。但是使用one-step regression不能处理这个非线性的过程，所以作者采用迭代的方法逐步接近最终的目标。
+
+http://blog.csdn.net/zijin0802034/article/details/53535647
+
+G-CNN: an Iterative Grid Based Object Detector
+
 # 语义分割
 
 Semantic image segmentation
