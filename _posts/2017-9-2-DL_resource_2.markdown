@@ -428,25 +428,4 @@ http://mp.weixin.qq.com/s/SNfSY4CKhX1RDWd4itPx2Q
 
 马里兰大学论文：训练深度神经网络中的一致性难题
 
-https://mp.weixin.qq.com/s/ViQqeER1NXtJOtnLg76TWg
-
-关于远程监督，我们来推荐几篇值得读的论文
-
-https://mp.weixin.qq.com/s/z1APyCxlOEPHn48OeJAHkQ
-
-基于深度学习的视频内容识别
-
-https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
-
-谷歌提出多图像抠图算法，并弥补水印技术的一致性漏洞
-
-https://zhuanlan.zhihu.com/p/28639662
-
-百家争鸣的Meta Learning/Learning to learn
-
-https://mp.weixin.qq.com/s/kMTMjlLgcR24DT7CXvezsA
-
-深度学习概念、架构和tensorflow的思维导图！
-
-
 

@@ -1,8 +1,48 @@
 ---
 layout: post
-title:  深度学习（十四）——FCN
+title:  深度学习（十四）——语义分割, FCN
 category: theory 
 ---
+
+# 语义分割
+
+Semantic image segmentation
+
+https://zhuanlan.zhihu.com/p/21824299
+
+从特斯拉到计算机视觉之「图像语义分割」
+
+https://zhuanlan.zhihu.com/SemanticSegmentation
+
+一个语义分割的专栏
+
+https://zhuanlan.zhihu.com/p/22308032
+
+图像语义分割之FCN和CRF
+
+https://zhuanlan.zhihu.com/p/25515361
+
+图像语义分割之特征整合和结构预测
+
+https://zhuanlan.zhihu.com/p/27794982
+
+语义分割中的深度学习方法全解：从FCN、SegNet到各代DeepLab
+
+https://mp.weixin.qq.com/s/BWc8nRbOF1IfwbBtmLnhnA
+
+从全连接层到大型卷积核：深度学习语义分割全指南
+
+https://mp.weixin.qq.com/s/cANlqQAI-A2mC9vnd3imQA
+
+Instance-Aware图像语义分割
+
+https://mp.weixin.qq.com/s/v_TLYYq6cFWuwR9tXM8m-A
+
+如何通过CRF-RNN模型实现图像语义分割任务
+
+https://mp.weixin.qq.com/s/ceCC7Q6yr0QKESeZXi6lWQ
+
+堆叠解卷积网络实现图像语义分割顶尖效果
 
 # FCN
 

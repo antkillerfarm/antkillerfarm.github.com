@@ -144,4 +144,28 @@ https://mp.weixin.qq.com/s/MqnJ39GPrzP4xJWDZi9gnQ
 
 博士生开源深度学习C++库DLL：快速构建卷积受限玻尔兹曼机
 
+https://mp.weixin.qq.com/s/ViQqeER1NXtJOtnLg76TWg
+
+关于远程监督，我们来推荐几篇值得读的论文
+
+https://mp.weixin.qq.com/s/z1APyCxlOEPHn48OeJAHkQ
+
+基于深度学习的视频内容识别
+
+https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
+
+谷歌提出多图像抠图算法，并弥补水印技术的一致性漏洞
+
+https://zhuanlan.zhihu.com/p/28639662
+
+百家争鸣的Meta Learning/Learning to learn
+
+https://mp.weixin.qq.com/s/kMTMjlLgcR24DT7CXvezsA
+
+深度学习概念、架构和tensorflow的思维导图！
+
+https://mp.weixin.qq.com/s/-iziuLKUsRA4VpR5xJqEww
+
+斯坦福提出神经任务编程NTP：让机器人从层级任务中学习
+
 

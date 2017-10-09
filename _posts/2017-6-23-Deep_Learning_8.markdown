@@ -279,6 +279,10 @@ https://mp.weixin.qq.com/s/mPtv1fQd0NBgdY2b_ALNTQ
 
 机器之心GitHub项目：GAN完整理论推导与实现，Perfect！
 
+https://mp.weixin.qq.com/s/NFqTpSXtFdP43MBeb3Ovrw
+
+GAN眼中的图像翻译
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。

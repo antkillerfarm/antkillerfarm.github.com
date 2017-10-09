@@ -402,6 +402,14 @@ https://mp.weixin.qq.com/s/y5LLraGWuYUbOted9N-GWQ
 
 如何从TensorFlow转入PyTorch
 
+https://mp.weixin.qq.com/s/RKtyNpIxSxFNfOSyHPOiGw
+
+深度学习PyTorch的教程代码
+
+https://mp.weixin.qq.com/s/i70pT7pQpdoCXXhXq2_MEw
+
+四天速成！香港科技大学PyTorch教程
+
 http://mp.weixin.qq.com/s/Z5X7Vamuw1BwtienhOrSvQ
 
 解构TensorFlow, 学习MXNet--新一代深度学习系统的核心思想

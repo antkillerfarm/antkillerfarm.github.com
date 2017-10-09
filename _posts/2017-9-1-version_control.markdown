@@ -50,6 +50,34 @@ SVN是这一代的集大成者，使用简单的同时，仍保有相当强度�
 
 ## 参考
 
+https://mp.weixin.qq.com/s/IzijD8Sh3G2WsCz7aaxyhg
+
+TensorFlow深度学习概述
+
+https://github.com/yahoo/TensorFlowOnSpark
+
+TensorFlow On Spark
+
+https://silencezjl.coding.me/2017/05/01/%E5%81%B7%E4%B8%80%E6%B3%A2%E8%B5%84%E6%BA%90/
+
+各种TensorFlow资源
+
+https://github.com/zsdev2015/machine_learning
+
+某国内小牛写的中文入门demo，注释非常详细
+
+https://morvanzhou.github.io/tutorials/
+
+一个以python语言教学的ML、DL教程，比较通俗易懂。
+
+https://mp.weixin.qq.com/s/gJBDXf_5ViPR9dNm3eH2Hg
+
+TensorFlow初学者必须了解的55个经典案例
+
+http://mp.weixin.qq.com/s/JZ1ceGQDmQUaNW5wl6biLA
+
+TensorFlow实现流行机器学习算法教程汇集
+
 https://mp.weixin.qq.com/s/bjxJyOitynRtCoW0FX1gXw
 
 一文带你入门Tensorflow
@@ -218,6 +246,10 @@ https://mp.weixin.qq.com/s/GaK_iSTBl7B4LTdaOtiR_Q
 
 香港科技大学TensorFlow课件分享
 
+https://mp.weixin.qq.com/s/cPWXAI2TBv3_ssnWDFoQ4w
+
+TensorFlow sucks，有人吐槽TensorFlow晦涩难用
+
 # NLP参考资源
 
 https://mp.weixin.qq.com/s/GyE9qdXPGvrq12dMAf4nrQ
@@ -272,5 +304,8 @@ http://mp.weixin.qq.com/s/ZrFcpYf7E57j8E6zQsBexg
 
 引入秘密武器强化学习，发掘GAN在NLP领域的潜力
 
+https://mp.weixin.qq.com/s/0yRnBW_WWoUHInJcAeVd9A
+
+基于深度学习的候选答案句抽取研究
 
 

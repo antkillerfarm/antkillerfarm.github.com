@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十三）——SSD, YOLOv2, 语义分割
+title:  深度学习（十三）——SSD, YOLOv2
 category: theory 
 ---
 
@@ -164,6 +164,20 @@ YOLOv2首先修改预训练分类网络的分辨率为448*448，在ImageNet数�
 
 ### Direct location prediction
 
+使用anchor boxes的另一个问题是模型不稳定，尤其是在早期迭代的时候。大部分的不稳定现象出现在预测box的(x,y)坐标时。
+
+究其原因在于，虽然RPN会预测坐标的修正值$$(\Delta x, \Delta y)$$，然而却未对$$\Delta x, \Delta y$$的取值范围做限定。因此，可能会出现anchor检测很远的目标box的情况，效率比较低。
+
+正确做法应该是每一个anchor只负责检测周围正负一个单位以内的目标box。
+
+### Fine-Grained Features
+
+修改后的网络最终在13x13的特征图上进行预测，虽然这足以胜任大尺度物体的检测，但如果用上细粒度特征的话可能对小尺度的物体检测有帮助。
+
+Faser R-CNN和SSD都在不同层次的特征图上产生区域建议以获得多尺度的适应性。
+
+YOLOv2使用了一种不同的方法，简单添加一个passthrough layer，把浅层特征图（分辨率为26x26）连接到深层特征图。
+
 
 
 ## Faster
@@ -213,42 +227,4 @@ G-CNN是MaryLand大学的工作，论文主要的思路也是消除region propos
 http://blog.csdn.net/zijin0802034/article/details/53535647
 
 G-CNN: an Iterative Grid Based Object Detector
-
-# 语义分割
-
-https://zhuanlan.zhihu.com/p/21824299
-
-从特斯拉到计算机视觉之「图像语义分割」
-
-https://zhuanlan.zhihu.com/SemanticSegmentation
-
-一个语义分割的专栏
-
-https://zhuanlan.zhihu.com/p/22308032
-
-图像语义分割之FCN和CRF
-
-https://zhuanlan.zhihu.com/p/25515361
-
-图像语义分割之特征整合和结构预测
-
-https://zhuanlan.zhihu.com/p/27794982
-
-语义分割中的深度学习方法全解：从FCN、SegNet到各代DeepLab
-
-https://mp.weixin.qq.com/s/BWc8nRbOF1IfwbBtmLnhnA
-
-从全连接层到大型卷积核：深度学习语义分割全指南
-
-https://mp.weixin.qq.com/s/cANlqQAI-A2mC9vnd3imQA
-
-Instance-Aware图像语义分割
-
-https://mp.weixin.qq.com/s/v_TLYYq6cFWuwR9tXM8m-A
-
-如何通过CRF-RNN模型实现图像语义分割任务
-
-https://mp.weixin.qq.com/s/ceCC7Q6yr0QKESeZXi6lWQ
-
-堆叠解卷积网络实现图像语义分割顶尖效果
 

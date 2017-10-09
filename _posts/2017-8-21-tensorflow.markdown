@@ -184,6 +184,8 @@ with tf.Session(graph=g2) as sess2:
 
 Tensorflow对计算图的简化，不仅在于使用默认的Graph。还在于可以只计算部分的Graph。以上面的softmax运算为例，如果`sess.run(add)`的话，后面的ReLU和softmax运算都不会被执行。
 
+虽然图计算是Tensorflow的主要使用方式，然而一般性的tensor计算（即非图计算），也是完全可行的。Tensorflow没有提供相关的API，直接使用numpy就可以了。
+
 参考：
 
 http://www.algorithmdog.com/dynamic-tensorflow
@@ -200,7 +202,7 @@ Tensorflow学习笔记2：About Session, Graph, Operation and Tensor
 
 ## Fused Graph
 
-Fused Graph是TensorFlow新推出的概念。这里以softmax运算为例，讲一下它的基本思想。
+Fused Graph是TensorFlow新推出的概念。这里仍以softmax运算为例，讲一下它的基本思想。
 
 上面的softmax运算计算图中，总共有4个operation。Fused Graph则将这4个op整合为1个op，发给运算单元。
 
@@ -209,6 +211,10 @@ Fused Graph是TensorFlow新推出的概念。这里以softmax运算为例，讲�
 Qualcomm Hexagon平台的Fused Graph实现可参见：
 
 tensorflow/core/kernels/hexagon
+
+![](/images/article/fused_graph_2.png)
+
+上图是另一个计算图优化的例子。
 
 参考：
 
@@ -232,17 +238,33 @@ tensorflow和caffe2
 
 ## TensorFlow高层封装
 
-目前对TensorFlow的主要封装有4个：
+目前对TensorFlow的封装如下所示：
 
 1.TensorFlow-Slim。主要提供了层一级的封装。粒度和OpenVX类似。
 
 2.tf.contrib.learn（之前也被称为skflow）。提供了类似sklearn的接口。
 
+前2个是TensorFlow自带的封装
+
 3.第三个是TFLearn。在tf.contrib.learn上的封装。需单独安装：
 
 `sudo pip install tflearn`
 
+http://tflearn.org/
+
 4.Keras。
+
+5.TensorLayer。这个的封装粒度介于TensorFlow-Slim和TFLearn之间。
+
+http://tensorlayer.readthedocs.io/en/latest/user/tutorial.html
+
+6.Pretty Tensor。来自google的TensorFlow封装。
+
+https://github.com/google/prettytensor
+
+7.Sonnet。来自Deepmind的TensorFlow封装。
+
+https://github.com/deepmind/sonnet
 
 参见：
 
@@ -323,35 +345,5 @@ Caffe被Caffe 2替代，但使用的广泛度仍超过后者。
 Theano被同样基于计算图的TensorFlow淘汰。2017年9月停止更新。
 
 Torch相对变动最小，它被PyTorch替代。这更可以看作是python对于lua的胜利。
-
-## 参考
-
-https://mp.weixin.qq.com/s/IzijD8Sh3G2WsCz7aaxyhg
-
-TensorFlow深度学习概述
-
-https://github.com/yahoo/TensorFlowOnSpark
-
-TensorFlow On Spark
-
-https://silencezjl.coding.me/2017/05/01/%E5%81%B7%E4%B8%80%E6%B3%A2%E8%B5%84%E6%BA%90/
-
-各种TensorFlow资源
-
-https://github.com/zsdev2015/machine_learning
-
-某国内小牛写的中文入门demo，注释非常详细
-
-https://morvanzhou.github.io/tutorials/
-
-一个以python语言教学的ML、DL教程，比较通俗易懂。
-
-https://mp.weixin.qq.com/s/gJBDXf_5ViPR9dNm3eH2Hg
-
-TensorFlow初学者必须了解的55个经典案例
-
-http://mp.weixin.qq.com/s/JZ1ceGQDmQUaNW5wl6biLA
-
-TensorFlow实现流行机器学习算法教程汇集
 
 
