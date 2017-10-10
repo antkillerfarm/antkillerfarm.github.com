@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十四）——语义分割, FCN
+title:  深度学习（十四）——语义分割
 category: theory 
 ---
 
@@ -76,21 +76,27 @@ G-CNN: an Iterative Grid Based Object Detector
 
 # 语义分割
 
-## 概述
-
 Semantic segmentation是图像理解的基石性技术，在自动驾驶系统（具体为街景识别与理解）、无人机应用（着陆点判断）以及穿戴式设备应用中举足轻重。
 
-我们都知道，图像是由许多像素（Pixel）组成，而「语义分割」顾名思义就是将像素按照图像中表达语义含义的不同进行分组（Grouping）／分割（Segmentation）。
+我们都知道，图像是由许多像素（Pixel）组成，而「语义分割」顾名思义就是将像素按照图像中表达语义含义的不同进行分组（Grouping）/分割（Segmentation）。
 
 ![](/images/article/image_enet.png)
 
-上图是语义分割网络ENet的实际效果图。
+上图是语义分割网络ENet的实际效果图。其中，左图为原始图像，右图为分割任务的真实标记（Ground truth）。
 
-## 参考
+显然，在图像语义分割任务中，其输入为一张HxWx3的三通道彩色图像，输出则是对应的一个HxW矩阵，矩阵的每一个元素表明了原图中对应位置像素所表示的语义类别（Semantic label）。
+
+因此，图像语义分割也称为“图像语义标注”（Image semantic labeling）、“像素语义标注”（Semantic pixel labeling）或“像素语义分组”（Semantic pixel grouping）。
+
+由于图像语义分割不仅要识别出对象，还要标出每个对象的边界。因此，与分类目的不同，相关模型要具有像素级的密集预测能力。
+
+目前用于语义分割研究的两个最重要数据集是PASCAL VOC和MSCOCO。
+
+参考：
 
 https://zhuanlan.zhihu.com/p/21824299
 
-从特斯拉到计算机视觉之「图像语义分割」
+从特斯拉到计算机视觉之“图像语义分割”
 
 https://zhuanlan.zhihu.com/SemanticSegmentation
 
@@ -128,60 +134,42 @@ https://mp.weixin.qq.com/s/4BvvwV11f9MrrYyLwUrX9w
 
 还在用ps抠图抠瞎眼？机器学习通用背景去除产品诞生记
 
-# FCN
+# 前DL时代的语义分割
 
-http://www.cnblogs.com/gujianhan/p/6030639.html
+从最简单的像素级别“阈值法”（Thresholding methods）、基于像素聚类的分割方法（Clustering-based segmentation methods）到“图划分”的分割方法（Graph partitioning segmentation methods），在DL“一统江湖”之前，图像语义分割方面的工作可谓“百花齐放”。在此，我们仅以“Normalized cut”和“Grab cut”这两个基于图划分的经典分割方法为例，介绍一下前DL时代语义分割方面的研究。
 
-全卷积网络FCN详解
+## Normalized cut
 
-# DeepLab
+Normalized cut （N-cut）方法是基于图划分（Graph partitioning）的语义分割方法中最著名的方法之一，于2000年Jianbo Shi和Jitendra Malik发表于相关领域顶级期刊TPAMI。
 
-《Semantic Image Segmentation with Deep Convolutional Nets and Fully Connected CRFs》
+通常，传统基于图划分的语义分割方法都是将图像抽象为图（Graph）的形式$$\bf{G}=(\bf{V},\bf{E})$$（$$\bf{V}$$为图节点，$$\bf{E}$$为图的边），然后借助图理论（Graph theory）中的理论和算法进行图像的语义分割。
 
-《DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs》
+常用的方法为经典的最小割算法（Min-cut algorithm）。不过，在边的权重计算时，经典min-cut算法只考虑了局部信息。如下图所示，以二分图为例（将$$\bf{G}$$分为不相交的$$\bf{A},\bf{B}$$两部分），若只考虑局部信息，那么分离出一个点显然是一个min-cut，因此图划分的结果便是类似$$n_1$$或$$n_2$$这样离群点，而从全局来看，实际想分成的组却是左右两大部分。
 
-《Rethinking Atrous Convolution for Semantic Image Segmentation》
+![](/images/article/N_cut.jpg)
 
->Liang-Chieh (Jay) Chen，台湾国立交通大学本科（2004年）+密歇根大学硕士（2010年）+UCLA博士（2015年）。现为Google研究员。   
->个人主页：   
->http://liangchiehchen.com/
+针对这一情形，N-cut则提出了一种考虑全局信息的方法来进行图划分（Graph partitioning），即，将两个分割部分$$\bf{A},\bf{B}$$与全图节点的连接权重（$${\rm assoc(\bf{A},\bf{V})}$$和$$\rm assoc(\bf{B},\bf{V})$$）考虑进去：
 
-# ENet
+$$N_{cut}(\bf{A},\bf{B})=\frac{cut(\bf{A},\bf{B})}{assoc(\bf{A},\bf{V})}+\frac{cut(\bf{A},\bf{B})}{assoc(\bf{B},\bf{V})}$$
 
-论文：
+如此一来，在离群点划分中，$$N_{cut}(\bf{A},\bf{B})$$中的某一项会接近1，而这样的图划分显然不能使得$$N_{cut}(\bf{A},\bf{B})$$是一个较小的值，故达到考虑全局信息而摒弃划分离群点的目的。这样的操作类似于机器学习中特征的规范化（Normalization）操作，故称为Normalized cut。N-cut不仅可以处理二类语义分割，而且将二分图扩展为K路（K-way）图划分即可完成多语义的图像语义分割，如下图例。
 
-《ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation》
+![](/images/article/N_cut_2.jpg)
 
-代码：
+## Grab cut
 
-https://github.com/TimoSaemann/ENet
+Grab cut是微软剑桥研究院于2004年提出的著名交互式图像语义分割方法。与N-cut一样，grab cut同样也是基于图划分，不过grab cut是其改进版本，可以看作迭代式的语义分割算法。Grab cut利用了图像中的纹理（颜色）信息和边界（反差）信息，只要少量的用户交互操作即可得到比较好的前后背景分割结果。
 
-参考：
+在Grab cut中，RGB图像的前景和背景分别用一个高斯混合模型（Gaussian mixture model, GMM）来建模。两个GMM分别用以刻画某像素属于前景或背景的概率，每个GMM高斯部件（Gaussian component）个数一般设为k=5。接下来，利用吉布斯能量方程（Gibbs energy function）对整张图像进行全局刻画，而后迭代求取使得能量方程达到最优值的参数作为两个GMM的最优参数。GMM确定后，某像素属于前景或背景的概率就随之确定下来。
 
-http://blog.csdn.net/zijinxuxu/article/details/67638290
+在与用户交互的过程中，Grab cut提供两种交互方式：一种以包围框（Bounding box）为辅助信息；另一种以涂写的线条（Scribbled line）作为辅助信息。以下图为例，用户在开始时提供一个包围框，grab cut默认的认为框中像素中包含主要物体／前景，此后经过迭代图划分求解，即可返回扣出的前景结果，可以发现即使是对于背景稍微复杂一些的图像，grab cut仍有不俗表现。
 
-论文中文版blog
+![](/images/article/grab_cut.jpg)
 
-# OpenPose
+不过，在处理下图时，grab cut的分割效果则不能令人满意。此时，需要额外人为的提供更强的辅助信息：用红色线条／点标明背景区域，同时用白色线条标明前景区域。在此基础上，再次运行grab cut算法求取最优解即可得到较为满意的语义分割结果。Grab cut虽效果优良，但缺点也非常明显，一是仅能处理二类语义分割问题，二是需要人为干预而不能做到完全自动化。
 
-![](/images/article/openpose.png)
+![](/images/article/grab_cut_2.jpg)
 
-论文：
-
-《Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields》
-
-《Hand Keypoint Detection in Single Images using Multiview Bootstrapping》
-
-《Convolutional pose machines》
-
-代码：
-
-https://github.com/CMU-Perceptual-Computing-Lab/openpose
-
-# 视频目标分割
-
-http://mp.weixin.qq.com/s/pGrzmq5aGoLb2uiJRYAXVw
-
-一文概览视频目标分割
+不难看出，前DL时代的语义分割工作多是根据图像像素自身的低阶视觉信息（Low-level visual cues）来进行图像分割。由于这样的方法没有算法训练阶段，因此往往计算复杂度不高，但是在较困难的分割任务上（如果不提供人为的辅助信息），其分割效果并不能令人满意。
 
 

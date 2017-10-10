@@ -350,6 +350,10 @@ https://cs.brown.edu/courses/csci1460
 
 CSCI 1460: Introduction to Computational Linguistics
 
+https://berkeley-deep-learning.github.io/
+
+UCB的DL课程
+
 # Javascript在客户端的使用
 
 Javascript在服务器前端的成功，促使人们思考其在客户端的使用。

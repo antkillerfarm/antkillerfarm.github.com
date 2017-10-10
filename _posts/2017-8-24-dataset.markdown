@@ -70,6 +70,14 @@ http://host.robots.ox.ac.uk/pascal/VOC/
 
 2005～2012年期间，围绕着该数据集展开了Pascal VOC挑战赛。
 
+## MSCOCO
+
+COCO数据集是微软团队获取的一个可以用来图像recognition+segmentation+captioning的数据集。
+
+官网：
+
+http://cocodataset.org/
+
 ## UCI数据集
 
 UCI大学有个专门提供数据集的网站：
