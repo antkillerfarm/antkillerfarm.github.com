@@ -260,7 +260,9 @@ b) 7x7=49个cell所属20个物体分类的概率。
 
 ![](/images/article/yolo_3.png)
 
-上图是YOLO的网络结构图。从表面看，YOLO的输出只有一个，似乎比Faster RCNN两个输出少一个，然而这个输出本身，实际上要复杂的多。
+上图是YOLO的网络结构图，它采用经过修改的GoogLeNet作为base CNN。
+
+从表面看，YOLO的输出只有一个，似乎比Faster RCNN两个输出少一个，然而这个输出本身，实际上要复杂的多。
 
 YOLO的输出是一个7x7x30的tensor，其中7x7对应图片分割的7x7网格。30表明每个网格对应一个30维的向量。
 

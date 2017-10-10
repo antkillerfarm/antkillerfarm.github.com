@@ -218,3 +218,13 @@ https://mp.weixin.qq.com/s/tS_9gS2ADoEdSKCLB-cxpA
 
 刘小明教授为你讲解人脸识别
 
+https://mp.weixin.qq.com/s/CLgyaAslE4hYHi62UhzeGw
+
+韩琥：深度学习让机器给人脸“贴标签”
+
+https://mp.weixin.qq.com/s/pUcVO8Fj-n9-pMwAzBvWuQ
+
+山世光：人脸识别领域的“激荡20年”
+
+
+

@@ -122,6 +122,10 @@ https://mp.weixin.qq.com/s/SAp0alFSLKN1CHX0_vdTjg
 
 扑克AI对抗人类30年历史，解密冷扑大师前世今生
 
+https://mp.weixin.qq.com/s/x0G-LNCano7qjGdpj-fpCQ
+
+2017年度星际争霸AI竞赛结果出炉
+
 ## TPU & GPU
 
 https://zhuanlan.zhihu.com/p/25382177

@@ -94,7 +94,7 @@ softmax函数计算时候为什么要减去一个最大值？
 
 http://shuokay.com/2016/07/20/softmax-loss/
 
-Softmax 输出及其反向传播推导
+Softmax输出及其反向传播推导
 
 # 目标检测
 

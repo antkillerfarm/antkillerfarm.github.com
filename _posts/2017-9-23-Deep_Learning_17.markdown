@@ -150,6 +150,10 @@ http://mp.weixin.qq.com/s/TBVVdX3erOpXNjXmhLmxOw
 
 学“深度强化学习”，看懂DeepMind这篇文章就够了!
 
+https://mp.weixin.qq.com/s/SZHMyWOXHM8T3zp_aUt-6A
+
+DeepMind提出Rainbow：整合DQN算法中的六种变体
+
 # Ultra Deep Network
 
 ## FractalNet

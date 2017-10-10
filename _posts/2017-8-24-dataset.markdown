@@ -78,6 +78,26 @@ http://archive.ics.uci.edu/ml/datasets
 
 其中包含360+的数据集，实在是个宝库啊。
 
+## 猫狗数据集
+
+最早的宠物数据集，当属Ronald Fisher在1947年的论文中给出的数据集。它包含了144只猫的性别、体重和心脏重量。该数据集的地址：
+
+https://github.com/mathisonian/datasets-cats
+
+其他的宠物数据集还包括：
+
+http://www.robots.ox.ac.uk/~vgg/data/pets/
+
+VGG提供的图片数据集，有语义分割的标签。
+
+https://www.kaggle.com/c/dogs-vs-cats/data
+
+kaggle的猫狗图片数据集
+
+http://vision.stanford.edu/aditya86/ImageNetDogs/
+
+Stanford的狗图片数据集。
+
 ## 其他
 
 http://www.csdn.net/article/2014-06-06/2820111-100-Interesting-Data-Sets-for-Statistics/1
@@ -143,5 +163,9 @@ https://niessner.github.io/Matterport/
 https://mp.weixin.qq.com/s/fR8-zODLNp24nlR5dJ85Nw
 
 3万患者11万图像14类病理：NIH公开大规模胸部X光数据集
+
+https://mp.weixin.qq.com/s/Aatv0Q-Mfkkb75h_ZF8AIA
+
+100大机器学习数据集，总有一款适合你！
 
 

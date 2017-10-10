@@ -230,26 +230,24 @@ YOLOv2使用了一种不同的方法，简单添加一个passthrough layer，把
 
 2.将浅层特征图（13x13x2048）和深层特征图（13x13x1024）合并为一个（13x13x3072）tensor。
 
+### Multi-Scale Training
+
+为了让YOLOv2对不同尺寸图片具有鲁棒性，在训练的时候就要考虑这一点。
+
+每经过10批训练（10 batches）就会随机选择新的图片尺寸。网络使用的降采样参数为32，于是使用32的倍数{320,352，…，608}，最小的尺寸为320 * 320，最大的尺寸为608 * 608。 调整网络到相应维度然后继续进行训练。
+
 ## Faster
 
+### Darknet-19
 
+YOLOv2使用了一个新的分类网络作为特征提取部分，参考了前人的先进经验，比如类似于VGG，作者使用了较多的3x3卷积核，在每一次池化操作后把通道数翻倍。
 
-## Stronger
+借鉴了network in network的思想，网络使用了全局平均池化（global average pooling），把1x1的卷积核置于3x3的卷积核之间，用来压缩特征。也用了batch normalization（前面介绍过）稳定模型训练。
 
+最终得出的基础模型就是Darknet-19，其包含19个卷积层、5个最大值池化层（maxpooling layers ）。如下图：
 
+![](/images/article/Darknet_19.png)
 
-## 参考
-
-https://zhuanlan.zhihu.com/p/25167153
-
-YOLO2
-
-http://blog.csdn.net/jesse_mx/article/details/53925356
-
-YOLOv2 论文笔记
-
-http://lanbing510.info/2017/09/04/YOLOV2.html
-
-目标检测之YOLOv2
+Darknet-19的运算量为55.8亿次浮点数运算。VGG-16为306.9亿次，而YOLO为85.2亿次。
 
 

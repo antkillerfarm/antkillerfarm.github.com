@@ -232,13 +232,27 @@ Stochastic-pooling则介于两者之间，通过对像素点按照数值大小�
 
 ## 全局平均池化
 
-Global average Pooling
+Global Average Pooling是另一类池化操作，一般用于替换FullConnection层。
 
 ![](/images/article/global_average_pooling.png)
 
+上图是FC和GAP在CNN中的使用方法图。从中可以看出Conv转换成FC，实际上进行了如下操作：
+
+1.对每个通道的feature map进行flatten操作得到一维的tensor。
+
+2.将不同通道的tensor连接成一个大的一维tensor。
+
 ![](/images/article/FC.png)
 
+上图展示了FC与Conv、Softmax等层联动时的运算操作。
+
 ![](/images/article/GAP.png)
+
+上图是GAP与Conv、Softmax等层联动时的运算操作。可以看出，GAP的实际操作如下：
+
+1.计算每个通道的feature map的均值。
+
+2.将不同通道的均值连接成一个一维tensor。
 
 ## 参考
 
