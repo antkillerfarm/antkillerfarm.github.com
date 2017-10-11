@@ -126,6 +126,10 @@ https://mp.weixin.qq.com/s/x0G-LNCano7qjGdpj-fpCQ
 
 2017年度星际争霸AI竞赛结果出炉
 
+https://mp.weixin.qq.com/s/AndV-htPeTXlpAm1GONNtA
+
+中科院开源星际争霸2宏观运营研究数据集MSC
+
 ## TPU & GPU
 
 https://zhuanlan.zhihu.com/p/25382177

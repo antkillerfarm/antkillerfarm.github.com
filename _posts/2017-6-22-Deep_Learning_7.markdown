@@ -78,11 +78,15 @@ http://blog.csdn.net/shenxiaolu1984/article/details/51444525
 
 ### Network In Network
 
+Network In Network是颜水成团队于2013年提出的。
+
 论文：
 
 《Network In Network》
 
 ![](/images/article/nin.png)
+
+>颜水成，北京大学博士，新加坡国立大学副教授。奇虎360AI研究院院长。
 
 参考：
 

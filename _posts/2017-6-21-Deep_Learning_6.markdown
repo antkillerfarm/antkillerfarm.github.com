@@ -144,6 +144,10 @@ https://mp.weixin.qq.com/s/Fp6G1aI_utDd_kTbdHvEVQ
 
 完全基于卷积神经网络的seq2seq
 
+http://localhost:4500/theory/2017/06/21/Deep_Learning_6.html
+
+从2017年顶会论文看Attention Model
+
 # DMN
 
 Question answering是自然语言处理领域的一个复杂问题。它需要对文本的理解力和推理能力。大部分NLP问题都可以转化为一个QA问题。Dynamic Memory Networks可以用来处理QA问题。DMN的输入包含事实输入，问题输入，经过内部处理形成片段记忆，最终产生问题的答案。
@@ -251,7 +255,5 @@ GoogleNet的进化道路和VGG有所不同。VGG实际上就是“大力出奇�
 ![](/images/article/GoogleNet.jpg)
 
 上图是GoogleNet的结构图。从中可以看出，GoogleNet除了AlexNet的基本要素之外，还有被称作Inception的结构。
-
-
 
 

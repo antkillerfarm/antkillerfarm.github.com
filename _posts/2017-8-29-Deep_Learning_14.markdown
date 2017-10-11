@@ -114,10 +114,6 @@ https://zhuanlan.zhihu.com/p/27794982
 
 语义分割中的深度学习方法全解：从FCN、SegNet到各代DeepLab
 
-https://mp.weixin.qq.com/s/BWc8nRbOF1IfwbBtmLnhnA
-
-从全连接层到大型卷积核：深度学习语义分割全指南
-
 https://mp.weixin.qq.com/s/cANlqQAI-A2mC9vnd3imQA
 
 Instance-Aware图像语义分割
@@ -133,6 +129,10 @@ https://mp.weixin.qq.com/s/ceCC7Q6yr0QKESeZXi6lWQ
 https://mp.weixin.qq.com/s/4BvvwV11f9MrrYyLwUrX9w
 
 还在用ps抠图抠瞎眼？机器学习通用背景去除产品诞生记
+
+https://zhuanlan.zhihu.com/p/24738319
+
+「见微知著」——细粒度图像分析进展综述
 
 # 前DL时代的语义分割
 

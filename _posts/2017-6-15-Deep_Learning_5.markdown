@@ -214,6 +214,10 @@ https://mp.weixin.qq.com/s/7DgiXCNBS5vb07WIKTFYRQ
 
 从ReLU到Sinc，26种神经网络激活函数可视化
 
+http://www.cnblogs.com/ymjyqsx/p/6294021.html
+
+PReLU与ReLU
+
 # Deep Residual Network
 
 无论采用何种方法，可训练的神经网络的层数都不可能无限深。有的时候，即使没有梯度消失，也存在训练退化（即深层网络的效果还不如浅层网络）的问题。
