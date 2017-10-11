@@ -146,6 +146,8 @@ https://github.com/TimoSaemann/ENet
 
 ![](/images/article/ENet.png)
 
+ENet的网络结构如上图所示。其中的initial和bottleneck结构分别见下图的(a)和(b)：
+
 ![](/images/article/ENet_2.png)
 
 参考：
@@ -163,6 +165,12 @@ Global Convolutional Network是孙剑团队的Chao Peng于2017年提出的。
 《Large Kernel Matters -- Improve Semantic Segmentation by Global Convolutional Network》
 
 >孙剑，西安交通大学博士（2003年）。后一直在微软亚洲研究院工作，担任首席研究员。2016年7月正式加入旷视科技担任首席科学家。
+
+![](/images/article/GCN.png)
+
+![](/images/article/GCN_2.png)
+
+![](/images/article/GCN_3.png)
 
 参考：
 
