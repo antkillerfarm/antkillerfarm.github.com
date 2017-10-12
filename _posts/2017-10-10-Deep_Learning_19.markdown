@@ -154,6 +154,10 @@ https://mp.weixin.qq.com/s/SZHMyWOXHM8T3zp_aUt-6A
 
 DeepMind提出Rainbow：整合DQN算法中的六种变体
 
+https://mp.weixin.qq.com/s/_Di73PkEWJV1-OLLHfz7yQ
+
+组合在线学习：实时反馈玩转组合优化
+
 # Ultra Deep Network
 
 ## FractalNet
