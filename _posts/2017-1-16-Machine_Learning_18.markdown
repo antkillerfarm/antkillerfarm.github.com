@@ -176,6 +176,8 @@ GBDT写的比较好的，有以下blog：
 
 http://blog.csdn.net/w28971023/article/details/8240756
 
+GBDT（MART）迭代决策树入门教程
+
 摘录要点如下：
 
 决策树分为两大类：
@@ -196,7 +198,7 @@ GBDT的核心在于**累加所有树的结果作为最终结果**。例如根到
 
 http://blog.csdn.net/u010691898/article/details/38292937
 
-http://www.cs.cmu.edu/~tom/
+阿里大数据比赛总结
 
 ## Bagging和随机森林
 
@@ -211,9 +213,9 @@ XGBoost是陈天奇于2014年提出的一套并行boost算法的工具库。
 >注：陈天奇，华盛顿大学计算机系博士生，研究方向为大规模机器学习。上海交通大学本科（2006～2010）和硕士（2010～2013）。   
 >http://homes.cs.washington.edu/~tqchen/
 
-原始论文：
+论文：
 
-https://arxiv.org/pdf/1603.02754v3.pdf
+《XGBoost: A Scalable Tree Boosting System》
 
 参考文献中的部分结论非常精彩，摘录如下。
 

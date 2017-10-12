@@ -113,6 +113,10 @@ blog.csdn.net/hellonlp/
 
 一个NLP方面的blog
 
+https://zhuanlan.zhihu.com/RucAIBox
+
+一个NLP方面的blog
+
 ## 工具
 
 ### Natural Language Toolkit(NLTK)

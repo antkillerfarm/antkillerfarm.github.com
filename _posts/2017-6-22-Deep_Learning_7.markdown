@@ -88,6 +88,8 @@ Network In Network是颜水成团队于2013年提出的。
 
 >颜水成，北京大学博士，新加坡国立大学副教授。奇虎360AI研究院院长。
 
+Network In Network最重要的贡献是使用Global Average Pooling替换了Full Connection。这直接促进了之后Fully Convolutional Networks的发展。
+
 参考：
 
 http://blog.csdn.net/sheng_ai/article/details/41313883

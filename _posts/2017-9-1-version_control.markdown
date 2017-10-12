@@ -250,6 +250,10 @@ https://mp.weixin.qq.com/s/cPWXAI2TBv3_ssnWDFoQ4w
 
 TensorFlow sucks，有人吐槽TensorFlow晦涩难用
 
+https://mp.weixin.qq.com/s/_kr28kN0_1QFP8BR_wGo5w
+
+TensorFlow RNN入门
+
 # NLP参考资源
 
 https://mp.weixin.qq.com/s/GyE9qdXPGvrq12dMAf4nrQ
@@ -311,3 +315,9 @@ https://mp.weixin.qq.com/s/0yRnBW_WWoUHInJcAeVd9A
 https://mp.weixin.qq.com/s/y39QT55RcsNAmNS6mT1SKg
 
 深度好奇提出文档解析框架：面向对象的神经规划
+
+https://zhuanlan.zhihu.com/p/27552230
+
+基于Depthwise Separable Convolutions的Seq2Seq模型_SliceNet原理解析
+
+

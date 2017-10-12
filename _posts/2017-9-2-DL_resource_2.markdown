@@ -130,6 +130,10 @@ https://mp.weixin.qq.com/s/AndV-htPeTXlpAm1GONNtA
 
 中科院开源星际争霸2宏观运营研究数据集MSC
 
+https://mp.weixin.qq.com/s/qU6XD45RGeMI-T7GI0dg2Q
+
+OpenAI竞争性自我对抗训练：简单环境下获得复杂的智能体
+
 ## TPU & GPU
 
 https://zhuanlan.zhihu.com/p/25382177

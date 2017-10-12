@@ -46,6 +46,10 @@ http://academic.research.microsoft.com/
 
 微软学术搜索，查论文的好帮手。
 
+http://cn.arxiv.org/
+
+最著名的论文网站arxiv.org的中国镜像网站。
+
 ## 工具软件及其官网
 
 Box2D---www.box2d.org

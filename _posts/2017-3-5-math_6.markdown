@@ -107,6 +107,26 @@ $$\lim_{a\to\infty}A\ge\lim_{a\to\infty}2\pi\ln(a)=\infty$$
 
 Gabriel's horn现象不仅存在于表面积/体积中，也存在于长度/面积中，即所谓的无限长海岸线问题。对此的进一步研究，开拓了数学中的分形几何领域。
 
+# Lipschitz连续
+
+https://en.wikipedia.org/wiki/Lipschitz_continuity
+
+http://www.cnblogs.com/flywithyou/p/4135562.html
+
+Lipschitz连续
+
+https://www.zhihu.com/question/62554985
+
+神经网络的上同调理论
+
+http://tech.scichina.com:8082/sciE/CN/abstract/abstract404403.shtml
+
+神经网络的本质逼近阶
+
+http://www.doc88.com/p-2337088655000.html
+
+神经网络的函数逼近理论
+
 # 复变函数
 
 1.复球面表示。

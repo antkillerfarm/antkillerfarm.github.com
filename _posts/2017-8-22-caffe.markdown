@@ -44,6 +44,16 @@ examples/mnist/train_lenet.sh
 
 prototxt：模板文件。定义NN中的层之类的结构。
 
+从阅读习惯上，我们浏览一个NN结构，通常是从input到output。prototxt文件的组织也采用了这样的顺序。然而和通常描述上下访问关系的顺序（从上到下）不同，Caffe认为input在最底部，所以input结点只有top属性。
+
+复杂网络的prototxt往往不止一个：
+
+1.Solver。用于设置训练时的参数。
+
+2.Train。用于描述训练时的网络结构。
+
+3.Deploy。用于描述部署时的网络结构。
+
 caffemodel：模型文件。训练好的模型可以放在模型文件中，以便于今后的预测。
 
 除了模板文件和模型文件之外，有的时候训练样本也需要打包存储，以防止小文件过多导致的IO速度问题。
@@ -111,7 +121,17 @@ param {
 
 上面这组参数被实践证明，是比较work的参数。
 
-**flatten**：将n * c * h * w的blob，转换成n * (c*h*w)的结构。
+**flatten**：将n * c * h * w的blob，转换成n * (c * h * w)的结构。
+
+**crop**：Crop层的输入（bottom blobs）有两个，让我们假设为A和B，输出（top）为C。
+
+A：要进行裁切的bottom。
+
+B：裁切的参考输入。
+
+参数：axis=1，offset=（25,128,128）
+
+C：**C = A[: , 25: 25+B.shape[1] , 128: 128+B.shape[2] , 128: 128+B.shape[3] ]**
 
 ## 代码
 

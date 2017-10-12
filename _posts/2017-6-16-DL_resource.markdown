@@ -284,10 +284,6 @@ https://mp.weixin.qq.com/s/QXOy2jo4RhCZrD5bSVzBOQ
 
 共享相关任务表征，一文读懂深度神经网络多任务学习
 
-https://zhuanlan.zhihu.com/p/25954683
-
-Mask R-CNN个人理解
-
 https://mp.weixin.qq.com/s/lVja7woyFWpmr9sH0CitAA
 
 BMXNet：基于MXNet的开源二值神经网络实现
@@ -413,6 +409,10 @@ https://mp.weixin.qq.com/s/i70pT7pQpdoCXXhXq2_MEw
 http://mp.weixin.qq.com/s/Z5X7Vamuw1BwtienhOrSvQ
 
 解构TensorFlow, 学习MXNet--新一代深度学习系统的核心思想
+
+https://zhuanlan.zhihu.com/p/26078299
+
+使用深度学习来破解captcha验证码
 
 ### 量子计算 & 遗传算法
 

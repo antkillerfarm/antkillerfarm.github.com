@@ -186,6 +186,20 @@ https://mp.weixin.qq.com/s/5peMiGXNnviAjMP76tV3pw
 
 Python高性能计算库——Numba
 
+## Face Recognition
+
+这是一个人脸识别的软件包。
+
+代码：
+
+https://github.com/ageitgey/face_recognition
+
+参考：
+
+https://mp.weixin.qq.com/s/QcMsSsZY7TcNQ3G57p8eyQ
+
+3行Python代码完成人脸识别
+
 ## 参考
 
 https://github.com/neozhaoliang/pywonderland/tree/master/

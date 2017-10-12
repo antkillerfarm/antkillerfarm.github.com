@@ -85,6 +85,10 @@ http://blog.csdn.net/u013709270/article/details/78156207
 
 Python机器学习实战之手撕XGBoost
 
+https://mp.weixin.qq.com/s/PZ-1fkNvdJmv_8zLbvoW1g
+
+Adaboost算法原理小结
+
 # 关联规则挖掘
 
 ## 基本概念

@@ -116,6 +116,10 @@ http://mp.weixin.qq.com/s/F2gBP23LCEF72QDlugbBZQ
 
 详解如何使用Keras实现Wassertein GAN
 
+https://mp.weixin.qq.com/s/PR5gQYEse9KxhSkEVglRWg
+
+用Keras实现seq2seq学习
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。

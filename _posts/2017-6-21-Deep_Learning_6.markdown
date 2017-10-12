@@ -196,6 +196,10 @@ https://mp.weixin.qq.com/s/nK__d-PV6DY5mDfA_UgDmQ
 
 ![](/images/article/CNN_3.png)
 
+完整版本参见：
+
+https://github.com/Nikasa1889/HistoryObjectRecognition/blob/master/HistoryOfObjectRecognition.pdf
+
 ## AlexNet
 
 2012年，ILSVRC比赛冠军的model——Alexnet（以第一作者Alex命名）的结构图如下：

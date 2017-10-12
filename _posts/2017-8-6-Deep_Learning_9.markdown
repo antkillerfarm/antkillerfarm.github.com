@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（九）——李飞飞, 花式卷积, 花式池化, Batch Normalization
+title:  深度学习（九）——李飞飞, 花式卷积, 花式池化
 category: theory 
 ---
 
@@ -110,6 +110,22 @@ CNN的反卷积就简单多了，它只是误差的反向算法而已。因此�
 
 《Squeeze-and-Excitation Networks》
 
+## Separable convolution
+
+前面介绍的都是正方形的卷积核，实际上长条形的卷积核也是很常用的。比如可分离卷积。
+
+我们知道卷积的计算量和卷积核的面积成正比。对于k x k的卷积核K来说，计算复杂度就是$$O(k^2)$$。
+
+如果我们能找到1 x k的卷积核H和k x 1的卷积核V，且$$K = V * H$$，则称K是可分离的卷积核。
+
+根据卷积运算满足结合律，可得：
+
+$$f * K = f * (V * H) = f * V * H$$
+
+这样就将一个k x k的卷积运算，转换成1 x k + k x 1的卷积运算，从而大大节省了参数和计算量。
+
+显然，不是所有的卷积核都满足可分离条件。但是不要紧，NN有自动学习并逼近函数的能力。经过训练之后：$$K \approx = V * H$$
+
 ## 可变形卷积核
 
 MSRA于2017年提出了可变形卷积核的概念。
@@ -120,15 +136,15 @@ MSRA于2017年提出了可变形卷积核的概念。
 
 ![](/images/article/Deformable_convolution.png)
 
-## 1x1卷积
+## 1 x 1卷积
 
 1、升维或降维。
 
-如果卷积的输出输入都只是一个平面，那么1x1卷积核并没有什么意义，它是完全不考虑像素与周边其他像素关系。 但卷积的输出输入是长方体，所以1x1卷积实际上是对每个像素点，在不同的channels上进行线性组合（信息整合），且保留了图片的原有平面结构，调控depth，从而完成升维或降维的功能。
+如果卷积的输出输入都只是一个平面，那么1x1卷积核并没有什么意义，它是完全不考虑像素与周边其他像素关系。 但卷积的输出输入是长方体，所以1 x 1卷积实际上是对每个像素点，在不同的channels上进行线性组合（信息整合），且保留了图片的原有平面结构，调控depth，从而完成升维或降维的功能。
 
 ![](/images/article/conv_1x1.png)
 
-2、加入非线性。卷积层之后经过激励层，1x1的卷积在前一层的学习表示上添加了非线性激励（ non-linear activation ），提升网络的表达能力；
+2、加入非线性。卷积层之后经过激励层，1 x 1的卷积在前一层的学习表示上添加了非线性激励（ non-linear activation ），提升网络的表达能力；
 
 3.促进不同通道之间的信息交换。
 
@@ -137,6 +153,32 @@ MSRA于2017年提出了可变形卷积核的概念。
 https://www.zhihu.com/question/56024942
 
 卷积神经网络中用1x1卷积有什么作用或者好处呢？
+
+## depthwise separable convolution
+
+在传统的卷积网络中，卷积层会同时寻找跨空间和跨深度的相关性。
+
+然而Xception指出：跨通道的相关性和空间相关性是完全可分离的，最好不要联合映射它们。
+
+>Xception是Francois Chollet于2016年提出的。
+
+![](/images/article/Xception.png)
+
+上图是Xception中的卷积运算depthwise separable convolution的示意图。
+
+它包含一个深度方面的卷积（一个为每个通道单独执行的空间卷积），后面跟着一个逐点的卷积（一个跨通道的 1×1 卷积）。我们可以将其看作是首先求跨一个 2D 空间的相关性，然后再求跨一个 1D 空间的相关性。可以看出，这种 2D+1D 映射学起来比全 3D 映射更加简单。
+
+在ImageNet数据集上，Xception的表现稍稍优于Inception v3，而且在一个有17000类的更大规模的图像分类数据集上的表现更是好得多。而它的模型参数的数量仅和Inception一样多。
+
+论文：
+
+《Xception: Deep Learning with Depthwise Separable Convolutions》
+
+代码：
+
+https://github.com/fchollet/keras/blob/master/keras/applications/xception.py
+
+>Francois Chollet，法国人。现为Google研究员。Keras的作者。
 
 ## 参考
 
@@ -219,57 +261,4 @@ ICLR2013上，Zeiler提出了另一种pooling手段stochastic pooling。只需�
 一般来说，mean-pooling能减小第一种误差，更多的保留图像的背景信息，max-pooling能减小第二种误差，更多的保留纹理信息。
 
 Stochastic-pooling则介于两者之间，通过对像素点按照数值大小赋予概率，再按照概率进行亚采样，在平均意义上，与mean-pooling近似，在局部意义上，则服从max-pooling的准则。
-
-## 池化的反向传播
-
-池化的反向传播比较简单。以上图的Max Pooling为例，由于取的是最大值7,因此，误差只要传递给7所在的神经元即可。
-
-这里再次强调一下，池化只是对信号的下采样。对于图像来说，这种下采样保留了图像的某些特征，因而是有意义的。但对于另外的任务则未必如此。
-
-比如，AlphaGo采用CNN识别棋局，但对棋局来说，下采样显然是没有什么物理意义的，因此，**AlphaGo的CNN是没有Pooling的**。
-
-除此之外，还有ROI Pooling操作。（参见《深度学习（十）》）
-
-## 全局平均池化
-
-Global Average Pooling是另一类池化操作，一般用于替换FullConnection层。
-
-![](/images/article/global_average_pooling.png)
-
-上图是FC和GAP在CNN中的使用方法图。从中可以看出Conv转换成FC，实际上进行了如下操作：
-
-1.对每个通道的feature map进行flatten操作得到一维的tensor。
-
-2.将不同通道的tensor连接成一个大的一维tensor。
-
-![](/images/article/FC.png)
-
-上图展示了FC与Conv、Softmax等层联动时的运算操作。
-
-![](/images/article/GAP.png)
-
-上图是GAP与Conv、Softmax等层联动时的运算操作。可以看出，GAP的实际操作如下：
-
-1.计算每个通道的feature map的均值。
-
-2.将不同通道的均值连接成一个一维tensor。
-
-## 参考
-
-http://www.cnblogs.com/tornadomeet/p/3432093.html
-
-Stochastic Pooling简单理解
-
-http://mp.weixin.qq.com/s/XzOri12hwyOCdI1TgGQV3w
-
-新型池化层sort_pool2d实现更快更好的收敛：表现优于最大池化层
-
-# Batch Normalization
-
-在《深度学习（二）》中，我们已经简单的介绍了Batch Normalization的基本概念。这里主要讲述一下它的实现细节。
-
-我们知道在神经网络训练开始前，都要对输入数据做一个归一化处理，那么具体为什么需要归一化呢？归一化后有什么好处呢？
-
-原因在于神经网络学习过程本质就是为了学习数据分布，一旦训练数据与测试数据的分布不同，那么网络的泛化能力也大大降低；另外一方面，一旦每批训练数据的分布各不相同(batch梯度下降)，那么网络就要在每次迭代都去学习适应不同的分布，这样将会大大降低网络的训练速度，这也正是为什么我们需要对数据都要做一个归一化预处理的原因。
-
 

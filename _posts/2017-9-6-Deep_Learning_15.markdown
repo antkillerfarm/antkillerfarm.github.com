@@ -4,6 +4,22 @@ title:  深度学习（十五）——FCN, SegNet, DeconvNet, DeepLab, ENet
 category: theory 
 ---
 
+## Grab cut
+
+Grab cut是微软剑桥研究院于2004年提出的著名交互式图像语义分割方法。与N-cut一样，grab cut同样也是基于图划分，不过grab cut是其改进版本，可以看作迭代式的语义分割算法。Grab cut利用了图像中的纹理（颜色）信息和边界（反差）信息，只要少量的用户交互操作即可得到比较好的前后背景分割结果。
+
+在Grab cut中，RGB图像的前景和背景分别用一个高斯混合模型（Gaussian mixture model, GMM）来建模。两个GMM分别用以刻画某像素属于前景或背景的概率，每个GMM高斯部件（Gaussian component）个数一般设为k=5。接下来，利用吉布斯能量方程（Gibbs energy function）对整张图像进行全局刻画，而后迭代求取使得能量方程达到最优值的参数作为两个GMM的最优参数。GMM确定后，某像素属于前景或背景的概率就随之确定下来。
+
+在与用户交互的过程中，Grab cut提供两种交互方式：一种以包围框（Bounding box）为辅助信息；另一种以涂写的线条（Scribbled line）作为辅助信息。以下图为例，用户在开始时提供一个包围框，grab cut默认的认为框中像素中包含主要物体／前景，此后经过迭代图划分求解，即可返回扣出的前景结果，可以发现即使是对于背景稍微复杂一些的图像，grab cut仍有不俗表现。
+
+![](/images/article/grab_cut.jpg)
+
+不过，在处理下图时，grab cut的分割效果则不能令人满意。此时，需要额外人为的提供更强的辅助信息：用红色线条／点标明背景区域，同时用白色线条标明前景区域。在此基础上，再次运行grab cut算法求取最优解即可得到较为满意的语义分割结果。Grab cut虽效果优良，但缺点也非常明显，一是仅能处理二类语义分割问题，二是需要人为干预而不能做到完全自动化。
+
+![](/images/article/grab_cut_2.jpg)
+
+不难看出，前DL时代的语义分割工作多是根据图像像素自身的低阶视觉信息（Low-level visual cues）来进行图像分割。由于这样的方法没有算法训练阶段，因此往往计算复杂度不高，但是在较困难的分割任务上（如果不提供人为的辅助信息），其分割效果并不能令人满意。
+
 # FCN
 
 Fully Convolutional Networks是Jonathan Long和Evan Shelhamer于2015年提出的网络结构。
@@ -104,7 +120,7 @@ https://github.com/HyeonwooNoh/DeconvNet
 
 从上图可见，DeconvNet和SegNet的结构非常类似，只不过DeconvNet在encoder和decoder之间使用了FC层作为中继。
 
-这样的encoder-decoder对称结构也被称为U-Net：
+这样的encoder-decoder对称结构也被称为U-Net（因为它们的形状像U字形）：
 
 ![](/images/article/U_Net.jpg)
 
@@ -150,6 +166,16 @@ ENet的网络结构如上图所示。其中的initial和bottleneck结构分别�
 
 ![](/images/article/ENet_2.png)
 
+从大的结构来看，ENet的设计主要参考了Resnet和SqueezeNet。
+
+ENet对Pooling操作进行了一定的修改：
+
+1.下采样时，除了输出Pooling值之外，还输出Pooling值的位置，即所谓的Pooling Mask。
+
+2.上采样时，利用第1步的Pooling Mask信息，获得更好的精确度。
+
+显然这个修改在思路上和Dilated convolution是非常类似的。
+
 参考：
 
 http://blog.csdn.net/zijinxuxu/article/details/67638290
@@ -168,45 +194,21 @@ Global Convolutional Network是孙剑团队的Chao Peng于2017年提出的。
 
 ![](/images/article/GCN.png)
 
+上图是论文的关键结构GCN，它主要用于计算超大卷积核。这里借鉴了Separable convolution的思想（将一个k x k的卷积运算，转换成1 x k + k x 1的卷积运算）。
+
+然而正如我们在《深度学习（九）》中指出的，不是所有的卷积核都满足可分离条件。单纯采用先1 x k后k x 1，或者先k x 1后1 x k，效果都是不好的。而将两者结合起来，可以有效提高计算的精度。
+
 ![](/images/article/GCN_2.png)
 
+这是GCN提出的另一个新结构。
+
 ![](/images/article/GCN_3.png)
+
+上图是GCN的整体结构图。
 
 参考：
 
 http://blog.csdn.net/bea_tree/article/details/60977512
 
 旷视最新：Global Convolutional Network
-
-# 语义分割的展望
-
-俗话说，“没有免费的午餐”（“No free lunch”）。基于深度学习的图像语义分割技术虽然可以取得相比传统方法突飞猛进的分割效果，但是其对数据标注的要求过高：不仅需要海量图像数据，同时这些图像还需提供精确到像素级别的标记信息（Semantic labels）。因此，越来越多的研究者开始将注意力转移到弱监督（Weakly-supervised）条件下的图像语义分割问题上。在这类问题中，图像仅需提供图像级别标注（如，有“人”，有“车”，无“电视”）而不需要昂贵的像素级别信息即可取得与现有方法可比的语义分割精度。
-
-另外，示例级别（Instance level）的图像语义分割问题也同样热门。该类问题不仅需要对不同语义物体进行图像分割，同时还要求对同一语义的不同个体进行分割（例如需要对图中出现的九把椅子的像素用不同颜色分别标示出来）。
-
-![](/images/article/Instance_level.jpg)
-
-最后，基于视频的前景／物体分割（Video segmentation）也是今后计算机视觉语义分割领域的新热点之一，这一设定其实更加贴合自动驾驶系统的真实应用环境。
-
-# 视频目标分割
-
-http://mp.weixin.qq.com/s/pGrzmq5aGoLb2uiJRYAXVw
-
-一文概览视频目标分割
-
-# OpenPose
-
-![](/images/article/openpose.png)
-
-论文：
-
-《Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields》
-
-《Hand Keypoint Detection in Single Images using Multiview Bootstrapping》
-
-《Convolutional pose machines》
-
-代码：
-
-https://github.com/CMU-Perceptual-Computing-Lab/openpose
 
