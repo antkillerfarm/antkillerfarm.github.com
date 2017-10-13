@@ -254,6 +254,14 @@ https://mp.weixin.qq.com/s/_kr28kN0_1QFP8BR_wGo5w
 
 TensorFlow RNN入门
 
+https://mp.weixin.qq.com/s/WqE-FRl-Thys7tHUvFNlWQ
+
+盯住梅西：TensorFlow目标检测实战
+
+https://mp.weixin.qq.com/s/WfzlHtz0FFJMsPFwPoMqJg
+
+如何利用VGG-16等模型在CPU上测评各深度学习框架
+
 # NLP参考资源
 
 https://mp.weixin.qq.com/s/GyE9qdXPGvrq12dMAf4nrQ
@@ -319,5 +327,13 @@ https://mp.weixin.qq.com/s/y39QT55RcsNAmNS6mT1SKg
 https://zhuanlan.zhihu.com/p/27552230
 
 基于Depthwise Separable Convolutions的Seq2Seq模型_SliceNet原理解析
+
+https://mp.weixin.qq.com/s/AlxiYM5ujM9TqzcFVLXK1w
+
+语义分析的一些方法(一)
+
+https://mp.weixin.qq.com/s/7KBtbip4JS0jQfOy_BWb3Q
+
+语义分析的一些方法(二)
 
 

@@ -345,6 +345,20 @@ http://sewm.pku.edu.cn/TianwangLiterature/SEWM/2005(5)/%5b%b3%c2%c1%88,%20et%20a
 
 3.基于主题模型，如LDA。
 
+## 自动解析网页的结构化数据
+
+抽取结构树，对比两个网页的dom tree的相似度（卷积核），找出并抽取相似节点。
+
+参考：
+
+http://www.doc88.com/p-2045913772352.html
+
+Web页面中结构化数据抽取的实现与应用
+
+http://www.cnblogs.com/codemind/p/smart_spider_parser.html
+
+爬虫数据采集技术趋势－智能化解析
+
 ## 自然语言理解
 
 Natural language understanding(NLU)属于NLP的一个分支，属于人工智能的一个部分，用来解决机器理解人类语言的问题，属于人工智能的核心难题。

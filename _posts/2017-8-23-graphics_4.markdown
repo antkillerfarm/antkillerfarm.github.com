@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  图像处理理论（四）——霍夫变换, HOG, SIFT
+title:  图像处理理论（四）——霍夫变换, HOG, Haar, SIFT
 category: theory 
 ---
 
@@ -60,11 +60,13 @@ HOG的计算步骤，如上图所示：
 
 1.首先将图像均匀的分为若干个区域。这样的区域一般叫做Bin或Cell。
 
+2.计算一个Cell中每个像素的梯度值。
+
+3.将梯度值分为若干个区间，统计一个Cell中落在该区间的像素的个数，以得到直方图。
+
+将整幅图所有Cell的HOG交给SVM或者AdaBoost之类的分类器，以获得待识别物体的HOG特征。
+
 参考：
-
-http://blog.csdn.net/liulina603/article/details/8291093
-
-HOG特征
 
 https://mp.weixin.qq.com/s/1l1OU81-BDlvyLZo6eM-4g
 
@@ -73,6 +75,28 @@ https://mp.weixin.qq.com/s/1l1OU81-BDlvyLZo6eM-4g
 https://buptldy.github.io/2016/03/31/2016-03-31-HOG%20Note/
 
 《Histograms of Oriented Gradients for Human Detection》Note
+
+# Haar
+
+![](/images/article/Haar.png)
+
+Haar特征本身并不复杂，就是用图中黑色矩形区域内所有像素值的和减去白色矩形区域内所有像素值的和，得到的值称为Haar特征值。
+
+同样的，将整幅图所有Cell的Haar特征值交给SVM或者AdaBoost之类的分类器，就得到了待识别物体的Haar特征。
+
+从上面的描述可以看出：早期的算子主要从信号处理的角度出发，而HOG和Haar开始考虑使用统计学方法提取有效特征。这也是90年代后期，统计学被引入CV界的直接结果。
+
+>PS：记得10年前在学校读书的时候，CV还从属于信号处理专业。但以今日的角度来看，恐怕从属于CS专业，似乎更合适一点。从招聘信息看，现在的CV工作，已经很少提及信号处理的能力了。
+
+参考：
+
+http://www.cnblogs.com/ello/archive/2012/04/28/2475419.html
+
+浅析人脸检测之Haar分类器方法
+
+https://mp.weixin.qq.com/s/g-F-D5PC75BjbaRBmifnZw
+
+人脸Haar特征与快速计算神器：积分图
 
 # SIFT
 

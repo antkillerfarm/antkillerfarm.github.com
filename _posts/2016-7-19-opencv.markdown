@@ -102,10 +102,6 @@ http://blog.csdn.net/lwzkiller/article/details/54633670
 
 Harris角点检测原理详解
 
-http://www.cnblogs.com/ello/archive/2012/04/28/2475419.html
-
-浅析人脸检测之Haar分类器方法
-
 https://mp.weixin.qq.com/s/zZNJKUYlmKKSuSRCM1sgeg
 
 OpenCV二维码检测与定位
@@ -153,10 +149,6 @@ https://mp.weixin.qq.com/s/KTLzq6JJxmgIgOwwEEqCRA
 https://mp.weixin.qq.com/s/zPjkAwsjW-k1llB24bN7Eg
 
 OpenCV3.3深度学习模块(DNN)应用-图像分类
-
-https://mp.weixin.qq.com/s/g-F-D5PC75BjbaRBmifnZw
-
-人脸Haar特征与快速计算神器：积分图
 
 https://mp.weixin.qq.com/s/PNpm286T2CDFXPuEUEP3jw
 

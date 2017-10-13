@@ -83,3 +83,79 @@ http://blog.csdn.net/abcjennifer/article/details/7748833
 
 压缩感知进阶——有关稀疏矩阵
 
+# DL参考资源
+
+http://mp.weixin.qq.com/s/D2Nw3oKF2DYgMZysmi_ysg
+
+通过Crowd Layer，利用众包标注数据集进行深度学习
+
+http://mp.weixin.qq.com/s/9mtgdNynv92FC2dA8-5KJA
+
+VAE和Adam发明人博士论文：变分推理和深度学习
+
+http://mp.weixin.qq.com/s/Y-PvMz_Vz8nBGRZo9dwUCA
+
+中科院步态识别技术：不看脸 50米内在人群中认出你！
+
+http://mp.weixin.qq.com/s/sIIoGilZgQHn4jDiYzEelw
+
+大咖解读Bengio笔记——邓侃：用深度学习模型，解构并重构人类思维
+
+http://mp.weixin.qq.com/s/Ybq6hSTPpyYQSNGJg1tgeQ
+
+AI距离匹敌人类大脑还有多远？人工神经网络和生物神经网络最详细对比
+
+http://mp.weixin.qq.com/s/UKu9T5zS1Z2dfNB1YsYGkQ
+
+NEAT学习：教机器自我编程
+
+http://mp.weixin.qq.com/s/vhBOrR6uTL2vGXnYC8BS1w
+
+Windows版深度学习软件安装指南
+
+https://mp.weixin.qq.com/s/PMnNay4CRgVghA4fU9oLqg
+
+牛津大学研发类脑光子芯片，运算速度超人脑1000倍
+
+https://mp.weixin.qq.com/s/ViQqeER1NXtJOtnLg76TWg
+
+关于远程监督，我们来推荐几篇值得读的论文
+
+https://mp.weixin.qq.com/s/z1APyCxlOEPHn48OeJAHkQ
+
+基于深度学习的视频内容识别
+
+https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
+
+谷歌提出多图像抠图算法，并弥补水印技术的一致性漏洞
+
+https://zhuanlan.zhihu.com/p/28639662
+
+百家争鸣的Meta Learning/Learning to learn
+
+https://mp.weixin.qq.com/s/kMTMjlLgcR24DT7CXvezsA
+
+深度学习概念、架构和tensorflow的思维导图！
+
+https://mp.weixin.qq.com/s/-iziuLKUsRA4VpR5xJqEww
+
+斯坦福提出神经任务编程NTP：让机器人从层级任务中学习
+
+https://mp.weixin.qq.com/s/UMi5NUqcqNTBjlt946jFFQ
+
+深度学习应该使用复数吗？
+
+https://mp.weixin.qq.com/s/bigKoR3IX_Jvo-re9UjqUA
+
+机器学习之——自动求导
+
+https://mp.weixin.qq.com/s/-zl2tQuzdlJd5TXIW9EPyA
+
+Google：机器学习系统，隐藏多少技术债？
+
+http://blog.csdn.net/bea_tree/article/details/67049373
+
+几分钟走进神奇的光流：FlowNet 2.0: Evolution of Optical Flow Estimation with Deep Networks
+
+
+

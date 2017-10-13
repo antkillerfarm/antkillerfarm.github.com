@@ -122,16 +122,6 @@ http://mp.weixin.qq.com/s/iapih9Mme-VKCfsFCmO7hQ
 
 # 人脸识别
 
-## OpenFace
-
-OpenFace是一款开源的人脸识别软件。它的原理基于CVPR 2015年的论文：FaceNet。由于采用了深度学习技术，OpenFace对人脸识别的准确率，大大超过了OpenCV。
-
-OpenFace是用Python和Torch编写的。
-
-官网：
-
-https://cmusatyalab.github.io/openface/
-
 ## Cascade CNN
 
 《A Convolutional Neural Network Cascade for Face Detection》

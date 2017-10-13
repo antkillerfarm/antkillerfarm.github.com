@@ -285,26 +285,11 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/pygtk-he
 
 这里必须指出的是，PyGObject依赖的接口文件只有在dev包中才有。安装相关Glib项目时，一定要选择名称以-dev结尾的包。
 
-## 时间、日期数据的格式处理。
+## 相关资源
 
-时间数据上的格式处理，主要指strftime和strptime函数。其中前者可将时间数据转换成指定格式的字符串，而后者则将字符串转换成时间数据。
+http://www.lfd.uci.edu/~gohlke/pythonlibs/
 
-{% highlight python %}
-import time
-a = "2013-10-10 23:40:00"
-timeArray = time.strptime(a, "%Y-%m-%d %H:%M:%S")
-otherStyleTime = time.strftime("%Y/%m/%d %H:%M:%S", timeArray)
-{% endhighlight %}
-
-日期方面也是类似的做法。
-
-## 星期处理
-
-`datetime(2002, 12, 4).isoweekday() == 3`
-
-`datetime(2001, 12, 31).isocalendar() == (2002, 1, 1)#(year, week number, weekday)`
-
-从上面的例子还可以看出，isocalendar可以完美的处理跨年问题。
+Unofficial Windows Binaries for Python Extension Packages
 
 ## 参数传递
 
@@ -317,45 +302,7 @@ L.append(var)   #追加元素
 L.extend(list)  #追加list，即合并list到L上
 {% endhighlight %}
 
-## 相关资源
 
-http://www.lfd.uci.edu/~gohlke/pythonlibs/
-
-Unofficial Windows Binaries for Python Extension Packages
-
-## 处理eml文件
-
-代码示例：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/misc/hello_eml.py
-
-这个示例主要使用email包来解析eml文件。
-
-同时为了处理其中的html的内容，还用到了Beautiful Soup包。其网址为：
-
-https://www.crummy.com/software/BeautifulSoup/
-
-参见：
-
-https://mp.weixin.qq.com/s/p86yvl3uAm3FXw4V9NlNoA
-
-一文带你上手Python网页抓取神器BeautifulSoup库
-
-## Sqlite
-
-Ubuntu下的安装方法是：
-
-`sudo apt-get install sqlite`
-
-Python自带了pysqlite包，用于调用sqlite。
-
-pysqlite的helloworld程序可参见：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/pysqlite-helloworld.py
-
-可以使用sqlite_bro软件包，查看sqlite数据库。安装方法：
-
-`sudo pip install sqlite_bro`
 
 ## Python中的括号
 
@@ -379,9 +326,79 @@ Python主要有三种数据类型：字典（Key/Value对）、列表（变长�
 
 `_("Hello")`
 
-4._xxx：protected变量。
+4.`_xxx`：protected变量。
 
-5.__xxx：private变量。
+5.`__xxx`：private变量。
 
-6.__xxx__：系统内置变量。
+6.`__xxx__`：系统内置变量。
+
+## python中的星号（ * ）
+
+### 定义方法时
+
+**一个星号**：收集其余位置的参数放到一个元组中。例子：
+
+{% highlight python %}
+def prints(*arg):
+    print arg;
+prints (1,2,3,4,5,6,7)
+#result: (1,2,3,4,5,6,7) 
+{% endhighlight %}
+
+**两个星号**：收集其余带有关键字的参数，并将其放到一个字典中。例子：
+
+{% highlight python %}
+def prints(**arg):
+    print arg
+prints (a=1,b=2,c=3,d=4,e=5,f=6,g=7)
+#result: {‘a’: 1, ‘c’: 3, ‘b’: 2, ‘e’: 5, ‘d’: 4, ‘g’: 7, ‘f’: 6}
+{% endhighlight %}
+
+### 调用方法时
+
+{% highlight python %}
+def add(x,y):
+    print x+y
+
+para = (1,2)
+add(*para)
+#result: 3
+
+kkwd = {'x' :1,'y':2}
+add(**kkwd)
+#result: 3
+{% endhighlight %}
+
+参考：
+
+http://blog.csdn.net/yzj99848873/article/details/48025593
+
+Python星号（ * ）操作符的用法
+
+## pass语句
+
+{% highlight python %}
+def iplaypython():
+       pass
+{% endhighlight %}
+
+定义一个函数iplaypython，但函数体部分暂时还没有完成，又不能空着不写内容，因此可以用pass来替代占个位置。
+
+## 对象的属性
+
+`__dict__`：对象的可变属性。
+
+`__slots__`：对象的不可变属性，一旦创建就不可修改。
+
+不是所有的对象都有`__dict__`属性，但多数对象有。
+
+`dir(Foo())`：列出Foo()创建的对象的所有属性（不仅包括`__dict__`和`__slots__`，还包括其他的属性）。
+
+参考：
+
+http://www.cnblogs.com/ifantastic/p/3768415.html
+
+dir()与`__dict__`，`__slots__`的区别
+
+
 

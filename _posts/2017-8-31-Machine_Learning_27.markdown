@@ -160,6 +160,34 @@ LightGBM调参指南(带贝叶斯优化代码)
 
 # 机器人参考资源
 
+https://mp.weixin.qq.com/s/FebViO0PM-cMWJN6rXU6Rg
+
+详解工业机器人典型的控制系统及结构
+
+https://mp.weixin.qq.com/s/zIYgNQcuxDJboABzXSPGQw
+
+迈向几何型深度SLAM
+
+https://mp.weixin.qq.com/s/LO7Vo7zmC-avdijP7T9o8w
+
+对比激光SLAM与视觉SLAM：谁会成为未来主流趋势？
+
+https://mp.weixin.qq.com/s/Tfqqs_aOBIObeAMfG-9e4w
+
+SLAM入门+典型SLAM应用及解决方案
+
+https://mp.weixin.qq.com/s/97bIBKTADd2oIUBAabM04Q
+
+实时SLAM的未来以及深度学习与SLAM的比较
+
+http://mp.weixin.qq.com/s/KcHlWmIdKpjledwWFdNbCw
+
+自动驾驶汽车到底涉及了哪些技术？
+
+http://mp.weixin.qq.com/s/SWUQvR6qA2JKjaclWskUTQ
+
+DeepTest：可自动测试深度神经网络驾驶系统
+
 https://mp.weixin.qq.com/s/Rmvksy54iKgcyd7bqy_oxQ
 
 机器人开源操作系统ROS入门
@@ -191,5 +219,9 @@ https://www.zhihu.com/question/47736315
 https://mp.weixin.qq.com/s/pL2S3UypKJgpP32QLRR5BQ
 
 视觉SLAM漫淡：机器人即时定位与地图构建！
+
+https://mp.weixin.qq.com/s/SD1pkTNHG7TGKrwVbFaMZg
+
+中科慧眼崔峰：下一代双目视觉产品预警距离将达到80米
 
 

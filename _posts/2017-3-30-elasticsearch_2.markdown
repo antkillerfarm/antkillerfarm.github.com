@@ -314,6 +314,12 @@ http://www.ros.org/
 
 ROS(Robot Operating System）是一个机器人软件平台，前身是斯坦福人工智能实验室为了支持斯坦福智能机器人STAIR而建立的项目。
 
+https://rsu.data61.csiro.au/people/jalvarez/research_bbdd.php
+
+这个网站提供了一系列用于汽车自动驾驶的视频标注的工具。
+
+>Jose M. Alvarez，西班牙巴塞罗那自治大学博士（2010年）。现为澳大利亚CSIRO研究员。CSIRO是澳大利亚最大的国家级科研机构。
+
 http://www.cnblogs.com/yhlx125/p/4707693.html
 
 SLAM(simultaneous localization and mapping)学习笔记
@@ -364,32 +370,6 @@ https://mp.weixin.qq.com/s/xr-2cNoSYpCftLI3dV6zEw
 
 如何使用深度强化学习帮助自动驾驶汽车通过交叉路口？
 
-https://mp.weixin.qq.com/s/FebViO0PM-cMWJN6rXU6Rg
 
-详解工业机器人典型的控制系统及结构
-
-https://mp.weixin.qq.com/s/zIYgNQcuxDJboABzXSPGQw
-
-迈向几何型深度SLAM
-
-https://mp.weixin.qq.com/s/LO7Vo7zmC-avdijP7T9o8w
-
-对比激光SLAM与视觉SLAM：谁会成为未来主流趋势？
-
-https://mp.weixin.qq.com/s/Tfqqs_aOBIObeAMfG-9e4w
-
-SLAM入门+典型SLAM应用及解决方案
-
-https://mp.weixin.qq.com/s/97bIBKTADd2oIUBAabM04Q
-
-实时SLAM的未来以及深度学习与SLAM的比较
-
-http://mp.weixin.qq.com/s/KcHlWmIdKpjledwWFdNbCw
-
-自动驾驶汽车到底涉及了哪些技术？
-
-http://mp.weixin.qq.com/s/SWUQvR6qA2JKjaclWskUTQ
-
-DeepTest：可自动测试深度神经网络驾驶系统
 
 

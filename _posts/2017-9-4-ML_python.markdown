@@ -200,6 +200,24 @@ https://mp.weixin.qq.com/s/QcMsSsZY7TcNQ3G57p8eyQ
 
 3行Python代码完成人脸识别
 
+## Luminoth
+
+Luminoth是一个开源的计算机视觉工具包，目前支持目标探测和图像分类，但以后会有更多的扩展。该工具包在TensorFlow和Sonnet上用Python搭建而成。
+
+代码：
+
+https://github.com/tryolabs/luminoth
+
+## OpenFace
+
+OpenFace是一款开源的人脸识别软件。它的原理基于CVPR 2015年的论文：FaceNet。由于采用了深度学习技术，OpenFace对人脸识别的准确率，大大超过了OpenCV。
+
+OpenFace是用Python和Torch编写的。
+
+官网：
+
+https://cmusatyalab.github.io/openface/
+
 ## 参考
 
 https://github.com/neozhaoliang/pywonderland/tree/master/

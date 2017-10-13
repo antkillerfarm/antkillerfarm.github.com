@@ -302,6 +302,10 @@ https://mp.weixin.qq.com/s/tsidF_I5-QfaKUlX6Smtsg
 
 这有300+门刚刚开课的编程计算机科学免费课程大集合
 
+http://chrome.360.cn/test/html5/index.html
+
+一个用于检测浏览器对html 5支持情况的网页
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/
