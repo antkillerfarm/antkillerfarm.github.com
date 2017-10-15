@@ -48,7 +48,11 @@ $$(x_{center},y_{center},r)$$
 
 http://www.cs.jhu.edu/~misha/Fall04/GHT1.pdf
 
+Hough Transform
+
 http://blog.csdn.net/poem_qianmo/article/details/26977557
+
+OpenCV霍夫变换：霍夫线变换，霍夫圆变换合辑 
 
 # HOG
 

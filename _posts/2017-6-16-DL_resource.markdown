@@ -414,6 +414,10 @@ https://zhuanlan.zhihu.com/p/26078299
 
 使用深度学习来破解captcha验证码
 
+https://mp.weixin.qq.com/s/7Wr70NFi4pxvSpRr2Q1zsQ
+
+强大的PyTorch：10分钟让你了解深度学习领域新流行的框架
+
 ### 量子计算 & 遗传算法
 
 https://www.zhihu.com/question/28171555

@@ -56,6 +56,10 @@ http://mp.weixin.qq.com/s/nmLNKscP1qxyv_aoSrwEEw
 
 基于大规模图计算的本地算法对展示广告的行为预测
 
+https://mp.weixin.qq.com/s/8hNkntUauCSeVqc2v0QUqA
+
+人工智能如何帮你找到好歌：探秘Spotify神奇的每周歌单
+
 ## AI与游戏
 
 https://zhuanlan.zhihu.com/p/22604627
@@ -327,10 +331,6 @@ http://cs.stanford.edu/people/karpathy/convnetjs/demo/classify2d.html
 http://mp.weixin.qq.com/s/upblqKf0m_15o4L1fF0EEQ
 
 深度学习模型转换器
-
-http://mp.weixin.qq.com/s/Cg9tHG1YgDCdI3NPYl5-vQ
-
-如何用Soft-NMS实现目标检测并提升准确率
 
 https://mp.weixin.qq.com/s/JnGpVQDF95hHTirrZyJc_g
 

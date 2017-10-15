@@ -354,3 +354,12 @@ http://web.cs.ucdavis.edu/~yjlee/teaching/ecs289g-fall2016/
 
 ECS 289G: Visual Recognition
 
+http://www.cs.jhu.edu/~misha/Fall04/
+
+Seminar on Shape Analysis and Retrieval
+
+http://info.usherbrooke.ca/hlarochelle/neural_networks/description.html
+
+Hugo Larochelle: Online Course on Neural Networks
+
+

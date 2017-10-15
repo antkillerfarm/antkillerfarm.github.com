@@ -158,6 +158,14 @@ https://mp.weixin.qq.com/s/_Di73PkEWJV1-OLLHfz7yQ
 
 组合在线学习：实时反馈玩转组合优化
 
+https://mp.weixin.qq.com/s/lR6BSa_pJzcinkSaSWsM2A
+
+伯克利提出强化学习新方法，可让智能体同时学习多个解决方案
+
+https://mp.weixin.qq.com/s/P-iSI80IVmb5s-Q15Re2HQ
+
+All In!我学会了用强化学习打德州扑克
+
 # Ultra Deep Network
 
 ## FractalNet

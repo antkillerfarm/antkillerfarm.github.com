@@ -120,6 +120,10 @@ http://mp.weixin.qq.com/s/iapih9Mme-VKCfsFCmO7hQ
 
 简单聊聊压缩网络
 
+https://mp.weixin.qq.com/s/3qstz-KoRuxwpmfE4XDI-Q
+
+面向卷积神经网络的卷积核冗余消除策略
+
 # 人脸识别
 
 ## Cascade CNN

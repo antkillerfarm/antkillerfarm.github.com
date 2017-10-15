@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（六）——闵可夫斯基距离, 马氏距离, Gabriel's Horn
+title:  数学狂想曲（六）——闵可夫斯基距离, 马氏距离, Gabriel's Horn, 函数连续性
 category: theory 
 ---
 
@@ -107,126 +107,77 @@ $$\lim_{a\to\infty}A\ge\lim_{a\to\infty}2\pi\ln(a)=\infty$$
 
 Gabriel's horn现象不仅存在于表面积/体积中，也存在于长度/面积中，即所谓的无限长海岸线问题。对此的进一步研究，开拓了数学中的分形几何领域。
 
-# Lipschitz连续
+# 函数连续性
 
-https://en.wikipedia.org/wiki/Lipschitz_continuity
+函数连续性本质上是刻画函数在自变量变化的情况下，函数值变化的稳定程度。
 
-http://www.cnblogs.com/flywithyou/p/4135562.html
+## 连续函数（Continuous function）
 
-Lipschitz连续
+$$\forall x \in I \; \forall \epsilon > 0 \; \exists \delta > 0 \; \forall y \in I ;  \, |x - y|<\delta \, \Rightarrow \, |f(x) - f(y)| < \epsilon$$
 
-https://www.zhihu.com/question/62554985
+连续函数有很多种等价定义，为了方便和之后的一致连续进行对比，这里选用量词（Quantifier）逻辑的定义。
 
-神经网络的上同调理论
+这个定义实际上是个Nest定义。以$$\exists$$为界，整个Quantifier被分成3部分：定值、存在变量、变量。上边的例子实际上是说：在给定$$x, \epsilon$$的情况下，存在$$\delta$$，对所有y，结论都成立。
 
-http://tech.scichina.com:8082/sciE/CN/abstract/abstract404403.shtml
+因为x不变，所以这实际上是个定点连续的条件。因此，这种连续又叫做Pointwise continuity。
 
-神经网络的本质逼近阶
+通俗的说法：**f的函数曲线在区间内没有断点。**
 
-http://www.doc88.com/p-2337088655000.html
+## 一致连续（Uniform continuity）
 
-神经网络的函数逼近理论
+$$\forall \epsilon > 0 \; \exists \delta > 0 \; \forall x, y \in I ; \, |x - y|<\delta \, \Rightarrow \, |f(x)-f(y)|<\epsilon$$
 
-# 复变函数
+Uniform continuity比Pointwise continuity要严格一些，因为x,y都是变量。
 
-1.复球面表示。
+Uniform continuity的形象解释如下所示：
 
-2.条件严格性。
+![](/images/article/Continuity_and_uniform_continuity_2.gif)
 
-点域：连续<可导（可微）<可解析
+上图中蓝框和红框的顶部和底部用粗线表示，在方框的运动过程中，红线**始终没有穿过方框的顶部或底部**，所以它是Uniform continuity的，而蓝线不是。
 
-区域：连续<可导（可微）=可解析
+$$f(x)=\frac{1}{x}$$不是Uniform continuity的最大原因在于$$x\to 0,f(x)\to \infty$$，由于值域没有上界，因此，对于给定的$$\delta$$，$$\epsilon$$也是没有上界的。
 
-3.函数可微的充要条件：Cauchy-Riemann Equations
+但如果定义域限定为闭区间，则值域必有界。这时，Uniform continuity和Pointwise continuity是等价的。
 
-4.复数在场论描述中的应用。
+## 绝对连续（Absolute continuity）
 
-# 张量分析
+$$\forall \varepsilon > 0 \; \exists \delta > 0 \; \forall (x_k, y_k) \in I ; \, \sum_k (y_k - x_k) < \delta \, \Rightarrow \, \sum_k | f(y_k) - f(x_k) | < \varepsilon$$
 
-在同构的意义下，第零阶张量（r = 0）为标量（Scalar），第一阶张量（r = 1）为向量（Vector），第二阶张量（r = 2）则成为矩阵（Matrix）。
+Absolute continuity不仅要求整个函数满足Uniform continuity，而且任意子区间也要满足该条件。因此，Absolute continuity比Uniform continuity更严格。
 
-《张量分析》，黄克智著。
+## Lipschitz连续
 
->注：黄克智，1927年生，固体力学家。江西中正大学本科+清华硕士+莫斯科大学博士（因应召回国，放弃博士学位）。清华大学工程力学系教授、工程力学研究所所长，中国科学院院士。断裂力学领域权威。
+$$\forall x_1,x_2 \in I ;|f(x_1) - f(x_2)| \le K |x_1 - x_2|, K>0\text{ is const}$$
 
-# 随机过程
+>注：Rudolf Otto Sigismund Lipschitz，1832～1903，德国数学家，先后就读于柯尼斯堡大学和柏林大学，导师Dirichlet。波恩大学教授。
 
-## 随机变量序列的收敛性
+![](/images/article/Lipschitz_continuity.png)
 
-弱收敛：$$F_n(x)\xrightarrow{W}F(x)$$
+Lipschitz连续的直观图示如上所示。**该曲线上的所有点的切线斜率的绝对值$$\le K$$。**
 
-依分布收敛：$$X_n\xrightarrow{L}X$$
+易知，Lipschitz continuity比Absolute continuity更严格。
 
-依概率收敛：$$X_n\xrightarrow{P}X$$
+## 连续可微
 
-r阶收敛：$$X_n\xrightarrow{r}X$$
+这个的定义比较简单：函数的导数是连续的。直观来说就是：**函数曲线光滑，没有尖。**
 
-几乎处处收敛（almost everywhere convergent）：$$X_n\xrightarrow{a.e.}X$$ or $$X_n\xrightarrow{a.s.}X$$
+由“闭区间的连续函数必有界”可知，Continuously differentiable比Lipschitz continuity更严格。
 
-一致收敛（uniform convergence）：$$X_n\xrightarrow{u.c.}X$$
+综上：
 
-以上概念实际上都是测度论的内容。具体到这里，弱收敛针对分布函数F，而其他收敛针对随机变量X。
+$$\text{Continuously differentiable} \subseteq \text{Lipschitz continuous} \subseteq \text{Absolute continuity} \subseteq \text{uniformly continuous} = \text{continuous}$$
 
-收敛严格性：
+需要注意，这些结论只在闭区间成立。比如$$f(x)=x^2$$是连续可微的，但却不是一致连续的。因此又有Local Uniform continuity之类的说法。
 
-$$X_n\xrightarrow{P}X>X_n\xrightarrow{L}X$$
+## Weierstrass Function
 
-$$X_n\xrightarrow{r}X>X_n\xrightarrow{P}X$$
+>Karl Theodor Wilhelm Weierstrass，1815～1897，德国数学家，被誉为“现代分析之父”。   
+>青年时代，Weierstrass被父亲送到波恩大学学习法律和商业，然而他对此根本不感兴趣，精力都花到数学上了，这直接导致离开大学时，没有拿到学位。   
+>此后经过努力，他获得了一份中学数学教师的职位。他30～40岁的时光，就是在两所不知名的中学度过的。   
+>所幸，他的努力没有白费。1854年，他获得格尼斯堡大学荣誉博士学位。此后先后任教于柏林工业大学和柏林洪堡大学。   
+>他的博士学生知名的有：集合论创始人Georg Cantor，世界历史上第一位数学女博士Sofia Kovalevskaya和Hermann Schwarz（没错就是提出Cauchy–Schwarz inequality的那位）。
 
-$$X_n\xrightarrow{a.s.}X>X_n\xrightarrow{P}X$$
+事实上，本文中使用的$$\varepsilon - \delta$$定义，就是Weierstrass的成果。Weierstrass首次采用数学的方式定义极限，取代了之前Newton的物理或几何式的极限定义。
 
-大数定理：
-
-依概率收敛->弱大数定理
-
-几乎处处收敛->强大数定理
-
-## 随机过程常用公式或符号
-
-| 名称 | 公式或符号 |
-|:--:|:--:|
-| 期望 | $$EX=\int_{-\infty}^{+\infty}x\mathrm{d}F(x)$$，若存在密度函数则$$EX=\int_{-\infty}^{+\infty}xf(x)\mathrm{d}x$$ |
-| 方差 | $$DX=Var(X)=E(X-EX)^2$$ |
-| 协方差 | $$Cov(X,Y)=E\{\overline{[X-E(X)]}[Y-E(Y)]\}$$ |
-| 相关系数 | $$\rho_{XY}=\frac{Cov(X,Y)}{\sqrt{D(X)}\sqrt{D(Y)}}$$ |
-| 协方差矩阵 | $$\left[\begin{array}{ccc} Cov(X_1,X_1)&Cov(X_1,X_2)&\cdots&Cov(X_1,X_n)\\Cov(X_2,X_1)&Cov(X_2,X_2)&\cdots&Cov(X_2,X_n)\\ \vdots&\vdots&&\vdots \\Cov(X_n,X_1)&Cov(X_n,X_2)&\cdots&Cov(X_n,X_n)\end{array}\right]$$ |
-| 相关函数 | $$R(X,Y)=E[\overline{X}Y]$$ |
-| 均方极限 | $${l.i.m}_{n \to +\infty}X$$ |
-
-## 平稳过程
-
-严平稳过程：有限维分布。
-
-宽平稳过程：二阶矩。
-
-不要被名字迷惑了，由于两者关注的东西不同，一般情况下，严平稳过程不一定是宽平稳过程，宽平稳过程也不一定是严平稳过程。
-
-只有以下特例：
-
-1.对于二阶矩过程，严平稳过程一定是宽平稳过程。
-
-2.对于正态过程，严平稳过程和宽平稳过程是等价的。
-
-# ACBM算法
-
-ACBM算法是在AC（Aho-Corasick）自动机（UNIX上的fgrep命令使用的就是AC算法）的基础之上，引入了BM（Boyer-Moore）算法的多模扩展，实现的高效的多模匹配。和AC自动机不同的是，ACBM算法不需要扫描目标文本串中的每一个字符，可以利用本次匹配不成功的信息，跳过尽可能多的字符，实现高效匹配。
-
->注： Alfred Vaino Aho，1941年生，加拿大计算机科学家。普林斯顿大学博士，长期供职于贝尔实验室，后为哥伦比亚大学教授。egrep和fgrep的发明人，AWK语言的联合发明人。著有《Principles of Compiler Design Compilers: Principles, Techniques, and Tools》。该书由于封面上有龙图案，又被称为“龙书”，是编译原理方面的权威书籍。2003年获IEEE John von Neumann Medal。
-
->Margaret John Corasick，贝尔实验室研究员。
-
->Robert Stephen Boyer，德克萨斯大学教授。
-
->J Strother Moore，德克萨斯大学教授。Boyer的好朋友，两人的绝大多数成就都是合作完成的。
-
-参见：
-
-http://blog.csdn.net/sealyao/article/details/6817944
-
-ACBM算法
-
-https://mp.weixin.qq.com/s/yVOgAuD9hEYAMdLyvae2VA
-
-最长公共子序列与最长公共子串
-
+物理或几何式的极限定义有着直观的优势，但不够严格，Weierstrass Function就是最好的反例。
 

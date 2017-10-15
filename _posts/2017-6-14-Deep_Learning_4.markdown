@@ -122,6 +122,10 @@ https://mp.weixin.qq.com/s/VMK_UpOUI0y7apTGR02D1Q
 
 图解Word2Vec
 
+https://mp.weixin.qq.com/s/XMGZXAt_LUX5iTet7_SX4Q
+
+深度学习和自然语言处理：诠释词向量的魅力
+
 # RNN
 
 ## RNN的基本结构

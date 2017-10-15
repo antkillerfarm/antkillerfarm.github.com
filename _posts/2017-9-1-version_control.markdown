@@ -262,6 +262,26 @@ https://mp.weixin.qq.com/s/WfzlHtz0FFJMsPFwPoMqJg
 
 如何利用VGG-16等模型在CPU上测评各深度学习框架
 
+http://www.jianshu.com/p/4e16ae0aad25
+
+利用TensorFlow入门Word2Vec
+
+https://mp.weixin.qq.com/s/YJmMfBhQ3cLNUp_HHsXhGA
+
+手把手教你使用TensorFlow生成对抗样本
+
+https://mp.weixin.qq.com/s/pIESRzjsmqoO46P4x5Iqhw
+
+Tensorflow卷积神经网络
+
+https://mp.weixin.qq.com/s/Cge_GY19aZ1AcMkhW93C1A
+
+TensorFlow中的那些高级API
+
+https://mp.weixin.qq.com/s/kJxXIN6D5TEEFSFhGJNIyw
+
+开源神经网络图片上色技术解析
+
 # NLP参考资源
 
 https://mp.weixin.qq.com/s/GyE9qdXPGvrq12dMAf4nrQ
@@ -335,5 +355,9 @@ https://mp.weixin.qq.com/s/AlxiYM5ujM9TqzcFVLXK1w
 https://mp.weixin.qq.com/s/7KBtbip4JS0jQfOy_BWb3Q
 
 语义分析的一些方法(二)
+
+http://blog.csdn.net/malefactor/article/details/52166235
+
+聊天机器人中对话模板的高效匹配方法
 
 

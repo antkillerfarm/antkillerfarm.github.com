@@ -83,8 +83,6 @@ $$\| D(y,\theta) - D(y' , \theta) \| \leq C \|y-y'\|$$
 
 $$\left\| \frac{\partial D(y,\Theta)}{\partial y}\right\| \leq C$$
 
->注：Rudolf Otto Sigismund Lipschitz，1832～1903，德国数学家，先后就读于柯尼斯堡大学和柏林大学，导师Dirichlet。波恩大学教授。
-
 ## WGAN
 
 KL散度和JS散度由于不是距离，数学特性并不够好。因此，Martín Arjovsky于2017年1月，提出了Wasserstein GAN。

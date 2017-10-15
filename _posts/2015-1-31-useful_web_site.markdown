@@ -306,6 +306,10 @@ http://chrome.360.cn/test/html5/index.html
 
 一个用于检测浏览器对html 5支持情况的网页
 
+https://mp.weixin.qq.com/s/lVS3CgZGItUkWG-OtolbSA
+
+数字成像书籍推荐与资料分享
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

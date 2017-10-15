@@ -117,6 +117,10 @@ https://zhuanlan.zhihu.com/RucAIBox
 
 一个NLP方面的blog
 
+https://mp.weixin.qq.com/s/aF9eoWT8vXnqk2yOUDaMlA
+
+自然语言处理领域重要论文&资源全索引
+
 ## 工具
 
 ### Natural Language Toolkit(NLTK)

@@ -4,6 +4,158 @@ title:  数学狂想曲（七）——垃圾筐
 category: theory 
 ---
 
+# 函数连续性
+
+## Weierstrass Function（续）
+
+![](/images/article/WeierstrassFunction.png)
+
+上图是Weierstrass Function图像。它是一类处处连续而处处不可导的实值函数。
+
+一般人会直觉上认为连续的函数必然是近乎可导的。即使不可导，所谓不可导的点也必然只占整体的一小部分。根据Weierstrass在他的论文中所描述，早期的许多数学家，包括高斯，都曾经假定连续函数不可导的部分是有限或可数的。这可能是因为直观上想象一个连续但在不可数个点上不可导的函数是很困难的事。
+
+Weierstrass Function的出现（1872年）说明了所谓的“病态”函数的存在性，改变了当时数学家对连续函数的看法。
+
+Weierstrass Function也被视为第一个分形函数（尽管分形（Fractal）的概念出现的相当晚（1973年），差不多过了整整一个世纪。）：将Weierstrass Function在任一点放大，所得到的局部图都和整体图形相似。因此，无论如何放大，函数图像都不会显得更加光滑，也不存在单调的区间。
+
+参考：
+
+https://wenku.baidu.com/view/21877fea551810a6f524868c.html
+
+一个反例处处连续处处不可导的函数
+
+## 参考
+
+https://www.zhihu.com/question/32201415
+
+函数连续和一致连续有什么区别？开区间上的连续函数不一定是一致连续的，为什么？
+
+https://zhuanlan.zhihu.com/p/27554191
+
+非凸优化基石：Lipschitz Condition
+
+http://www.cnblogs.com/flywithyou/p/4135562.html
+
+Lipschitz连续
+
+https://www.zhihu.com/question/62554985
+
+神经网络的上同调理论
+
+http://tech.scichina.com:8082/sciE/CN/abstract/abstract404403.shtml
+
+神经网络的本质逼近阶
+
+http://www.doc88.com/p-2337088655000.html
+
+神经网络的函数逼近理论
+
+https://zhuanlan.zhihu.com/p/25590725
+
+神经网络为什么能够无限逼近任意连续函数？
+
+# 复变函数
+
+1.复球面表示。
+
+2.条件严格性。
+
+点域：连续<可导（可微）<可解析
+
+区域：连续<可导（可微）=可解析
+
+3.函数可微的充要条件：Cauchy-Riemann Equations
+
+4.复数在场论描述中的应用。
+
+# 张量分析
+
+在同构的意义下，第零阶张量（r = 0）为标量（Scalar），第一阶张量（r = 1）为向量（Vector），第二阶张量（r = 2）则成为矩阵（Matrix）。
+
+《张量分析》，黄克智著。
+
+>注：黄克智，1927年生，固体力学家。江西中正大学本科+清华硕士+莫斯科大学博士（因应召回国，放弃博士学位）。清华大学工程力学系教授、工程力学研究所所长，中国科学院院士。断裂力学领域权威。
+
+# 随机过程
+
+## 随机变量序列的收敛性
+
+弱收敛：$$F_n(x)\xrightarrow{W}F(x)$$
+
+依分布收敛：$$X_n\xrightarrow{L}X$$
+
+依概率收敛：$$X_n\xrightarrow{P}X$$
+
+r阶收敛：$$X_n\xrightarrow{r}X$$
+
+几乎处处收敛（almost everywhere convergent）：$$X_n\xrightarrow{a.e.}X$$ or $$X_n\xrightarrow{a.s.}X$$
+
+一致收敛（uniform convergence）：$$X_n\xrightarrow{u.c.}X$$
+
+以上概念实际上都是测度论的内容。具体到这里，弱收敛针对分布函数F，而其他收敛针对随机变量X。
+
+收敛严格性：
+
+$$X_n\xrightarrow{P}X \supseteq X_n\xrightarrow{L}X$$
+
+$$X_n\xrightarrow{r}X \supseteq X_n\xrightarrow{P}X$$
+
+$$X_n\xrightarrow{a.s.}X \supseteq X_n\xrightarrow{P}X$$
+
+大数定理：
+
+依概率收敛->弱大数定理
+
+几乎处处收敛->强大数定理
+
+## 随机过程常用公式或符号
+
+| 名称 | 公式或符号 |
+|:--:|:--:|
+| 期望 | $$EX=\int_{-\infty}^{+\infty}x\mathrm{d}F(x)$$，若存在密度函数则$$EX=\int_{-\infty}^{+\infty}xf(x)\mathrm{d}x$$ |
+| 方差 | $$DX=Var(X)=E(X-EX)^2$$ |
+| 协方差 | $$Cov(X,Y)=E\{\overline{[X-E(X)]}[Y-E(Y)]\}$$ |
+| 相关系数 | $$\rho_{XY}=\frac{Cov(X,Y)}{\sqrt{D(X)}\sqrt{D(Y)}}$$ |
+| 协方差矩阵 | $$\left[\begin{array}{ccc} Cov(X_1,X_1)&Cov(X_1,X_2)&\cdots&Cov(X_1,X_n)\\Cov(X_2,X_1)&Cov(X_2,X_2)&\cdots&Cov(X_2,X_n)\\ \vdots&\vdots&&\vdots \\Cov(X_n,X_1)&Cov(X_n,X_2)&\cdots&Cov(X_n,X_n)\end{array}\right]$$ |
+| 相关函数 | $$R(X,Y)=E[\overline{X}Y]$$ |
+| 均方极限 | $${l.i.m}_{n \to +\infty}X$$ |
+
+## 平稳过程
+
+严平稳过程：有限维分布。
+
+宽平稳过程：二阶矩。
+
+不要被名字迷惑了，由于两者关注的东西不同，一般情况下，严平稳过程不一定是宽平稳过程，宽平稳过程也不一定是严平稳过程。
+
+只有以下特例：
+
+1.对于二阶矩过程，严平稳过程一定是宽平稳过程。
+
+2.对于正态过程，严平稳过程和宽平稳过程是等价的。
+
+# ACBM算法
+
+ACBM算法是在AC（Aho-Corasick）自动机（UNIX上的fgrep命令使用的就是AC算法）的基础之上，引入了BM（Boyer-Moore）算法的多模扩展，实现的高效的多模匹配。和AC自动机不同的是，ACBM算法不需要扫描目标文本串中的每一个字符，可以利用本次匹配不成功的信息，跳过尽可能多的字符，实现高效匹配。
+
+>注： Alfred Vaino Aho，1941年生，加拿大计算机科学家。普林斯顿大学博士，长期供职于贝尔实验室，后为哥伦比亚大学教授。egrep和fgrep的发明人，AWK语言的联合发明人。著有《Principles of Compiler Design Compilers: Principles, Techniques, and Tools》。该书由于封面上有龙图案，又被称为“龙书”，是编译原理方面的权威书籍。2003年获IEEE John von Neumann Medal。
+
+>Margaret John Corasick，贝尔实验室研究员。
+
+>Robert Stephen Boyer，德克萨斯大学教授。
+
+>J Strother Moore，德克萨斯大学教授。Boyer的好朋友，两人的绝大多数成就都是合作完成的。
+
+参见：
+
+http://blog.csdn.net/sealyao/article/details/6817944
+
+ACBM算法
+
+https://mp.weixin.qq.com/s/yVOgAuD9hEYAMdLyvae2VA
+
+最长公共子序列与最长公共子串
+
 # 高斯过程回归
 
 从大的分类来说，机器学习的算法可分为两类：
@@ -157,5 +309,8 @@ http://blog.csdn.net/bea_tree/article/details/67049373
 
 几分钟走进神奇的光流：FlowNet 2.0: Evolution of Optical Flow Estimation with Deep Networks
 
+https://mp.weixin.qq.com/s/nF-RIAzQv3gMSXkM_92Rbg
+
+MIT博士生Bolei Zhou：CVPR2017关于如何解释深度学习模型的讲座
 
 

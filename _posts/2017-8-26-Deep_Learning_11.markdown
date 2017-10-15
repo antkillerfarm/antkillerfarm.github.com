@@ -170,6 +170,12 @@ Non-Maximum Suppression顾名思义就是抑制不是极大值的元素，搜索
 
 **Step 3**：从剩下的矩形框A、C、E中，选择概率最大的E，然后判断E与A、C的重叠度，重叠度大于一定的阈值，那么就扔掉；并标记E是我们保留下来的第二个矩形框。（**确定下一个领域，并抑制该领域内的非极大值**）
 
+参考：
+
+http://mp.weixin.qq.com/s/Cg9tHG1YgDCdI3NPYl5-vQ
+
+如何用Soft-NMS实现目标检测并提升准确率
+
 ## ground truth
 
 在有监督学习中，数据是有标注的，以(x,t)的形式出现，其中x是输入数据，t是标注。正确的t标注是ground truth，错误的标记则不是。（也有人将所有标注数据都叫做ground truth）

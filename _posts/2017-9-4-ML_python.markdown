@@ -356,3 +356,12 @@ https://github.com/leetmaa/KMCLib
 
 KMCLib - a general framework for lattice kinetic Monte Carlo (KMC) simulations
 
+https://mp.weixin.qq.com/s/T7dswxqhie0riPlnjdf9_Q
+
+RNN入门与实践
+
+https://mp.weixin.qq.com/s/ZPCfnj2kLxXLpBNbxs2ggw
+
+Logistic回归实战篇之预测病马死亡率
+
+
