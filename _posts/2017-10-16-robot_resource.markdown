@@ -28,6 +28,10 @@ http://cs.stanford.edu/people/karpathy/convnetjs/
 
 https://github.com/karpathy/convnetjs
 
+## 术语
+
+LIDAR：LIght Detection And Ranging
+
 ## 文章
 
 http://blog.exbot.net/
@@ -56,7 +60,9 @@ https://www.zhihu.com/question/25371476
 
 怎样从实际场景上理解粒子滤波（Particle Filter）？
 
-LIDAR：LIght Detection And Ranging
+http://freemind.pluskid.org/machine-learning/hmm-kalman-particle-filtering
+
+漫谈 HMM：Kalman/Particle Filtering
 
 https://zhuanlan.zhihu.com/p/26988866
 
@@ -235,3 +241,6 @@ http://blog.csdn.net/malefactor/article/details/52166235
 https://mp.weixin.qq.com/s/Cq7ivDYurS3CidvoemFfqA
 
 Twitter是怎么做情感分析的？长文解读！
+
+
+

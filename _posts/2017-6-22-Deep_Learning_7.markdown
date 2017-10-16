@@ -46,7 +46,9 @@ https://github.com/vonclites/squeezenet
 
 TensorFlow版本
 
-SqueezeNet最大的创新点在于使用Fire Module替换大尺寸的卷积层。
+![](/images/article/SqueezeNet_2.png)
+
+上图是SqueezeNet的网络结构图，其最大的创新点在于使用Fire Module替换大尺寸的卷积层。
 
 ![](/images/article/SqueezeNet.png)
 

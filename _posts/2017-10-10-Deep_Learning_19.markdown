@@ -200,6 +200,8 @@ Resnet对于残差的跨层传递是无条件的，而Highway则是有条件的�
 
 ## DenseNet
 
+DenseNet是康奈尔大学博士后黄高（Gao Huang）、清华大学本科生刘壮（Zhuang Liu）、Facebook人工智能研究院研究科学家Laurens van der Maaten 及康奈尔大学计算机系教授Kilian Q. Weinberger于2016年提出的。论文当选CVPR 2017最佳论文。
+
 论文：
 
 《Densely Connected Convolutional Networks》
@@ -209,6 +211,12 @@ Resnet对于残差的跨层传递是无条件的，而Highway则是有条件的�
 https://github.com/liuzhuang13/DenseNet
 
 原始版本是Torch写的，官网上列出了其他框架的实现代码的网址。
+
+![](/images/article/DenseNet_2.png)
+
+上图是DenseNet的整体网络结构图。从整体层面来看，DenseNet主要由3个dense block组成。
+
+![](/images/article/DenseNet.png)
 
 参考：
 
