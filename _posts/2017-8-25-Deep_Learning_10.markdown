@@ -264,6 +264,10 @@ https://mp.weixin.qq.com/s/JjsAnB_OxKS1Af9XAtw5sA
 
 一文带你读懂深度学习框架下的目标检测
 
+https://mp.weixin.qq.com/s/dcrBQ-t3tLOTouEyofOBxg
+
+间谍卫星：利用卷积神经网络对卫星影像进行多尺度目标检测
+
 ## 进化史
 
 DPM(2007)->RCNN(2014)->Fast RCNN->Faster RCNN

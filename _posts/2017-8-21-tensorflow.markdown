@@ -36,6 +36,10 @@ TensorFlow中文社区：
 
 http://www.tensorfly.cn/
 
+另一个API中文版：
+
+https://www.w3cschool.cn/tensorflow_python/
+
 安装：
 
 `sudo pip install tensorflow`
@@ -130,7 +134,7 @@ Mac下使用源码编译安装TensorFlow CPU版本
 
 ## 基本概念
 
-**Variables**：维持图执行过程中的状态信息的变量。一般来说，这就是神经网络的参数。
+**Variables**：维持计算图执行过程中的状态信息的变量。一般来说，这就是神经网络的参数。
 
 **Placeholders**：对于每个样本都不相同的变量。比如神经网络的输入变量x和输出变量y。
 
@@ -323,6 +327,31 @@ TensorFlow直接读取图片和读写TFRecords速度对比
 http://deepnlp.org/blog/tensorflow-parallelism/
 
 Tensorflow并行：多核(multicore)，多线程(multi-thread)
+
+## 控制流
+
+### tf.cond
+
+{% highlight python %} 
+a=tf.constant(2)      
+b=tf.constant(3)      
+x=tf.constant(4)      
+y=tf.constant(5)      
+z = tf.multiply(a, b)      
+result = tf.cond(x < y, lambda: tf.add(x, z), lambda: tf.square(y))      
+with tf.Session() as session:      
+    print(result.eval())
+{% endhighlight %}
+
+### tf.case
+
+{% highlight python %}
+decode_png = lambda :tf.image.decode_png(image_tensor, channels)
+decode_jpg = lambda :tf.image.decode_jpeg(image_tensor, channels)
+decoder = { tf.equal(image_ext, '.png'):  decode_png,
+            tf.equal(image_ext, '.jpg'):  decode_jpg}
+image_tensor = tf.case(decoder, default = decode_png, exclusive = True)
+{% endhighlight %}
 
 ## 我的TensorFlow实践
 

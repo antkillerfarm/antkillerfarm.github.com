@@ -364,4 +364,9 @@ https://mp.weixin.qq.com/s/ZPCfnj2kLxXLpBNbxs2ggw
 
 Logistic回归实战篇之预测病马死亡率
 
+https://mp.weixin.qq.com/s/U46HOaBP5ijghpc2myJCvA
+
+机器学习中，使用Scikit-Learn简单处理文本数据？
+
+
 

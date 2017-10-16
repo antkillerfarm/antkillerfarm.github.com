@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十五）——FCN, SegNet, DeconvNet, DeepLab, ENet
+title:  深度学习（十五）——FCN, SegNet, DeconvNet, DeepLab, ENet, GCN
 category: theory 
 ---
 

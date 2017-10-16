@@ -166,6 +166,10 @@ https://mp.weixin.qq.com/s/P-iSI80IVmb5s-Q15Re2HQ
 
 All In!我学会了用强化学习打德州扑克
 
+https://mp.weixin.qq.com/s/xr-2cNoSYpCftLI3dV6zEw
+
+如何使用深度强化学习帮助自动驾驶汽车通过交叉路口？
+
 # Ultra Deep Network
 
 ## FractalNet
@@ -193,6 +197,32 @@ All In!我学会了用强化学习打德州扑克
 ![](/images/article/highway.png)
 
 Resnet对于残差的跨层传递是无条件的，而Highway则是有条件的。这种条件开关被称为gate，它也是由网络训练得到的。
+
+## DenseNet
+
+论文：
+
+《Densely Connected Convolutional Networks》
+
+代码：
+
+https://github.com/liuzhuang13/DenseNet
+
+原始版本是Torch写的，官网上列出了其他框架的实现代码的网址。
+
+参考：
+
+https://www.leiphone.com/news/201708/0MNOwwfvWiAu43WO.html
+
+CVPR 2017最佳论文作者解读：DenseNet 的“what”、“why”和“how”
+
+https://zhuanlan.zhihu.com/p/28124810
+
+为什么ResNet和DenseNet可以这么深？一文详解残差块为何有助于解决梯度弥散问题
+
+https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2651988934&idx=2&sn=0e5ffa195ef67a1371f3b5b223519121
+
+ResNets、HighwayNets、DenseNets：用 TensorFlow 实现超深度神经网络
 
 # NN的INT8计算
 

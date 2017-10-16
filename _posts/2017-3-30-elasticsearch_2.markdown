@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Elasticsearch（二）, WebService, 机器人参考资源
+title:  Elasticsearch（二）, WebService
 category: technology 
 ---
 
@@ -279,97 +279,5 @@ https://my.oschina.net/fuckmylife0/blog/325432
 ## jaxws-demo-client
 
 jaxws-demo-client就是具体的客户端实现了，可以看出相比于上一步的桩代码，这里的代码文件，数量上要少得多。
-
-# 机器人参考资源
-
-## 课程
-
-http://selfdrivingcars.mit.edu/
-
-MIT 6.S094: Deep Learning for Self-Driving Cars
-
->主讲：Lex Fridman，MIT博士后。   
->个人主页：   
->http://lexfridman.com/
-
-这个课程不仅提供了课件，还提供了DeepTraffic和DeepTesla两个小工具供学生验证自己的算法。这两个工具是用ConvNetJS编写的。
-
-ConvNetJS是Andrej Karpathy编写的基于JavaScript的DL框架。
-
-官网：
-
-http://cs.stanford.edu/people/karpathy/convnetjs/
-
-代码：
-
-https://github.com/karpathy/convnetjs
-
-## 文章
-
-http://blog.exbot.net/
-
-一个机器人技术方面的网站。
-
-http://www.ros.org/
-
-ROS(Robot Operating System）是一个机器人软件平台，前身是斯坦福人工智能实验室为了支持斯坦福智能机器人STAIR而建立的项目。
-
-https://rsu.data61.csiro.au/people/jalvarez/research_bbdd.php
-
-这个网站提供了一系列用于汽车自动驾驶的视频标注的工具。
-
->Jose M. Alvarez，西班牙巴塞罗那自治大学博士（2010年）。现为澳大利亚CSIRO研究员。CSIRO是澳大利亚最大的国家级科研机构。
-
-http://www.cnblogs.com/yhlx125/p/4707693.html
-
-SLAM(simultaneous localization and mapping)学习笔记
-
-http://www.cnblogs.com/gaoxiang12/p/5113334.html
-
-视觉SLAM中的数学基础
-
-https://www.zhihu.com/question/25371476
-
-怎样从实际场景上理解粒子滤波（Particle Filter）？
-
-LIDAR：LIght Detection And Ranging
-
-https://zhuanlan.zhihu.com/p/26988866
-
-机器人学习Robot Learning的发展
-
-https://mp.weixin.qq.com/s/tH-1XTEC-S7bIFoDdDK5CQ
-
-如何给机器人一双慧眼：从视觉SLAM技术说起！
-
-http://www.cnblogs.com/gaoxiang12/p/3695962.html
-
-视觉SLAM漫谈
-
-https://mp.weixin.qq.com/s/YLhECwwig9f21zk1-PNiTw
-
-25篇车辆检测与分类DL文章读懂自动驾驶
-
-https://mp.weixin.qq.com/s/vKkjYdf6Ast7wWcW9oIEuA
-
-88美元的自动驾驶“自制原子弹”，最著名黑客详解panda系统
-
-https://zhuanlan.zhihu.com/p/27935902
-
-机器人学习Robot Learning之模仿学习Imitation Learning的发展
-
-https://mp.weixin.qq.com/s/pPPq3b1yj92RaGgIpTAhqQ
-
-一文看透汽车无人驾驶技术、产品和市场
-
-https://mp.weixin.qq.com/s/ZePNQ3l3uMMIlndk20sOVA
-
-基于视频的无监督深度和车辆运动估计
-
-https://mp.weixin.qq.com/s/xr-2cNoSYpCftLI3dV6zEw
-
-如何使用深度强化学习帮助自动驾驶汽车通过交叉路口？
-
-
 
 

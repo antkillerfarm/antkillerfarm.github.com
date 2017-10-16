@@ -294,10 +294,6 @@ https://mp.weixin.qq.com/s/0BZxFKjcwxKj7R66NRIWqQ
 
 UC Berkeley新研究：多视角图像3D模型重建技术
 
-https://mp.weixin.qq.com/s/3R8zaFUKFTvp0uE8lY44WA
-
-首个应用残差学习的深度目标跟踪算法
-
 https://mp.weixin.qq.com/s/ciqQMezcB-oM24X8eQqTNg
 
 花式玩耍Spatial Transformation Networks
