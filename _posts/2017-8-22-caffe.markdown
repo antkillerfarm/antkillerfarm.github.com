@@ -88,6 +88,10 @@ http://www.cnblogs.com/zjutzz/p/5955218.html
 
 caffe绘制网络结构图
 
+http://yanglei.me/gen_proto/
+
+另一个在线工具。
+
 ## 术语
 
 **blob**：Caffe中用于数据操作和交换的数据结构。简单来说，就是一个4维数组，格式如下表所示：

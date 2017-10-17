@@ -442,6 +442,14 @@ http://kexue.fm/archives/4638/
 
 训练集、验证集和测试集的意义
 
+https://mp.weixin.qq.com/s/y5TCYmnJ3ssA8AI9voaRqw
+
+机器学习新手工程师常犯的6大错误
+
+https://mp.weixin.qq.com/s/izOnp5SQGBKXG9qy1sA2mA
+
+AI Alphas(A股版)量化投资策略框架！
+
 # PMML
 
 PMML(Predictive Model Markup Language) 是一个开放的工业标准，它以 XML 为载体将上述数据挖掘任务标准化，可以把某一产品所创建的数据挖掘方案应用于任何其它遵从 PMML 标准的产品或平台中 , 而不需考虑分析和预测过程中的具体实现细节。使得模型的部署摆脱了模型开发和产品整合的束缚，为商业智能产品、数据仓库和云计算中的数据挖掘模型的应用环境开拓了新的篇章。

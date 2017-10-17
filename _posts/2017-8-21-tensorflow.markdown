@@ -190,6 +190,10 @@ Tensorflow对计算图的简化，不仅在于使用默认的Graph。还在于�
 
 虽然图计算是Tensorflow的主要使用方式，然而一般性的tensor计算（即非图计算），也是完全可行的。Tensorflow没有提供相关的API，直接使用numpy就可以了。
 
+下面的动图形象的展示了计算图的前向和后向运算的过程：
+
+![](/images/article/tensorflow.gif)
+
 参考：
 
 http://www.algorithmdog.com/dynamic-tensorflow
@@ -304,6 +308,54 @@ TensorBoard是一个http服务，用以监控TensorFlow的执行。
 
 启动之后，用浏览器打开`http://localhost:6006`即可。
 
+## 模型文件
+
+tensorflow model包含2个文件：
+
+a）Meta graph:
+
+使用protocol buffer来保存整个tensorflow graph.例如所有的variables, operations, collections等等。这个文件使用.meta后缀。
+
+b) Checkpoint file:
+
+二进制文件包含所有的weights,biases,gradients和其他variables的值。这个文件使用.ckpt后缀，有2个文件：
+
+mymodel.data-00000-of-00001
+
+mymodel.index
+
+.data文件就是保存训练的variables我们将要使用它。
+
+和这些文件一起，tensorflow还有一个文件叫checkpoint用来简单保存最近一次保存checkpoint文件的记录。
+
+### 保存模型
+
+{% highlight python %}
+w1 = tf.Variable(tf.random_normal(shape=[2]), name='w1')
+w2 = tf.Variable(tf.random_normal(shape=[5]), name='w2')
+saver = tf.train.Saver()
+sess = tf.Session()
+sess.run(tf.global_variables_initializer())
+saver.save(sess, 'my_test_model')
+{% endhighlight %}
+
+### 加载模型
+
+{% highlight python %}
+new_saver = tf.train.import_meta_graph('my_test_model-1000.meta')
+new_saver.restore(sess, tf.train.latest_checkpoint('./‘))
+{% endhighlight %}
+
+参考：
+
+http://www.cnblogs.com/azheng333/archive/2017/06/09/6972619.html
+
+Tensorflow模型保存和加载
+
+http://blog.csdn.net/wiinter_fdd/article/details/72821923
+
+Tensorflow中的模型持久化
+
 ## TFRecord
 
 TFRecord是TensorFlow官方定义的存放样本数据文件。
@@ -327,62 +379,5 @@ TensorFlow直接读取图片和读写TFRecords速度对比
 http://deepnlp.org/blog/tensorflow-parallelism/
 
 Tensorflow并行：多核(multicore)，多线程(multi-thread)
-
-## 控制流
-
-### tf.cond
-
-{% highlight python %} 
-a=tf.constant(2)      
-b=tf.constant(3)      
-x=tf.constant(4)      
-y=tf.constant(5)      
-z = tf.multiply(a, b)      
-result = tf.cond(x < y, lambda: tf.add(x, z), lambda: tf.square(y))      
-with tf.Session() as session:      
-    print(result.eval())
-{% endhighlight %}
-
-### tf.case
-
-{% highlight python %}
-decode_png = lambda :tf.image.decode_png(image_tensor, channels)
-decode_jpg = lambda :tf.image.decode_jpeg(image_tensor, channels)
-decoder = { tf.equal(image_ext, '.png'):  decode_png,
-            tf.equal(image_ext, '.jpg'):  decode_jpg}
-image_tensor = tf.case(decoder, default = decode_png, exclusive = True)
-{% endhighlight %}
-
-## 我的TensorFlow实践
-
-### MNIST+Softmax
-
-代码：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_mnist.py
-
-### MNIST+CNN
-
-代码：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_cnn.py
-
-第一个例子中，我对CPU的计算能力还没有切肤之痛，但在这里使用CPU差不多要花半个小时时间。。。
-
-### 框架怀古（2017.9）
-
-http://deeplearning.net/
-
-这个网站是Theano的主站，也是我最早接触DL时浏览的网站。其时，我虽然对DL有浓厚的兴趣，但尚未以此作为工作内容。
-
-从该网站提供的招聘信息来看，Caffe、Theano、Torch是当时主流的三大框架库。
-
-岂料时隔一年半载之后，这三大框架都渐趋式微。
-
-Caffe被Caffe 2替代，但使用的广泛度仍超过后者。
-
-Theano被同样基于计算图的TensorFlow淘汰。2017年9月停止更新。
-
-Torch相对变动最小，它被PyTorch替代。这更可以看作是python对于lua的胜利。
 
 

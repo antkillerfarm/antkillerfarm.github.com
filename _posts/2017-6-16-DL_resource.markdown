@@ -418,6 +418,10 @@ https://mp.weixin.qq.com/s/7Wr70NFi4pxvSpRr2Q1zsQ
 
 强大的PyTorch：10分钟让你了解深度学习领域新流行的框架
 
+https://mp.weixin.qq.com/s/dY5r_KJVkpipluo7ji9H6w
+
+如何用“摄像头秒解数独”
+
 ### 量子计算 & 遗传算法
 
 https://www.zhihu.com/question/28171555
@@ -497,4 +501,5 @@ https://mp.weixin.qq.com/s?__biz=MzI3NTA0MzM1OQ==&mid=2651615534&idx=1&sn=00ecd7
 https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
 
 谷歌等巨头机器学习面试题：从逻辑回归到智力测验
+
 

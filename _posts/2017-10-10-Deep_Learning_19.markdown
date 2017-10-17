@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十九）——深度强化学习, Ultra Deep Network
+title:  深度学习（十九）——深度强化学习
 category: theory 
 ---
 
@@ -170,67 +170,8 @@ https://mp.weixin.qq.com/s/xr-2cNoSYpCftLI3dV6zEw
 
 如何使用深度强化学习帮助自动驾驶汽车通过交叉路口？
 
-# Ultra Deep Network
 
-## FractalNet
 
-论文：
-
-《FractalNet: Ultra-Deep Neural Networks without Residuals》
-
-![](/images/article/FractalNet.png)
-
-## Resnet in Resnet
-
-论文：
-
-《Resnet in Resnet: Generalizing Residual Architectures》
-
-![](/images/article/RiR.png)
-
-## Highway
-
-论文：
-
-《Training Very Deep Networks》
-
-![](/images/article/highway.png)
-
-Resnet对于残差的跨层传递是无条件的，而Highway则是有条件的。这种条件开关被称为gate，它也是由网络训练得到的。
-
-## DenseNet
-
-DenseNet是康奈尔大学博士后黄高（Gao Huang）、清华大学本科生刘壮（Zhuang Liu）、Facebook人工智能研究院研究科学家Laurens van der Maaten 及康奈尔大学计算机系教授Kilian Q. Weinberger于2016年提出的。论文当选CVPR 2017最佳论文。
-
-论文：
-
-《Densely Connected Convolutional Networks》
-
-代码：
-
-https://github.com/liuzhuang13/DenseNet
-
-原始版本是Torch写的，官网上列出了其他框架的实现代码的网址。
-
-![](/images/article/DenseNet_2.png)
-
-上图是DenseNet的整体网络结构图。从整体层面来看，DenseNet主要由3个dense block组成。
-
-![](/images/article/DenseNet.png)
-
-参考：
-
-https://www.leiphone.com/news/201708/0MNOwwfvWiAu43WO.html
-
-CVPR 2017最佳论文作者解读：DenseNet 的“what”、“why”和“how”
-
-https://zhuanlan.zhihu.com/p/28124810
-
-为什么ResNet和DenseNet可以这么深？一文详解残差块为何有助于解决梯度弥散问题
-
-https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2651988934&idx=2&sn=0e5ffa195ef67a1371f3b5b223519121
-
-ResNets、HighwayNets、DenseNets：用 TensorFlow 实现超深度神经网络
 
 # NN的INT8计算
 

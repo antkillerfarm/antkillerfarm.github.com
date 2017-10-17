@@ -313,4 +313,7 @@ https://mp.weixin.qq.com/s/nF-RIAzQv3gMSXkM_92Rbg
 
 MIT博士生Bolei Zhou：CVPR2017关于如何解释深度学习模型的讲座
 
+https://mp.weixin.qq.com/s/gUJkqVtObFi8Y4BgbR82GA
+
+提升DNN参数准确度：MILA提出贝叶斯超网络
 

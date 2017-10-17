@@ -56,5 +56,23 @@ http://blog.csdn.net/dujian996099665/article/details/8886576
 
 opencv学习之（三）-LBP算法的研究及其实现
 
+# Fast Image Processing
 
+这是Intel Lab的Qifeng Chen和Jia Xu 2017年的作品。
+
+论文：
+
+《Fast Image Processing with Fully-Convolutional Networks》
+
+代码：
+
+https://github.com/CQFIO/FastImageProcessing
+
+Demo网站：
+
+http://cqf.io/ImageProcessing/
+
+![](/images/article/MCA.png)
+
+上图是该
 

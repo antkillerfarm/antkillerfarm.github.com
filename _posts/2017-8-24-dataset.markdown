@@ -328,6 +328,10 @@ https://mp.weixin.qq.com/s/XgKvh63wgEe-CR9bchp03Q
 
 什么是知识图谱？
 
+https://www.zhihu.com/question/52368821/answer/138745422
+
+鲍捷：知识图谱怎样入门
+
 https://mp.weixin.qq.com/s/iqFXvhvYfOejaeNAhXxJEg
 
 当知识图谱遇上聊天机器人
@@ -367,4 +371,9 @@ https://mp.weixin.qq.com/s/Nh7XJOLNBDdpibopVG4MrQ
 https://mp.weixin.qq.com/s/--WBpit06NOhlRxynUBy0w
 
 东南大学周张泉：基于知识图谱的推理技术
+
+https://mp.weixin.qq.com/s/qrP_tWlHyc3ZAMPOqu9E0A
+
+知识图谱的发展概述
+
 

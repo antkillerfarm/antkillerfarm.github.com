@@ -14,7 +14,15 @@ http://opencv.org/
 
 安装方法：
 
-`sudo apt-get install libopencv-dev`
+`sudo apt-get install libopencv-dev python-opencv`
+
+>注意：这种方法安装的版本有些老，目前还是2.x。
+
+参见：
+
+http://milq.github.io/install-opencv-ubuntu-debian/
+
+Install OpenCV on Ubuntu or Debian
 
 代码下载地址：
 
@@ -23,6 +31,8 @@ https://github.com/Itseez/opencv
 OpenCV项目目前由itseez团队维护，他们的网站是：
 
 http://itseez.com/
+
+## 教程
 
 官方教程：
 
@@ -41,6 +51,8 @@ Adrian Kaehler，哥伦比亚大学博士。
 http://wiki.opencv.org.cn/
 
 国人办的OpenCV中文网。
+
+## blog
 
 http://blog.csdn.net/morewindows/article/category/1291764
 
@@ -93,6 +105,8 @@ http://www.scratchapixel.com/
 http://www.cs.rug.nl/~imaging/
 
 一个在线的图像处理网站。
+
+参考
 
 https://github.com/liuruoze/EasyPR
 

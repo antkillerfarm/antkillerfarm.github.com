@@ -88,6 +88,30 @@ CNN的反卷积就简单多了，它只是误差的反向算法而已。因此�
 
 和池化相比，Dilated convolution实际上也是一种下采样，只不过采样的位置是固定的，因而能够更好的保持空间结构信息。
 
+Dilated convolution在CNN方面的应用主要是Fisher Yu的贡献。
+
+论文：
+
+《Multi-Scale Context Aggregation by Dilated Convolutions》
+
+《Dilated Residual Networks》
+
+代码：
+
+https://github.com/fyu/dilation
+
+https://github.com/fyu/drn
+
+>Fisher Yu，密歇根大学本硕+普林斯顿大学博士。   
+>个人主页：   
+>http://www.yf.io/
+
+参考：
+
+https://zhuanlan.zhihu.com/p/28822428
+
+Paper笔记：Dilated Residual Networks
+
 ## 分组卷积
 
 ![](/images/article/AlexNet.png)
