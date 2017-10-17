@@ -326,6 +326,10 @@ https://www.codewar.cn/
 
 CodeCombat是一个让学生通过玩游戏学习计算机科学的平台
 
+http://www.xuliangwei.com/xubusi/885.html
+
+一篇文章全面了解监控知识体系
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

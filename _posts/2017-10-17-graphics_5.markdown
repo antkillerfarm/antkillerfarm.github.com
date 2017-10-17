@@ -58,7 +58,17 @@ opencv学习之（三）-LBP算法的研究及其实现
 
 # Fast Image Processing
 
-这是Intel Lab的Qifeng Chen和Jia Xu 2017年的作品。
+![](/images/article/FIP.png)
+
+上图是照片界常用的几种修图方式之一。一般将这些图片风格转换的算法，称为图像处理算子（image processing operators）。如何加速image processing operators的计算，就成为了学界研究的课题之一。
+
+这个课题一般使用MIT-Adobe FiveK Dataset作为基准数据集。网址：
+
+http://groups.csail.mit.edu/graphics/fivek_dataset/
+
+这个数据集包含了5K张原始照片，并雇用了5个专业修图师，对每张图片进行修图。
+
+本文提出的模型就是用来加速image processing operators计算的。它是Intel Lab的Qifeng Chen和Jia Xu于2017年提出的。
 
 论文：
 
@@ -74,5 +84,6 @@ http://cqf.io/ImageProcessing/
 
 ![](/images/article/MCA.png)
 
-上图是该
+上图是该模型的网络结构图。
 
+本文只使用了MIT-Adobe数据集中的原始图片，并使用了10种常用的算子对图片进行处理。

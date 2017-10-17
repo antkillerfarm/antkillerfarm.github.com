@@ -362,7 +362,11 @@ RNN入门与实践
 
 https://mp.weixin.qq.com/s/ZPCfnj2kLxXLpBNbxs2ggw
 
-Logistic回归实战篇之预测病马死亡率
+Logistic回归实战篇之预测病马死亡率（一）
+
+https://mp.weixin.qq.com/s/XpX9TPgv4a_uKAKiy8W4fg
+
+Logistic回归实战篇之预测病马死亡率（二）
 
 https://mp.weixin.qq.com/s/U46HOaBP5ijghpc2myJCvA
 

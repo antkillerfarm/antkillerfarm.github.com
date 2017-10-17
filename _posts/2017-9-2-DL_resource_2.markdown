@@ -248,6 +248,10 @@ https://mp.weixin.qq.com/s/BD-HAILp3TPvBFlIy6QC4w
 
 一文看懂机器视觉芯片
 
+https://mp.weixin.qq.com/s/PMnNay4CRgVghA4fU9oLqg
+
+牛津大学研发类脑光子芯片，运算速度超人脑1000倍
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293
@@ -323,30 +327,6 @@ https://mp.weixin.qq.com/s/qkvX0rmEe0yQ-BhCmWAXSQ
 李沐：AWS开源端到端AI框架编译器NNVM
 
 ## Other
-
-http://cs.stanford.edu/people/karpathy/convnetjs/demo/classify2d.html
-
-这是一个2层神经网络的可视化demo
-
-http://mp.weixin.qq.com/s/upblqKf0m_15o4L1fF0EEQ
-
-深度学习模型转换器
-
-https://mp.weixin.qq.com/s/JnGpVQDF95hHTirrZyJc_g
-
-一个降低深度学习时间，空间，经济成本的解决方案
-
-https://mp.weixin.qq.com/s/d-Rt3Bz4Qzf3qaoSxiTlGA
-
-计算机视觉怎么给图像分类？KNN、SVM、BP神经网络、CNN、迁移学习供你选
-
-https://www.oreilly.com/learning/caption-this-with-tensorflow
-
-图片字幕生成
-
-https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/content/
-
-某人写的AI心得
 
 https://mp.weixin.qq.com/s/JAVzy8gy7k4EesBBHvEZLg
 

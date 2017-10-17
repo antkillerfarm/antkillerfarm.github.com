@@ -265,10 +265,6 @@ http://mp.weixin.qq.com/s/vhBOrR6uTL2vGXnYC8BS1w
 
 Windows版深度学习软件安装指南
 
-https://mp.weixin.qq.com/s/PMnNay4CRgVghA4fU9oLqg
-
-牛津大学研发类脑光子芯片，运算速度超人脑1000倍
-
 https://mp.weixin.qq.com/s/ViQqeER1NXtJOtnLg76TWg
 
 关于远程监督，我们来推荐几篇值得读的论文
@@ -316,4 +312,34 @@ MIT博士生Bolei Zhou：CVPR2017关于如何解释深度学习模型的讲座
 https://mp.weixin.qq.com/s/gUJkqVtObFi8Y4BgbR82GA
 
 提升DNN参数准确度：MILA提出贝叶斯超网络
+
+https://mp.weixin.qq.com/s/dEdWz4bovmk65fwLknHBhg
+
+韩松毕业论文：面向深度学习的高效方法与硬件
+
+http://cs.stanford.edu/people/karpathy/convnetjs/demo/classify2d.html
+
+这是一个2层神经网络的可视化demo
+
+http://mp.weixin.qq.com/s/upblqKf0m_15o4L1fF0EEQ
+
+深度学习模型转换器
+
+https://mp.weixin.qq.com/s/JnGpVQDF95hHTirrZyJc_g
+
+一个降低深度学习时间，空间，经济成本的解决方案
+
+https://mp.weixin.qq.com/s/d-Rt3Bz4Qzf3qaoSxiTlGA
+
+计算机视觉怎么给图像分类？KNN、SVM、BP神经网络、CNN、迁移学习供你选
+
+https://www.oreilly.com/learning/caption-this-with-tensorflow
+
+图片字幕生成
+
+https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/content/
+
+某人写的AI心得
+
+
 
