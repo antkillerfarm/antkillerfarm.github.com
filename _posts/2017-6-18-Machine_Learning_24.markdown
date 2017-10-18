@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十四）——Tri-training, Beam Search, NLP机器翻译常用评价度量, 数据不平衡问题, Q-learning
+title:  机器学习（二十四）——Tri-training, Beam Search, NLP机器翻译常用评价度量, 数据不平衡问题, 强化学习
 category: theory 
 ---
 
@@ -152,15 +152,23 @@ http://blog.csdn.net/u013709270/article/details/72967462
 
 # 强化学习
 
+## 概述
+
 ![](/images/article/RL.png)
 
 上图是Reinforcement Learning和其他类型算法的关系图。
+
+不像监督学习，对于每一个样本，都有一个确定的标签与之对应，而强化学习没有标签，只有一个时间延迟的奖励，而且游戏中我们往往牺牲当前的奖励来获取将来更大的奖励。这就是**信用分配问题（Credit Assignment Problem）**，即当前的动作要为将来获得更多的奖励负责。
+
+而且在我们找到一个策略，让游戏获得不错的奖励时，我们是选择继续坚持当前的策略，还是探索新的策略以求更多的奖励？这就是**探索与开发（Explore-exploit Dilemma）**的问题。
 
 ![](/images/article/reinforcement_learning.png)
 
 上图是强化学习的基本流程图。从控制论的角度来说，这是一个反馈控制系统，和经典的Kalman filters系统非常类似。因此，目前强化学习的主要用途，也多数和系统控制相关，例如机器人和自动驾驶。
 
 在推荐系统领域，由于有用户的反馈信息，亦可使用相关强化学习算法。
+
+## MDP
 
 强化学习任务通常用马尔可夫决策过程（Markov Decision Process）来描述。
 
@@ -182,6 +190,17 @@ $$s_0,a_0,r_1,s_1,a_1,r_2,s_2,\dots,s_{n-1},a_{n-1},r_n,s_n$$
 
 这里$$s_i$$代表状态，$$a_i$$代表行动，$$r_{i+1}$$是执行动作后的奖励。最终状态为$$s_n$$。
 
+## 折扣未来奖励（Discounted Future Reward）
+
+为了获得更多的奖励，我们往往不能只看当前奖励，更要看将来的奖励。
+
+给定一个MDP周期，总的奖励显然为：
+
+$$R=r_1+r_2+\dots+r_n$$
+
+那么，从当前时间t开始，总的将来的奖励为：
+
+$$R_t=r_t+r_{t+1}+\dots+r_n$$
 
 
 

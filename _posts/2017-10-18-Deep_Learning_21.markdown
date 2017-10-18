@@ -54,6 +54,10 @@ http://mp.weixin.qq.com/s/6Urv6TfUfc-BWV1YqTM1PQ
 
 迁移学习+BPE，改进低资源语言的神经翻译结果
 
+https://zhuanlan.zhihu.com/p/30242073
+
+人脸识别中的迁移学习简介（Transfer Learning）
+
 # 语音识别
 
 Connectionist Temporal Classification，是一种改进的RNN模型。它主要解决的是时序模型中，输入数大于输出数，输入输出如何对齐的问题。
