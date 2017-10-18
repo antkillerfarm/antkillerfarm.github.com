@@ -58,12 +58,6 @@ Isolation Forest算法原理详解
 
 可见，滤波和预测是实时运算，而平滑是非实时运算。
 
-# 强化学习
-
-http://blog.csdn.net/pi9nc/article/details/27649323
-
-一个Q-learning算法的简明教程
-
 # Keras
 
 Keras是深度学习的前端框架的集大成者，其后端可支持tensorflow、cntk、theano等。

@@ -1,10 +1,92 @@
 ---
 layout: post
-title:  深度学习（十）——Batch Normalization, Softmax详解, 目标检测
+title:  深度学习（十）——花式池化, Batch Normalization, Softmax详解
 category: theory 
 ---
 
-# 花式池化（续）
+# 花式卷积（续）
+
+## 参考
+
+https://github.com/vdumoulin/conv_arithmetic
+
+Convolution arithmetic
+
+http://deeplearning.net/software/theano_versions/dev/tutorial/conv_arithmetic.html
+
+Convolution arithmetic
+
+https://mp.weixin.qq.com/s/dR2nhGqpz7OdmxKPYSaaxw
+
+如何理解空洞卷积（dilated convolution）？
+
+https://mp.weixin.qq.com/s/CLFbhWMcat4rN8YS_7q25g
+
+这12张图生动的告诉你，深度学习中的卷积网络是怎么一回事？
+
+https://mp.weixin.qq.com/s/kJEeKzC9pC375EjIJpTuzg
+
+一文全解深度学习中的卷积
+
+http://mp.weixin.qq.com/s/dvuX3Ih_DZrv0kgqFn8-lg
+
+卷积神经网络结构变化——可变形卷积网络deformable convolutional networks
+
+http://cs.nyu.edu/~fergus/drafts/utexas2.pdf
+
+Deconvolutional Networks
+
+https://zhuanlan.zhihu.com/p/22245268
+
+CNN-反卷积
+
+http://buptldy.github.io/2016/10/29/2016-10-29-deconv/
+
+Transposed Convolution, Fractionally Strided Convolution or Deconvolution（中文blog）
+
+https://buptldy.github.io/2016/10/01/2016-10-01-im2col/
+
+Implementing convolution as a matrix multiplication（中文blog）
+
+https://mp.weixin.qq.com/s/iN2LDAQ2ee-rQnlD3N1yaw
+
+变形卷积核、可分离卷积？CNN中十大拍案叫绝的操作！
+
+http://www.msra.cn/zh-cn/news/features/deformable-convolutional-networks-20170609
+
+可变形卷积网络：计算机新“视”界
+
+https://mp.weixin.qq.com/s/ybI8kJPRn7sH-hJbc5uqnw
+
+CMU研究者探索新卷积方法：在实验中可媲美基准CNN
+
+https://mp.weixin.qq.com/s/qReN6z8s45870HSMCMNatw
+
+微软亚洲研究院：逐层集中Attention的卷积模型
+
+# 花式池化
+
+池化和卷积一样，都是信号采样的一种方式。
+
+## 普通池化
+
+池化的一般步骤是：选择区域P，令$$Y=f(P)$$。这里的f为池化函数。
+
+![](/images/article/max_pooling.png)
+
+上图是Max Pooling的示意图。除了max之外，常用的池化函数还有mean、min等。
+
+ICLR2013上，Zeiler提出了另一种pooling手段stochastic pooling。只需对Pooling区域中的元素按照其概率值大小随机选择，即元素值大的被选中的概率也大。而不像max-pooling那样，永远只取那个最大值元素。
+
+根据相关理论，特征提取的误差主要来自两个方面：
+
+（1）邻域大小受限造成的估计值方差增大；
+
+（2）卷积层参数误差造成估计均值的偏移。
+
+一般来说，mean-pooling能减小第一种误差，更多的保留图像的背景信息，max-pooling能减小第二种误差，更多的保留纹理信息。
+
+Stochastic-pooling则介于两者之间，通过对像素点按照数值大小赋予概率，再按照概率进行亚采样，在平均意义上，与mean-pooling近似，在局部意义上，则服从max-pooling的准则。
 
 ## 池化的反向传播
 
@@ -161,112 +243,6 @@ object detection是计算机视觉的一个重要的分支。类似的分支还�
 基于深度学习的物体检测的经典算法是RCNN系列：RCNN，fast RCNN(Ross Girshick)，faster RCNN(少卿、凯明、孙剑、Ross)。这三个工作的核心思想是分别是：使用更好的CNN模型判断候选区域的类别；复用预计算的sharing feature map加快模型训练和物体检测的速度；进一步使用sharing feature map大幅提高计算候选区域的速度。其实基于深度学习的物体检测也可以看成对海量滑动窗口分类，只是用全卷积的方式。
 
 RCNN系列算法还是将物体检测分为两个步骤。现在还有一些工作是端到端(end-to-end)的物体检测，比如说YOLO(You Only Look Once: Unified, Real-Time Object Detection)和SSD(SSD: Single Shot MultiBox Detector)这样的算法。这两个算法号称和faster RCNN精度相似但速度更快。物体检测正负样本极端非均衡，two-stage cascade可以更好的应对非均衡。端到端学习是否可以超越faster RCNN还需要更多研究实验。
-
-参考：
-
-https://www.zhihu.com/question/34223049
-
-从近两年的CVPR会议来看，目标检测的研究方向是怎么样的？
-
-https://zhuanlan.zhihu.com/p/21533724
-
-对话CVPR2016：目标检测新进展
-
-https://mp.weixin.qq.com/s/r9tXvKIN-eqKW_65yFyOew
-
-谷歌开源TensorFlow Object Detection API
-
-https://mp.weixin.qq.com/s/-PeXMU_gkcT5YnMcLoaKag
-
-CVPR清华大学研究，高效视觉目标检测框架RON
-
-https://mp.weixin.qq.com/s/_cOuhToH8KvZldNfraumSQ
-
-什么促使了候选目标的有效检测？
-
-https://mp.weixin.qq.com/s/LAy1LKGj5HOh_e9jPgvfQw
-
-视觉目标检测和识别之过去，现在及可能
-
-https://mp.weixin.qq.com/s/ZHRP5xnQxex7lQJsCxwblA
-
-深度学习目标检测的主要问题和挑战！
-
-https://mp.weixin.qq.com/s/XorPkuIdhRNI1zGLwg-55A
-
-斯坦福新深度学习系统 NoScope：视频对象检测快1000倍
-
-https://mp.weixin.qq.com/s/XbgmLmlt5X4TX5CP59gyoA
-
-目标检测算法精彩集锦
-
-https://mp.weixin.qq.com/s/BgTc1SE2IzNH27OC2P2CFg
-
-CVPR-I
-
-https://mp.weixin.qq.com/s/qMdnp9ZdlYIja2vNEKuRNQ
-
-CVPR—II
-
-https://mp.weixin.qq.com/s/tc1PsIoF1RN1sx_IFPmtWQ
-
-CVPR—III
-
-https://mp.weixin.qq.com/s/bpCn2nREHzazJYq6B9vMHg
-
-目标识别算法的进展
-
-https://mp.weixin.qq.com/s/YzxaS4KQmpbUSnyOwccn4A
-
-基于深度学习的目标检测技术进展与展望
-
-https://mp.weixin.qq.com/s/JPCQqyzR8xIUyAdk_RI5dA
-
-RCNN, Fast-RCNN, Faster-RCNN那些你必须知道的事！
-
-https://www.zhihu.com/question/35887527
-
-如何评价rcnn、fast-rcnn和faster-rcnn这一系列方法？
-
-http://blog.csdn.net/messiran10/article/details/49132053
-
-Caffe matlab之基于Alex network的特征提取
-
-https://mp.weixin.qq.com/s/YovhKYeGGLqSxxSqMNsbKg
-
-基于深度学习的目标检测学习总结
-
-https://mp.weixin.qq.com/s/nGSaQXm8AczYodtmHD1qNA
-
-深度学习目标检测模型全面综述：Faster R-CNN、R-FCN和SSD
-
-https://mp.weixin.qq.com/s/c2oMJfE95I1ciEtvdTlb4A
-
-完全脱离预训练模型的目标检测方法
-
-https://mp.weixin.qq.com/s/NV2hWofOCractLt45-wI1A
-
-山世光：基于深度学习的目标检测技术进展与展望
-
-https://mp.weixin.qq.com/s/zJ3EN175_9num2OknVvnyA
-
-邬书哲：物体检测算法的革新与传承
-
-https://mp.weixin.qq.com/s/1vOdOMyByBacSBMVrscq5Q
-
-黄畅：基于DenesBox的目标检测在自动驾驶中的应用
-
-https://mp.weixin.qq.com/s/6rSeJOqbKyrDj3FpS8J5eg
-
-黄李超讲物体检测
-
-https://mp.weixin.qq.com/s/JjsAnB_OxKS1Af9XAtw5sA
-
-一文带你读懂深度学习框架下的目标检测
-
-https://mp.weixin.qq.com/s/dcrBQ-t3tLOTouEyofOBxg
-
-间谍卫星：利用卷积神经网络对卫星影像进行多尺度目标检测
 
 ## 进化史
 

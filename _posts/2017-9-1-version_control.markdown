@@ -349,6 +349,10 @@ https://mp.weixin.qq.com/s/kJxXIN6D5TEEFSFhGJNIyw
 
 开源神经网络图片上色技术解析
 
+https://mp.weixin.qq.com/s/qXMRHxDDRa-_rJZMhXWB4w
+
+详解TensorFlow的新seq2seq模块及其用法
+
 
 
 

@@ -100,6 +100,12 @@ TensorFlow的等价物。
 
 https://deeplearning4j.org/
 
+参考：
+
+https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247484466&idx=1&sn=9dd7d305f37f6cad8d4ac37ad17f61f8
+
+Deeplearning4j：使用CNN进行文本分类:图文+代码
+
 ## Joinery
 
 Pandas的等价物。

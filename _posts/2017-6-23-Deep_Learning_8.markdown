@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（八）——fine-tuning
+title:  深度学习（八）——GAN（2）
 category: theory 
 ---
 
@@ -114,6 +114,30 @@ https://github.com/hwalsuklee/tensorflow-generative-model-collections
 https://github.com/hindupuravinash/the-gan-zoo
 
 GAN的各种变种。
+
+## GAN的理论解释
+
+顾险峰教授对GAN提出了自己的理论解释。
+
+>顾险峰，1989年考入清华大学计算机科学与技术系。1992年获得清华大学特等奖学金。后于美国哈佛大学获得计算机博士学位，师从国际著名微分几何大师丘成桐先生。目前为美国纽约州立大学石溪分校计算机系终身教授。
+
+参考：
+
+https://mp.weixin.qq.com/s/7O0AKIUVYK7HRyvdRbUVkg
+
+虚构的对抗，GAN with the wind
+
+https://mp.weixin.qq.com/s/trvMOTXNs7L6fSmTkZXwsA
+
+看穿机器学习（W-GAN模型）的黑箱
+
+https://mp.weixin.qq.com/s/thcxsBVttSIEzVNLQlAVCA
+
+看穿机器学习的黑箱（II）
+
+https://mp.weixin.qq.com/s/Jx0o17CwlIVcRV22PXk4wQ
+
+看穿机器学习的黑箱（III）
 
 ## 参考
 
@@ -284,43 +308,5 @@ GAN眼中的图像翻译
 http://blog.csdn.net/amds123/article/details/70199708
 
 生成对抗网络GAN最近在NLP领域有哪些应用？
-
-# fine-tuning
-
-fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
-
-举个例子，假设今天老板给你一个新的数据集，让你做一下图片分类，这个数据集是关于Flowers的。问题是，数据集中flower的类别很少，数据集中的数据也不多，你发现从零训练开始训练CNN的效果很差，很容易过拟合。怎么办呢，于是你想到了使用Transfer Learning，用别人已经训练好的Imagenet的模型来做。
-
-由于ImageNet数以百万计带标签的训练集数据，使得如CaffeNet之类的预训练的模型具有非常强大的泛化能力，这些预训练的模型的中间层包含非常多一般性的视觉元素，我们只需要对他的后几层进行微调，再应用到我们的数据上，通常就可以得到非常好的结果。最重要的是，**在目标任务上达到很高performance所需要的数据的量相对很少**。
-
-虽然从理论角度尚无法完全解释fine-tuning的原理，但是还是可以给出一些直观的解释。我们知道，CNN越靠近输入端，其抽取的图像特征越原始。比如最初的一层通常只能抽取一些线条之类的元素。越上层，其特征越抽象。
-
-而现实的图像无论多么复杂，总是由简单特征拼凑而成的。因此，无论最终的分类结果差异如何巨大，其底层的图像特征却几乎一致。
-
-![](/images/article/trans_learn.png)
-
-fine-tuning也是图像目标检测、语义分割的基础。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/22624331
-
-fine-tuning:利用已有模型训练其他数据集
-
-http://www.cnblogs.com/louyihang-loves-baiyan/p/5038758.html
-
-Caffe fine-tuning微调网络
-
-http://blog.csdn.net/sinat_26917383/article/details/54999868
-
-caffe中fine-tuning模型三重天（函数详解、框架简述）+微调技巧
-
-http://yongyuan.name/blog/layer-selection-and-finetune-for-cbir.html
-
-图像检索：layer选择与fine-tuning性能提升验证
-
-h1ttps://www.zhihu.com/question/49534423
-
-迁移学习与fine-tuning有什么区别？
 
 

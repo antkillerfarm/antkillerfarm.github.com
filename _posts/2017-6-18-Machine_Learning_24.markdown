@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十四）——Tri-training, Beam Search, NLP机器翻译常用评价度量, 数据不平衡问题
+title:  机器学习（二十四）——Tri-training, Beam Search, NLP机器翻译常用评价度量, 数据不平衡问题, Q-learning
 category: theory 
 ---
 
@@ -150,3 +150,71 @@ http://blog.csdn.net/u013709270/article/details/72967462
 
 机器学习中的数据不平衡解决方案大全
 
+# 强化学习
+
+![](/images/article/RL.png)
+
+上图是Reinforcement Learning和其他类型算法的关系图。
+
+![](/images/article/reinforcement_learning.png)
+
+上图是强化学习的基本流程图。从控制论的角度来说，这是一个反馈控制系统，和经典的Kalman filters系统非常类似。因此，目前强化学习的主要用途，也多数和系统控制相关，例如机器人和自动驾驶。
+
+在推荐系统领域，由于有用户的反馈信息，亦可使用相关强化学习算法。
+
+强化学习任务通常用马尔可夫决策过程（Markov Decision Process）来描述。
+
+>MDP中有两个对象：Agent和Environment。   
+>1.Environment处于一个特定的状态（State）（如打砖块游戏中挡板的位置、各个砖块的状态等）。   
+>2.Agent可以通过执行特定的动作（Actions）（如向左向右移动挡板）来改变Environment的状态。   
+>3.Environment状态改变之后会返回一个观察（Observation）给Agent，同时还会得到一个奖励（Reward）（可以为负，就是惩罚）。   
+>4.Agent根据返回的信息采取新的动作，如此反复下去。Agent如何选择动作叫做策略（Policy）。MDP的任务就是找到一个策略，来最大化奖励。
+
+注意State和Observation区别：State是Environment的私有表达，我们往往不会直接得到。
+
+在MDP中，当前状态State包含了所有历史信息，即将来只和现在有关，与过去无关，因为现在状态包含了所有历史信息。只有满足这样条件的状态才叫做马尔科夫状态（Markov state）。当然这只是理想状况，现实往往不会那么简单。
+
+正是因为State太过于复杂，我们往往可以需要一个对Environment的观察来间接获得信息，因此就有了Observation。不过Observation是可以等于State的，此时叫做Full Observability。
+
+状态、动作、状态转移概率组成了MDP，一个MDP周期（episode）由一个有限的状态、动作、奖励队列组成：
+
+$$s_0,a_0,r_1,s_1,a_1,r_2,s_2,\dots,s_{n-1},a_{n-1},r_n,s_n$$
+
+这里$$s_i$$代表状态，$$a_i$$代表行动，$$r_{i+1}$$是执行动作后的奖励。最终状态为$$s_n$$。
+
+
+
+
+参考：
+
+https://mp.weixin.qq.com/s/f6sq8cSaU1cuzt7jhsK8Ig
+
+强化学习（Reinforcement Learning）基础介绍
+
+https://mp.weixin.qq.com/s/TGN6Zhrea2LPxdkspVTlAw
+
+穆黎森：算法工程师入门——增强学习
+
+https://mp.weixin.qq.com/s/laKJ_jfNR5L1uMML9wkS1A
+
+强化学习（Reinforcement Learning）算法基础及分类
+
+https://mp.weixin.qq.com/s/Cvk_cePK9iQd8JIKKDDrmQ
+
+强化学习的核心基础概念及实现
+
+http://mp.weixin.qq.com/s/gHM7qh7UTKzatdg34cgfDQ
+
+强化学习全解
+
+# Q-learning
+
+参考：
+
+http://blog.csdn.net/itplus/article/details/9361915
+
+一个Q-learning算法的简明教程
+
+http://blog.csdn.net/young_gy/article/details/73485518
+
+强化学习之Q-learning简介

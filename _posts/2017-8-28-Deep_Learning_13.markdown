@@ -1,8 +1,64 @@
 ---
 layout: post
-title:  深度学习（十三）——YOLO, SSD, YOLOv2
+title:  深度学习（十三）——YOLO, SSD
 category: theory 
 ---
+
+# Faster R-CNN（续）
+
+## RPN和Fast R-CNN协同训练
+
+我们知道，如果是分别训练两种不同任务的网络模型，即使它们的结构、参数完全一致，但各自的卷积层内的卷积核也会向着不同的方向改变，导致无法共享网络权重，论文作者提出了几种可能的方式。
+
+### Alternating training
+
+此方法其实就是一个不断迭代的训练过程，既然分别训练RPN和Fast-RCNN可能让网络朝不同的方向收敛：
+
+a)那么我们可以先独立训练RPN，然后用这个RPN的网络权重对Fast-RCNN网络进行初始化并且用之前RPN输出proposal作为此时Fast-RCNN的输入训练Fast R-CNN。
+
+b) 用Fast R-CNN的网络参数去初始化RPN。之后不断迭代这个过程，即循环训练RPN、Fast-RCNN。
+
+![](/images/article/alternating_training.png)
+
+### Approximate joint training or Non-approximate training
+
+这两种方式，不再是串行训练RPN和Fast-RCNN，而是尝试把二者融入到一个网络内训练。融合方式和上面的Faster R-CNN结构图类似。细节不再赘述。
+
+### 4-Step Alternating Training
+
+这是作者发布的源代码中采用的方法。
+
+第一步：用ImageNet模型初始化，独立训练一个RPN网络；
+
+第二步：仍然用ImageNet模型初始化，但是使用上一步RPN网络产生的proposal作为输入，训练一个Fast-RCNN网络，至此，两个网络每一层的参数完全不共享；
+
+第三步：使用第二步的Fast-RCNN网络参数初始化一个新的RPN网络，但是把RPN、Fast-RCNN共享的那些卷积层的learning rate设置为0，也就是不更新，仅仅更新RPN特有的那些网络层，重新训练，此时，两个网络已经共享了所有公共的卷积层；
+
+第四步：仍然固定共享的那些网络层，把Fast-RCNN特有的网络层也加入进来，形成一个unified network，继续训练，fine tune Fast-RCNN特有的网络层，此时，该网络已经实现我们设想的目标，即网络内部预测proposal并实现检测的功能。
+
+![](/images/article/4_Step_Alternating_Training.png)
+
+## 总结
+
+![](/images/article/faster_rcnn_p.png)
+
+参考：
+
+https://zhuanlan.zhihu.com/p/24916624
+
+Faster R-CNN
+
+http://blog.csdn.net/shenxiaolu1984/article/details/51152614
+
+Faster RCNN算法详解
+
+https://mp.weixin.qq.com/s/VKQufVUQ3TP5m7_2vOxnEQ
+
+通过Faster R-CNN实现当前最佳的目标计数
+
+http://blog.csdn.net/zy1034092330/article/details/62044941
+
+Faster RCNN详解
 
 # YOLO
 
@@ -234,38 +290,4 @@ http://www.lai18.com/content/24600342.html
 https://www.zhihu.com/question/49455386
 
 为什么SSD(Single Shot MultiBox Detector)对小目标的检测效果不好？
-
-# YOLOv2
-
-面对SSD的攻势，pjreddie不甘示弱，于2016年12月提出了YOLOv2（又名YOLO9000）。YOLOv2对YOLO做了较多改进，实际上更像是SSD的升级版。
-
-论文：
-
-《YOLO9000: Better, Faster, Stronger》
-
-实际上，论文的内容也正如标题所言，主要分为Better, Faster, Stronger三个部分。
-
-## Better
-
-### batch normalization
-
-YOLOv2网络通过在每一个卷积层后添加batch normalization，极大的改善了收敛速度同时减少了对其它regularization方法的依赖（舍弃了dropout优化后依然没有过拟合），使得mAP获得了2%的提升。
-
-### High Resolution Classifier
-
-所有state-of-the-art的检测方法基本上都会使用ImageNet预训练过的模型（classifier）来提取特征，例如AlexNet输入图片会被resize到不足256x256，这导致分辨率不够高，给检测带来困难。所以YOLO(v1)先以分辨率224x224训练分类网络，然后需要增加分辨率到448x448，这样做不仅切换为检测算法也改变了分辨率。所以作者想能不能在预训练的时候就把分辨率提高了，训练的时候只是由分类算法切换为检测算法。
-
-YOLOv2首先修改预训练分类网络的分辨率为448x448，在ImageNet数据集上训练10轮（10 epochs）。这个过程让网络有足够的时间调整filter去适应高分辨率的输入。然后fine tune为检测网络。mAP获得了4%的提升。
-
-### Convolutional With Anchor Boxes
-
-借鉴SSD的经验，使用Anchor方法替代全连接+reshape。
-
-相应的，YOLOv2对于输出向量的编码方式进行了改进，如下图所示：
-
-![](/images/article/yolov2.png)
-
-其主要思路是：将对类别的预测放到anchor box中。
-
-同时，由于分辨率的提高，cell的数量由7x7改为13x13。这样一来就有13x13x9=1521个boxes了。因此，YOLOv2比YOLO在检测小物体方面有一定的优势。
 

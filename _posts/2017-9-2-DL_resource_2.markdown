@@ -326,6 +326,10 @@ https://mp.weixin.qq.com/s/qkvX0rmEe0yQ-BhCmWAXSQ
 
 李沐：AWS开源端到端AI框架编译器NNVM
 
+https://mp.weixin.qq.com/s/qOjGrR59Mf0Mzgh4bpDhrA
+
+详解Horovod：Uber开源的TensorFlow分布式深度学习框架
+
 ## Other
 
 https://mp.weixin.qq.com/s/JAVzy8gy7k4EesBBHvEZLg

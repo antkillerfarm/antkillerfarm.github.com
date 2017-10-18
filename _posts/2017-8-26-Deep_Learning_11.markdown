@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十一）——RCNN
+title:  深度学习（十一）——目标检测, RCNN
 category: theory 
 ---
 
@@ -25,6 +25,112 @@ CV的输入一般是由像素组成的矩阵。相比其他领域的数据挖掘
 6.同类差异。比如各种猫都是猫，但它们的外观有细微的差异。
 
 ![](/images/article/cv_problem.png)
+
+## 参考
+
+https://www.zhihu.com/question/34223049
+
+从近两年的CVPR会议来看，目标检测的研究方向是怎么样的？
+
+https://zhuanlan.zhihu.com/p/21533724
+
+对话CVPR2016：目标检测新进展
+
+https://mp.weixin.qq.com/s/r9tXvKIN-eqKW_65yFyOew
+
+谷歌开源TensorFlow Object Detection API
+
+https://mp.weixin.qq.com/s/-PeXMU_gkcT5YnMcLoaKag
+
+CVPR清华大学研究，高效视觉目标检测框架RON
+
+https://mp.weixin.qq.com/s/_cOuhToH8KvZldNfraumSQ
+
+什么促使了候选目标的有效检测？
+
+https://mp.weixin.qq.com/s/LAy1LKGj5HOh_e9jPgvfQw
+
+视觉目标检测和识别之过去，现在及可能
+
+https://mp.weixin.qq.com/s/ZHRP5xnQxex7lQJsCxwblA
+
+深度学习目标检测的主要问题和挑战！
+
+https://mp.weixin.qq.com/s/XorPkuIdhRNI1zGLwg-55A
+
+斯坦福新深度学习系统 NoScope：视频对象检测快1000倍
+
+https://mp.weixin.qq.com/s/XbgmLmlt5X4TX5CP59gyoA
+
+目标检测算法精彩集锦
+
+https://mp.weixin.qq.com/s/BgTc1SE2IzNH27OC2P2CFg
+
+CVPR-I
+
+https://mp.weixin.qq.com/s/qMdnp9ZdlYIja2vNEKuRNQ
+
+CVPR—II
+
+https://mp.weixin.qq.com/s/tc1PsIoF1RN1sx_IFPmtWQ
+
+CVPR—III
+
+https://mp.weixin.qq.com/s/bpCn2nREHzazJYq6B9vMHg
+
+目标识别算法的进展
+
+https://mp.weixin.qq.com/s/YzxaS4KQmpbUSnyOwccn4A
+
+基于深度学习的目标检测技术进展与展望
+
+https://mp.weixin.qq.com/s/JPCQqyzR8xIUyAdk_RI5dA
+
+RCNN, Fast-RCNN, Faster-RCNN那些你必须知道的事！
+
+https://www.zhihu.com/question/35887527
+
+如何评价rcnn、fast-rcnn和faster-rcnn这一系列方法？
+
+http://blog.csdn.net/messiran10/article/details/49132053
+
+Caffe matlab之基于Alex network的特征提取
+
+https://mp.weixin.qq.com/s/YovhKYeGGLqSxxSqMNsbKg
+
+基于深度学习的目标检测学习总结
+
+https://mp.weixin.qq.com/s/nGSaQXm8AczYodtmHD1qNA
+
+深度学习目标检测模型全面综述：Faster R-CNN、R-FCN和SSD
+
+https://mp.weixin.qq.com/s/c2oMJfE95I1ciEtvdTlb4A
+
+完全脱离预训练模型的目标检测方法
+
+https://mp.weixin.qq.com/s/NV2hWofOCractLt45-wI1A
+
+山世光：基于深度学习的目标检测技术进展与展望
+
+https://mp.weixin.qq.com/s/zJ3EN175_9num2OknVvnyA
+
+邬书哲：物体检测算法的革新与传承
+
+https://mp.weixin.qq.com/s/1vOdOMyByBacSBMVrscq5Q
+
+黄畅：基于DenesBox的目标检测在自动驾驶中的应用
+
+https://mp.weixin.qq.com/s/6rSeJOqbKyrDj3FpS8J5eg
+
+黄李超讲物体检测
+
+https://mp.weixin.qq.com/s/JjsAnB_OxKS1Af9XAtw5sA
+
+一文带你读懂深度学习框架下的目标检测
+
+https://mp.weixin.qq.com/s/dcrBQ-t3tLOTouEyofOBxg
+
+间谍卫星：利用卷积神经网络对卫星影像进行多尺度目标检测
 
 # RCNN
 
@@ -187,72 +293,4 @@ http://mp.weixin.qq.com/s/Cg9tHG1YgDCdI3NPYl5-vQ
 一张照片我们得到了2000个候选框。然而人工标注的数据一张图片中就只标注了正确的bounding box，我们搜索出来的2000个矩形框也不可能会出现一个与人工标注完全匹配的候选框。因此在CNN阶段我们需要用IOU为2000个bounding box打标签。
 
 如果用selective search挑选出来的候选框与物体的人工标注矩形框的重叠区域IoU大于0.5，那么我们就把这个候选框标注成物体类别（正样本），否则我们就把它当做背景类别（负样本）。
-
-## 使用SVM的问题
-
-CNN训练的时候，本来就是对bounding box的物体进行识别分类训练，在训练的时候，最后一层softmax就是分类层。那么为什么作者闲着没事干要先用CNN做特征提取（提取fc7层数据），然后再把提取的特征用于训练SVM分类器？
-
-这个是因为SVM训练和cnn训练过程的正负样本定义方式各有不同，导致最后采用CNN softmax输出比采用SVM精度还低。
-
-事情是这样的，cnn在训练的时候，对训练数据做了比较宽松的标注，比如一个bounding box可能只包含物体的一部分，那么我也把它标注为正样本，用于训练cnn；采用这个方法的主要原因在于因为CNN容易过拟合，所以需要大量的训练数据，所以在CNN训练阶段我们是对Bounding box的位置限制条件限制的比较松(IOU只要大于0.5都被标注为正样本了)；
-
-然而SVM训练的时候，因为SVM适用于少样本训练，所以对于训练样本数据的IOU要求比较严格，我们只有当bounding box把整个物体都包含进去了，我们才把它标注为物体类别，然后训练SVM。
-
-## CNN base
-
-目标检测任务不是一个独立的任务，而是在目标分类基础之上的进一步衍生。因此，无论何种目标检测框架都需要一个目标分类的CNN作为base，仅对其最上层的FC层做一定的修改。
-
-VGG、AlexNet都是常见的CNN base。
-
-## 评价标准
-
-目标检测一般采用mAP（mean Average Precision）作为评价标准。AP的含义参见《机器学习（二十一）》。
-
-对于多分类任务来说，每个分类都有一个AP，将这些AP平均（或加权平均）之后，就得到了mAP。
-
-目前，目标检测领域的mAP，一般以PASCAL VOC 2012的标准为准。文档参见：
-
-http://host.robots.ox.ac.uk/pascal/VOC/voc2012/devkit_doc.pdf
-
-对于目标检测任务来说，除了分类之外，还有box准确度的问题。一般IOU大于0.5的被认为是正样本，反之则是负样本。
-
-PASCAL VOC还对P-R曲线的采样做出规定。2012之前的标准中，P-R曲线只需要对recall值进行10等分采样即可。而2012标准规定，对每个recall值都要进行采样。
-
-参考：
-
-http://blog.sina.com.cn/s/blog_9db078090102whzw.html
-
-多标签图像分类任务的评价方法-mAP
-
-https://www.zhihu.com/question/41540197
-
-mean average precision（MAP）在计算机视觉中是如何计算和应用的？
-
-## 总结
-
-![](/images/article/rcnn_p_2.png)
-
-![](/images/article/rcnn_p.png)
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/23006190
-
-RCNN-将CNN引入目标检测的开山之作
-
-http://www.cnblogs.com/edwardbi/p/5647522.html
-
-Tensorflow tflearn编写RCNN
-
-http://blog.csdn.net/u011534057/article/category/6178027
-
-RCNN系列blog
-
-http://blog.csdn.net/shenxiaolu1984/article/details/51066975
-
-RCNN算法详解
-
-http://mp.weixin.qq.com/s/_U6EJBP_qmx68ih00IhGjQ
-
-Object Detection R-CNN
 

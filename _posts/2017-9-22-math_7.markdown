@@ -24,6 +24,10 @@ https://wenku.baidu.com/view/21877fea551810a6f524868c.html
 
 一个反例处处连续处处不可导的函数
 
+## 函数连续性和神经网络
+
+理论上说，多层神经网络只要有足够的深度和宽度，就可以任意逼近任意**连续函数**。然而从网络训练的角度来说，只有Lipschitz连续的函数才一定会收敛，否则的话，可能会出现梯度爆炸的情况。
+
 ## 参考
 
 https://www.zhihu.com/question/32201415
@@ -316,30 +320,5 @@ https://mp.weixin.qq.com/s/gUJkqVtObFi8Y4BgbR82GA
 https://mp.weixin.qq.com/s/dEdWz4bovmk65fwLknHBhg
 
 韩松毕业论文：面向深度学习的高效方法与硬件
-
-http://cs.stanford.edu/people/karpathy/convnetjs/demo/classify2d.html
-
-这是一个2层神经网络的可视化demo
-
-http://mp.weixin.qq.com/s/upblqKf0m_15o4L1fF0EEQ
-
-深度学习模型转换器
-
-https://mp.weixin.qq.com/s/JnGpVQDF95hHTirrZyJc_g
-
-一个降低深度学习时间，空间，经济成本的解决方案
-
-https://mp.weixin.qq.com/s/d-Rt3Bz4Qzf3qaoSxiTlGA
-
-计算机视觉怎么给图像分类？KNN、SVM、BP神经网络、CNN、迁移学习供你选
-
-https://www.oreilly.com/learning/caption-this-with-tensorflow
-
-图片字幕生成
-
-https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/content/
-
-某人写的AI心得
-
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（七）——GAN
+title:  深度学习（七）——GAN（1）
 category: theory 
 ---
 

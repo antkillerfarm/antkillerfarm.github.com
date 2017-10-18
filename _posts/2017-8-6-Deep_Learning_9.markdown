@@ -1,8 +1,46 @@
 ---
 layout: post
-title:  深度学习（九）——李飞飞, 花式卷积, 花式池化
+title:  深度学习（九）——fine-tuning, 李飞飞, 花式卷积
 category: theory 
 ---
+
+# fine-tuning
+
+fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
+
+举个例子，假设今天老板给你一个新的数据集，让你做一下图片分类，这个数据集是关于Flowers的。问题是，数据集中flower的类别很少，数据集中的数据也不多，你发现从零训练开始训练CNN的效果很差，很容易过拟合。怎么办呢，于是你想到了使用Transfer Learning，用别人已经训练好的Imagenet的模型来做。
+
+由于ImageNet数以百万计带标签的训练集数据，使得如CaffeNet之类的预训练的模型具有非常强大的泛化能力，这些预训练的模型的中间层包含非常多一般性的视觉元素，我们只需要对他的后几层进行微调，再应用到我们的数据上，通常就可以得到非常好的结果。最重要的是，**在目标任务上达到很高performance所需要的数据的量相对很少**。
+
+虽然从理论角度尚无法完全解释fine-tuning的原理，但是还是可以给出一些直观的解释。我们知道，CNN越靠近输入端，其抽取的图像特征越原始。比如最初的一层通常只能抽取一些线条之类的元素。越上层，其特征越抽象。
+
+而现实的图像无论多么复杂，总是由简单特征拼凑而成的。因此，无论最终的分类结果差异如何巨大，其底层的图像特征却几乎一致。
+
+![](/images/article/trans_learn.png)
+
+fine-tuning也是图像目标检测、语义分割的基础。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/22624331
+
+fine-tuning:利用已有模型训练其他数据集
+
+http://www.cnblogs.com/louyihang-loves-baiyan/p/5038758.html
+
+Caffe fine-tuning微调网络
+
+http://blog.csdn.net/sinat_26917383/article/details/54999868
+
+caffe中fine-tuning模型三重天（函数详解、框架简述）+微调技巧
+
+http://yongyuan.name/blog/layer-selection-and-finetune-for-cbir.html
+
+图像检索：layer选择与fine-tuning性能提升验证
+
+h1ttps://www.zhihu.com/question/49534423
+
+迁移学习与fine-tuning有什么区别？
 
 # 李飞飞
 
@@ -203,86 +241,4 @@ https://www.zhihu.com/question/56024942
 https://github.com/fchollet/keras/blob/master/keras/applications/xception.py
 
 >Francois Chollet，法国人。现为Google研究员。Keras的作者。
-
-## 参考
-
-https://github.com/vdumoulin/conv_arithmetic
-
-Convolution arithmetic
-
-http://deeplearning.net/software/theano_versions/dev/tutorial/conv_arithmetic.html
-
-Convolution arithmetic
-
-https://mp.weixin.qq.com/s/dR2nhGqpz7OdmxKPYSaaxw
-
-如何理解空洞卷积（dilated convolution）？
-
-https://mp.weixin.qq.com/s/CLFbhWMcat4rN8YS_7q25g
-
-这12张图生动的告诉你，深度学习中的卷积网络是怎么一回事？
-
-https://mp.weixin.qq.com/s/kJEeKzC9pC375EjIJpTuzg
-
-一文全解深度学习中的卷积
-
-http://mp.weixin.qq.com/s/dvuX3Ih_DZrv0kgqFn8-lg
-
-卷积神经网络结构变化——可变形卷积网络deformable convolutional networks
-
-http://cs.nyu.edu/~fergus/drafts/utexas2.pdf
-
-Deconvolutional Networks
-
-https://zhuanlan.zhihu.com/p/22245268
-
-CNN-反卷积
-
-http://buptldy.github.io/2016/10/29/2016-10-29-deconv/
-
-Transposed Convolution, Fractionally Strided Convolution or Deconvolution（中文blog）
-
-https://buptldy.github.io/2016/10/01/2016-10-01-im2col/
-
-Implementing convolution as a matrix multiplication（中文blog）
-
-https://mp.weixin.qq.com/s/iN2LDAQ2ee-rQnlD3N1yaw
-
-变形卷积核、可分离卷积？CNN中十大拍案叫绝的操作！
-
-http://www.msra.cn/zh-cn/news/features/deformable-convolutional-networks-20170609
-
-可变形卷积网络：计算机新“视”界
-
-https://mp.weixin.qq.com/s/ybI8kJPRn7sH-hJbc5uqnw
-
-CMU研究者探索新卷积方法：在实验中可媲美基准CNN
-
-https://mp.weixin.qq.com/s/qReN6z8s45870HSMCMNatw
-
-微软亚洲研究院：逐层集中Attention的卷积模型
-
-# 花式池化
-
-池化和卷积一样，都是信号采样的一种方式。
-
-## 普通池化
-
-池化的一般步骤是：选择区域P，令$$Y=f(P)$$。这里的f为池化函数。
-
-![](/images/article/max_pooling.png)
-
-上图是Max Pooling的示意图。除了max之外，常用的池化函数还有mean、min等。
-
-ICLR2013上，Zeiler提出了另一种pooling手段stochastic pooling。只需对Pooling区域中的元素按照其概率值大小随机选择，即元素值大的被选中的概率也大。而不像max-pooling那样，永远只取那个最大值元素。
-
-根据相关理论，特征提取的误差主要来自两个方面：
-
-（1）邻域大小受限造成的估计值方差增大；
-
-（2）卷积层参数误差造成估计均值的偏移。
-
-一般来说，mean-pooling能减小第一种误差，更多的保留图像的背景信息，max-pooling能减小第二种误差，更多的保留纹理信息。
-
-Stochastic-pooling则介于两者之间，通过对像素点按照数值大小赋予概率，再按照概率进行亚采样，在平均意义上，与mean-pooling近似，在局部意义上，则服从max-pooling的准则。
 

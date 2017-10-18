@@ -306,6 +306,10 @@ https://mp.weixin.qq.com/s/ZMqCwoV3CuDwGuD_rAIsbg
 
 什么是Bitmap算法？
 
+https://mp.weixin.qq.com/s/2xohw5r4cirbbL933EPK5A
+
+分布式服务框架设计要点
+
 # 知识图谱参考资源
 
 https://wenku.baidu.com/view/38ad3ef7e109581b6bd97f19227916888586b959.html

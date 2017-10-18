@@ -86,10 +86,6 @@ http://www.jianshu.com/p/43db6425ad33
 
 如何为聊天机器人设计数据通道
 
-https://mp.weixin.qq.com/s/H7m7lqWpK27pJp9obXxlIQ
-
-见微知著，从细节处提升词向量的表示能力
-
 https://baijia.baidu.com/s?id=1571333621049553
 
 对比神经机器翻译和统计机器翻译：NMT的六大挑战
@@ -125,10 +121,6 @@ https://mp.weixin.qq.com/s/uRR4Vh3PC8SFw-PD9FQLpw
 http://shiyanjun.cn/archives/548.html
 
 使用libsvm+tfidf实现文本分类
-
-http://licstar.net/archives/328
-
-词向量和语言模型
 
 http://www.toutiao.com/a6236100205026328834/
 
@@ -278,10 +270,6 @@ https://mp.weixin.qq.com/s/oMKhVtCTmQKLTmhMx008MA
 
 基于背景知识的对话模型
 
-https://mp.weixin.qq.com/s/eq1I92rjIAWEpYw-1fEHeQ
-
-从Facebook AI Research开源fastText谈起文本分类：词向量模性、深度表征和全连接
-
 https://mp.weixin.qq.com/s/PGj1IjLPz-RmTaLbcnYNCw
 
 自然语言处理领军人刘兵：没有终身学习，机器不可能智能
@@ -302,10 +290,6 @@ https://mp.weixin.qq.com/s/9uG8lqr2Kn0vzZKyjLHNGg
 
 从文本挖掘综述分类、聚类和信息提取等算法
 
-https://mp.weixin.qq.com/s/GYTxN5X7MnSQ4k5bD2l-PQ
-
-Salesforce的爱因斯坦AI最新NLP研究，通过情境化词向量从翻译中学习!
-
 https://mp.weixin.qq.com/s/kMQ7q4EyBQUH1DEEhQWdCQ
 
 Familia：开源的中文主题模型应用工具包
@@ -313,10 +297,6 @@ Familia：开源的中文主题模型应用工具包
 https://mp.weixin.qq.com/s/p8gEbamEbJBp_wzsy8_21A
 
 词义的动态变迁
-
-https://mp.weixin.qq.com/s/GUUkXrB1iyg4rQbBtICq6A
-
-通过NMT训练的通用语境词向量：NLP中的预训练模型？
 
 https://mp.weixin.qq.com/s/62b7kK0StmwTP_DGusE0MA
 
@@ -401,10 +381,6 @@ https://mp.weixin.qq.com/s/VPs6OB81K1H7_TMV9xLUVQ
 http://blog.csdn.net/xizero00/article/details/51182003
 
 论文阅读：End-To-End Memory Networks
-
-http://geek.csdn.net/news/detail/135736
-
-漫谈词向量之基于Softmax与Sampling的方法
 
 https://mp.weixin.qq.com/s/rF4zKCbj3Jh8dDR1239lpA
 

@@ -56,34 +56,28 @@ http://blog.csdn.net/dujian996099665/article/details/8886576
 
 opencv学习之（三）-LBP算法的研究及其实现
 
-# Fast Image Processing
+# DL参考资源
 
-![](/images/article/FIP.png)
+http://cs.stanford.edu/people/karpathy/convnetjs/demo/classify2d.html
 
-上图是照片界常用的几种修图方式之一。一般将这些图片风格转换的算法，称为图像处理算子（image processing operators）。如何加速image processing operators的计算，就成为了学界研究的课题之一。
+这是一个2层神经网络的可视化demo
 
-这个课题一般使用MIT-Adobe FiveK Dataset作为基准数据集。网址：
+http://mp.weixin.qq.com/s/upblqKf0m_15o4L1fF0EEQ
 
-http://groups.csail.mit.edu/graphics/fivek_dataset/
+深度学习模型转换器
 
-这个数据集包含了5K张原始照片，并雇用了5个专业修图师，对每张图片进行修图。
+https://mp.weixin.qq.com/s/JnGpVQDF95hHTirrZyJc_g
 
-本文提出的模型就是用来加速image processing operators计算的。它是Intel Lab的Qifeng Chen和Jia Xu于2017年提出的。
+一个降低深度学习时间，空间，经济成本的解决方案
 
-论文：
+https://mp.weixin.qq.com/s/d-Rt3Bz4Qzf3qaoSxiTlGA
 
-《Fast Image Processing with Fully-Convolutional Networks》
+计算机视觉怎么给图像分类？KNN、SVM、BP神经网络、CNN、迁移学习供你选
 
-代码：
+https://www.oreilly.com/learning/caption-this-with-tensorflow
 
-https://github.com/CQFIO/FastImageProcessing
+图片字幕生成
 
-Demo网站：
+https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/content/
 
-http://cqf.io/ImageProcessing/
-
-![](/images/article/MCA.png)
-
-上图是该模型的网络结构图。
-
-本文只使用了MIT-Adobe数据集中的原始图片，并使用了10种常用的算子对图片进行处理。
+某人写的AI心得

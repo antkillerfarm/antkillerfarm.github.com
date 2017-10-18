@@ -126,6 +126,34 @@ https://mp.weixin.qq.com/s/XMGZXAt_LUX5iTet7_SX4Q
 
 深度学习和自然语言处理：诠释词向量的魅力
 
+https://mp.weixin.qq.com/s/Rn_aJYozQ0f53Mjq4MKSwA
+
+哪种词向量模型更胜一筹？Word2Vec，WordRank or FastText?
+
+https://mp.weixin.qq.com/s/H7m7lqWpK27pJp9obXxlIQ
+
+见微知著，从细节处提升词向量的表示能力
+
+http://licstar.net/archives/328
+
+词向量和语言模型
+
+https://mp.weixin.qq.com/s/eq1I92rjIAWEpYw-1fEHeQ
+
+从Facebook AI Research开源fastText谈起文本分类：词向量模性、深度表征和全连接
+
+https://mp.weixin.qq.com/s/GYTxN5X7MnSQ4k5bD2l-PQ
+
+Salesforce的爱因斯坦AI最新NLP研究，通过情境化词向量从翻译中学习!
+
+https://mp.weixin.qq.com/s/GUUkXrB1iyg4rQbBtICq6A
+
+通过NMT训练的通用语境词向量：NLP中的预训练模型？
+
+http://geek.csdn.net/news/detail/135736
+
+漫谈词向量之基于Softmax与Sampling的方法
+
 # RNN
 
 ## RNN的基本结构
