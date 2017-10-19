@@ -16,9 +16,37 @@ http://incompleteideas.net/sutton/book/the-book-2nd.html
 
 >Andrew G. Barto，麻省大学阿姆赫斯特分校教授。Richard S. Sutton的导师。
 
+http://incompleteideas.net/sutton/609%20dropbox/slides%20(pdf%20and%20keynote)/
+
+Sutton的pdf和keynote
+
 http://web.stanford.edu/class/cs234/syllabus.html
 
 CS234: Reinforcement Learning
+
+http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html
+
+UCL Course on RL
+
+>David Silver，剑桥大学本科（1997年）+阿尔伯塔大学博士（2011年）。伦敦大学学院讲师。现为DeepMind研究员。
+
+https://github.com/aikorea/awesome-rl
+
+提供了RL方面的资源网页。aikorea还提供了同类的资源收集网页：awesome-rnn, awesome-deep-vision, awesome-random-forest。
+
+## 论文
+
+《A Brief Survey of Deep Reinforcement Learning》
+
+## blog
+
+https://zhuanlan.zhihu.com/sharerl
+
+强化学习知识大讲堂
+
+https://zhuanlan.zhihu.com/intelligentunit
+
+一个DL+RL的专栏
 
 ## 参考
 
@@ -137,6 +165,10 @@ All In!我学会了用强化学习打德州扑克
 https://mp.weixin.qq.com/s/xr-2cNoSYpCftLI3dV6zEw
 
 如何使用深度强化学习帮助自动驾驶汽车通过交叉路口？
+
+https://www.zhihu.com/question/49230922
+
+强化学习（reinforcement learning)有什么好的开源项目、网站、文章推荐一下？
 
 # NN的INT8计算
 

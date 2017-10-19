@@ -366,6 +366,18 @@ https://www.zhihu.com/question/66861459
 
 如何评价DeepMind发表在Nature上的AlphaGo Zero？
 
+http://www.alphago-games.com/
+
+AlphaGo的棋谱
+
+https://deepmind.com/blog/alphago-zero-learning-scratch/
+
+AlphaGo Zero官方声明
+
+https://zhuanlan.zhihu.com/mathNote
+
+某牛的专栏，主要讲自制AlphaGo
+
 ## Other
 
 https://mp.weixin.qq.com/s/PKqDlbKynnCLE6JAy0NuQQ
