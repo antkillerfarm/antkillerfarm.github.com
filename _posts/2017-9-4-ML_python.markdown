@@ -232,6 +232,10 @@ https://pan.baidu.com/s/1qYPUHNQ
 
 小抄合集
 
+https://mp.weixin.qq.com/s/8wI49YBAs7ckkYdc4B_WNQ
+
+14张思维导图读懂Python编程核心知识体系
+
 https://mp.weixin.qq.com/s/HKHLiCqEAtoCAqf4CHv86w
 
 python机器学习算法代码实现
@@ -372,5 +376,12 @@ https://mp.weixin.qq.com/s/U46HOaBP5ijghpc2myJCvA
 
 机器学习中，使用Scikit-Learn简单处理文本数据？
 
+https://mp.weixin.qq.com/s/HoMr52X9O4fMs2YjtH9oFg
+
+scikit-learn Adaboost类库的实战分析
+
+https://mp.weixin.qq.com/s/61oY3gLEOjQjCJgGkEcABw
+
+支持向量机分类实战
 
 

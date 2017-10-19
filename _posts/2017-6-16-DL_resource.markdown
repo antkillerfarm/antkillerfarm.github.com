@@ -108,9 +108,11 @@ http://shuokay.com/
 
 一个DL的blog
 
-## 文章
+http://blog.csdn.net/shuzfan/
 
-### 教程
+一个DL人脸检测的blog
+
+## 教程
 
 https://theneuralperspective.com/tag/tutorials/
 
@@ -242,7 +244,7 @@ https://mp.weixin.qq.com/s/xwYldlEjJ9Co9uo8o0mlKQ
 
 深度学习之DNN的多种正则化方式
 
-### 算法
+## 算法
 
 http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww
 
@@ -308,7 +310,7 @@ https://wenku.baidu.com/view/98590eedaeaad1f346933f88.html
 
 小波神经网络简介
 
-### 实战
+## 实战
 
 https://github.com/jinfagang/pytorch_name_net
 
@@ -422,7 +424,7 @@ https://mp.weixin.qq.com/s/dY5r_KJVkpipluo7ji9H6w
 
 如何用“摄像头秒解数独”
 
-### 量子计算 & 遗传算法
+## 量子计算 & 遗传算法
 
 https://www.zhihu.com/question/28171555
 
@@ -476,7 +478,7 @@ http://pytlab.org/2017/09/19/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95%E4%B8%AD%E5%87
 
 遗传算法中几种不同选择算子
 
-### 面试
+## 面试
 
 https://www.zhihu.com/question/41233373
 

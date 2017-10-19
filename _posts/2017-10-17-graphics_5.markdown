@@ -82,8 +82,52 @@ https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/content/
 
 某人写的AI心得
 
+https://mp.weixin.qq.com/s/JAVzy8gy7k4EesBBHvEZLg
+
+亚马逊用机器学习自动调优数据库管理系统
+
+https://mp.weixin.qq.com/s/1A6p672z4Yz__MF6TWORSw
+
+备战医疗大赛必看！
+
+https://mp.weixin.qq.com/s/U0K79ELLj4wsOR4sd5G4Vw
+
+Vicarious详解新型图式网络：赋予强化学习泛化能力
+
+https://mp.weixin.qq.com/s/gfuO7CwfFiNC-iqDquDKQQ
+
+五个案例，三大心得——带你进阶深度学习的实践应用之路
+
+http://mp.weixin.qq.com/s/6I0Z_yY7UT_7qOKOWcd7Mw
+
+李飞飞发表研究新成果：视觉推理的推断和执行程序！
+
+http://mp.weixin.qq.com/s/-Av3-ZNi6UGlKNv_jduAeQ
+
+微软新论文：如何利用深度特征流提高视频识别准确率？
+
+http://mp.weixin.qq.com/s/XH1dXWSPiQMAHYR0_-xylA
+
+精选深度学习在文本、视觉、语音等领域的论文集
+
+https://mp.weixin.qq.com/s/bGbslnuG80S6gPwD4FHuMg
+
+深度学习助力前端开发：自动生成GUI图代码
+
 https://mp.weixin.qq.com/s/Wa2om6y27aFCB9kGRwZqBA
 
 孙剑：如何在公司做好计算机视觉的研究
+
+https://mp.weixin.qq.com/s/GXeAG118a6Wwt8zE3LE-hQ
+
+Autodesk提出新算法：用「自动编码器网络」生成3D模型！
+
+https://mp.weixin.qq.com/s/gA_qtlZg8zCkLqndkb3YJw
+
+解读ICCV2017 12篇论文
+
+https://mp.weixin.qq.com/s/eIy73UmlsCs7n2fmiEmACw
+
+斯坦福论文提出MoleculeNet：分子机器学习新基准
 
 

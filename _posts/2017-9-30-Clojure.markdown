@@ -150,6 +150,18 @@ http://www.cnblogs.com/longdouhzt/archive/2012/05/19/2508844.html
 
 Python特殊语法：filter、map、reduce、lambda
 
+## 字符串格式化
+
+目前python的字符串格式化，有两种style：Old Style和New Style。两者的区别详见：
+
+https://pyformat.info/
+
+这里仅给出几个简单示例：
+
+Old Style：`'%s %s' % ('one', 'two')`
+
+New Style：`'{} {}'.format('one', 'two')`
+
 ## 时间、日期数据的格式处理。
 
 时间数据上的格式处理，主要指strftime和strptime函数。其中前者可将时间数据转换成指定格式的字符串，而后者则将字符串转换成时间数据。

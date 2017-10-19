@@ -64,6 +64,10 @@ https://mp.weixin.qq.com/s/qReN6z8s45870HSMCMNatw
 
 微软亚洲研究院：逐层集中Attention的卷积模型
 
+http://blog.csdn.net/shuzfan/article/details/77964370
+
+不规则卷积神经网络
+
 # 花式池化
 
 池化和卷积一样，都是信号采样的一种方式。

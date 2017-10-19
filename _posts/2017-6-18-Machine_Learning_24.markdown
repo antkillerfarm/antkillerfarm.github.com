@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十四）——Tri-training, Beam Search, NLP机器翻译常用评价度量, 数据不平衡问题, 强化学习
+title:  机器学习（二十四）——Tri-training, Beam Search, NLP机器翻译常用评价度量, 数据不平衡问题
 category: theory 
 ---
 
@@ -202,38 +202,15 @@ $$R=r_1+r_2+\dots+r_n$$
 
 $$R_t=r_t+r_{t+1}+\dots+r_n$$
 
+但是Environment往往是随机的，执行特定的动作不一定得到特定的状态，因此将来的奖励所占的权重要依次递减，因此使用discounted future reward代替：
+
+$$R_t=r_t+\gamma r_{t+1}+\gamma^2 r_{t+2}+\dots+\gamma^{n-t}r_n$$
+
+这里$$\gamma$$是0和1之间的折扣因子——越是未来的奖励，折扣越多，权重越小。而明显上式是个迭代过程，因此可以写作：
+
+$$R_t=r_t+\gamma(r_{t+1}+\gamma (r_{t+2}+\dots))=r_t+\gamma R_{t+1}$$
+
+即当前时刻的奖励等于当前时刻的即时奖励加上下一时刻的奖励乘上折扣因子$$\gamma$$。如果$$\gamma$$等于0，意味着只看当前奖励；如果$$\gamma$$等于1，意味着环境是确定的，相同的动作总会获得相同的奖励。因此实际中$$\gamma$$往往取类似0.9这样的值。因此我们的任务变成了找到一个策略，最大化将来的奖励R。
 
 
-参考：
 
-https://mp.weixin.qq.com/s/f6sq8cSaU1cuzt7jhsK8Ig
-
-强化学习（Reinforcement Learning）基础介绍
-
-https://mp.weixin.qq.com/s/TGN6Zhrea2LPxdkspVTlAw
-
-穆黎森：算法工程师入门——增强学习
-
-https://mp.weixin.qq.com/s/laKJ_jfNR5L1uMML9wkS1A
-
-强化学习（Reinforcement Learning）算法基础及分类
-
-https://mp.weixin.qq.com/s/Cvk_cePK9iQd8JIKKDDrmQ
-
-强化学习的核心基础概念及实现
-
-http://mp.weixin.qq.com/s/gHM7qh7UTKzatdg34cgfDQ
-
-强化学习全解
-
-# Q-learning
-
-参考：
-
-http://blog.csdn.net/itplus/article/details/9361915
-
-一个Q-learning算法的简明教程
-
-http://blog.csdn.net/young_gy/article/details/73485518
-
-强化学习之Q-learning简介

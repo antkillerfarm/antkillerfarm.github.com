@@ -138,6 +138,10 @@ https://mp.weixin.qq.com/s/qU6XD45RGeMI-T7GI0dg2Q
 
 OpenAI竞争性自我对抗训练：简单环境下获得复杂的智能体
 
+https://mp.weixin.qq.com/s/0OlKixcT20wao4xkWa6M5A
+
+超越蒙特卡洛树搜索：北大提出深度交替网络和长期评估围棋模型
+
 ## TPU & GPU
 
 https://zhuanlan.zhihu.com/p/25382177
@@ -330,43 +334,39 @@ https://mp.weixin.qq.com/s/qOjGrR59Mf0Mzgh4bpDhrA
 
 详解Horovod：Uber开源的TensorFlow分布式深度学习框架
 
+# AlphaGo
+
+樊麾讲解AlphaGo与李世石的五番棋：
+
+https://deepmind.com/research/alphago/alphago-games-simplified-chinese/
+
+论文：
+
+《Mastering the game of Go with deep neural networks and tree search》
+
+参考：
+
+https://mp.weixin.qq.com/s/Sfv-jzQAkN0PsZOGZUQhkQ
+
+AlphaGo Zero横空出世，DeepMind Nature论文解密不使用人类知识掌握围棋
+
+https://mp.weixin.qq.com/s/oAxouYX7-wDC5okbu--Wuw
+
+Nature重磅：人工智能从0到1, 无师自通完爆阿法狗100-0
+
+https://zhuanlan.zhihu.com/p/30262872
+
+关于AlphaGo Zero
+
+https://zhuanlan.zhihu.com/p/30263585
+
+DeepMind新一代围棋程序AlphaGo Zero再次登上Nature
+
+https://www.zhihu.com/question/66861459
+
+如何评价DeepMind发表在Nature上的AlphaGo Zero？
+
 ## Other
-
-https://mp.weixin.qq.com/s/JAVzy8gy7k4EesBBHvEZLg
-
-亚马逊用机器学习自动调优数据库管理系统
-
-https://mp.weixin.qq.com/s/1A6p672z4Yz__MF6TWORSw
-
-备战医疗大赛必看！
-
-https://mp.weixin.qq.com/s/0OlKixcT20wao4xkWa6M5A
-
-超越蒙特卡洛树搜索：北大提出深度交替网络和长期评估围棋模型
-
-https://mp.weixin.qq.com/s/U0K79ELLj4wsOR4sd5G4Vw
-
-Vicarious详解新型图式网络：赋予强化学习泛化能力
-
-https://mp.weixin.qq.com/s/gfuO7CwfFiNC-iqDquDKQQ
-
-五个案例，三大心得——带你进阶深度学习的实践应用之路
-
-http://mp.weixin.qq.com/s/6I0Z_yY7UT_7qOKOWcd7Mw
-
-李飞飞发表研究新成果：视觉推理的推断和执行程序！
-
-http://mp.weixin.qq.com/s/-Av3-ZNi6UGlKNv_jduAeQ
-
-微软新论文：如何利用深度特征流提高视频识别准确率？
-
-http://mp.weixin.qq.com/s/XH1dXWSPiQMAHYR0_-xylA
-
-精选深度学习在文本、视觉、语音等领域的论文集
-
-https://mp.weixin.qq.com/s/bGbslnuG80S6gPwD4FHuMg
-
-深度学习助力前端开发：自动生成GUI图代码
 
 https://mp.weixin.qq.com/s/PKqDlbKynnCLE6JAy0NuQQ
 

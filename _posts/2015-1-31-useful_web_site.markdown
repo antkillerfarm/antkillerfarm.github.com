@@ -374,4 +374,7 @@ https://mp.weixin.qq.com/s/qopknJ8l93aJ8iUGzsFhMQ
 
 以太坊是什么鬼？！媲美比特币的加密币大揭秘
 
+https://mp.weixin.qq.com/s/MorLGHh3KQOrj1GYLwIbtA
+
+比特币能致富？一个故事告诉你比特币的原理及运作机制
 
