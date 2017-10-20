@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  图像处理理论（五）——从BOW到SPM, ILSVRC 2010考古
+title:  图像处理理论（五）——从BOW到SPM, ILSVRC 2010考古, Python（三）
 category: theory 
 ---
 
@@ -60,78 +60,103 @@ https://mp.weixin.qq.com/s/iFlnZ8z5baUdWCZxIGkq5g
 
 机器学习实战——LBP特征提取
 
-# DL参考资源
+# python
 
-http://cs.stanford.edu/people/karpathy/convnetjs/demo/classify2d.html
+## python调用GTK函数的一般规则
 
-这是一个2层神经网络的可视化demo
+众所周知，GTK库是用C语言编写的，其相关的文档提供的也是C函数的接口，python接口的文档相对较少，获得也不太容易。因此有必要掌握一下这方面基本的命名规则。（这里只讲方法，对深层次的调用原理不做探究。）
 
-http://mp.weixin.qq.com/s/upblqKf0m_15o4L1fF0EEQ
+1）类初始化函数
 
-深度学习模型转换器
+C:`GtkWidget * gtk_button_new (void);`
 
-https://mp.weixin.qq.com/s/JnGpVQDF95hHTirrZyJc_g
+python:`button = Gtk.Button()`
 
-一个降低深度学习时间，空间，经济成本的解决方案
+这里除了把C函数式的写法，替换成python的类的写法之外，并无其他差异。
 
-https://mp.weixin.qq.com/s/d-Rt3Bz4Qzf3qaoSxiTlGA
+2）普通类成员函数
 
-计算机视觉怎么给图像分类？KNN、SVM、BP神经网络、CNN、迁移学习供你选
+C:`void gtk_container_add (GtkContainer *container, GtkWidget *widget);`
 
-https://www.oreilly.com/learning/caption-this-with-tensorflow
+python:`button.add(image)`
 
-图片字幕生成
+可以看出，C函数的第一个表示self类指针的参数被省略掉了。
 
-https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/content/
+3）回调函数
 
-某人写的AI心得
+这里以按钮的click事件回调为例：
 
-https://mp.weixin.qq.com/s/JAVzy8gy7k4EesBBHvEZLg
+C:`void user_function (GtkButton *button, gpointer user_data)`
 
-亚马逊用机器学习自动调优数据库管理系统
+python:
 
-https://mp.weixin.qq.com/s/1A6p672z4Yz__MF6TWORSw
+`button.connect("clicked", self.playToggled)`
 
-备战医疗大赛必看！
+`def playToggled(self, w):`
 
-https://mp.weixin.qq.com/s/U0K79ELLj4wsOR4sd5G4Vw
+这里的情况要复杂的多。首先在事件回调注册的时候，由于我们并没有给user_data赋值，因此照理说playToggled函数，只有button这一个参数。但实际传递给playToggled函数的有两个参数，self是一个用于占位的参数，w对应button，没有东西对应user_data。
 
-Vicarious详解新型图式网络：赋予强化学习泛化能力
+4）用于输出的参数
 
-https://mp.weixin.qq.com/s/gfuO7CwfFiNC-iqDquDKQQ
+C:`void gst_message_parse_error (GstMessage *message, GError **gerror, gchar **debug);`
 
-五个案例，三大心得——带你进阶深度学习的实践应用之路
+python:`err, debug = message.parse_error()`
 
-http://mp.weixin.qq.com/s/6I0Z_yY7UT_7qOKOWcd7Mw
+这个例子中的gerror和debug都是用于输出的参数。如果只想得到其一，还可用以下方法:
 
-李飞飞发表研究新成果：视觉推理的推断和执行程序！
+`debug = message.parse_error()[2]`
 
-http://mp.weixin.qq.com/s/-Av3-ZNi6UGlKNv_jduAeQ
+5）枚举类型
 
-微软新论文：如何利用深度特征流提高视频识别准确率？
+C:
 
-http://mp.weixin.qq.com/s/XH1dXWSPiQMAHYR0_-xylA
+{% highlight c %}
+enum GstSeekFlags
+{
+  GST_SEEK_FLAG_FLUSH,
+  ...
+}
+{% endhighlight %}
 
-精选深度学习在文本、视觉、语音等领域的论文集
+python:`Gst.SeekFlags.FLUSH`
 
-https://mp.weixin.qq.com/s/bGbslnuG80S6gPwD4FHuMg
+6）宏常量
 
-深度学习助力前端开发：自动生成GUI图代码
+C:`#define GST_CLOCK_TIME_NONE ((GstClockTime) -1)`
 
-https://mp.weixin.qq.com/s/Wa2om6y27aFCB9kGRwZqBA
+python:`Gst.CLOCK_TIME_NONE`
 
-孙剑：如何在公司做好计算机视觉的研究
+7）类型转换
 
-https://mp.weixin.qq.com/s/GXeAG118a6Wwt8zE3LE-hQ
+大多数情况下，类型转换自动完成，并无什么问题。这里只讨论特殊的情况。
 
-Autodesk提出新算法：用「自动编码器网络」生成3D模型！
+C:
 
-https://mp.weixin.qq.com/s/gA_qtlZg8zCkLqndkb3YJw
+{% highlight c %}
+gst_element_seek (pipeline, 1.0, GST_FORMAT_TIME, GST_SEEK_FLAG_FLUSH,
+                         GST_SEEK_TYPE_SET, time_nanoseconds,
+                         GST_SEEK_TYPE_NONE, GST_CLOCK_TIME_NONE))
+{% endhighlight %}
 
-解读ICCV2017 12篇论文
+python:
 
-https://mp.weixin.qq.com/s/eIy73UmlsCs7n2fmiEmACw
+{% highlight python %}
+self.player.seek(1.0, Gst.Format.TIME, Gst.SeekFlags.FLUSH, Gst.SeekType.SET,\
+                 time_nanoseconds, Gst.SeekType.NONE, Gst.CLOCK_TIME_NONE)
+{% endhighlight %}
 
-斯坦福论文提出MoleculeNet：分子机器学习新基准
+这里首先按照一般的方法，将C代码转化成python代码。但是运行之后，产生如下错误：
+
+`OverflowError: long too big to convert`
+
+究其原因，gst_element_seek的最后一个参数是uint64类型的。但python原生并不支持该类型，而是将之转换成int类型（实际上是int64类型），这样的话，GST_CLOCK_TIME_NONE的值显然超出了int64所能表示的范围。
+
+解决的办法是使用ctypes库，将
+
+`Gst.CLOCK_TIME_NONE`
+
+改为
+
+`c_long(Gst.CLOCK_TIME_NONE).value`
 
 

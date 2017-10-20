@@ -190,6 +190,32 @@ $$z=g(Wu+b)\rightarrow z=g(BN(Wu+b))=g(BN(Wu))$$
 
 BN的误差反向算法相对复杂，这里不再赘述。
 
+# Instance Normalization
+
+Instance Normalization主要用于CV领域。
+
+论文：
+
+《Instance Normalization: The Missing Ingredient for Fast Stylization》
+
+首先我们列出对图片Batch Normalization的公式：
+
+$$y_{tijk}=\frac{x_{tijk}-\mu_i}{\sqrt{\sigma_i^2+\epsilon}}, \mu_i=\frac{1}{HWT}\sum_{t=1}^T \sum_{l=1}^W \sum_{m=1}^Hx_{tilm}, \sigma_i^2=\frac{1}{HWT}\sum_{t=1}^T \sum_{l=1}^W \sum_{m=1}^H(x_{tilm}-m\mu_i)^2$$
+
+其中，T为图片数量，i为通道，j、k为图片的宽、高。
+
+Instance Normalization的公式：
+
+$$y_{tijk}=\frac{x_{tijk}-\mu_{ti}}{\sqrt{\sigma_{ti}^2+\epsilon}}, \mu_{ti}=\frac{1}{HW} \sum_{l=1}^W \sum_{m=1}^Hx_{tilm}, \sigma_{ti}^2=\frac{1}{HW} \sum_{l=1}^W \sum_{m=1}^H(x_{tilm}-m\mu_{ti})^2$$
+
+从中可以看出Instance Normalization实际上就是对一张图片的一个通道内的值进行归一化，因此又叫做对比度归一化（contrast normalization）。
+
+参考：
+
+http://www.jianshu.com/p/d77b6273b990
+
+论文中文版
+
 # Softmax详解
 
 首先给出Softmax function的定义:
@@ -234,31 +260,4 @@ http://shuokay.com/2016/07/20/softmax-loss/
 
 Softmax输出及其反向传播推导
 
-# 目标检测
-
-## 概述
-
-object detection是计算机视觉的一个重要的分支。类似的分支还有目标分割、目标识别和目标跟踪。
-
-以下摘录自Sensetime CTO曹旭东的解读：
-
-传统方法使用滑动窗口的框架，把一张图分解成几百万个不同位置不同尺度的子窗口，针对每一个窗口使用分类器判断是否包含目标物体。传统方法针对不同的类别的物体，一般会设计不同的特征和分类算法，比如人脸检测的经典算法是**Harr特征+Adaboosting分类器**；行人检测的经典算法是**HOG(histogram of gradients)+Support Vector Machine**；一般性物体的检测的话是**HOG特征+DPM(deformable part model)的算法**。
-
-基于深度学习的物体检测的经典算法是RCNN系列：RCNN，fast RCNN(Ross Girshick)，faster RCNN(少卿、凯明、孙剑、Ross)。这三个工作的核心思想是分别是：使用更好的CNN模型判断候选区域的类别；复用预计算的sharing feature map加快模型训练和物体检测的速度；进一步使用sharing feature map大幅提高计算候选区域的速度。其实基于深度学习的物体检测也可以看成对海量滑动窗口分类，只是用全卷积的方式。
-
-RCNN系列算法还是将物体检测分为两个步骤。现在还有一些工作是端到端(end-to-end)的物体检测，比如说YOLO(You Only Look Once: Unified, Real-Time Object Detection)和SSD(SSD: Single Shot MultiBox Detector)这样的算法。这两个算法号称和faster RCNN精度相似但速度更快。物体检测正负样本极端非均衡，two-stage cascade可以更好的应对非均衡。端到端学习是否可以超越faster RCNN还需要更多研究实验。
-
-## 进化史
-
-DPM(2007)->RCNN(2014)->Fast RCNN->Faster RCNN
-
-![](/images/article/rcnn_2.png)
-
-![](/images/article/rcnn_4.jpg)
-
-参考：
-
-http://blog.csdn.net/ttransposition/article/details/12966521
-
-DPM(Deformable Parts Model)--原理
 

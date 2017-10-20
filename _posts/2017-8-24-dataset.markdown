@@ -176,6 +176,17 @@ https://mp.weixin.qq.com/s/Aatv0Q-Mfkkb75h_ZF8AIA
 
 100大机器学习数据集，总有一款适合你！
 
+https://mp.weixin.qq.com/s/BCgVMYe011O-Jse4ZFBbxg
+
+谷歌发布人类动作识别数据集AVA，精确标注多人动作
+
+https://mp.weixin.qq.com/s/37cUxUzcSZ_OgfuN_yTmlA
+
+阅读理解与问答数据集
+
+
+
+
 ## 大数据平台参考资源
 
 http://v.kuaidadi.com/

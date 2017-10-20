@@ -378,62 +378,30 @@ https://zhuanlan.zhihu.com/mathNote
 
 某牛的专栏，主要讲自制AlphaGo
 
-## Other
+## 面试
 
-https://mp.weixin.qq.com/s/PKqDlbKynnCLE6JAy0NuQQ
+https://www.zhihu.com/question/41233373
 
-谷歌深度学习公开课任务 1: notMNIST
+如果你是面试官，你怎么去判断一个面试者的深度学习水平？
 
-https://mp.weixin.qq.com/s/PF6-txnq3SV258EfNVufSw
+https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
 
-深度学习与XGBoost在小数据集上的测评
+20万、50万、100万的算法工程师，到底有什么区别？
 
-https://mp.weixin.qq.com/s/yQG0983RjQHIkt9oBlkDqQ
+https://www.zhihu.com/question/56676679/answer/151505274
 
-瞎谈CNN：通过优化求解输入图像
+机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
 
-https://mp.weixin.qq.com/s/sCxyk8WEb8W2-mq-tTQs6A
+https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
 
-LeCun台大演讲
+面试官是如何看出你机器学习水平的？
 
-https://mp.weixin.qq.com/s/SPdkJTYU80bioNdZrBj4cw
+https://mp.weixin.qq.com/s?__biz=MzI3NTA0MzM1OQ==&mid=2651615534&idx=1&sn=00ecd7dc1d8472c070e720a1b63f04c4
 
-卷积优化-Cpython(Cuda)施工和分析
+我如何考察面试者的机器学习水平
 
-https://mp.weixin.qq.com/s/qWJarPrjOrwxSX77xQ9rCw
+https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
 
-面向卷积神经网络的卷积核冗余消除策略
-
-https://mp.weixin.qq.com/s/pnCdKcdRCxhFEcXyWb9xlQ
-
-深度学习助力实现智能行为分析和事件识别
-
-https://mp.weixin.qq.com/s/M120ZRfLoT9abWZOmgj-TQ
-
-面部识别技术能用来识别鲸鱼？
-
-https://mp.weixin.qq.com/s/4JFzgFTvAvBs74V7AQUCrQ
-
-让照片走两步：骨骼框架辅助的人物动作生成模型
-
-https://mp.weixin.qq.com/s/WMakTEN68KPi7X9kMQetiw
-
-OpenAI:3段视频演示无人驾驶目标检测强大的对抗性样本！
-
-https://mp.weixin.qq.com/s/_dDLbPwpgoOdLc83_JQEuA
-
-CVPR现场会议合集及CCCV内容跟踪
-
-https://mp.weixin.qq.com/s/W4zwKqkVQN4v-IKzGrkudg
-
-通过传递不变性实现自监督视觉表征学习
-
-http://mp.weixin.qq.com/s/LAgDobWyK0SOH08GCLXG7A
-
-减少30%流量，增加清晰度：MIT提出人工智能视频缓存新算法
-
-http://mp.weixin.qq.com/s/SNfSY4CKhX1RDWd4itPx2Q
-
-马里兰大学论文：训练深度神经网络中的一致性难题
+谷歌等巨头机器学习面试题：从逻辑回归到智力测验
 
 

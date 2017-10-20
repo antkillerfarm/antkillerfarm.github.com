@@ -12,7 +12,7 @@ category: theory
 
 **Policy**就是我们的算法追求的目标，可以看做一个函数，在输入state的时候，能够返回此时应该执行的action或者action的概率分布。
 
-**Value**，价值函数，表示在输入state，action的时候，能够返回在 state下，执行这个action能得到的Discounted future reward的（期望）值。
+**Value**，价值函数，表示在输入state，action的时候，能够返回在state下，执行这个action能得到的Discounted future reward的（期望）值。
 
 **Transition model**是说环境本身的结构与特性：当在state执行action的时候，系统会进入的下一个state，也包括可能收到的reward。
 
@@ -26,13 +26,17 @@ category: theory
 
 因此，增强学习的方法，大体可以分为三类：
 
-**Value-based RL，值方法。**显式地构造一个model来表示值函数Q，找到最优策略对应的Q 函数，自然就找到了最优策略。
+**Value-based RL，值方法。**显式地构造一个model来表示值函数Q，找到最优策略对应的Q函数，自然就找到了最优策略。
 
 **Policy-based RL，策略方法。**显式地构造一个model来表示策略函数,然后去寻找能最大化discounted future reward。
 
 **Model-based RL，基于环境模型的方法。**先得到关于environment transition的model，然后再根据这个model去寻求最佳的策略。
 
 以上三种方法并不是一个严格的划分，很多RL算法同时具有一种以上的特性。
+
+## Partial observability
+
+部分可见的情况下，agent state $$\neq$$ environment state，这时一般叫做partially observable Markov decision process(POMDP)。
 
 ## 参考
 
@@ -58,11 +62,17 @@ http://mp.weixin.qq.com/s/gHM7qh7UTKzatdg34cgfDQ
 
 # Q-learning
 
+Q-learning是强化学习中很重要的算法，也是最早被引入DL领域的强化学习算法，对它的研究催生了Deep Q-learning Networks。
+
+下面用一个例子来讲述Q-learning算法。
+
 ![](/images/article/q_learning.gif)
 
 
 
 ![](/images/article/q_learning_1.gif)
+
+
 
 参考：
 
@@ -73,3 +83,5 @@ http://blog.csdn.net/itplus/article/details/9361915
 http://blog.csdn.net/young_gy/article/details/73485518
 
 强化学习之Q-learning简介
+
+

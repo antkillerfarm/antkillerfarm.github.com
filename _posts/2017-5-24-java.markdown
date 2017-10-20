@@ -242,6 +242,28 @@ Apache JMeter是Apache组织开发的基于Java的压力测试工具。用于对
 
 http://jmeter.apache.org/
 
+## boilerpipe
+
+各个网站的HTML版面样式多种多样，如何从中提取正文，是一个很有挑战性的课题。
+
+传统的html解析或者正则式，虽能完成任务，但需要给每个网站单独提供一个模板，通用性不佳，而且一旦网站改版，相应的解析模板也需要修改，这导致后期的维护成本也很高。
+
+boilerpipe是一个用于提取HTML正文的库。它采用机器学习的思想，通过提取DOM树的特征，学习得到正文的内容。
+
+官网：
+
+https://github.com/kohlschutter/boilerpipe
+
+参考：
+
+http://xiaoxinzhou.blog.163.com/blog/static/207045386201332381015146/
+
+Boilerpipe简介
+
+http://baojie.org/blog/2014/06/23/python-text-extraction/
+
+总结Python正文提取的工具包
+
 # Javascript在客户端的使用
 
 Javascript在服务器前端的成功，促使人们思考其在客户端的使用。

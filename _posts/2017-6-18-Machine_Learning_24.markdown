@@ -154,6 +154,10 @@ http://blog.csdn.net/u013709270/article/details/72967462
 
 ## 概述
 
+强化学习是一个多学科交叉的领域。它的主要组成以及和其他学科的关系如下图所示：
+
+![](/images/article/RL_2.png)
+
 ![](/images/article/RL.png)
 
 上图是Reinforcement Learning和其他类型算法的关系图。
