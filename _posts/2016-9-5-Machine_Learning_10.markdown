@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（十）——因子分析（1）
-category: theory 
+category: ML 
 ---
 
 ## EM算法的一般形式（续）

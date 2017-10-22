@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  深度学习（十二）——SPPNet, Fast R-CNN
-category: theory 
+category: DL 
 ---
 
 # RCNN（续）

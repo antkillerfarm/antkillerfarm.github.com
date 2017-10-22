@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  大杂烩, 硬盘安装Linux
-category: technology 
+category: linux 
 ---
 
 # SQL与数据库

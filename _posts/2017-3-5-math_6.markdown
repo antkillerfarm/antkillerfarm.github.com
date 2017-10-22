@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  数学狂想曲（六）——闵可夫斯基距离, 马氏距离, Gabriel's Horn, 函数连续性
-category: theory 
+category: math 
 ---
 
 # 自相关&互相关&卷积（续）

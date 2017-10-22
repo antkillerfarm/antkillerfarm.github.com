@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  有用的网址集合
-category: technology 
+category: resource 
 ---
 
 # 有用的网址集合
@@ -237,6 +237,10 @@ https://mp.weixin.qq.com/s/EcAAc_ypajEKXUQbOoYAMA
 https://mp.weixin.qq.com/s/5rNpp2cYZhcOKZCiy4LkMQ
 
 SAR成像原理及图像鉴赏
+
+https://mp.weixin.qq.com/s/typXBdisUI-d_viVInx9XQ
+
+解析DXO图像质量评价体系
 
 https://mp.weixin.qq.com/s/vOJPxzH_1SUyXzNeE85zHQ
 

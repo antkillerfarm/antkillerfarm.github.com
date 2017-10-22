@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Clojure, Spring, Python（二）
-category: technology 
+category: language 
 ---
 
 # Clojure

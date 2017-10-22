@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  数学狂想曲（五）——概率分布（2）, 自相关&互相关&卷积
-category: theory 
+category: math 
 ---
 
 ## 玻尔兹曼分布的推导（续）

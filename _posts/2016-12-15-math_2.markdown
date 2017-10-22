@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  数学狂想曲（二）——拉普拉斯变换, 随机变量的特征函数, 双曲函数和悬链线, 概率分布（1）
-category: theory 
+category: math 
 ---
 
 # 拉普拉斯变换

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（十三）——机器学习中的矩阵方法（2）QR分解, 特征值和奇异值
-category: theory 
+category: ML 
 ---
 
 ## 矩阵的特征值和特征向量

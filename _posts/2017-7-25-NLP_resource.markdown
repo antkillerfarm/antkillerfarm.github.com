@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  NLP参考资源
-category: technology 
+category: resource 
 ---
 
 # NLP参考资源

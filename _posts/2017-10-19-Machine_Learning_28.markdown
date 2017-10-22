@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（二十八）——机器学习语录, Keras, LightGBM
-category: theory 
+category: ML 
 ---
 
 # 机器学习语录

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  linux内核研究（一）
-category: technology 
+category: linux 
 ---
 
 # 驱动开发

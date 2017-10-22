@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  C/C++编程心得（一）
-category: technology 
+category: language 
 ---
 
 # 参考资料

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  云计算论文集, Spark, 数据描述语言
-category: technology 
+category: AI 
 ---
 
 # 云计算论文集

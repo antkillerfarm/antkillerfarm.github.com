@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  DL参考资源（四）
-category: technology 
+category: resource 
 ---
 
 # DL参考资源
@@ -213,4 +213,8 @@ http://mp.weixin.qq.com/s/LAgDobWyK0SOH08GCLXG7A
 http://mp.weixin.qq.com/s/SNfSY4CKhX1RDWd4itPx2Q
 
 马里兰大学论文：训练深度神经网络中的一致性难题
+
+https://mp.weixin.qq.com/s/caXnseARUwLIXdsZ7BXOUw
+
+用于金融时序预测的神经网络：可改善移动平均线经典策略
 

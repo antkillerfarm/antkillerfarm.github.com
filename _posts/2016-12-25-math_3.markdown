@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  数学狂想曲（三）——统计杂谈, PID算法, 20世纪10大算法, 矩阵&向量的积
-category: theory 
+category: math 
 ---
 
 # 统计杂谈

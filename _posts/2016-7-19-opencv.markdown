@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  OpenCV, 名校机器学习相关课程
-category: technology 
+category: resource 
 ---
 
 # OpenCV
@@ -180,6 +180,10 @@ https://mp.weixin.qq.com/s/c6qUyFDaLMyvphVwNO_klQ
 
 Python OpenCV像素操作
 
+https://mp.weixin.qq.com/s/Jf0gbbh0YQTlkeaPjAlnJg
+
+无需复杂深度学习算法，基于计算机视觉使用Python和OpenCV计算道路交通
+
 ## 论文
 
 《Moving Gradients: A Path-Based Method for Plausible Image Interpolation》：视频帧插值算法
@@ -198,7 +202,7 @@ Intel针对自身的硬件加速，推出了IPP（Integrated Performance Primiti
 
 ### 神经网络
 
-OpenCV提供了对于神经网络的支持。然而由于DL框架的专业性，OpenCV提供的支持更多的局限于模型的推断，而不是训练。
+OpenCV提供了对于神经网络的支持。然而由于DL框架的专业性，OpenCV提供的支持更多的局限于模型的推断（也就是加载已经训练好的模型），而不是训练。
 
 # GNU Octave
 

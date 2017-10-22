@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  深度学习（七）——GAN（1）
-category: theory 
+category: DL 
 ---
 
 # CNN进化史

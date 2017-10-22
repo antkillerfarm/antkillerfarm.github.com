@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  OpenWrt编程篇
-category: technology 
+category: linux 
 ---
 
 # 编译OpenWrt模块--Hello World

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  天池大赛, Storm
-category: technology 
+category: AI 
 ---
 
 # 简介

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  深度学习（四）——RNN
-category: theory 
+category: DL 
 ---
 
 # 词向量（续）

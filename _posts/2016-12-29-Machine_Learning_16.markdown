@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（十六）——loss function比较, 独立成分分析
-category: theory 
+category: ML 
 ---
 
 ## PCA算法推导

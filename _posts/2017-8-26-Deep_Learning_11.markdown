@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  深度学习（十一）——目标检测, RCNN
-category: theory 
+category: DL 
 ---
 
 # 目标检测

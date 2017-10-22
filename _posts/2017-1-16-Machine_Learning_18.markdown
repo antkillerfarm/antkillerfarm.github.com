@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（十八）——推荐系统进阶, 决策树
-category: theory 
+category: ML 
 ---
 
 ## LDA（续）

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Caffe, 推荐系统的工程细节
-category: technology 
+category: AI 
 ---
 
 # Caffe

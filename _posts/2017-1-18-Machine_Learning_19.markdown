@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（十九）——关联规则挖掘
-category: theory 
+category: ML 
 ---
 
 ## XGBoost（续）

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  深度学习（十）——花式池化, Batch Normalization, Softmax详解
-category: theory 
+category: DL 
 ---
 
 # 花式卷积（续）

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  数学狂想曲（四）——软件滤波算法, 玻尔兹曼分布
-category: theory 
+category: math 
 ---
 
 ## Hadamard product（续）

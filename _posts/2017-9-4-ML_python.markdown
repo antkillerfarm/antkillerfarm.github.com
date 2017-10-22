@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Machine Learning之Python篇
-category: technology 
+category: AI 
 ---
 
 # Machine Learning之Python篇
@@ -372,6 +372,10 @@ https://mp.weixin.qq.com/s/XpX9TPgv4a_uKAKiy8W4fg
 
 Logistic回归实战篇之预测病马死亡率（二）
 
+https://mp.weixin.qq.com/s/0i1jKgaRu2pLPAXAvoH6qA
+
+Logistic回归实战篇之预测病马死亡率（三）
+
 https://mp.weixin.qq.com/s/U46HOaBP5ijghpc2myJCvA
 
 机器学习中，使用Scikit-Learn简单处理文本数据？
@@ -384,4 +388,6 @@ https://mp.weixin.qq.com/s/61oY3gLEOjQjCJgGkEcABw
 
 支持向量机分类实战
 
+https://mp.weixin.qq.com/s?__biz=MzIxNjA2ODUzNg==&mid=2651435914&idx=1&sn=b0b6f1cda08798dc35bf0930dc9d9096
 
+盘膝而坐--跟你聊聊APP市场的数据分析

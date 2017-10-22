@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  linux内核研究（二）
-category: technology 
+category: linux 
 ---
 
 

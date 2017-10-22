@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  NoSQL, GStreamer（三）, Velocity, ActiveMQ, 12306
-category: technology 
+category: AI 
 ---
 
 # NoSQL

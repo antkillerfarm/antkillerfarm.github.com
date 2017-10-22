@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（二十）——PageRank算法, loss function详解
-category: theory 
+category: ML 
 ---
 
 ## 关联规则评价（续）

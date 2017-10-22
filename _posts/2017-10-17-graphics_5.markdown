@@ -1,8 +1,20 @@
 ---
 layout: post
 title:  图像处理理论（五）——从BOW到SPM, ILSVRC 2010考古, Python（三）
-category: theory 
+category: graphics 
 ---
+
+# SIFT（续）
+
+## 总结
+
+SIFT大概算是最复杂的算子了，上文仅是概括描述，省略了大量公式及其推导，但仍然花了很大篇幅才讲完。可以想见，设计一个比SIFT还好的算子会有多么困难，人工设计特征走到这里，差不多也就到头了，后面的天下是属于DL的。
+
+## 参考
+
+http://blog.csdn.net/zddblog/article/details/7521424
+
+SIFT算法详解
 
 # 从BOW到SPM
 
@@ -158,5 +170,11 @@ self.player.seek(1.0, Gst.Format.TIME, Gst.SeekFlags.FLUSH, Gst.SeekType.SET,\
 改为
 
 `c_long(Gst.CLOCK_TIME_NONE).value`
+
+## 参考
+
+https://mp.weixin.qq.com/s/jHnkmpnOz1LApVCLJL-8Tw
+
+如何写出优雅又地道的Python代码？
 
 

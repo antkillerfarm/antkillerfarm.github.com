@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  深度学习（九）——fine-tuning, 李飞飞, 花式卷积
-category: theory 
+category: DL 
 ---
 
 # fine-tuning

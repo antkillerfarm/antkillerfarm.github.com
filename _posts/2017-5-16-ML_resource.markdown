@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  ML参考资源, PMML
-category: technology 
+category: resource 
 ---
 
 # ML参考资源

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  深度学习（十四）——SSD, YOLOv2
-category: theory 
+category: DL 
 ---
 
 # SSD

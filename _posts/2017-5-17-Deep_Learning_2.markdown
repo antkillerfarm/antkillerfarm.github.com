@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  深度学习（二）——Dropout, 深度学习常用术语解释, Neural Network Zoo, CNN
-category: theory 
+category: DL 
 ---
 
 # 神经元激活函数

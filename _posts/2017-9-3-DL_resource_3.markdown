@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  DL参考资源（三）
-category: technology 
+category: resource 
 ---
 
 # DL参考资源

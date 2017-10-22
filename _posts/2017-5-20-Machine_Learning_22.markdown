@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（二十二）——AutoML, KNN, Optimizer
-category: theory 
+category: ML 
 ---
 
 # AutoML

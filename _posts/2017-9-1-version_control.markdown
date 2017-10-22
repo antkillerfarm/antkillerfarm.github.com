@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  版本管理工具的前世今生, TensorFlow（二）
-category: technology 
+category: AI 
 ---
 
 # 版本管理工具的前世今生
@@ -353,6 +353,9 @@ https://mp.weixin.qq.com/s/qXMRHxDDRa-_rJZMhXWB4w
 
 详解TensorFlow的新seq2seq模块及其用法
 
+https://mp.weixin.qq.com/s/YdcIDXadEnDsyfc6Iu1gGw
+
+手把手教你用TensorFlow训练模型
 
 
 

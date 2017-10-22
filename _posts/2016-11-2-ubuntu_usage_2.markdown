@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Ubuntu使用技巧（二）, CentOS
-category: technology 
+category: linux 
 ---
 
 # Ubuntu 16.04使用手记

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（十七）——隐式狄利克雷划分
-category: theory 
+category: ML 
 ---
 
 ## ICA算法（续）

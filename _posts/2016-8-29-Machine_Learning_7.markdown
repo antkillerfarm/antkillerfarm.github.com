@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（七）——学习理论, 规则化和模型选择
-category: theory 
+category: ML 
 ---
 
 ## 学习理论的预备知识

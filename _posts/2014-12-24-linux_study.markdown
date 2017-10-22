@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  linux学习心得（一）
-category: technology 
+category: linux 
 ---
 
 # GUI设计工具

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  深度学习（三）——Autoencoder, 词向量
-category: theory 
+category: DL 
 ---
 
 # CNN

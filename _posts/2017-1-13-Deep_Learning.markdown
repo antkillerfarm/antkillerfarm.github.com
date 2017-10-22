@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  深度学习（一）——MP神经元模型, BP算法, 神经元激活函数
-category: theory 
+category: DL 
 ---
 
 # 前言

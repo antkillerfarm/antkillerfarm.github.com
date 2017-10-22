@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  浮点运算和代码优化, 音频常识, 并行计算
-category: technology 
+category: AI 
 ---
 
 # 浮点运算和代码优化

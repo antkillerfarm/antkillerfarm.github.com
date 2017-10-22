@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（二十三）——单分类SVM&多分类SVM, 时间序列分析, 推荐算法中的常用排序算法
-category: theory 
+category: ML 
 ---
 
 # 单分类SVM&多分类SVM

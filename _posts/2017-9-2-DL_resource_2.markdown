@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  DL参考资源（二）
-category: technology 
+category: resource 
 ---
 
 # DL参考资源
 
 ## 推荐系统
 
-http://mp.weixin.qq.com/s/Aw2INWuwPlXmkPEY0CZf6g
+https://zhuanlan.zhihu.com/p/26237106
 
 深度学习在推荐算法上的应用进展
 
@@ -256,6 +256,14 @@ https://mp.weixin.qq.com/s/PMnNay4CRgVghA4fU9oLqg
 
 牛津大学研发类脑光子芯片，运算速度超人脑1000倍
 
+https://mp.weixin.qq.com/s/HeoVktVtvOK4VgocyxuCXg
+
+摩尔定律已死？GPU会取代CPU的位置吗？
+
+https://mp.weixin.qq.com/s/e333KjLavEvvpNIL3u1Y4Q
+
+NovuMind异构智能核心技术引领智联网
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293
@@ -377,6 +385,14 @@ AlphaGo Zero官方声明
 https://zhuanlan.zhihu.com/mathNote
 
 某牛的专栏，主要讲自制AlphaGo
+
+https://mp.weixin.qq.com/s/DC9QqHdWT0xFnowEBuJDbw
+
+自动化所解读“深度强化学习”：从AlphaGo到AlphaGoZero
+
+https://mp.weixin.qq.com/s/uZtaxRwROCqYmL2k6Muxaw
+
+从阿尔法狗元(AlphaGo Zero)的诞生看终极算法的可能性
 
 ## 面试
 

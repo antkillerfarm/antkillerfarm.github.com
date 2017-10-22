@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Android Studio, Java（一）
-category: technology 
+category: language 
 ---
 
 ## Android Studio配置

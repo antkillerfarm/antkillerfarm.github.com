@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  TensorFlow（一）
-category: technology 
+category: AI 
 ---
 
 # TensorFlow

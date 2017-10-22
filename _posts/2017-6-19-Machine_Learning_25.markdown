@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（二十五）——强化学习
-category: theory 
+category: ML 
 ---
 
 # 强化学习（续）

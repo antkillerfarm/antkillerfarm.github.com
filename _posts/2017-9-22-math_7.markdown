@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  数学狂想曲（七）——垃圾筐
-category: theory 
+category: math 
 ---
 
 # 函数连续性

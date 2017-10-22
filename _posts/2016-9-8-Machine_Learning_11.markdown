@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（十一）——因子分析（2）
-category: theory 
+category: ML 
 ---
 
 ## 边缘和条件高斯分布

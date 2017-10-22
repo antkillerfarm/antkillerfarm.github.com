@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（二十七）——概率图模型, 机器学习的算法体系&相关术语表
-category: theory 
+category: ML 
 ---
 
 # 概率图模型

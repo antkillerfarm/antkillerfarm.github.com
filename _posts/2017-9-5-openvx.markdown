@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  OpenVX, NVIDIA
-category: technology 
+category: AI 
 ---
 
 # OpenVX

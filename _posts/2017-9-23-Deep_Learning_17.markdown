@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  深度学习（十七）——视频目标分割, Fast Image Processing, OpenPose, Mask R-CNN
-category: theory 
+category: DL 
 ---
 
 # Ultra Deep Network（续）

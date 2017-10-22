@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  知名数据集, 大数据平台参考资源, 知识图谱参考资源
-category: technology 
+category: resource 
 ---
 
 # 知名数据集
@@ -320,6 +320,10 @@ https://mp.weixin.qq.com/s/ZMqCwoV3CuDwGuD_rAIsbg
 https://mp.weixin.qq.com/s/2xohw5r4cirbbL933EPK5A
 
 分布式服务框架设计要点
+
+https://mp.weixin.qq.com/s/ACQVjdpMDrd7wh_pMLWScw
+
+分布式服务框架设计要点（续）
 
 # 知识图谱参考资源
 

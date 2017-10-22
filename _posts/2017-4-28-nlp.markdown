@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  NLP
-category: technology 
+category: AI 
 ---
 
 # NLP
@@ -134,6 +134,12 @@ http://www.nltk.org/
 参考：
 
 http://www.cnblogs.com/baiboy/p/nltk3.html
+
+Python NLTK走进大秦帝国
+
+https://mp.weixin.qq.com/s/LKwvTob2fqsAATtH8IIKoQ
+
+分分钟学懂机器学习如何净化处理文本！
 
 ### OpenNLP
 

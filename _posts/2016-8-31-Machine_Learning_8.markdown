@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（八）——在线学习
-category: theory 
+category: ML 
 ---
 
 ## 交叉验证（续）

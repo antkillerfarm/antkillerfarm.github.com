@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  小众语言集中营, R
-category: technology 
+category: language 
 ---
 
 # 小众语言集中营

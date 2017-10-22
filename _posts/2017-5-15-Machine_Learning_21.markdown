@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（二十一）——EMD, LSA, HMM
-category: theory 
+category: ML 
 ---
 
 # P-R、ROC和AUC

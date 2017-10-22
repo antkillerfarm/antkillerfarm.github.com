@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  深度学习（十五）——语义分割
-category: theory 
+category: DL 
 ---
 
 # YOLOv2（续）

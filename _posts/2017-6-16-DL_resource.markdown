@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  DL参考资源（一）
-category: technology 
+category: resource 
 ---
 
 # DL参考资源
@@ -111,6 +111,10 @@ http://shuokay.com/
 http://blog.csdn.net/shuzfan/
 
 一个DL人脸检测的blog
+
+https://mp.weixin.qq.com/s/0u4eFeMbbsSgVPVKHbAK7g
+
+深度学习每日摘要迄今所有文章汇总，其中包含《漫谈RNN》和《漫谈深度强化学习》两个专辑
 
 ## 教程
 

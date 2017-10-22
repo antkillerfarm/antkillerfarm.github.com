@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Elasticsearch（二）, WebService
-category: technology 
+category: AI 
 ---
 
 # Elasticsearch

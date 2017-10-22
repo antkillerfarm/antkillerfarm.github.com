@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  IT杂谈, Groovy, C/C++编程心得（二）, scrapy
-category: technology 
+category: language 
 ---
 
 # IT杂谈

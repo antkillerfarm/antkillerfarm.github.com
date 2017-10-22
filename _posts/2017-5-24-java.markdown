@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Java（二）, Machine Learning之Java篇, 运维工具集, Javascript在客户端的使用
-category: technology 
+category: language 
 ---
 
 # Java各集合类的比较 

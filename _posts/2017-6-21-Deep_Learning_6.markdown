@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  深度学习（六）——Attention, seq2seq, DMN, CNN进化史
-category: theory 
+category: DL 
 ---
 
 # Attention

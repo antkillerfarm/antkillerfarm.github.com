@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Ubuntu使用技巧（一）
-category: technology 
+category: linux 
 ---
 
 # 在Ubuntu上安装VMWare tools

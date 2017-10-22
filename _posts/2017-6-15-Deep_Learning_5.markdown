@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  深度学习（五）——LSTM, 神经元激活函数进阶, DRN, Bi-directional RNN
-category: theory 
+category: DL 
 ---
 
 # LSTM
@@ -217,6 +217,10 @@ https://mp.weixin.qq.com/s/7DgiXCNBS5vb07WIKTFYRQ
 http://www.cnblogs.com/ymjyqsx/p/6294021.html
 
 PReLU与ReLU
+
+https://mp.weixin.qq.com/s/JticD0itOWH7Aq7ye1yzvg
+
+谷歌大脑提出新型激活函数Swish惹争议：可直接替换并优于ReLU？
 
 # Deep Residual Network
 

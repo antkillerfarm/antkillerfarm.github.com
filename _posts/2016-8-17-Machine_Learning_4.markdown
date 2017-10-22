@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（四）——SVM（2）
-category: theory 
+category: ML 
 ---
 
 ## 函数边距和几何边距（续）

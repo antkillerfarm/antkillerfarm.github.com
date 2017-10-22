@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Qt, Python（一）
-category: technology 
+category: language 
 ---
 
 # Qt主循环

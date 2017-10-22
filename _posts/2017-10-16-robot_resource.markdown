@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器人参考资源
-category: technology 
+category: resource 
 ---
 
 # 机器人参考资源

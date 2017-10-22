@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（二十四）——Tri-training, Beam Search, NLP机器翻译常用评价度量, 数据不平衡问题
-category: theory 
+category: ML 
 ---
 
 # Tri-training（续）
@@ -215,6 +215,5 @@ $$R_t=r_t+\gamma r_{t+1}+\gamma^2 r_{t+2}+\dots+\gamma^{n-t}r_n$$
 $$R_t=r_t+\gamma(r_{t+1}+\gamma (r_{t+2}+\dots))=r_t+\gamma R_{t+1}$$
 
 即当前时刻的奖励等于当前时刻的即时奖励加上下一时刻的奖励乘上折扣因子$$\gamma$$。如果$$\gamma$$等于0，意味着只看当前奖励；如果$$\gamma$$等于1，意味着环境是确定的，相同的动作总会获得相同的奖励。因此实际中$$\gamma$$往往取类似0.9这样的值。因此我们的任务变成了找到一个策略，最大化将来的奖励R。
-
 
 

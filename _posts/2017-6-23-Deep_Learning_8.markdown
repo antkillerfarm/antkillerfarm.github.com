@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  深度学习（八）——GAN（2）
-category: theory 
+category: DL 
 ---
 
 # GAN（续）
@@ -308,5 +308,9 @@ GAN眼中的图像翻译
 http://blog.csdn.net/amds123/article/details/70199708
 
 生成对抗网络GAN最近在NLP领域有哪些应用？
+
+https://mp.weixin.qq.com/s/uUSq3irEIcBM35JCYGDPfw
+
+生成对抗网络综述：从架构到训练技巧，看这篇论文就够了
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  深度学习（十六）——FCN, SegNet, DeconvNet, DeepLab, ENet, GCN, Ultra Deep Network
-category: theory 
+category: DL 
 ---
 
 # FCN

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（五）——SVM（3）
-category: theory 
+category: ML 
 ---
 
 ## 核函数（续）

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  深度学习（十三）——Faster R-CNN, YOLO
-category: theory 
+category: DL 
 ---
 
 # Faster R-CNN

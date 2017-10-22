@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Elasticsearch（一）
-category: technology 
+category: AI 
 ---
 
 # Elasticsearch

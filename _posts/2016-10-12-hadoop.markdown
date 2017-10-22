@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Hadoop, Hbase
-category: technology 
+title:  Hadoop, Hbase, Kubernetes
+category: AI 
 ---
 
 # Hadoop
@@ -323,4 +323,18 @@ https://jersey.java.net/
 示例：
 
 https://github.com/feuyeux/jax-rs2-guide-II
+
+# Kubernetes
+
+Kubernetes是Google开源的容器集群管理系统，基于Docker构建一个容器的调度服务，提供资源调度、均衡容灾、服务注册、动态扩缩容等功能套件。
+
+官网：
+
+https://kubernetes.io/
+
+参考：
+
+http://violetgo.com/blogs/2015/10/14/k8s.html
+
+docker学习笔记(k8s)
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  数学狂想曲（一）——搞笑图片的数学原理, 欧拉公式, 傅里叶变换
-category: theory 
+category: math 
 ---
 
 # 搞笑图片的数学原理

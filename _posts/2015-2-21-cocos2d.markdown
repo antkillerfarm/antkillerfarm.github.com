@@ -325,6 +325,8 @@ $$
 
 # Blog维护日志
 
+2017.10.22 文章分为Language、Linux、Technology、Essay、Resource、Graphics、AI、ML、Math、DL十类。可命名为v3.5。
+
 2017.10.18 文章数达到150篇。
 
 2017.5.17 修改标题的css。可命名为v3.0。

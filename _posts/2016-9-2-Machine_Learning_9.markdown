@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（九）——K-Means算法, 高斯混合模型和EM算法
-category: theory 
+category: ML 
 ---
 
 # 在线学习（续）

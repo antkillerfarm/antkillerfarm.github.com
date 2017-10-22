@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（二）——分类与逻辑回归, 广义线性模型
-category: theory 
+category: ML 
 ---
 
 # 分类与逻辑回归

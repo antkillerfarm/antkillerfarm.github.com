@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  OpenWrt配置篇
-category: technology 
+category: linux 
 ---
 
 # OpenWrt编译

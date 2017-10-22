@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（六）——SVM（4）
-category: theory 
+category: ML 
 ---
 
 ## 序列最小优化方法（续）

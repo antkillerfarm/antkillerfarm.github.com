@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（一）——线性回归
-category: theory 
+category: ML 
 ---
 
 # 序

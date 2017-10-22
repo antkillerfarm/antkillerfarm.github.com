@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Emacs, Vi, Logo
-category: technology 
+category: language 
 ---
 
 # emacs学习心得

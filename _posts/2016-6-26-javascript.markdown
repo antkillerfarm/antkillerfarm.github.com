@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Javascript
-category: technology 
+category: language 
 ---
 
 # Javascript

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（十五）——协同过滤的ALS算法（2）, 主成分分析
-category: theory 
+category: ML 
 ---
 
 ### Kendall秩相关系数（Kendall rank correlation coefficient）

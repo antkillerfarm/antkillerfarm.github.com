@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  机器学习（二十六）——Probabilistic Robotics
-category: theory 
+category: ML 
 ---
 
 # Probabilistic Robotics

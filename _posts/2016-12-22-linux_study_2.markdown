@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  linux学习心得（二）, Fedora
-category: technology 
+category: linux 
 ---
 
 # 查看内存使用情况
