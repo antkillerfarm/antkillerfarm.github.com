@@ -369,6 +369,22 @@ http://www.cnblogs.com/codemind/p/smart_spider_parser.html
 
 爬虫数据采集技术趋势－智能化解析
 
+http://www.gooseeker.com/
+
+一个基于FireFox的网络爬虫。
+
+https://mp.weixin.qq.com/s/0yDokR2dYzetUy4NI9edSQ
+
+那些你不知道的爬虫反爬虫套路
+
+https://mp.weixin.qq.com/s/yR_wENRSbxvfrcYr9O9BuQ
+
+23个Python爬虫开源项目代码：爬取微信、淘宝、豆瓣、知乎、微博等
+
+https://mp.weixin.qq.com/s/38ofY693bXwFWIMNqYx4-A
+
+常用的 Python 爬虫技巧总结！
+
 ## 自然语言理解
 
 Natural language understanding(NLU)属于NLP的一个分支，属于人工智能的一个部分，用来解决机器理解人类语言的问题，属于人工智能的核心难题。

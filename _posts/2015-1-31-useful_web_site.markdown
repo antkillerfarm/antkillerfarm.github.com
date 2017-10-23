@@ -84,10 +84,6 @@ https://www.tulingss.com/
 
 一个技术类的搜索引擎。
 
-http://www.gooseeker.com/
-
-一个基于FireFox的网络爬虫。
-
 https://coderpad.io/
 
 这个网站比较有意思，可以在线编程写代码，适用于公司远程面试程序员。
@@ -142,10 +138,6 @@ http://www.jiqizhixin.com/
 
 机器之心，一家AI方面的传媒
 
-https://mp.weixin.qq.com/s/0yDokR2dYzetUy4NI9edSQ
-
-那些你不知道的爬虫反爬虫套路
-
 http://blog.csdn.net/tangxiaoyin/article/details/73274955
 
 一文理清散乱的物联网里开发者必须关注的技术！
@@ -186,10 +178,6 @@ http://blog.csdn.net/u013709270/article/details/53470428
 
 跳跃表的原理及实现
 
-https://mp.weixin.qq.com/s/gyuKlDwlIqaZmC3w-r8oqg
-
-手机相机如何排名
-
 https://mp.weixin.qq.com/s/-2kGkJzjay2WJzIpMs2Adw
 
 IEEE盘点27款震撼世界的芯片
@@ -197,14 +185,6 @@ IEEE盘点27款震撼世界的芯片
 https://mp.weixin.qq.com/s/5KA7jtlRmnXxijGQhU1k4A
 
 DeepMind哈萨比斯狂推的神经科学，入门需要看什么书？
-
-http://tieba.baidu.com/p/2155772860
-
-GPU和Shader技术的基础知识
-
-http://www.cnblogs.com/geniusalex/archive/2008/12/26/1941766.html
-
-CPU GPU设计工作原理
 
 https://mp.weixin.qq.com/s/WZyuTtEfaTFLnCfvhOrp7g
 
@@ -230,25 +210,9 @@ https://mp.weixin.qq.com/s/4lZ7My6cs4-VJQ1qGhQxZg
 
 AliSQL X-Cluste：基于X-Paxos的高性能强一致MySQL数据库
 
-https://mp.weixin.qq.com/s/EcAAc_ypajEKXUQbOoYAMA
-
-如何选择IR filter
-
-https://mp.weixin.qq.com/s/5rNpp2cYZhcOKZCiy4LkMQ
-
-SAR成像原理及图像鉴赏
-
-https://mp.weixin.qq.com/s/typXBdisUI-d_viVInx9XQ
-
-解析DXO图像质量评价体系
-
 https://mp.weixin.qq.com/s/vOJPxzH_1SUyXzNeE85zHQ
 
 编译器入门：没有siri的那些年，我们如何实现人机对话？
-
-https://mp.weixin.qq.com/s/yR_wENRSbxvfrcYr9O9BuQ
-
-23个Python爬虫开源项目代码：爬取微信、淘宝、豆瓣、知乎、微博等
 
 https://mp.weixin.qq.com/s/OtVRL37CNt_d5yEJPzzBzg
 
@@ -274,10 +238,6 @@ https://www.zhihu.com/question/30022694/answer/224543003
 
 田渊栋：作为入行数年的专业科研工作者，你每周看几篇paper？
 
-https://mp.weixin.qq.com/s/T4XULnykHANEetmDIhZdaw
-
-mobile camera sensor技术方向选择的经验与教训
-
 https://mp.weixin.qq.com/s/T7bVFQqzTbZJ7GuQDiNwoA
 
 人工智能在iOS开发上的应用和机会
@@ -298,10 +258,6 @@ http://mp.weixin.qq.com/s/aftxoxvzefZtzbGK3XrmuA
 
 李沐：博士这五年
 
-https://mp.weixin.qq.com/s/1IHHo4sV79sXdtXNzKNhMA
-
-计算摄影--google相机的王者之道
-
 https://mp.weixin.qq.com/s/tsidF_I5-QfaKUlX6Smtsg
 
 这有300+门刚刚开课的编程计算机科学免费课程大集合
@@ -310,10 +266,6 @@ http://chrome.360.cn/test/html5/index.html
 
 一个用于检测浏览器对html 5支持情况的网页
 
-https://mp.weixin.qq.com/s/lVS3CgZGItUkWG-OtolbSA
-
-数字成像书籍推荐与资料分享
-
 https://mp.weixin.qq.com/s/h7HVyGbmtLmNVJp4p0rCRQ
 
 字符识别(OCR)相关工具/库/教材/论文等资源整理
@@ -321,10 +273,6 @@ https://mp.weixin.qq.com/s/h7HVyGbmtLmNVJp4p0rCRQ
 https://mp.weixin.qq.com/s/h-vgHkzLjh9AAa6Z0lZqlg
 
 基于物理渲染(PBR)的车漆技术
-
-https://mp.weixin.qq.com/s/od9uDZdRU4QaBKPHb0tLag
-
-cmos sensor基础
 
 https://www.codewar.cn/
 
@@ -381,4 +329,43 @@ https://mp.weixin.qq.com/s/qopknJ8l93aJ8iUGzsFhMQ
 https://mp.weixin.qq.com/s/MorLGHh3KQOrj1GYLwIbtA
 
 比特币能致富？一个故事告诉你比特币的原理及运作机制
+
+## 数字成像
+
+https://mp.weixin.qq.com/s/od9uDZdRU4QaBKPHb0tLag
+
+cmos sensor基础
+
+https://mp.weixin.qq.com/s/lVS3CgZGItUkWG-OtolbSA
+
+数字成像书籍推荐与资料分享
+
+https://mp.weixin.qq.com/s/1IHHo4sV79sXdtXNzKNhMA
+
+计算摄影--google相机的王者之道
+
+https://mp.weixin.qq.com/s/T4XULnykHANEetmDIhZdaw
+
+mobile camera sensor技术方向选择的经验与教训
+
+https://mp.weixin.qq.com/s/EcAAc_ypajEKXUQbOoYAMA
+
+如何选择IR filter
+
+https://mp.weixin.qq.com/s/5rNpp2cYZhcOKZCiy4LkMQ
+
+SAR成像原理及图像鉴赏
+
+https://mp.weixin.qq.com/s/typXBdisUI-d_viVInx9XQ
+
+解析DXO图像质量评价体系
+
+https://mp.weixin.qq.com/s/t-Mzx0IEdZG7_TmMpT_cBA
+
+小谈CMOS Sensor设计之FSI和BSI
+
+https://mp.weixin.qq.com/s/gyuKlDwlIqaZmC3w-r8oqg
+
+手机相机如何排名
+
 

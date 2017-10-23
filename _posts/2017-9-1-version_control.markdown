@@ -357,5 +357,8 @@ https://mp.weixin.qq.com/s/YdcIDXadEnDsyfc6Iu1gGw
 
 手把手教你用TensorFlow训练模型
 
+https://mp.weixin.qq.com/s/Off0pgaRNyik2nvjHaQQkw
+
+在TensorFlow中对比两大生成模型：VAE与GAN
 
 

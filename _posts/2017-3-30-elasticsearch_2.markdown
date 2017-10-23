@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Elasticsearch（二）, WebService
+title:  Elasticsearch（二）, WebService, scrapy
 category: AI 
 ---
 
@@ -279,5 +279,37 @@ https://my.oschina.net/fuckmylife0/blog/325432
 ## jaxws-demo-client
 
 jaxws-demo-client就是具体的客户端实现了，可以看出相比于上一步的桩代码，这里的代码文件，数量上要少得多。
+
+# scrapy
+
+scrapy是一个Python写的网页抓取分析工具。网页抓取分析的学名叫做“Web scraping”，可在wiki上获得更多的相关信息。
+
+官网：
+
+https://scrapy.org/
+
+安装：
+
+`sudo apt install python-scrapy`
+
+`scrapy crawl csdn`
+
+参考：
+
+https://segmentfault.com/a/1190000000583419
+
+一个中文简易教程。
+
+https://github.com/scrapy/dirbot
+
+官方例程。
+
+http://www.cnblogs.com/fengzheng/p/4974509.html
+
+另一个中文简易教程。
+
+https://mp.weixin.qq.com/s/nIcUBS0lRrOwVUHoWmKecw
+
+爬虫系列之使用scrapy框架
 
 

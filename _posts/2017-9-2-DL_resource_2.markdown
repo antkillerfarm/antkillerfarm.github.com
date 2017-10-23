@@ -264,6 +264,10 @@ https://mp.weixin.qq.com/s/e333KjLavEvvpNIL3u1Y4Q
 
 NovuMind异构智能核心技术引领智联网
 
+https://mp.weixin.qq.com/s/fSSyOs4-NXbPTbDjpfJBNQ
+
+Google IPU：互联网巨头纷纷进军芯片行业是为何？
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293

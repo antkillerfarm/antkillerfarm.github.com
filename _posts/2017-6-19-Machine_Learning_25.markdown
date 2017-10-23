@@ -34,6 +34,8 @@ category: ML
 
 以上三种方法并不是一个严格的划分，很多RL算法同时具有一种以上的特性。
 
+![](/images/article/RL_3.png)
+
 ## Partial observability
 
 部分可见的情况下，agent state $$\neq$$ environment state，这时一般叫做partially observable Markov decision process(POMDP)。

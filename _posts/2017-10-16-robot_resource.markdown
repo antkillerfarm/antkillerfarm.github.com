@@ -242,5 +242,33 @@ https://mp.weixin.qq.com/s/Cq7ivDYurS3CidvoemFfqA
 
 Twitter是怎么做情感分析的？长文解读！
 
+https://zhuanlan.zhihu.com/p/30268946
 
+从CNN视角看在自然语言处理上的应用
+
+https://mp.weixin.qq.com/s/EO51mtEf6TVHGHYbZBAdZw
+
+情感回复系统Babbling
+
+# ML参考资源
+
+http://kexue.fm/archives/4638/
+
+训练集、验证集和测试集的意义
+
+https://mp.weixin.qq.com/s/y5TCYmnJ3ssA8AI9voaRqw
+
+机器学习新手工程师常犯的6大错误
+
+https://mp.weixin.qq.com/s/izOnp5SQGBKXG9qy1sA2mA
+
+AI Alphas(A股版)量化投资策略框架！
+
+https://mp.weixin.qq.com/s/YtRt-JTrR6XyVYo-i7RXTw
+
+数学家破解婚恋网站配对程序，90天找到灵魂伴侣
+
+https://mp.weixin.qq.com/s/Rj-ObD-eM5zEfs5fkWamGQ
+
+三大特征选择策略，有效提升你的机器学习水准
 

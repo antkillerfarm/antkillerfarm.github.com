@@ -181,6 +181,10 @@ http://blog.csdn.net/lizhengnanhua/article/details/9061755
 
 Apriori算法详解之：一、相关概念和核心步骤
 
+https://mp.weixin.qq.com/s/W1Bu_I3p2DO_sT2Nl0582w
+
+Apriori算法原理总结
+
 ## FP-growth算法
 
 Aprori算法利用频繁集的两个特性，过滤了很多无关的集合，效率提高不少，但是我们发现Apriori算法是一个候选消除算法，每一次消除都需要扫描一次所有数据记录，造成整个算法在面临大数据集时显得无能为力。

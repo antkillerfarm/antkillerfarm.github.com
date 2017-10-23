@@ -228,4 +228,13 @@ http://blog.csdn.net/xsc_c/article/category/2186063
 
 某人的并行计算专栏
 
+http://tieba.baidu.com/p/2155772860
+
+GPU和Shader技术的基础知识
+
+http://www.cnblogs.com/geniusalex/archive/2008/12/26/1941766.html
+
+CPU GPU设计工作原理
+
+
 

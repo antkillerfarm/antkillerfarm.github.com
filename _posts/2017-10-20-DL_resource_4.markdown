@@ -218,3 +218,7 @@ https://mp.weixin.qq.com/s/caXnseARUwLIXdsZ7BXOUw
 
 用于金融时序预测的神经网络：可改善移动平均线经典策略
 
+https://mp.weixin.qq.com/s/Vjbf_UWatV0s3lJ0u9xj0g
+
+清华马少平教授：强图灵测试与弱图灵测试
+

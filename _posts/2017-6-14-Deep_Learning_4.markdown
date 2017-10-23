@@ -154,6 +154,10 @@ http://geek.csdn.net/news/detail/135736
 
 漫谈词向量之基于Softmax与Sampling的方法
 
+https://mp.weixin.qq.com/s/nLFRJO2QEG_kAmeRYUdT3g
+
+十分钟带你看遍词向量模型
+
 # RNN
 
 ## RNN的基本结构
