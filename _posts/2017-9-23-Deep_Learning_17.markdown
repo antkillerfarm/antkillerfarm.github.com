@@ -88,7 +88,6 @@ ResNets、HighwayNets、DenseNets：用 TensorFlow 实现超深度神经网络
 
 半监督：在输入中（只）给出视频第一帧的正确分割掩膜，然后在之后的每一连续帧中分割标注的目标。
 
-
 参考：
 
 http://mp.weixin.qq.com/s/pGrzmq5aGoLb2uiJRYAXVw

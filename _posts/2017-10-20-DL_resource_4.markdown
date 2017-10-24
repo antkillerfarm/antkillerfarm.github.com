@@ -226,5 +226,6 @@ https://mp.weixin.qq.com/s/HN-kAtltn7hkuUlpzmDDFA
 
 TensorFlow Lattice：先前知识推动灵活性提升
 
+https://zhuanlan.zhihu.com/p/30265894
 
-
+自监督学习近期进展

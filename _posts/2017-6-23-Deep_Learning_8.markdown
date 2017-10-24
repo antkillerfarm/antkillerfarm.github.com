@@ -313,4 +313,9 @@ https://mp.weixin.qq.com/s/uUSq3irEIcBM35JCYGDPfw
 
 生成对抗网络综述：从架构到训练技巧，看这篇论文就够了
 
+https://mp.weixin.qq.com/s/nuT6Glyx0-tU7WJyoPji9w
+
+GANs正在多个层面有所突破
+
+
 

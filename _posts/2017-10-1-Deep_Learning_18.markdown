@@ -46,6 +46,20 @@ http://cvlab.hanyang.ac.kr/tracker_benchmark/
 
 这篇论文总结了2006年以前的目标跟踪算法。
 
+## VOT
+
+VOT竞赛数据集是另一个常用数据集。官网：
+
+http://votchallenge.net/challenges.html
+
+OTB包括25%的灰度序列，但VOT都是彩色序列，这也是造成很多颜色特征算法性能差异的原因。
+
+## 目标跟踪的难点
+
+![](/images/article/tracker_hard.png)
+
+![](/images/article/tracker_hard_2.png)
+
 ## 参考
 
 https://www.zhihu.com/question/26493945
