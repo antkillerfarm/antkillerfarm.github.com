@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ML参考资源, PMML
+title:  ML参考资源（一）, PMML
 category: resource 
 ---
 

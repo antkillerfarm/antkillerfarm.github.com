@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NLP参考资源
+title:  NLP参考资源（一）
 category: resource 
 ---
 

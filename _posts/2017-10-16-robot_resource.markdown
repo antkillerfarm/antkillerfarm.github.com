@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器人参考资源
+title:  机器人参考资源, NLP参考资源（二）, ML参考资源（二）
 category: resource 
 ---
 
@@ -271,4 +271,11 @@ https://mp.weixin.qq.com/s/YtRt-JTrR6XyVYo-i7RXTw
 https://mp.weixin.qq.com/s/Rj-ObD-eM5zEfs5fkWamGQ
 
 三大特征选择策略，有效提升你的机器学习水准
+
+https://mp.weixin.qq.com/s/JF23e8-XbkpPxLi6kTxfNA
+
+一文搞懂Hungarian Algorithm匈牙利算法
+
+
+
 

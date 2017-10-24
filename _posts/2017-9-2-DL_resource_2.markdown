@@ -142,6 +142,10 @@ https://mp.weixin.qq.com/s/0OlKixcT20wao4xkWa6M5A
 
 超越蒙特卡洛树搜索：北大提出深度交替网络和长期评估围棋模型
 
+https://mp.weixin.qq.com/s/2b82VzQ2dJF9kWg-FfMelQ
+
+人工智能在《LOL&王者荣耀》游戏中的角色
+
 ## TPU & GPU
 
 https://zhuanlan.zhihu.com/p/25382177
