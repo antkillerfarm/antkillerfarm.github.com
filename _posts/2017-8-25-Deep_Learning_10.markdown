@@ -100,8 +100,6 @@ Stochastic-pooling则介于两者之间，通过对像素点按照数值大小�
 
 比如，AlphaGo采用CNN识别棋局，但对棋局来说，下采样显然是没有什么物理意义的，因此，**AlphaGo的CNN是没有Pooling的**。
 
-除此之外，还有ROI Pooling操作。（参见《深度学习（十）》）
-
 ## 全局平均池化
 
 Global Average Pooling是另一类池化操作，一般用于替换FullConnection层。

@@ -88,11 +88,11 @@ Q-learning是强化学习中很重要的算法，也是最早被引入DL领域�
 
 ![](/images/article/q_learning.gif)
 
-
+上图中有5个房间，编号为0～4，将户外定义为编号5，房间之间通过门相连，则房间的联通关系可抽象为下图：
 
 ![](/images/article/q_learning_1.gif)
 
-
+![](/images/article/q_learning_2.gif)
 
 参考：
 

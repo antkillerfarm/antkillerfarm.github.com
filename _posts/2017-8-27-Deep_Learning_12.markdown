@@ -212,6 +212,8 @@ SPP将图像pooling成多个固定尺度，而RoI只将图像pooling到单个固
 
 而ROI Pooling中，为了将ROI区域pooling到单个固定的目标尺度，我们需要根据ROI区域和目标尺度的大小，动态计算pooling区域的大小。
 
+ROI Pooling有两个输入：feature map和ROI区域。Pooling方式一般为Max Pooling。Pooling的kernel形状可以不为正方形。
+
 ## Bounding-box Regression
 
 从Fast R-CNN的结构图可以看出，与一般的CNN不同，它在FC之后，实际上有两个输出层：第一个是针对每个ROI区域的分类概率预测（上图中的Linear+softmax），第二个则是针对每个ROI区域坐标的偏移优化（上图中的Linear）。
