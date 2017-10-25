@@ -402,6 +402,14 @@ https://mp.weixin.qq.com/s/uZtaxRwROCqYmL2k6Muxaw
 
 从阿尔法狗元(AlphaGo Zero)的诞生看终极算法的可能性
 
+https://mp.weixin.qq.com/s/i5OmLu8aNbypiTUmP4teeQ
+
+刘遥行：深入浅出看懂AlphaGo Zero
+
+https://mp.weixin.qq.com/s/aBrwbB_DOGTen-6XL7LGFQ
+
+邓侃：白话蒙特卡洛树搜索和ResNet
+
 ## 面试
 
 https://www.zhihu.com/question/41233373

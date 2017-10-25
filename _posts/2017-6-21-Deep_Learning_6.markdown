@@ -1,8 +1,40 @@
 ---
 layout: post
-title:  深度学习（六）——Attention, seq2seq, DMN, CNN进化史
+title:  深度学习（六）——Bi-directional RNN, Attention, seq2seq, DMN, CNN进化史
 category: DL 
 ---
+
+# Bi-directional RNN
+
+众所周知，RNN在处理长距离依赖关系时会出现问题。LSTM虽然改进了一些，但也只能缓解问题，而不能解决该问题。
+
+研究人员发现将原文倒序（将其倒序输入编码器）产生了显著改善的结果，因为从解码器到编码器对应部分的路径被缩短了。同样，两次输入同一个序列似乎也有助于网络更好地记忆。
+
+基于这样的实验结果，1997年Mike Schuster提出了Bi-directional RNN模型。
+
+>注：Mike Schuster，杜伊斯堡大学硕士（1993）+奈良科技大学博士。语音识别专家，尤其是日语、韩语方面。Google研究员。
+
+论文：
+
+《Bidirectional Recurrent Neural Networks》
+
+下图是Bi-directional RNN的结构示意图：
+
+![](/images/article/Bi_directional_RNN.png)
+
+从图中可以看出，Bi-directional RNN有两个隐层，分别处理前向和后向的时序信息。
+
+除了原始的Bi-directional RNN之外，后来还出现了Deep Bi-directional RNN。
+
+![](/images/article/Deep_Bi_RNN.png)
+
+上图是包含3个隐层的Deep Bi-directional RNN。
+
+参见：
+
+https://mp.weixin.qq.com/s/_CENjzEK1kjsFpvX0H5gpQ
+
+结合堆叠与深度转换的新型神经翻译架构：爱丁堡大学提出BiDeep RNN
 
 # Attention
 
@@ -231,33 +263,5 @@ AlexNet作为第一个现代意义上的CNN，它的意义主要包括：
 5.当然最应该感谢的是李飞飞团队搞出来的标注数据集合ImageNet。
 
 >注：ILSVRC（Large Scale Visual Recognition Challenge）大赛，在2016年以前，一直是CV界的顶级赛事。但随着技术的成熟，目前的科研重点已经从物体识别转移到了物体理解领域。2017年将是该赛事的最后一届。WebVision有望接替该赛事，成为下一个目标。
-
-## VGG
-
-Visual Geometry Group是牛津大学的一个科研团队。他们推出的一系列深度模型，被称作VGG模型。
-
-代码：
-
-http://www.robots.ox.ac.uk/~vgg/research/very_deep/
-
-VGG的结构图如下：
-
-![](/images/article/vgg.png)
-
-该系列包括A/A-LRN/B/C/D/E等6个不同的型号。其中的D/E，根据其神经网络的层数，也被称为VGG16/VGG19。
-
-从原理角度，VGG相比AlexNet并没有太多的改进。其最主要的意义就是实践了“**神经网络越深越好**”的理念。也是自那时起，神经网络逐渐有了“深度学习”这个别名。
-
-## GoogleNet
-
-GoogleNet的进化道路和VGG有所不同。VGG实际上就是“大力出奇迹”的暴力模型，其他地方不足称道。
-
-而GoogleNet不仅继承了VGG“越深越好”的理念，对于网络结构本身也作了大胆的创新。可以对比的是，AlexNet有60M个参数，而GoogleNet只有4M个参数。
-
-因此，在ILSVRC 2014大赛中，GoogleNet获得第一名，而VGG屈居第二。
-
-![](/images/article/GoogleNet.jpg)
-
-上图是GoogleNet的结构图。从中可以看出，GoogleNet除了AlexNet的基本要素之外，还有被称作Inception的结构。
 
 

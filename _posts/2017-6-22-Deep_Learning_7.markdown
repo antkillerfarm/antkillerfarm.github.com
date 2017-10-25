@@ -6,7 +6,33 @@ category: DL
 
 # CNN进化史
 
-## GoogleNet（续）
+## VGG
+
+Visual Geometry Group是牛津大学的一个科研团队。他们推出的一系列深度模型，被称作VGG模型。
+
+代码：
+
+http://www.robots.ox.ac.uk/~vgg/research/very_deep/
+
+VGG的结构图如下：
+
+![](/images/article/vgg.png)
+
+该系列包括A/A-LRN/B/C/D/E等6个不同的型号。其中的D/E，根据其神经网络的层数，也被称为VGG16/VGG19。
+
+从原理角度，VGG相比AlexNet并没有太多的改进。其最主要的意义就是实践了“**神经网络越深越好**”的理念。也是自那时起，神经网络逐渐有了“深度学习”这个别名。
+
+## GoogleNet
+
+GoogleNet的进化道路和VGG有所不同。VGG实际上就是“大力出奇迹”的暴力模型，其他地方不足称道。
+
+而GoogleNet不仅继承了VGG“越深越好”的理念，对于网络结构本身也作了大胆的创新。可以对比的是，AlexNet有60M个参数，而GoogleNet只有4M个参数。
+
+因此，在ILSVRC 2014大赛中，GoogleNet获得第一名，而VGG屈居第二。
+
+![](/images/article/GoogleNet.jpg)
+
+上图是GoogleNet的结构图。从中可以看出，GoogleNet除了AlexNet的基本要素之外，还有被称作Inception的结构。
 
 ![](/images/article/inception.png)
 

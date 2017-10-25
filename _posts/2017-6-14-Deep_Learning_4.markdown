@@ -158,6 +158,10 @@ https://mp.weixin.qq.com/s/nLFRJO2QEG_kAmeRYUdT3g
 
 十分钟带你看遍词向量模型
 
+https://mp.weixin.qq.com/s/GGXI-ZzPc9LLjVQpf5ia1A
+
+词嵌入2017年进展全面梳理：趋势和未来方向
+
 # RNN
 
 ## RNN的基本结构
@@ -261,40 +265,3 @@ Tomas Mikolov详解RNN与机器智能的实现
 https://sanwen8.cn/p/3f8sRTh.html
 
 为什么RNN需要做正交初始化？
-
-http://blog.csdn.net/shenxiaolu1984/article/details/71508892
-
-RNN的梯度消失/爆炸与正交初始化
-
-https://mp.weixin.qq.com/s/vHQ1WbADHAISXCGxOqnP2A
-
-看大牛如何复盘递归神经网络！
-
-https://mp.weixin.qq.com/s/0V9DeG39is_BxAYX0Yomww
-
-为何循环神经网络在众多机器学习方法中脱颖而出？
-
-https://mp.weixin.qq.com/s/-Am9Z4_SsOc-fZA_54Qg3A
-
-深度理解RNN：时间序列数据的首选神经网络！
-
-https://mp.weixin.qq.com/s/ztIrt4_xIPrmCwS1fCn_dA
-
-“魔性”的循环神经网络
-
-https://mp.weixin.qq.com/s/tIXJNkT9gIjGYZz7dekiNw
-
-手把手教你写一个RNN
-
-https://mp.weixin.qq.com/s/BqVicouktsZu8xLVR-XnFg
-
-完全图解RNN、RNN变体、Seq2Seq、Attention机制
-
-https://mp.weixin.qq.com/s/gGGXKT2fTn2xPPvo7PE8IA
-
-像训练CNN一样快速训练RNN：全新RNN实现，比优化后的LSTM快10倍
-
-https://mp.weixin.qq.com/s/0TLaC8ACXAFEK5aMNK9O-Q
-
-简单循环单元SRU：像CNN一样快速训练RNN
-

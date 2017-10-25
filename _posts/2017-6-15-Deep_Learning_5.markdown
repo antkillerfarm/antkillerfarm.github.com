@@ -1,8 +1,48 @@
 ---
 layout: post
-title:  深度学习（五）——LSTM, 神经元激活函数进阶, DRN, Bi-directional RNN
+title:  深度学习（五）——LSTM, 神经元激活函数进阶, DRN
 category: DL 
 ---
+
+# RNN
+
+## 参考（续）
+
+http://blog.csdn.net/shenxiaolu1984/article/details/71508892
+
+RNN的梯度消失/爆炸与正交初始化
+
+https://mp.weixin.qq.com/s/vHQ1WbADHAISXCGxOqnP2A
+
+看大牛如何复盘递归神经网络！
+
+https://mp.weixin.qq.com/s/0V9DeG39is_BxAYX0Yomww
+
+为何循环神经网络在众多机器学习方法中脱颖而出？
+
+https://mp.weixin.qq.com/s/-Am9Z4_SsOc-fZA_54Qg3A
+
+深度理解RNN：时间序列数据的首选神经网络！
+
+https://mp.weixin.qq.com/s/ztIrt4_xIPrmCwS1fCn_dA
+
+“魔性”的循环神经网络
+
+https://mp.weixin.qq.com/s/tIXJNkT9gIjGYZz7dekiNw
+
+手把手教你写一个RNN
+
+https://mp.weixin.qq.com/s/BqVicouktsZu8xLVR-XnFg
+
+完全图解RNN、RNN变体、Seq2Seq、Attention机制
+
+https://mp.weixin.qq.com/s/gGGXKT2fTn2xPPvo7PE8IA
+
+像训练CNN一样快速训练RNN：全新RNN实现，比优化后的LSTM快10倍
+
+https://mp.weixin.qq.com/s/0TLaC8ACXAFEK5aMNK9O-Q
+
+简单循环单元SRU：像CNN一样快速训练RNN
 
 # LSTM
 
@@ -276,36 +316,4 @@ https://mp.weixin.qq.com/s/5M3QiUVoA8QDIZsHjX5hRw
 http://www.jianshu.com/p/b724411571ab
 
 ResNet到底深不深？
-
-# Bi-directional RNN
-
-众所周知，RNN在处理长距离依赖关系时会出现问题。LSTM虽然改进了一些，但也只能缓解问题，而不能解决该问题。
-
-研究人员发现将原文倒序（将其倒序输入编码器）产生了显著改善的结果，因为从解码器到编码器对应部分的路径被缩短了。同样，两次输入同一个序列似乎也有助于网络更好地记忆。
-
-基于这样的实验结果，1997年Mike Schuster提出了Bi-directional RNN模型。
-
->注：Mike Schuster，杜伊斯堡大学硕士（1993）+奈良科技大学博士。语音识别专家，尤其是日语、韩语方面。Google研究员。
-
-论文：
-
-《Bidirectional Recurrent Neural Networks》
-
-下图是Bi-directional RNN的结构示意图：
-
-![](/images/article/Bi_directional_RNN.png)
-
-从图中可以看出，Bi-directional RNN有两个隐层，分别处理前向和后向的时序信息。
-
-除了原始的Bi-directional RNN之外，后来还出现了Deep Bi-directional RNN。
-
-![](/images/article/Deep_Bi_RNN.png)
-
-上图是包含3个隐层的Deep Bi-directional RNN。
-
-参见：
-
-https://mp.weixin.qq.com/s/_CENjzEK1kjsFpvX0H5gpQ
-
-结合堆叠与深度转换的新型神经翻译架构：爱丁堡大学提出BiDeep RNN
 

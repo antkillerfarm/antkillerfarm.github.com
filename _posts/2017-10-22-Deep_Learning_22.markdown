@@ -184,6 +184,14 @@ https://mp.weixin.qq.com/s/0AvV268s3TZ0z8WwtJv6sw
 
 一文概览语音识别中尚未解决的问题
 
+https://mp.weixin.qq.com/s/T96S0b7Lp9YWR4cRcMQr6A
+
+一文概览基于深度学习的监督语音分离
+
+https://mp.weixin.qq.com/s/TTPpOOxSLbCgOmAsI9TLiw
+
+百度发布Deep Voice 3：全卷积注意力机制TTS系统
+
 ## WFST
 
 Weighted-Finite-State-Transducer

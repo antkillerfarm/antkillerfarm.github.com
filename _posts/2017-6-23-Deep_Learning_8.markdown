@@ -165,6 +165,10 @@ http://mp.weixin.qq.com/s/bzwG0QxnP2drqS4RwcZlBg
 
 微软详解：到底什么是生成式对抗网络GAN？
 
+https://mp.weixin.qq.com/s/GobKiuxgZv0-ufSRBpTcIA
+
+Ian Goodfellow ICCV2017演讲：解读GAN的原理与应用
+
 https://mp.weixin.qq.com/s/oCDlhzjOYTIhsr5JuoRCJQ
 
 IRGAN：大一统信息检索模型的博弈竞争

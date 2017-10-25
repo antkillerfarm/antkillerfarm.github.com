@@ -229,3 +229,9 @@ TensorFlow Lattice：先前知识推动灵活性提升
 https://zhuanlan.zhihu.com/p/30265894
 
 自监督学习近期进展
+
+https://mp.weixin.qq.com/s/gaNSQ_8JGqX4a3lGuf-9fA
+
+如何让电脑成为看图说话的高手？
+
+
