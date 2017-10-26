@@ -92,7 +92,27 @@ Q-learning是强化学习中很重要的算法，也是最早被引入DL领域�
 
 ![](/images/article/q_learning_1.gif)
 
+这里我们将每个房间称为一个**state**，将agent从一个房间到另一个房间称为一个**action**。
+
+开始时，我们将agent放置在任意房间中，并设定目标——走到户外（即房间5），则上图可变为：
+
 ![](/images/article/q_learning_2.gif)
+
+这里的每条边上的数值就是reward值。Q-Learning的目标就是达到reward值最大的state。因此当agent到达户外之后，它就停留在那里了，这样的目标被称作**吸收目标**。
+
+如果以state为行，action为列，则上图又可转化为如下的reward矩阵：
+
+![](/images/article/r_matrix.gif)
+
+其中，-1表示两个state之间没有action。
+
+类似的，我们可以构建一个和R同阶的矩阵Q，来表示Q-Learning算法学到的知识。
+
+开始时，agent对外界一无所知，所以Q可以初始化为零矩阵。
+
+Q-Learning算法的**transition rule**为：
+
+$$Q(s,a)=R(s,a)+\gamma \max(Q(\tilde s,\tilde a))$$
 
 参考：
 

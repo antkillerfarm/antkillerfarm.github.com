@@ -410,6 +410,10 @@ https://mp.weixin.qq.com/s/aBrwbB_DOGTen-6XL7LGFQ
 
 邓侃：白话蒙特卡洛树搜索和ResNet
 
+https://github.com/gcp/leela-zero
+
+开源版的AlphaGo Zero
+
 ## 面试
 
 https://www.zhihu.com/question/41233373

@@ -299,7 +299,11 @@ LaTeX和MathJax联合使用的方法参见：
 
 http://www.cnblogs.com/linxd/p/4955530.html
 
+Mathjax与LaTex公式简介
+
 http://3iter.com/2015/10/14/Mathjax%E4%B8%8ELaTex%E5%85%AC%E5%BC%8F%E7%AE%80%E4%BB%8B/
+
+Mathjax与LaTex公式简介
 
 示例如下：
 

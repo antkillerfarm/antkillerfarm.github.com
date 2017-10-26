@@ -361,4 +361,10 @@ https://mp.weixin.qq.com/s/Off0pgaRNyik2nvjHaQQkw
 
 在TensorFlow中对比两大生成模型：VAE与GAN
 
+https://mp.weixin.qq.com/s/rMYjsIgFNvv47F4YZjY8SA
+
+如何在K8S上玩转TensorFlow？
+
+
+
 
