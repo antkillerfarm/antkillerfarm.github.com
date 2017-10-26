@@ -4,6 +4,22 @@ title:  机器学习（二十二）——AutoML, KNN, Optimizer
 category: ML 
 ---
 
+# HMM（续）
+
+## Baum–Welch算法
+
+Baum–Welch算法是求解问题3的常用算法。
+
+## HMM在NLP领域的应用
+
+具体到分词系统，可以将“标签”当作隐含状态，“字或词”当作可见状态。那么，几个NLP的问题就可以转化为：
+
+词性标注：给定一个词的序列（也就是句子），找出最可能的词性序列（标签是词性）。如ansj分词和ICTCLAS分词等。
+
+分词：给定一个字的序列，找出最可能的标签序列（断句符号：[词尾]或[非词尾]构成的序列）。结巴分词目前就是利用BMES标签来分词的，B（开头）,M（中间),E(结尾),S(独立成词）
+
+命名实体识别：给定一个词的序列，找出最可能的标签序列（内外符号：[内]表示词属于命名实体，[外]表示不属于）。如ICTCLAS实现的人名识别、翻译人名识别、地名识别都是用同一个Tagger实现的。
+
 # AutoML
 
 ## 概述
@@ -291,38 +307,4 @@ Michael Jordan新研究官方解读：如何有效地避开鞍点
 https://mp.weixin.qq.com/s/q7BI-YyhtmNzUfBMTKVdqQ
 
 Hitting time analysis of SGLD！
-
-https://mp.weixin.qq.com/s/0V8B-u5_bRM5Fu9oOAYjqw
-
-清华大学：通过在单纯形上软门限投影的加速随机贪心坐标下降
-
-https://mp.weixin.qq.com/s/fXlbB7KmiX0iIv6xwSxNIA
-
-梯度下降法的三种形式BGD、SGD以及MBGD
-
-https://mp.weixin.qq.com/s/R_0_E5Ieaj9KiWgg1prxeg
-
-为什么梯度的方向与等高线切线方向垂直？
-
-https://mp.weixin.qq.com/s/LuuvvL9yZ3ucXxRq0pZfsg
-
-优化策略：Label Smoothing Regularization_LSR原理分析
-
-https://zhuanlan.zhihu.com/p/23866364
-
-从梯度下降到Hessian-Free优化
-
-https://mp.weixin.qq.com/s/0gdGNv98DytB8KxwVu_M0A
-
-通俗易懂讲解Deep Learning最优化方法之AdaGrad
-
-# 单分类SVM&多分类SVM
-
-原始的SVM主要用于二分类，然而稍加变化，也可用于单分类和多分类。
-
-## 单分类SVM
-
-单分类任务是一类特殊的分类任务。在该任务中，大多数样本只有positive一类标签，而其他样本则笼统的划为另一类。
-
-单分类SVM（也叫Support Vector Domain Description(SVDD)）是一种单分类算法。和普通SVM相比，它不再使用maximum margin了，因为这里并没有两类的data。
 

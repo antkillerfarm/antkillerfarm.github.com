@@ -72,6 +72,68 @@ https://mp.weixin.qq.com/s/iFlnZ8z5baUdWCZxIGkq5g
 
 机器学习实战——LBP特征提取
 
+# 经典目标跟踪算法
+
+camshift、meanshift、Kalman filter、Optical flow
+
+## Meanshift
+
+参考：
+
+http://www.cnblogs.com/liqizhou/archive/2012/05/12/2497220.html
+
+Meanshift，聚类算法
+
+https://wenku.baidu.com/view/0d9eb876a417866fb84a8eb2.html
+
+mean-shift算法概述
+
+http://www.cnblogs.com/cfantaisie/archive/2011/06/10/2077188.html
+
+meanshift聚类
+
+## Camshift
+
+参考：
+
+http://blog.sina.com.cn/s/blog_5d1476580101a57j.html
+
+Camshift算法
+
+http://blog.163.com/thomaskjh@126/blog/static/370829982010113133152722/
+
+CAMSHIFT原理
+
+https://wenku.baidu.com/view/59596ac42cc58bd63186bd37.html
+
+Camshift算法原理
+
+## Optical flow
+
+http://www.cnblogs.com/walccott/p/4956858.html
+
+Horn-Schunck光流法
+
+http://blog.csdn.net/u014568921/article/details/46638557
+
+目标跟踪之Lukas-Kanade光流法
+
+http://blog.csdn.net/zouxy09/article/details/8683859
+
+光流Optical Flow介绍与OpenCV实现
+
+http://www.cnblogs.com/gnuhpc/archive/2012/12/04/2802124.html
+
+Lucas–Kanade光流算法
+
+http://www.cnblogs.com/dzyBK/p/5096860.html
+
+光流算法：Brox算法
+
+http://www.cnblogs.com/quarryman/p/optical_flow.html
+
+图像分析之光流之经典
+
 # python
 
 ## python调用GTK函数的一般规则

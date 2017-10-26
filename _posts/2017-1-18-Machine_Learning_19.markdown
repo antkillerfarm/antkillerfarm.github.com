@@ -89,6 +89,18 @@ https://mp.weixin.qq.com/s/PZ-1fkNvdJmv_8zLbvoW1g
 
 Adaboost算法原理小结
 
+https://mp.weixin.qq.com/s/KoOUgwXLOfJfOjWhbFX52Q
+
+如果Boosting你懂，那Adaboost你懂么？
+
+https://mp.weixin.qq.com/s/3yVosp2Kgp8cUyYWw_ULvw
+
+如何解读决策树和随机森林的内部工作机制？
+
+https://mp.weixin.qq.com/s/hY5cEug3xEpkkPE1X0Ykvg
+
+GBDT详解
+
 # 关联规则挖掘
 
 ## 基本概念
@@ -216,23 +228,5 @@ http://www.cnblogs.com/fengfenggirl/p/associate_fpgowth.html
 这个事例也被称作“幸存者偏差”（Survivorship bias）。它是一种典型的由于模型不当，导致的“**数据说谎**”。
 
 >注：Abraham Wald，1902～1950，生于奥匈帝国，维也纳大学博士。1938年为躲避纳粹，移民美国，哥伦比亚大学教授。Herman Chernoff的导师。其子Robert M. Wald，为著名理论物理学家，芝加哥大学教授，黑洞理论的提出者之一。
-
-## 关联规则评价
-
-“数据说谎”的问题很普遍。再看这样一个例子，我们分析一个购物篮数据中购买游戏光碟和购买影片光碟之间的关联关系。交易数据集共有10,000条记录，如表1所示：
-
-| 表1 | 买游戏 | 不买游戏 | 行总计 |
-|:--:|:--|:--:|:--|
-| 买影片 | 4000 | 3500 | 7500 |
-| 不买影片 | 2000 | 500 | 2500 |
-| 列总计 | 6000 | 4000 | 10000 |
-
-假设我们设置得最小支持度为30%，最小自信度为60%。从上面的表中，可以得到：
-
-$$support(买游戏光碟\to 买影片光碟)=4000/10000=40\%$$
-
-$$confidence(买游戏光碟\to 买影片光碟)=4000/6000=66\%$$
-
-这条规则的支持度和自信度都满足要求，因此我们很兴奋，我们找到了一条强规则，于是我们建议超市把影片光碟和游戏光碟放在一起，可以提高销量。
 
 

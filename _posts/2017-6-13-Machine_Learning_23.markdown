@@ -4,9 +4,43 @@ title:  机器学习（二十三）——单分类SVM&多分类SVM, 时间序列
 category: ML 
 ---
 
+# Optimizer
+
+## 参考（续）
+
+https://mp.weixin.qq.com/s/0V8B-u5_bRM5Fu9oOAYjqw
+
+清华大学：通过在单纯形上软门限投影的加速随机贪心坐标下降
+
+https://mp.weixin.qq.com/s/fXlbB7KmiX0iIv6xwSxNIA
+
+梯度下降法的三种形式BGD、SGD以及MBGD
+
+https://mp.weixin.qq.com/s/R_0_E5Ieaj9KiWgg1prxeg
+
+为什么梯度的方向与等高线切线方向垂直？
+
+https://mp.weixin.qq.com/s/LuuvvL9yZ3ucXxRq0pZfsg
+
+优化策略：Label Smoothing Regularization_LSR原理分析
+
+https://zhuanlan.zhihu.com/p/23866364
+
+从梯度下降到Hessian-Free优化
+
+https://mp.weixin.qq.com/s/0gdGNv98DytB8KxwVu_M0A
+
+通俗易懂讲解Deep Learning最优化方法之AdaGrad
+
 # 单分类SVM&多分类SVM
 
-## 单分类SVM（续）
+原始的SVM主要用于二分类，然而稍加变化，也可用于单分类和多分类。
+
+## 单分类SVM
+
+单分类任务是一类特殊的分类任务。在该任务中，大多数样本只有positive一类标签，而其他样本则笼统的划为另一类。
+
+单分类SVM（也叫Support Vector Domain Description(SVDD)）是一种单分类算法。和普通SVM相比，它不再使用maximum margin了，因为这里并没有两类的data。
 
 单分类SVM的目标，实际上是确定positive样本的boundary。boundary之外的数据，会被分为另一类。这实际上就是一种异常检测的算法了。它主要适用于negative样本的特征不容易确定的场景。
 

@@ -196,6 +196,10 @@ TensorFlow版本：
 
 https://github.com/hillox/TFMaskRCNN
 
+MXNet版本：
+
+https://github.com/TuSimple/mx-maskrcnn
+
 参考：
 
 https://zhuanlan.zhihu.com/p/25954683

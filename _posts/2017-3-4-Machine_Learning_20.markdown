@@ -1,10 +1,26 @@
 ---
 layout: post
-title:  机器学习（二十）——PageRank算法, loss function详解
+title:  机器学习（二十）——PageRank算法
 category: ML 
 ---
 
-## 关联规则评价（续）
+## 关联规则评价
+
+“数据说谎”的问题很普遍。再看这样一个例子，我们分析一个购物篮数据中购买游戏光碟和购买影片光碟之间的关联关系。交易数据集共有10,000条记录，如表1所示：
+
+| 表1 | 买游戏 | 不买游戏 | 行总计 |
+|:--:|:--|:--:|:--|
+| 买影片 | 4000 | 3500 | 7500 |
+| 不买影片 | 2000 | 500 | 2500 |
+| 列总计 | 6000 | 4000 | 10000 |
+
+假设我们设置得最小支持度为30%，最小自信度为60%。从上面的表中，可以得到：
+
+$$support(买游戏光碟\to 买影片光碟)=4000/10000=40\%$$
+
+$$confidence(买游戏光碟\to 买影片光碟)=4000/6000=66\%$$
+
+这条规则的支持度和自信度都满足要求，因此我们很兴奋，我们找到了一条强规则，于是我们建议超市把影片光碟和游戏光碟放在一起，可以提高销量。
 
 可是我们想想，一个喜欢的玩游戏的人会有时间看影片么，这个规则是不是有问题，事实上这条规则误导了我们。在整个数据集中买影片光碟的概率p(买影片)=7500/10000=75%，而买游戏的人也买影片的概率只有66%，66%<75%恰恰说明了买游戏光碟抑制了影片光碟的购买，也就是说买了游戏光碟的人更倾向于不买影片光碟，这才是符合现实的。
 
@@ -227,35 +243,4 @@ http://blog.csdn.net/hguisu/article/details/7996185
 http://www.docin.com/p-1231683333.html
 
 http://www.docin.com/p-630952720.html
-
-# loss function详解
-
-## Mean Squared Error(MSE)/Mean Squared Deviation(MSD)
-
-$$\operatorname{MSE}=\frac{1}{n}\sum_{i=1}^n(\hat{Y_i} - Y_i)^2$$
-
-## Symmetric Mean Absolute Percentage Error(SMAPE or sMAPE)
-
-MSE定义的误差，实际上是向量空间中的欧氏距离，这也可称为绝对误差。而有些情况下，可能相对误差（即百分比误差）更有意义些：
-
-$$\text{SMAPE} = \frac 1 n \sum_{t=1}^n \frac{\left|F_t-A_t\right|}{(A_t+F_t)/2}$$
-
-上式的问题在于$$A_t+F_t\le 0$$时，该值无意义。为了解决该问题，可用如下变种：
-
-$$\text{SMAPE} = \frac{100\%}{n} \sum_{t=1}^n \frac{|F_t-A_t|}{|A_t|+|F_t|}$$
-
-## Mean Absolute Error(MAE)
-
-$$\mathrm{MAE} = \frac{1}{n}\sum_{i=1}^n \left| f_i-y_i\right| =\frac{1}{n}\sum_{i=1}^n \left| e_i \right|$$
-
-这个可以看作是MSE的1范数版本。
-
-## Mean Percentage Error(MPE)
-
-$$\text{MPE} = \frac{100\%}{n}\sum_{t=1}^n \frac{a_t-f_t}{a_t}$$
-
-不同的loss函数有不同的用途，比如softmax一般用Cross Entropy作为loss函数。如下图所示：
-
-![](/images/article/cross_vs_mse.png)
-
 

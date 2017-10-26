@@ -395,10 +395,9 @@ https://mp.weixin.qq.com/s/I4sfT8rlwXIXxEjfdQoFbA
 
 东南大学周张泉：基于知识图谱的推理技术
 
-https://zhuanlan.zhihu.com/p/30320631?group_id=905539644138749952
+https://zhuanlan.zhihu.com/p/30320631
 
 知识图谱向量化表示及其在推荐系统上的应用
-
 
 
 

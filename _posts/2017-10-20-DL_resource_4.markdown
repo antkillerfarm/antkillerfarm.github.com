@@ -234,4 +234,11 @@ https://mp.weixin.qq.com/s/gaNSQ_8JGqX4a3lGuf-9fA
 
 如何让电脑成为看图说话的高手？
 
+https://mp.weixin.qq.com/s/lhGM_wpnEQDWh95n4jQZBQ
+
+基于视觉信息编解码的深度学习类脑机制研究
+
+https://mp.weixin.qq.com/s/Jhi9TWQqhJIyG7cakgo2Xg
+
+修改一个像素，就能让神经网络识别图像出错
 

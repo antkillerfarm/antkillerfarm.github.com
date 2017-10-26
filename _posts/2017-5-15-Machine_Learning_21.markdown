@@ -1,8 +1,38 @@
 ---
 layout: post
-title:  机器学习（二十一）——EMD, LSA, HMM
+title:  机器学习（二十一）——loss function详解, EMD, LSA, HMM
 category: ML 
 ---
+
+# loss function详解
+
+## Mean Squared Error(MSE)/Mean Squared Deviation(MSD)
+
+$$\operatorname{MSE}=\frac{1}{n}\sum_{i=1}^n(\hat{Y_i} - Y_i)^2$$
+
+## Symmetric Mean Absolute Percentage Error(SMAPE or sMAPE)
+
+MSE定义的误差，实际上是向量空间中的欧氏距离，这也可称为绝对误差。而有些情况下，可能相对误差（即百分比误差）更有意义些：
+
+$$\text{SMAPE} = \frac 1 n \sum_{t=1}^n \frac{\left|F_t-A_t\right|}{(A_t+F_t)/2}$$
+
+上式的问题在于$$A_t+F_t\le 0$$时，该值无意义。为了解决该问题，可用如下变种：
+
+$$\text{SMAPE} = \frac{100\%}{n} \sum_{t=1}^n \frac{|F_t-A_t|}{|A_t|+|F_t|}$$
+
+## Mean Absolute Error(MAE)
+
+$$\mathrm{MAE} = \frac{1}{n}\sum_{i=1}^n \left| f_i-y_i\right| =\frac{1}{n}\sum_{i=1}^n \left| e_i \right|$$
+
+这个可以看作是MSE的1范数版本。
+
+## Mean Percentage Error(MPE)
+
+$$\text{MPE} = \frac{100\%}{n}\sum_{t=1}^n \frac{a_t-f_t}{a_t}$$
+
+不同的loss函数有不同的用途，比如softmax一般用Cross Entropy作为loss函数。如下图所示：
+
+![](/images/article/cross_vs_mse.png)
 
 # P-R、ROC和AUC
 
@@ -192,17 +222,4 @@ forward算法是求解问题2的常用算法。
 
 上图是某骰子序列的穷举计算过程，可以看出第3步计算的概率和公式的某些项，实际上在之前的步骤中已经计算出来了，前向递推的计算量并没有想象中的大。
 
-## Baum–Welch算法
-
-Baum–Welch算法是求解问题3的常用算法。
-
-## HMM在NLP领域的应用
-
-具体到分词系统，可以将“标签”当作隐含状态，“字或词”当作可见状态。那么，几个NLP的问题就可以转化为：
-
-词性标注：给定一个词的序列（也就是句子），找出最可能的词性序列（标签是词性）。如ansj分词和ICTCLAS分词等。
-
-分词：给定一个字的序列，找出最可能的标签序列（断句符号：[词尾]或[非词尾]构成的序列）。结巴分词目前就是利用BMES标签来分词的，B（开头）,M（中间),E(结尾),S(独立成词）
-
-命名实体识别：给定一个词的序列，找出最可能的标签序列（内外符号：[内]表示词属于命名实体，[外]表示不属于）。如ICTCLAS实现的人名识别、翻译人名识别、地名识别都是用同一个Tagger实现的。
 

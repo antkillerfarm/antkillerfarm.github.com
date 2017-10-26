@@ -40,6 +40,32 @@ API参考：
 
 https://docs.scipy.org/doc/numpy/reference/
 
+### 文件存取
+
+原始二进制文件：tofile()和fromfile()
+
+NumPy专用的格式文件（.npy或.npz，它和原始二进制文件的区别在于：前者包含维度和类型信息，而后者只有数据本身）：save()和load()
+
+文本文件：savetxt()和loadtxt()
+
+参考：
+
+http://www.cnblogs.com/dmir/p/5009075.html
+
+python:numpy（文件存取）
+
+### 数据类型转换
+
+类型转换：`c = b.astype(int)`
+
+把A类型看做B类型，比如将一个float64的数，看做8个单字节的数：`a.dtype = 'int8'`
+
+参考：
+
+http://www.cnblogs.com/hhh5460/p/5129032.html
+
+numpy数据类型dtype转换
+
 ## SciPy
 
 SciPy提供了一些更高阶的数学运算库，比如：积分、插值、信号处理、傅立叶变换、矩阵特征值、统计计算等。
@@ -113,6 +139,8 @@ Pandas和SQL的比较
 ## mysql
 
 http://www.runoob.com/python/python-mysql.html
+
+python操作mysql数据库
 
 ## chainer
 
