@@ -114,7 +114,7 @@ Q-Learning算法的**transition rule**为：
 
 $$Q(s,a)=R(s,a)+\gamma \max(Q(\tilde s,\tilde a))$$
 
-其中，(s,a)表示当前的state和action，$$(\tilde s,\tilde a)$$
+其中，(s,a)表示当前的state和action，$$(\tilde s,\tilde a)$$表示下一个state和action，$$0 \le \gamma < 1$$为学习参数。
 
 参考：
 

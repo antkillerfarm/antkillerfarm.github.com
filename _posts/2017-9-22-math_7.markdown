@@ -10,7 +10,11 @@ category: math
 
 ![](/images/article/WeierstrassFunction.png)
 
-上图是Weierstrass Function图像。它是一类处处连续而处处不可导的实值函数。
+上图是Weierstrass Function图像。它是一类处处连续而处处不可导的实值函数，其表达式为：
+
+$$f(x)=\sum_{n=0} ^\infty a^n \cos(b^n \pi x)$$
+
+其中，$$0<a<1$$，b是奇数，且$$ab > 1+\frac{3}{2} \pi$$。最小的满足该条件的值是$$b=7$$。
 
 一般人会直觉上认为连续的函数必然是近乎可导的。即使不可导，所谓不可导的点也必然只占整体的一小部分。根据Weierstrass在他的论文中所描述，早期的许多数学家，包括高斯，都曾经假定连续函数不可导的部分是有限或可数的。这可能是因为直观上想象一个连续但在不可数个点上不可导的函数是很困难的事。
 

@@ -162,21 +162,21 @@ BN的主要思想是用同一batch的样本分布来近似整体的样本分布�
 
 用$$\mathcal{B}=\{x_{1,\dots,m}\}$$表示batch，则BN的计算过程如下：
 
-1.计算mini-batch mean。
+**Step 1**.计算mini-batch mean。
 
 $$\mu_\mathcal{B}\leftarrow \frac{1}{m}\sum_{i=1}^mx_i$$
 
-2.计算mini-batch variance。
+**Step 2**.计算mini-batch variance。
 
 $$\sigma_\mathcal{B}^2\leftarrow \frac{1}{m}\sum_{i=1}^m(x_i-\mu_\mathcal{B})^2$$
 
-3.normalize。
+**Step 3**.normalize。
 
 $$\hat x_i\leftarrow \frac{x_i-\mu_\mathcal{B}}{\sqrt{\sigma_\mathcal{B}^2+\epsilon}}$$
 
 这里的$$\epsilon$$是为了数值的稳定性而添加的常数。
 
-4.scale and shift。
+**Step 4**.scale and shift。
 
 $$y_i=\gamma\hat x_i+\beta\equiv BN_{\gamma,\beta}(x_i)$$
 
@@ -187,6 +187,8 @@ $$z=g(Wu+b)\rightarrow z=g(BN(Wu+b))=g(BN(Wu))$$
 从另一个角度来看，BN的均值、方差操作，相当于去除一阶和二阶信息，而只保留网络的高阶信息，即非线性部分。因此，上式最后一步中b被忽略，也就不难理解了。
 
 BN的误差反向算法相对复杂，这里不再赘述。
+
+在inference阶段，BN网络忽略Step 1和Step 2，只计算后两步。其中,$$\beta,\gamma$$由之前的训练得到。$$\mu,\sigma$$原则上要求使用全体样本的均值和方差，但样本量过大的情况下，也可使用训练时的若干个mini batch均值和方差的FIR滤波值。
 
 # Instance Normalization
 

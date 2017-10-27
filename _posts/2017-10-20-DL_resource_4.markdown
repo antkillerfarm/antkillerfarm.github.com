@@ -236,7 +236,7 @@ https://mp.weixin.qq.com/s/gaNSQ_8JGqX4a3lGuf-9fA
 
 https://mp.weixin.qq.com/s/lhGM_wpnEQDWh95n4jQZBQ
 
-基于视觉信息编解码的深度学习类脑机制研究
+何晖光：基于视觉信息编解码的深度学习类脑机制研究
 
 https://mp.weixin.qq.com/s/Jhi9TWQqhJIyG7cakgo2Xg
 
@@ -245,6 +245,11 @@ https://mp.weixin.qq.com/s/Jhi9TWQqhJIyG7cakgo2Xg
 https://mp.weixin.qq.com/s/jwdYAeCGleKRRiInY85bLw
 
 Vicarious发表Science论文：概率生成模型超越神经网络
+
+https://mp.weixin.qq.com/s/YdON6Yzddq2f_QGbQsOY8w
+
+深度三维残差神经网络：视频理解新突破
+
 
 
 
