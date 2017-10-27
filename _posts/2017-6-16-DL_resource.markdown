@@ -116,6 +116,10 @@ https://mp.weixin.qq.com/s/0u4eFeMbbsSgVPVKHbAK7g
 
 深度学习每日摘要迄今所有文章汇总，其中包含《漫谈RNN》和《漫谈深度强化学习》两个专辑
 
+http://www.jianshu.com/p/2be349a89a12
+
+超过 150 个最佳机器学习，NLP和Python教程
+
 ## 教程
 
 https://theneuralperspective.com/tag/tutorials/

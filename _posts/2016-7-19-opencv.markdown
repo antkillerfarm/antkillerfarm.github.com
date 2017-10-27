@@ -74,7 +74,11 @@ http://blog.csdn.net/liulina603
 
 一个CV的blog。
 
-blog.csdn.net/kezunhai
+http://blog.csdn.net/kezunhai
+
+一个CV的blog。
+
+http://blog.csdn.net/yang_xian521/
 
 一个CV的blog。
 
@@ -106,7 +110,7 @@ http://www.cs.rug.nl/~imaging/
 
 一个在线的图像处理网站。
 
-参考
+## 参考
 
 https://github.com/liuruoze/EasyPR
 

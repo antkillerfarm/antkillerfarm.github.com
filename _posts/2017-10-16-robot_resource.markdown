@@ -32,6 +32,12 @@ https://github.com/karpathy/convnetjs
 
 LIDAR：LIght Detection And Ranging
 
+## blog
+
+http://www.cnblogs.com/yhlx125/
+
+一个Robot+GIS的blog
+
 ## 文章
 
 http://blog.exbot.net/
@@ -55,14 +61,6 @@ SLAM(simultaneous localization and mapping)学习笔记
 http://www.cnblogs.com/gaoxiang12/p/5113334.html
 
 视觉SLAM中的数学基础
-
-https://www.zhihu.com/question/25371476
-
-怎样从实际场景上理解粒子滤波（Particle Filter）？
-
-http://freemind.pluskid.org/machine-learning/hmm-kalman-particle-filtering
-
-漫谈 HMM：Kalman/Particle Filtering
 
 https://zhuanlan.zhihu.com/p/26988866
 
@@ -249,6 +247,10 @@ https://zhuanlan.zhihu.com/p/30268946
 https://mp.weixin.qq.com/s/EO51mtEf6TVHGHYbZBAdZw
 
 情感回复系统Babbling
+
+https://mp.weixin.qq.com/s/CGZhp1eJU0jd9dcGJzPu0w
+
+LSF-SCNN：一种基于CNN的短文本表达模型及相似度计算的全新优化模型
 
 # ML参考资源
 

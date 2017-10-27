@@ -242,3 +242,9 @@ https://mp.weixin.qq.com/s/Jhi9TWQqhJIyG7cakgo2Xg
 
 修改一个像素，就能让神经网络识别图像出错
 
+https://mp.weixin.qq.com/s/jwdYAeCGleKRRiInY85bLw
+
+Vicarious发表Science论文：概率生成模型超越神经网络
+
+
+
