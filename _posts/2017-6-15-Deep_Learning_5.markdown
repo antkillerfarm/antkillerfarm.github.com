@@ -177,6 +177,16 @@ http://mp.weixin.qq.com/s/3nwgft9c27ih172ANwHzvg
 
 >注意：其实也有采用线性激活函数的神经网络，亦被称为linear neurons。但是这些神经网络，基本只有学术价值而无实际意义。
 
+理论上来说，只要是非线性函数，都有做激活函数的可能性。然而不同的激活函数其训练成本是不同的。
+
+虽然OpenAI的探索表明连浮点误差都可以做激活函数，但是由于这个操作的不可微分性，因此他们使用了“进化策略”来训练模型，所谓“进化策略”，是诸如遗传算法之类的耗时耗力的算法。
+
+参考：
+
+https://mp.weixin.qq.com/s/d9XmDCahK6UBlYWhI0D5jQ
+
+深度线性神经网络也能做非线性计算，OpenAI使用进化策略新发现
+
 ## ReLU的缺点
 
 深度神经网络的训练问题，最早是2006年Hinton使用**分层无监督预训练**的方法解决的，然而该方法使用起来很不方便。
@@ -186,7 +196,6 @@ http://mp.weixin.qq.com/s/3nwgft9c27ih172ANwHzvg
 但是ReLU并不完美。它在x<0时硬饱和，而当x>0时，导数为1。所以，ReLU能够在x>0时保持梯度不衰减，从而缓解梯度消失问题。但随着训练的推进，部分输入会落入硬饱和区，导致对应权重无法更新。这种现象被称为**神经元死亡**。
 
 ReLU还经常被“诟病”的另一个问题是输出具有**偏移现象**，即输出均值恒大于零。偏移现象和神经元死亡会共同影响网络的收敛性。实验表明，如果不采用Batch Normalization，即使用MSRA初始化30层以上的ReLU网络，最终也难以收敛。
-
 
 为了解决上述问题，人们提出了Leaky ReLU、PReLU、RReLU、ELU、Maxout等ReLU的变种。
 
@@ -215,6 +224,38 @@ $$y=\max(W_1x+b_1,W_2x+b_2)=\max(0,Wx+b)$$
 http://blog.csdn.net/hjimce/article/details/50414467
 
 Maxout网络学习
+
+## Swish
+
+Swish是Google大脑团队提出的一个新的激活函数：
+
+$$\text{swish}(x)=x\cdot\sigma(x)=\frac{x}{1+e^{-x}}$$
+
+它的图像如下图中的橙色曲线所示：
+
+![](/images/article/swish.png)
+
+Swish可以看作是GLU的特例（Swish的两组参数相同），后者是由facebook提出的：
+
+$$(\boldsymbol{W}_1\boldsymbol{x}+\boldsymbol{b}_1)\otimes \sigma(\boldsymbol{W}_2\boldsymbol{x}+\boldsymbol{b}_2)$$
+
+Swish在原点附近不是饱和的，只有负半轴远离原点区域才是饱和的，而ReLu在原点附近也有一半的空间是饱和的。而我们在训练模型时，一般采用的初始化参数是均匀初始化或者正态分布初始化，不管是哪种初始化，其均值一般都是0，也就是说，初始化的参数有一半处于ReLu的饱和区域，这使得刚开始时就有一半的参数没有利用上。特别是由于诸如BN之类的策略，输出都自动近似满足均值为0的正态分布，因此这些情况都有一半的参数位于ReLu的饱和区。相比之下，Swish好一点，因为它在负半轴也有一定的不饱和区，所以参数的利用率更大。
+
+苏剑林据此提出了自己的激活函数：
+
+$$\max(x, x\cdot e^{-|x|})$$
+
+该函数的图像如上图的蓝色曲线所示。
+
+参考：
+
+https://mp.weixin.qq.com/s/JticD0itOWH7Aq7ye1yzvg
+
+谷歌大脑提出新型激活函数Swish惹争议：可直接替换并优于ReLU？
+
+http://kexue.fm/archives/4647/
+
+浅谈神经网络中激活函数的设计
 
 ## 其他激活函数
 
@@ -258,10 +299,6 @@ http://www.cnblogs.com/ymjyqsx/p/6294021.html
 
 PReLU与ReLU
 
-https://mp.weixin.qq.com/s/JticD0itOWH7Aq7ye1yzvg
-
-谷歌大脑提出新型激活函数Swish惹争议：可直接替换并优于ReLU？
-
 # Deep Residual Network
 
 无论采用何种方法，可训练的神经网络的层数都不可能无限深。有的时候，即使没有梯度消失，也存在训练退化（即深层网络的效果还不如浅层网络）的问题。
@@ -286,34 +323,4 @@ https://github.com/KaimingHe/deep-residual-networks
 ![](/images/article/drn.png)
 
 简单的说，就是把前面的层跨几层直接接到后面去，以使误差梯度能够传的更远一些。
-
-DRN的基本思想倒不是什么新东西了，在2003年Bengio提出的词向量模型中，就已经采用了这样的思路。
-
-DRN的实现依赖于下图所示的res block：
-
-![](/images/article/res_block.png)
-
-从中可以看出，所谓残差跨层传递，其实就是将本层ternsor $$\mathcal{F}(x)$$和跨层tensor x加在一起而已。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/22447440
-
-深度残差网络
-
-https://www.leiphone.com/news/201608/vhqwt5eWmUsLBcnv.html
-
-何恺明的深度残差网络PPT
-
-https://mp.weixin.qq.com/s/kcTQVesjUIPNcz2YTxVUBQ
-
-ResNet 6大变体：何恺明,孙剑,颜水成引领计算机视觉这两年
-
-https://mp.weixin.qq.com/s/5M3QiUVoA8QDIZsHjX5hRw
-
-一文弄懂ResNet有多大威力？最近又有了哪些变体？
-
-http://www.jianshu.com/p/b724411571ab
-
-ResNet到底深不深？
 

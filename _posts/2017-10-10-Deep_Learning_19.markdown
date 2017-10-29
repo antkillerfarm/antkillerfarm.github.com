@@ -112,10 +112,6 @@ https://mp.weixin.qq.com/s/UYk3YQmFW7-44RUojUqfGg
 
 上交大ICCV：精度保证下的新型深度网络压缩框架
 
-https://mp.weixin.qq.com/s/f3bmtbCY5BfA4v3movwLVg
-
-向手机端神经网络进发：MobileNet压缩指南
-
 https://mp.weixin.qq.com/s/ZuEi32ZBSjruvtyUimBgxQ
 
 揭秘支付宝中的深度学习引擎：xNN
@@ -131,6 +127,10 @@ https://mp.weixin.qq.com/s/3qstz-KoRuxwpmfE4XDI-Q
 https://mp.weixin.qq.com/s/dEdWz4bovmk65fwLknHBhg
 
 韩松毕业论文：面向深度学习的高效方法与硬件
+
+https://mp.weixin.qq.com/s/GFE2XYHZXPP0doQ5nd0JNQ
+
+当前深度神经网络模型压缩和加速方法速览
 
 # 人脸识别
 

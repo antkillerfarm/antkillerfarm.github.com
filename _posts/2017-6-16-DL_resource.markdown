@@ -486,4 +486,8 @@ http://pytlab.org/2017/09/19/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95%E4%B8%AD%E5%87
 
 遗传算法中几种不同选择算子
 
+https://mp.weixin.qq.com/s/9ZQc3RqCCcWYDplZ4RU2oA
+
+清华段路明组发现深度学习和量子物理重要关联
+
 

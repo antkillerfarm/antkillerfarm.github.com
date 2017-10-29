@@ -158,6 +158,10 @@ https://mp.weixin.qq.com/s/SD1pkTNHG7TGKrwVbFaMZg
 
 中科慧眼崔峰：下一代双目视觉产品预警距离将达到80米
 
+https://zhuanlan.zhihu.com/p/25822544
+
+MATLAB R2017a: 自动驾驶工具箱
+
 # NLP参考资源
 
 https://mp.weixin.qq.com/s/GyE9qdXPGvrq12dMAf4nrQ
@@ -252,6 +256,10 @@ https://mp.weixin.qq.com/s/CGZhp1eJU0jd9dcGJzPu0w
 
 LSF-SCNN：一种基于CNN的短文本表达模型及相似度计算的全新优化模型
 
+https://zhuanlan.zhihu.com/p/30533380
+
+Neural Response Generation——关于回复生成工作的一些总结
+
 # ML参考资源
 
 http://kexue.fm/archives/4638/
@@ -281,6 +289,18 @@ https://mp.weixin.qq.com/s/JF23e8-XbkpPxLi6kTxfNA
 https://mp.weixin.qq.com/s/aPepcwG_VMioqGQ_Fp3deg
 
 海量数据处理利器之布隆过滤器
+
+https://mp.weixin.qq.com/s/7N6eDoEV8oEwUpP-zK1RpQ
+
+560万Facebook人际关系数据，揭秘家庭职业传承“真相”
+
+http://www.jianshu.com/p/af7e063ac9b3
+
+机器学习在金融比赛中的应用
+
+https://mp.weixin.qq.com/s/OW44XEI1t5-oJWmmq4gJvw
+
+从概念到案例：初学者须知的十大机器学习算法
 
 
 

@@ -4,6 +4,38 @@ title:  深度学习（六）——Bi-directional RNN, Attention, seq2seq, DMN, 
 category: DL 
 ---
 
+# Deep Residual Network（续）
+
+DRN的基本思想倒不是什么新东西了，在2003年Bengio提出的词向量模型中，就已经采用了这样的思路。
+
+DRN的实现依赖于下图所示的res block：
+
+![](/images/article/res_block.png)
+
+从中可以看出，所谓残差跨层传递，其实就是将本层ternsor $$\mathcal{F}(x)$$和跨层tensor x加在一起而已。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/22447440
+
+深度残差网络
+
+https://www.leiphone.com/news/201608/vhqwt5eWmUsLBcnv.html
+
+何恺明的深度残差网络PPT
+
+https://mp.weixin.qq.com/s/kcTQVesjUIPNcz2YTxVUBQ
+
+ResNet 6大变体：何恺明,孙剑,颜水成引领计算机视觉这两年
+
+https://mp.weixin.qq.com/s/5M3QiUVoA8QDIZsHjX5hRw
+
+一文弄懂ResNet有多大威力？最近又有了哪些变体？
+
+http://www.jianshu.com/p/b724411571ab
+
+ResNet到底深不深？
+
 # Bi-directional RNN
 
 众所周知，RNN在处理长距离依赖关系时会出现问题。LSTM虽然改进了一些，但也只能缓解问题，而不能解决该问题。
@@ -235,37 +267,4 @@ https://mp.weixin.qq.com/s/nK__d-PV6DY5mDfA_UgDmQ
 完整版本参见：
 
 https://github.com/Nikasa1889/HistoryObjectRecognition/blob/master/HistoryOfObjectRecognition.pdf
-
-## AlexNet
-
-2012年，ILSVRC比赛冠军的model——Alexnet（以第一作者Alex命名）的结构图如下：
-
-![](/images/article/AlexNet.png)
-
-换个视角：
-
-![](/images/article/AlexNet_2.png)
-
-AlexNet的caffe模板：
-
-https://github.com/BVLC/caffe/blob/master/models/bvlc_alexnet/deploy.prototxt
-
-其中的LRN（Local Response Normalization）层也是当年的遗迹，被后来的实践证明，对于最终效果和运算量没有太大帮助，因此也就慢慢废弃了。
-
-虽然，LeNet-5是CNN的开山之作（它不是最早的CNN，但却是奠定了现代CNN理论基础的模型），但是毕竟年代久远，和现代实用的CNN相比，结构实在过于原始。
-
-AlexNet作为第一个现代意义上的CNN，它的意义主要包括：
-
-1.Data Augmentation。包括水平翻转、随机裁剪、平移变换、颜色、光照变换等。
-
-2.Dropout。
-
-3.ReLU激活函数。
-
-4.多GPU并行计算。
-
-5.当然最应该感谢的是李飞飞团队搞出来的标注数据集合ImageNet。
-
->注：ILSVRC（Large Scale Visual Recognition Challenge）大赛，在2016年以前，一直是CV界的顶级赛事。但随着技术的成熟，目前的科研重点已经从物体识别转移到了物体理解领域。2017年将是该赛事的最后一届。WebVision有望接替该赛事，成为下一个目标。
-
 

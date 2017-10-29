@@ -66,6 +66,12 @@ http://www.cnblogs.com/hhh5460/p/5129032.html
 
 numpy数据类型dtype转换
 
+### 参考
+
+https://mp.weixin.qq.com/s/FVI3zEp4it-fd99-3MU9vA
+
+从数组到矩阵的迹，NumPy常见使用大总结
+
 ## SciPy
 
 SciPy提供了一些更高阶的数学运算库，比如：积分、插值、信号处理、傅立叶变换、矩阵特征值、统计计算等。
@@ -419,3 +425,13 @@ https://mp.weixin.qq.com/s/61oY3gLEOjQjCJgGkEcABw
 https://mp.weixin.qq.com/s?__biz=MzIxNjA2ODUzNg==&mid=2651435914&idx=1&sn=b0b6f1cda08798dc35bf0930dc9d9096
 
 盘膝而坐--跟你聊聊APP市场的数据分析
+
+https://mp.weixin.qq.com/s/AVSFbfikczjm7flsQQPC1g
+
+2017年最受数据科学欢迎的Top15个Python库
+
+https://mp.weixin.qq.com/s/jBULfMR0_7Ms9nc5CLLIFQ
+
+Python的开源人脸识别库：离线识别率高达99.38%
+
+

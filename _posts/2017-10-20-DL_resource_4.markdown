@@ -92,7 +92,7 @@ VAE和Adam发明人博士论文：变分推理和深度学习
 
 http://mp.weixin.qq.com/s/Y-PvMz_Vz8nBGRZo9dwUCA
 
-中科院步态识别技术：不看脸 50米内在人群中认出你！
+中科院步态识别技术：不看脸50米内在人群中认出你！
 
 http://mp.weixin.qq.com/s/sIIoGilZgQHn4jDiYzEelw
 
@@ -250,6 +250,19 @@ https://mp.weixin.qq.com/s/YdON6Yzddq2f_QGbQsOY8w
 
 深度三维残差神经网络：视频理解新突破
 
+http://kexue.fm/usr/uploads/2016/06/1002322295.pdf
 
+基于深度学习的图像识别进展：百度的若干实践
 
+https://mp.weixin.qq.com/s/W2DqCjmF3oyPLKeETAO5XA
+
+CNN实现“读脑术”，成功解码人脑视觉活动，准确率超50%
+
+https://mp.weixin.qq.com/s/ygt31lL0mBcyRmwAlsl8Sg
+
+RCN仅凭极少样本就成功攻破验证码
+
+https://mp.weixin.qq.com/s/0Ofh_NSMmvlEZ2JPCffujg
+
+Vicarious发布生成视觉模型:RCN
 

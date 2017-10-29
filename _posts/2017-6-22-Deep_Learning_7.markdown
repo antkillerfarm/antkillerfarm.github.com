@@ -6,6 +6,38 @@ category: DL
 
 # CNN进化史
 
+## AlexNet
+
+2012年，ILSVRC比赛冠军的model——Alexnet（以第一作者Alex命名）的结构图如下：
+
+![](/images/article/AlexNet.png)
+
+换个视角：
+
+![](/images/article/AlexNet_2.png)
+
+AlexNet的caffe模板：
+
+https://github.com/BVLC/caffe/blob/master/models/bvlc_alexnet/deploy.prototxt
+
+其中的LRN（Local Response Normalization）层也是当年的遗迹，被后来的实践证明，对于最终效果和运算量没有太大帮助，因此也就慢慢废弃了。
+
+虽然，LeNet-5是CNN的开山之作（它不是最早的CNN，但却是奠定了现代CNN理论基础的模型），但是毕竟年代久远，和现代实用的CNN相比，结构实在过于原始。
+
+AlexNet作为第一个现代意义上的CNN，它的意义主要包括：
+
+1.Data Augmentation。包括水平翻转、随机裁剪、平移变换、颜色、光照变换等。
+
+2.Dropout。
+
+3.ReLU激活函数。
+
+4.多GPU并行计算。
+
+5.当然最应该感谢的是李飞飞团队搞出来的标注数据集合ImageNet。
+
+>注：ILSVRC（Large Scale Visual Recognition Challenge）大赛，在2016年以前，一直是CV界的顶级赛事。但随着技术的成熟，目前的科研重点已经从物体识别转移到了物体理解领域。2017年将是该赛事的最后一届。WebVision有望接替该赛事，成为下一个目标。
+
 ## VGG
 
 Visual Geometry Group是牛津大学的一个科研团队。他们推出的一系列深度模型，被称作VGG模型。
@@ -282,19 +314,4 @@ $$y=\Phi^{-1}\left(\int_0^x \rho(t)dt\right)$$
 
 那么接着就有另一个问题：**如何评估$$G(X,\theta)$$生成的样本的分布和Z的分布之间的差异呢？**
 
-## KL散度
-
-比较两个分布的差异的最常用指标是KL散度。其定义参见《机器学习（八）》。
-
-## JS散度
-
-因为KL散度不是对称的，有时候将它对称化，即得到JS散度（Jensen–Shannon divergence）：
-
-$$JS\Big(p_1(x),p_2(x)\Big)=\frac{1}{2}KL\Big(p_1(x)\|p_2(x)\Big)+\frac{1}{2}KL\Big(p_2(x)\|p_1(x)\Big)$$
-
->注：Claude Elwood Shannon，1916～2001，美国数学家，信息论之父。密歇根大学双学士+MIT博士。先后供职于贝尔实验室和MIT。
-
-KL散度和JS散度，也是Ian Goodfellow在原始GAN论文中，给出的评价指标。
-
-虽然KL散度和JS散度，在这里起着距离的作用，但它们**不是距离**，它们不满足距离的三角不等式，因此只能叫“散度”。
 

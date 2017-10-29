@@ -359,6 +359,10 @@ https://docs.mongodb.com/manual/reference/sql-aggregation-comparison/
 
 这是上面表格的高级版本，专门处理group by的情况。这种情况也叫做Aggregation。
 
+https://mp.weixin.qq.com/s/6UDI8aci-ExVKsdcHJqeiw
+
+MongoDB的水平扩展，你做对了吗？
+
 ## Robomongo
 
 Robomongo是一个开源的MongoDB的前端工具，基于Qt编写。官网：

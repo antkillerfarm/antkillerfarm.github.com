@@ -6,9 +6,37 @@ category: resource
 
 # DL参考资源
 
+## 工具
+
+https://mp.weixin.qq.com/s/TT4whft1Tj1pCEPbnMH1cA
+
+清华大学发布OpenNE：用于网络嵌入的开源工具包
+
+https://mp.weixin.qq.com/s/r01vfSKb4VpFXVyokb54Bg
+
+MIT开放图像标注工具LabelMe源代码：助力机器视觉的发展
+
+https://mp.weixin.qq.com/s/30dK7nGJOWIaa1j9QElrYA
+
+详解帝国理工集成工具TensorLayer：控制深度学习开发复杂度
+
+https://mp.weixin.qq.com/s/m_2LE2QN_8_a1hti6G0Cow
+
+Netflix开源稀疏数据专用神经网络库：Vectorflow
+
+## Other
+
 https://mp.weixin.qq.com/s/Tx9JJ0cIo_rH7BDjd_hkvw
 
 Hinton碰撞LeCun：CNN有两大缺陷，要用capsule做下一代CNN
+
+https://zhuanlan.zhihu.com/p/29435406
+
+浅析Hinton最近提出的Capsule计划
+
+https://mp.weixin.qq.com/s/5Af_K_BGrD5RomgpWxJNBQ
+
+Hinton大神Capsule论文首次公布，深度学习基石CNN或被取代 
 
 https://www.jiqizhixin.com/articles/2017-07-27-2
 
@@ -114,25 +142,13 @@ https://mp.weixin.qq.com/s/PiQB2AvhtDceMJxYN8O8jA
 
 通用卷积神经网络交错组卷积
 
-https://mp.weixin.qq.com/s/r01vfSKb4VpFXVyokb54Bg
-
-MIT开放图像标注工具LabelMe源代码：助力机器视觉的发展
-
 https://mp.weixin.qq.com/s/tLqsWWhzUU6TkDbhnxxZow
 
 Momenta详解ImageNet 2017夺冠架构SENet
 
-https://mp.weixin.qq.com/s/30dK7nGJOWIaa1j9QElrYA
-
-详解帝国理工集成工具TensorLayer：控制深度学习开发复杂度
-
 http://stanford.edu/~rezab/nips2014workshop/slides/jeff.pdf
 
 Techniques and Systems for Training Large Neural Networks Quickly
-
-https://mp.weixin.qq.com/s/m_2LE2QN_8_a1hti6G0Cow
-
-Netflix开源稀疏数据专用神经网络库：Vectorflow！
 
 https://mp.weixin.qq.com/s/rlkZ82FcYMOmYoLjiCTN7g
 
@@ -304,7 +320,7 @@ https://mp.weixin.qq.com/s/kbqTHIOzAj1aERl4tm-kVA
 
 https://mp.weixin.qq.com/s/tZoD4RfkDDDBxTgqDJvI3g
 
-35个热门又实用的开源 AI 项目！
+35个热门又实用的开源AI项目！
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
 
@@ -342,10 +358,6 @@ https://mp.weixin.qq.com/s/pdv-T69rz4jO47CMf-CUhg
 
 “信息瓶颈”理论揭示深度学习本质
 
-https://zhuanlan.zhihu.com/p/29435406
-
-浅析Hinton最近提出的Capsule计划
-
 https://mp.weixin.qq.com/s/e4hriDvTRLkg-mIifVWayw
 
 如何解决深度学习中的多体问题
@@ -361,10 +373,6 @@ https://mp.weixin.qq.com/s/iXmjuBh2zzno7-D9ClYbSA
 https://mp.weixin.qq.com/s/sYXVqnk5p8tvl6s0EIkr3w
 
 游戏代理框架，帮助您创建AI来玩任何您拥有的游戏！
-
-https://mp.weixin.qq.com/s/9ZQc3RqCCcWYDplZ4RU2oA
-
-清华段路明组发现深度学习和量子物理重要关联
 
 https://mp.weixin.qq.com/s/0KaSWHi8r9kSXxlwswIY5g
 
@@ -389,10 +397,6 @@ http://www.jianshu.com/p/f9ca56d6407d
 https://mp.weixin.qq.com/s/UDAcjmCOUdzbXaAgKWOczQ
 
 深度判别和共享特征学习的图像分类
-
-https://mp.weixin.qq.com/s/d9XmDCahK6UBlYWhI0D5jQ
-
-深度线性神经网络也能做非线性计算，OpenAI使用进化策略新发现
 
 https://mp.weixin.qq.com/s/PtQSktfTpqzWB92jelgbTA
 

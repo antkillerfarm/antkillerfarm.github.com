@@ -165,6 +165,10 @@ http://blog.csdn.net/haluoluo211/article/details/77918156
 
 caffe python图片训练识别实例
 
+https://mp.weixin.qq.com/s/XxPsbTSiE1M4hIoH0bg0lA
+
+caffe-orc主流ocr算法：CNN+BLSTM+CTC架构实现
+
 ## Caffe2
 
 2017.4，贾扬清推出了全新设计的Caffe2。由于是全新设计，Caffe2和Caffe不兼容，完全可看为是一个新的DL框架。

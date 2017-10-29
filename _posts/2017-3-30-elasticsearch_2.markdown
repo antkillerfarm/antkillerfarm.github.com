@@ -312,4 +312,8 @@ https://mp.weixin.qq.com/s/nIcUBS0lRrOwVUHoWmKecw
 
 爬虫系列之使用scrapy框架
 
+https://mp.weixin.qq.com/s/A2QNr4-LTUNy-H8zE0OgXA
+
+教你用Scrapy建立你自己的数据集
+
 

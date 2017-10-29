@@ -6,6 +6,22 @@ category: DL
 
 # GAN（续）
 
+## KL散度
+
+比较两个分布的差异的最常用指标是KL散度。其定义参见《机器学习（八）》。
+
+## JS散度
+
+因为KL散度不是对称的，有时候将它对称化，即得到JS散度（Jensen–Shannon divergence）：
+
+$$JS\Big(p_1(x),p_2(x)\Big)=\frac{1}{2}KL\Big(p_1(x)\|p_2(x)\Big)+\frac{1}{2}KL\Big(p_2(x)\|p_1(x)\Big)$$
+
+>注：Claude Elwood Shannon，1916～2001，美国数学家，信息论之父。密歇根大学双学士+MIT博士。先后供职于贝尔实验室和MIT。
+
+KL散度和JS散度，也是Ian Goodfellow在原始GAN论文中，给出的评价指标。
+
+虽然KL散度和JS散度，在这里起着距离的作用，但它们**不是距离**，它们不满足距离的三角不等式，因此只能叫“散度”。
+
 ## 神经距离
 
 假设我们可以将实数域分成若干个不相交的区间$$I_1,I_2,\dots,I_K$$，那么就可以估算一下给定分布Z的概率分布：
@@ -320,6 +336,14 @@ https://mp.weixin.qq.com/s/uUSq3irEIcBM35JCYGDPfw
 https://mp.weixin.qq.com/s/nuT6Glyx0-tU7WJyoPji9w
 
 GANs正在多个层面有所突破
+
+https://zhuanlan.zhihu.com/p/30532830
+
+眼见已不为实，迄今最真实的GAN：Progressive Growing of GANs
+
+https://mp.weixin.qq.com/s/d_W0O7LNqlBuZV87Ou9uqw
+
+训练GAN的16个技巧
 
 
 

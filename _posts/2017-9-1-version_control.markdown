@@ -365,6 +365,9 @@ https://mp.weixin.qq.com/s/rMYjsIgFNvv47F4YZjY8SA
 
 如何在K8S上玩转TensorFlow？
 
+https://mp.weixin.qq.com/s/xJaoqHLVFmouaspjaLjoSg
+
+TFX：基于TensorFlow可大规模扩展的机器学习平台
 
 
 
