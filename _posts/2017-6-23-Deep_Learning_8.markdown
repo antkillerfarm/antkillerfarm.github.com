@@ -345,5 +345,9 @@ https://mp.weixin.qq.com/s/d_W0O7LNqlBuZV87Ou9uqw
 
 训练GAN的16个技巧
 
+https://mp.weixin.qq.com/s/6AtZZ434HehQSf_YgbylTw
+
+用100元的支票骗到100万：看看对抗性攻击是怎么为非作歹的
+
 
 

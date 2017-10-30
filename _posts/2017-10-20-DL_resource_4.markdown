@@ -266,3 +266,32 @@ https://mp.weixin.qq.com/s/0Ofh_NSMmvlEZ2JPCffujg
 
 Vicarious发布生成视觉模型:RCN
 
+https://zhuanlan.zhihu.com/p/30561160
+
+2017-最全手势识别/跟踪相关资源大列表分享
+
+https://mp.weixin.qq.com/s/UDAcjmCOUdzbXaAgKWOczQ
+
+深度判别和共享特征学习的图像分类
+
+https://mp.weixin.qq.com/s/PtQSktfTpqzWB92jelgbTA
+
+Representation Learning on Network网络表示学习笔记
+
+https://mp.weixin.qq.com/s/ZDPPWH570Vc6e1irwP1b1Q
+
+精细识别现实世界图像：李飞飞团队提出半监督适应性模型
+
+https://mp.weixin.qq.com/s/4dlWdPOCbYedu02aLAQ04Q
+
+MIT“创世纪”机器学习新系统，自动生成补丁修复Bug
+
+https://mp.weixin.qq.com/s/vRHA3Hf1ivsgKBB2XuECNg
+
+李飞飞论文：神经网络是怎样给一幅图增加文字描述，实现“看图说话”的？
+
+http://mp.weixin.qq.com/s/rS4xCsytYGqBLMUzlyA12A
+
+构建多层感知器神经网络对数字图片进行文本识别
+
+

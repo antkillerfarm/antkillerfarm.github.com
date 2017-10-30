@@ -260,6 +260,10 @@ https://zhuanlan.zhihu.com/p/30533380
 
 Neural Response Generation——关于回复生成工作的一些总结
 
+https://mp.weixin.qq.com/s/ZexnTKHEFKPso5fhZNQfQQ
+
+聊天机器人中用户出行消费意图识别方法研究
+
 # ML参考资源
 
 http://kexue.fm/archives/4638/
@@ -302,5 +306,8 @@ https://mp.weixin.qq.com/s/OW44XEI1t5-oJWmmq4gJvw
 
 从概念到案例：初学者须知的十大机器学习算法
 
+https://mp.weixin.qq.com/s/94IGjVPXZ0FeCILQN33eBQ
+
+遇见大数据可视化：不要错过这么漂亮的数据可视化案例！
 
 

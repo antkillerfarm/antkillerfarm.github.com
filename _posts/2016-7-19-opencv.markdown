@@ -384,4 +384,7 @@ http://info.usherbrooke.ca/hlarochelle/neural_networks/description.html
 
 Hugo Larochelle: Online Course on Neural Networks
 
+http://www.stat.cmu.edu/~ryantibs/statml/
+
+CMU：Statistical Machine Learning
 

@@ -228,7 +228,7 @@ https://www.zhihu.com/question/56024942
 
 上图是Xception中的卷积运算depthwise separable convolution的示意图。
 
-它包含一个深度方面的卷积（一个为每个通道单独执行的空间卷积），后面跟着一个逐点的卷积（一个跨通道的 1×1 卷积）。我们可以将其看作是首先求跨一个2D空间的相关性，然后再求跨一个1D空间的相关性。可以看出，这种2D+1D映射学起来比全 3D 映射更加简单。
+它包含一个深度方面的卷积（一个为每个通道单独执行的空间卷积，depthwise convolution），后面跟着一个逐点的卷积（一个跨通道的1×1卷积，pointwise convolution）。我们可以将其看作是首先求跨一个2D空间的相关性，然后再求跨一个1D空间的相关性。可以看出，这种2D+1D映射学起来比全 3D 映射更加简单。
 
 在ImageNet数据集上，Xception的表现稍稍优于Inception v3，而且在一个有17000类的更大规模的图像分类数据集上的表现更是好得多。而它的模型参数的数量仅和Inception一样多。
 
@@ -241,6 +241,16 @@ https://www.zhihu.com/question/56024942
 https://github.com/fchollet/keras/blob/master/keras/applications/xception.py
 
 >Francois Chollet，法国人。现为Google研究员。Keras的作者。
+
+参考：
+
+http://blog.csdn.net/mao_xiao_feng/article/details/78003476
+
+tf.nn.depthwise_conv2d如何实现深度卷积?
+
+http://blog.csdn.net/mao_xiao_feng/article/details/78002811
+
+tf.nn.separable_conv2d如何实现深度可分卷积?
 
 和Xception类似的还有MobileNets。
 

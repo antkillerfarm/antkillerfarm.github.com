@@ -24,7 +24,7 @@ https://mp.weixin.qq.com/s/m_2LE2QN_8_a1hti6G0Cow
 
 Netflix开源稀疏数据专用神经网络库：Vectorflow
 
-## Other
+## Capsule
 
 https://mp.weixin.qq.com/s/Tx9JJ0cIo_rH7BDjd_hkvw
 
@@ -36,7 +36,13 @@ https://zhuanlan.zhihu.com/p/29435406
 
 https://mp.weixin.qq.com/s/5Af_K_BGrD5RomgpWxJNBQ
 
-Hinton大神Capsule论文首次公布，深度学习基石CNN或被取代 
+Hinton大神Capsule论文首次公布，深度学习基石CNN或被取代
+
+https://mp.weixin.qq.com/s/wFoRtTKW40qgYmlXY0dRDw
+
+一篇新的Capsule论文：优于基准CNN
+
+## Other
 
 https://www.jiqizhixin.com/articles/2017-07-27-2
 
@@ -394,27 +400,4 @@ http://www.jianshu.com/p/f9ca56d6407d
 
 深度学习在股票市场的应用
 
-https://mp.weixin.qq.com/s/UDAcjmCOUdzbXaAgKWOczQ
-
-深度判别和共享特征学习的图像分类
-
-https://mp.weixin.qq.com/s/PtQSktfTpqzWB92jelgbTA
-
-Representation Learning on Network网络表示学习笔记
-
-https://mp.weixin.qq.com/s/ZDPPWH570Vc6e1irwP1b1Q
-
-精细识别现实世界图像：李飞飞团队提出半监督适应性模型
-
-https://mp.weixin.qq.com/s/4dlWdPOCbYedu02aLAQ04Q
-
-MIT“创世纪”机器学习新系统，自动生成补丁修复Bug
-
-https://mp.weixin.qq.com/s/vRHA3Hf1ivsgKBB2XuECNg
-
-李飞飞论文：神经网络是怎样给一幅图增加文字描述，实现“看图说话”的？
-
-http://mp.weixin.qq.com/s/rS4xCsytYGqBLMUzlyA12A
-
-构建多层感知器神经网络对数字图片进行文本识别
 

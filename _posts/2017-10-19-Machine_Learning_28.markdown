@@ -136,6 +136,10 @@ https://mp.weixin.qq.com/s/0Rdet35LHAXQJuo-r_THXg
 
 如何为LSTM重新构建输入数据（Keras）
 
+https://mp.weixin.qq.com/s/TGjfd3ahYSH_QYX_2j0DqQ
+
+基于Keras的LSTM多变量时间序列预测
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。

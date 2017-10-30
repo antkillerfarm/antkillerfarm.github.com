@@ -116,7 +116,11 @@ $$Q(s,a)=R(s,a)+\gamma \max(Q(\tilde s,\tilde a))$$
 
 其中，(s,a)表示当前的state和action，$$(\tilde s,\tilde a)$$表示下一个state和action，$$0 \le \gamma < 1$$为学习参数。
 
-在无监督的情况下，
+在无监督的情况下，agent不断从一个状态转至另一状态进行探索，直到到达目标。我们将agent的每一次探索（从任意初始状态到目标状态的过程）称为一个**episode**。
+
+Q-Learning算法的计算步骤如下：
+
+
 
 参考：
 
