@@ -120,6 +120,11 @@ $$Q(s,a)=R(s,a)+\gamma \max(Q(\tilde s,\tilde a))$$
 
 Q-Learning算法的计算步骤如下：
 
+**Step 1**：给定参数$$\gamma$$和reward矩阵R。
+
+**Step 2**：初始化Q=0。
+
+**Step 3**：For each episode:
 
 
 参考：

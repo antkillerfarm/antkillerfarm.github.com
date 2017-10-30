@@ -20,9 +20,23 @@ Deep Learning虽然在学术界的大牛看来，属于旧概念的炒作。然�
 >从派系而言，周属于统计学派，对深度学习并不感冒。然而《机器学习》一书（又称西瓜书），已经成为ML入门的必读经典，因此这里也把它列为主要的参考文献之一。   
 >在深度学习统治学界的时代，周依然能用gcForest、mcODM之类的算法，撑起统计学派的大旗，堪称国内一流的学者。
 
-《Deep Learning Tutorial》，李宏毅著（台湾大学电机工程学助理教授）。
-
 http://www.useit.com.cn/thread-13132-1-1.html
+
+《Deep Learning Tutorial》，李宏毅著。
+
+http://speech.ee.ntu.edu.tw/~tlkagk/courses.html
+
+台湾大学李宏毅副教授的深度学习课程
+
+>李宏毅，国立台湾大学硕士（2010年）+博士（2012年）。国立台湾大学计算机系助理教授。
+
+https://www.csie.ntu.edu.tw/~yvchen/f106-adl/syllabus.html
+
+李宏毅的搭档，美女陈蕴侬的深度学习课程
+
+![](/images/article/yvchen.jpg)
+
+>陈蕴侬，国立台湾大学本硕（2011年）+CMU博士（2015年）。国立台湾大学计算机系助理教授。
 
 《Deep Learning》，Ian Goodfellow、Yoshua Bengio、Aaron Courville著。
 

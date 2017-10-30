@@ -268,10 +268,6 @@ http://www.cs.columbia.edu/~blei/seminar/2016_discrete_data/index.html
 
 Probabilistic Models of Discrete Data
 
-http://speech.ee.ntu.edu.tw/~tlkagk/courses.html
-
-台湾大学李宏毅副教授的深度学习课程
-
 http://mp.weixin.qq.com/s/dtg-alezht56mu_vOA4Lrg
 
 14所世界顶级名校在线免费算法课程。这里的课程主要是非机器学习类的计算机算法。
