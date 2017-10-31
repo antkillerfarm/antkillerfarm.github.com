@@ -6,6 +6,14 @@ category: DL
 
 # GAN（续）
 
+## 正样本分布
+
+如上所述，一般的正样本分布是很难给出概率密度函数的。然而，我们可以换个角度思考问题。
+
+假设有一批服从某个指定分布的数据$$Z=(z_1,z_2,\dots,z_N)$$，根据概率论的相关定义，我们至少可以使用**离散采样**的方法，根据Z中的样本分布，来近似求出Z的指定分布。下文如无特殊指出，**均以Z中的样本分布来代替Z的指定分布，简称Z的分布**。
+
+那么接着就有另一个问题：**如何评估$$G(X,\theta)$$生成的样本的分布和Z的分布之间的差异呢？**
+
 ## KL散度
 
 比较两个分布的差异的最常用指标是KL散度。其定义参见《机器学习（八）》。
@@ -317,37 +325,6 @@ https://mp.weixin.qq.com/s/3Aq1HXpBzgNdcB130tCKbQ
 
 GAN网络图像翻译机：图像复原、模糊变清晰、素描变彩图
 
-https://mp.weixin.qq.com/s/mPtv1fQd0NBgdY2b_ALNTQ
-
-机器之心GitHub项目：GAN完整理论推导与实现，Perfect！
-
-https://mp.weixin.qq.com/s/NFqTpSXtFdP43MBeb3Ovrw
-
-GAN眼中的图像翻译
-
-http://blog.csdn.net/amds123/article/details/70199708
-
-生成对抗网络GAN最近在NLP领域有哪些应用？
-
-https://mp.weixin.qq.com/s/uUSq3irEIcBM35JCYGDPfw
-
-生成对抗网络综述：从架构到训练技巧，看这篇论文就够了
-
-https://mp.weixin.qq.com/s/nuT6Glyx0-tU7WJyoPji9w
-
-GANs正在多个层面有所突破
-
-https://zhuanlan.zhihu.com/p/30532830
-
-眼见已不为实，迄今最真实的GAN：Progressive Growing of GANs
-
-https://mp.weixin.qq.com/s/d_W0O7LNqlBuZV87Ou9uqw
-
-训练GAN的16个技巧
-
-https://mp.weixin.qq.com/s/6AtZZ434HehQSf_YgbylTw
-
-用100元的支票骗到100万：看看对抗性攻击是怎么为非作歹的
 
 
 

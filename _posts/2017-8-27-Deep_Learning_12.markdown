@@ -4,7 +4,41 @@ title:  深度学习（十二）——SPPNet, Fast R-CNN
 category: DL 
 ---
 
-# RCNN（续）
+# RCNN
+
+## Selective Search（续）
+
+其中合并规则如下：优先合并以下四种区域：
+
+1.颜色（颜色直方图）相近的。
+
+2.纹理（梯度直方图）相近的。
+
+3.合并后总面积小的：保证合并操作的尺度较为均匀，避免一个大区域陆续“吃掉”其他小区域（例：设有区域a-b-c-d-e-f-g-h。较好的合并方式是：ab-cd-ef-gh -> abcd-efgh -> abcdefgh。不好的合并方法是：ab-c-d-e-f-g-h ->abcd-e-f-g-h ->abcdef-gh -> abcdefgh）
+
+4.合并后，总面积在其bounding box中所占比例大的：保证合并后形状规则。
+
+Step2和Step3可参考论文：
+
+《Selective Search for Object Recognition》
+
+中文版：
+
+http://blog.csdn.net/surgewong/article/details/39316931
+
+http://blog.csdn.net/charwing/article/details/27180421
+
+Selective Search的效果类似下图：
+
+![](/images/article/selective_search.png)
+
+![](/images/article/rcnn_3.png)
+
+上图中的那些方框，就是bounding box。
+
+一般使用IOU（Intersection over Union，交并比）指标，来衡量两个bounding box的重叠度：
+
+$$IOU(A,B)=\frac{A \cap B}{A \cup B}$$
 
 ## 非极大值抑制（NMS）
 
@@ -223,28 +257,4 @@ ROI Pooling有两个输入：feature map和ROI区域。Pooling方式一般为Max
 ![](/images/article/fast_rcnn_multi_task.png)
 
 由于两个Task的信息互为补充，使得分类预测任务的softmax准确率大为提升，SVM也就没有存在的必要了。
-
-## 全连接层提速
-
-Fast R-CNN的论文中还提到了全连接层提速的概念。这个概念本身和Fast R-CNN倒没有多大关系。因此，完全可以将之推广到其他场合。
-
-![](/images/article/fc_svd.png)
-
-它的主要思路是，在两个大的FC层（假设尺寸为u、v）之间，利用SVD算法加入一个小的FC层（假设尺寸为t），从而减少了计算量。
-
-$$u\times v\to u\times t+t\times v$$
-
-## 总结
-
-![](/images/article/fast_rcnn_p.png)
-
-参考：
-
-https://zhuanlan.zhihu.com/p/24780395
-
-Fast R-CNN
-
-http://blog.csdn.net/shenxiaolu1984/article/details/51036677
-
-Fast RCNN算法详解
 

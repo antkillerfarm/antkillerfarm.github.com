@@ -140,6 +140,10 @@ https://mp.weixin.qq.com/s/TGjfd3ahYSH_QYX_2j0DqQ
 
 基于Keras的LSTM多变量时间序列预测
 
+https://mp.weixin.qq.com/s/GqaXADRE7Hvxr-6-QapMIg
+
+你必须知道的keras中最常用的深度学习的API
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。

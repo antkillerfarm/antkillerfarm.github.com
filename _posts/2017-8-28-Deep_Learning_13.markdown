@@ -4,6 +4,32 @@ title:  深度学习（十三）——Faster R-CNN, YOLO
 category: DL 
 ---
 
+# Fast R-CNN（续）
+
+## 全连接层提速
+
+Fast R-CNN的论文中还提到了全连接层提速的概念。这个概念本身和Fast R-CNN倒没有多大关系。因此，完全可以将之推广到其他场合。
+
+![](/images/article/fc_svd.png)
+
+它的主要思路是，在两个大的FC层（假设尺寸为u、v）之间，利用SVD算法加入一个小的FC层（假设尺寸为t），从而减少了计算量。
+
+$$u\times v\to u\times t+t\times v$$
+
+## 总结
+
+![](/images/article/fast_rcnn_p.png)
+
+参考：
+
+https://zhuanlan.zhihu.com/p/24780395
+
+Fast R-CNN
+
+http://blog.csdn.net/shenxiaolu1984/article/details/51036677
+
+Fast RCNN算法详解
+
 # Faster R-CNN
 
 Faster-RCNN是任少卿2016年在MSRA提出的新算法。Ross Girshick和何恺明也是论文的作者之一。

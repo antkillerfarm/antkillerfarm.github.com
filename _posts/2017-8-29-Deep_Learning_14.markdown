@@ -86,6 +86,12 @@ Hard Negative Mining是机器学习领域的一个常用技巧。
 
 在训练过程中，采用了Hard Negative Mining的策略（根据confidence loss对所有的box进行排序，使正负例的比例保持在1:3）来平衡正负样本的比率。
 
+参考：
+
+https://mp.weixin.qq.com/s/D0JaJaHeNX4kljSTxTsAAw
+
+一文概览卷积神经网络中的类别不均衡问题
+
 ## Caffe实现的细节问题
 
 ![](/images/article/ssd_4.png)

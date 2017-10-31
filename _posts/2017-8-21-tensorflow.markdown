@@ -356,6 +356,10 @@ http://blog.csdn.net/wiinter_fdd/article/details/72821923
 
 Tensorflow中的模型持久化
 
+https://mp.weixin.qq.com/s/3GfxnwzIeeQj1LVSYKnZjQ
+
+如何保存和恢复TensorFlow训练的模型？
+
 ## TFRecord
 
 TFRecord是TensorFlow官方定义的存放样本数据文件。

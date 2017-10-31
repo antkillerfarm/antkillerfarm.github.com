@@ -42,6 +42,10 @@ https://mp.weixin.qq.com/s/wFoRtTKW40qgYmlXY0dRDw
 
 一篇新的Capsule论文：优于基准CNN
 
+https://mp.weixin.qq.com/s/9Vqg3HkDCfl1qMDIN-eCGQ
+
+Geoffrey Hinton那篇备受关注的Capsule论文公开了
+
 ## Other
 
 https://www.jiqizhixin.com/articles/2017-07-27-2

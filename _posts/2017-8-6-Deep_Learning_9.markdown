@@ -4,6 +4,42 @@ title:  深度学习（九）——fine-tuning, 李飞飞, 花式卷积
 category: DL 
 ---
 
+# GAN（续）
+
+## 参考
+
+https://mp.weixin.qq.com/s/mPtv1fQd0NBgdY2b_ALNTQ
+
+机器之心GitHub项目：GAN完整理论推导与实现，Perfect！
+
+https://mp.weixin.qq.com/s/NFqTpSXtFdP43MBeb3Ovrw
+
+GAN眼中的图像翻译
+
+http://blog.csdn.net/amds123/article/details/70199708
+
+生成对抗网络GAN最近在NLP领域有哪些应用？
+
+https://mp.weixin.qq.com/s/uUSq3irEIcBM35JCYGDPfw
+
+生成对抗网络综述：从架构到训练技巧，看这篇论文就够了
+
+https://mp.weixin.qq.com/s/nuT6Glyx0-tU7WJyoPji9w
+
+GANs正在多个层面有所突破
+
+https://zhuanlan.zhihu.com/p/30532830
+
+眼见已不为实，迄今最真实的GAN：Progressive Growing of GANs
+
+https://mp.weixin.qq.com/s/d_W0O7LNqlBuZV87Ou9uqw
+
+训练GAN的16个技巧
+
+https://mp.weixin.qq.com/s/6AtZZ434HehQSf_YgbylTw
+
+用100元的支票骗到100万：看看对抗性攻击是怎么为非作歹的
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
@@ -228,46 +264,5 @@ https://www.zhihu.com/question/56024942
 
 上图是Xception中的卷积运算depthwise separable convolution的示意图。
 
-它包含一个深度方面的卷积（一个为每个通道单独执行的空间卷积，depthwise convolution），后面跟着一个逐点的卷积（一个跨通道的1×1卷积，pointwise convolution）。我们可以将其看作是首先求跨一个2D空间的相关性，然后再求跨一个1D空间的相关性。可以看出，这种2D+1D映射学起来比全 3D 映射更加简单。
-
-在ImageNet数据集上，Xception的表现稍稍优于Inception v3，而且在一个有17000类的更大规模的图像分类数据集上的表现更是好得多。而它的模型参数的数量仅和Inception一样多。
-
-论文：
-
-《Xception: Deep Learning with Depthwise Separable Convolutions》
-
-代码：
-
-https://github.com/fchollet/keras/blob/master/keras/applications/xception.py
-
->Francois Chollet，法国人。现为Google研究员。Keras的作者。
-
-参考：
-
-http://blog.csdn.net/mao_xiao_feng/article/details/78003476
-
-tf.nn.depthwise_conv2d如何实现深度卷积?
-
-http://blog.csdn.net/mao_xiao_feng/article/details/78002811
-
-tf.nn.separable_conv2d如何实现深度可分卷积?
-
-和Xception类似的还有MobileNets。
-
-论文：
-
-《MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications》
-
-代码：
-
-https://github.com/Zehaos/MobileNet
-
-![](/images/article/dwl_pwl.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/f3bmtbCY5BfA4v3movwLVg
-
-向手机端神经网络进发：MobileNet压缩指南
 
 

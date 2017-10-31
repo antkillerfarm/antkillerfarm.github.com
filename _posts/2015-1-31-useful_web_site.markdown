@@ -286,7 +286,9 @@ https://mp.weixin.qq.com/s/udl4hQQXY4FQDPLsWERhkg
 
 史上最全最详细无线通信频率分配表
 
+https://www.floydhub.com
 
+一个提供深度模型训练和部署的云服务平台
 
 ## 有用的blog
 

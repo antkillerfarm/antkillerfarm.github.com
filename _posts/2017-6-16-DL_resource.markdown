@@ -432,6 +432,10 @@ https://mp.weixin.qq.com/s/dY5r_KJVkpipluo7ji9H6w
 
 如何用“摄像头秒解数独”
 
+https://mp.weixin.qq.com/s/HTj9OozYdq_VLJuGKaiEAg
+
+百行代码构建神经网络黑白图片自动上色系统
+
 ## 量子计算 & 遗传算法
 
 https://www.zhihu.com/question/28171555

@@ -264,6 +264,10 @@ https://mp.weixin.qq.com/s/ZexnTKHEFKPso5fhZNQfQQ
 
 聊天机器人中用户出行消费意图识别方法研究
 
+https://mp.weixin.qq.com/s/HHPp0JJzpY3q0nC-DF3F3g
+
+阿里：语言卷积神经网络应用于图像标题生成的经验学习
+
 # ML参考资源
 
 http://kexue.fm/archives/4638/
