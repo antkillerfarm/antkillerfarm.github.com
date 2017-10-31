@@ -101,6 +101,10 @@ https://mp.weixin.qq.com/s/hY5cEug3xEpkkPE1X0Ykvg
 
 GBDT详解
 
+https://mp.weixin.qq.com/s/-AwJvJ_YQ7p_yo5TNHTOfw
+
+决策树的python实现
+
 # 关联规则挖掘
 
 ## 基本概念

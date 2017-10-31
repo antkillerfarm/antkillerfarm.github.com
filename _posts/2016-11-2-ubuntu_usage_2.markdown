@@ -373,4 +373,6 @@ VNCSERVERARGS[1]="-geometry 1280x1024"
 
 http://www.tecmint.com/install-tightvnc-remote-desktop/
 
+Install TightVNC Server in RHEL/CentOS and Fedora to Access Remote Desktops
+
 

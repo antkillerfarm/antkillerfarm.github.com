@@ -294,4 +294,7 @@ http://mp.weixin.qq.com/s/rS4xCsytYGqBLMUzlyA12A
 
 构建多层感知器神经网络对数字图片进行文本识别
 
+https://mp.weixin.qq.com/s/sbuqNhIVTDUe4Q6BxS5fWw
+
+盘点金融领域里常用的深度学习模型
 
