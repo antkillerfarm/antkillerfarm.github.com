@@ -30,7 +30,17 @@ $$R_t=r_t+\gamma(r_{t+1}+\gamma (r_{t+2}+\dots))=r_t+\gamma R_{t+1}$$
 
 **Policy**就是我们的算法追求的目标，可以看做一个函数，在输入state的时候，能够返回此时应该执行的action或者action的概率分布。
 
+$$\pi(a | s) = P[A_t = a | S_t = s]$$
+
 **Value**，价值函数，表示在输入state，action的时候，能够返回在state下，执行这个action能得到的Discounted future reward的（期望）值。
+
+state-value function：
+
+$$v_{\pi}(s) = E_{\pi} [G_t | S_t = s]$$
+
+action-value function：
+
+$$q_{\pi}(s; a) = E_{\pi} [G_t | S_t = s; A_t = a]$$
 
 **Transition model**是说环境本身的结构与特性：当在state执行action的时候，系统会进入的下一个state，也包括可能收到的reward。
 
@@ -145,9 +155,7 @@ Q-Learning算法的计算步骤如下：
 
 $$\pi (s)=\arg \max_a(Q(s,a))$$
 
-这里的$$\pi$$表示策略。
-
-由于Q-Learning算法主要基于Q矩阵的值，因此它是一种Value-based RL。
+由于原始的Q-Learning算法主要基于Q矩阵的值，因此它是一种Value-based RL。
 
 参考：
 
@@ -159,11 +167,23 @@ http://blog.csdn.net/young_gy/article/details/73485518
 
 强化学习之Q-learning简介
 
-## Bellman equation
+## Markov Decision Process
 
-上面的例子中，状态之间的转移是完全随机的，也就是等概率的。如果考虑状态转移概率的话，Bellman equation可改为如下形式：
+在上面原始的Q-Learning例子中，状态之间的转移是完全随机的，也就是等概率的，这样的过程一般被称作Markov Reward Processes。如果考虑状态转移概率的话，Bellman equation可改为如下形式：
 
 $$v = \mathcal{R} + \gamma \mathcal{P}v$$
 
-这里的
+这里的$$\mathcal{P}$$是状态转移概率矩阵（也叫作Decision矩阵）。上述过程一般被称作Markov Decision Process。
+
+这里的Bellman equation是线性方程，它的直接解法如下：
+
+$$(I-\gamma \mathcal{P})v = \mathcal{R}$$
+
+$$v = (I-\gamma \mathcal{P})^{-1}\mathcal{R}$$
+
+然而这个方法的复杂度是$$O(n^3)$$（n是状态的个数），这对于大的MDP来说，并不好用。这种情况下，常用的解法有：Dynamic programming（动态规划）、Monte-Carlo evaluation和Temporal-Difference learning。
+
+
+
+
 

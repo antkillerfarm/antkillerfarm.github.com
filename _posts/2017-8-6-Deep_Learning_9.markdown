@@ -40,6 +40,10 @@ https://mp.weixin.qq.com/s/6AtZZ434HehQSf_YgbylTw
 
 用100元的支票骗到100万：看看对抗性攻击是怎么为非作歹的
 
+https://mp.weixin.qq.com/s/df51nYaA-uz7vd4WbBuE8g
+
+GAN货：生成对抗网络知识资料全集
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。

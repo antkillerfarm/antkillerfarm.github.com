@@ -369,5 +369,8 @@ https://mp.weixin.qq.com/s/xJaoqHLVFmouaspjaLjoSg
 
 TFX：基于TensorFlow可大规模扩展的机器学习平台
 
+https://mp.weixin.qq.com/s/Yp2zE85VCx8q67YXvuw5qw
+
+TensorFlow引入了动态图机制Eager Execution
 
 

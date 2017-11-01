@@ -434,4 +434,8 @@ https://mp.weixin.qq.com/s/jBULfMR0_7Ms9nc5CLLIFQ
 
 Python的开源人脸识别库：离线识别率高达99.38%
 
+https://zhuanlan.zhihu.com/p/30630608
+
+Python和MATLAB交互的基本操作
+
 

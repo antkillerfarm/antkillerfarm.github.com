@@ -30,7 +30,9 @@ https://wenku.baidu.com/view/21877fea551810a6f524868c.html
 
 ## 函数连续性和神经网络
 
-理论上说，多层神经网络只要有足够的深度和宽度，就可以任意逼近任意**连续函数**。然而从网络训练的角度来说，只有Lipschitz连续的函数才一定会收敛，否则的话，可能会出现梯度爆炸的情况。
+理论上说，多层神经网络只要有足够的深度和宽度，就可以任意逼近任意**连续函数**。（严格的说，这里的连续函数必须是Borel可测函数。）
+
+然而从网络训练的角度来说，只有Lipschitz连续的函数才一定会收敛，否则的话，可能会出现梯度爆炸的情况。
 
 ## 参考
 
@@ -61,6 +63,10 @@ http://www.doc88.com/p-2337088655000.html
 https://zhuanlan.zhihu.com/p/25590725
 
 神经网络为什么能够无限逼近任意连续函数？
+
+https://max.book118.com/html/2015/0401/14126427.shtm
+
+浅谈Borel可测函数及其性质
 
 # 复变函数
 
@@ -222,8 +228,6 @@ https://mp.weixin.qq.com/s/NlJ4-b5SjIjPGgvLUuSxFw
 http://blog.csdn.net/luo123n/article/details/48574123
 
 PMI（Pointwise Mutual Information）
-
-borel function
 
 ## 压缩感知
 

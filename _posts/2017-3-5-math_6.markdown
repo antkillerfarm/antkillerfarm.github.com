@@ -161,7 +161,7 @@ Lipschitz连续的直观图示如上所示。**该曲线上的所有点的切线
 
 这个的定义比较简单：函数的导数是连续的。直观来说就是：**函数曲线光滑，没有尖。**
 
-由“闭区间的连续函数必有界”可知，Continuously differentiable比Lipschitz continuity更严格。
+由“闭区间的连续函数必有界”可知，Continuously differentiable一定是Lipschitz continuity的。
 
 综上：
 

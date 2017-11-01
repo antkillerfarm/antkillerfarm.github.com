@@ -329,6 +329,10 @@ https://mp.weixin.qq.com/s/x_OPSwc82d1IoWPj7xb6zg
 
 那些你不知道的王者荣耀高并发背后的故事
 
+https://mp.weixin.qq.com/s/F0Hi5BtUBFH_9bSzgeZLhw
+
+AIOps核心任务：任务机器人在金融领域中的落地
+
 # 知识图谱参考资源
 
 https://wenku.baidu.com/view/38ad3ef7e109581b6bd97f19227916888586b959.html
