@@ -290,6 +290,10 @@ https://www.floydhub.com
 
 一个提供深度模型训练和部署的云服务平台
 
+https://mp.weixin.qq.com/s/nwhSDxz1Pu2JCU_IeMR9ww
+
+Lua程序逆向之Luac文件格式分析
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

@@ -193,6 +193,10 @@ https://mp.weixin.qq.com/s/GobKiuxgZv0-ufSRBpTcIA
 
 Ian Goodfellow ICCV2017演讲：解读GAN的原理与应用
 
+https://mp.weixin.qq.com/s/TIgRVbnZYtrGUCDNLcL1uw
+
+GAN的入门与实践
+
 https://mp.weixin.qq.com/s/oCDlhzjOYTIhsr5JuoRCJQ
 
 IRGAN：大一统信息检索模型的博弈竞争

@@ -333,6 +333,10 @@ https://mp.weixin.qq.com/s/F0Hi5BtUBFH_9bSzgeZLhw
 
 AIOps核心任务：任务机器人在金融领域中的落地
 
+https://mp.weixin.qq.com/s/bjlDHFLwxjej2t8iDhVb1A
+
+Spark Streaming消费Kafka数据的两种方案
+
 # 知识图谱参考资源
 
 https://wenku.baidu.com/view/38ad3ef7e109581b6bd97f19227916888586b959.html

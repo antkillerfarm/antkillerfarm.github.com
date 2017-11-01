@@ -188,6 +188,10 @@ https://mp.weixin.qq.com/s/Jf0gbbh0YQTlkeaPjAlnJg
 
 无需复杂深度学习算法，基于计算机视觉使用Python和OpenCV计算道路交通
 
+https://mp.weixin.qq.com/s/Da6kSPipbl2roKhdW8xC2A
+
+图像各向异性滤波
+
 ## 论文
 
 《Moving Gradients: A Path-Based Method for Plausible Image Interpolation》：视频帧插值算法
