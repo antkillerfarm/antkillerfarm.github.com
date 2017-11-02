@@ -298,3 +298,9 @@ https://mp.weixin.qq.com/s/sbuqNhIVTDUe4Q6BxS5fWw
 
 盘点金融领域里常用的深度学习模型
 
+https://mp.weixin.qq.com/s/R6vZU_gBaODsh1XtsjTpFA
+
+MIT与FAIR提出「mixup」：利用数据和标签的随机线性插值提高神经网络的健壮性
+
+
+

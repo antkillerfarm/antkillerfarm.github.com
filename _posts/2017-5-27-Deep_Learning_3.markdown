@@ -158,6 +158,10 @@ http://www.qingruanit.net/blog/23930/note5837.html
 
 卷积神经网络（CNN）学习算法之----基于LeNet网络的中文验证码识别
 
+https://mp.weixin.qq.com/s/XiaAPd20YxbM0wDiSTAYMg
+
+深度学习之卷积神经网络(CNN)的模型结构
+
 # Autoencoder
 
 Bengio在2003年的《A neural probabilistic language model》中指出，维度过高，会导致每次学习，都会强制改变大部分参数。

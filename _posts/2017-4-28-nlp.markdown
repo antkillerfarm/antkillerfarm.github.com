@@ -281,6 +281,14 @@ http://jena.apache.org/
 
 jena是一个语义网络、知识图谱相关的软件。
 
+http://www.statmt.org/moses/
+
+moses是一个基于统计的机器翻译工具。
+
+http://drools.org/
+
+一个规则引擎软件
+
 ## NLPchina
 
 NLPchina(中国自然语言处理开源组织)旗下有许多好用的工具。

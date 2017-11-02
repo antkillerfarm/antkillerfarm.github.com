@@ -174,7 +174,11 @@ http://blog.csdn.net/u013709270/article/details/72967462
 
 ## MDP
 
-强化学习任务通常用马尔可夫决策过程（Markov Decision Process）来描述。
+强化学习任务通常用马尔可夫决策过程（Markov Decision Process）来描述：
+
+$$<\mathcal{S},\mathcal{A},\mathcal{P},\mathcal{R},\gamma>$$
+
+这个五元组依次代表：states、actions、state transition probability matrix、reward function、discount factor。
 
 >MDP中有两个对象：Agent和Environment。   
 >1.Environment处于一个特定的状态（State）（如打砖块游戏中挡板的位置、各个砖块的状态等）。   
@@ -206,7 +210,9 @@ $$R=r_1+r_2+\dots+r_n$$
 
 $$R_t=r_t+r_{t+1}+\dots+r_n$$
 
-这个过程又称为Markov reward process。
+这个过程又称为Markov Reward Process：
 
+$$<\mathcal{S},\mathcal{P},\mathcal{R},\gamma>$$
 
+这个四元组依次代表：states、state transition probability matrix、reward function、discount factor
 

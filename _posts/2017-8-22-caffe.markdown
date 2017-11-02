@@ -94,7 +94,9 @@ http://yanglei.me/gen_proto/
 
 ## 术语
 
-**blob**：Caffe中用于数据操作和交换的数据结构。简单来说，就是一个4维数组，格式如下表所示：
+### blob
+
+Caffe中用于数据操作和交换的数据结构。简单来说，就是一个4维数组，格式如下表所示：
 
 | 名称 | 格式 | 
 |:--:|:--:|
@@ -104,9 +106,13 @@ http://yanglei.me/gen_proto/
 
 >注：在API层面，Caffe和OpenVX顺序完全相反，但是由于OpenVX是列优先存储，因此在内存存储方面，两者的格式正好完全一致。
 
-**lr_mult**：学习率因子。基数是solver在运行时采用的学习率。
+### lr_mult
 
-**decay_mult**：衰减因子。基数含义同上。
+学习率因子。基数是solver在运行时采用的学习率。
+
+### decay_mult
+
+衰减因子。基数含义同上。
 
 lr_mult参数和decay_mult参数的存在，允许不同的层有不同的学习率或衰减率。
 
@@ -125,9 +131,13 @@ param {
 
 上面这组参数被实践证明，是比较work的参数。
 
-**flatten**：将n * c * h * w的blob，转换成n * (c * h * w)的结构。
+### flatten
 
-**crop**：Crop层的输入（bottom blobs）有两个，让我们假设为A和B，输出（top）为C。
+将n * c * h * w的blob，转换成n * (c * h * w)的结构。
+
+### crop
+
+Crop层的输入（bottom blobs）有两个，让我们假设为A和B，输出（top）为C。
 
 A：要进行裁切的bottom。
 
@@ -136,6 +146,26 @@ B：裁切的参考输入。
 参数：axis=1，offset=（25,128,128）
 
 C：**C = A[: , 25: 25+B.shape[1] , 128: 128+B.shape[2] , 128: 128+B.shape[3] ]**
+
+### slice
+
+{% highlight txt %}
+layer {
+  name: "data_each"
+  type: "Slice"
+  bottom: "data_all"
+  top: "data_classfier"
+  top: "data_boundingbox"
+  top: "data_facialpoints"
+  slice_param {
+    axis: 0
+    slice_point: 150
+    slice_point: 200
+  }
+}
+{% endhighlight %}
+
+其中slice_point的个数必须等于top的个数减一。输入的data_all维度为$$(250\times 3\times 24 \times 24)$$，拆分后的3个输出的维度依次为$$(150\times 3\times 24 \times 24),(50\times 3\times 24 \times 24),(50\times 3\times 24 \times 24)$$。
 
 ## 代码
 

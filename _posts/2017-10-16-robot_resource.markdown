@@ -318,4 +318,16 @@ https://mp.weixin.qq.com/s/94IGjVPXZ0FeCILQN33eBQ
 
 遇见大数据可视化：不要错过这么漂亮的数据可视化案例！
 
+https://mp.weixin.qq.com/s/qO-fratGj66wpQPMLASxFw
+
+从贝叶斯定理到概率分布：综述概率论基本定义
+
+https://mp.weixin.qq.com/s/MuV_kamfsUgcradKIaXGbw
+
+逻辑回归（Logistic Regression）模型简介
+
+https://zhuanlan.zhihu.com/p/30383356
+
+掌握机器学习数学基础之信息论及其他
+
 

@@ -46,6 +46,10 @@ https://mp.weixin.qq.com/s/9Vqg3HkDCfl1qMDIN-eCGQ
 
 Geoffrey Hinton那篇备受关注的Capsule论文公开了
 
+https://mp.weixin.qq.com/s/8U3vFaf3SDCYnWy4lQv6uw
+
+代替反向传播的另一种深度学习算法：离散优化
+
 ## Other
 
 https://www.jiqizhixin.com/articles/2017-07-27-2

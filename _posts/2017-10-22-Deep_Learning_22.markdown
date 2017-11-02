@@ -58,6 +58,10 @@ https://zhuanlan.zhihu.com/p/30242073
 
 人脸识别中的迁移学习简介（Transfer Learning）
 
+https://mp.weixin.qq.com/s/rVYWV-LsbmA4QhC6207SWA
+
+14篇论文为你呈现“迁移学习”研究全貌
+
 # 语音识别
 
 Connectionist Temporal Classification，是一种改进的RNN模型。它主要解决的是时序模型中，输入数大于输出数，输入输出如何对齐的问题。

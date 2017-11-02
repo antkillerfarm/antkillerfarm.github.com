@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十五）——强化学习
+title:  机器学习（二十五）——强化学习, Q-learning, 动态规划
 category: ML 
 ---
 
@@ -64,10 +64,6 @@ $$q_{\pi}(s; a) = E_{\pi} [G_t | S_t = s; A_t = a]$$
 
 ![](/images/article/RL_3.png)
 
-## Partial observability
-
-部分可见的情况下，agent state $$\neq$$ environment state，这时一般叫做partially observable Markov decision process(POMDP)。
-
 ## 参考
 
 https://mp.weixin.qq.com/s/f6sq8cSaU1cuzt7jhsK8Ig
@@ -90,7 +86,7 @@ http://mp.weixin.qq.com/s/gHM7qh7UTKzatdg34cgfDQ
 
 强化学习全解
 
-## Q-learning
+# Q-learning
 
 Q-learning是强化学习中很重要的算法，也是最早被引入DL领域的强化学习算法，对它的研究催生了Deep Q-learning Networks。
 
@@ -167,13 +163,11 @@ http://blog.csdn.net/young_gy/article/details/73485518
 
 强化学习之Q-learning简介
 
-## Markov Decision Process
+# Markov Decision Process
 
-在上面原始的Q-Learning例子中，状态之间的转移是完全随机的，也就是等概率的，这样的过程一般被称作Markov Reward Processes。如果考虑状态转移概率的话，Bellman equation可改为如下形式：
+MDP中的Bellman equation可改为如下形式：
 
 $$v = \mathcal{R} + \gamma \mathcal{P}v$$
-
-这里的$$\mathcal{P}$$是状态转移概率矩阵（也叫作Decision矩阵）。上述过程一般被称作Markov Decision Process。
 
 这里的Bellman equation是线性方程，它的直接解法如下：
 
@@ -183,7 +177,57 @@ $$v = (I-\gamma \mathcal{P})^{-1}\mathcal{R}$$
 
 然而这个方法的复杂度是$$O(n^3)$$（n是状态的个数），这对于大的MDP来说，并不好用。这种情况下，常用的解法有：Dynamic programming（动态规划）、Monte-Carlo evaluation和Temporal-Difference learning。
 
+MDP的扩展主要包括：
 
+a) Observation部分可见的情况下，agent state $$\neq$$ environment state，这时一般叫做partially observable Markov decision process(POMDP)。
+
+b) Infinite and continuous MDP
+
+c) Undiscounted, average reward MDP
+
+扩展MDP的Bellman equation都不是线性方程，没有解析解，只有迭代解。相关解法主要使用了概念图模型，这里不再详述。
+
+# 动态规划
+
+Dynamic programming用于解决那些可分解为**重复子问题（overlapping subproblems）**并具有**最优子结构（optimal substructure）**的问题。这里的programming和编程并无任何关系。
+
+上世纪40年代，Richard Bellman最早使用动态规划这一概念表述通过遍历寻找最优决策解问题的求解过程。1953年，Richard Bellman将动态规划赋予现代意义，该领域被IEEE纳入系统分析和工程中。
+
+## 最优子结构
+
+最优子结构即可用来寻找整个问题最优解的子问题的最优解。举例来说，寻找图上某顶点到终点的最短路径，可先计算该顶点所有相邻顶点至终点的最短路径，然后以此来选择最佳整体路径，如下图所示：
+
+![](/images/article/Shortest_path_optimal_substructure.png)
+
+一般而言，最优子结构通过如下三个步骤解决问题：
+
+a) 将问题分解成较小的子问题；
+
+b) 通过递归使用这三个步骤求出子问题的最优解；
+
+c) 使用这些最优解构造初始问题的最优解。
+
+子问题的求解是通过不断划分为更小的子问题实现的，直至我们可以在常数时间内求解。
+
+## 重复子问题
+
+![](/images/article/Fibonacci_dynamic_programming.png)
+
+重复子问题是指通过相同的子问题可以解决不同的较大问题。例如，在Fibonacci序列中，F3 = F1 + F2和F4 = F2 + F3都包含计算F2。由于计算F5需要计算F3和F4，一个比较笨的计算F5的方法可能会重复计算F2两次甚至两次以上。
+
+为避免重复计算，可将已经得到的子问题的解保存起来，当我们要解决相同的子问题时，重用即可。该方法即所谓的**缓存（memoization）**。
+
+动态规划通常采用以下两种方式中的一种：
+
+**自顶向下**：将问题划分为若干子问题，求解这些子问题并保存结果以免重复计算。该方法将递归和缓存结合在一起。
+
+**自下而上**：先行求解所有可能用到的子问题，然后用其构造更大问题的解。该方法在节省堆栈空间和减少函数调用数量上略有优势，但有时想找出给定问题的所有子问题并不那么直观。
+
+需要注意的是：动态规划更多的看作是一种解决问题的方法论，而非具体的数值算法，因此，很多不同领域的算法都可看做是动态规划算法的实例。参考文献中，就列出了不少这样的算法。
+
+## MDP的Dynamic programming
+
+由前文的描述可知，MDP正好具备overlapping subproblems和optimal substructure的特性，因此也可以通过Dynamic programming求解。
 
 
 

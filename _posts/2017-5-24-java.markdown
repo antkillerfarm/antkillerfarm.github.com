@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Java（二）, Machine Learning之Java篇, 运维工具集, Javascript在客户端的使用
+title:  Java（二）, Machine Learning之Java篇, 运维工具集, Javascript在客户端的使用, Flume & Kafka
 category: language 
 ---
 
@@ -291,4 +291,38 @@ https://www.douban.com/group/topic/27583755/
 然而，由于低层实现的限制，这些UI配置文件语法各异，虽然有设计器来简化设计难度，但注定不能做的太复杂。因此，功能上无论如何都无法与网页相比，更不必说和HTML 5相比了。
 
 2012年以后，以CEF（Chromium Embedded Framework）和XULRunner为代表的浏览器派，开始逐渐崭露头角。从此，开发桌面应用程序，不再是Javascript的禁区。桌面应用UI和网页前端开始呈现融合的局面。
+
+# Flume & Kafka
+
+Flume和Kafka都是日志系统。
+
+Flume官网：
+
+https://flume.apache.org/
+
+Kafka官网：
+
+https://kafka.apache.org/
+
+以下是它们的比较：
+
+http://www.cnblogs.com/ibyte/p/5830715.html
+
+Flume与Kafka区别
+
+http://www.aichengxu.com/view/2412170
+
+kafka和flume的对比
+
+http://www.cnblogs.com/lishouguang/p/4560858.html
+
+flume使用场景 flume与kafka的比较
+
+https://mp.weixin.qq.com/s/bjlDHFLwxjej2t8iDhVb1A
+
+Spark Streaming消费Kafka数据的两种方案
+
+https://mp.weixin.qq.com/s/o-zfrJS5Ito1kWPBJUIryg
+
+Kafka相关资源
 

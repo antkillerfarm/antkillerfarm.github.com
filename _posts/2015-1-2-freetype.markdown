@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  FreeType, FFmpeg, SDL, 图像处理软件, Mac OS X, Objective-C, Flume & Kafka, OA办公软件
+title:  FreeType, FFmpeg, SDL, 图像处理软件, Mac OS X, Objective-C, OA办公软件
 category: technology 
 ---
 
@@ -221,16 +221,6 @@ PC上搭建Objective-C（以下简称OC）开发环境，主要借助GNUstep开�
 2.设置环境变量。
 
 `GNUSTEP_MAKEFILES=/usr/share/GNUstep/Makefiles`
-
-# Flume & Kafka
-
-Flume和Kafka都是日志系统，以下是它们的比较：
-
-http://www.cnblogs.com/ibyte/p/5830715.html
-
-http://www.aichengxu.com/view/2412170
-
-http://www.cnblogs.com/lishouguang/p/4560858.html
 
 # OA办公软件
 

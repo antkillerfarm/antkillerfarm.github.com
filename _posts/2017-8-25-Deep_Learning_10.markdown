@@ -232,7 +232,7 @@ $$z=g(Wu+b)\rightarrow z=g(BN(Wu+b))=g(BN(Wu))$$
 
 BN的误差反向算法相对复杂，这里不再赘述。
 
-在inference阶段，BN网络忽略Step 1和Step 2，只计算后两步。其中,$$\beta,\gamma$$由之前的训练得到。$$\mu,\sigma$$原则上要求使用全体样本的均值和方差，但样本量过大的情况下，也可使用训练时的若干个mini batch均值和方差的FIR滤波值。
+在inference阶段，BN网络忽略Step 1和Step 2，只计算后两步。其中,$$\beta,\gamma$$由之前的训练得到。$$\mu,\sigma$$原则上要求使用全体样本的均值和方差，但样本量过大的情况下，也可使用训练时的若干个mini batch的均值和方差的FIR滤波值。
 
 # Instance Normalization
 
