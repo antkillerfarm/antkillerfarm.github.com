@@ -302,5 +302,8 @@ https://mp.weixin.qq.com/s/R6vZU_gBaODsh1XtsjTpFA
 
 MIT与FAIR提出「mixup」：利用数据和标签的随机线性插值提高神经网络的健壮性
 
+https://mp.weixin.qq.com/s/SIH63n1rQgVpIifUCsIZvw
+
+中科院提出深度离散哈希算法，可用于图像检索
 
 

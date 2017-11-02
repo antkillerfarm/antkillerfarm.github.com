@@ -414,6 +414,10 @@ https://github.com/gcp/leela-zero
 
 开源版的AlphaGo Zero
 
+https://mp.weixin.qq.com/s/-tH7DQo1cK9gA0bcpBJSDA
+
+AlphaGo Zero：笔记与伪代码
+
 ## 面试
 
 https://www.zhihu.com/question/41233373
