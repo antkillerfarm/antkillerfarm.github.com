@@ -162,6 +162,10 @@ https://zhuanlan.zhihu.com/p/25822544
 
 MATLAB R2017a: 自动驾驶工具箱
 
+https://zhuanlan.zhihu.com/p/30707986
+
+章国锋：黑暗中的前行--复杂环境下的鲁棒SfM与SLAM
+
 # NLP参考资源
 
 https://mp.weixin.qq.com/s/GyE9qdXPGvrq12dMAf4nrQ
@@ -271,6 +275,10 @@ https://mp.weixin.qq.com/s/HHPp0JJzpY3q0nC-DF3F3g
 http://www.jianshu.com/p/ac1840abc63f
 
 从Quora的187个问题中学习机器学习和NLP
+
+http://mp.weixin.qq.com/s/-o-Ky5iMA3fZIjh7kzXjew
+
+无监督神经机器翻译：仅需使用单语语料库
 
 # ML参考资源
 

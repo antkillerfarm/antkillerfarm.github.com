@@ -50,6 +50,10 @@ https://mp.weixin.qq.com/s/8U3vFaf3SDCYnWy4lQv6uw
 
 代替反向传播的另一种深度学习算法：离散优化
 
+http://mp.weixin.qq.com/s/gdke9E1A3eRUzgidp9uOqg
+
+邓侃：一文读懂Hinton最新Capsules论文
+
 ## Other
 
 https://www.jiqizhixin.com/articles/2017-07-27-2

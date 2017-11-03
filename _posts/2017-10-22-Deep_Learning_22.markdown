@@ -196,6 +196,10 @@ https://mp.weixin.qq.com/s/TTPpOOxSLbCgOmAsI9TLiw
 
 百度发布Deep Voice 3：全卷积注意力机制TTS系统
 
+http://mp.weixin.qq.com/s/xRA9Xh-FTrhbIg0wLnfzhA
+
+温正棋谈语音质检方案：从关键词检索到情感识别
+
 ## WFST
 
 Weighted-Finite-State-Transducer

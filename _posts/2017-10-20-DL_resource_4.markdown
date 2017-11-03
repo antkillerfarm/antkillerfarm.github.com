@@ -306,4 +306,12 @@ https://mp.weixin.qq.com/s/SIH63n1rQgVpIifUCsIZvw
 
 中科院提出深度离散哈希算法，可用于图像检索
 
+https://mp.weixin.qq.com/s/xZbsxAqo0mVUb-LyH6fU1g
+
+Yann LeCun：大脑如何高效率学习？
+
+https://mp.weixin.qq.com/s/mfdF5I2vsYJeShnOh_cp8Q
+
+MIT新算法骗过神经网络3D物体分类，成功率超90%
+
 
