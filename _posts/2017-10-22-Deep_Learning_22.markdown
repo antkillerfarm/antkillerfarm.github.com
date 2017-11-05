@@ -200,6 +200,10 @@ http://mp.weixin.qq.com/s/xRA9Xh-FTrhbIg0wLnfzhA
 
 温正棋谈语音质检方案：从关键词检索到情感识别
 
+https://mp.weixin.qq.com/s/XUHS4o2G-iGuV9uuOmfBdQ
+
+为什么在说话人识别技术中，PLDA面对神经网络依然坚挺？
+
 ## WFST
 
 Weighted-Finite-State-Transducer

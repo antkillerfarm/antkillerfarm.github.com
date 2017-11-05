@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（七）——垃圾筐
+title:  数学狂想曲（七）——莱洛三角形
 category: math 
 ---
 
@@ -67,6 +67,63 @@ https://zhuanlan.zhihu.com/p/25590725
 https://max.book118.com/html/2015/0401/14126427.shtm
 
 浅谈Borel可测函数及其性质
+
+# 莱洛三角形
+
+定宽曲线（Curve of constant width），或称恒宽曲线，定义：平面上一凸形封闭曲线，不论如何转动，其宽度永远不变，则称之定宽曲线或恒宽曲线。这里所称的“宽度”是指平行线“夹住”某封闭曲线时，平行线间的距离，所谓"夹住"是指每个平行线与凸形封闭曲线相交至少一点且与凸形封闭曲线围起来的内部区域（interior）不相交。
+
+或者可以说，将一个闭合曲线放在两条平行线中间，使之与这两平行线相切，则可以做到：无论这个闭合曲线如何运动，只要它仍与原平行线中的一条直线相切，就必与另一条直线线相切，那么此闭合曲线为定宽曲线。
+
+![](/images/article/Reuleaux_triangle.jpg)
+
+上图是定宽曲线的一个直观的解释。平板下方的两个轮子转动的过程中，平板和桌面的距离保持不变。
+
+这两个轮子一个是圆形，另一个就是本篇的主角——莱洛三角形（Reuleaux triangle）。
+
+>Franz Reuleaux，1829～1905，德国人。这个人可谓是全才。   
+>在教育界，当过ETH和柏林工业大学的教授和校长，当然了那个时代这两所学校还不叫现在的名字。   
+>在工业界，他发明了300多种机械模型，被誉为动力学（kinematics）之父。动力学是一门研究机械以及组成机械的各个部件之间的运动关系的科学，被广泛应用于机械设计领域。比如：   
+>![](/images/article/Reuleaux_triangle.gif)   
+>上图是一个没有活塞的发动机气缸，转子的形状是Reuleaux triangle的。   
+>在政界，他是1876年世界工业博览会德国代表团的主席，参与创立了德国的专利体系。
+
+![](/images/article/Construction_triangle_Reuleaux.png)
+
+上图是Reuleaux triangle的尺规做图方法。
+
+Reuleaux triangle是“**除了圆形以外，还有什么形状的下水道盖不会掉入下水道？**”这个问题的一个答案。这也是所有定宽曲线的特性。但Reuleaux triangle的特殊之处在于：它是定宽曲线所能构成的面积最小的图形。因此它做的井盖非常省铁。
+
+![](/images/article/Manhole_cover_for_reclaimed_water_SFWD.jpg)
+
+![](/images/article/Rotation_of_Reuleaux_triangle.gif)
+
+上图展示了零件上的方孔是如何钻出来的。类似的还有：
+
+![](/images/article/delta_curves.gif)
+
+后者叫做delta curves，不过它并不是个定宽曲线。
+
+当然，Reuleaux triangle也有它的问题：
+
+![](/images/article/Reuleaux_triangle_2.jpg)
+
+Reuleaux triangle形状的轮子，在上面铺板子跑，当然毫无问题。但如果安装车轴的话，那就蛋碎了...
+
+参考：
+
+https://en.wikipedia.org/wiki/Curve_of_constant_width
+
+https://en.wikipedia.org/wiki/Reuleaux_triangle
+
+https://en.wikipedia.org/wiki/Reuleaux_tetrahedron
+
+http://www.cnblogs.com/hxsyl/archive/2012/07/05/2578448.html
+
+莱洛三角形和定宽曲线
+
+http://twistedsifter.com/2012/11/animated-gifs-that-explain-how-things-work/
+
+20 Animated Gifs that Explain How Things Work
 
 # 复变函数
 
@@ -193,43 +250,7 @@ http://people.cs.umass.edu/~wallach/talks/gp_intro.pdf
 
 http://wenku.baidu.com/view/72f80113915f804d2b16c173.html
 
-# 垃圾筐
-
-高斯背景
-
-Reinforcement Learning and Control
-
-Linear Discriminant Analysis
-
-Partial Least Squares Discriminant Analysis
-
-http://blog.codinglabs.org/articles/algorithms-for-cardinality-estimation-part-i.html
-
-解读Cardinality Estimation算法
-
-http://blog.csdn.net/icvpr/article/details/12342159
-
-局部敏感哈希(Locality-Sensitive Hashing, LSH)方法介绍
-
-http://www.cnblogs.com/wentingtu/archive/2012/03/13/2393993.html
-
-Learning to Rank入门小结
-
-FPN (Feature Pyramid Network)
-
-http://www.cnblogs.com/pinard/p/6221564.html
-
-谱聚类（spectral clustering）原理总结
-
-https://mp.weixin.qq.com/s/NlJ4-b5SjIjPGgvLUuSxFw
-
-孩子，有时候并不是生活欺骗了你，而是你可能还不懂概率统计……
-
-http://blog.csdn.net/luo123n/article/details/48574123
-
-PMI（Pointwise Mutual Information）
-
-## 压缩感知
+# 压缩感知
 
 http://blog.csdn.net/abcjennifer/article/details/7721834
 

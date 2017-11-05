@@ -232,5 +232,7 @@ https://zhuanlan.zhihu.com/p/23340343
 
 Center Loss及其在人脸识别中的应用
 
+https://mp.weixin.qq.com/s/7AnF0uMgepchiUeqfqVbCg
 
+清华大学王生进：新智能安防：人脸识别技术与应用系统
 

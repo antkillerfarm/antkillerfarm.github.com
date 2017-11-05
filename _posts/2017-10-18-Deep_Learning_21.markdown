@@ -126,6 +126,10 @@ https://mp.weixin.qq.com/s/GNbCu1lbOmwJDCU3vgMbtQ
 
 OpenAI发布多智能体深度强化学习新算法LOLA
 
+https://mp.weixin.qq.com/s/5Go20MyBxdVI1r5SkwA6lw
+
+面向星际争霸：DeepMind提出多智能体强化学习新方法
+
 https://mp.weixin.qq.com/s/nYOOwVoijl1p4V0A7yaI3w
 
 机遇与挑战：用强化学习自动搜索优化算法
@@ -173,6 +177,12 @@ https://www.zhihu.com/question/49230922
 https://mp.weixin.qq.com/s/R_pfTXDMaLHmiCaSV2t_YA
 
 英特尔Nervana发布强化学习库Coach：支持多种价值与策略优化算法
+
+https://mp.weixin.qq.com/s/AyW7oOC7yxVtmswaMT1DGQ
+
+腾讯AI Lab获得计算机视觉权威赛事MSCOCO Captions冠军
+
+
 
 # NN的INT8计算
 

@@ -60,6 +60,10 @@ https://mp.weixin.qq.com/s/8hNkntUauCSeVqc2v0QUqA
 
 人工智能如何帮你找到好歌：探秘Spotify神奇的每周歌单
 
+https://zhuanlan.zhihu.com/p/30720579
+
+推荐中的序列化建模：Session-based neural recommendation
+
 ## AI与游戏
 
 https://zhuanlan.zhihu.com/p/22604627
@@ -145,6 +149,10 @@ https://mp.weixin.qq.com/s/0OlKixcT20wao4xkWa6M5A
 https://mp.weixin.qq.com/s/2b82VzQ2dJF9kWg-FfMelQ
 
 人工智能在《LOL&王者荣耀》游戏中的角色
+
+https://mp.weixin.qq.com/s/c160AUDdgw37L1XruPoZ-w
+
+电竞数据化：英雄联盟总决赛也靠它！
 
 ## TPU & GPU
 
@@ -350,74 +358,6 @@ https://mp.weixin.qq.com/s/qOjGrR59Mf0Mzgh4bpDhrA
 
 详解Horovod：Uber开源的TensorFlow分布式深度学习框架
 
-# AlphaGo
-
-樊麾讲解AlphaGo与李世石的五番棋：
-
-https://deepmind.com/research/alphago/alphago-games-simplified-chinese/
-
-论文：
-
-《Mastering the game of Go with deep neural networks and tree search》
-
-参考：
-
-https://mp.weixin.qq.com/s/Sfv-jzQAkN0PsZOGZUQhkQ
-
-AlphaGo Zero横空出世，DeepMind Nature论文解密不使用人类知识掌握围棋
-
-https://mp.weixin.qq.com/s/oAxouYX7-wDC5okbu--Wuw
-
-Nature重磅：人工智能从0到1, 无师自通完爆阿法狗100-0
-
-https://zhuanlan.zhihu.com/p/30262872
-
-关于AlphaGo Zero
-
-https://zhuanlan.zhihu.com/p/30263585
-
-DeepMind新一代围棋程序AlphaGo Zero再次登上Nature
-
-https://www.zhihu.com/question/66861459
-
-如何评价DeepMind发表在Nature上的AlphaGo Zero？
-
-http://www.alphago-games.com/
-
-AlphaGo的棋谱
-
-https://deepmind.com/blog/alphago-zero-learning-scratch/
-
-AlphaGo Zero官方声明
-
-https://zhuanlan.zhihu.com/mathNote
-
-某牛的专栏，主要讲自制AlphaGo
-
-https://mp.weixin.qq.com/s/DC9QqHdWT0xFnowEBuJDbw
-
-自动化所解读“深度强化学习”：从AlphaGo到AlphaGoZero
-
-https://mp.weixin.qq.com/s/uZtaxRwROCqYmL2k6Muxaw
-
-从阿尔法狗元(AlphaGo Zero)的诞生看终极算法的可能性
-
-https://mp.weixin.qq.com/s/i5OmLu8aNbypiTUmP4teeQ
-
-刘遥行：深入浅出看懂AlphaGo Zero
-
-https://mp.weixin.qq.com/s/aBrwbB_DOGTen-6XL7LGFQ
-
-邓侃：白话蒙特卡洛树搜索和ResNet
-
-https://github.com/gcp/leela-zero
-
-开源版的AlphaGo Zero
-
-https://mp.weixin.qq.com/s/-tH7DQo1cK9gA0bcpBJSDA
-
-AlphaGo Zero：笔记与伪代码
-
 ## 面试
 
 https://www.zhihu.com/question/41233373
@@ -444,4 +384,25 @@ https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
 
 谷歌等巨头机器学习面试题：从逻辑回归到智力测验
 
+## 工具
+
+https://mp.weixin.qq.com/s/TT4whft1Tj1pCEPbnMH1cA
+
+清华大学发布OpenNE：用于网络嵌入的开源工具包
+
+https://mp.weixin.qq.com/s/r01vfSKb4VpFXVyokb54Bg
+
+MIT开放图像标注工具LabelMe源代码：助力机器视觉的发展
+
+https://mp.weixin.qq.com/s/30dK7nGJOWIaa1j9QElrYA
+
+详解帝国理工集成工具TensorLayer：控制深度学习开发复杂度
+
+https://mp.weixin.qq.com/s/m_2LE2QN_8_a1hti6G0Cow
+
+Netflix开源稀疏数据专用神经网络库：Vectorflow
+
+https://mp.weixin.qq.com/s/bMfJ1Ez6bOBjHLquuZFnmQ
+
+Uber与斯坦福大学开源深度概率编程语言Pyro：基于PyTorch
 

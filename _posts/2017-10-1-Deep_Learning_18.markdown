@@ -86,3 +86,11 @@ https://www.zhihu.com/question/59623472
 
 基于深度学习的目标跟踪算法是否可能做到实时？
 
+http://acsweb.ucsd.edu/~yuw176/report/vehicle.pdf
+
+Monocular Vehicle Detection and Tracking
+
+https://mp.weixin.qq.com/s/x7LoIN7mOJcZDY70GB_rLg
+
+VOT Challenge 2017亚军北邮团队技术分享
+

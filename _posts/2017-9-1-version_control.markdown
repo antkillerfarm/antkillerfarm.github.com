@@ -373,4 +373,8 @@ https://mp.weixin.qq.com/s/Yp2zE85VCx8q67YXvuw5qw
 
 TensorFlow引入了动态图机制Eager Execution
 
+https://zhuanlan.zhihu.com/p/30751039
+
+TensorFlow全新的数据读取方式：Dataset API入门教程
+
 

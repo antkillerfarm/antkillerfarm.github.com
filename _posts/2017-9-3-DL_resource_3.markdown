@@ -6,23 +6,77 @@ category: resource
 
 # DL参考资源
 
-## 工具
+# AlphaGo
 
-https://mp.weixin.qq.com/s/TT4whft1Tj1pCEPbnMH1cA
+樊麾讲解AlphaGo与李世石的五番棋：
 
-清华大学发布OpenNE：用于网络嵌入的开源工具包
+https://deepmind.com/research/alphago/alphago-games-simplified-chinese/
 
-https://mp.weixin.qq.com/s/r01vfSKb4VpFXVyokb54Bg
+论文：
 
-MIT开放图像标注工具LabelMe源代码：助力机器视觉的发展
+《Mastering the game of Go with deep neural networks and tree search》
 
-https://mp.weixin.qq.com/s/30dK7nGJOWIaa1j9QElrYA
+参考：
 
-详解帝国理工集成工具TensorLayer：控制深度学习开发复杂度
+https://mp.weixin.qq.com/s/Sfv-jzQAkN0PsZOGZUQhkQ
 
-https://mp.weixin.qq.com/s/m_2LE2QN_8_a1hti6G0Cow
+AlphaGo Zero横空出世，DeepMind Nature论文解密不使用人类知识掌握围棋
 
-Netflix开源稀疏数据专用神经网络库：Vectorflow
+https://mp.weixin.qq.com/s/oAxouYX7-wDC5okbu--Wuw
+
+Nature重磅：人工智能从0到1, 无师自通完爆阿法狗100-0
+
+https://zhuanlan.zhihu.com/p/30262872
+
+关于AlphaGo Zero
+
+https://zhuanlan.zhihu.com/p/30263585
+
+DeepMind新一代围棋程序AlphaGo Zero再次登上Nature
+
+https://www.zhihu.com/question/66861459
+
+如何评价DeepMind发表在Nature上的AlphaGo Zero？
+
+http://www.alphago-games.com/
+
+AlphaGo的棋谱
+
+https://deepmind.com/blog/alphago-zero-learning-scratch/
+
+AlphaGo Zero官方声明
+
+https://zhuanlan.zhihu.com/mathNote
+
+某牛的专栏，主要讲自制AlphaGo
+
+https://mp.weixin.qq.com/s/DC9QqHdWT0xFnowEBuJDbw
+
+自动化所解读“深度强化学习”：从AlphaGo到AlphaGoZero
+
+https://mp.weixin.qq.com/s/uZtaxRwROCqYmL2k6Muxaw
+
+从阿尔法狗元(AlphaGo Zero)的诞生看终极算法的可能性
+
+https://mp.weixin.qq.com/s/i5OmLu8aNbypiTUmP4teeQ
+
+刘遥行：深入浅出看懂AlphaGo Zero
+
+https://mp.weixin.qq.com/s/aBrwbB_DOGTen-6XL7LGFQ
+
+邓侃：白话蒙特卡洛树搜索和ResNet
+
+https://github.com/gcp/leela-zero
+
+开源版的AlphaGo Zero
+
+https://mp.weixin.qq.com/s/-tH7DQo1cK9gA0bcpBJSDA
+
+AlphaGo Zero：笔记与伪代码
+
+https://mp.weixin.qq.com/s/CJuVoOf7idUChFIn7dH0Lg
+
+围棋中的数学原理
 
 ## Capsule
 
@@ -53,6 +107,14 @@ https://mp.weixin.qq.com/s/8U3vFaf3SDCYnWy4lQv6uw
 http://mp.weixin.qq.com/s/gdke9E1A3eRUzgidp9uOqg
 
 邓侃：一文读懂Hinton最新Capsules论文
+
+https://mp.weixin.qq.com/s/R9pDEc7zqZdttLJGCfiv2w
+
+TensorFlow Pytorch Keras代码实现深度学习大神Hinton NIPS2017 Capsule论文
+
+https://mp.weixin.qq.com/s/WspmbqlwdxKXH1cgbkuGwQ
+
+先读懂CapsNet架构然后用TensorFlow实现，这应该是最详细的教程了
 
 ## Other
 
@@ -355,61 +417,5 @@ Active Learning: 一个降低深度学习时间，空间，经济成本的解决
 https://mp.weixin.qq.com/s/0IAdT2cP_OIGwwXmMaCFfw
 
 如何利用深度学习诊断心脏病？
-
-https://mp.weixin.qq.com/s/PsIa3XDFqZlY2tKcvqvddw
-
-Training RNNs as Fast as CNNs
-
-https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og
-
-贝叶斯学习与未来人工智能
-
-https://mp.weixin.qq.com/s/Zd4rFU7Lebr4zmzxThNyVw
-
-详解珠算：清华大学开源的贝叶斯深度学习库
-
-https://mp.weixin.qq.com/s/vUK2NneOs8OR0vcJEZNbrA
-
-田渊栋等人论文：何时卷积滤波器容易学习？
-
-https://mp.weixin.qq.com/s/pdv-T69rz4jO47CMf-CUhg
-
-“信息瓶颈”理论揭示深度学习本质
-
-https://mp.weixin.qq.com/s/e4hriDvTRLkg-mIifVWayw
-
-如何解决深度学习中的多体问题
-
-https://mp.weixin.qq.com/s/qTnFQK0CkvdJfZaKj2wUtQ
-
-海康威视联合提出注意力聚焦网络FAN：提升场景文本识别精确度
-
-https://mp.weixin.qq.com/s/iXmjuBh2zzno7-D9ClYbSA
-
-讲解DeepMind论文：AI在复杂环境中学习运动
-
-https://mp.weixin.qq.com/s/sYXVqnk5p8tvl6s0EIkr3w
-
-游戏代理框架，帮助您创建AI来玩任何您拥有的游戏！
-
-https://mp.weixin.qq.com/s/0KaSWHi8r9kSXxlwswIY5g
-
-乔宇：深度模型让机器理解场景
-
-https://mp.weixin.qq.com/s/shBHKh2emSIL5uWV7po8cw
-
-梅涛：“看图说话”
-
-https://mp.weixin.qq.com/s/BQy3qpmQqeQquhf92hwcvQ
-
-2017 VQA Challenge第一名技术报告
-
-https://mp.weixin.qq.com/s/1Gdx-U3DRZtSJoFyCLnD0w
-
-深度学习之Sequence Learning
-
-http://www.jianshu.com/p/f9ca56d6407d
-
-深度学习在股票市场的应用
 
 

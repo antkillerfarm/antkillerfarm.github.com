@@ -280,6 +280,22 @@ http://mp.weixin.qq.com/s/-o-Ky5iMA3fZIjh7kzXjew
 
 无监督神经机器翻译：仅需使用单语语料库
 
+https://mp.weixin.qq.com/s/SVKlD0T8IkpVAKFJu-VQAg
+
+胡一川：深度学习在智能助理中的应用
+
+https://mp.weixin.qq.com/s/tGw2c0AMAZSVYddGUQDdOw
+
+沈向洋：懂语言者得天下
+
+https://mp.weixin.qq.com/s/DsE8X2Hgx1oYMoFUswgKkA
+
+Raúl Garreta大神教你5步搭建机器学习文本分类器！
+
+https://mp.weixin.qq.com/s/gIRa-P-xI5DuwY1OLH38MQ
+
+Facebook最新对抗学习研究：无需平行语料库完成无监督机器翻译
+
 # ML参考资源
 
 http://kexue.fm/archives/4638/
@@ -337,5 +353,22 @@ https://mp.weixin.qq.com/s/MuV_kamfsUgcradKIaXGbw
 https://zhuanlan.zhihu.com/p/30383356
 
 掌握机器学习数学基础之信息论及其他
+
+https://mp.weixin.qq.com/s/YrCC8CmP6UKuCmSdF2K_3g
+
+数据挖掘中的数据清洗方法大全
+
+https://zhuanlan.zhihu.com/p/24709748
+
+矩阵求导术（上）
+
+https://zhuanlan.zhihu.com/p/24863977
+
+矩阵求导术（下）
+
+https://mp.weixin.qq.com/s/tdIzuBDTMCDSfe2IDL8ZSA
+
+基于混合集成学习算法的热迁移超时预测模型
+
 
 

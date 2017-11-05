@@ -289,6 +289,10 @@ http://drools.org/
 
 一个规则引擎软件
 
+https://mp.weixin.qq.com/s/CsHgn82lQQDVhjDJvp01cg
+
+清华大学开源OpenKE：知识表示学习平台
+
 ## NLPchina
 
 NLPchina(中国自然语言处理开源组织)旗下有许多好用的工具。

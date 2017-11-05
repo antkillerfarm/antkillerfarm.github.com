@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Elasticsearch（二）, WebService, scrapy, 线程池
+title:  Elasticsearch（二）, WebService, scrapy, 线程池, 垃圾筐
 category: AI 
 ---
 
@@ -332,4 +332,43 @@ https://mp.weixin.qq.com/s/A2QNr4-LTUNy-H8zE0OgXA
 
 在libupnp项目中，提供了一个简易的线程池实现。
 
+# 垃圾筐
+
+高斯背景
+
+Reinforcement Learning and Control
+
+Linear Discriminant Analysis
+
+Partial Least Squares Discriminant Analysis
+
+http://blog.codinglabs.org/articles/algorithms-for-cardinality-estimation-part-i.html
+
+解读Cardinality Estimation算法
+
+http://blog.csdn.net/icvpr/article/details/12342159
+
+局部敏感哈希(Locality-Sensitive Hashing, LSH)方法介绍
+
+http://www.cnblogs.com/wentingtu/archive/2012/03/13/2393993.html
+
+Learning to Rank入门小结
+
+FPN (Feature Pyramid Network)
+
+http://www.cnblogs.com/pinard/p/6221564.html
+
+谱聚类（spectral clustering）原理总结
+
+https://mp.weixin.qq.com/s/NlJ4-b5SjIjPGgvLUuSxFw
+
+孩子，有时候并不是生活欺骗了你，而是你可能还不懂概率统计……
+
+http://blog.csdn.net/luo123n/article/details/48574123
+
+PMI（Pointwise Mutual Information）
+
+http://www.cnblogs.com/6DAN_HUST/archive/2010/11/11/1874681.html
+
+运筹学——线性规划及单纯形法求解
 

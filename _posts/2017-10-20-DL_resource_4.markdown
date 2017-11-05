@@ -300,7 +300,7 @@ https://mp.weixin.qq.com/s/sbuqNhIVTDUe4Q6BxS5fWw
 
 https://mp.weixin.qq.com/s/R6vZU_gBaODsh1XtsjTpFA
 
-MIT与FAIR提出「mixup」：利用数据和标签的随机线性插值提高神经网络的健壮性
+MIT与FAIR提出“mixup”：利用数据和标签的随机线性插值提高神经网络的健壮性
 
 https://mp.weixin.qq.com/s/SIH63n1rQgVpIifUCsIZvw
 
@@ -313,5 +313,81 @@ Yann LeCun：大脑如何高效率学习？
 https://mp.weixin.qq.com/s/mfdF5I2vsYJeShnOh_cp8Q
 
 MIT新算法骗过神经网络3D物体分类，成功率超90%
+
+https://mp.weixin.qq.com/s?__biz=MzI3MTM5ODA0Nw==&mid=2247484058&idx=1&sn=0dfe92a0991294afba2514b137217a66
+
+朱松纯：浅谈人工智能：现状、任务、构架与统一
+
+https://github.com/Alibaba-Technology/hangzhouYunQi2017ppt
+
+2017杭州云栖大会精华PPT
+
+https://mp.weixin.qq.com/s/Opnf5GBxoUqznWuYBb8xaA
+
+清华唐杰AMiner团队全球H-index Top 10000学者半世纪迁移图
+
+https://mp.weixin.qq.com/s/ulLh_JfLa9Os3ZFFAWVETA
+
+谷歌大脑最新研究：高斯过程“超越”随机梯度下降！
+
+https://mp.weixin.qq.com/s/DsmjjfInV_yPFWB2oSq-dA
+
+取代学习率衰减的新方法：谷歌大脑提出增加Batch Size
+
+https://mp.weixin.qq.com/s/PsIa3XDFqZlY2tKcvqvddw
+
+Training RNNs as Fast as CNNs
+
+https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og
+
+贝叶斯学习与未来人工智能
+
+https://mp.weixin.qq.com/s/Zd4rFU7Lebr4zmzxThNyVw
+
+详解珠算：清华大学开源的贝叶斯深度学习库
+
+https://mp.weixin.qq.com/s/vUK2NneOs8OR0vcJEZNbrA
+
+田渊栋等人论文：何时卷积滤波器容易学习？
+
+https://mp.weixin.qq.com/s/pdv-T69rz4jO47CMf-CUhg
+
+“信息瓶颈”理论揭示深度学习本质
+
+https://mp.weixin.qq.com/s/e4hriDvTRLkg-mIifVWayw
+
+如何解决深度学习中的多体问题
+
+https://mp.weixin.qq.com/s/qTnFQK0CkvdJfZaKj2wUtQ
+
+海康威视联合提出注意力聚焦网络FAN：提升场景文本识别精确度
+
+https://mp.weixin.qq.com/s/iXmjuBh2zzno7-D9ClYbSA
+
+讲解DeepMind论文：AI在复杂环境中学习运动
+
+https://mp.weixin.qq.com/s/sYXVqnk5p8tvl6s0EIkr3w
+
+游戏代理框架，帮助您创建AI来玩任何您拥有的游戏！
+
+https://mp.weixin.qq.com/s/0KaSWHi8r9kSXxlwswIY5g
+
+乔宇：深度模型让机器理解场景
+
+https://mp.weixin.qq.com/s/shBHKh2emSIL5uWV7po8cw
+
+梅涛：“看图说话”
+
+https://mp.weixin.qq.com/s/BQy3qpmQqeQquhf92hwcvQ
+
+2017 VQA Challenge第一名技术报告
+
+https://mp.weixin.qq.com/s/1Gdx-U3DRZtSJoFyCLnD0w
+
+深度学习之Sequence Learning
+
+http://www.jianshu.com/p/f9ca56d6407d
+
+深度学习在股票市场的应用
 
 

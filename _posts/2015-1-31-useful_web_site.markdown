@@ -294,6 +294,14 @@ https://mp.weixin.qq.com/s/nwhSDxz1Pu2JCU_IeMR9ww
 
 Lua程序逆向之Luac文件格式分析
 
+https://mp.weixin.qq.com/s/vmQKK9cEbBRIvd2uOzmC1w
+
+AN/TPS-78固态雷达系列
+
+https://mp.weixin.qq.com/s/UdKVffV42v0GnV6i8xMWOg
+
+PESA/AESA：无源/有源电子扫描阵列天线及其辐射方向图
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

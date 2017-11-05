@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  知名数据集, 大数据平台参考资源, 知识图谱参考资源
+title:  知名数据集, 大数据平台参考资源
 category: resource 
 ---
 
@@ -184,8 +184,13 @@ https://mp.weixin.qq.com/s/37cUxUzcSZ_OgfuN_yTmlA
 
 阅读理解与问答数据集
 
+http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201703/t20170310_1471429.html
 
+国家统计局：最新县及县以上行政区划代码
 
+https://github.com/wecatch/china_regions
+
+最全最新中国省，市，地区json及sql数据
 
 ## 大数据平台参考资源
 
@@ -332,80 +337,4 @@ https://mp.weixin.qq.com/s/x_OPSwc82d1IoWPj7xb6zg
 https://mp.weixin.qq.com/s/F0Hi5BtUBFH_9bSzgeZLhw
 
 AIOps核心任务：任务机器人在金融领域中的落地
-
-# 知识图谱参考资源
-
-https://wenku.baidu.com/view/38ad3ef7e109581b6bd97f19227916888586b959.html
-
-知识图谱构建技术综述
-
-https://wenku.baidu.com/view/e69a3619fe00bed5b9f3f90f76c66137ee064f15.html
-
-知识图谱技术综述
-
-https://wenku.baidu.com/view/b3858227c5da50e2534d7f08.html
-
-知识图谱技术原理介绍
-
-https://mp.weixin.qq.com/s/JLYegFP7kEg6n34crgP09g
-
-基于知识图谱的问答系统关键技术研究
-
-https://mp.weixin.qq.com/s/XgKvh63wgEe-CR9bchp03Q
-
-什么是知识图谱？
-
-https://www.zhihu.com/question/52368821/answer/138745422
-
-鲍捷：知识图谱怎样入门
-
-https://mp.weixin.qq.com/s/iqFXvhvYfOejaeNAhXxJEg
-
-当知识图谱遇上聊天机器人
-
-https://mp.weixin.qq.com/s/U-dlYhnaR8OQw2UKYKUWKQ
-
-知识图谱前沿技术课程实录
-
-https://mp.weixin.qq.com/s/MZE_SXsNg6Yt4dz2fmB1sA
-
-阿里知识图谱首次曝光：每天千万级拦截量，亿级别全量智能审核
-
-https://mp.weixin.qq.com/s/WIro7pk7kboMvdwpZOSdQA
-
-东南大学漆桂林：知识图谱的应用
-
-https://mp.weixin.qq.com/s/z1hhG4GaBQXPHHt9UGZPnA
-
-东南大学高桓：知识图谱表示学习
-
-https://mp.weixin.qq.com/s/JZYH_m1eS93KRjkWA82GoA
-
-复旦肖仰华：基于知识图谱的问答系统
-
-https://mp.weixin.qq.com/s/cEmtOAtfP2gSBlaPfGXb3w
-
-多源信息表示学习在知识图谱中的应用
-
-https://mp.weixin.qq.com/s/cL1aKdu8ig8-ocOPirXk2w
-
-如何构建知识图谱
-
-https://mp.weixin.qq.com/s/Nh7XJOLNBDdpibopVG4MrQ
-
-中文通用百科知识图谱（CN-DBpedia）
-
-https://mp.weixin.qq.com/s/qrP_tWlHyc3ZAMPOqu9E0A
-
-知识图谱的发展概述
-
-https://mp.weixin.qq.com/s/I4sfT8rlwXIXxEjfdQoFbA
-
-东南大学周张泉：基于知识图谱的推理技术
-
-https://zhuanlan.zhihu.com/p/30320631
-
-知识图谱向量化表示及其在推荐系统上的应用
-
-
 
