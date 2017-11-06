@@ -68,11 +68,15 @@ https://mp.weixin.qq.com/s/Wa2om6y27aFCB9kGRwZqBA
 
 https://mp.weixin.qq.com/s/GXeAG118a6Wwt8zE3LE-hQ
 
-Autodesk提出新算法：用「自动编码器网络」生成3D模型！
+Autodesk提出新算法：用“自动编码器网络”生成3D模型！
 
 https://mp.weixin.qq.com/s/gA_qtlZg8zCkLqndkb3YJw
 
 解读ICCV2017 12篇论文
+
+https://mp.weixin.qq.com/s/jEBzH1TpJBK1Tc3gfnbmTQ
+
+ICCV 13大不可错过的有趣项目
 
 https://mp.weixin.qq.com/s/eIy73UmlsCs7n2fmiEmACw
 
@@ -389,5 +393,13 @@ https://mp.weixin.qq.com/s/1Gdx-U3DRZtSJoFyCLnD0w
 http://www.jianshu.com/p/f9ca56d6407d
 
 深度学习在股票市场的应用
+
+https://mp.weixin.qq.com/s/O39cedZPRpqRjDHb98sopQ
+
+当你增加神经网络的层数时会发生什么？
+
+https://mp.weixin.qq.com/s/x5jX2g44X2sp7WIOdoUP4w
+
+李沐：漫谈在线学习：在线梯度下降
 
 

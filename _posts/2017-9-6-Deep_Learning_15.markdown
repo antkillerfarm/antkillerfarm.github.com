@@ -78,7 +78,7 @@ G-CNN: an Iterative Grid Based Object Detector
 
 Semantic segmentation是图像理解的基石性技术，在自动驾驶系统（具体为街景识别与理解）、无人机应用（着陆点判断）以及穿戴式设备应用中举足轻重。
 
-我们都知道，图像是由许多像素（Pixel）组成，而「语义分割」顾名思义就是将像素按照图像中表达语义含义的不同进行分组（Grouping）/分割（Segmentation）。
+我们都知道，图像是由许多像素（Pixel）组成，而“语义分割”顾名思义就是将像素按照图像中表达语义含义的不同进行分组（Grouping）/分割（Segmentation）。
 
 ![](/images/article/image_enet.png)
 
@@ -132,7 +132,7 @@ https://mp.weixin.qq.com/s/4BvvwV11f9MrrYyLwUrX9w
 
 https://zhuanlan.zhihu.com/p/24738319
 
-「见微知著」——细粒度图像分析进展综述
+“见微知著”——细粒度图像分析进展综述
 
 https://mp.weixin.qq.com/s/V4_euZRcyyxeimXAA_waAg
 

@@ -215,6 +215,18 @@ http://www.68idc.cn/help/buildlang/ask/20150727462819.html
 
 Alternating Least Squares(ASL) 的数学推导
 
+https://mp.weixin.qq.com/s/bRhIm8Xvlb51zE2HpDO5Og
+
+一文读懂推荐系统知识体系
+
+http://mp.weixin.qq.com/s/QhP3wRGbrO7sYSDNm8z0gQ
+
+常用推荐算法（50页干货）
+
+https://zhuanlan.zhihu.com/p/23036112
+
+推荐系统常用的推荐算法
+
 # 主成分分析
 
 真实的训练数据总是存在各种各样的问题。

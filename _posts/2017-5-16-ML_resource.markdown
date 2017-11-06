@@ -86,10 +86,6 @@ http://wenku.baidu.com/view/44a63fd2b14e852458fb577f.html
 
 kriging插值
 
-http://mp.weixin.qq.com/s/QhP3wRGbrO7sYSDNm8z0gQ
-
-常用推荐算法（50页干货）
-
 http://blog.csdn.net/zwgdft/article/category/6432397
 
 创业公司做数据分析
@@ -105,10 +101,6 @@ http://mp.weixin.qq.com/s/V-QCRXt5wAfSCiNT955W0A
 http://mp.weixin.qq.com/s/v0z-s72juBF6Wwb9tc_Z_g
 
 深入理解空间搜索算法
-
-https://zhuanlan.zhihu.com/p/23036112
-
-推荐系统常用的推荐算法
 
 https://github.com/josephmisiti/awesome-machine-learning
 

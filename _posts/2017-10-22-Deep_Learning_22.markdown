@@ -62,6 +62,10 @@ https://mp.weixin.qq.com/s/rVYWV-LsbmA4QhC6207SWA
 
 14篇论文为你呈现“迁移学习”研究全貌
 
+https://mp.weixin.qq.com/s/l-l1xbUaPNKc-w5XndjCbQ
+
+通过网络结构迁移学习提高图像识别任务的拓展性
+
 # 语音识别
 
 Connectionist Temporal Classification，是一种改进的RNN模型。它主要解决的是时序模型中，输入数大于输出数，输入输出如何对齐的问题。
@@ -122,7 +126,7 @@ https://mp.weixin.qq.com/s/zEqgDh6_fnDgXEI8MC9cmg
 
 https://mp.weixin.qq.com/s/pimQBFd5uxrZk4dSgUsblg
 
-苹果机器学习期刊「Siri三部曲」之一：通过跨带宽和跨语言初始化提升神经网络声学模型
+苹果机器学习期刊“Siri三部曲”之一：通过跨带宽和跨语言初始化提升神经网络声学模型
 
 https://mp.weixin.qq.com/s/u1R7NUg_kgI_mpjIFrO02A
 

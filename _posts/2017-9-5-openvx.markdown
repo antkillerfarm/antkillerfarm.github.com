@@ -208,6 +208,12 @@ NCCL：多结点、多GPU的通信库。
 
 TensorRT：嵌入式设备上专用于DL inference的计算库。
 
+## NVDLA
+
+NVIDIA Deep Learning Accelerator是一个开源的用于inference的芯片方案。官网：
+
+http://nvdla.org/
+
 ## CUDA实战
 
 安装：
@@ -314,5 +320,7 @@ https://mp.weixin.qq.com/s?__biz=MjM5ODYwNDUyMQ==&mid=2649658169&idx=1&sn=88392d
 
 肖仰华：基于知识图谱的可解释人工智能：机遇与挑战
 
+http://www.bigcilin.com/
 
+哈工大在线版的知识图谱
 

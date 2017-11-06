@@ -192,6 +192,10 @@ https://mp.weixin.qq.com/s/Da6kSPipbl2roKhdW8xC2A
 
 图像各向异性滤波
 
+http://blog.csdn.net/q4878802/article/details/51841793
+
+Android使用OpenCV实现“人脸检测”和“人脸识别”
+
 ## 论文
 
 《Moving Gradients: A Path-Based Method for Plausible Image Interpolation》：视频帧插值算法

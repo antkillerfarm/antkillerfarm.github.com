@@ -281,6 +281,18 @@ Protocol Buffers是Google公司开发的一种数据描述语言。它的官网�
 
 https://github.com/google/protobuf
 
+文档：
+
+https://developers.google.com/protocol-buffers/
+
+Tutorials：
+
+https://developers.google.com/protocol-buffers/docs/tutorials
+
+安装：
+
+`sudo apt install protobuf-compiler python-protobuf`
+
 这是一种注重效率，而可阅读性几乎为零的二进制格式。其效率超过BSON，但除非有相关格式文件，否则完全无法阅读。而BSON作为JSON的扩展，只有扩展的那部分不可读，其余部分仍保留JSON的可读性。
 
 格式文件是Protocol Buffers中的重要概念，也是和JSON等格式在使用思路上最大的区别。

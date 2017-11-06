@@ -494,4 +494,8 @@ https://mp.weixin.qq.com/s/9ZQc3RqCCcWYDplZ4RU2oA
 
 清华段路明组发现深度学习和量子物理重要关联
 
+https://mp.weixin.qq.com/s/LbyqAA_scfdDXDe_ESWEKg
+
+姚期智：呼之欲出的量子计算机，和它漫长的最后一英里
+
 

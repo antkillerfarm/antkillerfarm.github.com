@@ -192,7 +192,7 @@ DeepMind视频行为分类竞赛，百度IDL获第一
 
 https://mp.weixin.qq.com/s/8a4hTHJ1F-dUiUI12COJkA
 
-电话诈骗层出不穷？一家「接地气」的公司正在用人工智能解决这个社会顽疾
+电话诈骗层出不穷？一家“接地气”的公司正在用人工智能解决这个社会顽疾
 
 https://mp.weixin.qq.com/s/bMW2go3QefbgYMqVSzyy_g
 
