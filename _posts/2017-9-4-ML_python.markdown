@@ -252,6 +252,16 @@ OpenFace是用Python和Torch编写的。
 
 https://cmusatyalab.github.io/openface/
 
+## Tangent
+
+Tangent是一个用于自动微分的源到源Python库。官网：
+
+https://github.com/google/tangent
+
+https://mp.weixin.qq.com/s/CExdIdtUxZi4c2B39xdYJA
+
+谷歌开源Tangent
+
 ## 参考
 
 https://github.com/neozhaoliang/pywonderland/tree/master/

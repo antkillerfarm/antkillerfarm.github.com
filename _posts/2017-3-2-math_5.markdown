@@ -86,6 +86,10 @@ https://mp.weixin.qq.com/s/MqnJ39GPrzP4xJWDZi9gnQ
 
 博士生开源深度学习C++库DLL：快速构建卷积受限玻尔兹曼机
 
+https://mp.weixin.qq.com/s/Z1_ujG7iP_AFUD0gVO8HXQ
+
+信息熵、交叉熵和相对熵
+
 # 概率分布（2）
 
 上一篇《概率分布（1）》写的意犹未尽，这里继续写。本篇主要关注$$\chi^2$$分布、t分布和F分布，也就是统计学的三大祖师爷各自的看家本领。

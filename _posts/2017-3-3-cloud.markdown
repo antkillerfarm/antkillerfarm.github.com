@@ -303,43 +303,50 @@ JSON采用的是，不同的语言提供不同的库来解析的方式。
 
 与Protocol Buffers类似的方案，还有Facebook提出的Thrift、ZeroC提出的Slice和Hadoop Avro。
 
-# WebSocket
+### 简易示例
 
-在浏览器中通过http仅能实现单向的通信。AJAX通过轮询方式，达到全双工通信，但效率不高。
-
-面对这种状况，HTML5定义了WebSocket协议（基于TCP），能更好的节省服务器资源和带宽并达到实时通讯。
-
-浏览器请求
+test.proto:
 
 {% highlight text %}
-GET /webfin/websocket/ HTTP/1.1
-　　Host: localhost
-　　Upgrade: websocket
-　Connection: Upgrade
-　　Sec-WebSocket-Key: xqBt3ImNzJbYqRINxEFlkg==
-　　Origin: http://www.sohu.com
-　　Sec-WebSocket-Version: 13
+message TestMsg
+{
+    required int32 id=1;
+    required int32 time=2;
+    optional string note=3;
+}
 {% endhighlight %}
 
-服务器回应
+`protoc --python_out=./python/ test.proto`
 
-{% highlight text %}
-HTTP/1.1 101 Switching Protocols
-　　Upgrade: websocket
-　　Connection: Upgrade
-　　Sec-WebSocket-Accept: K7DJLdLooIwIG/MOpvWFB3y3FE8=
+test.py:
+
+{% highlight python %}
+import google.protobuf
+from test_pb2 import TestMsg
+import time
+
+test = TestMsg()
+test.id=1
+test.time=int(time.time())
+test.string="asdftest"
+print test
+test_str = test.SerializeToString()
+print test_str
+
+test1 = TestMsg()
+test1.ParseFromString(test_str)
+print test1
 {% endhighlight %}
 
-# premake
+示例代码下载：
 
-premake是一个轻量级的构建系统。这里所谓的轻量级是和Autotools、CMake相比。
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/protobuf
 
-Autotools在Unix平台的功能最为全面。CMake添加了对Windows平台的支持，但在Unix平台上，仍不得不借助部分Autotools工具的功能，比如pkg-config。
+参考：
 
-这两个重量级工具，都有很多重量级的使用者，一般不必担心功能不够使的情况。它们的缺点是，使用了特殊的DSL（Domain Specific Language），用户需要花费额外的学习时间来学习这些DSL。
+http://www.cnblogs.com/o87481299/p/4199892.html
 
-premake使用lua语言编写，语法比CMake更简单。它的官网是：
+python google protobuf使用
 
-http://premake.github.io/
 
-premake的缺点在于，它基本上是个人作品，全职开发人员太少，导致功能有限，目前尚无特大项目使用该系统，其功能性和可靠性受到质疑。
+

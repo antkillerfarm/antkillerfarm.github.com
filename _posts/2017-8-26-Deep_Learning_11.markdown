@@ -4,6 +4,32 @@ title:  深度学习（十一）——Softmax详解, 目标检测, RCNN
 category: DL 
 ---
 
+# Instance Normalization
+
+Instance Normalization主要用于CV领域。
+
+论文：
+
+《Instance Normalization: The Missing Ingredient for Fast Stylization》
+
+首先我们列出对图片Batch Normalization的公式：
+
+$$y_{tijk}=\frac{x_{tijk}-\mu_i}{\sqrt{\sigma_i^2+\epsilon}}, \mu_i=\frac{1}{HWT}\sum_{t=1}^T \sum_{l=1}^W \sum_{m=1}^Hx_{tilm}, \sigma_i^2=\frac{1}{HWT}\sum_{t=1}^T \sum_{l=1}^W \sum_{m=1}^H(x_{tilm}-m\mu_i)^2$$
+
+其中，T为图片数量，i为通道，j、k为图片的宽、高。
+
+Instance Normalization的公式：
+
+$$y_{tijk}=\frac{x_{tijk}-\mu_{ti}}{\sqrt{\sigma_{ti}^2+\epsilon}}, \mu_{ti}=\frac{1}{HW} \sum_{l=1}^W \sum_{m=1}^Hx_{tilm}, \sigma_{ti}^2=\frac{1}{HW} \sum_{l=1}^W \sum_{m=1}^H(x_{tilm}-m\mu_{ti})^2$$
+
+从中可以看出Instance Normalization实际上就是对一张图片的一个通道内的值进行归一化，因此又叫做对比度归一化（contrast normalization）。
+
+参考：
+
+http://www.jianshu.com/p/d77b6273b990
+
+论文中文版
+
 # Softmax详解
 
 首先给出Softmax function的定义:
@@ -202,6 +228,14 @@ https://mp.weixin.qq.com/s/dcrBQ-t3tLOTouEyofOBxg
 
 间谍卫星：利用卷积神经网络对卫星影像进行多尺度目标检测
 
+https://mp.weixin.qq.com/s/66yXsRIeZdHfoZkJkci24w
+
+地平线黄李超开讲：深度学习和物体检测！
+
+https://mp.weixin.qq.com/s/x0r-2J_YdYgIQlRDqvGofg
+
+CVPR 2017论文解读：用于单目图像车辆3D检测的多任务网络
+
 # RCNN
 
 《深度学习（五）》中提到的AlexNet、VGG、GoogleNet主要用于图片分类。而这里介绍的RCNN(Regions with CNN)主要用于目标检测。
@@ -273,30 +307,5 @@ RCNN算法分为4个步骤：
 **Step 3**：类别判断。特征送入每一类的SVM分类器，判别是否属于该类。
 
 **Step 4**：位置精修。使用回归器精细修正候选框位置。
-
-## Selective Search
-
-论文：
-
-https://www.koen.me/research/pub/uijlings-ijcv2013-draft.pdf
-
-Selective Search for Object Recognition
-
-Selective Search的主要思想:
-
-**Step 1**：使用一种过分割手段，将图像分割成小区域 (1k~2k个)。
-
-这里的步骤实际上并不简单，可参考论文：
-
-《Efficient Graph-Based Image Segmentation》
-
-中文版：
-
-http://blog.csdn.net/surgewong/article/details/39008861
-
-**Step 2**：查看现有小区域，按照合并规则合并可能性最高的相邻两个区域。重复直到整张图像合并成一个区域位置。
-
-**Step 3**：输出所有曾经存在过的区域，所谓候选区域。
-
 
 

@@ -6,6 +6,32 @@ category: resource
 
 # DL参考资源
 
+## 面试
+
+https://www.zhihu.com/question/41233373
+
+如果你是面试官，你怎么去判断一个面试者的深度学习水平？
+
+https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
+
+20万、50万、100万的算法工程师，到底有什么区别？
+
+https://www.zhihu.com/question/56676679/answer/151505274
+
+机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
+
+https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
+
+面试官是如何看出你机器学习水平的？
+
+https://mp.weixin.qq.com/s?__biz=MzI3NTA0MzM1OQ==&mid=2651615534&idx=1&sn=00ecd7dc1d8472c070e720a1b63f04c4
+
+我如何考察面试者的机器学习水平
+
+https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
+
+谷歌等巨头机器学习面试题：从逻辑回归到智力测验
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：
@@ -130,10 +156,6 @@ https://mp.weixin.qq.com/s/DQcRqWALLuPpNabCv83Vcg
 
 自动机器学习，神经网络自主编程
 
-https://mp.weixin.qq.com/s/x0r-2J_YdYgIQlRDqvGofg
-
-CVPR 2017论文解读：用于单目图像车辆3D检测的多任务网络
-
 https://mp.weixin.qq.com/s/fY4vF0aPexwFi2Fu4grdzg
 
 大规模视觉理解竞赛WebVision冠军分享
@@ -202,10 +224,6 @@ https://mp.weixin.qq.com/s/_dHjZQ_7_7H34PHhV_lC3w
 
 全新强化学习算法详解，看贝叶斯神经网络如何进行策略搜索
 
-https://www.leiphone.com/news/201707/mFuwXGvZBhoVQD5S.html
-
-一秒分辨出杨臣刚、王大治和孙楠，这个黑产居然用AI来"打码"
-
 http://mp.weixin.qq.com/s/Bt6EMD4opHCnRoHKYitsUA
 
 结合人类视觉注意力进行图像分类
@@ -221,10 +239,6 @@ https://mp.weixin.qq.com/s/1E9gunSpgYt5xl9Q_uQNJg
 https://mp.weixin.qq.com/s/PiQB2AvhtDceMJxYN8O8jA
 
 通用卷积神经网络交错组卷积
-
-https://mp.weixin.qq.com/s/tLqsWWhzUU6TkDbhnxxZow
-
-Momenta详解ImageNet 2017夺冠架构SENet
 
 http://stanford.edu/~rezab/nips2014workshop/slides/jeff.pdf
 
@@ -266,14 +280,6 @@ https://mp.weixin.qq.com/s/_5tyt7pU0gIXbkmTOVEtDw
 
 嫌图片太大？！卷积神经网络轻松实现无损压缩到20%！
 
-https://mp.weixin.qq.com/s/66yXsRIeZdHfoZkJkci24w
-
-地平线黄李超开讲：深度学习和物体检测！
-
-https://mp.weixin.qq.com/s/KxQ-GRnEYEdmS2H-DHIHOg
-
-南京理工大学ICCV 2017论文：图像超分辨率模型MemNet
-
 https://mp.weixin.qq.com/s/8xSqmBbaFZ-oww4w-dOmeg
 
 吴恩达对话Hinton、Bengio、Goodfellow
@@ -297,10 +303,6 @@ https://mp.weixin.qq.com/s/83HufWMDnuXIOCCfgqeDJw
 https://mp.weixin.qq.com/s/VAEH_241IAuEH5S6H6ep5w
 
 UC伯克利提出新型视觉描述系统，物体描述无需大量样本
-
-https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
-
-NTIRE2017夺冠论文：用于单一图像超分辨率的增强型深度残差网络
 
 https://mp.weixin.qq.com/s/cyX_FzHF-6df9_AMUDu1aQ
 
@@ -330,18 +332,6 @@ https://mp.weixin.qq.com/s/88tBoAVziGEFXIGfvZZp8g
 
 深度学习图像处理项目集锦：生成可爱的动漫头像，骡子变斑马等入选
 
-https://mp.weixin.qq.com/s/i9AXKsd6XVxyuaTCKsAj3g
-
-像Sheldon一样对“讽刺语言”分辨无能？别怕，MIT最新算法帮你助攻
-
-https://mp.weixin.qq.com/s/zWmJ3uXnFtXaI2BotoadHA
-
-从技术到产品，苹果Siri深度学习语音合成技术揭秘
-
-https://mp.weixin.qq.com/s/-T5k2ViPjvEoXccKt-_J3Q
-
-中科院自动化研究所提出 FaceBoxes：实时、高准确率的 CPU 面部检测器
-
 https://mp.weixin.qq.com/s/-kXWmaIfw67rvb8IRi5mCQ
 
 视频行为理解新边界
@@ -356,7 +346,7 @@ AI编曲震撼人心，RNN生成流行音乐
 
 https://mp.weixin.qq.com/s/calUA-Ddq-mq4uHrExtfBQ
 
-实习生通关秘籍】我在谷歌大脑开挂的一年
+实习生通关秘籍：我在谷歌大脑开挂的一年
 
 https://mp.weixin.qq.com/s/YbdiEHb8ld1pp1ehgBzTOQ
 

@@ -392,3 +392,8 @@ http://www.stat.cmu.edu/~ryantibs/statml/
 
 CMU：Statistical Machine Learning
 
+http://people.ece.umn.edu/users/parhi/slides.html
+
+VLSI Digital Signal Processing Systems: Design and Implementation
+
+

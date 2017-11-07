@@ -122,6 +122,18 @@ void main()
 }
 {% endhighlight %}
 
+## IEEE 754
+
+|  | Sign | Exponent | Fraction |
+|:--:|:--:|:--:|:--:|
+| FP16 | 1 | 5 | 10 |
+| FP32 | 1 | 8 | 23 |
+| FP64 | 1 | 11 | 52 |
+
+参考：
+
+https://en.wikipedia.org/wiki/IEEE_754
+
 # 音频常识
 
 ## 人的听觉范围

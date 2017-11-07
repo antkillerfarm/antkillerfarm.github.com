@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十八）——目标跟踪
+title:  深度学习（十八）——目标跟踪, 图像超分辨率算法
 category: DL 
 ---
 
@@ -93,4 +93,43 @@ Monocular Vehicle Detection and Tracking
 https://mp.weixin.qq.com/s/x7LoIN7mOJcZDY70GB_rLg
 
 VOT Challenge 2017亚军北邮团队技术分享
+
+# 图像超分辨率算法
+
+Super Resolution（SR）的目标是：给你一张低分辨率的小图（Low Resolution，LR），你通过算法将这张LR放大成一张高分辨率的大图（High Resolution，HR）。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/25532538
+
+深度学习在图像超分辨率重建中的应用
+
+https://zhuanlan.zhihu.com/p/25201511
+
+深度对抗学习在图像分割和超分辨率中的应用
+
+https://mp.weixin.qq.com/s/uK0L5RV0bB2Jnr5WCZasfw
+
+深度学习在单图像超分辨率上的应用：SRCNN、Perceptual loss、SRResNet
+
+https://mp.weixin.qq.com/s/KxQ-GRnEYEdmS2H-DHIHOg
+
+南京理工大学ICCV 2017论文：图像超分辨率模型MemNet
+
+https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
+
+NTIRE2017夺冠论文：用于单一图像超分辨率的增强型深度残差网络
+
+https://www.zhihu.com/question/25401250
+
+如何通过多帧影像进行超分辨率重构？
+
+https://www.zhihu.com/question/38637977
+
+超分辨率重建还有什么可以研究的吗？
+
+https://zhuanlan.zhihu.com/p/25912465
+
+胎儿MRI高分辨率重建技术：现状与趋势
+
 

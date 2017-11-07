@@ -48,6 +48,10 @@ https://mp.weixin.qq.com/s/-j4p7nUF-rCGk6yK0nccvw
 
 机器人也会画漫画
 
+https://mp.weixin.qq.com/s/ouLWl623r_YaZdIdpqSWcw
+
+深度卷积对抗生成网络(DCGAN)实战
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
@@ -152,7 +156,7 @@ http://zacklipton.com/
 
 首先需要明确一点，CNN中的卷积和反卷积，实际上和数学意义上的卷积、反卷积是有差异的。
 
-数学上的卷积主要用于傅立叶变换，在计算中有个时域上的反向操作，并不是简单的向量内积运算。在信号处理领域，卷积主要用作**信号的采样**。
+数学上的卷积主要用于傅立叶变换，在计算的过程中，有一个时域上的反向操作，并不是简单的向量内积运算。在信号处理领域，卷积主要用作**信号的采样**。
 
 数学上的反卷积主要作为卷积的逆运算，相当于**信号的重建**，或者解微分方程。因此，它的难度远远大于卷积运算，常见的有Wiener deconvolution、Richardson–Lucy deconvolution等。
 
@@ -215,6 +219,12 @@ Paper笔记：Dilated Residual Networks
 论文：
 
 《Squeeze-and-Excitation Networks》
+
+参考：
+
+https://mp.weixin.qq.com/s/tLqsWWhzUU6TkDbhnxxZow
+
+Momenta详解ImageNet 2017夺冠架构SENet
 
 ## Separable convolution
 

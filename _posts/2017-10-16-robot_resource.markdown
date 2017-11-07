@@ -296,6 +296,18 @@ https://mp.weixin.qq.com/s/gIRa-P-xI5DuwY1OLH38MQ
 
 Facebook最新对抗学习研究：无需平行语料库完成无监督机器翻译
 
+https://mp.weixin.qq.com/s/LdU91j8OpDR-pidzzYVtqA
+
+Pointer Networks在自然语言处理领域中的应用
+
+https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247484926&idx=1&sn=4e34a442c126c46bba27a7f17df3e61e
+
+聊天机器人Chatbot知识资料全集
+
+https://mp.weixin.qq.com/s/i9AXKsd6XVxyuaTCKsAj3g
+
+像Sheldon一样对“讽刺语言”分辨无能？别怕，MIT最新算法帮你助攻
+
 # ML参考资源
 
 http://kexue.fm/archives/4638/
@@ -370,5 +382,8 @@ https://mp.weixin.qq.com/s/tdIzuBDTMCDSfe2IDL8ZSA
 
 基于混合集成学习算法的热迁移超时预测模型
 
+https://mp.weixin.qq.com/s/dmpHVkqRjA_U3iLgWOTzMg
+
+数据缺失的坑，无监督学习这样帮你补了
 
 

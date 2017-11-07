@@ -270,6 +270,10 @@ http://mp.weixin.qq.com/s/IfEgSOIkIPA-YtC9NQW1ng
 
 非神经网络的深度模型gcForest
 
+https://mp.weixin.qq.com/s/N80l9PZQposbIOKXbv8ayw
+
+周志华：最新实验表明gcForest已经是最好的非深度神经网络方法
+
 https://mp.weixin.qq.com/s/TGuEvNXw_9S5-9a3KyDvvw
 
 基于图卷积网络的图深度学习
@@ -436,66 +440,26 @@ https://mp.weixin.qq.com/s/HTj9OozYdq_VLJuGKaiEAg
 
 百行代码构建神经网络黑白图片自动上色系统
 
-## 量子计算 & 遗传算法
+## 工具
 
-https://www.zhihu.com/question/28171555
+https://mp.weixin.qq.com/s/TT4whft1Tj1pCEPbnMH1cA
 
-如何理解“量子退火”？
+清华大学发布OpenNE：用于网络嵌入的开源工具包
 
-http://mp.weixin.qq.com/s/FjET9HFNjVVMjqQM2KhtKA
+https://mp.weixin.qq.com/s/r01vfSKb4VpFXVyokb54Bg
 
-5分钟看懂中国最新的量子计算机
+MIT开放图像标注工具LabelMe源代码：助力机器视觉的发展
 
-https://mp.weixin.qq.com/s/WcRYHwXnv9FWpMcOEwIdQg
+https://mp.weixin.qq.com/s/30dK7nGJOWIaa1j9QElrYA
 
-量子计算的发展及核心问题
+详解帝国理工集成工具TensorLayer：控制深度学习开发复杂度
 
-https://mp.weixin.qq.com/s/Fb6EsXz8avFkGY7sMdNF6A
+https://mp.weixin.qq.com/s/m_2LE2QN_8_a1hti6G0Cow
 
-用量子计算辅助深度学习：研究者提出量子辅助Helmholtz机
+Netflix开源稀疏数据专用神经网络库：Vectorflow
 
-https://mp.weixin.qq.com/s/8Gnk2bidyQ89VvKEcWKABw
+https://mp.weixin.qq.com/s/bMfJ1Ez6bOBjHLquuZFnmQ
 
-量子计算时代的机器学习
-
-https://mp.weixin.qq.com/s/XWFnRSj_y-W7VHctgQLpdA
-
-一文读懂量子机器学习
-
-http://blog.csdn.net/u010945683/article/details/40987331
-
-遗传算法详解
-
-https://mp.weixin.qq.com/s/v1tLGUJ4My-tVWziSURHzA
-
-遗传算法的基本概念和实现
-
-https://mp.weixin.qq.com/s/rXDj5ryRvjbkenp9IEokDQ
-
-一文读懂遗传算法工作原理
-
-https://mp.weixin.qq.com/s/wvcpx41O2763OgA8uYSFHw
-
-AI系统首次实现真正自主编程：利用遗传算法，完爆初级程序员
-
-https://mp.weixin.qq.com/s/sxnI5n5ACT6UHC6VDdUwQQ
-
-结合遗传算法与DNN的EDEN：自动搜索神经网络架构与超参数
-
-https://mp.weixin.qq.com/s/NfFgOiBKOgsDAIfkXC4crQ
-
-利用达尔文的理论学习遗传算法
-
-http://pytlab.org/2017/09/19/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95%E4%B8%AD%E5%87%A0%E7%A7%8D%E4%B8%8D%E5%90%8C%E9%80%89%E6%8B%A9%E7%AE%97%E5%AD%90%E7%9A%84%E6%AF%94%E8%BE%83/
-
-遗传算法中几种不同选择算子
-
-https://mp.weixin.qq.com/s/9ZQc3RqCCcWYDplZ4RU2oA
-
-清华段路明组发现深度学习和量子物理重要关联
-
-https://mp.weixin.qq.com/s/LbyqAA_scfdDXDe_ESWEKg
-
-姚期智：呼之欲出的量子计算机，和它漫长的最后一英里
+Uber与斯坦福大学开源深度概率编程语言Pyro：基于PyTorch
 
 

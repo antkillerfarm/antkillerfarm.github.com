@@ -236,3 +236,11 @@ https://mp.weixin.qq.com/s/7AnF0uMgepchiUeqfqVbCg
 
 清华大学王生进：新智能安防：人脸识别技术与应用系统
 
+https://mp.weixin.qq.com/s/-T5k2ViPjvEoXccKt-_J3Q
+
+中科院自动化研究所提出FaceBoxes：实时、高准确率的CPU面部检测器
+
+https://www.leiphone.com/news/201707/mFuwXGvZBhoVQD5S.html
+
+一秒分辨出杨臣刚、王大治和孙楠，这个黑产居然用AI来"打码"
+

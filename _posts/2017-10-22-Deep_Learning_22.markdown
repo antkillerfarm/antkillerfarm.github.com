@@ -208,6 +208,10 @@ https://mp.weixin.qq.com/s/XUHS4o2G-iGuV9uuOmfBdQ
 
 为什么在说话人识别技术中，PLDA面对神经网络依然坚挺？
 
+https://mp.weixin.qq.com/s/zWmJ3uXnFtXaI2BotoadHA
+
+从技术到产品，苹果Siri深度学习语音合成技术揭秘
+
 ## WFST
 
 Weighted-Finite-State-Transducer

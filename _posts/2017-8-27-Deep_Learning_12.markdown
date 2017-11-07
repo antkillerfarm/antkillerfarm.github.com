@@ -6,7 +6,29 @@ category: DL
 
 # RCNN
 
-## Selective Search（续）
+## Selective Search
+
+论文：
+
+https://www.koen.me/research/pub/uijlings-ijcv2013-draft.pdf
+
+Selective Search for Object Recognition
+
+Selective Search的主要思想:
+
+**Step 1**：使用一种过分割手段，将图像分割成小区域 (1k~2k个)。
+
+这里的步骤实际上并不简单，可参考论文：
+
+《Efficient Graph-Based Image Segmentation》
+
+中文版：
+
+http://blog.csdn.net/surgewong/article/details/39008861
+
+**Step 2**：查看现有小区域，按照合并规则合并可能性最高的相邻两个区域。重复直到整张图像合并成一个区域位置。
+
+**Step 3**：输出所有曾经存在过的区域，所谓候选区域。
 
 其中合并规则如下：优先合并以下四种区域：
 
@@ -248,13 +270,5 @@ SPP将图像pooling成多个固定尺度，而RoI只将图像pooling到单个固
 
 ROI Pooling有两个输入：feature map和ROI区域。Pooling方式一般为Max Pooling。Pooling的kernel形状可以不为正方形。
 
-## Bounding-box Regression
 
-从Fast R-CNN的结构图可以看出，与一般的CNN不同，它在FC之后，实际上有两个输出层：第一个是针对每个ROI区域的分类概率预测（上图中的Linear+softmax），第二个则是针对每个ROI区域坐标的偏移优化（上图中的Linear）。
-
-然后，这两个输出层（即两个Task）再合并为一个multi-task，并定义统一的loss。
-
-![](/images/article/fast_rcnn_multi_task.png)
-
-由于两个Task的信息互为补充，使得分类预测任务的softmax准确率大为提升，SVM也就没有存在的必要了。
 

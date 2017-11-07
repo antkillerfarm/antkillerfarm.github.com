@@ -377,4 +377,8 @@ https://zhuanlan.zhihu.com/p/30751039
 
 TensorFlow全新的数据读取方式：Dataset API入门教程
 
+https://github.com/ZhuanZhiCode/TensorFlow-Eager-Execution-Examples
+
+Eager Execution的代码示例
+
 

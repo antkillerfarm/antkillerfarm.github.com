@@ -402,4 +402,8 @@ https://mp.weixin.qq.com/s/x5jX2g44X2sp7WIOdoUP4w
 
 李沐：漫谈在线学习：在线梯度下降
 
+https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
+
+Bengio等人提出图注意网络架构GAT，可处理复杂结构图
+
 

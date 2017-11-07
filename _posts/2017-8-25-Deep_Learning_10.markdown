@@ -50,6 +50,42 @@ https://mp.weixin.qq.com/s/f3bmtbCY5BfA4v3movwLVg
 
 向手机端神经网络进发：MobileNet压缩指南
 
+## Winograd
+
+矩阵方面的数值计算，Shmuel Winograd是一个无法绕开的人物。
+
+>Shmuel Winograd, 1936年生，MIT本硕（1959年）+纽约大学博士（1968年）。此后一直在IBM当研究员，直到退休。IEEE Fellow，ACM Fellow，美国科学院院士。
+
+**Winograd FFT algorithm**：一种FFT算法。FFT算法有很多，最知名的是Cooley–Tukey FFT algorithm。
+
+**Coppersmith–Winograd algorithm（1987年）**：目前最快的矩阵乘法算法。复杂度是$$\mathcal{O}(n^{2.375477})$$。矩阵乘法定义的复杂度是$$\mathcal{O}(n^{3})$$。第一个小于3的算法是Strassen algorithm（1969年）（$$\mathcal{O}(n^{2.807355})$$）。
+
+**Winograd small(short/minimal) convolution algorithm**：一种快速的卷积算法，目前AI芯片领域的基础算法。
+
+论文：
+
+《The Coppersmith-Winograd Matrix Multiplication Algorithm》
+
+《Fast Algorithms for Convolutional Neural Networks》
+
+参考：
+
+https://colfaxresearch.com/falcon-library/
+
+FALCON Library: Fast Image Convolution in Neural Networks on Intel Architecture
+
+https://www.intelnervana.com/winograd/
+
+"Not so fast, FFT": Winograd
+
+http://people.ece.umn.edu/users/parhi/SLIDES/chap8.pdf
+
+Fast Convolution
+
+https://www.encyclopediaofmath.org/index.php/Winograd_small_convolution_algorithm
+
+Winograd small convolution algorithm
+
 ## 参考
 
 https://github.com/vdumoulin/conv_arithmetic
@@ -168,6 +204,30 @@ Global Average Pooling是另一类池化操作，一般用于替换FullConnectio
 
 2.将不同通道的均值连接成一个一维tensor。
 
+## UnPooling
+
+UnPooling是一种常见的上采样操作。其过程如下图所示：
+
+![](/images/article/unpool.png)
+
+1.在Pooling（一般是Max Pooling）时，保存最大值的位置（Max Location）。
+
+2.中间经历若干网络层的运算。
+
+3.上采样阶段，利用第1步保存的Max Location，重建下一层的feature map。
+
+从上面的描述可以看出，UnPooling不完全是Pooling的逆运算：
+
+1.Pooling之后的feature map，要经过若干运算，才会进行UnPooling操作。
+
+2.对于非Max Location的地方以零填充。然而这样并不能完全还原信息。
+
+参考：
+
+http://blog.csdn.net/u012938704/article/details/52831532
+
+caffe反卷积
+
 ## 参考
 
 http://www.cnblogs.com/tornadomeet/p/3432093.html
@@ -233,30 +293,4 @@ $$z=g(Wu+b)\rightarrow z=g(BN(Wu+b))=g(BN(Wu))$$
 BN的误差反向算法相对复杂，这里不再赘述。
 
 在inference阶段，BN网络忽略Step 1和Step 2，只计算后两步。其中,$$\beta,\gamma$$由之前的训练得到。$$\mu,\sigma$$原则上要求使用全体样本的均值和方差，但样本量过大的情况下，也可使用训练时的若干个mini batch的均值和方差的FIR滤波值。
-
-# Instance Normalization
-
-Instance Normalization主要用于CV领域。
-
-论文：
-
-《Instance Normalization: The Missing Ingredient for Fast Stylization》
-
-首先我们列出对图片Batch Normalization的公式：
-
-$$y_{tijk}=\frac{x_{tijk}-\mu_i}{\sqrt{\sigma_i^2+\epsilon}}, \mu_i=\frac{1}{HWT}\sum_{t=1}^T \sum_{l=1}^W \sum_{m=1}^Hx_{tilm}, \sigma_i^2=\frac{1}{HWT}\sum_{t=1}^T \sum_{l=1}^W \sum_{m=1}^H(x_{tilm}-m\mu_i)^2$$
-
-其中，T为图片数量，i为通道，j、k为图片的宽、高。
-
-Instance Normalization的公式：
-
-$$y_{tijk}=\frac{x_{tijk}-\mu_{ti}}{\sqrt{\sigma_{ti}^2+\epsilon}}, \mu_{ti}=\frac{1}{HW} \sum_{l=1}^W \sum_{m=1}^Hx_{tilm}, \sigma_{ti}^2=\frac{1}{HW} \sum_{l=1}^W \sum_{m=1}^H(x_{tilm}-m\mu_{ti})^2$$
-
-从中可以看出Instance Normalization实际上就是对一张图片的一个通道内的值进行归一化，因此又叫做对比度归一化（contrast normalization）。
-
-参考：
-
-http://www.jianshu.com/p/d77b6273b990
-
-论文中文版
 
