@@ -1,12 +1,44 @@
 ---
 layout: post
-title:  深度学习（三）——Autoencoder, 词向量
+title:  深度学习（三）——CNN, Autoencoder, 词向量
 category: DL 
 ---
 
 # CNN
 
-### 卷积（续）
+## 概述
+
+卷积神经网络（Convolutional Neural Networks，ConvNets或CNNs）属于神经网络的范畴，已经在诸如图像识别和分类的领域证明了其高效的能力。
+
+CNN的开山之作是Yann LeCun的论文：
+
+《Gradient-Based Learning Applied to Document Recognition》
+
+>注：科学界的许多重要成果的开山之作，其名称往往和成果的最终名称有一定的差距。比如LeCun的这篇文章的名称中，就没有CNN。类似的还有Vapnik的SVM，最早被称为Support Vector Network。
+
+英文不好的，推荐以下文章：
+
+http://www.hackcv.com/index.php/archives/104/
+
+CNN的直观解释
+
+## 关键点
+
+这里以最经典的LeNet-5为例，提点一下CNN的要点。
+
+![](/images/article/LeNet_5.jpg)
+
+LeNet-5的caffe模板：
+
+https://github.com/BVLC/caffe/blob/master/examples/mnist/lenet.prototxt
+
+### 卷积
+
+在《数学狂想曲（五）》中我们讨论了卷积的数学含义，结合《 图像处理理论（一）》和《 图像处理理论（二）》，不难看出卷积或者模板（算子），在前DL时代，几乎是图像处理算法的基础和灵魂。为了实现各种目的，人们手工定义或发现了一系列算子。
+
+到了DL时代，卷积仍然起着非常重要的作用。但这个时候，不再需要人工指定算子，算子本身也将由学习获得。我们需要做的只不过是指定算子的个数而已。
+
+比如，LeNet-5的C1:6@28*28，其中的6就是算子的个数。显然算子的个数越多，计算越慢。但太少的话，又会导致提取的特征数太少，神经网络学不到东西。
 
 需要注意的是，传统的CV算法中，通常只有单一的卷积运算。而CNN中的卷积层，实际上包括了**卷积+激活**两种运算，即：
 
@@ -271,41 +303,4 @@ Tomas Mikolov于2013年对Bengio方案进行了简化改进，提出了目前最
 http://blog.csdn.net/itplus/article/details/37969519
 
 老惯例这里只对最重要的内容进行摘要。
-
-### CBOW & Skip-gram
-
-![](/images/article/word2vec.png)
-
-上图是word2vec中使用到的两种模型的示意图。
-
-从图中可知，word2vec虽然使用了神经网络，但是从层数来说，只有3层而已，还谈不上是Deep Learning。但是考虑到DL，基本就是神经网络的同义词，因此这里仍然将word2vec归为DL的范畴。
-
->注：深度学习不全是神经网络，周志华教授提出的gcForest就是一个有益的另类尝试。
-
-研究一个神经网络模型，最重要的除了神经元之间的连接关系之外，就是神经网络的输入输出了。
-
-CBOW（Continuous Bag-of-Words Model）模型和Skip-gram（Continuous Skip-gram Model）模型脱胎于n-gram模型，即一个词出现的概率只与它前后的n个词有关。这里的n也被称为窗口大小.
-
-上图中，窗口大小为5，即一个中心词$$\{w_t\}$$+前面的两个词$$\{w_{t-1},w_{t-2}\}$$+后面的两个词$$\{w_{t+1},w_{t+2}\}$$。
-
-| 名称 | CBOW | Skip-gram |
-|:--:|:--:|:--:|
-| 输入 | $$\{w_{t-1},w_{t-2},w_{t+1},w_{t+2}\}$$ | $$\{w_t\}$$ |
-| 输出 | $$\{w_t\}$$ | $$\{w_{t-1},w_{t-2},w_{t+1},w_{t+2}\}$$ |
-| 目标 | 在输入确定的情况下，最大化输出值的概率。 | 在输入确定的情况下，最大化输出值的概率。 |
-
-### Hierarchical Softmax
-
-word2vec的输出层有两种模型：Hierarchical Softmax和Negative Sampling。
-
-Softmax是DL中常用的输出层结构，它表征**多分类中的每一个分类所对应的概率**。
-
-然而在这里，每个分类表示一个单词，即：分类的个数=词汇表的单词个数。如此众多的分类直接映射到隐层，显然并不容易训练出有效特征。
-
-Hierarchical Softmax是Softmax的一个变种。这时的输出层不再是一个扁平的多分类层，而变成了一个层次化的二分类层。
-
-Hierarchical Softmax一般基于Huffman编码构建。在本例中，我们首先统计词频，以获得每个词所对应的Huffman编码，然后输出层会利用Huffman编码所对应的层次二叉树的路径来计算每个词的概率，并逆传播到隐藏层。
-
-由Huffman编码的特性可知，Hierarchical Softmax的计算量要小于一般的Softmax。
-
 

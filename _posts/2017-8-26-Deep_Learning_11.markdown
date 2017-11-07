@@ -1,8 +1,100 @@
 ---
 layout: post
-title:  深度学习（十一）——Softmax详解, 目标检测, RCNN
+title:  深度学习（十一）——Batch Normalization, Softmax详解, 目标检测
 category: DL 
 ---
+
+# 花式池化（续）
+
+## UnPooling
+
+UnPooling是一种常见的上采样操作。其过程如下图所示：
+
+![](/images/article/unpool.png)
+
+1.在Pooling（一般是Max Pooling）时，保存最大值的位置（Max Location）。
+
+2.中间经历若干网络层的运算。
+
+3.上采样阶段，利用第1步保存的Max Location，重建下一层的feature map。
+
+从上面的描述可以看出，UnPooling不完全是Pooling的逆运算：
+
+1.Pooling之后的feature map，要经过若干运算，才会进行UnPooling操作。
+
+2.对于非Max Location的地方以零填充。然而这样并不能完全还原信息。
+
+参考：
+
+http://blog.csdn.net/u012938704/article/details/52831532
+
+caffe反卷积
+
+## 参考
+
+http://www.cnblogs.com/tornadomeet/p/3432093.html
+
+Stochastic Pooling简单理解
+
+http://mp.weixin.qq.com/s/XzOri12hwyOCdI1TgGQV3w
+
+新型池化层sort_pool2d实现更快更好的收敛：表现优于最大池化层
+
+# Batch Normalization
+
+在《深度学习（二）》中，我们已经简单的介绍了Batch Normalization的基本概念。这里主要讲述一下它的实现细节。
+
+我们知道在神经网络训练开始前，都要对输入数据做一个归一化处理，那么具体为什么需要归一化呢？归一化后有什么好处呢？
+
+原因在于神经网络学习过程本质就是为了学习数据分布，一旦训练数据与测试数据的分布不同，那么网络的泛化能力也大大降低；另外一方面，一旦每批训练数据的分布各不相同(batch梯度下降)，那么网络就要在每次迭代都去学习适应不同的分布，这样将会大大降低网络的训练速度，这也正是为什么我们需要对数据都要做一个归一化预处理的原因。
+
+对输入数据归一化，早就是一种基本操作了。然而这样只对神经网络的输入层有效。更好的办法是对每一层都进行归一化。
+
+然而简单的归一化，会破坏神经网络的特征。（归一化是线性操作，但神经网络本身是非线性的，不具备线性不变性。）因此，如何归一化，实际上是个很有技巧的事情。
+
+首先，我们回顾一下归一化的一般做法：
+
+$$\hat x^{(k)} = \frac{x^{(k)} - E[x^{(k)}]}{\sqrt{Var[x^{(k)}]}}$$
+
+其中，$$x = (x^{(0)},x^{(1)},…x^{(d)})$$表示d维的输入向量。
+
+接着，定义归一化变换函数：
+
+$$y^{(k)}=\gamma^{(k)}\hat x^{(k)}+\beta^{(k)}$$
+
+这里的$$\gamma^{(k)},\beta^{(k)}$$是待学习的参数。
+
+BN的主要思想是用同一batch的样本分布来近似整体的样本分布。显然，batch size越大，这种近似也就越准确。
+
+用$$\mathcal{B}=\{x_{1,\dots,m}\}$$表示batch，则BN的计算过程如下：
+
+**Step 1**.计算mini-batch mean。
+
+$$\mu_\mathcal{B}\leftarrow \frac{1}{m}\sum_{i=1}^mx_i$$
+
+**Step 2**.计算mini-batch variance。
+
+$$\sigma_\mathcal{B}^2\leftarrow \frac{1}{m}\sum_{i=1}^m(x_i-\mu_\mathcal{B})^2$$
+
+**Step 3**.normalize。
+
+$$\hat x_i\leftarrow \frac{x_i-\mu_\mathcal{B}}{\sqrt{\sigma_\mathcal{B}^2+\epsilon}}$$
+
+这里的$$\epsilon$$是为了数值的稳定性而添加的常数。
+
+**Step 4**.scale and shift。
+
+$$y_i=\gamma\hat x_i+\beta\equiv BN_{\gamma,\beta}(x_i)$$
+
+在实际使用中，BN计算和卷积计算一样，都被当作神经网络的其中一层。即：
+
+$$z=g(Wu+b)\rightarrow z=g(BN(Wu+b))=g(BN(Wu))$$
+
+从另一个角度来看，BN的均值、方差操作，相当于去除一阶和二阶信息，而只保留网络的高阶信息，即非线性部分。因此，上式最后一步中b被忽略，也就不难理解了。
+
+BN的误差反向算法相对复杂，这里不再赘述。
+
+在inference阶段，BN网络忽略Step 1和Step 2，只计算后两步。其中,$$\beta,\gamma$$由之前的训练得到。$$\mu,\sigma$$原则上要求使用全体样本的均值和方差，但样本量过大的情况下，也可使用训练时的若干个mini batch的均值和方差的FIR滤波值。
 
 # Instance Normalization
 
@@ -196,116 +288,5 @@ https://mp.weixin.qq.com/s/YovhKYeGGLqSxxSqMNsbKg
 
 基于深度学习的目标检测学习总结
 
-https://mp.weixin.qq.com/s/nGSaQXm8AczYodtmHD1qNA
-
-深度学习目标检测模型全面综述：Faster R-CNN、R-FCN和SSD
-
-https://mp.weixin.qq.com/s/c2oMJfE95I1ciEtvdTlb4A
-
-完全脱离预训练模型的目标检测方法
-
-https://mp.weixin.qq.com/s/NV2hWofOCractLt45-wI1A
-
-山世光：基于深度学习的目标检测技术进展与展望
-
-https://mp.weixin.qq.com/s/zJ3EN175_9num2OknVvnyA
-
-邬书哲：物体检测算法的革新与传承
-
-https://mp.weixin.qq.com/s/1vOdOMyByBacSBMVrscq5Q
-
-黄畅：基于DenesBox的目标检测在自动驾驶中的应用
-
-https://mp.weixin.qq.com/s/6rSeJOqbKyrDj3FpS8J5eg
-
-黄李超讲物体检测
-
-https://mp.weixin.qq.com/s/JjsAnB_OxKS1Af9XAtw5sA
-
-一文带你读懂深度学习框架下的目标检测
-
-https://mp.weixin.qq.com/s/dcrBQ-t3tLOTouEyofOBxg
-
-间谍卫星：利用卷积神经网络对卫星影像进行多尺度目标检测
-
-https://mp.weixin.qq.com/s/66yXsRIeZdHfoZkJkci24w
-
-地平线黄李超开讲：深度学习和物体检测！
-
-https://mp.weixin.qq.com/s/x0r-2J_YdYgIQlRDqvGofg
-
-CVPR 2017论文解读：用于单目图像车辆3D检测的多任务网络
-
-# RCNN
-
-《深度学习（五）》中提到的AlexNet、VGG、GoogleNet主要用于图片分类。而这里介绍的RCNN(Regions with CNN)主要用于目标检测。
-
-## 车牌识别的另一种思路
-
-在介绍RCNN之前，我首先介绍一下2013年的一个车牌识别项目的解决思路。
-
-车牌识别差不多是深度学习应用到CV领域之前，CV领域少数几个达到实用价值的应用之一。国内在2010～2015年前后，有许多公司都做过类似的项目。其产品更是随处可见，很多停车场已经利用该技术，自动识别车辆信息。
-
-车牌识别的难度不高——无论是目标字符集，还是目标字体，都很有限。但也有它的技术难点：
-
-1.计算资源有限。通常就是PC，甚至嵌入式设备，不可能用大规模集群来计算。
-
-2.有实时性的要求，通常处理时间不超过3s。
-
-因此，如何快速的在图片中找到车牌所在区域，就成为了关键问题。
-
-常规的做法，通常是根据颜色、形状找到车牌所在区域，但鲁棒性不佳。后来，有个同事提出了改进方法：
-
-**Step 1**：在整个图片中，基于haar算子，寻找疑似数字的区域。
-
-**Step 2**：将数字聚集的区域设定为疑似车牌所在区域。
-
-**Step 3**：投入更大运算量，以识别车牌上的文字。（这一步是常规做法。）
-
-## RCNN的基本原理
-
-RCNN是Ross Girshick于2014年提出的深度模型。
-
->注：Ross Girshick（网名：rbg），芝加哥大学博士（2012），Facebook研究员。他和何恺明被誉为CV界深度学习的**双子新星**。   
->个人主页：   
->http://www.rossgirshick.info/
-
-论文：
-
-《Rich feature hierarchies for accurate object detection and semantic segmentation》
-
-代码：
-
-https://github.com/rbgirshick/rcnn
-
-RCNN相对传统方法的改进：
-
-**速度**：经典的目标检测算法使用滑动窗法依次判断所有可能的区域。RCNN则(采用Selective Search方法)预先提取一系列较可能是物体的候选区域，之后仅在这些候选区域上(采用CNN)提取特征，进行判断。
-
-**训练集**：经典的目标检测算法在区域中提取人工设定的特征。RCNN则采用深度网络进行特征提取。
-
-使用两个数据库：
-
-一个较大的识别库（ImageNet ILSVC 2012）：标定每张图片中物体的类别。一千万图像，1000类。
-
-一个较小的检测库（PASCAL VOC 2007）：标定每张图片中，物体的类别和位置，一万图像，20类。
-
-RCNN使用识别库进行预训练得到CNN（有监督预训练），而后用检测库调优参数，最后在检测库上评测。
-
-这实际上就是《深度学习（七）》中提到的fine-tuning的思想。
-
-## RCNN算法的基本流程
-
-![](/images/article/rcnn.png)
-
-RCNN算法分为4个步骤：
-
-**Step 1**：候选区域生成。一张图像生成1K~2K个候选区域（采用Selective Search方法）。
-
-**Step 2**：特征提取。对每个候选区域，使用深度卷积网络提取特征（CNN）。
-
-**Step 3**：类别判断。特征送入每一类的SVM分类器，判别是否属于该类。
-
-**Step 4**：位置精修。使用回归器精细修正候选框位置。
 
 

@@ -1,12 +1,94 @@
 ---
 layout: post
-title:  深度学习（十）——花式池化, Batch Normalization
+title:  深度学习（十）——花式池化
 category: DL 
 ---
 
 # 花式卷积
 
-## depthwise separable convolution（续）
+## 分组卷积
+
+![](/images/article/AlexNet.png)
+
+分组卷积最早在AlexNet中出现，由于当时的硬件资源有限，训练AlexNet时卷积操作不能全部放在同一个GPU处理，因此作者把feature maps分给2个GPU分别进行处理，最后把2个GPU的结果进行融合。
+
+在AlexNet的Group Convolution当中，特征的通道被平均分到不同组里面，最后再通过两个全连接层来融合特征，这样一来，就只能在最后时刻才融合不同组之间的特征，对模型的泛化性是相当不利的。
+
+为了解决这个问题，ShuffleNet在每一次层叠这种Group conv层前，都进行一次channel shuffle，shuffle过的通道被分配到不同组当中。进行完一次group conv之后，再一次channel shuffle，然后分到下一层组卷积当中，以此循环。
+
+![](/images/article/ShuffleNet.jpg)
+
+论文：
+
+《ShuffleNet: An Extremely Efficient Convolutional Neural Network for Mobile Devices》
+
+无论是在Inception、DenseNet或者ShuffleNet里面，我们对所有通道产生的特征都是不分权重直接结合的，那为什么要认为所有通道的特征对模型的作用就是相等的呢？这是一个好问题，于是，ImageNet2017冠军SEnet就出来了。
+
+论文：
+
+《Squeeze-and-Excitation Networks》
+
+参考：
+
+https://mp.weixin.qq.com/s/tLqsWWhzUU6TkDbhnxxZow
+
+Momenta详解ImageNet 2017夺冠架构SENet
+
+## Separable convolution
+
+前面介绍的都是正方形的卷积核，实际上长条形的卷积核也是很常用的。比如可分离卷积。
+
+我们知道卷积的计算量和卷积核的面积成正比。对于k x k的卷积核K来说，计算复杂度就是$$O(k^2)$$。
+
+如果我们能找到1 x k的卷积核H和k x 1的卷积核V，且$$K = V * H$$，则称K是可分离的卷积核。
+
+根据卷积运算满足结合律，可得：
+
+$$f * K = f * (V * H) = f * V * H$$
+
+这样就将一个k x k的卷积运算，转换成1 x k + k x 1的卷积运算，从而大大节省了参数和计算量。
+
+显然，不是所有的卷积核都满足可分离条件。但是不要紧，NN有自动学习并逼近函数的能力。经过训练之后：$$K \approx V * H$$
+
+## 可变形卷积核
+
+MSRA于2017年提出了可变形卷积核的概念。
+
+论文：
+
+《Deformable Convolutional Networks》
+
+![](/images/article/Deformable_convolution.png)
+
+## 1 x 1卷积
+
+1、升维或降维。
+
+如果卷积的输出输入都只是一个平面，那么1x1卷积核并没有什么意义，它是完全不考虑像素与周边其他像素关系。 但卷积的输出输入是长方体，所以1 x 1卷积实际上是对每个像素点，在不同的channels上进行线性组合（信息整合），且保留了图片的原有平面结构，调控depth，从而完成升维或降维的功能。
+
+![](/images/article/conv_1x1.png)
+
+2、加入非线性。卷积层之后经过激励层，1 x 1的卷积在前一层的学习表示上添加了非线性激励（non-linear activation），提升网络的表达能力；
+
+3.促进不同通道之间的信息交换。
+
+参考：
+
+https://www.zhihu.com/question/56024942
+
+卷积神经网络中用1x1卷积有什么作用或者好处呢？
+
+## depthwise separable convolution
+
+在传统的卷积网络中，卷积层会同时寻找跨空间和跨深度的相关性。
+
+然而Xception指出：跨通道的相关性和空间相关性是完全可分离的，最好不要联合映射它们。
+
+>Xception是Francois Chollet于2016年提出的。
+
+![](/images/article/Xception.png)
+
+上图是Xception中的卷积运算depthwise separable convolution的示意图。
 
 它包含一个深度方面的卷积（一个为每个通道单独执行的空间卷积，depthwise convolution），后面跟着一个逐点的卷积（一个跨通道的1×1卷积，pointwise convolution）。我们可以将其看作是首先求跨一个2D空间的相关性，然后再求跨一个1D空间的相关性。可以看出，这种2D+1D映射学起来比全 3D 映射更加简单。
 
@@ -203,94 +285,4 @@ Global Average Pooling是另一类池化操作，一般用于替换FullConnectio
 1.计算每个通道的feature map的均值。
 
 2.将不同通道的均值连接成一个一维tensor。
-
-## UnPooling
-
-UnPooling是一种常见的上采样操作。其过程如下图所示：
-
-![](/images/article/unpool.png)
-
-1.在Pooling（一般是Max Pooling）时，保存最大值的位置（Max Location）。
-
-2.中间经历若干网络层的运算。
-
-3.上采样阶段，利用第1步保存的Max Location，重建下一层的feature map。
-
-从上面的描述可以看出，UnPooling不完全是Pooling的逆运算：
-
-1.Pooling之后的feature map，要经过若干运算，才会进行UnPooling操作。
-
-2.对于非Max Location的地方以零填充。然而这样并不能完全还原信息。
-
-参考：
-
-http://blog.csdn.net/u012938704/article/details/52831532
-
-caffe反卷积
-
-## 参考
-
-http://www.cnblogs.com/tornadomeet/p/3432093.html
-
-Stochastic Pooling简单理解
-
-http://mp.weixin.qq.com/s/XzOri12hwyOCdI1TgGQV3w
-
-新型池化层sort_pool2d实现更快更好的收敛：表现优于最大池化层
-
-# Batch Normalization
-
-在《深度学习（二）》中，我们已经简单的介绍了Batch Normalization的基本概念。这里主要讲述一下它的实现细节。
-
-我们知道在神经网络训练开始前，都要对输入数据做一个归一化处理，那么具体为什么需要归一化呢？归一化后有什么好处呢？
-
-原因在于神经网络学习过程本质就是为了学习数据分布，一旦训练数据与测试数据的分布不同，那么网络的泛化能力也大大降低；另外一方面，一旦每批训练数据的分布各不相同(batch梯度下降)，那么网络就要在每次迭代都去学习适应不同的分布，这样将会大大降低网络的训练速度，这也正是为什么我们需要对数据都要做一个归一化预处理的原因。
-
-对输入数据归一化，早就是一种基本操作了。然而这样只对神经网络的输入层有效。更好的办法是对每一层都进行归一化。
-
-然而简单的归一化，会破坏神经网络的特征。（归一化是线性操作，但神经网络本身是非线性的，不具备线性不变性。）因此，如何归一化，实际上是个很有技巧的事情。
-
-首先，我们回顾一下归一化的一般做法：
-
-$$\hat x^{(k)} = \frac{x^{(k)} - E[x^{(k)}]}{\sqrt{Var[x^{(k)}]}}$$
-
-其中，$$x = (x^{(0)},x^{(1)},…x^{(d)})$$表示d维的输入向量。
-
-接着，定义归一化变换函数：
-
-$$y^{(k)}=\gamma^{(k)}\hat x^{(k)}+\beta^{(k)}$$
-
-这里的$$\gamma^{(k)},\beta^{(k)}$$是待学习的参数。
-
-BN的主要思想是用同一batch的样本分布来近似整体的样本分布。显然，batch size越大，这种近似也就越准确。
-
-用$$\mathcal{B}=\{x_{1,\dots,m}\}$$表示batch，则BN的计算过程如下：
-
-**Step 1**.计算mini-batch mean。
-
-$$\mu_\mathcal{B}\leftarrow \frac{1}{m}\sum_{i=1}^mx_i$$
-
-**Step 2**.计算mini-batch variance。
-
-$$\sigma_\mathcal{B}^2\leftarrow \frac{1}{m}\sum_{i=1}^m(x_i-\mu_\mathcal{B})^2$$
-
-**Step 3**.normalize。
-
-$$\hat x_i\leftarrow \frac{x_i-\mu_\mathcal{B}}{\sqrt{\sigma_\mathcal{B}^2+\epsilon}}$$
-
-这里的$$\epsilon$$是为了数值的稳定性而添加的常数。
-
-**Step 4**.scale and shift。
-
-$$y_i=\gamma\hat x_i+\beta\equiv BN_{\gamma,\beta}(x_i)$$
-
-在实际使用中，BN计算和卷积计算一样，都被当作神经网络的其中一层。即：
-
-$$z=g(Wu+b)\rightarrow z=g(BN(Wu+b))=g(BN(Wu))$$
-
-从另一个角度来看，BN的均值、方差操作，相当于去除一阶和二阶信息，而只保留网络的高阶信息，即非线性部分。因此，上式最后一步中b被忽略，也就不难理解了。
-
-BN的误差反向算法相对复杂，这里不再赘述。
-
-在inference阶段，BN网络忽略Step 1和Step 2，只计算后两步。其中,$$\beta,\gamma$$由之前的训练得到。$$\mu,\sigma$$原则上要求使用全体样本的均值和方差，但样本量过大的情况下，也可使用训练时的若干个mini batch的均值和方差的FIR滤波值。
 

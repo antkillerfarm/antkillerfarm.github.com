@@ -1,10 +1,124 @@
 ---
 layout: post
-title:  深度学习（十二）——SPPNet, Fast R-CNN
+title:  深度学习（十二）——RCNN
 category: DL 
 ---
 
+# 目标检测
+
+## 参考（续）
+
+https://mp.weixin.qq.com/s/nGSaQXm8AczYodtmHD1qNA
+
+深度学习目标检测模型全面综述：Faster R-CNN、R-FCN和SSD
+
+https://mp.weixin.qq.com/s/c2oMJfE95I1ciEtvdTlb4A
+
+完全脱离预训练模型的目标检测方法
+
+https://mp.weixin.qq.com/s/NV2hWofOCractLt45-wI1A
+
+山世光：基于深度学习的目标检测技术进展与展望
+
+https://mp.weixin.qq.com/s/zJ3EN175_9num2OknVvnyA
+
+邬书哲：物体检测算法的革新与传承
+
+https://mp.weixin.qq.com/s/1vOdOMyByBacSBMVrscq5Q
+
+黄畅：基于DenesBox的目标检测在自动驾驶中的应用
+
+https://mp.weixin.qq.com/s/6rSeJOqbKyrDj3FpS8J5eg
+
+黄李超讲物体检测
+
+https://mp.weixin.qq.com/s/JjsAnB_OxKS1Af9XAtw5sA
+
+一文带你读懂深度学习框架下的目标检测
+
+https://mp.weixin.qq.com/s/dcrBQ-t3tLOTouEyofOBxg
+
+间谍卫星：利用卷积神经网络对卫星影像进行多尺度目标检测
+
+https://mp.weixin.qq.com/s/66yXsRIeZdHfoZkJkci24w
+
+地平线黄李超开讲：深度学习和物体检测！
+
+https://mp.weixin.qq.com/s/x0r-2J_YdYgIQlRDqvGofg
+
+CVPR 2017论文解读：用于单目图像车辆3D检测的多任务网络
+
 # RCNN
+
+《深度学习（五）》中提到的AlexNet、VGG、GoogleNet主要用于图片分类。而这里介绍的RCNN(Regions with CNN)主要用于目标检测。
+
+## 车牌识别的另一种思路
+
+在介绍RCNN之前，我首先介绍一下2013年的一个车牌识别项目的解决思路。
+
+车牌识别差不多是深度学习应用到CV领域之前，CV领域少数几个达到实用价值的应用之一。国内在2010～2015年前后，有许多公司都做过类似的项目。其产品更是随处可见，很多停车场已经利用该技术，自动识别车辆信息。
+
+车牌识别的难度不高——无论是目标字符集，还是目标字体，都很有限。但也有它的技术难点：
+
+1.计算资源有限。通常就是PC，甚至嵌入式设备，不可能用大规模集群来计算。
+
+2.有实时性的要求，通常处理时间不超过3s。
+
+因此，如何快速的在图片中找到车牌所在区域，就成为了关键问题。
+
+常规的做法，通常是根据颜色、形状找到车牌所在区域，但鲁棒性不佳。后来，有个同事提出了改进方法：
+
+**Step 1**：在整个图片中，基于haar算子，寻找疑似数字的区域。
+
+**Step 2**：将数字聚集的区域设定为疑似车牌所在区域。
+
+**Step 3**：投入更大运算量，以识别车牌上的文字。（这一步是常规做法。）
+
+## RCNN的基本原理
+
+RCNN是Ross Girshick于2014年提出的深度模型。
+
+>注：Ross Girshick（网名：rbg），芝加哥大学博士（2012），Facebook研究员。他和何恺明被誉为CV界深度学习的**双子新星**。   
+>个人主页：   
+>http://www.rossgirshick.info/
+
+论文：
+
+《Rich feature hierarchies for accurate object detection and semantic segmentation》
+
+代码：
+
+https://github.com/rbgirshick/rcnn
+
+RCNN相对传统方法的改进：
+
+**速度**：经典的目标检测算法使用滑动窗法依次判断所有可能的区域。RCNN则(采用Selective Search方法)预先提取一系列较可能是物体的候选区域，之后仅在这些候选区域上(采用CNN)提取特征，进行判断。
+
+**训练集**：经典的目标检测算法在区域中提取人工设定的特征。RCNN则采用深度网络进行特征提取。
+
+使用两个数据库：
+
+一个较大的识别库（ImageNet ILSVC 2012）：标定每张图片中物体的类别。一千万图像，1000类。
+
+一个较小的检测库（PASCAL VOC 2007）：标定每张图片中，物体的类别和位置，一万图像，20类。
+
+RCNN使用识别库进行预训练得到CNN（有监督预训练），而后用检测库调优参数，最后在检测库上评测。
+
+这实际上就是《深度学习（七）》中提到的fine-tuning的思想。
+
+## RCNN算法的基本流程
+
+![](/images/article/rcnn.png)
+
+RCNN算法分为4个步骤：
+
+**Step 1**：候选区域生成。一张图像生成1K~2K个候选区域（采用Selective Search方法）。
+
+**Step 2**：特征提取。对每个候选区域，使用深度卷积网络提取特征（CNN）。
+
+**Step 3**：类别判断。特征送入每一类的SVM分类器，判别是否属于该类。
+
+**Step 4**：位置精修。使用回归器精细修正候选框位置。
 
 ## Selective Search
 
@@ -163,112 +277,6 @@ RCNN算法详解
 http://mp.weixin.qq.com/s/_U6EJBP_qmx68ih00IhGjQ
 
 Object Detection R-CNN
-
-# SPPNet
-
-SPPNet是何恺明2014年的作品。
-
-论文：
-
-《Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition》
-
-在RCNN算法中，一张图片会有1~2k个候选框，每一个都要单独输入CNN做卷积等操作很费时。而且这些候选框可能很多都是重合的，重复的CNN操作从信息论的角度，也是相当冗余的。
-
-![](/images/article/rcnn_vs_spp.png)
-
-SPPNet的核心思想如上图所示：在feature map上提取ROI特征，这样就只需要在整幅图像上做一次卷积。
-
-这个想法说起来简单，但落到实地，还有如下问题需要解决：
-
-**Problem 1**：原始图像的ROI如何映射到特征图（一系列卷积层的最后输出）。
-
-这里的计算比较复杂，要点在于：选择原始图像ROI的左上角和右下角，将之映射到feature map上的两个对应点，从而得到feature map上的ROI。
-
-![](/images/article/roi_original_to_feature.png)
-
-参见：
-
-https://zhuanlan.zhihu.com/p/24780433
-
-原始图片中的ROI如何映射到到feature map?
-
-http://www.cnblogs.com/objectDetect/p/5947169.html
-
-卷积神经网络物体检测之感受野大小计算
-
-**Problem 2**：ROI的在特征图上的对应的特征区域的维度不满足全连接层的输入要求怎么办（又不可能像在原始ROI图像上那样进行截取和缩放）？
-
-对于Problem 2我们分析一下：
-
-这个问题涉及的流程主要有: 图像输入->卷积层1->池化1->...->卷积层n->池化n->全连接层。
-
-引发问题的原因主要有：全连接层的输入维度是固定死的，导致池化n的输出必须与之匹配，继而导致图像输入的尺寸必须固定。
-
-解决办法可能有：
-
-1.想办法让不同尺寸的图像也可以使池化n产生固定的输出维度。（打破图像输入的固定性）
-
-2.想办法让全连接层（罪魁祸首）可以接受非固定的输入维度。（打破全连接层的固定性，继而也打破了图像输入的固定性）
-
-以上的方法1就是SPPnet的思想。
-
-![](/images/article/spp.png)
-
-**Step 1**：为图像建立不同尺度的图像金字塔。上图为3层。
-
-**Step 2**：将图像金字塔中包含的feature映射到固定尺寸的向量中。上图为$$(16+4+1)\times 256$$维向量。
-
-总结：
-
-![](/images/article/spp_p.png)
-
-从上图可以看出，由于卷积策略的不同，SPPnet的流程和RCNN也有一点微小的差异：
-
-1.RCNN是先选择区域，然后对区域进行卷积，并检测。
-
-2.SPPnet是先统一卷积，然后应用选择区域，做区域检测。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/24774302
-
-SPPNet-引入空间金字塔池化改进RCNN
-
-http://kaiminghe.com/iccv15tutorial/iccv2015_tutorial_convolutional_feature_maps_kaiminghe.pdf
-
-何恺明：Convolutional Feature Maps
-
-# Fast R-CNN
-
-Fast R-CNN是Ross Girshick于2015年祭出的又一大招。
-
-论文：
-
-《Fast R-CNN》
-
-代码：
-
-https://github.com/rbgirshick/fast-rcnn
-
-![](/images/article/fast_rcnn_p_2.png)
-
-上图是Fast R-CNN的结构图。从该图可以看出Fast R-CNN和SPPnet的主要差异在于：
-
-1.使用ROI（Region of interest） Pooling，替换SPP。
-
-2.去掉了SVM分类。
-
-以下将对这两个方面，做一个简述。
-
-## ROI Pooling
-
-SPP将图像pooling成多个固定尺度，而RoI只将图像pooling到单个固定的尺度。（虽然多尺度学习能提高一点点mAP，不过计算量成倍的增加。）
-
-普通pooling操作中，pooling区域的大小一旦选定，就不再变化。
-
-而ROI Pooling中，为了将ROI区域pooling到单个固定的目标尺度，我们需要根据ROI区域和目标尺度的大小，动态计算pooling区域的大小。
-
-ROI Pooling有两个输入：feature map和ROI区域。Pooling方式一般为Max Pooling。Pooling的kernel形状可以不为正方形。
 
 
 

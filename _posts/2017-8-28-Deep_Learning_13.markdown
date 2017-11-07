@@ -1,10 +1,115 @@
 ---
 layout: post
-title:  深度学习（十三）——Faster R-CNN, YOLO
+title:  深度学习（十三）——SPPNet, Fast R-CNN, Faster R-CNN, YOLO
 category: DL 
 ---
 
-# Fast R-CNN（续）
+# SPPNet
+
+SPPNet是何恺明2014年的作品。
+
+论文：
+
+《Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition》
+
+在RCNN算法中，一张图片会有1~2k个候选框，每一个都要单独输入CNN做卷积等操作很费时。而且这些候选框可能很多都是重合的，重复的CNN操作从信息论的角度，也是相当冗余的。
+
+![](/images/article/rcnn_vs_spp.png)
+
+SPPNet的核心思想如上图所示：在feature map上提取ROI特征，这样就只需要在整幅图像上做一次卷积。
+
+这个想法说起来简单，但落到实地，还有如下问题需要解决：
+
+**Problem 1**：原始图像的ROI如何映射到特征图（一系列卷积层的最后输出）。
+
+这里的计算比较复杂，要点在于：选择原始图像ROI的左上角和右下角，将之映射到feature map上的两个对应点，从而得到feature map上的ROI。
+
+![](/images/article/roi_original_to_feature.png)
+
+参见：
+
+https://zhuanlan.zhihu.com/p/24780433
+
+原始图片中的ROI如何映射到到feature map?
+
+http://www.cnblogs.com/objectDetect/p/5947169.html
+
+卷积神经网络物体检测之感受野大小计算
+
+**Problem 2**：ROI的在特征图上的对应的特征区域的维度不满足全连接层的输入要求怎么办（又不可能像在原始ROI图像上那样进行截取和缩放）？
+
+对于Problem 2我们分析一下：
+
+这个问题涉及的流程主要有: 图像输入->卷积层1->池化1->...->卷积层n->池化n->全连接层。
+
+引发问题的原因主要有：全连接层的输入维度是固定死的，导致池化n的输出必须与之匹配，继而导致图像输入的尺寸必须固定。
+
+
+解决办法可能有：
+
+1.想办法让不同尺寸的图像也可以使池化n产生固定的输出维度。（打破图像输入的固定性）
+
+2.想办法让全连接层（罪魁祸首）可以接受非固定的输入维度。（打破全连接层的固定性，继而也打破了图像输入的固定性）
+
+以上的方法1就是SPPnet的思想。
+
+![](/images/article/spp.png)
+
+**Step 1**：为图像建立不同尺度的图像金字塔。上图为3层。
+
+**Step 2**：将图像金字塔中包含的feature映射到固定尺寸的向量中。上图为$$(16+4+1)\times 256$$维向量。
+
+总结：
+
+![](/images/article/spp_p.png)
+
+从上图可以看出，由于卷积策略的不同，SPPnet的流程和RCNN也有一点微小的差异：
+
+1.RCNN是先选择区域，然后对区域进行卷积，并检测。
+
+2.SPPnet是先统一卷积，然后应用选择区域，做区域检测。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/24774302
+
+SPPNet-引入空间金字塔池化改进RCNN
+
+http://kaiminghe.com/iccv15tutorial/iccv2015_tutorial_convolutional_feature_maps_kaiminghe.pdf
+
+何恺明：Convolutional Feature Maps
+
+# Fast R-CNN
+
+Fast R-CNN是Ross Girshick于2015年祭出的又一大招。
+
+论文：
+
+《Fast R-CNN》
+
+代码：
+
+https://github.com/rbgirshick/fast-rcnn
+
+![](/images/article/fast_rcnn_p_2.png)
+
+上图是Fast R-CNN的结构图。从该图可以看出Fast R-CNN和SPPnet的主要差异在于：
+
+1.使用ROI（Region of interest） Pooling，替换SPP。
+
+2.去掉了SVM分类。
+
+以下将对这两个方面，做一个简述。
+
+## ROI Pooling
+
+SPP将图像pooling成多个固定尺度，而RoI只将图像pooling到单个固定的尺度。（虽然多尺度学习能提高一点点mAP，不过计算量成倍的增加。）
+
+普通pooling操作中，pooling区域的大小一旦选定，就不再变化。
+
+而ROI Pooling中，为了将ROI区域pooling到单个固定的目标尺度，我们需要根据ROI区域和目标尺度的大小，动态计算pooling区域的大小。
+
+ROI Pooling有两个输入：feature map和ROI区域。Pooling方式一般为Max Pooling。Pooling的kernel形状可以不为正方形。
 
 ## Bounding-box Regression
 
@@ -188,80 +293,4 @@ YOLO的caffe版本有很多（当然都是非官方的），这里推荐：
 
 https://github.com/yeahkun/caffe-yolo
 
-## 概述
-
-从R-CNN到Fast R-CNN一直采用的思路是proposal+分类（proposal提供位置信息，分类提供类别信息），这也被称作two-stage cascade。
-
-YOLO不仅是end-to-end，而且还提供了另一种更为直接的思路：直接在输出层回归bounding box的位置和bounding box所属的类别(整张图作为网络的输入，把Object Detection的问题转化成一个Regression问题)。
-
-![](/images/article/yolo.png)
-
-上图是YOLO的大致流程：
-
-**Step 1**：Resize成448x448，图片分割得到7x7网格(cell)。
-
-**Step 2**：CNN提取特征和预测：卷积部分负责提特征。全连接部分负责预测。
-
-a) 7x7x2=98个bounding box(bbox) 的坐标$$x_{center},y_{center},w,h$$和是否有物体的confidence。
-
-b) 7x7=49个cell所属20个物体分类的概率。
-
-![](/images/article/yolo_2.png)
-
-![](/images/article/yolo_3.png)
-
-上图是YOLO的网络结构图，它采用经过修改的GoogLeNet作为base CNN。
-
-从表面看，YOLO的输出只有一个，似乎比Faster RCNN两个输出少一个，然而这个输出本身，实际上要复杂的多。
-
-YOLO的输出是一个7x7x30的tensor，其中7x7对应图片分割的7x7网格。30表明每个网格对应一个30维的向量。
-
-![](/images/article/yolo_4.png)
-
-上图是这个30维向量的编码方式：2个bbox+confidence是5x2=10维，20个物体分类的概率占其余20维。
-
-总结一下，输出tersor的维度是：$$S\times S \times (B \times 5 + C)$$
-
-这里的confidence代表了所预测的box中含有object的置信度和这个box预测的有多准两重信息：
-
-$$\text{confidence} = \text{Pr}(Object) ∗ \text{IOU}_{pred}^{truth}$$
-
-在loss函数设计方面，简单的把结果堆在一起，然后认为它们的重要程度都一样，这显然是不合理的，每个loss项之前的参数$$\lambda$$就是用来设定权重的。
-
-**Step 3**：过滤bbox（通过NMS）。
-
-![](/images/article/yolo_5.png)
-
-上图是Test阶段的NMS的过程示意图。
-
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/24916786
-
-图解YOLO
-
-https://mp.weixin.qq.com/s/n51XtGAsaDDAatXYychXrg
-
-YOLO比R-CNN快1000倍，比Fast R-CNN快100倍的实时对象检测！
-
-http://blog.csdn.net/tangwei2014/article/details/50915317
-
-论文阅读笔记：You Only Look Once: Unified, Real-Time Object Detection
-
-https://mp.weixin.qq.com/s/Wqj6EM33p-rjPIHnFKtmCw
-
-计算机是怎样快速看懂图片的：比R-CNN快1000倍的YOLO算法
-
-http://lanbing510.info/2017/08/28/YOLO-SSD.html
-
-目标检测之YOLO，SSD
-
-http://www.yeahkun.com/2016/09/06/object-detection-you-only-look-once-caffe-shi-xian/
-
-Object detection: You Look Only Once(YOLO)
-
-http://blog.csdn.net/zy1034092330/article/details/72807924
-
-YOLO
 

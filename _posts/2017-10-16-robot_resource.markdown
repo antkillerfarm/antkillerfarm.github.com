@@ -386,4 +386,7 @@ https://mp.weixin.qq.com/s/dmpHVkqRjA_U3iLgWOTzMg
 
 数据缺失的坑，无监督学习这样帮你补了
 
+http://blog.csdn.net/u010670689/article/details/71513133
+
+5类系统推荐算法
 

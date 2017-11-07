@@ -1,12 +1,36 @@
 ---
 layout: post
-title:  深度学习（二）——Dropout, 深度学习常用术语解释, Neural Network Zoo, CNN
+title:  深度学习（二）——Dropout, 深度学习常用术语解释, Neural Network Zoo
 category: DL 
 ---
 
 # 神经元激活函数
 
-## ReLU（续）
+## 稀疏性（续）
+
+2003年，Lennie等人估测大脑同时被激活的神经元只有1~4%，进一步表明神经元工作的稀疏性。
+
+从信号方面来看，即神经元同时只对输入信号的少部分选择性响应，大量信号被刻意的屏蔽了，这样可以提高学习的精度，更好更快地提取稀疏特征。
+
+从这个角度来看，在经验规则的初始化W之后，传统的Sigmoid系函数同时近乎有一半的神经元被激活，这不符合神经科学的研究，而且会给深度网络训练带来巨大问题。
+
+参考：
+
+http://www.cnblogs.com/neopenx/p/4453161.html
+
+https://en.wikipedia.org/wiki/Activation_function
+
+## ReLU
+
+ReLU(Rectified Linear Units)激活函数的定义如下：
+
+$$f(x) = \max(0, x)$$
+
+其函数曲线如下图中的蓝线所示：
+
+![](/images/article/Rectifier_and_softplus_functions.svg)
+
+从上图可以看出，ReLU相对于Sigmoid，在解决了梯度消失问题的同时，也增加了神经网络的稀疏性，因此ReLU的收敛速度远高于Sigmod，并成为目前最常用的激活函数。
 
 由于ReLU的曲线不是连续可导的，因此有的时候，会用SoftPlus函数（上图中的绿线）替代。其定义为：
 
@@ -242,41 +266,5 @@ http://www.asimovinstitute.org/neural-network-zoo/
 上图的原地址为：
 
 http://www.asimovinstitute.org/neural-network-zoo-prequel-cells-layers/
-
-# CNN
-
-## 概述
-
-卷积神经网络（Convolutional Neural Networks，ConvNets或CNNs）属于神经网络的范畴，已经在诸如图像识别和分类的领域证明了其高效的能力。
-
-CNN的开山之作是Yann LeCun的论文：
-
-《Gradient-Based Learning Applied to Document Recognition》
-
->注：科学界的许多重要成果的开山之作，其名称往往和成果的最终名称有一定的差距。比如LeCun的这篇文章的名称中，就没有CNN。类似的还有Vapnik的SVM，最早被称为Support Vector Network。
-
-英文不好的，推荐以下文章：
-
-http://www.hackcv.com/index.php/archives/104/
-
-CNN的直观解释
-
-## 关键点
-
-这里以最经典的LeNet-5为例，提点一下CNN的要点。
-
-![](/images/article/LeNet_5.jpg)
-
-LeNet-5的caffe模板：
-
-https://github.com/BVLC/caffe/blob/master/examples/mnist/lenet.prototxt
-
-### 卷积
-
-在《数学狂想曲（五）》中我们讨论了卷积的数学含义，结合《 图像处理理论（一）》和《 图像处理理论（二）》，不难看出卷积或者模板（算子），在前DL时代，几乎是图像处理算法的基础和灵魂。为了实现各种目的，人们手工定义或发现了一系列算子。
-
-到了DL时代，卷积仍然起着非常重要的作用。但这个时候，不再需要人工指定算子，算子本身也将由学习获得。我们需要做的只不过是指定算子的个数而已。
-
-比如，LeNet-5的C1:6@28*28，其中的6就是算子的个数。显然算子的个数越多，计算越慢。但太少的话，又会导致提取的特征数太少，神经网络学不到东西。
 
 

@@ -6,6 +6,42 @@ category: DL
 
 # 词向量（续）
 
+### CBOW & Skip-gram
+
+![](/images/article/word2vec.png)
+
+上图是word2vec中使用到的两种模型的示意图。
+
+从图中可知，word2vec虽然使用了神经网络，但是从层数来说，只有3层而已，还谈不上是Deep Learning。但是考虑到DL，基本就是神经网络的同义词，因此这里仍然将word2vec归为DL的范畴。
+
+>注：深度学习不全是神经网络，周志华教授提出的gcForest就是一个有益的另类尝试。
+
+研究一个神经网络模型，最重要的除了神经元之间的连接关系之外，就是神经网络的输入输出了。
+
+CBOW（Continuous Bag-of-Words Model）模型和Skip-gram（Continuous Skip-gram Model）模型脱胎于n-gram模型，即一个词出现的概率只与它前后的n个词有关。这里的n也被称为窗口大小.
+
+上图中，窗口大小为5，即一个中心词$$\{w_t\}$$+前面的两个词$$\{w_{t-1},w_{t-2}\}$$+后面的两个词$$\{w_{t+1},w_{t+2}\}$$。
+
+| 名称 | CBOW | Skip-gram |
+|:--:|:--:|:--:|
+| 输入 | $$\{w_{t-1},w_{t-2},w_{t+1},w_{t+2}\}$$ | $$\{w_t\}$$ |
+| 输出 | $$\{w_t\}$$ | $$\{w_{t-1},w_{t-2},w_{t+1},w_{t+2}\}$$ |
+| 目标 | 在输入确定的情况下，最大化输出值的概率。 | 在输入确定的情况下，最大化输出值的概率。 |
+
+### Hierarchical Softmax
+
+word2vec的输出层有两种模型：Hierarchical Softmax和Negative Sampling。
+
+Softmax是DL中常用的输出层结构，它表征**多分类中的每一个分类所对应的概率**。
+
+然而在这里，每个分类表示一个单词，即：分类的个数=词汇表的单词个数。如此众多的分类直接映射到隐层，显然并不容易训练出有效特征。
+
+Hierarchical Softmax是Softmax的一个变种。这时的输出层不再是一个扁平的多分类层，而变成了一个层次化的二分类层。
+
+Hierarchical Softmax一般基于Huffman编码构建。在本例中，我们首先统计词频，以获得每个词所对应的Huffman编码，然后输出层会利用Huffman编码所对应的层次二叉树的路径来计算每个词的概率，并逆传播到隐藏层。
+
+由Huffman编码的特性可知，Hierarchical Softmax的计算量要小于一般的Softmax。
+
 ### Negative Sampling
 
 在CBOW模型中，已知w的上下文Context(w)需要预测w，则w就是正样本，而其他词是负样本。
@@ -219,49 +255,4 @@ y_t &= \sigma_y(W_{y} h_t + b_y)
 
 《Finding Structure in Time》
 
->Jeffrey Locke Elman，1948年生，Harvard College本科（1969年）+University of Texas博士（1977年）。University of California, San Diego教授，American Academy of Arts and Sciences院士（2015年）。 美国心理学会会员。  
->个人主页：   
->https://tatar.ucsd.edu/jeffelman/
 
->Harvard College是Harvard University最古老的本部，目前一般提供本科教育。它和其他许多研究生院以及相关部门，共同组成了Harvard University。类似的还有Yale College和Yale University。
-
->American Academy of Arts and Sciences建于1780年。当时，美国正在法国等国的协助下与英国作战，所以美国的创立者选择比照包括作家、人文学者、科学家、军事家、政治家在内的法兰西学术院，建立新大陆的学术院。   
->后来，林肯总统比照英国皇家学会，于1863年创建了主要涵盖自然科学的National Academy of Sciences，United States。   
->这两个学院是美国学术界最权威的组织。
-
->美国的创立者，一般被翻译为Founding Fathers of the United States。此外还有一个更响亮的称号76ers。没错，就是NBA那支球队的名字。
-
-除了Elman RNN之外，还有Jordan RNN。（没错，吴恩达的导师的作品）
-
-$$\begin{align}
-h_t &= \sigma_h(W_{h} x_t + U_{h} y_{t-1} + b_h) \\
-y_t &= \sigma_y(W_{y} h_t + b_y)
-\end{align}$$
-
-Elman RNN的记忆来自于隐层单元，而Jordan RNN的记忆来自于输出层单元。
-
-## 参考
-
-http://blog.csdn.net/aws3217150/article/details/50768453
-
-递归神经网络(RNN)简介
-
-http://blog.csdn.net/heyongluoyao8/article/details/48636251
-
-循环神经网络(RNN, Recurrent Neural Networks)介绍
-
-http://mp.weixin.qq.com/s?__biz=MzIzODExMDE5MA==&mid=2694182661&idx=1&sn=ddfb3f301f5021571992824b21ddcafe
-
-循环神经网络
-
-http://www.wildml.com/2015/10/recurrent-neural-networks-tutorial-part-3-backpropagation-through-time-and-vanishing-gradients/
-
-Backpropagation Through Time算法
-
-https://baijia.baidu.com/s?old_id=560025
-
-Tomas Mikolov详解RNN与机器智能的实现
-
-https://sanwen8.cn/p/3f8sRTh.html
-
-为什么RNN需要做正交初始化？

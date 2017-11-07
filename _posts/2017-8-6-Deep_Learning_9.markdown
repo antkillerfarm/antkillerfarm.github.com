@@ -8,6 +8,142 @@ category: DL
 
 ## 参考
 
+https://mp.weixin.qq.com/s/TIgRVbnZYtrGUCDNLcL1uw
+
+GAN的入门与实践
+
+https://mp.weixin.qq.com/s/oCDlhzjOYTIhsr5JuoRCJQ
+
+IRGAN：大一统信息检索模型的博弈竞争
+
+https://mp.weixin.qq.com/s/QacQCrjh3KmrQSMp-G_rEg
+
+贝叶斯生成对抗网络
+
+https://zhuanlan.zhihu.com/p/24897387
+
+GAN的基本原理、应用和走向
+
+https://mp.weixin.qq.com/s/E28lA-fcAQ6Sp6Qv64H3TQ
+
+GAN in NLP
+
+https://mp.weixin.qq.com/s/7-oHa-8Q8ThcctaVOZFfew
+
+Facebook创意生成网络CAN，比GAN更有创造力
+
+https://mp.weixin.qq.com/s/aSQ2-QxbToGF0ROyjxw2yw
+
+萌物生成器：如何使用四种GAN制造猫图
+
+https://mp.weixin.qq.com/s/YUMIL-f019vKpQ84mKS-8g
+
+这篇TensorFlow实例教程文章告诉你GANs为何引爆机器学习？
+
+http://mp.weixin.qq.com/s/UkZdUcdz7h4DqcyjSbNncw
+
+zi2zi：用条件生成对抗网络玩转中文书法，绝妙汉字字体自动生成
+
+http://blog.csdn.net/v_JULY_v/article/details/52683959
+
+没GPU也能玩梵高作画：Ubuntu tensorflow CPU版
+
+https://github.com/cysmith/neural-style-tf
+
+TensorFlow (Python API) implementation of Neural Style.这个项目实现了两张图片的画风融合，非常牛。
+
+https://github.com/jinfagang/pytorch_style_transfer
+
+这个和上面的一样，不过是用pytorch实现的。
+
+http://mp.weixin.qq.com/s/zNmJuevHaagKbyGFdKTwoQ
+
+tensorflow实现基于深度学习的图像补全
+
+https://zhuanlan.zhihu.com/p/25204020
+
+条条大路通罗马LS-GAN：把GAN建立在Lipschitz密度上
+
+https://zhuanlan.zhihu.com/p/27199954
+
+用GAN去除动作片中的马赛克和衣服
+
+https://zhuanlan.zhihu.com/p/27012520
+
+从头开始GAN
+
+https://mp.weixin.qq.com/s/Qzlg1MzRT3josy2RJpQSVg
+
+Image to Image Translation Using GAN
+
+https://mp.weixin.qq.com/s/AswdyjPeKbX7yhAPloP2og
+
+基于对抗学习的生成式对话模型
+
+https://mp.weixin.qq.com/s/uyn41vKKoptXPZXBP2vVDQ
+
+生成对抗网络（GAN）之MNIST数据生成
+
+https://mp.weixin.qq.com/s/sxa0BfXtylHXzjq0YBn-Kg
+
+伯克利图像迁移cycleGAN，猫狗互换效果感人
+
+https://mp.weixin.qq.com/s/aMfPBl6E5SxckQdSAGTkBg
+
+Pytorch教程：Facebook发布的LR-GAN如何生成图像？
+
+https://zhuanlan.zhihu.com/p/28342644
+
+CycleGAN的原理与实验详解
+
+https://mp.weixin.qq.com/s/YXWTslQXIKVihBb2Bgtafg
+
+GAN在信息检索领域的应用
+
+http://mp.weixin.qq.com/s/21CN4hAA6p7ZjWsO1sT2rA
+
+一文看懂生成式对抗网络GANs：介绍指南及前景展望
+
+https://mp.weixin.qq.com/s/YLys6L9WT7eCC-xGr1j0Iw
+
+带多分类判别器的GAN模型
+
+https://mp.weixin.qq.com/s/0tTLotV-8w2j3VdkH-qjCQ
+
+让机器告诉你故事的结局应该是什么：利用GAN进行故事型常识阅读理解
+
+https://mp.weixin.qq.com/s/lqQeCpLQVqSdJPWx0oxs2g
+
+例解生成对抗网络
+
+https://mp.weixin.qq.com/s/fMtuJbWG_d9zyCZ0oYyX_w
+
+经得住考验的“假图片”：用TensorFlow为神经网络生成对抗样本
+
+https://zhuanlan.zhihu.com/p/28488946
+
+AI可能真的要代替插画师了……
+
+https://mp.weixin.qq.com/s/OXN8Y5truLeslX8-UWgqmg
+
+宅男的福音：用GAN自动生成二次元萌妹子
+
+https://mp.weixin.qq.com/s/LAS0KgPiVekGdQXbqlw1cQ
+
+深度学习的三大生成模型：VAE、GAN、GAN的变种
+
+https://mp.weixin.qq.com/s/N7YU-YeXiVX7gSB-mzYgnw
+
+生成式对抗网络GAN的研究进展与展望
+
+https://mp.weixin.qq.com/s/gDzti2DISq_cwGbP5T7ICQ
+
+聊聊对抗自编码器
+
+https://mp.weixin.qq.com/s/3Aq1HXpBzgNdcB130tCKbQ
+
+GAN网络图像翻译机：图像复原、模糊变清晰、素描变彩图
+
 https://mp.weixin.qq.com/s/mPtv1fQd0NBgdY2b_ALNTQ
 
 机器之心GitHub项目：GAN完整理论推导与实现，Perfect！
@@ -197,90 +333,5 @@ https://github.com/fyu/drn
 https://zhuanlan.zhihu.com/p/28822428
 
 Paper笔记：Dilated Residual Networks
-
-## 分组卷积
-
-![](/images/article/AlexNet.png)
-
-分组卷积最早在AlexNet中出现，由于当时的硬件资源有限，训练AlexNet时卷积操作不能全部放在同一个GPU处理，因此作者把feature maps分给2个GPU分别进行处理，最后把2个GPU的结果进行融合。
-
-在AlexNet的Group Convolution当中，特征的通道被平均分到不同组里面，最后再通过两个全连接层来融合特征，这样一来，就只能在最后时刻才融合不同组之间的特征，对模型的泛化性是相当不利的。
-
-为了解决这个问题，ShuffleNet在每一次层叠这种Group conv层前，都进行一次channel shuffle，shuffle过的通道被分配到不同组当中。进行完一次group conv之后，再一次channel shuffle，然后分到下一层组卷积当中，以此循环。
-
-![](/images/article/ShuffleNet.jpg)
-
-论文：
-
-《ShuffleNet: An Extremely Efficient Convolutional Neural Network for Mobile Devices》
-
-无论是在Inception、DenseNet或者ShuffleNet里面，我们对所有通道产生的特征都是不分权重直接结合的，那为什么要认为所有通道的特征对模型的作用就是相等的呢？这是一个好问题，于是，ImageNet2017冠军SEnet就出来了。
-
-论文：
-
-《Squeeze-and-Excitation Networks》
-
-参考：
-
-https://mp.weixin.qq.com/s/tLqsWWhzUU6TkDbhnxxZow
-
-Momenta详解ImageNet 2017夺冠架构SENet
-
-## Separable convolution
-
-前面介绍的都是正方形的卷积核，实际上长条形的卷积核也是很常用的。比如可分离卷积。
-
-我们知道卷积的计算量和卷积核的面积成正比。对于k x k的卷积核K来说，计算复杂度就是$$O(k^2)$$。
-
-如果我们能找到1 x k的卷积核H和k x 1的卷积核V，且$$K = V * H$$，则称K是可分离的卷积核。
-
-根据卷积运算满足结合律，可得：
-
-$$f * K = f * (V * H) = f * V * H$$
-
-这样就将一个k x k的卷积运算，转换成1 x k + k x 1的卷积运算，从而大大节省了参数和计算量。
-
-显然，不是所有的卷积核都满足可分离条件。但是不要紧，NN有自动学习并逼近函数的能力。经过训练之后：$$K \approx V * H$$
-
-## 可变形卷积核
-
-MSRA于2017年提出了可变形卷积核的概念。
-
-论文：
-
-《Deformable Convolutional Networks》
-
-![](/images/article/Deformable_convolution.png)
-
-## 1 x 1卷积
-
-1、升维或降维。
-
-如果卷积的输出输入都只是一个平面，那么1x1卷积核并没有什么意义，它是完全不考虑像素与周边其他像素关系。 但卷积的输出输入是长方体，所以1 x 1卷积实际上是对每个像素点，在不同的channels上进行线性组合（信息整合），且保留了图片的原有平面结构，调控depth，从而完成升维或降维的功能。
-
-![](/images/article/conv_1x1.png)
-
-2、加入非线性。卷积层之后经过激励层，1 x 1的卷积在前一层的学习表示上添加了非线性激励（non-linear activation），提升网络的表达能力；
-
-3.促进不同通道之间的信息交换。
-
-参考：
-
-https://www.zhihu.com/question/56024942
-
-卷积神经网络中用1x1卷积有什么作用或者好处呢？
-
-## depthwise separable convolution
-
-在传统的卷积网络中，卷积层会同时寻找跨空间和跨深度的相关性。
-
-然而Xception指出：跨通道的相关性和空间相关性是完全可分离的，最好不要联合映射它们。
-
->Xception是Francois Chollet于2016年提出的。
-
-![](/images/article/Xception.png)
-
-上图是Xception中的卷积运算depthwise separable convolution的示意图。
-
 
 

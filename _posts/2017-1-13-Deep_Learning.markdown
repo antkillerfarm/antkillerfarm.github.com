@@ -123,6 +123,16 @@ http://blog.csdn.net/u013007900/article/details/50066315
 
 ![](/images/article/ANN_history.png)
 
+参考：
+
+https://mp.weixin.qq.com/s/0OqqdbUWlWIbfBrRdMs4PA
+
+洪小文：以科学的方式赤裸裸地剖析人工智能：混沌初开
+
+https://mp.weixin.qq.com/s/_G08-3g4QPau2_ZLcsm6-Q
+
+洪小文：以科学的方式赤裸裸地剖析AI（二）：从寒冬到复兴
+
 # BP算法
 
 误差逆传播（error BackPropagation）算法最早由Paul J. Werbos于1974年提出，然而此时正值ANN的低谷，未得到人们的重视。因此到了1986年时，由David Everett Rumelhart重新发明了该算法。
@@ -241,26 +251,3 @@ http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf
 
 2001年，Attwell等人基于大脑能量消耗的观察学习上，推测神经元编码工作方式具有稀疏性和分布性。
 
-2003年，Lennie等人估测大脑同时被激活的神经元只有1~4%，进一步表明神经元工作的稀疏性。
-
-从信号方面来看，即神经元同时只对输入信号的少部分选择性响应，大量信号被刻意的屏蔽了，这样可以提高学习的精度，更好更快地提取稀疏特征。
-
-从这个角度来看，在经验规则的初始化W之后，传统的Sigmoid系函数同时近乎有一半的神经元被激活，这不符合神经科学的研究，而且会给深度网络训练带来巨大问题。
-
-参考：
-
-http://www.cnblogs.com/neopenx/p/4453161.html
-
-https://en.wikipedia.org/wiki/Activation_function
-
-## ReLU
-
-ReLU(Rectified Linear Units)激活函数的定义如下：
-
-$$f(x) = \max(0, x)$$
-
-其函数曲线如下图中的蓝线所示：
-
-![](/images/article/Rectifier_and_softplus_functions.svg)
-
-从上图可以看出，ReLU相对于Sigmoid，在解决了梯度消失问题的同时，也增加了神经网络的稀疏性，因此ReLU的收敛速度远高于Sigmod，并成为目前最常用的激活函数。

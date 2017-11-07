@@ -6,7 +6,54 @@ category: DL
 
 # RNN
 
-## 参考（续）
+## RNN的历史（续）
+
+>Jeffrey Locke Elman，1948年生，Harvard College本科（1969年）+University of Texas博士（1977年）。University of California, San Diego教授，American Academy of Arts and Sciences院士（2015年）。 美国心理学会会员。  
+>个人主页：   
+>https://tatar.ucsd.edu/jeffelman/
+
+>Harvard College是Harvard University最古老的本部，目前一般提供本科教育。它和其他许多研究生院以及相关部门，共同组成了Harvard University。类似的还有Yale College和Yale University。
+
+>American Academy of Arts and Sciences建于1780年。当时，美国正在法国等国的协助下与英国作战，所以美国的创立者选择比照包括作家、人文学者、科学家、军事家、政治家在内的法兰西学术院，建立新大陆的学术院。   
+>后来，林肯总统比照英国皇家学会，于1863年创建了主要涵盖自然科学的National Academy of Sciences，United States。   
+>这两个学院是美国学术界最权威的组织。
+
+>美国的创立者，一般被翻译为Founding Fathers of the United States。此外还有一个更响亮的称号76ers。没错，就是NBA那支球队的名字。
+
+除了Elman RNN之外，还有Jordan RNN。（没错，吴恩达的导师的作品）
+
+$$\begin{align}
+h_t &= \sigma_h(W_{h} x_t + U_{h} y_{t-1} + b_h) \\
+y_t &= \sigma_y(W_{y} h_t + b_y)
+\end{align}$$
+
+Elman RNN的记忆来自于隐层单元，而Jordan RNN的记忆来自于输出层单元。
+
+## 参考
+
+http://blog.csdn.net/aws3217150/article/details/50768453
+
+递归神经网络(RNN)简介
+
+http://blog.csdn.net/heyongluoyao8/article/details/48636251
+
+循环神经网络(RNN, Recurrent Neural Networks)介绍
+
+http://mp.weixin.qq.com/s?__biz=MzIzODExMDE5MA==&mid=2694182661&idx=1&sn=ddfb3f301f5021571992824b21ddcafe
+
+循环神经网络
+
+http://www.wildml.com/2015/10/recurrent-neural-networks-tutorial-part-3-backpropagation-through-time-and-vanishing-gradients/
+
+Backpropagation Through Time算法
+
+https://baijia.baidu.com/s?old_id=560025
+
+Tomas Mikolov详解RNN与机器智能的实现
+
+https://sanwen8.cn/p/3f8sRTh.html
+
+为什么RNN需要做正交初始化？
 
 http://blog.csdn.net/shenxiaolu1984/article/details/71508892
 
@@ -229,102 +276,4 @@ http://blog.csdn.net/hjimce/article/details/50414467
 
 Maxout网络学习
 
-## Swish
-
-Swish是Google大脑团队提出的一个新的激活函数：
-
-$$\text{swish}(x)=x\cdot\sigma(x)=\frac{x}{1+e^{-x}}$$
-
-它的图像如下图中的橙色曲线所示：
-
-![](/images/article/swish.png)
-
-Swish可以看作是GLU的特例（Swish的两组参数相同），后者是由facebook提出的：
-
-$$(\boldsymbol{W}_1\boldsymbol{x}+\boldsymbol{b}_1)\otimes \sigma(\boldsymbol{W}_2\boldsymbol{x}+\boldsymbol{b}_2)$$
-
-Swish在原点附近不是饱和的，只有负半轴远离原点区域才是饱和的，而ReLu在原点附近也有一半的空间是饱和的。而我们在训练模型时，一般采用的初始化参数是均匀初始化或者正态分布初始化，不管是哪种初始化，其均值一般都是0，也就是说，初始化的参数有一半处于ReLu的饱和区域，这使得刚开始时就有一半的参数没有利用上。特别是由于诸如BN之类的策略，输出都自动近似满足均值为0的正态分布，因此这些情况都有一半的参数位于ReLu的饱和区。相比之下，Swish好一点，因为它在负半轴也有一定的不饱和区，所以参数的利用率更大。
-
-苏剑林据此提出了自己的激活函数：
-
-$$\max(x, x\cdot e^{-|x|})$$
-
-该函数的图像如上图的蓝色曲线所示。
-
-参考：
-
-https://mp.weixin.qq.com/s/JticD0itOWH7Aq7ye1yzvg
-
-谷歌大脑提出新型激活函数Swish惹争议：可直接替换并优于ReLU？
-
-http://kexue.fm/archives/4647/
-
-浅谈神经网络中激活函数的设计
-
-## 其他激活函数
-
-### hard tanh
-
-$$\text{HardTanh}(x)=\begin{cases}
--1, & x<-1 \\
-x, & -1\le x \le 1 \\
-1, & x>1 \\
-\end{cases}$$
-
-![](/images/article/hard_tanh.png)
-
-### soft sign
-
-$$\text{softsign}(x)=\frac{x}{1+|x|}$$
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/22142013
-
-深度学习中的激活函数导引
-
-http://blog.csdn.net/u012328159/article/details/69898137
-
-几种常见的激活函数
-
-https://mp.weixin.qq.com/s/Hic01RxwWT_YwnErsJaipQ
-
-什么是激活函数？
-
-https://mp.weixin.qq.com/s/4gElB_8AveWuDVjtLw5JUA
-
-深度学习激活函数大全
-
-https://mp.weixin.qq.com/s/7DgiXCNBS5vb07WIKTFYRQ
-
-从ReLU到Sinc，26种神经网络激活函数可视化
-
-http://www.cnblogs.com/ymjyqsx/p/6294021.html
-
-PReLU与ReLU
-
-# Deep Residual Network
-
-无论采用何种方法，可训练的神经网络的层数都不可能无限深。有的时候，即使没有梯度消失，也存在训练退化（即深层网络的效果还不如浅层网络）的问题。
-
-最终2015年，微软亚洲研究院的何恺明等人，使用残差网络ResNet参加了当年的ILSVRC，在图像分类、目标检测等任务中的表现大幅超越前一年的比赛的性能水准，并最终取得冠军。
-
-论文：
-
-《Deep Residual Learning for Image Recognition》
-
-代码：
-
-https://github.com/KaimingHe/deep-residual-networks
-
->注：何恺明，清华本科+香港中文大学博士（2011）。先后在MS和Facebook担任研究员。   
->个人主页：http://kaiminghe.com/
-
-残差网络的明显特征是有着相当深的深度，从32层到152层，其深度远远超过了之前提出的深度网络结构，而后又针对小数据设计了1001层的网络结构。
-
-其简化版的结构图如下所示：
-
-![](/images/article/drn.png)
-
-简单的说，就是把前面的层跨几层直接接到后面去，以使误差梯度能够传的更远一些。
 
