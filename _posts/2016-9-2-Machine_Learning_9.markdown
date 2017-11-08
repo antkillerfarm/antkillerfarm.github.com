@@ -91,9 +91,19 @@ J函数表示每个样本点到其质心的距离平方和。K-means算法的目
 
 http://www.csdn.net/article/2012-07-03/2807073-k-means
 
+深入浅出K-Means算法
+
 http://www.cnblogs.com/leoo2sk/archive/2010/09/20/k-means.html
 
+k均值聚类(K-means)
+
 http://www.cnblogs.com/jerrylead/archive/2011/04/06/2006910.html
+
+K-means聚类算法
+
+https://mp.weixin.qq.com/s/86MlCMKAG0ax3gvfsgmYtg
+
+K-Means聚类算法详解
 
 ## 聚类结果的评价
 

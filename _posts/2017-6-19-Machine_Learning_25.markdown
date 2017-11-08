@@ -157,7 +157,7 @@ $$<\mathcal{S},\mathcal{P},\mathcal{R},\gamma>$$
 
 ![](/images/article/Markov_Decision_Process.png)
 
-比如上图中，在状态$$S_0$$，执行$$a_0$$，只有0.5的机会，会到达$$S_2$$。
+比如上图中，在状态$$S_0$$，执行$$a_0$$，只有0.5的机会，会到达$$S_2$$。这也就是之前提到过的MDP。
 
 MDP中的Bellman equation可改为如下形式：
 
@@ -219,9 +219,13 @@ c) 使用这些最优解构造初始问题的最优解。
 
 需要注意的是：动态规划更多的看作是一种解决问题的方法论，而非具体的数值算法，因此，很多不同领域的算法都可看做是动态规划算法的实例。参考文献中，就列出了不少这样的算法。
 
-## MDP的Dynamic programming
-
 由前文的描述可知，MDP正好具备overlapping subproblems和optimal substructure的特性，因此也可以通过Dynamic programming求解。
 
+## Iterative Policy Evaluation
 
+迭代策略评价
+
+![](/images/article/Policy_Iteration.png)
+
+![](/images/article/Policy_Iteration_2.png)
 

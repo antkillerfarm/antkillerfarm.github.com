@@ -95,7 +95,7 @@ http://blog.csdn.net/dsbatigol/article/details/12558891
 
 梯度（gradient）、雅克比矩阵（Jacobian）、海森矩阵（Hessian）
 
-https://mp.weixin.qq.com/s/_5ta9BuATamhcqyd9v8vEQ
+http://files.cnblogs.com/files/leoleo/matrix_rules.pdf
 
 矩阵、向量求导法则全览
 

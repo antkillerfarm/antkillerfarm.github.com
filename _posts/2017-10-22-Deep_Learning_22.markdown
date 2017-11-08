@@ -212,6 +212,10 @@ https://mp.weixin.qq.com/s/zWmJ3uXnFtXaI2BotoadHA
 
 从技术到产品，苹果Siri深度学习语音合成技术揭秘
 
+https://mp.weixin.qq.com/s/I2nbzD2QqSYgahI2jLjYTQ
+
+批训练、注意力模型及其声纹分割应用，谷歌三篇论文揭示其声纹识别技术原理
+
 ## WFST
 
 Weighted-Finite-State-Transducer

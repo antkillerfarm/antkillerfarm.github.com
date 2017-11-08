@@ -381,4 +381,8 @@ https://github.com/ZhuanZhiCode/TensorFlow-Eager-Execution-Examples
 
 Eager Execution的代码示例
 
+https://mp.weixin.qq.com/s/8Hrq_z8s_5ms6Q_6OOaU-g
+
+如何使用TensorFlow和自编码器模型生成手写数字
+
 

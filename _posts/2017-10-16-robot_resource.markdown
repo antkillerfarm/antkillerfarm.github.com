@@ -308,6 +308,10 @@ https://mp.weixin.qq.com/s/i9AXKsd6XVxyuaTCKsAj3g
 
 像Sheldon一样对“讽刺语言”分辨无能？别怕，MIT最新算法帮你助攻
 
+https://mp.weixin.qq.com/s/Xe-T7EKvGDSR5GOeL4nvKg
+
+从Chatbot到NER
+
 # ML参考资源
 
 http://kexue.fm/archives/4638/
@@ -389,4 +393,13 @@ https://mp.weixin.qq.com/s/dmpHVkqRjA_U3iLgWOTzMg
 http://blog.csdn.net/u010670689/article/details/71513133
 
 5类系统推荐算法
+
+https://mp.weixin.qq.com/s/bAhGcO57MzfGsF99NKBxbw
+
+被全球主流网站使用的10大算法！
+
+https://mp.weixin.qq.com/s/FyeY2-kOz2vwALfKFRwisQ
+
+人工智能在饿了么的应用实践
+
 

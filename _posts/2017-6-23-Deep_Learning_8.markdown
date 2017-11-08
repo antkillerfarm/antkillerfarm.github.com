@@ -4,7 +4,7 @@ title:  深度学习（八）——GAN
 category: DL 
 ---
 
-# GAN（续）
+# GAN
 
 ## 概况
 
