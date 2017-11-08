@@ -6,6 +6,14 @@ category: ML
 
 # 动态规划（续）
 
+## Iterative Policy Evaluation
+
+迭代策略评价
+
+![](/images/article/Policy_Iteration.png)
+
+![](/images/article/Policy_Iteration_2.png)
+
 ## 参考
 
 http://www.cppblog.com/Fox/archive/2008/05/07/Dynamic_programming.html

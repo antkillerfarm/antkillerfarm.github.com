@@ -133,8 +133,6 @@ Q-Learning算法的计算步骤如下：
 
 $$\pi (s)=\arg \max_a(Q(s,a))$$
 
-由于原始的Q-Learning算法主要基于Q矩阵的值，因此它是一种Value-based RL。
-
 参考：
 
 http://blog.csdn.net/itplus/article/details/9361915
@@ -221,11 +219,25 @@ c) 使用这些最优解构造初始问题的最优解。
 
 由前文的描述可知，MDP正好具备overlapping subproblems和optimal substructure的特性，因此也可以通过Dynamic programming求解。
 
-## Iterative Policy Evaluation
+在继续下文之前，推荐一波资源：
 
-迭代策略评价
+>David Poole，加拿大不列颠哥伦比亚大学教授。加拿大AI协会终身成就奖（2013年）。   
+>个人主页：   
+>http://www.cs.ubc.ca/~poole/index.html
 
-![](/images/article/Policy_Iteration.png)
+David Poole的主页上有很多好东西：
 
-![](/images/article/Policy_Iteration_2.png)
+http://www.cs.ubc.ca/~poole/demos/
+
+该网页上有一些RL方面的用java applet做的可视化demo。由于年代比较久远，这些demo无法在目前的浏览器上运行。所以，我对其做了一些改造，使之能够使用。相关代码参见：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/RL
+
+David Poole还写了一本书《Artificial Intelligence: foundations of computational agents》，目前已经是第2版了。
+
+其中的代码资源参见：
+
+http://artint.info/AIPython/
+
+从该书所用编程语言的变迁，亦可感受到Poole教授不断学习的脚步。要知道Poole教授刚进入学术界的时代（1985年前后），就连Java也还没被发明出来呢。
 
