@@ -10,6 +10,10 @@ https://mp.weixin.qq.com/s/4eyxX_EfrImGXnYmTRUFHw
 
 自然语言处理(NLP)入门指南
 
+https://mp.weixin.qq.com/s/bcVGqVkQoVdo3fYUJJkpCQ
+
+NLP入门+实战必读：一文教会你最常见的10种自然语言处理技术
+
 https://www.geekhub.cn/a/1163.html
 
 宋睿华：好玩的文本生成

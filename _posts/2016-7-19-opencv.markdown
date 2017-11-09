@@ -152,10 +152,6 @@ https://zhuanlan.zhihu.com/p/23255241
 
 人脸识别应用之“变脸”
 
-https://zhuanlan.zhihu.com/p/26630215
-
-浅谈手势识别在直播中的运用
-
 https://mp.weixin.qq.com/s/A8foIEN6baR2fxsyZYSmIg
 
 基于OpenCV实现手写体数字训练与识别
@@ -396,4 +392,7 @@ http://people.ece.umn.edu/users/parhi/slides.html
 
 VLSI Digital Signal Processing Systems: Design and Implementation
 
+https://stats385.github.io/
+
+STATS 385：Theories of Deep Learning
 

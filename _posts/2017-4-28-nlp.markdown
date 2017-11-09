@@ -397,6 +397,14 @@ https://mp.weixin.qq.com/s/38ofY693bXwFWIMNqYx4-A
 
 常用的 Python 爬虫技巧总结！
 
+## protege
+
+protege软件是斯坦福大学医学院生物信息研究中心基于Java语言开发的本体编辑和知识获取软件，或者说是本体开发工具，也是基于知识的编辑器。这个软件主要用于语义网中本体的构建，是语义网中本体构建的核心开发工具。
+
+官网：
+
+https://protege.stanford.edu/products.php
+
 ## 自然语言理解
 
 Natural language understanding(NLU)属于NLP的一个分支，属于人工智能的一个部分，用来解决机器理解人类语言的问题，属于人工智能的核心难题。

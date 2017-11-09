@@ -336,3 +336,21 @@ urllib2.install_opener(l_opener)
 usock = urllib2.urlopen('http://www.sohu.com')
 {% endhighlight %}
 
+## JPype
+
+JPype是一个能够让python代码方便地调用Java代码的工具。官网：
+
+https://sourceforge.net/projects/jpype/
+
+参考：
+
+http://blog.csdn.net/niuyisheng/article/details/9002926
+
+JPype：实现在python中调用JAVA
+
+http://www.cnblogs.com/yu-zhang/p/3817024.html
+
+python调用java程序--jpype
+
+
+

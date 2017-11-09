@@ -30,6 +30,10 @@ http://blog.csdn.net/u012938704/article/details/52831532
 
 caffe反卷积
 
+## K-max Pooling
+
+![](/images/article/kmax_pooling.png)
+
 ## 参考
 
 http://www.cnblogs.com/tornadomeet/p/3432093.html
@@ -39,6 +43,10 @@ Stochastic Pooling简单理解
 http://mp.weixin.qq.com/s/XzOri12hwyOCdI1TgGQV3w
 
 新型池化层sort_pool2d实现更快更好的收敛：表现优于最大池化层
+
+http://blog.csdn.net/liuchonge/article/details/67638232
+
+CNN与句子分类之动态池化方法DCNN--模型介绍篇
 
 # Batch Normalization
 

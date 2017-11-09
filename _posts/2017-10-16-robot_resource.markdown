@@ -38,6 +38,16 @@ http://www.cnblogs.com/yhlx125/
 
 一个Robot+GIS的blog
 
+http://www.cnblogs.com/gaoxiang12/
+
+一个SLAM方面的blog。作者半闲居士，目前在德国慕尼黑工业大学留学，清华本科。
+
+## 软件
+
+https://github.com/raulmur/ORB_SLAM2
+
+Real-Time SLAM for Monocular, Stereo and RGB-D Cameras, with Loop Detection and Relocalization Capabilities
+
 ## 文章
 
 http://blog.exbot.net/
@@ -165,6 +175,10 @@ MATLAB R2017a: 自动驾驶工具箱
 https://zhuanlan.zhihu.com/p/30707986
 
 章国锋：黑暗中的前行--复杂环境下的鲁棒SfM与SLAM
+
+https://www.zhihu.com/question/35116055
+
+orb-slam在众多SLAM方法中处于怎样的地位？
 
 # NLP参考资源
 

@@ -24,6 +24,18 @@ https://mp.weixin.qq.com/s/heYpeVLrZBRjXtMQou2BAA
 
 如何轻松愉快的理解条件随机场（CRF）？
 
+http://www.chokkan.org/software/crfsuite/
+
+CRFsuite: A fast implementation of Conditional Random Fields (CRFs)
+
+https://github.com/scrapinghub/python-crfsuite
+
+A python binding for crfsuite
+
+http://taku910.github.io/crfpp/
+
+CRF++: Yet Another CRF toolkit
+
 # 异常点检测
 
 http://chuansong.me/n/377440751130
@@ -143,6 +155,10 @@ https://mp.weixin.qq.com/s/TGjfd3ahYSH_QYX_2j0DqQ
 https://mp.weixin.qq.com/s/GqaXADRE7Hvxr-6-QapMIg
 
 你必须知道的keras中最常用的深度学习的API
+
+https://mp.weixin.qq.com/s/KE_zk7e6cf5ah303ZTpuMw
+
+如何用Keras为序列预测问题开发复杂的编解码循环神经网络?
 
 # LightGBM
 

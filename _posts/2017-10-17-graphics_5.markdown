@@ -180,6 +180,16 @@ http://www.cnblogs.com/lxy2017/p/3927456.html
 
 TLD（Tracking-Learning-Detection）一种目标跟踪算法
 
+# YUV & YCbCr & RGB
+
+在RGB颜色空间中，红，绿，蓝是基本元素。RGB格式是显示器通常使用的格式。
+
+然而，人类视觉系统(HVS)相比亮度来说对于颜色不是那么敏感的。通过把亮度与颜色信息分离，并对亮度值取更高的分辨率可以更有效地表示一个颜色图像。这就是所谓的YUV颜色空间。Y表示亮度，B－Y（即U）、R－Y（即V）是色差信息。
+
+实际使用中，为了更有效率，又定义了YCbCr格式。两个Y、Cb和U、Cr和V的含义相同，但是表示方法不同。YCbCr在YUV的基础上，进行了比例和偏置变换。
+
+相关的定义及转换标准是：ITU-R Recommendation BT.601（标清）和ITU-R Recommendation BT.709（高清）。
+
 # python
 
 ## python调用GTK函数的一般规则

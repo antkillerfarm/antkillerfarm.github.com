@@ -118,9 +118,13 @@ http://www.jeyzhang.com/cnn-apply-on-modelling-sentence.html
 
 卷积神经网络(CNN)在句子建模上的应用
 
-https://mp.weixin.qq.com/s/hGGT61frDfm-PQHjSnI3Tw
+http://blog.csdn.net/malefactor/article/details/51078135
 
 自然语言处理中CNN模型几种常见的Max Pooling操作
+
+http://www.jianshu.com/p/1267072ee8f8
+
+CNN在NLP中的应用
 
 ## TWE
 

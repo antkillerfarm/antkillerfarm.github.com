@@ -26,7 +26,11 @@ http://hadoop.apache.org/docs/current/
 
 http://cqwjfck.blog.chinaunix.net/uid-22312037-id-3969789.html
 
-www.360doc.com/content/14/0113/17/15109633_345010019.shtml
+Hadoop初探之Hadoop生态圈
+
+http://www.360doc.com/content/14/0113/17/15109633_345010019.shtml
+
+Hadoop的“生态圈”
 
 狭义的Hadoop包含如下组件：
 
@@ -34,6 +38,8 @@ www.360doc.com/content/14/0113/17/15109633_345010019.shtml
 >Hadoop Distributed File System(HDFS)   
 >Hadoop YARN   
 >Hadoop MapReduce
+
+![](/images/article/big_data.png)
 
 ## 编译
 
@@ -287,6 +293,8 @@ HBase在物理上是HDFS上的文件，因此它也是主从结构的。
 细节可参考：
 
 http://blog.csdn.net/dhtx_wzgl/article/details/49423979
+
+HBase学习之二级索引
 
 ## 参考
 

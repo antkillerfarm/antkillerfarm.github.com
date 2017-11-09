@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十九）——模型压缩, 人脸识别
+title:  深度学习（十九）——模型压缩, 人脸识别, 手势识别
 category: DL 
 ---
 
@@ -243,4 +243,27 @@ https://mp.weixin.qq.com/s/-T5k2ViPjvEoXccKt-_J3Q
 https://www.leiphone.com/news/201707/mFuwXGvZBhoVQD5S.html
 
 一秒分辨出杨臣刚、王大治和孙楠，这个黑产居然用AI来"打码"
+
+# 手势识别
+
+https://zhuanlan.zhihu.com/p/26630215
+
+浅谈手势识别在直播中的运用
+
+https://zhuanlan.zhihu.com/p/30561160
+
+2017-最全手势识别/跟踪相关资源大列表分享
+
+http://www.sohu.com/a/203306961_465975
+
+浙江大学CSPS最佳论文：使用卷积神经网络的多普勒雷达手势识别
+
+https://www.zhihu.com/question/20131478
+
+我打算只根据手的形状来识别手势。用哪种机器学习算法比较好？
+
+https://www.leiphone.com/news/201502/QM7LdSN874dWXFLo.html
+
+带你了解世界最先进的手势识别技术
+
 

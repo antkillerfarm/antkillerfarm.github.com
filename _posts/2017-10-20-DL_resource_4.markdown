@@ -270,10 +270,6 @@ https://mp.weixin.qq.com/s/0Ofh_NSMmvlEZ2JPCffujg
 
 Vicarious发布生成视觉模型:RCN
 
-https://zhuanlan.zhihu.com/p/30561160
-
-2017-最全手势识别/跟踪相关资源大列表分享
-
 https://mp.weixin.qq.com/s/UDAcjmCOUdzbXaAgKWOczQ
 
 深度判别和共享特征学习的图像分类
