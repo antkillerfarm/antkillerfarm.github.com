@@ -20,15 +20,35 @@ http://incompleteideas.net/sutton/609%20dropbox/slides%20(pdf%20and%20keynote)/
 
 Sutton的pdf和keynote
 
-http://web.stanford.edu/class/cs234/syllabus.html
-
-CS234: Reinforcement Learning
-
 http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html
 
 UCL Course on RL
 
->David Silver，剑桥大学本科（1997年）+阿尔伯塔大学博士（2011年）。伦敦大学学院讲师。现为DeepMind研究员。
+>David Silver，剑桥大学本科（1997年）+阿尔伯塔大学博士（2011年）。伦敦大学学院讲师。现为DeepMind研究员。AlphaGo之父。
+
+Silver的名声直追Sutton，这个教程也流传很广。后续介绍的教程中，多有对它的抄袭。
+
+http://web.stanford.edu/class/cs234/syllabus.html
+
+CS234: Reinforcement Learning
+
+http://www.eecs.wsu.edu/~taylorm/17_580/index.html
+
+CptS 580: Reinforcement Learning
+
+http://www.eecs.wsu.edu/~taylorm/2011_cs420/index.html
+
+Artificial Intelligence。这个课程名义上叫AI，实则包括状态空间搜索、强化学习和贝叶斯网络三部分内容。
+
+http://www.eecs.wsu.edu/~taylorm/2010_cs414/index.html
+
+Introduction to Machine Learning。Matthew E. Taylor的本行是RL，所以不管什么课程，都有RL的内容。
+
+>Matthew E. Taylor，安默斯特学院本科（2001年）+德州大学奥斯汀分校博士（2008年）。华盛顿州立大学副教授。
+
+https://katefvision.github.io/
+
+CMU: Deep Reinforcement Learning and Control
 
 https://github.com/aikorea/awesome-rl
 

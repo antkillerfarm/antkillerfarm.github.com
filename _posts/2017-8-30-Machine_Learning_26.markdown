@@ -14,6 +14,10 @@ category: ML
 
 ![](/images/article/Policy_Iteration_2.png)
 
+$$v_{k+1}(s) = \sum_{a \in \mathcal{A}}\pi(a | s)\left(\mathcal{R}_s^a + \gamma \sum_{s'\in \mathcal{S}}\mathcal{P}_{ss'}^a v_k(s')\right)$$
+
+$$v_{k+1}(s) = \max_{a \in \mathcal{A}}\left(\mathcal{R}_s^a + \gamma \sum_{s'\in \mathcal{S}}\mathcal{P}_{ss'}^a v_k(s')\right)$$
+
 ## 参考
 
 http://www.cppblog.com/Fox/archive/2008/05/07/Dynamic_programming.html
