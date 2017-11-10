@@ -462,4 +462,9 @@ https://mp.weixin.qq.com/s/bMfJ1Ez6bOBjHLquuZFnmQ
 
 Uber与斯坦福大学开源深度概率编程语言Pyro：基于PyTorch
 
+https://mp.weixin.qq.com/s/ImtSR6VwYalN6gTgjVJOsQ
+
+十五分钟完成Regex五天任务：FlashText，语料库数据快速清理利器
+
+
 

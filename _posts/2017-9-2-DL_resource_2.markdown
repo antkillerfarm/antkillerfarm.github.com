@@ -172,6 +172,10 @@ https://mp.weixin.qq.com/s/8HIZRhb-KJOtPnQtQ3GQVg
 
 第一代芯片是CPU，第二代是GPU，第三代是什么？
 
+https://mp.weixin.qq.com/s/qkpbKN62YV2f0W5HLnr7Dg
+
+GPU是如何工作的？与CPU、DSP有什么区别？
+
 https://mp.weixin.qq.com/s/Jof-u8oUuLR4v7t3jjXEmA
 
 GPU和线下训练

@@ -215,7 +215,7 @@ c) 使用这些最优解构造初始问题的最优解。
 
 **自下而上**：先行求解所有可能用到的子问题，然后用其构造更大问题的解。该方法在节省堆栈空间和减少函数调用数量上略有优势，但有时想找出给定问题的所有子问题并不那么直观。
 
-需要注意的是：动态规划更多的看作是一种解决问题的方法论，而非具体的数值算法，因此，很多不同领域的算法都可看做是动态规划算法的实例。参考文献中，就列出了不少这样的算法。
+需要注意的是：动态规划更多的看作是一种解决问题的方法论，而非具体的数值算法，因此，很多不同领域的算法都可看做是动态规划算法的实例。参考文献中，就列出了不少这样的算法。显然，动态规划是一种**迭代（Iteration）算法**。
 
 由前文的描述可知，MDP正好具备overlapping subproblems和optimal substructure的特性，因此也可以通过Dynamic programming求解。
 
@@ -240,4 +240,8 @@ David Poole还写了一本书《Artificial Intelligence: foundations of computat
 http://artint.info/AIPython/
 
 从该书所用编程语言的变迁，亦可感受到Poole教授不断学习的脚步。要知道Poole教授刚进入学术界的时代（1985年前后），就连Java也还没被发明出来呢。
+
+http://uhaweb.hartford.edu/compsci/ccli/samplep.htm
+
+hartford的这个网站也有些不错的资料，偏重Rl、机器人、ML for Game等领域。
 

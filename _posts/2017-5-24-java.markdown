@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Java（二）, Machine Learning之Java篇, 运维工具集, Javascript在客户端的使用, Flume & Kafka
+title:  Java（二）, Python（二）
 category: language 
 ---
 
@@ -82,247 +82,109 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/java/HanLP/Know
 
 3.不想序列化的成员使用transient关键字修饰。
 
-# Machine Learning之Java篇
 
-http://machinelearningmastery.com/java-machine-learning/
+# python
 
-这篇文章包含了很多Machine Learning方面的软件和库。
+## python调用GTK函数的一般规则
 
-## ND4J
+众所周知，GTK库是用C语言编写的，其相关的文档提供的也是C函数的接口，python接口的文档相对较少，获得也不太容易。因此有必要掌握一下这方面基本的命名规则。（这里只讲方法，对深层次的调用原理不做探究。）
 
-numpy的等价物。
+1）类初始化函数
 
-http://nd4j.org/
+C:`GtkWidget * gtk_button_new (void);`
 
-## DL4J
+python:`button = Gtk.Button()`
 
-TensorFlow的等价物。
+这里除了把C函数式的写法，替换成python的类的写法之外，并无其他差异。
 
-https://deeplearning4j.org/
+2）普通类成员函数
 
-参考：
+C:`void gtk_container_add (GtkContainer *container, GtkWidget *widget);`
 
-https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247484466&idx=1&sn=9dd7d305f37f6cad8d4ac37ad17f61f8
+python:`button.add(image)`
 
-Deeplearning4j：使用CNN进行文本分类:图文+代码
+可以看出，C函数的第一个表示self类指针的参数被省略掉了。
 
-## Joinery
+3）回调函数
 
-Pandas的等价物。
+这里以按钮的click事件回调为例：
 
-https://github.com/cardillo/joinery
+C:`void user_function (GtkButton *button, gpointer user_data)`
 
-## Weka
+python:
 
-Weka是一款开源的机器学习以及数据挖掘软件。主要开发者来自新西兰的the University of Waikato。
+`button.connect("clicked", self.playToggled)`
 
-官网：
+`def playToggled(self, w):`
 
-http://www.cs.waikato.ac.nz/ml/weka/
+这里的情况要复杂的多。首先在事件回调注册的时候，由于我们并没有给user_data赋值，因此照理说playToggled函数，只有button这一个参数。但实际传递给playToggled函数的有两个参数，self是一个用于占位的参数，w对应button，没有东西对应user_data。
 
-Weka不仅有GUI，而且也为开发提供了API，是单机Machine Learning的Java首选。国内的京东用的比较多。
+4）用于输出的参数
 
-GitHub：
+C:`void gst_message_parse_error (GstMessage *message, GError **gerror, gchar **debug);`
 
-https://github.com/bnjmn/weka
+python:`err, debug = message.parse_error()`
 
-API Doc：
+这个例子中的gerror和debug都是用于输出的参数。如果只想得到其一，还可用以下方法:
 
-http://weka.sourceforge.net/doc.stable-3-8/
+`debug = message.parse_error()[2]`
 
-Weka除了基本库之外，还有许多扩展包：
+5）枚举类型
 
-http://weka.sourceforge.net/packageMetaData/
+C:
 
-参考：
+{% highlight c %}
+enum GstSeekFlags
+{
+  GST_SEEK_FLAG_FLUSH,
+  ...
+}
+{% endhighlight %}
 
-https://weka.wikispaces.com/Use+Weka+in+your+Java+code
+python:`Gst.SeekFlags.FLUSH`
 
-如何在Java代码中使用Weka
+6）宏常量
 
-## ELKI
+C:`#define GST_CLOCK_TIME_NONE ((GstClockTime) -1)`
 
-ELKI是另一个数据挖掘软件，也有GUI和API。ELKI主要专注于聚类和异常检测算法。
+python:`Gst.CLOCK_TIME_NONE`
 
-官网：
+7）类型转换
 
-https://elki-project.github.io/algorithms/
+大多数情况下，类型转换自动完成，并无什么问题。这里只讨论特殊的情况。
 
-GitHub：
+C:
 
-https://github.com/elki-project/elki
+{% highlight c %}
+gst_element_seek (pipeline, 1.0, GST_FORMAT_TIME, GST_SEEK_FLAG_FLUSH,
+                         GST_SEEK_TYPE_SET, time_nanoseconds,
+                         GST_SEEK_TYPE_NONE, GST_CLOCK_TIME_NONE))
+{% endhighlight %}
 
-## smile
+python:
 
-Statistical Machine Intelligence and Learning Engine虽然没有GUI，但却有一个类似Spark的命令行界面，以及类似Matplotlib的数据可视化接口。这是一个留美华人工程师写的统计和NLP方面的库。
+{% highlight python %}
+self.player.seek(1.0, Gst.Format.TIME, Gst.SeekFlags.FLUSH, Gst.SeekType.SET,\
+                 time_nanoseconds, Gst.SeekType.NONE, Gst.CLOCK_TIME_NONE)
+{% endhighlight %}
 
-官网：
+这里首先按照一般的方法，将C代码转化成python代码。但是运行之后，产生如下错误：
 
-https://haifengl.github.io/smile/
+`OverflowError: long too big to convert`
 
-参考：
+究其原因，gst_element_seek的最后一个参数是uint64类型的。但python原生并不支持该类型，而是将之转换成int类型（实际上是int64类型），这样的话，GST_CLOCK_TIME_NONE的值显然超出了int64所能表示的范围。
 
-https://mp.weixin.qq.com/s/UZWSUUuPWcyv6yUx-woF4g
+解决的办法是使用ctypes库，将
 
-Smile实战（一）SVM
+`Gst.CLOCK_TIME_NONE`
 
-## java-string-similarity
+改为
 
-这个库虽然功能有限，但却针对字符处理进行了优化。比如Jaccard距离，weka没有实现，ELKI提供的是通用的集合类实现，用起来没有java-string-similarity方便。
-
-官网：
-
-https://github.com/tdebatty/java-string-similarity
-
-## LDA4j
-
-https://github.com/hankcs/LDA4j
-
-## YTK
-
-猿题库开源了两个Java的库：
-
-https://github.com/yuantiku/ytk-learn
-
-https://github.com/yuantiku/ytk-mp4j
+`c_long(Gst.CLOCK_TIME_NONE).value`
 
 ## 参考
 
-https://mp.weixin.qq.com/s/WsjZERRkgnReWuDw_z5Hxw
+https://mp.weixin.qq.com/s/jHnkmpnOz1LApVCLJL-8Tw
 
-LibRec：一个覆盖70多种算法的推荐系统开源库！
-
-# 运维工具集
-
-## Zabbix
-
-zabbix是一个基于WEB界面的提供分布式系统监视以及网络监视功能的企业级的开源解决方案。
-
-http://www.zabbix.com/
-
-## Cacti
-
-Cacti是一套基于PHP,MySQL,SNMP及RRDTool开发的网络流量监测图形分析工具。
-
-http://cacti.net/
-
-## Nagios
-
-Nagios是一款开源的免费网络监视工具，能有效监控Windows、Linux和Unix的主机状态，交换机路由器等网络设备，打印机等。
-
-https://www.nagios.org/
-
-# Ganglia
-
-Ganglia是伯克利开发的一个集群监控软件。可以监视和显示集群中的节点的各种状态信息，比如如：cpu 、mem、硬盘利用率， I/O负载、网络流量情况等，同时可以将历史数据以曲线方式通过php页面呈现。
-
-官网：
-
-http://ganglia.sourceforge.net/
-
-## Jenkins
-
-Jenkins是一个开源软件项目，旨在提供一个开放易用的软件平台，使软件的持续集成变成可能。
-
-https://jenkins.io/index.html
-
-自动化部署的其中一种方案：
-
-gitlab管理代码版本，触发jenkins自动构建+测试，然后走迭代或者发布，全部环境都在docker内。
-
-## Walle
-
-Walle一个web部署系统工具，配置简单、功能完善、界面流畅、开箱即用！支持git、svn版本管理，支持各种web代码发布，PHP，Python，JAVA等代码的发布、回滚，可以通过web来一键完成。
-
-https://walle-web.io/
-
-## JMeter
-
-Apache JMeter是Apache组织开发的基于Java的压力测试工具。用于对软件做压力测试，它最初被设计用于Web应用测试，但后来扩展到其他测试领域。 它可以用于测试静态和动态资源，例如静态文件、Java 小服务程序、CGI 脚本、Java 对象、数据库、FTP 服务器， 等等。JMeter 可以用于对服务器、网络或对象模拟巨大的负载，来自不同压力类别下测试它们的强度和分析整体性能。
-
-http://jmeter.apache.org/
-
-## boilerpipe
-
-各个网站的HTML版面样式多种多样，如何从中提取正文，是一个很有挑战性的课题。
-
-传统的html解析或者正则式，虽能完成任务，但需要给每个网站单独提供一个模板，通用性不佳，而且一旦网站改版，相应的解析模板也需要修改，这导致后期的维护成本也很高。
-
-boilerpipe是一个用于提取HTML正文的库。它采用机器学习的思想，通过提取DOM树的特征，学习得到正文的内容。
-
-官网：
-
-https://github.com/kohlschutter/boilerpipe
-
-参考：
-
-http://xiaoxinzhou.blog.163.com/blog/static/207045386201332381015146/
-
-Boilerpipe简介
-
-http://baojie.org/blog/2014/06/23/python-text-extraction/
-
-总结Python正文提取的工具包
-
-# Javascript在客户端的使用
-
-Javascript在服务器前端的成功，促使人们思考其在客户端的使用。
-
-最早的尝试，是MS提供的web broswer控件（例如MFC的CHtmlView类）。然而，当时的目的，并不是美化应用程序外观，而只是给程序提供一个访问互联网的机会。其最常见的用处，就是给About添加一个网站链接。这种方式不光用途简陋，更关键的是从外观来看，网页和应用程序完全是两种风格。
-
-网站的外观在随后的几年中进化的很快，由于CSS和Javascript的出现，网页前端不再是一成不变的静态网页，而是具有了一定的动画和交互能力。强大的功能促进了分工的发展，网站设计逐渐分成了前端和后端两大工种。这种分工又促进了网页交互技术的进步。
-
-反观普通的应用程序，由于受限于编程的复杂度，前端人员一直难于介入，很多年都处于停滞阶段。这期间一些不甘平庸的公司，在UI技术方面也做了一些尝试。
-
-首先是DirectUI。这个是MS对于Win32窗口模型的一个重大改进。
-
-在原始的Win32窗口模型中，每个控件都是一个窗口，拥有一个窗口句柄（相当于窗口资源的描述符）。窗口事件的处理和资源管理都在OS层面进行，开销比较大。（比如包含10000个按钮的窗口怎么处理的问题）窗口之间的交互，比如透明、动画，也由于需要跨窗口句柄，而变得非常复杂。
-
-DirectUI的思路，是将控件降级为贴图，并接管整体窗口事件的处理，以模拟的方式实现控件的行为。开销和扩展性得到了很大的提升。
-
-DirectUI技术最早出现在Windows XP中。比如，“我的电脑”左侧的控制面板。由于它的HWND的名字叫做DirectUI，故名。GTK项目实际上也采用了类似的方案。
-
-DirectUI技术国内做的比较好的有:
-
-https://www.douban.com/group/topic/27583755/
-
-各种DirectUI技术，普遍引入了UI配置文件的概念，而且UI配置文件的功能也越来越强。比如，GTK的设计器Glade，早期的时候是根据UI设计，导出代码，但现在已经改为导出UI配置文件了。
-
-然而，由于低层实现的限制，这些UI配置文件语法各异，虽然有设计器来简化设计难度，但注定不能做的太复杂。因此，功能上无论如何都无法与网页相比，更不必说和HTML 5相比了。
-
-2012年以后，以CEF（Chromium Embedded Framework）和XULRunner为代表的浏览器派，开始逐渐崭露头角。从此，开发桌面应用程序，不再是Javascript的禁区。桌面应用UI和网页前端开始呈现融合的局面。
-
-# Flume & Kafka
-
-Flume和Kafka都是日志系统。
-
-Flume官网：
-
-https://flume.apache.org/
-
-Kafka官网：
-
-https://kafka.apache.org/
-
-以下是它们的比较：
-
-http://www.cnblogs.com/ibyte/p/5830715.html
-
-Flume与Kafka区别
-
-http://www.aichengxu.com/view/2412170
-
-kafka和flume的对比
-
-http://www.cnblogs.com/lishouguang/p/4560858.html
-
-flume使用场景 flume与kafka的比较
-
-https://mp.weixin.qq.com/s/bjlDHFLwxjej2t8iDhVb1A
-
-Spark Streaming消费Kafka数据的两种方案
-
-https://mp.weixin.qq.com/s/o-zfrJS5Ito1kWPBJUIryg
-
-Kafka相关资源
+如何写出优雅又地道的Python代码？
 

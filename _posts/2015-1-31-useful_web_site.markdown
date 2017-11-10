@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  有用的网址集合
+title:  有用的网址集合, 区块链, 数字成像
 category: resource 
 ---
 
@@ -320,7 +320,7 @@ GNOME
 
 http://ftp.gnome.org/pub/GNOME/sources/
 
-## 区块链
+# 区块链
 
 https://mp.weixin.qq.com/s/NF1tQaOTFklGM5U9kQ7yKA
 
@@ -350,7 +350,11 @@ https://mp.weixin.qq.com/s/MorLGHh3KQOrj1GYLwIbtA
 
 比特币能致富？一个故事告诉你比特币的原理及运作机制
 
-## 数字成像
+https://mp.weixin.qq.com/s/QHI-AgJI5MCHE-Na99eHbQ
+
+区块链相关资料汇总
+
+# 数字成像
 
 https://mp.weixin.qq.com/s/od9uDZdRU4QaBKPHb0tLag
 

@@ -20,6 +20,8 @@ http://incompleteideas.net/sutton/609%20dropbox/slides%20(pdf%20and%20keynote)/
 
 Sutton的pdf和keynote
 
+>注：资料中的.key文件即为keynote文件。这种格式是苹果设备上的专用ppt格式，在其他系统中查看不了。
+
 http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html
 
 UCL Course on RL
@@ -202,7 +204,9 @@ https://mp.weixin.qq.com/s/AyW7oOC7yxVtmswaMT1DGQ
 
 腾讯AI Lab获得计算机视觉权威赛事MSCOCO Captions冠军
 
+https://mp.weixin.qq.com/s/4aENmxUMEEPVPnexLKrg7Q
 
+新型强化学习算法ACKTR
 
 # NN的INT8计算
 

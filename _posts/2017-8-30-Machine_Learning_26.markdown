@@ -6,17 +6,35 @@ category: ML
 
 # 动态规划（续）
 
-## Iterative Policy Evaluation
+## RL与Dynamic programming
 
-迭代策略评价
+RL领域的Dynamic programming主要包括以下算法：（为了抓住问题的本质，这里仅列出各算法最关键的Bellman equation，至于流程参照Q-learning算法即可。）
+
+### Iterative Policy Evaluation：
+
+$$v_{k+1}(s) = \sum_{a \in \mathcal{A}}\pi(a | s)\left(\mathcal{R}_s^a + \gamma \sum_{s'\in \mathcal{S}}\mathcal{P}_{ss'}^a v_k(s')\right)$$
+
+### Policy Iteration
+
+Policy Iteration包含如下两步：
+
+Policy Evaluation：
+
+$$v_{k+1}(s) = \sum_{a \in \mathcal{A}}\pi(a | s)\left(\mathcal{R}_s^a + \gamma \sum_{s'\in \mathcal{S}}\mathcal{P}_{ss'}^a v_k(s')\right)$$
+
+Policy Improvement：
+
+$$\pi_{k+1}(s) = \arg \max_{a \in \mathcal{A}}\left(\mathcal{R}_s^a + \gamma \sum_{s'\in \mathcal{S}}\mathcal{P}_{ss'}^a v_k(s')\right)$$
 
 ![](/images/article/Policy_Iteration.png)
 
 ![](/images/article/Policy_Iteration_2.png)
 
-$$v_{k+1}(s) = \sum_{a \in \mathcal{A}}\pi(a | s)\left(\mathcal{R}_s^a + \gamma \sum_{s'\in \mathcal{S}}\mathcal{P}_{ss'}^a v_k(s')\right)$$
+### Value Iteration
 
 $$v_{k+1}(s) = \max_{a \in \mathcal{A}}\left(\mathcal{R}_s^a + \gamma \sum_{s'\in \mathcal{S}}\mathcal{P}_{ss'}^a v_k(s')\right)$$
+
+
 
 ## 参考
 
@@ -59,6 +77,10 @@ DP之矩阵连乘问题
 http://www.cnblogs.com/jmzz/archive/2011/07/05/2098630.html
 
 DP之背包问题+记忆递归
+
+http://www.cs.upc.edu/~mmartin/Ag4-4x.pdf
+
+Bellman equations and optimal policies
 
 # Probabilistic Robotics
 

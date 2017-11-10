@@ -1,0 +1,150 @@
+---
+layout: post
+title:  Machine Learning之Java篇, DL参考资源（五）
+category: AI 
+---
+
+# Machine Learning之Java篇
+
+http://machinelearningmastery.com/java-machine-learning/
+
+这篇文章包含了很多Machine Learning方面的软件和库。
+
+## ND4J
+
+numpy的等价物。
+
+http://nd4j.org/
+
+## DL4J
+
+TensorFlow的等价物。
+
+https://deeplearning4j.org/
+
+参考：
+
+https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247484466&idx=1&sn=9dd7d305f37f6cad8d4ac37ad17f61f8
+
+Deeplearning4j：使用CNN进行文本分类:图文+代码
+
+## Joinery
+
+Pandas的等价物。
+
+https://github.com/cardillo/joinery
+
+## Weka
+
+Weka是一款开源的机器学习以及数据挖掘软件。主要开发者来自新西兰的the University of Waikato。
+
+官网：
+
+http://www.cs.waikato.ac.nz/ml/weka/
+
+Weka不仅有GUI，而且也为开发提供了API，是单机Machine Learning的Java首选。国内的京东用的比较多。
+
+GitHub：
+
+https://github.com/bnjmn/weka
+
+API Doc：
+
+http://weka.sourceforge.net/doc.stable-3-8/
+
+Weka除了基本库之外，还有许多扩展包：
+
+http://weka.sourceforge.net/packageMetaData/
+
+参考：
+
+https://weka.wikispaces.com/Use+Weka+in+your+Java+code
+
+如何在Java代码中使用Weka
+
+## ELKI
+
+ELKI是另一个数据挖掘软件，也有GUI和API。ELKI主要专注于聚类和异常检测算法。
+
+官网：
+
+https://elki-project.github.io/algorithms/
+
+GitHub：
+
+https://github.com/elki-project/elki
+
+## smile
+
+Statistical Machine Intelligence and Learning Engine虽然没有GUI，但却有一个类似Spark的命令行界面，以及类似Matplotlib的数据可视化接口。这是一个留美华人工程师写的统计和NLP方面的库。
+
+官网：
+
+https://haifengl.github.io/smile/
+
+参考：
+
+https://mp.weixin.qq.com/s/UZWSUUuPWcyv6yUx-woF4g
+
+Smile实战（一）SVM
+
+## java-string-similarity
+
+这个库虽然功能有限，但却针对字符处理进行了优化。比如Jaccard距离，weka没有实现，ELKI提供的是通用的集合类实现，用起来没有java-string-similarity方便。
+
+官网：
+
+https://github.com/tdebatty/java-string-similarity
+
+## LDA4j
+
+https://github.com/hankcs/LDA4j
+
+## YTK
+
+猿题库开源了两个Java的库：
+
+https://github.com/yuantiku/ytk-learn
+
+https://github.com/yuantiku/ytk-mp4j
+
+## 参考
+
+https://mp.weixin.qq.com/s/WsjZERRkgnReWuDw_z5Hxw
+
+LibRec：一个覆盖70多种算法的推荐系统开源库！
+
+# DL参考资源
+
+https://mp.weixin.qq.com/s/eqI5fVuF68RQWb1a5O219w
+
+腾讯研发“一键卸妆” ,让女神秒变路人!
+
+https://mp.weixin.qq.com/s/NdwbnEMEVfiX6YGepK9PBA
+
+追根溯源！一图看尽深度学习架构谱系
+
+https://mp.weixin.qq.com/s/_IOdMk8CJbZkeYO9CDDgZQ
+
+AI设计师“鲁班”进化史：每秒制作8000张双11海报，没有一张雷同！
+
+https://mp.weixin.qq.com/s/UsoLQbrwj6rpLUAV5kYkUA
+
+大数据和网络分析的可扩展算法
+
+https://mp.weixin.qq.com/s/vtJUM94oYpN_h3Sdg3exLQ
+
+张益肇：AI+医疗，微软有哪些布局？
+
+https://mp.weixin.qq.com/s/I9dm8uDEqO0X19s758jOGw
+
+良心GitHub项目：各种机器学习任务的顶级结果（论文）汇总
+
+https://mp.weixin.qq.com/s/UfmyH4BBWwErakrOoselQA
+
+随机计算图：在随机结点中执行反向传播的新方法
+
+https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
+
+面向无监督任务：DeepMind提出神经离散表示学习生成模型VQ-VAE
+
