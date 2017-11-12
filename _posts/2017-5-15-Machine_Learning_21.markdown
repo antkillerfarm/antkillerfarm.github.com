@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十一）——loss function详解, EMD, LSA, HMM
+title:  机器学习（二十一）——loss function详解, 机器学习分类器性能指标, EMD, LSA, HMM
 category: ML 
 ---
 
@@ -34,7 +34,7 @@ $$\text{MPE} = \frac{100\%}{n}\sum_{t=1}^n \frac{a_t-f_t}{a_t}$$
 
 ![](/images/article/cross_vs_mse.png)
 
-# P-R、ROC和AUC
+# 机器学习分类器性能指标
 
 很多学习器是为测试样本产生一个实值或概率预测，然后将这个预测值与一个分类阈值（threshold）进行比较，若大于阈值则分为正类，否则为反类。这个实值或概率预测结果的好坏，直接决定了学习器的泛化能力。实际上，根据这个实值或概率预测结果，我们可将测试样本进行**排序**，“最可能”是正例的排在最前面，“最不可能”是正例的排在最后面。这样，分类过程就相当于在这个排序中以某个“截断点”（cut point）将样本分为两部分，前一部分判作正例，后一部分则判作反例。
 
@@ -81,6 +81,12 @@ Accuracy和Precision是一对容易混淆的概念。其一般定义如下图所
 ![](/images/article/Accuracy_and_precision.svg)
 
 当然，这个定义和机器学习中的定义无关，主要用于物理和统计领域。
+
+参考：
+
+https://mp.weixin.qq.com/s/5nnHBKEToepi3dhXLfQBtw
+
+机器学习分类器性能指标详解
 
 # Earth mover's distance
 

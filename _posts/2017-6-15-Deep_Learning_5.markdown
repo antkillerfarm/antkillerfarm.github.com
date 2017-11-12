@@ -39,6 +39,10 @@ http://blog.csdn.net/heyongluoyao8/article/details/48636251
 
 循环神经网络(RNN, Recurrent Neural Networks)介绍
 
+https://mp.weixin.qq.com/s/pq8-u05ww0JgTEgU-0P-Lw
+
+一文搞懂RNN（循环神经网络）基础篇
+
 http://mp.weixin.qq.com/s?__biz=MzIzODExMDE5MA==&mid=2694182661&idx=1&sn=ddfb3f301f5021571992824b21ddcafe
 
 循环神经网络

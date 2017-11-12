@@ -372,3 +372,9 @@ http://www.cnblogs.com/6DAN_HUST/archive/2010/11/11/1874681.html
 
 运筹学——线性规划及单纯形法求解
 
+https://mp.weixin.qq.com/s/E_EzwLr4JOzR1pk3MOeU_w
+
+复动力系统简介
+
+
+

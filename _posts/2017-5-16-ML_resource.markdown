@@ -42,6 +42,10 @@ https://www.zhihu.com/question/20691338
 
 机器学习该怎么入门？
 
+https://mp.weixin.qq.com/s/WozN8-FdASaku0UKT9EQ3A
+
+机器学习实用指南
+
 http://echarts.baidu.com/echarts2/doc/example.html
 
 各种大数据展示用的图表。

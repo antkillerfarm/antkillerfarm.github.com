@@ -113,6 +113,14 @@ https://mp.weixin.qq.com/s/xHVkc1NP2oodU7Hb0Xb_jA
 
 为什么XGBoost在机器学习竞赛中表现如此卓越？
 
+https://mp.weixin.qq.com/s/pn_qn6uRz2-9DmAK4sp35g
+
+史上最详细的XGBoost实战（上）
+
+https://mp.weixin.qq.com/s/xzZvIX0QaCPNSyGfHT3beQ
+
+史上最详细的XGBoost实战（下） 
+
 # 关联规则挖掘
 
 ## 基本概念

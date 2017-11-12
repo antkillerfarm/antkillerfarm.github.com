@@ -218,6 +218,40 @@ MobaXterm是一个远程终端登录软件。
 
 http://mobaxterm.mobatek.net/
 
+# tmux
+
+你是不是经常需要SSH或者telent远程登录到Linux服务器？你是不是经常为一些长时间运行的任务而头疼，比如系统备份、ftp传输等等。
+
+通常情况下我们都是为每一个这样的任务开一个远程终端窗口，因为他们执行的时间太长了。必须等待它执行完毕，在此期间可不能关掉窗口或者断开连接，否则这个任务就会被杀掉，一切半途而废了。
+
+这个问题的解决办法是安装一个会话管理工具。原先主要使用screen：
+
+https://www.gnu.org/software/screen/
+
+这是一个有30年历史（1987年）的软件。
+
+现在的话，一般推荐使用tmux：
+
+https://github.com/tmux/tmux/
+
+安装：
+
+`sudo apt install tmux`
+
+参考：
+
+https://linuxtoy.org/archives/from-screen-to-tmux.html
+
+从screen切换到tmux
+
+http://mingxinglai.com/cn/2012/09/tmux/
+
+tmux的使用方法和个性化配置
+
+http://chengjin.li/2017/08/09/tmux-using-tutorial/
+
+终端复用工具---tmux的安装及使用
+
 # 环境变量
 
 设置环境变量的方法：

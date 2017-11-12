@@ -130,6 +130,10 @@ https://mp.weixin.qq.com/s/SAp0alFSLKN1CHX0_vdTjg
 
 扑克AI对抗人类30年历史，解密冷扑大师前世今生
 
+https://mp.weixin.qq.com/s/mmMrGy3ggwVid_NxfpEA7Q
+
+冷扑大师发明人：用于策略推理的超人AI
+
 https://mp.weixin.qq.com/s/x0G-LNCano7qjGdpj-fpCQ
 
 2017年度星际争霸AI竞赛结果出炉
@@ -416,6 +420,14 @@ http://pytlab.org/2017/09/19/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95%E4%B8%AD%E5%87
 
 遗传算法中几种不同选择算子
 
+https://mp.weixin.qq.com/s/2TYSY7HoFrwUUeI3Z4MWSw
+
+从遗传算法到OpenAI新方向：进化策略工作机制全解
+
+https://mp.weixin.qq.com/s/erwSQfvGdyKjxONbJKFAHg
+
+基于遗传算法的拼图游戏解决方案
+
 https://mp.weixin.qq.com/s/9ZQc3RqCCcWYDplZ4RU2oA
 
 清华段路明组发现深度学习和量子物理重要关联
@@ -423,4 +435,5 @@ https://mp.weixin.qq.com/s/9ZQc3RqCCcWYDplZ4RU2oA
 https://mp.weixin.qq.com/s/LbyqAA_scfdDXDe_ESWEKg
 
 姚期智：呼之欲出的量子计算机，和它漫长的最后一英里
+
 

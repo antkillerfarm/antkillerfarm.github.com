@@ -148,3 +148,17 @@ https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
 
 面向无监督任务：DeepMind提出神经离散表示学习生成模型VQ-VAE
 
+https://mp.weixin.qq.com/s/Yoledi-OYgJmafxKBlHVPg
+
+国科大本科生以第一作者身份发表AAAI论文，用神经网络分析三维模型
+
+https://mp.weixin.qq.com/s/5vDSrWeUvlBuZgmX0R9pBQ
+
+斯坦福“黑盒学习”研究：使用神经变分推理的无向图模型，可替代“采样”
+
+https://mp.weixin.qq.com/s/t0lGL66YIJwIvI4emNfN7Q
+
+UC Berkeley新研究：通过深度学习建模注意点采样阵列
+
+
+

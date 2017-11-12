@@ -188,6 +188,10 @@ https://mp.weixin.qq.com/s/ouLWl623r_YaZdIdpqSWcw
 
 深度卷积对抗生成网络(DCGAN)实战
 
+https://mp.weixin.qq.com/s/jG7r7THhVAnJTYgDeWX2Eg
+
+百度提出使用GAN构建语音识别新框架 
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。

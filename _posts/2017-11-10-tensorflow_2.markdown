@@ -353,3 +353,17 @@ https://mp.weixin.qq.com/s/vbBNYzKq6AnsDTy8lFsKAw
 
 TensorFlow RNN深度学习BiLSTM+CRF实现sequence labeling序列标注
 
+https://mp.weixin.qq.com/s/knw7yuUxHe-qeCLfj20onw
+
+Bayesian GAN的TensorFlow实现
+
+https://mp.weixin.qq.com/s/Sxui9CvdGocIxVG2FM4JtQ
+
+基于tensorflow使用CNN-RNN进行中文文本分类！
+
+https://mp.weixin.qq.com/s/X7ISLRMy5cddpmO5mev4MA
+
+自创数据集，使用TensorFlow预测股票入门
+
+
+

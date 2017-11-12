@@ -181,7 +181,7 @@ c) Undiscounted, average reward MDP
 
 # 动态规划
 
-Dynamic programming用于解决那些可分解为**重复子问题（overlapping subproblems）**并具有**最优子结构（optimal substructure）**的问题。这里的programming和编程并无任何关系。
+Dynamic programming(DP)用于解决那些可分解为**重复子问题（overlapping subproblems）**并具有**最优子结构（optimal substructure）**的问题。这里的programming和编程并无任何关系。
 
 上世纪40年代，Richard Bellman最早使用动态规划这一概念表述通过遍历寻找最优决策解问题的求解过程。1953年，Richard Bellman将动态规划赋予现代意义，该领域被IEEE纳入系统分析和工程中。
 
@@ -217,7 +217,7 @@ c) 使用这些最优解构造初始问题的最优解。
 
 需要注意的是：动态规划更多的看作是一种解决问题的方法论，而非具体的数值算法，因此，很多不同领域的算法都可看做是动态规划算法的实例。参考文献中，就列出了不少这样的算法。显然，动态规划是一种**迭代（Iteration）算法**。
 
-由前文的描述可知，MDP正好具备overlapping subproblems和optimal substructure的特性，因此也可以通过Dynamic programming求解。
+由前文的描述可知，MDP正好具备overlapping subproblems和optimal substructure的特性，因此也可以通过DP求解。
 
 在继续下文之前，推荐一波资源：
 
@@ -243,5 +243,5 @@ http://artint.info/AIPython/
 
 http://uhaweb.hartford.edu/compsci/ccli/samplep.htm
 
-hartford的这个网站也有些不错的资料，偏重Rl、机器人、ML for Game等领域。
+Hartford大学的这个网站也有些不错的资料，偏重RL、机器人、ML for Game等领域。
 

@@ -294,10 +294,6 @@ https://mp.weixin.qq.com/s/9uG8lqr2Kn0vzZKyjLHNGg
 
 从文本挖掘综述分类、聚类和信息提取等算法
 
-https://mp.weixin.qq.com/s/kMQ7q4EyBQUH1DEEhQWdCQ
-
-Familia：开源的中文主题模型应用工具包
-
 https://mp.weixin.qq.com/s/p8gEbamEbJBp_wzsy8_21A
 
 词义的动态变迁
@@ -414,3 +410,18 @@ https://mp.weixin.qq.com/s/BcUB3bXrPJF0WQetWs7Law
 
 用深度学习解决自然语言处理中的7大问题，文本分类、语言建模、机器翻译等
 
+https://mp.weixin.qq.com/s/GyE9qdXPGvrq12dMAf4nrQ
+
+论文推荐：QA，增强学习，知识图谱，机器阅读理解
+
+https://mp.weixin.qq.com/s/eCtqMIo3_UDxAR4fWzMjZQ
+
+站在锤子手机背后，小源科技用AI打造短信场景服务
+
+https://mp.weixin.qq.com/s/hkcVhyqiDW--F3QxucgEcA
+
+亚马逊开源神经机器翻译框架Sockeye：基于Apache MXNet的NMT平台
+
+https://mp.weixin.qq.com/s/vgejlnsBlOKMMRt-M3-d-w
+
+深思考：实现人机多轮交互突破是攻克图灵测试的核心

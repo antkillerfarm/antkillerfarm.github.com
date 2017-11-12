@@ -142,6 +142,10 @@ https://mp.weixin.qq.com/s/WspmbqlwdxKXH1cgbkuGwQ
 
 先读懂CapsNet架构然后用TensorFlow实现，这应该是最详细的教程了
 
+https://mp.weixin.qq.com/s/Ot-pRRaHaT1VRyWlLDO2uw
+
+Reddit讨论：Hinton的Capsule网络真的比CNN效果更好吗？
+
 ## Other
 
 https://www.jiqizhixin.com/articles/2017-07-27-2

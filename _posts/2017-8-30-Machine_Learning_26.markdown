@@ -6,9 +6,13 @@ category: ML
 
 # 动态规划（续）
 
-## RL与Dynamic programming
+## RL与DP
 
-RL领域的Dynamic programming主要包括以下算法：（为了抓住问题的本质，这里仅列出各算法最关键的Bellman equation，至于流程参照Q-learning算法即可。）
+RL领域的DP算法的主要思想是：利用value function构建搜索Good Policy的方法。这里用$$v_*(s)$$或$$q_*(s, a)$$表示最优的value function。
+
+
+
+RL DP主要包括以下算法：（为了抓住问题的本质，这里仅列出各算法最关键的Bellman equation，至于流程参照Q-learning算法即可。）
 
 ### Iterative Policy Evaluation：
 

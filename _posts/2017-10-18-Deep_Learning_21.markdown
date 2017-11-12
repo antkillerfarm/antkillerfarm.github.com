@@ -80,6 +80,14 @@ https://zhuanlan.zhihu.com/p/24446336
 
 深度强化学习Deep Reinforcement Learning学习整理
 
+https://mp.weixin.qq.com/s/7BsXPQ8wC6_fHulU63ZQiQ
+
+当强化学习遇见泛函分析
+
+https://mp.weixin.qq.com/s/K82PlSZ5TDWHJzlEJrjGlg
+
+深度学习与强化学习
+
 https://mp.weixin.qq.com/s/KNXD-MpVHQRXYvJKTqn6WA
 
 完善强化学习安全性：UC Berkeley提出约束型策略优化新算法

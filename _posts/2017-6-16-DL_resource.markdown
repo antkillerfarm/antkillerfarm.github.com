@@ -348,6 +348,10 @@ http://zh.gluon.ai/index.html
 
 李沐：《动手学深度学习》（使用Gluon）
 
+https://zhuanlan.zhihu.com/p/30966663
+
+用Gluon炼丹体验
+
 https://mp.weixin.qq.com/s/Shz6BmsOrtbEFtoJRSkl9A
 
 简单车牌检测
@@ -439,6 +443,10 @@ https://mp.weixin.qq.com/s/dY5r_KJVkpipluo7ji9H6w
 https://mp.weixin.qq.com/s/HTj9OozYdq_VLJuGKaiEAg
 
 百行代码构建神经网络黑白图片自动上色系统
+
+https://mp.weixin.qq.com/s/rORvudwdbnmSvzFhM1gVOA
+
+斯坦福大学CS-224n课程中深度NLP模型的PyTorch实现
 
 ## 工具
 

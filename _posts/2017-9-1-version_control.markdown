@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  版本管理工具的前世今生, NLP参考资源（二）
+title:  版本管理工具的前世今生, NLP（二）, NLP参考资源（二）
 category: resource 
 ---
 
@@ -46,23 +46,31 @@ SVN是这一代的集大成者，使用简单的同时，仍保有相当强度�
 
 后Git时代的工具，如Fossil和Veracity，相比Git来说，对权限、BUG跟踪之类的功能做了进一步的扩展。
 
+# NLP
+
+## 自然语言理解
+
+Natural language understanding(NLU)属于NLP的一个分支，属于人工智能的一个部分，用来解决机器理解人类语言的问题，属于人工智能的核心难题。
+
+![](/images/article/domain_slot.png)
+
+上图是语义理解中，最有实用价值的框架语义表示（frame semantics representation）的原理简图。
+
+参考：
+
+http://www.shuang0420.com/2017/04/27/NLP%E7%AC%94%E8%AE%B0%20-%20NLU%E4%B9%8B%E6%84%8F%E5%9B%BE%E5%88%86%E7%B1%BB/
+
+NLU之意图分类
+
+## 论文
+
+《Distant Supervision for relation extraction without labeled data》
+
+《Using Recurrent Neural Networks for Slot Filling in Spoken Language Understanding》
+
+《Convolutional Neural Networks for Sentence Classification》：TextCNN的开山之作
+
 # NLP参考资源
-
-https://mp.weixin.qq.com/s/GyE9qdXPGvrq12dMAf4nrQ
-
-论文推荐：QA，增强学习，知识图谱，机器阅读理解
-
-https://mp.weixin.qq.com/s/eCtqMIo3_UDxAR4fWzMjZQ
-
-站在锤子手机背后，小源科技用AI打造短信场景服务
-
-https://mp.weixin.qq.com/s/hkcVhyqiDW--F3QxucgEcA
-
-亚马逊开源神经机器翻译框架Sockeye：基于Apache MXNet的NMT平台
-
-https://mp.weixin.qq.com/s/vgejlnsBlOKMMRt-M3-d-w
-
-深思考：实现人机多轮交互突破是攻克图灵测试的核心
 
 https://mp.weixin.qq.com/s/0wMTL7x87YXiin3xkf8eJA
 
