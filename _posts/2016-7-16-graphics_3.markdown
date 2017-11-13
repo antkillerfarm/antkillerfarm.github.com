@@ -192,6 +192,12 @@ Tight Frame有个重要特性：
 
 5.http://www.cnblogs.com/Jack-Lee/p/3649114.html
 
+基于OpenCV的Gabor变换及特征提取
+
+6.https://mp.weixin.qq.com/s/RS0Zw6iLFQBUlpOdkuoFbg
+
+从傅立叶变换到Gabor滤波器
+
 # Schmid滤波
 
 Schmid滤波器是一种类Gabor滤波器。其计算公式为：
