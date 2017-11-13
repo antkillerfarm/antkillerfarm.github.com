@@ -342,5 +342,12 @@ https://mp.weixin.qq.com/s/JNTgDjtqCukVwH6u1dp2Vg
 
 国美11·11：大促场景下的国美智能推荐系统演进之路
 
+https://mp.weixin.qq.com/s/EmAhBjZnLns_25gR-aVgwg
+
+MillWheel: Google是如何在事件流处理上做到exactly one semantic的
+
+https://mp.weixin.qq.com/s/XT0fszONzRkAo3biVwS_QQ
+
+大规模中文概念图谱CN-Probase正式发布
 
 

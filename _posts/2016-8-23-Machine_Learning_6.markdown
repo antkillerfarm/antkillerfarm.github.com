@@ -216,7 +216,7 @@ $$\alpha_i=C \Leftrightarrow y^{(i)}u_i\le 1$$
 
 最后的收敛条件是在界内（$$0<\alpha_i<C$$）的样例都能够遵循KKT条件，且其对应的$$\alpha_i$$只在极小的范围内变动。
 
-参考：
+## 参考
 
 https://mp.weixin.qq.com/s/pXhNRAvJI88tycMsrWhgcQ
 
@@ -237,6 +237,10 @@ https://mp.weixin.qq.com/s/MfYRipBX4la5jEG-ZMBhEw
 https://mp.weixin.qq.com/s/AaTlJTWR3lWdx3_gGurVeQ
 
 从大间隔分类器到核函数：全面理解支持向量机
+
+https://www.zhihu.com/question/41066458
+
+现在还有必要对SVM深入学习吗？
 
 # 学习理论
 

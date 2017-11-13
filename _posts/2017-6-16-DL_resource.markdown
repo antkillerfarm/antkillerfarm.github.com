@@ -352,6 +352,10 @@ https://zhuanlan.zhihu.com/p/30966663
 
 用Gluon炼丹体验
 
+https://mp.weixin.qq.com/s/B8TYVG5WjDJ4NX-wirS2Fg
+
+Alex Smola：深度学习触手可及，架构Gluon高中生就能用
+
 https://mp.weixin.qq.com/s/Shz6BmsOrtbEFtoJRSkl9A
 
 简单车牌检测

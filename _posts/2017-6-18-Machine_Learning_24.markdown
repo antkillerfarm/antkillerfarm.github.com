@@ -118,6 +118,10 @@ http://blog.csdn.net/lcj369387335/article/details/69845385
 
 自动文档摘要评价方法---Edmundson和ROUGE
 
+https://mp.weixin.qq.com/s/XiZ6Uc5cHZjczn-qoupQnA
+
+对话系统评价方法综述
+
 # 模型驱动 vs 数据驱动
 
 最近阅读了这篇文章，深有感慨：
@@ -165,6 +169,8 @@ http://blog.csdn.net/u013709270/article/details/72967462
 不像监督学习，对于每一个样本，都有一个确定的标签与之对应，而强化学习没有标签，只有一个时间延迟的奖励，而且游戏中我们往往牺牲当前的奖励来获取将来更大的奖励。这就是**信用分配问题（Credit Assignment Problem）**，即当前的动作要为将来获得更多的奖励负责。
 
 而且在我们找到一个策略，让游戏获得不错的奖励时，我们是选择继续坚持当前的策略，还是探索新的策略以求更多的奖励？这就是**探索与开发（Explore-exploit Dilemma）**的问题。
+
+因此，**强化学习某种意义上可看做具有延迟标记信息的监督学习**。
 
 ![](/images/article/reinforcement_learning.png)
 

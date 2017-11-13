@@ -112,6 +112,12 @@ https://mp.weixin.qq.com/s/nK__d-PV6DY5mDfA_UgDmQ
 
 https://github.com/Nikasa1889/HistoryObjectRecognition/blob/master/HistoryOfObjectRecognition.pdf
 
+参考：
+
+https://mp.weixin.qq.com/s/K68CpueI4e4y7o1uZ28KMQ
+
+从神经科学到计算机视觉：人类与计算机视觉五十年回顾
+
 ## AlexNet
 
 2012年，ILSVRC比赛冠军的model——Alexnet（以第一作者Alex命名）的结构图如下：

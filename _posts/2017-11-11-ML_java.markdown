@@ -160,5 +160,8 @@ https://mp.weixin.qq.com/s/t0lGL66YIJwIvI4emNfN7Q
 
 UC Berkeley新研究：通过深度学习建模注意点采样阵列
 
+https://mp.weixin.qq.com/s/zRdJktyk1LZWUd2cyTjpiw
+
+基于图像检索的行人重识别
 
 

@@ -68,6 +68,10 @@ http://mp.weixin.qq.com/s/gHM7qh7UTKzatdg34cgfDQ
 
 强化学习全解
 
+https://mp.weixin.qq.com/s/B6ZpJ0Yw9GBZ9_MyNwjlXQ
+
+构建强化学习系统，你需要先了解这些背景知识
+
 # Q-learning
 
 Q-learning是强化学习中很重要的算法，也是最早被引入DL领域的强化学习算法，对它的研究催生了Deep Q-learning Networks。

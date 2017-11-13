@@ -132,6 +132,10 @@ https://mp.weixin.qq.com/s/f3bmtbCY5BfA4v3movwLVg
 
 向手机端神经网络进发：MobileNet压缩指南
 
+https://mp.weixin.qq.com/s/mcK8M6pnHiZZRAkYVdaYGQ
+
+MobileNet在手机端上的速度评测：iPhone 8 Plus竟不如iPhone 7 Plus
+
 ## Winograd
 
 矩阵方面的数值计算，Shmuel Winograd是一个无法绕开的人物。

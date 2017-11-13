@@ -452,3 +452,8 @@ https://mp.weixin.qq.com/s/drpd1O502TcL54cHSEdl_g
 
 如何为时间序列数据优化K-均值聚类速度？
 
+https://mp.weixin.qq.com/s/Di4xVdD1jOGGCiIB-vdkkg
+
+Python可以被用来做哪些神奇好玩的事情
+
+

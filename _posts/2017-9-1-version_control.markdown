@@ -200,7 +200,7 @@ https://mp.weixin.qq.com/s/Xe-T7EKvGDSR5GOeL4nvKg
 
 从Chatbot到NER
 
+https://mp.weixin.qq.com/s/ux-bheZwkjn0PY3SwiAUWw
 
-
-
+用于神经机器翻译的全并行文本生成
 

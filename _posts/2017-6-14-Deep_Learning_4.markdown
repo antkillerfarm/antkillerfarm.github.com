@@ -198,6 +198,10 @@ https://mp.weixin.qq.com/s/GGXI-ZzPc9LLjVQpf5ia1A
 
 词嵌入2017年进展全面梳理：趋势和未来方向
 
+https://zhuanlan.zhihu.com/p/30868040
+
+文本表示的应用与评价
+
 # RNN
 
 ## RNN的基本结构
