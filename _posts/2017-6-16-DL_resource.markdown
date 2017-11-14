@@ -452,31 +452,8 @@ https://mp.weixin.qq.com/s/rORvudwdbnmSvzFhM1gVOA
 
 斯坦福大学CS-224n课程中深度NLP模型的PyTorch实现
 
-## 工具
+https://mp.weixin.qq.com/s/Chk-QAPhIXlIeguT4hS6kg
 
-https://mp.weixin.qq.com/s/TT4whft1Tj1pCEPbnMH1cA
-
-清华大学发布OpenNE：用于网络嵌入的开源工具包
-
-https://mp.weixin.qq.com/s/r01vfSKb4VpFXVyokb54Bg
-
-MIT开放图像标注工具LabelMe源代码：助力机器视觉的发展
-
-https://mp.weixin.qq.com/s/30dK7nGJOWIaa1j9QElrYA
-
-详解帝国理工集成工具TensorLayer：控制深度学习开发复杂度
-
-https://mp.weixin.qq.com/s/m_2LE2QN_8_a1hti6G0Cow
-
-Netflix开源稀疏数据专用神经网络库：Vectorflow
-
-https://mp.weixin.qq.com/s/bMfJ1Ez6bOBjHLquuZFnmQ
-
-Uber与斯坦福大学开源深度概率编程语言Pyro：基于PyTorch
-
-https://mp.weixin.qq.com/s/ImtSR6VwYalN6gTgjVJOsQ
-
-十五分钟完成Regex五天任务：FlashText，语料库数据快速清理利器
-
+对比ResNet：超深层网络DiracNet的PyTorch实现
 
 

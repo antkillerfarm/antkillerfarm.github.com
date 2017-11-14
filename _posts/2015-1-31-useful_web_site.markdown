@@ -302,6 +302,10 @@ https://mp.weixin.qq.com/s/UdKVffV42v0GnV6i8xMWOg
 
 PESA/AESA：无源/有源电子扫描阵列天线及其辐射方向图
 
+http://www.xfyun.cn/share/?p=2626
+
+开发者常犯的十大加密错误
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/
@@ -353,6 +357,10 @@ https://mp.weixin.qq.com/s/MorLGHh3KQOrj1GYLwIbtA
 https://mp.weixin.qq.com/s/QHI-AgJI5MCHE-Na99eHbQ
 
 区块链相关资料汇总
+
+http://www.xfyun.cn/share/?p=2598
+
+当微服务撞上区块链
 
 # 数字成像
 

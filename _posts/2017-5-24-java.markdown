@@ -82,8 +82,35 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/java/HanLP/Know
 
 3.不想序列化的成员使用transient关键字修饰。
 
-
 # python
+
+## python调试
+
+首先：
+
+`import pdb`
+
+然后在需要断点的地方：
+
+`pdb.set_trace()`
+
+然后直接运行脚本即可，其他命令和gdb十分相似。
+
+pdb和gdb的差异主要在于：
+
+1.pdb需要修改代码，而gdb不需要。
+
+2.可以直接运行脚本进入pdb模式，而gdb需要先进入gdb环境，然后才可以运行程序。显然pdb的灵活性比较高。
+
+参考：
+
+https://blog.jamespan.me/2016/06/09/remote-debug-your-python-code
+
+远程调试你的Python代码
+
+https://www.ibm.com/developerworks/cn/linux/l-cn-pythondebugger/index.html
+
+Python代码调试技巧
 
 ## python调用GTK函数的一般规则
 

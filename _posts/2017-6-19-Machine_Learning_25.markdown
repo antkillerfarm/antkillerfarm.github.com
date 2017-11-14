@@ -72,6 +72,30 @@ https://mp.weixin.qq.com/s/B6ZpJ0Yw9GBZ9_MyNwjlXQ
 
 构建强化学习系统，你需要先了解这些背景知识
 
+# K-摇臂赌博机
+
+![](/images/article/Multi-Armed_Bandit.jpg)
+
+k-armed Bandit（也叫Multi-Armed Bandit）是赌场里的一种赌具。它有K个摇臂，投币后摇动摇臂，会有一定的概率吐出硬币。每个摇臂的吐币概率和数量有所不同。（有的机器只有1个摇臂，但可通过按钮设置不同的方案。）赌徒的目标是通过一定的策略获得最多的奖励（硬币）。
+
+尽管在有的赌场中，每个摇臂的吐币概率和数量是已知的，但在本问题中，**吐币概率和数量都是未知的。**
+
+由于每次摇臂都是独立事件，因此k-armed Bandit问题的另一个约束是：**最大化单步奖励**，即不考虑未来的奖励。
+
+此外，k-armed Bandit亦不可能无限进行下去，其**尝试总数是一定的**（即投币数是一定的）。这也是该问题的一个隐含约束。
+
+这里显然有两个最简单的策略：
+
+**exploration-only**：将所有尝试机会平均分配给每个摇臂。这种策略可以很好的估计每个摇臂的奖励，然而却会失去很多选择最优摇臂的机会。
+
+**exploitation-only**：只按下目前最优的摇臂。
+
+参考：
+
+http://www.xfyun.cn/share/?p=2606
+
+Bandit算法与推荐系统
+
 # Q-learning
 
 Q-learning是强化学习中很重要的算法，也是最早被引入DL领域的强化学习算法，对它的研究催生了Deep Q-learning Networks。
@@ -204,48 +228,4 @@ b) 通过递归使用这三个步骤求出子问题的最优解；
 c) 使用这些最优解构造初始问题的最优解。
 
 子问题的求解是通过不断划分为更小的子问题实现的，直至我们可以在常数时间内求解。
-
-## 重复子问题
-
-![](/images/article/Fibonacci_dynamic_programming.png)
-
-重复子问题是指通过相同的子问题可以解决不同的较大问题。例如，在Fibonacci序列中，F3 = F1 + F2和F4 = F2 + F3都包含计算F2。由于计算F5需要计算F3和F4，一个比较笨的计算F5的方法可能会重复计算F2两次甚至两次以上。
-
-为避免重复计算，可将已经得到的子问题的解保存起来，当我们要解决相同的子问题时，重用即可。该方法即所谓的**缓存（memoization）**。
-
-动态规划通常采用以下两种方式中的一种：
-
-**自顶向下**：将问题划分为若干子问题，求解这些子问题并保存结果以免重复计算。该方法将递归和缓存结合在一起。
-
-**自下而上**：先行求解所有可能用到的子问题，然后用其构造更大问题的解。该方法在节省堆栈空间和减少函数调用数量上略有优势，但有时想找出给定问题的所有子问题并不那么直观。
-
-需要注意的是：动态规划更多的看作是一种解决问题的方法论，而非具体的数值算法，因此，很多不同领域的算法都可看做是动态规划算法的实例。参考文献中，就列出了不少这样的算法。显然，动态规划是一种**迭代（Iteration）算法**。
-
-由前文的描述可知，MDP正好具备overlapping subproblems和optimal substructure的特性，因此也可以通过DP求解。
-
-在继续下文之前，推荐一波资源：
-
->David Poole，加拿大不列颠哥伦比亚大学教授。加拿大AI协会终身成就奖（2013年）。   
->个人主页：   
->http://www.cs.ubc.ca/~poole/index.html
-
-David Poole的主页上有很多好东西：
-
-http://www.cs.ubc.ca/~poole/demos/
-
-该网页上有一些RL方面的用java applet做的可视化demo。由于年代比较久远，这些demo无法在目前的浏览器上运行。所以，我对其做了一些改造，使之能够使用。相关代码参见：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/RL
-
-David Poole还写了一本书《Artificial Intelligence: foundations of computational agents》，目前已经是第2版了。
-
-其中的代码资源参见：
-
-http://artint.info/AIPython/
-
-从该书所用编程语言的变迁，亦可感受到Poole教授不断学习的脚步。要知道Poole教授刚进入学术界的时代（1985年前后），就连Java也还没被发明出来呢。
-
-http://uhaweb.hartford.edu/compsci/ccli/samplep.htm
-
-Hartford大学的这个网站也有些不错的资料，偏重RL、机器人、ML for Game等领域。
 

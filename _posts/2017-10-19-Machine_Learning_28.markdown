@@ -174,6 +174,10 @@ https://mp.weixin.qq.com/s/KE_zk7e6cf5ah303ZTpuMw
 
 如何用Keras为序列预测问题开发复杂的编解码循环神经网络?
 
+https://mp.weixin.qq.com/s/dbZLsWV3pDz3NQPc2aJAUw
+
+用Keras开发字符级神经网络语言模型
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。

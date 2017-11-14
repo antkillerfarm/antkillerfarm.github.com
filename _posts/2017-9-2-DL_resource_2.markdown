@@ -6,64 +6,6 @@ category: resource
 
 # DL参考资源
 
-## 推荐系统
-
-https://zhuanlan.zhihu.com/p/26237106
-
-深度学习在推荐算法上的应用进展
-
-http://i.dataguru.cn/mportal.php?mod=view&aid=11463
-
-深度学习在推荐领域的应用
-
-https://mp.weixin.qq.com/s/hGvQvddD3i858XSK4z08Ug
-
-主要推荐系统算法总结及Youtube深度学习推荐算法实例概括
-
-https://mp.weixin.qq.com/s/yHtqWJUpCIvTStKW5TINaA
-
-Youtube短视频推荐系统变迁：从机器学习到深度学习
-
-https://mp.weixin.qq.com/s/WzSO_XobY6kesDm4sF-hBg
-
-深度学习之推荐篇
-
-https://mp.weixin.qq.com/s/LKjVfhyhL4GVx6l5WC6-CQ
-
-如何用深度学习实现用户行为预测与推荐
-
-https://mp.weixin.qq.com/s/UrMsMHAkqNHJEl5lhAvLtA
-
-腾讯提出并行贝叶斯在线深度学习框架PBODL：预测广告系统的点击率
-
-http://mp.weixin.qq.com/s/Jiis7j3W3D5GG_ZdxplY7Q
-
-淘宝搜索/推荐系统背后深度强化学习与自适应在线学习的实践之路
-
-https://mp.weixin.qq.com/s/847h4ITQMtUlZcurJ9Vlvg
-
-深度学习在美团点评推荐平台排序中的运用
-
-https://mp.weixin.qq.com/s/AICgNDyWASx_B8NzWcFTqA
-
-一文综述所有用于推荐系统的深度学习方法
-
-https://mp.weixin.qq.com/s/zSBpqhoyROh74UZEItBanA
-
-基于概率隐层模型的购物搭配推送：阿里巴巴提出新型用户偏好预测模型
-
-http://mp.weixin.qq.com/s/nmLNKscP1qxyv_aoSrwEEw
-
-基于大规模图计算的本地算法对展示广告的行为预测
-
-https://mp.weixin.qq.com/s/8hNkntUauCSeVqc2v0QUqA
-
-人工智能如何帮你找到好歌：探秘Spotify神奇的每周歌单
-
-https://zhuanlan.zhihu.com/p/30720579
-
-推荐中的序列化建模：Session-based neural recommendation
-
 ## AI与游戏
 
 https://zhuanlan.zhihu.com/p/22604627
@@ -288,6 +230,10 @@ https://mp.weixin.qq.com/s/fSSyOs4-NXbPTbDjpfJBNQ
 
 Google IPU：互联网巨头纷纷进军芯片行业是为何？
 
+https://mp.weixin.qq.com/s/S1y4NEx4_Mgwf68S2pexqA
+
+拿着锤子找钉子，数字芯片领导者比特大陆进军人工智能
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293
@@ -435,5 +381,31 @@ https://mp.weixin.qq.com/s/9ZQc3RqCCcWYDplZ4RU2oA
 https://mp.weixin.qq.com/s/LbyqAA_scfdDXDe_ESWEKg
 
 姚期智：呼之欲出的量子计算机，和它漫长的最后一英里
+
+## 工具
+
+https://mp.weixin.qq.com/s/TT4whft1Tj1pCEPbnMH1cA
+
+清华大学发布OpenNE：用于网络嵌入的开源工具包
+
+https://mp.weixin.qq.com/s/r01vfSKb4VpFXVyokb54Bg
+
+MIT开放图像标注工具LabelMe源代码：助力机器视觉的发展
+
+https://mp.weixin.qq.com/s/30dK7nGJOWIaa1j9QElrYA
+
+详解帝国理工集成工具TensorLayer：控制深度学习开发复杂度
+
+https://mp.weixin.qq.com/s/m_2LE2QN_8_a1hti6G0Cow
+
+Netflix开源稀疏数据专用神经网络库：Vectorflow
+
+https://mp.weixin.qq.com/s/bMfJ1Ez6bOBjHLquuZFnmQ
+
+Uber与斯坦福大学开源深度概率编程语言Pyro：基于PyTorch
+
+https://mp.weixin.qq.com/s/ImtSR6VwYalN6gTgjVJOsQ
+
+十五分钟完成Regex五天任务：FlashText，语料库数据快速清理利器
 
 

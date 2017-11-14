@@ -132,6 +132,10 @@ https://mp.weixin.qq.com/s/GFE2XYHZXPP0doQ5nd0JNQ
 
 当前深度神经网络模型压缩和加速方法速览
 
+https://mp.weixin.qq.com/s/Faej1LKqurtwEIreUVJ0cw
+
+普林斯顿新算法自动生成高性能神经网络，同时超高效压缩
+
 # 人脸识别
 
 ## Cascade CNN

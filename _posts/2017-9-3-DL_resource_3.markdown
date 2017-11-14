@@ -6,6 +6,64 @@ category: resource
 
 # DL参考资源
 
+## 推荐系统
+
+https://zhuanlan.zhihu.com/p/26237106
+
+深度学习在推荐算法上的应用进展
+
+http://i.dataguru.cn/mportal.php?mod=view&aid=11463
+
+深度学习在推荐领域的应用
+
+https://mp.weixin.qq.com/s/hGvQvddD3i858XSK4z08Ug
+
+主要推荐系统算法总结及Youtube深度学习推荐算法实例概括
+
+https://mp.weixin.qq.com/s/yHtqWJUpCIvTStKW5TINaA
+
+Youtube短视频推荐系统变迁：从机器学习到深度学习
+
+https://mp.weixin.qq.com/s/WzSO_XobY6kesDm4sF-hBg
+
+深度学习之推荐篇
+
+https://mp.weixin.qq.com/s/LKjVfhyhL4GVx6l5WC6-CQ
+
+如何用深度学习实现用户行为预测与推荐
+
+https://mp.weixin.qq.com/s/UrMsMHAkqNHJEl5lhAvLtA
+
+腾讯提出并行贝叶斯在线深度学习框架PBODL：预测广告系统的点击率
+
+http://mp.weixin.qq.com/s/Jiis7j3W3D5GG_ZdxplY7Q
+
+淘宝搜索/推荐系统背后深度强化学习与自适应在线学习的实践之路
+
+https://mp.weixin.qq.com/s/847h4ITQMtUlZcurJ9Vlvg
+
+深度学习在美团点评推荐平台排序中的运用
+
+https://mp.weixin.qq.com/s/AICgNDyWASx_B8NzWcFTqA
+
+一文综述所有用于推荐系统的深度学习方法
+
+https://mp.weixin.qq.com/s/zSBpqhoyROh74UZEItBanA
+
+基于概率隐层模型的购物搭配推送：阿里巴巴提出新型用户偏好预测模型
+
+http://mp.weixin.qq.com/s/nmLNKscP1qxyv_aoSrwEEw
+
+基于大规模图计算的本地算法对展示广告的行为预测
+
+https://mp.weixin.qq.com/s/8hNkntUauCSeVqc2v0QUqA
+
+人工智能如何帮你找到好歌：探秘Spotify神奇的每周歌单
+
+https://zhuanlan.zhihu.com/p/30720579
+
+推荐中的序列化建模：Session-based neural recommendation
+
 ## 面试
 
 https://www.zhihu.com/question/41233373
@@ -351,65 +409,4 @@ AI编曲震撼人心，RNN生成流行音乐
 https://mp.weixin.qq.com/s/calUA-Ddq-mq4uHrExtfBQ
 
 实习生通关秘籍：我在谷歌大脑开挂的一年
-
-https://mp.weixin.qq.com/s/YbdiEHb8ld1pp1ehgBzTOQ
-
-将未来信息作为正则项，Twin Networks加强RNN对长期依赖的建模能力
-
-https://mp.weixin.qq.com/s/fqpZ8EHgiNupXumvTMSecw
-
-北大团队研发“车脸”识别系统，不看车牌看外观特征实现精确识别
-
-https://mp.weixin.qq.com/s/ws1R-VPyJY6J18OttBDYog
-
-超少量数据训练神经网络：IEEE论文提出径向变换实现图像增强
-
-https://mp.weixin.qq.com/s/eyl0NMa1p_RmQIwnweuBgw
-
-10张图盘点计算机视觉、语音和文本理解里程碑
-
-https://mp.weixin.qq.com/s/3bAn-ev14lO9uxQzE0Tk0Q
-
-如何使用深度学习去除人物图像背景
-
-https://mp.weixin.qq.com/s/MnK2LTWR9qEKiiz3OMsSMQ
-
-深度学习漂亮的图像软分割一览
-
-https://mp.weixin.qq.com/s/ZV32xDgGTriIAUbHohc90Q
-
-4个学生，1个暑假，百度深度学习开源平台PaddlePaddle诞生了智能桃子分拣器
-
-https://mp.weixin.qq.com/s/0BZxFKjcwxKj7R66NRIWqQ
-
-UC Berkeley新研究：多视角图像3D模型重建技术
-
-https://mp.weixin.qq.com/s/ciqQMezcB-oM24X8eQqTNg
-
-花式玩耍Spatial Transformation Networks
-
-https://mp.weixin.qq.com/s/kbqTHIOzAj1aERl4tm-kVA
-
-2017上半年无监督特征学习研究成果汇总
-
-https://mp.weixin.qq.com/s/tZoD4RfkDDDBxTgqDJvI3g
-
-35个热门又实用的开源AI项目！
-
-https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
-
-终身机器学习: 一种持续学习的范式
-
-https://mp.weixin.qq.com/s/aCWAU2RXk9fTzfFqOyjqUw
-
-能自主学习的人工突触，为无监督学习开辟新的路径
-
-https://mp.weixin.qq.com/s/9kMz-eNRwC51Fi0-7BfKzA
-
-Active Learning: 一个降低深度学习时间，空间，经济成本的解决方案
-
-https://mp.weixin.qq.com/s/0IAdT2cP_OIGwwXmMaCFfw
-
-如何利用深度学习诊断心脏病？
-
 

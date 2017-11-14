@@ -186,6 +186,10 @@ https://www.zhihu.com/question/35116055
 
 orb-slam在众多SLAM方法中处于怎样的地位？
 
+https://mp.weixin.qq.com/s/Fc19GZgMP167fvqOcG0rbA
+
+英特尔中国研究院HERO机器人平台问世
+
 # ML参考资源
 
 http://kexue.fm/archives/4638/
@@ -275,5 +279,13 @@ https://mp.weixin.qq.com/s/bAhGcO57MzfGsF99NKBxbw
 https://mp.weixin.qq.com/s/FyeY2-kOz2vwALfKFRwisQ
 
 人工智能在饿了么的应用实践
+
+https://mp.weixin.qq.com/s/LN6ib-8b_SZHR9u_-OMwNg
+
+推荐系统眼中的你：内容画像与用户画像
+
+https://mp.weixin.qq.com/s/Rs9ri6Xs5R-yitrda8pJMg
+
+详解可视化利器t-SNE算法：数无形时少直觉
 
 

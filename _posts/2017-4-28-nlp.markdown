@@ -403,7 +403,11 @@ https://mp.weixin.qq.com/s/yR_wENRSbxvfrcYr9O9BuQ
 
 https://mp.weixin.qq.com/s/38ofY693bXwFWIMNqYx4-A
 
-常用的 Python 爬虫技巧总结！
+常用的Python爬虫技巧总结
+
+https://mp.weixin.qq.com/s/Hp6tEQujSgCnPwSKhAE72g
+
+关于Python爬虫，这里有一条高效的学习路径
 
 ## protege
 
