@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十六）——Probabilistic Robotics
+title:  机器学习（二十六）——动态规划, Probabilistic Robotics
 category: ML 
 ---
 

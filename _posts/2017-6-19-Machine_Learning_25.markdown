@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十五）——强化学习, Q-learning, 动态规划
+title:  机器学习（二十五）——强化学习, K-摇臂赌博机, Q-learning
 category: ML 
 ---
 
@@ -88,9 +88,31 @@ k-armed Bandit（也叫Multi-Armed Bandit）是赌场里的一种赌具。它有
 
 **exploration-only**：将所有尝试机会平均分配给每个摇臂。这种策略可以很好的估计每个摇臂的奖励，然而却会失去很多选择最优摇臂的机会。
 
-**exploitation-only**：只按下目前最优的摇臂。
+**exploitation-only**：只按下目前最优的摇臂。这种策略下有可能选不到最优的摇臂。
 
-参考：
+显然，欲奖励最大，需要在exploration和exploitation之间达成较好的折中。
+
+## $$\epsilon$$-贪心算法
+
+$$\epsilon$$-greedy基于概率对exploration和exploitation进行折中，即：**以$$\epsilon$$进行exploration，而以$$1-\epsilon$$进行exploitation。**
+
+若摇臂奖励的不确定性较大，即概率分布较宽时，需要较大的$$\epsilon$$值，反之则小。
+
+另外，开始时由各种信息较少，$$\epsilon$$需要设置的大一些，随着探索的深入，各摇臂的奖励基本弄清楚之后，$$\epsilon$$就可以小一些了。因此通常令$$\epsilon=1/\sqrt{t}$$。
+
+## Softmax算法
+
+Softmax算法和$$\epsilon$$-贪心算法类似，其公式为：
+
+$$P(k)=\frac{e^{\frac{Q(k)}{\tau}}}{\sum_{i=1}^{K}e^{\frac{Q(i)}{\tau}}}$$
+
+这实际上是一个Boltzmann分布的公式，其中$$\tau$$表示温度，$$\tau \to 0$$表示优先利用，$$\tau \to \infty$$表示优先探索。
+
+## 多步强化学习
+
+对于多步强化学习任务，虽然可以将其中的每一步看作一个k-armed Bandit问题，然而由于这种方法忽视了决策过程之间的联系，存在很多局限，因此不如MDP相关的算法。
+
+## 参考
 
 http://www.xfyun.cn/share/?p=2606
 

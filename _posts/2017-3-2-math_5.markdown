@@ -1,10 +1,42 @@
 ---
 layout: post
-title:  数学狂想曲（五）——概率分布（2）, 自相关&互相关&卷积
+title:  数学狂想曲（五）——概率分布（2）
 category: math 
 ---
 
-## 玻尔兹曼分布的推导（续）
+# 玻尔兹曼分布（续）
+
+## 相关名词辨析
+
+这里有三个非常容易混淆的名词需要解释。
+
+**Maxwell–Boltzmann statistics**是研究热平衡状态下无相互作用的物体粒子的能量均值分布的统计学分支。
+
+**Boltzmann distribution**表征一个包含各种能量状态的系统中粒子的概率分布。
+
+**Maxwell-Boltzmann distribution**表征粒子的能级和速度的分布。
+
+简而言之，Maxwell–Boltzmann statistics是基于特定假设的统计学分支。而后两者则是具体情况下的概率分布。
+
+与Maxwell–Boltzmann statistics相对应的概念是Bose–Einstein statistics和Fermi–Dirac statistics。后两者分别对应玻色子和费米子的热力学统计。
+
+参考：
+
+https://en.wikipedia.org/wiki/Maxwell–Boltzmann_statistics
+
+https://en.wikipedia.org/wiki/Boltzmann_distribution
+
+https://en.wikipedia.org/wiki/Maxwell–Boltzmann_distribution
+
+## 玻尔兹曼分布的推导
+
+Maxwell–Boltzmann statistics研究的对象是一个由N（N很大）个微观粒子组成的近独立体系，体系的总能量E等于各个粒子能量之和。通常微观粒子的状态和能量是量子化的（即所谓能级），每一能级上又具有若干个量子态。为此，可引入下列符号：
+
+| 名称 | 符号 |
+|:--:|:--:|
+| 单粒子状态编号 | $$1,\dots,n$$ |
+| 能级 | $$E_1,\dots,E_n$$ |
+| 量子态数 | $$g_1,\dots,g_n$$ |
 
 令$$m=g_1+\dots+g_n$$，$$p_s$$为任何一个确定的微观粒子处于第s个量子态上的概率。因此，相应的信息熵和概率分布的归一化条件为：
 
@@ -237,39 +269,5 @@ Kolmogorov–Smirnov test用于对样本是否属于某种分布进行假设检�
 >3.**Wolf Prize**。在Abel Prize创建之前，被誉为数学界的Nobel Prizes。
 
 >Nikolai Vasilyevich Smirnov，1900～1966，俄国数学家。莫斯科大学博士，斯塔克罗夫数学研究所研究员。
-
->Vladimir Andreevich Steklov，1864～1926，俄国数学家、物理学家。哈尔科夫大学博士，其导师是圣彼得堡学派第二代人物中，仅次于Andrey Markov的Aleksandr Lyapunov。哈尔科夫大学和圣彼得堡大学教授，1919年创建斯塔克罗夫数学研究所。
-
->斯塔克罗夫数学研究所是一家专职研究没有教学任务和科研任务的研究机构。Grigori Perelman在这里，曾有6年时间没有发表一篇论文。二十世纪俄罗斯绝大多数的数学发现都源自这里。
-
-![](/images/article/KS.png)
-
-上图的红线是某随机变量假设分布的CDF，而蓝线是该随机变量样本的累积分布曲线，即ECDF（Empirical Distribution Function）。
-
-显然若假设正确的话，两条曲线应该是基本重合的。反之，若两条曲线差异较大，则该假设检验不成立。这就是KS检验的基本原理。
-
-KS检验的统计量定义如下：
-
-$$D_n= \sup_x |F_n(x)-F(x)|$$
-
-其中$$\sup$$表示最小上界，
-
-$$F_n(x)={1 \over n}\sum_{i=1}^n I_{[-\infty,x]}(X_i)$$
-
-$$I_{[-\infty,x]}(X_i)=\begin{cases}
-1, & X_i \le x \\
-0, & \text{otherwise} \\
-\end{cases}$$
-
-KS检验更深入的解释，涉及到布朗运动和维纳过程，这里不再赘述。
-
-# 自相关&互相关&卷积
-
-![](/images/article/Comparison_convolution_correlation.svg)
-
-1.**自相关（Autocorrelation）**。这个最简单，就是平移之后，自己和自己比。显然当平移为0的时候，自相关值最大，因此这类操作通常用于信号的检测。信号接收端模拟发射端的信号序列，对实际接收到的信号进行相关操作，只有当两者的序列接近重合时，才会检测到信号峰值。
-
-2.**互相关（Cross-correlation）**。检测两个序列的相似度，显然两者越相似，互相关值越大。这在统计学方面用的比较多。
-
 
 

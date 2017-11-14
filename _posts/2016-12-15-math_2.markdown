@@ -24,9 +24,19 @@ $$F(s) =\int_0^\infty e^{-st} f(t)\mathrm{d}t,s = \sigma + i \omega$$
 
 ![](/images/article/laplace_3.jpg)
 
+由复数的指数表示$$z=re^{i\theta}$$可知，复频域可以看作是普通频域（r）+相位谱（$$\theta$$）。
+
+此外，傅立叶变换和拉普拉斯变换之所以在计算上比较方便，还在于**指数函数正好是线性微分方程的特征函数**。
+
 参考：
 
 https://www.zhihu.com/question/22085329
+
+傅立叶变换、拉普拉斯变换、Z变换的联系？为什么要进行这些变换。研究的都是什么？
+
+https://www.zhihu.com/question/23280174
+
+矩阵，数列，微分方程的特征值是什么关系？
 
 # 随机变量的特征函数
 
@@ -63,6 +73,8 @@ http://baike.baidu.com/view/45656.htm
 双曲函数的性质，参见：
 
 https://zhuanlan.zhihu.com/p/20042215
+
+可能是最好的讲解双曲函数的文章
 
 ![](/images/article/trigonometric.jpg)
 
@@ -101,6 +113,8 @@ $$B(m,n) = \frac{\Gamma(m)\Gamma(n)}{\Gamma(m+n)}$$
 参考：
 
 http://blog.csdn.net/u010945683/article/details/48950063
+
+贝塔、伽马分布
 
 ## 排列组合
 
@@ -178,7 +192,11 @@ $$\Pr(Y=k) = (1 - p)^k\,p\,$$
 
 https://www.zhihu.com/question/26441147
 
+泊松分布的现实意义是什么，为什么现实生活多数服从于泊松分布？
+
 http://www.ruanyifeng.com/blog/2015/06/poisson-distribution.html
+
+泊松分布和指数分布：10分钟教程
 
 ## 贝塔分布和共轭先验分布
 
@@ -252,29 +270,5 @@ $$f(x_1,\ldots,x_k;n,p_1,\ldots,p_k)=\frac{n!}{x_1!\cdots x_k!} p_1^{x_1} \cdots
 多项分布对应的共轭先验分布是狄利克雷分布（Dirichlet distribution）：
 
 $$f \left(x_1,\cdots, x_{K}; \alpha_1,\cdots, \alpha_K \right) = \frac{1}{\mathrm{B}(\boldsymbol\alpha)} \prod_{i=1}^K x_i^{\alpha_i - 1}\tag{1}$$
-
-这里引入向量表示的贝塔函数：
-
-$$\mathrm{B}(\boldsymbol\alpha) = \frac{\prod_{i=1}^K \Gamma(\alpha_i)}{\Gamma\left(\sum_{i=1}^K \alpha_i\right)},\qquad\boldsymbol{\alpha}=(\alpha_1,\cdots,\alpha_K)$$
-
-狄利克雷分布的密度函数如下所示(3维)：
-
-![](/images/article/dirichlet-distribution.png)
-
-上面的图，实际上是个4维图，只不过用一个平面上的三角形代表实验结果的3维而已。这也是一种高维数据可视化的方法。
-
-参考：
-
-http://cos.name/2013/01/lda-math-beta-dirichlet/
-
-http://www.cs.cmu.edu/~epxing/Class/10701-08s/recitation/dirichlet.pdf
-
-## 各种概率分布的关系
-
-![](/images/article/distribution.jpg)
-
-参考：
-
-http://www.math.wm.edu/~leemis/2008amstat.pdf
 
 

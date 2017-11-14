@@ -1,10 +1,45 @@
 ---
 layout: post
-title:  数学狂想曲（六）——闵可夫斯基距离, 马氏距离, Gabriel's Horn, 函数连续性
+title:  数学狂想曲（六）——自相关&互相关&卷积, 闵可夫斯基距离, 马氏距离, Gabriel's Horn, 函数连续性
 category: math 
 ---
 
-# 自相关&互相关&卷积（续）
+# 概率分布（2）
+
+## KS检验（续）
+
+>Vladimir Andreevich Steklov，1864～1926，俄国数学家、物理学家。哈尔科夫大学博士，其导师是圣彼得堡学派第二代人物中，仅次于Andrey Markov的Aleksandr Lyapunov。哈尔科夫大学和圣彼得堡大学教授，1919年创建斯塔克罗夫数学研究所。
+
+>斯塔克罗夫数学研究所是一家专职研究没有教学任务和科研任务的研究机构。Grigori Perelman在这里，曾有6年时间没有发表一篇论文。二十世纪俄罗斯绝大多数的数学发现都源自这里。
+
+![](/images/article/KS.png)
+
+上图的红线是某随机变量假设分布的CDF，而蓝线是该随机变量样本的累积分布曲线，即ECDF（Empirical Distribution Function）。
+
+显然若假设正确的话，两条曲线应该是基本重合的。反之，若两条曲线差异较大，则该假设检验不成立。这就是KS检验的基本原理。
+
+KS检验的统计量定义如下：
+
+$$D_n= \sup_x |F_n(x)-F(x)|$$
+
+其中$$\sup$$表示最小上界，
+
+$$F_n(x)={1 \over n}\sum_{i=1}^n I_{[-\infty,x]}(X_i)$$
+
+$$I_{[-\infty,x]}(X_i)=\begin{cases}
+1, & X_i \le x \\
+0, & \text{otherwise} \\
+\end{cases}$$
+
+KS检验更深入的解释，涉及到布朗运动和维纳过程，这里不再赘述。
+
+# 自相关&互相关&卷积
+
+![](/images/article/Comparison_convolution_correlation.svg)
+
+1.**自相关（Autocorrelation）**。这个最简单，就是平移之后，自己和自己比。显然当平移为0的时候，自相关值最大，因此这类操作通常用于信号的检测。信号接收端模拟发射端的信号序列，对实际接收到的信号进行相关操作，只有当两者的序列接近重合时，才会检测到信号峰值。
+
+2.**互相关（Cross-correlation）**。检测两个序列的相似度，显然两者越相似，互相关值越大。这在统计学方面用的比较多。
 
 3.**卷积（Convolution）**。卷积主要用于线性时不变系统的信号处理。相比于互相关操作，卷积有个旋转180度的操作，这里解释一下它的物理意义。
 
@@ -156,28 +191,4 @@ $$\forall x_1,x_2 \in I ;|f(x_1) - f(x_2)| \le K |x_1 - x_2|, K>0\text{ is const
 Lipschitz连续的直观图示如上所示。**该曲线上的所有点的切线斜率的绝对值$$\le K$$。**
 
 易知，Lipschitz continuity比Absolute continuity更严格。
-
-## 连续可微
-
-这个的定义比较简单：函数的导数是连续的。直观来说就是：**函数曲线光滑，没有尖。**
-
-由“闭区间的连续函数必有界”可知，Continuously differentiable一定是Lipschitz continuity的。
-
-综上：
-
-$$\text{Continuously differentiable} \subseteq \text{Lipschitz continuous} \subseteq \text{Absolute continuity} \subseteq \text{uniformly continuous} = \text{continuous}$$
-
-需要注意，这些结论只在闭区间成立。比如$$f(x)=x^2$$是连续可微的，但却不是一致连续的。因此又有Local Uniform continuity之类的说法。
-
-## Weierstrass Function
-
->Karl Theodor Wilhelm Weierstrass，1815～1897，德国数学家，被誉为“现代分析之父”。   
->青年时代，Weierstrass被父亲送到波恩大学学习法律和商业，然而他对此根本不感兴趣，精力都花到数学上了，这直接导致离开大学时，没有拿到学位。   
->此后经过努力，他获得了一份中学数学教师的职位。他30～40岁的时光，就是在两所不知名的中学度过的。   
->所幸，他的努力没有白费。1854年，他获得格尼斯堡大学荣誉博士学位。此后先后任教于柏林工业大学和柏林洪堡大学。   
->他的博士学生知名的有：集合论创始人Georg Cantor，世界历史上第一位数学女博士Sofia Kovalevskaya和Hermann Schwarz（没错就是提出Cauchy–Schwarz inequality的那位）。
-
-事实上，本文中使用的$$\varepsilon - \delta$$定义，就是Weierstrass的成果。Weierstrass首次采用数学的方式定义极限，取代了之前Newton的物理或几何式的极限定义。
-
-物理或几何式的极限定义有着直观的优势，但不够严格，Weierstrass Function就是最好的反例。
 
