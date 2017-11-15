@@ -244,4 +244,9 @@ https://mp.weixin.qq.com/s/5H3wk93QoxHteR_HD2hWiA
 
 DeepMind提出架构搜索新方法：使用分层表示，时间短精度高
 
+https://mp.weixin.qq.com/s/tk7ghSXi2jz8SYbBeWR8jg
+
+神经网络模糊测试：将DNN应用于软件安全测试
+
+
 
