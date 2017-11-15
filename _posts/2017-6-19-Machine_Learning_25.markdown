@@ -207,9 +207,11 @@ $$<\mathcal{S},\mathcal{P},\mathcal{R},\gamma>$$
 
 比如上图中，在状态$$S_0$$，执行$$a_0$$，只有0.5的机会，会到达$$S_2$$。这也就是之前提到过的MDP。
 
-MDP中的Bellman equation可改为如下形式：
+标准MDP中的Bellman equation可改为如下形式：
 
 $$v = \mathcal{R} + \gamma \mathcal{P}v$$
+
+其中,$$\mathcal{P},\mathcal{R}$$均为已知。
 
 这里的Bellman equation是线性方程，它的直接解法如下：
 
@@ -218,6 +220,8 @@ $$(I-\gamma \mathcal{P})v = \mathcal{R}$$
 $$v = (I-\gamma \mathcal{P})^{-1}\mathcal{R}$$
 
 然而这个方法的复杂度是$$O(n^3)$$（n是状态的个数），这对于大的MDP来说，并不好用。这种情况下，常用的解法有：Dynamic programming（动态规划）、Monte-Carlo evaluation和Temporal-Difference learning。
+
+由于MDP对于RL任务进行了Markov假设，这属于一种建模行为，因此它也被归为一种model-based learning的算法。
 
 MDP的扩展主要包括：
 

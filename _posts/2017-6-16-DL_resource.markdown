@@ -456,4 +456,8 @@ https://mp.weixin.qq.com/s/Chk-QAPhIXlIeguT4hS6kg
 
 对比ResNet：超深层网络DiracNet的PyTorch实现
 
+https://mp.weixin.qq.com/s/hbvM64QPT1mKQZey6Kauww
+
+图像算法在电商大促中的应用浅析
+
 

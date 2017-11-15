@@ -142,6 +142,10 @@ https://mp.weixin.qq.com/s/pZko9gM5sbFhMl8P8TCFww
 
 机器学习损失函数、L1-L2正则化的前世今生
 
+https://mp.weixin.qq.com/s/pNG8u8V7zp6fLFF9TomEug
+
+史上最全面的正则化技术总结与分析
+
 # 协同过滤的ALS算法
 
 ## 协同过滤概述

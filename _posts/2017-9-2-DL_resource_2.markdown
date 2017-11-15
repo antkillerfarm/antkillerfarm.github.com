@@ -408,4 +408,8 @@ https://mp.weixin.qq.com/s/ImtSR6VwYalN6gTgjVJOsQ
 
 十五分钟完成Regex五天任务：FlashText，语料库数据快速清理利器
 
+https://mp.weixin.qq.com/s/dsxyQLHcOsNIlNAIf8FQfw
+
+Facebook开源相似性搜索类库Faiss，超越已知最快算法8.5倍
+
 

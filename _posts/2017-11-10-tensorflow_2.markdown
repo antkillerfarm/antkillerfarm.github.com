@@ -365,5 +365,7 @@ https://mp.weixin.qq.com/s/X7ISLRMy5cddpmO5mev4MA
 
 自创数据集，使用TensorFlow预测股票入门
 
+https://mp.weixin.qq.com/s/65HiEwCyzeA_d9flPBcpLQ
 
+谷歌正式发布TensorFlowLite，半监督跨平台快速训练ML模型
 

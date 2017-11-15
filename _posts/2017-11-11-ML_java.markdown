@@ -232,5 +232,16 @@ https://mp.weixin.qq.com/s/eyl0NMa1p_RmQIwnweuBgw
 
 10张图盘点计算机视觉、语音和文本理解里程碑
 
+https://mp.weixin.qq.com/s/IMx9lcMVAyB9hy_77DaJ3Q
+
+孙剑：计算力增加10000倍，算法如何设计
+
+https://mp.weixin.qq.com/s/-b8FuEQlpEb5G0L0QAxVEA
+
+如何使用深度学习为照片自动生成文本描述
+
+https://mp.weixin.qq.com/s/5H3wk93QoxHteR_HD2hWiA
+
+DeepMind提出架构搜索新方法：使用分层表示，时间短精度高
 
 

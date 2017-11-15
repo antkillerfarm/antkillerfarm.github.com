@@ -178,6 +178,10 @@ https://mp.weixin.qq.com/s/dbZLsWV3pDz3NQPc2aJAUw
 
 用Keras开发字符级神经网络语言模型
 
+https://mp.weixin.qq.com/s/J0pBoNpzj-GYjI-9qefkRg
+
+7步掌握基于Keras的深度学习
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。
