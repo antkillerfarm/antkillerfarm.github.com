@@ -460,4 +460,9 @@ https://mp.weixin.qq.com/s/hbvM64QPT1mKQZey6Kauww
 
 图像算法在电商大促中的应用浅析
 
+https://mp.weixin.qq.com/s/KRuEuAOXU2fpSNyOJW4bpA
+
+Yoshua Bengio实验室MILA开放面向初学者的PyTorch教程
+
+
 

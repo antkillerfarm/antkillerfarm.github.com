@@ -312,3 +312,7 @@ https://mp.weixin.qq.com/s/q7BI-YyhtmNzUfBMTKVdqQ
 
 Hitting time analysis of SGLD！
 
+https://mp.weixin.qq.com/s/vt7BEHbwJrAzlL2Pc-6QFg
+
+掌握机器学习数学基础之优化
+

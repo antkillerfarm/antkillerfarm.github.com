@@ -248,6 +248,10 @@ https://www.leiphone.com/news/201707/mFuwXGvZBhoVQD5S.html
 
 一秒分辨出杨臣刚、王大治和孙楠，这个黑产居然用AI来"打码"
 
+https://mp.weixin.qq.com/s/PF7_kSnwngnJ1jeh7ebyww
+
+手把手教你用1行代码实现人脸识别
+
 # 手势识别
 
 https://zhuanlan.zhihu.com/p/26630215

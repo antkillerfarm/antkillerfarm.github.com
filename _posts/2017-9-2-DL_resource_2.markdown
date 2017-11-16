@@ -76,6 +76,10 @@ https://mp.weixin.qq.com/s/mmMrGy3ggwVid_NxfpEA7Q
 
 冷扑大师发明人：用于策略推理的超人AI
 
+https://mp.weixin.qq.com/s/zExzGJ-QMldHIi71jKnq_Q
+
+CMU“冷扑大师”不完美信息博弈研究获奖
+
 https://mp.weixin.qq.com/s/x0G-LNCano7qjGdpj-fpCQ
 
 2017年度星际争霸AI竞赛结果出炉
@@ -411,5 +415,10 @@ https://mp.weixin.qq.com/s/ImtSR6VwYalN6gTgjVJOsQ
 https://mp.weixin.qq.com/s/dsxyQLHcOsNIlNAIf8FQfw
 
 Facebook开源相似性搜索类库Faiss，超越已知最快算法8.5倍
+
+https://mp.weixin.qq.com/s/3r8c63BOiiYfts9KLkXovw
+
+谷歌发布自然语言框架语义解析器SLING
+
 
 

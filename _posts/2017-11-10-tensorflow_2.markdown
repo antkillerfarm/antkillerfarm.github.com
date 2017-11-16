@@ -141,6 +141,10 @@ https://mp.weixin.qq.com/s/68vaQRqUo8u09iheKzFVEw
 
 玩转TensorFlow深度学习
 
+https://mp.weixin.qq.com/s/7er3wNV_IhxhFDOIwNMpww
+
+深度强化学习入门：用TensorFlow构建你的第一个游戏AI
+
 https://mp.weixin.qq.com/s/TZMOO_LFCxk297lKNQfvGQ
 
 TensorFlow从基础到实战：一步步教你创建交通标志分类神经网络

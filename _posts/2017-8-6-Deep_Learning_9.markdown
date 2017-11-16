@@ -190,7 +190,11 @@ https://mp.weixin.qq.com/s/ouLWl623r_YaZdIdpqSWcw
 
 https://mp.weixin.qq.com/s/jG7r7THhVAnJTYgDeWX2Eg
 
-百度提出使用GAN构建语音识别新框架 
+百度提出使用GAN构建语音识别新框架
+
+https://mp.weixin.qq.com/s/PkZ069S8ysY_JCQx1nzfGg
+
+NVIDIA新作解读：用GAN生成前所未有的高清图像（附PyTorch复现）
 
 # fine-tuning
 
