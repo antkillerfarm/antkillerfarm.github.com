@@ -248,5 +248,13 @@ https://mp.weixin.qq.com/s/tk7ghSXi2jz8SYbBeWR8jg
 
 神经网络模糊测试：将DNN应用于软件安全测试
 
+https://mp.weixin.qq.com/s/0E4VpN9z2sNvsGCvOI5RVA
+
+稀疏&集成的卷积神经网络学习
+
+https://mp.weixin.qq.com/s/aBDx_602GZXA36awEyjb-A
+
+从深度学习研究论文中自动生成可执行源代码
+
 
 

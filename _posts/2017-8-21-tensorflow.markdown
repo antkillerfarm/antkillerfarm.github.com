@@ -36,6 +36,10 @@ TensorFlow中文社区：
 
 http://www.tensorfly.cn/
 
+API官方中文版：
+
+http://tensorflow.google.cn/
+
 另一个API中文版：
 
 https://www.w3cschool.cn/tensorflow_python/
@@ -373,15 +377,5 @@ TFRecord的使用
 https://zhuanlan.zhihu.com/p/27481108
 
 TensorFlow直接读取图片和读写TFRecords速度对比
-
-## 多核(multicore)，多线程(multi-thread)
-
-在Tensorflow程序中，我们会经常看到”with tf.device("/cpu:0"): “ 这个语句。单独使用这个语句，而不做其他限制，实际上默认tensorflow程序占用所有可以使用的内存资源和CPU核。
-
-参考：
-
-http://deepnlp.org/blog/tensorflow-parallelism/
-
-Tensorflow并行：多核(multicore)，多线程(multi-thread)
 
 

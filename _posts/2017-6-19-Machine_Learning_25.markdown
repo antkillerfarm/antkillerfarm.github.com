@@ -100,6 +100,10 @@ $$\epsilon$$-greedy基于概率对exploration和exploitation进行折中，即�
 
 另外，开始时由各种信息较少，$$\epsilon$$需要设置的大一些，随着探索的深入，各摇臂的奖励基本弄清楚之后，$$\epsilon$$就可以小一些了。因此通常令$$\epsilon=1/\sqrt{t}$$。
 
+当$$\epsilon=0$$时，该算法也被称为greedy算法，也就是之前提到的exploitation-only策略。
+
+必须指出的是，k-armed Bandit只是真实问题的一个极度简化模型：它只有action和reward，没有input或sequentiality，也没有state。
+
 ## Softmax算法
 
 Softmax算法和$$\epsilon$$-贪心算法类似，其公式为：
@@ -107,6 +111,32 @@ Softmax算法和$$\epsilon$$-贪心算法类似，其公式为：
 $$P(k)=\frac{e^{\frac{Q(k)}{\tau}}}{\sum_{i=1}^{K}e^{\frac{Q(i)}{\tau}}}$$
 
 这实际上是一个Boltzmann分布的公式，其中$$\tau$$表示温度，$$\tau \to 0$$表示优先利用，$$\tau \to \infty$$表示优先探索。
+
+## 求均值的小技巧
+
+在k-armed Bandit问题中，一般用reward的均值来近似它的数学期望值。由于action是个序列，因此相应的算法一般是个不断迭代的过程，或者也可以说是一个增量（incremental）过程。
+
+在增量过程中，保存所有的reward值来计算均值显然是个笨办法。这里常用的办法是：
+
+$$Q_{n+1}=Q_n+\frac{1}{n}[R_n-Q_n]$$
+
+不光reward值可以这样更新，其他均值也可采用这个方法：
+
+$$NewEstimate \leftarrow OldEstimate + StepSize [Target - OldEstimate]$$
+
+## 非平稳问题
+
+在之前的假设中，我们认为每个摇臂的吐币概率和数量是不随时间变化的，这样的问题被称为Stationary Problem。
+
+如果每个摇臂的吐币概率和数量随时间**缓慢变化**的话，则称之为Non-stationary Problem。
+
+>注：快速变化的系统，不光RL无能，其他方法估计也没什么好效果。所以系统保持一定的惯性，对于研究问题是很重要的。
+
+这时一般采用如下公式滤波：
+
+$$Q_{n+1}=Q_n+\alpha[R_n-Q_n]$$
+
+详细内容参见《数学狂想曲（四）》的“软件滤波算法”一节。
 
 ## 多步强化学习
 
@@ -232,26 +262,3 @@ b) Infinite and continuous MDP
 c) Undiscounted, average reward MDP
 
 扩展MDP的Bellman equation都不是线性方程，没有解析解，只有迭代解。相关解法主要使用了概念图模型，这里不再详述。
-
-# 动态规划
-
-Dynamic programming(DP)用于解决那些可分解为**重复子问题（overlapping subproblems）**并具有**最优子结构（optimal substructure）**的问题。这里的programming和编程并无任何关系。
-
-上世纪40年代，Richard Bellman最早使用动态规划这一概念表述通过遍历寻找最优决策解问题的求解过程。1953年，Richard Bellman将动态规划赋予现代意义，该领域被IEEE纳入系统分析和工程中。
-
-## 最优子结构
-
-最优子结构即可用来寻找整个问题最优解的子问题的最优解。举例来说，寻找图上某顶点到终点的最短路径，可先计算该顶点所有相邻顶点至终点的最短路径，然后以此来选择最佳整体路径，如下图所示：
-
-![](/images/article/Shortest_path_optimal_substructure.png)
-
-一般而言，最优子结构通过如下三个步骤解决问题：
-
-a) 将问题分解成较小的子问题；
-
-b) 通过递归使用这三个步骤求出子问题的最优解；
-
-c) 使用这些最优解构造初始问题的最优解。
-
-子问题的求解是通过不断划分为更小的子问题实现的，直至我们可以在常数时间内求解。
-

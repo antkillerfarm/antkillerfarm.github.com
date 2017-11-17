@@ -6,16 +6,6 @@ category: ML
 
 ## XGBoost（续）
 
-XGBoost的步骤：
-
-I. 对loss function进行二阶Taylor Expansion，展开以后的形式里，当前待学习的Tree是变量，需要进行优化求解。
-
-II. Tree的优化过程，包括两个环节：
-
-I). 枚举每个叶结点上的特征潜在的分裂点
-
-II). 对每个潜在的分裂点，计算如果以这个分裂点对叶结点进行分割以后，分割前和分割后的loss function的变化情况。
-
 因为Loss Function满足累积性(对MLE取log的好处)，并且每个叶结点对应的weight的求取是独立于其他叶结点的（只跟落在这个叶结点上的样本有关），所以，不同叶结点上的loss function满足单调累加性，只要保证每个叶结点上的样本累积loss function最小化，整体样本集的loss function也就最小化了。
 
 **可见，XGBoost算法之所以能够并行，其要害在于其中枚举分裂点的计算，是能够分布式并行计算的。**
@@ -119,7 +109,11 @@ https://mp.weixin.qq.com/s/pn_qn6uRz2-9DmAK4sp35g
 
 https://mp.weixin.qq.com/s/xzZvIX0QaCPNSyGfHT3beQ
 
-史上最详细的XGBoost实战（下） 
+史上最详细的XGBoost实战（下）
+
+http://blog.csdn.net/xwd18280820053/article/details/68927422
+
+关于树的几个ensemble模型的比较（GBDT、xgBoost、lightGBM、RF）
 
 # 关联规则挖掘
 

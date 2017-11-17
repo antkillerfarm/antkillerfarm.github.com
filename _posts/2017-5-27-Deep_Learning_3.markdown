@@ -270,6 +270,12 @@ One-hot Representation的缺点在于：
 
 2.一个词库的大小是$$10^5$$以上的量级。维度过高，会妨碍神经网络学习到稀疏特征。
 
+参考：
+
+https://mp.weixin.qq.com/s?__biz=MzI4MzM2NTU0Mg==&mid=2247483698&idx=1&sn=cf185232e43b4523ab9b0bc0ce425ed4
+
+One-Hot编码与哑变量
+
 ## Word Embedding
 
 针对One-hot Representation的不足，Bengio提出了Distributed Representation，也称为Word Embedding。

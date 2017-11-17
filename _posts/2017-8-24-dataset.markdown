@@ -346,8 +346,6 @@ https://mp.weixin.qq.com/s/EmAhBjZnLns_25gR-aVgwg
 
 MillWheel: Google是如何在事件流处理上做到exactly one semantic的
 
-https://mp.weixin.qq.com/s/XT0fszONzRkAo3biVwS_QQ
+https://mp.weixin.qq.com/s/F7WTNeC3OUr76sZARtqRjw
 
-大规模中文概念图谱CN-Probase正式发布
-
-
+分布式架构系统生成全局唯一序列号的一个思路

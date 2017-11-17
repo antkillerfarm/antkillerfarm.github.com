@@ -212,5 +212,8 @@ https://mp.weixin.qq.com/s/bNB7EFj1QgSNb9as1YfgJw
 
 Reddit热门话题：你是否也对NLP的现状感到失望？
 
+https://mp.weixin.qq.com/s/uVoLET8LTnC_z0uJ8r0bRA
+
+对话系统综述：新进展新前沿
 
 

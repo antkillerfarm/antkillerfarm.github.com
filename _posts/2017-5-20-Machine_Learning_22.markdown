@@ -316,3 +316,8 @@ https://mp.weixin.qq.com/s/vt7BEHbwJrAzlL2Pc-6QFg
 
 掌握机器学习数学基础之优化
 
+https://mp.weixin.qq.com/s/o10Fp2VCwoLqgzirbGL9LQ
+
+如何估算深度神经网络的最优学习率
+
+

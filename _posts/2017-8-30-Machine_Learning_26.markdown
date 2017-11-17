@@ -4,7 +4,27 @@ title:  机器学习（二十六）——动态规划, Probabilistic Robotics
 category: ML 
 ---
 
-# 动态规划（续）
+# 动态规划
+
+Dynamic programming(DP)用于解决那些可分解为**重复子问题（overlapping subproblems）**并具有**最优子结构（optimal substructure）**的问题。这里的programming和编程并无任何关系。
+
+上世纪40年代，Richard Bellman最早使用动态规划这一概念表述通过遍历寻找最优决策解问题的求解过程。1953年，Richard Bellman将动态规划赋予现代意义，该领域被IEEE纳入系统分析和工程中。
+
+## 最优子结构
+
+最优子结构即可用来寻找整个问题最优解的子问题的最优解。举例来说，寻找图上某顶点到终点的最短路径，可先计算该顶点所有相邻顶点至终点的最短路径，然后以此来选择最佳整体路径，如下图所示：
+
+![](/images/article/Shortest_path_optimal_substructure.png)
+
+一般而言，最优子结构通过如下三个步骤解决问题：
+
+a) 将问题分解成较小的子问题；
+
+b) 通过递归使用这三个步骤求出子问题的最优解；
+
+c) 使用这些最优解构造初始问题的最优解。
+
+子问题的求解是通过不断划分为更小的子问题实现的，直至我们可以在常数时间内求解。
 
 ## 重复子问题
 
