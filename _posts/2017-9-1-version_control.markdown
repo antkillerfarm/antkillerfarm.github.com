@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  版本管理工具的前世今生, NLP（二）, NLP参考资源（二）
+title:  版本管理工具的前世今生, NLP参考资源（二）
 category: resource 
 ---
 
@@ -45,30 +45,6 @@ SVN是这一代的集大成者，使用简单的同时，仍保有相当强度�
 目前较为主流的Bazaar、Git和Mercurial都出现在2005年，这并不是偶然的。实际上都是BitKeeper和开源社区之间战争的产物。
 
 后Git时代的工具，如Fossil和Veracity，相比Git来说，对权限、BUG跟踪之类的功能做了进一步的扩展。
-
-# NLP
-
-## 自然语言理解
-
-Natural language understanding(NLU)属于NLP的一个分支，属于人工智能的一个部分，用来解决机器理解人类语言的问题，属于人工智能的核心难题。
-
-![](/images/article/domain_slot.png)
-
-上图是语义理解中，最有实用价值的框架语义表示（frame semantics representation）的原理简图。
-
-参考：
-
-http://www.shuang0420.com/2017/04/27/NLP%E7%AC%94%E8%AE%B0%20-%20NLU%E4%B9%8B%E6%84%8F%E5%9B%BE%E5%88%86%E7%B1%BB/
-
-NLU之意图分类
-
-## 论文
-
-《Distant Supervision for relation extraction without labeled data》
-
-《Using Recurrent Neural Networks for Slot Filling in Spoken Language Understanding》
-
-《Convolutional Neural Networks for Sentence Classification》：TextCNN的开山之作
 
 # NLP参考资源
 
@@ -215,5 +191,10 @@ Reddit热门话题：你是否也对NLP的现状感到失望？
 https://mp.weixin.qq.com/s/uVoLET8LTnC_z0uJ8r0bRA
 
 对话系统综述：新进展新前沿
+
+https://mp.weixin.qq.com/s/2cbzD1UFW66-3zwsZk9Bxg
+
+用于文本的最牛神经网络架构是什么？
+
 
 

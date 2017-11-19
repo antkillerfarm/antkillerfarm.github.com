@@ -1,222 +1,207 @@
 ---
 layout: post
-title:  机器学习（二十八）——机器学习语录, Keras, LightGBM
+title:  机器学习（二十八）——概率图模型, 机器学习的算法体系&相关术语表
 category: ML 
 ---
 
-# 机器学习语录
+# 概率图模型
 
-这里收录一些网上的只言片语式的心得，以区别于一般的教程。
+## 资料
 
->首先要考虑你的数据维度是线性相关的还是非线性相关的，数据是稀疏的还是稠密的，正例反例比例是多少，数据量是否充足。数据是否具有可分类性。是否需要降维。是否有噪音，是否有异常点等，然后去选择分类策略。通常包括数据采集，预处理，分类训练，预测，后处理等过程。
+probabilistic graphical model（PGM）最早由Judea Pearl发明。
 
-# 角度值的特征化
+这方面比较重要的文章和书籍有：
 
-角度值是数据分析中常见的值，然而它不是线性的，比如0度和359度之间只相差1度，然而数值上却差了359度，因此无法将角度值直接代入线性回归等模型。因为后者的loss函数是用线性的欧氏距离定义的，角度显然不满足要求。
+http://www.cis.upenn.edu/~mkearns/papers/barbados/jordan-tut.pdf
 
-既然角度在一维上不是线性的，那么二维呢？没错，可以采用复数坐标(x,y)来表示角度，这样角度就是线性的了。
+Michael Irwin Jordan著。
 
-# CRF
+《Probabilistic Graphical Models: Principles and Techniques》，Daphne Koller，Nir Friedman著（2009年）。
 
-条件随机场(Conditional Random Field)由Lafferty等人于2001年提出，结合了最大熵模型和隐马尔可夫模型的特点，是一种无向图模型，近年来在分词、词性标注和命名实体识别等序列标注任务中取得了很好的效果。
+>注：Judea Pearl，1936年生，以色列-美国计算机科学家，UCLA教授。2011年获得图灵奖。
 
-https://mp.weixin.qq.com/s/heYpeVLrZBRjXtMQou2BAA
+>Michael Irwin Jordan，1956年生，美国计算机科学家。UCSD博士，先后执教于MIT和UCB。吴恩达的导师。
 
-如何轻松愉快的理解条件随机场（CRF）？
+>Daphne Koller，女，1968年生，以色列-美国计算机科学家。斯坦福大学博士及教授。和吴恩达共同创立在线教育平台Coursera。
 
-http://www.chokkan.org/software/crfsuite/
+>Nir Friedman，1967年生，以色列计算机科学家。斯坦福大学博士，耶路撒冷希伯来大学教授。
 
-CRFsuite: A fast implementation of Conditional Random Fields (CRFs)
+http://www.cs.cmu.edu/~epxing/Class/10708-14/lectures/
 
-https://github.com/scrapinghub/python-crfsuite
+CMU的邢波（Eric Xing）所开的概率图模型课程。
 
-A python binding for crfsuite
+## 概述
 
-http://taku910.github.io/crfpp/
+概率图模型的三要素：Graph：$$\mathcal{G}$$、Model：$$\mathcal{M}$$和Data：$$\mathcal{D}\equiv\{X^{(i)}_1,\dots,X^{(i)}_m\}^N_{i=1}$$。
 
-CRF++: Yet Another CRF toolkit
+它要解决的三大问题：
 
-# 异常点检测
+1.**表示**。如何获取或定义真实世界的不确定度？如何对领域知识/假设/约束编码？
 
-http://chuansong.me/n/377440751130
+2.**推断**。根据模型/数据，推断答案。
 
-异常点检测算法（一）
+$$\text{e.g.}:P(x_i|\mathcal{D})$$
 
-http://jiangshuxia.9.blog.163.com/blog/static/3487586020083662621887/
+3.**学习**。根据数据确定哪个模型是正确的。
 
-异常(Outlier)检测算法综述
+$$\text{e.g.}:\mathcal{M}=\arg\max_{\mathcal{M}\in M}F(\mathcal{D};\mathcal{M})$$
 
-http://www.cnblogs.com/fengfenggirl/p/iForest.html
+![](/images/article/PGM.png)
 
-异常检测算法--Isolation Forest
+上图是PGM的一个示例。其中$$X_i$$表示随机变量，图中共有8个随机变量，假设它们均为二值变量，则整个状态空间共有$$2^8$$种组合。遍历这样大的状态空间无疑是一件极为费力的事情。
 
-https://mp.weixin.qq.com/s/xsuLIMPJVCThBGMRlz09Hg
+如果$$X_i$$是条件独立的话，则由上图可得：
 
-Isolation Forest算法原理详解
+$$P(X_1,\dots,X_8)=P(X_2)P(X_4|X_2)P(X_5|X_2)P(X_1)P(X_3|X_1)\\P(X_6|X_3,X_4)P(X_7|X_6)P(X_8|X_5,X_6)$$
 
-# 自适应滤波器
+这样，状态空间就缩小为$$2+4+4+2+4+8+4+8=36$$种组合了。
 
-《自适应滤波器原理》，Simon Haykin著。
+根据边的类型，PGM可分为两类：
 
-## 基本估计
+1.有向边表示变量间的**因果**关系。这样的PGM，常称为Bayesia Network（BN）或Directed Graphical Model（DGM）。
 
-三种基本的信息处理运算：
+2.无向边表示变量间的**相关**关系。这样的PGM，常称为Markov Random Field（MRF）或Undirected Graphical Model（UGM）。
 
-**滤波（Filter）**：利用$$[0,t]$$的数据，来估计t时刻信息的运算过程。
+>注：因果关系是一种强逻辑关系，需要变量间有深刻的内在联系。而相关关系要弱的多，典型的例子就是《机器学习（十七）》中的尿布和啤酒的故事。尿布和啤酒虽然正相关，然而它们本身却没有多大的联系。
 
-**平滑（Smoothing）**：利用$$[0,t]$$的数据，来估计$$t'(t'<t)$$时刻信息的运算过程。
+根据模型的不同，PGM又可分为生成模型（Generative Model, GM）和判别模型（Discriminative Model, DM）。两者的区别在《机器学习（二）》中已经简单提到过，这里做一个扩展。
 
-**预测（Prediction）**：利用$$[0,t]$$的数据，来估计$$t+\tau(\tau>0)$$时刻信息的运算过程。
+之前提到的机器学习算法，主要是建立特征向量X和标签Y之间的联系。但是实际情况下，X中的状态不一定都能得到，因此可以根据可见性，将X分为可观测变量集合O和其他变量集合R，Y也不一定是一个标签，而可能是一个变量集合。即：
 
-可见，滤波和预测是实时运算，而平滑是非实时运算。
+$$GM:P(Y,R,O)\to P(Y|O)$$
 
-# Robust PCA
+$$DM:P(Y,R|O)\to P(Y|O)$$
 
-http://www.cnblogs.com/quarryman/p/robust_pca.html
+注意，在贝叶斯学派的观点中，模型的参数也是随机变量，因此，R在某些情况下，不仅包含不可观测的变量，也包含模型参数。
 
-最优化之Robust PCA
+## 贝叶斯网络
 
-http://www.aiuxian.com/article/p-2634727.html
+贝叶斯网络是最简单的有向图模型。
 
-Robust PCA
+首先给出几个术语的定义：
 
-http://blog.csdn.net/abcjennifer/article/details/8572994
+**有向无环图(Directed Acyclic Graph, DAG)**：这个术语的字面意思很清楚，不解释。
 
-Robust PCA学习笔记
+**马尔可夫毯(Markov Blanket, MB)**：有向图——结点A的父结点+A的子结点+A的子结点的其他父结点。如下图所示：
 
-http://patternrecognition.cn/~jin/gs/seminar/20140515_jinzhong.ppt
+![](/images/article/Markov_blanket.png)
 
-Robust PCA-模式识别
+无向图——结点A的邻近结点。
 
-# 热传导推荐算法
+下图是图模型的部分变种之间的关系图。
 
-https://www.zhihu.com/question/20184666
+![](/images/article/Generative_Models.png)
 
-推荐系统中用到的热传导算法和物质扩散是怎么用的？
+# 机器学习的算法体系&相关术语表
 
-http://tis.hrbeu.edu.cn/oa/pdfdow.aspx?Sid=20160307
+## 算法体系
 
-基于影响力控制的热传导算法
+![](/images/article/ML_2.png)
 
-http://www.doc88.com/p-7082821463697.html
+原文：
 
-改进的热传导和物质扩散混合推荐算法
+https://mp.weixin.qq.com/s/HapJwwmN3-dbQvzp2jzt1w
 
-# Keras
+一文看懂机器学习的算法体系
 
-Keras是深度学习的前端框架的集大成者，其后端可支持tensorflow、cntk、theano等。
+## 相关术语表
 
-所谓DL前端框架一般只提供对于DL的高层抽象和封装，至于具体的运算则由具体的后端来实现。
-
-官网：
-
-https://keras.io/
-
-代码：
-
-https://github.com/fchollet/keras/
-
-安装：
-
-`sudo pip install keras`
+| 缩写 | 全称 | 中文名 | 备注 |
+|:--:|:--:|:--:|:--:|
+| LR | Linear Regression | 线性回归 |  |
+| LS | Least Squares | 最小二乘法 |  |
+| LWR | Locally Weighted linear Regression | 局部加权线性回归 |  |
+| LR | Logistic Regression | 逻辑回归 |  |
+| MLE | Maximum Likelihood Estimator | 最大似然估计 |  |
+| GLM | Generalized Linear Model | 广义线性模型 |  |
+| IID | Independent and Identically Distributed | 独立同分布 |  |
+| DLA | Discriminative Learning Algorithm | 判别学习算法 |  |
+| GLA | Generative Learning Algorithms | 生成学习算法 |  |
+| GDA | Gaussian Discriminant Analysis | 高斯判别分析 |  |
+| NB | Naive Bayes | 朴素贝叶斯 |  |
+| SVM | Support Vector Machines | 支持向量机 |  |
+| SMO | Sequential Minimal Optimization | 序列最小优化方法 |  |
+| PAC | Probably Approximately Correct | 可能近似正确 |  |
+| ERM | Empirical Risk Minimization | 经验风险最小化 |  |
+| EM | Expectation-Maximization | 期望最大化 |  |
+| GMM | Mixture of Gaussians Model | 高斯混合模型 |  |
+| SVD | Singular Value Decomposition | 奇异值分解 |  |
+| PPMCC/PCC | Pearson Product-Moment Correlation Coefficient | 皮尔逊相关系数 |  |
+| PMF | Probabilistic Matrix Factorization | 概率矩阵分解算法 |  |
+| RMSE | Root-Mean-Square Error | 均方根误差 |  |
+| ALS | Alternating Least Squares | 交替最小二乘算法 |  |
+| PCA | Principal Components Analysis | 主成分分析 |  |
+| ELM | Extreme Learning Machine | 极限学习机 |  |
+| ICA | Independent Components Analysis | 独立成分分析 |  |
+| CDF | Cumulative Distribution Function | 累积分布函数 |  |
+| PDF | Probability Density Function | 概率密度函数 |  |
+| ECDF | Empirical Distribution Function | 实证分配函数 |  |
+| LDA | Latent Dirichlet Allocation | 隐式狄利克雷划分 |  |
+| LDA | Linear Discriminant Analysis | 线性判别分析 |  |
+| MCMC | Markov Chain Monte Carlo | 马尔可夫链蒙特卡罗 |  |
+| MRF | Markov Random Field | 马尔可夫随机场 |  |
+| PLSA | Probabilistic Latent Semantic Analysis | 概率隐含语义分析 |  |
+| GBDT | Gradient Boost Decision Tree | 渐进梯度决策树 |  |
+| FM | Factorization Machines | 因子分解机 |  |
+| PITF | Pairwise Interaction Tensor Factorization | 配对互动张量分解 |  |
+| ARM | Association Rule Mining | 关联规则挖掘 |  |
+| ROC | Receiver Operating Characteristic | 受试者工作特征 |  |
+| AUC | Area Under ROC Curve | ROC曲线下面积 |  |
+| KNN | k-Nearest Neighbor | K最近邻 |  |
+| GPR | Gaussian Process Regression | 高斯过程回归 |  |
+| PGM | Probabilistic Graphical Model | 概率图模型 |  |
+| PID | Proportional-Integral-Differential | 比例积分微分 |  |
+| HMM | Hidden Markov Model | 隐马尔可夫模型 |  |
+| PLSDA | Partial Least Squares Discriminant Analysis | 偏最小二乘判别分析 |  |
+| ARIMA | Autoregressive Integrated Moving Average Model | 差分自回归移动平均模型 |  |
+| IIR | Infinite Impulse Response | 无限脉冲响应 |  |
+| FIR | Finite Impulse Response | 有限脉冲响应 |  |
+| HNM | Hard Negative Mining | 硬负挖掘 |  |
+| ACBM | Aho-Corasick Boyer-Moore |  | 一种字符串匹配算法 |
+| LASSO | Least Absolute Shrinkage and Selection Operator | 最小绝对收缩和选择算子 |  |
+| CRF | Conditional Random Field | 条件随机场 |  |
+| MSE/MSD | Mean Squared Error/Mean Squared Deviation | 均方误差 |  |
+| SMAPE | Symmetric Mean Absolute Percentage Error | 对称平均绝对百分比误差 |  |
+| MAE | Mean Absolute Error | 平均绝对值误差 |  |
+| MPE | Mean Percentage Error | 平均百分比误差 |  |
+| DSSM | Deep Structured Semantic Model / Deep Semantic Similarity Model | 深度结构语义模型 |  |
+| OOV | out-of-vocabulary |  | 无论多大的单词表都会遇到生词。 |
+| DRL | Deep Reinforcement Learning | 深度强化学习 |  |
+| DQN | Deep Q-Learning Network |  |  |
+| EMD | Earth Mover's Distance | 推土机距离 |  |
+| ED | Edit Distance | 编辑距离 |  |
+| MLP | MultiLayer Perceptron | 多层感知器 |  |
+| CTC | Connectionist Temporal Classification |  | 新词无常用译名 |
+| RNN | Recurrent Neural Network | 循环神经网络 |  |
+| RNN | Recursive Neural Network | 递归神经网络 | 已没落 |
+| CNN | Convolutional Neural Network | 卷积神经网络 |  |
+| NLP | Natural Language Processing | 自然语言处理 |  |
+| HDP | Hierarchical Dirichlet Processes | 分层狄利克雷进程 |  |
+| LSA/LSI | Latent Semantic Analysis/Latent Semantic Indexing | 隐式语义分析/隐式语义索引 |  |
+| NER | Named Entity Recognition | 命名实体识别 |  |
+| LSTM | Long Short-Term Memory | 长时记忆 |  |
+| GRU | Gated Recurrent Unit |  |  |
+| DRN | Deep Residual Network | 深度残差网络 |  |
+| SVDD | Support Vector Domain Description | 支持向量域描述 |  |
+| NMT | Neural Machine Translation | 神经机器翻译 |  |
+| BLEU | Bilingual Evaluation Understudy | 双语评估替代 |  |
+| NMT | Neural Machine Translation | 神经机器翻译 |  |
+| SMT | Statistical Machine Translation | 统计机器翻译 |  |
+| DMN | Dynamic Memory Networks | 动态记忆网络 |  |
+| GAN | Generative Adversarial Networks | 生成对抗式网络 |  |
+| SGNS | Skip-Gram Negative Sampling |  |  |
+|  | Semi-supervised Learning | 半监督学习 |  |
+|  | Transfer Learning | 迁移学习 |  |
+|  | Text Classification | 文本分类 |  |
+| MDP | Markov Decision Process | 马尔可夫决策过程 |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
 
 参考：
 
-https://mp.weixin.qq.com/s/tyWUxJndljOSZT1-aYPgeg
+https://mp.weixin.qq.com/s/6KRNawRE1i8de3ctgv6aVg
 
-Keras入门必看教程
+机器学习词汇表：纵览机器学习基本词汇与概念
 
-https://mp.weixin.qq.com/s/57j-YxA4ODMy0RybI8n7uQ
-
-教你在R中使用Keras和TensorFlow构建深度学习模型
-
-https://mp.weixin.qq.com/s/H-oAETObn0SLUxK8--xudg
-
-Keras+OpenAI强化学习实践：行为-评判模型
-
-https://mp.weixin.qq.com/s/2lcOfU3X27YYqbWS341jcg
-
-Keras+OpenAI强化学习实践：深度Q网络
-
-http://mp.weixin.qq.com/s/kvQlzafLAn_8YgBmib3P0g
-
-手把手教你在Amazon EC2上安装Keras
-
-http://www.jianshu.com/p/20585e3b6d02
-
-Keras TensorFlow教程：如何从零开发一个复杂深度学习模型
-
-http://mp.weixin.qq.com/s/sQKhopzS4EOcYwjrM8E7xQ
-
-十分钟搞定Keras序列到序列学习
-
-http://mp.weixin.qq.com/s/F2gBP23LCEF72QDlugbBZQ
-
-详解如何使用Keras实现Wassertein GAN
-
-https://mp.weixin.qq.com/s/PR5gQYEse9KxhSkEVglRWg
-
-用Keras实现seq2seq学习
-
-https://mp.weixin.qq.com/s/0Rdet35LHAXQJuo-r_THXg
-
-如何为LSTM重新构建输入数据（Keras）
-
-https://mp.weixin.qq.com/s/TGjfd3ahYSH_QYX_2j0DqQ
-
-基于Keras的LSTM多变量时间序列预测
-
-https://mp.weixin.qq.com/s/GqaXADRE7Hvxr-6-QapMIg
-
-你必须知道的keras中最常用的深度学习的API
-
-https://mp.weixin.qq.com/s/KE_zk7e6cf5ah303ZTpuMw
-
-如何用Keras为序列预测问题开发复杂的编解码循环神经网络?
-
-https://mp.weixin.qq.com/s/dbZLsWV3pDz3NQPc2aJAUw
-
-用Keras开发字符级神经网络语言模型
-
-https://mp.weixin.qq.com/s/J0pBoNpzj-GYjI-9qefkRg
-
-7步掌握基于Keras的深度学习
-
-# LightGBM
-
-LightGBM是微软推出的boosting框架。
-
-代码：
-
-https://github.com/Microsoft/LightGBM
-
-文档：
-
-https://lightgbm.readthedocs.io/en/latest/
-
-参考：
-
-http://www.msra.cn/zh-cn/news/features/lightgbm-20170105
-
-微软亚洲研究院：LightGBM介绍
-
-https://zhuanlan.zhihu.com/p/25308051
-
-比XGBOOST更快--LightGBM介绍
-
-https://www.zhihu.com/question/51644470
-
-如何看待微软新开源的LightGBM?
-
-http://www.cnblogs.com/rocketfan/p/6005353.html
-
-LightGBM中GBDT的实现
-
-https://zhuanlan.zhihu.com/p/28768447
-
-一个例子读懂LightGBM的模型文件
-
-https://zhuanlan.zhihu.com/p/27916208
-
-LightGBM调参指南(带贝叶斯优化代码)
 

@@ -172,6 +172,10 @@ howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如
 
 https://howmuch.net/
 
+# Firefox
+
+Firefox Quantum
+
 # 世说新语（续）
 
 ## 2017.8

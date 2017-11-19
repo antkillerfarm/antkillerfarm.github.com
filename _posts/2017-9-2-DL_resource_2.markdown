@@ -104,6 +104,14 @@ https://mp.weixin.qq.com/s/c160AUDdgw37L1XruPoZ-w
 
 电竞数据化：英雄联盟总决赛也靠它！
 
+https://zhuanlan.zhihu.com/p/29222384
+
+sc2-101: 第一个rule-base的星际二agent
+
+https://mp.weixin.qq.com/s/rmi5ulyLdRIw11sKDxPYvQ
+
+学会了玩街霸2的AI，你怕不怕？
+
 ## TPU & GPU
 
 https://zhuanlan.zhihu.com/p/25382177
@@ -237,6 +245,10 @@ Google IPU：互联网巨头纷纷进军芯片行业是为何？
 https://mp.weixin.qq.com/s/S1y4NEx4_Mgwf68S2pexqA
 
 拿着锤子找钉子，数字芯片领导者比特大陆进军人工智能
+
+https://mp.weixin.qq.com/s/Zng0NTR9P78lnR_vniiM8g
+
+Chris Rowen: 分析全球334家真正的深度学习创业公司，盘点25家AI芯片创业公司
 
 ## 并行 & 框架
 
@@ -419,6 +431,10 @@ Facebook开源相似性搜索类库Faiss，超越已知最快算法8.5倍
 https://mp.weixin.qq.com/s/3r8c63BOiiYfts9KLkXovw
 
 谷歌发布自然语言框架语义解析器SLING
+
+https://mp.weixin.qq.com/s/jTXoCaXEhPPVNcJiyjtN5Q
+
+谷歌宣布对外开放聊天机器人数据分析平台Chatbase
 
 
 

@@ -207,6 +207,12 @@ caffe-orc主流ocr算法：CNN+BLSTM+CTC架构实现
 
 https://caffe2.ai/
 
+参考：
+
+https://mp.weixin.qq.com/s/YYwmRwq5TN7JPah_arNyaQ
+
+Facebook开源产业级深度学习框架Caffe2
+
 # 推荐系统的工程细节
 
 推荐系统不仅是算法，还包括若干工程细节。这些细节虽然不算复杂，够不上算法的层面，然而对产品的成败，却有举足轻重的作用。

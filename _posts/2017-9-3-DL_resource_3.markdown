@@ -162,6 +162,10 @@ https://mp.weixin.qq.com/s/CJuVoOf7idUChFIn7dH0Lg
 
 围棋中的数学原理
 
+https://mp.weixin.qq.com/s/d46qNFaftt4wxpV4sZnG-w
+
+一张图看懂AlphaGo Zero
+
 ## Capsule
 
 https://mp.weixin.qq.com/s/Tx9JJ0cIo_rH7BDjd_hkvw
@@ -203,6 +207,10 @@ https://mp.weixin.qq.com/s/WspmbqlwdxKXH1cgbkuGwQ
 https://mp.weixin.qq.com/s/Ot-pRRaHaT1VRyWlLDO2uw
 
 Reddit讨论：Hinton的Capsule网络真的比CNN效果更好吗？
+
+https://mp.weixin.qq.com/s/Z32LCfi8IVP4WXkxAu6zZg
+
+Geffory Hinton的“胶囊”里到底装的什么“药”？
 
 ## Other
 

@@ -290,6 +290,10 @@ https://mp.weixin.qq.com/s/2aKoOx18RB0GGQTzb3Tjzg
 
 Facebook开源DrQA的PyTorch实现：基于维基百科的问答系统
 
+https://mp.weixin.qq.com/s/4TC7180LmD7V6u1CdVYRFw
+
+漫谈机器阅读理解之Facebook提出的DrQA系统 
+
 https://mp.weixin.qq.com/s/9uG8lqr2Kn0vzZKyjLHNGg
 
 从文本挖掘综述分类、聚类和信息提取等算法
@@ -425,3 +429,4 @@ https://mp.weixin.qq.com/s/hkcVhyqiDW--F3QxucgEcA
 https://mp.weixin.qq.com/s/vgejlnsBlOKMMRt-M3-d-w
 
 深思考：实现人机多轮交互突破是攻克图灵测试的核心
+

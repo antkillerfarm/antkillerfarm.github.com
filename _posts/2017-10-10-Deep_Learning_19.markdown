@@ -136,6 +136,10 @@ https://mp.weixin.qq.com/s/Faej1LKqurtwEIreUVJ0cw
 
 普林斯顿新算法自动生成高性能神经网络，同时超高效压缩
 
+https://mp.weixin.qq.com/s/uK-HasmiavM3jv6hNRY11A
+
+深度梯度压缩：降低分布式训练的通信带宽
+
 # 人脸识别
 
 ## Cascade CNN
@@ -163,6 +167,10 @@ https://zhuanlan.zhihu.com/p/25335957
 http://www.leiphone.com/news/201608/MPXlWtGaJLPYL7NB.html
 
 人脸检测发展：从VJ到深度学习
+
+https://zhuanlan.zhihu.com/p/22591740
+
+从事人脸识别研究必读的N篇文章
 
 https://mp.weixin.qq.com/s/ZZmLbFzi843g0k3gTncQmA
 
@@ -251,6 +259,10 @@ https://www.leiphone.com/news/201707/mFuwXGvZBhoVQD5S.html
 https://mp.weixin.qq.com/s/PF7_kSnwngnJ1jeh7ebyww
 
 手把手教你用1行代码实现人脸识别
+
+https://mp.weixin.qq.com/s/Gqlo4wU0wtIcJDvQs2kTAw
+
+为了让你分清人脸识别与人脸检测，苹果要亲自给你科普
 
 # 手势识别
 

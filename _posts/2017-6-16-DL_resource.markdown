@@ -322,6 +322,18 @@ https://wenku.baidu.com/view/98590eedaeaad1f346933f88.html
 
 小波神经网络简介
 
+https://mp.weixin.qq.com/s/mAkC6TDwLJ3hj2wSGiFdFg
+
+深度神经网络训练的必知技巧
+
+https://mp.weixin.qq.com/s/qz6Xn7dpp1s96pKyWcUbjg
+
+从变分边界到进化策略，一文读懂机器学习变换技巧
+
+https://mp.weixin.qq.com/s/ye4QvDfKPGyX0eK3Mti1Kw
+
+从反向传播到迁移学习，盘点人工智能从业者必备的10个深度学习方法
+
 ## 实战
 
 https://github.com/jinfagang/pytorch_name_net

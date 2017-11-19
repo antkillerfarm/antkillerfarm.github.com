@@ -194,6 +194,18 @@ https://mp.weixin.qq.com/s/XiaAPd20YxbM0wDiSTAYMg
 
 深度学习之卷积神经网络(CNN)的模型结构
 
+https://mp.weixin.qq.com/s/x-H6h4sRqTrZlOXKStnhPw
+
+卷积神经网络背后的数学原理
+
+https://mp.weixin.qq.com/s/qIdjHqurqvdahEd0dXYIqA
+
+徒手实现CNN：综述论文详解卷积网络的数学本质
+
+https://mp.weixin.qq.com/s/D6ok6dQqyx6cCJKc2M8YpA
+
+从AlexNet剖析-卷积网络CNN的一般结构
+
 # Autoencoder
 
 Bengio在2003年的《A neural probabilistic language model》中指出，维度过高，会导致每次学习，都会强制改变大部分参数。

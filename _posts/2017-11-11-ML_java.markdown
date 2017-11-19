@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Machine Learning之Java篇, DL参考资源（五）
+title:  Machine Learning之Java篇, Matlab, DL参考资源（五）
 category: AI 
 ---
 
@@ -113,6 +113,12 @@ https://github.com/yuantiku/ytk-mp4j
 https://mp.weixin.qq.com/s/WsjZERRkgnReWuDw_z5Hxw
 
 LibRec：一个覆盖70多种算法的推荐系统开源库！
+
+# Matlab
+
+https://zhuanlan.zhihu.com/p/30905298
+
+XML和MATLAB交互的基本操作
 
 # DL参考资源
 
@@ -252,9 +258,33 @@ https://mp.weixin.qq.com/s/0E4VpN9z2sNvsGCvOI5RVA
 
 稀疏&集成的卷积神经网络学习
 
+https://mp.weixin.qq.com/s/4wMvfnvTaWF10Xq7HqbO-A
+
+稀疏&集成的卷积神经网络学习（续）
+
 https://mp.weixin.qq.com/s/aBDx_602GZXA36awEyjb-A
 
 从深度学习研究论文中自动生成可执行源代码
+
+https://mp.weixin.qq.com/s/i8iQtCC7ahXLY1a1wOacsA
+
+Science：最新发现哈希可能是大脑的通用计算原理
+
+https://mp.weixin.qq.com/s/7ccEaDRngVo42OSU6FBlVg
+
+从视频到语句，优必选获TRECVID 2017子任务冠军
+
+https://mp.weixin.qq.com/s/xRLXCPF92vT7Gs-NLs2RGA
+
+谷歌、百度等搜索巨头应该从果蝇身上学习什么？专访解读果蝇算法
+
+https://mp.weixin.qq.com/s/_7yx6IywJ1EOClZUcr0AsA
+
+PNAS：绘制情绪图谱，人类内心的表情包其实很丰富
+
+https://mp.weixin.qq.com/s/Ffaotx83qRJS1s-bbMt1UA
+
+一点微小的扰动，就可能导致深度神经网络做出错误判断
 
 
 

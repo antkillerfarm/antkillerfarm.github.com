@@ -349,3 +349,9 @@ MillWheel: Google是如何在事件流处理上做到exactly one semantic的
 https://mp.weixin.qq.com/s/F7WTNeC3OUr76sZARtqRjw
 
 分布式架构系统生成全局唯一序列号的一个思路
+
+https://mp.weixin.qq.com/s/CxUGWhJZ1ST_Xq3H02c_Ww
+
+翼支付平台数据上云实践
+
+

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  有用的网址集合, 区块链, 数字成像
+title:  有用的网址集合, 区块链, 数字成像, 爬虫
 category: resource 
 ---
 
@@ -400,4 +400,45 @@ https://mp.weixin.qq.com/s/gyuKlDwlIqaZmC3w-r8oqg
 
 手机相机如何排名
 
+# 爬虫
+
+## 自动解析网页的结构化数据
+
+抽取结构树，对比两个网页的dom tree的相似度（卷积核），找出并抽取相似节点。
+
+参考：
+
+http://www.doc88.com/p-2045913772352.html
+
+Web页面中结构化数据抽取的实现与应用
+
+http://www.cnblogs.com/codemind/p/smart_spider_parser.html
+
+爬虫数据采集技术趋势－智能化解析
+
+## 参考
+
+http://www.gooseeker.com/
+
+一个基于FireFox的网络爬虫。
+
+https://mp.weixin.qq.com/s/0yDokR2dYzetUy4NI9edSQ
+
+那些你不知道的爬虫反爬虫套路
+
+https://mp.weixin.qq.com/s/yR_wENRSbxvfrcYr9O9BuQ
+
+23个Python爬虫开源项目代码：爬取微信、淘宝、豆瓣、知乎、微博等
+
+https://mp.weixin.qq.com/s/38ofY693bXwFWIMNqYx4-A
+
+常用的Python爬虫技巧总结
+
+https://mp.weixin.qq.com/s/Hp6tEQujSgCnPwSKhAE72g
+
+关于Python爬虫，这里有一条高效的学习路径
+
+https://mp.weixin.qq.com/s/0QnOgT8F090MOzazzsZfZA
+
+不会编程也能爬数据！3个爬虫小工具教你实现
 

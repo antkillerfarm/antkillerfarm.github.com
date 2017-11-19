@@ -348,4 +348,8 @@ https://mp.weixin.qq.com/s/ToogpkDo-DpQaSoRoalnPg
 
 没看过这5个模型，不要说你玩过CNN!
 
+https://zhuanlan.zhihu.com/p/31006686
+
+从LeNet-5到DenseNet
+
 

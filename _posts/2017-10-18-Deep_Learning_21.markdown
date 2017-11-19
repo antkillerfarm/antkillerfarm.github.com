@@ -216,6 +216,10 @@ https://mp.weixin.qq.com/s/4aENmxUMEEPVPnexLKrg7Q
 
 新型强化学习算法ACKTR
 
+https://mp.weixin.qq.com/s/5PzTiPoXPC1gH3xszzT2dQ
+
+邓力等人提出BBQ网络：将深度强化学习用于对话系统
+
 # NN的INT8计算
 
 ## 概述

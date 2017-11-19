@@ -136,7 +136,19 @@ $$NewEstimate \leftarrow OldEstimate + StepSize [Target - OldEstimate]$$
 
 $$Q_{n+1}=Q_n+\alpha[R_n-Q_n]$$
 
-详细内容参见《数学狂想曲（四）》的“软件滤波算法”一节。
+详细内容参见《数学狂想曲（四）》的“软件滤波算法”一节的“一阶滞后滤波法”和“加权递推平均滤波法”。
+
+## Gradient-Bandit算法
+
+Gradient-Bandit算法的定义如下：
+
+$$Pr\{A_t=a\}=\frac{e^{H_t(a)}}{\sum_{b=1}^ke^{H_t(b)}}=\pi_t(a)$$
+
+$$H_{t+1}(a)=H_t(a)+\alpha(R_t-\overline R_t)(1\{A_t=a\}-\pi_t(a))$$
+
+$$\overline R_t=\frac{1}{t}\sum_{i=1}^tR_i$$
+
+其中，$$H_t(a)$$被称作策略偏好（preference）。这实际上是一个Softmax算法的变种。
 
 ## 多步强化学习
 
@@ -237,28 +249,3 @@ $$<\mathcal{S},\mathcal{P},\mathcal{R},\gamma>$$
 
 比如上图中，在状态$$S_0$$，执行$$a_0$$，只有0.5的机会，会到达$$S_2$$。这也就是之前提到过的MDP。
 
-标准MDP中的Bellman equation可改为如下形式：
-
-$$v = \mathcal{R} + \gamma \mathcal{P}v$$
-
-其中,$$\mathcal{P},\mathcal{R}$$均为已知。
-
-这里的Bellman equation是线性方程，它的直接解法如下：
-
-$$(I-\gamma \mathcal{P})v = \mathcal{R}$$
-
-$$v = (I-\gamma \mathcal{P})^{-1}\mathcal{R}$$
-
-然而这个方法的复杂度是$$O(n^3)$$（n是状态的个数），这对于大的MDP来说，并不好用。这种情况下，常用的解法有：Dynamic programming（动态规划）、Monte-Carlo evaluation和Temporal-Difference learning。
-
-由于MDP对于RL任务进行了Markov假设，这属于一种建模行为，因此它也被归为一种model-based learning的算法。
-
-MDP的扩展主要包括：
-
-a) Observation部分可见的情况下，agent state $$\neq$$ environment state，这时一般叫做partially observable Markov decision process(POMDP)。
-
-b) Infinite and continuous MDP
-
-c) Undiscounted, average reward MDP
-
-扩展MDP的Bellman equation都不是线性方程，没有解析解，只有迭代解。相关解法主要使用了概念图模型，这里不再详述。
