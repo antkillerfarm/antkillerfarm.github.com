@@ -6,6 +6,30 @@ category: DL
 
 # 花式池化（续）
 
+## 全局平均池化
+
+Global Average Pooling是另一类池化操作，一般用于替换FullConnection层。
+
+![](/images/article/global_average_pooling.png)
+
+上图是FC和GAP在CNN中的使用方法图。从中可以看出Conv转换成FC，实际上进行了如下操作：
+
+1.对每个通道的feature map进行flatten操作得到一维的tensor。
+
+2.将不同通道的tensor连接成一个大的一维tensor。
+
+![](/images/article/FC.png)
+
+上图展示了FC与Conv、Softmax等层联动时的运算操作。
+
+![](/images/article/GAP.png)
+
+上图是GAP与Conv、Softmax等层联动时的运算操作。可以看出，GAP的实际操作如下：
+
+1.计算每个通道的feature map的均值。
+
+2.将不同通道的均值连接成一个一维tensor。
+
 ## UnPooling
 
 UnPooling是一种常见的上采样操作。其过程如下图所示：
@@ -221,80 +245,4 @@ CV的输入一般是由像素组成的矩阵。相比其他领域的数据挖掘
 6.同类差异。比如各种猫都是猫，但它们的外观有细微的差异。
 
 ![](/images/article/cv_problem.png)
-
-## 参考
-
-https://www.zhihu.com/question/34223049
-
-从近两年的CVPR会议来看，目标检测的研究方向是怎么样的？
-
-https://zhuanlan.zhihu.com/p/21533724
-
-对话CVPR2016：目标检测新进展
-
-https://mp.weixin.qq.com/s/r9tXvKIN-eqKW_65yFyOew
-
-谷歌开源TensorFlow Object Detection API
-
-https://mp.weixin.qq.com/s/-PeXMU_gkcT5YnMcLoaKag
-
-CVPR清华大学研究，高效视觉目标检测框架RON
-
-https://mp.weixin.qq.com/s/_cOuhToH8KvZldNfraumSQ
-
-什么促使了候选目标的有效检测？
-
-https://mp.weixin.qq.com/s/LAy1LKGj5HOh_e9jPgvfQw
-
-视觉目标检测和识别之过去，现在及可能
-
-https://mp.weixin.qq.com/s/ZHRP5xnQxex7lQJsCxwblA
-
-深度学习目标检测的主要问题和挑战！
-
-https://mp.weixin.qq.com/s/XorPkuIdhRNI1zGLwg-55A
-
-斯坦福新深度学习系统 NoScope：视频对象检测快1000倍
-
-https://mp.weixin.qq.com/s/XbgmLmlt5X4TX5CP59gyoA
-
-目标检测算法精彩集锦
-
-https://mp.weixin.qq.com/s/BgTc1SE2IzNH27OC2P2CFg
-
-CVPR-I
-
-https://mp.weixin.qq.com/s/qMdnp9ZdlYIja2vNEKuRNQ
-
-CVPR—II
-
-https://mp.weixin.qq.com/s/tc1PsIoF1RN1sx_IFPmtWQ
-
-CVPR—III
-
-https://mp.weixin.qq.com/s/bpCn2nREHzazJYq6B9vMHg
-
-目标识别算法的进展
-
-https://mp.weixin.qq.com/s/YzxaS4KQmpbUSnyOwccn4A
-
-基于深度学习的目标检测技术进展与展望
-
-https://mp.weixin.qq.com/s/JPCQqyzR8xIUyAdk_RI5dA
-
-RCNN, Fast-RCNN, Faster-RCNN那些你必须知道的事！
-
-https://www.zhihu.com/question/35887527
-
-如何评价rcnn、fast-rcnn和faster-rcnn这一系列方法？
-
-http://blog.csdn.net/messiran10/article/details/49132053
-
-Caffe matlab之基于Alex network的特征提取
-
-https://mp.weixin.qq.com/s/YovhKYeGGLqSxxSqMNsbKg
-
-基于深度学习的目标检测学习总结
-
-
 

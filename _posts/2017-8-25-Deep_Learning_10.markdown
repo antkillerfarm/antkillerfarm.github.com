@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十）——花式池化
+title:  深度学习（十）——Winograd, 花式池化
 category: DL 
 ---
 
@@ -136,42 +136,6 @@ https://mp.weixin.qq.com/s/mcK8M6pnHiZZRAkYVdaYGQ
 
 MobileNet在手机端上的速度评测：iPhone 8 Plus竟不如iPhone 7 Plus
 
-## Winograd
-
-矩阵方面的数值计算，Shmuel Winograd是一个无法绕开的人物。
-
->Shmuel Winograd, 1936年生，MIT本硕（1959年）+纽约大学博士（1968年）。此后一直在IBM当研究员，直到退休。IEEE Fellow，ACM Fellow，美国科学院院士。
-
-**Winograd FFT algorithm**：一种FFT算法。FFT算法有很多，最知名的是Cooley–Tukey FFT algorithm。
-
-**Coppersmith–Winograd algorithm（1987年）**：目前最快的矩阵乘法算法。复杂度是$$\mathcal{O}(n^{2.375477})$$。矩阵乘法定义的复杂度是$$\mathcal{O}(n^{3})$$。第一个小于3的算法是Strassen algorithm（1969年）（$$\mathcal{O}(n^{2.807355})$$）。
-
-**Winograd small(short/minimal) convolution algorithm**：一种快速的卷积算法，目前AI芯片领域的基础算法。
-
-论文：
-
-《The Coppersmith-Winograd Matrix Multiplication Algorithm》
-
-《Fast Algorithms for Convolutional Neural Networks》
-
-参考：
-
-https://colfaxresearch.com/falcon-library/
-
-FALCON Library: Fast Image Convolution in Neural Networks on Intel Architecture
-
-https://www.intelnervana.com/winograd/
-
-"Not so fast, FFT": Winograd
-
-http://people.ece.umn.edu/users/parhi/SLIDES/chap8.pdf
-
-Fast Convolution
-
-https://www.encyclopediaofmath.org/index.php/Winograd_small_convolution_algorithm
-
-Winograd small convolution algorithm
-
 ## 参考
 
 https://github.com/vdumoulin/conv_arithmetic
@@ -234,6 +198,85 @@ http://blog.csdn.net/shuzfan/article/details/77964370
 
 不规则卷积神经网络
 
+# Winograd
+
+矩阵方面的数值计算，Shmuel Winograd是一个无法绕开的人物。
+
+>Shmuel Winograd, 1936年生，MIT本硕（1959年）+纽约大学博士（1968年）。此后一直在IBM当研究员，直到退休。IEEE Fellow，ACM Fellow，美国科学院院士。
+
+**Winograd FFT algorithm**：一种FFT算法。FFT算法有很多，最知名的是Cooley–Tukey FFT algorithm。
+
+**Coppersmith–Winograd algorithm（1987年）**：目前最快的矩阵乘法算法。复杂度是$$\mathcal{O}(n^{2.375477})$$。矩阵乘法定义的复杂度是$$\mathcal{O}(n^{3})$$。第一个小于3的算法是Strassen algorithm（1969年）（$$\mathcal{O}(n^{2.807355})$$）。
+
+**Winograd small(short/minimal) convolution algorithm**：一种快速的卷积算法，目前AI芯片领域的基础算法。
+
+论文：
+
+《The Coppersmith-Winograd Matrix Multiplication Algorithm》
+
+《Fast Algorithms for Convolutional Neural Networks》
+
+## 基本思想
+
+我们这里以一个简单的例子，介绍一下Fast Convolution的基本思想。
+
+复数运算$$(a+jb)(c+dj)=e+jf$$可以写成如下的矩阵形式：
+
+$$\begin{bmatrix}
+e \\ f \\
+\end{bmatrix}=
+\begin{bmatrix}
+c & -d \\
+d & c \\  
+\end{bmatrix}
+\begin{bmatrix}
+a \\ b \\  
+\end{bmatrix}$$
+
+上式包含了4个乘法和2个加法。
+
+我们知道，乘法和加法在硬件实现上的时间复杂度一般是不一样的，乘法运算所需的时间通常远大于加法所需的时间。因此，**用廉价运算代替昂贵运算**就成为了加速运算的一种方法。
+
+具体到上面的例子：
+
+$$\begin{cases}
+ac − bd = a ( c − d ) + d ( a − b )\\
+ad + bc = b ( c + d ) + d ( a − b ) \\
+\end{cases}$$
+
+这个公式包含了3个乘法和5个加法，也就是说我们用3个加法替代了1个乘法，显然只要1个乘法所需的时间大于3个加法的时间，这样的变换就是有意义的。
+
+上式可以写成如下的矩阵形式：
+
+$$\begin{bmatrix}
+e \\ f \\
+\end{bmatrix}=
+\begin{bmatrix}
+c & -d \\
+d & c \\  
+\end{bmatrix}
+\begin{bmatrix}
+a \\ b \\  
+\end{bmatrix}$$
+
+## 参考
+
+https://colfaxresearch.com/falcon-library/
+
+FALCON Library: Fast Image Convolution in Neural Networks on Intel Architecture
+
+https://www.intelnervana.com/winograd/
+
+"Not so fast, FFT": Winograd
+
+http://people.ece.umn.edu/users/parhi/SLIDES/chap8.pdf
+
+Fast Convolution
+
+https://www.encyclopediaofmath.org/index.php/Winograd_small_convolution_algorithm
+
+Winograd small convolution algorithm
+
 # 花式池化
 
 池化和卷积一样，都是信号采样的一种方式。
@@ -265,28 +308,4 @@ Stochastic-pooling则介于两者之间，通过对像素点按照数值大小�
 这里再次强调一下，池化只是对信号的下采样。对于图像来说，这种下采样保留了图像的某些特征，因而是有意义的。但对于另外的任务则未必如此。
 
 比如，AlphaGo采用CNN识别棋局，但对棋局来说，下采样显然是没有什么物理意义的，因此，**AlphaGo的CNN是没有Pooling的**。
-
-## 全局平均池化
-
-Global Average Pooling是另一类池化操作，一般用于替换FullConnection层。
-
-![](/images/article/global_average_pooling.png)
-
-上图是FC和GAP在CNN中的使用方法图。从中可以看出Conv转换成FC，实际上进行了如下操作：
-
-1.对每个通道的feature map进行flatten操作得到一维的tensor。
-
-2.将不同通道的tensor连接成一个大的一维tensor。
-
-![](/images/article/FC.png)
-
-上图展示了FC与Conv、Softmax等层联动时的运算操作。
-
-![](/images/article/GAP.png)
-
-上图是GAP与Conv、Softmax等层联动时的运算操作。可以看出，GAP的实际操作如下：
-
-1.计算每个通道的feature map的均值。
-
-2.将不同通道的均值连接成一个一维tensor。
 

@@ -1,10 +1,28 @@
 ---
 layout: post
-title:  深度学习（十六）——FCN, SegNet, DeconvNet, DeepLab, ENet, GCN, Ultra Deep Network
+title:  深度学习（十六）——FCN, SegNet, DeconvNet, DeepLab, ENet, GCN
 category: DL 
 ---
 
 # 前DL时代的语义分割（续）
+
+## Normalized cut
+
+Normalized cut （N-cut）方法是基于图划分（Graph partitioning）的语义分割方法中最著名的方法之一，于2000年Jianbo Shi和Jitendra Malik发表于相关领域顶级期刊TPAMI。
+
+通常，传统基于图划分的语义分割方法都是将图像抽象为图（Graph）的形式$$\bf{G}=(\bf{V},\bf{E})$$（$$\bf{V}$$为图节点，$$\bf{E}$$为图的边），然后借助图理论（Graph theory）中的理论和算法进行图像的语义分割。
+
+常用的方法为经典的最小割算法（Min-cut algorithm）。不过，在边的权重计算时，经典min-cut算法只考虑了局部信息。如下图所示，以二分图为例（将$$\bf{G}$$分为不相交的$$\bf{A},\bf{B}$$两部分），若只考虑局部信息，那么分离出一个点显然是一个min-cut，因此图划分的结果便是类似$$n_1$$或$$n_2$$这样离群点，而从全局来看，实际想分成的组却是左右两大部分。
+
+![](/images/article/N_cut.jpg)
+
+针对这一情形，N-cut则提出了一种考虑全局信息的方法来进行图划分（Graph partitioning），即，将两个分割部分$$\bf{A},\bf{B}$$与全图节点的连接权重（$${\rm assoc(\bf{A},\bf{V})}$$和$$\rm assoc(\bf{B},\bf{V})$$）考虑进去：
+
+$$N_{cut}(\bf{A},\bf{B})=\frac{cut(\bf{A},\bf{B})}{assoc(\bf{A},\bf{V})}+\frac{cut(\bf{A},\bf{B})}{assoc(\bf{B},\bf{V})}$$
+
+如此一来，在离群点划分中，$$N_{cut}(\bf{A},\bf{B})$$中的某一项会接近1，而这样的图划分显然不能使得$$N_{cut}(\bf{A},\bf{B})$$是一个较小的值，故达到考虑全局信息而摒弃划分离群点的目的。这样的操作类似于机器学习中特征的规范化（Normalization）操作，故称为Normalized cut。N-cut不仅可以处理二类语义分割，而且将二分图扩展为K路（K-way）图划分即可完成多语义的图像语义分割，如下图例。
+
+![](/images/article/N_cut_2.jpg)
 
 ## Grab cut
 
@@ -213,42 +231,4 @@ Global Convolutional Network是孙剑团队的Chao Peng于2017年提出的。
 http://blog.csdn.net/bea_tree/article/details/60977512
 
 旷视最新：Global Convolutional Network
-
-# 语义分割的展望
-
-俗话说，“没有免费的午餐”（“No free lunch”）。基于深度学习的图像语义分割技术虽然可以取得相比传统方法突飞猛进的分割效果，但是其对数据标注的要求过高：不仅需要海量图像数据，同时这些图像还需提供精确到像素级别的标记信息（Semantic labels）。因此，越来越多的研究者开始将注意力转移到弱监督（Weakly-supervised）条件下的图像语义分割问题上。在这类问题中，图像仅需提供图像级别标注（如，有“人”，有“车”，无“电视”）而不需要昂贵的像素级别信息即可取得与现有方法可比的语义分割精度。
-
-另外，示例级别（Instance level）的图像语义分割问题也同样热门。该类问题不仅需要对不同语义物体进行图像分割，同时还要求对同一语义的不同个体进行分割（例如需要对图中出现的九把椅子的像素用不同颜色分别标示出来）。
-
-![](/images/article/Instance_level.jpg)
-
-最后，基于视频的前景／物体分割（Video segmentation）也是今后计算机视觉语义分割领域的新热点之一，这一设定其实更加贴合自动驾驶系统的真实应用环境。
-
-# Ultra Deep Network
-
-## FractalNet
-
-论文：
-
-《FractalNet: Ultra-Deep Neural Networks without Residuals》
-
-![](/images/article/FractalNet.png)
-
-## Resnet in Resnet
-
-论文：
-
-《Resnet in Resnet: Generalizing Residual Architectures》
-
-![](/images/article/RiR.png)
-
-## Highway
-
-论文：
-
-《Training Very Deep Networks》
-
-![](/images/article/highway.png)
-
-Resnet对于残差的跨层传递是无条件的，而Highway则是有条件的。这种条件开关被称为gate，它也是由网络训练得到的。
 

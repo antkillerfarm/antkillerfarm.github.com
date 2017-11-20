@@ -1,8 +1,78 @@
 ---
 layout: post
-title:  深度学习（十三）——SPPNet, Fast R-CNN, Faster R-CNN, YOLO
+title:  深度学习（十三）——SPPNet, Fast R-CNN, Faster R-CNN
 category: DL 
 ---
+
+# RCNN（续）
+
+## 使用SVM的问题
+
+CNN训练的时候，本来就是对bounding box的物体进行识别分类训练，在训练的时候，最后一层softmax就是分类层。那么为什么作者闲着没事干要先用CNN做特征提取（提取fc7层数据），然后再把提取的特征用于训练SVM分类器？
+
+这个是因为SVM训练和cnn训练过程的正负样本定义方式各有不同，导致最后采用CNN softmax输出比采用SVM精度还低。
+
+事情是这样的，cnn在训练的时候，对训练数据做了比较宽松的标注，比如一个bounding box可能只包含物体的一部分，那么我也把它标注为正样本，用于训练cnn；采用这个方法的主要原因在于因为CNN容易过拟合，所以需要大量的训练数据，所以在CNN训练阶段我们是对Bounding box的位置限制条件限制的比较松(IOU只要大于0.5都被标注为正样本了)；
+
+然而SVM训练的时候，因为SVM适用于少样本训练，所以对于训练样本数据的IOU要求比较严格，我们只有当bounding box把整个物体都包含进去了，我们才把它标注为物体类别，然后训练SVM。
+
+## CNN base
+
+目标检测任务不是一个独立的任务，而是在目标分类基础之上的进一步衍生。因此，无论何种目标检测框架都需要一个目标分类的CNN作为base，仅对其最上层的FC层做一定的修改。
+
+VGG、AlexNet都是常见的CNN base。
+
+## 评价标准
+
+目标检测一般采用mAP（mean Average Precision）作为评价标准。AP的含义参见《机器学习（二十一）》。
+
+对于多分类任务来说，每个分类都有一个AP，将这些AP平均（或加权平均）之后，就得到了mAP。
+
+目前，目标检测领域的mAP，一般以PASCAL VOC 2012的标准为准。文档参见：
+
+http://host.robots.ox.ac.uk/pascal/VOC/voc2012/devkit_doc.pdf
+
+对于目标检测任务来说，除了分类之外，还有box准确度的问题。一般IOU大于0.5的被认为是正样本，反之则是负样本。
+
+PASCAL VOC还对P-R曲线的采样做出规定。2012之前的标准中，P-R曲线只需要对recall值进行10等分采样即可。而2012标准规定，对每个recall值都要进行采样。
+
+参考：
+
+http://blog.sina.com.cn/s/blog_9db078090102whzw.html
+
+多标签图像分类任务的评价方法-mAP
+
+https://www.zhihu.com/question/41540197
+
+mean average precision（MAP）在计算机视觉中是如何计算和应用的？
+
+## 总结
+
+![](/images/article/rcnn_p_2.png)
+
+![](/images/article/rcnn_p.png)
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/23006190
+
+RCNN-将CNN引入目标检测的开山之作
+
+http://www.cnblogs.com/edwardbi/p/5647522.html
+
+Tensorflow tflearn编写RCNN
+
+http://blog.csdn.net/u011534057/article/category/6178027
+
+RCNN系列blog
+
+http://blog.csdn.net/shenxiaolu1984/article/details/51066975
+
+RCNN算法详解
+
+http://mp.weixin.qq.com/s/_U6EJBP_qmx68ih00IhGjQ
+
+Object Detection R-CNN
 
 # SPPNet
 
@@ -214,83 +284,5 @@ $$L(\{p_i\},\{t_i\})=\frac{1}{N_{cls}}\sum_iL_{cls}(p_i,p_i^*)+\lambda \frac{1}{
 上图中，二分类softmax前后各添加了一个reshape layer，是什么原因呢？
 
 这与caffe的实现的有关。bg/fg anchors的矩阵，其在caffe blob中的存储形式为[batch size, 2x9, H, W]。这里的2代表二分类，9是anchor的个数。因为这里的softmax只分两类，所以在进行计算之前需要将blob变为[batch size, 2, 9xH, W]。之后再reshape回复原状。
-
-## RPN和Fast R-CNN协同训练
-
-我们知道，如果是分别训练两种不同任务的网络模型，即使它们的结构、参数完全一致，但各自的卷积层内的卷积核也会向着不同的方向改变，导致无法共享网络权重，论文作者提出了几种可能的方式。
-
-### Alternating training
-
-此方法其实就是一个不断迭代的训练过程，既然分别训练RPN和Fast-RCNN可能让网络朝不同的方向收敛：
-
-a)那么我们可以先独立训练RPN，然后用这个RPN的网络权重对Fast-RCNN网络进行初始化并且用之前RPN输出proposal作为此时Fast-RCNN的输入训练Fast R-CNN。
-
-b) 用Fast R-CNN的网络参数去初始化RPN。之后不断迭代这个过程，即循环训练RPN、Fast-RCNN。
-
-![](/images/article/alternating_training.png)
-
-### Approximate joint training or Non-approximate training
-
-这两种方式，不再是串行训练RPN和Fast-RCNN，而是尝试把二者融入到一个网络内训练。融合方式和上面的Faster R-CNN结构图类似。细节不再赘述。
-
-### 4-Step Alternating Training
-
-这是作者发布的源代码中采用的方法。
-
-第一步：用ImageNet模型初始化，独立训练一个RPN网络；
-
-第二步：仍然用ImageNet模型初始化，但是使用上一步RPN网络产生的proposal作为输入，训练一个Fast-RCNN网络，至此，两个网络每一层的参数完全不共享；
-
-第三步：使用第二步的Fast-RCNN网络参数初始化一个新的RPN网络，但是把RPN、Fast-RCNN共享的那些卷积层的learning rate设置为0，也就是不更新，仅仅更新RPN特有的那些网络层，重新训练，此时，两个网络已经共享了所有公共的卷积层；
-
-第四步：仍然固定共享的那些网络层，把Fast-RCNN特有的网络层也加入进来，形成一个unified network，继续训练，fine tune Fast-RCNN特有的网络层，此时，该网络已经实现我们设想的目标，即网络内部预测proposal并实现检测的功能。
-
-![](/images/article/4_Step_Alternating_Training.png)
-
-## 总结
-
-![](/images/article/faster_rcnn_p.png)
-
-参考：
-
-https://zhuanlan.zhihu.com/p/24916624
-
-Faster R-CNN
-
-http://blog.csdn.net/shenxiaolu1984/article/details/51152614
-
-Faster RCNN算法详解
-
-https://mp.weixin.qq.com/s/VKQufVUQ3TP5m7_2vOxnEQ
-
-通过Faster R-CNN实现当前最佳的目标计数
-
-http://blog.csdn.net/zy1034092330/article/details/62044941
-
-Faster RCNN详解
-
-# YOLO
-
-YOLO: Real-Time Object Detection，是一个基于神经网络的实时对象检测软件。它的原理基于Joseph Chet Redmon 2016年的论文：
-
-《You Only Look Once: Unified, Real-Time Object Detection》
-
-这也是Ross Girshick去Facebook之后，参与的又一力作。
-
-官网：
-
-https://pjreddie.com/darknet/yolo/
-
->注：Joseph Chet Redmon，Middlebury College本科+华盛顿大学博士（在读）。网名：pjreddie。
-
-pjreddie不仅是个算法达人，也是个造轮子的高手。YOLO的原始代码基于他本人编写的DL框架——darknet。
-
-darknet代码：
-
-https://github.com/pjreddie/darknet/
-
-YOLO的caffe版本有很多（当然都是非官方的），这里推荐：
-
-https://github.com/yeahkun/caffe-yolo
 
 

@@ -1,10 +1,46 @@
 ---
 layout: post
-title:  深度学习（十七）——视频目标分割, Fast Image Processing, OpenPose, Mask R-CNN
+title:  深度学习（十七）——Ultra Deep Network, 视频目标分割, Fast Image Processing, OpenPose
 category: DL 
 ---
 
-# Ultra Deep Network（续）
+# 语义分割的展望
+
+俗话说，“没有免费的午餐”（“No free lunch”）。基于深度学习的图像语义分割技术虽然可以取得相比传统方法突飞猛进的分割效果，但是其对数据标注的要求过高：不仅需要海量图像数据，同时这些图像还需提供精确到像素级别的标记信息（Semantic labels）。因此，越来越多的研究者开始将注意力转移到弱监督（Weakly-supervised）条件下的图像语义分割问题上。在这类问题中，图像仅需提供图像级别标注（如，有“人”，有“车”，无“电视”）而不需要昂贵的像素级别信息即可取得与现有方法可比的语义分割精度。
+
+另外，示例级别（Instance level）的图像语义分割问题也同样热门。该类问题不仅需要对不同语义物体进行图像分割，同时还要求对同一语义的不同个体进行分割（例如需要对图中出现的九把椅子的像素用不同颜色分别标示出来）。
+
+![](/images/article/Instance_level.jpg)
+
+最后，基于视频的前景／物体分割（Video segmentation）也是今后计算机视觉语义分割领域的新热点之一，这一设定其实更加贴合自动驾驶系统的真实应用环境。
+
+# Ultra Deep Network
+
+## FractalNet
+
+论文：
+
+《FractalNet: Ultra-Deep Neural Networks without Residuals》
+
+![](/images/article/FractalNet.png)
+
+## Resnet in Resnet
+
+论文：
+
+《Resnet in Resnet: Generalizing Residual Architectures》
+
+![](/images/article/RiR.png)
+
+## Highway
+
+论文：
+
+《Training Very Deep Networks》
+
+![](/images/article/highway.png)
+
+Resnet对于残差的跨层传递是无条件的，而Highway则是有条件的。这种条件开关被称为gate，它也是由网络训练得到的。
 
 ## DenseNet
 
@@ -177,42 +213,5 @@ OpenPose的使用效果如上图所示。
 代码：
 
 https://github.com/CMU-Perceptual-Computing-Lab/openpose
-
-# Mask R-CNN
-
-Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的NN。它是何恺明2017年的新作。
-
-论文：
-
-《Mask R-CNN》
-
-只有非官方的代码：
-
-Caffe版本：
-
-https://github.com/jasjeetIM/Mask-RCNN
-
-TensorFlow版本：
-
-https://github.com/hillox/TFMaskRCNN
-
-MXNet版本：
-
-https://github.com/TuSimple/mx-maskrcnn
-
-参考：
-
-https://zhuanlan.zhihu.com/p/25954683
-
-Mask R-CNN个人理解
-
-https://mp.weixin.qq.com/s/E0P2B798pukbtRarWooUkg
-
-Mask R-CNN的Keras/TensorFlow/Pytorch代码实现
-
-https://zhuanlan.zhihu.com/p/30967656
-
-从R-CNN到Mask R-CNN
-
 
 
