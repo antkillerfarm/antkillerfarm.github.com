@@ -476,5 +476,8 @@ https://mp.weixin.qq.com/s/KRuEuAOXU2fpSNyOJW4bpA
 
 Yoshua Bengio实验室MILA开放面向初学者的PyTorch教程
 
+https://mp.weixin.qq.com/s/10nLPqBgQ1XJAP8jXqFU0g
+
+讲解Vision图像识别框架API详解
 
 

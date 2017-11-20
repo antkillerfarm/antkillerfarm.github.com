@@ -105,6 +105,10 @@ https://mp.weixin.qq.com/s/86MlCMKAG0ax3gvfsgmYtg
 
 K-Means聚类算法详解
 
+https://mp.weixin.qq.com/s/Sl3lTS1zvq0BgAayAUcOXg
+
+K-Means实战与调优详解
+
 ## 聚类结果的评价
 
 可考虑用以下几个指标来评价聚类效果：

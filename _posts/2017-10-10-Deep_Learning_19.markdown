@@ -264,6 +264,10 @@ https://mp.weixin.qq.com/s/Gqlo4wU0wtIcJDvQs2kTAw
 
 为了让你分清人脸识别与人脸检测，苹果要亲自给你科普
 
+http://blog.csdn.net/gitchat/article/details/78546894
+
+TensorFlow人脸识别网络与对抗网络搭建
+
 # 手势识别
 
 https://zhuanlan.zhihu.com/p/26630215

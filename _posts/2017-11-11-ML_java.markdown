@@ -286,5 +286,9 @@ https://mp.weixin.qq.com/s/Ffaotx83qRJS1s-bbMt1UA
 
 一点微小的扰动，就可能导致深度神经网络做出错误判断
 
+https://mp.weixin.qq.com/s/jMeTSr1t2Uc-qibNom4AZg
+
+LeCun提出错误编码网络，可在不确定环境中执行时间预测
+
 
 

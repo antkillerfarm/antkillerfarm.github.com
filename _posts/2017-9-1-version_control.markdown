@@ -196,5 +196,9 @@ https://mp.weixin.qq.com/s/2cbzD1UFW66-3zwsZk9Bxg
 
 用于文本的最牛神经网络架构是什么？
 
+https://mp.weixin.qq.com/s/T4AkbKXf2pkyazIlzEZxhw
+
+基于转移的语义依存图分析
+
 
 

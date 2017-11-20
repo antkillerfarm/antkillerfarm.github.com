@@ -229,4 +229,14 @@ EVC下将MFC的工程分为PPC和wince两种，而VS2005下，不再区分这两
 
 依次点击“文件(File)”->“形状(Shapes)”->“其他Visio方案(Visio Extras)”->“标注(Callouts)”即可。
 
+# Outlook
+
+## “同步问题/本地故障”文件夹过大
+
+最近Outlook提示邮箱文件过大，无法接收新消息。经查看之后发现问题出在“同步问题/本地故障”文件夹过大上。
+
+由于这些内部文件夹都在C:\Users\xxx\AppData\Local\Microsoft\Outlook\outlook.ost中，并不能直接删除。因此我的办法是直接删除该文件。
+
+不用担心邮件丢失，本地删除之后，Outlook会自动从服务器重新下载的。
+
 

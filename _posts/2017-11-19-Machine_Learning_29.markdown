@@ -220,3 +220,24 @@ https://zhuanlan.zhihu.com/p/27916208
 
 LightGBM调参指南(带贝叶斯优化代码)
 
+# CatBoost
+
+这是Yandex推出的Boost工具包。
+
+官网：
+
+https://catboost.yandex/
+
+论文：
+
+《Fighting biases with dynamic boosting》
+
+代码：
+
+https://github.com/catboost/catboost
+
+官方还提供了一个可视化工具：
+
+https://github.com/catboost/catboost-viewer
+
+

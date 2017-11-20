@@ -220,6 +220,10 @@ https://mp.weixin.qq.com/s/5PzTiPoXPC1gH3xszzT2dQ
 
 邓力等人提出BBQ网络：将深度强化学习用于对话系统
 
+https://mp.weixin.qq.com/s/pM8oykHmtu5O5jYJBZjO_w
+
+伯克利研究人员使用内在激励，教AI学会好奇
+
 # NN的INT8计算
 
 ## 概述
