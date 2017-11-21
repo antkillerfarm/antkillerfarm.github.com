@@ -302,6 +302,10 @@ https://mp.weixin.qq.com/s/ucQgmb1NkdyfAw6wDTyWYg
 
 阿里HBase又放出了哪些大招？
 
+https://mp.weixin.qq.com/s/BICJgyv2Y8r0j5Jjw6weRw
+
+大数据查询——HBase读写设计与实践
+
 # Restful
 
 相比于WebService，Restful是一种简单的多的编程风格。

@@ -300,4 +300,8 @@ https://mp.weixin.qq.com/s/tXpdPwnZyCtur9Q-rJfYFg
 
 当AI遇上证券投资
 
+https://mp.weixin.qq.com/s/JR-GIXwHF45OysoE0qvwzw
+
+时间序列异常检测机制的研究
+
 

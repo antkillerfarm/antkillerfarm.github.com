@@ -185,6 +185,20 @@ http://lepsucd.com/?page_id=621
 
 https://github.com/pmgysel/caffe
 
+## Caffe-MPI
+
+Caffe-MPI是一款高性能高可扩展的深度学习计算框架，由浪潮的HPC应用开发团队进行开发。
+
+代码：
+
+https://github.com/Caffe-MPI/Caffe-MPI.github.io
+
+参考：
+
+https://mp.weixin.qq.com/s/n9b0Mf2ikBDxXgknEBTrTg
+
+浪潮集团副总裁胡雷钧：扩展Caffe，从方案、框架、系统、平台应对AI计算挑战
+
 ## 参考
 
 https://mp.weixin.qq.com/s/-Jn4UbZ6EqRYceJqI1l16g

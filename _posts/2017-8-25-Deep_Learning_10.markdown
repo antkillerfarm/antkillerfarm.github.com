@@ -252,12 +252,26 @@ $$\begin{bmatrix}
 e \\ f \\
 \end{bmatrix}=
 \begin{bmatrix}
-c & -d \\
-d & c \\  
-\end{bmatrix}
+1 & 0 & 1 \\
+0 & 1 & 1 \\  
+\end{bmatrix}\cdot
 \begin{bmatrix}
-a \\ b \\  
-\end{bmatrix}$$
+c-d & 0 & 0 \\
+0 & c+d & 0 \\
+0 & 0 & d \\
+\end{bmatrix}\cdot
+\begin{bmatrix}
+1 & 0 \\
+0 & 1 \\
+1 & -1\\
+\end{bmatrix}\cdot
+\begin{bmatrix}
+a \\ b \\
+\end{bmatrix}=C \cdot H \cdot D \cdot x$$
+
+这里的算法主要有基于Lagrange插值的Cook-Toom算法和基于中国剩余定理（Chinese remainder theorem）的Winograd算法。
+
+
 
 ## 参考
 

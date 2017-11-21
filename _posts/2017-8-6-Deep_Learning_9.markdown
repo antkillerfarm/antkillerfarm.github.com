@@ -196,6 +196,14 @@ https://mp.weixin.qq.com/s/PkZ069S8ysY_JCQx1nzfGg
 
 NVIDIA新作解读：用GAN生成前所未有的高清图像（附PyTorch复现）
 
+https://mp.weixin.qq.com/s/cI4xZOw6eL0w9sz9Q2mSCw
+
+Ian Goodfellow盛赞：一个GAN生成ImageNet全部1000类物体
+
+https://mp.weixin.qq.com/s/LHCEh4BPZ_qbSKaar19nNg
+
+十种主流GANs，我该如何选择？
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。

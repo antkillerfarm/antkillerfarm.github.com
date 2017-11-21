@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十八）——Mask R-CNN, 目标跟踪, 图像超分辨率算法
+title:  深度学习（十八）——Mask R-CNN, 目标跟踪, 图像超分辨率算法, Image Caption Generation
 category: DL 
 ---
 
@@ -168,6 +168,24 @@ https://zhuanlan.zhihu.com/p/25912465
 
 胎儿MRI高分辨率重建技术：现状与趋势
 
+# Image Caption Generation
+
+Image Caption Generation的目标是：给定一张图片，让计算机用一句话来描述这张图片。
+
+参考：
+
+http://geek.csdn.net/news/detail/97193
+
+李理：从Image Caption Generation理解深度学习（part I）
+
+http://geek.csdn.net/news/detail/98776
+
+李理：从Image Caption Generation理解深度学习（part II）
+
+https://zhuanlan.zhihu.com/p/30893160
+
+CVPR2017 Image Caption有关论文总结
+
 # ACBM算法
 
 ACBM算法是在AC（Aho-Corasick）自动机（UNIX上的fgrep命令使用的就是AC算法）的基础之上，引入了BM（Boyer-Moore）算法的多模扩展，实现的高效的多模匹配。和AC自动机不同的是，ACBM算法不需要扫描目标文本串中的每一个字符，可以利用本次匹配不成功的信息，跳过尽可能多的字符，实现高效匹配。
@@ -234,3 +252,6 @@ http://blog.csdn.net/xiahouzuoxin/article/details/38820925
 http://blog.csdn.net/abcjennifer/article/details/7748833
 
 压缩感知进阶——有关稀疏矩阵
+
+
+
