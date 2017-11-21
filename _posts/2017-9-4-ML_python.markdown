@@ -24,6 +24,14 @@ Anaconda是一个科学计算方面的python发行版，下面提到的所有工
 
 https://www.anaconda.com/download/
 
+基本命令：
+
+`conda update --all`
+
+`conda update conda`
+
+`conda update anaconda`
+
 ## NumPy
 
 NumPy是python语言所有数学计算库的基础。它主要提供了矩阵运算的功能。

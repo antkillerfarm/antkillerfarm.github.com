@@ -290,5 +290,7 @@ https://mp.weixin.qq.com/s/jMeTSr1t2Uc-qibNom4AZg
 
 LeCun提出错误编码网络，可在不确定环境中执行时间预测
 
+https://mp.weixin.qq.com/s/tXr9NhVfBSvI5pduziIECQ
 
+基于深度学习的二进制恶意样本检测
 
