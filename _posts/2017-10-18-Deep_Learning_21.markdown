@@ -224,6 +224,10 @@ https://mp.weixin.qq.com/s/pM8oykHmtu5O5jYJBZjO_w
 
 伯克利研究人员使用内在激励，教AI学会好奇
 
+https://mp.weixin.qq.com/s/3WI3QgfHXcrCPbvmHWOEkg
+
+强化学习在生成对抗网络文本生成中的作用
+
 # NN的INT8计算
 
 ## 概述

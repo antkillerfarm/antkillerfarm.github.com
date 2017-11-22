@@ -294,3 +294,13 @@ https://mp.weixin.qq.com/s/tXr9NhVfBSvI5pduziIECQ
 
 基于深度学习的二进制恶意样本检测
 
+https://mp.weixin.qq.com/s/LQ3tn4Zxg5obDD_oyEugKQ
+
+为数据集自动生成神经网络：普林斯顿大学提出NeST
+
+https://mp.weixin.qq.com/s/98lkCQT4rKME6PavCI0Mkg
+
+Bengio研究组最新论文：图谱注意力网络GAT，以图谱做输入做深度学习
+
+
+

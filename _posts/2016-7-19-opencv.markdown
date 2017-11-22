@@ -192,6 +192,14 @@ http://blog.csdn.net/q4878802/article/details/51841793
 
 Android使用OpenCV实现“人脸检测”和“人脸识别”
 
+https://mp.weixin.qq.com/s/8I9jC3c6ZRsCCzYGylezhA
+
+用OpenCV亲手给小扎、Musk等科技大佬们做一张“平均脸”
+
+https://mp.weixin.qq.com/s/DqaGM2zc-6GAe2b24DA84w
+
+在单机上快速、精确的100000类别的检测
+
 ## 论文
 
 《Moving Gradients: A Path-Based Method for Plausible Image Interpolation》：视频帧插值算法

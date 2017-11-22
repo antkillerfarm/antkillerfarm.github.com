@@ -490,4 +490,9 @@ https://mp.weixin.qq.com/s/Di4xVdD1jOGGCiIB-vdkkg
 
 Python可以被用来做哪些神奇好玩的事情
 
+https://mp.weixin.qq.com/s/-SHD9rXUGQ-yp21RtFhJpg
+
+手把手教你 Python挖掘用户评论典型意见并自动生产报告
+
+
 
