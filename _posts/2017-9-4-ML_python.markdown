@@ -32,6 +32,32 @@ https://www.anaconda.com/download/
 
 `conda update anaconda`
 
+Anaconda同时也支持多个Python版本的并存和切换。它的底层用到了virtualenv。这个功能在Ubuntu下意义不太大，因为后者的apt工具已经维护好了2.x和3.x两个分支，除非你想同时支持两个不同的3.x分支。但在Windows下，由于包管理器的缺位，这个问题是很难解决的。
+
+创建一个virtualenv：
+
+`conda create -n python2 python=2.7`
+
+这条命令会在Anaconda/envs下创建一个python2文件夹。
+
+将命令行环境切换到该版本：
+
+`activate python2`
+
+参考：
+
+http://www.cnblogs.com/zhusleep/p/5616099.html
+
+Anaconda安装更新库
+
+https://segmentfault.com/a/1190000004020387
+
+Python多版本切换工具-Pyenv\virtualenv及Anaconda科学计算环境的配置
+
+http://www.jianshu.com/p/d2e15200ee9b
+
+Anaconda多环境多版本python配置指导
+
 ## NumPy
 
 NumPy是python语言所有数学计算库的基础。它主要提供了矩阵运算的功能。

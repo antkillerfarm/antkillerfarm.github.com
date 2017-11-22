@@ -220,7 +220,17 @@ https://mp.weixin.qq.com/s/XP4NVYMmKj9RLsgonP3ooQ
 
 无需进行滤波后处理，利用循环推断算法实现歌唱语音分离
 
+## Kaldi
 
+Kaldi是一个语音识别的工具包。官网：
+
+https://github.com/kaldi-asr/kaldi
+
+## HTK
+
+Hidden Markov Model Toolkit是另一个语音识别的工具包。官网：
+
+http://htk.eng.cam.ac.uk/
 
 ## WFST
 
