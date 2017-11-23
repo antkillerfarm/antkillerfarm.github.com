@@ -219,5 +219,24 @@ https://mp.weixin.qq.com/s/5xs1ivkrUAP_Rr9P-EMc5g
 
 代码优化指南：人生苦短，我用Python。这篇blog主要介绍了如何追踪Python脚本的CPU使用情况。
 
+## tqdm
+
+tqdm是一个快速，可扩展的进度条。
+
+代码：
+
+https://github.com/tqdm/tqdm
+
+示例：
+
+{% highlight python %}
+from tqdm import tqdm
+for i in tqdm(range(9)):
+    ...
+{% endhighlight %}
+
+效果：
+
+76%|████████████████████            | 7641/10000 [00:34<00:10, 222.22 it/s]
 
 

@@ -308,5 +308,9 @@ https://mp.weixin.qq.com/s/DUz76rLOEL6iK1aytku7sQ
 
 基于机器学习方法的POI品类推荐算法
 
+https://mp.weixin.qq.com/s/Dqe3XX-OFdM5vNshrVrsTg
+
+一文综述数据科学家必备的10大统计技术
+
 
 

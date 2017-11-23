@@ -269,7 +269,7 @@ c-d & 0 & 0 \\
 a \\ b \\
 \end{bmatrix}=C \cdot H \cdot D \cdot x$$
 
-这里的算法主要有基于Lagrange插值的Cook-Toom算法和基于中国剩余定理（Chinese remainder theorem）的Winograd算法。
+Fast Convolution算法主要有**基于Lagrange插值的Cook-Toom算法**和**基于中国剩余定理（Chinese remainder theorem）的Winograd算法**。
 
 ## 向量卷积与多项式乘法
 
@@ -282,6 +282,14 @@ $$(x^2+2x+2)(3x+2)=3x^3+\color{red}{(2\times 3+1\times 2)}x^2+10x+4$$
 上式中红色的部分是有意保留下来没有合并的同类项，是不是感觉上和卷积运算十分类似呢？
 
 我们知道矩阵的定义，除了最原始的线性方程定义之外，还有线性向量空间定义。而多项式可以看做是以$${1,x,x^2,\dots}$$为基的空间向量，因此用多项式表示矩阵或者卷积运算，是一种很自然的方式。
+
+这是有限离散域的Convolution定义：
+
+$$(f * g)[n] &= \sum_{m=-\infty}^\infty f[m] g[n - m] = \sum_{m=-\infty}^\infty f[n-m] g[m]$$
+
+>注：这里的Convolution和DL领域的Convolution的定义略有不同，后者实际上是数学上的Cross-correlation运算，但稍加变化，就可以变为前者。
+
+由多项式乘法的规则和
 
 参见：
 
