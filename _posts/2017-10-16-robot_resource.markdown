@@ -312,5 +312,9 @@ https://mp.weixin.qq.com/s/Dqe3XX-OFdM5vNshrVrsTg
 
 一文综述数据科学家必备的10大统计技术
 
+https://mp.weixin.qq.com/s/c-flgHKAlCfdZCIrMXAzxg
+
+即时配送的ETA问题之亿级样本特征构造实践
+
 
 

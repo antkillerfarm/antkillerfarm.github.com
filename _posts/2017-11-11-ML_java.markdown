@@ -302,5 +302,13 @@ https://mp.weixin.qq.com/s/98lkCQT4rKME6PavCI0Mkg
 
 Bengio研究组最新论文：图谱注意力网络GAT，以图谱做输入做深度学习
 
+https://mp.weixin.qq.com/s/LUAcYoxoYBcDzTqi5bVJTQ
+
+非局部神经网络，打造未来神经网络基本组件
+
+https://mp.weixin.qq.com/s/Ji3dTs0lMjLLR5Oxbsr3Vg
+
+何恺明等人最新论文提出非局部神经网络
+
 
 

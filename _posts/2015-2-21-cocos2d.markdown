@@ -327,6 +327,12 @@ $$
 
 维基百科中出现的公式，可以在编辑界面中获得TeX代码。
 
+## 参考
+
+https://www.zhihu.com/question/40763253
+
+如何在Word和PowerPoint中优雅地插入Latex公式？
+
 # Blog维护日志
 
 2017.10.22 文章分为Language、Linux、Technology、Essay、Resource、Graphics、AI、ML、Math、DL十类。可命名为v3.5。

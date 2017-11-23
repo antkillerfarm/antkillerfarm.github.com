@@ -228,6 +228,10 @@ https://mp.weixin.qq.com/s/3WI3QgfHXcrCPbvmHWOEkg
 
 强化学习在生成对抗网络文本生成中的作用
 
+https://mp.weixin.qq.com/s/IvR0O6dpz2GJCG7UQb5kUQ
+
+清华大学冯珺：基于强化学习的关系抽取和文本分类
+
 # NN的INT8计算
 
 ## 概述

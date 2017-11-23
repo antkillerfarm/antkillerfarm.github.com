@@ -253,7 +253,7 @@ e \\ f \\
 \end{bmatrix}=
 \begin{bmatrix}
 1 & 0 & 1 \\
-0 & 1 & 1 \\  
+0 & 1 & 1 \\
 \end{bmatrix}\cdot
 \begin{bmatrix}
 c-d & 0 & 0 \\
@@ -268,6 +268,8 @@ c-d & 0 & 0 \\
 \begin{bmatrix}
 a \\ b \\
 \end{bmatrix}=C \cdot H \cdot D \cdot x$$
+
+这里的H是对角矩阵。
 
 Fast Convolution算法主要有**基于Lagrange插值的Cook-Toom算法**和**基于中国剩余定理（Chinese remainder theorem）的Winograd算法**。
 
@@ -285,11 +287,27 @@ $$(x^2+2x+2)(3x+2)=3x^3+\color{red}{(2\times 3+1\times 2)}x^2+10x+4$$
 
 这是有限离散域的Convolution定义：
 
-$$(f * g)[n] &= \sum_{m=-\infty}^\infty f[m] g[n - m] = \sum_{m=-\infty}^\infty f[n-m] g[m]$$
+$$(f* g)[n]=\sum_{m=-M}^M f[n-m]g[m]$$
 
 >注：这里的Convolution和DL领域的Convolution的定义略有不同，后者实际上是数学上的Cross-correlation运算，但稍加变化，就可以变为前者。
 
-由多项式乘法的规则和
+由多项式乘法的规则和Convolution定义可得：（这里以2x2的Convolution为例）
+
+令$$h(p)=h_0+h_1p,x(p)=x_0+x_1p,s(p)=h(p)x(p)=s_0+s_1p+s_2p^2$$，则$$s(p)$$的系数$$s_i$$正好为i点的卷积值$$Conv_i(h,x)$$。
+
+上述事实用矩阵可表示为：
+
+$$\begin{bmatrix}
+s_0 \\ s_1 \\ s_2 \\
+\end{bmatrix}=
+\begin{bmatrix}
+h_0 & 0 \\
+h_1 & h_0 \\
+0 & h_1 \\
+\end{bmatrix}\cdot
+\begin{bmatrix}
+x_0 \\ x_1 \\
+\end{bmatrix}$$
 
 参见：
 
@@ -302,6 +320,14 @@ http://blog.sina.com.cn/s/blog_455c7a6001010t3h.html
 卷积和与多项式乘法的关系
 
 ## Cook-Toom algorithm
+
+这里仍以上述2x2的Convolution为例，讲述一下Cook-Toom算法的步骤。
+
+$$\beta_0=0, h(\beta_0)=h_0, x(\beta_0)=x_0$$
+
+$$\beta_1=1, h(\beta_1)=h_0+h_1, x(\beta_1)=x_0+x_1$$
+
+$$\beta_2=-1, h(\beta_2)=h_0-h_1, x(\beta_2)=x_0-x_1$$
 
 
 

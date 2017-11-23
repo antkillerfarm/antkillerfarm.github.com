@@ -354,4 +354,7 @@ https://mp.weixin.qq.com/s/CxUGWhJZ1ST_Xq3H02c_Ww
 
 翼支付平台数据上云实践
 
+https://mp.weixin.qq.com/s/QjKQcFnbMxBBxFgIQ_f5lw
+
+流处理引擎的不同语义处理：严格一次未必严格一致
 
