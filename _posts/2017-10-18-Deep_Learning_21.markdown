@@ -232,6 +232,10 @@ https://mp.weixin.qq.com/s/IvR0O6dpz2GJCG7UQb5kUQ
 
 清华大学冯珺：基于强化学习的关系抽取和文本分类
 
+https://mp.weixin.qq.com/s/SqU74jYBrjtp9L-bnBuboA
+
+教你完美实现深度强化学习算法DQN
+
 # NN的INT8计算
 
 ## 概述

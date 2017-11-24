@@ -328,6 +328,10 @@ https://mp.weixin.qq.com/s/qOjGrR59Mf0Mzgh4bpDhrA
 
 详解Horovod：Uber开源的TensorFlow分布式深度学习框架
 
+https://mp.weixin.qq.com/s/ZCNSq5FC2REoVTKAK2mJQg
+
+分布式深度学习原理、算法详细介绍
+
 ## 量子计算 & 遗传算法
 
 https://www.zhihu.com/question/28171555

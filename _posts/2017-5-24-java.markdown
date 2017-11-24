@@ -239,4 +239,13 @@ for i in tqdm(range(9)):
 
 `76%|████████████████████            | 7641/10000 [00:34<00:10, 222.22 it/s]`
 
+## Captcha
+
+Captcha是一个Python验证码库，能够生成音频和图片验证码。
+
+代码：
+
+https://github.com/lepture/captcha
+
+这个库可用于生成大量有标签的验证码，是DL入门的必备工具。
 

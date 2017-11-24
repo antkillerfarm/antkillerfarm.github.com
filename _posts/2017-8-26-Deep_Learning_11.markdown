@@ -1,8 +1,61 @@
 ---
 layout: post
-title:  深度学习（十一）——花式池化, Batch Normalization, Softmax详解, 目标检测
+title:  深度学习（十一）——花式池化, Batch Normalization, Softmax详解
 category: DL 
 ---
+
+# Winograd（续）
+
+## Cook-Toom algorithm
+
+>Andrei Leonovich Toom，俄国数学家。
+
+>Stephen Cook，1939年生，密歇根大学本科（1961年）+哈佛硕博（1962年、1966年）。多伦多大学教授，图灵奖获得者（1982年）。
+
+>Cook的生平虽然让我感兴趣，然而我更感兴趣的却是他的导师王浩。   
+>王浩，1921年~1995年，数理逻辑学家，山东人。西南联大本科（1943年）+清华硕士（1945年）+哈佛博士（1948年）。先后执教于哈佛大学、牛津大学和洛克菲勒大学。英国皇家学会会员。IJCAI第一届“数学定理机械证明里程碑奖”获得者。
+>鉴于这是一个大路货的名字，这里特给出百度百科的网址：   
+>https://baike.baidu.com/item/王浩/22564
+
+这里仍以上述2x2的Convolution为例，讲述一下Cook-Toom算法的步骤。
+
+$$\beta_0=0, h(\beta_0)=h_0, x(\beta_0)=x_0$$
+
+$$\beta_1=1, h(\beta_1)=h_0+h_1, x(\beta_1)=x_0+x_1$$
+
+$$\beta_2=-1, h(\beta_2)=h_0-h_1, x(\beta_2)=x_0-x_1$$
+
+接着计算$$s(\beta_i)$$；
+
+$$s(\beta_0)=h(\beta_0)x(\beta_0),s(\beta_1)=h(\beta_1)x(\beta_1),s(\beta_2)=h(\beta_2)x(\beta_2)$$
+
+有了3个已知点，就可以应用Lagrange插值了：
+
+>Lagrange插值可参见《机器学习（一）》。
+
+$$s(p)=s(\beta_0)=s_0+ps_1+p^2s_2$$
+
+## Winograd algorithm
+
+
+
+## 参考
+
+https://colfaxresearch.com/falcon-library/
+
+FALCON Library: Fast Image Convolution in Neural Networks on Intel Architecture
+
+https://www.intelnervana.com/winograd/
+
+"Not so fast, FFT": Winograd
+
+http://people.ece.umn.edu/users/parhi/SLIDES/chap8.pdf
+
+Fast Convolution
+
+https://www.encyclopediaofmath.org/index.php/Winograd_small_convolution_algorithm
+
+Winograd small convolution algorithm
 
 # 花式池化
 
@@ -228,31 +281,4 @@ http://shuokay.com/2016/07/20/softmax-loss/
 
 Softmax输出及其反向传播推导
 
-# 目标检测
-
-## 概述
-
-object detection是计算机视觉的一个重要的分支。类似的分支还有目标分割、目标识别和目标跟踪。
-
-以下摘录自Sensetime CTO曹旭东的解读：
-
-传统方法使用滑动窗口的框架，把一张图分解成几百万个不同位置不同尺度的子窗口，针对每一个窗口使用分类器判断是否包含目标物体。传统方法针对不同的类别的物体，一般会设计不同的特征和分类算法，比如人脸检测的经典算法是**Harr特征+Adaboosting分类器**；行人检测的经典算法是**HOG(histogram of gradients)+Support Vector Machine**；一般性物体的检测的话是**HOG特征+DPM(deformable part model)的算法**。
-
-基于深度学习的物体检测的经典算法是RCNN系列：RCNN，fast RCNN(Ross Girshick)，faster RCNN(少卿、凯明、孙剑、Ross)。这三个工作的核心思想是分别是：使用更好的CNN模型判断候选区域的类别；复用预计算的sharing feature map加快模型训练和物体检测的速度；进一步使用sharing feature map大幅提高计算候选区域的速度。其实基于深度学习的物体检测也可以看成对海量滑动窗口分类，只是用全卷积的方式。
-
-RCNN系列算法还是将物体检测分为两个步骤。现在还有一些工作是端到端(end-to-end)的物体检测，比如说YOLO(You Only Look Once: Unified, Real-Time Object Detection)和SSD(SSD: Single Shot MultiBox Detector)这样的算法。这两个算法号称和faster RCNN精度相似但速度更快。物体检测正负样本极端非均衡，two-stage cascade可以更好的应对非均衡。端到端学习是否可以超越faster RCNN还需要更多研究实验。
-
-## 进化史
-
-DPM(2007)->RCNN(2014)->Fast RCNN->Faster RCNN
-
-![](/images/article/rcnn_2.png)
-
-![](/images/article/rcnn_4.jpg)
-
-参考：
-
-http://blog.csdn.net/ttransposition/article/details/12966521
-
-DPM(Deformable Parts Model)--原理
 

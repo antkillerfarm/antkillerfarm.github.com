@@ -301,6 +301,10 @@ https://mp.weixin.qq.com/s/kMQ7q4EyBQUH1DEEhQWdCQ
 
 Familia：开源的中文主题模型应用工具包
 
+http://openkg.cn/
+
+一个开放的中文知识图谱
+
 ## NLPchina
 
 NLPchina(中国自然语言处理开源组织)旗下有许多好用的工具。

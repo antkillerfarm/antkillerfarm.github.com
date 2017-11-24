@@ -240,9 +240,21 @@ $$W(S_i,S_j)=\frac{|\{w_k|w_k\in S_i \& w_k\in S_j\}|}{\log(|S_i|)+\log(|S_j|)}$
 
 http://www.cnblogs.com/rubinorth/p/5799848.html
 
+PageRank算法--从原理到实现
+
 http://blog.csdn.net/hguisu/article/details/7996185
+
+PageRank算法
 
 http://www.docin.com/p-1231683333.html
 
+有限不可约马尔可夫链的非周期状态
+
 http://www.docin.com/p-630952720.html
+
+马尔科夫链
+
+https://mp.weixin.qq.com/s/J9OmqFzQK-GS95FjgAJkTw
+
+浅析PageRank算法
 

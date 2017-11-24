@@ -1,8 +1,144 @@
 ---
 layout: post
-title:  深度学习（十五）——YOLOv2, 语义分割
+title:  深度学习（十五）——SSD, YOLOv2
 category: DL 
 ---
+
+# SSD
+
+SSD是Wei Liu于2016年提出的算法。
+
+论文：
+
+《SSD: Single Shot MultiBox Detector》
+
+代码：
+
+https://github.com/weiliu89/caffe
+
+>Wei Liu，南京大学本科（2009）+北卡罗莱娜大学博士（在读）。   
+>个人主页：   
+>http://www.cs.unc.edu/~wliu/
+
+## 网络结构
+
+YOLO有一些缺陷：每个网格只预测一个物体，容易造成漏检；对于物体的尺度相对比较敏感，对于尺度变化较大的物体泛化能力较差。
+
+针对YOLO中的这些不足，SSD在这两方面都有所改进，同时兼顾了mAP和实时性的要求。其思路就是Faster R-CNN+YOLO，利用YOLO的思路和Faster R-CNN的anchor box的思想。
+
+![](/images/article/ssd.png)
+
+上图是SSD的网络结构图。其特点为：
+
+1.采用VGG16的基础网络结构，使用前面的前5层。
+
+2.使用Dilated convolution将fc6和fc7层转化成两个卷积层。
+
+3.再额外增加了3个卷积层，和一个average pool层。不同层次的feature map分别用于default box的偏移以及不同类别得分的预测。
+
+4.通过NMS得到最终的检测结果。
+
+这些增加的卷积层的feature map的大小变化比较大，允许能够检测出不同尺度下的物体：在低层的feature map，感受野比较小，高层的感受野比较大，在不同的feature map进行卷积，可以达到多尺度的目的。
+
+![](/images/article/ssd_2.png)
+
+上图是从另一个角度观察SSD，可以看出SSD可检出8372个default box。这里沿用Faster R-CNN的Anchor方法生成default box。
+
+![](/images/article/ssd_3.png)
+
+和YOLO一样，卷积层的每个点都是一个vector，含义也和YOLO类似，只是分类的时候，多了一个背景的类别，所以就成了20+1类。
+
+在YOLO中，由于每个格子只有1个default box，所以对于一个格子中包含两个物体的情况是无能为力的。SSD的Anchor方法略微改善了这方面的性能，但对于超过Anchor数量的情况，仍然无能为力。因此，这两者对于小目标的检测，没有RCNN系列算法的效果好。
+
+## 训练策略
+
+监督学习训练的关键点：如何把标注信息(ground true box,ground true category)映射到（default box上）？
+
+### 正负样本
+
+与ground truth box的IOU大于0.5的default box，被定为该ground truth box的正样本，其它的default box则为负样本。
+
+而一般的MultiBox算法中，只有IOU最大的default box才是正样本。
+
+显然，在SSD中，一个ground truth box可能对应多个default box。
+
+![](/images/article/ssd.jpg)
+
+例如上图，有两个default box与猫匹配，一个default box与狗匹配。
+
+### Hard Negative Mining
+
+Hard Negative Mining是机器学习领域的一个常用技巧。
+
+对于正负样本数量不均衡的数据集（这里假设负样本数量远大于正样本数量），通常的做法有：
+
+**1.增加正样本的数量。**这个过程通常叫做数据增强（Data Augmentation）。例如对图片进行旋转、位移得到新的正样本。
+
+**2.减少负样本的数量。**这里实际上是一个筛选有价值的负样本的过程。Hard Negative Mining就属于这类方法，它认为负样本的分数越高，越有价值。
+
+具体到图像分类任务就是：那些不包含该物体但分值却很高的样本。通俗的讲，就是那些容易被混淆的负样本。
+
+**3.修改正负判定门限，以匹配正负样本比例。**例如，提高IOU门限。
+
+**4.异常点检测。**
+
+在SSD中，用于预测的feature map上的每个点都对应有6个不同的default box，绝大部分的default box都是负样本，导致了正负样本不平衡。
+
+在训练过程中，采用了Hard Negative Mining的策略（根据confidence loss对所有的box进行排序，使正负例的比例保持在1:3）来平衡正负样本的比率。
+
+参考：
+
+https://mp.weixin.qq.com/s/D0JaJaHeNX4kljSTxTsAAw
+
+一文概览卷积神经网络中的类别不均衡问题
+
+## Caffe实现的细节问题
+
+![](/images/article/ssd_4.png)
+
+上图是SSD末端的caffe结构图。我们注意到在flatten之前有个permute的操作。这个实际上还是和caffe blob的格式有关。
+
+只有flatten的效果：[B, CxHxW]
+
+permute+flatten的效果：[B, HxWxC]
+
+C在最后，意味着同一个点的不同通道的信息挨着放在一起，从而保证了信息的局部空间性保持不变。
+
+显然，这里如果是TensorFlow的tensor结构的话，permute就没有存在的必要了。
+
+## 参考
+
+http://www.jianshu.com/p/ebebfcd274e6
+
+Caffe-SSD训练自己的数据集教程
+
+https://zhuanlan.zhihu.com/p/24954433
+
+SSD
+
+http://blog.csdn.net/zy1034092330/article/details/72862030
+
+SSD详解
+
+http://blog.csdn.net/jesse_mx/article/details/74011886
+
+SSD模型fine-tune和网络架构
+
+http://blog.csdn.net/u010167269/article/details/52563573
+
+SSD论文阅读
+
+http://blog.csdn.net/zijin0802034/article/details/53288773
+
+另一个SSD论文阅读
+
+http://www.lai18.com/content/24600342.html
+
+还是一个SSD论文阅读
+
+https://www.zhihu.com/question/49455386
+
+为什么SSD(Single Shot MultiBox Detector)对小目标的检测效果不好？
 
 # YOLOv2
 
@@ -104,124 +240,6 @@ Darknet-19的运算量为55.8亿次浮点数运算。VGG-16为306.9亿次，而Y
 
 作者最后采用一种不要求互不包含的多标签模型（multi-label model）来整合数据集。
 
-### Hierarchical classiﬁcation（层次式分类）
 
-ImageNet的标签参考WordNet（一种结构化概念及概念之间关系的语言数据库）。例如：
-
-![](/images/article/WordNet.png)
-
-很多分类数据集采用扁平化的标签。而整合数据集则需要结构化标签。
-
-WordNet是一个有向图结构（而非树结构），因为语言是复杂的（例如“dog”既是“canine”又是“domestic animal”），为了简化问题，作者从ImageNet的概念中构建了一个层次树结构（hierarchical tree）来代替图结构方案。这也就是作者论文中提到的WordTree。
-
-WordTree的细节，更偏NLP一些，这里不再赘述。
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/25167153
-
-YOLO2
-
-http://blog.csdn.net/jesse_mx/article/details/53925356
-
-YOLOv2论文笔记
-
-http://lanbing510.info/2017/09/04/YOLOV2.html
-
-目标检测之YOLOv2
-
-# 其它目标检测网络
-
-## A-Fast-RCNN
-
-A-Fast-RCNN首次将对抗学习引入到了目标检测领域，idea是非常创新的。
-
-http://blog.csdn.net/jesse_mx/article/details/72955981
-
-A-Fast-RCNN论文笔记
-
-## R-FCN
-
-FCN在目标检测领域的应用。
-
-http://blog.csdn.net/zijin0802034/article/details/53411041
-
-R-FCN: Object Detection via Region-based Fully Convolutional Networks
-
-## G-CNN
-
-G-CNN是MaryLand大学的工作，论文主要的思路也是消除region proposal，和YOLO，SSD不同，G-CNN的工作借鉴了迭代的想法，把边框检测等价于找到初始边框到最终目标的一个路径。但是使用one-step regression不能处理这个非线性的过程，所以作者采用迭代的方法逐步接近最终的目标。
-
-http://blog.csdn.net/zijin0802034/article/details/53535647
-
-G-CNN: an Iterative Grid Based Object Detector
-
-# 语义分割
-
-Semantic segmentation是图像理解的基石性技术，在自动驾驶系统（具体为街景识别与理解）、无人机应用（着陆点判断）以及穿戴式设备应用中举足轻重。
-
-我们都知道，图像是由许多像素（Pixel）组成，而“语义分割”顾名思义就是将像素按照图像中表达语义含义的不同进行分组（Grouping）/分割（Segmentation）。
-
-![](/images/article/image_enet.png)
-
-上图是语义分割网络ENet的实际效果图。其中，左图为原始图像，右图为分割任务的真实标记（Ground truth）。
-
-显然，在图像语义分割任务中，其输入为一张HxWx3的三通道彩色图像，输出则是对应的一个HxW矩阵，矩阵的每一个元素表明了原图中对应位置像素所表示的语义类别（Semantic label）。
-
-因此，图像语义分割也称为“图像语义标注”（Image semantic labeling）、“像素语义标注”（Semantic pixel labeling）或“像素语义分组”（Semantic pixel grouping）。
-
-由于图像语义分割不仅要识别出对象，还要标出每个对象的边界。因此，与分类目的不同，相关模型要具有像素级的密集预测能力。
-
-目前用于语义分割研究的两个最重要数据集是PASCAL VOC和MSCOCO。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/21824299
-
-从特斯拉到计算机视觉之“图像语义分割”
-
-https://zhuanlan.zhihu.com/SemanticSegmentation
-
-一个语义分割的专栏
-
-https://zhuanlan.zhihu.com/p/22308032
-
-图像语义分割之FCN和CRF
-
-https://zhuanlan.zhihu.com/p/25515361
-
-图像语义分割之特征整合和结构预测
-
-https://zhuanlan.zhihu.com/p/27794982
-
-语义分割中的深度学习方法全解：从FCN、SegNet到各代DeepLab
-
-https://mp.weixin.qq.com/s/cANlqQAI-A2mC9vnd3imQA
-
-Instance-Aware图像语义分割
-
-https://mp.weixin.qq.com/s/v_TLYYq6cFWuwR9tXM8m-A
-
-如何通过CRF-RNN模型实现图像语义分割任务
-
-https://mp.weixin.qq.com/s/ceCC7Q6yr0QKESeZXi6lWQ
-
-堆叠解卷积网络实现图像语义分割顶尖效果
-
-https://mp.weixin.qq.com/s/4BvvwV11f9MrrYyLwUrX9w
-
-还在用ps抠图抠瞎眼？机器学习通用背景去除产品诞生记
-
-https://zhuanlan.zhihu.com/p/24738319
-
-“见微知著”——细粒度图像分析进展综述
-
-https://mp.weixin.qq.com/s/V4_euZRcyyxeimXAA_waAg
-
-贾佳亚：最有效的COCO物体分割算法
-
-# 前DL时代的语义分割
-
-从最简单的像素级别“阈值法”（Thresholding methods）、基于像素聚类的分割方法（Clustering-based segmentation methods）到“图划分”的分割方法（Graph partitioning segmentation methods），在DL“一统江湖”之前，图像语义分割方面的工作可谓“百花齐放”。在此，我们仅以“Normalized cut”和“Grab cut”这两个基于图划分的经典分割方法为例，介绍一下前DL时代语义分割方面的研究。
 
 

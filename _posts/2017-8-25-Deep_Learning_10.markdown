@@ -309,6 +309,10 @@ h_1 & h_0 \\
 x_0 \\ x_1 \\
 \end{bmatrix}$$
 
+向量卷积与多项式乘法的这个性质，在数值计算领域应用的比较广泛。Matlab中多项式的乘法计算，实际上就是计算一个卷积。
+
+如果令p=10，则多项式乘法就变成了大整数乘法，因此卷积运算在大整数乘法中，也有很重要的地位。
+
 参见：
 
 http://www.cnblogs.com/larch18/p/4569495.html
@@ -319,37 +323,4 @@ http://blog.sina.com.cn/s/blog_455c7a6001010t3h.html
 
 卷积和与多项式乘法的关系
 
-## Cook-Toom algorithm
-
-这里仍以上述2x2的Convolution为例，讲述一下Cook-Toom算法的步骤。
-
-$$\beta_0=0, h(\beta_0)=h_0, x(\beta_0)=x_0$$
-
-$$\beta_1=1, h(\beta_1)=h_0+h_1, x(\beta_1)=x_0+x_1$$
-
-$$\beta_2=-1, h(\beta_2)=h_0-h_1, x(\beta_2)=x_0-x_1$$
-
-
-
-## Winograd algorithm
-
-
-
-## 参考
-
-https://colfaxresearch.com/falcon-library/
-
-FALCON Library: Fast Image Convolution in Neural Networks on Intel Architecture
-
-https://www.intelnervana.com/winograd/
-
-"Not so fast, FFT": Winograd
-
-http://people.ece.umn.edu/users/parhi/SLIDES/chap8.pdf
-
-Fast Convolution
-
-https://www.encyclopediaofmath.org/index.php/Winograd_small_convolution_algorithm
-
-Winograd small convolution algorithm
 

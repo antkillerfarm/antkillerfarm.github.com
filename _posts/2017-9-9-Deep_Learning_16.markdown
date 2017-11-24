@@ -1,10 +1,132 @@
 ---
 layout: post
-title:  深度学习（十六）——FCN, SegNet, DeconvNet, DeepLab, ENet, GCN
+title:  深度学习（十六）——语义分割, FCN
 category: DL 
 ---
 
-# 前DL时代的语义分割（续）
+# YOLOv2
+
+## Stronger（续）
+
+### Hierarchical classiﬁcation（层次式分类）
+
+ImageNet的标签参考WordNet（一种结构化概念及概念之间关系的语言数据库）。例如：
+
+![](/images/article/WordNet.png)
+
+很多分类数据集采用扁平化的标签。而整合数据集则需要结构化标签。
+
+WordNet是一个有向图结构（而非树结构），因为语言是复杂的（例如“dog”既是“canine”又是“domestic animal”），为了简化问题，作者从ImageNet的概念中构建了一个层次树结构（hierarchical tree）来代替图结构方案。这也就是作者论文中提到的WordTree。
+
+WordTree的细节，更偏NLP一些，这里不再赘述。
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/25167153
+
+YOLO2
+
+http://blog.csdn.net/jesse_mx/article/details/53925356
+
+YOLOv2论文笔记
+
+http://lanbing510.info/2017/09/04/YOLOV2.html
+
+目标检测之YOLOv2
+
+# 其它目标检测网络
+
+## A-Fast-RCNN
+
+A-Fast-RCNN首次将对抗学习引入到了目标检测领域，idea是非常创新的。
+
+http://blog.csdn.net/jesse_mx/article/details/72955981
+
+A-Fast-RCNN论文笔记
+
+## R-FCN
+
+FCN在目标检测领域的应用。
+
+http://blog.csdn.net/zijin0802034/article/details/53411041
+
+R-FCN: Object Detection via Region-based Fully Convolutional Networks
+
+## G-CNN
+
+G-CNN是MaryLand大学的工作，论文主要的思路也是消除region proposal，和YOLO，SSD不同，G-CNN的工作借鉴了迭代的想法，把边框检测等价于找到初始边框到最终目标的一个路径。但是使用one-step regression不能处理这个非线性的过程，所以作者采用迭代的方法逐步接近最终的目标。
+
+http://blog.csdn.net/zijin0802034/article/details/53535647
+
+G-CNN: an Iterative Grid Based Object Detector
+
+# 语义分割
+
+Semantic segmentation是图像理解的基石性技术，在自动驾驶系统（具体为街景识别与理解）、无人机应用（着陆点判断）以及穿戴式设备应用中举足轻重。
+
+我们都知道，图像是由许多像素（Pixel）组成，而“语义分割”顾名思义就是将像素按照图像中表达语义含义的不同进行分组（Grouping）/分割（Segmentation）。
+
+![](/images/article/image_enet.png)
+
+上图是语义分割网络ENet的实际效果图。其中，左图为原始图像，右图为分割任务的真实标记（Ground truth）。
+
+显然，在图像语义分割任务中，其输入为一张HxWx3的三通道彩色图像，输出则是对应的一个HxW矩阵，矩阵的每一个元素表明了原图中对应位置像素所表示的语义类别（Semantic label）。
+
+因此，图像语义分割也称为“图像语义标注”（Image semantic labeling）、“像素语义标注”（Semantic pixel labeling）或“像素语义分组”（Semantic pixel grouping）。
+
+由于图像语义分割不仅要识别出对象，还要标出每个对象的边界。因此，与分类目的不同，相关模型要具有像素级的密集预测能力。
+
+目前用于语义分割研究的两个最重要数据集是PASCAL VOC和MSCOCO。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/21824299
+
+从特斯拉到计算机视觉之“图像语义分割”
+
+https://zhuanlan.zhihu.com/SemanticSegmentation
+
+一个语义分割的专栏
+
+https://zhuanlan.zhihu.com/p/22308032
+
+图像语义分割之FCN和CRF
+
+https://zhuanlan.zhihu.com/p/25515361
+
+图像语义分割之特征整合和结构预测
+
+https://zhuanlan.zhihu.com/p/27794982
+
+语义分割中的深度学习方法全解：从FCN、SegNet到各代DeepLab
+
+https://mp.weixin.qq.com/s/cANlqQAI-A2mC9vnd3imQA
+
+Instance-Aware图像语义分割
+
+https://mp.weixin.qq.com/s/v_TLYYq6cFWuwR9tXM8m-A
+
+如何通过CRF-RNN模型实现图像语义分割任务
+
+https://mp.weixin.qq.com/s/ceCC7Q6yr0QKESeZXi6lWQ
+
+堆叠解卷积网络实现图像语义分割顶尖效果
+
+https://mp.weixin.qq.com/s/4BvvwV11f9MrrYyLwUrX9w
+
+还在用ps抠图抠瞎眼？机器学习通用背景去除产品诞生记
+
+https://zhuanlan.zhihu.com/p/24738319
+
+“见微知著”——细粒度图像分析进展综述
+
+https://mp.weixin.qq.com/s/V4_euZRcyyxeimXAA_waAg
+
+贾佳亚：最有效的COCO物体分割算法
+
+# 前DL时代的语义分割
+
+从最简单的像素级别“阈值法”（Thresholding methods）、基于像素聚类的分割方法（Clustering-based segmentation methods）到“图划分”的分割方法（Graph partitioning segmentation methods），在DL“一统江湖”之前，图像语义分割方面的工作可谓“百花齐放”。在此，我们仅以“Normalized cut”和“Grab cut”这两个基于图划分的经典分割方法为例，介绍一下前DL时代语义分割方面的研究。
 
 ## Normalized cut
 
@@ -91,144 +213,4 @@ https://github.com/shelhamer/fcn.berkeleyvision.org
 http://www.cnblogs.com/gujianhan/p/6030639.html
 
 全卷积网络FCN详解
-
-# SegNet
-
-SegNet是Vijay Badrinarayanan于2015年提出的。
-
-论文：
-
-《SegNet: A Deep Convolutional Encoder-Decoder Architecture for Robust Semantic Pixel-Wise Labelling》
-
-代码：
-
-https://github.com/alexgkendall/caffe-segnet
-
-除此之外，还有一个demo网站：
-
-http://mi.eng.cam.ac.uk/projects/segnet/
-
->Vijay Badrinarayanan，印度人，班加罗尔大学本科（2001年）+Georgia理工硕士（2005年）+法国INRIA博士（2009年）。剑桥大学讲师。
-
->Alex Kendall，新西兰奥克兰大学本科（2014年）+剑桥大学博士在读。本文二作，但是代码和demo都是他写的。
-
->Roberto Cipolla，剑桥大学本科（1984年）+宾夕法尼亚大学硕士（1985年）+牛津大学博士（1991年）。剑桥大学教授。
-
-![](/images/article/SegNet.png)
-
-相比于CNN下采样阶段的结构规整，FCN上采样时的结构就显得凌乱了。因此，SegNet采用了几乎和下采样对称的上采样结构。
-
-参考：
-
-http://blog.csdn.net/fate_fjh/article/details/53467948
-
-SegNet
-
-# DeconvNet
-
-DeconvNet是韩国的Hyeonwoo Noh于2015年提出的。
-
-论文：
-
-《Learning Deconvolution Network for Semantic Segmentation》
-
-代码：
-
-https://github.com/HyeonwooNoh/DeconvNet
-
-![](/images/article/DeconvNet.jpg)
-
-从上图可见，DeconvNet和SegNet的结构非常类似，只不过DeconvNet在encoder和decoder之间使用了FC层作为中继。
-
-这样的encoder-decoder对称结构也被称为U-Net（因为它们的形状像U字形）：
-
-![](/images/article/U_Net.jpg)
-
-# DeepLab
-
-DeepLab共有3个版本，分别对应3篇论文：
-
-《Semantic Image Segmentation with Deep Convolutional Nets and Fully Connected CRFs》
-
-《DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs》
-
-《Rethinking Atrous Convolution for Semantic Image Segmentation》
-
->Liang-Chieh(Jay) Chen，台湾国立交通大学本科（2004年）+密歇根大学硕士（2010年）+UCLA博士（2015年）。现为Google研究员。   
->个人主页：   
->http://liangchiehchen.com/
-
-DeepLab针对FCN主要做了如下改进：
-
-1.用Dilated convolution取代Pooling操作。因为前者能够更好的保持空间结构信息。
-
-2.使用全连接条件随机场（Dense Conditional Random Field）替换最后的Softmax层。这里的CRF或者Softmax，也被称为语义分割网络的后端。
-
-常见的后端还有Markov Random Field、Gaussian CRF等。这些都与概率图模型（Probabilistic Graphical Models）有关。
-
-总之，目前的主流一般是**FCN+PGM**的模式。然而后端的计算模式和普通的NN有所差异，因此如何将后端NN化，也是当前研究的关键点。
-
-# ENet
-
-ENet是波兰的Adam Paszke于2016年提出的。
-
-论文：
-
-《ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation》
-
-代码：
-
-https://github.com/TimoSaemann/ENet
-
-![](/images/article/ENet.png)
-
-ENet的网络结构如上图所示。其中的initial和bottleneck结构分别见下图的(a)和(b)：
-
-![](/images/article/ENet_2.png)
-
-从大的结构来看，ENet的设计主要参考了Resnet和SqueezeNet。
-
-ENet对Pooling操作进行了一定的修改：
-
-1.下采样时，除了输出Pooling值之外，还输出Pooling值的位置，即所谓的Pooling Mask。
-
-2.上采样时，利用第1步的Pooling Mask信息，获得更好的精确度。
-
-显然这个修改在思路上和Dilated convolution是非常类似的。
-
-参考：
-
-http://blog.csdn.net/zijinxuxu/article/details/67638290
-
-论文中文版blog
-
-# Global Convolutional Network
-
-Global Convolutional Network是孙剑团队的Chao Peng于2017年提出的。
-
-论文：
-
-《Large Kernel Matters -- Improve Semantic Segmentation by Global Convolutional Network》
-
->孙剑，西安交通大学博士（2003年）。后一直在微软亚洲研究院工作，担任首席研究员。2016年7月正式加入旷视科技担任首席科学家。
-
-![](/images/article/GCN.png)
-
-上图是论文的关键结构GCN，它主要用于计算超大卷积核。这里借鉴了Separable convolution的思想（将一个k x k的卷积运算，转换成1 x k + k x 1的卷积运算）。
-
-然而正如我们在《深度学习（九）》中指出的，不是所有的卷积核都满足可分离条件。单纯采用先1 x k后k x 1，或者先k x 1后1 x k，效果都是不好的。而将两者结合起来，可以有效提高计算的精度。
-
-![](/images/article/GCN_2.png)
-
-这是GCN提出的另一个新结构。
-
-![](/images/article/GCN_3.png)
-
-上图是GCN的整体结构图。
-
-参考：
-
-http://blog.csdn.net/bea_tree/article/details/60977512
-
-旷视最新：Global Convolutional Network
 

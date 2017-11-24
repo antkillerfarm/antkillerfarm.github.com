@@ -268,6 +268,14 @@ http://blog.csdn.net/gitchat/article/details/78546894
 
 TensorFlow人脸识别网络与对抗网络搭建
 
+https://mp.weixin.qq.com/s/_NDw7pFmDB07mliHTA6VYQ
+
+旷视行人再识别（ReID）突破
+
+https://mp.weixin.qq.com/s/f0a5MZn9ljf-0GMdb8ktZA
+
+从人脸识别到行人重识别，下一个风口
+
 # 手势识别
 
 https://zhuanlan.zhihu.com/p/26630215

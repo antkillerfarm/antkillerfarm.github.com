@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  云计算论文集, Spark, 数据描述语言
+title:  云计算论文集, Spark
 category: AI 
 ---
 
@@ -197,160 +197,165 @@ http://www.cnblogs.com/bluejoe/p/5115845.html
 
 Hive体系结构介绍
 
-# 数据描述语言
+# DL参考资源
 
-## JSON
+https://mp.weixin.qq.com/s/eqI5fVuF68RQWb1a5O219w
 
-JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式。 易于人阅读和编写。同时也易于机器解析和生成。 它基于JavaScript Programming Language, Standard ECMA-262 3rd Edition - December 1999的一个子集。
+腾讯研发“一键卸妆” ,让女神秒变路人!
 
-其官网为：
+https://mp.weixin.qq.com/s/NdwbnEMEVfiX6YGepK9PBA
 
-http://json.org/
+追根溯源！一图看尽深度学习架构谱系
 
-官网上列出了各种语言的JSON解析库。其中C语言的解析库中以json-c最为流行，其官网为：
+https://mp.weixin.qq.com/s/_IOdMk8CJbZkeYO9CDDgZQ
 
-https://github.com/json-c/json-c
+AI设计师“鲁班”进化史：每秒制作8000张双11海报，没有一张雷同！
 
-和XML Path类似，JSON也定义了自己的JSON Path。参见：
+https://mp.weixin.qq.com/s/UsoLQbrwj6rpLUAV5kYkUA
 
-http://goessner.net/articles/JsonPath/
+大数据和网络分析的可扩展算法
 
-参考：
+https://mp.weixin.qq.com/s/vtJUM94oYpN_h3Sdg3exLQ
 
-https://addons.mozilla.org/zh-CN/firefox/addon/jsonview/
+张益肇：AI+医疗，微软有哪些布局？
 
-jsonview是一个用于检验JSON格式是否合法的Firefox插件。
+https://mp.weixin.qq.com/s/I9dm8uDEqO0X19s758jOGw
 
-http://www.bejson.com/
+良心GitHub项目：各种机器学习任务的顶级结果（论文）汇总
 
-一个在线验证JSON语法的库。
+https://mp.weixin.qq.com/s/UfmyH4BBWwErakrOoselQA
 
-https://docs.python.org/2/library/json.html
+随机计算图：在随机结点中执行反向传播的新方法
 
-python自带的json包的文档
+https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
 
-## Jackson
+面向无监督任务：DeepMind提出神经离散表示学习生成模型VQ-VAE
 
-Jackson是常用的Java语言的JSON库。
+https://mp.weixin.qq.com/s/Yoledi-OYgJmafxKBlHVPg
 
-Maven安装：
+国科大本科生以第一作者身份发表AAAI论文，用神经网络分析三维模型
 
-{% highlight text %}
-<dependency>
-	<groupId>com.fasterxml.jackson.core</groupId>
-	<artifactId>jackson-databind</artifactId>
-	<version>2.6.4</version>
-</dependency>
-{% endhighlight %}
+https://mp.weixin.qq.com/s/5vDSrWeUvlBuZgmX0R9pBQ
 
-Jackson提供了三种处理方法：
+斯坦福“黑盒学习”研究：使用神经变分推理的无向图模型，可替代“采样”
 
-**流式API**：（也称为"增量分析/生成"）读取和写入 JSON 内容作为离散事件。类似于XML SAX。
+https://mp.weixin.qq.com/s/t0lGL66YIJwIvI4emNfN7Q
 
-com.fasterxml.jackson.JsonParser读，com.fasterxml.jackson.JsonGenerator写。
+UC Berkeley新研究：通过深度学习建模注意点采样阵列
 
-**树模型**：提供一个JSON文档可变内存树的表示形式。类似于XML DOM。
+https://mp.weixin.qq.com/s/zRdJktyk1LZWUd2cyTjpiw
 
-com.fasterxml.jackson.databind.ObjectMapper生成树；树组成JsonNode节点集。
+基于图像检索的行人重识别
 
-**数据绑定**：JSON和POJO相互转换，基于属性访问器规约或注解。
+https://mp.weixin.qq.com/s/w8l8T1zx0uGF92dC2PVB6g
 
-Jackson不支持JSON Path，可以使用以下项目：
+Yann LeCun说是时候放弃概率论了，因果关系才是理解世界的基石
 
-https://github.com/jayway/JsonPath
+https://mp.weixin.qq.com/s/_gKE_nHsCYD0sYXC9jhvLA
 
-这个项目的后端可以选择Jackson或Gson。
+超越Softmax瓶颈：一种高秩RNN语言模型
 
-## BSON
+https://mp.weixin.qq.com/s/3bAn-ev14lO9uxQzE0Tk0Q
 
-Binary JSON是在JSON的基础上，添加了索引及数据类型的一种二进制格式。相比JSON，它牺牲了可阅读性，得到了可遍历性和高效性。
+如何使用深度学习去除人物图像背景
 
-BSON最早由MongoDB项目提出并使用，它的官网为：
+https://mp.weixin.qq.com/s/MnK2LTWR9qEKiiz3OMsSMQ
 
-http://bsonspec.org/
+深度学习漂亮的图像软分割一览
 
-从中可以看出大多数语言的BSON解析库，都是MongoDB项目提供的。
+https://mp.weixin.qq.com/s/ZV32xDgGTriIAUbHohc90Q
 
-## YAML
+4个学生，1个暑假，百度深度学习开源平台PaddlePaddle诞生了智能桃子分拣器
 
-YAML(Yet Another Markup Language)是JSON的超集。它没有JSON那么流行，主要被用于科学计算领域，比如OpenCV项目。它的官网为：
+https://mp.weixin.qq.com/s/0BZxFKjcwxKj7R66NRIWqQ
 
-http://yaml.org/
+UC Berkeley新研究：多视角图像3D模型重建技术
 
-这个网站很有特色，它本身就是一个YAML文件。
+https://mp.weixin.qq.com/s/ciqQMezcB-oM24X8eQqTNg
 
-## Protocol Buffers
+花式玩耍Spatial Transformation Networks
 
-Protocol Buffers是Google公司开发的一种数据描述语言。它的官网为：
+https://mp.weixin.qq.com/s/kbqTHIOzAj1aERl4tm-kVA
 
-https://github.com/google/protobuf
+2017上半年无监督特征学习研究成果汇总
 
-文档：
+https://mp.weixin.qq.com/s/tZoD4RfkDDDBxTgqDJvI3g
 
-https://developers.google.com/protocol-buffers/
+35个热门又实用的开源AI项目！
 
-Tutorials：
+https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
 
-https://developers.google.com/protocol-buffers/docs/tutorials
+终身机器学习: 一种持续学习的范式
 
-安装：
+https://mp.weixin.qq.com/s/aCWAU2RXk9fTzfFqOyjqUw
 
-`sudo apt install protobuf-compiler python-protobuf`
+能自主学习的人工突触，为无监督学习开辟新的路径
 
-这是一种注重效率，而可阅读性几乎为零的二进制格式。其效率超过BSON，但除非有相关格式文件，否则完全无法阅读。而BSON作为JSON的扩展，只有扩展的那部分不可读，其余部分仍保留JSON的可读性。
+https://mp.weixin.qq.com/s/9kMz-eNRwC51Fi0-7BfKzA
 
-格式文件是Protocol Buffers中的重要概念，也是和JSON等格式在使用思路上最大的区别。
+Active Learning: 一个降低深度学习时间，空间，经济成本的解决方案
 
-JSON采用的是，不同的语言提供不同的库来解析的方式。
+https://mp.weixin.qq.com/s/0IAdT2cP_OIGwwXmMaCFfw
 
-而Protocol Buffers使用同一个格式文件，为不同语言生成相应的代码。这和CORBA的做法很类似。
+如何利用深度学习诊断心脏病？
 
-与Protocol Buffers类似的方案，还有Facebook提出的Thrift、ZeroC提出的Slice和Hadoop Avro。
+https://mp.weixin.qq.com/s/YbdiEHb8ld1pp1ehgBzTOQ
 
-### 简易示例
+将未来信息作为正则项，Twin Networks加强RNN对长期依赖的建模能力
 
-test.proto:
+https://mp.weixin.qq.com/s/fqpZ8EHgiNupXumvTMSecw
 
-{% highlight text %}
-message TestMsg
-{
-    required int32 id=1;
-    required int32 time=2;
-    optional string note=3;
-}
-{% endhighlight %}
+北大团队研发“车脸”识别系统，不看车牌看外观特征实现精确识别
 
-`protoc --python_out=./python/ test.proto`
+https://mp.weixin.qq.com/s/ws1R-VPyJY6J18OttBDYog
 
-test.py:
+超少量数据训练神经网络：IEEE论文提出径向变换实现图像增强
 
-{% highlight python %}
-import google.protobuf
-from test_pb2 import TestMsg
-import time
+https://mp.weixin.qq.com/s/eyl0NMa1p_RmQIwnweuBgw
 
-test = TestMsg()
-test.id=1
-test.time=int(time.time())
-test.string="asdftest"
-print test
-test_str = test.SerializeToString()
-print test_str
+10张图盘点计算机视觉、语音和文本理解里程碑
 
-test1 = TestMsg()
-test1.ParseFromString(test_str)
-print test1
-{% endhighlight %}
+https://mp.weixin.qq.com/s/IMx9lcMVAyB9hy_77DaJ3Q
 
-示例代码下载：
+孙剑：计算力增加10000倍，算法如何设计
 
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/protobuf
+https://mp.weixin.qq.com/s/-b8FuEQlpEb5G0L0QAxVEA
 
-参考：
+如何使用深度学习为照片自动生成文本描述
 
-http://www.cnblogs.com/o87481299/p/4199892.html
+https://mp.weixin.qq.com/s/5H3wk93QoxHteR_HD2hWiA
 
-python google protobuf使用
+DeepMind提出架构搜索新方法：使用分层表示，时间短精度高
 
+https://mp.weixin.qq.com/s/tk7ghSXi2jz8SYbBeWR8jg
 
+神经网络模糊测试：将DNN应用于软件安全测试
+
+https://mp.weixin.qq.com/s/0E4VpN9z2sNvsGCvOI5RVA
+
+稀疏&集成的卷积神经网络学习
+
+https://mp.weixin.qq.com/s/4wMvfnvTaWF10Xq7HqbO-A
+
+稀疏&集成的卷积神经网络学习（续）
+
+https://mp.weixin.qq.com/s/aBDx_602GZXA36awEyjb-A
+
+从深度学习研究论文中自动生成可执行源代码
+
+https://mp.weixin.qq.com/s/i8iQtCC7ahXLY1a1wOacsA
+
+Science：最新发现哈希可能是大脑的通用计算原理
+
+https://mp.weixin.qq.com/s/7ccEaDRngVo42OSU6FBlVg
+
+从视频到语句，优必选获TRECVID 2017子任务冠军
+
+https://mp.weixin.qq.com/s/xRLXCPF92vT7Gs-NLs2RGA
+
+谷歌、百度等搜索巨头应该从果蝇身上学习什么？专访解读果蝇算法
+
+https://mp.weixin.qq.com/s/_7yx6IywJ1EOClZUcr0AsA
+
+PNAS：绘制情绪图谱，人类内心的表情包其实很丰富
 

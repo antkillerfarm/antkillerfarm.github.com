@@ -1,10 +1,36 @@
 ---
 layout: post
-title:  深度学习（十二）——RCNN
+title:  深度学习（十二）——目标检测, RCNN
 category: DL 
 ---
 
-# 目标检测（续）
+# 目标检测
+
+## 概述
+
+object detection是计算机视觉的一个重要的分支。类似的分支还有目标分割、目标识别和目标跟踪。
+
+以下摘录自Sensetime CTO曹旭东的解读：
+
+传统方法使用滑动窗口的框架，把一张图分解成几百万个不同位置不同尺度的子窗口，针对每一个窗口使用分类器判断是否包含目标物体。传统方法针对不同的类别的物体，一般会设计不同的特征和分类算法，比如人脸检测的经典算法是**Harr特征+Adaboosting分类器**；行人检测的经典算法是**HOG(histogram of gradients)+Support Vector Machine**；一般性物体的检测的话是**HOG特征+DPM(deformable part model)的算法**。
+
+基于深度学习的物体检测的经典算法是RCNN系列：RCNN，fast RCNN(Ross Girshick)，faster RCNN(少卿、凯明、孙剑、Ross)。这三个工作的核心思想是分别是：使用更好的CNN模型判断候选区域的类别；复用预计算的sharing feature map加快模型训练和物体检测的速度；进一步使用sharing feature map大幅提高计算候选区域的速度。其实基于深度学习的物体检测也可以看成对海量滑动窗口分类，只是用全卷积的方式。
+
+RCNN系列算法还是将物体检测分为两个步骤。现在还有一些工作是端到端(end-to-end)的物体检测，比如说YOLO(You Only Look Once: Unified, Real-Time Object Detection)和SSD(SSD: Single Shot MultiBox Detector)这样的算法。这两个算法号称和faster RCNN精度相似但速度更快。物体检测正负样本极端非均衡，two-stage cascade可以更好的应对非均衡。端到端学习是否可以超越faster RCNN还需要更多研究实验。
+
+## 进化史
+
+DPM(2007)->RCNN(2014)->Fast RCNN->Faster RCNN
+
+![](/images/article/rcnn_2.png)
+
+![](/images/article/rcnn_4.jpg)
+
+参考：
+
+http://blog.csdn.net/ttransposition/article/details/12966521
+
+DPM(Deformable Parts Model)--原理
 
 ## CV实践的难点
 
@@ -140,6 +166,14 @@ https://mp.weixin.qq.com/s/x0r-2J_YdYgIQlRDqvGofg
 
 CVPR 2017论文解读：用于单目图像车辆3D检测的多任务网络
 
+http://blog.csdn.net/zhang11wu4/article/details/53967688
+
+目标检测最新方法介绍
+
+https://mp.weixin.qq.com/s/RNHgm1GW79iXVe2tit6IyA
+
+旷视&清华大学提出新型两步检测器Light-Head R-CNN
+
 # RCNN
 
 《深度学习（五）》中提到的AlexNet、VGG、GoogleNet主要用于图片分类。而这里介绍的RCNN(Regions with CNN)主要用于目标检测。
@@ -267,40 +301,6 @@ Selective Search的效果类似下图：
 一般使用IOU（Intersection over Union，交并比）指标，来衡量两个bounding box的重叠度：
 
 $$IOU(A,B)=\frac{A \cap B}{A \cup B}$$
-
-## 非极大值抑制（NMS）
-
-RCNN会从一张图片中找出n个可能是物体的矩形框，然后为每个矩形框为做类别分类概率（如上图所示）。我们需要判别哪些矩形框是没用的。
-
-Non-Maximum Suppression顾名思义就是抑制不是极大值的元素，搜索局部的极大值。这个局部代表的是一个邻域，邻域有两个参数可变，一是邻域的维数，二是邻域的大小。
-
-下面举例说明NMS的做法：
-
-假设有6个矩形框，根据分类器的类别和分类概率做排序，假设从小到大属于车辆的概率分别为A、B、C、D、E、F。
-
-**Step 1**：从最大概率矩形框F开始，分别判断A~E与F的重叠度IOU是否大于某个设定的阈值。（**确定领域**）
-
-**Step 2**：假设B、D与F的重叠度超过阈值，那么就扔掉B、D；并标记第一个矩形框F，是我们保留下来的。（**抑制领域内的非极大值**）
-
-**Step 3**：从剩下的矩形框A、C、E中，选择概率最大的E，然后判断E与A、C的重叠度，重叠度大于一定的阈值，那么就扔掉；并标记E是我们保留下来的第二个矩形框。（**确定下一个领域，并抑制该领域内的非极大值**）
-
-参考：
-
-http://mp.weixin.qq.com/s/Cg9tHG1YgDCdI3NPYl5-vQ
-
-如何用Soft-NMS实现目标检测并提升准确率
-
-## ground truth
-
-在有监督学习中，数据是有标注的，以(x,t)的形式出现，其中x是输入数据，t是标注。正确的t标注是ground truth，错误的标记则不是。（也有人将所有标注数据都叫做ground truth）
-
-在目标检测任务中，ground truth主要包括box和category两类信息。
-
-## 正负样本问题
-
-一张照片我们得到了2000个候选框。然而人工标注的数据一张图片中就只标注了正确的bounding box，我们搜索出来的2000个矩形框也不可能会出现一个与人工标注完全匹配的候选框。因此在CNN阶段我们需要用IOU为2000个bounding box打标签。
-
-如果用selective search挑选出来的候选框与物体的人工标注矩形框的重叠区域IoU大于0.5，那么我们就把这个候选框标注成物体类别（正样本），否则我们就把它当做背景类别（负样本）。
 
 
 

@@ -1,8 +1,116 @@
 ---
 layout: post
-title:  深度学习（十八）——Mask R-CNN, 目标跟踪, 图像超分辨率算法, Image Caption Generation
+title:  深度学习（十八）——视频目标分割, Fast Image Processing, OpenPose, Mask R-CNN, 目标跟踪, 图像超分辨率算法, Image Caption Generation
 category: DL 
 ---
+
+# 视频目标分割
+
+视频目标分割任务和语义分割有两个基本区别：
+
+1.视频目标分割任务分割的是一般的、非语义的目标；
+
+2.视频目标分割添加了一个时序模块：它的任务是在视频的每一连续帧中寻找感兴趣目标的对应像素。
+
+![](/images/article/Segmentation.png)
+
+上图是Segmentation的细分，其中的每一个叶子都有一个示例数据集。
+
+基于视频任务的特性，我们可以将问题分成两个子类：
+
+无监督（亦称作视频显著性检测）：寻找并分割视频中的主要目标。这意味着算法需要自行决定哪个物体才是“主要的”。
+
+半监督：在输入中（只）给出视频第一帧的正确分割掩膜，然后在之后的每一连续帧中分割标注的目标。
+
+参考：
+
+http://mp.weixin.qq.com/s/pGrzmq5aGoLb2uiJRYAXVw
+
+一文概览视频目标分割
+
+https://www.zhihu.com/question/52185576
+
+视频中的目标检测与图像中的目标检测具体有什么区别？
+
+# Fast Image Processing
+
+![](/images/article/FIP.png)
+
+上图是照片界常用的几种修图方式之一。一般将这些图片风格转换的算法，称为图像处理算子（image processing operators）。如何加速image processing operators的计算，就成为了学界研究的课题之一。
+
+本文提出的模型就是用来加速image processing operators计算的。它是Intel Lab的Qifeng Chen和Jia Xu于2017年提出的。
+
+论文：
+
+《Fast Image Processing with Fully-Convolutional Networks》
+
+代码：
+
+https://github.com/CQFIO/FastImageProcessing
+
+Demo网站：
+
+http://cqf.io/ImageProcessing/
+
+这个课题一般使用MIT-Adobe FiveK Dataset作为基准数据集。网址：
+
+http://groups.csail.mit.edu/graphics/fivek_dataset/
+
+这个数据集包含了5K张原始照片，并雇用了5个专业修图师，对每张图片进行修图。
+
+众所周知，多层神经网络只要有足够的深度和宽度，就可以任意逼近任意连续函数。然而从Fast Image Processing的目的来说，神经网络的深度和宽度注定是有限的，否则肯定快不了。而这也是该课题的研究意义所在。
+
+本文只使用了MIT-Adobe数据集中的原始图片，并使用了10种常用的算子对图片进行处理。因此，该网络训练时的输入是原始图片，而输出是处理后的图片。
+
+![](/images/article/MCA.png)
+
+上图是本文模型的网络结构图。它的设计特点如下：
+
+1.采用Multi-Scale Context Aggregation作为基础网络。MCA的内容参见《深度学习（九）》。
+
+2.传统MCA一般有下采样的过程，但这里由于网络输入和输出的尺寸维度是一样的，因此，所有的feature maps都是等大的。
+
+3.借鉴FCN的思想，去掉了池化层和全连接层。
+
+4.L1~L3主要用于图片的特征提取和升维，而L4~L5则用于特征的聚合和降维，并最终和输出数据的尺寸维度相匹配。
+
+在normalization方面，作者发现有的operators经过normalization之后，精度会上升，而有的精度反而会下降，因此为了统一模型，定义如下的normalization运算：
+
+$$\Psi^s(x)=\lambda_sx+\mu_sBN(x)$$
+
+Loss函数为：
+
+$$\mathcal{l(K,B)}=\sum_i\frac{1}{N_i}\|\hat f (I_i;\mathcal{K,B})-f(I_i)\|^2$$
+
+这实际上就是RGB颜色空间的MSE误差。
+
+为了检验模型的泛化能力，本文还使用RAISE数据集作为交叉验证的数据集。该数据集的网址：
+
+http://mmlab.science.unitn.it/RAISE/
+
+RAISE数据集包含了8156张高分辨率原始照片，由3台不同的相机拍摄，并给出了相机的型号和参数。
+
+# OpenPose
+
+OpenPose是一个实时多人关键点检测的库，基于OpenCV和Caffe编写。它是CMU的Yaser Sheikh小组的作品。
+
+>Yaser Ajmal Sheikh，巴基斯坦信德省易司哈克工程科学与技术学院本科（2001年）+中佛罗里达大学博士（2006年）。现为CMU副教授。
+
+![](/images/article/openpose.png)
+
+OpenPose的使用效果如上图所示。
+
+论文：
+
+《Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields》
+
+《Hand Keypoint Detection in Single Images using Multiview Bootstrapping》
+
+《Convolutional pose machines》
+
+代码：
+
+https://github.com/CMU-Perceptual-Computing-Lab/openpose
 
 # Mask R-CNN
 
@@ -168,6 +276,10 @@ https://zhuanlan.zhihu.com/p/25912465
 
 胎儿MRI高分辨率重建技术：现状与趋势
 
+https://mp.weixin.qq.com/s/i-im1sy6MNWP1Fmi5oWMZg
+
+华为推出新型HiSR：移动端的超分辨率算法
+
 # Image Caption Generation
 
 Image Caption Generation的目标是：给定一张图片，让计算机用一句话来描述这张图片。
@@ -185,73 +297,6 @@ http://geek.csdn.net/news/detail/98776
 https://zhuanlan.zhihu.com/p/30893160
 
 CVPR2017 Image Caption有关论文总结
-
-# ACBM算法
-
-ACBM算法是在AC（Aho-Corasick）自动机（UNIX上的fgrep命令使用的就是AC算法）的基础之上，引入了BM（Boyer-Moore）算法的多模扩展，实现的高效的多模匹配。和AC自动机不同的是，ACBM算法不需要扫描目标文本串中的每一个字符，可以利用本次匹配不成功的信息，跳过尽可能多的字符，实现高效匹配。
-
->注： Alfred Vaino Aho，1941年生，加拿大计算机科学家。普林斯顿大学博士，长期供职于贝尔实验室，后为哥伦比亚大学教授。egrep和fgrep的发明人，AWK语言的联合发明人。著有《Principles of Compiler Design Compilers: Principles, Techniques, and Tools》。该书由于封面上有龙图案，又被称为“龙书”，是编译原理方面的权威书籍。2003年获IEEE John von Neumann Medal。
-
->Margaret John Corasick，贝尔实验室研究员。
-
->Robert Stephen Boyer，德克萨斯大学教授。
-
->J Strother Moore，德克萨斯大学教授。Boyer的好朋友，两人的绝大多数成就都是合作完成的。
-
-参见：
-
-http://blog.csdn.net/sealyao/article/details/6817944
-
-ACBM算法
-
-https://mp.weixin.qq.com/s/yVOgAuD9hEYAMdLyvae2VA
-
-最长公共子序列与最长公共子串
-
-https://mp.weixin.qq.com/s/8rP3fF9iVnplhkFmxuj6fw
-
-一文读懂KMP算法
-
-# 高斯过程回归
-
-从大的分类来说，机器学习的算法可分为两类：
-
-1.定义一个模型，用训练数据训练模型的参数，然后用训练好的模型进行预测。这种方法的缺点在于，预测效果和模型与样本的匹配程度有关。比如对非线性样本采用线性模型，其预测效果通常不会太好。但是增加模型的复杂度，又会导致过拟合。
-
-2.定义一个函数分布，赋予每一种可能的函数一个先验概率，可能性越大的函数，其先验概率越大。但是可能的函数往往为一个不可数集，即有无限个可能的函数，随之引入一个新的问题：如何在有限的时间内对这些无限的函数进行选择？一种有效解决方法就是高斯过程回归(Gaussian process regression，GPR)。
-
->注：Radford M. Neal，1956年生，加拿大科学家。多伦多大学博士（1995）和教授。贝叶斯神经网络的发明人。导师为Geoffrey Hinton。   
->个人主页：http://www.cs.toronto.edu/~radford/
-
->Danie G. Krige，1919～2013，南非矿业工程师和统计学家，威特沃特斯兰德大学教授。地理统计学早期的代表人物之一。
-
-http://www.cnblogs.com/hxsyl/p/5229746.html
-
-https://mqshen.gitbooks.io/prml/content/Chapter6/gaussian/gaussian_processes_regression.html
-
-http://www.gaussianprocess.org/gpml/chapters/RW.pdf
-
-http://people.cs.umass.edu/~wallach/talks/gp_intro.pdf
-
-http://wenku.baidu.com/view/72f80113915f804d2b16c173.html
-
-# 压缩感知
-
-http://blog.csdn.net/abcjennifer/article/details/7721834
-
-初识压缩感知Compressive Sensing
-
-http://blog.csdn.net/abcjennifer/article/details/7724360
-
-中国压缩传感资源（China Compressive Sensing Resources）
-
-http://blog.csdn.net/xiahouzuoxin/article/details/38820925
-
-白话压缩感知（含Matlab代码）
-
-http://blog.csdn.net/abcjennifer/article/details/7748833
-
-压缩感知进阶——有关稀疏矩阵
 
 
 

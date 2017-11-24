@@ -1,8 +1,148 @@
 ---
 layout: post
-title:  深度学习（十七）——Ultra Deep Network, 视频目标分割, Fast Image Processing, OpenPose
+title:  深度学习（十七）——SegNet, DeconvNet, DeepLab, ENet, GCN, Ultra Deep Network
 category: DL 
 ---
+
+# SegNet
+
+SegNet是Vijay Badrinarayanan于2015年提出的。
+
+论文：
+
+《SegNet: A Deep Convolutional Encoder-Decoder Architecture for Robust Semantic Pixel-Wise Labelling》
+
+代码：
+
+https://github.com/alexgkendall/caffe-segnet
+
+除此之外，还有一个demo网站：
+
+http://mi.eng.cam.ac.uk/projects/segnet/
+
+>Vijay Badrinarayanan，印度人，班加罗尔大学本科（2001年）+Georgia理工硕士（2005年）+法国INRIA博士（2009年）。剑桥大学讲师。
+
+>Alex Kendall，新西兰奥克兰大学本科（2014年）+剑桥大学博士在读。本文二作，但是代码和demo都是他写的。
+
+>Roberto Cipolla，剑桥大学本科（1984年）+宾夕法尼亚大学硕士（1985年）+牛津大学博士（1991年）。剑桥大学教授。
+
+![](/images/article/SegNet.png)
+
+相比于CNN下采样阶段的结构规整，FCN上采样时的结构就显得凌乱了。因此，SegNet采用了几乎和下采样对称的上采样结构。
+
+参考：
+
+http://blog.csdn.net/fate_fjh/article/details/53467948
+
+SegNet
+
+# DeconvNet
+
+DeconvNet是韩国的Hyeonwoo Noh于2015年提出的。
+
+论文：
+
+《Learning Deconvolution Network for Semantic Segmentation》
+
+代码：
+
+https://github.com/HyeonwooNoh/DeconvNet
+
+![](/images/article/DeconvNet.jpg)
+
+从上图可见，DeconvNet和SegNet的结构非常类似，只不过DeconvNet在encoder和decoder之间使用了FC层作为中继。
+
+这样的encoder-decoder对称结构也被称为U-Net（因为它们的形状像U字形）：
+
+![](/images/article/U_Net.jpg)
+
+# DeepLab
+
+DeepLab共有3个版本，分别对应3篇论文：
+
+《Semantic Image Segmentation with Deep Convolutional Nets and Fully Connected CRFs》
+
+《DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs》
+
+《Rethinking Atrous Convolution for Semantic Image Segmentation》
+
+>Liang-Chieh(Jay) Chen，台湾国立交通大学本科（2004年）+密歇根大学硕士（2010年）+UCLA博士（2015年）。现为Google研究员。   
+>个人主页：   
+>http://liangchiehchen.com/
+
+DeepLab针对FCN主要做了如下改进：
+
+1.用Dilated convolution取代Pooling操作。因为前者能够更好的保持空间结构信息。
+
+2.使用全连接条件随机场（Dense Conditional Random Field）替换最后的Softmax层。这里的CRF或者Softmax，也被称为语义分割网络的后端。
+
+常见的后端还有Markov Random Field、Gaussian CRF等。这些都与概率图模型（Probabilistic Graphical Models）有关。
+
+总之，目前的主流一般是**FCN+PGM**的模式。然而后端的计算模式和普通的NN有所差异，因此如何将后端NN化，也是当前研究的关键点。
+
+# ENet
+
+ENet是波兰的Adam Paszke于2016年提出的。
+
+论文：
+
+《ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation》
+
+代码：
+
+https://github.com/TimoSaemann/ENet
+
+![](/images/article/ENet.png)
+
+ENet的网络结构如上图所示。其中的initial和bottleneck结构分别见下图的(a)和(b)：
+
+![](/images/article/ENet_2.png)
+
+从大的结构来看，ENet的设计主要参考了Resnet和SqueezeNet。
+
+ENet对Pooling操作进行了一定的修改：
+
+1.下采样时，除了输出Pooling值之外，还输出Pooling值的位置，即所谓的Pooling Mask。
+
+2.上采样时，利用第1步的Pooling Mask信息，获得更好的精确度。
+
+显然这个修改在思路上和Dilated convolution是非常类似的。
+
+参考：
+
+http://blog.csdn.net/zijinxuxu/article/details/67638290
+
+论文中文版blog
+
+# Global Convolutional Network
+
+Global Convolutional Network是孙剑团队的Chao Peng于2017年提出的。
+
+论文：
+
+《Large Kernel Matters -- Improve Semantic Segmentation by Global Convolutional Network》
+
+>孙剑，西安交通大学博士（2003年）。后一直在微软亚洲研究院工作，担任首席研究员。2016年7月正式加入旷视科技担任首席科学家。
+
+![](/images/article/GCN.png)
+
+上图是论文的关键结构GCN，它主要用于计算超大卷积核。这里借鉴了Separable convolution的思想（将一个k x k的卷积运算，转换成1 x k + k x 1的卷积运算）。
+
+然而正如我们在《深度学习（九）》中指出的，不是所有的卷积核都满足可分离条件。单纯采用先1 x k后k x 1，或者先k x 1后1 x k，效果都是不好的。而将两者结合起来，可以有效提高计算的精度。
+
+![](/images/article/GCN_2.png)
+
+这是GCN提出的另一个新结构。
+
+![](/images/article/GCN_3.png)
+
+上图是GCN的整体结构图。
+
+参考：
+
+http://blog.csdn.net/bea_tree/article/details/60977512
+
+旷视最新：Global Convolutional Network
 
 # 语义分割的展望
 
@@ -105,113 +245,5 @@ https://zhuanlan.zhihu.com/p/28124810
 https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2651988934&idx=2&sn=0e5ffa195ef67a1371f3b5b223519121
 
 ResNets、HighwayNets、DenseNets：用 TensorFlow 实现超深度神经网络
-
-# 视频目标分割
-
-视频目标分割任务和语义分割有两个基本区别：
-
-1.视频目标分割任务分割的是一般的、非语义的目标；
-
-2.视频目标分割添加了一个时序模块：它的任务是在视频的每一连续帧中寻找感兴趣目标的对应像素。
-
-![](/images/article/Segmentation.png)
-
-上图是Segmentation的细分，其中的每一个叶子都有一个示例数据集。
-
-基于视频任务的特性，我们可以将问题分成两个子类：
-
-无监督（亦称作视频显著性检测）：寻找并分割视频中的主要目标。这意味着算法需要自行决定哪个物体才是“主要的”。
-
-半监督：在输入中（只）给出视频第一帧的正确分割掩膜，然后在之后的每一连续帧中分割标注的目标。
-
-参考：
-
-http://mp.weixin.qq.com/s/pGrzmq5aGoLb2uiJRYAXVw
-
-一文概览视频目标分割
-
-https://www.zhihu.com/question/52185576
-
-视频中的目标检测与图像中的目标检测具体有什么区别？
-
-# Fast Image Processing
-
-![](/images/article/FIP.png)
-
-上图是照片界常用的几种修图方式之一。一般将这些图片风格转换的算法，称为图像处理算子（image processing operators）。如何加速image processing operators的计算，就成为了学界研究的课题之一。
-
-本文提出的模型就是用来加速image processing operators计算的。它是Intel Lab的Qifeng Chen和Jia Xu于2017年提出的。
-
-论文：
-
-《Fast Image Processing with Fully-Convolutional Networks》
-
-代码：
-
-https://github.com/CQFIO/FastImageProcessing
-
-Demo网站：
-
-http://cqf.io/ImageProcessing/
-
-这个课题一般使用MIT-Adobe FiveK Dataset作为基准数据集。网址：
-
-http://groups.csail.mit.edu/graphics/fivek_dataset/
-
-这个数据集包含了5K张原始照片，并雇用了5个专业修图师，对每张图片进行修图。
-
-众所周知，多层神经网络只要有足够的深度和宽度，就可以任意逼近任意连续函数。然而从Fast Image Processing的目的来说，神经网络的深度和宽度注定是有限的，否则肯定快不了。而这也是该课题的研究意义所在。
-
-本文只使用了MIT-Adobe数据集中的原始图片，并使用了10种常用的算子对图片进行处理。因此，该网络训练时的输入是原始图片，而输出是处理后的图片。
-
-![](/images/article/MCA.png)
-
-上图是本文模型的网络结构图。它的设计特点如下：
-
-1.采用Multi-Scale Context Aggregation作为基础网络。MCA的内容参见《深度学习（九）》。
-
-2.传统MCA一般有下采样的过程，但这里由于网络输入和输出的尺寸维度是一样的，因此，所有的feature maps都是等大的。
-
-3.借鉴FCN的思想，去掉了池化层和全连接层。
-
-4.L1~L3主要用于图片的特征提取和升维，而L4~L5则用于特征的聚合和降维，并最终和输出数据的尺寸维度相匹配。
-
-在normalization方面，作者发现有的operators经过normalization之后，精度会上升，而有的精度反而会下降，因此为了统一模型，定义如下的normalization运算：
-
-$$\Psi^s(x)=\lambda_sx+\mu_sBN(x)$$
-
-Loss函数为：
-
-$$\mathcal{l(K,B)}=\sum_i\frac{1}{N_i}\|\hat f (I_i;\mathcal{K,B})-f(I_i)\|^2$$
-
-这实际上就是RGB颜色空间的MSE误差。
-
-为了检验模型的泛化能力，本文还使用RAISE数据集作为交叉验证的数据集。该数据集的网址：
-
-http://mmlab.science.unitn.it/RAISE/
-
-RAISE数据集包含了8156张高分辨率原始照片，由3台不同的相机拍摄，并给出了相机的型号和参数。
-
-# OpenPose
-
-OpenPose是一个实时多人关键点检测的库，基于OpenCV和Caffe编写。它是CMU的Yaser Sheikh小组的作品。
-
->Yaser Ajmal Sheikh，巴基斯坦信德省易司哈克工程科学与技术学院本科（2001年）+中佛罗里达大学博士（2006年）。现为CMU副教授。
-
-![](/images/article/openpose.png)
-
-OpenPose的使用效果如上图所示。
-
-论文：
-
-《Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields》
-
-《Hand Keypoint Detection in Single Images using Multiview Bootstrapping》
-
-《Convolutional pose machines》
-
-代码：
-
-https://github.com/CMU-Perceptual-Computing-Lab/openpose
 
 

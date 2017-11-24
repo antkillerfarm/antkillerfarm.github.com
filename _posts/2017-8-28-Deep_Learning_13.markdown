@@ -1,10 +1,44 @@
 ---
 layout: post
-title:  深度学习（十三）——SPPNet, Fast R-CNN, Faster R-CNN
+title:  深度学习（十三）——SPPNet, Fast R-CNN
 category: DL 
 ---
 
 # RCNN（续）
+
+## 非极大值抑制（NMS）
+
+RCNN会从一张图片中找出n个可能是物体的矩形框，然后为每个矩形框为做类别分类概率（如上图所示）。我们需要判别哪些矩形框是没用的。
+
+Non-Maximum Suppression顾名思义就是抑制不是极大值的元素，搜索局部的极大值。这个局部代表的是一个邻域，邻域有两个参数可变，一是邻域的维数，二是邻域的大小。
+
+下面举例说明NMS的做法：
+
+假设有6个矩形框，根据分类器的类别和分类概率做排序，假设从小到大属于车辆的概率分别为A、B、C、D、E、F。
+
+**Step 1**：从最大概率矩形框F开始，分别判断A~E与F的重叠度IOU是否大于某个设定的阈值。（**确定领域**）
+
+**Step 2**：假设B、D与F的重叠度超过阈值，那么就扔掉B、D；并标记第一个矩形框F，是我们保留下来的。（**抑制领域内的非极大值**）
+
+**Step 3**：从剩下的矩形框A、C、E中，选择概率最大的E，然后判断E与A、C的重叠度，重叠度大于一定的阈值，那么就扔掉；并标记E是我们保留下来的第二个矩形框。（**确定下一个领域，并抑制该领域内的非极大值**）
+
+参考：
+
+http://mp.weixin.qq.com/s/Cg9tHG1YgDCdI3NPYl5-vQ
+
+如何用Soft-NMS实现目标检测并提升准确率
+
+## ground truth
+
+在有监督学习中，数据是有标注的，以(x,t)的形式出现，其中x是输入数据，t是标注。正确的t标注是ground truth，错误的标记则不是。（也有人将所有标注数据都叫做ground truth）
+
+在目标检测任务中，ground truth主要包括box和category两类信息。
+
+## 正负样本问题
+
+一张照片我们得到了2000个候选框。然而人工标注的数据一张图片中就只标注了正确的bounding box，我们搜索出来的2000个矩形框也不可能会出现一个与人工标注完全匹配的候选框。因此在CNN阶段我们需要用IOU为2000个bounding box打标签。
+
+如果用selective search挑选出来的候选框与物体的人工标注矩形框的重叠区域IoU大于0.5，那么我们就把这个候选框标注成物体类别（正样本），否则我们就把它当做背景类别（负样本）。
 
 ## 使用SVM的问题
 
@@ -214,75 +248,4 @@ Fast R-CNN
 http://blog.csdn.net/shenxiaolu1984/article/details/51036677
 
 Fast RCNN算法详解
-
-# Faster R-CNN
-
-Faster-RCNN是任少卿2016年在MSRA提出的新算法。Ross Girshick和何恺明也是论文的作者之一。
-
->注：任少卿，中科大本科（2011年）+博士（2016年）。Momenta联合创始人+技术总监。   
->个人主页：   
->http://shaoqingren.com/
-
-论文：
-
-《Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks》
-
-代码：
-
-https://github.com/ShaoqingRen/faster_rcnn
-
-https://github.com/rbgirshick/py-faster-rcnn
-
-![](/images/article/faster_rcnn_p_2.png)
-
-上图是Faster R-CNN的结构图。
-
-Fast R-CNN尽管已经很优秀了，然而还有一个最大的问题在于：proposal阶段没有整合到CNN中。
-
-这个问题带来了两个不良影响：
-
-1.非end-to-end模型导致程序流程比较复杂。
-
-2.随着后续CNN步骤的简化，生成2k个候选bbox的Selective Search算法成为了整个计算过程的性能瓶颈。（无法利用GPU）
-
-## Region Proposal Networks
-
-Faster R-CNN最重要的改进就是使用区域生成网络（Region Proposal Networks）替换Selective Search。因此，faster RCNN也可以简单地看做是“**RPN+fast RCNN**”。
-
-![](/images/article/rpn.png)
-
-上图是RPN的结构图。和SPPNet的ROI映射做法类似，RPN直接在feature map，而不是原图像上，生成区域。
-
-由于Faster R-CNN最后会对bbox位置进行精调，因此这里生成区域的时候，只要大致准确即可。
-
-![](/images/article/rpn_feature_map.png)
-
-由于CNN所生成的feature map的尺寸，通常小于原图像。因此将feature map的点映射回原图像，就变成了上图所示的稀疏网点。这些网点也被称为原图感受野的中心点。
-
-把网点当成基准点，然后围绕这个基准点选取k个不同scale、aspect ratio的anchor。论文中用了3个scale（三种面积$$\left\{ 128^2, 256^2, 521^2  \right\}$$，如上图的红绿蓝三色所示），3个aspect ratio（{1:1,1:2,2:1}，如上图的同色方框所示）。
-
-![](/images/article/Anchors.png)
-
-anchor的后处理如上图所示。
-
-![](/images/article/Anchor_Pyramid.png)
-
-上图展示了Image/Feature Pyramid、Filter Pyramid和Anchor Pyramid的区别。
-
-## 定义损失函数
-
-![](/images/article/faster_rcnn_p_3.png)
-
-对于每个anchor，首先在后面接上一个二分类softmax（上图左边的Softmax），有2个score输出用以表示其是一个物体的概率与不是一个物体的概率 ($$p_i$$)。这个概率也可以理解为前景与后景，或者物体和背景的概率。
-
-然后再接上一个bounding box的regressor输出代表这个anchor的4个坐标位置（$$t_i$$），因此RPN的总体Loss函数可以定义为 ：
-
-$$L(\{p_i\},\{t_i\})=\frac{1}{N_{cls}}\sum_iL_{cls}(p_i,p_i^*)+\lambda \frac{1}{N_{reg}}\sum_ip_i^*L_{reg}(t_i,t_i^*)$$
-
-该公式的含义和计算都比较复杂，这里不再赘述。
-
-上图中，二分类softmax前后各添加了一个reshape layer，是什么原因呢？
-
-这与caffe的实现的有关。bg/fg anchors的矩阵，其在caffe blob中的存储形式为[batch size, 2x9, H, W]。这里的2代表二分类，9是anchor的个数。因为这里的softmax只分两类，所以在进行计算之前需要将blob变为[batch size, 2, 9xH, W]。之后再reshape回复原状。
-
 

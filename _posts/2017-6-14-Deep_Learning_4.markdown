@@ -136,6 +136,10 @@ https://mp.weixin.qq.com/s/zTNX_LeVMeHhJG7kPewn2g
 
 除了自然语言处理，你还可以用Word2Vec做什么？
 
+https://mp.weixin.qq.com/s/7dsrvHp6KIvlE-VXiUH1Rw
+
+HIN2Vec：异质信息网络中的表示学习
+
 ## 参考
 
 http://www.cnblogs.com/iloveai/p/word2vec.html
