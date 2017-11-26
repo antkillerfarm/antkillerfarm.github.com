@@ -50,7 +50,7 @@ http://blog.csdn.net/hjimce/article/category/3163421
 
 http://kubicode.me/
 
-一个深度学习的blog
+一个DL+ML的blog
 
 http://blog.csdn.net/aliceyangxi1987/
 
@@ -102,11 +102,11 @@ http://www.jianshu.com/u/b20d6310182a
 
 http://blog.csdn.net/xizero00
 
-一个DL的blog
+一个DL的blog，专注于torch、caffe
 
 http://shuokay.com/
 
-一个DL的blog
+一个DL的blog，专注于MXNet
 
 http://blog.csdn.net/shuzfan/
 
@@ -119,6 +119,14 @@ https://mp.weixin.qq.com/s/0u4eFeMbbsSgVPVKHbAK7g
 http://www.jianshu.com/p/2be349a89a12
 
 超过 150 个最佳机器学习，NLP和Python教程
+
+https://zhuanlan.zhihu.com/hsmyy
+
+一个DL的blog，专注于RL、CTC、FCN。
+
+https://zhuanlan.zhihu.com/personReid
+
+一个DL的blog，专注于行人重识别
 
 ## 教程
 
@@ -479,5 +487,10 @@ Yoshua Bengio实验室MILA开放面向初学者的PyTorch教程
 https://mp.weixin.qq.com/s/10nLPqBgQ1XJAP8jXqFU0g
 
 讲解Vision图像识别框架API详解
+
+https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q
+
+如何用百度深度学习框架PaddlePaddle做数据预处理
+
 
 

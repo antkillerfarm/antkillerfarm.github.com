@@ -6,6 +6,24 @@ category: DL
 
 # 词向量（续）
 
+## word2vec
+
+除了Bengio方案之外，早期人们还尝试过基于共生矩阵（Co-occurrence Matrix）SVD分解的Word Embedding方案。该方案对于少量语料有不错的效果，但一旦语料增大，计算量即呈指数级上升。
+
+这类方案的典型是Latent Semantic Analysis(LSA)。参见《机器学习（二十）》。
+
+Tomas Mikolov于2013年对Bengio方案进行了简化改进，提出了目前最为常用的word2vec方案。
+
+介绍word2vec的数学原理比较好的有：
+
+《Deep Learning实战之word2vec》，网易有道的邓澍军、陆光明、夏龙著。
+
+《word2vec中的数学》，peghoty著。该书的网页版：
+
+http://blog.csdn.net/itplus/article/details/37969519
+
+老惯例这里只对最重要的内容进行摘要。
+
 ### CBOW & Skip-gram
 
 ![](/images/article/word2vec.png)
@@ -254,37 +272,5 @@ $$\nabla U=\frac{\partial E}{\partial U}=\sum_t\frac{\partial e_t}{\partial U} \
 
 正因为RNN的状态和过去、现在都有关系，因此，RNN也被看作是一种拥有“记忆性”的神经网络。
 
-## RNN的训练困难
-
-理论上，RNN可以支持无限长的时间序列，然而实际情况却没这么简单。
-
-Yoshua Bengio在论文《On the difficulty of training recurrent neural networks》（http://proceedings.mlr.press/v28/pascanu13.pdf）中，给出了如下公式：
-
-$$||\prod_{k<i\le t} \frac{\partial h_{i}}{\partial h_{i-1}}|| \le \eta^{t-k}$$
-
-并指出当$$\eta < 1$$时，RNN会Gradient Vanish，而当$$\eta > 1$$时，RNN会Gradient Explode。
-
-这里显然不考虑$$\eta > 1$$的情况，因为Gradient Explode，直接会导致训练无法收敛，从而没有实用价值。
-
-因此有实用价值的，只剩下$$\eta < 1$$了，但是Gradient Vanish又注定了RNN所谓的“记忆性”维持不了多久，一般也就5～7层左右。
-
-上述内容只是一般性的讨论，实际训练还是有很多trick的。
-
-比如，针对$$\eta > 1$$的情况，可以采用Gradient Clipping技术，通过设置梯度的上限，来避免Gradient Explode。
-
-还可使用正交初始化技术，在训练之初就将$$\eta$$调整到1附近。
-
-## RNN的历史
-
-上面研究的RNN结构，又被称为Elman RNN。最早是Jeffrey Elman于1990年发明的。
-
-$$\begin{align}
-h_t &= \sigma_h(W_{h} x_t + U_{h} h_{t-1} + b_h) \\
-y_t &= \sigma_y(W_{y} h_t + b_y)
-\end{align}$$
-
-论文：
-
-《Finding Structure in Time》
 
 

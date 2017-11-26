@@ -1,10 +1,117 @@
 ---
 layout: post
-title:  深度学习（十一）——花式池化, Batch Normalization, Softmax详解
+title:  深度学习（十一）——Winograd
 category: DL 
 ---
 
 # Winograd（续）
+
+## 基本思想
+
+我们这里以一个简单的例子，介绍一下Fast Convolution的基本思想。
+
+复数运算$$(a+jb)(c+dj)=e+jf$$可以写成如下的矩阵形式：
+
+$$\begin{bmatrix}
+e \\ f \\
+\end{bmatrix}=
+\begin{bmatrix}
+c & -d \\
+d & c \\  
+\end{bmatrix}
+\begin{bmatrix}
+a \\ b \\  
+\end{bmatrix}$$
+
+上式包含了4个乘法和2个加法。
+
+我们知道，乘法和加法在硬件实现上的时间复杂度一般是不一样的，乘法运算所需的时间通常远大于加法所需的时间。因此，**用廉价运算代替昂贵运算**就成为了加速运算的一种方法。
+
+具体到上面的例子：
+
+$$\begin{cases}
+ac − bd = a ( c − d ) + d ( a − b )\\
+ad + bc = b ( c + d ) + d ( a − b ) \\
+\end{cases}$$
+
+这个公式包含了3个乘法和5个加法，也就是说我们用3个加法替代了1个乘法，显然只要1个乘法所需的时间大于3个加法的时间，这样的变换就是有意义的。
+
+上式可以写成如下的矩阵形式：
+
+$$\begin{bmatrix}
+e \\ f \\
+\end{bmatrix}=
+\begin{bmatrix}
+1 & 0 & 1 \\
+0 & 1 & 1 \\
+\end{bmatrix}\cdot
+\begin{bmatrix}
+c-d & 0 & 0 \\
+0 & c+d & 0 \\
+0 & 0 & d \\
+\end{bmatrix}\cdot
+\begin{bmatrix}
+1 & 0 \\
+0 & 1 \\
+1 & -1\\
+\end{bmatrix}\cdot
+\begin{bmatrix}
+a \\ b \\
+\end{bmatrix}=C \cdot H \cdot D \cdot x$$
+
+这里的H是对角矩阵。
+
+Fast Convolution算法主要有**基于Lagrange插值的Cook-Toom算法**和**基于中国剩余定理（Chinese remainder theorem）的Winograd算法**。
+
+## 向量卷积与多项式乘法
+
+在继续介绍之前，我们首先看一下向量卷积与多项式乘法之间的关系。
+
+我们首先来看一个简单的多项式乘法的例子：
+
+$$(x^2+2x+2)(3x+2)=3x^3+\color{red}{(2\times 3+1\times 2)}x^2+10x+4$$
+
+上式中红色的部分是有意保留下来没有合并的同类项，是不是感觉上和卷积运算十分类似呢？
+
+我们知道矩阵的定义，除了最原始的线性方程定义之外，还有线性向量空间定义。而多项式可以看做是以$${1,x,x^2,\dots}$$为基的空间向量，因此用多项式表示矩阵或者卷积运算，是一种很自然的方式。
+
+这是有限离散域的Convolution定义：
+
+$$(f* g)[n]=\sum_{m=-M}^M f[n-m]g[m]$$
+
+>注：这里的Convolution和DL领域的Convolution的定义略有不同，后者实际上是数学上的Cross-correlation运算，但稍加变化，就可以变为前者。
+
+由多项式乘法的规则和Convolution定义可得：（这里以2x2的Convolution为例）
+
+令$$h(p)=h_0+h_1p,x(p)=x_0+x_1p,s(p)=h(p)x(p)=s_0+s_1p+s_2p^2$$，则$$s(p)$$的系数$$s_i$$正好为i点的卷积值$$Conv_i(h,x)$$。
+
+上述事实用矩阵可表示为：
+
+$$\begin{bmatrix}
+s_0 \\ s_1 \\ s_2 \\
+\end{bmatrix}=
+\begin{bmatrix}
+h_0 & 0 \\
+h_1 & h_0 \\
+0 & h_1 \\
+\end{bmatrix}\cdot
+\begin{bmatrix}
+x_0 \\ x_1 \\
+\end{bmatrix}$$
+
+向量卷积与多项式乘法的这个性质，在数值计算领域应用的比较广泛。Matlab中多项式的乘法计算，实际上就是计算一个卷积。
+
+如果令p=10，则多项式乘法就变成了大整数乘法，因此卷积运算在大整数乘法中，也有很重要的地位。
+
+参见：
+
+http://www.cnblogs.com/larch18/p/4569495.html
+
+向量卷积与多项式乘法
+
+http://blog.sina.com.cn/s/blog_455c7a6001010t3h.html
+
+卷积和与多项式乘法的关系
 
 ## Cook-Toom algorithm
 
@@ -13,7 +120,7 @@ category: DL
 >Stephen Cook，1939年生，密歇根大学本科（1961年）+哈佛硕博（1962年、1966年）。多伦多大学教授，图灵奖获得者（1982年）。
 
 >Cook的生平虽然让我感兴趣，然而我更感兴趣的却是他的导师王浩。   
->王浩，1921年~1995年，数理逻辑学家，山东人。西南联大本科（1943年）+清华硕士（1945年）+哈佛博士（1948年）。先后执教于哈佛大学、牛津大学和洛克菲勒大学。英国皇家学会会员。IJCAI第一届“数学定理机械证明里程碑奖”获得者。
+>王浩，1921年~1995年，数理逻辑学家，山东人。西南联大本科（1943年）+清华硕士（1945年）+哈佛博士（1948年）。先后执教于哈佛大学、牛津大学和洛克菲勒大学。英国皇家学会会员。IJCAI第一届“数学定理机械证明里程碑奖”获得者。   
 >鉴于这是一个大路货的名字，这里特给出百度百科的网址：   
 >https://baike.baidu.com/item/王浩/22564
 
@@ -29,11 +136,73 @@ $$\beta_2=-1, h(\beta_2)=h_0-h_1, x(\beta_2)=x_0-x_1$$
 
 $$s(\beta_0)=h(\beta_0)x(\beta_0),s(\beta_1)=h(\beta_1)x(\beta_1),s(\beta_2)=h(\beta_2)x(\beta_2)$$
 
-有了3个已知点，就可以应用Lagrange插值了：
+有了3个已知点，就可以应用Lagrange插值了（Lagrange插值的内容可参见《机器学习（一）》）：
 
->Lagrange插值可参见《机器学习（一）》。
+$$\begin{align}s(p)&=s(\beta_0)\frac{(p-\beta_1)(p-\beta_2)}{(\beta_0-\beta_1)(\beta_0-\beta_2)}+s(\beta_1)\frac{(p-\beta_0)(p-\beta_2)}{(\beta_1-\beta_0)(\beta_1-\beta_2)}+s(\beta_2)\frac{(p-\beta_0)(p-\beta_1)}{(\beta_2-\beta_0)(\beta_2-\beta_1)}
+\\&=s(\beta_0)+p\left(\frac{s(\beta_1)-s(\beta_2)}{2}\right)+p^2\left(-s(\beta_0)+\frac{s(\beta_1)+s(\beta_2)}{2}\right)
+\\&=s_0+ps_1+p^2s_2
+\end{align}$$
 
-$$s(p)=s(\beta_0)=s_0+ps_1+p^2s_2$$
+上式用矩阵形式可表示为：
+
+$$\begin{bmatrix}
+s_0 \\ s_1 \\ s_2 \\
+\end{bmatrix}=
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & -1 \\
+-1 & 1 & 1 \\
+\end{bmatrix}\cdot
+\begin{bmatrix}
+s(\beta_0) \\ s(\beta_1)/2 \\ s(\beta_2)/2 \\
+\end{bmatrix}=
+\begin{bmatrix}
+c-d & 0 & 0 \\
+0 & c+d & 0 \\
+0 & 0 & d \\
+\end{bmatrix}\cdot
+\begin{bmatrix}
+1 & 0 \\
+0 & 1 \\
+1 & -1\\
+\end{bmatrix}\cdot
+\begin{bmatrix}
+a \\ b \\
+\end{bmatrix}$$
+
+## 最大公约数
+
+在介绍Winograd算法之前，我们首先介绍一下求最大公约数的Euclidean algorithm。
+
+小学课本中介绍了最大公约数（Greatest common divisor）的定义，当时给出的算法是如下图所示的短除法（Short division）：
+
+![](/images/article/Short_division.jpg)
+
+但这个算法实际上是个非常低效的方法。实际中最常用的是Euclid在他的巨著《几何原本》中，给出的Euclidean algorithm，中文叫做辗转相除法。
+
+顺便提一句，求余数的整数除法，也被称作Euclidean division。（普通整数除法以小数，而非余数，代替无法整除的部分）宗师就是这么牛！
+
+Euclidean algorithm的步骤如下图所示：
+
+![](/images/article/Euclidean_algorithm.png)
+
+1.
+
+这个算法应该是Euclid记述的前人成果，因为更早的Eudoxus of Cnidus曾提到过这个算法。
+
+>Eudoxus of Cnidus，公元前390年～公元前337年，古希腊几何学家、天文学家和地理学家。柏拉图同时代最杰出的数学家。《几何原本》卷Ⅴ和卷Ⅻ主要来自欧多克索斯的工作。
+
+然而，小学课本不使用Euclidean algorithm是有原因的，除了Euclidean algorithm本身相对复杂之外，短除法能同时搞定最大公约数和最小公倍数（Least common multiple），这也是它的教学优势所在。
+
+Euclidean algorithm作为最古老的算法之一，被收录进Knuth的巨著TAOCP。这里的算法，指的是那些根据一定的规则来一步步执行的运算。
+
+## 中国剩余定理
+
+Chinese remainder theorem算是初等数论中，一个非常重要的定理了。（初等数论意指使用不超过高中程度的初等代数处理的数论问题，其最主要的工具包括整数的整除性与同余。）
+
+CRT最早出自中国四世纪成书的古书《孙子算经》。著名的娱乐圈学霸关晓彤同学所攻克的“鸡兔同笼问题”，就出自该书。 
+
+
 
 ## Winograd algorithm
 
@@ -56,229 +225,5 @@ Fast Convolution
 https://www.encyclopediaofmath.org/index.php/Winograd_small_convolution_algorithm
 
 Winograd small convolution algorithm
-
-# 花式池化
-
-池化和卷积一样，都是信号采样的一种方式。
-
-## 普通池化
-
-池化的一般步骤是：选择区域P，令$$Y=f(P)$$。这里的f为池化函数。
-
-![](/images/article/max_pooling.png)
-
-上图是Max Pooling的示意图。除了max之外，常用的池化函数还有mean、min等。
-
-ICLR2013上，Zeiler提出了另一种pooling手段stochastic pooling。只需对Pooling区域中的元素按照其概率值大小随机选择，即元素值大的被选中的概率也大。而不像max-pooling那样，永远只取那个最大值元素。
-
-根据相关理论，特征提取的误差主要来自两个方面：
-
-（1）邻域大小受限造成的估计值方差增大；
-
-（2）卷积层参数误差造成估计均值的偏移。
-
-一般来说，mean-pooling能减小第一种误差，更多的保留图像的背景信息，max-pooling能减小第二种误差，更多的保留纹理信息。
-
-Stochastic-pooling则介于两者之间，通过对像素点按照数值大小赋予概率，再按照概率进行亚采样，在平均意义上，与mean-pooling近似，在局部意义上，则服从max-pooling的准则。
-
-## 池化的反向传播
-
-池化的反向传播比较简单。以上图的Max Pooling为例，由于取的是最大值7,因此，误差只要传递给7所在的神经元即可。
-
-这里再次强调一下，池化只是对信号的下采样。对于图像来说，这种下采样保留了图像的某些特征，因而是有意义的。但对于另外的任务则未必如此。
-
-比如，AlphaGo采用CNN识别棋局，但对棋局来说，下采样显然是没有什么物理意义的，因此，**AlphaGo的CNN是没有Pooling的**。
-
-## 全局平均池化
-
-Global Average Pooling是另一类池化操作，一般用于替换FullConnection层。
-
-![](/images/article/global_average_pooling.png)
-
-上图是FC和GAP在CNN中的使用方法图。从中可以看出Conv转换成FC，实际上进行了如下操作：
-
-1.对每个通道的feature map进行flatten操作得到一维的tensor。
-
-2.将不同通道的tensor连接成一个大的一维tensor。
-
-![](/images/article/FC.png)
-
-上图展示了FC与Conv、Softmax等层联动时的运算操作。
-
-![](/images/article/GAP.png)
-
-上图是GAP与Conv、Softmax等层联动时的运算操作。可以看出，GAP的实际操作如下：
-
-1.计算每个通道的feature map的均值。
-
-2.将不同通道的均值连接成一个一维tensor。
-
-## UnPooling
-
-UnPooling是一种常见的上采样操作。其过程如下图所示：
-
-![](/images/article/unpool.png)
-
-1.在Pooling（一般是Max Pooling）时，保存最大值的位置（Max Location）。
-
-2.中间经历若干网络层的运算。
-
-3.上采样阶段，利用第1步保存的Max Location，重建下一层的feature map。
-
-从上面的描述可以看出，UnPooling不完全是Pooling的逆运算：
-
-1.Pooling之后的feature map，要经过若干运算，才会进行UnPooling操作。
-
-2.对于非Max Location的地方以零填充。然而这样并不能完全还原信息。
-
-参考：
-
-http://blog.csdn.net/u012938704/article/details/52831532
-
-caffe反卷积
-
-## K-max Pooling
-
-![](/images/article/kmax_pooling.png)
-
-## 参考
-
-http://www.cnblogs.com/tornadomeet/p/3432093.html
-
-Stochastic Pooling简单理解
-
-http://mp.weixin.qq.com/s/XzOri12hwyOCdI1TgGQV3w
-
-新型池化层sort_pool2d实现更快更好的收敛：表现优于最大池化层
-
-http://blog.csdn.net/liuchonge/article/details/67638232
-
-CNN与句子分类之动态池化方法DCNN--模型介绍篇
-
-# Batch Normalization
-
-在《深度学习（二）》中，我们已经简单的介绍了Batch Normalization的基本概念。这里主要讲述一下它的实现细节。
-
-我们知道在神经网络训练开始前，都要对输入数据做一个归一化处理，那么具体为什么需要归一化呢？归一化后有什么好处呢？
-
-原因在于神经网络学习过程本质就是为了学习数据分布，一旦训练数据与测试数据的分布不同，那么网络的泛化能力也大大降低；另外一方面，一旦每批训练数据的分布各不相同(batch梯度下降)，那么网络就要在每次迭代都去学习适应不同的分布，这样将会大大降低网络的训练速度，这也正是为什么我们需要对数据都要做一个归一化预处理的原因。
-
-对输入数据归一化，早就是一种基本操作了。然而这样只对神经网络的输入层有效。更好的办法是对每一层都进行归一化。
-
-然而简单的归一化，会破坏神经网络的特征。（归一化是线性操作，但神经网络本身是非线性的，不具备线性不变性。）因此，如何归一化，实际上是个很有技巧的事情。
-
-首先，我们回顾一下归一化的一般做法：
-
-$$\hat x^{(k)} = \frac{x^{(k)} - E[x^{(k)}]}{\sqrt{Var[x^{(k)}]}}$$
-
-其中，$$x = (x^{(0)},x^{(1)},…x^{(d)})$$表示d维的输入向量。
-
-接着，定义归一化变换函数：
-
-$$y^{(k)}=\gamma^{(k)}\hat x^{(k)}+\beta^{(k)}$$
-
-这里的$$\gamma^{(k)},\beta^{(k)}$$是待学习的参数。
-
-BN的主要思想是用同一batch的样本分布来近似整体的样本分布。显然，batch size越大，这种近似也就越准确。
-
-用$$\mathcal{B}=\{x_{1,\dots,m}\}$$表示batch，则BN的计算过程如下：
-
-**Step 1**.计算mini-batch mean。
-
-$$\mu_\mathcal{B}\leftarrow \frac{1}{m}\sum_{i=1}^mx_i$$
-
-**Step 2**.计算mini-batch variance。
-
-$$\sigma_\mathcal{B}^2\leftarrow \frac{1}{m}\sum_{i=1}^m(x_i-\mu_\mathcal{B})^2$$
-
-**Step 3**.normalize。
-
-$$\hat x_i\leftarrow \frac{x_i-\mu_\mathcal{B}}{\sqrt{\sigma_\mathcal{B}^2+\epsilon}}$$
-
-这里的$$\epsilon$$是为了数值的稳定性而添加的常数。
-
-**Step 4**.scale and shift。
-
-$$y_i=\gamma\hat x_i+\beta\equiv BN_{\gamma,\beta}(x_i)$$
-
-在实际使用中，BN计算和卷积计算一样，都被当作神经网络的其中一层。即：
-
-$$z=g(Wu+b)\rightarrow z=g(BN(Wu+b))=g(BN(Wu))$$
-
-从另一个角度来看，BN的均值、方差操作，相当于去除一阶和二阶信息，而只保留网络的高阶信息，即非线性部分。因此，上式最后一步中b被忽略，也就不难理解了。
-
-BN的误差反向算法相对复杂，这里不再赘述。
-
-在inference阶段，BN网络忽略Step 1和Step 2，只计算后两步。其中,$$\beta,\gamma$$由之前的训练得到。$$\mu,\sigma$$原则上要求使用全体样本的均值和方差，但样本量过大的情况下，也可使用训练时的若干个mini batch的均值和方差的FIR滤波值。
-
-# Instance Normalization
-
-Instance Normalization主要用于CV领域。
-
-论文：
-
-《Instance Normalization: The Missing Ingredient for Fast Stylization》
-
-首先我们列出对图片Batch Normalization的公式：
-
-$$y_{tijk}=\frac{x_{tijk}-\mu_i}{\sqrt{\sigma_i^2+\epsilon}}, \mu_i=\frac{1}{HWT}\sum_{t=1}^T \sum_{l=1}^W \sum_{m=1}^Hx_{tilm}, \sigma_i^2=\frac{1}{HWT}\sum_{t=1}^T \sum_{l=1}^W \sum_{m=1}^H(x_{tilm}-m\mu_i)^2$$
-
-其中，T为图片数量，i为通道，j、k为图片的宽、高。
-
-Instance Normalization的公式：
-
-$$y_{tijk}=\frac{x_{tijk}-\mu_{ti}}{\sqrt{\sigma_{ti}^2+\epsilon}}, \mu_{ti}=\frac{1}{HW} \sum_{l=1}^W \sum_{m=1}^Hx_{tilm}, \sigma_{ti}^2=\frac{1}{HW} \sum_{l=1}^W \sum_{m=1}^H(x_{tilm}-m\mu_{ti})^2$$
-
-从中可以看出Instance Normalization实际上就是对一张图片的一个通道内的值进行归一化，因此又叫做对比度归一化（contrast normalization）。
-
-参考：
-
-http://www.jianshu.com/p/d77b6273b990
-
-论文中文版
-
-# Softmax详解
-
-首先给出Softmax function的定义:
-
-$$y_c=\zeta(\textbf{z})_c = \dfrac{e^{z_c}}{\sum_{d=1}^C{e^{z_d}}} \text{  for } c=1, \dots, C$$
-
-从中可以很容易的发现，如果$$z_c$$的值过大，朴素的直接计算会上溢出或下溢出。
-
-解决办法：
-
-$$z_c\leftarrow z_c-a,a=\max\{z_1,\dots,z_C\}$$
-
-证明：
-
-$$\zeta(\textbf{z-a})_c = \dfrac{e^{z_c}\cdot e^{-a}}{\sum_{d=1}^C{e^{z_d}\cdot e^{-a}}} = \dfrac{e^{z_c}}{\sum_{d=1}^C{e^{z_d}}} = \zeta(\textbf{z})_c$$
-
-Softmax的损失函数是cross entropy loss function：
-
-$$\xi(X, Y) = \sum_{i=1}^n \xi(\textbf{t}_i, \textbf{y}_i) = - \sum_{i=1}^n \sum_{i=c}^C t_{ic} \cdot \log(y_{ic})$$
-
-Softmax的反向传播算法：
-
-$$\begin{align}
-\dfrac{\partial\xi}{\partial z_i} &= - \sum_{j=1}^C \dfrac{\partial t_j \log(y_j)}{\partial z_i} \\
-&= - \sum_{j=1}^C t_j \dfrac{\partial \log(y_j)}{\partial z_i} \\
-&= - \sum_{j=1}^C t_j \dfrac{1}{y_j} \dfrac{\partial y_j}{\partial z_i} \\
-&= - \dfrac{t_i}{y_i} \dfrac{\partial y_i}{\partial z_i} - \sum_{j \neq i}^C \dfrac{t_j}{y_j} \dfrac{\partial y_j}{\partial z_i} \\
-&= - \dfrac{t_i}{y_i} y_i(1-y_i) - \sum_{j \neq i}^{C} \dfrac{t_j}{y_j}(-y_jy_j) \\
-&= -t_i + t_iy_i + \sum_{j \neq i}^{C} t_jy_i \\
-&= -t_i + \sum_{j=1}^C t_jy_i \\
-&= -t_i + y_i \sum_{j=1}^C t_j \\
-&= y_i - t_i
-\end{align}$$
-
-参考：
-
-https://mp.weixin.qq.com/s/2xYgaeLlmmUfxiHCbCa8dQ
-
-softmax函数计算时候为什么要减去一个最大值？
-
-http://shuokay.com/2016/07/20/softmax-loss/
-
-Softmax输出及其反向传播推导
 
 

@@ -4,6 +4,86 @@ title:  深度学习（八）——GAN
 category: DL 
 ---
 
+# CNN进化史
+
+## 其他知名CNN（续）
+
+### ZF Net
+
+论文：
+
+《Visualizing and understandingConvolutional Networks》
+
+本文是Matthew D.Zeiler 和Rob Fergus于（纽约大学）2013年撰写的论文，主要通过Deconvnet（反卷积）来可视化卷积网络，来理解卷积网络，并调整卷积网络；本文通过Deconvnet技术，可视化Alex-net，并指出了Alex-net的一些不足，最后修改网络结构，使得分类结果提升。
+
+参考：
+
+http://blog.csdn.net/u011534057/article/details/51274862
+
+论文阅读笔记
+
+http://blog.csdn.net/whiteinblue/article/details/43312059
+
+另一篇论文阅读笔记
+
+## 参考
+
+http://mp.weixin.qq.com/s/ZKMi4gRfDRcTxzKlTQb-Mw
+
+计算机视觉识别简史：从AlexNet、ResNet到Mask RCNN
+
+http://mp.weixin.qq.com/s/kbHzA3h-CfTRcnkViY37MQ
+
+详解CNN五大经典模型:Lenet，Alexnet，Googlenet，VGG，DRL
+
+https://zhuanlan.zhihu.com/p/22094600
+
+Deep Learning回顾之LeNet、AlexNet、GoogLeNet、VGG、ResNet
+
+http://www.leiphone.com/news/201609/303vE8MIwFC7E3DB.html
+
+Google最新开源Inception-ResNet-v2，借助残差网络进一步提升图像分类水准
+
+https://mp.weixin.qq.com/s/x3bSu9ecl3dldCbvS1rT1g
+
+站在巨人的肩膀上，深度学习的9篇开山之作
+
+http://mp.weixin.qq.com/s/2TUw_2d36uFAiJTkvaaqpA
+
+解读Keras在ImageNet中的应用：详解5种主要的图像识别模型
+
+https://zhuanlan.zhihu.com/p/27642620
+
+YJango的卷积神经网络——介绍
+
+https://www.zybuluo.com/coolwyj/note/202469
+
+ImageNet Classification with Deep Convolutional Neural Networks
+
+http://simtalk.cn/2016/09/20/AlexNet/
+
+AlexNet简介
+
+http://simtalk.cn/2016/09/12/CNNs/
+
+CNN简介
+
+http://www.cnblogs.com/Allen-rg/p/5833919.html
+
+GoogLeNet学习心得
+
+https://mp.weixin.qq.com/s/I94gGXXW_eE5hSHIBOsJFQ
+
+无需数学背景，读懂ResNet、Inception和Xception三大变革性架构
+
+https://mp.weixin.qq.com/s/ToogpkDo-DpQaSoRoalnPg
+
+没看过这5个模型，不要说你玩过CNN!
+
+https://zhuanlan.zhihu.com/p/31006686
+
+从LeNet-5到DenseNet
+
 # GAN
 
 ## 概况
@@ -189,74 +269,4 @@ https://zhuanlan.zhihu.com/p/25071913
 
 令人拍案叫绝的Wasserstein GAN
 
-## GAN的发展
 
-最早的GAN出现在2014年6月，但直到2015年底，也只有5个变种，发展并不迅速。
-
-2016年，GAN开始发力，年底时已有52个变种。2017年6月底，更达到142个变种。
-
-![](/images/article/GAN_structure.png)
-
-上图的源地址：
-
-https://github.com/hwalsuklee/tensorflow-generative-model-collections
-
-参考：
-
-https://github.com/hindupuravinash/the-gan-zoo
-
-GAN的各种变种。
-
-## GAN的理论解释
-
-顾险峰教授对GAN提出了自己的理论解释。
-
->顾险峰，1989年考入清华大学计算机科学与技术系。1992年获得清华大学特等奖学金。后于美国哈佛大学获得计算机博士学位，师从国际著名微分几何大师丘成桐先生。目前为美国纽约州立大学石溪分校计算机系终身教授。
-
-参考：
-
-https://mp.weixin.qq.com/s/7O0AKIUVYK7HRyvdRbUVkg
-
-虚构的对抗，GAN with the wind
-
-https://mp.weixin.qq.com/s/trvMOTXNs7L6fSmTkZXwsA
-
-看穿机器学习（W-GAN模型）的黑箱
-
-https://mp.weixin.qq.com/s/thcxsBVttSIEzVNLQlAVCA
-
-看穿机器学习的黑箱（II）
-
-https://mp.weixin.qq.com/s/Jx0o17CwlIVcRV22PXk4wQ
-
-看穿机器学习的黑箱（III）
-
-## 参考
-
-https://mp.weixin.qq.com/s/xa3F3kCprE6DEQclas4umg
-
-GAN的数学原理
-
-http://www.jianshu.com/p/e2d2d7cbbe49
-
-50行代码实现GAN
-
-https://mp.weixin.qq.com/s/YnOF9CCUFvtaiTY8HXYOuw
-
-深入浅出：GAN原理与应用入门介绍
-
-http://blog.csdn.net/u011534057/article/category/6396518
-
-GAN系列blog
-
-https://mp.weixin.qq.com/s/4CypEZscTfmUzOk-p_rZog
-
-生成对抗网络初学入门：一文读懂GAN的基本原理
-
-http://mp.weixin.qq.com/s/bzwG0QxnP2drqS4RwcZlBg
-
-微软详解：到底什么是生成式对抗网络GAN？
-
-https://mp.weixin.qq.com/s/GobKiuxgZv0-ufSRBpTcIA
-
-Ian Goodfellow ICCV2017演讲：解读GAN的原理与应用

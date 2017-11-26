@@ -1,231 +1,251 @@
 ---
 layout: post
-title:  深度学习（十四）——Faster R-CNN, YOLO
+title:  深度学习（十四）——SPPNet, Fast R-CNN
 category: DL 
 ---
 
-# Faster R-CNN
+# RCNN（续）
 
-Faster-RCNN是任少卿2016年在MSRA提出的新算法。Ross Girshick和何恺明也是论文的作者之一。
+## 非极大值抑制（NMS）
 
->注：任少卿，中科大本科（2011年）+博士（2016年）。Momenta联合创始人+技术总监。   
->个人主页：   
->http://shaoqingren.com/
+RCNN会从一张图片中找出n个可能是物体的矩形框，然后为每个矩形框为做类别分类概率（如上图所示）。我们需要判别哪些矩形框是没用的。
 
-论文：
+Non-Maximum Suppression顾名思义就是抑制不是极大值的元素，搜索局部的极大值。这个局部代表的是一个邻域，邻域有两个参数可变，一是邻域的维数，二是邻域的大小。
 
-《Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks》
+下面举例说明NMS的做法：
 
-代码：
+假设有6个矩形框，根据分类器的类别和分类概率做排序，假设从小到大属于车辆的概率分别为A、B、C、D、E、F。
 
-https://github.com/ShaoqingRen/faster_rcnn
+**Step 1**：从最大概率矩形框F开始，分别判断A~E与F的重叠度IOU是否大于某个设定的阈值。（**确定领域**）
 
-https://github.com/rbgirshick/py-faster-rcnn
+**Step 2**：假设B、D与F的重叠度超过阈值，那么就扔掉B、D；并标记第一个矩形框F，是我们保留下来的。（**抑制领域内的非极大值**）
 
-![](/images/article/faster_rcnn_p_2.png)
-
-上图是Faster R-CNN的结构图。
-
-Fast R-CNN尽管已经很优秀了，然而还有一个最大的问题在于：proposal阶段没有整合到CNN中。
-
-这个问题带来了两个不良影响：
-
-1.非end-to-end模型导致程序流程比较复杂。
-
-2.随着后续CNN步骤的简化，生成2k个候选bbox的Selective Search算法成为了整个计算过程的性能瓶颈。（无法利用GPU）
-
-## Region Proposal Networks
-
-Faster R-CNN最重要的改进就是使用区域生成网络（Region Proposal Networks）替换Selective Search。因此，faster RCNN也可以简单地看做是“**RPN+fast RCNN**”。
-
-![](/images/article/rpn.png)
-
-上图是RPN的结构图。和SPPNet的ROI映射做法类似，RPN直接在feature map，而不是原图像上，生成区域。
-
-由于Faster R-CNN最后会对bbox位置进行精调，因此这里生成区域的时候，只要大致准确即可。
-
-![](/images/article/rpn_feature_map.png)
-
-由于CNN所生成的feature map的尺寸，通常小于原图像。因此将feature map的点映射回原图像，就变成了上图所示的稀疏网点。这些网点也被称为原图感受野的中心点。
-
-把网点当成基准点，然后围绕这个基准点选取k个不同scale、aspect ratio的anchor。论文中用了3个scale（三种面积$$\left\{ 128^2, 256^2, 521^2  \right\}$$，如上图的红绿蓝三色所示），3个aspect ratio（{1:1,1:2,2:1}，如上图的同色方框所示）。
-
-![](/images/article/Anchors.png)
-
-anchor的后处理如上图所示。
-
-![](/images/article/Anchor_Pyramid.png)
-
-上图展示了Image/Feature Pyramid、Filter Pyramid和Anchor Pyramid的区别。
-
-## 定义损失函数
-
-![](/images/article/faster_rcnn_p_3.png)
-
-对于每个anchor，首先在后面接上一个二分类softmax（上图左边的Softmax），有2个score输出用以表示其是一个物体的概率与不是一个物体的概率 ($$p_i$$)。这个概率也可以理解为前景与后景，或者物体和背景的概率。
-
-然后再接上一个bounding box的regressor输出代表这个anchor的4个坐标位置（$$t_i$$），因此RPN的总体Loss函数可以定义为 ：
-
-$$L(\{p_i\},\{t_i\})=\frac{1}{N_{cls}}\sum_iL_{cls}(p_i,p_i^*)+\lambda \frac{1}{N_{reg}}\sum_ip_i^*L_{reg}(t_i,t_i^*)$$
-
-该公式的含义和计算都比较复杂，这里不再赘述。
-
-上图中，二分类softmax前后各添加了一个reshape layer，是什么原因呢？
-
-这与caffe的实现的有关。bg/fg anchors的矩阵，其在caffe blob中的存储形式为[batch size, 2x9, H, W]。这里的2代表二分类，9是anchor的个数。因为这里的softmax只分两类，所以在进行计算之前需要将blob变为[batch size, 2, 9xH, W]。之后再reshape回复原状。
-
-## RPN和Fast R-CNN协同训练
-
-我们知道，如果是分别训练两种不同任务的网络模型，即使它们的结构、参数完全一致，但各自的卷积层内的卷积核也会向着不同的方向改变，导致无法共享网络权重，论文作者提出了几种可能的方式。
-
-### Alternating training
-
-此方法其实就是一个不断迭代的训练过程，既然分别训练RPN和Fast-RCNN可能让网络朝不同的方向收敛：
-
-a)那么我们可以先独立训练RPN，然后用这个RPN的网络权重对Fast-RCNN网络进行初始化并且用之前RPN输出proposal作为此时Fast-RCNN的输入训练Fast R-CNN。
-
-b) 用Fast R-CNN的网络参数去初始化RPN。之后不断迭代这个过程，即循环训练RPN、Fast-RCNN。
-
-![](/images/article/alternating_training.png)
-
-### Approximate joint training or Non-approximate training
-
-这两种方式，不再是串行训练RPN和Fast-RCNN，而是尝试把二者融入到一个网络内训练。融合方式和上面的Faster R-CNN结构图类似。细节不再赘述。
-
-### 4-Step Alternating Training
-
-这是作者发布的源代码中采用的方法。
-
-第一步：用ImageNet模型初始化，独立训练一个RPN网络；
-
-第二步：仍然用ImageNet模型初始化，但是使用上一步RPN网络产生的proposal作为输入，训练一个Fast-RCNN网络，至此，两个网络每一层的参数完全不共享；
-
-第三步：使用第二步的Fast-RCNN网络参数初始化一个新的RPN网络，但是把RPN、Fast-RCNN共享的那些卷积层的learning rate设置为0，也就是不更新，仅仅更新RPN特有的那些网络层，重新训练，此时，两个网络已经共享了所有公共的卷积层；
-
-第四步：仍然固定共享的那些网络层，把Fast-RCNN特有的网络层也加入进来，形成一个unified network，继续训练，fine tune Fast-RCNN特有的网络层，此时，该网络已经实现我们设想的目标，即网络内部预测proposal并实现检测的功能。
-
-![](/images/article/4_Step_Alternating_Training.png)
-
-## 总结
-
-![](/images/article/faster_rcnn_p.png)
+**Step 3**：从剩下的矩形框A、C、E中，选择概率最大的E，然后判断E与A、C的重叠度，重叠度大于一定的阈值，那么就扔掉；并标记E是我们保留下来的第二个矩形框。（**确定下一个领域，并抑制该领域内的非极大值**）
 
 参考：
 
-https://zhuanlan.zhihu.com/p/24916624
+http://mp.weixin.qq.com/s/Cg9tHG1YgDCdI3NPYl5-vQ
 
-Faster R-CNN
+如何用Soft-NMS实现目标检测并提升准确率
 
-http://blog.csdn.net/shenxiaolu1984/article/details/51152614
+## ground truth
 
-Faster RCNN算法详解
+在有监督学习中，数据是有标注的，以(x,t)的形式出现，其中x是输入数据，t是标注。正确的t标注是ground truth，错误的标记则不是。（也有人将所有标注数据都叫做ground truth）
 
-https://mp.weixin.qq.com/s/VKQufVUQ3TP5m7_2vOxnEQ
+在目标检测任务中，ground truth主要包括box和category两类信息。
 
-通过Faster R-CNN实现当前最佳的目标计数
+## 正负样本问题
 
-http://blog.csdn.net/zy1034092330/article/details/62044941
+一张照片我们得到了2000个候选框。然而人工标注的数据一张图片中就只标注了正确的bounding box，我们搜索出来的2000个矩形框也不可能会出现一个与人工标注完全匹配的候选框。因此在CNN阶段我们需要用IOU为2000个bounding box打标签。
 
-Faster RCNN详解
+如果用selective search挑选出来的候选框与物体的人工标注矩形框的重叠区域IoU大于0.5，那么我们就把这个候选框标注成物体类别（正样本），否则我们就把它当做背景类别（负样本）。
 
-# YOLO
+## 使用SVM的问题
 
-YOLO: Real-Time Object Detection，是一个基于神经网络的实时对象检测软件。它的原理基于Joseph Chet Redmon 2016年的论文：
+CNN训练的时候，本来就是对bounding box的物体进行识别分类训练，在训练的时候，最后一层softmax就是分类层。那么为什么作者闲着没事干要先用CNN做特征提取（提取fc7层数据），然后再把提取的特征用于训练SVM分类器？
 
-《You Only Look Once: Unified, Real-Time Object Detection》
+这个是因为SVM训练和cnn训练过程的正负样本定义方式各有不同，导致最后采用CNN softmax输出比采用SVM精度还低。
 
-这也是Ross Girshick去Facebook之后，参与的又一力作。
+事情是这样的，cnn在训练的时候，对训练数据做了比较宽松的标注，比如一个bounding box可能只包含物体的一部分，那么我也把它标注为正样本，用于训练cnn；采用这个方法的主要原因在于因为CNN容易过拟合，所以需要大量的训练数据，所以在CNN训练阶段我们是对Bounding box的位置限制条件限制的比较松(IOU只要大于0.5都被标注为正样本了)；
 
-官网：
+然而SVM训练的时候，因为SVM适用于少样本训练，所以对于训练样本数据的IOU要求比较严格，我们只有当bounding box把整个物体都包含进去了，我们才把它标注为物体类别，然后训练SVM。
 
-https://pjreddie.com/darknet/yolo/
+## CNN base
 
->注：Joseph Chet Redmon，Middlebury College本科+华盛顿大学博士（在读）。网名：pjreddie。
+目标检测任务不是一个独立的任务，而是在目标分类基础之上的进一步衍生。因此，无论何种目标检测框架都需要一个目标分类的CNN作为base，仅对其最上层的FC层做一定的修改。
 
-pjreddie不仅是个算法达人，也是个造轮子的高手。YOLO的原始代码基于他本人编写的DL框架——darknet。
+VGG、AlexNet都是常见的CNN base。
 
-darknet代码：
+## 评价标准
 
-https://github.com/pjreddie/darknet/
+目标检测一般采用mAP（mean Average Precision）作为评价标准。AP的含义参见《机器学习（二十一）》。
 
-YOLO的caffe版本有很多（当然都是非官方的），这里推荐：
+对于多分类任务来说，每个分类都有一个AP，将这些AP平均（或加权平均）之后，就得到了mAP。
 
-https://github.com/yeahkun/caffe-yolo
+目前，目标检测领域的mAP，一般以PASCAL VOC 2012的标准为准。文档参见：
 
-## 概述
+http://host.robots.ox.ac.uk/pascal/VOC/voc2012/devkit_doc.pdf
 
-从R-CNN到Fast R-CNN一直采用的思路是proposal+分类（proposal提供位置信息，分类提供类别信息），这也被称作two-stage cascade。
+对于目标检测任务来说，除了分类之外，还有box准确度的问题。一般IOU大于0.5的被认为是正样本，反之则是负样本。
 
-YOLO不仅是end-to-end，而且还提供了另一种更为直接的思路：直接在输出层回归bounding box的位置和bounding box所属的类别(整张图作为网络的输入，把Object Detection的问题转化成一个Regression问题)。
+PASCAL VOC还对P-R曲线的采样做出规定。2012之前的标准中，P-R曲线只需要对recall值进行10等分采样即可。而2012标准规定，对每个recall值都要进行采样。
 
-![](/images/article/yolo.png)
+参考：
 
-上图是YOLO的大致流程：
+http://blog.sina.com.cn/s/blog_9db078090102whzw.html
 
-**Step 1**：Resize成448x448，图片分割得到7x7网格(cell)。
+多标签图像分类任务的评价方法-mAP
 
-**Step 2**：CNN提取特征和预测：卷积部分负责提特征。全连接部分负责预测。
+https://www.zhihu.com/question/41540197
 
-a) 7x7x2=98个bounding box(bbox) 的坐标$$x_{center},y_{center},w,h$$和是否有物体的confidence。
+mean average precision（MAP）在计算机视觉中是如何计算和应用的？
 
-b) 7x7=49个cell所属20个物体分类的概率。
+## 总结
 
-![](/images/article/yolo_2.png)
+![](/images/article/rcnn_p_2.png)
 
-![](/images/article/yolo_3.png)
-
-上图是YOLO的网络结构图，它采用经过修改的GoogLeNet作为base CNN。
-
-从表面看，YOLO的输出只有一个，似乎比Faster RCNN两个输出少一个，然而这个输出本身，实际上要复杂的多。
-
-YOLO的输出是一个7x7x30的tensor，其中7x7对应图片分割的7x7网格。30表明每个网格对应一个30维的向量。
-
-![](/images/article/yolo_4.png)
-
-上图是这个30维向量的编码方式：2个bbox+confidence是5x2=10维，20个物体分类的概率占其余20维。
-
-总结一下，输出tersor的维度是：$$S\times S \times (B \times 5 + C)$$
-
-这里的confidence代表了所预测的box中含有object的置信度和这个box预测的有多准两重信息：
-
-$$\text{confidence} = \text{Pr}(Object) ∗ \text{IOU}_{pred}^{truth}$$
-
-在loss函数设计方面，简单的把结果堆在一起，然后认为它们的重要程度都一样，这显然是不合理的，每个loss项之前的参数$$\lambda$$就是用来设定权重的。
-
-**Step 3**：过滤bbox（通过NMS）。
-
-![](/images/article/yolo_5.png)
-
-上图是Test阶段的NMS的过程示意图。
+![](/images/article/rcnn_p.png)
 
 ## 参考
 
-https://zhuanlan.zhihu.com/p/24916786
+https://zhuanlan.zhihu.com/p/23006190
 
-图解YOLO
+RCNN-将CNN引入目标检测的开山之作
 
-https://mp.weixin.qq.com/s/n51XtGAsaDDAatXYychXrg
+http://www.cnblogs.com/edwardbi/p/5647522.html
 
-YOLO比R-CNN快1000倍，比Fast R-CNN快100倍的实时对象检测！
+Tensorflow tflearn编写RCNN
 
-http://blog.csdn.net/tangwei2014/article/details/50915317
+http://blog.csdn.net/u011534057/article/category/6178027
 
-论文阅读笔记：You Only Look Once: Unified, Real-Time Object Detection
+RCNN系列blog
 
-https://mp.weixin.qq.com/s/Wqj6EM33p-rjPIHnFKtmCw
+http://blog.csdn.net/shenxiaolu1984/article/details/51066975
 
-计算机是怎样快速看懂图片的：比R-CNN快1000倍的YOLO算法
+RCNN算法详解
 
-http://lanbing510.info/2017/08/28/YOLO-SSD.html
+http://mp.weixin.qq.com/s/_U6EJBP_qmx68ih00IhGjQ
 
-目标检测之YOLO，SSD
+Object Detection R-CNN
 
-http://www.yeahkun.com/2016/09/06/object-detection-you-only-look-once-caffe-shi-xian/
+# SPPNet
 
-Object detection: You Look Only Once(YOLO)
+SPPNet是何恺明2014年的作品。
 
-http://blog.csdn.net/zy1034092330/article/details/72807924
+论文：
 
-YOLO
+《Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition》
 
+在RCNN算法中，一张图片会有1~2k个候选框，每一个都要单独输入CNN做卷积等操作很费时。而且这些候选框可能很多都是重合的，重复的CNN操作从信息论的角度，也是相当冗余的。
+
+![](/images/article/rcnn_vs_spp.png)
+
+SPPNet的核心思想如上图所示：在feature map上提取ROI特征，这样就只需要在整幅图像上做一次卷积。
+
+这个想法说起来简单，但落到实地，还有如下问题需要解决：
+
+**Problem 1**：原始图像的ROI如何映射到特征图（一系列卷积层的最后输出）。
+
+这里的计算比较复杂，要点在于：选择原始图像ROI的左上角和右下角，将之映射到feature map上的两个对应点，从而得到feature map上的ROI。
+
+![](/images/article/roi_original_to_feature.png)
+
+参见：
+
+https://zhuanlan.zhihu.com/p/24780433
+
+原始图片中的ROI如何映射到到feature map?
+
+http://www.cnblogs.com/objectDetect/p/5947169.html
+
+卷积神经网络物体检测之感受野大小计算
+
+**Problem 2**：ROI的在特征图上的对应的特征区域的维度不满足全连接层的输入要求怎么办（又不可能像在原始ROI图像上那样进行截取和缩放）？
+
+对于Problem 2我们分析一下：
+
+这个问题涉及的流程主要有: 图像输入->卷积层1->池化1->...->卷积层n->池化n->全连接层。
+
+引发问题的原因主要有：全连接层的输入维度是固定死的，导致池化n的输出必须与之匹配，继而导致图像输入的尺寸必须固定。
+
+
+解决办法可能有：
+
+1.想办法让不同尺寸的图像也可以使池化n产生固定的输出维度。（打破图像输入的固定性）
+
+2.想办法让全连接层（罪魁祸首）可以接受非固定的输入维度。（打破全连接层的固定性，继而也打破了图像输入的固定性）
+
+以上的方法1就是SPPnet的思想。
+
+![](/images/article/spp.png)
+
+**Step 1**：为图像建立不同尺度的图像金字塔。上图为3层。
+
+**Step 2**：将图像金字塔中包含的feature映射到固定尺寸的向量中。上图为$$(16+4+1)\times 256$$维向量。
+
+总结：
+
+![](/images/article/spp_p.png)
+
+从上图可以看出，由于卷积策略的不同，SPPnet的流程和RCNN也有一点微小的差异：
+
+1.RCNN是先选择区域，然后对区域进行卷积，并检测。
+
+2.SPPnet是先统一卷积，然后应用选择区域，做区域检测。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/24774302
+
+SPPNet-引入空间金字塔池化改进RCNN
+
+http://kaiminghe.com/iccv15tutorial/iccv2015_tutorial_convolutional_feature_maps_kaiminghe.pdf
+
+何恺明：Convolutional Feature Maps
+
+# Fast R-CNN
+
+Fast R-CNN是Ross Girshick于2015年祭出的又一大招。
+
+论文：
+
+《Fast R-CNN》
+
+代码：
+
+https://github.com/rbgirshick/fast-rcnn
+
+![](/images/article/fast_rcnn_p_2.png)
+
+上图是Fast R-CNN的结构图。从该图可以看出Fast R-CNN和SPPnet的主要差异在于：
+
+1.使用ROI（Region of interest） Pooling，替换SPP。
+
+2.去掉了SVM分类。
+
+以下将对这两个方面，做一个简述。
+
+## ROI Pooling
+
+SPP将图像pooling成多个固定尺度，而RoI只将图像pooling到单个固定的尺度。（虽然多尺度学习能提高一点点mAP，不过计算量成倍的增加。）
+
+普通pooling操作中，pooling区域的大小一旦选定，就不再变化。
+
+而ROI Pooling中，为了将ROI区域pooling到单个固定的目标尺度，我们需要根据ROI区域和目标尺度的大小，动态计算pooling区域的大小。
+
+ROI Pooling有两个输入：feature map和ROI区域。Pooling方式一般为Max Pooling。Pooling的kernel形状可以不为正方形。
+
+## Bounding-box Regression
+
+从Fast R-CNN的结构图可以看出，与一般的CNN不同，它在FC之后，实际上有两个输出层：第一个是针对每个ROI区域的分类概率预测（上图中的Linear+softmax），第二个则是针对每个ROI区域坐标的偏移优化（上图中的Linear）。
+
+然后，这两个输出层（即两个Task）再合并为一个multi-task，并定义统一的loss。
+
+![](/images/article/fast_rcnn_multi_task.png)
+
+由于两个Task的信息互为补充，使得分类预测任务的softmax准确率大为提升，SVM也就没有存在的必要了。
+
+## 全连接层提速
+
+Fast R-CNN的论文中还提到了全连接层提速的概念。这个概念本身和Fast R-CNN倒没有多大关系。因此，完全可以将之推广到其他场合。
+
+![](/images/article/fc_svd.png)
+
+它的主要思路是，在两个大的FC层（假设尺寸为u、v）之间，利用SVD算法加入一个小的FC层（假设尺寸为t），从而减少了计算量。
+
+$$u\times v\to u\times t+t\times v$$
+
+## 总结
+
+![](/images/article/fast_rcnn_p.png)
+
+参考：
+
+https://zhuanlan.zhihu.com/p/24780395
+
+Fast R-CNN
+
+http://blog.csdn.net/shenxiaolu1984/article/details/51036677
+
+Fast RCNN算法详解
 

@@ -1,10 +1,48 @@
 ---
 layout: post
-title:  深度学习（七）——DMN, CNN进化史
+title:  深度学习（七）——seq2seq, DMN, CNN进化史
 category: DL 
 ---
 
-# seq2seq（续）
+# Attention（续）
+
+https://mp.weixin.qq.com/s/xr_1ZYbvADMMwgxLEAflCw
+
+如何在语言翻译中理解Attention Mechanism？
+
+https://mp.weixin.qq.com/s/Nyq_36aFmQYRWdpgbgxpuA
+
+将注意力机制引入RNN，解决5大应用领域的序列预测问题
+
+https://mp.weixin.qq.com/s/2gxp7A38epQWoy7wK8Nl6A
+
+谷歌翻译最新突破，“关注机制”让机器读懂词与词的联系
+
+https://mp.weixin.qq.com/s/g2PcmsDW9ixUCh_yP8W-Vg
+
+各类Seq2Seq模型对比及《Attention Is All You Need》中技术详解
+
+https://mp.weixin.qq.com/s/FtI94xY6a8TEvFCHfjMnmA
+
+小组讨论谷歌机器翻译Attention is All You Need
+
+https://mp.weixin.qq.com/s/SqIMkiP1IZMGWzwZWGOI7w
+
+谈谈神经网络的注意机制和使用方法
+
+# seq2seq
+
+seq2seq最早用于Neural Machine Translation领域（与之相对应的有Statistical Machine Translation）。训练后的seq2seq模型，可以根据输入语句，自动生成翻译后的输出语句。
+
+![](/images/article/seq2seq.png)
+
+上图是seq2seq的结构图。可以看出seq2seq实际上是一种Encoder-Decoder结构。
+
+在Encoder阶段，RNN依次读入输入序列。但由于这时，没有输出序列与之对应，因此这仅仅相当于一个对隐层的编码过程，即将句子的语义编码为隐层的状态向量。
+
+从中发现一个问题：状态向量的维数决定了存储的语义的内容上限（显然不能指望，一个200维的向量，能够表示一部百科全书。）因此，seq2seq通常只用于短文本的翻译。
+
+在Decoder阶段，我们根据输出序列，反向修正RNN的参数，以达到训练神经网络的目的。
 
 参考：
 
@@ -276,80 +314,5 @@ http://www.cnblogs.com/dmzhuo/p/5868346.html
 
 读论文“Network in Network”——ICLR 2014
 
-### ZF Net
-
-论文：
-
-《Visualizing and understandingConvolutional Networks》
-
-本文是Matthew D.Zeiler 和Rob Fergus于（纽约大学）2013年撰写的论文，主要通过Deconvnet（反卷积）来可视化卷积网络，来理解卷积网络，并调整卷积网络；本文通过Deconvnet技术，可视化Alex-net，并指出了Alex-net的一些不足，最后修改网络结构，使得分类结果提升。
-
-参考：
-
-http://blog.csdn.net/u011534057/article/details/51274862
-
-论文阅读笔记
-
-http://blog.csdn.net/whiteinblue/article/details/43312059
-
-另一篇论文阅读笔记
-
-## 参考
-
-http://mp.weixin.qq.com/s/ZKMi4gRfDRcTxzKlTQb-Mw
-
-计算机视觉识别简史：从AlexNet、ResNet到Mask RCNN
-
-http://mp.weixin.qq.com/s/kbHzA3h-CfTRcnkViY37MQ
-
-详解CNN五大经典模型:Lenet，Alexnet，Googlenet，VGG，DRL
-
-https://zhuanlan.zhihu.com/p/22094600
-
-Deep Learning回顾之LeNet、AlexNet、GoogLeNet、VGG、ResNet
-
-http://www.leiphone.com/news/201609/303vE8MIwFC7E3DB.html
-
-Google最新开源Inception-ResNet-v2，借助残差网络进一步提升图像分类水准
-
-https://mp.weixin.qq.com/s/x3bSu9ecl3dldCbvS1rT1g
-
-站在巨人的肩膀上，深度学习的9篇开山之作
-
-http://mp.weixin.qq.com/s/2TUw_2d36uFAiJTkvaaqpA
-
-解读Keras在ImageNet中的应用：详解5种主要的图像识别模型
-
-https://zhuanlan.zhihu.com/p/27642620
-
-YJango的卷积神经网络——介绍
-
-https://www.zybuluo.com/coolwyj/note/202469
-
-ImageNet Classification with Deep Convolutional Neural Networks
-
-http://simtalk.cn/2016/09/20/AlexNet/
-
-AlexNet简介
-
-http://simtalk.cn/2016/09/12/CNNs/
-
-CNN简介
-
-http://www.cnblogs.com/Allen-rg/p/5833919.html
-
-GoogLeNet学习心得
-
-https://mp.weixin.qq.com/s/I94gGXXW_eE5hSHIBOsJFQ
-
-无需数学背景，读懂ResNet、Inception和Xception三大变革性架构
-
-https://mp.weixin.qq.com/s/ToogpkDo-DpQaSoRoalnPg
-
-没看过这5个模型，不要说你玩过CNN!
-
-https://zhuanlan.zhihu.com/p/31006686
-
-从LeNet-5到DenseNet
 
 

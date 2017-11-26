@@ -1,10 +1,48 @@
 ---
 layout: post
-title:  深度学习（六）——Bi-directional RNN, Attention, seq2seq
+title:  深度学习（六）——Bi-directional RNN, Attention
 category: DL 
 ---
 
 # 神经元激活函数进阶（续）
+
+## ReLU的缺点
+
+深度神经网络的训练问题，最早是2006年Hinton使用**分层无监督预训练**的方法解决的，然而该方法使用起来很不方便。
+
+而深度网络的**直接监督式训练**的最终突破，最主要的原因是采用了新型激活函数ReLU。
+
+但是ReLU并不完美。它在x<0时硬饱和，而当x>0时，导数为1。所以，ReLU能够在x>0时保持梯度不衰减，从而缓解梯度消失问题。但随着训练的推进，部分输入会落入硬饱和区，导致对应权重无法更新。这种现象被称为**神经元死亡**。
+
+ReLU还经常被“诟病”的另一个问题是输出具有**偏移现象**，即输出均值恒大于零。偏移现象和神经元死亡会共同影响网络的收敛性。实验表明，如果不采用Batch Normalization，即使用MSRA初始化30层以上的ReLU网络，最终也难以收敛。
+
+为了解决上述问题，人们提出了Leaky ReLU、PReLU、RReLU、ELU、Maxout等ReLU的变种。
+
+## Maxout
+
+Maxout Networks是Ian J. Goodfellow于2013年提出的一大类激活函数。
+
+![](/images/article/maxout.png)
+
+上图是Maxout Networks的结构图。传统的激活函数一般是这样的形式：$$\sigma(Wx+b)$$
+
+Maxout Networks将$$Wx+b$$这部分运算，分成k个组。每组的w和b都不相同。然后对每组计算结果$$z_{ij}$$取最大值。
+
+从这个意义来说，ReLU可以看做是Maxout的特殊情况，即：
+
+$$y=\max(W_1x+b_1,W_2x+b_2)=\max(0,Wx+b)$$
+
+更多的情况参见下图：
+
+![](/images/article/maxout_2.png)
+
+从Maxout Networks的角度来看，ReLU和DropOut实际上是非常类似的。
+
+参考：
+
+http://blog.csdn.net/hjimce/article/details/50414467
+
+Maxout网络学习
 
 ## Swish
 
@@ -223,40 +261,4 @@ http://blog.csdn.net/leo_xu06/article/details/53491400
 
 视觉注意力的循环神经网络模型
 
-https://mp.weixin.qq.com/s/xr_1ZYbvADMMwgxLEAflCw
 
-如何在语言翻译中理解Attention Mechanism？
-
-https://mp.weixin.qq.com/s/Nyq_36aFmQYRWdpgbgxpuA
-
-将注意力机制引入RNN，解决5大应用领域的序列预测问题
-
-https://mp.weixin.qq.com/s/2gxp7A38epQWoy7wK8Nl6A
-
-谷歌翻译最新突破，“关注机制”让机器读懂词与词的联系
-
-https://mp.weixin.qq.com/s/g2PcmsDW9ixUCh_yP8W-Vg
-
-各类Seq2Seq模型对比及《Attention Is All You Need》中技术详解
-
-https://mp.weixin.qq.com/s/FtI94xY6a8TEvFCHfjMnmA
-
-小组讨论谷歌机器翻译Attention is All You Need
-
-https://mp.weixin.qq.com/s/SqIMkiP1IZMGWzwZWGOI7w
-
-谈谈神经网络的注意机制和使用方法
-
-# seq2seq
-
-seq2seq最早用于Neural Machine Translation领域（与之相对应的有Statistical Machine Translation）。训练后的seq2seq模型，可以根据输入语句，自动生成翻译后的输出语句。
-
-![](/images/article/seq2seq.png)
-
-上图是seq2seq的结构图。可以看出seq2seq实际上是一种Encoder-Decoder结构。
-
-在Encoder阶段，RNN依次读入输入序列。但由于这时，没有输出序列与之对应，因此这仅仅相当于一个对隐层的编码过程，即将句子的语义编码为隐层的状态向量。
-
-从中发现一个问题：状态向量的维数决定了存储的语义的内容上限（显然不能指望，一个200维的向量，能够表示一部百科全书。）因此，seq2seq通常只用于短文本的翻译。
-
-在Decoder阶段，我们根据输出序列，反向修正RNN的参数，以达到训练神经网络的目的。

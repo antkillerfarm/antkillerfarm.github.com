@@ -190,6 +190,10 @@ https://mp.weixin.qq.com/s/Fc19GZgMP167fvqOcG0rbA
 
 英特尔中国研究院HERO机器人平台问世
 
+https://mp.weixin.qq.com/s/h7qBPDoYTDCXSix1KdyXtg
+
+波士顿动动力的机器人用的是什么学习算法？
+
 # ML参考资源
 
 http://kexue.fm/archives/4638/
@@ -315,6 +319,22 @@ https://mp.weixin.qq.com/s/Dqe3XX-OFdM5vNshrVrsTg
 https://mp.weixin.qq.com/s/c-flgHKAlCfdZCIrMXAzxg
 
 即时配送的ETA问题之亿级样本特征构造实践
+
+https://mp.weixin.qq.com/s/_MRPiqt_cR96KQ2lfJVdoA
+
+xlearn:大规模稀疏数据的机器学习库
+
+https://mp.weixin.qq.com/s/VsQpp1iDDM5mM2PyIiyyBg
+
+结合Logistic回归构建最大熵马尔科夫模型
+
+https://mp.weixin.qq.com/s/lERZkwfIB6Qs4HQeLJ9p8Q
+
+毕啸天：有一天我给自己发了五千万个红包，得出了这样一个规律
+
+https://mp.weixin.qq.com/s/iQZZNATXKWwVcQ7FfQis6g
+
+SafePredict：使用拒绝机制保证正确率的机器学习元算法
 
 
 

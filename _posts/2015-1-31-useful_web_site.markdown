@@ -266,10 +266,6 @@ http://chrome.360.cn/test/html5/index.html
 
 一个用于检测浏览器对html 5支持情况的网页
 
-https://mp.weixin.qq.com/s/h7HVyGbmtLmNVJp4p0rCRQ
-
-字符识别(OCR)相关工具/库/教材/论文等资源整理
-
 https://mp.weixin.qq.com/s/h-vgHkzLjh9AAa6Z0lZqlg
 
 基于物理渲染(PBR)的车漆技术

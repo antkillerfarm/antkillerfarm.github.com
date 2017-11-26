@@ -395,4 +395,9 @@ https://mp.weixin.qq.com/s/-5RCRl9ztQ2dQmX00QvfvQ
 
 在Python和TensorFlow上构建Word2Vec词嵌入模型
 
+https://mp.weixin.qq.com/s/Nyjp0mZxcn04vLKjJXLSaw
+
+如何用TensorFlow在安卓设备上实现深度学习推断
+
+
 

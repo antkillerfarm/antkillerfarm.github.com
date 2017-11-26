@@ -212,6 +212,10 @@ https://mp.weixin.qq.com/s/Z32LCfi8IVP4WXkxAu6zZg
 
 Geffory Hinton的“胶囊”里到底装的什么“药”？
 
+https://mp.weixin.qq.com/s/f0TqhSW-KVwVTv54gtHyGw
+
+胶囊网络9大优势4大缺陷
+
 ## Other
 
 https://www.jiqizhixin.com/articles/2017-07-27-2

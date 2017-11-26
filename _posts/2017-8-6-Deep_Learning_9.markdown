@@ -1,12 +1,82 @@
 ---
 layout: post
-title:  深度学习（九）——fine-tuning, 李飞飞, 花式卷积
+title:  深度学习（九）——fine-tuning, 李飞飞
 category: DL 
 ---
 
 # GAN（续）
 
+## GAN的发展
+
+最早的GAN出现在2014年6月，但直到2015年底，也只有5个变种，发展并不迅速。
+
+2016年，GAN开始发力，年底时已有52个变种。2017年6月底，更达到142个变种。
+
+![](/images/article/GAN_structure.png)
+
+上图的源地址：
+
+https://github.com/hwalsuklee/tensorflow-generative-model-collections
+
+参考：
+
+https://github.com/hindupuravinash/the-gan-zoo
+
+GAN的各种变种。
+
+## GAN的理论解释
+
+顾险峰教授对GAN提出了自己的理论解释。
+
+>顾险峰，1989年考入清华大学计算机科学与技术系。1992年获得清华大学特等奖学金。后于美国哈佛大学获得计算机博士学位，师从国际著名微分几何大师丘成桐先生。目前为美国纽约州立大学石溪分校计算机系终身教授。
+
+参考：
+
+https://mp.weixin.qq.com/s/7O0AKIUVYK7HRyvdRbUVkg
+
+虚构的对抗，GAN with the wind
+
+https://mp.weixin.qq.com/s/trvMOTXNs7L6fSmTkZXwsA
+
+看穿机器学习（W-GAN模型）的黑箱
+
+https://mp.weixin.qq.com/s/thcxsBVttSIEzVNLQlAVCA
+
+看穿机器学习的黑箱（II）
+
+https://mp.weixin.qq.com/s/Jx0o17CwlIVcRV22PXk4wQ
+
+看穿机器学习的黑箱（III）
+
 ## 参考
+
+https://mp.weixin.qq.com/s/xa3F3kCprE6DEQclas4umg
+
+GAN的数学原理
+
+http://www.jianshu.com/p/e2d2d7cbbe49
+
+50行代码实现GAN
+
+https://mp.weixin.qq.com/s/YnOF9CCUFvtaiTY8HXYOuw
+
+深入浅出：GAN原理与应用入门介绍
+
+http://blog.csdn.net/u011534057/article/category/6396518
+
+GAN系列blog
+
+https://mp.weixin.qq.com/s/4CypEZscTfmUzOk-p_rZog
+
+生成对抗网络初学入门：一文读懂GAN的基本原理
+
+http://mp.weixin.qq.com/s/bzwG0QxnP2drqS4RwcZlBg
+
+微软详解：到底什么是生成式对抗网络GAN？
+
+https://mp.weixin.qq.com/s/GobKiuxgZv0-ufSRBpTcIA
+
+Ian Goodfellow ICCV2017演讲：解读GAN的原理与应用
 
 https://mp.weixin.qq.com/s/TIgRVbnZYtrGUCDNLcL1uw
 
@@ -279,75 +349,4 @@ http://www.arxiv-sanity.com/
 个人主页：
 
 http://vision.stanford.edu/lijiali/
-
-## 学神
-
-应该说李飞飞和吴恩达都是万里挑一的超卓人物，但是和学神还是有所差距。下面是两个80后的华裔学神，他们都已经是正教授了：
-
-**尹希**，1983年生，哈佛大学物理系教授。
-
-**张锋**，1982年生，MIT教授，生物学家。
-
-这两个人都是有机会挑战诺奖的人，而李和吴暂时还没有这个可能性。
-
-## 网红
-
-这里收录了一些非李飞飞门下的AI网红。
-
-**Zachary Chase Lipton**，1985年生，哥伦比亚大学本科+UCSD博士，CMU的AP。他的另一身份——Jazz歌手，可比他的学术成就知名多了。
-
-个人主页：
-
-http://zacklipton.com/
-
-# 花式卷积
-
-在DL中，卷积实际上是一大类计算的总称。除了原始的卷积、反卷积（Deconvolution）之外，还有各种各样的花式卷积。
-
-## 卷积在CNN和数学领域中的概念差异
-
-首先需要明确一点，CNN中的卷积和反卷积，实际上和数学意义上的卷积、反卷积是有差异的。
-
-数学上的卷积主要用于傅立叶变换，在计算的过程中，有一个时域上的反向操作，并不是简单的向量内积运算。在信号处理领域，卷积主要用作**信号的采样**。
-
-数学上的反卷积主要作为卷积的逆运算，相当于**信号的重建**，或者解微分方程。因此，它的难度远远大于卷积运算，常见的有Wiener deconvolution、Richardson–Lucy deconvolution等。
-
-CNN的反卷积就简单多了，它只是误差的反向算法而已。因此，也有人用back convolution, transpose convolution这样更精确的说法，来描述CNN的误差反向算法。
-
-## Dilated convolution
-
-![](/images/article/dilation.gif)
-
-上图是Dilated convolution的操作。又叫做多孔卷积(atrous convolution)。
-
-![](/images/article/no_padding_strides_transposed.gif)
-
-上图是transpose convolution的操作。它和Dilated convolution的差别在于，前者是图像上有洞，而后者是kernel上有洞。
-
-和池化相比，Dilated convolution实际上也是一种下采样，只不过采样的位置是固定的，因而能够更好的保持空间结构信息。
-
-Dilated convolution在CNN方面的应用主要是Fisher Yu的贡献。
-
-论文：
-
-《Multi-Scale Context Aggregation by Dilated Convolutions》
-
-《Dilated Residual Networks》
-
-代码：
-
-https://github.com/fyu/dilation
-
-https://github.com/fyu/drn
-
->Fisher Yu，密歇根大学本硕+普林斯顿大学博士。   
->个人主页：   
->http://www.yf.io/
-
-参考：
-
-https://zhuanlan.zhihu.com/p/28822428
-
-Paper笔记：Dilated Residual Networks
-
 

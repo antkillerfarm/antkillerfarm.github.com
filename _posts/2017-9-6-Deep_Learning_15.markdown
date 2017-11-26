@@ -1,245 +1,231 @@
 ---
 layout: post
-title:  深度学习（十五）——SSD, YOLOv2
+title:  深度学习（十五）——Faster R-CNN, YOLO
 category: DL 
 ---
 
-# SSD
+# Faster R-CNN
 
-SSD是Wei Liu于2016年提出的算法。
+Faster-RCNN是任少卿2016年在MSRA提出的新算法。Ross Girshick和何恺明也是论文的作者之一。
+
+>注：任少卿，中科大本科（2011年）+博士（2016年）。Momenta联合创始人+技术总监。   
+>个人主页：   
+>http://shaoqingren.com/
 
 论文：
 
-《SSD: Single Shot MultiBox Detector》
+《Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks》
 
 代码：
 
-https://github.com/weiliu89/caffe
+https://github.com/ShaoqingRen/faster_rcnn
 
->Wei Liu，南京大学本科（2009）+北卡罗莱娜大学博士（在读）。   
->个人主页：   
->http://www.cs.unc.edu/~wliu/
+https://github.com/rbgirshick/py-faster-rcnn
 
-## 网络结构
+![](/images/article/faster_rcnn_p_2.png)
 
-YOLO有一些缺陷：每个网格只预测一个物体，容易造成漏检；对于物体的尺度相对比较敏感，对于尺度变化较大的物体泛化能力较差。
+上图是Faster R-CNN的结构图。
 
-针对YOLO中的这些不足，SSD在这两方面都有所改进，同时兼顾了mAP和实时性的要求。其思路就是Faster R-CNN+YOLO，利用YOLO的思路和Faster R-CNN的anchor box的思想。
+Fast R-CNN尽管已经很优秀了，然而还有一个最大的问题在于：proposal阶段没有整合到CNN中。
 
-![](/images/article/ssd.png)
+这个问题带来了两个不良影响：
 
-上图是SSD的网络结构图。其特点为：
+1.非end-to-end模型导致程序流程比较复杂。
 
-1.采用VGG16的基础网络结构，使用前面的前5层。
+2.随着后续CNN步骤的简化，生成2k个候选bbox的Selective Search算法成为了整个计算过程的性能瓶颈。（无法利用GPU）
 
-2.使用Dilated convolution将fc6和fc7层转化成两个卷积层。
+## Region Proposal Networks
 
-3.再额外增加了3个卷积层，和一个average pool层。不同层次的feature map分别用于default box的偏移以及不同类别得分的预测。
+Faster R-CNN最重要的改进就是使用区域生成网络（Region Proposal Networks）替换Selective Search。因此，faster RCNN也可以简单地看做是“**RPN+fast RCNN**”。
 
-4.通过NMS得到最终的检测结果。
+![](/images/article/rpn.png)
 
-这些增加的卷积层的feature map的大小变化比较大，允许能够检测出不同尺度下的物体：在低层的feature map，感受野比较小，高层的感受野比较大，在不同的feature map进行卷积，可以达到多尺度的目的。
+上图是RPN的结构图。和SPPNet的ROI映射做法类似，RPN直接在feature map，而不是原图像上，生成区域。
 
-![](/images/article/ssd_2.png)
+由于Faster R-CNN最后会对bbox位置进行精调，因此这里生成区域的时候，只要大致准确即可。
 
-上图是从另一个角度观察SSD，可以看出SSD可检出8372个default box。这里沿用Faster R-CNN的Anchor方法生成default box。
+![](/images/article/rpn_feature_map.png)
 
-![](/images/article/ssd_3.png)
+由于CNN所生成的feature map的尺寸，通常小于原图像。因此将feature map的点映射回原图像，就变成了上图所示的稀疏网点。这些网点也被称为原图感受野的中心点。
 
-和YOLO一样，卷积层的每个点都是一个vector，含义也和YOLO类似，只是分类的时候，多了一个背景的类别，所以就成了20+1类。
+把网点当成基准点，然后围绕这个基准点选取k个不同scale、aspect ratio的anchor。论文中用了3个scale（三种面积$$\left\{ 128^2, 256^2, 521^2  \right\}$$，如上图的红绿蓝三色所示），3个aspect ratio（{1:1,1:2,2:1}，如上图的同色方框所示）。
 
-在YOLO中，由于每个格子只有1个default box，所以对于一个格子中包含两个物体的情况是无能为力的。SSD的Anchor方法略微改善了这方面的性能，但对于超过Anchor数量的情况，仍然无能为力。因此，这两者对于小目标的检测，没有RCNN系列算法的效果好。
+![](/images/article/Anchors.png)
 
-## 训练策略
+anchor的后处理如上图所示。
 
-监督学习训练的关键点：如何把标注信息(ground true box,ground true category)映射到（default box上）？
+![](/images/article/Anchor_Pyramid.png)
 
-### 正负样本
+上图展示了Image/Feature Pyramid、Filter Pyramid和Anchor Pyramid的区别。
 
-与ground truth box的IOU大于0.5的default box，被定为该ground truth box的正样本，其它的default box则为负样本。
+## 定义损失函数
 
-而一般的MultiBox算法中，只有IOU最大的default box才是正样本。
+![](/images/article/faster_rcnn_p_3.png)
 
-显然，在SSD中，一个ground truth box可能对应多个default box。
+对于每个anchor，首先在后面接上一个二分类softmax（上图左边的Softmax），有2个score输出用以表示其是一个物体的概率与不是一个物体的概率 ($$p_i$$)。这个概率也可以理解为前景与后景，或者物体和背景的概率。
 
-![](/images/article/ssd.jpg)
+然后再接上一个bounding box的regressor输出代表这个anchor的4个坐标位置（$$t_i$$），因此RPN的总体Loss函数可以定义为 ：
 
-例如上图，有两个default box与猫匹配，一个default box与狗匹配。
+$$L(\{p_i\},\{t_i\})=\frac{1}{N_{cls}}\sum_iL_{cls}(p_i,p_i^*)+\lambda \frac{1}{N_{reg}}\sum_ip_i^*L_{reg}(t_i,t_i^*)$$
 
-### Hard Negative Mining
+该公式的含义和计算都比较复杂，这里不再赘述。
 
-Hard Negative Mining是机器学习领域的一个常用技巧。
+上图中，二分类softmax前后各添加了一个reshape layer，是什么原因呢？
 
-对于正负样本数量不均衡的数据集（这里假设负样本数量远大于正样本数量），通常的做法有：
+这与caffe的实现的有关。bg/fg anchors的矩阵，其在caffe blob中的存储形式为[batch size, 2x9, H, W]。这里的2代表二分类，9是anchor的个数。因为这里的softmax只分两类，所以在进行计算之前需要将blob变为[batch size, 2, 9xH, W]。之后再reshape回复原状。
 
-**1.增加正样本的数量。**这个过程通常叫做数据增强（Data Augmentation）。例如对图片进行旋转、位移得到新的正样本。
+## RPN和Fast R-CNN协同训练
 
-**2.减少负样本的数量。**这里实际上是一个筛选有价值的负样本的过程。Hard Negative Mining就属于这类方法，它认为负样本的分数越高，越有价值。
+我们知道，如果是分别训练两种不同任务的网络模型，即使它们的结构、参数完全一致，但各自的卷积层内的卷积核也会向着不同的方向改变，导致无法共享网络权重，论文作者提出了几种可能的方式。
 
-具体到图像分类任务就是：那些不包含该物体但分值却很高的样本。通俗的讲，就是那些容易被混淆的负样本。
+### Alternating training
 
-**3.修改正负判定门限，以匹配正负样本比例。**例如，提高IOU门限。
+此方法其实就是一个不断迭代的训练过程，既然分别训练RPN和Fast-RCNN可能让网络朝不同的方向收敛：
 
-**4.异常点检测。**
+a)那么我们可以先独立训练RPN，然后用这个RPN的网络权重对Fast-RCNN网络进行初始化并且用之前RPN输出proposal作为此时Fast-RCNN的输入训练Fast R-CNN。
 
-在SSD中，用于预测的feature map上的每个点都对应有6个不同的default box，绝大部分的default box都是负样本，导致了正负样本不平衡。
+b) 用Fast R-CNN的网络参数去初始化RPN。之后不断迭代这个过程，即循环训练RPN、Fast-RCNN。
 
-在训练过程中，采用了Hard Negative Mining的策略（根据confidence loss对所有的box进行排序，使正负例的比例保持在1:3）来平衡正负样本的比率。
+![](/images/article/alternating_training.png)
+
+### Approximate joint training or Non-approximate training
+
+这两种方式，不再是串行训练RPN和Fast-RCNN，而是尝试把二者融入到一个网络内训练。融合方式和上面的Faster R-CNN结构图类似。细节不再赘述。
+
+### 4-Step Alternating Training
+
+这是作者发布的源代码中采用的方法。
+
+第一步：用ImageNet模型初始化，独立训练一个RPN网络；
+
+第二步：仍然用ImageNet模型初始化，但是使用上一步RPN网络产生的proposal作为输入，训练一个Fast-RCNN网络，至此，两个网络每一层的参数完全不共享；
+
+第三步：使用第二步的Fast-RCNN网络参数初始化一个新的RPN网络，但是把RPN、Fast-RCNN共享的那些卷积层的learning rate设置为0，也就是不更新，仅仅更新RPN特有的那些网络层，重新训练，此时，两个网络已经共享了所有公共的卷积层；
+
+第四步：仍然固定共享的那些网络层，把Fast-RCNN特有的网络层也加入进来，形成一个unified network，继续训练，fine tune Fast-RCNN特有的网络层，此时，该网络已经实现我们设想的目标，即网络内部预测proposal并实现检测的功能。
+
+![](/images/article/4_Step_Alternating_Training.png)
+
+## 总结
+
+![](/images/article/faster_rcnn_p.png)
 
 参考：
 
-https://mp.weixin.qq.com/s/D0JaJaHeNX4kljSTxTsAAw
+https://zhuanlan.zhihu.com/p/24916624
 
-一文概览卷积神经网络中的类别不均衡问题
+Faster R-CNN
 
-## Caffe实现的细节问题
+http://blog.csdn.net/shenxiaolu1984/article/details/51152614
 
-![](/images/article/ssd_4.png)
+Faster RCNN算法详解
 
-上图是SSD末端的caffe结构图。我们注意到在flatten之前有个permute的操作。这个实际上还是和caffe blob的格式有关。
+https://mp.weixin.qq.com/s/VKQufVUQ3TP5m7_2vOxnEQ
 
-只有flatten的效果：[B, CxHxW]
+通过Faster R-CNN实现当前最佳的目标计数
 
-permute+flatten的效果：[B, HxWxC]
+http://blog.csdn.net/zy1034092330/article/details/62044941
 
-C在最后，意味着同一个点的不同通道的信息挨着放在一起，从而保证了信息的局部空间性保持不变。
+Faster RCNN详解
 
-显然，这里如果是TensorFlow的tensor结构的话，permute就没有存在的必要了。
+# YOLO
+
+YOLO: Real-Time Object Detection，是一个基于神经网络的实时对象检测软件。它的原理基于Joseph Chet Redmon 2016年的论文：
+
+《You Only Look Once: Unified, Real-Time Object Detection》
+
+这也是Ross Girshick去Facebook之后，参与的又一力作。
+
+官网：
+
+https://pjreddie.com/darknet/yolo/
+
+>注：Joseph Chet Redmon，Middlebury College本科+华盛顿大学博士（在读）。网名：pjreddie。
+
+pjreddie不仅是个算法达人，也是个造轮子的高手。YOLO的原始代码基于他本人编写的DL框架——darknet。
+
+darknet代码：
+
+https://github.com/pjreddie/darknet/
+
+YOLO的caffe版本有很多（当然都是非官方的），这里推荐：
+
+https://github.com/yeahkun/caffe-yolo
+
+## 概述
+
+从R-CNN到Fast R-CNN一直采用的思路是proposal+分类（proposal提供位置信息，分类提供类别信息），这也被称作two-stage cascade。
+
+YOLO不仅是end-to-end，而且还提供了另一种更为直接的思路：直接在输出层回归bounding box的位置和bounding box所属的类别(整张图作为网络的输入，把Object Detection的问题转化成一个Regression问题)。
+
+![](/images/article/yolo.png)
+
+上图是YOLO的大致流程：
+
+**Step 1**：Resize成448x448，图片分割得到7x7网格(cell)。
+
+**Step 2**：CNN提取特征和预测：卷积部分负责提特征。全连接部分负责预测。
+
+a) 7x7x2=98个bounding box(bbox) 的坐标$$x_{center},y_{center},w,h$$和是否有物体的confidence。
+
+b) 7x7=49个cell所属20个物体分类的概率。
+
+![](/images/article/yolo_2.png)
+
+![](/images/article/yolo_3.png)
+
+上图是YOLO的网络结构图，它采用经过修改的GoogLeNet作为base CNN。
+
+从表面看，YOLO的输出只有一个，似乎比Faster RCNN两个输出少一个，然而这个输出本身，实际上要复杂的多。
+
+YOLO的输出是一个7x7x30的tensor，其中7x7对应图片分割的7x7网格。30表明每个网格对应一个30维的向量。
+
+![](/images/article/yolo_4.png)
+
+上图是这个30维向量的编码方式：2个bbox+confidence是5x2=10维，20个物体分类的概率占其余20维。
+
+总结一下，输出tersor的维度是：$$S\times S \times (B \times 5 + C)$$
+
+这里的confidence代表了所预测的box中含有object的置信度和这个box预测的有多准两重信息：
+
+$$\text{confidence} = \text{Pr}(Object) ∗ \text{IOU}_{pred}^{truth}$$
+
+在loss函数设计方面，简单的把结果堆在一起，然后认为它们的重要程度都一样，这显然是不合理的，每个loss项之前的参数$$\lambda$$就是用来设定权重的。
+
+**Step 3**：过滤bbox（通过NMS）。
+
+![](/images/article/yolo_5.png)
+
+上图是Test阶段的NMS的过程示意图。
 
 ## 参考
 
-http://www.jianshu.com/p/ebebfcd274e6
+https://zhuanlan.zhihu.com/p/24916786
 
-Caffe-SSD训练自己的数据集教程
+图解YOLO
 
-https://zhuanlan.zhihu.com/p/24954433
+https://mp.weixin.qq.com/s/n51XtGAsaDDAatXYychXrg
 
-SSD
+YOLO比R-CNN快1000倍，比Fast R-CNN快100倍的实时对象检测！
 
-http://blog.csdn.net/zy1034092330/article/details/72862030
+http://blog.csdn.net/tangwei2014/article/details/50915317
 
-SSD详解
+论文阅读笔记：You Only Look Once: Unified, Real-Time Object Detection
 
-http://blog.csdn.net/jesse_mx/article/details/74011886
+https://mp.weixin.qq.com/s/Wqj6EM33p-rjPIHnFKtmCw
 
-SSD模型fine-tune和网络架构
+计算机是怎样快速看懂图片的：比R-CNN快1000倍的YOLO算法
 
-http://blog.csdn.net/u010167269/article/details/52563573
+http://lanbing510.info/2017/08/28/YOLO-SSD.html
 
-SSD论文阅读
+目标检测之YOLO，SSD
 
-http://blog.csdn.net/zijin0802034/article/details/53288773
+http://www.yeahkun.com/2016/09/06/object-detection-you-only-look-once-caffe-shi-xian/
 
-另一个SSD论文阅读
+Object detection: You Look Only Once(YOLO)
 
-http://www.lai18.com/content/24600342.html
+http://blog.csdn.net/zy1034092330/article/details/72807924
 
-还是一个SSD论文阅读
-
-https://www.zhihu.com/question/49455386
-
-为什么SSD(Single Shot MultiBox Detector)对小目标的检测效果不好？
-
-# YOLOv2
-
-面对SSD的攻势，pjreddie不甘示弱，于2016年12月提出了YOLOv2（又名YOLO9000）。YOLOv2对YOLO做了较多改进，实际上更像是SSD的升级版。
-
-论文：
-
-《YOLO9000: Better, Faster, Stronger》
-
-实际上，论文的内容也正如标题所言，主要分为Better, Faster, Stronger三个部分。
-
-## Better
-
-### batch normalization
-
-YOLOv2网络通过在每一个卷积层后添加batch normalization，极大的改善了收敛速度同时减少了对其它regularization方法的依赖（舍弃了dropout优化后依然没有过拟合），使得mAP获得了2%的提升。
-
-### High Resolution Classifier
-
-所有state-of-the-art的检测方法基本上都会使用ImageNet预训练过的模型（classifier）来提取特征，例如AlexNet输入图片会被resize到不足256x256，这导致分辨率不够高，给检测带来困难。所以YOLO(v1)先以分辨率224x224训练分类网络，然后需要增加分辨率到448x448，这样做不仅切换为检测算法也改变了分辨率。所以作者想能不能在预训练的时候就把分辨率提高了，训练的时候只是由分类算法切换为检测算法。
-
-YOLOv2首先修改预训练分类网络的分辨率为448x448，在ImageNet数据集上训练10轮（10 epochs）。这个过程让网络有足够的时间调整filter去适应高分辨率的输入。然后fine tune为检测网络。mAP获得了4%的提升。
-
-### Convolutional With Anchor Boxes
-
-借鉴SSD的经验，使用Anchor方法替代全连接+reshape。
-
-相应的，YOLOv2对于输出向量的编码方式进行了改进，如下图所示：
-
-![](/images/article/yolov2.png)
-
-其主要思路是：将对类别的预测放到anchor box中。
-
-同时，由于分辨率的提高，cell的数量由7x7改为13x13。这样一来就有13x13x9=1521个boxes了。因此，YOLOv2比YOLO在检测小物体方面有一定的优势。
-
-### Dimension Clusters
-
-使用anchor时，作者发现Faster-RCNN中anchor boxes的个数和宽高维度往往是手动精选的先验框（hand-picked priors)，设想能否一开始就选择了更好的、更有代表性的先验boxes维度，那么网络就应该更容易学到准确的预测位置。
-
-解决办法就是统计学习中的K-means聚类方法，通过对数据集中的ground true box做聚类，找到ground true box的统计规律。以聚类个数k为anchor boxs个数，以k个聚类中心box的宽高维度为anchor box的维度。
-
-作者做了对比实验，5种boxes的Avg IOU(61.0)就和Faster R-CNN的9种Avg IOU(60.9)相当。 说明K-means方法的生成的boxes更具有代表性，使得检测任务更好学习。
-
-### Direct location prediction
-
-使用anchor boxes的另一个问题是模型不稳定，尤其是在早期迭代的时候。大部分的不稳定现象出现在预测box的(x,y)坐标时。
-
-究其原因在于，虽然RPN会预测坐标的修正值$$(\Delta x, \Delta y)$$，然而却未对$$\Delta x, \Delta y$$的取值范围做限定。因此，可能会出现anchor检测很远的目标box的情况，效率比较低。
-
-正确做法应该是每一个anchor只负责检测周围正负一个单位以内的目标box。
-
-### Fine-Grained Features
-
-修改后的网络最终在13x13的特征图上进行预测，虽然这足以胜任大尺度物体的检测，但如果用上细粒度特征的话可能对小尺度的物体检测有帮助。
-
-Faser R-CNN和SSD都在不同层次的特征图上产生区域建议以获得多尺度的适应性。
-
-YOLOv2使用了一种不同的方法，简单添加一个passthrough layer，把浅层特征图（分辨率为26x26）连接到深层特征图。
-
-具体操作如下：
-
-1.叠加相邻空间位置的特征到不同通道，将26x26x512的特征图叠加成13x13x2048的特征图。
-
-2.将浅层特征图（13x13x2048）和深层特征图（13x13x1024）合并为一个（13x13x3072）tensor。
-
-### Multi-Scale Training
-
-为了让YOLOv2对不同尺寸图片具有鲁棒性，在训练的时候就要考虑这一点。
-
-每经过10批训练（10 batches）就会随机选择新的图片尺寸。网络使用的降采样参数为32，于是使用32的倍数{320,352，…，608}，最小的尺寸为320 * 320，最大的尺寸为608 * 608。 调整网络到相应维度然后继续进行训练。
-
-## Faster
-
-### Darknet-19
-
-YOLOv2使用了一个新的分类网络作为特征提取部分，参考了前人的先进经验，比如类似于VGG，作者使用了较多的3x3卷积核，在每一次池化操作后把通道数翻倍。
-
-借鉴了network in network的思想，网络使用了全局平均池化（global average pooling），把1x1的卷积核置于3x3的卷积核之间，用来压缩特征。也用了batch normalization（前面介绍过）稳定模型训练。
-
-最终得出的基础模型就是Darknet-19，其包含19个卷积层、5个最大值池化层（maxpooling layers ）。如下图：
-
-![](/images/article/Darknet_19.png)
-
-Darknet-19的运算量为55.8亿次浮点数运算。VGG-16为306.9亿次，而YOLO为85.2亿次。
-
-## Stronger
-
-### 联合训练
-
-作者提出了一种在分类数据集和检测数据集上联合训练的机制：
-
-1.使用检测数据集的图片去学习检测相关的信息，例如bounding box坐标预测，是否包含物体以及属于各个物体的概率。
-
-2.使用仅有类别标签的分类数据集图片去扩展可以检测的种类。
-
-这种方法有一些难点需要解决。检测数据集只有常见物体和抽象标签（不具体），例如 “狗”，“船”。分类数据集拥有广而深的标签范围（例如ImageNet就有一百多类狗的品种，包括 “Norfolk terrier”, “Yorkshire terrier”, and “Bedlington terrier”等. ）。必须按照某种一致的方式来整合两类标签。
-
-大多数分类的方法采用softmax层，考虑所有可能的种类计算最终的概率分布。但是softmax假设类别之间互不包含，但是整合之后的数据是类别是有包含关系的，例如 “Norfolk terrier” 和 “dog”。所以整合数据集没法使用这种方式（softmax 模型），
-
-作者最后采用一种不要求互不包含的多标签模型（multi-label model）来整合数据集。
-
-
+YOLO
 
 

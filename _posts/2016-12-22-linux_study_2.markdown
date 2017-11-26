@@ -110,16 +110,6 @@ GnuGo是一个著名的开源围棋软件，但是它只有文字界面。一般
 
 `sudo apt-get install quarry`
 
-# OCR
-
-linux下可以使用tesseract作为OCR工具。安装方法：
-
-`sudo apt install tesseract-ocr libtesseract-dev`
-
-使用方法：
-
-`tesseract ./111.png 1 -l chi_sim+eng`
-
 # DosBox
 
 DosBox是Linux平台玩DOS老游戏的法宝。

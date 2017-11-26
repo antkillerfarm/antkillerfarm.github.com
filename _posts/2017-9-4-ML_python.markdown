@@ -16,6 +16,14 @@ https://ljalphabeta.gitbooks.io/python-/content/
 
 《Python机器学习》中文版
 
+https://github.com/lawlite19/MachineLearning_Python
+
+东南大学某研究生的github，包含大量ML算法示例。
+
+https://github.com/lawlite19/DeepLearning_Python
+
+上个哥们的DL示例
+
 ## Anaconda
 
 Anaconda是一个科学计算方面的python发行版，下面提到的所有工具都可以通过Anaconda一站式安装。
@@ -288,9 +296,13 @@ https://cmusatyalab.github.io/openface/
 
 ## Tangent
 
-Tangent是一个用于自动微分的源到源Python库。官网：
+Tangent是一个用于自动微分的源到源Python库。
+
+官网：
 
 https://github.com/google/tangent
+
+参考：
 
 https://mp.weixin.qq.com/s/CExdIdtUxZi4c2B39xdYJA
 
@@ -465,34 +477,6 @@ scikit-learn Adaboost类库的实战分析
 https://mp.weixin.qq.com/s/61oY3gLEOjQjCJgGkEcABw
 
 支持向量机分类实战
-
-https://mp.weixin.qq.com/s?__biz=MzIxNjA2ODUzNg==&mid=2651435914&idx=1&sn=b0b6f1cda08798dc35bf0930dc9d9096
-
-盘膝而坐--跟你聊聊APP市场的数据分析
-
-https://mp.weixin.qq.com/s/AVSFbfikczjm7flsQQPC1g
-
-2017年最受数据科学欢迎的Top15个Python库
-
-https://mp.weixin.qq.com/s/jBULfMR0_7Ms9nc5CLLIFQ
-
-Python的开源人脸识别库：离线识别率高达99.38%
-
-https://zhuanlan.zhihu.com/p/30630608
-
-Python和MATLAB交互的基本操作
-
-https://mp.weixin.qq.com/s/drpd1O502TcL54cHSEdl_g
-
-如何为时间序列数据优化K-均值聚类速度？
-
-https://mp.weixin.qq.com/s/Di4xVdD1jOGGCiIB-vdkkg
-
-Python可以被用来做哪些神奇好玩的事情
-
-https://mp.weixin.qq.com/s/-SHD9rXUGQ-yp21RtFhJpg
-
-手把手教你 Python挖掘用户评论典型意见并自动生产报告
 
 
 

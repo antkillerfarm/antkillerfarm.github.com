@@ -6,7 +6,38 @@ category: DL
 
 # RNN
 
-## RNN的历史（续）
+## RNN的训练困难
+
+理论上，RNN可以支持无限长的时间序列，然而实际情况却没这么简单。
+
+Yoshua Bengio在论文《On the difficulty of training recurrent neural networks》（http://proceedings.mlr.press/v28/pascanu13.pdf）中，给出了如下公式：
+
+$$||\prod_{k<i\le t} \frac{\partial h_{i}}{\partial h_{i-1}}|| \le \eta^{t-k}$$
+
+并指出当$$\eta < 1$$时，RNN会Gradient Vanish，而当$$\eta > 1$$时，RNN会Gradient Explode。
+
+这里显然不考虑$$\eta > 1$$的情况，因为Gradient Explode，直接会导致训练无法收敛，从而没有实用价值。
+
+因此有实用价值的，只剩下$$\eta < 1$$了，但是Gradient Vanish又注定了RNN所谓的“记忆性”维持不了多久，一般也就5～7层左右。
+
+上述内容只是一般性的讨论，实际训练还是有很多trick的。
+
+比如，针对$$\eta > 1$$的情况，可以采用Gradient Clipping技术，通过设置梯度的上限，来避免Gradient Explode。
+
+还可使用正交初始化技术，在训练之初就将$$\eta$$调整到1附近。
+
+## RNN的历史
+
+上面研究的RNN结构，又被称为Elman RNN。最早是Jeffrey Elman于1990年发明的。
+
+$$\begin{align}
+h_t &= \sigma_h(W_{h} x_t + U_{h} h_{t-1} + b_h) \\
+y_t &= \sigma_y(W_{y} h_t + b_y)
+\end{align}$$
+
+论文：
+
+《Finding Structure in Time》
 
 >Jeffrey Locke Elman，1948年生，Harvard College本科（1969年）+University of Texas博士（1977年）。University of California, San Diego教授，American Academy of Arts and Sciences院士（2015年）。 美国心理学会会员。  
 >个人主页：   
@@ -241,43 +272,5 @@ http://blog.csdn.net/malefactor/article/details/51183989
 https://mp.weixin.qq.com/s/d9XmDCahK6UBlYWhI0D5jQ
 
 深度线性神经网络也能做非线性计算，OpenAI使用进化策略新发现
-
-## ReLU的缺点
-
-深度神经网络的训练问题，最早是2006年Hinton使用**分层无监督预训练**的方法解决的，然而该方法使用起来很不方便。
-
-而深度网络的**直接监督式训练**的最终突破，最主要的原因是采用了新型激活函数ReLU。
-
-但是ReLU并不完美。它在x<0时硬饱和，而当x>0时，导数为1。所以，ReLU能够在x>0时保持梯度不衰减，从而缓解梯度消失问题。但随着训练的推进，部分输入会落入硬饱和区，导致对应权重无法更新。这种现象被称为**神经元死亡**。
-
-ReLU还经常被“诟病”的另一个问题是输出具有**偏移现象**，即输出均值恒大于零。偏移现象和神经元死亡会共同影响网络的收敛性。实验表明，如果不采用Batch Normalization，即使用MSRA初始化30层以上的ReLU网络，最终也难以收敛。
-
-为了解决上述问题，人们提出了Leaky ReLU、PReLU、RReLU、ELU、Maxout等ReLU的变种。
-
-## Maxout
-
-Maxout Networks是Ian J. Goodfellow于2013年提出的一大类激活函数。
-
-![](/images/article/maxout.png)
-
-上图是Maxout Networks的结构图。传统的激活函数一般是这样的形式：$$\sigma(Wx+b)$$
-
-Maxout Networks将$$Wx+b$$这部分运算，分成k个组。每组的w和b都不相同。然后对每组计算结果$$z_{ij}$$取最大值。
-
-从这个意义来说，ReLU可以看做是Maxout的特殊情况，即：
-
-$$y=\max(W_1x+b_1,W_2x+b_2)=\max(0,Wx+b)$$
-
-更多的情况参见下图：
-
-![](/images/article/maxout_2.png)
-
-从Maxout Networks的角度来看，ReLU和DropOut实际上是非常类似的。
-
-参考：
-
-http://blog.csdn.net/hjimce/article/details/50414467
-
-Maxout网络学习
 
 

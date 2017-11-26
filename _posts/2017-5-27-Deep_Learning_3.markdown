@@ -264,6 +264,10 @@ http://blog.csdn.net/losteng/article/details/51067216
 
 CAE(Convolutional Auto-Encode) 卷积自编码
 
+https://mp.weixin.qq.com/s/q-WExyS-zylMA-L8ojOgRg
+
+简单易懂的自动编码器
+
 # 词向量
 
 ## One-hot Representation
@@ -304,21 +308,4 @@ http://www.cnblogs.com/neopenx/p/4570648.html
 
 词向量概况
 
-## word2vec
-
-除了Bengio方案之外，早期人们还尝试过基于共生矩阵（Co-occurrence Matrix）SVD分解的Word Embedding方案。该方案对于少量语料有不错的效果，但一旦语料增大，计算量即呈指数级上升。
-
-这类方案的典型是Latent Semantic Analysis(LSA)。参见《机器学习（二十）》。
-
-Tomas Mikolov于2013年对Bengio方案进行了简化改进，提出了目前最为常用的word2vec方案。
-
-介绍word2vec的数学原理比较好的有：
-
-《Deep Learning实战之word2vec》，网易有道的邓澍军、陆光明、夏龙著。
-
-《word2vec中的数学》，peghoty著。该书的网页版：
-
-http://blog.csdn.net/itplus/article/details/37969519
-
-老惯例这里只对最重要的内容进行摘要。
 
