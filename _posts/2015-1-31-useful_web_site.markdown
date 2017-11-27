@@ -442,4 +442,8 @@ https://mp.weixin.qq.com/s/o_XsmqLSPhvuC0iiK7xHag
 
 结构光（1）基本介绍
 
+https://mp.weixin.qq.com/s/cDrVpqsY7f2HZCJa4X8Iww
+
+Google Pixel 2/2XL视频稳定技术探究
+
 

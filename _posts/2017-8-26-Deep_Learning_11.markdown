@@ -145,30 +145,58 @@ $$\begin{align}s(p)&=s(\beta_0)\frac{(p-\beta_1)(p-\beta_2)}{(\beta_0-\beta_1)(\
 
 上式用矩阵形式可表示为：
 
-$$\begin{bmatrix}
-s_0 \\ s_1 \\ s_2 \\
-\end{bmatrix}=
+$$\begin{align}
 \begin{bmatrix}
+s_0 \\ s_1 \\ s_2 \\
+\end{bmatrix}
+&=\begin{bmatrix}
 1 & 0 & 0 \\
 0 & 1 & -1 \\
 -1 & 1 & 1 \\
 \end{bmatrix}\cdot
 \begin{bmatrix}
 s(\beta_0) \\ s(\beta_1)/2 \\ s(\beta_2)/2 \\
-\end{bmatrix}=
+\end{bmatrix}
+\\&=\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & -1 \\
+-1 & 1 & 1 \\
+\end{bmatrix}\cdot
 \begin{bmatrix}
-c-d & 0 & 0 \\
-0 & c+d & 0 \\
-0 & 0 & d \\
+h(\beta_0) & 0 & 0 \\
+0 & h(\beta_1)/2 & 0 \\
+0 & 0 & h(\beta_2)/2 \\
+\end{bmatrix}\cdot
+\begin{bmatrix}
+x(\beta_0) \\ x(\beta_1) \\ x(\beta_2) \\
+\end{bmatrix}
+\\&=\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & -1 \\
+-1 & 1 & 1 \\
+\end{bmatrix}\cdot
+\begin{bmatrix}
+h_0 & 0 & 0 \\
+0 & (h_0+h_1)/2 & 0 \\
+0 & 0 & (h_0-h_1)/2 \\
 \end{bmatrix}\cdot
 \begin{bmatrix}
 1 & 0 \\
-0 & 1 \\
-1 & -1\\
+1 & 1 \\
+1 & -1 \\
 \end{bmatrix}\cdot
 \begin{bmatrix}
-a \\ b \\
-\end{bmatrix}$$
+x_0 \\ x_1 \\
+\end{bmatrix}
+\end{align}$$
+
+表面看起来这里多了2个除法，似乎计算量更大了，但是：
+
+1.除以2，对于2进制的计算机来说是个简单运算。
+
+2.如果大量卷积运算的其中一方不变的话，例如CNN中的kernel，这些运算都可以在预处理阶段计算。
+
+
 
 ## 最大公约数
 

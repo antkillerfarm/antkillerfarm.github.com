@@ -49,7 +49,7 @@ y_t &= \sigma_y(W_{y} h_t + b_y)
 >后来，林肯总统比照英国皇家学会，于1863年创建了主要涵盖自然科学的National Academy of Sciences，United States。   
 >这两个学院是美国学术界最权威的组织。
 
->美国的创立者，一般被翻译为Founding Fathers of the United States。此外还有一个更响亮的称号76ers。没错，就是NBA那支球队的名字。
+>美国的创立者，一般被翻译为Founding Fathers of the United States。此外还有一个更响亮的称号76ers。没错，NBA那支球队的名字就是这么来的。
 
 除了Elman RNN之外，还有Jordan RNN。（没错，吴恩达的导师的作品）
 

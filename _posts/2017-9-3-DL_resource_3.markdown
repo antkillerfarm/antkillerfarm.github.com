@@ -24,6 +24,10 @@ https://mp.weixin.qq.com/s/yHtqWJUpCIvTStKW5TINaA
 
 Youtube短视频推荐系统变迁：从机器学习到深度学习
 
+https://mp.weixin.qq.com/s/N1oLs-saWN_ifkWEaWw_Vg
+
+YouTube 2016年公布的基于深度学习的推荐算法
+
 https://mp.weixin.qq.com/s/WzSO_XobY6kesDm4sF-hBg
 
 深度学习之推荐篇
