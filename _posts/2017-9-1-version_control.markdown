@@ -208,4 +208,8 @@ https://mp.weixin.qq.com/s/hcOoFjFlPIgG1leP6caglA
 
 利用价值网络改进神经机器翻译
 
+https://mp.weixin.qq.com/s/GFI_ZCZxuLUi0tdW_gr7tw
+
+基于循环神经网络问句关键词提取技术研究
+
 

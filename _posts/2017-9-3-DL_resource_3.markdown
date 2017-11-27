@@ -68,32 +68,6 @@ https://zhuanlan.zhihu.com/p/30720579
 
 推荐中的序列化建模：Session-based neural recommendation
 
-## 面试
-
-https://www.zhihu.com/question/41233373
-
-如果你是面试官，你怎么去判断一个面试者的深度学习水平？
-
-https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
-
-20万、50万、100万的算法工程师，到底有什么区别？
-
-https://www.zhihu.com/question/56676679/answer/151505274
-
-机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
-
-https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
-
-面试官是如何看出你机器学习水平的？
-
-https://mp.weixin.qq.com/s?__biz=MzI3NTA0MzM1OQ==&mid=2651615534&idx=1&sn=00ecd7dc1d8472c070e720a1b63f04c4
-
-我如何考察面试者的机器学习水平
-
-https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
-
-谷歌等巨头机器学习面试题：从逻辑回归到智力测验
-
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：
@@ -170,55 +144,157 @@ https://mp.weixin.qq.com/s/d46qNFaftt4wxpV4sZnG-w
 
 一张图看懂AlphaGo Zero
 
-## Capsule
+## 实战
 
-https://mp.weixin.qq.com/s/Tx9JJ0cIo_rH7BDjd_hkvw
+https://github.com/jinfagang/pytorch_name_net
 
-Hinton碰撞LeCun：CNN有两大缺陷，要用capsule做下一代CNN
+PyTorch人工智能自动取名
 
-https://zhuanlan.zhihu.com/p/29435406
+https://mp.weixin.qq.com/s/UGGrK5LwOP2aLVTz0AGMDw
 
-浅析Hinton最近提出的Capsule计划
+如何通过PyTorch实现Tensor
 
-https://mp.weixin.qq.com/s/5Af_K_BGrD5RomgpWxJNBQ
+http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg
 
-Hinton大神Capsule论文首次公布，深度学习基石CNN或被取代
+GitHub最受欢迎深度学习项目Top 20
 
-https://mp.weixin.qq.com/s/wFoRtTKW40qgYmlXY0dRDw
+https://mp.weixin.qq.com/s/50uGupiwU2UVuVeMm_bTag
 
-一篇新的Capsule论文：优于基准CNN
+李沐介绍MXNet新接口Gluon：高效支持命令式与符号式编程
 
-https://mp.weixin.qq.com/s/9Vqg3HkDCfl1qMDIN-eCGQ
+https://mp.weixin.qq.com/s/VRmhAluhKWxyPbStmMoWtg
 
-Geoffrey Hinton那篇备受关注的Capsule论文公开了
+一张速查表实现Apache MXNet深度学习框架五大特征的开发利用
 
-https://mp.weixin.qq.com/s/8U3vFaf3SDCYnWy4lQv6uw
+http://zh.gluon.ai/index.html
 
-代替反向传播的另一种深度学习算法：离散优化
+李沐：《动手学深度学习》（使用Gluon）
 
-http://mp.weixin.qq.com/s/gdke9E1A3eRUzgidp9uOqg
+https://zhuanlan.zhihu.com/p/30966663
 
-邓侃：一文读懂Hinton最新Capsules论文
+用Gluon炼丹体验
 
-https://mp.weixin.qq.com/s/R9pDEc7zqZdttLJGCfiv2w
+https://mp.weixin.qq.com/s/B8TYVG5WjDJ4NX-wirS2Fg
 
-TensorFlow Pytorch Keras代码实现深度学习大神Hinton NIPS2017 Capsule论文
+Alex Smola：深度学习触手可及，架构Gluon高中生就能用
 
-https://mp.weixin.qq.com/s/WspmbqlwdxKXH1cgbkuGwQ
+https://mp.weixin.qq.com/s/Shz6BmsOrtbEFtoJRSkl9A
 
-先读懂CapsNet架构然后用TensorFlow实现，这应该是最详细的教程了
+简单车牌检测
 
-https://mp.weixin.qq.com/s/Ot-pRRaHaT1VRyWlLDO2uw
+https://mp.weixin.qq.com/s/QjoxqCpN5JDroBowWmVk1Q
 
-Reddit讨论：Hinton的Capsule网络真的比CNN效果更好吗？
+边玩边入门深度学习，我们帮你找了10个简易应用demo
 
-https://mp.weixin.qq.com/s/Z32LCfi8IVP4WXkxAu6zZg
+http://mp.weixin.qq.com/s/G4lQqiiVvmCW9SmX2blDEg
 
-Geffory Hinton的“胶囊”里到底装的什么“药”？
+实战——目标检测与识别
 
-https://mp.weixin.qq.com/s/f0TqhSW-KVwVTv54gtHyGw
+https://mp.weixin.qq.com/s/KoRXcV-ujIT-5eO4RUkWYw
 
-胶囊网络9大优势4大缺陷
+基于TensorFlow和OpenCV实现文档检测功能！
+
+https://mp.weixin.qq.com/s/1HA6XKnWpqVd8k7IIfzB7w
+
+利用卷积自编码器对图片进行降噪
+
+https://mp.weixin.qq.com/s/ObIYpiH7MLZEi5XzXdGBYg
+
+10大深度学习架构
+
+https://mp.weixin.qq.com/s/-39_7SbRFChDOOpcpJjVMQ
+
+如何在浏览器使用synaptic.js训练简单的神经网络推荐系统
+
+https://mp.weixin.qq.com/s/iwPI8g2JwabwiCO8kfw8Hw
+
+用开源工具DIY车牌识别系统
+
+https://mp.weixin.qq.com/s/ObIYpiH7MLZEi5XzXdGBYg
+
+从TensorFlow到PyTorch：九大深度学习框架哪款最适合你？
+
+https://mp.weixin.qq.com/s/bU541QHjC4grICDjnTSYDA
+
+10大深度学习框架实验对比
+
+https://mp.weixin.qq.com/s/Ez9zn6HN4tX_QFpGDWs_rA
+
+30行JavaScript代码，教你分分钟创建神经网络
+
+https://mp.weixin.qq.com/s/qLax1Jb0OOfFOU68wn_2PA
+
+从三大神经网络，测试对比TensorFlow、MXNet、CNTK、Theano四个框架
+
+https://mp.weixin.qq.com/s/zeZs48XbYJGhvOoIysZ8QA
+
+Docker Compose+GPU+TensorFlow所产生的奇妙火花
+
+https://mp.weixin.qq.com/s/hRH7hVsaQBqf0vhD_BqBgg
+
+五大深度学习框架三类神经网络全面测评
+
+https://mp.weixin.qq.com/s/9X77MPcQOQPwZaOVIVfo9Q
+
+用PyTorch搭建抽取式摘要系统
+
+https://mp.weixin.qq.com/s/y5LLraGWuYUbOted9N-GWQ
+
+如何从TensorFlow转入PyTorch
+
+https://mp.weixin.qq.com/s/RKtyNpIxSxFNfOSyHPOiGw
+
+深度学习PyTorch的教程代码
+
+https://mp.weixin.qq.com/s/i70pT7pQpdoCXXhXq2_MEw
+
+四天速成！香港科技大学PyTorch教程
+
+http://mp.weixin.qq.com/s/Z5X7Vamuw1BwtienhOrSvQ
+
+解构TensorFlow, 学习MXNet--新一代深度学习系统的核心思想
+
+https://zhuanlan.zhihu.com/p/26078299
+
+使用深度学习来破解captcha验证码
+
+https://mp.weixin.qq.com/s/7Wr70NFi4pxvSpRr2Q1zsQ
+
+强大的PyTorch：10分钟让你了解深度学习领域新流行的框架
+
+https://mp.weixin.qq.com/s/dY5r_KJVkpipluo7ji9H6w
+
+如何用“摄像头秒解数独”
+
+https://mp.weixin.qq.com/s/HTj9OozYdq_VLJuGKaiEAg
+
+百行代码构建神经网络黑白图片自动上色系统
+
+https://mp.weixin.qq.com/s/rORvudwdbnmSvzFhM1gVOA
+
+斯坦福大学CS-224n课程中深度NLP模型的PyTorch实现
+
+https://mp.weixin.qq.com/s/Chk-QAPhIXlIeguT4hS6kg
+
+对比ResNet：超深层网络DiracNet的PyTorch实现
+
+https://mp.weixin.qq.com/s/hbvM64QPT1mKQZey6Kauww
+
+图像算法在电商大促中的应用浅析
+
+https://mp.weixin.qq.com/s/KRuEuAOXU2fpSNyOJW4bpA
+
+Yoshua Bengio实验室MILA开放面向初学者的PyTorch教程
+
+https://mp.weixin.qq.com/s/10nLPqBgQ1XJAP8jXqFU0g
+
+讲解Vision图像识别框架API详解
+
+https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q
+
+如何用百度深度学习框架PaddlePaddle做数据预处理
+
+
 
 ## Other
 
@@ -357,72 +433,4 @@ https://mp.weixin.qq.com/s/V6JQuACFbDWBl-iYkDnRig
 https://mp.weixin.qq.com/s/_5tyt7pU0gIXbkmTOVEtDw
 
 嫌图片太大？！卷积神经网络轻松实现无损压缩到20%！
-
-https://mp.weixin.qq.com/s/8xSqmBbaFZ-oww4w-dOmeg
-
-吴恩达对话Hinton、Bengio、Goodfellow
-
-https://zhuanlan.zhihu.com/p/28444154
-
-Seeta看AI：从大数据驱动到X数据驱动
-
-https://zhuanlan.zhihu.com/p/28445169
-
-毕彦超：物体识别与物体知识表征的认知神经基础
-
-https://mp.weixin.qq.com/s/SBppyDBWqQUariiHbpaq1w
-
-实时深度学习的推理加速和连续学习
-
-https://mp.weixin.qq.com/s/83HufWMDnuXIOCCfgqeDJw
-
-为什么说持续学习才是AI的关键
-
-https://mp.weixin.qq.com/s/VAEH_241IAuEH5S6H6ep5w
-
-UC伯克利提出新型视觉描述系统，物体描述无需大量样本
-
-https://mp.weixin.qq.com/s/cyX_FzHF-6df9_AMUDu1aQ
-
-One Model To Learn Them All
-
-https://mp.weixin.qq.com/s/lSd6Gaf9RrmgZCd_EcQQOg
-
-Bengio高徒演讲：深度学习三板斧：网络架构、学习算法和时空层级
-
-https://mp.weixin.qq.com/s/qaxzSSDuuscwL5tt0QCQ0Q
-
-破解人类识别文字之谜：对图像中的字母进行无监督学习
-
-http://mp.weixin.qq.com/s/ddTNr-967IahTZ2X1LNSEQ
-
-盘点影响计算机视觉Top100论文：从ResNet到AlexNet
-
-https://mp.weixin.qq.com/s/r6Dnv3v6TYwTsAQJTDR0Mg
-
-熬过深宫十几载，深度学习上位这五年
-
-https://zhuanlan.zhihu.com/p/28654835
-
-视觉推理（Visual Reasoning），神经网络也可以有逻辑
-
-https://mp.weixin.qq.com/s/88tBoAVziGEFXIGfvZZp8g
-
-深度学习图像处理项目集锦：生成可爱的动漫头像，骡子变斑马等入选
-
-https://mp.weixin.qq.com/s/-kXWmaIfw67rvb8IRi5mCQ
-
-视频行为理解新边界
-
-https://mp.weixin.qq.com/s/rxP9PlTJJdw5VmGbwRPMog
-
-解决3D重建难题，伯克利大学根据单张平面彩图重建高精度3D结构
-
-https://mp.weixin.qq.com/s/ty8RyPREo_EA7O8vA2pQuQ
-
-AI编曲震撼人心，RNN生成流行音乐
-
-https://mp.weixin.qq.com/s/calUA-Ddq-mq4uHrExtfBQ
-
-实习生通关秘籍：我在谷歌大脑开挂的一年
 

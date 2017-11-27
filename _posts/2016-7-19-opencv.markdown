@@ -200,6 +200,10 @@ https://mp.weixin.qq.com/s/DqaGM2zc-6GAe2b24DA84w
 
 在单机上快速、精确的100000类别的检测
 
+https://mp.weixin.qq.com/s/w6qkWBSedKPtTdTecDF7mw
+
+编译OpenCV3.3源码生成Android SDK
+
 ## 论文
 
 《Moving Gradients: A Path-Based Method for Plausible Image Interpolation》：视频帧插值算法
@@ -233,6 +237,22 @@ https://gnu.org/software/octave/
 `sudo apt-get install octave`
 
 # 名校机器学习相关课程
+
+## PRML
+
+除了吴恩达的cs229之外，Bishop的《Pattern Recognition and Machine Learning》也是ML领域的经典书籍。
+
+>Christopher Michael Bishop，1959年生，牛津大学本科+爱丁堡大学博士。爱丁堡大学教授。英国皇家学会会员。
+
+中文版：
+
+https://www.gitbook.com/book/mqshen/prml/details
+
+PRML的python实现：
+
+https://github.com//ctgk/PRML
+
+## 参考
 
 http://ufldl.stanford.edu/wiki/index.php/Main_Page
 
@@ -407,4 +427,5 @@ VLSI Digital Signal Processing Systems: Design and Implementation
 https://stats385.github.io/
 
 STATS 385：Theories of Deep Learning
+
 

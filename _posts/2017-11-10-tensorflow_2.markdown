@@ -399,5 +399,9 @@ https://mp.weixin.qq.com/s/Nyjp0mZxcn04vLKjJXLSaw
 
 如何用TensorFlow在安卓设备上实现深度学习推断
 
+https://mp.weixin.qq.com/s/kEowgNPVS1nAGBPbzkatlQ
+
+如何构建高可读性和高可重用的TensorFlow模型
+
 
 

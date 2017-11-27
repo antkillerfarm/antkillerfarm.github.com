@@ -358,3 +358,8 @@ https://mp.weixin.qq.com/s/QjKQcFnbMxBBxFgIQ_f5lw
 
 流处理引擎的不同语义处理：严格一次未必严格一致
 
+https://mp.weixin.qq.com/s/NvD-NSR-aE8HTADR2LSSjA
+
+基于Flink流处理的动态实时超大规模用户行为分析
+
+

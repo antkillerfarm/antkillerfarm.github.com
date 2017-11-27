@@ -153,13 +153,23 @@ https://mp.weixin.qq.com/s/8rP3fF9iVnplhkFmxuj6fw
 
 http://www.cnblogs.com/hxsyl/p/5229746.html
 
+浅谈高斯过程回归
+
 https://mqshen.gitbooks.io/prml/content/Chapter6/gaussian/gaussian_processes_regression.html
+
+Gaussian Processes Regression
 
 http://www.gaussianprocess.org/gpml/chapters/RW.pdf
 
+Gaussian Processes for Machine Learning
+
 http://people.cs.umass.edu/~wallach/talks/gp_intro.pdf
 
+Introduction to Gaussian Process Regression
+
 http://wenku.baidu.com/view/72f80113915f804d2b16c173.html
+
+高斯过程回归方法综述
 
 # 压缩感知
 

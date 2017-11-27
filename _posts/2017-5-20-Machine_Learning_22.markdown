@@ -324,4 +324,7 @@ https://mp.weixin.qq.com/s/o10Fp2VCwoLqgzirbGL9LQ
 
 如何估算深度神经网络的最优学习率
 
+https://mp.weixin.qq.com/s/T4f4W0V6YNBbjWqWBF19mA
+
+目标函数的经典优化算法介绍
 

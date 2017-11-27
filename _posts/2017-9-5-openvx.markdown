@@ -208,6 +208,8 @@ NCCL：多结点、多GPU的通信库。
 
 TensorRT：嵌入式设备上专用于DL inference的计算库。
 
+NVIDIA DIGITS：一款web应用工具，可在网页上对Caffe进行图形化操作和可视化。
+
 ## NVDLA
 
 NVIDIA Deep Learning Accelerator是一个开源的用于inference的芯片方案。官网：

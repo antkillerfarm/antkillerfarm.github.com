@@ -174,6 +174,14 @@ https://mp.weixin.qq.com/s/RNHgm1GW79iXVe2tit6IyA
 
 旷视&清华大学提出新型两步检测器Light-Head R-CNN
 
+https://mp.weixin.qq.com/s/6cUP9vvfcuv8rIEnGnAFiA
+
+NCSU&阿里巴巴论文：可解释的R-CNN
+
+https://mp.weixin.qq.com/s/ZrZtGBxVOZmexDMw_S_Orw
+
+TensorFlow深度学习目标检测模型及源码架构解析
+
 # RCNN
 
 《深度学习（五）》中提到的AlexNet、VGG、GoogleNet主要用于图片分类。而这里介绍的RCNN(Regions with CNN)主要用于目标检测。

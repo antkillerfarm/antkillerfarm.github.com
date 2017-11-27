@@ -260,6 +260,10 @@ https://mp.weixin.qq.com/s/xwYldlEjJ9Co9uo8o0mlKQ
 
 深度学习之DNN的多种正则化方式
 
+https://mp.weixin.qq.com/s/GYno7htF_-Hw4UN_Nc2etg
+
+直观梳理深度学习关键概念：优化算法、调参基本思路、正则化方式等
+
 ## 算法
 
 http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww
@@ -342,155 +346,115 @@ https://mp.weixin.qq.com/s/ye4QvDfKPGyX0eK3Mti1Kw
 
 从反向传播到迁移学习，盘点人工智能从业者必备的10个深度学习方法
 
-## 实战
+## 量子计算 & 遗传算法
 
-https://github.com/jinfagang/pytorch_name_net
+https://www.zhihu.com/question/28171555
 
-PyTorch人工智能自动取名
+如何理解“量子退火”？
 
-https://mp.weixin.qq.com/s/UGGrK5LwOP2aLVTz0AGMDw
+http://mp.weixin.qq.com/s/FjET9HFNjVVMjqQM2KhtKA
 
-如何通过PyTorch实现Tensor
+5分钟看懂中国最新的量子计算机
 
-http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg
+https://mp.weixin.qq.com/s/WcRYHwXnv9FWpMcOEwIdQg
 
-GitHub最受欢迎深度学习项目Top 20
+量子计算的发展及核心问题
 
-https://mp.weixin.qq.com/s/50uGupiwU2UVuVeMm_bTag
+https://mp.weixin.qq.com/s/Fb6EsXz8avFkGY7sMdNF6A
 
-李沐介绍MXNet新接口Gluon：高效支持命令式与符号式编程
+用量子计算辅助深度学习：研究者提出量子辅助Helmholtz机
 
-https://mp.weixin.qq.com/s/VRmhAluhKWxyPbStmMoWtg
+https://mp.weixin.qq.com/s/8Gnk2bidyQ89VvKEcWKABw
 
-一张速查表实现Apache MXNet深度学习框架五大特征的开发利用
+量子计算时代的机器学习
 
-http://zh.gluon.ai/index.html
+https://mp.weixin.qq.com/s/XWFnRSj_y-W7VHctgQLpdA
 
-李沐：《动手学深度学习》（使用Gluon）
+一文读懂量子机器学习
 
-https://zhuanlan.zhihu.com/p/30966663
+http://blog.csdn.net/u010945683/article/details/40987331
 
-用Gluon炼丹体验
+遗传算法详解
 
-https://mp.weixin.qq.com/s/B8TYVG5WjDJ4NX-wirS2Fg
+https://mp.weixin.qq.com/s/v1tLGUJ4My-tVWziSURHzA
 
-Alex Smola：深度学习触手可及，架构Gluon高中生就能用
+遗传算法的基本概念和实现
 
-https://mp.weixin.qq.com/s/Shz6BmsOrtbEFtoJRSkl9A
+https://mp.weixin.qq.com/s/rXDj5ryRvjbkenp9IEokDQ
 
-简单车牌检测
+一文读懂遗传算法工作原理
 
-https://mp.weixin.qq.com/s/QjoxqCpN5JDroBowWmVk1Q
+https://mp.weixin.qq.com/s/wvcpx41O2763OgA8uYSFHw
 
-边玩边入门深度学习，我们帮你找了10个简易应用demo
+AI系统首次实现真正自主编程：利用遗传算法，完爆初级程序员
 
-http://mp.weixin.qq.com/s/G4lQqiiVvmCW9SmX2blDEg
+https://mp.weixin.qq.com/s/sxnI5n5ACT6UHC6VDdUwQQ
 
-实战——目标检测与识别
+结合遗传算法与DNN的EDEN：自动搜索神经网络架构与超参数
 
-https://mp.weixin.qq.com/s/KoRXcV-ujIT-5eO4RUkWYw
+https://mp.weixin.qq.com/s/NfFgOiBKOgsDAIfkXC4crQ
 
-基于TensorFlow和OpenCV实现文档检测功能！
+利用达尔文的理论学习遗传算法
 
-https://mp.weixin.qq.com/s/1HA6XKnWpqVd8k7IIfzB7w
+http://pytlab.org/2017/09/19/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95%E4%B8%AD%E5%87%A0%E7%A7%8D%E4%B8%8D%E5%90%8C%E9%80%89%E6%8B%A9%E7%AE%97%E5%AD%90%E7%9A%84%E6%AF%94%E8%BE%83/
 
-利用卷积自编码器对图片进行降噪
+遗传算法中几种不同选择算子
 
-https://mp.weixin.qq.com/s/ObIYpiH7MLZEi5XzXdGBYg
+https://mp.weixin.qq.com/s/2TYSY7HoFrwUUeI3Z4MWSw
 
-10大深度学习架构
+从遗传算法到OpenAI新方向：进化策略工作机制全解
 
-https://mp.weixin.qq.com/s/-39_7SbRFChDOOpcpJjVMQ
+https://mp.weixin.qq.com/s/erwSQfvGdyKjxONbJKFAHg
 
-如何在浏览器使用synaptic.js训练简单的神经网络推荐系统
+基于遗传算法的拼图游戏解决方案
 
-https://mp.weixin.qq.com/s/iwPI8g2JwabwiCO8kfw8Hw
+https://mp.weixin.qq.com/s/9ZQc3RqCCcWYDplZ4RU2oA
 
-用开源工具DIY车牌识别系统
+清华段路明组发现深度学习和量子物理重要关联
 
-https://mp.weixin.qq.com/s/ObIYpiH7MLZEi5XzXdGBYg
+https://mp.weixin.qq.com/s/LbyqAA_scfdDXDe_ESWEKg
 
-从TensorFlow到PyTorch：九大深度学习框架哪款最适合你？
+姚期智：呼之欲出的量子计算机，和它漫长的最后一英里
 
-https://mp.weixin.qq.com/s/bU541QHjC4grICDjnTSYDA
+https://mp.weixin.qq.com/s/BZpNi0b7vt71MUvN7bKvbw
 
-10大深度学习框架实验对比
+通往人工智能未来的三路竞赛：量子vs.神经形态vs.高性能计算
 
-https://mp.weixin.qq.com/s/Ez9zn6HN4tX_QFpGDWs_rA
+## 工具
 
-30行JavaScript代码，教你分分钟创建神经网络
+https://mp.weixin.qq.com/s/TT4whft1Tj1pCEPbnMH1cA
 
-https://mp.weixin.qq.com/s/qLax1Jb0OOfFOU68wn_2PA
+清华大学发布OpenNE：用于网络嵌入的开源工具包
 
-从三大神经网络，测试对比TensorFlow、MXNet、CNTK、Theano四个框架
+https://mp.weixin.qq.com/s/r01vfSKb4VpFXVyokb54Bg
 
-https://mp.weixin.qq.com/s/zeZs48XbYJGhvOoIysZ8QA
+MIT开放图像标注工具LabelMe源代码：助力机器视觉的发展
 
-Docker Compose+GPU+TensorFlow所产生的奇妙火花
+https://mp.weixin.qq.com/s/30dK7nGJOWIaa1j9QElrYA
 
-https://mp.weixin.qq.com/s/hRH7hVsaQBqf0vhD_BqBgg
+详解帝国理工集成工具TensorLayer：控制深度学习开发复杂度
 
-五大深度学习框架三类神经网络全面测评
+https://mp.weixin.qq.com/s/m_2LE2QN_8_a1hti6G0Cow
 
-https://mp.weixin.qq.com/s/9X77MPcQOQPwZaOVIVfo9Q
+Netflix开源稀疏数据专用神经网络库：Vectorflow
 
-用PyTorch搭建抽取式摘要系统
+https://mp.weixin.qq.com/s/bMfJ1Ez6bOBjHLquuZFnmQ
 
-https://mp.weixin.qq.com/s/y5LLraGWuYUbOted9N-GWQ
+Uber与斯坦福大学开源深度概率编程语言Pyro：基于PyTorch
 
-如何从TensorFlow转入PyTorch
+https://mp.weixin.qq.com/s/ImtSR6VwYalN6gTgjVJOsQ
 
-https://mp.weixin.qq.com/s/RKtyNpIxSxFNfOSyHPOiGw
+十五分钟完成Regex五天任务：FlashText，语料库数据快速清理利器
 
-深度学习PyTorch的教程代码
+https://mp.weixin.qq.com/s/dsxyQLHcOsNIlNAIf8FQfw
 
-https://mp.weixin.qq.com/s/i70pT7pQpdoCXXhXq2_MEw
+Facebook开源相似性搜索类库Faiss，超越已知最快算法8.5倍
 
-四天速成！香港科技大学PyTorch教程
+https://mp.weixin.qq.com/s/3r8c63BOiiYfts9KLkXovw
 
-http://mp.weixin.qq.com/s/Z5X7Vamuw1BwtienhOrSvQ
+谷歌发布自然语言框架语义解析器SLING
 
-解构TensorFlow, 学习MXNet--新一代深度学习系统的核心思想
+https://mp.weixin.qq.com/s/jTXoCaXEhPPVNcJiyjtN5Q
 
-https://zhuanlan.zhihu.com/p/26078299
-
-使用深度学习来破解captcha验证码
-
-https://mp.weixin.qq.com/s/7Wr70NFi4pxvSpRr2Q1zsQ
-
-强大的PyTorch：10分钟让你了解深度学习领域新流行的框架
-
-https://mp.weixin.qq.com/s/dY5r_KJVkpipluo7ji9H6w
-
-如何用“摄像头秒解数独”
-
-https://mp.weixin.qq.com/s/HTj9OozYdq_VLJuGKaiEAg
-
-百行代码构建神经网络黑白图片自动上色系统
-
-https://mp.weixin.qq.com/s/rORvudwdbnmSvzFhM1gVOA
-
-斯坦福大学CS-224n课程中深度NLP模型的PyTorch实现
-
-https://mp.weixin.qq.com/s/Chk-QAPhIXlIeguT4hS6kg
-
-对比ResNet：超深层网络DiracNet的PyTorch实现
-
-https://mp.weixin.qq.com/s/hbvM64QPT1mKQZey6Kauww
-
-图像算法在电商大促中的应用浅析
-
-https://mp.weixin.qq.com/s/KRuEuAOXU2fpSNyOJW4bpA
-
-Yoshua Bengio实验室MILA开放面向初学者的PyTorch教程
-
-https://mp.weixin.qq.com/s/10nLPqBgQ1XJAP8jXqFU0g
-
-讲解Vision图像识别框架API详解
-
-https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q
-
-如何用百度深度学习框架PaddlePaddle做数据预处理
-
-
+谷歌宣布对外开放聊天机器人数据分析平台Chatbase
 

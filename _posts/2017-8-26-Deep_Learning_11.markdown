@@ -196,7 +196,7 @@ x_0 \\ x_1 \\
 
 2.如果大量卷积运算的其中一方不变的话，例如CNN中的kernel，这些运算都可以在预处理阶段计算。
 
-
+Cook-Toom algorithm的缺点在于：当卷积核较大时，增加的加法数量以远超核大小的速度增长，最终会导致增加的加法所耗费的时间甚至超过节省下来的乘法所耗费的时间。
 
 ## 最大公约数
 
@@ -214,7 +214,11 @@ Euclidean algorithm的步骤如下图所示：
 
 ![](/images/article/Euclidean_algorithm.png)
 
-1.
+1.假设$$a>b$$，则令$$c:=a mod b$$。
+
+2.如果$$c=0$$，则$$GCD(a,b)=b$$。
+
+3.否则令$$a:=b,b:=c$$，并返回到第1步。
 
 这个算法应该是Euclid记述的前人成果，因为更早的Eudoxus of Cnidus曾提到过这个算法。
 
@@ -230,7 +234,15 @@ Chinese remainder theorem算是初等数论中，一个非常重要的定理了�
 
 CRT最早出自中国四世纪成书的古书《孙子算经》。著名的娱乐圈学霸关晓彤同学所攻克的“鸡兔同笼问题”，就出自该书。 
 
+首先，我们引入**同余（congruences）**的概念和符号：
 
+$$x \equiv a \pmod{n}$$
+
+上式表示x除以n的余数和a除以n的余数相等，这样的关系被称为“x和a同余（模为n）”
+
+CRT的内容为：
+
+$$\begin{align} x \equiv a_1 & \pmod{n_1} \\ \quad \vdots \\ x \equiv a_k &\pmod{n_k} \end{align}$$
 
 ## Winograd algorithm
 
