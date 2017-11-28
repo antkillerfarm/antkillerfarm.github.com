@@ -212,4 +212,8 @@ https://mp.weixin.qq.com/s/GFI_ZCZxuLUi0tdW_gr7tw
 
 基于循环神经网络问句关键词提取技术研究
 
+https://zhuanlan.zhihu.com/p/31453283
+
+浅谈NLP中条件语言模型(Conditioned Language Models)的生成和评估
+
 

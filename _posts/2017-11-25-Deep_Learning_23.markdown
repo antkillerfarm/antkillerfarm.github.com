@@ -235,6 +235,10 @@ https://zhuanlan.zhihu.com/p/23309693
 
 CTC实现——compute ctc loss（2）
 
+https://mp.weixin.qq.com/s/GZI4uvCR3QzZDNddpBX2OQ
+
+深度学习也解决不掉语音识别问题
+
 ## Kaldi
 
 Kaldi是一个语音识别的工具包。官网：

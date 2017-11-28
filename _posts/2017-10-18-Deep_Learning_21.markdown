@@ -190,4 +190,8 @@ https://mp.weixin.qq.com/s/zRdJktyk1LZWUd2cyTjpiw
 
 基于图像检索的行人重识别
 
+https://zhuanlan.zhihu.com/p/31473785
+
+行人再识别中的迁移学习：图像风格转换
+
 

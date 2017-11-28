@@ -77,7 +77,7 @@ $$(x^2+2x+2)(3x+2)=3x^3+\color{red}{(2\times 3+1\times 2)}x^2+10x+4$$
 
 这是有限离散域的Convolution定义：
 
-$$(f* g)[n]=\sum_{m=-M}^M f[n-m]g[m]$$
+$$(f * g)[n]=\sum_{m=-M}^M f[n-m]g[m]$$
 
 >注：这里的Convolution和DL领域的Convolution的定义略有不同，后者实际上是数学上的Cross-correlation运算，但稍加变化，就可以变为前者。
 
@@ -214,7 +214,7 @@ Euclidean algorithm的步骤如下图所示：
 
 ![](/images/article/Euclidean_algorithm.png)
 
-1.假设$$a>b$$，则令$$c:=a mod b$$。
+1.假设$$a>b$$，则令$$c:=a \pmod{b}$$。
 
 2.如果$$c=0$$，则$$GCD(a,b)=b$$。
 
@@ -277,30 +277,43 @@ $$\begin{align}
 19 + 20 = 39 mod 3 → 0. OK, this is the result.
 {% endhighlight %}
 
-筛法对于M较小的情况，是非常高效的，因此手算一般都采用该法。但是，筛法的复杂度是指数级的，对于M较大的情况，并不好用，所以计算机算一般会使用其他更高效的算法，这里就不再赘述了。
+筛法对于M较小的情况，是非常高效的，因此手算一般都采用该法。但是，筛法的复杂度是指数级的，对于M较大的情况，并不好用。
 
 CRT虽然只是初等数论的基本定理，但应用范围很广，Lagrange interpolation（一阶多项式插值）、Hermite interpolation（多阶多项式插值）和Dedekind's theorem，都用到了CRT。
+
+## 多项式的Euclidean division和GCD
+
+我们可以仿照整数Euclidean division定义多项式的Euclidean division，如下面的竖式所示：
+
+$$\begin{array}{r}
+ x^2 + {\color{White}1}x + 3\\
+ x-3\overline{) x^3 - 2x^2 + 0x - 4}\\
+ \underline{x^3 - 3x^2 {\color{White} {} + 0x - 4}}\\
+ +x^2 + 0x {\color{White} {} - 4}\\
+ \underline{+x^2 - 3x {\color{White} {} - 4}}\\
+ +3x - 4\\
+ \underline{+3x - 9}\\
+ +5
+\end{array}$$
+
+上式改写为横式：
+
+$${x^3 - 2x^2 - 4} = (x-3)\,\underbrace{(x^2 + x + 3)}_{q(x)}  +\underbrace{5}_{r(x)}$$
+
+其中的$$r(x)$$即为余数。
+
+同样的可以定义多项式的GCD：
+
+$$x^2 + 7x + 6 = (x + 1)(x + 6)$$
+
+$$x^2 − 5x − 6 = (x + 1)(x − 6)$$
+
+则两多项式的GCD为$$(x + 1)$$。
 
 ## Winograd algorithm
 
 
 
-## 参考
 
-https://colfaxresearch.com/falcon-library/
-
-FALCON Library: Fast Image Convolution in Neural Networks on Intel Architecture
-
-https://www.intelnervana.com/winograd/
-
-"Not so fast, FFT": Winograd
-
-http://people.ece.umn.edu/users/parhi/SLIDES/chap8.pdf
-
-Fast Convolution
-
-https://www.encyclopediaofmath.org/index.php/Winograd_small_convolution_algorithm
-
-Winograd small convolution algorithm
 
 
