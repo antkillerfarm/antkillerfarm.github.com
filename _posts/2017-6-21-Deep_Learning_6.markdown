@@ -261,4 +261,8 @@ http://blog.csdn.net/leo_xu06/article/details/53491400
 
 视觉注意力的循环神经网络模型
 
+https://mp.weixin.qq.com/s/XrlveG0kwij2qNL45TZdBg
+
+Attention的另类用法
+
 

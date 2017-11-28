@@ -4,7 +4,19 @@ title:  机器学习（二十六）——动态规划
 category: ML 
 ---
 
-# Markov Decision Process（续）
+# Markov Decision Process
+
+上边Q-Learning的例子中，由于action能够唯一确定状态的变换，因此又被称为**Markov Reward Process**：
+
+$$<\mathcal{S},\mathcal{P},\mathcal{R},\gamma>$$
+
+这个四元组依次代表：states、state transition probability matrix、reward function、discount factor。
+
+实际中，执行特定的动作并不一定能得到特定的状态。
+
+![](/images/article/Markov_Decision_Process.png)
+
+比如上图中，在状态$$S_0$$，执行$$a_0$$，只有0.5的机会，会到达$$S_2$$。这也就是之前提到过的MDP。
 
 标准MDP中的Bellman equation可改为如下形式：
 

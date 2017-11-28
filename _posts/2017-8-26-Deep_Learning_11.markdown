@@ -236,13 +236,50 @@ CRT最早出自中国四世纪成书的古书《孙子算经》。著名的娱�
 
 首先，我们引入**同余（congruences）**的概念和符号：
 
-$$x \equiv a \pmod{n}$$
+$$x \equiv a \pmod{m}$$
 
-上式表示x除以n的余数和a除以n的余数相等，这样的关系被称为“x和a同余（模为n）”
+上式表示x除以m的余数和a除以m的余数相等，这样的关系被称为“x和a同余（模为m）”
 
 CRT的内容为：
 
-$$\begin{align} x \equiv a_1 & \pmod{n_1} \\ \quad \vdots \\ x \equiv a_k &\pmod{n_k} \end{align}$$
+设$$m_i$$为两两互质（pairwise coprime）的大于1的整数，$$a_i$$为任意整数，则存在x满足：
+
+$$\begin{align} x \equiv a_1 & \pmod{m_1} \\ \quad \vdots \\ x \equiv a_k &\pmod{m_k} \end{align}$$
+
+如果$$0\le x < M,M=\prod_{i=1}^k m_i$$，则该x是唯一的。
+
+CRT的存在性证明略。
+
+这里以如下简单的例子，来讲讲如何求解x。
+
+$$\begin{align}
+ x &\equiv 0 \pmod{3} \\
+ x &\equiv 3 \pmod{4} \\
+ x &\equiv 4 \pmod{5}.
+\end{align}$$
+
+这个问题的穷举法需要遍历0到M的所有整数，这显然是个十分低效的算法。因此无论手算还是计算机算，基本都不用穷举法。
+
+再来介绍一下筛法（Sieving）：
+
+1.首先对$$m_i$$按降序排序。
+
+2.选择最大的模（这里为5），和对应的$$a_i$$（这里为4）。
+
+3.
+
+{% highlight text %}
+4 mod 4 → 0. Continue
+4 + 5 = 9 mod 4 →1. Continue
+9 + 5 = 14 mod 4 → 2. Continue
+14 + 5 = 19 mod 4 → 3. OK, continue by considering remainders modulo 3 and adding 5×4 = 20 each time
+19 mod 3 → 1. Continue
+19 + 20 = 39 mod 3 → 0. OK, this is the result.
+{% endhighlight %}
+
+筛法对于M较小的情况，是非常高效的，因此手算一般都采用该法。但是，筛法的复杂度是指数级的，对于M较大的情况，并不好用，所以计算机算一般会使用其他更高效的算法，这里就不再赘述了。
+
+CRT虽然只是初等数论的基本定理，但应用范围很广，Lagrange interpolation（一阶多项式插值）、Hermite interpolation（多阶多项式插值）和Dedekind's theorem，都用到了CRT。
 
 ## Winograd algorithm
 

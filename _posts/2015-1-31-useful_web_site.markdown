@@ -286,10 +286,6 @@ https://www.floydhub.com
 
 一个提供深度模型训练和部署的云服务平台
 
-https://mp.weixin.qq.com/s/nwhSDxz1Pu2JCU_IeMR9ww
-
-Lua程序逆向之Luac文件格式分析
-
 https://mp.weixin.qq.com/s/vmQKK9cEbBRIvd2uOzmC1w
 
 AN/TPS-78固态雷达系列

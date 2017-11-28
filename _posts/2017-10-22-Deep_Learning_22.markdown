@@ -30,6 +30,10 @@ UCL Course on RL
 
 Silver的名声直追Sutton，这个教程也流传很广。后续介绍的教程中，多有对它的抄袭。
 
+http://www.meltycriss.com/2017/09/09/note-reinforcement-learning/
+
+课程笔记《UCL强化学习》。这个blog包含大量的思维导图。
+
 http://web.stanford.edu/class/cs234/syllabus.html
 
 CS234: Reinforcement Learning

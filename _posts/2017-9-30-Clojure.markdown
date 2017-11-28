@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Clojure, Python（三）
+title:  Clojure, Lua, Python（三）
 category: language 
 ---
 
@@ -66,6 +66,21 @@ JavaFX和Clojure的结合，本来不是什么新鲜的东西，然而由于相�
 
 https://github.com/antkillerfarm/antkillerfarm_rubbish/tree/master/clojure/javafx
 
+# Lua
+
+Lua的包管理工具叫做LuaRocks。官网：
+
+https://luarocks.org/
+
+参考：
+
+https://mp.weixin.qq.com/s/nwhSDxz1Pu2JCU_IeMR9ww
+
+Lua程序逆向之Luac文件格式分析
+
+http://lua-users.org/wiki/GraphicalUserInterfaceToolkits
+
+Lua的GUI工具列表
 
 # Python
 

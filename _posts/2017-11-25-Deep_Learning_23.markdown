@@ -68,9 +68,16 @@ https://mp.weixin.qq.com/s/l-l1xbUaPNKc-w5XndjCbQ
 
 # 语音识别
 
+## CTC
+
 Connectionist Temporal Classification，是一种改进的RNN模型。它主要解决的是时序模型中，输入数大于输出数，输入输出如何对齐的问题。
 
-参考：
+论文：
+
+《Connectionist Temporal Classification: Labelling Unsegmented
+Sequence Data with Recurrent Neural Networks》
+
+## 参考
 
 https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=400189223&idx=1&sn=1cb32bee42de626443ebadbf065ec79c
 

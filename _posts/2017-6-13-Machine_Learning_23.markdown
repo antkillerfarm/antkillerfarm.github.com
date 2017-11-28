@@ -8,6 +8,30 @@ category: ML
 
 ## 参考（续）
 
+https://mp.weixin.qq.com/s/q7BI-YyhtmNzUfBMTKVdqQ
+
+Hitting time analysis of SGLD！
+
+https://mp.weixin.qq.com/s/vt7BEHbwJrAzlL2Pc-6QFg
+
+掌握机器学习数学基础之优化（上）
+
+https://mp.weixin.qq.com/s/6NBLLLa-S625iaehR8zDfQ
+
+掌握机器学习数学基础之优化（下）
+
+https://mp.weixin.qq.com/s/o10Fp2VCwoLqgzirbGL9LQ
+
+如何估算深度神经网络的最优学习率
+
+https://mp.weixin.qq.com/s/T4f4W0V6YNBbjWqWBF19mA
+
+目标函数的经典优化算法介绍
+
+https://mp.weixin.qq.com/s/6u5W7Lm81Wtczdzp5WCJWw
+
+DeepMind提出新型超参数最优化方法：性能超越手动调参和贝叶斯优化
+
 https://mp.weixin.qq.com/s/0V8B-u5_bRM5Fu9oOAYjqw
 
 清华大学：通过在单纯形上软门限投影的加速随机贪心坐标下降
@@ -261,28 +285,6 @@ Learning to Retrieve Information (SCC 1995), Learning to Order Things (NIPS 1998
 
 LambdaRank (NIPS 2006), AdaRank (SIGIR 2007), SVM-MAP (SIGIR 2007), SoftRank (LR4IR 2007), GPRank (LR4IR 2007), CCA (SIGIR 2007), RankCosine (IP&M 2007), ListNet (ICML 2007), ListMLE (ICML 2008) 。
 
-# Tri-training
 
-## 半监督学习
-
-之前提到的算法，多数都属于监督学习算法。其特点在于，构建一个包含标记数据的训练集，用来训练算法模型。
-
-然而，获得标记数据是一个费时费力的高成本过程，实际工作中，更有可能的情况是：少量标记数据+大量未标记数据。
-
-未标记数据的处理方式，一般有如下三种：
-
-![](/images/article/Semi_supervised_Learning.png)
-
-### 主动学习
-
-1.根据标记数据生成一个简单的模型A。
-
-2.挑出对改善模型性能帮助最大的样本数据B。
-
-3.通过查询行业专家获得B的真实标记。
-
-4.根据B的真实标记，更新模型A。
-
-以SVM为例，对于改善模型性能帮助最大的样本往往是位于分类边界的样本，可将这些样本挑出来，查询它的标记。
 
 

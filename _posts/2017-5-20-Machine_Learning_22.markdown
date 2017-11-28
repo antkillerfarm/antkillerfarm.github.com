@@ -308,23 +308,6 @@ http://mp.weixin.qq.com/s/Q5kBCNZs3a6oiznC9-2bVg
 
 Michael Jordan新研究官方解读：如何有效地避开鞍点
 
-https://mp.weixin.qq.com/s/q7BI-YyhtmNzUfBMTKVdqQ
 
-Hitting time analysis of SGLD！
 
-https://mp.weixin.qq.com/s/vt7BEHbwJrAzlL2Pc-6QFg
-
-掌握机器学习数学基础之优化（上）
-
-https://mp.weixin.qq.com/s/6NBLLLa-S625iaehR8zDfQ
-
-掌握机器学习数学基础之优化（下）
-
-https://mp.weixin.qq.com/s/o10Fp2VCwoLqgzirbGL9LQ
-
-如何估算深度神经网络的最优学习率
-
-https://mp.weixin.qq.com/s/T4f4W0V6YNBbjWqWBF19mA
-
-目标函数的经典优化算法介绍
 
