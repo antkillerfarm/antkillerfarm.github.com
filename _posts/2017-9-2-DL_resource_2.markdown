@@ -112,6 +112,10 @@ https://mp.weixin.qq.com/s/rmi5ulyLdRIw11sKDxPYvQ
 
 学会了玩街霸2的AI，你怕不怕？
 
+https://mp.weixin.qq.com/s/Wqy-GeXpW8s0j7m5OYpcDA
+
+过去十年，我们用了哪些即时战略游戏训练AI？
+
 ## TPU & GPU
 
 https://zhuanlan.zhihu.com/p/25382177

@@ -308,6 +308,7 @@ http://mp.weixin.qq.com/s/Q5kBCNZs3a6oiznC9-2bVg
 
 Michael Jordan新研究官方解读：如何有效地避开鞍点
 
+https://mp.weixin.qq.com/s/YRyqvlNe24mlFZ7GB9vDnw
 
-
+一文看懂常用的梯度下降算法
 

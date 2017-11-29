@@ -199,42 +199,6 @@ LSTM主要包括以下4个步骤（也可称为4个功能或门）：
 
 上图是一个改动较大的变体**Gated Recurrent Unit（GRU）**。它将忘记门和输入门合成了一个单一的 更新门。同样还混合了细胞状态和隐藏状态，和其他一些改动。最终的模型比标准的 LSTM 模型要简单，也是非常流行的变体。
 
-# LSTM进阶
-
-《Long short-term memory》
-
-这是最早提出LSTM这个概念的论文。这篇论文偏重数学推导，实话说不太适合入门之用。但既然是起点，还是有列出来的必要。
-
-《LSTM Neural Networks for Language Modeling》
-
-这也是一篇重要的论文。
-
-《Long-term Recurrent Convolutional Networks for Visual Recognition and Description》
-
-Long-term Recurrent Convolutional Networks是LSTM的一种应用方式，它结合了LSTM、CNN、CRF等不同网络组件。
-
-![](/images/article/LSTM_X.png)
-
-上图展示了LSTM在动作识别、图片和视频描述等任务中的网络结构。
-
-![](/images/article/LSTM_X_2.png)
-
-上图展示了图片描述任务中几种不同的网络连接方式：
-
-1.单层LRCN。
-
-2.双层LRCN。CNN连接在第一个LSTM层。传统的LSTM只有一个输入，这里的CNN是第二个输入，也就是所谓的静态输入。可参看caffe的LSTM实现。
-
-2.双层LRCN。CNN连接在第二个LSTM层。
-
-![](/images/article/LSTM_X_3.png)
-
-![](/images/article/LSTM_X_4.png)
-
-![](/images/article/LSTM_X_5.png)
-
-这是视频描述任务中LSTM和CRF结合的示例。
-
 ## 参考
 
 http://www.csdn.net/article/2015-06-05/2824880

@@ -354,6 +354,10 @@ http://www.xfyun.cn/share/?p=2598
 
 当微服务撞上区块链
 
+https://mp.weixin.qq.com/s/VfsenlyT9QHyj9_Oge8dRg
+
+十年大数据，十年区块链，两技术如何共生演进?
+
 # 数字成像
 
 https://mp.weixin.qq.com/s/od9uDZdRU4QaBKPHb0tLag

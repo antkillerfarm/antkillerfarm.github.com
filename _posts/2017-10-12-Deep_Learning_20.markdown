@@ -268,6 +268,14 @@ http://blog.csdn.net/gitchat/article/details/78546894
 
 TensorFlow人脸识别网络与对抗网络搭建
 
+https://mp.weixin.qq.com/s/ZJmgC8xTruaRLfCocodjqA
+
+人脸检测与识别总结
+
+https://mp.weixin.qq.com/s/lGIkLcglQGvDzdBQmZW0Qw
+
+判别特征学习方法用于人脸识别
+
 # 手势识别
 
 https://zhuanlan.zhihu.com/p/26630215
