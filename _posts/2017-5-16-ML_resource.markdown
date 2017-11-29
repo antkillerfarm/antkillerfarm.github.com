@@ -82,10 +82,6 @@ https://zhuanlan.zhihu.com/p/20756711
 
 用Excel做出强大漂亮的数据地图
 
-http://blog.csdn.net/u010945683/article/details/49149815
-
-共轭先验分布
-
 http://wenku.baidu.com/view/44a63fd2b14e852458fb577f.html
 
 kriging插值
@@ -157,10 +153,6 @@ https://mp.weixin.qq.com/s/dcb7DRlK6azZHBym4gAVYQ
 https://mp.weixin.qq.com/s/goupgFyxjHouj2zML0XCPg
 
 如何使用JavaScript构建机器学习模型
-
-https://mp.weixin.qq.com/s/jeloJDgfa3eFXUPduhesVA
-
-logistic函数和softmax函数
 
 https://mp.weixin.qq.com/s/G5a0YK39RZzgce_szbwoTA
 
@@ -253,10 +245,6 @@ https://mp.weixin.qq.com/s/eSAbkGYzfAiEpiOYTT5Z0A
 https://mp.weixin.qq.com/s/ubpRPQ7-1nvY5CzICWi1Cg
 
 似乎没区别，但你混淆过验证集和测试集吗？
-
-https://mp.weixin.qq.com/s/wk3_wG1xSuMX1HjJeEgErQ
-
-kmeans聚类理论篇K的选择（轮廓系数）
 
 https://mp.weixin.qq.com/s/u-6nPrb4r9AS2gtrl5s-FA
 
@@ -433,5 +421,33 @@ https://mp.weixin.qq.com/s/Cpurb5jLNbdw-RNaewCgJQ
 https://mp.weixin.qq.com/s/4LrG5gQXzD5M0fD4p-TZiA
 
 大数据分析苏轼，你没看错，这些都是小学生完成的
+
+http://kexue.fm/archives/4638/
+
+训练集、验证集和测试集的意义
+
+https://mp.weixin.qq.com/s/y5TCYmnJ3ssA8AI9voaRqw
+
+机器学习新手工程师常犯的6大错误
+
+https://mp.weixin.qq.com/s/izOnp5SQGBKXG9qy1sA2mA
+
+AI Alphas(A股版)量化投资策略框架！
+
+https://mp.weixin.qq.com/s/YtRt-JTrR6XyVYo-i7RXTw
+
+数学家破解婚恋网站配对程序，90天找到灵魂伴侣
+
+https://mp.weixin.qq.com/s/Rj-ObD-eM5zEfs5fkWamGQ
+
+三大特征选择策略，有效提升你的机器学习水准
+
+https://mp.weixin.qq.com/s/JF23e8-XbkpPxLi6kTxfNA
+
+一文搞懂Hungarian Algorithm匈牙利算法
+
+https://mp.weixin.qq.com/s/aPepcwG_VMioqGQ_Fp3deg
+
+海量数据处理利器之布隆过滤器
 
 

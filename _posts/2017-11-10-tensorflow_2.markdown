@@ -403,5 +403,7 @@ https://mp.weixin.qq.com/s/kEowgNPVS1nAGBPbzkatlQ
 
 如何构建高可读性和高可重用的TensorFlow模型
 
+https://mp.weixin.qq.com/s/O_IN39FBVPeD5fRYBsPuZQ
 
+用TensorFlow开发问答系统
 

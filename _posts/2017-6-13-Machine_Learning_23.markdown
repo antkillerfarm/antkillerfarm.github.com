@@ -271,6 +271,10 @@ http://blog.csdn.net/aliceyangxi1987/article/details/71079522
 
 用ARIMA模型做需求预测
 
+http://blog.csdn.net/kicilove/article/details/78315335
+
+时间序列初级理论篇
+
 # 推荐算法中的常用排序算法
 
 ## Pointwise方法

@@ -382,6 +382,10 @@ https://mp.weixin.qq.com/s/f0TqhSW-KVwVTv54gtHyGw
 
 胶囊网络9大优势4大缺陷
 
+https://mp.weixin.qq.com/s/0uqS5CXVVxjX2c3P-gdSng
+
+欲取代CNN的Capsule Network究竟是什么来头？
+
 ## 面试
 
 https://www.zhihu.com/question/41233373

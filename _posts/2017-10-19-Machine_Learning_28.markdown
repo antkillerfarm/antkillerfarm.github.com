@@ -92,6 +92,16 @@ $$DM:P(Y,R|O)\to P(Y|O)$$
 
 ![](/images/article/Generative_Models.png)
 
+## 参考
+
+https://mp.weixin.qq.com/s/srLs_88QOFkBiKMiLZH9HA
+
+想了解概率图模型？你要先理解图论的基本定义与形式
+
+https://mp.weixin.qq.com/s/S-6Mb6zNzVPpxR8DbWdT-A
+
+读懂概率图模型：你需要从基本概念和参数估计开始
+
 # 机器学习的算法体系&相关术语表
 
 ## 算法体系

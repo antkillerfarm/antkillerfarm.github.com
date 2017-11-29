@@ -198,7 +198,7 @@ x_0 \\ x_1 \\
 
 Cook-Toom algorithm的缺点在于：当卷积核较大时，增加的加法数量以远超核大小的速度增长，最终会导致增加的加法所耗费的时间甚至超过节省下来的乘法所耗费的时间。
 
-## 最大公约数
+## 最大公约数和Euclidean algorithm
 
 在介绍Winograd算法之前，我们首先介绍一下求最大公约数的Euclidean algorithm。
 
@@ -208,13 +208,13 @@ Cook-Toom algorithm的缺点在于：当卷积核较大时，增加的加法数�
 
 但这个算法实际上是个非常低效的方法。实际中最常用的是Euclid在他的巨著《几何原本》中，给出的Euclidean algorithm，中文叫做辗转相除法。
 
-顺便提一句，求余数的整数除法，也被称作Euclidean division。（普通整数除法以小数，而非余数，代替无法整除的部分）宗师就是这么牛！
+顺便提一句，求余数的整数除法，也被称作Euclidean division。（普通整数除法以小数，而非余数（remainder），代替无法整除的部分）宗师就是这么牛！
 
 Euclidean algorithm的步骤如下图所示：
 
 ![](/images/article/Euclidean_algorithm.png)
 
-1.假设$$a>b$$，则令$$c:=a \pmod{b}$$。
+1.假设$$a>b$$，则令$$c:=a \mod{b}$$。
 
 2.如果$$c=0$$，则$$GCD(a,b)=b$$。
 
@@ -227,6 +227,14 @@ Euclidean algorithm的步骤如下图所示：
 然而，小学课本不使用Euclidean algorithm是有原因的，除了Euclidean algorithm本身相对复杂之外，短除法能同时搞定最大公约数和最小公倍数（Least common multiple），这也是它的教学优势所在。
 
 Euclidean algorithm作为最古老的算法之一，被收录进Knuth的巨著TAOCP。这里的算法，指的是那些根据一定的规则来一步步执行的运算。
+
+## Bézout's identity和Extended Euclidean algorithm
+
+>Étienne Bézout，1730~1783，法国数学家。法国科学院院士。
+
+**贝祖定理**：若a,b是非0整数，$$d=GCD(a,b)$$，则存在整数x,y使得$$ax+by=d$$。证明略。
+
+
 
 ## 中国剩余定理
 
@@ -264,7 +272,7 @@ $$\begin{align}
 
 1.首先对$$m_i$$按降序排序。
 
-2.选择最大的模（这里为5），和对应的$$a_i$$（这里为4）。
+2.选择最大的模（这里为5）和对应的$$a_i$$（这里为4）。
 
 3.
 
@@ -309,6 +317,10 @@ $$x^2 + 7x + 6 = (x + 1)(x + 6)$$
 $$x^2 − 5x − 6 = (x + 1)(x − 6)$$
 
 则两多项式的GCD为$$(x + 1)$$。
+
+## 多项式的CRT
+
+
 
 ## Winograd algorithm
 

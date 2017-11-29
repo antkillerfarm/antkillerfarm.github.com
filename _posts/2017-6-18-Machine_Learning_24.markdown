@@ -176,6 +176,10 @@ http://blog.csdn.net/u013709270/article/details/72967462
 
 机器学习中的数据不平衡解决方案大全
 
+https://mlr-org.github.io/mlr-tutorial/devel/html/over_and_undersampling/index.html
+
+Imbalanced Classification Problems
+
 # 强化学习
 
 ## 概述

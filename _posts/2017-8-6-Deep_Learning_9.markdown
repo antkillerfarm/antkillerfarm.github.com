@@ -274,6 +274,10 @@ https://mp.weixin.qq.com/s/LHCEh4BPZ_qbSKaar19nNg
 
 十种主流GANs，我该如何选择？
 
+https://mp.weixin.qq.com/s/rPDvLnG4MBDRUMCWs2fjcQ
+
+最新StarGAN对抗生成网络实现多领域图像变换
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。

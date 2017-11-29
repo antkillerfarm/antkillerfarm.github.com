@@ -76,6 +76,16 @@ $$g(z)=\begin{cases}
 
 这时又被叫做感知器学习（perceptron learning）算法。
 
+参考：
+
+https://mp.weixin.qq.com/s/Y1_smqwmLPQzJ202JVq7zw
+
+一文搞懂极大似然估计
+
+https://mp.weixin.qq.com/s/MuV_kamfsUgcradKIaXGbw
+
+逻辑回归（Logistic Regression）模型简介
+
 ## 指数类分布
 
 线性回归和对数回归的迭代公式相同不是偶然的，它们都是指数类分布的特例。
@@ -192,11 +202,15 @@ $$h_\theta(x)=E[T(y)\vert x;\theta]=\begin{bmatrix} \phi_1 \\ \phi_2 \\ \vdots \
 
 $$\ell(\theta)=\sum_{i=1}^m\log p(y^{(i)}\vert x^{(i)};\theta)=\sum_{i=1}^m\log\prod_{l=1}^k\left(\frac{\exp(\theta_{l}^Tx^{(i)})}{\sum_{j=1}^k\exp(\theta_j^Tx^{(i)})}\right)^{1\{y^{(i)}=l\}}$$
 
-GLM更多的内容可参见：
+参考：
 
 http://statmath.wu.ac.at/courses/heather_turner/
 
 INTRODUCTION TO GENERALIZED LINEAR MODELS
+
+https://mp.weixin.qq.com/s/jeloJDgfa3eFXUPduhesVA
+
+logistic函数和softmax函数
 
 ## 机器学习的优化问题
 

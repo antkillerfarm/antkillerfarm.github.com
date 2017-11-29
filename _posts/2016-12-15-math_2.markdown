@@ -198,6 +198,10 @@ http://www.ruanyifeng.com/blog/2015/06/poisson-distribution.html
 
 泊松分布和指数分布：10分钟教程
 
+http://blog.csdn.net/kicilove/article/details/78655856
+
+数据科学家应知必会的6种常见概率分布
+
 ## 贝塔分布和共轭先验分布
 
 $$f(x;\alpha,\beta)=\frac{x^{\alpha-1}(1-x)^{\beta-1}}{B(\alpha,\beta)}$$
@@ -260,6 +264,12 @@ $$先验参数分布+数据分布\to 后验分布$$
 | 正态分布（方差未知） | 方差 | 倒伽马分布 |
 
 共轭先验分布中，由于先验分布和后验分布都是同一个分布族，因此有利于简化计算。同时，先验参数往往会传递到后验分布，这样就能够比较方便的确定参数的实际意义。
+
+参考：
+
+http://blog.csdn.net/u010945683/article/details/49149815
+
+共轭先验分布
 
 ## 多项分布和狄利克雷分布
 

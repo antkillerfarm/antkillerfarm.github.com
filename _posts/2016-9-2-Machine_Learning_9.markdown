@@ -186,11 +186,19 @@ K-means算法各个聚类的特征都是一样的，也就是“圆圈”的半�
 | ![](/images/article/EM_2.png) | ![](/images/article/EM_3.png) |
 | K-means算法 | GMM算法 |
 
+>注意：这里的圆圈是先验估计值，它和最后的聚类形状无关。
+
 GMM算法结果也是局部最优解。对其他参数取不同的初始值进行多次计算同样适用于GMM算法。
 
 参考：
 
 http://cseweb.ucsd.edu/~atsmith/project1_253.pdf
+
+Clustering With EM and K-Means
+
+https://mp.weixin.qq.com/s/wk3_wG1xSuMX1HjJeEgErQ
+
+kmeans聚类理论篇K的选择（轮廓系数）
 
 # EM算法
 

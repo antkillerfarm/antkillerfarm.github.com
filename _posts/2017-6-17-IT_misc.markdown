@@ -173,6 +173,16 @@ http://blog.chinaunix.net/uid-7426920-id-2627743.html
 
 **次要的不同**：calloc返回的是一个数组，而malloc返回的是一个对象。
 
+## 惰性求值
+
+http://www.cnblogs.com/gtarcoder/p/4811614.html
+
+c++11实现l延迟调用（惰性求值）
+
+http://www.fuzihao.org/blog/2016/02/10/C-%E5%AE%9E%E7%8E%B0%E6%83%B0%E6%80%A7%E6%B1%82%E5%80%BC/
+
+C++实现惰性求值
+
 ## gcc链接器
 
 ### gcc和ld的差异

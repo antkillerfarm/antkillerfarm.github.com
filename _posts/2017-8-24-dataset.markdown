@@ -362,4 +362,8 @@ https://mp.weixin.qq.com/s/NvD-NSR-aE8HTADR2LSSjA
 
 基于Flink流处理的动态实时超大规模用户行为分析
 
+https://mp.weixin.qq.com/s/Ul6Qg2ylCgvDfJTQre4DWQ
+
+2017年数据可视化的七大趋势
+
 

@@ -244,3 +244,19 @@ https://github.com/catboost/catboost
 
 https://github.com/catboost/catboost-viewer
 
+# DL参考资源
+
+https://mp.weixin.qq.com/s/MoKzux6Z69dlpqcVTvQ9oQ
+
+解释深度神经网络训练全过程：谷歌发布SVCCA
+
+https://mp.weixin.qq.com/s/DF5eSgJpFHfcMeW2EL6oZQ
+
+Hinton提出泛化更优的「软决策树」：可解释DNN具体决策
+
+https://mp.weixin.qq.com/s/aGc8Y8I_Xt0837H0MUVL-g
+
+CMU副教授马坚：精准基因组数据和智能医疗最新进展
+
+
+

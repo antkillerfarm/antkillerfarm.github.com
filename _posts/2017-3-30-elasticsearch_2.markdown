@@ -342,6 +342,8 @@ https://mp.weixin.qq.com/s/KigkxkUDYP8r1SEmDUvCCw
 
 高斯背景
 
+laurent series
+
 Reinforcement Learning and Control
 
 Linear Discriminant Analysis

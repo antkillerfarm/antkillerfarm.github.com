@@ -294,8 +294,6 @@ https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q
 
 如何用百度深度学习框架PaddlePaddle做数据预处理
 
-
-
 ## Other
 
 https://www.jiqizhixin.com/articles/2017-07-27-2

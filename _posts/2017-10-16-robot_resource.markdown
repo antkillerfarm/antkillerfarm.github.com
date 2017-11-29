@@ -196,34 +196,6 @@ https://mp.weixin.qq.com/s/h7qBPDoYTDCXSix1KdyXtg
 
 # ML参考资源
 
-http://kexue.fm/archives/4638/
-
-训练集、验证集和测试集的意义
-
-https://mp.weixin.qq.com/s/y5TCYmnJ3ssA8AI9voaRqw
-
-机器学习新手工程师常犯的6大错误
-
-https://mp.weixin.qq.com/s/izOnp5SQGBKXG9qy1sA2mA
-
-AI Alphas(A股版)量化投资策略框架！
-
-https://mp.weixin.qq.com/s/YtRt-JTrR6XyVYo-i7RXTw
-
-数学家破解婚恋网站配对程序，90天找到灵魂伴侣
-
-https://mp.weixin.qq.com/s/Rj-ObD-eM5zEfs5fkWamGQ
-
-三大特征选择策略，有效提升你的机器学习水准
-
-https://mp.weixin.qq.com/s/JF23e8-XbkpPxLi6kTxfNA
-
-一文搞懂Hungarian Algorithm匈牙利算法
-
-https://mp.weixin.qq.com/s/aPepcwG_VMioqGQ_Fp3deg
-
-海量数据处理利器之布隆过滤器
-
 https://mp.weixin.qq.com/s/7N6eDoEV8oEwUpP-zK1RpQ
 
 560万Facebook人际关系数据，揭秘家庭职业传承“真相”
@@ -243,10 +215,6 @@ https://mp.weixin.qq.com/s/94IGjVPXZ0FeCILQN33eBQ
 https://mp.weixin.qq.com/s/qO-fratGj66wpQPMLASxFw
 
 从贝叶斯定理到概率分布：综述概率论基本定义
-
-https://mp.weixin.qq.com/s/MuV_kamfsUgcradKIaXGbw
-
-逻辑回归（Logistic Regression）模型简介
 
 https://zhuanlan.zhihu.com/p/30383356
 

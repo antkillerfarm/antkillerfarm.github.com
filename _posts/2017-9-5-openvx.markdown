@@ -8,7 +8,11 @@ category: AI
 
 ## Khronos Group
 
-Khronos Group是一个行业组织，创建开放标准以实现并行计算、图形、视觉、传感处理和动态媒体在各种平台和设备上的编写和加速。Khronos标准包括 Vulkan, OpenGL, OpenGL ES, WebGL, OpenCL, SPIR, SYCL, WebCL, OpenVX, EGL, OpenMAX, OpenVG, OpenSL ES, StreamInput, COLLADA 和 glTF。
+Khronos Group是一个行业组织，创建开放标准以实现并行计算、图形、视觉、传感处理和动态媒体在各种平台和设备上的编写和加速。Khronos标准包括Vulkan, OpenGL, OpenGL ES, WebGL, OpenCL, SPIR, SYCL, WebCL, OpenVX, EGL, OpenMAX, OpenVG, OpenSL ES, StreamInput, COLLADA和glTF。
+
+OpenSL：音频的硬件加速接口。
+
+Vulkan：OpenGL的升级版本。
 
 简单来说，Khronos的任务就是创建一个统一的硬件和软件之间的API，这样无论软件厂商，还是硬件厂商，都能各行其道，互不干扰了。
 
@@ -65,6 +69,10 @@ Neural Network Exchange Format是Khronos制定的用于交换NN模型数据的�
 https://www.khronos.org/nnef
 
 和它竞争的标准还有微软和Facebook联合推出的Open Neural Network Exchange。
+
+https://developer.android.com/ndk/guides/neuralnetworks/index.html
+
+这是Android NDK中的NN相关的接口文档
 
 参见：
 
@@ -146,9 +154,9 @@ http://www.netlib.org/blas/index.html
 
 LAPACK和BLAS的历史非常悠久，是用Fortran语言编写的。
 
-## 常用线性代数库
+# 常用线性代数库
 
-### ATLAS（Automatically Tuned Linear Algebra Soft）
+## ATLAS（Automatically Tuned Linear Algebra Soft）
 
 代码：
 
@@ -158,7 +166,7 @@ https://sourceforge.net/projects/math-atlas/
 
 `sudo apt-get install libatlas-base-dev`
 
-### OpenBLAS
+## OpenBLAS
 
 官网：
 
