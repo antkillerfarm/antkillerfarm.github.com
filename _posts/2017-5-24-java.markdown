@@ -249,6 +249,20 @@ https://github.com/lepture/captcha
 
 这个库可用于生成大量有标签的验证码，是DL入门的必备工具。
 
+## 参考
+
+https://mp.weixin.qq.com/s/_OmRvwFmvuuOpBf7DQG8IA
+
+Python30个编程技巧
+
+https://www.linuxzen.com/qian-yi-dao-python-3.html
+
+迁移到Python 3
+
+https://www.zhihu.com/question/19698598
+
+Python 2和Python 3有哪些主要区别？
+
 # 推荐系统的工程细节
 
 推荐系统不仅是算法，还包括若干工程细节。这些细节虽然不算复杂，够不上算法的层面，然而对产品的成败，却有举足轻重的作用。

@@ -298,6 +298,10 @@ http://www.xfyun.cn/share/?p=2626
 
 开发者常犯的十大加密错误
 
+http://lucacardelli.name/
+
+Luca Andrea Cardelli的个人主页。英国皇家学会会员。
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

@@ -160,6 +160,10 @@ https://mp.weixin.qq.com/s/gIRa-P-xI5DuwY1OLH38MQ
 
 Facebook最新对抗学习研究：无需平行语料库完成无监督机器翻译
 
+https://mp.weixin.qq.com/s/da0M3qwtLN8el2plAQWHJQ
+
+无监督式机器翻译，不需要人类干预和平行文本
+
 https://mp.weixin.qq.com/s/LdU91j8OpDR-pidzzYVtqA
 
 Pointer Networks在自然语言处理领域中的应用

@@ -265,4 +265,7 @@ https://mp.weixin.qq.com/s/XrlveG0kwij2qNL45TZdBg
 
 Attention的另类用法
 
+https://zhuanlan.zhihu.com/p/31547842
+
+深度学习中Attention Mechanism详细介绍：原理、分类及应用
 

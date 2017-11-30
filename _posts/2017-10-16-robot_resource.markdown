@@ -308,4 +308,8 @@ https://mp.weixin.qq.com/s/zIQd6tSbVMSgFsJ28rtEwg
 
 GitHub上82%的代码是重复代码
 
+https://mp.weixin.qq.com/s/2qOjE0B6x9xuyoBw94NqQA
+
+线性规划基础
+
 

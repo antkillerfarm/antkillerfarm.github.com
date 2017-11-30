@@ -278,6 +278,10 @@ https://mp.weixin.qq.com/s/rPDvLnG4MBDRUMCWs2fjcQ
 
 最新StarGAN对抗生成网络实现多领域图像变换
 
+https://mp.weixin.qq.com/s/h7lrJYQ_RqJDako8UoYK-A
+
+六种改进均未超越原版：谷歌新研究对GAN现状提出质疑
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
