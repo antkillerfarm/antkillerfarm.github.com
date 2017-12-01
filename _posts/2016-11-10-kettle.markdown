@@ -169,6 +169,14 @@ http://iamyida.iteye.com/category/335240
 
 跟益达学Lucene5系列教程
 
+https://mp.weixin.qq.com/s/ydIkoD3e87As_6f96mJkww
+
+搜索那点事儿：Lucene文件存储和读取技术详解
+
+https://mp.weixin.qq.com/s/KPsR3JlRU2g1V1w9CjTaHg
+
+搜索引擎之倒排索引解读
+
 ## start命令
 
 Solr的运行需要启动相应的服务程序。启动命令如下：

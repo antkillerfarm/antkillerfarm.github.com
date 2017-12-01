@@ -133,6 +133,14 @@ https://mp.weixin.qq.com/s/_G08-3g4QPau2_ZLcsm6-Q
 
 洪小文：以科学的方式赤裸裸地剖析AI（二）：从寒冬到复兴
 
+https://mp.weixin.qq.com/s/yWBcK5mEK0AxusVnPt0VNA
+
+洪小文：以科学的方式赤裸裸地剖析AI（三）：人的智慧在哪里？
+
+https://mp.weixin.qq.com/s/DkAFMDOnJKkdpV7bnkSZqQ
+
+洪小文：以科学的方式赤裸裸地剖析AI（四）：未来是人工智能+人类智能
+
 # BP算法
 
 误差逆传播（error BackPropagation）算法最早由Paul J. Werbos于1974年提出，然而此时正值ANN的低谷，未得到人们的重视。因此到了1986年时，由David Everett Rumelhart重新发明了该算法。

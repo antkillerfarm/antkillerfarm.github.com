@@ -200,6 +200,10 @@ https://mp.weixin.qq.com/s/wk3_wG1xSuMX1HjJeEgErQ
 
 kmeans聚类理论篇K的选择（轮廓系数）
 
+https://mp.weixin.qq.com/s/tLcF7_jjl3_FmjM7L1kcfw
+
+一文详解高斯混合模型原理
+
 # EM算法
 
 本节将进一步讨论EM算法的性质，并将之应用到使用latent random variables的一大类估计问题中。

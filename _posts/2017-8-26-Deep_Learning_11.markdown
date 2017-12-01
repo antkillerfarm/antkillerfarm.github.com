@@ -210,6 +210,18 @@ Cook-Toom algorithm的缺点在于：当卷积核较大时，增加的加法数�
 
 顺便提一句，求余数的整数除法，也被称作Euclidean division。（普通整数除法以小数，而非余数（remainder），代替无法整除的部分）宗师就是这么牛！
 
+这里引入如下数学符号：
+
+$$m(m>0)$$整除n记作$$m \vert n$$，其定义为存在一个整数k使得$$km=n$$。
+
+余数一般用$$c=R_m[n]$$或$$c=n \mod{m}$$来表示。
+
+再引入**同余（congruences）**的概念和符号：
+
+$$x \equiv a \pmod{m}$$
+
+上式表示x除以m的余数和a除以m的余数相等，这样的关系被称为“x和a同余（模为m）”
+
 Euclidean algorithm的步骤如下图所示：
 
 ![](/images/article/Euclidean_algorithm.png)
@@ -230,23 +242,27 @@ Euclidean algorithm作为最古老的算法之一，被收录进Knuth的巨著TA
 
 ## Bézout's identity和Extended Euclidean algorithm
 
+Euclidean division还可以表示为如下形式：
+
+如果$$a'=a \mod(b)$$，则$$a=\lfloor\frac{a}{b}\rfloor b+a'$$。
+
+这里的$$\lfloor x \rfloor$$是向下取整的意思。
+
 >Étienne Bézout，1730~1783，法国数学家。法国科学院院士。
 
 **贝祖定理**：若a,b是非0整数，$$d=GCD(a,b)$$，则存在整数x,y使得$$ax+by=d$$。证明略。
 
+参考：
 
+https://blog.sengxian.com/algorithms/gcd-extgcd
+
+欧几里德算法与扩展欧几里德算法
 
 ## 中国剩余定理
 
 Chinese remainder theorem算是初等数论中，一个非常重要的定理了。（初等数论意指使用不超过高中程度的初等代数处理的数论问题，其最主要的工具包括整数的整除性与同余。）
 
 CRT最早出自中国四世纪成书的古书《孙子算经》。著名的娱乐圈学霸关晓彤同学所攻克的“鸡兔同笼问题”，就出自该书。 
-
-首先，我们引入**同余（congruences）**的概念和符号：
-
-$$x \equiv a \pmod{m}$$
-
-上式表示x除以m的余数和a除以m的余数相等，这样的关系被称为“x和a同余（模为m）”
 
 CRT的内容为：
 
@@ -288,44 +304,6 @@ $$\begin{align}
 筛法对于M较小的情况，是非常高效的，因此手算一般都采用该法。但是，筛法的复杂度是指数级的，对于M较大的情况，并不好用。
 
 CRT虽然只是初等数论的基本定理，但应用范围很广，Lagrange interpolation（一阶多项式插值）、Hermite interpolation（多阶多项式插值）和Dedekind's theorem，都用到了CRT。
-
-## 多项式的Euclidean division和GCD
-
-我们可以仿照整数Euclidean division定义多项式的Euclidean division，如下面的竖式所示：
-
-$$\begin{array}{r}
- x^2 + {\color{White}1}x + 3\\
- x-3\overline{) x^3 - 2x^2 + 0x - 4}\\
- \underline{x^3 - 3x^2 {\color{White} {} + 0x - 4}}\\
- +x^2 + 0x {\color{White} {} - 4}\\
- \underline{+x^2 - 3x {\color{White} {} - 4}}\\
- +3x - 4\\
- \underline{+3x - 9}\\
- +5
-\end{array}$$
-
-上式改写为横式：
-
-$${x^3 - 2x^2 - 4} = (x-3)\,\underbrace{(x^2 + x + 3)}_{q(x)}  +\underbrace{5}_{r(x)}$$
-
-其中的$$r(x)$$即为余数。
-
-同样的可以定义多项式的GCD：
-
-$$x^2 + 7x + 6 = (x + 1)(x + 6)$$
-
-$$x^2 − 5x − 6 = (x + 1)(x − 6)$$
-
-则两多项式的GCD为$$(x + 1)$$。
-
-## 多项式的CRT
-
-
-
-## Winograd algorithm
-
-
-
 
 
 

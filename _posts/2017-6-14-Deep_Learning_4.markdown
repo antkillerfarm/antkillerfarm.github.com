@@ -248,6 +248,10 @@ http://kexue.fm/archives/4681/
 
 更别致的词向量模型(六)：代码、分享与结语
 
+https://mp.weixin.qq.com/s/reT4lAjwo4fHV4ctR9zbxQ
+
+漫谈Word2vec之skip-gram模型
+
 # RNN
 
 ## RNN的基本结构

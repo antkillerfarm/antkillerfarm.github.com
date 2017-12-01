@@ -6,6 +6,42 @@ category: DL
 
 # Winograd（续）
 
+## 多项式的Euclidean division和GCD
+
+我们可以仿照整数Euclidean division定义多项式的Euclidean division，如下面的竖式所示：
+
+$$\begin{array}{r}
+ x^2 + {\color{White}1}x + 3\\
+ x-3\overline{) x^3 - 2x^2 + 0x - 4}\\
+ \underline{x^3 - 3x^2 {\color{White} {} + 0x - 4}}\\
+ +x^2 + 0x {\color{White} {} - 4}\\
+ \underline{+x^2 - 3x {\color{White} {} - 4}}\\
+ +3x - 4\\
+ \underline{+3x - 9}\\
+ +5
+\end{array}$$
+
+上式改写为横式：
+
+$${x^3 - 2x^2 - 4} = (x-3)\,\underbrace{(x^2 + x + 3)}_{q(x)}  +\underbrace{5}_{r(x)}$$
+
+其中的$$r(x)$$即为余数。
+
+同样的可以定义多项式的GCD：
+
+$$x^2 + 7x + 6 = (x + 1)(x + 6)$$
+
+$$x^2 − 5x − 6 = (x + 1)(x − 6)$$
+
+则两多项式的GCD为$$(x + 1)$$。
+
+## 多项式的CRT
+
+
+
+## Winograd algorithm
+
+
 ## 参考
 
 https://colfaxresearch.com/falcon-library/

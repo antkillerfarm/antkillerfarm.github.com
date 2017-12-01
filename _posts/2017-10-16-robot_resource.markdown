@@ -280,6 +280,22 @@ https://mp.weixin.qq.com/s/DUz76rLOEL6iK1aytku7sQ
 
 基于机器学习方法的POI品类推荐算法
 
+https://mp.weixin.qq.com/s/seIwEHqoCoWk5JzXGpL3rQ
+
+用一座冠军奖杯的实力讲述资讯个性化推荐
+
+https://mp.weixin.qq.com/s/TydTE50NzxMbGAigqv6BCw
+
+如何破解“千人千面”，深度解读用户画像
+
+https://mp.weixin.qq.com/s/ycxigg0HbiOTRUBPAWk21Q
+
+推荐系统中的冷启动问题和探索利用问题
+
+https://mp.weixin.qq.com/s/yQs8Mhe0kM6XMA7JfjRuPA
+
+达观数据推荐系统算法实践—重排序
+
 https://mp.weixin.qq.com/s/Dqe3XX-OFdM5vNshrVrsTg
 
 一文综述数据科学家必备的10大统计技术
@@ -311,5 +327,31 @@ GitHub上82%的代码是重复代码
 https://mp.weixin.qq.com/s/2qOjE0B6x9xuyoBw94NqQA
 
 线性规划基础
+
+https://mp.weixin.qq.com/s/Fuu70rPWyYP5mQSOK3J9_Q
+
+机器学习在web攻击检测中的应用实践
+
+https://mp.weixin.qq.com/s/VxC1X4U7SnAhpaJLvKvz1g
+
+通俗理解粒子群优化算法
+
+https://mp.weixin.qq.com/s/PAFt4eQ2MaAlRbR9rWW8mA
+
+“想你所想”之个性化推荐：实践与优化
+
+https://mp.weixin.qq.com/s/pvYAfwWmTgj-Blz9jYunsw
+
+“达观杯”个性化推荐算法挑战赛技术讲解
+
+https://mp.weixin.qq.com/s/Ixvc_Zv0iVpE6B4DfMOvag
+
+12月的音乐可视化笔记：我从TOP2000歌曲中，分析了这几年流行音乐的变化趋势
+
+https://mp.weixin.qq.com/s/TUwg5y7Pse0SlvsXGwvl7w
+
+沿着地铁买房怎样更划算？2017上海城市大数据报告发布
+
+
 
 

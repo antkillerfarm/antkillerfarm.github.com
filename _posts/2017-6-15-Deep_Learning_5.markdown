@@ -126,6 +126,10 @@ https://mp.weixin.qq.com/s/0TLaC8ACXAFEK5aMNK9O-Q
 
 简单循环单元SRU：像CNN一样快速训练RNN
 
+https://zhuanlan.zhihu.com/p/27104240
+
+CW-RNN收益率时间序列回归
+
 # LSTM
 
 本篇笔记主要摘自：

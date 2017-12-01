@@ -285,6 +285,24 @@ https://homepages.cwi.nl/~sbohte/publication/paugam_moisy_bohte_SNNChapter.pdf
 
 Computing with Spiking Neuron Networks
 
+# DNC
+
+https://zhuanlan.zhihu.com/p/27773709
+
+浅析至强RNN可微分神经计算机(DNC)
+
+https://zhuanlan.zhihu.com/p/27964341
+
+浅析至强RNN可微分神经计算机(DNC)-2
+
+https://zhuanlan.zhihu.com/p/28209628
+
+DNC-3滚动分类的模式识别
+
+https://zhuanlan.zhihu.com/p/28433712
+
+DNC4广义线性回归
+
 # OCR
 
 ## tesseract

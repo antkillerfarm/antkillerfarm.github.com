@@ -220,4 +220,18 @@ https://zhuanlan.zhihu.com/p/31453283
 
 浅谈NLP中条件语言模型(Conditioned Language Models)的生成和评估
 
+https://mp.weixin.qq.com/s/vazeuiFvCC8aIhP2uAXoew
+
+达观数据智能问答技术研究
+
+https://mp.weixin.qq.com/s/M8Awv6Tod4SEo85F8xzqqg
+
+基于半监督学习技术的达观数据文本过滤系统
+
+https://mp.weixin.qq.com/s/Ounb14tu6lyebiOQqY4TyQ
+
+达观数据如何打造一个中文NER系统
+
+
+
 

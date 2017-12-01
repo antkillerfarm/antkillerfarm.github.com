@@ -240,6 +240,10 @@ https://mp.weixin.qq.com/s/SqU74jYBrjtp9L-bnBuboA
 
 教你完美实现深度强化学习算法DQN
 
+https://zhuanlan.zhihu.com/p/31579144
+
+让我们从零开始做一个机械手臂(强化学习)
+
 # NN的INT8计算
 
 ## 概述
