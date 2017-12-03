@@ -344,6 +344,8 @@ https://mp.weixin.qq.com/s/KigkxkUDYP8r1SEmDUvCCw
 
 laurent series
 
+Base32/Base36/Base64/Base85
+
 Reinforcement Learning and Control
 
 Linear Discriminant Analysis

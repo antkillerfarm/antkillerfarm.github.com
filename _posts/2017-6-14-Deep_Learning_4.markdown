@@ -124,6 +124,12 @@ https://github.com/facebookresearch/fastText
 
 《Item2Vec: Neural Item Embedding for Collaborative Filtering》
 
+参考：
+
+https://mp.weixin.qq.com/s/vpxCP1Uw23y9XNTRUhY79w
+
+达观数据推荐算法实现：协同过滤之item embedding
+
 ## word2vec/doc2vec的缺点
 
 1.word2vec/doc2vec基于BOW（Bag Of Word，词袋）模型。该模型的特点是忽略词序，因此对于那些交换词序会改变含义的句子，无法准确评估它们的区别。

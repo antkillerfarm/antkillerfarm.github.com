@@ -28,6 +28,10 @@ https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247484466&idx=1&sn=9dd7d3
 
 Deeplearning4j：使用CNN进行文本分类:图文+代码
 
+https://mp.weixin.qq.com/s/geJDbL1eVcJXDtsO_mu4-w
+
+Deeplearning4j手把手深度学习教程系列完整版
+
 ## Joinery
 
 Pandas的等价物。

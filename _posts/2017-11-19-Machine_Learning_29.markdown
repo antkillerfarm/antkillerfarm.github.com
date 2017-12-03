@@ -110,6 +110,24 @@ http://www.doc88.com/p-7082821463697.html
 
 改进的热传导和物质扩散混合推荐算法
 
+# 强连通分量算法
+
+http://ishare.iask.sina.com.cn/f/34626295.html
+
+矩阵不可约的充要条件
+
+http://www.cnblogs.com/saltless/archive/2010/11/08/1871430.html
+
+求强连通分量的Tarjan算法
+
+http://blog.csdn.net/dm_vincent/article/details/8554244
+
+求解强连通分量算法之---Kosaraju算法
+
+http://www.cnblogs.com/luweiseu/archive/2012/07/14/2591370.html
+
+强连通分支算法--Kosaraju算法、Tarjan算法和Gabow算法
+
 # Keras
 
 Keras是深度学习的前端框架的集大成者，其后端可支持tensorflow、cntk、theano等。
@@ -273,5 +291,29 @@ https://mp.weixin.qq.com/s/bMpugd2Lp35VPr8fQAPzsg
 https://mp.weixin.qq.com/s/R_nd7_YWA7q1JzE0BP8JrQ
 
 Petuum新研究助力临床决策：使用深度学习实现自动ICD编码
+
+https://mp.weixin.qq.com/s/eMju77MVbKdJ_wEgWcR1nw
+
+Active Learning: 一个降低深度学习时间，空间，经济成本的解决方案
+
+https://mp.weixin.qq.com/s/BpU2num-p95OTKnG1tAp3w
+
+深度神经网络-随机三元化梯度下降和结构化稀疏
+
+https://mp.weixin.qq.com/s/_VC6PGdCjlhcsndpunIteg
+
+何恺明等人提出新型半监督实例分割方法：学习分割Every Thing
+
+https://zhuanlan.zhihu.com/p/31595192
+
+Deep Image Prior：深度卷积网络先天就理解自然图像
+
+https://mp.weixin.qq.com/s/NXA7ymIuk0DaRwhFf0OHqA
+
+MSRA研究员提出物体关系模块，实现首个完全端到端的物体检测系统
+
+https://mp.weixin.qq.com/s/rAq6Rn7pSaZ5IOexgLO-4w
+
+FAIR提出突触可塑算法：让神经网络学会记忆和遗忘
 
 

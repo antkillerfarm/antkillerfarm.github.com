@@ -116,6 +116,10 @@ https://mp.weixin.qq.com/s/0u4eFeMbbsSgVPVKHbAK7g
 
 深度学习每日摘要迄今所有文章汇总，其中包含《漫谈RNN》和《漫谈深度强化学习》两个专辑
 
+https://mp.weixin.qq.com/s/1apRt872idF7G1jBYvZJhA
+
+人工智能领域24个主题知识资料全集（入门/进阶/论文/综述/视频/专家等）
+
 http://www.jianshu.com/p/2be349a89a12
 
 超过 150 个最佳机器学习，NLP和Python教程

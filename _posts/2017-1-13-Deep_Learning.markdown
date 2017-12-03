@@ -53,6 +53,8 @@ https://github.com/exacity/deeplearningbook-chinese
 >`sudo apt install texlive-xetex texlive-lang-chinese texlive-science xindy`   
 >`make`
 
+《Deep Learning With Python》，Keras的作者Francois Chollet著。偏重于DL实战。
+
 其他参考文献将在各相关部分列出。
 
 Deep Learning圈子的主要人物：

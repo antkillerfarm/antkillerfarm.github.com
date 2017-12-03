@@ -194,6 +194,26 @@ https://mp.weixin.qq.com/s/h7qBPDoYTDCXSix1KdyXtg
 
 波士顿动动力的机器人用的是什么学习算法？
 
+https://mp.weixin.qq.com/s/ur2eYPZGKdk-ltyXanqiMA
+
+自动驾驶的“大脑”——决策规划篇
+
+https://mp.weixin.qq.com/s/Ee18sjKXNGMowKwqLB0jVg
+
+给自动驾驶一双"通天眼"——环境感知器篇
+
+https://mp.weixin.qq.com/s/booAFydlBvH-SAAVtByt7w
+
+一文带你看懂自动驾驶
+
+https://mp.weixin.qq.com/s/dusPUCjKUzhfmTRhzXte-A
+
+新的图像传感器给汽车装上眼睛
+
+https://mp.weixin.qq.com/s/j_rkmJ09QxhtzFH_Xa1Evw
+
+陈小平：机器人灵巧性可解决不确定性问题
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/7N6eDoEV8oEwUpP-zK1RpQ
@@ -352,6 +372,25 @@ https://mp.weixin.qq.com/s/TUwg5y7Pse0SlvsXGwvl7w
 
 沿着地铁买房怎样更划算？2017上海城市大数据报告发布
 
+https://mp.weixin.qq.com/s/Q-emQCpmlibK8WAqzLTxAw
+
+让推荐系统变得会“说话”———达观推荐理由设计实践
+
+https://mp.weixin.qq.com/s/1Iqcx4fSCnKHALV0Z6rO3g
+
+达观数据是如何基于用户历史行为进行精准个性化推荐的？
+
+https://mp.weixin.qq.com/s/S5_7wQynrBR0yLtNRKC-kw
+
+多模型融合推荐算法在达观数据的运用
+
+https://mp.weixin.qq.com/s/ZbSdzHuKz1cR-qS0gAwOYg
+
+智能分析最佳实践——指标逻辑树
+
+https://mp.weixin.qq.com/s/95Zklj8ovheQV3Gnc-2h-Q
+
+小米大数据总监司马云瑞详解小米用户画像的演进及应用解读
 
 
 

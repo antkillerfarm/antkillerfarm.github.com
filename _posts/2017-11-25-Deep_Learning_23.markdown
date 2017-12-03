@@ -239,6 +239,14 @@ https://mp.weixin.qq.com/s/GZI4uvCR3QzZDNddpBX2OQ
 
 深度学习也解决不掉语音识别问题
 
+https://mp.weixin.qq.com/s/u1UnAuGllcWn8Ik5wDPY6w
+
+可视化语音分析：深度对比Wavenet、t-SNE和PCA等算法
+
+https://mp.weixin.qq.com/s/w9_D1_VVhk9md4RANaipDg
+
+Mozilla开源语音识别模型和世界第二大语音数据集
+
 ## Kaldi
 
 Kaldi是一个语音识别的工具包。官网：

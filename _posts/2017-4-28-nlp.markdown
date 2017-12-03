@@ -58,6 +58,10 @@ https://github.com/oxford-cs-deepnlp-2017/lectures
 
 Oxford Deep NLP 2017 course
 
+http://web.stanford.edu/~jurafsky/NLPCourseraSlides.html
+
+这是斯坦福2012年的NLP教程
+
 ## 书籍
 
 http://ccl.pku.edu.cn/alcourse/nlp/LectureNotes/Natural%20Language%20Processing%20with%20Python.pdf

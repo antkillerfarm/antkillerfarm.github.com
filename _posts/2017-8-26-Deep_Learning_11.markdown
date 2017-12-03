@@ -206,9 +206,9 @@ Cook-Toom algorithm的缺点在于：当卷积核较大时，增加的加法数�
 
 ![](/images/article/Short_division.jpg)
 
-但这个算法实际上是个非常低效的方法。实际中最常用的是Euclid在他的巨著《几何原本》中，给出的Euclidean algorithm，中文叫做辗转相除法。
+但这个算法实际上是个非常低效的方法。实际中最常用的是Euclid在他的巨著《几何原本》中，给出的**Euclidean algorithm**，中文叫做**辗转相除法**。
 
-顺便提一句，求余数的整数除法，也被称作Euclidean division。（普通整数除法以小数，而非余数（remainder），代替无法整除的部分）宗师就是这么牛！
+顺便提一句，求余数的整数除法，也被称作**Euclidean division**。（普通整数除法以小数，而非余数（remainder），代替无法整除的部分）宗师就是这么牛！
 
 这里引入如下数学符号：
 
@@ -248,62 +248,58 @@ Euclidean division还可以表示为如下形式：
 
 这里的$$\lfloor x \rfloor$$是向下取整的意思。
 
+我们可以把上述定义扩展到负数。例如：
+
+$$-103=-2\times 60+17 \Rightarrow (-103) \mod{60}=17$$
+
+>注意：余数永远$$\ge 0$$。
+
+还可以把GCD的定义扩展为：$$GCD(a,0)=a$$，即任何整数都能整除0。
+
+Euclidean division的定义扩展之后，则有Bézout's identity。
+
+**Bézout's identity**：若a,b是非0整数，$$d=GCD(a,b)$$，则存在整数x,y使得$$ax+by=d$$。证明略。
+
 >Étienne Bézout，1730~1783，法国数学家。法国科学院院士。
 
-**贝祖定理**：若a,b是非0整数，$$d=GCD(a,b)$$，则存在整数x,y使得$$ax+by=d$$。证明略。
+至于如何求解x,y，这就要用到**Extended Euclidean algorithm**了。
+
+首先，我们考虑边界情况，当$$b=0$$时，原方程可化为$$ax=GCD(a,0)$$，则：
+
+$$\begin{cases}
+x=1 \\
+y=0 \\
+\end{cases}\tag{1}$$
+
+接着，设$$a'=b,b'=a \mod{b}$$，则由Euclidean algorithm可得：$$GCD(a,b)=GCD(b,a \mod b)$$，因此：
+
+$$a​′​​x​′​​+b​′​​y​′​​=GCD(a​′​​,b​′​​)=GCD(b,a \mod{b})$$
+
+$$ax+by=a​′​​x​′​​+b​′​​y​′​​=bx​′​​+(a\mod{b})y​′​​=bx​′​​+(a−\lfloor\frac{a}{b}\rfloor b)y​′​​$$
+
+整理得到：
+
+$$ax+by=ay​′​​+b(x​′​​−\lfloor\frac{a}{b}\rfloor y​′​​)$$
+
+对比系数，可得：
+
+$$\begin{cases}
+x=y' \\
+y=x'−\lfloor\frac{a}{b}\rfloor y​′​​ \\
+\end{cases}\tag{2}$$
+
+公式1和2合到一起，就是一种迭代算法，也就是Extended Euclidean algorithm了。
+
+从上面的讨论可知，Extended Euclidean algorithm实际上只在Euclidean algorithm之上前进了很小的一步，它的主要内核还是来源于Euclid。
+
+但Euclid之所以不能更进一步，则主要是受制于负数的概念。虽然现在的小学高年级课本中，已经引入了负数，古代中国、印度、阿拉伯也很早就用到了负数，但是西方差不多要到文艺复兴时期，才逐渐接受了负数的概念。
+
+不过反例也是有的，比如无理数，其它文明貌似根本就没有关注过它和有理数究竟有何区别...
 
 参考：
 
 https://blog.sengxian.com/algorithms/gcd-extgcd
 
 欧几里德算法与扩展欧几里德算法
-
-## 中国剩余定理
-
-Chinese remainder theorem算是初等数论中，一个非常重要的定理了。（初等数论意指使用不超过高中程度的初等代数处理的数论问题，其最主要的工具包括整数的整除性与同余。）
-
-CRT最早出自中国四世纪成书的古书《孙子算经》。著名的娱乐圈学霸关晓彤同学所攻克的“鸡兔同笼问题”，就出自该书。 
-
-CRT的内容为：
-
-设$$m_i$$为两两互质（pairwise coprime）的大于1的整数，$$a_i$$为任意整数，则存在x满足：
-
-$$\begin{align} x \equiv a_1 & \pmod{m_1} \\ \quad \vdots \\ x \equiv a_k &\pmod{m_k} \end{align}$$
-
-如果$$0\le x < M,M=\prod_{i=1}^k m_i$$，则该x是唯一的。
-
-CRT的存在性证明略。
-
-这里以如下简单的例子，来讲讲如何求解x。
-
-$$\begin{align}
- x &\equiv 0 \pmod{3} \\
- x &\equiv 3 \pmod{4} \\
- x &\equiv 4 \pmod{5}.
-\end{align}$$
-
-这个问题的穷举法需要遍历0到M的所有整数，这显然是个十分低效的算法。因此无论手算还是计算机算，基本都不用穷举法。
-
-再来介绍一下筛法（Sieving）：
-
-1.首先对$$m_i$$按降序排序。
-
-2.选择最大的模（这里为5）和对应的$$a_i$$（这里为4）。
-
-3.
-
-{% highlight text %}
-4 mod 4 → 0. Continue
-4 + 5 = 9 mod 4 →1. Continue
-9 + 5 = 14 mod 4 → 2. Continue
-14 + 5 = 19 mod 4 → 3. OK, continue by considering remainders modulo 3 and adding 5×4 = 20 each time
-19 mod 3 → 1. Continue
-19 + 20 = 39 mod 3 → 0. OK, this is the result.
-{% endhighlight %}
-
-筛法对于M较小的情况，是非常高效的，因此手算一般都采用该法。但是，筛法的复杂度是指数级的，对于M较大的情况，并不好用。
-
-CRT虽然只是初等数论的基本定理，但应用范围很广，Lagrange interpolation（一阶多项式插值）、Hermite interpolation（多阶多项式插值）和Dedekind's theorem，都用到了CRT。
-
 
 

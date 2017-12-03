@@ -428,4 +428,9 @@ https://stats385.github.io/
 
 STATS 385：Theories of Deep Learning
 
+http://www.cs.cmu.edu/~rsalakhu/10707/lectures.html
+
+CMU：Deep Learning 2017
+
+
 

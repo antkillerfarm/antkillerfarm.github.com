@@ -355,3 +355,8 @@ https://mp.weixin.qq.com/s/_7yx6IywJ1EOClZUcr0AsA
 
 PNAS：绘制情绪图谱，人类内心的表情包其实很丰富
 
+https://mp.weixin.qq.com/s/Nyb9qTYn5_XFhQPa8KZojw
+
+最新Apache Spark平台的NLP库,助你轻松搞定自然语言处理任务
+
+

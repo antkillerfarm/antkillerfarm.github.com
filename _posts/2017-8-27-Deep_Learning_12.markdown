@@ -1,10 +1,57 @@
 ---
 layout: post
-title:  深度学习（十二）——花式池化, Batch Normalization, Softmax详解
+title:  深度学习（十二）——花式池化, Batch Normalization
 category: DL 
 ---
 
 # Winograd（续）
+
+## 中国剩余定理
+
+Chinese remainder theorem算是初等数论中，一个非常重要的定理了。（初等数论意指使用不超过高中程度的初等代数处理的数论问题，其最主要的工具包括整数的整除性与同余。）
+
+CRT最早出自中国四世纪成书的古书《孙子算经》。著名的娱乐圈学霸关晓彤同学所攻克的“鸡兔同笼问题”，就出自该书。 
+
+CRT的内容为：
+
+设$$m_i$$为两两互质（pairwise coprime）的大于1的整数，$$a_i$$为任意整数，则存在x满足：
+
+$$\begin{align} x \equiv a_1 & \pmod{m_1} \\ \quad \vdots \\ x \equiv a_k &\pmod{m_k} \end{align}$$
+
+如果$$0\le x < M,M=\prod_{i=1}^k m_i$$，则该x是唯一的。
+
+CRT的存在性证明略。
+
+这里以如下简单的例子，来讲讲如何求解x。
+
+$$\begin{align}
+ x &\equiv 0 \pmod{3} \\
+ x &\equiv 3 \pmod{4} \\
+ x &\equiv 4 \pmod{5}.
+\end{align}$$
+
+这个问题的穷举法需要遍历0到M的所有整数，这显然是个十分低效的算法。因此无论手算还是计算机算，基本都不用穷举法。
+
+再来介绍一下筛法（Sieving）：
+
+1.首先对$$m_i$$按降序排序。
+
+2.选择最大的模（这里为5）和对应的$$a_i$$（这里为4）。
+
+3.
+
+{% highlight text %}
+4 mod 4 → 0. Continue
+4 + 5 = 9 mod 4 →1. Continue
+9 + 5 = 14 mod 4 → 2. Continue
+14 + 5 = 19 mod 4 → 3. OK, continue by considering remainders modulo 3 and adding 5×4 = 20 each time
+19 mod 3 → 1. Continue
+19 + 20 = 39 mod 3 → 0. OK, this is the result.
+{% endhighlight %}
+
+筛法对于M较小的情况，是非常高效的，因此手算一般都采用该法。但是，筛法的复杂度是指数级的，对于M较大的情况，并不好用。
+
+CRT虽然只是初等数论的基本定理，但应用范围很广，Lagrange interpolation（一阶多项式插值）、Hermite interpolation（多阶多项式插值）和Dedekind's theorem，都用到了CRT。
 
 ## 多项式的Euclidean division和GCD
 
@@ -37,7 +84,17 @@ $$x^2 − 5x − 6 = (x + 1)(x − 6)$$
 
 ## 多项式的CRT
 
+CRT亦可改为如下等效形式：
 
+$$c=\left(\sum_{i=0}^kc_iN_iM_i\right)\mod{M}$$
+
+其中$$c_i=R_{m_i}[c],M=\prod_{i=0}^km_i,M_i=M/m_i$$，$$N_i$$是方程$$N_i M_i + n_i m_i = GCD ( M_i , m_i ) = 1$$的解。
+
+稍加扩展，可得到多项式版本的CRT：
+
+$$c=\left(\sum_{i=0}^kc_iN_iM_i\right)\mod{M}$$
+
+其中$$c_i=R_{m_i}[c],M=\prod_{i=0}^km_i,M_i=M/m_i$$，$$N_i$$是方程$$N_i M_i + n_i m_i = GCD ( M_i , m_i ) = 1$$的解。
 
 ## Winograd algorithm
 
@@ -213,75 +270,5 @@ $$z=g(Wu+b)\rightarrow z=g(BN(Wu+b))=g(BN(Wu))$$
 BN的误差反向算法相对复杂，这里不再赘述。
 
 在inference阶段，BN网络忽略Step 1和Step 2，只计算后两步。其中,$$\beta,\gamma$$由之前的训练得到。$$\mu,\sigma$$原则上要求使用全体样本的均值和方差，但样本量过大的情况下，也可使用训练时的若干个mini batch的均值和方差的FIR滤波值。
-
-# Instance Normalization
-
-Instance Normalization主要用于CV领域。
-
-论文：
-
-《Instance Normalization: The Missing Ingredient for Fast Stylization》
-
-首先我们列出对图片Batch Normalization的公式：
-
-$$y_{tijk}=\frac{x_{tijk}-\mu_i}{\sqrt{\sigma_i^2+\epsilon}}, \mu_i=\frac{1}{HWT}\sum_{t=1}^T \sum_{l=1}^W \sum_{m=1}^Hx_{tilm}, \sigma_i^2=\frac{1}{HWT}\sum_{t=1}^T \sum_{l=1}^W \sum_{m=1}^H(x_{tilm}-m\mu_i)^2$$
-
-其中，T为图片数量，i为通道，j、k为图片的宽、高。
-
-Instance Normalization的公式：
-
-$$y_{tijk}=\frac{x_{tijk}-\mu_{ti}}{\sqrt{\sigma_{ti}^2+\epsilon}}, \mu_{ti}=\frac{1}{HW} \sum_{l=1}^W \sum_{m=1}^Hx_{tilm}, \sigma_{ti}^2=\frac{1}{HW} \sum_{l=1}^W \sum_{m=1}^H(x_{tilm}-m\mu_{ti})^2$$
-
-从中可以看出Instance Normalization实际上就是对一张图片的一个通道内的值进行归一化，因此又叫做对比度归一化（contrast normalization）。
-
-参考：
-
-http://www.jianshu.com/p/d77b6273b990
-
-论文中文版
-
-# Softmax详解
-
-首先给出Softmax function的定义:
-
-$$y_c=\zeta(\textbf{z})_c = \dfrac{e^{z_c}}{\sum_{d=1}^C{e^{z_d}}} \text{  for } c=1, \dots, C$$
-
-从中可以很容易的发现，如果$$z_c$$的值过大，朴素的直接计算会上溢出或下溢出。
-
-解决办法：
-
-$$z_c\leftarrow z_c-a,a=\max\{z_1,\dots,z_C\}$$
-
-证明：
-
-$$\zeta(\textbf{z-a})_c = \dfrac{e^{z_c}\cdot e^{-a}}{\sum_{d=1}^C{e^{z_d}\cdot e^{-a}}} = \dfrac{e^{z_c}}{\sum_{d=1}^C{e^{z_d}}} = \zeta(\textbf{z})_c$$
-
-Softmax的损失函数是cross entropy loss function：
-
-$$\xi(X, Y) = \sum_{i=1}^n \xi(\textbf{t}_i, \textbf{y}_i) = - \sum_{i=1}^n \sum_{i=c}^C t_{ic} \cdot \log(y_{ic})$$
-
-Softmax的反向传播算法：
-
-$$\begin{align}
-\dfrac{\partial\xi}{\partial z_i} &= - \sum_{j=1}^C \dfrac{\partial t_j \log(y_j)}{\partial z_i} \\
-&= - \sum_{j=1}^C t_j \dfrac{\partial \log(y_j)}{\partial z_i} \\
-&= - \sum_{j=1}^C t_j \dfrac{1}{y_j} \dfrac{\partial y_j}{\partial z_i} \\
-&= - \dfrac{t_i}{y_i} \dfrac{\partial y_i}{\partial z_i} - \sum_{j \neq i}^C \dfrac{t_j}{y_j} \dfrac{\partial y_j}{\partial z_i} \\
-&= - \dfrac{t_i}{y_i} y_i(1-y_i) - \sum_{j \neq i}^{C} \dfrac{t_j}{y_j}(-y_jy_j) \\
-&= -t_i + t_iy_i + \sum_{j \neq i}^{C} t_jy_i \\
-&= -t_i + \sum_{j=1}^C t_jy_i \\
-&= -t_i + y_i \sum_{j=1}^C t_j \\
-&= y_i - t_i
-\end{align}$$
-
-参考：
-
-https://mp.weixin.qq.com/s/2xYgaeLlmmUfxiHCbCa8dQ
-
-softmax函数计算时候为什么要减去一个最大值？
-
-http://shuokay.com/2016/07/20/softmax-loss/
-
-Softmax输出及其反向传播推导
 
 

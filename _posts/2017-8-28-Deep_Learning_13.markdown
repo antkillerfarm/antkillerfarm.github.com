@@ -1,8 +1,78 @@
 ---
 layout: post
-title:  深度学习（十三）——目标检测, RCNN
+title:  深度学习（十三）——Softmax详解, 目标检测, RCNN
 category: DL 
 ---
+
+# Instance Normalization
+
+Instance Normalization主要用于CV领域。
+
+论文：
+
+《Instance Normalization: The Missing Ingredient for Fast Stylization》
+
+首先我们列出对图片Batch Normalization的公式：
+
+$$y_{tijk}=\frac{x_{tijk}-\mu_i}{\sqrt{\sigma_i^2+\epsilon}}, \mu_i=\frac{1}{HWT}\sum_{t=1}^T \sum_{l=1}^W \sum_{m=1}^Hx_{tilm}, \sigma_i^2=\frac{1}{HWT}\sum_{t=1}^T \sum_{l=1}^W \sum_{m=1}^H(x_{tilm}-m\mu_i)^2$$
+
+其中，T为图片数量，i为通道，j、k为图片的宽、高。
+
+Instance Normalization的公式：
+
+$$y_{tijk}=\frac{x_{tijk}-\mu_{ti}}{\sqrt{\sigma_{ti}^2+\epsilon}}, \mu_{ti}=\frac{1}{HW} \sum_{l=1}^W \sum_{m=1}^Hx_{tilm}, \sigma_{ti}^2=\frac{1}{HW} \sum_{l=1}^W \sum_{m=1}^H(x_{tilm}-m\mu_{ti})^2$$
+
+从中可以看出Instance Normalization实际上就是对一张图片的一个通道内的值进行归一化，因此又叫做对比度归一化（contrast normalization）。
+
+参考：
+
+http://www.jianshu.com/p/d77b6273b990
+
+论文中文版
+
+# Softmax详解
+
+首先给出Softmax function的定义:
+
+$$y_c=\zeta(\textbf{z})_c = \dfrac{e^{z_c}}{\sum_{d=1}^C{e^{z_d}}} \text{  for } c=1, \dots, C$$
+
+从中可以很容易的发现，如果$$z_c$$的值过大，朴素的直接计算会上溢出或下溢出。
+
+解决办法：
+
+$$z_c\leftarrow z_c-a,a=\max\{z_1,\dots,z_C\}$$
+
+证明：
+
+$$\zeta(\textbf{z-a})_c = \dfrac{e^{z_c}\cdot e^{-a}}{\sum_{d=1}^C{e^{z_d}\cdot e^{-a}}} = \dfrac{e^{z_c}}{\sum_{d=1}^C{e^{z_d}}} = \zeta(\textbf{z})_c$$
+
+Softmax的损失函数是cross entropy loss function：
+
+$$\xi(X, Y) = \sum_{i=1}^n \xi(\textbf{t}_i, \textbf{y}_i) = - \sum_{i=1}^n \sum_{i=c}^C t_{ic} \cdot \log(y_{ic})$$
+
+Softmax的反向传播算法：
+
+$$\begin{align}
+\dfrac{\partial\xi}{\partial z_i} &= - \sum_{j=1}^C \dfrac{\partial t_j \log(y_j)}{\partial z_i} \\
+&= - \sum_{j=1}^C t_j \dfrac{\partial \log(y_j)}{\partial z_i} \\
+&= - \sum_{j=1}^C t_j \dfrac{1}{y_j} \dfrac{\partial y_j}{\partial z_i} \\
+&= - \dfrac{t_i}{y_i} \dfrac{\partial y_i}{\partial z_i} - \sum_{j \neq i}^C \dfrac{t_j}{y_j} \dfrac{\partial y_j}{\partial z_i} \\
+&= - \dfrac{t_i}{y_i} y_i(1-y_i) - \sum_{j \neq i}^{C} \dfrac{t_j}{y_j}(-y_jy_j) \\
+&= -t_i + t_iy_i + \sum_{j \neq i}^{C} t_jy_i \\
+&= -t_i + \sum_{j=1}^C t_jy_i \\
+&= -t_i + y_i \sum_{j=1}^C t_j \\
+&= y_i - t_i
+\end{align}$$
+
+参考：
+
+https://mp.weixin.qq.com/s/2xYgaeLlmmUfxiHCbCa8dQ
+
+softmax函数计算时候为什么要减去一个最大值？
+
+http://shuokay.com/2016/07/20/softmax-loss/
+
+Softmax输出及其反向传播推导
 
 # 目标检测
 
@@ -200,7 +270,7 @@ TensorFlow深度学习目标检测模型及源码架构解析
 
 因此，如何快速的在图片中找到车牌所在区域，就成为了关键问题。
 
-常规的做法，通常是根据颜色、形状找到车牌所在区域，但鲁棒性不佳。后来，有个同事提出了改进方法：
+常规的做法，通常是根据颜色、形状找到车牌所在区域，但鲁棒性不佳。后来，同事L提出了改进方法：
 
 **Step 1**：在整个图片中，基于haar算子，寻找疑似数字的区域。
 
@@ -239,76 +309,4 @@ RCNN相对传统方法的改进：
 RCNN使用识别库进行预训练得到CNN（有监督预训练），而后用检测库调优参数，最后在检测库上评测。
 
 这实际上就是《深度学习（七）》中提到的fine-tuning的思想。
-
-## RCNN算法的基本流程
-
-![](/images/article/rcnn.png)
-
-RCNN算法分为4个步骤：
-
-**Step 1**：候选区域生成。一张图像生成1K~2K个候选区域（采用Selective Search方法）。
-
-**Step 2**：特征提取。对每个候选区域，使用深度卷积网络提取特征（CNN）。
-
-**Step 3**：类别判断。特征送入每一类的SVM分类器，判别是否属于该类。
-
-**Step 4**：位置精修。使用回归器精细修正候选框位置。
-
-## Selective Search
-
-论文：
-
-https://www.koen.me/research/pub/uijlings-ijcv2013-draft.pdf
-
-Selective Search for Object Recognition
-
-Selective Search的主要思想:
-
-**Step 1**：使用一种过分割手段，将图像分割成小区域 (1k~2k个)。
-
-这里的步骤实际上并不简单，可参考论文：
-
-《Efficient Graph-Based Image Segmentation》
-
-中文版：
-
-http://blog.csdn.net/surgewong/article/details/39008861
-
-**Step 2**：查看现有小区域，按照合并规则合并可能性最高的相邻两个区域。重复直到整张图像合并成一个区域位置。
-
-**Step 3**：输出所有曾经存在过的区域，所谓候选区域。
-
-其中合并规则如下：优先合并以下四种区域：
-
-1.颜色（颜色直方图）相近的。
-
-2.纹理（梯度直方图）相近的。
-
-3.合并后总面积小的：保证合并操作的尺度较为均匀，避免一个大区域陆续“吃掉”其他小区域（例：设有区域a-b-c-d-e-f-g-h。较好的合并方式是：ab-cd-ef-gh -> abcd-efgh -> abcdefgh。不好的合并方法是：ab-c-d-e-f-g-h ->abcd-e-f-g-h ->abcdef-gh -> abcdefgh）
-
-4.合并后，总面积在其bounding box中所占比例大的：保证合并后形状规则。
-
-Step2和Step3可参考论文：
-
-《Selective Search for Object Recognition》
-
-中文版：
-
-http://blog.csdn.net/surgewong/article/details/39316931
-
-http://blog.csdn.net/charwing/article/details/27180421
-
-Selective Search的效果类似下图：
-
-![](/images/article/selective_search.png)
-
-![](/images/article/rcnn_3.png)
-
-上图中的那些方框，就是bounding box。
-
-一般使用IOU（Intersection over Union，交并比）指标，来衡量两个bounding box的重叠度：
-
-$$IOU(A,B)=\frac{A \cap B}{A \cup B}$$
-
-
 

@@ -289,6 +289,17 @@ Learning to Retrieve Information (SCC 1995), Learning to Order Things (NIPS 1998
 
 LambdaRank (NIPS 2006), AdaRank (SIGIR 2007), SVM-MAP (SIGIR 2007), SoftRank (LR4IR 2007), GPRank (LR4IR 2007), CCA (SIGIR 2007), RankCosine (IP&M 2007), ListNet (ICML 2007), ListMLE (ICML 2008) 。
 
+## 参考
 
+https://mp.weixin.qq.com/s/YjYVE6jzySVsZmXSPivB5w
 
+达观数据搜索引擎排序实践（上篇）
+
+https://mp.weixin.qq.com/s/UpN7tAMjbFLSPcDYsWaykg
+
+达观数据搜索引擎排序实践（下篇）
+
+https://mp.weixin.qq.com/s/xigME-griWFwEvvPNqWuvg
+
+美团点评联盟广告的场景化定向排序机制
 

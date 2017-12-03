@@ -86,6 +86,10 @@ https://mp.weixin.qq.com/s/oCDlhzjOYTIhsr5JuoRCJQ
 
 IRGAN：大一统信息检索模型的博弈竞争
 
+https://mp.weixin.qq.com/s/4Daw-2aRmzcCMtxdvB3uYQ
+
+IRGAN ：生成对抗网络在搜狗图片搜索排序中的应用
+
 https://mp.weixin.qq.com/s/QacQCrjh3KmrQSMp-G_rEg
 
 贝叶斯生成对抗网络
@@ -281,6 +285,22 @@ https://mp.weixin.qq.com/s/rPDvLnG4MBDRUMCWs2fjcQ
 https://mp.weixin.qq.com/s/h7lrJYQ_RqJDako8UoYK-A
 
 六种改进均未超越原版：谷歌新研究对GAN现状提出质疑
+
+https://mp.weixin.qq.com/s/dwEHorYSJuX9JapIYLHiXg
+
+BicycleGAN：图像转换多样化，大幅提升pix2pix生成图像效果
+
+https://mp.weixin.qq.com/s/VldzlYg5AfDRho8bsROL_g
+
+HashGAN:基于注意力机制的深度对抗哈希模型提升跨模态检索效果
+
+https://mp.weixin.qq.com/s/W4WVHMIMKPNvt5lcCe1v4g
+
+半监督学习需要Bad GAN，清华特奖学霸与苹果AI总监提出
+
+https://mp.weixin.qq.com/s/_PlISSOaowgvVW5msa7GlQ
+
+条件GAN高分辨率图像合成与语义编辑pix2pixHD
 
 # fine-tuning
 

@@ -156,6 +156,10 @@ https://mp.weixin.qq.com/s/K68CpueI4e4y7o1uZ28KMQ
 
 从神经科学到计算机视觉：人类与计算机视觉五十年回顾
 
+https://mp.weixin.qq.com/s/FzCrOiFuutqSQSp4VcydoQ
+
+计算机视觉简介：历史、现状和发展趋势
+
 ## AlexNet
 
 2012年，ILSVRC比赛冠军的model——Alexnet（以第一作者Alex命名）的结构图如下：

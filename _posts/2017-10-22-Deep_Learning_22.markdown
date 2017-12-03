@@ -34,6 +34,10 @@ http://www.meltycriss.com/2017/09/09/note-reinforcement-learning/
 
 课程笔记《UCL强化学习》。这个blog包含大量的思维导图。
 
+https://mp.weixin.qq.com/s/_PVe7Gcq7Yk8nOFJFPcUQw
+
+叶强：David Silver《深度强化学习》公开课教程学习笔记完整版
+
 http://web.stanford.edu/class/cs234/syllabus.html
 
 CS234: Reinforcement Learning
@@ -285,6 +289,12 @@ FLOPS：Floating-point Operations Per Second，每秒所执行的浮点运算次
 ## 《LSTM Neural Networks for Language Modeling》
 
 这也是一篇重要的论文。
+
+## 《Sequence to Sequence - Video to Text》
+
+https://vsubhashini.github.io/s2vt.html
+
+![](/images/article/S2VTarchitecture.png)
 
 ## 《Long-term Recurrent Convolutional Networks for Visual Recognition and Description》
 

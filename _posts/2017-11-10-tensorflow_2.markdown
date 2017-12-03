@@ -407,3 +407,8 @@ https://mp.weixin.qq.com/s/O_IN39FBVPeD5fRYBsPuZQ
 
 用TensorFlow开发问答系统
 
+http://brucedone.com/archives/1005
+
+Tensorflow破解验证码
+
+

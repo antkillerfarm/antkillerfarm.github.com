@@ -232,6 +232,49 @@ https://mp.weixin.qq.com/s/Ounb14tu6lyebiOQqY4TyQ
 
 达观数据如何打造一个中文NER系统
 
+https://mp.weixin.qq.com/s/r_x1IUuyIQw3aif2f7-Fxw
+
+邱锡鹏：深度学习在语义分析处理的最新发展
+
+https://mp.weixin.qq.com/s/DWYisJtgAHXaPDQX0lYxfA
+
+达观数据告诉你机器如何理解语言－中文分词技术
+
+https://mp.weixin.qq.com/s/xnxuw06BIKfDTuTeSVguHQ
+
+达观数据基于Deep Learning的中文分词尝试（上篇）
+
+https://mp.weixin.qq.com/s/tk6JyChDThg5yJ4gqLOLwQ
+
+达观数据基于Deep Learning的中文分词尝试（下篇）
+
+https://mp.weixin.qq.com/s/tvtT5S9mDhXoYLKh9apgDw
+
+达观文本指纹算法和系统简述
+
+https://mp.weixin.qq.com/s/eiEME27eDMPSeKkwiisWnQ
+
+达观数据搜索引擎的Query自动纠错技术和架构详解
+
+https://mp.weixin.qq.com/s/RTxLTwNgmpXcuPe7vzI82g
+
+达观数据分享文本大数据的机器学习自动分类方法
+
+https://mp.weixin.qq.com/s/o5mE6IRs8ZkkXy8c5rdrjw
+
+达观数据阐述推荐系统和搜索引擎的关系
+
+https://github.com/Franck-Dernoncourt/NeuroNER/
+
+一个NER方面的示例代码
+
+https://github.com/crownpku/Information-Extraction-Chinese
+
+这是中文NER的代码示例
+
+https://mp.weixin.qq.com/s/5S5ikwnF7f55sL_VI73XSQ
+
+吴恩达博士生Ziang Xie：深度文本生成最佳实战指南
 
 
 
