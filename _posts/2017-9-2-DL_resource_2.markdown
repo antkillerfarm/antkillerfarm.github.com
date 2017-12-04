@@ -190,6 +190,10 @@ https://mp.weixin.qq.com/s/8RDHTn6P63otKXUdrHhbjw
 
 一文看懂AI芯片产业生态及竞争格局
 
+https://mp.weixin.qq.com/s/jINnom16KWiEKiug3N-f8g
+
+一文看懂AI芯片：三大门派四大场景146亿美元大蛋糕
+
 https://mp.weixin.qq.com/s/-FwuhibwwG6CFUcZXNBTFA
 
 投资者梳理AI芯片产业，一文秒懂AI芯片生态！

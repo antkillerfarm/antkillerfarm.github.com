@@ -276,5 +276,17 @@ https://mp.weixin.qq.com/s/5S5ikwnF7f55sL_VI73XSQ
 
 吴恩达博士生Ziang Xie：深度文本生成最佳实战指南
 
+http://www.jianshu.com/p/f45c3540c56e
+
+Chatbot架构
+
+https://mp.weixin.qq.com/s/AhoEzujMVUU-P7j5z_8sVQ
+
+基于神经网络的实体识别和关系抽取联合学习
+
+https://mp.weixin.qq.com/s/mgeQXkEWu5JlZxyAM0yiaQ
+
+充分利用候选项的选择型机器阅读理解模型
+
 
 

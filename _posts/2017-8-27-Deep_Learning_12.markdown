@@ -68,7 +68,7 @@ $$\begin{array}{r}
  +5
 \end{array}$$
 
-上式改写为横式：
+上式也可写为横式：
 
 $${x^3 - 2x^2 - 4} = (x-3)\,\underbrace{(x^2 + x + 3)}_{q(x)}  +\underbrace{5}_{r(x)}$$
 
@@ -88,16 +88,26 @@ CRT亦可改为如下等效形式：
 
 $$c=\left(\sum_{i=0}^kc_iN_iM_i\right)\mod{M}$$
 
-其中$$c_i=R_{m_i}[c],M=\prod_{i=0}^km_i,M_i=M/m_i$$，$$N_i$$是方程$$N_i M_i + n_i m_i = GCD ( M_i , m_i ) = 1$$的解。
+其中$$m_i$$两两互质，$$c_i=R_{m_i}[c],M=\prod_{i=0}^km_i,M_i=M/m_i$$，$$N_i,n_i$$是方程$$N_i M_i + n_i m_i = GCD ( M_i , m_i ) = 1$$的解。
+
+显然这里的$$N_i,n_i$$可以使用Extended Euclidean algorithm求解。
 
 稍加扩展，可得到多项式版本的CRT：
 
-$$c=\left(\sum_{i=0}^kc_iN_iM_i\right)\mod{M}$$
+$$c(p)=\left(\sum_{i=0}^kc^{(i)}(p)N^{(i)}(p)M^{(i)}(p)\right)\mod{M(p)}$$
 
-其中$$c_i=R_{m_i}[c],M=\prod_{i=0}^km_i,M_i=M/m_i$$，$$N_i$$是方程$$N_i M_i + n_i m_i = GCD ( M_i , m_i ) = 1$$的解。
+其中$$m^{(i)}(p)$$两两互质，$$c^{(i)}(p)=R_{m^{(i)}}[c(p)],M(p)=\prod_{i=0}^km^{(i)}(p),M^{(i)}(p)=M(p)/m^{(i)}(p)$$，$$N^{(i)}(p)$$是方程$$N^{(i)}(p) M^{(i)}(p) + n^{(i)}(p) m^{(i)}(p) = GCD ( M^{(i)}(p) , m^{(i)}(p)) = 1$$的解。
 
 ## Winograd algorithm
 
+下面以一个2x3的卷积为例，介绍一下Winograd algorithm的做法。
+
+2x3卷积的多项式形式为：$$h(p)=h_0+h_1p,x(p)=x_0+x_1p+x_2p^2$$
+
+
+
+
+总的来说，Winograd algorithm是一个很复杂的算法，但是结论却很简单。因此，在具体的IC实现中，一般只针对特定常用尺寸的kernel，实现相应的结论即可。
 
 ## 参考
 
@@ -108,10 +118,6 @@ FALCON Library: Fast Image Convolution in Neural Networks on Intel Architecture
 https://www.intelnervana.com/winograd/
 
 "Not so fast, FFT": Winograd
-
-http://people.ece.umn.edu/users/parhi/SLIDES/chap8.pdf
-
-Fast Convolution
 
 https://www.encyclopediaofmath.org/index.php/Winograd_small_convolution_algorithm
 

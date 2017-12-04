@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（九）——fine-tuning, 李飞飞
+title:  深度学习（九）——fine-tuning
 category: DL 
 ---
 
@@ -302,6 +302,10 @@ https://mp.weixin.qq.com/s/_PlISSOaowgvVW5msa7GlQ
 
 条件GAN高分辨率图像合成与语义编辑pix2pixHD
 
+https://mp.weixin.qq.com/s/RAlQVWMBYeddG2Mvu2bF4w
+
+生成对抗网络（GANs）最新家谱：为你揭秘GANs的前世今生
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
@@ -359,22 +363,4 @@ http://vision.stanford.edu/feifeili/
 个人主页：
 
 http://ai.stanford.edu/~syyeung/
-
-还有当红的“辣子鸡”：**Andrej Karpathy**，多伦多大学本科（2009）+英属不列颠哥伦比亚大学硕士（2011）+斯坦福博士（2015）。现任特斯拉AI总监。
-
-吐槽一下：英属不列颠哥伦比亚大学其实是加拿大的一所大学。
-
-个人主页：
-
-http://cs.stanford.edu/people/karpathy/
-
-Andrej Karpathy建了一个检索arxiv的网站，主要搜集了近3年来的ML/DL领域的论文。网址：
-
-http://www.arxiv-sanity.com/
-
-**李佳（Jia Li）**，李飞飞的开山大弟子，追随她从UIUC、普林斯顿到斯坦福。目前又追随其到Google。大约是知道自己的名字是个大路货，她的笔名叫做Li-Jia Li。
-
-个人主页：
-
-http://vision.stanford.edu/lijiali/
 

@@ -180,6 +180,10 @@ https://mlr-org.github.io/mlr-tutorial/devel/html/over_and_undersampling/index.h
 
 Imbalanced Classification Problems
 
+https://mp.weixin.qq.com/s/QEHAV_rW25E0b0N7POr6tw
+
+关于处理样本不平衡问题的Trick整理
+
 # 强化学习
 
 ## 概述

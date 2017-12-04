@@ -424,6 +424,10 @@ https://mp.weixin.qq.com/s/BZpNi0b7vt71MUvN7bKvbw
 
 通往人工智能未来的三路竞赛：量子vs.神经形态vs.高性能计算
 
+https://mp.weixin.qq.com/s/ULciN9h2IybE59JMO6Kcgg
+
+清华大学段路明组提出生成模型的量子算法
+
 ## 工具
 
 https://mp.weixin.qq.com/s/TT4whft1Tj1pCEPbnMH1cA

@@ -1,10 +1,30 @@
 ---
 layout: post
-title:  深度学习（十）——花式卷积
+title:  深度学习（十）——李飞飞，花式卷积
 category: DL 
 ---
 
-# 李飞飞（续）
+# 李飞飞
+
+## 大佬的门徒（续）
+
+还有当红的“辣子鸡”：**Andrej Karpathy**，多伦多大学本科（2009）+英属不列颠哥伦比亚大学硕士（2011）+斯坦福博士（2015）。现任特斯拉AI总监。
+
+吐槽一下：英属不列颠哥伦比亚大学其实是加拿大的一所大学。
+
+个人主页：
+
+http://cs.stanford.edu/people/karpathy/
+
+Andrej Karpathy建了一个检索arxiv的网站，主要搜集了近3年来的ML/DL领域的论文。网址：
+
+http://www.arxiv-sanity.com/
+
+**李佳（Jia Li）**，李飞飞的开山大弟子，追随她从UIUC、普林斯顿到斯坦福。目前又追随其到Google。大约是知道自己的名字是个大路货，她的笔名叫做Li-Jia Li。
+
+个人主页：
+
+http://vision.stanford.edu/lijiali/
 
 ## 学神
 
@@ -273,6 +293,8 @@ http://blog.csdn.net/shuzfan/article/details/77964370
 矩阵方面的数值计算，Shmuel Winograd是一个无法绕开的人物。
 
 >Shmuel Winograd, 1936年生，MIT本硕（1959年）+纽约大学博士（1968年）。此后一直在IBM当研究员，直到退休。IEEE Fellow，ACM Fellow，美国科学院院士。
+
+>不要和Terry Winograd搞混了。后者是Google的两位创始人Larry Page和Sergey Brin的导师。MIT博士+斯坦福教授。
 
 **Winograd FFT algorithm**：一种FFT算法。FFT算法有很多，最知名的是Cooley–Tukey FFT algorithm。
 

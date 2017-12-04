@@ -8,6 +8,16 @@ category: DL
 
 ## 基本思想
 
+下文的大部分内容摘自Parhi的书《VLSI Digital Signal Processing Systems: Design and Implementation》
+
+>Keshab K. Parhi，Indian Institute of Technology Kharagpur本科（1982年）+宾夕法尼亚大学硕士（1984年）+UCB博士（1988年）。明尼苏达大学教授。
+
+这是相关章节的slide：
+
+http://people.ece.umn.edu/users/parhi/SLIDES/chap8.pdf
+
+Fast Convolution
+
 我们这里以一个简单的例子，介绍一下Fast Convolution的基本思想。
 
 复数运算$$(a+jb)(c+dj)=e+jf$$可以写成如下的矩阵形式：
