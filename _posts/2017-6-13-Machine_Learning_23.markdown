@@ -56,6 +56,10 @@ https://mp.weixin.qq.com/s/0gdGNv98DytB8KxwVu_M0A
 
 通俗易懂讲解Deep Learning最优化方法之AdaGrad
 
+https://mp.weixin.qq.com/s/HPrjEdszBSvVoVS66W-Fjw
+
+2017年深度学习优化算法研究亮点最新综述
+
 # 单分类SVM&多分类SVM
 
 原始的SVM主要用于二分类，然而稍加变化，也可用于单分类和多分类。

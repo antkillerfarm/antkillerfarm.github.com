@@ -169,6 +169,14 @@ http://twistedsifter.com/2012/11/animated-gifs-that-explain-how-things-work/
 
 >注：黄克智，1927年生，固体力学家。江西中正大学本科+清华硕士+莫斯科大学博士（因应召回国，放弃博士学位）。清华大学工程力学系教授、工程力学研究所所长，中国科学院院士。断裂力学领域权威。
 
+# 拓扑学
+
+《Topopogy Without Tears》，University of New South Wales的Sidney A. Morris著。
+
+该书的中文版：
+
+http://www.topologywithouttears.net/topbookchinese.pdf
+
 # 随机过程
 
 ## 随机变量序列的收敛性

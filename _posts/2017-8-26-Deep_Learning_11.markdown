@@ -1,10 +1,28 @@
 ---
 layout: post
-title:  深度学习（十一）——Winograd
+title:  深度学习（十一）——Winograd（1）
 category: DL 
 ---
 
-# Winograd（续）
+# Winograd
+
+矩阵方面的数值计算，Shmuel Winograd是一个无法绕开的人物。
+
+>Shmuel Winograd, 1936年生，MIT本硕（1959年）+纽约大学博士（1968年）。此后一直在IBM当研究员，直到退休。IEEE Fellow，ACM Fellow，美国科学院院士。
+
+>不要和Terry Winograd搞混了。后者是Google的两位创始人Larry Page和Sergey Brin的导师。MIT博士+斯坦福教授。
+
+**Winograd FFT algorithm**：一种FFT算法。FFT算法有很多，最知名的是Cooley–Tukey FFT algorithm。
+
+**Coppersmith–Winograd algorithm（1987年）**：目前最快的矩阵乘法算法。复杂度是$$\mathcal{O}(n^{2.375477})$$。矩阵乘法定义的复杂度是$$\mathcal{O}(n^{3})$$。第一个小于3的算法是Strassen algorithm（1969年）（$$\mathcal{O}(n^{2.807355})$$）。
+
+**Winograd small(short/minimal) convolution algorithm**：一种快速的卷积算法，目前AI芯片领域的基础算法。
+
+论文：
+
+《The Coppersmith-Winograd Matrix Multiplication Algorithm》
+
+《Fast Algorithms for Convolutional Neural Networks》
 
 ## 基本思想
 
@@ -271,45 +289,4 @@ Euclidean division的定义扩展之后，则有Bézout's identity。
 **Bézout's identity**：若a,b是非0整数，$$d=GCD(a,b)$$，则存在整数x,y使得$$ax+by=d$$。证明略。
 
 >Étienne Bézout，1730~1783，法国数学家。法国科学院院士。
-
-至于如何求解x,y，这就要用到**Extended Euclidean algorithm**了。
-
-首先，我们考虑边界情况，当$$b=0$$时，原方程可化为$$ax=GCD(a,0)$$，则：
-
-$$\begin{cases}
-x=1 \\
-y=0 \\
-\end{cases}\tag{1}$$
-
-接着，设$$a'=b,b'=a \mod{b}$$，则由Euclidean algorithm可得：$$GCD(a,b)=GCD(b,a \mod b)$$，因此：
-
-$$a​′​​x​′​​+b​′​​y​′​​=GCD(a​′​​,b​′​​)=GCD(b,a \mod{b})$$
-
-$$ax+by=a​′​​x​′​​+b​′​​y​′​​=bx​′​​+(a\mod{b})y​′​​=bx​′​​+(a−\lfloor\frac{a}{b}\rfloor b)y​′​​$$
-
-整理得到：
-
-$$ax+by=ay​′​​+b(x​′​​−\lfloor\frac{a}{b}\rfloor y​′​​)$$
-
-对比系数，可得：
-
-$$\begin{cases}
-x=y' \\
-y=x'−\lfloor\frac{a}{b}\rfloor y​′​​ \\
-\end{cases}\tag{2}$$
-
-公式1和2合到一起，就是一种迭代算法，也就是Extended Euclidean algorithm了。
-
-从上面的讨论可知，Extended Euclidean algorithm实际上只在Euclidean algorithm之上前进了很小的一步，它的主要内核还是来源于Euclid。
-
-但Euclid之所以不能更进一步，则主要是受制于负数的概念。虽然现在的小学高年级课本中，已经引入了负数，古代中国、印度、阿拉伯也很早就用到了负数，但是西方差不多要到文艺复兴时期，才逐渐接受了负数的概念。
-
-不过反例也是有的，比如无理数，其它文明貌似根本就没有关注过它和有理数究竟有何区别...
-
-参考：
-
-https://blog.sengxian.com/algorithms/gcd-extgcd
-
-欧几里德算法与扩展欧几里德算法
-
 

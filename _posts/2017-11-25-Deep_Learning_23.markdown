@@ -1,345 +1,338 @@
 ---
 layout: post
-title:  深度学习（二十三）——迁移学习, 语音识别, OCR
+title:  深度学习（二十三）——深度强化学习, LSTM进阶
 category: DL 
 ---
 
-# 迁移学习
+# 深度强化学习
 
-https://mp.weixin.qq.com/s/HmkTkv7QT08lGtJsHD7EvQ
+## 教程
 
-迁移学习（Transfer Learning）技术概述
+http://incompleteideas.net/sutton/book/the-book-2nd.html
 
-https://zhuanlan.zhihu.com/wjdml
+《Reinforcement Learning: An Introduction》，Richard S. Sutton和Andrew G. Barto著。
 
-《小王爱迁移》系列blog
+>注：Richard S. Sutton，加拿大计算机科学家，麻省大学阿姆赫斯特分校博士（1984年），阿尔伯塔大学教授。强化学习之父，研究该领域长达三十余年。
 
-https://mp.weixin.qq.com/s/BWBrso7O1O3Rfxa4QWZH4g
+>Andrew G. Barto，麻省大学阿姆赫斯特分校教授。Richard S. Sutton的导师。
 
-分分钟学会基于深度学习的图像真实风格迁移！
+http://incompleteideas.net/sutton/609%20dropbox/slides%20(pdf%20and%20keynote)/
 
-https://mp.weixin.qq.com/s/5DtTgc9bIrdXQkmuqRm8CA
+Sutton的pdf和keynote
 
-谷歌大脑迁移学习：减少调参，直接在数据集中学习最佳图像架构
+>注：资料中的.key文件即为keynote文件。这种格式是苹果设备上的专用ppt格式，在其他系统中查看不了。
 
-https://mp.weixin.qq.com/s/fEKc6yFZwTPAHjXJlcHA-w
+http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html
 
-香港科技大学提出L2T框架：学习如何迁移学习
+UCL Course on RL
 
-https://mp.weixin.qq.com/s/pbyByPoZ9SVoP9B7pJMxXg
+>David Silver，剑桥大学本科（1997年）+阿尔伯塔大学博士（2011年）。伦敦大学学院讲师。现为DeepMind研究员。AlphaGo之父。
 
-深度卷积网络迁移学习的脸部表情识别
+Silver的名声直追Sutton，这个教程也流传很广。后续介绍的教程中，多有对它的抄袭。
 
-https://www.zhihu.com/question/50996014
+http://www.meltycriss.com/2017/09/09/note-reinforcement-learning/
 
-什么是One/zero-shot learning？
+课程笔记《UCL强化学习》。这个blog包含大量的思维导图。
 
-https://mp.weixin.qq.com/s/SZlFgnUBL0T6yNa-i_WLvg
+https://mp.weixin.qq.com/s/_PVe7Gcq7Yk8nOFJFPcUQw
 
-领域适应性Domain Adaptation、One-shot/zero-shot Learning概述
+叶强：David Silver《深度强化学习》公开课教程学习笔记完整版
 
-https://mp.weixin.qq.com/s/sAf2fLLnKHOs433pV_6bSQ
+http://web.stanford.edu/class/cs234/syllabus.html
 
-One-shot Learning：孪生网络少样本精准分类
+CS234: Reinforcement Learning
 
-https://mp.weixin.qq.com/s/J8ZmIVKd-4X3hMGGIJWoDQ
+http://www.eecs.wsu.edu/~taylorm/17_580/index.html
 
-一文看懂迁移学习：从基础概念到技术研究！
+CptS 580: Reinforcement Learning
 
-https://mp.weixin.qq.com/s/qYoTgqwjaUlEycuk9LlonA
+http://www.eecs.wsu.edu/~taylorm/2011_cs420/index.html
 
-迁移学习：6张图像vs13000张图像，超越2013 Kaggle猫狗识别竞赛领先水平
+Artificial Intelligence。这个课程名义上叫AI，实则包括状态空间搜索、强化学习和贝叶斯网络三部分内容。
 
-http://mp.weixin.qq.com/s/6Urv6TfUfc-BWV1YqTM1PQ
+http://www.eecs.wsu.edu/~taylorm/2010_cs414/index.html
 
-迁移学习+BPE，改进低资源语言的神经翻译结果
+Introduction to Machine Learning。Matthew E. Taylor的本行是RL，所以不管什么课程，都有RL的内容。
 
-https://zhuanlan.zhihu.com/p/30242073
+>Matthew E. Taylor，安默斯特学院本科（2001年）+德州大学奥斯汀分校博士（2008年）。华盛顿州立大学副教授。
 
-人脸识别中的迁移学习简介（Transfer Learning）
+https://katefvision.github.io/
 
-https://mp.weixin.qq.com/s/rVYWV-LsbmA4QhC6207SWA
+CMU: Deep Reinforcement Learning and Control
 
-14篇论文为你呈现“迁移学习”研究全貌
+https://github.com/aikorea/awesome-rl
 
-https://mp.weixin.qq.com/s/l-l1xbUaPNKc-w5XndjCbQ
+提供了RL方面的资源网页。aikorea还提供了同类的资源收集网页：awesome-rnn, awesome-deep-vision, awesome-random-forest。
 
-通过网络结构迁移学习提高图像识别任务的拓展性
+## 论文
 
-# 语音识别
+《A Brief Survey of Deep Reinforcement Learning》
 
-## CTC
+## blog
 
-Connectionist Temporal Classification，是一种改进的RNN模型。它主要解决的是时序模型中，输入数大于输出数，输入输出如何对齐的问题。
+https://zhuanlan.zhihu.com/sharerl
+
+强化学习知识大讲堂
+
+https://zhuanlan.zhihu.com/intelligentunit
+
+一个DL+RL的专栏
+
+## 参考
+
+https://www.nervanasys.com/demystifying-deep-reinforcement-learning/
+
+深度强化学习揭秘
+
+https://zhuanlan.zhihu.com/p/24446336
+
+深度强化学习Deep Reinforcement Learning学习整理
+
+https://mp.weixin.qq.com/s/7BsXPQ8wC6_fHulU63ZQiQ
+
+当强化学习遇见泛函分析
+
+https://mp.weixin.qq.com/s/K82PlSZ5TDWHJzlEJrjGlg
+
+深度学习与强化学习
+
+https://mp.weixin.qq.com/s/KNXD-MpVHQRXYvJKTqn6WA
+
+完善强化学习安全性：UC Berkeley提出约束型策略优化新算法
+
+http://mp.weixin.qq.com/s/lLPRwInF5qaw7ewYHOpPyw
+
+深度强化学习资料
+
+https://mp.weixin.qq.com/s/aVWHlwOmNIqOlu3025_RXQ
+
+DeepMind提出多任务强化学习新方法Distral
+
+https://zhuanlan.zhihu.com/p/27699682
+
+荐译一篇通俗易懂的策略梯度（Policy Gradient）方法讲解
+
+http://lamda.nju.edu.cn/yangjw/project/drlintro.html
+
+深度强化学习初探
+
+https://zhuanlan.zhihu.com/p/21498750
+
+深度强化学习导引
+
+https://mp.weixin.qq.com/s/RnUWHa6QzgJbE_XqLeAQmg
+
+深度强化学习，决策与控制
+
+https://mp.weixin.qq.com/s/W9yhj7_frLYWJocoBR1TMQ
+
+避免AI错把黑人识别为大猩猩：伯克利大学提出协同反向强化学习
+
+https://mp.weixin.qq.com/s/R308ohdMU8b7Ap4CLofvDg
+
+OpenAI开源算法ACKTR与A2C：把可扩展的自然梯度应用到强化学习
+
+https://mp.weixin.qq.com/s/-JHHOQPB6pKVuge64NkMuQ
+
+DeepMind主攻的深度强化学习3大核心算法及7大挑战
+
+https://mp.weixin.qq.com/s/YQpuYuzk0jv5OngH5u8bEg
+
+阿里菜鸟物流：使用深度强化学习方法求解一类新型三维装箱问题
+
+https://mp.weixin.qq.com/s/OY56lJ_NFf5vVAgKfKyx2A
+
+利用强化学习自动搜索最优化方法
+
+https://mp.weixin.qq.com/s/zWo2iSiJBEBwnFF478xxfQ
+
+DeepMind：探索人类行为中的强化学习机制
+
+https://mp.weixin.qq.com/s/R30quVGK0TgjerLpiIK9eg
+
+从算法到训练，综述强化学习实现技巧与调试经验
+
+https://mp.weixin.qq.com/s/TpRXxP25-3uqpgC9CBi-3Q
+
+Yoshua Bengio等人提出MILABOT：强化学习聊天机器人
+
+https://mp.weixin.qq.com/s/uDFsWebfLmka-zZX3Y_8kg
+
+深度强化学习在面向任务的对话管理中的应用
+
+https://mp.weixin.qq.com/s/GNbCu1lbOmwJDCU3vgMbtQ
+
+OpenAI发布多智能体深度强化学习新算法LOLA
+
+https://mp.weixin.qq.com/s/5Go20MyBxdVI1r5SkwA6lw
+
+面向星际争霸：DeepMind提出多智能体强化学习新方法
+
+https://mp.weixin.qq.com/s/nYOOwVoijl1p4V0A7yaI3w
+
+机遇与挑战：用强化学习自动搜索优化算法
+
+https://mp.weixin.qq.com/s/uymKtR_7IgMpfXcekfkCDg
+
+从强化学习基本概念到Q学习的实现，打造自己的迷宫智能体
+
+https://mp.weixin.qq.com/s/6_cW22DCzSw3DpUDrLXLcA
+
+OpenAI提出强化学习近端策略优化，可替代策略梯度法
+
+http://mp.weixin.qq.com/s/S4jhpNKYZP5YQWaiiOQGFA
+
+DeepMind：“预测地图”海马体催生强化学习新算法
+
+http://mp.weixin.qq.com/s/TBVVdX3erOpXNjXmhLmxOw
+
+学“深度强化学习”，看懂DeepMind这篇文章就够了!
+
+https://mp.weixin.qq.com/s/SZHMyWOXHM8T3zp_aUt-6A
+
+DeepMind提出Rainbow：整合DQN算法中的六种变体
+
+https://mp.weixin.qq.com/s/_Di73PkEWJV1-OLLHfz7yQ
+
+组合在线学习：实时反馈玩转组合优化
+
+https://mp.weixin.qq.com/s/lR6BSa_pJzcinkSaSWsM2A
+
+伯克利提出强化学习新方法，可让智能体同时学习多个解决方案
+
+https://mp.weixin.qq.com/s/P-iSI80IVmb5s-Q15Re2HQ
+
+All In!我学会了用强化学习打德州扑克
+
+https://mp.weixin.qq.com/s/xr-2cNoSYpCftLI3dV6zEw
+
+如何使用深度强化学习帮助自动驾驶汽车通过交叉路口？
+
+https://www.zhihu.com/question/49230922
+
+强化学习（reinforcement learning)有什么好的开源项目、网站、文章推荐一下？
+
+https://mp.weixin.qq.com/s/R_pfTXDMaLHmiCaSV2t_YA
+
+英特尔Nervana发布强化学习库Coach：支持多种价值与策略优化算法
+
+https://mp.weixin.qq.com/s/AyW7oOC7yxVtmswaMT1DGQ
+
+腾讯AI Lab获得计算机视觉权威赛事MSCOCO Captions冠军
+
+https://mp.weixin.qq.com/s/4aENmxUMEEPVPnexLKrg7Q
+
+新型强化学习算法ACKTR
+
+https://mp.weixin.qq.com/s/5PzTiPoXPC1gH3xszzT2dQ
+
+邓力等人提出BBQ网络：将深度强化学习用于对话系统
+
+https://mp.weixin.qq.com/s/pM8oykHmtu5O5jYJBZjO_w
+
+伯克利研究人员使用内在激励，教AI学会好奇
+
+https://mp.weixin.qq.com/s/3WI3QgfHXcrCPbvmHWOEkg
+
+强化学习在生成对抗网络文本生成中的作用
+
+https://mp.weixin.qq.com/s/IvR0O6dpz2GJCG7UQb5kUQ
+
+清华大学冯珺：基于强化学习的关系抽取和文本分类
+
+https://mp.weixin.qq.com/s/SqU74jYBrjtp9L-bnBuboA
+
+教你完美实现深度强化学习算法DQN
+
+https://zhuanlan.zhihu.com/p/31579144
+
+让我们从零开始做一个机械手臂(强化学习)
+
+# NN的INT8计算
+
+## 概述
+
+NN的INT8计算是近来NN计算优化的方向之一。这方面的文章以Xilinx的白皮书较为经典：
+
+https://china.xilinx.com/support/documentation/white_papers/c_wp486-deep-learning-int8.pdf
+
+利用Xilinx器件的INT8优化开展深度学习
 
 论文：
 
-《Connectionist Temporal Classification: Labelling Unsegmented
-Sequence Data with Recurrent Neural Networks》
-
-## 参考
-
-https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=400189223&idx=1&sn=1cb32bee42de626443ebadbf065ec79c
-
-百度贾磊：汉语语音识别技术重大突破：LSTM+CTC详解
-
-https://www.zhihu.com/question/47642307
-
-语音识别中的CTC方法的基本原理
-
-https://www.zhihu.com/question/20398418
-
-语音识别的技术原理是什么？
-
-https://www.zhihu.com/question/55851184
-
-基于CTC等端到端语音识别方法的出现是否标志着统治数年的HMM方法终结？
-
-https://www.zhihu.com/question/46829056
-
-语音识别领域的最新进展目前是什么样的水准？
-
-https://zhuanlan.zhihu.com/p/27064536
-
-用Wavenet做中文语音识别
-
-https://www.zhihu.com/question/29168274
-
-语音识别中，如何理解HMM是一个生成模型，而DNN是一个判别模型呢？
-
-https://zhuanlan.zhihu.com/p/24979135
-
-从声学模型算法总结2016年语音识别的重大进步
-
-https://mp.weixin.qq.com/s/LsVhMaHrh8JgfpDra6KSPw
-
-横向对比5大开源语音识别工具包
-
-https://mp.weixin.qq.com/s/-NTQG7_-GqGQWrRhiGgAQQ
-
-详述DeepMind wavenet原理及其TensorFlow实现
-
-https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw
-
-SampleRNN语音合成模型
-
-https://mp.weixin.qq.com/s/zEqgDh6_fnDgXEI8MC9cmg
-
-端对端的深度卷积神经网络在语音识别中的应用
-
-https://mp.weixin.qq.com/s/pimQBFd5uxrZk4dSgUsblg
-
-苹果机器学习期刊“Siri三部曲”之一：通过跨带宽和跨语言初始化提升神经网络声学模型
-
-https://mp.weixin.qq.com/s/u1R7NUg_kgI_mpjIFrO02A
-
-探索Siri背后的技术：将逆文本标准化（ITN）转化为标签问题
-
-https://mp.weixin.qq.com/s/2xpwLVHT8qU68uoV7Uj2cw
-
-小米的语音识别系统是如何搭建的
-
-https://mp.weixin.qq.com/s/xAO7mX64miTXE8E2vZ5q_w
-
-Facebook开源TTS神经网络VoiceLoop：基于室外声音的语音合成
-
-https://mp.weixin.qq.com/s/CVBSvQwnDqT-IVCZV7idog
-
-极限元语音算法专家刘斌：基于深度学习的语音生成问题
-
-https://mp.weixin.qq.com/s/cYBMy4TIhcutvrAt0y70Ow
-
-腾讯AI Lab副主任俞栋：过去两年基于深度学习的声学模型进展
-
-https://mp.weixin.qq.com/s/cvSz5Pxe3z54Tl5z3WTbQA
-
-手把手教你在音频分类DCASE2017比赛中夺冠
-
-https://mp.weixin.qq.com/s/uh-Gh8BSxBi-jjG6-d7-UQ
-
-TACOTRON一种端到端的Text-to-Speech合成模型
-
-https://mp.weixin.qq.com/s/UGhkTavbh21vBhtrrBeTfw
-
-麦克风阵列的语音信号处理技术
-
-https://mp.weixin.qq.com/s/1ZWrTdd3S5zYRyANfFmBOw
-
-声学模型
-
-https://mp.weixin.qq.com/s/mY2__KWvdAd8ZcNm-voSsg
-
-语音识别之解码器技术简介
-
-http://mp.weixin.qq.com/s/-QQjz61VAOVcWE7j-EJPhg
-
-谈谈蚂蚁金服的语音唤醒系统
-
-http://mp.weixin.qq.com/s/0WNJq4OLZlZETKPf1Ewq7w
-
-浅谈语音测试方案
-
-http://mp.weixin.qq.com/s/0Xg_acbGG3pTIgsRQKJjrQ
-
-历经一年，DeepMind WaveNet语音合成技术正式产品化
-
-https://mp.weixin.qq.com/s/KBLCrupGIuPa5nVrxcS5WQ
-
-新研究将GRU简化成单门架构，或更适用于语音识别
-
-https://mp.weixin.qq.com/s/b0bOf1bZ2p0yWMzhp66HhA
-
-A flight (to Boston) to Denver-基于转移的顺滑技术研究
-
-https://mp.weixin.qq.com/s/0AvV268s3TZ0z8WwtJv6sw
-
-一文概览语音识别中尚未解决的问题
-
-https://mp.weixin.qq.com/s/T96S0b7Lp9YWR4cRcMQr6A
-
-一文概览基于深度学习的监督语音分离
-
-https://mp.weixin.qq.com/s/TTPpOOxSLbCgOmAsI9TLiw
-
-百度发布Deep Voice 3：全卷积注意力机制TTS系统
-
-http://mp.weixin.qq.com/s/xRA9Xh-FTrhbIg0wLnfzhA
-
-温正棋谈语音质检方案：从关键词检索到情感识别
-
-https://mp.weixin.qq.com/s/XUHS4o2G-iGuV9uuOmfBdQ
-
-为什么在说话人识别技术中，PLDA面对神经网络依然坚挺？
-
-https://mp.weixin.qq.com/s/zWmJ3uXnFtXaI2BotoadHA
-
-从技术到产品，苹果Siri深度学习语音合成技术揭秘
-
-https://mp.weixin.qq.com/s/I2nbzD2QqSYgahI2jLjYTQ
-
-批训练、注意力模型及其声纹分割应用，谷歌三篇论文揭示其声纹识别技术原理
-
-https://mp.weixin.qq.com/s/XP4NVYMmKj9RLsgonP3ooQ
-
-无需进行滤波后处理，利用循环推断算法实现歌唱语音分离
-
-https://zhuanlan.zhihu.com/p/23308976
-
-CTC——下雨天和RNN更配哦
-
-https://zhuanlan.zhihu.com/p/23293860
-
-CTC实现——compute ctc loss（1）
-
-https://zhuanlan.zhihu.com/p/23309693
-
-CTC实现——compute ctc loss（2）
-
-https://mp.weixin.qq.com/s/GZI4uvCR3QzZDNddpBX2OQ
-
-深度学习也解决不掉语音识别问题
-
-https://mp.weixin.qq.com/s/u1UnAuGllcWn8Ik5wDPY6w
-
-可视化语音分析：深度对比Wavenet、t-SNE和PCA等算法
-
-https://mp.weixin.qq.com/s/w9_D1_VVhk9md4RANaipDg
-
-Mozilla开源语音识别模型和世界第二大语音数据集
-
-## Kaldi
-
-Kaldi是一个语音识别的工具包。官网：
-
-https://github.com/kaldi-asr/kaldi
-
-## HTK
-
-Hidden Markov Model Toolkit是另一个语音识别的工具包。官网：
-
-http://htk.eng.cam.ac.uk/
-
-## WFST
-
-Weighted-Finite-State-Transducer
-
-https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/ParallelizingWFSTSpeechDecoders.ICASSP2016.pdf
-
-PARALLELIZING WFST SPEECH DECODERS
-
-http://www.cs.nyu.edu/~mohri/pub/csl01.pdf
-
-Weighted Finite-State Transducers in Speech Recognition
-
-## Warp-CTC
-
-Warp-CTC是一个可以应用在CPU和GPU上的高效并行的CTC代码库，由百度硅谷实验室开发。
-
-官网：
-
-https://github.com/baidu-research/warp-ctc
-
-非官方caffe版本：
-
-https://github.com/xmfbit/warpctc-caffe
-
-# Spiking Neuron Networks
-
-除了基于BP算法的NN之外，Spiking Neuron Networks也是一大类NN。Spiking NN和人脑结构更相似，功耗也更小，但是相关训练和数据量化的算法尚不成熟，属于潜力股。
+《On the efficient representation and execution of deep acoustic models》
 
 参考：
 
-https://homepages.cwi.nl/~sbohte/publication/paugam_moisy_bohte_SNNChapter.pdf
+https://www.chiphell.com/thread-1620755-1-1.html
 
-Computing with Spiking Neuron Networks
+新Titan X的INT8计算到底是什么鬼
 
-# DNC
+https://mp.weixin.qq.com/s/S9VcoS_59nbZWe_P3ye2Tw
 
-https://zhuanlan.zhihu.com/p/27773709
+减少模型半数内存用量：百度&英伟达提出混合精度训练法
 
-浅析至强RNN可微分神经计算机(DNC)
+## NN硬件的指标术语
 
-https://zhuanlan.zhihu.com/p/27964341
+MACC：multiply-accumulate，乘法累加。
 
-浅析至强RNN可微分神经计算机(DNC)-2
+FLOPS：Floating-point Operations Per Second，每秒所执行的浮点运算次数。
 
-https://zhuanlan.zhihu.com/p/28209628
+显然NN的INT8计算主要以MACC为单位。
 
-DNC-3滚动分类的模式识别
+# LSTM进阶
 
-https://zhuanlan.zhihu.com/p/28433712
+## 《Long short-term memory》
 
-DNC4广义线性回归
+这是最早提出LSTM这个概念的论文。这篇论文偏重数学推导，实话说不太适合入门之用。但既然是起点，还是有列出来的必要。
 
-# OCR
+## 《LSTM Neural Networks for Language Modeling》
 
-## tesseract
+这也是一篇重要的论文。
 
-linux下可以使用tesseract作为OCR工具。安装方法：
+## 《Sequence to Sequence - Video to Text》
 
-`sudo apt install tesseract-ocr libtesseract-dev`
+https://vsubhashini.github.io/s2vt.html
 
-使用方法：
+![](/images/article/S2VTarchitecture.png)
 
-`tesseract ./111.png 1 -l chi_sim+eng`
+## 《Long-term Recurrent Convolutional Networks for Visual Recognition and Description》
 
-## 参考
+Long-term Recurrent Convolutional Networks是LSTM的一种应用方式，它结合了LSTM、CNN、CRF等不同网络组件。
 
-https://mp.weixin.qq.com/s/h7HVyGbmtLmNVJp4p0rCRQ
+![](/images/article/LSTM_X.png)
 
-字符识别(OCR)相关工具/库/教材/论文等资源整理
+上图展示了LSTM在动作识别、图片和视频描述等任务中的网络结构。
 
-https://zhuanlan.zhihu.com/p/21344595
+![](/images/article/LSTM_X_2.png)
 
-端到端的OCR：验证码识别(LSTM+CTC)
+上图展示了图片描述任务中几种不同的网络连接方式：
 
-http://www.jianshu.com/p/86489f1afd36
+1.单层LRCN。
 
-端到端的OCR：基于CNN的实现
+2.双层LRCN。CNN连接在第一个LSTM层。传统的LSTM只有一个输入，这里的CNN是第二个输入，也就是所谓的静态输入。可参看caffe的LSTM实现。
 
-http://www.jianshu.com/p/4fadf629895b
+2.双层LRCN。CNN连接在第二个LSTM层。
 
-端到端的OCR：LSTM＋CTC的实现
+![](/images/article/LSTM_X_3.png)
 
+![](/images/article/LSTM_X_4.png)
 
+![](/images/article/LSTM_X_5.png)
+
+这是视频描述任务中LSTM和CRF结合的示例。
+
+## 《Training RNNs as Fast as CNNs》
+
+这篇论文提出了如下图所示的Simple Recurrent Unit的新结构：
+
+![](/images/article/SRU.jpg)
+
+由于普通LSTM计算步骤中，很多当前时刻的计算都依赖$$h_{t-1}$$的值，导致整个网络的计算无法并行化。SRU针对这一点去掉了当前时刻计算对于$$h_{t-1}$$的依赖，而仅保留$$C_{t-1}$$（这个计算较为廉价）以记忆信息，大大改善了整个RNN网络计算的并行性。
+
+参考：
+
+https://mp.weixin.qq.com/s/4IHzOAvNhHG9c8GP0zXVkQ
+
+Simple Recurrent Unit For Sentence Classification
 

@@ -288,5 +288,9 @@ https://mp.weixin.qq.com/s/mgeQXkEWu5JlZxyAM0yiaQ
 
 充分利用候选项的选择型机器阅读理解模型
 
+https://mp.weixin.qq.com/s/RlarTDziwkGGM_CUa40XAw
+
+机器之心线上分享：用于序列生成的推敲网络
+
 
 

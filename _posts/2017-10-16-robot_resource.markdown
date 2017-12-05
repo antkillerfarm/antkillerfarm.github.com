@@ -34,6 +34,12 @@ CptS 483: Introduction to Robotics
 
 http://www.eecs.wsu.edu/~taylorm/2011_cs420/index.html
 
+CS 420：Artificial Intelligence
+
+http://ctms.engin.umich.edu/CTMS/index.php
+
+这个网页提供了很多机械的控制算法——从系统、控制到仿真的全过程的教程。
+
 ## 术语
 
 LIDAR：LIght Detection And Ranging
@@ -213,6 +219,10 @@ https://mp.weixin.qq.com/s/dusPUCjKUzhfmTRhzXte-A
 https://mp.weixin.qq.com/s/j_rkmJ09QxhtzFH_Xa1Evw
 
 陈小平：机器人灵巧性可解决不确定性问题
+
+https://mp.weixin.qq.com/s/DhA9V5IlNAaa4qpWHVQCPA
+
+一个机器学者的故事：机器人工程师学习计划
 
 # ML参考资源
 

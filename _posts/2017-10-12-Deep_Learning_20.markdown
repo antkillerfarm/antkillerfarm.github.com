@@ -1,301 +1,262 @@
 ---
 layout: post
-title:  深度学习（二十）——模型压缩, 人脸识别, 手势识别
+title:  深度学习（二十）——视频目标分割, Fast Image Processing, OpenPose, Mask R-CNN, 目标跟踪
 category: DL 
 ---
 
-# 模型压缩
+## DenseNet（续）
 
-对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。
+### DenseNet的优化问题
 
-此外，对于一些较大的模型（如VGG），即使机器再给力，单位时间内能处理的图像数量，往往也无法达到实际应用的要求。这点在自动驾驶和视频处理领域显得尤为突出。
+当前的深度学习框架对DenseNet的密集连接没有很好的支持，我们只能借助于反复的拼接（Concatenation）操作，将之前层的输出与当前层的输出拼接在一起，然后传给下一层。对于大多数框架（如Torch和TensorFlow），每次拼接操作都会开辟新的内存来保存拼接后的特征。这样就导致一个L层的网络，要消耗相当于L(L+1)/2层网络的内存（第l层的输出在内存里被存了(L-l+1)份）。
 
-这里首先提到的是韩松的两篇论文：
+解决这个问题的思路其实并不难，我们只需要预先分配一块缓存，供网络中所有的拼接层（Concatenation Layer）共享使用，这样DenseNet对内存的消耗便从平方级别降到了线性级别。
 
-《Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding》
+### 参考
 
-《Learning both Weights and Connections for Efficient Neural Networks》
+https://www.leiphone.com/news/201708/0MNOwwfvWiAu43WO.html
 
->韩松，清华本科（2012）+Stanford博士（2017）。MIT AP（from 2018）。   
->个人主页：   
->https://stanford.edu/~songhan/
+CVPR 2017最佳论文作者解读：DenseNet 的“what”、“why”和“how”
 
-韩松也是SqueezeNet的二作。
+https://zhuanlan.zhihu.com/p/28124810
 
-![](/images/article/nn_compression.png)
+为什么ResNet和DenseNet可以这么深？一文详解残差块为何有助于解决梯度弥散问题
 
-韩松论文的中心思想如上图所示。简单来说，就是去掉原有模型的一些不重要的参数、结点和层。
+https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2651988934&idx=2&sn=0e5ffa195ef67a1371f3b5b223519121
 
-参数的选择，相对比较简单。参数的绝对值越接近零，它对结果的贡献就越小。这一点和稀疏矩阵有些类似。
+ResNets、HighwayNets、DenseNets：用 TensorFlow 实现超深度神经网络
 
-结点和层的选择，相对麻烦一些，需要通过算法得到不重要的层。
+# 视频目标分割
 
-比如可以逐个将每一层50%的参数置零，查看模型性能。对性能影响不大的层就是不重要的。
+视频目标分割任务和语义分割有两个基本区别：
 
-虽然这些参数、结点和层相对不重要，但是去掉之后，仍然会对准确度有所影响。这时可以对精简之后的模型，用训练样本进行re-train，通过残差对模型进行一定程度的修正，以提高准确度。
+1.视频目标分割任务分割的是一般的、非语义的目标；
 
-其次还可以看看图森科技的论文：
+2.视频目标分割添加了一个时序模块：它的任务是在视频的每一连续帧中寻找感兴趣目标的对应像素。
 
-https://www.zhihu.com/question/62068158
+![](/images/article/Segmentation.png)
 
-如何评价图森科技连发的三篇关于深度模型压缩的文章？
+上图是Segmentation的细分，其中的每一个叶子都有一个示例数据集。
 
-图森的思路比较有意思。其中的方法之一，是利用L1规则化会导致结果的稀疏化的特性，制造出一批接近0的参数。从而达到去除不重要的参数的目的。
+基于视频任务的特性，我们可以将问题分成两个子类：
 
-除此之外，矩阵量化、Kronecker内积、霍夫曼编码、模型剪枝等也是常见的模型压缩方法。
+无监督（亦称作视频显著性检测）：寻找并分割视频中的主要目标。这意味着算法需要自行决定哪个物体才是“主要的”。
 
-当然最系统的做法还属Geoffrey Hinton的论文：
-
-《Distilling the Knowledge in a Neural Network》
-
-图森科技的后两篇论文也是在Hinton论文的基础上改进的。
-
-论文：
-
-《Articulatory and Spectrum Features Integration using Generalized Distillation Framework》
+半监督：在输入中（只）给出视频第一帧的正确分割掩膜，然后在之后的每一连续帧中分割标注的目标。
 
 参考：
 
-https://zhuanlan.zhihu.com/p/24337627
+http://mp.weixin.qq.com/s/pGrzmq5aGoLb2uiJRYAXVw
 
-深度压缩之蒸馏模型
+一文概览视频目标分割
 
-http://blog.csdn.net/shuzfan/article/details/51383809
+https://www.zhihu.com/question/52185576
 
-神经网络压缩：Deep Compression
+视频中的目标检测与图像中的目标检测具体有什么区别？
 
-https://zhuanlan.zhihu.com/p/24894102
+# Fast Image Processing
 
-《Distilling the Knowledge in a Neural Network》阅读笔记
+![](/images/article/FIP.png)
 
-https://luofanghao.github.io/2016/07/20/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0%20%E3%80%8ADistilling%20the%20Knowledge%20in%20a%20Neural%20Network%E3%80%8B/
+上图是照片界常用的几种修图方式之一。一般将这些图片风格转换的算法，称为图像处理算子（image processing operators）。如何加速image processing operators的计算，就成为了学界研究的课题之一。
 
-论文笔记 《Distilling the Knowledge in a Neural Network》
+本文提出的模型就是用来加速image processing operators计算的。它是Intel Lab的Qifeng Chen和Jia Xu于2017年提出的。
 
-http://blog.csdn.net/zhongshaoyy/article/details/53582048
+论文：
 
-蒸馏神经网络
+《Fast Image Processing with Fully-Convolutional Networks》
 
-https://www.zhihu.com/question/50519680
+代码：
 
-如何理解soft target这一做法？
+https://github.com/CQFIO/FastImageProcessing
 
-https://mp.weixin.qq.com/s/0KlnQ8UUxpyhBRdeo0EOAA
+Demo网站：
 
-用于网络压缩的滤波器级别剪枝算法ThiNet
+http://cqf.io/ImageProcessing/
 
-https://mp.weixin.qq.com/s/lO2UM04PfSM5VJYh6vINhw
+这个课题一般使用MIT-Adobe FiveK Dataset作为基准数据集。网址：
 
-为模型减减肥：谈谈移动／嵌入式端的深度学习
+http://groups.csail.mit.edu/graphics/fivek_dataset/
 
-https://mp.weixin.qq.com/s/cIGuJvYr4lZW01TdINBJnA
+这个数据集包含了5K张原始照片，并雇用了5个专业修图师，对每张图片进行修图。
 
-深度压缩网络：较大程度减少了网络参数存储问题
+众所周知，多层神经网络只要有足够的深度和宽度，就可以任意逼近任意连续函数。然而从Fast Image Processing的目的来说，神经网络的深度和宽度注定是有限的，否则肯定快不了。而这也是该课题的研究意义所在。
 
-https://mp.weixin.qq.com/s/1JwLP0FmV1AGJ65iDgLWQw
+本文只使用了MIT-Adobe数据集中的原始图片，并使用了10种常用的算子对图片进行处理。因此，该网络训练时的输入是原始图片，而输出是处理后的图片。
 
-神经网络模型压缩技术
+![](/images/article/MCA.png)
 
-https://mp.weixin.qq.com/s/Xqc4UgcfCUWYOeGhjNpidA
+上图是本文模型的网络结构图。它的设计特点如下：
 
-CNN模型压缩与加速算法综述
+1.采用Multi-Scale Context Aggregation作为基础网络。MCA的内容参见《深度学习（九）》。
 
-https://mp.weixin.qq.com/s/rzv8VCAxBQi0HsUcnLqqUA
+2.传统MCA一般有下采样的过程，但这里由于网络输入和输出的尺寸维度是一样的，因此，所有的feature maps都是等大的。
 
-处理移动端传感器时序数据的深度学习框架：DeepSense
+3.借鉴FCN的思想，去掉了池化层和全连接层。
 
-https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg
+4.L1~L3主要用于图片的特征提取和升维，而L4~L5则用于特征的聚合和降维，并最终和输出数据的尺寸维度相匹配。
 
-旷视科技提出新型卷积网络ShuffleNet，专为移动端设计
+在normalization方面，作者发现有的operators经过normalization之后，精度会上升，而有的精度反而会下降，因此为了统一模型，定义如下的normalization运算：
 
-https://mp.weixin.qq.com/s/UYk3YQmFW7-44RUojUqfGg
+$$\Psi^s(x)=\lambda_sx+\mu_sBN(x)$$
 
-上交大ICCV：精度保证下的新型深度网络压缩框架
+Loss函数为：
 
-https://mp.weixin.qq.com/s/ZuEi32ZBSjruvtyUimBgxQ
+$$\mathcal{l(K,B)}=\sum_i\frac{1}{N_i}\|\hat f (I_i;\mathcal{K,B})-f(I_i)\|^2$$
 
-揭秘支付宝中的深度学习引擎：xNN
+这实际上就是RGB颜色空间的MSE误差。
 
-http://mp.weixin.qq.com/s/iapih9Mme-VKCfsFCmO7hQ
+为了检验模型的泛化能力，本文还使用RAISE数据集作为交叉验证的数据集。该数据集的网址：
 
-简单聊聊压缩网络
+http://mmlab.science.unitn.it/RAISE/
 
-https://mp.weixin.qq.com/s/3qstz-KoRuxwpmfE4XDI-Q
+RAISE数据集包含了8156张高分辨率原始照片，由3台不同的相机拍摄，并给出了相机的型号和参数。
 
-面向卷积神经网络的卷积核冗余消除策略
+# OpenPose
 
-https://mp.weixin.qq.com/s/dEdWz4bovmk65fwLknHBhg
+OpenPose是一个实时多人关键点检测的库，基于OpenCV和Caffe编写。它是CMU的Yaser Sheikh小组的作品。
 
-韩松毕业论文：面向深度学习的高效方法与硬件
+>Yaser Ajmal Sheikh，巴基斯坦信德省易司哈克工程科学与技术学院本科（2001年）+中佛罗里达大学博士（2006年）。现为CMU副教授。
 
-https://mp.weixin.qq.com/s/GFE2XYHZXPP0doQ5nd0JNQ
+![](/images/article/openpose.png)
 
-当前深度神经网络模型压缩和加速方法速览
+OpenPose的使用效果如上图所示。
 
-https://mp.weixin.qq.com/s/Faej1LKqurtwEIreUVJ0cw
+论文：
 
-普林斯顿新算法自动生成高性能神经网络，同时超高效压缩
+《Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields》
 
-https://mp.weixin.qq.com/s/uK-HasmiavM3jv6hNRY11A
+《Hand Keypoint Detection in Single Images using Multiview Bootstrapping》
 
-深度梯度压缩：降低分布式训练的通信带宽
+《Convolutional pose machines》
 
-# 人脸识别
+代码：
 
-## Cascade CNN
+https://github.com/CMU-Perceptual-Computing-Lab/openpose
 
-《A Convolutional Neural Network Cascade for Face Detection》
+# Mask R-CNN
 
-http://blog.csdn.net/shuzfan/article/details/50358809
+Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的NN。它是何恺明2017年的新作。
 
-人脸检测——CascadeCNN
+论文：
+
+《Mask R-CNN》
+
+只有非官方的代码：
+
+Caffe版本：
+
+https://github.com/jasjeetIM/Mask-RCNN
+
+TensorFlow版本：
+
+https://github.com/hillox/TFMaskRCNN
+
+MXNet版本：
+
+https://github.com/TuSimple/mx-maskrcnn
+
+参考：
+
+https://zhuanlan.zhihu.com/p/25954683
+
+Mask R-CNN个人理解
+
+https://mp.weixin.qq.com/s/E0P2B798pukbtRarWooUkg
+
+Mask R-CNN的Keras/TensorFlow/Pytorch代码实现
+
+https://zhuanlan.zhihu.com/p/30967656
+
+从R-CNN到Mask R-CNN
+
+# 目标跟踪
+
+## 概述
+
+目标跟踪（object tracking）就是在连续的视频序列中，建立所要跟踪物体的位置关系，得到物体完整的运动轨迹。
+
+目标跟踪分为单目标跟踪和多目标跟踪。本文如无特别指出，均指单目标跟踪。
+
+通常的做法是：
+
+1.在第1帧给一个bbox框住需要跟踪的物体。
+
+2.在不借助重检测（re-detection）的情况下，尽可能长时间的跟住物体。
+
+3.不能使用依赖外部特征的姿态估计（pose estimation）。
+
+当然这是针对目标跟踪算法的要求，至于实际产品中，对象的重检测以及依赖外部特征的姿态估计都是必不可少的。
+
+比如，自动驾驶领域的车辆跟踪，一般都会针对车辆的运动特点建立模型，以辅助目标跟踪。
+
+## TB50 & TB100
+
+这个领域最著名的数据集是吴毅提出的TB50 & TB100，50和100分别代表视频数量。有的论文也把它们称作OTB-2013和OTB-2015。
+
+>吴毅，中国科学院自动化研究所博士（2009年）。南京审计大学副教授。
+
+官网：
+
+http://cvlab.hanyang.ac.kr/tracker_benchmark/
+
+论文：
+
+《Online object tracking: A benchmark》
+
+《Object tracking benchmark》
+
+上面的论文在TB数据集上比较了包括2012年及之前的29个顶尖的tracker，基本解决了统一标准的问题，因此也成为了目标跟踪领域的权威数据集。
+
+《Object tracking: A survey》
+
+这篇论文总结了2006年以前的目标跟踪算法。
+
+## VOT
+
+VOT竞赛数据集是另一个常用数据集。官网：
+
+http://votchallenge.net/challenges.html
+
+OTB包括25%的灰度序列，但VOT都是彩色序列，这也是造成很多颜色特征算法性能差异的原因。
+
+## 目标跟踪的难点
+
+![](/images/article/tracker_hard.png)
+
+![](/images/article/tracker_hard_2.png)
 
 ## 参考
 
-http://www.cnblogs.com/pandaroll/p/6590339.html
+https://www.zhihu.com/question/26493945
 
-开源人脸识别openface
+计算机视觉中，目前有哪些经典的目标跟踪算法？
 
-http://mp.weixin.qq.com/s/KQxGQdLa3XzKVIFYqlrV7g
+https://zhuanlan.zhihu.com/p/22334661
 
-人脸检测与识别的趋势和分析
+深度学习在目标跟踪中的应用
 
-https://zhuanlan.zhihu.com/p/25335957
+https://mp.weixin.qq.com/s/3R8zaFUKFTvp0uE8lY44WA
 
-人脸检测与深度学习
+首个应用残差学习的深度目标跟踪算法
 
-http://www.leiphone.com/news/201608/MPXlWtGaJLPYL7NB.html
+https://zhuanlan.zhihu.com/p/27293523
 
-人脸检测发展：从VJ到深度学习
+目标跟踪领域进展报告
 
-https://zhuanlan.zhihu.com/p/22591740
+https://zhuanlan.zhihu.com/p/27335895
 
-从事人脸识别研究必读的N篇文章
+CVPR 2017目标跟踪相关论文
 
-https://mp.weixin.qq.com/s/ZZmLbFzi843g0k3gTncQmA
+https://www.zhihu.com/question/59623472
 
-拿下人脸识别“世界杯”冠军！松下-NUS和美国东北大学实战分享
+基于深度学习的目标跟踪算法是否可能做到实时？
 
-https://mp.weixin.qq.com/s/DYCXef_09yFFNR0uHL2Q0Q
+http://acsweb.ucsd.edu/~yuw176/report/vehicle.pdf
 
-基于Python的开源人脸识别库：离线识别率高达99.38%
+Monocular Vehicle Detection and Tracking
 
-blog.csdn.net/qq_14845119/article/details/52680940
+https://mp.weixin.qq.com/s/x7LoIN7mOJcZDY70GB_rLg
 
-MTCNN（Multi-task convolutional neural networks）人脸对齐
-
-http://blog.csdn.net/shuzfan/article/details/52668935
-
-人脸检测——MTCNN
-
-https://mp.weixin.qq.com/s/eOxd5XbeyVcRYyAAmPr20Q
-
-利用空间融合卷积神经网络通过面部关键点进行伪装人脸识别
-
-https://mp.weixin.qq.com/s/vAjWHpn5HP_lwSv49g71SA
-
-新型半参数变分自动编码器DeepCoder：可分层级编码人脸动作
-
-https://mp.weixin.qq.com/s/IS5iAPZeUrvvyWs29O8Ukg
-
-通过提取神经元知识实现人脸模型压缩
-
-https://mp.weixin.qq.com/s/DEJ0z2CahZIrhTE3VXNVvg
-
-基于注意力机制学习的人脸幻构
-
-https://mp.weixin.qq.com/s/-G94Mj-8972i2HtEcIZDpA
-
-人脸识别世界杯榜单出炉，微软百万名人识别竞赛冠军分享
-
-https://mp.weixin.qq.com/s/bqWle_188lhYO4hpCfafkQ
-
-用浏览器做人脸检测，竟然这么简单？
-
-https://mp.weixin.qq.com/s/kn9JS55wIW2cfpUv7Jm0eQ
-
-深度学习教你如何“以貌取人”！
-
-https://mp.weixin.qq.com/s/3xEDtMoe0iRQSZiN5A1FGw
-
-IPHONE X“刷脸”技术奥秘大揭底
-
-https://mp.weixin.qq.com/s/s5HL6y2P9_KqpSAQg08URw
-
-世界最大人脸对齐数据集ICCV 2017：距离解决人脸对齐已不远
-
-https://mp.weixin.qq.com/s/Z06oUe7oExgkKZ8g2_PnPw
-
-科普人脸表情识别技术
-
-https://mp.weixin.qq.com/s/tS_9gS2ADoEdSKCLB-cxpA
-
-刘小明教授为你讲解人脸识别
-
-https://mp.weixin.qq.com/s/CLgyaAslE4hYHi62UhzeGw
-
-韩琥：深度学习让机器给人脸“贴标签”
-
-https://mp.weixin.qq.com/s/pUcVO8Fj-n9-pMwAzBvWuQ
-
-山世光：人脸识别领域的“激荡20年”
-
-https://zhuanlan.zhihu.com/p/23340343
-
-Center Loss及其在人脸识别中的应用
-
-https://mp.weixin.qq.com/s/7AnF0uMgepchiUeqfqVbCg
-
-清华大学王生进：新智能安防：人脸识别技术与应用系统
-
-https://mp.weixin.qq.com/s/-T5k2ViPjvEoXccKt-_J3Q
-
-中科院自动化研究所提出FaceBoxes：实时、高准确率的CPU面部检测器
-
-https://www.leiphone.com/news/201707/mFuwXGvZBhoVQD5S.html
-
-一秒分辨出杨臣刚、王大治和孙楠，这个黑产居然用AI来"打码"
-
-https://mp.weixin.qq.com/s/PF7_kSnwngnJ1jeh7ebyww
-
-手把手教你用1行代码实现人脸识别
-
-https://mp.weixin.qq.com/s/Gqlo4wU0wtIcJDvQs2kTAw
-
-为了让你分清人脸识别与人脸检测，苹果要亲自给你科普
-
-http://blog.csdn.net/gitchat/article/details/78546894
-
-TensorFlow人脸识别网络与对抗网络搭建
-
-https://mp.weixin.qq.com/s/ZJmgC8xTruaRLfCocodjqA
-
-人脸检测与识别总结
-
-https://mp.weixin.qq.com/s/lGIkLcglQGvDzdBQmZW0Qw
-
-判别特征学习方法用于人脸识别
-
-# 手势识别
-
-https://zhuanlan.zhihu.com/p/26630215
-
-浅谈手势识别在直播中的运用
-
-https://zhuanlan.zhihu.com/p/30561160
-
-2017-最全手势识别/跟踪相关资源大列表分享
-
-http://www.sohu.com/a/203306961_465975
-
-浙江大学CSPS最佳论文：使用卷积神经网络的多普勒雷达手势识别
-
-https://www.zhihu.com/question/20131478
-
-我打算只根据手的形状来识别手势。用哪种机器学习算法比较好？
-
-https://www.leiphone.com/news/201502/QM7LdSN874dWXFLo.html
-
-带你了解世界最先进的手势识别技术
-
+VOT Challenge 2017亚军北邮团队技术分享
 

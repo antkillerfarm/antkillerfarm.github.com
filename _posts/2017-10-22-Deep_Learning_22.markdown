@@ -1,338 +1,239 @@
 ---
 layout: post
-title:  深度学习（二十二）——深度强化学习, LSTM进阶
+title:  深度学习（二十二）——依存分析, Image Caption Generation, 行人重识别, 图像超分辨率算法
 category: DL 
 ---
 
-# 深度强化学习
+# 依存分析
 
-## 教程
+## 概况
 
-http://incompleteideas.net/sutton/book/the-book-2nd.html
+Dependency Parsing是NLP领域的一项重要工作。
 
-《Reinforcement Learning: An Introduction》，Richard S. Sutton和Andrew G. Barto著。
+![](/images/article/dependency_parsing.png)
 
->注：Richard S. Sutton，加拿大计算机科学家，麻省大学阿姆赫斯特分校博士（1984年），阿尔伯塔大学教授。强化学习之父，研究该领域长达三十余年。
+依存分析的基本目标是**对一句话构建一个表达词与词之间依赖关系的语法树**，如上图所示。
 
->Andrew G. Barto，麻省大学阿姆赫斯特分校教授。Richard S. Sutton的导师。
+## 传统方法
 
-http://incompleteideas.net/sutton/609%20dropbox/slides%20(pdf%20and%20keynote)/
+这里以2003年提出的Greedy transition-based parsing算法为例，介绍一下依存分析的传统做法。
 
-Sutton的pdf和keynote
+![](/images/article/tbp.png)
 
->注：资料中的.key文件即为keynote文件。这种格式是苹果设备上的专用ppt格式，在其他系统中查看不了。
+![](/images/article/tbp_2.png)
 
-http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html
+上图演示了ROOT结点是如何一步步“吃”进词语（即Shift操作），并生成依存分析树的过程。
 
-UCL Course on RL
+这里的每一步被称作**transition**。
 
->David Silver，剑桥大学本科（1997年）+阿尔伯塔大学博士（2011年）。伦敦大学学院讲师。现为DeepMind研究员。AlphaGo之父。
+transition中箭头左边的部分是以ROOT为栈底的**stack**，右边的部分是待处理文本的**buffer**，**A**表示依赖关系树。
 
-Silver的名声直追Sutton，这个教程也流传很广。后续介绍的教程中，多有对它的抄袭。
+stack+buffer+A构成了一个**configuration**。GTBP算法的难点，在于如何根据configuration，确定下一步的transition。这在传统做法中，通常是一堆文法规则，或者特征的分类。
 
-http://www.meltycriss.com/2017/09/09/note-reinforcement-learning/
+## 依存分析的准确度指标
 
-课程笔记《UCL强化学习》。这个blog包含大量的思维导图。
+![](/images/article/dependency_accuracy.png)
 
-https://mp.weixin.qq.com/s/_PVe7Gcq7Yk8nOFJFPcUQw
+依存分析的准确度指标主要有UAS和LAS两种。
 
-叶强：David Silver《深度强化学习》公开课教程学习笔记完整版
+上图是某句话的依存分析结果。其中Gold表示正确答案，而Parsed表示算法的计算结果。结果的第二列是依存结点，0表示ROOT；第4列是单词的词性。
 
-http://web.stanford.edu/class/cs234/syllabus.html
+Unlabeled attachment score是指依存结点是否正确。以上图中的例子为例，就是4/5=80%。
 
-CS234: Reinforcement Learning
+Labeled	attachment score不仅考虑依存结点是否正确，还考虑词性是否正确。用样以上图为例，则是2/5=40%。
 
-http://www.eecs.wsu.edu/~taylorm/17_580/index.html
+## 深度方法
 
-CptS 580: Reinforcement Learning
+深度方法的开山之作是陈丹琦2014年的论文：
 
-http://www.eecs.wsu.edu/~taylorm/2011_cs420/index.html
+《A Fast and Accurate Dependency Parser using Neural Networks》
 
-Artificial Intelligence。这个课程名义上叫AI，实则包括状态空间搜索、强化学习和贝叶斯网络三部分内容。
+![](/images/article/dependency_parser_nn.png)
 
-http://www.eecs.wsu.edu/~taylorm/2010_cs414/index.html
+上图是该方案的结构图。
 
-Introduction to Machine Learning。Matthew E. Taylor的本行是RL，所以不管什么课程，都有RL的内容。
+我们之前已经指出，在传统方法中，transition是由单词、词性和依赖关系树所确定的。只是这种确定的规则比较复杂，不易提炼出有效特征。
 
->Matthew E. Taylor，安默斯特学院本科（2001年）+德州大学奥斯汀分校博士（2008年）。华盛顿州立大学副教授。
+参照我们在CNN中的作为，特征提取这一步骤可以由神经网络来完成。因此，在这里我们将configuration的各个组成部分分别向量化，然后合成为一个长向量，作为Input layer。
 
-https://katefvision.github.io/
+这里采用以下的Cube函数作为激活函数，这也是该文的一大创见：
 
-CMU: Deep Reinforcement Learning and Control
+$$h=(W_1^w x^w + W_1^t x^t + W_1^l x^l + b_1)^3$$
 
-https://github.com/aikorea/awesome-rl
+Output layer是一个softmax的多分类层，每个分类对应一个transition。
 
-提供了RL方面的资源网页。aikorea还提供了同类的资源收集网页：awesome-rnn, awesome-deep-vision, awesome-random-forest。
+## SyntaxNet
 
-## 论文
-
-《A Brief Survey of Deep Reinforcement Learning》
-
-## blog
-
-https://zhuanlan.zhihu.com/sharerl
-
-强化学习知识大讲堂
-
-https://zhuanlan.zhihu.com/intelligentunit
-
-一个DL+RL的专栏
-
-## 参考
-
-https://www.nervanasys.com/demystifying-deep-reinforcement-learning/
-
-深度强化学习揭秘
-
-https://zhuanlan.zhihu.com/p/24446336
-
-深度强化学习Deep Reinforcement Learning学习整理
-
-https://mp.weixin.qq.com/s/7BsXPQ8wC6_fHulU63ZQiQ
-
-当强化学习遇见泛函分析
-
-https://mp.weixin.qq.com/s/K82PlSZ5TDWHJzlEJrjGlg
-
-深度学习与强化学习
-
-https://mp.weixin.qq.com/s/KNXD-MpVHQRXYvJKTqn6WA
-
-完善强化学习安全性：UC Berkeley提出约束型策略优化新算法
-
-http://mp.weixin.qq.com/s/lLPRwInF5qaw7ewYHOpPyw
-
-深度强化学习资料
-
-https://mp.weixin.qq.com/s/aVWHlwOmNIqOlu3025_RXQ
-
-DeepMind提出多任务强化学习新方法Distral
-
-https://zhuanlan.zhihu.com/p/27699682
-
-荐译一篇通俗易懂的策略梯度（Policy Gradient）方法讲解
-
-http://lamda.nju.edu.cn/yangjw/project/drlintro.html
-
-深度强化学习初探
-
-https://zhuanlan.zhihu.com/p/21498750
-
-深度强化学习导引
-
-https://mp.weixin.qq.com/s/RnUWHa6QzgJbE_XqLeAQmg
-
-深度强化学习，决策与控制
-
-https://mp.weixin.qq.com/s/W9yhj7_frLYWJocoBR1TMQ
-
-避免AI错把黑人识别为大猩猩：伯克利大学提出协同反向强化学习
-
-https://mp.weixin.qq.com/s/R308ohdMU8b7Ap4CLofvDg
-
-OpenAI开源算法ACKTR与A2C：把可扩展的自然梯度应用到强化学习
-
-https://mp.weixin.qq.com/s/-JHHOQPB6pKVuge64NkMuQ
-
-DeepMind主攻的深度强化学习3大核心算法及7大挑战
-
-https://mp.weixin.qq.com/s/YQpuYuzk0jv5OngH5u8bEg
-
-阿里菜鸟物流：使用深度强化学习方法求解一类新型三维装箱问题
-
-https://mp.weixin.qq.com/s/OY56lJ_NFf5vVAgKfKyx2A
-
-利用强化学习自动搜索最优化方法
-
-https://mp.weixin.qq.com/s/zWo2iSiJBEBwnFF478xxfQ
-
-DeepMind：探索人类行为中的强化学习机制
-
-https://mp.weixin.qq.com/s/R30quVGK0TgjerLpiIK9eg
-
-从算法到训练，综述强化学习实现技巧与调试经验
-
-https://mp.weixin.qq.com/s/TpRXxP25-3uqpgC9CBi-3Q
-
-Yoshua Bengio等人提出MILABOT：强化学习聊天机器人
-
-https://mp.weixin.qq.com/s/uDFsWebfLmka-zZX3Y_8kg
-
-深度强化学习在面向任务的对话管理中的应用
-
-https://mp.weixin.qq.com/s/GNbCu1lbOmwJDCU3vgMbtQ
-
-OpenAI发布多智能体深度强化学习新算法LOLA
-
-https://mp.weixin.qq.com/s/5Go20MyBxdVI1r5SkwA6lw
-
-面向星际争霸：DeepMind提出多智能体强化学习新方法
-
-https://mp.weixin.qq.com/s/nYOOwVoijl1p4V0A7yaI3w
-
-机遇与挑战：用强化学习自动搜索优化算法
-
-https://mp.weixin.qq.com/s/uymKtR_7IgMpfXcekfkCDg
-
-从强化学习基本概念到Q学习的实现，打造自己的迷宫智能体
-
-https://mp.weixin.qq.com/s/6_cW22DCzSw3DpUDrLXLcA
-
-OpenAI提出强化学习近端策略优化，可替代策略梯度法
-
-http://mp.weixin.qq.com/s/S4jhpNKYZP5YQWaiiOQGFA
-
-DeepMind：“预测地图”海马体催生强化学习新算法
-
-http://mp.weixin.qq.com/s/TBVVdX3erOpXNjXmhLmxOw
-
-学“深度强化学习”，看懂DeepMind这篇文章就够了!
-
-https://mp.weixin.qq.com/s/SZHMyWOXHM8T3zp_aUt-6A
-
-DeepMind提出Rainbow：整合DQN算法中的六种变体
-
-https://mp.weixin.qq.com/s/_Di73PkEWJV1-OLLHfz7yQ
-
-组合在线学习：实时反馈玩转组合优化
-
-https://mp.weixin.qq.com/s/lR6BSa_pJzcinkSaSWsM2A
-
-伯克利提出强化学习新方法，可让智能体同时学习多个解决方案
-
-https://mp.weixin.qq.com/s/P-iSI80IVmb5s-Q15Re2HQ
-
-All In!我学会了用强化学习打德州扑克
-
-https://mp.weixin.qq.com/s/xr-2cNoSYpCftLI3dV6zEw
-
-如何使用深度强化学习帮助自动驾驶汽车通过交叉路口？
-
-https://www.zhihu.com/question/49230922
-
-强化学习（reinforcement learning)有什么好的开源项目、网站、文章推荐一下？
-
-https://mp.weixin.qq.com/s/R_pfTXDMaLHmiCaSV2t_YA
-
-英特尔Nervana发布强化学习库Coach：支持多种价值与策略优化算法
-
-https://mp.weixin.qq.com/s/AyW7oOC7yxVtmswaMT1DGQ
-
-腾讯AI Lab获得计算机视觉权威赛事MSCOCO Captions冠军
-
-https://mp.weixin.qq.com/s/4aENmxUMEEPVPnexLKrg7Q
-
-新型强化学习算法ACKTR
-
-https://mp.weixin.qq.com/s/5PzTiPoXPC1gH3xszzT2dQ
-
-邓力等人提出BBQ网络：将深度强化学习用于对话系统
-
-https://mp.weixin.qq.com/s/pM8oykHmtu5O5jYJBZjO_w
-
-伯克利研究人员使用内在激励，教AI学会好奇
-
-https://mp.weixin.qq.com/s/3WI3QgfHXcrCPbvmHWOEkg
-
-强化学习在生成对抗网络文本生成中的作用
-
-https://mp.weixin.qq.com/s/IvR0O6dpz2GJCG7UQb5kUQ
-
-清华大学冯珺：基于强化学习的关系抽取和文本分类
-
-https://mp.weixin.qq.com/s/SqU74jYBrjtp9L-bnBuboA
-
-教你完美实现深度强化学习算法DQN
-
-https://zhuanlan.zhihu.com/p/31579144
-
-让我们从零开始做一个机械手臂(强化学习)
-
-# NN的INT8计算
-
-## 概述
-
-NN的INT8计算是近来NN计算优化的方向之一。这方面的文章以Xilinx的白皮书较为经典：
-
-https://china.xilinx.com/support/documentation/white_papers/c_wp486-deep-learning-int8.pdf
-
-利用Xilinx器件的INT8优化开展深度学习
+2015年David Weiss在陈丹琦方案的基础上，做了一些改进。
 
 论文：
 
-《On the efficient representation and execution of deep acoustic models》
+《Structured Training for Neural Network Transition-Based Parsing》
+
+![](/images/article/dependency_parser_nn_2.png)
+
+上图是Weiss方案的结构图。该方案相比陈丹琦方案的改进如下：
+
+1.由1个隐层改为两个隐层。
+
+2.添加Perceptron Layer作为输出层。（Perceptron Layer的含义参见《机器学习（二十三）》中对于Beam Search的解释）
+
+3.全局使用Tri-training算法作为半监督的集成学习算法。（Tri-training算法参见《机器学习（二十二）》）
+
+《Opinion Mining with Deep Recurrent Neural Networks》
+
+![](/images/article/Pointer_Sentinel_Mixture_Models.png)
+
+《Pointer Sentinel Mixture Models》
+
+https://www.zhihu.com/question/46272554
+
+如何评价SyntaxNet？
+
+http://mp.weixin.qq.com/s/IWagHP0MSQFAJ50NeoyOjw
+
+基于神经网络的高性能依存句法分析器
+
+## NLP的女学霸们
+
+http://cs.stanford.edu/people/danqi/
+
+陈丹琦，清华本科（姚班）（2012）+斯坦福博士生。
+
+https://homes.cs.washington.edu/~luheng/
+
+何律恒，上海交大本科（2010）+宾夕法尼亚大学硕士（2012）+华盛顿大学博士生。
+
+## CNN在NLP中的应用
+
+虽然基本上，CV界是CNN的天下，NLP界是RNN的地盘。然而，两者的界限并不是泾渭分明的。比如下图就是一个CNN在NLP中的应用示例：
+
+![](/images/article/Convolutional_Sequence_to_Sequence_Learning.png)
+
+卷积本质上是一个局部运算。对词向量的卷积，实际上等效于n-gram的词袋模型。
+
+参见：
+
+http://www.jeyzhang.com/cnn-apply-on-modelling-sentence.html
+
+卷积神经网络(CNN)在句子建模上的应用
+
+http://blog.csdn.net/malefactor/article/details/51078135
+
+自然语言处理中CNN模型几种常见的Max Pooling操作
+
+http://www.jianshu.com/p/1267072ee8f8
+
+CNN在NLP中的应用
+
+## TWE
+
+http://nlp.csai.tsinghua.edu.cn/~lzy/publications/aaai2015_twe.pdf
+
+Topical Word Embeddings
+
+TWE的代码：
+
+https://github.com/largelymfs/topical_word_embeddings
+
+![](/images/article/sogou.jpg)
+
+上图可以看出英语的确是世界语言啊。
+
+## 无监督的机器翻译
+
+无监督的机器翻译，其要点主要在于比较两种语言语料的词向量空间，以找出词语间的对应关系。
+
+由word2vec的原理可知，由于训练时神经元是随机初始化的，因此即使是同样的语料，两次训练得到的词向量一般也不会相同，更不用说不同语料了。因此直接比较两个词向量空间中的词向量，是行不通的。
+
+参见：
+
+http://nlp.csai.tsinghua.edu.cn/~zm/
+
+张檬，清华本科（2013）+博士（在读）。
+
+# Image Caption Generation
+
+Image Caption Generation的目标是：给定一张图片，让计算机用一句话来描述这张图片。
 
 参考：
 
-https://www.chiphell.com/thread-1620755-1-1.html
+http://geek.csdn.net/news/detail/97193
 
-新Titan X的INT8计算到底是什么鬼
+李理：从Image Caption Generation理解深度学习（part I）
 
-https://mp.weixin.qq.com/s/S9VcoS_59nbZWe_P3ye2Tw
+http://geek.csdn.net/news/detail/98776
 
-减少模型半数内存用量：百度&英伟达提出混合精度训练法
+李理：从Image Caption Generation理解深度学习（part II）
 
-## NN硬件的指标术语
+https://zhuanlan.zhihu.com/p/30893160
 
-MACC：multiply-accumulate，乘法累加。
+CVPR2017 Image Caption有关论文总结
 
-FLOPS：Floating-point Operations Per Second，每秒所执行的浮点运算次数。
+# 行人重识别
 
-显然NN的INT8计算主要以MACC为单位。
+行人重识别（Person re-identification）也称行人再识别，是利用计算机视觉技术判断图像或者视频序列中是否存在特定行人的技术。广泛被认为是一个图像检索的子问题。给定一个监控行人图像，检索跨设备下的该行人图像。旨在弥补目前固定的摄像头的视觉局限，并可与行人检测/行人跟踪技术相结合 ，可广泛应用于智能视频监控、智能安保等领域。
 
-# LSTM进阶
+https://zhuanlan.zhihu.com/p/26168232
 
-## 《Long short-term memory》
+行人重识别：从哈利波特地图说起
 
-这是最早提出LSTM这个概念的论文。这篇论文偏重数学推导，实话说不太适合入门之用。但既然是起点，还是有列出来的必要。
+https://mp.weixin.qq.com/s/_NDw7pFmDB07mliHTA6VYQ
 
-## 《LSTM Neural Networks for Language Modeling》
+旷视行人再识别（ReID）突破
 
-这也是一篇重要的论文。
+https://zhuanlan.zhihu.com/p/31181247
 
-## 《Sequence to Sequence - Video to Text》
+从人脸识别到行人重识别，下一个风口
 
-https://vsubhashini.github.io/s2vt.html
+https://mp.weixin.qq.com/s/zRdJktyk1LZWUd2cyTjpiw
 
-![](/images/article/S2VTarchitecture.png)
+基于图像检索的行人重识别
 
-## 《Long-term Recurrent Convolutional Networks for Visual Recognition and Description》
+https://zhuanlan.zhihu.com/p/31473785
 
-Long-term Recurrent Convolutional Networks是LSTM的一种应用方式，它结合了LSTM、CNN、CRF等不同网络组件。
+行人再识别中的迁移学习：图像风格转换
 
-![](/images/article/LSTM_X.png)
+# 图像超分辨率算法
 
-上图展示了LSTM在动作识别、图片和视频描述等任务中的网络结构。
-
-![](/images/article/LSTM_X_2.png)
-
-上图展示了图片描述任务中几种不同的网络连接方式：
-
-1.单层LRCN。
-
-2.双层LRCN。CNN连接在第一个LSTM层。传统的LSTM只有一个输入，这里的CNN是第二个输入，也就是所谓的静态输入。可参看caffe的LSTM实现。
-
-2.双层LRCN。CNN连接在第二个LSTM层。
-
-![](/images/article/LSTM_X_3.png)
-
-![](/images/article/LSTM_X_4.png)
-
-![](/images/article/LSTM_X_5.png)
-
-这是视频描述任务中LSTM和CRF结合的示例。
-
-## 《Training RNNs as Fast as CNNs》
-
-这篇论文提出了如下图所示的Simple Recurrent Unit的新结构：
-
-![](/images/article/SRU.jpg)
-
-由于普通LSTM计算步骤中，很多当前时刻的计算都依赖$$h_{t-1}$$的值，导致整个网络的计算无法并行化。SRU针对这一点去掉了当前时刻计算对于$$h_{t-1}$$的依赖，而仅保留$$C_{t-1}$$（这个计算较为廉价）以记忆信息，大大改善了整个RNN网络计算的并行性。
+Super Resolution（SR）的目标是：给你一张低分辨率的小图（Low Resolution，LR），你通过算法将这张LR放大成一张高分辨率的大图（High Resolution，HR）。
 
 参考：
 
-https://mp.weixin.qq.com/s/4IHzOAvNhHG9c8GP0zXVkQ
+https://zhuanlan.zhihu.com/p/25532538
 
-Simple Recurrent Unit For Sentence Classification
+深度学习在图像超分辨率重建中的应用
+
+https://zhuanlan.zhihu.com/p/25201511
+
+深度对抗学习在图像分割和超分辨率中的应用
+
+https://mp.weixin.qq.com/s/uK0L5RV0bB2Jnr5WCZasfw
+
+深度学习在单图像超分辨率上的应用：SRCNN、Perceptual loss、SRResNet
+
+https://mp.weixin.qq.com/s/KxQ-GRnEYEdmS2H-DHIHOg
+
+南京理工大学ICCV 2017论文：图像超分辨率模型MemNet
+
+https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
+
+NTIRE2017夺冠论文：用于单一图像超分辨率的增强型深度残差网络
+
+https://www.zhihu.com/question/25401250
+
+如何通过多帧影像进行超分辨率重构？
+
+https://www.zhihu.com/question/38637977
+
+超分辨率重建还有什么可以研究的吗？
+
+https://zhuanlan.zhihu.com/p/25912465
+
+胎儿MRI高分辨率重建技术：现状与趋势
+
+https://mp.weixin.qq.com/s/i-im1sy6MNWP1Fmi5oWMZg
+
+华为推出新型HiSR：移动端的超分辨率算法
+
 

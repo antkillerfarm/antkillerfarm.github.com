@@ -288,23 +288,3 @@ http://blog.csdn.net/shuzfan/article/details/77964370
 
 不规则卷积神经网络
 
-# Winograd
-
-矩阵方面的数值计算，Shmuel Winograd是一个无法绕开的人物。
-
->Shmuel Winograd, 1936年生，MIT本硕（1959年）+纽约大学博士（1968年）。此后一直在IBM当研究员，直到退休。IEEE Fellow，ACM Fellow，美国科学院院士。
-
->不要和Terry Winograd搞混了。后者是Google的两位创始人Larry Page和Sergey Brin的导师。MIT博士+斯坦福教授。
-
-**Winograd FFT algorithm**：一种FFT算法。FFT算法有很多，最知名的是Cooley–Tukey FFT algorithm。
-
-**Coppersmith–Winograd algorithm（1987年）**：目前最快的矩阵乘法算法。复杂度是$$\mathcal{O}(n^{2.375477})$$。矩阵乘法定义的复杂度是$$\mathcal{O}(n^{3})$$。第一个小于3的算法是Strassen algorithm（1969年）（$$\mathcal{O}(n^{2.807355})$$）。
-
-**Winograd small(short/minimal) convolution algorithm**：一种快速的卷积算法，目前AI芯片领域的基础算法。
-
-论文：
-
-《The Coppersmith-Winograd Matrix Multiplication Algorithm》
-
-《Fast Algorithms for Convolutional Neural Networks》
-

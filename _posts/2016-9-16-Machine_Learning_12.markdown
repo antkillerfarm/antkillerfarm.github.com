@@ -83,6 +83,12 @@ http://www.cnblogs.com/daniel-D/p/3204508.html
 
 >作者：Sheldon Jay Axler，1949年生，美国数学家。普林斯顿大学本科，UCB博士，MIT博士后，San Francisco State University教授。美国的数学系基本就是本科和博士，很少有硕士。因为数学，尤其是理论数学，需要高度的抽象思维能力，半调子的硕士，既不好找工作，也不好搞科研。
 
+《Linear Algebra Done Wrong》，这是布朗大学的Sergei Treil教授的著作，不知道书名是否有恶搞前书的意味...
+
+该书电子版：
+
+https://www.math.brown.edu/~treil/papers/LADW/LADW.html
+
 ## 三角矩阵的求逆问题
 
 $$\begin{bmatrix}

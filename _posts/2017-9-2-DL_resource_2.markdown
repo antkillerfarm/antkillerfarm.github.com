@@ -262,6 +262,10 @@ https://mp.weixin.qq.com/s/gtgPYf939uYRzxAab_LZLQ
 
 谢源：计算存储一体化，在存储里做深度学习，架构创新实现下一代AI芯片
 
+https://mp.weixin.qq.com/s/s-fYxv4z5kkJUFueU2IR7w
+
+BP表达式与硬件架构：相似性构建更高效的计算单元
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293

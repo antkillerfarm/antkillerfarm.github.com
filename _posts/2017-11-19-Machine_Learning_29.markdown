@@ -24,6 +24,26 @@ category: ML
 
 我们可以通过一句调侃的话来解释：“地球变暖、地震、龙卷风，以及其他自然灾害，都和18世纪以来全球海盗数量的减少有直接关系”。这两个变量的变化有相关性，但是并不能说存在因果关系，因为往往存在第三类（甚至第4、5类）未被观察到的变量在起作用。相关关系应该看作是潜在的因果关系的一定程度的体现，但需要进一步研究。
 
+# MEMM
+
+Maximum Entropy Markov Model
+
+http://www.cnblogs.com/en-heng/p/6201893.html
+
+中文分词：最大熵马尔可夫模型MEMM
+
+http://www.cnblogs.com/549294286/archive/2013/06/06/3121761.html
+
+统计模型之间的比较，HMM，最大熵模型，CRF条件随机场
+
+http://blog.csdn.net/caohao2008/article/details/4242308
+
+HMM,MEMM,CRF模型的比较
+
+http://blog.csdn.net/zhoubl668/article/details/7787690
+
+标注偏置问题(Label Bias Problem)和HMM、MEMM、CRF模型比较
+
 # CRF
 
 条件随机场(Conditional Random Field)由Lafferty等人于2001年提出，结合了最大熵模型和隐马尔可夫模型的特点，是一种无向图模型，近年来在分词、词性标注和命名实体识别等序列标注任务中取得了很好的效果。
@@ -323,5 +343,21 @@ https://mp.weixin.qq.com/s/qXZMo_RitSenmI7x0xGNsg
 https://mp.weixin.qq.com/s/gljfrNwNvrK7teJ-DYyNIw
 
 如何用深度学习处理结构化数据？
+
+https://mp.weixin.qq.com/s/JwRXBNmXBaQM2GK6BDRqMw
+
+Kaggle网站流量预测任务第一名解决方案：从模型到代码详解时序预测
+
+https://mp.weixin.qq.com/s/H5bnFRSxmwHSdNBPdbsh3w
+
+Petuum新研究助力临床决策：使用深度学习预测出院用药
+
+https://mp.weixin.qq.com/s/AZyqxZf6CbZJoT3qOpHDCQ
+
+深度学习也可以取悦女友
+
+https://mp.weixin.qq.com/s/z-_CxTQup-g6cAvVDwS-kQ
+
+谷歌开源DeepVariant，之前的经典检测基因变异法将被颠覆
 
 
