@@ -402,5 +402,8 @@ https://mp.weixin.qq.com/s/95Zklj8ovheQV3Gnc-2h-Q
 
 小米大数据总监司马云瑞详解小米用户画像的演进及应用解读
 
+https://mp.weixin.qq.com/s/2Fu3s1Hy6ZW8Ex8yLPDnyQ
+
+提速100倍，秒杀传统A/B测试！Netflix推出交错测试个性化推荐算法
 
 

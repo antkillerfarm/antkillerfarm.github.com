@@ -136,6 +136,10 @@ http://www.cnblogs.com/quarryman/p/optical_flow.html
 
 图像分析之光流之经典
 
+https://zhuanlan.zhihu.com/p/31726032
+
+走进光流的世界
+
 ## Particle filter
 
 http://www.cvvision.cn/6002.html
