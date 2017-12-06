@@ -276,6 +276,14 @@ https://mp.weixin.qq.com/s/lGIkLcglQGvDzdBQmZW0Qw
 
 判别特征学习方法用于人脸识别
 
+https://mp.weixin.qq.com/s/t-vFSkQ7SYlTGGxEEY1mSg
+
+近期人脸对齐的实证性研究
+
+https://mp.weixin.qq.com/s/zhIyZ9MEFXAuIVUxAGkW-w
+
+人脸对齐之GBDT(ERT)算法解读
+
 # 手势识别
 
 https://zhuanlan.zhihu.com/p/26630215

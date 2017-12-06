@@ -360,4 +360,8 @@ https://mp.weixin.qq.com/s/z-_CxTQup-g6cAvVDwS-kQ
 
 谷歌开源DeepVariant，之前的经典检测基因变异法将被颠覆
 
+https://mp.weixin.qq.com/s/k61NHqe-mwN-27jHdNVlWw
+
+几何深度学习（Geometric Deep Learning）讲解
+
 

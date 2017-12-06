@@ -4,6 +4,70 @@ title:  深度学习（十一）——Winograd（1）
 category: DL 
 ---
 
+# 花式卷积（续）
+
+## 参考
+
+https://github.com/vdumoulin/conv_arithmetic
+
+Convolution arithmetic
+
+http://deeplearning.net/software/theano_versions/dev/tutorial/conv_arithmetic.html
+
+Convolution arithmetic
+
+https://mp.weixin.qq.com/s/dR2nhGqpz7OdmxKPYSaaxw
+
+如何理解空洞卷积（dilated convolution）？
+
+https://mp.weixin.qq.com/s/CLFbhWMcat4rN8YS_7q25g
+
+这12张图生动的告诉你，深度学习中的卷积网络是怎么一回事？
+
+https://mp.weixin.qq.com/s/kJEeKzC9pC375EjIJpTuzg
+
+一文全解深度学习中的卷积
+
+http://mp.weixin.qq.com/s/dvuX3Ih_DZrv0kgqFn8-lg
+
+卷积神经网络结构变化——可变形卷积网络deformable convolutional networks
+
+http://cs.nyu.edu/~fergus/drafts/utexas2.pdf
+
+Deconvolutional Networks
+
+https://zhuanlan.zhihu.com/p/22245268
+
+CNN-反卷积
+
+http://buptldy.github.io/2016/10/29/2016-10-29-deconv/
+
+Transposed Convolution, Fractionally Strided Convolution or Deconvolution（中文blog）
+
+https://buptldy.github.io/2016/10/01/2016-10-01-im2col/
+
+Implementing convolution as a matrix multiplication（中文blog）
+
+https://mp.weixin.qq.com/s/iN2LDAQ2ee-rQnlD3N1yaw
+
+变形卷积核、可分离卷积？CNN中十大拍案叫绝的操作！
+
+http://www.msra.cn/zh-cn/news/features/deformable-convolutional-networks-20170609
+
+可变形卷积网络：计算机新“视”界
+
+https://mp.weixin.qq.com/s/ybI8kJPRn7sH-hJbc5uqnw
+
+CMU研究者探索新卷积方法：在实验中可媲美基准CNN
+
+https://mp.weixin.qq.com/s/qReN6z8s45870HSMCMNatw
+
+微软亚洲研究院：逐层集中Attention的卷积模型
+
+http://blog.csdn.net/shuzfan/article/details/77964370
+
+不规则卷积神经网络
+
 # Winograd
 
 矩阵方面的数值计算，Shmuel Winograd是一个无法绕开的人物。
@@ -250,43 +314,4 @@ $$x \equiv a \pmod{m}$$
 
 上式表示x除以m的余数和a除以m的余数相等，这样的关系被称为“x和a同余（模为m）”
 
-Euclidean algorithm的步骤如下图所示：
-
-![](/images/article/Euclidean_algorithm.png)
-
-1.假设$$a>b$$，则令$$c:=a \mod{b}$$。
-
-2.如果$$c=0$$，则$$GCD(a,b)=b$$。
-
-3.否则令$$a:=b,b:=c$$，并返回到第1步。
-
-这个算法应该是Euclid记述的前人成果，因为更早的Eudoxus of Cnidus曾提到过这个算法。
-
->Eudoxus of Cnidus，公元前390年～公元前337年，古希腊几何学家、天文学家和地理学家。柏拉图同时代最杰出的数学家。《几何原本》卷Ⅴ和卷Ⅻ主要来自欧多克索斯的工作。
-
-然而，小学课本不使用Euclidean algorithm是有原因的，除了Euclidean algorithm本身相对复杂之外，短除法能同时搞定最大公约数和最小公倍数（Least common multiple），这也是它的教学优势所在。
-
-Euclidean algorithm作为最古老的算法之一，被收录进Knuth的巨著TAOCP。这里的算法，指的是那些根据一定的规则来一步步执行的运算。
-
-## Bézout's identity和Extended Euclidean algorithm
-
-Euclidean division还可以表示为如下形式：
-
-如果$$a'=a \mod(b)$$，则$$a=\lfloor\frac{a}{b}\rfloor b+a'$$。
-
-这里的$$\lfloor x \rfloor$$是向下取整的意思。
-
-我们可以把上述定义扩展到负数。例如：
-
-$$-103=-2\times 60+17 \Rightarrow (-103) \mod{60}=17$$
-
->注意：余数永远$$\ge 0$$。
-
-还可以把GCD的定义扩展为：$$GCD(a,0)=a$$，即任何整数都能整除0。
-
-Euclidean division的定义扩展之后，则有Bézout's identity。
-
-**Bézout's identity**：若a,b是非0整数，$$d=GCD(a,b)$$，则存在整数x,y使得$$ax+by=d$$。证明略。
-
->Étienne Bézout，1730~1783，法国数学家。法国科学院院士。
 

@@ -144,6 +144,10 @@ https://mp.weixin.qq.com/s/d46qNFaftt4wxpV4sZnG-w
 
 一张图看懂AlphaGo Zero
 
+https://zhuanlan.zhihu.com/p/31749249
+
+比AlphaGo Zero更强的AlphaZero问世，8小时解决一切棋类！
+
 ## 实战
 
 https://github.com/jinfagang/pytorch_name_net
@@ -297,6 +301,10 @@ https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q
 https://mp.weixin.qq.com/s/QjhokXDXuglJajULKigt1g
 
 PyTorch手把手深度学习教程系列完整版
+
+https://mp.weixin.qq.com/s/MK_al7CgieiVXB1MGWZ9GA
+
+听说你用JavaScript写代码？本文是你的机器学习指南
 
 ## Other
 

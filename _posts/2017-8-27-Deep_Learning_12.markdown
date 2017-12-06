@@ -6,7 +6,47 @@ category: DL
 
 # Winograd
 
-## Bézout's identity和Extended Euclidean algorithm（续）
+## 最大公约数和Euclidean algorithm（续）
+
+Euclidean algorithm的步骤如下图所示：
+
+![](/images/article/Euclidean_algorithm.png)
+
+1.假设$$a>b$$，则令$$c:=a \mod{b}$$。
+
+2.如果$$c=0$$，则$$GCD(a,b)=b$$。
+
+3.否则令$$a:=b,b:=c$$，并返回到第1步。
+
+这个算法应该是Euclid记述的前人成果，因为更早的Eudoxus of Cnidus曾提到过这个算法。
+
+>Eudoxus of Cnidus，公元前390年～公元前337年，古希腊几何学家、天文学家和地理学家。柏拉图同时代最杰出的数学家。《几何原本》卷Ⅴ和卷Ⅻ主要来自欧多克索斯的工作。
+
+然而，小学课本不使用Euclidean algorithm是有原因的，除了Euclidean algorithm本身相对复杂之外，短除法能同时搞定最大公约数和最小公倍数（Least common multiple），这也是它的教学优势所在。
+
+Euclidean algorithm作为最古老的算法之一，被收录进Knuth的巨著TAOCP。这里的算法，指的是那些根据一定的规则来一步步执行的运算。
+
+## Bézout's identity和Extended Euclidean algorithm
+
+Euclidean division还可以表示为如下形式：
+
+如果$$a'=a \mod(b)$$，则$$a=\lfloor\frac{a}{b}\rfloor b+a'$$。
+
+这里的$$\lfloor x \rfloor$$是向下取整的意思。
+
+我们可以把上述定义扩展到负数。例如：
+
+$$-103=-2\times 60+17 \Rightarrow (-103) \mod{60}=17$$
+
+>注意：余数永远$$\ge 0$$。
+
+还可以把GCD的定义扩展为：$$GCD(a,0)=a$$，即任何整数都能整除0。
+
+Euclidean division的定义扩展之后，则有Bézout's identity。
+
+**Bézout's identity**：若a,b是非0整数，$$d=GCD(a,b)$$，则存在整数x,y使得$$ax+by=d$$。证明略。
+
+>Étienne Bézout，1730~1783，法国数学家。法国科学院院士。
 
 至于如何求解x,y，这就要用到**Extended Euclidean algorithm**了。
 
@@ -136,7 +176,7 @@ $$c=\left(\sum_{i=0}^kc_iN_iM_i\right)\mod{M}$$
 
 稍加扩展，可得到多项式版本的CRT：
 
-$$c(p)=\left(\sum_{i=0}^kc^{(i)}(p)N^{(i)}(p)M^{(i)}(p)\right)\mod{M(p)}$$
+$$c(p)=\left(\sum_{i=0}^kc^{(i)}(p)N^{(i)}(p)M^{(i)}(p)\right)\mod{M(p)}\tag{3}$$
 
 其中$$m^{(i)}(p)$$两两互质，$$c^{(i)}(p)=R_{m^{(i)}}[c(p)],M(p)=\prod_{i=0}^km^{(i)}(p),M^{(i)}(p)=M(p)/m^{(i)}(p)$$，$$N^{(i)}(p)$$是方程$$N^{(i)}(p) M^{(i)}(p) + n^{(i)}(p) m^{(i)}(p) = GCD ( M^{(i)}(p) , m^{(i)}(p)) = 1$$的解。
 
@@ -152,19 +192,58 @@ $$h(p)=h_0+h_1p,x(p)=x_0+x_1p+x_2p^2,s(p)=h(p)x(p)$$
 
 例如，上面的$$h(p)$$的degree为1，而$$x(p)$$的degree为2，而$$s(p)$$的degree为3。
 
-和Cook-Toom algorithm一样，Winograd algorithm也是一个构造式的算法。我们首先要构造一个degree大于等于3的多项式：
+和Cook-Toom algorithm一样，Winograd algorithm也是一个构造式的算法。
+
+**Step 1**：首先要构造一个degree大于等于3的多项式：
 
 $$m(p)=m^{(0)}(p)m^{(0)}(p)\cdots m^{(k)}(p)$$
 
 其中的$$m^{(i)}(p)$$两两互质。
 
-这里为了简单起见，不妨令$$m(p)=p(p-1)(p+1)$$，构建如下计算表格：
+这里为了简单起见，不妨令$$m(p)=p(p-1)(p+1)$$，并使用Extended Euclidean algorithm构建如下计算表格：
 
 | i | $$m^{(i)}(p)$$ | $$M^{(i)}(p)$$ | $$n^{(i)}(p)$$ | $$N^{(i)}(p)$$ |
 |:--:|:--:|:--:|:--:|:--:|
-| 0 | $$p$$ | $$p$$ | $$p$$ | $$p$$ |
-| 1 | $$p$$ | $$p$$ | $$p$$ | $$p$$ |
-| 2 | $$p$$ | $$p$$ | $$p$$ | $$p$$ |
+| 0 | $$p$$ | $$p^2-1$$ | $$p$$ | $$-1$$ |
+| 1 | $$p-1$$ | $$p^2+p$$ | $$-\frac{1}{2}(p+2)$$ | $$\frac{1}{2}$$ |
+| 2 | $$p+1$$ | $$p^2-p$$ | $$-\frac{1}{2}(p-2)$$ | $$\frac{1}{2}$$ |
+
+**Step 2**：使用如下公式计算$$h^{(i)}(p),x^{(i)}(p)$$：
+
+$$h^{(i)}(p)=h(p)\mod{m^{(i)}(p)}$$
+
+$$x^{(i)}(p)=x(p)\mod{m^{(i)}(p)}$$
+
+计算过程如下：
+
+$$h^{(0)}(p)=h_0,x^{(0)}(p)=x_0$$
+
+$$h^{(1)}(p)=h_0+h_1,x^{(1)}(p)=x_0+x_1+x_2$$
+
+$$h^{(2)}(p)=h_0-h_1,x^{(2)}(p)=x_0-x_1+x_2$$
+
+**Step 3**：使用如下公式计算$$s'^{(i)}(p)$$：
+
+$$s'^{(i)}(p)=h^{(i)}(p)x^{(i)}(p)\mod{m^{(i)}(p)}$$
+
+计算过程如下：
+
+$$s'^{(0)}(p)=h_0x_0$$
+
+$$s'^{(1)}(p)=(h_0+h_1)(x_0+x_1+x_2)$$
+
+$$s'^{(2)}(p)=(h_0-h_1)(x_0-x_1+x_2)$$
+
+**Step 4**：根据公式3计算余数$$s'(p)$$，并利用如下公式计算被除数$$s(p)$$：
+
+$$s(p)=s'(p)+h_{N-1}x_{L-1}m(p)$$
+
+计算过程如下：
+
+$$\begin{align}
+s(p)&=s'(p)+h_1x_2m(p) \\
+&=
+\end{align}$$
 
 总的来说，Winograd algorithm是一个很复杂的算法，但是结论却很简单。因此，在具体的IC实现中，一般只针对特定常用尺寸的kernel，应用相应的结论即可。
 

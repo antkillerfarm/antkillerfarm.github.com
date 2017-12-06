@@ -248,6 +248,10 @@ https://zhuanlan.zhihu.com/p/31579144
 
 让我们从零开始做一个机械手臂(强化学习)
 
+https://mp.weixin.qq.com/s/FiR_GRYqJYpJRO-2p44-Cg
+
+伯克利强化学习新研究：机器人只用几分钟随机数据就能学会轨迹跟踪
+
 # NN的INT8计算
 
 ## 概述

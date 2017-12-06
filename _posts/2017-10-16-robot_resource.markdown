@@ -224,6 +224,10 @@ https://mp.weixin.qq.com/s/DhA9V5IlNAaa4qpWHVQCPA
 
 一个机器学者的故事：机器人工程师学习计划
 
+https://mp.weixin.qq.com/s/QkWCcr86yX_M-T_rT_fwBQ
+
+电影中不可舍弃的数学体系。本文介绍了四元数等空间变换的数学概念
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/7N6eDoEV8oEwUpP-zK1RpQ
@@ -405,5 +409,9 @@ https://mp.weixin.qq.com/s/95Zklj8ovheQV3Gnc-2h-Q
 https://mp.weixin.qq.com/s/2Fu3s1Hy6ZW8Ex8yLPDnyQ
 
 提速100倍，秒杀传统A/B测试！Netflix推出交错测试个性化推荐算法
+
+https://mp.weixin.qq.com/s/KU6T1ZPQS3JcILA2TUB53Q
+
+大图数据科学：图数据中的推理
 
 

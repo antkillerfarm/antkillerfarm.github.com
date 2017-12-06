@@ -252,6 +252,10 @@ http://www.cnblogs.com/geniusalex/archive/2008/12/26/1941766.html
 
 CPU GPU设计工作原理
 
+http://www.jianshu.com/p/8687a040eb48
+
+GPU处理图像Shader的入门
+
 # 知识图谱参考资源
 
 https://wenku.baidu.com/view/38ad3ef7e109581b6bd97f19227916888586b959.html

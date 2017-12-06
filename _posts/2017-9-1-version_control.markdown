@@ -292,5 +292,8 @@ https://mp.weixin.qq.com/s/RlarTDziwkGGM_CUa40XAw
 
 机器之心线上分享：用于序列生成的推敲网络
 
+https://mp.weixin.qq.com/s/-qk__SLahfssHuYsGNhKSA
+
+阿里巴巴首次近万字公布人工智能对话交互技术
 
 

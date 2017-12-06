@@ -466,3 +466,8 @@ https://mp.weixin.qq.com/s/jTXoCaXEhPPVNcJiyjtN5Q
 
 谷歌宣布对外开放聊天机器人数据分析平台Chatbase
 
+https://mp.weixin.qq.com/s/MhLissrrNw5fJP6I7cxFNA
+
+360推出XLearning：可支持多种机器学习，深度学习框架调度系统！
+
+

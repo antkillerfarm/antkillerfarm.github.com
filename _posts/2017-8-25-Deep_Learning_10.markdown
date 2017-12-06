@@ -6,7 +6,23 @@ category: DL
 
 # 李飞飞
 
-## 大佬的门徒（续）
+## AI大佬
+
+李飞飞是吴恩达之后的华裔AI新大佬。巧合的是，他们都是斯坦福AP+AI lab的主任，只不过吴是李的前任而已。
+
+**李飞飞（Fei-Fei Li）**，1976年生，成都人，16岁移民美国。普林斯顿大学本科（1995～1999）+加州理工学院博士（2001～2005）。先后执教于UIUC、普林斯顿、斯坦福等学校。
+
+个人主页：
+
+http://vision.stanford.edu/feifeili/
+
+## 大佬的门徒
+
+比如可爱的妹子**Serena Yeung**。这个妹子是斯坦福的本硕博。出身不详，但从姓名的英文拼法来看，应该是美国土生的华裔。Yeung是杨、阳、羊等姓的传统英文拼法，但显然不是大陆推行的拼音拼法。（可以对比的是Fei-Fei Li和Bruce Lee，对于同一个姓的不同拼法。）
+
+个人主页：
+
+http://ai.stanford.edu/~syyeung/
 
 还有当红的“辣子鸡”：**Andrej Karpathy**，多伦多大学本科（2009）+英属不列颠哥伦比亚大学硕士（2011）+斯坦福博士（2015）。现任特斯拉AI总监。
 
@@ -226,65 +242,7 @@ https://mp.weixin.qq.com/s/mcK8M6pnHiZZRAkYVdaYGQ
 
 MobileNet在手机端上的速度评测：iPhone 8 Plus竟不如iPhone 7 Plus
 
-## 参考
+https://mp.weixin.qq.com/s/2XqBeq3N4mvu05S1Jo2UwA
 
-https://github.com/vdumoulin/conv_arithmetic
-
-Convolution arithmetic
-
-http://deeplearning.net/software/theano_versions/dev/tutorial/conv_arithmetic.html
-
-Convolution arithmetic
-
-https://mp.weixin.qq.com/s/dR2nhGqpz7OdmxKPYSaaxw
-
-如何理解空洞卷积（dilated convolution）？
-
-https://mp.weixin.qq.com/s/CLFbhWMcat4rN8YS_7q25g
-
-这12张图生动的告诉你，深度学习中的卷积网络是怎么一回事？
-
-https://mp.weixin.qq.com/s/kJEeKzC9pC375EjIJpTuzg
-
-一文全解深度学习中的卷积
-
-http://mp.weixin.qq.com/s/dvuX3Ih_DZrv0kgqFn8-lg
-
-卷积神经网络结构变化——可变形卷积网络deformable convolutional networks
-
-http://cs.nyu.edu/~fergus/drafts/utexas2.pdf
-
-Deconvolutional Networks
-
-https://zhuanlan.zhihu.com/p/22245268
-
-CNN-反卷积
-
-http://buptldy.github.io/2016/10/29/2016-10-29-deconv/
-
-Transposed Convolution, Fractionally Strided Convolution or Deconvolution（中文blog）
-
-https://buptldy.github.io/2016/10/01/2016-10-01-im2col/
-
-Implementing convolution as a matrix multiplication（中文blog）
-
-https://mp.weixin.qq.com/s/iN2LDAQ2ee-rQnlD3N1yaw
-
-变形卷积核、可分离卷积？CNN中十大拍案叫绝的操作！
-
-http://www.msra.cn/zh-cn/news/features/deformable-convolutional-networks-20170609
-
-可变形卷积网络：计算机新“视”界
-
-https://mp.weixin.qq.com/s/ybI8kJPRn7sH-hJbc5uqnw
-
-CMU研究者探索新卷积方法：在实验中可媲美基准CNN
-
-https://mp.weixin.qq.com/s/qReN6z8s45870HSMCMNatw
-
-微软亚洲研究院：逐层集中Attention的卷积模型
-
-http://blog.csdn.net/shuzfan/article/details/77964370
-
-不规则卷积神经网络
+CNN模型之MobileNet
 
