@@ -32,6 +32,10 @@ http://www.cnblogs.com/kemaswill/
 
 一个ML的blog
 
+https://mp.weixin.qq.com/s/8LwlA6sR9K5Hti1lJh9M2Q
+
+13种编程语言对应的机器学习资源大全！
+
 ## 文章
 
 http://www.open-open.com/lib/view/open1420687784625.html

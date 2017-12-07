@@ -302,6 +302,10 @@ https://mp.weixin.qq.com/s/_PlISSOaowgvVW5msa7GlQ
 
 条件GAN高分辨率图像合成与语义编辑pix2pixHD
 
+https://mp.weixin.qq.com/s/PoSA6JXYE_OexEoJYzaX4A
+
+利用条件GANs的pix2pix进化版：高分辨率图像合成和语义操作
+
 https://mp.weixin.qq.com/s/RAlQVWMBYeddG2Mvu2bF4w
 
 生成对抗网络（GANs）最新家谱：为你揭秘GANs的前世今生

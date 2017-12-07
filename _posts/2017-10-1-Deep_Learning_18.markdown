@@ -124,6 +124,10 @@ https://mp.weixin.qq.com/s/V4_euZRcyyxeimXAA_waAg
 
 贾佳亚：最有效的COCO物体分割算法
 
+https://mp.weixin.qq.com/s/Amr34SdrPZho1GQpFS7WBA
+
+见微知著：语义分割中的弱监督学习
+
 # 前DL时代的语义分割
 
 从最简单的像素级别“阈值法”（Thresholding methods）、基于像素聚类的分割方法（Clustering-based segmentation methods）到“图划分”的分割方法（Graph partitioning segmentation methods），在DL“一统江湖”之前，图像语义分割方面的工作可谓“百花齐放”。在此，我们仅以“Normalized cut”和“Grab cut”这两个基于图划分的经典分割方法为例，介绍一下前DL时代语义分割方面的研究。

@@ -266,6 +266,14 @@ https://mp.weixin.qq.com/s/s-fYxv4z5kkJUFueU2IR7w
 
 BP表达式与硬件架构：相似性构建更高效的计算单元
 
+https://zhuanlan.zhihu.com/p/26522315
+
+脉动阵列-因Google TPU获得新生
+
+https://zhuanlan.zhihu.com/p/31782874
+
+Graphcore AI芯片：更多分析
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293
@@ -401,6 +409,10 @@ https://mp.weixin.qq.com/s/f0TqhSW-KVwVTv54gtHyGw
 https://mp.weixin.qq.com/s/0uqS5CXVVxjX2c3P-gdSng
 
 欲取代CNN的Capsule Network究竟是什么来头？
+
+https://mp.weixin.qq.com/s/k3WV7qN37r-r3VBJsrjB1A
+
+漫谈Capsule Network基本原理
 
 ## 面试
 

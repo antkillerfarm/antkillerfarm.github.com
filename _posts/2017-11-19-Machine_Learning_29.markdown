@@ -228,6 +228,10 @@ https://mp.weixin.qq.com/s/J0pBoNpzj-GYjI-9qefkRg
 
 7步掌握基于Keras的深度学习
 
+https://mp.weixin.qq.com/s/HKOmDltonNpp8DftH7Goww
+
+基于Keras的知识图谱处理实战
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。
@@ -363,5 +367,29 @@ https://mp.weixin.qq.com/s/z-_CxTQup-g6cAvVDwS-kQ
 https://mp.weixin.qq.com/s/k61NHqe-mwN-27jHdNVlWw
 
 几何深度学习（Geometric Deep Learning）讲解
+
+https://mp.weixin.qq.com/s/EA5FgDeFI_w-kSfMpf5Yxw
+
+神经网络视觉分类算法的意外弱点
+
+https://mp.weixin.qq.com/s/CXKuSMi0Vd43BGDf5BgoqA
+
+弱监督视频物体识别新方法：香港科技大学联合CMU提出TD-Graph LSTM
+
+https://mp.weixin.qq.com/s/7NpJJn4k5oGPOB04S9Jyqw
+
+DeepMind新论文，关联推理为什么是智能最重要的特征
+
+https://mp.weixin.qq.com/s/V6JQuACFbDWBl-iYkDnRig
+
+自动修复Bug正确率达78.3%，北大、微软等提出ACS技术
+
+https://mp.weixin.qq.com/s/_5tyt7pU0gIXbkmTOVEtDw
+
+嫌图片太大？！卷积神经网络轻松实现无损压缩到20%！
+
+https://mp.weixin.qq.com/s/QSo4wtXg8k0Uwks7_VBycw
+
+我从吴恩达深度学习课程中学到的21个心得：加拿大银行首席分析师“学霸”笔记分享
 
 

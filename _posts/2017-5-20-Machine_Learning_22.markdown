@@ -48,6 +48,8 @@ https://mp.weixin.qq.com/s/QIR_l8OqvCQzXXXVY2WA1w
 
 ![](/images/article/ML.png)
 
+![](/images/article/AutoML.jpg)
+
 ## 超参数
 
 所谓hyper-parameters，就是机器学习模型里面的框架参数，比如聚类方法里面类的个数，或者话题模型里面话题的个数等等，都称为超参数。它们跟训练过程中学习的参数（权重）是不一样的，通常是手工设定，不断试错调整，或者对一系列穷举出来的参数组合一通枚举（叫做网格搜索）。
@@ -101,6 +103,10 @@ https://mp.weixin.qq.com/s/-n-5Cp_hgkvdmsHGWEIpWw
 https://mp.weixin.qq.com/s/Nbwii7Di_h5Ewy5p5xzBdQ
 
 解决机器学习问题有通法
+
+http://automl.info/
+
+某牛的blog
 
 # KNN
 
@@ -274,11 +280,19 @@ http://www.cnblogs.com/kemaswill/p/3352898.html
 
 优化算法-BFGS
 
+http://blog.csdn.net/acdreamers/article/details/44728041
+
+L-BFGS算法
+
 ## 参考
 
 http://sebastianruder.com/optimizing-gradient-descent/
 
 An overview of gradient descent optimization algorithms
+
+https://mp.weixin.qq.com/s/k_d02G2V4yd6HdGfw2mf1Q
+
+从修正Adam到理解泛化：概览2017年深度学习优化算法的最新研究进展
 
 https://mp.weixin.qq.com/s/cOCCapYrmrS_DyPkj_XRlg
 

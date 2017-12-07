@@ -350,6 +350,10 @@ Reinforcement Learning and Control
 
 Linear Discriminant Analysis
 
+https://mp.weixin.qq.com/s/7Vy7l1YyBT7rMYW2i1AsuA
+
+线性判别分析(LDA)原理详解
+
 Partial Least Squares Discriminant Analysis
 
 http://blog.codinglabs.org/articles/algorithms-for-cardinality-estimation-part-i.html
@@ -385,6 +389,5 @@ http://www.cnblogs.com/6DAN_HUST/archive/2010/11/11/1874681.html
 https://mp.weixin.qq.com/s/E_EzwLr4JOzR1pk3MOeU_w
 
 复动力系统简介
-
 
 

@@ -414,4 +414,7 @@ https://mp.weixin.qq.com/s/KU6T1ZPQS3JcILA2TUB53Q
 
 大图数据科学：图数据中的推理
 
+https://mp.weixin.qq.com/s/qJwCsT_DQg7oUERRaWczIQ
+
+产品中的机器学习：从已受训模型到预测服务器
 

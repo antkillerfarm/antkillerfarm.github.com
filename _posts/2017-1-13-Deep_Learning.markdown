@@ -211,6 +211,10 @@ https://mp.weixin.qq.com/s/xqWli1xnsGkqYDUjgvOnkQ
 
 反向传播神经网络极简入门
 
+https://mp.weixin.qq.com/s/PhxkfWH5bEbykMKGEtDScA
+
+为什么神经网络参数不能够全部初始化为全0？
+
 # BP算法的缺点
 
 虽然传统的BP算法，理论上可以支持任意深度的神经网络。然而实际使用中，却很少能支持3层以上的神经网络。

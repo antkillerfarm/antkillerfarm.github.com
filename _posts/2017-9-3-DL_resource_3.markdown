@@ -148,6 +148,14 @@ https://zhuanlan.zhihu.com/p/31749249
 
 比AlphaGo Zero更强的AlphaZero问世，8小时解决一切棋类！
 
+https://mp.weixin.qq.com/s/L7bZMkqyncwEt6D5tK1OdQ
+
+AlphaZero炼成最强通用棋类AI，DeepMind强化学习算法8小时完爆人类棋类游戏
+
+https://mp.weixin.qq.com/s/tFdnxqV5a5xZrFtB6E0AiQ
+
+新AlphaZero出世称霸棋界，8小时搞定一切棋类！自对弈通用强化学习无师自通！
+
 ## 实战
 
 https://github.com/jinfagang/pytorch_name_net
@@ -423,24 +431,4 @@ https://mp.weixin.qq.com/s/HD370E4cCYvy_pdEKAvLIA
 https://mp.weixin.qq.com/s/AS1VFjBFnSk19QJ28tBVWA
 
 NIPS 2017斯坦福赛题大公开：强化学习模拟人类肌肉骨骼模型
-
-https://mp.weixin.qq.com/s/EA5FgDeFI_w-kSfMpf5Yxw
-
-神经网络视觉分类算法的意外弱点
-
-https://mp.weixin.qq.com/s/CXKuSMi0Vd43BGDf5BgoqA
-
-弱监督视频物体识别新方法：香港科技大学联合CMU提出TD-Graph LSTM
-
-https://mp.weixin.qq.com/s/7NpJJn4k5oGPOB04S9Jyqw
-
-DeepMind新论文，关联推理为什么是智能最重要的特征
-
-https://mp.weixin.qq.com/s/V6JQuACFbDWBl-iYkDnRig
-
-自动修复Bug正确率达78.3%，北大、微软等提出ACS技术
-
-https://mp.weixin.qq.com/s/_5tyt7pU0gIXbkmTOVEtDw
-
-嫌图片太大？！卷积神经网络轻松实现无损压缩到20%！
 

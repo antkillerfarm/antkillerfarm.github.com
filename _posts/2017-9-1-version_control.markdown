@@ -296,4 +296,9 @@ https://mp.weixin.qq.com/s/-qk__SLahfssHuYsGNhKSA
 
 阿里巴巴首次近万字公布人工智能对话交互技术
 
+https://mp.weixin.qq.com/s/eaxyhk93PbEFzHk-qiniOQ
+
+ReQuest: 使用问答数据产生实体关系抽取的间接监督
+
+
 

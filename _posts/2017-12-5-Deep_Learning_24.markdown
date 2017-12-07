@@ -66,6 +66,10 @@ https://mp.weixin.qq.com/s/l-l1xbUaPNKc-w5XndjCbQ
 
 通过网络结构迁移学习提高图像识别任务的拓展性
 
+https://mp.weixin.qq.com/s/-KssC3yXsG3ZuV8-I6D_nQ
+
+学习迁移架构用于Scalable图像的识别
+
 # 语音识别
 
 ## CTC
