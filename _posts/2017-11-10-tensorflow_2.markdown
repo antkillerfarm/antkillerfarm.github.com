@@ -411,4 +411,9 @@ http://brucedone.com/archives/1005
 
 Tensorflow破解验证码
 
+https://mp.weixin.qq.com/s/CjlEY_m6tp-NJ3B2MiAZRg
+
+基于TensorFlow的深度模型训练GPU显存优化
+
+
 

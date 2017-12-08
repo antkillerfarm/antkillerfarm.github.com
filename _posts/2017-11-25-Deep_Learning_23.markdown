@@ -252,6 +252,14 @@ https://mp.weixin.qq.com/s/FiR_GRYqJYpJRO-2p44-Cg
 
 伯克利强化学习新研究：机器人只用几分钟随机数据就能学会轨迹跟踪
 
+https://mp.weixin.qq.com/s/u49cuDV21ITs1aV9tJR85g
+
+Pieter Abbeel：《深度学习在机器人中的应用》
+
+https://mp.weixin.qq.com/s/_dHjZQ_7_7H34PHhV_lC3w
+
+全新强化学习算法详解，看贝叶斯神经网络如何进行策略搜索
+
 # NN的INT8计算
 
 ## 概述

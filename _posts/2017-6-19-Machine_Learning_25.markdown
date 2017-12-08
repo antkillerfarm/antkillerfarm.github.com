@@ -229,37 +229,3 @@ $$Q(s,a)=R(s,a)+\gamma \max(Q(\tilde s,\tilde a))\tag{1}$$
 
 在无监督的情况下，agent不断从一个状态转至另一状态进行探索，直到到达目标。我们将agent的每一次探索（从任意初始状态到目标状态的过程）称为一个**episode**。
 
-Q-Learning算法的计算步骤如下：
-
->**Step 1**：给定参数$$\gamma$$和reward矩阵R。   
->**Step 2**：初始化Q=0。   
->**Step 3**：For each episode:
->>3.1 随机选择一个初始状态s。   
->>3.2 若未达到目标状态，则：
->>>(1)在当前s的所有action中，随机选择一个行为a。   
->>>(2)利用a，得到下一个状态$$\tilde s$$。   
->>>(3)利用公式1，计算$$Q(s,a)$$。   
->>>(4)令$$s=\tilde s$$。
-
-由马尔可夫过程的性质（参见《机器学习（十六、二十）》）可知，Q矩阵最终会趋于一个极限，如下所示：
-
-![](/images/article/q_matrix5.gif)
-
-上面的矩阵可用下图表示：
-
-![](/images/article/map5.gif)
-
-显然，沿着Q值最大的边走，就是这个探索问题的最佳答案。（如上图红线所示）即：
-
-$$\pi (s)=\arg \max_a(Q(s,a))$$
-
-参考：
-
-http://blog.csdn.net/itplus/article/details/9361915
-
-一个Q-learning算法的简明教程
-
-http://blog.csdn.net/young_gy/article/details/73485518
-
-强化学习之Q-learning简介
-

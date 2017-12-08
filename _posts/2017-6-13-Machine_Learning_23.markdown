@@ -279,6 +279,14 @@ http://blog.csdn.net/kicilove/article/details/78315335
 
 时间序列初级理论篇
 
+https://mp.weixin.qq.com/s/K-XGuaWTcF6BDPJagaJDPQ
+
+时序数据与事件的关联分析
+
+https://mp.weixin.qq.com/s/JR-GIXwHF45OysoE0qvwzw
+
+时间序列异常检测机制的研究
+
 # 推荐算法中的常用排序算法
 
 ## Pointwise方法

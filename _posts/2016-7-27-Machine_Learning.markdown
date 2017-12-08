@@ -30,6 +30,8 @@ http://cs229.stanford.edu/syllabus.html
 
 用吴恩达自己的话来说，他还拿着斯坦福教职，很大程度就是想教这门课。因此，该课程内容每年都有小幅更新。
 
+![](/images/article/ML.jpg)
+
 # 线性回归
 
 线性回归属于有监督学习（supervised learning）的其中一种方法。

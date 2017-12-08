@@ -159,6 +159,10 @@ https://my.oschina.net/taogang/blog/983586
 
 ElasticSearch对比Splunk
 
+https://mp.weixin.qq.com/s/jZ_jM6yUPK8Ev7FSwdgTIA
+
+360私有云平台Elasticsearch服务初探
+
 # WebService
 
 WebService经过近二十年的发展，已经有非常多的框架了。知名的有：Axis1、Axis2、Xfire、CXF、JWS等。

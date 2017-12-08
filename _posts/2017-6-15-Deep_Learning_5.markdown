@@ -130,6 +130,10 @@ https://zhuanlan.zhihu.com/p/27104240
 
 CW-RNN收益率时间序列回归
 
+https://mp.weixin.qq.com/s/OltT-GFDVxaiukb1HVSY3w
+
+通俗讲解循环神经网络的两种应用
+
 # LSTM
 
 本篇笔记主要摘自：

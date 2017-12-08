@@ -70,6 +70,10 @@ https://mp.weixin.qq.com/s/-KssC3yXsG3ZuV8-I6D_nQ
 
 学习迁移架构用于Scalable图像的识别
 
+https://mp.weixin.qq.com/s/NQED6DdCJNpNyzURUOZPnA
+
+迁移学习：机器学习的下一个前沿阵地！
+
 # 语音识别
 
 ## CTC

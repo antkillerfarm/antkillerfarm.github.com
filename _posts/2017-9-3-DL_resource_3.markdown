@@ -314,6 +314,32 @@ https://mp.weixin.qq.com/s/MK_al7CgieiVXB1MGWZ9GA
 
 听说你用JavaScript写代码？本文是你的机器学习指南
 
+## 面试
+
+https://www.zhihu.com/question/41233373
+
+如果你是面试官，你怎么去判断一个面试者的深度学习水平？
+
+https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
+
+20万、50万、100万的算法工程师，到底有什么区别？
+
+https://www.zhihu.com/question/56676679/answer/151505274
+
+机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
+
+https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
+
+面试官是如何看出你机器学习水平的？
+
+https://mp.weixin.qq.com/s?__biz=MzI3NTA0MzM1OQ==&mid=2651615534&idx=1&sn=00ecd7dc1d8472c070e720a1b63f04c4
+
+我如何考察面试者的机器学习水平
+
+https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
+
+谷歌等巨头机器学习面试题：从逻辑回归到智力测验
+
 ## Other
 
 https://www.jiqizhixin.com/articles/2017-07-27-2
@@ -379,56 +405,4 @@ http://mp.weixin.qq.com/s/eXY0jVdWMg3B_CQ514ngsA
 http://mp.weixin.qq.com/s/oBy_Xl7FSBUd46H9E8yUbA
 
 AI博士五星指南：入行自评，选大公司还是初创企业
-
-https://mp.weixin.qq.com/s/Ns8oD_HBpFoumMMDbMq8-g
-
-DeepMind视频行为分类竞赛，百度IDL获第一
-
-https://mp.weixin.qq.com/s/8a4hTHJ1F-dUiUI12COJkA
-
-电话诈骗层出不穷？一家“接地气”的公司正在用人工智能解决这个社会顽疾
-
-https://mp.weixin.qq.com/s/bMW2go3QefbgYMqVSzyy_g
-
-腾讯AI Lab深度解读CVPR五大前沿
-
-https://mp.weixin.qq.com/s/_dHjZQ_7_7H34PHhV_lC3w
-
-全新强化学习算法详解，看贝叶斯神经网络如何进行策略搜索
-
-http://mp.weixin.qq.com/s/Bt6EMD4opHCnRoHKYitsUA
-
-结合人类视觉注意力进行图像分类
-
-https://mp.weixin.qq.com/s/M4U0RKcFqZKZAiwK5IyOFA
-
-GAN之父Ian Goodfellow在Quora：机器学习十问十答
-
-https://mp.weixin.qq.com/s/1E9gunSpgYt5xl9Q_uQNJg
-
-使用深度学习进行医疗影像分析：文件格式篇
-
-https://mp.weixin.qq.com/s/PiQB2AvhtDceMJxYN8O8jA
-
-通用卷积神经网络交错组卷积
-
-http://stanford.edu/~rezab/nips2014workshop/slides/jeff.pdf
-
-Techniques and Systems for Training Large Neural Networks Quickly
-
-https://mp.weixin.qq.com/s/rlkZ82FcYMOmYoLjiCTN7g
-
-一张图看懂人工智能知识体系
-
-https://mp.weixin.qq.com/s/oNPrmIm1SOlA9tuyQZFr9w
-
-让机器人学会理解语义概念：谷歌提出深度视觉新技术
-
-https://mp.weixin.qq.com/s/HD370E4cCYvy_pdEKAvLIA
-
-教机器学习编程
-
-https://mp.weixin.qq.com/s/AS1VFjBFnSk19QJ28tBVWA
-
-NIPS 2017斯坦福赛题大公开：强化学习模拟人类肌肉骨骼模型
 

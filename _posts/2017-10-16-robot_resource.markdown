@@ -306,10 +306,6 @@ https://mp.weixin.qq.com/s/tXpdPwnZyCtur9Q-rJfYFg
 
 当AI遇上证券投资
 
-https://mp.weixin.qq.com/s/JR-GIXwHF45OysoE0qvwzw
-
-时间序列异常检测机制的研究
-
 https://mp.weixin.qq.com/s/DUz76rLOEL6iK1aytku7sQ
 
 基于机器学习方法的POI品类推荐算法

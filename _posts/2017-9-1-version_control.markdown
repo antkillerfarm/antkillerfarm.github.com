@@ -300,5 +300,17 @@ https://mp.weixin.qq.com/s/eaxyhk93PbEFzHk-qiniOQ
 
 ReQuest: 使用问答数据产生实体关系抽取的间接监督
 
+https://mp.weixin.qq.com/s/eJIkNjRqVdjm1eRVwzc1vg
+
+聊一聊分词原理
+
+https://mp.weixin.qq.com/s/dkHRTvAXf4DSnkoiMr_j1A
+
+中文NLP难于英文？从语言学角度看中文NLP、NLU难在哪里
+
+https://mp.weixin.qq.com/s/TbZPxISqi3fZLpWmDf3DmQ
+
+中文分词做不好，人机自然语言交互当然难以取得突破
+
 
 
