@@ -282,6 +282,10 @@ https://mp.weixin.qq.com/s/O-NDsFs6AOwl43LyevXtzg
 
 OpenAI发布「块稀疏」GPU内核：实现文本情感分析与图像生成建模当前最优水平
 
+https://mp.weixin.qq.com/s/Qfbc2iQnXacOqOGIrpRQRw
+
+Tensor Core究竟有多快？全面对比英伟达Tesla V100/P100的RNN加速能力
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293

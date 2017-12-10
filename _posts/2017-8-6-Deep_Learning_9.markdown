@@ -318,6 +318,10 @@ https://mp.weixin.qq.com/s/uJlgx9Bq-XI49l8wwmdIsw
 
 用GAN让晴天下大雨，小猫变狮子，黑夜转白天
 
+https://mp.weixin.qq.com/s/hjsFBVE3_IiKTZSesa44ug
+
+GAN系列学习(1)——前生今世
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。

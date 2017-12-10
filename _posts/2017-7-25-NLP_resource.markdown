@@ -122,10 +122,6 @@ https://mp.weixin.qq.com/s/uRR4Vh3PC8SFw-PD9FQLpw
 
 命名实体识别（NER）的二三事
 
-http://shiyanjun.cn/archives/548.html
-
-使用libsvm+tfidf实现文本分类
-
 http://www.toutiao.com/a6236100205026328834/
 
 深度学习：推动NLP领域发展的新引擎

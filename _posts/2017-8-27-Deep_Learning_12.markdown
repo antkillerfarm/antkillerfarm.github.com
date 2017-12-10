@@ -46,6 +46,10 @@ Euclidean division的定义扩展之后，则有Bézout's identity。
 
 **Bézout's identity**：若a,b是非0整数，$$d=GCD(a,b)$$，则存在整数x,y使得$$ax+by=d$$。证明略。
 
+例如：
+
+$$m_0 = 3 , M_0 = 20 , ( − 1 ) 20 + 7 ( 3 ) = 1$$
+
 >Étienne Bézout，1730~1783，法国数学家。法国科学院院士。
 
 至于如何求解x,y，这就要用到**Extended Euclidean algorithm**了。
@@ -174,6 +178,14 @@ $$c=\left(\sum_{i=0}^kc_iN_iM_i\right)\mod{M}$$
 
 显然这里的$$N_i,n_i$$可以使用Extended Euclidean algorithm求解。
 
+例如：
+
+$$m_0 = 3 , M_0 = 20 , ( − 1 ) 20 + 7 ( 3 ) = 1$$
+
+$$m_1 = 4 , M_1 = 15 , ( − 1 ) 15 + ( 4 ) 4 = 1$$
+
+$$m_2 = 5 , M_2 = 12 , ( − 2 ) 12 + ( 5 ) 5 = 1$$
+
 稍加扩展，可得到多项式版本的CRT：
 
 $$c(p)=\left(\sum_{i=0}^kc^{(i)}(p)N^{(i)}(p)M^{(i)}(p)\right)\mod{M(p)}\tag{3}$$
@@ -242,8 +254,11 @@ $$s(p)=s'(p)+h_{N-1}x_{L-1}m(p)$$
 
 $$\begin{align}
 s(p)&=s'(p)+h_1x_2m(p) \\
-&=
+&=s'(0)(-p^2+1)+\frac{s'(1)}{2}(p^2+p)+\frac{s'(2)}{2}(p^2-p)+h_1x_2m(p^3-p)\\
+&=s'(0)+p(\frac{s'(1)}{2}-\frac{s'(2)}{2}-h_1x_2)+p^2(-s'(0)+\frac{s'(1)}{2}+\frac{s'(2)}{2})+p^3(h_1x_2)
 \end{align}$$
+
+这里用4个乘法和7个加法，替代了6个乘法和2个加法。
 
 总的来说，Winograd algorithm是一个很复杂的算法，但是结论却很简单。因此，在具体的IC实现中，一般只针对特定常用尺寸的kernel，应用相应的结论即可。
 

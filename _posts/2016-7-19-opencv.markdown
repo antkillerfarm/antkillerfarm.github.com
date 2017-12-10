@@ -432,5 +432,11 @@ http://www.cs.cmu.edu/~rsalakhu/10707/lectures.html
 
 CMU：Deep Learning 2017
 
+https://software.intel.com/en-us/ai-academy/students/kits
 
+Intel提供的课程，包括ML和DL两门课程。
+
+http://www.stats.ox.ac.uk/~teh/courses.html
+
+Oxford的Yee Whye Teh提供的ML课程，偏统计方向。
 

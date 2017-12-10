@@ -382,4 +382,10 @@ https://mp.weixin.qq.com/s/5pyKKD80jyXvn-brxBKV4g
 
 中国民生银行天眼日志平台架构演进的平凡之路
 
+https://mp.weixin.qq.com/s/O8pj4pChyw8PK-G_4A3DWg
+
+发布订阅消息系统Apache Pulsar简介
+
+
+
 

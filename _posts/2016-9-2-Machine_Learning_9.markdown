@@ -109,6 +109,10 @@ https://mp.weixin.qq.com/s/Sl3lTS1zvq0BgAayAUcOXg
 
 K-Means实战与调优详解
 
+https://mp.weixin.qq.com/s/6ErpBtVg0r2dhsBGbIkvDg
+
+Bisecting K-Means算法
+
 ## 聚类结果的评价
 
 可考虑用以下几个指标来评价聚类效果：

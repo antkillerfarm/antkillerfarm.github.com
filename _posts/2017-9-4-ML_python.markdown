@@ -24,6 +24,10 @@ https://github.com/lawlite19/DeepLearning_Python
 
 上个哥们的DL示例
 
+http://www.jianshu.com/p/eb9e3be977ed
+
+Python数据分析之武林秘籍。这里包括了大量ML或DL的python工具包。
+
 ## Anaconda
 
 Anaconda是一个科学计算方面的python发行版，下面提到的所有工具都可以通过Anaconda一站式安装。

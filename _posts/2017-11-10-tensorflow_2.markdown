@@ -415,5 +415,8 @@ https://mp.weixin.qq.com/s/CjlEY_m6tp-NJ3B2MiAZRg
 
 基于TensorFlow的深度模型训练GPU显存优化
 
+https://mp.weixin.qq.com/s/DAV3TDI4JYr0sXqTGU6t2A
+
+分布式TensorFlow入坑指南：从实例到代码带你玩转多机器深度学习
 
 

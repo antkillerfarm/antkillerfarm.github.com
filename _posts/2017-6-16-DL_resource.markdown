@@ -470,4 +470,7 @@ https://mp.weixin.qq.com/s/MhLissrrNw5fJP6I7cxFNA
 
 360推出XLearning：可支持多种机器学习，深度学习框架调度系统！
 
+https://mp.weixin.qq.com/s/ZFtUOtb8mxa11zBHYbza9A
+
+动态神经网络工具包Dynet
 

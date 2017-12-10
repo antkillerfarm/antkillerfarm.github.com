@@ -312,5 +312,25 @@ https://mp.weixin.qq.com/s/TbZPxISqi3fZLpWmDf3DmQ
 
 中文分词做不好，人机自然语言交互当然难以取得突破
 
+https://mp.weixin.qq.com/s/6mE3qPL5ag1C6ZVUsQibdg
+
+LR如何在语言理解NLU中实现文本分类
+
+https://mp.weixin.qq.com/s/1VYdCLw6q4rS91_YV4SclA
+
+理解智能问答系统（Ⅰ）
+
+https://mp.weixin.qq.com/s/x4yXjl0YXytAgp8a64ebXg
+
+智能问答开源项目之YodaQA（Ⅱ）
+
+https://mp.weixin.qq.com/s/2VPfk7jX0eBP2NZMB9igBg
+
+智能问答之使用UIMA进行文本挖掘（Ⅲ）
+
+https://mp.weixin.qq.com/s/NohUxQKHw8Z3kX_riGM10g
+
+智能问答之答案抽取（Ⅳ）
+
 
 

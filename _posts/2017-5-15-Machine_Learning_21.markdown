@@ -160,6 +160,14 @@ http://www.shareditor.com/blogshow/?blogId=90
 
 比TF-IDF更好的隐含语义索引模型是个什么鬼
 
+http://shiyanjun.cn/archives/548.html
+
+使用libsvm+tfidf实现文本分类
+
+https://mp.weixin.qq.com/s/iZOVUYKWP-fN8BwAuVwAUw
+
+TF-IDF不容小觑
+
 # HMM
 
 ![](/images/article/HMM.png)

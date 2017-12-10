@@ -291,23 +291,35 @@ moses是一个基于统计的机器翻译工具。
 
 http://drools.org/
 
-一个规则引擎软件
+一个规则引擎软件。
 
 https://mp.weixin.qq.com/s/CsHgn82lQQDVhjDJvp01cg
 
-清华大学开源OpenKE：知识表示学习平台
+清华大学开源OpenKE：知识表示学习平台。
 
 https://mp.weixin.qq.com/s/0buG6HEFSrD7MPfKqVCzzg
 
-构想：中文文本标注工具（附开源文本标注工具列表）
+构想：中文文本标注工具（附开源文本标注工具列表）。
 
 https://mp.weixin.qq.com/s/kMQ7q4EyBQUH1DEEhQWdCQ
 
-Familia：开源的中文主题模型应用工具包
+Familia：开源的中文主题模型应用工具包。
 
 http://openkg.cn/
 
-一个开放的中文知识图谱
+一个开放的中文知识图谱。
+
+https://allegrograph.com/
+
+一个现代、高性能、持久的图数据库。
+
+http://blog.csdn.net/sinat_25551085/article/details/62896902
+
+AllegroGraph
+
+https://mp.weixin.qq.com/s/a2KyT929A0fn_bTFld62Cg
+
+英文智能问答之OpenEphyra
 
 ## NLPchina
 

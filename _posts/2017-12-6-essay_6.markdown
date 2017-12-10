@@ -136,4 +136,28 @@ https://mp.weixin.qq.com/s/AS1VFjBFnSk19QJ28tBVWA
 
 NIPS 2017斯坦福赛题大公开：强化学习模拟人类肌肉骨骼模型
 
+https://mp.weixin.qq.com/s/cDqxmRVQCIqdM5oiUh82YQ
+
+Yee Whye Teh：《贝叶斯深度学习与深度贝叶斯学习》
+
+https://mp.weixin.qq.com/s/OXVrijBMMq3A_oRSfVB1nQ
+
+田渊栋等人最新论文：别担心深度网络中的虚假局部极小值
+
+https://mp.weixin.qq.com/s/uy3MNxyT5nQIVsfWkXnL5Q
+
+结合生成式与判别式方法，Petuum新研究助力医疗诊断
+
+https://mp.weixin.qq.com/s/O2eTHpHaydiMRup4qyOgrw
+
+除了深度学习，你还应该了解这些发展方向
+
+https://mp.weixin.qq.com/s/xVG72Q0zQrEqY7oRxES8Ug
+
+如何对机器学习代码进行单元测试？
+
+https://mp.weixin.qq.com/s/hBPsCUCQjT6cIKjjrHyQYg
+
+继图像识别后，图像标注系统也被对抗样本攻陷!
+
 

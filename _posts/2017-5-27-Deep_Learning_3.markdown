@@ -206,6 +206,10 @@ https://mp.weixin.qq.com/s/D6ok6dQqyx6cCJKc2M8YpA
 
 从AlexNet剖析-卷积网络CNN的一般结构
 
+https://mp.weixin.qq.com/s/XZeZX8zTtNom0az_ralp4A
+
+ImageNet冠军带你入门计算机视觉：卷积神经网络
+
 # Autoencoder
 
 Bengio在2003年的《A neural probabilistic language model》中指出，维度过高，会导致每次学习，都会强制改变大部分参数。

@@ -119,6 +119,18 @@ https://mp.weixin.qq.com/s/XbrnhlxUbmK0JzQ4I_X2wQ
 
 决策树之随机森林
 
+https://mp.weixin.qq.com/s/T3NgIuGZIvmPSMNFyQeeGw
+
+XGBoost原理解析
+
+https://mp.weixin.qq.com/s/NY2E2c808WSacyj68TFInw
+
+决策树模型组合理解
+
+https://mp.weixin.qq.com/s/K2uh0J-BLj-eSriI1_mEjA
+
+决策树分类和预测算法原理
+
 # 关联规则挖掘
 
 ## 基本概念

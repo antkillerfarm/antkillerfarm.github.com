@@ -260,6 +260,10 @@ https://mp.weixin.qq.com/s/_dHjZQ_7_7H34PHhV_lC3w
 
 全新强化学习算法详解，看贝叶斯神经网络如何进行策略搜索
 
+https://mp.weixin.qq.com/s/RH4ifA46njdC7fyRI9kVMg
+
+深度Q网络与视觉格斗类游戏
+
 # NN的INT8计算
 
 ## 概述
