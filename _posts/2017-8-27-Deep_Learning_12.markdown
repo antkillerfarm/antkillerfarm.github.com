@@ -146,9 +146,9 @@ CRT虽然只是初等数论的基本定理，但应用范围很广，Lagrange in
 $$\begin{array}{r}
  x^2 + {\color{White}1}x + 3\\
  x-3\overline{) x^3 - 2x^2 + 0x - 4}\\
- \underline{x^3 - 3x^2 {\color{White} {} + 0x - 4}}\\
- +x^2 + 0x {\color{White} {} - 4}\\
- \underline{+x^2 - 3x {\color{White} {} - 4}}\\
+ \underline{x^3 - 3x^2 \color{White}{ + 0x - 4}}\\
+ +x^2 + 0x \color{White}{ - 4}\\
+ \underline{+x^2 - 3x \color{White}{ - 4}}\\
  +3x - 4\\
  \underline{+3x - 9}\\
  +5
@@ -261,6 +261,8 @@ s(p)&=s'(p)+h_1x_2m(p) \\
 这里用4个乘法和7个加法，替代了6个乘法和2个加法。
 
 总的来说，Winograd algorithm是一个很复杂的算法，但是结论却很简单。因此，在具体的IC实现中，一般只针对特定常用尺寸的kernel，应用相应的结论即可。
+
+>Winograd这个知识点的复杂，其实主要还不在于算法本身，而是在于其前置了很多数论方面的知识。而我恰恰不具备这些知识，因此进展极度缓慢，前后用了近20天才看完了相关的内容。。。不过，收获很大^_^
 
 ## 参考
 

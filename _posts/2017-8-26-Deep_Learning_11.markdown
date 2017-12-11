@@ -102,7 +102,7 @@ Fast Convolution
 
 我们这里以一个简单的例子，介绍一下Fast Convolution的基本思想。
 
-复数运算$$(a+jb)(c+dj)=e+jf$$可以写成如下的矩阵形式：
+复数运算$$(a+jb)(c+jd)=e+jf$$可以写成如下的矩阵形式：
 
 $$\begin{bmatrix}
 e \\ f \\
