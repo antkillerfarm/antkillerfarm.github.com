@@ -74,6 +74,14 @@ https://mp.weixin.qq.com/s/NQED6DdCJNpNyzURUOZPnA
 
 迁移学习：机器学习的下一个前沿阵地！
 
+https://mp.weixin.qq.com/s/Hok9D8dAzYrBz7XoFmGE2A
+
+AliExpress：在检索式问答系统中应用迁移学习
+
+https://mp.weixin.qq.com/s/f_vB2AXCytnvoZaqfMeIpw
+
+应用TF-Slim快速实现迁移学习
+
 # 语音识别
 
 ## CTC

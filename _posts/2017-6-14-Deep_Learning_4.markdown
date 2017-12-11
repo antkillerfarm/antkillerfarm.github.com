@@ -164,6 +164,10 @@ https://mp.weixin.qq.com/s/7dsrvHp6KIvlE-VXiUH1Rw
 
 HIN2Vec：异质信息网络中的表示学习
 
+https://mp.weixin.qq.com/s/CqJ7o1-ptCBBocB3PfEuXg
+
+万物向量化：用协作学习的方法生成更广泛的实体向量
+
 ## 参考
 
 http://www.cnblogs.com/iloveai/p/word2vec.html

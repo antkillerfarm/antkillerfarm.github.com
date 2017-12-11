@@ -252,6 +252,10 @@ https://mp.weixin.qq.com/s/ZrZtGBxVOZmexDMw_S_Orw
 
 TensorFlow深度学习目标检测模型及源码架构解析
 
+https://mp.weixin.qq.com/s/HPzQST8cq5lBhU3wnz7-cg
+
+R-FCN每秒30帧实时检测3000类物体，马里兰大学Larry Davis组最新目标检测工作
+
 # RCNN
 
 《深度学习（五）》中提到的AlexNet、VGG、GoogleNet主要用于图片分类。而这里介绍的RCNN(Regions with CNN)主要用于目标检测。

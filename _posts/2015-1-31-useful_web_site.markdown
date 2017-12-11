@@ -360,7 +360,11 @@ http://www.xfyun.cn/share/?p=2598
 
 https://mp.weixin.qq.com/s/VfsenlyT9QHyj9_Oge8dRg
 
-十年大数据，十年区块链，两技术如何共生演进?
+十年大数据，十年区块链，两技术如何共生演进？
+
+https://mp.weixin.qq.com/s/PgfE5wL8W4I73HNyyQmpvg
+
+用Python代码建个数据实验室，顺利入坑比特币
 
 # 数字成像
 

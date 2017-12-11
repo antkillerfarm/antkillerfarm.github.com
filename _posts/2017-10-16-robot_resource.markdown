@@ -228,6 +228,10 @@ https://mp.weixin.qq.com/s/QkWCcr86yX_M-T_rT_fwBQ
 
 电影中不可舍弃的数学体系。本文介绍了四元数等空间变换的数学概念
 
+https://mp.weixin.qq.com/s/pOX84vc2JlYidkTZt73rcQ
+
+英特尔&丰田联合开源城市驾驶模拟器CARLA
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/7N6eDoEV8oEwUpP-zK1RpQ

@@ -243,6 +243,10 @@ http://www.cnblogs.com/fengfenggirl/p/associate_fpgowth.html
 
 数据挖掘系列（2）--关联规则FpGrowth算法
 
+https://mp.weixin.qq.com/s/zD5hwBmMmSxzTj-3YzZKdg
+
+频繁集挖掘FP Tree详解
+
 ## 幸存者偏差
 
 二战期间，盟军需要对战斗机进行装甲加厚，以提高生还率，但由于军费有限，只能进行局部升级。那么问题来了，究竟哪个部位最关键，最值得把装甲加厚来抵御敌方炮火呢？人们众口不一，最后一致决定采用统计调查的方式来解决，即：仔细检查每一驾战斗机返回时受到的损伤程度，计算出飞机整体的受弹状况，然后根据大数据分析决定。

@@ -79,6 +79,10 @@ https://mp.weixin.qq.com/s/0HmsMytif3INqAX1Si5ukA
 
 推荐5本经典自然语言处理书籍
 
+https://mp.weixin.qq.com/s/FNKFbUk0A6meXdE-HpwfvQ
+
+Python自然语言处理实战书籍和代码《Natural Language Processing in Action》
+
 ## 网站
 
 http://www.52nlp.cn/

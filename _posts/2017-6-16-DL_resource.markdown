@@ -474,3 +474,12 @@ https://mp.weixin.qq.com/s/ZFtUOtb8mxa11zBHYbza9A
 
 动态神经网络工具包Dynet
 
+https://mp.weixin.qq.com/s/KKy0EBVwrdAgqeG07H9vjg
+
+中科院发布：深度文本匹配开源工具（MatchZoo）
+
+https://mp.weixin.qq.com/s/CetbsnDNQiyaV7grWGgJCg
+
+谷歌发布机器学习工具库Kubeflow：可提供最佳OSS解决方案
+
+

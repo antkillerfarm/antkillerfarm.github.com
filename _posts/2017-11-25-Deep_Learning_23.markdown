@@ -264,6 +264,10 @@ https://mp.weixin.qq.com/s/RH4ifA46njdC7fyRI9kVMg
 
 深度Q网络与视觉格斗类游戏
 
+https://mp.weixin.qq.com/s/K2DW_ntSWrlySpxgorF9dA
+
+Python强化学习实战，Anaconda公司的高级数据科学家讲解
+
 # NN的INT8计算
 
 ## 概述
