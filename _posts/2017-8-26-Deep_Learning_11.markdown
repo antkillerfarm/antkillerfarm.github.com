@@ -76,6 +76,14 @@ http://blog.csdn.net/shuzfan/article/details/77964370
 
 >不要和Terry Winograd搞混了。后者是Google的两位创始人Larry Page和Sergey Brin的导师。MIT博士+斯坦福教授。
 
+>Terry Winograd的导师也很有名，他就是AI界的宗师Seymour Papert。   
+>Seymour Aubrey Papert，1928～2016，南非威特沃特斯兰德大学博士+剑桥大学博士。MIT教授。曾和Marvin Minsky合著《Perceptrons》，并一同创建了MIT AI Lab。MIT Media Lab的创立者。启蒙编程语言Logo之父。   
+>更多生平参见：   
+>https://zhuanlan.zhihu.com/p/21841141   
+>Seymour Papert留给我们的思想遗产
+
+>Seymour Papert至少给三个领域带来了革命，分别是儿童发展、人工智能，以及科技与教育之融合。能够在上述任何一个领域做出一点成绩都不容易了，而Papert则横跨三个领域，而且对这三个领域的发展都带来了极为深远的影响。
+
 **Winograd FFT algorithm**：一种FFT算法。FFT算法有很多，最知名的是Cooley–Tukey FFT algorithm。
 
 **Coppersmith–Winograd algorithm（1987年）**：目前最快的矩阵乘法算法。复杂度是$$\mathcal{O}(n^{2.375477})$$。矩阵乘法定义的复杂度是$$\mathcal{O}(n^{3})$$。第一个小于3的算法是Strassen algorithm（1969年）（$$\mathcal{O}(n^{2.807355})$$）。

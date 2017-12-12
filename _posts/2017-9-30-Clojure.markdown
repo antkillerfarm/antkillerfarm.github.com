@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Clojure, Lua, Groovy, Python（三）
+title:  Clojure, Python（三）
 category: language 
 ---
 
@@ -65,36 +65,6 @@ JavaFX和Clojure的结合，本来不是什么新鲜的东西，然而由于相�
 代码参见：
 
 https://github.com/antkillerfarm/antkillerfarm_rubbish/tree/master/clojure/javafx
-
-# Lua
-
-Lua的包管理工具叫做LuaRocks。官网：
-
-https://luarocks.org/
-
-参考：
-
-https://mp.weixin.qq.com/s/nwhSDxz1Pu2JCU_IeMR9ww
-
-Lua程序逆向之Luac文件格式分析
-
-http://lua-users.org/wiki/GraphicalUserInterfaceToolkits
-
-Lua的GUI工具列表
-
-# Groovy
-
-Groovy是另一种JVM语言，也是与Java最兼容的语言。普通Java代码可以无修改的在Groovy中编译。Groovy源代码以.groovy为后缀。
-
-Groovy使用Gradle或Grape作为自动管理工具，其中后者是Groovy原生支持的，但是现在已经不如前者流行了。
-
-官网：
-
-http://www.groovy-lang.org/
-
-代码参见：
-
-https://github.com/antkillerfarm/antkillerfarm_rubbish/tree/master/groovy/javafx
 
 # Hadopp生态圈的语言分布
 

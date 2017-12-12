@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Emacs, Vi, Logo
+title:  Emacs, Vi, Lua, Groovy
 category: language 
 ---
 
@@ -347,23 +347,33 @@ Source Insight常用设置和快捷键大全
 
 打开“Tools --> Options --> Text Editor”，如果是编写C/C++程序，就打开“C/C++-->Tabs”，在这里，选中“Insert spaces”即可。
 
-# Logo语言的安装
+# Lua
 
-Logo语言是我学习计算机时的启蒙语言。那是初一、初二的时候，当时的电脑还是运行Dos的386系统，我们在原始的命令行下，津津有味的编着代码。那时候电脑可是稀罕物，为了节约上机时间，程序都是事先写到小本本上的，我至今还保留着当时的作业本。
+Lua的包管理工具叫做LuaRocks。官网：
 
-话归正传，说说Linux下Logo语言的安装。
+https://luarocks.org/
 
-1）到Berkeley的官网下载Logo语言的源代码
+参考：
 
-http://www.cs.berkeley.edu/~bh/logo.html
+https://mp.weixin.qq.com/s/nwhSDxz1Pu2JCU_IeMR9ww
 
-2）按照源代码包里面readme的提示，编译之。提示缺少libbsd和libtermcap。
+Lua程序逆向之Luac文件格式分析
 
-3）`sudo apt-get install libbsd-dev libncurses5-dev`
+http://lua-users.org/wiki/GraphicalUserInterfaceToolkits
 
-重新编译即可。
+Lua的GUI工具列表
 
-再一次看到熟悉的命令行界面和海龟了:)
+# Groovy
 
+Groovy是另一种JVM语言，也是与Java最兼容的语言。普通Java代码可以无修改的在Groovy中编译。Groovy源代码以.groovy为后缀。
 
+Groovy使用Gradle或Grape作为自动管理工具，其中后者是Groovy原生支持的，但是现在已经不如前者流行了。
+
+官网：
+
+http://www.groovy-lang.org/
+
+代码参见：
+
+https://github.com/antkillerfarm/antkillerfarm_rubbish/tree/master/groovy/javafx
 
