@@ -6,6 +6,32 @@ category: ML
 
 # 强化学习（续）
 
+## MDP
+
+强化学习任务通常用**马尔可夫决策过程（Markov Decision Process）**来描述：
+
+$$<\mathcal{S},\mathcal{A},\mathcal{P},\mathcal{R},\gamma>$$
+
+这个五元组依次代表：states、actions、state transition probability matrix、reward function、discount factor。
+
+>MDP中有两个对象：Agent和Environment。   
+>1.Environment处于一个特定的状态（State）（如打砖块游戏中挡板的位置、各个砖块的状态等）。   
+>2.Agent可以通过执行特定的动作（Actions）（如向左向右移动挡板）来改变Environment的状态。   
+>3.Environment状态改变之后会返回一个观察（Observation）给Agent，同时还会得到一个奖励（Reward）（可以为负，就是惩罚）。   
+>4.Agent根据返回的信息采取新的动作，如此反复下去。Agent如何选择动作叫做策略（Policy）。MDP的任务就是找到一个策略，来最大化奖励。
+
+注意State和Observation区别：State是Environment的私有表达，我们往往不会直接得到。
+
+在MDP中，当前状态State包含了所有历史信息，即将来只和现在有关，与过去无关，因为现在状态包含了所有历史信息。只有满足这样条件的状态才叫做马尔科夫状态（Markov state）。当然这只是理想状况，现实往往不会那么简单。
+
+正是因为State太过于复杂，我们往往可以需要一个对Environment的观察来间接获得信息，因此就有了Observation。不过Observation是可以等于State的，此时叫做Full Observability。
+
+状态、动作、状态转移概率组成了MDP，一个MDP周期（episode）由一个有限的状态、动作、奖励队列组成：
+
+$$s_0,a_0,r_1,s_1,a_1,r_2,s_2,\dots,s_{n-1},a_{n-1},r_n,s_n$$
+
+这里$$s_i$$代表状态，$$a_i$$代表行动，$$r_{i+1}$$是执行动作后的奖励。最终状态为$$s_n$$。
+
 ## 折扣未来奖励（Discounted Future Reward）
 
 为了获得更多的奖励，我们往往不能只看当前奖励，更要看将来的奖励。
@@ -207,25 +233,3 @@ Q-learning是强化学习中很重要的算法，也是最早被引入DL领域�
 ![](/images/article/q_learning_2.gif)
 
 这里的每条边上的数值就是reward值。Q-Learning的目标就是达到reward值最大的state。因此当agent到达户外之后，它就停留在那里了，这样的目标被称作**吸收目标**。
-
-如果以state为行，action为列，则上图又可转化为如下的reward矩阵：
-
-![](/images/article/r_matrix.gif)
-
-其中，-1表示两个state之间没有action。
-
-类似的，我们可以构建一个和R同阶的矩阵Q，来表示Q-Learning算法学到的知识。
-
-开始时，agent对外界一无所知，所以Q可以初始化为零矩阵。
-
-Q-Learning算法的**transition rule**为：
-
-$$Q(s,a)=R(s,a)+\gamma \max(Q(\tilde s,\tilde a))\tag{1}$$
-
-其中，(s,a)表示当前的state和action，$$(\tilde s,\tilde a)$$表示下一个state和action，$$0 \le \gamma < 1$$为学习参数。这个公式也被称作**Bellman equation**。
-
->Richard Ernest Bellman，1920～1984，美国应用数学家、控制论学家、数理生物学家。布鲁克林学院本科+威斯康星大学麦迪逊分校硕士+普林斯顿博士。二战期间曾在Los Alamos研究理论物理，后任职于美国智库RAND Corporation，南加州大学教授。美国艺术科学院院士，美国科学院院士。   
->Bellman–Ford算法的发明人之一。以他命名的奖项有Richard E. Bellman Control Heritage Award和Bellman Prize in Mathematical Biosciences。
-
-在无监督的情况下，agent不断从一个状态转至另一状态进行探索，直到到达目标。我们将agent的每一次探索（从任意初始状态到目标状态的过程）称为一个**episode**。
-

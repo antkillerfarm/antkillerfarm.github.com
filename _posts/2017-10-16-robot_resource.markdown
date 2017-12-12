@@ -418,3 +418,8 @@ https://mp.weixin.qq.com/s/qJwCsT_DQg7oUERRaWczIQ
 
 产品中的机器学习：从已受训模型到预测服务器
 
+https://mp.weixin.qq.com/s/B7BV0mp-kfmyFZIf77mg2g
+
+Netflix推荐算法，让每个人看到不一样的电影海报
+
+

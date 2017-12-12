@@ -156,6 +156,10 @@ https://mp.weixin.qq.com/s/tFdnxqV5a5xZrFtB6E0AiQ
 
 新AlphaZero出世称霸棋界，8小时搞定一切棋类！自对弈通用强化学习无师自通！
 
+https://mp.weixin.qq.com/s/qYWsFBKNCKCGUmizX_1sVg
+
+AlphaGo 教学工具终于上线了！
+
 ## 实战
 
 https://github.com/jinfagang/pytorch_name_net

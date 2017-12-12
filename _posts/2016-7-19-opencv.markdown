@@ -440,3 +440,8 @@ http://www.stats.ox.ac.uk/~teh/courses.html
 
 Oxford的Yee Whye Teh提供的ML课程，偏统计方向。
 
+https://mp.weixin.qq.com/s/iUmRZMpQJpaV4jNxmp-z4w
+
+面向搜索的深度学习实战书籍和代码《Deep Learning for Search》
+
+

@@ -6,6 +6,27 @@ category: ML
 
 # Q-learning（续）
 
+如果以state为行，action为列，则上图又可转化为如下的reward矩阵：
+
+![](/images/article/r_matrix.gif)
+
+其中，-1表示两个state之间没有action。
+
+类似的，我们可以构建一个和R同阶的矩阵Q，来表示Q-Learning算法学到的知识。
+
+开始时，agent对外界一无所知，所以Q可以初始化为零矩阵。
+
+Q-Learning算法的**transition rule**为：
+
+$$Q(s,a)=R(s,a)+\gamma \max(Q(\tilde s,\tilde a))\tag{1}$$
+
+其中，(s,a)表示当前的state和action，$$(\tilde s,\tilde a)$$表示下一个state和action，$$0 \le \gamma < 1$$为学习参数。这个公式也被称作**Bellman equation**。
+
+>Richard Ernest Bellman，1920～1984，美国应用数学家、控制论学家、数理生物学家。布鲁克林学院本科+威斯康星大学麦迪逊分校硕士+普林斯顿博士。二战期间曾在Los Alamos研究理论物理，后任职于美国智库RAND Corporation，南加州大学教授。美国艺术科学院院士，美国科学院院士。   
+>Bellman–Ford算法的发明人之一。以他命名的奖项有Richard E. Bellman Control Heritage Award和Bellman Prize in Mathematical Biosciences。
+
+在无监督的情况下，agent不断从一个状态转至另一状态进行探索，直到到达目标。我们将agent的每一次探索（从任意初始状态到目标状态的过程）称为一个**episode**。
+
 Q-Learning算法的计算步骤如下：
 
 >**Step 1**：给定参数$$\gamma$$和reward矩阵R。   

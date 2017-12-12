@@ -232,6 +232,14 @@ https://mp.weixin.qq.com/s/HKOmDltonNpp8DftH7Goww
 
 基于Keras的知识图谱处理实战
 
+https://mp.weixin.qq.com/s/MvEgH-xgNk51qcdlnCJgiQ
+
+Keras教程：用Encoder-Decoder模型自动撰写文本摘要
+
+https://mp.weixin.qq.com/s/ktp4yfxHMt3103QzYhELrg
+
+从头开始在Python中开发深度学习字幕生成模型
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。

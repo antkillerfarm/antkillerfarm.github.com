@@ -1,8 +1,64 @@
 ---
 layout: post
-title:  机器学习（二十四）——Tri-training, Beam Search, NLP机器翻译常用评价度量, 数据不平衡问题
+title:  机器学习（二十四）——推荐算法中的常用排序算法, Tri-training, Beam Search, NLP机器翻译常用评价度量, 数据不平衡问题
 category: ML 
 ---
+
+# 时间序列分析（续）
+
+## 参考
+
+https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average
+
+https://en.wikipedia.org/wiki/Autoregressive%E2%80%93moving-average_model
+
+https://zhuanlan.zhihu.com/p/23534595
+
+时间序列分析：结合ARMA的卡尔曼滤波算法（该文的参考文献中有不少好文）
+
+http://blog.csdn.net/aliceyangxi1987/article/details/71079522
+
+用ARIMA模型做需求预测
+
+http://blog.csdn.net/kicilove/article/details/78315335
+
+时间序列初级理论篇
+
+https://mp.weixin.qq.com/s/K-XGuaWTcF6BDPJagaJDPQ
+
+时序数据与事件的关联分析
+
+https://mp.weixin.qq.com/s/JR-GIXwHF45OysoE0qvwzw
+
+时间序列异常检测机制的研究
+
+# 推荐算法中的常用排序算法
+
+## Pointwise方法
+
+Pranking (NIPS 2002), OAP-BPM (EMCL 2003), Ranking with Large Margin Principles (NIPS 2002), Constraint Ordinal Regression (ICML 2005)。
+
+## Pairwise方法
+
+Learning to Retrieve Information (SCC 1995), Learning to Order Things (NIPS 1998), Ranking SVM (ICANN 1999), RankBoost (JMLR 2003), LDM (SIGIR 2005), RankNet (ICML 2005), Frank (SIGIR 2007), MHR(SIGIR 2007), Round Robin Ranking (ECML 2003), GBRank (SIGIR 2007), QBRank (NIPS 2007), MPRank (ICML 2007), IRSVM (SIGIR 2006)。
+
+## Listwise方法
+
+LambdaRank (NIPS 2006), AdaRank (SIGIR 2007), SVM-MAP (SIGIR 2007), SoftRank (LR4IR 2007), GPRank (LR4IR 2007), CCA (SIGIR 2007), RankCosine (IP&M 2007), ListNet (ICML 2007), ListMLE (ICML 2008) 。
+
+## 参考
+
+https://mp.weixin.qq.com/s/YjYVE6jzySVsZmXSPivB5w
+
+达观数据搜索引擎排序实践（上篇）
+
+https://mp.weixin.qq.com/s/UpN7tAMjbFLSPcDYsWaykg
+
+达观数据搜索引擎排序实践（下篇）
+
+https://mp.weixin.qq.com/s/xigME-griWFwEvvPNqWuvg
+
+美团点评联盟广告的场景化定向排序机制
 
 # Tri-training
 
@@ -207,31 +263,5 @@ https://mp.weixin.qq.com/s/QEHAV_rW25E0b0N7POr6tw
 上图是强化学习的基本流程图。从控制论的角度来说，这是一个反馈控制系统，和经典的Kalman filters系统非常类似。因此，目前强化学习的主要用途，也多数和系统控制相关，例如机器人和自动驾驶。
 
 在推荐系统领域，由于有用户的反馈信息，亦可使用相关强化学习算法。
-
-## MDP
-
-强化学习任务通常用**马尔可夫决策过程（Markov Decision Process）**来描述：
-
-$$<\mathcal{S},\mathcal{A},\mathcal{P},\mathcal{R},\gamma>$$
-
-这个五元组依次代表：states、actions、state transition probability matrix、reward function、discount factor。
-
->MDP中有两个对象：Agent和Environment。   
->1.Environment处于一个特定的状态（State）（如打砖块游戏中挡板的位置、各个砖块的状态等）。   
->2.Agent可以通过执行特定的动作（Actions）（如向左向右移动挡板）来改变Environment的状态。   
->3.Environment状态改变之后会返回一个观察（Observation）给Agent，同时还会得到一个奖励（Reward）（可以为负，就是惩罚）。   
->4.Agent根据返回的信息采取新的动作，如此反复下去。Agent如何选择动作叫做策略（Policy）。MDP的任务就是找到一个策略，来最大化奖励。
-
-注意State和Observation区别：State是Environment的私有表达，我们往往不会直接得到。
-
-在MDP中，当前状态State包含了所有历史信息，即将来只和现在有关，与过去无关，因为现在状态包含了所有历史信息。只有满足这样条件的状态才叫做马尔科夫状态（Markov state）。当然这只是理想状况，现实往往不会那么简单。
-
-正是因为State太过于复杂，我们往往可以需要一个对Environment的观察来间接获得信息，因此就有了Observation。不过Observation是可以等于State的，此时叫做Full Observability。
-
-状态、动作、状态转移概率组成了MDP，一个MDP周期（episode）由一个有限的状态、动作、奖励队列组成：
-
-$$s_0,a_0,r_1,s_1,a_1,r_2,s_2,\dots,s_{n-1},a_{n-1},r_n,s_n$$
-
-这里$$s_i$$代表状态，$$a_i$$代表行动，$$r_{i+1}$$是执行动作后的奖励。最终状态为$$s_n$$。
 
 

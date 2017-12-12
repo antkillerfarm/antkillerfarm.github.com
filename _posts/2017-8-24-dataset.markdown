@@ -192,6 +192,10 @@ https://github.com/wecatch/china_regions
 
 最全最新中国省，市，地区json及sql数据
 
+https://mp.weixin.qq.com/s/484E_ycxQVwKOD6Lcpy-GQ
+
+开放数据集
+
 ## 大数据平台参考资源
 
 http://v.kuaidadi.com/

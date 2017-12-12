@@ -141,6 +141,10 @@ https://www.zhihu.com/question/64834116
 
 拉格朗日乘子法漏解的情况？
 
+https://mp.weixin.qq.com/s/UyNpJZ7k_q1qVdcNhrzDcQ
+
+直观详解：拉格朗日乘法和KKT条件
+
 ## 支持向量
 
 针对最优边距分类问题，我们定义：

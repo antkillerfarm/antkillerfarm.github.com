@@ -6,6 +6,18 @@ category: ML
 
 # HMM（续）
 
+## 前向算法
+
+forward算法是求解问题2的常用算法。
+
+仍以上面的掷骰子为例，要算用正常的三个骰子掷出这个结果的概率，其实就是将所有可能情况的概率进行加和计算。同样，简单而暴力的方法就是把穷举所有的骰子序列，还是计算每个骰子序列对应的概率，但是这回，我们不挑最大值了，而是把所有算出来的概率相加，得到的总概率就是我们要求的结果。
+
+穷举法的计算量太大，不适用于计算较长的马尔可夫链。但是我们可以观察一下穷举法的计算步骤。
+
+![](/images/article/forward_algorithm.png)
+
+上图是某骰子序列的穷举计算过程，可以看出第3步计算的概率和公式的某些项，实际上在之前的步骤中已经计算出来了，前向递推的计算量并没有想象中的大。
+
 ## Baum–Welch算法
 
 Baum–Welch算法是求解问题3的常用算法。
@@ -283,46 +295,4 @@ http://www.cnblogs.com/kemaswill/p/3352898.html
 http://blog.csdn.net/acdreamers/article/details/44728041
 
 L-BFGS算法
-
-## 参考
-
-http://sebastianruder.com/optimizing-gradient-descent/
-
-An overview of gradient descent optimization algorithms
-
-https://mp.weixin.qq.com/s/k_d02G2V4yd6HdGfw2mf1Q
-
-从修正Adam到理解泛化：概览2017年深度学习优化算法的最新研究进展
-
-https://mp.weixin.qq.com/s/cOCCapYrmrS_DyPkj_XRlg
-
-常见的几种最优化方法
-
-https://morvanzhou.github.io/tutorials/machine-learning/ML-intro/3-06-speed-up-learning/
-
-加速神经网络训练
-
-http://www.cnblogs.com/neopenx/p/4768388.html
-
-自适应学习率调整：AdaDelta
-
-https://mp.weixin.qq.com/s/VoBK-l_ieSg2UupC2ix2pA
-
-听说你了解深度学习最常用的学习算法：Adam优化算法？
-
-https://mp.weixin.qq.com/s/T-v9OTcJa5OQ71QmYrFtbg
-
-斯坦福大学提出SGD动量自调节器YellowFin
-
-https://mp.weixin.qq.com/s/4XOI8Dq6fqe8rhtJjeyxeA
-
-超级收敛：使用超大学习率超快速训练残差网络
-
-http://mp.weixin.qq.com/s/Q5kBCNZs3a6oiznC9-2bVg
-
-Michael Jordan新研究官方解读：如何有效地避开鞍点
-
-https://mp.weixin.qq.com/s/YRyqvlNe24mlFZ7GB9vDnw
-
-一文看懂常用的梯度下降算法
 

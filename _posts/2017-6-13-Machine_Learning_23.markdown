@@ -1,12 +1,52 @@
 ---
 layout: post
-title:  机器学习（二十三）——单分类SVM&多分类SVM, 时间序列分析, 推荐算法中的常用排序算法
+title:  机器学习（二十三）——单分类SVM&多分类SVM, 时间序列分析
 category: ML 
 ---
 
 # Optimizer
 
-## 参考（续）
+## 参考
+
+http://sebastianruder.com/optimizing-gradient-descent/
+
+An overview of gradient descent optimization algorithms
+
+https://mp.weixin.qq.com/s/k_d02G2V4yd6HdGfw2mf1Q
+
+从修正Adam到理解泛化：概览2017年深度学习优化算法的最新研究进展
+
+https://mp.weixin.qq.com/s/cOCCapYrmrS_DyPkj_XRlg
+
+常见的几种最优化方法
+
+https://morvanzhou.github.io/tutorials/machine-learning/ML-intro/3-06-speed-up-learning/
+
+加速神经网络训练
+
+http://www.cnblogs.com/neopenx/p/4768388.html
+
+自适应学习率调整：AdaDelta
+
+https://mp.weixin.qq.com/s/VoBK-l_ieSg2UupC2ix2pA
+
+听说你了解深度学习最常用的学习算法：Adam优化算法？
+
+https://mp.weixin.qq.com/s/T-v9OTcJa5OQ71QmYrFtbg
+
+斯坦福大学提出SGD动量自调节器YellowFin
+
+https://mp.weixin.qq.com/s/4XOI8Dq6fqe8rhtJjeyxeA
+
+超级收敛：使用超大学习率超快速训练残差网络
+
+http://mp.weixin.qq.com/s/Q5kBCNZs3a6oiznC9-2bVg
+
+Michael Jordan新研究官方解读：如何有效地避开鞍点
+
+https://mp.weixin.qq.com/s/YRyqvlNe24mlFZ7GB9vDnw
+
+一文看懂常用的梯度下降算法
 
 https://mp.weixin.qq.com/s/q7BI-YyhtmNzUfBMTKVdqQ
 
@@ -261,57 +301,4 @@ $$\left( 1 - \sum_{i=1}^p \phi_i L^i \right) Y_t = \left( 1 + \sum_{i=1}^q \thet
 
 >注：上面的内容只是对ARIMA模型给出一个简单的定义。实际的假设检验、参数估计的步骤，还是比较复杂的，完全可以写本书来说。
 
-参考：
-
-https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average
-
-https://en.wikipedia.org/wiki/Autoregressive%E2%80%93moving-average_model
-
-https://zhuanlan.zhihu.com/p/23534595
-
-时间序列分析：结合ARMA的卡尔曼滤波算法（该文的参考文献中有不少好文）
-
-http://blog.csdn.net/aliceyangxi1987/article/details/71079522
-
-用ARIMA模型做需求预测
-
-http://blog.csdn.net/kicilove/article/details/78315335
-
-时间序列初级理论篇
-
-https://mp.weixin.qq.com/s/K-XGuaWTcF6BDPJagaJDPQ
-
-时序数据与事件的关联分析
-
-https://mp.weixin.qq.com/s/JR-GIXwHF45OysoE0qvwzw
-
-时间序列异常检测机制的研究
-
-# 推荐算法中的常用排序算法
-
-## Pointwise方法
-
-Pranking (NIPS 2002), OAP-BPM (EMCL 2003), Ranking with Large Margin Principles (NIPS 2002), Constraint Ordinal Regression (ICML 2005)。
-
-## Pairwise方法
-
-Learning to Retrieve Information (SCC 1995), Learning to Order Things (NIPS 1998), Ranking SVM (ICANN 1999), RankBoost (JMLR 2003), LDM (SIGIR 2005), RankNet (ICML 2005), Frank (SIGIR 2007), MHR(SIGIR 2007), Round Robin Ranking (ECML 2003), GBRank (SIGIR 2007), QBRank (NIPS 2007), MPRank (ICML 2007), IRSVM (SIGIR 2006)。
-
-## Listwise方法
-
-LambdaRank (NIPS 2006), AdaRank (SIGIR 2007), SVM-MAP (SIGIR 2007), SoftRank (LR4IR 2007), GPRank (LR4IR 2007), CCA (SIGIR 2007), RankCosine (IP&M 2007), ListNet (ICML 2007), ListMLE (ICML 2008) 。
-
-## 参考
-
-https://mp.weixin.qq.com/s/YjYVE6jzySVsZmXSPivB5w
-
-达观数据搜索引擎排序实践（上篇）
-
-https://mp.weixin.qq.com/s/UpN7tAMjbFLSPcDYsWaykg
-
-达观数据搜索引擎排序实践（下篇）
-
-https://mp.weixin.qq.com/s/xigME-griWFwEvvPNqWuvg
-
-美团点评联盟广告的场景化定向排序机制
 

@@ -160,4 +160,13 @@ https://mp.weixin.qq.com/s/hBPsCUCQjT6cIKjjrHyQYg
 
 继图像识别后，图像标注系统也被对抗样本攻陷!
 
+https://mp.weixin.qq.com/s/4baaoCCdGX4iTw2MO_Y9rA
+
+熊元骏：人类行为理解研究进展
+
+https://mp.weixin.qq.com/s/MpuUdZi8CWcu0b-ij-bHjA
+
+Jeff Dean出品：用机器学习索引替代B-Trees，3倍性能提升，10-100倍空间缩小
+
+
 
