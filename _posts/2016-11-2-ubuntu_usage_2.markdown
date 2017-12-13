@@ -179,6 +179,8 @@ VMPK是一款MIDI生成工具软件，也就是俗称的“虚拟电子琴”软
 
 FYI：for your information
 
+IFF：if and only if
+
 # 远程桌面
 
 Linux下的远程桌面软件主要有RealVNC和rdesktop。前者支持VNC协议，而后者支持MS RDP协议，可连接Windows系统。

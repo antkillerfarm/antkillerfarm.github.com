@@ -194,6 +194,14 @@ http://blogs.atlassian.com/2014/05/handle-big-repositories-git/
 
 `git remote -v`
 
+## Git Extensions
+
+除了Tortoisegit之外，Git Extensions也是一个常用的GUI shell。
+
+官网：
+
+https://gitextensions.github.io/
+
 # Google Code
 
 2013.12

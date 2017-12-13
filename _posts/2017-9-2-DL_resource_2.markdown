@@ -368,6 +368,10 @@ https://mp.weixin.qq.com/s/ZCNSq5FC2REoVTKAK2mJQg
 
 分布式深度学习原理、算法详细介绍
 
+https://mp.weixin.qq.com/s/Ewiil56vMkzhO2xDWgo-Wg
+
+苹果发布Turi Create机器学习框架，5行代码开发图像识别
+
 ## Capsule
 
 https://mp.weixin.qq.com/s/Tx9JJ0cIo_rH7BDjd_hkvw
@@ -425,4 +429,8 @@ https://mp.weixin.qq.com/s/0uqS5CXVVxjX2c3P-gdSng
 https://mp.weixin.qq.com/s/k3WV7qN37r-r3VBJsrjB1A
 
 漫谈Capsule Network基本原理
+
+https://mp.weixin.qq.com/s/AchyBBTZ3X3zYSM8-9WTrA
+
+Capsule Network在TIMIT语音识别中的实践（一）
 

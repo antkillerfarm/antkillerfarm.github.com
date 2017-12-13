@@ -322,6 +322,14 @@ https://mp.weixin.qq.com/s/hjsFBVE3_IiKTZSesa44ug
 
 GAN系列学习(1)——前生今世
 
+https://mp.weixin.qq.com/s/T--R4c0QfyPS2vrGdyUlOw
+
+UIUC学者构建欺骗检测器的对抗样本！
+
+https://mp.weixin.qq.com/s/Q_1IUS-65ZAFt9w0RlZUpw
+
+谷歌开源TFGAN：轻量级生成对抗网络工具库
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
