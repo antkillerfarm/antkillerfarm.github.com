@@ -300,7 +300,11 @@ http://www.xfyun.cn/share/?p=2626
 
 http://lucacardelli.name/
 
-Luca Andrea Cardelli的个人主页。英国皇家学会会员。
+Luca Andrea Cardelli的个人主页。英国皇家学会会员。主要从事生物化学领域的信息处理和计算。
+
+https://mp.weixin.qq.com/s/ZPAE1CwhfD0PNT1MJ8erIw
+
+一种用于汽车防撞雷达的波束赋形阵列天线
 
 ## 有用的blog
 
@@ -415,6 +419,10 @@ Google Pixel 2/2XL视频稳定技术探究
 https://mp.weixin.qq.com/s/7E9QDSM095KyYwPs-wDznA
 
 成像相关颜色测量仪器简介
+
+https://mp.weixin.qq.com/s/DH3mZgh4YbnceaFGs03kOQ
+
+曹汛：计算摄像学研究
 
 # 爬虫
 
