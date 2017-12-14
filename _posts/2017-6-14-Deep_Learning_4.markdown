@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四）——RNN
+title:  深度学习（四）——词向量
 category: DL 
 ---
 
@@ -168,6 +168,10 @@ https://mp.weixin.qq.com/s/CqJ7o1-ptCBBocB3PfEuXg
 
 万物向量化：用协作学习的方法生成更广泛的实体向量
 
+https://mp.weixin.qq.com/s/UtfidoBCJ0Wjpnl_C1a7iw
+
+浅谈向量化与Hash-Trick
+
 ## 参考
 
 http://www.cnblogs.com/iloveai/p/word2vec.html
@@ -276,15 +280,6 @@ RNN是Recurrent Neural Network和Recursive Neural Network的简称。前者主�
 
 上图的展开箭头右边是RNN的时序展开结构图。从纵向来看，它只是一个3层的浅层神经网络，然而从横向来看，它却是一个深层的神经网络。可见神经网络深浅与否，不仅和模型本身的层数有关，也与神经元之间的连接方式密切相关。
 
-虽然理论上，我们可以给每一时刻赋予不同的$$U,V,W$$，然而出于简化计算和稀疏度的考量，RNN所有时刻的$$U,V,W$$都是相同的。
-
-RNN的误差反向传播算法，被称作**Backpropagation Through Time**。其主要公式如下：
-
-$$\nabla U=\frac{\partial E}{\partial U}=\sum_t\frac{\partial e_t}{\partial U} \\\nabla V=\frac{\partial E}{\partial V}=\sum_t\frac{\partial e_t}{\partial V} \\\nabla W=\frac{\partial E}{\partial W}=\sum_t\frac{\partial e_t}{\partial W}$$
-
-从上式可以看出，三个误差梯度实际上都是**时域的积分**。
-
-正因为RNN的状态和过去、现在都有关系，因此，RNN也被看作是一种拥有“记忆性”的神经网络。
 
 
 

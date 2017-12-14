@@ -195,7 +195,6 @@ https://mp.weixin.qq.com/s/HapJwwmN3-dbQvzp2jzt1w
 | SVDD | Support Vector Domain Description | 支持向量域描述 |  |
 | NMT | Neural Machine Translation | 神经机器翻译 |  |
 | BLEU | Bilingual Evaluation Understudy | 双语评估替代 |  |
-| NMT | Neural Machine Translation | 神经机器翻译 |  |
 | SMT | Statistical Machine Translation | 统计机器翻译 |  |
 | DMN | Dynamic Memory Networks | 动态记忆网络 |  |
 | GAN | Generative Adversarial Networks | 生成对抗式网络 |  |

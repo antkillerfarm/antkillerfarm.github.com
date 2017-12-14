@@ -6,6 +6,44 @@ category: DL
 
 # 花式卷积（续）
 
+## 3D卷积
+
+3D卷积一般用于视频（2D图像+1D时序）和医学影像（3D立体图像）的分析处理中。
+
+![](/images/article/conv_3d.png)
+
+如上图所示，3D卷积的kernel不再是2D的，而是3D的。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/21325913
+
+3D卷积神经网络Note01
+
+https://zhuanlan.zhihu.com/p/21331911
+
+3D卷积神经网络Note02
+
+https://zhuanlan.zhihu.com/p/31841353
+
+3D CNN阅读笔记
+
+https://zhuanlan.zhihu.com/p/25912625
+
+C3D network: 用于视频特征提取的3维卷积网络
+
+https://zhuanlan.zhihu.com/p/26350774
+
+SCNN-用于时序动作定位的多阶段3D卷积网络
+
+https://www.jiqizhixin.com/articles/2016-08-03
+
+FusionNet融合三个卷积网络：识别对象从二维升级到三维
+
+http://blog.csdn.net/zouxy09/article/details/9002508
+
+基于3D卷积神经网络的人体行为理解
+
 ## 参考
 
 https://github.com/vdumoulin/conv_arithmetic
@@ -297,29 +335,4 @@ x_0 \\ x_1 \\
 2.如果大量卷积运算的其中一方不变的话，例如CNN中的kernel，这些运算都可以在预处理阶段计算。
 
 Cook-Toom algorithm的缺点在于：当卷积核较大时，增加的加法数量以远超核大小的速度增长，最终会导致增加的加法所耗费的时间甚至超过节省下来的乘法所耗费的时间。
-
-## 最大公约数和Euclidean algorithm
-
-在介绍Winograd算法之前，我们首先介绍一下求最大公约数的Euclidean algorithm。
-
-小学课本中介绍了最大公约数（Greatest common divisor）的定义，当时给出的算法是如下图所示的短除法（Short division）：
-
-![](/images/article/Short_division.jpg)
-
-但这个算法实际上是个非常低效的方法。实际中最常用的是Euclid在他的巨著《几何原本》中，给出的**Euclidean algorithm**，中文叫做**辗转相除法**。
-
-顺便提一句，求余数的整数除法，也被称作**Euclidean division**。（普通整数除法以小数，而非余数（remainder），代替无法整除的部分）宗师就是这么牛！
-
-这里引入如下数学符号：
-
-$$m(m>0)$$整除n记作$$m \vert n$$，其定义为存在一个整数k使得$$km=n$$。
-
-余数一般用$$c=R_m[n]$$或$$c=n \mod{m}$$来表示。
-
-再引入**同余（congruences）**的概念和符号：
-
-$$x \equiv a \pmod{m}$$
-
-上式表示x除以m的余数和a除以m的余数相等，这样的关系被称为“x和a同余（模为m）”
-
 

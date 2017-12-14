@@ -4,6 +4,22 @@ title:  深度学习（十三）——花式池化, Batch Normalization
 category: DL 
 ---
 
+# Winograd（续）
+
+## 参考
+
+https://colfaxresearch.com/falcon-library/
+
+FALCON Library: Fast Image Convolution in Neural Networks on Intel Architecture
+
+https://www.intelnervana.com/winograd/
+
+"Not so fast, FFT": Winograd
+
+https://www.encyclopediaofmath.org/index.php/Winograd_small_convolution_algorithm
+
+Winograd small convolution algorithm
+
 # 花式池化
 
 池化和卷积一样，都是信号采样的一种方式。

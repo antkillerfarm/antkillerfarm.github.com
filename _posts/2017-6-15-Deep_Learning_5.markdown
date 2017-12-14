@@ -1,10 +1,22 @@
 ---
 layout: post
-title:  深度学习（五）——LSTM, 神经元激活函数进阶, DRN
+title:  深度学习（五）——RNN, LSTM, 神经元激活函数进阶
 category: DL 
 ---
 
 # RNN
+
+## RNN的基本结构（续）
+
+虽然理论上，我们可以给每一时刻赋予不同的$$U,V,W$$，然而出于简化计算和稀疏度的考量，RNN所有时刻的$$U,V,W$$都是相同的。
+
+RNN的误差反向传播算法，被称作**Backpropagation Through Time**。其主要公式如下：
+
+$$\nabla U=\frac{\partial E}{\partial U}=\sum_t\frac{\partial e_t}{\partial U} \\\nabla V=\frac{\partial E}{\partial V}=\sum_t\frac{\partial e_t}{\partial V} \\\nabla W=\frac{\partial E}{\partial W}=\sum_t\frac{\partial e_t}{\partial W}$$
+
+从上式可以看出，三个误差梯度实际上都是**时域的积分**。
+
+正因为RNN的状态和过去、现在都有关系，因此，RNN也被看作是一种拥有“记忆性”的神经网络。
 
 ## RNN的训练困难
 

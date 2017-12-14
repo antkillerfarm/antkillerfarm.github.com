@@ -6,6 +6,36 @@ category: resource
 
 # DL参考资源
 
+## Capsule（续）
+
+https://mp.weixin.qq.com/s/WspmbqlwdxKXH1cgbkuGwQ
+
+先读懂CapsNet架构然后用TensorFlow实现，这应该是最详细的教程了
+
+https://mp.weixin.qq.com/s/Ot-pRRaHaT1VRyWlLDO2uw
+
+Reddit讨论：Hinton的Capsule网络真的比CNN效果更好吗？
+
+https://mp.weixin.qq.com/s/Z32LCfi8IVP4WXkxAu6zZg
+
+Geffory Hinton的“胶囊”里到底装的什么“药”？
+
+https://mp.weixin.qq.com/s/f0TqhSW-KVwVTv54gtHyGw
+
+胶囊网络9大优势4大缺陷
+
+https://mp.weixin.qq.com/s/0uqS5CXVVxjX2c3P-gdSng
+
+欲取代CNN的Capsule Network究竟是什么来头？
+
+https://mp.weixin.qq.com/s/k3WV7qN37r-r3VBJsrjB1A
+
+漫谈Capsule Network基本原理
+
+https://mp.weixin.qq.com/s/AchyBBTZ3X3zYSM8-9WTrA
+
+Capsule Network在TIMIT语音识别中的实践（一）
+
 ## 推荐系统
 
 https://zhuanlan.zhihu.com/p/26237106
@@ -159,6 +189,14 @@ https://mp.weixin.qq.com/s/tFdnxqV5a5xZrFtB6E0AiQ
 https://mp.weixin.qq.com/s/qYWsFBKNCKCGUmizX_1sVg
 
 AlphaGo 教学工具终于上线了！
+
+https://mp.weixin.qq.com/s/JxbIeDk8_wnYu_ewUHp29g
+
+深度学习与围棋实战书籍《Deep Learning and the Game of Go》
+
+https://mp.weixin.qq.com/s/gsRnbknytz2FY2dWgdWEYg
+
+精通国际象棋的AI研究员：AlphaZero真的是一次突破吗？
 
 ## 实战
 
@@ -318,95 +356,61 @@ https://mp.weixin.qq.com/s/MK_al7CgieiVXB1MGWZ9GA
 
 听说你用JavaScript写代码？本文是你的机器学习指南
 
-## 面试
+## 工具
 
-https://www.zhihu.com/question/41233373
+https://mp.weixin.qq.com/s/TT4whft1Tj1pCEPbnMH1cA
 
-如果你是面试官，你怎么去判断一个面试者的深度学习水平？
+清华大学发布OpenNE：用于网络嵌入的开源工具包
 
-https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
+https://mp.weixin.qq.com/s/r01vfSKb4VpFXVyokb54Bg
 
-20万、50万、100万的算法工程师，到底有什么区别？
+MIT开放图像标注工具LabelMe源代码：助力机器视觉的发展
 
-https://www.zhihu.com/question/56676679/answer/151505274
+https://mp.weixin.qq.com/s/30dK7nGJOWIaa1j9QElrYA
 
-机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
+详解帝国理工集成工具TensorLayer：控制深度学习开发复杂度
 
-https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
+https://mp.weixin.qq.com/s/m_2LE2QN_8_a1hti6G0Cow
 
-面试官是如何看出你机器学习水平的？
+Netflix开源稀疏数据专用神经网络库：Vectorflow
 
-https://mp.weixin.qq.com/s?__biz=MzI3NTA0MzM1OQ==&mid=2651615534&idx=1&sn=00ecd7dc1d8472c070e720a1b63f04c4
+https://mp.weixin.qq.com/s/bMfJ1Ez6bOBjHLquuZFnmQ
 
-我如何考察面试者的机器学习水平
+Uber与斯坦福大学开源深度概率编程语言Pyro：基于PyTorch
 
-https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
+https://mp.weixin.qq.com/s/ImtSR6VwYalN6gTgjVJOsQ
 
-谷歌等巨头机器学习面试题：从逻辑回归到智力测验
+十五分钟完成Regex五天任务：FlashText，语料库数据快速清理利器
 
-## Other
+https://mp.weixin.qq.com/s/IKxweABi4IEyXjKNw9BJgA
 
-https://www.jiqizhixin.com/articles/2017-07-27-2
+正则表达式太慢？这里有一个提速100倍的方案：FlashText
 
-CVPR 2017李飞飞总结8年ImageNet历史，宣布挑战赛最终归于Kaggle
+https://mp.weixin.qq.com/s/dsxyQLHcOsNIlNAIf8FQfw
 
-https://mp.weixin.qq.com/s/TWdeHVCgEf54STvdA1QUPg
+Facebook开源相似性搜索类库Faiss，超越已知最快算法8.5倍
 
-DeepMind哈萨比斯长文：伟大的AI离不开神经科学
+https://mp.weixin.qq.com/s/3r8c63BOiiYfts9KLkXovw
 
-https://mp.weixin.qq.com/s/DQcRqWALLuPpNabCv83Vcg
+谷歌发布自然语言框架语义解析器SLING
 
-自动机器学习，神经网络自主编程
+https://mp.weixin.qq.com/s/jTXoCaXEhPPVNcJiyjtN5Q
 
-https://mp.weixin.qq.com/s/fY4vF0aPexwFi2Fu4grdzg
+谷歌宣布对外开放聊天机器人数据分析平台Chatbase
 
-大规模视觉理解竞赛WebVision冠军分享
+https://mp.weixin.qq.com/s/MhLissrrNw5fJP6I7cxFNA
 
-https://mp.weixin.qq.com/s/cO1VlYGwdRBAbPs7IgvcAA
+360推出XLearning：可支持多种机器学习，深度学习框架调度系统！
 
-超越传统强化学习的价值分布方法
+https://mp.weixin.qq.com/s/ZFtUOtb8mxa11zBHYbza9A
 
-https://mp.weixin.qq.com/s/HlqzSdhj3Q3nX4Zl63PM0A
+动态神经网络工具包Dynet
 
-商汤科技23篇论文横扫CVPR
+https://mp.weixin.qq.com/s/KKy0EBVwrdAgqeG07H9vjg
 
-https://mp.weixin.qq.com/s/TelGG-uVQyxwQjiDGE1pqA
+中科院发布：深度文本匹配开源工具（MatchZoo）
 
-特征金字塔网络FPN
+https://mp.weixin.qq.com/s/CetbsnDNQiyaV7grWGgJCg
 
-https://mp.weixin.qq.com/s/RpaOrngeXTKycLb3iCygZw
-
-利用贝叶斯神经网络进行随机动力系统中的学习与策略搜索
-
-https://mp.weixin.qq.com/s/j5YPHYEPioLiEIDc6lK3kA
-
-在线视频衣物精确检索技术，开启刷剧败明星同款时代
-
-https://mp.weixin.qq.com/s/6KC1vhKcyqQ0eZEXJyPqVA
-
-密集连接卷积网络
-
-https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
-
-北大：一种基于新闻特征抽取和循环神经网络的股票预测方法
-
-https://mp.weixin.qq.com/s/UboQNEywHSBAYc0740qmzQ
-
-让机器学会创造新的概念：DeepMind提出符号-概念关联网络SCAN
-
-https://mp.weixin.qq.com/s/mEnYNs9tP-246lVM3WFgZg
-
-颜水成团队CVPR新架构，提速300%
-
-https://mp.weixin.qq.com/s/2FDVt1-U6f0gicCVtZh4cA
-
-伯克利联合OpenAI发布新型深度学习方法TCML：学习通用型算法
-
-http://mp.weixin.qq.com/s/eXY0jVdWMg3B_CQ514ngsA
-
-深度学习各方面应用
-
-http://mp.weixin.qq.com/s/oBy_Xl7FSBUd46H9E8yUbA
-
-AI博士五星指南：入行自评，选大公司还是初创企业
+谷歌发布机器学习工具库Kubeflow：可提供最佳OSS解决方案
 

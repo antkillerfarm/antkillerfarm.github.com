@@ -60,10 +60,6 @@ WinPcap---www.winpcap.org
 
 一个windows下的网络抓包工具。
 
-Bonobo Git Server---www.bonobogitserver.com
-
-一个基于IIS的Git服务器。操作简单，但是没有提供文件夹一级的权限管理。
-
 CommMonitor---http://www.ceiwei.com/CommMonitor.html
 
 一个串口监控工具。

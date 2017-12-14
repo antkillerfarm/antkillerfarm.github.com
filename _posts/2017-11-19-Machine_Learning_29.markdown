@@ -240,6 +240,10 @@ https://mp.weixin.qq.com/s/ktp4yfxHMt3103QzYhELrg
 
 从头开始在Python中开发深度学习字幕生成模型
 
+https://mp.weixin.qq.com/s/fHuHICI-_xAXIOkV0abpPg
+
+仅需15分钟，使用OpenCV+Keras轻松破解验证码
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。

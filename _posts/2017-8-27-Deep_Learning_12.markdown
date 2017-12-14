@@ -4,9 +4,31 @@ title:  深度学习（十二）——Winograd（2）
 category: DL 
 ---
 
-# Winograd
+# Winograd（续）
 
-## 最大公约数和Euclidean algorithm（续）
+## 最大公约数和Euclidean algorithm
+
+在介绍Winograd算法之前，我们首先介绍一下求最大公约数的Euclidean algorithm。
+
+小学课本中介绍了最大公约数（Greatest common divisor）的定义，当时给出的算法是如下图所示的短除法（Short division）：
+
+![](/images/article/Short_division.jpg)
+
+但这个算法实际上是个非常低效的方法。实际中最常用的是Euclid在他的巨著《几何原本》中，给出的**Euclidean algorithm**，中文叫做**辗转相除法**。
+
+顺便提一句，求余数的整数除法，也被称作**Euclidean division**。（普通整数除法以小数，而非余数（remainder），代替无法整除的部分）宗师就是这么牛！
+
+这里引入如下数学符号：
+
+$$m(m>0)$$整除n记作$$m \vert n$$，其定义为存在一个整数k使得$$km=n$$。
+
+余数一般用$$c=R_m[n]$$或$$c=n \mod{m}$$来表示。
+
+再引入**同余（congruences）**的概念和符号：
+
+$$x \equiv a \pmod{m}$$
+
+上式表示x除以m的余数和a除以m的余数相等，这样的关系被称为“x和a同余（模为m）”
 
 Euclidean algorithm的步骤如下图所示：
 
@@ -274,18 +296,5 @@ http://www.cnblogs.com/jianyingzhou/p/4303578.html
 
 convolution,fft, 加速
 
-## 参考
-
-https://colfaxresearch.com/falcon-library/
-
-FALCON Library: Fast Image Convolution in Neural Networks on Intel Architecture
-
-https://www.intelnervana.com/winograd/
-
-"Not so fast, FFT": Winograd
-
-https://www.encyclopediaofmath.org/index.php/Winograd_small_convolution_algorithm
-
-Winograd small convolution algorithm
 
 

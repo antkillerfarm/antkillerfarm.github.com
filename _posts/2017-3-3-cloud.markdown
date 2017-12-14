@@ -197,6 +197,10 @@ http://www.cnblogs.com/bluejoe/p/5115845.html
 
 Hive体系结构介绍
 
+https://mp.weixin.qq.com/s/vM5DM6CEVuKjcWBxZZSbhA
+
+既生Mahout，何生Spark MLlib？
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/eqI5fVuF68RQWb1a5O219w

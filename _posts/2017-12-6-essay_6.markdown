@@ -88,6 +88,70 @@ http://blog.csdn.net/outer_form/article/details/50588307
 
 # DL参考资源
 
+https://www.jiqizhixin.com/articles/2017-07-27-2
+
+CVPR 2017李飞飞总结8年ImageNet历史，宣布挑战赛最终归于Kaggle
+
+https://mp.weixin.qq.com/s/TWdeHVCgEf54STvdA1QUPg
+
+DeepMind哈萨比斯长文：伟大的AI离不开神经科学
+
+https://mp.weixin.qq.com/s/DQcRqWALLuPpNabCv83Vcg
+
+自动机器学习，神经网络自主编程
+
+https://mp.weixin.qq.com/s/fY4vF0aPexwFi2Fu4grdzg
+
+大规模视觉理解竞赛WebVision冠军分享
+
+https://mp.weixin.qq.com/s/cO1VlYGwdRBAbPs7IgvcAA
+
+超越传统强化学习的价值分布方法
+
+https://mp.weixin.qq.com/s/HlqzSdhj3Q3nX4Zl63PM0A
+
+商汤科技23篇论文横扫CVPR
+
+https://mp.weixin.qq.com/s/TelGG-uVQyxwQjiDGE1pqA
+
+特征金字塔网络FPN
+
+https://mp.weixin.qq.com/s/RpaOrngeXTKycLb3iCygZw
+
+利用贝叶斯神经网络进行随机动力系统中的学习与策略搜索
+
+https://mp.weixin.qq.com/s/j5YPHYEPioLiEIDc6lK3kA
+
+在线视频衣物精确检索技术，开启刷剧败明星同款时代
+
+https://mp.weixin.qq.com/s/6KC1vhKcyqQ0eZEXJyPqVA
+
+密集连接卷积网络
+
+https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
+
+北大：一种基于新闻特征抽取和循环神经网络的股票预测方法
+
+https://mp.weixin.qq.com/s/UboQNEywHSBAYc0740qmzQ
+
+让机器学会创造新的概念：DeepMind提出符号-概念关联网络SCAN
+
+https://mp.weixin.qq.com/s/mEnYNs9tP-246lVM3WFgZg
+
+颜水成团队CVPR新架构，提速300%
+
+https://mp.weixin.qq.com/s/2FDVt1-U6f0gicCVtZh4cA
+
+伯克利联合OpenAI发布新型深度学习方法TCML：学习通用型算法
+
+http://mp.weixin.qq.com/s/eXY0jVdWMg3B_CQ514ngsA
+
+深度学习各方面应用
+
+http://mp.weixin.qq.com/s/oBy_Xl7FSBUd46H9E8yUbA
+
+AI博士五星指南：入行自评，选大公司还是初创企业
+
 https://mp.weixin.qq.com/s/Ns8oD_HBpFoumMMDbMq8-g
 
 DeepMind视频行为分类竞赛，百度IDL获第一
@@ -168,5 +232,7 @@ https://mp.weixin.qq.com/s/MpuUdZi8CWcu0b-ij-bHjA
 
 Jeff Dean出品：用机器学习索引替代B-Trees，3倍性能提升，10-100倍空间缩小
 
+https://mp.weixin.qq.com/s/aJdNoBrt438yj8arLSNHwg
 
+谷歌用ML模型替代数据库组件，或彻底改变数据系统开发
 

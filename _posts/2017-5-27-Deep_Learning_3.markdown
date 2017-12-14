@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三）——CNN, Autoencoder, 词向量
+title:  深度学习（三）——CNN, Autoencoder
 category: DL 
 ---
 

@@ -340,4 +340,16 @@ https://mp.weixin.qq.com/s/bzjRlFfh7tz4OWVpGnNPwQ
 
 揭秘阿里小蜜：基于检索模型和生成模型相结合的聊天引擎
 
+https://mp.weixin.qq.com/s/4fYvp9XFyJP4fE9BYvYLBw
+
+百度AAAI 2018论文提出新型NMT模型，性能堪比深层模型
+
+https://mp.weixin.qq.com/s/acCd1G1wnRZtleudUKhuWA
+
+一文概述2017年深度学习NLP重大进展与趋势
+
+https://mp.weixin.qq.com/s/kbF8WnaVWf6nOpzvbELpOw
+
+产品评论分析系统
+
 

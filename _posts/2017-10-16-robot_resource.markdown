@@ -426,4 +426,8 @@ https://mp.weixin.qq.com/s/WCj0SbWbzvGPAODKUUdrOA
 
 根因分析的探索
 
+https://mp.weixin.qq.com/s/lQKD83sKwgcrBH6o_QUxvg
+
+抛弃爬下来的灰色数据，有门槛的风控怎么做？
+
 

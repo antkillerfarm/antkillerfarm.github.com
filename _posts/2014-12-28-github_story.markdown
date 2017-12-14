@@ -202,6 +202,24 @@ http://blogs.atlassian.com/2014/05/handle-big-repositories-git/
 
 https://gitextensions.github.io/
 
+## Git Server
+
+### Bonobo Git Server
+
+一个基于IIS的Git服务器。操作简单，但是没有提供文件夹一级的权限管理。
+
+官网：
+
+https://bonobogitserver.com/
+
+### Gerrit
+
+Gerrit，一种免费、开放源代码的代码审查软件，它使用Git作为底层版本控制系统。
+
+官网：
+
+https://www.gerritcodereview.com/
+
 # Google Code
 
 2013.12

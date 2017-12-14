@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（六）——Bi-directional RNN, Attention
+title:  深度学习（六）——DRN, Bi-directional RNN, Attention
 category: DL 
 ---
 

@@ -80,6 +80,10 @@ https://mp.weixin.qq.com/s/zExzGJ-QMldHIi71jKnq_Q
 
 CMU“冷扑大师”不完美信息博弈研究获奖
 
+https://mp.weixin.qq.com/s/WMDbCdrX_3W22Qfh_joB-A
+
+一文读懂人工智能打德扑
+
 https://mp.weixin.qq.com/s/x0G-LNCano7qjGdpj-fpCQ
 
 2017年度星际争霸AI竞赛结果出炉
@@ -119,6 +123,10 @@ https://mp.weixin.qq.com/s/Wqy-GeXpW8s0j7m5OYpcDA
 https://mp.weixin.qq.com/s/ma2SgFuNYu50oexnfBYYLw
 
 用AI打王者荣耀？认真谈谈强化学习的价值
+
+https://mp.weixin.qq.com/s/28r1deIM2-eDOpX29QWLfw
+
+AI真的会杀人？DeepMind开发了二维网格游戏来做测试
 
 ## TPU & GPU
 
@@ -406,31 +414,5 @@ https://mp.weixin.qq.com/s/R9pDEc7zqZdttLJGCfiv2w
 
 TensorFlow Pytorch Keras代码实现深度学习大神Hinton NIPS2017 Capsule论文
 
-https://mp.weixin.qq.com/s/WspmbqlwdxKXH1cgbkuGwQ
 
-先读懂CapsNet架构然后用TensorFlow实现，这应该是最详细的教程了
-
-https://mp.weixin.qq.com/s/Ot-pRRaHaT1VRyWlLDO2uw
-
-Reddit讨论：Hinton的Capsule网络真的比CNN效果更好吗？
-
-https://mp.weixin.qq.com/s/Z32LCfi8IVP4WXkxAu6zZg
-
-Geffory Hinton的“胶囊”里到底装的什么“药”？
-
-https://mp.weixin.qq.com/s/f0TqhSW-KVwVTv54gtHyGw
-
-胶囊网络9大优势4大缺陷
-
-https://mp.weixin.qq.com/s/0uqS5CXVVxjX2c3P-gdSng
-
-欲取代CNN的Capsule Network究竟是什么来头？
-
-https://mp.weixin.qq.com/s/k3WV7qN37r-r3VBJsrjB1A
-
-漫谈Capsule Network基本原理
-
-https://mp.weixin.qq.com/s/AchyBBTZ3X3zYSM8-9WTrA
-
-Capsule Network在TIMIT语音识别中的实践（一）
 

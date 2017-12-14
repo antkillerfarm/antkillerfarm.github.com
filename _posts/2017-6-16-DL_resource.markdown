@@ -116,9 +116,9 @@ https://mp.weixin.qq.com/s/0u4eFeMbbsSgVPVKHbAK7g
 
 深度学习每日摘要迄今所有文章汇总，其中包含《漫谈RNN》和《漫谈深度强化学习》两个专辑
 
-https://mp.weixin.qq.com/s/1apRt872idF7G1jBYvZJhA
+https://mp.weixin.qq.com/s/NdOhtEIN02tGqEzNvCB26Q
 
-人工智能领域24个主题知识资料全集（入门/进阶/论文/综述/视频/专家等）
+人工智能领域26个主题知识资料全集（入门/进阶/论文/综述/视频/专家等）
 
 http://www.jianshu.com/p/2be349a89a12
 
@@ -428,58 +428,33 @@ https://mp.weixin.qq.com/s/ULciN9h2IybE59JMO6Kcgg
 
 清华大学段路明组提出生成模型的量子算法
 
-## 工具
+https://mp.weixin.qq.com/s/egmodqeThnw5H7DwKRwQbw
 
-https://mp.weixin.qq.com/s/TT4whft1Tj1pCEPbnMH1cA
+如何运用数学进行高效生产？（模拟退火算法）
 
-清华大学发布OpenNE：用于网络嵌入的开源工具包
+## 面试
 
-https://mp.weixin.qq.com/s/r01vfSKb4VpFXVyokb54Bg
+https://www.zhihu.com/question/41233373
 
-MIT开放图像标注工具LabelMe源代码：助力机器视觉的发展
+如果你是面试官，你怎么去判断一个面试者的深度学习水平？
 
-https://mp.weixin.qq.com/s/30dK7nGJOWIaa1j9QElrYA
+https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
 
-详解帝国理工集成工具TensorLayer：控制深度学习开发复杂度
+20万、50万、100万的算法工程师，到底有什么区别？
 
-https://mp.weixin.qq.com/s/m_2LE2QN_8_a1hti6G0Cow
+https://www.zhihu.com/question/56676679/answer/151505274
 
-Netflix开源稀疏数据专用神经网络库：Vectorflow
+机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
 
-https://mp.weixin.qq.com/s/bMfJ1Ez6bOBjHLquuZFnmQ
+https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
 
-Uber与斯坦福大学开源深度概率编程语言Pyro：基于PyTorch
+面试官是如何看出你机器学习水平的？
 
-https://mp.weixin.qq.com/s/ImtSR6VwYalN6gTgjVJOsQ
+https://mp.weixin.qq.com/s?__biz=MzI3NTA0MzM1OQ==&mid=2651615534&idx=1&sn=00ecd7dc1d8472c070e720a1b63f04c4
 
-十五分钟完成Regex五天任务：FlashText，语料库数据快速清理利器
+我如何考察面试者的机器学习水平
 
-https://mp.weixin.qq.com/s/dsxyQLHcOsNIlNAIf8FQfw
+https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
 
-Facebook开源相似性搜索类库Faiss，超越已知最快算法8.5倍
-
-https://mp.weixin.qq.com/s/3r8c63BOiiYfts9KLkXovw
-
-谷歌发布自然语言框架语义解析器SLING
-
-https://mp.weixin.qq.com/s/jTXoCaXEhPPVNcJiyjtN5Q
-
-谷歌宣布对外开放聊天机器人数据分析平台Chatbase
-
-https://mp.weixin.qq.com/s/MhLissrrNw5fJP6I7cxFNA
-
-360推出XLearning：可支持多种机器学习，深度学习框架调度系统！
-
-https://mp.weixin.qq.com/s/ZFtUOtb8mxa11zBHYbza9A
-
-动态神经网络工具包Dynet
-
-https://mp.weixin.qq.com/s/KKy0EBVwrdAgqeG07H9vjg
-
-中科院发布：深度文本匹配开源工具（MatchZoo）
-
-https://mp.weixin.qq.com/s/CetbsnDNQiyaV7grWGgJCg
-
-谷歌发布机器学习工具库Kubeflow：可提供最佳OSS解决方案
-
+谷歌等巨头机器学习面试题：从逻辑回归到智力测验
 

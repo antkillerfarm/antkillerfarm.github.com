@@ -444,4 +444,7 @@ https://mp.weixin.qq.com/s/iUmRZMpQJpaV4jNxmp-z4w
 
 面向搜索的深度学习实战书籍和代码《Deep Learning for Search》
 
+https://mp.weixin.qq.com/s/txT8qLxpQQ62DAPVS1NTDA
+
+DeepMind深度学习最佳实践与新技术展望
 
