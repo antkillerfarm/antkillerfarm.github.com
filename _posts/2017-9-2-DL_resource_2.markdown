@@ -294,6 +294,10 @@ https://mp.weixin.qq.com/s/Qfbc2iQnXacOqOGIrpRQRw
 
 Tensor Core究竟有多快？全面对比英伟达Tesla V100/P100的RNN加速能力
 
+https://mp.weixin.qq.com/s/uzeeZiaAFdA0C_zAcX756w
+
+深度学习架构之争
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293

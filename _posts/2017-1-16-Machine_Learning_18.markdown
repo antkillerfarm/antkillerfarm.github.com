@@ -160,11 +160,11 @@ $$Gini\_index(D,a)=\sum_{v=1}^V\frac{|D^v|}{|D|}Gini(D^v)$$
 
 GBDT这个算法有很多名字，但都是同一个算法：
 
-GBRT (Gradient Boost Regression Tree)渐进梯度回归树
+GBRT(Gradient Boost Regression Tree)渐进梯度回归树
 
-GBDT (Gradient Boost Decision Tree)渐进梯度决策树
+GBDT(Gradient Boost Decision Tree)渐进梯度决策树
 
-MART (Multiple Additive Regression Tree)多决策回归树
+MART(Multiple Additive Regression Tree)多决策回归树
 
 Tree Net决策树网络
 
