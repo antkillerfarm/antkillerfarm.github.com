@@ -244,6 +244,10 @@ https://mp.weixin.qq.com/s/fHuHICI-_xAXIOkV0abpPg
 
 仅需15分钟，使用OpenCV+Keras轻松破解验证码
 
+https://mp.weixin.qq.com/s/I7IUFRVucnJLbGaTqGIXXw
+
+如何使用Keras集成多个卷积网络并实现共同预测
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。

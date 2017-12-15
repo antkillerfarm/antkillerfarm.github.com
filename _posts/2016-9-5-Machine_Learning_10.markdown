@@ -93,6 +93,12 @@ $$J(Q,\theta)=\sum_i\sum_{z^{(i)}}Q_i(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\theta
 
 则EM算法可以看作是J函数的坐标上升法。E-Step固定$$\theta$$，优化Q；M-Step固定Q，优化$$\theta$$。
 
+参考：
+
+https://mp.weixin.qq.com/s/NbM4sY93kaG5qshzgZzZIQ
+
+EM算法的九层境界：​Hinton和Jordan理解的EM算法
+
 ## 重新审视混合高斯模型
 
 下面给出混合高斯模型各参数的推导过程。
