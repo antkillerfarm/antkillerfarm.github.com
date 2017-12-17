@@ -268,6 +268,14 @@ https://mp.weixin.qq.com/s/K2DW_ntSWrlySpxgorF9dA
 
 Python强化学习实战，Anaconda公司的高级数据科学家讲解
 
+https://zhuanlan.zhihu.com/p/32089849
+
+概要：NIPS 2017 Deep Learning for Robotics Keynote
+
+https://mp.weixin.qq.com/s/CCQOHRCAolsorm8FEPdjoQ
+
+什么时候强化学习未必好用？
+
 # NN的INT8计算
 
 ## 概述
@@ -355,4 +363,9 @@ Long-term Recurrent Convolutional Networks是LSTM的一种应用方式，它结�
 https://mp.weixin.qq.com/s/4IHzOAvNhHG9c8GP0zXVkQ
 
 Simple Recurrent Unit For Sentence Classification
+
+https://mp.weixin.qq.com/s/h3fF6Zvr1rSzSMpqdu8B0A
+
+电子科大提出BT-RNN：替代全连接操作而大幅度提升LSTM效率
+
 

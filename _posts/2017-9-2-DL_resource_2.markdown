@@ -128,6 +128,10 @@ https://mp.weixin.qq.com/s/28r1deIM2-eDOpX29QWLfw
 
 AI真的会杀人？DeepMind开发了二维网格游戏来做测试
 
+https://mp.weixin.qq.com/s/jbzkq6UHsTu18fdGJzDxMw
+
+你也可以成为游戏高手，Facebook FAIR实验室田渊栋研究员PPT详解
+
 ## TPU & GPU
 
 https://zhuanlan.zhihu.com/p/25382177
@@ -383,6 +387,10 @@ https://mp.weixin.qq.com/s/ZCNSq5FC2REoVTKAK2mJQg
 https://mp.weixin.qq.com/s/Ewiil56vMkzhO2xDWgo-Wg
 
 苹果发布Turi Create机器学习框架，5行代码开发图像识别
+
+https://mp.weixin.qq.com/s/yTZs_rQnuZK1GAy3V1Cuog
+
+一文读懂百度PaddlePaddle EDL技术
 
 ## Capsule
 

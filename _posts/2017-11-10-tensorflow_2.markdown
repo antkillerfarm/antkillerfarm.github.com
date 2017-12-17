@@ -423,4 +423,25 @@ https://mp.weixin.qq.com/s/pBR4wMITrigbSVAvn0d6vQ
 
 利用TensorFlow实现上下文的Chat-bots
 
+https://mp.weixin.qq.com/s/ww0nd07DaK4eVcexqebn3g
+
+基于TensorFlow卷积神经网络的短期股票预测
+
+https://mp.weixin.qq.com/s/n_zU7Rg7v6PwjZWEF88fNA
+
+如何使用TensorFlow实现音频分类任务
+
+https://mp.weixin.qq.com/s/UbBJYOmWtUXPFliRMyzDrg
+
+最新TensorFlow专业深度学习实战书籍和代码《Pro Deep Learning with TensorFlow》
+
+https://mp.weixin.qq.com/s/skl5w2cJaO3mYtr656lb9Q
+
+见人识面，TensorFlow实现人脸性别/年龄识别
+
+https://mp.weixin.qq.com/s/g2xMUmhxUTuQugR2PWUJtw
+
+组成TensorFlow核心的六篇论文
+
+
 

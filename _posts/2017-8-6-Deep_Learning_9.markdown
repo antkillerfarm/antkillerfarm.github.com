@@ -322,6 +322,10 @@ https://mp.weixin.qq.com/s/hjsFBVE3_IiKTZSesa44ug
 
 GAN系列学习(1)——前生今世
 
+https://mp.weixin.qq.com/s/JRyQ5vp_zDwcG3X15e32Gw
+
+GAN系列学习(2)——前生今世
+
 https://mp.weixin.qq.com/s/T--R4c0QfyPS2vrGdyUlOw
 
 UIUC学者构建欺骗检测器的对抗样本！

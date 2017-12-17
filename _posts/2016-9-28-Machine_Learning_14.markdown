@@ -146,6 +146,10 @@ https://mp.weixin.qq.com/s/pNG8u8V7zp6fLFF9TomEug
 
 史上最全面的正则化技术总结与分析
 
+https://mp.weixin.qq.com/s/PMisvVy4EwEF-5xEY5LrwA
+
+从损失函数的角度详解常见机器学习算法
+
 # 协同过滤的ALS算法
 
 ## 协同过滤概述

@@ -86,6 +86,10 @@ https://mp.weixin.qq.com/s/MuV_kamfsUgcradKIaXGbw
 
 逻辑回归（Logistic Regression）模型简介
 
+https://mp.weixin.qq.com/s/YQ8l87EPw6EEhNy8MIU6Cg
+
+区分识别机器学习中的分类与回归
+
 ## 指数类分布
 
 线性回归和对数回归的迭代公式相同不是偶然的，它们都是指数类分布的特例。

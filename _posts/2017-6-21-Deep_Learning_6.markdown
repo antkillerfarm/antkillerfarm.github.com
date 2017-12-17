@@ -269,3 +269,7 @@ https://zhuanlan.zhihu.com/p/31547842
 
 深度学习中Attention Mechanism详细介绍：原理、分类及应用
 
+https://zhuanlan.zhihu.com/p/32089282
+
+Attention学习笔记
+

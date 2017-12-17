@@ -266,6 +266,10 @@ https://mp.weixin.qq.com/s/h-vgHkzLjh9AAa6Z0lZqlg
 
 基于物理渲染(PBR)的车漆技术
 
+https://zhuanlan.zhihu.com/p/32095589
+
+在《硬影像》与罗登老师/导演聊渲染技术
+
 https://www.codewar.cn/
 
 CodeCombat是一个让学生通过玩游戏学习计算机科学的平台
@@ -365,6 +369,10 @@ https://mp.weixin.qq.com/s/VfsenlyT9QHyj9_Oge8dRg
 https://mp.weixin.qq.com/s/PgfE5wL8W4I73HNyyQmpvg
 
 用Python代码建个数据实验室，顺利入坑比特币
+
+https://mp.weixin.qq.com/s/cmxruTYtOZTI2iPh1nlIBw
+
+AI与区块链会碰撞出什么样的火花？取代传统银行系统！？
 
 # 数字成像
 

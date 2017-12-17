@@ -139,6 +139,10 @@ https://mp.weixin.qq.com/s/tJ_FbL2nFQfkvKqpQJ8kmg
 
 从特征分解到协方差矩阵：详细剖析和实现PCA算法
 
+https://mp.weixin.qq.com/s/dDdyaA7Nxqa8tBE_qQ80Dw
+
+典型相关性分析(CCA)详解
+
 # loss function比较
 
 ![](/images/article/loss_function.png)

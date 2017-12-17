@@ -284,6 +284,14 @@ https://mp.weixin.qq.com/s/zhIyZ9MEFXAuIVUxAGkW-w
 
 人脸对齐之GBDT(ERT)算法解读
 
+https://mp.weixin.qq.com/s/1g9PXc_3nhKMf1_-E_cVAA
+
+图像识别的原理、过程、应用前景，精华篇！
+
+https://mp.weixin.qq.com/s/CvdeV5xgUF0kStJQdRst0w
+
+从传统方法到深度学习，人脸关键点检测方法综述
+
 # 手势识别
 
 https://zhuanlan.zhihu.com/p/26630215

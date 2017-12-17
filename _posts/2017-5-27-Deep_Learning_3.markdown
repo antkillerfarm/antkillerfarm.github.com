@@ -210,6 +210,10 @@ https://mp.weixin.qq.com/s/XZeZX8zTtNom0az_ralp4A
 
 ImageNet冠军带你入门计算机视觉：卷积神经网络
 
+https://mp.weixin.qq.com/s/t8jg_bpEcQiJmgIqKarefQ
+
+卷积神经网络CNN学习笔记
+
 # Autoencoder
 
 Bengio在2003年的《A neural probabilistic language model》中指出，维度过高，会导致每次学习，都会强制改变大部分参数。

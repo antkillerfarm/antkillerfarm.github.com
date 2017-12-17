@@ -268,3 +268,20 @@ https://mp.weixin.qq.com/s/Pn3YLetgcf3-xoTvBcvDUQ
 
 基于信息理论的机器学习-中科院自动化所胡包钢研究员教程分享
 
+https://mp.weixin.qq.com/s/pTlELRhUL9Zg50HXDWjbqw
+
+基于双流递归神经网络的人体骨架行为识别！
+
+https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg
+
+深度离散哈希算法，可用于图像检索！
+
+https://mp.weixin.qq.com/s/VSQEFD2fQVrjlJ-LNn0CGg
+
+李飞飞等人提出MentorNet：让深度神经网络克服大数据中的噪声
+
+https://mp.weixin.qq.com/s/ZlVuVGW_XA_MTgBJhMmqXg
+
+DeepXplore：深度学习系统的自动化白盒测试
+
+

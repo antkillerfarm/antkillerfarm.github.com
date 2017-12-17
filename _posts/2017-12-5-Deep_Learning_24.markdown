@@ -263,6 +263,10 @@ https://mp.weixin.qq.com/s/w9_D1_VVhk9md4RANaipDg
 
 Mozilla开源语音识别模型和世界第二大语音数据集
 
+https://mp.weixin.qq.com/s/E8brCI73IWY3P47IYPxSkg
+
+谷歌发布全新端到端语音识别系统：词错率降至5.6%
+
 ## Kaldi
 
 Kaldi是一个语音识别的工具包。官网：

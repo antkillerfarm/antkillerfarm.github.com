@@ -352,4 +352,9 @@ https://mp.weixin.qq.com/s/kbF8WnaVWf6nOpzvbELpOw
 
 产品评论分析系统
 
+https://mp.weixin.qq.com/s/PSs0H237ldauSZhlMlNHXA
+
+CMU邢波：基于双向语言模型的生物医学命名实体识别，无标签数据提升NER效果
+
+
 

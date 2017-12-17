@@ -71,6 +71,16 @@ ERM是一类基本的学习算法，也是本节关注的焦点。
 
 $$\hat h=\arg\min_{h\in \mathcal{H}}\hat\varepsilon(h)$$
 
+参考：
+
+http://www.jianshu.com/p/f1433317bf48
+
+你真的理解机器学习中偏差-方差之间的权衡吗？
+
+https://mp.weixin.qq.com/s/nRaM87Wao4XdHwltV1nh-A
+
+思考VC维与PAC：如何理解深度神经网络中的泛化理论？
+
 ## $$\mathcal{H}$$为有限集的情况
 
 根据之前的讨论，我们做如下定义：
