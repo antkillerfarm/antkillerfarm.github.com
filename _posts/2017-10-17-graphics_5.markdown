@@ -230,4 +230,29 @@ https://mp.weixin.qq.com/s/OxNj9fWaEMh8SuQiK52HWg
 
 sklearn中PCA库讲解与实战
 
+# 大数据平台参考资源
+
+https://mp.weixin.qq.com/s/O8pj4pChyw8PK-G_4A3DWg
+
+发布订阅消息系统Apache Pulsar简介
+
+https://mp.weixin.qq.com/s/ToJJTBWJXlpj3LkDj5YYvw
+
+为什么要选择Apache Pulsar
+
+https://mp.weixin.qq.com/s/crluKkEdvfZlHyF_gQm1ZA
+
+漫谈推荐系统及数据库技术
+
+https://mp.weixin.qq.com/s/CwUW-Ntb4qphrqha24P-Og
+
+漫谈推荐系统及数据库技术（二）——分布式数据库技术
+
+https://mp.weixin.qq.com/s/3oQ2yYGNuEz1cuEo4xLZzA
+
+如何解决大规模机器学习的三大痛点？
+
+http://www.jianshu.com/p/7a720bd7d6b5
+
+如何架构一个数据工程
 

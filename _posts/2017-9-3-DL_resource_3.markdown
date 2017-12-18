@@ -414,3 +414,9 @@ https://mp.weixin.qq.com/s/CetbsnDNQiyaV7grWGgJCg
 
 谷歌发布机器学习工具库Kubeflow：可提供最佳OSS解决方案
 
+https://mp.weixin.qq.com/s/3n6HrpIqSbOKZ-ysTcOTWA
+
+GitHub新项目Deepo：一键安装11项深度学习框架与环境（基于docker）
+
+
+

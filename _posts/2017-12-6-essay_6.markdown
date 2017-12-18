@@ -288,5 +288,9 @@ https://mp.weixin.qq.com/s/WMpcamrHjUDnYwqyISdooA
 
 斯坦福Jure Leskovec图表示学习：无监督和有监督方法
 
+https://mp.weixin.qq.com/s/X6m4ZHDKY4gC-v0YN5g4YA
+
+谷歌云提出渐进式神经架构搜索：高效搜索高质量CNN结构
+
 
 

@@ -356,5 +356,8 @@ https://mp.weixin.qq.com/s/PSs0H237ldauSZhlMlNHXA
 
 CMU邢波：基于双向语言模型的生物医学命名实体识别，无标签数据提升NER效果
 
+https://mp.weixin.qq.com/s/5ftsfNSAb7pAizVA5m-xXw
+
+2017 年回顾：NLP、深度学习与大数据
 
 

@@ -173,6 +173,10 @@ http://www.jianshu.com/p/b724411571ab
 
 ResNet到底深不深？
 
+https://mp.weixin.qq.com/s/Kgwwq5XOt88WW6KL8gADmQ
+
+你必须要知道CNN模型：ResNet
+
 # Bi-directional RNN
 
 众所周知，RNN在处理长距离依赖关系时会出现问题。LSTM虽然改进了一些，但也只能缓解问题，而不能解决该问题。

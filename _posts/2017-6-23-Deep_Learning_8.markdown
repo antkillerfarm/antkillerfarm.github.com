@@ -84,6 +84,10 @@ https://zhuanlan.zhihu.com/p/31006686
 
 从LeNet-5到DenseNet
 
+https://mp.weixin.qq.com/s/L9JY875UjXMv_slAakBrGA
+
+从AlexNet到残差网络，理解卷积神经网络的不同架构
+
 # GAN
 
 ## 概况
