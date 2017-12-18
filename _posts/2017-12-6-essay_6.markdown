@@ -284,4 +284,9 @@ https://mp.weixin.qq.com/s/ZlVuVGW_XA_MTgBJhMmqXg
 
 DeepXplore：深度学习系统的自动化白盒测试
 
+https://mp.weixin.qq.com/s/WMpcamrHjUDnYwqyISdooA
+
+斯坦福Jure Leskovec图表示学习：无监督和有监督方法
+
+
 

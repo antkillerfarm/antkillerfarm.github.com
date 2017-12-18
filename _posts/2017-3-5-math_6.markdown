@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（六）——自相关&互相关&卷积, 闵可夫斯基距离, 马氏距离, Gabriel's Horn, 函数连续性
+title:  数学狂想曲（六）——自相关&互相关&卷积, 闵可夫斯基距离, 马氏距离, 数学的深渊, Gabriel's Horn, 函数连续性
 category: math 
 ---
 
@@ -125,6 +125,10 @@ $$d_M(x,y)=\sqrt{(\frac{x_1-y_1}{s_1})^2+\dots+(\frac{x_p-y_p}{s_p})^2}=\sqrt{(x
 # 数学的深渊
 
 ![](/images/article/math_trench.jpg)
+
+当然，类似的还有个AI的深渊：
+
+![](/images/article/AI_hell.jpg)
 
 # Gabriel's Horn
 

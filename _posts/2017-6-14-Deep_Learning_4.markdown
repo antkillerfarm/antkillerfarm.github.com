@@ -266,6 +266,10 @@ https://mp.weixin.qq.com/s/reT4lAjwo4fHV4ctR9zbxQ
 
 漫谈Word2vec之skip-gram模型
 
+https://mp.weixin.qq.com/s/GOPIIlDBd3vXpgq-a5s2fQ
+
+文本分类特征提取之Word2Vec
+
 # RNN
 
 ## RNN的基本结构

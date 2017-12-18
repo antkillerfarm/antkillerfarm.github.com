@@ -273,3 +273,8 @@ https://zhuanlan.zhihu.com/p/32089282
 
 Attention学习笔记
 
+https://mp.weixin.qq.com/s/0yb-YRGe-q4-vpKpuE4D_w
+
+多种注意力机制互补完成VQA（视觉问答）
+
+

@@ -100,6 +100,10 @@ https://mp.weixin.qq.com/s/HPrjEdszBSvVoVS66W-Fjw
 
 2017年深度学习优化算法研究亮点最新综述
 
+https://mp.weixin.qq.com/s/W06YcuGWalDbyUaZa_kZnQ
+
+2017年深度学习优化算法最新综述
+
 # 单分类SVM&多分类SVM
 
 原始的SVM主要用于二分类，然而稍加变化，也可用于单分类和多分类。

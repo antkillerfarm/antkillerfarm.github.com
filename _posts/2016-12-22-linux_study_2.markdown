@@ -278,6 +278,22 @@ LD_LIBRARY_PATH：动态链接库文件路径
 
 `iwlist scanning`
 
+# tldr
+
+tldr是一个采用示例说明的简化版的man。
+
+官网：
+
+http://tldr.sh/
+
+该项目原生支持node.js，但也提供了其他多种语言的支持。
+
+参考：
+
+https://linuxtoy.org/archives/tldr.html
+
+tldr: 简读 Manpage
+
 # Fedora
 
 Fedora作为主要的Linux发行版之一，我虽然用的不多，但实际上这却是我最早接触的Linux发行版。后来换用Ubuntu，很大的原因是因为：这是Google为Android选择的开发平台。

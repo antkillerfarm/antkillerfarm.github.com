@@ -64,6 +64,10 @@ https://github.com/aikorea/awesome-rl
 
 提供了RL方面的资源网页。aikorea还提供了同类的资源收集网页：awesome-rnn, awesome-deep-vision, awesome-random-forest。
 
+https://mp.weixin.qq.com/s/dS0oQbGtrdd4rS25cBNyoQ
+
+面向Open AI, TensorFlow, Keras的强化学习书籍《Reinforcement Learning》
+
 ## 论文
 
 《A Brief Survey of Deep Reinforcement Learning》

@@ -176,6 +176,10 @@ https://mp.weixin.qq.com/s?__biz=MzA3Njc0NzA0MA==&mid=2653191385&idx=1&sn=23c13a
 
 那些年倒腾的R语言学习笔记
 
+https://www.datasciencecentral.com/profiles/blogs/600-websites-about-r
+
+600个R资源网站
+
 ## 交互环境
 
 R语言有个和python类似的命令行交互环境。
