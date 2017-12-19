@@ -356,6 +356,10 @@ https://mp.weixin.qq.com/s/MK_al7CgieiVXB1MGWZ9GA
 
 听说你用JavaScript写代码？本文是你的机器学习指南
 
+https://mp.weixin.qq.com/s/BP9MToKcE1MJmQTQv2UUZQ
+
+Pytorch开源VQA神经网络模块，让你快速完成看图问答
+
 ## 工具
 
 https://mp.weixin.qq.com/s/TT4whft1Tj1pCEPbnMH1cA

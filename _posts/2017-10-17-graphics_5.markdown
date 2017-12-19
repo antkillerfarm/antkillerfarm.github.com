@@ -256,3 +256,10 @@ http://www.jianshu.com/p/7a720bd7d6b5
 
 如何架构一个数据工程
 
+https://mp.weixin.qq.com/s/znr_oRlG_Y30K1XUwupwpg
+
+技术如何秒懂你？阿里百万级QPS资源调度系统揭秘
+
+
+
+

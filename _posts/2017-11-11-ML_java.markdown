@@ -279,6 +279,10 @@ http://www.cnblogs.com/o87481299/p/4199892.html
 
 python google protobuf使用
 
+https://mp.weixin.qq.com/s/D1bjGRCFH6Ag9_xIfQ34SA
+
+Google Protocol Buffers浅析
+
 ## HDF5
 
 HDF是用于存储和分发科学数据的一种自我描述、多对象文件格式。HDF是由美国国家超级计算应用中心（NCSA）创建的，以满足不同群体的科学家在不同工程项目领域之需要。

@@ -448,3 +448,7 @@ https://mp.weixin.qq.com/s/txT8qLxpQQ62DAPVS1NTDA
 
 DeepMind深度学习最佳实践与新技术展望
 
+http://lamda.nju.edu.cn/weixs/book/CNN_book.pdf
+
+南京大学魏秀参：《解析卷积神经网络—深度学习实践手册》
+
