@@ -360,4 +360,8 @@ https://mp.weixin.qq.com/s/5ftsfNSAb7pAizVA5m-xXw
 
 2017 年回顾：NLP、深度学习与大数据
 
+https://mp.weixin.qq.com/s/2NLckUqFrCOwaIamwWFOqQ
+
+基于深度 AND-OR 语法网络的目标识别方法
+
 

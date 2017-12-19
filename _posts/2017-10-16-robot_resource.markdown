@@ -438,4 +438,9 @@ https://mp.weixin.qq.com/s/OlfAV744e2-p5dgOWJeb8g
 
 苹果博客：高效可扩展的规模化、多样化隐私学习
 
+https://mp.weixin.qq.com/s/Xkt5c11wtxJgIvHC3p9wxA
+
+Kaggle大神带你上榜单Top2%：点击预测大赛纪实
+
+
 
