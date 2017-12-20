@@ -80,6 +80,10 @@ https://mp.weixin.qq.com/s/zExzGJ-QMldHIi71jKnq_Q
 
 CMU“冷扑大师”不完美信息博弈研究获奖
 
+https://mp.weixin.qq.com/s/VLLF37J1hUnIMd2Yy1fS2w
+
+Libratus如何在双人无限注德扑中击败人类顶级选手
+
 https://mp.weixin.qq.com/s/WMDbCdrX_3W22Qfh_joB-A
 
 一文读懂人工智能打德扑
