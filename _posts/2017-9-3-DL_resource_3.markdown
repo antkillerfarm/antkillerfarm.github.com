@@ -102,6 +102,10 @@ https://mp.weixin.qq.com/s/vpxLTcwenvlIvj5D-8uolg
 
 一天造出10亿个淘宝首页，阿里工程师如何实现？
 
+https://mp.weixin.qq.com/s/lZ4FOOVIxsdKvfW45CYCnA
+
+你看到哪版电影海报，由算法决定：揭秘Netflix个性化推荐系统
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：
@@ -425,6 +429,14 @@ https://mp.weixin.qq.com/s/CetbsnDNQiyaV7grWGgJCg
 https://mp.weixin.qq.com/s/3n6HrpIqSbOKZ-ysTcOTWA
 
 GitHub新项目Deepo：一键安装11项深度学习框架与环境（基于docker）
+
+https://mp.weixin.qq.com/s/VsJh1Er02lIGZap4QUy6eA
+
+PyTorch实现的神经网络翻译框架——机器翻译工具包nmtpytorch
+
+https://mp.weixin.qq.com/s/excMGz0ClTk2oNenhEWkrQ
+
+推荐10个饱受好评且功能独特的开源人工智能项目
 
 
 

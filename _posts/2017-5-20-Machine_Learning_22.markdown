@@ -6,6 +6,44 @@ category: ML
 
 # HMM（续）
 
+参考：
+
+https://www.zhihu.com/question/20962240
+
+如何用简单易懂的例子解释隐马尔可夫模型？
+
+http://www.cnblogs.com/kaituorensheng/archive/2012/11/29/2795499.html
+
+隐马尔可夫模型
+
+https://mp.weixin.qq.com/s/9MmHDVDal57pdotwxAn_uQ
+
+HMM模型详解
+
+https://mp.weixin.qq.com/s/PzPRKZa1C5IlEUASWt71cA
+
+从朴素贝叶斯到维特比算法：详解隐马尔科夫模型
+
+## Viterbi算法
+
+Viterbi算法是求解最大似然状态路径的常用算法，被广泛应用于通信（CDMA技术的理论基础之一）和NLP领域。
+
+>注：Andrew James Viterbi，1935年生，意大利裔美国工程师、企业家，高通公司联合创始人。MIT本硕+南加州大学博士。viterbi算法和CDMA标准的主要发明人。
+
+![](/images/article/HMM_4.png)
+
+上图是一个HMM模型的概率图表示，其中{'Healthy','Fever'}是隐含状态，而{'normal','cold','dizzy'}是可见状态，边是各状态的转移概率。
+
+![](/images/article/Viterbi_animated_demo.gif)
+
+上图是Viterbi算法的动画图。简单来说就是，从开始状态之后的每一步，都选择最大似然状态的路径。由于每一步都是最优方案，因此整个路径也是最优路径。
+
+参考：
+
+https://mp.weixin.qq.com/s/FQ520ojMmbFhNMoNCVTKug
+
+通俗理解维特比算法
+
 ## 前向算法
 
 forward算法是求解问题2的常用算法。
@@ -227,72 +265,4 @@ $$\theta_{t+1, i} = \theta_{t, i} - \dfrac{\eta}{\sqrt{G_{t, ii} + \epsilon}} \c
 Adagrad的优点在于：它是一个自适应算法，初值选择显得不太重要了。
 
 Adagrad的缺点在于：训练越往后，G越大，从而学习率越小。如果在训练完成之前，学习率变为0，就会导致提前结束训练。
-
-## Adadelta
-
-为了克服Adagrad的缺点，Matthew D. Zeiler于2012年提出了Adadelta算法。
-
->注：Matthew D. Zeiler，多伦多大学本科（2009）+纽约大学博士（2013）。Clarifai创始人和CEO。读书期间，他还创立了一家给大学生卖习题册的公司。   
->个人主页：   
->http://www.matthewzeiler.com/
-
-该算法不再使用历史累积值，而是只取最近的w个状态，这样就不会让梯度被惩罚至0。
-
-为了避免保存前w个状态的梯度平方和，可做如下变换：
-
-$$E[g^2]_t = \gamma E[g^2]_{t-1} + (1 - \gamma) g^2_t$$
-
-$$\theta_{t+1} = \theta_{t} - \dfrac{\eta}{\sqrt{E[g^2]_t + \epsilon}} g_{t}$$
-
-上边的公式，就是Hinton在同一年提出的**RMSprop算法**。其中的$$\gamma E[g^2]_{t-1}$$即可看作是前w个状态的滤波值，也可看作是Momentum算法中动量值。
-
-Adadelta在RMSprop的基础上更进一步：
-
-$$RMS[g]_{t}=\sqrt{E[g^{2}]_{t}+\epsilon }$$
-
-$$\Delta \theta_t = - \dfrac{RMS[\Delta \theta]_{t-1}}{RMS[g]_{t}} g_{t}$$
-
-也就是说，Adadelta不仅考虑了梯度的平方和，也考虑了更新量的平方和。
-
-## Adam
-
-Adaptive Moment Estimation借用了卡尔曼滤波的思想，对$$g_t,g_t^2$$进行滤波：
-
-$$m_t = \beta_1 m_{t-1} + (1 - \beta_1) g_t$$
-
-$$v_t = \beta_2 v_{t-1} + (1 - \beta_2) g_t^2$$
-
-估计：
-
-$$\hat{m}_t = \dfrac{m_t}{1 - \beta^t_1}$$
-
-$$\hat{v}_t = \dfrac{v_t}{1 - \beta^t_2}$$
-
-更新：
-
-$$\theta_{t+1} = \theta_{t} - \dfrac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \hat{m}_t$$
-
-## Nadam
-
-http://cs229.stanford.edu/proj2015/054_report.pdf
-
-ncorporating Nesterov Momentum into Adam
-
-## AdaSecant
-
-《ADASECANT: Robust Adaptive Secant Method for Stochastic Gradient》
-
-## 二阶Optimizer
-
-虽然二阶Optimizer的收敛效果优于一阶Optimizer，但由于计算量较大，通常用的较少。
-
-常用的算法有BGFS和L-BFGS。
-
-http://www.cnblogs.com/kemaswill/p/3352898.html
-
-优化算法-BFGS
-
-http://blog.csdn.net/acdreamers/article/details/44728041
-
-L-BFGS算法
 

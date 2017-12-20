@@ -1,10 +1,64 @@
 ---
 layout: post
-title:  机器学习（二十四）——推荐算法中的常用排序算法, Tri-training, Beam Search, NLP机器翻译常用评价度量, 数据不平衡问题
+title:  机器学习（二十四）——推荐算法中的常用排序算法, Tri-training, Beam Search, NLP机器翻译常用评价度量
 category: ML 
 ---
 
 # 时间序列分析（续）
+
+## ARIMA
+
+ARIMA模型全称为差分自回归移动平均模型(Autoregressive Integrated Moving Average Model,简记ARIMA)，也叫求和自回归移动平均模型，是由George Edward Pelham Box和Gwilym Meirion Jenkins于70年代初提出的一著名时间序列预测方法，所以又称为box-jenkins模型、博克思-詹金斯法。
+
+>注：Gwilym Meirion Jenkins，1932～1982，英国统计学家。伦敦大学学院博士，兰卡斯特大学教授。
+
+同《数学狂想曲（三）》中的PID算法一样，ARIMA模型实际上是三个简单模型的组合。
+
+### AR模型
+
+$$X_t = c + \sum_{i=1}^p \varphi_i X_{t-i}+ \varepsilon_t$$
+
+其中，p为阶数，$$\varepsilon_t$$为白噪声。上式又记作AR(p)。显然，AR模型是一个系统状态模型。
+
+### MA模型
+
+$$X_t = \mu + \varepsilon_t + \sum_{i=1}^q \theta_i \varepsilon_{t-i}$$
+
+上式记作MA(q)，其中q和$$\varepsilon_t$$的含义与上同。MA模型是一个噪声模型。
+
+### ARMA模型
+
+AR模型和MA模型合起来，就是ARMA模型：
+
+$$X_t = c + \varepsilon_t +  \sum_{i=1}^p \varphi_i X_{t-i} + \sum_{i=1}^q \theta_i \varepsilon_{t-i}$$
+
+### Lag operator
+
+在继续下面的描述之前，我们先来定义一下Lag operator--L。
+
+$$L X_t = X_{t-1} \; \text{or} \; X_t = L X_{t+1}$$
+
+### I模型
+
+$$(1-L)^d X_t$$
+
+上式中d为阶数，因此上式也记作I(d)。显然$$I(0)=X_t$$。
+
+I模型有什么用呢？我们观察一下I(1)：
+
+$$(1-L) X_t = X_t - X_{t-1} = \Delta X$$
+
+有的时候，虽然I(0)不是平稳序列，但I(1)是平稳序列，这时我们称该序列是**1阶平稳序列**。n阶的情况，可依此类推。
+
+### ARIMA模型
+
+$$Y_t = (1-L)^d X_t$$
+
+$$\left( 1 - \sum_{i=1}^p \phi_i L^i \right) Y_t = \left( 1 + \sum_{i=1}^q \theta_i L^i \right) \varepsilon_t$$
+
+从上式可以看出，ARIMA模型实际上就是利用I模型，将时间序列转化为平稳序列之后的ARMA模型。
+
+>注：上面的内容只是对ARIMA模型给出一个简单的定义。实际的假设检验、参数估计的步骤，还是比较复杂的，完全可以写本书来说。
 
 ## 参考
 
@@ -213,55 +267,5 @@ https://mp.weixin.qq.com/s/N7DE0kvf8THhJQwroHj4vA
 >李舰，从2003年开始，一直把R当作随身武器奋战在统计学和数据分析的第一线，是Rweibo、Rwordseg、tmcn等高质量R包的作者，在业界积累了大量的经验，目前供职于Mango Solutions（中国），任数据总监。
 
 >刘思喆，2012至2016年就职于京东商城，推荐系统平台部高级经理，主要负责和推荐系统离线、在线相关的用户行为、商品特征的建模，以及数据监控平台。因工作业绩，在《京东技术解密》一书中获“数据达人”称号。
-
-# 数据不平衡问题
-
-https://mp.weixin.qq.com/s/e0jXXCIhbaZz7xaCZl-YmA
-
-如何处理不均衡数据？
-
-https://mp.weixin.qq.com/s/2j_6hdq-MhybO_B0S7DRCA
-
-如何解决机器学习中数据不平衡问题
-
-https://mp.weixin.qq.com/s/gEq7opXLukWD5MVhw_buGA
-
-七招教你处理非平衡数据
-
-http://blog.csdn.net/u013709270/article/details/72967462
-
-机器学习中的数据不平衡解决方案大全
-
-https://mlr-org.github.io/mlr-tutorial/devel/html/over_and_undersampling/index.html
-
-Imbalanced Classification Problems
-
-https://mp.weixin.qq.com/s/QEHAV_rW25E0b0N7POr6tw
-
-关于处理样本不平衡问题的Trick整理
-
-# 强化学习
-
-## 概述
-
-强化学习是一个多学科交叉的领域。它的主要组成以及和其他学科的关系如下图所示：
-
-![](/images/article/RL_2.png)
-
-![](/images/article/RL.png)
-
-上图是Reinforcement Learning和其他类型算法的关系图。
-
-不像监督学习，对于每一个样本，都有一个确定的标签与之对应，而强化学习没有标签，只有一个时间延迟的奖励，而且游戏中我们往往牺牲当前的奖励来获取将来更大的奖励。这就是**信用分配问题（Credit Assignment Problem）**，即当前的动作要为将来获得更多的奖励负责。
-
-而且在我们找到一个策略，让游戏获得不错的奖励时，我们是选择继续坚持当前的策略，还是探索新的策略以求更多的奖励？这就是**探索与开发（Explore-exploit Dilemma）**的问题。
-
-因此，**强化学习某种意义上可看做具有延迟标记信息的监督学习**。
-
-![](/images/article/reinforcement_learning.png)
-
-上图是强化学习的基本流程图。从控制论的角度来说，这是一个反馈控制系统，和经典的Kalman filters系统非常类似。因此，目前强化学习的主要用途，也多数和系统控制相关，例如机器人和自动驾驶。
-
-在推荐系统领域，由于有用户的反馈信息，亦可使用相关强化学习算法。
 
 

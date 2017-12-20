@@ -4,6 +4,50 @@ title:  机器学习（二十一）——loss function详解, 机器学习分类
 category: ML 
 ---
 
+# PageRank算法（续）
+
+## TextRank
+
+TextRank算法是PageRank算法在NLP领域的扩展，被广泛用于自动摘要和提取关键词。
+
+将原文本拆分为句子，在每个句子中过滤掉停用词（可选），并只保留指定词性的单词（可选）。由此可以得到句子的集合和单词的集合。
+
+每个单词作为TextRank中的一个节点。假设一个句子依次由下面的单词组成：$$w_1,\dots,w_n$$。从中取出k个连续的单词序列，组成一个窗口。我们认为窗口中任意两个单词间存在一个无向边，从而构建出一个图模型。
+
+对该图模型应用PageRank算法，可得：
+
+$$WS(V_i)=(1-d)+d\sum_{V_j \in In(V_i)}\frac{w_{ji}}{\sum_{V_k \in Out(V_j)}w_{jk}}WS(V_j)$$
+
+上式的W为权重（也可叫做结点相似度），一般采用以下定义：
+
+$$W(S_i,S_j)=\frac{|\{w_k|w_k\in S_i \& w_k\in S_j\}|}{\log(|S_i|)+\log(|S_j|)}$$
+
+其中，$$\vert S_i\vert$$是句子i的单词数。
+
+上面说的是关键词的计算方法。计算自动摘要的时候，将句子定义为结点，并认为全部句子都是相邻的即可。自动摘要所用的权重函数，一般采用BM25算法。
+
+## 参考
+
+http://www.cnblogs.com/rubinorth/p/5799848.html
+
+PageRank算法--从原理到实现
+
+http://blog.csdn.net/hguisu/article/details/7996185
+
+PageRank算法
+
+http://www.docin.com/p-1231683333.html
+
+有限不可约马尔可夫链的非周期状态
+
+http://www.docin.com/p-630952720.html
+
+马尔科夫链
+
+https://mp.weixin.qq.com/s/J9OmqFzQK-GS95FjgAJkTw
+
+浅析PageRank算法
+
 # loss function详解
 
 ## Mean Squared Error(MSE)/Mean Squared Deviation(MSD)
@@ -196,41 +240,4 @@ TF-IDF不容小觑
 
 这个问题很重要，因为这是最常见的情况。很多时候我们只有可见结果，不知道HMM模型里的参数，我们需要从可见结果估计出这些参数，这是建模的一个必要步骤。
 
-参考：
-
-https://www.zhihu.com/question/20962240
-
-如何用简单易懂的例子解释隐马尔可夫模型？
-
-http://www.cnblogs.com/kaituorensheng/archive/2012/11/29/2795499.html
-
-隐马尔可夫模型
-
-https://mp.weixin.qq.com/s/9MmHDVDal57pdotwxAn_uQ
-
-HMM模型详解
-
-https://mp.weixin.qq.com/s/PzPRKZa1C5IlEUASWt71cA
-
-从朴素贝叶斯到维特比算法：详解隐马尔科夫模型
-
-## Viterbi算法
-
-Viterbi算法是求解最大似然状态路径的常用算法，被广泛应用于通信（CDMA技术的理论基础之一）和NLP领域。
-
->注：Andrew James Viterbi，1935年生，意大利裔美国工程师、企业家，高通公司联合创始人。MIT本硕+南加州大学博士。viterbi算法和CDMA标准的主要发明人。
-
-![](/images/article/HMM_4.png)
-
-上图是一个HMM模型的概率图表示，其中{'Healthy','Fever'}是隐含状态，而{'normal','cold','dizzy'}是可见状态，边是各状态的转移概率。
-
-![](/images/article/Viterbi_animated_demo.gif)
-
-上图是Viterbi算法的动画图。简单来说就是，从开始状态之后的每一步，都选择最大似然状态的路径。由于每一步都是最优方案，因此整个路径也是最优路径。
-
-参考：
-
-https://mp.weixin.qq.com/s/FQ520ojMmbFhNMoNCVTKug
-
-通俗理解维特比算法
 

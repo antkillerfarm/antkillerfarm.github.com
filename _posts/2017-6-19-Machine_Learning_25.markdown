@@ -1,10 +1,58 @@
 ---
 layout: post
-title:  机器学习（二十五）——强化学习, K-摇臂赌博机, Q-learning
+title:  机器学习（二十五）——数据不平衡问题, 强化学习, K-摇臂赌博机
 category: ML 
 ---
 
-# 强化学习（续）
+# 数据不平衡问题
+
+https://mp.weixin.qq.com/s/e0jXXCIhbaZz7xaCZl-YmA
+
+如何处理不均衡数据？
+
+https://mp.weixin.qq.com/s/2j_6hdq-MhybO_B0S7DRCA
+
+如何解决机器学习中数据不平衡问题
+
+https://mp.weixin.qq.com/s/gEq7opXLukWD5MVhw_buGA
+
+七招教你处理非平衡数据
+
+http://blog.csdn.net/u013709270/article/details/72967462
+
+机器学习中的数据不平衡解决方案大全
+
+https://mlr-org.github.io/mlr-tutorial/devel/html/over_and_undersampling/index.html
+
+Imbalanced Classification Problems
+
+https://mp.weixin.qq.com/s/QEHAV_rW25E0b0N7POr6tw
+
+关于处理样本不平衡问题的Trick整理
+
+# 强化学习
+
+## 概述
+
+强化学习是一个多学科交叉的领域。它的主要组成以及和其他学科的关系如下图所示：
+
+![](/images/article/RL_2.png)
+
+![](/images/article/RL.png)
+
+上图是Reinforcement Learning和其他类型算法的关系图。
+
+不像监督学习，对于每一个样本，都有一个确定的标签与之对应，而强化学习没有标签，只有一个时间延迟的奖励，而且游戏中我们往往牺牲当前的奖励来获取将来更大的奖励。这就是**信用分配问题（Credit Assignment Problem）**，即当前的动作要为将来获得更多的奖励负责。
+
+而且在我们找到一个策略，让游戏获得不错的奖励时，我们是选择继续坚持当前的策略，还是探索新的策略以求更多的奖励？这就是**探索与开发（Explore-exploit Dilemma）**的问题。
+
+因此，**强化学习某种意义上可看做具有延迟标记信息的监督学习**。
+
+![](/images/article/reinforcement_learning.png)
+
+上图是强化学习的基本流程图。从控制论的角度来说，这是一个反馈控制系统，和经典的Kalman filters系统非常类似。因此，目前强化学习的主要用途，也多数和系统控制相关，例如机器人和自动驾驶。
+
+在推荐系统领域，由于有用户的反馈信息，亦可使用相关强化学习算法。
 
 ## MDP
 
@@ -178,58 +226,4 @@ $$Q_{n+1}=Q_n+\frac{1}{n}[R_n-Q_n]$$
 
 $$NewEstimate \leftarrow OldEstimate + StepSize [Target - OldEstimate]$$
 
-## 非平稳问题
 
-在之前的假设中，我们认为每个摇臂的吐币概率和数量是不随时间变化的，这样的问题被称为Stationary Problem。
-
-如果每个摇臂的吐币概率和数量随时间**缓慢变化**的话，则称之为Non-stationary Problem。
-
->注：快速变化的系统，不光RL无能，其他方法估计也没什么好效果。所以系统保持一定的惯性，对于研究问题是很重要的。
-
-这时一般采用如下公式滤波：
-
-$$Q_{n+1}=Q_n+\alpha[R_n-Q_n]$$
-
-详细内容参见《数学狂想曲（四）》的“软件滤波算法”一节的“一阶滞后滤波法”和“加权递推平均滤波法”。
-
-## Gradient-Bandit算法
-
-Gradient-Bandit算法的定义如下：
-
-$$Pr\{A_t=a\}=\frac{e^{H_t(a)}}{\sum_{b=1}^ke^{H_t(b)}}=\pi_t(a)$$
-
-$$H_{t+1}(a)=H_t(a)+\alpha(R_t-\overline R_t)(1\{A_t=a\}-\pi_t(a))$$
-
-$$\overline R_t=\frac{1}{t}\sum_{i=1}^tR_i$$
-
-其中，$$H_t(a)$$被称作策略偏好（preference）。这实际上是一个Softmax算法的变种。
-
-## 多步强化学习
-
-对于多步强化学习任务，虽然可以将其中的每一步看作一个k-armed Bandit问题，然而由于这种方法忽视了决策过程之间的联系，存在很多局限，因此不如MDP相关的算法。
-
-## 参考
-
-http://www.xfyun.cn/share/?p=2606
-
-Bandit算法与推荐系统
-
-# Q-learning
-
-Q-learning是强化学习中很重要的算法，也是最早被引入DL领域的强化学习算法，对它的研究催生了Deep Q-learning Networks。
-
-下面用一个例子来讲述Q-learning算法。
-
-![](/images/article/q_learning.gif)
-
-上图中有5个房间，编号为0～4，将户外定义为编号5，房间之间通过门相连，则房间的联通关系可抽象为下图：
-
-![](/images/article/q_learning_1.gif)
-
-这里我们将每个房间称为一个**state**，将agent从一个房间到另一个房间称为一个**action**。
-
-开始时，我们将agent放置在任意房间中，并设定目标——走到户外（即房间5），则上图可变为：
-
-![](/images/article/q_learning_2.gif)
-
-这里的每条边上的数值就是reward值。Q-Learning的目标就是达到reward值最大的state。因此当agent到达户外之后，它就停留在那里了，这样的目标被称作**吸收目标**。

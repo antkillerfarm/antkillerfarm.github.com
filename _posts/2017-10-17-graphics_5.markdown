@@ -18,7 +18,35 @@ SIFT算法详解
 
 # ISP
 
+ISP(Image Signal Processor)，图像信号处理器，是运用在相机或者具备拍摄功能设备上的一种芯片。在相机成像的整个环节中，它负责接收感光元件（Sensor）的原始信号数据，可以理解为整个相机拍照、录像的第一步处理流程，对图像质量起着非常重要的作用。
 
+## 图像sensor
+
+相机的图像sensor，一般可分为两种，如下图所示：
+
+![](/images/article/ISP.png)
+
+**Foveon X3**：Foveon公司的这种sensor（上图左侧）拥有三个感光层，可在不同的深度撷取RGB色光。
+
+Foveon X3虽然色彩不失真，但制作工艺比较复杂，目前只用在少数（10款左右）高端相机中。
+
+**Bayer Array**：绝大多数相机使用的是上图右侧所示的sensor。这种sensor由两层材料组成。下层是感光层，上层是滤光片。上层中RGB三色滤光片的排列方式被称为Bayer Array。
+
+一个Bayer Array的最小单元包含4个像素点（两个绿色滤光片+一个红色滤光片+1个蓝色滤光片）。
+
+## ISP的一般流程
+
+
+
+参考：
+
+http://www.cnblogs.com/agllero/p/4489689.html
+
+Image Signal Processor
+
+http://blog.csdn.net/yapingmcu/article/details/9215747
+
+camera isp（Image Signal Processor）
 
 # 从BOW到SPM
 

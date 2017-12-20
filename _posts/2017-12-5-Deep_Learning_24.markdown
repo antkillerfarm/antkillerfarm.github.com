@@ -271,6 +271,10 @@ https://mp.weixin.qq.com/s/E8brCI73IWY3P47IYPxSkg
 
 谷歌发布全新端到端语音识别系统：词错率降至5.6%
 
+https://mp.weixin.qq.com/s/MJE2JRYU7KakNKmHkD42CA
+
+谷歌发布TTS新系统Tacotron 2：直接从文本生成类人语音
+
 ## Kaldi
 
 Kaldi是一个语音识别的工具包。官网：

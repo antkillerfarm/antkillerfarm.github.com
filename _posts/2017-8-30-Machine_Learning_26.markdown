@@ -1,10 +1,66 @@
 ---
 layout: post
-title:  机器学习（二十六）——动态规划
+title:  机器学习（二十六）——Q-learning, 动态规划
 category: ML 
 ---
 
-# Q-learning（续）
+# K-摇臂赌博机（续）
+
+## 非平稳问题
+
+在之前的假设中，我们认为每个摇臂的吐币概率和数量是不随时间变化的，这样的问题被称为Stationary Problem。
+
+如果每个摇臂的吐币概率和数量随时间**缓慢变化**的话，则称之为Non-stationary Problem。
+
+>注：快速变化的系统，不光RL无能，其他方法估计也没什么好效果。所以系统保持一定的惯性，对于研究问题是很重要的。
+
+这时一般采用如下公式滤波：
+
+$$Q_{n+1}=Q_n+\alpha[R_n-Q_n]$$
+
+详细内容参见《数学狂想曲（四）》的“软件滤波算法”一节的“一阶滞后滤波法”和“加权递推平均滤波法”。
+
+## Gradient-Bandit算法
+
+Gradient-Bandit算法的定义如下：
+
+$$Pr\{A_t=a\}=\frac{e^{H_t(a)}}{\sum_{b=1}^ke^{H_t(b)}}=\pi_t(a)$$
+
+$$H_{t+1}(a)=H_t(a)+\alpha(R_t-\overline R_t)(1\{A_t=a\}-\pi_t(a))$$
+
+$$\overline R_t=\frac{1}{t}\sum_{i=1}^tR_i$$
+
+其中，$$H_t(a)$$被称作策略偏好（preference）。这实际上是一个Softmax算法的变种。
+
+## 多步强化学习
+
+对于多步强化学习任务，虽然可以将其中的每一步看作一个k-armed Bandit问题，然而由于这种方法忽视了决策过程之间的联系，存在很多局限，因此不如MDP相关的算法。
+
+## 参考
+
+http://www.xfyun.cn/share/?p=2606
+
+Bandit算法与推荐系统
+
+# Q-learning
+
+Q-learning是强化学习中很重要的算法，也是最早被引入DL领域的强化学习算法，对它的研究催生了Deep Q-learning Networks。
+
+下面用一个例子来讲述Q-learning算法。
+
+![](/images/article/q_learning.gif)
+
+上图中有5个房间，编号为0～4，将户外定义为编号5，房间之间通过门相连，则房间的联通关系可抽象为下图：
+
+![](/images/article/q_learning_1.gif)
+
+这里我们将每个房间称为一个**state**，将agent从一个房间到另一个房间称为一个**action**。
+
+开始时，我们将agent放置在任意房间中，并设定目标——走到户外（即房间5），则上图可变为：
+
+![](/images/article/q_learning_2.gif)
+
+这里的每条边上的数值就是reward值。Q-Learning的目标就是达到reward值最大的state。因此当agent到达户外之后，它就停留在那里了，这样的目标被称作**吸收目标**。
 
 如果以state为行，action为列，则上图又可转化为如下的reward矩阵：
 
@@ -178,72 +234,4 @@ RL DP主要包括以下算法：（为了抓住问题的本质，这里仅列出
 ### Iterative Policy Evaluation：
 
 $$v_{k+1}(s) = \sum_{a \in \mathcal{A}}\pi(a | s)\left(\mathcal{R}_s^a + \gamma \sum_{s'\in \mathcal{S}}\mathcal{P}_{ss'}^a v_k(s')\right)$$
-
-### Policy Iteration
-
-Policy Iteration包含如下两步：
-
-Policy Evaluation：
-
-$$v_{k+1}(s) = \sum_{a \in \mathcal{A}}\pi(a | s)\left(\mathcal{R}_s^a + \gamma \sum_{s'\in \mathcal{S}}\mathcal{P}_{ss'}^a v_k(s')\right)$$
-
-Policy Improvement：
-
-$$\pi_{k+1}(s) = \arg \max_{a \in \mathcal{A}}\left(\mathcal{R}_s^a + \gamma \sum_{s'\in \mathcal{S}}\mathcal{P}_{ss'}^a v_k(s')\right)$$
-
-![](/images/article/Policy_Iteration.png)
-
-![](/images/article/Policy_Iteration_2.png)
-
-### Value Iteration
-
-$$v_{k+1}(s) = \max_{a \in \mathcal{A}}\left(\mathcal{R}_s^a + \gamma \sum_{s'\in \mathcal{S}}\mathcal{P}_{ss'}^a v_k(s')\right)$$
-
-
-
-## 参考
-
-http://www.cppblog.com/Fox/archive/2008/05/07/Dynamic_programming.html
-
-动态规划算法（Wikipedia中文翻译版）
-
-https://www.zhihu.com/question/23995189
-
-什么是动态规划？动态规划的意义是什么？
-
-http://www.cnblogs.com/steven_oyj/archive/2010/05/22/1741374.html
-
-动态规划算法
-
-http://www.cppblog.com/menjitianya/archive/2015/10/23/212084.html
-
-动态规划
-
-https://segmentfault.com/a/1190000004454832
-
-动态规划
-
-http://www.cnblogs.com/jmzz/archive/2011/06/26/2090702.html
-
-动态规划
-
-http://www.cnblogs.com/jmzz/archive/2011/07/01/2095158.html
-
-DP之Warshall算法和Floyd算法
-
-http://www.cnblogs.com/jmzz/archive/2011/07/02/2096050.html
-
-DP之最优二叉查找树
-
-http://www.cnblogs.com/jmzz/archive/2011/07/02/2096188.html
-
-DP之矩阵连乘问题
-
-http://www.cnblogs.com/jmzz/archive/2011/07/05/2098630.html
-
-DP之背包问题+记忆递归
-
-http://www.cs.upc.edu/~mmartin/Ag4-4x.pdf
-
-Bellman equations and optimal policies
 

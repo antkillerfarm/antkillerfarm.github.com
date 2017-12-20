@@ -4,6 +4,74 @@ title:  机器学习（二十七）——Probabilistic Robotics
 category: ML 
 ---
 
+### Policy Iteration
+
+Policy Iteration包含如下两步：
+
+Policy Evaluation：
+
+$$v_{k+1}(s) = \sum_{a \in \mathcal{A}}\pi(a | s)\left(\mathcal{R}_s^a + \gamma \sum_{s'\in \mathcal{S}}\mathcal{P}_{ss'}^a v_k(s')\right)$$
+
+Policy Improvement：
+
+$$\pi_{k+1}(s) = \arg \max_{a \in \mathcal{A}}\left(\mathcal{R}_s^a + \gamma \sum_{s'\in \mathcal{S}}\mathcal{P}_{ss'}^a v_k(s')\right)$$
+
+![](/images/article/Policy_Iteration.png)
+
+![](/images/article/Policy_Iteration_2.png)
+
+### Value Iteration
+
+$$v_{k+1}(s) = \max_{a \in \mathcal{A}}\left(\mathcal{R}_s^a + \gamma \sum_{s'\in \mathcal{S}}\mathcal{P}_{ss'}^a v_k(s')\right)$$
+
+
+
+## 参考
+
+http://www.cppblog.com/Fox/archive/2008/05/07/Dynamic_programming.html
+
+动态规划算法（Wikipedia中文翻译版）
+
+https://www.zhihu.com/question/23995189
+
+什么是动态规划？动态规划的意义是什么？
+
+http://www.cnblogs.com/steven_oyj/archive/2010/05/22/1741374.html
+
+动态规划算法
+
+http://www.cppblog.com/menjitianya/archive/2015/10/23/212084.html
+
+动态规划
+
+https://segmentfault.com/a/1190000004454832
+
+动态规划
+
+http://www.cnblogs.com/jmzz/archive/2011/06/26/2090702.html
+
+动态规划
+
+http://www.cnblogs.com/jmzz/archive/2011/07/01/2095158.html
+
+DP之Warshall算法和Floyd算法
+
+http://www.cnblogs.com/jmzz/archive/2011/07/02/2096050.html
+
+DP之最优二叉查找树
+
+http://www.cnblogs.com/jmzz/archive/2011/07/02/2096188.html
+
+DP之矩阵连乘问题
+
+http://www.cnblogs.com/jmzz/archive/2011/07/05/2098630.html
+
+DP之背包问题+记忆递归
+
+http://www.cs.upc.edu/~mmartin/Ag4-4x.pdf
+
+Bellman equations and optimal policies
+
 # Probabilistic Robotics
 
 这篇心得主要根据Sebastian Thrun的Probabilistic Robotics课程的ppt来写。

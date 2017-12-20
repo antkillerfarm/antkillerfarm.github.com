@@ -232,6 +232,10 @@ https://mp.weixin.qq.com/s/pOX84vc2JlYidkTZt73rcQ
 
 英特尔&丰田联合开源城市驾驶模拟器CARLA
 
+https://mp.weixin.qq.com/s/0Xuxr7CXqsxrssW2I6NCBQ
+
+通用智能化：BAIR简述人类-机器人协作新技术
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/7N6eDoEV8oEwUpP-zK1RpQ

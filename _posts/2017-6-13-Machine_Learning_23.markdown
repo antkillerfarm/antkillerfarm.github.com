@@ -4,7 +4,75 @@ title:  机器学习（二十三）——单分类SVM&多分类SVM, 时间序列
 category: ML 
 ---
 
-# Optimizer
+# Optimizer（续）
+
+## Adadelta
+
+为了克服Adagrad的缺点，Matthew D. Zeiler于2012年提出了Adadelta算法。
+
+>注：Matthew D. Zeiler，多伦多大学本科（2009）+纽约大学博士（2013）。Clarifai创始人和CEO。读书期间，他还创立了一家给大学生卖习题册的公司。   
+>个人主页：   
+>http://www.matthewzeiler.com/
+
+该算法不再使用历史累积值，而是只取最近的w个状态，这样就不会让梯度被惩罚至0。
+
+为了避免保存前w个状态的梯度平方和，可做如下变换：
+
+$$E[g^2]_t = \gamma E[g^2]_{t-1} + (1 - \gamma) g^2_t$$
+
+$$\theta_{t+1} = \theta_{t} - \dfrac{\eta}{\sqrt{E[g^2]_t + \epsilon}} g_{t}$$
+
+上边的公式，就是Hinton在同一年提出的**RMSprop算法**。其中的$$\gamma E[g^2]_{t-1}$$即可看作是前w个状态的滤波值，也可看作是Momentum算法中动量值。
+
+Adadelta在RMSprop的基础上更进一步：
+
+$$RMS[g]_{t}=\sqrt{E[g^{2}]_{t}+\epsilon }$$
+
+$$\Delta \theta_t = - \dfrac{RMS[\Delta \theta]_{t-1}}{RMS[g]_{t}} g_{t}$$
+
+也就是说，Adadelta不仅考虑了梯度的平方和，也考虑了更新量的平方和。
+
+## Adam
+
+Adaptive Moment Estimation借用了卡尔曼滤波的思想，对$$g_t,g_t^2$$进行滤波：
+
+$$m_t = \beta_1 m_{t-1} + (1 - \beta_1) g_t$$
+
+$$v_t = \beta_2 v_{t-1} + (1 - \beta_2) g_t^2$$
+
+估计：
+
+$$\hat{m}_t = \dfrac{m_t}{1 - \beta^t_1}$$
+
+$$\hat{v}_t = \dfrac{v_t}{1 - \beta^t_2}$$
+
+更新：
+
+$$\theta_{t+1} = \theta_{t} - \dfrac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \hat{m}_t$$
+
+## Nadam
+
+http://cs229.stanford.edu/proj2015/054_report.pdf
+
+ncorporating Nesterov Momentum into Adam
+
+## AdaSecant
+
+《ADASECANT: Robust Adaptive Secant Method for Stochastic Gradient》
+
+## 二阶Optimizer
+
+虽然二阶Optimizer的收敛效果优于一阶Optimizer，但由于计算量较大，通常用的较少。
+
+常用的算法有BGFS和L-BFGS。
+
+http://www.cnblogs.com/kemaswill/p/3352898.html
+
+优化算法-BFGS
+
+http://blog.csdn.net/acdreamers/article/details/44728041
+
+L-BFGS算法
 
 ## 参考
 
@@ -103,6 +171,10 @@ https://mp.weixin.qq.com/s/HPrjEdszBSvVoVS66W-Fjw
 https://mp.weixin.qq.com/s/W06YcuGWalDbyUaZa_kZnQ
 
 2017年深度学习优化算法最新综述
+
+https://mp.weixin.qq.com/s/VVHe2msyeUTGiC7f_f0FFA
+
+一文概览深度学习中的五大正则化方法和七大优化策略
 
 # 单分类SVM&多分类SVM
 
@@ -250,59 +322,5 @@ http://people.duke.edu/%7Ernau/411home.htm
 非平稳时间序列分析时，若导致非平稳的原因是确定的，可以用的方法主要有趋势拟合模型、季节调整模型、移动平均、指数平滑等方法。
 
 若导致非平稳的原因是随机的，方法主要有ARIMA及自回归条件异方差模型等。
-
-## ARIMA
-
-ARIMA模型全称为差分自回归移动平均模型(Autoregressive Integrated Moving Average Model,简记ARIMA)，也叫求和自回归移动平均模型，是由George Edward Pelham Box和Gwilym Meirion Jenkins于70年代初提出的一著名时间序列预测方法，所以又称为box-jenkins模型、博克思-詹金斯法。
-
->注：Gwilym Meirion Jenkins，1932～1982，英国统计学家。伦敦大学学院博士，兰卡斯特大学教授。
-
-同《数学狂想曲（三）》中的PID算法一样，ARIMA模型实际上是三个简单模型的组合。
-
-### AR模型
-
-$$X_t = c + \sum_{i=1}^p \varphi_i X_{t-i}+ \varepsilon_t$$
-
-其中，p为阶数，$$\varepsilon_t$$为白噪声。上式又记作AR(p)。显然，AR模型是一个系统状态模型。
-
-### MA模型
-
-$$X_t = \mu + \varepsilon_t + \sum_{i=1}^q \theta_i \varepsilon_{t-i}$$
-
-上式记作MA(q)，其中q和$$\varepsilon_t$$的含义与上同。MA模型是一个噪声模型。
-
-### ARMA模型
-
-AR模型和MA模型合起来，就是ARMA模型：
-
-$$X_t = c + \varepsilon_t +  \sum_{i=1}^p \varphi_i X_{t-i} + \sum_{i=1}^q \theta_i \varepsilon_{t-i}$$
-
-### Lag operator
-
-在继续下面的描述之前，我们先来定义一下Lag operator--L。
-
-$$L X_t = X_{t-1} \; \text{or} \; X_t = L X_{t+1}$$
-
-### I模型
-
-$$(1-L)^d X_t$$
-
-上式中d为阶数，因此上式也记作I(d)。显然$$I(0)=X_t$$。
-
-I模型有什么用呢？我们观察一下I(1)：
-
-$$(1-L) X_t = X_t - X_{t-1} = \Delta X$$
-
-有的时候，虽然I(0)不是平稳序列，但I(1)是平稳序列，这时我们称该序列是**1阶平稳序列**。n阶的情况，可依此类推。
-
-### ARIMA模型
-
-$$Y_t = (1-L)^d X_t$$
-
-$$\left( 1 - \sum_{i=1}^p \phi_i L^i \right) Y_t = \left( 1 + \sum_{i=1}^q \theta_i L^i \right) \varepsilon_t$$
-
-从上式可以看出，ARIMA模型实际上就是利用I模型，将时间序列转化为平稳序列之后的ARMA模型。
-
->注：上面的内容只是对ARIMA模型给出一个简单的定义。实际的假设检验、参数估计的步骤，还是比较复杂的，完全可以写本书来说。
 
 
