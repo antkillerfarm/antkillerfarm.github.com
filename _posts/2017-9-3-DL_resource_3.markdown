@@ -98,6 +98,10 @@ https://zhuanlan.zhihu.com/p/30720579
 
 推荐中的序列化建模：Session-based neural recommendation
 
+https://mp.weixin.qq.com/s/vpxLTcwenvlIvj5D-8uolg
+
+一天造出10亿个淘宝首页，阿里工程师如何实现？
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：

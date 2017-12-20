@@ -174,6 +174,10 @@ http://blog.csdn.net/zy1034092330/article/details/62044941
 
 Faster RCNN详解
 
+https://mp.weixin.qq.com/s/IZ9Q3fDJVawiEbD6x9WRLg
+
+Object Detection系列（三）Fast R-CNN
+
 # YOLO
 
 YOLO: Real-Time Object Detection，是一个基于神经网络的实时对象检测软件。它的原理基于Joseph Chet Redmon 2016年的论文：

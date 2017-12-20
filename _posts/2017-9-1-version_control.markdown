@@ -360,4 +360,13 @@ https://mp.weixin.qq.com/s/5ftsfNSAb7pAizVA5m-xXw
 
 2017 年回顾：NLP、深度学习与大数据
 
+https://mp.weixin.qq.com/s/Z1fqUMLjWFs0zA8f739kww
+
+2017深度学习NLP进展与趋势
+
+https://mp.weixin.qq.com/s/7yi67lPjseigeaqTD269mQ
+
+触类旁通，专业技能热度智能分析
+
+
 

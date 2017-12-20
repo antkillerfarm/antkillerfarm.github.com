@@ -281,4 +281,8 @@ https://mp.weixin.qq.com/s/0yb-YRGe-q4-vpKpuE4D_w
 
 多种注意力机制互补完成VQA（视觉问答）
 
+https://mp.weixin.qq.com/s/LQ7uv0-AakkHE5b17yemqw
+
+Awni Hannun：序列模型Attention Model中的问题与挑战
+
 

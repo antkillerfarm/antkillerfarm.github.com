@@ -82,6 +82,10 @@ https://mp.weixin.qq.com/s/f_vB2AXCytnvoZaqfMeIpw
 
 应用TF-Slim快速实现迁移学习
 
+https://mp.weixin.qq.com/s/R1bKmhADfhQAZmhXL9ObiQ
+
+多重预训练视觉模型的迁移学习
+
 # 语音识别
 
 ## CTC

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  图像处理理论（五）——从BOW到SPM, ILSVRC 2010考古
+title:  图像处理理论（五）——ISP, 从BOW到SPM, ILSVRC 2010考古
 category: graphics 
 ---
 
@@ -15,6 +15,10 @@ SIFT大概算是最复杂的算子了，上文仅是概括描述，省略了大�
 http://blog.csdn.net/zddblog/article/details/7521424
 
 SIFT算法详解
+
+# ISP
+
+
 
 # 从BOW到SPM
 
@@ -35,8 +39,6 @@ Bag-of-words模型是信息检索领域常用的文档表示方法。在信息�
 （3）单词本的生成。
 
 而SIFT算法是提取图像中局部不变特征的应用最广泛的算法，因此我们可以用SIFT算法从图像中提取不变特征点，作为视觉词汇，并构造单词表，用单词表中的单词表示一幅图像。
-
-
 
 参考：
 
