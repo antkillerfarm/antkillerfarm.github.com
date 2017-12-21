@@ -20,6 +20,14 @@ SIFT算法详解
 
 ISP(Image Signal Processor)，图像信号处理器，是运用在相机或者具备拍摄功能设备上的一种芯片。在相机成像的整个环节中，它负责接收感光元件（Sensor）的原始信号数据，可以理解为整个相机拍照、录像的第一步处理流程，对图像质量起着非常重要的作用。
 
+ISP的一般流程如下所示：
+
+![](/images/img2/ISP_pipeline.png)
+
+下文以如下示例图片的处理流程为例，对整个流程做一个简单的概述。
+
+![](/images/img2/ISP_0.png)
+
 ## 图像sensor
 
 相机的图像sensor，一般可分为两种，如下图所示：
@@ -34,11 +42,21 @@ Foveon X3虽然色彩不失真，但制作工艺比较复杂，目前只用在�
 
 一个Bayer Array的最小单元包含4个像素点（两个绿色滤光片+一个红色滤光片+1个蓝色滤光片）。两个绿色点呈对角分布，红色点和蓝色点占据剩余的空间。
 
-## ISP的一般流程
+## RAW Data
 
-![](/images/img2/ISP_pipeline.png)
+图像sensor数字采样的结果，就是所谓的RAW Data。
+
+RAW Data的取值范围取决于sensor的处理器位宽。比如12bit的范围就是0～4095。
+
+考虑到噪点的存在，一般会给取值范围设一个>0的下限，这也叫做Black Level。
+
+
 
 ![](/images/img2/Demosaic.png)
+
+
+
+![](/images/img2/ISP_1.png)
 
 参考：
 
@@ -292,6 +310,8 @@ https://mp.weixin.qq.com/s/znr_oRlG_Y30K1XUwupwpg
 
 技术如何秒懂你？阿里百万级QPS资源调度系统揭秘
 
+https://mp.weixin.qq.com/s/1pXMCcO6NR1SMBzsyES-cw
 
+分布式数据库又支持关系数据模型了？
 
 

@@ -438,5 +438,8 @@ https://mp.weixin.qq.com/s/excMGz0ClTk2oNenhEWkrQ
 
 推荐10个饱受好评且功能独特的开源人工智能项目
 
+https://mp.weixin.qq.com/s/VBmKPBxWtknWMjLCWcoGjA
+
+如何用Docker成为更高效的数据科学家？
 
 

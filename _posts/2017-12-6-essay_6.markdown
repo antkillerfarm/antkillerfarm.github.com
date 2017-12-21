@@ -296,4 +296,8 @@ https://mp.weixin.qq.com/s/0QyLIvH1McooGLc19hIAHA
 
 预测你的下一步-动态网络节点表示学习
 
+https://mp.weixin.qq.com/s/nZVIVJ9z0AWA8VFouNpafg
+
+深度学习之视频摘要简述
+
 
