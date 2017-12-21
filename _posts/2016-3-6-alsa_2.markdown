@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ALSA（二）, WebSocket, Javascript在客户端的使用, Spring
+title:  ALSA（二）, WebSocket, Javascript在客户端的使用, Spring, Neo4j, Blog维护日志
 category: technology 
 ---
 
@@ -260,4 +260,53 @@ https://spring.io/guides/gs/producing-web-service/
 
 http://localhost:9999/ws/countries.wsdl
 
+# Neo4j
+
+Neo4j是一个高性能的图引擎，该引擎具有成熟和健壮的数据库的所有特性。相对于关系数据库来说，图数据库（Graph Database）善于处理大量复杂、互连接、低结构化的数据，这些数据变化迅速，需要频繁的查询——在关系数据库中，这些查询会导致大量的表连接，因此会产生性能上的问题。
+
+官网：
+
+https://neo4j.com/
+
+参考：
+
+http://blog.csdn.net/xingxiupaioxue/article/details/71747284
+
+如何将大规模数据导入Neo4j
+
+# Blog维护日志
+
+2017.12.21 blog图片太多，特添加第2个图片文件夹。
+
+2017.10.22 文章分为Language、Linux、Technology、Essay、Resource、Graphics、AI、ML、Math、DL十类。可命名为v3.5。
+
+2017.10.18 文章数达到150篇。
+
+2017.5.17 修改标题的css。可命名为v3.0。
+
+2017.4.5 添加微信打赏二维码图片。
+
+2017.3.22 评论系统切换到Github Issue。
+
+2017.3.4 文章数达到100篇。
+
+2016.11.3 文章分为Technology、Theory、Essay三类。
+
+2016.8.1 添加blog数量的统计信息，将MathJax升级到2.6.1。
+
+2016.4.12 将MathJax等资源切换为国内的cdn。
+
+2016.4.10 首页将技术文章和非技术文章分栏显示。
+
+2016.3.30 白底黑字太晃眼，特切换为浅灰底色。
+
+2016.3.18 评论系统切换到多说。
+
+2016.2.22 文章数达到50篇。
+
+2016.2.2 代码区的配色实在看起来费眼，屡次微调，仍不满意。这次借鉴原blog（也就是大徐抄袭的源头）的配色方案，最终达到基本满意的效果。可命名为v2.0。
+
+2015.1.7 blog搬家基本完成。
+
+2014.12.23 围观大徐的blog有感，特在github上安家落户，废弃了原来的搜狐blog。
 

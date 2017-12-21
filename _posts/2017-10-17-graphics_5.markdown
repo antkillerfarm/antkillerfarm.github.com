@@ -32,11 +32,13 @@ Foveon X3虽然色彩不失真，但制作工艺比较复杂，目前只用在�
 
 **Bayer Array**：绝大多数相机使用的是上图右侧所示的sensor。这种sensor由两层材料组成。下层是感光层，上层是滤光片。上层中RGB三色滤光片的排列方式被称为Bayer Array。
 
-一个Bayer Array的最小单元包含4个像素点（两个绿色滤光片+一个红色滤光片+1个蓝色滤光片）。
+一个Bayer Array的最小单元包含4个像素点（两个绿色滤光片+一个红色滤光片+1个蓝色滤光片）。两个绿色点呈对角分布，红色点和蓝色点占据剩余的空间。
 
 ## ISP的一般流程
 
+![](/images/img2/ISP_pipeline.png)
 
+![](/images/img2/Demosaic.png)
 
 参考：
 

@@ -32,6 +32,12 @@ https://mp.weixin.qq.com/s/QEHAV_rW25E0b0N7POr6tw
 
 # 强化学习
 
+## 监督学习的局限
+
+举个例子，如果我们想让机器学会开车，一个很直接的想法是观察人类行为，并且模仿人类，在相应观测下做出人类所做行为。将这个想法实现起来也很简单，只需要收集该任务的一些观测（路面的画面），以及每个观测人类会做出的反应（转动方向盘），然后像监督学习一样训练一个神经网络，以观测为输入，人类行为为标签，其中行为是离散时是分类任务，连续时是回归任务：
+
+
+
 ## 概述
 
 强化学习是一个多学科交叉的领域。它的主要组成以及和其他学科的关系如下图所示：
@@ -173,6 +179,18 @@ http://mp.weixin.qq.com/s/gHM7qh7UTKzatdg34cgfDQ
 https://mp.weixin.qq.com/s/B6ZpJ0Yw9GBZ9_MyNwjlXQ
 
 构建强化学习系统，你需要先了解这些背景知识
+
+https://mp.weixin.qq.com/s/AKuuIJnESMmck8k210CnWg
+
+易忽略的强化学习知识之基础知识及MDP（上）
+
+https://mp.weixin.qq.com/s/phuCKNj_a4CPq6w51Md-9A
+
+易忽略的强化学习知识之基础知识及MDP（下）
+
+https://zhuanlan.zhihu.com/p/25688750
+
+模仿学习（Imitation Learning）完全介绍
 
 # K-摇臂赌博机
 

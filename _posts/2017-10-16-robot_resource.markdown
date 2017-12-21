@@ -430,21 +430,3 @@ https://mp.weixin.qq.com/s/WCj0SbWbzvGPAODKUUdrOA
 
 根因分析的探索
 
-https://mp.weixin.qq.com/s/lQKD83sKwgcrBH6o_QUxvg
-
-抛弃爬下来的灰色数据，有门槛的风控怎么做？
-
-https://mp.weixin.qq.com/s/wJ2lD-llSB4KedD4RixqLQ
-
-苏宁场景实践：小包裹背后的大智慧
-
-https://mp.weixin.qq.com/s/OlfAV744e2-p5dgOWJeb8g
-
-苹果博客：高效可扩展的规模化、多样化隐私学习
-
-https://mp.weixin.qq.com/s/Xkt5c11wtxJgIvHC3p9wxA
-
-Kaggle大神带你上榜单Top2%：点击预测大赛纪实
-
-
-

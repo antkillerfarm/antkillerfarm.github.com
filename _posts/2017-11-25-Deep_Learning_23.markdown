@@ -42,6 +42,10 @@ http://web.stanford.edu/class/cs234/syllabus.html
 
 CS234: Reinforcement Learning
 
+http://rll.berkeley.edu/deeprlcourse/
+
+CS 294: Deep Reinforcement Learning
+
 http://www.eecs.wsu.edu/~taylorm/17_580/index.html
 
 CptS 580: Reinforcement Learning

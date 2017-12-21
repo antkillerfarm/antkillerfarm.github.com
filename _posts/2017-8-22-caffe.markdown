@@ -329,3 +329,30 @@ Fortran作为最早的高级语言（1957年），至今仍有很强的生命力
 
 2.没有指针等复杂特性。这一点既降低了上手的门槛，又对于编译器优化（尤其是现在比较流行的并行计算优化）很有好处。普通科技人员即使没有经过特殊的程序训练，也可以写出非常高效的程序。
 
+# ML参考资源
+
+https://mp.weixin.qq.com/s/lQKD83sKwgcrBH6o_QUxvg
+
+抛弃爬下来的灰色数据，有门槛的风控怎么做？
+
+https://mp.weixin.qq.com/s/wJ2lD-llSB4KedD4RixqLQ
+
+苏宁场景实践：小包裹背后的大智慧
+
+https://mp.weixin.qq.com/s/OlfAV744e2-p5dgOWJeb8g
+
+苹果博客：高效可扩展的规模化、多样化隐私学习
+
+https://mp.weixin.qq.com/s/Xkt5c11wtxJgIvHC3p9wxA
+
+Kaggle大神带你上榜单Top2%：点击预测大赛纪实
+
+https://mp.weixin.qq.com/s/VN-r2vW2Pxc8UwFzKMYHnA
+
+大数据下的自杀风险感知与疏导
+
+https://mp.weixin.qq.com/s/naID0dqgHFrsCuLCgcW4Tw
+
+面向系统的机器学习和面向机器学习的系统
+
+
