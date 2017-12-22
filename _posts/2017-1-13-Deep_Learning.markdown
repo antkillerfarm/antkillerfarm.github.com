@@ -227,6 +227,12 @@ https://mp.weixin.qq.com/s/PhxkfWH5bEbykMKGEtDScA
 
 和梯度消失相反的概念是**梯度爆炸**（Vanishing Explode），也就是神经网络无法收敛。
 
+参考：
+
+https://mp.weixin.qq.com/s/w7EbDI9MQBZF67XM-cV1eQ
+
+一文了解神经网络中的梯度爆炸
+
 # 神经元激活函数
 
 ## tanh函数

@@ -284,6 +284,10 @@ https://mp.weixin.qq.com/s/CCQOHRCAolsorm8FEPdjoQ
 
 什么时候强化学习未必好用？
 
+https://mp.weixin.qq.com/s/I8IwPCY6-zocJKFXMr6rUg
+
+深度强化学习的18个关键问题
+
 # NN的INT8计算
 
 ## 概述

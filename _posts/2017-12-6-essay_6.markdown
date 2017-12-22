@@ -300,4 +300,11 @@ https://mp.weixin.qq.com/s/nZVIVJ9z0AWA8VFouNpafg
 
 深度学习之视频摘要简述
 
+https://mp.weixin.qq.com/s/PhaDqX3OT-mqyFHohDMfdA
+
+从Pix2Code到CycleGAN：2017年深度学习重大研究进展全解读
+
+https://mp.weixin.qq.com/s/0qyJtD124O5pRJ1UYEV0qg
+
+为给定任务自动生成神经网络：MIT提出RNN架构生成新方法
 

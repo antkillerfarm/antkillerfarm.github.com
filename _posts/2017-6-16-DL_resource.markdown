@@ -412,6 +412,10 @@ https://mp.weixin.qq.com/s/erwSQfvGdyKjxONbJKFAHg
 
 基于遗传算法的拼图游戏解决方案
 
+https://mp.weixin.qq.com/s/WlAh7jKzjRzqZP-p1WJNsg
+
+利用遗传算法优化神经网络：Uber提出深度学习训练新方式
+
 https://mp.weixin.qq.com/s/9ZQc3RqCCcWYDplZ4RU2oA
 
 清华段路明组发现深度学习和量子物理重要关联

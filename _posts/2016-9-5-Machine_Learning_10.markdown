@@ -99,6 +99,10 @@ https://mp.weixin.qq.com/s/NbM4sY93kaG5qshzgZzZIQ
 
 EM算法的九层境界：​Hinton和Jordan理解的EM算法
 
+https://mp.weixin.qq.com/s/FSID_FLMVxrKEj_padg_bQ
+
+EM算法是炼金术吗？
+
 ## 重新审视混合高斯模型
 
 下面给出混合高斯模型各参数的推导过程。

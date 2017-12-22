@@ -342,6 +342,10 @@ https://mp.weixin.qq.com/s/FL63vEAhp8mElI5RFxnbSQ
 
 GAN开山之作及最新综述
 
+https://mp.weixin.qq.com/s/I7axl00VZeCHJpaaITCO2Q
+
+对抗学习GAN提升跨模态检索效果
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。

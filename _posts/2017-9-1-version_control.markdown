@@ -375,4 +375,8 @@ https://mp.weixin.qq.com/s/Zo6LjGE__vQMsWyuoZm6Hw
 
 文本特征工程之N-Gram
 
+https://mp.weixin.qq.com/s/PmdARJQC8O42huzxZNSz3A
+
+搭建基于依存句法和短语结构句法结合的金融领域事件元素抽取系统实践
+
 

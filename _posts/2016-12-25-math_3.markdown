@@ -36,6 +36,12 @@ Dirichlet Distribution, Dirichlet Process and Dirichlet Process Mixture
 
 http://www.math.wm.edu/~leemis/2008amstat.pdf
 
+Univariate Distribution Relationships
+
+http://www.wzchen.com/s/probability_cheatsheet.pdf
+
+Probability Cheatsheet v2.0
+
 # 统计杂谈
 
 ## 统计模拟

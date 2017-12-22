@@ -1,6 +1,6 @@
 destination: ./_site
 lsi:         false
-port: 4000
+port: 4500
 permalink:   date
 markdown: kramdown
 highlighter: rouge

@@ -430,3 +430,9 @@ https://mp.weixin.qq.com/s/WCj0SbWbzvGPAODKUUdrOA
 
 根因分析的探索
 
+https://mp.weixin.qq.com/s/ZHglPHugPhPPO5_aH4MLUQ
+
+局部线性嵌入(LLE)
+
+
+

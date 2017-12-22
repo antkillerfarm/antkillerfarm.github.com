@@ -16,6 +16,16 @@ http://blog.csdn.net/zddblog/article/details/7521424
 
 SIFT算法详解
 
+# YUV & YCbCr & RGB
+
+在RGB颜色空间中，红，绿，蓝是基本元素。RGB格式是显示器通常使用的格式。
+
+然而，人类视觉系统(HVS)相比亮度来说对于颜色不是那么敏感的。通过把亮度与颜色信息分离，并对亮度值取更高的分辨率可以更有效地表示一个颜色图像。这就是所谓的YUV颜色空间。Y表示亮度，B－Y（即U）、R－Y（即V）是色差信息。
+
+实际使用中，为了更有效率，又定义了YCbCr格式。两个Y、Cb和U、Cr和V的含义相同，但是表示方法不同。YCbCr在YUV的基础上，进行了比例和偏置变换。
+
+相关的定义及转换标准是：ITU-R Recommendation BT.601（标清）和ITU-R Recommendation BT.709（高清）。
+
 # ISP
 
 ISP(Image Signal Processor)，图像信号处理器，是运用在相机或者具备拍摄功能设备上的一种芯片。在相机成像的整个环节中，它负责接收感光元件（Sensor）的原始信号数据，可以理解为整个相机拍照、录像的第一步处理流程，对图像质量起着非常重要的作用。
@@ -42,13 +52,42 @@ Foveon X3虽然色彩不失真，但制作工艺比较复杂，目前只用在�
 
 一个Bayer Array的最小单元包含4个像素点（两个绿色滤光片+一个红色滤光片+1个蓝色滤光片）。两个绿色点呈对角分布，红色点和蓝色点占据剩余的空间。
 
+绿色位于可见光频谱的中段，也是最常见的颜色，所以采样要多一些。
+
 ## RAW Data
 
 图像sensor数字采样的结果，就是所谓的RAW Data。
 
 RAW Data的取值范围取决于sensor的处理器位宽。比如12bit的范围就是0～4095。
 
-考虑到噪点的存在，一般会给取值范围设一个>0的下限，这也叫做Black Level。
+考虑到噪点（由热/电噪声产生的光点）的存在，一般会给取值范围设一个>0的下限以过滤噪点，这就是Black Level。这里令Black Level=128，则取值范围为128~4095。
+
+由于实际场景的光强度范围通常只占所有光强可见范围的很小一段，因此，RAW Data直接看起来就像是一块几乎纯色的图片。
+
+比如下图所示的RAW Data，由于取值主要集中于低值区间，因此看起来就是黑乎乎的一片，什么也看不出来。
+
+![](/images/img2/ISP_1.png)
+
+## Black Level Compensation
+
+为了增加图片的对比度，我们可将该取值范围映射到整个区间。具体算法可参见《图像处理理论（一）》中的“直方图均衡化”一节。
+
+![](/images/img2/ISP_2.png)
+
+这个过程被称为Black Level Compensation。效果如上图所示，我们开始可以看清一些东西了。
+
+## Green Balance
+
+![](/images/img2/ISP_3.png)
+
+## Bad Pixel Correction
+
+![](/images/img2/BPC.png)
+
+sensor上可能有坏点存在（如上图中的白点），可以用中值滤波去除之。（参见《图像处理理论（二）》）
+
+## Demosaic
+
 
 
 
@@ -56,7 +95,7 @@ RAW Data的取值范围取决于sensor的处理器位宽。比如12bit的范围�
 
 
 
-![](/images/img2/ISP_1.png)
+
 
 参考：
 
@@ -233,85 +272,5 @@ http://blog.csdn.net/carson2005/article/details/7647500
 http://www.cnblogs.com/lxy2017/p/3927456.html
 
 TLD（Tracking-Learning-Detection）一种目标跟踪算法
-
-# YUV & YCbCr & RGB
-
-在RGB颜色空间中，红，绿，蓝是基本元素。RGB格式是显示器通常使用的格式。
-
-然而，人类视觉系统(HVS)相比亮度来说对于颜色不是那么敏感的。通过把亮度与颜色信息分离，并对亮度值取更高的分辨率可以更有效地表示一个颜色图像。这就是所谓的YUV颜色空间。Y表示亮度，B－Y（即U）、R－Y（即V）是色差信息。
-
-实际使用中，为了更有效率，又定义了YCbCr格式。两个Y、Cb和U、Cr和V的含义相同，但是表示方法不同。YCbCr在YUV的基础上，进行了比例和偏置变换。
-
-相关的定义及转换标准是：ITU-R Recommendation BT.601（标清）和ITU-R Recommendation BT.709（高清）。
-
-# Machine Learning之Python篇
-
-## 参考
-
-https://mp.weixin.qq.com/s?__biz=MzIxNjA2ODUzNg==&mid=2651435914&idx=1&sn=b0b6f1cda08798dc35bf0930dc9d9096
-
-盘膝而坐--跟你聊聊APP市场的数据分析
-
-https://mp.weixin.qq.com/s/AVSFbfikczjm7flsQQPC1g
-
-2017年最受数据科学欢迎的Top15个Python库
-
-https://mp.weixin.qq.com/s/jBULfMR0_7Ms9nc5CLLIFQ
-
-Python的开源人脸识别库：离线识别率高达99.38%
-
-https://zhuanlan.zhihu.com/p/30630608
-
-Python和MATLAB交互的基本操作
-
-https://mp.weixin.qq.com/s/drpd1O502TcL54cHSEdl_g
-
-如何为时间序列数据优化K-均值聚类速度？
-
-https://mp.weixin.qq.com/s/Di4xVdD1jOGGCiIB-vdkkg
-
-Python可以被用来做哪些神奇好玩的事情
-
-https://mp.weixin.qq.com/s/-SHD9rXUGQ-yp21RtFhJpg
-
-手把手教你 Python挖掘用户评论典型意见并自动生产报告
-
-https://mp.weixin.qq.com/s/OxNj9fWaEMh8SuQiK52HWg
-
-sklearn中PCA库讲解与实战
-
-# 大数据平台参考资源
-
-https://mp.weixin.qq.com/s/O8pj4pChyw8PK-G_4A3DWg
-
-发布订阅消息系统Apache Pulsar简介
-
-https://mp.weixin.qq.com/s/ToJJTBWJXlpj3LkDj5YYvw
-
-为什么要选择Apache Pulsar
-
-https://mp.weixin.qq.com/s/crluKkEdvfZlHyF_gQm1ZA
-
-漫谈推荐系统及数据库技术
-
-https://mp.weixin.qq.com/s/CwUW-Ntb4qphrqha24P-Og
-
-漫谈推荐系统及数据库技术（二）——分布式数据库技术
-
-https://mp.weixin.qq.com/s/3oQ2yYGNuEz1cuEo4xLZzA
-
-如何解决大规模机器学习的三大痛点？
-
-http://www.jianshu.com/p/7a720bd7d6b5
-
-如何架构一个数据工程
-
-https://mp.weixin.qq.com/s/znr_oRlG_Y30K1XUwupwpg
-
-技术如何秒懂你？阿里百万级QPS资源调度系统揭秘
-
-https://mp.weixin.qq.com/s/1pXMCcO6NR1SMBzsyES-cw
-
-分布式数据库又支持关系数据模型了？
 
 
