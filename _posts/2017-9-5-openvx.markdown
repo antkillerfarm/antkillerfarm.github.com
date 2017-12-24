@@ -258,6 +258,10 @@ GPU处理图像Shader的入门
 
 # 知识图谱参考资源
 
+https://mp.weixin.qq.com/s/aLljr0R5w7OcidbXf71FQw
+
+知识图谱火了，但你知道它的发展历史吗？
+
 https://wenku.baidu.com/view/38ad3ef7e109581b6bd97f19227916888586b959.html
 
 知识图谱构建技术综述
@@ -357,5 +361,31 @@ https://mp.weixin.qq.com/s/tDvp8BU3lIWN5ZUSYgBcpg
 http://www.k6k4.com/blog/show/aaazgq11o1478935786270
 
 知识图谱好文章整理
+
+# NLP参考资源
+
+https://mp.weixin.qq.com/s/7yi67lPjseigeaqTD269mQ
+
+触类旁通，专业技能热度智能分析
+
+https://mp.weixin.qq.com/s/Zo6LjGE__vQMsWyuoZm6Hw
+
+文本特征工程之N-Gram
+
+https://mp.weixin.qq.com/s/PmdARJQC8O42huzxZNSz3A
+
+搭建基于依存句法和短语结构句法结合的金融领域事件元素抽取系统实践
+
+http://www.cnblogs.com/qcloud1001/p/7910255.html
+
+LSF-SCNN：一种基于CNN的短文本表达模型及相似度计算的全新优化模型
+
+http://www.cnblogs.com/qcloud1001/p/8074771.html
+
+神经张量网络（NTN）：探索文本实体之间的关系
+
+https://mp.weixin.qq.com/s/Y-skeJvkWlgkwKBpCjPaKA
+
+中文文本挖掘流程详解
 
 

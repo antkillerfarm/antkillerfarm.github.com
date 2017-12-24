@@ -223,11 +223,31 @@ Linux社区出现了两种新的应用打包格式，其一是Ubuntu力推的sna
 
 支持snap包的开源软件包括了Firefox、LibreOffice、Krita和Mycroft等，而提供了Flatpak包的应用有LibreOffice、GIMP、InkScape、MyPaint和Darktable。
 
+官网：
+
 http://flatpak.org/
 
 ## Snap
 
+官网：
+
 http://snapcraft.io/
+
+使用方法：
+
+安装：`sudo snap install <snap name>`
+
+更新：`sudo snap refresh <snap name>`
+
+更新所有：`sudo snap refresh`
+
+删除：`sudo snap remove <snap name>`
+
+参考：
+
+https://www.ubuntu.com/desktop/snappy
+
+A ‘snap’ is a universal Linux package
 
 ## Conda
 

@@ -142,6 +142,10 @@ https://mp.weixin.qq.com/s/5nnHBKEToepi3dhXLfQBtw
 
 机器学习分类器性能指标详解
 
+https://mp.weixin.qq.com/s/6eESoUvMObXSb2jy_KPRyg
+
+如何评价我们分类模型的性能？
+
 # Earth mover's distance
 
 推土机距离（EMD）是两个概率分布之间的距离度量的一种方式。如果将区间D的概率分布比作沙堆P，那么$$P_r$$和$$P_\theta$$之间的EMD距离，就是推土机将$$P_r$$改造为$$P_\theta$$所需要的工作量。

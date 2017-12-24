@@ -42,6 +42,10 @@ http://www.wzchen.com/s/probability_cheatsheet.pdf
 
 Probability Cheatsheet v2.0
 
+https://mp.weixin.qq.com/s/svNVryWhiGxWFBz0s0dX5g
+
+概率论简史
+
 # 统计杂谈
 
 ## 统计模拟

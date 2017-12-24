@@ -374,6 +374,10 @@ https://mp.weixin.qq.com/s/cmxruTYtOZTI2iPh1nlIBw
 
 AI与区块链会碰撞出什么样的火花？取代传统银行系统！？
 
+https://mp.weixin.qq.com/s/vtx2izrYxrRQLqdx35TwSQ
+
+浅谈比特币的数学原理
+
 # 数字成像
 
 https://mp.weixin.qq.com/s/od9uDZdRU4QaBKPHb0tLag

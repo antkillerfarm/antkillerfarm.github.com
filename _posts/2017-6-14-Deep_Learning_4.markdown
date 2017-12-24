@@ -270,6 +270,10 @@ https://mp.weixin.qq.com/s/GOPIIlDBd3vXpgq-a5s2fQ
 
 文本分类特征提取之Word2Vec
 
+https://mp.weixin.qq.com/s/pOShNO2iOntcGSRMbR9uxg
+
+Word2Vec与GloVe技术浅析与对比
+
 # RNN
 
 ## RNN的基本结构

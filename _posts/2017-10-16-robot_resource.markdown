@@ -434,5 +434,8 @@ https://mp.weixin.qq.com/s/ZHglPHugPhPPO5_aH4MLUQ
 
 局部线性嵌入(LLE)
 
+https://mp.weixin.qq.com/s/0EdUoYe61COZ8bpOel1eUw
+
+线性回归基础篇之预测鲍鱼年龄
 
 

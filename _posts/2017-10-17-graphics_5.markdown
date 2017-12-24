@@ -50,6 +50,8 @@ Foveon X3虽然色彩不失真，但制作工艺比较复杂，目前只用在�
 
 **Bayer Array**：绝大多数相机使用的是上图右侧所示的sensor。这种sensor由两层材料组成。下层是感光层，上层是滤光片。上层中RGB三色滤光片的排列方式被称为Bayer Array。
 
+>Bryce E. Bayer，1929～2012，美国科学家。 University of Rochester硕士。Kodak公司研究员。
+
 一个Bayer Array的最小单元包含4个像素点（两个绿色滤光片+一个红色滤光片+1个蓝色滤光片）。两个绿色点呈对角分布，红色点和蓝色点占据剩余的空间。
 
 绿色位于可见光频谱的中段，也是最常见的颜色，所以采样要多一些。
@@ -70,13 +72,19 @@ RAW Data的取值范围取决于sensor的处理器位宽。比如12bit的范围�
 
 ## Black Level Compensation
 
-为了增加图片的对比度，我们可将该取值范围映射到整个区间。具体算法可参见《图像处理理论（一）》中的“直方图均衡化”一节。
+为了增加图片的对比度，我们可将该取值范围映射到整个区间。这里一般采用线性变换。
 
 ![](/images/img2/ISP_2.png)
 
 这个过程被称为Black Level Compensation。效果如上图所示，我们开始可以看清一些东西了。
 
 ## Green Balance
+
+由于Bayer Array的关系，每个点的光强都只是实际光强的一部分。由于接收的绿光较多，通常以绿光光强为基准，对红蓝光强进行修正。这个过程就是Green Balance。
+
+理论上绿光强度应是红蓝光强的两倍，但由于各相机滤光片的性能不同，实际参数略有差异。比如上图相机的RGB修正参数为：[2.648438, 1.000000, 1.484375]
+
+修正效果如下图所示：
 
 ![](/images/img2/ISP_3.png)
 
@@ -86,15 +94,53 @@ RAW Data的取值范围取决于sensor的处理器位宽。比如12bit的范围�
 
 sensor上可能有坏点存在（如上图中的白点），可以用中值滤波去除之。（参见《图像处理理论（二）》）
 
+Black Level Compensation、Green Balance和Bad Pixel Correction，一般统称为Raw Data Process。这些功能现在通常由图像sensor直接提供，一般不在ISP的处理范畴。
+
 ## Demosaic
 
+由于RAW Data中的每个像素点只包含一种颜色，因此若要还原成彩色图片，就需要想办法补齐每个像素点缺失的色彩值。这个过程叫做Demosaic。
 
-
+Demosaic的算法一般如下图所示：
 
 ![](/images/img2/Demosaic.png)
 
+简单来说就是各种插值算法。
+
+Demosaic处理后的图片才是真正的彩色图片，如下图所示：
+
+![](/images/img2/ISP_4.png)
+
+## AWB(Auto White Balance) & Color Correction
 
 
+
+![](/images/img2/ISP_5.png)
+
+## Gamma Correction
+
+人眼对外界光源的感光值与输入光强不是呈线性关系的，而是呈指数型关系的。在低照度下，人眼更容易分辨出亮度的变化，随着照度的增加，人眼不易分辨出亮度的变化。而摄像机感光与输入光强呈线性关系。如下图所示：
+
+![](/images/img2/gamma.png)
+
+为方便人眼辨识图像，需要将摄像机采集的图像进行gamma校正。修正后的效果如下：
+
+![](/images/img2/ISP_6.png)
+
+参考：
+
+http://blog.163.com/hong.lg0518@126/blog/static/18907460200972711556304/
+
+伽马校正（Gamma Correction）
+
+http://www.cnblogs.com/pzxbc/archive/2011/12/26/2302572.html
+
+Gamma矫正(Gamma correction)
+
+http://blog.csdn.net/lichengyu/article/details/8457425
+
+Gamma校正及其OpenCV实现
+
+## Denoise & Sharpness
 
 
 参考：
@@ -106,6 +152,14 @@ Image Signal Processor
 http://blog.csdn.net/yapingmcu/article/details/9215747
 
 camera isp（Image Signal Processor）
+
+http://blog.csdn.net/weijory/article/details/53306545
+
+ISP算法概述
+
+http://www.cnblogs.com/whw19818/
+
+一个ISP的blog
 
 # 从BOW到SPM
 

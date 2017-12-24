@@ -275,6 +275,10 @@ https://mp.weixin.qq.com/s/MJE2JRYU7KakNKmHkD42CA
 
 谷歌发布TTS新系统Tacotron 2：直接从文本生成类人语音
 
+http://www.cnblogs.com/qcloud1001/p/7941158.html
+
+详解卷积神经网络（CNN）在语音识别中的应用
+
 ## Kaldi
 
 Kaldi是一个语音识别的工具包。官网：

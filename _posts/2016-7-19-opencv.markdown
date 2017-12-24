@@ -208,6 +208,10 @@ https://mp.weixin.qq.com/s/9fGKqTxoplAYb6O7yJskGA
 
 使用OpenCV和Python基于深度学习实现实时视频目标检测!
 
+http://www.cnblogs.com/qcloud1001/p/7904698.html
+
+老司机带你检测相似图片
+
 ## 论文
 
 《Moving Gradients: A Path-Based Method for Plausible Image Interpolation》：视频帧插值算法

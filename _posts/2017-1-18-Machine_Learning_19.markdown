@@ -6,6 +6,18 @@ category: ML
 
 ## XGBoost（续）
 
+GBDT的求解算法，具体到每颗树来说，其实就是不断地寻找分割点(split point)，将样本集进行分割，初始情况下，所有样本都处于一个结点（即根结点），随着树的分裂过程的展开，样本会分配到分裂开的子结点上。分割点的选择通过枚举训练样本集上的特征值来完成，分割点的选择依据则是减少Loss。
+
+XGBoost的步骤：
+
+I. 对loss function进行二阶Taylor Expansion，展开以后的形式里，当前待学习的Tree是变量，需要进行优化求解。
+
+II. Tree的优化过程，包括两个环节：
+
+I). 枚举每个叶结点上的特征潜在的分裂点
+
+II). 对每个潜在的分裂点，计算如果以这个分裂点对叶结点进行分割以后，分割前和分割后的loss function的变化情况。
+
 因为Loss Function满足累积性(对MLE取log的好处)，并且每个叶结点对应的weight的求取是独立于其他叶结点的（只跟落在这个叶结点上的样本有关），所以，不同叶结点上的loss function满足单调累加性，只要保证每个叶结点上的样本累积loss function最小化，整体样本集的loss function也就最小化了。
 
 **可见，XGBoost算法之所以能够并行，其要害在于其中枚举分裂点的计算，是能够分布式并行计算的。**
@@ -134,6 +146,14 @@ https://mp.weixin.qq.com/s/K2uh0J-BLj-eSriI1_mEjA
 https://mp.weixin.qq.com/s/JYPnzgzBMSGx09ltBtfwqg
 
 理解XGBoost机器学习模型的决策过程
+
+http://www.cnblogs.com/qcloud1001/p/7542128.html
+
+小巧玲珑：机器学习届快刀XGBoost的介绍和使用
+
+https://mp.weixin.qq.com/s/I5AXiHrN02zpyhF85Ze-jg
+
+从零开始学习Gradient Boosting算法
 
 # 关联规则挖掘
 

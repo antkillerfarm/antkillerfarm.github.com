@@ -367,16 +367,4 @@ https://mp.weixin.qq.com/s/Z1fqUMLjWFs0zA8f739kww
 
 2017深度学习NLP进展与趋势
 
-https://mp.weixin.qq.com/s/7yi67lPjseigeaqTD269mQ
-
-触类旁通，专业技能热度智能分析
-
-https://mp.weixin.qq.com/s/Zo6LjGE__vQMsWyuoZm6Hw
-
-文本特征工程之N-Gram
-
-https://mp.weixin.qq.com/s/PmdARJQC8O42huzxZNSz3A
-
-搭建基于依存句法和短语结构句法结合的金融领域事件元素抽取系统实践
-
 

@@ -132,6 +132,10 @@ https://zhuanlan.zhihu.com/personReid
 
 一个DL的blog，专注于行人重识别
 
+https://mp.weixin.qq.com/s/oAlMl9oFHnrRiRph9lqwDQ
+
+2016-2017深度学习-最新-必读-经典论文
+
 ## 教程
 
 https://theneuralperspective.com/tag/tutorials/
@@ -415,6 +419,10 @@ https://mp.weixin.qq.com/s/erwSQfvGdyKjxONbJKFAHg
 https://mp.weixin.qq.com/s/WlAh7jKzjRzqZP-p1WJNsg
 
 利用遗传算法优化神经网络：Uber提出深度学习训练新方式
+
+https://mp.weixin.qq.com/s/NtUUbvvQrJV4LhTUN72Q3A
+
+AI并不需要互联网：利用有性生殖，合成更多样、紧凑的神经网络
 
 https://mp.weixin.qq.com/s/9ZQc3RqCCcWYDplZ4RU2oA
 

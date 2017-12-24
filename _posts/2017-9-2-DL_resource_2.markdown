@@ -138,6 +138,18 @@ https://mp.weixin.qq.com/s/jbzkq6UHsTu18fdGJzDxMw
 
 ## TPU & GPU
 
+https://cloud.tencent.com/community/article/244743
+
+深度学习的异构加速技术（一）：AI 需要一个多大的“心脏”？
+
+https://cloud.tencent.com/community/article/581797
+
+深度学习的异构加速技术（二）：螺狮壳里做道场
+
+https://cloud.tencent.com/community/article/446425
+
+深度学习的异构加速技术（三）：互联网巨头们“心水”这些AI计算平台
+
 https://zhuanlan.zhihu.com/p/25382177
 
 AI芯片怎么降功耗？
@@ -403,40 +415,6 @@ UC Berkeley提出新型分布式框架Ray：实时动态学习的开端
 https://mp.weixin.qq.com/s/r951Iasr4dke6MPHsUO0TA
 
 开源DAWN，Stanford的又一力作
-
-## Capsule
-
-https://mp.weixin.qq.com/s/Tx9JJ0cIo_rH7BDjd_hkvw
-
-Hinton碰撞LeCun：CNN有两大缺陷，要用capsule做下一代CNN
-
-https://zhuanlan.zhihu.com/p/29435406
-
-浅析Hinton最近提出的Capsule计划
-
-https://mp.weixin.qq.com/s/5Af_K_BGrD5RomgpWxJNBQ
-
-Hinton大神Capsule论文首次公布，深度学习基石CNN或被取代
-
-https://mp.weixin.qq.com/s/wFoRtTKW40qgYmlXY0dRDw
-
-一篇新的Capsule论文：优于基准CNN
-
-https://mp.weixin.qq.com/s/9Vqg3HkDCfl1qMDIN-eCGQ
-
-Geoffrey Hinton那篇备受关注的Capsule论文公开了
-
-https://mp.weixin.qq.com/s/8U3vFaf3SDCYnWy4lQv6uw
-
-代替反向传播的另一种深度学习算法：离散优化
-
-http://mp.weixin.qq.com/s/gdke9E1A3eRUzgidp9uOqg
-
-邓侃：一文读懂Hinton最新Capsules论文
-
-https://mp.weixin.qq.com/s/R9pDEc7zqZdttLJGCfiv2w
-
-TensorFlow Pytorch Keras代码实现深度学习大神Hinton NIPS2017 Capsule论文
 
 
 

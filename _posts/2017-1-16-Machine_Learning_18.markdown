@@ -92,7 +92,7 @@ https://mp.weixin.qq.com/s/74lXwDg9H_dyOubfXVn2Bw
 
 除了《机器学习（十三～十五）》提及的ALS和PCA之外，相关的算法还包括：
 
-# FM：Factorization Machines
+## FM：Factorization Machines
 
 Factorization Machines是Steffen Rendle于2010年提出的算法。
 
@@ -110,13 +110,59 @@ FM算法实际上是一大类与矩阵分解有关的算法的广义模型。
 
 2.http://blog.csdn.net/itplus/article/details/40534885
 
-# PITF
+## PITF
 
 配对互动张量分解（Pairwise Interaction Tensor Factorization）算法，也是最早由Rendle引入推荐系统领域的。
 
 论文：
 
 http://www.wsdm-conference.org/2010/proceedings/docs/p81.pdf
+
+## 其他
+
+https://mp.weixin.qq.com/s/7yjA3_oCI5nSH4tv04BIhQ
+
+HFT
+
+https://mp.weixin.qq.com/s/gHKOArFzUM9Zn8hEsA-1wQ
+
+FISM
+
+https://mp.weixin.qq.com/s/VymwTuKq86JP2PL4v8LyyQ
+
+POI by Friends
+
+https://mp.weixin.qq.com/s/LnV-Oq3pCCeMk9RRhha-Aw
+
+GLSLIM
+
+https://mp.weixin.qq.com/s/xnJq-aBAZW22tP7RQylKLw
+
+iCD
+
+https://mp.weixin.qq.com/s/-IPwfrBz1dtYDupuGv4IjQ
+
+Ensemble
+
+https://mp.weixin.qq.com/s/SC8kNYvexetmDuxfQvwSDw
+
+CKE
+
+https://mp.weixin.qq.com/s/bu9rSno_WmHHisE3lzYnqg
+
+ConvMF
+
+https://mp.weixin.qq.com/s/opJtn5mPVjnfRwr5UZ4aJg
+
+FTRL原理与工程实践
+
+https://mp.weixin.qq.com/s/q9FU19Hpw2eWLLhsY5lYJQ
+
+parameter-free contextual bandits
+
+https://mp.weixin.qq.com/s/T-yCjebTzc_t6D4o5gyQLQ
+
+Collaborative Metric Learning
 
 # 决策树
 
@@ -225,14 +271,3 @@ XGBoost是陈天奇于2014年提出的一套并行boost算法的工具库。
 
 从算法实现的角度，把握一个机器学习算法的关键点有两个，一个是loss function的理解(包括对特征X/标签Y配对的建模，以及基于X/Y配对建模的loss function的设计，前者应用于inference，后者应用于training，而前者又是后者的组成部分)，另一个是对求解过程的把握。这两个点串接在一起构成了算法实现的主框架。
 
-GBDT的求解算法，具体到每颗树来说，其实就是不断地寻找分割点(split point)，将样本集进行分割，初始情况下，所有样本都处于一个结点（即根结点），随着树的分裂过程的展开，样本会分配到分裂开的子结点上。分割点的选择通过枚举训练样本集上的特征值来完成，分割点的选择依据则是减少Loss。
-
-XGBoost的步骤：
-
-I. 对loss function进行二阶Taylor Expansion，展开以后的形式里，当前待学习的Tree是变量，需要进行优化求解。
-
-II. Tree的优化过程，包括两个环节：
-
-I). 枚举每个叶结点上的特征潜在的分裂点
-
-II). 对每个潜在的分裂点，计算如果以这个分裂点对叶结点进行分割以后，分割前和分割后的loss function的变化情况。
