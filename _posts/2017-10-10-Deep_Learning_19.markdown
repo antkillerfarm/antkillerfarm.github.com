@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十九）——SegNet, DeconvNet, DeepLab, ENet, GCN, Ultra Deep Network
+title:  深度学习（十九）——SegNet, DeconvNet, DeepLab, ENet, GCN, Mask R-CNN, Ultra Deep Network
 category: DL 
 ---
 
@@ -143,6 +143,42 @@ Global Convolutional Network是孙剑团队的Chao Peng于2017年提出的。
 http://blog.csdn.net/bea_tree/article/details/60977512
 
 旷视最新：Global Convolutional Network
+
+# Mask R-CNN
+
+Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的NN。它是何恺明2017年的新作。
+
+论文：
+
+《Mask R-CNN》
+
+只有非官方的代码：
+
+Caffe版本：
+
+https://github.com/jasjeetIM/Mask-RCNN
+
+TensorFlow版本：
+
+https://github.com/hillox/TFMaskRCNN
+
+MXNet版本：
+
+https://github.com/TuSimple/mx-maskrcnn
+
+参考：
+
+https://zhuanlan.zhihu.com/p/25954683
+
+Mask R-CNN个人理解
+
+https://mp.weixin.qq.com/s/E0P2B798pukbtRarWooUkg
+
+Mask R-CNN的Keras/TensorFlow/Pytorch代码实现
+
+https://zhuanlan.zhihu.com/p/30967656
+
+从R-CNN到Mask R-CNN
 
 # 语义分割的展望
 

@@ -170,7 +170,11 @@ https://mp.weixin.qq.com/s/gsRnbknytz2FY2dWgdWEYg
 
 https://mp.weixin.qq.com/s/Przl4ivbNuOFmz4pcYTrpQ
 
-浅述：从 Minimax到AlphaZero，完全信息博弈之路（1） 
+浅述：从 Minimax到AlphaZero，完全信息博弈之路（1）
+
+https://zhuanlan.zhihu.com/p/32089487
+
+AlphaZero实战：从零学下五子棋
 
 ## 实战
 

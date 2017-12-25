@@ -194,6 +194,16 @@ http://www.cnblogs.com/whw19818/
 
 一个ISP的blog
 
+# Harris
+
+http://blog.csdn.net/lwzkiller/article/details/54633670
+
+Harris角点检测原理详解
+
+http://www.cnblogs.com/king-lps/p/6375424.html
+
+Harris角点检测
+
 # 从BOW到SPM
 
 ## BOW
@@ -219,6 +229,10 @@ Bag-of-words模型是信息检索领域常用的文档表示方法。在信息�
 http://blog.csdn.net/v_JULY_v/article/details/6555899
 
 SIFT算法的应用--目标识别之Bag-of-words模型
+
+https://zhuanlan.zhihu.com/p/25999669
+
+BOW算法，被CNN打爆之前的王者
 
 ## SPM
 

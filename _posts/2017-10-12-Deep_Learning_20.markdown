@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十）——视频目标分割, Fast Image Processing, OpenPose, Mask R-CNN, 目标跟踪
+title:  深度学习（二十）——视频目标分割, Fast Image Processing, 图像超分辨率算法, OpenPose, 目标跟踪
 category: DL 
 ---
 
@@ -24,7 +24,7 @@ https://zhuanlan.zhihu.com/p/28124810
 
 https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2651988934&idx=2&sn=0e5ffa195ef67a1371f3b5b223519121
 
-ResNets、HighwayNets、DenseNets：用 TensorFlow 实现超深度神经网络
+ResNets、HighwayNets、DenseNets：用TensorFlow实现超深度神经网络
 
 # 视频目标分割
 
@@ -112,6 +112,94 @@ http://mmlab.science.unitn.it/RAISE/
 
 RAISE数据集包含了8156张高分辨率原始照片，由3台不同的相机拍摄，并给出了相机的型号和参数。
 
+# 图像超分辨率算法
+
+![](/images/img2/Super_Resolution.png)
+
+如上图所示，一张低分辨率的小图（Low Resolution，LR）如果采用简单的插值算法进行图片放大的话，图像中物体的边缘会比较模糊。如何用算法将这种LR的图片放大成HR的图片，这就是Super Resolution（SR）的目标了。
+
+SR目前主要有两个用途：
+
+1.提升设备的测量精度。这个在天文和医疗图像方面用的比较多，比如Google和NASA利用AI探测太阳系外的行星，还有癌症的早期诊断。
+
+2.Image Signal Processor。上面的两个应用比较高端，SR最主要的用途恐怕还是相机的ISP领域。ISP的基本概念参见《图像处理理论（五）》。
+
+这里主要讨论DL在SR领域的应用。
+
+## 前DL时代的SR
+
+最简单的当然是《图像处理理论（二）》中提到的梯度锐化和拉普拉斯锐化，这种简单算法当然不要指望有什么好效果，聊胜于无而已。这是1995年以前的主流做法。
+
+
+
+## SRCNN
+
+论文：
+
+《Learning a Deep Convolutional Network for Image Super-Resolution》
+
+## DRCN
+
+论文：
+
+《Deeply-Recursive Convolutional Network for Image Super-Resolution》
+
+## VDSR
+
+论文：
+
+《Accurate Image Super-Resolution Using Very Deep Convolutional Networks》
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/25532538
+
+深度学习在图像超分辨率重建中的应用
+
+https://zhuanlan.zhihu.com/p/25201511
+
+深度对抗学习在图像分割和超分辨率中的应用
+
+https://mp.weixin.qq.com/s/uK0L5RV0bB2Jnr5WCZasfw
+
+深度学习在单图像超分辨率上的应用：SRCNN、Perceptual loss、SRResNet
+
+https://mp.weixin.qq.com/s/KxQ-GRnEYEdmS2H-DHIHOg
+
+南京理工大学ICCV 2017论文：图像超分辨率模型MemNet
+
+https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
+
+NTIRE2017夺冠论文：用于单一图像超分辨率的增强型深度残差网络
+
+https://www.zhihu.com/question/25401250
+
+如何通过多帧影像进行超分辨率重构？
+
+https://www.zhihu.com/question/38637977
+
+超分辨率重建还有什么可以研究的吗？
+
+https://zhuanlan.zhihu.com/p/25912465
+
+胎儿MRI高分辨率重建技术：现状与趋势
+
+https://mp.weixin.qq.com/s/i-im1sy6MNWP1Fmi5oWMZg
+
+华为推出新型HiSR：移动端的超分辨率算法
+
+http://blog.csdn.net/u011692048/article/details/77496861
+
+超分辨率重建之SRCNN
+
+http://blog.csdn.net/u011692048/article/details/77512310
+
+超分辨率重建之VDSR
+
+http://blog.csdn.net/u011692048/article/details/77500764
+
+超分辨率重建之DRCN
+
 # OpenPose
 
 OpenPose是一个实时多人关键点检测的库，基于OpenCV和Caffe编写。它是CMU的Yaser Sheikh小组的作品。
@@ -133,42 +221,6 @@ OpenPose的使用效果如上图所示。
 代码：
 
 https://github.com/CMU-Perceptual-Computing-Lab/openpose
-
-# Mask R-CNN
-
-Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的NN。它是何恺明2017年的新作。
-
-论文：
-
-《Mask R-CNN》
-
-只有非官方的代码：
-
-Caffe版本：
-
-https://github.com/jasjeetIM/Mask-RCNN
-
-TensorFlow版本：
-
-https://github.com/hillox/TFMaskRCNN
-
-MXNet版本：
-
-https://github.com/TuSimple/mx-maskrcnn
-
-参考：
-
-https://zhuanlan.zhihu.com/p/25954683
-
-Mask R-CNN个人理解
-
-https://mp.weixin.qq.com/s/E0P2B798pukbtRarWooUkg
-
-Mask R-CNN的Keras/TensorFlow/Pytorch代码实现
-
-https://zhuanlan.zhihu.com/p/30967656
-
-从R-CNN到Mask R-CNN
 
 # 目标跟踪
 

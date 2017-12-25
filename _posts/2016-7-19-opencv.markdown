@@ -116,10 +116,6 @@ https://github.com/liuruoze/EasyPR
 
 一个开源的中文车牌识别系统。
 
-http://blog.csdn.net/lwzkiller/article/details/54633670
-
-Harris角点检测原理详解
-
 https://mp.weixin.qq.com/s/zZNJKUYlmKKSuSRCM1sgeg
 
 OpenCV二维码检测与定位
