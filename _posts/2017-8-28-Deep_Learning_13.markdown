@@ -20,6 +20,10 @@ https://www.encyclopediaofmath.org/index.php/Winograd_small_convolution_algorith
 
 Winograd small convolution algorithm
 
+https://mp.weixin.qq.com/s/VcGwT0rKYQr13MQ_PRVmyg
+
+每个AI程序员都应该知道的基础数论
+
 # Machine Learning之Python篇
 
 ## 参考

@@ -112,7 +112,35 @@ Demosaic处理后的图片才是真正的彩色图片，如下图所示：
 
 ## AWB(Auto White Balance) & Color Correction
 
+白平衡的基本原理是在任意环境下，把白色物体还原成白色物体，也就是通过找到图像中的白块，然后调整R/G/B的比例。
 
+AWB算法通常包括的步骤如下：
+
+(1)色温统计：根据图像统计出色温；
+
+(2)计算通道增益：计算出R和B通道的增益；
+
+(3)进行偏色的矫正：根据给出的增益，算出偏色图像的矫正。
+
+由于色温这个东西并不好测量，学界提出的各种模型也各有其局限，因此业界通常采用如下的简易算法实现AWB：
+
+$$K=\frac{R_{aver}+G_{aver}+B_{aver}}{3}$$
+
+$$K_r=K/R_{aver}$$
+
+$$K_g=K/G_{aver}$$
+
+$$K_b=K/B_{aver}$$
+
+$$R_{new}=R*K_r$$
+
+$$G_{new}=G*K_g$$
+
+$$B_{new}=B*K_b$$
+
+由于人类眼睛可见光的频谱响应度和半导体传感器频谱响应度之间存在差别，还有透镜等的影响，得到的RGB值颜色会存在偏差，因此必须对颜色进行校正。
+
+经过AWB和Color Correction后的效果如下所示：
 
 ![](/images/img2/ISP_5.png)
 
@@ -142,6 +170,11 @@ Gamma校正及其OpenCV实现
 
 ## Denoise & Sharpness
 
+Denoise是指去除噪声，一般使用低通滤波器即可。
+
+Sharpness是对图像边缘进行锐化。
+
+Denoise & Sharpness或者后续更复杂的处理，都属于图像增强的范畴了。这里功能的多少主要取决于ISP的性能，并不是每个ISP都有。
 
 参考：
 
@@ -282,49 +315,5 @@ http://www.cnblogs.com/quarryman/p/optical_flow.html
 https://zhuanlan.zhihu.com/p/31726032
 
 走进光流的世界
-
-## Particle filter
-
-http://www.cvvision.cn/6002.html
-
-基于粒子滤波器的目标跟踪算法及实现
-
-http://www.cnblogs.com/zjb0823/p/3806333.html
-
-运动目标跟踪算法综述
-
-https://wenku.baidu.com/view/6554ba7402768e9951e73864.html
-
-基于粒子滤波的视频目标追踪
-
-http://www.cnblogs.com/feisky/archive/2009/11/10/1600086.html
-
-粒子滤波概述
-
-http://www.cnblogs.com/yangyangcv/archive/2010/05/23/1742263.html
-
-基于粒子滤波的物体跟踪
-
-https://www.zhihu.com/question/25371476
-
-怎样从实际场景上理解粒子滤波（Particle Filter）？
-
-http://freemind.pluskid.org/machine-learning/hmm-kalman-particle-filtering
-
-漫谈HMM：Kalman/Particle Filtering
-
-## TLD
-
-http://blog.csdn.net/zouxy09/article/details/7893011
-
-TLD（Tracking-Learning-Detection）学习与源码理解系列文章
-
-http://blog.csdn.net/carson2005/article/details/7647500
-
-比微软kinect更强的视频跟踪算法--TLD跟踪算法介绍
-
-http://www.cnblogs.com/lxy2017/p/3927456.html
-
-TLD（Tracking-Learning-Detection）一种目标跟踪算法
 
 

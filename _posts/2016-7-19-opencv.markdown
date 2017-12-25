@@ -212,6 +212,10 @@ http://www.cnblogs.com/qcloud1001/p/7904698.html
 
 老司机带你检测相似图片
 
+https://mp.weixin.qq.com/s/kDEkcLUli_jshPf4Zb3HIw
+
+微信官方给不了的圣诞帽，Python和OpenCV给你
+
 ## 论文
 
 《Moving Gradients: A Path-Based Method for Plausible Image Interpolation》：视频帧插值算法

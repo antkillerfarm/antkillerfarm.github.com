@@ -4,6 +4,38 @@ title:  NLP参考资源（一）
 category: resource 
 ---
 
+# NLP
+
+## TextInfoExp
+
+TextInfoExp是某网友提供的自然语言处理相关实验（基于sougou数据集），包含文本特征提取（TF-IDF），文本分类，文本聚类，word2vec训练词向量及同义词词林中文词语相似度计算、文档自动摘要，信息抽取，情感分析与观点挖掘等。
+
+网址：
+
+https://github.com/Roshanson/TextInfoExp
+
+## 自然语言理解
+
+Natural language understanding(NLU)属于NLP的一个分支，属于人工智能的一个部分，用来解决机器理解人类语言的问题，属于人工智能的核心难题。
+
+![](/images/article/domain_slot.png)
+
+上图是语义理解中，最有实用价值的框架语义表示（frame semantics representation）的原理简图。
+
+参考：
+
+http://www.shuang0420.com/2017/04/27/NLP%E7%AC%94%E8%AE%B0%20-%20NLU%E4%B9%8B%E6%84%8F%E5%9B%BE%E5%88%86%E7%B1%BB/
+
+NLU之意图分类
+
+## 论文
+
+《Distant Supervision for relation extraction without labeled data》
+
+《Using Recurrent Neural Networks for Slot Filling in Spoken Language Understanding》
+
+《Convolutional Neural Networks for Sentence Classification》：TextCNN的开山之作
+
 # NLP参考资源
 
 https://mp.weixin.qq.com/s/4eyxX_EfrImGXnYmTRUFHw
@@ -381,48 +413,4 @@ https://mp.weixin.qq.com/s/VPs6OB81K1H7_TMV9xLUVQ
 http://blog.csdn.net/xizero00/article/details/51182003
 
 论文阅读：End-To-End Memory Networks
-
-https://mp.weixin.qq.com/s/rF4zKCbj3Jh8dDR1239lpA
-
-基于双语主题模型的跨语言层次分类体系匹配
-
-https://mp.weixin.qq.com/s/gQ9dV-IPWHTOLbI6u0D67g
-
-可解释推荐系统：身怀绝技，一招击中用户心理
-
-https://mp.weixin.qq.com/s/M_ZN0YuvegAnc2GXCZTt9Q
-
-初学者指南：神经网络在自然语言处理中的应用
-
-https://mp.weixin.qq.com/s/ouNxUvWC_mxap6P5z6_dFA
-
-教聊天机器人进行多轮对话
-
-https://mp.weixin.qq.com/s/fZv9FgbdQ1bWPoNdl9sF1A
-
-“宝石迷阵”与信息检索
-
-http://www.jianshu.com/p/0273c377c34e
-
-机器学习算法在文本分类中的应用综述
-
-https://mp.weixin.qq.com/s/BcUB3bXrPJF0WQetWs7Law
-
-用深度学习解决自然语言处理中的7大问题，文本分类、语言建模、机器翻译等
-
-https://mp.weixin.qq.com/s/GyE9qdXPGvrq12dMAf4nrQ
-
-论文推荐：QA，增强学习，知识图谱，机器阅读理解
-
-https://mp.weixin.qq.com/s/eCtqMIo3_UDxAR4fWzMjZQ
-
-站在锤子手机背后，小源科技用AI打造短信场景服务
-
-https://mp.weixin.qq.com/s/hkcVhyqiDW--F3QxucgEcA
-
-亚马逊开源神经机器翻译框架Sockeye：基于Apache MXNet的NMT平台
-
-https://mp.weixin.qq.com/s/vgejlnsBlOKMMRt-M3-d-w
-
-深思考：实现人机多轮交互突破是攻克图灵测试的核心
 

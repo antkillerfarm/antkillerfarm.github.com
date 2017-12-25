@@ -248,6 +248,10 @@ https://mp.weixin.qq.com/s/I7IUFRVucnJLbGaTqGIXXw
 
 如何使用Keras集成多个卷积网络并实现共同预测
 
+https://mp.weixin.qq.com/s/tW54lcv9aRz9xXC9V-DsWw
+
+Keras+树莓派，130行代码找到圣诞老人
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。

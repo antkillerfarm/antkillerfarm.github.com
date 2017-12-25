@@ -140,6 +140,10 @@ https://mp.weixin.qq.com/s/uK-HasmiavM3jv6hNRY11A
 
 深度梯度压缩：降低分布式训练的通信带宽
 
+https://mp.weixin.qq.com/s/_MDbbGzDOGHk5TBgbu_-oA
+
+中大商汤等提出深度网络加速新方法，具有强大兼容能力
+
 # 人脸识别
 
 ## Cascade CNN

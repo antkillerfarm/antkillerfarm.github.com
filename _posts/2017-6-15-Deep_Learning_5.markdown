@@ -281,6 +281,10 @@ https://mp.weixin.qq.com/s/lbHTDdzPbYn2Ln4aihGujQ
 
 人人都能看懂的LSTM
 
+https://mp.weixin.qq.com/s/LI6TsPjzIaa8DxDu3UaV1A
+
+门控循环单元（GRU）的基本概念与原理
+
 # 神经元激活函数进阶
 
 在《深度学习（一、二）》中，我们探讨了ReLU相对于sigmoid函数的改进，以及一些保证深度神经网络能够训练的措施。然而即便如此，深度神经网络的训练仍然是一件非常困难的事情，还需要更多的技巧和方法。

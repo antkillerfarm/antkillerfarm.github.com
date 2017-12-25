@@ -60,6 +60,12 @@ howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如
 
 https://howmuch.net/
 
+# 世说新语（续）
+
+## 2017.12
+
+纪录片《有个学校叫南开》拍的不错。
+
 # 莫比乌斯反演
 
 http://blog.csdn.net/acdreamers/article/details/8542292
@@ -320,5 +326,11 @@ https://mp.weixin.qq.com/s/eEQhwV1cA4nEgEBcOKDenA
 
 将逆向课程生成用于强化学习：伯克利新研究让智能体掌握全新任务
 
+https://mp.weixin.qq.com/s/Rd_U0gnusWqBRprLKIJaWQ
 
+Xavier Amastsin：2017机器学习和人工智能年终综述
+
+https://mp.weixin.qq.com/s/x6KM7iruojEWkWPgXpIAuA
+
+这一次，MIT的科学家让谷歌AI把步枪误认成直升机
 

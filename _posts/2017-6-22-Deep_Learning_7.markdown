@@ -30,6 +30,10 @@ https://mp.weixin.qq.com/s/SqIMkiP1IZMGWzwZWGOI7w
 
 谈谈神经网络的注意机制和使用方法
 
+https://mp.weixin.qq.com/s/POYTh4Jf7HttxoLhrHZQhw
+
+基于双向注意力机制视觉问答pyTorch实现
+
 # seq2seq
 
 seq2seq最早用于Neural Machine Translation领域（与之相对应的有Statistical Machine Translation）。训练后的seq2seq模型，可以根据输入语句，自动生成翻译后的输出语句。

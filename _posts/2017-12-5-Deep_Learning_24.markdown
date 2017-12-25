@@ -86,6 +86,10 @@ https://mp.weixin.qq.com/s/R1bKmhADfhQAZmhXL9ObiQ
 
 多重预训练视觉模型的迁移学习
 
+https://mp.weixin.qq.com/s/pDK4qBWArtETARE1fjbbmA
+
+迁移学习在深度学习中的应用
+
 # 语音识别
 
 ## CTC
@@ -372,6 +376,10 @@ http://www.jianshu.com/p/86489f1afd36
 http://www.jianshu.com/p/4fadf629895b
 
 端到端的OCR：LSTM＋CTC的实现
+
+https://mp.weixin.qq.com/s/axpA7Y_Rhiols5bDIdc6jg
+
+Tesseract-OCR 3.0.1训练自己的语言库之图像文字识别
 
 
 

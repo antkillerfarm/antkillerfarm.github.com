@@ -165,7 +165,7 @@ Dynamic programming(DP)用于解决那些可分解为**重复子问题（overlap
 
 除了Bellman之外，苏联的Lev Pontryagin也做出了很大的贡献，他和Bellman被并称为Optimal control之父。
 
->Lev Semyonovich Pontryagin，1908~1988，苏联数学家。主要研究代数拓扑和微分拓扑。他14岁因为煤气爆炸事故成为盲人。苏联科学院院士，国际数学家联盟副主席。
+>Lev Semyonovich Pontryagin，1908~1988，苏联数学家。主要研究代数拓扑和微分拓扑。他14岁时，因为煤气爆炸事故成为盲人。苏联科学院院士，国际数学家联盟副主席。
 
 ## 最优子结构
 

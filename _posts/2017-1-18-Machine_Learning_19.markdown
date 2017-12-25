@@ -30,6 +30,10 @@ GitHub：
 
 https://github.com/dmlc/xgboost
 
+中文文档：
+
+http://xgboost.apachecn.org/cn/latest/
+
 编译：
 
 {% highlight java %}

@@ -1,0 +1,53 @@
+---
+layout: post
+title:  图像处理理论（六）——经典目标跟踪算法
+category: graphics 
+---
+
+# 经典目标跟踪算法（续）
+
+## Particle filter
+
+http://www.cvvision.cn/6002.html
+
+基于粒子滤波器的目标跟踪算法及实现
+
+http://www.cnblogs.com/zjb0823/p/3806333.html
+
+运动目标跟踪算法综述
+
+https://wenku.baidu.com/view/6554ba7402768e9951e73864.html
+
+基于粒子滤波的视频目标追踪
+
+http://www.cnblogs.com/feisky/archive/2009/11/10/1600086.html
+
+粒子滤波概述
+
+http://www.cnblogs.com/yangyangcv/archive/2010/05/23/1742263.html
+
+基于粒子滤波的物体跟踪
+
+https://www.zhihu.com/question/25371476
+
+怎样从实际场景上理解粒子滤波（Particle Filter）？
+
+http://freemind.pluskid.org/machine-learning/hmm-kalman-particle-filtering
+
+漫谈HMM：Kalman/Particle Filtering
+
+## TLD
+
+http://blog.csdn.net/zouxy09/article/details/7893011
+
+TLD（Tracking-Learning-Detection）学习与源码理解系列文章
+
+http://blog.csdn.net/carson2005/article/details/7647500
+
+比微软kinect更强的视频跟踪算法--TLD跟踪算法介绍
+
+http://www.cnblogs.com/lxy2017/p/3927456.html
+
+TLD（Tracking-Learning-Detection）一种目标跟踪算法
+
+

@@ -318,6 +318,14 @@ https://mp.weixin.qq.com/s/uzeeZiaAFdA0C_zAcX756w
 
 深度学习架构之争
 
+https://mp.weixin.qq.com/s/VM-KiIJHA2gXLVu0WRIzwA
+
+王中风教授：如何满足不同应用场景下深度神经网络模型算力和能效需求
+
+https://mp.weixin.qq.com/s/f5mQkWxPYc77t2we1Y306Q
+
+深度学习引领AI芯片大战
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293
