@@ -344,4 +344,8 @@ https://mp.weixin.qq.com/s/jdM0w4hRgkWmul9Bcp2oCw
 
 揭秘CVPR2017 WebVision图片分类竞赛冠军背后的技术
 
+https://mp.weixin.qq.com/s/53zse9GD9W25Vx6FCt2Bmw
+
+基于深度学习的DGA恶意域名分类算法
+
 

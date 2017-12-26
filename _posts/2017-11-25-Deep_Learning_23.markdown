@@ -288,37 +288,9 @@ https://mp.weixin.qq.com/s/I8IwPCY6-zocJKFXMr6rUg
 
 深度强化学习的18个关键问题
 
-# NN的INT8计算
+https://mp.weixin.qq.com/s/gFHbLF-q91sddMAX1CRbEQ
 
-## 概述
-
-NN的INT8计算是近来NN计算优化的方向之一。这方面的文章以Xilinx的白皮书较为经典：
-
-https://china.xilinx.com/support/documentation/white_papers/c_wp486-deep-learning-int8.pdf
-
-利用Xilinx器件的INT8优化开展深度学习
-
-论文：
-
-《On the efficient representation and execution of deep acoustic models》
-
-参考：
-
-https://www.chiphell.com/thread-1620755-1-1.html
-
-新Titan X的INT8计算到底是什么鬼
-
-https://mp.weixin.qq.com/s/S9VcoS_59nbZWe_P3ye2Tw
-
-减少模型半数内存用量：百度&英伟达提出混合精度训练法
-
-## NN硬件的指标术语
-
-MACC：multiply-accumulate，乘法累加。
-
-FLOPS：Floating-point Operations Per Second，每秒所执行的浮点运算次数。
-
-显然NN的INT8计算主要以MACC为单位。
+俞扬：“审时度势”的高效强化学习
 
 # LSTM进阶
 

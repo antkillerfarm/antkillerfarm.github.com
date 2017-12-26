@@ -48,6 +48,8 @@ https://mp.weixin.qq.com/s/QEHAV_rW25E0b0N7POr6tw
 
 上图是Reinforcement Learning和其他类型算法的关系图。
 
+![](/images/img2/RL_2.png)
+
 不像监督学习，对于每一个样本，都有一个确定的标签与之对应，而强化学习没有标签，只有一个时间延迟的奖励，而且游戏中我们往往牺牲当前的奖励来获取将来更大的奖励。这就是**信用分配问题（Credit Assignment Problem）**，即当前的动作要为将来获得更多的奖励负责。
 
 而且在我们找到一个策略，让游戏获得不错的奖励时，我们是选择继续坚持当前的策略，还是探索新的策略以求更多的奖励？这就是**探索与开发（Explore-exploit Dilemma）**的问题。
@@ -223,25 +225,4 @@ $$\epsilon$$-greedy基于概率对exploration和exploitation进行折中，即�
 当$$\epsilon=0$$时，该算法也被称为greedy算法，也就是之前提到的exploitation-only策略。
 
 必须指出的是，k-armed Bandit只是真实问题的一个极度简化模型：它只有action和reward，没有input或sequentiality，也没有state。
-
-## Softmax算法
-
-Softmax算法和$$\epsilon$$-贪心算法类似，其公式为：
-
-$$P(k)=\frac{e^{\frac{Q(k)}{\tau}}}{\sum_{i=1}^{K}e^{\frac{Q(i)}{\tau}}}$$
-
-这实际上是一个Boltzmann分布的公式，其中$$\tau$$表示温度，$$\tau \to 0$$表示优先利用，$$\tau \to \infty$$表示优先探索。
-
-## 求均值的小技巧
-
-在k-armed Bandit问题中，一般用reward的均值来近似它的数学期望值。由于action是个序列，因此相应的算法一般是个不断迭代的过程，或者也可以说是一个增量（incremental）过程。
-
-在增量过程中，保存所有的reward值来计算均值显然是个笨办法。这里常用的办法是：
-
-$$Q_{n+1}=Q_n+\frac{1}{n}[R_n-Q_n]$$
-
-不光reward值可以这样更新，其他均值也可采用这个方法：
-
-$$NewEstimate \leftarrow OldEstimate + StepSize [Target - OldEstimate]$$
-
 

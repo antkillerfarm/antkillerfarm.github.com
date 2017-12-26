@@ -50,4 +50,39 @@ http://www.cnblogs.com/lxy2017/p/3927456.html
 
 TLD（Tracking-Learning-Detection）一种目标跟踪算法
 
+# 压缩感知
+
+http://blog.csdn.net/abcjennifer/article/details/7721834
+
+初识压缩感知Compressive Sensing
+
+http://blog.csdn.net/abcjennifer/article/details/7724360
+
+中国压缩传感资源（China Compressive Sensing Resources）
+
+http://blog.csdn.net/xiahouzuoxin/article/details/38820925
+
+白话压缩感知（含Matlab代码）
+
+http://blog.csdn.net/abcjennifer/article/details/7748833
+
+压缩感知进阶——有关稀疏矩阵
+
+# 元胞自动机
+
+http://www.doc88.com/p-8939046003005.html
+
+元胞自动机理论及其在计算机仿真模拟中的应用
+
+http://blog.csdn.net/chl033/article/details/5367861
+
+元胞自动机与相关理论和方法
+
+http://blog.csdn.net/deepfuture/article/details/5065284
+
+元胞自动机
+
+http://www.cnblogs.com/Firefly727/articles/1856328.html
+
+元胞自动机
 

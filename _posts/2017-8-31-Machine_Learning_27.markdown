@@ -4,6 +4,46 @@ title:  机器学习（二十七）——Probabilistic Robotics
 category: ML 
 ---
 
+## 重复子问题（续）
+
+在继续下文之前，推荐一波资源：
+
+>David Poole，加拿大不列颠哥伦比亚大学教授。加拿大AI协会终身成就奖（2013年）。   
+>个人主页：   
+>http://www.cs.ubc.ca/~poole/index.html
+
+David Poole的主页上有很多好东西：
+
+http://www.cs.ubc.ca/~poole/demos/
+
+该网页上有一些RL方面的用java applet做的可视化demo。由于年代比较久远，这些demo无法在目前的浏览器上运行。所以，我对其做了一些改造，使之能够使用。相关代码参见：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/RL
+
+David Poole还写了一本书《Artificial Intelligence: foundations of computational agents》，目前已经是第2版了。
+
+其中的代码资源参见：
+
+http://artint.info/AIPython/
+
+从该书所用编程语言的变迁，亦可感受到Poole教授不断学习的脚步。要知道Poole教授刚进入学术界的时代（1985年前后），就连Java也还没被发明出来呢。
+
+http://uhaweb.hartford.edu/compsci/ccli/samplep.htm
+
+Hartford大学的这个网站也有些不错的资料，偏重RL、机器人、ML for Game等领域。
+
+## RL与DP
+
+RL领域的DP算法的主要思想是：利用value function构建搜索Good Policy的方法。这里用$$v_*(s)$$或$$q_*(s, a)$$表示最优的value function。
+
+
+
+RL DP主要包括以下算法：（为了抓住问题的本质，这里仅列出各算法最关键的Bellman equation，至于流程参照Q-learning算法即可。）
+
+### Iterative Policy Evaluation：
+
+$$v_{k+1}(s) = \sum_{a \in \mathcal{A}}\pi(a | s)\left(\mathcal{R}_s^a + \gamma \sum_{s'\in \mathcal{S}}\mathcal{P}_{ss'}^a v_k(s')\right)$$
+
 ### Policy Iteration
 
 Policy Iteration包含如下两步：
@@ -238,41 +278,5 @@ Introduction to Gaussian Process Regression
 http://wenku.baidu.com/view/72f80113915f804d2b16c173.html
 
 高斯过程回归方法综述
-
-# 压缩感知
-
-http://blog.csdn.net/abcjennifer/article/details/7721834
-
-初识压缩感知Compressive Sensing
-
-http://blog.csdn.net/abcjennifer/article/details/7724360
-
-中国压缩传感资源（China Compressive Sensing Resources）
-
-http://blog.csdn.net/xiahouzuoxin/article/details/38820925
-
-白话压缩感知（含Matlab代码）
-
-http://blog.csdn.net/abcjennifer/article/details/7748833
-
-压缩感知进阶——有关稀疏矩阵
-
-# 元胞自动机
-
-http://www.doc88.com/p-8939046003005.html
-
-元胞自动机理论及其在计算机仿真模拟中的应用
-
-http://blog.csdn.net/chl033/article/details/5367861
-
-元胞自动机与相关理论和方法
-
-http://blog.csdn.net/deepfuture/article/details/5065284
-
-元胞自动机
-
-http://www.cnblogs.com/Firefly727/articles/1856328.html
-
-元胞自动机
 
 

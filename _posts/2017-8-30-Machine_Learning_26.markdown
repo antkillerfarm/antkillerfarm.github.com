@@ -6,6 +6,26 @@ category: ML
 
 # K-摇臂赌博机（续）
 
+## Softmax算法
+
+Softmax算法和$$\epsilon$$-贪心算法类似，其公式为：
+
+$$P(k)=\frac{e^{\frac{Q(k)}{\tau}}}{\sum_{i=1}^{K}e^{\frac{Q(i)}{\tau}}}$$
+
+这实际上是一个Boltzmann分布的公式，其中$$\tau$$表示温度，$$\tau \to 0$$表示优先利用，$$\tau \to \infty$$表示优先探索。
+
+## 求均值的小技巧
+
+在k-armed Bandit问题中，一般用reward的均值来近似它的数学期望值。由于action是个序列，因此相应的算法一般是个不断迭代的过程，或者也可以说是一个增量（incremental）过程。
+
+在增量过程中，保存所有的reward值来计算均值显然是个笨办法。这里常用的办法是：
+
+$$Q_{n+1}=Q_n+\frac{1}{n}[R_n-Q_n]$$
+
+不光reward值可以这样更新，其他均值也可采用这个方法：
+
+$$NewEstimate \leftarrow OldEstimate + StepSize [Target - OldEstimate]$$
+
 ## 非平稳问题
 
 在之前的假设中，我们认为每个摇臂的吐币概率和数量是不随时间变化的，这样的问题被称为Stationary Problem。
@@ -201,41 +221,4 @@ c) 使用这些最优解构造初始问题的最优解。
 
 由前文的描述可知，MDP正好具备overlapping subproblems和optimal substructure的特性，因此也可以通过DP求解。
 
-在继续下文之前，推荐一波资源：
-
->David Poole，加拿大不列颠哥伦比亚大学教授。加拿大AI协会终身成就奖（2013年）。   
->个人主页：   
->http://www.cs.ubc.ca/~poole/index.html
-
-David Poole的主页上有很多好东西：
-
-http://www.cs.ubc.ca/~poole/demos/
-
-该网页上有一些RL方面的用java applet做的可视化demo。由于年代比较久远，这些demo无法在目前的浏览器上运行。所以，我对其做了一些改造，使之能够使用。相关代码参见：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/RL
-
-David Poole还写了一本书《Artificial Intelligence: foundations of computational agents》，目前已经是第2版了。
-
-其中的代码资源参见：
-
-http://artint.info/AIPython/
-
-从该书所用编程语言的变迁，亦可感受到Poole教授不断学习的脚步。要知道Poole教授刚进入学术界的时代（1985年前后），就连Java也还没被发明出来呢。
-
-http://uhaweb.hartford.edu/compsci/ccli/samplep.htm
-
-Hartford大学的这个网站也有些不错的资料，偏重RL、机器人、ML for Game等领域。
-
-## RL与DP
-
-RL领域的DP算法的主要思想是：利用value function构建搜索Good Policy的方法。这里用$$v_*(s)$$或$$q_*(s, a)$$表示最优的value function。
-
-
-
-RL DP主要包括以下算法：（为了抓住问题的本质，这里仅列出各算法最关键的Bellman equation，至于流程参照Q-learning算法即可。）
-
-### Iterative Policy Evaluation：
-
-$$v_{k+1}(s) = \sum_{a \in \mathcal{A}}\pi(a | s)\left(\mathcal{R}_s^a + \gamma \sum_{s'\in \mathcal{S}}\mathcal{P}_{ss'}^a v_k(s')\right)$$
 
