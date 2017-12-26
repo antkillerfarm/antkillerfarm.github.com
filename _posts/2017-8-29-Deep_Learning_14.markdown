@@ -4,32 +4,6 @@ title:  深度学习（十四）——Softmax详解, 目标检测, RCNN
 category: DL 
 ---
 
-# Instance Normalization
-
-Instance Normalization主要用于CV领域。
-
-论文：
-
-《Instance Normalization: The Missing Ingredient for Fast Stylization》
-
-首先我们列出对图片Batch Normalization的公式：
-
-$$y_{tijk}=\frac{x_{tijk}-\mu_i}{\sqrt{\sigma_i^2+\epsilon}}, \mu_i=\frac{1}{HWT}\sum_{t=1}^T \sum_{l=1}^W \sum_{m=1}^Hx_{tilm}, \sigma_i^2=\frac{1}{HWT}\sum_{t=1}^T \sum_{l=1}^W \sum_{m=1}^H(x_{tilm}-m\mu_i)^2$$
-
-其中，T为图片数量，i为通道，j、k为图片的宽、高。
-
-Instance Normalization的公式：
-
-$$y_{tijk}=\frac{x_{tijk}-\mu_{ti}}{\sqrt{\sigma_{ti}^2+\epsilon}}, \mu_{ti}=\frac{1}{HW} \sum_{l=1}^W \sum_{m=1}^Hx_{tilm}, \sigma_{ti}^2=\frac{1}{HW} \sum_{l=1}^W \sum_{m=1}^H(x_{tilm}-m\mu_{ti})^2$$
-
-从中可以看出Instance Normalization实际上就是对一张图片的一个通道内的值进行归一化，因此又叫做对比度归一化（contrast normalization）。
-
-参考：
-
-http://www.jianshu.com/p/d77b6273b990
-
-论文中文版
-
 # Softmax详解
 
 首先给出Softmax function的定义:
@@ -255,6 +229,10 @@ TensorFlow深度学习目标检测模型及源码架构解析
 https://mp.weixin.qq.com/s/HPzQST8cq5lBhU3wnz7-cg
 
 R-FCN每秒30帧实时检测3000类物体，马里兰大学Larry Davis组最新目标检测工作
+
+https://mp.weixin.qq.com/s/u3eXhoFvo7vZujc0XoQQWQ
+
+旷视研究院解读Light-Head R-CNN：平衡精准度和速度
 
 # RCNN
 

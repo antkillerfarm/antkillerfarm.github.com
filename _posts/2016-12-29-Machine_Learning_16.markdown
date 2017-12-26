@@ -143,6 +143,10 @@ https://mp.weixin.qq.com/s/dDdyaA7Nxqa8tBE_qQ80Dw
 
 典型相关性分析(CCA)详解
 
+https://mp.weixin.qq.com/s/JDWgw3OOdBurDAShrPHJ7Q
+
+从最大方差来看主成分分析PCA
+
 # loss function比较
 
 ![](/images/article/loss_function.png)

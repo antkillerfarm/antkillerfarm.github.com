@@ -443,5 +443,8 @@ https://mp.weixin.qq.com/s/g2xMUmhxUTuQugR2PWUJtw
 
 组成TensorFlow核心的六篇论文
 
+https://mp.weixin.qq.com/s/n4nEtyRc5G44kj3zmHpd5g
+
+TensorFlow实战——图像分类神经网络模型
 
 

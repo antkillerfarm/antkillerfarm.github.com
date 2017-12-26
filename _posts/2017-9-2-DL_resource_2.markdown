@@ -136,6 +136,10 @@ https://mp.weixin.qq.com/s/jbzkq6UHsTu18fdGJzDxMw
 
 你也可以成为游戏高手，Facebook FAIR实验室田渊栋研究员PPT详解
 
+https://mp.weixin.qq.com/s/xhvwha-N7XQdWQk_9lV4jg
+
+最擅长玩《毁灭战士》的AI开源了：来自CMU的论文&代码
+
 ## TPU & GPU
 
 https://cloud.tencent.com/community/article/244743

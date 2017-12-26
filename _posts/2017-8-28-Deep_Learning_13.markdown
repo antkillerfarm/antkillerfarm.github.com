@@ -260,4 +260,30 @@ BN的误差反向算法相对复杂，这里不再赘述。
 
 在inference阶段，BN网络忽略Step 1和Step 2，只计算后两步。其中,$$\beta,\gamma$$由之前的训练得到。$$\mu,\sigma$$原则上要求使用全体样本的均值和方差，但样本量过大的情况下，也可使用训练时的若干个mini batch的均值和方差的FIR滤波值。
 
+# Instance Normalization
+
+Instance Normalization主要用于CV领域。
+
+论文：
+
+《Instance Normalization: The Missing Ingredient for Fast Stylization》
+
+首先我们列出对图片Batch Normalization的公式：
+
+$$y_{tijk}=\frac{x_{tijk}-\mu_i}{\sqrt{\sigma_i^2+\epsilon}}, \mu_i=\frac{1}{HWT}\sum_{t=1}^T \sum_{l=1}^W \sum_{m=1}^Hx_{tilm}, \sigma_i^2=\frac{1}{HWT}\sum_{t=1}^T \sum_{l=1}^W \sum_{m=1}^H(x_{tilm}-m\mu_i)^2$$
+
+其中，T为图片数量，i为通道，j、k为图片的宽、高。
+
+Instance Normalization的公式：
+
+$$y_{tijk}=\frac{x_{tijk}-\mu_{ti}}{\sqrt{\sigma_{ti}^2+\epsilon}}, \mu_{ti}=\frac{1}{HW} \sum_{l=1}^W \sum_{m=1}^Hx_{tilm}, \sigma_{ti}^2=\frac{1}{HW} \sum_{l=1}^W \sum_{m=1}^H(x_{tilm}-m\mu_{ti})^2$$
+
+从中可以看出Instance Normalization实际上就是对一张图片的一个通道内的值进行归一化，因此又叫做对比度归一化（contrast normalization）。
+
+参考：
+
+http://www.jianshu.com/p/d77b6273b990
+
+论文中文版
+
 

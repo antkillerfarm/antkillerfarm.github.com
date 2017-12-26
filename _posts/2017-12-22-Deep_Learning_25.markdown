@@ -218,5 +218,16 @@ https://mp.weixin.qq.com/s/vgejlnsBlOKMMRt-M3-d-w
 
 深思考：实现人机多轮交互突破是攻克图灵测试的核心
 
+https://mp.weixin.qq.com/s/rqB2COCAKsr3qvVXnhLwMg
+
+数据到文本任务的近期相关工作介绍
+
+https://mp.weixin.qq.com/s/KWWbaE2em4fEBInPoWTq8A
+
+Python实现多种模型(Naive Bayes, SVM, CNN, LSTM, etc)用于推文情感分析
+
+https://mp.weixin.qq.com/s/-K3WIo64_wJb9p6C49Z5fA
+
+基于属性学习和额外知识库的图像描述生成和视觉问答
 
 
