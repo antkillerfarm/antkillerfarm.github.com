@@ -144,6 +144,10 @@ https://mp.weixin.qq.com/s/_MDbbGzDOGHk5TBgbu_-oA
 
 中大商汤等提出深度网络加速新方法，具有强大兼容能力
 
+https://mp.weixin.qq.com/s/gbOmpP7XO1Hz_ld4iSEsrw
+
+三星提出移动端神经网络模型加速框架DeepRebirth
+
 # 人脸识别
 
 ## Cascade CNN

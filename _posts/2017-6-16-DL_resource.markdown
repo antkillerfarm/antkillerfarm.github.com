@@ -428,6 +428,10 @@ https://mp.weixin.qq.com/s/NtUUbvvQrJV4LhTUN72Q3A
 
 AI并不需要互联网：利用有性生殖，合成更多样、紧凑的神经网络
 
+https://mp.weixin.qq.com/s/0esR8Z6YlWayKpz-TS2_Zg
+
+对比梯度下降与进化策略，神经进化会成为深度学习的未来吗？
+
 https://mp.weixin.qq.com/s/9ZQc3RqCCcWYDplZ4RU2oA
 
 清华段路明组发现深度学习和量子物理重要关联

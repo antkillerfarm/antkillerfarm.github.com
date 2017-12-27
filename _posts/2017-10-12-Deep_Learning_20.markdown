@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十）——视频目标分割, Fast Image Processing, 图像超分辨率算法, OpenPose, 目标跟踪
+title:  深度学习（二十）——视频目标分割, Fast Image Processing, 图像超分辨率算法
 category: DL 
 ---
 
@@ -132,9 +132,31 @@ SR目前主要有两个用途：
 
 稍微复杂的方法，如同CV的其它领域经历了“信号处理->ML->DL”的变迁一样，SR也进入了ML阶段。
 
+![](/images/img2/SR.png)
+
 上图是两种典型的SR算法。
 
+左图算法的中心思想是从图片中找出相似的大尺度区域，然后利用这个大区域的边缘信息进行SR。但这个方法对于那些只出现一次的边缘信息是没什么用的。
+
+于是就有了右图的算法。对各种边缘信息建立一个数据库，使用时从数据库中挑一个最类似的边缘信息进行SR。这个方法比上一个方法好一些，但不够鲁棒，图片稍作改动，就有可能无法检索到匹配的边缘信息了。
+
+ML时代的代表算法还有：
+
+《Image Super-Resolution via Sparse Representation》
+
+这篇论文是
+
+>黄煦涛（Thomas Huang），1936年生。
+
+>马毅，清华本科（1995）+UCB硕博（1997,2000）。UCB教授。   
+>个人主页：   
+>http://yima.csl.illinois.edu/
+
+这篇论文提出的算法，在形式上和后文这些DL算法已经非常类似了，也是基于HR和LR配对的有监督训练。区别只在于这篇论文使用矩阵的稀疏表示来拟合SR函数，而DL算法使用神经网络拟合SR函数。前者是线性变换，而后者是非线性变换。
+
 ## SRCNN
+
+
 
 论文：
 
@@ -202,115 +224,4 @@ http://blog.csdn.net/u011692048/article/details/77500764
 
 超分辨率重建之DRCN
 
-# OpenPose
-
-OpenPose是一个实时多人关键点检测的库，基于OpenCV和Caffe编写。它是CMU的Yaser Sheikh小组的作品。
-
->Yaser Ajmal Sheikh，巴基斯坦信德省易司哈克工程科学与技术学院本科（2001年）+中佛罗里达大学博士（2006年）。现为CMU副教授。
-
-![](/images/article/openpose.png)
-
-OpenPose的使用效果如上图所示。
-
-论文：
-
-《Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields》
-
-《Hand Keypoint Detection in Single Images using Multiview Bootstrapping》
-
-《Convolutional pose machines》
-
-代码：
-
-https://github.com/CMU-Perceptual-Computing-Lab/openpose
-
-# 目标跟踪
-
-## 概述
-
-目标跟踪（object tracking）就是在连续的视频序列中，建立所要跟踪物体的位置关系，得到物体完整的运动轨迹。
-
-目标跟踪分为单目标跟踪和多目标跟踪。本文如无特别指出，均指单目标跟踪。
-
-通常的做法是：
-
-1.在第1帧给一个bbox框住需要跟踪的物体。
-
-2.在不借助重检测（re-detection）的情况下，尽可能长时间的跟住物体。
-
-3.不能使用依赖外部特征的姿态估计（pose estimation）。
-
-当然这是针对目标跟踪算法的要求，至于实际产品中，对象的重检测以及依赖外部特征的姿态估计都是必不可少的。
-
-比如，自动驾驶领域的车辆跟踪，一般都会针对车辆的运动特点建立模型，以辅助目标跟踪。
-
-## TB50 & TB100
-
-这个领域最著名的数据集是吴毅提出的TB50 & TB100，50和100分别代表视频数量。有的论文也把它们称作OTB-2013和OTB-2015。
-
->吴毅，中国科学院自动化研究所博士（2009年）。南京审计大学副教授。
-
-官网：
-
-http://cvlab.hanyang.ac.kr/tracker_benchmark/
-
-论文：
-
-《Online object tracking: A benchmark》
-
-《Object tracking benchmark》
-
-上面的论文在TB数据集上比较了包括2012年及之前的29个顶尖的tracker，基本解决了统一标准的问题，因此也成为了目标跟踪领域的权威数据集。
-
-《Object tracking: A survey》
-
-这篇论文总结了2006年以前的目标跟踪算法。
-
-## VOT
-
-VOT竞赛数据集是另一个常用数据集。官网：
-
-http://votchallenge.net/challenges.html
-
-OTB包括25%的灰度序列，但VOT都是彩色序列，这也是造成很多颜色特征算法性能差异的原因。
-
-## 目标跟踪的难点
-
-![](/images/article/tracker_hard.png)
-
-![](/images/article/tracker_hard_2.png)
-
-## 参考
-
-https://www.zhihu.com/question/26493945
-
-计算机视觉中，目前有哪些经典的目标跟踪算法？
-
-https://zhuanlan.zhihu.com/p/22334661
-
-深度学习在目标跟踪中的应用
-
-https://mp.weixin.qq.com/s/3R8zaFUKFTvp0uE8lY44WA
-
-首个应用残差学习的深度目标跟踪算法
-
-https://zhuanlan.zhihu.com/p/27293523
-
-目标跟踪领域进展报告
-
-https://zhuanlan.zhihu.com/p/27335895
-
-CVPR 2017目标跟踪相关论文
-
-https://www.zhihu.com/question/59623472
-
-基于深度学习的目标跟踪算法是否可能做到实时？
-
-http://acsweb.ucsd.edu/~yuw176/report/vehicle.pdf
-
-Monocular Vehicle Detection and Tracking
-
-https://mp.weixin.qq.com/s/x7LoIN7mOJcZDY70GB_rLg
-
-VOT Challenge 2017亚军北邮团队技术分享
 

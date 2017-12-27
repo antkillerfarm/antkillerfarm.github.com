@@ -212,6 +212,10 @@ https://mp.weixin.qq.com/s/kDEkcLUli_jshPf4Zb3HIw
 
 微信官方给不了的圣诞帽，Python和OpenCV给你
 
+https://mp.weixin.qq.com/s/VEAUFT98LkuW573p1h5YvQ
+
+Android NDK层编译OpenCV代码开发详解
+
 ## 论文
 
 《Moving Gradients: A Path-Based Method for Plausible Image Interpolation》：视频帧插值算法
