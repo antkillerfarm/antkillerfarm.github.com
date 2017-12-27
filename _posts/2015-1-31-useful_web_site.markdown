@@ -386,6 +386,18 @@ https://mp.weixin.qq.com/s/eOR9_QJjQ1-_mcYaRTCgjA
 
 如何使用深度学习硬件的空余算力自动挖矿
 
+https://www.leiphone.com/news/201707/w7pSQ3QwDtJMuEbr.html
+
+比特币、以太坊、区块链、代币、ICO，你需要知道的一切都在这了
+
+http://www.8btc.com/blockchain-ico
+
+区块链与ICO：加密货币时代的众筹
+
+https://www.zhihu.com/question/64745484
+
+ICO、比特币、区块链特么是什么玩意？
+
 # 数字成像
 
 https://mp.weixin.qq.com/s/od9uDZdRU4QaBKPHb0tLag

@@ -350,6 +350,10 @@ https://mp.weixin.qq.com/s/OZWih_xfqYdeP-x9MawogA
 
 GAN做图像翻译的一点总结
 
+https://zhuanlan.zhihu.com/p/32103958
+
+GAN调研：多极扩展（跨域和条件的GAN扩展模型调研）
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。

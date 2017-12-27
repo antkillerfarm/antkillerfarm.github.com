@@ -92,6 +92,18 @@ https://mp.weixin.qq.com/s/pDK4qBWArtETARE1fjbbmA
 
 # 语音识别
 
+## 书籍
+
+《Speech and Language Processing: An introduction to natural language processing, computational linguistics, and speech recognition》，Daniel Jurafsky & James H. Martin著。
+
+>Daniel Jurafsky，1962年生，UCB本科（1983）+博士（1992）。斯坦福大学教授。   
+>个人主页：   
+>https://web.stanford.edu/~jurafsky/
+
+>James H. Martin，哥伦比亚大学本科+UCB博士。University of Colorado Boulder教授。   
+>个人主页：   
+>http://www.cs.colorado.edu/~martin/
+
 ## CTC
 
 Connectionist Temporal Classification，是一种改进的RNN模型。它主要解决的是时序模型中，输入数大于输出数，输入输出如何对齐的问题。

@@ -354,6 +354,10 @@ https://mp.weixin.qq.com/s/ye4QvDfKPGyX0eK3Mti1Kw
 
 从反向传播到迁移学习，盘点人工智能从业者必备的10个深度学习方法
 
+https://mp.weixin.qq.com/s/WCRYppBLdl_M4etUChnfgw
+
+PyMC3和Theano代码构建贝叶斯深度网络
+
 ## 量子计算 & 遗传算法
 
 https://www.zhihu.com/question/28171555

@@ -86,3 +86,26 @@ http://www.cnblogs.com/Firefly727/articles/1856328.html
 
 元胞自动机
 
+# 聚类
+
+https://mp.weixin.qq.com/s/xGPiaXTnQad3RcMwIELP4w
+
+流式聚类算法
+
+https://wenku.baidu.com/view/4169e77f27284b73f2425047.html
+
+层次聚类
+
+https://mp.weixin.qq.com/s/uSHLJKB0knVcCY759Ul25w
+
+什么是聚类和降维？
+
+https://mp.weixin.qq.com/s/ORLOOhufrInyPdS6fbywOw
+
+深入浅出——基于密度的聚类方法
+
+https://mp.weixin.qq.com/s/Vi4Yb8TOJydj9yL078iNHw
+
+BIRCH层次聚类详解
+
+

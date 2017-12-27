@@ -118,14 +118,6 @@ http://mp.weixin.qq.com/s?__biz=MzU0NTAyNTQ1OQ==&mid=2247484026&idx=2&sn=bc58406
 
 值得一看——机器学习中容易犯下的错
 
-https://mp.weixin.qq.com/s/xGPiaXTnQad3RcMwIELP4w
-
-流式聚类算法
-
-https://wenku.baidu.com/view/4169e77f27284b73f2425047.html
-
-层次聚类
-
 http://bindog.github.io/blog/2015/08/20/microsoft-malware-classification
 
 利用机器学习进行恶意代码分类
@@ -345,14 +337,6 @@ https://mp.weixin.qq.com/s/c4Lp4D-COP2I12zRC9beIA
 https://mp.weixin.qq.com/s?__biz=MzU3ODIwMjA3NQ==&mid=2247483661&idx=1&sn=5efbd5aabd294ce39f1b9ae05f066a28
 
 现金贷、消费金融反欺诈规则设置
-
-https://mp.weixin.qq.com/s/uSHLJKB0knVcCY759Ul25w
-
-什么是聚类和降维？
-
-https://mp.weixin.qq.com/s/ORLOOhufrInyPdS6fbywOw
-
-深入浅出——基于密度的聚类方法
 
 https://mp.weixin.qq.com/s?__biz=MzU3ODIwMjA3NQ==&mid=2247483696&idx=1&sn=b407416595afb3b7bf2aad33e5341f6a
 
