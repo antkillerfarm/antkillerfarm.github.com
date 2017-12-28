@@ -150,6 +150,10 @@ https://mp.weixin.qq.com/s/PMisvVy4EwEF-5xEY5LrwA
 
 从损失函数的角度详解常见机器学习算法
 
+https://mp.weixin.qq.com/s/MRabAUZrfgD2t2GhnLI43Q
+
+开发者必读：计算机科学中的线性代数
+
 # 协同过滤的ALS算法
 
 ## 协同过滤概述

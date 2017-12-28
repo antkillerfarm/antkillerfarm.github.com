@@ -50,16 +50,6 @@ Firefox的界面其实一直以来变化不大，也就是4.0的时候将标签�
 
 这次的Firefox Quantum的确给人耳目一新的感觉。
 
-# howmuch.net
-
-howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：
-
-![](/images/article/top_10_company.jpg)
-
-网址：
-
-https://howmuch.net/
-
 # 世说新语（续）
 
 ## 2017.12

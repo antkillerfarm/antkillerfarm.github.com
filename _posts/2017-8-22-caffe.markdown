@@ -331,26 +331,6 @@ Fortran作为最早的高级语言（1957年），至今仍有很强的生命力
 
 # ML参考资源
 
-https://mp.weixin.qq.com/s/lQKD83sKwgcrBH6o_QUxvg
-
-抛弃爬下来的灰色数据，有门槛的风控怎么做？
-
-https://mp.weixin.qq.com/s/wJ2lD-llSB4KedD4RixqLQ
-
-苏宁场景实践：小包裹背后的大智慧
-
-https://mp.weixin.qq.com/s/OlfAV744e2-p5dgOWJeb8g
-
-苹果博客：高效可扩展的规模化、多样化隐私学习
-
-https://mp.weixin.qq.com/s/Xkt5c11wtxJgIvHC3p9wxA
-
-Kaggle大神带你上榜单Top2%：点击预测大赛纪实（上）
-
-https://mp.weixin.qq.com/s/5TcykXfFw97mT_aR_ZDOkA
-
-Kaggle大神带你上榜单Top2%：点击预测大赛纪实（下）
-
 https://mp.weixin.qq.com/s/VN-r2vW2Pxc8UwFzKMYHnA
 
 大数据下的自杀风险感知与疏导

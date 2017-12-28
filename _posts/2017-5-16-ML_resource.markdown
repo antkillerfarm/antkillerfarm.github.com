@@ -210,10 +210,6 @@ https://mp.weixin.qq.com/s/9llI8EPy2PNBYZ4Q_LdOFg
 
 深度学习中的基础线代知识-初学者指南
 
-https://mp.weixin.qq.com/s/DxNtgyuNzNqpbZ_9k8uflQ
-
-谷歌开源机器学习可视化工具 Facets：从全新角度观察数据
-
 https://mp.weixin.qq.com/s/dYCtth0r2Gme5iGSviVmBQ
 
 基于Spark的机器学习痛点，风控和模型优化案例分析！
@@ -221,10 +217,6 @@ https://mp.weixin.qq.com/s/dYCtth0r2Gme5iGSviVmBQ
 https://mp.weixin.qq.com/s/oipXH06mgmPBwLQdbe-g4w
 
 数据分析与挖掘、数据科学的96个在线学习课程
-
-https://mp.weixin.qq.com/s/q5mPN_rt1Af5L2fnxuTdCA
-
-46款数据可视化分析工具大集合
 
 https://mp.weixin.qq.com/s/-Zji6xGISaUzFhQ6tMlQqw
 
@@ -277,10 +269,6 @@ UC伯克利提出小批量MH测试：令MCMC方法在自编码器中更强劲
 https://mp.weixin.qq.com/s?__biz=MzU3NTE1OTE0Ng==&mid=2247483709&idx=1&sn=6e1a81918a437806d749144397f751ee
 
 如何定义信用评分中的“好”、“坏”人？
-
-https://mp.weixin.qq.com/s/i2Ex8Zmu2ZzHPcoPr-1Rlw
-
-太阳系相关图，教你优雅的打开“可视化”的大门
 
 https://mp.weixin.qq.com/s/5W24x067Dc1-136lGF8XuQ
 
@@ -437,5 +425,25 @@ https://mp.weixin.qq.com/s/JF23e8-XbkpPxLi6kTxfNA
 https://mp.weixin.qq.com/s/aPepcwG_VMioqGQ_Fp3deg
 
 海量数据处理利器之布隆过滤器
+
+https://mp.weixin.qq.com/s/lQKD83sKwgcrBH6o_QUxvg
+
+抛弃爬下来的灰色数据，有门槛的风控怎么做？
+
+https://mp.weixin.qq.com/s/wJ2lD-llSB4KedD4RixqLQ
+
+苏宁场景实践：小包裹背后的大智慧
+
+https://mp.weixin.qq.com/s/OlfAV744e2-p5dgOWJeb8g
+
+苹果博客：高效可扩展的规模化、多样化隐私学习
+
+https://mp.weixin.qq.com/s/Xkt5c11wtxJgIvHC3p9wxA
+
+Kaggle大神带你上榜单Top2%：点击预测大赛纪实（上）
+
+https://mp.weixin.qq.com/s/5TcykXfFw97mT_aR_ZDOkA
+
+Kaggle大神带你上榜单Top2%：点击预测大赛纪实（下）
 
 

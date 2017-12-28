@@ -82,6 +82,12 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/java/HanLP/Know
 
 3.不想序列化的成员使用transient关键字修饰。
 
+# 参考
+
+https://mp.weixin.qq.com/s/t1Cx1n6irN1RWG8HQyHU2w
+
+从实际案例聊聊Java应用的GC优化
+
 # python
 
 ## python调试

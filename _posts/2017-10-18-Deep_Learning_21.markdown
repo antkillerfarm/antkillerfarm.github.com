@@ -6,6 +6,18 @@ category: DL
 
 # 图像超分辨率算法（续）
 
+## DemosaicNet
+
+论文：
+
+《Deep Joint Demosaicking and Denoising》
+
+代码：
+
+https://github.com/mgharbi/demosaicnet
+
+![](/images/img2/DemosaicNet.png)
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/25532538

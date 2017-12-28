@@ -170,10 +170,10 @@ SRCNN是汤晓鸥小组的Chao Dong的作品。
 
 三个卷积层使用的卷积核的大小分为为9x9, 1x1和5x5，前两个的输出特征个数分别为64和32。
 
-以下是论文效果表格：
+以下是论文的效果表格：
 
->吐槽一下，这种表格属于论文必须有，但是却没什么营养的部分，且不乏造假的例子。原因很简单，一个idea，如果没有好效果，paper连发都发不了。但是没有好效果的idea，也未必没有价值，不说能启发人们的思维，至少能避免后来者掉到同一个坑里。   
->比如化学领域，失败的实验远远多于成功的实验。在计算能力不发达的时代，人们主要关注成功的案例，但现在大家逐渐意识到失败的案例，才是更大的财富。
+>吐槽一下，这种表格属于论文必须有，但是却没什么营养的部分，且不乏造假的例子。原因很简单，一个idea，如果没有好效果，paper连发都发不了。但是，没有好效果的idea，未必没有价值，不说是否能启发人们的思维，至少能让后来者，不用再掉到同一个坑里。   
+>比如化学领域，失败的实验远远多于成功的实验。在计算能力不发达的时代，人们主要关注成功的案例，但现在大家逐渐意识到：失败的案例才是更大的财富。
 
 ![](/images/img2/SRCNN.jpg)
 
@@ -191,13 +191,21 @@ $$PSNR=10\log_{10}\left(\frac{(2^n-1)^2}{MSE}\right)$$
 
 **SSIM（structural similarity， 结构相似性）**，也是一种全参考的图像质量评价指标，它分别从亮度、对比度、结构三方面度量图像相似性。
 
-$$\mu_X=\frac{1}{H\times W}\sum_{i=1}^H\sum_{j=1}^WX(i,j)$$
-
-$$\sigma_X^2=\frac{1}{H\times W}\sum_{i=1}^H\sum_{j=1}^W(X(i,j)-\mu_X)^2$$
+$$\mu_X=\frac{1}{H\times W}\sum_{i=1}^H\sum_{j=1}^WX(i,j),\, \sigma_X^2=\frac{1}{H\times W}\sum_{i=1}^H\sum_{j=1}^W(X(i,j)-\mu_X)^2$$
 
 $$\sigma_{XY}=\frac{1}{H\times W}\sum_{i=1}^H\sum_{j=1}^W((X(i,j)-\mu_X)(Y(i,j)-\mu_Y))$$
 
-$$l(X,Y)=\frac{2\mu_X\mu_Y+C_1}{\mu_X^2+\mu_Y+C_1}$$
+$$l(X,Y)=\frac{2\mu_X\mu_Y+C_1}{\mu_X^2+\mu_Y^2+C_1},\, c(X,Y)=\frac{2\sigma_X\sigma_Y+C_2}{\sigma_X^2+\sigma_Y^2+C_2},\, s(X,Y)=\frac{\sigma_{XY}+C_3}{\sigma_X\sigma_Y+C_3}$$
+
+$$SSIM(X,Y)=l(X,Y)\cdot c(X,Y)\cdot s(X,Y)$$
+
+$$C_1,C_2,C_3$$为常数，为了避免分母为0的情况，通常取$$C_1=(K_1\cdot L)^2, C_2=(K_2\cdot L)^2, C_3=C_2/2$$，一般地$$K1=0.01, K2=0.03, L=255$$。
+
+SSIM取值范围[0,1]，值越大，表示图像失真越小。
+
+在实际应用中，可以利用滑动窗将图像分块，令分块总数为N，考虑到窗口形状对分块的影响，采用高斯加权计算每一窗口的均值、方差以及协方差，然后计算对应块的结构相似度SSIM，最后将平均值作为两图像的结构相似性度量，即平均结构相似性MSSIM：
+
+$$MSSIM(X,Y)=\frac{1}{N}\sum_{k=1}^NSSIM(x_k,y_k)$$
 
 参考：
 
@@ -207,7 +215,7 @@ PSNR和SSIM
 
 ## DRCN
 
-
+![](/images/img2/DRCN.jpg)
 
 论文：
 
@@ -218,5 +226,8 @@ PSNR和SSIM
 论文：
 
 《Accurate Image Super-Resolution Using Very Deep Convolutional Networks》
+
+![](/images/img2/VDSR.png)
+
 
 

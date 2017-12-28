@@ -106,6 +106,10 @@ https://mp.weixin.qq.com/s/Zockp0wCfL6t-LckaLCQlg
 
 如何实现金服业务流程动态化
 
+https://mp.weixin.qq.com/s/HhabrgpbWSn_f2Q-QfgaAA
+
+智能投放系统之场景分析最佳实践
+
 # 花式池化
 
 池化和卷积一样，都是信号采样的一种方式。

@@ -416,4 +416,8 @@ https://mp.weixin.qq.com/s/VBmKPBxWtknWMjLCWcoGjA
 
 如何用Docker成为更高效的数据科学家？
 
+https://mp.weixin.qq.com/s/DxNtgyuNzNqpbZ_9k8uflQ
+
+谷歌开源机器学习可视化工具Facets：从全新角度观察数据
+
 
