@@ -136,6 +136,10 @@ https://mp.weixin.qq.com/s/oAlMl9oFHnrRiRph9lqwDQ
 
 2016-2017深度学习-最新-必读-经典论文
 
+https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap
+
+独立AI研究员Flood Sung提供的初学者阅读论文的路线图
+
 ## 教程
 
 https://theneuralperspective.com/tag/tutorials/
@@ -451,30 +455,4 @@ https://mp.weixin.qq.com/s/ULciN9h2IybE59JMO6Kcgg
 https://mp.weixin.qq.com/s/egmodqeThnw5H7DwKRwQbw
 
 如何运用数学进行高效生产？（模拟退火算法）
-
-## 面试
-
-https://www.zhihu.com/question/41233373
-
-如果你是面试官，你怎么去判断一个面试者的深度学习水平？
-
-https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
-
-20万、50万、100万的算法工程师，到底有什么区别？
-
-https://www.zhihu.com/question/56676679/answer/151505274
-
-机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
-
-https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
-
-面试官是如何看出你机器学习水平的？
-
-https://mp.weixin.qq.com/s?__biz=MzI3NTA0MzM1OQ==&mid=2651615534&idx=1&sn=00ecd7dc1d8472c070e720a1b63f04c4
-
-我如何考察面试者的机器学习水平
-
-https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
-
-谷歌等巨头机器学习面试题：从逻辑回归到智力测验
 

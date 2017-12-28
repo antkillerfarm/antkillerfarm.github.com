@@ -240,6 +240,10 @@ https://mp.weixin.qq.com/s/qEX2cRgce2Lknncsa67HSA
 
 无人车是怎样一步步学会开车的？
 
+https://mp.weixin.qq.com/s/4HNaS8Dpi9pcPzE_nN-BvA
+
+全球12家顶级激光雷达公司解读：谁有机会撼动Velodyne
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/7N6eDoEV8oEwUpP-zK1RpQ

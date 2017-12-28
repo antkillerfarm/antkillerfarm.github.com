@@ -48,6 +48,10 @@ http://shuokay.com/2016/07/20/softmax-loss/
 
 Softmax输出及其反向传播推导
 
+https://mp.weixin.qq.com/s/HTIgKm8HuZZ_-lIQ3nIFhQ
+
+浅入深出之大话SoftMax
+
 # 目标检测
 
 ## 概述

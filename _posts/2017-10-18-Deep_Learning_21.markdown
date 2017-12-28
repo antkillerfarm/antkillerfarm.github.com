@@ -4,6 +4,58 @@ title:  深度学习（二十一）——模型压缩, 人脸识别, 手势识�
 category: DL 
 ---
 
+# 图像超分辨率算法（续）
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/25532538
+
+深度学习在图像超分辨率重建中的应用
+
+https://zhuanlan.zhihu.com/p/25201511
+
+深度对抗学习在图像分割和超分辨率中的应用
+
+https://mp.weixin.qq.com/s/uK0L5RV0bB2Jnr5WCZasfw
+
+深度学习在单图像超分辨率上的应用：SRCNN、Perceptual loss、SRResNet
+
+https://mp.weixin.qq.com/s/KxQ-GRnEYEdmS2H-DHIHOg
+
+南京理工大学ICCV 2017论文：图像超分辨率模型MemNet
+
+https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
+
+NTIRE2017夺冠论文：用于单一图像超分辨率的增强型深度残差网络
+
+https://www.zhihu.com/question/25401250
+
+如何通过多帧影像进行超分辨率重构？
+
+https://www.zhihu.com/question/38637977
+
+超分辨率重建还有什么可以研究的吗？
+
+https://zhuanlan.zhihu.com/p/25912465
+
+胎儿MRI高分辨率重建技术：现状与趋势
+
+https://mp.weixin.qq.com/s/i-im1sy6MNWP1Fmi5oWMZg
+
+华为推出新型HiSR：移动端的超分辨率算法
+
+http://blog.csdn.net/u011692048/article/details/77496861
+
+超分辨率重建之SRCNN
+
+http://blog.csdn.net/u011692048/article/details/77512310
+
+超分辨率重建之VDSR
+
+http://blog.csdn.net/u011692048/article/details/77500764
+
+超分辨率重建之DRCN
+
 # 模型压缩
 
 对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。

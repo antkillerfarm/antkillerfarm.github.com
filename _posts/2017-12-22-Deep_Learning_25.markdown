@@ -132,6 +132,10 @@ https://mp.weixin.qq.com/s/Q8Mt9B1rzbeWXqIInrzSYQ
 
 使用深度学习构建先进推荐系统：近期33篇重要研究概述
 
+https://mp.weixin.qq.com/s/PlsFxKz_Igorh94Ni-78Hg
+
+融合MF和RNN的电影推荐系统
+
 # NN的INT8计算
 
 ## 概述

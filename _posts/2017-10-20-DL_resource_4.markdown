@@ -4,6 +4,32 @@ title:  DL参考资源（四）
 category: resource 
 ---
 
+## 面试
+
+https://www.zhihu.com/question/41233373
+
+如果你是面试官，你怎么去判断一个面试者的深度学习水平？
+
+https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
+
+20万、50万、100万的算法工程师，到底有什么区别？
+
+https://www.zhihu.com/question/56676679/answer/151505274
+
+机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
+
+https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
+
+面试官是如何看出你机器学习水平的？
+
+https://mp.weixin.qq.com/s?__biz=MzI3NTA0MzM1OQ==&mid=2651615534&idx=1&sn=00ecd7dc1d8472c070e720a1b63f04c4
+
+我如何考察面试者的机器学习水平
+
+https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
+
+谷歌等巨头机器学习面试题：从逻辑回归到智力测验
+
 # DL参考资源
 
 http://cs.stanford.edu/people/karpathy/convnetjs/demo/classify2d.html
@@ -373,33 +399,5 @@ https://mp.weixin.qq.com/s/sYXVqnk5p8tvl6s0EIkr3w
 https://mp.weixin.qq.com/s/0KaSWHi8r9kSXxlwswIY5g
 
 乔宇：深度模型让机器理解场景
-
-https://mp.weixin.qq.com/s/shBHKh2emSIL5uWV7po8cw
-
-梅涛：“看图说话”
-
-https://mp.weixin.qq.com/s/BQy3qpmQqeQquhf92hwcvQ
-
-2017 VQA Challenge第一名技术报告
-
-https://mp.weixin.qq.com/s/1Gdx-U3DRZtSJoFyCLnD0w
-
-深度学习之Sequence Learning
-
-http://www.jianshu.com/p/f9ca56d6407d
-
-深度学习在股票市场的应用
-
-https://mp.weixin.qq.com/s/O39cedZPRpqRjDHb98sopQ
-
-当你增加神经网络的层数时会发生什么？
-
-https://mp.weixin.qq.com/s/x5jX2g44X2sp7WIOdoUP4w
-
-李沐：漫谈在线学习：在线梯度下降
-
-https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
-
-Bengio等人提出图注意网络架构GAT，可处理复杂结构图
 
 

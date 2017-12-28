@@ -214,6 +214,10 @@ https://www.zhihu.com/question/26930016
 
 如何理解Python装饰器？
 
+https://mp.weixin.qq.com/s/1QjJqFfJNNych9b6ae5VUg
+
+深入理解Python装饰器
+
 ## range & xrange
 
 1.range会直接生成一个list对象。

@@ -144,11 +144,11 @@ ML时代的代表算法还有：
 
 《Image Super-Resolution via Sparse Representation》
 
-这篇论文是
+这篇论文是黄煦涛和马毅小组的Jianchao Yang的作品。
 
->黄煦涛（Thomas Huang），1936年生。
+>黄煦涛（Thomas Huang），1936年生。生于上海，国立台湾大学本科（1956）+MIT硕博（1960,1963）。UIUC教授。美国工程院院士，中国科学院+中国工程院外籍院士。
 
->马毅，清华本科（1995）+UCB硕博（1997,2000）。UCB教授。   
+>马毅，清华本科（1995）+UCB硕博（1997,2000）。UCB教授。IEEE fellow。   
 >个人主页：   
 >http://yima.csl.illinois.edu/
 
@@ -156,13 +156,58 @@ ML时代的代表算法还有：
 
 ## SRCNN
 
+SRCNN是汤晓鸥小组的Chao Dong的作品。
 
+>汤晓鸥，中国科学技术大学本科（1990）+罗切斯特大学硕士（1991）+麻省理工学院博士（1996）。香港中文大学教授，商汤科技联合创始人。
 
 论文：
 
 《Learning a Deep Convolutional Network for Image Super-Resolution》
 
+![](/images/article/SRCNN.jpg)
+
+该方法对于一个低分辨率图像，先使用双三次（bicubic）插值将其放大到目标大小，再通过三层卷积网络做非线性映射，得到的结果作为高分辨率图像输出。作者将三层卷积的结构解释成与传统SR方法对应的三个步骤：图像块的提取和特征表示，特征非线性映射和最终的重建。
+
+三个卷积层使用的卷积核的大小分为为9x9, 1x1和5x5，前两个的输出特征个数分别为64和32。
+
+以下是论文效果表格：
+
+>吐槽一下，这种表格属于论文必须有，但是却没什么营养的部分，且不乏造假的例子。原因很简单，一个idea，如果没有好效果，paper连发都发不了。但是没有好效果的idea，也未必没有价值，不说能启发人们的思维，至少能避免后来者掉到同一个坑里。   
+>比如化学领域，失败的实验远远多于成功的实验。在计算能力不发达的时代，人们主要关注成功的案例，但现在大家逐渐意识到失败的案例，才是更大的财富。
+
+![](/images/img2/SRCNN.jpg)
+
+这里对其中的指标做一个简介。
+
+**PSNR（Peak Signal to Noise Ratio，峰值信噪比）**
+
+$$MSE=\frac{1}{H\times W}\sum_{i=1}^H\sum_{j=1}^W(X(i,j)-Y(i,j))^2$$
+
+$$PSNR=10\log_{10}\left(\frac{(2^n-1)^2}{MSE}\right)$$
+
+其中，MSE表示当前图像X和参考图像Y的均方误差（Mean Square Error），H、W分别为图像的高度和宽度；n为每像素的比特数，一般取8，即像素灰阶数为256. PSNR的单位是dB，数值越大表示失真越小。
+
+虽然PSNR和人眼的视觉特性并不完全一致，但是一般认为PSNR在38以上的时候，人眼就无法区分两幅图片了。
+
+**SSIM（structural similarity， 结构相似性）**，也是一种全参考的图像质量评价指标，它分别从亮度、对比度、结构三方面度量图像相似性。
+
+$$\mu_X=\frac{1}{H\times W}\sum_{i=1}^H\sum_{j=1}^WX(i,j)$$
+
+$$\sigma_X^2=\frac{1}{H\times W}\sum_{i=1}^H\sum_{j=1}^W(X(i,j)-\mu_X)^2$$
+
+$$\sigma_{XY}=\frac{1}{H\times W}\sum_{i=1}^H\sum_{j=1}^W((X(i,j)-\mu_X)(Y(i,j)-\mu_Y))$$
+
+$$l(X,Y)=\frac{2\mu_X\mu_Y+C_1}{\mu_X^2+\mu_Y+C_1}$$
+
+参考：
+
+http://www.cnblogs.com/vincent2012/archive/2012/10/13/2723152.html
+
+PSNR和SSIM
+
 ## DRCN
+
+
 
 论文：
 
@@ -173,55 +218,5 @@ ML时代的代表算法还有：
 论文：
 
 《Accurate Image Super-Resolution Using Very Deep Convolutional Networks》
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/25532538
-
-深度学习在图像超分辨率重建中的应用
-
-https://zhuanlan.zhihu.com/p/25201511
-
-深度对抗学习在图像分割和超分辨率中的应用
-
-https://mp.weixin.qq.com/s/uK0L5RV0bB2Jnr5WCZasfw
-
-深度学习在单图像超分辨率上的应用：SRCNN、Perceptual loss、SRResNet
-
-https://mp.weixin.qq.com/s/KxQ-GRnEYEdmS2H-DHIHOg
-
-南京理工大学ICCV 2017论文：图像超分辨率模型MemNet
-
-https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
-
-NTIRE2017夺冠论文：用于单一图像超分辨率的增强型深度残差网络
-
-https://www.zhihu.com/question/25401250
-
-如何通过多帧影像进行超分辨率重构？
-
-https://www.zhihu.com/question/38637977
-
-超分辨率重建还有什么可以研究的吗？
-
-https://zhuanlan.zhihu.com/p/25912465
-
-胎儿MRI高分辨率重建技术：现状与趋势
-
-https://mp.weixin.qq.com/s/i-im1sy6MNWP1Fmi5oWMZg
-
-华为推出新型HiSR：移动端的超分辨率算法
-
-http://blog.csdn.net/u011692048/article/details/77496861
-
-超分辨率重建之SRCNN
-
-http://blog.csdn.net/u011692048/article/details/77512310
-
-超分辨率重建之VDSR
-
-http://blog.csdn.net/u011692048/article/details/77500764
-
-超分辨率重建之DRCN
 
 
