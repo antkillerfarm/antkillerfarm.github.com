@@ -76,10 +76,6 @@ http://mp.weixin.qq.com/s/6I0Z_yY7UT_7qOKOWcd7Mw
 
 李飞飞发表研究新成果：视觉推理的推断和执行程序！
 
-http://mp.weixin.qq.com/s/-Av3-ZNi6UGlKNv_jduAeQ
-
-微软新论文：如何利用深度特征流提高视频识别准确率？
-
 http://mp.weixin.qq.com/s/XH1dXWSPiQMAHYR0_-xylA
 
 精选深度学习在文本、视觉、语音等领域的论文集
@@ -143,10 +139,6 @@ Windows版深度学习软件安装指南
 https://mp.weixin.qq.com/s/ViQqeER1NXtJOtnLg76TWg
 
 关于远程监督，我们来推荐几篇值得读的论文
-
-https://mp.weixin.qq.com/s/z1APyCxlOEPHn48OeJAHkQ
-
-基于深度学习的视频内容识别
 
 https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
 
@@ -224,10 +216,6 @@ https://mp.weixin.qq.com/s/4JFzgFTvAvBs74V7AQUCrQ
 
 让照片走两步：骨骼框架辅助的人物动作生成模型
 
-https://mp.weixin.qq.com/s/WMakTEN68KPi7X9kMQetiw
-
-OpenAI:3段视频演示无人驾驶目标检测强大的对抗性样本！
-
 https://mp.weixin.qq.com/s/_dDLbPwpgoOdLc83_JQEuA
 
 CVPR现场会议合集及CCCV内容跟踪
@@ -275,10 +263,6 @@ https://mp.weixin.qq.com/s/Jhi9TWQqhJIyG7cakgo2Xg
 https://mp.weixin.qq.com/s/jwdYAeCGleKRRiInY85bLw
 
 Vicarious发表Science论文：概率生成模型超越神经网络
-
-https://mp.weixin.qq.com/s/YdON6Yzddq2f_QGbQsOY8w
-
-深度三维残差神经网络：视频理解新突破
 
 http://kexue.fm/usr/uploads/2016/06/1002322295.pdf
 

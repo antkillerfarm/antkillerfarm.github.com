@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十）——视频目标分割, Fast Image Processing, 图像超分辨率算法
+title:  深度学习（二十）——Fast Image Processing, 图像超分辨率算法
 category: DL 
 ---
 
@@ -25,34 +25,6 @@ https://zhuanlan.zhihu.com/p/28124810
 https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2651988934&idx=2&sn=0e5ffa195ef67a1371f3b5b223519121
 
 ResNets、HighwayNets、DenseNets：用TensorFlow实现超深度神经网络
-
-# 视频目标分割
-
-视频目标分割任务和语义分割有两个基本区别：
-
-1.视频目标分割任务分割的是一般的、非语义的目标；
-
-2.视频目标分割添加了一个时序模块：它的任务是在视频的每一连续帧中寻找感兴趣目标的对应像素。
-
-![](/images/article/Segmentation.png)
-
-上图是Segmentation的细分，其中的每一个叶子都有一个示例数据集。
-
-基于视频任务的特性，我们可以将问题分成两个子类：
-
-无监督（亦称作视频显著性检测）：寻找并分割视频中的主要目标。这意味着算法需要自行决定哪个物体才是“主要的”。
-
-半监督：在输入中（只）给出视频第一帧的正确分割掩膜，然后在之后的每一连续帧中分割标注的目标。
-
-参考：
-
-http://mp.weixin.qq.com/s/pGrzmq5aGoLb2uiJRYAXVw
-
-一文概览视频目标分割
-
-https://www.zhihu.com/question/52185576
-
-视频中的目标检测与图像中的目标检测具体有什么区别？
 
 # Fast Image Processing
 
@@ -127,6 +99,12 @@ SR目前主要有两个用途：
 这里主要讨论DL在SR领域的应用。
 
 ## 前DL时代的SR
+
+从信号处理的角度来说，LR之所以无法恢复成HR，主要在于丢失了图像的高频信息。（Nyquist采样定理）
+
+>Harry Nyquist，1889~1976，University of North Dakota本硕（1914,1915）+耶鲁博士（1917）。AT&T贝尔实验室电子工程师。IEEE Medal of Honor获得者（1960）。
+
+>IEEE Medal of Honor是IEEE的最高奖，除了1963年之外，每年只有1人得奖，个别年份甚至会轮空。
 
 最简单的当然是《图像处理理论（二）》中提到的梯度锐化和拉普拉斯锐化，这种简单算法当然不要指望有什么好效果，聊胜于无而已。这是1995年以前的主流做法。
 
@@ -215,19 +193,20 @@ PSNR和SSIM
 
 ## DRCN
 
-![](/images/img2/DRCN.jpg)
+DRCN是韩国首尔国立大学的作品。
 
 论文：
 
 《Deeply-Recursive Convolutional Network for Image Super-Resolution》
 
-## VDSR
+SRCNN的层数较少，同时感受野也较小（13x13）。DRCN提出使用更多的卷积层增加网络感受野（41x41），同时为了避免过多网络参数，该文章提出使用递归神经网络（RNN）。网络的基本结构如下：
 
-论文：
+![](/images/img2/DRCN.jpg)
 
-《Accurate Image Super-Resolution Using Very Deep Convolutional Networks》
+与SRCNN类似，该网络分为三个模块，第一个是Embedding network，相当于特征提取，第二个是Inference network, 相当于特征的非线性变换，第三个是Reconstruction network,即从特征图像得到最后的重建结果。其中的Inference network是一个递归网络，即数据循环地通过该层多次。将这个循环进行展开，就等效于使用同一组参数的多个串联的卷积层，如下图所示：
 
-![](/images/img2/VDSR.png)
+![](/images/img2/DRCN_2.jpg)
 
+其中的$$H_1$$到$$H_D$$是D个共享参数的卷积层。DRCN将每一层的卷积结果都通过同一个Reconstruction Net得到一个重建结果，从而共得到D个重建结果，再把它们加权平均得到最终的输出。另外，受到ResNet的启发，DRCN通过skip connection将输入图像与H_d的输出相加后再作为Reconstruction Net的输入，相当于使Inference Net去学习高分辨率图像与低分辨率图像的差，即恢复图像的高频部分。
 
 

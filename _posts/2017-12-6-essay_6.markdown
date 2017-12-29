@@ -56,11 +56,25 @@ Firefox的界面其实一直以来变化不大，也就是4.0的时候将标签�
 
 纪录片《有个学校叫南开》拍的不错。
 
+----
+
 https://view.inews.qq.com/a/20171125A0E3WT00
 
 我国机载雷达为何一下就从极端落后跨越到世界领先？
 
 80年代初一个研究所懂数字电路的人不到2%，到了90年代中期，几乎90%的人都只在数字电路上设计工作。
+
+----
+
+维阿当选利比里亚总统，让我对这个非洲国家产生了一定的兴趣。
+
+网上查了一圈资料之后，发现这个国家还有段不平凡的历史：
+
+https://zhuanlan.zhihu.com/p/24965232
+
+利比里亚真是学习了美国的民主制度还是又穷又落后？
+
+PS：《钢铁雄心》里，宣战利比里亚是个很好的降中立度，又没有副作用的办法。
 
 # 莫比乌斯反演
 
@@ -122,10 +136,6 @@ https://mp.weixin.qq.com/s/RpaOrngeXTKycLb3iCygZw
 
 利用贝叶斯神经网络进行随机动力系统中的学习与策略搜索
 
-https://mp.weixin.qq.com/s/j5YPHYEPioLiEIDc6lK3kA
-
-在线视频衣物精确检索技术，开启刷剧败明星同款时代
-
 https://mp.weixin.qq.com/s/6KC1vhKcyqQ0eZEXJyPqVA
 
 密集连接卷积网络
@@ -153,10 +163,6 @@ http://mp.weixin.qq.com/s/eXY0jVdWMg3B_CQ514ngsA
 http://mp.weixin.qq.com/s/oBy_Xl7FSBUd46H9E8yUbA
 
 AI博士五星指南：入行自评，选大公司还是初创企业
-
-https://mp.weixin.qq.com/s/Ns8oD_HBpFoumMMDbMq8-g
-
-DeepMind视频行为分类竞赛，百度IDL获第一
 
 https://mp.weixin.qq.com/s/8a4hTHJ1F-dUiUI12COJkA
 
@@ -242,10 +248,6 @@ https://mp.weixin.qq.com/s/EA5FgDeFI_w-kSfMpf5Yxw
 
 神经网络视觉分类算法的意外弱点
 
-https://mp.weixin.qq.com/s/CXKuSMi0Vd43BGDf5BgoqA
-
-弱监督视频物体识别新方法：香港科技大学联合CMU提出TD-Graph LSTM
-
 https://mp.weixin.qq.com/s/7NpJJn4k5oGPOB04S9Jyqw
 
 DeepMind新论文，关联推理为什么是智能最重要的特征
@@ -297,10 +299,6 @@ https://mp.weixin.qq.com/s/X6m4ZHDKY4gC-v0YN5g4YA
 https://mp.weixin.qq.com/s/0QyLIvH1McooGLc19hIAHA
 
 预测你的下一步-动态网络节点表示学习
-
-https://mp.weixin.qq.com/s/nZVIVJ9z0AWA8VFouNpafg
-
-深度学习之视频摘要简述
 
 https://mp.weixin.qq.com/s/PhaDqX3OT-mqyFHohDMfdA
 

@@ -371,10 +371,6 @@ https://mp.weixin.qq.com/s/88tBoAVziGEFXIGfvZZp8g
 
 深度学习图像处理项目集锦：生成可爱的动漫头像，骡子变斑马等入选
 
-https://mp.weixin.qq.com/s/-kXWmaIfw67rvb8IRi5mCQ
-
-视频行为理解新边界
-
 https://mp.weixin.qq.com/s/rxP9PlTJJdw5VmGbwRPMog
 
 解决3D重建难题，伯克利大学根据单张平面彩图重建高精度3D结构

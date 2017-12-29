@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  图像处理理论（六）——经典目标跟踪算法, OpenPose, 深度目标跟踪
+title:  图像处理理论（六）——经典目标跟踪算法, OpenPose, 深度目标跟踪, 视频目标分割
 category: graphics 
 ---
 
@@ -245,5 +245,77 @@ howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如
 网址：
 
 https://howmuch.net/
+
+# 视频目标分割
+
+视频目标分割任务和语义分割有两个基本区别：
+
+1.视频目标分割任务分割的是一般的、非语义的目标；
+
+2.视频目标分割添加了一个时序模块：它的任务是在视频的每一连续帧中寻找感兴趣目标的对应像素。
+
+![](/images/article/Segmentation.png)
+
+上图是Segmentation的细分，其中的每一个叶子都有一个示例数据集。
+
+基于视频任务的特性，我们可以将问题分成两个子类：
+
+无监督（亦称作视频显著性检测）：寻找并分割视频中的主要目标。这意味着算法需要自行决定哪个物体才是“主要的”。
+
+半监督：在输入中（只）给出视频第一帧的正确分割掩膜，然后在之后的每一连续帧中分割标注的目标。
+
+参考：
+
+http://mp.weixin.qq.com/s/pGrzmq5aGoLb2uiJRYAXVw
+
+一文概览视频目标分割
+
+https://www.zhihu.com/question/52185576
+
+视频中的目标检测与图像中的目标检测具体有什么区别？
+
+https://mp.weixin.qq.com/s/noljXreGfoMfiZb_n90R3w
+
+模仿人类的印象机制，商汤提出精确实时的视频目标检测方法
+
+http://mp.weixin.qq.com/s/-Av3-ZNi6UGlKNv_jduAeQ
+
+微软新论文：如何利用深度特征流提高视频识别准确率？
+
+https://mp.weixin.qq.com/s/z1APyCxlOEPHn48OeJAHkQ
+
+基于深度学习的视频内容识别
+
+https://mp.weixin.qq.com/s/WMakTEN68KPi7X9kMQetiw
+
+OpenAI:3段视频演示无人驾驶目标检测强大的对抗性样本！
+
+https://mp.weixin.qq.com/s/-kXWmaIfw67rvb8IRi5mCQ
+
+视频行为理解新边界
+
+https://mp.weixin.qq.com/s/j5YPHYEPioLiEIDc6lK3kA
+
+在线视频衣物精确检索技术，开启刷剧败明星同款时代
+
+https://mp.weixin.qq.com/s/CXKuSMi0Vd43BGDf5BgoqA
+
+弱监督视频物体识别新方法：香港科技大学联合CMU提出TD-Graph LSTM
+
+https://mp.weixin.qq.com/s/Ns8oD_HBpFoumMMDbMq8-g
+
+DeepMind视频行为分类竞赛，百度IDL获第一
+
+https://mp.weixin.qq.com/s/nZVIVJ9z0AWA8VFouNpafg
+
+深度学习之视频摘要简述
+
+https://mp.weixin.qq.com/s/7ccEaDRngVo42OSU6FBlVg
+
+从视频到语句，优必选获TRECVID 2017子任务冠军
+
+https://mp.weixin.qq.com/s/XorPkuIdhRNI1zGLwg-55A
+
+斯坦福新深度学习系统 NoScope：视频对象检测快1000倍
 
 

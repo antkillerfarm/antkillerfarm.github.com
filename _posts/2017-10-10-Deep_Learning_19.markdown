@@ -166,6 +166,8 @@ MXNet版本：
 
 https://github.com/TuSimple/mx-maskrcnn
 
+![](/images/img2/mask_rcnn.jpg)
+
 参考：
 
 https://zhuanlan.zhihu.com/p/25954683
@@ -179,6 +181,10 @@ Mask R-CNN的Keras/TensorFlow/Pytorch代码实现
 https://zhuanlan.zhihu.com/p/30967656
 
 从R-CNN到Mask R-CNN
+
+http://zh.gluon.ai/chapter_computer-vision/object-detection.html
+
+使用卷积神经网络的物体检测
 
 # 语义分割的展望
 

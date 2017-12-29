@@ -44,6 +44,18 @@ http://blog.csdn.net/zouxy09/article/details/9002508
 
 基于3D卷积神经网络的人体行为理解
 
+https://mp.weixin.qq.com/s/YdON6Yzddq2f_QGbQsOY8w
+
+深度三维残差神经网络：视频理解新突破
+
+## 感受野
+
+Receptive Field本来是神经科学领域的概念，后来才被推广到DL（尤其是CNN）领域。
+
+Receptive Field的大小实际上就是采样范围的大小，例如一个kernel为9x9，stride为1的普通卷积，其采样范围为13x13。（即kernel size+pad size, 9+4=13）
+
+其他卷积的情况，可以依此类推。
+
 ## 参考
 
 https://github.com/vdumoulin/conv_arithmetic

@@ -130,10 +130,6 @@ https://mp.weixin.qq.com/s/ZHRP5xnQxex7lQJsCxwblA
 
 深度学习目标检测的主要问题和挑战！
 
-https://mp.weixin.qq.com/s/XorPkuIdhRNI1zGLwg-55A
-
-斯坦福新深度学习系统 NoScope：视频对象检测快1000倍
-
 https://mp.weixin.qq.com/s/XbgmLmlt5X4TX5CP59gyoA
 
 目标检测算法精彩集锦
