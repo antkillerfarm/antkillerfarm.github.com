@@ -90,6 +90,10 @@ https://mp.weixin.qq.com/s/YQ8l87EPw6EEhNy8MIU6Cg
 
 区分识别机器学习中的分类与回归
 
+http://blog.csdn.net/zengxiantao1994/article/details/72787849
+
+极大似然估计详解
+
 ## 指数类分布
 
 线性回归和对数回归的迭代公式相同不是偶然的，它们都是指数类分布的特例。

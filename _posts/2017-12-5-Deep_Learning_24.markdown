@@ -295,6 +295,14 @@ http://www.cnblogs.com/qcloud1001/p/7941158.html
 
 详解卷积神经网络（CNN）在语音识别中的应用
 
+https://mp.weixin.qq.com/s/6xxXOx59lDZx0kUPb_ftBA
+
+漫谈语音合成之Char2Wav模型
+
+https://mp.weixin.qq.com/s/grqKRvv4dwKU26zT1qhq2g
+
+Facebook开源语音识别工具包wav2letter
+
 ## Kaldi
 
 Kaldi是一个语音识别的工具包。官网：

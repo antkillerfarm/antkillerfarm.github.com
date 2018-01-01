@@ -144,7 +144,19 @@ https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap
 
 https://theneuralperspective.com/tag/tutorials/
 
-一些深度学习的教程。
+一些深度学习的教程
+
+https://mp.weixin.qq.com/s/bdnROuLjud3PUWiJRa0dgw
+
+人人都可以做深度学习应用：入门篇（上）
+
+https://mp.weixin.qq.com/s/g4Azpkhsv4RSYl1pbpyOpA
+
+人人都可以做深度学习应用：入门篇（中）
+
+https://mp.weixin.qq.com/s/yEfLAwVkmi-CaR2G8NDlFQ
+
+人人都可以做深度学习应用：入门篇（下）
 
 https://zhuanlan.zhihu.com/p/22888385
 

@@ -276,6 +276,14 @@ https://mp.weixin.qq.com/s/q-WExyS-zylMA-L8ojOgRg
 
 简单易懂的自动编码器
 
+https://mp.weixin.qq.com/s/ZlLuhu08m_RnD-h86df8sA
+
+清华大学提出SA-VAE框架，通过单样本/少样本学习生成任意风格的汉字
+
+https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
+
+面向无监督任务：DeepMind提出神经离散表示学习生成模型VQ-VAE
+
 # 词向量
 
 ## One-hot Representation

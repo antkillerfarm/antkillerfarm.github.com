@@ -310,6 +310,30 @@ http://www.cnblogs.com/xybaby/p/7867735.html
 
 关于负载均衡的一切：总结与思考
 
+https://mp.weixin.qq.com/s/6MRi_UEcMybKn4YXi6qWng
+
+操作系统中锁的实现原理
+
+https://mp.weixin.qq.com/s/ZexnsNmqsD2yq-7YNASohw
+
+数模转换器的基本原理及DAC类型简介
+
+https://mp.weixin.qq.com/s/1XmbkoRkXUtmR0pnENhfGA
+
+基于高速DDFS的高精度DAC的设计
+
+https://mp.weixin.qq.com/s/4tAxQ0auQfv5x7Dh3B-85g
+
+Linux内存管理
+
+http://blog.csdn.net/wurenhai/article/details/37659335
+
+微服务(Microservices)
+
+https://mp.weixin.qq.com/s/yPl746zhMFdMVtJaPUoAxg
+
+微服务并非Spring Cloud独角戏，Service Mesh未来大有可为
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

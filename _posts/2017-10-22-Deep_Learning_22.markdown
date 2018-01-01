@@ -194,6 +194,10 @@ https://zhuanlan.zhihu.com/p/31473785
 
 行人再识别中的迁移学习：图像风格转换
 
+https://mp.weixin.qq.com/s/fX94rPgNHrOaQTqBv-ZADg
+
+基于视频的行人再识别新进展：区域质量估计方法和高质量的数据集
+
 # 人脸识别
 
 ## Cascade CNN

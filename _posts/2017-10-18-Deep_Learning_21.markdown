@@ -1,18 +1,74 @@
 ---
 layout: post
-title:  深度学习（二十一）——模型压缩, 手势识别
+title:  深度学习（二十一）——DRCN, VDSR, ESPCN, FSRCNN, VESPCN, SRGAN, DemosaicNet
 category: DL 
 ---
 
-# 图像超分辨率算法（续）
+# SRCNN（续）
 
-## VDSR
+**SSIM（structural similarity， 结构相似性）**，也是一种全参考的图像质量评价指标，它分别从亮度、对比度、结构三方面度量图像相似性。
+
+$$\mu_X=\frac{1}{H\times W}\sum_{i=1}^H\sum_{j=1}^WX(i,j),\, \sigma_X^2=\frac{1}{H\times W}\sum_{i=1}^H\sum_{j=1}^W(X(i,j)-\mu_X)^2$$
+
+$$\sigma_{XY}=\frac{1}{H\times W}\sum_{i=1}^H\sum_{j=1}^W((X(i,j)-\mu_X)(Y(i,j)-\mu_Y))$$
+
+$$l(X,Y)=\frac{2\mu_X\mu_Y+C_1}{\mu_X^2+\mu_Y^2+C_1},\, c(X,Y)=\frac{2\sigma_X\sigma_Y+C_2}{\sigma_X^2+\sigma_Y^2+C_2},\, s(X,Y)=\frac{\sigma_{XY}+C_3}{\sigma_X\sigma_Y+C_3}$$
+
+$$SSIM(X,Y)=l(X,Y)\cdot c(X,Y)\cdot s(X,Y)$$
+
+$$C_1,C_2,C_3$$为常数，为了避免分母为0的情况，通常取$$C_1=(K_1\cdot L)^2, C_2=(K_2\cdot L)^2, C_3=C_2/2$$，一般地$$K1=0.01, K2=0.03, L=255$$。
+
+SSIM取值范围[0,1]，值越大，表示图像失真越小。
+
+在实际应用中，可以利用滑动窗将图像分块，令分块总数为N，考虑到窗口形状对分块的影响，采用高斯加权计算每一窗口的均值、方差以及协方差，然后计算对应块的结构相似度SSIM，最后将平均值作为两图像的结构相似性度量，即平均结构相似性MSSIM：
+
+$$MSSIM(X,Y)=\frac{1}{N}\sum_{k=1}^NSSIM(x_k,y_k)$$
+
+参考：
+
+http://blog.csdn.net/u011692048/article/details/77496861
+
+超分辨率重建之SRCNN
+
+http://www.cnblogs.com/vincent2012/archive/2012/10/13/2723152.html
+
+PSNR和SSIM
+
+# DRCN
+
+DRCN（deeply-recursive convolutional network）是韩国首尔国立大学的作品。
+
+论文：
+
+《Deeply-Recursive Convolutional Network for Image Super-Resolution》
+
+SRCNN的层数较少，同时感受野也较小（13x13）。DRCN提出使用更多的卷积层增加网络感受野（41x41），同时为了避免过多网络参数，该文章提出使用递归神经网络（RNN）。网络的基本结构如下：
+
+![](/images/img2/DRCN.jpg)
+
+与SRCNN类似，该网络分为三个模块，第一个是Embedding network，相当于特征提取，第二个是Inference network, 相当于特征的非线性变换，第三个是Reconstruction network,即从特征图像得到最后的重建结果。其中的Inference network是一个递归网络，即数据循环地通过该层多次。将这个循环进行展开，就等效于使用同一组参数的多个串联的卷积层，如下图所示：
+
+![](/images/img2/DRCN_2.jpg)
+
+其中的$$H_1$$到$$H_D$$是D个共享参数的卷积层。DRCN将每一层的卷积结果都通过同一个Reconstruction Net得到一个重建结果，从而共得到D个重建结果，再把它们加权平均得到最终的输出。另外，受到ResNet的启发，DRCN通过skip connection将输入图像与H_d的输出相加后再作为Reconstruction Net的输入，相当于使Inference Net去学习高分辨率图像与低分辨率图像的差，即恢复图像的高频部分。
+
+参考：
+
+http://blog.csdn.net/u011692048/article/details/77500764
+
+超分辨率重建之DRCN
+
+# VDSR
 
 VDSR是DRCN的原班人马的新作。
 
 论文：
 
 《Accurate Image Super-Resolution Using Very Deep Convolutional Networks》
+
+代码：
+
+code：https://github.com/huangzehao/caffe-vdsr
 
 SRCNN存在三个问题需要进行改进：
 
@@ -22,6 +78,8 @@ SRCNN存在三个问题需要进行改进：
 
 3、网络只对于某一个比例有效。
 
+![](/images/img2/VDSR.png)
+
 VDSR模型主要有以下几点贡献：
 
 1、增加了感受野，在处理大图像上有优势，由SRCNN的13*13变为41*41。（20层的3x3卷积）
@@ -30,9 +88,117 @@ VDSR模型主要有以下几点贡献：
 
 3、考虑多个尺度，一个卷积网络可以处理多尺度问题。
 
-![](/images/img2/VDSR.png)
+训练的策略：
 
-## DemosaicNet
+1、才用残差的方式进行训练，避免训练过长的时间。
+
+2、使用大的学习进行训练。
+
+3、自适应梯度裁剪，将梯度限制在某一个范围。
+
+4、多尺度，多种尺度样本一起训练可以提高大尺度的准确率。
+
+对于边界问题，由于卷积的操作导致图像变小的问题，本文作者提出一个新的策略，就是每次卷积后，图像的size变小，但是，在下一次卷积前，对图像进行补0操作，恢复到原来大小，这样不仅解决了网络深度的问题，同时，实验证明对边界像素的预测结果也得到了提升。
+
+参考：
+
+http://blog.csdn.net/u011692048/article/details/77512310
+
+超分辨率重建之VDSR
+
+# ESPCN
+
+ESPCN（efficient sub-pixel convolutional neural network）是创业公司Magic Pony Technology的Wenzhe Shi和Jose Caballero作品。该创业团队主要来自Imperial College London，目前已被Twitter收购。
+
+论文：
+
+《Real-Time Single Image and Video Super-Resolution Using an Efficient Sub-Pixel Convolutional Neural Network》
+
+代码：
+
+https://github.com/wangxuewen99/Super-Resolution/tree/master/ESPCN
+
+在SRCNN和DRCN中，低分辨率图像都是先通过上采样插值得到与高分辨率图像同样的大小，再作为网络输入，意味着卷积操作在较高的分辨率上进行，相比于在低分辨率的图像上计算卷积，会降低效率。
+
+ESPCN提出一种在低分辨率图像上直接计算卷积得到高分辨率图像的高效率方法。
+
+![](/images/img2/ESPCN.jpg)
+
+ESPCN的核心概念是亚像素卷积层(sub-pixel convolutional layer)。如上图所示，网络的输入是原始低分辨率图像，通过两个卷积层以后，得到的特征图像大小与输入图像一样，但是特征通道为$$r^2$$(r是图像的目标放大倍数)。将每个像素的$$r^2$$个通道重新排列成一个$$r \times r$$的区域，对应于高分辨率图像中的一个$$r \times r$$大小的子块，从而大小为$$r^2 \times H \times W$$的特征图像被重新排列成$$1 \times rH \times rW$$大小的高分辨率图像。这个变换虽然被称作sub-pixel convolution, 但实际上并没有卷积操作。
+
+通过使用sub-pixel convolution, 图像从低分辨率到高分辨率放大的过程，插值函数被隐含地包含在前面的卷积层中，可以自动学习到。只在最后一层对图像大小做变换，前面的卷积运算由于在低分辨率图像上进行，因此效率会较高。
+
+参考：
+
+http://blog.csdn.net/zuolunqiang/article/details/52401802
+
+super-resolution技术日记——ESPCN
+
+# FSRCNN
+
+FSRCNN（Fast Super-Resolution CNN）是Chao Dong继SRCNN之后的又一作品。
+
+论文：
+
+《Accelerating the Super-Resolution Convolutional Neural Network》
+
+代码：
+
+https://github.com/66wangxuewen99/Super-Resolution/tree/master/FSRCNN
+
+![](/images/img2/FSRCNN.png)
+
+上图是FSRCNN和SRCNN的网络结构对比图。其中的$$Conv(f_i,n_i,c_i)$$中的$$f_i,n_i,c_i$$分别表示filter的大小、数量和通道的个数。
+
+FSRCNN主要做了如下改进：
+
+1.直接输入LR的图片。这和ESPCN思路一致。
+
+2.将SRCNN中的Non-linear mapping分为Shrinking、Mapping、Expanding三个阶段。
+
+3.使用Deconv重建HR图像。
+
+>ESPCN的论文中指出他们的sub-pixel convolution效果优于Deconv。但由于ESPCN和FSRCNN出来的时间都差不多，尚未有他们两个正式PK的成绩。
+
+参考：
+
+http://blog.csdn.net/zuolunqiang/article/details/52411673
+
+super-resolution技术日记——FSRCNN
+
+# VESPCN
+
+看名字就知道，VESPCN（Video ESPCN）仍然是ESPCN原班人马Wenzhe Shi和Jose Caballero作品。
+
+论文：
+
+《Real-Time Video Super-Resolution with Spatio-Temporal Networks and Motion Compensation》
+
+在视频图像的SR问题中，相邻几帧具有很强的关联性，上述几种方法都只在单幅图像上进行处理，而VESPCN提出使用视频中的时间序列图像进行高分辨率重建，并且能达到实时处理的效率要求。其方法示意图如下，主要包括三个方面： 
+
+![](/images/img2/VESPCN.png)
+
+一是纠正相邻帧的位移偏差，即先通过Motion estimation估计出位移，然后利用位移参数对相邻帧进行空间变换，将二者对齐。二是把对齐后的相邻若干帧叠放在一起，当做一个三维数据，在低分辨率的三维数据上使用三维卷积，得到的结果大小为$$r^2\times H\times W$$。三是利用ESPCN的思想将该卷积结果重新排列得到大小为$$1\times rH\times rW$$的高分辨率图像。
+
+Motion estimation这个过程可以通过传统的光流算法来计算，DeepMind提出了一个Spatial Transformer Networks, 通过CNN来估计空间变换参数。VESPCN使用了这个方法，并且使用多尺度的Motion estimation：先在比输入图像低的分辨率上得到一个初始变换，再在与输入图像相同的分辨率上得到更精确的结果，如下图所示：
+
+![](/images/img2/VESPCN_2.png)
+
+由于SR重建和相邻帧之间的位移估计都通过神经网路来实现，它们可以融合在一起进行端到端的联合训练。为此，VESPCN使用的损失函数如下：
+
+$$(\theta^*,\theta^*_\Delta)$$
+
+# SRGAN
+
+SRGAN还是ESPCN原班人马的作品。
+
+论文：
+
+《Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network》
+
+![](/images/img2/SRGAN.jpg)
+
+# DemosaicNet
 
 论文：
 
@@ -44,220 +210,5 @@ https://github.com/mgharbi/demosaicnet
 
 ![](/images/img2/DemosaicNet.png)
 
-## 参考
-
-https://zhuanlan.zhihu.com/p/25532538
-
-深度学习在图像超分辨率重建中的应用
-
-https://zhuanlan.zhihu.com/p/25201511
-
-深度对抗学习在图像分割和超分辨率中的应用
-
-https://mp.weixin.qq.com/s/uK0L5RV0bB2Jnr5WCZasfw
-
-深度学习在单图像超分辨率上的应用：SRCNN、Perceptual loss、SRResNet
-
-https://mp.weixin.qq.com/s/KxQ-GRnEYEdmS2H-DHIHOg
-
-南京理工大学ICCV 2017论文：图像超分辨率模型MemNet
-
-https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
-
-NTIRE2017夺冠论文：用于单一图像超分辨率的增强型深度残差网络
-
-https://www.zhihu.com/question/25401250
-
-如何通过多帧影像进行超分辨率重构？
-
-https://www.zhihu.com/question/38637977
-
-超分辨率重建还有什么可以研究的吗？
-
-https://zhuanlan.zhihu.com/p/25912465
-
-胎儿MRI高分辨率重建技术：现状与趋势
-
-https://mp.weixin.qq.com/s/i-im1sy6MNWP1Fmi5oWMZg
-
-华为推出新型HiSR：移动端的超分辨率算法
-
-http://blog.csdn.net/u011692048/article/details/77496861
-
-超分辨率重建之SRCNN
-
-http://blog.csdn.net/u011692048/article/details/77512310
-
-超分辨率重建之VDSR
-
-http://blog.csdn.net/u011692048/article/details/77500764
-
-超分辨率重建之DRCN
-
-# 模型压缩
-
-对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。
-
-此外，对于一些较大的模型（如VGG），即使机器再给力，单位时间内能处理的图像数量，往往也无法达到实际应用的要求。这点在自动驾驶和视频处理领域显得尤为突出。
-
-这里首先提到的是韩松的两篇论文：
-
-《Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding》
-
-《Learning both Weights and Connections for Efficient Neural Networks》
-
->韩松，清华本科（2012）+Stanford博士（2017）。MIT AP（from 2018）。   
->个人主页：   
->https://stanford.edu/~songhan/
-
-韩松也是SqueezeNet的二作。
-
-![](/images/article/nn_compression.png)
-
-韩松论文的中心思想如上图所示。简单来说，就是去掉原有模型的一些不重要的参数、结点和层。
-
-参数的选择，相对比较简单。参数的绝对值越接近零，它对结果的贡献就越小。这一点和稀疏矩阵有些类似。
-
-结点和层的选择，相对麻烦一些，需要通过算法得到不重要的层。
-
-比如可以逐个将每一层50%的参数置零，查看模型性能。对性能影响不大的层就是不重要的。
-
-虽然这些参数、结点和层相对不重要，但是去掉之后，仍然会对准确度有所影响。这时可以对精简之后的模型，用训练样本进行re-train，通过残差对模型进行一定程度的修正，以提高准确度。
-
-其次还可以看看图森科技的论文：
-
-https://www.zhihu.com/question/62068158
-
-如何评价图森科技连发的三篇关于深度模型压缩的文章？
-
-图森的思路比较有意思。其中的方法之一，是利用L1规则化会导致结果的稀疏化的特性，制造出一批接近0的参数。从而达到去除不重要的参数的目的。
-
-除此之外，矩阵量化、Kronecker内积、霍夫曼编码、模型剪枝等也是常见的模型压缩方法。
-
-当然最系统的做法还属Geoffrey Hinton的论文：
-
-《Distilling the Knowledge in a Neural Network》
-
-图森科技的后两篇论文也是在Hinton论文的基础上改进的。
-
-论文：
-
-《Articulatory and Spectrum Features Integration using Generalized Distillation Framework》
-
-参考：
-
-https://zhuanlan.zhihu.com/p/24337627
-
-深度压缩之蒸馏模型
-
-http://blog.csdn.net/shuzfan/article/details/51383809
-
-神经网络压缩：Deep Compression
-
-https://zhuanlan.zhihu.com/p/24894102
-
-《Distilling the Knowledge in a Neural Network》阅读笔记
-
-https://luofanghao.github.io/2016/07/20/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0%20%E3%80%8ADistilling%20the%20Knowledge%20in%20a%20Neural%20Network%E3%80%8B/
-
-论文笔记 《Distilling the Knowledge in a Neural Network》
-
-http://blog.csdn.net/zhongshaoyy/article/details/53582048
-
-蒸馏神经网络
-
-https://www.zhihu.com/question/50519680
-
-如何理解soft target这一做法？
-
-https://mp.weixin.qq.com/s/0KlnQ8UUxpyhBRdeo0EOAA
-
-用于网络压缩的滤波器级别剪枝算法ThiNet
-
-https://mp.weixin.qq.com/s/lO2UM04PfSM5VJYh6vINhw
-
-为模型减减肥：谈谈移动／嵌入式端的深度学习
-
-https://mp.weixin.qq.com/s/cIGuJvYr4lZW01TdINBJnA
-
-深度压缩网络：较大程度减少了网络参数存储问题
-
-https://mp.weixin.qq.com/s/1JwLP0FmV1AGJ65iDgLWQw
-
-神经网络模型压缩技术
-
-https://mp.weixin.qq.com/s/Xqc4UgcfCUWYOeGhjNpidA
-
-CNN模型压缩与加速算法综述
-
-https://mp.weixin.qq.com/s/rzv8VCAxBQi0HsUcnLqqUA
-
-处理移动端传感器时序数据的深度学习框架：DeepSense
-
-https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg
-
-旷视科技提出新型卷积网络ShuffleNet，专为移动端设计
-
-https://mp.weixin.qq.com/s/UYk3YQmFW7-44RUojUqfGg
-
-上交大ICCV：精度保证下的新型深度网络压缩框架
-
-https://mp.weixin.qq.com/s/ZuEi32ZBSjruvtyUimBgxQ
-
-揭秘支付宝中的深度学习引擎：xNN
-
-http://mp.weixin.qq.com/s/iapih9Mme-VKCfsFCmO7hQ
-
-简单聊聊压缩网络
-
-https://mp.weixin.qq.com/s/3qstz-KoRuxwpmfE4XDI-Q
-
-面向卷积神经网络的卷积核冗余消除策略
-
-https://mp.weixin.qq.com/s/dEdWz4bovmk65fwLknHBhg
-
-韩松毕业论文：面向深度学习的高效方法与硬件
-
-https://mp.weixin.qq.com/s/GFE2XYHZXPP0doQ5nd0JNQ
-
-当前深度神经网络模型压缩和加速方法速览
-
-https://mp.weixin.qq.com/s/Faej1LKqurtwEIreUVJ0cw
-
-普林斯顿新算法自动生成高性能神经网络，同时超高效压缩
-
-https://mp.weixin.qq.com/s/uK-HasmiavM3jv6hNRY11A
-
-深度梯度压缩：降低分布式训练的通信带宽
-
-https://mp.weixin.qq.com/s/_MDbbGzDOGHk5TBgbu_-oA
-
-中大商汤等提出深度网络加速新方法，具有强大兼容能力
-
-https://mp.weixin.qq.com/s/gbOmpP7XO1Hz_ld4iSEsrw
-
-三星提出移动端神经网络模型加速框架DeepRebirth
-
-# 手势识别
-
-https://zhuanlan.zhihu.com/p/26630215
-
-浅谈手势识别在直播中的运用
-
-https://zhuanlan.zhihu.com/p/30561160
-
-2017-最全手势识别/跟踪相关资源大列表分享
-
-http://www.sohu.com/a/203306961_465975
-
-浙江大学CSPS最佳论文：使用卷积神经网络的多普勒雷达手势识别
-
-https://www.zhihu.com/question/20131478
-
-我打算只根据手的形状来识别手势。用哪种机器学习算法比较好？
-
-https://www.leiphone.com/news/201502/QM7LdSN874dWXFLo.html
-
-带你了解世界最先进的手势识别技术
-
+![](/images/img2/ISP_pipeline_2.png)
 

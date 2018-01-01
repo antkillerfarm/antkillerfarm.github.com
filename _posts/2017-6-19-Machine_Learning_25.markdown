@@ -194,6 +194,10 @@ https://zhuanlan.zhihu.com/p/25688750
 
 模仿学习（Imitation Learning）完全介绍
 
+https://mp.weixin.qq.com/s/wfCyii6bS-GxMZPg2TPaLA
+
+蒙特卡洛树搜索是什么？如何将其用于规划星际飞行？
+
 # K-摇臂赌博机
 
 ![](/images/article/Multi-Armed_Bandit.jpg)

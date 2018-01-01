@@ -292,6 +292,10 @@ https://mp.weixin.qq.com/s/gFHbLF-q91sddMAX1CRbEQ
 
 俞扬：“审时度势”的高效强化学习
 
+https://mp.weixin.qq.com/s/lstCIiNs_qA6k7GCYUBv2w
+
+阿尔伯塔大学提出新型多步强化学习方法，结合已有TD算法实现更好性能
+
 # LSTM进阶
 
 ## 《Long short-term memory》

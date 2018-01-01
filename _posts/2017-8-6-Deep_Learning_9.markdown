@@ -358,6 +358,14 @@ https://mp.weixin.qq.com/s/RZ6UbTgfn30UFaUYNtApRg
 
 如何用Masking GAN让100,000人笑起来？
 
+https://mp.weixin.qq.com/s/OPn4_jmJ7pUg8xa0FZvyiw
+
+超火的漫画线稿上色AI出新版了！无监督训练，效果更美好
+
+https://mp.weixin.qq.com/s/wrxKwY2SvJZc8bRuZ_wF_A
+
+用生成对抗网络给雪人上色，探索人工智能时代的美学
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
@@ -374,25 +382,5 @@ fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训
 
 fine-tuning也是图像目标检测、语义分割的基础。
 
-参考：
 
-https://zhuanlan.zhihu.com/p/22624331
-
-fine-tuning:利用已有模型训练其他数据集
-
-http://www.cnblogs.com/louyihang-loves-baiyan/p/5038758.html
-
-Caffe fine-tuning微调网络
-
-http://blog.csdn.net/sinat_26917383/article/details/54999868
-
-caffe中fine-tuning模型三重天（函数详解、框架简述）+微调技巧
-
-http://yongyuan.name/blog/layer-selection-and-finetune-for-cbir.html
-
-图像检索：layer选择与fine-tuning性能提升验证
-
-h1ttps://www.zhihu.com/question/49534423
-
-迁移学习与fine-tuning有什么区别？
 

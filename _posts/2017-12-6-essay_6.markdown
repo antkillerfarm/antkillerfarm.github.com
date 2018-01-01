@@ -104,50 +104,6 @@ http://blog.csdn.net/outer_form/article/details/50588307
 
 # DL参考资源
 
-https://www.jiqizhixin.com/articles/2017-07-27-2
-
-CVPR 2017李飞飞总结8年ImageNet历史，宣布挑战赛最终归于Kaggle
-
-https://mp.weixin.qq.com/s/TWdeHVCgEf54STvdA1QUPg
-
-DeepMind哈萨比斯长文：伟大的AI离不开神经科学
-
-https://mp.weixin.qq.com/s/DQcRqWALLuPpNabCv83Vcg
-
-自动机器学习，神经网络自主编程
-
-https://mp.weixin.qq.com/s/fY4vF0aPexwFi2Fu4grdzg
-
-大规模视觉理解竞赛WebVision冠军分享
-
-https://mp.weixin.qq.com/s/cO1VlYGwdRBAbPs7IgvcAA
-
-超越传统强化学习的价值分布方法
-
-https://mp.weixin.qq.com/s/HlqzSdhj3Q3nX4Zl63PM0A
-
-商汤科技23篇论文横扫CVPR
-
-https://mp.weixin.qq.com/s/TelGG-uVQyxwQjiDGE1pqA
-
-特征金字塔网络FPN
-
-https://mp.weixin.qq.com/s/RpaOrngeXTKycLb3iCygZw
-
-利用贝叶斯神经网络进行随机动力系统中的学习与策略搜索
-
-https://mp.weixin.qq.com/s/6KC1vhKcyqQ0eZEXJyPqVA
-
-密集连接卷积网络
-
-https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
-
-北大：一种基于新闻特征抽取和循环神经网络的股票预测方法
-
-https://mp.weixin.qq.com/s/UboQNEywHSBAYc0740qmzQ
-
-让机器学会创造新的概念：DeepMind提出符号-概念关联网络SCAN
-
 https://mp.weixin.qq.com/s/mEnYNs9tP-246lVM3WFgZg
 
 颜水成团队CVPR新架构，提速300%
@@ -367,4 +323,25 @@ https://mp.weixin.qq.com/s/x5jX2g44X2sp7WIOdoUP4w
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
 
 Bengio等人提出图注意网络架构GAT，可处理复杂结构图
+
+https://mp.weixin.qq.com/s/iYStJoLDJvAr8Ke_X8djtA
+
+在线深度学习：在数据流中实时学习深度神经网络
+
+https://mp.weixin.qq.com/s/VVPPo3F4Z2Q3MaUG66bbcg
+
+AI何时能懂环境会沟通？别急，这个“你说我画”小游戏开了个好头
+
+https://mp.weixin.qq.com/s/hap6MF7cMgXEEt_-DKAa7Q
+
+深度解读：深度学习在IoT大数据和流分析中的应用
+
+https://mp.weixin.qq.com/s/A1pbiU5PA9Owe69lGX9afw
+
+活体识别告诉你为什么照片无法破解人脸系统
+
+https://mp.weixin.qq.com/s/nzlmt5YZtGqWYw7eRqy3cg
+
+Structural Learning with Amortized Inference
+
 

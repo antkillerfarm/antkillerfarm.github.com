@@ -6,7 +6,11 @@ category: DL
 
 # YOLOv2
 
-## Stronger（续）
+### 联合训练（续）
+
+大多数分类的方法采用softmax层，考虑所有可能的种类计算最终的概率分布。但是softmax假设类别之间互不包含，但是整合之后的数据是类别是有包含关系的，例如 “Norfolk terrier” 和 “dog”。所以整合数据集没法使用这种方式（softmax 模型），
+
+作者最后采用一种不要求互不包含的多标签模型（multi-label model）来整合数据集。
 
 ### Hierarchical classiﬁcation（层次式分类）
 
@@ -128,6 +132,10 @@ https://mp.weixin.qq.com/s/Amr34SdrPZho1GQpFS7WBA
 
 见微知著：语义分割中的弱监督学习
 
+https://mp.weixin.qq.com/s/mQqEe4LC0VHBH2ZAtFanWQ
+
+基于深度学习的图像语义分割方法回顾
+
 # 前DL时代的语义分割
 
 从最简单的像素级别“阈值法”（Thresholding methods）、基于像素聚类的分割方法（Clustering-based segmentation methods）到“图划分”的分割方法（Graph partitioning segmentation methods），在DL“一统江湖”之前，图像语义分割方面的工作可谓“百花齐放”。在此，我们仅以“Normalized cut”和“Grab cut”这两个基于图划分的经典分割方法为例，介绍一下前DL时代语义分割方面的研究。
@@ -198,23 +206,4 @@ https://github.com/shelhamer/fcn.berkeleyvision.org
 
 然而CNN网络的问题在于：全连接层会将原来二维的矩阵（图片）压扁成一维的，从而丢失了空间信息。这对于分类是没有问题的，但对于语义分割显然就不行了。
 
-![](/images/article/FCN.png)
-
-上图是FCN的网络结构图，它的主要思想包括：
-
-1.采用end-to-end的结构。
-
-2.取消FC层。当图片的feature map缩小（下采样）到一定程度之后，进行反向的上采样操作，以匹配图片的语义分割标注图。这里的上采样所采用的方法，就是《深度学习（九）》中提到的transpose convolution。
-
-4.由于上采样会丢失信息。因此，为了更好的预测图像中的细节部分，FCN还将网络中浅层的响应也考虑进来。具体来说，就是将Pool4和Pool3的响应也拿来，分别作为模型FCN-16s和FCN-8s的输出，与原来FCN-32s的输出结合在一起做最终的语义分割预测（如下图所示）。
-
-![](/images/article/FCN_3.png)
-
-上图的结构在论文中被称为Skip Layer。
-
-参考：
-
-http://www.cnblogs.com/gujianhan/p/6030639.html
-
-全卷积网络FCN详解
 

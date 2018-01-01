@@ -60,6 +60,10 @@ https://mp.weixin.qq.com/s/OxNj9fWaEMh8SuQiK52HWg
 
 sklearn中PCA库讲解与实战
 
+https://mp.weixin.qq.com/s/ZbT5ASvnTODkodTJjBGhnw
+
+Python环境下的8种简单线性回归算法
+
 # 大数据平台参考资源
 
 https://mp.weixin.qq.com/s/O8pj4pChyw8PK-G_4A3DWg

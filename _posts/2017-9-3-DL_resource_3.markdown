@@ -420,4 +420,8 @@ https://mp.weixin.qq.com/s/DxNtgyuNzNqpbZ_9k8uflQ
 
 谷歌开源机器学习可视化工具Facets：从全新角度观察数据
 
+https://mp.weixin.qq.com/s/wFfKcwLu6fmnIn-r_QL7Lw
+
+完全云端运行：使用谷歌CoLaboratory训练神经网络
+
 

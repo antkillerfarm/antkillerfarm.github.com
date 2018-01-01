@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十五）——深度推荐系统
+title:  深度学习（二十五）——深度推荐系统, 手势识别
 category: DL 
 ---
 
@@ -136,6 +136,172 @@ https://mp.weixin.qq.com/s/PlsFxKz_Igorh94Ni-78Hg
 
 融合MF和RNN的电影推荐系统
 
+# 模型压缩
+
+对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。
+
+此外，对于一些较大的模型（如VGG），即使机器再给力，单位时间内能处理的图像数量，往往也无法达到实际应用的要求。这点在自动驾驶和视频处理领域显得尤为突出。
+
+这里首先提到的是韩松的两篇论文：
+
+《Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding》
+
+《Learning both Weights and Connections for Efficient Neural Networks》
+
+>韩松，清华本科（2012）+Stanford博士（2017）。MIT AP（from 2018）。   
+>个人主页：   
+>https://stanford.edu/~songhan/
+
+韩松也是SqueezeNet的二作。
+
+![](/images/article/nn_compression.png)
+
+韩松论文的中心思想如上图所示。简单来说，就是去掉原有模型的一些不重要的参数、结点和层。
+
+参数的选择，相对比较简单。参数的绝对值越接近零，它对结果的贡献就越小。这一点和稀疏矩阵有些类似。
+
+结点和层的选择，相对麻烦一些，需要通过算法得到不重要的层。
+
+比如可以逐个将每一层50%的参数置零，查看模型性能。对性能影响不大的层就是不重要的。
+
+虽然这些参数、结点和层相对不重要，但是去掉之后，仍然会对准确度有所影响。这时可以对精简之后的模型，用训练样本进行re-train，通过残差对模型进行一定程度的修正，以提高准确度。
+
+其次还可以看看图森科技的论文：
+
+https://www.zhihu.com/question/62068158
+
+如何评价图森科技连发的三篇关于深度模型压缩的文章？
+
+图森的思路比较有意思。其中的方法之一，是利用L1规则化会导致结果的稀疏化的特性，制造出一批接近0的参数。从而达到去除不重要的参数的目的。
+
+除此之外，矩阵量化、Kronecker内积、霍夫曼编码、模型剪枝等也是常见的模型压缩方法。
+
+当然最系统的做法还属Geoffrey Hinton的论文：
+
+《Distilling the Knowledge in a Neural Network》
+
+图森科技的后两篇论文也是在Hinton论文的基础上改进的。
+
+论文：
+
+《Articulatory and Spectrum Features Integration using Generalized Distillation Framework》
+
+参考：
+
+https://zhuanlan.zhihu.com/p/24337627
+
+深度压缩之蒸馏模型
+
+http://blog.csdn.net/shuzfan/article/details/51383809
+
+神经网络压缩：Deep Compression
+
+https://zhuanlan.zhihu.com/p/24894102
+
+《Distilling the Knowledge in a Neural Network》阅读笔记
+
+https://luofanghao.github.io/2016/07/20/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0%20%E3%80%8ADistilling%20the%20Knowledge%20in%20a%20Neural%20Network%E3%80%8B/
+
+论文笔记 《Distilling the Knowledge in a Neural Network》
+
+http://blog.csdn.net/zhongshaoyy/article/details/53582048
+
+蒸馏神经网络
+
+https://www.zhihu.com/question/50519680
+
+如何理解soft target这一做法？
+
+https://mp.weixin.qq.com/s/0KlnQ8UUxpyhBRdeo0EOAA
+
+用于网络压缩的滤波器级别剪枝算法ThiNet
+
+https://mp.weixin.qq.com/s/lO2UM04PfSM5VJYh6vINhw
+
+为模型减减肥：谈谈移动／嵌入式端的深度学习
+
+https://mp.weixin.qq.com/s/cIGuJvYr4lZW01TdINBJnA
+
+深度压缩网络：较大程度减少了网络参数存储问题
+
+https://mp.weixin.qq.com/s/1JwLP0FmV1AGJ65iDgLWQw
+
+神经网络模型压缩技术
+
+https://mp.weixin.qq.com/s/Xqc4UgcfCUWYOeGhjNpidA
+
+CNN模型压缩与加速算法综述
+
+https://mp.weixin.qq.com/s/rzv8VCAxBQi0HsUcnLqqUA
+
+处理移动端传感器时序数据的深度学习框架：DeepSense
+
+https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg
+
+旷视科技提出新型卷积网络ShuffleNet，专为移动端设计
+
+https://mp.weixin.qq.com/s/UYk3YQmFW7-44RUojUqfGg
+
+上交大ICCV：精度保证下的新型深度网络压缩框架
+
+https://mp.weixin.qq.com/s/ZuEi32ZBSjruvtyUimBgxQ
+
+揭秘支付宝中的深度学习引擎：xNN
+
+http://mp.weixin.qq.com/s/iapih9Mme-VKCfsFCmO7hQ
+
+简单聊聊压缩网络
+
+https://mp.weixin.qq.com/s/3qstz-KoRuxwpmfE4XDI-Q
+
+面向卷积神经网络的卷积核冗余消除策略
+
+https://mp.weixin.qq.com/s/dEdWz4bovmk65fwLknHBhg
+
+韩松毕业论文：面向深度学习的高效方法与硬件
+
+https://mp.weixin.qq.com/s/GFE2XYHZXPP0doQ5nd0JNQ
+
+当前深度神经网络模型压缩和加速方法速览
+
+https://mp.weixin.qq.com/s/Faej1LKqurtwEIreUVJ0cw
+
+普林斯顿新算法自动生成高性能神经网络，同时超高效压缩
+
+https://mp.weixin.qq.com/s/uK-HasmiavM3jv6hNRY11A
+
+深度梯度压缩：降低分布式训练的通信带宽
+
+https://mp.weixin.qq.com/s/_MDbbGzDOGHk5TBgbu_-oA
+
+中大商汤等提出深度网络加速新方法，具有强大兼容能力
+
+https://mp.weixin.qq.com/s/gbOmpP7XO1Hz_ld4iSEsrw
+
+三星提出移动端神经网络模型加速框架DeepRebirth
+
+# 手势识别
+
+https://zhuanlan.zhihu.com/p/26630215
+
+浅谈手势识别在直播中的运用
+
+https://zhuanlan.zhihu.com/p/30561160
+
+2017-最全手势识别/跟踪相关资源大列表分享
+
+http://www.sohu.com/a/203306961_465975
+
+浙江大学CSPS最佳论文：使用卷积神经网络的多普勒雷达手势识别
+
+https://www.zhihu.com/question/20131478
+
+我打算只根据手的形状来识别手势。用哪种机器学习算法比较好？
+
+https://www.leiphone.com/news/201502/QM7LdSN874dWXFLo.html
+
+带你了解世界最先进的手势识别技术
+
 # NN的INT8计算
 
 ## 概述
@@ -167,108 +333,4 @@ MACC：multiply-accumulate，乘法累加。
 FLOPS：Floating-point Operations Per Second，每秒所执行的浮点运算次数。
 
 显然NN的INT8计算主要以MACC为单位。
-
-# NLP参考资源
-
-https://mp.weixin.qq.com/s/7yi67lPjseigeaqTD269mQ
-
-触类旁通，专业技能热度智能分析
-
-https://mp.weixin.qq.com/s/Zo6LjGE__vQMsWyuoZm6Hw
-
-文本特征工程之N-Gram
-
-https://mp.weixin.qq.com/s/PmdARJQC8O42huzxZNSz3A
-
-搭建基于依存句法和短语结构句法结合的金融领域事件元素抽取系统实践
-
-http://www.cnblogs.com/qcloud1001/p/7910255.html
-
-LSF-SCNN：一种基于CNN的短文本表达模型及相似度计算的全新优化模型
-
-http://www.cnblogs.com/qcloud1001/p/8074771.html
-
-神经张量网络（NTN）：探索文本实体之间的关系
-
-https://mp.weixin.qq.com/s/Y-skeJvkWlgkwKBpCjPaKA
-
-中文文本挖掘流程详解
-
-https://zhuanlan.zhihu.com/p/32314500
-
-DL实战课程推荐-从0到1构建一个Chatbot系统
-
-https://mp.weixin.qq.com/s/mNG9P6hvbRIGq7f5Jx4jIw
-
-Facebook开源无监督机器翻译模型和大规模训练语料
-
-https://mp.weixin.qq.com/s/GhJRebSXXq0ZFh3evAqLxw
-
-漫谈神经语言模型之中文输入法
-
-https://mp.weixin.qq.com/s/HMLwjLlFXR4WM92_OnKHbA
-
-基于Apache MXNet，亚马逊NMT开源框架Sockeye论文介绍
-
-https://mp.weixin.qq.com/s/rF4zKCbj3Jh8dDR1239lpA
-
-基于双语主题模型的跨语言层次分类体系匹配
-
-https://mp.weixin.qq.com/s/gQ9dV-IPWHTOLbI6u0D67g
-
-可解释推荐系统：身怀绝技，一招击中用户心理
-
-https://mp.weixin.qq.com/s/M_ZN0YuvegAnc2GXCZTt9Q
-
-初学者指南：神经网络在自然语言处理中的应用
-
-https://mp.weixin.qq.com/s/ouNxUvWC_mxap6P5z6_dFA
-
-教聊天机器人进行多轮对话
-
-https://mp.weixin.qq.com/s/fZv9FgbdQ1bWPoNdl9sF1A
-
-“宝石迷阵”与信息检索
-
-http://www.jianshu.com/p/0273c377c34e
-
-机器学习算法在文本分类中的应用综述
-
-https://mp.weixin.qq.com/s/BcUB3bXrPJF0WQetWs7Law
-
-用深度学习解决自然语言处理中的7大问题，文本分类、语言建模、机器翻译等
-
-https://mp.weixin.qq.com/s/GyE9qdXPGvrq12dMAf4nrQ
-
-论文推荐：QA，增强学习，知识图谱，机器阅读理解
-
-https://mp.weixin.qq.com/s/eCtqMIo3_UDxAR4fWzMjZQ
-
-站在锤子手机背后，小源科技用AI打造短信场景服务
-
-https://mp.weixin.qq.com/s/hkcVhyqiDW--F3QxucgEcA
-
-亚马逊开源神经机器翻译框架Sockeye：基于Apache MXNet的NMT平台
-
-https://mp.weixin.qq.com/s/vgejlnsBlOKMMRt-M3-d-w
-
-深思考：实现人机多轮交互突破是攻克图灵测试的核心
-
-https://mp.weixin.qq.com/s/rqB2COCAKsr3qvVXnhLwMg
-
-数据到文本任务的近期相关工作介绍
-
-https://mp.weixin.qq.com/s/KWWbaE2em4fEBInPoWTq8A
-
-Python实现多种模型(Naive Bayes, SVM, CNN, LSTM, etc)用于推文情感分析
-
-https://mp.weixin.qq.com/s/-K3WIo64_wJb9p6C49Z5fA
-
-基于属性学习和额外知识库的图像描述生成和视觉问答
-
-https://mp.weixin.qq.com/s/_klvAhH-K8tcYmamlr6FcA
-
-Logistic Regression Models分析交互式问答
-
-
 

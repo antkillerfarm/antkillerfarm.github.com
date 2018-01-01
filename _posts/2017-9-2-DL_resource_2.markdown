@@ -428,5 +428,8 @@ https://mp.weixin.qq.com/s/r951Iasr4dke6MPHsUO0TA
 
 开源DAWN，Stanford的又一力作
 
+https://mp.weixin.qq.com/s/2jrMDeMcb47zpPfFLEcnIA
+
+深度学习平台技术演进
 
 

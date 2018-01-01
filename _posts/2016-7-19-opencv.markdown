@@ -216,6 +216,14 @@ https://mp.weixin.qq.com/s/VEAUFT98LkuW573p1h5YvQ
 
 Android NDK层编译OpenCV代码开发详解
 
+https://mp.weixin.qq.com/s/-u27qstEz0mr-WJPaOHVzg
+
+OpenCV中积分图介绍与应用
+
+https://mp.weixin.qq.com/s/ZtBW1Mh4WPVNSSvOZ3C1yw
+
+OpenCV中导向滤波介绍与应用
+
 ## 论文
 
 《Moving Gradients: A Path-Based Method for Plausible Image Interpolation》：视频帧插值算法

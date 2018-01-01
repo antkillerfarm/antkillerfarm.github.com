@@ -1,10 +1,20 @@
 ---
 layout: post
-title:  深度学习（二十）——Fast Image Processing, 图像超分辨率算法
+title:  深度学习（二十）——Fast Image Processing, 图像超分辨率算法, SRCNN
 category: DL 
 ---
 
 ## DenseNet（续）
+
+### DenseNet的优点
+
+**省参数。**在 ImageNet 分类数据集上达到同样的准确率，DenseNet 所需的参数量不到 ResNet 的一半。对于工业界而言，小模型可以显著地节省带宽，降低存储开销。
+
+**省计算。**达到与 ResNet 相当的精度，DenseNet 所需的计算量也只有 ResNet 的一半左右。
+
+**抗过拟合。**DenseNet 具有非常好的抗过拟合性能，尤其适合于训练数据相对匮乏的应用。这一点从论文中 DenseNet 在不做数据增强（data augmentation）的 CIFAR 数据集上的表现就能看出来。
+
+由于DenseNet不容易过拟合，在数据集不是很大的时候表现尤其突出。在一些图像分割和物体检测的任务上，基于DenseNet的模型往往可以省略在ImageNet上的预训练，直接从随机初始化的模型开始训练，最终达到相同甚至更好的效果。由于在很多应用中实际数据跟预训练的ImageNet自然图像存在明显的差别，这种不需要预训练的方法在医学图像，卫星图像等任务上都具有非常广阔的应用前景。
 
 ### DenseNet的优化问题
 
@@ -131,10 +141,47 @@ ML时代的代表算法还有：
 >http://yima.csl.illinois.edu/
 
 这篇论文提出的算法，在形式上和后文这些DL算法已经非常类似了，也是基于HR和LR配对的有监督训练。区别只在于这篇论文使用矩阵的稀疏表示来拟合SR函数，而DL算法使用神经网络拟合SR函数。前者是线性变换，而后者是非线性变换。
+## 参考
 
-## SRCNN
+https://zhuanlan.zhihu.com/p/25532538
 
-SRCNN是汤晓鸥小组的Chao Dong的作品。
+深度学习在图像超分辨率重建中的应用
+
+https://zhuanlan.zhihu.com/p/25201511
+
+深度对抗学习在图像分割和超分辨率中的应用
+
+https://mp.weixin.qq.com/s/uK0L5RV0bB2Jnr5WCZasfw
+
+深度学习在单图像超分辨率上的应用：SRCNN、Perceptual loss、SRResNet
+
+https://mp.weixin.qq.com/s/KxQ-GRnEYEdmS2H-DHIHOg
+
+南京理工大学ICCV 2017论文：图像超分辨率模型MemNet
+
+https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
+
+NTIRE2017夺冠论文：用于单一图像超分辨率的增强型深度残差网络
+
+https://www.zhihu.com/question/25401250
+
+如何通过多帧影像进行超分辨率重构？
+
+https://www.zhihu.com/question/38637977
+
+超分辨率重建还有什么可以研究的吗？
+
+https://zhuanlan.zhihu.com/p/25912465
+
+胎儿MRI高分辨率重建技术：现状与趋势
+
+https://mp.weixin.qq.com/s/i-im1sy6MNWP1Fmi5oWMZg
+
+华为推出新型HiSR：移动端的超分辨率算法
+
+# SRCNN
+
+SRCNN（Super-Resolution CNN）是汤晓鸥小组的Chao Dong的作品。
 
 >汤晓鸥，中国科学技术大学本科（1990）+罗切斯特大学硕士（1991）+麻省理工学院博士（1996）。香港中文大学教授，商汤科技联合创始人。
 
@@ -166,47 +213,5 @@ $$PSNR=10\log_{10}\left(\frac{(2^n-1)^2}{MSE}\right)$$
 其中，MSE表示当前图像X和参考图像Y的均方误差（Mean Square Error），H、W分别为图像的高度和宽度；n为每像素的比特数，一般取8，即像素灰阶数为256. PSNR的单位是dB，数值越大表示失真越小。
 
 虽然PSNR和人眼的视觉特性并不完全一致，但是一般认为PSNR在38以上的时候，人眼就无法区分两幅图片了。
-
-**SSIM（structural similarity， 结构相似性）**，也是一种全参考的图像质量评价指标，它分别从亮度、对比度、结构三方面度量图像相似性。
-
-$$\mu_X=\frac{1}{H\times W}\sum_{i=1}^H\sum_{j=1}^WX(i,j),\, \sigma_X^2=\frac{1}{H\times W}\sum_{i=1}^H\sum_{j=1}^W(X(i,j)-\mu_X)^2$$
-
-$$\sigma_{XY}=\frac{1}{H\times W}\sum_{i=1}^H\sum_{j=1}^W((X(i,j)-\mu_X)(Y(i,j)-\mu_Y))$$
-
-$$l(X,Y)=\frac{2\mu_X\mu_Y+C_1}{\mu_X^2+\mu_Y^2+C_1},\, c(X,Y)=\frac{2\sigma_X\sigma_Y+C_2}{\sigma_X^2+\sigma_Y^2+C_2},\, s(X,Y)=\frac{\sigma_{XY}+C_3}{\sigma_X\sigma_Y+C_3}$$
-
-$$SSIM(X,Y)=l(X,Y)\cdot c(X,Y)\cdot s(X,Y)$$
-
-$$C_1,C_2,C_3$$为常数，为了避免分母为0的情况，通常取$$C_1=(K_1\cdot L)^2, C_2=(K_2\cdot L)^2, C_3=C_2/2$$，一般地$$K1=0.01, K2=0.03, L=255$$。
-
-SSIM取值范围[0,1]，值越大，表示图像失真越小。
-
-在实际应用中，可以利用滑动窗将图像分块，令分块总数为N，考虑到窗口形状对分块的影响，采用高斯加权计算每一窗口的均值、方差以及协方差，然后计算对应块的结构相似度SSIM，最后将平均值作为两图像的结构相似性度量，即平均结构相似性MSSIM：
-
-$$MSSIM(X,Y)=\frac{1}{N}\sum_{k=1}^NSSIM(x_k,y_k)$$
-
-参考：
-
-http://www.cnblogs.com/vincent2012/archive/2012/10/13/2723152.html
-
-PSNR和SSIM
-
-## DRCN
-
-DRCN是韩国首尔国立大学的作品。
-
-论文：
-
-《Deeply-Recursive Convolutional Network for Image Super-Resolution》
-
-SRCNN的层数较少，同时感受野也较小（13x13）。DRCN提出使用更多的卷积层增加网络感受野（41x41），同时为了避免过多网络参数，该文章提出使用递归神经网络（RNN）。网络的基本结构如下：
-
-![](/images/img2/DRCN.jpg)
-
-与SRCNN类似，该网络分为三个模块，第一个是Embedding network，相当于特征提取，第二个是Inference network, 相当于特征的非线性变换，第三个是Reconstruction network,即从特征图像得到最后的重建结果。其中的Inference network是一个递归网络，即数据循环地通过该层多次。将这个循环进行展开，就等效于使用同一组参数的多个串联的卷积层，如下图所示：
-
-![](/images/img2/DRCN_2.jpg)
-
-其中的$$H_1$$到$$H_D$$是D个共享参数的卷积层。DRCN将每一层的卷积结果都通过同一个Reconstruction Net得到一个重建结果，从而共得到D个重建结果，再把它们加权平均得到最终的输出。另外，受到ResNet的启发，DRCN通过skip connection将输入图像与H_d的输出相加后再作为Reconstruction Net的输入，相当于使Inference Net去学习高分辨率图像与低分辨率图像的差，即恢复图像的高频部分。
 
 

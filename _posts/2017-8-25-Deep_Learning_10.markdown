@@ -4,6 +4,30 @@ title:  深度学习（十）——李飞飞，花式卷积
 category: DL 
 ---
 
+# fine-tuning（续）
+
+参考：
+
+https://zhuanlan.zhihu.com/p/22624331
+
+fine-tuning:利用已有模型训练其他数据集
+
+http://www.cnblogs.com/louyihang-loves-baiyan/p/5038758.html
+
+Caffe fine-tuning微调网络
+
+http://blog.csdn.net/sinat_26917383/article/details/54999868
+
+caffe中fine-tuning模型三重天（函数详解、框架简述）+微调技巧
+
+http://yongyuan.name/blog/layer-selection-and-finetune-for-cbir.html
+
+图像检索：layer选择与fine-tuning性能提升验证
+
+h1ttps://www.zhihu.com/question/49534423
+
+迁移学习与fine-tuning有什么区别？
+
 # 李飞飞
 
 ## AI大佬
