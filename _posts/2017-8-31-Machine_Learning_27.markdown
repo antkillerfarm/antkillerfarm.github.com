@@ -4,7 +4,25 @@ title:  机器学习（二十七）——Probabilistic Robotics
 category: ML 
 ---
 
-## 重复子问题（续）
+# 动态规划（续）
+
+## 重复子问题
+
+![](/images/article/Fibonacci_dynamic_programming.png)
+
+重复子问题是指通过相同的子问题可以解决不同的较大问题。例如，在Fibonacci序列中，F3 = F1 + F2和F4 = F2 + F3都包含计算F2。由于计算F5需要计算F3和F4，一个比较笨的计算F5的方法可能会重复计算F2两次甚至两次以上。
+
+为避免重复计算，可将已经得到的子问题的解保存起来，当我们要解决相同的子问题时，重用即可。该方法即所谓的**缓存（memoization）**。
+
+动态规划通常采用以下两种方式中的一种：
+
+**自顶向下**：将问题划分为若干子问题，求解这些子问题并保存结果以免重复计算。该方法将递归和缓存结合在一起。
+
+**自下而上**：先行求解所有可能用到的子问题，然后用其构造更大问题的解。该方法在节省堆栈空间和减少函数调用数量上略有优势，但有时想找出给定问题的所有子问题并不那么直观。
+
+需要注意的是：动态规划更多的看作是一种解决问题的方法论，而非具体的数值算法，因此，很多不同领域的算法都可看做是动态规划算法的实例。参考文献中，就列出了不少这样的算法。显然，动态规划是一种**迭代（Iteration）算法**。
+
+由前文的描述可知，MDP正好具备overlapping subproblems和optimal substructure的特性，因此也可以通过DP求解。
 
 在继续下文之前，推荐一波资源：
 
@@ -219,64 +237,4 @@ http://www.docin.com/p-976961701.html
 《自适应动态导航定位》，杨元喜著。
 
 >注：杨元喜，1956年生，大地测量学家。中国科学院院士。
-
-# ACBM算法
-
-ACBM算法是在AC（Aho-Corasick）自动机（UNIX上的fgrep命令使用的就是AC算法）的基础之上，引入了BM（Boyer-Moore）算法的多模扩展，实现的高效的多模匹配。和AC自动机不同的是，ACBM算法不需要扫描目标文本串中的每一个字符，可以利用本次匹配不成功的信息，跳过尽可能多的字符，实现高效匹配。
-
->注： Alfred Vaino Aho，1941年生，加拿大计算机科学家。普林斯顿大学博士，长期供职于贝尔实验室，后为哥伦比亚大学教授。egrep和fgrep的发明人，AWK语言的联合发明人。著有《Principles of Compiler Design Compilers: Principles, Techniques, and Tools》。该书由于封面上有龙图案，又被称为“龙书”，是编译原理方面的权威书籍。2003年获IEEE John von Neumann Medal。
-
->Margaret John Corasick，贝尔实验室研究员。
-
->Robert Stephen Boyer，德克萨斯大学教授。
-
->J Strother Moore，德克萨斯大学教授。Boyer的好朋友，两人的绝大多数成就都是合作完成的。
-
-参见：
-
-http://blog.csdn.net/sealyao/article/details/6817944
-
-ACBM算法
-
-https://mp.weixin.qq.com/s/yVOgAuD9hEYAMdLyvae2VA
-
-最长公共子序列与最长公共子串
-
-https://mp.weixin.qq.com/s/8rP3fF9iVnplhkFmxuj6fw
-
-一文读懂KMP算法
-
-# 高斯过程回归
-
-从大的分类来说，机器学习的算法可分为两类：
-
-1.定义一个模型，用训练数据训练模型的参数，然后用训练好的模型进行预测。这种方法的缺点在于，预测效果和模型与样本的匹配程度有关。比如对非线性样本采用线性模型，其预测效果通常不会太好。但是增加模型的复杂度，又会导致过拟合。
-
-2.定义一个函数分布，赋予每一种可能的函数一个先验概率，可能性越大的函数，其先验概率越大。但是可能的函数往往为一个不可数集，即有无限个可能的函数，随之引入一个新的问题：如何在有限的时间内对这些无限的函数进行选择？一种有效解决方法就是高斯过程回归(Gaussian process regression，GPR)。
-
->注：Radford M. Neal，1956年生，加拿大科学家。多伦多大学博士（1995）和教授。贝叶斯神经网络的发明人。导师为Geoffrey Hinton。   
->个人主页：http://www.cs.toronto.edu/~radford/
-
->Danie G. Krige，1919～2013，南非矿业工程师和统计学家，威特沃特斯兰德大学教授。地理统计学早期的代表人物之一。
-
-http://www.cnblogs.com/hxsyl/p/5229746.html
-
-浅谈高斯过程回归
-
-https://mqshen.gitbooks.io/prml/content/Chapter6/gaussian/gaussian_processes_regression.html
-
-Gaussian Processes Regression
-
-http://www.gaussianprocess.org/gpml/chapters/RW.pdf
-
-Gaussian Processes for Machine Learning
-
-http://people.cs.umass.edu/~wallach/talks/gp_intro.pdf
-
-Introduction to Gaussian Process Regression
-
-http://wenku.baidu.com/view/72f80113915f804d2b16c173.html
-
-高斯过程回归方法综述
-
 

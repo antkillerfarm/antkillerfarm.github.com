@@ -352,6 +352,9 @@ https://mp.weixin.qq.com/s/exUYS2v5VyRaMdFylWlobw
 
 用循环神经网络进行文件无损压缩：斯坦福大学提出DeepZip
 
+https://mp.weixin.qq.com/s/DwY0oGu-G30Szs-ArI5WaQ
+
+程明明：面向弱监督的图像理解
 
 
 

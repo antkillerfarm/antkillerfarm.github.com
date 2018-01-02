@@ -1,10 +1,43 @@
 ---
 layout: post
-title:  深度学习（二十一）——DRCN, VDSR, ESPCN, FSRCNN, VESPCN, SRGAN, DemosaicNet
+title:  深度学习（二十一）——SRCNN, DRCN, VDSR, ESPCN, FSRCNN
 category: DL 
 ---
 
-# SRCNN（续）
+# SRCNN
+
+SRCNN（Super-Resolution CNN）是汤晓鸥小组的Chao Dong的作品。
+
+>汤晓鸥，中国科学技术大学本科（1990）+罗切斯特大学硕士（1991）+麻省理工学院博士（1996）。香港中文大学教授，商汤科技联合创始人。
+
+论文：
+
+《Learning a Deep Convolutional Network for Image Super-Resolution》
+
+![](/images/article/SRCNN.jpg)
+
+该方法对于一个低分辨率图像，先使用双三次（bicubic）插值将其放大到目标大小，再通过三层卷积网络做非线性映射，得到的结果作为高分辨率图像输出。作者将三层卷积的结构解释成与传统SR方法对应的三个步骤：图像块的提取和特征表示，特征非线性映射和最终的重建。
+
+三个卷积层使用的卷积核的大小分为为9x9, 1x1和5x5，前两个的输出特征个数分别为64和32。
+
+以下是论文的效果表格：
+
+![](/images/img2/SRCNN.jpg)
+
+>吐槽一下，这种表格属于论文必须有，但是却没什么营养的部分，且不乏造假的例子。原因很简单，一个idea，如果没有好效果，paper连发都发不了。但是，没有好效果的idea，未必没有价值，不说是否能启发人们的思维，至少能让后来者，不用再掉到同一个坑里。   
+>比如化学领域，失败的实验远远多于成功的实验。在计算能力不发达的时代，人们主要关注成功的案例，但现在大家逐渐意识到：失败的案例才是更大的财富。
+
+这里对其中的指标做一个简介。
+
+**PSNR（Peak Signal to Noise Ratio，峰值信噪比）**
+
+$$MSE=\frac{1}{H\times W}\sum_{i=1}^H\sum_{j=1}^W(X(i,j)-Y(i,j))^2$$
+
+$$PSNR=10\log_{10}\left(\frac{(2^n-1)^2}{MSE}\right)$$
+
+其中，MSE表示当前图像X和参考图像Y的均方误差（Mean Square Error），H、W分别为图像的高度和宽度；n为每像素的比特数，一般取8，即像素灰阶数为256. PSNR的单位是dB，数值越大表示失真越小。
+
+虽然PSNR和人眼的视觉特性并不完全一致，但是一般认为PSNR在38以上的时候，人眼就无法区分两幅图片了。
 
 **SSIM（structural similarity， 结构相似性）**，也是一种全参考的图像质量评价指标，它分别从亮度、对比度、结构三方面度量图像相似性。
 
@@ -180,46 +213,4 @@ super-resolution技术日记——FSRCNN
 
 一是纠正相邻帧的位移偏差，即先通过Motion estimation估计出位移，然后利用位移参数对相邻帧进行空间变换，将二者对齐。二是把对齐后的相邻若干帧叠放在一起，当做一个三维数据，在低分辨率的三维数据上使用三维卷积，得到的结果大小为$$r^2\times H\times W$$。三是利用ESPCN的思想将该卷积结果重新排列得到大小为$$1\times rH\times rW$$的高分辨率图像。
 
-Motion estimation这个过程可以通过传统的光流算法来计算，DeepMind提出了一个Spatial Transformer Networks, 通过CNN来估计空间变换参数。VESPCN使用了这个方法，并且使用多尺度的Motion estimation：先在比输入图像低的分辨率上得到一个初始变换，再在与输入图像相同的分辨率上得到更精确的结果，如下图所示：
-
-![](/images/img2/VESPCN_2.png)
-
-由于SR重建和相邻帧之间的位移估计都通过神经网路来实现，它们可以融合在一起进行端到端的联合训练。为此，VESPCN使用的损失函数如下：
-
-$$(\theta^*,\theta_\Delta^*)=\mathop{\arg\min}_{\theta,\theta_\Delta}\|I_t^{HR}-f(I_{t-1:t+1}^{'LR};\theta)\|_2^2
-\\+\sum_{i=\pm 1}[\beta\|I_{t+i}^{'LR}-I_t^{LR}\|_2^2+\lambda\mathcal{H}(\partial_{x,y}\Delta_{t+i})]$$
-
-第一项是衡量重建结果和金标准之间的差异，第二项是衡量相邻输入帧在空间对齐后的差异，第三项是平滑化空间位移场。
-
-# SRGAN
-
-SRGAN还是ESPCN原班人马的作品。
-
-论文：
-
-《Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network》
-
-SRGAN将生成式对抗网络（GAN)用于SR问题。其出发点是传统的方法一般处理的是较小的放大倍数，当图像的放大倍数在4以上时，很容易使得到的结果显得过于平滑，而缺少一些细节上的真实感。因此SRGAN使用GAN来生成图像中的细节。
-
-传统的方法使用的代价函数一般是最小均方差（MSE），即
-
-$$l_{MSE}^{SR}=\frac{1}{}$$
-
-![](/images/img2/SRGAN.jpg)
-
-# DemosaicNet
-
-论文：
-
-《Deep Joint Demosaicking and Denoising》
-
-代码：
-
-https://github.com/mgharbi/demosaicnet
-
-
-
-![](/images/img2/DemosaicNet.png)
-
-![](/images/img2/ISP_pipeline_2.png)
 

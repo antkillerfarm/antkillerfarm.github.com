@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十）——Fast Image Processing, 图像超分辨率算法, SRCNN
+title:  深度学习（二十）——Fast Image Processing, 图像超分辨率算法
 category: DL 
 ---
 
@@ -38,13 +38,31 @@ ResNets、HighwayNets、DenseNets：用TensorFlow实现超深度神经网络
 
 ## Dual Path Networks
 
+DPN是冯佳时和颜水成团队的Yunpeng Chen的作品。
+
+>冯佳时，中国科学技术大学自动化系学士，新加坡国立大学电子与计算机工程系博士。现任新加坡国立大学电子与计算机工程系助理教授。
+
 论文：
 
 《Dual Path Networks》
 
 代码：
 
-https://github.com/Queequeg92/DualPathNet
+https://github.com/cypw/DPNs
+
+![](/images/img2/DPN.png)
+
+上图展示的是ResNet和DenseNet的示意图。图中用线填充的柱状体，表示的是主干结点的tensor的大小。
+
+ResNet由于跨层和主干之间是element-wise的加法运算，因此每个主干结点的tensor都是一样大的。
+
+而DenseNet的跨层和主干之间是Concatenation运算，因此主干越往下，tensor越大。
+
+
+
+![](/images/img2/DPN_2.png)
+
+参考：
 
 http://blog.csdn.net/scutlihaoyu/article/details/75645551
 
@@ -197,40 +215,5 @@ https://zhuanlan.zhihu.com/p/25912465
 https://mp.weixin.qq.com/s/i-im1sy6MNWP1Fmi5oWMZg
 
 华为推出新型HiSR：移动端的超分辨率算法
-
-# SRCNN
-
-SRCNN（Super-Resolution CNN）是汤晓鸥小组的Chao Dong的作品。
-
->汤晓鸥，中国科学技术大学本科（1990）+罗切斯特大学硕士（1991）+麻省理工学院博士（1996）。香港中文大学教授，商汤科技联合创始人。
-
-论文：
-
-《Learning a Deep Convolutional Network for Image Super-Resolution》
-
-![](/images/article/SRCNN.jpg)
-
-该方法对于一个低分辨率图像，先使用双三次（bicubic）插值将其放大到目标大小，再通过三层卷积网络做非线性映射，得到的结果作为高分辨率图像输出。作者将三层卷积的结构解释成与传统SR方法对应的三个步骤：图像块的提取和特征表示，特征非线性映射和最终的重建。
-
-三个卷积层使用的卷积核的大小分为为9x9, 1x1和5x5，前两个的输出特征个数分别为64和32。
-
-以下是论文的效果表格：
-
->吐槽一下，这种表格属于论文必须有，但是却没什么营养的部分，且不乏造假的例子。原因很简单，一个idea，如果没有好效果，paper连发都发不了。但是，没有好效果的idea，未必没有价值，不说是否能启发人们的思维，至少能让后来者，不用再掉到同一个坑里。   
->比如化学领域，失败的实验远远多于成功的实验。在计算能力不发达的时代，人们主要关注成功的案例，但现在大家逐渐意识到：失败的案例才是更大的财富。
-
-![](/images/img2/SRCNN.jpg)
-
-这里对其中的指标做一个简介。
-
-**PSNR（Peak Signal to Noise Ratio，峰值信噪比）**
-
-$$MSE=\frac{1}{H\times W}\sum_{i=1}^H\sum_{j=1}^W(X(i,j)-Y(i,j))^2$$
-
-$$PSNR=10\log_{10}\left(\frac{(2^n-1)^2}{MSE}\right)$$
-
-其中，MSE表示当前图像X和参考图像Y的均方误差（Mean Square Error），H、W分别为图像的高度和宽度；n为每像素的比特数，一般取8，即像素灰阶数为256. PSNR的单位是dB，数值越大表示失真越小。
-
-虽然PSNR和人眼的视觉特性并不完全一致，但是一般认为PSNR在38以上的时候，人眼就无法区分两幅图片了。
 
 

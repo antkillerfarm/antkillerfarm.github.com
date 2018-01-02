@@ -346,7 +346,11 @@ Long-term Recurrent Convolutional Networks是LSTM的一种应用方式，它结�
 
 由于普通LSTM计算步骤中，很多当前时刻的计算都依赖$$h_{t-1}$$的值，导致整个网络的计算无法并行化。SRU针对这一点去掉了当前时刻计算对于$$h_{t-1}$$的依赖，而仅保留$$C_{t-1}$$（这个计算较为廉价）以记忆信息，大大改善了整个RNN网络计算的并行性。
 
-参考：
+## 《Neural Machine Translation in Linear Time》
+
+该论文是Deepmind的作品，它提出的ByteNet，计算复杂度为线性，也是LSTM的优化方案之一。
+
+## 参考
 
 https://mp.weixin.qq.com/s/4IHzOAvNhHG9c8GP0zXVkQ
 
