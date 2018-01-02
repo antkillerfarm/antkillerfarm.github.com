@@ -246,10 +246,6 @@ https://mp.weixin.qq.com/s/lNYKzNU6VcT7orPCotbUdg
 
 用机器学习检测异常点击流
 
-https://mp.weixin.qq.com/s/5v80Qz2nEfoAig0ft_HzaA
-
-Kaggle求生
-
 https://mp.weixin.qq.com/s/rCCYmwmwodWKS0ZG4COPNg
 
 第四范式戴文渊：机器学习教科书的7大经典问题
@@ -301,10 +297,6 @@ https://mp.weixin.qq.com/s/XuoeOqGT_mJcFP08ZLq38g
 https://mp.weixin.qq.com/s/Fa7P3v969JRr6OOAyrGptA
 
 数据驱动决策的13种思维
-
-https://mp.weixin.qq.com/s/K3EVwRFBJufXK5QKSQsPbQ
-
-这是一份为数据科学初学者准备的Kaggle竞赛指南
 
 https://mp.weixin.qq.com/s/g1PWYFvxyoEZ8uX_GBwKSQ
 

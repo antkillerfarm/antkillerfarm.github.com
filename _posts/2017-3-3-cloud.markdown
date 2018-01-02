@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  云计算论文集, Spark
+title:  云计算论文集, Spark, Fedora
 category: AI 
 ---
 
@@ -201,38 +201,50 @@ https://mp.weixin.qq.com/s/vM5DM6CEVuKjcWBxZZSbhA
 
 既生Mahout，何生Spark MLlib？
 
-# NLP参考资源
+# Fedora
 
-https://mp.weixin.qq.com/s/7yi67lPjseigeaqTD269mQ
+Fedora作为主要的Linux发行版之一，我虽然用的不多，但实际上这却是我最早接触的Linux发行版。后来换用Ubuntu，很大的原因是因为：这是Google为Android选择的开发平台。
 
-触类旁通，专业技能热度智能分析
+最近因为工作需要重新捡起了Fedora。但公司所用的版本太过古老，还是2009年的Fedora 12。所以想了一下，开始试用最新的Fedora 22。这里是使用过程中的一些操作笔记。
 
-https://mp.weixin.qq.com/s/Zo6LjGE__vQMsWyuoZm6Hw
+## 安装
 
-文本特征工程之N-Gram
+https://getfedora.org/
 
-https://mp.weixin.qq.com/s/PmdARJQC8O42huzxZNSz3A
+这是官方的下载地址。这里我用的是Workstation版本。
 
-搭建基于依存句法和短语结构句法结合的金融领域事件元素抽取系统实践
+Fedora 22的默认桌面是GNOME 3.16，这一版的外观借鉴了Mac OS X的一些设计，让人眼前一亮。
 
-http://www.cnblogs.com/qcloud1001/p/7910255.html
+## 安装软件
 
-LSF-SCNN：一种基于CNN的短文本表达模型及相似度计算的全新优化模型
+Fedora 22使用dnf替代yum。因此安装基本gcc开发环境，可用如下命令：
 
-http://www.cnblogs.com/qcloud1001/p/8074771.html
+`dnf install gcc kernel-devel patch bison flex subversion`
 
-神经张量网络（NTN）：探索文本实体之间的关系
+如果下载速度较慢的话，可以在/etc/dnf/dnf.conf最后添加：
 
-https://mp.weixin.qq.com/s/Y-skeJvkWlgkwKBpCjPaKA
+`fastestmirror=true`
 
-中文文本挖掘流程详解
+保存后，执行
 
-https://mp.weixin.qq.com/s/wqJP64BuIT27Le6esZNdLg
+{% highlight bash %}
+$ sudo dnf clean all
+$ sudo dnf makecache
+{% endhighlight %}
 
-浅析深度学习在实体识别和关系抽取中的应用
+此外，和Ubuntu一样，Fedora也有自己的网站可以查询软件包信息：
 
-https://mp.weixin.qq.com/s/Xy_jaOex72pLe4wwieKeUg
+https://admin.fedoraproject.org/pkgdb/
 
-简单有效的多标准中文分词
+## 共享文件夹
 
+我用的是VirtualBox的虚拟环境，因此除了在VirtualBox中，设置共享文件夹之外，还需对Fedora进行如下操作：
+
+1.添加用户到vboxsf中。
+
+`usermod -a -G vboxsf <your user name>`
+
+2.重启。（这一步必不可少，否则上面的配置不会生效。）
+
+这样就可以在Fedora中浏览共享文件夹了。
 

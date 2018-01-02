@@ -302,6 +302,20 @@ https://www.leiphone.com/news/201502/QM7LdSN874dWXFLo.html
 
 带你了解世界最先进的手势识别技术
 
+# LCNN
+
+论文：
+
+《LCNN: Lookup-based Convolutional Neural Network》
+
+代码：
+
+https://github.com/hessamb/lcnn
+
+http://blog.csdn.net/feynman233/article/details/69785592
+
+LCNN论文阅读笔记
+
 # NN的INT8计算
 
 ## 概述

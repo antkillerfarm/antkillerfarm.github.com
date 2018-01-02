@@ -353,6 +353,10 @@ http://blog.csdn.net/icvpr/article/details/12342159
 
 局部敏感哈希(Locality-Sensitive Hashing, LSH)方法介绍
 
+https://mp.weixin.qq.com/s/zQJve_w5OoM6u-WcSWArdQ
+
+神速Hash
+
 http://www.cnblogs.com/wentingtu/archive/2012/03/13/2393993.html
 
 Learning to Rank入门小结

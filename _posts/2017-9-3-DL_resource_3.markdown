@@ -424,4 +424,9 @@ https://mp.weixin.qq.com/s/wFfKcwLu6fmnIn-r_QL7Lw
 
 完全云端运行：使用谷歌CoLaboratory训练神经网络
 
+https://mp.weixin.qq.com/s/-3Gmmk28anznxtg1TWrluw
+
+Parris：机器学习算法自动化训练工具
+
+
 

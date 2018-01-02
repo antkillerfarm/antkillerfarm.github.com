@@ -259,7 +259,19 @@ https://github.com/antkillerfarm/box2d/tree/master/Box2D/Documentation
 
 （PS：Google Code即将关闭的消息，相信圈子里的朋友，应该都知道了吧。）
 
+## 2015.6
+
+整个手册，我大概花了1个月的时间（2015.3）翻译完成。不久我就发现作者Erin Catto已经将项目迁移至github：
+
+https://github.com/erincatto/Box2D
+
+于是给他提了一个添加手册中文版的Pull request（2015.4）。Erin Catto在2015.6的时候，接受了这个Pull request。于是我翻译的文档便正式成为了官方文档。这大概也算是我对开源社区最大的贡献了。
+
+## 参考
+
 http://blog.csdn.net/complex_ok/article/details/6723390
+
+Box2D v2.1.0用户手册翻译
 
 # cocos2d-x主循环
 
@@ -326,6 +338,14 @@ $$
 空格：\<space>，<space>表示键盘上的空格键。
 
 维基百科中出现的公式，可以在编辑界面中获得TeX代码。
+
+## \mathop
+
+$$\mathop{\arg\min}_{\theta,\theta_\Delta}$$
+
+$${\arg\min}_{\theta,\theta_\Delta}$$
+
+$$\arg\min_{\theta,\theta_\Delta}$$
 
 ## 参考
 

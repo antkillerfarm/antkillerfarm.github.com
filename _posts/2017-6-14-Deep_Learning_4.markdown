@@ -172,6 +172,10 @@ https://mp.weixin.qq.com/s/UtfidoBCJ0Wjpnl_C1a7iw
 
 浅谈向量化与Hash-Trick
 
+https://mp.weixin.qq.com/s/0JmB0sMUVsiuwrVObN_10g
+
+浙江大学提出设计网络嵌入算法的度惩罚原则，可有效保留无标度特性
+
 ## 参考
 
 http://www.cnblogs.com/iloveai/p/word2vec.html

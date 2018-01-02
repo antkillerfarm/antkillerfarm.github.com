@@ -336,12 +336,22 @@ https://mp.weixin.qq.com/s/hap6MF7cMgXEEt_-DKAa7Q
 
 深度解读：深度学习在IoT大数据和流分析中的应用
 
-https://mp.weixin.qq.com/s/A1pbiU5PA9Owe69lGX9afw
-
-活体识别告诉你为什么照片无法破解人脸系统
-
 https://mp.weixin.qq.com/s/nzlmt5YZtGqWYw7eRqy3cg
 
 Structural Learning with Amortized Inference
+
+https://mp.weixin.qq.com/s/uK7oQUvuatsCK6WPas3Igg
+
+AI与深度学习重点回顾：Denny Britz眼中的2017
+
+https://mp.weixin.qq.com/s/vCIpaFUTYggzN9YWs14atw
+
+让遥感图像活起来：遥感图像描述生成的模型与数据集探索
+
+https://mp.weixin.qq.com/s/exUYS2v5VyRaMdFylWlobw
+
+用循环神经网络进行文件无损压缩：斯坦福大学提出DeepZip
+
+
 
 

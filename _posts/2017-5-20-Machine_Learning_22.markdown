@@ -138,6 +138,14 @@ https://mp.weixin.qq.com/s/NwVGkAcoDmyXKrYFUaK2Bw
 
 如何在机器学习竞赛中更胜一筹？
 
+https://mp.weixin.qq.com/s/5v80Qz2nEfoAig0ft_HzaA
+
+Kaggle求生
+
+https://mp.weixin.qq.com/s/K3EVwRFBJufXK5QKSQsPbQ
+
+这是一份为数据科学初学者准备的Kaggle竞赛指南
+
 https://mp.weixin.qq.com/s/hf4IOAayS29i6GB9m4GHcA
 
 全自动机器学习：ML工程师屠龙利器
@@ -157,6 +165,10 @@ https://mp.weixin.qq.com/s/Nbwii7Di_h5Ewy5p5xzBdQ
 http://automl.info/
 
 某牛的blog
+
+https://mp.weixin.qq.com/s/gXkD2PPNRhZGcXDxDXRAiQ
+
+由0到1走入Kaggle-入门指导
 
 # KNN
 

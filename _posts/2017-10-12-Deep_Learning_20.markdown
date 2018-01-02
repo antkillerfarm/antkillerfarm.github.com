@@ -36,6 +36,24 @@ https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2651988934&idx=2&sn=0e5ffa
 
 ResNets、HighwayNets、DenseNets：用TensorFlow实现超深度神经网络
 
+## Dual Path Networks
+
+论文：
+
+《Dual Path Networks》
+
+代码：
+
+https://github.com/Queequeg92/DualPathNet
+
+http://blog.csdn.net/scutlihaoyu/article/details/75645551
+
+《Dual Path Networks》笔记
+
+http://www.cnblogs.com/mrxsc/p/7693316.html
+
+Dual Path Networks
+
 # Fast Image Processing
 
 ![](/images/article/FIP.png)
@@ -141,6 +159,7 @@ ML时代的代表算法还有：
 >http://yima.csl.illinois.edu/
 
 这篇论文提出的算法，在形式上和后文这些DL算法已经非常类似了，也是基于HR和LR配对的有监督训练。区别只在于这篇论文使用矩阵的稀疏表示来拟合SR函数，而DL算法使用神经网络拟合SR函数。前者是线性变换，而后者是非线性变换。
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/25532538

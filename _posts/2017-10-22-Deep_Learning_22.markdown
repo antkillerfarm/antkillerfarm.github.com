@@ -208,6 +208,12 @@ http://blog.csdn.net/shuzfan/article/details/50358809
 
 人脸检测——CascadeCNN
 
+## 人脸年龄识别
+
+https://www.openu.ac.il/home/hassner/projects/cnn_agegender/
+
+Age and Gender Classification using Convolutional Neural Networks
+
 ## 参考
 
 http://www.cnblogs.com/pandaroll/p/6590339.html
@@ -353,5 +359,13 @@ https://mp.weixin.qq.com/s/CvdeV5xgUF0kStJQdRst0w
 https://mp.weixin.qq.com/s/YRsVi09u3W0aQMdsR5KY4Q
 
 腾讯AI Lab提出Face R-FCN与Face CNN，刷新人脸检测与识别两大测评记录
+
+https://mp.weixin.qq.com/s/A1pbiU5PA9Owe69lGX9afw
+
+活体识别告诉你为什么照片无法破解人脸系统
+
+https://mp.weixin.qq.com/s/zyMIRGig-m732rvraPKxwA
+
+单样本学习：使用孪生神经网络进行人脸识别
 
 

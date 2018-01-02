@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  linux学习心得（二）, Fedora, diff&patch, bash, SWIG, BBR
+title:  linux学习心得（二）, diff&patch, bash, SWIG, BBR
 category: linux 
 ---
 
@@ -304,53 +304,6 @@ http://os.51cto.com/art/201605/511423.htm
 
 Linux用户宝典：用于下载的十大命令行工具
 
-# Fedora
-
-Fedora作为主要的Linux发行版之一，我虽然用的不多，但实际上这却是我最早接触的Linux发行版。后来换用Ubuntu，很大的原因是因为：这是Google为Android选择的开发平台。
-
-最近因为工作需要重新捡起了Fedora。但公司所用的版本太过古老，还是2009年的Fedora 12。所以想了一下，开始试用最新的Fedora 22。这里是使用过程中的一些操作笔记。
-
-## 安装
-
-https://getfedora.org/
-
-这是官方的下载地址。这里我用的是Workstation版本。
-
-Fedora 22的默认桌面是GNOME 3.16，这一版的外观借鉴了Mac OS X的一些设计，让人眼前一亮。
-
-## 安装软件
-
-Fedora 22使用dnf替代yum。因此安装基本gcc开发环境，可用如下命令：
-
-`dnf install gcc kernel-devel patch bison flex subversion`
-
-如果下载速度较慢的话，可以在/etc/dnf/dnf.conf最后添加：
-
-`fastestmirror=true`
-
-保存后，执行
-
-{% highlight bash %}
-$ sudo dnf clean all
-$ sudo dnf makecache
-{% endhighlight %}
-
-此外，和Ubuntu一样，Fedora也有自己的网站可以查询软件包信息：
-
-https://admin.fedoraproject.org/pkgdb/
-
-## 共享文件夹
-
-我用的是VirtualBox的虚拟环境，因此除了在VirtualBox中，设置共享文件夹之外，还需对Fedora进行如下操作：
-
-1.添加用户到vboxsf中。
-
-`usermod -a -G vboxsf <your user name>`
-
-2.重启。（这一步必不可少，否则上面的配置不会生效。）
-
-这样就可以在Fedora中浏览共享文件夹了。
-
 # diff&patch
 
 diff/patch这对工具在数学上来说，diff是对2个集合求差，patch是求和。
@@ -448,5 +401,30 @@ BBR是个什么鬼？-2 外皮后的真相
 https://mp.weixin.qq.com/s/NWNMfykpJQ-LD9oV1X6zTw
 
 基于bbr拥塞控制的云盘提速实践
+
+# QUIC
+
+Quic全称quick udp internet connection，“快速 UDP 互联网连接”，是由google提出的使用udp进行多路并发传输的协议。
+
+Quic相比现在广泛应用的 http2+tcp+tls 协议有如下优势：
+
+1.减少了 TCP 三次握手及 TLS 握手时间。
+
+2.改进的拥塞控制。
+
+3.避免队头阻塞的多路复用。
+
+4.连接迁移。
+
+5.前向冗余纠错。
+
+https://mp.weixin.qq.com/s/vpz6bp3PT1IDzZervyOfqw
+
+QUIC协议原理分析
+
+https://mp.weixin.qq.com/s/_RAXrlGPeN_3D6dhJFf6Qg
+
+让互联网更快的协议，QUIC在腾讯的实践及性能优化
+
 
 

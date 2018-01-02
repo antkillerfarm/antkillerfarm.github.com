@@ -164,6 +164,10 @@ https://mp.weixin.qq.com/s/bigKoR3IX_Jvo-re9UjqUA
 
 机器学习之——自动求导
 
+https://www.jianshu.com/p/4c2032c685dc
+
+自动求导框架综述
+
 https://mp.weixin.qq.com/s/-zl2tQuzdlJd5TXIW9EPyA
 
 Google：机器学习系统，隐藏多少技术债？
