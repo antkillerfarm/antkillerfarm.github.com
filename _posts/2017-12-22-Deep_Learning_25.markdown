@@ -236,10 +236,6 @@ https://mp.weixin.qq.com/s/rzv8VCAxBQi0HsUcnLqqUA
 
 处理移动端传感器时序数据的深度学习框架：DeepSense
 
-https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg
-
-旷视科技提出新型卷积网络ShuffleNet，专为移动端设计
-
 https://mp.weixin.qq.com/s/UYk3YQmFW7-44RUojUqfGg
 
 上交大ICCV：精度保证下的新型深度网络压缩框架

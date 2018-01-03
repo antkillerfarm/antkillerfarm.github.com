@@ -382,3 +382,11 @@ http://blog.csdn.net/xizero00/article/details/51182003
 
 论文阅读：End-To-End Memory Networks
 
+https://mp.weixin.qq.com/s/jYpaljuvNf4CdlRUAgAL1w
+
+Bi-LSTM+CRF在文本序列标注中的应用
+
+https://mp.weixin.qq.com/s/OwP16MNTpFTLkpi9wnda-Q
+
+挑战深度学习与自然语言处理的极限！
+

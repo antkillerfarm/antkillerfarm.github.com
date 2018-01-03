@@ -160,6 +160,14 @@ Paper笔记：Dilated Residual Networks
 
 参考：
 
+https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg
+
+旷视科技提出新型卷积网络ShuffleNet，专为移动端设计
+
+https://mp.weixin.qq.com/s/0MvCnm46pgeMGEw-EdNv_w
+
+CNN模型之ShuffleNet
+
 https://mp.weixin.qq.com/s/tLqsWWhzUU6TkDbhnxxZow
 
 Momenta详解ImageNet 2017夺冠架构SENet

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Clojure, Python（三）, 垃圾筐
+title:  Clojure, Python（三）
 category: language 
 ---
 

@@ -274,3 +274,7 @@ https://mp.weixin.qq.com/s/Zq3ngbTAObQuIr86nkTwjQ
 
 视频换脸技术，女神都下海了吗？
 
+https://mp.weixin.qq.com/s/o-MFPt6LR_5XDpacqw754Q
+
+马里兰大学论文：可视化神经网络的损失函数
+

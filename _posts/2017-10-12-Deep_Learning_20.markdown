@@ -50,6 +50,18 @@ DPN是冯佳时和颜水成团队的Yunpeng Chen的作品。
 
 https://github.com/cypw/DPNs
 
+这篇论文首先从拓扑关系的角度分析了ResNet、DenseNet和HORNN（Higher Order RNN）之间的联系。
+
+![](/images/img2/DPN_3.png)
+
+如上所示，RNN相当于共享权值的串联的ResNet，而DenseNet则相当于并联的RNN。
+
+更进一步的，上述三者都可表述为以下通式：
+
+$$h^k=g^k\left[\sum_{t=0}^{k-1}f_t^k(h^t)\right]$$
+
+其中，$$h^t$$表示t时刻的隐层状态；索引k表示当前时刻；$$x^t$$表示t时刻的输入；$$f_t^k(⋅)$$表示特征提取；$$g^k$$表示对提取特征做输出前的变换。
+
 ![](/images/img2/DPN.png)
 
 上图展示的是ResNet和DenseNet的示意图。图中用线填充的柱状体，表示的是主干结点的tensor的大小。

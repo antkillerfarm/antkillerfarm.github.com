@@ -204,6 +204,10 @@ https://mp.weixin.qq.com/s/7E8o1TnvmAvZgB7_AWCunQ
 
 2018值得尝试的无参数全局优化新算法
 
+https://mp.weixin.qq.com/s/hK6BJGAPyg_RqqilCcf2NA
+
+全局自动优化：C++机器学习库dlib引入自动调参算法
+
 # 单分类SVM&多分类SVM
 
 原始的SVM主要用于二分类，然而稍加变化，也可用于单分类和多分类。
