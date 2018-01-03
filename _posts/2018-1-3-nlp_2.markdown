@@ -1,0 +1,38 @@
+---
+layout: post
+title:  NLP（二）
+category: AI 
+---
+
+# NLP
+
+## TextInfoExp
+
+TextInfoExp是某网友提供的自然语言处理相关实验（基于sougou数据集），包含文本特征提取（TF-IDF），文本分类，文本聚类，word2vec训练词向量及同义词词林中文词语相似度计算、文档自动摘要，信息抽取，情感分析与观点挖掘等。
+
+网址：
+
+https://github.com/Roshanson/TextInfoExp
+
+## 自然语言理解
+
+Natural language understanding(NLU)属于NLP的一个分支，属于人工智能的一个部分，用来解决机器理解人类语言的问题，属于人工智能的核心难题。
+
+![](/images/article/domain_slot.png)
+
+上图是语义理解中，最有实用价值的框架语义表示（frame semantics representation）的原理简图。
+
+参考：
+
+http://www.shuang0420.com/2017/04/27/NLP%E7%AC%94%E8%AE%B0%20-%20NLU%E4%B9%8B%E6%84%8F%E5%9B%BE%E5%88%86%E7%B1%BB/
+
+NLU之意图分类
+
+## 论文
+
+《Distant Supervision for relation extraction without labeled data》
+
+《Using Recurrent Neural Networks for Slot Filling in Spoken Language Understanding》
+
+《Convolutional Neural Networks for Sentence Classification》：TextCNN的开山之作
+

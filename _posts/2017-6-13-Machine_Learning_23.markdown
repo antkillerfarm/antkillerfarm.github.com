@@ -196,6 +196,14 @@ https://mp.weixin.qq.com/s/VVHe2msyeUTGiC7f_f0FFA
 
 一文概览深度学习中的五大正则化方法和七大优化策略
 
+https://mp.weixin.qq.com/s/qp5tJynA2uZIgv-IzJ_lrA
+
+从基础知识到实际应用，一文了解“机器学习非凸优化技术”
+
+https://mp.weixin.qq.com/s/7E8o1TnvmAvZgB7_AWCunQ
+
+2018值得尝试的无参数全局优化新算法
+
 # 单分类SVM&多分类SVM
 
 原始的SVM主要用于二分类，然而稍加变化，也可用于单分类和多分类。

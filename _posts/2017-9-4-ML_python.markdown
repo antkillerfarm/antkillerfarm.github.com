@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Machine Learning之Python篇
+title:  Machine Learning之Python篇（一）
 category: AI 
 ---
 

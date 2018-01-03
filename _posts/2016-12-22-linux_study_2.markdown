@@ -304,6 +304,24 @@ http://os.51cto.com/art/201605/511423.htm
 
 Linux用户宝典：用于下载的十大命令行工具
 
+# OpenGrok
+
+OpenGrok是一个阅读源码的Web系统。
+
+官网：
+
+http://oracle.github.io/opengrok/
+
+代码：
+
+https://github.com/oracle/opengrok
+
+参考：
+
+http://mazhuang.org/2016/12/14/rtfsc-with-opengrok/
+
+搭建大型源码阅读环境——使用 OpenGrok
+
 # diff&patch
 
 diff/patch这对工具在数学上来说，diff是对2个集合求差，patch是求和。

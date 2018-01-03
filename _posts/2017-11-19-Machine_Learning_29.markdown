@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十九）——机器学习语录, Keras, LightGBM, Parameter Server, LambdaMART
+title:  机器学习（二十九）——机器学习语录, LightGBM, Parameter Server, LambdaMART
 category: ML 
 ---
 

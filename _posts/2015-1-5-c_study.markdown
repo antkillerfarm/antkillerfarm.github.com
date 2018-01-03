@@ -165,13 +165,19 @@ C++11中引入的auto主要有两种用途：自动类型推断和返回值占�
 
 http://blog.csdn.net/huang_xw/article/details/8760403
 
+auto的使用
+
 2.引入nullprt
 
 http://blog.csdn.net/huang_xw/article/details/8764346
 
+引入nullprt
+
 3.仿函数、lambda表达式和闭包
 
 http://www.cnblogs.com/npbool/p/3434757.html
+
+C++11初探：lambda表达式和闭包
 
 4.C++、Java和C#的lambda表达式的格式
 
@@ -186,6 +192,12 @@ Java
 C#
 
 `Func<int, int, int> towParams = (x, y) => x * y`
+
+5.using，extern
+
+http://blog.csdn.net/cnsword/article/details/8034947
+
+C++11老关键字的新含义(auto, using，extern)
 
 # 添加废弃提示
 

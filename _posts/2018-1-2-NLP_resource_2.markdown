@@ -1,184 +1,333 @@
 ---
 layout: post
-title:  NLP参考资源（三）
+title:  NLP参考资源（二）
 category: resource 
 ---
 
 # NLP参考资源
 
-https://zhuanlan.zhihu.com/p/32314500
+https://mp.weixin.qq.com/s/0wMTL7x87YXiin3xkf8eJA
 
-DL实战课程推荐-从0到1构建一个Chatbot系统
+中文文本分类技术实践与分享
 
-https://mp.weixin.qq.com/s/mNG9P6hvbRIGq7f5Jx4jIw
+https://mp.weixin.qq.com/s/27Mbw2ViT8eJPJasD6tdfw
 
-Facebook开源无监督机器翻译模型和大规模训练语料
+神经混合模型：提升模型性能，显著降低困惑度
 
-https://mp.weixin.qq.com/s/GhJRebSXXq0ZFh3evAqLxw
+https://mp.weixin.qq.com/s/nIMk-xl8Wzy1ANcT3ApAng
 
-漫谈神经语言模型之中文输入法
+百度提出问答模型GNR：检索速度提高25倍
 
-https://mp.weixin.qq.com/s/HMLwjLlFXR4WM92_OnKHbA
+https://mp.weixin.qq.com/s/eDA6-BqPmjGBOPsOom0VIw
 
-基于Apache MXNet，亚马逊NMT开源框架Sockeye论文介绍
+自动组合神经网络做问答系统！
 
-https://mp.weixin.qq.com/s/rF4zKCbj3Jh8dDR1239lpA
+https://mp.weixin.qq.com/s/vt25TVX-tcurtAC63dYYNA
 
-基于双语主题模型的跨语言层次分类体系匹配
+让聊天机器人同你聊得更带劲-对话策略学习
 
-https://mp.weixin.qq.com/s/gQ9dV-IPWHTOLbI6u0D67g
+https://mp.weixin.qq.com/s/2dTCvWujgJ71Dsbm-pGcrA
 
-可解释推荐系统：身怀绝技，一招击中用户心理
+谷歌的多语种神经网络翻译系统！
 
-https://mp.weixin.qq.com/s/M_ZN0YuvegAnc2GXCZTt9Q
+https://mp.weixin.qq.com/s/AqvzxiI7cNesdGt_IfVb-w
 
-初学者指南：神经网络在自然语言处理中的应用
+Highway Networks For Sentence Classification
 
-https://mp.weixin.qq.com/s/ouNxUvWC_mxap6P5z6_dFA
+http://mp.weixin.qq.com/s/k4dxj6qTGKNyoTn1uTb_aA
 
-教聊天机器人进行多轮对话
+李航：深度学习NLP的现有优势与未来挑战
 
-https://mp.weixin.qq.com/s/fZv9FgbdQ1bWPoNdl9sF1A
+http://mp.weixin.qq.com/s/ZrFcpYf7E57j8E6zQsBexg
 
-“宝石迷阵”与信息检索
+引入秘密武器强化学习，发掘GAN在NLP领域的潜力
 
-http://www.jianshu.com/p/0273c377c34e
+https://mp.weixin.qq.com/s/0yRnBW_WWoUHInJcAeVd9A
 
-机器学习算法在文本分类中的应用综述
+基于深度学习的候选答案句抽取研究
 
-https://mp.weixin.qq.com/s/BcUB3bXrPJF0WQetWs7Law
+https://mp.weixin.qq.com/s/y39QT55RcsNAmNS6mT1SKg
 
-用深度学习解决自然语言处理中的7大问题，文本分类、语言建模、机器翻译等
+深度好奇提出文档解析框架：面向对象的神经规划
 
-https://mp.weixin.qq.com/s/GyE9qdXPGvrq12dMAf4nrQ
+https://zhuanlan.zhihu.com/p/27552230
 
-论文推荐：QA，增强学习，知识图谱，机器阅读理解
+基于Depthwise Separable Convolutions的Seq2Seq模型_SliceNet原理解析
 
-https://mp.weixin.qq.com/s/eCtqMIo3_UDxAR4fWzMjZQ
+https://mp.weixin.qq.com/s/AlxiYM5ujM9TqzcFVLXK1w
 
-站在锤子手机背后，小源科技用AI打造短信场景服务
+语义分析的一些方法(一)
 
-https://mp.weixin.qq.com/s/hkcVhyqiDW--F3QxucgEcA
+https://mp.weixin.qq.com/s/7KBtbip4JS0jQfOy_BWb3Q
 
-亚马逊开源神经机器翻译框架Sockeye：基于Apache MXNet的NMT平台
+语义分析的一些方法(二)
 
-https://mp.weixin.qq.com/s/vgejlnsBlOKMMRt-M3-d-w
+http://blog.csdn.net/malefactor/article/details/52166235
 
-深思考：实现人机多轮交互突破是攻克图灵测试的核心
+聊天机器人中对话模板的高效匹配方法
 
-https://mp.weixin.qq.com/s/rqB2COCAKsr3qvVXnhLwMg
+https://mp.weixin.qq.com/s/Cq7ivDYurS3CidvoemFfqA
 
-数据到文本任务的近期相关工作介绍
+Twitter是怎么做情感分析的？长文解读！
 
-https://mp.weixin.qq.com/s/KWWbaE2em4fEBInPoWTq8A
+https://zhuanlan.zhihu.com/p/30268946
 
-Python实现多种模型(Naive Bayes, SVM, CNN, LSTM, etc)用于推文情感分析
+从CNN视角看在自然语言处理上的应用
 
-https://mp.weixin.qq.com/s/-K3WIo64_wJb9p6C49Z5fA
+https://mp.weixin.qq.com/s/EO51mtEf6TVHGHYbZBAdZw
 
-基于属性学习和额外知识库的图像描述生成和视觉问答
+情感回复系统Babbling
 
-https://mp.weixin.qq.com/s/_klvAhH-K8tcYmamlr6FcA
-
-Logistic Regression Models分析交互式问答
-
-https://mp.weixin.qq.com/s/V3w5Iu804O6PmnBjmwCbgw
-
-常用文本特征选择
-
-https://mp.weixin.qq.com/s?__biz=MzIwMTQ4MzQwNQ==&mid=2653318072&idx=1&sn=a4f8912af0b1af816739a483f933803a
-
-NLP概念图及自然语言系统架构简说
-
-https://mp.weixin.qq.com/s/7yi67lPjseigeaqTD269mQ
-
-触类旁通，专业技能热度智能分析
-
-https://mp.weixin.qq.com/s/Zo6LjGE__vQMsWyuoZm6Hw
-
-文本特征工程之N-Gram
-
-https://mp.weixin.qq.com/s/PmdARJQC8O42huzxZNSz3A
-
-搭建基于依存句法和短语结构句法结合的金融领域事件元素抽取系统实践
-
-http://www.cnblogs.com/qcloud1001/p/7910255.html
+https://mp.weixin.qq.com/s/CGZhp1eJU0jd9dcGJzPu0w
 
 LSF-SCNN：一种基于CNN的短文本表达模型及相似度计算的全新优化模型
 
-http://www.cnblogs.com/qcloud1001/p/8074771.html
+https://zhuanlan.zhihu.com/p/30533380
 
-神经张量网络（NTN）：探索文本实体之间的关系
+Neural Response Generation——关于回复生成工作的一些总结
 
-https://mp.weixin.qq.com/s/Y-skeJvkWlgkwKBpCjPaKA
+https://mp.weixin.qq.com/s/ZexnTKHEFKPso5fhZNQfQQ
 
-中文文本挖掘流程详解
+聊天机器人中用户出行消费意图识别方法研究
 
-https://mp.weixin.qq.com/s/wqJP64BuIT27Le6esZNdLg
+https://mp.weixin.qq.com/s/HHPp0JJzpY3q0nC-DF3F3g
 
-浅析深度学习在实体识别和关系抽取中的应用
+阿里：语言卷积神经网络应用于图像标题生成的经验学习
 
-https://mp.weixin.qq.com/s/Xy_jaOex72pLe4wwieKeUg
+http://www.jianshu.com/p/ac1840abc63f
 
-简单有效的多标准中文分词
+从Quora的187个问题中学习机器学习和NLP
 
-# ACBM算法
+http://mp.weixin.qq.com/s/-o-Ky5iMA3fZIjh7kzXjew
 
-ACBM算法是在AC（Aho-Corasick）自动机（UNIX上的fgrep命令使用的就是AC算法）的基础之上，引入了BM（Boyer-Moore）算法的多模扩展，实现的高效的多模匹配。和AC自动机不同的是，ACBM算法不需要扫描目标文本串中的每一个字符，可以利用本次匹配不成功的信息，跳过尽可能多的字符，实现高效匹配。
+无监督神经机器翻译：仅需使用单语语料库
 
->注： Alfred Vaino Aho，1941年生，加拿大计算机科学家。普林斯顿大学博士，长期供职于贝尔实验室，后为哥伦比亚大学教授。egrep和fgrep的发明人，AWK语言的联合发明人。著有《Principles of Compiler Design Compilers: Principles, Techniques, and Tools》。该书由于封面上有龙图案，又被称为“龙书”，是编译原理方面的权威书籍。2003年获IEEE John von Neumann Medal。
+https://mp.weixin.qq.com/s/SVKlD0T8IkpVAKFJu-VQAg
 
->Margaret John Corasick，贝尔实验室研究员。
+胡一川：深度学习在智能助理中的应用
 
->Robert Stephen Boyer，德克萨斯大学教授。
+https://mp.weixin.qq.com/s/tGw2c0AMAZSVYddGUQDdOw
 
->J Strother Moore，德克萨斯大学教授。Boyer的好朋友，两人的绝大多数成就都是合作完成的。
+沈向洋：懂语言者得天下
 
-参见：
+https://mp.weixin.qq.com/s/DsE8X2Hgx1oYMoFUswgKkA
 
-http://blog.csdn.net/sealyao/article/details/6817944
+Raúl Garreta大神教你5步搭建机器学习文本分类器！
 
-ACBM算法
+https://mp.weixin.qq.com/s/gIRa-P-xI5DuwY1OLH38MQ
 
-https://mp.weixin.qq.com/s/yVOgAuD9hEYAMdLyvae2VA
+Facebook最新对抗学习研究：无需平行语料库完成无监督机器翻译
 
-最长公共子序列与最长公共子串
+https://mp.weixin.qq.com/s/da0M3qwtLN8el2plAQWHJQ
 
-https://mp.weixin.qq.com/s/8rP3fF9iVnplhkFmxuj6fw
+无监督式机器翻译，不需要人类干预和平行文本
 
-一文读懂KMP算法
+https://mp.weixin.qq.com/s/LdU91j8OpDR-pidzzYVtqA
 
-# 高斯过程回归
+Pointer Networks在自然语言处理领域中的应用
 
-从大的分类来说，机器学习的算法可分为两类：
+https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247484926&idx=1&sn=4e34a442c126c46bba27a7f17df3e61e
 
-1.定义一个模型，用训练数据训练模型的参数，然后用训练好的模型进行预测。这种方法的缺点在于，预测效果和模型与样本的匹配程度有关。比如对非线性样本采用线性模型，其预测效果通常不会太好。但是增加模型的复杂度，又会导致过拟合。
+聊天机器人Chatbot知识资料全集
 
-2.定义一个函数分布，赋予每一种可能的函数一个先验概率，可能性越大的函数，其先验概率越大。但是可能的函数往往为一个不可数集，即有无限个可能的函数，随之引入一个新的问题：如何在有限的时间内对这些无限的函数进行选择？一种有效解决方法就是高斯过程回归(Gaussian process regression，GPR)。
+https://mp.weixin.qq.com/s/i9AXKsd6XVxyuaTCKsAj3g
 
->注：Radford M. Neal，1956年生，加拿大科学家。多伦多大学博士（1995）和教授。贝叶斯神经网络的发明人。导师为Geoffrey Hinton。   
->个人主页：http://www.cs.toronto.edu/~radford/
+像Sheldon一样对“讽刺语言”分辨无能？别怕，MIT最新算法帮你助攻
 
->Danie G. Krige，1919～2013，南非矿业工程师和统计学家，威特沃特斯兰德大学教授。地理统计学早期的代表人物之一。
+https://mp.weixin.qq.com/s/Xe-T7EKvGDSR5GOeL4nvKg
 
-http://www.cnblogs.com/hxsyl/p/5229746.html
+从Chatbot到NER
 
-浅谈高斯过程回归
+https://mp.weixin.qq.com/s/ux-bheZwkjn0PY3SwiAUWw
 
-https://mqshen.gitbooks.io/prml/content/Chapter6/gaussian/gaussian_processes_regression.html
+用于神经机器翻译的全并行文本生成
 
-Gaussian Processes Regression
+https://mp.weixin.qq.com/s/ZlfxZMWz5lSVLxkAf9isJQ
 
-http://www.gaussianprocess.org/gpml/chapters/RW.pdf
+斯坦福李纪为博士毕业论文：让机器像人一样交流
 
-Gaussian Processes for Machine Learning
+https://mp.weixin.qq.com/s/bNB7EFj1QgSNb9as1YfgJw
 
-http://people.cs.umass.edu/~wallach/talks/gp_intro.pdf
+Reddit热门话题：你是否也对NLP的现状感到失望？
 
-Introduction to Gaussian Process Regression
+https://mp.weixin.qq.com/s/uVoLET8LTnC_z0uJ8r0bRA
 
-http://wenku.baidu.com/view/72f80113915f804d2b16c173.html
+对话系统综述：新进展新前沿
 
-高斯过程回归方法综述
+https://mp.weixin.qq.com/s/2cbzD1UFW66-3zwsZk9Bxg
+
+用于文本的最牛神经网络架构是什么？
+
+https://mp.weixin.qq.com/s/T4AkbKXf2pkyazIlzEZxhw
+
+基于转移的语义依存图分析
+
+https://mp.weixin.qq.com/s/mm9bXXTEzd8DwyYlMgGMZg
+
+NLP多任务学习：一种层次增长的神经网络结构
+
+https://mp.weixin.qq.com/s/hcOoFjFlPIgG1leP6caglA
+
+利用价值网络改进神经机器翻译
+
+https://mp.weixin.qq.com/s/GFI_ZCZxuLUi0tdW_gr7tw
+
+基于循环神经网络问句关键词提取技术研究
+
+https://zhuanlan.zhihu.com/p/31453283
+
+浅谈NLP中条件语言模型(Conditioned Language Models)的生成和评估
+
+https://mp.weixin.qq.com/s/vazeuiFvCC8aIhP2uAXoew
+
+达观数据智能问答技术研究
+
+https://mp.weixin.qq.com/s/M8Awv6Tod4SEo85F8xzqqg
+
+基于半监督学习技术的达观数据文本过滤系统
+
+https://mp.weixin.qq.com/s/Ounb14tu6lyebiOQqY4TyQ
+
+达观数据如何打造一个中文NER系统
+
+https://mp.weixin.qq.com/s/r_x1IUuyIQw3aif2f7-Fxw
+
+邱锡鹏：深度学习在语义分析处理的最新发展
+
+https://mp.weixin.qq.com/s/DWYisJtgAHXaPDQX0lYxfA
+
+达观数据告诉你机器如何理解语言－中文分词技术
+
+https://mp.weixin.qq.com/s/xnxuw06BIKfDTuTeSVguHQ
+
+达观数据基于Deep Learning的中文分词尝试（上篇）
+
+https://mp.weixin.qq.com/s/tk6JyChDThg5yJ4gqLOLwQ
+
+达观数据基于Deep Learning的中文分词尝试（下篇）
+
+https://mp.weixin.qq.com/s/tvtT5S9mDhXoYLKh9apgDw
+
+达观文本指纹算法和系统简述
+
+https://mp.weixin.qq.com/s/eiEME27eDMPSeKkwiisWnQ
+
+达观数据搜索引擎的Query自动纠错技术和架构详解
+
+https://mp.weixin.qq.com/s/RTxLTwNgmpXcuPe7vzI82g
+
+达观数据分享文本大数据的机器学习自动分类方法
+
+https://mp.weixin.qq.com/s/o5mE6IRs8ZkkXy8c5rdrjw
+
+达观数据阐述推荐系统和搜索引擎的关系
+
+https://github.com/Franck-Dernoncourt/NeuroNER/
+
+一个NER方面的示例代码
+
+https://github.com/crownpku/Information-Extraction-Chinese
+
+这是中文NER的代码示例
+
+https://mp.weixin.qq.com/s/5S5ikwnF7f55sL_VI73XSQ
+
+吴恩达博士生Ziang Xie：深度文本生成最佳实战指南
+
+http://www.jianshu.com/p/f45c3540c56e
+
+Chatbot架构
+
+https://mp.weixin.qq.com/s/AhoEzujMVUU-P7j5z_8sVQ
+
+基于神经网络的实体识别和关系抽取联合学习
+
+https://mp.weixin.qq.com/s/mgeQXkEWu5JlZxyAM0yiaQ
+
+充分利用候选项的选择型机器阅读理解模型
+
+https://mp.weixin.qq.com/s/RlarTDziwkGGM_CUa40XAw
+
+机器之心线上分享：用于序列生成的推敲网络
+
+https://mp.weixin.qq.com/s/-qk__SLahfssHuYsGNhKSA
+
+阿里巴巴首次近万字公布人工智能对话交互技术
+
+https://mp.weixin.qq.com/s/eaxyhk93PbEFzHk-qiniOQ
+
+ReQuest: 使用问答数据产生实体关系抽取的间接监督
+
+https://mp.weixin.qq.com/s/eJIkNjRqVdjm1eRVwzc1vg
+
+聊一聊分词原理
+
+https://mp.weixin.qq.com/s/dkHRTvAXf4DSnkoiMr_j1A
+
+中文NLP难于英文？从语言学角度看中文NLP、NLU难在哪里
+
+https://mp.weixin.qq.com/s/TbZPxISqi3fZLpWmDf3DmQ
+
+中文分词做不好，人机自然语言交互当然难以取得突破
+
+https://mp.weixin.qq.com/s/6mE3qPL5ag1C6ZVUsQibdg
+
+LR如何在语言理解NLU中实现文本分类
+
+https://mp.weixin.qq.com/s/1VYdCLw6q4rS91_YV4SclA
+
+理解智能问答系统（Ⅰ）
+
+https://mp.weixin.qq.com/s/x4yXjl0YXytAgp8a64ebXg
+
+智能问答开源项目之YodaQA（Ⅱ）
+
+https://mp.weixin.qq.com/s/2VPfk7jX0eBP2NZMB9igBg
+
+智能问答之使用UIMA进行文本挖掘（Ⅲ）
+
+https://mp.weixin.qq.com/s/NohUxQKHw8Z3kX_riGM10g
+
+智能问答之答案抽取（Ⅳ）
+
+https://mp.weixin.qq.com/s/0nyc8Lxb5Eb0hgT1ax6r0Q
+
+仅使用单语语料库的无监督机器翻译
+
+https://mp.weixin.qq.com/s/bzjRlFfh7tz4OWVpGnNPwQ
+
+揭秘阿里小蜜：基于检索模型和生成模型相结合的聊天引擎
+
+https://mp.weixin.qq.com/s/4fYvp9XFyJP4fE9BYvYLBw
+
+百度AAAI 2018论文提出新型NMT模型，性能堪比深层模型
+
+https://mp.weixin.qq.com/s/acCd1G1wnRZtleudUKhuWA
+
+一文概述2017年深度学习NLP重大进展与趋势
+
+https://mp.weixin.qq.com/s/kbF8WnaVWf6nOpzvbELpOw
+
+产品评论分析系统
+
+https://mp.weixin.qq.com/s/PSs0H237ldauSZhlMlNHXA
+
+CMU邢波：基于双向语言模型的生物医学命名实体识别，无标签数据提升NER效果
+
+https://mp.weixin.qq.com/s/5ftsfNSAb7pAizVA5m-xXw
+
+2017 年回顾：NLP、深度学习与大数据
+
+https://mp.weixin.qq.com/s/2NLckUqFrCOwaIamwWFOqQ
+
+基于深度 AND-OR 语法网络的目标识别方法
+
+https://mp.weixin.qq.com/s/Z1fqUMLjWFs0zA8f739kww
+
+2017深度学习NLP进展与趋势
+
+https://mp.weixin.qq.com/s/IVSoI6QM1uY3JLKMiha9vQ
+
+微软亚洲研究院论文解读：基于动态词表的对话生成研究
 
 
