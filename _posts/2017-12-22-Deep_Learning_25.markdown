@@ -316,7 +316,11 @@ LCNN论文阅读笔记
 
 ## 概述
 
-NN的INT8计算是近来NN计算优化的方向之一。这方面的文章以Xilinx的白皮书较为经典：
+NN的INT8计算是近来NN计算优化的方向之一。相比于传统的浮点计算，整数计算无疑速度更快，而NN由于自身特性，对单点计算的精确度要求不高，且损失的精度还可以通过retrain的方式恢复大部分，因此通常的科学计算的硬件（没错就是指的GPU）并不太适合NN运算，尤其是NN Inference。
+
+>传统的GPU并不适合NN运算，因此Nvidia也好，还是其他GPU厂商也好，通常都在GPU中又集成了NN加速的硬件，因此虽然商品名还是叫做GPU，但是工作原理已经有别于传统的GPU了。
+
+这方面的文章以Xilinx的白皮书较为经典：
 
 https://china.xilinx.com/support/documentation/white_papers/c_wp486-deep-learning-int8.pdf
 
@@ -325,6 +329,12 @@ https://china.xilinx.com/support/documentation/white_papers/c_wp486-deep-learnin
 论文：
 
 《On the efficient representation and execution of deep acoustic models》
+
+![](/images/img2/INT8.png)
+
+《Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference》
+
+![](/images/img2/INT8_2.png)
 
 参考：
 

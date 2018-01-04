@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  大数据平台参考资源
+title:  大数据平台参考资源, 区块链
 category: resource 
 ---
 
@@ -237,4 +237,74 @@ https://mp.weixin.qq.com/s/Zockp0wCfL6t-LckaLCQlg
 https://mp.weixin.qq.com/s/HhabrgpbWSn_f2Q-QfgaAA
 
 智能投放系统之场景分析最佳实践
+
+# 区块链
+
+https://mp.weixin.qq.com/s/NF1tQaOTFklGM5U9kQ7yKA
+
+终于把区块链的技术与应用讲清楚了
+
+http://www.chinacloud.cn/show.aspx?id=24053&cid=22
+
+区块链与大数据究竟有着怎样的关系？
+
+http://www.msra.cn/zh-cn/news/features/blockchain-20161213
+
+一文读懂区块链上的隐私与监管问题
+
+http://www.jizhuomi.com/internet/346.html
+
+比特史记--建国录
+
+https://mp.weixin.qq.com/s/HCF5rtAuhPuw789r6yMPIg
+
+当人工智能遇到区块链，是惊鸿一瞥还是天长地久？
+
+https://mp.weixin.qq.com/s/qopknJ8l93aJ8iUGzsFhMQ
+
+以太坊是什么鬼？！媲美比特币的加密币大揭秘
+
+https://mp.weixin.qq.com/s/MorLGHh3KQOrj1GYLwIbtA
+
+比特币能致富？一个故事告诉你比特币的原理及运作机制
+
+https://mp.weixin.qq.com/s/QHI-AgJI5MCHE-Na99eHbQ
+
+区块链相关资料汇总
+
+http://www.xfyun.cn/share/?p=2598
+
+当微服务撞上区块链
+
+https://mp.weixin.qq.com/s/VfsenlyT9QHyj9_Oge8dRg
+
+十年大数据，十年区块链，两技术如何共生演进？
+
+https://mp.weixin.qq.com/s/PgfE5wL8W4I73HNyyQmpvg
+
+用Python代码建个数据实验室，顺利入坑比特币
+
+https://mp.weixin.qq.com/s/cmxruTYtOZTI2iPh1nlIBw
+
+AI与区块链会碰撞出什么样的火花？取代传统银行系统！？
+
+https://mp.weixin.qq.com/s/vtx2izrYxrRQLqdx35TwSQ
+
+浅谈比特币的数学原理
+
+https://mp.weixin.qq.com/s/eOR9_QJjQ1-_mcYaRTCgjA
+
+如何使用深度学习硬件的空余算力自动挖矿
+
+https://www.leiphone.com/news/201707/w7pSQ3QwDtJMuEbr.html
+
+比特币、以太坊、区块链、代币、ICO，你需要知道的一切都在这了
+
+http://www.8btc.com/blockchain-ico
+
+区块链与ICO：加密货币时代的众筹
+
+https://www.zhihu.com/question/64745484
+
+ICO、比特币、区块链特么是什么玩意？
 

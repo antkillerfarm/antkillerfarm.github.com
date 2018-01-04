@@ -90,6 +90,10 @@ https://mp.weixin.qq.com/s/pDK4qBWArtETARE1fjbbmA
 
 迁移学习在深度学习中的应用
 
+https://mp.weixin.qq.com/s/mB1AEFVdM_s1rk0irST4Ww
+
+迁移学习在图像分类中的简单应用策略
+
 # 语音识别
 
 ## 书籍

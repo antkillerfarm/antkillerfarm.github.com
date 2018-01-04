@@ -159,7 +159,7 @@ http://jacob777.blog.sohu.com/106426297.html
 
 不过好在Java语言用的还可以，大部分的C++新特性，学起来倒也难不倒我。
 
-1.auto关键字
+1.auto
 
 C++11中引入的auto主要有两种用途：自动类型推断和返回值占位。auto在C++98中，标识临时变量的语义，由于使用极少且多余，在C++11中已被删除。前后两个标准中的auto，完全是两个概念，这点尤其需要注意。
 
@@ -167,7 +167,7 @@ http://blog.csdn.net/huang_xw/article/details/8760403
 
 auto的使用
 
-2.引入nullprt
+2.nullprt
 
 http://blog.csdn.net/huang_xw/article/details/8764346
 

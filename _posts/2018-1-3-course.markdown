@@ -1,0 +1,222 @@
+---
+layout: post
+title:  名校机器学习相关课程
+category: resource 
+---
+
+# 名校机器学习相关课程
+
+## PRML
+
+除了吴恩达的cs229之外，Bishop的《Pattern Recognition and Machine Learning》也是ML领域的经典书籍。
+
+>Christopher Michael Bishop，1959年生，牛津大学本科+爱丁堡大学博士。爱丁堡大学教授。英国皇家学会会员。
+
+中文版：
+
+https://www.gitbook.com/book/mqshen/prml/details
+
+PRML的python实现：
+
+https://github.com//ctgk/PRML
+
+## 参考
+
+http://ufldl.stanford.edu/wiki/index.php/Main_Page
+
+斯坦福的《Unsupervised Feature Learning and Deep Learning》教程，该网站本身就有中文翻译。
+
+https://zhuanlan.zhihu.com/p/22038289
+
+斯坦福CS231n课程（卷积神经网络，CNN）翻译。
+
+https://mp.weixin.qq.com/s/TL15EgRfbIFnaOo6-SimfQ
+
+斯坦福CS231n(李飞飞):卷积神经网络视觉识别课程讲义（完整版）
+
+https://www.coursera.org/learn/machine-learning
+
+《斯坦福大学机器学习课程讲义》CS229
+
+Andrew Ng，也就是吴恩达写的讲义，写的非常浅显易懂。
+
+http://openclassroom.stanford.edu/MainFolder/VideoPage.php?course=MachineLearning
+
+Andrew Ng的公开课视频。
+
+http://www.cc.gatech.edu/~lsong/teaching/
+
+佐治亚理工学院宋乐副教授的课件库。
+
+http://web.cs.iastate.edu/~cs577/
+
+Problem Solving Techniques for Applied Computer Science
+
+https://onlinecourses.science.psu.edu/stat857/
+
+Applied Data Mining and Statistical Learning
+
+http://www.cs.unc.edu/~lazebnik/spring11/
+
+Computer Vision
+
+http://www.cnblogs.com/wei-li/archive/2012/03/24/2406404.html
+
+网络公开课资源——关注CS/AI/Math
+
+http://www.cs.columbia.edu/~blei/seminar/2016_discrete_data/index.html
+
+Probabilistic Models of Discrete Data
+
+http://mp.weixin.qq.com/s/dtg-alezht56mu_vOA4Lrg
+
+14所世界顶级名校在线免费算法课程。这里的课程主要是非机器学习类的计算机算法。
+
+http://mp.weixin.qq.com/s/qW_RZ--df6MjaKNgNdjeWA
+
+10所世界顶级名校的25门在线免费机器学习课程！
+
+http://www.cs.cmu.edu/~tom/10701_sp11/lectures.shtml
+
+CMU的Machine Learning
+
+https://mp.weixin.qq.com/s/MlM39pbyr5G7Crgq0j4PGw
+
+Bengio领衔：DeepMind、谷歌大脑核心研究员2017深度学习最新报告（该课程只适合有深度学习基础的人）
+
+https://mp.weixin.qq.com/s/a5MBQqYCWmUMLpVXhOvg8Q
+
+Yoshua Bengio深度学习暑期课程
+
+https://mp.weixin.qq.com/s/CxKicJBvnk6FYWE4KuVmHw
+
+二十六条深度学习经验，来自蒙特利尔深度学习
+
+https://mp.weixin.qq.com/s/Bv1psJFFnZdYWW9reCbtrQ
+
+2017年蒙特利尔深度学习暑期学校ppt分享
+
+http://elmos.scripts.mit.edu/mathofdeeplearning/
+
+Mathematical Aspects of Deep Learning
+
+http://ciml.info/
+
+马里兰大学的机器学习课程
+
+http://mbmlbook.com/toc.html
+
+Chris Bishop发布在线新书。Bishop 2007年的《Pattern Recognition And Machine Learning》一书绝对是经典之作，然而难度偏高。这本是入门级别的。
+
+https://mp.weixin.qq.com/s/6XEUATgudV9AT7Y8FLfdlQ
+
+台大林轩田：机器学习基石（全套65课中文视频）
+
+http://yerevann.com/a-guide-to-deep-learning/
+
+国外网红的深度学习指南
+
+https://am207.github.io/2017/
+
+哈佛课程：Advanced Scientific Computing: Stochastic Optimization Methods. Monte Carlo Methods for Inference and Data Analysis
+
+https://www.deeplearning.ai/
+
+吴恩达离开百度之后开设的DL教程
+
+https://study.163.com/topics/deepLearning/
+
+这是网易提供的deeplearning.ai课程的中文版
+
+https://github.com/dformoso/machine-learning-mindmap
+
+ML思维导图
+
+https://github.com/dformoso/deeplearning-mindmap
+
+DL思维导图
+
+http://neuralnetworksanddeeplearning.com/
+
+Michael Nielsen写的DL blog。
+
+https://cs.nju.edu.cn/zlj/Courses.html
+
+南京大学张利军：数据挖掘和优化
+
+https://nndl.github.io/
+
+复旦邱锡鹏（FudanNLP项目负责人）：神经网络与深度学习
+
+http://joanbruna.github.io/stat212b/
+
+Stat 212b：Topics Course on Deep Learning——加州大学伯克利分校统计系Joan Bruna（Yann LeCun博士后）以统计的角度讲解DL。
+
+https://blogs.princeton.edu/imabandit/orf523-the-complexities-of-optimization/
+
+ORF 523: The complexities of optimization
+
+https://cs.brown.edu/courses/csci1460
+
+CSCI 1460: Introduction to Computational Linguistics
+
+https://berkeley-deep-learning.github.io/
+
+UCB的DL课程
+
+http://web.cs.ucdavis.edu/~yjlee/teaching/ecs174-spring2017/
+
+ECS 174: Computer Vision
+
+http://web.cs.ucdavis.edu/~yjlee/teaching/ecs289g-fall2016/
+
+ECS 289G: Visual Recognition
+
+http://www.cs.jhu.edu/~misha/Fall04/
+
+Seminar on Shape Analysis and Retrieval
+
+http://info.usherbrooke.ca/hlarochelle/neural_networks/description.html
+
+Hugo Larochelle: Online Course on Neural Networks
+
+http://www.stat.cmu.edu/~larry/=sml/
+
+CMU：Statistical Machine Learning 2016
+
+http://www.stat.cmu.edu/~ryantibs/statml/
+
+CMU：Statistical Machine Learning 2017
+
+http://people.ece.umn.edu/users/parhi/slides.html
+
+VLSI Digital Signal Processing Systems: Design and Implementation
+
+https://stats385.github.io/
+
+STATS 385：Theories of Deep Learning
+
+http://www.cs.cmu.edu/~rsalakhu/10707/lectures.html
+
+CMU：Deep Learning 2017
+
+https://software.intel.com/en-us/ai-academy/students/kits
+
+Intel提供的课程，包括ML和DL两门课程。
+
+http://www.stats.ox.ac.uk/~teh/courses.html
+
+Oxford的Yee Whye Teh提供的ML课程，偏统计方向。
+
+https://mp.weixin.qq.com/s/iUmRZMpQJpaV4jNxmp-z4w
+
+面向搜索的深度学习实战书籍和代码《Deep Learning for Search》
+
+https://mp.weixin.qq.com/s/txT8qLxpQQ62DAPVS1NTDA
+
+DeepMind深度学习最佳实践与新技术展望
+
+http://lamda.nju.edu.cn/weixs/book/CNN_book.pdf
+
+南京大学魏秀参：《解析卷积神经网络—深度学习实践手册》
+

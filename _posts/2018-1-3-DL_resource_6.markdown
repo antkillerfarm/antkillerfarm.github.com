@@ -278,3 +278,13 @@ https://mp.weixin.qq.com/s/o-MFPt6LR_5XDpacqw754Q
 
 马里兰大学论文：可视化神经网络的损失函数
 
+https://mp.weixin.qq.com/s/c8-lS2TyuQ1lE2sDrW626A
+
+神奇的面包机！谷歌造出对抗样本的实体版
+
+https://mp.weixin.qq.com/s/7hPMb250EBfKwcZesIBxBg
+
+超算Titan仅用一天生成AI神经网络，顶尖人类科学家则需数月
+
+
+
