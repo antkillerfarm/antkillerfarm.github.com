@@ -230,3 +230,13 @@ https://mp.weixin.qq.com/s/bSwiMw1OxyN_INYC3Mf37w
 
 阿里iDST联合华东师大提出τ-FPL: 线性时间的约束容忍分类学习算法
 
+https://mp.weixin.qq.com/s/6a4nWTXlh0p-TMOaBJMtfQ
+
+机器学习算法在饿了么供需平衡系统中的应用
+
+https://mp.weixin.qq.com/s/pQGjWfavwwDGckXkhH1ARA
+
+我们在UCL找到了一个糖尿病数据集，用机器学习预测糖尿病
+
+
+

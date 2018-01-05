@@ -338,6 +338,10 @@ https://mp.weixin.qq.com/s/yPl746zhMFdMVtJaPUoAxg
 
 微服务并非Spring Cloud独角戏，Service Mesh未来大有可为
 
+https://mp.weixin.qq.com/s/bUrTDj1atJSZvFeWA8H-SA
+
+正向代理和反向代理
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

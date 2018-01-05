@@ -4,121 +4,145 @@ title:  DL参考资源（四）
 category: resource 
 ---
 
-## 面试
+## AI与游戏
 
-https://www.zhihu.com/question/41233373
+https://zhuanlan.zhihu.com/p/22604627
 
-如果你是面试官，你怎么去判断一个面试者的深度学习水平？
+AI玩FPS游戏
 
-https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
+http://www.biologic.com.au/bugbrain/
 
-20万、50万、100万的算法工程师，到底有什么区别？
+BugBrain是一个神经网络相关的益智游戏。
 
-https://www.zhihu.com/question/56676679/answer/151505274
+https://mp.weixin.qq.com/s/zbki0baZw-NjAgZwKcfgFg
 
-机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
+《星际争霸》与人工智能
 
-https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
+https://mp.weixin.qq.com/s/xnbNkKOomwvwYC_ThKPJ_g
 
-面试官是如何看出你机器学习水平的？
+田渊栋报告：游戏中的人工智能：成就与挑战
 
-https://mp.weixin.qq.com/s?__biz=MzI3NTA0MzM1OQ==&mid=2651615534&idx=1&sn=00ecd7dc1d8472c070e720a1b63f04c4
+https://mp.weixin.qq.com/s/napcf9UDwTVmUXV7BBzdaw
 
-我如何考察面试者的机器学习水平
+田渊栋：深度学习如何进行游戏推理？
 
-https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
+https://mp.weixin.qq.com/s/5Vg9RFvyNv6T7QkIfPm1aQ
 
-谷歌等巨头机器学习面试题：从逻辑回归到智力测验
+DOTA2中打败Dendi的AI如何炼出？
+
+https://mp.weixin.qq.com/s/Jdd7S6JFKRdsVe2w-W01IA
+
+Facebook田渊栋开源游戏平台ELF，简化版《星际争霸》完美测试人工智能
+
+https://mp.weixin.qq.com/s/QD6BdAB332xHoSH3dIfM5Q
+
+学习顶级玩家Replay，人工智能学会了星际争霸的“大局观”
+
+https://mp.weixin.qq.com/s/0Q-Kg6pNVRl3tqv8-wH-bg
+
+Facebook开源史上最大星际争霸AI研究数据集
+
+https://mp.weixin.qq.com/s/KbFvs8EcEfm29zhLCPt0Iw
+
+DeepMind进军星际争霸2，谷歌Facebook打响通用AI战争
+
+https://mp.weixin.qq.com/s/WTRD3wRQ_wSXjjlt7jiwSg
+
+CommandCenter：基于暴雪官方API的星际争霸2 AI Bot
+
+https://mp.weixin.qq.com/s/cCnSvD5oEWZSu48Oyec-Kg
+
+从FPS到RTS，一文概述游戏人工智能中的深度学习算法
+
+https://mp.weixin.qq.com/s/CQmZcwI4bgrEiWHP0gBLfQ
+
+DeepMind星际争霸2开源机器学习平台入门
+
+https://zhuanlan.zhihu.com/p/28434323
+
+迈向通用人工智能：星际争霸2人工智能研究环境SC2LE完全入门指南
+
+https://zhuanlan.zhihu.com/p/29246185
+
+重现DeepMind星际争霸强化学习算法
+
+https://mp.weixin.qq.com/s/SAp0alFSLKN1CHX0_vdTjg
+
+扑克AI对抗人类30年历史，解密冷扑大师前世今生
+
+https://mp.weixin.qq.com/s/mmMrGy3ggwVid_NxfpEA7Q
+
+冷扑大师发明人：用于策略推理的超人AI
+
+https://mp.weixin.qq.com/s/zExzGJ-QMldHIi71jKnq_Q
+
+CMU“冷扑大师”不完美信息博弈研究获奖
+
+https://mp.weixin.qq.com/s/VLLF37J1hUnIMd2Yy1fS2w
+
+Libratus如何在双人无限注德扑中击败人类顶级选手
+
+https://mp.weixin.qq.com/s/WMDbCdrX_3W22Qfh_joB-A
+
+一文读懂人工智能打德扑
+
+https://mp.weixin.qq.com/s/x0G-LNCano7qjGdpj-fpCQ
+
+2017年度星际争霸AI竞赛结果出炉
+
+https://mp.weixin.qq.com/s/AndV-htPeTXlpAm1GONNtA
+
+中科院开源星际争霸2宏观运营研究数据集MSC
+
+https://mp.weixin.qq.com/s/qU6XD45RGeMI-T7GI0dg2Q
+
+OpenAI竞争性自我对抗训练：简单环境下获得复杂的智能体
+
+https://mp.weixin.qq.com/s/0OlKixcT20wao4xkWa6M5A
+
+超越蒙特卡洛树搜索：北大提出深度交替网络和长期评估围棋模型
+
+https://mp.weixin.qq.com/s/2b82VzQ2dJF9kWg-FfMelQ
+
+人工智能在《LOL&王者荣耀》游戏中的角色
+
+https://mp.weixin.qq.com/s/c160AUDdgw37L1XruPoZ-w
+
+电竞数据化：英雄联盟总决赛也靠它！
+
+https://zhuanlan.zhihu.com/p/29222384
+
+sc2-101: 第一个rule-base的星际二agent
+
+https://mp.weixin.qq.com/s/rmi5ulyLdRIw11sKDxPYvQ
+
+学会了玩街霸2的AI，你怕不怕？
+
+https://mp.weixin.qq.com/s/Wqy-GeXpW8s0j7m5OYpcDA
+
+过去十年，我们用了哪些即时战略游戏训练AI？
+
+https://mp.weixin.qq.com/s/ma2SgFuNYu50oexnfBYYLw
+
+用AI打王者荣耀？认真谈谈强化学习的价值
+
+https://mp.weixin.qq.com/s/28r1deIM2-eDOpX29QWLfw
+
+AI真的会杀人？DeepMind开发了二维网格游戏来做测试
+
+https://mp.weixin.qq.com/s/jbzkq6UHsTu18fdGJzDxMw
+
+你也可以成为游戏高手，Facebook FAIR实验室田渊栋研究员PPT详解
+
+https://mp.weixin.qq.com/s/xhvwha-N7XQdWQk_9lV4jg
+
+最擅长玩《毁灭战士》的AI开源了：来自CMU的论文&代码
+
+https://mp.weixin.qq.com/s/QoQprj77xcvgeFSkQD2vKw
+
+AI玩微信跳一跳的正确姿势：跳一跳Auto-Jump算法详解
 
 # DL参考资源
-
-http://cs.stanford.edu/people/karpathy/convnetjs/demo/classify2d.html
-
-这是一个2层神经网络的可视化demo
-
-http://mp.weixin.qq.com/s/upblqKf0m_15o4L1fF0EEQ
-
-深度学习模型转换器
-
-https://mp.weixin.qq.com/s/JnGpVQDF95hHTirrZyJc_g
-
-一个降低深度学习时间，空间，经济成本的解决方案
-
-https://mp.weixin.qq.com/s/d-Rt3Bz4Qzf3qaoSxiTlGA
-
-计算机视觉怎么给图像分类？KNN、SVM、BP神经网络、CNN、迁移学习供你选
-
-https://www.oreilly.com/learning/caption-this-with-tensorflow
-
-图片字幕生成
-
-https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/content/
-
-某人写的AI心得
-
-https://mp.weixin.qq.com/s/JAVzy8gy7k4EesBBHvEZLg
-
-亚马逊用机器学习自动调优数据库管理系统
-
-https://mp.weixin.qq.com/s/1A6p672z4Yz__MF6TWORSw
-
-备战医疗大赛必看！
-
-https://mp.weixin.qq.com/s/U0K79ELLj4wsOR4sd5G4Vw
-
-Vicarious详解新型图式网络：赋予强化学习泛化能力
-
-https://mp.weixin.qq.com/s/gfuO7CwfFiNC-iqDquDKQQ
-
-五个案例，三大心得——带你进阶深度学习的实践应用之路
-
-http://mp.weixin.qq.com/s/6I0Z_yY7UT_7qOKOWcd7Mw
-
-李飞飞发表研究新成果：视觉推理的推断和执行程序！
-
-http://mp.weixin.qq.com/s/XH1dXWSPiQMAHYR0_-xylA
-
-精选深度学习在文本、视觉、语音等领域的论文集
-
-https://mp.weixin.qq.com/s/bGbslnuG80S6gPwD4FHuMg
-
-深度学习助力前端开发：自动生成GUI图代码
-
-https://mp.weixin.qq.com/s/Wa2om6y27aFCB9kGRwZqBA
-
-孙剑：如何在公司做好计算机视觉的研究
-
-https://mp.weixin.qq.com/s/GXeAG118a6Wwt8zE3LE-hQ
-
-Autodesk提出新算法：用“自动编码器网络”生成3D模型！
-
-https://mp.weixin.qq.com/s/gA_qtlZg8zCkLqndkb3YJw
-
-解读ICCV2017 12篇论文
-
-https://mp.weixin.qq.com/s/jEBzH1TpJBK1Tc3gfnbmTQ
-
-ICCV 13大不可错过的有趣项目
-
-https://mp.weixin.qq.com/s/eIy73UmlsCs7n2fmiEmACw
-
-斯坦福论文提出MoleculeNet：分子机器学习新基准
-
-https://mp.weixin.qq.com/s/QW7t7iaIN1yaHYzOtwgYAQ
-
-Representation Learning on Network网络表示学习
-
-http://mp.weixin.qq.com/s/D2Nw3oKF2DYgMZysmi_ysg
-
-通过Crowd Layer，利用众包标注数据集进行深度学习
-
-http://mp.weixin.qq.com/s/9mtgdNynv92FC2dA8-5KJA
-
-VAE和Adam发明人博士论文：变分推理和深度学习
-
-http://mp.weixin.qq.com/s/Y-PvMz_Vz8nBGRZo9dwUCA
-
-中科院步态识别技术：不看脸50米内在人群中认出你！
 
 http://mp.weixin.qq.com/s/sIIoGilZgQHn4jDiYzEelw
 
@@ -171,10 +195,6 @@ https://www.jianshu.com/p/4c2032c685dc
 https://mp.weixin.qq.com/s/-zl2tQuzdlJd5TXIW9EPyA
 
 Google：机器学习系统，隐藏多少技术债？
-
-http://blog.csdn.net/bea_tree/article/details/67049373
-
-几分钟走进神奇的光流：FlowNet 2.0: Evolution of Optical Flow Estimation with Deep Networks
 
 https://mp.weixin.qq.com/s/nF-RIAzQv3gMSXkM_92Rbg
 

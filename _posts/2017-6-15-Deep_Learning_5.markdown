@@ -146,6 +146,10 @@ https://mp.weixin.qq.com/s/OltT-GFDVxaiukb1HVSY3w
 
 通俗讲解循环神经网络的两种应用
 
+https://mp.weixin.qq.com/s/PZMmjT9eXL7rU2pxkQWTiw
+
+从90年代的SRNN开始，纵览循环神经网络27年的研究进展
+
 # LSTM
 
 本篇笔记主要摘自：

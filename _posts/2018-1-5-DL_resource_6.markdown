@@ -286,5 +286,96 @@ https://mp.weixin.qq.com/s/7hPMb250EBfKwcZesIBxBg
 
 超算Titan仅用一天生成AI神经网络，顶尖人类科学家则需数月
 
+http://cs.stanford.edu/people/karpathy/convnetjs/demo/classify2d.html
+
+这是一个2层神经网络的可视化demo
+
+http://mp.weixin.qq.com/s/upblqKf0m_15o4L1fF0EEQ
+
+深度学习模型转换器
+
+https://mp.weixin.qq.com/s/JnGpVQDF95hHTirrZyJc_g
+
+一个降低深度学习时间，空间，经济成本的解决方案
+
+https://mp.weixin.qq.com/s/d-Rt3Bz4Qzf3qaoSxiTlGA
+
+计算机视觉怎么给图像分类？KNN、SVM、BP神经网络、CNN、迁移学习供你选
+
+https://www.oreilly.com/learning/caption-this-with-tensorflow
+
+图片字幕生成
+
+https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/content/
+
+某人写的AI心得
+
+https://mp.weixin.qq.com/s/JAVzy8gy7k4EesBBHvEZLg
+
+亚马逊用机器学习自动调优数据库管理系统
+
+https://mp.weixin.qq.com/s/1A6p672z4Yz__MF6TWORSw
+
+备战医疗大赛必看！
+
+https://mp.weixin.qq.com/s/U0K79ELLj4wsOR4sd5G4Vw
+
+Vicarious详解新型图式网络：赋予强化学习泛化能力
+
+https://mp.weixin.qq.com/s/gfuO7CwfFiNC-iqDquDKQQ
+
+五个案例，三大心得——带你进阶深度学习的实践应用之路
+
+http://mp.weixin.qq.com/s/6I0Z_yY7UT_7qOKOWcd7Mw
+
+李飞飞发表研究新成果：视觉推理的推断和执行程序！
+
+http://mp.weixin.qq.com/s/XH1dXWSPiQMAHYR0_-xylA
+
+精选深度学习在文本、视觉、语音等领域的论文集
+
+https://mp.weixin.qq.com/s/bGbslnuG80S6gPwD4FHuMg
+
+深度学习助力前端开发：自动生成GUI图代码
+
+https://mp.weixin.qq.com/s/Wa2om6y27aFCB9kGRwZqBA
+
+孙剑：如何在公司做好计算机视觉的研究
+
+https://mp.weixin.qq.com/s/GXeAG118a6Wwt8zE3LE-hQ
+
+Autodesk提出新算法：用“自动编码器网络”生成3D模型！
+
+https://mp.weixin.qq.com/s/gA_qtlZg8zCkLqndkb3YJw
+
+解读ICCV2017 12篇论文
+
+https://mp.weixin.qq.com/s/jEBzH1TpJBK1Tc3gfnbmTQ
+
+ICCV 13大不可错过的有趣项目
+
+https://mp.weixin.qq.com/s/eIy73UmlsCs7n2fmiEmACw
+
+斯坦福论文提出MoleculeNet：分子机器学习新基准
+
+https://mp.weixin.qq.com/s/QW7t7iaIN1yaHYzOtwgYAQ
+
+Representation Learning on Network网络表示学习
+
+http://mp.weixin.qq.com/s/D2Nw3oKF2DYgMZysmi_ysg
+
+通过Crowd Layer，利用众包标注数据集进行深度学习
+
+http://mp.weixin.qq.com/s/9mtgdNynv92FC2dA8-5KJA
+
+VAE和Adam发明人博士论文：变分推理和深度学习
+
+http://mp.weixin.qq.com/s/Y-PvMz_Vz8nBGRZo9dwUCA
+
+中科院步态识别技术：不看脸50米内在人群中认出你！
+
+https://mp.weixin.qq.com/s/ZTjklje_3fcAn6ZQ23yd4A
+
+ScanComplete：可实现3D扫描的大规模“场景完成”和“语义分割”
 
 

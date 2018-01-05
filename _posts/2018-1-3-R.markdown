@@ -1,0 +1,311 @@
+---
+layout: post
+title:  R
+category: language 
+---
+
+# R
+
+R语言是另一个应用较广的数学工具语言和环境，主要应用于统计学和数据挖掘等领域。在这些领域，其影响力甚至超过了Matlab。
+
+R语言的语法来自于1970年代贝尔实验室发明的S语言，因此又被称为“GNU S”。
+
+官网：
+
+https://www.r-project.org/
+
+软件仓库：
+
+https://cran.r-project.org/
+
+https://r-forge.r-project.org/
+
+安装方法:
+
+`sudo apt-get install r-base r-base-dev`
+
+书籍：
+
+R语言的书籍主要有三本。
+
+1.《An Introduction to R》。这个是官网的免费书，焦点集中于语言本身，对标准库没有介绍。
+
+2.《R Reference Card》。一个只有几页纸的卡片式书籍，列出了应用开发中涉及的主要函数的名称。
+
+3.《R in a Nutshell》。篇幅近600页，堪称R语言最权威书籍，兼顾语言和应用两方面。
+
+参考：
+
+http://cos.name/
+
+统计之都（Capital of Statistics，简称COS）成立于2006年5月，是一个旨在推广与应用统计学知识的网站和社区。
+
+http://yihui.name/
+
+谢益辉，Iowa State University博士，目前就职于RStudio。中国R语言会议、COS社区创办者。
+
+http://www.r-user.com/
+
+一个中文的R语言网站
+
+http://blog.fens.me/series-r/
+
+R的极客理想系列文章。作者张丹，R语言资深用户，系统架构师。
+
+http://www.r-tutor.com/
+
+另一个大牛Chi Yau的网站。
+
+https://ask.hellobi.com/blog/asxinyu/5721
+
+300+的R语言资源汇总
+
+https://mp.weixin.qq.com/s?__biz=MzA3MTM3NTA5Ng==&mid=2651056727&idx=2&sn=46e6b4cca2f8dad97774c2e666284f3a
+
+R语言中文社区历史文章整理
+
+http://url.cn/42zYptF
+
+最全的训练数据集
+
+https://mousieur-g.github.io/
+
+一个R机器学习实战的blog
+
+http://yanping.me/shiny-tutorial/
+
+Shiny中文教程
+
+https://mp.weixin.qq.com/s?__biz=MzA3Njc0NzA0MA==&mid=2653191385&idx=1&sn=23c13aa4f3ab4ffe5a902abd8fc0613e
+
+那些年倒腾的R语言学习笔记
+
+https://www.datasciencecentral.com/profiles/blogs/600-websites-about-r
+
+600个R资源网站
+
+## 交互环境
+
+R语言有个和python类似的命令行交互环境。
+
+安装之后，运行R命令即可进入该环境（下文简称为shell），`>quit()`可退出shell。
+
+除此之外，还有第三方提供的GUI环境，最常用的是RStudio，其官网：
+
+https://www.rstudio.com/
+
+下载：
+
+http://www.rstudio.org/download/latest/stable/desktop/ubuntu64/rstudio-latest-amd64.deb
+
+## 执行脚本
+
+R脚本一般以.R为后缀，其执行方法有两种：
+
+1.Linux shell:`/usr/lib/R/bin/Rscript a.R`
+
+2.R shell:`source(a.R)`
+
+## 帮助文档
+
+CRAN虽然提供了各个软件包的帮助文档，然而无论是数据的组织，还是界面，都不如RStudio，建议使用后者的帮助文档。
+
+## 安装软件包
+
+以rjson包为例：
+
+`install.packages("rjson")`
+
+这条命令会让你选择CRAN镜像，国内有三个镜像，速度都不错。
+
+这一步首次做，最好在R shell上进行，RStudio不会让你选择镜像。选定之后，下次安装直接就会连到镜像上，这时使用R shell，还是RStudio，都是一样的效果了。
+
+使用软件包：
+
+`library(rjson)`
+
+此外R还支持从github安装软件包，如下所示：
+
+{% highlight R %}
+install.packages("devtools")
+devtools::install_github("jlmelville/mnist")
+library(mnist)
+{% endhighlight %}
+
+## 语言细节
+
+R语言由于早期用户主要是非软件工程人员，因此，它是一个面向过程的函数式语言。
+
+然而正如C语言向C++的演进，以及JavaScript向JQuery的演进一样，面向过程的语言经过一系列非常技巧性的封装之后，都能具备面向对象的能力。参见：
+
+http://blog.fens.me/r-object-oriented-intro/
+
+由于面向对象的特性比较高端，不易掌握，因此这里的讨论仍局限于面向过程领域，以C语言作为对比，列出R语言和它的区别。
+
+### 注释与行
+
+注释以`#`开始至行尾。没有多行注释符号，但可在RStudio中，选中相关行，进行注释。
+
+一般情况下，一行对应一条语句。一行有多个语句时，以`;`分隔。一条语句分散在多行时，以`+`作为续行符号。
+
+### 变量声明
+
+R和python类似，变量使用前无需声明类型。
+
+### 赋值
+
+除了`=`之外，还可以使用`<-、<<-、->、->>`进行赋值。上述符号中，箭头指向的变量为被赋值的变量，因此，R不仅可以进行常规的从右向左赋值，也可进行从左向右的赋值。例如：
+
+`3->a`
+
+### 下标
+
+数组（Array、Vector）下标从1开始。由于所有R变量都被当成向量，因此对于单元素的变量，`a`和`a[1]`是等价的。
+
+列表（List）的下标一般是个name。这里使用一个解析后的json文件作为示例，演示一下在复杂结构中下标的用法。
+
+{% highlight json %}
+{"data":[
+{"readCount":"97","title":"R1"},
+{"readCount":"469","title":"R2"}
+]}
+{% endhighlight %}
+
+假设这个json文件保存在列表json中，则`"readCount":"97"`需要这样引用：
+
+`json$data[[1]]$readCount`
+
+### for循环
+
+示例：
+
+`for (i in 2:5-1) {print(i)}`
+
+这里需要注意，`2:5-1`等价于`(2:5)-1`，而不是`2:(5-1)`，`:`比`-`的优先级高。
+
+### 返回值
+
+return也是个函数，因此返回值两侧的括号不可省略。
+
+### 字符串长度
+
+R中的字符串不是字符数组，因此使用length是无法得到字符串长度的，应该使用nchar函数。
+
+### paste
+
+paste可将多个字符串连接到一起。这个函数的声明很有意思：
+
+`paste (..., sep = " ", collapse = NULL)`
+
+也就是说R支持不定参数，而且该参数并不一定在最后。可用如下方式避免参数指派上的混乱：
+
+`paste("1st", "2nd", "3rd", collapse = ", ")`
+
+### 自定义函数
+
+示例：
+
+{% highlight R %}
+add<-function(x,y){
+  return (x+y)
+}
+{% endhighlight %}
+
+这种方式和JavaScript十分类似。
+
+### 数据格式转换
+
+as库可进行各种常见数据格式的转换，非常好使。
+
+{% highlight R %}
+strDates <- c("01/05/1965", "08/16/1975")
+dates <- as.Date(strDates, "%m/%d/%Y") 
+strDates <- as.character(dates)
+{% endhighlight %}
+
+### 操作mysql数据库
+
+1.安装非R依赖。
+
+`install.packages`可以自动处理R依赖，然而它不能处理非R依赖。
+
+`sudo apt-get install libmysqlclient-dev`
+
+2.安装RMySQL包。
+
+`install.packages("RMySQL")`
+
+示例：
+
+{% highlight R %}
+conn<-dbConnect(MySQL(), dbname = "ml", username="root", password="123456")
+summary(conn)
+query<-dbSendQuery(conn, "SELECT * FROM csdn")
+data<-fetch(query, n = -1)
+dbClearResult(query)
+print(data)
+dbDisconnect(conn)
+{% endhighlight %}
+
+### 内置数据集
+
+R语言本身已经内置了一些数据集，可以`data()`查看之。
+
+### 操作数据集
+
+参考：
+
+https://www.r-bloggers.com/select-operations-on-r-data-frames/
+
+http://www.burns-stat.com/translating-r-sql-basics/
+
+### MNIST
+
+https://github.com/jlmelville/mnist
+
+## ggplot2
+
+ggplot2是目前R上用的比较多的绘图工具集。官网：
+
+http://had.co.nz/ggplot2/
+
+参考：
+
+《ggplot2：数据分析与图形艺术》，Hadley Wickham著。
+
+>注：Hadley Wickham，ggplot2的作者，Rstudio的首席科学家。
+
+## 参考
+
+http://blog.csdn.net/yepeng2007fei/article/details/77677625
+
+批量读取文本文件并生成自己的肖像词云
+
+https://mp.weixin.qq.com/s/W91sppqv3iGtaZPY99suDQ
+
+MIT手把手教你一步步创建自己的R程序包
+
+https://mp.weixin.qq.com/s/Gzoxa4jjWzprsSn9yRVlOg
+
+基于自然语言识别下的流失用户预警
+
+https://mp.weixin.qq.com/s?__biz=MzA3MTM3NTA5Ng==&mid=2651056658&idx=1&sn=ae2792da4f037eaf9038f54a11753b0c
+
+利用算法识别糖尿病患者
+
+https://ask.hellobi.com/blog/EasyCharts/5777
+
+R绘制圣诞树
+
+http://mp.weixin.qq.com/s?__biz=MzIxNjA2ODUzNg==&mid=2651435295&idx=1&sn=968d9950e54c34e2a2ddd4186c28c7c7
+
+数据分析案例--以上海二手房为例
+
+http://blog.csdn.net/zx403413599/article/details/46866977
+
+R语言ggplot2包之画散点图
+
+http://blog.csdn.net/yepeng2007fei/article/details/78975534
+
+rvest爬取中国天气网所有城市未来七天天气数据并写入oracle数据库
+

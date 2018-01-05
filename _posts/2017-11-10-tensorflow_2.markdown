@@ -451,4 +451,9 @@ https://mp.weixin.qq.com/s/4aJUGBpPG_6Oc5EqOmM0Iw
 
 作为TensorFlow的底层语言，你会用C++构建深度神经网络吗？
 
+https://mp.weixin.qq.com/s/W1KP213Ngj-BNEyx-_nVyw
+
+利用TensorFlow实现卷积自编码器
+
+
 

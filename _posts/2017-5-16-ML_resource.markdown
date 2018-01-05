@@ -82,6 +82,10 @@ https://mp.weixin.qq.com/s/X-Na57dKQ43LsILR_gX4Sw
 
 考察数据科学家和分析师的41个统计学问题
 
+https://mp.weixin.qq.com/s/Ot2RcB1hbb6CEAZ5Tn5oAg
+
+10种机器学习算法的要点
+
 https://www.zhihu.com/question/21664179
 
 如何在论文中画出漂亮的插图？

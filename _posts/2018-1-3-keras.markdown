@@ -112,3 +112,9 @@ https://mp.weixin.qq.com/s/2jPk3jg7AoNilErAZOaTOQ
 
 输验证码输到崩溃？教你15分钟黑掉全球最流行的验证码插件
 
+https://github.com/yanpanlau/DDPG-Keras-Torcs
+
+Using Keras and Deep Deterministic Policy Gradient to play TORCS
+
+
+

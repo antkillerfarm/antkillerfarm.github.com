@@ -200,3 +200,8 @@ https://mp.weixin.qq.com/s/W48TlxSLPk2E2DuSzEidNA
 
 免费文本语料训练数据集
 
+https://mp.weixin.qq.com/s/vp--aYbPKi8yDSiS5MPMLA
+
+MIT与Facebook提出SLAC：用于动作分类和定位的稀疏标记数据集
+
+

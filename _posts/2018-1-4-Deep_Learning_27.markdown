@@ -120,6 +120,50 @@ https://zhuanlan.zhihu.com/p/32489557
 
 深度学习的快速目标跟踪
 
+# FlowNet
+
+论文：
+
+《FlowNet: Learning Optical Flow with Convolutional Networks》
+
+参考：
+
+http://www.cnblogs.com/zhang-yd/p/6511475.html
+
+FlowNet
+
+http://blog.csdn.net/hysteric314/article/details/50529804
+
+神经光流网络——用卷积网络实现光流预测
+
+http://geek.csdn.net/news/detail/129128
+
+卷积神经网络（CNN）在无人驾驶中的应用
+
+https://zhuanlan.zhihu.com/p/32663227
+
+重新认识two stream的光流算法
+
+http://blog.csdn.net/bea_tree/article/details/67049373
+
+几分钟走进神奇的光流：FlowNet 2.0: Evolution of Optical Flow Estimation with Deep Networks
+
+# SpyNet
+
+论文：
+
+《Optical Flow Estimation using a Spatial Pyramid Network》
+
+代码：
+
+https://github.com/anuragranj/spynet
+
+参考：
+
+http://www.cnblogs.com/wangxiaocvpr/p/7058617.html
+
+论文笔记之：Optical Flow Estimation using a Spatial Pyramid Network
+
 # 视频目标分割
 
 视频目标分割任务和语义分割有两个基本区别：

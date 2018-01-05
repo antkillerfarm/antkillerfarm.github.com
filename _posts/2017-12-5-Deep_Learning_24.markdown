@@ -94,6 +94,10 @@ https://mp.weixin.qq.com/s/mB1AEFVdM_s1rk0irST4Ww
 
 迁移学习在图像分类中的简单应用策略
 
+https://mp.weixin.qq.com/s/PDyp_GO0ovWV0KoGTwp_gQ
+
+简述迁移学习在深度学习中的应用
+
 # 语音识别
 
 ## 书籍

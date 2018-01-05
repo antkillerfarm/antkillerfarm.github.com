@@ -6,140 +6,6 @@ category: resource
 
 # DL参考资源
 
-## AI与游戏
-
-https://zhuanlan.zhihu.com/p/22604627
-
-AI玩FPS游戏
-
-http://www.biologic.com.au/bugbrain/
-
-BugBrain是一个神经网络相关的益智游戏。
-
-https://mp.weixin.qq.com/s/zbki0baZw-NjAgZwKcfgFg
-
-《星际争霸》与人工智能
-
-https://mp.weixin.qq.com/s/xnbNkKOomwvwYC_ThKPJ_g
-
-田渊栋报告：游戏中的人工智能：成就与挑战
-
-https://mp.weixin.qq.com/s/napcf9UDwTVmUXV7BBzdaw
-
-田渊栋：深度学习如何进行游戏推理？
-
-https://mp.weixin.qq.com/s/5Vg9RFvyNv6T7QkIfPm1aQ
-
-DOTA2中打败Dendi的AI如何炼出？
-
-https://mp.weixin.qq.com/s/Jdd7S6JFKRdsVe2w-W01IA
-
-Facebook田渊栋开源游戏平台ELF，简化版《星际争霸》完美测试人工智能
-
-https://mp.weixin.qq.com/s/QD6BdAB332xHoSH3dIfM5Q
-
-学习顶级玩家Replay，人工智能学会了星际争霸的“大局观”
-
-https://mp.weixin.qq.com/s/0Q-Kg6pNVRl3tqv8-wH-bg
-
-Facebook开源史上最大星际争霸AI研究数据集
-
-https://mp.weixin.qq.com/s/KbFvs8EcEfm29zhLCPt0Iw
-
-DeepMind进军星际争霸2，谷歌Facebook打响通用AI战争
-
-https://mp.weixin.qq.com/s/WTRD3wRQ_wSXjjlt7jiwSg
-
-CommandCenter：基于暴雪官方API的星际争霸2 AI Bot
-
-https://mp.weixin.qq.com/s/cCnSvD5oEWZSu48Oyec-Kg
-
-从FPS到RTS，一文概述游戏人工智能中的深度学习算法
-
-https://mp.weixin.qq.com/s/CQmZcwI4bgrEiWHP0gBLfQ
-
-DeepMind星际争霸2开源机器学习平台入门
-
-https://zhuanlan.zhihu.com/p/28434323
-
-迈向通用人工智能：星际争霸2人工智能研究环境SC2LE完全入门指南
-
-https://zhuanlan.zhihu.com/p/29246185
-
-重现DeepMind星际争霸强化学习算法
-
-https://mp.weixin.qq.com/s/SAp0alFSLKN1CHX0_vdTjg
-
-扑克AI对抗人类30年历史，解密冷扑大师前世今生
-
-https://mp.weixin.qq.com/s/mmMrGy3ggwVid_NxfpEA7Q
-
-冷扑大师发明人：用于策略推理的超人AI
-
-https://mp.weixin.qq.com/s/zExzGJ-QMldHIi71jKnq_Q
-
-CMU“冷扑大师”不完美信息博弈研究获奖
-
-https://mp.weixin.qq.com/s/VLLF37J1hUnIMd2Yy1fS2w
-
-Libratus如何在双人无限注德扑中击败人类顶级选手
-
-https://mp.weixin.qq.com/s/WMDbCdrX_3W22Qfh_joB-A
-
-一文读懂人工智能打德扑
-
-https://mp.weixin.qq.com/s/x0G-LNCano7qjGdpj-fpCQ
-
-2017年度星际争霸AI竞赛结果出炉
-
-https://mp.weixin.qq.com/s/AndV-htPeTXlpAm1GONNtA
-
-中科院开源星际争霸2宏观运营研究数据集MSC
-
-https://mp.weixin.qq.com/s/qU6XD45RGeMI-T7GI0dg2Q
-
-OpenAI竞争性自我对抗训练：简单环境下获得复杂的智能体
-
-https://mp.weixin.qq.com/s/0OlKixcT20wao4xkWa6M5A
-
-超越蒙特卡洛树搜索：北大提出深度交替网络和长期评估围棋模型
-
-https://mp.weixin.qq.com/s/2b82VzQ2dJF9kWg-FfMelQ
-
-人工智能在《LOL&王者荣耀》游戏中的角色
-
-https://mp.weixin.qq.com/s/c160AUDdgw37L1XruPoZ-w
-
-电竞数据化：英雄联盟总决赛也靠它！
-
-https://zhuanlan.zhihu.com/p/29222384
-
-sc2-101: 第一个rule-base的星际二agent
-
-https://mp.weixin.qq.com/s/rmi5ulyLdRIw11sKDxPYvQ
-
-学会了玩街霸2的AI，你怕不怕？
-
-https://mp.weixin.qq.com/s/Wqy-GeXpW8s0j7m5OYpcDA
-
-过去十年，我们用了哪些即时战略游戏训练AI？
-
-https://mp.weixin.qq.com/s/ma2SgFuNYu50oexnfBYYLw
-
-用AI打王者荣耀？认真谈谈强化学习的价值
-
-https://mp.weixin.qq.com/s/28r1deIM2-eDOpX29QWLfw
-
-AI真的会杀人？DeepMind开发了二维网格游戏来做测试
-
-https://mp.weixin.qq.com/s/jbzkq6UHsTu18fdGJzDxMw
-
-你也可以成为游戏高手，Facebook FAIR实验室田渊栋研究员PPT详解
-
-https://mp.weixin.qq.com/s/xhvwha-N7XQdWQk_9lV4jg
-
-最擅长玩《毁灭战士》的AI开源了：来自CMU的论文&代码
-
 ## TPU & GPU
 
 https://cloud.tencent.com/community/article/244743
@@ -330,6 +196,10 @@ https://mp.weixin.qq.com/s/f5mQkWxPYc77t2we1Y306Q
 
 深度学习引领AI芯片大战
 
+https://mp.weixin.qq.com/s/6ksL9p1Gmnrd2HahU3KniQ
+
+ARM攒机指南——AI篇：5大千万级设备市场技术拆解
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293
@@ -432,4 +302,44 @@ https://mp.weixin.qq.com/s/2jrMDeMcb47zpPfFLEcnIA
 
 深度学习平台技术演进
 
+https://mp.weixin.qq.com/s/L4CMKS53pNyvhhqvQhja0g
 
+5种商业AI产品的技术架构设计
+
+## 面试
+
+https://www.zhihu.com/question/41233373
+
+如果你是面试官，你怎么去判断一个面试者的深度学习水平？
+
+https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
+
+20万、50万、100万的算法工程师，到底有什么区别？
+
+https://www.zhihu.com/question/56676679/answer/151505274
+
+机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
+
+https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
+
+面试官是如何看出你机器学习水平的？
+
+https://mp.weixin.qq.com/s?__biz=MzI3NTA0MzM1OQ==&mid=2651615534&idx=1&sn=00ecd7dc1d8472c070e720a1b63f04c4
+
+我如何考察面试者的机器学习水平
+
+https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
+
+谷歌等巨头机器学习面试题：从逻辑回归到智力测验
+
+## 行业
+
+李开复的这篇文章不可不读：
+
+https://mp.weixin.qq.com/s/OLIO4UIZUuzjX5oQbn3Tug
+
+拥抱人工智能的中国：现状和展望（上）
+
+https://mp.weixin.qq.com/s/KbKlgRAfjP_39WdXh7gOLg
+
+拥抱人工智能的中国：现状和展望（下）
