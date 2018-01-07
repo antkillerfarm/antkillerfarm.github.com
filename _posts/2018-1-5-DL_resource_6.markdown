@@ -350,10 +350,6 @@ https://mp.weixin.qq.com/s/gA_qtlZg8zCkLqndkb3YJw
 
 解读ICCV2017 12篇论文
 
-https://mp.weixin.qq.com/s/jEBzH1TpJBK1Tc3gfnbmTQ
-
-ICCV 13大不可错过的有趣项目
-
 https://mp.weixin.qq.com/s/eIy73UmlsCs7n2fmiEmACw
 
 斯坦福论文提出MoleculeNet：分子机器学习新基准
@@ -377,5 +373,4 @@ http://mp.weixin.qq.com/s/Y-PvMz_Vz8nBGRZo9dwUCA
 https://mp.weixin.qq.com/s/ZTjklje_3fcAn6ZQ23yd4A
 
 ScanComplete：可实现3D扫描的大规模“场景完成”和“语义分割”
-
 

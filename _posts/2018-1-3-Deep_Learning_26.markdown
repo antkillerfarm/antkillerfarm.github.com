@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十六）——依存分析, Image Caption Generation, 行人重识别, 人脸识别
+title:  深度学习（二十六）——依存分析, Image Caption Generation, 人脸识别
 category: DL 
 ---
 
@@ -169,34 +169,6 @@ http://geek.csdn.net/news/detail/98776
 https://zhuanlan.zhihu.com/p/30893160
 
 CVPR2017 Image Caption有关论文总结
-
-# 行人重识别
-
-行人重识别（Person re-identification）也称行人再识别，是利用计算机视觉技术判断图像或者视频序列中是否存在特定行人的技术。广泛被认为是一个图像检索的子问题。给定一个监控行人图像，检索跨设备下的该行人图像。旨在弥补目前固定的摄像头的视觉局限，并可与行人检测/行人跟踪技术相结合 ，可广泛应用于智能视频监控、智能安保等领域。
-
-https://zhuanlan.zhihu.com/p/26168232
-
-行人重识别：从哈利波特地图说起
-
-https://mp.weixin.qq.com/s/_NDw7pFmDB07mliHTA6VYQ
-
-旷视行人再识别（ReID）突破
-
-https://zhuanlan.zhihu.com/p/31181247
-
-从人脸识别到行人重识别，下一个风口
-
-https://mp.weixin.qq.com/s/zRdJktyk1LZWUd2cyTjpiw
-
-基于图像检索的行人重识别
-
-https://zhuanlan.zhihu.com/p/31473785
-
-行人再识别中的迁移学习：图像风格转换
-
-https://mp.weixin.qq.com/s/fX94rPgNHrOaQTqBv-ZADg
-
-基于视频的行人再识别新进展：区域质量估计方法和高质量的数据集
 
 # 人脸识别
 
@@ -368,4 +340,7 @@ https://mp.weixin.qq.com/s/zyMIRGig-m732rvraPKxwA
 
 单样本学习：使用孪生神经网络进行人脸识别
 
+https://mp.weixin.qq.com/s/QJm7YoCYmiF0dX8uac5w4Q
+
+旷视研究院：被遮挡人脸区域检测的技术细节
 

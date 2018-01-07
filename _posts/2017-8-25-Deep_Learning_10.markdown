@@ -172,6 +172,10 @@ https://mp.weixin.qq.com/s/tLqsWWhzUU6TkDbhnxxZow
 
 Momenta详解ImageNet 2017夺冠架构SENet
 
+http://blog.csdn.net/u014380165/article/details/78006626
+
+SENet（Squeeze-and-Excitation Networks）算法笔记
+
 ## Separable convolution
 
 前面介绍的都是正方形的卷积核，实际上长条形的卷积核也是很常用的。比如可分离卷积。

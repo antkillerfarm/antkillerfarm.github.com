@@ -35,17 +35,33 @@ $$l_{MSE}^{SR}=\frac{1}{r^2WH}\sum_{x=1}^{rW}\sum_{y=1}^{rH}(I_{x,y}^{HR}-G_{\th
 
 ![](/images/img2/SRGAN.png)
 
+上图展示了MSE和GAN方法的区别。
+
 整体概念和风格如何来评估呢？可以使用一个判别器，判断一副高分辨率图像是由算法生成的还是真实的。如果一个判别器无法区分出来，那么由算法生成的图像就达到了以假乱真的效果。
 
 因此，该文章将代价函数改进为：
 
 $$l^{SR}=l_X^{SR}+10^{-3}l_{Gen}^{SR}$$
 
-第一部分是基于内容的代价函数，第二部分是基于对抗学习的代价函数。
+第一部分是基于内容的代价函数（content loss），第二部分是基于对抗学习的代价函数（adversarial loss）。
+
+论文中以VGG作为基础网络，因此content loss又可表述为：
+
+$$l_{VGG/i,j}^{SR}=\frac{1}{W_{i,j}H_{i,j}}\sum_{x=1}^{W_{i,j}}\sum_{y=1}^{H_{i,j}}(\phi_{i,j}(I^{HR})_{x,y}-\phi_{i,j}(G_{\theta_G}(I^{LR}))_{x,y})^2$$
+
+adversarial loss为：
+
+$$l_{Gen}^{SR}=\sum_{n=1}^N-\log D_{\theta_D}(G_{\theta_G}(I^{LR}))$$
+
+SRGAN的网络结构如下图所示：
 
 ![](/images/img2/SRGAN.jpg)
 
+由于SRGAN的目标不在于最小化MSE，因此通常情况下，它的PSNR和SSIM都不是太好，但的确能提供一些其它方法无法提供的细节。
+
 # DemosaicNet
+
+DemosaicNet是MIT CSAIL的在读博士生Michaël Gharbi的作品。
 
 论文：
 
@@ -55,13 +71,33 @@ $$l^{SR}=l_X^{SR}+10^{-3}l_{Gen}^{SR}$$
 
 https://github.com/mgharbi/demosaicnet
 
-
-
-![](/images/img2/DemosaicNet.png)
+在《图像处理理论（五）》中，我们提到了ISP处理的一般流程。而SR的一大用途就在于ISP。
 
 ![](/images/img2/ISP_pipeline_2.png)
 
+上图是ISP处理的一般流程，其中的Demosaic和Image Enhancement，都可以通过NN的端到端学习一次性完成。DemosaicNet就是其中的代表，它的网络结构如下：
+
+![](/images/img2/DemosaicNet.png)
+
+和之前的网络不同，DemosaicNet的输入是原始的Bayer Array数据，而输出是处理好的图片。
+
+由于并没有那么多图片的Bayer Array数据，因此通常的做法是使用HR图片经采样得到Bayer Array数据。
+
+DemosaicNet的设计借鉴了ResNet的Skip Connection的方案，只不过使用Concat代替了ResNet的Add操作而已。
+
+这里再额外补充两点：
+
+1.Demosaic处理不当，会导致如下问题：
+
+![](/images/img2/Demosaic_2.png)
+
+2.将出错的mine hard case，进行retrain，可以有效的提升模型的效果。
+
+![](/images/img2/Demosaic_3.png)
+
 # SVDF
+
+SVDF是UCB和Google Speech Group的作品，主要用于简化Speech模型的计算量。
 
 论文：
 
@@ -71,3 +107,8 @@ https://github.com/mgharbi/demosaicnet
 
 https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/speech_commands/models.py
 
+![](/images/img2/SVDF.png)
+
+上图
+
+$$w_{i,j}^{(m)}\approx \alpha_i^{(m)}\beta_i^{(m)}$$

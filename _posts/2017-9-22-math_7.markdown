@@ -6,6 +6,18 @@ category: math
 
 # 函数连续性（续）
 
+## Lipschitz连续
+
+$$\forall x_1,x_2 \in I ;|f(x_1) - f(x_2)| \le K |x_1 - x_2|, K>0\text{ is const}$$
+
+>注：Rudolf Otto Sigismund Lipschitz，1832～1903，德国数学家，先后就读于柯尼斯堡大学和柏林大学，导师Dirichlet。波恩大学教授。
+
+![](/images/article/Lipschitz_continuity.png)
+
+Lipschitz连续的直观图示如上所示。**该曲线上的所有点的切线斜率的绝对值$$\le K$$。**
+
+易知，Lipschitz continuity比Absolute continuity更严格。
+
 ## 连续可微
 
 这个的定义比较简单：函数的导数是连续的。直观来说就是：**函数曲线光滑，没有尖。**

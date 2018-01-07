@@ -122,7 +122,7 @@ https://mp.weixin.qq.com/s/NdOhtEIN02tGqEzNvCB26Q
 
 http://www.jianshu.com/p/2be349a89a12
 
-超过 150 个最佳机器学习，NLP和Python教程
+超过150个最佳机器学习，NLP和Python教程
 
 https://zhuanlan.zhihu.com/hsmyy
 
@@ -139,6 +139,28 @@ https://mp.weixin.qq.com/s/oAlMl9oFHnrRiRph9lqwDQ
 https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap
 
 独立AI研究员Flood Sung提供的初学者阅读论文的路线图
+
+## 项目集锦
+
+https://mp.weixin.qq.com/s/ZNNgEB9rFjAE8SdfMo9NLA
+
+盘点30个2017年最炙手可热的GitHub机器学习开源项目
+
+https://mp.weixin.qq.com/s/jEBzH1TpJBK1Tc3gfnbmTQ
+
+ICCV 13大不可错过的有趣项目
+
+https://mp.weixin.qq.com/s/excMGz0ClTk2oNenhEWkrQ
+
+推荐10个饱受好评且功能独特的开源人工智能项目
+
+https://mp.weixin.qq.com/s/tZoD4RfkDDDBxTgqDJvI3g
+
+35个热门又实用的开源AI项目！
+
+https://mp.weixin.qq.com/s/LoF9hLoc3zRece50iOuy2w
+
+2017年度盘点：Github上十大有趣的机器学习项目
 
 ## 教程
 
@@ -373,98 +395,4 @@ https://mp.weixin.qq.com/s/ye4QvDfKPGyX0eK3Mti1Kw
 https://mp.weixin.qq.com/s/WCRYppBLdl_M4etUChnfgw
 
 PyMC3和Theano代码构建贝叶斯深度网络
-
-## 量子计算 & 遗传算法
-
-https://www.zhihu.com/question/28171555
-
-如何理解“量子退火”？
-
-http://mp.weixin.qq.com/s/FjET9HFNjVVMjqQM2KhtKA
-
-5分钟看懂中国最新的量子计算机
-
-https://mp.weixin.qq.com/s/WcRYHwXnv9FWpMcOEwIdQg
-
-量子计算的发展及核心问题
-
-https://mp.weixin.qq.com/s/Fb6EsXz8avFkGY7sMdNF6A
-
-用量子计算辅助深度学习：研究者提出量子辅助Helmholtz机
-
-https://mp.weixin.qq.com/s/8Gnk2bidyQ89VvKEcWKABw
-
-量子计算时代的机器学习
-
-https://mp.weixin.qq.com/s/XWFnRSj_y-W7VHctgQLpdA
-
-一文读懂量子机器学习
-
-http://blog.csdn.net/u010945683/article/details/40987331
-
-遗传算法详解
-
-https://mp.weixin.qq.com/s/v1tLGUJ4My-tVWziSURHzA
-
-遗传算法的基本概念和实现
-
-https://mp.weixin.qq.com/s/rXDj5ryRvjbkenp9IEokDQ
-
-一文读懂遗传算法工作原理
-
-https://mp.weixin.qq.com/s/wvcpx41O2763OgA8uYSFHw
-
-AI系统首次实现真正自主编程：利用遗传算法，完爆初级程序员
-
-https://mp.weixin.qq.com/s/sxnI5n5ACT6UHC6VDdUwQQ
-
-结合遗传算法与DNN的EDEN：自动搜索神经网络架构与超参数
-
-https://mp.weixin.qq.com/s/NfFgOiBKOgsDAIfkXC4crQ
-
-利用达尔文的理论学习遗传算法
-
-http://pytlab.org/2017/09/19/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95%E4%B8%AD%E5%87%A0%E7%A7%8D%E4%B8%8D%E5%90%8C%E9%80%89%E6%8B%A9%E7%AE%97%E5%AD%90%E7%9A%84%E6%AF%94%E8%BE%83/
-
-遗传算法中几种不同选择算子
-
-https://mp.weixin.qq.com/s/2TYSY7HoFrwUUeI3Z4MWSw
-
-从遗传算法到OpenAI新方向：进化策略工作机制全解
-
-https://mp.weixin.qq.com/s/erwSQfvGdyKjxONbJKFAHg
-
-基于遗传算法的拼图游戏解决方案
-
-https://mp.weixin.qq.com/s/WlAh7jKzjRzqZP-p1WJNsg
-
-利用遗传算法优化神经网络：Uber提出深度学习训练新方式
-
-https://mp.weixin.qq.com/s/NtUUbvvQrJV4LhTUN72Q3A
-
-AI并不需要互联网：利用有性生殖，合成更多样、紧凑的神经网络
-
-https://mp.weixin.qq.com/s/0esR8Z6YlWayKpz-TS2_Zg
-
-对比梯度下降与进化策略，神经进化会成为深度学习的未来吗？
-
-https://mp.weixin.qq.com/s/9ZQc3RqCCcWYDplZ4RU2oA
-
-清华段路明组发现深度学习和量子物理重要关联
-
-https://mp.weixin.qq.com/s/LbyqAA_scfdDXDe_ESWEKg
-
-姚期智：呼之欲出的量子计算机，和它漫长的最后一英里
-
-https://mp.weixin.qq.com/s/BZpNi0b7vt71MUvN7bKvbw
-
-通往人工智能未来的三路竞赛：量子vs.神经形态vs.高性能计算
-
-https://mp.weixin.qq.com/s/ULciN9h2IybE59JMO6Kcgg
-
-清华大学段路明组提出生成模型的量子算法
-
-https://mp.weixin.qq.com/s/egmodqeThnw5H7DwKRwQbw
-
-如何运用数学进行高效生产？（模拟退火算法）
 

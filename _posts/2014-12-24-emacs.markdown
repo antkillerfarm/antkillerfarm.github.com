@@ -319,6 +319,12 @@ https://github.com/myuhe/ess-R-data-view.el
 
 `:vertical diffsplit file2`——垂直对比两个文档。
 
+## 参考
+
+https://mp.weixin.qq.com/s/5694PDHy9BeoL8qy31MaxQ
+
+如何用vim格式化代码
+
 # Source Insight
 
 Shift+F8：高亮选中的字

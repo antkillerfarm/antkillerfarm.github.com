@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Java（二）, Python（二）, 推荐系统的工程细节, 孩子的编程语言
+title:  Java（二）, Python（二）, 孩子的编程语言, Javascript（二）
 category: language 
 ---
 
@@ -269,88 +269,6 @@ https://www.zhihu.com/question/19698598
 
 Python 2和Python 3有哪些主要区别？
 
-# 推荐系统的工程细节
-
-推荐系统不仅是算法，还包括若干工程细节。这些细节虽然不算复杂，够不上算法的层面，然而对产品的成败，却有举足轻重的作用。
-
-## 一般架构
-
-![](/images/article/suggest.png)
-
-## 用户数据
-
-用户自然特征：性别，年龄，地域，教育水平，出生日期，职业，星座
-
-用户兴趣特征：兴趣爱好，使用网站，浏览/收藏内容，互动内容，品牌偏好，产品偏好
-
-用户社会特征：婚姻状况，家庭情况，社交/信息渠道偏好
-
-用户消费特征：收入状况，购买力水平，已购商品，购买渠道偏好，最后购买时间，购买频次
-
-## 评价推荐质量
-
-以今日头条类的新闻推荐为例，评估指标一般为：
-
-1. 平均转化率（点击量/曝光量）
-
-2. 人均阅读篇数（点击PV/点击UV）
-
-3. 平均阅读完成率
-
-4. 人均阅读时长（这个会受文章长度影响）
-
-5. 用户互动数据（评论、分享）
-
-对评估指标的选取一般遵循以下原则：
-
-1.用户满意度。
-
-2.预测准确度。
-
-3.覆盖率。
-
-4.多样性。
-
-5.新颖性。
-
-6.惊喜度。
-
-7.信任度。
-
-8.实时性
-
-9.鲁棒性
-
-测试方法一般包括：
-
-A/B测试、双盲交叉验证
-
-需要思考的问题
-
-1.新用户/新商品的冷启动问题。
-
-2.马太效应问题。这在推荐算法中也叫做banana problem。原因是在美国这边的超市，几乎所有人都爱买banana，因为最便宜，也好吃也健康。所以过多的数据量可能会导致一个超市推荐算法疯狂推荐Banana给所有人。
-
-PS：NLP领域的TF-IDF算法可有效防止马太效应问题。
-
-参考：
-
-https://www.zhihu.com/question/26990692
-
-类似今日头条这样的个性化推荐网站怎么评价推荐质量的优劣？
-
-https://www.zhihu.com/question/19660417
-
-为什么那么多牛人成天在研究讨论算法，系统自动推荐的东西还是不能令人满意呢？
-
-## 术语
-
-GMV (Gross Merchandise Volume) 成交额
-
-![](/images/article/pv.jpg)
-
-Click-Through-Rate, 网络广告（图片广告/文字广告/关键词广告/排名广告/视频广告等）的点击到达率，即该广告的点击量（严格的来说，可以是到达目标页面的数量）除以广告的浏览量（PV- Page View）。
-
 # 孩子的编程语言
 
 ## 概述
@@ -416,5 +334,34 @@ Kodu是微软推出的面向儿童的可视化编程语言，可以让孩子自�
 官网：
 
 https://www.kodugamelab.com/
+
+# Javascript
+
+## CSS动画（续）
+
+### JS细节
+
+# onclick与href='javascript:function()'的区别
+
+1.onclick事件会比href属性先执行。
+
+2.`<a href="javascript:void(0);" onclick="function()"></a>`或者`<a href="javascript:;" onclick="function()"></a>`表示这个链接不跳转，而执行一段js脚本。
+
+## JS特效资料
+
+https://github.com/wagerfield/flat-surface-shader
+
+这个网站提供一种浮动的多边形表面的特效，适合作为登录页的背景。
+
+https://mp.weixin.qq.com/s/p8ll1R9aXc5aELtL3MAEcA
+
+用H5打造用户专属的3D机房（WebGL）
+
+## Monaco Editor
+
+Monaco Editor是MS开源的一个在线代码编辑工具，可提供类似VS code的功能。
+官网：
+
+https://microsoft.github.io/monaco-editor/
 
 

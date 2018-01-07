@@ -342,6 +342,12 @@ https://mp.weixin.qq.com/s/bUrTDj1atJSZvFeWA8H-SA
 
 正向代理和反向代理
 
+https://mp.weixin.qq.com/s/UWpp2r0_yDxNyJk-cldVyA
+
+处理器高危漏洞无人幸免？树莓派：我们不受影响
+
+>最近的Meltdown和Spectre漏洞被炒的沸沸扬扬，然而能用python语言讲述复杂的CPU计算原理，这是该文的一大创见。
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

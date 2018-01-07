@@ -78,10 +78,6 @@ https://mp.weixin.qq.com/s/kbqTHIOzAj1aERl4tm-kVA
 
 2017上半年无监督特征学习研究成果汇总
 
-https://mp.weixin.qq.com/s/tZoD4RfkDDDBxTgqDJvI3g
-
-35个热门又实用的开源AI项目！
-
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
 
 终身机器学习: 一种持续学习的范式

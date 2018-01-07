@@ -62,6 +62,8 @@ $$h^k=g^k\left[\sum_{t=0}^{k-1}f_t^k(h^t)\right]$$
 
 其中，$$h^t$$表示t时刻的隐层状态；索引k表示当前时刻；$$x^t$$表示t时刻的输入；$$f_t^k(⋅)$$表示特征提取；$$g^k$$表示对提取特征做输出前的变换。
 
+如果$$f_t^k(\cdot)$$和$$g^k(\cdot)$$每个Step都共享，那么就是HORNN，如果只有$$f_t^k(\cdot)$$共享，那么就是ResNet，两者都不共享，那就是DenseNet。
+
 ![](/images/img2/DPN.png)
 
 上图展示的是ResNet和DenseNet的示意图。图中用线填充的柱状体，表示的是主干结点的tensor的大小。
@@ -70,7 +72,13 @@ ResNet由于跨层和主干之间是element-wise的加法运算，因此每个�
 
 而DenseNet的跨层和主干之间是Concatenation运算，因此主干越往下，tensor越大。
 
+通过上面的分析，我们可以认识到 ：
 
+ResNet： 侧重于特征的再利用，但不善于发掘新的特征；
+
+DenseNet: 侧重于新特征的发掘，但又会产生很多冗余；
+
+为了综合二者的优点，作者设计了DPN网络：
 
 ![](/images/img2/DPN_2.png)
 
@@ -83,6 +91,10 @@ http://blog.csdn.net/scutlihaoyu/article/details/75645551
 http://www.cnblogs.com/mrxsc/p/7693316.html
 
 Dual Path Networks
+
+http://blog.csdn.net/u014380165/article/details/75676216
+
+DPN（Dual Path Network）算法详解
 
 # Fast Image Processing
 

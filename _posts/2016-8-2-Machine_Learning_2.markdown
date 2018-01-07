@@ -94,6 +94,10 @@ http://blog.csdn.net/zengxiantao1994/article/details/72787849
 
 极大似然估计详解
 
+https://mp.weixin.qq.com/s/7_-a-suPO4qpAQVVJyz8BQ
+
+概率论之概念解析：极大似然估计
+
 ## 指数类分布
 
 线性回归和对数回归的迭代公式相同不是偶然的，它们都是指数类分布的特例。

@@ -106,6 +106,10 @@ https://www.iteblog.com/pdf/1675
 
 Spark 2.0介绍：从RDD API迁移到DataSet API
 
+https://www.jianshu.com/p/0fe48bc43a8c
+
+spark程序jar与spark lib jar冲突，加载顺序
+
 ## transformation & action
 
 transformation是得到一个新的RDD，方式很多，比如从数据源生成一个新的RDD，从RDD生成一个新的RDD。

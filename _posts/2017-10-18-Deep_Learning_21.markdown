@@ -57,6 +57,10 @@ SSIM取值范围[0,1]，值越大，表示图像失真越小。
 
 $$MSSIM(X,Y)=\frac{1}{N}\sum_{k=1}^NSSIM(x_k,y_k)$$
 
+需要指出的是，PSNR和SSIM都是一些物理指标，它和人眼的视觉感受有一定的差异，不见得指标差的图就一定不如指标好的图（比如SRGAN）。
+
+主观得分一般采用MOS（mean opinion score）作为评价指标。
+
 参考：
 
 http://blog.csdn.net/u011692048/article/details/77496861

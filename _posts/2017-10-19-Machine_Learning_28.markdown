@@ -102,6 +102,10 @@ https://mp.weixin.qq.com/s/S-6Mb6zNzVPpxR8DbWdT-A
 
 读懂概率图模型：你需要从基本概念和参数估计开始
 
+https://mp.weixin.qq.com/s/b_0sxD0noWnuIkCxxUBlDA
+
+终极入门：马尔可夫网络 (Markov Networks)
+
 # 机器学习的算法体系&相关术语表
 
 ## 算法体系

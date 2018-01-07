@@ -149,6 +149,12 @@ $$\theta_{MAP}=\arg\max_\theta\left(\prod_{i=1}^mp(y^{(i)}\vert x^{(i)},\theta)\
 
 http://www.cs.cornell.edu/courses/cs5540/2010sp/lectures/Lec9.Estimation-continued.pdf
 
+Statistical Estimation: Least Squares, Maximum Likelihood and Maximum A Posteriori Estimators
+
+https://mp.weixin.qq.com/s/XnsbCb7H9jHmJ4dV9p2Oug
+
+频率学派还是贝叶斯学派？聊一聊机器学习中的MLE和MAP
+
 # 在线学习
 
 我们之前讨论的算法，都是给定一个训练集S，经训练之后，得到预测函数h，然后再在新的样本集上进行预测。这种方法被称为批量学习（batch learning）。

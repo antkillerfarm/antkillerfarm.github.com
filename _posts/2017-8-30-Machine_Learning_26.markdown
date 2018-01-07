@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十六）——K-摇臂赌博机, Q-learning, 动态规划
+title:  机器学习（二十六）——K-摇臂赌博机, Q-learning
 category: ML 
 ---
 

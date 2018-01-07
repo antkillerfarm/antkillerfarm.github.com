@@ -238,5 +238,8 @@ https://mp.weixin.qq.com/s/pQGjWfavwwDGckXkhH1ARA
 
 我们在UCL找到了一个糖尿病数据集，用机器学习预测糖尿病
 
+https://mp.weixin.qq.com/s/sVYzPd73rmjlm8owUGCciw
+
+南京大学提出SSWL：从半监督弱标注数据中学习多标签学习问题
 
 

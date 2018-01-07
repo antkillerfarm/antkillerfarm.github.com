@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十七）——OpenPose, 深度目标跟踪, 视频目标分割
+title:  深度学习（二十七）——OpenPose, 深度目标跟踪, 视频目标分割, AutoDL, 行人重识别
 category: DL 
 ---
 
@@ -239,4 +239,62 @@ https://mp.weixin.qq.com/s/XorPkuIdhRNI1zGLwg-55A
 https://mp.weixin.qq.com/s/t29ITfRPD3yCmRD5wJyq7g
 
 ICCV2017 PoseTrack challenge优异方法：基于检测和跟踪的视频中人体姿态估计
+
+# AutoDL
+
+DL领域目前存在的主要问题之一是：如何设计网络结构和调整超参数。目前的做法，通常依赖于作者的直觉，属于典型的拍脑袋想点子。
+
+既然AI已经能够做很多事了，那么有没有可能，使用AI自动生成网络结构呢？
+
+Google的这两篇论文在这里做了一些尝试：
+
+《Neural Architecture Search With Reinforcement Learning》
+
+《Learning Transferable Architectures for Scalable Image Recognition》
+
+这里主要采用强化学习的方法，在一个广阔的搜索空间中，寻找最合适的网络结构。但对于计算能力提出了很高的要求。论文中提到，他们使用了500块GPU。**有钱真的是可以为所欲为的。**
+
+这里学到的模型，一般被称为NASNet。
+
+参考：
+
+http://blog.csdn.net/u014380165/article/details/78525687
+
+自学网络结构（二）：Learning Transferable Architectures for Scalable Image Recognition
+
+http://blog.csdn.net/u014380165/article/details/78525500
+
+自学网络结构（一）：Neural Architecture Search With Reinforcement Learning
+
+https://www.zhihu.com/question/67477086
+
+如何评价Google最新的论文NASNet？
+
+# 行人重识别
+
+行人重识别（Person re-identification）也称行人再识别，是利用计算机视觉技术判断图像或者视频序列中是否存在特定行人的技术。广泛被认为是一个图像检索的子问题。给定一个监控行人图像，检索跨设备下的该行人图像。旨在弥补目前固定的摄像头的视觉局限，并可与行人检测/行人跟踪技术相结合 ，可广泛应用于智能视频监控、智能安保等领域。
+
+https://zhuanlan.zhihu.com/p/26168232
+
+行人重识别：从哈利波特地图说起
+
+https://mp.weixin.qq.com/s/_NDw7pFmDB07mliHTA6VYQ
+
+旷视行人再识别（ReID）突破
+
+https://zhuanlan.zhihu.com/p/31181247
+
+从人脸识别到行人重识别，下一个风口
+
+https://mp.weixin.qq.com/s/zRdJktyk1LZWUd2cyTjpiw
+
+基于图像检索的行人重识别
+
+https://zhuanlan.zhihu.com/p/31473785
+
+行人再识别中的迁移学习：图像风格转换
+
+https://mp.weixin.qq.com/s/fX94rPgNHrOaQTqBv-ZADg
+
+基于视频的行人再识别新进展：区域质量估计方法和高质量的数据集
 

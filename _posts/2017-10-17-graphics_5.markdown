@@ -56,6 +56,10 @@ Foveon X3虽然色彩不失真，但制作工艺比较复杂，目前只用在�
 
 绿色位于可见光频谱的中段，也是最常见的颜色，所以采样要多一些。
 
+除了Bayer Array之外，还有Fuji Array（主要用于Fuji相机）：
+
+![](/images/img2/Fuji.png)
+
 ## RAW Data
 
 图像sensor数字采样的结果，就是所谓的RAW Data。

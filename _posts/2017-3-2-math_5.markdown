@@ -176,6 +176,10 @@ https://mp.weixin.qq.com/s/X0nSqiQoJpEur7PM1tM-0A
 
 每个数据科学专家都应该知道的六个概率分布
 
+https://www.zhihu.com/question/26991510
+
+卡方独立性检验和卡方齐性检验的区别是什么？
+
 ## 假设检验
 
 假设检验就是根据样本对所提出的假设$$H_0$$作判断。

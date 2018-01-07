@@ -278,6 +278,14 @@ https://mp.weixin.qq.com/s/pOShNO2iOntcGSRMbR9uxg
 
 Word2Vec与GloVe技术浅析与对比
 
+https://mp.weixin.qq.com/s/L6_BV-cWR4wge2ritmyqzA
+
+让你上瘾的网易云音乐推荐算法，用Word2vec就可以实现
+
+https://mp.weixin.qq.com/s/dUadWioBqIEnG85hJFfBJQ
+
+word2vec在工业界的应用场景
+
 # RNN
 
 ## RNN的基本结构
@@ -291,7 +299,5 @@ RNN是Recurrent Neural Network和Recursive Neural Network的简称。前者主�
 从静态结构图可以看出RNN实际上和3层MLP的结构，是基本类似的。差别在于RNN的隐藏层多了一个指向自己的环状结构。
 
 上图的展开箭头右边是RNN的时序展开结构图。从纵向来看，它只是一个3层的浅层神经网络，然而从横向来看，它却是一个深层的神经网络。可见神经网络深浅与否，不仅和模型本身的层数有关，也与神经元之间的连接方式密切相关。
-
-
 
 

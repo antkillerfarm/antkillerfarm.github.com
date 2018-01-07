@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Javascript
+title:  Javascript（一）
 category: language 
 ---
 
@@ -246,9 +246,9 @@ selector {property1: value1; property2: value2; ... propertyN: valueN}
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
 | p | .p | #p | p[attr] | p0 p1 | p0>p1 | p0+p1 |
 
-# CSS动画
+## CSS动画
 
-## 动画
+### 动画
 
 HTML动画一般有两种实现方式：
 
@@ -266,7 +266,7 @@ http://daneden.github.io/animate.css/
 
 http://www.gbtags.com/technology/css/20120812-animate-css/
 
-## Step1：事件触发动画
+### Step1：事件触发动画
 
 网上的CSS动画例子，多数是加载网页时直接触发（这种最简单），少部分是鼠标移动到控件上时触发（这种方式主要使用了:hover选择器）。
 
@@ -282,7 +282,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/hello
 
 4.和AnimationEnd类似的事件，还有AnimationIteration和AnimationStart。
 
-## Step2：回调函数嵌套问题
+### Step2：回调函数嵌套问题
 
 在上面的例子中，所有的button都是同步动画的。如果想要一个接着一个播放动画的话。一种思路就是：在上一个动画的AnimationEnd事件处理函数中，启动下一个动画。但这种方法会导致回调函数的嵌套问题。
 
@@ -300,7 +300,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/hello
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/hello/super_button2.html
 
-## Step3:延迟动画
+### Step3:延迟动画
 
 除了Step2的办法之外，还可以用设置延迟属性animation-delay的办法，设定动画的播放次序。这种方法的灵活性超过前种方法，但控制难度较高，需要通过公式计算各动画的起始时间，以达到正确的效果。示例代码：
 
@@ -317,22 +317,4 @@ Step3还添加了fadeOutLeft动画，为了在两种动画之间切换，引入�
 这里通过添加引用计数的方法，来判定所有动画是否都已结束。不用担心引用计数的临界问题，因为JS是单线程执行的。
 
 此外，还要注意display和opacity的差异，前者如果不显示了，就会彻底消失，而后者不显示时，仍然还会占据它原来所在的位置。
-
-## JS细节
-
-# onclick与href='javascript:function()'的区别
-
-1.onclick事件会比href属性先执行。
-
-2.`<a href="javascript:void(0);" onclick="function()"></a>`或者`<a href="javascript:;" onclick="function()"></a>`表示这个链接不跳转，而执行一段js脚本。
-
-# JS特效资料
-
-https://github.com/wagerfield/flat-surface-shader
-
-这个网站提供一种浮动的多边形表面的特效，适合作为登录页的背景。
-
-https://mp.weixin.qq.com/s/p8ll1R9aXc5aELtL3MAEcA
-
-用H5打造用户专属的3D机房（WebGL）
 

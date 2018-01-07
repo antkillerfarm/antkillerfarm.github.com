@@ -212,4 +212,8 @@ https://mp.weixin.qq.com/s/wfCyii6bS-GxMZPg2TPaLA
 
 蒙特卡洛树搜索是什么？如何将其用于规划星际飞行？
 
+https://mp.weixin.qq.com/s/QHAnpGsr1sSaUgOXTJjVjQ
+
+李飞飞高徒带你一文读懂RL来龙去脉
+
 

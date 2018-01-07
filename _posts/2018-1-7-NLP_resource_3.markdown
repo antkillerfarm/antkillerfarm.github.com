@@ -122,3 +122,17 @@ https://mp.weixin.qq.com/s/Xy_jaOex72pLe4wwieKeUg
 
 简单有效的多标准中文分词
 
+https://mp.weixin.qq.com/s/iYChUH4VQMjkKa697GMIBg
+
+一文搞懂现代情感分析方法
+
+https://mp.weixin.qq.com/s/PIpUx3VXhwTu8PTEK4JNNw
+
+如何为神经机器翻译配置编码器-解码器模型？
+
+https://mp.weixin.qq.com/s/w5A5rvJxqRSJYMeEMlFXsQ
+
+递归卷积神经网络在解析和实体识别中的应用
+
+
+
