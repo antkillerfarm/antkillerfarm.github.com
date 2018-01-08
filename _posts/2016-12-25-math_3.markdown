@@ -114,6 +114,28 @@ MCMC和Gibbs Sampling最早都是统计力学的概念，后来才被用于机�
 
 近年来，贝叶斯学派的广泛应用，更多的原因在于计算机的计算能力大幅提升之后，由于随机样本获取成本的下降，导致了蒙特卡洛方法大行其道。
 
+参考：
+
+https://mp.weixin.qq.com/s/AsZyjwUclEoxxl2VRBekHA
+
+拟合目标函数后验分布的调参利器：贝叶斯优化
+
+https://mp.weixin.qq.com/s/psMlGLOZcmX-SmEKr2gUOg
+
+从贝叶斯定理到概率分布：综述概率论基本定义
+
+http://mp.weixin.qq.com/s/axwRMb8lCyMEh2WGIZR1rA
+
+实例详解贝叶斯推理的原理
+
+https://mp.weixin.qq.com/s/rTpmFvgRC-cKbVxQkygdNQ
+
+从概率论到多分类问题：综述贝叶斯统计分类
+
+https://mp.weixin.qq.com/s/TQfaBddaDh_jIhcaKJFx7w
+
+概率论之概念解析：用贝叶斯推断进行参数估计
+
 # PID算法
 
 PID算法是自动控制领域最基础应用也最广泛的算法。它是三个单词proportional（P，比例）、integral（I，积分）和differential（D，微分）的缩写。

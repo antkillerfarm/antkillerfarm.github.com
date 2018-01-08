@@ -290,10 +290,6 @@ https://mp.weixin.qq.com/s/h8qkDt7fmFzVxQcKkwqRzQ
 
 滴滴KDD2017论文：基于组合优化的出租车分单模型
 
-https://mp.weixin.qq.com/s/AsZyjwUclEoxxl2VRBekHA
-
-拟合目标函数后验分布的调参利器：贝叶斯优化
-
 https://mp.weixin.qq.com/s/XuoeOqGT_mJcFP08ZLq38g
 
 如何选择一个合适的数据图表？
@@ -346,21 +342,9 @@ https://mp.weixin.qq.com/s/4NDVjCXprHQvcH2Qji_5Rw
 
 浅析Axiomatic Clustering算法
 
-https://mp.weixin.qq.com/s/psMlGLOZcmX-SmEKr2gUOg
-
-从贝叶斯定理到概率分布：综述概率论基本定义
-
-http://mp.weixin.qq.com/s/axwRMb8lCyMEh2WGIZR1rA
-
-实例详解贝叶斯推理的原理
-
 https://mp.weixin.qq.com/s/yGQSihfBDcXgqBnvvpQDog
 
 蒙特卡罗方法入门
-
-https://mp.weixin.qq.com/s/rTpmFvgRC-cKbVxQkygdNQ
-
-从概率论到多分类问题：综述贝叶斯统计分类
 
 https://mp.weixin.qq.com/s/2YFjtQn9c8g7mgH5tl-egg
 

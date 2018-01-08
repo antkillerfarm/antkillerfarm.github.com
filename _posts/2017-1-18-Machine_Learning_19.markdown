@@ -159,6 +159,14 @@ https://mp.weixin.qq.com/s/I5AXiHrN02zpyhF85Ze-jg
 
 从零开始学习Gradient Boosting算法
 
+https://mp.weixin.qq.com/s/Joz2FpGgBY0tC8lpoFz8Mw
+
+AdaBoost元算法如何提高分类性能——机器学习实战
+
+https://mp.weixin.qq.com/s/6X27b97X_7OOOSijqAau9g
+
+随机森林（Random Forest）
+
 # 关联规则挖掘
 
 ## 基本概念

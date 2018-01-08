@@ -90,6 +90,14 @@ Jekyll原生支持maruku，rdiscount，kramdown，redcarpet等markdown渲染器�
 
 之前一直使用pygments作为语法高亮的着色器。近来，github推荐我使用rouge。经过一番研究才发现，pygments是用python写的，难怪windows环境下的Jekyll老是无法集成pygments。
 
+### StackEdit
+
+StackEdit是一个在线的markdown编辑工具，被CSDN等网站所使用。
+
+官网：
+
+https://stackedit.io/
+
 ## git常用命令
 
 1.创建版本库
@@ -308,3 +316,4 @@ grep -nri 'ruby' #n 显示行号，r 子目录搜索，i 忽略大小写
 {% highlight bash %}
 ip addr show br-lan | grep 'inet ' | awk  '{print $2}' | sed 's/\/.*//g'
 {% endhighlight %}
+

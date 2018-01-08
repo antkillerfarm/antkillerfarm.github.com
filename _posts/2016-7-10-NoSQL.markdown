@@ -220,6 +220,10 @@ https://www.zhihu.com/question/21217971/answer/17575573
 
 超级计算机能不能用于12306？
 
+https://mp.weixin.qq.com/s/3F5lwv5LtOqBa7S0Owf4XQ
+
+虽然难用，但12306面临的业务场景复杂度可能是世界之最
+
 ## GemFire
 
 GemFire是一个内存数据库。官网：
@@ -231,3 +235,6 @@ https://pivotal.io/pivotal-gemfire
 http://soft.zhiding.cn/software_zone/2013/1230/3007113.shtml
 
 12306采用Pivotal GemFire分布式解决方案解决尖峰高流量并发问题
+
+
+

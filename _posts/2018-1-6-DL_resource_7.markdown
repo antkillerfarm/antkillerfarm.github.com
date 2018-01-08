@@ -96,4 +96,7 @@ https://mp.weixin.qq.com/s/iZZHmxGFHQHk1rlzMzDQcg
 
 训练深度神经网络失败的罪魁祸首不是梯度消失，而是退化
 
+https://mp.weixin.qq.com/s/yvHZ9hVueYUKsMXcNQQzmQ
+
+深度学习会被可微分编程取代？
 

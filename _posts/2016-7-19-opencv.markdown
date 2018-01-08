@@ -228,6 +228,10 @@ https://mp.weixin.qq.com/s/mTcAkYBNY0uqLI9Q_5Iu1Q
 
 OpenCV中神经网络介绍与使用
 
+https://mp.weixin.qq.com/s/bY5UIKPPvDE1XBC1LyoqPg
+
+教你快速使用OpenCV/Python/dlib进行眨眼检测识别！
+
 ## 论文
 
 《Moving Gradients: A Path-Based Method for Plausible Image Interpolation》：视频帧插值算法

@@ -48,6 +48,10 @@ https://mp.weixin.qq.com/s/iL53BraKspGJ1rw7LK-3bA
 
 Logistic回归Python实战，评估销售系统的盈利能力
 
+https://mp.weixin.qq.com/s/JwsG0XzIGr5jiQqrOTGFGQ
+
+8种用Python实现线性回归的方法，究竟哪个方法最高效？
+
 # 推荐系统的工程细节
 
 推荐系统不仅是算法，还包括若干工程细节。这些细节虽然不算复杂，够不上算法的层面，然而对产品的成败，却有举足轻重的作用。
