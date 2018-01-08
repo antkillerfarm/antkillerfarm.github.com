@@ -348,6 +348,10 @@ https://mp.weixin.qq.com/s/UWpp2r0_yDxNyJk-cldVyA
 
 >最近的Meltdown和Spectre漏洞被炒的沸沸扬扬，然而能用python语言讲述复杂的CPU计算原理，这是该文的一大创见。
 
+https://mp.weixin.qq.com/s/mTOzcdjaak-z6ypL9MR2Lw
+
+小白科普：悲观锁和乐观锁
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

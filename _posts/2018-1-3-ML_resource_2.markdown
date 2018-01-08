@@ -238,4 +238,8 @@ https://mp.weixin.qq.com/s/sVYzPd73rmjlm8owUGCciw
 
 南京大学提出SSWL：从半监督弱标注数据中学习多标签学习问题
 
+https://mp.weixin.qq.com/s/BffCFKpgjf-MDKMH4V_Dig
+
+红豆Live推荐算法中召回和排序的应用和策略
+
 

@@ -300,6 +300,10 @@ http://blog.csdn.net/shenxiaolu1984/article/details/51444525
 
 超轻量级网络SqueezeNet算法详解
 
+https://mp.weixin.qq.com/s/euppu_2rhujlWz1z5S5nYA
+
+纵览轻量化卷积神经网络：SqueezeNet、MobileNet、ShuffleNet、Xception
+
 ## 其他知名CNN
 
 ### Network In Network

@@ -366,6 +366,10 @@ https://mp.weixin.qq.com/s/wrxKwY2SvJZc8bRuZ_wF_A
 
 用生成对抗网络给雪人上色，探索人工智能时代的美学
 
+https://mp.weixin.qq.com/s/lPeySqEr3pzPdZqnp1Eh8A
+
+CMU提出对抗生成网络：可实现对人脸识别模型的神经网络攻击
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。

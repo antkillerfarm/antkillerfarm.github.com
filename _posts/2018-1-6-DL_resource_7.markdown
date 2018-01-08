@@ -100,3 +100,9 @@ https://mp.weixin.qq.com/s/yvHZ9hVueYUKsMXcNQQzmQ
 
 深度学习会被可微分编程取代？
 
+https://mp.weixin.qq.com/s/KZhL477ApHgQfmM2xFrYJw
+
+Tensorlang：基于TensorFlow的可微编程语言
+
+
+
