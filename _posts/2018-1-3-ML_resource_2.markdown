@@ -242,4 +242,9 @@ https://mp.weixin.qq.com/s/BffCFKpgjf-MDKMH4V_Dig
 
 红豆Live推荐算法中召回和排序的应用和策略
 
+https://mp.weixin.qq.com/s/rE1UlhFpiaOIxQd6K9UNQg
+
+南京大学提出用于聚类的最优间隔分布机
+
+
 

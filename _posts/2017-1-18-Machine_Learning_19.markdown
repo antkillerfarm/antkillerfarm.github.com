@@ -167,6 +167,10 @@ https://mp.weixin.qq.com/s/6X27b97X_7OOOSijqAau9g
 
 随机森林（Random Forest）
 
+https://mp.weixin.qq.com/s/hGoprRIeyoXPt5OnzgV-bg
+
+集成学习算法(Ensemble Method)浅析
+
 # 关联规则挖掘
 
 ## 基本概念

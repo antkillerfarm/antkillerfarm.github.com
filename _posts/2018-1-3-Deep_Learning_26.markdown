@@ -344,3 +344,7 @@ https://mp.weixin.qq.com/s/QJm7YoCYmiF0dX8uac5w4Q
 
 旷视研究院：被遮挡人脸区域检测的技术细节
 
+https://mp.weixin.qq.com/s/Fmi9RJz-bMOYBoZWt1nWag
+
+人脸注意机制网络
+

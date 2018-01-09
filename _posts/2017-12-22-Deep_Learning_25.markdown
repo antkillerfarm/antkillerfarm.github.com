@@ -136,6 +136,10 @@ https://mp.weixin.qq.com/s/PlsFxKz_Igorh94Ni-78Hg
 
 融合MF和RNN的电影推荐系统
 
+https://mp.weixin.qq.com/s/JKMOhpLWWlrDzymDDEldXw
+
+深度学习大行其道，个性化推荐如何与时俱进？
+
 # 模型压缩
 
 对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。
@@ -297,20 +301,6 @@ https://www.zhihu.com/question/20131478
 https://www.leiphone.com/news/201502/QM7LdSN874dWXFLo.html
 
 带你了解世界最先进的手势识别技术
-
-# LCNN
-
-论文：
-
-《LCNN: Lookup-based Convolutional Neural Network》
-
-代码：
-
-https://github.com/hessamb/lcnn
-
-http://blog.csdn.net/feynman233/article/details/69785592
-
-LCNN论文阅读笔记
 
 # NN的INT8计算
 

@@ -200,10 +200,6 @@ https://mp.weixin.qq.com/s/6ksL9p1Gmnrd2HahU3KniQ
 
 ARM攒机指南——AI篇：5大千万级设备市场技术拆解
 
-https://zhuanlan.zhihu.com/p/32711259
-
-从NNVM和ONNX看AI芯片的基础运算算子
-
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293

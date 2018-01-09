@@ -4,7 +4,13 @@ title:  机器学习（四）——SVM（2）
 category: ML 
 ---
 
-## 函数边距和几何边距（续）
+## 函数边距和几何边距
+
+为了定义样本点和边界线的距离，我们引入函数边距（functional margin）和几何边距（geometric margins）的定义。
+
+函数边距的定义如下：
+
+$$\hat\gamma=\min_{i=1,\dots,m}\hat\gamma^{(i)},\hat\gamma^{(i)}=y^{(i)}(w^Tx^{(i)}+b)$$
 
 ![](/images/article/SVM_2.png)
 
@@ -228,17 +234,5 @@ $$\phi(x)=\begin{bmatrix} x \\ x^2 \\ x^3 \end{bmatrix}$$
 有的时候，我们希望将特征映射后的特征，而不是最初的特征，应用于SVM分类。这样做的情况，除了上面提到的拟合问题之外，还在于样例可能存在线性不可分的情况，而将特征映射到高维空间后，往往就可分了。如下图所示：
 
 ![](/images/article/SVM_4.png)
-
-为此，我们给出核函数（Kernel）的形式化定义：
-
-$$K(x,z)=\phi(x)^T\phi(z)$$
-
-之所以是形式化定义，这主要在于我们并不利用$$\phi(x)$$来计算$$K(x,z)$$，而是给定K(x,z)，来倒推$$\phi(x)$$，从而建立$$\phi(x)$$和$$K(x,z)$$之间的对应关系。
-
-例如：
-
-$$\begin{align}K(x,z)&=(x^Tz)^2=\left(\sum_{i=1}^nx_iz_i\right)\left(\sum_{i=1}^nx_iz_i\right)
-\\&=\sum_{i=1}^n\sum_{j=1}^nx_ix_jz_iz_j=\sum_{i,j=1}^n(x_ix_j)(z_iz_j)
-\end{align}$$
 
 

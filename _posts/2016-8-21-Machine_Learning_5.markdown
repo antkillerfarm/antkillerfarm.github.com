@@ -6,6 +6,18 @@ category: ML
 
 ## 核函数（续）
 
+为此，我们给出核函数（Kernel）的形式化定义：
+
+$$K(x,z)=\phi(x)^T\phi(z)$$
+
+之所以是形式化定义，这主要在于我们并不利用$$\phi(x)$$来计算$$K(x,z)$$，而是给定K(x,z)，来倒推$$\phi(x)$$，从而建立$$\phi(x)$$和$$K(x,z)$$之间的对应关系。
+
+例如：
+
+$$\begin{align}K(x,z)&=(x^Tz)^2=\left(\sum_{i=1}^nx_iz_i\right)\left(\sum_{i=1}^nx_iz_i\right)
+\\&=\sum_{i=1}^n\sum_{j=1}^nx_ix_jz_iz_j=\sum_{i,j=1}^n(x_ix_j)(z_iz_j)
+\end{align}$$
+
 根据上式可得：（这里假设$$n=3$$）
 
 $$\phi(x)=\begin{bmatrix}

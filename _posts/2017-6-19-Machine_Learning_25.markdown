@@ -216,4 +216,8 @@ https://mp.weixin.qq.com/s/QHAnpGsr1sSaUgOXTJjVjQ
 
 李飞飞高徒带你一文读懂RL来龙去脉
 
+https://mp.weixin.qq.com/s/iN8q24ka762LqY74zoVFsg
+
+3万字剖析强化学习在电商环境下应用
+
 

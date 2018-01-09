@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十二）——VESPCN, SRGAN, DemosaicNet, SVDF
+title:  深度学习（二十二）——VESPCN, SRGAN, DemosaicNet, SVDF, LCNN
 category: DL 
 ---
 
@@ -119,5 +119,22 @@ $$w_{i,j}^{(m)}\approx \alpha_i^{(m)}\beta_i^{(m)}$$
 
 SVDF将运算量从$$Cd$$变为$$(C+d)k$$，这里的k为filters numbers。
 
-这实际上就是2维tensor的SVD，只不过SVD是线性变换，而这里是非线性变换而已。
+这实际上就是2维tensor的SVD，只不过SVD是线性变换，而这里是非线性变换而已。（参见《机器学习（十五）》中的ALS算法部分）
+
+# LCNN
+
+论文：
+
+《LCNN: Lookup-based Convolutional Neural Network》
+
+代码：
+
+https://github.com/hessamb/lcnn
+
+参考：
+
+http://blog.csdn.net/feynman233/article/details/69785592
+
+LCNN论文阅读笔记
+
 
