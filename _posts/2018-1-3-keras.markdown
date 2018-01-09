@@ -6,6 +6,8 @@ category: AI
 
 # Keras
 
+## 概述
+
 Keras是深度学习的前端框架的集大成者，其后端可支持tensorflow、cntk、theano等。
 
 所谓DL前端框架一般只提供对于DL的高层抽象和封装，至于具体的运算则由具体的后端来实现。
@@ -22,7 +24,24 @@ https://github.com/fchollet/keras/
 
 `sudo pip install keras`
 
-参考：
+## 实战GAN
+
+最近实战了一下GAN，主要参考了以下文章：
+
+https://myurasov.github.io/2017/09/24/wasserstein-gan-keras.html
+
+Wasserstein GAN in Keras
+
+它的中文版：
+
+http://mp.weixin.qq.com/s/F2gBP23LCEF72QDlugbBZQ
+
+详解如何使用Keras实现Wassertein GAN
+
+
+
+
+## 参考
 
 https://mp.weixin.qq.com/s/tyWUxJndljOSZT1-aYPgeg
 
@@ -51,10 +70,6 @@ Keras TensorFlow教程：如何从零开发一个复杂深度学习模型
 http://mp.weixin.qq.com/s/sQKhopzS4EOcYwjrM8E7xQ
 
 十分钟搞定Keras序列到序列学习
-
-http://mp.weixin.qq.com/s/F2gBP23LCEF72QDlugbBZQ
-
-详解如何使用Keras实现Wassertein GAN
 
 https://mp.weixin.qq.com/s/PR5gQYEse9KxhSkEVglRWg
 

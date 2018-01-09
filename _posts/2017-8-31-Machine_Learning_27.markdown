@@ -130,3 +130,8 @@ http://www.cs.upc.edu/~mmartin/Ag4-4x.pdf
 
 Bellman equations and optimal policies
 
+https://mp.weixin.qq.com/s/a1C1ezL59azNfdM3TFGaGw
+
+递推与储存，是动态规划的关键
+
+

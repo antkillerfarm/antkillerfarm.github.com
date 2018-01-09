@@ -124,6 +124,12 @@ $$IR(A,B)=\frac{|support(A)-support(B)|}{(support(A)+support(B)-support(A\cap B)
 
 http://www.cnblogs.com/fengfenggirl/p/associate_measure.html
 
+关联规则评价
+
+https://mp.weixin.qq.com/s/s1Snb4XnIQk1DcK3nESilw
+
+PrefixSpan算法原理详解
+
 # PageRank算法
 
 ## 概述

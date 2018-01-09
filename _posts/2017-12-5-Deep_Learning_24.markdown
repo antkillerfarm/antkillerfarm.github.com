@@ -199,10 +199,6 @@ https://mp.weixin.qq.com/s/cvSz5Pxe3z54Tl5z3WTbQA
 
 手把手教你在音频分类DCASE2017比赛中夺冠
 
-https://mp.weixin.qq.com/s/uh-Gh8BSxBi-jjG6-d7-UQ
-
-TACOTRON一种端到端的Text-to-Speech合成模型
-
 https://mp.weixin.qq.com/s/UGhkTavbh21vBhtrrBeTfw
 
 麦克风阵列的语音信号处理技术
@@ -295,10 +291,6 @@ https://mp.weixin.qq.com/s/E8brCI73IWY3P47IYPxSkg
 
 谷歌发布全新端到端语音识别系统：词错率降至5.6%
 
-https://mp.weixin.qq.com/s/MJE2JRYU7KakNKmHkD42CA
-
-谷歌发布TTS新系统Tacotron 2：直接从文本生成类人语音
-
 http://www.cnblogs.com/qcloud1001/p/7941158.html
 
 详解卷积神经网络（CNN）在语音识别中的应用
@@ -346,6 +338,30 @@ https://github.com/baidu-research/warp-ctc
 非官方caffe版本：
 
 https://github.com/xmfbit/warpctc-caffe
+
+## Tacotron
+
+论文：
+
+《Tacotron: A Fully End-to-End Text-To-Speech Synthesis Model》
+
+![](/images/img2/Tacotron.png)
+
+![](/images/img2/Tacotron_2.png)
+
+参考：
+
+https://mp.weixin.qq.com/s/MJE2JRYU7KakNKmHkD42CA
+
+谷歌发布TTS新系统Tacotron 2：直接从文本生成类人语音
+
+https://mp.weixin.qq.com/s/uh-Gh8BSxBi-jjG6-d7-UQ
+
+Tacotron一种端到端的Text-to-Speech合成模型
+
+https://www.jiqizhixin.com/articles/2017-03-31-5
+
+谷歌全端到端语音合成系统Tacotron：直接从字符合成语音
 
 # Spiking Neuron Networks
 

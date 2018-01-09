@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十二）——VESPCN, SRGAN, DemosaicNet
+title:  深度学习（二十二）——VESPCN, SRGAN, DemosaicNet, SVDF
 category: DL 
 ---
 
@@ -107,8 +107,17 @@ SVDF是UCB和Google Speech Group的作品，主要用于简化Speech模型的计
 
 https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/speech_commands/models.py
 
+音频数据通常是一个[time, frequency]的二维tensor，直接放入FC网络，会导致较大的计算量。（下图左半部分所示）
+
 ![](/images/img2/SVDF.png)
 
-上图
+SVDF将每个time的frequency作为一组，进行FC之后，再和其他组的结果进一步FC。上图右半部分所示的是time的filters为1的时候的SVDF。当然filters也可以为其他值，和CNN类似，filters越多，提取的特征越多。
+
+从原理来说，SVDF相当于用两层FC来拟合1层FC，即：
 
 $$w_{i,j}^{(m)}\approx \alpha_i^{(m)}\beta_i^{(m)}$$
+
+SVDF将运算量从$$Cd$$变为$$(C+d)k$$，这里的k为filters numbers。
+
+这实际上就是2维tensor的SVD，只不过SVD是线性变换，而这里是非线性变换而已。
+

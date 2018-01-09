@@ -32,6 +32,10 @@ http://kexue.fm/category/Big-Data/
 
 苏剑林的blog。
 
+https://github.com/ChengjinLi
+
+群主的github
+
 http://blog.csdn.net/shenxiaolu1984
 
 一个深度学习的blog。
