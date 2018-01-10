@@ -104,5 +104,12 @@ https://mp.weixin.qq.com/s/KZhL477ApHgQfmM2xFrYJw
 
 Tensorlang：基于TensorFlow的可微编程语言
 
+https://mp.weixin.qq.com/s/ZIDiFrN3qQV4u-m9Wr3wiA
+
+斯坦福完全可解释深度神经网络：你需要用决策树搞点事
+
+https://mp.weixin.qq.com/s/M7w7tMVd23YToIW7DypYjA
+
+用DL实现Bug自动归类：微软研究院提出DBRNN-A
 
 

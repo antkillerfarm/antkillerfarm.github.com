@@ -131,6 +131,8 @@ SVDF将运算量从$$Cd$$变为$$(C+d)k$$，这里的k为filters numbers。
 
 https://github.com/hessamb/lcnn
 
+![](/images/img2/LCNN.png)
+
 参考：
 
 http://blog.csdn.net/feynman233/article/details/69785592

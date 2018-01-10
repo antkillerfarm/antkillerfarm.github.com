@@ -400,3 +400,8 @@ https://mp.weixin.qq.com/s/WCRYppBLdl_M4etUChnfgw
 
 PyMC3和Theano代码构建贝叶斯深度网络
 
+https://mp.weixin.qq.com/s/2gBoVr_072DLJ_MMHPHNLQ
+
+这8种神经网络结构，你掌握了几个？
+
+

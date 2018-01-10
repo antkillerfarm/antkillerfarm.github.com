@@ -38,8 +38,9 @@ http://mp.weixin.qq.com/s/F2gBP23LCEF72QDlugbBZQ
 
 详解如何使用Keras实现Wassertein GAN
 
+这是另一个GAN实现：
 
-
+https://github.com/lukedeo/keras-acgan/blob/master/mnist_acgan.py
 
 ## 参考
 

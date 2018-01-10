@@ -114,3 +114,8 @@ https://mp.weixin.qq.com/s/ZSbNOBp8D_qOY0HydTdP8g
 
 清华大学刘知远：在深度学习时代用HowNet搞事情
 
+https://mp.weixin.qq.com/s/6uzW_NNtYUUT8-QRfRKZAg
+
+华人NLP最杰出HowNet成功融入DL模型
+
+

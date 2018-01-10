@@ -330,4 +330,8 @@ https://mp.weixin.qq.com/s/IVSoI6QM1uY3JLKMiha9vQ
 
 微软亚洲研究院论文解读：基于动态词表的对话生成研究
 
+https://mp.weixin.qq.com/s/C9UbA0482F8SvB27i-V_9Q
+
+微软亚洲研究院周明：自然语言对话引擎
+
 

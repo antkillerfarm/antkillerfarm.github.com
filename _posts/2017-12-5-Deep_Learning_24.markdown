@@ -98,6 +98,10 @@ https://mp.weixin.qq.com/s/PDyp_GO0ovWV0KoGTwp_gQ
 
 简述迁移学习在深度学习中的应用
 
+https://mp.weixin.qq.com/s/FHmijTVqQ26osp6PzZsbvQ
+
+付彦伟：零样本、小样本以及开集条件下的社交媒体分析
+
 # 语音识别
 
 ## 书籍

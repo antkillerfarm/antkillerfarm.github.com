@@ -52,6 +52,14 @@ https://mp.weixin.qq.com/s/JwsG0XzIGr5jiQqrOTGFGQ
 
 8种用Python实现线性回归的方法，究竟哪个方法最高效？
 
+https://mp.weixin.qq.com/s/4j-DgtlxGKCx8SvLEBgjoA
+
+Python上的图模型与概率建模工具包：pomegranate
+
+https://mp.weixin.qq.com/s/2Gd-2BLZy7LdvOenbM2Fsg
+
+用hmmlearn学习隐马尔科夫模型HMM
+
 # 推荐系统的工程细节
 
 推荐系统不仅是算法，还包括若干工程细节。这些细节虽然不算复杂，够不上算法的层面，然而对产品的成败，却有举足轻重的作用。

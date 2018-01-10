@@ -306,6 +306,10 @@ https://mp.weixin.qq.com/s/L4CMKS53pNyvhhqvQhja0g
 
 5种商业AI产品的技术架构设计
 
+https://mp.weixin.qq.com/s/IqjKdAlGYREqCR9XQB5N1A
+
+伯克利AI分布式框架Ray，兼容TensorFlow、PyTorch与MXNet
+
 ## 面试
 
 https://www.zhihu.com/question/41233373

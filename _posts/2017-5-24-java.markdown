@@ -269,6 +269,10 @@ https://www.zhihu.com/question/19698598
 
 Python 2和Python 3有哪些主要区别？
 
+https://mp.weixin.qq.com/s/-CaMHjsY580et8Hh_D2FSg
+
+简约而不简单的Django新手图文教程
+
 # 孩子的编程语言
 
 ## 概述

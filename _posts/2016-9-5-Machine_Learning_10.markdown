@@ -107,6 +107,10 @@ https://mp.weixin.qq.com/s/9G_7Ax9cPcQcYVqEfc-pyw
 
 从基础知识到实际应用，一文了解“机器学习非凸优化技术”
 
+https://mp.weixin.qq.com/s/JSnPTVRgXO3aih5srU1eZQ
+
+EM算法原理总结
+
 ## 重新审视混合高斯模型
 
 下面给出混合高斯模型各参数的推导过程。
