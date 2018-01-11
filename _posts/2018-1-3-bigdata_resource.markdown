@@ -308,3 +308,8 @@ https://www.zhihu.com/question/64745484
 
 ICO、比特币、区块链特么是什么玩意？
 
+https://mp.weixin.qq.com/s/cwcVveWh0QVoBhJro3dcRg
+
+如何简单快速的了解"区块链"技术
+
+

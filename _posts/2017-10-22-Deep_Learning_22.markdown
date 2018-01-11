@@ -123,6 +123,8 @@ SVDF将运算量从$$Cd$$变为$$(C+d)k$$，这里的k为filters numbers。
 
 # LCNN
 
+LCNN是华盛顿大学和Allen AI研究所的作品。后者是微软创始人Paul Allen投资兴建的研究机构。
+
 论文：
 
 《LCNN: Lookup-based Convolutional Neural Network》
@@ -132,6 +134,12 @@ SVDF将运算量从$$Cd$$变为$$(C+d)k$$，这里的k为filters numbers。
 https://github.com/hessamb/lcnn
 
 ![](/images/img2/LCNN.png)
+
+上图是LCNN的结构图。
+
+我们知道一个Conv层的weight是一个$$n\times m\times k_w \times k_h$$的tensor，这里的n,m分别是input和output的channel数，$$k_w,k_h$$则是kernel的宽和高。
+
+
 
 参考：
 
