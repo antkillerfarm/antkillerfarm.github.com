@@ -118,6 +118,10 @@ http://www.cnblogs.com/ymjyqsx/p/6294021.html
 
 PReLU与ReLU
 
+http://www.cnblogs.com/pinard/p/6437495.html
+
+深度神经网络（DNN）损失函数和激活函数的选择
+
 # Deep Residual Network
 
 无论采用何种方法，可训练的神经网络的层数都不可能无限深。有的时候，即使没有梯度消失，也存在训练退化（即深层网络的效果还不如浅层网络）的问题。

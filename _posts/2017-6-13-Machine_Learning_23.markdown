@@ -208,6 +208,10 @@ https://mp.weixin.qq.com/s/hK6BJGAPyg_RqqilCcf2NA
 
 全局自动优化：C++机器学习库dlib引入自动调参算法
 
+https://mp.weixin.qq.com/s/zFGQzC_uQdAwlr9BzA-CYg
+
+深度学习需要了解的四种神经网络优化算法
+
 # 单分类SVM&多分类SVM
 
 原始的SVM主要用于二分类，然而稍加变化，也可用于单分类和多分类。

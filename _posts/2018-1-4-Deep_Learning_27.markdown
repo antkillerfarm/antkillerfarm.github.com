@@ -22,9 +22,13 @@ OpenPose的使用效果如上图所示。
 
 《Convolutional pose machines》
 
-代码：
+官方代码（caffe）：
 
 https://github.com/CMU-Perceptual-Computing-Lab/openpose
+
+Tensorflow版本：
+
+https://github.com/ildoonet/tf-pose-estimation
 
 # 深度目标跟踪
 

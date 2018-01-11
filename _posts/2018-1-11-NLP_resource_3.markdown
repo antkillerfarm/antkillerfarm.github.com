@@ -134,5 +134,8 @@ https://mp.weixin.qq.com/s/w5A5rvJxqRSJYMeEMlFXsQ
 
 递归卷积神经网络在解析和实体识别中的应用
 
+https://mp.weixin.qq.com/s/VpWabo7_ekA7j_fw2ZuDdA
+
+白硕：人工智能的诗与远方，一文读懂NLP起源、流派和技术
 
 

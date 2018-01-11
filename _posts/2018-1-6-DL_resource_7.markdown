@@ -112,4 +112,9 @@ https://mp.weixin.qq.com/s/M7w7tMVd23YToIW7DypYjA
 
 用DL实现Bug自动归类：微软研究院提出DBRNN-A
 
+https://mp.weixin.qq.com/s/kLXJsHbBnRIFC3NLChPhzA
+
+如何高效进行大规模分类？港中文联合商汤提出新方法
+
+
 

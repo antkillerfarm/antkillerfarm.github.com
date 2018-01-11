@@ -352,6 +352,10 @@ https://mp.weixin.qq.com/s/mTOzcdjaak-z6ypL9MR2Lw
 
 小白科普：悲观锁和乐观锁
 
+https://mp.weixin.qq.com/s/SBVEo53irSZfI40sBFZXWQ
+
+shift：解决shell编程中的入参问题
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

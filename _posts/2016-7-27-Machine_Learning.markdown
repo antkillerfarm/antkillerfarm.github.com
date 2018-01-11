@@ -134,7 +134,15 @@ $$x_{k+1}=x_k-t_kA_k\nabla f(x_k)$$
 
 http://freemind.pluskid.org/machine-learning/gradient-descent-wolfe-s-condition-and-logistic-regression/
 
+Gradient Descent, Wolfe's Condition and Logistic Regression
+
 http://freemind.pluskid.org/machine-learning/newton-method/
+
+Newton Method
+
+https://mp.weixin.qq.com/s/7fk6-gK-gpnWubEr_i7aAg
+
+通俗理解凸函数及它的一阶特征
 
 ## LMS算法
 

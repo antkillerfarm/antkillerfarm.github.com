@@ -108,6 +108,10 @@ https://mp.weixin.qq.com/s/8rP3fF9iVnplhkFmxuj6fw
 
 一文读懂KMP算法
 
+https://mp.weixin.qq.com/s/if7P0yq59DbBEjW15vfaQA
+
+推荐一个高效算法wumanber：每秒680万匹配！
+
 # 高斯过程回归
 
 从大的分类来说，机器学习的算法可分为两类：

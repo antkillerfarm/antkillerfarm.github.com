@@ -246,5 +246,8 @@ https://mp.weixin.qq.com/s/rE1UlhFpiaOIxQd6K9UNQg
 
 南京大学提出用于聚类的最优间隔分布机
 
+https://mp.weixin.qq.com/s/b6eK8oQtFCF1KQS1Lay_zA
+
+将应用机器学习转化为求解搜索问题
 
 

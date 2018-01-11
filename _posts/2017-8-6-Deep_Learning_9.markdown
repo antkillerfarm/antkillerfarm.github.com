@@ -370,6 +370,10 @@ https://mp.weixin.qq.com/s/lPeySqEr3pzPdZqnp1Eh8A
 
 CMU提出对抗生成网络：可实现对人脸识别模型的神经网络攻击
 
+https://mp.weixin.qq.com/s/A66WeHH77IOCv61RHiDE0w
+
+生成式对抗网络（GAN）如何快速理解？这里有一篇最直观的解读
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。

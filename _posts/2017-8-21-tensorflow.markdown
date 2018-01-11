@@ -88,9 +88,17 @@ curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
 sudo apt-get update && sudo apt-get install bazel
 {% endhighlight %}
 
-Bazel的官网文档：
+官网：
+
+https://bazel.build/
+
+文档：
 
 https://docs.bazel.build/versions/master/bazel-user-manual.html
+
+下载：
+
+https://github.com/bazelbuild/bazel/releases
 
 **Step 2**：编译TensorFlow。
 
@@ -122,6 +130,20 @@ bazel编译相当消耗资源，在配置低的机器上，可通过如下选项
 
 加入CPU指令集优化之后的版本，要比通用版快50%～100%，因此，编译源码安装还是很有价值的。
 
+GPU编译基本和CPU编译差不多，唯一需要注意的是：Ubuntu 16.04的gcc编译器是5.4.0，然而CUDA 8.0不支持5.0以上的编译器，因此需要降级，把编译器版本降到4.9。命令如下：
+
+`sudo apt-get install g++-4.9`
+
+configure脚本会询问使用什么版本的gcc，填`/usr/bin/gcc-4.9`即可。
+
+此外，Bazel的版本也要和其他部件一致。
+
+这里给出本人试验成功的一组配置：
+
+| Tensorflow | CUDA | CUDNN | gcc | bazel |
+|:--:|:--:|:--:|:--:|:--:|
+| 1.3.1 | 8.0 | 5.1.5 | 4.9 | 0.5.4 |
+
 参考：
 
 http://www.jianshu.com/p/b1faa10c9238
@@ -135,6 +157,10 @@ http://www.hankcs.com/ml/compile-and-install-tensorflow-from-source.html
 http://blog.csdn.net/sinat_28731575/article/details/74633476
 
 Mac下使用源码编译安装TensorFlow CPU版本
+
+http://www.cnblogs.com/wangduo/p/7383989.html
+
+Ubuntu 16.04+CUDA 8.0+cuDNN v5.1+TensorFlow(GPU support)安装配置详解
 
 ## 基本概念
 
@@ -342,40 +368,5 @@ sess = tf.Session()
 sess.run(tf.global_variables_initializer())
 saver.save(sess, 'my_test_model')
 {% endhighlight %}
-
-### 加载模型
-
-{% highlight python %}
-new_saver = tf.train.import_meta_graph('my_test_model-1000.meta')
-new_saver.restore(sess, tf.train.latest_checkpoint('./‘))
-{% endhighlight %}
-
-参考：
-
-http://www.cnblogs.com/azheng333/archive/2017/06/09/6972619.html
-
-Tensorflow模型保存和加载
-
-http://blog.csdn.net/wiinter_fdd/article/details/72821923
-
-Tensorflow中的模型持久化
-
-https://mp.weixin.qq.com/s/3GfxnwzIeeQj1LVSYKnZjQ
-
-如何保存和恢复TensorFlow训练的模型？
-
-## TFRecord
-
-TFRecord是TensorFlow官方定义的存放样本数据文件。
-
-参考：
-
-http://www.cnblogs.com/antflow/p/7299029.html
-
-TFRecord的使用
-
-https://zhuanlan.zhihu.com/p/27481108
-
-TensorFlow直接读取图片和读写TFRecords速度对比
 
 

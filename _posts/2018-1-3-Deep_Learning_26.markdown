@@ -186,6 +186,14 @@ https://www.openu.ac.il/home/hassner/projects/cnn_agegender/
 
 Age and Gender Classification using Convolutional Neural Networks
 
+## DeepFace
+
+《DeepFace: Closing the Gap to Human-Level Performance in Face Verification》
+
+DeepFace先进行了两次全卷积＋一次池化，提取了低层次的边缘／纹理等特征。
+
+后接了3个Local-Conv层，这里是用Local-Conv的原因是，人脸在不同的区域存在不同的特征（眼睛／鼻子／嘴的分布位置相对固定），当不存在全局的局部特征分布时，Local-Conv更适合特征的提取。
+
 ## 参考
 
 http://www.cnblogs.com/pandaroll/p/6590339.html

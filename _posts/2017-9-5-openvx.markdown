@@ -148,6 +148,22 @@ Intel Math Kernel Library是一套经过高度优化和广泛线程化的数学�
 
 https://software.intel.com/zh-cn/mkl
 
+## Neon
+
+Neon是个大路货的名字，在数值计算领域ARM和Intel都有叫Neon的硬件或技术。
+
+ARM的Neon是适用于ARM Cortex-A系列处理器的一种128位SIMD扩展结构。它主要聚焦于矩阵运算，当然也可用于DL领域。
+
+官网：
+
+https://developer.arm.com/technologies/neon
+
+Intel的Neon专为DL设计。
+
+官网：
+
+https://ai.intel.com/neon/
+
 ## NetLib
 
 NetLib是一个数学方面的网站，收集了大量的数学软件和论文。官网：
