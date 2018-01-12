@@ -296,3 +296,8 @@ https://mp.weixin.qq.com/s/lstCIiNs_qA6k7GCYUBv2w
 
 阿尔伯塔大学提出新型多步强化学习方法，结合已有TD算法实现更好性能
 
+https://mp.weixin.qq.com/s/af10gqXNfohPEISSnpJ0tQ
+
+UCB吴翼&FAIR田渊栋等人提出强化学习环境Hourse3D
+
+

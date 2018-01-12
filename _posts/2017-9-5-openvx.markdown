@@ -280,6 +280,10 @@ http://www.jianshu.com/p/8687a040eb48
 
 GPU处理图像Shader的入门
 
+https://mp.weixin.qq.com/s/bvNnzkOzGYYYewc3G9DOIw
+
+GPU是如何优化运行机器学习算法的？
+
 # 爬虫
 
 ## 自动解析网页的结构化数据

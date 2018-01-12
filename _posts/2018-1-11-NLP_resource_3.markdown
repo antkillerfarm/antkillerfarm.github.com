@@ -138,4 +138,20 @@ https://mp.weixin.qq.com/s/VpWabo7_ekA7j_fw2ZuDdA
 
 白硕：人工智能的诗与远方，一文读懂NLP起源、流派和技术
 
+https://mp.weixin.qq.com/s/xGb1ZtTx_iMvGCzsHaOPig
+
+清华大学刘洋：基于深度学习的机器翻译
+
+https://mp.weixin.qq.com/s/apwceKm6BvAJ2962b1mnBg
+
+基于注意力机制的神经匹配模型用于短文本检索
+
+https://mp.weixin.qq.com/s/SfFRXlekKkEapbjoSeKEog
+
+自然语言处理中N-Gram模型介绍
+
+https://mp.weixin.qq.com/s/NdY9cL5_SDrqWAGAyrFxsA
+
+阿里妈妈首次公开新一代自研智能检索模型
+
 

@@ -50,10 +50,6 @@ http://www.cnblogs.com/lxy2017/p/3927456.html
 
 TLD（Tracking-Learning-Detection）一种目标跟踪算法
 
-
-
-
-
 # 压缩感知
 
 http://blog.csdn.net/abcjennifer/article/details/7721834
@@ -128,6 +124,10 @@ https://mp.weixin.qq.com/s/q5mPN_rt1Af5L2fnxuTdCA
 
 46款数据可视化分析工具大集合
 
+https://mp.weixin.qq.com/s/tHNd6y2v7GXN2mSIv0qXlg
+
+手把手：一张图看清编程语言发展史，你也能用Python画出来！
+
 ## howmuch.net
 
 howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：
@@ -137,4 +137,12 @@ howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如
 网址：
 
 https://howmuch.net/
+
+## Gephi
+
+Gephi是一个针对图和网络的可视化工具。
+
+官网：
+
+https://gephi.org/
 

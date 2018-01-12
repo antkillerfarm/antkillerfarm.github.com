@@ -133,13 +133,33 @@ LCNN是华盛顿大学和Allen AI研究所的作品。后者是微软创始人Pa
 
 https://github.com/hessamb/lcnn
 
+我们知道一个Conv层的weight是一个$$n\times m\times k_w \times k_h$$的tensor，这里的m,n分别是input和output的channel数，$$k_w,k_h$$则是kernel的宽和高。
+
+LCNN将这个巨大的weight tensor拆解成若干小tensor的运算：
+
+1.建立一个包含k个$$m\times k_w \times k_h$$大小的tensor的字典D。
+
+2.一个用于选择字典条目的矩阵I。
+
+3.权值矩阵C。
+
+然后按照下图所示的方法，计算得到W：
+
 ![](/images/img2/LCNN.png)
 
-上图是LCNN的结构图。
+用数学公式表示，则为：
 
-我们知道一个Conv层的weight是一个$$n\times m\times k_w \times k_h$$的tensor，这里的n,m分别是input和output的channel数，$$k_w,k_h$$则是kernel的宽和高。
+$$W_{[:,r,c]}=\sum_{t=1}^sC_{[t,r,c]}\cdot D_{[I_{[t,r,c]},:]},\forall r,c$$
 
+![](/images/img2/LCNN_2.png)
 
+上图是LCNN的前向运算示意图，其中:
+
+$$S_{[i,:,:]}=X*D_{[i,:]}$$
+
+这个过程实际上等效于$$S*P$$，而参数P就是我们需要训练的模型参数。
+
+可以看出LCNN和SVDF都是采用稀疏表示的方法来减少运算量，只是实现方式和用途略有不同而已。
 
 参考：
 

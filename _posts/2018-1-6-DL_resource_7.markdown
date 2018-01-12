@@ -116,5 +116,12 @@ https://mp.weixin.qq.com/s/kLXJsHbBnRIFC3NLChPhzA
 
 如何高效进行大规模分类？港中文联合商汤提出新方法
 
+https://mp.weixin.qq.com/s/epMbn9QmvMWfefPdkWwYYw
+
+神经网络决策过程可视化：AI眼中马云、马化腾、李彦宏谁最有吸引力？
+
+https://mp.weixin.qq.com/s/4b4TPkIRPJ3VBkCOA6kbxw
+
+前端慌不慌？用深度学习自动生成HTML代码
 
 

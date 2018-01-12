@@ -42,6 +42,14 @@ http://mp.weixin.qq.com/s/F2gBP23LCEF72QDlugbBZQ
 
 https://github.com/lukedeo/keras-acgan/blob/master/mnist_acgan.py
 
+应该说GAN的训练，的确是一件非常麻烦，且有相当不确定性的事情。我试了若干版本的示例之后，才终于训练成功。
+
+我的代码示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/keras/hello_gan1.py
+
+由于这里的随机因素实在太多，训练失败有时也许并不是代码的问题，即使成功也往往在数十epoch之后，计算量实在太大。我自己的示例用GTX 1080跑了11个小时。
+
 ## 参考
 
 https://mp.weixin.qq.com/s/tyWUxJndljOSZT1-aYPgeg
@@ -132,5 +140,8 @@ https://github.com/yanpanlau/DDPG-Keras-Torcs
 
 Using Keras and Deep Deterministic Policy Gradient to play TORCS
 
+https://mp.weixin.qq.com/s/qbyfErK7IC2tx7uJfzCg2g
+
+seq2seq模型实例：用Keras实现机器翻译
 
 

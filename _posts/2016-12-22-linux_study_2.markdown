@@ -444,12 +444,4 @@ https://mp.weixin.qq.com/s/_RAXrlGPeN_3D6dhJFf6Qg
 
 让互联网更快的协议，QUIC在腾讯的实践及性能优化
 
-# Kannel
 
-Kannel是一个开源的WAP&SMS网关项目。
-
-官网：
-
-http://www.kannel.org/
-
-这里提到这个项目，并非
