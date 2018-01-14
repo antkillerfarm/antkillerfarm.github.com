@@ -1,10 +1,65 @@
 ---
 layout: post
-title:  深度学习（九）——fine-tuning
+title:  深度学习（九）——GAN（2）
 category: DL 
 ---
 
 # GAN（续）
+
+## 如何对抗
+
+因为$$D(Y,\Theta)$$的均值，也就是L，是度量两个分布的差异程度，这就意味着，L要能够将两个分布区分开来，即L越大越好；但是我们最终的目的，是希望通过均匀分布而生成我们指定的分布，所以$$G(X,\theta)$$则希望两个分布越来越接近，即L越小越好。
+
+形式化的描述就是：
+
+$$\arg \min_G \max_D V(G,D)$$
+
+具体的做法是：
+
+### Step1
+
+随机初始化$$G(X,\theta)$$，固定它，然后生成一批Y，这时候我们要训练$$D(Y,\Theta)$$，既然L代表的是“与指定样本Z的差异”，那么，如果将指定样本Z代入L，结果应该是越小越好，而将Y代入L，结果应该是越大越好，所以
+
+$$\begin{aligned}\Theta =& \mathop{\arg\min}_{\Theta} L = \mathop{\arg\min}_{\Theta} \frac{1}{N}\sum_{i=1}^N D\Big(z_i,\Theta\Big)\\ 
+\Theta =& \mathop{\arg\max}_{\Theta} L = \mathop{\arg\max}_{\Theta} \frac{1}{M}\sum_{i=1}^M D\Big(y_i,\Theta\Big)\end{aligned}$$
+
+然而有两个目标并不容易平衡，所以干脆都取同样的样本数B（一个batch），然后一起训练就好：
+
+$$\begin{aligned}\Theta =& \mathop{\arg\min}_{\Theta} L_1\\ 
+=&\mathop{\arg\min}_{\Theta} \frac{1}{B}\sum_{i=1}^B\left[D\Big(z_i,\Theta\Big)-D\Big(y_i,\Theta\Big)\right]\end{aligned}$$
+
+### Step2
+
+$$G(X,\theta)$$希望它生成的样本越接近真实样本越好，因此这时候把$$\Theta$$固定，只训练$$\theta$$让L越来越小：
+
+$$\begin{aligned}\theta =& \mathop{\arg\min}_{\theta} L_2\\ 
+=&\mathop{\arg\min}_{\theta} \frac{1}{B}\sum_{i=1}^B\left[D\Big(G(x_i,\theta),\Theta\Big)\right]\end{aligned}$$
+
+## Lipschitz约束
+
+稍微思考一下，我们就发现，问题还没完。我们目前还没有对D做约束，不难发现，无约束的话Loss基本上会直接跑到负无穷去了～
+
+最简单的方案就是采用Lipschitz约束：
+
+$$\| D(y,\theta) - D(y' , \theta) \| \leq C \|y-y'\|$$
+
+也可写作：
+
+$$\left\| \frac{\partial D(y,\Theta)}{\partial y}\right\| \leq C$$
+
+## WGAN
+
+KL散度和JS散度由于不是距离，数学特性并不够好。因此，Martín Arjovsky于2017年1月，提出了Wasserstein GAN。
+
+其中的一项改进就是使用Wasserstein距离替代KL散度和JS散度。Wasserstein距离的定义参看《机器学习（二十）》。
+
+WGAN极大程度的改善了GAN训练困难的问题，成为当前GAN研究的主流。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/25071913
+
+令人拍案叫绝的Wasserstein GAN
 
 ## GAN的发展
 
@@ -329,66 +384,5 @@ GAN系列学习(2)——前生今世
 https://mp.weixin.qq.com/s/T--R4c0QfyPS2vrGdyUlOw
 
 UIUC学者构建欺骗检测器的对抗样本！
-
-https://mp.weixin.qq.com/s/Q_1IUS-65ZAFt9w0RlZUpw
-
-谷歌开源TFGAN：轻量级生成对抗网络工具库
-
-https://mp.weixin.qq.com/s/BCA7MmYnivuGbwyjHqDQUw
-
-手把手教你实现GAN半监督学习
-
-https://mp.weixin.qq.com/s/FL63vEAhp8mElI5RFxnbSQ
-
-GAN开山之作及最新综述
-
-https://mp.weixin.qq.com/s/I7axl00VZeCHJpaaITCO2Q
-
-对抗学习GAN提升跨模态检索效果
-
-https://mp.weixin.qq.com/s/OZWih_xfqYdeP-x9MawogA
-
-GAN做图像翻译的一点总结
-
-https://zhuanlan.zhihu.com/p/32103958
-
-GAN调研：多极扩展（跨域和条件的GAN扩展模型调研）
-
-https://mp.weixin.qq.com/s/RZ6UbTgfn30UFaUYNtApRg
-
-如何用Masking GAN让100,000人笑起来？
-
-https://mp.weixin.qq.com/s/OPn4_jmJ7pUg8xa0FZvyiw
-
-超火的漫画线稿上色AI出新版了！无监督训练，效果更美好
-
-https://mp.weixin.qq.com/s/wrxKwY2SvJZc8bRuZ_wF_A
-
-用生成对抗网络给雪人上色，探索人工智能时代的美学
-
-https://mp.weixin.qq.com/s/lPeySqEr3pzPdZqnp1Eh8A
-
-CMU提出对抗生成网络：可实现对人脸识别模型的神经网络攻击
-
-https://mp.weixin.qq.com/s/A66WeHH77IOCv61RHiDE0w
-
-生成式对抗网络（GAN）如何快速理解？这里有一篇最直观的解读
-
-# fine-tuning
-
-fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
-
-举个例子，假设今天老板给你一个新的数据集，让你做一下图片分类，这个数据集是关于Flowers的。问题是，数据集中flower的类别很少，数据集中的数据也不多，你发现从零训练开始训练CNN的效果很差，很容易过拟合。怎么办呢，于是你想到了使用Transfer Learning，用别人已经训练好的Imagenet的模型来做。
-
-由于ImageNet数以百万计带标签的训练集数据，使得如CaffeNet之类的预训练的模型具有非常强大的泛化能力，这些预训练的模型的中间层包含非常多一般性的视觉元素，我们只需要对他的后几层进行微调，再应用到我们的数据上，通常就可以得到非常好的结果。最重要的是，**在目标任务上达到很高performance所需要的数据的量相对很少**。
-
-虽然从理论角度尚无法完全解释fine-tuning的原理，但是还是可以给出一些直观的解释。我们知道，CNN越靠近输入端，其抽取的图像特征越原始。比如最初的一层通常只能抽取一些线条之类的元素。越上层，其特征越抽象。
-
-而现实的图像无论多么复杂，总是由简单特征拼凑而成的。因此，无论最终的分类结果差异如何巨大，其底层的图像特征却几乎一致。
-
-![](/images/article/trans_learn.png)
-
-fine-tuning也是图像目标检测、语义分割的基础。
-
 
 

@@ -6,6 +6,86 @@ category: DL
 
 # 花式卷积（续）
 
+## 1 x 1卷积
+
+1、升维或降维。
+
+如果卷积的输出输入都只是一个平面，那么1x1卷积核并没有什么意义，它是完全不考虑像素与周边其他像素关系。 但卷积的输出输入是长方体，所以1 x 1卷积实际上是对每个像素点，在不同的channels上进行线性组合（信息整合），且保留了图片的原有平面结构，调控depth，从而完成升维或降维的功能。
+
+![](/images/article/conv_1x1.png)
+
+2、加入非线性。卷积层之后经过激励层，1 x 1的卷积在前一层的学习表示上添加了非线性激励（non-linear activation），提升网络的表达能力；
+
+3.促进不同通道之间的信息交换。
+
+参考：
+
+https://www.zhihu.com/question/56024942
+
+卷积神经网络中用1x1卷积有什么作用或者好处呢？
+
+## depthwise separable convolution
+
+在传统的卷积网络中，卷积层会同时寻找跨空间和跨深度的相关性。
+
+然而Xception指出：跨通道的相关性和空间相关性是完全可分离的，最好不要联合映射它们。
+
+>Xception是Francois Chollet于2016年提出的。
+
+![](/images/article/Xception.png)
+
+上图是Xception中的卷积运算depthwise separable convolution的示意图。
+
+它包含一个深度方面的卷积（一个为每个通道单独执行的空间卷积，depthwise convolution），后面跟着一个逐点的卷积（一个跨通道的1×1卷积，pointwise convolution）。我们可以将其看作是首先求跨一个2D空间的相关性，然后再求跨一个1D空间的相关性。可以看出，这种2D+1D映射学起来比全 3D 映射更加简单。
+
+在ImageNet数据集上，Xception的表现稍稍优于Inception v3，而且在一个有17000类的更大规模的图像分类数据集上的表现更是好得多。而它的模型参数的数量仅和Inception一样多。
+
+论文：
+
+《Xception: Deep Learning with Depthwise Separable Convolutions》
+
+代码：
+
+https://github.com/fchollet/keras/blob/master/keras/applications/xception.py
+
+>Francois Chollet，法国人。现为Google研究员。Keras的作者。
+
+参考：
+
+http://blog.csdn.net/mao_xiao_feng/article/details/78003476
+
+tf.nn.depthwise_conv2d如何实现深度卷积?
+
+http://blog.csdn.net/mao_xiao_feng/article/details/78002811
+
+tf.nn.separable_conv2d如何实现深度可分卷积?
+
+和Xception类似的还有MobileNets。
+
+论文：
+
+《MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications》
+
+代码：
+
+https://github.com/Zehaos/MobileNet
+
+![](/images/article/dwl_pwl.png)
+
+参考：
+
+https://mp.weixin.qq.com/s/f3bmtbCY5BfA4v3movwLVg
+
+向手机端神经网络进发：MobileNet压缩指南
+
+https://mp.weixin.qq.com/s/mcK8M6pnHiZZRAkYVdaYGQ
+
+MobileNet在手机端上的速度评测：iPhone 8 Plus竟不如iPhone 7 Plus
+
+https://mp.weixin.qq.com/s/2XqBeq3N4mvu05S1Jo2UwA
+
+CNN模型之MobileNet
+
 ## 3D卷积
 
 3D卷积一般用于视频（2D图像+1D时序）和医学影像（3D立体图像）的分析处理中。
@@ -262,89 +342,4 @@ http://www.cnblogs.com/larch18/p/4569495.html
 http://blog.sina.com.cn/s/blog_455c7a6001010t3h.html
 
 卷积和与多项式乘法的关系
-
-## Cook-Toom algorithm
-
->Andrei Leonovich Toom，俄国数学家。
-
->Stephen Cook，1939年生，密歇根大学本科（1961年）+哈佛硕博（1962年、1966年）。多伦多大学教授，图灵奖获得者（1982年）。
-
->Cook的生平虽然让我感兴趣，然而我更感兴趣的却是他的导师王浩。   
->王浩，1921年~1995年，数理逻辑学家，山东人。西南联大本科（1943年）+清华硕士（1945年）+哈佛博士（1948年）。先后执教于哈佛大学、牛津大学和洛克菲勒大学。英国皇家学会会员。IJCAI第一届“数学定理机械证明里程碑奖”获得者。   
->鉴于这是一个大路货的名字，这里特给出百度百科的网址：   
->https://baike.baidu.com/item/王浩/22564
-
-这里仍以上述2x2的Convolution为例，讲述一下Cook-Toom算法的步骤。
-
-$$\beta_0=0, h(\beta_0)=h_0, x(\beta_0)=x_0$$
-
-$$\beta_1=1, h(\beta_1)=h_0+h_1, x(\beta_1)=x_0+x_1$$
-
-$$\beta_2=-1, h(\beta_2)=h_0-h_1, x(\beta_2)=x_0-x_1$$
-
-接着计算$$s(\beta_i)$$；
-
-$$s(\beta_0)=h(\beta_0)x(\beta_0),s(\beta_1)=h(\beta_1)x(\beta_1),s(\beta_2)=h(\beta_2)x(\beta_2)$$
-
-有了3个已知点，就可以应用Lagrange插值了（Lagrange插值的内容可参见《机器学习（一）》）：
-
-$$\begin{align}s(p)&=s(\beta_0)\frac{(p-\beta_1)(p-\beta_2)}{(\beta_0-\beta_1)(\beta_0-\beta_2)}+s(\beta_1)\frac{(p-\beta_0)(p-\beta_2)}{(\beta_1-\beta_0)(\beta_1-\beta_2)}+s(\beta_2)\frac{(p-\beta_0)(p-\beta_1)}{(\beta_2-\beta_0)(\beta_2-\beta_1)}
-\\&=s(\beta_0)+p\left(\frac{s(\beta_1)-s(\beta_2)}{2}\right)+p^2\left(-s(\beta_0)+\frac{s(\beta_1)+s(\beta_2)}{2}\right)
-\\&=s_0+ps_1+p^2s_2
-\end{align}$$
-
-上式用矩阵形式可表示为：
-
-$$\begin{align}
-\begin{bmatrix}
-s_0 \\ s_1 \\ s_2 \\
-\end{bmatrix}
-&=\begin{bmatrix}
-1 & 0 & 0 \\
-0 & 1 & -1 \\
--1 & 1 & 1 \\
-\end{bmatrix}\cdot
-\begin{bmatrix}
-s(\beta_0) \\ s(\beta_1)/2 \\ s(\beta_2)/2 \\
-\end{bmatrix}
-\\&=\begin{bmatrix}
-1 & 0 & 0 \\
-0 & 1 & -1 \\
--1 & 1 & 1 \\
-\end{bmatrix}\cdot
-\begin{bmatrix}
-h(\beta_0) & 0 & 0 \\
-0 & h(\beta_1)/2 & 0 \\
-0 & 0 & h(\beta_2)/2 \\
-\end{bmatrix}\cdot
-\begin{bmatrix}
-x(\beta_0) \\ x(\beta_1) \\ x(\beta_2) \\
-\end{bmatrix}
-\\&=\begin{bmatrix}
-1 & 0 & 0 \\
-0 & 1 & -1 \\
--1 & 1 & 1 \\
-\end{bmatrix}\cdot
-\begin{bmatrix}
-h_0 & 0 & 0 \\
-0 & (h_0+h_1)/2 & 0 \\
-0 & 0 & (h_0-h_1)/2 \\
-\end{bmatrix}\cdot
-\begin{bmatrix}
-1 & 0 \\
-1 & 1 \\
-1 & -1 \\
-\end{bmatrix}\cdot
-\begin{bmatrix}
-x_0 \\ x_1 \\
-\end{bmatrix}
-\end{align}$$
-
-表面看起来这里多了2个除法，似乎计算量更大了，但是：
-
-1.除以2，对于2进制的计算机来说是个简单运算。
-
-2.如果大量卷积运算的其中一方不变的话，例如CNN中的kernel，这些运算都可以在预处理阶段计算。
-
-Cook-Toom algorithm的缺点在于：当卷积核较大时，增加的加法数量以远超核大小的速度增长，最终会导致增加的加法所耗费的时间甚至超过节省下来的乘法所耗费的时间。
 

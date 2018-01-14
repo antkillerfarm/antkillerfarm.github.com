@@ -144,6 +144,10 @@ https://mp.weixin.qq.com/s/7fk6-gK-gpnWubEr_i7aAg
 
 通俗理解凸函数及它的一阶特征
 
+https://mp.weixin.qq.com/s/lzZANmhfJeEtIayIoqjMOw
+
+通俗讲解凸函数及它的二阶特征
+
 ## LMS算法
 
 LMS（least mean squares，最小均方）算法，也是一种迭代算法。其迭代公式为：

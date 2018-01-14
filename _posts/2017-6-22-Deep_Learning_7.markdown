@@ -6,6 +6,68 @@ category: DL
 
 # Attention（续）
 
+attention机制解决的根本问题是允许网络返回到输入序列，而不是把所有信息编码成固定长度的向量。正如我在上面提到，我认为使用attention有点儿用词不当。换句话说，attention机制只是简单地让网络模型访问它的内部存储器，也就是编码器的隐藏状态。在这种解释中，网络选择从记忆中检索东西，而不是选择“注意”什么。不同于典型的内存，这里的内存访问机制是弹性的，也就是说模型检索到的是所有内存位置的加权组合，而不是某个独立离散位置的值。弹性的内存访问机制好处在于我们可以很容易地用反向传播算法端到端地训练网络模型（虽然有non-fuzzy的方法，其中的梯度使用抽样方法计算，而不是反向传播）。
+
+论文：
+
+《Learning to combine foveal glimpses with a third-order Boltzmann machine》
+
+《Learning where to Attend with Deep Architectures for Image Tracking》
+
+《Neural Machine Translation by Jointly Learning to Align and Translate》
+
+参考：
+
+https://distill.pub/2016/augmented-rnns/
+
+Attention and Augmented Recurrent Neural Networks
+
+>distill.pub虽然blog数量不多，但篇篇都是经典。背后站台的更有Yoshua Bengio、Ian Goodfellow、Andrej Karpathy等大牛。
+
+http://blog.csdn.net/malefactor/article/details/50550211
+
+自然语言处理中的Attention Model
+
+https://yq.aliyun.com/articles/65356
+
+图文结合详解深度学习Memory & Attention
+
+http://www.cosmosshadow.com/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/2016/03/08/Attention.html
+
+Attention
+
+http://geek.csdn.net/news/detail/50558
+
+深度学习和自然语言处理中的attention和memory机制
+
+https://zhuanlan.zhihu.com/p/25928551
+
+用深度学习（CNN RNN Attention）解决大规模文本分类问题-综述和实践
+
+http://blog.csdn.net/leo_xu06/article/details/53491400
+
+视觉注意力的循环神经网络模型
+
+https://mp.weixin.qq.com/s/XrlveG0kwij2qNL45TZdBg
+
+Attention的另类用法
+
+https://zhuanlan.zhihu.com/p/31547842
+
+深度学习中Attention Mechanism详细介绍：原理、分类及应用
+
+https://zhuanlan.zhihu.com/p/32089282
+
+Attention学习笔记
+
+https://mp.weixin.qq.com/s/0yb-YRGe-q4-vpKpuE4D_w
+
+多种注意力机制互补完成VQA（视觉问答）
+
+https://mp.weixin.qq.com/s/LQ7uv0-AakkHE5b17yemqw
+
+Awni Hannun：序列模型Attention Model中的问题与挑战
+
 https://mp.weixin.qq.com/s/xr_1ZYbvADMMwgxLEAflCw
 
 如何在语言翻译中理解Attention Mechanism？
@@ -253,90 +315,5 @@ https://github.com/BVLC/caffe/tree/master/models/bvlc_googlenet
 Inception系列的改进方向基本都集中在构建不同的Inception模型上。
 
 GoogleNet的另一个改进是**减少了全连接层**（Full Connection, FC），这是减少模型参数的一个重要改进。事实上，在稍后的实践中，人们发现去掉VGG的第一个FC层，对于效果几乎没有任何影响。
-
-## SqueezeNet
-
-GoogleNet之后，最有名的CNN模型当属何恺明的Deep Residual Network。DRN在《深度学习（六）》中已有提及，这里不再赘述。
-
-DRN之后，学界的研究重点，由如何提升精度，转变为如何用更少的参数和计算量来达到同样的精度。SqueezeNet就是其中的代表。
-
-论文：
-
-《SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size》
-
-代码：
-
-https://github.com/DeepScale/SqueezeNet
-
-Caffe版本
-
-https://github.com/vonclites/squeezenet
-
-TensorFlow版本
-
-![](/images/article/SqueezeNet_2.png)
-
-上图是SqueezeNet的网络结构图，其最大的创新点在于使用Fire Module替换大尺寸的卷积层。
-
-![](/images/article/SqueezeNet.png)
-
-上图是Fire Module的结构示意图。它采用squeeze层+expand层两个小卷积层，替换了AlexNet的大尺寸卷积层。其中，$$N_{squeeze}<N_{expand}$$，N表示每层的卷积个数。
-
-这里需要特别指出的是：expand层采用了2种不同尺寸的卷积，这也是当前设计的一个趋势。
-
-这个趋势在GoogleNet中已经有所体现，在ResNet中也间接隐含。
-
-![](/images/article/expand_ResNet.png)
-
-上图是ResNet的展开图，可见展开之后的ResNet，实际上等效于一个多尺寸交错混编的复杂卷积网。其思路和GoogleNet实际上是一致的。
-
-参见：
-
-http://blog.csdn.net/xbinworld/article/details/50897870
-
-最新SqueezeNet模型详解，CNN模型参数降低50倍，压缩461倍！
-
-http://www.jianshu.com/p/8e269451795d
-
-神经网络瘦身：SqueezeNet
-
-http://blog.csdn.net/shenxiaolu1984/article/details/51444525
-
-超轻量级网络SqueezeNet算法详解
-
-https://mp.weixin.qq.com/s/euppu_2rhujlWz1z5S5nYA
-
-纵览轻量化卷积神经网络：SqueezeNet、MobileNet、ShuffleNet、Xception
-
-## 其他知名CNN
-
-### Network In Network
-
-Network In Network是颜水成团队于2013年提出的。
-
-论文：
-
-《Network In Network》
-
-![](/images/article/nin.png)
-
->颜水成，北京大学博士，新加坡国立大学副教授。奇虎360AI研究院院长。
-
-Network In Network最重要的贡献是使用Global Average Pooling替换了Full Connection。这直接促进了之后Fully Convolutional Networks的发展。
-
-参考：
-
-http://blog.csdn.net/sheng_ai/article/details/41313883
-
-Network In Network(精读)
-
-http://blog.csdn.net/zhufenghao/article/details/52526611
-
-Network In Network
-
-http://www.cnblogs.com/dmzhuo/p/5868346.html
-
-读论文“Network in Network”——ICLR 2014
-
 
 

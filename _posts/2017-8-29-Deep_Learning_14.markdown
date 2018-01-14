@@ -234,6 +234,10 @@ https://mp.weixin.qq.com/s/u3eXhoFvo7vZujc0XoQQWQ
 
 旷视研究院解读Light-Head R-CNN：平衡精准度和速度
 
+https://mp.weixin.qq.com/s/A9F3UsITUaNvR69roHa0mg
+
+结合单阶段和两阶段目标检测的优势：基于单次精化神经网络的目标检测方法
+
 # RCNN
 
 《深度学习（五）》中提到的AlexNet、VGG、GoogleNet主要用于图片分类。而这里介绍的RCNN(Regions with CNN)主要用于目标检测。

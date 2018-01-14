@@ -124,4 +124,7 @@ https://mp.weixin.qq.com/s/4b4TPkIRPJ3VBkCOA6kbxw
 
 前端慌不慌？用深度学习自动生成HTML代码
 
+https://mp.weixin.qq.com/s/iZ3MpyypVw-wYKAd2gBwwA
+
+IBM推出DeepTriage，利用深度学习实现Bug自动分类
 

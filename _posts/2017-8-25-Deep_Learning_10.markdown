@@ -1,10 +1,72 @@
 ---
 layout: post
-title:  深度学习（十）——李飞飞，花式卷积
+title:  深度学习（十）——fine-tuning, 李飞飞, 花式卷积
 category: DL 
 ---
 
-# fine-tuning（续）
+# GAN
+
+## 参考（续）
+
+https://mp.weixin.qq.com/s/Q_1IUS-65ZAFt9w0RlZUpw
+
+谷歌开源TFGAN：轻量级生成对抗网络工具库
+
+https://mp.weixin.qq.com/s/BCA7MmYnivuGbwyjHqDQUw
+
+手把手教你实现GAN半监督学习
+
+https://mp.weixin.qq.com/s/FL63vEAhp8mElI5RFxnbSQ
+
+GAN开山之作及最新综述
+
+https://mp.weixin.qq.com/s/I7axl00VZeCHJpaaITCO2Q
+
+对抗学习GAN提升跨模态检索效果
+
+https://mp.weixin.qq.com/s/OZWih_xfqYdeP-x9MawogA
+
+GAN做图像翻译的一点总结
+
+https://zhuanlan.zhihu.com/p/32103958
+
+GAN调研：多极扩展（跨域和条件的GAN扩展模型调研）
+
+https://mp.weixin.qq.com/s/RZ6UbTgfn30UFaUYNtApRg
+
+如何用Masking GAN让100,000人笑起来？
+
+https://mp.weixin.qq.com/s/OPn4_jmJ7pUg8xa0FZvyiw
+
+超火的漫画线稿上色AI出新版了！无监督训练，效果更美好
+
+https://mp.weixin.qq.com/s/wrxKwY2SvJZc8bRuZ_wF_A
+
+用生成对抗网络给雪人上色，探索人工智能时代的美学
+
+https://mp.weixin.qq.com/s/lPeySqEr3pzPdZqnp1Eh8A
+
+CMU提出对抗生成网络：可实现对人脸识别模型的神经网络攻击
+
+https://mp.weixin.qq.com/s/A66WeHH77IOCv61RHiDE0w
+
+生成式对抗网络（GAN）如何快速理解？这里有一篇最直观的解读
+
+# fine-tuning
+
+fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
+
+举个例子，假设今天老板给你一个新的数据集，让你做一下图片分类，这个数据集是关于Flowers的。问题是，数据集中flower的类别很少，数据集中的数据也不多，你发现从零训练开始训练CNN的效果很差，很容易过拟合。怎么办呢，于是你想到了使用Transfer Learning，用别人已经训练好的Imagenet的模型来做。
+
+由于ImageNet数以百万计带标签的训练集数据，使得如CaffeNet之类的预训练的模型具有非常强大的泛化能力，这些预训练的模型的中间层包含非常多一般性的视觉元素，我们只需要对他的后几层进行微调，再应用到我们的数据上，通常就可以得到非常好的结果。最重要的是，**在目标任务上达到很高performance所需要的数据的量相对很少**。
+
+虽然从理论角度尚无法完全解释fine-tuning的原理，但是还是可以给出一些直观的解释。我们知道，CNN越靠近输入端，其抽取的图像特征越原始。比如最初的一层通常只能抽取一些线条之类的元素。越上层，其特征越抽象。
+
+而现实的图像无论多么复杂，总是由简单特征拼凑而成的。因此，无论最终的分类结果差异如何巨大，其底层的图像特征却几乎一致。
+
+![](/images/article/trans_learn.png)
+
+fine-tuning也是图像目标检测、语义分割的基础。
 
 参考：
 
@@ -202,83 +264,4 @@ MSRA于2017年提出了可变形卷积核的概念。
 
 ![](/images/article/Deformable_convolution.png)
 
-## 1 x 1卷积
-
-1、升维或降维。
-
-如果卷积的输出输入都只是一个平面，那么1x1卷积核并没有什么意义，它是完全不考虑像素与周边其他像素关系。 但卷积的输出输入是长方体，所以1 x 1卷积实际上是对每个像素点，在不同的channels上进行线性组合（信息整合），且保留了图片的原有平面结构，调控depth，从而完成升维或降维的功能。
-
-![](/images/article/conv_1x1.png)
-
-2、加入非线性。卷积层之后经过激励层，1 x 1的卷积在前一层的学习表示上添加了非线性激励（non-linear activation），提升网络的表达能力；
-
-3.促进不同通道之间的信息交换。
-
-参考：
-
-https://www.zhihu.com/question/56024942
-
-卷积神经网络中用1x1卷积有什么作用或者好处呢？
-
-## depthwise separable convolution
-
-在传统的卷积网络中，卷积层会同时寻找跨空间和跨深度的相关性。
-
-然而Xception指出：跨通道的相关性和空间相关性是完全可分离的，最好不要联合映射它们。
-
->Xception是Francois Chollet于2016年提出的。
-
-![](/images/article/Xception.png)
-
-上图是Xception中的卷积运算depthwise separable convolution的示意图。
-
-它包含一个深度方面的卷积（一个为每个通道单独执行的空间卷积，depthwise convolution），后面跟着一个逐点的卷积（一个跨通道的1×1卷积，pointwise convolution）。我们可以将其看作是首先求跨一个2D空间的相关性，然后再求跨一个1D空间的相关性。可以看出，这种2D+1D映射学起来比全 3D 映射更加简单。
-
-在ImageNet数据集上，Xception的表现稍稍优于Inception v3，而且在一个有17000类的更大规模的图像分类数据集上的表现更是好得多。而它的模型参数的数量仅和Inception一样多。
-
-论文：
-
-《Xception: Deep Learning with Depthwise Separable Convolutions》
-
-代码：
-
-https://github.com/fchollet/keras/blob/master/keras/applications/xception.py
-
->Francois Chollet，法国人。现为Google研究员。Keras的作者。
-
-参考：
-
-http://blog.csdn.net/mao_xiao_feng/article/details/78003476
-
-tf.nn.depthwise_conv2d如何实现深度卷积?
-
-http://blog.csdn.net/mao_xiao_feng/article/details/78002811
-
-tf.nn.separable_conv2d如何实现深度可分卷积?
-
-和Xception类似的还有MobileNets。
-
-论文：
-
-《MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications》
-
-代码：
-
-https://github.com/Zehaos/MobileNet
-
-![](/images/article/dwl_pwl.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/f3bmtbCY5BfA4v3movwLVg
-
-向手机端神经网络进发：MobileNet压缩指南
-
-https://mp.weixin.qq.com/s/mcK8M6pnHiZZRAkYVdaYGQ
-
-MobileNet在手机端上的速度评测：iPhone 8 Plus竟不如iPhone 7 Plus
-
-https://mp.weixin.qq.com/s/2XqBeq3N4mvu05S1Jo2UwA
-
-CNN模型之MobileNet
 

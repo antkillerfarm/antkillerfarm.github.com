@@ -18,6 +18,12 @@ M：按%MEM排序
 
 注：运行top命令之后，输入相应字符即可切换排序。
 
+参考：
+
+https://mp.weixin.qq.com/s/8892B95aQZHw4fZhi8iO5A
+
+Linux中load average意义
+
 ## free命令
 
 free命令的内容比较概括，主要包含系统内存的整体使用情况，不深入到进程一级。

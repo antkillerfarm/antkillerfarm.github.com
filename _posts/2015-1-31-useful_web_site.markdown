@@ -356,6 +356,10 @@ https://mp.weixin.qq.com/s/SBVEo53irSZfI40sBFZXWQ
 
 shift：解决shell编程中的入参问题
 
+https://www.zhihu.com/people/xuan-xing-29/posts
+
+某量子通信牛人的blog
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

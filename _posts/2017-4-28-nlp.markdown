@@ -343,6 +343,10 @@ https://github.com/rockyzhengwu/FoolNLTK
 
 FoolNLTK：一个便捷的中文处理工具包（字向量+双向LSTM+CRF）
 
+https://mp.weixin.qq.com/s/jjlXGaGSJO3KeJv9adLi2Q
+
+Synonyms：一个开源的中文近义词工具包
+
 ## NLPchina
 
 NLPchina(中国自然语言处理开源组织)旗下有许多好用的工具。

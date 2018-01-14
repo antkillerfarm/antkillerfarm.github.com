@@ -1,12 +1,94 @@
 ---
 layout: post
-title:  深度学习（八）——GAN
+title:  深度学习（八）——GAN（1）
 category: DL 
 ---
 
-# CNN进化史
+# CNN进化史（续）
 
-## 其他知名CNN（续）
+## SqueezeNet
+
+GoogleNet之后，最有名的CNN模型当属何恺明的Deep Residual Network。DRN在《深度学习（六）》中已有提及，这里不再赘述。
+
+DRN之后，学界的研究重点，由如何提升精度，转变为如何用更少的参数和计算量来达到同样的精度。SqueezeNet就是其中的代表。
+
+论文：
+
+《SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size》
+
+代码：
+
+https://github.com/DeepScale/SqueezeNet
+
+Caffe版本
+
+https://github.com/vonclites/squeezenet
+
+TensorFlow版本
+
+![](/images/article/SqueezeNet_2.png)
+
+上图是SqueezeNet的网络结构图，其最大的创新点在于使用Fire Module替换大尺寸的卷积层。
+
+![](/images/article/SqueezeNet.png)
+
+上图是Fire Module的结构示意图。它采用squeeze层+expand层两个小卷积层，替换了AlexNet的大尺寸卷积层。其中，$$N_{squeeze}<N_{expand}$$，N表示每层的卷积个数。
+
+这里需要特别指出的是：expand层采用了2种不同尺寸的卷积，这也是当前设计的一个趋势。
+
+这个趋势在GoogleNet中已经有所体现，在ResNet中也间接隐含。
+
+![](/images/article/expand_ResNet.png)
+
+上图是ResNet的展开图，可见展开之后的ResNet，实际上等效于一个多尺寸交错混编的复杂卷积网。其思路和GoogleNet实际上是一致的。
+
+参见：
+
+http://blog.csdn.net/xbinworld/article/details/50897870
+
+最新SqueezeNet模型详解，CNN模型参数降低50倍，压缩461倍！
+
+http://www.jianshu.com/p/8e269451795d
+
+神经网络瘦身：SqueezeNet
+
+http://blog.csdn.net/shenxiaolu1984/article/details/51444525
+
+超轻量级网络SqueezeNet算法详解
+
+https://mp.weixin.qq.com/s/euppu_2rhujlWz1z5S5nYA
+
+纵览轻量化卷积神经网络：SqueezeNet、MobileNet、ShuffleNet、Xception
+
+## 其他知名CNN
+
+### Network In Network
+
+Network In Network是颜水成团队于2013年提出的。
+
+论文：
+
+《Network In Network》
+
+![](/images/article/nin.png)
+
+>颜水成，北京大学博士，新加坡国立大学副教授。奇虎360AI研究院院长。
+
+Network In Network最重要的贡献是使用Global Average Pooling替换了Full Connection。这直接促进了之后Fully Convolutional Networks的发展。
+
+参考：
+
+http://blog.csdn.net/sheng_ai/article/details/41313883
+
+Network In Network(精读)
+
+http://blog.csdn.net/zhufenghao/article/details/52526611
+
+Network In Network
+
+http://www.cnblogs.com/dmzhuo/p/5868346.html
+
+读论文“Network in Network”——ICLR 2014
 
 ### ZF Net
 
@@ -217,60 +299,4 @@ $$L=\frac{1}{M}\sum_{i=1}^M D\Big(y_i,\Theta\Big)$$
 上式可以简单的理解为：**分布之间的距离，等于单个样本的距离的平均**。
 
 这里的神经网络$$D(Y,\Theta)$$，实际上就是GAN的另一个主角——**鉴别者**。这里的D是**Discriminator**的意思。
-
-## 如何对抗
-
-因为$$D(Y,\Theta)$$的均值，也就是L，是度量两个分布的差异程度，这就意味着，L要能够将两个分布区分开来，即L越大越好；但是我们最终的目的，是希望通过均匀分布而生成我们指定的分布，所以$$G(X,\theta)$$则希望两个分布越来越接近，即L越小越好。
-
-形式化的描述就是：
-
-$$\arg \min_G \max_D V(G,D)$$
-
-具体的做法是：
-
-### Step1
-
-随机初始化$$G(X,\theta)$$，固定它，然后生成一批Y，这时候我们要训练$$D(Y,\Theta)$$，既然L代表的是“与指定样本Z的差异”，那么，如果将指定样本Z代入L，结果应该是越小越好，而将Y代入L，结果应该是越大越好，所以
-
-$$\begin{aligned}\Theta =& \mathop{\arg\min}_{\Theta} L = \mathop{\arg\min}_{\Theta} \frac{1}{N}\sum_{i=1}^N D\Big(z_i,\Theta\Big)\\ 
-\Theta =& \mathop{\arg\max}_{\Theta} L = \mathop{\arg\max}_{\Theta} \frac{1}{M}\sum_{i=1}^M D\Big(y_i,\Theta\Big)\end{aligned}$$
-
-然而有两个目标并不容易平衡，所以干脆都取同样的样本数B（一个batch），然后一起训练就好：
-
-$$\begin{aligned}\Theta =& \mathop{\arg\min}_{\Theta} L_1\\ 
-=&\mathop{\arg\min}_{\Theta} \frac{1}{B}\sum_{i=1}^B\left[D\Big(z_i,\Theta\Big)-D\Big(y_i,\Theta\Big)\right]\end{aligned}$$
-
-### Step2
-
-$$G(X,\theta)$$希望它生成的样本越接近真实样本越好，因此这时候把$$\Theta$$固定，只训练$$\theta$$让L越来越小：
-
-$$\begin{aligned}\theta =& \mathop{\arg\min}_{\theta} L_2\\ 
-=&\mathop{\arg\min}_{\theta} \frac{1}{B}\sum_{i=1}^B\left[D\Big(G(x_i,\theta),\Theta\Big)\right]\end{aligned}$$
-
-## Lipschitz约束
-
-稍微思考一下，我们就发现，问题还没完。我们目前还没有对D做约束，不难发现，无约束的话Loss基本上会直接跑到负无穷去了～
-
-最简单的方案就是采用Lipschitz约束：
-
-$$\| D(y,\theta) - D(y' , \theta) \| \leq C \|y-y'\|$$
-
-也可写作：
-
-$$\left\| \frac{\partial D(y,\Theta)}{\partial y}\right\| \leq C$$
-
-## WGAN
-
-KL散度和JS散度由于不是距离，数学特性并不够好。因此，Martín Arjovsky于2017年1月，提出了Wasserstein GAN。
-
-其中的一项改进就是使用Wasserstein距离替代KL散度和JS散度。Wasserstein距离的定义参看《机器学习（二十）》。
-
-WGAN极大程度的改善了GAN训练困难的问题，成为当前GAN研究的主流。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/25071913
-
-令人拍案叫绝的Wasserstein GAN
-
 

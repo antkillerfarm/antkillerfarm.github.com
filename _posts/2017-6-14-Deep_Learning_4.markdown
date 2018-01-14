@@ -286,6 +286,10 @@ https://mp.weixin.qq.com/s/dUadWioBqIEnG85hJFfBJQ
 
 word2vec在工业界的应用场景
 
+https://mp.weixin.qq.com/s/md3SL076cw0TgZDRlwWG5A
+
+用数据玩点花样！如何构建skim-gram模型来训练和可视化词向量
+
 # RNN
 
 ## RNN的基本结构
@@ -295,9 +299,4 @@ RNN是Recurrent Neural Network和Recursive Neural Network的简称。前者主�
 ![](/images/article/RNN.png)
 
 上图是RNN的结构图。其中，展开箭头左边是RNN的静态结构图。不同于之前的神经网络表示，这里的圆形不是单个神经元，而是一层神经元。权值也不是单个权值，而是权值向量。
-
-从静态结构图可以看出RNN实际上和3层MLP的结构，是基本类似的。差别在于RNN的隐藏层多了一个指向自己的环状结构。
-
-上图的展开箭头右边是RNN的时序展开结构图。从纵向来看，它只是一个3层的浅层神经网络，然而从横向来看，它却是一个深层的神经网络。可见神经网络深浅与否，不仅和模型本身的层数有关，也与神经元之间的连接方式密切相关。
-
 

@@ -60,6 +60,10 @@ https://mp.weixin.qq.com/s/2Gd-2BLZy7LdvOenbM2Fsg
 
 用hmmlearn学习隐马尔科夫模型HMM
 
+https://mp.weixin.qq.com/s/yY_-qJoza2xGRqrm40abkg
+
+每个Kaggle冠军的获胜法门：揭秘Python中的模型集成
+
 # 推荐系统的工程细节
 
 推荐系统不仅是算法，还包括若干工程细节。这些细节虽然不算复杂，够不上算法的层面，然而对产品的成败，却有举足轻重的作用。

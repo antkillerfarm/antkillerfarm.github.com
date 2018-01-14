@@ -154,4 +154,20 @@ https://mp.weixin.qq.com/s/NdY9cL5_SDrqWAGAyrFxsA
 
 阿里妈妈首次公开新一代自研智能检索模型
 
+https://mp.weixin.qq.com/s/AVPquGDa05q1yqz-AJpBGA
+
+如何为神经机器翻译任务配置编码-解码模型
+
+https://mp.weixin.qq.com/s/7UnUedr8tapwFeRnHVOkjA
+
+阿里巴巴人工智能机器阅读理解能力创新纪录
+
+https://mp.weixin.qq.com/s/wf4m4xxxJoEltWIglS-SSA
+
+无需双语语料库的无监督式机器翻译
+
+https://mp.weixin.qq.com/s/KVONdK44T8JKU5pFB5ydrQ
+
+SQuAD文本理解挑战赛十大模型解读
+
 

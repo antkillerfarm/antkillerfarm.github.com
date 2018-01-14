@@ -6,6 +6,91 @@ category: DL
 
 # Winograd（续）
 
+## Cook-Toom algorithm
+
+>Andrei Leonovich Toom，俄国数学家。
+
+>Stephen Cook，1939年生，密歇根大学本科（1961年）+哈佛硕博（1962年、1966年）。多伦多大学教授，图灵奖获得者（1982年）。
+
+>Cook的生平虽然让我感兴趣，然而我更感兴趣的却是他的导师王浩。   
+>王浩，1921年~1995年，数理逻辑学家，山东人。西南联大本科（1943年）+清华硕士（1945年）+哈佛博士（1948年）。先后执教于哈佛大学、牛津大学和洛克菲勒大学。英国皇家学会会员。IJCAI第一届“数学定理机械证明里程碑奖”获得者。   
+>鉴于这是一个大路货的名字，这里特给出百度百科的网址：   
+>https://baike.baidu.com/item/王浩/22564
+
+这里仍以上述2x2的Convolution为例，讲述一下Cook-Toom算法的步骤。
+
+$$\beta_0=0, h(\beta_0)=h_0, x(\beta_0)=x_0$$
+
+$$\beta_1=1, h(\beta_1)=h_0+h_1, x(\beta_1)=x_0+x_1$$
+
+$$\beta_2=-1, h(\beta_2)=h_0-h_1, x(\beta_2)=x_0-x_1$$
+
+接着计算$$s(\beta_i)$$；
+
+$$s(\beta_0)=h(\beta_0)x(\beta_0),s(\beta_1)=h(\beta_1)x(\beta_1),s(\beta_2)=h(\beta_2)x(\beta_2)$$
+
+有了3个已知点，就可以应用Lagrange插值了（Lagrange插值的内容可参见《机器学习（一）》）：
+
+$$\begin{align}s(p)&=s(\beta_0)\frac{(p-\beta_1)(p-\beta_2)}{(\beta_0-\beta_1)(\beta_0-\beta_2)}+s(\beta_1)\frac{(p-\beta_0)(p-\beta_2)}{(\beta_1-\beta_0)(\beta_1-\beta_2)}+s(\beta_2)\frac{(p-\beta_0)(p-\beta_1)}{(\beta_2-\beta_0)(\beta_2-\beta_1)}
+\\&=s(\beta_0)+p\left(\frac{s(\beta_1)-s(\beta_2)}{2}\right)+p^2\left(-s(\beta_0)+\frac{s(\beta_1)+s(\beta_2)}{2}\right)
+\\&=s_0+ps_1+p^2s_2
+\end{align}$$
+
+上式用矩阵形式可表示为：
+
+$$\begin{align}
+\begin{bmatrix}
+s_0 \\ s_1 \\ s_2 \\
+\end{bmatrix}
+&=\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & -1 \\
+-1 & 1 & 1 \\
+\end{bmatrix}\cdot
+\begin{bmatrix}
+s(\beta_0) \\ s(\beta_1)/2 \\ s(\beta_2)/2 \\
+\end{bmatrix}
+\\&=\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & -1 \\
+-1 & 1 & 1 \\
+\end{bmatrix}\cdot
+\begin{bmatrix}
+h(\beta_0) & 0 & 0 \\
+0 & h(\beta_1)/2 & 0 \\
+0 & 0 & h(\beta_2)/2 \\
+\end{bmatrix}\cdot
+\begin{bmatrix}
+x(\beta_0) \\ x(\beta_1) \\ x(\beta_2) \\
+\end{bmatrix}
+\\&=\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & -1 \\
+-1 & 1 & 1 \\
+\end{bmatrix}\cdot
+\begin{bmatrix}
+h_0 & 0 & 0 \\
+0 & (h_0+h_1)/2 & 0 \\
+0 & 0 & (h_0-h_1)/2 \\
+\end{bmatrix}\cdot
+\begin{bmatrix}
+1 & 0 \\
+1 & 1 \\
+1 & -1 \\
+\end{bmatrix}\cdot
+\begin{bmatrix}
+x_0 \\ x_1 \\
+\end{bmatrix}
+\end{align}$$
+
+表面看起来这里多了2个除法，似乎计算量更大了，但是：
+
+1.除以2，对于2进制的计算机来说是个简单运算。
+
+2.如果大量卷积运算的其中一方不变的话，例如CNN中的kernel，这些运算都可以在预处理阶段计算。
+
+Cook-Toom algorithm的缺点在于：当卷积核较大时，增加的加法数量以远超核大小的速度增长，最终会导致增加的加法所耗费的时间甚至超过节省下来的乘法所耗费的时间。
+
 ## 最大公约数和Euclidean algorithm
 
 在介绍Winograd算法之前，我们首先介绍一下求最大公约数的Euclidean algorithm。
@@ -213,88 +298,5 @@ $$m_2 = 5 , M_2 = 12 , ( − 2 ) 12 + ( 5 ) 5 = 1$$
 $$c(p)=\left(\sum_{i=0}^kc^{(i)}(p)N^{(i)}(p)M^{(i)}(p)\right)\mod{M(p)}\tag{3}$$
 
 其中$$m^{(i)}(p)$$两两互质，$$c^{(i)}(p)=R_{m^{(i)}}[c(p)],M(p)=\prod_{i=0}^km^{(i)}(p),M^{(i)}(p)=M(p)/m^{(i)}(p)$$，$$N^{(i)}(p)$$是方程$$N^{(i)}(p) M^{(i)}(p) + n^{(i)}(p) m^{(i)}(p) = GCD ( M^{(i)}(p) , m^{(i)}(p)) = 1$$的解。
-
-## Winograd algorithm
-
-下面以一个2x3的卷积为例，介绍一下Winograd algorithm的做法。
-
-2x3卷积的多项式形式为：
-
-$$h(p)=h_0+h_1p,x(p)=x_0+x_1p+x_2p^2,s(p)=h(p)x(p)$$
-
-这里引入**多项式（polynomial）的度（degree）**的概念：多项式中包含的最高次项的次数，被称为多项式的度。
-
-例如，上面的$$h(p)$$的degree为1，而$$x(p)$$的degree为2，而$$s(p)$$的degree为3。
-
-和Cook-Toom algorithm一样，Winograd algorithm也是一个构造式的算法。
-
-**Step 1**：首先要构造一个degree大于等于3的多项式：
-
-$$m(p)=m^{(0)}(p)m^{(0)}(p)\cdots m^{(k)}(p)$$
-
-其中的$$m^{(i)}(p)$$两两互质。
-
-这里为了简单起见，不妨令$$m(p)=p(p-1)(p+1)$$，并使用Extended Euclidean algorithm构建如下计算表格：
-
-| i | $$m^{(i)}(p)$$ | $$M^{(i)}(p)$$ | $$n^{(i)}(p)$$ | $$N^{(i)}(p)$$ |
-|:--:|:--:|:--:|:--:|:--:|
-| 0 | $$p$$ | $$p^2-1$$ | $$p$$ | $$-1$$ |
-| 1 | $$p-1$$ | $$p^2+p$$ | $$-\frac{1}{2}(p+2)$$ | $$\frac{1}{2}$$ |
-| 2 | $$p+1$$ | $$p^2-p$$ | $$-\frac{1}{2}(p-2)$$ | $$\frac{1}{2}$$ |
-
-**Step 2**：使用如下公式计算$$h^{(i)}(p),x^{(i)}(p)$$：
-
-$$h^{(i)}(p)=h(p)\mod{m^{(i)}(p)}$$
-
-$$x^{(i)}(p)=x(p)\mod{m^{(i)}(p)}$$
-
-计算过程如下：
-
-$$h^{(0)}(p)=h_0,x^{(0)}(p)=x_0$$
-
-$$h^{(1)}(p)=h_0+h_1,x^{(1)}(p)=x_0+x_1+x_2$$
-
-$$h^{(2)}(p)=h_0-h_1,x^{(2)}(p)=x_0-x_1+x_2$$
-
-**Step 3**：使用如下公式计算$$s'^{(i)}(p)$$：
-
-$$s'^{(i)}(p)=h^{(i)}(p)x^{(i)}(p)\mod{m^{(i)}(p)}$$
-
-计算过程如下：
-
-$$s'^{(0)}(p)=h_0x_0$$
-
-$$s'^{(1)}(p)=(h_0+h_1)(x_0+x_1+x_2)$$
-
-$$s'^{(2)}(p)=(h_0-h_1)(x_0-x_1+x_2)$$
-
-**Step 4**：根据公式3计算余数$$s'(p)$$，并利用如下公式计算被除数$$s(p)$$：
-
-$$s(p)=s'(p)+h_{N-1}x_{L-1}m(p)$$
-
-计算过程如下：
-
-$$\begin{align}
-s(p)&=s'(p)+h_1x_2m(p) \\
-&=s'(0)(-p^2+1)+\frac{s'(1)}{2}(p^2+p)+\frac{s'(2)}{2}(p^2-p)+h_1x_2m(p^3-p)\\
-&=s'(0)+p(\frac{s'(1)}{2}-\frac{s'(2)}{2}-h_1x_2)+p^2(-s'(0)+\frac{s'(1)}{2}+\frac{s'(2)}{2})+p^3(h_1x_2)
-\end{align}$$
-
-这里用4个乘法和7个加法，替代了6个乘法和2个加法。
-
-总的来说，Winograd algorithm是一个很复杂的算法，但是结论却很简单。因此，在具体的IC实现中，一般只针对特定常用尺寸的kernel，应用相应的结论即可。
-
->Winograd这个知识点的复杂，其实主要还不在于算法本身，而是在于其前置了很多数论方面的知识。而我恰恰不具备这些知识，因此进展极度缓慢，前后用了近20天才看完了相关的内容。。。不过，收获很大^_^
-
-## FFT与卷积
-
-FFT是加速卷积运算的一种常用方法。但由于其原理，当卷积核小的时候，是没什么加速的，当核是3或者5时，速度有时更慢或者相当，而在CNN中卷积的核大多数比较小，FFT起到的加速作用很小，所以基本没人用。
-
-参见：
-
-http://www.cnblogs.com/jianyingzhou/p/4303578.html
-
-convolution,fft, 加速
-
 
 

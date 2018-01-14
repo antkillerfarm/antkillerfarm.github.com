@@ -1,10 +1,32 @@
 ---
 layout: post
-title:  深度学习（六）——DRN, Bi-directional RNN, Attention
+title:  深度学习（六）——神经元激活函数进阶, DRN, Bi-directional RNN, Attention
 category: DL 
 ---
 
-# 神经元激活函数进阶（续）
+# 神经元激活函数进阶
+
+在《深度学习（一、二）》中，我们探讨了ReLU相对于sigmoid函数的改进，以及一些保证深度神经网络能够训练的措施。然而即便如此，深度神经网络的训练仍然是一件非常困难的事情，还需要更多的技巧和方法。
+
+## 激活函数的作用
+
+神经网络中激活函数的主要作用是提供网络的**非线性建模能力**，如不特别说明，激活函数一般而言是非线性函数。
+
+假设一个神经网络中仅包含线性卷积和全连接运算，那么该网络仅能够表达线性映射，即便增加网络的深度也依旧还是线性映射，难以有效建模实际环境中非线性分布的数据。
+
+加入非线性激活函数之后，深度神经网络才具备了分层的非线性映射学习能力。因此，激活函数是深度神经网络中不可或缺的部分。
+
+>注意：其实也有采用线性激活函数的神经网络，亦被称为linear neurons。但是这些神经网络，基本只有学术价值而无实际意义。
+
+理论上来说，只要是非线性函数，都有做激活函数的可能性。然而不同的激活函数其训练成本是不同的。
+
+虽然OpenAI的探索表明连浮点误差都可以做激活函数，但是由于这个操作的不可微分性，因此他们使用了“进化策略”来训练模型，所谓“进化策略”，是诸如遗传算法之类的耗时耗力的算法。
+
+参考：
+
+https://mp.weixin.qq.com/s/d9XmDCahK6UBlYWhI0D5jQ
+
+深度线性神经网络也能做非线性计算，OpenAI使用进化策略新发现
 
 ## ReLU的缺点
 
@@ -233,60 +255,5 @@ Attention机制的一个主要优势是它让我们能够解释并可视化整�
 
 如果再仔细观察attention的等式，我们会发现attention机制有一定的成本。我们需要为每个输入输出组合分别计算attention值。50个单词的输入序列和50个单词的输出序列需要计算2500个attention值。这还不算太糟糕，但如果你做字符级别的计算，而且字符序列长达几百个字符，那么attention机制将会变得代价昂贵。
 
-attention机制解决的根本问题是允许网络返回到输入序列，而不是把所有信息编码成固定长度的向量。正如我在上面提到，我认为使用attention有点儿用词不当。换句话说，attention机制只是简单地让网络模型访问它的内部存储器，也就是编码器的隐藏状态。在这种解释中，网络选择从记忆中检索东西，而不是选择“注意”什么。不同于典型的内存，这里的内存访问机制是弹性的，也就是说模型检索到的是所有内存位置的加权组合，而不是某个独立离散位置的值。弹性的内存访问机制好处在于我们可以很容易地用反向传播算法端到端地训练网络模型（虽然有non-fuzzy的方法，其中的梯度使用抽样方法计算，而不是反向传播）。
-
-论文：
-
-《Learning to combine foveal glimpses with a third-order Boltzmann machine》
-
-《Learning where to Attend with Deep Architectures for Image Tracking》
-
-《Neural Machine Translation by Jointly Learning to Align and Translate》
-
-参考：
-
-http://blog.csdn.net/malefactor/article/details/50550211
-
-自然语言处理中的Attention Model
-
-https://yq.aliyun.com/articles/65356
-
-图文结合详解深度学习Memory & Attention
-
-http://www.cosmosshadow.com/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/2016/03/08/Attention.html
-
-Attention
-
-http://geek.csdn.net/news/detail/50558
-
-深度学习和自然语言处理中的attention和memory机制
-
-https://zhuanlan.zhihu.com/p/25928551
-
-用深度学习（CNN RNN Attention）解决大规模文本分类问题-综述和实践
-
-http://blog.csdn.net/leo_xu06/article/details/53491400
-
-视觉注意力的循环神经网络模型
-
-https://mp.weixin.qq.com/s/XrlveG0kwij2qNL45TZdBg
-
-Attention的另类用法
-
-https://zhuanlan.zhihu.com/p/31547842
-
-深度学习中Attention Mechanism详细介绍：原理、分类及应用
-
-https://zhuanlan.zhihu.com/p/32089282
-
-Attention学习笔记
-
-https://mp.weixin.qq.com/s/0yb-YRGe-q4-vpKpuE4D_w
-
-多种注意力机制互补完成VQA（视觉问答）
-
-https://mp.weixin.qq.com/s/LQ7uv0-AakkHE5b17yemqw
-
-Awni Hannun：序列模型Attention Model中的问题与挑战
 
 

@@ -1,106 +1,8 @@
 ---
 layout: post
-title:  深度学习（二十四）——迁移学习, 语音识别, OCR
+title:  深度学习（二十四）——语音识别, OCR
 category: DL 
 ---
-
-# 迁移学习
-
-https://mp.weixin.qq.com/s/HmkTkv7QT08lGtJsHD7EvQ
-
-迁移学习（Transfer Learning）技术概述
-
-https://zhuanlan.zhihu.com/wjdml
-
-《小王爱迁移》系列blog
-
-https://mp.weixin.qq.com/s/BWBrso7O1O3Rfxa4QWZH4g
-
-分分钟学会基于深度学习的图像真实风格迁移！
-
-https://mp.weixin.qq.com/s/5DtTgc9bIrdXQkmuqRm8CA
-
-谷歌大脑迁移学习：减少调参，直接在数据集中学习最佳图像架构
-
-https://mp.weixin.qq.com/s/fEKc6yFZwTPAHjXJlcHA-w
-
-香港科技大学提出L2T框架：学习如何迁移学习
-
-https://mp.weixin.qq.com/s/pbyByPoZ9SVoP9B7pJMxXg
-
-深度卷积网络迁移学习的脸部表情识别
-
-https://www.zhihu.com/question/50996014
-
-什么是One/zero-shot learning？
-
-https://mp.weixin.qq.com/s/SZlFgnUBL0T6yNa-i_WLvg
-
-领域适应性Domain Adaptation、One-shot/zero-shot Learning概述
-
-https://mp.weixin.qq.com/s/sAf2fLLnKHOs433pV_6bSQ
-
-One-shot Learning：孪生网络少样本精准分类
-
-https://mp.weixin.qq.com/s/J8ZmIVKd-4X3hMGGIJWoDQ
-
-一文看懂迁移学习：从基础概念到技术研究！
-
-https://mp.weixin.qq.com/s/qYoTgqwjaUlEycuk9LlonA
-
-迁移学习：6张图像vs13000张图像，超越2013 Kaggle猫狗识别竞赛领先水平
-
-http://mp.weixin.qq.com/s/6Urv6TfUfc-BWV1YqTM1PQ
-
-迁移学习+BPE，改进低资源语言的神经翻译结果
-
-https://zhuanlan.zhihu.com/p/30242073
-
-人脸识别中的迁移学习简介（Transfer Learning）
-
-https://mp.weixin.qq.com/s/rVYWV-LsbmA4QhC6207SWA
-
-14篇论文为你呈现“迁移学习”研究全貌
-
-https://mp.weixin.qq.com/s/l-l1xbUaPNKc-w5XndjCbQ
-
-通过网络结构迁移学习提高图像识别任务的拓展性
-
-https://mp.weixin.qq.com/s/-KssC3yXsG3ZuV8-I6D_nQ
-
-学习迁移架构用于Scalable图像的识别
-
-https://mp.weixin.qq.com/s/NQED6DdCJNpNyzURUOZPnA
-
-迁移学习：机器学习的下一个前沿阵地！
-
-https://mp.weixin.qq.com/s/Hok9D8dAzYrBz7XoFmGE2A
-
-AliExpress：在检索式问答系统中应用迁移学习
-
-https://mp.weixin.qq.com/s/f_vB2AXCytnvoZaqfMeIpw
-
-应用TF-Slim快速实现迁移学习
-
-https://mp.weixin.qq.com/s/R1bKmhADfhQAZmhXL9ObiQ
-
-多重预训练视觉模型的迁移学习
-
-https://mp.weixin.qq.com/s/pDK4qBWArtETARE1fjbbmA
-
-迁移学习在深度学习中的应用
-
-https://mp.weixin.qq.com/s/mB1AEFVdM_s1rk0irST4Ww
-
-迁移学习在图像分类中的简单应用策略
-
-https://mp.weixin.qq.com/s/PDyp_GO0ovWV0KoGTwp_gQ
-
-简述迁移学习在深度学习中的应用
-
-https://mp.weixin.qq.com/s/FHmijTVqQ26osp6PzZsbvQ
-
-付彦伟：零样本、小样本以及开集条件下的社交媒体分析
 
 # 语音识别
 
@@ -125,23 +27,49 @@ Connectionist Temporal Classification，是一种改进的RNN模型。它主要�
 《Connectionist Temporal Classification: Labelling Unsegmented
 Sequence Data with Recurrent Neural Networks》
 
+![](/images/img2/CTC.png)
+
+![](/images/img2/CTC_2.png)
+
+参考：
+
+https://distill.pub/2017/ctc/
+
+Sequence Modeling With CTC
+
+http://blog.csdn.net/laolu1573/article/details/78791992
+
+Sequence Modeling With CTC中文版
+
+https://www.zhihu.com/question/47642307
+
+语音识别中的CTC方法的基本原理
+
+https://www.zhihu.com/question/55851184
+
+基于CTC等端到端语音识别方法的出现是否标志着统治数年的HMM方法终结？
+
+https://zhuanlan.zhihu.com/p/23308976
+
+CTC——下雨天和RNN更配哦
+
+https://zhuanlan.zhihu.com/p/23293860
+
+CTC实现——compute ctc loss（1）
+
+https://zhuanlan.zhihu.com/p/23309693
+
+CTC实现——compute ctc loss（2）
+
 ## 参考
 
 https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=400189223&idx=1&sn=1cb32bee42de626443ebadbf065ec79c
 
 百度贾磊：汉语语音识别技术重大突破：LSTM+CTC详解
 
-https://www.zhihu.com/question/47642307
-
-语音识别中的CTC方法的基本原理
-
 https://www.zhihu.com/question/20398418
 
 语音识别的技术原理是什么？
-
-https://www.zhihu.com/question/55851184
-
-基于CTC等端到端语音识别方法的出现是否标志着统治数年的HMM方法终结？
 
 https://www.zhihu.com/question/46829056
 
@@ -267,18 +195,6 @@ https://mp.weixin.qq.com/s/XP4NVYMmKj9RLsgonP3ooQ
 
 无需进行滤波后处理，利用循环推断算法实现歌唱语音分离
 
-https://zhuanlan.zhihu.com/p/23308976
-
-CTC——下雨天和RNN更配哦
-
-https://zhuanlan.zhihu.com/p/23293860
-
-CTC实现——compute ctc loss（1）
-
-https://zhuanlan.zhihu.com/p/23309693
-
-CTC实现——compute ctc loss（2）
-
 https://mp.weixin.qq.com/s/GZI4uvCR3QzZDNddpBX2OQ
 
 深度学习也解决不掉语音识别问题
@@ -306,6 +222,10 @@ https://mp.weixin.qq.com/s/6xxXOx59lDZx0kUPb_ftBA
 https://mp.weixin.qq.com/s/grqKRvv4dwKU26zT1qhq2g
 
 Facebook开源语音识别工具包wav2letter
+
+https://mp.weixin.qq.com/s/OeCiH4n-Y3kigI3ynMyZSg
+
+有趣的研究奥巴马Net：从文本合成真实的唇语口型
 
 ## Kaldi
 
@@ -376,6 +296,10 @@ https://www.jiqizhixin.com/articles/2017-03-31-5
 https://homepages.cwi.nl/~sbohte/publication/paugam_moisy_bohte_SNNChapter.pdf
 
 Computing with Spiking Neuron Networks
+
+https://mp.weixin.qq.com/s/6dpKSaLFVo-ge4gtbG8GQg
+
+简述脉冲神经网络SNN：下一代神经网络
 
 # DNC
 
