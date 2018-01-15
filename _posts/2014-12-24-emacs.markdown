@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Emacs, Vi, Lua, Groovy
+title:  Emacs, Vi, Lua
 category: language 
 ---
 
@@ -353,6 +353,16 @@ Source Insight常用设置和快捷键大全
 
 打开“Tools --> Options --> Text Editor”，如果是编写C/C++程序，就打开“C/C++-->Tabs”，在这里，选中“Insert spaces”即可。
 
+# VS Code
+
+VS Code（Visual Studio Code）是由微软研发的一款免费、开源的跨平台文本（代码）编辑器。（首发于2015年）
+
+官网：
+
+https://code.visualstudio.com/
+
+`umake web visual-studio-code`
+
 # Lua
 
 Lua的包管理工具叫做LuaRocks。官网：
@@ -368,18 +378,4 @@ Lua程序逆向之Luac文件格式分析
 http://lua-users.org/wiki/GraphicalUserInterfaceToolkits
 
 Lua的GUI工具列表
-
-# Groovy
-
-Groovy是另一种JVM语言，也是与Java最兼容的语言。普通Java代码可以无修改的在Groovy中编译。Groovy源代码以.groovy为后缀。
-
-Groovy使用Gradle或Grape作为自动管理工具，其中后者是Groovy原生支持的，但是现在已经不如前者流行了。
-
-官网：
-
-http://www.groovy-lang.org/
-
-代码参见：
-
-https://github.com/antkillerfarm/antkillerfarm_rubbish/tree/master/groovy/javafx
 

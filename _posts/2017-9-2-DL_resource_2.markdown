@@ -200,6 +200,10 @@ https://mp.weixin.qq.com/s/6ksL9p1Gmnrd2HahU3KniQ
 
 ARM攒机指南——AI篇：5大千万级设备市场技术拆解
 
+https://zhuanlan.zhihu.com/p/32953957
+
+浅析图像视频类AI芯片的灵活度
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293

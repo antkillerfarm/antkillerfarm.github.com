@@ -68,4 +68,10 @@ https://mp.weixin.qq.com/s/h3fF6Zvr1rSzSMpqdu8B0A
 
 电子科大提出BT-RNN：替代全连接操作而大幅度提升LSTM效率
 
+https://mp.weixin.qq.com/s/fCzHbOi7aJ8-W9GzctUFNg
 
+LSTM文本分类实战
+
+http://mp.weixin.qq.com/s/3nwgft9c27ih172ANwHzvg
+
+从零开始：如何使用LSTM预测汇率变化趋势

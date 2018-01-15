@@ -50,16 +50,30 @@ Kaldi特征提取之-FBank
 
 ## CTC
 
-Connectionist Temporal Classification，是一种改进的RNN模型。它主要解决的是时序模型中，输入数大于输出数，输入输出如何对齐的问题。
+Connectionist Temporal Classification，是一种改进的RNN模型。它主要解决的是时序模型中，输入数大于输出数，输入输出如何对齐的问题。它由Alex Graves于2006年提出。
 
 论文：
 
 《Connectionist Temporal Classification: Labelling Unsegmented
 Sequence Data with Recurrent Neural Networks》
 
+>Alex Graves，瑞士IDSIA研究所博士，DeepMind研究员。
+
 ![](/images/img2/CTC.png)
 
+上图展示了音频数据被识别的过程：
+
+1.将音频数据均分成若干段，每段匹配一个音节。
+
+2.合并重复的音节，并去掉分割音节（即上图中的$$\epsilon$$）。
+
+相比于图像识别，人类语音的音节种类要少的多。但麻烦的是，一个音节的长短，会由于语速等因素的改变，而有较大差异。因此如何将数据段和音节匹配，成为了语音识别的难点。
+
+这个问题不只是在语音识别中出现。 我们在其他许多地方看到它。 比如手写体识别、视频行为标注。
+
 ![](/images/img2/CTC_2.png)
+
+
 
 参考：
 

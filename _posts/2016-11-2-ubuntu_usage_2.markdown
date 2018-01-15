@@ -251,6 +251,18 @@ https://www.ubuntu.com/desktop/snappy
 
 A ‘snap’ is a universal Linux package
 
+## Ubuntu Make
+
+Ubuntu Make前身是Ubuntu Developer Tools Center。可在Ubuntu平台上快速安装各种语言的开发环境。
+
+`sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make`
+
+`sudo apt update`
+
+`sudo apt install ubuntu-make`
+
+`umake ide eclipse`
+
 ## Conda
 
 Conda 是一个开源的软件包管理系统和环境管理系统，用于安装多个版本的软件包及其依赖关系，并在它们之间轻松切换。它是目前最流行的Python环境管理工具。

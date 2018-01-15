@@ -132,4 +132,32 @@ https://mp.weixin.qq.com/s/oY2yGrTmIpr3H2qvzYKInA
 
 谷歌一个模型解决所有问题《One Model to Learn Them All》论文深度解读
 
+https://mp.weixin.qq.com/s/pdv-T69rz4jO47CMf-CUhg
+
+“信息瓶颈”理论揭示深度学习本质
+
+https://mp.weixin.qq.com/s/e4hriDvTRLkg-mIifVWayw
+
+如何解决深度学习中的多体问题
+
+https://mp.weixin.qq.com/s/qTnFQK0CkvdJfZaKj2wUtQ
+
+海康威视联合提出注意力聚焦网络FAN：提升场景文本识别精确度
+
+https://mp.weixin.qq.com/s/iXmjuBh2zzno7-D9ClYbSA
+
+讲解DeepMind论文：AI在复杂环境中学习运动
+
+https://mp.weixin.qq.com/s/sYXVqnk5p8tvl6s0EIkr3w
+
+游戏代理框架，帮助您创建AI来玩任何您拥有的游戏！
+
+https://mp.weixin.qq.com/s/0KaSWHi8r9kSXxlwswIY5g
+
+乔宇：深度模型让机器理解场景
+
+https://mp.weixin.qq.com/s/QYG0l1fk35C1evM2FSHgsw
+
+多轮对话之对话管理：Dialog Management
+
 

@@ -269,10 +269,6 @@ http://mp.weixin.qq.com/s/V2-grLPdZ66FOiC2duc-EA
 
 如何判断LSTM模型中的过拟合与欠拟合
 
-http://mp.weixin.qq.com/s/3nwgft9c27ih172ANwHzvg
-
-从零开始：如何使用LSTM预测汇率变化趋势
-
 http://blog.csdn.net/malefactor/article/details/51183989
 
 深度学习计算模型中“门函数（Gating Function）”的作用
