@@ -128,3 +128,8 @@ https://mp.weixin.qq.com/s/iZ3MpyypVw-wYKAd2gBwwA
 
 IBM推出DeepTriage，利用深度学习实现Bug自动分类
 
+https://mp.weixin.qq.com/s/oY2yGrTmIpr3H2qvzYKInA
+
+谷歌一个模型解决所有问题《One Model to Learn Them All》论文深度解读
+
+

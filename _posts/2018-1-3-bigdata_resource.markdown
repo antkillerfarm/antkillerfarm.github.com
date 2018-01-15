@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  大数据平台参考资源, 区块链
+title:  大数据平台参考资源, 区块链参考资源
 category: resource 
 ---
 
@@ -13,6 +13,10 @@ http://v.kuaidadi.com/
 http://mp.weixin.qq.com/s/Bk5k6vRG4Rq4iCtmtYDEGQ
 
 Leaf——美团点评分布式ID生成系统
+
+https://mp.weixin.qq.com/s/_z0-90xbsCd4Pdi6UlEvnA
+
+分布式ID生成器
 
 https://mp.weixin.qq.com/s/GXGSDxukbIAM5W-YSX0pDg
 
@@ -238,7 +242,7 @@ https://mp.weixin.qq.com/s/HhabrgpbWSn_f2Q-QfgaAA
 
 智能投放系统之场景分析最佳实践
 
-# 区块链
+# 区块链参考资源 
 
 https://mp.weixin.qq.com/s/NF1tQaOTFklGM5U9kQ7yKA
 
@@ -311,5 +315,10 @@ ICO、比特币、区块链特么是什么玩意？
 https://mp.weixin.qq.com/s/cwcVveWh0QVoBhJro3dcRg
 
 如何简单快速的了解"区块链"技术
+
+https://mp.weixin.qq.com/s/mJ0WBv29pUSG02ZYEaLrrw
+
+一篇文看懂加密货币的本质
+
 
 

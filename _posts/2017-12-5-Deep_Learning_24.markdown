@@ -18,6 +18,36 @@ category: DL
 >个人主页：   
 >http://www.cs.colorado.edu/~martin/
 
+## 传统方法
+
+http://blog.csdn.net/zouxy09/article/details/9140207
+
+语音信号处理之（一）动态时间规整（DTW）
+
+http://blog.csdn.net/zouxy09/article/details/9141875
+
+语音信号处理之（二）基音周期估计（Pitch Detection）
+
+http://blog.csdn.net/zouxy09/article/details/9153255
+
+语音信号处理之（三）矢量量化（Vector Quantization）
+
+http://blog.csdn.net/zouxy09/article/details/9156785
+
+语音信号处理之（四）梅尔频率倒谱系数（MFCC）
+
+https://my.oschina.net/jamesju/blog/193343
+
+语音特征参数MFCC提取过程详解
+
+https://liuyanfeier.github.io/2017/10/26/2017-10-27-Kaldi%E4%B9%8Bfbank%E5%92%8Cmfcc%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/
+
+kaldi之fbank和mfcc特征提取
+
+http://blog.csdn.net/wxb1553725576/article/details/78048546
+
+Kaldi特征提取之-FBank
+
 ## CTC
 
 Connectionist Temporal Classification，是一种改进的RNN模型。它主要解决的是时序模型中，输入数大于输出数，输入输出如何对齐的问题。

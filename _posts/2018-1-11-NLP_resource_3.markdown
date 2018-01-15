@@ -170,4 +170,12 @@ https://mp.weixin.qq.com/s/KVONdK44T8JKU5pFB5ydrQ
 
 SQuAD文本理解挑战赛十大模型解读
 
+https://mp.weixin.qq.com/s/U2r4qDLh4WZFgAIoF_SRPg
+
+金融客服AI新玩法：语言学运用、LSTM+DSSM算法、多模态情感交互
+
+https://mp.weixin.qq.com/s/Zrxi0AK0oimjKNr5kG_MMA
+
+数据挖掘之父韩家炜：文本语料库的数据挖掘
+
 

@@ -4,54 +4,6 @@ title:  深度学习（十）——fine-tuning, 李飞飞, 花式卷积
 category: DL 
 ---
 
-# GAN
-
-## 参考（续）
-
-https://mp.weixin.qq.com/s/Q_1IUS-65ZAFt9w0RlZUpw
-
-谷歌开源TFGAN：轻量级生成对抗网络工具库
-
-https://mp.weixin.qq.com/s/BCA7MmYnivuGbwyjHqDQUw
-
-手把手教你实现GAN半监督学习
-
-https://mp.weixin.qq.com/s/FL63vEAhp8mElI5RFxnbSQ
-
-GAN开山之作及最新综述
-
-https://mp.weixin.qq.com/s/I7axl00VZeCHJpaaITCO2Q
-
-对抗学习GAN提升跨模态检索效果
-
-https://mp.weixin.qq.com/s/OZWih_xfqYdeP-x9MawogA
-
-GAN做图像翻译的一点总结
-
-https://zhuanlan.zhihu.com/p/32103958
-
-GAN调研：多极扩展（跨域和条件的GAN扩展模型调研）
-
-https://mp.weixin.qq.com/s/RZ6UbTgfn30UFaUYNtApRg
-
-如何用Masking GAN让100,000人笑起来？
-
-https://mp.weixin.qq.com/s/OPn4_jmJ7pUg8xa0FZvyiw
-
-超火的漫画线稿上色AI出新版了！无监督训练，效果更美好
-
-https://mp.weixin.qq.com/s/wrxKwY2SvJZc8bRuZ_wF_A
-
-用生成对抗网络给雪人上色，探索人工智能时代的美学
-
-https://mp.weixin.qq.com/s/lPeySqEr3pzPdZqnp1Eh8A
-
-CMU提出对抗生成网络：可实现对人脸识别模型的神经网络攻击
-
-https://mp.weixin.qq.com/s/A66WeHH77IOCv61RHiDE0w
-
-生成式对抗网络（GAN）如何快速理解？这里有一篇最直观的解读
-
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
