@@ -210,6 +210,24 @@ http://blogs.atlassian.com/2014/05/handle-big-repositories-git/
 
 https://gitextensions.github.io/
 
+## .gitignore
+
+有的文件或文件夹，你不想将它加入版本控制中，但恼人的是，每次commit的时候，这些文件都会出现在候选列表中，稍有不慎，甚至会错误选中。
+
+这时，你可以编辑.gitignore来忽略这些文件，相当于是加了一个黑名单。但其实.gitignore也可定义白名单：
+
+{% highlight bash %}
+*/
+!src/
+!src/**
+{% endhighlight %}
+
+参考：
+
+http://ybin.cc/git/gitignore-syntax/
+
+彻底理解.gitignore
+
 ## Git Server
 
 ### Bonobo Git Server
@@ -265,55 +283,4 @@ https://www.gerritcodereview.com/
 而现在的话，你可以有别的选择，比如ifttt.com。ifttt是If this then that的缩写。国内的山寨版本有“如果云”。这些网站允许你自己创建一定的规则，来完成一定的动作。具体到当前的目标，就是创建以下规则：一旦rss的内容有更新，就立即将新内容以电子邮件的方式发送到我的邮箱里。
 
 剩下的问题就简单了，找一个好用的邮箱。使用邮箱的手机客户端，将邮件下载到手机上，这样每天的早报就有了:)
-
-# awk&sed&grep
-
-这三个工具是文本处理中用的比较多的工具，各有各的特色，且都支持正则表达式。
-
-一般来说，行处理优先考虑使用sed和grep，列处理优先考虑使用awk。通常情况下，组合使用多个命令，其命令编写的难度小于只使用一个命令。比如sed和grep也可以进行列处理，但语法难度远超awk，反之亦然。
-
-这里不打算列出各个命令的选项，而仅列出使用它们的一些示例：
-
-这里假设我们有一文件名为ab。
-
-## awk
-
-{% highlight bash %}
-awk '{print $1}' ab #显示第一列
-{% endhighlight %}
-
-## sed
-
-{% highlight bash %}
-sed '1d' ab #删除第一行 
-sed '$d' ab #删除最后一行
-sed '1,2d' ab #删除第一行到第二行
-sed '2,$d' ab #删除第二行到最后一行
-
-sed -n '1p' ab    #显示第一行 
-sed -n '$p' ab    #显示最后一行
-sed -n '1,2p' ab  #显示第一行到第二行
-sed -n '2,$p' ab  #显示第二行到最后一行
-
-sed -n '/ruby/p' ab #查询包括关键字ruby所在所有行
-sed -n '/\$/p' ab #查询包括关键字$所在所有行，使用反斜线\屏蔽特殊含义
-
-sed -n '/ruby/p' ab | sed 's/ruby/bird/g'    #替换ruby为bird
-sed -n '/ruby/p' ab | sed 's/ruby//g'        #删除ruby
-
-sed -e 's/.$//' mydos.txt > myunix.txt #dos->unix
-{% endhighlight %}
-
-## grep
-
-{% highlight bash %}
-grep 'ruby' ab #查询包括关键字ruby所在所有行
-grep -nri 'ruby' #n 显示行号，r 子目录搜索，i 忽略大小写
-{% endhighlight %}
-
-## 综合
-
-{% highlight bash %}
-ip addr show br-lan | grep 'inet ' | awk  '{print $2}' | sed 's/\/.*//g'
-{% endhighlight %}
 

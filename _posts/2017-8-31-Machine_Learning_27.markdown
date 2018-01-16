@@ -134,4 +134,13 @@ https://mp.weixin.qq.com/s/a1C1ezL59azNfdM3TFGaGw
 
 递推与储存，是动态规划的关键
 
+# Monte-Carlo
+
+参考：
+
+https://mp.weixin.qq.com/s/F9VlxVV4nXELyKxdRo9RPA
+
+强化学习——蒙特卡洛
+
+
 

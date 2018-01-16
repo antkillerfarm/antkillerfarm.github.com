@@ -112,6 +112,12 @@ Github：
 
 https://github.com/facebookresearch/fastText
 
+参考：
+
+https://mp.weixin.qq.com/s/tXgF7rQdZm3IFAluMU5ywg
+
+fastText之源码分析
+
 ## Item2Vec
 
 本质上，word2vec模型是在word-context的co-occurrence矩阵基础上建立起来的。因此，任何基于co-occurrence矩阵的算法模型，都可以套用word2vec算法的思路加以改进。

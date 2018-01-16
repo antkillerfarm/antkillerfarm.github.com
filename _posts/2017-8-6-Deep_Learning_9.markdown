@@ -235,3 +235,7 @@ https://mp.weixin.qq.com/s/FL63vEAhp8mElI5RFxnbSQ
 
 GAN开山之作及最新综述
 
+https://mp.weixin.qq.com/s/A66WeHH77IOCv61RHiDE0w
+
+生成式对抗网络（GAN）如何快速理解？这里有一篇最直观的解读
+

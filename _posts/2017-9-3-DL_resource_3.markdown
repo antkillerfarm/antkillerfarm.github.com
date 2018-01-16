@@ -178,14 +178,6 @@ AlphaZero实战：从零学下五子棋
 
 ## 实战
 
-https://github.com/jinfagang/pytorch_name_net
-
-PyTorch人工智能自动取名
-
-https://mp.weixin.qq.com/s/UGGrK5LwOP2aLVTz0AGMDw
-
-如何通过PyTorch实现Tensor
-
 http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg
 
 GitHub最受欢迎深度学习项目Top 20
@@ -266,22 +258,6 @@ https://mp.weixin.qq.com/s/hRH7hVsaQBqf0vhD_BqBgg
 
 五大深度学习框架三类神经网络全面测评
 
-https://mp.weixin.qq.com/s/9X77MPcQOQPwZaOVIVfo9Q
-
-用PyTorch搭建抽取式摘要系统
-
-https://mp.weixin.qq.com/s/y5LLraGWuYUbOted9N-GWQ
-
-如何从TensorFlow转入PyTorch
-
-https://mp.weixin.qq.com/s/RKtyNpIxSxFNfOSyHPOiGw
-
-深度学习PyTorch的教程代码
-
-https://mp.weixin.qq.com/s/i70pT7pQpdoCXXhXq2_MEw
-
-四天速成！香港科技大学PyTorch教程
-
 http://mp.weixin.qq.com/s/Z5X7Vamuw1BwtienhOrSvQ
 
 解构TensorFlow, 学习MXNet--新一代深度学习系统的核心思想
@@ -289,10 +265,6 @@ http://mp.weixin.qq.com/s/Z5X7Vamuw1BwtienhOrSvQ
 https://zhuanlan.zhihu.com/p/26078299
 
 使用深度学习来破解captcha验证码
-
-https://mp.weixin.qq.com/s/7Wr70NFi4pxvSpRr2Q1zsQ
-
-强大的PyTorch：10分钟让你了解深度学习领域新流行的框架
 
 https://mp.weixin.qq.com/s/dY5r_KJVkpipluo7ji9H6w
 
@@ -302,21 +274,9 @@ https://mp.weixin.qq.com/s/HTj9OozYdq_VLJuGKaiEAg
 
 百行代码构建神经网络黑白图片自动上色系统
 
-https://mp.weixin.qq.com/s/rORvudwdbnmSvzFhM1gVOA
-
-斯坦福大学CS-224n课程中深度NLP模型的PyTorch实现
-
-https://mp.weixin.qq.com/s/Chk-QAPhIXlIeguT4hS6kg
-
-对比ResNet：超深层网络DiracNet的PyTorch实现
-
 https://mp.weixin.qq.com/s/hbvM64QPT1mKQZey6Kauww
 
 图像算法在电商大促中的应用浅析
-
-https://mp.weixin.qq.com/s/KRuEuAOXU2fpSNyOJW4bpA
-
-Yoshua Bengio实验室MILA开放面向初学者的PyTorch教程
 
 https://mp.weixin.qq.com/s/10nLPqBgQ1XJAP8jXqFU0g
 
@@ -326,21 +286,9 @@ https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q
 
 如何用百度深度学习框架PaddlePaddle做数据预处理
 
-https://mp.weixin.qq.com/s/QjhokXDXuglJajULKigt1g
-
-PyTorch手把手深度学习教程系列完整版
-
 https://mp.weixin.qq.com/s/MK_al7CgieiVXB1MGWZ9GA
 
 听说你用JavaScript写代码？本文是你的机器学习指南
-
-https://mp.weixin.qq.com/s/BP9MToKcE1MJmQTQv2UUZQ
-
-Pytorch开源VQA神经网络模块，让你快速完成看图问答
-
-https://mp.weixin.qq.com/s/QqRjvWMMKosPh9qfU61BzQ
-
-浅谈将Pytorch模型从CPU转换成GPU
 
 ## 工具
 

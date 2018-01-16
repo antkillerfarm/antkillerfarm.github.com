@@ -360,6 +360,10 @@ https://www.zhihu.com/people/xuan-xing-29/posts
 
 某量子通信牛人的blog
 
+https://mp.weixin.qq.com/s/ZfprFQjVANuCE2N693gZBQ
+
+用户空间和内核空间
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

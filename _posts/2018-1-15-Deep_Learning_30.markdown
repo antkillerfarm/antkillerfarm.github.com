@@ -102,10 +102,6 @@ https://mp.weixin.qq.com/s/sxa0BfXtylHXzjq0YBn-Kg
 
 伯克利图像迁移cycleGAN，猫狗互换效果感人
 
-https://mp.weixin.qq.com/s/aMfPBl6E5SxckQdSAGTkBg
-
-Pytorch教程：Facebook发布的LR-GAN如何生成图像？
-
 https://mp.weixin.qq.com/s/YXWTslQXIKVihBb2Bgtafg
 
 GAN在信息检索领域的应用
@@ -198,6 +194,8 @@ https://mp.weixin.qq.com/s/lPeySqEr3pzPdZqnp1Eh8A
 
 CMU提出对抗生成网络：可实现对人脸识别模型的神经网络攻击
 
-https://mp.weixin.qq.com/s/A66WeHH77IOCv61RHiDE0w
+https://mp.weixin.qq.com/s/Dz5c32SnM8-Pdjb9oWxZ_Q
 
-生成式对抗网络（GAN）如何快速理解？这里有一篇最直观的解读
+想实现DCGAN？从制作一张门票谈起！
+
+
