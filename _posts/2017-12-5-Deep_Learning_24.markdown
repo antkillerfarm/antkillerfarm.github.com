@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十四）——语音识别, OCR
+title:  深度学习（二十四）——语音识别
 category: DL 
 ---
 
@@ -348,72 +348,6 @@ Tacotron一种端到端的Text-to-Speech合成模型
 https://www.jiqizhixin.com/articles/2017-03-31-5
 
 谷歌全端到端语音合成系统Tacotron：直接从字符合成语音
-
-# Spiking Neuron Networks
-
-除了基于BP算法的NN之外，Spiking Neuron Networks也是一大类NN。Spiking NN和人脑结构更相似，功耗也更小，但是相关训练和数据量化的算法尚不成熟，属于潜力股。
-
-参考：
-
-https://homepages.cwi.nl/~sbohte/publication/paugam_moisy_bohte_SNNChapter.pdf
-
-Computing with Spiking Neuron Networks
-
-https://mp.weixin.qq.com/s/6dpKSaLFVo-ge4gtbG8GQg
-
-简述脉冲神经网络SNN：下一代神经网络
-
-# DNC
-
-https://zhuanlan.zhihu.com/p/27773709
-
-浅析至强RNN可微分神经计算机(DNC)
-
-https://zhuanlan.zhihu.com/p/27964341
-
-浅析至强RNN可微分神经计算机(DNC)-2
-
-https://zhuanlan.zhihu.com/p/28209628
-
-DNC-3滚动分类的模式识别
-
-https://zhuanlan.zhihu.com/p/28433712
-
-DNC4广义线性回归
-
-# OCR
-
-## tesseract
-
-linux下可以使用tesseract作为OCR工具。安装方法：
-
-`sudo apt install tesseract-ocr libtesseract-dev`
-
-使用方法：
-
-`tesseract ./111.png 1 -l chi_sim+eng`
-
-## 参考
-
-https://mp.weixin.qq.com/s/h7HVyGbmtLmNVJp4p0rCRQ
-
-字符识别(OCR)相关工具/库/教材/论文等资源整理
-
-https://zhuanlan.zhihu.com/p/21344595
-
-端到端的OCR：验证码识别(LSTM+CTC)
-
-http://www.jianshu.com/p/86489f1afd36
-
-端到端的OCR：基于CNN的实现
-
-http://www.jianshu.com/p/4fadf629895b
-
-端到端的OCR：LSTM＋CTC的实现
-
-https://mp.weixin.qq.com/s/axpA7Y_Rhiols5bDIdc6jg
-
-Tesseract-OCR 3.0.1训练自己的语言库之图像文字识别
 
 
 

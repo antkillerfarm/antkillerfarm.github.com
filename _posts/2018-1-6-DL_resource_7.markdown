@@ -160,4 +160,12 @@ https://mp.weixin.qq.com/s/QYG0l1fk35C1evM2FSHgsw
 
 多轮对话之对话管理：Dialog Management
 
+https://mp.weixin.qq.com/s/glwjwXNNoMYBmhgwEcpUeg
+
+十倍模型计算时间仅增20%：OpenAI开源梯度替换插件
+
+https://mp.weixin.qq.com/s/x5rTpvvCfABWWkjpgnJ5BA
+
+谷歌大脑提出Adversarial Spheres：从简单流形探讨对抗性样本的来源
+
 

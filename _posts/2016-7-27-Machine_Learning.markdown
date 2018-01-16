@@ -186,6 +186,12 @@ $$\theta_j:=\theta_j+\alpha(y^{(i)}-h_{\theta}(x^{(i)}))x^{(i)}_j \tag{4}$$
 
 ![](/images/article/ogd_vs_mini_batch.png)
 
+参考：
+
+https://mp.weixin.qq.com/s/fOFFyFo_YNDM57RFEdywQQ
+
+梯度下降法的三种形式BGD、SGD以及MBGD
+
 ## 正规方程组算法
 
 正规方程组（Normal Equations）算法，是传统的以解方程的方式求最小值的方法。

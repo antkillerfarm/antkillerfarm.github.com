@@ -162,6 +162,12 @@ API参考：
 
 http://matplotlib.org/1.5.3/api/index.html
 
+参考：
+
+https://mp.weixin.qq.com/s/mpj1QpWpnGm8117p3cEWZw
+
+如何优雅而高效地使用Matplotlib实现数据可视化
+
 ## Pandas
 
 Pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。
