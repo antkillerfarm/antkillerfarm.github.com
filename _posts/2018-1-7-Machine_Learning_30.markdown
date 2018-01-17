@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十）——垃圾筐
+title:  机器学习（三十）——垃圾筐, NLP机器翻译常用评价度量
 category: ML 
 ---
 
@@ -145,6 +145,10 @@ http://wenku.baidu.com/view/72f80113915f804d2b16c173.html
 
 高斯过程回归方法综述
 
+https://mp.weixin.qq.com/s/ZE_Chzlgy_7wl9E9q1ckOA
+
+AlphaGo Zero用它来调参？“高斯过程”到底有何过人之处？
+
 # 莫比乌斯反演
 
 http://blog.csdn.net/acdreamers/article/details/8542292
@@ -170,4 +174,31 @@ http://blog.csdn.net/hzj1054689699/article/details/51659994
 http://blog.csdn.net/outer_form/article/details/50588307
 
 莫比乌斯反演定理证明
+
+# NLP机器翻译常用评价度量
+
+机器翻译的评价指标主要有：BLEU、NIST、Rouge、METEOR等。
+
+参考：
+
+http://blog.csdn.net/joshuaxx316/article/details/58696552
+
+BLEU，ROUGE，METEOR，ROUGE-浅述自然语言处理机器翻译常用评价度量
+
+http://blog.csdn.net/guolindonggld/article/details/56966200
+
+机器翻译评价指标之BLEU
+
+http://blog.csdn.net/han_xiaoyang/article/details/10118517
+
+机器翻译评估标准介绍和计算方法
+
+http://blog.csdn.net/lcj369387335/article/details/69845385
+
+自动文档摘要评价方法---Edmundson和ROUGE
+
+https://mp.weixin.qq.com/s/XiZ6Uc5cHZjczn-qoupQnA
+
+对话系统评价方法综述
+
 

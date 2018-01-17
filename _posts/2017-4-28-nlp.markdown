@@ -347,6 +347,10 @@ https://mp.weixin.qq.com/s/jjlXGaGSJO3KeJv9adLi2Q
 
 Synonyms：一个开源的中文近义词工具包
 
+https://mp.weixin.qq.com/s/JBu5ozGYkgBJHUyQCne0YQ
+
+中文文本标注工具Chinese-Annotator
+
 ## NLPchina
 
 NLPchina(中国自然语言处理开源组织)旗下有许多好用的工具。

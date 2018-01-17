@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十三）——单分类SVM&多分类SVM, 时间序列分析
+title:  机器学习（二十三）——单分类SVM&多分类SVM
 category: ML 
 ---
 

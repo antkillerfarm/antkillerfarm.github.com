@@ -364,6 +364,10 @@ https://mp.weixin.qq.com/s/ZfprFQjVANuCE2N693gZBQ
 
 用户空间和内核空间
 
+https://mp.weixin.qq.com/s/mHJnbgOjydUrAmF-bLKJ1Q
+
+存储数据包的一生
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

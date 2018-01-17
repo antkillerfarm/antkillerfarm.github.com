@@ -40,6 +40,10 @@ https://mp.weixin.qq.com/s/OxNj9fWaEMh8SuQiK52HWg
 
 sklearn中PCA库讲解与实战
 
+https://mp.weixin.qq.com/s/JjJcyAccRc84U8C_qllf_Q
+
+如何用sklearn创建机器学习分类器？
+
 https://mp.weixin.qq.com/s/ZbT5ASvnTODkodTJjBGhnw
 
 Python环境下的8种简单线性回归算法

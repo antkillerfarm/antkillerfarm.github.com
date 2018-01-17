@@ -164,6 +164,10 @@ http://www.cvlibs.net/datasets/kitti/
 
 KITTI Vision Benchmark Suite：一个自动驾驶方面的数据库。包括GPS、雷达、摄像头等数据。
 
+https://github.com/MarvinTeichmann/KittiSeg
+
+一个KITTI数据集上的道路图像语义分割模型。
+
 https://niessner.github.io/Matterport/
 
 全球最大的3D数据集公开了！标记好的10800张全景图

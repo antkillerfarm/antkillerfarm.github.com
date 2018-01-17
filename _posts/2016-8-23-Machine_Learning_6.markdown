@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（六）——SVM（4）
+title:  机器学习（六）——SVM（3）
 category: ML 
 ---
 

@@ -144,6 +144,10 @@ https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap
 
 独立AI研究员Flood Sung提供的初学者阅读论文的路线图
 
+http://blog.csdn.net/xmdxcsj
+
+一个语音识别的blog
+
 ## 项目集锦
 
 https://mp.weixin.qq.com/s/ZNNgEB9rFjAE8SdfMo9NLA

@@ -93,6 +93,8 @@ CTC算法可以克服这些挑战。对于一个给定的X，它给我们一个�
 
 $$Y^*=\mathop{\text{argmax}}_{Y} p(Y \mid X)$$
 
+![](/images/img2/full_collapse_from_audio.png)
+
 参考：
 
 https://distill.pub/2017/ctc/
@@ -102,6 +104,10 @@ Sequence Modeling With CTC
 http://blog.csdn.net/laolu1573/article/details/78791992
 
 Sequence Modeling With CTC中文版
+
+http://blog.csdn.net/u012968002/article/details/78890846
+
+CTC原理
 
 https://www.zhihu.com/question/47642307
 
@@ -122,6 +128,10 @@ CTC实现——compute ctc loss（1）
 https://zhuanlan.zhihu.com/p/23309693
 
 CTC实现——compute ctc loss（2）
+
+http://blog.csdn.net/xmdxcsj/article/details/70300591
+
+端到端语音识别（二） ctc。这个blog中还有5篇《CTC学习笔记》的链接。
 
 ## 参考
 

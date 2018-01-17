@@ -355,7 +355,7 @@ Source Insight常用设置和快捷键大全
 
 # VS Code
 
-VS Code（Visual Studio Code）是由微软研发的一款免费、开源的跨平台文本（代码）编辑器。（首发于2015年）
+VS Code（Visual Studio Code）是由微软研发的一款免费、开源的跨平台文本（代码）编辑器。（首发于2015年）从文件来看应该是基于nodejs所做，据说脱胎于Atom。
 
 官网：
 

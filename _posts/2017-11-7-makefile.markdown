@@ -42,6 +42,8 @@ https://autotools.io/index.html
 
 http://www.ibm.com/developerworks/cn/linux/l-makefile/index.html
 
+例解autoconf和automake生成Makefile文件
+
 但是，这个教程比较老了，有的地方的处理并不符合当前的版本，以下针对这些新老版本的差异，做一个说明。
 
 1.首先给出新版本（2016.2）的示例代码：
@@ -69,6 +71,8 @@ pkg-config就是用来解决编译连接界面不统一问题的一个工具。
 参见：
 
 http://www.mike.org.cn/articles/description-configure-pkg-config-pkg_config_path-of-the-relations-between/
+
+简述configure、pkg-config、pkg_config_path三者的关系
 
 ## autoconf&automake与pkg-config的协同工作
 
@@ -135,6 +139,36 @@ premake使用lua语言编写，语法比CMake更简单。它的官网是：
 http://premake.github.io/
 
 premake的缺点在于，它基本上是个人作品，全职开发人员太少，导致功能有限，目前尚无特大项目使用该系统，其功能性和可靠性受到质疑。
+
+# Other
+
+## blade
+
+blade是腾讯出品的构建工具。官网：
+
+https://github.com/chen3feng/typhoon-blade
+
+blade的底层用到了SCons。后者是一个python语言写的构建工具，可用于多种编程语言程序的构建。官网：
+
+http://www.scons.org/
+
+参考：
+
+https://www.ibm.com/developerworks/cn/linux/l-cn-scons/
+
+使用SCons轻松建造程序
+
+## MSbuild
+
+MSbuild当然是微软的构建工具了。官网：
+
+https://msdn.microsoft.com/en-us/library/dd393574.aspx
+
+参考：
+
+http://www.cnblogs.com/linianhui/archive/2012/08/30/2662648.html
+
+MSBuild入门
 
 # Flume & Kafka
 

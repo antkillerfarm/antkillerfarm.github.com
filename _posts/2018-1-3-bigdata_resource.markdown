@@ -242,6 +242,10 @@ https://mp.weixin.qq.com/s/HhabrgpbWSn_f2Q-QfgaAA
 
 智能投放系统之场景分析最佳实践
 
+https://mp.weixin.qq.com/s/12s9JUxVDqAnLAeqc_de8w
+
+聊聊分布式系统架构
+
 # 区块链参考资源 
 
 https://mp.weixin.qq.com/s/NF1tQaOTFklGM5U9kQ7yKA
@@ -320,5 +324,8 @@ https://mp.weixin.qq.com/s/mJ0WBv29pUSG02ZYEaLrrw
 
 一篇文看懂加密货币的本质
 
+https://mp.weixin.qq.com/s/VVkTVH8dNBiXUT9IkCBZBw
+
+《混子谈钱》--一分钟了解区块链
 
 

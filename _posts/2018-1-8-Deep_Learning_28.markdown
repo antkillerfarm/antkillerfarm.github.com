@@ -300,4 +300,8 @@ https://mp.weixin.qq.com/s/af10gqXNfohPEISSnpJ0tQ
 
 UCB吴翼&FAIR田渊栋等人提出强化学习环境Hourse3D
 
+https://mp.weixin.qq.com/s/ybyZpaHr-JJg7CCdXGOl5A
+
+Seq2seq强化学习实战
+
 

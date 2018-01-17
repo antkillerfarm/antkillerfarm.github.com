@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十四）——推荐算法中的常用排序算法, Tri-training, Beam Search, NLP机器翻译常用评价度量
+title:  机器学习（二十四）——时间序列分析, 推荐算法中的常用排序算法, Tri-training, Beam Search
 category: ML 
 ---
 
@@ -119,6 +119,10 @@ https://mp.weixin.qq.com/s/JR-GIXwHF45OysoE0qvwzw
 https://mp.weixin.qq.com/s/2hpQ_7Ih58d1RKYb1oW_Sg
 
 时间序列简介（一）
+
+https://mp.weixin.qq.com/s/05WAZcklXnL_hFPLZW9t7Q
+
+时间序列模型之相空间重构模型
 
 # 推荐算法中的常用排序算法
 
@@ -261,32 +265,5 @@ Beam Search（集束搜索/束搜索）
 http://blog.csdn.net/girlhpp/article/details/19400731
 
 束搜索算法（Andrew Jungwirth 初稿）BEAM Search
-
-# NLP机器翻译常用评价度量
-
-机器翻译的评价指标主要有：BLEU、NIST、Rouge、METEOR等。
-
-参考：
-
-http://blog.csdn.net/joshuaxx316/article/details/58696552
-
-BLEU，ROUGE，METEOR，ROUGE-浅述自然语言处理机器翻译常用评价度量
-
-http://blog.csdn.net/guolindonggld/article/details/56966200
-
-机器翻译评价指标之BLEU
-
-http://blog.csdn.net/han_xiaoyang/article/details/10118517
-
-机器翻译评估标准介绍和计算方法
-
-http://blog.csdn.net/lcj369387335/article/details/69845385
-
-自动文档摘要评价方法---Edmundson和ROUGE
-
-https://mp.weixin.qq.com/s/XiZ6Uc5cHZjczn-qoupQnA
-
-对话系统评价方法综述
-
 
 

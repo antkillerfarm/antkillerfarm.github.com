@@ -168,4 +168,12 @@ https://mp.weixin.qq.com/s/x5rTpvvCfABWWkjpgnJ5BA
 
 谷歌大脑提出Adversarial Spheres：从简单流形探讨对抗性样本的来源
 
+https://mp.weixin.qq.com/s/GqPfvWwH1T0XFwiZ86cW8A
+
+SamplePairing：针对图像处理领域的高效数据增强方式
+
+https://mp.weixin.qq.com/s/a4A5WCFalH1en0IEM3mu2Q
+
+双流束网络：北理工提出深度立体匹配新方法
+
 

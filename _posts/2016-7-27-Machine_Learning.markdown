@@ -148,6 +148,10 @@ https://mp.weixin.qq.com/s/lzZANmhfJeEtIayIoqjMOw
 
 通俗讲解凸函数及它的二阶特征
 
+https://mp.weixin.qq.com/s/oJU8ccIamK9UcU1tgmyFeg
+
+凸集、凸函数与凸优化基本概念
+
 ## LMS算法
 
 LMS（least mean squares，最小均方）算法，也是一种迭代算法。其迭代公式为：
@@ -249,20 +253,5 @@ $$N(x)=\sum_{j=0}^ka_jn_j(x),n_j(x)=\prod_{i=0}^{j-1}(x-x_i),a_j=[y_0,\dots,y_j]
 
 从中可以看出，欠拟合或过拟合实际上就是线性回归中的特征集选取问题。特征集选取不当，就会导致预测不准。
 
-## 局部加权线性回归
-
-局部加权线性回归（LWR，locally weighted linear regression）算法是一种对特征集选取不敏感的算法。它将公式2中的代价函数修改为：
-
-$$J(\theta)=\frac{1}{2}\sum_{i=0}^m\omega^{(i)}(h_{\theta}(x^{(i)})-y^{(i)})^2 \tag{5}$$
-
-其中，$$\omega^{(i)}$$被称为权重，它有多种选取方法，最常用的是：
-
-$$\omega^{(i)}=\exp\left(-\frac{(x^{(i)}-x)^2}{2\tau^2}\right)$$
-
-其中，$$\tau$$被称为带宽（bandwidth）。实际上，这就是一个高斯滤波器。离采样点x越近，其权重越接近1。
-
-## 回归分析和相关分析的区别
-
-回归分析是找出x和y之间的关系，而相关分析是找出x的各个分量之间的关系，和y并没有关系。
 
 
