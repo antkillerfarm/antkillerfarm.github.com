@@ -52,7 +52,11 @@ Hough Transform
 
 http://blog.csdn.net/poem_qianmo/article/details/26977557
 
-OpenCV霍夫变换：霍夫线变换，霍夫圆变换合辑 
+OpenCV霍夫变换：霍夫线变换，霍夫圆变换合辑
+
+http://blog.csdn.net/tianwaifeimao/article/details/17678669
+
+基于LSD的直线提取算法
 
 # HOG
 
