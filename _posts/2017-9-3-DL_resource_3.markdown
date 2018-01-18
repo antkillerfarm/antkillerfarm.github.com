@@ -68,7 +68,7 @@ https://mp.weixin.qq.com/s/AchyBBTZ3X3zYSM8-9WTrA
 
 Capsule Network在TIMIT语音识别中的实践（一）
 
-# AlphaGo
+## AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：
 

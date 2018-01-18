@@ -180,4 +180,8 @@ https://mp.weixin.qq.com/s/vFBlFAQLvDZP7IvwKoaPhA
 
 无问西东，只问哈希
 
+https://mp.weixin.qq.com/s/xCzS7sYMFmk5K4ClB1I2YQ
+
+Uber提出SBNet：利用激活的稀疏性加速卷积网络
+
 

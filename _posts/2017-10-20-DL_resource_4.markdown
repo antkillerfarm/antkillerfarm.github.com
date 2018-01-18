@@ -146,6 +146,10 @@ https://zhuanlan.zhihu.com/p/32819519
 
 AI玩跳一跳的终极奥义：首个端到端神经网络，看AI在玩游戏时注意什么
 
+https://mp.weixin.qq.com/s/wakcCF81Ew0q4km29mjIrQ
+
+DeepMind发布Nature论文: 博弈网络让智能体成为游戏大咖
+
 ## 量子计算 & 遗传算法
 
 https://www.zhihu.com/question/28171555

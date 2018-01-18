@@ -92,6 +92,10 @@ https://www.zhihu.com/question/26493945
 
 计算机视觉中，目前有哪些经典的目标跟踪算法？
 
+https://mp.weixin.qq.com/s/Wz-loMz1oOlxtm10gazQRg
+
+目标检测（Object Detection）和目标跟踪（Object Tracking）的区别
+
 https://zhuanlan.zhihu.com/p/22334661
 
 深度学习在目标跟踪中的应用

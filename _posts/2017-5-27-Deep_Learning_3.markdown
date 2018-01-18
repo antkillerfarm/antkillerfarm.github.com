@@ -1,8 +1,30 @@
 ---
 layout: post
-title:  深度学习（三）——CNN, Autoencoder
+title:  深度学习（三）——Neural Network Zoo, CNN, Autoencoder
 category: DL 
 ---
+
+# Neural Network Zoo
+
+在继续后续讲解之前，我们首先给出常见神经网络的结构图：
+
+![](/images/article/Neural_Networks.png)
+
+上图的原地址为：
+
+http://www.asimovinstitute.org/neural-network-zoo/
+
+单元结构：
+
+![](/images/article/neuralnetworkcells.png)
+
+层结构：
+
+![](/images/article/neuralnetworkgraphs.png)
+
+上图的原地址为：
+
+http://www.asimovinstitute.org/neural-network-zoo-prequel-cells-layers/
 
 # CNN
 
@@ -307,21 +329,4 @@ One-hot Representation的缺点在于：
 https://mp.weixin.qq.com/s?__biz=MzI4MzM2NTU0Mg==&mid=2247483698&idx=1&sn=cf185232e43b4523ab9b0bc0ce425ed4
 
 One-Hot编码与哑变量
-
-## Word Embedding
-
-针对One-hot Representation的不足，Bengio提出了Distributed Representation，也称为Word Embedding。
-
-![](/images/article/word_vector.png)
-
-Word Embedding的思路如上图所示，即想办法**将高维的One-hot词向量映射到低维的语义空间中**。
-
-Bengio自己提出了一种基于神经网络的Word Embedding的方案，然而由于计算量过大，目前已经被淘汰了。
-
-参考：
-
-http://www.cnblogs.com/neopenx/p/4570648.html
-
-词向量概况
-
 

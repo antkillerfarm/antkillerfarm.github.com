@@ -6,7 +6,13 @@ category: DL
 
 # RNN
 
-## RNN的基本结构（续）
+## RNN的基本结构
+
+RNN是Recurrent Neural Network和Recursive Neural Network的简称。前者主要用于处理和时序相关的输入，而后者目前已经没落。本文只讨论前者。
+
+![](/images/article/RNN.png)
+
+上图是RNN的结构图。其中，展开箭头左边是RNN的静态结构图。不同于之前的神经网络表示，这里的圆形不是单个神经元，而是一层神经元。权值也不是单个权值，而是权值向量。
 
 从静态结构图可以看出RNN实际上和3层MLP的结构，是基本类似的。差别在于RNN的隐藏层多了一个指向自己的环状结构。
 
@@ -292,9 +298,5 @@ https://mp.weixin.qq.com/s/LI6TsPjzIaa8DxDu3UaV1A
 https://mp.weixin.qq.com/s/LcdmXgAFpiIoHMIIXECC9g
 
 人人都能看懂的GRU
-
-
-
-
 
 

@@ -1,12 +1,20 @@
 ---
 layout: post
-title:  深度学习（二）——Dropout, 深度学习常用术语解释, Neural Network Zoo
+title:  深度学习（二）——Dropout, 深度学习常用术语解释
 category: DL 
 ---
 
-# 神经元激活函数
+# 神经元激活函数（续）
 
-## 稀疏性（续）
+## 稀疏性
+
+从数学上来看，非线性的Sigmoid函数对中央区的信号增益较大，对两侧区的信号增益小，在信号的特征空间映射上，有很好的效果。
+
+从神经科学上来看，中央区酷似神经元的兴奋态，两侧区酷似神经元的抑制态，因而在神经网络学习方面，可以将重点特征推向中央区，将非重点特征推向两侧区。
+
+无论是哪种解释，看起来都比早期的线性激活函数$$y=x$$,阶跃激活函数高明了不少。
+
+2001年，Attwell等人基于大脑能量消耗的观察学习上，推测神经元编码工作方式具有稀疏性和分布性。
 
 2003年，Lennie等人估测大脑同时被激活的神经元只有1~4%，进一步表明神经元工作的稀疏性。
 
@@ -244,27 +252,4 @@ Batch Normalization的分析与展望
 2.使用$$M_1,M_2$$对同一测试样本集$$T_2$$进行预测，得到预测结果集$$P_1,P_2$$。
 
 3.如果$$P_1,P_2$$的结论基本相反的话，则说明发生了欠拟合现象。而过拟合则并没有这么夸张的效果。
-
-# Neural Network Zoo
-
-在继续后续讲解之前，我们首先给出常见神经网络的结构图：
-
-![](/images/article/Neural_Networks.png)
-
-上图的原地址为：
-
-http://www.asimovinstitute.org/neural-network-zoo/
-
-单元结构：
-
-![](/images/article/neuralnetworkcells.png)
-
-层结构：
-
-![](/images/article/neuralnetworkgraphs.png)
-
-上图的原地址为：
-
-http://www.asimovinstitute.org/neural-network-zoo-prequel-cells-layers/
-
 

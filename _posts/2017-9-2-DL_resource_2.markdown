@@ -314,6 +314,10 @@ https://mp.weixin.qq.com/s/IqjKdAlGYREqCR9XQB5N1A
 
 伯克利AI分布式框架Ray，兼容TensorFlow、PyTorch与MXNet
 
+https://mp.weixin.qq.com/s/aNX_8UDYI_0u-MwMTYeqdQ
+
+开发易、通用难，深度学习框架何时才能飞入寻常百姓家？
+
 ## 面试
 
 https://www.zhihu.com/question/41233373

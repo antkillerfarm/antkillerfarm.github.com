@@ -6,6 +6,22 @@ category: DL
 
 # 词向量（续）
 
+## Word Embedding
+
+针对One-hot Representation的不足，Bengio提出了Distributed Representation，也称为Word Embedding。
+
+![](/images/article/word_vector.png)
+
+Word Embedding的思路如上图所示，即想办法**将高维的One-hot词向量映射到低维的语义空间中**。
+
+Bengio自己提出了一种基于神经网络的Word Embedding的方案，然而由于计算量过大，目前已经被淘汰了。
+
+参考：
+
+http://www.cnblogs.com/neopenx/p/4570648.html
+
+词向量概况
+
 ## word2vec
 
 除了Bengio方案之外，早期人们还尝试过基于共生矩阵（Co-occurrence Matrix）SVD分解的Word Embedding方案。该方案对于少量语料有不错的效果，但一旦语料增大，计算量即呈指数级上升。
@@ -147,6 +163,8 @@ https://mp.weixin.qq.com/s/vpxCP1Uw23y9XNTRUhY79w
 然而关联性并非都是坏事，有的时候也会起到意想不到的效果。比如在客服对话的案例中，客户可能会提供自己的收货地址，显然每个客户的地址都是不同的，但是有意思的是，这些地址的词向量是非常相似的。
 
 总之，**只利用无标注数据训练得到的Word Embedding在匹配度计算的实用效果上和主题模型技术相差不大，它们本质上都是基于共现信息的训练。**
+
+4.除了余弦相似度之外，词向量的模长，也是一个重要的特征，词向量模长越大，重要性越低（或者越高，取决于生成词向量的算法）。
 
 参考：
 
@@ -296,13 +314,8 @@ https://mp.weixin.qq.com/s/md3SL076cw0TgZDRlwWG5A
 
 用数据玩点花样！如何构建skim-gram模型来训练和可视化词向量
 
-# RNN
+https://mp.weixin.qq.com/s/aq_kWkwgwtz5qFo0lNEEqg
 
-## RNN的基本结构
+Tomas Mikolov论文简评：从Word2Vec到FastText
 
-RNN是Recurrent Neural Network和Recursive Neural Network的简称。前者主要用于处理和时序相关的输入，而后者目前已经没落。本文只讨论前者。
-
-![](/images/article/RNN.png)
-
-上图是RNN的结构图。其中，展开箭头左边是RNN的静态结构图。不同于之前的神经网络表示，这里的圆形不是单个神经元，而是一层神经元。权值也不是单个权值，而是权值向量。
 

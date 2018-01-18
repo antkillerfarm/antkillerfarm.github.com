@@ -368,6 +368,10 @@ https://mp.weixin.qq.com/s/mHJnbgOjydUrAmF-bLKJ1Q
 
 存储数据包的一生
 
+https://zhuanlan.zhihu.com/p/31189198
+
+神秘消失的内存去哪了？
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

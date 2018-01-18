@@ -246,7 +246,15 @@ https://mp.weixin.qq.com/s/12s9JUxVDqAnLAeqc_de8w
 
 聊聊分布式系统架构
 
-# 区块链参考资源 
+https://mp.weixin.qq.com/s/nXYrUgEhaCo4patd1YovOw
+
+微信亿级用户异常检测框架的设计与实践
+
+# 区块链参考资源
+
+https://mp.weixin.qq.com/s/hn1a9XZSu_lL5TPgq5ln2A
+
+区域链相关资料汇总
 
 https://mp.weixin.qq.com/s/NF1tQaOTFklGM5U9kQ7yKA
 
@@ -327,5 +335,9 @@ https://mp.weixin.qq.com/s/mJ0WBv29pUSG02ZYEaLrrw
 https://mp.weixin.qq.com/s/VVkTVH8dNBiXUT9IkCBZBw
 
 《混子谈钱》--一分钟了解区块链
+
+https://zhuanlan.zhihu.com/p/32796998
+
+10分钟搞定ICO
 
 

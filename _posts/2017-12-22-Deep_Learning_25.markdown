@@ -284,6 +284,10 @@ https://mp.weixin.qq.com/s/gbOmpP7XO1Hz_ld4iSEsrw
 
 三星提出移动端神经网络模型加速框架DeepRebirth
 
+https://mp.weixin.qq.com/s/rTFLiZ7DCo6vzD5O64UnMQ
+
+阿里提出新神经网络算法，压缩掉最后一个比特
+
 # 手势识别
 
 https://zhuanlan.zhihu.com/p/26630215
