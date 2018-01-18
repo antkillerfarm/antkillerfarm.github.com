@@ -144,4 +144,9 @@ https://mp.weixin.qq.com/s/qbyfErK7IC2tx7uJfzCg2g
 
 seq2seq模型实例：用Keras实现机器翻译
 
+https://mp.weixin.qq.com/s/SfambWzLry2IYRPklYk6Bw
+
+利用TensorFlow和Keras进行比特币价格预测
+
+
 

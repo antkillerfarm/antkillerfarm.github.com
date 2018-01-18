@@ -184,4 +184,8 @@ https://mp.weixin.qq.com/s/xCzS7sYMFmk5K4ClB1I2YQ
 
 Uber提出SBNet：利用激活的稀疏性加速卷积网络
 
+https://mp.weixin.qq.com/s/EW6jvf98ifBucVz74SfSIA
+
+文档扫描：深度神经网络在移动端的实践
+
 

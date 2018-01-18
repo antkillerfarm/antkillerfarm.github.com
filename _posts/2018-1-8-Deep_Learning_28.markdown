@@ -304,4 +304,8 @@ https://mp.weixin.qq.com/s/ybyZpaHr-JJg7CCdXGOl5A
 
 Seq2seq强化学习实战
 
+https://mp.weixin.qq.com/s/TUk1PWT9CfPGEW77UKxpjw
+
+三招武林绝学带你玩转“强化学习”
+
 
