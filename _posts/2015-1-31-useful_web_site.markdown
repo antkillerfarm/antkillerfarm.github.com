@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  有用的网址集合, 数字成像
+title:  有用的网址集合
 category: resource 
 ---
 
@@ -366,11 +366,19 @@ https://mp.weixin.qq.com/s/ZfprFQjVANuCE2N693gZBQ
 
 https://mp.weixin.qq.com/s/mHJnbgOjydUrAmF-bLKJ1Q
 
-存储数据包的一生
+存储数据包的一生（上）
+
+https://mp.weixin.qq.com/s/_7BTK2LpFdhZxUFCOGsSmw
+
+存储数据包的一生（下）
 
 https://zhuanlan.zhihu.com/p/31189198
 
 神秘消失的内存去哪了？
+
+https://mp.weixin.qq.com/s/Nn7Yl6UzRpWnSleKUss8Sw
+
+阿里巴巴正式开源自研动态非侵入AOP解决方案：JVM-Sandbox
 
 ## 有用的blog
 
@@ -389,63 +397,4 @@ ftp://mirrors.ustc.edu.cn/gnu/
 GNOME
 
 http://ftp.gnome.org/pub/GNOME/sources/
-
-# 数字成像
-
-https://mp.weixin.qq.com/s/od9uDZdRU4QaBKPHb0tLag
-
-cmos sensor基础
-
-https://mp.weixin.qq.com/s/lVS3CgZGItUkWG-OtolbSA
-
-数字成像书籍推荐与资料分享
-
-https://mp.weixin.qq.com/s/1IHHo4sV79sXdtXNzKNhMA
-
-计算摄影--google相机的王者之道
-
-https://mp.weixin.qq.com/s/T4XULnykHANEetmDIhZdaw
-
-mobile camera sensor技术方向选择的经验与教训
-
-https://mp.weixin.qq.com/s/EcAAc_ypajEKXUQbOoYAMA
-
-如何选择IR filter
-
-https://mp.weixin.qq.com/s/5rNpp2cYZhcOKZCiy4LkMQ
-
-SAR成像原理及图像鉴赏
-
-https://mp.weixin.qq.com/s/typXBdisUI-d_viVInx9XQ
-
-解析DXO图像质量评价体系
-
-https://mp.weixin.qq.com/s/t-Mzx0IEdZG7_TmMpT_cBA
-
-小谈CMOS Sensor设计之FSI和BSI
-
-https://mp.weixin.qq.com/s/gyuKlDwlIqaZmC3w-r8oqg
-
-手机相机如何排名
-
-https://mp.weixin.qq.com/s/o_XsmqLSPhvuC0iiK7xHag
-
-结构光（1）基本介绍
-
-https://mp.weixin.qq.com/s/cDrVpqsY7f2HZCJa4X8Iww
-
-Google Pixel 2/2XL视频稳定技术探究
-
-https://mp.weixin.qq.com/s/7E9QDSM095KyYwPs-wDznA
-
-成像相关颜色测量仪器简介
-
-https://mp.weixin.qq.com/s/DH3mZgh4YbnceaFGs03kOQ
-
-曹汛：计算摄像学研究
-
-https://mp.weixin.qq.com/s/f2BIrZ8if7_rX__J9hMHog
-
-广色域----iphone X/8 camera的色彩进化
-
 

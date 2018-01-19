@@ -239,3 +239,24 @@ https://mp.weixin.qq.com/s/A66WeHH77IOCv61RHiDE0w
 
 生成式对抗网络（GAN）如何快速理解？这里有一篇最直观的解读
 
+# Spatial Transformer Networks
+
+论文：
+
+《Spatial Transformer Networks》
+
+参考：
+
+http://www.cnblogs.com/neopenx/p/4851806.html
+
+Spatial Transformer Networks(空间变换神经网络)
+
+http://blog.csdn.net/shaoxiaohu1/article/details/51809605
+
+论文笔记：Spatial Transformer Networks
+
+http://blog.csdn.net/shaoxiaohu1/article/details/51809605
+
+Spatial Transformer Networks
+
+

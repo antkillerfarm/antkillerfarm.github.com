@@ -198,4 +198,7 @@ https://mp.weixin.qq.com/s/Dz5c32SnM8-Pdjb9oWxZ_Q
 
 想实现DCGAN？从制作一张门票谈起！
 
+https://mp.weixin.qq.com/s/f5dGUJw3bv8WppPZVzqyAA
+
+反GAN传统，Petuum自动驾驶新研究提出从复杂真实图像生成简单虚拟表征以预测驾驶指令
 

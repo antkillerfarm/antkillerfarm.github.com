@@ -134,6 +134,18 @@ https://mp.weixin.qq.com/s/tXgF7rQdZm3IFAluMU5ywg
 
 fastText之源码分析
 
+https://mp.weixin.qq.com/s/S4RGicXwZqis6vQFpB31qQ
+
+Bag of Tricks for Efficient Text Classification
+
+https://mp.weixin.qq.com/s/eq1I92rjIAWEpYw-1fEHeQ
+
+从Facebook AI Research开源fastText谈起文本分类：词向量模性、深度表征和全连接
+
+https://mp.weixin.qq.com/s/aq_kWkwgwtz5qFo0lNEEqg
+
+Tomas Mikolov论文简评：从Word2Vec到FastText
+
 ## Item2Vec
 
 本质上，word2vec模型是在word-context的co-occurrence矩阵基础上建立起来的。因此，任何基于co-occurrence矩阵的算法模型，都可以套用word2vec算法的思路加以改进。
@@ -171,34 +183,6 @@ https://mp.weixin.qq.com/s/vpxCP1Uw23y9XNTRUhY79w
 https://www.zhihu.com/question/22266868
 
 Word2Vec如何解决多义词的问题？
-
-## All is Embedding
-
-向量化是机器学习处理非数值数据的必经之路。因此除了词向量之外，还有其他的Embedding。比如Network Embedding。
-
-https://mp.weixin.qq.com/s/wcFlZPbB5dl6C87kdfjmKw
-
-NE(Network Embedding)论文小览
-
-https://mp.weixin.qq.com/s/zTNX_LeVMeHhJG7kPewn2g
-
-除了自然语言处理，你还可以用Word2Vec做什么？
-
-https://mp.weixin.qq.com/s/7dsrvHp6KIvlE-VXiUH1Rw
-
-HIN2Vec：异质信息网络中的表示学习
-
-https://mp.weixin.qq.com/s/CqJ7o1-ptCBBocB3PfEuXg
-
-万物向量化：用协作学习的方法生成更广泛的实体向量
-
-https://mp.weixin.qq.com/s/UtfidoBCJ0Wjpnl_C1a7iw
-
-浅谈向量化与Hash-Trick
-
-https://mp.weixin.qq.com/s/0JmB0sMUVsiuwrVObN_10g
-
-浙江大学提出设计网络嵌入算法的度惩罚原则，可有效保留无标度特性
 
 ## 参考
 
@@ -238,10 +222,6 @@ http://licstar.net/archives/328
 
 词向量和语言模型
 
-https://mp.weixin.qq.com/s/eq1I92rjIAWEpYw-1fEHeQ
-
-从Facebook AI Research开源fastText谈起文本分类：词向量模性、深度表征和全连接
-
 https://mp.weixin.qq.com/s/GYTxN5X7MnSQ4k5bD2l-PQ
 
 Salesforce的爱因斯坦AI最新NLP研究，通过情境化词向量从翻译中学习!
@@ -257,10 +237,6 @@ http://geek.csdn.net/news/detail/135736
 https://mp.weixin.qq.com/s/nLFRJO2QEG_kAmeRYUdT3g
 
 十分钟带你看遍词向量模型
-
-https://mp.weixin.qq.com/s/GGXI-ZzPc9LLjVQpf5ia1A
-
-词嵌入2017年进展全面梳理：趋势和未来方向
 
 https://zhuanlan.zhihu.com/p/30868040
 
@@ -302,10 +278,6 @@ https://mp.weixin.qq.com/s/pOShNO2iOntcGSRMbR9uxg
 
 Word2Vec与GloVe技术浅析与对比
 
-https://mp.weixin.qq.com/s/L6_BV-cWR4wge2ritmyqzA
-
-让你上瘾的网易云音乐推荐算法，用Word2vec就可以实现
-
 https://mp.weixin.qq.com/s/dUadWioBqIEnG85hJFfBJQ
 
 word2vec在工业界的应用场景
@@ -313,9 +285,5 @@ word2vec在工业界的应用场景
 https://mp.weixin.qq.com/s/md3SL076cw0TgZDRlwWG5A
 
 用数据玩点花样！如何构建skim-gram模型来训练和可视化词向量
-
-https://mp.weixin.qq.com/s/aq_kWkwgwtz5qFo0lNEEqg
-
-Tomas Mikolov论文简评：从Word2Vec到FastText
 
 

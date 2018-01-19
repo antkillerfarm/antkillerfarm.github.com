@@ -70,5 +70,8 @@ https://mp.weixin.qq.com/s/W1KP213Ngj-BNEyx-_nVyw
 
 利用TensorFlow实现卷积自编码器
 
+https://mp.weixin.qq.com/s/2COA8aRQBpxaihKnlLkXZQ
+
+快速上手图像识别：用TensorFlow API实现图像分类实例
 
 

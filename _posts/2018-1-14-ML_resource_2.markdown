@@ -262,3 +262,7 @@ https://mp.weixin.qq.com/s/wdRrJJERTwaNp_N_fGUOaA
 
 如何用数据挖掘找到合适房源？
 
+https://mp.weixin.qq.com/s/dPJpFyIa5SnhpY80En1EJQ
+
+平安银行算法实践
+

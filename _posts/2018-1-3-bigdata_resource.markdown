@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  大数据平台参考资源, 区块链参考资源
+title:  大数据平台参考资源, 区块链参考资源, CPU
 category: resource 
 ---
 
@@ -250,6 +250,10 @@ https://mp.weixin.qq.com/s/nXYrUgEhaCo4patd1YovOw
 
 微信亿级用户异常检测框架的设计与实践
 
+https://mp.weixin.qq.com/s/Ju4d71VrL0omGkV3s3U_1Q
+
+聊聊MyBatis缓存机制
+
 # 区块链参考资源
 
 https://mp.weixin.qq.com/s/hn1a9XZSu_lL5TPgq5ln2A
@@ -339,5 +343,28 @@ https://mp.weixin.qq.com/s/VVkTVH8dNBiXUT9IkCBZBw
 https://zhuanlan.zhihu.com/p/32796998
 
 10分钟搞定ICO
+
+# CPU
+
+https://zhuanlan.zhihu.com/p/29743431
+
+CPU制造的那些事之一：i7和i5其实是孪生兄弟！？
+
+https://zhuanlan.zhihu.com/p/29767262
+
+CPU制造的那些事之二：Die的大小和良品率
+
+https://zhuanlan.zhihu.com/p/31848803
+
+为什么CPU越来越多地采用硅脂而不是焊锡散热？
+
+https://zhuanlan.zhihu.com/p/27624654
+
+CPU风扇停转后会发生什么？CPU凭什么烧不坏
+
+https://zhuanlan.zhihu.com/p/30409360
+
+为什么CPU的频率止步于4G?我们触到频率天花板了吗？
+
 
 
