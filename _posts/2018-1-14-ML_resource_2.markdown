@@ -266,3 +266,9 @@ https://mp.weixin.qq.com/s/dPJpFyIa5SnhpY80En1EJQ
 
 平安银行算法实践
 
+https://mp.weixin.qq.com/s/WkIfTx6uvauxQcnHZx4LMw
+
+COTA：通过自然语言处理和机器学习改进Uber客户服务
+
+
+

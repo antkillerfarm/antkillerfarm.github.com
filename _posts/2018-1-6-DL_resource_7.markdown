@@ -188,4 +188,12 @@ https://mp.weixin.qq.com/s/EW6jvf98ifBucVz74SfSIA
 
 文档扫描：深度神经网络在移动端的实践
 
+https://mp.weixin.qq.com/s/D9bRjYVJOMT0Jkh59XZ-Rg
+
+DeepMind于Nature子刊发文提出非对称博弈的降维方法
+
+https://mp.weixin.qq.com/s/fwgKilh9Q7Wseano3lOG0g
+
+谷歌提出机器对话Self-Play框架M2M，提高自动化程度
+
 

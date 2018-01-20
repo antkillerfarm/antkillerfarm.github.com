@@ -178,4 +178,8 @@ https://mp.weixin.qq.com/s/Zrxi0AK0oimjKNr5kG_MMA
 
 数据挖掘之父韩家炜：文本语料库的数据挖掘
 
+https://mp.weixin.qq.com/s/4-pb-G1P3GMbq02kyZ0q8A
+
+NLP存在的问题与未来的架构
+
 

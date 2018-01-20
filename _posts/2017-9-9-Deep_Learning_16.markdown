@@ -278,4 +278,8 @@ http://blog.csdn.net/zy1034092330/article/details/72807924
 
 YOLO
 
+https://mp.weixin.qq.com/s/c9yagjJIe-m07twPvIoPJA
+
+YOLO算法的原理与实现
+
 

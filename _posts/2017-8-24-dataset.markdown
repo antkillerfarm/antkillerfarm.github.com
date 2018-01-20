@@ -208,4 +208,8 @@ https://mp.weixin.qq.com/s/vp--aYbPKi8yDSiS5MPMLA
 
 MIT与Facebook提出SLAC：用于动作分类和定位的稀疏标记数据集
 
+https://mp.weixin.qq.com/s/M3s3z3YnEBvUxpDVGFVKHw
+
+斯坦福吴恩达团队公布最大医学影像数据集
+
 

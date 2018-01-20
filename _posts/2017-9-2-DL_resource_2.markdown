@@ -204,6 +204,10 @@ https://zhuanlan.zhihu.com/p/32953957
 
 浅析图像视频类AI芯片的灵活度
 
+https://mp.weixin.qq.com/s/cfqnLYZSxJhtsgtrydx02A
+
+语音及文本类AI芯片的需求分析
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293
