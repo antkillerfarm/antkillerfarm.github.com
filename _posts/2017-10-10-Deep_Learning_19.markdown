@@ -82,6 +82,12 @@ https://github.com/HyeonwooNoh/DeconvNet
 
 ![](/images/article/U_Net.jpg)
 
+参考：
+
+https://mp.weixin.qq.com/s/ZNNwK1pkL4e0KeYw-UycgA
+
+Kaggle车辆边界识别第一名解决方案：使用预训练权重轻松改进U-Net
+
 # DeepLab
 
 DeepLab共有3个版本，分别对应3篇论文：

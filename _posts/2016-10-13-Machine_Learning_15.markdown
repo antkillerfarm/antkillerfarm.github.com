@@ -219,7 +219,7 @@ Spark MLlib中的协同过滤
 
 http://www.68idc.cn/help/buildlang/ask/20150727462819.html
 
-Alternating Least Squares(ASL) 的数学推导
+Alternating Least Squares(ASL)的数学推导
 
 https://mp.weixin.qq.com/s/bRhIm8Xvlb51zE2HpDO5Og
 
@@ -232,6 +232,10 @@ http://mp.weixin.qq.com/s/QhP3wRGbrO7sYSDNm8z0gQ
 https://zhuanlan.zhihu.com/p/23036112
 
 推荐系统常用的推荐算法
+
+https://mp.weixin.qq.com/s/6x8cK_SDW67At3IUZ15ijQ
+
+协同过滤典型算法概述
 
 # 主成分分析
 

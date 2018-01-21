@@ -228,6 +228,10 @@ https://mp.weixin.qq.com/s/0esR8Z6YlWayKpz-TS2_Zg
 
 对比梯度下降与进化策略，神经进化会成为深度学习的未来吗？
 
+https://mp.weixin.qq.com/s/K65ORf5Ke3ywANNP11xBvQ
+
+利用进化方法自动生成神经网络：深度进化网络DENSER
+
 https://mp.weixin.qq.com/s/9ZQc3RqCCcWYDplZ4RU2oA
 
 清华段路明组发现深度学习和量子物理重要关联
@@ -244,59 +248,15 @@ https://mp.weixin.qq.com/s/ULciN9h2IybE59JMO6Kcgg
 
 清华大学段路明组提出生成模型的量子算法
 
+https://mp.weixin.qq.com/s/mNOLn7WiZFpGW25Ppefo3g
+
+何为量子机器学习？
+
 https://mp.weixin.qq.com/s/egmodqeThnw5H7DwKRwQbw
 
 如何运用数学进行高效生产？（模拟退火算法）
 
 # DL参考资源
-
-https://mp.weixin.qq.com/s/sCxyk8WEb8W2-mq-tTQs6A
-
-LeCun台大演讲
-
-https://mp.weixin.qq.com/s/SPdkJTYU80bioNdZrBj4cw
-
-卷积优化-Cpython(Cuda)施工和分析
-
-https://mp.weixin.qq.com/s/qWJarPrjOrwxSX77xQ9rCw
-
-面向卷积神经网络的卷积核冗余消除策略
-
-https://mp.weixin.qq.com/s/pnCdKcdRCxhFEcXyWb9xlQ
-
-深度学习助力实现智能行为分析和事件识别
-
-https://mp.weixin.qq.com/s/M120ZRfLoT9abWZOmgj-TQ
-
-面部识别技术能用来识别鲸鱼？
-
-https://mp.weixin.qq.com/s/4JFzgFTvAvBs74V7AQUCrQ
-
-让照片走两步：骨骼框架辅助的人物动作生成模型
-
-https://mp.weixin.qq.com/s/_dDLbPwpgoOdLc83_JQEuA
-
-CVPR现场会议合集及CCCV内容跟踪
-
-https://mp.weixin.qq.com/s/W4zwKqkVQN4v-IKzGrkudg
-
-通过传递不变性实现自监督视觉表征学习
-
-http://mp.weixin.qq.com/s/LAgDobWyK0SOH08GCLXG7A
-
-减少30%流量，增加清晰度：MIT提出人工智能视频缓存新算法
-
-http://mp.weixin.qq.com/s/SNfSY4CKhX1RDWd4itPx2Q
-
-马里兰大学论文：训练深度神经网络中的一致性难题
-
-https://mp.weixin.qq.com/s/caXnseARUwLIXdsZ7BXOUw
-
-用于金融时序预测的神经网络：可改善移动平均线经典策略
-
-https://mp.weixin.qq.com/s/Vjbf_UWatV0s3lJ0u9xj0g
-
-清华马少平教授：强图灵测试与弱图灵测试
 
 https://mp.weixin.qq.com/s/HN-kAtltn7hkuUlpzmDDFA
 

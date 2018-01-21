@@ -366,5 +366,8 @@ https://zhuanlan.zhihu.com/p/30409360
 
 为什么CPU的频率止步于4G?我们触到频率天花板了吗？
 
+https://zhuanlan.zhihu.com/p/33145828
+
+什么是Speculative Execution？为什么要有它？
 
 

@@ -74,4 +74,9 @@ https://mp.weixin.qq.com/s/2COA8aRQBpxaihKnlLkXZQ
 
 快速上手图像识别：用TensorFlow API实现图像分类实例
 
+https://mp.weixin.qq.com/s/zY7rGh-kA-36VEo9DiaKbg
+
+TensorFlow进行简单的图像处理
+
+
 

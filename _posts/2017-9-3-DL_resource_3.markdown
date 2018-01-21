@@ -376,3 +376,13 @@ https://mp.weixin.qq.com/s/5ScRIl2MHNGaUyIEJJKnKw
 
 DeepMind开源强化学习研究环境Control Suite
 
+https://mp.weixin.qq.com/s/ven_4JbWYFswIkGyhjTcww
+
+Prophet：教你如何用加法模型探索时间序列数据
+
+https://mp.weixin.qq.com/s/9-svsjeSFyUeM8IYphSsgw
+
+Darkon：可更好理解深度学习模型的开源工具包
+
+
+

@@ -202,3 +202,7 @@ https://mp.weixin.qq.com/s/f5dGUJw3bv8WppPZVzqyAA
 
 反GAN传统，Petuum自动驾驶新研究提出从复杂真实图像生成简单虚拟表征以预测驾驶指令
 
+https://mp.weixin.qq.com/s/SvIC6DXUKH93jU9R-7fcyw
+
+CNN对抗补丁之谜
+

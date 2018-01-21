@@ -118,4 +118,8 @@ https://mp.weixin.qq.com/s/6uzW_NNtYUUT8-QRfRKZAg
 
 华人NLP最杰出HowNet成功融入DL模型
 
+https://mp.weixin.qq.com/s/eZhhVZlVG-uy-tdtDztOpg
+
+电子健康档案中未知药物不良反应的知识图预测及验证
+
 
