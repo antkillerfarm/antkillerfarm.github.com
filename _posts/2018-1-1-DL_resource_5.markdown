@@ -70,10 +70,6 @@ https://mp.weixin.qq.com/s/0BZxFKjcwxKj7R66NRIWqQ
 
 UC Berkeley新研究：多视角图像3D模型重建技术
 
-https://mp.weixin.qq.com/s/ciqQMezcB-oM24X8eQqTNg
-
-花式玩耍Spatial Transformation Networks
-
 https://mp.weixin.qq.com/s/kbqTHIOzAj1aERl4tm-kVA
 
 2017上半年无监督特征学习研究成果汇总

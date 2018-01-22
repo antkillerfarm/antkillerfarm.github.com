@@ -54,6 +54,8 @@ h1ttps://www.zhihu.com/question/49534423
 
 http://vision.stanford.edu/feifeili/
 
+她的老公Silvio Savarese，也是斯坦福的AP。
+
 ## 大佬的门徒
 
 比如可爱的妹子**Serena Yeung**。这个妹子是斯坦福的本硕博。出身不详，但从姓名的英文拼法来看，应该是美国土生的华裔。Yeung是杨、阳、羊等姓的传统英文拼法，但显然不是大陆推行的拼音拼法。（可以对比的是Fei-Fei Li和Bruce Lee，对于同一个姓的不同拼法。）

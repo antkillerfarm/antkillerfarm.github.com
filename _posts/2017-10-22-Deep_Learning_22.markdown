@@ -121,6 +121,8 @@ SVDF将运算量从$$Cd$$变为$$(C+d)k$$，这里的k为filters numbers。
 
 这实际上就是2维tensor的SVD，只不过SVD是线性变换，而这里是非线性变换而已。（参见《机器学习（十五）》中的ALS算法部分）
 
+实际上，SVDF和之前在《深度学习（十六）》中提到的Fast R-CNN的FC加速，原理是基本一致的。
+
 # LCNN
 
 LCNN是华盛顿大学和Allen AI研究所的作品。后者是微软创始人Paul Allen投资兴建的研究机构。

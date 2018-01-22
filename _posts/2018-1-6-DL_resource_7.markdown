@@ -50,18 +50,6 @@ https://mp.weixin.qq.com/s/-iziuLKUsRA4VpR5xJqEww
 
 斯坦福提出神经任务编程NTP：让机器人从层级任务中学习
 
-https://mp.weixin.qq.com/s/UMi5NUqcqNTBjlt946jFFQ
-
-深度学习应该使用复数吗？
-
-https://mp.weixin.qq.com/s/bigKoR3IX_Jvo-re9UjqUA
-
-机器学习之——自动求导
-
-https://www.jianshu.com/p/4c2032c685dc
-
-自动求导框架综述
-
 https://mp.weixin.qq.com/s/-zl2tQuzdlJd5TXIW9EPyA
 
 Google：机器学习系统，隐藏多少技术债？
@@ -175,10 +163,6 @@ SamplePairing：针对图像处理领域的高效数据增强方式
 https://mp.weixin.qq.com/s/a4A5WCFalH1en0IEM3mu2Q
 
 双流束网络：北理工提出深度立体匹配新方法
-
-https://mp.weixin.qq.com/s/vFBlFAQLvDZP7IvwKoaPhA
-
-无问西东，只问哈希
 
 https://mp.weixin.qq.com/s/xCzS7sYMFmk5K4ClB1I2YQ
 

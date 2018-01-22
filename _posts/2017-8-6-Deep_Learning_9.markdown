@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（九）——GAN（2）
+title:  深度学习（九）——GAN（2）, Spatial Transformer Networks
 category: DL 
 ---
 
@@ -258,5 +258,9 @@ http://blog.csdn.net/shaoxiaohu1/article/details/51809605
 http://blog.csdn.net/shaoxiaohu1/article/details/51809605
 
 Spatial Transformer Networks
+
+https://mp.weixin.qq.com/s/ciqQMezcB-oM24X8eQqTNg
+
+花式玩耍Spatial Transformation Networks
 
 

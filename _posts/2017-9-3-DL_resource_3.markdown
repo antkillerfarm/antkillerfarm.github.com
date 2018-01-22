@@ -290,6 +290,18 @@ https://mp.weixin.qq.com/s/MK_al7CgieiVXB1MGWZ9GA
 
 听说你用JavaScript写代码？本文是你的机器学习指南
 
+https://mp.weixin.qq.com/s/7Z2tDhSle-9MOslYEUpq6g
+
+从概念到实践，我们该如何构建自动微分库
+
+https://mp.weixin.qq.com/s/bigKoR3IX_Jvo-re9UjqUA
+
+机器学习之——自动求导
+
+https://www.jianshu.com/p/4c2032c685dc
+
+自动求导框架综述
+
 ## 工具
 
 https://mp.weixin.qq.com/s/TT4whft1Tj1pCEPbnMH1cA

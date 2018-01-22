@@ -308,4 +308,14 @@ https://mp.weixin.qq.com/s/TUk1PWT9CfPGEW77UKxpjw
 
 三招武林绝学带你玩转“强化学习”
 
+https://mp.weixin.qq.com/s/_dskX5U8gHAEl6aToBvQvg
+
+从Q学习到DDPG，一文简述多种强化学习算法
+
+https://mp.weixin.qq.com/s/p2hlc2PsLgrvxOF8wBZANg
+
+李飞飞高徒范麟熙解析强化学习在游戏和现实中的应用
+
+
+
 

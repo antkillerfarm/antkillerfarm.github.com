@@ -8,7 +8,27 @@ category: AI
 
 ## 概述
 
+Torch是一个非常老牌的DL框架，它的历史可以追溯至2003年，几乎是现存框架中最古老的了。
 
+官网：
+
+http://torch.ch/
+
+Torch采用Lua语言编写，这和目前DL界主流的python有较大差别。于是Facebook和Uber联合于2016年推出了Torch的python版本——Pytorch。由于Pytorch在开发者社区更受欢迎，短短时间它的开发进度就超越了Torch，成为了2017年DL的年度语言。
+
+官网：
+
+http://pytorch.org/
+
+和TensorFlow主要面向工业界不同，Pytorch的抽象更为傻瓜，类似于Kares，但也提供了TensorFlow式的基本运算功能，更适合学术界的使用。当然了，它的效率和可扩展性，是不如TensorFlow的。
+
+官网教程：
+
+http://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html
+
+还有一个非官网的教程，一个韩国人写的：
+
+https://github.com/yunjey/pytorch-tutorial
 
 ## 参考
 
@@ -71,5 +91,9 @@ Pytorch教程：Facebook发布的LR-GAN如何生成图像？
 https://mp.weixin.qq.com/s/BjSx3tSQ2Xa0ja_j6dA7eA
 
 Pytorch中的DataLoader的相关记录
+
+https://mp.weixin.qq.com/s/FGL1vYaXvv-NCcq0vithZw
+
+深度学习框架：PyTorch入门与实践
 
 

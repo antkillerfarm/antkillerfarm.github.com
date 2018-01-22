@@ -310,3 +310,8 @@ https://mp.weixin.qq.com/s/fX94rPgNHrOaQTqBv-ZADg
 
 基于视频的行人再识别新进展：区域质量估计方法和高质量的数据集
 
+https://mp.weixin.qq.com/s/rf-pGfkQFK3abkOLEEVOeA
+
+PTGAN：针对行人重识别的生成对抗网络
+
+

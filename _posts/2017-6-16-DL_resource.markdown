@@ -408,4 +408,12 @@ https://mp.weixin.qq.com/s/2gBoVr_072DLJ_MMHPHNLQ
 
 这8种神经网络结构，你掌握了几个？
 
+https://mp.weixin.qq.com/s/UMi5NUqcqNTBjlt946jFFQ
+
+深度学习应该使用复数吗？
+
+https://mp.weixin.qq.com/s/vFBlFAQLvDZP7IvwKoaPhA
+
+无问西东，只问哈希
+
 
