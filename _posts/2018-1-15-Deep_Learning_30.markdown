@@ -206,3 +206,8 @@ https://mp.weixin.qq.com/s/SvIC6DXUKH93jU9R-7fcyw
 
 CNN对抗补丁之谜
 
+https://mp.weixin.qq.com/s/V1XX8WWstR00m_OimMrDDw
+
+微软亚洲研究院论文解读：GAN在网络特征学习中的应用
+
+

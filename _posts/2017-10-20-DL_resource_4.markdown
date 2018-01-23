@@ -256,6 +256,10 @@ https://mp.weixin.qq.com/s/egmodqeThnw5H7DwKRwQbw
 
 如何运用数学进行高效生产？（模拟退火算法）
 
+https://mp.weixin.qq.com/s/86c59-nIsrTNUABx4QYobA
+
+量子机器学习入门科普：解读量子力学和机器学习的共生关系
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/HN-kAtltn7hkuUlpzmDDFA

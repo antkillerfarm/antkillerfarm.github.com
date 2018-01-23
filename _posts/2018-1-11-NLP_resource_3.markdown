@@ -182,4 +182,8 @@ https://mp.weixin.qq.com/s/4-pb-G1P3GMbq02kyZ0q8A
 
 NLP存在的问题与未来的架构
 
+https://mp.weixin.qq.com/s/Y-_Y8PLBRLE3wn1CPRogsw
+
+重磅！一文彻底读懂智能对话系统！当前研究综述和未来趋势
+
 

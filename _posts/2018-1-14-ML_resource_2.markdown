@@ -66,6 +66,10 @@ https://mp.weixin.qq.com/s/Rs9ri6Xs5R-yitrda8pJMg
 
 详解可视化利器t-SNE算法：数无形时少直觉
 
+https://mp.weixin.qq.com/s/_DXMlNZHVKm2jMnLGQFM_Q
+
+还在用PCA降维？快学学大牛最爱的t-SNE算法吧
+
 https://zhuanlan.zhihu.com/p/30757128
 
 《羞羞的铁拳》好不好看 8万观众说了算 Part 1

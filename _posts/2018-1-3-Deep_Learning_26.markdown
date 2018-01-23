@@ -194,4 +194,12 @@ https://mp.weixin.qq.com/s/s9H_OXX-CCakrTAQUFDm8g
 
 申省梅颜水成团队获国际非受限人脸识别竞赛IJB-A冠军，主要负责人熊霖技术分享
 
+https://mp.weixin.qq.com/s/ZFFSTFDVxFUe2KOFy8XDxw
+
+人脸识别——新的一个境界（无约束）
+
+https://mp.weixin.qq.com/s/GlS2VJdX7Y_nfBOEnUt2NQ
+
+使用Siamese神经网络进行人脸识别
+
 

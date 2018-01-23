@@ -95,9 +95,21 @@ $$p(Y|X)=\sum_{A\in A_{X,Y}}\prod_{t=1}^Tp_t(a_t|X)$$
 
 这里如果把音节匹配换成掷骰子的例子，就可以看出这实际上和《机器学习（二十二）》中HMM所解决的第二个问题是类似的，而HMM的前向计算正是一种动态规划算法。动态规划算法可参见《机器学习（二十七）》。
 
+下面我们来介绍一下具体的计算方法。
+
+首先使用$$\epsilon$$分隔Y中的符号，就得到了序列Z：
+
 $$Z=[\epsilon,y_1,\epsilon,y_2,\dots,\epsilon,y_U,\epsilon]$$
 
-$$\alpha_{s,t}=(\alpha_{s,t}+\alpha_{s,t}+\alpha_{s,t})\cdot p_t(Z)$$
+用$$\alpha_{s,t}$$表示子序列$$Z_{1:s}$$在t步之后的CTC值。显然，我们需要计算的目标$$P(Y\vert X)$$和最后一步的$$\alpha$$有关，但只有计算出了上一步的$$\alpha$$，我们才能计算当前的$$\alpha$$。
+
+不同于掷骰子过程中，骰子的每种状态都有可能出现的情况，语音由于具有连续性，因此只可能有以下两种情况：
+
+
+
+$$\alpha_{s,t}=(\alpha_{s-1,t-1}+\alpha_{s,t-1})\cdot p_t(Z_s | X)$$
+
+$$\alpha_{s,t}=(\alpha_{s-2,t-1}+\alpha_{s-1,t-1}+\alpha_{s,t-1})\cdot p_t(Z_s | X)$$
 
 参考：
 
@@ -135,7 +147,7 @@ CTC实现——compute ctc loss（2）
 
 http://blog.csdn.net/xmdxcsj/article/details/70300591
 
-端到端语音识别（二） ctc。这个blog中还有5篇《CTC学习笔记》的链接。
+端到端语音识别（二）ctc。这个blog中还有5篇《CTC学习笔记》的链接。
 
 ## Warp-CTC
 
