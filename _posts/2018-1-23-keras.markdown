@@ -148,5 +148,8 @@ https://mp.weixin.qq.com/s/SfambWzLry2IYRPklYk6Bw
 
 利用TensorFlow和Keras进行比特币价格预测
 
+https://mp.weixin.qq.com/s/tGkKNEAM6Ze1iEdqB9zzXQ
+
+Keras：基于SegNet和U-Net的遥感图像语义分割
 
 

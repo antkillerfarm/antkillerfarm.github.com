@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenGL研究, GUI框架分析, 虚拟机比较, Win10历险记, WxWidget, uboot, WireShark
+title:  OpenGL研究, GUI框架分析, 虚拟机比较, WxWidget, uboot, WireShark
 category: technology 
 ---
 
@@ -94,6 +94,20 @@ http://user.xmission.com/~nate/opengl.html
 
 这也是SDL从v1.2升级到v2.0所做的最大的改变。
 
+## 理论
+
+GUI框架主要是个实践派的作品，然而也涉及到了少量的设计理论。
+
+例如，Martin Fowler于2006年所写的《GUI Architectures》一文：
+
+https://martinfowler.com/eaaDev/uiArchs.html
+
+参考：
+
+https://segmentfault.com/a/1190000006016817
+
+GUI应用程序架构的十年变迁:MVC,MVP,MVVM,Unidirectional,Clean
+
 # 虚拟机
 
 早期如Bochs之类的没用过，现在估计也没什么人用了吧。
@@ -113,14 +127,6 @@ VMware由于是收费软件之故，因此用户的软件升级是个大问题�
 反之，VirtualBox就没有这些问题。虽然比较同期的VMware来说，VirtualBox的性能略逊。但是一般来说，科技行业里领先半年就已经是巨大的优势了。我相信现在的VirtualBox，无论如何也不会弱于两年前的VMware。
 
 因此与其守着过时的VMware 8.0，还不如换用VirtualBox，这就是我的选择。
-
-# Win10历险记
-
-我大概在2015年4、5月间，听说了Win10免费升级的消息。于是一直很期待7月29日的到来。果然到了29日当天下午的时候，公司电脑就收到了升级的通知。然而由于网速不给力，当天并未对公司电脑进行升级。倒是晚上在家里的电脑上，虽然耗时2小时，但却一路顺利的升级成功。
-
-Win10给人的第一感觉，其实和Win8差不多，不过是加了个更像Win7的开始菜单而已。不过既来之则安之，一段时间用下来，总算还是要比Win7强不少的。
-
-又过了几天，公司的电脑也升级成功。正得意间，忽然发现VirtualBox在Win10下工作不正常。查了VirtualBox官网方知，其目前尚不支持Win10 Host。于是不得不重新降级到Win7。看来尝鲜也是有得有失的。对于工作用的电脑，有的时候够用就好，没必要什么都求新的。
 
 # WxWidget
 

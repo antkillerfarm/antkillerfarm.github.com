@@ -78,6 +78,10 @@ https://zhuanlan.zhihu.com/p/23178423
 
 Dropout解决过拟合问题
 
+https://mp.weixin.qq.com/s/WvPS9LQ6vfD4OkaRbZ0wBw
+
+如何通过方差偏移理解批归一化与Dropout之间的冲突
+
 ## Dropout预测阶段
 
 经Dropout处理过的模型，在预测阶段不再Dropout，而是打开所有的神经元。这样的效果类似于集成学习，即若干个弱分类器，集成为一个强分类器。

@@ -396,5 +396,9 @@ https://mp.weixin.qq.com/s/9-svsjeSFyUeM8IYphSsgw
 
 Darkon：可更好理解深度学习模型的开源工具包
 
+https://mp.weixin.qq.com/s/JW4QXHzuCkYNV6Y_k3bsFw
+
+整合全部顶尖目标检测算法：FAIR开源Detectron
+
 
 

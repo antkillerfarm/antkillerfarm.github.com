@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  版本管理工具的前世今生, Kannel, awk&sed&grep
+title:  版本管理工具的前世今生, Kannel, awk&sed&grep, Win10历险记
 category: linux 
 ---
 
@@ -9,7 +9,7 @@ category: linux
 参考Wiki的相关词条，可将版本工具分为三代：
 
 1.本地版本管理
-	
+
 开源：SCCS (1972) RCS (1982)
 
 私有：PVCS (1985) QVCS (1991)
@@ -110,5 +110,13 @@ grep -nri 'ruby' #n 显示行号，r 子目录搜索，i 忽略大小写
 {% highlight bash %}
 ip addr show br-lan | grep 'inet ' | awk  '{print $2}' | sed 's/\/.*//g'
 {% endhighlight %}
+
+# Win10历险记
+
+我大概在2015年4、5月间，听说了Win10免费升级的消息。于是一直很期待7月29日的到来。果然到了29日当天下午的时候，公司电脑就收到了升级的通知。然而由于网速不给力，当天并未对公司电脑进行升级。倒是晚上在家里的电脑上，虽然耗时2小时，但却一路顺利的升级成功。
+
+Win10给人的第一感觉，其实和Win8差不多，只不过加了个更像Win7的开始菜单而已。不过既来之则安之，一段时间用下来，总算还是要比Win7强不少的。
+
+又过了几天，公司的电脑也升级成功。正得意间，忽然发现VirtualBox在Win10下工作不正常。查了VirtualBox官网方知，其目前尚不支持Win10 Host。于是不得不重新降级到Win7。看来尝鲜也是有得有失的。对于工作用的电脑，有的时候够用就好，没必要什么都求新的。
 
 

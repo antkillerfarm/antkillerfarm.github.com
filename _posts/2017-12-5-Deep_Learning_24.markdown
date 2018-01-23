@@ -95,7 +95,9 @@ $$p(Y|X)=\sum_{A\in A_{X,Y}}\prod_{t=1}^Tp_t(a_t|X)$$
 
 这里如果把音节匹配换成掷骰子的例子，就可以看出这实际上和《机器学习（二十二）》中HMM所解决的第二个问题是类似的，而HMM的前向计算正是一种动态规划算法。动态规划算法可参见《机器学习（二十七）》。
 
+$$Z=[\epsilon,y_1,\epsilon,y_2,\dots,\epsilon,y_U,\epsilon]$$
 
+$$\alpha_{s,t}=(\alpha_{s,t}+\alpha_{s,t}+\alpha_{s,t})\cdot p_t(Z)$$
 
 参考：
 
