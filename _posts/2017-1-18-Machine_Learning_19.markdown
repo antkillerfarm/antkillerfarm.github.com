@@ -200,4 +200,8 @@ https://mp.weixin.qq.com/s/zD5hwBmMmSxzTj-3YzZKdg
 
 频繁集挖掘FP Tree详解
 
+https://mp.weixin.qq.com/s/ahmVB0ktJ2PG37ErO-vIiQ
+
+FP-growth算法：高效频繁项集挖掘
+
 

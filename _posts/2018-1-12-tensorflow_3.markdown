@@ -78,5 +78,8 @@ https://mp.weixin.qq.com/s/zY7rGh-kA-36VEo9DiaKbg
 
 TensorFlow进行简单的图像处理
 
+https://mp.weixin.qq.com/s/nnjyR4XGVZQ1zXCIPzTNlg
+
+基于TensorFlow的变分自编码器实现
 
 

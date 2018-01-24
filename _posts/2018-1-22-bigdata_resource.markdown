@@ -344,6 +344,10 @@ https://zhuanlan.zhihu.com/p/32796998
 
 10分钟搞定ICO
 
+https://mp.weixin.qq.com/s/p5WG4tgyUxnacjzdT7QZzw
+
+什么是区块链？ 区块链的入门教程
+
 # CPU
 
 https://zhuanlan.zhihu.com/p/29743431

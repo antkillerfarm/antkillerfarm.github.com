@@ -152,6 +152,10 @@ https://mp.weixin.qq.com/s/oJU8ccIamK9UcU1tgmyFeg
 
 凸集、凸函数与凸优化基本概念
 
+https://mp.weixin.qq.com/s/iBPhhNJYF3gayBU2NHI8jw
+
+谈非线性规划的一维搜索各种方法！
+
 ## LMS算法
 
 LMS（least mean squares，最小均方）算法，也是一种迭代算法。其迭代公式为：

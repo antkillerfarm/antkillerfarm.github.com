@@ -314,6 +314,12 @@ https://github.com/catboost/catboost
 
 https://github.com/catboost/catboost-viewer
 
+参考：
+
+https://mp.weixin.qq.com/s/TAminQXid3qq5b8qkeN1rA
+
+ClickHouse如何结合自家的GNDT算法库CatBoost来做机器学习
+
 # Parameter Server
 
 https://www.zhihu.com/question/26998075

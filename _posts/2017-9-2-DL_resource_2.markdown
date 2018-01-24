@@ -208,6 +208,10 @@ https://mp.weixin.qq.com/s/cfqnLYZSxJhtsgtrydx02A
 
 语音及文本类AI芯片的需求分析
 
+https://mp.weixin.qq.com/s/31SBgTXfIcwkmIzujBLxOA
+
+深度学习引擎的终极形态是什么?
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293

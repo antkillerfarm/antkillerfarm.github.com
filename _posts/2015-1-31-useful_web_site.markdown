@@ -380,6 +380,10 @@ https://mp.weixin.qq.com/s/Nn7Yl6UzRpWnSleKUss8Sw
 
 阿里巴巴正式开源自研动态非侵入AOP解决方案：JVM-Sandbox
 
+https://mp.weixin.qq.com/s/QsgoONKwI7ds8Hnx2Wer6A
+
+Linux从程序到进程
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

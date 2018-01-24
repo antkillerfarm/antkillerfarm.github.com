@@ -202,4 +202,9 @@ https://mp.weixin.qq.com/s/GlS2VJdX7Y_nfBOEnUt2NQ
 
 使用Siamese神经网络进行人脸识别
 
+https://mp.weixin.qq.com/s/RSCrkeIToeNKrFvMITxzDg
+
+通过OpenFace来理解人脸识别
+
+
 

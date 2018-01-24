@@ -274,5 +274,8 @@ https://mp.weixin.qq.com/s/WkIfTx6uvauxQcnHZx4LMw
 
 COTA：通过自然语言处理和机器学习改进Uber客户服务
 
+https://mp.weixin.qq.com/s/b9lHY6jirAv_GKK6WM0eAg
+
+视频推荐中用户兴趣建模、识别的挑战和解法
 
 
