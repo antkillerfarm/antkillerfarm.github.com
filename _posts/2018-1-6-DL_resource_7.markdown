@@ -240,5 +240,12 @@ https://mp.weixin.qq.com/s/ijaURqb-5wP6LAzV_-vDxw
 
 何去何从：从经典深度学习模型探讨图像识别新方向
 
+https://mp.weixin.qq.com/s/6kTXmad6wzsfNTBAbHBNow
+
+AI小编问世！阿里智能写手核心技术首次公开！
+
+https://mp.weixin.qq.com/s/oe8Zcv3EecDV2OUl9qejCA
+
+图像分类、定位、检测，语义分割和实例分割方法梳理
 
 

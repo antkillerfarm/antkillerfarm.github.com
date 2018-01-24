@@ -28,6 +28,8 @@ http://cs.stanford.edu/people/karpathy/convnetjs/
 
 https://github.com/karpathy/convnetjs
 
+----
+
 http://www.eecs.wsu.edu/~taylorm/16_483F/index.html
 
 CptS 483: Introduction to Robotics

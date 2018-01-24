@@ -326,6 +326,10 @@ https://mp.weixin.qq.com/s/aNX_8UDYI_0u-MwMTYeqdQ
 
 开发易、通用难，深度学习框架何时才能飞入寻常百姓家？
 
+https://mp.weixin.qq.com/s/UbAHB-uEIvqYZCB7xIAJTg
+
+机器学习新框架Propel：使用JavaScript做可微分编程
+
 ## 面试
 
 https://www.zhihu.com/question/41233373

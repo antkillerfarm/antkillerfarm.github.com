@@ -348,6 +348,10 @@ https://mp.weixin.qq.com/s/p5WG4tgyUxnacjzdT7QZzw
 
 什么是区块链？ 区块链的入门教程
 
+https://mp.weixin.qq.com/s/pUyDsbIb-Wzr5pVi0742nA
+
+AI和区块链的融合：交易是什么？
+
 # CPU
 
 https://zhuanlan.zhihu.com/p/29743431

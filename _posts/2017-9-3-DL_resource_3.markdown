@@ -68,6 +68,14 @@ https://mp.weixin.qq.com/s/AchyBBTZ3X3zYSM8-9WTrA
 
 Capsule Network在TIMIT语音识别中的实践（一）
 
+http://kexue.fm/archives/4819/
+
+揭开迷雾，来一顿美味的“Capsule”盛宴
+
+https://zhuanlan.zhihu.com/p/30830319
+
+Geoffrey Hinton的CapsNet在云平台上应用
+
 ## AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：
