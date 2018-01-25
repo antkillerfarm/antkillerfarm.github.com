@@ -210,4 +210,9 @@ https://mp.weixin.qq.com/s/V1XX8WWstR00m_OimMrDDw
 
 微软亚洲研究院论文解读：GAN在网络特征学习中的应用
 
+https://mp.weixin.qq.com/s/YNkx03D2Ok2xyMpPI0XXKg
+
+Petuum新研究提出形义感知型Grad-GAN：可基于虚拟游戏生成更具真实感的城市场景
+
+
 

@@ -100,6 +100,10 @@ https://mp.weixin.qq.com/s/EMCZHuvk5dOV_Rz00GkJMA
 
 近年火爆的Attention模型，它的套路这里都有！
 
+https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA
+
+阿里北大提出新attention建模框架，一个模型预测多种行为
+
 # seq2seq
 
 seq2seq最早用于Neural Machine Translation领域（与之相对应的有Statistical Machine Translation）。训练后的seq2seq模型，可以根据输入语句，自动生成翻译后的输出语句。

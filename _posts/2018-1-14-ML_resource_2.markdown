@@ -278,4 +278,8 @@ https://mp.weixin.qq.com/s/b9lHY6jirAv_GKK6WM0eAg
 
 视频推荐中用户兴趣建模、识别的挑战和解法
 
+https://mp.weixin.qq.com/s/pS4Eypr2qWREXt6yUEZKTg
+
+Kaggle比赛大杀技！stacking的基本思想及代码实现
+
 

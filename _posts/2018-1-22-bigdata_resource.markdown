@@ -254,6 +254,10 @@ https://mp.weixin.qq.com/s/Ju4d71VrL0omGkV3s3U_1Q
 
 聊聊MyBatis缓存机制
 
+https://mp.weixin.qq.com/s/rVfoSk3HCEEHvdlKz7A2xA
+
+一家创业公司的5年架构变迁史
+
 # 区块链参考资源
 
 https://mp.weixin.qq.com/s/hn1a9XZSu_lL5TPgq5ln2A
@@ -351,6 +355,10 @@ https://mp.weixin.qq.com/s/p5WG4tgyUxnacjzdT7QZzw
 https://mp.weixin.qq.com/s/pUyDsbIb-Wzr5pVi0742nA
 
 AI和区块链的融合：交易是什么？
+
+https://mp.weixin.qq.com/s/HgXTHPGZRPEXsum-CFe3ag
+
+比特币这么火热，看看这篇比特币初学者指南
 
 # CPU
 

@@ -186,4 +186,13 @@ https://mp.weixin.qq.com/s/Y-_Y8PLBRLE3wn1CPRogsw
 
 重磅！一文彻底读懂智能对话系统！当前研究综述和未来趋势
 
+https://mp.weixin.qq.com/s/T3Q0XiC20jo339JOhm2Pag
+
+微软研究院Jianfeng Gao：基于深度学习的自然语言处理导论
+
+https://mp.weixin.qq.com/s/joZnfPtR3vv6LJPsRrY9Jw
+
+腾讯AI Lab涂兆鹏：如何提升神经网络翻译的忠实度
+
+
 

@@ -6,184 +6,6 @@ category: resource
 
 # DL参考资源
 
-## Capsule
-
-https://mp.weixin.qq.com/s/Tx9JJ0cIo_rH7BDjd_hkvw
-
-Hinton碰撞LeCun：CNN有两大缺陷，要用capsule做下一代CNN
-
-https://zhuanlan.zhihu.com/p/29435406
-
-浅析Hinton最近提出的Capsule计划
-
-https://mp.weixin.qq.com/s/5Af_K_BGrD5RomgpWxJNBQ
-
-Hinton大神Capsule论文首次公布，深度学习基石CNN或被取代
-
-https://mp.weixin.qq.com/s/wFoRtTKW40qgYmlXY0dRDw
-
-一篇新的Capsule论文：优于基准CNN
-
-https://mp.weixin.qq.com/s/9Vqg3HkDCfl1qMDIN-eCGQ
-
-Geoffrey Hinton那篇备受关注的Capsule论文公开了
-
-https://mp.weixin.qq.com/s/8U3vFaf3SDCYnWy4lQv6uw
-
-代替反向传播的另一种深度学习算法：离散优化
-
-http://mp.weixin.qq.com/s/gdke9E1A3eRUzgidp9uOqg
-
-邓侃：一文读懂Hinton最新Capsules论文
-
-https://mp.weixin.qq.com/s/R9pDEc7zqZdttLJGCfiv2w
-
-TensorFlow Pytorch Keras代码实现深度学习大神Hinton NIPS2017 Capsule论文
-
-https://mp.weixin.qq.com/s/WspmbqlwdxKXH1cgbkuGwQ
-
-先读懂CapsNet架构然后用TensorFlow实现，这应该是最详细的教程了
-
-https://mp.weixin.qq.com/s/Ot-pRRaHaT1VRyWlLDO2uw
-
-Reddit讨论：Hinton的Capsule网络真的比CNN效果更好吗？
-
-https://mp.weixin.qq.com/s/Z32LCfi8IVP4WXkxAu6zZg
-
-Geffory Hinton的“胶囊”里到底装的什么“药”？
-
-https://mp.weixin.qq.com/s/f0TqhSW-KVwVTv54gtHyGw
-
-胶囊网络9大优势4大缺陷
-
-https://mp.weixin.qq.com/s/0uqS5CXVVxjX2c3P-gdSng
-
-欲取代CNN的Capsule Network究竟是什么来头？
-
-https://mp.weixin.qq.com/s/k3WV7qN37r-r3VBJsrjB1A
-
-漫谈Capsule Network基本原理
-
-https://mp.weixin.qq.com/s/AchyBBTZ3X3zYSM8-9WTrA
-
-Capsule Network在TIMIT语音识别中的实践（一）
-
-http://kexue.fm/archives/4819/
-
-揭开迷雾，来一顿美味的“Capsule”盛宴
-
-https://zhuanlan.zhihu.com/p/30830319
-
-Geoffrey Hinton的CapsNet在云平台上应用
-
-## AlphaGo
-
-樊麾讲解AlphaGo与李世石的五番棋：
-
-https://deepmind.com/research/alphago/alphago-games-simplified-chinese/
-
-论文：
-
-《Mastering the game of Go with deep neural networks and tree search》
-
-参考：
-
-https://mp.weixin.qq.com/s/Sfv-jzQAkN0PsZOGZUQhkQ
-
-AlphaGo Zero横空出世，DeepMind Nature论文解密不使用人类知识掌握围棋
-
-https://mp.weixin.qq.com/s/oAxouYX7-wDC5okbu--Wuw
-
-Nature重磅：人工智能从0到1, 无师自通完爆阿法狗100-0
-
-https://zhuanlan.zhihu.com/p/30262872
-
-关于AlphaGo Zero
-
-https://zhuanlan.zhihu.com/p/30263585
-
-DeepMind新一代围棋程序AlphaGo Zero再次登上Nature
-
-https://www.zhihu.com/question/66861459
-
-如何评价DeepMind发表在Nature上的AlphaGo Zero？
-
-http://www.alphago-games.com/
-
-AlphaGo的棋谱
-
-https://deepmind.com/blog/alphago-zero-learning-scratch/
-
-AlphaGo Zero官方声明
-
-https://zhuanlan.zhihu.com/mathNote
-
-某牛的专栏，主要讲自制AlphaGo
-
-https://mp.weixin.qq.com/s/DC9QqHdWT0xFnowEBuJDbw
-
-自动化所解读“深度强化学习”：从AlphaGo到AlphaGoZero
-
-https://mp.weixin.qq.com/s/uZtaxRwROCqYmL2k6Muxaw
-
-从阿尔法狗元(AlphaGo Zero)的诞生看终极算法的可能性
-
-https://mp.weixin.qq.com/s/i5OmLu8aNbypiTUmP4teeQ
-
-刘遥行：深入浅出看懂AlphaGo Zero
-
-https://mp.weixin.qq.com/s/aBrwbB_DOGTen-6XL7LGFQ
-
-邓侃：白话蒙特卡洛树搜索和ResNet
-
-https://github.com/gcp/leela-zero
-
-开源版的AlphaGo Zero
-
-https://mp.weixin.qq.com/s/-tH7DQo1cK9gA0bcpBJSDA
-
-AlphaGo Zero：笔记与伪代码
-
-https://mp.weixin.qq.com/s/CJuVoOf7idUChFIn7dH0Lg
-
-围棋中的数学原理
-
-https://mp.weixin.qq.com/s/d46qNFaftt4wxpV4sZnG-w
-
-一张图看懂AlphaGo Zero
-
-https://zhuanlan.zhihu.com/p/31749249
-
-比AlphaGo Zero更强的AlphaZero问世，8小时解决一切棋类！
-
-https://mp.weixin.qq.com/s/L7bZMkqyncwEt6D5tK1OdQ
-
-AlphaZero炼成最强通用棋类AI，DeepMind强化学习算法8小时完爆人类棋类游戏
-
-https://mp.weixin.qq.com/s/tFdnxqV5a5xZrFtB6E0AiQ
-
-新AlphaZero出世称霸棋界，8小时搞定一切棋类！自对弈通用强化学习无师自通！
-
-https://mp.weixin.qq.com/s/qYWsFBKNCKCGUmizX_1sVg
-
-AlphaGo 教学工具终于上线了！
-
-https://mp.weixin.qq.com/s/JxbIeDk8_wnYu_ewUHp29g
-
-深度学习与围棋实战书籍《Deep Learning and the Game of Go》
-
-https://mp.weixin.qq.com/s/gsRnbknytz2FY2dWgdWEYg
-
-精通国际象棋的AI研究员：AlphaZero真的是一次突破吗？
-
-https://mp.weixin.qq.com/s/Przl4ivbNuOFmz4pcYTrpQ
-
-浅述：从 Minimax到AlphaZero，完全信息博弈之路（1）
-
-https://zhuanlan.zhihu.com/p/32089487
-
-AlphaZero实战：从零学下五子棋
-
 ## 实战
 
 http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg
@@ -408,5 +230,122 @@ https://mp.weixin.qq.com/s/JW4QXHzuCkYNV6Y_k3bsFw
 
 整合全部顶尖目标检测算法：FAIR开源Detectron
 
+https://mp.weixin.qq.com/s/kL1bhjdTc1wyYEL4KJqDpg
+
+Detectron精读系列之一：学习率的调节和踩坑
+
+## 量子计算 & 遗传算法
+
+https://www.zhihu.com/question/28171555
+
+如何理解“量子退火”？
+
+http://mp.weixin.qq.com/s/FjET9HFNjVVMjqQM2KhtKA
+
+5分钟看懂中国最新的量子计算机
+
+https://mp.weixin.qq.com/s/WcRYHwXnv9FWpMcOEwIdQg
+
+量子计算的发展及核心问题
+
+https://mp.weixin.qq.com/s/Fb6EsXz8avFkGY7sMdNF6A
+
+用量子计算辅助深度学习：研究者提出量子辅助Helmholtz机
+
+https://mp.weixin.qq.com/s/8Gnk2bidyQ89VvKEcWKABw
+
+量子计算时代的机器学习
+
+https://mp.weixin.qq.com/s/XWFnRSj_y-W7VHctgQLpdA
+
+一文读懂量子机器学习
+
+http://blog.csdn.net/u010945683/article/details/40987331
+
+遗传算法详解
+
+https://mp.weixin.qq.com/s/v1tLGUJ4My-tVWziSURHzA
+
+遗传算法的基本概念和实现
+
+https://mp.weixin.qq.com/s/rXDj5ryRvjbkenp9IEokDQ
+
+一文读懂遗传算法工作原理
+
+https://mp.weixin.qq.com/s/wvcpx41O2763OgA8uYSFHw
+
+AI系统首次实现真正自主编程：利用遗传算法，完爆初级程序员
+
+https://mp.weixin.qq.com/s/sxnI5n5ACT6UHC6VDdUwQQ
+
+结合遗传算法与DNN的EDEN：自动搜索神经网络架构与超参数
+
+https://mp.weixin.qq.com/s/NfFgOiBKOgsDAIfkXC4crQ
+
+利用达尔文的理论学习遗传算法
+
+http://pytlab.org/2017/09/19/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95%E4%B8%AD%E5%87%A0%E7%A7%8D%E4%B8%8D%E5%90%8C%E9%80%89%E6%8B%A9%E7%AE%97%E5%AD%90%E7%9A%84%E6%AF%94%E8%BE%83/
+
+遗传算法中几种不同选择算子
+
+https://mp.weixin.qq.com/s/2TYSY7HoFrwUUeI3Z4MWSw
+
+从遗传算法到OpenAI新方向：进化策略工作机制全解
+
+https://mp.weixin.qq.com/s/erwSQfvGdyKjxONbJKFAHg
+
+基于遗传算法的拼图游戏解决方案
+
+https://mp.weixin.qq.com/s/WlAh7jKzjRzqZP-p1WJNsg
+
+利用遗传算法优化神经网络：Uber提出深度学习训练新方式
+
+https://mp.weixin.qq.com/s/NtUUbvvQrJV4LhTUN72Q3A
+
+AI并不需要互联网：利用有性生殖，合成更多样、紧凑的神经网络
+
+https://mp.weixin.qq.com/s/s6EyhAUz0QO0ZIdqG_OB1g
+
+追本溯源：5种受生物启发的人工智能方法
+
+https://mp.weixin.qq.com/s/0esR8Z6YlWayKpz-TS2_Zg
+
+对比梯度下降与进化策略，神经进化会成为深度学习的未来吗？
+
+https://mp.weixin.qq.com/s/K65ORf5Ke3ywANNP11xBvQ
+
+利用进化方法自动生成神经网络：深度进化网络DENSER
+
+https://mp.weixin.qq.com/s/9ZQc3RqCCcWYDplZ4RU2oA
+
+清华段路明组发现深度学习和量子物理重要关联
+
+https://mp.weixin.qq.com/s/LbyqAA_scfdDXDe_ESWEKg
+
+姚期智：呼之欲出的量子计算机，和它漫长的最后一英里
+
+https://mp.weixin.qq.com/s/BZpNi0b7vt71MUvN7bKvbw
+
+通往人工智能未来的三路竞赛：量子vs.神经形态vs.高性能计算
+
+https://mp.weixin.qq.com/s/ULciN9h2IybE59JMO6Kcgg
+
+清华大学段路明组提出生成模型的量子算法
+
+https://mp.weixin.qq.com/s/mNOLn7WiZFpGW25Ppefo3g
+
+何为量子机器学习？
+
+https://mp.weixin.qq.com/s/egmodqeThnw5H7DwKRwQbw
+
+如何运用数学进行高效生产？（模拟退火算法）
+
+https://mp.weixin.qq.com/s/86c59-nIsrTNUABx4QYobA
+
+量子机器学习入门科普：解读量子力学和机器学习的共生关系
+
+https://mp.weixin.qq.com/s/9woLRUGuirTV91uuHaP69A
+
+中科大潘建伟团队在光量子处理器上成功实现拓扑数据分析
 
 

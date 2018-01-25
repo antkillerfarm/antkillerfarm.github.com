@@ -238,6 +238,10 @@ https://mp.weixin.qq.com/s/A9F3UsITUaNvR69roHa0mg
 
 结合单阶段和两阶段目标检测的优势：基于单次精化神经网络的目标检测方法
 
+https://mp.weixin.qq.com/s/xNIPdmIJiqDg_ruwHPLEDg
+
+深度学习目标检测从入门到精通：第一篇
+
 # RCNN
 
 《深度学习（五）》中提到的AlexNet、VGG、GoogleNet主要用于图片分类。而这里介绍的RCNN(Regions with CNN)主要用于目标检测。

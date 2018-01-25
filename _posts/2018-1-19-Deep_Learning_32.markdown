@@ -50,3 +50,9 @@ https://mp.weixin.qq.com/s/GGXI-ZzPc9LLjVQpf5ia1A
 
 词嵌入2017年进展全面梳理：趋势和未来方向
 
+https://mp.weixin.qq.com/s/gI82_PHc94OAsZQBk6DwQw
+
+一次搞定多种语言：Facebook展示全新多语言嵌入系统
+
+
+
