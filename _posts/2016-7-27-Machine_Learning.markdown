@@ -156,6 +156,10 @@ https://mp.weixin.qq.com/s/iBPhhNJYF3gayBU2NHI8jw
 
 谈非线性规划的一维搜索各种方法！
 
+http://mp.weixin.qq.com/s/yjay4tEYPMUW-V10BxG_7Q
+
+为什么梯度的负方向是局部下降最快的方向？
+
 ## LMS算法
 
 LMS（least mean squares，最小均方）算法，也是一种迭代算法。其迭代公式为：

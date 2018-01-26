@@ -171,6 +171,10 @@ https://mp.weixin.qq.com/s/j_9PCwWoGu9cZM9sD1klog
 
 Elasticsearch性能监控（一）
 
+http://bbotte.com/logs-service/use-elk-processing-logs-multiple-log-file-send/
+
+ELK日志服务使用-filebeat多文件发送
+
 # WebService
 
 WebService经过近二十年的发展，已经有非常多的框架了。知名的有：Axis1、Axis2、Xfire、CXF、JWS等。

@@ -168,3 +168,7 @@ https://mp.weixin.qq.com/s/axpA7Y_Rhiols5bDIdc6jg
 
 Tesseract-OCR 3.0.1训练自己的语言库之图像文字识别
 
+http://mp.weixin.qq.com/s/n8C80a3B54FhrCe-GhhcDA
+
+文档扫描：深度神经网络在移动端的实践
+
