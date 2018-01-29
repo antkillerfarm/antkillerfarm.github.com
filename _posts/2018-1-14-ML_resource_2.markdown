@@ -282,4 +282,11 @@ https://mp.weixin.qq.com/s/pS4Eypr2qWREXt6yUEZKTg
 
 Kaggle比赛大杀技！stacking的基本思想及代码实现
 
+http://mp.weixin.qq.com/s/BmzgUrQH2bW9OQc04p6RJA
+
+多元函数的泰勒展开式
+
+http://mp.weixin.qq.com/s/xQdMKD3RtRwWt-DXHUDdwA
+
+拓扑数据分析TDA，有望打破人工智能黑箱的神奇算法
 

@@ -42,6 +42,10 @@ http://ctms.engin.umich.edu/CTMS/index.php
 
 这个网页提供了很多机械的控制算法——从系统、控制到仿真的全过程的教程。
 
+https://github.com/Microsoft/AutonomousDrivingCookbook/tree/master/AirSimE2EDeepLearning
+
+这是微软提供的自动驾驶课程
+
 ## 术语
 
 LIDAR：LIght Detection And Ranging

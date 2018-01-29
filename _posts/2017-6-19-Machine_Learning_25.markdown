@@ -112,6 +112,8 @@ $$<\mathcal{S},\mathcal{A},\mathcal{P},\mathcal{R},\gamma>$$
 
 正是因为State太过于复杂，我们往往可以需要一个对Environment的观察来间接获得信息，因此就有了Observation。不过Observation是可以等于State的，此时叫做Full Observability。
 
+>这里可以类比围棋和星际争霸。前者的所有信息都在明面上，因此是Full Observability，而后者由于战争迷雾的存在，显然就不是Full Observability的了。
+
 状态、动作、状态转移概率组成了MDP，一个MDP周期（episode）由一个有限的状态、动作、奖励队列组成：
 
 $$s_0,a_0,r_1,s_1,a_1,r_2,s_2,\dots,s_{n-1},a_{n-1},r_n,s_n$$
@@ -156,6 +158,8 @@ $$\pi(a | s) = P[A_t = a | S_t = s]$$
 
 **Value**，价值函数，表示在输入state，action的时候，能够返回在state下，执行这个action能得到的Discounted future reward的（期望）值。
 
+Value function一般有两种。
+
 state-value function：
 
 $$v_{\pi}(s) = E_{\pi} [G_t | S_t = s]$$
@@ -163,6 +167,8 @@ $$v_{\pi}(s) = E_{\pi} [G_t | S_t = s]$$
 action-value function：
 
 $$q_{\pi}(s; a) = E_{\pi} [G_t | S_t = s; A_t = a]$$
+
+后者由于和state、action都有关系，也被称作state-action pair value function。
 
 **Transition model**是说环境本身的结构与特性：当在state执行action的时候，系统会进入的下一个state，也包括可能收到的reward。
 

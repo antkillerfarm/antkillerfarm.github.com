@@ -106,9 +106,19 @@ FM算法实际上是一大类与矩阵分解有关的算法的广义模型。
 
 参考：
 
-1.https://www.ismll.uni-hildesheim.de/pub/pdfs/Rendle2010FM.pdf
+https://www.ismll.uni-hildesheim.de/pub/pdfs/Rendle2010FM.pdf
 
-2.http://blog.csdn.net/itplus/article/details/40534885
+http://blog.csdn.net/itplus/article/details/40534885
+
+Factorization Machines 学习笔记（一）预测任务
+
+https://tech.meituan.com/deep-understanding-of-ffm-principles-and-practices.html
+
+深入FFM原理与实践
+
+https://github.com/aksnzhy/xlearn
+
+这是一个集成了FM和FFM等算法的库
 
 ## PITF
 

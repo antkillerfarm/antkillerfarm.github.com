@@ -214,5 +214,9 @@ https://mp.weixin.qq.com/s/YNkx03D2Ok2xyMpPI0XXKg
 
 Petuum新研究提出形义感知型Grad-GAN：可基于虚拟游戏生成更具真实感的城市场景
 
+http://mp.weixin.qq.com/s/RlpI3hCKjcJ8VHSbBXf84g
+
+用生成对抗网络解决NLP问题：谷歌大脑提出MaskGAN
+
 
 

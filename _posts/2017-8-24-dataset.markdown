@@ -212,4 +212,12 @@ https://mp.weixin.qq.com/s/M3s3z3YnEBvUxpDVGFVKHw
 
 斯坦福吴恩达团队公布最大医学影像数据集
 
+http://blog.csdn.net/sut_wj/article/details/70662181
+
+THCHS-30：一个免费的中文语料库
+
+http://www.dataonthemind.org/data-resources/datasets
+
+认知科学数据集大列表 Center for Data on the Mind
+
 

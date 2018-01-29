@@ -242,6 +242,10 @@ https://mp.weixin.qq.com/s/xNIPdmIJiqDg_ruwHPLEDg
 
 深度学习目标检测从入门到精通：第一篇
 
+http://mp.weixin.qq.com/s/kDoogc5yIeX6D4_YWC5YQA
+
+后RCNN时代的物体检测及实例分割进展
+
 # RCNN
 
 《深度学习（五）》中提到的AlexNet、VGG、GoogleNet主要用于图片分类。而这里介绍的RCNN(Regions with CNN)主要用于目标检测。

@@ -105,11 +105,16 @@ $$Z=[\epsilon,y_1,\epsilon,y_2,\dots,\epsilon,y_U,\epsilon]$$
 
 不同于掷骰子过程中，骰子的每种状态都有可能出现的情况，语音由于具有连续性，因此只可能有以下两种情况：
 
-
+这种情况下，$$\alpha$$的计算公式如下：
 
 $$\alpha_{s,t}=(\alpha_{s-1,t-1}+\alpha_{s,t-1})\cdot p_t(Z_s | X)$$
 
+这种情况下，$$\alpha$$的计算公式如下：
+
 $$\alpha_{s,t}=(\alpha_{s-2,t-1}+\alpha_{s-1,t-1}+\alpha_{s,t-1})\cdot p_t(Z_s | X)$$
+
+
+
 
 参考：
 

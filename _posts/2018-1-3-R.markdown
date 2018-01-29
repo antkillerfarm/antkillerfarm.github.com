@@ -313,3 +313,12 @@ http://blog.csdn.net/qazplm12_3/article/details/76474682
 
 R学习-火山图
 
+https://www.rstudio.com/resources/cheatsheets/
+
+RStudio Cheat Sheets。各种小抄，不局限于R本身。
+
+https://www.hvitfeldt.me/2018/01/visualizing-trigrams-with-the-tidyverse/
+
+Visualizing trigrams with the Tidyverse。一种特殊的可视化图表
+
+

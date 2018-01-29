@@ -333,3 +333,8 @@ Facebook开源语音识别工具包wav2letter
 https://mp.weixin.qq.com/s/OeCiH4n-Y3kigI3ynMyZSg
 
 有趣的研究奥巴马Net：从文本合成真实的唇语口型
+
+https://mp.weixin.qq.com/s/8e4bkyTJIxHZ1y95GshA0Q
+
+开源的语音合成系统WORLD介绍以及使用方法
+

@@ -316,6 +316,11 @@ https://mp.weixin.qq.com/s/p2hlc2PsLgrvxOF8wBZANg
 
 李飞飞高徒范麟熙解析强化学习在游戏和现实中的应用
 
+http://mp.weixin.qq.com/s/EPbKE-TAnAPugJDhXHEyNA
+
+DeepMind开源Psychlab平台——搭建AI和认知心理学的桥梁
+
+
 
 
 

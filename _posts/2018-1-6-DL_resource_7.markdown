@@ -248,4 +248,20 @@ https://mp.weixin.qq.com/s/oe8Zcv3EecDV2OUl9qejCA
 
 图像分类、定位、检测，语义分割和实例分割方法梳理
 
+http://mp.weixin.qq.com/s/khOINUyrNV3TFfgNRheH0A
+
+卷积神经网络压缩、多模态的语义分析研究
+
+http://mp.weixin.qq.com/s/1UDKVasluMpPiteysmEx1A
+
+深度学习必备---用Keras和直方图均衡化---数据增强
+
+http://mp.weixin.qq.com/s/zi1E-O8qHv0NUwkQmXI9Vw
+
+用AlphaGo背后的人工智能做金融投资
+
+http://mp.weixin.qq.com/s/5ozeLeF6IyKTOqAxYEdaog
+
+山东大学提出PointCNN：让CNN更好地处理不规则和无序的点云数据
+
 

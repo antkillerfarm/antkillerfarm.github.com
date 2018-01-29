@@ -234,6 +234,10 @@ https://mp.weixin.qq.com/s/kL1bhjdTc1wyYEL4KJqDpg
 
 Detectron精读系列之一：学习率的调节和踩坑
 
+http://mp.weixin.qq.com/s/TByhSlSbVU5oHqLTLIJgwA
+
+NiftyNet：开源的卷积神经网络和医疗影像分析平台
+
 ## 量子计算 & 遗传算法
 
 https://www.zhihu.com/question/28171555

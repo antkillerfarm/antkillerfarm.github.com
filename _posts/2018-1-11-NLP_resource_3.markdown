@@ -194,5 +194,25 @@ https://mp.weixin.qq.com/s/joZnfPtR3vv6LJPsRrY9Jw
 
 腾讯AI Lab涂兆鹏：如何提升神经网络翻译的忠实度
 
+https://mp.weixin.qq.com/s/MHxxBgfiQt1Fzkpco3Uoig
+
+情感分析中的深度学习
+
+https://mp.weixin.qq.com/s/FZOgJR5aKl4fV3xCX2zkwA
+
+主题模型如何帮助法律部门提取PDF摘要及可视化
+
+http://mp.weixin.qq.com/s/Rw2Bz8k3wpcY-WCO2AJcpg
+
+如何解决90％的自然语言处理问题：分步指南奉上
+
+https://mp.weixin.qq.com/s/2Y66uCi1qS0VTaizyCg3cA
+
+阿里小蜜背后的技术秘密
+
+http://mp.weixin.qq.com/s/OArqUTh0ZLGBTX71K7UUnw
+
+记忆网络之Gated End-to-End Memory Networks
+
 
 

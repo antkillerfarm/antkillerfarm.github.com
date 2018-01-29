@@ -233,13 +233,27 @@ http://storm.apache.org/
 
 http://storm.apache.org/releases/current/Tutorial.html
 
+参考：
+
 http://blog.csdn.net/rzhzhz/article/details/8788137
+
+Storm教程（翻译）
 
 http://ifeve.com/getting-started-with-stom-index/
 
+《Storm入门》中文版
+
 http://blog.csdn.net/NB_vol_1/article/details/46287077
 
+一个storm的完整例子——WordCount
+
 http://www.open-open.com/lib/view/open1374979211233.html
+
+storm 简介及单机版安装指南
+
+http://mp.weixin.qq.com/s/lDQLXuMBzZG-o-mGwBNcIA
+
+美团点评基于Storm的实时数据处理实践
 
 ## 示例
 

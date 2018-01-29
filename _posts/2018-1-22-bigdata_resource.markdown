@@ -258,6 +258,10 @@ https://mp.weixin.qq.com/s/rVfoSk3HCEEHvdlKz7A2xA
 
 一家创业公司的5年架构变迁史
 
+http://mp.weixin.qq.com/s/uLVRxLHIq8zfoskC_TtbxQ
+
+携程软件SBC实践
+
 # 区块链参考资源
 
 https://mp.weixin.qq.com/s/hn1a9XZSu_lL5TPgq5ln2A
@@ -385,5 +389,9 @@ https://zhuanlan.zhihu.com/p/30409360
 https://zhuanlan.zhihu.com/p/33145828
 
 什么是Speculative Execution？为什么要有它？
+
+http://mp.weixin.qq.com/s/sshhUppVPP6qM7LH1V3nSQ
+
+四位计算机的原理及其实现
 
 

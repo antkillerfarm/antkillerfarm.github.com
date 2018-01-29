@@ -182,3 +182,9 @@ https://zhuanlan.zhihu.com/p/32089487
 
 AlphaZero实战：从零学下五子棋
 
+http://mp.weixin.qq.com/s/72riTTC3w0q9oF5H-51kXA
+
+手把手教你搭建AlphaZero（使用Python和Keras）
+
+
+
