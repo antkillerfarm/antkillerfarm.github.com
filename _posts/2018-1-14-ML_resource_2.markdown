@@ -290,3 +290,8 @@ http://mp.weixin.qq.com/s/xQdMKD3RtRwWt-DXHUDdwA
 
 拓扑数据分析TDA，有望打破人工智能黑箱的神奇算法
 
+https://mp.weixin.qq.com/s/EVD6V9NSrqHuZdGLQO_N9Q
+
+大数据为你解读2017年全国出差地图
+
+

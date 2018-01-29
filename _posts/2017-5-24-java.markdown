@@ -215,15 +215,19 @@ self.player.seek(1.0, Gst.Format.TIME, Gst.SeekFlags.FLUSH, Gst.SeekType.SET,\
 
 `c_long(Gst.CLOCK_TIME_NONE).value`
 
-## 参考
+## Python 2 to Python 3
 
-https://mp.weixin.qq.com/s/jHnkmpnOz1LApVCLJL-8Tw
+https://www.linuxzen.com/qian-yi-dao-python-3.html
 
-如何写出优雅又地道的Python代码？
+迁移到Python 3
 
-https://mp.weixin.qq.com/s/5xs1ivkrUAP_Rr9P-EMc5g
+https://www.zhihu.com/question/19698598
 
-代码优化指南：人生苦短，我用Python。这篇blog主要介绍了如何追踪Python脚本的CPU使用情况。
+Python 2和Python 3有哪些主要区别？
+
+https://mp.weixin.qq.com/s/Q3cqLuOZDSMOdAjVrCDrtQ
+
+在Python 2.7即将停止支持时，我们为你准备了一份3.x迁移指南
 
 ## tqdm
 
@@ -261,17 +265,17 @@ https://mp.weixin.qq.com/s/_OmRvwFmvuuOpBf7DQG8IA
 
 Python30个编程技巧
 
-https://www.linuxzen.com/qian-yi-dao-python-3.html
-
-迁移到Python 3
-
-https://www.zhihu.com/question/19698598
-
-Python 2和Python 3有哪些主要区别？
-
 https://mp.weixin.qq.com/s/-CaMHjsY580et8Hh_D2FSg
 
 简约而不简单的Django新手图文教程
+
+https://mp.weixin.qq.com/s/jHnkmpnOz1LApVCLJL-8Tw
+
+如何写出优雅又地道的Python代码？
+
+https://mp.weixin.qq.com/s/5xs1ivkrUAP_Rr9P-EMc5g
+
+代码优化指南：人生苦短，我用Python。这篇blog主要介绍了如何追踪Python脚本的CPU使用情况。
 
 # 孩子的编程语言
 

@@ -226,10 +226,6 @@ https://mp.weixin.qq.com/s/phuCKNj_a4CPq6w51Md-9A
 
 易忽略的强化学习知识之基础知识及MDP（下）
 
-https://zhuanlan.zhihu.com/p/25688750
-
-模仿学习（Imitation Learning）完全介绍
-
 https://mp.weixin.qq.com/s/wfCyii6bS-GxMZPg2TPaLA
 
 蒙特卡洛树搜索是什么？如何将其用于规划星际飞行？

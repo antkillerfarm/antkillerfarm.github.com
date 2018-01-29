@@ -114,10 +114,6 @@ https://mp.weixin.qq.com/s/vKkjYdf6Ast7wWcW9oIEuA
 
 88美元的自动驾驶“自制原子弹”，最著名黑客详解panda系统
 
-https://zhuanlan.zhihu.com/p/27935902
-
-机器人学习Robot Learning之模仿学习Imitation Learning的发展
-
 https://mp.weixin.qq.com/s/pPPq3b1yj92RaGgIpTAhqQ
 
 一文看透汽车无人驾驶技术、产品和市场

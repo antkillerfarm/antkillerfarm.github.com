@@ -170,6 +170,10 @@ https://mp.weixin.qq.com/s/LoF9hLoc3zRece50iOuy2w
 
 2017年度盘点：Github上十大有趣的机器学习项目
 
+https://mp.weixin.qq.com/s/szVt6C9q1rChRMXX97ynTA
+
+别错过这张AI商用清单：你的生产难题可能被一个应用解决。这个blog收录了上百个AI应用方面的库。
+
 ## 教程
 
 https://theneuralperspective.com/tag/tutorials/

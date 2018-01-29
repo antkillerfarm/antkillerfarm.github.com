@@ -175,6 +175,10 @@ http://bbotte.com/logs-service/use-elk-processing-logs-multiple-log-file-send/
 
 ELK日志服务使用-filebeat多文件发送
 
+https://www.digitalocean.com/community/tutorials/how-to-map-user-location-with-geoip-and-elk-elasticsearch-logstash-and-kibana
+
+How To Map User Location with GeoIP and ELK (Elasticsearch, Logstash, and Kibana)
+
 # WebService
 
 WebService经过近二十年的发展，已经有非常多的框架了。知名的有：Axis1、Axis2、Xfire、CXF、JWS等。

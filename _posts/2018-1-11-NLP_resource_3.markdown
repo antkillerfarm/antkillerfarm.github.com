@@ -214,5 +214,9 @@ http://mp.weixin.qq.com/s/OArqUTh0ZLGBTX71K7UUnw
 
 记忆网络之Gated End-to-End Memory Networks
 
+https://mp.weixin.qq.com/s/Su7tGSWX2bG1UKQU-nGC5A
+
+解读R-Net：微软“超越人类”的阅读理解人工智能
+
 
 

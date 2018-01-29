@@ -330,6 +330,10 @@ https://mp.weixin.qq.com/s/UbAHB-uEIvqYZCB7xIAJTg
 
 机器学习新框架Propel：使用JavaScript做可微分编程
 
+https://mp.weixin.qq.com/s/_-z2d1GE_3FElzAwPyJZ8A
+
+十大流行AI框架和库的优缺点比较
+
 ## 面试
 
 https://www.zhihu.com/question/41233373

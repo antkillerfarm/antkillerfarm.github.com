@@ -140,6 +140,10 @@ https://www.zhihu.com/question/49455386
 
 为什么SSD(Single Shot MultiBox Detector)对小目标的检测效果不好？
 
+https://mp.weixin.qq.com/s/hGRZzNzflbed2w4XosC40w
+
+使用SSD进行目标检测
+
 # YOLOv2
 
 面对SSD的攻势，pjreddie不甘示弱，于2016年12月提出了YOLOv2（又名YOLO9000）。YOLOv2对YOLO做了较多改进，实际上更像是SSD的升级版。

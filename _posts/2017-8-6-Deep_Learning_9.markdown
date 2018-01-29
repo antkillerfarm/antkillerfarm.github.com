@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（九）——GAN（2）, Spatial Transformer Networks
+title:  深度学习（九）——GAN（2）, Spatial Transformer Networks, SOM
 category: DL 
 ---
 
@@ -262,5 +262,15 @@ Spatial Transformer Networks
 https://mp.weixin.qq.com/s/ciqQMezcB-oM24X8eQqTNg
 
 花式玩耍Spatial Transformation Networks
+
+# SOM
+
+http://www.cnblogs.com/sylvanas2012/p/5117056.html
+
+Self Organizing Maps (SOM): 一种基于神经网络的聚类算法
+
+http://blog.csdn.net/Loyal2M/article/details/11225987
+
+聚类算法实践（3）——PCCA、SOM、Affinity Propagation
 
 
