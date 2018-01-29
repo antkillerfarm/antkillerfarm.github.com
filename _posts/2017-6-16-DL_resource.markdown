@@ -148,6 +148,10 @@ http://blog.csdn.net/xmdxcsj
 
 一个语音识别的blog
 
+http://blog.csdn.net/app_12062011
+
+一个DL+CV的blog，专注于人脸识别
+
 ## 项目集锦
 
 https://mp.weixin.qq.com/s/ZNNgEB9rFjAE8SdfMo9NLA

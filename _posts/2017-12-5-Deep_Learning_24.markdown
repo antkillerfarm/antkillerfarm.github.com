@@ -6,6 +6,8 @@ category: DL
 
 # CTC
 
+## 概述
+
 Connectionist Temporal Classification，是一种改进的RNN模型。它主要解决的是时序模型中，输入数大于输出数，输入输出如何对齐的问题。它由Alex Graves于2006年提出。
 
 论文：
@@ -48,6 +50,8 @@ CTC算法可以克服这些挑战。对于一个给定的X，它给我们一个�
 **推理**：在我们训练好模型后，我们希望使用它来推断给定X的最可能的Y。即：
 
 $$Y^*=\mathop{\text{argmax}}_{Y} p(Y \mid X)$$
+
+## 算法推导
 
 为了推导CTC对齐的具体形式，我们首先考虑一种初级的做法：假设输入长度为6，Y=[c,a,t]，对齐X和Y的一种方法是将输出字符分配给每个输入步骤并折叠重复的部分。
 
@@ -103,13 +107,21 @@ $$Z=[\epsilon,y_1,\epsilon,y_2,\dots,\epsilon,y_U,\epsilon]$$
 
 用$$\alpha_{s,t}$$表示子序列$$Z_{1:s}$$在t步之后的CTC值。显然，我们需要计算的目标$$P(Y\vert X)$$和最后一步的$$\alpha$$有关，但只有计算出了上一步的$$\alpha$$，我们才能计算当前的$$\alpha$$。
 
-不同于掷骰子过程中，骰子的每种状态都有可能出现的情况，语音由于具有连续性，因此只可能有以下两种情况：
+![](/images/img2/CTC_4.png)
+
+不同于掷骰子过程中，骰子的每种状态都有可能出现的情况，语音由于具有连续性，因此有些情况实际上是不可能的。比如上图的$$x_1$$就不大可能是后三个符号。
+
+所以，可能的情况实际上只有两种：
+
+### Case 1
 
 ![](/images/img2/CTC_6.png)
 
 这种情况下，$$\alpha$$的计算公式如下：
 
 $$\alpha_{s,t}=(\alpha_{s-1,t-1}+\alpha_{s,t-1})\cdot p_t(Z_s | X)$$
+
+### Case 2
 
 ![](/images/img2/CTC_7.png)
 
@@ -120,7 +132,7 @@ $$\alpha_{s,t}=(\alpha_{s-2,t-1}+\alpha_{s-1,t-1}+\alpha_{s,t-1})\cdot p_t(Z_s |
 
 
 
-参考：
+## 参考
 
 https://distill.pub/2017/ctc/
 

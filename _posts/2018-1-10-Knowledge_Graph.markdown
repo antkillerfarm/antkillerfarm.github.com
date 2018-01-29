@@ -122,4 +122,8 @@ https://mp.weixin.qq.com/s/eZhhVZlVG-uy-tdtDztOpg
 
 电子健康档案中未知药物不良反应的知识图预测及验证
 
+https://mp.weixin.qq.com/s/YeSzOw6dRNiX32PmdWgLow
+
+知识图谱在互联网金融行业的应用
+
 

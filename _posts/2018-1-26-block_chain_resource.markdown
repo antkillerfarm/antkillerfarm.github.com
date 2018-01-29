@@ -110,6 +110,10 @@ https://mp.weixin.qq.com/s/LnyQDW7-Y7muYvi19LqDjA
 
 区块链到底是个什么？一幅漫画让你秒懂！
 
+https://mp.weixin.qq.com/s/DZaOp0eD2GGNKvkJYVxl-Q
+
+关于区块链，作为程序员的你，好歹应该知道三大技术要点吧！
+
 # CPU
 
 https://zhuanlan.zhihu.com/p/29743431
