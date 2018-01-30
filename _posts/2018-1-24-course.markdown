@@ -224,4 +224,7 @@ https://agi.mit.edu/
 
 MIT 6.S099: Artificial General Intelligence
 
+http://deeplearning.cs.cmu.edu/
+
+11-785 Introduction to Deep Learning
 

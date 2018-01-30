@@ -268,5 +268,8 @@ https://mp.weixin.qq.com/s/lPAcNayqcz1sh8xNVklzEA
 
 DeepMind提出可微分逻辑编程，结合深度学习与符号程序优点
 
+https://zhuanlan.zhihu.com/p/33445638
+
+传统不死：在CNN中学习和构建空间传播模块
 
 

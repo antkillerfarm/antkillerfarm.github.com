@@ -54,7 +54,7 @@ Hartford大学的这个网站也有些不错的资料，偏重RL、机器人、M
 
 RL领域的DP算法的主要思想是：利用value function构建搜索Good Policy的方法。这里用$$v_*(s)$$或$$q_*(s, a)$$表示最优的value function。
 
-
+![](/images/img2/RL_3.png)
 
 RL DP主要包括以下算法：（为了抓住问题的本质，这里仅列出各算法最关键的Bellman equation，至于流程参照Q-learning算法即可。）
 
