@@ -254,4 +254,9 @@ http://mp.weixin.qq.com/s/baXCaD1EdHKCJbCIh2HDeA
 
 Apollo高精地图技术与应用
 
+https://mp.weixin.qq.com/s/qtoHF4Mnj_aeGBJbkjJUMA
+
+Apollo小度车载系统
+
+
 

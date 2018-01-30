@@ -306,13 +306,9 @@ https://mp.weixin.qq.com/s/ZPAE1CwhfD0PNT1MJ8erIw
 
 一种用于汽车防撞雷达的波束赋形阵列天线
 
-http://www.cnblogs.com/xybaby/p/7867735.html
+https://mp.weixin.qq.com/s/NwptdxWiN4SadjUQafA5rw
 
-关于负载均衡的一切：总结与思考
-
-https://mp.weixin.qq.com/s/6MRi_UEcMybKn4YXi6qWng
-
-操作系统中锁的实现原理
+高端MEMS固体波动陀螺的发展与应用
 
 https://mp.weixin.qq.com/s/ZexnsNmqsD2yq-7YNASohw
 
@@ -321,6 +317,18 @@ https://mp.weixin.qq.com/s/ZexnsNmqsD2yq-7YNASohw
 https://mp.weixin.qq.com/s/1XmbkoRkXUtmR0pnENhfGA
 
 基于高速DDFS的高精度DAC的设计
+
+https://zhuanlan.zhihu.com/p/30565679
+
+人工智能技术热潮中，是否存在破解苹果A11处理器的可能？
+
+http://www.cnblogs.com/xybaby/p/7867735.html
+
+关于负载均衡的一切：总结与思考
+
+https://mp.weixin.qq.com/s/6MRi_UEcMybKn4YXi6qWng
+
+操作系统中锁的实现原理
 
 https://mp.weixin.qq.com/s/4tAxQ0auQfv5x7Dh3B-85g
 

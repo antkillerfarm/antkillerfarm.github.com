@@ -218,5 +218,8 @@ https://mp.weixin.qq.com/s/Su7tGSWX2bG1UKQU-nGC5A
 
 解读R-Net：微软“超越人类”的阅读理解人工智能
 
+https://mp.weixin.qq.com/s/GaRL8VFWfbKOwz2jPzvN5A
+
+基于深度学习技术的AI输入法引擎
 
 

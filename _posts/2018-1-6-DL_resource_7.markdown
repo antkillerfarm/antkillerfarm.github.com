@@ -264,4 +264,9 @@ http://mp.weixin.qq.com/s/5ozeLeF6IyKTOqAxYEdaog
 
 山东大学提出PointCNN：让CNN更好地处理不规则和无序的点云数据
 
+https://mp.weixin.qq.com/s/lPAcNayqcz1sh8xNVklzEA
+
+DeepMind提出可微分逻辑编程，结合深度学习与符号程序优点
+
+
 

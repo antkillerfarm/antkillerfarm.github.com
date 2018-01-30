@@ -178,6 +178,10 @@ https://mp.weixin.qq.com/s/szVt6C9q1rChRMXX97ynTA
 
 别错过这张AI商用清单：你的生产难题可能被一个应用解决。这个blog收录了上百个AI应用方面的库。
 
+https://mp.weixin.qq.com/s/L6O-I7y9HiA1WnjBRMh1cQ
+
+我们对比了GitHub上8800个开源机器学习项目，并选出了其中的Top30
+
 ## 教程
 
 https://theneuralperspective.com/tag/tutorials/

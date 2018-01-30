@@ -104,6 +104,10 @@ https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA
 
 阿里北大提出新attention建模框架，一个模型预测多种行为
 
+https://mp.weixin.qq.com/s/Yq3S4WrsQRQC06GvRgGjTQ
+
+打入神经网络思维内部
+
 # seq2seq
 
 seq2seq最早用于Neural Machine Translation领域（与之相对应的有Statistical Machine Translation）。训练后的seq2seq模型，可以根据输入语句，自动生成翻译后的输出语句。
@@ -135,6 +139,10 @@ Seq2Seq的DIY简介
 http://www.cnblogs.com/Determined22/p/6650373.html
 
 DL4NLP——seq2seq+attention机制的应用：文档自动摘要（Automatic Text Summarization）
+
+https://mp.weixin.qq.com/s/m-Z0UBgmFQ4CE0yLKYoHZw
+
+seq2seq和attention如何应用到文档自动摘要
 
 http://blog.csdn.net/young_gy/article/details/73412285
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  版本管理工具的前世今生, Kannel, awk&sed&grep, Win10历险记
-category: linux 
+title:  版本管理工具的前世今生, Kannel, awk&sed&grep, Win10历险记, 运维工具集
+category: technology 
 ---
 
 # 版本管理工具的前世今生
@@ -118,5 +118,83 @@ ip addr show br-lan | grep 'inet ' | awk  '{print $2}' | sed 's/\/.*//g'
 Win10给人的第一感觉，其实和Win8差不多，只不过加了个更像Win7的开始菜单而已。不过既来之则安之，一段时间用下来，总算还是要比Win7强不少的。
 
 又过了几天，公司的电脑也升级成功。正得意间，忽然发现VirtualBox在Win10下工作不正常。查了VirtualBox官网方知，其目前尚不支持Win10 Host。于是不得不重新降级到Win7。看来尝鲜也是有得有失的。对于工作用的电脑，有的时候够用就好，没必要什么都求新的。
+
+# 运维工具集
+
+## Zabbix
+
+zabbix是一个基于WEB界面的提供分布式系统监视以及网络监视功能的企业级的开源解决方案。
+
+http://www.zabbix.com/
+
+## Cacti
+
+Cacti是一套基于PHP,MySQL,SNMP及RRDTool开发的网络流量监测图形分析工具。
+
+http://cacti.net/
+
+## Nagios
+
+Nagios是一款开源的免费网络监视工具，能有效监控Windows、Linux和Unix的主机状态，交换机路由器等网络设备，打印机等。
+
+https://www.nagios.org/
+
+# Ganglia
+
+Ganglia是伯克利开发的一个集群监控软件。可以监视和显示集群中的节点的各种状态信息，比如如：cpu 、mem、硬盘利用率， I/O负载、网络流量情况等，同时可以将历史数据以曲线方式通过php页面呈现。
+
+官网：
+
+http://ganglia.sourceforge.net/
+
+## Jenkins
+
+Jenkins是一个开源软件项目，旨在提供一个开放易用的软件平台，使软件的持续集成变成可能。
+
+https://jenkins.io/index.html
+
+自动化部署的其中一种方案：
+
+gitlab管理代码版本，触发jenkins自动构建+测试，然后走迭代或者发布，全部环境都在docker内。
+
+## Walle
+
+Walle一个web部署系统工具，配置简单、功能完善、界面流畅、开箱即用！支持git、svn版本管理，支持各种web代码发布，PHP，Python，JAVA等代码的发布、回滚，可以通过web来一键完成。
+
+https://walle-web.io/
+
+## JMeter
+
+Apache JMeter是Apache组织开发的基于Java的压力测试工具。用于对软件做压力测试，它最初被设计用于Web应用测试，但后来扩展到其他测试领域。 它可以用于测试静态和动态资源，例如静态文件、Java 小服务程序、CGI 脚本、Java 对象、数据库、FTP 服务器， 等等。JMeter 可以用于对服务器、网络或对象模拟巨大的负载，来自不同压力类别下测试它们的强度和分析整体性能。
+
+http://jmeter.apache.org/
+
+## boilerpipe
+
+各个网站的HTML版面样式多种多样，如何从中提取正文，是一个很有挑战性的课题。
+
+传统的html解析或者正则式，虽能完成任务，但需要给每个网站单独提供一个模板，通用性不佳，而且一旦网站改版，相应的解析模板也需要修改，这导致后期的维护成本也很高。
+
+boilerpipe是一个用于提取HTML正文的库。它采用机器学习的思想，通过提取DOM树的特征，学习得到正文的内容。
+
+官网：
+
+https://github.com/kohlschutter/boilerpipe
+
+参考：
+
+http://xiaoxinzhou.blog.163.com/blog/static/207045386201332381015146/
+
+Boilerpipe简介
+
+http://baojie.org/blog/2014/06/23/python-text-extraction/
+
+总结Python正文提取的工具包
+
+# 如何在HTTPS里调用HTTP资源
+
+浏览器默认是不允许在HTTPS里面引用HTTP资源的，一般都会弹出提示框，用户确认后才会继续加载，用户体验非常差。
+
+对于同时支持HTTPS和HTTP的资源，引用的时候要把引用资源的URL里的协议头去掉，例如：//www.example.com/scirpt.js，这样相当于相对路径，即浏览器会自动根据当前是HTTPS还是HTTP来给资源URL补上协议头的，可以达到无缝切换。
 
 

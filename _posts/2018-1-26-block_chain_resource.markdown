@@ -114,6 +114,10 @@ https://mp.weixin.qq.com/s/DZaOp0eD2GGNKvkJYVxl-Q
 
 关于区块链，作为程序员的你，好歹应该知道三大技术要点吧！
 
+https://mp.weixin.qq.com/s/mwu1tsejwrCEelio9D0kWw
+
+高盛区块链报告：从理论到实践
+
 # CPU
 
 https://zhuanlan.zhihu.com/p/29743431

@@ -82,23 +82,7 @@ http://www.sohu.com/a/164277987_473283
 
 **Step 1**：安装Bazel。
 
-{% highlight bash %}
-echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
-curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
-sudo apt-get update && sudo apt-get install bazel
-{% endhighlight %}
-
-官网：
-
-https://bazel.build/
-
-文档：
-
-https://docs.bazel.build/versions/master/bazel-user-manual.html
-
-下载：
-
-https://github.com/bazelbuild/bazel/releases
+参见[这里](/technology/2017/11/07/makefile.html#Bazel)
 
 **Step 2**：编译TensorFlow。
 
