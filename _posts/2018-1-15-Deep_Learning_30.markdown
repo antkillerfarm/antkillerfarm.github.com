@@ -218,5 +218,8 @@ http://mp.weixin.qq.com/s/RlpI3hCKjcJ8VHSbBXf84g
 
 用生成对抗网络解决NLP问题：谷歌大脑提出MaskGAN
 
+https://zhuanlan.zhihu.com/p/32135185
+
+从一篇ICLR'2017被拒论文谈起：行走在GAN的Latent Space
 
 

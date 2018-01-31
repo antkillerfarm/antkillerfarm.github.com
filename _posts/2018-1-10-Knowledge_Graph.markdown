@@ -6,6 +6,18 @@ category: resource
 
 # 知识图谱参考资源
 
+## blog
+
+https://zhuanlan.zhihu.com/kb-qa
+
+揭开知识库问答KB-QA的面纱（知识图谱方面的系列专栏）
+
+https://zhuanlan.zhihu.com/knowledgegraph
+
+知识图谱-给AI装个大脑
+
+## 参考
+
 https://mp.weixin.qq.com/s/aLljr0R5w7OcidbXf71FQw
 
 知识图谱火了，但你知道它的发展历史吗？

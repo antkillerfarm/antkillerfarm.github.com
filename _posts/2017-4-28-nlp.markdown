@@ -38,10 +38,6 @@ https://mp.weixin.qq.com/s/TSc4E8lKwgc-EvzP8OlJeg
 
 初学者如何查阅自然语言处理（NLP）领域学术资料
 
-https://zhuanlan.zhihu.com/kb-qa
-
-揭开知识库问答KB-QA的面纱（知识图谱方面的系列专栏）
-
 http://web.stanford.edu/~jurafsky/slp3/ed3book.pdf
 
 《语音与语言处理》第三版，NLP和语音合成方面的专著

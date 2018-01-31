@@ -276,5 +276,7 @@ https://mp.weixin.qq.com/s/uxawHWsVXMNOTLNthAL0vg
 
 时空图卷积网络：港中文提出基于动态骨骼的行为识别新方案
 
+https://mp.weixin.qq.com/s/4LjWHFO0wTP7kqnKf2mdWw
 
+林倞：Beyond Supervised Deep Learning--后深度学习时代的挑战
 
