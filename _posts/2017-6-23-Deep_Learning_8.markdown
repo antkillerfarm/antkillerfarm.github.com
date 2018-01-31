@@ -4,7 +4,71 @@ title:  深度学习（八）——GAN（1）
 category: DL 
 ---
 
-# CNN进化史（续）
+# CNN进化史
+
+## AlexNet（续）
+
+虽然，LeNet-5是CNN的开山之作（它不是最早的CNN，但却是奠定了现代CNN理论基础的模型），但是毕竟年代久远，和现代实用的CNN相比，结构实在过于原始。
+
+AlexNet作为第一个现代意义上的CNN，它的意义主要包括：
+
+1.Data Augmentation。包括水平翻转、随机裁剪、平移变换、颜色、光照变换等。
+
+2.Dropout。
+
+3.ReLU激活函数。
+
+4.多GPU并行计算。
+
+5.当然最应该感谢的是李飞飞团队搞出来的标注数据集合ImageNet。
+
+>注：ILSVRC（Large Scale Visual Recognition Challenge）大赛，在2016年以前，一直是CV界的顶级赛事。但随着技术的成熟，目前的科研重点已经从物体识别转移到了物体理解领域。2017年将是该赛事的最后一届。WebVision有望接替该赛事，成为下一个目标。
+
+## VGG
+
+Visual Geometry Group是牛津大学的一个科研团队。他们推出的一系列深度模型，被称作VGG模型。
+
+代码：
+
+http://www.robots.ox.ac.uk/~vgg/research/very_deep/
+
+VGG的结构图如下：
+
+![](/images/article/vgg.png)
+
+该系列包括A/A-LRN/B/C/D/E等6个不同的型号。其中的D/E，根据其神经网络的层数，也被称为VGG16/VGG19。
+
+从原理角度，VGG相比AlexNet并没有太多的改进。其最主要的意义就是实践了“**神经网络越深越好**”的理念。也是自那时起，神经网络逐渐有了“深度学习”这个别名。
+
+## GoogleNet
+
+GoogleNet的进化道路和VGG有所不同。VGG实际上就是“大力出奇迹”的暴力模型，其他地方不足称道。
+
+而GoogleNet不仅继承了VGG“越深越好”的理念，对于网络结构本身也作了大胆的创新。可以对比的是，AlexNet有60M个参数，而GoogleNet只有4M个参数。
+
+因此，在ILSVRC 2014大赛中，GoogleNet获得第一名，而VGG屈居第二。
+
+![](/images/article/GoogleNet.jpg)
+
+上图是GoogleNet的结构图。从中可以看出，GoogleNet除了AlexNet的基本要素之外，还有被称作Inception的结构。
+
+![](/images/article/inception.png)
+
+上图是Inception的结构图。它的原理实际上就是**将不同尺寸的卷积组合起来，以提供不同尺寸的特征**。
+
+原始的GoogleNet也被称作Inception-v1。在后面的几年，GoogleNet还提出了几种改进的版本，最新的一个是Inception-v4（2016.8）。
+
+论文：
+
+《Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning》
+
+代码：
+
+https://github.com/BVLC/caffe/tree/master/models/bvlc_googlenet
+
+Inception系列的改进方向基本都集中在构建不同的Inception模型上。
+
+GoogleNet的另一个改进是**减少了全连接层**（Full Connection, FC），这是减少模型参数的一个重要改进。事实上，在稍后的实践中，人们发现去掉VGG的第一个FC层，对于效果几乎没有任何影响。
 
 ## SqueezeNet
 
@@ -243,64 +307,4 @@ $$y=\Phi^{-1}\left(\int_0^x \rho(t)dt\right)$$
 正态分布是常见的、相对简单的分布，但这个映射已经这么复杂了。如果换了任意分布，甚至概率密度函数都不能显式写出来，那么复杂度可想而知～
 
 考虑到我们**总可以用一个神经网络来拟合任意函数**。这里不妨用一个带有多个参数的神经网络$$G(X,\theta)$$去拟合f？只要把参数$$\theta$$训练好，就可以认为$$Y=G(X,\theta)$$了。这里的G是**Generator**的意思。
-
-## 正样本分布
-
-如上所述，一般的正样本分布是很难给出概率密度函数的。然而，我们可以换个角度思考问题。
-
-假设有一批服从某个指定分布的数据$$Z=(z_1,z_2,\dots,z_N)$$，根据概率论的相关定义，我们至少可以使用**离散采样**的方法，根据Z中的样本分布，来近似求出Z的指定分布。下文如无特殊指出，**均以Z中的样本分布来代替Z的指定分布，简称Z的分布**。
-
-那么接着就有另一个问题：**如何评估$$G(X,\theta)$$生成的样本的分布和Z的分布之间的差异呢？**
-
-## KL散度
-
-比较两个分布的差异的最常用指标是KL散度。其定义参见《机器学习（八）》。
-
-## JS散度
-
-因为KL散度不是对称的，有时候将它对称化，即得到JS散度（Jensen–Shannon divergence）：
-
-$$JS\Big(p_1(x),p_2(x)\Big)=\frac{1}{2}KL\Big(p_1(x)\|p_2(x)\Big)+\frac{1}{2}KL\Big(p_2(x)\|p_1(x)\Big)$$
-
->注：Claude Elwood Shannon，1916～2001，美国数学家，信息论之父。密歇根大学双学士+MIT博士。先后供职于贝尔实验室和MIT。
-
-KL散度和JS散度，也是Ian Goodfellow在原始GAN论文中，给出的评价指标。
-
-虽然KL散度和JS散度，在这里起着距离的作用，但它们**不是距离**，它们不满足距离的三角不等式，因此只能叫“散度”。
-
-## 神经距离
-
-假设我们可以将实数域分成若干个不相交的区间$$I_1,I_2,\dots,I_K$$，那么就可以估算一下给定分布Z的概率分布：
-
-$$p_z(I_i)=\frac{1}{N}\sum_{j=1}^{N}\#(z_j\in I_i)$$
-
-其中$$\#(z_j\in I_i)$$表示如果$$z_j\in I_i$$，那么取值为1，否则为0。
-
-接着我们生成M个均匀随机数$$x_1,x_2,\dots,x_M$$（这里不一定要$$M=N$$，还是那句话，我们比较的是分布，不是样本本身，因此多一个少一个样本，对分布的估算也差不了多少。），根据$$Y=G(X,\theta)$$计算对应的$$y_1,y_2,\dots,y_M$$，然后根据公式可以计算：
-
-$$p_y(I_i)=\frac{1}{M}\sum_{j=1}^{M}(y_j\in I_i)$$
-
-现在有了$$p_z(I_i)$$和$$p_y(I_i)$$，那么我们就可以算它们的差距了，比如可以选择JS距离
-
-$$\text{Loss} = JS\Big(p_y(I_i), p_z(I_i)\Big)$$
-
-假如我们只研究单变量概率分布之间的变换，那上述过程完全够了。然而，很多真正有意义的事情都是多元的，比如在MNIST上做实验，想要将随机噪声变换成手写数字图像。要注意MNIST的图像是28*28=784像素的，假如每个像素都是随机的，那么这就是一个784元的概率分布。按照我们前面分区间来计算KL距离或者JS距离，哪怕每个像素只分两个区间，那么就有$$2^{784}\approx 10^{236}$$个区间，这是何其巨大的计算量！
-
-为此，我们用神经网络L定义距离：
-
-$$L\Big(\{y_i\}_{i=1}^M, \{z_i\}_{i=1}^N, \Theta\Big)$$
-
-其中，$$\Theta$$为神经网络的参数。
-
-对于特定的任务来说，$$\{z_i\}_{i=1}^N$$是给定的，并非变量，因此上式可简写成：
-
-$$L\Big(\{y_i\}_{i=1}^M, \Theta\Big)$$
-
-通常，我们采用如下的L实现：
-
-$$L=\frac{1}{M}\sum_{i=1}^M D\Big(y_i,\Theta\Big)$$
-
-上式可以简单的理解为：**分布之间的距离，等于单个样本的距离的平均**。
-
-这里的神经网络$$D(Y,\Theta)$$，实际上就是GAN的另一个主角——**鉴别者**。这里的D是**Discriminator**的意思。
 

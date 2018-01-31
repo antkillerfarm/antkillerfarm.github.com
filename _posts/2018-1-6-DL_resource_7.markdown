@@ -272,4 +272,9 @@ https://zhuanlan.zhihu.com/p/33445638
 
 传统不死：在CNN中学习和构建空间传播模块
 
+https://mp.weixin.qq.com/s/uxawHWsVXMNOTLNthAL0vg
+
+时空图卷积网络：港中文提出基于动态骨骼的行为识别新方案
+
+
 

@@ -1,8 +1,80 @@
 ---
 layout: post
-title:  深度学习（六）——神经元激活函数进阶, DRN, Bi-directional RNN, Attention
+title:  深度学习（六）——神经元激活函数进阶, DRN, Bi-directional RNN
 category: DL 
 ---
+
+# LSTM（续）
+
+## 参考
+
+http://www.csdn.net/article/2015-06-05/2824880
+
+深入浅出LSTM神经网络
+
+https://zhuanlan.zhihu.com/p/25821063
+
+循环神经网络——scan实现LSTM
+
+http://blog.csdn.net/a635661820/article/details/45390671
+
+LSTM简介以及数学推导(FULL BPTT)
+
+http://blog.csdn.net/dark_scope/article/details/47056361
+
+RNN以及LSTM的介绍和公式梳理
+
+https://mp.weixin.qq.com/s/x3y9WTuVFYQb60eJvw02HQ
+
+如何解决LSTM循环神经网络中的超长序列问题
+
+https://mp.weixin.qq.com/s/IhCfoabRrtjvQBIQMaPpNQ
+
+从任务到可视化，如何理解LSTM网络中的神经元
+
+https://mp.weixin.qq.com/s/GGpaFZ0crP_NQ564d79hFw
+
+LSTM、GRU与神经图灵机：详解深度学习最热门的循环神经网络
+
+https://mp.weixin.qq.com/s/0bBTVjkfAK2EzQiaFcUjBA
+
+LSTM入门必读：从基础知识到工作方式详解
+
+https://mp.weixin.qq.com/s/jcS4IX7LKCt1E2FVzLWzDw
+
+LSTM入门详解
+
+https://mp.weixin.qq.com/s/MQR7c57NL4b5i4MRA2JgWA
+
+用Python实现CNN长短期记忆网络！
+
+http://mp.weixin.qq.com/s/V2-grLPdZ66FOiC2duc-EA
+
+如何判断LSTM模型中的过拟合与欠拟合
+
+http://blog.csdn.net/malefactor/article/details/51183989
+
+深度学习计算模型中“门函数（Gating Function）”的作用
+
+https://mp.weixin.qq.com/s/ORLpqqV8pOv-pIagi8yS1A
+
+在调用API之前，你需要理解的LSTM工作原理
+
+https://mp.weixin.qq.com/s/BzlFbweHEJ3z7dSIGmd-QA
+
+深度学习基础之LSTM
+
+https://mp.weixin.qq.com/s/lbHTDdzPbYn2Ln4aihGujQ
+
+人人都能看懂的LSTM
+
+https://mp.weixin.qq.com/s/LI6TsPjzIaa8DxDu3UaV1A
+
+门控循环单元（GRU）的基本概念与原理
+
+https://mp.weixin.qq.com/s/LcdmXgAFpiIoHMIIXECC9g
+
+人人都能看懂的GRU
 
 # 神经元激活函数进阶
 
@@ -234,26 +306,5 @@ https://mp.weixin.qq.com/s/Kgwwq5XOt88WW6KL8gADmQ
 https://mp.weixin.qq.com/s/_CENjzEK1kjsFpvX0H5gpQ
 
 结合堆叠与深度转换的新型神经翻译架构：爱丁堡大学提出BiDeep RNN
-
-# Attention
-
-倒序句子这种方法属于“hack”手段。它属于被实践证明有效的方法，而不是有理论依据的解决方法。
-
-大多数翻译的基准都是用法语、德语等语种，它们和英语非常相似（即使汉语的词序与英语也极其相似）。但是有些语种（像日语）句子的最后一个词语在英语译文中对第一个词语有高度预言性。那么，倒序输入将使得结果更糟糕。
-
-还有其它办法吗？那就是Attention机制。
-
-![](/images/article/attention.png)
-
-上图是Attention机制的结构图。y是编码器生成的译文词语，x是原文的词语。上图使用了双向递归网络，但这并不是重点，你先忽略反向的路径吧。重点在于现在每个解码器输出的词语$$y_t$$取决于所有输入状态的一个权重组合，而不只是最后一个状态。a是决定每个输入状态对输出状态的权重贡献。因此，如果$$a_{3,2}$$的值很大，这意味着解码器在生成译文的第三个词语时，会更关注于原文句子的第二个状态。a求和的结果通常归一化到1（因此它是输入状态的一个分布）。
-
-Attention机制的一个主要优势是它让我们能够解释并可视化整个模型。举个例子，通过对attention权重矩阵a的可视化，我们能够理解模型翻译的过程。
-
-![](/images/article/attention_2.png)
-
-我们注意到当从法语译为英语时，网络模型顺序地关注每个输入状态，但有时输出一个词语时会关注两个原文的词语，比如将“la Syrie”翻译为“Syria”。
-
-如果再仔细观察attention的等式，我们会发现attention机制有一定的成本。我们需要为每个输入输出组合分别计算attention值。50个单词的输入序列和50个单词的输出序列需要计算2500个attention值。这还不算太糟糕，但如果你做字符级别的计算，而且字符序列长达几百个字符，那么attention机制将会变得代价昂贵。
-
 
 

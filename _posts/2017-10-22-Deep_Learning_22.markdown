@@ -4,7 +4,19 @@ title:  深度学习（二十二）——VESPCN, SRGAN, DemosaicNet, SVDF, LCNN
 category: DL 
 ---
 
-# VESPCN（续）
+# VESPCN
+
+看名字就知道，VESPCN（Video ESPCN）仍然是ESPCN原班人马Wenzhe Shi和Jose Caballero作品。
+
+论文：
+
+《Real-Time Video Super-Resolution with Spatio-Temporal Networks and Motion Compensation》
+
+在视频图像的SR问题中，相邻几帧具有很强的关联性，上述几种方法都只在单幅图像上进行处理，而VESPCN提出使用视频中的时间序列图像进行高分辨率重建，并且能达到实时处理的效率要求。其方法示意图如下，主要包括三个方面： 
+
+![](/images/img2/VESPCN.png)
+
+一是纠正相邻帧的位移偏差，即先通过Motion estimation估计出位移，然后利用位移参数对相邻帧进行空间变换，将二者对齐。二是把对齐后的相邻若干帧叠放在一起，当做一个三维数据，在低分辨率的三维数据上使用三维卷积，得到的结果大小为$$r^2\times H\times W$$。三是利用ESPCN的思想将该卷积结果重新排列得到大小为$$1\times rH\times rW$$的高分辨率图像。
 
 Motion estimation这个过程可以通过传统的光流算法来计算，DeepMind提出了一个Spatial Transformer Networks, 通过CNN来估计空间变换参数。VESPCN使用了这个方法，并且使用多尺度的Motion estimation：先在比输入图像低的分辨率上得到一个初始变换，再在与输入图像相同的分辨率上得到更精确的结果，如下图所示：
 

@@ -58,6 +58,10 @@ Long-term Recurrent Convolutional Networks是LSTM的一种应用方式，它结�
 
 该论文是Deepmind的作品，它提出的ByteNet，计算复杂度为线性，也是LSTM的优化方案之一。
 
+## 《Long Short-Term Memory Based Recurrent Neural Network Architectures for Large Vocabulary Speech Recognition》
+
+
+
 ## 参考
 
 https://mp.weixin.qq.com/s/4IHzOAvNhHG9c8GP0zXVkQ
@@ -75,6 +79,10 @@ LSTM文本分类实战
 http://mp.weixin.qq.com/s/3nwgft9c27ih172ANwHzvg
 
 从零开始：如何使用LSTM预测汇率变化趋势
+
+http://blog.csdn.net/xmdxcsj/article/details/53326109
+
+模型压缩lstmp
 
 # 语音识别
 

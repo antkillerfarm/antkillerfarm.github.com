@@ -118,6 +118,10 @@ https://mp.weixin.qq.com/s/mwu1tsejwrCEelio9D0kWw
 
 高盛区块链报告：从理论到实践
 
+https://mp.weixin.qq.com/s/iWuEibC4r20PuyxTBQducQ
+
+老矿工的区块链5000字终极指南
+
 # CPU
 
 https://zhuanlan.zhihu.com/p/29743431

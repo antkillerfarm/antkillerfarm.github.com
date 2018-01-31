@@ -78,9 +78,21 @@ https://github.com/HyeonwooNoh/DeconvNet
 
 从上图可见，DeconvNet和SegNet的结构非常类似，只不过DeconvNet在encoder和decoder之间使用了FC层作为中继。
 
-这样的encoder-decoder对称结构也被称为U-Net（因为它们的形状像U字形）：
+类似这样的encoder-decoder对称结构的还有U-Net（因为它们的形状像U字形）：
 
 ![](/images/article/U_Net.jpg)
+
+论文：
+
+《U-Net: Convolutional Networks for Biomedical Image Segmentation》
+
+官网：
+
+https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/
+
+>Olaf Ronneberger，弗莱堡大学教授，DeepMind研究员。
+
+U-Net使用center crop和concat操作实现了不同层次特征的upsample，这和后面介绍的DenseNet十分类似。
 
 参考：
 
@@ -287,7 +299,5 @@ DenseNet的想法很大程度上源于我们去年发表在ECCV上的一个叫�
 >首先，它说明了神经网络其实并不一定要是一个递进层级结构，也就是说网络中的某一层可以不仅仅依赖于紧邻的上一层的特征，而可以依赖于更前面层学习的特征。想像一下在随机深度网络中，当第l层被扔掉之后，第l+1层就被直接连到了第l-1层；当第2到了第l层都被扔掉之后，第l+1层就直接用到了第1层的特征。因此，随机深度网络其实可以看成一个具有随机密集连接的DenseNet。
 
 >其次，我们在训练的过程中随机扔掉很多层也不会破坏算法的收敛，说明了ResNet具有比较明显的冗余性，网络中的每一层都只提取了很少的特征（即所谓的残差）。实际上，我们将训练好的ResNet随机的去掉几层，对网络的预测结果也不会产生太大的影响。既然每一层学习的特征这么少，能不能降低它的计算量来减小冗余呢？
-
-DenseNet 的设计正是基于以上两点观察。我们让网络中的每一层都直接与其前面层相连，实现特征的重复利用；同时把网络的每一层设计得特别「窄」，即只学习非常少的特征图（最极端情况就是每一层只学习一个特征图），达到降低冗余性的目的。这两点也是DenseNet与其他网络最主要的不同。需要强调的是，第一点是第二点的前提，没有密集连接，我们是不可能把网络设计得太窄的，否则训练会出现欠拟合（under-fitting）现象，即使 ResNet 也是如此。
 
 

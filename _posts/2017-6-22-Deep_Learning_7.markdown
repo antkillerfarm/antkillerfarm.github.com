@@ -1,10 +1,28 @@
 ---
 layout: post
-title:  深度学习（七）——seq2seq, DMN, CNN进化史
+title:  深度学习（七）——Attention, seq2seq, DMN, CNN进化史
 category: DL 
 ---
 
-# Attention（续）
+# Attention
+
+倒序句子这种方法属于“hack”手段。它属于被实践证明有效的方法，而不是有理论依据的解决方法。
+
+大多数翻译的基准都是用法语、德语等语种，它们和英语非常相似（即使汉语的词序与英语也极其相似）。但是有些语种（像日语）句子的最后一个词语在英语译文中对第一个词语有高度预言性。那么，倒序输入将使得结果更糟糕。
+
+还有其它办法吗？那就是Attention机制。
+
+![](/images/article/attention.png)
+
+上图是Attention机制的结构图。y是编码器生成的译文词语，x是原文的词语。上图使用了双向递归网络，但这并不是重点，你先忽略反向的路径吧。重点在于现在每个解码器输出的词语$$y_t$$取决于所有输入状态的一个权重组合，而不只是最后一个状态。a是决定每个输入状态对输出状态的权重贡献。因此，如果$$a_{3,2}$$的值很大，这意味着解码器在生成译文的第三个词语时，会更关注于原文句子的第二个状态。a求和的结果通常归一化到1（因此它是输入状态的一个分布）。
+
+Attention机制的一个主要优势是它让我们能够解释并可视化整个模型。举个例子，通过对attention权重矩阵a的可视化，我们能够理解模型翻译的过程。
+
+![](/images/article/attention_2.png)
+
+我们注意到当从法语译为英语时，网络模型顺序地关注每个输入状态，但有时输出一个词语时会关注两个原文的词语，比如将“la Syrie”翻译为“Syria”。
+
+如果再仔细观察attention的等式，我们会发现attention机制有一定的成本。我们需要为每个输入输出组合分别计算attention值。50个单词的输入序列和50个单词的输出序列需要计算2500个attention值。这还不算太糟糕，但如果你做字符级别的计算，而且字符序列长达几百个字符，那么attention机制将会变得代价昂贵。
 
 attention机制解决的根本问题是允许网络返回到输入序列，而不是把所有信息编码成固定长度的向量。正如我在上面提到，我认为使用attention有点儿用词不当。换句话说，attention机制只是简单地让网络模型访问它的内部存储器，也就是编码器的隐藏状态。在这种解释中，网络选择从记忆中检索东西，而不是选择“注意”什么。不同于典型的内存，这里的内存访问机制是弹性的，也就是说模型检索到的是所有内存位置的加权组合，而不是某个独立离散位置的值。弹性的内存访问机制好处在于我们可以很容易地用反向传播算法端到端地训练网络模型（虽然有non-fuzzy的方法，其中的梯度使用抽样方法计算，而不是反向传播）。
 
@@ -265,67 +283,5 @@ AlexNet的caffe模板：
 https://github.com/BVLC/caffe/blob/master/models/bvlc_alexnet/deploy.prototxt
 
 其中的LRN（Local Response Normalization）层也是当年的遗迹，被后来的实践证明，对于最终效果和运算量没有太大帮助，因此也就慢慢废弃了。
-
-虽然，LeNet-5是CNN的开山之作（它不是最早的CNN，但却是奠定了现代CNN理论基础的模型），但是毕竟年代久远，和现代实用的CNN相比，结构实在过于原始。
-
-AlexNet作为第一个现代意义上的CNN，它的意义主要包括：
-
-1.Data Augmentation。包括水平翻转、随机裁剪、平移变换、颜色、光照变换等。
-
-2.Dropout。
-
-3.ReLU激活函数。
-
-4.多GPU并行计算。
-
-5.当然最应该感谢的是李飞飞团队搞出来的标注数据集合ImageNet。
-
->注：ILSVRC（Large Scale Visual Recognition Challenge）大赛，在2016年以前，一直是CV界的顶级赛事。但随着技术的成熟，目前的科研重点已经从物体识别转移到了物体理解领域。2017年将是该赛事的最后一届。WebVision有望接替该赛事，成为下一个目标。
-
-## VGG
-
-Visual Geometry Group是牛津大学的一个科研团队。他们推出的一系列深度模型，被称作VGG模型。
-
-代码：
-
-http://www.robots.ox.ac.uk/~vgg/research/very_deep/
-
-VGG的结构图如下：
-
-![](/images/article/vgg.png)
-
-该系列包括A/A-LRN/B/C/D/E等6个不同的型号。其中的D/E，根据其神经网络的层数，也被称为VGG16/VGG19。
-
-从原理角度，VGG相比AlexNet并没有太多的改进。其最主要的意义就是实践了“**神经网络越深越好**”的理念。也是自那时起，神经网络逐渐有了“深度学习”这个别名。
-
-## GoogleNet
-
-GoogleNet的进化道路和VGG有所不同。VGG实际上就是“大力出奇迹”的暴力模型，其他地方不足称道。
-
-而GoogleNet不仅继承了VGG“越深越好”的理念，对于网络结构本身也作了大胆的创新。可以对比的是，AlexNet有60M个参数，而GoogleNet只有4M个参数。
-
-因此，在ILSVRC 2014大赛中，GoogleNet获得第一名，而VGG屈居第二。
-
-![](/images/article/GoogleNet.jpg)
-
-上图是GoogleNet的结构图。从中可以看出，GoogleNet除了AlexNet的基本要素之外，还有被称作Inception的结构。
-
-![](/images/article/inception.png)
-
-上图是Inception的结构图。它的原理实际上就是**将不同尺寸的卷积组合起来，以提供不同尺寸的特征**。
-
-原始的GoogleNet也被称作Inception-v1。在后面的几年，GoogleNet还提出了几种改进的版本，最新的一个是Inception-v4（2016.8）。
-
-论文：
-
-《Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning》
-
-代码：
-
-https://github.com/BVLC/caffe/tree/master/models/bvlc_googlenet
-
-Inception系列的改进方向基本都集中在构建不同的Inception模型上。
-
-GoogleNet的另一个改进是**减少了全连接层**（Full Connection, FC），这是减少模型参数的一个重要改进。事实上，在稍后的实践中，人们发现去掉VGG的第一个FC层，对于效果几乎没有任何影响。
 
 

@@ -4,7 +4,11 @@ title:  深度学习（二十）——Fast Image Processing, 图像超分辨率�
 category: DL 
 ---
 
-## DenseNet（续）
+## DenseNet
+
+### DenseNet的设计思想（续）
+
+DenseNet 的设计正是基于以上两点观察。我们让网络中的每一层都直接与其前面层相连，实现特征的重复利用；同时把网络的每一层设计得特别「窄」，即只学习非常少的特征图（最极端情况就是每一层只学习一个特征图），达到降低冗余性的目的。这两点也是DenseNet与其他网络最主要的不同。需要强调的是，第一点是第二点的前提，没有密集连接，我们是不可能把网络设计得太窄的，否则训练会出现欠拟合（under-fitting）现象，即使 ResNet 也是如此。
 
 ### DenseNet的优点
 
@@ -201,43 +205,4 @@ ML时代的代表算法还有：
 >http://yima.csl.illinois.edu/
 
 这篇论文提出的算法，在形式上和后文这些DL算法已经非常类似了，也是基于HR和LR配对的有监督训练。区别只在于这篇论文使用矩阵的稀疏表示来拟合SR函数，而DL算法使用神经网络拟合SR函数。前者是线性变换，而后者是非线性变换。
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/25532538
-
-深度学习在图像超分辨率重建中的应用
-
-https://zhuanlan.zhihu.com/p/25201511
-
-深度对抗学习在图像分割和超分辨率中的应用
-
-https://mp.weixin.qq.com/s/uK0L5RV0bB2Jnr5WCZasfw
-
-深度学习在单图像超分辨率上的应用：SRCNN、Perceptual loss、SRResNet
-
-https://mp.weixin.qq.com/s/KxQ-GRnEYEdmS2H-DHIHOg
-
-南京理工大学ICCV 2017论文：图像超分辨率模型MemNet
-
-https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
-
-NTIRE2017夺冠论文：用于单一图像超分辨率的增强型深度残差网络
-
-https://www.zhihu.com/question/25401250
-
-如何通过多帧影像进行超分辨率重构？
-
-https://www.zhihu.com/question/38637977
-
-超分辨率重建还有什么可以研究的吗？
-
-https://zhuanlan.zhihu.com/p/25912465
-
-胎儿MRI高分辨率重建技术：现状与趋势
-
-https://mp.weixin.qq.com/s/i-im1sy6MNWP1Fmi5oWMZg
-
-华为推出新型HiSR：移动端的超分辨率算法
-
 

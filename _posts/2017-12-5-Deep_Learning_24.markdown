@@ -93,6 +93,10 @@ $$p(Y|X)=\sum_{A\in A_{X,Y}}\prod_{t=1}^Tp_t(a_t|X)$$
 
 这里的模型通常使用一个RNN来估计每个time step的概率，但是也可以自由使用任何学习算法，在给定一个固定尺寸输入片段的情况下产生一个输出类别的分布。
 
+在实际训练中，针对训练集$$\mathcal{D}$$，一般采用最小化log-likelihood的方式计算CTC loss：
+
+$$\sum_{(X,Y)\in \mathcal{D}}-\log p(Y|X)$$
+
 采用穷举法计算上述目标函数，计算量是非常巨大的。我们可以使用动态规划算法更快的计算loss。关键点是，如果两个对齐在同一步已经达到了相同的输出，可以合并它们。如下图所示：
 
 ![](/images/img2/CTC_3.png)
@@ -117,7 +121,9 @@ $$Z=[\epsilon,y_1,\epsilon,y_2,\dots,\epsilon,y_U,\epsilon]$$
 
 ![](/images/img2/CTC_6.png)
 
-这种情况下，$$\alpha$$的计算公式如下：
+上图表示的是语音在两个相同token之间切换的情况。（这种情况也就是上面提到的hello例子中，语音在两个l之间过渡的情况。）
+
+在这种情况下，$$\alpha$$的计算公式如下：
 
 $$\alpha_{s,t}=(\alpha_{s-1,t-1}+\alpha_{s,t-1})\cdot p_t(Z_s | X)$$
 
@@ -125,7 +131,9 @@ $$\alpha_{s,t}=(\alpha_{s-1,t-1}+\alpha_{s,t-1})\cdot p_t(Z_s | X)$$
 
 ![](/images/img2/CTC_7.png)
 
-这种情况下，$$\alpha$$的计算公式如下：
+上图表示的是语音在两个不同token之间切换的情况。
+
+在这种情况下，$$\alpha$$的计算公式如下：
 
 $$\alpha_{s,t}=(\alpha_{s-2,t-1}+\alpha_{s-1,t-1}+\alpha_{s,t-1})\cdot p_t(Z_s | X)$$
 

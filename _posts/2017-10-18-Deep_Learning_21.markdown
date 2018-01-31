@@ -4,6 +4,46 @@ title:  深度学习（二十一）——SRCNN, DRCN, VDSR, ESPCN, FSRCNN
 category: DL 
 ---
 
+# 图像超分辨率算法（续）
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/25532538
+
+深度学习在图像超分辨率重建中的应用
+
+https://zhuanlan.zhihu.com/p/25201511
+
+深度对抗学习在图像分割和超分辨率中的应用
+
+https://mp.weixin.qq.com/s/uK0L5RV0bB2Jnr5WCZasfw
+
+深度学习在单图像超分辨率上的应用：SRCNN、Perceptual loss、SRResNet
+
+https://mp.weixin.qq.com/s/KxQ-GRnEYEdmS2H-DHIHOg
+
+南京理工大学ICCV 2017论文：图像超分辨率模型MemNet
+
+https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
+
+NTIRE2017夺冠论文：用于单一图像超分辨率的增强型深度残差网络
+
+https://www.zhihu.com/question/25401250
+
+如何通过多帧影像进行超分辨率重构？
+
+https://www.zhihu.com/question/38637977
+
+超分辨率重建还有什么可以研究的吗？
+
+https://zhuanlan.zhihu.com/p/25912465
+
+胎儿MRI高分辨率重建技术：现状与趋势
+
+https://mp.weixin.qq.com/s/i-im1sy6MNWP1Fmi5oWMZg
+
+华为推出新型HiSR：移动端的超分辨率算法
+
 # SRCNN
 
 SRCNN（Super-Resolution CNN）是汤晓鸥小组的Chao Dong的作品。
@@ -203,18 +243,5 @@ http://blog.csdn.net/zuolunqiang/article/details/52411673
 
 super-resolution技术日记——FSRCNN
 
-# VESPCN
-
-看名字就知道，VESPCN（Video ESPCN）仍然是ESPCN原班人马Wenzhe Shi和Jose Caballero作品。
-
-论文：
-
-《Real-Time Video Super-Resolution with Spatio-Temporal Networks and Motion Compensation》
-
-在视频图像的SR问题中，相邻几帧具有很强的关联性，上述几种方法都只在单幅图像上进行处理，而VESPCN提出使用视频中的时间序列图像进行高分辨率重建，并且能达到实时处理的效率要求。其方法示意图如下，主要包括三个方面： 
-
-![](/images/img2/VESPCN.png)
-
-一是纠正相邻帧的位移偏差，即先通过Motion estimation估计出位移，然后利用位移参数对相邻帧进行空间变换，将二者对齐。二是把对齐后的相邻若干帧叠放在一起，当做一个三维数据，在低分辨率的三维数据上使用三维卷积，得到的结果大小为$$r^2\times H\times W$$。三是利用ESPCN的思想将该卷积结果重新排列得到大小为$$1\times rH\times rW$$的高分辨率图像。
 
 
