@@ -55,6 +55,8 @@ https://github.com/exacity/deeplearningbook-chinese
 
 《Deep Learning With Python》，Keras的作者Francois Chollet著。偏重于DL实战。
 
+此外，Stanford、CMU、UCB等名校也有大量[相关课程](/resource/2018/01/24/course.html)。
+
 其他参考文献将在各相关部分列出。
 
 Deep Learning圈子的主要人物：

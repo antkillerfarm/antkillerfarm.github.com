@@ -392,6 +392,10 @@ https://mp.weixin.qq.com/s/QsgoONKwI7ds8Hnx2Wer6A
 
 Linux从程序到进程
 
+https://mp.weixin.qq.com/s/tguC-WOleKRWLfTmGdJlQg
+
+Linux文件系统的实现
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

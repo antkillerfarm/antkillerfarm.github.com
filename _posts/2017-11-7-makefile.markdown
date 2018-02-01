@@ -158,7 +158,7 @@ https://bazel.build/
 
 文档：
 
-https://docs.bazel.build/versions/master/bazel-user-manual.html
+https://docs.bazel.build/versions/master/bazel-overview.html
 
 下载：
 
@@ -199,6 +199,12 @@ https://msdn.microsoft.com/en-us/library/dd393574.aspx
 http://www.cnblogs.com/linianhui/archive/2012/08/30/2662648.html
 
 MSBuild入门
+
+## OkBuck
+
+OkBuck是Uber推出的构建工具。官网：
+
+https://github.com/uber/okbuck
 
 # Flume & Kafka
 

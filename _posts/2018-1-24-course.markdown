@@ -44,6 +44,10 @@ http://openclassroom.stanford.edu/MainFolder/VideoPage.php?course=MachineLearnin
 
 Andrew Ng的公开课视频。
 
+https://web.stanford.edu/class/cs230/syllabus.html
+
+CS230: Deep Learning。吴恩达2018年开的新课
+
 http://www.cc.gatech.edu/~lsong/teaching/
 
 佐治亚理工学院宋乐副教授的课件库。

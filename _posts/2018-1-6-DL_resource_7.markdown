@@ -280,3 +280,8 @@ https://mp.weixin.qq.com/s/4LjWHFO0wTP7kqnKf2mdWw
 
 林倞：Beyond Supervised Deep Learning--后深度学习时代的挑战
 
+https://zhuanlan.zhihu.com/p/33485388
+
+mixup与paring samples ，ICLR2018投稿论文的数据增广两种方式
+
+

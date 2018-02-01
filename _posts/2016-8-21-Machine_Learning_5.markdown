@@ -67,6 +67,12 @@ $$K(x,z)=\exp\left(-\frac{\|x-z\|^2}{2\sigma^2}\right)$$
 
 ![](/images/article/SVM_5.png)
 
+参考：
+
+https://mp.weixin.qq.com/s/e-dGnE4Egepmp1OOaOJoNQ
+
+例子通俗解释机器学习中核函数的定义和作用
+
 ## 核函数的有效性
 
 如果对于给定的核函数K，存在一个特征映射$$\phi$$，使得$$K(x,z)=\phi(x)^T\phi(z)$$，则称K为有效核函数。

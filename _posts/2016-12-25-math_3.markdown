@@ -136,6 +136,10 @@ https://mp.weixin.qq.com/s/TQfaBddaDh_jIhcaKJFx7w
 
 概率论之概念解析：用贝叶斯推断进行参数估计
 
+https://mp.weixin.qq.com/s/i4G2k5yZZV_Q8U4T30XX2A
+
+概率论之概念解析：边缘化（Marginalisation）
+
 # PID算法
 
 PID算法是自动控制领域最基础应用也最广泛的算法。它是三个单词proportional（P，比例）、integral（I，积分）和differential（D，微分）的缩写。

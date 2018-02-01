@@ -6,61 +6,38 @@ category: DL
 
 # LSTM进阶
 
-## 《Long short-term memory》
+## 《Long Short-Term Memory Based Recurrent Neural Network Architectures for Large Vocabulary Speech Recognition》（续）
 
-这是最早提出LSTM这个概念的论文。这篇论文偏重数学推导，实话说不太适合入门之用。但既然是起点，还是有列出来的必要。
+LSTMP的结构图如下：
 
-## 《LSTM Neural Networks for Language Modeling》
+![](/images/img2/LSTMP.png)
 
-这也是一篇重要的论文。
+改写成数学公式就是：
 
-## 《Sequence to Sequence - Video to Text》
+$$
+i_t=\delta(W_{ix}x_t+W_{im}r_{t-1}+W_{ic}c_{t-1}+b_i)\\
+f_t=\delta(W_{fx}x_t+W_{fm}r_{t-1}+W_{fc}c_{t-1}+b_i)\\
+c_t=f_t\odot c_{t-1}+i_t\odot g(W_{cx}x_t+W_{cm}r_{t-1}+b_c)\\
+o_t=\delta(W_{ox}x_t+W_{om}r_{t-1}+W_{oc}c_{t}+b_o)\\
+m_t=o_t\odot h(c_t)\\
+r_t = W_{rm}m_t\\
+p_t = W_{pm}m_t\\
+y_t = W_{yr}r_t + W_{yp}p_t + b_y
+$$
 
-https://vsubhashini.github.io/s2vt.html
+LSTMP的主要思想是对$$m_t$$做一个映射，只有部分数据$$r_t$$参与recurrent运算，其余部分$$p_t$$直接输出即可（这一步是可选项，所以用虚框表示）。
 
-![](/images/article/S2VTarchitecture.png)
+这样W的参数量为：
 
-## 《Long-term Recurrent Convolutional Networks for Visual Recognition and Description》
+$$W=\color{blue}{n_c\times n_r\times 4}+n_i\times n_c\times 4+\color{red}{n_r\times n_o+n_c\times n_r}+n_c\times 3$$
 
-Long-term Recurrent Convolutional Networks是LSTM的一种应用方式，它结合了LSTM、CNN、CRF等不同网络组件。
+参数量公式用蓝色和红色标出修改前后对应的部分，可以看出计算量有了明显下降。
 
-![](/images/article/LSTM_X.png)
+参考：
 
-上图展示了LSTM在动作识别、图片和视频描述等任务中的网络结构。
+http://blog.csdn.net/xmdxcsj/article/details/53326109
 
-![](/images/article/LSTM_X_2.png)
-
-上图展示了图片描述任务中几种不同的网络连接方式：
-
-1.单层LRCN。
-
-2.双层LRCN。CNN连接在第一个LSTM层。传统的LSTM只有一个输入，这里的CNN是第二个输入，也就是所谓的静态输入。可参看caffe的LSTM实现。
-
-2.双层LRCN。CNN连接在第二个LSTM层。
-
-![](/images/article/LSTM_X_3.png)
-
-![](/images/article/LSTM_X_4.png)
-
-![](/images/article/LSTM_X_5.png)
-
-这是视频描述任务中LSTM和CRF结合的示例。
-
-## 《Training RNNs as Fast as CNNs》
-
-这篇论文提出了如下图所示的Simple Recurrent Unit的新结构：
-
-![](/images/article/SRU.jpg)
-
-由于普通LSTM计算步骤中，很多当前时刻的计算都依赖$$h_{t-1}$$的值，导致整个网络的计算无法并行化。SRU针对这一点去掉了当前时刻计算对于$$h_{t-1}$$的依赖，而仅保留$$C_{t-1}$$（这个计算较为廉价）以记忆信息，大大改善了整个RNN网络计算的并行性。
-
-## 《Neural Machine Translation in Linear Time》
-
-该论文是Deepmind的作品，它提出的ByteNet，计算复杂度为线性，也是LSTM的优化方案之一。
-
-## 《Long Short-Term Memory Based Recurrent Neural Network Architectures for Large Vocabulary Speech Recognition》
-
-
+模型压缩lstmp
 
 ## 参考
 
@@ -79,10 +56,6 @@ LSTM文本分类实战
 http://mp.weixin.qq.com/s/3nwgft9c27ih172ANwHzvg
 
 从零开始：如何使用LSTM预测汇率变化趋势
-
-http://blog.csdn.net/xmdxcsj/article/details/53326109
-
-模型压缩lstmp
 
 # 语音识别
 
