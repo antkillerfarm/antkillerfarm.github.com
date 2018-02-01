@@ -246,6 +246,10 @@ http://mp.weixin.qq.com/s/kDoogc5yIeX6D4_YWC5YQA
 
 后RCNN时代的物体检测及实例分割进展
 
+https://mp.weixin.qq.com/s/rUMAaIJ14eEXbRmssnUK4w
+
+基于区域的目标检测——细粒度 
+
 # RCNN
 
 《深度学习（五）》中提到的AlexNet、VGG、GoogleNet主要用于图片分类。而这里介绍的RCNN(Regions with CNN)主要用于目标检测。

@@ -272,4 +272,12 @@ https://mp.weixin.qq.com/s/vUK2NneOs8OR0vcJEZNbrA
 
 田渊栋等人论文：何时卷积滤波器容易学习？
 
+https://mp.weixin.qq.com/s/HP8KLbo26W5UscCGavKDRw
+
+IBM Watson提出人机推理网络HuMaINs，结合人机两者优势
+
+https://mp.weixin.qq.com/s/fPj4wMtiFX55c_UjNsQnBg
+
+PointCNN全面刷新测试记录：山东大学提出通用点云卷积框架
+
 

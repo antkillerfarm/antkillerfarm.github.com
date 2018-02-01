@@ -262,3 +262,8 @@ http://mp.weixin.qq.com/s/uLVRxLHIq8zfoskC_TtbxQ
 
 携程软件SBC实践
 
+https://mp.weixin.qq.com/s/bpdCwZbkHKmDJcHRhLsygA
+
+图床上传系统设计分析
+
+

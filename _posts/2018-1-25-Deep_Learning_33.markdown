@@ -1,10 +1,20 @@
 ---
 layout: post
-title:  深度学习（三十二）——Capsule, AlphaGo
+title:  深度学习（三十三）——Capsule, AlphaGo
 category: DL 
 ---
 
 # Capsule
+
+官方代码：
+
+https://github.com/Sarasra/models/tree/master/research/capsules
+
+参考：
+
+https://mp.weixin.qq.com/s/p_92_arJBHX6nPCY1wF5cg
+
+Hinton胶囊网络代码正式开源
 
 https://mp.weixin.qq.com/s/Tx9JJ0cIo_rH7BDjd_hkvw
 

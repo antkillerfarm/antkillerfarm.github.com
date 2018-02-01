@@ -214,6 +214,10 @@ http://www.jianshu.com/p/f9ca56d6407d
 
 深度学习在股票市场的应用
 
+https://www.jianshu.com/p/31ab3e3e1d6e
+
+论文阅读：An Artificial Neural Network-based Stock Trading System Using Technical Analysis and Big Data Framework
+
 https://mp.weixin.qq.com/s/O39cedZPRpqRjDHb98sopQ
 
 当你增加神经网络的层数时会发生什么？
