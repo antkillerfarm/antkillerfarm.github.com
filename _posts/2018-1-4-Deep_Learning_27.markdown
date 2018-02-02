@@ -112,7 +112,11 @@ https://www.zhihu.com/question/67477086
 
 https://mp.weixin.qq.com/s/MkXBtGq4xt5YOh1-uhMBbg
 
-循环神经网络自动生成程序：谷歌大脑提出「优先级队列训练」
+循环神经网络自动生成程序：谷歌大脑提出“优先级队列训练”
+
+https://mp.weixin.qq.com/s/D0HngY-U7_fP4vqDIjvaew
+
+自动选模型+调参：谷歌AutoML背后的技术解析
 
 # 行人重识别
 

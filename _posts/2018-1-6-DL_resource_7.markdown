@@ -284,4 +284,16 @@ https://zhuanlan.zhihu.com/p/33485388
 
 mixup与paring samples ，ICLR2018投稿论文的数据增广两种方式
 
+https://zhuanlan.zhihu.com/p/33177237
+
+在Movidius计算棒上利用深度学习鉴黄
+
+https://mp.weixin.qq.com/s/mjdW7xY77H03RIKuKuFmQg
+
+人脸画像合成研究的综述与对比分析
+
+https://mp.weixin.qq.com/s/mvbyddpgxBFQSxC1zZZmFw
+
+如何通过距离度量学习解决Street-to-Shop问题
+
 

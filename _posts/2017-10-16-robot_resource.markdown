@@ -66,6 +66,20 @@ https://github.com/raulmur/ORB_SLAM2
 
 Real-Time SLAM for Monocular, Stereo and RGB-D Cameras, with Loop Detection and Relocalization Capabilities
 
+## OpenDRIVE
+
+OpenDRIVE是一种用于导航和自动驾驶的数据格式。
+
+官网：
+
+http://opendrive.org/
+
+参考：
+
+http://blog.csdn.net/lewif/article/details/78575840
+
+OpenDrive格式地图数据解析
+
 ## 文章
 
 http://blog.exbot.net/
@@ -257,6 +271,5 @@ Apollo高精地图技术与应用
 https://mp.weixin.qq.com/s/qtoHF4Mnj_aeGBJbkjJUMA
 
 Apollo小度车载系统
-
 
 

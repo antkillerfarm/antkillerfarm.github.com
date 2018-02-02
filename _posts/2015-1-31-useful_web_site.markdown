@@ -396,6 +396,10 @@ https://mp.weixin.qq.com/s/tguC-WOleKRWLfTmGdJlQg
 
 Linux文件系统的实现
 
+http://www.ywnds.com/?p=12325
+
+Shell版俄罗斯方块
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

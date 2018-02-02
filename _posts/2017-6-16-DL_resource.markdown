@@ -338,6 +338,10 @@ https://mp.weixin.qq.com/s/n-vnekQfns6_a6f7InhMpA
 
 最优解的平坦度与鲁棒性，我们该如何度量模型的泛化能力
 
+https://mp.weixin.qq.com/s/J75ZdrNCSwBO1y9o84THQg
+
+综述论文：机器学习中的模型评价、模型选择与算法选择
+
 ## 算法
 
 http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww

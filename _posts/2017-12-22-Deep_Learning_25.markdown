@@ -144,6 +144,10 @@ https://mp.weixin.qq.com/s/FBzd0x4_A9z-r0f3ZKFGuw
 
 携程个性化推荐算法实践
 
+https://mp.weixin.qq.com/s/Q01jy2RtbpBBHGtvtfhEGA
+
+当机器学习遇到推荐系统，悉尼科技大学Liang Hu博士最新分享
+
 # 模型压缩
 
 对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。
