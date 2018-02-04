@@ -34,7 +34,7 @@ $$\nabla U=\frac{\partial E}{\partial U}=\sum_t\frac{\partial e_t}{\partial U} \
 
 Yoshua Bengio在论文《On the difficulty of training recurrent neural networks》（http://proceedings.mlr.press/v28/pascanu13.pdf）中，给出了如下公式：
 
-$$||\prod_{k<i\le t} \frac{\partial h_{i}}{\partial h_{i-1}}|| \le \eta^{t-k}$$
+$$\left\|\prod_{k<i\le t} \frac{\partial h_{i}}{\partial h_{i-1}}\right\| \le \eta^{t-k}$$
 
 并指出当$$\eta < 1$$时，RNN会Gradient Vanish，而当$$\eta > 1$$时，RNN会Gradient Explode。
 

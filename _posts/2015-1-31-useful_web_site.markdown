@@ -400,6 +400,10 @@ http://www.ywnds.com/?p=12325
 
 Shell版俄罗斯方块
 
+https://mp.weixin.qq.com/s/eEuNPtTaPwJ7hSghgeU32g
+
+Android Hook技术防范漫谈
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

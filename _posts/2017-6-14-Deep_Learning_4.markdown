@@ -146,6 +146,10 @@ https://mp.weixin.qq.com/s/aq_kWkwgwtz5qFo0lNEEqg
 
 Tomas Mikolov论文简评：从Word2Vec到FastText
 
+https://mp.weixin.qq.com/s/v1-mLhmbp5MoRR824tdPDw
+
+玩转词向量：用fastText预训练向量做个智能小程序
+
 ## Item2Vec
 
 本质上，word2vec模型是在word-context的co-occurrence矩阵基础上建立起来的。因此，任何基于co-occurrence矩阵的算法模型，都可以套用word2vec算法的思路加以改进。

@@ -45,7 +45,7 @@ CTC算法可以克服这些挑战。对于一个给定的X，它给我们一个�
 
 并不是所有的计算损失函数和执行推理的方法都是易于处理的。我们要求CTC可以有效地做到这两点。
 
-**损失函数**：对于给定的输入，我们希望训练模型来最大化分配到正确答案的概率。 为此，我们需要有效地计算条件概率$$p(Y \vert X)$$。 函数$$p(Y \vert X)$$也应该是可微的，可以使用梯度下降。
+**损失函数**：对于给定的输入，我们希望训练模型来最大化分配到正确答案的概率。 为此，我们需要有效地计算条件概率$$p(Y \mid X)$$。 函数$$p(Y \mid X)$$也应该是可微的，可以使用梯度下降。
 
 **推理**：在我们训练好模型后，我们希望使用它来推断给定X的最可能的Y。即：
 
@@ -81,7 +81,7 @@ CTC对齐有一些显著的特性：
 
 1.输入序列（如音频的频谱图）导入一个RNN模型。
 
-2.RNN给出每个time step所对应的音节的概率$$p_t(a \vert X)$$。上图中音节的颜色越深，其概率p越高。
+2.RNN给出每个time step所对应的音节的概率$$p_t(a \mid X)$$。上图中音节的颜色越深，其概率p越高。
 
 3.计算各种时序组合的概率，给出整个序列的概率。
 
@@ -89,13 +89,13 @@ CTC对齐有一些显著的特性：
 
 严格的说，一对(X,Y)的CTC目标函数是：
 
-$$p(Y|X)=\sum_{A\in A_{X,Y}}\prod_{t=1}^Tp_t(a_t|X)$$
+$$p(Y\mid X)=\sum_{A\in A_{X,Y}}\prod_{t=1}^Tp_t(a_t\mid X)$$
 
 这里的模型通常使用一个RNN来估计每个time step的概率，但是也可以自由使用任何学习算法，在给定一个固定尺寸输入片段的情况下产生一个输出类别的分布。
 
 在实际训练中，针对训练集$$\mathcal{D}$$，一般采用最小化log-likelihood的方式计算CTC loss：
 
-$$\sum_{(X,Y)\in \mathcal{D}}-\log p(Y|X)$$
+$$\sum_{(X,Y)\in \mathcal{D}}-\log p(Y\mid X)$$
 
 采用穷举法计算上述目标函数，计算量是非常巨大的。我们可以使用动态规划算法更快的计算loss。关键点是，如果两个对齐在同一步已经达到了相同的输出，可以合并它们。如下图所示：
 
@@ -109,7 +109,7 @@ $$\sum_{(X,Y)\in \mathcal{D}}-\log p(Y|X)$$
 
 $$Z=[\epsilon,y_1,\epsilon,y_2,\dots,\epsilon,y_U,\epsilon]$$
 
-用$$\alpha_{s,t}$$表示子序列$$Z_{1:s}$$在t步之后的CTC值。显然，我们需要计算的目标$$P(Y\vert X)$$和最后一步的$$\alpha$$有关，但只有计算出了上一步的$$\alpha$$，我们才能计算当前的$$\alpha$$。
+用$$\alpha_{s,t}$$表示子序列$$Z_{1:s}$$在t步之后的CTC值。显然，我们需要计算的目标$$P(Y\mid X)$$和最后一步的$$\alpha$$有关，但只有计算出了上一步的$$\alpha$$，我们才能计算当前的$$\alpha$$。
 
 ![](/images/img2/CTC_4.png)
 
@@ -125,7 +125,7 @@ $$Z=[\epsilon,y_1,\epsilon,y_2,\dots,\epsilon,y_U,\epsilon]$$
 
 在这种情况下，$$\alpha$$的计算公式如下：
 
-$$\alpha_{s,t}=(\alpha_{s-1,t-1}+\alpha_{s,t-1})\cdot p_t(Z_s | X)$$
+$$\alpha_{s,t}=(\alpha_{s-1,t-1}+\alpha_{s,t-1})\cdot p_t(Z_s \mid X)$$
 
 ### Case 2
 
@@ -135,10 +135,72 @@ $$\alpha_{s,t}=(\alpha_{s-1,t-1}+\alpha_{s,t-1})\cdot p_t(Z_s | X)$$
 
 在这种情况下，$$\alpha$$的计算公式如下：
 
-$$\alpha_{s,t}=(\alpha_{s-2,t-1}+\alpha_{s-1,t-1}+\alpha_{s,t-1})\cdot p_t(Z_s | X)$$
+$$\alpha_{s,t}=(\alpha_{s-2,t-1}+\alpha_{s-1,t-1}+\alpha_{s,t-1})\cdot p_t(Z_s \mid X)$$
 
+## 推断计算
 
+我们首先看看CTC的正向推断（Inference）是如何计算的。
 
+在前面的章节我们已经指出，由于对齐有很多种可能的情况，采用穷举法是不现实的。
+
+另一个比较容易想到的方法是：每步只采用最大可能的token。这种启发式算法，实际上就是A*算法。
+
+A*算法计算速度快，但不一定能找到最优解。
+
+一般采用改良的Beam Search算法，在准确率和计算量上取得一个trade off。
+
+![](/images/img2/CTC_5.png)
+
+上图是一个Beam Width为3的Beam Search。Beam Search的细节可参见《机器学习（二十五）》。
+
+由于语音的特殊性，我们实际上用的是Beam Search的一个变种：
+
+![](/images/img2/CTC_8.png)
+
+如上图所示，所有在合并规则下，能够合并为同一前缀的分支，在后续计算中，都被认为是同一分支。其概率值为各被合并分支的概率和。
+
+此外，如果在语音识别中，能够结合语言模型的话，将可以极大的改善语音识别的准确率。这种情况下的CTC loss为：
+
+$$Y^*=\mathop{\text{argmax}}_{Y} p(Y \mid X)\cdot p(Y)^{\alpha}\cdot L(Y)^{\beta}$$
+
+其中，$$p(Y)^{\alpha}$$是语言模型概率，而$$L(Y)^{\beta}$$表示词嵌入奖励。
+
+## CTC的特性
+
+CTC是条件独立的。
+
+缺点：条件独立的假设太强，与实际情况不符，因此需要语言模型来改善条件依赖性，以取得更好的效果。
+
+优点：可迁移性比较好。比如朋友之间的聊天和正式发言之间的差异较大，但它们的声学模型却是类似的。
+
+CTC是单调对齐的。这在语音识别上是没啥问题的，但在机器翻译的时候，源语言和目标语言之间的语序不一定一致，也就不满足单调对齐的条件。
+
+CTC的输入/输出是many-to-one的，不支持one-to-one或one-to-many。比如，“th”在英文中是一个音节对应两个字母，这就是one-to-many的案例。
+
+最后，Y的数量不能超过X，否则CTC还是没法work。
+
+## CTC应用
+
+### HMM
+
+![](/images/img2/CTC_9.png)
+
+如上图所示，CTC是一种特殊的HMM。CTC的状态图是单向的，这也就是上面提到的单调对齐特性，这相当于给普通HMM模型提供了一个先验条件。因此，对于满足该条件的情况，CTC的准确度要超过HMM。
+
+最重要的是，CTC是判别模型，它可以直接和RNN对接。
+
+### Encoder-Decoder模型
+
+Encoder-Decoder模型是sequence问题最常用的框架，它的数学形式为：
+
+$$
+H=encode(X)\\
+p(Y\mid X)=decode(H)
+$$
+
+这里的H是模型的hidden representation。
+
+CTC模型可以使用各种Encoder，只要保证输入比输出多即可。CTC模型常用的Decoder一般是softmax。
 
 ## 参考
 

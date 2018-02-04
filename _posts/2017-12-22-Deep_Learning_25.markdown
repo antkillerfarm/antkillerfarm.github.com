@@ -148,6 +148,14 @@ https://mp.weixin.qq.com/s/Q01jy2RtbpBBHGtvtfhEGA
 
 当机器学习遇到推荐系统，悉尼科技大学Liang Hu博士最新分享
 
+https://mp.weixin.qq.com/s/zBcd2vCYZvb_T7De2QhRew
+
+京东公布基于计算机视觉的电商推荐技术！
+
+https://mp.weixin.qq.com/s/rIZUar6sUZXo2S1JwLrHug
+
+AI研究新利器Etymo，妈妈再也不用担心我找不到论文！ 
+
 # 模型压缩
 
 对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。
@@ -313,46 +321,4 @@ https://www.zhihu.com/question/20131478
 https://www.leiphone.com/news/201502/QM7LdSN874dWXFLo.html
 
 带你了解世界最先进的手势识别技术
-
-# NN的INT8计算
-
-## 概述
-
-NN的INT8计算是近来NN计算优化的方向之一。相比于传统的浮点计算，整数计算无疑速度更快，而NN由于自身特性，对单点计算的精确度要求不高，且损失的精度还可以通过retrain的方式恢复大部分，因此通常的科学计算的硬件（没错就是指的GPU）并不太适合NN运算，尤其是NN Inference。
-
->传统的GPU并不适合NN运算，因此Nvidia也好，还是其他GPU厂商也好，通常都在GPU中又集成了NN加速的硬件，因此虽然商品名还是叫做GPU，但是工作原理已经有别于传统的GPU了。
-
-这方面的文章以Xilinx的白皮书较为经典：
-
-https://china.xilinx.com/support/documentation/white_papers/c_wp486-deep-learning-int8.pdf
-
-利用Xilinx器件的INT8优化开展深度学习
-
-论文：
-
-《On the efficient representation and execution of deep acoustic models》
-
-![](/images/img2/INT8.png)
-
-《Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference》
-
-![](/images/img2/INT8_2.png)
-
-参考：
-
-https://www.chiphell.com/thread-1620755-1-1.html
-
-新Titan X的INT8计算到底是什么鬼
-
-https://mp.weixin.qq.com/s/S9VcoS_59nbZWe_P3ye2Tw
-
-减少模型半数内存用量：百度&英伟达提出混合精度训练法
-
-## NN硬件的指标术语
-
-MACC：multiply-accumulate，乘法累加。
-
-FLOPS：Floating-point Operations Per Second，每秒所执行的浮点运算次数。
-
-显然NN的INT8计算主要以MACC为单位。
 

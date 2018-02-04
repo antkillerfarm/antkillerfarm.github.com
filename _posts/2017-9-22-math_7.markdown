@@ -6,9 +6,31 @@ category: math
 
 # 函数连续性（续）
 
+## 一致连续（Uniform continuity）
+
+$$\forall \epsilon > 0 \; \exists \delta > 0 \; \forall x, y \in I ; \, |x - y|<\delta \, \Rightarrow \, |f(x)-f(y)|<\epsilon$$
+
+Uniform continuity比Pointwise continuity要严格一些，因为x,y都是变量。
+
+Uniform continuity的形象解释如下所示：
+
+![](/images/article/Continuity_and_uniform_continuity_2.gif)
+
+上图中蓝框和红框的顶部和底部用粗线表示，在方框的运动过程中，红线**始终没有穿过方框的顶部或底部**，所以它是Uniform continuity的，而蓝线不是。
+
+$$f(x)=\frac{1}{x}$$不是Uniform continuity的最大原因在于$$x\to 0,f(x)\to \infty$$，由于值域没有上界，因此，对于给定的$$\delta$$，$$\epsilon$$也是没有上界的。
+
+但如果定义域限定为闭区间，则值域必有界。这时，Uniform continuity和Pointwise continuity是等价的。
+
+## 绝对连续（Absolute continuity）
+
+$$\forall \varepsilon > 0 \; \exists \delta > 0 \; \forall (x_k, y_k) \in I ; \, \sum_k (y_k - x_k) < \delta \, \Rightarrow \, \sum_k | f(y_k) - f(x_k) | < \varepsilon$$
+
+Absolute continuity不仅要求整个函数满足Uniform continuity，而且任意子区间也要满足该条件。因此，Absolute continuity比Uniform continuity更严格。
+
 ## Lipschitz连续
 
-$$\forall x_1,x_2 \in I ;|f(x_1) - f(x_2)| \le K |x_1 - x_2|, K>0\text{ is const}$$
+$$\forall x_1,x_2 \in I ;\mid f(x_1) - f(x_2)\mid  \le K \mid x_1 - x_2\mid , K>0\text{ is const}$$
 
 >注：Rudolf Otto Sigismund Lipschitz，1832～1903，德国数学家，先后就读于柯尼斯堡大学和柏林大学，导师Dirichlet。波恩大学教授。
 
@@ -194,63 +216,4 @@ http://twistedsifter.com/2012/11/animated-gifs-that-explain-how-things-work/
 该书的中文版：
 
 http://www.topologywithouttears.net/topbookchinese.pdf
-
-# 随机过程
-
-## 随机变量序列的收敛性
-
-弱收敛：$$F_n(x)\xrightarrow{W}F(x)$$
-
-依分布收敛：$$X_n\xrightarrow{L}X$$
-
-依概率收敛：$$X_n\xrightarrow{P}X$$
-
-r阶收敛：$$X_n\xrightarrow{r}X$$
-
-几乎处处收敛（almost everywhere convergent）：$$X_n\xrightarrow{a.e.}X$$ or $$X_n\xrightarrow{a.s.}X$$
-
-一致收敛（uniform convergence）：$$X_n\xrightarrow{u.c.}X$$
-
-以上概念实际上都是测度论的内容。具体到这里，弱收敛针对分布函数F，而其他收敛针对随机变量X。
-
-收敛严格性：
-
-$$X_n\xrightarrow{P}X \supseteq X_n\xrightarrow{L}X$$
-
-$$X_n\xrightarrow{r}X \supseteq X_n\xrightarrow{P}X$$
-
-$$X_n\xrightarrow{a.s.}X \supseteq X_n\xrightarrow{P}X$$
-
-大数定理：
-
-依概率收敛->弱大数定理
-
-几乎处处收敛->强大数定理
-
-## 随机过程常用公式或符号
-
-| 名称 | 公式或符号 |
-|:--:|:--:|
-| 期望 | $$EX=\int_{-\infty}^{+\infty}x\mathrm{d}F(x)$$，若存在密度函数则$$EX=\int_{-\infty}^{+\infty}xf(x)\mathrm{d}x$$ |
-| 方差 | $$DX=Var(X)=E(X-EX)^2$$ |
-| 协方差 | $$Cov(X,Y)=E\{\overline{[X-E(X)]}[Y-E(Y)]\}$$ |
-| 相关系数 | $$\rho_{XY}=\frac{Cov(X,Y)}{\sqrt{D(X)}\sqrt{D(Y)}}$$ |
-| 协方差矩阵 | $$\left[\begin{array}{ccc} Cov(X_1,X_1)&Cov(X_1,X_2)&\cdots&Cov(X_1,X_n)\\Cov(X_2,X_1)&Cov(X_2,X_2)&\cdots&Cov(X_2,X_n)\\ \vdots&\vdots&&\vdots \\Cov(X_n,X_1)&Cov(X_n,X_2)&\cdots&Cov(X_n,X_n)\end{array}\right]$$ |
-| 相关函数 | $$R(X,Y)=E[\overline{X}Y]$$ |
-| 均方极限 | $${l.i.m}_{n \to +\infty}X$$ |
-
-## 平稳过程
-
-严平稳过程：有限维分布。
-
-宽平稳过程：二阶矩。
-
-不要被名字迷惑了，由于两者关注的东西不同，一般情况下，严平稳过程不一定是宽平稳过程，宽平稳过程也不一定是严平稳过程。
-
-只有以下特例：
-
-1.对于二阶矩过程，严平稳过程一定是宽平稳过程。
-
-2.对于正态过程，严平稳过程和宽平稳过程是等价的。
-
 

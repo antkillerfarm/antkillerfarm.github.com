@@ -152,4 +152,9 @@ http://mp.weixin.qq.com/s/sshhUppVPP6qM7LH1V3nSQ
 
 四位计算机的原理及其实现
 
+https://zhuanlan.zhihu.com/p/33579054
+
+Reset重启后发生了什么？它和关机后再开机有什么区别？
+
+
 

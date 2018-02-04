@@ -329,7 +329,7 @@ $$
 
 ## 注意
 
-绝对值符号虽然键盘上有这个键，但由于和Markdown的表格功能有冲突，需要采用\vert、\lvert、\rvert替代之。
+绝对值符号虽然键盘上有这个键，但由于和Markdown的表格功能有冲突，需要采用\mid、\vert、\lvert、\rvert替代之。
 
 微分符号$$\rm{d}$$要用正体：\mathrm{d}或\rm{d}。
 

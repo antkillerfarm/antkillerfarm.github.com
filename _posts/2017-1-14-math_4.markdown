@@ -6,6 +6,30 @@ category: math
 
 # 矩阵&向量的积（续）
 
+## 向量的向量积
+
+Cross product是一个向量，其定义如下：
+
+$$\mathbf{a} \times \mathbf{b} = \left\| \mathbf{a} \right\| \left\| \mathbf{b} \right\| \sin (\theta) \ \mathbf{n}$$
+
+它还有个更出名的定义：
+
+$$\mathbf{u\times v} = \begin{vmatrix}
+  \mathbf{i}&\mathbf{j}&\mathbf{k}\\
+  u_1&u_2&u_3\\
+  v_1&v_2&v_3\\
+\end{vmatrix}$$
+
+## 向量的混合积
+
+triple product，又称mixed product或box product。
+
+$$\mathbf{a}\cdot(\mathbf{b}\times \mathbf{c}) \equiv \det \begin{bmatrix}
+  a_1 & a_2 & a_3 \\
+  b_1 & b_2 & b_3 \\
+  c_1 & c_2 & c_3 \\
+\end{bmatrix}={\rm det}\left(\mathbf{a},\mathbf{b},\mathbf{c}\right)$$
+
 ## 向量的笛卡尔积
 
 Cartesian product实际上是集合论中的概念。
@@ -177,28 +201,3 @@ https://www.zhihu.com/question/20992022/answer/50458123
 最大熵原理是1957年由E.T.Jaynes提出的，其主要思想是，在只掌握关于未知分布的部分知识时，应该选取符合这些知识但熵值最大的概率分布。其实质就是，在已知部分知识的前提下，关于未知分布最合理的推断就是符合已知知识最不确定或最随机的推断，这是我们可以作出的唯一不偏不倚的选择，任何其它的选择都意味着我们增加了其它的约束和假设，这些约束和假设根据我们掌握的信息无法作出。
 
 >注：Edwin Thompson Jaynes，1922～1998，美国统计学家。普林斯顿大学博士，华盛顿大学教授。
-
-假定系统涉及的M个随机变量$$f_i^{(j)}(j=1,\dots,M)$$的期望值$$F_j$$已知，即：
-
-$$F_j=\sum_{i=1}^{n}f_i^{(j)}p_i\tag{2}$$
-
-其中$$f_i^{(j)}$$表示第j个随机变量在状态i中的取值。$$p_i$$满足归一化条件：
-
-$$\sum_{i=1}^{n}p_i=1\tag{3}$$
-
-将公式2和公式3所述的两个约束，代入公式1，可得如下Lagrange乘子：
-
-$$J(p_i)=H_n/k-\alpha(\sum_{i=1}^{n}p_i-1)-\sum_{j=1}^{M}\beta_j(\sum_{i=1}^{n}f_i^{(j)}p_i-F_j)
-\\=-\sum_{i=1}^{n}p_i\ln p_i-\alpha\sum_{i=1}^{n}p_i+\alpha-\sum_{j=1}^{M}\sum_{i=1}^{n}\beta_jf_i^{(j)}p_i+\sum_{j=1}^{M}\beta_jF_j$$
-
-对$$p_i$$求导，可得：
-
-$$\frac{\partial J(p_i)}{\partial p_i}=-\ln p_i-1-\alpha-\sum_{j=1}^{M}\beta_jf_i^{(j)}$$
-
-令上式等于0，可得：
-
-$$p_i=\exp(-1-\alpha-\sum_{j=1}^{M}\beta_jf_i^{(j)})\tag{4}$$
-
-公式4就是一般情况下的最大信息熵公式。
-
-

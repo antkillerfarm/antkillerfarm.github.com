@@ -4,7 +4,32 @@ title:  数学狂想曲（五）——概率分布（2）
 category: math 
 ---
 
-# 玻尔兹曼分布（续）
+# 玻尔兹曼分布
+
+## 最大信息熵原理（续）
+
+假定系统涉及的M个随机变量$$f_i^{(j)}(j=1,\dots,M)$$的期望值$$F_j$$已知，即：
+
+$$F_j=\sum_{i=1}^{n}f_i^{(j)}p_i\tag{2}$$
+
+其中$$f_i^{(j)}$$表示第j个随机变量在状态i中的取值。$$p_i$$满足归一化条件：
+
+$$\sum_{i=1}^{n}p_i=1\tag{3}$$
+
+将公式2和公式3所述的两个约束，代入公式1，可得如下Lagrange乘子：
+
+$$J(p_i)=H_n/k-\alpha(\sum_{i=1}^{n}p_i-1)-\sum_{j=1}^{M}\beta_j(\sum_{i=1}^{n}f_i^{(j)}p_i-F_j)
+\\=-\sum_{i=1}^{n}p_i\ln p_i-\alpha\sum_{i=1}^{n}p_i+\alpha-\sum_{j=1}^{M}\sum_{i=1}^{n}\beta_jf_i^{(j)}p_i+\sum_{j=1}^{M}\beta_jF_j$$
+
+对$$p_i$$求导，可得：
+
+$$\frac{\partial J(p_i)}{\partial p_i}=-\ln p_i-1-\alpha-\sum_{j=1}^{M}\beta_jf_i^{(j)}$$
+
+令上式等于0，可得：
+
+$$p_i=\exp(-1-\alpha-\sum_{j=1}^{M}\beta_jf_i^{(j)})\tag{4}$$
+
+公式4就是一般情况下的最大信息熵公式。
 
 ## 相关名词辨析
 
@@ -184,7 +209,7 @@ https://www.zhihu.com/question/26991510
 
 假设检验就是根据样本对所提出的假设$$H_0$$作判断。
 
-如果$$P\{拒绝H_0\vert H_0为真\}\le \alpha$$，则接受$$H_0$$。
+如果$$P\{拒绝H_0\mid H_0为真\}\le \alpha$$，则接受$$H_0$$。
 
 这里的$$\alpha$$被称作**显著性水平**。假设检验$$H_0$$所涉及的统计量被称作**检验统计量**。
 
@@ -267,15 +292,3 @@ $$\frac{\hat b-b}{\hat \sigma}\sqrt{S_{xx}}\sim t(n-2)$$
 Kolmogorov–Smirnov test用于对样本是否属于某种分布进行假设检验。
 
 >注：Andrey Nikolaevich Kolmogorov，1903～1987，二十世纪俄国最伟大的数学家之一。莫斯科州立大学博士和教授。俄罗斯科学院院士，挪威科学院和英国皇家学会外籍院士。沃尔夫奖获得者（1980年）。他在数学的许多领域都有重要贡献，以他的名字命名的理论竟有30项之多。
-
->由于Nobel Prizes没有数学奖，因此数学界的最高奖一般有三个：   
->1.**Fields Medal**。获奖难度最高，因为有40岁的年龄限制。在国内比较知名的丘成桐、陶哲轩都是该奖的获奖者。   
->不过他们还不是最屌的。Grigori Perelman（Poincaré conjecture的证明者）直接拒绝了Fields Medal。除此之外，他还拒绝了EMS Prize和Millennium Prize，其中后者奖金高达100万美元，而且还不知道下一个获奖者什么时候诞生（该奖不是年度奖，而是数学难题奖，数学难题的解决周期，你懂的）。   
->Perelman犹如一个特立独行的隐士，谁的账都不买，包括名利。他将他的伟大证明随手扔进arXiv这样一个非正规网站，但却被《Science》评为年度科学突破。数学界已经很多年没有这样的荣誉了。   
->补充一下，Perelman就读的中学是Kolmogorov创建的。   
->2.**Abel Prize**。和Nobel Prizes的规则相同，由于不限年龄，水平是最高的。缺点是这个奖是2001年才创建的，影响力略差。   
->3.**Wolf Prize**。在Abel Prize创建之前，被誉为数学界的Nobel Prizes。
-
->Nikolai Vasilyevich Smirnov，1900～1966，俄国数学家。莫斯科大学博士，斯塔克罗夫数学研究所研究员。
-
-

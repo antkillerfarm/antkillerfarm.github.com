@@ -244,7 +244,7 @@ https://mp.weixin.qq.com/s/Ji3dTs0lMjLLR5Oxbsr3Vg
 
 https://mp.weixin.qq.com/s/vH9vl15eQz5aarhgSLMh-A
 
-戳穿泡沫：对「信息瓶颈」理论的批判性分析
+戳穿泡沫：对“信息瓶颈”理论的批判性分析
 
 https://mp.weixin.qq.com/s/LFAnmDec05JPojO3ncdJBw
 
@@ -268,7 +268,7 @@ https://mp.weixin.qq.com/s/MoKzux6Z69dlpqcVTvQ9oQ
 
 https://mp.weixin.qq.com/s/DF5eSgJpFHfcMeW2EL6oZQ
 
-Hinton提出泛化更优的「软决策树」：可解释DNN具体决策
+Hinton提出泛化更优的“软决策树”：可解释DNN具体决策
 
 https://mp.weixin.qq.com/s/X75H8YOysftwU4VSjlmLBQ
 

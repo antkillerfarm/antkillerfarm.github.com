@@ -222,4 +222,7 @@ https://zhuanlan.zhihu.com/p/32135185
 
 从一篇ICLR'2017被拒论文谈起：行走在GAN的Latent Space
 
+https://mp.weixin.qq.com/s/9N_3JkNEPdXQgFn0S7MqnA
+
+走进深度生成模型：变分自动编码器（VAE）和生成对抗网络（GAN）
 

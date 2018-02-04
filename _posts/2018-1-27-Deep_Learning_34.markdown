@@ -116,7 +116,7 @@ http://mp.weixin.qq.com/s/EPbKE-TAnAPugJDhXHEyNA
 
 DeepMind开源Psychlab平台——搭建AI和认知心理学的桥梁
 
+https://mp.weixin.qq.com/s/TlcVxjhHXXGSpIvptC4H8g
 
-
-
+使用Gym和CNN构建多智能体自动驾驶马里奥赛车
 

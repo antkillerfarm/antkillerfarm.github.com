@@ -50,7 +50,7 @@ $$f(x_1,\dots,x_n;\theta)=f(x_1;\theta)\times \dots \times f(x_n;\theta)$$
 
 似然估计函数如下所示：
 
-$$L(\theta)=\prod_{i=1}^mp(y^{(i)}\vert x^{(i)};\theta)$$
+$$L(\theta)=\prod_{i=1}^mp(y^{(i)}\mid x^{(i)};\theta)$$
 
 >注：Ronald Aylmer Fisher，1890～1962，英国人，毕业于剑桥大学。英国皇家学会会员，皇家统计学会主席。尽管他被称作“一位几乎独自建立现代统计科学的天才”，然而他的本职工作是遗传学。他最大的贡献是利用统计分析的方法，揭示了孟德尔的遗传定律在达尔文自然选择学说中的作用，为后来遗传物质DNA的发现奠定了理论基础。   
 >虽然对于Fisher来说，数理统计只是他研究工作的一个副产品，但他在1925年所著《研究工作者的统计方法》（Statistical Methods for Research Workers），其影响力超过了半个世纪，几乎当代所有自然科学和社会科学领域都在应用他所创立的理论。F分布就是以他的名字命名的。
@@ -63,15 +63,15 @@ $$L(\theta)=\prod_{i=1}^mp(y^{(i)}\vert x^{(i)};\theta)$$
 
 我们假设：
 
-$$P(y=1\vert x;\theta)=h_\theta(x),P(y=0\vert x;\theta)=1-h_\theta(x)$$
+$$P(y=1\mid x;\theta)=h_\theta(x),P(y=0\mid x;\theta)=1-h_\theta(x)$$
 
 则该伯努利分布（Bernoulli distribution）的概率密度函数为：
 
-$$p(y\vert x;\theta)=(h_\theta(x))^y(1-h_\theta(x))^{1-y}$$
+$$p(y\mid x;\theta)=(h_\theta(x))^y(1-h_\theta(x))^{1-y}$$
 
 其似然估计函数为：
 
-$$L(\theta)=p(\vec{y}\vert X;\theta)=\prod_{i=1}^m(h_\theta(x^{(i)}))^{y^{(i)}}(1-h_\theta(x^{(i)}))^{1-y^{(i)}}$$
+$$L(\theta)=p(\vec{y}\mid X;\theta)=\prod_{i=1}^m(h_\theta(x^{(i)}))^{y^{(i)}}(1-h_\theta(x^{(i)}))^{1-y^{(i)}}$$
 
 两边都取对数，得到对数化的似然估计函数：
 
@@ -163,7 +163,7 @@ $$\begin{align}& \eta=\mu \\& T(y)=y \\& a(\eta)=\frac{\mu^2}{2} \\& b(y)=\frac{
 
 1.首先弄清楚y服从什么分布：
 
-$$y\vert x;\theta \sim ExponentialFamily(\eta) \tag{1}$$
+$$y\mid x;\theta \sim ExponentialFamily(\eta) \tag{1}$$
 
 2.为参数$$\eta$$设置linear predictor：
 
@@ -175,7 +175,7 @@ $$\eta=\theta^Tx \tag{2}$$
 
 $$g(h(x))=\eta \tag{3}$$
 
-其中，$$h(x)=E[T(y)\vert x]$$
+其中，$$h(x)=E[T(y)\mid x]$$
 
 可见，上一节中的$$\eta$$实际上就是link function。
 
@@ -225,12 +225,12 @@ $$\phi_i=\frac{e^{\eta_i}}{\sum_{j=1}^ke^{\eta_j}}=\frac{e^{\theta_i^Tx}}{\sum_{
 
 >注：由于softmax函数给出的是分类结果的概率，因此对于某些分类结果中，所有类别概率都很低的情况，我们有理由认为遇到了未知的类别。softmax函数的这种概率可解释性，是它优于其他函数的地方。
 
-$$h_\theta(x)=E[T(y)\vert x;\theta]=\begin{bmatrix} \phi_1 \\ \phi_2 \\ \vdots \\ \phi_{k-1} \end{bmatrix}
+$$h_\theta(x)=E[T(y)\mid x;\theta]=\begin{bmatrix} \phi_1 \\ \phi_2 \\ \vdots \\ \phi_{k-1} \end{bmatrix}
 =\begin{bmatrix} \frac{\exp(\theta_1^Tx)}{\sum_{j=1}^k\exp(\theta_j^Tx)} \\ \frac{\exp(\theta_2^Tx)}{\sum_{j=1}^k\exp(\theta_j^Tx)} \\ \vdots \\ \frac{\exp(\theta_{k-1}^Tx)}{\sum_{j=1}^k\exp(\theta_j^Tx)} \end{bmatrix}$$
 
 最大似然估计对数函数：
 
-$$\ell(\theta)=\sum_{i=1}^m\log p(y^{(i)}\vert x^{(i)};\theta)=\sum_{i=1}^m\log\prod_{l=1}^k\left(\frac{\exp(\theta_{l}^Tx^{(i)})}{\sum_{j=1}^k\exp(\theta_j^Tx^{(i)})}\right)^{1\{y^{(i)}=l\}}$$
+$$\ell(\theta)=\sum_{i=1}^m\log p(y^{(i)}\mid x^{(i)};\theta)=\sum_{i=1}^m\log\prod_{l=1}^k\left(\frac{\exp(\theta_{l}^Tx^{(i)})}{\sum_{j=1}^k\exp(\theta_j^Tx^{(i)})}\right)^{1\{y^{(i)}=l\}}$$
 
 参考：
 

@@ -76,6 +76,10 @@ https://mp.weixin.qq.com/s/oJdwwpV-7NOPXw0m0qmgfg
 
 如何在Python中快速进行语料库搜索：近似最近邻算法
 
+https://mp.weixin.qq.com/s/M2YvR8s2Vh-zGRP42v6txg
+
+极简Python带你探索分类与回归的奥秘
+
 # 推荐系统的工程细节
 
 推荐系统不仅是算法，还包括若干工程细节。这些细节虽然不算复杂，够不上算法的层面，然而对产品的成败，却有举足轻重的作用。

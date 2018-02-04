@@ -4,7 +4,87 @@ title:  机器学习（十八）——推荐系统进阶, 决策树
 category: ML 
 ---
 
-## LDA（续）
+## Unigram Model（续）
+
+和wiki上对Dirichlet分布的pdf函数的描述（参见《数学狂想曲（二）》中的公式1）不同，rickjin在这里采用了如下定义：
+
+$$Dir(\overrightarrow{p}\mid \overrightarrow{\alpha})= 
+\frac{1}{\Delta(\overrightarrow{\alpha})} \prod_{k=1}^V p_k^{\alpha_k -1}， 
+\quad \overrightarrow{\alpha}=(\alpha_1, \cdots, \alpha_V)$$
+
+其中：
+
+$$\Delta(\overrightarrow{\alpha}) = 
+\int \prod_{k=1}^V p_k^{\alpha_k -1} d\overrightarrow{p}$$
+
+可以看出两种描述中的$$\mathrm{B}(\boldsymbol\alpha)$$和$$\Delta(\overrightarrow{\alpha})$$是等价的。
+
+下面我们来证明这个结论，即：
+
+$$\mathrm{B}(\boldsymbol\alpha)=\int \prod_{k=1}^V p_k^{\alpha_k -1} d\overrightarrow{p}\tag{1}$$
+
+**证明**：这里为了简化问题，令V=3。则根据《数学狂想曲（二）》中的公式1可得：
+
+$$Dir(\overrightarrow{p}\mid \overrightarrow{\alpha})= 
+\frac{1}{\mathrm{B}(\alpha_1,\alpha_2,\alpha_3)}  p_1^{\alpha_1 -1}p_2^{\alpha_2 -1}p_3^{\alpha_3 -1}$$
+
+对该pdf进行积分：
+
+$$\iiint\frac{1}{\mathrm{B}(\alpha_1,\alpha_2,\alpha_3)}p_1^{\alpha_1 -1}p_2^{\alpha_2 -1}p_3^{\alpha_3 -1}\mathrm{d}p_1\mathrm{d}p_2\mathrm{d}p_3=\frac{1}{\mathrm{B}(\alpha_1,\alpha_2,\alpha_3)}\int p_1^{\alpha_1 -1}p_2^{\alpha_2 -1}p_3^{\alpha_3 -1}\mathrm{d}\overrightarrow{p}$$
+
+由pdf的定义可知，上面的积分值为1。
+
+因此：
+
+$$\mathrm{B}(\alpha_1,\alpha_2,\alpha_3)=\int p_1^{\alpha_1 -1}p_2^{\alpha_2 -1}p_3^{\alpha_3 -1}\mathrm{d}\overrightarrow{p}$$
+
+证毕。
+
+从上面的证明过程，可以看出公式1并不是恒等式，而是在Dirichlet分布下才成立的等式。这也是共轭先验分布能够简化计算的地方。
+
+## PLSA
+
+Probabilistic Latent Semantic Analysis是Thomas Hofmann于1999年在UCB读博期间提出的算法。
+
+原文：
+
+https://dslpitt.org/uai/papers/99/p289-hofmann.pdf
+
+示意图：
+
+![](/images/article/plsa-doc-topic-word.jpg)
+
+PLSA将生成文档的过程，分为两个步骤：
+
+1.生成文档的主题。（doc->topic）
+
+2.根据主题生成相关的词.（topic->word）
+
+第m篇文档$$d_m$$中的每个词的生成概率为：
+
+$$p(w\mid d_m) = \sum_{z=1}^K p(w\mid z)p(z\mid d_m) = \sum_{z=1}^K \varphi_{zw} \theta_{mz}$$
+
+## LDA
+
+利用贝叶斯学派的观点改造PLSA，可得：
+
+![](/images/article/lda-dice.jpg)
+
+LDA生成模型包含两个过程：
+
+1.生成第m篇文档中的所有词对应的topics。
+
+$$\overrightarrow{\alpha}\xrightarrow[Dirichlet]{} \overrightarrow{\theta}_m \xrightarrow[Multinomial]{} \overrightarrow{z}_{m}$$
+
+2.K个由topics生成words的独立过程。
+
+$$\overrightarrow{\beta} \xrightarrow[Dirichlet]{} \overrightarrow{\varphi}_k \xrightarrow[Multinomial]{} \overrightarrow{w}_{(k)}$$
+
+因此，总共就是$$M+K$$个Dirichlet-Multinomial共轭结构。
+
+LDA的Gibbs Sampling图示：
+
+![](/images/article/gibbs-path-search.jpg)
 
 LDA模型的目标有两个：
 
@@ -178,13 +258,13 @@ Collaborative Metric Learning
 
 Decision Tree讲的最好的，首推周志华的《机器学习》。这里只对要点进行备忘。
 
-当前样本集合D中，第k类样本所占的比例为$$p_k(k=1,2,\dots,\vert y\vert)$$，则D的信息熵（information entropy）定义为：
+当前样本集合D中，第k类样本所占的比例为$$p_k(k=1,2,\dots,\mid y\mid)$$，则D的信息熵（information entropy）定义为：
 
-$$Ent(D)=-\sum_{k=1}^{|y|}p_k\log_2p_k$$
+$$Ent(D)=-\sum_{k=1}^{\mid y\mid }p_k\log_2p_k$$
 
 假定离散属性a有V个可能的取值，若使用a对D进行划分，则第v个分支结点包含了D中所有在a上取值$$a^v$$的样本，记为$$D^v$$。则信息增益（information gain）为：
 
-$$Gain(D,a)=Ent(D)-\sum_{v=1}^V\frac{|D^v|}{|D|}Ent(D^v)$$
+$$Gain(D,a)=Ent(D)-\sum_{v=1}^V\frac{\mid D^v\mid }{\mid D\mid }Ent(D^v)$$
 
 增益率（gain ratio）：
 
@@ -192,15 +272,15 @@ $$Gain\_ratio(D,a)=\frac{Gain(D,a)}{IV(a)}$$
 
 其中
 
-$$IV(a)=-\sum_{v=1}^V\frac{|D^v|}{|D|}\log_2 \frac{|D^v|}{|D|}$$
+$$IV(a)=-\sum_{v=1}^V\frac{\mid D^v\mid }{\mid D\mid }\log_2 \frac{\mid D^v\mid }{\mid D\mid }$$
 
 基尼值：
 
-$$Gini(D)=1-\sum_{k=1}^{|y|}p_k^2$$
+$$Gini(D)=1-\sum_{k=1}^{\mid y\mid }p_k^2$$
 
 基尼指数：
 
-$$Gini\_index(D,a)=\sum_{v=1}^V\frac{|D^v|}{|D|}Gini(D^v)$$
+$$Gini\_index(D,a)=\sum_{v=1}^V\frac{\mid D^v\mid }{\mid D\mid }Gini(D^v)$$
 
 各种决策树和它的划分依据如下表所示：
 
@@ -217,59 +297,5 @@ $$Gini\_index(D,a)=\sum_{v=1}^V\frac{|D^v|}{|D|}Gini(D^v)$$
 https://mp.weixin.qq.com/s/TTU9LMG8TuB1gzgfCfWjjw
 
 从香农熵到手推KL散度：一文带你纵览机器学习中的信息论
-
-## GBDT
-
-GBDT这个算法有很多名字，但都是同一个算法：
-
-GBRT(Gradient Boost Regression Tree)渐进梯度回归树
-
-GBDT(Gradient Boost Decision Tree)渐进梯度决策树
-
-MART(Multiple Additive Regression Tree)多决策回归树
-
-Tree Net决策树网络
-
-GBDT属于集成学习（Ensemble Learning）的范畴。集成学习的思路是在对新的实例进行分类的时候，把若干个单个分类器集成起来，通过对多个分类器的分类结果进行某种组合来决定最终的分类，以取得比单个分类器更好的性能。
-
-集成学习的算法主要分为两大类：
-
-**并行算法**：若干个不同的分类器同时分类，选择票数多的分类结果。这类算法包括bagging和随机森林等。
-
-**串行算法**：使用同种或不同的分类器，不断迭代。每次迭代的目标是缩小残差或者提高预测错误项的权重。这类算法包括Adaboost和GBDT等。
-
-GBDT写的比较好的，有以下blog：
-
-http://blog.csdn.net/w28971023/article/details/8240756
-
-GBDT（MART）迭代决策树入门教程
-
-摘录要点如下：
-
-决策树分为两大类：
-
-**回归树**：用于预测实数值，如明天的温度、用户的年龄、网页的相关程度。其结果加减是有意义的，如10岁+5岁-3岁=12岁。
-
-**分类树**：用于分类标签值，如晴天/阴天/雾/雨、用户性别、网页是否是垃圾页面。其结果加减无意义，如男+男+女=到底是男是女？
-
-GBDT的核心在于**累加所有树的结果作为最终结果**。例如根到某叶子结点的路径上的决策值为10岁、5岁、-3岁，则该叶子的最终结果为10岁+5岁-3岁=12岁。
-
-所以**GBDT中的树都是回归树，不是分类树**。
-
-上面举的例子中，越靠近叶子，其决策值的绝对值越小。这不是偶然的。决策树的基本思路就是“分而治之”，自然越靠近根结点，其划分的粒度越粗。每划分一次，预测误差（即残差）越小，这样也就变相提高了下一步划分中预测错误项的权重，这就是算法名称中Gradient的由来。
-
-为了防止过拟合，GBDT还采用了Shrinkage（缩减）的思想，每次只走一小步来逐渐逼近结果，这样各个树的残差就是渐变的，而不是陡变的。
-
-参考：
-
-http://blog.csdn.net/u010691898/article/details/38292937
-
-阿里大数据比赛总结
-
-## Bagging和随机森林
-
-Bagging主要是通过随机选择样本集，来改变各并行计算决策树的结果，从而达到并行计算的效果。这相当于通过加入样本的扰动，来提供泛化能力。
-
-随机森林除了样本扰动之外，还通过随机选择属性集，并从中选择一个最优属性划分的方式，进一步提升了模型的泛化能力。
 
 

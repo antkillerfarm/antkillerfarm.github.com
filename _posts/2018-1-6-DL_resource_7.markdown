@@ -296,4 +296,8 @@ https://mp.weixin.qq.com/s/mvbyddpgxBFQSxC1zZZmFw
 
 如何通过距离度量学习解决Street-to-Shop问题
 
+https://mp.weixin.qq.com/s/A4ewMO50xoopctpn9B7Y5Q
+
+深度学习及AR在移动端打车场景下的应用
+
 

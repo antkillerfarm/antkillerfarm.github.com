@@ -1,10 +1,46 @@
 ---
 layout: post
-title:  机器学习（二十七）——动态规划
+title:  机器学习（二十七）——动态规划, Monte-Carlo
 category: ML 
 ---
 
-# 动态规划（续）
+# Markov Decision Process（续）
+
+MDP的扩展主要包括：
+
+a) Observation部分可见的情况下，agent state $$\neq$$ environment state，这时一般叫做partially observable Markov decision process(POMDP)。
+
+b) Infinite and continuous MDP
+
+c) Undiscounted, average reward MDP
+
+扩展MDP的Bellman equation都不是线性方程，没有解析解，只有迭代解。相关解法主要使用了概念图模型，这里不再详述。
+
+# 动态规划
+
+Dynamic programming(DP)用于解决那些可分解为**重复子问题（overlapping subproblems）**并具有**最优子结构（optimal substructure）**的问题。这里的programming和编程并无任何关系。
+
+上世纪40年代，Richard Bellman最早使用动态规划这一概念表述通过遍历寻找最优决策解问题的求解过程。1953年，Richard Bellman将动态规划赋予现代意义，该领域被IEEE纳入系统分析和工程中。
+
+除了Bellman之外，苏联的Lev Pontryagin也做出了很大的贡献，他和Bellman被并称为Optimal control之父。
+
+>Lev Semyonovich Pontryagin，1908~1988，苏联数学家。主要研究代数拓扑和微分拓扑。他14岁时，因为煤气爆炸事故成为盲人。苏联科学院院士，国际数学家联盟副主席。
+
+## 最优子结构
+
+最优子结构即可用来寻找整个问题最优解的子问题的最优解。举例来说，寻找图上某顶点到终点的最短路径，可先计算该顶点所有相邻顶点至终点的最短路径，然后以此来选择最佳整体路径，如下图所示：
+
+![](/images/article/Shortest_path_optimal_substructure.png)
+
+一般而言，最优子结构通过如下三个步骤解决问题：
+
+a) 将问题分解成较小的子问题；
+
+b) 通过递归使用这三个步骤求出子问题的最优解；
+
+c) 使用这些最优解构造初始问题的最优解。
+
+子问题的求解是通过不断划分为更小的子问题实现的，直至我们可以在常数时间内求解。
 
 ## 重复子问题
 
@@ -66,21 +102,19 @@ RL领域的DP算法的主要思想是：利用value function构建搜索Good Pol
 
 RL DP主要包括以下算法：（为了抓住问题的本质，这里仅列出各算法最关键的Bellman equation，至于流程参照Q-learning算法即可。）
 
-### Iterative Policy Evaluation：
-
-$$v_{k+1}(s) = \sum_{a \in \mathcal{A}}\pi(a | s)\left(\mathcal{R}_s^a + \gamma \sum_{s'\in \mathcal{S}}\mathcal{P}_{ss'}^a v_k(s')\right)$$
-
 ### Policy Iteration
 
 Policy Iteration包含如下两步：
 
 Policy Evaluation：
 
-$$v_{k+1}(s) = \sum_{a \in \mathcal{A}}\pi(a | s)\left(\mathcal{R}_s^a + \gamma \sum_{s'\in \mathcal{S}}\mathcal{P}_{ss'}^a v_k(s')\right)$$
+$$v_{k+1}(s) = \sum_{a \in \mathcal{A}}\pi(a \mid  s)\left(\mathcal{R}_s^a + \gamma \sum_{s'\in \mathcal{S}}\mathcal{P}_{ss'}^a v_k(s')\right)$$
 
 Policy Improvement：
 
 $$\pi_{k+1}(s) = \arg \max_{a \in \mathcal{A}}\left(\mathcal{R}_s^a + \gamma \sum_{s'\in \mathcal{S}}\mathcal{P}_{ss'}^a v_k(s')\right)$$
+
+由于$$q_*(s, a)$$对应的$$v(s)$$必是$$v_*(s)$$，反之亦然，因此Policy Iteration的过程通常如下所示：
 
 ![](/images/article/Policy_Iteration.png)
 
@@ -90,7 +124,7 @@ $$\pi_{k+1}(s) = \arg \max_{a \in \mathcal{A}}\left(\mathcal{R}_s^a + \gamma \su
 
 $$v_{k+1}(s) = \max_{a \in \mathcal{A}}\left(\mathcal{R}_s^a + \gamma \sum_{s'\in \mathcal{S}}\mathcal{P}_{ss'}^a v_k(s')\right)$$
 
-
+动态规划的主要局限在于：它依赖于概率模型。
 
 ## 参考
 
@@ -144,11 +178,45 @@ https://mp.weixin.qq.com/s/a1C1ezL59azNfdM3TFGaGw
 
 # Monte-Carlo
 
-参考：
+## 概率算法
+
+概率算法是和确定性算法相对的概念。概率算法的一个基本特征是对所求解问题的同一实例用同一概率算法求解两次，可能得到完全不同的效果。这两次求解问题所需的时间甚至所得到的结果，可能会有相当大的差别。
+
+常见的概率算法主要有：数值概率算法，舍伍德（Sherwood）算法，蒙特卡罗（Monte Carlo）算法和拉斯维加斯（Las Vegas）算法。
+
+在《数学狂想曲（三）》中我们已经提到了“统计模拟”的概念，这实际上就是数值概率算法的应用，它主要利用了大数定律与强大数定律。
+
+## 舍伍德（Sherwood）算法
+
+
+
+## 蒙特卡罗（Monte Carlo）算法
+
+Monte Carlo method 
+
+Monte Carlo algorithm
+
+举个例子，假如筐里有100个苹果，让我每次闭眼拿1个，挑出最大的。于是我随机拿1个，再随机拿1个跟它比，留下大的，再随机拿1个……我每拿一次，留下的苹果都至少不比上次的小。拿的次数越多，挑出的苹果就越大，但我除非拿100次，否则无法肯定挑出了最大的。这个挑苹果的算法，就属于蒙特卡罗算法——**尽量找好的，但不保证是最好的**。
+
+## 拉斯维加斯（Las Vegas）算法
+
+
+
+## 参考
 
 https://mp.weixin.qq.com/s/F9VlxVV4nXELyKxdRo9RPA
 
 强化学习——蒙特卡洛
 
+https://www.zhihu.com/question/20254139
 
+蒙特卡罗算法是什么？
+
+http://www.cnblogs.com/2010Freeze/archive/2011/09/19/2181016.html
+
+概率算法-sherwood算法
+
+http://www.cnblogs.com/chinazhangjie/archive/2010/11/11/1874924.html
+
+概率算法
 

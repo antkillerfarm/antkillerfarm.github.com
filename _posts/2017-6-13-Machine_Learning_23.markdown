@@ -305,30 +305,5 @@ http://www.blogjava.net/zhenandaci/archive/2009/03/26/262113.html
 
 将SVM用于多类分类
 
-## Hinge Loss
-
-在之前的SVM的推导中，我们主要是从解析几何的角度，给出了SVM的计算公式。但SVM实际上也是有loss function的：
-
-$$\ell(y) = \max(0, 1-t \cdot y)$$
-
-其中，$$t=\pm 1$$表示分类标签，$$y=w \cdot x+b$$表示分类超平面计算的score。可以看出当t和y有相同的符号时（意味着 y 预测出正确的分类），loss为0。反之，则会根据y线性增加one-sided error。
-
-![](/images/article/hinge_loss.png)
-
-由于其函数形状像个合叶，因此又名Hinge Loss函数。
-
-多分类SVM的Hinge Loss公式：
-
-$$\ell(y) = \sum_{t \ne y} \max(0, 1 + \mathbf{w}_t \mathbf{x} - \mathbf{w}_y \mathbf{x})$$
-
-参见：
-
-http://www.jianshu.com/p/4a40f90f0d98
-
-Hinge loss
-
-http://mp.weixin.qq.com/s/96_u9QM63SISwTbimmH6wA
-
-支持向量回归机
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Emacs, Vi, Lua
+title:  Emacs, Vi, VS Code, Lua
 category: language 
 ---
 
@@ -357,11 +357,19 @@ Source Insight常用设置和快捷键大全
 
 VS Code（Visual Studio Code）是由微软研发的一款免费、开源的跨平台文本（代码）编辑器。（首发于2015年）从文件来看应该是基于nodejs所做，据说脱胎于Atom。
 
+目前我已经用VS Code替换了Source Insight。后者这么多年了，版本才4.0，而且由于收费的缘故，绝大多数人还是使用3.5版本，那可是我2009年刚接触时就有的版本。
+
 官网：
 
 https://code.visualstudio.com/
 
-`umake web visual-studio-code`
+安装：
+
+`umake ide visual-studio-code`
+
+## 细节
+
+ctrl+P 命令行
 
 # Lua
 

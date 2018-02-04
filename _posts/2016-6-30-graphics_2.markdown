@@ -92,11 +92,11 @@ $$blackhat(src)=close(src)-src$$
 
 梯度向量求模的常见方法有：
 
-$$G=|G_x|+|G_y|(模1)$$
+$$G=\mid G_x\mid +\mid G_y\mid (模1)$$
 
 $$G=\sqrt{G_x^2+G_y^2}(模2)$$
 
-$$G=max(|G_x|,|G_y|)(模\infty)$$
+$$G=max(\mid G_x\mid ,\mid G_y\mid )(模\infty)$$
 
 显然，梯度的模大的点，有很大可能是边缘点。常用的梯度算子有Roberts算子、Sobel算子和Prewitt算子。
 
@@ -104,9 +104,9 @@ $$G=max(|G_x|,|G_y|)(模\infty)$$
 
 $$s_x=\left[\begin{array}{cc} 1&0\\ 0&-1\end{array} \right],s_y=\left[\begin{array}{cc} 0&-1\\ 1&0\end{array} \right]$$
 
-$$G(i,j)=|s_x\otimes f|+|s_y\otimes f|$$
+$$G(i,j)=\mid s_x\otimes f\mid +\mid s_y\otimes f\mid $$
 
-$$=|f(i,j)-f(i+1,j+1)|+|f(i+1,j)-f(i,j-1)|$$
+$$=\mid f(i,j)-f(i+1,j+1)\mid +\mid f(i+1,j)-f(i,j-1)\mid $$
 
 以下将$$s_x\otimes f$$简记做$$G_x$$。
 
@@ -162,9 +162,9 @@ $$s_x=\left[\begin{array}{ccc} 0&1&0\\ -1&0&-1 \\ 0&1&0\end{array} \right],s_y=\
 
 如果像素$$(s,t)$$在像素$$(x,y)$$的领域，且满足以下条件：
 
-$$|G(s,t)-G(x,y)|\le 幅度阀值T$$
+$$\mid G(s,t)-G(x,y)\mid \le 幅度阀值T$$
 
-$$|\theta(s,t)-\theta(x,y)|\le 角度阀值A$$
+$$\mid \theta(s,t)-\theta(x,y)\mid \le 角度阀值A$$
 
 则可将像素$$(s,t)$$和像素$$(x,y)$$连接起来。
 

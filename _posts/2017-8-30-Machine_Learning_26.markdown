@@ -4,6 +4,68 @@ title:  机器学习（二十六）——K-摇臂赌博机, Q-learning
 category: ML 
 ---
 
+# 强化学习
+
+## Policy, Value, Transition Model（续）
+
+因此，增强学习的方法，大体可以分为三类：
+
+**Value-based RL，值方法。**显式地构造一个model来表示值函数Q，找到最优策略对应的Q函数，自然就找到了最优策略。
+
+**Policy-based RL，策略方法。**显式地构造一个model来表示策略函数,然后去寻找能最大化discounted future reward。
+
+**Model-based RL，基于环境模型的方法。**先得到关于environment transition的model，然后再根据这个model去寻求最佳的策略。
+
+以上三种方法并不是一个严格的划分，很多RL算法同时具有一种以上的特性。
+
+![](/images/article/RL_3.png)
+
+## 参考
+
+https://mp.weixin.qq.com/s/f6sq8cSaU1cuzt7jhsK8Ig
+
+强化学习（Reinforcement Learning）基础介绍
+
+https://mp.weixin.qq.com/s/TGN6Zhrea2LPxdkspVTlAw
+
+穆黎森：算法工程师入门——增强学习
+
+https://mp.weixin.qq.com/s/laKJ_jfNR5L1uMML9wkS1A
+
+强化学习（Reinforcement Learning）算法基础及分类
+
+https://mp.weixin.qq.com/s/Cvk_cePK9iQd8JIKKDDrmQ
+
+强化学习的核心基础概念及实现
+
+http://mp.weixin.qq.com/s/gHM7qh7UTKzatdg34cgfDQ
+
+强化学习全解
+
+https://mp.weixin.qq.com/s/B6ZpJ0Yw9GBZ9_MyNwjlXQ
+
+构建强化学习系统，你需要先了解这些背景知识
+
+https://mp.weixin.qq.com/s/AKuuIJnESMmck8k210CnWg
+
+易忽略的强化学习知识之基础知识及MDP（上）
+
+https://mp.weixin.qq.com/s/phuCKNj_a4CPq6w51Md-9A
+
+易忽略的强化学习知识之基础知识及MDP（下）
+
+https://mp.weixin.qq.com/s/wfCyii6bS-GxMZPg2TPaLA
+
+蒙特卡洛树搜索是什么？如何将其用于规划星际飞行？
+
+https://mp.weixin.qq.com/s/QHAnpGsr1sSaUgOXTJjVjQ
+
+李飞飞高徒带你一文读懂RL来龙去脉
+
+https://mp.weixin.qq.com/s/iN8q24ka762LqY74zoVFsg
+
+3万字剖析强化学习在电商环境下应用
+
 # K-摇臂赌博机
 
 ![](/images/article/Multi-Armed_Bandit.jpg)
@@ -196,40 +258,4 @@ $$v = (I-\gamma \mathcal{P})^{-1}\mathcal{R}$$
 然而这个方法的复杂度是$$O(n^3)$$（n是状态的个数），这对于大的MDP来说，并不好用。这种情况下，常用的解法有：Dynamic programming（动态规划）、Monte-Carlo evaluation和Temporal-Difference learning。
 
 由于MDP对于RL任务进行了Markov假设，这属于一种建模行为，因此它也被归为一种model-based learning的算法。
-
-MDP的扩展主要包括：
-
-a) Observation部分可见的情况下，agent state $$\neq$$ environment state，这时一般叫做partially observable Markov decision process(POMDP)。
-
-b) Infinite and continuous MDP
-
-c) Undiscounted, average reward MDP
-
-扩展MDP的Bellman equation都不是线性方程，没有解析解，只有迭代解。相关解法主要使用了概念图模型，这里不再详述。
-
-# 动态规划
-
-Dynamic programming(DP)用于解决那些可分解为**重复子问题（overlapping subproblems）**并具有**最优子结构（optimal substructure）**的问题。这里的programming和编程并无任何关系。
-
-上世纪40年代，Richard Bellman最早使用动态规划这一概念表述通过遍历寻找最优决策解问题的求解过程。1953年，Richard Bellman将动态规划赋予现代意义，该领域被IEEE纳入系统分析和工程中。
-
-除了Bellman之外，苏联的Lev Pontryagin也做出了很大的贡献，他和Bellman被并称为Optimal control之父。
-
->Lev Semyonovich Pontryagin，1908~1988，苏联数学家。主要研究代数拓扑和微分拓扑。他14岁时，因为煤气爆炸事故成为盲人。苏联科学院院士，国际数学家联盟副主席。
-
-## 最优子结构
-
-最优子结构即可用来寻找整个问题最优解的子问题的最优解。举例来说，寻找图上某顶点到终点的最短路径，可先计算该顶点所有相邻顶点至终点的最短路径，然后以此来选择最佳整体路径，如下图所示：
-
-![](/images/article/Shortest_path_optimal_substructure.png)
-
-一般而言，最优子结构通过如下三个步骤解决问题：
-
-a) 将问题分解成较小的子问题；
-
-b) 通过递归使用这三个步骤求出子问题的最优解；
-
-c) 使用这些最优解构造初始问题的最优解。
-
-子问题的求解是通过不断划分为更小的子问题实现的，直至我们可以在常数时间内求解。
 

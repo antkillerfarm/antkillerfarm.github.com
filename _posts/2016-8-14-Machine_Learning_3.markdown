@@ -12,21 +12,21 @@ category: ML
 
 # 生成学习算法
 
-比如说，要确定一只羊是山羊还是绵羊。从历史数据中学习到模型，然后通过提取这只羊的特征，来预测出这只羊是山羊还是绵羊。这种方法叫做判别学习算法（DLA，Discriminative Learning Algorithm）。其形式化的写法是：$$p(y\vert x)$$。
+比如说，要确定一只羊是山羊还是绵羊。从历史数据中学习到模型，然后通过提取这只羊的特征，来预测出这只羊是山羊还是绵羊。这种方法叫做判别学习算法（DLA，Discriminative Learning Algorithm）。其形式化的写法是：$$p(y\mid x)$$。
 
-换一种思路，我们可以根据山羊的特征首先学习出一个山羊模型，然后根据绵羊的特征学习出一个绵羊模型。然后从这只羊中提取特征，放到山羊模型中看概率是多少，再放到绵羊模型中看概率是多少，哪个大就是哪个。这种方法叫做生成学习算法（GLA，Generative Learning Algorithms）。其形式化的写法是：建立模型——$$p(x\vert y)$$，应用模型——$$p(y)$$。
+换一种思路，我们可以根据山羊的特征首先学习出一个山羊模型，然后根据绵羊的特征学习出一个绵羊模型。然后从这只羊中提取特征，放到山羊模型中看概率是多少，再放到绵羊模型中看概率是多少，哪个大就是哪个。这种方法叫做生成学习算法（GLA，Generative Learning Algorithms）。其形式化的写法是：建立模型——$$p(x\mid y)$$，应用模型——$$p(y)$$。
 
 由贝叶斯（Bayes）公式可知：
 
-$$p(y\vert x)=\frac{p(x\vert y)p(y)}{p(x\vert y=1)p(y=1)+p(x\vert y=0)p(y=0)}=\frac{p(x\vert y)p(y)}{p(x)} \tag{6}$$
+$$p(y\mid x)=\frac{p(x\mid y)p(y)}{p(x\mid y=1)p(y=1)+p(x\mid y=0)p(y=0)}=\frac{p(x\mid y)p(y)}{p(x)} \tag{6}$$
 
-其中，$$p(x\vert y)$$称为后验概率，$$p(y)$$称为先验概率。
+其中，$$p(x\mid y)$$称为后验概率，$$p(y)$$称为先验概率。
 
 >注：Thomas Bayes，1701~1761，英国统计学家。
 
 由于我们关注的是y的离散值结果中哪个概率大（比如山羊概率和绵羊概率哪个大），而并不是关心具体的概率，因此公式6可改写为：
 
-$$\arg\max_yp(y\vert x)=\arg\max_y\frac{p(x\vert y)p(y)}{p(x)}=\arg\max_yp(x\vert y)p(y) \tag{7}$$
+$$\arg\max_yp(y\mid x)=\arg\max_y\frac{p(x\mid y)p(y)}{p(x)}=\arg\max_yp(x\mid y)p(y) \tag{7}$$
 
 ## 高斯分布的向量形式
 
@@ -76,9 +76,9 @@ $$\det(A) = \sum_{i_1,i_2,\ldots,i_n=1}^n \varepsilon_{i_1\cdots i_n}  a_{1,i_1}
 
 $$y\sim Bernoulli(\phi)$$
 
-$$x\vert y=0\sim N(\mu_0,\Sigma)$$
+$$x\mid y=0\sim N(\mu_0,\Sigma)$$
 
-$$x\vert y=1\sim N(\mu_1,\Sigma)$$
+$$x\mid y=1\sim N(\mu_1,\Sigma)$$
 
 >注：这里只讨论y有两种分类的情况，且假设两种分类的$$\Sigma$$相同。
 
@@ -86,11 +86,11 @@ $$x\vert y=1\sim N(\mu_1,\Sigma)$$
 
 $$p(y)=\phi^y(1-\phi)^{1-y}$$
 
-$$p(x\vert y=0)=\frac{1}{(2\pi)^{n/2}\lvert\Sigma\rvert^{1/2}}\exp\left(-\frac{1}{2}(x-\mu_0)^T\Sigma^{-1}(x-\mu_0)\right)=\frac{1}{A}\exp(f(\mu_0,\Sigma,x))$$
+$$p(x\mid y=0)=\frac{1}{(2\pi)^{n/2}\lvert\Sigma\rvert^{1/2}}\exp\left(-\frac{1}{2}(x-\mu_0)^T\Sigma^{-1}(x-\mu_0)\right)=\frac{1}{A}\exp(f(\mu_0,\Sigma,x))$$
 
-$$p(x\vert y=1)=\frac{1}{(2\pi)^{n/2}\lvert\Sigma\rvert^{1/2}}\exp\left(-\frac{1}{2}(x-\mu_1)^T\Sigma^{-1}(x-\mu_1)\right)=\frac{1}{A}\exp(f(\mu_1,\Sigma,x))$$
+$$p(x\mid y=1)=\frac{1}{(2\pi)^{n/2}\lvert\Sigma\rvert^{1/2}}\exp\left(-\frac{1}{2}(x-\mu_1)^T\Sigma^{-1}(x-\mu_1)\right)=\frac{1}{A}\exp(f(\mu_1,\Sigma,x))$$
 
-将上面三个分布的概率密度函数代入《机器学习（二）》公式7，可求得$$\arg\max_yp(y\vert x)$$，然后进行最大似然估计，可得该GDA的最大似然估计参数为：（过程略）
+将上面三个分布的概率密度函数代入《机器学习（二）》公式7，可求得$$\arg\max_yp(y\mid x)$$，然后进行最大似然估计，可得该GDA的最大似然估计参数为：（过程略）
 
 $$\phi=\frac{1}{m}\sum_{i=1}^m1\{y^{(i)}=1\}$$
 
@@ -102,11 +102,11 @@ $$\Sigma=\frac{1}{m}\sum_{i=1}^m(x^{(i)}-\mu_{y^{(i)}})(x^{(i)}-\mu_{y^{(i)}})^T
 
 ![](/images/article/GDA.png)
 
-上图中的直线就是分界线$$p(y=1\vert x)=0.5$$。
+上图中的直线就是分界线$$p(y=1\mid x)=0.5$$。
 
 ## GDA vs 逻辑回归
 
-$$\begin{align}p(y=1\vert x)&=\frac{p(x\vert y=1)p(y=1)}{p(x\vert y=1)p(y=1)+p(x\vert y=0)p(y=0)}
+$$\begin{align}p(y=1\mid x)&=\frac{p(x\mid y=1)p(y=1)}{p(x\mid y=1)p(y=1)+p(x\mid y=0)p(y=0)}
 \\&=\frac{\frac{1}{A}\exp(f(\mu_0,\Sigma,x))\phi}{\frac{1}{A}\exp(f(\mu_0,\Sigma,x))\phi + \frac{1}{A}\exp(f(\mu_1,\Sigma,x))(1-\phi)}
 \\&=\frac{1}{1+\frac{\exp(f(\mu_1,\Sigma,x))(1-\phi)}{\exp(f(\mu_0,\Sigma,x))\phi}}
 \\&=\frac{1}{1+\exp(f(\mu_1,\Sigma,x)+\log(1-\phi)-f(\mu_0,\Sigma,x)-\log(\phi))}
@@ -123,9 +123,9 @@ $$\begin{align}p(y=1\vert x)&=\frac{p(x\vert y=1)p(y=1)}{p(x\vert y=1)p(y=1)+p(x
 
 如果$$P(AB)=0$$，则事件A、B为互不相容事件。
 
-如果$$P(AB)=P(A)P(B)或P(A)=P(A\vert B)$$，则事件A、B为独立事件。
+如果$$P(AB)=P(A)P(B)或P(A)=P(A\mid B)$$，则事件A、B为独立事件。
 
-如果$$P(AB\vert R)=P(A\vert R)P(B\vert R)$$，则事件A、B为条件R下的独立事件。
+如果$$P(AB\mid R)=P(A\mid R)P(B\mid R)$$，则事件A、B为条件R下的独立事件。
 
 可见，这三者是完全不同的数学概念，不要搞混了。
 
@@ -139,25 +139,25 @@ $$\begin{align}p(y=1\vert x)&=\frac{p(x\vert y=1)p(y=1)}{p(x\vert y=1)p(y=1)+p(x
 
 相比之前的应用领域，文本分析的特殊之处在于词典中的单词数量十分庞大，从而导致x的维数巨大（比如50000个单词，就是50000维），以至于之前的方法，根本无法计算。
 
-为了简化问题，我们假设$$p(x_i\vert y)$$是条件独立的。这个假设被称为朴素贝叶斯假设（Naive Bayes (NB) assumption）。使用这个假设的算法被称为朴素贝叶斯分类器（Naive Bayes classifier）。
+为了简化问题，我们假设$$p(x_i\mid y)$$是条件独立的。这个假设被称为朴素贝叶斯假设（Naive Bayes (NB) assumption）。使用这个假设的算法被称为朴素贝叶斯分类器（Naive Bayes classifier）。
 
 从数学角度，NB假设是个很严格的条件，但是实际使用中，即使样本集不满足NB假设，使用NB方法的效果一般还是不错的。
 
-$$\begin{align}p(x_1,\dots,x_{50000}\vert y)&=p(x_1\vert y)p(x_2\vert y,x_1)p(x_3\vert y,x_1,x_2)\cdots p(x_{50000}\vert y,x_1,\dots,x_{49999})(条件概率的乘法公式)
-\\&=p(x_1\vert y)p(x_2\vert y)p(x_3\vert y)\cdots p(x_{50000}\vert y)(NB假设)=\prod_{i=1}^np(x_i\vert y)
+$$\begin{align}p(x_1,\dots,x_{50000}\mid y)&=p(x_1\mid y)p(x_2\mid y,x_1)p(x_3\mid y,x_1,x_2)\cdots p(x_{50000}\mid y,x_1,\dots,x_{49999})(条件概率的乘法公式)
+\\&=p(x_1\mid y)p(x_2\mid y)p(x_3\mid y)\cdots p(x_{50000}\mid y)(NB假设)=\prod_{i=1}^np(x_i\mid y)
 \end{align}$$
 
 因此：
 
-$$\begin{align}p(y=1\vert x)&=\frac{p(x\vert y=1)p(y=1)}{p(x)}
-\\&=\frac{(\prod_{i=1}^np(x_i\vert y=1))p(y=1)}{(\prod_{i=1}^np(x_i\vert y=1))p(y=1)+(\prod_{i=1}^np(x_i\vert y=0))p(y=0)}\tag{1}
+$$\begin{align}p(y=1\mid x)&=\frac{p(x\mid y=1)p(y=1)}{p(x)}
+\\&=\frac{(\prod_{i=1}^np(x_i\mid y=1))p(y=1)}{(\prod_{i=1}^np(x_i\mid y=1))p(y=1)+(\prod_{i=1}^np(x_i\mid y=0))p(y=0)}\tag{1}
 \end{align}$$
 
 最大似然估计值为：
 
-$$\phi_{j\vert y=1}=p(x_j=1\vert y=1)=\frac{\sum_{i=1}^m1\{x_j^{(i)}=1\land y^{(i)}=1\}}{\sum_{i=1}^m1\{y^{(i)}=1\}}$$
+$$\phi_{j\mid y=1}=p(x_j=1\mid y=1)=\frac{\sum_{i=1}^m1\{x_j^{(i)}=1\land y^{(i)}=1\}}{\sum_{i=1}^m1\{y^{(i)}=1\}}$$
 
-$$\phi_{j\vert y=0}=p(x_j=1\vert y=0)=\frac{\sum_{i=1}^m1\{x_j^{(i)}=1\land y^{(i)}=0\}}{\sum_{i=1}^m1\{y^{(i)}=0\}}$$
+$$\phi_{j\mid y=0}=p(x_j=1\mid y=0)=\frac{\sum_{i=1}^m1\{x_j^{(i)}=1\land y^{(i)}=0\}}{\sum_{i=1}^m1\{y^{(i)}=0\}}$$
 
 $$\phi_y=p(y=1)=\frac{\sum_{i=1}^m1\{y^{(i)}=1\}}{m}$$
 
@@ -171,7 +171,7 @@ https://mp.weixin.qq.com/s/e5Sa66HZly2N0sCqoYNSeA
 
 ## 拉普拉斯平滑
 
-对于样本集中未出现的单词，在其首次出现时，由于先验概率$$p(x_i\vert y=1)=0,p(x_i\vert y=0)=0$$，这时公式1会出现$$\frac{0}{0}$$的情况。
+对于样本集中未出现的单词，在其首次出现时，由于先验概率$$p(x_i\mid y=1)=0,p(x_i\mid y=0)=0$$，这时公式1会出现$$\frac{0}{0}$$的情况。
 
 为了避免这种情况，我们假定先验概率至少为1次，也就是
 
@@ -185,13 +185,13 @@ $$\phi_j=p(y=j)=\frac{\sum_{i=1}^m1\{y^{(i)}=j\}+1}{m+k}$$
 
 1.多值伯努利事件模型（multi-variate Bernoulli event model）。
 
-在这个模型中，我们首先随机选定了邮件的类型（垃圾或者普通邮件，也就是$$p(y)$$），然后翻阅词典，随机决定一个词是否要在邮件中出现，出现则$$x_i$$标示为1，否则标示为0。然后将出现的词，组成一封邮件。一个词是否出现的概率为$$p(x_i\vert y)$$，整封邮件的概率为$$p(y)\prod_{i=1}^np(x_i\vert y)$$。
+在这个模型中，我们首先随机选定了邮件的类型（垃圾或者普通邮件，也就是$$p(y)$$），然后翻阅词典，随机决定一个词是否要在邮件中出现，出现则$$x_i$$标示为1，否则标示为0。然后将出现的词，组成一封邮件。一个词是否出现的概率为$$p(x_i\mid y)$$，整封邮件的概率为$$p(y)\prod_{i=1}^np(x_i\mid y)$$。
 
 2.多项事件模型（multinomial event model）。
 
 令$$x_i$$表示邮件的第i个词在字典中的位置，那么$$x_i$$的取值范围为$${1,2,...\lvert V\rvert}$$，$$\lvert V\rvert$$表示字典中单词的数目。这样一封邮件可以表示成$$(x_1,x_2,\dots,x_n)$$，这里n为邮件包含的单词个数，显然每个邮件的n值一般是不同的。
 
-这相当于重复投掷$$\lvert V\rvert$$面的骰子，将观察值记录下来就形成了一封邮件。每个面的概率服从$$p(x_i\vert y)$$，而且每次试验条件独立。这样我们得到的邮件概率是$$p(y)\prod_{i=1}^np(x_i\vert y)$$。
+这相当于重复投掷$$\lvert V\rvert$$面的骰子，将观察值记录下来就形成了一封邮件。每个面的概率服从$$p(x_i\mid y)$$，而且每次试验条件独立。这样我们得到的邮件概率是$$p(y)\prod_{i=1}^np(x_i\mid y)$$。
 
 需要注意的是，上面两个事件模型的概率公式虽然一致，但含义却有很大差异，不要弄混了。
 

@@ -14,7 +14,7 @@ Torch是一个非常老牌的DL框架，它的历史可以追溯至2003年，几
 
 http://torch.ch/
 
-Torch采用Lua语言编写，这和目前DL界主流的python有较大差别。于是Facebook和Uber联合于2016年推出了Torch的python版本——Pytorch。由于Pytorch在开发者社区更受欢迎，短短时间它的开发进度就超越了Torch，成为了2017年DL的年度语言。
+Torch采用Lua语言编写，这和目前ML/DL界主流的python有较大差别。于是Facebook和Uber联合于2016年推出了Torch的python版本——Pytorch。由于Pytorch在开发者社区更受欢迎，短短时间它的开发进度就超越了Torch，成为了2017年DL的年度语言。
 
 官网：
 
@@ -96,4 +96,7 @@ https://mp.weixin.qq.com/s/FGL1vYaXvv-NCcq0vithZw
 
 深度学习框架：PyTorch入门与实践
 
+https://mp.weixin.qq.com/s/vx0txFUf10QDBlldz0VJmg
+
+AI插画师：如何用基于PyTorch的生成对抗网络生成动漫头像？
 

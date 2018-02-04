@@ -206,7 +206,11 @@ https://en.wikipedia.org/wiki/PID_controller
 
 https://www.zhihu.com/question/23088613/answer/23942834
 
+如何通俗地解释 PID 参数整定？
+
 http://blog.163.com/suyanqiang0613@126/blog/static/1100531332012111475650867/
+
+PID算法原理
 
 # 20世纪10大算法
 
@@ -289,29 +293,4 @@ u\alpha + v\lambda + w\rho & u\beta + v\mu + w\sigma & u\gamma + v\nu + w\tau
 \end{pmatrix}$$
 
 可以看出，积矩阵的每个元素是矩阵A、B相应行列向量的内积。
-
-## 向量的向量积
-
-Cross product是一个向量，其定义如下：
-
-$$\mathbf{a} \times \mathbf{b} = \left\| \mathbf{a} \right\| \left\| \mathbf{b} \right\| \sin (\theta) \ \mathbf{n}$$
-
-它还有个更出名的定义：
-
-$$\mathbf{u\times v} = \begin{vmatrix}
-  \mathbf{i}&\mathbf{j}&\mathbf{k}\\
-  u_1&u_2&u_3\\
-  v_1&v_2&v_3\\
-\end{vmatrix}$$
-
-## 向量的混合积
-
-triple product，又称mixed product或box product。
-
-$$\mathbf{a}\cdot(\mathbf{b}\times \mathbf{c}) \equiv \det \begin{bmatrix}
-  a_1 & a_2 & a_3 \\
-  b_1 & b_2 & b_3 \\
-  c_1 & c_2 & c_3 \\
-\end{bmatrix}={\rm det}\left(\mathbf{a},\mathbf{b},\mathbf{c}\right)$$
-
 

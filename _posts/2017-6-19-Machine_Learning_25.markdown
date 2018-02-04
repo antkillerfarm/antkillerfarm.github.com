@@ -1,8 +1,46 @@
 ---
 layout: post
-title:  机器学习（二十五）——数据不平衡问题, 强化学习
+title:  机器学习（二十五）——Beam Search, 数据不平衡问题, 强化学习
 category: ML 
 ---
+
+# Beam Search
+
+## 概述（续）
+
+Beam Search主要用于机器翻译、语音识别等系统。这类系统虽然从理论来说，也就是个多分类系统，然而由于分类数等于词汇数，简单的套用softmax之类的多分类方案，明显是计算量过于巨大了。
+
+PS：中文验证码识别估计也可以采用该技术。
+
+## Beam Search与Viterbi算法
+
+Beam Search与Viterbi算法虽然都是解空间的剪枝算法，但它们的思路是不同的。
+
+Beam Search是对状态迁移的路径进行剪枝，而Viterbi算法是合并不同路径到达同一状态的概率值，用最大值作为对该状态的充分估计值，从而在后续计算中，忽略历史信息（这种以偏概全也就是所谓的Markov性），以达到剪枝的目的。
+
+从状态转移图的角度来说，Beam Search是空间剪枝，而Viterbi算法是时间剪枝。
+
+## 参考
+
+http://people.csail.mit.edu/srush/optbeam.pdf
+
+Optimal Beam Search for Machine Translation
+
+http://www.cnblogs.com/xxey/p/4277181.html
+
+Beam Search（集束搜索/束搜索）
+
+http://blog.csdn.net/girlhpp/article/details/19400731
+
+束搜索算法（Andrew Jungwirth 初稿）BEAM Search
+
+http://hongbomin.com/2017/06/23/beam-search/
+
+Beam Search算法及其应用
+
+https://mp.weixin.qq.com/s/GTtjjBgCDdLRwPrUqfwlVA
+
+如何使用贪婪搜索和束搜索解码算法进行自然语言处理
 
 # 模型驱动 vs 数据驱动
 
@@ -154,7 +192,7 @@ $$R_t=r_t+\gamma(r_{t+1}+\gamma (r_{t+2}+\dots))=r_t+\gamma R_{t+1}$$
 
 **Policy**就是我们的算法追求的目标，可以看做一个函数，在输入state的时候，能够返回此时应该执行的action或者action的概率分布。
 
-$$\pi(a | s) = P[A_t = a | S_t = s]$$
+$$\pi(a \mid  s) = P[A_t = a \mid  S_t = s]$$
 
 **Value**，价值函数，表示在输入state，action的时候，能够返回在state下，执行这个action能得到的Discounted future reward的（期望）值。
 
@@ -162,11 +200,11 @@ Value function一般有两种。
 
 state-value function：
 
-$$v_{\pi}(s) = E_{\pi} [G_t | S_t = s]$$
+$$v_{\pi}(s) = E_{\pi} [G_t \mid  S_t = s]$$
 
 action-value function：
 
-$$q_{\pi}(s; a) = E_{\pi} [G_t | S_t = s; A_t = a]$$
+$$q_{\pi}(s; a) = E_{\pi} [G_t \mid  S_t = s; A_t = a]$$
 
 后者由于和state、action都有关系，也被称作state-action pair value function。
 
@@ -179,63 +217,4 @@ $$q_{\pi}(s; a) = E_{\pi} [G_t | S_t = s; A_t = a]$$
 如果能得到一个好的Value function的话，那么就可以在这个state下，选取value值高的那个action，自然也是一个较好的策略。
 
 如果能得到一个好的transition model的话，一方面，有可能可以通过这个transition model直接推演出最佳的策略；另一方面，也可以用来指导policy function或者value function 的学习过程。
-
-因此，增强学习的方法，大体可以分为三类：
-
-**Value-based RL，值方法。**显式地构造一个model来表示值函数Q，找到最优策略对应的Q函数，自然就找到了最优策略。
-
-**Policy-based RL，策略方法。**显式地构造一个model来表示策略函数,然后去寻找能最大化discounted future reward。
-
-**Model-based RL，基于环境模型的方法。**先得到关于environment transition的model，然后再根据这个model去寻求最佳的策略。
-
-以上三种方法并不是一个严格的划分，很多RL算法同时具有一种以上的特性。
-
-![](/images/article/RL_3.png)
-
-## 参考
-
-https://mp.weixin.qq.com/s/f6sq8cSaU1cuzt7jhsK8Ig
-
-强化学习（Reinforcement Learning）基础介绍
-
-https://mp.weixin.qq.com/s/TGN6Zhrea2LPxdkspVTlAw
-
-穆黎森：算法工程师入门——增强学习
-
-https://mp.weixin.qq.com/s/laKJ_jfNR5L1uMML9wkS1A
-
-强化学习（Reinforcement Learning）算法基础及分类
-
-https://mp.weixin.qq.com/s/Cvk_cePK9iQd8JIKKDDrmQ
-
-强化学习的核心基础概念及实现
-
-http://mp.weixin.qq.com/s/gHM7qh7UTKzatdg34cgfDQ
-
-强化学习全解
-
-https://mp.weixin.qq.com/s/B6ZpJ0Yw9GBZ9_MyNwjlXQ
-
-构建强化学习系统，你需要先了解这些背景知识
-
-https://mp.weixin.qq.com/s/AKuuIJnESMmck8k210CnWg
-
-易忽略的强化学习知识之基础知识及MDP（上）
-
-https://mp.weixin.qq.com/s/phuCKNj_a4CPq6w51Md-9A
-
-易忽略的强化学习知识之基础知识及MDP（下）
-
-https://mp.weixin.qq.com/s/wfCyii6bS-GxMZPg2TPaLA
-
-蒙特卡洛树搜索是什么？如何将其用于规划星际飞行？
-
-https://mp.weixin.qq.com/s/QHAnpGsr1sSaUgOXTJjVjQ
-
-李飞飞高徒带你一文读懂RL来龙去脉
-
-https://mp.weixin.qq.com/s/iN8q24ka762LqY74zoVFsg
-
-3万字剖析强化学习在电商环境下应用
-
 

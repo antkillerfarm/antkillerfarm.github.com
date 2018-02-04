@@ -54,6 +54,10 @@ http://phontron.com/class/mtandseq2seq2017/
 
 CMU Machine Translation and Sequence to Sequence Models
 
+http://www.phontron.com/teaching.php
+
+NLP Programming Tutorial
+
 https://github.com/oxford-cs-deepnlp-2017/lectures
 
 Oxford Deep NLP 2017 course
@@ -346,6 +350,10 @@ Synonyms：一个开源的中文近义词工具包
 https://mp.weixin.qq.com/s/JBu5ozGYkgBJHUyQCne0YQ
 
 中文文本标注工具Chinese-Annotator
+
+https://mp.weixin.qq.com/s/XZ8um7JG5IWpsDPXEHVVuw
+
+十个经典Chatbot框架
 
 ## NLPchina
 

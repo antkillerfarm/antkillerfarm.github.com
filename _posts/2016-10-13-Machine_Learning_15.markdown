@@ -1,8 +1,123 @@
 ---
 layout: post
-title:  机器学习（十五）——协同过滤的ALS算法（2）, 主成分分析
+title:  机器学习（十五）——协同过滤的ALS算法（2）
 category: ML 
 ---
+
+### Spearman秩相关系数（Spearman's rank correlation coefficient）
+
+对秩变量（ranked variables）套用PCC公式，即可得Spearman秩相关系数。
+
+秩变量是一类不在乎值的具体大小，而只关心值的大小关系的统计量。
+
+<table>
+<tr>
+<th>$$X_i$$</th>
+<th>$$Y_i$$</th>
+<th>$$x_i$$</th>
+<th>$$y_i$$</th>
+<th>$$d_i$$</th>
+<th>$$d_i^2$$</th>
+</tr>
+<tr>
+<td>86</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>97</td>
+<td>20</td>
+<td>2</td>
+<td>6</td>
+<td>−4</td>
+<td>16</td>
+</tr>
+<tr>
+<td>99</td>
+<td>28</td>
+<td>3</td>
+<td>8</td>
+<td>−5</td>
+<td>25</td>
+</tr>
+<tr>
+<td>100</td>
+<td>27</td>
+<td>4</td>
+<td>7</td>
+<td>−3</td>
+<td>9</td>
+</tr>
+<tr>
+<td>101</td>
+<td>50</td>
+<td>5</td>
+<td>10</td>
+<td>−5</td>
+<td>25</td>
+</tr>
+<tr>
+<td>103</td>
+<td>29</td>
+<td>6</td>
+<td>9</td>
+<td>−3</td>
+<td>9</td>
+</tr>
+<tr>
+<td>106</td>
+<td>7</td>
+<td>7</td>
+<td>3</td>
+<td>4</td>
+<td>16</td>
+</tr>
+<tr>
+<td>110</td>
+<td>17</td>
+<td>8</td>
+<td>5</td>
+<td>3</td>
+<td>9</td>
+</tr>
+<tr>
+<td>112</td>
+<td>6</td>
+<td>9</td>
+<td>2</td>
+<td>7</td>
+<td>49</td>
+</tr>
+<tr>
+<td>113</td>
+<td>12</td>
+<td>10</td>
+<td>4</td>
+<td>6</td>
+<td>36</td>
+</tr>
+</table>
+
+如上表所示，$$X_i$$和$$Y_i$$是原始的变量值，$$x_i$$和$$y_i$$是rank之后的值，$$d_i=x_i-y_i$$。
+
+当$$X_i$$和$$Y_i$$没有重复值的时候，也可用如下公式计算相关系数：
+
+$$r_s = {1- \frac {6 \sum d_i^2}{n(n^2 - 1)}}$$
+
+>注：Charles Spearman，1863～1945，英国心理学家。这个人的经历比较独特，20岁从军，15年之后退役。然后，进入德国莱比锡大学读博，中间又被军队征召，参加了第二次布尔战争，因此，直到1906年才拿到博士学位。伦敦大学学院心理学教授。   
+>尽管他的学历和教职，都是心理学方面的。但他最大的贡献，却是在统计学领域。他也是因为在统计学方面的成就，得以当选皇家学会会员。   
+>话说那个时代的统计学大牛，除了Fisher之外，基本都是副业比主业强。只有Fisher，主业方面也是那么牛逼，不服不行啊。
+
+![](/images/article/spearman.png)
+
+由上图可见，Pearson系数关注的是两个变量之间的线性相关度，而Spearman系数可以应用到非线性或者难以量化的领域。
+
+参见：
+
+https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient
 
 ### Kendall秩相关系数（Kendall rank correlation coefficient）
 
@@ -24,7 +139,7 @@ https://en.wikipedia.org/wiki/Kendall_rank_correlation_coefficient
 
 ### Tanimoto系数
 
-$$T(x,y)=\frac{|X\cap Y|}{|X\cup Y|}=\frac{|X\cap Y|}{|X|+|Y|-|X\cap Y|}=\frac{\sum x_iy_i}{\sqrt{\sum x_i^2}+\sqrt{\sum y_i^2}-\sum x_iy_i}$$
+$$T(x,y)=\frac{\mid X\cap Y\mid }{\mid X\cup Y\mid }=\frac{\mid X\cap Y\mid }{\mid X\mid +\mid Y\mid -\mid X\cap Y\mid }=\frac{\sum x_iy_i}{\sqrt{\sum x_i^2}+\sqrt{\sum y_i^2}-\sum x_iy_i}$$
 
 该系数由Taffee T. Tanimoto于1960年提出。Tanimoto生平不详，从名字来看，应该是个日本人。在其他领域，它还有另一个名字Jaccard similarity coefficient。（两者的系数公式一致，但距离公式略有差异。）
 
@@ -82,7 +197,7 @@ $$\min_{x_*,y_*}\sum_{u,i\text{ is known}}(r_{ui}-x_u^Ty_i)^2$$
 
 考虑到矩阵的稳定性问题，使用Tikhonov regularization，则上式变为：
 
-$$\min_{x_*,y_*}L(X,Y)=\min_{x_*,y_*}\sum_{u,i\text{ is known}}(r_{ui}-x_u^Ty_i)^2+\lambda(|x_u|^2+|y_i|^2)\tag{2}$$
+$$\min_{x_*,y_*}L(X,Y)=\min_{x_*,y_*}\sum_{u,i\text{ is known}}(r_{ui}-x_u^Ty_i)^2+\lambda(\mid x_u\mid ^2+\mid y_i\mid ^2)\tag{2}$$
 
 优化上式，得到训练结果矩阵$$X_{m\times k},Y_{n\times k}$$。预测时，将User和Item代入$$r_{ui}=x_u^Ty_i$$，即可得到相应的评分预测值。
 
@@ -177,7 +292,7 @@ $$c_{ui}=1+\alpha r_{ui}$$
 
 最终，损失函数变为：
 
-$$\min_{x_*,y_*}L(X,Y)=\min_{x_*,y_*}\sum_{u,i}c_{ui}(p_{ui}-x_u^Ty_i)^2+\lambda(\sum_u|x_u|^2+\sum_i|y_i|^2)$$
+$$\min_{x_*,y_*}L(X,Y)=\min_{x_*,y_*}\sum_{u,i}c_{ui}(p_{ui}-x_u^Ty_i)^2+\lambda(\sum_u\mid x_u\mid ^2+\sum_i\mid y_i\mid ^2)$$
 
 除此之外，我们还可以使用指数函数来定义$$c_{ui}$$：
 
@@ -188,83 +303,4 @@ ALS-WR没有考虑到时序行为的影响，时序行为相关的内容，可�
 http://www.jos.org.cn/1000-9825/4478.htm
 
 基于时序行为的协同过滤推荐算法
-
-## 参考
-
-参考论文：
-
-《Large-scale Parallel Collaborative Filtering forthe Netflix Prize》
-
-《Collaborative Filtering for Implicit Feedback Datasets》
-
-《Matrix Factorization Techniques for Recommender Systems》
-
-其他参考：
-
-http://www.jos.org.cn/html/2014/9/4648.htm
-
-基于大规模隐式反馈的个性化推荐
-
-http://www.fuqingchuan.com/2015/03/812.html
-
-协同过滤之ALS-WR算法
-
-http://www.docin.com/p-714582034.html
-
-基于矩阵分解的协同过滤算法
-
-http://www.tuicool.com/articles/fANvieZ
-
-Spark MLlib中的协同过滤
-
-http://www.68idc.cn/help/buildlang/ask/20150727462819.html
-
-Alternating Least Squares(ASL)的数学推导
-
-https://mp.weixin.qq.com/s/bRhIm8Xvlb51zE2HpDO5Og
-
-一文读懂推荐系统知识体系
-
-http://mp.weixin.qq.com/s/QhP3wRGbrO7sYSDNm8z0gQ
-
-常用推荐算法（50页干货）
-
-https://zhuanlan.zhihu.com/p/23036112
-
-推荐系统常用的推荐算法
-
-https://mp.weixin.qq.com/s/6x8cK_SDW67At3IUZ15ijQ
-
-协同过滤典型算法概述
-
-# 主成分分析
-
-真实的训练数据总是存在各种各样的问题。
-
-比如拿到一个汽车的样本，里面既有以“千米/每小时”度量的最大速度特征，也有“英里/小时”的最大速度特征。显然这两个特征有一个是多余的，我们需要找到，并去除这个冗余。
-
-再比如，针对飞行员的调查，包含两个特征：飞行的技能水平和对飞行的爱好程度。由于飞行员是很难培训的，因此如果没有对飞行的热爱，也就很难学好飞行。所以这两个特征实际上是强相关的（strongly correlated）。如下图所示：
-
-![](/images/article/PCA.png)
-
-我们的目标就是找出上图中所示的向量$$u_1$$。
-
-为了实现这两个目标，我们可以采用PCA（Principal components analysis）算法。
-
-## 数据的规则化处理
-
-在进行PCA算法之前，我们首先要对数据进行预处理，使之规则化。其方法如下：
-
->1.$$\mu=\frac{1}{m}\sum_{i=1}^mx^{(i)}$$   
->2.$$x^{(i)}:=x^{(i)}-\mu$$   
->3.$$\sigma_j^2=\frac{1}{m}\sum_i(x^{(i)})^2$$   
->4.$$x_j^{(i)}:=x_j^{(i)}/\sigma_j$$   
-
-多数情况下，特征空间中，不同特征向量所代表的维度之间，并不能直接比较。
-
-比如，摄氏度和华氏度，虽然都是温度的单位，但两种温标的原点和尺度都不相同，因此需要规范化之后才能比较。
-
-步骤1和2，用于消除原点偏差（常数项偏差）。步骤3和4，用于统一尺度（一次项偏差）。
-
-虽然上面的办法，对于二次以上的偏差无能为力，然而多数情况下，这种处理，已经比原始状态好多了。
 

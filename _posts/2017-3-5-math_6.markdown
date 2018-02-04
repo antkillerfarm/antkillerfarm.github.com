@@ -8,6 +8,16 @@ category: math
 
 ## KS检验（续）
 
+>由于Nobel Prizes没有数学奖，因此数学界的最高奖一般有三个：   
+>1.**Fields Medal**。获奖难度最高，因为有40岁的年龄限制。在国内比较知名的丘成桐、陶哲轩都是该奖的获奖者。   
+>不过他们还不是最屌的。Grigori Perelman（Poincaré conjecture的证明者）直接拒绝了Fields Medal。除此之外，他还拒绝了EMS Prize和Millennium Prize，其中后者奖金高达100万美元，而且还不知道下一个获奖者什么时候诞生（该奖不是年度奖，而是数学难题奖，数学难题的解决周期，你懂的）。   
+>Perelman犹如一个特立独行的隐士，谁的账都不买，包括名利。他将他的伟大证明随手扔进arXiv这样一个非正规网站，但却被《Science》评为年度科学突破。数学界已经很多年没有这样的荣誉了。   
+>补充一下，Perelman就读的中学是Kolmogorov创建的。   
+>2.**Abel Prize**。和Nobel Prizes的规则相同，由于不限年龄，水平是最高的。缺点是这个奖是2001年才创建的，影响力略差。   
+>3.**Wolf Prize**。在Abel Prize创建之前，被誉为数学界的Nobel Prizes。
+
+>Nikolai Vasilyevich Smirnov，1900～1966，俄国数学家。莫斯科大学博士，斯塔克罗夫数学研究所研究员。
+
 >Vladimir Andreevich Steklov，1864～1926，俄国数学家、物理学家。哈尔科夫大学博士，其导师是圣彼得堡学派第二代人物中，仅次于Andrey Markov的Aleksandr Lyapunov。哈尔科夫大学和圣彼得堡大学教授，1919年创建斯塔克罗夫数学研究所。
 
 >斯塔克罗夫数学研究所是一家专职研究没有教学任务和科研任务的研究机构。Grigori Perelman在这里，曾有6年时间没有发表一篇论文。二十世纪俄罗斯绝大多数的数学发现都源自这里。
@@ -69,7 +79,7 @@ $$\mathcal{F}\{f * g\} = k\cdot \mathcal{F}\{f\}\cdot \mathcal{F}\{g\}$$
 
 Minkowski distance的定义：
 
-$$d(x,y)=\sqrt[\lambda]{\sum_{i=1}^{n}\lvert x_i-y_i\lvert^{\lambda}}$$
+$$d(x,y)=\sqrt[\lambda]{\sum_{i=1}^{n}\mid x_i-y_i\mid^{\lambda}}$$
 
 显然，当$$\lambda=2$$时，该距离为欧氏距离。当$$\lambda=1$$时，也被称为CityBlock Distance或Manhattan Distance（曼哈顿距离）。
 
@@ -167,27 +177,3 @@ $$\forall x \in I \; \forall \epsilon > 0 \; \exists \delta > 0 \; \forall y \in
 因为x不变，所以这实际上是个定点连续的条件。因此，这种连续又叫做Pointwise continuity。
 
 通俗的说法：**f的函数曲线在区间内没有断点。**
-
-## 一致连续（Uniform continuity）
-
-$$\forall \epsilon > 0 \; \exists \delta > 0 \; \forall x, y \in I ; \, |x - y|<\delta \, \Rightarrow \, |f(x)-f(y)|<\epsilon$$
-
-Uniform continuity比Pointwise continuity要严格一些，因为x,y都是变量。
-
-Uniform continuity的形象解释如下所示：
-
-![](/images/article/Continuity_and_uniform_continuity_2.gif)
-
-上图中蓝框和红框的顶部和底部用粗线表示，在方框的运动过程中，红线**始终没有穿过方框的顶部或底部**，所以它是Uniform continuity的，而蓝线不是。
-
-$$f(x)=\frac{1}{x}$$不是Uniform continuity的最大原因在于$$x\to 0,f(x)\to \infty$$，由于值域没有上界，因此，对于给定的$$\delta$$，$$\epsilon$$也是没有上界的。
-
-但如果定义域限定为闭区间，则值域必有界。这时，Uniform continuity和Pointwise continuity是等价的。
-
-## 绝对连续（Absolute continuity）
-
-$$\forall \varepsilon > 0 \; \exists \delta > 0 \; \forall (x_k, y_k) \in I ; \, \sum_k (y_k - x_k) < \delta \, \Rightarrow \, \sum_k | f(y_k) - f(x_k) | < \varepsilon$$
-
-Absolute continuity不仅要求整个函数满足Uniform continuity，而且任意子区间也要满足该条件。因此，Absolute continuity比Uniform continuity更严格。
-
-

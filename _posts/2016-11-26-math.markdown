@@ -282,9 +282,9 @@ $$size(A-C)\le size(A-B)+size(B-C)$$
 
 证明：
 
-$$A-C=\{x|x\in A \cap x\notin C\}=\{x|x\in A \cap (x\in B \cup x\notin B)\cap x\notin C\}
-\\=\{x|(x\in A \cap x\notin B \cap x\notin C) \cup (x\in A \cap x\in B \cap x\notin C) \}
-\\\subseteq \{x|(x\in A \cap x\notin B) \cup (x\in B \cap x\notin C) \}=(A-B)\cup (B-C)$$
+$$A-C=\{x\mid x\in A \cap x\notin C\}=\{x\mid x\in A \cap (x\in B \cup x\notin B)\cap x\notin C\}
+\\=\{x\mid (x\in A \cap x\notin B \cap x\notin C) \cup (x\in A \cap x\in B \cap x\notin C) \}
+\\\subseteq \{x\mid (x\in A \cap x\notin B) \cup (x\in B \cap x\notin C) \}=(A-B)\cup (B-C)$$
 
 又因为：$$size(X\cup Y)\le size(X)+size(Y)$$，所以
 

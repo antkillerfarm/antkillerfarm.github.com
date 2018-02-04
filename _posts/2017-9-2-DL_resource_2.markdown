@@ -178,7 +178,7 @@ Graphcore AI芯片：更多分析
 
 https://mp.weixin.qq.com/s/O-NDsFs6AOwl43LyevXtzg
 
-OpenAI发布「块稀疏」GPU内核：实现文本情感分析与图像生成建模当前最优水平
+OpenAI发布“块稀疏”GPU内核：实现文本情感分析与图像生成建模当前最优水平
 
 https://mp.weixin.qq.com/s/Qfbc2iQnXacOqOGIrpRQRw
 

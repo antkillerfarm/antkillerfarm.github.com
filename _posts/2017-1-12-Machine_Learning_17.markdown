@@ -4,7 +4,62 @@ title:  机器学习（十七）——隐式狄利克雷划分
 category: ML 
 ---
 
-## ICA算法（续）
+## ICA的不确定性
+
+不幸的是，在没有源和混合矩阵的先验知识的情况下，仅凭$$x^{(i)}$$是没有办法求出W的。为了说明这一点，我们引入置换矩阵的概念。
+
+置换矩阵（permutation matrix）是一种元素只由0和1组成的方块矩阵。置换矩阵的每一行和每一列都恰好只有一个1，其余的系数都是0。它的例子如下：
+
+$$P=\begin{bmatrix}0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 1 \end{bmatrix};
+P=\begin{bmatrix}0 & 1 \\ 1 & 0 \end{bmatrix};
+P=\begin{bmatrix}1 & 0 \\ 0 & 1 \end{bmatrix}$$
+
+在线性代数中，每个n阶的置换矩阵都代表了一个对n个元素（n维空间的基）的置换。当一个矩阵乘上一个置换矩阵时，所得到的是原来矩阵的横行（置换矩阵在左）或纵列（置换矩阵在右）经过置换后得到的矩阵。
+
+ICA的不确定性(ICA ambiguities)包括以下几种情形：
+
+1.无法区分W和WP。比如改变说话人的编号，会改变$$s^{(i)}$$的值，但却不会改变$$x^{(i)}$$的值，因此也就无法确定$$s^{(i)}$$的值了。
+
+2.无法确定W的尺度。比如$$x^{(i)}$$还可以写作$$x^{(i)}=2A \cdot (0.5)s^{(i)}$$，因此在不知道A的情况下，同样无法确定$$s^{(i)}$$的值。
+
+3.信号不能是高斯分布的。
+
+假设两个人发出的声音信号符合多值正态分布$$s\sim \mathcal{N}(0,I)$$，这里的I是一个2阶单位阵，则$$E[xx^T]=E[Ass^TA^T]=AA^T$$。
+
+假设R是正交矩阵，$$A'=AR,x'=A's$$，则：
+
+$$E[xx^T]=E[A'ss^T(A')^T]=E[ARss^T(AR)^T]=ARR^TA^T=AA^T$$
+
+可见，无论是A还是A'，观测值x都是一个$$\mathcal{N}(0,AA^T)$$的正态分布，也就是说A的值无法确定，那么W和s也就无法求出了。
+
+## 密度函数和线性变换
+
+在讨论ICA的具体算法之前，我们先来回顾一下概率和线性代数里的知识。
+
+假设我们的随机变量s有概率密度（probability density）函数$$p_s(s)$$。为了简单，我们再假设s是实数，还有一个随机变量$$x=As$$，A和x都是实数。令$$p_x$$是x的概率密度，那么怎么求$$p_x$$呢？
+
+令$$W=A^{-1}$$，则$$s=Wx$$。然而$$p_x(x)\neq p_s(Wx)$$。
+
+这里以均匀分布（Uniform）为例讨论一下。令$$s\sim \text{Uniform}[0,1]$$，则$$p_s(s)=1$$。令$$A=2$$，则$$W=0.5$$，$$x=2s\sim \text{Uniform}[0,2]$$，因此$$p_x(x)=p_s(Wx)\lvert W \rvert$$。
+
+## 累积分布函数
+
+累积分布函数（cumulative distribution function，CDF）是概率论中的一个基本概念。它的定义如下：
+
+$$F(z_0)=P(z\le z_0)=\int_{-\infty}^{z_0}p_z(z)\mathrm{d}z$$
+
+可以看出：
+
+$$p_z(z)=F'(z)$$
+
+## ICA算法
+
+ICA算法归功于Bell 和 Sejnowski，这里使用最大似然估计来解释算法。（原始论文中使用的是一个复杂的方法Infomax principal，这在最新的推导中已经不需要了。）
+
+>注：Terrence (Terry) Joseph Sejnowski，1947年生，美国科学家。普林斯顿大学博士，导师是神经网络界的大神John Hopfield。ICA算法和Boltzmann machine的发现人。
+
+>Tony Bell的个人主页：
+>http://cnl.salk.edu/~tony/index.html
 
 我们假定每个$$s_i$$有概率密度$$p_s$$，那么给定时刻原信号的联合分布就是：
 
@@ -12,7 +67,7 @@ $$p(s)=\prod_{i=1}^np_s(s_i)$$
 
 因此：
 
-$$p(x)=\prod_{i=1}^np_s(w_i^Tx)\cdot |W|\tag{2}$$
+$$p(x)=\prod_{i=1}^np_s(w_i^Tx)\cdot \mid W\mid \tag{2}$$
 
 为了确定$$s_i$$的概率密度，我们首先要确定它的累计分布函数$$F(x)$$。而这需要满足两个性质：单调递增和在$$[0,1]$$区间。
 
@@ -30,7 +85,7 @@ $$p_s(s)=g'(s)=g(s)(1-g(s))$$
 
 公式2的对数似然估计函数为：
 
-$$\ell(W)=\sum_{i=1}^m\left(\sum_{j=1}^m\log g'(w_j^Tx^{(i)})+\log|W|\right)\tag{3}$$
+$$\ell(W)=\sum_{i=1}^m\left(\sum_{j=1}^m\log g'(w_j^Tx^{(i)})+\log\mid W\mid \right)\tag{3}$$
 
 因为：
 
@@ -66,7 +121,7 @@ Latent Dirichlet Allocation，简称LDA。注意不要和Linear Discriminant Ana
 
 Markov chain的定义如下：
 
-$$P(X_{t+1}=x|X_t, X_{t-1}, \cdots) =P(X_{t+1}=x|X_t)$$
+$$P(X_{t+1}=x\mid X_t, X_{t-1}, \cdots) =P(X_{t+1}=x\mid X_t)$$
 
 即状态转移的概率只依赖于前一个状态的随机过程。
 
@@ -146,87 +201,5 @@ $$\alpha(i,j) = \min\left\{\frac{p(j)q(j,i)}{p(i)q(i,j)},1\right\}$$
 
 这里使用Dirichlet分布的原因在于，数据采用多项分布，而Dirichlet分布正好是多项分布的共轭先验分布。
 
-$$Dir(\overrightarrow{p}|\overrightarrow{\alpha})+MultCount(\overrightarrow{n})=Dir(\overrightarrow{p}|\overrightarrow{\alpha}+\overrightarrow{n})$$
-
-和wiki上对Dirichlet分布的pdf函数的描述（参见《数学狂想曲（二）》中的公式1）不同，rickjin在这里采用了如下定义：
-
-$$Dir(\overrightarrow{p}|\overrightarrow{\alpha})= 
-\frac{1}{\Delta(\overrightarrow{\alpha})} \prod_{k=1}^V p_k^{\alpha_k -1}， 
-\quad \overrightarrow{\alpha}=(\alpha_1, \cdots, \alpha_V)$$
-
-其中：
-
-$$\Delta(\overrightarrow{\alpha}) = 
-\int \prod_{k=1}^V p_k^{\alpha_k -1} d\overrightarrow{p}$$
-
-可以看出两种描述中的$$\mathrm{B}(\boldsymbol\alpha)$$和$$\Delta(\overrightarrow{\alpha})$$是等价的。
-
-下面我们来证明这个结论，即：
-
-$$\mathrm{B}(\boldsymbol\alpha)=\int \prod_{k=1}^V p_k^{\alpha_k -1} d\overrightarrow{p}\tag{1}$$
-
-**证明**：这里为了简化问题，令V=3。则根据《数学狂想曲（二）》中的公式1可得：
-
-$$Dir(\overrightarrow{p}|\overrightarrow{\alpha})= 
-\frac{1}{\mathrm{B}(\alpha_1,\alpha_2,\alpha_3)}  p_1^{\alpha_1 -1}p_2^{\alpha_2 -1}p_3^{\alpha_3 -1}$$
-
-对该pdf进行积分：
-
-$$\iiint\frac{1}{\mathrm{B}(\alpha_1,\alpha_2,\alpha_3)}p_1^{\alpha_1 -1}p_2^{\alpha_2 -1}p_3^{\alpha_3 -1}\mathrm{d}p_1\mathrm{d}p_2\mathrm{d}p_3=\frac{1}{\mathrm{B}(\alpha_1,\alpha_2,\alpha_3)}\int p_1^{\alpha_1 -1}p_2^{\alpha_2 -1}p_3^{\alpha_3 -1}\mathrm{d}\overrightarrow{p}$$
-
-由pdf的定义可知，上面的积分值为1。
-
-因此：
-
-$$\mathrm{B}(\alpha_1,\alpha_2,\alpha_3)=\int p_1^{\alpha_1 -1}p_2^{\alpha_2 -1}p_3^{\alpha_3 -1}\mathrm{d}\overrightarrow{p}$$
-
-证毕。
-
-从上面的证明过程，可以看出公式1并不是恒等式，而是在Dirichlet分布下才成立的等式。这也是共轭先验分布能够简化计算的地方。
-
-## PLSA
-
-Probabilistic Latent Semantic Analysis是Thomas Hofmann于1999年在UCB读博期间提出的算法。
-
-原文：
-
-https://dslpitt.org/uai/papers/99/p289-hofmann.pdf
-
-示意图：
-
-![](/images/article/plsa-doc-topic-word.jpg)
-
-PLSA将生成文档的过程，分为两个步骤：
-
-1.生成文档的主题。（doc->topic）
-
-2.根据主题生成相关的词.（topic->word）
-
-第m篇文档$$d_m$$中的每个词的生成概率为：
-
-$$p(w|d_m) = \sum_{z=1}^K p(w|z)p(z|d_m) = \sum_{z=1}^K \varphi_{zw} \theta_{mz}$$
-
-## LDA
-
-利用贝叶斯学派的观点改造PLSA，可得：
-
-![](/images/article/lda-dice.jpg)
-
-LDA生成模型包含两个过程：
-
-1.生成第m篇文档中的所有词对应的topics。
-
-$$\overrightarrow{\alpha}\xrightarrow[Dirichlet]{} \overrightarrow{\theta}_m \xrightarrow[Multinomial]{} \overrightarrow{z}_{m}$$
-
-2.K个由topics生成words的独立过程。
-
-$$\overrightarrow{\beta} \xrightarrow[Dirichlet]{} \overrightarrow{\varphi}_k \xrightarrow[Multinomial]{} \overrightarrow{w}_{(k)}$$
-
-因此，总共就是$$M+K$$个Dirichlet-Multinomial共轭结构。
-
-LDA的Gibbs Sampling图示：
-
-![](/images/article/gibbs-path-search.jpg)
-
-
+$$Dir(\overrightarrow{p}\mid \overrightarrow{\alpha})+MultCount(\overrightarrow{n})=Dir(\overrightarrow{p}\mid \overrightarrow{\alpha}+\overrightarrow{n})$$
 

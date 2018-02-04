@@ -156,7 +156,7 @@ Swish在原点附近不是饱和的，只有负半轴远离原点区域才是饱
 
 苏剑林据此提出了自己的激活函数：
 
-$$\max(x, x\cdot e^{-|x|})$$
+$$\max(x, x\cdot e^{-\mid x\mid })$$
 
 该函数的图像如上图的蓝色曲线所示。
 
@@ -184,7 +184,7 @@ x, & -1\le x \le 1 \\
 
 ### soft sign
 
-$$\text{softsign}(x)=\frac{x}{1+|x|}$$
+$$\text{softsign}(x)=\frac{x}{1+\mid x\mid }$$
 
 ## 参考
 

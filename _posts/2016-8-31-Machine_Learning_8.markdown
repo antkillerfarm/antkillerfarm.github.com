@@ -87,55 +87,55 @@ $$MI(x_i,y)=KL(p(x_i,y)\|p(x_i)p(y))$$
 
 前面提到最大似然（maximum likelihood）估计方法的公式如下：
 
-$$\theta_{ML}=\arg\max_\theta\prod_{i=1}^mp(y^{(i)}\vert x^{(i)};\theta)$$
+$$\theta_{ML}=\arg\max_\theta\prod_{i=1}^mp(y^{(i)}\mid x^{(i)};\theta)$$
 
 从频率统计（frequentist statistic）学派的观点来看，这里的$$\theta$$是一个未知的常数，我们的任务就是求出这个常数。然而从贝叶斯学派的观点来看，$$\theta$$是一个未知的随机变量。
 
-也就是说似然函数，对于前者来说，是这样的：$$\prod_{i=1}^mp(y^{(i)}\vert x^{(i)};\theta)$$；但对于后者来说，却是这样的：$$\prod_{i=1}^mp(y^{(i)}\vert x^{(i)},\theta)$$
+也就是说似然函数，对于前者来说，是这样的：$$\prod_{i=1}^mp(y^{(i)}\mid x^{(i)};\theta)$$；但对于后者来说，却是这样的：$$\prod_{i=1}^mp(y^{(i)}\mid x^{(i)},\theta)$$
 
 我们首先假定$$\theta$$的分布为$$p(\theta)$$，这种假定由于没有事实根据，通常被称作先验分布（prior distribution）。
 
 我们针对训练集$$S=\{(x^{(i)},y^{(i)})\}_{i=1}^m$$，训练得到预测函数。并按照如下公式计算后验分布（posterior distribution）：
 
-$$p(\theta\vert S)=\frac{p(S\vert\theta)p(\theta)}{p(S)}\tag{1}$$
+$$p(\theta\mid S)=\frac{p(S\mid\theta)p(\theta)}{p(S)}\tag{1}$$
 
 由全概率公式可得：
 
-$$p(S)=p(S\vert\theta_1)p(\theta_1)+\dots+p(S\vert\theta_n)p(\theta_n)$$
+$$p(S)=p(S\mid\theta_1)p(\theta_1)+\dots+p(S\mid\theta_n)p(\theta_n)$$
 
 上式的$$\theta_i$$表示$$\theta$$的各个取值区间，然而由于$$\theta$$是连续随机变量，根据微积分原理可得：
 
-$$p(S)=\int_\theta p(S\vert\theta)p(\theta)\mathrm{d}\theta\tag{2}$$
+$$p(S)=\int_\theta p(S\mid\theta)p(\theta)\mathrm{d}\theta\tag{2}$$
 
 将公式2代入公式1可得：
 
-$$p(\theta\vert S)=\frac{p(S\vert\theta)p(\theta)}{\int_\theta p(S\vert\theta)p(\theta)\mathrm{d}\theta}=\frac{\left(\prod_{i=1}^mp(y^{(i)}\vert x^{(i)},\theta)\right)p(\theta)}{\int_\theta\left(\prod_{i=1}^mp(y^{(i)}\vert x^{(i)},\theta)\right)p(\theta)\mathrm{d}\theta}$$
+$$p(\theta\mid S)=\frac{p(S\mid\theta)p(\theta)}{\int_\theta p(S\mid\theta)p(\theta)\mathrm{d}\theta}=\frac{\left(\prod_{i=1}^mp(y^{(i)}\mid x^{(i)},\theta)\right)p(\theta)}{\int_\theta\left(\prod_{i=1}^mp(y^{(i)}\mid x^{(i)},\theta)\right)p(\theta)\mathrm{d}\theta}$$
 
 当我们针对新的样本x进行预测时，和上面的推导类似，可得：
 
-$$p(y\vert x,S)=\int_\theta p(y\vert x,\theta,S)p(\theta\vert S)\mathrm{d}\theta$$
+$$p(y\mid x,S)=\int_\theta p(y\mid x,\theta,S)p(\theta\mid S)\mathrm{d}\theta$$
 
 因为预测样本集和训练样本集的分布是独立的，因此上式又可写为：
 
-$$p(y\vert x,S)=\int_\theta p(y\vert x,\theta)p(\theta\vert S)\mathrm{d}\theta$$
+$$p(y\mid x,S)=\int_\theta p(y\mid x,\theta)p(\theta\mid S)\mathrm{d}\theta$$
 
 这个公式又被称作后验预测分布（Posterior predictive distribution）。
 
-$$p(\theta\vert S)$$可由前面的公式得到。
+$$p(\theta\mid S)$$可由前面的公式得到。
 
 假若我们要求期望值的话，那么套用求期望的公式即可：
 
-$$E[y\vert x,S]=\int_y yp(y\vert x,S)\mathrm{d}y$$
+$$E[y\mid x,S]=\int_y yp(y\mid x,S)\mathrm{d}y$$
 
 由上可见，贝叶斯估计将$$\theta$$视为随机变量，$$\theta$$的值满足一定的分布，不是固定值，我们无法通过计算获得其值，只能在预测时计算积分。
 
-上述贝叶斯估计方法，虽然公式合理优美，但后验概率$$p(\theta\vert S)$$通常是很难计算的，因为它是$$\theta$$上的高维积分函数。
+上述贝叶斯估计方法，虽然公式合理优美，但后验概率$$p(\theta\mid S)$$通常是很难计算的，因为它是$$\theta$$上的高维积分函数。
 
-观察$$p(\theta\vert S)$$的公式，在分母$$P(S)$$一定的情况下，分子越大则值越大，也就是$$p(\theta\vert S)$$的概率越大。
+观察$$p(\theta\mid S)$$的公式，在分母$$P(S)$$一定的情况下，分子越大则值越大，也就是$$p(\theta\mid S)$$的概率越大。
 
 因此，可得如下算法：
 
-$$\theta_{MAP}=\arg\max_\theta\left(\prod_{i=1}^mp(y^{(i)}\vert x^{(i)},\theta)\right)p(\theta)$$
+$$\theta_{MAP}=\arg\max_\theta\left(\prod_{i=1}^mp(y^{(i)}\mid x^{(i)},\theta)\right)p(\theta)$$
 
 这个算法叫做最大后验概率估计（maximum a posteriori）。
 

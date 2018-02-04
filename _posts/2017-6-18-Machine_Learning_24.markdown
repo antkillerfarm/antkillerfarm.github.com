@@ -1,8 +1,36 @@
 ---
 layout: post
-title:  机器学习（二十四）——时间序列分析, 推荐算法中的常用排序算法, Tri-training, Beam Search
+title:  机器学习（二十四）——时间序列分析, 推荐算法中的常用排序算法, Tri-training
 category: ML 
 ---
+
+# 单分类SVM&多分类SVM（续）
+
+## Hinge Loss
+
+在之前的SVM的推导中，我们主要是从解析几何的角度，给出了SVM的计算公式。但SVM实际上也是有loss function的：
+
+$$\ell(y) = \max(0, 1-t \cdot y)$$
+
+其中，$$t=\pm 1$$表示分类标签，$$y=w \cdot x+b$$表示分类超平面计算的score。可以看出当t和y有相同的符号时（意味着 y 预测出正确的分类），loss为0。反之，则会根据y线性增加one-sided error。
+
+![](/images/article/hinge_loss.png)
+
+由于其函数形状像个合叶，因此又名Hinge Loss函数。
+
+多分类SVM的Hinge Loss公式：
+
+$$\ell(y) = \sum_{t \ne y} \max(0, 1 + \mathbf{w}_t \mathbf{x} - \mathbf{w}_y \mathbf{x})$$
+
+参见：
+
+http://www.jianshu.com/p/4a40f90f0d98
+
+Hinge loss
+
+http://mp.weixin.qq.com/s/96_u9QM63SISwTbimmH6wA
+
+支持向量回归机
 
 # 时间序列分析
 
@@ -240,30 +268,17 @@ http://lamda.nju.edu.cn/huangsj/dm11/files/gaoy.pdf
 
 # Beam Search
 
-Beam Search（集束搜索）是一种启发式图搜索算法，通常用在图的解空间比较大的情况下，为了减少搜索所占用的空间和时间，在每一步深度扩展的时候，剪掉一些质量比较差的结点，保留下一些质量较高的结点。
+## 概述
+
+Beam Search（集束搜索）是一种启发式图搜索算法，通常用在图的解空间比较大的情况下，为了减少搜索所占用的空间和时间，在每一步深度扩展的时候，剪掉一些质量比较差的结点，保留下一些质量较高的结点。保留下来的结点个数一般叫做Beam Width。
 
 这样减少了空间消耗，并提高了时间效率，但缺点就是有可能存在潜在的最佳方案被丢弃，因此Beam Search算法是不完全的，一般用于解空间较大的系统中。
 
 ![](/images/article/beam_search.png)
 
-上图是一个Beam Search的剪枝示意图。
+上图是一个Beam Width为2的Beam Search的剪枝示意图。每一层只保留2个最优的分支，其余分支都被剪掉了。
 
-Beam Search主要用于机器翻译、语音识别等系统。这类系统虽然从理论来说，也就是个多分类系统，然而由于分类数等于词汇数，简单的套用softmax之类的多分类方案，明显是计算量过于巨大了。
+显然，Beam Width越大，找到最优解的概率越大，相应的计算复杂度也越大。因此，设置合适的Beam Width是一个工程中需要trade off的事情。
 
-PS：中文验证码识别估计也可以采用该技术。
-
-参见：
-
-http://people.csail.mit.edu/srush/optbeam.pdf
-
-Optimal Beam Search for Machine Translation
-
-http://www.cnblogs.com/xxey/p/4277181.html
-
-Beam Search（集束搜索/束搜索）
-
-http://blog.csdn.net/girlhpp/article/details/19400731
-
-束搜索算法（Andrew Jungwirth 初稿）BEAM Search
-
+当Beam Width为1时，也就是著名的A*算法了。
 

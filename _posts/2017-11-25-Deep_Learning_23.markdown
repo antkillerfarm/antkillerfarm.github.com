@@ -4,7 +4,7 @@ title:  深度学习（二十三）——LSTM进阶, 语音识别
 category: DL 
 ---
 
-# LSTM进阶
+# LSTM进阶（续）
 
 ## 《Long Short-Term Memory Based Recurrent Neural Network Architectures for Large Vocabulary Speech Recognition》（续）
 
@@ -56,6 +56,10 @@ LSTM文本分类实战
 http://mp.weixin.qq.com/s/3nwgft9c27ih172ANwHzvg
 
 从零开始：如何使用LSTM预测汇率变化趋势
+
+https://mp.weixin.qq.com/s/M18c3sgvjV2b2ksCsyOxbQ
+
+Nested LSTM：一种能处理更长期信息的新型LSTM扩展
 
 # 语音识别
 

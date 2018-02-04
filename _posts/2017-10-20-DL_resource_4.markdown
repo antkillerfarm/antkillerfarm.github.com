@@ -280,4 +280,8 @@ https://mp.weixin.qq.com/s/fPj4wMtiFX55c_UjNsQnBg
 
 PointCNN全面刷新测试记录：山东大学提出通用点云卷积框架
 
+https://mp.weixin.qq.com/s/tzAp6PxAn3GszcttRzfz8Q
+
+CMU提出新型智能体定位方法：“主动神经定位器”
+
 

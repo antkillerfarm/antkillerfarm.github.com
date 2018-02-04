@@ -4,7 +4,15 @@ title:  机器学习（十）——因子分析（1）
 category: ML 
 ---
 
-## EM算法的一般形式（续）
+## EM算法的一般形式
+
+EM算法一般形式的似然函数为：
+
+$$\ell(\theta)=\sum_{i=1}^m\log p(x^{(i)};\theta)=\sum_{i=1}^m\log \sum_zp(x^{(i)},z^{(i)};\theta)\tag{1}$$
+
+根据这个公式直接求$$\theta$$一般比较困难，但是如果确定了z之后，求解就容易了。
+
+EM算法是一种解决存在隐含变量优化问题的有效方法。既然不能直接最大化$$\ell(\theta)$$，我们可以不断地建立$$\ell(\theta)$$的下界(E-Step),然后优化下界(M-Step)。
 
 这里首先假设$$z^{(i)}$$的分布为$$Q_i$$。显然：
 
@@ -52,7 +60,7 @@ $$\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}=c=\frac{\sum_zp(x^{(i)},z^{(i)}
 
 因为$$\sum_zQ_i(z^{(i)})=1$$，所以上式可变形为：
 
-$$Q_i(z^{(i)})=\frac{p(x^{(i)},z^{(i)};\theta)}{\sum_zp(x^{(i)},z^{(i)};\theta)}=\frac{p(x^{(i)},z^{(i)};\theta)}{p(x^{(i)};\theta)}=p(z^{(i)}\vert x^{(i)};\theta)$$
+$$Q_i(z^{(i)})=\frac{p(x^{(i)},z^{(i)};\theta)}{\sum_zp(x^{(i)},z^{(i)};\theta)}=\frac{p(x^{(i)},z^{(i)};\theta)}{p(x^{(i)};\theta)}=p(z^{(i)}\mid x^{(i)};\theta)$$
 
 可见，当$$Q_i(z^{(i)})$$为$$z^{(i)}$$的后验分布时，$$\ell(\theta)$$的下界达到最大值。
 
@@ -60,7 +68,7 @@ $$Q_i(z^{(i)})=\frac{p(x^{(i)},z^{(i)};\theta)}{\sum_zp(x^{(i)},z^{(i)};\theta)}
 
 >Repeat until convergence {   
 ><span style="white-space: pre">	</span>(E-step) For each i：   
-><span style="white-space: pre">			</span>$$Q_i(z^{(i)}):=p(z^{(i)}\vert x^{(i)};\theta)$$   
+><span style="white-space: pre">			</span>$$Q_i(z^{(i)}):=p(z^{(i)}\mid x^{(i)};\theta)$$   
 ><span style="white-space: pre">	</span>(M-step) Update the parameters：   
 ><span style="white-space: pre">			</span>$$\theta:=\arg\max_\theta\sum_i\sum_zQ_i(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}$$      
 >}
@@ -117,13 +125,13 @@ EM算法原理总结
 
 E-Step很简单：
 
-$$w_j^{(i)}=Q_i(z^{(i)}=j)=p(z^{(i)}=j\vert x^{(i)};\phi,\mu,\Sigma)$$
+$$w_j^{(i)}=Q_i(z^{(i)}=j)=p(z^{(i)}=j\mid x^{(i)};\phi,\mu,\Sigma)$$
 
 在M-Step中，我们将各个变量和分布的概率密度函数代入，可得：
 
 $$\begin{align}
 &\sum_{i=1}^m\sum_{z^{(i)}}Q_i(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}
-\\&=\sum_{i=1}^m\sum_{j=1}^kQ_i(z^{(i)}=j)\log\frac{p(x^{(i)}\vert z^{(i)}=j;\mu,\Sigma)p(z^{(i)}=j;\phi)}{Q_i(z^{(i)}=j)}
+\\&=\sum_{i=1}^m\sum_{j=1}^kQ_i(z^{(i)}=j)\log\frac{p(x^{(i)}\mid z^{(i)}=j;\mu,\Sigma)p(z^{(i)}=j;\phi)}{Q_i(z^{(i)}=j)}
 \\&=\sum_{i=1}^m\sum_{j=1}^kw_j^{(i)}\log\frac{\frac{1}{(2\pi)^{n/2}\lvert\Sigma_j\rvert^{1/2}}\exp\left(-\frac{1}{2}(x^{(i)}-\mu_j)^T\Sigma_j^{-1}(x^{(i)}-\mu_j)\right)\cdot \phi_j}{w_j^{(i)}}
 \end{align}$$
 
@@ -159,7 +167,7 @@ $$\nabla_A\operatorname{tr}(ABA^TC)=CAB+C^TAB^T\tag{5.9}$$
 
 $$\nabla_{A^T}\operatorname{tr}(ABA^TC)=B^TA^TC^T+BA^TC\tag{5.10}$$
 
-$$\nabla_A|A|=|A|(A^{-1})^T\tag{5.11}$$
+$$\nabla_A\mid A\mid =\mid A\mid (A^{-1})^T\tag{5.11}$$
 
 因为$$\mu_l^T\Sigma_l^{-1}\mu_l$$是实数，由公式5.1可得：
 
@@ -239,33 +247,5 @@ $$\sigma=\frac{1}{mn}\sum_{j=1}^n\sum_{i=1}^m(x_j^{(i)}-\mu_j)^2$$
 
 这样做的缺点也是显而易见的，我们认为特征间相互独立，这个假设太强。接下来，我们给出一种称为因子分析（factor analysis）的方法，使用更多的参数来分析特征间的关系，并且不需要计算一个完整的$$\Sigma$$。
 
-## 利用多元高斯分布密度函数计算积分的技巧
 
-$$I(A,b,c)=\int_x\exp\left(-\frac{1}{2}(x^TAx+x^Tb+c)\right)\mathrm{d}x$$
-
-其中A为对称正定矩阵，b为向量。对于上面这样的积分，可以使用“完全配方法”（completion-of-squares）的数学技巧求解。
-
-因为
-
-$$x^TAx+x^Tb+c=(x-h)^TA(x-h)+k$$
-
-其中$$h=-\frac{A^{-1}b}{2},k=c-\frac{b^TA^{-1}b}{4}$$。
-
-所以
-
-$$\begin{align}
-I(A,b,c)&=\int_x\exp\left(-\frac{1}{2}((x - h)^TA(x - h)+k)\right)\mathrm{d}x
-\\&=\int_x\exp\left(-\frac{1}{2}(x - h)^TA(x - h)-k/2\right)\mathrm{d}x
-\\&=\exp(-k/2)\cdot\int_x\exp\left(-\frac{1}{2}(x - h)^TA(x - h)\right)\mathrm{d}x
-\end{align}$$
-
-令$$\mu=h,\Sigma=A^{-1}$$，则：
-
-$$I(A,b,c)=\frac{(2\pi)^{n/2}\lvert\Sigma\rvert^{1/2}}{\exp(k/2)}\cdot\int_x\frac{1}{(2\pi)^{n/2}\lvert\Sigma\rvert^{1/2}}\exp\left(-\frac{1}{2}(x-\mu)^T\Sigma^{-1}(x-\mu)\right)\mathrm{d}x$$
-
-公式右侧的被积分函数，正好是多元高斯分布密度函数，因此该积分值为1。于是：
-
-$$I(A,b,c)=\frac{(2\pi)^{n/2}\lvert\Sigma\rvert^{1/2}}{\exp(k/2)}$$
-
->注：原始讲义里，Chuong B. Do写的《Gaussian processes》的附录A.1和本节内容类似，但推导过程有问题，疑似笔误，特更换为维基百科中的例子。（矩阵的完全配方那块的变换，我能推导出维基百科的结果，但推导不出Chuong B. Do的结果。）如有错误，望读者指出。
 

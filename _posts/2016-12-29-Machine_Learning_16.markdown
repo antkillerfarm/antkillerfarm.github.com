@@ -1,8 +1,93 @@
 ---
 layout: post
-title:  机器学习（十六）——loss function比较, 独立成分分析
+title:  机器学习（十六）——主成分分析, loss function比较, 独立成分分析
 category: ML 
 ---
+
+# 协同过滤的ALS算法（续）
+
+## 参考
+
+参考论文：
+
+《Large-scale Parallel Collaborative Filtering forthe Netflix Prize》
+
+《Collaborative Filtering for Implicit Feedback Datasets》
+
+《Matrix Factorization Techniques for Recommender Systems》
+
+其他参考：
+
+http://www.jos.org.cn/html/2014/9/4648.htm
+
+基于大规模隐式反馈的个性化推荐
+
+http://www.fuqingchuan.com/2015/03/812.html
+
+协同过滤之ALS-WR算法
+
+http://www.docin.com/p-714582034.html
+
+基于矩阵分解的协同过滤算法
+
+http://www.tuicool.com/articles/fANvieZ
+
+Spark MLlib中的协同过滤
+
+http://www.68idc.cn/help/buildlang/ask/20150727462819.html
+
+Alternating Least Squares(ASL)的数学推导
+
+https://mp.weixin.qq.com/s/bRhIm8Xvlb51zE2HpDO5Og
+
+一文读懂推荐系统知识体系
+
+http://mp.weixin.qq.com/s/QhP3wRGbrO7sYSDNm8z0gQ
+
+常用推荐算法（50页干货）
+
+https://zhuanlan.zhihu.com/p/23036112
+
+推荐系统常用的推荐算法
+
+https://mp.weixin.qq.com/s/6x8cK_SDW67At3IUZ15ijQ
+
+协同过滤典型算法概述
+
+https://mp.weixin.qq.com/s/wtvwWZhqCRjJgdCpa7qdJw
+
+矩阵分解在协同过滤推荐中的应用
+
+# 主成分分析
+
+真实的训练数据总是存在各种各样的问题。
+
+比如拿到一个汽车的样本，里面既有以“千米/每小时”度量的最大速度特征，也有“英里/小时”的最大速度特征。显然这两个特征有一个是多余的，我们需要找到，并去除这个冗余。
+
+再比如，针对飞行员的调查，包含两个特征：飞行的技能水平和对飞行的爱好程度。由于飞行员是很难培训的，因此如果没有对飞行的热爱，也就很难学好飞行。所以这两个特征实际上是强相关的（strongly correlated）。如下图所示：
+
+![](/images/article/PCA.png)
+
+我们的目标就是找出上图中所示的向量$$u_1$$。
+
+为了实现这两个目标，我们可以采用PCA（Principal components analysis）算法。
+
+## 数据的规则化处理
+
+在进行PCA算法之前，我们首先要对数据进行预处理，使之规则化。其方法如下：
+
+>1.$$\mu=\frac{1}{m}\sum_{i=1}^mx^{(i)}$$   
+>2.$$x^{(i)}:=x^{(i)}-\mu$$   
+>3.$$\sigma_j^2=\frac{1}{m}\sum_i(x^{(i)})^2$$   
+>4.$$x_j^{(i)}:=x_j^{(i)}/\sigma_j$$   
+
+多数情况下，特征空间中，不同特征向量所代表的维度之间，并不能直接比较。
+
+比如，摄氏度和华氏度，虽然都是温度的单位，但两种温标的原点和尺度都不相同，因此需要规范化之后才能比较。
+
+步骤1和2，用于消除原点偏差（常数项偏差）。步骤3和4，用于统一尺度（一次项偏差）。
+
+虽然上面的办法，对于二次以上的偏差无能为力，然而多数情况下，这种处理，已经比原始状态好多了。
 
 ## PCA算法推导
 
@@ -192,62 +277,5 @@ https://www.zhihu.com/question/28810567
 为了更为正式的描述这个问题，我们假设数据$$s\in R^n$$是由n个独立的源生成的。我们接收到的信号可写作：$$x=As$$。其中，A被称为混合矩阵（mixing matrix）。在这个问题中，$$s^{(i)}$$是一个n维向量，$$s_j^{(i)}$$表示第j个说话者在i时刻的声音。同理，$$x_j^{(i)}$$表示第j个麦克风在i时刻的记录下的数据。
 
 我们把$$W=A^{-1}$$称作unmixing matrix。我们的目标就是找到W，然后利用$$s=Wx$$，求得s。我们使用$$w_i^T$$表示W矩阵的第i行，因此：$$s_j^{(i)}=w_j^Tx^{(i)}$$。
-
-## ICA的不确定性
-
-不幸的是，在没有源和混合矩阵的先验知识的情况下，仅凭$$x^{(i)}$$是没有办法求出W的。为了说明这一点，我们引入置换矩阵的概念。
-
-置换矩阵（permutation matrix）是一种元素只由0和1组成的方块矩阵。置换矩阵的每一行和每一列都恰好只有一个1，其余的系数都是0。它的例子如下：
-
-$$P=\begin{bmatrix}0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 1 \end{bmatrix};
-P=\begin{bmatrix}0 & 1 \\ 1 & 0 \end{bmatrix};
-P=\begin{bmatrix}1 & 0 \\ 0 & 1 \end{bmatrix}$$
-
-在线性代数中，每个n阶的置换矩阵都代表了一个对n个元素（n维空间的基）的置换。当一个矩阵乘上一个置换矩阵时，所得到的是原来矩阵的横行（置换矩阵在左）或纵列（置换矩阵在右）经过置换后得到的矩阵。
-
-ICA的不确定性(ICA ambiguities)包括以下几种情形：
-
-1.无法区分W和WP。比如改变说话人的编号，会改变$$s^{(i)}$$的值，但却不会改变$$x^{(i)}$$的值，因此也就无法确定$$s^{(i)}$$的值了。
-
-2.无法确定W的尺度。比如$$x^{(i)}$$还可以写作$$x^{(i)}=2A \cdot (0.5)s^{(i)}$$，因此在不知道A的情况下，同样无法确定$$s^{(i)}$$的值。
-
-3.信号不能是高斯分布的。
-
-假设两个人发出的声音信号符合多值正态分布$$s\sim \mathcal{N}(0,I)$$，这里的I是一个2阶单位阵，则$$E[xx^T]=E[Ass^TA^T]=AA^T$$。
-
-假设R是正交矩阵，$$A'=AR,x'=A's$$，则：
-
-$$E[xx^T]=E[A'ss^T(A')^T]=E[ARss^T(AR)^T]=ARR^TA^T=AA^T$$
-
-可见，无论是A还是A'，观测值x都是一个$$\mathcal{N}(0,AA^T)$$的正态分布，也就是说A的值无法确定，那么W和s也就无法求出了。
-
-## 密度函数和线性变换
-
-在讨论ICA的具体算法之前，我们先来回顾一下概率和线性代数里的知识。
-
-假设我们的随机变量s有概率密度（probability density）函数$$p_s(s)$$。为了简单，我们再假设s是实数，还有一个随机变量$$x=As$$，A和x都是实数。令$$p_x$$是x的概率密度，那么怎么求$$p_x$$呢？
-
-令$$W=A^{-1}$$，则$$s=Wx$$。然而$$p_x(x)\neq p_s(Wx)$$。
-
-这里以均匀分布（Uniform）为例讨论一下。令$$s\sim \text{Uniform}[0,1]$$，则$$p_s(s)=1$$。令$$A=2$$，则$$W=0.5$$，$$x=2s\sim \text{Uniform}[0,2]$$，因此$$p_x(x)=p_s(Wx)\lvert W \rvert$$。
-
-## 累积分布函数
-
-累积分布函数（cumulative distribution function，CDF）是概率论中的一个基本概念。它的定义如下：
-
-$$F(z_0)=P(z\le z_0)=\int_{-\infty}^{z_0}p_z(z)\mathrm{d}z$$
-
-可以看出：
-
-$$p_z(z)=F'(z)$$
-
-## ICA算法
-
-ICA算法归功于Bell 和 Sejnowski，这里使用最大似然估计来解释算法。（原始论文中使用的是一个复杂的方法Infomax principal，这在最新的推导中已经不需要了。）
-
->注：Terrence (Terry) Joseph Sejnowski，1947年生，美国科学家。普林斯顿大学博士，导师是神经网络界的大神John Hopfield。ICA算法和Boltzmann machine的发现人。
-
->Tony Bell的个人主页：
->http://cnl.salk.edu/~tony/index.html
 
 

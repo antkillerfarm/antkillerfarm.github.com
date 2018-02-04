@@ -230,6 +230,14 @@ http://zh.gluon.ai/chapter_computer-vision/object-detection.html
 
 使用卷积神经网络的物体检测
 
+https://mp.weixin.qq.com/s/4BRwMEr6rFYvkmKXM7rYLg
+
+效果惊艳！FAIR提出人体姿势估计新模型，升级版Mask-RCNN
+
+https://mp.weixin.qq.com/s/6WmXY1-BmdOHkSRA_Ds9IQ
+
+密集人体姿态估计：2D图像帧可实时生成UV贴图
+
 # 语义分割的展望
 
 俗话说，“没有免费的午餐”（“No free lunch”）。基于深度学习的图像语义分割技术虽然可以取得相比传统方法突飞猛进的分割效果，但是其对数据标注的要求过高：不仅需要海量图像数据，同时这些图像还需提供精确到像素级别的标记信息（Semantic labels）。因此，越来越多的研究者开始将注意力转移到弱监督（Weakly-supervised）条件下的图像语义分割问题上。在这类问题中，图像仅需提供图像级别标注（如，有“人”，有“车”，无“电视”）而不需要昂贵的像素级别信息即可取得与现有方法可比的语义分割精度。

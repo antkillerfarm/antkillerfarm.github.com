@@ -4,6 +4,46 @@ title:  机器学习（十三）——机器学习中的矩阵方法（2）QR分
 category: ML 
 ---
 
+## QR分解（续）
+
+令$$A=[\mathbf{a}_1, \cdots, \mathbf{a}_n]$$，其中$$a_i$$为列向量。则：
+
+$$\begin{align}
+ \mathbf{u}_1 &= \mathbf{a}_1,
+  & \mathbf{e}_1 &= {\mathbf{u}_1 \over \|\mathbf{u}_1\|} \\
+ \mathbf{u}_2 &= \mathbf{a}_2-\mathrm{proj}_{\mathbf{u}_1}\,\mathbf{a}_2,
+  & \mathbf{e}_2 &= {\mathbf{u}_2 \over \|\mathbf{u}_2\|} \\
+ \mathbf{u}_3 &= \mathbf{a}_3-\mathrm{proj}_{\mathbf{u}_1}\,\mathbf{a}_3-\mathrm{proj}_{\mathbf{u}_2}\,\mathbf{a}_3,
+  & \mathbf{e}_3 &= {\mathbf{u}_3 \over \|\mathbf{u}_3\|} \\
+ & \vdots &&\vdots \\
+ \mathbf{u}_k &= \mathbf{a}_k-\sum_{j=1}^{k-1}\mathrm{proj}_{\mathbf{u}_j}\,\mathbf{a}_k,
+  &\mathbf{e}_k &= {\mathbf{u}_k\over\|\mathbf{u}_k\|}
+\end{align}$$
+
+即：
+
+$$\begin{align}
+ \mathbf{a}_1 &= \langle\mathbf{e}_1,\mathbf{a}_1 \rangle \mathbf{e}_1  \\
+ \mathbf{a}_2 &= \langle\mathbf{e}_1,\mathbf{a}_2 \rangle \mathbf{e}_1
+  + \langle\mathbf{e}_2,\mathbf{a}_2 \rangle \mathbf{e}_2 \\
+ \mathbf{a}_3 &= \langle\mathbf{e}_1,\mathbf{a}_3 \rangle \mathbf{e}_1
+  + \langle\mathbf{e}_2,\mathbf{a}_3 \rangle \mathbf{e}_2
+  + \langle\mathbf{e}_3,\mathbf{a}_3 \rangle \mathbf{e}_3 \\
+ &\vdots \\
+ \mathbf{a}_k &= \sum_{j=1}^{k} \langle \mathbf{e}_j, \mathbf{a}_k \rangle \mathbf{e}_j
+\end{align}$$
+
+这个过程又被称为Gram–Schmidt正交化过程。
+
+因此：
+
+$$Q = \left[ \mathbf{e}_1, \cdots, \mathbf{e}_n\right] \qquad \text{and} \qquad
+R = \begin{bmatrix}
+\langle\mathbf{e}_1,\mathbf{a}_1\rangle & \langle\mathbf{e}_1,\mathbf{a}_2\rangle &  \langle\mathbf{e}_1,\mathbf{a}_3\rangle  & \ldots \\
+0 & \langle\mathbf{e}_2,\mathbf{a}_2\rangle &  \langle\mathbf{e}_2,\mathbf{a}_3\rangle  & \ldots \\
+0 & 0 & \langle\mathbf{e}_3,\mathbf{a}_3\rangle & \ldots \\
+\vdots & \vdots & \vdots & \ddots \end{bmatrix}$$
+
 ## 矩阵的特征值和特征向量
 
 设A是一个n阶方阵，$$\lambda$$是一个数，如果方程$$Ax=\lambda x$$存在非零解向量，则称$$\lambda$$为A的一个特征值（Eigenvalue），相应的非零解向量x称为属于特征值$$\lambda$$的特征向量（eigenvector）。
@@ -36,13 +76,13 @@ http://course.tjau.edu.cn/xianxingdaishu/jiao/5.htm
 
 证明：
 
-$$|Q^TAQ-\lambda I|=|Q^TAQ-Q^T(\lambda I)Q|=|Q^T(A-\lambda I)Q|\\=|Q^T|\cdot|A-\lambda I|\cdot|Q|=|Q^TQ|\cdot|A-\lambda I|=|I|\cdot|A-\lambda I|=|A-\lambda I|$$
+$$\mid Q^TAQ-\lambda I\mid =\mid Q^TAQ-Q^T(\lambda I)Q\mid =\mid Q^T(A-\lambda I)Q\mid \\=\mid Q^T\mid \cdot\mid A-\lambda I\mid \cdot\mid Q\mid =\mid Q^TQ\mid \cdot\mid A-\lambda I\mid =\mid I\mid \cdot\mid A-\lambda I\mid =\mid A-\lambda I\mid $$
 
 这里的证明，用到了行列式的如下性质：
 
-$$|I|=1$$
+$$\mid I\mid =1$$
 
-$$|AB|=|A|\cdot|B|$$
+$$\mid AB\mid =\mid A\mid \cdot\mid B\mid $$
 
 因为$$Q^TAQ$$和A的特征方程相同，所以它们的特征值也相同。证毕。
 
@@ -102,7 +142,7 @@ https://en.wikipedia.org/wiki/Eigenvalue_algorithm
 
 我们知道，对于复数z，可写成：
 
-$$z=\left(\frac{z}{|z|}\right)|z|=\left(\frac{z}{|z|}\right)\sqrt{\overline z z}$$
+$$z=\left(\frac{z}{\mid z\mid }\right)\mid z\mid =\left(\frac{z}{\mid z\mid }\right)\sqrt{\overline z z}$$
 
 其中$$\overline z$$是z的共轭复数。也就是说，一个复数可以表示为一个单位向量乘以一个模。
 
@@ -200,59 +240,5 @@ http://wenku.baidu.com/view/9ce143eb81c758f5f61f6730.html
 2.如果A为奇异矩阵，则AX=0有无穷解，AX=b有无穷解或者无解。如果A为非奇异矩阵，则AX=0有且只有唯一零解，AX=b有唯一解。
 
 对于A不是方阵的情况，一般使用$$A^TA$$来评估矩阵是否是奇异矩阵。
-
-## 正定矩阵
-
-positive definite matrix的定义：
-
-一个n阶的实对称矩阵M是正定的的条件是当且仅当对于所有的非零实系数向量z，都有$$z^TMz>0$$。
-
-正定矩阵A的性质：
-
-1.正定矩阵的任一主子矩阵也是正定矩阵。
-
-2.A的特征值和各阶顺序主子式全为正。
-
-3.若A为n阶正定矩阵，则A为n阶可逆矩阵。
-
-类似的还可以定义负定矩阵、半正定矩阵（非负定矩阵）。
-
-## 向量的范数
-
-范数（norm，也叫模）的定义比较抽象，这里我们使用闵可夫斯基距离，进行一个示意性的介绍。
-
-Minkowski distance的定义：
-
-$$d(x,y)=\sqrt[\lambda]{\sum_{i=1}^{n}\lvert x_i-y_i\lvert^{\lambda}}$$
-
-显然，当$$\lambda=2$$时，该距离为欧氏距离。当$$\lambda=1$$时，也被称为CityBlock Distance或Manhattan Distance（曼哈顿距离）。
-
-这里的$$\lambda$$就是范数。
-
-范数可用符号$$\|x\|_\lambda$$表示。常用的有：
-
-$$\|x\|_1=|x_1|+\dots+|x_n|$$
-
-$$\|x\|_2=\sqrt{x_1^2+\dots+x_n^2}$$
-
-$$\|x\|_\infty=max(|x_1|,\dots,|x_n|)$$
-
-这里不做解释的给出如下示意图：
-
-![](/images/article/lp_ball.png)
-
-其中，0范数表示向量中非0元素的个数。上图中的图形被称为$$l_p$$ ball。表征在同一范数条件下，具有相同距离的点的集合。
-
-范数满足如下不等式：
-
-$$\|A+B\|\le \|A\|+\|B\|(三角不等式)$$
-
-向量范数推广可得到矩阵范数。某些矩阵范数满足如下公式：
-
-$$\|A\cdot B\|\le \|A\|\cdot\|B\|$$
-
-这种范数被称为相容范数。
-
->注：矩阵范数要比向量范数复杂的多，还包含一些不可以由向量范数来诱导的范数，如Frobenius范数。而且只有极少数矩阵范数，可由简单表达式来表达。这里篇幅有限，不再赘述。
 
 

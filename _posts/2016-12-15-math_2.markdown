@@ -220,13 +220,13 @@ $$f(x;\alpha,\beta)=\frac{x^{\alpha-1}(1-x)^{\beta-1}}{B(\alpha,\beta)}$$
 
 因此：
 
-$$p(X=x|\theta)= \binom{n}{x}\theta^{x}(1-\theta)^{n-x}$$
+$$p(X=x\mid \theta)= \binom{n}{x}\theta^{x}(1-\theta)^{n-x}$$
 
 利用贝叶斯公式，我们首先需要确定先验概率$$p(\theta)$$。在未得到其余信息前，我们只能认为$$\theta$$在(0,1)上均匀分布（即$$\theta\sim Uniform(0,1)$$），这是一种不失偏颇的先验估计。
 
 则联合概率分布为：
 
-$$p(x,\theta)=p(x|\theta)p(\theta)$$
+$$p(x,\theta)=p(x\mid \theta)p(\theta)$$
 
 边缘概率分布：
 
@@ -235,9 +235,9 @@ $$\begin{align}p(x)&=\int_{0}^{1}p(x,\theta)d\theta=\int_{0}^{1}\binom{n}{x}\the
 
 综合以上，可得$$\theta$$的后验分布:
 
-$$p(\theta|x)=\frac{p(x,\theta)}{p(x)}=\frac{\theta^{(x+1)-1}(1-\theta)^{(n-x+1)-1}}{B(x+1,n-x+1)}$$
+$$p(\theta\mid x)=\frac{p(x,\theta)}{p(x)}=\frac{\theta^{(x+1)-1}(1-\theta)^{(n-x+1)-1}}{B(x+1,n-x+1)}$$
 
-因此：$$\theta \vert x\sim Beta(x+1,n-x+1)$$
+因此：$$\theta \mid x\sim Beta(x+1,n-x+1)$$
 
 考虑到$$Uniform(0,1)=Beta(1,1)$$，因此在这个例子中，先验分布和后验分布，实际上是同一类型的分布。这种情况被称为共轭先验分布。
 
@@ -249,7 +249,7 @@ $$Uniform(\theta)+B(n,\theta)\to Beta(x+1,n-x+1)$$
 
 $$先验参数分布+数据分布\to 后验分布$$
 
-**定义**：设$$\theta$$是某分布中的一个参数，$$\pi(\theta)$$是其先验分布。假如由抽样信息算得的后验分布$$\pi(\theta \vert x)$$与$$\pi(\theta)$$同属于一个分布族，则称$$\pi(\theta)$$是$$\theta$$的**共轭先验分布**。
+**定义**：设$$\theta$$是某分布中的一个参数，$$\pi(\theta)$$是其先验分布。假如由抽样信息算得的后验分布$$\pi(\theta \mid x)$$与$$\pi(\theta)$$同属于一个分布族，则称$$\pi(\theta)$$是$$\theta$$的**共轭先验分布**。
 
 从这个定义可以看出，共轭先验分布是对某一分布中的参数而言的，离开指定参数及其所在的分布，谈论共轭先验分布是没有意义的。
 
