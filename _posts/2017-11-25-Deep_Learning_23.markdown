@@ -39,6 +39,16 @@ http://blog.csdn.net/xmdxcsj/article/details/53326109
 
 模型压缩lstmp
 
+## 《Video Summarization with Long Short-term Memory》
+
+这是一篇用于提取视频关键帧（也叫静态视频摘要）的论文，是南加州大学沙飞小组的作品。
+
+![](/images/img2/dppLSTM.png)
+
+上图是该文提出的DPP LSTM的网络结构图。它的主体是一个BiLSTM，算是中规中矩吧。
+
+该文的创新点在于提出了DPP loss的概念。上图中的$$y_t$$表示帧的分值（越大表示越重要），$$\phi_t$$表示帧之间的相似度。该文的实验表明，将两个特征分开抽取，有助于提升模型的准确度。
+
 ## 参考
 
 https://mp.weixin.qq.com/s/4IHzOAvNhHG9c8GP0zXVkQ
@@ -322,4 +332,8 @@ https://mp.weixin.qq.com/s/OeCiH4n-Y3kigI3ynMyZSg
 https://mp.weixin.qq.com/s/8e4bkyTJIxHZ1y95GshA0Q
 
 开源的语音合成系统WORLD介绍以及使用方法
+
+https://mp.weixin.qq.com/s/mRmbrUJ2MgeDxbZn_0UiIQ
+
+2017年深度学习总结：文本和语音应用
 

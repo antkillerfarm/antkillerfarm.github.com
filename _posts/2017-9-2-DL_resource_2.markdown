@@ -254,10 +254,6 @@ https://mp.weixin.qq.com/s/OkqUulFYHQSdgAbf9Fi9LA
 
 CoCoA：大规模机器学习的分布式优化通用框架
 
-https://mp.weixin.qq.com/s/jjT0x99ht8xtfWmzL-0R1A
-
-深度学习的IR“之争”
-
 https://mp.weixin.qq.com/s/ToIDncp9dS_qk47PsdZm5A
 
 杜克大学：分布式深度学习训练算法TernGrad
@@ -281,10 +277,6 @@ Caffe作者贾扬清教你怎样打造更加优秀的深度学习架构
 https://mp.weixin.qq.com/s/_mrYI7McMBUx0lEh4rNiYQ
 
 百度开源移动端深度学习框架MDL，手机部署CNN支持iOS GPU
-
-https://mp.weixin.qq.com/s/qkvX0rmEe0yQ-BhCmWAXSQ
-
-李沐：AWS开源端到端AI框架编译器NNVM
 
 https://mp.weixin.qq.com/s/qOjGrR59Mf0Mzgh4bpDhrA
 
@@ -333,6 +325,10 @@ https://mp.weixin.qq.com/s/UbAHB-uEIvqYZCB7xIAJTg
 https://mp.weixin.qq.com/s/_-z2d1GE_3FElzAwPyJZ8A
 
 十大流行AI框架和库的优缺点比较
+
+https://mp.weixin.qq.com/s/7nugWFKtD-C6cpwm2TyvdQ
+
+手把手教你如何部署深度学习模型
 
 ## 面试
 

@@ -270,5 +270,12 @@ https://mp.weixin.qq.com/s/Me3hrYmyiongCD2ZZT9Ltg
 
 流量运营数据产品最佳实践——美团旅行流量罗盘
 
+https://mp.weixin.qq.com/s/tLG7ZP2IyYweCR0ctpwk_Q
+
+日调度5万亿次 腾讯云微服务架构体系TSF深度解读
+
+https://mp.weixin.qq.com/s/bsuveX-E6E2fKZ24mj03nQ
+
+微服务架构技术栈选型手册
 
 

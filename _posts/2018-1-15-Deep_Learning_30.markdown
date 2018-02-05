@@ -226,3 +226,8 @@ https://mp.weixin.qq.com/s/9N_3JkNEPdXQgFn0S7MqnA
 
 走进深度生成模型：变分自动编码器（VAE）和生成对抗网络（GAN）
 
+https://mp.weixin.qq.com/s/SPAbCZloiHp2mtGu0IDWDA
+
+DeepMind高级研究员：重新理解GAN，最新算法、技巧及应用
+
+

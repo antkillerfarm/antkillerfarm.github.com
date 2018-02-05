@@ -30,6 +30,12 @@ Tensorflow版本：
 
 https://github.com/ildoonet/tf-pose-estimation
 
+参考：
+
+https://mp.weixin.qq.com/s/-EU4jTElNll9MQomjuqFXA
+
+姿态估计相比Mask-RCNN提高8.2%，上海交大卢策吾团队开源AlphaPose
+
 # 深度目标跟踪
 
 ## 概述

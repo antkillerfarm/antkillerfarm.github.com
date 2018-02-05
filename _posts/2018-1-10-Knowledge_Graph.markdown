@@ -16,6 +16,76 @@ https://zhuanlan.zhihu.com/knowledgegraph
 
 知识图谱-给AI装个大脑
 
+## 知识表示学习
+
+传统的知识图谱主要是基于规则学习构建的，然而规则不是数字，无法与ML/DL结合。因此，在word2vec之类的词向量化获得成功之后，如何对知识图谱进行向量化，就成为了学界的热点。这一向量化的过程，一般被称为知识表示学习。
+
+参考：
+
+https://mp.weixin.qq.com/s/IPKU8jwUk3eOYumbgiL1SQ
+
+重新考虑用简单神经网络进行知识表示学习
+
+https://mp.weixin.qq.com/s/z1hhG4GaBQXPHHt9UGZPnA
+
+东南大学高桓：知识图谱表示学习
+
+https://github.com/thunlp/KRLPapers
+
+“知识表示学习”专题论文推荐
+
+### transE
+
+论文：
+
+1、TransE，NIPS2013，《Translating embeddings for modeling multi-relational data》。
+
+2、TransH，AAAI2014，《Knowledge graph embedding by translating on hyperplanes》。
+
+3、TransD，ACL2015，《Knowledge graph embedding via dynamic mapping matrix》。
+
+4、TransA，arXiv2015，《An adaptive approach for knowledge graph embedding》。
+
+5、TransG，arxiv2015，《A Generative Mixture Model for Knowledge Graph Embedding)》
+
+6、KG2E，CIKM2015，《Learning to represent knowledge graphs with gaussian embedding》。
+
+参考：
+
+http://www.cnblogs.com/chenbjin/p/5644457.html
+
+word2vec+transE知识表示模型
+
+http://blog.csdn.net/u011274209/article/details/50991385
+
+TransE算法（Translating Embedding）
+
+http://www.sohu.com/a/116866488_465975
+
+基于翻译模型(Trans系列)的知识表示学习
+
+### ComplEx
+
+论文：
+
+《Complex Embeddings for Simple Link Prediction》
+
+### HolE
+
+论文：
+
+《Holographic Embeddings of Knowledge Graphs》
+
+## 工具
+
+https://mp.weixin.qq.com/s/CsHgn82lQQDVhjDJvp01cg
+
+清华大学开源OpenKE：知识表示学习平台。
+
+http://openkg.cn/
+
+一个开放的中文知识图谱。
+
 ## 参考
 
 https://mp.weixin.qq.com/s/aLljr0R5w7OcidbXf71FQw
@@ -61,10 +131,6 @@ https://mp.weixin.qq.com/s/MZE_SXsNg6Yt4dz2fmB1sA
 https://mp.weixin.qq.com/s/WIro7pk7kboMvdwpZOSdQA
 
 东南大学漆桂林：知识图谱的应用
-
-https://mp.weixin.qq.com/s/z1hhG4GaBQXPHHt9UGZPnA
-
-东南大学高桓：知识图谱表示学习
 
 https://mp.weixin.qq.com/s/JZYH_m1eS93KRjkWA82GoA
 
@@ -137,5 +203,4 @@ https://mp.weixin.qq.com/s/eZhhVZlVG-uy-tdtDztOpg
 https://mp.weixin.qq.com/s/YeSzOw6dRNiX32PmdWgLow
 
 知识图谱在互联网金融行业的应用
-
 
