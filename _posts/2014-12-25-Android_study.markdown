@@ -10,7 +10,9 @@ category: technology
 
 JNI的基本概念可以参考以下文献：
 
-[http://blog.csdn.net/believefym/archive/2007/06/08/1644635.aspx](http://blog.csdn.net/believefym/archive/2007/06/08/1644635.aspx)
+http://blog.csdn.net/believefym/archive/2007/06/08/1644635.aspx
+
+eclipse下jni初试
 
  这里需要注意的是javah命令处理的是.class文件，而不是.java文件。你需要指定package的路径和package名。javap命令也有类似的要求。
 
@@ -18,7 +20,9 @@ JNI的基本概念可以参考以下文献：
 
 基本方法参考下列文献：
 
-[http://icepeer.itpub.net/post/3982/19158](http://icepeer.itpub.net/post/3982/19158)
+http://blog.itpub.net/60408/viewspace-790731/
+
+JNI concept(介绍java call c 和C call java的方法)
 
 注意事项：
 
@@ -48,13 +52,15 @@ Android由于提供的是Java接口，所以这里最常见的情况是
 
 (1)风临左岸在这方面颇有建树，以下是他的blog：
 
-[http://blog.sina.com.cn/flza](http://blog.sina.com.cn/flza)
+http://blog.sina.com.cn/flza
+
+风子的博客
 
 最简单的hello world程序可以参看下面这篇文章的做法。
 
-Android原生(Native)C开发之一：环境搭建篇
+http://blog.sina.com.cn/s/blog_4a0a39c30100auh9.html
 
-[http://blog.sina.com.cn/s/blog_4a0a39c30100auh9.html](http://blog.sina.com.cn/s/blog_4a0a39c30100auh9.html)
+Android原生(Native)C开发之一：环境搭建篇
 
 这里有个概念要弄清楚，之前的例子都是针对x86-win32平台的，而这里我们要在arm-linux下编程。我这里有个同事，曾将x86-win32下的dll放到Android模拟器中，然后抱怨无法使用JNI，这就是这类错误的一个典型的例子。
 
@@ -62,7 +68,7 @@ Android原生(Native)C开发之一：环境搭建篇
 
 Shared library "Hello World!" for Android
 
-[http://honeypod.blogspot.com/2007/12/shared-library-hello-world-for-android.html](http://honeypod.blogspot.com/2007/12/shared-library-hello-world-for-android.html)
+http://honeypod.blogspot.com/2007/12/shared-library-hello-world-for-android.html
 
 从这篇文章可以看出，风临左岸使用的交叉编译工具的动态库的默认格式，和Android平台的动态库的格式是不同的，这也是之前有人说Android无法使用JNI的原因。
 
@@ -72,7 +78,7 @@ Shared library "Hello World!" for Android
 
 获得源代码的官方方法如下：
 
-[http://source.android.com/source/download.html](http://source.android.com/source/download.html)
+http://source.android.com/source/download.html
 
 虽然源代码在http://source.android.com下，但用浏览器是无法获得代码的，只能用上文提到的方法才行。
 
@@ -82,13 +88,13 @@ Shared library "Hello World!" for Android
 
 使用prebuilt工具编译C程序的方法可以参考以下文章：
 
-[http://www.j2medev.com/android/native/200901/20090119222445.html](http://www.j2medev.com/android/native/200901/20090119222445.html)
+http://www.j2medev.com/android/native/200901/20090119222445.html
 
 ## 3.Android JNI
 
 正统的做法可以参照以下网页：
 
-[http://www.j2medev.com/android/native/200901/20090119222617.html](http://www.j2medev.com/android/native/200901/20090119222617.html)
+http://www.j2medev.com/android/native/200901/20090119222617.html
 
 当然简单的做法也是有的，可以只解压源代码中的bionic、dalvik、prebuilt这三个文件夹。
 

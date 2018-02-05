@@ -82,4 +82,8 @@ https://mp.weixin.qq.com/s/nnjyR4XGVZQ1zXCIPzTNlg
 
 基于TensorFlow的变分自编码器实现
 
+https://mp.weixin.qq.com/s/iMgesGmdb7Jq4muCxb-nFA
+
+Tensorflow实战：Discuz验证码识别
+
 

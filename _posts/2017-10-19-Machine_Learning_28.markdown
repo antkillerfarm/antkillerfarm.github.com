@@ -4,6 +4,26 @@ title:  机器学习（二十八）——概率图模型
 category: ML 
 ---
 
+# Monte-Carlo（续）
+
+## 参考
+
+https://mp.weixin.qq.com/s/F9VlxVV4nXELyKxdRo9RPA
+
+强化学习——蒙特卡洛
+
+https://www.zhihu.com/question/20254139
+
+蒙特卡罗算法是什么？
+
+http://www.cnblogs.com/2010Freeze/archive/2011/09/19/2181016.html
+
+概率算法-sherwood算法
+
+http://www.cnblogs.com/chinazhangjie/archive/2010/11/11/1874924.html
+
+概率算法
+
 # 概率图模型
 
 ## 资料

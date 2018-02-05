@@ -198,11 +198,11 @@ Monte Carlo algorithm就要狭义的多了，详情见下文。
 
 $$\overline{f(x)}=\sum_{x\in X_n}f(x)/n$$
 
-假如存在一个实例$$x_0$$使得$$f(x_0)\gg \overline{f(x)}$$，比如
+假如存在一个实例$$x_0$$使得$$f(x_0)\gg \overline{f(x)}$$，比如快速排序在最坏情况下的复杂度$$O(n)\gg O(n\log n)$$。这时使用sherwood对原始算法进行改进是有价值的。
+
+Sherwood算法通过增加一个较小的额外开销从而使得算法的复杂度与具体实例x无关。例如，在快速排序中，我们是以第一个元素为基准开始排序时，为了避免这样的情况，可以用舍伍德算法解决，也就是使第一个基准元素是随机的。
 
 ## 蒙特卡罗（Monte Carlo）算法
-
-
 
 举个例子，假如筐里有100个苹果，让我每次闭眼拿1个，挑出最大的。于是我随机拿1个，再随机拿1个跟它比，留下大的，再随机拿1个……我每拿一次，留下的苹果都至少不比上次的小。拿的次数越多，挑出的苹果就越大，但我除非拿100次，否则无法肯定挑出了最大的。这个挑苹果的算法，就属于蒙特卡罗算法——**尽量找好的，但不保证是最好的**。
 
@@ -210,21 +210,16 @@ $$\overline{f(x)}=\sum_{x\in X_n}f(x)/n$$
 
 假如有一把锁，给我100把钥匙，只有1把是对的。于是我每次随机拿1把钥匙去试，打不开就再换1把。我试的次数越多，打开（最优解）的机会就越大，但在打开之前，那些错的钥匙都是没有用的。这个试钥匙的算法，就是拉斯维加斯算法——**尽量找最好的，但不保证能找到**。
 
-## 参考
+比如N皇后的排列问题，除了顺序枚举法之外，随机枚举也是一种策略。
 
-https://mp.weixin.qq.com/s/F9VlxVV4nXELyKxdRo9RPA
+## Monte Carlo method与RL
 
-强化学习——蒙特卡洛
+MC method在RL中主要有两种使用方式：
 
-https://www.zhihu.com/question/20254139
+model-free：完全不依赖Model。
 
-蒙特卡罗算法是什么？
+Simulated：简单的模拟，而不需要完整的Model。
 
-http://www.cnblogs.com/2010Freeze/archive/2011/09/19/2181016.html
+## Monte Carlo Policy Evaluation
 
-概率算法-sherwood算法
-
-http://www.cnblogs.com/chinazhangjie/archive/2010/11/11/1874924.html
-
-概率算法
 
