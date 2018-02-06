@@ -342,6 +342,10 @@ https://mp.weixin.qq.com/s/J75ZdrNCSwBO1y9o84THQg
 
 综述论文：机器学习中的模型评价、模型选择与算法选择
 
+https://mp.weixin.qq.com/s/6Oo2w-AZEf09I_QNRV154w
+
+计算机视觉的修炼秘笈
+
 ## 算法
 
 http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十七）——动态规划, Monte-Carlo
+title:  机器学习（二十七）——动态规划
 category: ML 
 ---
 
@@ -222,8 +222,15 @@ model-free：完全不依赖Model。
 
 Simulated：简单的模拟，而不需要完整的Model。
 
-MC method用experience替代了MDP中的transitions/rewards，但需要注意这些experience不能是重复采样的，而且它只适用于周期性的MDP。
+MC method用experience替代了MDP中的transitions/rewards（也可以说是用empirical mean替代了expected），但需要注意这些experience不能是重复采样的，而且它只适用于周期性的MDP。
 
 ## Monte Carlo Policy Evaluation
 
+Monte Carlo Policy Evaluation的目标是对状态s进行估值。它的步骤是：
+
+>当s被访问到(visited)时:   
+>>增加计数：$$N(s)\leftarrow N(s) + 1$$   
+>>增加总奖励：$$S(s)\leftarrow S(s) + G_t$$   
+>>$$V(s) = S(s)/N(s)$$   
+>反复多次：$$N(s)\to \infty,V(s)\to v_{\pi}(s)$$
 

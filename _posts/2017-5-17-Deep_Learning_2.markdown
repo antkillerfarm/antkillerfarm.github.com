@@ -185,6 +185,8 @@ Batch Normalization是Google提出的一种神经网络优化技巧。
 
 适用于RNN或LSTM，而在CNN上表现一般。
 
+![](/images/img2/BN.jpg)
+
 参考：
 
 http://blog.csdn.net/malefactor/article/details/51476961
@@ -226,6 +228,10 @@ http://blog.csdn.net/u013709270/article/details/70949304
 https://mp.weixin.qq.com/s/Oy2GIZLbQxmXMCLzMapWHQ
 
 Batch Normalization的分析与展望
+
+https://mp.weixin.qq.com/s/KnmQTKneSimuOGqGSPy58w
+
+详解深度学习中的Normalization，不只是BN
 
 ## 鞍点
 

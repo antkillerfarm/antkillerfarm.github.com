@@ -46,6 +46,8 @@ http://rll.berkeley.edu/deeprlcourse/
 
 CS 294: Deep Reinforcement Learning
 
+>以上1本书+4个课程，基本就是目前RL领域的黄金搭档了。Stanford的课程内容比较新，但是很浅。UCB的课程通常都是给入门以后的人准备的，无论DL还是RL，都是这样。Sutton和Silver的课程内容比较老，但是很有深度。和CV领域只需要学习DL，而不需要学习传统方法不同，按照Sutton的说法，基本算法原理远比神经网络更重要。
+
 http://www.eecs.wsu.edu/~taylorm/17_580/index.html
 
 CptS 580: Reinforcement Learning
