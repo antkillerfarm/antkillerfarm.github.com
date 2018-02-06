@@ -150,6 +150,10 @@ https://www.zhihu.com/question/41540197
 
 mean average precision（MAP）在计算机视觉中是如何计算和应用的？
 
+https://mp.weixin.qq.com/s/XTuemvxIR4PGpqJprUYuFw
+
+什么是MAP？理解目标检测模型中的性能评估
+
 ## 总结
 
 ![](/images/article/rcnn_p_2.png)

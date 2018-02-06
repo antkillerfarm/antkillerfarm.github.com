@@ -86,4 +86,9 @@ https://mp.weixin.qq.com/s/iMgesGmdb7Jq4muCxb-nFA
 
 Tensorflow实战：Discuz验证码识别
 
+https://mp.weixin.qq.com/s/6cFvh0OgouY_Lg7awxv_3g
+
+快速开启你的第一个项目：TensorFlow项目架构模板
+
+
 

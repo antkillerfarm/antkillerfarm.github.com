@@ -214,11 +214,15 @@ Sherwood算法通过增加一个较小的额外开销从而使得算法的复杂
 
 ## Monte Carlo method与RL
 
+MDP的缺点在于model是已知的，但在实际应用中，更多的是Model未知（或部分未知）或者建模困难的情况，这种情况下就需要使用MC method来生成相应的Model。
+
 MC method在RL中主要有两种使用方式：
 
 model-free：完全不依赖Model。
 
 Simulated：简单的模拟，而不需要完整的Model。
+
+MC method用experience替代了MDP中的transitions/rewards，但需要注意这些experience不能是重复采样的，而且它只适用于周期性的MDP。
 
 ## Monte Carlo Policy Evaluation
 

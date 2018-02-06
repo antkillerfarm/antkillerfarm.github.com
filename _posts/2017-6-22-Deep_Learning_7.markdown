@@ -126,6 +126,10 @@ https://mp.weixin.qq.com/s/Yq3S4WrsQRQC06GvRgGjTQ
 
 打入神经网络思维内部
 
+https://mp.weixin.qq.com/s/MJ1578NdTKbjU-j3Uuo9Ww
+
+基于文档级问答任务的新注意力模型
+
 # seq2seq
 
 seq2seq最早用于Neural Machine Translation领域（与之相对应的有Statistical Machine Translation）。训练后的seq2seq模型，可以根据输入语句，自动生成翻译后的输出语句。

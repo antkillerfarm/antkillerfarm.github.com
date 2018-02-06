@@ -106,6 +106,10 @@ https://mp.weixin.qq.com/s/VcGwT0rKYQr13MQ_PRVmyg
 
 每个AI程序员都应该知道的基础数论
 
+https://mp.weixin.qq.com/s/jCPHXVI_utwnxaHqvW5nyA
+
+商汤联合提出基于FPGA的快速Winograd算法：实现FPGA之上最优的CNN表现与能耗
+
 # 花式池化
 
 池化和卷积一样，都是信号采样的一种方式。

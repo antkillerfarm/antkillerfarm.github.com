@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  区块链参考资源, CPU
+title:  区块链参考资源, CPU, 图像渲染
 category: resource 
 ---
 
@@ -122,6 +122,14 @@ https://mp.weixin.qq.com/s/iWuEibC4r20PuyxTBQducQ
 
 老矿工的区块链5000字终极指南
 
+https://zhuanlan.zhihu.com/p/28340876
+
+比特币区块链中的秘密
+
+https://fifthperson.com/how-the-blockchain-might-disrupt-the-banking-financial-industries/
+
+How the ‘Blockchain’ might disrupt the banking & financial industries
+
 # CPU
 
 https://zhuanlan.zhihu.com/p/29743431
@@ -156,5 +164,18 @@ https://zhuanlan.zhihu.com/p/33579054
 
 Reset重启后发生了什么？它和关机后再开机有什么区别？
 
+# 图像渲染
+
+http://blog.csdn.net/pizi0475/article/details/6650851
+
+全局光照模型与Rendering Equation
+
+https://www.zhihu.com/question/29863225
+
+Ray Tracing，Ray Casting，Path Tracing，Ray Marching 的区别？
+
+https://www.jianshu.com/p/4ec47871973c
+
+Path Tracing介绍
 
 

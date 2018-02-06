@@ -136,6 +136,14 @@ Intel的Neon专为DL设计。
 
 https://ai.intel.com/neon/
 
+# HSA
+
+HSA (Heterogeneous System Architecture)是AMD推出的异构系统架构。
+
+官网：
+
+http://www.amd.com/zh-cn/innovations/software-technologies/hsa
+
 ## NetLib
 
 NetLib是一个数学方面的网站，收集了大量的数学软件和论文。官网：
@@ -179,6 +187,8 @@ https://github.com/xianyi/OpenBLAS
 # NVIDIA
 
 NVIDIA作为行业龙头，其影响力甚至在Khronos Group之上，它提出的标准很多成为了行业的事实标准。
+
+>最近（2018.2），公司副总M给我们讲座的时候，回顾他早年在NVIDIA的经历，当时他曾拥有数万股NV的股票，可惜早都卖了。这十几年来，NV股票经过5次分拆，当初的一股现在要值6500美元。他要不卖，现在可能已经是亿万富翁了。。。
 
 ## 术语
 
@@ -325,6 +335,14 @@ https://zhuanlan.zhihu.com/p/32711259
 https://mp.weixin.qq.com/s/jjT0x99ht8xtfWmzL-0R1A
 
 深度学习的IR“之争”
+
+# CATIA
+
+CATIA是法国达索公司的产品开发旗舰解决方案。作为PLM协同解决方案的一个重要组成部分，它可以通过建模帮助制造厂商设计他们未来的产品，并支持从项目前阶段、具体的设计、分析、模拟、组装到维护在内的全部工业设计流程。CATIA是GPU在工业上的一个重要的应用案例。
+
+官网：
+
+https://www.3ds.com/products-services/catia/
 
 # 爬虫
 

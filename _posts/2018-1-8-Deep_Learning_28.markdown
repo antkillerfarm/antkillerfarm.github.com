@@ -72,6 +72,10 @@ https://mp.weixin.qq.com/s/dS0oQbGtrdd4rS25cBNyoQ
 
 面向Open AI, TensorFlow, Keras的强化学习书籍《Reinforcement Learning》
 
+https://102.alibaba.com/downloadFile.do?file=1517812754285/reinforcement_learning.pdf
+
+《强化学习在阿里的技术演进与业务创新》，这是阿里出品的RL实战类书籍。
+
 ## 论文
 
 《A Brief Survey of Deep Reinforcement Learning》

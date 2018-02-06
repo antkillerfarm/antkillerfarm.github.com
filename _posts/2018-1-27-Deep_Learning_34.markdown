@@ -120,3 +120,11 @@ https://mp.weixin.qq.com/s/TlcVxjhHXXGSpIvptC4H8g
 
 使用Gym和CNN构建多智能体自动驾驶马里奥赛车
 
+https://mp.weixin.qq.com/s/4qeHfU9GS4aDWOHsu4Dw2g
+
+记忆增强蒙特卡洛树搜索细节解读
+
+https://mp.weixin.qq.com/s/Vdt5h8APAFoeVxFYKlywpg
+
+用DeepMind的DQN解数学题，准确率提升15%
+
