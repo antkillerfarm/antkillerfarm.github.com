@@ -421,6 +421,10 @@ http://sewm.pku.edu.cn/TianwangLiterature/SEWM/2005(5)/%5b%b3%c2%c1%88,%20et%20a
 
 3.基于主题模型，如LDA。
 
+https://mp.weixin.qq.com/s/yTLiw9am0wzeJ-O3m0xUoQ
+
+如何做好文本关键词提取？从三种算法说起
+
 ## protege
 
 protege软件是斯坦福大学医学院生物信息研究中心基于Java语言开发的本体编辑和知识获取软件，或者说是本体开发工具，也是基于知识的编辑器。这个软件主要用于语义网中本体的构建，是语义网中本体构建的核心开发工具。

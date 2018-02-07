@@ -177,10 +177,6 @@ https://www.zhihu.com/question/46829056
 
 语音识别领域的最新进展目前是什么样的水准？
 
-https://zhuanlan.zhihu.com/p/27064536
-
-用Wavenet做中文语音识别
-
 https://www.zhihu.com/question/29168274
 
 语音识别中，如何理解HMM是一个生成模型，而DNN是一个判别模型呢？
@@ -192,10 +188,6 @@ https://zhuanlan.zhihu.com/p/24979135
 https://mp.weixin.qq.com/s/LsVhMaHrh8JgfpDra6KSPw
 
 横向对比5大开源语音识别工具包
-
-https://mp.weixin.qq.com/s/-NTQG7_-GqGQWrRhiGgAQQ
-
-详述DeepMind wavenet原理及其TensorFlow实现
 
 https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw
 
@@ -253,10 +245,6 @@ http://mp.weixin.qq.com/s/0WNJq4OLZlZETKPf1Ewq7w
 
 浅谈语音测试方案
 
-http://mp.weixin.qq.com/s/0Xg_acbGG3pTIgsRQKJjrQ
-
-历经一年，DeepMind WaveNet语音合成技术正式产品化
-
 https://mp.weixin.qq.com/s/KBLCrupGIuPa5nVrxcS5WQ
 
 新研究将GRU简化成单门架构，或更适用于语音识别
@@ -300,10 +288,6 @@ https://mp.weixin.qq.com/s/XP4NVYMmKj9RLsgonP3ooQ
 https://mp.weixin.qq.com/s/GZI4uvCR3QzZDNddpBX2OQ
 
 深度学习也解决不掉语音识别问题
-
-https://mp.weixin.qq.com/s/u1UnAuGllcWn8Ik5wDPY6w
-
-可视化语音分析：深度对比Wavenet、t-SNE和PCA等算法
 
 https://mp.weixin.qq.com/s/w9_D1_VVhk9md4RANaipDg
 

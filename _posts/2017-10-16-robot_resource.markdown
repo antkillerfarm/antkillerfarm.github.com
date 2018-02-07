@@ -46,6 +46,10 @@ https://github.com/Microsoft/AutonomousDrivingCookbook/tree/master/AirSimE2EDeep
 
 这是微软提供的自动驾驶课程
 
+https://www.doc.ic.ac.uk/~ajd/Robotics/index.html
+
+CS 333: Robotics
+
 ## 术语
 
 LIDAR：LIght Detection And Ranging

@@ -268,6 +268,8 @@ https://github.com/mozilla/DeepSpeech
 
 上图是Deep Speech的网络结构图。网络的前三层和第5层是FC，第4层是双向RNN，Loss是CTC。
 
+主要思路：
+
 1.这里的FC只处理部分音频片段，因此和CNN有异曲同工之妙。
 
 2.论文解释了不用LSTM的原因是：很难并行处理。
@@ -277,22 +279,4 @@ https://github.com/mozilla/DeepSpeech
 http://blog.csdn.net/xmdxcsj/article/details/54848838
 
 Deep Speech笔记
-
-# Deep speech 2
-
-
-
-论文：
-
-《Deep speech 2: End-to-end speech recognition in english and mandarin》
-
-代码：
-
-https://github.com/PaddlePaddle/DeepSpeech
-
-这个官方代码是PaddlePaddle实现的，由于比较小众，所以还有非官方的代码：
-
-https://github.com/ShankHarinath/DeepSpeech2-Keras
-
-
 
