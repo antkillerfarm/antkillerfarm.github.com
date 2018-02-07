@@ -38,6 +38,10 @@ https://zhuanlan.zhihu.com/p/24863977
 
 矩阵求导术（下）
 
+https://mp.weixin.qq.com/s/3mDVl1JyPHDt83Y1Hak5Zg
+
+机器学习中的矩阵、向量求导
+
 https://mp.weixin.qq.com/s/tdIzuBDTMCDSfe2IDL8ZSA
 
 基于混合集成学习算法的热迁移超时预测模型

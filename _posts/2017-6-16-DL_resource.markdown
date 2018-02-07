@@ -150,7 +150,7 @@ http://blog.csdn.net/xmdxcsj
 
 http://blog.csdn.net/app_12062011
 
-一个DL+CV的blog，专注于人脸识别
+一个DL+CV的blog，专注于人脸识别、目标跟踪、相机标定和图像拼接等。
 
 ## 项目集锦
 

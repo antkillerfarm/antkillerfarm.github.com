@@ -28,6 +28,16 @@ http://www.jianshu.com/p/eb9e3be977ed
 
 Python数据分析之武林秘籍。这里包括了大量ML或DL的python工具包。
 
+https://chrisalbon.com/
+
+Chris Albon的个人主页。包含大量ML/DL相关的note。
+
+>Chris Albon, UC Davis博士。在肯尼亚工作多年，援非的IT人。著有《Machine Learning with Python Cookbook: Practical Solutions from Preprocessing to Deep Learning》。
+
+https://store.chrisalbon.com/
+
+Chris Albon写的ML卡片书。
+
 ## Anaconda
 
 Anaconda是一个科学计算方面的python发行版，下面提到的所有工具都可以通过Anaconda一站式安装。
@@ -451,42 +461,5 @@ http://mp.weixin.qq.com/s/Ergq5KKM5vWLWirTf9loEw
 https://mp.weixin.qq.com/s/Ty46-s0kvr2MpbUhQPXJfQ
 
 朴素贝叶斯实战篇之新浪新闻分类
-
-https://mp.weixin.qq.com/s/CMxo4FNxWYyoG-gxAgtzyA
-
-从零开始：手把手教你安装深度学习操作系统、驱动和各种python库！
-
-https://github.com/leetmaa/KMCLib
-
-KMCLib - a general framework for lattice kinetic Monte Carlo (KMC) simulations
-
-https://mp.weixin.qq.com/s/T7dswxqhie0riPlnjdf9_Q
-
-RNN入门与实践
-
-https://mp.weixin.qq.com/s/ZPCfnj2kLxXLpBNbxs2ggw
-
-Logistic回归实战篇之预测病马死亡率（一）
-
-https://mp.weixin.qq.com/s/XpX9TPgv4a_uKAKiy8W4fg
-
-Logistic回归实战篇之预测病马死亡率（二）
-
-https://mp.weixin.qq.com/s/0i1jKgaRu2pLPAXAvoH6qA
-
-Logistic回归实战篇之预测病马死亡率（三）
-
-https://mp.weixin.qq.com/s/U46HOaBP5ijghpc2myJCvA
-
-机器学习中，使用Scikit-Learn简单处理文本数据？
-
-https://mp.weixin.qq.com/s/HoMr52X9O4fMs2YjtH9oFg
-
-scikit-learn Adaboost类库的实战分析
-
-https://mp.weixin.qq.com/s/61oY3gLEOjQjCJgGkEcABw
-
-支持向量机分类实战
-
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（六）——自相关&互相关&卷积, 闵可夫斯基距离, 马氏距离, 数学的深渊, Gabriel's Horn, 函数连续性
+title:  数学狂想曲（六）——自相关&互相关&卷积, 闵可夫斯基距离, 马氏距离, 数学的深渊, Gabriel's Horn
 category: math 
 ---
 

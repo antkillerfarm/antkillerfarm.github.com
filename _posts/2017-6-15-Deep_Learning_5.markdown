@@ -4,6 +4,30 @@ title:  深度学习（五）——RNN, LSTM
 category: DL 
 ---
 
+# 词向量
+
+## 参考（续）
+
+https://mp.weixin.qq.com/s/reT4lAjwo4fHV4ctR9zbxQ
+
+漫谈Word2vec之skip-gram模型
+
+https://mp.weixin.qq.com/s/GOPIIlDBd3vXpgq-a5s2fQ
+
+文本分类特征提取之Word2Vec
+
+https://mp.weixin.qq.com/s/pOShNO2iOntcGSRMbR9uxg
+
+Word2Vec与GloVe技术浅析与对比
+
+https://mp.weixin.qq.com/s/dUadWioBqIEnG85hJFfBJQ
+
+word2vec在工业界的应用场景
+
+https://mp.weixin.qq.com/s/md3SL076cw0TgZDRlwWG5A
+
+用数据玩点花样！如何构建skim-gram模型来训练和可视化词向量
+
 # RNN
 
 ## RNN的基本结构

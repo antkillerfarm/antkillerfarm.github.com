@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十四）——CTC
+title:  深度学习（二十四）——CTC, Deep Speech
 category: DL 
 ---
 
@@ -251,6 +251,48 @@ https://github.com/baidu-research/warp-ctc
 非官方caffe版本：
 
 https://github.com/xmfbit/warpctc-caffe
+
+# Deep Speech
+
+Deep Speech是吴恩达领导的百度硅谷AI Lab 2014年的作品。
+
+论文：
+
+《Deep Speech: Scaling up end-to-end speech recognition》
+
+代码：
+
+https://github.com/mozilla/DeepSpeech
+
+![](/images/img2/Deep_Speech.png)
+
+上图是Deep Speech的网络结构图。网络的前三层和第5层是FC，第4层是双向RNN，Loss是CTC。
+
+1.这里的FC只处理部分音频片段，因此和CNN有异曲同工之妙。
+
+2.论文解释了不用LSTM的原因是：很难并行处理。
+
+参考：
+
+http://blog.csdn.net/xmdxcsj/article/details/54848838
+
+Deep Speech笔记
+
+# Deep speech 2
+
+
+
+论文：
+
+《Deep speech 2: End-to-end speech recognition in english and mandarin》
+
+代码：
+
+https://github.com/PaddlePaddle/DeepSpeech
+
+这个官方代码是PaddlePaddle实现的，由于比较小众，所以还有非官方的代码：
+
+https://github.com/ShankHarinath/DeepSpeech2-Keras
 
 
 

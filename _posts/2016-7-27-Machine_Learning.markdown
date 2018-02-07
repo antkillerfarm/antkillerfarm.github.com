@@ -6,6 +6,10 @@ category: ML
 
 # 序
 
+>Machine Learning = Statistics + Optimization   
+>Data Science = Machine Learning + Systems   
+>--by Michael I. Jordan
+
 这是根据Andrew Ng的《机器学习讲义》编写的系列blog。
 
 >吴恩达，英文名Andrew Ng，1976年生，华裔，在香港和新加坡长大。CMU本科+MIT硕士（1998年）+UCB博士（2002年）。斯坦福大学副教授，百度前首席科学家。   
@@ -260,6 +264,4 @@ $$N(x)=\sum_{j=0}^ka_jn_j(x),n_j(x)=\prod_{i=0}^{j-1}(x-x_i),a_j=[y_0,\dots,y_j]
 这里换个角度看：如果我们把上述多项式回归中的$$x,x^2,\dots,x^n$$看作是线性回归时的特征集的话，那么多项式回归就可以转化成为线性回归。
 
 从中可以看出，欠拟合或过拟合实际上就是线性回归中的特征集选取问题。特征集选取不当，就会导致预测不准。
-
-
 

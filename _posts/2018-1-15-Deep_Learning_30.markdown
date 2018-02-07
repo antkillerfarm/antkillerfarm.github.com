@@ -230,4 +230,11 @@ https://mp.weixin.qq.com/s/SPAbCZloiHp2mtGu0IDWDA
 
 DeepMind高级研究员：重新理解GAN，最新算法、技巧及应用
 
+https://mp.weixin.qq.com/s/EI57G3ph9WCrT7kudOAjvQ
+
+Petuum提出对偶运动生成对抗网络：可合成逼真的视频未来帧和流
+
+https://mp.weixin.qq.com/s/M-YeUqvcSVHj_MbCS_c-6Q
+
+无平行文本照样破解密码，CipherGAN有望提升机器翻译水平
 

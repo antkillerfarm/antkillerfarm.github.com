@@ -200,5 +200,8 @@ http://mp.weixin.qq.com/s/72riTTC3w0q9oF5H-51kXA
 
 手把手教你搭建AlphaZero（使用Python和Keras）
 
+https://mp.weixin.qq.com/s/Qw2tT7H1PwDvPgOYy8YUsQ
+
+AlphaGo Zero代码迟迟不开源，TF等不及自己推了一个
 
 

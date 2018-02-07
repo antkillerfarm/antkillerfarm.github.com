@@ -300,4 +300,16 @@ https://mp.weixin.qq.com/s/A4ewMO50xoopctpn9B7Y5Q
 
 深度学习及AR在移动端打车场景下的应用
 
+https://mp.weixin.qq.com/s/ApMaDAnbc2FE3gNbeeVxuQ
+
+周志华组最新论文提出“溯因学习”，受玛雅文字启发的神经逻辑机
+
+https://mp.weixin.qq.com/s/mnPh8w3VuG9apprOkugbLA
+
+中科大提出新型连续手语识别框架LS-HAN，帮助「听」懂听障人士
+
+https://mp.weixin.qq.com/s/xiXWHc_4cdEIkyaGny56cQ
+
+CMU & Facebook论文解读：非局部神经网络
+
 

@@ -187,6 +187,20 @@ Batch Normalization是Google提出的一种神经网络优化技巧。
 
 ![](/images/img2/BN.jpg)
 
+### Cosine Normalization
+
+Normalization还能怎么做？
+
+我们再来看看神经元的经典变换$$f_w(x)=w\cdot x$$。
+
+对输入数据x的变换已经做过了，横着来是LN，纵着来是BN。
+
+对模型参数w的变换也已经做过了，就是WN。
+
+好像没啥可做的了。然而天才的研究员们盯上了中间的那个点，对，就是$$\cdot$$。
+
+$$f_w(x)=\cos \theta=\frac{w\cdot x}{\|w\|\cdot\|x\|}$$
+
 参考：
 
 http://blog.csdn.net/malefactor/article/details/51476961
@@ -231,7 +245,11 @@ Batch Normalization的分析与展望
 
 https://mp.weixin.qq.com/s/KnmQTKneSimuOGqGSPy58w
 
-详解深度学习中的Normalization，不只是BN
+详解深度学习中的Normalization，不只是BN（1）
+
+https://mp.weixin.qq.com/s/nSQvjBRMaBeoOjdHbyrbuw
+
+详解深度学习中的Normalization，不只是BN（2）
 
 ## 鞍点
 
@@ -246,20 +264,4 @@ https://mp.weixin.qq.com/s/KnmQTKneSimuOGqGSPy58w
 ![](/images/article/Ackley.png)
 
 然而，LeCun和Bengio的研究表明，在high-D(高维)的情况下，局部最小会随着维度的增加，指数型的减少，在深度学习中，一个点是局部最小的概率非常小，同时鞍点无处不在。
-
-## 欠拟合和过拟合
-
-在DL领域，欠拟合意味着神经网络没有学到该学习的特征，而过拟合则意味着神经网络学习到了不该学习的特征。
-
-在之前的描述中，我们一直强调过拟合的风险，然而实际上，欠拟合才是DL最大的敌人。
-
-首先，神经网络对于学习样本数量的要求非常高，基本比浅层模型多2～3个数量级，因此过拟合的风险并不太大。
-
-其次，过拟合的危害也没有欠拟合那么高。比如下面的场景：
-
-1.对同一训练样本集$$T_1$$，进行两次训练，分别得到模型$$M_1,M_2$$。
-
-2.使用$$M_1,M_2$$对同一测试样本集$$T_2$$进行预测，得到预测结果集$$P_1,P_2$$。
-
-3.如果$$P_1,P_2$$的结论基本相反的话，则说明发生了欠拟合现象。而过拟合则并没有这么夸张的效果。
 

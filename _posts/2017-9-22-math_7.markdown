@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（七）——莱洛三角形
+title:  数学狂想曲（七）——函数连续性, 莱洛三角形
 category: math 
 ---
 
@@ -40,17 +40,29 @@ Lipschitz连续的直观图示如上所示。**该曲线上的所有点的切线
 
 易知，Lipschitz continuity比Absolute continuity更严格。
 
+上式中的K被称为该函数的Lipschitz常数，因此,也可说$$f(x)$$是K-Lipschitz连续的。
+
 ## 连续可微
 
 这个的定义比较简单：函数的导数是连续的。直观来说就是：**函数曲线光滑，没有尖。**
 
-由“闭区间的连续函数必有界”可知，Continuously differentiable一定是Lipschitz continuity的。
+由“闭区间的连续函数必有界”可知，闭区间的Continuously differentiable一定是Lipschitz continuity的。
 
 综上：
 
 $$\text{Continuously differentiable} \subseteq \text{Lipschitz continuous} \subseteq \text{Absolute continuity} \subseteq \text{uniformly continuous} = \text{continuous}$$
 
 需要注意，这些结论只在闭区间成立。比如$$f(x)=x^2$$是连续可微的，但却不是一致连续的。因此又有Local Uniform continuity之类的说法。
+
+## $$(1/\gamma)$$-smooth
+
+$$f(b)\le f(a)+$$
+
+$$(1/\gamma)$$-Lipschitz
+
+## $$\lambda$$-strongly convex
+
+
 
 ## Weierstrass Function
 
@@ -124,6 +136,10 @@ https://max.book118.com/html/2015/0401/14126427.shtm
 
 浅谈Borel可测函数及其性质
 
+https://mp.weixin.qq.com/s/jrNIhSlTiXsO2sGWmzcFfg
+
+Michael I. Jordan最新清华授课笔记！
+
 # 莱洛三角形
 
 定宽曲线（Curve of constant width），或称恒宽曲线，定义：平面上一凸形封闭曲线，不论如何转动，其宽度永远不变，则称之定宽曲线或恒宽曲线。这里所称的“宽度”是指平行线“夹住”某封闭曲线时，平行线间的距离，所谓"夹住"是指每个平行线与凸形封闭曲线相交至少一点且与凸形封闭曲线围起来的内部区域（interior）不相交。
@@ -186,34 +202,4 @@ http://twistedsifter.com/2012/11/animated-gifs-that-explain-how-things-work/
 ![](/images/img2/Haberdasher-anm-01.gif)
 
 >Henry Ernest Dudeney，1857～1930，英国上世纪最知名的数学科普作家。
-
-# 复变函数
-
-1.复球面表示。
-
-2.条件严格性。
-
-点域：连续<可导（可微）<可解析
-
-区域：连续<可导（可微）=可解析
-
-3.函数可微的充要条件：Cauchy-Riemann Equations
-
-4.复数在场论描述中的应用。
-
-# 张量分析
-
-在同构的意义下，第零阶张量（r = 0）为标量（Scalar），第一阶张量（r = 1）为向量（Vector），第二阶张量（r = 2）则成为矩阵（Matrix）。
-
-《张量分析》，黄克智著。
-
->注：黄克智，1927年生，固体力学家。江西中正大学本科+清华硕士+莫斯科大学博士（因应召回国，放弃博士学位）。清华大学工程力学系教授、工程力学研究所所长，中国科学院院士。断裂力学领域权威。
-
-# 拓扑学
-
-《Topopogy Without Tears》，University of New South Wales的Sidney A. Morris著。
-
-该书的中文版：
-
-http://www.topologywithouttears.net/topbookchinese.pdf
 

@@ -4,7 +4,29 @@ title:  深度学习（四）——词向量
 category: DL 
 ---
 
-# 词向量（续）
+# 词向量
+
+## One-hot Representation
+
+NLP是ML和DL的重要研究领域。但是多数的ML或DL算法都是针对数值进行计算的，因此如何将自然语言中的文本表示为数值，就成为了一个重要的基础问题。
+
+词向量顾名思义就是单词的向量化表示。最简单的词向量表示法当属**One-hot Representation**：
+
+假设语料库的单词表中有N个单词，则词向量可表示为N维向量$$[0,\dots,0,1,0,\dots,0]$$
+
+这种表示法由于N维向量中只有一个非零元素，故名。该非零元素的序号，就是所表示的单词在单词表中的序号。
+
+One-hot Representation的缺点在于：
+
+1.该表示法中，由于任意两个单词的词向量都是正交的，因此无法反映单词之间的语义相似度。
+
+2.一个词库的大小是$$10^5$$以上的量级。维度过高，会妨碍神经网络学习到稀疏特征。
+
+参考：
+
+https://mp.weixin.qq.com/s?__biz=MzI4MzM2NTU0Mg==&mid=2247483698&idx=1&sn=cf185232e43b4523ab9b0bc0ce425ed4
+
+One-Hot编码与哑变量
 
 ## Word Embedding
 
@@ -270,24 +292,5 @@ http://kexue.fm/archives/4681/
 
 更别致的词向量模型(六)：代码、分享与结语
 
-https://mp.weixin.qq.com/s/reT4lAjwo4fHV4ctR9zbxQ
-
-漫谈Word2vec之skip-gram模型
-
-https://mp.weixin.qq.com/s/GOPIIlDBd3vXpgq-a5s2fQ
-
-文本分类特征提取之Word2Vec
-
-https://mp.weixin.qq.com/s/pOShNO2iOntcGSRMbR9uxg
-
-Word2Vec与GloVe技术浅析与对比
-
-https://mp.weixin.qq.com/s/dUadWioBqIEnG85hJFfBJQ
-
-word2vec在工业界的应用场景
-
-https://mp.weixin.qq.com/s/md3SL076cw0TgZDRlwWG5A
-
-用数据玩点花样！如何构建skim-gram模型来训练和可视化词向量
 
 

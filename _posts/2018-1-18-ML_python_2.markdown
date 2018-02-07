@@ -8,6 +8,42 @@ category: AI
 
 ## 参考
 
+https://mp.weixin.qq.com/s/CMxo4FNxWYyoG-gxAgtzyA
+
+从零开始：手把手教你安装深度学习操作系统、驱动和各种python库！
+
+https://github.com/leetmaa/KMCLib
+
+KMCLib - a general framework for lattice kinetic Monte Carlo (KMC) simulations
+
+https://mp.weixin.qq.com/s/T7dswxqhie0riPlnjdf9_Q
+
+RNN入门与实践
+
+https://mp.weixin.qq.com/s/ZPCfnj2kLxXLpBNbxs2ggw
+
+Logistic回归实战篇之预测病马死亡率（一）
+
+https://mp.weixin.qq.com/s/XpX9TPgv4a_uKAKiy8W4fg
+
+Logistic回归实战篇之预测病马死亡率（二）
+
+https://mp.weixin.qq.com/s/0i1jKgaRu2pLPAXAvoH6qA
+
+Logistic回归实战篇之预测病马死亡率（三）
+
+https://mp.weixin.qq.com/s/U46HOaBP5ijghpc2myJCvA
+
+机器学习中，使用Scikit-Learn简单处理文本数据？
+
+https://mp.weixin.qq.com/s/HoMr52X9O4fMs2YjtH9oFg
+
+scikit-learn Adaboost类库的实战分析
+
+https://mp.weixin.qq.com/s/61oY3gLEOjQjCJgGkEcABw
+
+支持向量机分类实战
+
 https://mp.weixin.qq.com/s?__biz=MzIxNjA2ODUzNg==&mid=2651435914&idx=1&sn=b0b6f1cda08798dc35bf0930dc9d9096
 
 盘膝而坐--跟你聊聊APP市场的数据分析
@@ -79,6 +115,10 @@ https://mp.weixin.qq.com/s/oJdwwpV-7NOPXw0m0qmgfg
 https://mp.weixin.qq.com/s/M2YvR8s2Vh-zGRP42v6txg
 
 极简Python带你探索分类与回归的奥秘
+
+https://mp.weixin.qq.com/s/E0TsD57voXy9C8bIqFvt_g
+
+如何在Python中用scikit-learn生成测试数据集
 
 # 推荐系统的工程细节
 

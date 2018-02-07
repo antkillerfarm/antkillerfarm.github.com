@@ -80,6 +80,36 @@ http://blog.csdn.net/lewif/article/details/78575840
 
 OpenDrive格式地图数据解析
 
+## Apollo
+
+Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。
+
+官网：
+
+http://apollo.auto/
+
+代码：
+
+https://github.com/ApolloAuto/apollo
+
+参考：
+
+https://github.com/TeamStuQ/skill-map/blob/master/data/map-Apollo.md
+
+Apollo自动驾驶工程师技能图谱
+
+http://mp.weixin.qq.com/s/baXCaD1EdHKCJbCIh2HDeA
+
+Apollo高精地图技术与应用
+
+https://mp.weixin.qq.com/s/qtoHF4Mnj_aeGBJbkjJUMA
+
+Apollo小度车载系统
+
+https://mp.weixin.qq.com/s/rWhnazEC35U7nsVpsxhFEg
+
+Apollo 2.0 软硬件框架初探
+
 ## 文章
 
 http://blog.exbot.net/
@@ -89,10 +119,6 @@ http://blog.exbot.net/
 http://www.ros.org/
 
 ROS(Robot Operating System）是一个机器人软件平台，前身是斯坦福人工智能实验室为了支持斯坦福智能机器人STAIR而建立的项目。
-
-https://github.com/TeamStuQ/skill-map/blob/master/data/map-Apollo.md
-
-Apollo自动驾驶工程师技能图谱
 
 https://rsu.data61.csiro.au/people/jalvarez/research_bbdd.php
 
@@ -264,12 +290,7 @@ https://mp.weixin.qq.com/s/4HNaS8Dpi9pcPzE_nN-BvA
 
 全球12家顶级激光雷达公司解读：谁有机会撼动Velodyne
 
-http://mp.weixin.qq.com/s/baXCaD1EdHKCJbCIh2HDeA
+https://mp.weixin.qq.com/s/uyPnuLFn2g39QomQ_HvtSw
 
-Apollo高精地图技术与应用
-
-https://mp.weixin.qq.com/s/qtoHF4Mnj_aeGBJbkjJUMA
-
-Apollo小度车载系统
-
+自动驾驶新思路：现实域到虚拟域统一的无监督方法
 
