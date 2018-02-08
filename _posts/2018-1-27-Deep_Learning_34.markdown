@@ -128,6 +128,10 @@ https://mp.weixin.qq.com/s/Vdt5h8APAFoeVxFYKlywpg
 
 用DeepMind的DQN解数学题，准确率提升15%
 
+https://mp.weixin.qq.com/s/1zJyw67B6DqsHEJ3avbsfQ
+
+DeepMind推出分布式深度强化学习架构IMPALA，让一个Agent学会多种技能
+
 # 模型压缩
 
 对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。

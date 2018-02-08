@@ -228,8 +228,6 @@ http://blog.csdn.net/shuzfan/article/details/77964370
 
 《The Coppersmith-Winograd Matrix Multiplication Algorithm》
 
-《Fast Algorithms for Convolutional Neural Networks》
-
 ## 基本思想
 
 下文的大部分内容摘自Parhi的书《VLSI Digital Signal Processing Systems: Design and Implementation》

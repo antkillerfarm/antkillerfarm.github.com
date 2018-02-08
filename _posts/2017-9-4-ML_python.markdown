@@ -328,6 +328,14 @@ https://mp.weixin.qq.com/s/CExdIdtUxZi4c2B39xdYJA
 
 谷歌开源Tangent
 
+## LibROSA
+
+LibROSA是一个分析音乐和语音的库。
+
+官网：
+
+http://librosa.github.io/
+
 ## 参考
 
 https://github.com/neozhaoliang/pywonderland/tree/master/

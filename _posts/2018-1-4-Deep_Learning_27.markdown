@@ -80,6 +80,10 @@ https://mp.weixin.qq.com/s/t29ITfRPD3yCmRD5wJyq7g
 
 ICCV2017 PoseTrack challenge优异方法：基于检测和跟踪的视频中人体姿态估计
 
+https://mp.weixin.qq.com/s/7w5nYWfZO-YOJ4cA47kQXg
+
+无监督视频物体分割新思路：实例嵌入迁移
+
 # AutoDL
 
 DL领域目前存在的主要问题之一是：如何设计网络结构和调整超参数。目前的做法，通常依赖于作者的直觉，属于典型的拍脑袋想点子。

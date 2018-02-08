@@ -76,6 +76,10 @@ https://mp.weixin.qq.com/s/FqY19sTQd7GPdGSsB5L9eQ
 
 数学大反例合集
 
+https://mp.weixin.qq.com/s/7usiElPtYAt1DCBIv5BZ2Q
+
+多项式插值算法与回归算法
+
 ## 三门问题
 
 https://www.zhihu.com/question/26709273/

@@ -1,10 +1,56 @@
 ---
 layout: post
-title:  深度学习（十九）——SegNet, DeconvNet, DeepLab, ENet, GCN, Mask R-CNN, Ultra Deep Network
+title:  深度学习（十九）——FCN, SegNet, DeconvNet, DeepLab, ENet, GCN
 category: DL 
 ---
 
-# FCN（续）
+## Grab cut
+
+Grab cut是微软剑桥研究院于2004年提出的著名交互式图像语义分割方法。与N-cut一样，grab cut同样也是基于图划分，不过grab cut是其改进版本，可以看作迭代式的语义分割算法。Grab cut利用了图像中的纹理（颜色）信息和边界（反差）信息，只要少量的用户交互操作即可得到比较好的前后背景分割结果。
+
+在Grab cut中，RGB图像的前景和背景分别用一个高斯混合模型（Gaussian mixture model, GMM）来建模。两个GMM分别用以刻画某像素属于前景或背景的概率，每个GMM高斯部件（Gaussian component）个数一般设为k=5。接下来，利用吉布斯能量方程（Gibbs energy function）对整张图像进行全局刻画，而后迭代求取使得能量方程达到最优值的参数作为两个GMM的最优参数。GMM确定后，某像素属于前景或背景的概率就随之确定下来。
+
+在与用户交互的过程中，Grab cut提供两种交互方式：一种以包围框（Bounding box）为辅助信息；另一种以涂写的线条（Scribbled line）作为辅助信息。以下图为例，用户在开始时提供一个包围框，grab cut默认的认为框中像素中包含主要物体／前景，此后经过迭代图划分求解，即可返回扣出的前景结果，可以发现即使是对于背景稍微复杂一些的图像，grab cut仍有不俗表现。
+
+![](/images/article/grab_cut.jpg)
+
+不过，在处理下图时，grab cut的分割效果则不能令人满意。此时，需要额外人为的提供更强的辅助信息：用红色线条／点标明背景区域，同时用白色线条标明前景区域。在此基础上，再次运行grab cut算法求取最优解即可得到较为满意的语义分割结果。Grab cut虽效果优良，但缺点也非常明显，一是仅能处理二类语义分割问题，二是需要人为干预而不能做到完全自动化。
+
+![](/images/article/grab_cut_2.jpg)
+
+不难看出，前DL时代的语义分割工作多是根据图像像素自身的低阶视觉信息（Low-level visual cues）来进行图像分割。由于这样的方法没有算法训练阶段，因此往往计算复杂度不高，但是在较困难的分割任务上（如果不提供人为的辅助信息），其分割效果并不能令人满意。
+
+# FCN
+
+Fully Convolutional Networks是Jonathan Long和Evan Shelhamer于2015年提出的网络结构。
+
+论文：
+
+《Fully Convolutional Networks for Semantic Segmentation》
+
+代码：
+
+https://github.com/shelhamer/fcn.berkeleyvision.org
+
+>Jonathan Long，CMU本科（2010年）+UCB博士在读。   
+>个人主页：   
+>https://people.eecs.berkeley.edu/~jonlong/
+
+>Evan Shelhamer，UCB博士在读。   
+>个人主页：   
+>http://imaginarynumber.net/
+
+>Trevor Darrell，University of Pennsylvania本科（1988年）+MIT硕博（1992年、1996年）。MIT教授（1999～2008）。UCB教授。   
+>个人主页：   
+>https://people.eecs.berkeley.edu/~trevor/
+
+通常CNN网络在卷积层之后会接上若干个全连接层, 将卷积层产生的特征图(feature map)映射成一个固定长度的特征向量。以AlexNet为代表的经典CNN结构适合于图像级的分类和回归任务，因为它们最后都期望得到整个输入图像的一个数值描述（概率），比如AlexNet的ImageNet模型输出一个1000维的向量表示输入图像属于每一类的概率(softmax归一化)。
+
+示例：下图中的猫, 输入AlexNet, 得到一个长为1000的输出向量, 表示输入图像属于每一类的概率, 其中在“tabby cat”这一类统计概率最高。
+
+![](/images/article/FCN_2.png)
+
+然而CNN网络的问题在于：全连接层会将原来二维的矩阵（图片）压扁成一维的，从而丢失了空间信息。这对于分类是没有问题的，但对于语义分割显然就不行了。
 
 ![](/images/article/FCN.png)
 
@@ -188,56 +234,6 @@ http://blog.csdn.net/bea_tree/article/details/60977512
 
 旷视最新：Global Convolutional Network
 
-# Mask R-CNN
-
-Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的NN。它是何恺明2017年的新作。
-
-论文：
-
-《Mask R-CNN》
-
-只有非官方的代码：
-
-Caffe版本：
-
-https://github.com/jasjeetIM/Mask-RCNN
-
-TensorFlow版本：
-
-https://github.com/hillox/TFMaskRCNN
-
-MXNet版本：
-
-https://github.com/TuSimple/mx-maskrcnn
-
-![](/images/img2/mask_rcnn.jpg)
-
-参考：
-
-https://zhuanlan.zhihu.com/p/25954683
-
-Mask R-CNN个人理解
-
-https://mp.weixin.qq.com/s/E0P2B798pukbtRarWooUkg
-
-Mask R-CNN的Keras/TensorFlow/Pytorch代码实现
-
-https://zhuanlan.zhihu.com/p/30967656
-
-从R-CNN到Mask R-CNN
-
-http://zh.gluon.ai/chapter_computer-vision/object-detection.html
-
-使用卷积神经网络的物体检测
-
-https://mp.weixin.qq.com/s/4BRwMEr6rFYvkmKXM7rYLg
-
-效果惊艳！FAIR提出人体姿势估计新模型，升级版Mask-RCNN
-
-https://mp.weixin.qq.com/s/6WmXY1-BmdOHkSRA_Ds9IQ
-
-密集人体姿态估计：2D图像帧可实时生成UV贴图
-
 # 语义分割的展望
 
 俗话说，“没有免费的午餐”（“No free lunch”）。基于深度学习的图像语义分割技术虽然可以取得相比传统方法突飞猛进的分割效果，但是其对数据标注的要求过高：不仅需要海量图像数据，同时这些图像还需提供精确到像素级别的标记信息（Semantic labels）。因此，越来越多的研究者开始将注意力转移到弱监督（Weakly-supervised）条件下的图像语义分割问题上。在这类问题中，图像仅需提供图像级别标注（如，有“人”，有“车”，无“电视”）而不需要昂贵的像素级别信息即可取得与现有方法可比的语义分割精度。
@@ -247,65 +243,4 @@ https://mp.weixin.qq.com/s/6WmXY1-BmdOHkSRA_Ds9IQ
 ![](/images/article/Instance_level.jpg)
 
 最后，基于视频的前景／物体分割（Video segmentation）也是今后计算机视觉语义分割领域的新热点之一，这一设定其实更加贴合自动驾驶系统的真实应用环境。
-
-# Ultra Deep Network
-
-## FractalNet
-
-论文：
-
-《FractalNet: Ultra-Deep Neural Networks without Residuals》
-
-![](/images/article/FractalNet.png)
-
-## Resnet in Resnet
-
-论文：
-
-《Resnet in Resnet: Generalizing Residual Architectures》
-
-![](/images/article/RiR.png)
-
-## Highway
-
-论文：
-
-《Training Very Deep Networks》
-
-![](/images/article/highway.png)
-
-Resnet对于残差的跨层传递是无条件的，而Highway则是有条件的。这种条件开关被称为gate，它也是由网络训练得到的。
-
-## DenseNet
-
-DenseNet是康奈尔大学博士后黄高（Gao Huang）、清华大学本科生刘壮（Zhuang Liu）、Facebook人工智能研究院研究科学家Laurens van der Maaten 及康奈尔大学计算机系教授Kilian Q. Weinberger于2016年提出的。论文当选CVPR 2017最佳论文。
-
-论文：
-
-《Densely Connected Convolutional Networks》
-
-代码：
-
-https://github.com/liuzhuang13/DenseNet
-
-原始版本是Torch写的，官网上列出了其他框架的实现代码的网址。
-
-![](/images/article/DenseNet_2.png)
-
-上图是DenseNet的整体网络结构图。从整体层面来看，DenseNet主要由3个dense block组成。
-
-![](/images/article/DenseNet.png)
-
-上图就是dense block的结构图。与Resnet的跨层加法不同，这里采用的是Concatenation，也就是将不同层的几个tensor组合成一个大的tensor。
-
-### DenseNet的设计思想
-
-以下是原作者的访谈片段：
-
-DenseNet的想法很大程度上源于我们去年发表在ECCV上的一个叫做随机深度网络（Deep networks with stochastic depth）工作。当时我们提出了一种类似于Dropout的方法来改进ResNet。我们发现在训练过程中的每一步都随机地“扔掉”（drop）一些层，可以显著的提高ResNet的泛化性能。这个方法的成功至少带给我们两点启发：
-
->首先，它说明了神经网络其实并不一定要是一个递进层级结构，也就是说网络中的某一层可以不仅仅依赖于紧邻的上一层的特征，而可以依赖于更前面层学习的特征。想像一下在随机深度网络中，当第l层被扔掉之后，第l+1层就被直接连到了第l-1层；当第2到了第l层都被扔掉之后，第l+1层就直接用到了第1层的特征。因此，随机深度网络其实可以看成一个具有随机密集连接的DenseNet。
-
->其次，我们在训练的过程中随机扔掉很多层也不会破坏算法的收敛，说明了ResNet具有比较明显的冗余性，网络中的每一层都只提取了很少的特征（即所谓的残差）。实际上，我们将训练好的ResNet随机的去掉几层，对网络的预测结果也不会产生太大的影响。既然每一层学习的特征这么少，能不能降低它的计算量来减小冗余呢？
-
 

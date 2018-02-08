@@ -298,4 +298,8 @@ https://mp.weixin.qq.com/s/EVD6V9NSrqHuZdGLQO_N9Q
 
 大数据为你解读2017年全国出差地图
 
+https://mp.weixin.qq.com/s/n4IcpVY21NI-WZujsRaRGQ
+
+腾讯AI Lab提出降秩线性动态系统：可处理有噪声计数值短数据
+
 

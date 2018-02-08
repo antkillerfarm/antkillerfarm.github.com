@@ -330,6 +330,10 @@ https://mp.weixin.qq.com/s/7nugWFKtD-C6cpwm2TyvdQ
 
 手把手教你如何部署深度学习模型
 
+https://mp.weixin.qq.com/s/Ctl65r4iZNEOBxiiX2I2eQ
+
+Momenta王晋玮：让深度学习更高效运行的两个视角
+
 ## 面试
 
 https://www.zhihu.com/question/41233373

@@ -152,6 +152,10 @@ http://blog.csdn.net/app_12062011
 
 一个DL+CV的blog，专注于人脸识别、目标跟踪、相机标定和图像拼接等。
 
+http://blog.topspeedsnail.com/
+
+一个DL的blog，专注于Tensorflow。
+
 ## 项目集锦
 
 https://mp.weixin.qq.com/s/ZNNgEB9rFjAE8SdfMo9NLA
@@ -399,6 +403,10 @@ BMXNet：基于MXNet的开源二值神经网络实现
 http://blog.csdn.net/tangwei2014/article/details/55077172
 
 二值化神经网络介绍
+
+https://mp.weixin.qq.com/s/XAxuLg2i3q5_uKDo1wU_rA
+
+从哈希到卷积神经网络：高精度&低功耗
 
 https://mp.weixin.qq.com/s/xbimfckVD0Ol0T1n0-_ktA
 

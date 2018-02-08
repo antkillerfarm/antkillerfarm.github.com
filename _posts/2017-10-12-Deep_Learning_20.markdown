@@ -1,12 +1,68 @@
 ---
 layout: post
-title:  深度学习（二十）——Fast Image Processing, 图像超分辨率算法
+title:  深度学习（二十）——Ultra Deep Network, 图像超分辨率算法
 category: DL 
 ---
 
+# Ultra Deep Network
+
+## FractalNet
+
+论文：
+
+《FractalNet: Ultra-Deep Neural Networks without Residuals》
+
+![](/images/article/FractalNet.png)
+
+## Resnet in Resnet
+
+论文：
+
+《Resnet in Resnet: Generalizing Residual Architectures》
+
+![](/images/article/RiR.png)
+
+## Highway
+
+论文：
+
+《Training Very Deep Networks》
+
+![](/images/article/highway.png)
+
+Resnet对于残差的跨层传递是无条件的，而Highway则是有条件的。这种条件开关被称为gate，它也是由网络训练得到的。
+
 ## DenseNet
 
-### DenseNet的设计思想（续）
+DenseNet是康奈尔大学博士后黄高（Gao Huang）、清华大学本科生刘壮（Zhuang Liu）、Facebook人工智能研究院研究科学家Laurens van der Maaten 及康奈尔大学计算机系教授Kilian Q. Weinberger于2016年提出的。论文当选CVPR 2017最佳论文。
+
+论文：
+
+《Densely Connected Convolutional Networks》
+
+代码：
+
+https://github.com/liuzhuang13/DenseNet
+
+原始版本是Torch写的，官网上列出了其他框架的实现代码的网址。
+
+![](/images/article/DenseNet_2.png)
+
+上图是DenseNet的整体网络结构图。从整体层面来看，DenseNet主要由3个dense block组成。
+
+![](/images/article/DenseNet.png)
+
+上图就是dense block的结构图。与Resnet的跨层加法不同，这里采用的是Concatenation，也就是将不同层的几个tensor组合成一个大的tensor。
+
+### DenseNet的设计思想
+
+以下是原作者的访谈片段：
+
+DenseNet的想法很大程度上源于我们去年发表在ECCV上的一个叫做随机深度网络（Deep networks with stochastic depth）工作。当时我们提出了一种类似于Dropout的方法来改进ResNet。我们发现在训练过程中的每一步都随机地“扔掉”（drop）一些层，可以显著的提高ResNet的泛化性能。这个方法的成功至少带给我们两点启发：
+
+>首先，它说明了神经网络其实并不一定要是一个递进层级结构，也就是说网络中的某一层可以不仅仅依赖于紧邻的上一层的特征，而可以依赖于更前面层学习的特征。想像一下在随机深度网络中，当第l层被扔掉之后，第l+1层就被直接连到了第l-1层；当第2到了第l层都被扔掉之后，第l+1层就直接用到了第1层的特征。因此，随机深度网络其实可以看成一个具有随机密集连接的DenseNet。
+
+>其次，我们在训练的过程中随机扔掉很多层也不会破坏算法的收敛，说明了ResNet具有比较明显的冗余性，网络中的每一层都只提取了很少的特征（即所谓的残差）。实际上，我们将训练好的ResNet随机的去掉几层，对网络的预测结果也不会产生太大的影响。既然每一层学习的特征这么少，能不能降低它的计算量来减小冗余呢？
 
 DenseNet 的设计正是基于以上两点观察。我们让网络中的每一层都直接与其前面层相连，实现特征的重复利用；同时把网络的每一层设计得特别“窄”，即只学习非常少的特征图（最极端情况就是每一层只学习一个特征图），达到降低冗余性的目的。这两点也是DenseNet与其他网络最主要的不同。需要强调的是，第一点是第二点的前提，没有密集连接，我们是不可能把网络设计得太窄的，否则训练会出现欠拟合（under-fitting）现象，即使 ResNet 也是如此。
 
@@ -99,64 +155,6 @@ Dual Path Networks
 http://blog.csdn.net/u014380165/article/details/75676216
 
 DPN（Dual Path Network）算法详解
-
-# Fast Image Processing
-
-![](/images/article/FIP.png)
-
-上图是照片界常用的几种修图方式之一。一般将这些图片风格转换的算法，称为图像处理算子（image processing operators）。如何加速image processing operators的计算，就成为了学界研究的课题之一。
-
-本文提出的模型就是用来加速image processing operators计算的。它是Intel Lab的Qifeng Chen和Jia Xu于2017年提出的。
-
-论文：
-
-《Fast Image Processing with Fully-Convolutional Networks》
-
-代码：
-
-https://github.com/CQFIO/FastImageProcessing
-
-Demo网站：
-
-http://cqf.io/ImageProcessing/
-
-这个课题一般使用MIT-Adobe FiveK Dataset作为基准数据集。网址：
-
-http://groups.csail.mit.edu/graphics/fivek_dataset/
-
-这个数据集包含了5K张原始照片，并雇用了5个专业修图师，对每张图片进行修图。
-
-众所周知，多层神经网络只要有足够的深度和宽度，就可以任意逼近任意连续函数。然而从Fast Image Processing的目的来说，神经网络的深度和宽度注定是有限的，否则肯定快不了。而这也是该课题的研究意义所在。
-
-本文只使用了MIT-Adobe数据集中的原始图片，并使用了10种常用的算子对图片进行处理。因此，该网络训练时的输入是原始图片，而输出是处理后的图片。
-
-![](/images/article/MCA.png)
-
-上图是本文模型的网络结构图。它的设计特点如下：
-
-1.采用Multi-Scale Context Aggregation作为基础网络。MCA的内容参见《深度学习（九）》。
-
-2.传统MCA一般有下采样的过程，但这里由于网络输入和输出的尺寸维度是一样的，因此，所有的feature maps都是等大的。
-
-3.借鉴FCN的思想，去掉了池化层和全连接层。
-
-4.L1~L3主要用于图片的特征提取和升维，而L4~L5则用于特征的聚合和降维，并最终和输出数据的尺寸维度相匹配。
-
-在normalization方面，作者发现有的operators经过normalization之后，精度会上升，而有的精度反而会下降，因此为了统一模型，定义如下的normalization运算：
-
-$$\Psi^s(x)=\lambda_sx+\mu_sBN(x)$$
-
-Loss函数为：
-
-$$\mathcal{l(K,B)}=\sum_i\frac{1}{N_i}\|\hat f (I_i;\mathcal{K,B})-f(I_i)\|^2$$
-
-这实际上就是RGB颜色空间的MSE误差。
-
-为了检验模型的泛化能力，本文还使用RAISE数据集作为交叉验证的数据集。该数据集的网址：
-
-http://mmlab.science.unitn.it/RAISE/
-
-RAISE数据集包含了8156张高分辨率原始照片，由3台不同的相机拍摄，并给出了相机的型号和参数。
 
 # 图像超分辨率算法
 

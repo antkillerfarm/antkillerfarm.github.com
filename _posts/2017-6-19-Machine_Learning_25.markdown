@@ -86,6 +86,10 @@ https://mp.weixin.qq.com/s/5csfnBWZ2MQsnWZnNj9b8w
 
 机器学习中样本比例不平衡的处理方法
 
+https://mp.weixin.qq.com/s/ZL6UWrBB7qr8jp2QRA1MAQ
+
+方法总结：教你处理机器学习中不平衡类问题
+
 # 强化学习
 
 ## 监督学习的局限

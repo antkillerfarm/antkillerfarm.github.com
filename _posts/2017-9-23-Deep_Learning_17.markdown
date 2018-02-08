@@ -1,8 +1,90 @@
 ---
 layout: post
-title:  深度学习（十七）——SSD, YOLOv2
+title:  深度学习（十七）——YOLO, SSD
 category: DL 
 ---
+
+# YOLO（续）
+
+## 概述
+
+从R-CNN到Fast R-CNN一直采用的思路是proposal+分类（proposal提供位置信息，分类提供类别信息），这也被称作two-stage cascade。
+
+YOLO不仅是end-to-end，而且还提供了另一种更为直接的思路：直接在输出层回归bounding box的位置和bounding box所属的类别(整张图作为网络的输入，把Object Detection的问题转化成一个Regression问题)。
+
+![](/images/article/yolo.png)
+
+上图是YOLO的大致流程：
+
+**Step 1**：Resize成448x448，图片分割得到7x7网格(cell)。
+
+**Step 2**：CNN提取特征和预测：卷积部分负责提特征。全连接部分负责预测。
+
+a) 7x7x2=98个bounding box(bbox) 的坐标$$x_{center},y_{center},w,h$$和是否有物体的confidence。
+
+b) 7x7=49个cell所属20个物体分类的概率。
+
+![](/images/article/yolo_2.png)
+
+![](/images/article/yolo_3.png)
+
+上图是YOLO的网络结构图，它采用经过修改的GoogLeNet作为base CNN。
+
+从表面看，YOLO的输出只有一个，似乎比Faster RCNN两个输出少一个，然而这个输出本身，实际上要复杂的多。
+
+YOLO的输出是一个7x7x30的tensor，其中7x7对应图片分割的7x7网格。30表明每个网格对应一个30维的向量。
+
+![](/images/article/yolo_4.png)
+
+上图是这个30维向量的编码方式：2个bbox+confidence是5x2=10维，20个物体分类的概率占其余20维。
+
+总结一下，输出tersor的维度是：$$S\times S \times (B \times 5 + C)$$
+
+这里的confidence代表了所预测的box中含有object的置信度和这个box预测的有多准两重信息：
+
+$$\text{confidence} = \text{Pr}(Object) ∗ \text{IOU}_{pred}^{truth}$$
+
+在loss函数设计方面，简单的把结果堆在一起，然后认为它们的重要程度都一样，这显然是不合理的，每个loss项之前的参数$$\lambda$$就是用来设定权重的。
+
+**Step 3**：过滤bbox（通过NMS）。
+
+![](/images/article/yolo_5.png)
+
+上图是Test阶段的NMS的过程示意图。
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/24916786
+
+图解YOLO
+
+https://mp.weixin.qq.com/s/n51XtGAsaDDAatXYychXrg
+
+YOLO比R-CNN快1000倍，比Fast R-CNN快100倍的实时对象检测！
+
+http://blog.csdn.net/tangwei2014/article/details/50915317
+
+论文阅读笔记：You Only Look Once: Unified, Real-Time Object Detection
+
+https://mp.weixin.qq.com/s/Wqj6EM33p-rjPIHnFKtmCw
+
+计算机是怎样快速看懂图片的：比R-CNN快1000倍的YOLO算法
+
+http://lanbing510.info/2017/08/28/YOLO-SSD.html
+
+目标检测之YOLO，SSD
+
+http://www.yeahkun.com/2016/09/06/object-detection-you-only-look-once-caffe-shi-xian/
+
+Object detection: You Look Only Once(YOLO)
+
+http://blog.csdn.net/zy1034092330/article/details/72807924
+
+YOLO
+
+https://mp.weixin.qq.com/s/c9yagjJIe-m07twPvIoPJA
+
+YOLO算法的原理与实现
 
 # SSD
 
@@ -186,54 +268,3 @@ YOLOv2首先修改预训练分类网络的分辨率为448x448，在ImageNet数�
 
 作者做了对比实验，5种boxes的Avg IOU(61.0)就和Faster R-CNN的9种Avg IOU(60.9)相当。 说明K-means方法的生成的boxes更具有代表性，使得检测任务更好学习。
 
-### Direct location prediction
-
-使用anchor boxes的另一个问题是模型不稳定，尤其是在早期迭代的时候。大部分的不稳定现象出现在预测box的(x,y)坐标时。
-
-究其原因在于，虽然RPN会预测坐标的修正值$$(\Delta x, \Delta y)$$，然而却未对$$\Delta x, \Delta y$$的取值范围做限定。因此，可能会出现anchor检测很远的目标box的情况，效率比较低。
-
-正确做法应该是每一个anchor只负责检测周围正负一个单位以内的目标box。
-
-### Fine-Grained Features
-
-修改后的网络最终在13x13的特征图上进行预测，虽然这足以胜任大尺度物体的检测，但如果用上细粒度特征的话可能对小尺度的物体检测有帮助。
-
-Faser R-CNN和SSD都在不同层次的特征图上产生区域建议以获得多尺度的适应性。
-
-YOLOv2使用了一种不同的方法，简单添加一个passthrough layer，把浅层特征图（分辨率为26x26）连接到深层特征图。
-
-具体操作如下：
-
-1.叠加相邻空间位置的特征到不同通道，将26x26x512的特征图叠加成13x13x2048的特征图。
-
-2.将浅层特征图（13x13x2048）和深层特征图（13x13x1024）合并为一个（13x13x3072）tensor。
-
-### Multi-Scale Training
-
-为了让YOLOv2对不同尺寸图片具有鲁棒性，在训练的时候就要考虑这一点。
-
-每经过10批训练（10 batches）就会随机选择新的图片尺寸。网络使用的降采样参数为32，于是使用32的倍数{320,352，…，608}，最小的尺寸为320 * 320，最大的尺寸为608 * 608。 调整网络到相应维度然后继续进行训练。
-
-## Faster
-
-### Darknet-19
-
-YOLOv2使用了一个新的分类网络作为特征提取部分，参考了前人的先进经验，比如类似于VGG，作者使用了较多的3x3卷积核，在每一次池化操作后把通道数翻倍。
-
-借鉴了network in network的思想，网络使用了全局平均池化（global average pooling），把1x1的卷积核置于3x3的卷积核之间，用来压缩特征。也用了batch normalization（前面介绍过）稳定模型训练。
-
-最终得出的基础模型就是Darknet-19，其包含19个卷积层、5个最大值池化层（maxpooling layers ）。如下图：
-
-![](/images/article/Darknet_19.png)
-
-Darknet-19的运算量为55.8亿次浮点数运算。VGG-16为306.9亿次，而YOLO为85.2亿次。
-
-## Stronger
-
-作者提出了一种在分类数据集和检测数据集上联合训练的机制：
-
-1.使用检测数据集的图片去学习检测相关的信息，例如bounding box坐标预测，是否包含物体以及属于各个物体的概率。
-
-2.使用仅有类别标签的分类数据集图片去扩展可以检测的种类。
-
-这种方法有一些难点需要解决。检测数据集只有常见物体和抽象标签（不具体），例如 “狗”，“船”。分类数据集拥有广而深的标签范围（例如ImageNet就有一百多类狗的品种，包括 “Norfolk terrier”, “Yorkshire terrier”, and “Bedlington terrier”等. ）。必须按照某种一致的方式来整合两类标签。

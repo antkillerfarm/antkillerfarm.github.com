@@ -226,4 +226,8 @@ https://mp.weixin.qq.com/s/xYvYEJA0ssAOZ-NvEXQcZg
 
 阿里小蜜这一年，经历了哪些技术变迁？
 
+https://mp.weixin.qq.com/s/rzglhAUJVNsnbyptORH5lg
+
+对话系统原理和实践
+
 

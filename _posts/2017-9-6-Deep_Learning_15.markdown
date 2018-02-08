@@ -1,10 +1,42 @@
 ---
 layout: post
-title:  深度学习（十五）——SPPNet, Fast R-CNN
+title:  深度学习（十五）——RCNN, SPPNet
 category: DL 
 ---
 
 # RCNN（续）
+
+## RCNN的基本原理
+
+RCNN是Ross Girshick于2014年提出的深度模型。
+
+>注：Ross Girshick（网名：rbg），芝加哥大学博士（2012），Facebook研究员。他和何恺明被誉为CV界深度学习的**双子新星**。   
+>个人主页：   
+>http://www.rossgirshick.info/
+
+论文：
+
+《Rich feature hierarchies for accurate object detection and semantic segmentation》
+
+代码：
+
+https://github.com/rbgirshick/rcnn
+
+RCNN相对传统方法的改进：
+
+**速度**：经典的目标检测算法使用滑动窗法依次判断所有可能的区域。RCNN则(采用Selective Search方法)预先提取一系列较可能是物体的候选区域，之后仅在这些候选区域上(采用CNN)提取特征，进行判断。
+
+**训练集**：经典的目标检测算法在区域中提取人工设定的特征。RCNN则采用深度网络进行特征提取。
+
+使用两个数据库：
+
+一个较大的识别库（ImageNet ILSVC 2012）：标定每张图片中物体的类别。一千万图像，1000类。
+
+一个较小的检测库（PASCAL VOC 2007）：标定每张图片中，物体的类别和位置，一万图像，20类。
+
+RCNN使用识别库进行预训练得到CNN（有监督预训练），而后用检测库调优参数，最后在检测库上评测。
+
+这实际上就是《深度学习（九）》中提到的fine-tuning的思想。
 
 ## RCNN算法的基本流程
 
@@ -213,68 +245,4 @@ https://zhuanlan.zhihu.com/p/24780433
 http://www.cnblogs.com/objectDetect/p/5947169.html
 
 卷积神经网络物体检测之感受野大小计算
-
-**Problem 2**：ROI的在特征图上的对应的特征区域的维度不满足全连接层的输入要求怎么办（又不可能像在原始ROI图像上那样进行截取和缩放）？
-
-对于Problem 2我们分析一下：
-
-这个问题涉及的流程主要有: 图像输入->卷积层1->池化1->...->卷积层n->池化n->全连接层。
-
-引发问题的原因主要有：全连接层的输入维度是固定死的，导致池化n的输出必须与之匹配，继而导致图像输入的尺寸必须固定。
-
-解决办法可能有：
-
-1.想办法让不同尺寸的图像也可以使池化n产生固定的输出维度。（打破图像输入的固定性）
-
-2.想办法让全连接层（罪魁祸首）可以接受非固定的输入维度。（打破全连接层的固定性，继而也打破了图像输入的固定性）
-
-以上的方法1就是SPPnet的思想。
-
-![](/images/article/spp.png)
-
-**Step 1**：为图像建立不同尺度的图像金字塔。上图为3层。
-
-**Step 2**：将图像金字塔中包含的feature映射到固定尺寸的向量中。上图为$$(16+4+1)\times 256$$维向量。
-
-总结：
-
-![](/images/article/spp_p.png)
-
-从上图可以看出，由于卷积策略的不同，SPPnet的流程和RCNN也有一点微小的差异：
-
-1.RCNN是先选择区域，然后对区域进行卷积，并检测。
-
-2.SPPnet是先统一卷积，然后应用选择区域，做区域检测。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/24774302
-
-SPPNet-引入空间金字塔池化改进RCNN
-
-http://kaiminghe.com/iccv15tutorial/iccv2015_tutorial_convolutional_feature_maps_kaiminghe.pdf
-
-何恺明：Convolutional Feature Maps
-
-# Fast R-CNN
-
-Fast R-CNN是Ross Girshick于2015年祭出的又一大招。
-
-论文：
-
-《Fast R-CNN》
-
-代码：
-
-https://github.com/rbgirshick/fast-rcnn
-
-![](/images/article/fast_rcnn_p_2.png)
-
-上图是Fast R-CNN的结构图。从该图可以看出Fast R-CNN和SPPnet的主要差异在于：
-
-1.使用ROI（Region of interest） Pooling，替换SPP。
-
-2.去掉了SVM分类。
-
-以下将对这两个方面，做一个简述。
 

@@ -32,11 +32,31 @@ https://github.com/ShankHarinath/DeepSpeech2-Keras
 
 WaveNet是DeepMind 2016年的作品，主要用于语音合成，也可用于语音识别。
 
-论文：
+DeepMind在WaveNet方面，按照时间顺序有3篇论文：
 
 《WAVENET: A GENERATIVE MODEL FOR RAW AUDIO》
 
+《Neural Machine Translation in Linear Time》
+
+《Parallel WaveNet: Fast High-Fidelity Speech Synthesis》
+
+代码：
+
+https://github.com/ibab/tensorflow-wavenet
+
+一个Tensorflow实现
+
+https://github.com/buriburisuri/speech-to-text-wavenet
+
+这个Tensorflow实现，利用WaveNet实现了语音识别。
+
+![](/images/img2/WaveNet.gif)
+
 参考：
+
+https://www.leiphone.com/news/201609/ErWGa8fs7yR1zn2L.html
+
+DeepMind发布最新原始音频波形深度生成模型WaveNet，将为TTS带来无数可能
 
 https://zhuanlan.zhihu.com/p/27064536
 

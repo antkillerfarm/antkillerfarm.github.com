@@ -78,9 +78,23 @@ s(p)&=s'(p)+h_1x_2m(p) \\
 
 >Winograd这个知识点的复杂，其实主要还不在于算法本身，而是在于其前置了很多数论方面的知识。而我恰恰不具备这些知识，因此进展极度缓慢，前后用了近20天才看完了相关的内容。。。不过，收获很大^_^
 
+## Winograd for CNN
+
+CNN中的Winograd算法一般使用如下论文的结论：
+
+《Fast Algorithms for Convolutional Neural Networks》
+
+该文引论部分提到了Winograd算法的结论，该结论和本文上述的算法步骤略有不同，最初是Winograd针对FIR提出的Minimal FIR Filtering算法。但是算法的本质是相同的，仍然是构建多项式和CRT。
+
+https://github.com/andravin/wincnn
+
+这个项目可以很方便的计算不同大小的核的Winograd的结果。这个项目中还有一个pdf文件作为上述论文的补充材料，详细的给出了各矩阵的计算方法。
+
 ## FFT与卷积
 
 FFT是加速卷积运算的一种常用方法。但由于其原理，当卷积核小的时候，是没什么加速的，当核是3或者5时，速度有时更慢或者相当，而在CNN中卷积的核大多数比较小，FFT起到的加速作用很小，所以基本没人用。
+
+此外，FFT是复数运算，如果没有特殊硬件，而用实数计算的话，还是比较费劲的。
 
 参见：
 
@@ -263,31 +277,4 @@ $$z=g(Wu+b)\rightarrow z=g(BN(Wu+b))=g(BN(Wu))$$
 BN的误差反向算法相对复杂，这里不再赘述。
 
 在inference阶段，BN网络忽略Step 1和Step 2，只计算后两步。其中,$$\beta,\gamma$$由之前的训练得到。$$\mu,\sigma$$原则上要求使用全体样本的均值和方差，但样本量过大的情况下，也可使用训练时的若干个mini batch的均值和方差的FIR滤波值。
-
-# Instance Normalization
-
-Instance Normalization主要用于CV领域。
-
-论文：
-
-《Instance Normalization: The Missing Ingredient for Fast Stylization》
-
-首先我们列出对图片Batch Normalization的公式：
-
-$$y_{tijk}=\frac{x_{tijk}-\mu_i}{\sqrt{\sigma_i^2+\epsilon}}, \mu_i=\frac{1}{HWT}\sum_{t=1}^T \sum_{l=1}^W \sum_{m=1}^Hx_{tilm}, \sigma_i^2=\frac{1}{HWT}\sum_{t=1}^T \sum_{l=1}^W \sum_{m=1}^H(x_{tilm}-m\mu_i)^2$$
-
-其中，T为图片数量，i为通道，j、k为图片的宽、高。
-
-Instance Normalization的公式：
-
-$$y_{tijk}=\frac{x_{tijk}-\mu_{ti}}{\sqrt{\sigma_{ti}^2+\epsilon}}, \mu_{ti}=\frac{1}{HW} \sum_{l=1}^W \sum_{m=1}^Hx_{tilm}, \sigma_{ti}^2=\frac{1}{HW} \sum_{l=1}^W \sum_{m=1}^H(x_{tilm}-m\mu_{ti})^2$$
-
-从中可以看出Instance Normalization实际上就是对一张图片的一个通道内的值进行归一化，因此又叫做对比度归一化（contrast normalization）。
-
-参考：
-
-http://www.jianshu.com/p/d77b6273b990
-
-论文中文版
-
 
