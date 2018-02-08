@@ -56,13 +56,15 @@ $$\text{Continuously differentiable} \subseteq \text{Lipschitz continuous} \subs
 
 ## $$(1/\gamma)$$-smooth
 
-$$f(b)\le f(a)+$$
+如果$$f(x)$$是可微的，且$$\nabla f(x)$$是$$(1/\gamma)$$-Lipschitz的，则如果
 
-$$(1/\gamma)$$-Lipschitz
+$$f(b)\le f(a)+\nabla f(a)^{\top}(b-a)+\frac{1}{2\gamma}\|b-a\|_2^2$$
+
+那么，$$f(x)$$是$$(1/\gamma)$$-smooth的。
 
 ## $$\lambda$$-strongly convex
 
-
+$$f(b)\ge f(a)+\nabla f(a)^{\top}(b-a)+\frac{\lambda}{2}\|b-a\|_2^2$$
 
 ## Weierstrass Function
 
