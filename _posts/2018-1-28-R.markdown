@@ -337,4 +337,8 @@ https://www.hvitfeldt.me/2018/01/visualizing-trigrams-with-the-tidyverse/
 
 Visualizing trigrams with the Tidyverse。一种特殊的可视化图表
 
+https://mp.weixin.qq.com/s/Kb8d92KAz6AbIXjY9SVjGA
+
+R语言也能使用TensorFlow了！RStudio发布全新接口
+
 

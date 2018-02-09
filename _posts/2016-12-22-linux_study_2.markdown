@@ -304,6 +304,14 @@ tldr: 简读Manpage
 
 wget和curl是最常见的下载工具。这里推荐使用axel，该工具支持多路http下载。
 
+示例：
+
+`wget -c <URL>`
+
+`curl -C -o <file name> <URL>`
+
+`axel <URL>`
+
 参考：
 
 http://os.51cto.com/art/201605/511423.htm

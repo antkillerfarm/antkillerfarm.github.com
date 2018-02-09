@@ -226,6 +226,10 @@ https://mp.weixin.qq.com/s/hGRZzNzflbed2w4XosC40w
 
 使用SSD进行目标检测
 
+https://mp.weixin.qq.com/s/vfC1FPi8sjatFh2HMjTEXQ
+
+目标检测算法之SSD
+
 # YOLOv2
 
 面对SSD的攻势，pjreddie不甘示弱，于2016年12月提出了YOLOv2（又名YOLO9000）。YOLOv2对YOLO做了较多改进，实际上更像是SSD的升级版。

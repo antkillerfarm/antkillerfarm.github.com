@@ -238,6 +238,14 @@ http://mp.weixin.qq.com/s/TByhSlSbVU5oHqLTLIJgwA
 
 NiftyNet：开源的卷积神经网络和医疗影像分析平台
 
+https://mp.weixin.qq.com/s/TvKUa4DSzPb0ASubGadwEA
+
+上交大推出Texygen：文本生成模型的基准测试平台
+
+https://mp.weixin.qq.com/s/EfqE3wbPRDffQKXTG4tdkQ
+
+用好这几款炼丹利器，调参从此得心应手
+
 ## 量子计算 & 遗传算法
 
 https://www.zhihu.com/question/28171555

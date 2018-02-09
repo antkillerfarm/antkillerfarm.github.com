@@ -104,6 +104,15 @@ https://wenku.baidu.com/view/21877fea551810a6f524868c.html
 
 然而从网络训练的角度来说，只有Lipschitz连续的函数才一定会收敛，否则的话，可能会出现梯度爆炸的情况。
 
+此外，不同函数的收敛速度也不一样：
+
+|  | GD | SGD |
+|:--:|:--:|:--:|
+| Lipschitz | $$\frac{1}{\sqrt{k}}$$ | $$\frac{1}{\sqrt{k}}$$ |
+| +smoothness | $$\frac{1}{k}$$ | $$\frac{1}{\sqrt{k}}$$ |
+| +strong convexity | $$\frac{1}{k}$$ | $$\frac{1}{k}$$ |
+| +smoothness and strong convexity | $$\exp^{-k}$$ | $$\exp^{-k}$$ |
+
 ## 参考
 
 https://www.zhihu.com/question/32201415

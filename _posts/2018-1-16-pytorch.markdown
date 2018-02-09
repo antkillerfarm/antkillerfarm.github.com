@@ -30,6 +30,10 @@ http://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html
 
 https://github.com/yunjey/pytorch-tutorial
 
+Model Zoo(非官方):
+
+https://github.com/Cadene/pretrained-models.pytorch
+
 ## 参考
 
 https://github.com/jinfagang/pytorch_name_net

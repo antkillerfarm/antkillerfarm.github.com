@@ -166,6 +166,10 @@ http://taku910.github.io/crfpp/
 
 CRF++: Yet Another CRF toolkit
 
+https://mp.weixin.qq.com/s/1rx_R1BGRVAIDqKixNLMQA
+
+终极入门 马尔可夫网络 (Markov Networks)——概率图模型
+
 # 异常点检测
 
 http://chuansong.me/n/377440751130

@@ -49,6 +49,24 @@ http://blog.csdn.net/xmdxcsj/article/details/53326109
 
 该文的创新点在于提出了DPP loss的概念。上图中的$$y_t$$表示帧的分值（越大表示越重要），$$\phi_t$$表示帧之间的相似度。该文的实验表明，将两个特征分开抽取，有助于提升模型的准确度。
 
+这篇论文主要用到了3个数据集：
+
+TVSum dataset: 
+
+https://github.com/yalesong/tvsum
+
+这个需要Yahoo账号和一个高校的邮件地址才行。
+
+SumMe dataset: 
+
+https://people.ee.ethz.ch/~gyglim/vsum/#benchmark
+
+OVP and YouTube datasets: 
+
+https://sites.google.com/site/vsummsite/
+
+需要翻墙。
+
 ## 参考
 
 https://mp.weixin.qq.com/s/4IHzOAvNhHG9c8GP0zXVkQ

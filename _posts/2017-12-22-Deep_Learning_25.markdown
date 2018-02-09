@@ -50,6 +50,8 @@ https://github.com/buriburisuri/speech-to-text-wavenet
 
 这个Tensorflow实现，利用WaveNet实现了语音识别。
 
+![](/images/img2/WaveNet.png)
+
 ![](/images/img2/WaveNet.gif)
 
 参考：

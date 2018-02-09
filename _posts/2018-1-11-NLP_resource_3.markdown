@@ -230,4 +230,8 @@ https://mp.weixin.qq.com/s/rzglhAUJVNsnbyptORH5lg
 
 对话系统原理和实践
 
+https://mp.weixin.qq.com/s/C0hjVv2YOQw__tvSs8zn1A
+
+OpenAI提出新型神经网络：自动计算词对象，实现实体消岐
+
 

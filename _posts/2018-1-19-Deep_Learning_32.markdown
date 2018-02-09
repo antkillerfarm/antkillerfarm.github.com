@@ -58,6 +58,10 @@ https://mp.weixin.qq.com/s/diIzbc0tpCW4xhbIQu8mCw
 
 阿里凑单算法首次公开！基于Graph Embedding的打包购商品挖掘系统解析
 
+https://mp.weixin.qq.com/s/8uyIuO_A0NwusyJV-bKRug
+
+个性化序列推荐：卷积序列嵌入方法
+
 # NN的INT8计算
 
 ## 概述

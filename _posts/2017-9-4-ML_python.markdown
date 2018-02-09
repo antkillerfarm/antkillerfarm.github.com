@@ -338,6 +338,10 @@ http://librosa.github.io/
 
 ## 参考
 
+https://mp.weixin.qq.com/s/S7gnAdekPFcyd4ni1m9phg
+
+GitHub最著名的20个Python机器学习项目，值得收藏！
+
 https://github.com/neozhaoliang/pywonderland/tree/master/
 
 如何用Python画各种著名数学图案

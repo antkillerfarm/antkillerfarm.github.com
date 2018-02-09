@@ -350,6 +350,10 @@ https://mp.weixin.qq.com/s/6Oo2w-AZEf09I_QNRV154w
 
 计算机视觉的修炼秘笈
 
+https://mp.weixin.qq.com/s/Q4pnGyOYqT8pE5X0S0Yg6A
+
+你可能不知道的7个深度学习实用技巧
+
 ## 算法
 
 http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww
