@@ -54,10 +54,6 @@ https://mp.weixin.qq.com/s/phuCKNj_a4CPq6w51Md-9A
 
 易忽略的强化学习知识之基础知识及MDP（下）
 
-https://mp.weixin.qq.com/s/wfCyii6bS-GxMZPg2TPaLA
-
-蒙特卡洛树搜索是什么？如何将其用于规划星际飞行？
-
 https://mp.weixin.qq.com/s/QHAnpGsr1sSaUgOXTJjVjQ
 
 李飞飞高徒带你一文读懂RL来龙去脉
@@ -193,7 +189,7 @@ $$Q(s,a)=R(s,a)+\gamma \max(Q(\tilde s,\tilde a))\tag{1}$$
 >Richard Ernest Bellman，1920～1984，美国应用数学家、控制论学家、数理生物学家。布鲁克林学院本科+威斯康星大学麦迪逊分校硕士+普林斯顿博士。二战期间曾在Los Alamos研究理论物理，后任职于美国智库RAND Corporation，南加州大学教授。美国艺术科学院院士，美国科学院院士。   
 >Bellman–Ford算法的发明人之一。以他命名的奖项有Richard E. Bellman Control Heritage Award和Bellman Prize in Mathematical Biosciences。
 
-在无监督的情况下，agent不断从一个状态转至另一状态进行探索，直到到达目标。我们将agent的每一次探索（从任意初始状态到目标状态的过程）称为一个**episode**。
+在无监督的情况下，agent不断从一个状态转至另一状态进行探索，直到到达目标。我们将agent的每一次探索（从任意初始状态开始，经历若干action，直到到达目标状态的过程）称为一个**episode**。
 
 Q-Learning算法的计算步骤如下：
 

@@ -312,4 +312,15 @@ https://mp.weixin.qq.com/s/xiXWHc_4cdEIkyaGny56cQ
 
 CMU & Facebook论文解读：非局部神经网络
 
+https://mp.weixin.qq.com/s/FrcKszax89PvH8YUARt58Q
+
+详解香港中文大学超大规模分类加速算法
+
+https://mp.weixin.qq.com/s/sFd9hrMrKDl5UJwlY6N7mw
+
+Facebook提出DensePose数据集和网络架构：可实现实时的人体姿态估计
+
+https://mp.weixin.qq.com/s/lKm_ypn5I7tSjoQHceJ0jQ
+
+概率编程：使用贝叶斯神经网络预测金融市场价格
 

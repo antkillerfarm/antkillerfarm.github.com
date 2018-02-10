@@ -62,6 +62,14 @@ https://mp.weixin.qq.com/s/8uyIuO_A0NwusyJV-bKRug
 
 个性化序列推荐：卷积序列嵌入方法
 
+https://mp.weixin.qq.com/s/chiHw5gKnJyTJTQeF6gViw
+
+在向量空间中启用网络分析和推理，清华大学崔鹏博士最新分享
+
+https://mp.weixin.qq.com/s/oKwxWbCkH-xqYSJIBdb92A
+
+2018超网络节点表示学习
+
 # NN的INT8计算
 
 ## 概述

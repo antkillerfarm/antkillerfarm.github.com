@@ -170,6 +170,15 @@ git的reset和checkout的区别
 
 `git reset --hard origin/master`
 
+11.保存密码
+
+编辑仓库目录中本地的”.git/config”文件，增加如下属性：
+
+{% highlight bash %}
+[credential]
+    helper = store
+{% endhighlight %}
+
 ## 如何git超大版本库
 
 自从两次git完整的linux kernel，都因为网络问题，而中途失败之后，不甘心的我，继续在网上寻找答案。

@@ -120,11 +120,19 @@ $$\pi_{k+1}(s) = \arg \max_{a \in \mathcal{A}}\left(\mathcal{R}_s^a + \gamma \su
 
 ![](/images/article/Policy_Iteration_2.png)
 
+如果只需要Prediction，不需要Control的话，也可以只进行Policy Evaluation，这时也被称为Iterative Policy Evaluation。
+
 ### Value Iteration
 
 $$v_{k+1}(s) = \max_{a \in \mathcal{A}}\left(\mathcal{R}_s^a + \gamma \sum_{s'\in \mathcal{S}}\mathcal{P}_{ss'}^a v_k(s')\right)$$
 
-动态规划的主要局限在于：它依赖于概率模型。
+state-value function迭代的复杂度是$$O(mn^2)$$，其中m为action的数量，n为state的数量。而action-value function迭代的复杂度是$$O(m^2n^2)$$
+
+动态规划的主要局限在于：
+
+1.它依赖于概率模型。
+
+2.计算复杂度太高，只适合规模中等（<1M的状态数）的情况。
 
 ## 参考
 
@@ -224,13 +232,4 @@ Simulated：简单的模拟，而不需要完整的Model。
 
 MC method用experience替代了MDP中的transitions/rewards（也可以说是用empirical mean替代了expected），但需要注意这些experience不能是重复采样的，而且它只适用于周期性的MDP。
 
-## Monte Carlo Policy Evaluation
-
-Monte Carlo Policy Evaluation的目标是对状态s进行估值。它的步骤是：
-
->当s被访问到(visited)时:   
->>增加计数：$$N(s)\leftarrow N(s) + 1$$   
->>增加总奖励：$$S(s)\leftarrow S(s) + G_t$$   
->>$$V(s) = S(s)/N(s)$$   
->反复多次：$$N(s)\to \infty,V(s)\to v_{\pi}(s)$$
 
