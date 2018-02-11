@@ -90,5 +90,8 @@ https://mp.weixin.qq.com/s/6cFvh0OgouY_Lg7awxv_3g
 
 快速开启你的第一个项目：TensorFlow项目架构模板
 
+https://mp.weixin.qq.com/s/HshYcb98QyW0rR_svFpfUg
+
+如何在TensorFlow中高效使用数据集
 
 

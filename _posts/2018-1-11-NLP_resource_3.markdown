@@ -234,4 +234,7 @@ https://mp.weixin.qq.com/s/C0hjVv2YOQw__tvSs8zn1A
 
 OpenAI提出新型神经网络：自动计算词对象，实现实体消岐
 
+https://mp.weixin.qq.com/s/dThV1YtMvYtToJFqgXnEzQ
+
+谷歌大脑提出通过多文档摘要方法生成维基百科，可处理较长序列
 

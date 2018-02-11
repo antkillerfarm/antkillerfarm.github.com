@@ -70,6 +70,10 @@ https://mp.weixin.qq.com/s/oKwxWbCkH-xqYSJIBdb92A
 
 2018超网络节点表示学习
 
+https://mp.weixin.qq.com/s/kQlxLDHLI6xxFzwJVjFj7w
+
+GraRep: 基于全局结构信息的图结点表示学习
+
 # NN的INT8计算
 
 ## 概述

@@ -328,3 +328,7 @@ https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
 
 面向无监督任务：DeepMind提出神经离散表示学习生成模型VQ-VAE
 
+https://mp.weixin.qq.com/s/mtZ4_pwl8_GhitgImAU0VA
+
+一文读懂什么是变分自编码器
+

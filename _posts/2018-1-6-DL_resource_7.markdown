@@ -324,3 +324,7 @@ https://mp.weixin.qq.com/s/lKm_ypn5I7tSjoQHceJ0jQ
 
 概率编程：使用贝叶斯神经网络预测金融市场价格
 
+https://mp.weixin.qq.com/s/t9ZHW8fkWtnvpM7ynJOTDw
+
+从语义上理解卷积核行为，UCLA朱松纯等人使用决策树量化解释CNN
+
