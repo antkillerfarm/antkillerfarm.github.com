@@ -302,4 +302,8 @@ https://mp.weixin.qq.com/s/n4IcpVY21NI-WZujsRaRGQ
 
 腾讯AI Lab提出降秩线性动态系统：可处理有噪声计数值短数据
 
+https://mp.weixin.qq.com/s/LbXHpnC19euqriCtSHeg1Q
+
+UC Berkeley提出特征选择新方法：条件协方差最小化
+
 

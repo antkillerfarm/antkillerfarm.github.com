@@ -408,6 +408,10 @@ https://mp.weixin.qq.com/s/M5syxE9Ln4UDLThPh5iuJg
 
 各种字符串Hash函数比较
 
+![](/images/img2/DS.jpg)
+
+![](/images/img2/sort.jpg)
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

@@ -166,9 +166,9 @@ https://mp.weixin.qq.com/s/R30quVGK0TgjerLpiIK9eg
 
 从算法到训练，综述强化学习实现技巧与调试经验
 
-https://mp.weixin.qq.com/s/TpRXxP25-3uqpgC9CBi-3Q
+https://mp.weixin.qq.com/s/l46yJdRaftMlwr6odiSiHg
 
-Yoshua Bengio等人提出MILABOT：强化学习聊天机器人
+Yoshua Bengio团队基于深度强化学习打造聊天机器人MILABOT
 
 https://mp.weixin.qq.com/s/uDFsWebfLmka-zZX3Y_8kg
 

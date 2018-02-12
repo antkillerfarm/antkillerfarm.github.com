@@ -134,6 +134,14 @@ state-value function迭代的复杂度是$$O(mn^2)$$，其中m为action的数量
 
 2.计算复杂度太高，只适合规模中等（<1M的状态数）的情况。
 
+## DP的一些扩展
+
+异步动态规划（Asynchronous Dynamic Programming）
+
+采样更新（Sample Backups）
+
+近似动态规划（Approximate Dynamic Programming）
+
 ## 参考
 
 http://www.cppblog.com/Fox/archive/2008/05/07/Dynamic_programming.html
@@ -219,17 +227,4 @@ Sherwood算法通过增加一个较小的额外开销从而使得算法的复杂
 假如有一把锁，给我100把钥匙，只有1把是对的。于是我每次随机拿1把钥匙去试，打不开就再换1把。我试的次数越多，打开（最优解）的机会就越大，但在打开之前，那些错的钥匙都是没有用的。这个试钥匙的算法，就是拉斯维加斯算法——**尽量找最好的，但不保证能找到**。
 
 比如N皇后的排列问题，除了顺序枚举法之外，随机枚举也是一种策略。
-
-## Monte Carlo method与RL
-
-MDP的缺点在于model是已知的，但在实际应用中，更多的是Model未知（或部分未知）或者建模困难的情况，这种情况下就需要使用MC method来生成相应的Model。
-
-MC method在RL中主要有两种使用方式：
-
-model-free：完全不依赖Model。
-
-Simulated：简单的模拟，而不需要完整的Model。
-
-MC method用experience替代了MDP中的transitions/rewards（也可以说是用empirical mean替代了expected），但需要注意这些experience不能是重复采样的，而且它只适用于周期性的MDP。
-
 

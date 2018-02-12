@@ -88,6 +88,10 @@ https://zhuanlan.zhihu.com/p/30830319
 
 Geoffrey Hinton的CapsNet在云平台上应用
 
+https://kexue.fm/archives/5112/
+
+再来一顿贺岁宴：从K-Means到Capsule
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：

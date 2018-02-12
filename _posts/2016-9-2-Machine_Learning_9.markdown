@@ -194,6 +194,10 @@ K-means算法各个聚类的特征都是一样的，也就是“圆圈”的半�
 
 GMM算法结果也是局部最优解。对其他参数取不同的初始值进行多次计算同样适用于GMM算法。
 
+![](/images/img2/Clustering.jpg)
+
+![](/images/img2/Clustering_2.jpg)
+
 参考：
 
 http://cseweb.ucsd.edu/~atsmith/project1_253.pdf
@@ -207,6 +211,10 @@ kmeans聚类理论篇K的选择（轮廓系数）
 https://mp.weixin.qq.com/s/tLcF7_jjl3_FmjM7L1kcfw
 
 一文详解高斯混合模型原理
+
+https://mp.weixin.qq.com/s/_5A3DuVyN6aE9n5OEc19kA
+
+数据科学家必须了解的六大聚类算法：带你发现数据之美
 
 # EM算法
 

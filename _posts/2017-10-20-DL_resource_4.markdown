@@ -150,6 +150,10 @@ https://mp.weixin.qq.com/s/wakcCF81Ew0q4km29mjIrQ
 
 DeepMind发布Nature论文: 博弈网络让智能体成为游戏大咖
 
+https://mp.weixin.qq.com/s/jBaxkJMQ_6RwtMmY7U29-w
+
+一样的打游戏，不一样的酷
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/HN-kAtltn7hkuUlpzmDDFA
