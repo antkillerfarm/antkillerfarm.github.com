@@ -44,3 +44,5 @@ https://mp.weixin.qq.com/s/wfCyii6bS-GxMZPg2TPaLA
 
 蒙特卡洛树搜索是什么？如何将其用于规划星际飞行？
 
+$$V(S_t)\leftarrow V(S_t)+\alpha(R_{t+1}+\gamma V(S_{t+1})-V(S_t))$$
+

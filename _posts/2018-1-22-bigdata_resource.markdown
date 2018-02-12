@@ -278,4 +278,7 @@ https://mp.weixin.qq.com/s/bsuveX-E6E2fKZ24mj03nQ
 
 微服务架构技术栈选型手册
 
+https://mp.weixin.qq.com/s/lccktISXLLfKzT_ZuNTdpg
+
+阿里数据中心大幅降低成本的核心技术：混部技术
 

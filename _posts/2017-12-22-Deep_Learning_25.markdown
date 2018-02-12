@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十五）——深度推荐系统, 手势识别
+title:  深度学习（二十五）——WaveNet, L2 Normalization, 深度推荐系统, 手势识别
 category: DL 
 ---
 
@@ -75,6 +75,23 @@ http://mp.weixin.qq.com/s/0Xg_acbGG3pTIgsRQKJjrQ
 https://mp.weixin.qq.com/s/u1UnAuGllcWn8Ik5wDPY6w
 
 可视化语音分析：深度对比Wavenet、t-SNE和PCA等算法
+
+# L2 Normalization
+
+L2 Normalization本身并不复杂，然而多数资料都只提到1维的L2 Normalization的计算公式：
+
+$$x=[x_1,x_2,\dots,x_d]\\
+y=[y_1,y_2,\dots,y_d]\\
+y=\frac{x}{\sqrt{\sum_{i=1}^dx_i^2}}=\frac{x}{\sqrt{x^Tx}}
+$$
+
+对于多维L2 Normalization几乎未曾提及，这里以3维tensor：X[width, height, channel]为例介绍一下多维L2 Normalization的计算方法。
+
+多维L2 Normalization有一个叫axis(有时也叫dim)的参数，如果dim=0的话，实际上就是将整个tensor flatten之后，再L2 Normalization。这个是比较简单的。
+
+这里说说axis=3的情况：
+
+$$X_{xyz}$$
 
 # 深度推荐系统
 
