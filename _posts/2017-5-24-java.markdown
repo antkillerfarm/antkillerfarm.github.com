@@ -372,4 +372,8 @@ Monaco Editor是MS开源的一个在线代码编辑工具，可提供类似VS co
 
 https://microsoft.github.io/monaco-editor/
 
+## 参考
 
+https://zhuanlan.zhihu.com/p/22989691
+
+JavaScript世界万物诞生记

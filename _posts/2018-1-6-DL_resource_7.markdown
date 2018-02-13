@@ -328,3 +328,8 @@ https://mp.weixin.qq.com/s/t9ZHW8fkWtnvpM7ynJOTDw
 
 从语义上理解卷积核行为，UCLA朱松纯等人使用决策树量化解释CNN
 
+https://mp.weixin.qq.com/s/Rbc_OOYi2-Y-wyy4j6MsWg
+
+彩云科技提出结合组合子抽象的神经编程器-解释器，提升通用性和可学习性
+
+

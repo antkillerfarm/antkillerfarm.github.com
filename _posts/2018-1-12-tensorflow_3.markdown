@@ -94,4 +94,7 @@ https://mp.weixin.qq.com/s/HshYcb98QyW0rR_svFpfUg
 
 如何在TensorFlow中高效使用数据集
 
+https://mp.weixin.qq.com/s/rSt6omyXe57WkBVXwp2AJg
+
+数据载入过慢？这里有一份TensorFlow加速指南
 

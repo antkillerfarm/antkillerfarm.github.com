@@ -282,3 +282,7 @@ https://mp.weixin.qq.com/s/lccktISXLLfKzT_ZuNTdpg
 
 阿里数据中心大幅降低成本的核心技术：混部技术
 
+https://mp.weixin.qq.com/s/Zo1iBzAY1dBAa2pRTf-BbA
+
+如何使用Keras、Redis、Flask和Apache把深度学习模型部署到生产环境
+
