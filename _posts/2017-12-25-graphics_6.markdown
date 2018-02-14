@@ -128,6 +128,10 @@ https://mp.weixin.qq.com/s/tHNd6y2v7GXN2mSIv0qXlg
 
 手把手：一张图看清编程语言发展史，你也能用Python画出来！
 
+https://mp.weixin.qq.com/s/mD732PqDtqYdFZSxZWtvvg
+
+从1维到6维，一文读懂多维数据可视化策略
+
 ## howmuch.net
 
 howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：

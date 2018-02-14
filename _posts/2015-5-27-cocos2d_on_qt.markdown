@@ -250,6 +250,14 @@ https://www.ibm.com/developerworks/cn/java/j-lo-antlr/index.html
 
 使用Antlr开发领域语言
 
+# MPS
+
+MPS是jetbrains推出的用于构建DSL的工具。
+
+官网：
+
+https://www.jetbrains.com/mps/
+
 # perl
 
 中文教程：
