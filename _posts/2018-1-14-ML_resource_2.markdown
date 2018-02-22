@@ -306,4 +306,7 @@ https://mp.weixin.qq.com/s/LbXHpnC19euqriCtSHeg1Q
 
 UC Berkeley提出特征选择新方法：条件协方差最小化
 
+https://mp.weixin.qq.com/s/HnJ2GfslrMcLc04eJ35qHQ
+
+Pedro Domingos总结机器学习研究的12个宝贵经验
 

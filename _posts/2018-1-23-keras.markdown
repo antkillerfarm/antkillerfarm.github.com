@@ -152,4 +152,8 @@ https://mp.weixin.qq.com/s/tGkKNEAM6Ze1iEdqB9zzXQ
 
 Keras：基于SegNet和U-Net的遥感图像语义分割
 
+https://mp.weixin.qq.com/s/cvEkUBsPUmViHf5demFhtA
+
+如何从零开始用Keras开发一个机器翻译系统！
+
 

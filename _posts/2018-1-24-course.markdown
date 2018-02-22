@@ -232,3 +232,6 @@ http://deeplearning.cs.cmu.edu/
 
 11-785 Introduction to Deep Learning
 
+http://introtodeeplearning.com/
+
+MIT 6.S191: Introduction to Deep Learning

@@ -220,9 +220,10 @@ $$a_{ij}=\begin{cases}
 >$$u_{1j}=a_{1j},j=1,2,\dots,n$$（U的第1行）   
 >$$l_{j1}=a_{j1}/u_{11},j=1,2,\dots,n$$（L的第1列）   
 >For $$i=2,3,\dots,n$$ do   
-><span style="white-space: pre">	</span>$$u_{ii}=a_{ii}-\sum_{t=1}^{i-1}l_{it}u_{tj}$$   
-><span style="white-space: pre">	</span>$$u_{ij}=a_{ij}-\sum_{t=1}^{i-1}l_{it}u_{tj}$$<span style="white-space: pre">		</span>for $$j=i+1,\dots,n$$（U的第i行）   
-><span style="white-space: pre">	</span>$$l_{ji}=\frac{a_{ji}-\sum_{t=1}^{i-1}l_{jt}u_{ti}}{u_{ii}}$$<span style="white-space: pre">	   </span>for $$j=i+1,\dots,n$$（L的第i列）   
+>>$$u_{ii}=a_{ii}-\sum_{t=1}^{i-1}l_{it}u_{tj}$$   
+>>$$u_{ij}=a_{ij}-\sum_{t=1}^{i-1}l_{it}u_{tj}$$,for $$j=i+1,\dots,n$$（U的第i行）   
+>>$$l_{ji}=\frac{a_{ji}-\sum_{t=1}^{i-1}l_{jt}u_{ti}}{u_{ii}}$$,for $$j=i+1,\dots,n$$（L的第i列）   
+>
 >End   
 >$$u_{nn}=a_{nn}-\sum_{t=1}^{n-1}l_{nt}u_{tn}$$
 

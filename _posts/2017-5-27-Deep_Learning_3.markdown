@@ -332,3 +332,8 @@ https://mp.weixin.qq.com/s/mtZ4_pwl8_GhitgImAU0VA
 
 一文读懂什么是变分自编码器
 
+https://mp.weixin.qq.com/s/Ci0HPy3ENz1ZooB784aMcA
+
+谷歌大脑Wasserstein自编码器：新一代生成模型算法
+
+

@@ -183,15 +183,18 @@ $$\theta_j:=\theta_j+\alpha(y^{(i)}-h_{\theta}(x^{(i)}))x^{(i)}_j \tag{4}$$
 1.批量梯度下降（batch gradient descent）算法。方法如下：
 
 >Repeat until convergence {   
-><span style="white-space: pre">	</span>$$\theta_j:=\theta_j+\alpha\sum_{i=1}^m(y^{(i)}-h_{\theta}(x^{(i)}))x^{(i)}_j$$(for every j)   
+>>$$\theta_j:=\theta_j+\alpha\sum_{i=1}^m(y^{(i)}-h_{\theta}(x^{(i)}))x^{(i)}_j$$(for every j)   
+>
 >}
 
 2.随机梯度下降（stochastic gradient descent）算法。方法如下：
 
 >Loop {   
-><span style="white-space: pre">	</span>for i=1 to m, {   
-><span style="white-space: pre">	    </span>$$\theta_j:=\theta_j+\alpha(y^{(i)}-h_{\theta}(x^{(i)}))x^{(i)}_j$$(for every j)   
-><span style="white-space: pre">	</span>}   
+>>for i=1 to m, {   
+>>>$$\theta_j:=\theta_j+\alpha(y^{(i)}-h_{\theta}(x^{(i)}))x^{(i)}_j$$(for every j)   
+>>
+>>}   
+>
 >}
 
 | 名称 | 批量梯度下降 | 随机梯度下降 |

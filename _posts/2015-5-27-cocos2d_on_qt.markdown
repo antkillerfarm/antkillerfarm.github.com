@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Cocos2d-x v3在Qt 5上的移植, lex&yacc, ANTLR, perl
+title:  Cocos2d-x v3在Qt 5上的移植, lex&yacc, ANTLR
 category: technology 
 ---
 
@@ -258,18 +258,3 @@ MPS是jetbrains推出的用于构建DSL的工具。
 
 https://www.jetbrains.com/mps/
 
-# perl
-
-中文教程：
-
-http://www.cbi.pku.edu.cn/chinese/documents/perl/index.htm
-
-perl的语法和C差别不算太大，好多语法大致上从关键字也可以猜出来。这里仅对一些符号做个简短的说明。
-
-`$name`：变量name。
-
-`@name`：数组name。
-
-`&name`：函数name。这种情况下，name的定义在使用之后。如果name的定义在使用之前，`&`可省略。
-
-`%name`：哈希数组name。

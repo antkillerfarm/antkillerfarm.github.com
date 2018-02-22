@@ -220,4 +220,7 @@ http://www.dataonthemind.org/data-resources/datasets
 
 认知科学数据集大列表 Center for Data on the Mind
 
+https://mp.weixin.qq.com/s/K1eYjrrWuHu8JgWgoDliJw
+
+百度的中文问答数据集WebQA
 

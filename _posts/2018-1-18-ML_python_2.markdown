@@ -120,6 +120,14 @@ https://mp.weixin.qq.com/s/E0TsD57voXy9C8bIqFvt_g
 
 如何在Python中用scikit-learn生成测试数据集
 
+https://mp.weixin.qq.com/s/HGLBPA9Ob7-3DzSNuF39Mg
+
+用Python搭建机器学习模型预测黄金价格
+
+https://mp.weixin.qq.com/s/VmLphhs8rGabdNXtvllgdQ
+
+小白学数据：教你用Python实现简单监督学习算法
+
 # 推荐系统的工程细节
 
 推荐系统不仅是算法，还包括若干工程细节。这些细节虽然不算复杂，够不上算法的层面，然而对产品的成败，却有举足轻重的作用。

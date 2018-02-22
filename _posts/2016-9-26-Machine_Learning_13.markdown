@@ -89,8 +89,9 @@ $$\mid AB\mid =\mid A\mid \cdot\mid B\mid $$
 由此产生如下迭代算法：
 
 >Repeat until convergence {   
-><span style="white-space: pre">	</span>1.$$A_k=Q_kR_k$$（QR分解）   
-><span style="white-space: pre">	</span>2.$$A_{k+1}=Q_k^TA_kQ_k=Q_k^{-1}Q_kR_kQ_k=R_kQ_k$$   
+>>1.$$A_k=Q_kR_k$$（QR分解）   
+>>2.$$A_{k+1}=Q_k^TA_kQ_k=Q_k^{-1}Q_kR_kQ_k=R_kQ_k$$   
+>
 >}
 
 这个算法的收敛性证明比较复杂，这里只给出结论：

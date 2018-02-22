@@ -71,8 +71,9 @@ K-Means算法的步骤如下:
 
 >1.随机选取k个聚类质心点（cluster centroids）$$\mu_1,\dots,\mu_k$$   
 >2.重复下面过程直到收敛 {   
-><span style="white-space: pre">	</span>对于每一个样例i，计算其应该属于的聚类：$$c^{(i)}:=\arg\min_j\|x^{(i)}-\mu_j\|^2$$   
-><span style="white-space: pre">	</span>对于每一个聚类j，重新计算该聚类的质心：$$\mu_j:=\frac{\sum_{i=1}^m1\{c^{(i)}=j\}x^{(i)}}{\sum_{i=1}^m1\{c^{(i)}=j\}}$$。   
+>>对于每一个样例i，计算其应该属于的聚类：$$c^{(i)}:=\arg\min_j\|x^{(i)}-\mu_j\|^2$$   
+>>对于每一个聚类j，重新计算该聚类的质心：$$\mu_j:=\frac{\sum_{i=1}^m1\{c^{(i)}=j\}x^{(i)}}{\sum_{i=1}^m1\{c^{(i)}=j\}}$$。   
+>
 >}
 
 其中，k是我们事先定义的聚类个数。下图展示了对n个样本点进行K-means聚类的效果，这里k取2。
@@ -169,12 +170,14 @@ EM算法的思路是：
 具体到这里就是：
 
 >Repeat until convergence {   
-><span style="white-space: pre">	</span>(E-step) For each i, j：   
-><span style="white-space: pre">			</span>$$w_j^{(i)}:=p(z^{(i)}=j\mid x^{(i)};\phi,\mu,\Sigma)$$   
-><span style="white-space: pre">	</span>(M-step) Update the parameters：   
-><span style="white-space: pre">			</span>$$\phi_j:=\frac{1}{m}\sum_{i=1}^mw_j^{(i)}$$   
-><span style="white-space: pre">			</span>$$\mu_j:=\frac{\sum_{i=1}^mw_j^{(i)}x^{(i)}}{\sum_{i=1}^mw_j^{(i)}}$$   
-><span style="white-space: pre">			</span>$$\Sigma_j:=\frac{\sum_{i=1}^mw_j^{(i)}(x^{(i)}-\mu_j)(x^{(i)}-\mu_j)^T}{\sum_{i=1}^mw_j^{(i)}}$$   
+>>(E-step) For each i, j：   
+>>>$$w_j^{(i)}:=p(z^{(i)}=j\mid x^{(i)};\phi,\mu,\Sigma)$$   
+>>
+>>(M-step) Update the parameters：   
+>>>$$\phi_j:=\frac{1}{m}\sum_{i=1}^mw_j^{(i)}$$   
+>>>$$\mu_j:=\frac{\sum_{i=1}^mw_j^{(i)}x^{(i)}}{\sum_{i=1}^mw_j^{(i)}}$$   
+>>>$$\Sigma_j:=\frac{\sum_{i=1}^mw_j^{(i)}(x^{(i)}-\mu_j)(x^{(i)}-\mu_j)^T}{\sum_{i=1}^mw_j^{(i)}}$$   
+>
 >}
 
 E-Step中，根据贝叶斯公式可得：
@@ -215,6 +218,10 @@ https://mp.weixin.qq.com/s/tLcF7_jjl3_FmjM7L1kcfw
 https://mp.weixin.qq.com/s/_5A3DuVyN6aE9n5OEc19kA
 
 数据科学家必须了解的六大聚类算法：带你发现数据之美
+
+https://mp.weixin.qq.com/s/pDiZt4ydWw-4cYeE4gpjiw
+
+数据科学家需要了解的5大聚类算法
 
 # EM算法
 

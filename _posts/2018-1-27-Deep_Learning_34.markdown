@@ -276,3 +276,8 @@ https://mp.weixin.qq.com/s/rTFLiZ7DCo6vzD5O64UnMQ
 
 阿里提出新神经网络算法，压缩掉最后一个比特
 
+https://mp.weixin.qq.com/s/f1SCK0J5oTWNJvtld3UAHQ
+
+神经网络修剪最新研究进展
+
+

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  linux学习心得（二）, diff&patch, bash, SWIG, BBR, Kannel
+title:  linux学习心得（二）, diff&patch, bash, SWIG, BBR
 category: linux 
 ---
 

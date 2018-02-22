@@ -310,10 +310,6 @@ https://mp.weixin.qq.com/s/rAq6Rn7pSaZ5IOexgLO-4w
 
 FAIR提出突触可塑算法：让神经网络学会记忆和遗忘
 
-https://mp.weixin.qq.com/s/qXZMo_RitSenmI7x0xGNsg
-
-中科院自动化所多媒体计算与图形学团队NIPS 2017论文提出平均Top-K损失函数，专注于解决复杂样本
-
 https://mp.weixin.qq.com/s/gljfrNwNvrK7teJ-DYyNIw
 
 如何用深度学习处理结构化数据？

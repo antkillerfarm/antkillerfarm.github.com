@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  版本管理工具的前世今生, awk&sed&grep, Win10历险记, 运维工具集
+title:  版本管理工具的前世今生, awk&sed&grep, Win10历险记, 运维工具集, Kannel
 category: technology 
 ---
 

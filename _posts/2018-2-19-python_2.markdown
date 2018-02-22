@@ -1,0 +1,318 @@
+---
+layout: post
+title:  Python（二）
+category: language 
+---
+
+# Python
+
+## Python 2 to Python 3
+
+https://www.linuxzen.com/qian-yi-dao-python-3.html
+
+迁移到Python 3
+
+https://www.zhihu.com/question/19698598
+
+Python 2和Python 3有哪些主要区别？
+
+https://mp.weixin.qq.com/s/Q3cqLuOZDSMOdAjVrCDrtQ
+
+在Python 2.7即将停止支持时，我们为你准备了一份3.x迁移指南
+
+## tqdm
+
+tqdm是一个快速，可扩展的进度条。
+
+代码：
+
+https://github.com/tqdm/tqdm
+
+示例：
+
+{% highlight python %}
+from tqdm import tqdm
+for i in tqdm(range(9)):
+    ...
+{% endhighlight %}
+
+效果：
+
+`76%|████████████████████            | 7641/10000 [00:34<00:10, 222.22 it/s]`
+
+## Captcha
+
+Captcha是一个Python验证码库，能够生成音频和图片验证码。
+
+代码：
+
+https://github.com/lepture/captcha
+
+这个库可用于生成大量有标签的验证码，是DL入门的必备工具。
+
+## 特殊语法：filter、map、reduce、lambda
+
+**filter(function, sequence)**：对sequence中的item依次执行function(item)，将执行结果为True的item组成一个List/String/Tuple（取决于sequence的类型）返回。
+
+{% highlight python %}
+>>> def f(x): return x % 2 != 0 and x % 3 != 0 
+>>> filter(f, range(2, 25)) 
+[5, 7, 11, 13, 17, 19, 23]
+{% endhighlight %}
+
+**map(function, sequence) **：对sequence中的item依次执行function(item)，将执行结果组成一个List返回。
+
+{% highlight python %}
+>>> def cube(x): return x*x*x 
+>>> map(cube, range(1, 11)) 
+[1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]
+{% endhighlight %}
+
+**reduce(function, sequence, starting_value)**：对sequence中的item顺序迭代调用function，如果有starting_value，还可以作为初始值调用，例如可以用来对List求和。
+
+{% highlight python %}
+>>> def add(x,y): return x + y 
+>>> reduce(add, range(1, 11)) 
+55 (PS: 1+2+3+4+5+6+7+8+9+10)
+{% endhighlight %}
+
+**lambda**：这是Python支持一种有趣的语法，它允许你快速定义单行的最小函数，类似与C语言中的宏，这些叫做lambda的函数，是从LISP借用来的，可以用在任何需要函数的地方： 
+
+{% highlight python %}
+>>> g = lambda x: x * 2 
+>>> g(3)
+6
+>>> (lambda x: x * 2)(3) 
+6
+{% endhighlight %}
+
+参考：
+
+http://www.cnblogs.com/longdouhzt/archive/2012/05/19/2508844.html
+
+Python特殊语法：filter、map、reduce、lambda
+
+## 字符串格式化
+
+目前python的字符串格式化，有两种style：Old Style和New Style。两者的区别详见：
+
+https://pyformat.info/
+
+这里仅给出几个简单示例：
+
+Old Style：`'%s %s' % ('one', 'two')`
+
+New Style：`'{} {}'.format('one', 'two')`
+
+## `__init__.py`的作用
+
+`__init__.py`文件的作用是将文件夹变为一个Python模块,Python 中的每个模块的包中，都有`__init__.py`文件。
+
+示例：
+
+{% highlight python %}
+# package
+# __init__.py
+import re
+import urllib
+import sys
+import os
+
+# a.py
+import package 
+print(package.re, package.urllib, package.sys, package.os)
+{% endhighlight %}
+
+`__init__.py`中还有一个重要的变量，`__all__`,它用来将模块全部导入。
+
+{% highlight python %}
+# __init__.py
+__all__ = ['os', 'sys', 're', 'urllib']
+
+# a.py
+from package import *
+{% endhighlight %}
+
+参见：
+
+http://www.cnblogs.com/Lands-ljk/p/5880483.html
+
+Python `__init__.py`作用详解
+
+## defaultdict()和namedtuple()
+
+defaultdict()和namedtuple()是collections模块里面2个很实用的扩展类型。
+
+`from collections import defaultdict, namedtuple`
+
+defaultdict()：返回一个和dictionary类似的对象，和dict不同主要体现在2个方面：
+
+1.可以指定key对应的value的类型。
+
+2.不必为默认值担心，换句话说就是不必担心有key没有value这回事。总会有默认的value。
+
+`d = defaultdict(list)`
+
+该语句创建一个defaultdict类型（你可以想象为dict类型），value的类型是list。
+
+namedtuple()：namedtuple创建一个和tuple类似的对象，而且对象拥有可以访问的属性。这对象更像带有数据属性的类，不过数据属性是只读的。
+
+{% highlight python %}
+>>> from collections import namedtuple
+>>> TPoint = namedtuple('TPoint', ['x', 'y'])
+>>> p = TPoint(x=10, y=10)
+>>> p
+TPoint(x=10, y=10)
+>>> p.x
+10
+>>> p.y
+10
+{% endhighlight %}
+
+PS：非常类似C语言的结构体，不过数据属性是只读的。
+
+参考：
+
+http://www.cnblogs.com/herbert/p/3468294.html
+
+再谈collections模块defaultdict()和namedtuple()
+
+## @的用法
+
+@在python中是装饰器的意思，它的用法比较复杂。参见：
+
+https://www.zhihu.com/question/26930016
+
+如何理解Python装饰器？
+
+https://mp.weixin.qq.com/s/1QjJqFfJNNych9b6ae5VUg
+
+深入理解Python装饰器
+
+## range & xrange
+
+1.range会直接生成一个list对象。
+
+2.xrange则不会直接生成一个list，而是每次调用返回其中的一个值。
+
+所以xrange做循环的性能比range好，尤其是返回很大的时候，尽量用xrange吧，除非你是要返回一个列表。
+
+>Python 3只有range，效果和Python 2的xrange相仿，且支持slicing。
+
+参考：
+
+http://www.cnblogs.com/zhangjing0502/archive/2012/05/16/2503880.html
+
+Python的range和xrange
+
+## 时间、日期数据的格式处理。
+
+时间数据上的格式处理，主要指strftime和strptime函数。其中前者可将时间数据转换成指定格式的字符串，而后者则将字符串转换成时间数据。
+
+{% highlight python %}
+import time
+a = "2013-10-10 23:40:00"
+timeArray = time.strptime(a, "%Y-%m-%d %H:%M:%S")
+otherStyleTime = time.strftime("%Y/%m/%d %H:%M:%S", timeArray)
+{% endhighlight %}
+
+日期方面也是类似的做法。
+
+## 星期处理
+
+`datetime(2002, 12, 4).isoweekday() == 3`
+
+`datetime(2001, 12, 31).isocalendar() == (2002, 1, 1)#(year, week number, weekday)`
+
+从上面的例子还可以看出，isocalendar可以完美的处理跨年问题。
+
+## 处理eml文件
+
+代码示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/misc/hello_eml.py
+
+这个示例主要使用email包来解析eml文件。
+
+同时为了处理其中的html的内容，还用到了Beautiful Soup包。其网址为：
+
+https://www.crummy.com/software/BeautifulSoup/
+
+参见：
+
+https://mp.weixin.qq.com/s/p86yvl3uAm3FXw4V9NlNoA
+
+一文带你上手Python网页抓取神器BeautifulSoup库
+
+## Sqlite
+
+Ubuntu下的安装方法是：
+
+`sudo apt-get install sqlite`
+
+Python自带了pysqlite包，用于调用sqlite。
+
+pysqlite的helloworld程序可参见：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/pysqlite-helloworld.py
+
+可以使用sqlite_bro软件包，查看sqlite数据库。安装方法：
+
+`sudo pip install sqlite_bro`
+
+## 如何通过需认证的代理获取HTTP网页
+
+Python内置的urllib和urllib2模块都可用于获取HTTP网页，但使用范围是不同的。urllib只支持HTTP 0.9和HTTP 1.0，所以如果只是使用代理可以使用urllib.FancyURLopener类，如果该代理还需要认证的话urllib就不行了。因为代理认证是HTTP 1.1中引入的。
+
+这时可以考虑使用urllib2模块。代码如下：
+
+{% highlight python %}
+import urllib2
+l_proxy_info = {
+'user' : 'user',
+'pass' : 'pass',
+'host' : 'host',
+'port' : 3128
+}
+
+l_proxy_support = urllib2.ProxyHandler({"http" : "http://%(user)s:%(pass)s@%(host)s:%(port)d" % l_proxy_info})
+l_opener = urllib2.build_opener(l_proxy_support, urllib2.HTTPHandler)
+
+urllib2.install_opener(l_opener)
+usock = urllib2.urlopen('http://www.sohu.com')
+{% endhighlight %}
+
+## JPype
+
+JPype是一个能够让python代码方便地调用Java代码的工具。官网：
+
+https://sourceforge.net/projects/jpype/
+
+参考：
+
+http://blog.csdn.net/niuyisheng/article/details/9002926
+
+JPype：实现在python中调用JAVA
+
+http://www.cnblogs.com/yu-zhang/p/3817024.html
+
+python调用java程序--jpype
+
+## 参考
+
+https://mp.weixin.qq.com/s/_OmRvwFmvuuOpBf7DQG8IA
+
+Python30个编程技巧
+
+https://mp.weixin.qq.com/s/-CaMHjsY580et8Hh_D2FSg
+
+简约而不简单的Django新手图文教程
+
+https://mp.weixin.qq.com/s/jHnkmpnOz1LApVCLJL-8Tw
+
+如何写出优雅又地道的Python代码？
+
+https://mp.weixin.qq.com/s/5xs1ivkrUAP_Rr9P-EMc5g
+
+代码优化指南：人生苦短，我用Python。这篇blog主要介绍了如何追踪Python脚本的CPU使用情况。
+

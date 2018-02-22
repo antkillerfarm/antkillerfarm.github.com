@@ -286,3 +286,16 @@ https://mp.weixin.qq.com/s/Zo1iBzAY1dBAa2pRTf-BbA
 
 如何使用Keras、Redis、Flask和Apache把深度学习模型部署到生产环境
 
+https://mp.weixin.qq.com/s/HK9_GfLe1Q215YouTsezvQ
+
+一张图了解微服务架构核心知识点
+
+https://mp.weixin.qq.com/s/uxsmwT-nvTga7tWiMLrrvw
+
+用Python实现一个大数据搜索引擎
+
+https://mp.weixin.qq.com/s/KbNNU246BAeJmLoWbKie6g
+
+分布式系统架构经典资料
+
+

@@ -327,6 +327,8 @@ $$
 (x-o_x)^2+(x-o_y)^2+(x-o_z)^2-R^2=0
 \]`
 
+$$A\xrightarrow[\alpha]{\beta}B$$
+
 ## 注意
 
 绝对值符号虽然键盘上有这个键，但由于和Markdown的表格功能有冲突，需要采用\mid、\vert、\lvert、\rvert替代之。

@@ -1,220 +1,152 @@
 ---
 layout: post
-title:  机器学习（三十）——垃圾筐, NLP机器翻译常用评价度量
+title:  机器学习（三十）——价值函数的近似表示
 category: ML 
 ---
 
-# 垃圾筐
+# Model-Free Control（续）
 
-高斯背景
+## 采样方法
 
-laurent series
+在继续后面的内容之前，我们首先介绍几种采样方法。
 
-Base32/Base36/Base64/Base85
+### Inverse Sampling
 
-Reinforcement Learning and Control
+如果某种分布函数不容易采样的话，可以使用它的反函数进行采样：
 
-Linear Discriminant Analysis
+$$P(F^{-1}(a) \le x) = P(a \le F(x)) = H(F(x)$$
 
-https://mp.weixin.qq.com/s/7Vy7l1YyBT7rMYW2i1AsuA
+![](/images/img2/Inverse_Sampling.png)
 
-线性判别分析(LDA)原理详解
+上图是均匀分布到指数分布的采样图，其中y的采样间隔是：
 
-Partial Least Squares Discriminant Analysis
+$$F^{-1}_{exp}(a) = -\frac{1}{\lambda}*log(1-a)$$
 
-http://blog.codinglabs.org/articles/algorithms-for-cardinality-estimation-part-i.html
+### Rejective Sampling
 
-解读Cardinality Estimation算法
+我们想求一个空间里均匀分布的集合面积，可以尝试在更大范围内按照均匀分布随机采样，如果采样点在集合中，则接受，否则拒绝。
 
-http://blog.csdn.net/icvpr/article/details/12342159
+这种方法最经典的例子就是采样计算圆周率：我们在一个1x1的范围内随机采样一个点，如果它到原点的距离小于1,则说明它在1/4圆内，则接受它，最后通过接受的占比来计算1/4圆形的面积，从而根据公式反算出预估的$$\pi$$值，随着采样点的增多，最后的结果会越精准。
 
-局部敏感哈希(Locality-Sensitive Hashing, LSH)方法介绍
+Rejective Sampling的形式化表述为：
 
-https://mp.weixin.qq.com/s/zQJve_w5OoM6u-WcSWArdQ
+$$acc(x_i) = \frac{\tilde{p}(x_i)}{cq(x_i)}$$
 
-神速Hash
+其中，$$\tilde{p}(x_i)$$实际采样的样本，它应该正比于目标分布，$$cq(x_i)$$是比例系数，c为常数。在上例中，$$q(x_i)$$是均匀分布，所以就是常数1，如果是其它分布的话，则是一个函数。
 
-http://www.cnblogs.com/wentingtu/archive/2012/03/13/2393993.html
+### Importance Sampling
 
-Learning to Rank入门小结
+然而实际工作中，分布的正函数已经很复杂，更不用说反函数，$$cq(x_i)$$也不是那么容易得到的，这时就需要Importance Sampling了。
 
-FPN (Feature Pyramid Network)
+我们采样的目标是：
 
-http://www.cnblogs.com/pinard/p/6221564.html
+$$E_{x\sim p}[f(x)] = \int_x f(x)p(x) \mathrm{d}x$$
 
-谱聚类（spectral clustering）原理总结
+如果符合p(x)分布的样本不太好生成，我们可以引入另一个分布q(x)，可以很方便地生成样本。使得：
 
-https://mp.weixin.qq.com/s/NlJ4-b5SjIjPGgvLUuSxFw
+$$\begin{align}
+\int_x f(x)p(x) \mathrm{d}x &= \int_x f(x)\frac{p(x)}{q(x)}q(x) \mathrm{d}x\\
+&= \int_x g(x)q(x) \mathrm{d}x = E_{x\sim q}[g(x)]\\
+where\ \ g(x) &= f(x)\frac{p(x)}{q(x)} = f(x)w(x)
+\end{align}$$
 
-孩子，有时候并不是生活欺骗了你，而是你可能还不懂概率统计……
+我们将问题转化为了求g(x)在q(x)分布下的期望。我们称其中的$$w(x)=\frac{p(x)}{q(x)}$$为**Importance Weight**。
 
-http://blog.csdn.net/luo123n/article/details/48574123
-
-PMI（Pointwise Mutual Information）
-
-http://www.cnblogs.com/6DAN_HUST/archive/2010/11/11/1874681.html
-
-运筹学——线性规划及单纯形法求解
-
-https://mp.weixin.qq.com/s/E_EzwLr4JOzR1pk3MOeU_w
-
-复动力系统简介
-
-https://mp.weixin.qq.com/s/QmDCFY0SP3cl71HvwvthJQ
-
-如果高斯没有故意“坑”黎曼，估计这门神奇的学科就不会出现了……
-
-https://mp.weixin.qq.com/s/QJQnRCrBu9j94-VhNq_4tA
-
-群论的创立：两个少年天才的接力
-
-https://mp.weixin.qq.com/s/H6QV5L-Ewdb1NkMKZrNK9w
-
-一杯咖啡背后的拓扑
-
-https://mp.weixin.qq.com/s/FqY19sTQd7GPdGSsB5L9eQ
-
-数学大反例合集
-
-https://mp.weixin.qq.com/s/7usiElPtYAt1DCBIv5BZ2Q
-
-多项式插值算法与回归算法
-
-## 三门问题
-
-https://www.zhihu.com/question/26709273/
-
-蒙提霍尔问题（又称三门问题、山羊汽车问题）的正解是什么？
-
-https://zhuanlan.zhihu.com/p/21461266
-
-数学杂谈——“三门问题”：Monty Hall Problem
-
-https://zhuanlan.zhihu.com/p/23338174
-
-蒙提霍尔问题/三门问题（Monty Hall problem）
-
-# ACBM算法
-
-ACBM算法是在AC（Aho-Corasick）自动机（UNIX上的fgrep命令使用的就是AC算法）的基础之上，引入了BM（Boyer-Moore）算法的多模扩展，实现的高效的多模匹配。和AC自动机不同的是，ACBM算法不需要扫描目标文本串中的每一个字符，可以利用本次匹配不成功的信息，跳过尽可能多的字符，实现高效匹配。
-
->注： Alfred Vaino Aho，1941年生，加拿大计算机科学家。普林斯顿大学博士，长期供职于贝尔实验室，后为哥伦比亚大学教授。egrep和fgrep的发明人，AWK语言的联合发明人。著有《Principles of Compiler Design Compilers: Principles, Techniques, and Tools》。该书由于封面上有龙图案，又被称为“龙书”，是编译原理方面的权威书籍。2003年获IEEE John von Neumann Medal。
-
->Margaret John Corasick，贝尔实验室研究员。
-
->Robert Stephen Boyer，德克萨斯大学教授。
-
->J Strother Moore，德克萨斯大学教授。Boyer的好朋友，两人的绝大多数成就都是合作完成的。
-
-参见：
-
-http://blog.csdn.net/sealyao/article/details/6817944
-
-ACBM算法
-
-https://mp.weixin.qq.com/s/yVOgAuD9hEYAMdLyvae2VA
-
-最长公共子序列与最长公共子串
-
-https://mp.weixin.qq.com/s/8rP3fF9iVnplhkFmxuj6fw
-
-一文读懂KMP算法
-
-https://mp.weixin.qq.com/s/if7P0yq59DbBEjW15vfaQA
-
-推荐一个高效算法wumanber：每秒680万匹配！
-
-https://mp.weixin.qq.com/s/4m1O5ZHsZTRc-JuBF97_3w
-
-字符串匹配的Boyer-Moore算法
-
-# 高斯过程回归
-
-从大的分类来说，机器学习的算法可分为两类：
-
-1.定义一个模型，用训练数据训练模型的参数，然后用训练好的模型进行预测。这种方法的缺点在于，预测效果和模型与样本的匹配程度有关。比如对非线性样本采用线性模型，其预测效果通常不会太好。但是增加模型的复杂度，又会导致过拟合。
-
-2.定义一个函数分布，赋予每一种可能的函数一个先验概率，可能性越大的函数，其先验概率越大。但是可能的函数往往为一个不可数集，即有无限个可能的函数，随之引入一个新的问题：如何在有限的时间内对这些无限的函数进行选择？一种有效解决方法就是高斯过程回归(Gaussian process regression，GPR)。
-
->注：Radford M. Neal，1956年生，加拿大科学家。多伦多大学博士（1995）和教授。贝叶斯神经网络的发明人。导师为Geoffrey Hinton。   
->个人主页：http://www.cs.toronto.edu/~radford/
-
->Danie G. Krige，1919～2013，南非矿业工程师和统计学家，威特沃特斯兰德大学教授。地理统计学早期的代表人物之一。
-
-http://www.cnblogs.com/hxsyl/p/5229746.html
-
-浅谈高斯过程回归
-
-https://mqshen.gitbooks.io/prml/content/Chapter6/gaussian/gaussian_processes_regression.html
-
-Gaussian Processes Regression
-
-http://www.gaussianprocess.org/gpml/chapters/RW.pdf
-
-Gaussian Processes for Machine Learning
-
-http://people.cs.umass.edu/~wallach/talks/gp_intro.pdf
-
-Introduction to Gaussian Process Regression
-
-http://wenku.baidu.com/view/72f80113915f804d2b16c173.html
-
-高斯过程回归方法综述
-
-https://mp.weixin.qq.com/s/ZE_Chzlgy_7wl9E9q1ckOA
-
-AlphaGo Zero用它来调参？“高斯过程”到底有何过人之处？
-
-# 莫比乌斯反演
-
-http://blog.csdn.net/acdreamers/article/details/8542292
-
-莫比乌斯反演
-
-http://blog.csdn.net/litble/article/details/72804050
-
-初涉莫比乌斯反演
-
-http://blog.csdn.net/u013632138/article/details/52250567
-
-莫比乌斯反演讲解
-
-http://blog.csdn.net/Ripped/article/details/70263965
-
-莫比乌斯反演详解
-
-http://blog.csdn.net/hzj1054689699/article/details/51659994
-
-莫比乌斯反演入门
-
-http://blog.csdn.net/outer_form/article/details/50588307
-
-莫比乌斯反演定理证明
-
-# NLP机器翻译常用评价度量
-
-机器翻译的评价指标主要有：BLEU、NIST、Rouge、METEOR等。
+Importance Sampling还可以改善已有的采样方法：如果我们找到一个q分布，使得它能在f(x)∗p(x)较大的地方采集到样本，则能更好地逼近E[f(x)]。
 
 参考：
 
-http://blog.csdn.net/joshuaxx316/article/details/58696552
+http://blog.csdn.net/Dark_Scope/article/details/70992266
 
-BLEU，ROUGE，METEOR，ROUGE-浅述自然语言处理机器翻译常用评价度量
+采样方法
 
-http://blog.csdn.net/guolindonggld/article/details/56966200
+## Off-Policy Learning
 
-机器翻译评价指标之BLEU
+### Importance Sampling for Off-Policy Monte-Carlo
 
-http://blog.csdn.net/han_xiaoyang/article/details/10118517
+前面已经说过，Off-Policy Learning就是根据当前策略$$\mu(a\mid s)$$，评估目标策略$$\pi(a\mid s)$$。因此，对Off-Policy Learning进行Importance Sampling，实际上就是从$$\mu$$中，对$$\pi$$采样的过程。由于MC需要对整个Episode进行采样，因此相应的采样函数为：
 
-机器翻译评估标准介绍和计算方法
+$$G_t^{\pi/\mu}=\frac{\pi(A_t\mid S_t)}{\mu(A_t\mid S_t)}\frac{\pi(A_{t+1}\mid S_{t+1})}{\mu(A_{t+1}\mid S_{t+1})}\dots\frac{\pi(A_T\mid S_T)}{\mu(A_T\mid S_T)}G_t$$
 
-http://blog.csdn.net/lcj369387335/article/details/69845385
+更新公式为：
 
-自动文档摘要评价方法---Edmundson和ROUGE
+$$V(S_t)\leftarrow V(S_t)+\alpha(G_t^{\pi/\mu}-V(S_t))$$
 
-https://mp.weixin.qq.com/s/XiZ6Uc5cHZjczn-qoupQnA
+由于这种方法的采样函数实在太过复杂，因此只有理论价值，而无实际意义。
 
-对话系统评价方法综述
+### Importance Sampling for Off-Policy TD
+
+类似的，TD算法的更新公式为：
+
+$$V(S_t)\leftarrow V(S_t)+\alpha\left(\frac{\pi(A_t\mid S_t)}{\mu(A_t\mid S_t)}(R_{t+1}+\gamma V(S_{t+1}))-V(S_t)\right)$$
+
+应用这种思想最好的方法是基于TD(0)的Q-learning。Q-learning的相关内容参见《机器学习（二十六）》。
+
+### DP和TD的关系
+
+|  | Full Backup (DP) | Sample Backup (TD) |
+|:--:|:--:|:--:|
+| Bellman Expectation<br/>Equation for $$v_\pi(s)$$ | Iterative Policy Evaluation<br/>$$V(s)\leftarrow E[R+\gamma V(S')\mid s]$$ | TD Learning<br/>$$V(S)\xleftarrow{\alpha} R+\gamma V(S')$$ |
+| Bellman Expectation<br/>Equation for $$q_\pi(s,a)$$ | Q-Policy Iteration<br/>$$Q(s,a)\leftarrow E[R+\gamma Q(S',A')\mid s,a]$$ | Sarsa<br/>$$Q(S,A)\xleftarrow{\alpha} R+\gamma Q(S',A')$$ |
+| Bellman Optimality<br/>Equation for $$q_*(s,a)$$ | Q-Value Iteration<br/>$$Q(s,a)\leftarrow E[R+\gamma \max_{a'\in A}Q(S',a')\mid s]$$ | Q-Learning<br/>$$Q(S,A)\xleftarrow{\alpha} R+\gamma \max_{a'\in A}Q(S',a')$$ |
+
+上表中$$x\xleftarrow{\alpha}y\equiv x\leftarrow x+\alpha(y-x)$$。
+
+# 价值函数的近似表示
+
+之前的内容都是讲解一些强化学习的基础理论，这些知识只能解决一些中小规模的问题，很多价值函数需要用一张大表来存储，获取某一状态或行为价值的时候通常需要一个查表操作（Table Lookup），这对于那些状态空间或行为空间很大的问题几乎无法求解。
+
+在实际应用中，对于状态和行为空间都比较大的情况下，精确获得各种v(S)和q(s,a)几乎是不可能的。这时候需要找到近似的函数，具体可以使用线性组合、神经网络以及其他方法来近似价值函数：
+
+$$\hat v(s,w)\approx v_\pi(s)\\
+\hat q(s,a,w)\approx q_\pi(s,a)
+$$
+
+其中w是该近似函数的参数。
+
+## 线性函数
+
+这里仍然从最简单的线性函数说起：
+
+$$\hat v(S,w)=x(S)^Tw=\sum_{j=1}^nx_j(S)w_j$$
+
+目标函数为：
+
+$$J(w)=E_\pi[(v_\pi(S)-x(S)^Tw)^2]$$
+
+更新公式为：
+
+$$\Delta w=\alpha (v_\pi(S)-\hat v(S,w))x(S)$$
+
+上述公式都是基本的ML方法，这里不再赘述。既然是传统ML方法，自然少不了特征工程。
+
+比如Table Lookup Features：
+
+$$x^{table}(S)=\begin{pmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{pmatrix}$$
+
+则：
+
+$$\hat v(S,w)=\begin{pmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{pmatrix}\begin{pmatrix} w_1 \\ \vdots \\ w_n \end{pmatrix}$$
+
+## Incremental Prediction Algorithms
+
+事实上，之前所列的公式都不能直接用于强化学习，因为公式里都有一个实际价值函数$$v_\pi(S)$$，或者是一个具体的数值，而强化学习没有监督数据，因此不能直接使用上述公式。
+
+因此，我们需要找到一个替代$$v_\pi(S)$$的目标。
+
+|:--:|:--:|:--:|:--:|
+| MC | $$\Delta w=\alpha (\color{red}{G_t}-\hat v(S_t,w))\nabla_w \hat v(S_t,w)$$ | 有噪声、无偏采样 | 收敛至一个局部最优解 |
+| TD(0) | $$\Delta w=\alpha (\color{red}{R_{t+1}+\gamma\hat v(S_{t+1},w)}-\hat v(S_t,w))\nabla_w \hat v(S_t,w)$$ | 有噪声、有偏采样 | 收敛至全局最优解 |
+| TD($$\lambda$$) | $$\Delta w=\alpha (\color{red}{G_t^\lambda}-\hat v(S_t,w))\nabla_w \hat v(S_t,w)$$ | 有噪声、有偏采样 |  |
+
+上面公式中，红色的部分就是目标函数。
+
+对于$$\hat q(S,A,w)$$，我们也有类似的结论：
+
+|:--:|:--:|:--:|:--:|
+| MC | $$\Delta w=\alpha (\color{red}{G_t}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、无偏采样 | 收敛至一个局部最优解 |
+| TD(0) | $$\Delta w=\alpha (\color{red}{R_{t+1}+\gamma\hat q(S_{t+1},A_{t+1},w)}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、有偏采样 | 收敛至全局最优解 |
+| TD($$\lambda$$) | $$\Delta w=\alpha (\color{red}{q_t^\lambda}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、有偏采样 |  |
+
 
 

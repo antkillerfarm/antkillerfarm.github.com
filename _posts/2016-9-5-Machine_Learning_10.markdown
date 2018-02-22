@@ -67,10 +67,12 @@ $$Q_i(z^{(i)})=\frac{p(x^{(i)},z^{(i)};\theta)}{\sum_zp(x^{(i)},z^{(i)};\theta)}
 因此，EM算法的过程为：
 
 >Repeat until convergence {   
-><span style="white-space: pre">	</span>(E-step) For each i：   
-><span style="white-space: pre">			</span>$$Q_i(z^{(i)}):=p(z^{(i)}\mid x^{(i)};\theta)$$   
-><span style="white-space: pre">	</span>(M-step) Update the parameters：   
-><span style="white-space: pre">			</span>$$\theta:=\arg\max_\theta\sum_i\sum_zQ_i(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}$$      
+>>(E-step) For each i：   
+>>>$$Q_i(z^{(i)}):=p(z^{(i)}\mid x^{(i)};\theta)$$   
+>>
+>>(M-step) Update the parameters：   
+>>>$$\theta:=\arg\max_\theta\sum_i\sum_zQ_i(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}$$      
+>
 >}
 
 如何保证算法的收敛性呢？

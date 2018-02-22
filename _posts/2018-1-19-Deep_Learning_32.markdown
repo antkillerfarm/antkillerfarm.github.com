@@ -74,6 +74,10 @@ https://mp.weixin.qq.com/s/kQlxLDHLI6xxFzwJVjFj7w
 
 GraRep: 基于全局结构信息的图结点表示学习
 
+https://mp.weixin.qq.com/s/vrdprH_8J80J3VHQqA-bKg
+
+通过动态融合方式学习多模态词表示，中科院自动化所宗成庆老师团队最新工作
+
 # NN的INT8计算
 
 ## 概述

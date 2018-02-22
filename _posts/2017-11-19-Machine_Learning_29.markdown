@@ -1,94 +1,175 @@
 ---
 layout: post
-title:  机器学习（二十九）——LightGBM, Parameter Server, LambdaMART
+title:  机器学习（二十九）——Temporal-Difference Learning, Model-Free Control
 category: ML 
 ---
 
-# LightGBM
+# Temporal-Difference Learning（续）
 
-LightGBM是微软推出的boosting框架。
+## Large Random Walk
 
-代码：
+既然存在n-步预测，那么n=？时效果最好呢，下面的例子试图回答这个问题：
 
-https://github.com/Microsoft/LightGBM
+这个示例研究了使用多个不同步数预测联合不同步长(step-size，公式里的系数$$\alpha$$）时，分别在在线和离线状态时状态函数均方差的差别。所有研究使用了10个Episode。离线与在线的区别在于，离线是在经历所有10个Episode后进行状态价值更新；而在线则至多经历一个Episode就更新依次状态价值。
 
-文档：
+![](/images/img2/LRW.png)
 
-https://lightgbm.readthedocs.io/en/latest/
+结果如图表明，离线和在线之间曲线的形态差别不明显；从步数上来看，步数越长，越接近MC算法，均方差越大。对于这个大规模随机行走示例，在线计算比较好的步数是3-5步，离线计算比较好的是6-8步。但是不同的问题其对应的比较高效的步数不是一成不变的。因此选择多少步数作为一个较优的计算参数也是一个问题。
 
-参考：
+## TD($$\lambda$$)
 
-http://www.msra.cn/zh-cn/news/features/lightgbm-20170105
+一种简单的方法是计算Averaging n-Step Returns，例如：
 
-微软亚洲研究院：LightGBM介绍
+$$G=\frac{1}{2}G^{(2)}+\frac{1}{2}G^{(4)}$$
 
-https://zhuanlan.zhihu.com/p/25308051
+有没有更有效的方法呢？这里我们引入了一个新的参数：$$\lambda$$。通过引入这个新的参数，可以做到在不增加计算复杂度的情况下综合考虑所有步数的预测。
 
-比XGBOOST更快--LightGBM介绍
+$$\lambda$$收获：
 
-https://www.zhihu.com/question/51644470
+$$G_t^{\lambda}=(1-\lambda)\sum_{n=1}^\infty\lambda^{n-1}G_t^{(n)}$$
 
-如何看待微软新开源的LightGBM?
+$$\lambda$$预测：
 
-http://www.cnblogs.com/rocketfan/p/6005353.html
+$$V(S_t)\leftarrow V(S_t)+\alpha(G_t^{\lambda}-V(S_t))$$
 
-LightGBM中GBDT的实现
+![](/images/img2/TD_2.png)
 
-https://zhuanlan.zhihu.com/p/28768447
+这张图还是比较好理解，例如对于n=3的3-步收获，赋予其在收获中的权重如左侧阴影部分面积，对于终止状态的T-步收获，T以后的所有阴影部分面积。而所有节段面积之和为1。这种几何级数的设计也考虑了算法实现的计算方便性。
 
-一个例子读懂LightGBM的模型文件
+TD($$\lambda$$)的设计使得Episode中，后一个状态的状态价值与之前所有状态的状态价值有关，同时也可以说成是一个状态价值参与决定了后续所有状态的状态价值。但是每个状态的价值对于后续状态价值的影响权重是不同的。我们可以从两个方向来理解TD($$\lambda$$)：
 
-https://zhuanlan.zhihu.com/p/27916208
+### 前向认识TD($$\lambda$$)
 
-LightGBM调参指南(带贝叶斯优化代码)
+引入了$$\lambda$$之后，会发现要更新一个状态的状态价值，必须要走完整个Episode获得每一个状态的即时奖励以及最终状态获得的即时奖励。这和MC算法的要求一样，因此TD($$\lambda$$)算法有着和MC方法一样的劣势。λ取值区间为[0,1]，当$$\lambda$$=1时对应的就是MC算法。这个实际计算带来了不便。
 
-# CatBoost
+### 反向认识TD($$\lambda$$)
 
-这是Yandex推出的Boost工具包。
+TD($$\lambda$$)从另一方面提供了一个单步更新的机制，通过下面的示例来说明。
 
-官网：
+![](/images/img2/TD_3.png)
 
-https://catboost.yandex/
+老鼠在连续接受了3次响铃和1次亮灯信号后遭到了电击，那么在分析遭电击的原因时，到底是响铃的因素较重要还是亮灯的因素更重要呢？
 
-论文：
+这里有两种启发方法：
 
-《Fighting biases with dynamic boosting》
+**频率启发 Frequency heuristic**：将原因归因于出现频率最高的状态。
 
-代码：
+**就近启发 Recency heuristic**：将原因归因于较近的几次状态。
 
-https://github.com/catboost/catboost
+给每一个状态引入一个数值：效用追踪（Eligibility Traces, ET），来结合上述两种启发：
 
-官方还提供了一个可视化工具：
+$$
+E_0(s)=0\\
+E_t(s)=\gamma\lambda E_{t-1}(s)+1(S_t=s)
+$$
 
-https://github.com/catboost/catboost-viewer
+![](/images/img2/TD_4.png)
 
-参考：
+上图是$$E_t(s)$$函数的一个可能的曲线图。该图横坐标是时间，横坐标下有竖线的位置代表当前进入了状态s，纵坐标是效用追踪值E 。可以看出当某一状态连续出现，E值会在一定衰减的基础上有一个单位数值的提高，此时将增加该状态对于最终收获贡献的比重，因而在更新该状态价值的时候可以较多地考虑最终收获的影响。同时如果该状态距离最终状态较远，则其对最终收获的贡献越小。
 
-https://mp.weixin.qq.com/s/TAminQXid3qq5b8qkeN1rA
+特别的，E值并不需要等到完整的Episode结束才能计算出来，它可以每经过一个时刻就得到更新。E值存在饱和现象，有一个瞬时最高上限：
 
-ClickHouse如何结合自家的GNDT算法库CatBoost来做机器学习
+$$E_\max=1/(1-\gamma\lambda)$$
 
-# Parameter Server
+结合之前提到的TD error和ET，则更新公式可改为：
 
-https://www.zhihu.com/question/26998075
+$$V(S_t)\leftarrow V(S_t)+\alpha\delta_tE_t(s)$$
 
-最近比较火的parameter server是什么？
+如果$$\lambda=0$$，则只有当前状态得到更新，即$$E_t(s)=1(S_t=s)$$，这实际上就和之前提到TD(n=0)算法是一致的了。
 
-http://blog.csdn.net/cyh_24/article/details/50545780
+>David Silver的课件在这里存在表示混乱的问题，在之前的章节中，TD(X)表示的是n=X，而下文中TD(X)有的时候指的是$$\lambda=X$$。这里借用python表示参数的语法，更准确的描述公式。
 
-Parameter Server详解
+如果$$\lambda=1$$，TD($$\lambda=1$$)粗略看与每次访问的MC算法等同；在线更新时，状态价值差每一步都会有积累；离线更新时，TD($$\lambda=1$$)等同于MC算法(即遍历整个Episode)。
 
-# LambdaMART
+# Model-Free Control
 
-https://www.zhihu.com/question/41418093
+## 概述
 
-求解LambdaMART的疑惑？
+之前提到的MC & TD都是Model-free prediction，下面讲讲Model-Free Control。
 
-https://liam0205.me/2016/07/10/a-not-so-simple-introduction-to-lambdamart/
+现实中有很多此类的例子，比如控制一个大厦内的多个电梯使得效率最高；控制直升机的特技飞行，机器人足球世界杯上控制机器人球员，围棋游戏等等。所有的这些问题要么我们对其模型运行机制未知，但是我们可以去经历、去试；要么是虽然问题模型是已知的，但问题的规模太大以至于计算机无法高效的计算，除非使用采样的办法。Model-Free Control的内容就专注于解决这些问题。
 
-LambdaMART不太简短之介绍
+根据优化控制过程中是否利用已有或他人的经验策略来改进我们自身的控制策略，我们可以将这种优化控制分为两类：
 
-http://blog.csdn.net/huagong_adu/article/details/40710305
+一类是On-policy Learning，其基本思想是个体已有一个策略，并且遵循这个策略进行采样，或者说采取一系列该策略下产生的行为，根据这一系列行为得到的奖励，更新状态函数，最后根据该更新的价值函数来优化策略得到较优的策略。
 
-Learning To Rank之LambdaMART的前世今生
+另一类是Off-policy Learning: 其基本思想是，虽然个体有一个自己的策略，但是个体并不针对这个策略进行采样，而是基于另一个策略进行采样，这另一个策略可以是先前学习到的策略，也可以是人类的策略等一些较为优化成熟的策略，通过观察基于这类策略的行为，或者说通过对这类策略进行采样，得到这类策略下的各种行为，继而得到一些奖励，然后更新价值函数，即在自己的策略形成的价值函数的基础上观察别的策略产生的行为，以此达到学习的目的。这种学习方式类似于“站在别人的肩膀上可以看得更远”。
+
+**简单来说，On-policy Learning训练时，使用当前策略，而Off-policy Learning使用非当前策略。**
+
+## On-Policy Monte-Carlo Control
+
+Model-Free Control应用MC需要解决两个问题：
+
+1.在模型未知的条件下无法知道当前状态的所有后续状态，进而无法确定在当前状态下采取怎样的行为更合适。
+
+解决这一问题的方法是使用action-value function：$$q_{\pi}(s; a)$$替换state-value function：$$v_{\pi}(s)$$。即下图所示：
+
+这样做的目的是可以改善策略而不用知道整个模型，只需要知道在某个状态下采取什么什么样的行为价值最大即可。
+
+2.当我们每次都使用贪婪算法来改善策略的时候，将很有可能由于没有足够的采样经验而导致产生一个并不是最优的策略，我们需要不时的尝试一些新的行为，这就是探索（Exploration）。
+
+一般使用《机器学习（二十六）》中提到的$$\epsilon$$-greedy算法，解决这个问题，这里不再赘述。
+
+![](/images/img2/Model-Free_Control.png)
+
+图中每一个向上或向下的箭头都对应着多个Episode。也就是说我们一般在经历了多个Episode之后才进行依次Ｑ函数更新或策略改善。实际上我们也可以在每经历一个Episode之后就更新Ｑ函数或改善策略。但不管使用那种方式，在Ɛ-贪婪探索算下我们始终只能得到基于某一策略下的近似Ｑ函数，且该算法没没有一个终止条件，因为它一直在进行探索。因此我们必须关注以下两个方面：一方面我们不想丢掉任何更好信息和状态，另一方面随着我们策略的改善我们最终希望能终止于某一个最优策略，因为事实上最优策略不应该包括一些随机行为选择。为此引入了另一个理论概念：**GLIE**。
+
+**GLIE(Greedy in the Limit with Infinite Exploration)**，直白的说是在有限的时间内进行无限可能的探索。具体表现为：所有已经经历的状态行为对（state-action pair）会被无限次探索；另外随着探索的无限延伸，贪婪算法中$$\epsilon$$值趋向于０。例如如果我们取$$\epsilon=1/k$$（k为探索的Episode数目），那么该$$\epsilon$$-greedy MC Control就具备GLIE特性。
+
+基于GLIE的MC Control流程如下：
+
+1.对于给定策略$$\pi$$，采样第k个Episode：$$\{S_1,A_1,R_2,\dots,S_T\}\sim \pi$$
+
+2.对于该Episode里出现的每一个状态/行为对更新：
+
+$$N(S_t,A_t)\leftarrow N(S_t,A_t)+1\\
+Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\frac{1}{N(S_t,A_t)}(G_t-Q(S_t,A_t))
+$$
+
+3.基于新的Q函数改善：
+
+$$\epsilon\leftarrow 1/k,\pi\leftarrow \epsilon-greedy(Q)$$
+
+## On-Policy Temporal-Difference Learning
+
+TD在Model-Free Control的应用主要是Sarsa算法。Sarsa是State–action–reward–state–action的缩写。
+
+Sarsa算法的流程如下所示：
+
+>随机初始化$$Q(s,a)$$，其中$$Q(\text{terminal-state},\cdot)=0$$。   
+>每个Episode执行：   
+>>初始化S   
+>>根据Q选择当前S下的A   
+>>Episode中的每一步执行：   
+>>>执行A，获得观察值R,S'   
+>>>根据Q选择当前S'下的A'   
+>>>$$Q(S,A)\leftarrow Q(S,A)+\alpha [R+\gamma Q(S',A')-Q(S,A)]$$   
+>>>$$S\leftarrow S',A\leftarrow A'$$   
+>>
+>>直到S是terminal状态。
+
+Sarsa算法的最优化收敛性（即$$Q(s,a)\to q_*(s,a)$$）的条件是：
+
+1.策略产生的序列满足GLIE。
+
+2.$$\alpha_t$$满足Robbins–Monro特性，即：
+
+$$\sum_{t=1}^\infty \alpha_t=\infty, \sum_{t=1}^\infty \alpha_t^2<\infty$$
+
+>Herbert Ellis Robbins，1915～2001，美国数学家，Harvard博士，University of North Carolina教授，Columbia University教授。美国科学院院士，美国艺术科学院院士。
+
+>Sutton Monro，1920～1995，美国数学家，MIT博士，Lehigh University教授。作为海军参加过二战和韩战。
+
+和TD类似，我们也可以定义n-step的Sarsa(n)算法
+
+$$Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\alpha(q_t^{n}-Q(S_t,A_t))$$
+
+Sarsa($$\lambda$$)：
+
+$$Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\alpha(q_t^{\lambda}-Q(S_t,A_t))$$
+
+Sarsa($$\lambda$$)+ET：
+
+$$Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\alpha\delta_tE_t(s,a)$$
 

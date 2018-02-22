@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  makefile, Autotools, premake, Bazel, Flume & Kafka
+title:  makefile, Autotools, premake, Bazel
 category: technology 
 ---
 
@@ -205,38 +205,4 @@ MSBuild入门
 OkBuck是Uber推出的构建工具。官网：
 
 https://github.com/uber/okbuck
-
-# Flume & Kafka
-
-Flume和Kafka都是日志系统。
-
-Flume官网：
-
-https://flume.apache.org/
-
-Kafka官网：
-
-https://kafka.apache.org/
-
-以下是它们的比较：
-
-http://www.cnblogs.com/ibyte/p/5830715.html
-
-Flume与Kafka区别
-
-http://www.aichengxu.com/view/2412170
-
-kafka和flume的对比
-
-http://www.cnblogs.com/lishouguang/p/4560858.html
-
-flume使用场景 flume与kafka的比较
-
-https://mp.weixin.qq.com/s/bjlDHFLwxjej2t8iDhVb1A
-
-Spark Streaming消费Kafka数据的两种方案
-
-https://mp.weixin.qq.com/s/o-zfrJS5Ito1kWPBJUIryg
-
-Kafka相关资源
 

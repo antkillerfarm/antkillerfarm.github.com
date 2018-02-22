@@ -156,6 +156,10 @@ http://blog.topspeedsnail.com/
 
 一个DL的blog，专注于Tensorflow。
 
+http://www.cnblogs.com/wangxiaocvpr
+
+一个DL的blog，专注于RL+CV。
+
 ## 项目集锦
 
 https://mp.weixin.qq.com/s/ZNNgEB9rFjAE8SdfMo9NLA

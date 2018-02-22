@@ -341,4 +341,12 @@ https://mp.weixin.qq.com/s/Kb8d92KAz6AbIXjY9SVjGA
 
 R语言也能使用TensorFlow了！RStudio发布全新接口
 
+https://www.cnblogs.com/payton/p/5391680.html
+
+R语言的高质量图形渲染库Cairo
+
+https://mp.weixin.qq.com/s/GN0KARrvosWb7Gr_BKYhCQ
+
+10 种机器学习算法的要点（附Python和R代码）
+
 

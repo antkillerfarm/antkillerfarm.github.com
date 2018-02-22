@@ -412,6 +412,10 @@ https://mp.weixin.qq.com/s/M5syxE9Ln4UDLThPh5iuJg
 
 ![](/images/img2/sort.jpg)
 
+https://mp.weixin.qq.com/s/UehY3iXtcoBwMJkdcEi--A
+
+没有了这个规则，自然界再也不可能发现美丽的分形(递归算法的历史)
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

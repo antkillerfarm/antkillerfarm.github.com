@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十四）——概率图模型, 机器学习语录
+title:  机器学习（三十四）——概率图模型, 机器学习语录, 垃圾筐
 category: ML 
 ---
 
@@ -253,4 +253,84 @@ http://blog.csdn.net/dm_vincent/article/details/8554244
 http://www.cnblogs.com/luweiseu/archive/2012/07/14/2591370.html
 
 强连通分支算法--Kosaraju算法、Tarjan算法和Gabow算法
+
+# 垃圾筐
+
+高斯背景
+
+laurent series
+
+Base32/Base36/Base64/Base85
+
+Reinforcement Learning and Control
+
+Linear Discriminant Analysis
+
+https://mp.weixin.qq.com/s/7Vy7l1YyBT7rMYW2i1AsuA
+
+线性判别分析(LDA)原理详解
+
+Partial Least Squares Discriminant Analysis
+
+http://blog.codinglabs.org/articles/algorithms-for-cardinality-estimation-part-i.html
+
+解读Cardinality Estimation算法
+
+http://blog.csdn.net/icvpr/article/details/12342159
+
+局部敏感哈希(Locality-Sensitive Hashing, LSH)方法介绍
+
+https://mp.weixin.qq.com/s/zQJve_w5OoM6u-WcSWArdQ
+
+神速Hash
+
+http://www.cnblogs.com/wentingtu/archive/2012/03/13/2393993.html
+
+Learning to Rank入门小结
+
+FPN (Feature Pyramid Network)
+
+http://www.cnblogs.com/pinard/p/6221564.html
+
+谱聚类（spectral clustering）原理总结
+
+https://mp.weixin.qq.com/s/NlJ4-b5SjIjPGgvLUuSxFw
+
+孩子，有时候并不是生活欺骗了你，而是你可能还不懂概率统计……
+
+http://blog.csdn.net/luo123n/article/details/48574123
+
+PMI（Pointwise Mutual Information）
+
+http://www.cnblogs.com/6DAN_HUST/archive/2010/11/11/1874681.html
+
+运筹学——线性规划及单纯形法求解
+
+https://mp.weixin.qq.com/s/E_EzwLr4JOzR1pk3MOeU_w
+
+复动力系统简介
+
+https://mp.weixin.qq.com/s/QmDCFY0SP3cl71HvwvthJQ
+
+如果高斯没有故意“坑”黎曼，估计这门神奇的学科就不会出现了……
+
+https://mp.weixin.qq.com/s/QJQnRCrBu9j94-VhNq_4tA
+
+群论的创立：两个少年天才的接力
+
+https://mp.weixin.qq.com/s/H6QV5L-Ewdb1NkMKZrNK9w
+
+一杯咖啡背后的拓扑
+
+https://mp.weixin.qq.com/s/FqY19sTQd7GPdGSsB5L9eQ
+
+数学大反例合集
+
+https://mp.weixin.qq.com/s/7usiElPtYAt1DCBIv5BZ2Q
+
+多项式插值算法与回归算法
+
+https://mp.weixin.qq.com/s/6fd8oxnahJ0EoocRV4q8Bg
+
+一看就懂的Alpha-Beta剪枝算法详解
 

@@ -82,6 +82,12 @@ https://102.alibaba.com/downloadFile.do?file=1517812754285/reinforcement_learnin
 
 《A Brief Survey of Deep Reinforcement Learning》
 
+《Playing Atari with Deep Reinforcement Learning》
+
+《Human-level control through deep reinforcement learning》
+
+《Asynchronous Methods for Deep Reinforcement Learning》
+
 ## blog
 
 https://zhuanlan.zhihu.com/sharerl
@@ -91,6 +97,10 @@ https://zhuanlan.zhihu.com/sharerl
 https://zhuanlan.zhihu.com/intelligentunit
 
 一个DL+RL的专栏
+
+## Deep Q learning
+
+![](/images/img2/DQN.png)
 
 ## 参考
 

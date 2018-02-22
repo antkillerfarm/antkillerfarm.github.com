@@ -246,6 +246,10 @@ https://mp.weixin.qq.com/s/EfqE3wbPRDffQKXTG4tdkQ
 
 用好这几款炼丹利器，调参从此得心应手
 
+https://mp.weixin.qq.com/s/2GEcD5kzqBtpPdXkhxksNw
+
+Facebook发布Tensor Comprehensions：自动编译高性能机器学习核心的C++库 
+
 ## 量子计算 & 遗传算法
 
 https://www.zhihu.com/question/28171555

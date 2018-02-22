@@ -130,6 +130,14 @@ https://fifthperson.com/how-the-blockchain-might-disrupt-the-banking-financial-i
 
 How the ‘Blockchain’ might disrupt the banking & financial industries
 
+https://mp.weixin.qq.com/s/fvrTBr7lvuXOhgyL2BRUuw
+
+区块链vs传统数据库：分布式运行有何优势？
+
+https://mp.weixin.qq.com/s/_RCFI2ijo0VtjAAqGck1xg
+
+区块链技术发展现状与展望-中科院自动化所
+
 # CPU
 
 https://zhuanlan.zhihu.com/p/29743431

@@ -332,4 +332,29 @@ https://mp.weixin.qq.com/s/Rbc_OOYi2-Y-wyy4j6MsWg
 
 彩云科技提出结合组合子抽象的神经编程器-解释器，提升通用性和可学习性
 
+https://mp.weixin.qq.com/s/XX6GTgeN4M4rVvE6fgDFKw
+
+训练AI太辛苦？OpenAI新方法：不如让AI之间互教吧
+
+https://mp.weixin.qq.com/s/DBSj-5p5Dc6-z7POo42x2w
+
+深度学习引入信号处理技术，轻松分析股票等各种序列数据
+
+https://mp.weixin.qq.com/s/RsWY9jQ8biQu6Pc5tl3T4Q
+
+纽约大学：参考儿童认知发展，通过简单神经网络学习归纳偏置
+
+https://www.jianshu.com/p/86e09a28d656
+
+一些深度学习在股票交易应用的遐想
+
+https://mp.weixin.qq.com/s/XGA5W3pkDI8S5MDar61Bag
+
+可视化线性修正网络：看Fisher-Rao范数与泛化之间的关系
+
+https://mp.weixin.qq.com/s/w9L1YkW2aO53yS52qnasuA
+
+深度可逆网络i-RevNet：信息丢弃不是泛化的必要条件
+
+
 

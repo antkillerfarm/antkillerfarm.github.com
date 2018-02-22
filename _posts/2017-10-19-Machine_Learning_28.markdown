@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十八）——Monte-Carlo, Temporal-Difference Learning
+title:  机器学习（二十八）——Monte-Carlo
 category: ML 
 ---
 
@@ -38,11 +38,11 @@ Monte Carlo Policy Evaluation的目标是对状态s进行估值。它的步骤�
 
 用Incremental Mean进行更新，被称作Incremental Monte-Carlo Updates：
 
-$$V(S_t)\leftarrow V(S_t)+\frac{1}{N(S_t)}(G(t)-V(S_t))$$
+$$V(S_t)\leftarrow V(S_t)+\frac{1}{N(S_t)}(G_t-V(S_t))$$
 
 对于非平稳（non-stationary）问题，我们也可采用如下公式更新：
 
-$$V(S_t)\leftarrow V(S_t)+\alpha(G(t)-V(S_t))$$
+$$V(S_t)\leftarrow V(S_t)+\alpha(G_t-V(S_t))$$
 
 ## 参考
 
@@ -68,7 +68,21 @@ https://mp.weixin.qq.com/s/wfCyii6bS-GxMZPg2TPaLA
 
 # Temporal-Difference Learning
 
-时序差分学习和蒙特卡洛学习一样，它也从Episode学习，不需要了解模型本身；但是它可以学习不完整的Episode，通过自身的引导（bootstrapping），猜测Episode的结果，同时持续更新这个猜测。
+## bootstrapping
+
+统计学中，bootstrapping可以指依赖于重置随机抽样的一切试验。bootstrapping可以用于计算样本估计的准确性。对于一个采样，我们只能计算出某个统计量(例如均值)的一个取值，无法知道均值统计量的分布情况。但是通过自助法(自举法)我们可以模拟出均值统计量的近似分布。有了分布很多事情就可以做了（比如说有你推出的结果来进而推测实际总体的情况）。
+
+bootstrapping方法的实现很简单，假设抽取的样本大小为n:
+
+在原样本中有放回的抽样，抽取n次。每抽一次形成一个新的样本，重复操作，形成很多新样本，通过这些样本就可以计算出样本的一个分布。新样本的数量通常是1000-10000。如果计算成本很小，或者对精度要求比较高，就增加新样本的数量。
+
+优点：简单易于操作。
+
+缺点：bootstrapping的运用基于很多统计学假设，因此假设的成立与否会影响采样的准确性。
+
+## TD
+
+时序差分学习和蒙特卡洛学习一样，它也从Episode学习，不需要了解模型本身；但是它可以学习不完整的Episode，通过bootstrapping，猜测Episode的结果，同时持续更新这个猜测。
 
 最简单的TD算法——TD(0)的更新公式如下：
 
@@ -134,4 +148,43 @@ TD低variance, 但有一定程度的bias，对初始值较敏感，通常比MC�
 | 7 | B:1 |
 | 8 | B:0 |
 
+问题：依据仅有的Episode，计算状态A，B的价值分别是多少，即V(A)=？， V(B)=？
+
+答案：V(B) = 6/8，V(A)根据不同算法结果不同，用MC算法结果为0，TD则得出6/8。
+
+解释：应用MC算法，由于需要完整的Episode,因此仅Episode1可以用来计算A的状态价值，很明显是0；同时B的价值是6/8。应用TD算法时，TD算法试图利用现有的Episode经验构建一个MDP（如下图），由于存在一个Episode使得状态A有后继状态B，因此状态A的价值是通过状态B的价值来计算的，同时经验表明A到B的转移概率是100%，且A状态的即时奖励是0，并且没有衰减，因此A的状态价值等于B的状态价值。
+
+MC算法试图收敛至一个能够最小化状态价值与实际收获的均方差的解决方案。TD算法则收敛至一个根据已有经验构建的最大可能的Markov模型的状态价值。
+
+通过比较可以看出，TD算法使用了MDP问题的Markov属性，在Markov环境下更有效；但是MC算法并不利用Markov属性，通常在非Markov环境下更有效。
+
+## DP & MC & TD
+
+Monte-Carlo, Temporal-Difference和Dynamic Programming都是计算状态价值的一种方法，区别在于，前两种是在不知道Model的情况下的常用方法，这其中又以MC方法需要一个完整的Episode来更新状态价值，TD则不需要完整的Episode；DP方法则是基于Model（知道模型的运作方式）的计算状态价值的方法，它通过计算一个状态S所有可能的转移状态S’及其转移概率以及对应的即时奖励来计算这个状态S的价值。
+
+关于是否Bootstrap：MC没有bootstrapping，只使用实际收获；DP和TD都有bootstrapping。
+
+关于是否用采样来计算: MC和TD都是应用样本来估计实际的价值函数；而DP则是利用模型直接计算得到实际价值函数，没有采样之说。
+
+![](/images/img2/DP_MC_TD.png)
+
+上图从两个维度解释了四种算法的差别，多了一个穷举法。这两个维度分别是：采样深度和广度。当使用单个采样，同时不走完整个Episode就是TD；当使用单个采样但走完整个Episode就是MC；当考虑全部样本可能性，但对每一个样本并不走完整个Episode时，就是DP；当既考虑所有Episode又把Episode从开始到终止遍历完，就变成了穷举法。
+
+需要提及的是：DP利用的是整个MDP问题的模型，也就是状态转移概率，虽然它并不实际利用样本，但是它利用了整个模型的规律，因此认为是Full Width的。
+
+## TD(n)
+
+先前所介绍的TD算法实际上都是TD(0)算法，括号内的数字0表示的是在当前状态下往前多看1步，要是往前多看2步更新状态价值会怎样？这就引入了n-step的概念。
+
+在当前状态往前行动n步，计算n步的return，同样TD target 也由2部分组成，已走的步数使用确定的即时reward，剩下的使用估计的状态价值替代。这就是TD(n)算法。
+
+显然，MC实际上就是TD($$n=\infty$$)。
+
+定义n-步收获：
+
+$$G_t^{(n)}=R_{t+1}+\gamma R_{t+2}+\dots+\gamma^{n-1}R_{t+n}+\gamma^nV(S_{t+n})$$
+
+TD(n)的更新公式：
+
+$$V(S_t)\leftarrow V(S_t)+\alpha(G_t^{(n)}-V(S_t))$$
 

@@ -238,6 +238,14 @@ https://mp.weixin.qq.com/s/L9JY875UjXMv_slAakBrGA
 
 从AlexNet到残差网络，理解卷积神经网络的不同架构
 
+http://www.sohu.com/a/222873093_651893
+
+从LeNet到SENet——卷积神经网络回顾
+
+https://mp.weixin.qq.com/s/-d4T2hgjy6kGdd_ig_J9eg
+
+LeCun亲授的深度学习入门课：从飞行器的发明到卷积神经网络
+
 # GAN
 
 ## 概况

@@ -238,3 +238,8 @@ https://mp.weixin.qq.com/s/dThV1YtMvYtToJFqgXnEzQ
 
 谷歌大脑提出通过多文档摘要方法生成维基百科，可处理较长序列
 
+https://mp.weixin.qq.com/s/JDAlR3Z3_V0XfQlMCOM8PQ
+
+基于转移的语义依存图分析
+
+

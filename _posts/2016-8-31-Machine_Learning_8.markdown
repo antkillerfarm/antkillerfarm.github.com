@@ -33,11 +33,13 @@ category: ML
 
 >1.初始化特征集$$\mathcal{F}=\emptyset$$。   
 >2.Repeat {   
-><span style="white-space: pre">	</span>(a)for 特征i=1 to n, {   
-><span style="white-space: pre">	     </span>如果$$i\notin\mathcal{F}$$，则$$\mathcal{F}_i=\mathcal{F}\cup\{i\}$$。   
-><span style="white-space: pre">	     </span>在$$\mathcal{F}_i$$上使用交叉验证方法评估它的泛化误差。   
-><span style="white-space: pre">	</span>}   
-><span style="white-space: pre">	</span>(b)将第(a)步中最优的$$\mathcal{F}_i$$设为新的$$\mathcal{F}$$。   
+>>(a)for 特征i=1 to n, {   
+>>>如果$$i\notin\mathcal{F}$$，则$$\mathcal{F}_i=\mathcal{F}\cup\{i\}$$。   
+>>>在$$\mathcal{F}_i$$上使用交叉验证方法评估它的泛化误差。   
+>>   
+>>}   
+>>(b)将第(a)步中最优的$$\mathcal{F}_i$$设为新的$$\mathcal{F}$$。   
+>
 >}   
 >3.选择并输出搜索过程中得到的最优子集。
 

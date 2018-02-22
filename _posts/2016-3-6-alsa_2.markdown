@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ALSA（二）, WebSocket, Javascript在客户端的使用, Spring, Neo4j, Blog维护日志
+title:  ALSA（二）, GStreamer（三）, WebSocket, Spring, Neo4j, Blog维护日志
 category: technology 
 ---
 
@@ -192,33 +192,99 @@ HTTP/1.1 101 Switching Protocols
 　　Sec-WebSocket-Accept: K7DJLdLooIwIG/MOpvWFB3y3FE8=
 {% endhighlight %}
 
-# Javascript在客户端的使用
+# GStreamer编程（续）
 
-Javascript在服务器前端的成功，促使人们思考其在客户端的使用。
+以下是教程的一些细节的学习心得。
 
-最早的尝试，是MS提供的web broswer控件（例如MFC的CHtmlView类）。然而，当时的目的，并不是美化应用程序外观，而只是给程序提供一个访问互联网的机会。其最常见的用处，就是给About添加一个网站链接。这种方式不光用途简陋，更关键的是从外观来看，网页和应用程序完全是两种风格。
+### basic-tutorial-1.c
 
-网站的外观在随后的几年中进化的很快，由于CSS和Javascript的出现，网页前端不再是一成不变的静态网页，而是具有了一定的动画和交互能力。强大的功能促进了分工的发展，网站设计逐渐分成了前端和后端两大工种。这种分工又促进了网页交互技术的进步。
+{% highlight c %}
+/* Build the pipeline */
+pipeline = gst_parse_launch ("playbin2 uri=http://docs.gstreamer.com/media/sintel_trailer-480p.webm", NULL);
+{% endhighlight %}
 
-反观普通的应用程序，由于受限于编程的复杂度，前端人员一直难于介入，很多年都处于停滞阶段。这期间一些不甘平庸的公司，在UI技术方面也做了一些尝试。
+从这个教程可以看出，我们可以直接使用gst_parse_launch创建pipeline。
 
-首先是DirectUI。这个是MS对于Win32窗口模型的一个重大改进。
+### basic-tutorial-7.c
 
-在原始的Win32窗口模型中，每个控件都是一个窗口，拥有一个窗口句柄（相当于窗口资源的描述符）。窗口事件的处理和资源管理都在OS层面进行，开销比较大。（比如包含10000个按钮的窗口怎么处理的问题）窗口之间的交互，比如透明、动画，也由于需要跨窗口句柄，而变得非常复杂。
+{% highlight c %}
+tee_src_pad_template = gst_element_class_get_pad_template (GST_ELEMENT_GET_CLASS (tee), "src%d");
+{% endhighlight %}
 
-DirectUI的思路，是将控件降级为贴图，并接管整体窗口事件的处理，以模拟的方式实现控件的行为。开销和扩展性得到了很大的提升。
+这是代码的其中一段，这里只谈谈`src%d`是怎么来的。使用gst-inspect工具查询tee插件的信息，得到如下内容：
 
-DirectUI技术最早出现在Windows XP中。比如，“我的电脑”左侧的控制面板。由于它的HWND的名字叫做DirectUI，故名。GTK项目实际上也采用了类似的方案。
+{% highlight bash %}
+Pad Templates:
+  SRC template: 'src%d'
+    Availability: On request
+      Has request_new_pad() function: gst_tee_request_new_pad
+    Capabilities:
+      ANY
 
-DirectUI技术国内做的比较好的有:
+  SINK template: 'sink'
+    Availability: Always
+    Capabilities:
+      ANY
+{% endhighlight %}
 
-https://www.douban.com/group/topic/27583755/
+从中可知，tee插件SRC Pad的模板名就是`src%d`。
 
-各种DirectUI技术，普遍引入了UI配置文件的概念，而且UI配置文件的功能也越来越强。比如，GTK的设计器Glade，早期的时候是根据UI设计，导出代码，但现在已经改为导出UI配置文件了。
+## GStreamer的Python开发教程
 
-然而，由于低层实现的限制，这些UI配置文件语法各异，虽然有设计器来简化设计难度，但注定不能做的太复杂。因此，功能上无论如何都无法与网页相比，更不必说和HTML 5相比了。
+### Step 0
 
-2012年以后，以CEF（Chromium Embedded Framework）和XULRunner为代表的浏览器派，开始逐渐崭露头角。从此，开发桌面应用程序，不再是Javascript的禁区。桌面应用UI和网页前端开始呈现融合的局面。
+教程的起点——helloworld。这是一个最基本的GStreamer播放器的例子，使用GTK作为GUI工具。
+
+代码参见：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/python-gst-player-example.py
+
+这个例子不能直接运行，需要根据具体情况，略作修改，修改的地方如下：
+
+1）self.uri存放用于播放的媒体文件的URI，注意这里是URI，而不是普通的路径，如果要指定本地文件的话，需要使用`file://`。
+
+2)出错的时候，先用`gst-inspect`检查一下，相应的插件是否安装好了。
+
+### Step 1
+
+在这一步中，我们给播放器添加了暂停和进度条控制的功能。
+
+代码参见：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/gstreamer/step1/my-gst-player.py
+
+### Step 2
+
+在这一步中，我们的修改如下：
+
+1.添加了快进和慢进的功能。
+
+2.使用gst_parse_launch创建pipeline。该pipeline可以播放视频文件。
+
+代码参见：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/gstreamer/step2/my-gst-player.py
+
+### Step 3
+
+在这一步中，我们使用一般的GStreamer函数构建和Step 2相同的pipeline。
+
+代码参见：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/gstreamer/step3/my-gst-player.py
+
+这里需要注意以下几点：
+
+1.随机Pad只能用pad-add消息回调的方式添加。
+
+2.以下代码片段在这里都可用，尽管不完全等效，请注意用法和差别：
+
+{% highlight python %}
+new_pad_type = new_pad.get_current_caps().get_structure(0).get_name()
+new_pad_type = new_pad.query_caps(None).to_string()
+{% endhighlight %}
+
+从这里也可以看出，gst_parse_launch会自动处理媒体流的格式匹配问题，而使用普通函数的时候，必须自己编程处理格式匹配的问题。
 
 # Spring
 

@@ -98,3 +98,7 @@ https://mp.weixin.qq.com/s/rSt6omyXe57WkBVXwp2AJg
 
 数据载入过慢？这里有一份TensorFlow加速指南
 
+http://blog.csdn.net/songrotek/article/details/50951537
+
+用Tensorflow基于Deep Q Learning DQN 玩Flappy Bird
+

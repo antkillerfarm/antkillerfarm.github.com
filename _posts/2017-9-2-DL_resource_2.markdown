@@ -334,6 +334,10 @@ https://mp.weixin.qq.com/s/Ctl65r4iZNEOBxiiX2I2eQ
 
 Momenta王晋玮：让深度学习更高效运行的两个视角
 
+https://mp.weixin.qq.com/s/irvBbPKENiZX9G_6wh5c-Q
+
+陈天奇等人提出TVM：深度学习自动优化代码生成器
+
 ## 面试
 
 https://www.zhihu.com/question/41233373
@@ -371,3 +375,4 @@ https://mp.weixin.qq.com/s/OLIO4UIZUuzjX5oQbn3Tug
 https://mp.weixin.qq.com/s/KbKlgRAfjP_39WdXh7gOLg
 
 拥抱人工智能的中国：现状和展望（下）
+

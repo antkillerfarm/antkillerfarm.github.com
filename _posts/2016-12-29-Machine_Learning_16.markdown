@@ -266,6 +266,16 @@ $$l_{log}(z)=\log(1+\exp(-z))$$
 
 https://www.zhihu.com/question/28810567
 
+Extreme learning machine (ELM) 到底怎么样，有没有做的前途？
+
+https://mp.weixin.qq.com/s/XB9VsW3NRwHua6AdRL3n8w
+
+Lossless Triplet Loss:一种高效的Siamese网络损失函数
+
+https://mp.weixin.qq.com/s/qXZMo_RitSenmI7x0xGNsg
+
+中科院自动化所多媒体计算与图形学团队NIPS 2017论文提出平均Top-K损失函数，专注于解决复杂样本
+
 # 独立成分分析
 
 这一节我们将讲述独立成分分析（Independent Components Analysis，ICA）算法。
