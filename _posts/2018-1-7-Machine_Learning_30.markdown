@@ -4,7 +4,33 @@ title:  机器学习（三十）——价值函数的近似表示
 category: ML 
 ---
 
-# Model-Free Control（续）
+# Model-Free Control
+
+## On-Policy Temporal-Difference Learning（续）
+
+Sarsa算法的最优化收敛性（即$$Q(s,a)\to q_*(s,a)$$）的条件是：
+
+1.策略产生的序列满足GLIE。
+
+2.$$\alpha_t$$满足Robbins–Monro特性，即：
+
+$$\sum_{t=1}^\infty \alpha_t=\infty, \sum_{t=1}^\infty \alpha_t^2<\infty$$
+
+>Herbert Ellis Robbins，1915～2001，美国数学家，Harvard博士，University of North Carolina教授，Columbia University教授。美国科学院院士，美国艺术科学院院士。
+
+>Sutton Monro，1920～1995，美国数学家，MIT博士，Lehigh University教授。作为海军参加过二战和韩战。
+
+和TD类似，我们也可以定义n-step的Sarsa(n)算法
+
+$$Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\alpha(q_t^{n}-Q(S_t,A_t))$$
+
+Sarsa($$\lambda$$)：
+
+$$Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\alpha(q_t^{\lambda}-Q(S_t,A_t))$$
+
+Sarsa($$\lambda$$)+ET：
+
+$$Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\alpha\delta_tE_t(s,a)$$
 
 ## 采样方法
 
@@ -147,6 +173,11 @@ $$\hat v(S,w)=\begin{pmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{pmatrix}\begin
 | MC | $$\Delta w=\alpha (\color{red}{G_t}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、无偏采样 | 收敛至一个局部最优解 |
 | TD(0) | $$\Delta w=\alpha (\color{red}{R_{t+1}+\gamma\hat q(S_{t+1},A_{t+1},w)}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、有偏采样 | 收敛至全局最优解 |
 | TD($$\lambda$$) | $$\Delta w=\alpha (\color{red}{q_t^\lambda}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、有偏采样 |  |
+
+## Batch Methods
+
+前面所说的递增算法都是基于数据流的，经历一步，更新算法后，我们就不再使用这步的数据了，这种算法简单，但有时候不够高效。与之相反，批方法则是把一段时期内的数据集中起来，通过学习来使得参数能较好地符合这段时期内所有的数据。这里的训练数据集“块”相当于个体的一段经验。
+
 
 
 

@@ -24,6 +24,10 @@ https://mp.weixin.qq.com/s/8892B95aQZHw4fZhi8iO5A
 
 Linux中load average意义
 
+https://mp.weixin.qq.com/s/FV13ma9LxI1gsgi9ovU4Mw
+
+30个实例详解TOP命令
+
 ## free命令
 
 free命令的内容比较概括，主要包含系统内存的整体使用情况，不深入到进程一级。

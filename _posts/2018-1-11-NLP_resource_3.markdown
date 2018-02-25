@@ -242,4 +242,12 @@ https://mp.weixin.qq.com/s/JDAlR3Z3_V0XfQlMCOM8PQ
 
 基于转移的语义依存图分析
 
+https://www.cnblogs.com/combfish/p/6708667.html
+
+(QA-LSTM)自然语言处理：智能问答IBM保险QA QA-LSTM实现笔记
+
+https://mp.weixin.qq.com/s/aJJFXwTorXJZqyu8T70ApA
+
+OpenAI的实体消歧新发现
+
 

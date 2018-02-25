@@ -1,114 +1,94 @@
 ---
 layout: post
-title:  机器学习（三十一）——Probabilistic Robotics
+title:  机器学习（三十一）——t-SNE
 category: ML 
 ---
 
-# Probabilistic Robotics
+# t-SNE
 
-这篇心得主要根据Sebastian Thrun的Probabilistic Robotics课程的ppt来写。
+## 概述
 
->注：Sebastian Thrun，德国波恩大学博士（1995年）。先后执教于CMU和Stanford。
+t-SNE(t-distributed stochastic neighbor embedding)是用于降维的一种机器学习算法，是由Laurens van der Maaten和Geoffrey Hinton在08年提出来。此外，t-SNE 是一种非线性降维算法，非常适用于高维数据降维到2维或者3维，进行可视化。
 
-网址：
+论文：
 
-http://robots.stanford.edu/probabilistic-robotics/ppt/
+《Visualizing Data using t-SNE》
 
-## 贝叶斯过滤器
+以下是几种常见的降维算法：
 
-假定我们需要根据测量值z来判断门的开关。显然，这里的$$P(open\mid z)$$是诊断式（**diagnostic**）问题，而$$P(z\mid open)$$是因果式（**causal**）问题。通常来说，后者比较容易获取，而前者可以基于后者使用贝叶斯公式计算得到。
+1.主成分分析（线性）
 
-一般将$$P(z\mid x)$$称为**Sensor model**。
+2.t-SNE（非参数/非线性）
 
-针对多相关测量值问题，这里有一个和朴素贝叶斯假设相仿的**Markov assumption**——假设$$z_n$$独立于$$z_1,\dots,z_{n-1}$$（即“现在”不依赖于“过去”），则：
+3.萨蒙映射（非线性）
 
-$$P(x\mid z_1,\dots,z_n)=\frac{P(z_n\mid x)P(x\mid z_1,\dots,z_{n-1})}{P(z_n\mid z_1,\dots,z_{n-1})}(\text{Bayes})
-\\=\eta P(z_n\mid x)P(x\mid z_1,\dots,z_{n-1})=\eta_{1,\dots,n}\prod_{i=1}^nP(z_i\mid x)P(x)(\text{Markov})$$
+4.等距映射（非线性）
 
->注：以下的推导过程注释中，如无特别说明。均以Bayes指代Bayes' theorem，以Markov指代Markov assumption。
+5.局部线性嵌入（非线性）
 
-上式中的$$\eta$$表示概率的归一化系数。
+6.规范相关分析（非线性）
 
-除了测量值z之外，一般的控制系统中还有动作（Action）的概念。比如打开门就是一个Action。Action会导致系统的状态发生改变（也可不变）。如下图所示：
+7.SNE（非线性）
 
-![](/images/article/state_trans.png)
+8.最小方差无偏估计（非线性）
 
-通常，将$$P(x\mid u,x')$$称作**Action Model**。其中，u表示Action，而x'表示系统的上一个状态。
+9.拉普拉斯特征图（非线性）
 
-一般的，**新的测量值会减少系统的不确定度，而新的Action会增加系统的不确定度。**
+PCA的相关内容参见《机器学习（十六）》。
 
-综上，一个贝叶斯过滤器（Bayes Filters）的框架包括：
+## SNE
 
-输入：
+在介绍t-SNE之前，我们首先介绍一下SNE（Stochastic Neighbor Embedding）的原理。
 
-1.观测值z和Action u的序列：$$d_t=\{u_1,z_1,\dots,u_t,z_t\}$$
+假设我们有数据集X，它共有N个数据点。每一个数据点$$x_i$$的维度为D，我们希望降低为d维。在一般用于可视化的条件下，d的取值为 2，即在平面上表示出所有数据。
 
-2.Sensor model：$$P(z\mid x)$$
+SNE将数据点间的欧几里德距离转化为条件概率来表征相似性：
 
-3.Action model：$$P(x\mid u,x')$$
+$$p_{j\mid i}=\frac{\exp(-\|x_i-x_j\|^2/2\sigma^2)}{\exp(\sum_{k\neq i}-\|x_i-x_k\|^2/2\sigma^2)}$$
 
-4.系统状态的先验概率：$$P(x)$$
+如果以数据点在$$x_i$$为中心的高斯分布所占的概率密度为标准选择近邻，那么$$p_{j\mid i}$$就代表$$x_i$$将选择$$x_j$$作为它的近邻。对于相近的数据点，条件概率$$p_{j\mid i}$$是相对较高的，然而对于分离的数据点，$$p_{j\mid i}$$几乎是无穷小量（若高斯分布的方差$$\sigma_i$$选择合理）。
 
-输出：
+现在引入矩阵Y，Y是N*2阶矩阵，即输入矩阵X的2维表征。基于矩阵Y，我们可以构建一个分布q，其形式与p类似。
 
-1.估计动态系统的状态X。
+对于高维数据点$$x_i$$和$$x_j$$在低维空间中的映射点$$y_i$$和$$y_j$$，计算一个相似的条件概率$$q_{j\mid i}$$是可以实现的。我们将计算条件概率$$q_{i\mid j}$$中用到的高斯分布的方差设置为1/2。因此我们可以对映射的低维数据点$$y_j$$和$$y_i$$之间的相似度进行建模：
 
-2.状态的后验概率，也叫**Belief**：
+$$q_{j\mid i}=\frac{\exp(-\|y_i-y_j\|^2)}{\exp(\sum_{k\neq i}-\|y_i-y_k\|^2)}$$
 
-$$\begin{align}
-\mathbf{Bel(x_t)}&=P(x_t\mid u_1,z_1,\dots,u_t,z_t)
-\\&=\eta P(z_t\mid x_t,u_1,z_1,\dots,u_t)P(x_t\mid u_1,z_1,\dots,u_t)(\text{Bayes})
-\\&=\eta P(z_t\mid x_t)P(x_t\mid u_1,z_1,\dots,u_t)(\text{Markov})
-\\&=\eta P(z_t\mid x_t)\int P(x_t\mid u_1,z_1,\dots,u_t,x_{t-1})P(x_{t-1}\mid u_1,z_1,\dots,u_t)\mathrm{d}x_{t-1}(\text{Total prob.})
-\\&=\eta P(z_t\mid x_t)\int P(x_t\mid u_t,x_{t-1})P(x_{t-1}\mid u_1,z_1,\dots,u_t)\mathrm{d}x_{t-1}(\text{Markov})
-\\&=\eta P(z_t\mid x_t)\int P(x_t\mid u_t,x_{t-1})P(x_{t-1}\mid u_1,z_1,\dots,z_{t-1})\mathrm{d}x_{t-1}(\text{Markov})
-\\&=\eta P(z_t\mid x_t)\int P(x_t\mid u_t,x_{t-1})\mathbf{Bel(x_{t-1})}\mathrm{d}x_{t-1}
-\end{align}$$
+我们的总体目标是选择Y中的一个数据点，然后其令条件概率分布q近似于p。这一步可以通过最小化两个分布之间的KL散度而实现，这一过程可以定义为：
 
-上式也可以写作：
+$$C = \sum_i KL(P_i  \|  Q_i) = \sum_i \sum_j p_{j \mid i} \log \frac{p_{j \mid i}}{q_{j \mid i}}$$
 
-**预测**：
+这里的$$P_i$$表示了给定点$$x_i$$下，其他所有数据点的条件概率分布。需要注意的是**KL散度具有不对称性**，在低维映射中不同的距离对应的惩罚权重是不同的，具体来说：距离较远的两个点来表达距离较近的两个点会产生更大的cost，相反，用较近的两个点来表达较远的两个点产生的cost相对较小(注意：类似于回归容易受异常值影响，但效果相反)。即用较小的$$q_{j\mid i}=0.2$$来建模较大的$$p_{j\mid i}=0.8$$，$$cost=p\log(p/q)=1.11$$,同样用较大的$$q_{j\mid i}=0.8$$来建模较小的$$p_{j\mid i}=0.2$$,$$cost=-0.277$$。因此，**SNE会倾向于保留数据中的局部特征**。
 
-$$\overline{\mathbf{Bel(x_t)}}=\int P(x_t\mid u_t,x_{t-1})\mathbf{Bel(x_{t-1})}\mathrm{d}x_{t-1}$$
+## 如何确定$$\sigma$$
 
-**修正**：
 
-$$\mathbf{Bel(x_t)}=\eta P(z_t\mid x_t)\overline{\mathbf{Bel(x_t)}}$$
 
-熟悉卡尔曼滤波的同学大概已经看出来了。没错！贝叶斯过滤器是一大类算法的统称。这些算法包括Kalman filters、Particle filters、Hidden Markov models、Dynamic Bayesian networks、Partially Observable Markov Decision Processes (POMDPs)等。
+![](/images/img2/t-SNE.png)
 
-## 递归最小二乘法
+![](/images/img2/Sammon.png)
 
-http://www.blog.huajh7.com/adaptive-filters-lms-rls-kalman-filter-1/
+上图分别是使用t-SNE和Sammon mapping可视化MNIST数据集后的效果图。从中可以看出t-SNE图中，数据更成团状，可视化效果更好。
 
-## 卡尔曼滤波
+## 参考
 
->注：Rudolf (Rudi) Emil Kálmán，1930～2016，匈牙利出生的美国科学家。哥伦比亚大学博士（1957），先后执教于斯坦福大学和佛罗里达大学。现代控制理论的里程碑人物，美国科学院院士。   
->卡尔曼滤波从纯数学的角度讲，并没有多大意义。因此，主流数学家们在很长一段时间内，并不承认Kálmán是数学家。只是由于卡尔曼滤波在工程界的巨大影响力，才不得不于2012年，授予其美国数学协会院士。
+https://www.zhihu.com/question/52022955
 
-Kalman filters是一种高斯线性滤波器。
+t-sne数据可视化算法的作用是啥？为了降维还是认识数据？
 
-参考：
+https://mp.weixin.qq.com/s/Rs9ri6Xs5R-yitrda8pJMg
 
-http://www.cs.unc.edu/~welch/media/pdf/kalman_intro.pdf
+详解可视化利器t-SNE算法：数无形时少直觉
 
-Gregory Francis Welch写的卡尔曼滤波科普文。
+https://mp.weixin.qq.com/s/_DXMlNZHVKm2jMnLGQFM_Q
 
->注：Gregory Francis Welch，北卡罗莱娜大学博士（1997）。中佛罗里达大学教授。
+还在用PCA降维？快学学大牛最爱的t-SNE算法吧
 
-http://www.cs.unc.edu/~welch/kalman/media/misc/kalman_intro_chinese.zip
+http://www.datakit.cn/blog/2017/02/05/t_sne_full.html
 
-上文的中文版。
+t-SNE完整笔记
 
-https://zhuanlan.zhihu.com/p/21294526
+https://yq.aliyun.com/articles/70733
 
-知乎诸位大神的科普文。
-
-http://www.docin.com/p-976961701.html
-
-动态相对定位中自适应滤波方法的研究
-
-《自适应动态导航定位》，杨元喜著。
-
->注：杨元喜，1956年生，大地测量学家。中国科学院院士。
+比PCA降维更高级——（R/Python）t-SNE聚类算法实践指南
 

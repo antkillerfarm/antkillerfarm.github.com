@@ -82,10 +82,6 @@ https://102.alibaba.com/downloadFile.do?file=1517812754285/reinforcement_learnin
 
 《A Brief Survey of Deep Reinforcement Learning》
 
-《Playing Atari with Deep Reinforcement Learning》
-
-《Human-level control through deep reinforcement learning》
-
 《Asynchronous Methods for Deep Reinforcement Learning》
 
 ## blog
@@ -98,9 +94,23 @@ https://zhuanlan.zhihu.com/intelligentunit
 
 一个DL+RL的专栏
 
-## Deep Q learning
+## Deep Q-learning Network
+
+Deep Q-learning Network是DL在RL领域的开山之作。它的思想主要来自于Deepmind的两篇论文：
+
+《Playing Atari with Deep Reinforcement Learning》
+
+《Human-level control through deep reinforcement learning》
+
+Deepmind是当今DL领域最前沿的科研机构，尤其在RL领域更是领先同行一大截，是当之无愧的RL王者。
 
 ![](/images/img2/DQN.png)
+
+上图是DQN的网络结构图。由于这里的任务是训练Atari游戏的AI，因此网络的输入实际上就是游戏的画面。而理解游戏画面，就需要一定的CNN结构。所以DQN的结构实际上和一般的CNN是一致的，其关键要害在于loss函数的设定。
+
+由《机器学习（三十）》中的“价值函数的近似表示”可知，
+
+$$$$
 
 ## 参考
 
@@ -119,6 +129,10 @@ https://mp.weixin.qq.com/s/7BsXPQ8wC6_fHulU63ZQiQ
 https://mp.weixin.qq.com/s/K82PlSZ5TDWHJzlEJrjGlg
 
 深度学习与强化学习
+
+https://mp.weixin.qq.com/s/6n5HawyR4AgH8Dq0gJMw2g
+
+强化学习的基本概念与代码实现
 
 https://mp.weixin.qq.com/s/KNXD-MpVHQRXYvJKTqn6WA
 

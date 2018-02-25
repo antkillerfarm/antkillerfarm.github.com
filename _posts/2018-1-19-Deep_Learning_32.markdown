@@ -78,6 +78,10 @@ https://mp.weixin.qq.com/s/vrdprH_8J80J3VHQqA-bKg
 
 通过动态融合方式学习多模态词表示，中科院自动化所宗成庆老师团队最新工作
 
+https://mp.weixin.qq.com/s/7Ujxc5_CwhYxXTLAjac0-g
+
+基于异构网络节点表示的推荐系统
+
 # NN的INT8计算
 
 ## 概述

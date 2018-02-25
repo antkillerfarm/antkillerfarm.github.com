@@ -358,6 +358,10 @@ https://mp.weixin.qq.com/s/Q4pnGyOYqT8pE5X0S0Yg6A
 
 你可能不知道的7个深度学习实用技巧
 
+https://mp.weixin.qq.com/s/XD0eyKiBgsqmcucIsW20uw
+
+了解学习率及其如何提高深度学习的性能
+
 ## 算法
 
 http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww

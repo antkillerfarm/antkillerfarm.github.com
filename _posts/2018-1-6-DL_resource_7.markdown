@@ -356,5 +356,33 @@ https://mp.weixin.qq.com/s/w9L1YkW2aO53yS52qnasuA
 
 深度可逆网络i-RevNet：信息丢弃不是泛化的必要条件
 
+https://mp.weixin.qq.com/s/qd8mJMorLHe18KrIDe_rXQ
+
+斯坦福大学论文通过对抗训练实现可保证的分布式鲁棒性
+
+https://mp.weixin.qq.com/s/pC7tW-bX7c_DfdU6vCtrpg
+
+山世光：从视觉计算近期进展“管窥”AI之ABCDE
+
+https://mp.weixin.qq.com/s/n7X17CLMYZ2dUUJ4NbRFkA
+
+让机器思考与互相理解：DeepMind提出机器心智理论神经网络ToMnet
+
+https://mp.weixin.qq.com/s/p2AbJ8Kv9DoB_SdMHISKBQ
+
+腾讯AI Lab现场陈述论文：训练L1稀疏模型的象限性消极下降算法
+
+https://mp.weixin.qq.com/s/OjpIeAdPTeOpYa5T0h992A
+
+只需修改一个像素，让神经网络连猫都认不出
+
+https://mp.weixin.qq.com/s/DS_l4ucLzOifJMuM1EXqXQ
+
+美国东北大学提出MoNet，使用紧密池化缓解特征高维问题
+
+https://mp.weixin.qq.com/s/eTwSo3GnxSnK-BwwZeWmKA
+
+Jeff Dean等提出自动化分层模型，优化CPU、GPU等异构环境，性能提升超60%
+
 
 

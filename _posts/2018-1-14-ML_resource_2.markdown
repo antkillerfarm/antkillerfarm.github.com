@@ -66,14 +66,6 @@ https://mp.weixin.qq.com/s/LN6ib-8b_SZHR9u_-OMwNg
 
 推荐系统眼中的你：内容画像与用户画像
 
-https://mp.weixin.qq.com/s/Rs9ri6Xs5R-yitrda8pJMg
-
-详解可视化利器t-SNE算法：数无形时少直觉
-
-https://mp.weixin.qq.com/s/_DXMlNZHVKm2jMnLGQFM_Q
-
-还在用PCA降维？快学学大牛最爱的t-SNE算法吧
-
 https://zhuanlan.zhihu.com/p/30757128
 
 《羞羞的铁拳》好不好看 8万观众说了算 Part 1
@@ -309,4 +301,14 @@ UC Berkeley提出特征选择新方法：条件协方差最小化
 https://mp.weixin.qq.com/s/HnJ2GfslrMcLc04eJ35qHQ
 
 Pedro Domingos总结机器学习研究的12个宝贵经验
+
+https://mp.weixin.qq.com/s/AZjEct_8xpMMqhmbUL1FXw
+
+基于贝叶斯生存分析的《冰与火之歌》人物死亡率分析
+
+https://mp.weixin.qq.com/s/OV4vXu7TAuyV7qU9BAMF6g
+
+机器学习模型的“可解释性”到底有多重要？
+
+
 

@@ -88,6 +88,10 @@ https://mp.weixin.qq.com/s/t1Cx1n6irN1RWG8HQyHU2w
 
 从实际案例聊聊Java应用的GC优化
 
+http://blog.csdn.net/u014717036/article/details/52234679
+
+Java语言中的协变和逆变
+
 # 孩子的编程语言
 
 ## 概述
@@ -188,6 +192,10 @@ https://microsoft.github.io/monaco-editor/
 https://zhuanlan.zhihu.com/p/22989691
 
 JavaScript世界万物诞生记
+
+https://mp.weixin.qq.com/s/F5jCHDzgj1YSJBGrEi-RfA
+
+JavaScript性能优化的小知识总结
 
 # Scala
 

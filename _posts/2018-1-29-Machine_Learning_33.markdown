@@ -238,6 +238,10 @@ https://mp.weixin.qq.com/s/ZE_Chzlgy_7wl9E9q1ckOA
 
 AlphaGo Zero用它来调参？“高斯过程”到底有何过人之处？
 
+https://mp.weixin.qq.com/s/VzN02XW3yN2peqTD6q-4Cg
+
+从数学到实现，全面回顾高斯过程中的函数最优化
+
 # 莫比乌斯反演
 
 http://blog.csdn.net/acdreamers/article/details/8542292

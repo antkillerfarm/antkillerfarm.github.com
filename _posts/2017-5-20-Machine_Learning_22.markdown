@@ -56,6 +56,10 @@ https://www.zhihu.com/question/20136144
 
 谁能通俗的讲解下viterbi算法？
 
+https://mp.weixin.qq.com/s/xyWY3Z5PiHkCFzCP0noBvA
+
+一文读懂HMM模型和Viterbi算法
+
 ## 前向算法
 
 forward算法是求解问题2的常用算法。

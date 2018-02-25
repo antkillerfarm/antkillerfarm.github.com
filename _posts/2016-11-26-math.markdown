@@ -272,6 +272,12 @@ $$\hat{f}(\xi) = \int_{-\infty}^{+\infty} f(x)\ e^{- 2\pi i x \xi}\mathrm{d}x$$
 
 https://zhuanlan.zhihu.com/p/19763358
 
+傅里叶分析之掐死教程
+
+https://mp.weixin.qq.com/s/fFN54auRn1O3EZpPeOwIhQ
+
+傅里叶变换就是这么简单，你学会了吗? 
+
 # 一道证明题
 
 设A、B、C为任意可数有限集合，则

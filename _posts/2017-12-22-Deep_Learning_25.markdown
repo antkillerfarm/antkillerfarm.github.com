@@ -248,7 +248,11 @@ https://mp.weixin.qq.com/s/zBcd2vCYZvb_T7De2QhRew
 
 https://mp.weixin.qq.com/s/rIZUar6sUZXo2S1JwLrHug
 
-AI研究新利器Etymo，妈妈再也不用担心我找不到论文！ 
+AI研究新利器Etymo，妈妈再也不用担心我找不到论文！
+
+https://zhuanlan.zhihu.com/p/33956907
+
+阿里-搜索团队智能内容生成实践
 
 # 手势识别
 

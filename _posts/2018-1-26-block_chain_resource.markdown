@@ -138,6 +138,10 @@ https://mp.weixin.qq.com/s/_RCFI2ijo0VtjAAqGck1xg
 
 区块链技术发展现状与展望-中科院自动化所
 
+https://mp.weixin.qq.com/s/jqJXGsk6nVZrohXfs8t7IQ
+
+炒币这么久，这些专业术语你都知道了吗？
+
 # CPU
 
 https://zhuanlan.zhihu.com/p/29743431
@@ -172,6 +176,12 @@ https://zhuanlan.zhihu.com/p/33579054
 
 Reset重启后发生了什么？它和关机后再开机有什么区别？
 
+https://zhuanlan.zhihu.com/p/34003929
+
+调试程序时，设置断点的原理是什么？
+
+>Visual Studio有个有趣的特性是debug编译后，会把0xcc（INT 3）填入代码的空隙，这样一旦程序越界就会被VS捕捉而容易发现错误。而0xCCCC在中国的GBK编码是“烫”。有中国程序员翻看内存到代码段会发现很多"烫烫烫"，不明所以，以为发生了什么神奇的事情。
+
 # 图像渲染
 
 http://blog.csdn.net/pizi0475/article/details/6650851
@@ -185,5 +195,15 @@ Ray Tracing，Ray Casting，Path Tracing，Ray Marching 的区别？
 https://www.jianshu.com/p/4ec47871973c
 
 Path Tracing介绍
+
+# 超算
+
+https://www.top500.org/
+
+超算排名网站
+
+https://zhuanlan.zhihu.com/p/33956771
+
+超算排名之中的地区和架构之争
 
 

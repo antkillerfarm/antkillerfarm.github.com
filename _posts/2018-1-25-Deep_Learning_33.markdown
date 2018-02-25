@@ -208,4 +208,8 @@ https://mp.weixin.qq.com/s/Qw2tT7H1PwDvPgOYy8YUsQ
 
 AlphaGo Zero代码迟迟不开源，TF等不及自己推了一个
 
+https://mp.weixin.qq.com/s/Vq-osjgNXJQu5avGkxQdsw
+
+手把手：AlphaGo有啥了不起，我也能教你做一个
+
 

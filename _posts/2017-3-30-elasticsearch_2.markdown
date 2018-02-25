@@ -183,6 +183,10 @@ https://mp.weixin.qq.com/s/kxBxaK72ovaMHQgumXALmw
 
 Elasticsearch性能监控（二）
 
+http://blog.csdn.net/qq_21383435/article/details/79367457
+
+linux下ElasticSearch.6.2.1与head、Kibana、X-Pack、SQL、IK、PINYIN插件的配置安装 
+
 # scrapy
 
 scrapy是一个Python写的网页抓取分析工具。网页抓取分析的学名叫做“Web scraping”，可在wiki上获得更多的相关信息。

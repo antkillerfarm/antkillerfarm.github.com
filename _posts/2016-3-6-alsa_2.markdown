@@ -342,6 +342,8 @@ http://blog.csdn.net/xingxiupaioxue/article/details/71747284
 
 # Blog维护日志
 
+2018.2.22 文章数达到200篇。
+
 2018.2.1 又添了几个清华、商汤的follower。居然还有人把我的blog给fork了。。。
 
 2018.1.10 近来转战DL以后，blog的产量日增，也渐有重量级的follower：几个中科院、浙大的硕士。并收到了第一笔打赏。

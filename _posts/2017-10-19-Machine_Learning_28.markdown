@@ -66,19 +66,11 @@ https://mp.weixin.qq.com/s/wfCyii6bS-GxMZPg2TPaLA
 
 蒙特卡洛树搜索是什么？如何将其用于规划星际飞行？
 
+https://mp.weixin.qq.com/s/tqhPGG2Djl4gnd09RdHsUA
+
+一个彻底改变世界的思想
+
 # Temporal-Difference Learning
-
-## bootstrapping
-
-统计学中，bootstrapping可以指依赖于重置随机抽样的一切试验。bootstrapping可以用于计算样本估计的准确性。对于一个采样，我们只能计算出某个统计量(例如均值)的一个取值，无法知道均值统计量的分布情况。但是通过自助法(自举法)我们可以模拟出均值统计量的近似分布。有了分布很多事情就可以做了（比如说有你推出的结果来进而推测实际总体的情况）。
-
-bootstrapping方法的实现很简单，假设抽取的样本大小为n:
-
-在原样本中有放回的抽样，抽取n次。每抽一次形成一个新的样本，重复操作，形成很多新样本，通过这些样本就可以计算出样本的一个分布。新样本的数量通常是1000-10000。如果计算成本很小，或者对精度要求比较高，就增加新样本的数量。
-
-优点：简单易于操作。
-
-缺点：bootstrapping的运用基于很多统计学假设，因此假设的成立与否会影响采样的准确性。
 
 ## TD
 
@@ -172,19 +164,40 @@ Monte-Carlo, Temporal-Difference和Dynamic Programming都是计算状态价值�
 
 需要提及的是：DP利用的是整个MDP问题的模型，也就是状态转移概率，虽然它并不实际利用样本，但是它利用了整个模型的规律，因此认为是Full Width的。
 
-## TD(n)
+## bootstrapping
 
-先前所介绍的TD算法实际上都是TD(0)算法，括号内的数字0表示的是在当前状态下往前多看1步，要是往前多看2步更新状态价值会怎样？这就引入了n-step的概念。
+在前面的章节，我们一直提到bootstrapping这个名词，然而却没有解释它的含义，现在是时候了。
 
-在当前状态往前行动n步，计算n步的return，同样TD target 也由2部分组成，已走的步数使用确定的即时reward，剩下的使用估计的状态价值替代。这就是TD(n)算法。
+统计学中，bootstrapping可以指依赖于重置随机抽样的一切试验。bootstrapping可以用于计算样本估计的准确性。对于一个采样，我们只能计算出某个统计量(例如均值)的一个取值，无法知道均值统计量的分布情况。但是通过自助法(自举法)我们可以模拟出均值统计量的近似分布。有了分布很多事情就可以做了（比如说有你推出的结果来进而推测实际总体的情况）。
 
-显然，MC实际上就是TD($$n=\infty$$)。
+bootstrapping方法的实现很简单，假设抽取的样本大小为n:
 
-定义n-步收获：
+在原样本中有放回的抽样，抽取n次。每抽一次形成一个新的样本，重复操作，形成很多新样本，通过这些样本就可以计算出样本的一个分布。新样本的数量通常是1000-10000。如果计算成本很小，或者对精度要求比较高，就增加新样本的数量。
 
-$$G_t^{(n)}=R_{t+1}+\gamma R_{t+2}+\dots+\gamma^{n-1}R_{t+n}+\gamma^nV(S_{t+n})$$
+优点：简单易于操作。
 
-TD(n)的更新公式：
+缺点：bootstrapping的运用基于很多统计学假设，因此假设的成立与否会影响采样的准确性。
 
-$$V(S_t)\leftarrow V(S_t)+\alpha(G_t^{(n)}-V(S_t))$$
+**但是，这不是bootstrapping在RL中的含义！**
+
+Finally, we note one last special property of DP methods. All of them update estimates of the values
+of states based on estimates of the values of successor states. That is, they update estimates on the
+basis of other estimates. We call this general idea **bootstrapping**.
+
+上面这段是Sutton给bootstrapping的定义，其实也不是太好懂。那么bootstrapping到底是什么意思呢？
+
+$$V(S_t)\leftarrow V(S_t)+\alpha(R_{t+1}+\gamma V(S_{t+1})-V(S_t))$$
+
+上式是TD的更新公式，从中可以看出TD target：$$R_{t+1}+\gamma V(S_{t+1})$$中已经包含了V(s)，也就是说它是用其它V(s)更新当前V(s)。这种特性就是**bootstrapping**。
+
+$$V(S_t)\leftarrow V(S_t)+\alpha(G_t-V(S_t))$$
+
+而MC的target：$$G_t$$就和V(s)无关。
+
+参考：
+
+https://datascience.stackexchange.com/questions/26938/what-exactly-is-bootstrapping-in-reinforcement-learning
+
+What exactly is bootstrapping in reinforcement learning?
+
 
