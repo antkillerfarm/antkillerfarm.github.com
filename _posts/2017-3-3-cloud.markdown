@@ -213,3 +213,8 @@ https://mp.weixin.qq.com/s/gp9MTKWbgHQ7b7QR5pNSnA
 
 Apache Spark中的全新流式引擎Structured Streaming
 
+https://mp.weixin.qq.com/s/g-HgfQ77ExpS0d9QrRcvlg
+
+Python大数据处理库PySpark实战——使用PySpark处理文本多分类问题
+
+
