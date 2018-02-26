@@ -6,6 +6,10 @@ category: resource
 
 # 区块链参考资源
 
+https://mp.weixin.qq.com/s/bkLBaTs3pSQyYg9YgRnG8w
+
+盘点近期区块链媒体、论坛、公号资源
+
 https://mp.weixin.qq.com/s/hn1a9XZSu_lL5TPgq5ln2A
 
 区域链相关资料汇总
@@ -141,6 +145,10 @@ https://mp.weixin.qq.com/s/_RCFI2ijo0VtjAAqGck1xg
 https://mp.weixin.qq.com/s/jqJXGsk6nVZrohXfs8t7IQ
 
 炒币这么久，这些专业术语你都知道了吗？
+
+https://zhuanlan.zhihu.com/p/34031821
+
+韭菜视角：识别山寨币及其维权方法
 
 # CPU
 

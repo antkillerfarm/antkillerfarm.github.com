@@ -4,7 +4,7 @@ title:  深度学习（十八）——YOLOv2, 语义分割
 category: DL 
 ---
 
-# YOLOv2
+# YOLOv2（续）
 
 ### Direct location prediction
 

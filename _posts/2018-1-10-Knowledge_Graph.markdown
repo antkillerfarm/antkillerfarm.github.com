@@ -34,6 +34,10 @@ https://github.com/thunlp/KRLPapers
 
 “知识表示学习”专题论文推荐
 
+https://mp.weixin.qq.com/s/B-FaW5hAnLmmyuPTihviiQ
+
+基于置信度的知识图谱表示学习框架
+
 ### transE
 
 论文：

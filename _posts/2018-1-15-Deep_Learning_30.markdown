@@ -24,6 +24,10 @@ https://github.com/hindupuravinash/the-gan-zoo
 
 GAN的各种变种。
 
+https://zhuanlan.zhihu.com/p/34016536
+
+历史最全GAN网络及其各种变体整理
+
 ## GAN的理论解释
 
 顾险峰教授对GAN提出了自己的理论解释。

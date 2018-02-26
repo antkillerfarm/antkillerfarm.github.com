@@ -334,3 +334,17 @@ https://mp.weixin.qq.com/s/6fd8oxnahJ0EoocRV4q8Bg
 
 一看就懂的Alpha-Beta剪枝算法详解
 
+https://mp.weixin.qq.com/s/rZwqxyBmQg07Pq1ihTjNMg
+
+动图解释泰勒级数（一）
+
+https://mp.weixin.qq.com/s/yqAnIjGmXpubgSsGDx6O8w
+
+动图解释泰勒级数（二）
+
+http://blog.huajh7.com/2013/03/06/variational-bayes/
+
+变分贝叶斯算法理解与推导
+
+
+

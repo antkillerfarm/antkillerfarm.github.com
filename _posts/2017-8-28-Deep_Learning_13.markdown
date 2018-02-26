@@ -102,6 +102,14 @@ http://www.cnblogs.com/jianyingzhou/p/4303578.html
 
 convolution,fft, 加速
 
+http://www.cnblogs.com/luoqingyu/p/5930181.html
+
+数字信号处理--FFT与蝶形算法
+
+http://blog.csdn.net/xxinliu/article/details/7438429
+
+Cooley-Tukey算法 （蝶形算法）
+
 ## 参考
 
 https://colfaxresearch.com/falcon-library/

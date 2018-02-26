@@ -36,6 +36,10 @@ https://github.com/Cadene/pretrained-models.pytorch
 
 ## 参考
 
+https://mp.weixin.qq.com/s/zhkaenFdnB5KgaEYb-XDEQ
+
+从基础概念到实现，小白如何快速入门PyTorch
+
 https://github.com/jinfagang/pytorch_name_net
 
 PyTorch人工智能自动取名
@@ -107,5 +111,3 @@ AI插画师：如何用基于PyTorch的生成对抗网络生成动漫头像？
 https://mp.weixin.qq.com/s/xHXsMxMTdnCWkuwzHs_7Cg
 
 深度学习实验流程及PyTorch提供的解决方案
-
-

@@ -384,5 +384,8 @@ https://mp.weixin.qq.com/s/eTwSo3GnxSnK-BwwZeWmKA
 
 Jeff Dean等提出自动化分层模型，优化CPU、GPU等异构环境，性能提升超60%
 
+https://mp.weixin.qq.com/s/lwvRz1jtv1aCBwL9W447_A
+
+通过扭曲空间来执行数据分类：基于向量场的新型神经网络架构
 
 
