@@ -87,6 +87,8 @@ git的reset和checkout的区别
     helper = store
 {% endhighlight %}
 
+12.git cherry-pick用于把另一个本地分支的commit修改应用到当前分支。
+
 ## 如何git超大版本库
 
 自从两次git完整的linux kernel，都因为网络问题，而中途失败之后，不甘心的我，继续在网上寻找答案。

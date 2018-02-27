@@ -298,4 +298,8 @@ https://mp.weixin.qq.com/s/KbNNU246BAeJmLoWbKie6g
 
 分布式系统架构经典资料
 
+https://mp.weixin.qq.com/s/_g9lw9uEbjLDUHgXFc2aaw
+
+大规模分布式系统资源管理（一）
+
 

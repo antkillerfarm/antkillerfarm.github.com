@@ -170,6 +170,12 @@ DeepLab针对FCN主要做了如下改进：
 
 总之，目前的主流一般是**FCN+PGM**的模式。然而后端的计算模式和普通的NN有所差异，因此如何将后端NN化，也是当前研究的关键点。
 
+参考：
+
+https://mp.weixin.qq.com/s/ald9Dq_VV3PYuN6JoY3E5Q
+
+DeepLabv3+：语义分割领域的新高峰
+
 # ENet
 
 ENet是波兰的Adam Paszke于2016年提出的。
