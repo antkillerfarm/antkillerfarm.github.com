@@ -166,6 +166,14 @@ B：裁切的参考输入。
 
 C：**C = A[: , 25: 25+B.shape[1] , 128: 128+B.shape[2] , 128: 128+B.shape[3] ]**
 
+crop在tensorflow中可用strided_slice实现。
+
+参见：
+
+http://www.cnblogs.com/MrLJC/p/6843626.html
+
+tf.strided_slice用法
+
 ### slice
 
 {% highlight txt %}

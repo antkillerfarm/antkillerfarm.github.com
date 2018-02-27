@@ -347,6 +347,10 @@ https://mp.weixin.qq.com/s/XZ8um7JG5IWpsDPXEHVVuw
 
 十个经典Chatbot框架
 
+https://github.com/RasaHQ/rasa_core
+
+一个对话引擎
+
 ## NLPchina
 
 NLPchina(中国自然语言处理开源组织)旗下有许多好用的工具。

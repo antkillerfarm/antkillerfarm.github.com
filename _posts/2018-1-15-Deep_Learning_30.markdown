@@ -246,4 +246,8 @@ https://mp.weixin.qq.com/s/QeMjOGlUqYSPmcSjnj1HQQ
 
 用生成对抗网络解决NLP问题：谷歌大脑提出MaskGAN
 
+https://zhuanlan.zhihu.com/p/34042498
+
+深度解密换脸应用Deepfake
+
 

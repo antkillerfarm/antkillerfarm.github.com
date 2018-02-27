@@ -74,10 +74,6 @@ https://mp.weixin.qq.com/s/kbqTHIOzAj1aERl4tm-kVA
 
 2017上半年无监督特征学习研究成果汇总
 
-https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
-
-终身机器学习: 一种持续学习的范式
-
 https://mp.weixin.qq.com/s/aCWAU2RXk9fTzfFqOyjqUw
 
 能自主学习的人工突触，为无监督学习开辟新的路径
@@ -161,14 +157,6 @@ Seeta看AI：从大数据驱动到X数据驱动
 https://zhuanlan.zhihu.com/p/28445169
 
 毕彦超：物体识别与物体知识表征的认知神经基础
-
-https://mp.weixin.qq.com/s/SBppyDBWqQUariiHbpaq1w
-
-实时深度学习的推理加速和连续学习
-
-https://mp.weixin.qq.com/s/83HufWMDnuXIOCCfgqeDJw
-
-为什么说持续学习才是AI的关键
 
 https://mp.weixin.qq.com/s/VAEH_241IAuEH5S6H6ep5w
 
