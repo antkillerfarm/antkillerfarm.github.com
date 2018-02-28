@@ -150,6 +150,10 @@ https://zhuanlan.zhihu.com/p/34031821
 
 韭菜视角：识别山寨币及其维权方法
 
+https://mp.weixin.qq.com/s/SpQ4kJdNykdjQedUBGg83A
+
+分分钟叫你用Python创建一个区块链！
+
 # CPU
 
 https://zhuanlan.zhihu.com/p/29743431
@@ -189,6 +193,10 @@ https://zhuanlan.zhihu.com/p/34003929
 调试程序时，设置断点的原理是什么？
 
 >Visual Studio有个有趣的特性是debug编译后，会把0xcc（INT 3）填入代码的空隙，这样一旦程序越界就会被VS捕捉而容易发现错误。而0xCCCC在中国的GBK编码是“烫”。有中国程序员翻看内存到代码段会发现很多"烫烫烫"，不明所以，以为发生了什么神奇的事情。
+
+https://zhuanlan.zhihu.com/p/34091597
+
+ARM攒机指南-网络篇
 
 # 图像渲染
 

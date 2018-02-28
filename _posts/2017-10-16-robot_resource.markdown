@@ -112,7 +112,11 @@ Apollo小度车载系统
 
 https://mp.weixin.qq.com/s/rWhnazEC35U7nsVpsxhFEg
 
-Apollo 2.0 软硬件框架初探
+Apollo 2.0 软硬件框架初探（一）
+
+https://mp.weixin.qq.com/s/GccST3xJ1QRIVM7cFgsn3A
+
+Apollo 2.0 软硬件框架初探（二）
 
 ## 文章
 

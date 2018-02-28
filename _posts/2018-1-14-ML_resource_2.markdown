@@ -310,5 +310,8 @@ https://mp.weixin.qq.com/s/OV4vXu7TAuyV7qU9BAMF6g
 
 机器学习模型的“可解释性”到底有多重要？
 
+https://mp.weixin.qq.com/s/5LUI7ChqARFT2PUom1ue9w
+
+今日头条推荐算法详解
 
 
