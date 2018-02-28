@@ -351,6 +351,10 @@ https://github.com/RasaHQ/rasa_core
 
 一个对话引擎
 
+https://mp.weixin.qq.com/s/hVjgEKD6WDct8SEAHaUCTQ
+
+DeepPavlov：一个训练对话系统和聊天机器人的开源库
+
 ## NLPchina
 
 NLPchina(中国自然语言处理开源组织)旗下有许多好用的工具。

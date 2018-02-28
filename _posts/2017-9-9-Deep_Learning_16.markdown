@@ -246,6 +246,10 @@ https://mp.weixin.qq.com/s/M_i38L2brq69BYzmaPeJ9w
 
 像玩乐高一样拆解Faster R-CNN：详解目标检测的实现过程
 
+https://mp.weixin.qq.com/s/oTo12fgl1p5D7yzdfWIT8Q
+
+使用Faster R-CNN、ResNet诊断皮肤病，深度学习再次超越人类专家
+
 # YOLO
 
 YOLO: Real-Time Object Detection，是一个基于神经网络的实时对象检测软件。它的原理基于Joseph Chet Redmon 2016年的论文：

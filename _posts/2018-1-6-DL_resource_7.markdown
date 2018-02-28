@@ -294,4 +294,16 @@ https://mp.weixin.qq.com/s/lwvRz1jtv1aCBwL9W447_A
 
 通过扭曲空间来执行数据分类：基于向量场的新型神经网络架构
 
+https://mp.weixin.qq.com/s/EE_YYORfI4XxwOSiOsUoUg
+
+OpenAI发布8个仿真机器人环境和HER实现：可用于训练实体机器人模型
+
+https://mp.weixin.qq.com/s/1Drxj0BFOvn153JXzyAtIQ
+
+数据驱动设计：从学习特征到学习算法
+
+https://mp.weixin.qq.com/s/Pmr5VNCxf3rDENB7pJtV_Q
+
+DeepMind最新深度学习研究：超参选择利器-引入基于群体的训练
+
 
