@@ -250,4 +250,8 @@ https://mp.weixin.qq.com/s/aJJFXwTorXJZqyu8T70ApA
 
 OpenAI的实体消歧新发现
 
+http://www.matrix67.com/blog/archives/4212
+
+漫话中文自动分词和语义识别（上）：中文分词算法
+
 

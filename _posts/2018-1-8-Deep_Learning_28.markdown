@@ -112,6 +112,40 @@ Deepmind是当今DL领域最前沿的科研机构，尤其在RL领域更是领�
 
 $$$$
 
+参考：
+
+https://zhuanlan.zhihu.com/p/21262246
+
+DQN从入门到放弃1 DQN与增强学习
+
+https://zhuanlan.zhihu.com/p/21292697
+
+DQN从入门到放弃2 增强学习与MDP
+
+https://zhuanlan.zhihu.com/p/21340755
+
+DQN从入门到放弃3 价值函数与Bellman方程
+
+https://zhuanlan.zhihu.com/p/21378532
+
+DQN从入门到放弃4 动态规划与Q-Learning
+
+https://zhuanlan.zhihu.com/p/21421729
+
+DQN从入门到放弃5 深度解读DQN算法
+
+https://zhuanlan.zhihu.com/p/21547911
+
+DQN从入门到放弃6 DQN的各种改进
+
+https://zhuanlan.zhihu.com/p/21609472
+
+DQN从入门到放弃7 连续控制DQN算法-NAF
+
+https://zhuanlan.zhihu.com/p/21434933
+
+DQN实战篇 从零开始安装Ubuntu, Cuda, Cudnn, Tensorflow, OpenAI Gym
+
 ## 参考
 
 https://www.nervanasys.com/demystifying-deep-reinforcement-learning/

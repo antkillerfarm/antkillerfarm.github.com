@@ -302,6 +302,10 @@ https://mp.weixin.qq.com/s/_g9lw9uEbjLDUHgXFc2aaw
 
 大规模分布式系统资源管理（一）
 
+https://mp.weixin.qq.com/s/-jJN8KXvpZVPmmKnremQdw
+
+大规模分布式系统资源管理（二）
+
 https://mp.weixin.qq.com/s/fx6XfBpuzozsJCvllMcCqw
 
 战狼项目：美团点评金融核心交易系统可用性7个9是这样炼成的

@@ -142,6 +142,10 @@ https://mp.weixin.qq.com/s/2EtQTsumOcHmYFjxOlPApQ
 
 决策树算法及实现
 
+https://mp.weixin.qq.com/s/epHGb0dq9mX6O4PGw3x8aA
+
+机器学习基础算法之随机森林
+
 # 关联规则挖掘
 
 ## 基本概念

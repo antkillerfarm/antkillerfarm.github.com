@@ -371,6 +371,12 @@ https://code.visualstudio.com/
 
 ctrl+P 命令行
 
+# Other
+
+http://dcloud.io/index.html
+
+HBuilder，一个html编辑的IDE。
+
 # Lua
 
 Lua的包管理工具叫做LuaRocks。官网：

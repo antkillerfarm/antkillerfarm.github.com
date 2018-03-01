@@ -24,6 +24,12 @@ AlexNet作为第一个现代意义上的CNN，它的意义主要包括：
 
 >注：ILSVRC（Large Scale Visual Recognition Challenge）大赛，在2016年以前，一直是CV界的顶级赛事。但随着技术的成熟，目前的科研重点已经从物体识别转移到了物体理解领域。2017年将是该赛事的最后一届。WebVision有望接替该赛事，成为下一个目标。
 
+参考：
+
+https://zhuanlan.zhihu.com/p/22538465
+
+运用CNN对ImageNet进行图像分类
+
 ## VGG
 
 Visual Geometry Group是牛津大学的一个科研团队。他们推出的一系列深度模型，被称作VGG模型。

@@ -87,7 +87,11 @@ git的reset和checkout的区别
     helper = store
 {% endhighlight %}
 
-12.git cherry-pick用于把另一个本地分支的commit修改应用到当前分支。
+12.`git cherry-pick`用于把另一个本地分支的commit修改应用到当前分支。
+
+13.`git commit --amend`将当前的修改合并到上一个commit中。
+
+这个在代码review的时候比较有用。如果上一个commit在review的时候发现问题，可以再次修改后，合并到上一个commit中，如此反复直到review成功。
 
 ## 如何git超大版本库
 
