@@ -250,6 +250,10 @@ https://mp.weixin.qq.com/s/2GEcD5kzqBtpPdXkhxksNw
 
 Facebook发布Tensor Comprehensions：自动编译高性能机器学习核心的C++库 
 
+https://mp.weixin.qq.com/s/Rutl-aVbxTu39J0vWHbz-w
+
+Keras作者力推开源框架Lore：15分钟搞定深度学习模型从配置到部署
+
 ## 量子计算 & 遗传算法
 
 https://www.zhihu.com/question/28171555

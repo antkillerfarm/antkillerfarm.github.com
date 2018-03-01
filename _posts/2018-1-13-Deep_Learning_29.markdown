@@ -172,3 +172,7 @@ http://mp.weixin.qq.com/s/n8C80a3B54FhrCe-GhhcDA
 
 文档扫描：深度神经网络在移动端的实践
 
+https://mp.weixin.qq.com/s/MYhQt9uC16BadiZKWjPTzA
+
+华中科技大学提出多向文本检测方法：基于角定位与区域分割
+

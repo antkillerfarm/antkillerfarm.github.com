@@ -32,6 +32,10 @@ http://tensorflowtutorial.net/tensorflow-tutorial
 
 http://wiki.jikexueyuan.com/project/tensorflow-zh/
 
+官方的基于TensorFlow的ML教程（原生中文版）：
+
+https://developers.google.cn/machine-learning/crash-course/
+
 TensorFlow中文社区：
 
 http://www.tensorfly.cn/

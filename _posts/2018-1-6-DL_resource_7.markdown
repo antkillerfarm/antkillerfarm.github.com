@@ -306,4 +306,12 @@ https://mp.weixin.qq.com/s/Pmr5VNCxf3rDENB7pJtV_Q
 
 DeepMind最新深度学习研究：超参选择利器-引入基于群体的训练
 
+https://mp.weixin.qq.com/s/p-apdfnG1JhhAqrMNkBBoA
+
+受AlphaGo启发，AI重建量子系统新方法登上Nature Physics
+
+https://mp.weixin.qq.com/s/O1LqJftEezBuuA8JHeqMzw
+
+基于对比学习的Image Captioning
+
 

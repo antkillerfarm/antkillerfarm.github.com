@@ -346,5 +346,7 @@ http://blog.huajh7.com/2013/03/06/variational-bayes/
 
 变分贝叶斯算法理解与推导
 
+https://www.zhihu.com/question/267166775
 
+真空中有两个位置固定的引力源(恒星)，一个质量较小的小球(行星)有哪些典型的稳定绕转方式?
 

@@ -208,6 +208,10 @@ https://mp.weixin.qq.com/s/1pg8jY1R-8kJKu1L_RPLkg
 
 奇异值分解(SVD)原理
 
+https://mp.weixin.qq.com/s/tZqkbJ18ANCcA7ndWmJEGw
+
+奇异值分解简介：从原理到基础机器学习应用
+
 ## 矩阵的秩
 
 一个矩阵A的列（行）秩是A的线性独立的列（行）的极大数。

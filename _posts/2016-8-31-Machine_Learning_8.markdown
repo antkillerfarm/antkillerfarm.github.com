@@ -65,6 +65,12 @@ $$D_{KL}(P\|Q)=\sum_iP(i)\log\frac{P(i)}{Q(i)}$$
 
 >Richard Leibler，1914～2003，美国数学家和密码学家。伊利诺伊大学博士。NSA高级主管，入选NSA名人堂。
 
+参考：
+
+https://mp.weixin.qq.com/s/e7YQfG578vWxApD-4gsWIg
+
+如何理解KL散度的不对称性
+
 ## 过滤特征选择方法
 
 过滤特征选择（Filter feature selection）方法，是另一种启发式的特征选择算法，计算量比较小。它的思路是计算特征$$x_i$$和类别标签y之间的相关度的评分$$S(i)$$。

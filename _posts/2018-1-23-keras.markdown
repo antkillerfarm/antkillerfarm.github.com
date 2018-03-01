@@ -156,4 +156,7 @@ https://mp.weixin.qq.com/s/cvEkUBsPUmViHf5demFhtA
 
 如何从零开始用Keras开发一个机器翻译系统！
 
+https://mp.weixin.qq.com/s/13wS8jOZxHQ7J59Q8LvMOw
+
+17种GAN变体的Keras实现请收好
 

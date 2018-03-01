@@ -280,4 +280,9 @@ https://mp.weixin.qq.com/s/f1SCK0J5oTWNJvtld3UAHQ
 
 神经网络修剪最新研究进展
 
+https://mp.weixin.qq.com/s/3oL0Bso3mwbsfaG8X5-xoA
+
+英特尔提出新型压缩技术DeepThin，适合移动端设备深度神经网络
+
+
 
