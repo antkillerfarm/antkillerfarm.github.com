@@ -324,3 +324,8 @@ https://mp.weixin.qq.com/s/HGH2e_0ocHv2VWsjOje9BQ
 
 程序员必知的Python陷阱与缺陷列表
 
+http://blog.csdn.net/linda1000/article/details/8315892
+
+单引号、双引号和三双引号的区别
+
+
