@@ -310,8 +310,16 @@ https://mp.weixin.qq.com/s/p-apdfnG1JhhAqrMNkBBoA
 
 受AlphaGo启发，AI重建量子系统新方法登上Nature Physics
 
-https://mp.weixin.qq.com/s/O1LqJftEezBuuA8JHeqMzw
+https://mp.weixin.qq.com/s/33VQNVvb7JGlk10Jc3mmeg
 
-基于对比学习的Image Captioning
+从可视化到新模型：纵览深度学习的视觉可解释性
+
+https://mp.weixin.qq.com/s/tMlYENJO1KmYyPv0u0l3iw
+
+极简机器学习，从少量数据中学习精确特征的卷积神经网络
+
+https://mp.weixin.qq.com/s/bZX-edBIFp3gBbYC6GJ4Fg
+
+OpenAI提出HER算法，AI系统学会从错误中学习
 
 

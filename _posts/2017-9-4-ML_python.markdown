@@ -128,6 +128,10 @@ https://mp.weixin.qq.com/s/FVI3zEp4it-fd99-3MU9vA
 
 从数组到矩阵的迹，NumPy常见使用大总结
 
+https://www.machinelearningplus.com/101-numpy-exercises-python/
+
+101 NumPy Exercises for Data Analysis。这里包含了101个和numpy有关的问题，并附有答案。
+
 ## SciPy
 
 SciPy提供了一些更高阶的数学运算库，比如：积分、插值、信号处理、傅立叶变换、矩阵特征值、统计计算等。
@@ -177,6 +181,10 @@ http://matplotlib.org/1.5.3/api/index.html
 https://mp.weixin.qq.com/s/mpj1QpWpnGm8117p3cEWZw
 
 如何优雅而高效地使用Matplotlib实现数据可视化
+
+https://mp.weixin.qq.com/s/LBrlXEhGYOx1aPFZzQcyTQ
+
+5种快速易用的Python Matplotlib数据可视化方法
 
 ## Pandas
 

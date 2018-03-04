@@ -144,6 +144,10 @@ https://mp.weixin.qq.com/s/szTmHY-Yvn7N3s_GzTDiEA
 
 解开贝叶斯黑暗魔法：通俗理解贝叶斯线性回归
 
+https://mp.weixin.qq.com/s/Jcwxx5oxACjDEVZr9qgPGQ
+
+一个我们几乎每天都在使用的数学工具
+
 # PID算法
 
 PID算法是自动控制领域最基础应用也最广泛的算法。它是三个单词proportional（P，比例）、integral（I，积分）和differential（D，微分）的缩写。

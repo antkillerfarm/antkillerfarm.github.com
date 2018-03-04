@@ -74,10 +74,6 @@ https://mp.weixin.qq.com/s/KWWbaE2em4fEBInPoWTq8A
 
 Python实现多种模型(Naive Bayes, SVM, CNN, LSTM, etc)用于推文情感分析
 
-https://mp.weixin.qq.com/s/-K3WIo64_wJb9p6C49Z5fA
-
-基于属性学习和额外知识库的图像描述生成和视觉问答
-
 https://mp.weixin.qq.com/s/_klvAhH-K8tcYmamlr6FcA
 
 Logistic Regression Models分析交互式问答
@@ -254,4 +250,6 @@ http://www.matrix67.com/blog/archives/4212
 
 漫话中文自动分词和语义识别（上）：中文分词算法
 
+https://github.com/brightmart/text_classification
 
+一个文本分类的代码库

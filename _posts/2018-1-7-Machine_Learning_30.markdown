@@ -1,12 +1,76 @@
 ---
 layout: post
-title:  机器学习（三十）——价值函数的近似表示
+title:  机器学习（三十）——Model-Free Control
 category: ML 
 ---
 
 # Model-Free Control
 
-## On-Policy Temporal-Difference Learning（续）
+## 概述
+
+之前提到的MC & TD都是Model-free prediction，下面讲讲Model-Free Control。
+
+现实中有很多此类的例子，比如控制一个大厦内的多个电梯使得效率最高；控制直升机的特技飞行，机器人足球世界杯上控制机器人球员，围棋游戏等等。所有的这些问题要么我们对其模型运行机制未知，但是我们可以去经历、去试；要么是虽然问题模型是已知的，但问题的规模太大以至于计算机无法高效的计算，除非使用采样的办法。Model-Free Control的内容就专注于解决这些问题。
+
+根据优化控制过程中是否利用已有或他人的经验策略来改进我们自身的控制策略，我们可以将这种优化控制分为两类：
+
+一类是On-policy Learning，其基本思想是个体已有一个策略，并且遵循这个策略进行采样，或者说采取一系列该策略下产生的行为，根据这一系列行为得到的奖励，更新状态函数，最后根据该更新的价值函数来优化策略得到较优的策略。
+
+另一类是Off-policy Learning: 其基本思想是，虽然个体有一个自己的策略，但是个体并不针对这个策略进行采样，而是基于另一个策略进行采样，这另一个策略可以是先前学习到的策略，也可以是人类的策略等一些较为优化成熟的策略，通过观察基于这类策略的行为，或者说通过对这类策略进行采样，得到这类策略下的各种行为，继而得到一些奖励，然后更新价值函数，即在自己的策略形成的价值函数的基础上观察别的策略产生的行为，以此达到学习的目的。这种学习方式类似于“站在别人的肩膀上可以看得更远”。
+
+**简单来说，On-policy Learning训练时，使用当前策略，而Off-policy Learning使用非当前策略。**
+
+## On-Policy Monte-Carlo Control
+
+Model-Free Control应用MC需要解决两个问题：
+
+1.在模型未知的条件下无法知道当前状态的所有后续状态，进而无法确定在当前状态下采取怎样的行为更合适。
+
+解决这一问题的方法是使用action-value function：$$q_{\pi}(s; a)$$替换state-value function：$$v_{\pi}(s)$$。即下图所示：
+
+这样做的目的是可以改善策略而不用知道整个模型，只需要知道在某个状态下采取什么什么样的行为价值最大即可。
+
+2.当我们每次都使用贪婪算法来改善策略的时候，将很有可能由于没有足够的采样经验而导致产生一个并不是最优的策略，我们需要不时的尝试一些新的行为，这就是探索（Exploration）。
+
+一般使用《机器学习（二十六）》中提到的$$\epsilon$$-greedy算法，解决这个问题，这里不再赘述。
+
+![](/images/img2/Model-Free_Control.png)
+
+图中每一个向上或向下的箭头都对应着多个Episode。也就是说我们一般在经历了多个Episode之后才进行依次Ｑ函数更新或策略改善。实际上我们也可以在每经历一个Episode之后就更新Ｑ函数或改善策略。但不管使用那种方式，在Ɛ-贪婪探索算下我们始终只能得到基于某一策略下的近似Ｑ函数，且该算法没没有一个终止条件，因为它一直在进行探索。因此我们必须关注以下两个方面：一方面我们不想丢掉任何更好信息和状态，另一方面随着我们策略的改善我们最终希望能终止于某一个最优策略，因为事实上最优策略不应该包括一些随机行为选择。为此引入了另一个理论概念：**GLIE**。
+
+**GLIE(Greedy in the Limit with Infinite Exploration)**，直白的说是在有限的时间内进行无限可能的探索。具体表现为：所有已经经历的状态行为对（state-action pair）会被无限次探索；另外随着探索的无限延伸，贪婪算法中$$\epsilon$$值趋向于０。例如如果我们取$$\epsilon=1/k$$（k为探索的Episode数目），那么该$$\epsilon$$-greedy MC Control就具备GLIE特性。
+
+基于GLIE的MC Control流程如下：
+
+1.对于给定策略$$\pi$$，采样第k个Episode：$$\{S_1,A_1,R_2,\dots,S_T\}\sim \pi$$
+
+2.对于该Episode里出现的每一个状态/行为对更新：
+
+$$N(S_t,A_t)\leftarrow N(S_t,A_t)+1\\
+Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\frac{1}{N(S_t,A_t)}(G_t-Q(S_t,A_t))
+$$
+
+3.基于新的Q函数改善：
+
+$$\epsilon\leftarrow 1/k,\pi\leftarrow \epsilon-greedy(Q)$$
+
+## On-Policy Temporal-Difference Learning
+
+TD在Model-Free Control的应用主要是Sarsa算法。Sarsa是State–action–reward–state–action的缩写。
+
+Sarsa算法的流程如下所示：
+
+>随机初始化$$Q(s,a)$$，其中$$Q(\text{terminal-state},\cdot)=0$$。   
+>每个Episode执行：   
+>>初始化S   
+>>根据Q选择当前S下的A   
+>>Episode中的每一步执行：   
+>>>执行A，获得观察值R,S'   
+>>>根据Q选择当前S'下的A'   
+>>>$$Q(S,A)\leftarrow Q(S,A)+\alpha [R+\gamma Q(S',A')-Q(S,A)]$$   
+>>>$$S\leftarrow S',A\leftarrow A'$$   
+>>
+>>直到S是terminal状态。
 
 Sarsa算法的最优化收敛性（即$$Q(s,a)\to q_*(s,a)$$）的条件是：
 
@@ -117,67 +181,6 @@ $$V(S_t)\leftarrow V(S_t)+\alpha\left(\frac{\pi(A_t\mid S_t)}{\mu(A_t\mid S_t)}(
 | Bellman Optimality<br/>Equation for $$q_*(s,a)$$ | Q-Value Iteration<br/>$$Q(s,a)\leftarrow E[R+\gamma \max_{a'\in A}Q(S',a')\mid s]$$ | Q-Learning<br/>$$Q(S,A)\xleftarrow{\alpha} R+\gamma \max_{a'\in A}Q(S',a')$$ |
 
 上表中$$x\xleftarrow{\alpha}y\equiv x\leftarrow x+\alpha(y-x)$$。
-
-# 价值函数的近似表示
-
-之前的内容都是讲解一些强化学习的基础理论，这些知识只能解决一些中小规模的问题，很多价值函数需要用一张大表来存储，获取某一状态或行为价值的时候通常需要一个查表操作（Table Lookup），这对于那些状态空间或行为空间很大的问题几乎无法求解。
-
-在实际应用中，对于状态和行为空间都比较大的情况下，精确获得各种v(S)和q(s,a)几乎是不可能的。这时候需要找到近似的函数，具体可以使用线性组合、神经网络以及其他方法来近似价值函数：
-
-$$\hat v(s,w)\approx v_\pi(s)\\
-\hat q(s,a,w)\approx q_\pi(s,a)
-$$
-
-其中w是该近似函数的参数。
-
-## 线性函数
-
-这里仍然从最简单的线性函数说起：
-
-$$\hat v(S,w)=x(S)^Tw=\sum_{j=1}^nx_j(S)w_j$$
-
-目标函数为：
-
-$$J(w)=E_\pi[(v_\pi(S)-x(S)^Tw)^2]$$
-
-更新公式为：
-
-$$\Delta w=\alpha (v_\pi(S)-\hat v(S,w))x(S)$$
-
-上述公式都是基本的ML方法，这里不再赘述。既然是传统ML方法，自然少不了特征工程。
-
-比如Table Lookup Features：
-
-$$x^{table}(S)=\begin{pmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{pmatrix}$$
-
-则：
-
-$$\hat v(S,w)=\begin{pmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{pmatrix}\begin{pmatrix} w_1 \\ \vdots \\ w_n \end{pmatrix}$$
-
-## Incremental Prediction Algorithms
-
-事实上，之前所列的公式都不能直接用于强化学习，因为公式里都有一个实际价值函数$$v_\pi(S)$$，或者是一个具体的数值，而强化学习没有监督数据，因此不能直接使用上述公式。
-
-因此，我们需要找到一个替代$$v_\pi(S)$$的目标。
-
-|:--:|:--:|:--:|:--:|
-| MC | $$\Delta w=\alpha (\color{red}{G_t}-\hat v(S_t,w))\nabla_w \hat v(S_t,w)$$ | 有噪声、无偏采样 | 收敛至一个局部最优解 |
-| TD(0) | $$\Delta w=\alpha (\color{red}{R_{t+1}+\gamma\hat v(S_{t+1},w)}-\hat v(S_t,w))\nabla_w \hat v(S_t,w)$$ | 有噪声、有偏采样 | 收敛至全局最优解 |
-| TD($$\lambda$$) | $$\Delta w=\alpha (\color{red}{G_t^\lambda}-\hat v(S_t,w))\nabla_w \hat v(S_t,w)$$ | 有噪声、有偏采样 |  |
-
-上面公式中，红色的部分就是目标函数。
-
-对于$$\hat q(S,A,w)$$，我们也有类似的结论：
-
-|:--:|:--:|:--:|:--:|
-| MC | $$\Delta w=\alpha (\color{red}{G_t}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、无偏采样 | 收敛至一个局部最优解 |
-| TD(0) | $$\Delta w=\alpha (\color{red}{R_{t+1}+\gamma\hat q(S_{t+1},A_{t+1},w)}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、有偏采样 | 收敛至全局最优解 |
-| TD($$\lambda$$) | $$\Delta w=\alpha (\color{red}{q_t^\lambda}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、有偏采样 |  |
-
-## Batch Methods
-
-前面所说的递增算法都是基于数据流的，经历一步，更新算法后，我们就不再使用这步的数据了，这种算法简单，但有时候不够高效。与之相反，批方法则是把一段时期内的数据集中起来，通过学习来使得参数能较好地符合这段时期内所有的数据。这里的训练数据集“块”相当于个体的一段经验。
-
 
 
 

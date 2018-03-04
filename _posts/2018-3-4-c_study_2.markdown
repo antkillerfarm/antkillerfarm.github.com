@@ -1,0 +1,59 @@
+---
+layout: post
+title:  C/C++编程心得（二）
+category: language 
+---
+
+## strtok
+
+strtok函数多用于分割字符串，但它会改变被分割字符串的值。因此，如果该字符串以后还有用的话，需要首先复制该字符串，然后对复制的字符串执行strtok函数。
+
+## K&R风格
+
+在C语言的函数定义上，我们通常用的函数定义方式为ANSI C的函数定义方式。但是在C语言之父创立C语言之时，函数的定义形式并非现在我们所见到的形式。
+
+这种风格被称为K&R风格，多见于一些历史悠久的项目或者老的书籍中。出于兼容性考虑，现代的C编译器仍然支持K&R风格。
+
+详见：
+
+http://blog.chinaunix.net/uid-7426920-id-2627743.html
+
+## malloc与calloc
+
+两者都是动态分配内存。
+
+**主要的不同**：malloc不初始化分配的内存，已分配的内存中可以是任意的值。calloc初始化已分配的内存为0。
+
+**次要的不同**：calloc返回的是一个数组，而malloc返回的是一个对象。
+
+## 惰性求值
+
+http://www.cnblogs.com/gtarcoder/p/4811614.html
+
+c++11实现l延迟调用（惰性求值）
+
+http://www.fuzihao.org/blog/2016/02/10/C-%E5%AE%9E%E7%8E%B0%E6%83%B0%E6%80%A7%E6%B1%82%E5%80%BC/
+
+C++实现惰性求值
+
+## gcc链接器
+
+### gcc和ld的差异
+
+理论上gcc做链接和ld做链接，应该是一样的效果，然而实际情况要复杂一些。有的厂商的工具链会给gcc添加一些环境变量之类的私货，所以两者的行为就变的很有差异了。遇到这种问题，互换是一种好的解决问题的思路。
+
+### 链接顺序
+
+有的链接器对链接顺序有要求，一般按照c代码、自定义库、标准库的顺序来链接，也就是越基础底层的库，越在后面。（这个顺序正好和声明的顺序相反）
+
+`gcc -c ./sparse_matrix.c -o sparse_matrix.o -luserlib -lm`
+
+但是如果有一系列很底层的库，他们太底层了，以至于会出现相互依赖的情况(circular dependence)，那gcc提供了一个option很好的解决了这个情况：
+
+`-Wl,--start-group -lmy_lib -lyour_lib -lhis_lib -Wl,--end-group`
+
+参考：
+
+https://stackoverflow.com/questions/27475977/c-undefined-reference-to-sqrt-even-with-lm
+
+C - undefined reference to “sqrt” even with '-lm'

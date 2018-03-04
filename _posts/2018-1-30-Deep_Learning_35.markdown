@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十五）——OpenPose, 深度目标跟踪, Mask R-CNN, Fast Image Processing
+title:  深度学习（三十五）——OpenPose, 深度目标跟踪, Mask R-CNN, Fast Image Processing, 图像描述
 category: DL 
 ---
 
@@ -285,4 +285,18 @@ $$\mathcal{l(K,B)}=\sum_i\frac{1}{N_i}\|\hat f (I_i;\mathcal{K,B})-f(I_i)\|^2$$
 http://mmlab.science.unitn.it/RAISE/
 
 RAISE数据集包含了8156张高分辨率原始照片，由3台不同的相机拍摄，并给出了相机的型号和参数。
+
+# 图像描述
+
+https://mp.weixin.qq.com/s/3l4mYVSVfjFS_06j3OvX8g
+
+阿里提出新图像描述框架，解决梯度消失难题
+
+https://mp.weixin.qq.com/s/O1LqJftEezBuuA8JHeqMzw
+
+基于对比学习的Image Captioning
+
+https://mp.weixin.qq.com/s/-K3WIo64_wJb9p6C49Z5fA
+
+基于属性学习和额外知识库的图像描述生成和视觉问答
 

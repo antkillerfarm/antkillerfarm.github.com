@@ -235,3 +235,12 @@ http://deeplearning.cs.cmu.edu/
 http://introtodeeplearning.com/
 
 MIT 6.S191: Introduction to Deep Learning
+
+http://3dvision.princeton.edu/courses.html
+
+普林斯顿的DL课程
+
+https://www.cs.princeton.edu/courses/catalog
+
+普林斯顿的CS课程
+

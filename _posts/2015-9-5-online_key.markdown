@@ -262,16 +262,3 @@ inner join(等值连接)只返回两个表中联结字段相等的行。
 
 http://www.cnblogs.com/pcjim/articles/799302.html
 
-# OpenAI Gym
-
-Openai gym是一个用于开发和比较强化学习（reinforcement learning，RL）算法的工具包，与其他的数值计算库兼容，如tensorflow或者theano库。现在主要支持的是python语言，以后将支持其他语言。
-
-官网：
-
-https://gym.openai.com/
-
-参考：
-
-http://tech.163.com/16/0510/09/BMMOPSCR00094OE0.html
-
-

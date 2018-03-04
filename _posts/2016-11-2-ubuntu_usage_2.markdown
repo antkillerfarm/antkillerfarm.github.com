@@ -337,6 +337,10 @@ http://www.ubuntuthemes.org/
 
 这个网站收集了很多桌面主题，但是需要注册，因为有些主题是收费的。
 
+# Battle of Wesnoth
+
+在逛Ubuntu软件中心的时候，发现了Battle of Wesnoth这个开源的回合制战旗游戏。试着玩了一下，感觉蛮不错的。正好这个项目在Source Forge上使用Git管理源代码。考虑到Android Source也是用Git管理的，于是就用Git下载了Battle of Wesnoth的source来熟悉一下Git的用法。
+
 # CentOS
 
 ## 关于repo设置

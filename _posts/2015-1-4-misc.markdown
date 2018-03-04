@@ -48,26 +48,7 @@ http://www.99inf.net/SoftwareDev/VC/39396.htm
 
 http://www.cnblogs.com/giszhang/archive/2008/10/09/1307509.html
 
-# WebKit
-
-WebKit的代码可以从它的官网www.webkit.org下获得。
-
-在以下网页可以获得webkit向各种GUI移植的相关信息。
-
-http://trac.webkit.org/wiki
-
-由于获得的代码比较新，所以在linux平台下常有一些组件由于过于古老而导致编译失败。所以需要使用yum或者apt-get之类的工具从网上更新相关的组件。这里不推荐使用RHEL或者CentOS之类的服务器版本，因为服务器版本为了追求稳定性，不但组件不是最新的，就连网上的组件源也不是最新的。
-
-可以使用ubuntu 9.04桌面版，不过里面缺少很多开发用的组件，除了
-
-http://trac.webkit.org/wiki/BuildingGtk
-
-列出的之外，还有不少组件需要下载。主要有：
-
-1)autoconf
-2)libtool
-3)gtk-doc-tools
-4)libgail-dev
+VC2005 + SQLite 3.6.3 编译、测试开发手记
 
 # Apache与CGI
 
@@ -163,6 +144,8 @@ kernel (hd0,0)/vmlinuz boot=casper iso-scan/filename=/ubuntu-11.10-i386.iso ro q
 initrd (hd0,0)/initrd.lz
 {% endhighlight %}
 
+>现在的电脑，一般都有一个Recovery分区，用于在系统崩溃时，恢复系统之用。因此，(hd0,0)需要修改为(hd0,1)，甚至是(hd0,2)。
+
 3）
 
 把准备好的iso用压缩软件或者虚拟光驱打开，找到casper文件夹，复制initrd.lz和vmlinuz到C盘,然后在把iso也拷贝到C盘。
@@ -179,6 +162,19 @@ initrd (hd0,0)/initrd.lz
 sudo -i
 mount /dev/sda7 /mnt
 grub-install --root-directory=/mnt /dev/sda
+{% endhighlight %}
+
+6)
+
+最近硬盘安装Ubuntu之后，出现了无法进入Windows的问题。原因是由于公司的Dell笔记本的Recovery分区是第一个主分区，因此被错误的认为是Windows分区。
+
+这种情况可用boot-repair修复之。
+
+{% highlight bash %}
+sudo add-apt-repository ppa:yannubuntu/boot-repair
+sudo apt-get update
+sudo apt-get install -y boot-repair
+sudo boot-repair
 {% endhighlight %}
 
 下面针对最近几天的安装实践，做一个总结性的概括：
@@ -202,8 +198,3 @@ grub-install --root-directory=/mnt /dev/sda
 9）GRUB和LILO。
 
 10）initrd和vmlinuz。initrd包括image-initrd和cpio-initrd。zImage和bzImage的区别和作用。
-
-11）在逛Ubuntu软件中心的时候，发现了Battle of Wesnoth这个开源的回合制战旗游戏。试着玩了一下，感觉蛮不错的。正好这个项目在Source Forge上使用Git管理源代码。考虑到Android Source也是用Git管理的，于是就用Git下载了Battle of Wesnoth的source来熟悉一下Git的用法。
-
-12）在linux下有个叫做gitk的Git GUI工具。
-

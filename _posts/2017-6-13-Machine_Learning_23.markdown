@@ -1,10 +1,82 @@
 ---
 layout: post
-title:  机器学习（二十三）——单分类SVM&多分类SVM
+title:  机器学习（二十三）——Optimizer
 category: ML 
 ---
 
-# Optimizer（续）
+# KNN（续）
+
+## KNN在时间序列分析上的应用
+
+KNN虽然主要是个分类算法，但通过构建特殊的模型，亦可应用于其他领域。其中，KNN在时间序列分析上的应用，就是一个很有技巧性的事情。
+
+假设已知时间序列$$X:\{x_1,\dots,x_n\}$$，来预测$$x_{n+1}$$。
+
+首先，我们选取$$x_{n+1}$$之前的最近m个序列值，作为预测值的特征向量$$X_{m\{n+1\}}$$。这里的m一般根据时间序列的周期来选择，比如商场客流的周期一般为一周。
+
+$$X_{m\{n+1\}}$$和预测值$$x_{n+1}$$组成了扩展向量$$[X_{m\{n+1\}},x_{n+1}]$$。为了表明$$x_{n+1}$$是预测值的事实，上述向量又写作$$[X_{m\{n+1\}},y_{n+1}]$$。
+
+依此类推，对于X中的任意$$x_i$$，我们都可以构建扩展向量$$[X_{m\{i\}},y_{i}]$$。即我们假定，$$x_i$$的值由它之前的m个序列值唯一确定。显然，由于是已经发生了的事件，这里的$$y_{i}$$都是已知的。
+
+在X中，这样的m维特征向量共有$$n-m$$个。使用KNN算法，获得与$$X_{m\{n+1\}}$$最邻近的k个特征向量$$X_{m\{i\}}$$。然后根据这k个特征向量的时间和相似度，对k个$$y_{i}$$值进行加权平均，以获得最终的预测值$$y_{n+1}$$。
+
+参考：
+
+http://www.doc88.com/p-1416660147532.html
+
+KNN算法在股票预测中的应用
+
+https://zhuanlan.zhihu.com/p/29838009
+
+K近邻算法
+
+https://mp.weixin.qq.com/s?__biz=MzI4ODU5NjQ3OQ==&mid=2247483791&idx=1&sn=0fafce03d0c20a14020e193b9b5b64e6
+
+机器学习分类算法之k-近邻算法
+
+# Optimizer
+
+在《机器学习（一）》中，我们已经指出梯度下降是解决凸优化问题的一般方法。而如何更有效率的梯度下降，就是本节中Optimizer的责任了。
+
+## 原始版本
+
+早期的梯度下降法一般用以下公式确定学习率：
+
+$$\eta_t=\frac{\eta_0}{\sqrt{t+1}}$$
+
+## Momentum
+
+Momentum是梯度下降法中一种常用的加速技术。其公式为：
+
+$$v_t = \gamma v_{t-1} + \eta \nabla_\theta J( \theta)$$
+
+$$\theta = \theta - v_t$$
+
+从上式可以看出，参数的更新值$$v_t$$，不仅取决于当前梯度$$\nabla_\theta J( \theta)$$，还取决于上一刻的速度$$v_{t-1}$$。
+
+## Nesterov accelerated gradient
+
+该方法是Momentum的一个变种。其公式为：
+
+$$v_t = \gamma v_{t-1} + \eta \nabla_\theta J( \theta - \gamma v_{t-1})$$
+
+$$\theta = \theta - v_t$$
+
+>注：Yurii Nesterov，莫斯科大学应用数学系本科（1977年），凸优化理论专家。法国鲁汶天主教大学教授。2009年获John von Neumann Theory Prize。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/22810533
+
+比Momentum更快：揭开Nesterov Accelerated Gradient的真面目
+
+https://zhuanlan.zhihu.com/p/27435669
+
+从Nesterov的角度看：我们为什么要研究凸优化？
+
+https://www.cs.cmu.edu/~ggordon/10725-F12/slides/09-acceleration.pdf
+
+Accelerated first-order methods
 
 ## Adagrad
 
@@ -237,77 +309,5 @@ https://mp.weixin.qq.com/s/jVjemfcLzIWOdWdxMgoxsA
 这里可以假设最好的boundary要远离feature space中的原点。左边是在original space中的boundary，可以看到有很多的boundary都符合要求，但是比较靠谱的是找一个比较紧（closeness）的boundary（红色的）。这个目标转换到feature space就是找一个离原点比较远的boundary，同样是红色的直线。
 
 当然这些约束条件都是人为加上去的，你可以按照你自己的需要采取相应的约束条件。比如让data的中心离原点最远。
-
-下面我们讨论一下SVDD的算法实现。
-
-首先定义需要最小化的目标函数：
-
-$$\begin{align}
-&\operatorname{min}& & F(R,a,\xi_i) = R^2 + C \sum_{i=1}^N \xi_i\\
-&\operatorname{s.t.}& & (x_i - a)^T (x_i - a) \leq R^2 + \xi_i\text{,} \qquad \xi_i \geq 0
-\end{align}$$
-
-这里a表示形状的中心，R表示半径，C和$$\xi$$的含义与普通SVM相同。
-
-Lagrangian算子：
-
-$$L(R,a,\alpha_i,\xi_i) = R^2 + C \sum_{i=1}^N \xi_i - \sum_{i=1}^N \gamma_i \xi_i - \sum_{i=1}^N \alpha_i \left(  R^2 + \xi_i - (x_i - c)^T (x_i - c) \right)$$
-
-对偶问题：
-
-$$L = \sum_{i=1}^N \alpha_i (x_i^T \cdot x_i) - \sum_{i,j=1}^N \alpha_i \alpha_j (x_i^T \cdot x_i)$$
-
-使用核函数：
-
-$$L = \sum_{i=1}^N \alpha_i K(x_i,x_i) - \sum_{i,j=1}^N \alpha_i \alpha_j K(x_i,x_j)$$
-
-预测函数：
-
-$$y(x) = \sum_{i=1}^N \alpha_i K(x,x_n) + b$$
-
-根据计算结果的符号，来判定是正常样本，还是异常样本。
-
-参考：
-
-https://www.projectrhea.org/rhea/index.php/One_class_svm
-
-One-Class Support Vector Machines for Anomaly Detection
-
-https://www.zhihu.com/question/22365729
-
-什么是一类支持向量机（one class SVM）
-
-## 多分类SVM
-
-多分类任务除了使用多分类算法之外，也可以通过对两分类算法的组合来实施多分类。常用的方法有两种：one-against-rest和DAG SVM。
-
-### one-against-rest
-
-比如我们有5个类别，第一次就把类别1的样本定为正样本，其余2，3，4，5的样本合起来定为负样本，这样得到一个两类分类器，它能够指出一篇文章是还是不是第1类的；第二次我们把类别2的样本定为正样本，把1，3，4，5的样本合起来定为负样本，得到一个分类器，如此下去，我们可以得到5个这样的两类分类器（总是和类别的数目一致）。
-
-但有时也会出现两种很尴尬的情况，例如拿一篇文章问了一圈，每一个分类器都说它是属于它那一类的，或者每一个分类器都说它不是它那一类的，前者叫分类重叠现象，后者叫不可分类现象。
-
-分类重叠倒还好办，随便选一个结果都不至于太离谱，或者看看这篇文章到各个超平面的距离，哪个远就判给哪个。不可分类现象就着实难办了，只能把它分给第6个类别了……
-
-更要命的是，本来各个类别的样本数目是差不多的，但“其余”的那一类样本数总是要数倍于正类（因为它是除正类以外其他类别的样本之和嘛），这就人为的造成了“数据集偏斜”问题。
-
-### DAG SVM
-
-![](/images/article/dag_svm.png)
-
-DAG SVM（也称one-against-one）的分类思路如上图所示。
-
-粗看起来DAG SVM的分类次数远超one-against-rest，然而由于每次分类都只使用了部分数据，因此，DAG SVM的计算量反而更小。
-
-其次，DAG SVM的误差上限有理论保障，而one-against-rest则不然（准确率可能降为0）。
-
-显然，上面提到的两种方法，不仅可用于SVM，也适用于其他二分类算法。
-
-参考：
-
-http://www.blogjava.net/zhenandaci/archive/2009/03/26/262113.html
-
-将SVM用于多类分类
-
 
 

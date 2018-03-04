@@ -8,6 +8,22 @@ category: resource
 
 ## blog
 
+https://mp.weixin.qq.com/s/NdOhtEIN02tGqEzNvCB26Q
+
+人工智能领域26个主题知识资料全集（入门/进阶/论文/综述/视频/专家等）
+
+https://mp.weixin.qq.com/s/aUrk-wcqhk08_d0QPP9Bxg
+
+一文打尽人工智能和机器学习网络资源，反正我已经收藏了！
+
+http://www.jianshu.com/p/2be349a89a12
+
+超过150个最佳机器学习，NLP和Python教程
+
+https://mp.weixin.qq.com/s/0u4eFeMbbsSgVPVKHbAK7g
+
+深度学习每日摘要迄今所有文章汇总，其中包含《漫谈RNN》和《漫谈深度强化学习》两个专辑
+
 http://www.msra.cn/zh-cn/news?wd&content-type=posts
 
 MSRA的文章官网
@@ -31,6 +47,10 @@ http://blog.csdn.net/cuoqu/
 http://kexue.fm/category/Big-Data/
 
 苏剑林的blog。
+
+http://www.birdbot.cn/
+
+这是苏所在的公司
 
 https://github.com/ChengjinLi
 
@@ -115,18 +135,6 @@ http://shuokay.com/
 http://blog.csdn.net/shuzfan/
 
 一个DL人脸检测的blog
-
-https://mp.weixin.qq.com/s/0u4eFeMbbsSgVPVKHbAK7g
-
-深度学习每日摘要迄今所有文章汇总，其中包含《漫谈RNN》和《漫谈深度强化学习》两个专辑
-
-https://mp.weixin.qq.com/s/NdOhtEIN02tGqEzNvCB26Q
-
-人工智能领域26个主题知识资料全集（入门/进阶/论文/综述/视频/专家等）
-
-http://www.jianshu.com/p/2be349a89a12
-
-超过150个最佳机器学习，NLP和Python教程
 
 https://zhuanlan.zhihu.com/hsmyy
 

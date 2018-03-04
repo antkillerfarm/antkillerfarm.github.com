@@ -104,6 +104,18 @@ $$
 
 2017年5月，我曾面试了一家电商企业。当时给我的感觉，虽然里面的工程师较早接触ML，然而知识老化现象比较严重，对最基本的神经网络知识缺乏必要的了解。这显然给了后来者一个弯道超车的好机会。
 
+## 教程
+
+https://mp.weixin.qq.com/s/3L-HNGBd1xW8SpK6BpEEtg
+
+在线购买率转化高达60%，Amazon推荐系统是如何做到的？这个blog篇幅较长，基本涵盖了推荐系统的各个方面，包括传统算法和深度算法都有涉及。
+
+https://mp.weixin.qq.com/s/aB8PnQuPmhftS18fUrumNg
+
+零基础如何快速搭建一个推荐系统？这篇blog是某牛课程的广告贴，然而从课程目录中，我们还是能够知道一个推荐系统的大致知识点。
+
+## 算法
+
 深度推荐系统的算法包括：
 
 https://mp.weixin.qq.com/s/qwDIvXlpP5UIBTwtpqhYsg
@@ -142,7 +154,7 @@ DeepFM
 
 https://www.librec.net/
 
-这是一个Java写的推荐系统。
+这是一个Java写的推荐系统。东北大学的郭贵冰主持的项目。该网址同时也有不少相关论文可供阅读。
 
 ## 参考
 
@@ -253,10 +265,6 @@ AI研究新利器Etymo，妈妈再也不用担心我找不到论文！
 https://zhuanlan.zhihu.com/p/33956907
 
 阿里-搜索团队智能内容生成实践
-
-https://mp.weixin.qq.com/s/aB8PnQuPmhftS18fUrumNg
-
-零基础如何快速搭建一个推荐系统？这篇blog是某牛课程的广告贴，然而从课程目录中，我们还是能够知道一个推荐系统的大致知识点。
 
 # 手势识别
 

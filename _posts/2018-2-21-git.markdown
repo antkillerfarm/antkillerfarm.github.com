@@ -8,6 +8,10 @@ category: technology
 
 ## git常用命令
 
+0.在linux下有个叫做gitk的Git GUI工具。
+
+`sudo apt install gitk`
+
 1.创建版本库
 
 `git init`

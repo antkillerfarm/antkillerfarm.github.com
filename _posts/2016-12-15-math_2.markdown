@@ -38,6 +38,10 @@ https://www.zhihu.com/question/23280174
 
 矩阵，数列，微分方程的特征值是什么关系？
 
+https://mp.weixin.qq.com/s/ObYF_kMBvBdz4djdT7G77w
+
+傅里叶变换和拉普拉斯变换的物理解释及区别
+
 # 随机变量的特征函数
 
 特征函数是描述随机变量概率分布的重要工具，其定义如下。

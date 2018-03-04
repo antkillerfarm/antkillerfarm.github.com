@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  浮点运算和代码优化, 并行计算
+title:  浮点运算和代码优化, 并行计算, Optimizer软件
 category: AI 
 ---
 
@@ -179,3 +179,11 @@ GeForce产品专为互动游戏与消费类应用而设计。
 http://blog.csdn.net/augusdi/article/details/12833235
 
 这是一篇转帖的CUDA教程，原帖比较分散，不好看。
+
+# Optimizer软件
+
+在前ML时代，工业界已经有不少Optimizer软件用于求解凸优化问题，这些软件从原理上基本都属于传统统计学的范畴。
+
+比较知名的Optimizer软件有：CPlex, Gurobi, Mosek, cvx, LINGO
+
+

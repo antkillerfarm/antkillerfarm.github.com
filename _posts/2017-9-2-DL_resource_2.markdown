@@ -290,10 +290,6 @@ https://mp.weixin.qq.com/s/Ewiil56vMkzhO2xDWgo-Wg
 
 苹果发布Turi Create机器学习框架，5行代码开发图像识别
 
-https://mp.weixin.qq.com/s/yTZs_rQnuZK1GAy3V1Cuog
-
-一文读懂百度PaddlePaddle EDL技术
-
 https://mp.weixin.qq.com/s/jOVUPhrCBI9W9vPvD9eKYg
 
 UC Berkeley提出新型分布式框架Ray：实时动态学习的开端

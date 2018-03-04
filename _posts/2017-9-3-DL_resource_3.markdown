@@ -112,10 +112,6 @@ https://mp.weixin.qq.com/s/10nLPqBgQ1XJAP8jXqFU0g
 
 讲解Vision图像识别框架API详解
 
-https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q
-
-如何用百度深度学习框架PaddlePaddle做数据预处理
-
 https://mp.weixin.qq.com/s/MK_al7CgieiVXB1MGWZ9GA
 
 听说你用JavaScript写代码？本文是你的机器学习指南
@@ -131,6 +127,10 @@ https://mp.weixin.qq.com/s/bigKoR3IX_Jvo-re9UjqUA
 https://www.jianshu.com/p/4c2032c685dc
 
 自动求导框架综述
+
+https://mp.weixin.qq.com/s/C2Gn8NSZe4u5uZsCeLnfVQ
+
+22分钟直冲Kaggle竞赛第二名！一文教你做到
 
 ## 工具
 
@@ -385,3 +385,19 @@ https://mp.weixin.qq.com/s/83HufWMDnuXIOCCfgqeDJw
 https://mp.weixin.qq.com/s/kmEFjzFIbNq0_qdjc1Wm_w
 
 DeepMind新智能体架构Unicorn：持续学习能力胜过多个基准智能体
+
+# PaddlePaddle
+
+https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q
+
+如何用百度深度学习框架PaddlePaddle做数据预处理
+
+https://mp.weixin.qq.com/s/yTZs_rQnuZK1GAy3V1Cuog
+
+一文读懂百度PaddlePaddle EDL技术
+
+https://mp.weixin.qq.com/s/VKK4M_0S7HaBkvURqWgseQ
+
+PaddlePaddle与TensorFlow的对比分析
+
+

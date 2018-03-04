@@ -89,6 +89,10 @@ https://mp.weixin.qq.com/s/M18c3sgvjV2b2ksCsyOxbQ
 
 Nested LSTM：一种能处理更长期信息的新型LSTM扩展
 
+https://www.zhihu.com/question/62399257
+
+如何理解LSTM后接CRF？
+
 # 语音识别
 
 ## 书籍

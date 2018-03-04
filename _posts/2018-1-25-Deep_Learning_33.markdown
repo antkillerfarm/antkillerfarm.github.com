@@ -84,13 +84,17 @@ http://kexue.fm/archives/4819/
 
 揭开迷雾，来一顿美味的“Capsule”盛宴
 
-https://zhuanlan.zhihu.com/p/30830319
-
-Geoffrey Hinton的CapsNet在云平台上应用
-
 https://kexue.fm/archives/5112/
 
 再来一顿贺岁宴：从K-Means到Capsule
+
+https://kexue.fm/archives/5155/
+
+三味Capsule：矩阵Capsule与EM路由
+
+https://zhuanlan.zhihu.com/p/30830319
+
+Geoffrey Hinton的CapsNet在云平台上应用
 
 # AlphaGo
 
@@ -212,4 +216,7 @@ https://mp.weixin.qq.com/s/Vq-osjgNXJQu5avGkxQdsw
 
 手把手：AlphaGo有啥了不起，我也能教你做一个
 
+https://mp.weixin.qq.com/s/ajajJ9yJZsOy4Vc0ULBxXg
+
+国际象棋版AlphaZero出来了诶，还开源了Keras实现
 

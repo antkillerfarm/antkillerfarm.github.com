@@ -70,10 +70,6 @@ https://mp.weixin.qq.com/s/NcBGYtgiWa0uY48wnFOoVg
 
 机器学习之决策树算法
 
-https://zhuanlan.zhihu.com/p/22852262
-
-经典决策树，条件推断树，随机森林，SVM的R实现
-
 https://mp.weixin.qq.com/s/DTDH2m21Gz1UQ2tW64kPZg
 
 如何解读决策树和随机森林的内部工作机制？
@@ -145,6 +141,10 @@ https://mp.weixin.qq.com/s/2EtQTsumOcHmYFjxOlPApQ
 https://mp.weixin.qq.com/s/epHGb0dq9mX6O4PGw3x8aA
 
 机器学习基础算法之随机森林
+
+https://mp.weixin.qq.com/s/EXOqekYaKpGHGSFOH_gxfA
+
+“神经网络”能否代替“决策树算法”？
 
 # 关联规则挖掘
 
@@ -241,29 +241,4 @@ Apriori算法详解之：一、相关概念和核心步骤
 https://mp.weixin.qq.com/s/W1Bu_I3p2DO_sT2Nl0582w
 
 Apriori算法原理总结
-
-## FP-growth算法
-
-Aprori算法利用频繁集的两个特性，过滤了很多无关的集合，效率提高不少，但是我们发现Apriori算法是一个候选消除算法，每一次消除都需要扫描一次所有数据记录，造成整个算法在面临大数据集时显得无能为力。
-
-FP-Growth算法是韩家炜等人在2000年提出的关联分析算法。它通过构造一个树结构来压缩数据记录，使得挖掘频繁项集只需要扫描两次数据记录，而且该算法不需要生成候选集合，所以效率会比较高。
-
->注：韩家炜，中国科学技术大学本科（1979）+中科院硕士+威斯康辛大学博士（1985）。美国伊利诺伊大学香槟分校计算机系教授，IEEE和ACM院士。
-
-FpGrowth算法的平均效率远高于Apriori算法，但是它并不能保证高效率，它的效率依赖于数据集，当数据集中的频繁项集的没有公共项时，所有的项集都挂在根结点上，不能实现压缩存储，而且Fptree还需要其他的开销，需要存储空间更大，使用FpGrowth算法前，对数据分析一下，看是否适合用FpGrowth算法。
-
-参考：
-
-http://www.cnblogs.com/fengfenggirl/p/associate_fpgowth.html
-
-数据挖掘系列（2）--关联规则FpGrowth算法
-
-https://mp.weixin.qq.com/s/zD5hwBmMmSxzTj-3YzZKdg
-
-频繁集挖掘FP Tree详解
-
-https://mp.weixin.qq.com/s/ahmVB0ktJ2PG37ErO-vIiQ
-
-FP-growth算法：高效频繁项集挖掘
-
 

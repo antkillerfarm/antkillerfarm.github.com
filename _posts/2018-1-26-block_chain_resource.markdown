@@ -154,6 +154,10 @@ https://mp.weixin.qq.com/s/SpQ4kJdNykdjQedUBGg83A
 
 分分钟叫你用Python创建一个区块链！
 
+https://mp.weixin.qq.com/s/d8-61XKsEC-2bg78sgBCHg
+
+这些热门案例让你一下子搞懂区块链！
+
 # CPU
 
 https://zhuanlan.zhihu.com/p/29743431

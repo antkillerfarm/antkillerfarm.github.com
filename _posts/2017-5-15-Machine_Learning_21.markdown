@@ -1,10 +1,52 @@
 ---
 layout: post
-title:  机器学习（二十一）——loss function详解, 机器学习分类器性能指标, EMD, LSA, HMM
+title:  机器学习（二十一）——loss function详解, 机器学习分类器性能指标, EMD, LSA
 category: ML 
 ---
 
 # PageRank算法（续）
+
+## 简易推导
+
+![](/images/article/page_rank.jpg)
+
+上图是一个Web图模型的示例。其中的节点表示网页，箭头表示网页链接。因此，从图论的角度来说，这是一个有向图。而从随机过程的角度，这也可以看做是一个Markov链。
+
+上图中，A有两个入链B和C，则：
+
+$$PR(A)=PR(B)+PR(C)$$
+
+然而图中除了C之外，B和D都不止有一条出链，所以上面的计算式并不准确：
+
+$$PR(A) = \frac{PR(B)}{2} + \frac{PR(C)}{1}$$
+
+一般化，即：
+
+$$PR(A)= \frac{PR(B)}{L(B)}+ \frac{PR(C)}{L(C)}$$
+
+其中，L表示外链个数。
+
+更一般化，可得：
+
+$$PR(u) = \sum_{v \in B_u} \frac{PR(v)}{L(v)}$$
+
+这里有两种异常情况需要处理。
+
+1.互联网中不乏一些没有出链的网页，为了满足Markov链的收敛性，设定其对所有的网页（包括它自己）都有出链。
+
+2.互联网中一个网页只有对自己的出链，或者几个网页的出链形成一个循环圈。那么在不断地迭代过程中，这一个或几个网页的PR值将只增不减，显然不合理。
+
+对于这种情况，我们假定有一个确定的概率$$\alpha$$会输入网址直接跳转到一个随机的网页，并且跳转到每个网页的概率是一样的。即：
+
+$$PR(p_{i}) = \alpha \sum_{p_{j} \in M_{p_{i}}} \frac{PR(p_{j})}{L(p_{j})} + \frac{(1 - \alpha)}{N}$$
+
+$$\alpha$$也叫阻尼系数，一般设定为0.85。
+
+由Markov链的收敛性可知，无论每个网页的PR初始值如何设定，都不影响最终的PR值。
+
+在实际计算中，由于网页数量众多，而其中的链接关系相对较少，因此这个计算过程，实际上是一个巨维稀疏矩阵的凸优化问题，此处不再赘述。
+
+
 
 ## TextRank
 
@@ -156,6 +198,10 @@ https://mp.weixin.qq.com/s/6eESoUvMObXSb2jy_KPRyg
 
 如何评价我们分类模型的性能？
 
+https://mp.weixin.qq.com/s/mOYUCc3xKMfVw81B6zSeNw
+
+7种最常用的机器学习算法衡量指标
+
 # Earth mover's distance
 
 推土机距离（EMD）是两个概率分布之间的距离度量的一种方式。如果将区间D的概率分布比作沙堆P，那么$$P_r$$和$$P_\theta$$之间的EMD距离，就是推土机将$$P_r$$改造为$$P_\theta$$所需要的工作量。
@@ -203,50 +249,4 @@ LSA的思想就是说，我们考察的概率既包括文档的概率，也包�
 2.找到一个隐含类的概率是$$p(z\mid d)$$
 
 3.生成一个词w的概率为$$p(w\mid z)$$
-
-## 实现方法
-
-![](/images/article/Topic_model_scheme.jpg)
-
-上图中，行表示单词，列表示文档，单元格的值表示单词在文档中的权重，一般可由TF-IDF生成。
-
-聪明的读者看到这里应该已经反应过来了，这不就是《机器学习（十四）》中提到的协同过滤的商品打分矩阵吗？
-
-没错！LSA的实现方法的确与之类似。多数的blog讲解LSA算法原理时，由于单词-文档矩阵较小，直接采用了矩阵的SVD分解，少数给出了EM算法实现，实际上就是ALS或其变种。
-
-参考：
-
-http://www.cnblogs.com/kemaswill/archive/2013/04/17/3022100.html
-
-Latent Semantic Analysis(LSA/LSI)算法简介
-
-http://blog.csdn.net/u013802188/article/details/40903471
-
-隐含语义索引（Latent Semantic Indexing）
-
-http://www.shareditor.com/blogshow/?blogId=90
-
-比TF-IDF更好的隐含语义索引模型是个什么鬼
-
-http://shiyanjun.cn/archives/548.html
-
-使用libsvm+tfidf实现文本分类
-
-https://mp.weixin.qq.com/s/iZOVUYKWP-fN8BwAuVwAUw
-
-TF-IDF不容小觑
-
-# HMM
-
-![](/images/article/HMM.png)
-
-![](/images/article/HMM_2.png)
-
-![](/images/article/HMM_3.png)
-
-和HMM（Hidden Markov Model，隐马尔可夫模型）模型相关的算法主要分为三类，分别解决三种问题：
-
-1）**知道骰子有几种（隐含状态数量），每种骰子是什么（转换概率），根据掷骰子掷出的结果（可见状态链），我想知道每次掷出来的都是哪种骰子（隐含状态链）。**
-
-这个问题呢，在语音识别领域呢，叫做解码问题。这个问题其实有两种解法，会给出两个不同的答案。每个答案都对，只不过这些答案的意义不一样。第一种解法求最大似然状态路径，说通俗点呢，就是我求一串骰子序列，这串骰子序列产生观测结果的概率最大。第二种解法呢，就不是求一组骰子序列了，而是求每次掷出的骰子分别是某种骰子的概率。比如说我看到结果后，我可以求得第一次掷骰子是D4的概率是0.5，D6的概率是0.3，D8的概率是0.2。
 

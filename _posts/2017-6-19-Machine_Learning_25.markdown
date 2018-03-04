@@ -4,9 +4,69 @@ title:  机器学习（二十五）——Beam Search, 数据不平衡问题, 强
 category: ML 
 ---
 
+# Tri-training（续）
+
+## 协同训练算法
+
+协同训练（co-training）算法是一种多学习器的半监督学习算法。它是多视图（multi-view）学习的代表。
+
+以电影为例，它拥有多个属性集：图像、声音、字幕等。每个属性集就构成了一个视图。
+
+协同训练假设不同的视图具有“相容性”。所谓相容性是指，如果一个电影从图像判断，像是动作片，那么从声音判断，也有很大可能是动作片。
+
+协同训练的算法流程：
+
+1.在每个视图上，基于有标记数据，分别训练出一个分类器。
+
+2.每个分类器挑选自己最有把握的未标记数据，赋予伪标记。
+
+3.其他分类器利用伪标记，进一步训练模型，最终达到相互促进的目的。
+
+理论上，如果不同视图之间具有完全相容性，则模型准确度可达到任意上限。而实际中，虽然很难满足完全相容性假设，但该算法仍能有效提升模型的准确度。
+
+原始的协同训练算法的主要局限在于，构造视图在工程上是件很有难度的事情。后续的一些改进算法针对这点，在应用范围上做了不少改进。如基于不同学习算法、不同的数据采样、不同的参数设置的协同训练算法。
+
+理论研究表明，只要弱学习器之间具有显著分歧（或差异），即可通过相互提供伪标记的方式提升泛化性能。因此，协同训练算法又被称为**基于分歧的算法**。
+
+## Tri-training
+
+2005年，周志华提出了Tri-training算法。该算法的流程如下：
+
+1.首先对有标记示例集进行可重复取样(bootstrap sampling)以获得三个有标记训练集，然后从每个训练集产生一个分类器。
+
+2.在协同训练过程中,各分类器所获得的新标记示例都由其余两个分类器协作提供，具体来说，如果两个分类器对同一个未标记示例的预测相同，则该示例就被认为具有较高的标记置信度，并在标记后被加入第三个分类器的有标记训练集。
+
+参考：
+
+http://www.cnblogs.com/liqizhou/archive/2012/05/11/2496162.html
+
+Tri-training, 协同训练算法
+
+## Co-Forest & Co-Trade
+
+Co-Forest & Co-Trade是周志华在Tri-training基础上的改进算法。
+
+参考：
+
+http://lamda.nju.edu.cn/huangsj/dm11/files/gaoy.pdf
+
+半监督学习中的几种协同训练算法
+
 # Beam Search
 
-## 概述（续）
+## 概述
+
+Beam Search（集束搜索）是一种启发式图搜索算法，通常用在图的解空间比较大的情况下，为了减少搜索所占用的空间和时间，在每一步深度扩展的时候，剪掉一些质量比较差的结点，保留下一些质量较高的结点。保留下来的结点个数一般叫做Beam Width。
+
+这样减少了空间消耗，并提高了时间效率，但缺点就是有可能存在潜在的最佳方案被丢弃，因此Beam Search算法是不完全的，一般用于解空间较大的系统中。
+
+![](/images/article/beam_search.png)
+
+上图是一个Beam Width为2的Beam Search的剪枝示意图。每一层只保留2个最优的分支，其余分支都被剪掉了。
+
+显然，Beam Width越大，找到最优解的概率越大，相应的计算复杂度也越大。因此，设置合适的Beam Width是一个工程中需要trade off的事情。
+
+当Beam Width为1时，也就是著名的A*算法了。
 
 Beam Search主要用于机器翻译、语音识别等系统。这类系统虽然从理论来说，也就是个多分类系统，然而由于分类数等于词汇数，简单的套用softmax之类的多分类方案，明显是计算量过于巨大了。
 
@@ -147,78 +207,4 @@ $$<\mathcal{S},\mathcal{A},\mathcal{P},\mathcal{R},\gamma>$$
 >2.Agent可以通过执行特定的动作（Actions）（如向左向右移动挡板）来改变Environment的状态。   
 >3.Environment状态改变之后会返回一个观察（Observation）给Agent，同时还会得到一个奖励（Reward）（可以为负，就是惩罚）。   
 >4.Agent根据返回的信息采取新的动作，如此反复下去。Agent如何选择动作叫做策略（Policy）。MDP的任务就是找到一个策略，来最大化奖励。
-
-注意State和Observation区别：State是Environment的私有表达，我们往往不会直接得到。
-
-在MDP中，当前状态State包含了所有历史信息，即将来只和现在有关，与过去无关，因为现在状态包含了所有历史信息。只有满足这样条件的状态才叫做马尔科夫状态（Markov state）。当然这只是理想状况，现实往往不会那么简单。
-
-正是因为State太过于复杂，我们往往可以需要一个对Environment的观察来间接获得信息，因此就有了Observation。不过Observation是可以等于State的，此时叫做Full Observability。
-
->这里可以类比围棋和星际争霸。前者的所有信息都在明面上，因此是Full Observability，而后者由于战争迷雾的存在，显然就不是Full Observability的了。
-
-状态、动作、状态转移概率组成了MDP，一个MDP周期（episode）由一个有限的状态、动作、奖励队列组成：
-
-$$s_0,a_0,r_1,s_1,a_1,r_2,s_2,\dots,s_{n-1},a_{n-1},r_n,s_n$$
-
-这里$$s_i$$代表状态，$$a_i$$代表行动，$$r_{i+1}$$是执行动作后的奖励。最终状态为$$s_n$$。
-
-## 折扣未来奖励（Discounted Future Reward）
-
-为了获得更多的奖励，我们往往不能只看当前奖励，更要看将来的奖励。
-
-给定一个MDP周期，总的奖励显然为：
-
-$$R=r_1+r_2+\dots+r_n$$
-
-那么，从当前时间t开始，总的将来的奖励为：
-
-$$R_t=r_t+r_{t+1}+\dots+r_n$$
-
-但是Environment往往是随机的，执行特定的动作不一定得到特定的状态，因此将来的奖励所占的权重要依次递减，因此使用discounted future reward代替：
-
-$$R_t=r_t+\gamma r_{t+1}+\gamma^2 r_{t+2}+\dots+\gamma^{n-t}r_n$$
-
-这里$$\gamma$$是0和1之间的折扣因子——越是未来的奖励，折扣越多，权重越小。而明显上式是个迭代过程，因此可以写作：
-
-$$R_t=r_t+\gamma(r_{t+1}+\gamma (r_{t+2}+\dots))=r_t+\gamma R_{t+1}$$
-
-即当前时刻的奖励等于当前时刻的即时奖励加上下一时刻的奖励乘上折扣因子$$\gamma$$。
-
-如果$$\gamma$$等于0，意味着只看当前奖励；
-
-如果$$\gamma$$等于1，意味着环境是确定的，相同的动作总会获得相同的奖励（也就是cyclic Markov processes）。
-
-因此实际中$$\gamma$$往往取类似0.9这样的值。因此我们的任务变成了找到一个策略，最大化将来的奖励R。
-
-## Policy, Value, Transition Model
-
-增强学习中，比较重要的几个概念：
-
-**Policy**就是我们的算法追求的目标，可以看做一个函数，在输入state的时候，能够返回此时应该执行的action或者action的概率分布。
-
-$$\pi(a \mid  s) = P[A_t = a \mid  S_t = s]$$
-
-**Value**，价值函数，表示在输入state，action的时候，能够返回在state下，执行这个action能得到的Discounted future reward的（期望）值。
-
-Value function一般有两种。
-
-state-value function：
-
-$$v_{\pi}(s) = E_{\pi} [G_t \mid  S_t = s]$$
-
-action-value function：
-
-$$q_{\pi}(s; a) = E_{\pi} [G_t \mid  S_t = s; A_t = a]$$
-
-后者由于和state、action都有关系，也被称作state-action pair value function。
-
-**Transition model**是说环境本身的结构与特性：当在state执行action的时候，系统会进入的下一个state，也包括可能收到的reward。
-
-很显然，以上三者互相关联：
-
-如果能得到一个好的Policy function的话，那算法的目的已经达到了。
-
-如果能得到一个好的Value function的话，那么就可以在这个state下，选取value值高的那个action，自然也是一个较好的策略。
-
-如果能得到一个好的transition model的话，一方面，有可能可以通过这个transition model直接推演出最佳的策略；另一方面，也可以用来指导policy function或者value function 的学习过程。
 

@@ -1,10 +1,83 @@
 ---
 layout: post
-title:  机器学习（二十四）——时间序列分析, 推荐算法中的常用排序算法, Tri-training
+title:  机器学习（二十四）——单分类SVM&多分类SVM, 时间序列分析, Tri-training
 category: ML 
 ---
 
-# 单分类SVM&多分类SVM（续）
+# 单分类SVM&多分类SVM
+
+## 单分类SVM（续）
+
+下面我们讨论一下SVDD的算法实现。
+
+首先定义需要最小化的目标函数：
+
+$$\begin{align}
+&\operatorname{min}& & F(R,a,\xi_i) = R^2 + C \sum_{i=1}^N \xi_i\\
+&\operatorname{s.t.}& & (x_i - a)^T (x_i - a) \leq R^2 + \xi_i\text{,} \qquad \xi_i \geq 0
+\end{align}$$
+
+这里a表示形状的中心，R表示半径，C和$$\xi$$的含义与普通SVM相同。
+
+Lagrangian算子：
+
+$$L(R,a,\alpha_i,\xi_i) = R^2 + C \sum_{i=1}^N \xi_i - \sum_{i=1}^N \gamma_i \xi_i - \sum_{i=1}^N \alpha_i \left(  R^2 + \xi_i - (x_i - c)^T (x_i - c) \right)$$
+
+对偶问题：
+
+$$L = \sum_{i=1}^N \alpha_i (x_i^T \cdot x_i) - \sum_{i,j=1}^N \alpha_i \alpha_j (x_i^T \cdot x_i)$$
+
+使用核函数：
+
+$$L = \sum_{i=1}^N \alpha_i K(x_i,x_i) - \sum_{i,j=1}^N \alpha_i \alpha_j K(x_i,x_j)$$
+
+预测函数：
+
+$$y(x) = \sum_{i=1}^N \alpha_i K(x,x_n) + b$$
+
+根据计算结果的符号，来判定是正常样本，还是异常样本。
+
+参考：
+
+https://www.projectrhea.org/rhea/index.php/One_class_svm
+
+One-Class Support Vector Machines for Anomaly Detection
+
+https://www.zhihu.com/question/22365729
+
+什么是一类支持向量机（one class SVM）
+
+## 多分类SVM
+
+多分类任务除了使用多分类算法之外，也可以通过对两分类算法的组合来实施多分类。常用的方法有两种：one-against-rest和DAG SVM。
+
+### one-against-rest
+
+比如我们有5个类别，第一次就把类别1的样本定为正样本，其余2，3，4，5的样本合起来定为负样本，这样得到一个两类分类器，它能够指出一篇文章是还是不是第1类的；第二次我们把类别2的样本定为正样本，把1，3，4，5的样本合起来定为负样本，得到一个分类器，如此下去，我们可以得到5个这样的两类分类器（总是和类别的数目一致）。
+
+但有时也会出现两种很尴尬的情况，例如拿一篇文章问了一圈，每一个分类器都说它是属于它那一类的，或者每一个分类器都说它不是它那一类的，前者叫分类重叠现象，后者叫不可分类现象。
+
+分类重叠倒还好办，随便选一个结果都不至于太离谱，或者看看这篇文章到各个超平面的距离，哪个远就判给哪个。不可分类现象就着实难办了，只能把它分给第6个类别了……
+
+更要命的是，本来各个类别的样本数目是差不多的，但“其余”的那一类样本数总是要数倍于正类（因为它是除正类以外其他类别的样本之和嘛），这就人为的造成了“数据集偏斜”问题。
+
+### DAG SVM
+
+![](/images/article/dag_svm.png)
+
+DAG SVM（也称one-against-one）的分类思路如上图所示。
+
+粗看起来DAG SVM的分类次数远超one-against-rest，然而由于每次分类都只使用了部分数据，因此，DAG SVM的计算量反而更小。
+
+其次，DAG SVM的误差上限有理论保障，而one-against-rest则不然（准确率可能降为0）。
+
+显然，上面提到的两种方法，不仅可用于SVM，也适用于其他二分类算法。
+
+参考：
+
+http://www.blogjava.net/zhenandaci/archive/2009/03/26/262113.html
+
+将SVM用于多类分类
 
 ## Hinge Loss
 
@@ -160,34 +233,6 @@ https://mp.weixin.qq.com/s/05WAZcklXnL_hFPLZW9t7Q
 
 时间序列模型之相空间重构模型
 
-# 推荐算法中的常用排序算法
-
-## Pointwise方法
-
-Pranking (NIPS 2002), OAP-BPM (EMCL 2003), Ranking with Large Margin Principles (NIPS 2002), Constraint Ordinal Regression (ICML 2005)。
-
-## Pairwise方法
-
-Learning to Retrieve Information (SCC 1995), Learning to Order Things (NIPS 1998), Ranking SVM (ICANN 1999), RankBoost (JMLR 2003), LDM (SIGIR 2005), RankNet (ICML 2005), Frank (SIGIR 2007), MHR(SIGIR 2007), Round Robin Ranking (ECML 2003), GBRank (SIGIR 2007), QBRank (NIPS 2007), MPRank (ICML 2007), IRSVM (SIGIR 2006)。
-
-## Listwise方法
-
-LambdaRank (NIPS 2006), AdaRank (SIGIR 2007), SVM-MAP (SIGIR 2007), SoftRank (LR4IR 2007), GPRank (LR4IR 2007), CCA (SIGIR 2007), RankCosine (IP&M 2007), ListNet (ICML 2007), ListMLE (ICML 2008) 。
-
-## 参考
-
-https://mp.weixin.qq.com/s/YjYVE6jzySVsZmXSPivB5w
-
-达观数据搜索引擎排序实践（上篇）
-
-https://mp.weixin.qq.com/s/UpN7tAMjbFLSPcDYsWaykg
-
-达观数据搜索引擎排序实践（下篇）
-
-https://mp.weixin.qq.com/s/xigME-griWFwEvvPNqWuvg
-
-美团点评联盟广告的场景化定向排序机制
-
 # Tri-training
 
 ## 半监督学习
@@ -228,65 +273,4 @@ http://www.cnblogs.com/chaosimple/p/3147974.html
 
 半监督学习
 
-## 协同训练算法
-
-协同训练（co-training）算法是一种多学习器的半监督学习算法。它是多视图（multi-view）学习的代表。
-
-以电影为例，它拥有多个属性集：图像、声音、字幕等。每个属性集就构成了一个视图。
-
-协同训练假设不同的视图具有“相容性”。所谓相容性是指，如果一个电影从图像判断，像是动作片，那么从声音判断，也有很大可能是动作片。
-
-协同训练的算法流程：
-
-1.在每个视图上，基于有标记数据，分别训练出一个分类器。
-
-2.每个分类器挑选自己最有把握的未标记数据，赋予伪标记。
-
-3.其他分类器利用伪标记，进一步训练模型，最终达到相互促进的目的。
-
-理论上，如果不同视图之间具有完全相容性，则模型准确度可达到任意上限。而实际中，虽然很难满足完全相容性假设，但该算法仍能有效提升模型的准确度。
-
-原始的协同训练算法的主要局限在于，构造视图在工程上是件很有难度的事情。后续的一些改进算法针对这点，在应用范围上做了不少改进。如基于不同学习算法、不同的数据采样、不同的参数设置的协同训练算法。
-
-理论研究表明，只要弱学习器之间具有显著分歧（或差异），即可通过相互提供伪标记的方式提升泛化性能。因此，协同训练算法又被称为**基于分歧的算法**。
-
-## Tri-training
-
-2005年，周志华提出了Tri-training算法。该算法的流程如下：
-
-1.首先对有标记示例集进行可重复取样(bootstrap sampling)以获得三个有标记训练集，然后从每个训练集产生一个分类器。
-
-2.在协同训练过程中,各分类器所获得的新标记示例都由其余两个分类器协作提供，具体来说，如果两个分类器对同一个未标记示例的预测相同，则该示例就被认为具有较高的标记置信度，并在标记后被加入第三个分类器的有标记训练集。
-
-参考：
-
-http://www.cnblogs.com/liqizhou/archive/2012/05/11/2496162.html
-
-Tri-training, 协同训练算法
-
-## Co-Forest & Co-Trade
-
-Co-Forest & Co-Trade是周志华在Tri-training基础上的改进算法。
-
-参考：
-
-http://lamda.nju.edu.cn/huangsj/dm11/files/gaoy.pdf
-
-半监督学习中的几种协同训练算法
-
-# Beam Search
-
-## 概述
-
-Beam Search（集束搜索）是一种启发式图搜索算法，通常用在图的解空间比较大的情况下，为了减少搜索所占用的空间和时间，在每一步深度扩展的时候，剪掉一些质量比较差的结点，保留下一些质量较高的结点。保留下来的结点个数一般叫做Beam Width。
-
-这样减少了空间消耗，并提高了时间效率，但缺点就是有可能存在潜在的最佳方案被丢弃，因此Beam Search算法是不完全的，一般用于解空间较大的系统中。
-
-![](/images/article/beam_search.png)
-
-上图是一个Beam Width为2的Beam Search的剪枝示意图。每一层只保留2个最优的分支，其余分支都被剪掉了。
-
-显然，Beam Width越大，找到最优解的概率越大，相应的计算复杂度也越大。因此，设置合适的Beam Width是一个工程中需要trade off的事情。
-
-当Beam Width为1时，也就是著名的A*算法了。
 

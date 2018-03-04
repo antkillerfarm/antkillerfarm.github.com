@@ -1,10 +1,87 @@
 ---
 layout: post
-title:  机器学习（二十九）——Temporal-Difference Learning, Model-Free Control
+title:  机器学习（二十九）——Temporal-Difference Learning
 category: ML 
 ---
 
 # Temporal-Difference Learning（续）
+
+## TD vs. MC---3
+
+再来看如下示例：
+
+已现有两个状态(A和B)，MDP未知，衰减系数为1，有如下表所示8个完整Episode的经验及对应的即时奖励，其中除了第1个Episode有状态转移外，其余7个均只有一个状态。
+
+| Episode | 状态转移及奖励 |
+|:--:|:--:|
+| 1 | A:0,B:0 |
+| 2 | B:1 |
+| 3 | B:1 |
+| 4 | B:1 |
+| 5 | B:1 |
+| 6 | B:1 |
+| 7 | B:1 |
+| 8 | B:0 |
+
+问题：依据仅有的Episode，计算状态A，B的价值分别是多少，即V(A)=？， V(B)=？
+
+答案：V(B) = 6/8，V(A)根据不同算法结果不同，用MC算法结果为0，TD则得出6/8。
+
+解释：应用MC算法，由于需要完整的Episode,因此仅Episode1可以用来计算A的状态价值，很明显是0；同时B的价值是6/8。应用TD算法时，TD算法试图利用现有的Episode经验构建一个MDP（如下图），由于存在一个Episode使得状态A有后继状态B，因此状态A的价值是通过状态B的价值来计算的，同时经验表明A到B的转移概率是100%，且A状态的即时奖励是0，并且没有衰减，因此A的状态价值等于B的状态价值。
+
+MC算法试图收敛至一个能够最小化状态价值与实际收获的均方差的解决方案。TD算法则收敛至一个根据已有经验构建的最大可能的Markov模型的状态价值。
+
+通过比较可以看出，TD算法使用了MDP问题的Markov属性，在Markov环境下更有效；但是MC算法并不利用Markov属性，通常在非Markov环境下更有效。
+
+## DP & MC & TD
+
+Monte-Carlo, Temporal-Difference和Dynamic Programming都是计算状态价值的一种方法，区别在于，前两种是在不知道Model的情况下的常用方法，这其中又以MC方法需要一个完整的Episode来更新状态价值，TD则不需要完整的Episode；DP方法则是基于Model（知道模型的运作方式）的计算状态价值的方法，它通过计算一个状态S所有可能的转移状态S’及其转移概率以及对应的即时奖励来计算这个状态S的价值。
+
+关于是否Bootstrap：MC没有bootstrapping，只使用实际收获；DP和TD都有bootstrapping。
+
+关于是否用采样来计算: MC和TD都是应用样本来估计实际的价值函数；而DP则是利用模型直接计算得到实际价值函数，没有采样之说。
+
+![](/images/img2/DP_MC_TD.png)
+
+上图从两个维度解释了四种算法的差别，多了一个穷举法。这两个维度分别是：采样深度和广度。当使用单个采样，同时不走完整个Episode就是TD；当使用单个采样但走完整个Episode就是MC；当考虑全部样本可能性，但对每一个样本并不走完整个Episode时，就是DP；当既考虑所有Episode又把Episode从开始到终止遍历完，就变成了穷举法。
+
+需要提及的是：DP利用的是整个MDP问题的模型，也就是状态转移概率，虽然它并不实际利用样本，但是它利用了整个模型的规律，因此认为是Full Width的。
+
+## bootstrapping
+
+在前面的章节，我们一直提到bootstrapping这个名词，然而却没有解释它的含义，现在是时候了。
+
+统计学中，bootstrapping可以指依赖于重置随机抽样的一切试验。bootstrapping可以用于计算样本估计的准确性。对于一个采样，我们只能计算出某个统计量(例如均值)的一个取值，无法知道均值统计量的分布情况。但是通过自助法(自举法)我们可以模拟出均值统计量的近似分布。有了分布很多事情就可以做了（比如说有你推出的结果来进而推测实际总体的情况）。
+
+bootstrapping方法的实现很简单，假设抽取的样本大小为n:
+
+在原样本中有放回的抽样，抽取n次。每抽一次形成一个新的样本，重复操作，形成很多新样本，通过这些样本就可以计算出样本的一个分布。新样本的数量通常是1000-10000。如果计算成本很小，或者对精度要求比较高，就增加新样本的数量。
+
+优点：简单易于操作。
+
+缺点：bootstrapping的运用基于很多统计学假设，因此假设的成立与否会影响采样的准确性。
+
+**但是，这不是bootstrapping在RL中的含义！**
+
+Finally, we note one last special property of DP methods. All of them update estimates of the values
+of states based on estimates of the values of successor states. That is, they update estimates on the
+basis of other estimates. We call this general idea **bootstrapping**.
+
+上面这段是Sutton给bootstrapping的定义，其实也不是太好懂。那么bootstrapping到底是什么意思呢？
+
+$$V(S_t)\leftarrow V(S_t)+\alpha(R_{t+1}+\gamma V(S_{t+1})-V(S_t))$$
+
+上式是TD的更新公式，从中可以看出TD target：$$R_{t+1}+\gamma V(S_{t+1})$$中已经包含了V(s)，也就是说它是用其它V(s)更新当前V(s)。这种特性就是**bootstrapping**。
+
+$$V(S_t)\leftarrow V(S_t)+\alpha(G_t-V(S_t))$$
+
+而MC的target：$$G_t$$就和V(s)无关。
+
+参考：
+
+https://datascience.stackexchange.com/questions/26938/what-exactly-is-bootstrapping-in-reinforcement-learning
+
+What exactly is bootstrapping in reinforcement learning?
 
 ## TD(n)
 
@@ -96,72 +173,4 @@ $$V(S_t)\leftarrow V(S_t)+\alpha\delta_tE_t(s)$$
 >David Silver的课件在这里存在表示混乱的问题，在之前的章节中，TD(X)表示的是n=X，而下文中TD(X)有的时候指的是$$\lambda=X$$。这里借用python表示参数的语法，更准确的描述公式。
 
 如果$$\lambda=1$$，TD($$\lambda=1$$)粗略看与每次访问的MC算法等同；在线更新时，状态价值差每一步都会有积累；离线更新时，TD($$\lambda=1$$)等同于MC算法(即遍历整个Episode)。
-
-# Model-Free Control
-
-## 概述
-
-之前提到的MC & TD都是Model-free prediction，下面讲讲Model-Free Control。
-
-现实中有很多此类的例子，比如控制一个大厦内的多个电梯使得效率最高；控制直升机的特技飞行，机器人足球世界杯上控制机器人球员，围棋游戏等等。所有的这些问题要么我们对其模型运行机制未知，但是我们可以去经历、去试；要么是虽然问题模型是已知的，但问题的规模太大以至于计算机无法高效的计算，除非使用采样的办法。Model-Free Control的内容就专注于解决这些问题。
-
-根据优化控制过程中是否利用已有或他人的经验策略来改进我们自身的控制策略，我们可以将这种优化控制分为两类：
-
-一类是On-policy Learning，其基本思想是个体已有一个策略，并且遵循这个策略进行采样，或者说采取一系列该策略下产生的行为，根据这一系列行为得到的奖励，更新状态函数，最后根据该更新的价值函数来优化策略得到较优的策略。
-
-另一类是Off-policy Learning: 其基本思想是，虽然个体有一个自己的策略，但是个体并不针对这个策略进行采样，而是基于另一个策略进行采样，这另一个策略可以是先前学习到的策略，也可以是人类的策略等一些较为优化成熟的策略，通过观察基于这类策略的行为，或者说通过对这类策略进行采样，得到这类策略下的各种行为，继而得到一些奖励，然后更新价值函数，即在自己的策略形成的价值函数的基础上观察别的策略产生的行为，以此达到学习的目的。这种学习方式类似于“站在别人的肩膀上可以看得更远”。
-
-**简单来说，On-policy Learning训练时，使用当前策略，而Off-policy Learning使用非当前策略。**
-
-## On-Policy Monte-Carlo Control
-
-Model-Free Control应用MC需要解决两个问题：
-
-1.在模型未知的条件下无法知道当前状态的所有后续状态，进而无法确定在当前状态下采取怎样的行为更合适。
-
-解决这一问题的方法是使用action-value function：$$q_{\pi}(s; a)$$替换state-value function：$$v_{\pi}(s)$$。即下图所示：
-
-这样做的目的是可以改善策略而不用知道整个模型，只需要知道在某个状态下采取什么什么样的行为价值最大即可。
-
-2.当我们每次都使用贪婪算法来改善策略的时候，将很有可能由于没有足够的采样经验而导致产生一个并不是最优的策略，我们需要不时的尝试一些新的行为，这就是探索（Exploration）。
-
-一般使用《机器学习（二十六）》中提到的$$\epsilon$$-greedy算法，解决这个问题，这里不再赘述。
-
-![](/images/img2/Model-Free_Control.png)
-
-图中每一个向上或向下的箭头都对应着多个Episode。也就是说我们一般在经历了多个Episode之后才进行依次Ｑ函数更新或策略改善。实际上我们也可以在每经历一个Episode之后就更新Ｑ函数或改善策略。但不管使用那种方式，在Ɛ-贪婪探索算下我们始终只能得到基于某一策略下的近似Ｑ函数，且该算法没没有一个终止条件，因为它一直在进行探索。因此我们必须关注以下两个方面：一方面我们不想丢掉任何更好信息和状态，另一方面随着我们策略的改善我们最终希望能终止于某一个最优策略，因为事实上最优策略不应该包括一些随机行为选择。为此引入了另一个理论概念：**GLIE**。
-
-**GLIE(Greedy in the Limit with Infinite Exploration)**，直白的说是在有限的时间内进行无限可能的探索。具体表现为：所有已经经历的状态行为对（state-action pair）会被无限次探索；另外随着探索的无限延伸，贪婪算法中$$\epsilon$$值趋向于０。例如如果我们取$$\epsilon=1/k$$（k为探索的Episode数目），那么该$$\epsilon$$-greedy MC Control就具备GLIE特性。
-
-基于GLIE的MC Control流程如下：
-
-1.对于给定策略$$\pi$$，采样第k个Episode：$$\{S_1,A_1,R_2,\dots,S_T\}\sim \pi$$
-
-2.对于该Episode里出现的每一个状态/行为对更新：
-
-$$N(S_t,A_t)\leftarrow N(S_t,A_t)+1\\
-Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\frac{1}{N(S_t,A_t)}(G_t-Q(S_t,A_t))
-$$
-
-3.基于新的Q函数改善：
-
-$$\epsilon\leftarrow 1/k,\pi\leftarrow \epsilon-greedy(Q)$$
-
-## On-Policy Temporal-Difference Learning
-
-TD在Model-Free Control的应用主要是Sarsa算法。Sarsa是State–action–reward–state–action的缩写。
-
-Sarsa算法的流程如下所示：
-
->随机初始化$$Q(s,a)$$，其中$$Q(\text{terminal-state},\cdot)=0$$。   
->每个Episode执行：   
->>初始化S   
->>根据Q选择当前S下的A   
->>Episode中的每一步执行：   
->>>执行A，获得观察值R,S'   
->>>根据Q选择当前S'下的A'   
->>>$$Q(S,A)\leftarrow Q(S,A)+\alpha [R+\gamma Q(S',A')-Q(S,A)]$$   
->>>$$S\leftarrow S',A\leftarrow A'$$   
->>
->>直到S是terminal状态。
 

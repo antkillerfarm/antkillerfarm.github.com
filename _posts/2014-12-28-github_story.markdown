@@ -136,3 +136,27 @@ https://stackedit.io/
 
 剩下的问题就简单了，找一个好用的邮箱。使用邮箱的手机客户端，将邮件下载到手机上，这样每天的早报就有了:)
 
+# WebKit
+
+WebKit的代码可以从它的官网www.webkit.org下获得。
+
+在以下网页可以获得webkit向各种GUI移植的相关信息。
+
+http://trac.webkit.org/wiki
+
+由于获得的代码比较新，所以在linux平台下常有一些组件由于过于古老而导致编译失败。所以需要使用yum或者apt-get之类的工具从网上更新相关的组件。这里不推荐使用RHEL或者CentOS之类的服务器版本，因为服务器版本为了追求稳定性，不但组件不是最新的，就连网上的组件源也不是最新的。
+
+可以使用ubuntu 9.04桌面版，不过里面缺少很多开发用的组件，除了
+
+http://trac.webkit.org/wiki/BuildingGtk
+
+列出的之外，还有不少组件需要下载。主要有：
+
+1)autoconf
+
+2)libtool
+
+3)gtk-doc-tools
+
+4)libgail-dev
+

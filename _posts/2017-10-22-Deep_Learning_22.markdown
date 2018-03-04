@@ -107,6 +107,22 @@ DemosaicNet的设计借鉴了ResNet的Skip Connection的方案，只不过使用
 
 ![](/images/img2/Demosaic_3.png)
 
+# Residual Dense Network
+
+
+
+论文：
+
+《Residual Dense Network for Image Super-Resolution》
+
+![](/images/img2/RDN.png)
+
+参考：
+
+https://mp.weixin.qq.com/s/_r3MKxMTIR856ezEozFOGA
+
+残差密集网络：利用所有分层特征的图像超分辨率网络
+
 # SVDF
 
 SVDF是UCB和Google Speech Group的作品，主要用于简化Speech模型的计算量。

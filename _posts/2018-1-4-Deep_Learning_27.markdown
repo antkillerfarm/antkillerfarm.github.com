@@ -84,6 +84,10 @@ https://mp.weixin.qq.com/s/7w5nYWfZO-YOJ4cA47kQXg
 
 无监督视频物体分割新思路：实例嵌入迁移
 
+https://mp.weixin.qq.com/s/PhMPa-e4sbzqWKmFzRZE4Q
+
+实时替换视频背景：谷歌展示全新移动端分割技术
+
 # AutoDL
 
 DL领域目前存在的主要问题之一是：如何设计网络结构和调整超参数。目前的做法，通常依赖于作者的直觉，属于典型的拍脑袋想点子。

@@ -349,4 +349,6 @@ https://mp.weixin.qq.com/s/GN0KARrvosWb7Gr_BKYhCQ
 
 10 种机器学习算法的要点（附Python和R代码）
 
+https://zhuanlan.zhihu.com/p/22852262
 
+经典决策树，条件推断树，随机森林，SVM的R实现

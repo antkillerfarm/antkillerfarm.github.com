@@ -224,3 +224,8 @@ https://mp.weixin.qq.com/s/K1eYjrrWuHu8JgWgoDliJw
 
 百度的中文问答数据集WebQA
 
+https://mp.weixin.qq.com/s/WfcFiRXBKAMqnDi5KFpIEA
+
+百万级字符：清华大学提出中文自然文本数据集CTW
+
+
