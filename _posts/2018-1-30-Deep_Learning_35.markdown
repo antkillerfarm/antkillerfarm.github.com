@@ -228,6 +228,10 @@ https://mp.weixin.qq.com/s/6WmXY1-BmdOHkSRA_Ds9IQ
 
 密集人体姿态估计：2D图像帧可实时生成UV贴图
 
+https://mp.weixin.qq.com/s/UXzhMkGIwqek4zHVNPgRbA
+
+Mask-RCNN论文解读
+
 # Fast Image Processing
 
 ![](/images/article/FIP.png)

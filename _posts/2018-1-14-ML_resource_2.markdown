@@ -318,3 +318,8 @@ https://mp.weixin.qq.com/s/li6l-efZ80Y72bpgzxtFzA
 
 数学教你不犯错----2017年照片大数据分析
 
+https://mp.weixin.qq.com/s/2FenpCl5PpRnMSk_ZILIew
+
+南京大学周志华教授综述论文：弱监督学习
+
+

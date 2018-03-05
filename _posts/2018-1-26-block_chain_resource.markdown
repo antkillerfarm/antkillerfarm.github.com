@@ -202,6 +202,10 @@ https://zhuanlan.zhihu.com/p/34091597
 
 ARM攒机指南-网络篇
 
+https://zhuanlan.zhihu.com/p/34223088
+
+如何进入BIOS？
+
 # 图像渲染
 
 http://blog.csdn.net/pizi0475/article/details/6650851

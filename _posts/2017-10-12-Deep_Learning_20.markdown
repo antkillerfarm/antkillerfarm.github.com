@@ -54,6 +54,20 @@ https://github.com/liuzhuang13/DenseNet
 
 上图就是dense block的结构图。与Resnet的跨层加法不同，这里采用的是Concatenation，也就是将不同层的几个tensor组合成一个大的tensor。
 
+这里的Concatenation是作用在channel上的，即dense block中的所有层的feature map都是等大的，只不过在channel数上，不仅包含本层生成的channel，还包含上层的channel。
+
+这实际上带来了两个问题：
+
+1.feature map的缩小问题。检测网络最后的FC是一定无法接收原始尺寸的feature map的。
+
+2.channel数只增不减显然也是问题。
+
+因此，在两个dense block之间，DenseNet还定义了一个transition layer。该layer包含两个操作：
+
+1.1x1的conv用于降维。
+
+2.avg pool用于缩小feature map。
+
 ### DenseNet的设计思想
 
 以下是原作者的访谈片段：

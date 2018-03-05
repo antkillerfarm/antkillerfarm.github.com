@@ -260,6 +260,12 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/pysqlite
 
 `sudo pip install sqlite_bro`
 
+参考：
+
+https://mp.weixin.qq.com/s/HcmOmwWQFBIOZs8p3nr7CQ
+
+让Python更加充分的使用Sqlite3
+
 ## 如何通过需认证的代理获取HTTP网页
 
 Python内置的urllib和urllib2模块都可用于获取HTTP网页，但使用范围是不同的。urllib只支持HTTP 0.9和HTTP 1.0，所以如果只是使用代理可以使用urllib.FancyURLopener类，如果该代理还需要认证的话urllib就不行了。因为代理认证是HTTP 1.1中引入的。

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Java（二）, 孩子的编程语言, Javascript（二）, Scala, perl
+title:  Java（二）, 孩子的编程语言, Javascript（二）, Scala, perl, Kotlin
 category: language 
 ---
 
@@ -279,4 +279,24 @@ perl的语法和C差别不算太大，好多语法大致上从关键字也可以
 `&name`：函数name。这种情况下，name的定义在使用之后。如果name的定义在使用之前，`&`可省略。
 
 `%name`：哈希数组name。
+
+# Kotlin
+
+Kotlin是一门编程语言，由JetBrains公司开发，与Java 100%互通。
+
+官网：
+
+http://kotlinlang.org/
+
+官网文档：
+
+http://kotlinlang.org/docs/reference/android-overview.html
+
+国内中文文档：
+
+https://huanglizhuo.gitbooks.io/kotlin-in-chinese/content/
+
+国内中文文档2：
+
+http://www.liying-cn.net/kotlin/docs/reference/
 

@@ -134,6 +134,10 @@ https://github.com/Alexpux/MINGW-packages
 
 https://github.com/Alexpux/MSYS2-packages
 
+MSYS2提供了两套API：mingw32和mingw64。可用以下方法（以gcc为例）查询需要安装的package的名字：
+
+`pacman -Sl | grep gcc`
+
 # GTK & OpenGL
 
 众所周知，OpenGL只是一个图形渲染库，没有对于窗口系统的支持，而glut等也只是提供了最基本的窗口操作，使用起来并不方便。因此最好的做法是在一个成熟的GUI库的基础上添加OpenGL的支持。

@@ -292,6 +292,10 @@ https://mp.weixin.qq.com/s/jVjemfcLzIWOdWdxMgoxsA
 
 超越Adam，从适应性学习率家族出发解读ICLR 2018高分论文
 
+https://mp.weixin.qq.com/s/idmt0F49tOCh-ghWdHLdUw
+
+吴恩达导师Michael I.Jordan学术演讲：如何有效避开鞍点
+
 # 单分类SVM&多分类SVM
 
 原始的SVM主要用于二分类，然而稍加变化，也可用于单分类和多分类。

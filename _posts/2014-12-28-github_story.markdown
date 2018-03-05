@@ -34,6 +34,12 @@ https://github.com/trending/python?since=monthly
 
 1.安装ruby
 
+如果是Windows的话，还要在安装ruby之前，安装MSYS2，并安装make、gcc等应用。
+
+install Ruby on Windows：
+
+https://rubyinstaller.org/
+
 2.修改gem的源
 
 作为生活在水深火热的墙内人民，有必要进行下面一步修改gem的源，方便我们更快的下载所需的组件：

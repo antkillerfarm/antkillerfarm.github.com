@@ -322,4 +322,8 @@ https://mp.weixin.qq.com/s/bZX-edBIFp3gBbYC6GJ4Fg
 
 OpenAI提出HER算法，AI系统学会从错误中学习
 
+https://mp.weixin.qq.com/s/Jmlia3v5P8UzG-MEuIMULQ
+
+对抗攻击的12种攻击方法和15种防御方法
+
 
