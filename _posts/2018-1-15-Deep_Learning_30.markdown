@@ -250,4 +250,7 @@ https://zhuanlan.zhihu.com/p/34042498
 
 深度解密换脸应用Deepfake
 
+https://mp.weixin.qq.com/s/uJEGXNvBVJfsxYJUQCz4DQ
+
+DA-GAN技术：计算机帮你创造奇妙“新物种”
 

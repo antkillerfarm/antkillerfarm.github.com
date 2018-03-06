@@ -182,3 +182,8 @@ https://mp.weixin.qq.com/s/-K3WIo64_wJb9p6C49Z5fA
 
 基于属性学习和额外知识库的图像描述生成和视觉问答
 
+https://mp.weixin.qq.com/s/CBqDR7JEPfhIwTc8BDdeoQ
+
+“诗画合一”的跨媒体理解与检索
+
+

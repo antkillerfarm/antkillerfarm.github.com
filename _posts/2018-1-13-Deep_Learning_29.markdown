@@ -102,6 +102,10 @@ https://mp.weixin.qq.com/s/FHmijTVqQ26osp6PzZsbvQ
 
 付彦伟：零样本、小样本以及开集条件下的社交媒体分析
 
+https://mp.weixin.qq.com/s/109hJaWsL4mcr9dc9vdDMg
+
+结合主动学习与迁移学习：让医学图像标注工作量减少一半
+
 # Spiking Neuron Networks
 
 除了基于BP算法的NN之外，Spiking Neuron Networks也是一大类NN。Spiking NN和人脑结构更相似，功耗也更小，但是相关训练和数据量化的算法尚不成熟，属于潜力股。

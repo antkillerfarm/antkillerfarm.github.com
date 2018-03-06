@@ -354,3 +354,8 @@ http://www.matrix67.com/blog/archives/6750
 
 趣题：两个方阵是怎样互相穿过对方的？
 
+https://mp.weixin.qq.com/s/r95iMIKMctgjko1GRn9-5A
+
+史上最贱的数学题
+
+

@@ -302,3 +302,8 @@ https://mp.weixin.qq.com/s/uyPnuLFn2g39QomQ_HvtSw
 
 自动驾驶新思路：现实域到虚拟域统一的无监督方法
 
+https://mp.weixin.qq.com/s/rqDYpGj6dG0Zwn5C6kNApA
+
+群雄逐“图”，百度缘何备受关注？这是一篇关于高精地图的blog
+
+

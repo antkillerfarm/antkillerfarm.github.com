@@ -326,4 +326,11 @@ https://mp.weixin.qq.com/s/Jmlia3v5P8UzG-MEuIMULQ
 
 对抗攻击的12种攻击方法和15种防御方法
 
+https://mp.weixin.qq.com/s/_3zTCvUCZea7wwNaWnBUAg
+
+Mixup vs. SamplePairing：ICLR2018投稿论文的两种数据增广方式
+
+https://zhuanlan.zhihu.com/p/34286453
+
+林倞：Beyond Supervised Deep Learning--后深度学习时代的挑战
 

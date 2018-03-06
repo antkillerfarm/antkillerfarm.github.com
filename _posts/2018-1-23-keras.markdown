@@ -16,6 +16,10 @@ Keras是深度学习的前端框架的集大成者，其后端可支持tensorflo
 
 https://keras.io/
 
+官方中文版文档：
+
+https://keras.io/zh/
+
 代码：
 
 https://github.com/fchollet/keras/
@@ -159,6 +163,10 @@ https://mp.weixin.qq.com/s/cvEkUBsPUmViHf5demFhtA
 https://mp.weixin.qq.com/s/13wS8jOZxHQ7J59Q8LvMOw
 
 17种GAN变体的Keras实现请收好
+
+https://mp.weixin.qq.com/s/3y-9R83Aw0Kj7qBma8x0DQ
+
+Batch Normalization: 如何更快地训练深度神经网络
 
 # OpenAI Gym
 
