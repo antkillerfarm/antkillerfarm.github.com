@@ -170,3 +170,15 @@ https://zhuanlan.zhihu.com/p/30893160
 
 CVPR2017 Image Caption有关论文总结
 
+https://mp.weixin.qq.com/s/3l4mYVSVfjFS_06j3OvX8g
+
+阿里提出新图像描述框架，解决梯度消失难题
+
+https://mp.weixin.qq.com/s/O1LqJftEezBuuA8JHeqMzw
+
+基于对比学习的Image Captioning
+
+https://mp.weixin.qq.com/s/-K3WIo64_wJb9p6C49Z5fA
+
+基于属性学习和额外知识库的图像描述生成和视觉问答
+

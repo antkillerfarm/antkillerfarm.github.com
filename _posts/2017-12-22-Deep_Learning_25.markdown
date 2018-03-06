@@ -1,8 +1,153 @@
 ---
 layout: post
-title:  深度学习（二十五）——WaveNet, L2 Normalization, 深度推荐系统, 手势识别
+title:  深度学习（二十五）——Deep Speech, WaveNet, L2 Normalization
 category: DL 
 ---
+
+# CTC（续）
+
+## 推断计算
+
+我们首先看看CTC的正向推断（Inference）是如何计算的。
+
+在前面的章节我们已经指出，由于对齐有很多种可能的情况，采用穷举法是不现实的。
+
+另一个比较容易想到的方法是：每步只采用最大可能的token。这种启发式算法，实际上就是A*算法。
+
+A*算法计算速度快，但不一定能找到最优解。
+
+一般采用改良的Beam Search算法，在准确率和计算量上取得一个trade off。
+
+![](/images/img2/CTC_5.png)
+
+上图是一个Beam Width为3的Beam Search。Beam Search的细节可参见《机器学习（二十五）》。
+
+由于语音的特殊性，我们实际上用的是Beam Search的一个变种：
+
+![](/images/img2/CTC_8.png)
+
+如上图所示，所有在合并规则下，能够合并为同一前缀的分支，在后续计算中，都被认为是同一分支。其概率值为各被合并分支的概率和。
+
+此外，如果在语音识别中，能够结合语言模型的话，将可以极大的改善语音识别的准确率。这种情况下的CTC loss为：
+
+$$Y^*=\mathop{\text{argmax}}_{Y} p(Y \mid X)\cdot p(Y)^{\alpha}\cdot L(Y)^{\beta}$$
+
+其中，$$p(Y)^{\alpha}$$是语言模型概率，而$$L(Y)^{\beta}$$表示词嵌入奖励。
+
+## CTC的特性
+
+CTC是条件独立的。
+
+缺点：条件独立的假设太强，与实际情况不符，因此需要语言模型来改善条件依赖性，以取得更好的效果。
+
+优点：可迁移性比较好。比如朋友之间的聊天和正式发言之间的差异较大，但它们的声学模型却是类似的。
+
+CTC是单调对齐的。这在语音识别上是没啥问题的，但在机器翻译的时候，源语言和目标语言之间的语序不一定一致，也就不满足单调对齐的条件。
+
+CTC的输入/输出是many-to-one的，不支持one-to-one或one-to-many。比如，“th”在英文中是一个音节对应两个字母，这就是one-to-many的案例。
+
+最后，Y的数量不能超过X，否则CTC还是没法work。
+
+## CTC应用
+
+### HMM
+
+![](/images/img2/CTC_9.png)
+
+如上图所示，CTC是一种特殊的HMM。CTC的状态图是单向的，这也就是上面提到的单调对齐特性，这相当于给普通HMM模型提供了一个先验条件。因此，对于满足该条件的情况，CTC的准确度要超过HMM。
+
+最重要的是，CTC是判别模型，它可以直接和RNN对接。
+
+### Encoder-Decoder模型
+
+Encoder-Decoder模型是sequence问题最常用的框架，它的数学形式为：
+
+$$
+H=encode(X)\\
+p(Y\mid X)=decode(H)
+$$
+
+这里的H是模型的hidden representation。
+
+CTC模型可以使用各种Encoder，只要保证输入比输出多即可。CTC模型常用的Decoder一般是softmax。
+
+## 参考
+
+https://distill.pub/2017/ctc/
+
+Sequence Modeling With CTC
+
+http://blog.csdn.net/laolu1573/article/details/78791992
+
+Sequence Modeling With CTC中文版
+
+http://blog.csdn.net/u012968002/article/details/78890846
+
+CTC原理
+
+https://www.zhihu.com/question/47642307
+
+语音识别中的CTC方法的基本原理
+
+https://www.zhihu.com/question/55851184
+
+基于CTC等端到端语音识别方法的出现是否标志着统治数年的HMM方法终结？
+
+https://zhuanlan.zhihu.com/p/23308976
+
+CTC——下雨天和RNN更配哦
+
+https://zhuanlan.zhihu.com/p/23293860
+
+CTC实现——compute ctc loss（1）
+
+https://zhuanlan.zhihu.com/p/23309693
+
+CTC实现——compute ctc loss（2）
+
+http://blog.csdn.net/xmdxcsj/article/details/70300591
+
+端到端语音识别（二）ctc。这个blog中还有5篇《CTC学习笔记》的链接。
+
+## Warp-CTC
+
+Warp-CTC是一个可以应用在CPU和GPU上的高效并行的CTC代码库，由百度硅谷实验室开发。
+
+官网：
+
+https://github.com/baidu-research/warp-ctc
+
+非官方caffe版本：
+
+https://github.com/xmfbit/warpctc-caffe
+
+# Deep Speech
+
+Deep Speech是吴恩达领导的百度硅谷AI Lab 2014年的作品。
+
+论文：
+
+《Deep Speech: Scaling up end-to-end speech recognition》
+
+代码：
+
+https://github.com/mozilla/DeepSpeech
+
+![](/images/img2/Deep_Speech.png)
+
+上图是Deep Speech的网络结构图。网络的前三层和第5层是FC，第4层是双向RNN，Loss是CTC。
+
+主要思路：
+
+1.这里的FC只处理部分音频片段，因此和CNN有异曲同工之妙。
+
+2.论文解释了不用LSTM的原因是：很难并行处理。
+
+参考：
+
+http://blog.csdn.net/xmdxcsj/article/details/54848838
+
+Deep Speech笔记
 
 # Deep speech 2
 
@@ -97,194 +242,4 @@ D_{xyz}=C_{xyz} \cdot S_{xy}
 $$
 
 一般来说，求出C被称作L2 Normalization，而求出D被称作L2 Scale Normalization，S被称为Scale。
-
-# 深度推荐系统
-
-推荐系统一直是AI能够落地且商业前景很好的一个研究方向。自2016年以来，该方向也逐渐被DL所侵蚀，尽管目前从招聘来说，这方面的职位仍以普通ML为主。
-
-2017年5月，我曾面试了一家电商企业。当时给我的感觉，虽然里面的工程师较早接触ML，然而知识老化现象比较严重，对最基本的神经网络知识缺乏必要的了解。这显然给了后来者一个弯道超车的好机会。
-
-## 教程
-
-https://mp.weixin.qq.com/s/3L-HNGBd1xW8SpK6BpEEtg
-
-在线购买率转化高达60%，Amazon推荐系统是如何做到的？这个blog篇幅较长，基本涵盖了推荐系统的各个方面，包括传统算法和深度算法都有涉及。
-
-https://mp.weixin.qq.com/s/aB8PnQuPmhftS18fUrumNg
-
-零基础如何快速搭建一个推荐系统？这篇blog是某牛课程的广告贴，然而从课程目录中，我们还是能够知道一个推荐系统的大致知识点。
-
-## 算法
-
-深度推荐系统的算法包括：
-
-https://mp.weixin.qq.com/s/qwDIvXlpP5UIBTwtpqhYsg
-
-Auto-Encoder
-
-https://mp.weixin.qq.com/s/AqgxnfR4h1FBRmmEe6uPqQ
-
-CDL
-
-https://mp.weixin.qq.com/s/WlgUVf1EjpO9UGqjTJN5ww
-
-UWRL
-
-https://mp.weixin.qq.com/s/KII9oNg7kqfco2MngUOGAw
-
-AutoRec
-
-https://mp.weixin.qq.com/s/mnGuPGtdw9d1BzeNpoYYqw
-
-DeepCoNN
-
-https://mp.weixin.qq.com/s/lJDiP7oeiFQSEyxWt_9uBA
-
-NFM
-
-https://mp.weixin.qq.com/s/G4bDj4a05K0kB4IZ6IosiQ
-
-Wide & Deep
-
-https://mp.weixin.qq.com/s/JNGKz4-fWG4ygl7f6UkxcQ
-
-DeepFM
-
-## 工具
-
-https://www.librec.net/
-
-这是一个Java写的推荐系统。东北大学的郭贵冰主持的项目。该网址同时也有不少相关论文可供阅读。
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/26237106
-
-深度学习在推荐算法上的应用进展
-
-http://i.dataguru.cn/mportal.php?mod=view&aid=11463
-
-深度学习在推荐领域的应用
-
-https://mp.weixin.qq.com/s/hGvQvddD3i858XSK4z08Ug
-
-主要推荐系统算法总结及Youtube深度学习推荐算法实例概括
-
-https://mp.weixin.qq.com/s/yHtqWJUpCIvTStKW5TINaA
-
-Youtube短视频推荐系统变迁：从机器学习到深度学习
-
-https://mp.weixin.qq.com/s/N1oLs-saWN_ifkWEaWw_Vg
-
-YouTube 2016年公布的基于深度学习的推荐算法
-
-https://mp.weixin.qq.com/s/WzSO_XobY6kesDm4sF-hBg
-
-深度学习之推荐篇
-
-https://mp.weixin.qq.com/s/LKjVfhyhL4GVx6l5WC6-CQ
-
-如何用深度学习实现用户行为预测与推荐
-
-https://mp.weixin.qq.com/s/UrMsMHAkqNHJEl5lhAvLtA
-
-腾讯提出并行贝叶斯在线深度学习框架PBODL：预测广告系统的点击率
-
-http://mp.weixin.qq.com/s/Jiis7j3W3D5GG_ZdxplY7Q
-
-淘宝搜索/推荐系统背后深度强化学习与自适应在线学习的实践之路
-
-https://mp.weixin.qq.com/s/847h4ITQMtUlZcurJ9Vlvg
-
-深度学习在美团点评推荐平台排序中的运用
-
-https://mp.weixin.qq.com/s/AICgNDyWASx_B8NzWcFTqA
-
-一文综述所有用于推荐系统的深度学习方法
-
-https://mp.weixin.qq.com/s/zSBpqhoyROh74UZEItBanA
-
-基于概率隐层模型的购物搭配推送：阿里巴巴提出新型用户偏好预测模型
-
-http://mp.weixin.qq.com/s/nmLNKscP1qxyv_aoSrwEEw
-
-基于大规模图计算的本地算法对展示广告的行为预测
-
-https://mp.weixin.qq.com/s/8hNkntUauCSeVqc2v0QUqA
-
-人工智能如何帮你找到好歌：探秘Spotify神奇的每周歌单
-
-https://zhuanlan.zhihu.com/p/30720579
-
-推荐中的序列化建模：Session-based neural recommendation
-
-https://mp.weixin.qq.com/s/vpxLTcwenvlIvj5D-8uolg
-
-一天造出10亿个淘宝首页，阿里工程师如何实现？
-
-https://mp.weixin.qq.com/s/lZ4FOOVIxsdKvfW45CYCnA
-
-你看到哪版电影海报，由算法决定：揭秘Netflix个性化推荐系统
-
-http://www.cnblogs.com/qcloud1001/p/7483362.html
-
-深度学习在CTR中应用
-
-http://www.cnblogs.com/qcloud1001/p/7513982.html
-
-常见计算广告点击率预估算法总结
-
-https://mp.weixin.qq.com/s/Q8Mt9B1rzbeWXqIInrzSYQ
-
-使用深度学习构建先进推荐系统：近期33篇重要研究概述
-
-https://mp.weixin.qq.com/s/PlsFxKz_Igorh94Ni-78Hg
-
-融合MF和RNN的电影推荐系统
-
-https://mp.weixin.qq.com/s/JKMOhpLWWlrDzymDDEldXw
-
-深度学习大行其道，个性化推荐如何与时俱进？
-
-https://mp.weixin.qq.com/s/FBzd0x4_A9z-r0f3ZKFGuw
-
-携程个性化推荐算法实践
-
-https://mp.weixin.qq.com/s/Q01jy2RtbpBBHGtvtfhEGA
-
-当机器学习遇到推荐系统，悉尼科技大学Liang Hu博士最新分享
-
-https://mp.weixin.qq.com/s/zBcd2vCYZvb_T7De2QhRew
-
-京东公布基于计算机视觉的电商推荐技术！
-
-https://mp.weixin.qq.com/s/rIZUar6sUZXo2S1JwLrHug
-
-AI研究新利器Etymo，妈妈再也不用担心我找不到论文！
-
-https://zhuanlan.zhihu.com/p/33956907
-
-阿里-搜索团队智能内容生成实践
-
-# 手势识别
-
-https://zhuanlan.zhihu.com/p/26630215
-
-浅谈手势识别在直播中的运用
-
-https://zhuanlan.zhihu.com/p/30561160
-
-2017-最全手势识别/跟踪相关资源大列表分享
-
-http://www.sohu.com/a/203306961_465975
-
-浙江大学CSPS最佳论文：使用卷积神经网络的多普勒雷达手势识别
-
-https://www.zhihu.com/question/20131478
-
-我打算只根据手的形状来识别手势。用哪种机器学习算法比较好？
-
-https://www.leiphone.com/news/201502/QM7LdSN874dWXFLo.html
-
-带你了解世界最先进的手势识别技术
 

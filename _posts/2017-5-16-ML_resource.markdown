@@ -218,10 +218,6 @@ https://mp.weixin.qq.com/s/9llI8EPy2PNBYZ4Q_LdOFg
 
 深度学习中的基础线代知识-初学者指南
 
-https://mp.weixin.qq.com/s/dYCtth0r2Gme5iGSviVmBQ
-
-基于Spark的机器学习痛点，风控和模型优化案例分析！
-
 https://mp.weixin.qq.com/s/oipXH06mgmPBwLQdbe-g4w
 
 数据分析与挖掘、数据科学的96个在线学习课程
@@ -253,10 +249,6 @@ https://mp.weixin.qq.com/s/lNYKzNU6VcT7orPCotbUdg
 https://mp.weixin.qq.com/s/rCCYmwmwodWKS0ZG4COPNg
 
 第四范式戴文渊：机器学习教科书的7大经典问题
-
-https://mp.weixin.qq.com/s/8ZEUNIXHu7iF1hHk7e0gdw
-
-Spark 机器学习的加速器：Spark on Angel
 
 https://mp.weixin.qq.com/s/9cnXRCOmFwNnll-H0ts-FQ
 

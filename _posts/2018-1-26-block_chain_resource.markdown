@@ -158,6 +158,14 @@ https://mp.weixin.qq.com/s/d8-61XKsEC-2bg78sgBCHg
 
 这些热门案例让你一下子搞懂区块链！
 
+https://mp.weixin.qq.com/s/nF-IDEiLYpFlFPEG86Zy5w
+
+人民日报整版报道区块链，我只想知道用什么语言开发？
+
+https://mp.weixin.qq.com/s/2OgD3GdYXgd69DyKcW7RtQ
+
+谢国彤歪评：区块链是什么？能干什么？
+
 # CPU
 
 https://zhuanlan.zhihu.com/p/29743431

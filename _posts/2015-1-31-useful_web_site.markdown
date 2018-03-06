@@ -416,6 +416,10 @@ https://mp.weixin.qq.com/s/UehY3iXtcoBwMJkdcEi--A
 
 没有了这个规则，自然界再也不可能发现美丽的分形(递归算法的历史)
 
+https://mp.weixin.qq.com/s/nqI08Iyn7yunuR1aVSuq_Q
+
+用户增长怎么做—以Uber和摩拜的经验为实例。技术营销的典范之作。
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

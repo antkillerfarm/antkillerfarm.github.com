@@ -82,6 +82,10 @@ https://mp.weixin.qq.com/s/7Ujxc5_CwhYxXTLAjac0-g
 
 基于异构网络节点表示的推荐系统
 
+https://mp.weixin.qq.com/s/98k1fNHDIwITFyLnNutt4A
+
+Entity Embeddings: 利用深度学习训练结构化数据的实体嵌入
+
 # NN的INT8计算
 
 ## 概述

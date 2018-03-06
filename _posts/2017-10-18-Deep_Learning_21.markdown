@@ -20,10 +20,6 @@ https://mp.weixin.qq.com/s/uK0L5RV0bB2Jnr5WCZasfw
 
 深度学习在单图像超分辨率上的应用：SRCNN、Perceptual loss、SRResNet
 
-https://mp.weixin.qq.com/s/KxQ-GRnEYEdmS2H-DHIHOg
-
-南京理工大学ICCV 2017论文：图像超分辨率模型MemNet
-
 https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
 
 NTIRE2017夺冠论文：用于单一图像超分辨率的增强型深度残差网络

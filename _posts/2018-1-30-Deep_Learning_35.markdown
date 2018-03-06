@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十五）——OpenPose, 深度目标跟踪, Mask R-CNN, Fast Image Processing, 图像描述
+title:  深度学习（三十五）——OpenPose, 深度目标跟踪, Mask R-CNN, 手势识别
 category: DL 
 ---
 
@@ -232,75 +232,25 @@ https://mp.weixin.qq.com/s/UXzhMkGIwqek4zHVNPgRbA
 
 Mask-RCNN论文解读
 
-# Fast Image Processing
+# 手势识别
 
-![](/images/article/FIP.png)
+https://zhuanlan.zhihu.com/p/26630215
 
-上图是照片界常用的几种修图方式之一。一般将这些图片风格转换的算法，称为图像处理算子（image processing operators）。如何加速image processing operators的计算，就成为了学界研究的课题之一。
+浅谈手势识别在直播中的运用
 
-本文提出的模型就是用来加速image processing operators计算的。它是Intel Lab的Qifeng Chen和Jia Xu于2017年提出的。
+https://zhuanlan.zhihu.com/p/30561160
 
-论文：
+2017-最全手势识别/跟踪相关资源大列表分享
 
-《Fast Image Processing with Fully-Convolutional Networks》
+http://www.sohu.com/a/203306961_465975
 
-代码：
+浙江大学CSPS最佳论文：使用卷积神经网络的多普勒雷达手势识别
 
-https://github.com/CQFIO/FastImageProcessing
+https://www.zhihu.com/question/20131478
 
-Demo网站：
+我打算只根据手的形状来识别手势。用哪种机器学习算法比较好？
 
-http://cqf.io/ImageProcessing/
+https://www.leiphone.com/news/201502/QM7LdSN874dWXFLo.html
 
-这个课题一般使用MIT-Adobe FiveK Dataset作为基准数据集。网址：
-
-http://groups.csail.mit.edu/graphics/fivek_dataset/
-
-这个数据集包含了5K张原始照片，并雇用了5个专业修图师，对每张图片进行修图。
-
-众所周知，多层神经网络只要有足够的深度和宽度，就可以任意逼近任意连续函数。然而从Fast Image Processing的目的来说，神经网络的深度和宽度注定是有限的，否则肯定快不了。而这也是该课题的研究意义所在。
-
-本文只使用了MIT-Adobe数据集中的原始图片，并使用了10种常用的算子对图片进行处理。因此，该网络训练时的输入是原始图片，而输出是处理后的图片。
-
-![](/images/article/MCA.png)
-
-上图是本文模型的网络结构图。它的设计特点如下：
-
-1.采用Multi-Scale Context Aggregation作为基础网络。MCA的内容参见《深度学习（九）》。
-
-2.传统MCA一般有下采样的过程，但这里由于网络输入和输出的尺寸维度是一样的，因此，所有的feature maps都是等大的。
-
-3.借鉴FCN的思想，去掉了池化层和全连接层。
-
-4.L1~L3主要用于图片的特征提取和升维，而L4~L5则用于特征的聚合和降维，并最终和输出数据的尺寸维度相匹配。
-
-在normalization方面，作者发现有的operators经过normalization之后，精度会上升，而有的精度反而会下降，因此为了统一模型，定义如下的normalization运算：
-
-$$\Psi^s(x)=\lambda_sx+\mu_sBN(x)$$
-
-Loss函数为：
-
-$$\mathcal{l(K,B)}=\sum_i\frac{1}{N_i}\|\hat f (I_i;\mathcal{K,B})-f(I_i)\|^2$$
-
-这实际上就是RGB颜色空间的MSE误差。
-
-为了检验模型的泛化能力，本文还使用RAISE数据集作为交叉验证的数据集。该数据集的网址：
-
-http://mmlab.science.unitn.it/RAISE/
-
-RAISE数据集包含了8156张高分辨率原始照片，由3台不同的相机拍摄，并给出了相机的型号和参数。
-
-# 图像描述
-
-https://mp.weixin.qq.com/s/3l4mYVSVfjFS_06j3OvX8g
-
-阿里提出新图像描述框架，解决梯度消失难题
-
-https://mp.weixin.qq.com/s/O1LqJftEezBuuA8JHeqMzw
-
-基于对比学习的Image Captioning
-
-https://mp.weixin.qq.com/s/-K3WIo64_wJb9p6C49Z5fA
-
-基于属性学习和额外知识库的图像描述生成和视觉问答
+带你了解世界最先进的手势识别技术
 
