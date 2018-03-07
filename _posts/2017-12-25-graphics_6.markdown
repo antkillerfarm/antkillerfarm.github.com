@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  图像处理理论（六）——经典目标跟踪算法
+title:  图像处理理论（六）——经典目标跟踪算法, 经典人脸识别算法
 category: graphics 
 ---
 
@@ -49,6 +49,32 @@ http://blog.csdn.net/carson2005/article/details/7647500
 http://www.cnblogs.com/lxy2017/p/3927456.html
 
 TLD（Tracking-Learning-Detection）一种目标跟踪算法
+
+# 经典人脸识别算法
+
+## Eigenface
+
+http://blog.csdn.net/smartempire/article/details/21406005
+
+特征脸方法（Eigenface）
+
+http://www.cnblogs.com/little-monkey/p/8118938.html
+
+人脸识别算法——EigenFace、FisherFace、LBPH
+
+## Local Binary Patterns
+
+http://blog.csdn.net/smartempire/article/details/23249517
+
+LBP方法
+
+## Fisherface
+
+http://blog.csdn.net/smartempire/article/details/23377385
+
+Fisherface（LDA）
+
+## 
 
 # 压缩感知
 

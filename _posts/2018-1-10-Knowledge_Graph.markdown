@@ -208,3 +208,8 @@ https://mp.weixin.qq.com/s/YeSzOw6dRNiX32PmdWgLow
 
 知识图谱在互联网金融行业的应用
 
+http://blog.csdn.net/hadoopdevelop/article/details/79455758
+
+如何系统学习知识图谱-胖子哥的实践经验分享。一个实践派的知识图谱blog
+
+

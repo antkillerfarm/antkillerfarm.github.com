@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十六）——深度推荐系统
+title:  深度学习（三十六）——深度推荐系统, Recursive NN
 category: DL 
 ---
 
@@ -171,3 +171,15 @@ AI研究新利器Etymo，妈妈再也不用担心我找不到论文！
 https://zhuanlan.zhihu.com/p/33956907
 
 阿里-搜索团队智能内容生成实践
+
+# Recursive NN
+
+http://blog.csdn.net/qq_26609915/article/details/52119512
+
+递归神经网络（recursive NN）结合自编码（Autoencode）实现句子建模
+
+http://blog.csdn.net/mengmengz07/article/details/51348554
+
+recursive neural network梳理
+
+

@@ -238,10 +238,6 @@ https://mp.weixin.qq.com/s/ubpRPQ7-1nvY5CzICWi1Cg
 
 似乎没区别，但你混淆过验证集和测试集吗？
 
-https://mp.weixin.qq.com/s/u-6nPrb4r9AS2gtrl5s-FA
-
-LDA(Linear Discriminant Analysis)算法介绍
-
 https://mp.weixin.qq.com/s/lNYKzNU6VcT7orPCotbUdg
 
 用机器学习检测异常点击流
