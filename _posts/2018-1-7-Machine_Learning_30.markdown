@@ -170,7 +170,7 @@ $$V(S_t)\leftarrow V(S_t)+\alpha(G_t^{\pi/\mu}-V(S_t))$$
 
 $$V(S_t)\leftarrow V(S_t)+\alpha\left(\frac{\pi(A_t\mid S_t)}{\mu(A_t\mid S_t)}(R_{t+1}+\gamma V(S_{t+1}))-V(S_t)\right)$$
 
-应用这种思想最好的方法是基于TD(0)的Q-learning。Q-learning的相关内容参见《机器学习（二十六）》。
+应用这种思想最好的方法是基于TD(0)的Q-learning。Q-learning的相关内容参见《机器学习（二十七）》。
 
 ### DP和TD的关系
 

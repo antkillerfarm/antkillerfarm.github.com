@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十五）——Probabilistic Robotics, 推荐算法中的常用排序算法, Linear Discriminant Analysis
+title:  机器学习（三十五）——Probabilistic Robotics, 推荐算法中的常用排序算法
 category: ML 
 ---
 
@@ -139,18 +139,4 @@ https://mp.weixin.qq.com/s/UpN7tAMjbFLSPcDYsWaykg
 https://mp.weixin.qq.com/s/xigME-griWFwEvvPNqWuvg
 
 美团点评联盟广告的场景化定向排序机制
-
-# Linear Discriminant Analysis
-
-https://mp.weixin.qq.com/s/u-6nPrb4r9AS2gtrl5s-FA
-
-LDA(Linear Discriminant Analysis)算法介绍
-
-http://www.cnblogs.com/jerrylead/archive/2011/04/21/2024384.html
-
-线性判别分析（Linear Discriminant Analysis）（一）
-
-http://www.cnblogs.com/jerrylead/archive/2011/04/21/2024389.html
-
-线性判别分析（Linear Discriminant Analysis）（二）
 

@@ -228,4 +228,8 @@ https://mp.weixin.qq.com/s/WfcFiRXBKAMqnDi5KFpIEA
 
 百万级字符：清华大学提出中文自然文本数据集CTW
 
+https://mp.weixin.qq.com/s/hrI0ILAs4Nko_JkqegaANA
+
+LibRec 精选：推荐系统9个必备数据集
+
 

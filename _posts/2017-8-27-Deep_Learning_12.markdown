@@ -246,6 +246,10 @@ $$\begin{align}
 
 CRT虽然只是初等数论的基本定理，但应用范围很广，Lagrange interpolation（一阶多项式插值）、Hermite interpolation（多阶多项式插值）和Dedekind's theorem，都用到了CRT。
 
+在中国古代，CRT问题又被称为“韩信点兵”问题。
+
+>韩信带1500名兵士打仗，战死约四五百人，站3人一排，多出2人；站5人一排，多出4人；站7人一排，多出6人。韩信很快说出人数：1049。
+
 ## 多项式的Euclidean division和GCD
 
 我们可以仿照整数Euclidean division定义多项式的Euclidean division，如下面的竖式所示：

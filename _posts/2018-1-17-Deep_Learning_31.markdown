@@ -76,7 +76,7 @@ Output layer是一个softmax的多分类层，每个分类对应一个transition
 
 1.由1个隐层改为两个隐层。
 
-2.添加Perceptron Layer作为输出层。（Perceptron Layer的含义参见《机器学习（二十三）》中对于Beam Search的解释）
+2.添加Perceptron Layer作为输出层。（Perceptron Layer的含义参见《机器学习（二十五）》中对于Beam Search的解释）
 
 3.全局使用Tri-training算法作为半监督的集成学习算法。（Tri-training算法参见《机器学习（二十二）》）
 

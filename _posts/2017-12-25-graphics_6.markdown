@@ -68,6 +68,14 @@ http://blog.csdn.net/smartempire/article/details/23249517
 
 LBP方法
 
+http://blog.csdn.net/dujian996099665/article/details/8886576
+
+opencv学习之（三）-LBP算法的研究及其实现
+
+https://mp.weixin.qq.com/s/iFlnZ8z5baUdWCZxIGkq5g
+
+机器学习实战——LBP特征提取
+
 ## Fisherface
 
 http://blog.csdn.net/smartempire/article/details/23377385

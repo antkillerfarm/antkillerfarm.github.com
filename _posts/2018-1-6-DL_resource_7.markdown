@@ -334,3 +334,12 @@ https://zhuanlan.zhihu.com/p/34286453
 
 林倞：Beyond Supervised Deep Learning--后深度学习时代的挑战
 
+https://mp.weixin.qq.com/s/5OMT6BvqkUgtshow_tLkNw
+
+精准防御对抗性攻击，清华大学提出对抗正则化训练方法DeepDefense
+
+https://mp.weixin.qq.com/s/giwq3IZs6KSILSyXDn90pA
+
+破解AI大脑黑盒迈出新一步！谷歌现在更懂机器，还开源了研究工具
+
+

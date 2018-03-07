@@ -1,8 +1,92 @@
 ---
 layout: post
-title:  机器学习（三十二）——XGBoost, LightGBM, Parameter Server, LambdaMART, NLP机器翻译常用评价度量
+title:  机器学习（三十二）——t-SNE
 category: ML 
 ---
+
+# t-SNE
+
+## 概述
+
+t-SNE(t-distributed stochastic neighbor embedding)是用于降维的一种机器学习算法，是由Laurens van der Maaten和Geoffrey Hinton在08年提出来。此外，t-SNE 是一种非线性降维算法，非常适用于高维数据降维到2维或者3维，进行可视化。
+
+论文：
+
+《Visualizing Data using t-SNE》
+
+以下是几种常见的降维算法：
+
+1.主成分分析（线性）
+
+2.t-SNE（非参数/非线性）
+
+3.萨蒙映射（非线性）
+
+4.等距映射（非线性）
+
+5.局部线性嵌入（非线性）
+
+6.规范相关分析（非线性）
+
+7.SNE（非线性）
+
+8.最小方差无偏估计（非线性）
+
+9.拉普拉斯特征图（非线性）
+
+PCA的相关内容参见《机器学习（十六）》。
+
+## SNE
+
+在介绍t-SNE之前，我们首先介绍一下SNE（Stochastic Neighbor Embedding）的原理。
+
+假设我们有数据集X，它共有N个数据点。每一个数据点$$x_i$$的维度为D，我们希望降低为d维。在一般用于可视化的条件下，d的取值为 2，即在平面上表示出所有数据。
+
+SNE将数据点间的欧几里德距离转化为条件概率来表征相似性：
+
+$$p_{j\mid i}=\frac{\exp(-\|x_i-x_j\|^2/2\sigma^2)}{\sum_{k\neq i}\exp(-\|x_i-x_k\|^2/2\sigma^2)}$$
+
+如果以数据点在$$x_i$$为中心的高斯分布所占的概率密度为标准选择近邻，那么$$p_{j\mid i}$$就代表$$x_i$$将选择$$x_j$$作为它的近邻。对于相近的数据点，条件概率$$p_{j\mid i}$$是相对较高的，然而对于分离的数据点，$$p_{j\mid i}$$几乎是无穷小量（若高斯分布的方差$$\sigma_i$$选择合理）。
+
+现在引入矩阵Y，Y是N*2阶矩阵，即输入矩阵X的2维表征。基于矩阵Y，我们可以构建一个分布q，其形式与p类似。
+
+对于高维数据点$$x_i$$和$$x_j$$在低维空间中的映射点$$y_i$$和$$y_j$$，计算一个相似的条件概率$$q_{j\mid i}$$是可以实现的。我们将计算条件概率$$q_{i\mid j}$$中用到的高斯分布的方差设置为1/2。因此我们可以对映射的低维数据点$$y_j$$和$$y_i$$之间的相似度进行建模：
+
+$$q_{j\mid i}=\frac{\exp(-\|y_i-y_j\|^2)}{\sum_{k\neq i}\exp(-\|y_i-y_k\|^2)}$$
+
+我们的总体目标是选择Y中的一个数据点，然后其令条件概率分布q近似于p。这一步可以通过最小化两个分布之间的KL散度而实现，这一过程可以定义为：
+
+$$C = \sum_i KL(P_i  \|  Q_i) = \sum_i \sum_j p_{j \mid i} \log \frac{p_{j \mid i}}{q_{j \mid i}}$$
+
+这里的$$P_i$$表示了给定点$$x_i$$下，其他所有数据点的条件概率分布。需要注意的是**KL散度具有不对称性**，在低维映射中不同的距离对应的惩罚权重是不同的，具体来说：距离较远的两个点来表达距离较近的两个点会产生更大的cost，相反，用较近的两个点来表达较远的两个点产生的cost相对较小(注意：类似于回归容易受异常值影响，但效果相反)。即用较小的$$q_{j\mid i}=0.2$$来建模较大的$$p_{j\mid i}=0.8$$，$$cost=p\log(p/q)=1.11$$,同样用较大的$$q_{j\mid i}=0.8$$来建模较小的$$p_{j\mid i}=0.2$$,$$cost=-0.277$$。因此，**SNE会倾向于保留数据中的局部特征**。
+
+## 如何确定$$\sigma$$
+
+下面介绍一下SNE的超参$$\sigma$$的确定方法。
+
+首先，不同的点具有不同的$$\sigma_i$$，$$P_i$$的熵(entropy)会随着$$\sigma_i$$的增加而增加。SNE使用困惑度(perplexity)的概念，用二分搜索的方式来寻找一个最佳的$$\sigma$$。其中困惑度指:
+
+$$Perp(P_i) = 2^{H(P_i)}$$
+
+这里的$${H(P_i)}$$是$$P_i$$的熵，即:
+
+$$H(P_i) = -\sum_j p_{j \mid i} \log_2 p_{j \mid i}$$
+
+困惑度可以解释为一个点附近的有效近邻点个数。SNE对困惑度的调整比较有鲁棒性，通常选择5-50之间。
+
+在初始优化的阶段，每次迭代中可以引入一些高斯噪声，之后像模拟退火一样逐渐减小该噪声，可以用来避免陷入局部最优解。因此，SNE在选择高斯噪声，以及学习速率，什么时候开始衰减，动量选择等等超参数上，需要跑多次优化才可以。
+
+## Symmetric SNE
+
+优化$$p_{i \mid j}$$和$$q_{i \mid j}$$的KL散度的一种替换思路是，使用联合概率分布来替换条件概率分布，即P是高维空间里各个点的联合概率分布，Q是低维空间下的，目标函数为:
+
+$$C = KL(P \mid  \mid Q) = \sum_i \sum_j p_{i,j} \log \frac{p_{ij}}{q_{ij}}$$
+
+如果我们假设对于任意i，有$$p_{ij} = p_{ji}, q_{ij} = q_{ji}$$，则概率分布可以改写为:
+
+$$p_{ij} = \frac{\exp(- \mid  \mid x_i - x_j \mid  \mid ^2 / 2\sigma^2)}{\sum_{k \neq l} \exp(- \mid  \mid x_k-x_l \mid  \mid ^2 / 2\sigma^2)}  \ \ \ \  q_{ij} = \frac{\exp(- \mid  \mid y_i - y_j \mid  \mid ^2)}{\sum_{k \neq l} \exp(- \mid  \mid y_k-y_l \mid  \mid ^2)}$$
+
+我们将这种SNE称之为symmetric SNE(对称SNE)。
 
 ## t-SNE
 
@@ -64,224 +148,3 @@ https://yq.aliyun.com/articles/70733
 
 比PCA降维更高级——（R/Python）t-SNE聚类算法实践指南
 
-# XGBoost
-
-XGBoost是陈天奇于2014年提出的一套并行boost算法的工具库。
-
->注：陈天奇，华盛顿大学计算机系博士生，研究方向为大规模机器学习。上海交通大学本科（2006～2010）和硕士（2010～2013）。   
->http://homes.cs.washington.edu/~tqchen/
-
-论文：
-
-《XGBoost: A Scalable Tree Boosting System》
-
-参考文献中的部分结论非常精彩，摘录如下。
-
-从算法实现的角度，把握一个机器学习算法的关键点有两个，一个是loss function的理解(包括对特征X/标签Y配对的建模，以及基于X/Y配对建模的loss function的设计，前者应用于inference，后者应用于training，而前者又是后者的组成部分)，另一个是对求解过程的把握。这两个点串接在一起构成了算法实现的主框架。
-
-GBDT的求解算法，具体到每颗树来说，其实就是不断地寻找分割点(split point)，将样本集进行分割，初始情况下，所有样本都处于一个结点（即根结点），随着树的分裂过程的展开，样本会分配到分裂开的子结点上。分割点的选择通过枚举训练样本集上的特征值来完成，分割点的选择依据则是减少Loss。
-
-XGBoost的步骤：
-
-I. 对loss function进行二阶Taylor Expansion，展开以后的形式里，当前待学习的Tree是变量，需要进行优化求解。
-
-II. Tree的优化过程，包括两个环节：
-
-I). 枚举每个叶结点上的特征潜在的分裂点
-
-II). 对每个潜在的分裂点，计算如果以这个分裂点对叶结点进行分割以后，分割前和分割后的loss function的变化情况。
-
-因为Loss Function满足累积性(对MLE取log的好处)，并且每个叶结点对应的weight的求取是独立于其他叶结点的（只跟落在这个叶结点上的样本有关），所以，不同叶结点上的loss function满足单调累加性，只要保证每个叶结点上的样本累积loss function最小化，整体样本集的loss function也就最小化了。
-
-**可见，XGBoost算法之所以能够并行，其要害在于其中枚举分裂点的计算，是能够分布式并行计算的。**
-
-官网：
-
-https://xgboost.readthedocs.io/en/latest/
-
-GitHub：
-
-https://github.com/dmlc/xgboost
-
-中文文档：
-
-http://xgboost.apachecn.org/cn/latest/
-
-编译：
-
-{% highlight java %}
-git clone --recursive https://github.com/dmlc/xgboost
-cd xgboost; make -j4
-{% endhighlight %}
-
-python安装：
-
-`cd python-package; sudo python setup.py install`
-
-XGBoost提供了两种接口：普通接口和sklearn接口。后者的示例如下：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/hello/decision_tree.py
-
-## 参考
-
-https://www.zhihu.com/question/41354392
-
-机器学习算法中GBDT和XGBOOST的区别有哪些？
-
-http://blog.csdn.net/sb19931201/article/details/52577592
-
-xgboost入门与实战
-
-https://mp.weixin.qq.com/s/x06axCC1ZTgezqEYjjNIsw
-
-Xgboost初见面
-
-https://mp.weixin.qq.com/s/f3QVbJiC6gLEptKwFZ-7ZQ
-
-竞赛大杀器XGBoost，你还可以这样玩
-
-http://blog.csdn.net/u013709270/article/details/78156207
-
-Python机器学习实战之手撕XGBoost
-
-https://mp.weixin.qq.com/s/xHVkc1NP2oodU7Hb0Xb_jA
-
-为什么XGBoost在机器学习竞赛中表现如此卓越？
-
-https://mp.weixin.qq.com/s/pn_qn6uRz2-9DmAK4sp35g
-
-史上最详细的XGBoost实战（上）
-
-https://mp.weixin.qq.com/s/xzZvIX0QaCPNSyGfHT3beQ
-
-史上最详细的XGBoost实战（下）
-
-https://mp.weixin.qq.com/s/T3NgIuGZIvmPSMNFyQeeGw
-
-XGBoost原理解析
-
-https://mp.weixin.qq.com/s/JYPnzgzBMSGx09ltBtfwqg
-
-理解XGBoost机器学习模型的决策过程
-
-http://www.cnblogs.com/qcloud1001/p/7542128.html
-
-小巧玲珑：机器学习届快刀XGBoost的介绍和使用
-
-https://mp.weixin.qq.com/s/__ESveAdBS9KJf26R3EMVA
-
-对比TensorFlow提升树与XGBoost：我们该使用怎样的梯度提升方法
-
-# LightGBM
-
-LightGBM是微软推出的boosting框架。
-
-代码：
-
-https://github.com/Microsoft/LightGBM
-
-文档：
-
-https://lightgbm.readthedocs.io/en/latest/
-
-参考：
-
-http://www.msra.cn/zh-cn/news/features/lightgbm-20170105
-
-微软亚洲研究院：LightGBM介绍
-
-https://zhuanlan.zhihu.com/p/25308051
-
-比XGBOOST更快--LightGBM介绍
-
-https://www.zhihu.com/question/51644470
-
-如何看待微软新开源的LightGBM?
-
-http://www.cnblogs.com/rocketfan/p/6005353.html
-
-LightGBM中GBDT的实现
-
-https://zhuanlan.zhihu.com/p/28768447
-
-一个例子读懂LightGBM的模型文件
-
-https://zhuanlan.zhihu.com/p/27916208
-
-LightGBM调参指南(带贝叶斯优化代码)
-
-# CatBoost
-
-这是Yandex推出的Boost工具包。
-
-官网：
-
-https://catboost.yandex/
-
-论文：
-
-《Fighting biases with dynamic boosting》
-
-代码：
-
-https://github.com/catboost/catboost
-
-官方还提供了一个可视化工具：
-
-https://github.com/catboost/catboost-viewer
-
-参考：
-
-https://mp.weixin.qq.com/s/TAminQXid3qq5b8qkeN1rA
-
-ClickHouse如何结合自家的GNDT算法库CatBoost来做机器学习
-
-# Parameter Server
-
-https://www.zhihu.com/question/26998075
-
-最近比较火的parameter server是什么？
-
-http://blog.csdn.net/cyh_24/article/details/50545780
-
-Parameter Server详解
-
-# LambdaMART
-
-https://www.zhihu.com/question/41418093
-
-求解LambdaMART的疑惑？
-
-https://liam0205.me/2016/07/10/a-not-so-simple-introduction-to-lambdamart/
-
-LambdaMART不太简短之介绍
-
-http://blog.csdn.net/huagong_adu/article/details/40710305
-
-Learning To Rank之LambdaMART的前世今生
-
-# NLP机器翻译常用评价度量
-
-机器翻译的评价指标主要有：BLEU、NIST、Rouge、METEOR等。
-
-参考：
-
-http://blog.csdn.net/joshuaxx316/article/details/58696552
-
-BLEU，ROUGE，METEOR，ROUGE-浅述自然语言处理机器翻译常用评价度量
-
-http://blog.csdn.net/guolindonggld/article/details/56966200
-
-机器翻译评价指标之BLEU
-
-http://blog.csdn.net/han_xiaoyang/article/details/10118517
-
-机器翻译评估标准介绍和计算方法
-
-http://blog.csdn.net/lcj369387335/article/details/69845385
-
-自动文档摘要评价方法---Edmundson和ROUGE
-
-https://mp.weixin.qq.com/s/XiZ6Uc5cHZjczn-qoupQnA
-
-对话系统评价方法综述

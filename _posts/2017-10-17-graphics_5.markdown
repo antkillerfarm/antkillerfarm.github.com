@@ -262,16 +262,6 @@ ILSVRC 2010的冠军是NEC和UIUC的联合队伍。这也是DL于2012年大放�
 
 上图是NEC算法的基本流程图。这里不打算描述整个算法，而仅对其中涉及的术语做一个解释。
 
-## LBP
-
-http://blog.csdn.net/dujian996099665/article/details/8886576
-
-opencv学习之（三）-LBP算法的研究及其实现
-
-https://mp.weixin.qq.com/s/iFlnZ8z5baUdWCZxIGkq5g
-
-机器学习实战——LBP特征提取
-
 # 经典目标跟踪算法
 
 camshift、meanshift、Kalman filter、particle filter、Optical flow、TLD、KCF、Struck

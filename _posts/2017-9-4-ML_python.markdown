@@ -212,6 +212,10 @@ http://pandas.pydata.org/pandas-docs/stable/comparison_with_sql.html
 
 Pandas和SQL的比较
 
+https://mp.weixin.qq.com/s/XIQ5EpQcYLxmRBuaTCZFzg
+
+一行代码，Pandas秒变分布式，快速处理TB级数据
+
 ## mysql
 
 http://www.runoob.com/python/python-mysql.html
@@ -344,6 +348,24 @@ LibROSA是一个分析音乐和语音的库。
 
 http://librosa.github.io/
 
+## PIL
+
+PIL：Python Imaging Library，已经是Python平台事实上的图像处理标准库了。PIL功能非常强大，但API却非常简单易用。
+
+官网：
+
+http://pythonware.com/products/pil/
+
+安装：
+
+`sudo apt install python-imaging`
+
+参考：
+
+https://mp.weixin.qq.com/s/lJYzxehwo3K2APB2l_WeTA
+
+用Python做图像处理
+
 ## 参考
 
 https://mp.weixin.qq.com/s/S7gnAdekPFcyd4ni1m9phg
@@ -445,41 +467,4 @@ https://mp.weixin.qq.com/s/Xl9ZT7_I8P_ZU4O8j6bS5Q
 https://mp.weixin.qq.com/s/tN7KVBA9GqdjpAjW-_WF8Q
 
 Python学习者最易上手的机器学习漫游指南
-
-https://mp.weixin.qq.com/s/MmuxNA8Xm6uRiVNGhDnyFw
-
-Scikit-learn实战之数据预处理
-
-https://mp.weixin.qq.com/s/V1EVdhX6-c1VNGNBgscFeA
-
-用Python统计新浪微博各种表情使用频率
-
-https://mp.weixin.qq.com/s/UOJsoB_YwBunj0YNShF11w
-
-深度学习 + OpenCV，Python实现实时视频目标检测
-
-https://mp.weixin.qq.com/s/YCNnfR9XAP0i-Qs-DIpOCg
-
-6段Python代码刻画深度学习历史：从最小二乘法到深度神经网络
-
-https://mp.weixin.qq.com/s/a7TLJD1-k3AlJ_ENPoJpwA
-
-用Python分析《红楼梦》，后四十回是曹雪芹所写吗？
-
-https://mp.weixin.qq.com/s/MUMQuZLDE5iyogLnIIBaMw
-
-7步让你从零开始掌握Python机器学习！
-
-http://mp.weixin.qq.com/s/5vI1Ii6bd_IzrXKHlvULSQ
-
-是学习Java还是Python？一张图告诉你！
-
-http://mp.weixin.qq.com/s/Ergq5KKM5vWLWirTf9loEw
-
-7步让你从零开始掌握Python机器学习！
-
-https://mp.weixin.qq.com/s/Ty46-s0kvr2MpbUhQPXJfQ
-
-朴素贝叶斯实战篇之新浪新闻分类
-
 

@@ -118,6 +118,14 @@ https://mp.weixin.qq.com/s/GccST3xJ1QRIVM7cFgsn3A
 
 Apollo 2.0 软硬件框架初探（二）
 
+https://mp.weixin.qq.com/s/3i8mJn4OPjt-KV1fp8bZQQ
+
+Apollo Planning模块源代码分析（上）
+
+https://mp.weixin.qq.com/s/DfdMDOQMncTau-9zGq9CYw
+
+Apollo Planning模块源代码分析（下）
+
 ## 文章
 
 http://blog.exbot.net/

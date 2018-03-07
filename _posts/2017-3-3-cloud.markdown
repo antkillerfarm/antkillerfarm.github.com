@@ -229,3 +229,9 @@ https://mp.weixin.qq.com/s/8ZEUNIXHu7iF1hHk7e0gdw
 
 Spark机器学习的加速器：Spark on Angel
 
+https://mp.weixin.qq.com/s/KPTM02-ICt72_7ZdRZIHBA
+
+苏宁基于Spark Streaming的实时日志分析系统实践
+
+
+
