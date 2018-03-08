@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十六）——深度推荐系统, Recursive NN
+title:  深度学习（三十六）——深度推荐系统, Recursive NN, Spatial Transformer Networks, SOM
 category: DL 
 ---
 
@@ -182,4 +182,37 @@ http://blog.csdn.net/mengmengz07/article/details/51348554
 
 recursive neural network梳理
 
+# Spatial Transformer Networks
+
+论文：
+
+《Spatial Transformer Networks》
+
+参考：
+
+http://www.cnblogs.com/neopenx/p/4851806.html
+
+Spatial Transformer Networks(空间变换神经网络)
+
+http://blog.csdn.net/shaoxiaohu1/article/details/51809605
+
+论文笔记：Spatial Transformer Networks
+
+http://blog.csdn.net/shaoxiaohu1/article/details/51809605
+
+Spatial Transformer Networks
+
+https://mp.weixin.qq.com/s/ciqQMezcB-oM24X8eQqTNg
+
+花式玩耍Spatial Transformation Networks
+
+# SOM
+
+http://www.cnblogs.com/sylvanas2012/p/5117056.html
+
+Self Organizing Maps (SOM): 一种基于神经网络的聚类算法
+
+http://blog.csdn.net/Loyal2M/article/details/11225987
+
+聚类算法实践（3）——PCCA、SOM、Affinity Propagation
 

@@ -1,10 +1,36 @@
 ---
 layout: post
-title:  深度学习（九）——GAN（2）, Spatial Transformer Networks, SOM
+title:  深度学习（九）——GAN
 category: DL 
 ---
 
 # GAN（续）
+
+## 伪造者
+
+伪造者在这里实际上是一种Generative算法。伪造的内容是：**将随机噪声映射为我们所希望的正样本**。
+
+随机噪声我们一般定义为**均匀分布**，于是上面的问题可以转化为：**如何将均匀分布X映射为正样本分布Y**。
+
+首先，我们思考一个简单的问题：如何将$$U[0,1]$$映射为$$N(0,1)$$？
+
+理论上的做法是：将$$X∼U[0,1]$$经过函数$$Y=f(X)$$映射之后，就有$$Y∼N(0,1)$$了。设$$\rho(x)$$是$$U[0,1]$$是概率密度函数，那么$$[x,x+dx]$$和$$[y,y+dy]$$这两个区间的概率应该相等，而根据概率密度定义，$$\rho(x)$$不是概率，$$\rho(x)dx$$才是概率，因此有：
+
+$$\rho(x)dx=\frac{1}{\sqrt{2\pi}}\exp\left(-\frac{y^2}{2}\right)dy$$
+
+即：
+
+$$\int_{0}^x \rho(t)dt=\int_{-\infty}^{y}\frac{1}{\sqrt{2\pi}}\exp\left(-\frac{t^2}{2}\right)dt=\Phi(y)$$
+
+其中，$$\Phi(y)$$是标准正态分布的累积分布函数，所以
+
+$$y=\Phi^{-1}\left(\int_0^x \rho(t)dt\right)$$
+
+注意到累积分布函数是无法用初等函数显式表示出来的，更不用说它的逆函数了。说白了，$$Y=f(X)$$的f的确是存在的，但很复杂，以上解只是一个记号，该算的还是要用计算机算。
+
+正态分布是常见的、相对简单的分布，但这个映射已经这么复杂了。如果换了任意分布，甚至概率密度函数都不能显式写出来，那么复杂度可想而知～
+
+考虑到我们**总可以用一个神经网络来拟合任意函数**。这里不妨用一个带有多个参数的神经网络$$G(X,\theta)$$去拟合f？只要把参数$$\theta$$训练好，就可以认为$$Y=G(X,\theta)$$了。这里的G是**Generator**的意思。
 
 ## 正样本分布
 
@@ -250,87 +276,4 @@ GAN货：生成对抗网络知识资料全集
 https://mp.weixin.qq.com/s/-j4p7nUF-rCGk6yK0nccvw
 
 机器人也会画漫画
-
-https://mp.weixin.qq.com/s/ouLWl623r_YaZdIdpqSWcw
-
-深度卷积对抗生成网络(DCGAN)实战
-
-https://mp.weixin.qq.com/s/PkZ069S8ysY_JCQx1nzfGg
-
-NVIDIA新作解读：用GAN生成前所未有的高清图像（附PyTorch复现）
-
-https://mp.weixin.qq.com/s/cI4xZOw6eL0w9sz9Q2mSCw
-
-Ian Goodfellow盛赞：一个GAN生成ImageNet全部1000类物体
-
-https://mp.weixin.qq.com/s/LHCEh4BPZ_qbSKaar19nNg
-
-十种主流GANs，我该如何选择？
-
-https://mp.weixin.qq.com/s/RAlQVWMBYeddG2Mvu2bF4w
-
-生成对抗网络（GANs）最新家谱：为你揭秘GANs的前世今生
-
-https://mp.weixin.qq.com/s/uJlgx9Bq-XI49l8wwmdIsw
-
-用GAN让晴天下大雨，小猫变狮子，黑夜转白天
-
-https://mp.weixin.qq.com/s/hjsFBVE3_IiKTZSesa44ug
-
-GAN系列学习(1)——前生今世
-
-https://mp.weixin.qq.com/s/JRyQ5vp_zDwcG3X15e32Gw
-
-GAN系列学习(2)——前生今世
-
-https://mp.weixin.qq.com/s/Q_1IUS-65ZAFt9w0RlZUpw
-
-谷歌开源TFGAN：轻量级生成对抗网络工具库
-
-https://mp.weixin.qq.com/s/BCA7MmYnivuGbwyjHqDQUw
-
-手把手教你实现GAN半监督学习
-
-https://mp.weixin.qq.com/s/FL63vEAhp8mElI5RFxnbSQ
-
-GAN开山之作及最新综述
-
-https://mp.weixin.qq.com/s/A66WeHH77IOCv61RHiDE0w
-
-生成式对抗网络（GAN）如何快速理解？这里有一篇最直观的解读
-
-# Spatial Transformer Networks
-
-论文：
-
-《Spatial Transformer Networks》
-
-参考：
-
-http://www.cnblogs.com/neopenx/p/4851806.html
-
-Spatial Transformer Networks(空间变换神经网络)
-
-http://blog.csdn.net/shaoxiaohu1/article/details/51809605
-
-论文笔记：Spatial Transformer Networks
-
-http://blog.csdn.net/shaoxiaohu1/article/details/51809605
-
-Spatial Transformer Networks
-
-https://mp.weixin.qq.com/s/ciqQMezcB-oM24X8eQqTNg
-
-花式玩耍Spatial Transformation Networks
-
-# SOM
-
-http://www.cnblogs.com/sylvanas2012/p/5117056.html
-
-Self Organizing Maps (SOM): 一种基于神经网络的聚类算法
-
-http://blog.csdn.net/Loyal2M/article/details/11225987
-
-聚类算法实践（3）——PCCA、SOM、Affinity Propagation
-
 

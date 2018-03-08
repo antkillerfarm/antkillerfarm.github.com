@@ -111,3 +111,9 @@ AI插画师：如何用基于PyTorch的生成对抗网络生成动漫头像？
 https://mp.weixin.qq.com/s/xHXsMxMTdnCWkuwzHs_7Cg
 
 深度学习实验流程及PyTorch提供的解决方案
+
+https://mp.weixin.qq.com/s/HPRUQSsUdk3rXBBl_GpFMw
+
+对抗自编码器PyTorch手把手实战系列——PyTorch实现自编码器
+
+

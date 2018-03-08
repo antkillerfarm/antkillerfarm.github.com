@@ -4,7 +4,27 @@ title:  图像处理理论（五）——ISP, 从BOW到SPM, ILSVRC 2010考古
 category: graphics 
 ---
 
-# SIFT（续）
+# SIFT
+
+## 关键点特征描述（续）
+
+表示步骤如下：
+
+1.确定计算描述子所需的图像区域。
+
+特征描述子与特征点所在的尺度有关，因此，对梯度的求取应在特征点对应的高斯图像上进行。将关键点附近的邻域划分为d * d(Lowe建议d=4)个子区域，每个子区域做为一个种子点，每个种子点有8个方向。
+
+2.将坐标轴旋转为关键点的方向，以确保旋转不变性。
+
+3.将邻域内的采样点分配到对应的子区域内，将子区域内的梯度值分配到8个方向上，计算其权值。
+
+4.插值计算每个种子点八个方向的梯度。
+
+5.如上统计的4x4x8=128个梯度信息即为该关键点的特征向量。特征向量形成后，为了去除光照变化的影响，需要对它们进行归一化处理，对于图像灰度值整体漂移，图像各点的梯度是邻域像素相减得到，所以也能去除。
+
+6.描述子向量门限。非线性光照，相机饱和度变化对造成某些方向的梯度值过大，而对方向的影响微弱。因此设置门限值(向量归一化后，一般取0.2)截断较大的梯度值。然后，再进行一次归一化处理，提高特征的鉴别性。
+
+7.按特征点的尺度对特征描述向量进行排序。
 
 ## 总结
 
@@ -261,71 +281,4 @@ ILSVRC 2010的冠军是NEC和UIUC的联合队伍。这也是DL于2012年大放�
 ![](/images/article/ILSVRC_2010.png)
 
 上图是NEC算法的基本流程图。这里不打算描述整个算法，而仅对其中涉及的术语做一个解释。
-
-# 经典目标跟踪算法
-
-camshift、meanshift、Kalman filter、particle filter、Optical flow、TLD、KCF、Struck
-
-## Meanshift
-
-参考：
-
-http://www.cnblogs.com/liqizhou/archive/2012/05/12/2497220.html
-
-Meanshift，聚类算法
-
-https://wenku.baidu.com/view/0d9eb876a417866fb84a8eb2.html
-
-mean-shift算法概述
-
-http://www.cnblogs.com/cfantaisie/archive/2011/06/10/2077188.html
-
-meanshift聚类
-
-## Camshift
-
-参考：
-
-http://blog.sina.com.cn/s/blog_5d1476580101a57j.html
-
-Camshift算法
-
-http://blog.163.com/thomaskjh@126/blog/static/370829982010113133152722/
-
-CAMSHIFT原理
-
-https://wenku.baidu.com/view/59596ac42cc58bd63186bd37.html
-
-Camshift算法原理
-
-## Optical flow
-
-http://www.cnblogs.com/walccott/p/4956858.html
-
-Horn-Schunck光流法
-
-http://blog.csdn.net/u014568921/article/details/46638557
-
-目标跟踪之Lukas-Kanade光流法
-
-http://blog.csdn.net/zouxy09/article/details/8683859
-
-光流Optical Flow介绍与OpenCV实现
-
-http://www.cnblogs.com/gnuhpc/archive/2012/12/04/2802124.html
-
-Lucas–Kanade光流算法
-
-http://www.cnblogs.com/dzyBK/p/5096860.html
-
-光流算法：Brox算法
-
-http://www.cnblogs.com/quarryman/p/optical_flow.html
-
-图像分析之光流之经典
-
-https://zhuanlan.zhihu.com/p/31726032
-
-走进光流的世界
-
 

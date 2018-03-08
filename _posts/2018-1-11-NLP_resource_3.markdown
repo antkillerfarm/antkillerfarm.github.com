@@ -253,3 +253,10 @@ http://www.matrix67.com/blog/archives/4212
 https://github.com/brightmart/text_classification
 
 一个文本分类的代码库
+
+https://mp.weixin.qq.com/s/NcUHJ89DPVdB7cJttsh-xw
+
+基于神经网络的知识推理
+
+
+

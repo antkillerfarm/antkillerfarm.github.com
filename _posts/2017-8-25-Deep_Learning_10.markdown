@@ -4,6 +4,58 @@ title:  深度学习（十）——fine-tuning, 李飞飞, 花式卷积
 category: DL 
 ---
 
+# GAN
+
+## 参考（续）
+
+https://mp.weixin.qq.com/s/ouLWl623r_YaZdIdpqSWcw
+
+深度卷积对抗生成网络(DCGAN)实战
+
+https://mp.weixin.qq.com/s/PkZ069S8ysY_JCQx1nzfGg
+
+NVIDIA新作解读：用GAN生成前所未有的高清图像（附PyTorch复现）
+
+https://mp.weixin.qq.com/s/cI4xZOw6eL0w9sz9Q2mSCw
+
+Ian Goodfellow盛赞：一个GAN生成ImageNet全部1000类物体
+
+https://mp.weixin.qq.com/s/LHCEh4BPZ_qbSKaar19nNg
+
+十种主流GANs，我该如何选择？
+
+https://mp.weixin.qq.com/s/RAlQVWMBYeddG2Mvu2bF4w
+
+生成对抗网络（GANs）最新家谱：为你揭秘GANs的前世今生
+
+https://mp.weixin.qq.com/s/uJlgx9Bq-XI49l8wwmdIsw
+
+用GAN让晴天下大雨，小猫变狮子，黑夜转白天
+
+https://mp.weixin.qq.com/s/hjsFBVE3_IiKTZSesa44ug
+
+GAN系列学习(1)——前生今世
+
+https://mp.weixin.qq.com/s/JRyQ5vp_zDwcG3X15e32Gw
+
+GAN系列学习(2)——前生今世
+
+https://mp.weixin.qq.com/s/Q_1IUS-65ZAFt9w0RlZUpw
+
+谷歌开源TFGAN：轻量级生成对抗网络工具库
+
+https://mp.weixin.qq.com/s/BCA7MmYnivuGbwyjHqDQUw
+
+手把手教你实现GAN半监督学习
+
+https://mp.weixin.qq.com/s/FL63vEAhp8mElI5RFxnbSQ
+
+GAN开山之作及最新综述
+
+https://mp.weixin.qq.com/s/A66WeHH77IOCv61RHiDE0w
+
+生成式对抗网络（GAN）如何快速理解？这里有一篇最直观的解读
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
