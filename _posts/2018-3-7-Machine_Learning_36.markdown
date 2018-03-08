@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十七）——XGBoost, LightGBM, Parameter Server, LambdaMART, NLP机器翻译常用评价度量
+title:  机器学习（三十六）——XGBoost, LightGBM, Parameter Server, LambdaMART, NLP机器翻译常用评价度量
 category: ML 
 ---
 

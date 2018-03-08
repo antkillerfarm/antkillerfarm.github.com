@@ -215,14 +215,6 @@ https://mp.weixin.qq.com/s/tLcF7_jjl3_FmjM7L1kcfw
 
 一文详解高斯混合模型原理
 
-https://mp.weixin.qq.com/s/_5A3DuVyN6aE9n5OEc19kA
-
-数据科学家必须了解的六大聚类算法：带你发现数据之美
-
-https://mp.weixin.qq.com/s/pDiZt4ydWw-4cYeE4gpjiw
-
-数据科学家需要了解的5大聚类算法
-
 # EM算法
 
 本节将进一步讨论EM算法的性质，并将之应用到使用latent random variables的一大类估计问题中。

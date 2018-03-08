@@ -82,7 +82,23 @@ http://blog.csdn.net/smartempire/article/details/23377385
 
 Fisherface（LDA）
 
-## 
+## Viola-Jones
+
+>Paul Viola，MIT本科（1988）+博士（1995）。先后在微软、Amazon担任研究员。
+
+>Michael Jones，MIT博士（1997）。现为Mitsubishi electric research laboratories研究员。
+
+https://www.jianshu.com/p/024ad859c8de
+
+人脸检测的Viola-Jones方法
+
+http://c.blog.sina.com.cn/profile.php?blogid=ab0aa22c890006v0
+
+从Viola&Jones的人脸检测说起
+
+http://www.cnblogs.com/hrlnw/archive/2013/10/23/3374707.html
+
+Viola Jones Face Detector
 
 # 压缩感知
 
@@ -141,6 +157,18 @@ https://mp.weixin.qq.com/s/ORLOOhufrInyPdS6fbywOw
 https://mp.weixin.qq.com/s/Vi4Yb8TOJydj9yL078iNHw
 
 BIRCH层次聚类详解
+
+https://mp.weixin.qq.com/s/_5A3DuVyN6aE9n5OEc19kA
+
+数据科学家必须了解的六大聚类算法：带你发现数据之美
+
+https://mp.weixin.qq.com/s/pDiZt4ydWw-4cYeE4gpjiw
+
+数据科学家需要了解的5大聚类算法
+
+https://www.zhihu.com/question/34554321
+
+用于数据挖掘的聚类算法有哪些，各有何优势？
 
 # 可视化
 

@@ -1,10 +1,92 @@
 ---
 layout: post
-title:  深度学习（七）——Attention, seq2seq, DMN, CNN进化史
+title:  深度学习（七）——seq2seq, Attention, DMN, CNN进化史
 category: DL 
 ---
 
+# seq2seq
+
+seq2seq最早用于Neural Machine Translation领域（与之相对应的有Statistical Machine Translation）。训练后的seq2seq模型，可以根据输入语句，自动生成翻译后的输出语句。
+
+![](/images/article/seq2seq.png)
+
+上图是seq2seq的结构图。可以看出seq2seq实际上是一种Encoder-Decoder结构。
+
+在Encoder阶段，RNN依次读入输入序列。但由于这时，没有输出序列与之对应，因此这仅仅相当于一个对隐层的编码过程，即将句子的语义编码为隐层的状态向量。
+
+从中发现一个问题：状态向量的维数决定了存储的语义的内容上限（显然不能指望，一个200维的向量，能够表示一部百科全书。）因此，seq2seq通常只用于短文本的翻译。
+
+在Decoder阶段，我们根据输出序列，反向修正RNN的参数，以达到训练神经网络的目的。
+
+参考：
+
+https://github.com/ematvey/tensorflow-seq2seq-tutorials
+
+一步步的seq2seq教程
+
+http://blog.csdn.net/sunlylorn/article/details/50607376
+
+seq2seq模型
+
+http://datartisan.com/article/detail/120.html
+
+Seq2Seq的DIY简介
+
+http://www.cnblogs.com/Determined22/p/6650373.html
+
+DL4NLP——seq2seq+attention机制的应用：文档自动摘要（Automatic Text Summarization）
+
+https://mp.weixin.qq.com/s/m-Z0UBgmFQ4CE0yLKYoHZw
+
+seq2seq和attention如何应用到文档自动摘要
+
+http://blog.csdn.net/young_gy/article/details/73412285
+
+基于RNN的语言模型与机器翻译NMT
+
+http://karpathy.github.io/2015/05/21/rnn-effectiveness/
+
+The Unreasonable Effectiveness of Recurrent Neural Networks
+
+https://mp.weixin.qq.com/s/8u3v9XzECkwcNn5Ay-kYQQ
+
+基于Depthwise Separable Convolutions的Seq2Seq模型_SliceNet原理解析
+
+https://mp.weixin.qq.com/s/H6eYxS7rXGDH_B8Znrxqsg
+
+seq2seq中的beam search算法过程
+
+https://mp.weixin.qq.com/s/U1yHIc5Zq0yKCezRm185VA
+
+Attentive Sequence to Sequence Networks
+
+https://mp.weixin.qq.com/s/cGXANj7BB2ktTdPAL4ZEWA
+
+图解神经网络机器翻译原理：LSTM、seq2seq到Zero-Shot
+
+https://mp.weixin.qq.com/s/jYUAKyTpm69J6Q34A06E-w
+
+百度提出冷聚变方法：使用语言模型训练Seq2Seq模型
+
+https://mp.weixin.qq.com/s/Fp6G1aI_utDd_kTbdHvEVQ
+
+完全基于卷积神经网络的seq2seq
+
+http://localhost:4500/theory/2017/06/21/Deep_Learning_6.html
+
+从2017年顶会论文看Attention Model
+
+https://mp.weixin.qq.com/s/Op_oYiNvaTXvsvAnl8Heew
+
+基于Self-attention的文本向量表示方法，悉尼科技大学和华盛顿大学最新工作
+
+https://mp.weixin.qq.com/s/fBrt4g_Kjmt1tGVZw5KgrQ
+
+从LSTM到Seq2Seq
+
 # Attention
+
+众所周知，RNN在处理长距离依赖关系时会出现问题。理论上，LSTM这类结构能够处理这个问题，但在实践中，长距离依赖关系仍旧是个问题。例如，研究人员发现将原文倒序（将其倒序输入编码器）产生了显著改善的结果，因为从解码器到编码器对应部分的路径被缩短了。同样，两次输入同一个序列似乎也有助于网络更好地记忆。
 
 倒序句子这种方法属于“hack”手段。它属于被实践证明有效的方法，而不是有理论依据的解决方法。
 
@@ -130,85 +212,9 @@ https://mp.weixin.qq.com/s/MJ1578NdTKbjU-j3Uuo9Ww
 
 基于文档级问答任务的新注意力模型
 
-# seq2seq
+https://mp.weixin.qq.com/s/C4f0N_bVWU9YPY34t-HAEA
 
-seq2seq最早用于Neural Machine Translation领域（与之相对应的有Statistical Machine Translation）。训练后的seq2seq模型，可以根据输入语句，自动生成翻译后的输出语句。
-
-![](/images/article/seq2seq.png)
-
-上图是seq2seq的结构图。可以看出seq2seq实际上是一种Encoder-Decoder结构。
-
-在Encoder阶段，RNN依次读入输入序列。但由于这时，没有输出序列与之对应，因此这仅仅相当于一个对隐层的编码过程，即将句子的语义编码为隐层的状态向量。
-
-从中发现一个问题：状态向量的维数决定了存储的语义的内容上限（显然不能指望，一个200维的向量，能够表示一部百科全书。）因此，seq2seq通常只用于短文本的翻译。
-
-在Decoder阶段，我们根据输出序列，反向修正RNN的参数，以达到训练神经网络的目的。
-
-参考：
-
-https://github.com/ematvey/tensorflow-seq2seq-tutorials
-
-一步步的seq2seq教程
-
-http://blog.csdn.net/sunlylorn/article/details/50607376
-
-seq2seq模型
-
-http://datartisan.com/article/detail/120.html
-
-Seq2Seq的DIY简介
-
-http://www.cnblogs.com/Determined22/p/6650373.html
-
-DL4NLP——seq2seq+attention机制的应用：文档自动摘要（Automatic Text Summarization）
-
-https://mp.weixin.qq.com/s/m-Z0UBgmFQ4CE0yLKYoHZw
-
-seq2seq和attention如何应用到文档自动摘要
-
-http://blog.csdn.net/young_gy/article/details/73412285
-
-基于RNN的语言模型与机器翻译NMT
-
-http://karpathy.github.io/2015/05/21/rnn-effectiveness/
-
-The Unreasonable Effectiveness of Recurrent Neural Networks
-
-https://mp.weixin.qq.com/s/8u3v9XzECkwcNn5Ay-kYQQ
-
-基于Depthwise Separable Convolutions的Seq2Seq模型_SliceNet原理解析
-
-https://mp.weixin.qq.com/s/H6eYxS7rXGDH_B8Znrxqsg
-
-seq2seq中的beam search算法过程
-
-https://mp.weixin.qq.com/s/U1yHIc5Zq0yKCezRm185VA
-
-Attentive Sequence to Sequence Networks
-
-https://mp.weixin.qq.com/s/cGXANj7BB2ktTdPAL4ZEWA
-
-图解神经网络机器翻译原理：LSTM、seq2seq到Zero-Shot
-
-https://mp.weixin.qq.com/s/jYUAKyTpm69J6Q34A06E-w
-
-百度提出冷聚变方法：使用语言模型训练Seq2Seq模型
-
-https://mp.weixin.qq.com/s/Fp6G1aI_utDd_kTbdHvEVQ
-
-完全基于卷积神经网络的seq2seq
-
-http://localhost:4500/theory/2017/06/21/Deep_Learning_6.html
-
-从2017年顶会论文看Attention Model
-
-https://mp.weixin.qq.com/s/Op_oYiNvaTXvsvAnl8Heew
-
-基于Self-attention的文本向量表示方法，悉尼科技大学和华盛顿大学最新工作
-
-https://mp.weixin.qq.com/s/fBrt4g_Kjmt1tGVZw5KgrQ
-
-从LSTM到Seq2Seq
+UNC&Adobe提出模块化注意力模型MAttNet，解决指示表达的理解问题
 
 # DMN
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十九）——迁移学习, Spiking Neuron Networks, DNC, OCR
+title:  深度学习（二十九）——迁移学习, Spiking Neuron Networks, DNC, OCR, CRNN
 category: DL 
 ---
 
@@ -179,4 +179,14 @@ http://mp.weixin.qq.com/s/n8C80a3B54FhrCe-GhhcDA
 https://mp.weixin.qq.com/s/MYhQt9uC16BadiZKWjPTzA
 
 华中科技大学提出多向文本检测方法：基于角定位与区域分割
+
+# CRNN
+
+论文：
+
+《An End-to-End Trainable Neural Network for Image-based Sequence Recognition and Its Application to Scene Text Recognition》
+
+代码：
+
+https://github.com/bgshih/crnn
 
