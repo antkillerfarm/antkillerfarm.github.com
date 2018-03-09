@@ -420,6 +420,10 @@ https://mp.weixin.qq.com/s/nqI08Iyn7yunuR1aVSuq_Q
 
 用户增长怎么做—以Uber和摩拜的经验为实例。技术营销的典范之作。
 
+https://mp.weixin.qq.com/s/xttZJVR0r5vssOJ19sBHGQ
+
+快速排序算法
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

@@ -314,4 +314,12 @@ https://mp.weixin.qq.com/s/yBquVKyKnhpy2yPxY-0eqA
 
 大白话聊聊分布式事务
 
+http://www.cnblogs.com/zhangweizhong/category/879056.html
+
+如何打造一个小而精的电商网站架构
+
+https://mp.weixin.qq.com/s/bUtu2nTs0bybnTvk-iLt6Q
+
+GTS来了！阿里微服务架构下的分布式事务解决方案
+
 

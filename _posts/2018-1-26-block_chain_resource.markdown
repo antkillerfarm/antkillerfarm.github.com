@@ -166,6 +166,10 @@ https://mp.weixin.qq.com/s/2OgD3GdYXgd69DyKcW7RtQ
 
 谢国彤歪评：区块链是什么？能干什么？
 
+https://mp.weixin.qq.com/s/c6fL3PwDfcfhmf85p-9wiQ
+
+区块链的开源项目清单
+
 # CPU
 
 https://zhuanlan.zhihu.com/p/29743431

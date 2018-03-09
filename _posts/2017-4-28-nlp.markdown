@@ -133,6 +133,10 @@ https://mp.weixin.qq.com/s/aF9eoWT8vXnqk2yOUDaMlA
 
 自然语言处理领域重要论文&资源全索引
 
+https://zhuanlan.zhihu.com/c_143965981
+
+知乎专栏：基于深度学习的对话系统
+
 ## 工具
 
 ### Natural Language Toolkit(NLTK)

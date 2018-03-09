@@ -6,6 +6,8 @@ category: DL
 
 # Attention
 
+## 概述
+
 众所周知，RNN在处理长距离依赖关系时会出现问题。理论上，LSTM这类结构能够处理这个问题，但在实践中，长距离依赖关系仍旧是个问题。例如，研究人员发现将原文倒序（将其倒序输入编码器）产生了显著改善的结果，因为从解码器到编码器对应部分的路径被缩短了。同样，两次输入同一个序列似乎也有助于网络更好地记忆。
 
 倒序句子这种方法属于“hack”手段。它属于被实践证明有效的方法，而不是有理论依据的解决方法。
@@ -36,13 +38,25 @@ attention机制解决的根本问题是允许网络返回到输入序列，而�
 
 《Neural Machine Translation by Jointly Learning to Align and Translate》
 
-参考：
+## Neural Turing Machines
 
 https://distill.pub/2016/augmented-rnns/
 
 Attention and Augmented Recurrent Neural Networks
 
 >distill.pub虽然blog数量不多，但篇篇都是经典。背后站台的更有Yoshua Bengio、Ian Goodfellow、Andrej Karpathy等大牛。
+
+参考：
+
+http://blog.csdn.net/rtygbwwwerr/article/details/50548311
+
+Neural Turing Machines
+
+http://www.robots.ox.ac.uk/~tvg/publications/talks/NeuralTuringMachines.pdf
+
+Neural Turing Machines
+
+## 参考
 
 http://blog.csdn.net/malefactor/article/details/50550211
 

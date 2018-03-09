@@ -225,3 +225,8 @@ http://blog.csdn.net/lcj369387335/article/details/69845385
 https://mp.weixin.qq.com/s/XiZ6Uc5cHZjczn-qoupQnA
 
 对话系统评价方法综述
+
+https://zhuanlan.zhihu.com/p/33088748
+
+数据集和评价指标介绍
+
