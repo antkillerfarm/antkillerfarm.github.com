@@ -40,13 +40,33 @@ attention机制解决的根本问题是允许网络返回到输入序列，而�
 
 ## Neural Turing Machines
 
+以下章节主要翻译自下文：
+
 https://distill.pub/2016/augmented-rnns/
 
 Attention and Augmented Recurrent Neural Networks
 
 >distill.pub虽然blog数量不多，但篇篇都是经典。背后站台的更有Yoshua Bengio、Ian Goodfellow、Andrej Karpathy等大牛。
 
+该文主要讲述了Attention在RNN领域的应用。
+
+----
+
+NTM是一种使用Neural Network为基础来实现传统图灵机的理论计算模型。利用该模型，可以通过训练的方式让系统“学会”具有时序关联的任务流。
+
+图灵机的详细定义可参见：
+
+https://baike.baidu.com/item/图灵机
+
+![](/images/img2/NTM.png)
+
+和传统图灵机相比，这里的memory中保存的是向量，
+
 参考：
+
+http://geek.csdn.net/news/detail/106118
+
+Attention and Augmented Recurrent Neural Networks译文
 
 http://blog.csdn.net/rtygbwwwerr/article/details/50548311
 

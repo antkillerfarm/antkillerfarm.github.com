@@ -233,6 +233,10 @@ https://mp.weixin.qq.com/s/05WAZcklXnL_hFPLZW9t7Q
 
 时间序列模型之相空间重构模型
 
+https://zhuanlan.zhihu.com/p/34407471
+
+如何理解时间序列？—从Riemann积分和Lebesgue积分谈起
+
 # Tri-training
 
 ## 半监督学习

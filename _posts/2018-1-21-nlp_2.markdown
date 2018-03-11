@@ -28,6 +28,30 @@ http://www.shuang0420.com/2017/04/27/NLP%E7%AC%94%E8%AE%B0%20-%20NLU%E4%B9%8B%E6
 
 NLU之意图分类
 
+## 词汇共现
+
+词汇共现是指词汇在文档集中共同出现。以一个词为中心，可以找到一组经常与之搭配出现的词，作为它的共现词汇集。
+
+词汇共现的其中一种用例：
+
+有若干关键词，比如：水果、天气、风，有若干描述词，比如，很甜、晴朗、很大，然后现在要找出他们之间的搭配，在这个例子里，我们最终要找到：水果很甜、天气晴朗、风很大
+
+http://sewm.pku.edu.cn/TianwangLiterature/SEWM/2005(5)/%5b%b3%c2%c1%88,%20et%20al.,2005%5d/050929.pdf
+
+## 关键词提取
+
+主要三种方法：
+
+1.基于统计特征，如TF-IDF。
+
+2.基于词图模型，如TextRank。
+
+3.基于主题模型，如LDA。
+
+https://mp.weixin.qq.com/s/yTLiw9am0wzeJ-O3m0xUoQ
+
+如何做好文本关键词提取？从三种算法说起
+
 ## 论文
 
 《Distant Supervision for relation extraction without labeled data》

@@ -168,6 +168,10 @@ https://mp.weixin.qq.com/s/3y-9R83Aw0Kj7qBma8x0DQ
 
 Batch Normalization: 如何更快地训练深度神经网络
 
+https://mp.weixin.qq.com/s/bpZ9iDf3hD7U3j2qIQi-wQ
+
+10分钟入门Keras指南
+
 # OpenAI Gym
 
 Openai gym是一个用于开发和比较强化学习（reinforcement learning，RL）算法的工具包，与其他的数值计算库兼容，如tensorflow或者theano库。现在主要支持的是python语言，以后将支持其他语言。

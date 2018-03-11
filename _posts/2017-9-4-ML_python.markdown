@@ -216,6 +216,14 @@ https://mp.weixin.qq.com/s/XIQ5EpQcYLxmRBuaTCZFzg
 
 一行代码，Pandas秒变分布式，快速处理TB级数据
 
+https://mp.weixin.qq.com/s/fXI5suCVna6fBxPnVyKevw
+
+浅谈NumPy和Pandas库
+
+https://mp.weixin.qq.com/s/1xHeXs9gM3LzEzCUz0jhXA
+
+简单实用的pandas技巧：如何将内存占用降低90%
+
 ## mysql
 
 http://www.runoob.com/python/python-mysql.html
@@ -431,10 +439,6 @@ Python3实现决策树算法
 https://mp.weixin.qq.com/s?__biz=MzA3MTM3NTA5Ng==&mid=2651056396&idx=1&sn=dabbda2c433e54a2bad506fc13bfd743
 
 <<战狼Ⅱ>>豆瓣十二万影评浅析
-
-https://mp.weixin.qq.com/s/fXI5suCVna6fBxPnVyKevw
-
-浅谈NumPy和Pandas库
 
 https://mp.weixin.qq.com/s/QIfxxY6z7y77RDE_8gDEIg
 

@@ -164,6 +164,14 @@ https://mp.weixin.qq.com/s/mRmbrUJ2MgeDxbZn_0UiIQ
 
 2017年深度学习总结：文本和语音应用
 
+https://mp.weixin.qq.com/s/JSnyE2k7jqd5GR1lHA6WUg
+
+阿里巴巴Oral论文：用于语音合成的深度前馈序列记忆网络
+
+https://mp.weixin.qq.com/s/H77iom38lTR0KzeFXrdWew
+
+DeepMind与谷歌大脑联手推出WaveRNN，移动端合成高保真音频媲美WaveNet
+
 # CTC
 
 ## 概述

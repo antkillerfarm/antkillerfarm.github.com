@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十六）——深度推荐系统, Recursive NN, Spatial Transformer Networks, SOM
+title:  深度学习（三十六）——深度推荐系统, Recursive NN, Spatial Transformer Networks, SOM, 多任务学习
 category: DL 
 ---
 
@@ -215,4 +215,27 @@ Self Organizing Maps (SOM): 一种基于神经网络的聚类算法
 http://blog.csdn.net/Loyal2M/article/details/11225987
 
 聚类算法实践（3）——PCCA、SOM、Affinity Propagation
+
+# 多任务学习
+
+https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA
+
+多任务学习-Multitask Learning概述
+
+https://mp.weixin.qq.com/s/ZlCI02UdRuFBc-uKqIPE_w
+
+深度学习多任务学习综述
+
+https://mp.weixin.qq.com/s/QXOy2jo4RhCZrD5bSVzBOQ
+
+共享相关任务表征，一文读懂深度神经网络多任务学习
+
+https://mp.weixin.qq.com/s/mm9bXXTEzd8DwyYlMgGMZg
+
+NLP多任务学习：一种层次增长的神经网络结构
+
+https://mp.weixin.qq.com/s/X6FwTgr282hbqgOz3oBX-w
+
+多任务学习概述论文：从定义和方法到应用和原理分析
+
 

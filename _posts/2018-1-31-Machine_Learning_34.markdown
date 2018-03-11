@@ -358,4 +358,8 @@ https://mp.weixin.qq.com/s/r95iMIKMctgjko1GRn9-5A
 
 史上最贱的数学题
 
+https://mp.weixin.qq.com/s/BkKw2C3n9WsmIchJkkZxUw
+
+从七桥问题开始：全面介绍图论及其应用
+
 

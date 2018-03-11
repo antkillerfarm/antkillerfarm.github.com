@@ -322,4 +322,8 @@ https://mp.weixin.qq.com/s/bUtu2nTs0bybnTvk-iLt6Q
 
 GTS来了！阿里微服务架构下的分布式事务解决方案
 
+https://mp.weixin.qq.com/s/ow-6rQYGlvX316h63aCGVg
+
+百度正式开源其Raft一致性算法实现braft
+
 

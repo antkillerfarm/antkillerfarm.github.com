@@ -404,18 +404,6 @@ http://mp.weixin.qq.com/s/9fJT0dMLvYQdfMVvSEiG4A
 
 深度学习的时间序列模型评价
 
-https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA
-
-多任务学习-Multitask Learning概述
-
-https://mp.weixin.qq.com/s/ZlCI02UdRuFBc-uKqIPE_w
-
-深度学习多任务学习综述
-
-https://mp.weixin.qq.com/s/QXOy2jo4RhCZrD5bSVzBOQ
-
-共享相关任务表征，一文读懂深度神经网络多任务学习
-
 https://mp.weixin.qq.com/s/lVja7woyFWpmr9sH0CitAA
 
 BMXNet：基于MXNet的开源二值神经网络实现

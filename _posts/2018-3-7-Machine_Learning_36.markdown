@@ -150,6 +150,10 @@ https://zhuanlan.zhihu.com/p/27916208
 
 LightGBM调参指南(带贝叶斯优化代码)
 
+https://mp.weixin.qq.com/s/zopaNDXABhPVqqUur9FFYg
+
+lightgbm算法优化-不平衡二分类问题
+
 # CatBoost
 
 这是Yandex推出的Boost工具包。

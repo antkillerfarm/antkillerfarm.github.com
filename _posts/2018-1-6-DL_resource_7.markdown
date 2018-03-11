@@ -346,4 +346,16 @@ https://mp.weixin.qq.com/s/KtO3OTZ-bZ6m0ZSI6jTyjw
 
 OpenAI提出Reptile：可扩展的元学习算法
 
+https://mp.weixin.qq.com/s/VdZLGE3DU80Ycid1ePIR6w
+
+DIY发现新行星操作指南：谷歌开源了行星发现代码
+
+https://mp.weixin.qq.com/s/2w_Bwqx9C9KwenK480sVMQ
+
+如何可视化卷积网络分类图像时关注的焦点
+
+https://mp.weixin.qq.com/s/joRcvCQwLYgRd29mfPd7XA
+
+中科大&微软提出立体神经风格迁移模型，可用于3D视频风格化
+
 

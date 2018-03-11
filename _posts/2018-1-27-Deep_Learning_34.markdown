@@ -136,6 +136,10 @@ https://mp.weixin.qq.com/s/xJ_g3BvbM-WaIyLthHdhEw
 
 DeepMind发布通用强化学习新范式，自主机器人可学会任何任务
 
+https://mp.weixin.qq.com/s/_lmz0l1vP_CQ6p6DdFnHWA
+
+谷歌大脑工程师的深度强化学习劝退文
+
 # 模型压缩
 
 对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。

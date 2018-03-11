@@ -162,10 +162,6 @@ https://mp.weixin.qq.com/s/T4AkbKXf2pkyazIlzEZxhw
 
 基于转移的语义依存图分析
 
-https://mp.weixin.qq.com/s/mm9bXXTEzd8DwyYlMgGMZg
-
-NLP多任务学习：一种层次增长的神经网络结构
-
 https://mp.weixin.qq.com/s/hcOoFjFlPIgG1leP6caglA
 
 利用价值网络改进神经机器翻译

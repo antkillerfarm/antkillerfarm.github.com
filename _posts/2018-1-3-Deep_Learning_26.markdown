@@ -206,5 +206,11 @@ https://mp.weixin.qq.com/s/RSCrkeIToeNKrFvMITxzDg
 
 通过OpenFace来理解人脸识别
 
+https://zhuanlan.zhihu.com/p/34404607
 
+人脸识别的LOSS（上）
+
+https://mp.weixin.qq.com/s/ZrnAqDJCLtMy_qTQ2RZT0A
+
+级联MobileNet-V2实现人脸关键点检测
 

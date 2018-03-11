@@ -163,6 +163,10 @@ https://mp.weixin.qq.com/s/XnsbCb7H9jHmJ4dV9p2Oug
 
 频率学派还是贝叶斯学派？聊一聊机器学习中的MLE和MAP
 
+https://mp.weixin.qq.com/s/dQxN46wEbFrpvV369uOHdA
+
+详解最大后验概率估计（MAP）的理解
+
 # 在线学习
 
 我们之前讨论的算法，都是给定一个训练集S，经训练之后，得到预测函数h，然后再在新的样本集上进行预测。这种方法被称为批量学习（batch learning）。

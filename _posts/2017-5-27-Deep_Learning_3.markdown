@@ -262,6 +262,10 @@ https://mp.weixin.qq.com/s/3pIybS_GsuN6XobP_4bLrg
 
 深度学习以及卷积基础
 
+https://mp.weixin.qq.com/s/VcjivPhJuCk7NPQ1FNQULw
+
+一文让你入门CNN
+
 # Autoencoder
 
 Bengio在2003年的《A neural probabilistic language model》中指出，维度过高，会导致每次学习，都会强制改变大部分参数。
@@ -288,9 +292,15 @@ Autoencoder的结构如上图所示。它的特殊之处在于：
 
 http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/
 
+Autoencoders
+
 http://blog.csdn.net/changyuanchn/article/details/15681853
 
 深度学习之autoencoder
+
+https://mp.weixin.qq.com/s/cago4myCcLZkv1e43T__3g
+
+深入理解自编码器
 
 http://www.cnblogs.com/neopenx/p/4370350.html
 

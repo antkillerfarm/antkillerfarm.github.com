@@ -254,3 +254,8 @@ https://mp.weixin.qq.com/s/uJEGXNvBVJfsxYJUQCz4DQ
 
 DA-GAN技术：计算机帮你创造奇妙“新物种”
 
+https://mp.weixin.qq.com/s/TiXILy4l6Q3dxVwapyd9KQ
+
+二维码太丑？用风格迁移生成个性二维码了解一下
+
+

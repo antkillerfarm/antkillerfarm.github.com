@@ -126,6 +126,10 @@ https://mp.weixin.qq.com/s/DfdMDOQMncTau-9zGq9CYw
 
 Apollo Planning模块源代码分析（下）
 
+https://mp.weixin.qq.com/s/bH6khM8gO3JE4YT9i8hSlQ
+
+Apollo 2.0自动驾驶平台技术解析与应用
+
 ## 文章
 
 http://blog.exbot.net/

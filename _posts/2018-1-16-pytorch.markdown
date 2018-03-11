@@ -116,4 +116,7 @@ https://mp.weixin.qq.com/s/HPRUQSsUdk3rXBBl_GpFMw
 
 对抗自编码器PyTorch手把手实战系列——PyTorch实现自编码器
 
+https://mp.weixin.qq.com/s/5sY_IzwIz-lbDLtWJM-GRQ
+
+PyTorch实例：用ResNet进行交通标志分类
 

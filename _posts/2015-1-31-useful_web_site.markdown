@@ -424,6 +424,14 @@ https://mp.weixin.qq.com/s/xttZJVR0r5vssOJ19sBHGQ
 
 快速排序算法
 
+https://mp.weixin.qq.com/s/DDk5YZv9Q7CaqdiKvQxZGQ
+
+从理论到实践，全方位认识DNS（理论篇）
+
+https://mp.weixin.qq.com/s/rZU35kVTXs5ebf7k6lnheQ
+
+从理论到实践，全方位认识DNS（实践篇）
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

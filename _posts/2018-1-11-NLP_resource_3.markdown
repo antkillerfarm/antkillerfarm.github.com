@@ -258,5 +258,9 @@ https://mp.weixin.qq.com/s/NcUHJ89DPVdB7cJttsh-xw
 
 基于神经网络的知识推理
 
+https://mp.weixin.qq.com/s/fRw4DBX_Gl5CD0kvuiS5ag
+
+最新人机对话系统简略综述
+
 
 

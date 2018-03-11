@@ -236,5 +236,12 @@ https://mp.weixin.qq.com/s/0-gBsoxKaXZz7ojtFrGlvQ
 
 史上最全数据集网站汇总
 
+https://mp.weixin.qq.com/s/q2lsD4MSqQG-LqRmVjEHeg
+
+图像配对数据集TTL：展现人类和机器判断图像相似性的差异
+
+https://mp.weixin.qq.com/s/y_Q1umHaC0NEuj2TlKoKZQ
+
+百度Apollo推出大规模自动驾驶数据集，将于CVPR发起挑战赛
 
 
