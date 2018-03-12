@@ -124,4 +124,8 @@ https://mp.weixin.qq.com/s/zN3k51g9gjQvc43AH-ypGA
 
 如何通过PyTorch上手Tensor Comprehensions？
 
+https://mp.weixin.qq.com/s/BsMwZC3IoXA58OybZ3aYcg
+
+pytorch中如何处理RNN输入变长序列padding
+
 
