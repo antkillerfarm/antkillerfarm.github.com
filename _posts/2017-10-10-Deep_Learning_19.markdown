@@ -4,6 +4,8 @@ title:  深度学习（十九）——FCN, SegNet, DeconvNet, DeepLab, ENet, GCN
 category: DL 
 ---
 
+# 前DL时代的语义分割（续）
+
 ## Grab cut
 
 Grab cut是微软剑桥研究院于2004年提出的著名交互式图像语义分割方法。与N-cut一样，grab cut同样也是基于图划分，不过grab cut是其改进版本，可以看作迭代式的语义分割算法。Grab cut利用了图像中的纹理（颜色）信息和边界（反差）信息，只要少量的用户交互操作即可得到比较好的前后背景分割结果。

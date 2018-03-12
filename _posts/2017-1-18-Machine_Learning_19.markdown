@@ -242,3 +242,11 @@ https://mp.weixin.qq.com/s/W1Bu_I3p2DO_sT2Nl0582w
 
 Apriori算法原理总结
 
+http://blog.csdn.net/u013250416/article/details/52701633
+
+关联规则DHP算法详解
+
+https://www.jianshu.com/p/1ccf4d450da0
+
+频繁模式挖掘-DHP算法详解
+

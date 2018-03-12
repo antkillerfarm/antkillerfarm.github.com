@@ -326,4 +326,9 @@ https://mp.weixin.qq.com/s/ow-6rQYGlvX316h63aCGVg
 
 百度正式开源其Raft一致性算法实现braft
 
+https://mp.weixin.qq.com/s/j0kiWTlrntzvthUJlxZBsA
+
+数据转换：从单体式应用到微服务的低风险演变
+
+
 

@@ -170,6 +170,14 @@ https://mp.weixin.qq.com/s/c6fL3PwDfcfhmf85p-9wiQ
 
 区块链的开源项目清单
 
+https://mp.weixin.qq.com/s/jyXsazsCGbStJFVT7el9vg
+
+如何用架构师思维解读区块链技术？
+
+https://mp.weixin.qq.com/s/UiwIEkCOeruWYDxdudBnhA
+
+我模拟了一个用浏览器挖矿的代码，没多复杂但别走歪路
+
 # CPU
 
 https://zhuanlan.zhihu.com/p/29743431

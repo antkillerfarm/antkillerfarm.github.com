@@ -342,24 +342,3 @@ https://mp.weixin.qq.com/s/yqAnIjGmXpubgSsGDx6O8w
 
 动图解释泰勒级数（二）
 
-http://blog.huajh7.com/2013/03/06/variational-bayes/
-
-变分贝叶斯算法理解与推导
-
-https://www.zhihu.com/question/267166775
-
-真空中有两个位置固定的引力源(恒星)，一个质量较小的小球(行星)有哪些典型的稳定绕转方式?
-
-http://www.matrix67.com/blog/archives/6750
-
-趣题：两个方阵是怎样互相穿过对方的？
-
-https://mp.weixin.qq.com/s/r95iMIKMctgjko1GRn9-5A
-
-史上最贱的数学题
-
-https://mp.weixin.qq.com/s/BkKw2C3n9WsmIchJkkZxUw
-
-从七桥问题开始：全面介绍图论及其应用
-
-

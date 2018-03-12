@@ -232,6 +232,10 @@ https://mp.weixin.qq.com/s/UXzhMkGIwqek4zHVNPgRbA
 
 Mask-RCNN论文解读
 
+https://mp.weixin.qq.com/s/_ohsx7kzgU-szP-K9_Yv1w
+
+优于Mask R-CNN，港中文&腾讯优图提出PANet实例分割框架
+
 # 手势识别
 
 https://zhuanlan.zhihu.com/p/26630215

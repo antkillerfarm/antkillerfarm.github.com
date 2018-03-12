@@ -168,6 +168,10 @@ https://mp.weixin.qq.com/s/TglQzG1iE0keEGLKZ-pGIg
 
 Python数据处理实战——使用Scikit-Learn进行多类文本分类
 
+https://mp.weixin.qq.com/s/WdYa7Q-yA-s_EO59YkYbqw
+
+来自小姐姐的入门推荐：7个基本机器学习算法Python实现
+
 # 推荐系统的工程细节
 
 推荐系统不仅是算法，还包括若干工程细节。这些细节虽然不算复杂，够不上算法的层面，然而对产品的成败，却有举足轻重的作用。

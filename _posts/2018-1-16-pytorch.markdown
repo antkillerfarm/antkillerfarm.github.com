@@ -120,3 +120,8 @@ https://mp.weixin.qq.com/s/5sY_IzwIz-lbDLtWJM-GRQ
 
 PyTorch实例：用ResNet进行交通标志分类
 
+https://mp.weixin.qq.com/s/zN3k51g9gjQvc43AH-ypGA
+
+如何通过PyTorch上手Tensor Comprehensions？
+
+

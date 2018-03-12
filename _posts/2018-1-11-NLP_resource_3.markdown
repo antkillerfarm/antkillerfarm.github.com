@@ -262,5 +262,8 @@ https://mp.weixin.qq.com/s/fRw4DBX_Gl5CD0kvuiS5ag
 
 最新人机对话系统简略综述
 
+https://mp.weixin.qq.com/s/_upoBXADzTXEduYxr6ZxRQ
+
+非自回归神经机器翻译
 
 

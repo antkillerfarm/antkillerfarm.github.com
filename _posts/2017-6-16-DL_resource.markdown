@@ -216,6 +216,10 @@ https://mp.weixin.qq.com/s/yEfLAwVkmi-CaR2G8NDlFQ
 
 人人都可以做深度学习应用：入门篇（下）
 
+https://mp.weixin.qq.com/s/lOTYf_bUu19YOFKZHqjgVA
+
+从起源到具体算法，这是一份适合所有人读的深度学习综述论文
+
 https://zhuanlan.zhihu.com/p/22888385
 
 深层学习为何要“Deep”
