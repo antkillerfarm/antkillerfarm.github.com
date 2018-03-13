@@ -178,6 +178,10 @@ https://mp.weixin.qq.com/s/ald9Dq_VV3PYuN6JoY3E5Q
 
 DeepLabv3+：语义分割领域的新高峰
 
+https://mp.weixin.qq.com/s/zLyAwtG49A-vwWa1iPziew
+
+谷歌最新语义图像分割模型DeepLab-v3+今日开源
+
 # ENet
 
 ENet是波兰的Adam Paszke于2016年提出的。

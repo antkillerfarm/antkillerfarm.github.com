@@ -154,6 +154,36 @@ https://mp.weixin.qq.com/s/jBaxkJMQ_6RwtMmY7U29-w
 
 一样的打游戏，不一样的酷
 
+# AI医疗
+
+https://mp.weixin.qq.com/s/vtJUM94oYpN_h3Sdg3exLQ
+
+张益肇：AI+医疗，微软有哪些布局？
+
+https://mp.weixin.qq.com/s/mkYVhiwQJwcXxUdBVUvU8w
+
+体素科技丁晓伟：医疗影像的哲学三问
+
+https://mp.weixin.qq.com/s/aGc8Y8I_Xt0837H0MUVL-g
+
+CMU副教授马坚：精准基因组数据和智能医疗最新进展
+
+https://mp.weixin.qq.com/s/1E9gunSpgYt5xl9Q_uQNJg
+
+使用深度学习进行医疗影像分析：文件格式篇
+
+https://mp.weixin.qq.com/s/uy3MNxyT5nQIVsfWkXnL5Q
+
+结合生成式与判别式方法，Petuum新研究助力医疗诊断
+
+https://mp.weixin.qq.com/s/1A6p672z4Yz__MF6TWORSw
+
+备战医疗大赛必看！
+
+https://mp.weixin.qq.com/s/DuFvVmcyazyUYxyoekh38w
+
+邓侃解读：深度学习病历分析前沿进展
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/HN-kAtltn7hkuUlpzmDDFA

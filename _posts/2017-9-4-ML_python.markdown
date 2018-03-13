@@ -186,6 +186,10 @@ https://mp.weixin.qq.com/s/LBrlXEhGYOx1aPFZzQcyTQ
 
 5种快速易用的Python Matplotlib数据可视化方法
 
+https://mp.weixin.qq.com/s/aBi1PTEumRs0frUpb_uYrA
+
+用Python做图像处理（2）
+
 ## Pandas
 
 Pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。
@@ -372,7 +376,7 @@ http://pythonware.com/products/pil/
 
 https://mp.weixin.qq.com/s/lJYzxehwo3K2APB2l_WeTA
 
-用Python做图像处理
+用Python做图像处理（1）
 
 ## 参考
 

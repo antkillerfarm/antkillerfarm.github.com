@@ -334,6 +334,10 @@ https://mp.weixin.qq.com/s/irvBbPKENiZX9G_6wh5c-Q
 
 陈天奇等人提出TVM：深度学习自动优化代码生成器
 
+https://mp.weixin.qq.com/s/28n8g_epHsYB0I9GVc_lww
+
+陈天奇团队TVM重磅更新：直接在浏览器使用GPU 
+
 ## 面试
 
 https://www.zhihu.com/question/41233373

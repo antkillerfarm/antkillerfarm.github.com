@@ -32,10 +32,13 @@ VMWare自带的VMWare tools在新版的Ubuntu上总是安装不上，其实解�
 
 `sudo apt-get install build-essential libgtop2-dev libgtk-3-dev libappindicator3-dev git-core`
 
- * create a folder for git_project and download the code.
+* create a folder for git_project and download the code.
 
-`mkdir git_project && cd git_project`
-`git clone git://github.com/mgedmin/indicator-netspeed.git`
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/indicator-netspeed
+
+原版程序是针对gtk3的早期版本，有些老了：
+
+https://github.com/mgedmin/indicator-netspeed.git
 
 * do make
 
@@ -43,7 +46,9 @@ VMWare自带的VMWare tools在新版的Ubuntu上总是安装不上，其实解�
 
 * launch the indicator:
 
-`./indicator-netspeed`
+`sudo make install`
+
+`indicator-netspeed`
 
 附带的说一下，刚开始的时候，我给这个程序添加了一个桌面快捷方式。但是每次开机还要按一下快捷方式，着实不方便。后来发现在选择“关机”的那个菜单上方还有个叫做“启动应用程序”的东东，之前看名字还以为是Windows下Run的替代品，结果实际上是桌面的开机启动程序。。。
 

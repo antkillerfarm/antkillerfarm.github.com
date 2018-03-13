@@ -102,3 +102,8 @@ http://blog.csdn.net/songrotek/article/details/50951537
 
 用Tensorflow基于Deep Q Learning DQN 玩Flappy Bird
 
+https://mp.weixin.qq.com/s/ffW21oBKTDOc4sB8POhcnw
+
+聊一聊TensorFlow的数据导入机制
+
+

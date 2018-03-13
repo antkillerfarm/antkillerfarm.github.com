@@ -198,6 +198,10 @@ https://mp.weixin.qq.com/s/L6O-I7y9HiA1WnjBRMh1cQ
 
 我们对比了GitHub上8800个开源机器学习项目，并选出了其中的Top30
 
+https://mp.weixin.qq.com/s/FLCmaSU8qlmTWSzs1PEhnw
+
+C++从零实现神经网络
+
 ## 教程
 
 https://theneuralperspective.com/tag/tutorials/

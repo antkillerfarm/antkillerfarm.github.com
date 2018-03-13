@@ -60,7 +60,37 @@ https://baike.baidu.com/item/图灵机
 
 ![](/images/img2/NTM.png)
 
-和传统图灵机相比，这里的memory中保存的是向量，
+和传统图灵机相比，这里的memory中保存的是向量，我们的目标是根据输入序列，确定读写操作。具体的步骤如下图所示：
+
+![](/images/img2/NTM_2.png)
+
+1.计算query vector和memory中每个vector的相似度。
+
+2.将相似度softmax为一个分布。
+
+3.用之前训练好的attention模型调整分布值。
+
+4.图灵机的Shift操作也可以引入attention模型。
+
+5.sharpen分布值，选择最终的读写操作。sharpen操作，实际上就是选择较大的概率值，而忽略较小的概率值。
+
+## Attentional Interfaces
+
+以下是另外的一些Attention的用例。
+
+![](/images/img2/Attention.png)
+
+上图中，一个RNN模型可以输入另一个RNN模型的输出。它在每一步都会关注另一个RNN模型的不同位置。
+
+![](/images/img2/Attention_2.png)
+
+这是一个和NTM非常类似的模型。RNN模型生成一个搜索词描述其希望关注的位置。然后计算每条内容与搜索词的点乘得分，表示其与搜索词的匹配程度。这些分数经过softmax函数的运算产生聚焦的分布。
+
+![](/images/img2/Attention_3.png)
+
+上图是语言翻译方面的模型。若用传统的序列到序列模型做翻译，需要把整个输入词汇串缩简为单个向量，然后再展开恢复为序列目标语言的词汇串。Attention机制则可以避免上述操作，RNN模型逐个处理输入词语的信息，随即生成相对应的词语。
+
+![](/images/img2/Attention_4.png)
 
 参考：
 

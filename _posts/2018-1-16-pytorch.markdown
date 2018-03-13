@@ -128,4 +128,7 @@ https://mp.weixin.qq.com/s/BsMwZC3IoXA58OybZ3aYcg
 
 pytorch中如何处理RNN输入变长序列padding
 
+https://mp.weixin.qq.com/s/abd62HNlen9sepH3CrmpGg
+
+PyTorch为何如此高效好用？来探寻深度学习框架的内部架构
 

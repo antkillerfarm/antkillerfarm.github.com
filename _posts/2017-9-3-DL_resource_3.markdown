@@ -254,6 +254,10 @@ https://mp.weixin.qq.com/s/Rutl-aVbxTu39J0vWHbz-w
 
 Keras作者力推开源框架Lore：15分钟搞定深度学习模型从配置到部署
 
+https://mp.weixin.qq.com/s/TZQcN8rYSc2tH8C1UvyF4g
+
+从预处理到部署：如何使用Lore快速构建机器学习模型
+
 ## 量子计算 & 遗传算法
 
 https://www.zhihu.com/question/28171555

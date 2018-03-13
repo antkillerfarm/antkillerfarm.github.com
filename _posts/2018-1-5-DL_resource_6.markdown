@@ -38,10 +38,6 @@ https://mp.weixin.qq.com/s/M4U0RKcFqZKZAiwK5IyOFA
 
 GAN之父Ian Goodfellow在Quora：机器学习十问十答
 
-https://mp.weixin.qq.com/s/1E9gunSpgYt5xl9Q_uQNJg
-
-使用深度学习进行医疗影像分析：文件格式篇
-
 https://mp.weixin.qq.com/s/PiQB2AvhtDceMJxYN8O8jA
 
 通用卷积神经网络交错组卷积
@@ -73,10 +69,6 @@ Yee Whye Teh：《贝叶斯深度学习与深度贝叶斯学习》
 https://mp.weixin.qq.com/s/OXVrijBMMq3A_oRSfVB1nQ
 
 田渊栋等人最新论文：别担心深度网络中的虚假局部极小值
-
-https://mp.weixin.qq.com/s/uy3MNxyT5nQIVsfWkXnL5Q
-
-结合生成式与判别式方法，Petuum新研究助力医疗诊断
 
 https://mp.weixin.qq.com/s/O2eTHpHaydiMRup4qyOgrw
 
@@ -317,10 +309,6 @@ https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/content/
 https://mp.weixin.qq.com/s/JAVzy8gy7k4EesBBHvEZLg
 
 亚马逊用机器学习自动调优数据库管理系统
-
-https://mp.weixin.qq.com/s/1A6p672z4Yz__MF6TWORSw
-
-备战医疗大赛必看！
 
 https://mp.weixin.qq.com/s/U0K79ELLj4wsOR4sd5G4Vw
 

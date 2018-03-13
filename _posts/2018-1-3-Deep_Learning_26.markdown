@@ -214,3 +214,16 @@ https://mp.weixin.qq.com/s/ZrnAqDJCLtMy_qTQ2RZT0A
 
 级联MobileNet-V2实现人脸关键点检测
 
+https://mp.weixin.qq.com/s/xDEga2tITO8rVkvXCZ62sg
+
+中国团以98%精度夺得MegaFace人脸识别冠军
+
+https://mp.weixin.qq.com/s/HVooLtr_k6fwh2N3GjMb1A
+
+新研究提出深度残差等价映射：由正脸加强侧脸识别效果
+
+https://mp.weixin.qq.com/s/mGcKpu3BXlAGO-t2FUCxAg
+
+基于深度模型的人脸对齐和姿态标准化
+
+

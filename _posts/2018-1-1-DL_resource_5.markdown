@@ -22,10 +22,6 @@ https://mp.weixin.qq.com/s/UsoLQbrwj6rpLUAV5kYkUA
 
 大数据和网络分析的可扩展算法
 
-https://mp.weixin.qq.com/s/vtJUM94oYpN_h3Sdg3exLQ
-
-张益肇：AI+医疗，微软有哪些布局？
-
 https://mp.weixin.qq.com/s/I9dm8uDEqO0X19s758jOGw
 
 良心GitHub项目：各种机器学习任务的顶级结果（论文）汇总
@@ -246,10 +242,6 @@ https://mp.weixin.qq.com/s/r-tl6ooNcQ_j4OFzV-5f3w
 
 计算机视觉这一年
 
-https://mp.weixin.qq.com/s/mkYVhiwQJwcXxUdBVUvU8w
-
-体素科技丁晓伟：医疗影像的哲学三问
-
 https://mp.weixin.qq.com/s/MoKzux6Z69dlpqcVTvQ9oQ
 
 解释深度神经网络训练全过程：谷歌发布SVCCA
@@ -261,10 +253,6 @@ Hinton提出泛化更优的“软决策树”：可解释DNN具体决策
 https://mp.weixin.qq.com/s/X75H8YOysftwU4VSjlmLBQ
 
 谷歌大脑最新技术：将神经网络提炼成软决策树！
-
-https://mp.weixin.qq.com/s/aGc8Y8I_Xt0837H0MUVL-g
-
-CMU副教授马坚：精准基因组数据和智能医疗最新进展
 
 https://mp.weixin.qq.com/s/bMpugd2Lp35VPr8fQAPzsg
 
