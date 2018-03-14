@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（一）——MP神经元模型, BP算法, 神经元激活函数
+title:  深度学习（一）——MP神经元模型, BP算法
 category: DL 
 ---
 
@@ -147,6 +147,10 @@ https://mp.weixin.qq.com/s/DkAFMDOnJKkdpV7bnkSZqQ
 
 # BP算法
 
+单层神经网络的学习算法最早由Donald Olding Hebb提出，因此又被叫做Hebb算法。但是这种算法无法扩展到多层神经网络，这最终导致了AI的第一个冬天，直到BP算法的出现。
+
+>Donald Olding Hebb，1904~1985,加拿大心理学家，哈佛博士（1936），McGill University教授。英国皇家学会会员。神经心理学和神经网络之父。
+
 误差逆传播（error BackPropagation）算法最早由Paul J. Werbos于1974年提出，然而此时正值ANN的低谷，未得到人们的重视。因此到了1986年时，由David Everett Rumelhart重新发明了该算法。
 
 >注：Paul J. Werbos，1947年生，哈佛大学博士。
@@ -242,33 +246,4 @@ https://mp.weixin.qq.com/s/r1OJoLa_t8QwNcL4kfx5uQ
 https://mp.weixin.qq.com/s/w7EbDI9MQBZF67XM-cV1eQ
 
 一文了解神经网络中的梯度爆炸
-
-# 神经元激活函数
-
-## tanh函数
-
-除了阶跃函数和Sigmoid函数之外，常用的神经元激活函数，还有双曲正切函数（tanh函数）：
-
-$$f(z)=\tanh(x)=\frac{\sinh(x)}{\cosh(x)}=\frac{e^x-e^{-x}}{e^x+e^{-x}}$$
-
-其导数为：
-
-$$f'(z)=1-(f(z))^2$$
-
-![](/images/article/sigmoid_vs_tanh.png)
-
-上图是sigmoid函数（蓝）和tanh函数（绿）的曲线图。
-
-![](/images/article/sigmoid_vs_tanh_2.png)
-
-上图是sigmoid函数（蓝）和tanh函数（绿）的梯度曲线图。从中可以看出tanh函数的梯度比sigmoid函数大，因此有利于残差梯度的反向传递，这是tanh函数优于sigmoid函数的地方。但是总的来说，由于两者曲线类似，因此tanh函数仍被归类于sigmoid函数族中。
-
-下图是一些sigmoid函数族的曲线图：
-
-![](/images/article/Gjl-t.svg)
-
-有关sigmoid函数和tanh函数的权威论述，参见Yann LeCun的论文：
-
-http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf
-
 

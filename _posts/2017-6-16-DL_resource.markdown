@@ -16,6 +16,10 @@ https://mp.weixin.qq.com/s/aUrk-wcqhk08_d0QPP9Bxg
 
 一文打尽人工智能和机器学习网络资源，反正我已经收藏了！
 
+https://mp.weixin.qq.com/s/_MlWysYc5ZbUFC648rvXfA
+
+神经网络、机器学习、深度学习与数据科学一览
+
 http://www.jianshu.com/p/2be349a89a12
 
 超过150个最佳机器学习，NLP和Python教程

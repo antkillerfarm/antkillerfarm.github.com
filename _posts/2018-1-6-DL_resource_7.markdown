@@ -362,5 +362,11 @@ https://mp.weixin.qq.com/s/uztYEW_azetOkOGiZcbCuw
 
 JeffDean又用深度学习搞事情：这次要颠覆整个计算机系统结构设计。这篇blog介绍了如何用DL方法提高内存访问的命中率。
 
+https://mp.weixin.qq.com/s/1oDM6HvHKPBT6rKTSzUfVA
 
+手把手：教你如何用深度学习模型预测加密货币价格
+
+https://zhuanlan.zhihu.com/p/34437681
+
+情感预测SHINE: Signed Heterogeneous Information Network Embedding for Sentiment Link Prediction引介
 

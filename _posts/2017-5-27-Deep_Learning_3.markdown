@@ -4,7 +4,35 @@ title:  深度学习（三）——Neural Network Zoo, CNN, Autoencoder
 category: DL 
 ---
 
-# 深度学习常用术语解释（续）
+# 深度学习常用术语解释
+
+## Batch Normalization（续）
+
+https://mp.weixin.qq.com/s/KnmQTKneSimuOGqGSPy58w
+
+详解深度学习中的Normalization，不只是BN（1）
+
+https://mp.weixin.qq.com/s/nSQvjBRMaBeoOjdHbyrbuw
+
+详解深度学习中的Normalization，不只是BN（2）
+
+https://www.jianshu.com/p/35a3bf866c46
+
+浅析数据标准化和归一化，优化机器学习算法输出结果
+
+## 鞍点
+
+鞍点（Saddle point）在微分方程中，沿着某一方向是稳定的，另一条方向是不稳定的奇点，叫做鞍点。在泛函中，既不是极大值点也不是极小值点的临界点，叫做鞍点。在矩阵中，一个数在所在行中是最大值，在所在列中是最小值，则被称为鞍点。在物理上要广泛一些，指在一个方向是极大值，另一个方向是极小值的点。
+
+![](/images/article/Saddle_point.png)
+
+上图是$$z=x^2-y^2$$的曲面图，其中的原点就是鞍点。上图形似马鞍，故名。
+
+长期以来，人们一直认为非凸优化的难点在于容易陷入局部最小，例如下图所示的Ackley函数。
+
+![](/images/article/Ackley.png)
+
+然而，LeCun和Bengio的研究表明，在high-D(高维)的情况下，局部最小会随着维度的增加，指数型的减少，在深度学习中，一个点是局部最小的概率非常小，同时鞍点无处不在。
 
 ## 欠拟合和过拟合
 
@@ -273,81 +301,4 @@ Bengio在2003年的《A neural probabilistic language model》中指出，维度
 由此发生蝴蝶效应，本来很好的参数，可能就因为一个小小传播误差，就改的乱七八糟。
 
 因此，数据降维是数据预处理中，非常重要的一环。常用的降维算法，除了线性的PCA算法之外，还有非线性的Autoencoder。
-
-![](/images/article/Autoencoder.png)
-
-Autoencoder的结构如上图所示。它的特殊之处在于：
-
-1.输入样本就是输出样本。
-
-2.隐藏层的神经元数量小于样本的维度。
-
-粗看起来，这类恒等变换没有太大意义。然而这类恒等变换之所以能够成立，最根本的地方在于，隐藏层的神经元具有表达输出样本的能力，也就是用低维表达高维的能力。反过来，我们就可以利用这一点，实现数据的降维操作。
-
-但是，不是所有的数据都能够降维，而这种情况通常会导致Autoencoder的训练失败。
-
-和Autoencoder类似的神经网络还有：Denoising Autoencoder（DAE）、Variational Autoencoder（VAE）、Sparse Autoencoder（SAE）。
-
-参考：
-
-http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/
-
-Autoencoders
-
-http://blog.csdn.net/changyuanchn/article/details/15681853
-
-深度学习之autoencoder
-
-https://mp.weixin.qq.com/s/cago4myCcLZkv1e43T__3g
-
-深入理解自编码器
-
-http://www.cnblogs.com/neopenx/p/4370350.html
-
-降噪自动编码器（Denoising Autoencoder)
-
-https://zhuanlan.zhihu.com/p/27549418
-
-花式解释AutoEncoder与VAE
-
-https://mp.weixin.qq.com/s/lODy8ucB3Bw9Y1sy1NxTJg
-
-无监督学习中的两个非概率模型：稀疏编码与自编码器
-
-https://mp.weixin.qq.com/s/LQFuXgI7uZK2UKRfZvlVbA
-
-Variational AutoEncoder
-
-https://mp.weixin.qq.com/s/lnSMdOk8fYfdU4aGeI5j7Q
-
-未标注的数据如何处理？一文读懂变分自编码器VAE
-
-https://mp.weixin.qq.com/s/QuDa__mi1NX1wOxo5Ki94A
-
-深度学习：自动编码器基础和类型
-
-http://blog.csdn.net/losteng/article/details/51067216
-
-CAE(Convolutional Auto-Encode) 卷积自编码
-
-https://mp.weixin.qq.com/s/q-WExyS-zylMA-L8ojOgRg
-
-简单易懂的自动编码器
-
-https://mp.weixin.qq.com/s/ZlLuhu08m_RnD-h86df8sA
-
-清华大学提出SA-VAE框架，通过单样本/少样本学习生成任意风格的汉字
-
-https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
-
-面向无监督任务：DeepMind提出神经离散表示学习生成模型VQ-VAE
-
-https://mp.weixin.qq.com/s/mtZ4_pwl8_GhitgImAU0VA
-
-一文读懂什么是变分自编码器
-
-https://mp.weixin.qq.com/s/Ci0HPy3ENz1ZooB784aMcA
-
-谷歌大脑Wasserstein自编码器：新一代生成模型算法
-
 

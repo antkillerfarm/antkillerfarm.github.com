@@ -6,7 +6,101 @@ category: DL
 
 # 词向量
 
-## 参考（续）
+## word2vec/doc2vec的缺点（续）
+
+然而关联性并非都是坏事，有的时候也会起到意想不到的效果。比如在客服对话的案例中，客户可能会提供自己的收货地址，显然每个客户的地址都是不同的，但是有意思的是，这些地址的词向量是非常相似的。
+
+总之，**只利用无标注数据训练得到的Word Embedding在匹配度计算的实用效果上和主题模型技术相差不大，它们本质上都是基于共现信息的训练。**
+
+4.除了余弦相似度之外，词向量的模长，也是一个重要的特征，词向量模长越大，重要性越低（或者越高，取决于生成词向量的算法）。
+
+参考：
+
+https://www.zhihu.com/question/22266868
+
+Word2Vec如何解决多义词的问题？
+
+## 参考
+
+http://www.cnblogs.com/iloveai/p/word2vec.html
+
+word2vec前世今生
+
+http://www.cnblogs.com/maybe2030/p/5427148.html
+
+文本深度表示模型——word2vec&doc2vec词向量模型
+
+https://www.zhihu.com/question/29978268
+
+如何用word2vec计算两个句子之间的相似度？
+
+https://mp.weixin.qq.com/s/kGi-Hf7CX6OKcCMe7IC7zA
+
+NLP之Wrod2Vec三部曲
+
+https://mp.weixin.qq.com/s/VMK_UpOUI0y7apTGR02D1Q
+
+图解Word2Vec
+
+https://mp.weixin.qq.com/s/XMGZXAt_LUX5iTet7_SX4Q
+
+深度学习和自然语言处理：诠释词向量的魅力
+
+https://mp.weixin.qq.com/s/Rn_aJYozQ0f53Mjq4MKSwA
+
+哪种词向量模型更胜一筹？Word2Vec，WordRank or FastText?
+
+https://mp.weixin.qq.com/s/H7m7lqWpK27pJp9obXxlIQ
+
+见微知著，从细节处提升词向量的表示能力
+
+http://licstar.net/archives/328
+
+词向量和语言模型
+
+https://mp.weixin.qq.com/s/GYTxN5X7MnSQ4k5bD2l-PQ
+
+Salesforce的爱因斯坦AI最新NLP研究，通过情境化词向量从翻译中学习!
+
+https://mp.weixin.qq.com/s/GUUkXrB1iyg4rQbBtICq6A
+
+通过NMT训练的通用语境词向量：NLP中的预训练模型？
+
+http://geek.csdn.net/news/detail/135736
+
+漫谈词向量之基于Softmax与Sampling的方法
+
+https://mp.weixin.qq.com/s/nLFRJO2QEG_kAmeRYUdT3g
+
+十分钟带你看遍词向量模型
+
+https://zhuanlan.zhihu.com/p/30868040
+
+文本表示的应用与评价
+
+http://kexue.fm/archives/4667/
+
+更别致的词向量模型(一)：simpler glove
+
+http://kexue.fm/archives/4669/
+
+更别致的词向量模型(二)：对语言进行建模
+
+http://kexue.fm/archives/4671/
+
+更别致的词向量模型(三)：描述相关的模型
+
+http://kexue.fm/archives/4675/
+
+更别致的词向量模型(四)：模型的求解
+
+http://kexue.fm/archives/4677/
+
+更别致的词向量模型(五)：有趣的结果
+
+http://kexue.fm/archives/4681/
+
+更别致的词向量模型(六)：代码、分享与结语
 
 https://mp.weixin.qq.com/s/reT4lAjwo4fHV4ctR9zbxQ
 
@@ -211,51 +305,4 @@ RNN在上式基础上添加了历史状态$$h_{t-1}$$：
 $$h_t=\sigma (W\cdot [h_{t-1},x_t]+b)$$
 
 LSTM不仅添加了历史状态$$h_{t-1}$$，还添加了所谓的**细胞状态**$$C_{t-1}$$，即上图中图像上部的水平横线。
-
-## 步骤详解
-
-神经网络的设计方式和其他算法不同，我们不需要指定具体的参数，而只需要给出一个功能的实现机制，然后借助误差的反向传播算法，训练得到相应的参数。这一点在LSTM上体现的尤为明显。
-
-LSTM主要包括以下4个步骤（也可称为4个功能或门）：
-
-### 决定丢弃信息
-
-![](/images/article/LSTM_1.png)
-
-这一部分也被称为**忘记门**。
-
-### 确定更新的信息
-
-![](/images/article/LSTM_2.png)
-
-这一部分也被称为**输入门**。
-
-### 更新细胞状态
-
-![](/images/article/LSTM_3.png)
-
-### 输出信息
-
-![](/images/article/LSTM_4.png)
-
-显然，在这里不同的参数会对上述4个功能进行任意组合，从而最终达到长时记忆的目的。
-
->注意：在一般的神经网络中，激活函数可以随意选择，无论是传统的sigmoid，还是新的tanh、ReLU，都不影响模型的大致效果。（差异主要体现在训练的收敛速度上，最终结果也可能会有细微影响。）   
->**但是，LSTM模型的上述函数不可随意替换，切记。**
-
-## LSTM的变体
-
-![](/images/article/LSTM_5.png)
-
-上图中的LSTM变体被称为**peephole connection**。其实就是将细胞状态加入各门的输入中。可以全部添加，也可以部分添加。
-
-![](/images/article/LSTM_6.png)
-
-上图中的LSTM变体被称为**coupled** 忘记和输入门。它将忘记和输入门连在了一起。
-
-![](/images/article/LSTM_7.png)
-
-上图是一个改动较大的变体**Gated Recurrent Unit（GRU）**。它将忘记门和输入门合成了一个单一的 更新门。同样还混合了细胞状态和隐藏状态，和其他一些改动。最终的模型比标准的 LSTM 模型要简单，也是非常流行的变体。
-
-
 

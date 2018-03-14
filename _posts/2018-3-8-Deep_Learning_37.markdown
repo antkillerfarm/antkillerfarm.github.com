@@ -92,7 +92,23 @@ https://baike.baidu.com/item/图灵机
 
 ![](/images/img2/Attention_4.png)
 
-参考：
+RNN模型之间的这类聚焦还有许多其它的应用。它可以用于语音识别，其中一个RNN模型处理语音信号，另一个RNN模型则滑动处理其输出，然后关注相关的区域生成文本内容。
+
+## Adaptive Computation Time
+
+标准的RNN模型每一步所消耗的计算时间都相同。这似乎与我们的直觉不符。我们在思考难题的时候难道不需要更多的时间吗？
+
+适应性计算时间（Adaptive Computation Time）是解决RNN每一步消耗不同计算量的方法。笼统地说：就是让RNN模型可以在每个时间片段内进行不同次数的计算步骤。
+
+![](/images/img2/ACT.png)
+
+
+
+![](/images/img2/ACT_2.png)
+
+
+
+## 参考
 
 http://geek.csdn.net/news/detail/106118
 
@@ -105,8 +121,6 @@ Neural Turing Machines
 http://www.robots.ox.ac.uk/~tvg/publications/talks/NeuralTuringMachines.pdf
 
 Neural Turing Machines
-
-## 参考
 
 http://blog.csdn.net/malefactor/article/details/50550211
 
@@ -199,3 +213,8 @@ https://mp.weixin.qq.com/s/MJ1578NdTKbjU-j3Uuo9Ww
 https://mp.weixin.qq.com/s/C4f0N_bVWU9YPY34t-HAEA
 
 UNC&Adobe提出模块化注意力模型MAttNet，解决指示表达的理解问题
+
+https://mp.weixin.qq.com/s/V3brXuey7Gear0f_KAdq2A
+
+基于注意力机制的交易上下文感知推荐，悉尼科技大学和电子科技大学最新工作
+

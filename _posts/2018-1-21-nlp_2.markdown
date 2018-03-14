@@ -85,3 +85,22 @@ https://mp.weixin.qq.com/s/BkKw2C3n9WsmIchJkkZxUw
 https://mp.weixin.qq.com/s/qhqCqHo9xGr_Tc-2bnS4mw
 
 用数学方程和不等式创作艺术
+
+# LSTM在Audio上的应用实例
+
+最近，领导布置寻找一些LSTM在Audio上的实例，所以特地搜集了一下。
+
+https://github.com/zzw922cn/Automatic_Speech_Recognition
+
+https://github.com/pandeydivesh15/AVSR-Deep-Speech
+
+https://github.com/sdhayalk/TensorFlow_Speech_Recognition_Challenge
+
+TensorFlow提供的Speech Commands Datasets：
+
+http://download.tensorflow.org/data/speech_commands_v0.01.tar.gz
+
+TIMIT数据集（收费）
+
+https://catalog.ldc.upenn.edu/LDC93S1
+

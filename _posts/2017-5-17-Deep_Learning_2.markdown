@@ -1,10 +1,36 @@
 ---
 layout: post
-title:  深度学习（二）——Dropout, 深度学习常用术语解释
+title:  深度学习（二）——神经元激活函数, Dropout, 深度学习常用术语解释
 category: DL 
 ---
 
-# 神经元激活函数（续）
+# 神经元激活函数
+
+## tanh函数
+
+除了阶跃函数和Sigmoid函数之外，常用的神经元激活函数，还有双曲正切函数（tanh函数）：
+
+$$f(z)=\tanh(x)=\frac{\sinh(x)}{\cosh(x)}=\frac{e^x-e^{-x}}{e^x+e^{-x}}$$
+
+其导数为：
+
+$$f'(z)=1-(f(z))^2$$
+
+![](/images/article/sigmoid_vs_tanh.png)
+
+上图是sigmoid函数（蓝）和tanh函数（绿）的曲线图。
+
+![](/images/article/sigmoid_vs_tanh_2.png)
+
+上图是sigmoid函数（蓝）和tanh函数（绿）的梯度曲线图。从中可以看出tanh函数的梯度比sigmoid函数大，因此有利于残差梯度的反向传递，这是tanh函数优于sigmoid函数的地方。但是总的来说，由于两者曲线类似，因此tanh函数仍被归类于sigmoid函数族中。
+
+下图是一些sigmoid函数族的曲线图：
+
+![](/images/article/Gjl-t.svg)
+
+有关sigmoid函数和tanh函数的权威论述，参见Yann LeCun的论文：
+
+http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf
 
 ## 稀疏性
 
@@ -242,30 +268,4 @@ http://blog.csdn.net/u013709270/article/details/70949304
 https://mp.weixin.qq.com/s/Oy2GIZLbQxmXMCLzMapWHQ
 
 Batch Normalization的分析与展望
-
-https://mp.weixin.qq.com/s/KnmQTKneSimuOGqGSPy58w
-
-详解深度学习中的Normalization，不只是BN（1）
-
-https://mp.weixin.qq.com/s/nSQvjBRMaBeoOjdHbyrbuw
-
-详解深度学习中的Normalization，不只是BN（2）
-
-https://www.jianshu.com/p/35a3bf866c46
-
-浅析数据标准化和归一化，优化机器学习算法输出结果
-
-## 鞍点
-
-鞍点（Saddle point）在微分方程中，沿着某一方向是稳定的，另一条方向是不稳定的奇点，叫做鞍点。在泛函中，既不是极大值点也不是极小值点的临界点，叫做鞍点。在矩阵中，一个数在所在行中是最大值，在所在列中是最小值，则被称为鞍点。在物理上要广泛一些，指在一个方向是极大值，另一个方向是极小值的点。
-
-![](/images/article/Saddle_point.png)
-
-上图是$$z=x^2-y^2$$的曲面图，其中的原点就是鞍点。上图形似马鞍，故名。
-
-长期以来，人们一直认为非凸优化的难点在于容易陷入局部最小，例如下图所示的Ackley函数。
-
-![](/images/article/Ackley.png)
-
-然而，LeCun和Bengio的研究表明，在high-D(高维)的情况下，局部最小会随着维度的增加，指数型的减少，在深度学习中，一个点是局部最小的概率非常小，同时鞍点无处不在。
 

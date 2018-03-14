@@ -4,6 +4,84 @@ title:  深度学习（四）——词向量
 category: DL 
 ---
 
+# Autoencoder（续）
+
+![](/images/article/Autoencoder.png)
+
+Autoencoder的结构如上图所示。它的特殊之处在于：
+
+1.输入样本就是输出样本。
+
+2.隐藏层的神经元数量小于样本的维度。
+
+粗看起来，这类恒等变换没有太大意义。然而这类恒等变换之所以能够成立，最根本的地方在于，隐藏层的神经元具有表达输出样本的能力，也就是用低维表达高维的能力。反过来，我们就可以利用这一点，实现数据的降维操作。
+
+但是，不是所有的数据都能够降维，而这种情况通常会导致Autoencoder的训练失败。
+
+和Autoencoder类似的神经网络还有：Denoising Autoencoder（DAE）、Variational Autoencoder（VAE）、Sparse Autoencoder（SAE）。
+
+参考：
+
+http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/
+
+Autoencoders
+
+http://blog.csdn.net/changyuanchn/article/details/15681853
+
+深度学习之autoencoder
+
+https://mp.weixin.qq.com/s/cago4myCcLZkv1e43T__3g
+
+深入理解自编码器
+
+http://www.cnblogs.com/neopenx/p/4370350.html
+
+降噪自动编码器（Denoising Autoencoder)
+
+https://zhuanlan.zhihu.com/p/27549418
+
+花式解释AutoEncoder与VAE
+
+https://mp.weixin.qq.com/s/lODy8ucB3Bw9Y1sy1NxTJg
+
+无监督学习中的两个非概率模型：稀疏编码与自编码器
+
+https://mp.weixin.qq.com/s/LQFuXgI7uZK2UKRfZvlVbA
+
+Variational AutoEncoder
+
+https://mp.weixin.qq.com/s/lnSMdOk8fYfdU4aGeI5j7Q
+
+未标注的数据如何处理？一文读懂变分自编码器VAE
+
+https://mp.weixin.qq.com/s/QuDa__mi1NX1wOxo5Ki94A
+
+深度学习：自动编码器基础和类型
+
+http://blog.csdn.net/losteng/article/details/51067216
+
+CAE(Convolutional Auto-Encode) 卷积自编码
+
+https://mp.weixin.qq.com/s/q-WExyS-zylMA-L8ojOgRg
+
+简单易懂的自动编码器
+
+https://mp.weixin.qq.com/s/ZlLuhu08m_RnD-h86df8sA
+
+清华大学提出SA-VAE框架，通过单样本/少样本学习生成任意风格的汉字
+
+https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
+
+面向无监督任务：DeepMind提出神经离散表示学习生成模型VQ-VAE
+
+https://mp.weixin.qq.com/s/mtZ4_pwl8_GhitgImAU0VA
+
+一文读懂什么是变分自编码器
+
+https://mp.weixin.qq.com/s/Ci0HPy3ENz1ZooB784aMcA
+
+谷歌大脑Wasserstein自编码器：新一代生成模型算法
+
 # 词向量
 
 ## One-hot Representation
@@ -197,100 +275,4 @@ https://mp.weixin.qq.com/s/vpxCP1Uw23y9XNTRUhY79w
 2.虽然我们一般使用word2vec/doc2vec来比较文本相似度，但是从原理来说，word2vec/doc2vec提供的是关联性（relatedness），而不是相似性（similarity）。这会带来以下问题：不但近义词的词向量相似，反义词的词向量也相似。因为它们和其他词的关系（也就是语境）是类似的。
 
 3.由于一个词只有一个向量来表示，因此，无法处理一词多义的情况。
-
-然而关联性并非都是坏事，有的时候也会起到意想不到的效果。比如在客服对话的案例中，客户可能会提供自己的收货地址，显然每个客户的地址都是不同的，但是有意思的是，这些地址的词向量是非常相似的。
-
-总之，**只利用无标注数据训练得到的Word Embedding在匹配度计算的实用效果上和主题模型技术相差不大，它们本质上都是基于共现信息的训练。**
-
-4.除了余弦相似度之外，词向量的模长，也是一个重要的特征，词向量模长越大，重要性越低（或者越高，取决于生成词向量的算法）。
-
-参考：
-
-https://www.zhihu.com/question/22266868
-
-Word2Vec如何解决多义词的问题？
-
-## 参考
-
-http://www.cnblogs.com/iloveai/p/word2vec.html
-
-word2vec前世今生
-
-http://www.cnblogs.com/maybe2030/p/5427148.html
-
-文本深度表示模型——word2vec&doc2vec词向量模型
-
-https://www.zhihu.com/question/29978268
-
-如何用word2vec计算两个句子之间的相似度？
-
-https://mp.weixin.qq.com/s/kGi-Hf7CX6OKcCMe7IC7zA
-
-NLP之Wrod2Vec三部曲
-
-https://mp.weixin.qq.com/s/VMK_UpOUI0y7apTGR02D1Q
-
-图解Word2Vec
-
-https://mp.weixin.qq.com/s/XMGZXAt_LUX5iTet7_SX4Q
-
-深度学习和自然语言处理：诠释词向量的魅力
-
-https://mp.weixin.qq.com/s/Rn_aJYozQ0f53Mjq4MKSwA
-
-哪种词向量模型更胜一筹？Word2Vec，WordRank or FastText?
-
-https://mp.weixin.qq.com/s/H7m7lqWpK27pJp9obXxlIQ
-
-见微知著，从细节处提升词向量的表示能力
-
-http://licstar.net/archives/328
-
-词向量和语言模型
-
-https://mp.weixin.qq.com/s/GYTxN5X7MnSQ4k5bD2l-PQ
-
-Salesforce的爱因斯坦AI最新NLP研究，通过情境化词向量从翻译中学习!
-
-https://mp.weixin.qq.com/s/GUUkXrB1iyg4rQbBtICq6A
-
-通过NMT训练的通用语境词向量：NLP中的预训练模型？
-
-http://geek.csdn.net/news/detail/135736
-
-漫谈词向量之基于Softmax与Sampling的方法
-
-https://mp.weixin.qq.com/s/nLFRJO2QEG_kAmeRYUdT3g
-
-十分钟带你看遍词向量模型
-
-https://zhuanlan.zhihu.com/p/30868040
-
-文本表示的应用与评价
-
-http://kexue.fm/archives/4667/
-
-更别致的词向量模型(一)：simpler glove
-
-http://kexue.fm/archives/4669/
-
-更别致的词向量模型(二)：对语言进行建模
-
-http://kexue.fm/archives/4671/
-
-更别致的词向量模型(三)：描述相关的模型
-
-http://kexue.fm/archives/4675/
-
-更别致的词向量模型(四)：模型的求解
-
-http://kexue.fm/archives/4677/
-
-更别致的词向量模型(五)：有趣的结果
-
-http://kexue.fm/archives/4681/
-
-更别致的词向量模型(六)：代码、分享与结语
-
-
 

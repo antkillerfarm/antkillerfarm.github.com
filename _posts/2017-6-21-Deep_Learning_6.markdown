@@ -1,10 +1,55 @@
 ---
 layout: post
-title:  深度学习（六）——神经元激活函数进阶, DRN, Bi-directional RNN
+title:  深度学习（六）——神经元激活函数进阶, DRN
 category: DL 
 ---
 
 # LSTM（续）
+
+## 步骤详解
+
+神经网络的设计方式和其他算法不同，我们不需要指定具体的参数，而只需要给出一个功能的实现机制，然后借助误差的反向传播算法，训练得到相应的参数。这一点在LSTM上体现的尤为明显。
+
+LSTM主要包括以下4个步骤（也可称为4个功能或门）：
+
+### 决定丢弃信息
+
+![](/images/article/LSTM_1.png)
+
+这一部分也被称为**忘记门**。
+
+### 确定更新的信息
+
+![](/images/article/LSTM_2.png)
+
+这一部分也被称为**输入门**。
+
+### 更新细胞状态
+
+![](/images/article/LSTM_3.png)
+
+### 输出信息
+
+![](/images/article/LSTM_4.png)
+
+显然，在这里不同的参数会对上述4个功能进行任意组合，从而最终达到长时记忆的目的。
+
+>注意：在一般的神经网络中，激活函数可以随意选择，无论是传统的sigmoid，还是新的tanh、ReLU，都不影响模型的大致效果。（差异主要体现在训练的收敛速度上，最终结果也可能会有细微影响。）   
+>**但是，LSTM模型的上述函数不可随意替换，切记。**
+
+## LSTM的变体
+
+![](/images/article/LSTM_5.png)
+
+上图中的LSTM变体被称为**peephole connection**。其实就是将细胞状态加入各门的输入中。可以全部添加，也可以部分添加。
+
+![](/images/article/LSTM_6.png)
+
+上图中的LSTM变体被称为**coupled** 忘记和输入门。它将忘记和输入门连在了一起。
+
+![](/images/article/LSTM_7.png)
+
+上图是一个改动较大的变体**Gated Recurrent Unit（GRU）**。它将忘记门和输入门合成了一个单一的 更新门。同样还混合了细胞状态和隐藏状态，和其他一些改动。最终的模型比标准的 LSTM 模型要简单，也是非常流行的变体。
 
 ## 参考
 
@@ -252,63 +297,4 @@ DRN的实现依赖于下图所示的res block：
 ![](/images/article/res_block.png)
 
 从中可以看出，所谓残差跨层传递，其实就是将本层ternsor $$\mathcal{F}(x)$$和跨层tensor x加在一起而已。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/22447440
-
-深度残差网络
-
-https://www.leiphone.com/news/201608/vhqwt5eWmUsLBcnv.html
-
-何恺明的深度残差网络PPT
-
-https://mp.weixin.qq.com/s/kcTQVesjUIPNcz2YTxVUBQ
-
-ResNet 6大变体：何恺明,孙剑,颜水成引领计算机视觉这两年
-
-https://mp.weixin.qq.com/s/5M3QiUVoA8QDIZsHjX5hRw
-
-一文弄懂ResNet有多大威力？最近又有了哪些变体？
-
-http://www.jianshu.com/p/b724411571ab
-
-ResNet到底深不深？
-
-https://mp.weixin.qq.com/s/Kgwwq5XOt88WW6KL8gADmQ
-
-你必须要知道CNN模型：ResNet
-
-# Bi-directional RNN
-
-众所周知，RNN在处理长距离依赖关系时会出现问题。LSTM虽然改进了一些，但也只能缓解问题，而不能解决该问题。
-
-研究人员发现将原文倒序（将其倒序输入编码器）产生了显著改善的结果，因为从解码器到编码器对应部分的路径被缩短了。同样，两次输入同一个序列似乎也有助于网络更好地记忆。
-
-基于这样的实验结果，1997年Mike Schuster提出了Bi-directional RNN模型。
-
->注：Mike Schuster，杜伊斯堡大学硕士（1993）+奈良科技大学博士。语音识别专家，尤其是日语、韩语方面。Google研究员。
-
-论文：
-
-《Bidirectional Recurrent Neural Networks》
-
-下图是Bi-directional RNN的结构示意图：
-
-![](/images/article/Bi_directional_RNN.png)
-
-从图中可以看出，Bi-directional RNN有两个隐层，分别处理前向和后向的时序信息。
-
-除了原始的Bi-directional RNN之外，后来还出现了Deep Bi-directional RNN。
-
-![](/images/article/Deep_Bi_RNN.png)
-
-上图是包含3个隐层的Deep Bi-directional RNN。
-
-参见：
-
-https://mp.weixin.qq.com/s/_CENjzEK1kjsFpvX0H5gpQ
-
-结合堆叠与深度转换的新型神经翻译架构：爱丁堡大学提出BiDeep RNN
-
 

@@ -212,4 +212,12 @@ http://blog.csdn.net/hadoopdevelop/article/details/79455758
 
 如何系统学习知识图谱-胖子哥的实践经验分享。一个实践派的知识图谱blog
 
+https://mp.weixin.qq.com/s/qw9i24goTsVgdk1qW6ie9A
+
+知识图谱数据构建的“硬骨头”，阿里工程师如何拿下？
+
+https://mp.weixin.qq.com/s/qsRTBR5g5LZ6UR7Wtqagyw
+
+上交大发布知识图谱AceKG，超1亿实体，近100G数据量
+
 

@@ -396,6 +396,10 @@ https://pan.baidu.com/s/1qYPUHNQ
 
 小抄合集
 
+https://mp.weixin.qq.com/s/1--i1OhxRNPvNnmP9bFo3g
+
+全机器学习和Python的27个速查表
+
 https://mp.weixin.qq.com/s/8wI49YBAs7ckkYdc4B_WNQ
 
 14张思维导图读懂Python编程核心知识体系
@@ -403,10 +407,6 @@ https://mp.weixin.qq.com/s/8wI49YBAs7ckkYdc4B_WNQ
 https://mp.weixin.qq.com/s/HKHLiCqEAtoCAqf4CHv86w
 
 python机器学习算法代码实现
-
-https://mp.weixin.qq.com/s/1--i1OhxRNPvNnmP9bFo3g
-
-全机器学习和Python的27个速查表
 
 https://mp.weixin.qq.com/s/PtZ3YvFrUgbK5y3pcAeW9A
 

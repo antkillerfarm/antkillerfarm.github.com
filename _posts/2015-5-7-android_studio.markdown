@@ -253,15 +253,15 @@ Java的GUI框架，大致有：
 
 ## Ubuntu安装Oracle JDK
 
-`sudo apt-get install software-properties-common`
+`sudo apt install software-properties-common`
 
 `sudo add-apt-repository ppa:webupd8team/java`
 
 这一步，可能会出现安装密钥失败的情况。不过不要紧，后面安装jdk的时候，手动选择Yes就可以了。
 
-`sudo apt-get update`
+`sudo apt update`
 
-`sudo apt-get install oracle-java7-installer`
+`sudo apt install oracle-java7-installer`
 
 这样安装之后，还需要设置环境变量JAVA_HOME。（在/etc/profile中）
 

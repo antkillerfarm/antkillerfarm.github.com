@@ -258,4 +258,8 @@ https://mp.weixin.qq.com/s/TiXILy4l6Q3dxVwapyd9KQ
 
 二维码太丑？用风格迁移生成个性二维码了解一下
 
+https://mp.weixin.qq.com/s/7GHBH79kWIpEBLYX-VEd7A
+
+CycleGAN：图片风格，想换就换
+
 

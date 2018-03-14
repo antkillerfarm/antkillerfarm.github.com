@@ -202,6 +202,10 @@ https://mp.weixin.qq.com/s/mOYUCc3xKMfVw81B6zSeNw
 
 7种最常用的机器学习算法衡量指标
 
+https://mp.weixin.qq.com/s/zvxB6VqrSOosgGSViCmjEQ
+
+不止准确率：为分类任务选择正确的机器学习度量指标
+
 # Earth mover's distance
 
 推土机距离（EMD）是两个概率分布之间的距离度量的一种方式。如果将区间D的概率分布比作沙堆P，那么$$P_r$$和$$P_\theta$$之间的EMD距离，就是推土机将$$P_r$$改造为$$P_\theta$$所需要的工作量。

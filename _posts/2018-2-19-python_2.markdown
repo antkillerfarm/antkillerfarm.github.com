@@ -334,4 +334,7 @@ http://blog.csdn.net/linda1000/article/details/8315892
 
 单引号、双引号和三双引号的区别
 
+https://mp.weixin.qq.com/s/czqO4Lo1Jt9zqg2UKNlLYg
+
+手把手教你用Python创建微信聊天机器人
 

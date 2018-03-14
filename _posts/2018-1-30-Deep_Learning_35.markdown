@@ -134,6 +134,10 @@ https://zhuanlan.zhihu.com/p/32489557
 
 深度学习的快速目标跟踪
 
+https://zhuanlan.zhihu.com/p/26654891
+
+EBT：Proposal与Tracking不得不说的秘密
+
 # FlowNet
 
 论文：
