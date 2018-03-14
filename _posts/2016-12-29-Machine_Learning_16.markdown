@@ -58,6 +58,10 @@ https://mp.weixin.qq.com/s/wtvwWZhqCRjJgdCpa7qdJw
 
 矩阵分解在协同过滤推荐中的应用
 
+https://mp.weixin.qq.com/s/sUQPaiYAfRpCFryrHMqPoA
+
+想写出人见人爱的推荐系统，先了解经典矩阵分解技术
+
 # 主成分分析
 
 真实的训练数据总是存在各种各样的问题。

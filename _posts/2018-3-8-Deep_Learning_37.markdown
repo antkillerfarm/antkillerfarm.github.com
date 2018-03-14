@@ -102,11 +102,17 @@ RNN模型之间的这类聚焦还有许多其它的应用。它可以用于语�
 
 ![](/images/img2/ACT.png)
 
-
+上图是ACT的网络结构图。下面来分步讲解一下。
 
 ![](/images/img2/ACT_2.png)
 
+这一步就是典型的RNN+输出各个状态的带权重组合。
 
+![](/images/img2/ACT_3.png)
+
+![](/images/img2/ACT_4.png)
+
+![](/images/img2/ACT_5.png)
 
 ## 参考
 
