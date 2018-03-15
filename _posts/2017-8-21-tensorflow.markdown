@@ -116,6 +116,8 @@ bazel编译相当消耗资源，在配置低的机器上，可通过如下选项
 
 `sudo pip install /tmp/tensorflow_pkg/tensorflow-1.3.0-cp27-cp27mu-linux_x86_64.whl`
 
+>安装之后，不要在tensorflow源代码文件夹下运行python，会报cannot import name 'build_info'的错误。
+
 加入CPU指令集优化之后的版本，要比通用版快50%～100%，因此，编译源码安装还是很有价值的。
 
 GPU编译基本和CPU编译差不多，唯一需要注意的是：Ubuntu 16.04的gcc编译器是5.4.0，然而CUDA 8.0不支持5.0以上的编译器，因此需要降级，把编译器版本降到4.9。命令如下：

@@ -370,3 +370,7 @@ https://zhuanlan.zhihu.com/p/34437681
 
 情感预测SHINE: Signed Heterogeneous Information Network Embedding for Sentiment Link Prediction引介
 
+https://mp.weixin.qq.com/s/Ng3tyXqiO499dhNDX5561g
+
+扔掉代码表！用RNN“破解”摩斯电码
+

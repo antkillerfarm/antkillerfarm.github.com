@@ -115,6 +115,10 @@ https://mp.weixin.qq.com/s/6KRNawRE1i8de3ctgv6aVg
 
 机器学习词汇表：纵览机器学习基本词汇与概念
 
+https://mp.weixin.qq.com/s/AtImcIBaRIJVXpOP2hruBQ
+
+Google发布机器学习术语表 (包括简体中文)
+
 # simhash
 
 代码：

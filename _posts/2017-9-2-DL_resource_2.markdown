@@ -336,7 +336,11 @@ https://mp.weixin.qq.com/s/irvBbPKENiZX9G_6wh5c-Q
 
 https://mp.weixin.qq.com/s/28n8g_epHsYB0I9GVc_lww
 
-陈天奇团队TVM重磅更新：直接在浏览器使用GPU 
+陈天奇团队TVM重磅更新：直接在浏览器使用GPU
+
+https://mp.weixin.qq.com/s/fx0Pfu0MOPjSkzi5mL6U_A
+
+清华&斯坦福提出深度梯度压缩DGC，大幅降低分布式训练网络带宽需求
 
 ## 面试
 

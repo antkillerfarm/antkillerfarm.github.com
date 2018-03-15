@@ -220,4 +220,7 @@ https://mp.weixin.qq.com/s/qsRTBR5g5LZ6UR7Wtqagyw
 
 上交大发布知识图谱AceKG，超1亿实体，近100G数据量
 
+https://mp.weixin.qq.com/s/QbKGm04k_cQbTxnfUFZQBQ
+
+深度学习在知识图谱构建中的应用
 

@@ -436,6 +436,14 @@ https://mp.weixin.qq.com/s/TL87BY3DdP1bolc0Sxkahg
 
 gRPC客户端创建和调用原理解析
 
+https://mp.weixin.qq.com/s/k5gNa71eRbnxt_oSR-pmyw
+
+MySQL锁之源码探索
+
+https://mp.weixin.qq.com/s/agS2-wu6HGO__QfbIt7Esw
+
+数字签名是什么？
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

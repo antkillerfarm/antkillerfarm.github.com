@@ -97,6 +97,10 @@ git的reset和checkout的区别
 
 这个在代码review的时候比较有用。如果上一个commit在review的时候发现问题，可以再次修改后，合并到上一个commit中，如此反复直到review成功。
 
+14.查看远程分支
+
+`git branch -r`
+
 ## 如何git超大版本库
 
 自从两次git完整的linux kernel，都因为网络问题，而中途失败之后，不甘心的我，继续在网上寻找答案。
