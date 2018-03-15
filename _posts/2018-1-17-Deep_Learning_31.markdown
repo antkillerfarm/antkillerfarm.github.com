@@ -112,6 +112,10 @@ https://homes.cs.washington.edu/~luheng/
 
 卷积本质上是一个局部运算。对词向量的卷积，实际上等效于n-gram的词袋模型。
 
+论文：
+
+《Convolutional Sequence to Sequence Learning》
+
 参见：
 
 http://www.jeyzhang.com/cnn-apply-on-modelling-sentence.html
