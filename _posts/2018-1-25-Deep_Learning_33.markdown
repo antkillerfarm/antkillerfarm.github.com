@@ -96,6 +96,10 @@ https://zhuanlan.zhihu.com/p/30830319
 
 Geoffrey Hinton的CapsNet在云平台上应用
 
+https://mp.weixin.qq.com/s/fZUiAjhSg1pESsVspqaCFQ
+
+胶囊网络是如何克服卷积神经网络的这些缺点的？
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Ubuntu使用技巧（二）, CentOS
+title:  Ubuntu使用技巧（二）
 category: linux 
 ---
 
@@ -197,6 +197,16 @@ Linux下的远程桌面软件主要有RealVNC和rdesktop。前者支持VNC协议
 
 `rdesktop -u administrator -p ****** -a 16 192.168.1.1`
 
+# Xming
+
+除了远程桌面之外，X Server也是远程执行GUI程序的一种方法。Xming就是Windows平台上用的较多的X Server。
+
+官网：
+
+https://sourceforge.net/projects/xming/
+
+Xming安装运行之后，还需要对putty进行设置，Connection->SSH->X11->Enable X11 forwarding。
+
 # 安装工具
 
 目前研发用的主流操作系统越来越多，相比于10年前的Windows几乎一统天下，目前Linux、Mac OS X在开发群体中，也有一定的流行度。更不用说Linux本身还有众多的发行版，软件部署工作在这么复杂的环境中，实非易事。
@@ -340,79 +350,5 @@ http://www.ubuntuthemes.org/
 # Battle of Wesnoth
 
 在逛Ubuntu软件中心的时候，发现了Battle of Wesnoth这个开源的回合制战旗游戏。试着玩了一下，感觉蛮不错的。正好这个项目在Source Forge上使用Git管理源代码。考虑到Android Source也是用Git管理的，于是就用Git下载了Battle of Wesnoth的source来熟悉一下Git的用法。
-
-# CentOS
-
-## 关于repo设置
-
-最近在数台PC上部署软件，系统都是CentOS 6。结果发现其中有一台机器无法使用yum安装软件。
-
-解决办法：
-
-1.进入/etc/yum.repos.d中删除CentOS6-Base.repo之外的所有文件。
-
-2.`yum clean all`
-
-第1步很重要，从事后情况来看，故障是由于某些之前的repo现在已经无法连接所致导致的。
-
-## start-stop-daemon
-
-start-stop-daemon是Ubuntu中用的比较多的工具，但是CentOS中并没有。由于start-stop-daemon在ubuntu的dpkg包中，和apt关系比较近，因此直接下载源码，也不是个好办法。
-
-https://packagecloud.io/willgarcia/start-stop-daemon/install
-
-上面的网页提供了一种办法。但是由于网络不好，中间步骤的文件有时需要手动下载才行。
-
-## 关于epel
-
-1.安装epel源
-
-`yum install epel-release`
-
-2.修改/etc/yum.repos.d/epel.repo
-
-将mirrorlist中的https修改为http。否则，会报如下错误：
-
-`Error: Cannot retrieve metalink for repository: epel`
-
-## DNF
-
-`yum install dnf`
-
-这个似乎需要Cent OS 7以上，Cent OS 6反正是不行的。
-
-## 关于VNC
-
-1.安装
-
-`yum install tightvnc-server`
-
-这里虽然包名叫做tightvnc-server，但实际上用的是tigervnc-server，因此以后者为包名来安装也是可以的。
-
-2.初次启动，设置密码
-
-`vncpasswd`
-
-3.配置分辨率、端口
-
-修改/etc/sysconfig/vncservers：
-
-{% highlight bash %}
-## Single User ##
-VNCSERVERS="1:<user name>"
-VNCSERVERARGS[1]="-geometry 1280x1024"
-{% endhighlight %}
-
-默认端口一般是5900~5904。这里的数组下标表明它使用的端口是5901。
-
-4.启动服务
-
-`/etc/init.d/vncserver start`
-
-参考：
-
-http://www.tecmint.com/install-tightvnc-remote-desktop/
-
-Install TightVNC Server in RHEL/CentOS and Fedora to Access Remote Desktops
 
 

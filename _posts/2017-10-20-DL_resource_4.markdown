@@ -156,6 +156,10 @@ https://mp.weixin.qq.com/s/jBaxkJMQ_6RwtMmY7U29-w
 
 # AI医疗
 
+https://github.com/albarqouni/Deep-Learning-for-Medical-Applications
+
+基于深度学习的医疗影像论文汇总
+
 https://mp.weixin.qq.com/s/vtJUM94oYpN_h3Sdg3exLQ
 
 张益肇：AI+医疗，微软有哪些布局？

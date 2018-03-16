@@ -266,4 +266,12 @@ https://mp.weixin.qq.com/s/_upoBXADzTXEduYxr6ZxRQ
 
 非自回归神经机器翻译
 
+https://mp.weixin.qq.com/s/sREYZGiK2OmuETrPdeJptA
+
+从冷战到深度学习：一篇图文并茂的机器翻译史
+
+https://mp.weixin.qq.com/s/wLnWLNWyZdBUAPfQvg01yQ
+
+哈工大博士生周青宇：从编码器与解码器端改进生成式句子摘要
+
 

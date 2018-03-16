@@ -274,7 +274,11 @@ http://mp.weixin.qq.com/s/kDoogc5yIeX6D4_YWC5YQA
 
 https://mp.weixin.qq.com/s/rUMAaIJ14eEXbRmssnUK4w
 
-基于区域的目标检测——细粒度 
+基于区域的目标检测——细粒度
+
+https://mp.weixin.qq.com/s/Oy7YAp1NoVICQZqXRz0uVg
+
+基于深度学习的目标检测综述(一）
 
 # RCNN
 

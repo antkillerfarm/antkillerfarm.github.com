@@ -262,4 +262,8 @@ https://mp.weixin.qq.com/s/7GHBH79kWIpEBLYX-VEd7A
 
 CycleGAN：图片风格，想换就换
 
+https://mp.weixin.qq.com/s/b8g_wNqi4dD5x9whj9ZN4A
+
+争议、流派，有关GAN的一切：Ian Goodfellow Q&A
+
 
