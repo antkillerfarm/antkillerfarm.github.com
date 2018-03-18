@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十一）——依存分析, Image Caption Generation
+title:  深度学习（三十一）——依存分析, 信息检索, Image Caption Generation
 category: DL 
 ---
 
@@ -155,6 +155,50 @@ https://github.com/largelymfs/topical_word_embeddings
 http://nlp.csai.tsinghua.edu.cn/~zm/
 
 张檬，清华本科（2013）+博士（在读）。
+
+# 信息检索
+
+Information Retrieval是用户进行信息查询和获取的主要方式，是查找信息的方法和手段。狭义的信息检索仅指信息查询（Information Search）。即用户根据需要，采用一定的方法，借助检索工具，从信息集合中找出所需要信息的查找过程。广义的信息检索是信息按一定的方式进行加工、整理、组织并存储起来，再根据信息用户特定的需要将相关信息准确的查找出来的过程。
+
+这方面的DL应用可参见以下的综述文章：
+
+《MatchZoo: A Toolkit for Deep Text Matching》
+
+## ARC-I & ARC-II
+
+《Convolutional neural network architectures for matching natural language sentences》
+
+## DSSM
+
+《Learning deep structured semantic models for web search using clickthrough data》
+
+## CDSSM
+
+《Learning semantic representations using convolutional neural networks for web search》
+
+## MV-LSTM
+
+《A deep architecture for semantic matching with multiple positional sentence representations》
+
+## CNTN
+
+《Convolutional Neural Tensor Network Architecture for Community-Based Question Answering》
+
+## DRMM
+
+《A deep relevance matching model for ad-hoc retrieval》
+
+## MatchPyramid
+
+《Text Matching as Image Recognition》
+
+## Match-SRNN
+
+《Match-SRNN: Modeling the Recursive Matching Structure with Spatial RNN》
+
+## K-NRM
+
+《End-to-End Neural Ad-hoc Ranking with Kernel Pooling》
 
 # Image Caption Generation
 

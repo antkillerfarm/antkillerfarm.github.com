@@ -354,3 +354,35 @@ https://mp.weixin.qq.com/s/UboQNEywHSBAYc0740qmzQ
 
 让机器学会创造新的概念：DeepMind提出符号-概念关联网络SCAN
 
+https://mp.weixin.qq.com/s/AAmQymWdKQDeL8DQacEZ3A
+
+用深度学习解决Bongard问题
+
+https://mp.weixin.qq.com/s/210l9K94KMqtJtqbrZ-mgg
+
+打开黑箱重要一步，MIT提出TbD-net，弥合视觉推理模型的性能与可解释性鸿沟
+
+https://mp.weixin.qq.com/s/PC5KXU0zmE1eg2k_S9_pQg
+
+增加深度，加速神经网络优化？这是一份反直觉的实验结果
+
+https://mp.weixin.qq.com/s/sbV5SL6fAGad5KlBoqUKFQ
+
+斯坦福大学教授Christopher Manning提出全可微神经网络架构MAC：可用于机器推理
+
+https://mp.weixin.qq.com/s/uztYEW_azetOkOGiZcbCuw
+
+JeffDean又用深度学习搞事情：这次要颠覆整个计算机系统结构设计。这篇blog介绍了如何用DL方法提高内存访问的命中率。
+
+https://mp.weixin.qq.com/s/1oDM6HvHKPBT6rKTSzUfVA
+
+手把手：教你如何用深度学习模型预测加密货币价格
+
+https://zhuanlan.zhihu.com/p/34437681
+
+情感预测SHINE: Signed Heterogeneous Information Network Embedding for Sentiment Link Prediction引介
+
+https://mp.weixin.qq.com/s/Ng3tyXqiO499dhNDX5561g
+
+扔掉代码表！用RNN“破解”摩斯电码
+

@@ -444,6 +444,10 @@ https://mp.weixin.qq.com/s/agS2-wu6HGO__QfbIt7Esw
 
 数字签名是什么？
 
+https://mp.weixin.qq.com/s/bk22ljMgODKSfZxibic0rw
+
+这是你见过最简单的 “算法说明书”
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

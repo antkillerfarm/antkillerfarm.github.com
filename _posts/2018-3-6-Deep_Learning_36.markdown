@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十六）——深度推荐系统, Recursive NN, Spatial Transformer Networks, SOM, 多任务学习
+title:  深度学习（三十六）——深度推荐系统, Recursive NN, Spatial Transformer Networks, SOM, 多任务学习, AutoDL
 category: DL 
 ---
 
@@ -237,5 +237,59 @@ NLP多任务学习：一种层次增长的神经网络结构
 https://mp.weixin.qq.com/s/X6FwTgr282hbqgOz3oBX-w
 
 多任务学习概述论文：从定义和方法到应用和原理分析
+
+# AutoDL
+
+DL领域目前存在的主要问题之一是：如何设计网络结构和调整超参数。目前的做法，通常依赖于作者的直觉，属于典型的拍脑袋想点子。
+
+既然AI已经能够做很多事了，那么有没有可能，使用AI自动生成网络结构呢？
+
+Google的这两篇论文在这里做了一些尝试：
+
+《Neural Architecture Search With Reinforcement Learning》
+
+《Learning Transferable Architectures for Scalable Image Recognition》
+
+这里主要采用强化学习的方法，在一个广阔的搜索空间中，寻找最合适的网络结构。但对于计算能力提出了很高的要求。论文中提到，他们使用了500块GPU。**有钱真的是可以为所欲为的。**
+
+这里学到的模型，一般被称为NASNet。
+
+参考：
+
+http://blog.csdn.net/u014380165/article/details/78525687
+
+自学网络结构（二）：Learning Transferable Architectures for Scalable Image Recognition
+
+http://blog.csdn.net/u014380165/article/details/78525500
+
+自学网络结构（一）：Neural Architecture Search With Reinforcement Learning
+
+https://www.zhihu.com/question/67477086
+
+如何评价Google最新的论文NASNet？
+
+https://mp.weixin.qq.com/s/MkXBtGq4xt5YOh1-uhMBbg
+
+循环神经网络自动生成程序：谷歌大脑提出“优先级队列训练”
+
+https://mp.weixin.qq.com/s/D0HngY-U7_fP4vqDIjvaew
+
+自动选模型+调参：谷歌AutoML背后的技术解析
+
+https://mp.weixin.qq.com/s/vctbsYk4LRwrQ7_Hs7fqkg
+
+谷歌大脑发布神经架构搜索新方法：提速1000倍
+
+https://mp.weixin.qq.com/s/tWO1Qv1aoemC8nHvJXZyeA
+
+清华大学张长水教授：神经网络模型的结构优化
+
+https://mp.weixin.qq.com/s/9qpZUVoEzWaY8zILc3Pl1A
+
+进化算法+AutoML，谷歌提出新型神经网络架构搜索方法
+
+https://mp.weixin.qq.com/s/HJ5caV1bQi7qVDeNXZ21qg
+
+手把手教你用Cloud AutoML做毒蜘蛛分类器
 
 

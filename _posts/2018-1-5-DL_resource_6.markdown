@@ -366,3 +366,31 @@ https://mp.weixin.qq.com/s/ZTjklje_3fcAn6ZQ23yd4A
 
 ScanComplete：可实现3D扫描的大规模“场景完成”和“语义分割”
 
+https://mp.weixin.qq.com/s/giwq3IZs6KSILSyXDn90pA
+
+破解AI大脑黑盒迈出新一步！谷歌现在更懂机器，还开源了研究工具
+
+https://mp.weixin.qq.com/s/KtO3OTZ-bZ6m0ZSI6jTyjw
+
+OpenAI提出Reptile：可扩展的元学习算法
+
+https://mp.weixin.qq.com/s/VdZLGE3DU80Ycid1ePIR6w
+
+DIY发现新行星操作指南：谷歌开源了行星发现代码
+
+https://mp.weixin.qq.com/s/2w_Bwqx9C9KwenK480sVMQ
+
+如何可视化卷积网络分类图像时关注的焦点
+
+https://mp.weixin.qq.com/s/joRcvCQwLYgRd29mfPd7XA
+
+中科大&微软提出立体神经风格迁移模型，可用于3D视频风格化
+
+https://zhuanlan.zhihu.com/p/34286453
+
+林倞：Beyond Supervised Deep Learning--后深度学习时代的挑战
+
+https://mp.weixin.qq.com/s/5OMT6BvqkUgtshow_tLkNw
+
+精准防御对抗性攻击，清华大学提出对抗正则化训练方法DeepDefense
+

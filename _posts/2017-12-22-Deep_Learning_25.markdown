@@ -4,7 +4,31 @@ title:  深度学习（二十五）——Deep Speech, WaveNet, L2 Normalization
 category: DL 
 ---
 
-# CTC（续）
+# CTC
+
+## 算法推导（续）
+
+所以，可能的情况实际上只有两种：
+
+### Case 1
+
+![](/images/img2/CTC_6.png)
+
+上图表示的是语音在两个相同token之间切换的情况。（这种情况也就是上面提到的hello例子中，语音在两个l之间过渡的情况。）
+
+在这种情况下，$$\alpha$$的计算公式如下：
+
+$$\alpha_{s,t}=(\alpha_{s-1,t-1}+\alpha_{s,t-1})\cdot p_t(Z_s \mid X)$$
+
+### Case 2
+
+![](/images/img2/CTC_7.png)
+
+上图表示的是语音在两个不同token之间切换的情况。
+
+在这种情况下，$$\alpha$$的计算公式如下：
+
+$$\alpha_{s,t}=(\alpha_{s-2,t-1}+\alpha_{s-1,t-1}+\alpha_{s,t-1})\cdot p_t(Z_s \mid X)$$
 
 ## 推断计算
 

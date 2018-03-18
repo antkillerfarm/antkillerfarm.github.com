@@ -258,6 +258,10 @@ https://mp.weixin.qq.com/s/TZQcN8rYSc2tH8C1UvyF4g
 
 从预处理到部署：如何使用Lore快速构建机器学习模型
 
+https://mp.weixin.qq.com/s/7g81BnGAD5DpS_1pDxA6QQ
+
+Uber开源神经进化算法开发的交互式可视化工具VINE
+
 ## 量子计算 & 遗传算法
 
 https://www.zhihu.com/question/28171555

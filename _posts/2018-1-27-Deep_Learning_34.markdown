@@ -140,6 +140,10 @@ https://mp.weixin.qq.com/s/_lmz0l1vP_CQ6p6DdFnHWA
 
 谷歌大脑工程师的深度强化学习劝退文
 
+https://mp.weixin.qq.com/s/zRcq1LMtK72Cl4T3877tgQ
+
+牛津教授吐槽DeepMind心智神经网络，还推荐了这些多智能体学习论文
+
 # 模型压缩
 
 对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。

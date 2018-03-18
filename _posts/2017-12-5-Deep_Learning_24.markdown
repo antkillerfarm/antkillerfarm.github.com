@@ -176,6 +176,10 @@ https://mp.weixin.qq.com/s/p_VjFwwDCu1i_ovUljaoVw
 
 阿里巴巴语音交互智能团队：基于线性网络的语音合成说话人自适应
 
+https://mp.weixin.qq.com/s/xR172RUG3JO59_2cJj_U2A
+
+显著超越流行长短时记忆网络，阿里提出DFSMN语音识别声学模型
+
 # CTC
 
 ## 概述
@@ -287,25 +291,4 @@ $$Z=[\epsilon,y_1,\epsilon,y_2,\dots,\epsilon,y_U,\epsilon]$$
 
 不同于掷骰子过程中，骰子的每种状态都有可能出现的情况，语音由于具有连续性，因此有些情况实际上是不可能的。比如上图的$$x_1$$就不大可能是后三个符号。
 
-所以，可能的情况实际上只有两种：
-
-### Case 1
-
-![](/images/img2/CTC_6.png)
-
-上图表示的是语音在两个相同token之间切换的情况。（这种情况也就是上面提到的hello例子中，语音在两个l之间过渡的情况。）
-
-在这种情况下，$$\alpha$$的计算公式如下：
-
-$$\alpha_{s,t}=(\alpha_{s-1,t-1}+\alpha_{s,t-1})\cdot p_t(Z_s \mid X)$$
-
-### Case 2
-
-![](/images/img2/CTC_7.png)
-
-上图表示的是语音在两个不同token之间切换的情况。
-
-在这种情况下，$$\alpha$$的计算公式如下：
-
-$$\alpha_{s,t}=(\alpha_{s-2,t-1}+\alpha_{s-1,t-1}+\alpha_{s,t-1})\cdot p_t(Z_s \mid X)$$
 

@@ -112,6 +112,10 @@ https://mp.weixin.qq.com/s/__ESveAdBS9KJf26R3EMVA
 
 对比TensorFlow提升树与XGBoost：我们该使用怎样的梯度提升方法
 
+https://mp.weixin.qq.com/s/TD3RbdDidCrcL45oWpxNmw
+
+从结构到性能，一文概述XGBoost、Light GBM和CatBoost的同与不同
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。

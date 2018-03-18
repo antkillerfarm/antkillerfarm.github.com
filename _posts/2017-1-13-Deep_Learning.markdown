@@ -117,6 +117,8 @@ $$y_j=\sum _{i=1}^nw_{ij}x_i-\theta_j$$
 
 http://blog.csdn.net/u013007900/article/details/50066315
 
+神经网络学习之M-P模型
+
 # 单层感知器 vs. 多层感知器
 
 神经网络的层数越多，其表达力越丰富，如下表所示：

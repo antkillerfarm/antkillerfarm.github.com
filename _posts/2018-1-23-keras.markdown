@@ -176,6 +176,10 @@ https://mp.weixin.qq.com/s/xUPrv1ju1M9TmHbqgQBn7Q
 
 用Python实现类FaceID的人脸识别？一文告诉你该怎么做
 
+https://mp.weixin.qq.com/s/cmBlGiu-ATHAorYCoQhMBg
+
+RNN-LSTM的Keras实现：以预测比特币和以太坊价格为例
+
 # OpenAI Gym
 
 Openai gym是一个用于开发和比较强化学习（reinforcement learning，RL）算法的工具包，与其他的数值计算库兼容，如tensorflow或者theano库。现在主要支持的是python语言，以后将支持其他语言。

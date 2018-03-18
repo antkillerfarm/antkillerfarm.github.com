@@ -322,4 +322,11 @@ https://mp.weixin.qq.com/s/rqDYpGj6dG0Zwn5C6kNApA
 
 群雄逐“图”，百度缘何备受关注？这是一篇关于高精地图的blog
 
+https://mp.weixin.qq.com/s/aCAFcCWkyAcz-wyqhOldNg
+
+基于图像的场景三维建模
+
+http://vision.ia.ac.cn/
+
+中国科学院自动化研究所模式识别国家重点实验室机器视觉课题组，主要研究领域包括场景三维重建、视觉定位与姿态估计、机器人视觉导航、视觉伺服、目标检测与跟踪等。
 

@@ -142,115 +142,27 @@ $$Attention(\boldsymbol{Q},\boldsymbol{K},\boldsymbol{V}) = softmax\left(\frac{\
 
 $$Attention(\boldsymbol{q}_t,\boldsymbol{K},\boldsymbol{V}) = \sum_{s=1}^m \frac{1}{Z}\exp\left(\frac{\langle\boldsymbol{q}_t, \boldsymbol{k}_s\rangle}{\sqrt{d_k}}\right)\boldsymbol{v}_s$$
 
-其中Z是归一化因子。事实上q,k,v分别是query,key,value的简写，K,V是一一对应的，它们就像是key-value的关系，那么上式的意思就是通过$$q_t$$这个query，通过与各个$$k_s$$内积的并softmax的方式，来得到$$q_t$$与各个$$v_s$$的相似度，然后加权求和，得到一个$$d_v$$维的向量。其中因子$$\sqrt{d_k}$$起到调节作用，使得内积不至于太大（太大的话softmax后就非0即1了，不够“soft”了）。
+其中Z是归一化因子。事实上q,k,v分别是query,key,value的简写，K,V是一一对应的，它们就像是key-value的关系，那么上式的意思就是$$q_t$$这个query，通过与各个$$k_s$$内积的并softmax的方式，来得到$$q_t$$与各个$$v_s$$的相似度，然后加权求和，得到一个$$d_v$$维的向量。其中因子$$\sqrt{d_k}$$起到调节作用，使得内积不至于太大（太大的话softmax后就非0即1了，不够“soft”了）。
 
-## 参考
+概括的说就是：**比较Q和K的相似度，以得到合适的V。**
 
-http://geek.csdn.net/news/detail/106118
+## Multi-Head Attention
 
-Attention and Augmented Recurrent Neural Networks译文
+![](/images/img2/Attention_6.png)
 
-http://blog.csdn.net/rtygbwwwerr/article/details/50548311
+这个是Google提出的新概念，是Attention机制的完善。不过从形式上看，它其实就再简单不过了，就是把Q,K,V通过参数矩阵映射一下，然后再做Attention，把这个过程重复做h次，结果拼接起来就行了，可谓“大道至简”了。具体来说：
 
-Neural Turing Machines
+$$head_i = Attention(\boldsymbol{Q}\boldsymbol{W}_i^Q,\boldsymbol{K}\boldsymbol{W}_i^K,\boldsymbol{V}\boldsymbol{W}_i^V)$$
 
-http://www.robots.ox.ac.uk/~tvg/publications/talks/NeuralTuringMachines.pdf
+所谓“多头”（Multi-Head），就是只多做几次同样的事情（参数不共享），然后把结果拼接。
 
-Neural Turing Machines
+## Self Attention
 
-http://blog.csdn.net/malefactor/article/details/50550211
+到目前为止，对Attention层的描述都是一般化的，我们可以落实一些应用。比如，如果做阅读理解的话，Q可以是篇章的词向量序列，取K=V
 
-自然语言处理中的Attention Model
+为问题的词向量序列，那么输出就是所谓的Aligned Question Embedding。
 
-https://yq.aliyun.com/articles/65356
+而在Google的论文中，大部分的Attention都是Self Attention，即“自注意力”，或者叫内部注意力。
 
-图文结合详解深度学习Memory & Attention
-
-http://www.cosmosshadow.com/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/2016/03/08/Attention.html
-
-Attention
-
-http://geek.csdn.net/news/detail/50558
-
-深度学习和自然语言处理中的attention和memory机制
-
-https://zhuanlan.zhihu.com/p/25928551
-
-用深度学习（CNN RNN Attention）解决大规模文本分类问题-综述和实践
-
-http://blog.csdn.net/leo_xu06/article/details/53491400
-
-视觉注意力的循环神经网络模型
-
-https://mp.weixin.qq.com/s/XrlveG0kwij2qNL45TZdBg
-
-Attention的另类用法
-
-https://zhuanlan.zhihu.com/p/31547842
-
-深度学习中Attention Mechanism详细介绍：原理、分类及应用
-
-https://zhuanlan.zhihu.com/p/32089282
-
-Attention学习笔记
-
-https://mp.weixin.qq.com/s/0yb-YRGe-q4-vpKpuE4D_w
-
-多种注意力机制互补完成VQA（视觉问答）
-
-https://mp.weixin.qq.com/s/LQ7uv0-AakkHE5b17yemqw
-
-Awni Hannun：序列模型Attention Model中的问题与挑战
-
-https://mp.weixin.qq.com/s/xr_1ZYbvADMMwgxLEAflCw
-
-如何在语言翻译中理解Attention Mechanism？
-
-https://mp.weixin.qq.com/s/Nyq_36aFmQYRWdpgbgxpuA
-
-将注意力机制引入RNN，解决5大应用领域的序列预测问题
-
-https://mp.weixin.qq.com/s/2gxp7A38epQWoy7wK8Nl6A
-
-谷歌翻译最新突破，“关注机制”让机器读懂词与词的联系
-
-https://mp.weixin.qq.com/s/g2PcmsDW9ixUCh_yP8W-Vg
-
-各类Seq2Seq模型对比及《Attention Is All You Need》中技术详解
-
-https://mp.weixin.qq.com/s/FtI94xY6a8TEvFCHfjMnmA
-
-小组讨论谷歌机器翻译Attention is All You Need
-
-https://mp.weixin.qq.com/s/SqIMkiP1IZMGWzwZWGOI7w
-
-谈谈神经网络的注意机制和使用方法
-
-https://mp.weixin.qq.com/s/POYTh4Jf7HttxoLhrHZQhw
-
-基于双向注意力机制视觉问答pyTorch实现
-
-https://mp.weixin.qq.com/s/EMCZHuvk5dOV_Rz00GkJMA
-
-近年火爆的Attention模型，它的套路这里都有！
-
-https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA
-
-阿里北大提出新attention建模框架，一个模型预测多种行为
-
-https://mp.weixin.qq.com/s/Yq3S4WrsQRQC06GvRgGjTQ
-
-打入神经网络思维内部
-
-https://mp.weixin.qq.com/s/MJ1578NdTKbjU-j3Uuo9Ww
-
-基于文档级问答任务的新注意力模型
-
-https://mp.weixin.qq.com/s/C4f0N_bVWU9YPY34t-HAEA
-
-UNC&Adobe提出模块化注意力模型MAttNet，解决指示表达的理解问题
-
-https://mp.weixin.qq.com/s/V3brXuey7Gear0f_KAdq2A
-
-基于注意力机制的交易上下文感知推荐，悉尼科技大学和电子科技大学最新工作
+所谓Self Attention，其实就是Attention(X,X,X)，X就是前面说的输入序列。也就是说，在序列内部做Attention，寻找序列内部的联系。
 

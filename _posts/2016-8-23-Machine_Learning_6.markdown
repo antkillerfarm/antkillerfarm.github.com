@@ -242,15 +242,7 @@ https://www.zhihu.com/question/41066458
 
 现在还有必要对SVM深入学习吗？
 
-# 学习理论
+https://mp.weixin.qq.com/s?__biz=MzU0MDQ3MDk3NA==&mid=2247483671&idx=1&sn=0348314f21cb5be0f727054334f58445
 
-## 偏差和方差
-
-![](/images/article/interpolation.png)
-
-回到之前的欠拟合与过拟合的例子。我们把预测值和实际值之间的误差称为泛化误差。注意：泛化误差不是拟合模型和训练样本值之间的差，后者通常被称作模型误差。
-
-偏差（bias）和方差（variance）都是泛化误差（generalization error）的组成部分。但遗憾的是，这两个名词至今也没有公认的严格定义，这里只做定性的描述，即：欠拟合的误差主要是偏差，而过拟合的误差主要是方差。
-
-
+libsvm中的svm-toy尝试
 
