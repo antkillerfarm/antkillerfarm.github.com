@@ -144,6 +144,10 @@ https://mp.weixin.qq.com/s/zRcq1LMtK72Cl4T3877tgQ
 
 牛津教授吐槽DeepMind心智神经网络，还推荐了这些多智能体学习论文
 
+https://mp.weixin.qq.com/s/To3pnx1hVq_4p7UnQVMw9A
+
+斯坦福大学&DeepMind联合提出机器人控制新方法，RL+IL端到端地学习视觉运动策略
+
 # 模型压缩
 
 对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。

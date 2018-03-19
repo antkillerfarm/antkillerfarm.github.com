@@ -448,6 +448,10 @@ https://mp.weixin.qq.com/s/bk22ljMgODKSfZxibic0rw
 
 这是你见过最简单的 “算法说明书”
 
+https://mp.weixin.qq.com/s/C68icGtwh3IzuUbANaRXEg
+
+也许，这样理解HTTPS更容易
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

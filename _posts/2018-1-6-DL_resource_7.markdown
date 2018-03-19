@@ -333,3 +333,14 @@ Mixup vs. SamplePairing：ICLR2018投稿论文的两种数据增广方式
 https://mp.weixin.qq.com/s/mtocyqpybSEpwekS20xgmQ
 
 使用CNN生成图像先验，实现更广泛场景的盲图像去模糊
+
+https://mp.weixin.qq.com/s/Uc0VFMmYoOFvH0c7IExKIg
+
+何恺明团队计算机视觉最新进展：从特征金字塔网络、Mask R-CNN到学习分割一切
+
+https://mp.weixin.qq.com/s/YpU4rXJ9XGJza9mXeV0NSg
+
+从背景介绍到未来挑战，一文综述移动和无线网络深度学习研究
+
+
+

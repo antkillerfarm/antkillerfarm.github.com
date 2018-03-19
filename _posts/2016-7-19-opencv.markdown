@@ -356,4 +356,8 @@ https://mp.weixin.qq.com/s/7es1wtJXatJR2eHScrk2_w
 
 深度相机大盘点（1）
 
+https://mp.weixin.qq.com/s/m7q6jHbdnb7fw4lKIDfVWw
+
+camera接口之MIPI联盟浅谈
+
 

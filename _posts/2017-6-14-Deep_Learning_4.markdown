@@ -38,21 +38,9 @@ http://www.cnblogs.com/neopenx/p/4370350.html
 
 降噪自动编码器（Denoising Autoencoder)
 
-https://zhuanlan.zhihu.com/p/27549418
-
-花式解释AutoEncoder与VAE
-
 https://mp.weixin.qq.com/s/lODy8ucB3Bw9Y1sy1NxTJg
 
 无监督学习中的两个非概率模型：稀疏编码与自编码器
-
-https://mp.weixin.qq.com/s/LQFuXgI7uZK2UKRfZvlVbA
-
-Variational AutoEncoder
-
-https://mp.weixin.qq.com/s/lnSMdOk8fYfdU4aGeI5j7Q
-
-未标注的数据如何处理？一文读懂变分自编码器VAE
 
 https://mp.weixin.qq.com/s/QuDa__mi1NX1wOxo5Ki94A
 
@@ -65,18 +53,6 @@ CAE(Convolutional Auto-Encode) 卷积自编码
 https://mp.weixin.qq.com/s/q-WExyS-zylMA-L8ojOgRg
 
 简单易懂的自动编码器
-
-https://mp.weixin.qq.com/s/ZlLuhu08m_RnD-h86df8sA
-
-清华大学提出SA-VAE框架，通过单样本/少样本学习生成任意风格的汉字
-
-https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
-
-面向无监督任务：DeepMind提出神经离散表示学习生成模型VQ-VAE
-
-https://mp.weixin.qq.com/s/mtZ4_pwl8_GhitgImAU0VA
-
-一文读懂什么是变分自编码器
 
 https://mp.weixin.qq.com/s/Ci0HPy3ENz1ZooB784aMcA
 

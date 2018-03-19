@@ -36,9 +36,19 @@ category: technology
 
 回退之后，如果不满意，就需要前进操作，以恢复后续的更新。然而这个时候有个麻烦的地方，在`git log`中已经找不到后续的更新记录，也就查不到commit id。这时可以用`git reflog`查看git操作记录，以获得想要的commit id，并checkout之。
 
-5.查看远程仓库的地址
+5.远程操作
+
+查看远程仓库的地址：
 
 有的时候时间一长，就会搞忘当初下载代码时的远程仓库的地址。这时可以使用`git remote -v`查看之。
+
+查看远程分支：
+
+`git branch -r`
+
+checkout远程分支：
+
+`git checkout -b dev origin/dev`
 
 6.check out有submodule的版本库
 
@@ -97,9 +107,19 @@ git的reset和checkout的区别
 
 这个在代码review的时候比较有用。如果上一个commit在review的时候发现问题，可以再次修改后，合并到上一个commit中，如此反复直到review成功。
 
-14.查看远程分支
+14. SSH
 
-`git branch -r`
+{% highlight bash %}
+cd ~/.ssh
+ssh-keygen
+cat ~/.ssh/id_rsa.pub
+{% endhighlight %}
+
+参考：
+
+https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key
+
+Generating Your SSH Public Key
 
 ## 如何git超大版本库
 

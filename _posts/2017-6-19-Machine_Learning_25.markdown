@@ -150,6 +150,10 @@ https://mp.weixin.qq.com/s/ZL6UWrBB7qr8jp2QRA1MAQ
 
 方法总结：教你处理机器学习中不平衡类问题
 
+https://mp.weixin.qq.com/s/V5d3kbpXBf4883TQ_sq37A
+
+遇到有这六大缺陷的数据集该怎么办？这有一份数据处理急救包
+
 # 强化学习
 
 ## 监督学习的局限

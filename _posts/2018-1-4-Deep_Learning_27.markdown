@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十七）——视频目标分割
+title:  深度学习（二十七）——VAE, 视频目标分割
 category: DL 
 ---
 
@@ -55,6 +55,16 @@ Local Attention是一种介于Kelvin Xu所提出的Soft Attention和Hard Attenti
 《Attention-over-Attention Neural Networks for Reading Comprehension》
 
 ![](/images/img2/Attention-over-Attention.png)
+
+## 总结
+
+从最初的原始Attention，到后面的各种示例，不难看出**Attention实际上是一个大箩筐，凡是不好用CNN、RNN、FC概括的累计乘加，基本都可冠以XX Attention的名义**。
+
+虽然权重的确代表了Attention的程度，然而直接叫累计乘加，似乎更接近操作本身一些。
+
+考虑到神经网络的各种操作基本都是累计乘加的变种，因此，Attention is All You Need实际上是很自然的结论，你总可以对Attention进行修改，让它实现CNN、RNN、FC的效果。
+
+这点在AI芯片领域尤为突出，**无论IC架构差异如何巨大，硬件底层基本就是累加器。**
 
 ## 参考
 
@@ -165,6 +175,56 @@ UNC&Adobe提出模块化注意力模型MAttNet，解决指示表达的理解问�
 https://mp.weixin.qq.com/s/V3brXuey7Gear0f_KAdq2A
 
 基于注意力机制的交易上下文感知推荐，悉尼科技大学和电子科技大学最新工作
+
+# VAE
+
+变分自编码器（Variational Auto-Encoder，VAE）是Autoencoder的一种扩展。
+
+以下部分主要摘自：
+
+https://kexue.fm/archives/5253
+
+变分自编码器：原来是这么一回事
+
+## 分布变换
+
+通常我们会拿VAE跟GAN比较，的确，它们两个的目标基本是一致的——希望构建一个从隐变量Z生成目标数据X的模型，但是实现上有所不同。更准确地讲，它们是假设了Z服从某些常见的分布（比如正态分布或均匀分布），然后希望训练一个模型$$X=g(Z)$$，这个模型能够将原来的概率分布映射到训练集的概率分布，也就是说，它们的目的都是进行分布之间的映射。
+
+现在假设Z服从标准的正态分布，那么我就可以从中采样得到若干个$$Z_1, Z_2, \dots, Z_n$$，然后对它做变换得到$$\hat{X}_1 = g(Z_1),\hat{X}_2 = g(Z_2),\dots,\hat{X}_n = g(Z_n)$$，我们怎么判断这个通过f构造出来的数据集，它的分布跟我们目标数据集的分布是不是一样的呢？
+
+![](/images/img2/VAE.png)
+
+**生成模型的难题就是判断生成分布与真实分布的相似度，因为我们只知道两者的采样结果，不知道它们的分布表达式。**
+
+有读者说不是有KL散度吗？当然不行，因为KL散度是根据两个概率分布的表达式来算它们的相似度的，然而目前我们并不知道它们的概率分布的表达式，我们只有一批从构造的分布采样而来的数据$$\{\hat{X}_1,\hat{X}_2,\dots,\hat{X}_n\}$$，还有一批从真实的分布采样而来的数据$$\{X_1,X_2,\dots,X_n\}$$（也就是我们希望生成的训练集）。我们只有样本本身，没有分布表达式，当然也就没有方法算KL散度。
+
+![](/images/img2/VAE_2.png)
+
+参考：
+
+https://mp.weixin.qq.com/s/ZlLuhu08m_RnD-h86df8sA
+
+清华大学提出SA-VAE框架，通过单样本/少样本学习生成任意风格的汉字
+
+https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
+
+面向无监督任务：DeepMind提出神经离散表示学习生成模型VQ-VAE
+
+https://mp.weixin.qq.com/s/mtZ4_pwl8_GhitgImAU0VA
+
+一文读懂什么是变分自编码器
+
+https://mp.weixin.qq.com/s/LQFuXgI7uZK2UKRfZvlVbA
+
+Variational AutoEncoder
+
+https://mp.weixin.qq.com/s/lnSMdOk8fYfdU4aGeI5j7Q
+
+未标注的数据如何处理？一文读懂变分自编码器VAE
+
+https://zhuanlan.zhihu.com/p/27549418
+
+花式解释AutoEncoder与VAE
 
 # 视频目标分割
 

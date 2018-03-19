@@ -330,5 +330,16 @@ https://mp.weixin.qq.com/s/j0kiWTlrntzvthUJlxZBsA
 
 数据转换：从单体式应用到微服务的低风险演变
 
+https://mp.weixin.qq.com/s/zlPZr1hsyUN3lUo9WzIDbg
+
+Service Mesh实践指南：从单体应用到Service Mesh的曲折历程
+
+https://mp.weixin.qq.com/s/S_JsSAp-bZdJ4cemoKFVCw
+
+Service Mesh是大方向，那Database Mesh呢？
+
+https://mp.weixin.qq.com/s/Db6Am-bAyufg3m67Ta5GBQ
+
+当你和天猫精灵对话时，它在想什么？阿里智能对话技术深度解读
 
 

@@ -408,4 +408,8 @@ https://mp.weixin.qq.com/s/VKK4M_0S7HaBkvURqWgseQ
 
 PaddlePaddle与TensorFlow的对比分析
 
+https://mp.weixin.qq.com/s/ync8iu8nmpJoI5Sfnj8DqQ
+
+百度深度学习平台PaddlePaddle框架解析
+
 

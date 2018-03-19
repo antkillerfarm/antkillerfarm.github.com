@@ -32,6 +32,8 @@ Ubuntu下的安装方法是：
 
 对于可移植的python包，直接使用pip安装即可，在ubuntu官网搜也搜不到的。
 
+ubuntu官方支持2.x和3.x的共存，用pip2和pip3加以区分，默认的pip实际上是pip2。
+
 pip的cache路径：
 
 win7：
@@ -59,6 +61,10 @@ linux:
 指定版本：
 
 `pip install -v pycrypto==2.3`
+
+列出已安装的包：
+
+`pip list`
 
 ## IDE
 
@@ -178,8 +184,6 @@ Unofficial Windows Binaries for Python Extension Packages
 L.append(var)   #追加元素
 L.extend(list)  #追加list，即合并list到L上
 {% endhighlight %}
-
-
 
 ## Python中的括号
 
