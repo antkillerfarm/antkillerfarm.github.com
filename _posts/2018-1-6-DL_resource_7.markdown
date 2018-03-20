@@ -342,5 +342,8 @@ https://mp.weixin.qq.com/s/YpU4rXJ9XGJza9mXeV0NSg
 
 从背景介绍到未来挑战，一文综述移动和无线网络深度学习研究
 
+https://mp.weixin.qq.com/s/taUMg4wWooniwDVmLRahYQ
+
+为什么深度学习仍未取代传统的计算机视觉技术？
 
 

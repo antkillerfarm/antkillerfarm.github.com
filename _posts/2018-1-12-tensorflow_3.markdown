@@ -106,4 +106,8 @@ https://mp.weixin.qq.com/s/ffW21oBKTDOc4sB8POhcnw
 
 聊一聊TensorFlow的数据导入机制
 
+https://mp.weixin.qq.com/s/nwymOr03cqm0ifpoBjL9Eg
+
+TensorFlow变量保存和恢复
+
 

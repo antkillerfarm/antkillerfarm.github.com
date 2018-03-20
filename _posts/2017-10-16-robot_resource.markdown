@@ -330,3 +330,7 @@ http://vision.ia.ac.cn/
 
 中国科学院自动化研究所模式识别国家重点实验室机器视觉课题组，主要研究领域包括场景三维重建、视觉定位与姿态估计、机器人视觉导航、视觉伺服、目标检测与跟踪等。
 
+https://mp.weixin.qq.com/s/Ef6aWgs9xkHaAwTX4rxjKA
+
+用激光雷达感知世界
+

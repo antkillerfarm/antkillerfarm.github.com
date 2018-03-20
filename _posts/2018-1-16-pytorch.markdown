@@ -132,3 +132,8 @@ https://mp.weixin.qq.com/s/abd62HNlen9sepH3CrmpGg
 
 PyTorch为何如此高效好用？来探寻深度学习框架的内部架构
 
+https://mp.weixin.qq.com/s/OMjfck4jlMneGZ1NJxbjKQ
+
+PyTorch有哪些坑/bug？
+
+

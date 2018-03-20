@@ -222,6 +222,10 @@ http://www.cnblogs.com/whw19818/
 
 一个ISP的blog
 
+https://github.com/codeauroraforum/gtec-demo-framework/tree/master/DemoApps/OpenVX/SoftISP
+
+一个基于OpenVX的ISP软实现。
+
 # Harris
 
 http://blog.csdn.net/lwzkiller/article/details/54633670

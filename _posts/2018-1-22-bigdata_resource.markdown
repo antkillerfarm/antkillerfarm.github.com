@@ -342,4 +342,7 @@ https://mp.weixin.qq.com/s/Db6Am-bAyufg3m67Ta5GBQ
 
 当你和天猫精灵对话时，它在想什么？阿里智能对话技术深度解读
 
+https://mp.weixin.qq.com/s/910pclefErC4Tx7NujJamg
+
+分布式缓存---Memcached
 

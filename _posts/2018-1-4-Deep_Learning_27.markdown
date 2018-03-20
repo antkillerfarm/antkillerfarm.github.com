@@ -60,11 +60,11 @@ Local Attention是一种介于Kelvin Xu所提出的Soft Attention和Hard Attenti
 
 从最初的原始Attention，到后面的各种示例，不难看出**Attention实际上是一个大箩筐，凡是不好用CNN、RNN、FC概括的累计乘加，基本都可冠以XX Attention的名义**。
 
-虽然权重的确代表了Attention的程度，然而直接叫累计乘加，似乎更接近操作本身一些。
+虽然，权重的确代表了Attention的程度，然而直接叫累计乘加，似乎更接近操作本身一些。
 
 考虑到神经网络的各种操作基本都是累计乘加的变种，因此，Attention is All You Need实际上是很自然的结论，你总可以对Attention进行修改，让它实现CNN、RNN、FC的效果。
 
-这点在AI芯片领域尤为突出，**无论IC架构差异如何巨大，硬件底层基本就是累加器。**
+这点在AI芯片领域尤为突出，**无论IC架构差异如何巨大，硬件底层基本就是乘累加器。**
 
 ## 参考
 
@@ -180,6 +180,10 @@ https://mp.weixin.qq.com/s/V3brXuey7Gear0f_KAdq2A
 
 变分自编码器（Variational Auto-Encoder，VAE）是Autoencoder的一种扩展。
 
+论文：
+
+《Auto-Encoding Variational Bayes》
+
 以下部分主要摘自：
 
 https://kexue.fm/archives/5253
@@ -198,17 +202,21 @@ https://kexue.fm/archives/5253
 
 有读者说不是有KL散度吗？当然不行，因为KL散度是根据两个概率分布的表达式来算它们的相似度的，然而目前我们并不知道它们的概率分布的表达式，我们只有一批从构造的分布采样而来的数据$$\{\hat{X}_1,\hat{X}_2,\dots,\hat{X}_n\}$$，还有一批从真实的分布采样而来的数据$$\{X_1,X_2,\dots,X_n\}$$（也就是我们希望生成的训练集）。我们只有样本本身，没有分布表达式，当然也就没有方法算KL散度。
 
+虽然遇到困难，但还是要想办法解决的。GAN的思路很直接粗犷：既然没有合适的度量，那我干脆把这个度量也用神经网络训练出来吧。而VAE则使用了一个精致迂回的技巧。
+
+## VAE的传统理解
+
+首先我们有一批数据样本$$\{X_1,\dots,X_n\}$$，其整体用X来描述，我们本想根据$$\{X_1,\dots,X_n\}$$得到X的分布p(X)，如果能得到的话，那我直接根据p(X)来采样，就可以得到所有可能的X了（包括$$\{X_1,\dots,X_n\}$$以外的），这是一个终极理想的生成模型了。当然，这个理想很难实现，于是我们将分布改一改：
+
+$$p(X)=\sum_Z p(X|Z)p(Z)$$
+
+此时$$p(X\mid Z)$$就描述了一个由Z来生成X的模型，而我们假设Z服从标准正态分布，也就是$$p(Z)=\mathcal{N}(0,I)$$。如果这个理想能实现，那么我们就可以先从标准正态分布中采样一个Z，然后根据Z来算一个X，也是一个很棒的生成模型。接下来就是结合自编码器来实现重构，保证有效信息没有丢失，再加上一系列的推导，最后把模型实现。框架的示意图如下：
+
 ![](/images/img2/VAE_2.png)
 
+
+
 参考：
-
-https://mp.weixin.qq.com/s/ZlLuhu08m_RnD-h86df8sA
-
-清华大学提出SA-VAE框架，通过单样本/少样本学习生成任意风格的汉字
-
-https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
-
-面向无监督任务：DeepMind提出神经离散表示学习生成模型VQ-VAE
 
 https://mp.weixin.qq.com/s/mtZ4_pwl8_GhitgImAU0VA
 
@@ -225,6 +233,14 @@ https://mp.weixin.qq.com/s/lnSMdOk8fYfdU4aGeI5j7Q
 https://zhuanlan.zhihu.com/p/27549418
 
 花式解释AutoEncoder与VAE
+
+https://mp.weixin.qq.com/s/ZlLuhu08m_RnD-h86df8sA
+
+清华大学提出SA-VAE框架，通过单样本/少样本学习生成任意风格的汉字
+
+https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
+
+面向无监督任务：DeepMind提出神经离散表示学习生成模型VQ-VAE
 
 # 视频目标分割
 

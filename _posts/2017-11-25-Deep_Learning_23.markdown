@@ -212,6 +212,10 @@ https://www.zhihu.com/question/62399257
 
 如何理解LSTM后接CRF？
 
+https://mp.weixin.qq.com/s/cAqpclkkeVrTiifz07HC1g
+
+新型循环神经网络IndRNN：可构建更长更深的RNN
+
 # 语音识别
 
 ## 书籍
