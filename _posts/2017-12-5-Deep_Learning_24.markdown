@@ -6,6 +6,84 @@ category: DL
 
 # 语音识别（续）
 
+## 传统方法
+
+http://blog.csdn.net/zouxy09/article/details/9140207
+
+语音信号处理之（一）动态时间规整（DTW）
+
+http://blog.csdn.net/zouxy09/article/details/9141875
+
+语音信号处理之（二）基音周期估计（Pitch Detection）
+
+http://blog.csdn.net/zouxy09/article/details/9153255
+
+语音信号处理之（三）矢量量化（Vector Quantization）
+
+http://blog.csdn.net/zouxy09/article/details/9156785
+
+语音信号处理之（四）梅尔频率倒谱系数（MFCC）
+
+https://my.oschina.net/jamesju/blog/193343
+
+语音特征参数MFCC提取过程详解
+
+https://liuyanfeier.github.io/2017/10/26/2017-10-27-Kaldi%E4%B9%8Bfbank%E5%92%8Cmfcc%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/
+
+kaldi之fbank和mfcc特征提取
+
+http://blog.csdn.net/wxb1553725576/article/details/78048546
+
+Kaldi特征提取之-FBank
+
+## Kaldi
+
+Kaldi是一个语音识别的工具包。官网：
+
+https://github.com/kaldi-asr/kaldi
+
+## HTK
+
+Hidden Markov Model Toolkit是另一个语音识别的工具包。官网：
+
+http://htk.eng.cam.ac.uk/
+
+## WFST
+
+Weighted-Finite-State-Transducer
+
+https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/ParallelizingWFSTSpeechDecoders.ICASSP2016.pdf
+
+PARALLELIZING WFST SPEECH DECODERS
+
+http://www.cs.nyu.edu/~mohri/pub/csl01.pdf
+
+Weighted Finite-State Transducers in Speech Recognition
+
+## Tacotron
+
+论文：
+
+《Tacotron: A Fully End-to-End Text-To-Speech Synthesis Model》
+
+![](/images/img2/Tacotron.png)
+
+![](/images/img2/Tacotron_2.png)
+
+参考：
+
+https://mp.weixin.qq.com/s/MJE2JRYU7KakNKmHkD42CA
+
+谷歌发布TTS新系统Tacotron 2：直接从文本生成类人语音
+
+https://mp.weixin.qq.com/s/uh-Gh8BSxBi-jjG6-d7-UQ
+
+Tacotron一种端到端的Text-to-Speech合成模型
+
+https://www.jiqizhixin.com/articles/2017-03-31-5
+
+谷歌全端到端语音合成系统Tacotron：直接从字符合成语音
+
 ## 参考
 
 https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=400189223&idx=1&sn=1cb32bee42de626443ebadbf065ec79c
@@ -242,53 +320,4 @@ $$Y^*=\mathop{\text{argmax}}_{Y} p(Y \mid X)$$
 CTC允许的对齐是与输入的长度相同。 在合并重复并移除ε标记后，我们允许任何映射到Y的对齐方式。
 
 如果Y在同一行中有两个相同的字符，那么一个有效的对齐必须在它们之间有一个$$\epsilon$$。 有了这个规则，我们就可以区分崩“hello”和“helo”。
-
-CTC对齐有一些显著的特性：
-
-首先，X和Y之间允许的对齐是单调的。如果我们前进到下一个输入，我们可以保持相应的输出相同或前进到下一个输入。
-
-第二个属性是X到Y的对齐是多对一的。一个或多个输入元素可以对齐到一个输出元素，但反过来不成立。
-
-这意味着第三个属性：Y的长度不能大于X的长度。
-
-![](/images/img2/full_collapse_from_audio.png)
-
-上图是CTC对齐的一般步骤：
-
-1.输入序列（如音频的频谱图）导入一个RNN模型。
-
-2.RNN给出每个time step所对应的音节的概率$$p_t(a \mid X)$$。上图中音节的颜色越深，其概率p越高。
-
-3.计算各种时序组合的概率，给出整个序列的概率。
-
-4.合并重复并移除空白之后，得到最终的Y。
-
-严格的说，一对(X,Y)的CTC目标函数是：
-
-$$p(Y\mid X)=\sum_{A\in A_{X,Y}}\prod_{t=1}^Tp_t(a_t\mid X)$$
-
-这里的模型通常使用一个RNN来估计每个time step的概率，但是也可以自由使用任何学习算法，在给定一个固定尺寸输入片段的情况下产生一个输出类别的分布。
-
-在实际训练中，针对训练集$$\mathcal{D}$$，一般采用最小化log-likelihood的方式计算CTC loss：
-
-$$\sum_{(X,Y)\in \mathcal{D}}-\log p(Y\mid X)$$
-
-采用穷举法计算上述目标函数，计算量是非常巨大的。我们可以使用动态规划算法更快的计算loss。关键点是，如果两个对齐在同一步已经达到了相同的输出，可以合并它们。如下图所示：
-
-![](/images/img2/CTC_3.png)
-
-这里如果把音节匹配换成掷骰子的例子，就可以看出这实际上和《机器学习（二十二）》中HMM所解决的第二个问题是类似的，而HMM的前向计算正是一种动态规划算法。动态规划算法可参见《机器学习（二十七）》。
-
-下面我们来介绍一下具体的计算方法。
-
-首先使用$$\epsilon$$分隔Y中的符号，就得到了序列Z：
-
-$$Z=[\epsilon,y_1,\epsilon,y_2,\dots,\epsilon,y_U,\epsilon]$$
-
-用$$\alpha_{s,t}$$表示子序列$$Z_{1:s}$$在t步之后的CTC值。显然，我们需要计算的目标$$P(Y\mid X)$$和最后一步的$$\alpha$$有关，但只有计算出了上一步的$$\alpha$$，我们才能计算当前的$$\alpha$$。
-
-![](/images/img2/CTC_4.png)
-
-不同于掷骰子过程中，骰子的每种状态都有可能出现的情况，语音由于具有连续性，因此有些情况实际上是不可能的。比如上图的$$x_1$$就不大可能是后三个符号。
-
 

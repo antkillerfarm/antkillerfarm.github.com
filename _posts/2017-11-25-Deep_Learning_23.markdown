@@ -1,8 +1,78 @@
 ---
 layout: post
-title:  深度学习（二十三）——LCNN, LSTM进阶, 语音识别
+title:  深度学习（二十三）——SVDF, LCNN, LSTM进阶, 语音识别
 category: DL 
 ---
+
+# Fast Image Processing（续）
+
+![](/images/article/MCA.png)
+
+上图是本文模型的网络结构图。它的设计特点如下：
+
+1.采用Multi-Scale Context Aggregation作为基础网络。MCA的内容参见《深度学习（九）》。
+
+2.传统MCA一般有下采样的过程，但这里由于网络输入和输出的尺寸维度是一样的，因此，所有的feature maps都是等大的。
+
+3.借鉴FCN的思想，去掉了池化层和全连接层。
+
+4.L1~L3主要用于图片的特征提取和升维，而L4~L5则用于特征的聚合和降维，并最终和输出数据的尺寸维度相匹配。
+
+在normalization方面，作者发现有的operators经过normalization之后，精度会上升，而有的精度反而会下降，因此为了统一模型，定义如下的normalization运算：
+
+$$\Psi^s(x)=\lambda_sx+\mu_sBN(x)$$
+
+Loss函数为：
+
+$$\mathcal{l(K,B)}=\sum_i\frac{1}{N_i}\|\hat f (I_i;\mathcal{K,B})-f(I_i)\|^2$$
+
+这实际上就是RGB颜色空间的MSE误差。
+
+为了检验模型的泛化能力，本文还使用RAISE数据集作为交叉验证的数据集。该数据集的网址：
+
+http://mmlab.science.unitn.it/RAISE/
+
+RAISE数据集包含了8156张高分辨率原始照片，由3台不同的相机拍摄，并给出了相机的型号和参数。
+
+# TNG
+
+Tiny Network Graphics是图鸭科技推出一种基于深度学习的图片压缩技术。由于商业因素，这里没有论文，技术细节也不详，但是下图应该还是有些用的。
+
+![](/images/img2/TNG.png)
+
+参考：
+
+https://mp.weixin.qq.com/s/WYsxFX4LyM562bZD8rO95w
+
+图鸭发布图片压缩TNG，节省55%带宽
+
+# SVDF
+
+SVDF是UCB和Google Speech Group的作品，主要用于简化Speech模型的计算量。
+
+论文：
+
+《Compressing Deep Neural Networks using a Rank-Constrained Topology》
+
+代码：
+
+https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/speech_commands/models.py
+
+音频数据通常是一个[time, frequency]的二维tensor，直接放入FC网络，会导致较大的计算量。（下图左半部分所示）
+
+![](/images/img2/SVDF.png)
+
+SVDF将每个time的frequency作为一组，进行FC之后，再和其他组的结果进一步FC。上图右半部分所示的是time的filters为1的时候的SVDF。当然filters也可以为其他值，和CNN类似，filters越多，提取的特征越多。
+
+从原理来说，SVDF相当于用两层FC来拟合1层FC，即：
+
+$$w_{i,j}^{(m)}\approx \alpha_i^{(m)}\beta_i^{(m)}$$
+
+SVDF将运算量从$$Cd$$变为$$(C+d)k$$，这里的k为filters numbers。
+
+这实际上就是2维tensor的SVD，只不过SVD是线性变换，而这里是非线性变换而已。（参见《机器学习（十五）》中的ALS算法部分）
+
+实际上，SVDF和之前在《深度学习（十六）》中提到的Fast R-CNN的FC加速，原理是基本一致的。
 
 # LCNN
 
@@ -125,8 +195,6 @@ $$W=\color{blue}{n_c\times n_c\times 4}+n_i\times n_c\times 4+\color{red}{n_c\ti
 
 >Hasim Sak，土耳其伊斯坦布尔海峡大学博士，Google研究员。
 
-## 《Long Short-Term Memory Based Recurrent Neural Network Architectures for Large Vocabulary Speech Recognition》（续）
-
 LSTMP的结构图如下：
 
 ![](/images/img2/LSTMP.png)
@@ -230,81 +298,4 @@ https://mp.weixin.qq.com/s/cAqpclkkeVrTiifz07HC1g
 >个人主页：   
 >http://www.cs.colorado.edu/~martin/
 
-## 传统方法
-
-http://blog.csdn.net/zouxy09/article/details/9140207
-
-语音信号处理之（一）动态时间规整（DTW）
-
-http://blog.csdn.net/zouxy09/article/details/9141875
-
-语音信号处理之（二）基音周期估计（Pitch Detection）
-
-http://blog.csdn.net/zouxy09/article/details/9153255
-
-语音信号处理之（三）矢量量化（Vector Quantization）
-
-http://blog.csdn.net/zouxy09/article/details/9156785
-
-语音信号处理之（四）梅尔频率倒谱系数（MFCC）
-
-https://my.oschina.net/jamesju/blog/193343
-
-语音特征参数MFCC提取过程详解
-
-https://liuyanfeier.github.io/2017/10/26/2017-10-27-Kaldi%E4%B9%8Bfbank%E5%92%8Cmfcc%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/
-
-kaldi之fbank和mfcc特征提取
-
-http://blog.csdn.net/wxb1553725576/article/details/78048546
-
-Kaldi特征提取之-FBank
-
-## Kaldi
-
-Kaldi是一个语音识别的工具包。官网：
-
-https://github.com/kaldi-asr/kaldi
-
-## HTK
-
-Hidden Markov Model Toolkit是另一个语音识别的工具包。官网：
-
-http://htk.eng.cam.ac.uk/
-
-## WFST
-
-Weighted-Finite-State-Transducer
-
-https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/ParallelizingWFSTSpeechDecoders.ICASSP2016.pdf
-
-PARALLELIZING WFST SPEECH DECODERS
-
-http://www.cs.nyu.edu/~mohri/pub/csl01.pdf
-
-Weighted Finite-State Transducers in Speech Recognition
-
-## Tacotron
-
-论文：
-
-《Tacotron: A Fully End-to-End Text-To-Speech Synthesis Model》
-
-![](/images/img2/Tacotron.png)
-
-![](/images/img2/Tacotron_2.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/MJE2JRYU7KakNKmHkD42CA
-
-谷歌发布TTS新系统Tacotron 2：直接从文本生成类人语音
-
-https://mp.weixin.qq.com/s/uh-Gh8BSxBi-jjG6-d7-UQ
-
-Tacotron一种端到端的Text-to-Speech合成模型
-
-https://www.jiqizhixin.com/articles/2017-03-31-5
-
-谷歌全端到端语音合成系统Tacotron：直接从字符合成语音
 

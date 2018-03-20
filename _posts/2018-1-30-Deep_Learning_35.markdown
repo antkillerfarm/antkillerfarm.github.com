@@ -138,6 +138,10 @@ https://zhuanlan.zhihu.com/p/26654891
 
 EBT：Proposal与Tracking不得不说的秘密
 
+https://mp.weixin.qq.com/s/Pp3vnD2DMDYuiatI8drJrw
+
+PTAV：实时高精度目标追踪框架
+
 # FlowNet
 
 论文：

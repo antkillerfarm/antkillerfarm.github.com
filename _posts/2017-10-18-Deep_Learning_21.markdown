@@ -1,10 +1,44 @@
 ---
 layout: post
-title:  深度学习（二十一）——SRCNN, DRCN, VDSR, ESPCN, FSRCNN
+title:  深度学习（二十一）——SRCNN, DRCN, VDSR
 category: DL 
 ---
 
 # 图像超分辨率算法（续）
+
+## 前DL时代的SR
+
+从信号处理的角度来说，LR之所以无法恢复成HR，主要在于丢失了图像的高频信息。（Nyquist采样定理）
+
+>Harry Nyquist，1889~1976，University of North Dakota本硕（1914,1915）+耶鲁博士（1917）。AT&T贝尔实验室电子工程师。IEEE Medal of Honor获得者（1960）。
+
+>IEEE Medal of Honor是IEEE的最高奖，除了1963年之外，每年只有1人得奖，个别年份甚至会轮空。
+
+最简单的当然是《图像处理理论（二）》中提到的梯度锐化和拉普拉斯锐化，这种简单算法当然不要指望有什么好效果，聊胜于无而已。这是1995年以前的主流做法。
+
+稍微复杂的方法，如同CV的其它领域经历了“信号处理->ML->DL”的变迁一样，SR也进入了ML阶段。
+
+![](/images/img2/SR.png)
+
+上图是两种典型的SR算法。
+
+左图算法的中心思想是从图片中找出相似的大尺度区域，然后利用这个大区域的边缘信息进行SR。但这个方法对于那些只出现一次的边缘信息是没什么用的。
+
+于是就有了右图的算法。对各种边缘信息建立一个数据库，使用时从数据库中挑一个最类似的边缘信息进行SR。这个方法比上一个方法好一些，但不够鲁棒，图片稍作改动，就有可能无法检索到匹配的边缘信息了。
+
+ML时代的代表算法还有：
+
+《Image Super-Resolution via Sparse Representation》
+
+这篇论文是黄煦涛和马毅小组的Jianchao Yang的作品。
+
+>黄煦涛（Thomas Huang），1936年生。生于上海，国立台湾大学本科（1956）+MIT硕博（1960,1963）。UIUC教授。美国工程院院士，中国科学院+中国工程院外籍院士。
+
+>马毅，清华本科（1995）+UCB硕博（1997,2000）。UCB教授。IEEE fellow。   
+>个人主页：   
+>http://yima.csl.illinois.edu/
+
+这篇论文提出的算法，在形式上和后文这些DL算法已经非常类似了，也是基于HR和LR配对的有监督训练。区别只在于这篇论文使用矩阵的稀疏表示来拟合SR函数，而DL算法使用神经网络拟合SR函数。前者是线性变换，而后者是非线性变换。
 
 ## 参考
 
@@ -178,66 +212,4 @@ VDSR模型主要有以下几点贡献：
 http://blog.csdn.net/u011692048/article/details/77512310
 
 超分辨率重建之VDSR
-
-# ESPCN
-
-ESPCN（efficient sub-pixel convolutional neural network）是创业公司Magic Pony Technology的Wenzhe Shi和Jose Caballero作品。该创业团队主要来自Imperial College London，目前已被Twitter收购。
-
-论文：
-
-《Real-Time Single Image and Video Super-Resolution Using an Efficient Sub-Pixel Convolutional Neural Network》
-
-代码：
-
-https://github.com/wangxuewen99/Super-Resolution/tree/master/ESPCN
-
-在SRCNN和DRCN中，低分辨率图像都是先通过上采样插值得到与高分辨率图像同样的大小，再作为网络输入，意味着卷积操作在较高的分辨率上进行，相比于在低分辨率的图像上计算卷积，会降低效率。
-
-ESPCN提出一种在低分辨率图像上直接计算卷积得到高分辨率图像的高效率方法。
-
-![](/images/img2/ESPCN.jpg)
-
-ESPCN的核心概念是亚像素卷积层(sub-pixel convolutional layer)。如上图所示，网络的输入是原始低分辨率图像，通过两个卷积层以后，得到的特征图像大小与输入图像一样，但是特征通道为$$r^2$$(r是图像的目标放大倍数)。将每个像素的$$r^2$$个通道重新排列成一个$$r \times r$$的区域，对应于高分辨率图像中的一个$$r \times r$$大小的子块，从而大小为$$r^2 \times H \times W$$的特征图像被重新排列成$$1 \times rH \times rW$$大小的高分辨率图像。这个变换虽然被称作sub-pixel convolution, 但实际上并没有卷积操作。
-
-通过使用sub-pixel convolution, 图像从低分辨率到高分辨率放大的过程，插值函数被隐含地包含在前面的卷积层中，可以自动学习到。只在最后一层对图像大小做变换，前面的卷积运算由于在低分辨率图像上进行，因此效率会较高。
-
-参考：
-
-http://blog.csdn.net/zuolunqiang/article/details/52401802
-
-super-resolution技术日记——ESPCN
-
-# FSRCNN
-
-FSRCNN（Fast Super-Resolution CNN）是Chao Dong继SRCNN之后的又一作品。
-
-论文：
-
-《Accelerating the Super-Resolution Convolutional Neural Network》
-
-代码：
-
-https://github.com/66wangxuewen99/Super-Resolution/tree/master/FSRCNN
-
-![](/images/img2/FSRCNN.png)
-
-上图是FSRCNN和SRCNN的网络结构对比图。其中的$$Conv(f_i,n_i,c_i)$$中的$$f_i,n_i,c_i$$分别表示filter的大小、数量和通道的个数。
-
-FSRCNN主要做了如下改进：
-
-1.直接输入LR的图片。这和ESPCN思路一致。
-
-2.将SRCNN中的Non-linear mapping分为Shrinking、Mapping、Expanding三个阶段。
-
-3.使用Deconv重建HR图像。
-
->ESPCN的论文中指出他们的sub-pixel convolution效果优于Deconv。但由于ESPCN和FSRCNN出来的时间都差不多，尚未有他们两个正式PK的成绩。
-
-参考：
-
-http://blog.csdn.net/zuolunqiang/article/details/52411673
-
-super-resolution技术日记——FSRCNN
-
-
 

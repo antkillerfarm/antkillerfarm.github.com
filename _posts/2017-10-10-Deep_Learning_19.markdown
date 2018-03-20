@@ -182,6 +182,10 @@ https://mp.weixin.qq.com/s/zLyAwtG49A-vwWa1iPziew
 
 谷歌最新语义图像分割模型DeepLab-v3+今日开源
 
+https://mp.weixin.qq.com/s/L1JtK9eUhVJMGWm-SjWW5w
+
+DeepLab v1
+
 # ENet
 
 ENet是波兰的Adam Paszke于2016年提出的。
@@ -245,14 +249,4 @@ Global Convolutional Network是孙剑团队的Chao Peng于2017年提出的。
 http://blog.csdn.net/bea_tree/article/details/60977512
 
 旷视最新：Global Convolutional Network
-
-# 语义分割的展望
-
-俗话说，“没有免费的午餐”（“No free lunch”）。基于深度学习的图像语义分割技术虽然可以取得相比传统方法突飞猛进的分割效果，但是其对数据标注的要求过高：不仅需要海量图像数据，同时这些图像还需提供精确到像素级别的标记信息（Semantic labels）。因此，越来越多的研究者开始将注意力转移到弱监督（Weakly-supervised）条件下的图像语义分割问题上。在这类问题中，图像仅需提供图像级别标注（如，有“人”，有“车”，无“电视”）而不需要昂贵的像素级别信息即可取得与现有方法可比的语义分割精度。
-
-另外，示例级别（Instance level）的图像语义分割问题也同样热门。该类问题不仅需要对不同语义物体进行图像分割，同时还要求对同一语义的不同个体进行分割（例如需要对图中出现的九把椅子的像素用不同颜色分别标示出来）。
-
-![](/images/article/Instance_level.jpg)
-
-最后，基于视频的前景／物体分割（Video segmentation）也是今后计算机视觉语义分割领域的新热点之一，这一设定其实更加贴合自动驾驶系统的真实应用环境。
 

@@ -136,4 +136,8 @@ https://mp.weixin.qq.com/s/OMjfck4jlMneGZ1NJxbjKQ
 
 PyTorch有哪些坑/bug？
 
+https://mp.weixin.qq.com/s/UykIKAeKB-0eqk6UqvXwXA
+
+对抗自编码器PyTorch手把手实战系列——PyTorch实现对抗自编码器
+
 

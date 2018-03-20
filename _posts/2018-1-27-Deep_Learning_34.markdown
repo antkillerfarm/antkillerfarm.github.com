@@ -1,304 +1,278 @@
 ---
 layout: post
-title:  深度学习（三十四）——深度强化学习（2）, 模型压缩
+title:  深度学习（三十四）——深度强化学习（1）
 category: DL 
 ---
 
 # 深度强化学习
 
-## 参考
+## 教程
 
-https://mp.weixin.qq.com/s/xr-2cNoSYpCftLI3dV6zEw
+http://incompleteideas.net/sutton/book/the-book-2nd.html
 
-如何使用深度强化学习帮助自动驾驶汽车通过交叉路口？
+《Reinforcement Learning: An Introduction》，Richard S. Sutton和Andrew G. Barto著。
 
-https://www.zhihu.com/question/49230922
+>注：Richard S. Sutton，加拿大计算机科学家，麻省大学阿姆赫斯特分校博士（1984年），阿尔伯塔大学教授。强化学习之父，研究该领域长达三十余年。
 
-强化学习（reinforcement learning)有什么好的开源项目、网站、文章推荐一下？
+>Andrew G. Barto，麻省大学阿姆赫斯特分校教授。Richard S. Sutton的导师。
 
-https://mp.weixin.qq.com/s/R_pfTXDMaLHmiCaSV2t_YA
+http://incompleteideas.net/sutton/609%20dropbox/slides%20(pdf%20and%20keynote)/
 
-英特尔Nervana发布强化学习库Coach：支持多种价值与策略优化算法
+Sutton的pdf和keynote
 
-https://mp.weixin.qq.com/s/AyW7oOC7yxVtmswaMT1DGQ
+>注：资料中的.key文件即为keynote文件。这种格式是苹果设备上的专用ppt格式，在其他系统中查看不了。
 
-腾讯AI Lab获得计算机视觉权威赛事MSCOCO Captions冠军
+http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html
 
-https://mp.weixin.qq.com/s/4aENmxUMEEPVPnexLKrg7Q
+UCL Course on RL
 
-新型强化学习算法ACKTR
+>David Silver，剑桥大学本科（1997年）+阿尔伯塔大学博士（2011年）。伦敦大学学院讲师。现为DeepMind研究员。AlphaGo之父。
 
-https://mp.weixin.qq.com/s/5PzTiPoXPC1gH3xszzT2dQ
+Silver的名声直追Sutton，这个教程也流传很广。后续介绍的教程中，多有对它的抄袭。
 
-邓力等人提出BBQ网络：将深度强化学习用于对话系统
+http://www.meltycriss.com/2017/09/09/note-reinforcement-learning/
 
-https://mp.weixin.qq.com/s/pM8oykHmtu5O5jYJBZjO_w
+课程笔记《UCL强化学习》。这个blog包含大量的思维导图。
 
-伯克利研究人员使用内在激励，教AI学会好奇
+https://mp.weixin.qq.com/s/_PVe7Gcq7Yk8nOFJFPcUQw
 
-https://mp.weixin.qq.com/s/3WI3QgfHXcrCPbvmHWOEkg
+叶强：David Silver《深度强化学习》公开课教程学习笔记完整版
 
-强化学习在生成对抗网络文本生成中的作用
+http://web.stanford.edu/class/cs234/syllabus.html
 
-https://mp.weixin.qq.com/s/IvR0O6dpz2GJCG7UQb5kUQ
+CS234: Reinforcement Learning
 
-清华大学冯珺：基于强化学习的关系抽取和文本分类
+http://rll.berkeley.edu/deeprlcourse/
 
-https://mp.weixin.qq.com/s/SqU74jYBrjtp9L-bnBuboA
+CS 294: Deep Reinforcement Learning
 
-教你完美实现深度强化学习算法DQN
+>以上1本书+4个课程，基本就是目前RL领域的黄金搭档了。Stanford的课程内容比较新，但是很浅。UCB的课程通常都是给入门以后的人准备的，无论DL还是RL，都是这样。Sutton和Silver的课程内容比较老，但是很有深度。和CV领域只需要学习DL，而不需要学习传统方法不同，按照Sutton的说法，基本算法原理远比神经网络更重要。
 
-https://zhuanlan.zhihu.com/p/31579144
+http://www.eecs.wsu.edu/~taylorm/17_580/index.html
 
-让我们从零开始做一个机械手臂(强化学习)
+CptS 580: Reinforcement Learning
 
-https://mp.weixin.qq.com/s/FiR_GRYqJYpJRO-2p44-Cg
+http://www.eecs.wsu.edu/~taylorm/2011_cs420/index.html
 
-伯克利强化学习新研究：机器人只用几分钟随机数据就能学会轨迹跟踪
+Artificial Intelligence。这个课程名义上叫AI，实则包括状态空间搜索、强化学习和贝叶斯网络三部分内容。
 
-https://mp.weixin.qq.com/s/u49cuDV21ITs1aV9tJR85g
+http://www.eecs.wsu.edu/~taylorm/2010_cs414/index.html
 
-Pieter Abbeel：《深度学习在机器人中的应用》
+Introduction to Machine Learning。Matthew E. Taylor的本行是RL，所以不管什么课程，都有RL的内容。
 
-https://mp.weixin.qq.com/s/_dHjZQ_7_7H34PHhV_lC3w
+>Matthew E. Taylor，安默斯特学院本科（2001年）+德州大学奥斯汀分校博士（2008年）。华盛顿州立大学副教授。
 
-全新强化学习算法详解，看贝叶斯神经网络如何进行策略搜索
+https://katefvision.github.io/
 
-https://mp.weixin.qq.com/s/RH4ifA46njdC7fyRI9kVMg
+CMU: Deep Reinforcement Learning and Control
 
-深度Q网络与视觉格斗类游戏
+https://github.com/aikorea/awesome-rl
 
-https://mp.weixin.qq.com/s/K2DW_ntSWrlySpxgorF9dA
+提供了RL方面的资源网页。aikorea还提供了同类的资源收集网页：awesome-rnn, awesome-deep-vision, awesome-random-forest。
 
-Python强化学习实战，Anaconda公司的高级数据科学家讲解
+https://mp.weixin.qq.com/s/dS0oQbGtrdd4rS25cBNyoQ
 
-https://zhuanlan.zhihu.com/p/32089849
+面向Open AI, TensorFlow, Keras的强化学习书籍《Reinforcement Learning》
 
-概要：NIPS 2017 Deep Learning for Robotics Keynote
+https://102.alibaba.com/downloadFile.do?file=1517812754285/reinforcement_learning.pdf
 
-https://mp.weixin.qq.com/s/CCQOHRCAolsorm8FEPdjoQ
+《强化学习在阿里的技术演进与业务创新》，这是阿里出品的RL实战类书籍。
 
-什么时候强化学习未必好用？
+## 论文
 
-https://mp.weixin.qq.com/s/I8IwPCY6-zocJKFXMr6rUg
+《A Brief Survey of Deep Reinforcement Learning》
 
-深度强化学习的18个关键问题
+《Asynchronous Methods for Deep Reinforcement Learning》
 
-https://mp.weixin.qq.com/s/gFHbLF-q91sddMAX1CRbEQ
+## blog
 
-俞扬：“审时度势”的高效强化学习
+https://zhuanlan.zhihu.com/sharerl
 
-https://mp.weixin.qq.com/s/lstCIiNs_qA6k7GCYUBv2w
+强化学习知识大讲堂
 
-阿尔伯塔大学提出新型多步强化学习方法，结合已有TD算法实现更好性能
+https://zhuanlan.zhihu.com/intelligentunit
 
-https://mp.weixin.qq.com/s/af10gqXNfohPEISSnpJ0tQ
+一个DL+RL的专栏
 
-UCB吴翼&FAIR田渊栋等人提出强化学习环境Hourse3D
+## Deep Q-learning Network
 
-https://mp.weixin.qq.com/s/ybyZpaHr-JJg7CCdXGOl5A
+Deep Q-learning Network是DL在RL领域的开山之作。它的思想主要来自于Deepmind的两篇论文：
 
-Seq2seq强化学习实战
+《Playing Atari with Deep Reinforcement Learning》
 
-https://mp.weixin.qq.com/s/TUk1PWT9CfPGEW77UKxpjw
+《Human-level control through deep reinforcement learning》
 
-三招武林绝学带你玩转“强化学习”
+Deepmind是当今DL领域最前沿的科研机构，尤其在RL领域更是领先同行一大截，是当之无愧的RL王者。
 
-https://mp.weixin.qq.com/s/_dskX5U8gHAEl6aToBvQvg
+![](/images/img2/DQN.png)
 
-从Q学习到DDPG，一文简述多种强化学习算法
+上图是DQN的网络结构图。由于这里的任务是训练Atari游戏的AI，因此网络的输入实际上就是游戏的画面。而理解游戏画面，就需要一定的CNN结构。所以DQN的结构实际上和一般的CNN是一致的，其关键要害在于loss函数的设定。
 
-https://mp.weixin.qq.com/s/p2hlc2PsLgrvxOF8wBZANg
+由《机器学习（三十一）》中的“价值函数的近似表示”可知，
 
-李飞飞高徒范麟熙解析强化学习在游戏和现实中的应用
-
-http://mp.weixin.qq.com/s/EPbKE-TAnAPugJDhXHEyNA
-
-DeepMind开源Psychlab平台——搭建AI和认知心理学的桥梁
-
-https://mp.weixin.qq.com/s/TlcVxjhHXXGSpIvptC4H8g
-
-使用Gym和CNN构建多智能体自动驾驶马里奥赛车
-
-https://mp.weixin.qq.com/s/4qeHfU9GS4aDWOHsu4Dw2g
-
-记忆增强蒙特卡洛树搜索细节解读
-
-https://mp.weixin.qq.com/s/Vdt5h8APAFoeVxFYKlywpg
-
-用DeepMind的DQN解数学题，准确率提升15%
-
-https://mp.weixin.qq.com/s/1zJyw67B6DqsHEJ3avbsfQ
-
-DeepMind推出分布式深度强化学习架构IMPALA，让一个Agent学会多种技能
-
-https://mp.weixin.qq.com/s/xJ_g3BvbM-WaIyLthHdhEw
-
-DeepMind发布通用强化学习新范式，自主机器人可学会任何任务
-
-https://mp.weixin.qq.com/s/_lmz0l1vP_CQ6p6DdFnHWA
-
-谷歌大脑工程师的深度强化学习劝退文
-
-https://mp.weixin.qq.com/s/zRcq1LMtK72Cl4T3877tgQ
-
-牛津教授吐槽DeepMind心智神经网络，还推荐了这些多智能体学习论文
-
-https://mp.weixin.qq.com/s/To3pnx1hVq_4p7UnQVMw9A
-
-斯坦福大学&DeepMind联合提出机器人控制新方法，RL+IL端到端地学习视觉运动策略
-
-# 模型压缩
-
-对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。
-
-此外，对于一些较大的模型（如VGG），即使机器再给力，单位时间内能处理的图像数量，往往也无法达到实际应用的要求。这点在自动驾驶和视频处理领域显得尤为突出。
-
-这里首先提到的是韩松的两篇论文：
-
-《Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding》
-
-《Learning both Weights and Connections for Efficient Neural Networks》
-
->韩松，清华本科（2012）+Stanford博士（2017）。MIT AP（from 2018）。   
->个人主页：   
->https://stanford.edu/~songhan/
-
-韩松也是SqueezeNet的二作。
-
-![](/images/article/nn_compression.png)
-
-韩松论文的中心思想如上图所示。简单来说，就是去掉原有模型的一些不重要的参数、结点和层。
-
-参数的选择，相对比较简单。参数的绝对值越接近零，它对结果的贡献就越小。这一点和稀疏矩阵有些类似。
-
-结点和层的选择，相对麻烦一些，需要通过算法得到不重要的层。
-
-比如可以逐个将每一层50%的参数置零，查看模型性能。对性能影响不大的层就是不重要的。
-
-虽然这些参数、结点和层相对不重要，但是去掉之后，仍然会对准确度有所影响。这时可以对精简之后的模型，用训练样本进行re-train，通过残差对模型进行一定程度的修正，以提高准确度。
-
-其次还可以看看图森科技的论文：
-
-https://www.zhihu.com/question/62068158
-
-如何评价图森科技连发的三篇关于深度模型压缩的文章？
-
-图森的思路比较有意思。其中的方法之一，是利用L1规则化会导致结果的稀疏化的特性，制造出一批接近0的参数。从而达到去除不重要的参数的目的。
-
-除此之外，矩阵量化、Kronecker内积、霍夫曼编码、模型剪枝等也是常见的模型压缩方法。
-
-当然最系统的做法还属Geoffrey Hinton的论文：
-
-《Distilling the Knowledge in a Neural Network》
-
-图森科技的后两篇论文也是在Hinton论文的基础上改进的。
-
-论文：
-
-《Articulatory and Spectrum Features Integration using Generalized Distillation Framework》
+$$$$
 
 参考：
 
-https://zhuanlan.zhihu.com/p/24337627
+https://zhuanlan.zhihu.com/p/21262246
 
-深度压缩之蒸馏模型
+DQN从入门到放弃1 DQN与增强学习
 
-http://blog.csdn.net/shuzfan/article/details/51383809
+https://zhuanlan.zhihu.com/p/21292697
 
-神经网络压缩：Deep Compression
+DQN从入门到放弃2 增强学习与MDP
 
-https://zhuanlan.zhihu.com/p/24894102
+https://zhuanlan.zhihu.com/p/21340755
 
-《Distilling the Knowledge in a Neural Network》阅读笔记
+DQN从入门到放弃3 价值函数与Bellman方程
 
-https://luofanghao.github.io/2016/07/20/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0%20%E3%80%8ADistilling%20the%20Knowledge%20in%20a%20Neural%20Network%E3%80%8B/
+https://zhuanlan.zhihu.com/p/21378532
 
-论文笔记 《Distilling the Knowledge in a Neural Network》
+DQN从入门到放弃4 动态规划与Q-Learning
 
-http://blog.csdn.net/zhongshaoyy/article/details/53582048
+https://zhuanlan.zhihu.com/p/21421729
 
-蒸馏神经网络
+DQN从入门到放弃5 深度解读DQN算法
 
-https://www.zhihu.com/question/50519680
+https://zhuanlan.zhihu.com/p/21547911
 
-如何理解soft target这一做法？
+DQN从入门到放弃6 DQN的各种改进
 
-https://mp.weixin.qq.com/s/0KlnQ8UUxpyhBRdeo0EOAA
+https://zhuanlan.zhihu.com/p/21609472
 
-用于网络压缩的滤波器级别剪枝算法ThiNet
+DQN从入门到放弃7 连续控制DQN算法-NAF
 
-https://mp.weixin.qq.com/s/lO2UM04PfSM5VJYh6vINhw
+https://zhuanlan.zhihu.com/p/21434933
 
-为模型减减肥：谈谈移动／嵌入式端的深度学习
+DQN实战篇 从零开始安装Ubuntu, Cuda, Cudnn, Tensorflow, OpenAI Gym
 
-https://mp.weixin.qq.com/s/cIGuJvYr4lZW01TdINBJnA
+## 参考
 
-深度压缩网络：较大程度减少了网络参数存储问题
+https://www.nervanasys.com/demystifying-deep-reinforcement-learning/
 
-https://mp.weixin.qq.com/s/1JwLP0FmV1AGJ65iDgLWQw
+深度强化学习揭秘
 
-神经网络模型压缩技术
+https://zhuanlan.zhihu.com/p/24446336
 
-https://mp.weixin.qq.com/s/Xqc4UgcfCUWYOeGhjNpidA
+深度强化学习Deep Reinforcement Learning学习整理
 
-CNN模型压缩与加速算法综述
+https://mp.weixin.qq.com/s/7BsXPQ8wC6_fHulU63ZQiQ
 
-https://mp.weixin.qq.com/s/rzv8VCAxBQi0HsUcnLqqUA
+当强化学习遇见泛函分析
 
-处理移动端传感器时序数据的深度学习框架：DeepSense
+https://mp.weixin.qq.com/s/K82PlSZ5TDWHJzlEJrjGlg
 
-https://mp.weixin.qq.com/s/UYk3YQmFW7-44RUojUqfGg
+深度学习与强化学习
 
-上交大ICCV：精度保证下的新型深度网络压缩框架
+https://mp.weixin.qq.com/s/6n5HawyR4AgH8Dq0gJMw2g
 
-https://mp.weixin.qq.com/s/ZuEi32ZBSjruvtyUimBgxQ
+强化学习的基本概念与代码实现
 
-揭秘支付宝中的深度学习引擎：xNN
+https://mp.weixin.qq.com/s/KNXD-MpVHQRXYvJKTqn6WA
 
-http://mp.weixin.qq.com/s/iapih9Mme-VKCfsFCmO7hQ
+完善强化学习安全性：UC Berkeley提出约束型策略优化新算法
 
-简单聊聊压缩网络
+http://mp.weixin.qq.com/s/lLPRwInF5qaw7ewYHOpPyw
 
-https://mp.weixin.qq.com/s/3qstz-KoRuxwpmfE4XDI-Q
+深度强化学习资料
 
-面向卷积神经网络的卷积核冗余消除策略
+https://mp.weixin.qq.com/s/aVWHlwOmNIqOlu3025_RXQ
 
-https://mp.weixin.qq.com/s/dEdWz4bovmk65fwLknHBhg
+DeepMind提出多任务强化学习新方法Distral
 
-韩松毕业论文：面向深度学习的高效方法与硬件
+https://zhuanlan.zhihu.com/p/27699682
 
-https://mp.weixin.qq.com/s/GFE2XYHZXPP0doQ5nd0JNQ
+荐译一篇通俗易懂的策略梯度（Policy Gradient）方法讲解
 
-当前深度神经网络模型压缩和加速方法速览
+http://lamda.nju.edu.cn/yangjw/project/drlintro.html
 
-https://mp.weixin.qq.com/s/Faej1LKqurtwEIreUVJ0cw
+深度强化学习初探
 
-普林斯顿新算法自动生成高性能神经网络，同时超高效压缩
+https://zhuanlan.zhihu.com/p/21498750
 
-https://mp.weixin.qq.com/s/uK-HasmiavM3jv6hNRY11A
+深度强化学习导引
 
-深度梯度压缩：降低分布式训练的通信带宽
+https://mp.weixin.qq.com/s/RnUWHa6QzgJbE_XqLeAQmg
 
-https://mp.weixin.qq.com/s/_MDbbGzDOGHk5TBgbu_-oA
+深度强化学习，决策与控制
 
-中大商汤等提出深度网络加速新方法，具有强大兼容能力
+https://mp.weixin.qq.com/s/W9yhj7_frLYWJocoBR1TMQ
 
-https://mp.weixin.qq.com/s/gbOmpP7XO1Hz_ld4iSEsrw
+避免AI错把黑人识别为大猩猩：伯克利大学提出协同反向强化学习
 
-三星提出移动端神经网络模型加速框架DeepRebirth
+https://mp.weixin.qq.com/s/R308ohdMU8b7Ap4CLofvDg
 
-https://mp.weixin.qq.com/s/rTFLiZ7DCo6vzD5O64UnMQ
+OpenAI开源算法ACKTR与A2C：把可扩展的自然梯度应用到强化学习
 
-阿里提出新神经网络算法，压缩掉最后一个比特
+https://mp.weixin.qq.com/s/-JHHOQPB6pKVuge64NkMuQ
 
-https://mp.weixin.qq.com/s/f1SCK0J5oTWNJvtld3UAHQ
+DeepMind主攻的深度强化学习3大核心算法及7大挑战
 
-神经网络修剪最新研究进展
+https://mp.weixin.qq.com/s/YQpuYuzk0jv5OngH5u8bEg
 
-https://mp.weixin.qq.com/s/3oL0Bso3mwbsfaG8X5-xoA
+阿里菜鸟物流：使用深度强化学习方法求解一类新型三维装箱问题
 
-英特尔提出新型压缩技术DeepThin，适合移动端设备深度神经网络
+https://mp.weixin.qq.com/s/OY56lJ_NFf5vVAgKfKyx2A
 
+利用强化学习自动搜索最优化方法
 
+https://mp.weixin.qq.com/s/zWo2iSiJBEBwnFF478xxfQ
+
+DeepMind：探索人类行为中的强化学习机制
+
+https://mp.weixin.qq.com/s/R30quVGK0TgjerLpiIK9eg
+
+从算法到训练，综述强化学习实现技巧与调试经验
+
+https://mp.weixin.qq.com/s/l46yJdRaftMlwr6odiSiHg
+
+Yoshua Bengio团队基于深度强化学习打造聊天机器人MILABOT
+
+https://mp.weixin.qq.com/s/uDFsWebfLmka-zZX3Y_8kg
+
+深度强化学习在面向任务的对话管理中的应用
+
+https://mp.weixin.qq.com/s/GNbCu1lbOmwJDCU3vgMbtQ
+
+OpenAI发布多智能体深度强化学习新算法LOLA
+
+https://mp.weixin.qq.com/s/5Go20MyBxdVI1r5SkwA6lw
+
+面向星际争霸：DeepMind提出多智能体强化学习新方法
+
+https://mp.weixin.qq.com/s/nYOOwVoijl1p4V0A7yaI3w
+
+机遇与挑战：用强化学习自动搜索优化算法
+
+https://mp.weixin.qq.com/s/uymKtR_7IgMpfXcekfkCDg
+
+从强化学习基本概念到Q学习的实现，打造自己的迷宫智能体
+
+https://mp.weixin.qq.com/s/6_cW22DCzSw3DpUDrLXLcA
+
+OpenAI提出强化学习近端策略优化，可替代策略梯度法
+
+http://mp.weixin.qq.com/s/S4jhpNKYZP5YQWaiiOQGFA
+
+DeepMind：“预测地图”海马体催生强化学习新算法
+
+http://mp.weixin.qq.com/s/TBVVdX3erOpXNjXmhLmxOw
+
+学“深度强化学习”，看懂DeepMind这篇文章就够了!
+
+https://mp.weixin.qq.com/s/SZHMyWOXHM8T3zp_aUt-6A
+
+DeepMind提出Rainbow：整合DQN算法中的六种变体
+
+https://mp.weixin.qq.com/s/_Di73PkEWJV1-OLLHfz7yQ
+
+组合在线学习：实时反馈玩转组合优化
+
+https://mp.weixin.qq.com/s/lR6BSa_pJzcinkSaSWsM2A
+
+伯克利提出强化学习新方法，可让智能体同时学习多个解决方案
+
+https://mp.weixin.qq.com/s/P-iSI80IVmb5s-Q15Re2HQ
+
+All In!我学会了用强化学习打德州扑克
 

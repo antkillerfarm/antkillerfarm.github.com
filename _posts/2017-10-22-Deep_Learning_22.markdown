@@ -1,8 +1,68 @@
 ---
 layout: post
-title:  深度学习（二十二）——VESPCN, SRGAN, DemosaicNet, MemNet, RDN, Fast Image Processing, SVDF
+title:  深度学习（二十二）——ESPCN, FSRCNN, VESPCN, SRGAN, DemosaicNet, MemNet, RDN, Fast Image Processing
 category: DL 
 ---
+
+# ESPCN
+
+ESPCN（efficient sub-pixel convolutional neural network）是创业公司Magic Pony Technology的Wenzhe Shi和Jose Caballero作品。该创业团队主要来自Imperial College London，目前已被Twitter收购。
+
+论文：
+
+《Real-Time Single Image and Video Super-Resolution Using an Efficient Sub-Pixel Convolutional Neural Network》
+
+代码：
+
+https://github.com/wangxuewen99/Super-Resolution/tree/master/ESPCN
+
+在SRCNN和DRCN中，低分辨率图像都是先通过上采样插值得到与高分辨率图像同样的大小，再作为网络输入，意味着卷积操作在较高的分辨率上进行，相比于在低分辨率的图像上计算卷积，会降低效率。
+
+ESPCN提出一种在低分辨率图像上直接计算卷积得到高分辨率图像的高效率方法。
+
+![](/images/img2/ESPCN.jpg)
+
+ESPCN的核心概念是亚像素卷积层(sub-pixel convolutional layer)。如上图所示，网络的输入是原始低分辨率图像，通过两个卷积层以后，得到的特征图像大小与输入图像一样，但是特征通道为$$r^2$$(r是图像的目标放大倍数)。将每个像素的$$r^2$$个通道重新排列成一个$$r \times r$$的区域，对应于高分辨率图像中的一个$$r \times r$$大小的子块，从而大小为$$r^2 \times H \times W$$的特征图像被重新排列成$$1 \times rH \times rW$$大小的高分辨率图像。这个变换虽然被称作sub-pixel convolution, 但实际上并没有卷积操作。
+
+通过使用sub-pixel convolution, 图像从低分辨率到高分辨率放大的过程，插值函数被隐含地包含在前面的卷积层中，可以自动学习到。只在最后一层对图像大小做变换，前面的卷积运算由于在低分辨率图像上进行，因此效率会较高。
+
+参考：
+
+http://blog.csdn.net/zuolunqiang/article/details/52401802
+
+super-resolution技术日记——ESPCN
+
+# FSRCNN
+
+FSRCNN（Fast Super-Resolution CNN）是Chao Dong继SRCNN之后的又一作品。
+
+论文：
+
+《Accelerating the Super-Resolution Convolutional Neural Network》
+
+代码：
+
+https://github.com/66wangxuewen99/Super-Resolution/tree/master/FSRCNN
+
+![](/images/img2/FSRCNN.png)
+
+上图是FSRCNN和SRCNN的网络结构对比图。其中的$$Conv(f_i,n_i,c_i)$$中的$$f_i,n_i,c_i$$分别表示filter的大小、数量和通道的个数。
+
+FSRCNN主要做了如下改进：
+
+1.直接输入LR的图片。这和ESPCN思路一致。
+
+2.将SRCNN中的Non-linear mapping分为Shrinking、Mapping、Expanding三个阶段。
+
+3.使用Deconv重建HR图像。
+
+>ESPCN的论文中指出他们的sub-pixel convolution效果优于Deconv。但由于ESPCN和FSRCNN出来的时间都差不多，尚未有他们两个正式PK的成绩。
+
+参考：
+
+http://blog.csdn.net/zuolunqiang/article/details/52411673
+
+super-resolution技术日记——FSRCNN
 
 # VESPCN
 
@@ -193,71 +253,4 @@ http://groups.csail.mit.edu/graphics/fivek_dataset/
 
 本文只使用了MIT-Adobe数据集中的原始图片，并使用了10种常用的算子对图片进行处理。因此，该网络训练时的输入是原始图片，而输出是处理后的图片。
 
-![](/images/article/MCA.png)
-
-上图是本文模型的网络结构图。它的设计特点如下：
-
-1.采用Multi-Scale Context Aggregation作为基础网络。MCA的内容参见《深度学习（九）》。
-
-2.传统MCA一般有下采样的过程，但这里由于网络输入和输出的尺寸维度是一样的，因此，所有的feature maps都是等大的。
-
-3.借鉴FCN的思想，去掉了池化层和全连接层。
-
-4.L1~L3主要用于图片的特征提取和升维，而L4~L5则用于特征的聚合和降维，并最终和输出数据的尺寸维度相匹配。
-
-在normalization方面，作者发现有的operators经过normalization之后，精度会上升，而有的精度反而会下降，因此为了统一模型，定义如下的normalization运算：
-
-$$\Psi^s(x)=\lambda_sx+\mu_sBN(x)$$
-
-Loss函数为：
-
-$$\mathcal{l(K,B)}=\sum_i\frac{1}{N_i}\|\hat f (I_i;\mathcal{K,B})-f(I_i)\|^2$$
-
-这实际上就是RGB颜色空间的MSE误差。
-
-为了检验模型的泛化能力，本文还使用RAISE数据集作为交叉验证的数据集。该数据集的网址：
-
-http://mmlab.science.unitn.it/RAISE/
-
-RAISE数据集包含了8156张高分辨率原始照片，由3台不同的相机拍摄，并给出了相机的型号和参数。
-
-# TNG
-
-Tiny Network Graphics是图鸭科技推出一种基于深度学习的图片压缩技术。由于商业因素，这里没有论文，技术细节也不详，但是下图应该还是有些用的。
-
-![](/images/img2/TNG.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/WYsxFX4LyM562bZD8rO95w
-
-图鸭发布图片压缩TNG，节省55%带宽
-
-# SVDF
-
-SVDF是UCB和Google Speech Group的作品，主要用于简化Speech模型的计算量。
-
-论文：
-
-《Compressing Deep Neural Networks using a Rank-Constrained Topology》
-
-代码：
-
-https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/speech_commands/models.py
-
-音频数据通常是一个[time, frequency]的二维tensor，直接放入FC网络，会导致较大的计算量。（下图左半部分所示）
-
-![](/images/img2/SVDF.png)
-
-SVDF将每个time的frequency作为一组，进行FC之后，再和其他组的结果进一步FC。上图右半部分所示的是time的filters为1的时候的SVDF。当然filters也可以为其他值，和CNN类似，filters越多，提取的特征越多。
-
-从原理来说，SVDF相当于用两层FC来拟合1层FC，即：
-
-$$w_{i,j}^{(m)}\approx \alpha_i^{(m)}\beta_i^{(m)}$$
-
-SVDF将运算量从$$Cd$$变为$$(C+d)k$$，这里的k为filters numbers。
-
-这实际上就是2维tensor的SVD，只不过SVD是线性变换，而这里是非线性变换而已。（参见《机器学习（十五）》中的ALS算法部分）
-
-实际上，SVDF和之前在《深度学习（十六）》中提到的Fast R-CNN的FC加速，原理是基本一致的。
 
