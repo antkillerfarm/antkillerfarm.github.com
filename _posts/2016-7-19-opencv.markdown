@@ -274,6 +274,10 @@ https://mp.weixin.qq.com/s/1wxA7jnCgmXt5j9DXxH1UA
 
 超有趣！手把手教你使用树莓派实现实时人脸检测
 
+https://mp.weixin.qq.com/s/6J6Rke_zTznSLLQ3IdHzgA
+
+手把手教你搭建目标检测器-附代码
+
 # GNU Octave
 
 GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。
