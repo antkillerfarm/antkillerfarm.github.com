@@ -346,4 +346,8 @@ https://mp.weixin.qq.com/s/taUMg4wWooniwDVmLRahYQ
 
 为什么深度学习仍未取代传统的计算机视觉技术？
 
+https://mp.weixin.qq.com/s/_ZmbwM-lmS0o2DjAAc_TWQ
+
+美图云+中科院AAAI2018：视频语义理解的类脑智能
+
 

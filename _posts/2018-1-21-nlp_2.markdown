@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NLP（二）, 垃圾筐
+title:  NLP（二）, Storm, 垃圾筐
 category: AI 
 ---
 
@@ -59,6 +59,94 @@ https://mp.weixin.qq.com/s/yTLiw9am0wzeJ-O3m0xUoQ
 《Using Recurrent Neural Networks for Slot Filling in Spoken Language Understanding》
 
 《Convolutional Neural Networks for Sentence Classification》：TextCNN的开山之作
+
+# Storm
+
+Storm是一个大数据领域的实时计算框架。
+
+官网：
+
+http://storm.apache.org/
+
+教程：
+
+http://storm.apache.org/releases/current/Tutorial.html
+
+参考：
+
+http://blog.csdn.net/rzhzhz/article/details/8788137
+
+Storm教程（翻译）
+
+http://ifeve.com/getting-started-with-stom-index/
+
+《Storm入门》中文版
+
+http://blog.csdn.net/NB_vol_1/article/details/46287077
+
+一个storm的完整例子——WordCount
+
+http://www.open-open.com/lib/view/open1374979211233.html
+
+storm简介及单机版安装指南
+
+http://mp.weixin.qq.com/s/lDQLXuMBzZG-o-mGwBNcIA
+
+美团点评基于Storm的实时数据处理实践
+
+https://mp.weixin.qq.com/s/_DLKTRI_IytYkPlMZ3eDCQ
+
+流计算框架Flink与Storm的性能对比
+
+## 示例
+
+这里使用源代码中自带的示例。
+
+1.下载源代码。
+
+2.`mvn clean install -DskipTests=true`
+
+3.进入examples/storm-starter目录：
+
+`mvn compile exec:java -Dstorm.topology=org.apache.storm.starter.ExclamationTopology`
+
+## Trident
+
+Trident是在storm基础上，一个以realtime计算为目标的高度抽象。它在提供处理大吞吐量数据能力的同时，也提供了低延时分布式查询和有状态流式处理的能力。
+
+教程：
+
+http://storm.apache.org/releases/current/Trident-tutorial.html
+
+http://blog.csdn.net/derekjiang/article/details/9126185
+
+## Storm vs Spark
+
+http://blog.csdn.net/iefreer/article/details/32715153
+
+## 问题汇总
+
+http://blog.sina.com.cn/s/blog_8c243ea30101k0k1.html
+
+## 集群部署
+
+Storm的本地模式，无须hadoop生态圈软件的支持，自己就能运行。但它的集群部署依赖Zookeeper和YARN。
+
+1.配置YARN和Zookeeper，并启动相关服务进程。
+
+2.配置Storm
+
+https://storm.apache.org/releases/current/Setting-up-a-Storm-cluster.html
+
+3.启动Nimbus和Supervisor
+
+Nimbus和Supervisor都是Storm服务进程，前者运行在Master上，而后者运行在Node上。这里的Master和Node，可以和Zookeeper或YARN设置的不同。
+
+Nimbus的作用是将运行的jar分发到各Node去执行。
+
+虽然`bin/storm nimbus`可以启动nimbus，然而这种方法启动的是前台进程，一旦退出终端，进程就会被杀死。可用如下方法解决之：
+
+`start-stop-daemon --start --background --exec /root/apache-storm-1.0.2/bin/storm nimbus`
 
 # 垃圾筐
 

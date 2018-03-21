@@ -14,6 +14,10 @@ https://mp.weixin.qq.com/s/hn1a9XZSu_lL5TPgq5ln2A
 
 区域链相关资料汇总
 
+https://mp.weixin.qq.com/s/UvTc1ftOZq6Q57ksEYgzKA
+
+普通程序员如何快速上手区块链？这个课程的目录很有参考意义。
+
 https://mp.weixin.qq.com/s/NF1tQaOTFklGM5U9kQ7yKA
 
 终于把区块链的技术与应用讲清楚了
@@ -177,6 +181,10 @@ https://mp.weixin.qq.com/s/jyXsazsCGbStJFVT7el9vg
 https://mp.weixin.qq.com/s/UiwIEkCOeruWYDxdudBnhA
 
 我模拟了一个用浏览器挖矿的代码，没多复杂但别走歪路
+
+https://mp.weixin.qq.com/s/BK7-dZErDEST8C2TD1HEDA
+
+基于区块链技术的机器学习行业概述
 
 # CPU
 

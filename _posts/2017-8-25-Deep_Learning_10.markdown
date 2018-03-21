@@ -214,7 +214,7 @@ Paper笔记：Dilated Residual Networks
 
 为了解决这个问题，ShuffleNet在每一次层叠这种Group conv层前，都进行一次channel shuffle，shuffle过的通道被分配到不同组当中。进行完一次group conv之后，再一次channel shuffle，然后分到下一层组卷积当中，以此循环。
 
-![](/images/article/ShuffleNet.jpg)
+![](/images/img2/ShuffleNet.png)
 
 论文：
 
@@ -225,6 +225,10 @@ Paper笔记：Dilated Residual Networks
 论文：
 
 《Squeeze-and-Excitation Networks》
+
+![](/images/img2/ShuffleNet_2.png)
+
+上图是ShuffleNet的Unit结构图，DWConv表示depthwise convolution，GConv表示pointwise group convolution。a是普通的Deep Residual Unit，b的进化用以提高精度，c的进一步进化用以减少计算量。
 
 参考：
 

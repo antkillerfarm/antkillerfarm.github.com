@@ -1,10 +1,20 @@
 ---
 layout: post
-title:  深度学习（二十三）——SVDF, LCNN, LSTM进阶, 语音识别
+title:  深度学习（二十三）——Fast Image Processing, SVDF, LCNN, LSTM进阶, 语音识别
 category: DL 
 ---
 
 # Fast Image Processing（续）
+
+这个课题一般使用MIT-Adobe FiveK Dataset作为基准数据集。网址：
+
+http://groups.csail.mit.edu/graphics/fivek_dataset/
+
+这个数据集包含了5K张原始照片，并雇用了5个专业修图师，对每张图片进行修图。
+
+众所周知，多层神经网络只要有足够的深度和宽度，就可以任意逼近任意连续函数。然而从Fast Image Processing的目的来说，神经网络的深度和宽度注定是有限的，否则肯定快不了。而这也是该课题的研究意义所在。
+
+本文只使用了MIT-Adobe数据集中的原始图片，并使用了10种常用的算子对图片进行处理。因此，该网络训练时的输入是原始图片，而输出是处理后的图片。
 
 ![](/images/article/MCA.png)
 

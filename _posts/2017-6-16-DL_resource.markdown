@@ -32,6 +32,10 @@ http://www.msra.cn/zh-cn/news?wd&content-type=posts
 
 MSRA的文章官网
 
+http://www.cnblogs.com/adong7639/p/6386316.html
+
+迄今为止计算机视觉领域超有实力的研究人物主页
+
 http://blog.csdn.net/abcjennifer
 
 一个浙大妹子的blog，关注计算机视觉、机器学习。现在百度深度学习实验室。

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  CC2530, Trie树, Parquet, Dubbo, Redis
+title:  CC2530, Trie树, Parquet, Dubbo
 category: technology 
 ---
 
@@ -267,34 +267,4 @@ Dubbo是一个分布式服务框架，致力于提供高性能和透明化的RPC
 http://dubbo.io/
 
 官网的用户指南写的不错，非常值得一看。
-
-# Redis
-
-REmote DIctionary Server(Redis) 是一个由Salvatore Sanfilippo写的key-value存储系统。
-
-http://www.runoob.com/redis/redis-tutorial.html
-
-Redis教程
-
-http://www.yiibai.com/redis/
-
-另一个Redis教程
-
-参考：
-
-https://mp.weixin.qq.com/s/3WmGpZkEuSz-ox_2CPCsqg
-
-伯克利推出世界最快的KVS数据库Anna：秒杀Redis和Cassandra
-
-https://mp.weixin.qq.com/s/320HQlFOXdzbBh2ofrpANA
-
-Redis高负载下的中断优化
-
-# Pika
-
-Pika是一个可持久化的大容量redis存储服务，兼容string、hash、list、zset、set的绝大部分接口(兼容详情)，解决redis由于存储数据量巨大而导致内存不够用的容量瓶颈。
-
-官网：
-
-https://github.com/Qihoo360/pika/
 

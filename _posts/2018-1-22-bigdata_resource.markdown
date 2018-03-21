@@ -346,3 +346,8 @@ https://mp.weixin.qq.com/s/910pclefErC4Tx7NujJamg
 
 分布式缓存---Memcached
 
+https://mp.weixin.qq.com/s/ZGYOwGjg06GSqCW3VoIzYg
+
+万万没想到，分布式存储系统的一致性是……
+
+

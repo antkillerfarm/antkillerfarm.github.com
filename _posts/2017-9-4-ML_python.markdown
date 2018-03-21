@@ -132,6 +132,10 @@ https://www.machinelearningplus.com/101-numpy-exercises-python/
 
 101 NumPy Exercises for Data Analysis。这里包含了101个和numpy有关的问题，并附有答案。
 
+https://mp.weixin.qq.com/s/DiFTV29gvMlosoy2HaPQjw
+
+用Python做图像处理（3）
+
 ## SciPy
 
 SciPy提供了一些更高阶的数学运算库，比如：积分、插值、信号处理、傅立叶变换、矩阵特征值、统计计算等。

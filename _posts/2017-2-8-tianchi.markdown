@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  天池大赛, Storm
+title:  天池大赛, Redis
 category: AI 
 ---
 
@@ -221,87 +221,37 @@ https://mp.weixin.qq.com/s/1T5Iv87JRVdTS66yAzs-DQ
 
 IJCAI获奖团队答辩干货独家放送
 
-# Storm
+# Redis
 
-Storm是一个大数据领域的实时计算框架。
+REmote DIctionary Server(Redis) 是一个由Salvatore Sanfilippo写的key-value存储系统。
 
-官网：
+http://www.runoob.com/redis/redis-tutorial.html
 
-http://storm.apache.org/
+Redis教程
 
-教程：
+http://www.yiibai.com/redis/
 
-http://storm.apache.org/releases/current/Tutorial.html
+另一个Redis教程
 
 参考：
 
-http://blog.csdn.net/rzhzhz/article/details/8788137
+https://mp.weixin.qq.com/s/3WmGpZkEuSz-ox_2CPCsqg
 
-Storm教程（翻译）
+伯克利推出世界最快的KVS数据库Anna：秒杀Redis和Cassandra
 
-http://ifeve.com/getting-started-with-stom-index/
+https://mp.weixin.qq.com/s/320HQlFOXdzbBh2ofrpANA
 
-《Storm入门》中文版
+Redis高负载下的中断优化
 
-http://blog.csdn.net/NB_vol_1/article/details/46287077
+https://mp.weixin.qq.com/s/3ISOT_9HTFrnxpJdnHTnsg
 
-一个storm的完整例子——WordCount
+redis哈希表的rehash分析
 
-http://www.open-open.com/lib/view/open1374979211233.html
+# Pika
 
-storm 简介及单机版安装指南
+Pika是一个可持久化的大容量redis存储服务，兼容string、hash、list、zset、set的绝大部分接口(兼容详情)，解决redis由于存储数据量巨大而导致内存不够用的容量瓶颈。
 
-http://mp.weixin.qq.com/s/lDQLXuMBzZG-o-mGwBNcIA
+官网：
 
-美团点评基于Storm的实时数据处理实践
-
-## 示例
-
-这里使用源代码中自带的示例。
-
-1.下载源代码。
-
-2.`mvn clean install -DskipTests=true`
-
-3.进入examples/storm-starter目录：
-
-`mvn compile exec:java -Dstorm.topology=org.apache.storm.starter.ExclamationTopology`
-
-## Trident
-
-Trident是在storm基础上，一个以realtime计算为目标的高度抽象。它在提供处理大吞吐量数据能力的同时，也提供了低延时分布式查询和有状态流式处理的能力。
-
-教程：
-
-http://storm.apache.org/releases/current/Trident-tutorial.html
-
-http://blog.csdn.net/derekjiang/article/details/9126185
-
-## Storm vs Spark
-
-http://blog.csdn.net/iefreer/article/details/32715153
-
-## 问题汇总
-
-http://blog.sina.com.cn/s/blog_8c243ea30101k0k1.html
-
-## 集群部署
-
-Storm的本地模式，无须hadoop生态圈软件的支持，自己就能运行。但它的集群部署依赖Zookeeper和YARN。
-
-1.配置YARN和Zookeeper，并启动相关服务进程。
-
-2.配置Storm
-
-https://storm.apache.org/releases/current/Setting-up-a-Storm-cluster.html
-
-3.启动Nimbus和Supervisor
-
-Nimbus和Supervisor都是Storm服务进程，前者运行在Master上，而后者运行在Node上。这里的Master和Node，可以和Zookeeper或YARN设置的不同。
-
-Nimbus的作用是将运行的jar分发到各Node去执行。
-
-虽然`bin/storm nimbus`可以启动nimbus，然而这种方法启动的是前台进程，一旦退出终端，进程就会被杀死。可用如下方法解决之：
-
-`start-stop-daemon --start --background --exec /root/apache-storm-1.0.2/bin/storm nimbus`
+https://github.com/Qihoo360/pika/
 

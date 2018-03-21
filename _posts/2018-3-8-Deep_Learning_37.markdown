@@ -257,3 +257,9 @@ https://mp.weixin.qq.com/s/fX94rPgNHrOaQTqBv-ZADg
 https://mp.weixin.qq.com/s/rf-pGfkQFK3abkOLEEVOeA
 
 PTGAN：针对行人重识别的生成对抗网络
+
+https://zhuanlan.zhihu.com/p/34778414
+
+基于时空模型无监督迁移学习的行人重识别
+
+
