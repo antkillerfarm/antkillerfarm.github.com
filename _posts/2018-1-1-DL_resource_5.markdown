@@ -254,10 +254,6 @@ https://mp.weixin.qq.com/s/X75H8YOysftwU4VSjlmLBQ
 
 谷歌大脑最新技术：将神经网络提炼成软决策树！
 
-https://mp.weixin.qq.com/s/bMpugd2Lp35VPr8fQAPzsg
-
-一文概览图卷积网络基本结构和最新进展
-
 https://mp.weixin.qq.com/s/R_nd7_YWA7q1JzE0BP8JrQ
 
 Petuum新研究助力临床决策：使用深度学习实现自动ICD编码

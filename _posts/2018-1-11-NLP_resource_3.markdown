@@ -274,4 +274,12 @@ https://mp.weixin.qq.com/s/wLnWLNWyZdBUAPfQvg01yQ
 
 哈工大博士生周青宇：从编码器与解码器端改进生成式句子摘要
 
+https://mp.weixin.qq.com/s/d_uHHH3UCBFa77O1Gw6Bdw
+
+既然文字表你心，如何用深度学习读懂你的情？
+
+https://mp.weixin.qq.com/s/T1_mxvAJzTf-JtxEqsSUxA
+
+清华大学刘洋：基于深度学习的机器翻译
+
 

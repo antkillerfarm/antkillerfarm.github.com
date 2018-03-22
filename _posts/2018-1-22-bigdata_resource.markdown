@@ -350,4 +350,11 @@ https://mp.weixin.qq.com/s/ZGYOwGjg06GSqCW3VoIzYg
 
 万万没想到，分布式存储系统的一致性是……
 
+https://mp.weixin.qq.com/s/EM9EVZYeqd5eJ3YbvgiyEw
+
+亿级Web系统的容错性实践
+
+https://mp.weixin.qq.com/s/AhNIvlKNba8ls9loM1CZ-w
+
+阿里再开源！基于JAVA的模块化开发框架JarsLink
 

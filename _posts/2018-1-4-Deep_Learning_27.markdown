@@ -176,6 +176,14 @@ https://mp.weixin.qq.com/s/V3brXuey7Gear0f_KAdq2A
 
 基于注意力机制的交易上下文感知推荐，悉尼科技大学和电子科技大学最新工作
 
+http://mp.weixin.qq.com/s/Bt6EMD4opHCnRoHKYitsUA
+
+结合人类视觉注意力进行图像分类
+
+https://zhuanlan.zhihu.com/p/27464080
+
+从《Convolutional Sequence to Sequence Learning》到《Attention Is All You Need》
+
 # VAE
 
 变分自编码器（Variational Auto-Encoder，VAE）是Autoencoder的一种扩展。

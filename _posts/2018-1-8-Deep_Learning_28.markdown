@@ -28,9 +28,15 @@ category: DL
 
 $$p(Z)=\sum_X p(Z|X)p(X)=\sum_X \mathcal{N}(0,I)p(X)=\mathcal{N}(0,I) \sum_X p(X) = \mathcal{N}(0,I)$$
 
+这样我们就能达到我们的先验假设：p(Z)是标准正态分布。然后我们就可以放心地从$$\mathcal{N}(0,I)$$中采样来生成图像了。
 
+那怎么让所有的p(Z|X)都向$$\mathcal{N}(0,I)$$看齐呢？如果没有外部知识的话，其实最直接的方法应该是在重构误差的基础上中加入额外的loss：
 
 ## 参考
+
+https://mp.weixin.qq.com/s/TqZnlXLKHhZn3U29PlqetA
+
+变分自编码器VAE面临的挑战与发展方向
 
 https://mp.weixin.qq.com/s/mtZ4_pwl8_GhitgImAU0VA
 

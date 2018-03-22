@@ -376,7 +376,7 @@ https://mp.weixin.qq.com/s/9woLRUGuirTV91uuHaP69A
 
 中科大潘建伟团队在光量子处理器上成功实现拓扑数据分析
 
-# 连续学习
+## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
 
@@ -394,7 +394,7 @@ https://mp.weixin.qq.com/s/kmEFjzFIbNq0_qdjc1Wm_w
 
 DeepMind新智能体架构Unicorn：持续学习能力胜过多个基准智能体
 
-# PaddlePaddle
+## PaddlePaddle
 
 https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q
 

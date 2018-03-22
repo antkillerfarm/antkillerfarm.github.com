@@ -52,6 +52,10 @@ https://mp.weixin.qq.com/s/yTLiw9am0wzeJ-O3m0xUoQ
 
 如何做好文本关键词提取？从三种算法说起
 
+https://mp.weixin.qq.com/s/xjSw7PbVrESo9u4otBOM1Q
+
+白话TF-IDF应用（一）：自动提取关键词
+
 ## 论文
 
 《Distant Supervision for relation extraction without labeled data》

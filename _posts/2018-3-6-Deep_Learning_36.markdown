@@ -72,6 +72,10 @@ http://i.dataguru.cn/mportal.php?mod=view&aid=11463
 
 深度学习在推荐领域的应用
 
+https://zhuanlan.zhihu.com/p/33214451
+
+深度学习在推荐系统上的应用
+
 https://mp.weixin.qq.com/s/hGvQvddD3i858XSK4z08Ug
 
 主要推荐系统算法总结及Youtube深度学习推荐算法实例概括
@@ -171,6 +175,10 @@ AI研究新利器Etymo，妈妈再也不用担心我找不到论文！
 https://zhuanlan.zhihu.com/p/33956907
 
 阿里-搜索团队智能内容生成实践
+
+https://mp.weixin.qq.com/s/9nGjIgwzGG2sXvEzvYEptQ
+
+基于“翻译”的推荐系统方案，加州大学圣地亚哥分校最新工作
 
 # Recursive NN
 

@@ -90,10 +90,6 @@ https://mp.weixin.qq.com/s/Yh8Zj7Jhliy7a9h6mW8FxQ
 
 解读谷歌NASNet：一个大规模图像识别架构!
 
-https://mp.weixin.qq.com/s/Pm1HiEQOBnbo_GQ_v6Y_zw
-
-腾讯提出自适应图卷积神经网络，接受不同图结构和规模的数据
-
 https://mp.weixin.qq.com/s/sCxyk8WEb8W2-mq-tTQs6A
 
 LeCun台大演讲
@@ -348,6 +344,36 @@ https://mp.weixin.qq.com/s/taUMg4wWooniwDVmLRahYQ
 
 https://mp.weixin.qq.com/s/_ZmbwM-lmS0o2DjAAc_TWQ
 
-美图云+中科院AAAI2018：视频语义理解的类脑智能
+美图云+中科院AAAI2018：视频语义理解的类脑智能NOASSOM
 
+https://mp.weixin.qq.com/s/HN-kAtltn7hkuUlpzmDDFA
 
+TensorFlow Lattice：先前知识推动灵活性提升
+
+https://zhuanlan.zhihu.com/p/30265894
+
+自监督学习近期进展
+
+https://mp.weixin.qq.com/s/gaNSQ_8JGqX4a3lGuf-9fA
+
+如何让电脑成为看图说话的高手？
+
+https://mp.weixin.qq.com/s/lhGM_wpnEQDWh95n4jQZBQ
+
+何晖光：基于视觉信息编解码的深度学习类脑机制研究
+
+https://mp.weixin.qq.com/s/Jhi9TWQqhJIyG7cakgo2Xg
+
+修改一个像素，就能让神经网络识别图像出错
+
+https://mp.weixin.qq.com/s/jwdYAeCGleKRRiInY85bLw
+
+Vicarious发表Science论文：概率生成模型超越神经网络
+
+http://kexue.fm/usr/uploads/2016/06/1002322295.pdf
+
+基于深度学习的图像识别进展：百度的若干实践
+
+https://mp.weixin.qq.com/s/W2DqCjmF3oyPLKeETAO5XA
+
+CNN实现“读脑术”，成功解码人脑视觉活动，准确率超50%

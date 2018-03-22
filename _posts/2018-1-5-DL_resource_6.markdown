@@ -30,10 +30,6 @@ https://mp.weixin.qq.com/s/bMW2go3QefbgYMqVSzyy_g
 
 腾讯AI Lab深度解读CVPR五大前沿
 
-http://mp.weixin.qq.com/s/Bt6EMD4opHCnRoHKYitsUA
-
-结合人类视觉注意力进行图像分类
-
 https://mp.weixin.qq.com/s/M4U0RKcFqZKZAiwK5IyOFA
 
 GAN之父Ian Goodfellow在Quora：机器学习十问十答
@@ -218,10 +214,6 @@ https://mp.weixin.qq.com/s/x5jX2g44X2sp7WIOdoUP4w
 
 李沐：漫谈在线学习：在线梯度下降
 
-https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
-
-Bengio等人提出图注意网络架构GAT，可处理复杂结构图
-
 https://mp.weixin.qq.com/s/iYStJoLDJvAr8Ke_X8djtA
 
 在线深度学习：在数据流中实时学习深度神经网络
@@ -309,10 +301,6 @@ https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/content/
 https://mp.weixin.qq.com/s/JAVzy8gy7k4EesBBHvEZLg
 
 亚马逊用机器学习自动调优数据库管理系统
-
-https://mp.weixin.qq.com/s/U0K79ELLj4wsOR4sd5G4Vw
-
-Vicarious详解新型图式网络：赋予强化学习泛化能力
 
 https://mp.weixin.qq.com/s/gfuO7CwfFiNC-iqDquDKQQ
 

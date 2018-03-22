@@ -148,6 +148,14 @@ https://mp.weixin.qq.com/s/To3pnx1hVq_4p7UnQVMw9A
 
 斯坦福大学&DeepMind联合提出机器人控制新方法，RL+IL端到端地学习视觉运动策略
 
+https://mp.weixin.qq.com/s/U0K79ELLj4wsOR4sd5G4Vw
+
+Vicarious详解新型图式网络：赋予强化学习泛化能力
+
+https://zhuanlan.zhihu.com/p/29019246
+
+基于策略的增强学习
+
 # 模型压缩
 
 对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。

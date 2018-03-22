@@ -150,13 +150,15 @@ Kaggle车辆边界识别第一名解决方案：使用预训练权重轻松改�
 
 # DeepLab
 
-DeepLab共有3个版本，分别对应3篇论文：
+DeepLab共有4个版本（v1, v2, v3, v3+），分别对应4篇论文：
 
 《Semantic Image Segmentation with Deep Convolutional Nets and Fully Connected CRFs》
 
 《DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs》
 
 《Rethinking Atrous Convolution for Semantic Image Segmentation》
+
+《Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation》
 
 >Liang-Chieh(Jay) Chen，台湾国立交通大学本科（2004年）+密歇根大学硕士（2010年）+UCLA博士（2015年）。现为Google研究员。   
 >个人主页：   
@@ -185,6 +187,10 @@ https://mp.weixin.qq.com/s/zLyAwtG49A-vwWa1iPziew
 https://mp.weixin.qq.com/s/L1JtK9eUhVJMGWm-SjWW5w
 
 DeepLab v1
+
+https://zhuanlan.zhihu.com/p/34783156
+
+读Xception和DeepLab V3+
 
 # ENet
 

@@ -244,6 +244,10 @@ https://mp.weixin.qq.com/s/_ohsx7kzgU-szP-K9_Yv1w
 
 优于Mask R-CNN，港中文&腾讯优图提出PANet实例分割框架
 
+https://mp.weixin.qq.com/s/uJpVqRpWWaK2cY8fYGlRag
+
+先理解Mask R-CNN的工作原理，然后构建颜色填充器应用
+
 # 手势识别
 
 https://zhuanlan.zhihu.com/p/26630215

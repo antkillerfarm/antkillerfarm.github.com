@@ -247,3 +247,6 @@ PCC能够有效解决，在协同过滤数据集中，不同用户评分尺度�
 
 https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient
 
+https://mp.weixin.qq.com/s/RjpH7XD5SCMkrSdcmG394g
+
+从PCC到MIC，一文教你如何计算变量之间的相关性

@@ -118,6 +118,10 @@ https://mp.weixin.qq.com/s/GccST3xJ1QRIVM7cFgsn3A
 
 Apollo 2.0 软硬件框架初探（二）
 
+https://mp.weixin.qq.com/s/UHQXF2Ju8erw9thm0Jjt2A
+
+Apollo 2.0框架及源码分析(三)
+
 https://mp.weixin.qq.com/s/3i8mJn4OPjt-KV1fp8bZQQ
 
 Apollo Planning模块源代码分析（上）
@@ -130,9 +134,9 @@ https://mp.weixin.qq.com/s/bH6khM8gO3JE4YT9i8hSlQ
 
 Apollo 2.0自动驾驶平台技术解析与应用
 
-https://mp.weixin.qq.com/s/UHQXF2Ju8erw9thm0Jjt2A
+https://mp.weixin.qq.com/s/EgsdlDhd8lIXU3bnTYJh0w
 
-Apollo 2.0 框架及源码分析(三)
+Apollo高精地图解析
 
 ## 文章
 
