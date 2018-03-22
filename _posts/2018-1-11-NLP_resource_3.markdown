@@ -282,4 +282,8 @@ https://mp.weixin.qq.com/s/T1_mxvAJzTf-JtxEqsSUxA
 
 清华大学刘洋：基于深度学习的机器翻译
 
+https://mp.weixin.qq.com/s/sCpKkkf2Tj37Nr5j7S7M6Q
+
+基于Freebase的问答研究
+
 

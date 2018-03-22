@@ -30,7 +30,13 @@ $$p(Z)=\sum_X p(Z|X)p(X)=\sum_X \mathcal{N}(0,I)p(X)=\mathcal{N}(0,I) \sum_X p(X
 
 这样我们就能达到我们的先验假设：p(Z)是标准正态分布。然后我们就可以放心地从$$\mathcal{N}(0,I)$$中采样来生成图像了。
 
-那怎么让所有的p(Z|X)都向$$\mathcal{N}(0,I)$$看齐呢？如果没有外部知识的话，其实最直接的方法应该是在重构误差的基础上中加入额外的loss：
+那怎么让所有的$$p(Z\mid X)$$都向$$\mathcal{N}(0,I)$$看齐呢？如果没有外部知识的话，其实最直接的方法应该是在重构误差的基础上中加入额外的loss：
+
+$$\mathcal{L}_{\mu}=\Vert f_1(X_k)\Vert^2,\mathcal{L}_{\sigma^2}=\Vert f_2(X_k)\Vert^2$$
+
+因为它们分别代表了均值$$\mu_k$$和方差的对数$$\log \sigma^2$$，达到$$\mathcal{N}(0,I)$$就是希望二者尽量接近于0了。不过，这又会面临着这两个损失的比例要怎么选取的问题，选取得不好，生成的图像会比较模糊。所以，原论文直接算了一般（各分量独立的）正态分布与标准正态分布的KL散度$$KL\Big(N(\mu,\sigma^2)\Big\Vert N(0,I)\Big)$$作为这个额外的loss，计算结果为：
+
+$$\mathcal{L}_{\mu,\sigma^2}=\frac{1}{2} \sum_{i=1}^d \Big(\mu_{(i)}^2 + \sigma_{(i)}^2 - \log \sigma_{(i)}^2 - 1\Big)$$
 
 ## 参考
 

@@ -110,6 +110,10 @@ https://mp.weixin.qq.com/s/nwymOr03cqm0ifpoBjL9Eg
 
 TensorFlow变量保存和恢复
 
+https://mp.weixin.qq.com/s/l3hQCQWh5NgihzTs2A049w
+
+风格迁移原理及tensorflow实现
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/75xrjqzW0S1TgAfTyvccdw
