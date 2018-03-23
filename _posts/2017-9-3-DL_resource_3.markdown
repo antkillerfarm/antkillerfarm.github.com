@@ -262,6 +262,10 @@ https://mp.weixin.qq.com/s/7g81BnGAD5DpS_1pDxA6QQ
 
 Uber开源神经进化算法开发的交互式可视化工具VINE
 
+https://mp.weixin.qq.com/s/b6wIxn1faieAR2ioU-UxTQ
+
+IBM全新机器学习库SnapML：训练提速46倍，40亿样本仅需91.5秒
+
 ## 量子计算 & 遗传算法
 
 https://www.zhihu.com/question/28171555

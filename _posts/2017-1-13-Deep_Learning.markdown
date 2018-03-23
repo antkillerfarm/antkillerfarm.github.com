@@ -79,6 +79,10 @@ Deep Learning圈子的主要人物：
 
 上图是一个更大的DL牛人关系图。
 
+https://mp.weixin.qq.com/s/w_LKb-xOdyBsQBRGmHo6zw
+
+深度学习综述：Hinton、Yann LeCun和Bengio经典重读
+
 # MP神经元模型
 
 MP神经元模型是1943年，由Warren McCulloch和Walter Pitts提出的。

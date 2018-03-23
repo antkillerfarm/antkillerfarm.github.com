@@ -38,11 +38,29 @@ $$\mathcal{L}_{\mu}=\Vert f_1(X_k)\Vert^2,\mathcal{L}_{\sigma^2}=\Vert f_2(X_k)\
 
 $$\mathcal{L}_{\mu,\sigma^2}=\frac{1}{2} \sum_{i=1}^d \Big(\mu_{(i)}^2 + \sigma_{(i)}^2 - \log \sigma_{(i)}^2 - 1\Big)$$
 
+这里的d是隐变量Z的维度，而$$\mu_{(i)}$$和$$\sigma_{(i)}^2$$分别代表一般正态分布的均值向量和方差向量的第i个分量。直接用这个式子做补充loss，就不用考虑均值损失和方差损失的相对比例问题了。显然，这个loss也可以分两部分理解：
+
+$$\begin{aligned}&\mathcal{L}_{\mu,\sigma^2}=\mathcal{L}_{\mu} + \mathcal{L}_{\sigma^2}\\ 
+&\mathcal{L}_{\mu}=\frac{1}{2} \sum_{i=1}^d \mu_{(i)}^2=\frac{1}{2}\Vert f_1(X)\Vert^2\\ 
+&\mathcal{L}_{\sigma^2}=\frac{1}{2} \sum_{i=1}^d\Big(\sigma_{(i)}^2 - \log \sigma_{(i)}^2 - 1\Big)\end{aligned}$$
+
+## Reparameterization Trick
+
+这是实现模型的一个技巧。我们要从$$p(Z\mid X_k)$$中采样一个$$Z_k$$出来，尽管我们知道了$$p(Z\mid X_k)$$是正态分布，但是均值方差都是靠模型算出来的，我们要靠这个过程反过来优化均值方差的模型，但是“采样”这个操作是不可导的，而采样的结果是可导的，于是我们利用了一个事实：
+
+>从$$\mathcal{N}(\mu,\sigma^2)$$中采样一个Z，相当于从$$\mathcal{N}(0,I)$$中采样一个$$\varepsilon$$，然后让$$Z=\mu + \varepsilon \times \sigma$$。
+
+![](/images/img2/VAE_4.png)
+
 ## 参考
 
 https://mp.weixin.qq.com/s/TqZnlXLKHhZn3U29PlqetA
 
 变分自编码器VAE面临的挑战与发展方向
+
+https://mp.weixin.qq.com/s/tRB85VF8XH9TTXZsiNVLhA
+
+深入理解变分自编码器
 
 https://mp.weixin.qq.com/s/mtZ4_pwl8_GhitgImAU0VA
 

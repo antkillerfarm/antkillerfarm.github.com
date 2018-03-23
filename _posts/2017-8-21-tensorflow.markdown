@@ -348,9 +348,9 @@ mymodel.data-00000-of-00001
 
 mymodel.index
 
-.data文件就是保存训练的variables我们将要使用它。
+.data文件用于保存训练好的variables，以供未来的推断之用。
 
-和这些文件一起，tensorflow还有一个文件叫checkpoint用来简单保存最近一次保存checkpoint文件的记录。
+tensorflow还有一个叫checkpoint的文件，用来简单保存最近一次的checkpoint记录。
 
 ### 保存模型
 

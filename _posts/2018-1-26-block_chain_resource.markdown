@@ -234,6 +234,10 @@ https://zhuanlan.zhihu.com/p/34223088
 
 如何进入BIOS？
 
+https://zhuanlan.zhihu.com/p/34858149
+
+128G的固态硬盘为什么有的标120G，有的标100G？固态硬盘容量背后的秘密
+
 # 图像渲染
 
 http://blog.csdn.net/pizi0475/article/details/6650851

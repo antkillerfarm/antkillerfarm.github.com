@@ -358,3 +358,19 @@ https://mp.weixin.qq.com/s/AhNIvlKNba8ls9loM1CZ-w
 
 阿里再开源！基于JAVA的模块化开发框架JarsLink
 
+https://mp.weixin.qq.com/s/BL5wV_-Glte4Xno6GKwyYg
+
+外卖也智能！美团骑手智能助手的技术与实践
+
+https://mp.weixin.qq.com/s/wQPvJs6D0026Fv7kMntESg
+
+美团配送资金安全治理之对账体系建设
+
+https://mp.weixin.qq.com/s/x49kdBKtkSyYF8DyGmrK-Q
+
+DataMan：美团旅行数据质量监管平台实践
+
+https://mp.weixin.qq.com/s/iCJ9IeAPnaqatEWzgXONfg
+
+每天数百亿用户行为数据，美团点评怎么实现秒级转化分析？
+

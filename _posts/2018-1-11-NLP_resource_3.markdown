@@ -286,4 +286,11 @@ https://mp.weixin.qq.com/s/sCpKkkf2Tj37Nr5j7S7M6Q
 
 基于Freebase的问答研究
 
+https://mp.weixin.qq.com/s/BhDy55Mj5oMArO0MKwvnKw
+
+基于异构社交网络学习的社区问答方法，同时建模问题、回答和回答者
+
+https://mp.weixin.qq.com/s/go0TK5ml_LZkLTSxrQLvfA
+
+携程“小诗机”背后的机器学习和自然语言处理技术
 
