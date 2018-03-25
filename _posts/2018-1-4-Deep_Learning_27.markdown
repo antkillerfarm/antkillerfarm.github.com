@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十七）——VAE（1）
+title:  深度学习（二十七）——Attention（2）
 category: DL 
 ---
 
@@ -65,6 +65,22 @@ Local Attention是一种介于Kelvin Xu所提出的Soft Attention和Hard Attenti
 考虑到神经网络的各种操作基本都是累计乘加的变种，因此，Attention is All You Need实际上是很自然的结论，你总可以对Attention进行修改，让它实现CNN、RNN、FC的效果。
 
 这点在AI芯片领域尤为突出，**无论IC架构差异如何巨大，硬件底层基本就是乘累加器。**
+
+## Transformer
+
+Attention的介绍到此为止，但《Attention is All You Need》的传奇继续，该文不仅提出了两种Attention模块，而且还提出了如下图所示的Transformer模型。该模型主要用于NMT领域，由于Attention不依赖上一刻的数据，同时精度也不弱于LSTM，因此有很好并行计算特性，在工业界得到了广泛应用。阿里巴巴和搜狗目前的NMT方案都是基于Transformer模型的。
+
+![](/images/img2/Transformer.png)
+
+参考：
+
+https://mp.weixin.qq.com/s/HquT_mKm7x_rbDGz4Voqpw
+
+阿里巴巴最新实践：TVM+TensorFlow提高神经机器翻译性能
+
+https://mp.weixin.qq.com/s/S_xhaDrOaPe38ZvDLWl4dg
+
+从技术到产品，搜狗为我们解读了神经机器翻译的现状
 
 ## 参考
 
@@ -212,15 +228,4 @@ https://kexue.fm/archives/5253
 
 虽然遇到困难，但还是要想办法解决的。GAN的思路很直接粗犷：既然没有合适的度量，那我干脆把这个度量也用神经网络训练出来吧。而VAE则使用了一个精致迂回的技巧。
 
-## VAE的传统理解
-
-首先我们有一批数据样本$$\{X_1,\dots,X_n\}$$，其整体用X来描述，我们本想根据$$\{X_1,\dots,X_n\}$$得到X的分布p(X)，如果能得到的话，那我直接根据p(X)来采样，就可以得到所有可能的X了（包括$$\{X_1,\dots,X_n\}$$以外的），这是一个终极理想的生成模型了。当然，这个理想很难实现，于是我们将分布改一改：
-
-$$p(X)=\sum_Z p(X|Z)p(Z)$$
-
-此时$$p(X\mid Z)$$就描述了一个由Z来生成X的模型，而我们假设Z服从标准正态分布，也就是$$p(Z)=\mathcal{N}(0,I)$$。如果这个理想能实现，那么我们就可以先从标准正态分布中采样一个Z，然后根据Z来算一个X，也是一个很棒的生成模型。接下来就是结合自编码器来实现重构，保证有效信息没有丢失，再加上一系列的推导，最后把模型实现。框架的示意图如下：
-
-![](/images/img2/VAE_2.png)
-
-看出了什么问题了吗？如果像这个图的话，我们其实完全不清楚：究竟经过重新采样出来的$$Z_k$$，是不是还对应着原来的$$X_k$$，所以我们如果直接最小化$$\mathcal{D}(\hat{X}_k,X_k)^2$$（这里D代表某种距离函数）是很不科学的，而事实上你看代码也会发现根本不是这样实现的。
 

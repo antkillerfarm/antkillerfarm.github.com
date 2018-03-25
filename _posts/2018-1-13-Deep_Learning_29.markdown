@@ -4,6 +4,88 @@ title:  深度学习（二十九）——迁移学习, Spiking Neuron Networks, 
 category: DL 
 ---
 
+# VAE（续）
+
+## VAE的另一个介绍
+
+以下章节的内容主要摘自：
+
+https://www.jeremyjordan.me/variational-autoencoders/
+
+Variational autoencoders
+
+该文中文版：
+
+https://mp.weixin.qq.com/s/tRB85VF8XH9TTXZsiNVLhA
+
+深入理解变分自编码器
+
+自编码器是发现数据的一些隐状态（不完整，稀疏，去噪，收缩）表示的模型。 更具体地说，输入数据被转换成一个编码向量，其中每个维度表示从数据学到的属性。 最重要的是编码器为每个编码维度输出单个值， 解码器随后接收这些值并尝试重新创建原始输入。
+
+变分自编码器（VAE）提供了描述隐空间观察的概率方式。 因此，我们不需要构建一个输出单个值来描述每个隐状态属性的编码器，而是要用编码器描述每个隐属性的概率分布。
+
+举个例子，假设我们已经在一个大型人脸数据集上训练了一个Autoencoder模型, encoder的维度是6。理想情况下, 我们希望自编码器学习面部的描述性属性，比如肤色，人是否戴眼镜，从而能够用一些特征值来表示这些属性。
+
+![](/images/img2/VAE_7.png)
+
+在上面的示例中，我们使用单个值来描述输入图像的隐属性。 但是，我们其实更愿意用一个分布去表示每个隐属性。 比如, 输入蒙娜丽莎的照片，我们很难非常自信的为微笑属性分配一个具体值, 但是用了变分自编码器, 我们有能比较自信的说微笑属性服从什么分布。
+
+![](/images/img2/VAE_8.png)
+
+通过这种方法，我们现在将给定输入的每个隐属性表示为概率分布。 当从隐状态解码时，我们将从每个隐状态分布中随机采样，来生成向量作为解码器的输入。
+
+![](/images/img2/VAE_9.png)
+
+通过构造我们的编码器来输出一系列可能的值（统计分布），然后随机采样该值作为解码器的输入，我们能够学习到一个连续，平滑的隐空间。因此，在隐空间中彼此相邻的值应该与非常类似的重建相对应。而从隐分布中采样到的任何样本，我们都希望解码器理解, 并准确重构出来。
+
+![](/images/img2/VAE_10.png)
+
+我们可以进一步将此模型构造成神经网络架构：
+
+![](/images/img2/VAE_11.png)
+
+下图是VAE的结构图：
+
+![](/images/img2/VAE_12.png)
+
+Reparameterization Trick的图示：
+
+![](/images/img2/VAE_13.png)
+
+Reparameterization Trick的反向传播：
+
+![](/images/img2/VAE_14.png)
+
+## 参考
+
+https://mp.weixin.qq.com/s/TqZnlXLKHhZn3U29PlqetA
+
+变分自编码器VAE面临的挑战与发展方向
+
+https://mp.weixin.qq.com/s/mtZ4_pwl8_GhitgImAU0VA
+
+一文读懂什么是变分自编码器
+
+https://mp.weixin.qq.com/s/LQFuXgI7uZK2UKRfZvlVbA
+
+Variational AutoEncoder
+
+https://mp.weixin.qq.com/s/lnSMdOk8fYfdU4aGeI5j7Q
+
+未标注的数据如何处理？一文读懂变分自编码器VAE
+
+https://zhuanlan.zhihu.com/p/27549418
+
+花式解释AutoEncoder与VAE
+
+https://mp.weixin.qq.com/s/ZlLuhu08m_RnD-h86df8sA
+
+清华大学提出SA-VAE框架，通过单样本/少样本学习生成任意风格的汉字
+
+https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
+
+面向无监督任务：DeepMind提出神经离散表示学习生成模型VQ-VAE
+
 # 迁移学习
 
 https://mp.weixin.qq.com/s/HmkTkv7QT08lGtJsHD7EvQ
@@ -105,6 +187,10 @@ https://mp.weixin.qq.com/s/FHmijTVqQ26osp6PzZsbvQ
 https://mp.weixin.qq.com/s/109hJaWsL4mcr9dc9vdDMg
 
 结合主动学习与迁移学习：让医学图像标注工作量减少一半
+
+https://mp.weixin.qq.com/s/A7PAu6-B1JRUfGmb2Fm_vA
+
+中国科学院大学Oral论文：使用鉴别性特征实现零样本识别
 
 # Spiking Neuron Networks
 

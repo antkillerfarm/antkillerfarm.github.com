@@ -184,6 +184,14 @@ https://mp.weixin.qq.com/s/5Omfj-fYRDt9j2VZH1XXkQ
 
 如何用Keras打造出“风格迁移”的AI艺术作品
 
+https://mp.weixin.qq.com/s/_B_WaHJyH-JPS2izq_DuFg
+
+如何使用LSTM在Keras中快速实现情感分析任务
+
+https://mp.weixin.qq.com/s/kIrmFLn3g-JlW74DAt4hEg
+
+Python新玩法！如何自己动手实现FaceID功能
+
 # OpenAI Gym
 
 Openai gym是一个用于开发和比较强化学习（reinforcement learning，RL）算法的工具包，与其他的数值计算库兼容，如tensorflow或者theano库。现在主要支持的是python语言，以后将支持其他语言。

@@ -120,3 +120,19 @@ https://mp.weixin.qq.com/s/75xrjqzW0S1TgAfTyvccdw
 
 如何用深度学习将前端设计模型自动转换为代码？
 
+https://mp.weixin.qq.com/s/H2GmqloNumttFlaSArjgUg
+
+FAIR何恺明等人提出组归一化：替代批归一化，不受批量大小限制
+
+https://mp.weixin.qq.com/s/LTtcD5CBT8m127thjBaRsw
+
+DeepMind提出神经元删除法：通过理解每个神经元来理解深度学习
+
+https://mp.weixin.qq.com/s/e63_T75iG6YvqFKCE5cbvA
+
+AI不仅能画画，还能编和弦了：谷歌这几年取得了哪些艺术成就？
+
+https://mp.weixin.qq.com/s/yfuMacLnj9q-9gpXCUfZhg
+
+PSU提出深度k-最近邻算法：解决深度学习应用的安全漏洞
+

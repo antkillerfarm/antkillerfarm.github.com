@@ -338,3 +338,8 @@ https://mp.weixin.qq.com/s/Ef6aWgs9xkHaAwTX4rxjKA
 
 用激光雷达感知世界
 
+https://mp.weixin.qq.com/s/45xNWa_32DAsKdlfYY_QfA
+
+Uber自动驾驶撞死行人视频公布：无人车环境感知解决方案该如何优化？
+
+

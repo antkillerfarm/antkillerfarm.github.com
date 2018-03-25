@@ -452,6 +452,10 @@ https://mp.weixin.qq.com/s/C68icGtwh3IzuUbANaRXEg
 
 也许，这样理解HTTPS更容易
 
+https://mp.weixin.qq.com/s/CP_Egs4LUx7I8BXSqrS_dQ
+
+互联网协议入门（一）
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

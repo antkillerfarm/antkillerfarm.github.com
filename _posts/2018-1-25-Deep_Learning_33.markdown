@@ -6,11 +6,24 @@ category: DL
 
 # Capsule
 
+Capsule是深度学习先驱Hinton于2017年提出的概念。
+
+论文：
+
+《Dynamic Routing Between Capsules》
+
 官方代码：
 
 https://github.com/Sarasra/models/tree/master/research/capsules
 
-参考：
+
+
+
+## 参考
+
+https://www.zhihu.com/question/67287444
+
+如何看待Hinton的论文《Dynamic Routing Between Capsules》？
 
 https://mp.weixin.qq.com/s/p_92_arJBHX6nPCY1wF5cg
 

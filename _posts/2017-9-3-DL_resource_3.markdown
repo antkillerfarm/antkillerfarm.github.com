@@ -60,6 +60,10 @@ https://mp.weixin.qq.com/s/-39_7SbRFChDOOpcpJjVMQ
 
 如何在浏览器使用synaptic.js训练简单的神经网络推荐系统
 
+https://mp.weixin.qq.com/s/ZG_PShoIys6oiPBEN7Pwuw
+
+无需基础知识，使用JavaScript构建你的第一个神经网络
+
 https://mp.weixin.qq.com/s/iwPI8g2JwabwiCO8kfw8Hw
 
 用开源工具DIY车牌识别系统
@@ -415,5 +419,10 @@ PaddlePaddle与TensorFlow的对比分析
 https://mp.weixin.qq.com/s/ync8iu8nmpJoI5Sfnj8DqQ
 
 百度深度学习平台PaddlePaddle框架解析
+
+https://mp.weixin.qq.com/s/dGapoc3YUkzjItrTUi3DQg
+
+新手入门？一步一步教你如何安装PaddlePaddle
+
 
 
