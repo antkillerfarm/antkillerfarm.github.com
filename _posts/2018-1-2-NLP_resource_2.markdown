@@ -330,4 +330,7 @@ https://mp.weixin.qq.com/s/C9UbA0482F8SvB27i-V_9Q
 
 微软亚洲研究院周明：自然语言对话引擎
 
+https://mp.weixin.qq.com/s/F1z7evNDqghEzSD-_Xbgfw
+
+基于卷积深度相关性计算的社区问答方法，建模问题和回答的匹配关系
 

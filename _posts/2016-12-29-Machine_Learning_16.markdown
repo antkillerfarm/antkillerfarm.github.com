@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（十六）——主成分分析, loss function比较, 独立成分分析
+title:  机器学习（十六）——主成分分析, 独立成分分析
 category: ML 
 ---
 
@@ -235,50 +235,6 @@ https://mp.weixin.qq.com/s/dDdyaA7Nxqa8tBE_qQ80Dw
 https://mp.weixin.qq.com/s/JDWgw3OOdBurDAShrPHJ7Q
 
 从最大方差来看主成分分析PCA
-
-# loss function比较
-
-![](/images/article/loss_function.png)
-
-这里m代表了置信度，越靠近右边置信度越高。
-
-其中蓝色的阶跃函数又被称为Gold Standard，黄金标准，因为这是最准确无误的分类器loss function了。分对了loss为0，分错了loss为1，且loss不随到分界面的距离的增加而增加，也就是说这个分类器非常鲁棒。但可惜的是，它不连续，求解这个问题是NP-hard的，所以才有了各种我们熟知的分类器。
-
-其中红色线条就是SVM了，由于它在m=1处有个不可导的转折点，右边都是0，所以分类正确的置信度超过一定的数之后，对分界面的确定就没有一点贡献了。
-
-《机器学习（五）》中提到的SVM软间隔，其所使用的loss function，又被称为Hinge loss函数：
-
-$$l_{hinge}(z)=\max(0,1-z)$$
-
-除此之外，exponential loss函数：
-
-$$l_{exp}(z)=\exp(-z)$$
-
-和logistic loss函数：
-
-$$l_{log}(z)=\log(1+\exp(-z))$$
-
-也是较常用的SVM loss function。
-
-黄色线条是Logistic Regression的损失函数，与SVM不同的是，它非常平滑，但本质跟SVM差别不大。
-
-绿色线条是boost算法使用的损失函数。
-
-黑色线条是ELM（Extreme learning machine）算法的损失函数。它的优点是有解析解，不必使用梯度下降等迭代方法，可直接计算得到最优解。但缺点是随着分类的置信度的增加，loss不降反升，因此，最终准确率有限。此外，解析算法相比迭代算法，对于大数据的适应较差，这也是该方法的局限所在。
-
-参见：
-
-https://www.zhihu.com/question/28810567
-
-Extreme learning machine (ELM) 到底怎么样，有没有做的前途？
-
-https://mp.weixin.qq.com/s/XB9VsW3NRwHua6AdRL3n8w
-
-Lossless Triplet Loss:一种高效的Siamese网络损失函数
-
-https://mp.weixin.qq.com/s/qXZMo_RitSenmI7x0xGNsg
-
-中科院自动化所多媒体计算与图形学团队NIPS 2017论文提出平均Top-K损失函数，专注于解决复杂样本
 
 # 独立成分分析
 

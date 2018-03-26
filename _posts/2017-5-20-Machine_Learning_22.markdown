@@ -1,10 +1,56 @@
 ---
 layout: post
-title:  机器学习（二十二）——HMM, AutoML, KNN
+title:  机器学习（二十二）——EMD, LSA, HMM, AutoML, KNN
 category: ML 
 ---
 
-# LSA（续）
+# Earth mover's distance
+
+推土机距离（EMD）是两个概率分布之间的距离度量的一种方式。如果将区间D的概率分布比作沙堆P，那么$$P_r$$和$$P_\theta$$之间的EMD距离，就是推土机将$$P_r$$改造为$$P_\theta$$所需要的工作量。
+
+![](/images/article/earth_move.png)
+
+EMD的计算公式为：
+
+$$EMD(P_r,P_\theta) = \frac{\sum_{i=1}^m \sum_{j=1}^n f_{i,j}d_{i,j}}{\sum_{i=1}^m \sum_{j=1}^n f_{i,j}}$$
+
+其中，f表示土方量，d表示运输距离。
+
+EMD可以是多维分布之间的距离。一维的EMD也被称为Match distance。
+
+EMD有时也称作Wasserstein距离。
+
+在文本处理中，有一个和EMD类似的编辑距离（Edit distance），也叫做Levenshtein distance。它是指两个字串之间，由一个转成另一个所需的最少编辑操作次数。许可的编辑操作包括将一个字符替换成另一个字符，插入一个字符，删除一个字符。一般来说，编辑距离越小，两个串的相似度越大。
+
+>注：严格来说，Edit distance是一系列字符串相似距离的统称。除了Levenshtein distance之外，还包括Hamming distance等。
+
+>Vladimir Levenshtein，1935年生，俄罗斯数学家，毕业于莫斯科州立大学。2006年获得IEEE Richard W. Hamming Medal。
+
+参考：
+
+https://vincentherrmann.github.io/blog/wasserstein/
+
+http://chaofan.io/archives/earth-movers-distance-%e6%8e%a8%e5%9c%9f%e6%9c%ba%e8%b7%9d%e7%a6%bb
+
+# LSA
+
+## 基本原理
+
+Latent Semantic Analysis（隐式语义分析），也叫Latent Semantic Indexing。它是PCA算法在NLP领域的一个应用。
+
+在TF-IDF模型中，所有词构成一个高维的语义空间，每个文档在这个空间中被映射为一个点，这种方法维数一般比较高而且每个词作为一维割裂了词与词之间的关系。
+
+为了解决这个问题，我们要把词和文档同等对待，构造一个维数不高的语义空间，每个词和每个文档都是被映射到这个空间中的一个点。
+
+LSA的思想就是说，我们考察的概率既包括文档的概率，也包括词的概率，以及他们的联合概率。
+
+为了加入语义方面的信息，我们设计一个假想的隐含类包括在文档和词之间，具体思路是这样的：
+
+1.选择一个文档的概率是$$p(d)$$
+
+2.找到一个隐含类的概率是$$p(z\mid d)$$
+
+3.生成一个词w的概率为$$p(w\mid z)$$
 
 ## 实现方法
 
@@ -182,69 +228,5 @@ https://mp.weixin.qq.com/s/Q7Xqb-GZXktFIM5yW8moPg
 
 机器学习中的超参数的选择与交叉验证
 
-## 参考
 
-http://blog.csdn.net/aliceyangxi1987/article/details/71079448
-
-一个框架解决几乎所有机器学习问题
-
-https://docs.microsoft.com/en-us/azure/machine-learning/machine-learning-algorithm-cheat-sheet
-
-MS提供的ML算法选择指南
-
-https://mp.weixin.qq.com/s/53AcAZcCKBZI-i1CORl0bQ
-
-分分钟带你杀入Kaggle Top 1%
-
-https://mp.weixin.qq.com/s/NwVGkAcoDmyXKrYFUaK2Bw
-
-如何在机器学习竞赛中更胜一筹？
-
-https://mp.weixin.qq.com/s/5v80Qz2nEfoAig0ft_HzaA
-
-Kaggle求生
-
-https://mp.weixin.qq.com/s/K3EVwRFBJufXK5QKSQsPbQ
-
-这是一份为数据科学初学者准备的Kaggle竞赛指南
-
-https://mp.weixin.qq.com/s/hf4IOAayS29i6GB9m4GHcA
-
-全自动机器学习：ML工程师屠龙利器
-
-https://mp.weixin.qq.com/s/h2QQhoBfnEhU12RgatT3EA
-
-机器学习都能自动化了？
-
-https://mp.weixin.qq.com/s/-n-5Cp_hgkvdmsHGWEIpWw
-
-自动化机器学习第一步：使用Hyperopt自动选择超参数
-
-https://mp.weixin.qq.com/s/Nbwii7Di_h5Ewy5p5xzBdQ
-
-解决机器学习问题有通法
-
-http://automl.info/
-
-某牛的blog
-
-https://mp.weixin.qq.com/s/gXkD2PPNRhZGcXDxDXRAiQ
-
-由0到1走入Kaggle-入门指导
-
-# KNN
-
-K最近邻(k-Nearest Neighbor，KNN)分类算法，是一个理论上比较成熟的方法，也是最简单的机器学习算法之一。
-
-该方法的思路是：如果一个样本在特征空间中的k个最相似(即特征空间中最邻近)的样本中的大多数属于某一个类别，则该样本也属于这个类别。
-
-KNN算法中，所选择的邻居都是已经正确分类的对象。该方法在定类决策上只依据最邻近的一个或者几个样本的类别来决定待分样本所属的类别。
-
-KNN方法虽然从原理上也依赖于极限定理，但在类别决策时，只与极少量的相邻样本有关。由于KNN方法主要靠周围有限的邻近的样本，而不是靠判别类域的方法来确定所属类别的，因此对于类域的交叉或重叠较多的待分样本集来说，KNN方法较其他方法更为适合。
-
-## 和K-means的区别
-
-虽然K-means和KNN都有计算点之间最近距离的步骤，然而两者的目的是不同的：K-means是聚类算法，而KNN是分类算法。
-
-一个常见的应用是：使用K-means对训练样本进行聚类，然后使用KNN对预测样本进行分类。
 

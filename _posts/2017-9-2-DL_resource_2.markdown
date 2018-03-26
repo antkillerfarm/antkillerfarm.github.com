@@ -342,6 +342,12 @@ https://mp.weixin.qq.com/s/fx0Pfu0MOPjSkzi5mL6U_A
 
 清华&斯坦福提出深度梯度压缩DGC，大幅降低分布式训练网络带宽需求
 
+https://mp.weixin.qq.com/s/wIdTDHEPffWqHA3_XWBLyw
+
+没错，纯SQL查询语句可以实现神经网络。
+
+>SQL跑神经网络固然没有太大意义，然而分布式数据库已经有数十年的历史，对于设计分布式深度学习框架亦有重大的启发意义。
+
 ## 面试
 
 https://www.zhihu.com/question/41233373

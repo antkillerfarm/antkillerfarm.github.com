@@ -4,7 +4,73 @@ title:  机器学习（二十三）——Optimizer
 category: ML 
 ---
 
-# KNN（续）
+# AutoML（续）
+
+## 参考
+
+http://blog.csdn.net/aliceyangxi1987/article/details/71079448
+
+一个框架解决几乎所有机器学习问题
+
+https://docs.microsoft.com/en-us/azure/machine-learning/machine-learning-algorithm-cheat-sheet
+
+MS提供的ML算法选择指南
+
+https://mp.weixin.qq.com/s/53AcAZcCKBZI-i1CORl0bQ
+
+分分钟带你杀入Kaggle Top 1%
+
+https://mp.weixin.qq.com/s/NwVGkAcoDmyXKrYFUaK2Bw
+
+如何在机器学习竞赛中更胜一筹？
+
+https://mp.weixin.qq.com/s/5v80Qz2nEfoAig0ft_HzaA
+
+Kaggle求生
+
+https://mp.weixin.qq.com/s/K3EVwRFBJufXK5QKSQsPbQ
+
+这是一份为数据科学初学者准备的Kaggle竞赛指南
+
+https://mp.weixin.qq.com/s/hf4IOAayS29i6GB9m4GHcA
+
+全自动机器学习：ML工程师屠龙利器
+
+https://mp.weixin.qq.com/s/h2QQhoBfnEhU12RgatT3EA
+
+机器学习都能自动化了？
+
+https://mp.weixin.qq.com/s/-n-5Cp_hgkvdmsHGWEIpWw
+
+自动化机器学习第一步：使用Hyperopt自动选择超参数
+
+https://mp.weixin.qq.com/s/Nbwii7Di_h5Ewy5p5xzBdQ
+
+解决机器学习问题有通法
+
+http://automl.info/
+
+某牛的blog
+
+https://mp.weixin.qq.com/s/gXkD2PPNRhZGcXDxDXRAiQ
+
+由0到1走入Kaggle-入门指导
+
+# KNN
+
+K最近邻(k-Nearest Neighbor，KNN)分类算法，是一个理论上比较成熟的方法，也是最简单的机器学习算法之一。
+
+该方法的思路是：如果一个样本在特征空间中的k个最相似(即特征空间中最邻近)的样本中的大多数属于某一个类别，则该样本也属于这个类别。
+
+KNN算法中，所选择的邻居都是已经正确分类的对象。该方法在定类决策上只依据最邻近的一个或者几个样本的类别来决定待分样本所属的类别。
+
+KNN方法虽然从原理上也依赖于极限定理，但在类别决策时，只与极少量的相邻样本有关。由于KNN方法主要靠周围有限的邻近的样本，而不是靠判别类域的方法来确定所属类别的，因此对于类域的交叉或重叠较多的待分样本集来说，KNN方法较其他方法更为适合。
+
+## 和K-means的区别
+
+虽然K-means和KNN都有计算点之间最近距离的步骤，然而两者的目的是不同的：K-means是聚类算法，而KNN是分类算法。
+
+一个常见的应用是：使用K-means对训练样本进行聚类，然后使用KNN对预测样本进行分类。
 
 ## KNN在时间序列分析上的应用
 
@@ -275,43 +341,4 @@ https://mp.weixin.qq.com/s/VVHe2msyeUTGiC7f_f0FFA
 https://mp.weixin.qq.com/s/qp5tJynA2uZIgv-IzJ_lrA
 
 从基础知识到实际应用，一文了解“机器学习非凸优化技术”
-
-https://mp.weixin.qq.com/s/7E8o1TnvmAvZgB7_AWCunQ
-
-2018值得尝试的无参数全局优化新算法
-
-https://mp.weixin.qq.com/s/hK6BJGAPyg_RqqilCcf2NA
-
-全局自动优化：C++机器学习库dlib引入自动调参算法
-
-https://mp.weixin.qq.com/s/zFGQzC_uQdAwlr9BzA-CYg
-
-深度学习需要了解的四种神经网络优化算法
-
-https://mp.weixin.qq.com/s/rUqIfKWmEBVjajlAn2HXfg
-
-理解深度学习中的学习率及多种选择策略
-
-https://mp.weixin.qq.com/s/jVjemfcLzIWOdWdxMgoxsA
-
-超越Adam，从适应性学习率家族出发解读ICLR 2018高分论文
-
-# 单分类SVM&多分类SVM
-
-原始的SVM主要用于二分类，然而稍加变化，也可用于单分类和多分类。
-
-## 单分类SVM
-
-单分类任务是一类特殊的分类任务。在该任务中，大多数样本只有positive一类标签，而其他样本则笼统的划为另一类。
-
-单分类SVM（也叫Support Vector Domain Description(SVDD)）是一种单分类算法。和普通SVM相比，它不再使用maximum margin了，因为这里并没有两类的data。
-
-单分类SVM的目标，实际上是确定positive样本的boundary。boundary之外的数据，会被分为另一类。这实际上就是一种异常检测的算法了。它主要适用于negative样本的特征不容易确定的场景。
-
-![](/images/article/one_class_svm.png)
-
-这里可以假设最好的boundary要远离feature space中的原点。左边是在original space中的boundary，可以看到有很多的boundary都符合要求，但是比较靠谱的是找一个比较紧（closeness）的boundary（红色的）。这个目标转换到feature space就是找一个离原点比较远的boundary，同样是红色的直线。
-
-当然这些约束条件都是人为加上去的，你可以按照你自己的需要采取相应的约束条件。比如让data的中心离原点最远。
-
 

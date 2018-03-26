@@ -1,10 +1,26 @@
 ---
 layout: post
-title:  机器学习（二十五）——Beam Search, 数据不平衡问题, 强化学习
+title:  机器学习（二十五）——Beam Search, 强化学习
 category: ML 
 ---
 
 # Tri-training（续）
+
+### 纯半监督学习和推断学习
+
+纯半监督学习和推断学习，都属于广义上的半监督学习。和主动学习不同，半监督学习无需专家提供的外部信息。
+
+但标记数据总归不能无中生有，半监督学习的实现有赖于若干假设，其中主要有聚类假设和流形假设两种。其本质都是“相似的样本拥有相似的输出”。
+
+纯半监督学习假定未标记数据为训练样本集，而推断学习则认为未标记数据为测试样本集。
+
+虽然多数情况下，半监督学习能有效提升模型的泛化性能，然而这并不是绝对的。当半监督学习之后，模型的泛化性能反而下降时，我们首先需要检查数据是否满足算法所依赖的假设。
+
+参考：
+
+http://www.cnblogs.com/chaosimple/p/3147974.html
+
+半监督学习
 
 ## 协同训练算法
 
@@ -115,44 +131,6 @@ https://mp.weixin.qq.com/s/N7DE0kvf8THhJQwroHj4vA
 >李舰，从2003年开始，一直把R当作随身武器奋战在统计学和数据分析的第一线，是Rweibo、Rwordseg、tmcn等高质量R包的作者，在业界积累了大量的经验，目前供职于Mango Solutions（中国），任数据总监。
 
 >刘思喆，2012至2016年就职于京东商城，推荐系统平台部高级经理，主要负责和推荐系统离线、在线相关的用户行为、商品特征的建模，以及数据监控平台。因工作业绩，在《京东技术解密》一书中获“数据达人”称号。
-
-# 数据不平衡问题
-
-https://mp.weixin.qq.com/s/e0jXXCIhbaZz7xaCZl-YmA
-
-如何处理不均衡数据？
-
-https://mp.weixin.qq.com/s/2j_6hdq-MhybO_B0S7DRCA
-
-如何解决机器学习中数据不平衡问题
-
-https://mp.weixin.qq.com/s/gEq7opXLukWD5MVhw_buGA
-
-七招教你处理非平衡数据
-
-http://blog.csdn.net/u013709270/article/details/72967462
-
-机器学习中的数据不平衡解决方案大全
-
-https://mlr-org.github.io/mlr-tutorial/devel/html/over_and_undersampling/index.html
-
-Imbalanced Classification Problems
-
-https://mp.weixin.qq.com/s/QEHAV_rW25E0b0N7POr6tw
-
-关于处理样本不平衡问题的Trick整理
-
-https://mp.weixin.qq.com/s/5csfnBWZ2MQsnWZnNj9b8w
-
-机器学习中样本比例不平衡的处理方法
-
-https://mp.weixin.qq.com/s/ZL6UWrBB7qr8jp2QRA1MAQ
-
-方法总结：教你处理机器学习中不平衡类问题
-
-https://mp.weixin.qq.com/s/V5d3kbpXBf4883TQ_sq37A
-
-遇到有这六大缺陷的数据集该怎么办？这有一份数据处理急救包
 
 # 强化学习
 

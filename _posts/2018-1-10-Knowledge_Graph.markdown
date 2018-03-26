@@ -224,3 +224,7 @@ https://mp.weixin.qq.com/s/QbKGm04k_cQbTxnfUFZQBQ
 
 深度学习在知识图谱构建中的应用
 
+https://zhuanlan.zhihu.com/p/34919142
+
+新闻推荐DKN：Deep Knowledge-Aware Network for News Recommendation
+

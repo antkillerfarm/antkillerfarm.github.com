@@ -210,6 +210,10 @@ https://mp.weixin.qq.com/s/bMpugd2Lp35VPr8fQAPzsg
 
 一文概览图卷积网络基本结构和最新进展
 
+https://zhuanlan.zhihu.com/p/31067515
+
+《Semi-Supervised Classification with Graph Convolutional Networks》阅读笔记
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/ygt31lL0mBcyRmwAlsl8Sg

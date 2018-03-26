@@ -164,6 +164,12 @@ https://docs.bazel.build/versions/master/bazel-overview.html
 
 https://github.com/bazelbuild/bazel/releases
 
+安装：
+
+`chmod +x bazel-<version>-installer-linux-x86_64.sh`
+
+`./bazel-<version>-installer-linux-x86_64.sh --user`
+
 参考：
 
 http://www.cnblogs.com/Jack47/p/bazel-faq.html

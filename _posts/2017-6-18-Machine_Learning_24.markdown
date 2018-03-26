@@ -4,9 +4,47 @@ title:  机器学习（二十四）——单分类SVM&多分类SVM, 时间序列
 category: ML 
 ---
 
+# Optimizer
+
+## 参考（续）
+
+https://mp.weixin.qq.com/s/7E8o1TnvmAvZgB7_AWCunQ
+
+2018值得尝试的无参数全局优化新算法
+
+https://mp.weixin.qq.com/s/hK6BJGAPyg_RqqilCcf2NA
+
+全局自动优化：C++机器学习库dlib引入自动调参算法
+
+https://mp.weixin.qq.com/s/zFGQzC_uQdAwlr9BzA-CYg
+
+深度学习需要了解的四种神经网络优化算法
+
+https://mp.weixin.qq.com/s/rUqIfKWmEBVjajlAn2HXfg
+
+理解深度学习中的学习率及多种选择策略
+
+https://mp.weixin.qq.com/s/jVjemfcLzIWOdWdxMgoxsA
+
+超越Adam，从适应性学习率家族出发解读ICLR 2018高分论文
+
 # 单分类SVM&多分类SVM
 
-## 单分类SVM（续）
+原始的SVM主要用于二分类，然而稍加变化，也可用于单分类和多分类。
+
+## 单分类SVM
+
+单分类任务是一类特殊的分类任务。在该任务中，大多数样本只有positive一类标签，而其他样本则笼统的划为另一类。
+
+单分类SVM（也叫Support Vector Domain Description(SVDD)）是一种单分类算法。和普通SVM相比，它不再使用maximum margin了，因为这里并没有两类的data。
+
+单分类SVM的目标，实际上是确定positive样本的boundary。boundary之外的数据，会被分为另一类。这实际上就是一种异常检测的算法了。它主要适用于negative样本的特征不容易确定的场景。
+
+![](/images/article/one_class_svm.png)
+
+这里可以假设最好的boundary要远离feature space中的原点。左边是在original space中的boundary，可以看到有很多的boundary都符合要求，但是比较靠谱的是找一个比较紧（closeness）的boundary（红色的）。这个目标转换到feature space就是找一个离原点比较远的boundary，同样是红色的直线。
+
+当然这些约束条件都是人为加上去的，你可以按照你自己的需要采取相应的约束条件。比如让data的中心离原点最远。
 
 下面我们讨论一下SVDD的算法实现。
 
@@ -260,21 +298,4 @@ https://zhuanlan.zhihu.com/p/34407471
 4.根据B的真实标记，更新模型A。
 
 以SVM为例，对于改善模型性能帮助最大的样本往往是位于分类边界的样本，可将这些样本挑出来，查询它的标记。
-
-### 纯半监督学习和推断学习
-
-纯半监督学习和推断学习，都属于广义上的半监督学习。和主动学习不同，半监督学习无需专家提供的外部信息。
-
-但标记数据总归不能无中生有，半监督学习的实现有赖于若干假设，其中主要有聚类假设和流形假设两种。其本质都是“相似的样本拥有相似的输出”。
-
-纯半监督学习假定未标记数据为训练样本集，而推断学习则认为未标记数据为测试样本集。
-
-虽然多数情况下，半监督学习能有效提升模型的泛化性能，然而这并不是绝对的。当半监督学习之后，模型的泛化性能反而下降时，我们首先需要检查数据是否满足算法所依赖的假设。
-
-参考：
-
-http://www.cnblogs.com/chaosimple/p/3147974.html
-
-半监督学习
-
 

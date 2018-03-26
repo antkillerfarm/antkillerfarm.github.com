@@ -156,6 +156,10 @@ https://zhuanlan.zhihu.com/p/29019246
 
 基于策略的增强学习
 
+https://mp.weixin.qq.com/s/C8hsGkHGtoaS9Vzm6Ub4tw
+
+Berkeley提出“随机搜索”训练线性策略，提高RL的性能
+
 # 模型压缩
 
 对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。

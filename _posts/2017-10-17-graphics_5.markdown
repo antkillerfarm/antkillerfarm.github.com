@@ -204,7 +204,7 @@ Sharpness是对图像边缘进行锐化。
 
 Denoise & Sharpness或者后续更复杂的处理，都属于图像增强的范畴了。这里功能的多少主要取决于ISP的性能，并不是每个ISP都有。
 
-参考：
+## 参考
 
 http://www.cnblogs.com/agllero/p/4489689.html
 

@@ -173,6 +173,10 @@ https://mp.weixin.qq.com/s/aBrwbB_DOGTen-6XL7LGFQ
 
 邓侃：白话蒙特卡洛树搜索和ResNet
 
+https://mp.weixin.qq.com/s/nbTkr0PImlXUSYl91HD91Q
+
+AlphaGo背后的力量：蒙特卡洛树搜索入门指南
+
 https://github.com/gcp/leela-zero
 
 开源版的AlphaGo Zero

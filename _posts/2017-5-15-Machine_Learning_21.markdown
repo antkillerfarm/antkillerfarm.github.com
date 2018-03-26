@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十一）——loss function详解, 机器学习分类器性能指标, EMD, LSA
+title:  机器学习（二十一）——loss function详解, 机器学习分类器性能指标
 category: ML 
 ---
 
@@ -118,6 +118,42 @@ $$\text{MPE} = \frac{100\%}{n}\sum_{t=1}^n \frac{a_t-f_t}{a_t}$$
 
 ![](/images/article/cross_vs_mse.png)
 
+## loss function比较
+
+![](/images/article/loss_function.png)
+
+这里m代表了置信度，越靠近右边置信度越高。
+
+其中蓝色的阶跃函数又被称为Gold Standard，黄金标准，因为这是最准确无误的分类器loss function了。分对了loss为0，分错了loss为1，且loss不随到分界面的距离的增加而增加，也就是说这个分类器非常鲁棒。但可惜的是，它不连续，求解这个问题是NP-hard的，所以才有了各种我们熟知的分类器。
+
+其中红色线条就是SVM了，由于它在m=1处有个不可导的转折点，右边都是0，所以分类正确的置信度超过一定的数之后，对分界面的确定就没有一点贡献了。
+
+《机器学习（五）》中提到的SVM软间隔，其所使用的loss function，又被称为Hinge loss函数：
+
+$$l_{hinge}(z)=\max(0,1-z)$$
+
+除此之外，exponential loss函数：
+
+$$l_{exp}(z)=\exp(-z)$$
+
+和logistic loss函数：
+
+$$l_{log}(z)=\log(1+\exp(-z))$$
+
+也是较常用的SVM loss function。
+
+黄色线条是Logistic Regression的损失函数，与SVM不同的是，它非常平滑，但本质跟SVM差别不大。
+
+绿色线条是boost算法使用的损失函数。
+
+黑色线条是ELM（Extreme learning machine）算法的损失函数。它的优点是有解析解，不必使用梯度下降等迭代方法，可直接计算得到最优解。但缺点是随着分类的置信度的增加，loss不降反升，因此，最终准确率有限。此外，解析算法相比迭代算法，对于大数据的适应较差，这也是该方法的局限所在。
+
+参见：
+
+https://www.zhihu.com/question/28810567
+
+Extreme learning machine(ELM)到底怎么样，有没有做的前途？
+
 ## 参考
 
 https://mp.weixin.qq.com/s/gw3hoDSaojVQUiD6YsMabA
@@ -127,6 +163,18 @@ https://mp.weixin.qq.com/s/gw3hoDSaojVQUiD6YsMabA
 https://mp.weixin.qq.com/s/h-QbwEbaivvHjdhDhE4V1A
 
 如何为单变量模型选择最佳的回归函数
+
+https://mp.weixin.qq.com/s/XB9VsW3NRwHua6AdRL3n8w
+
+Lossless Triplet Loss:一种高效的Siamese网络损失函数
+
+https://mp.weixin.qq.com/s/qXZMo_RitSenmI7x0xGNsg
+
+中科院自动化所多媒体计算与图形学团队NIPS 2017论文提出平均Top-K损失函数，专注于解决复杂样本
+
+https://mp.weixin.qq.com/s/kI22wSoyNT3QXXI8pVwbjA
+
+腾讯AI Lab提出新型损失函数LMCL：可显著增强人脸识别模型的判别能力
 
 # 机器学习分类器性能指标
 
@@ -203,52 +251,4 @@ https://mp.weixin.qq.com/s/mOYUCc3xKMfVw81B6zSeNw
 https://mp.weixin.qq.com/s/zvxB6VqrSOosgGSViCmjEQ
 
 不止准确率：为分类任务选择正确的机器学习度量指标
-
-# Earth mover's distance
-
-推土机距离（EMD）是两个概率分布之间的距离度量的一种方式。如果将区间D的概率分布比作沙堆P，那么$$P_r$$和$$P_\theta$$之间的EMD距离，就是推土机将$$P_r$$改造为$$P_\theta$$所需要的工作量。
-
-![](/images/article/earth_move.png)
-
-EMD的计算公式为：
-
-$$EMD(P_r,P_\theta) = \frac{\sum_{i=1}^m \sum_{j=1}^n f_{i,j}d_{i,j}}{\sum_{i=1}^m \sum_{j=1}^n f_{i,j}}$$
-
-其中，f表示土方量，d表示运输距离。
-
-EMD可以是多维分布之间的距离。一维的EMD也被称为Match distance。
-
-EMD有时也称作Wasserstein距离。
-
-在文本处理中，有一个和EMD类似的编辑距离（Edit distance），也叫做Levenshtein distance。它是指两个字串之间，由一个转成另一个所需的最少编辑操作次数。许可的编辑操作包括将一个字符替换成另一个字符，插入一个字符，删除一个字符。一般来说，编辑距离越小，两个串的相似度越大。
-
->注：严格来说，Edit distance是一系列字符串相似距离的统称。除了Levenshtein distance之外，还包括Hamming distance等。
-
->Vladimir Levenshtein，1935年生，俄罗斯数学家，毕业于莫斯科州立大学。2006年获得IEEE Richard W. Hamming Medal。
-
-参考：
-
-https://vincentherrmann.github.io/blog/wasserstein/
-
-http://chaofan.io/archives/earth-movers-distance-%e6%8e%a8%e5%9c%9f%e6%9c%ba%e8%b7%9d%e7%a6%bb
-
-# LSA
-
-## 基本原理
-
-Latent Semantic Analysis（隐式语义分析），也叫Latent Semantic Indexing。它是PCA算法在NLP领域的一个应用。
-
-在TF-IDF模型中，所有词构成一个高维的语义空间，每个文档在这个空间中被映射为一个点，这种方法维数一般比较高而且每个词作为一维割裂了词与词之间的关系。
-
-为了解决这个问题，我们要把词和文档同等对待，构造一个维数不高的语义空间，每个词和每个文档都是被映射到这个空间中的一个点。
-
-LSA的思想就是说，我们考察的概率既包括文档的概率，也包括词的概率，以及他们的联合概率。
-
-为了加入语义方面的信息，我们设计一个假想的隐含类包括在文档和词之间，具体思路是这样的：
-
-1.选择一个文档的概率是$$p(d)$$
-
-2.找到一个隐含类的概率是$$p(z\mid d)$$
-
-3.生成一个词w的概率为$$p(w\mid z)$$
 

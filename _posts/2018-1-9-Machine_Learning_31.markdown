@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十一）——价值函数的近似表示, Linear Discriminant Analysis
+title:  机器学习（三十一）——价值函数的近似表示, 数据不平衡问题, Linear Discriminant Analysis
 category: ML 
 ---
 
@@ -64,13 +64,51 @@ $$\hat v(S,w)=\begin{pmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{pmatrix}\begin
 
 前面所说的递增算法都是基于数据流的，经历一步，更新算法后，我们就不再使用这步的数据了，这种算法简单，但有时候不够高效。与之相反，批方法则是把一段时期内的数据集中起来，通过学习来使得参数能较好地符合这段时期内所有的数据。这里的训练数据集“块”相当于个体的一段经验。
 
+# 数据不平衡问题
+
+https://mp.weixin.qq.com/s/e0jXXCIhbaZz7xaCZl-YmA
+
+如何处理不均衡数据？
+
+https://mp.weixin.qq.com/s/2j_6hdq-MhybO_B0S7DRCA
+
+如何解决机器学习中数据不平衡问题
+
+https://mp.weixin.qq.com/s/gEq7opXLukWD5MVhw_buGA
+
+七招教你处理非平衡数据
+
+http://blog.csdn.net/u013709270/article/details/72967462
+
+机器学习中的数据不平衡解决方案大全
+
+https://mlr-org.github.io/mlr-tutorial/devel/html/over_and_undersampling/index.html
+
+Imbalanced Classification Problems
+
+https://mp.weixin.qq.com/s/QEHAV_rW25E0b0N7POr6tw
+
+关于处理样本不平衡问题的Trick整理
+
+https://mp.weixin.qq.com/s/5csfnBWZ2MQsnWZnNj9b8w
+
+机器学习中样本比例不平衡的处理方法
+
+https://mp.weixin.qq.com/s/ZL6UWrBB7qr8jp2QRA1MAQ
+
+方法总结：教你处理机器学习中不平衡类问题
+
+https://mp.weixin.qq.com/s/V5d3kbpXBf4883TQ_sq37A
+
+遇到有这六大缺陷的数据集该怎么办？这有一份数据处理急救包
+
 # Linear Discriminant Analysis
 
 在《机器学习（十七）》中，我们已经讨论了一个LDA，这里我们来看看另一个LDA。
 
 Linear Discriminant Analysis是Ronald Fisher于1936年提出的方法，因此又叫做Fisher's linear discriminant。正如之前在《知名数据集》中提到的，Iris flower Data Set也是出自该论文。
 
-之前我们讨论的PCA、ICA也好，对样本数据来言，可以是没有类别标签y的。回想我们做回归时，如果特征太多，那么会产生不相关特征引入、过度拟合等问题。我们可以使用PCA来降维，但PCA没有将类别标签考虑进去，属于无监督的。
+之前我们讨论的PCA、ICA也好，对样本数据来言，可以是没有类别标签y的。回想我们做回归时，如果特征太多，那么会产生不相关特征引入、过度拟合等问题。我们可以使用PCA来降维，但**PCA没有将类别标签考虑进去，属于无监督的**。
 
 比如回到上次提出的文档中含有“learn”和“study”的问题，使用PCA后，也许可以将这两个特征合并为一个，降了维度。但假设我们的类别标签y是判断这篇文章的topic是不是有关学习方面的。那么这两个特征对y几乎没什么影响，完全可以去除。
 
@@ -88,15 +126,37 @@ $$y=w^Tx$$
 
 ![](/images/img2/LDA.jpg)
 
-我们首先看看x是二维的情况，从直观上来看，右图比较好，可以很好地将不同类别的样本点分离。
+我们首先看看x是二维的情况，从直观上来看，右图比较好，可以很好地将不同类别的样本点分离。这实际上就是LDA的思想：**最大化类间方差与最小化类内方差，即减少分类内部之间的差异，而扩大不同分类之间的差异。**
 
 接下来我们从定量的角度来找到这个最佳的w。
 
-首先我们寻找每类样例的均值（中心点）：
+首先我们寻找每类样例的均值（中心点），这里i只有两个：
 
-$$\mu_i=$$
+$$\mu_i=\frac{1}{N_i}\sum_{x\in \omega_i}x$$
 
-对LDA稍加扩展就得到了《图像处理理论（一）》中的Otsu法。
+由于x到w投影后的样本点均值为：
+
+$$\widetilde{\mu_i}=\frac{1}{N_i}\sum_{y\in \omega_i}y=\frac{1}{N_i}\sum_{y\in \omega_i}w^Tx=w^T\mu_i$$
+
+由此可知，投影后的的均值也就是样本中心点的投影。
+
+什么是最佳的直线（w）呢？我们首先发现，能够使投影后的两类样本中心点尽量分离的直线是好的直线，定量表示就是：
+
+$$J(w)=\mid \widetilde{\mu_1}-\widetilde{\mu_2} \mid=\mid w^T(\mu_1-\mu_2) \mid$$
+
+J(w)越大越好。
+
+但是只考虑J(w)行不行呢？不行，看下图：
+
+![](/images/img2/LDA_2.png)
+
+样本点均匀分布在椭圆里，投影到横轴$$x_1$$上时能够获得更大的中心点间距J(w)，但是由于有重叠，$$x_1$$不能分离样本点。投影到纵轴$$x_2$$上，虽然J(w)较小，但是能够分离样本点。因此我们还需要考虑样本点之间的方差，方差越大，样本点越难以分离。
+
+我们使用另外一个度量值，称作散列值（scatter），对投影后的类求散列值，如下：
+
+$$\widetilde{s_i}^2$$
+
+对LDA稍加扩展就得到了《图像处理理论（一）》中的Otsu法。**Otsu法实际上是一维离散域的LDA。**
 
 参考：
 

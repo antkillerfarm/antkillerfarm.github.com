@@ -294,3 +294,11 @@ https://mp.weixin.qq.com/s/go0TK5ml_LZkLTSxrQLvfA
 
 携程“小诗机”背后的机器学习和自然语言处理技术
 
+https://mp.weixin.qq.com/s/jifGPaxdqVii3q6gG4F2ag
+
+Google工程师带你了解聊天机器人的工作原理和未来发展
+
+https://mp.weixin.qq.com/s/XTgYPCejKwy1WyQYQYXZvQ
+
+基于知识库的问答：生成查询图进行语义分析
+

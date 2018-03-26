@@ -136,3 +136,9 @@ https://mp.weixin.qq.com/s/yfuMacLnj9q-9gpXCUfZhg
 
 PSU提出深度k-最近邻算法：解决深度学习应用的安全漏洞
 
+https://mp.weixin.qq.com/s/kdWxbwamSuiTWdZj8MfwyQ
+
+如何用AI算法识别骗保行为？蚂蚁保险智能风控模型首次公开！
+
+
+

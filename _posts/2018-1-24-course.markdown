@@ -244,3 +244,11 @@ https://www.cs.princeton.edu/courses/catalog
 
 普林斯顿的CS课程
 
+http://www.cs.toronto.edu/~rgrosse/courses/csc321_2018/
+
+多伦多大学CSC 321: Intro to Neural Networks and Machine Learning
+
+http://www.math.pku.edu.cn/teachers/ganr/course/pr2010/
+
+北京大学：模式识别
+
