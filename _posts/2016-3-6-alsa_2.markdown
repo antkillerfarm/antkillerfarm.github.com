@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ALSA（二）, GStreamer（三）, WebSocket, Spring, Neo4j, Blog维护日志
+title:  ALSA（二）, GStreamer（三）, WebSocket, Spring, Blog维护日志
 category: technology 
 ---
 
@@ -325,20 +325,6 @@ Spring Boot默认的配置文件
 https://spring.io/guides/gs/producing-web-service/
 
 http://localhost:9999/ws/countries.wsdl
-
-# Neo4j
-
-Neo4j是一个高性能的图引擎，该引擎具有成熟和健壮的数据库的所有特性。相对于关系数据库来说，图数据库（Graph Database）善于处理大量复杂、互连接、低结构化的数据，这些数据变化迅速，需要频繁的查询——在关系数据库中，这些查询会导致大量的表连接，因此会产生性能上的问题。
-
-官网：
-
-https://neo4j.com/
-
-参考：
-
-http://blog.csdn.net/xingxiupaioxue/article/details/71747284
-
-如何将大规模数据导入Neo4j
 
 # Blog维护日志
 

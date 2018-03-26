@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Raspberry Pi, UPNP（二）
+title:  Raspberry Pi, UPNP（二）, 图数据库
 category: technology 
 ---
 
@@ -241,3 +241,42 @@ https://sourceforge.net/projects/libmcupnp/
 
 https://wiki.gnome.org/Projects/GUPnP
 
+# 图数据库
+
+## Neo4j
+
+Neo4j大概算是最著名的图数据库了，它具有成熟和健壮的数据库的所有特性。相对于关系数据库来说，图数据库（Graph Database）善于处理大量复杂、互连接、低结构化的数据，这些数据变化迅速，需要频繁的查询——在关系数据库中，这些查询会导致大量的表连接，因此会产生性能上的问题。
+
+官网：
+
+https://neo4j.com/
+
+参考：
+
+http://blog.csdn.net/xingxiupaioxue/article/details/71747284
+
+如何将大规模数据导入Neo4j
+
+## openCypher
+
+openCypher是基于Neo4j的查询语言Cypher开发的，Cypher用于在图数据库中存储和检索数据。在图数据库领域，目前还没有像关系数据库中访问数据的SQL这样的通用查询语言标准。
+
+openCypher的目标是通过简化存储、分析，以及用于访问图数据模型的工具平台，促进图处理和分析的使用。技术厂商可以在他们的工具和平台内实现Cypher。
+
+官网：
+
+http://www.opencypher.org/
+
+## RedisGraph
+
+RedisGraph是Redis推出的基于Redis的图数据库。
+
+官网：
+
+http://redisgraph.io/
+
+参考：
+
+https://mp.weixin.qq.com/s/BzQBy6AoMXXpjsdGyXh1zA
+
+揭秘RedisGraph: Redis内嵌高性能内存图数据库
