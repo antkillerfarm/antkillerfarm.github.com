@@ -456,6 +456,10 @@ https://mp.weixin.qq.com/s/CP_Egs4LUx7I8BXSqrS_dQ
 
 互联网协议入门（一）
 
+https://mp.weixin.qq.com/s/zU1Mw3yaNmk4D5pP9vxxaw
+
+TCP三次握手和SYN攻击
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

@@ -72,11 +72,15 @@ Linux下的wifi配置主要使用iw系列命令，包括iw、iwconfig、iwlist�
 
 http://blog.csdn.net/liangyamin/article/details/7209761
 
+Linux下的iwpriv（iwlist、iwconfig）的简单应用
+
 # Inotify
 
 一种高效、实时的Linux文件系统事件监控框架。参考文档：
 
 http://www.infoq.com/cn/articles/inotify-linux-file-system-event-monitoring
+
+Inotify: 高效、实时的Linux文件系统事件监控框架
 
 # /usr
 
@@ -91,6 +95,16 @@ lsof(list open files)是一个列出当前系统打开文件的工具。在linux
 NetCat，在网络工具中有“瑞士军刀”美誉。它短小精悍（1.84版本也不过25k，旧版本或缩减版甚至更小）、功能实用，被设计为一个简单、可靠的网络工具，可通过TCP或UDP协议传输读写数据。同时，它还是一个网络应用Debug分析器，因为它可以根据需要创建各种不同类型的网络连接。
 
 http://blog.csdn.net/wang7dao/article/details/7684998
+
+# 定时任务
+
+定时执行的任务可用crontab命令设置。
+
+参考：
+
+http://www.cnblogs.com/peida/archive/2013/01/08/2850483.html
+
+crontab命令
 
 ## 常用命令示例
 
@@ -444,7 +458,7 @@ Quic全称quick udp internet connection，“快速 UDP 互联网连接”，是
 
 Quic相比现在广泛应用的 http2+tcp+tls 协议有如下优势：
 
-1.减少了 TCP 三次握手及 TLS 握手时间。
+1.减少了TCP三次握手及TLS握手时间。
 
 2.改进的拥塞控制。
 
@@ -453,6 +467,8 @@ Quic相比现在广泛应用的 http2+tcp+tls 协议有如下优势：
 4.连接迁移。
 
 5.前向冗余纠错。
+
+参考：
 
 https://mp.weixin.qq.com/s/vpz6bp3PT1IDzZervyOfqw
 

@@ -136,13 +136,13 @@ $$\mu_i=\frac{1}{N_i}\sum_{x\in \omega_i}x$$
 
 由于x到w投影后的样本点均值为：
 
-$$\widetilde{\mu_i}=\frac{1}{N_i}\sum_{y\in \omega_i}y=\frac{1}{N_i}\sum_{y\in \omega_i}w^Tx=w^T\mu_i$$
+$$\tilde{\mu_i}=\frac{1}{N_i}\sum_{y\in \omega_i}y=\frac{1}{N_i}\sum_{y\in \omega_i}w^Tx=w^T\mu_i$$
 
 由此可知，投影后的的均值也就是样本中心点的投影。
 
 什么是最佳的直线（w）呢？我们首先发现，能够使投影后的两类样本中心点尽量分离的直线是好的直线，定量表示就是：
 
-$$J(w)=\mid \widetilde{\mu_1}-\widetilde{\mu_2} \mid=\mid w^T(\mu_1-\mu_2) \mid$$
+$$J(w)=\mid \tilde{\mu_1}-\tilde{\mu_2} \mid=\mid w^T(\mu_1-\mu_2) \mid$$
 
 J(w)越大越好。
 
@@ -154,7 +154,22 @@ J(w)越大越好。
 
 我们使用另外一个度量值，称作散列值（scatter），对投影后的类求散列值，如下：
 
-$$\widetilde{s_i}^2$$
+$$\tilde{s_i}^2=\sum_{y\in \omega_i}(y-\tilde{\mu_i})^2$$
+
+从公式中可以看出，只是少除以样本数量的方差值，散列值的几何意义是样本点的密集程度，值越大，越分散，反之，越集中。
+
+而我们想要的投影后的样本点的样子是：不同类别的样本点越分开越好，同类的越聚集越好，也就是均值差越大越好，散列值越小越好。正好，我们可以使用J(w)和S来度量，最终的度量公式是：
+
+$$J(w)=\frac{\mid \tilde{\mu_1}-\tilde{\mu_2} \mid}{\tilde{s_1}^2+\tilde{s_2}^2}$$
+
+接下来的事就比较明显了，我们只需寻找使J(w)最大的w即可。
+
+先把散列值公式展开：
+
+$$\tilde{s_i}^2=\sum_{y\in \omega_i}(y-\tilde{\mu_i})^2=\sum_{x\in \omega_i}(y-\tilde{\mu_i})^2$$
+
+
+
 
 对LDA稍加扩展就得到了《图像处理理论（一）》中的Otsu法。**Otsu法实际上是一维离散域的LDA。**
 

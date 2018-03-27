@@ -200,6 +200,10 @@ https://mp.weixin.qq.com/s/Za_h1BWR-mQKtgArxwsjRw
 
 语义分割网络DeepLab-v3的架构设计思想和TensorFlow实现
 
+https://mp.weixin.qq.com/s/JidoZ9-V8JGWfB2gyO2AlA
+
+Deeplab v2安装及调试全过程
+
 # ENet
 
 ENet是波兰的Adam Paszke于2016年提出的。

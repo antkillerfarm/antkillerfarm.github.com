@@ -425,4 +425,15 @@ protege软件是斯坦福大学医学院生物信息研究中心基于Java语言
 
 https://protege.stanford.edu/products.php
 
+## Opendial
+
+Opendial是一个基于Java的对话系统。可用于开发聊天机器人。
+
+官网：
+
+http://www.opendial-toolkit.net/
+
+代码：
+
+https://github.com/plison/opendial
 

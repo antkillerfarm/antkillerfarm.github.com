@@ -68,6 +68,12 @@ $$(A-\lambda I)x=0\tag{2}$$
 
 http://course.tjau.edu.cn/xianxingdaishu/jiao/5.htm
 
+矩阵的特征值和特征向量
+
+https://mp.weixin.qq.com/s/mZ4AeCcoU0LhWRWfa9_kvw
+
+花了10分钟，终于弄懂了特征值和特征向量到底有什么意义
+
 ## QR算法
 
 对矩阵A进行QR分解可得：$$A=QR$$

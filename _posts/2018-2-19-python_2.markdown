@@ -40,6 +40,10 @@ for i in tqdm(range(9)):
 
 `76%|████████████████████            | 7641/10000 [00:34<00:10, 222.22 it/s]`
 
+其实还有一个更简单的办法：
+
+`print("\r" + "xxx", end="")`：这样的话会先把console里面当前的行清除掉、再输出xxx。
+
 ## Captcha
 
 Captcha是一个Python验证码库，能够生成音频和图片验证码。
@@ -303,6 +307,16 @@ JPype：实现在python中调用JAVA
 http://www.cnblogs.com/yu-zhang/p/3817024.html
 
 python调用java程序--jpype
+
+# Celery
+
+Celery是一个专注于实时处理和任务调度的分布式任务队列，可用于执行定时任务。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/22304455
+
+使用Celery
 
 ## 参考
 
