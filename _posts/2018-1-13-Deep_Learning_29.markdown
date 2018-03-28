@@ -56,6 +56,36 @@ Reparameterization Trick的反向传播：
 
 ![](/images/img2/VAE_14.png)
 
+## 数值计算 vs 采样计算
+
+VAE的基本概念到此差不多了，苏剑林君趁热打铁又写了以下理论文章：
+
+https://kexue.fm/archives/5343
+
+变分自编码器：从贝叶斯观点出发
+
+特将要点摘录如下。
+
+对于不是很熟悉概率统计的读者，容易混淆数值计算和采样计算的概念。
+
+已知概率密度函数p(x)，那么x的期望也就定义为：
+
+$$\mathbb{E}[x] = \int x p(x)dx\tag{1}$$
+
+如果要对它进行数值计算，也就是数值积分，那么可以选若干个有代表性的点$$x_0 < x_1 < \dots < x_n$$，然后得到：
+
+$$\mathbb{E}[x] \approx \sum_{i=1}^n x_i p(x_i) \left(\frac{x_i - x_{i-1}}{x_n - x_0}\right)\tag{2}$$
+
+如果从p(x)中采样若干个点$$x_1,x_2,\dots,x_n$$，那么我们有：
+
+$$\mathbb{E}[x] \approx \frac{1}{n}\sum_{i=1}^n x_i,\quad x_i \sim p(x)\tag{3}$$
+
+我们可以比较(2)跟(3)，它们的主要区别是(2)中包含了概率的计算而(3)中仅有x的计算，这是因为在(3)中$$x_i$$是从p(x)中依概率采样出来的，概率大的$$x_i$$出现的次数也多，所以可以说采样的结果已经包含了p(x)在里边，就不用再乘以$$p(x_i)$$了。
+
+## 生成模型近似
+
+对于二值数据，我们可以对decoder用sigmoid函数激活，然后用交叉熵作为损失函数，这对应于$$q(x\mid z)$$为伯努利分布；而对于一般数据，我们用MSE作为损失函数，这对应于$$q(x\mid z)$$为固定方差的正态分布。
+
 ## 参考
 
 https://mp.weixin.qq.com/s/TqZnlXLKHhZn3U29PlqetA
@@ -85,6 +115,20 @@ https://mp.weixin.qq.com/s/ZlLuhu08m_RnD-h86df8sA
 https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
 
 面向无监督任务：DeepMind提出神经离散表示学习生成模型VQ-VAE
+
+https://kexue.fm/archives/5332
+
+基于CNN和VAE的作诗机器人：随机成诗
+
+# RBM
+
+
+
+参考：
+
+https://mp.weixin.qq.com/s/bCFoEN0-Ey2dGcsFGpmR8w
+
+受限玻尔兹曼机基础教程
 
 # 迁移学习
 

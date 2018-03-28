@@ -187,6 +187,22 @@ http://blog.csdn.net/hjimce/article/details/50414467
 
 Maxout网络学习
 
+## GLU
+
+Gated Linear Unit是由facebook提出的：
+
+$$(\boldsymbol{W}_1\boldsymbol{x}+\boldsymbol{b}_1)\otimes \sigma(\boldsymbol{W}_2\boldsymbol{x}+\boldsymbol{b}_2)$$
+
+![](/images/img2/GLU.png)
+
+上图右侧是一个Linear Unit，左侧的$$\sigma$$相当于一个Gate，故名。
+
+论文：
+
+《Language Modeling with Gated Convolutional Networks》
+
+GLU一般用在NLP领域，它和CNN结合，也就是所谓的GCNN了。
+
 ## Swish
 
 Swish是Google大脑团队提出的一个新的激活函数：
@@ -197,9 +213,7 @@ $$\text{swish}(x)=x\cdot\sigma(x)=\frac{x}{1+e^{-x}}$$
 
 ![](/images/article/swish.png)
 
-Swish可以看作是GLU的特例（Swish的两组参数相同），后者是由facebook提出的：
-
-$$(\boldsymbol{W}_1\boldsymbol{x}+\boldsymbol{b}_1)\otimes \sigma(\boldsymbol{W}_2\boldsymbol{x}+\boldsymbol{b}_2)$$
+Swish可以看作是GLU的特例（Swish的两组参数相同）。
 
 Swish在原点附近不是饱和的，只有负半轴远离原点区域才是饱和的，而ReLu在原点附近也有一半的空间是饱和的。而我们在训练模型时，一般采用的初始化参数是均匀初始化或者正态分布初始化，不管是哪种初始化，其均值一般都是0，也就是说，初始化的参数有一半处于ReLu的饱和区域，这使得刚开始时就有一半的参数没有利用上。特别是由于诸如BN之类的策略，输出都自动近似满足均值为0的正态分布，因此这些情况都有一半的参数位于ReLu的饱和区。相比之下，Swish好一点，因为它在负半轴也有一定的不饱和区，所以参数的利用率更大。
 

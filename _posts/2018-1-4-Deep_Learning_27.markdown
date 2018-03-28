@@ -200,7 +200,7 @@ https://zhuanlan.zhihu.com/p/27464080
 
 从《Convolutional Sequence to Sequence Learning》到《Attention Is All You Need》
 
-https://mp.weixin.qq.com/s/A1U3jluviV4W6mwlwIZ-ig
+http://www.cnblogs.com/robert-dlut/p/8638283.html
 
 自然语言处理中的自注意力机制！
 

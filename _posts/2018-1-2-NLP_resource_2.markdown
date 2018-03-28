@@ -334,3 +334,8 @@ https://mp.weixin.qq.com/s/F1z7evNDqghEzSD-_Xbgfw
 
 基于卷积深度相关性计算的社区问答方法，建模问题和回答的匹配关系
 
+https://mp.weixin.qq.com/s/Ce3gOZSqkG8wZQ6X1CUE1Q
+
+如何从编码器和解码器两方面改进生成式句子摘要？
+
+
