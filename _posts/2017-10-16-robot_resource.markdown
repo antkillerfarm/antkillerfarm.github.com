@@ -342,4 +342,11 @@ https://mp.weixin.qq.com/s/45xNWa_32DAsKdlfYY_QfA
 
 Uber自动驾驶撞死行人视频公布：无人车环境感知解决方案该如何优化？
 
+https://mp.weixin.qq.com/s/VBpOwGrTPs0nlmTyXvqDwA
+
+为什么只用摄像头和光学雷达是不够的：我们能从Uber的自动驾驶车致死事件中学到什么
+
+https://mp.weixin.qq.com/s/y_mOKpgLEvDjoO-UdMBcyw
+
+Apollo AdaperManager和Routing模块源代码分析
 

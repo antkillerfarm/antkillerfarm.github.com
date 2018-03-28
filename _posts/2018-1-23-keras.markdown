@@ -196,9 +196,13 @@ https://mp.weixin.qq.com/s/VmjaTzzPNXAQicFqhVM1RQ
 
 Keras/监督学习15分钟搞定最新深度学习车牌OCR
 
-https://mp.weixin.qq.com/s/APcmfJYJG0dNCq6mF8voOg
+https://mp.weixin.qq.com/s/_Kh9ZMLmAfcACVYxt02lqA
 
-用Python打造一个AI作家为你写诗
+如何利用深度学习写诗歌
+
+https://mp.weixin.qq.com/s/yzYRMLYKEwHMGjsmYzFLAw
+
+在Keras上实现GAN：构建消除图片模糊的应用
 
 # OpenAI Gym
 

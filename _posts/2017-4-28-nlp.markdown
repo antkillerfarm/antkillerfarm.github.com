@@ -437,3 +437,8 @@ http://www.opendial-toolkit.net/
 
 https://github.com/plison/opendial
 
+参考：
+
+https://github.com/zhangziliang04/OpendialEx
+
+某牛的Opendial

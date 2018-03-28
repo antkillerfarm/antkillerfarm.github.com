@@ -140,5 +140,6 @@ https://mp.weixin.qq.com/s/kdWxbwamSuiTWdZj8MfwyQ
 
 如何用AI算法识别骗保行为？蚂蚁保险智能风控模型首次公开！
 
+https://mp.weixin.qq.com/s/D_HNrlTS-uTA9GWPu7WJaQ
 
-
+简单的「图像旋转」预测，为图像特征学习提供强大监督信号

@@ -252,3 +252,8 @@ https://mp.weixin.qq.com/s/zvxB6VqrSOosgGSViCmjEQ
 
 不止准确率：为分类任务选择正确的机器学习度量指标
 
+https://mp.weixin.qq.com/s/2HKx36bIBZAqvzdXfcSfqA
+
+我们常听说的置信区间与置信度到底是什么？
+
+

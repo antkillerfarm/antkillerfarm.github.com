@@ -155,6 +155,10 @@ https://mp.weixin.qq.com/s/a3TlUFwSm9aIptfhy6MnGA
 
 机器学习是如何借鉴物理学思想的？从伊辛模型谈起
 
+https://mp.weixin.qq.com/s/bCFoEN0-Ey2dGcsFGpmR8w
+
+受限玻尔兹曼机基础教程
+
 # 概率分布（2）
 
 上一篇《概率分布（1）》写的意犹未尽，这里继续写。本篇主要关注$$\chi^2$$分布、t分布和F分布，也就是统计学的三大祖师爷各自的看家本领。

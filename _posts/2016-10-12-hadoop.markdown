@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Hadoop, Hbase, Kubernetes
+title:  Hadoop, Hbase
 category: AI 
 ---
 
@@ -306,6 +306,10 @@ https://mp.weixin.qq.com/s/BICJgyv2Y8r0j5Jjw6weRw
 
 大数据查询——HBase读写设计与实践
 
+https://blog.csdn.net/odailidong/article/details/41794403
+
+Hbase万亿级存储性能优化总结
+
 # Restful
 
 相比于WebService，Restful是一种简单的多的编程风格。
@@ -320,9 +324,15 @@ https://mp.weixin.qq.com/s/BICJgyv2Y8r0j5Jjw6weRw
 
 https://segmentfault.com/a/1190000006735330
 
+Restful应用分析
+
 http://www.drdobbs.com/web-development/restful-web-services-a-tutorial/240169069
 
+RESTful Web Services: A Tutorial
+
 http://www.ibm.com/developerworks/library/ws-restful/index.html
+
+RESTful Web services: The basics
 
 还是那句老话，讨论一个通讯格式或协议，不讨论交互报文的都不是好文章，或者至少不是一个入门的好文章。
 
@@ -336,25 +346,4 @@ https://jersey.java.net/
 
 https://github.com/feuyeux/jax-rs2-guide-II
 
-# Kubernetes
-
-Kubernetes是Google开源的容器集群管理系统，基于Docker构建一个容器的调度服务，提供资源调度、均衡容灾、服务注册、动态扩缩容等功能套件。
-
-官网：
-
-https://kubernetes.io/
-
-参考：
-
-http://violetgo.com/blogs/2015/10/14/k8s.html
-
-docker学习笔记(k8s)
-
-https://mp.weixin.qq.com/s/wwwB8OHQmbwqmKKE8Lyv-w
-
-容器技术演化史
-
-https://mp.weixin.qq.com/s/LpNlUlXpt2poRKXEvuIDjw
-
-Kubernetes NetworkPolicy工作原理浅析
 

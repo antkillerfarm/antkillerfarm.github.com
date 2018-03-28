@@ -4,6 +4,44 @@ title:  机器学习（三十二）——t-SNE
 category: ML 
 ---
 
+# Linear Discriminant Analysis（续）
+
+使用LDA的一些限制：
+
+1.LDA至多可生成C-1维子空间。C为类别数。
+
+LDA降维后的维度区间在[1,C-1]，与原始特征数n无关，对于二值分类，最多投影到1维。
+
+2.LDA不适合对非高斯分布样本进行降维。
+
+![](/images/img2/LDA_5.jpg)
+
+上图中红色区域表示一类样本，蓝色区域表示另一类，由于是2类，所以最多投影到1维上。不管在直线上怎么投影，都难使红色点和蓝色点内部凝聚，类间分离。
+
+3.LDA在样本分类信息依赖方差而不是均值时，效果不好。
+
+![](/images/img2/LDA_6.png)
+
+上图中，样本点依靠方差信息进行分类，而不是均值信息。LDA不能够进行有效分类，因为LDA过度依靠均值信息。
+
+对LDA稍加扩展就得到了《图像处理理论（一）》中的Otsu法。**Otsu法实际上是一维离散域的LDA。**
+
+此外，对于二值分类问题，最小二乘法和Fisher线性判别分析是一致的。
+
+参考：
+
+https://mp.weixin.qq.com/s/u-6nPrb4r9AS2gtrl5s-FA
+
+LDA(Linear Discriminant Analysis)算法介绍
+
+http://www.cnblogs.com/jerrylead/archive/2011/04/21/2024384.html
+
+线性判别分析（Linear Discriminant Analysis）（一）
+
+http://www.cnblogs.com/jerrylead/archive/2011/04/21/2024389.html
+
+线性判别分析（Linear Discriminant Analysis）（二）
+
 # t-SNE
 
 ## 概述

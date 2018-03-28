@@ -382,6 +382,20 @@ https://mp.weixin.qq.com/s/lJYzxehwo3K2APB2l_WeTA
 
 用Python做图像处理（1）
 
+## VisPy
+
+VisPy可以算的上是Matplotlib的威力加强版，它添加了对GPU、3D和大数据的支持。
+
+官网：
+
+http://vispy.org/
+
+参考：
+
+https://mp.weixin.qq.com/s/yduK_XKQ-qhiYTNl-YZMFg
+
+利用Python实现卷积神经网络的可视化
+
 ## 参考
 
 https://mp.weixin.qq.com/s/S7gnAdekPFcyd4ni1m9phg

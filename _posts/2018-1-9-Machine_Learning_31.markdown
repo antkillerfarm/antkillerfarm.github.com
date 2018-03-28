@@ -166,26 +166,54 @@ $$J(w)=\frac{\mid \tilde{\mu_1}-\tilde{\mu_2} \mid}{\tilde{s_1}^2+\tilde{s_2}^2}
 
 先把散列值公式展开：
 
-$$\tilde{s_i}^2=\sum_{y\in \omega_i}(y-\tilde{\mu_i})^2=\sum_{x\in \omega_i}(y-\tilde{\mu_i})^2$$
+$$\tilde{s_i}^2=\sum_{y\in \omega_i}(y-\tilde{\mu_i})^2=\sum_{x\in \omega_i}(w^Tx-w^T\mu_i)^2=\sum_{x\in \omega_i}w^T(x-\mu_i)(x-\mu_i)^Tw$$
 
+我们定义上式中间部分：
 
+$$S_i=\sum_{x\in \omega_i}(x-\mu_i)(x-\mu_i)^T$$
 
+这也被称为散列矩阵（scatter matrices）。
 
-对LDA稍加扩展就得到了《图像处理理论（一）》中的Otsu法。**Otsu法实际上是一维离散域的LDA。**
+我们继续定义：
 
-参考：
+$$S_W=S_1+S_2$$
 
-https://mp.weixin.qq.com/s/u-6nPrb4r9AS2gtrl5s-FA
+$$S_W$$称为**Within**-class scatter matrix。
 
-LDA(Linear Discriminant Analysis)算法介绍
+$$S_B=(\mu_1-\mu_2)(\mu_1-\mu_2)^T$$
 
-http://www.cnblogs.com/jerrylead/archive/2011/04/21/2024384.html
+$$S_B$$称为**Between**-class scatter matrix。
 
-线性判别分析（Linear Discriminant Analysis）（一）
+那么J(w)最终可以表示为：
 
-http://www.cnblogs.com/jerrylead/archive/2011/04/21/2024389.html
+$$J(w)=\frac{w^TS_Bw}{w^TS_Ww}$$
 
-线性判别分析（Linear Discriminant Analysis）（二）
+在我们求导之前，需要对分母进行归一化，因为不做归一化的话，w扩大任何倍，公式都成立，我们就无法确定w。因此，我们打算令$$\|w^TS_Ww\|=1$$，那么加入拉格朗日乘子后，求导：
 
+$$c(w)=w^TS_Bw-\lambda(w^TS_Ww-1)\Rightarrow \frac{\text{d}c}{\text{d}w}=2S_Bw-2\lambda S_Ww=0\\
+\Rightarrow S_Bw=\lambda S_Ww\Rightarrow S_W^{-1}S_Bw=\lambda w$$
 
+可见，w实际上就是矩阵$$S_W^{-1}S_B$$的特征向量。
+
+因为：
+
+$$S_Bw=(\mu_1-\mu_2)(\mu_1-\mu_2)^Tw$$
+
+其中，后面两项的积是一个常数，记做$$\lambda_w$$，则：
+
+$$S_W^{-1}S_Bw=S_W^{-1}(\mu_1-\mu_2)\lambda_w=\lambda w$$
+
+由于对w扩大缩小任何倍不影响结果，因此可以约去两边的未知常数$$\lambda,\lambda_w$$，得到：
+
+$$w=S_W^{-1}(\mu_1-\mu_2)$$
+
+至此，我们只需要求出原始样本的均值和方差就可以求出最佳的方向w。
+
+![](/images/img2/LDA_3.png)
+
+上述结论虽然来自2维，但对于多维也是成立的。大特征值所对应的特征向量分割性能最好。由于$$S_W^{-1}S_B$$不一定是对称阵，因此得到的K个特征向量不一定正交，这也是与PCA不同的地方。
+
+![](/images/img2/LDA_4.jpg)
+
+**PCA选择样本点投影具有最大方差的方向，LDA选择分类性能最好的方向。**
 

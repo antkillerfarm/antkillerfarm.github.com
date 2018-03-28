@@ -204,3 +204,22 @@ Block的绝大多数空间都用于保存交易记录。因此，矿工除了挖
 
 ![](/images/article/bit_coin.png)
 
+## 以太坊
+
+虽然，比特币一直是区块链技术的主角，但毕竟创建的年代已经久远，技术局限较多。以太坊不仅是数字货币，而且还是很多其它数字货币的发行平台，提供了一系列完善的数字货币发行和流通服务，当然服务的费用需要通过购买以太坊币来支付。目前，很多山寨币都是利用以太坊进行发布的。
+
+官网：
+
+https://www.ethereum.org/
+
+以太坊的API是一个叫做Solidity的项目。代码会被编译运行在所谓的Ethereum Virtual Machine (EVM)上。
+
+Solidity文档：
+
+https://solidity.readthedocs.io/
+
+参考：
+
+https://zhuanlan.zhihu.com/p/32796998
+
+10分钟搞定ICO

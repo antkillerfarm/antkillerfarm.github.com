@@ -98,10 +98,6 @@ https://mp.weixin.qq.com/s/VVkTVH8dNBiXUT9IkCBZBw
 
 《混子谈钱》--一分钟了解区块链
 
-https://zhuanlan.zhihu.com/p/32796998
-
-10分钟搞定ICO
-
 https://mp.weixin.qq.com/s/p5WG4tgyUxnacjzdT7QZzw
 
 什么是区块链？ 区块链的入门教程

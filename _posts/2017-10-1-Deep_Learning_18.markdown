@@ -92,6 +92,16 @@ http://lanbing510.info/2017/09/04/YOLOV2.html
 
 目标检测之YOLOv2
 
+# YOLOv3
+
+https://zhuanlan.zhihu.com/p/34945787
+
+YOLOv3：An Incremental Improvement全文翻译
+
+https://mp.weixin.qq.com/s/UWuCiV6dBk9Z0XusEBS6-g
+
+物体检测经典模型YOLO新升级，就看一眼，速度提升3倍！
+
 # 其它目标检测网络
 
 ## A-Fast-RCNN

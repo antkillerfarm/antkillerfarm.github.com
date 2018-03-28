@@ -228,3 +228,7 @@ https://zhuanlan.zhihu.com/p/34919142
 
 新闻推荐DKN：Deep Knowledge-Aware Network for News Recommendation
 
+https://mp.weixin.qq.com/s/SdCFYYQXdYtQLy-GaQNfcw
+
+UCSB提出变分知识图谱推理：在KG中引入变分推理框架
+

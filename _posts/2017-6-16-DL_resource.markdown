@@ -176,10 +176,6 @@ http://www.cnblogs.com/wangxiaocvpr
 
 一个DL的blog，专注于RL+CV。
 
-http://nlp.csai.tsinghua.edu.cn/~lzy/codes.html
-
-清华刘知远推荐30来项算法代码和工具包列表
-
 ## 项目集锦
 
 https://mp.weixin.qq.com/s/ZNNgEB9rFjAE8SdfMo9NLA
@@ -213,6 +209,10 @@ https://mp.weixin.qq.com/s/L6O-I7y9HiA1WnjBRMh1cQ
 https://mp.weixin.qq.com/s/FLCmaSU8qlmTWSzs1PEhnw
 
 C++从零实现神经网络
+
+http://nlp.csai.tsinghua.edu.cn/~lzy/codes.html
+
+清华刘知远推荐30来项算法代码和工具包列表
 
 ## 教程
 
@@ -393,6 +393,10 @@ https://mp.weixin.qq.com/s/XD0eyKiBgsqmcucIsW20uw
 https://mp.weixin.qq.com/s/wJh1-9uhXX3u4CO8hdOHCg
 
 专访MIT教授Tomaso Poggio：表达、优化与泛化——数学视角里的深度学习
+
+https://mp.weixin.qq.com/s/_afSKRdag06VmGjM7VibBQ
+
+计算机视觉必读：目标跟踪、网络压缩、图像分类、人脸识别等
 
 ## 算法
 

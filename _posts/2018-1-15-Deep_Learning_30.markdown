@@ -266,4 +266,7 @@ https://mp.weixin.qq.com/s/b8g_wNqi4dD5x9whj9ZN4A
 
 争议、流派，有关GAN的一切：Ian Goodfellow Q&A
 
+https://mp.weixin.qq.com/s/tzPCU1bxQ7NWtQ7o2PjF0g
+
+BAIR提出MC-GAN，使用GAN实现字体风格迁移
 

@@ -306,7 +306,11 @@ http://spring.io/
 
 http://www.mkyong.com/spring/quick-start-maven-spring-example/
 
+Maven+Spring hello world example
+
 http://wiki.jikexueyuan.com/project/spring/
+
+Spring 教程
 
 ## Restful
 
@@ -315,6 +319,8 @@ http://spring.io/guides/gs/rest-service/
 ## Spring Boot
 
 https://www.tianmaying.com/tutorial/deploy-spring-boot-application
+
+部署Spring Boot应用
 
 http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
 
