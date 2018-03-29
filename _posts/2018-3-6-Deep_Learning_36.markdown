@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十六）——深度推荐系统, Recursive NN, Spatial Transformer Networks, SOM, 多任务学习, AutoDL, OCR
+title:  深度学习（三十六）——深度推荐系统, Recursive NN, Spatial Transformer Networks, 多任务学习, AutoDL, OCR
 category: DL 
 ---
 
@@ -213,22 +213,6 @@ Spatial Transformer Networks
 https://mp.weixin.qq.com/s/ciqQMezcB-oM24X8eQqTNg
 
 花式玩耍Spatial Transformation Networks
-
-# SOM
-
-参考：
-
-http://chem-eng.utoronto.ca/~datamining/Presentations/SOM.pdf
-
-Self-Organizing Maps
-
-http://www.cnblogs.com/sylvanas2012/p/5117056.html
-
-Self Organizing Maps (SOM): 一种基于神经网络的聚类算法
-
-http://blog.csdn.net/Loyal2M/article/details/11225987
-
-聚类算法实践（3）——PCCA、SOM、Affinity Propagation
 
 # 多任务学习
 

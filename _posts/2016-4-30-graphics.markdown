@@ -36,6 +36,12 @@ $$\left[ \begin{array}{ccc} A_0&A_1&A_2\\ A_3&A&A_4 \\ A_5&A_6&A_7\end{array} \r
 
 $$A_0$$~$$A_7$$被称作像素A的1度8-邻域(即$$U(A,1)$$)，相应的上下左右的四个像素$$A_1$$、$$A_3$$、$$A_4$$、$$A_6$$被称作像素A的1度4-邻域。下文如无特别指出，邻域均为8-邻域。
 
+4-邻域也叫Von Neumann neighborhood，8-邻域也叫Moore neighborhood。
+
+>John von Neumann，1903～1957，匈牙利裔美国人，数学家，物理学家，计算机科学家。Pázmány Péter University博士，哥廷根大学博士后，导师David Hilbert，普林斯顿大学教授。参与曼哈顿计划，提出了von Neumann架构，也是量子计算领域的奠基人。没错，就是现在很火的那个量子计算。
+
+>Edward Forrest Moore，1925～2003，美国数学家，计算机科学家。Brown University博士，University of Wisconsin–Madison教授。
+
 定义$$U^+(A,N)=A\bigcup\limits_{i=1}^N U(A,i)$$。
 
 $$U(A,2)$$的定义如下：
