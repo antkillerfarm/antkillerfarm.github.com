@@ -160,6 +160,18 @@ https://mp.weixin.qq.com/s/C8hsGkHGtoaS9Vzm6Ub4tw
 
 Berkeley提出“随机搜索”训练线性策略，提高RL的性能
 
+https://mp.weixin.qq.com/s/SckTPgEw7KWmfKXWriNIRg
+
+浅谈强化学习的方法及学习路线
+
+https://mp.weixin.qq.com/s/vYDb1rTdPxO1sIS38VX5xA
+
+DeepMind的AI学会了画画，利用强化学习完全不需人教：SPIRAL
+
+https://mp.weixin.qq.com/s/rpPN2rgru6krRz2fr1RhsQ
+
+模拟世界的模型：谷歌大脑与Jürgen Schmidhuber提出“人工智能梦境”
+
 # 模型压缩
 
 对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。

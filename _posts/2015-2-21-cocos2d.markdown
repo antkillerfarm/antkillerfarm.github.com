@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  cocos2d, Box2D, Github显示数学公式
+title:  cocos2d, Box2D
 category: technology 
 ---
 
@@ -282,77 +282,4 @@ Director::mainLoop
 DisplayLinkDirector::mainLoop
 
 Director::drawScene
-
-# Github显示数学公式
-
-这里主要用到了LaTeX和MathJax。
-
-LaTeX是TeX的扩展包，用于书写数学公式。它的官网是：
-
-http://www.latex-project.org/
-
-MathJax是一个JavaScript包，可以将LaTeX书写的数学公式转换成HTML。它的官网是：
-
-https://www.mathjax.org/
-
-源代码地址：
-
-https://github.com/mathjax/MathJax
-
-如果官网的网速不好的话，还可采用以下CDN地址：
-
-http://cdn.bootcss.com/mathjax/2.4.0/MathJax.js
-
-一般而言，从一个巨大的符号表中查询所需要的特定符号是一件令人沮丧的事情。在此向大家介绍一个LATEX手写符号识别系统：
-
-http://detexify.kirelabs.org/classify.html
-
-LaTeX和MathJax联合使用的方法参见：
-
-http://www.cnblogs.com/linxd/p/4955530.html
-
-Mathjax与LaTex公式简介
-
-http://3iter.com/2015/10/14/Mathjax%E4%B8%8ELaTex%E5%85%AC%E5%BC%8F%E7%AE%80%E4%BB%8B/
-
-Mathjax与LaTex公式简介
-
-示例如下：
-
-$$
-\vec{p}(t)=\vec{o} + t\vec{d}
-$$
-
-`\[
-(x-o_x)^2+(x-o_y)^2+(x-o_z)^2-R^2=0
-\]`
-
-$$A\xrightarrow[\alpha]{\beta}B$$
-
-## 注意
-
-绝对值符号虽然键盘上有这个键，但由于和Markdown的表格功能有冲突，需要采用\mid、\vert、\lvert、\rvert替代之。
-
-微分符号$$\rm{d}$$要用正体：\mathrm{d}或\rm{d}。
-
-偏微分符号$$\partial$$：\partial
-
-空格：\<space>，<space>表示键盘上的空格键。
-
-维基百科中出现的公式，可以在编辑界面中获得TeX代码。
-
-## \mathop
-
-$$\mathop{\arg\min}_{\theta,\theta_\Delta}$$
-
-$${\arg\min}_{\theta,\theta_\Delta}$$
-
-$$\arg\min_{\theta,\theta_\Delta}$$
-
-## 参考
-
-https://www.zhihu.com/question/40763253
-
-如何在Word和PowerPoint中优雅地插入Latex公式？
-
 

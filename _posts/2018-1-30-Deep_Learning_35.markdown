@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十五）——OpenPose, 深度目标跟踪, Mask R-CNN, 手势识别
+title:  深度学习（三十五）——OpenPose, 深度目标跟踪, Mask R-CNN, 手势识别, Spiking Neuron Networks, DNC
 category: DL 
 ---
 
@@ -270,3 +270,34 @@ https://www.leiphone.com/news/201502/QM7LdSN874dWXFLo.html
 
 带你了解世界最先进的手势识别技术
 
+# Spiking Neuron Networks
+
+除了基于BP算法的NN之外，Spiking Neuron Networks也是一大类NN。Spiking NN和人脑结构更相似，功耗也更小，但是相关训练和数据量化的算法尚不成熟，属于潜力股。
+
+参考：
+
+https://homepages.cwi.nl/~sbohte/publication/paugam_moisy_bohte_SNNChapter.pdf
+
+Computing with Spiking Neuron Networks
+
+https://mp.weixin.qq.com/s/6dpKSaLFVo-ge4gtbG8GQg
+
+简述脉冲神经网络SNN：下一代神经网络
+
+# DNC
+
+https://zhuanlan.zhihu.com/p/27773709
+
+浅析至强RNN可微分神经计算机(DNC)
+
+https://zhuanlan.zhihu.com/p/27964341
+
+浅析至强RNN可微分神经计算机(DNC)-2
+
+https://zhuanlan.zhihu.com/p/28209628
+
+DNC-3滚动分类的模式识别
+
+https://zhuanlan.zhihu.com/p/28433712
+
+DNC4广义线性回归

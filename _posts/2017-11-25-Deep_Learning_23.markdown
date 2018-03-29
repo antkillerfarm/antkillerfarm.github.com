@@ -294,6 +294,10 @@ https://mp.weixin.qq.com/s/cAqpclkkeVrTiifz07HC1g
 
 新型循环神经网络IndRNN：可构建更长更深的RNN
 
+https://mp.weixin.qq.com/s/XAbzaMXP3QOret_vxqVF9A
+
+用深度学习LSTM炒股：对冲基金案例分析
+
 # 语音识别
 
 ## 书籍

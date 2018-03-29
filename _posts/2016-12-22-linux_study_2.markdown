@@ -184,48 +184,6 @@ Ctrl+A Z
 
 Ctrl+A X
 
-# TikZ
-
-安装：
-
-`sudo apt install qtikz texlive-fonts-recommended`
-
-在线编辑：
-
-https://www.sharelatex.com/
-
-代码示例：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/tikz
-
-由于qtikz对于某些包支持的不好，我也不知道该怎样配置，因此采用了原始的命令行方式：
-
-`pdflatex xxx.tex`
-
-`evince xxx.pdf`
-
-参考：
-
-http://www.hahack.com/tools/pgftikz-resources/
-
-PGF/TikZ资源汇总
-
-http://www.texample.net/tikz/examples/
-
-各种tikz示例的网站
-
-http://www.fuzihao.org/blog/2015/08/11/TikZ%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/
-
-TikZ入门教程
-
-http://www.cnblogs.com/wangl393/
-
-一个TikZ的blog
-
-https://sandrocirulli.net/how-to-plot-functions-with-latex/
-
-安装pgfplots
-
 # MobaXterm
 
 MobaXterm是一个远程终端登录软件。

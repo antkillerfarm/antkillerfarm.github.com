@@ -182,6 +182,8 @@ $$L_1$$ regularization又被称为Lasso（least absolute shrinkage and selection
 
 $$\min_f \sum_{i=1}^nV(f(\hat x_i),\hat y_i)+\lambda \|\beta\|_1 + \eta  \|\beta\|_2$$
 
+这种方法也被称为弹性网络回归（ElasticNet Regression）。
+
 参见：
 
 https://en.wikipedia.org/wiki/Tikhonov_regularization
@@ -207,6 +209,10 @@ https://mp.weixin.qq.com/s/PMisvVy4EwEF-5xEY5LrwA
 https://mp.weixin.qq.com/s/MRabAUZrfgD2t2GhnLI43Q
 
 开发者必读：计算机科学中的线性代数
+
+https://mp.weixin.qq.com/s/ctLe1UbvWqBJ8jh-ppU3rA
+
+机器学习中的五种回归模型及其优缺点
 
 # 协同过滤的ALS算法
 

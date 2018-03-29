@@ -161,6 +161,22 @@ ReLU还经常被“诟病”的另一个问题是输出具有**偏移现象**，
 
 为了解决上述问题，人们提出了Leaky ReLU、PReLU、RReLU、ELU、Maxout等ReLU的变种。
 
+Leaky ReLU:
+
+$$f(x)  = \begin{cases}
+    x & \mbox{if } x > 0 \\
+    a x & \mbox{otherwise}
+\end{cases}$$
+
+这里的a是个常数，如果是个vector的话，那么就是PReLU了。
+
+ELU：
+
+$$f(x) = \begin{cases} 
+x & \mbox{if } x \geq 0 \\ 
+a(e^x-1) & \mbox{otherwise}
+\end{cases}$$
+
 ## Maxout
 
 Maxout Networks是Ian J. Goodfellow于2013年提出的一大类激活函数。

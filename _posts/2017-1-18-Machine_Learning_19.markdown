@@ -146,6 +146,10 @@ https://mp.weixin.qq.com/s/EXOqekYaKpGHGSFOH_gxfA
 
 “神经网络”能否代替“决策树算法”？
 
+https://mp.weixin.qq.com/s/G06VDc6iTwmNGsH4IfSeJQ
+
+Adaboost从原理到实现
+
 # 关联规则挖掘
 
 ## 基本概念

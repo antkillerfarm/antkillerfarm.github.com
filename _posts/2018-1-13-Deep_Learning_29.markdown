@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十九）——迁移学习, Spiking Neuron Networks, DNC, OCR, CRNN
+title:  深度学习（二十九）——RBM & DBN & Deep Autoencoder
 category: DL 
 ---
 
@@ -120,203 +120,67 @@ https://kexue.fm/archives/5332
 
 基于CNN和VAE的作诗机器人：随机成诗
 
-# RBM
+# RBM & DBN & Deep Autoencoder
 
+## RBM
 
+Restricted Boltzmann Machines由Hinton发明，是一种用于降维、分类、回归、协同过滤、特征学习和主题建模的算法。
 
-参考：
+![](/images/img2/multiple_inputs_RBM.png)
 
-https://mp.weixin.qq.com/s/bCFoEN0-Ey2dGcsFGpmR8w
+在重构阶段，第一隐藏层的激活值成为反向传递中的输入。这些输入值与同样的权重相乘，每两个相连的节点之间各有一个权重，就像正向传递中输入x的加权运算一样。这些乘积的和再与每个可见层的偏差相加，所得结果就是重构值，亦即原始输入的近似值。这一过程可以用下图来表示：
 
-受限玻尔兹曼机基础教程
+![](/images/img2/reconstruction_RBM.png)
 
-# 迁移学习
+由于RBM权重初始值是随机决定的，重构值与原始输入之间的差别通常很大。可以将r值与输入值之差视为重构误差，此误差值随后经由反向传播来修正RBM的权重，如此不断反复，直至误差达到最小。
 
-https://mp.weixin.qq.com/s/HmkTkv7QT08lGtJsHD7EvQ
+由此可见，RBM在正向传递中使用输入值来预测节点的激活值，亦即输入为加权的x时输出的概率：$$p(a\mid x; w)$$。
 
-迁移学习（Transfer Learning）技术概述
+但在反向传递时，激活值成为输入，而输出的是对于原始数据的重构值，或者说猜测值。此时RBM则是在尝试估计激活值为a时输入为x的概率，激活值的加权系数与正向传递中的权重相同。 第二个阶段可以表示为$$p(x\mid a; w)$$。
 
-https://zhuanlan.zhihu.com/wjdml
+上述两种预测值相结合，可以得到输入x和激活值a的联合概率分布，即$$p(x, a)$$。
 
-《小王爱迁移》系列blog
+重构与回归、分类运算不同。回归运算根据许多输入值估测一个连续值，分类运算是猜测应当为一个特定的输入样例添加哪种具体的标签。
 
-https://mp.weixin.qq.com/s/BWBrso7O1O3Rfxa4QWZH4g
+而重构则是在猜测原始输入的概率分布，亦即同时预测许多不同的点的值。这被称为生成学习，必须和分类器所进行的判别学习区分开来，后者是将输入值映射至标签，用直线将数据点划分为不同的组。
 
-分分钟学会基于深度学习的图像真实风格迁移！
+RBM用KL散度来衡量预测的概率分布与输入值的基准分布之间的距离。
 
-https://mp.weixin.qq.com/s/5DtTgc9bIrdXQkmuqRm8CA
+最后一点：你会发现RBM有两个偏差值。这是RBM与其他自动编码器的区别所在。隐藏的偏差值帮助RBM在正向传递中生成激活值（因为偏差设定了下限，所以无论数据有多稀疏，至少有一部分节点会被激活），而可见层的偏差则帮助RBM通过反向传递学习重构数据。
 
-谷歌大脑迁移学习：减少调参，直接在数据集中学习最佳图像架构
+权重能够近似模拟出数据的特征后，也就为下一步的学习奠定了良好基础，比如可以在随后的有监督学习阶段使用深度置信网络来对图像进行分类。
 
-https://mp.weixin.qq.com/s/fEKc6yFZwTPAHjXJlcHA-w
+RBM有许多用途，其中最强的功能之一就是对权重进行合理的初始化，为之后的学习和分类做好准备。从某种意义上来说，RBM的作用与反向传播相似：让权重能够有效地模拟数据。可以认为预训练和反向传播是实现同一个目的的不同方法，二者可以相互替代。
 
-香港科技大学提出L2T框架：学习如何迁移学习
+## DBN
 
-https://mp.weixin.qq.com/s/pbyByPoZ9SVoP9B7pJMxXg
+RBM不仅可以单独使用，也可以堆叠起来形成Deep Belief Nets(DBNs)，其中每个RBM层都与其前后的层进行通信。单个层中的节点之间不会横向通信。
 
-深度卷积网络迁移学习的脸部表情识别
+深度置信网络可以直接用于处理无监督学习中的未标记数据聚类问题，也可以在RBM层的堆叠结构最后加上一个Softmax层来构成分类器。
 
-https://www.zhihu.com/question/50996014
+除了第一个和最后一个层，深度置信网络中的每一层都扮演着双重角色：既是前一层节点的隐藏层，也是后一层节点的输入（或“可见”）层。深度置信网络是由多个单层网络组成的。
 
-什么是One/zero-shot learning？
+深度置信网络常用于图像、视频序列和动作捕捉数据的识别、聚类与生成。
 
-https://mp.weixin.qq.com/s/SZlFgnUBL0T6yNa-i_WLvg
+## Deep Autoencoder
 
-领域适应性Domain Adaptation、One-shot/zero-shot Learning概述
+Deep Autoencoder由两个对称的DBN组成，其中一个DBN通常有四到五个浅层，构成负责编码的部分，另一个四到五层的网络则是解码部分。
 
-https://mp.weixin.qq.com/s/sAf2fLLnKHOs433pV_6bSQ
+让我们用以下的示例来描绘一个编码器的大致结构：
 
-One-shot Learning：孪生网络少样本精准分类
+784 (输入) ----> 1000 ----> 500 ----> 250 ----> 100 -----> 30
 
-https://mp.weixin.qq.com/s/J8ZmIVKd-4X3hMGGIJWoDQ
+假设进入网络的输入是784个像素（MNIST数据集中28x28像素的图像），那么深度自动编码器的第一层应当有1000个参数，即相对较大。
 
-一文看懂迁移学习：从基础概念到技术研究！
+这可能会显得有违常理，因为参数多于输入往往会导致神经网络过拟合。
 
-https://mp.weixin.qq.com/s/qYoTgqwjaUlEycuk9LlonA
+在这个例子当中， 增加参数从某种意义上来看也就是增加输入本身的特征，而这将使经过自动编码的数据最终能被解码。
 
-迁移学习：6张图像vs13000张图像，超越2013 Kaggle猫狗识别竞赛领先水平
+其原因在于每个层中用于变换的sigmoid置信单元的表示能力。sigmoid置信单元无法表示与实数数据等量的信息和差异，而补偿方法之一就是扩张第一个层。
 
-http://mp.weixin.qq.com/s/6Urv6TfUfc-BWV1YqTM1PQ
+各个层将分别有1000、500、250、100个节点，直至网络最终生成一个30个数值长的向量。这一30个数值的向量是深度自动编码器负责预定型的前半部分的最后一层，由一个普通的RBM生成，而不是一个通常会出现在深度置信网络末端的Softmax或逻辑回归分类输出层。
 
-迁移学习+BPE，改进低资源语言的神经翻译结果
+解码的DBN是一个完全相反的结构。
 
-https://zhuanlan.zhihu.com/p/30242073
-
-人脸识别中的迁移学习简介（Transfer Learning）
-
-https://mp.weixin.qq.com/s/rVYWV-LsbmA4QhC6207SWA
-
-14篇论文为你呈现“迁移学习”研究全貌
-
-https://mp.weixin.qq.com/s/l-l1xbUaPNKc-w5XndjCbQ
-
-通过网络结构迁移学习提高图像识别任务的拓展性
-
-https://mp.weixin.qq.com/s/-KssC3yXsG3ZuV8-I6D_nQ
-
-学习迁移架构用于Scalable图像的识别
-
-https://mp.weixin.qq.com/s/NQED6DdCJNpNyzURUOZPnA
-
-迁移学习：机器学习的下一个前沿阵地！
-
-https://mp.weixin.qq.com/s/Hok9D8dAzYrBz7XoFmGE2A
-
-AliExpress：在检索式问答系统中应用迁移学习
-
-https://mp.weixin.qq.com/s/f_vB2AXCytnvoZaqfMeIpw
-
-应用TF-Slim快速实现迁移学习
-
-https://mp.weixin.qq.com/s/R1bKmhADfhQAZmhXL9ObiQ
-
-多重预训练视觉模型的迁移学习
-
-https://mp.weixin.qq.com/s/pDK4qBWArtETARE1fjbbmA
-
-迁移学习在深度学习中的应用
-
-https://mp.weixin.qq.com/s/mB1AEFVdM_s1rk0irST4Ww
-
-迁移学习在图像分类中的简单应用策略
-
-https://mp.weixin.qq.com/s/PDyp_GO0ovWV0KoGTwp_gQ
-
-简述迁移学习在深度学习中的应用
-
-https://mp.weixin.qq.com/s/FHmijTVqQ26osp6PzZsbvQ
-
-付彦伟：零样本、小样本以及开集条件下的社交媒体分析
-
-https://mp.weixin.qq.com/s/109hJaWsL4mcr9dc9vdDMg
-
-结合主动学习与迁移学习：让医学图像标注工作量减少一半
-
-https://mp.weixin.qq.com/s/A7PAu6-B1JRUfGmb2Fm_vA
-
-中国科学院大学Oral论文：使用鉴别性特征实现零样本识别
-
-# Spiking Neuron Networks
-
-除了基于BP算法的NN之外，Spiking Neuron Networks也是一大类NN。Spiking NN和人脑结构更相似，功耗也更小，但是相关训练和数据量化的算法尚不成熟，属于潜力股。
-
-参考：
-
-https://homepages.cwi.nl/~sbohte/publication/paugam_moisy_bohte_SNNChapter.pdf
-
-Computing with Spiking Neuron Networks
-
-https://mp.weixin.qq.com/s/6dpKSaLFVo-ge4gtbG8GQg
-
-简述脉冲神经网络SNN：下一代神经网络
-
-# DNC
-
-https://zhuanlan.zhihu.com/p/27773709
-
-浅析至强RNN可微分神经计算机(DNC)
-
-https://zhuanlan.zhihu.com/p/27964341
-
-浅析至强RNN可微分神经计算机(DNC)-2
-
-https://zhuanlan.zhihu.com/p/28209628
-
-DNC-3滚动分类的模式识别
-
-https://zhuanlan.zhihu.com/p/28433712
-
-DNC4广义线性回归
-
-# OCR
-
-## tesseract
-
-linux下可以使用tesseract作为OCR工具。安装方法：
-
-`sudo apt install tesseract-ocr libtesseract-dev`
-
-使用方法：
-
-`tesseract ./111.png 1 -l chi_sim+eng`
-
-## 参考
-
-https://mp.weixin.qq.com/s/h7HVyGbmtLmNVJp4p0rCRQ
-
-字符识别(OCR)相关工具/库/教材/论文等资源整理
-
-https://zhuanlan.zhihu.com/p/21344595
-
-端到端的OCR：验证码识别(LSTM+CTC)
-
-http://www.jianshu.com/p/86489f1afd36
-
-端到端的OCR：基于CNN的实现
-
-http://www.jianshu.com/p/4fadf629895b
-
-端到端的OCR：LSTM＋CTC的实现
-
-https://mp.weixin.qq.com/s/axpA7Y_Rhiols5bDIdc6jg
-
-Tesseract-OCR 3.0.1训练自己的语言库之图像文字识别
-
-http://mp.weixin.qq.com/s/n8C80a3B54FhrCe-GhhcDA
-
-文档扫描：深度神经网络在移动端的实践
-
-https://mp.weixin.qq.com/s/MYhQt9uC16BadiZKWjPTzA
-
-华中科技大学提出多向文本检测方法：基于角定位与区域分割
-
-# CRNN
-
-论文：
-
-《An End-to-End Trainable Neural Network for Image-based Sequence Recognition and Its Application to Scene Text Recognition》
-
-代码：
-
-https://github.com/bgshih/crnn
+相比Autoencoder，Deep Autoencoder显然能够“消化”更复杂的数据。
 

@@ -4,6 +4,50 @@ title:  深度学习（三十）——GAN进阶
 category: DL 
 ---
 
+# RBM & DBN & Deep Autoencoder（续）
+
+## 参考
+
+https://deeplearning4j.org/cn/restrictedboltzmannmachine
+
+受限玻尔兹曼机基础教程
+
+http://txshi-mt.com/2018/02/04/UTNN-11-Hopfield-Nets-and-Boltzmann-Machines/
+
+Hopfield网和玻尔兹曼机
+
+http://txshi-mt.com/2018/02/10/UTNN-12-Restricted-Boltzmann-Machines/
+
+受限玻尔兹曼机
+
+http://www.cnblogs.com/kemaswill/p/3269138.html
+
+基于受限玻尔兹曼机(RBM)的协同过滤
+
+http://www.cnblogs.com/kemaswill/p/3203605.html
+
+受限波尔兹曼机简介
+
+https://mp.weixin.qq.com/s/MqnJ39GPrzP4xJWDZi9gnQ
+
+博士生开源深度学习C++库DLL：快速构建卷积受限玻尔兹曼机
+
+http://www.cs.toronto.edu/~fritz/absps/cogscibm.pdf
+
+A Learning Algorithm for Boltzmann Machines
+
+http://www.cs.toronto.edu/~hinton/absps/dbm.pdf
+
+Deep Boltzmann Machines
+
+http://www.cs.toronto.edu/~hinton/absps/guideTR.pdf
+
+A Practical Guide to Training Restricted Boltzmann Machines
+
+http://www.taodocs.com/p-62206829.html
+
+《受限波尔兹曼机简介》张春霞著
+
 # GAN进阶
 
 ## GAN的发展

@@ -107,41 +107,13 @@ $$N_i=\frac{Ng_ie^{-E_i/kT}}{\sum_{i=1}^{n}g_ie^{-E_i/kT}}$$
 
 ## 参考
 
-http://www.taodocs.com/p-62206829.html
-
-《受限波尔兹曼机简介》张春霞著
-
 http://wenku.baidu.com/view/ccb7956db84ae45c3b358ca7.html
 
 波尔兹曼统计分布律的推导的新方法
 
-http://www.cs.toronto.edu/~fritz/absps/cogscibm.pdf
-
-A Learning Algorithm for Boltzmann Machines
-
-http://www.cs.toronto.edu/~hinton/absps/dbm.pdf
-
-Deep Boltzmann Machines
-
-http://www.cs.toronto.edu/~hinton/absps/guideTR.pdf
-
-A Practical Guide to Training Restricted Boltzmann Machines
-
 http://www.cnblogs.com/tianchi/archive/2013/03/14/2959716.html
 
 Boltzmann machine
-
-http://www.cnblogs.com/kemaswill/p/3269138.html
-
-基于受限玻尔兹曼机(RBM)的协同过滤
-
-http://www.cnblogs.com/kemaswill/p/3203605.html
-
-受限波尔兹曼机简介
-
-https://mp.weixin.qq.com/s/MqnJ39GPrzP4xJWDZi9gnQ
-
-博士生开源深度学习C++库DLL：快速构建卷积受限玻尔兹曼机
 
 https://mp.weixin.qq.com/s/Z1_ujG7iP_AFUD0gVO8HXQ
 

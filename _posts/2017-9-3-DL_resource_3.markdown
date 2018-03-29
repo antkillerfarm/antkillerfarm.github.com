@@ -402,27 +402,4 @@ https://mp.weixin.qq.com/s/kmEFjzFIbNq0_qdjc1Wm_w
 
 DeepMind新智能体架构Unicorn：持续学习能力胜过多个基准智能体
 
-## PaddlePaddle
-
-https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q
-
-如何用百度深度学习框架PaddlePaddle做数据预处理
-
-https://mp.weixin.qq.com/s/yTZs_rQnuZK1GAy3V1Cuog
-
-一文读懂百度PaddlePaddle EDL技术
-
-https://mp.weixin.qq.com/s/VKK4M_0S7HaBkvURqWgseQ
-
-PaddlePaddle与TensorFlow的对比分析
-
-https://mp.weixin.qq.com/s/ync8iu8nmpJoI5Sfnj8DqQ
-
-百度深度学习平台PaddlePaddle框架解析
-
-https://mp.weixin.qq.com/s/dGapoc3YUkzjItrTUi3DQg
-
-新手入门？一步一步教你如何安装PaddlePaddle
-
-
 

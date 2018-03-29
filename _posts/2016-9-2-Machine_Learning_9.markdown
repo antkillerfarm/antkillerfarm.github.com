@@ -6,6 +6,28 @@ category: ML
 
 # 在线学习（续）
 
+下面以感知器（perceptron）算法为例，讨论一下在线学习的误差问题。
+
+首先回忆一下感知器算法：
+
+$$h_\theta(x)=g(\theta^Tx),y\in\{1,-1\}$$
+
+$$g(z)=\begin{cases}
+1, & z\ge 0 \\
+-1, & z<0 \\
+\end{cases}$$
+
+对于训练样本$$(x,y)$$，其更新过程为：
+
+$$\theta:=\begin{cases}
+\theta, & h_\theta(x)=y \\
+\theta+yx, & otherwise \\
+\end{cases}\tag{3}$$
+
+这里给出一个和感知器算法有关的定理：
+
+对于给定的m个样本**序列**（注意“序列”二字，在线算法对于样本的顺序是敏感的）$$x^{(i)}$$，如果所有的$$\|x^{(i)}\|\le D$$，并且存在单位向量u，使得所有样本的$$y^{(i)}(u^Tx^{(i)})\ge \gamma$$，则感知器算法在该序列上的预测错误个数最多为$$(D/\gamma)^2$$。
+
 这个定理是Henry David Block和Albert B. J. Novikoff于1962年提出的。
 
 >注：Henry David Block，1920～1978，美国数学家。   
@@ -214,30 +236,4 @@ kmeans聚类理论篇K的选择（轮廓系数）
 https://mp.weixin.qq.com/s/tLcF7_jjl3_FmjM7L1kcfw
 
 一文详解高斯混合模型原理
-
-# EM算法
-
-本节将进一步讨论EM算法的性质，并将之应用到使用latent random variables的一大类估计问题中。
-
-## Jensen不等式
-
-首先我们给出凸函数的定义：
-
-设f是定义域为实数的函数，如果对于所有的实数x，$$f''(x)\ge 0$$，那么f是凸函数。当x是向量时，如果其Hessian矩阵H是半正定的（$$H\ge 0$$），那么f是凸函数。如果$$f''(x)>0$$或$$H>0$$，那么称f是严格凸函数。
-
-Jensen不等式表述如下:
-
-如果f是凸函数，X是随机变量，那么$$E[f(X)]\ge f(EX)$$。
-
-特别地，如果f是严格凸函数，那么$$E[f(X)]=f(EX)$$，当且仅当$$p(X=EX)=1$$。也就是说X是常量。
-
-在不引起误会的情况下，$$E[X]$$简写做$$EX$$。
-
-这个不等式的含义如下图所示：
-
-![](/images/article/Jensen.png)
-
-Jensen不等式应用于凹函数时，不等号方向反向，也就是$$E[f(X)]\le f(EX)$$
-
->注：Johan Ludwig William Valdemar Jensen，1859～1925，丹麦人。主业工程师，副业数学家。
 
