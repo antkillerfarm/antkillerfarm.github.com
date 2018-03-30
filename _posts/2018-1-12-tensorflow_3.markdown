@@ -143,3 +143,8 @@ https://mp.weixin.qq.com/s/kdWxbwamSuiTWdZj8MfwyQ
 https://mp.weixin.qq.com/s/D_HNrlTS-uTA9GWPu7WJaQ
 
 简单的「图像旋转」预测，为图像特征学习提供强大监督信号
+
+https://mp.weixin.qq.com/s/jdRu-cishwV8qBmGLTFJCA
+
+美团“猜你喜欢”深度学习排序模型实践
+

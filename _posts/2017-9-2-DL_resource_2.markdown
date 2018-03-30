@@ -6,7 +6,7 @@ category: resource
 
 # DL参考资源
 
-## TPU & GPU
+## AI芯片
 
 https://cloud.tencent.com/community/article/244743
 
@@ -211,6 +211,10 @@ https://mp.weixin.qq.com/s/cfqnLYZSxJhtsgtrydx02A
 https://mp.weixin.qq.com/s/31SBgTXfIcwkmIzujBLxOA
 
 深度学习引擎的终极形态是什么?
+
+https://zhuanlan.zhihu.com/p/35103140
+
+“传说中”的异步电路能否在AI芯片界异军突起？
 
 ## 并行 & 框架
 

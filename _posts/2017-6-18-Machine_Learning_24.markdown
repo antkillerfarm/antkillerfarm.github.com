@@ -275,6 +275,10 @@ https://zhuanlan.zhihu.com/p/34407471
 
 如何理解时间序列？—从Riemann积分和Lebesgue积分谈起
 
+https://zhuanlan.zhihu.com/p/35093835
+
+时间序列的自回归模型—从线性代数的角度来看
+
 # Tri-training
 
 ## 半监督学习

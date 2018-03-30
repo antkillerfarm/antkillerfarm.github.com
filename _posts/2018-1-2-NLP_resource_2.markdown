@@ -338,4 +338,7 @@ https://mp.weixin.qq.com/s/Ce3gOZSqkG8wZQ6X1CUE1Q
 
 如何从编码器和解码器两方面改进生成式句子摘要？
 
+https://mp.weixin.qq.com/s/MP0Px9ylUT0tpdz_hP5JBw
+
+在NLP中深度学习模型何时需要树形结构？
 
