@@ -14,6 +14,16 @@ http://blog.csdn.net/shuzfan/article/details/50358809
 
 人脸检测——CascadeCNN
 
+## MTCNN
+
+http://blog.csdn.net/qq_14845119/article/details/52680940
+
+MTCNN（Multi-task convolutional neural networks）人脸对齐
+
+http://blog.csdn.net/shuzfan/article/details/52668935
+
+人脸检测——MTCNN
+
 ## 人脸年龄识别
 
 https://www.openu.ac.il/home/hassner/projects/cnn_agegender/
@@ -57,14 +67,6 @@ https://mp.weixin.qq.com/s/ZZmLbFzi843g0k3gTncQmA
 https://mp.weixin.qq.com/s/DYCXef_09yFFNR0uHL2Q0Q
 
 基于Python的开源人脸识别库：离线识别率高达99.38%
-
-blog.csdn.net/qq_14845119/article/details/52680940
-
-MTCNN（Multi-task convolutional neural networks）人脸对齐
-
-http://blog.csdn.net/shuzfan/article/details/52668935
-
-人脸检测——MTCNN
 
 https://mp.weixin.qq.com/s/eOxd5XbeyVcRYyAAmPr20Q
 
@@ -226,6 +228,10 @@ https://mp.weixin.qq.com/s/mGcKpu3BXlAGO-t2FUCxAg
 
 基于深度模型的人脸对齐和姿态标准化
 
+https://mp.weixin.qq.com/s/9noWOZJSRAi424ZDTD1IRQ
+
+世界权威评测冠军：百度人脸检测算法PyramidBox
+
 # 行人重识别
 
 行人重识别（Person re-identification）也称行人再识别，是利用计算机视觉技术判断图像或者视频序列中是否存在特定行人的技术。广泛被认为是一个图像检索的子问题。给定一个监控行人图像，检索跨设备下的该行人图像。旨在弥补目前固定的摄像头的视觉局限，并可与行人检测/行人跟踪技术相结合 ，可广泛应用于智能视频监控、智能安保等领域。
@@ -263,6 +269,10 @@ https://zhuanlan.zhihu.com/p/34778414
 基于时空模型无监督迁移学习的行人重识别
 
 # 迁移学习
+
+>龙明盛，清华本科（2008）+博士（2016），迁移学习专家。清华大学副教授，博导。   
+>个人主页：   
+>http://ise.thss.tsinghua.edu.cn/~mlong/
 
 https://mp.weixin.qq.com/s/HmkTkv7QT08lGtJsHD7EvQ
 

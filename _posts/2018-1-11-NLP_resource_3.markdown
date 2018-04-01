@@ -302,3 +302,7 @@ https://mp.weixin.qq.com/s/XTgYPCejKwy1WyQYQYXZvQ
 
 基于知识库的问答：生成查询图进行语义分析
 
+https://mp.weixin.qq.com/s/h3OXtnEOmT_YPs4QEU1Gag
+
+Chatbot这么火，但你真的知道它的玩法有哪几种吗？
+

@@ -118,9 +118,81 @@ TLD（Tracking-Learning-Detection）一种目标跟踪算法
 
 ## Eigenface
 
+Eigenface是M. Turk和A. Pentland于1991年提出的人脸识别算法。
+
+>Matthew A. Turk，Virginia Tech本科（1982）+CMU硕士（1984）+MIT博士（1991）。UCSB教授。
+
+>Alex Paul "Sandy" Pentland，1952年生，MIT博士（1982）。MIT教授。
+
+论文：
+
+《Face recognition using eigenfaces》
+
+### 计算Eigenface
+
+**Step 1**：假设有M张训练照片$$I_1,\dots,I_M$$，每张照片的尺寸为NxN，将照片$$I_i$$转换成1维vector $$\Gamma_i$$。显然，$$\Gamma_i$$的大小是$$N^2$$。
+
+**Step 2**：计算均值vector $$\Psi$$（也就是常说的平均脸（average face/mean face））：
+
+$$\Psi=\frac{1}{M}\sum_{i=1}^M\Gamma_i$$
+
+**Step 3**：计算图片与均值的差：
+
+$$\Phi_i=\Gamma_i-\Psi$$
+
+**Step 4**：计算协方差矩阵：
+
+$$C=\frac{1}{M}\sum_{n=1}^M\Phi_n \Phi_n^T=AA^T(N^2\times N^2 \text{matrix})$$
+
+**Step 5**：计算的$$AA^T$$特征向量$$u_i$$。然而，$$AA^T$$太大了，我们只能退而求其次计算$$A^TA(M\times M \text{matrix})$$的特征向量$$v_i$$。
+
+那么$$u_i$$和$$v_i$$到底有什么关系呢？我们首先根据特征向量的定义，给出下式：
+
+$$A^TAv_i=\mu_iv_i$$
+
+其中，$$\mu_i$$是$$A^TA$$的特征值。
+
+$$A^TAv_i=\mu_iv_i\Rightarrow AA^TAv_i=\mu_iAv_i\Rightarrow CAv_i=\mu_iAv_i$$
+
+令$$u_i=Av_i$$，则：
+
+$$Cu_i=\mu_iu_i$$
+
+可见$$\mu_i$$同时也是$$AA^T$$的特征值，而对应的特征向量则是$$Av_i$$。
+
+实际上，$$A^TA$$的M个特征值，就是$$AA^T$$的前M大的特征值。
+
+**Step 6**：从中选出K个最大的特征向量供后续使用。
+
+### 使用Eigenface
+
+**Step 1**：给定图片$$\Gamma$$，计算：
+
+$$\Phi=\Gamma-\Psi$$
+
+**Step 2**：将$$\Phi$$映射到K维特征向量空间：
+
+$$\Omega=[w_1,\dots,w_K]^T$$
+
+**Step 3**：计算与图片l的距离：
+
+$$e_r=\|\Omega-\Omega^l\|$$
+
+综上，**Eigenface实际上就是PCA在人脸识别上的应用。**
+
+### Eigenface的缺点
+
+1.训练图片中人脸需要对齐，且图片大小一致。
+
+### 参考
+
 http://blog.csdn.net/smartempire/article/details/21406005
 
 特征脸方法（Eigenface）
+
+http://vision.jhu.edu/teaching/vision08/Handouts/case_study_pca1.pdf
+
+Eigenfaces for Face Detection/Recognition
 
 http://www.cnblogs.com/little-monkey/p/8118938.html
 

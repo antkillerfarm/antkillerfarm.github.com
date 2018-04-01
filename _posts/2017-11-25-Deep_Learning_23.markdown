@@ -298,6 +298,10 @@ https://mp.weixin.qq.com/s/XAbzaMXP3QOret_vxqVF9A
 
 用深度学习LSTM炒股：对冲基金案例分析
 
+https://mp.weixin.qq.com/s/eeA5RZh35BvlFt45ywVvFg
+
+可视化LSTM网络：探索“记忆”的形成
+
 # 语音识别
 
 ## 书籍

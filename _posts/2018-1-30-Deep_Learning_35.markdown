@@ -142,6 +142,10 @@ https://mp.weixin.qq.com/s/Pp3vnD2DMDYuiatI8drJrw
 
 PTAV：实时高精度目标追踪框架
 
+https://mp.weixin.qq.com/s/NCtgHHpiG473gixu1tZeJA
+
+哈工大提出STRCF：克服遮挡和大幅形变的实时视觉追踪算法
+
 # FlowNet
 
 论文：
@@ -247,6 +251,10 @@ https://mp.weixin.qq.com/s/_ohsx7kzgU-szP-K9_Yv1w
 https://mp.weixin.qq.com/s/uJpVqRpWWaK2cY8fYGlRag
 
 先理解Mask R-CNN的工作原理，然后构建颜色填充器应用
+
+https://mp.weixin.qq.com/s/x_9klKK_hIiFV1fGhxZIVA
+
+Mask R-CNN神应用：像英剧《黑镜》一样屏蔽人像
 
 # 手势识别
 

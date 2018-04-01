@@ -114,6 +114,18 @@ https://mp.weixin.qq.com/s/l3hQCQWh5NgihzTs2A049w
 
 风格迁移原理及tensorflow实现
 
+https://mp.weixin.qq.com/s/dqMS4NjmNYs7IFHm8uFM8w
+
+TensorFlow发布面向JavaScript开发者的机器学习框架TensorFlow.js
+
+https://zhuanlan.zhihu.com/p/35181413
+
+TensorFlow.js人脸识别—玩转吃豆豆小游戏
+
+https://mp.weixin.qq.com/s/mjUnrPBPBuY6XKXkUymX-w
+
+实例介绍TensorFlow的输入流水线
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/75xrjqzW0S1TgAfTyvccdw
@@ -147,4 +159,13 @@ https://mp.weixin.qq.com/s/D_HNrlTS-uTA9GWPu7WJaQ
 https://mp.weixin.qq.com/s/jdRu-cishwV8qBmGLTFJCA
 
 美团“猜你喜欢”深度学习排序模型实践
+
+https://mp.weixin.qq.com/s/QFYZwbrTJuN-JiMJ5NQxWg
+
+AI学会了视觉推理，“脑补”看不清的物体
+
+https://mp.weixin.qq.com/s/mPN3MXueeZImY2z0KBD6CA
+
+CMU&谷歌Spotlight论文：超越卷积的视觉推理框架
+
 

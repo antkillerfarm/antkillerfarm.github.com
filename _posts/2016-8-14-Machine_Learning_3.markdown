@@ -169,6 +169,10 @@ https://mp.weixin.qq.com/s/e5Sa66HZly2N0sCqoYNSeA
 
 一文读懂贝叶斯分类算法
 
+https://mp.weixin.qq.com/s/xNZ0x3_o77C1KL1WTdYkfQ
+
+解读实践中最广泛应用的分类模型：朴素贝叶斯算法
+
 ## 拉普拉斯平滑
 
 对于样本集中未出现的单词，在其首次出现时，由于先验概率$$p(x_i\mid y=1)=0,p(x_i\mid y=0)=0$$，这时公式1会出现$$\frac{0}{0}$$的情况。

@@ -176,6 +176,10 @@ http://www.cnblogs.com/wangxiaocvpr
 
 一个DL的blog，专注于RL+CV。
 
+https://www.matroid.com/blog/post/slides-and-videos-from-scaledml-2018
+
+Slides and Videos from ScaledML 2018
+
 ## 项目集锦
 
 https://mp.weixin.qq.com/s/ZNNgEB9rFjAE8SdfMo9NLA
@@ -213,6 +217,10 @@ C++从零实现神经网络
 http://nlp.csai.tsinghua.edu.cn/~lzy/codes.html
 
 清华刘知远推荐30来项算法代码和工具包列表
+
+https://mp.weixin.qq.com/s/I1qdzgf-OtOchK3ox4W3Dg
+
+来自Google大脑团队的19个数据可视化项目
 
 ## 教程
 

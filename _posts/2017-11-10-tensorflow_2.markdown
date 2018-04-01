@@ -57,14 +57,14 @@ Tensorflow并行：多核(multicore)，多线程(multi-thread)
 
 ### tf.cond
 
-{% highlight python %} 
-a=tf.constant(2)      
-b=tf.constant(3)      
-x=tf.constant(4)      
-y=tf.constant(5)      
-z = tf.multiply(a, b)      
-result = tf.cond(x < y, lambda: tf.add(x, z), lambda: tf.square(y))      
-with tf.Session() as session:      
+{% highlight python %}
+a=tf.constant(2)
+b=tf.constant(3)
+x=tf.constant(4)
+y=tf.constant(5)
+z = tf.multiply(a, b)
+result = tf.cond(x < y, lambda: tf.add(x, z), lambda: tf.square(y))
+with tf.Session() as session:
     print(result.eval())
 {% endhighlight %}
 
@@ -91,6 +91,10 @@ image_tensor = tf.case(decoder, default = decode_png, exclusive = True)
 http://blog.csdn.net/u013082989/article/details/53510625
 
 TensorFlow学习_01_安装_基本操作_可视化结构、过程_Mnist
+
+## 权值保持不变
+
+迁移学习的时候，有的时候需要保持某几层的权值，在后续训练中不被改变。这时，可以在创建Variable时，令trainable=false。
 
 ## 我的TensorFlow实践
 
@@ -427,5 +431,3 @@ http://www.jianshu.com/p/1da012a83b74
 https://mp.weixin.qq.com/s/oEqMjOTj8xpd3sg60ZUhqA
 
 TensorFlow的c++实践及各种坑
-
-

@@ -110,6 +110,10 @@ http://blog.csdn.net/gzh0222/article/details/8540604
 
 lvs、haproxy、nginx 负载均衡的比较分析
 
+https://mp.weixin.qq.com/s/31DGDYpDHcYg-4qM4OczxA
+
+深入浅出Nginx
+
 http://chongzhuang.windowszj.com/
 
 系统之家一键重装
