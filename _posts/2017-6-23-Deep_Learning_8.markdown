@@ -228,6 +228,10 @@ https://mp.weixin.qq.com/s/-d4T2hgjy6kGdd_ig_J9eg
 
 LeCun亲授的深度学习入门课：从飞行器的发明到卷积神经网络
 
+https://mp.weixin.qq.com/s/gwH9s1ggMTj2dJkad9wUuw
+
+从VGG到NASNet，一文概览图像分类网络
+
 # GAN
 
 ## 概况

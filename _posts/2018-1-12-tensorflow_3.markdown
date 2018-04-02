@@ -132,10 +132,6 @@ https://mp.weixin.qq.com/s/75xrjqzW0S1TgAfTyvccdw
 
 如何用深度学习将前端设计模型自动转换为代码？
 
-https://mp.weixin.qq.com/s/H2GmqloNumttFlaSArjgUg
-
-FAIR何恺明等人提出组归一化：替代批归一化，不受批量大小限制
-
 https://mp.weixin.qq.com/s/LTtcD5CBT8m127thjBaRsw
 
 DeepMind提出神经元删除法：通过理解每个神经元来理解深度学习
@@ -167,5 +163,17 @@ AI学会了视觉推理，“脑补”看不清的物体
 https://mp.weixin.qq.com/s/mPN3MXueeZImY2z0KBD6CA
 
 CMU&谷歌Spotlight论文：超越卷积的视觉推理框架
+
+https://mp.weixin.qq.com/s/RwofVKhBFqo3dYJzy9mlJw
+
+国科大本科生连续在CVPR，AAAI发文，系统提出三维模型库变形分析方法
+
+https://mp.weixin.qq.com/s/wdDYUOLpi0l2mRirQhHjPQ
+
+Apache MXNet助力数字营销，检测社交网络照片中的商标品牌
+
+https://mp.weixin.qq.com/s/tKccNaGe5EqEEqpoItfn5Q
+
+我在谷歌大脑见习机器学习的一年：Node.js创始人的尝试笔记
 
 

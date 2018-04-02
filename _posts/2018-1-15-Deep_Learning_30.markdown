@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十）——SOM
+title:  深度学习（三十）——SOM, Group Normalization
 category: DL 
 ---
 
@@ -125,4 +125,23 @@ http://blog.csdn.net/Loyal2M/article/details/11225987
 http://www.ai-junkie.com/ann/som/som1.html
 
 Kohonen's Self Organizing Feature Maps
+
+# Group Normalization
+
+论文：
+
+《Group Normalization》
+
+![](/images/img2/Group_Normalization.png)
+
+参考：
+
+https://mp.weixin.qq.com/s/H2GmqloNumttFlaSArjgUg
+
+FAIR何恺明等人提出组归一化：替代批归一化，不受批量大小限制
+
+https://mp.weixin.qq.com/s/44RvXEYYc5lebsHs_ooswg
+
+全面解读Group Normalization
+
 

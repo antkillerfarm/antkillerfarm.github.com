@@ -306,3 +306,12 @@ https://mp.weixin.qq.com/s/h3OXtnEOmT_YPs4QEU1Gag
 
 Chatbot这么火，但你真的知道它的玩法有哪几种吗？
 
+https://mp.weixin.qq.com/s/j230q5-mo2pcJPMYKCErPQ
+
+DKN: 基于深度知识感知的新闻推荐网络
+
+https://mp.weixin.qq.com/s/lHhmUR-DXMceJSxwIn7QGw
+
+探寻开放域对话生成中的隐式反馈
+
+

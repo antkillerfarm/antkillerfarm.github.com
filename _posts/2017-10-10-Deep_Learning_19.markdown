@@ -204,6 +204,10 @@ https://mp.weixin.qq.com/s/JidoZ9-V8JGWfB2gyO2AlA
 
 Deeplab v2安装及调试全过程
 
+https://mp.weixin.qq.com/s/pL1Wvd3oBRVtqG9I4O4oDg
+
+DeepLab V3
+
 # ENet
 
 ENet是波兰的Adam Paszke于2016年提出的。
