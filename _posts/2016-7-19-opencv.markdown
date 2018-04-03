@@ -286,6 +286,10 @@ https://mp.weixin.qq.com/s/kzzfzxEjKVzc9lNLrDpgEQ
 
 OpenCV基于残差网络实现人脸检测
 
+https://mp.weixin.qq.com/s/95hftpJfSDIMlMVOC7iq4g
+
+OpenCV中使用YOLO对象检测
+
 # GNU Octave
 
 GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。

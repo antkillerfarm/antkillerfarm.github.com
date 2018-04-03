@@ -236,6 +236,10 @@ https://mp.weixin.qq.com/s/JDWgw3OOdBurDAShrPHJ7Q
 
 从最大方差来看主成分分析PCA
 
+https://mp.weixin.qq.com/s/ZDipXGPOxKhxtAx2Dc9RjA
+
+主成分分析（PCA）以及在图像上的应用
+
 # 独立成分分析
 
 这一节我们将讲述独立成分分析（Independent Components Analysis，ICA）算法。

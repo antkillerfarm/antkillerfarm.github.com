@@ -232,3 +232,7 @@ https://mp.weixin.qq.com/s/SdCFYYQXdYtQLy-GaQNfcw
 
 UCSB提出变分知识图谱推理：在KG中引入变分推理框架
 
+https://blog.csdn.net/hadoopdevelop/article/details/79784722
+
+基于知识图谱的智能问答机器人技术架构
+

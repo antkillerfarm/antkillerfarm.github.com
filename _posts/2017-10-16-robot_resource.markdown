@@ -28,6 +28,12 @@ http://cs.stanford.edu/people/karpathy/convnetjs/
 
 https://github.com/karpathy/convnetjs
 
+参考：
+
+https://mp.weixin.qq.com/s/9jS7T51kMDhmzaOp9SI0oA
+
+从Brain.js到Mind，一文收录11个移动端Javascript机器学习库
+
 ----
 
 http://www.eecs.wsu.edu/~taylorm/16_483F/index.html
@@ -137,6 +143,10 @@ Apollo 2.0自动驾驶平台技术解析与应用
 https://mp.weixin.qq.com/s/EgsdlDhd8lIXU3bnTYJh0w
 
 Apollo高精地图解析
+
+https://mp.weixin.qq.com/s/027QogNXtW2NPIDVcGQGzw
+
+Apollo“云+端”研发迭代新模式实战
 
 ## 文章
 

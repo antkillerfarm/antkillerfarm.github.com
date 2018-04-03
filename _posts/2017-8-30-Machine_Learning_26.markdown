@@ -136,6 +136,10 @@ https://mp.weixin.qq.com/s/iN8q24ka762LqY74zoVFsg
 
 3万字剖析强化学习在电商环境下应用
 
+https://mp.weixin.qq.com/s/qhRxZTq0IdMonAeNj25K1Q
+
+马尔科夫决策过程之Markov Processes
+
 # K-摇臂赌博机
 
 ![](/images/article/Multi-Armed_Bandit.jpg)
@@ -223,4 +227,8 @@ $$\overline R_t=\frac{1}{t}\sum_{i=1}^tR_i$$
 http://www.xfyun.cn/share/?p=2606
 
 Bandit算法与推荐系统
+
+https://mp.weixin.qq.com/s/9dXqXmRkINjwJYB4csjU5A
+
+强化学习初探-从多臂老虎机问题说起
 

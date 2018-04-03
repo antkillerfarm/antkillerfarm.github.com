@@ -22,6 +22,10 @@ https://mp.weixin.qq.com/s/HMLwjLlFXR4WM92_OnKHbA
 
 基于Apache MXNet，亚马逊NMT开源框架Sockeye论文介绍
 
+https://mp.weixin.qq.com/s/hkcVhyqiDW--F3QxucgEcA
+
+亚马逊开源神经机器翻译框架Sockeye：基于Apache MXNet的NMT平台
+
 https://mp.weixin.qq.com/s/rF4zKCbj3Jh8dDR1239lpA
 
 基于双语主题模型的跨语言层次分类体系匹配
@@ -57,10 +61,6 @@ https://mp.weixin.qq.com/s/GyE9qdXPGvrq12dMAf4nrQ
 https://mp.weixin.qq.com/s/eCtqMIo3_UDxAR4fWzMjZQ
 
 站在锤子手机背后，小源科技用AI打造短信场景服务
-
-https://mp.weixin.qq.com/s/hkcVhyqiDW--F3QxucgEcA
-
-亚马逊开源神经机器翻译框架Sockeye：基于Apache MXNet的NMT平台
 
 https://mp.weixin.qq.com/s/vgejlnsBlOKMMRt-M3-d-w
 

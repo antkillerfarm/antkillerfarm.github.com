@@ -76,9 +76,9 @@ ocenaudio---http://www.ocenaudio.com.br/download
 
 用于音频剪辑处理的工具。免费但不开源。
 
-https://www.tulingss.com/
+https://xue.glgoo.net/
 
-一个技术类的搜索引擎。
+glgoo学术搜索
 
 https://coderpad.io/
 

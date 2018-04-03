@@ -173,3 +173,42 @@ https://mp.weixin.qq.com/s/dGapoc3YUkzjItrTUi3DQg
 https://mp.weixin.qq.com/s/tAhaVwlsxJ5ml0wxiew_4Q
 
 在PaddlePaddle上实现MNIST手写体数字识别
+
+# MXNet
+
+https://mp.weixin.qq.com/s/lVja7woyFWpmr9sH0CitAA
+
+BMXNet：基于MXNet的开源二值神经网络实现
+
+https://mp.weixin.qq.com/s/50uGupiwU2UVuVeMm_bTag
+
+李沐介绍MXNet新接口Gluon：高效支持命令式与符号式编程
+
+https://mp.weixin.qq.com/s/VRmhAluhKWxyPbStmMoWtg
+
+一张速查表实现Apache MXNet深度学习框架五大特征的开发利用
+
+http://zh.gluon.ai/index.html
+
+李沐：《动手学深度学习》（使用Gluon）
+
+https://zhuanlan.zhihu.com/p/30966663
+
+用Gluon炼丹体验
+
+https://mp.weixin.qq.com/s/B8TYVG5WjDJ4NX-wirS2Fg
+
+Alex Smola：深度学习触手可及，架构Gluon高中生就能用
+
+https://mp.weixin.qq.com/s/wdDYUOLpi0l2mRirQhHjPQ
+
+Apache MXNet助力数字营销，检测社交网络照片中的商标品牌
+
+http://mp.weixin.qq.com/s/Z5X7Vamuw1BwtienhOrSvQ
+
+解构TensorFlow, 学习MXNet--新一代深度学习系统的核心思想
+
+https://mp.weixin.qq.com/s/_PAzff6V9UgwLCos05B4rg
+
+十分钟从PyTorch转MXNet
+

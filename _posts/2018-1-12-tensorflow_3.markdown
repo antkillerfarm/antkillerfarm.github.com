@@ -126,6 +126,10 @@ https://mp.weixin.qq.com/s/mjUnrPBPBuY6XKXkUymX-w
 
 实例介绍TensorFlow的输入流水线
 
+http://www.holmesconan.me/2018/04/cifar10-vgg.html
+
+CIFAR-10 Estimator之Vgg模型
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/75xrjqzW0S1TgAfTyvccdw
@@ -168,12 +172,12 @@ https://mp.weixin.qq.com/s/RwofVKhBFqo3dYJzy9mlJw
 
 国科大本科生连续在CVPR，AAAI发文，系统提出三维模型库变形分析方法
 
-https://mp.weixin.qq.com/s/wdDYUOLpi0l2mRirQhHjPQ
-
-Apache MXNet助力数字营销，检测社交网络照片中的商标品牌
-
 https://mp.weixin.qq.com/s/tKccNaGe5EqEEqpoItfn5Q
 
 我在谷歌大脑见习机器学习的一年：Node.js创始人的尝试笔记
+
+https://mp.weixin.qq.com/s/hjRRmCK4QBJ6UTABAR-cig
+
+神经网络quine：自我复制+解决辅助任务
 
 

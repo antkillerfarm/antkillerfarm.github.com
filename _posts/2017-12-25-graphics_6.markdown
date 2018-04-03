@@ -178,11 +178,17 @@ $$\Omega=[w_1,\dots,w_K]^T$$
 
 $$e_r=\|\Omega-\Omega^l\|$$
 
+当$$e_r<T_r$$时，就认为是同一张人脸。
+
+这里的距离可以是欧氏距离，但作者指出使用马式距离效果更佳。
+
 综上，**Eigenface实际上就是PCA在人脸识别上的应用。**
 
 ### Eigenface的缺点
 
 1.训练图片中人脸需要对齐，且图片大小一致。
+
+2.Eigenface对于大数据集的计算效率不佳。在Eigenface出现的年代，数字图片尚不多见，因此，数据集普遍较小。但现在即便是mini数据集也动辄上万张图片，甚至$$M>N^2$$的情况也不罕见。而对超大矩阵进行SVD分解，是个很吃计算量的事情，这也限制了Eigenface的应用。
 
 ### 参考
 
@@ -200,13 +206,23 @@ http://www.cnblogs.com/little-monkey/p/8118938.html
 
 ## Local Binary Patterns
 
+LBP算法是Matti Kalevi Pietikäinen于1994年提出的方法，后来被用到了人脸识别领域。
+
+>Matti Kalevi Pietikäinen，University of Oulu博士（1982）、教授。
+
+论文：
+
+《Face Recognition with Local Binary Patterns》
+
+参考：
+
 http://blog.csdn.net/smartempire/article/details/23249517
 
 LBP方法
 
 http://blog.csdn.net/dujian996099665/article/details/8886576
 
-opencv学习之（三）-LBP算法的研究及其实现
+LBP算法的研究及其实现
 
 https://mp.weixin.qq.com/s/iFlnZ8z5baUdWCZxIGkq5g
 

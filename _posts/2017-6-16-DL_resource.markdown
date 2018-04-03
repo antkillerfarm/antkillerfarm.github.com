@@ -440,10 +440,6 @@ http://mp.weixin.qq.com/s/9fJT0dMLvYQdfMVvSEiG4A
 
 深度学习的时间序列模型评价
 
-https://mp.weixin.qq.com/s/lVja7woyFWpmr9sH0CitAA
-
-BMXNet：基于MXNet的开源二值神经网络实现
-
 http://blog.csdn.net/tangwei2014/article/details/55077172
 
 二值化神经网络介绍

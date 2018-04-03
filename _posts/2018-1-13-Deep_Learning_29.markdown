@@ -164,6 +164,8 @@ RBM不仅可以单独使用，也可以堆叠起来形成Deep Belief Nets(DBNs)�
 
 ## Deep Autoencoder
 
+![](/images/img2/deep_autoencoder.png)
+
 Deep Autoencoder由两个对称的DBN组成，其中一个DBN通常有四到五个浅层，构成负责编码的部分，另一个四到五层的网络则是解码部分。
 
 让我们用以下的示例来描绘一个编码器的大致结构：

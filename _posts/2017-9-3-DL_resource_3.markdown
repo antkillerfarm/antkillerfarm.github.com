@@ -12,26 +12,6 @@ http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg
 
 GitHub最受欢迎深度学习项目Top 20
 
-https://mp.weixin.qq.com/s/50uGupiwU2UVuVeMm_bTag
-
-李沐介绍MXNet新接口Gluon：高效支持命令式与符号式编程
-
-https://mp.weixin.qq.com/s/VRmhAluhKWxyPbStmMoWtg
-
-一张速查表实现Apache MXNet深度学习框架五大特征的开发利用
-
-http://zh.gluon.ai/index.html
-
-李沐：《动手学深度学习》（使用Gluon）
-
-https://zhuanlan.zhihu.com/p/30966663
-
-用Gluon炼丹体验
-
-https://mp.weixin.qq.com/s/B8TYVG5WjDJ4NX-wirS2Fg
-
-Alex Smola：深度学习触手可及，架构Gluon高中生就能用
-
 https://mp.weixin.qq.com/s/Shz6BmsOrtbEFtoJRSkl9A
 
 简单车牌检测
@@ -91,10 +71,6 @@ Docker Compose+GPU+TensorFlow所产生的奇妙火花
 https://mp.weixin.qq.com/s/hRH7hVsaQBqf0vhD_BqBgg
 
 五大深度学习框架三类神经网络全面测评
-
-http://mp.weixin.qq.com/s/Z5X7Vamuw1BwtienhOrSvQ
-
-解构TensorFlow, 学习MXNet--新一代深度学习系统的核心思想
 
 https://zhuanlan.zhihu.com/p/26078299
 
@@ -383,6 +359,10 @@ https://mp.weixin.qq.com/s/86c59-nIsrTNUABx4QYobA
 https://mp.weixin.qq.com/s/9woLRUGuirTV91uuHaP69A
 
 中科大潘建伟团队在光量子处理器上成功实现拓扑数据分析
+
+https://mp.weixin.qq.com/s/eBSPMJUY6LVvjy-4AAUphA
+
+一文读懂进化算法[Evolutionary Algorithm]简介
 
 ## 连续学习
 
