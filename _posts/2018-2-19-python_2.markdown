@@ -352,3 +352,7 @@ https://mp.weixin.qq.com/s/czqO4Lo1Jt9zqg2UKNlLYg
 
 手把手教你用Python创建微信聊天机器人
 
+https://mp.weixin.qq.com/s/wIXCIMzZmh75SV-qJIKbCw
+
+Python程序员最常犯的10个错误，你中招了吗？
+

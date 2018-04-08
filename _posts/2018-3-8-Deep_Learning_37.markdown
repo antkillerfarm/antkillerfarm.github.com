@@ -40,6 +40,10 @@ DeepFace先进行了两次全卷积＋一次池化，提取了低层次的边缘
 
 ## 参考
 
+https://mp.weixin.qq.com/s/eZ78biXN-mVw3s9Ky_LBZg
+
+如何走近深度学习人脸识别？你需要这篇超长综述
+
 http://www.cnblogs.com/pandaroll/p/6590339.html
 
 开源人脸识别openface
@@ -268,9 +272,13 @@ https://zhuanlan.zhihu.com/p/34778414
 
 基于时空模型无监督迁移学习的行人重识别
 
+https://zhuanlan.zhihu.com/p/35296881
+
+刷新三数据集纪录的跨镜追踪(行人再识别-ReID)技术介绍
+
 # 迁移学习
 
->龙明盛，清华本科（2008）+博士（2016），迁移学习专家。清华大学副教授，博导。   
+>龙明盛，清华本科（2008）+博士（2016），迁移学习的最早提出者之一。清华大学副教授，博导。   
 >个人主页：   
 >http://ise.thss.tsinghua.edu.cn/~mlong/
 
@@ -377,3 +385,12 @@ https://mp.weixin.qq.com/s/109hJaWsL4mcr9dc9vdDMg
 https://mp.weixin.qq.com/s/A7PAu6-B1JRUfGmb2Fm_vA
 
 中国科学院大学Oral论文：使用鉴别性特征实现零样本识别
+
+https://mp.weixin.qq.com/s/P4kGtXZRW_fMbKbkGIJEfA
+
+迁移学习比赛：OpenAI喊你重温“音速小子索尼克”
+
+https://mp.weixin.qq.com/s/e4iv6FJAMZACEqWFmxeSFg
+
+让AI掌握星际争霸微操：中科院提出强化学习+课程迁移学习方法
+

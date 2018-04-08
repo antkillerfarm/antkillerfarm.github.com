@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  图像处理理论（五）——ISP, 从BOW到SPM, ILSVRC 2010考古
+title:  图像处理理论（五）——ISP, Eigenface
 category: graphics 
 ---
 
@@ -226,63 +226,72 @@ https://github.com/codeauroraforum/gtec-demo-framework/tree/master/DemoApps/Open
 
 一个基于OpenVX的ISP软实现。
 
-# Harris
+# Eigenface
 
-http://blog.csdn.net/lwzkiller/article/details/54633670
+Eigenface是M. Turk和A. Pentland于1991年提出的人脸识别算法。
 
-Harris角点检测原理详解
+>Matthew A. Turk，Virginia Tech本科（1982）+CMU硕士（1984）+MIT博士（1991）。UCSB教授。
 
-http://www.cnblogs.com/king-lps/p/6375424.html
+>Alex Paul "Sandy" Pentland，1952年生，MIT博士（1982）。MIT教授。
 
-Harris角点检测
+论文：
 
-# 从BOW到SPM
+《Face recognition using eigenfaces》
 
-## BOW
+## 计算Eigenface
 
-Bag-of-words模型是信息检索领域常用的文档表示方法。在信息检索中，BOW模型假定对于一个文档，忽略它的单词顺序和语法、句法等要素，将其仅仅看作是若干个词汇的集合，文档中每个单词的出现都是独立的，不依赖于其它单词是否出现。
+**Step 1**：假设有M张训练照片$$I_1,\dots,I_M$$，每张照片的尺寸为NxN，将照片$$I_i$$转换成1维vector $$\Gamma_i$$。显然，$$\Gamma_i$$的大小是$$N^2$$。
 
-为了表示一幅图像，我们可以将图像看作文档，即若干个“视觉词汇”的集合，同样的，视觉词汇相互之间没有顺序。
+**Step 2**：计算均值vector $$\Psi$$（也就是常说的平均脸（average face/mean face））：
 
-![](/images/article/cv_bow.jpg)
+$$\Psi=\frac{1}{M}\sum_{i=1}^M\Gamma_i$$
 
-由于图像中的词汇不像文本文档中的那样是现成的，我们需要首先从图像中提取出相互独立的视觉词汇，这通常需要经过三个步骤：
+**Step 3**：计算图片与均值的差：
 
-（1）特征检测。
+$$\Phi_i=\Gamma_i-\Psi$$
 
-（2）特征表示。
+**Step 4**：计算协方差矩阵：
 
-（3）单词本的生成。
+$$C=\frac{1}{M}\sum_{n=1}^M\Phi_n \Phi_n^T=AA^T(N^2\times N^2 \text{matrix})$$
 
-而SIFT算法是提取图像中局部不变特征的应用最广泛的算法，因此我们可以用SIFT算法从图像中提取不变特征点，作为视觉词汇，并构造单词表，用单词表中的单词表示一幅图像。
+**Step 5**：计算的$$AA^T$$特征向量$$u_i$$。然而，$$AA^T$$太大了，我们只能退而求其次计算$$A^TA(M\times M \text{matrix})$$的特征向量$$v_i$$。
 
-参考：
+那么$$u_i$$和$$v_i$$到底有什么关系呢？我们首先根据特征向量的定义，给出下式：
 
-http://blog.csdn.net/v_JULY_v/article/details/6555899
+$$A^TAv_i=\mu_iv_i$$
 
-SIFT算法的应用--目标识别之Bag-of-words模型
+其中，$$\mu_i$$是$$A^TA$$的特征值。
 
-https://zhuanlan.zhihu.com/p/25999669
+$$A^TAv_i=\mu_iv_i\Rightarrow AA^TAv_i=\mu_iAv_i\Rightarrow CAv_i=\mu_iAv_i$$
 
-BOW算法，被CNN打爆之前的王者
+令$$u_i=Av_i$$，则：
 
-## SPM
+$$Cu_i=\mu_iu_i$$
 
-http://blog.csdn.net/chlele0105/article/details/16972695
+可见$$\mu_i$$同时也是$$AA^T$$的特征值，而对应的特征向量则是$$Av_i$$。
 
-SPM:Spatial Pyramid Matching for Recognizing Natural Scene Categories空间金字塔匹配
+实际上，$$A^TA$$的M个特征值，就是$$AA^T$$的前M大的特征值。
 
-http://blog.csdn.net/jwh_bupt/article/details/9625469
+**Step 6**：从中选出K个最大的特征向量供后续使用。
 
-Spatial Pyramid Matching 小结
+## 使用Eigenface
 
-# ILSVRC 2010考古
+**Step 1**：给定图片$$\Gamma$$，计算：
 
-ILSVRC 2010的冠军是NEC和UIUC的联合队伍。这也是DL于2012年大放光彩之前比较杰出的成果。虽然现在它通常作为反面教材，出现在与DL的对比场景中，然而不可否认的是，它仍然是一个算法的杰作。
+$$\Phi=\Gamma-\Psi$$
 
->林元庆，清华大学硕士+宾夕法尼亚大学博士（2008年）。原百度研究院院长。
+**Step 2**：将$$\Phi$$映射到K维特征向量空间：
 
-![](/images/article/ILSVRC_2010.png)
+$$\Omega=[w_1,\dots,w_K]^T$$
 
-上图是NEC算法的基本流程图。这里不打算描述整个算法，而仅对其中涉及的术语做一个解释。
+**Step 3**：计算与图片l的距离：
+
+$$e_r=\|\Omega-\Omega^l\|$$
+
+当$$e_r<T_r$$时，就认为是同一张人脸。
+
+这里的距离可以是欧氏距离，但作者指出使用马式距离效果更佳。
+
+综上，**Eigenface实际上就是PCA在人脸识别上的应用。**
+
 

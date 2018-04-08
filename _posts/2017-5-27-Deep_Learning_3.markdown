@@ -294,6 +294,10 @@ https://mp.weixin.qq.com/s/VcjivPhJuCk7NPQ1FNQULw
 
 一文让你入门CNN
 
+https://mp.weixin.qq.com/s/zvPNuP_LT7pWIgoxzfeUWw
+
+综述卷积神经网络：从基础技术到研究前景
+
 # Autoencoder
 
 Bengio在2003年的《A neural probabilistic language model》中指出，维度过高，会导致每次学习，都会强制改变大部分参数。

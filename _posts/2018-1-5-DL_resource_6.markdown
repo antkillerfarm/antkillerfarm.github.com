@@ -358,10 +358,6 @@ https://mp.weixin.qq.com/s/giwq3IZs6KSILSyXDn90pA
 
 破解AI大脑黑盒迈出新一步！谷歌现在更懂机器，还开源了研究工具
 
-https://mp.weixin.qq.com/s/KtO3OTZ-bZ6m0ZSI6jTyjw
-
-OpenAI提出Reptile：可扩展的元学习算法
-
 https://mp.weixin.qq.com/s/VdZLGE3DU80Ycid1ePIR6w
 
 DIY发现新行星操作指南：谷歌开源了行星发现代码

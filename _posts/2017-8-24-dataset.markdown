@@ -248,3 +248,6 @@ https://mp.weixin.qq.com/s/Y__z-0nxAZNuZsZefCm4IA
 
 纽约大学联合谷歌大脑提出“COG”数据集，可提高系统的“视觉推理”能力
 
+https://mp.weixin.qq.com/s/B-dEz-uUfjG1r98glkY3Fg
+
+数据科学家必用的25个深度学习的开放数据集！

@@ -168,6 +168,10 @@ http://scikit-learn.org/stable/tutorial/index.html
 
 http://scikit-learn.org/stable/modules/classes.html
 
+中文文档：
+
+http://sklearn.apachecn.org
+
 ## Matplotlib
 
 Matplotlib是一个高阶的图形库，主要提供生成图表等数据可视化方面的功能。

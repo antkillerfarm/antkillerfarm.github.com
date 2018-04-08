@@ -398,3 +398,7 @@ https://mp.weixin.qq.com/s/5sVrSxRAXWBn3-NBSlYMIg
 
 不踩坑的Python爬虫：如何在一个月内学会爬取大规模数据
 
+https://mp.weixin.qq.com/s/z2uWLEWF6e0TJWIpXyY6mQ
+
+如何用Python爬虫获取那些价值博文
+

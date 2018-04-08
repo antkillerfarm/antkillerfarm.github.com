@@ -148,6 +148,10 @@ https://mp.weixin.qq.com/s/027QogNXtW2NPIDVcGQGzw
 
 Apollo“云+端”研发迭代新模式实战
 
+https://mp.weixin.qq.com/s/Pjfhs-03HxFeyeKo1BmAPw
+
+Apollo小度车载系统打造更舒心的出行
+
 ## 文章
 
 http://blog.exbot.net/
@@ -364,4 +368,15 @@ https://blog.csdn.net/qq_35723367/article/details/79721503
 
 四轴飞行器基本组成及其飞行原理详解
 
+https://zhuanlan.zhihu.com/p/35319354
+
+最前沿：视觉导航（Visual Navigation），让人惊讶的进展
+
+https://mp.weixin.qq.com/s/E_EEowwxXw0-Dbxh9HSzjw
+
+没有地图也能导航：DeepMind展示全新AI导航技术
+
+https://mp.weixin.qq.com/s/PYqhSHzlyO5HqLvBaEqlwQ
+
+直接建模视觉智能体？让“小狗”动起来～
 

@@ -8,7 +8,7 @@ category: ML
 
 >Machine Learning = Statistics + Optimization   
 >Data Science = Machine Learning + Systems   
->--by Michael I. Jordan
+>---by Michael I. Jordan
 
 这是根据Andrew Ng的《机器学习讲义》编写的系列blog。
 

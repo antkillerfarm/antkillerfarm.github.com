@@ -257,3 +257,115 @@ https://mp.weixin.qq.com/s/o-zfrJS5Ito1kWPBJUIryg
 
 Kafka相关资源
 
+# 压缩感知
+
+http://blog.csdn.net/abcjennifer/article/details/7721834
+
+初识压缩感知Compressive Sensing
+
+http://blog.csdn.net/abcjennifer/article/details/7724360
+
+中国压缩传感资源（China Compressive Sensing Resources）
+
+http://blog.csdn.net/xiahouzuoxin/article/details/38820925
+
+白话压缩感知（含Matlab代码）
+
+http://blog.csdn.net/abcjennifer/article/details/7748833
+
+压缩感知进阶——有关稀疏矩阵
+
+# 元胞自动机
+
+http://www.doc88.com/p-8939046003005.html
+
+元胞自动机理论及其在计算机仿真模拟中的应用
+
+http://blog.csdn.net/chl033/article/details/5367861
+
+元胞自动机与相关理论和方法
+
+http://blog.csdn.net/deepfuture/article/details/5065284
+
+元胞自动机
+
+http://www.cnblogs.com/Firefly727/articles/1856328.html
+
+元胞自动机
+
+# 聚类
+
+https://mp.weixin.qq.com/s/xGPiaXTnQad3RcMwIELP4w
+
+流式聚类算法
+
+https://wenku.baidu.com/view/4169e77f27284b73f2425047.html
+
+层次聚类
+
+https://mp.weixin.qq.com/s/uSHLJKB0knVcCY759Ul25w
+
+什么是聚类和降维？
+
+https://mp.weixin.qq.com/s/ORLOOhufrInyPdS6fbywOw
+
+深入浅出——基于密度的聚类方法
+
+https://mp.weixin.qq.com/s/Vi4Yb8TOJydj9yL078iNHw
+
+BIRCH层次聚类详解
+
+https://mp.weixin.qq.com/s/_5A3DuVyN6aE9n5OEc19kA
+
+数据科学家必须了解的六大聚类算法：带你发现数据之美
+
+https://mp.weixin.qq.com/s/pDiZt4ydWw-4cYeE4gpjiw
+
+数据科学家需要了解的5大聚类算法
+
+https://www.zhihu.com/question/34554321
+
+用于数据挖掘的聚类算法有哪些，各有何优势？
+
+# 可视化
+
+![](/images/img2/data_visual.png)
+
+https://mp.weixin.qq.com/s/Ul6Qg2ylCgvDfJTQre4DWQ
+
+2017年数据可视化的七大趋势
+
+https://mp.weixin.qq.com/s/i2Ex8Zmu2ZzHPcoPr-1Rlw
+
+太阳系相关图，教你优雅的打开“可视化”的大门
+
+https://mp.weixin.qq.com/s/q5mPN_rt1Af5L2fnxuTdCA
+
+46款数据可视化分析工具大集合
+
+https://mp.weixin.qq.com/s/tHNd6y2v7GXN2mSIv0qXlg
+
+手把手：一张图看清编程语言发展史，你也能用Python画出来！
+
+https://mp.weixin.qq.com/s/mD732PqDtqYdFZSxZWtvvg
+
+从1维到6维，一文读懂多维数据可视化策略
+
+## howmuch.net
+
+howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：
+
+![](/images/article/top_10_company.jpg)
+
+网址：
+
+https://howmuch.net/
+
+## Gephi
+
+Gephi是一个针对图和网络的可视化工具。
+
+官网：
+
+https://gephi.org/
+

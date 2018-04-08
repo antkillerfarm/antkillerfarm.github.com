@@ -244,6 +244,10 @@ https://mp.weixin.qq.com/s/vpxCP1Uw23y9XNTRUhY79w
 
 达观数据推荐算法实现：协同过滤之item embedding
 
+https://www.sohu.com/a/215535516_99992181
+
+有这好事？神经网络模型Word2vec竟能根据个人喜好推荐音乐
+
 ## word2vec/doc2vec的缺点
 
 1.word2vec/doc2vec基于BOW（Bag Of Word，词袋）模型。该模型的特点是忽略词序，因此对于那些交换词序会改变含义的句子，无法准确评估它们的区别。

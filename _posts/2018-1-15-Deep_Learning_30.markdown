@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十）——SOM, Group Normalization
+title:  深度学习（三十）——SOM, Group Normalization, MobileNet
 category: DL 
 ---
 
@@ -144,4 +144,36 @@ https://mp.weixin.qq.com/s/44RvXEYYc5lebsHs_ooswg
 
 全面解读Group Normalization
 
+# MobileNet
 
+论文：
+
+《MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications》
+
+代码：
+
+https://github.com/Zehaos/MobileNet
+
+![](/images/article/dwl_pwl.png)
+
+参考：
+
+https://mp.weixin.qq.com/s/f3bmtbCY5BfA4v3movwLVg
+
+向手机端神经网络进发：MobileNet压缩指南
+
+https://mp.weixin.qq.com/s/mcK8M6pnHiZZRAkYVdaYGQ
+
+MobileNet在手机端上的速度评测：iPhone 8 Plus竟不如iPhone 7 Plus
+
+https://mp.weixin.qq.com/s/2XqBeq3N4mvu05S1Jo2UwA
+
+CNN模型之MobileNet
+
+https://mp.weixin.qq.com/s/fdgaDoYm2sfjqO2esv7jyA
+
+Google论文解读：轻量化卷积神经网络MobileNetV2
+
+https://mp.weixin.qq.com/s/7vFxmvRZuM2DqSYN7C88SA
+
+谷歌发布MobileNetV2：可做语义分割的下一代移动端计算机视觉架构

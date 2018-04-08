@@ -182,6 +182,10 @@ https://mp.weixin.qq.com/s/BK7-dZErDEST8C2TD1HEDA
 
 基于区块链技术的机器学习行业概述
 
+https://mp.weixin.qq.com/s/Z0oZrvzn7ktdTIQX-0KMLA
+
+手把手：用Python实现一个基于RSA算法的区块链客户端
+
 # CPU
 
 https://zhuanlan.zhihu.com/p/29743431

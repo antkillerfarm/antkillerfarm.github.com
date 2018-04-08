@@ -86,7 +86,7 @@ https://mp.weixin.qq.com/s/a1C1ezL59azNfdM3TFGaGw
 
 在《数学狂想曲（三）》中我们已经提到了“统计模拟”的概念，这实际上就是数值概率算法的应用，它主要利用了大数定律与强大数定律。
 
-这里有两个容易混淆的概念：Monte Carlo method和Monte Carlo algorithm。
+这里有两个容易混淆的概念：**Monte Carlo method**和**Monte Carlo algorithm**。
 
 Monte Carlo method这个概念的范围非常广，它实际上就是概率算法的别名。诸如用随机投针计算圆周率之类的算法，都可以看作是Monte Carlo method。
 
@@ -175,6 +175,14 @@ https://mp.weixin.qq.com/s/wfCyii6bS-GxMZPg2TPaLA
 https://mp.weixin.qq.com/s/tqhPGG2Djl4gnd09RdHsUA
 
 一个彻底改变世界的思想
+
+https://mp.weixin.qq.com/s/vKVX-aJ7n7VVDXOpoTo1GQ
+
+通过Python实现马尔科夫链蒙特卡罗方法的入门级应用
+
+https://mp.weixin.qq.com/s/TMHaIRFdgJxG__1oqRq70Q
+
+蒙特卡罗树搜索之初学者指南
 
 # Temporal-Difference Learning
 

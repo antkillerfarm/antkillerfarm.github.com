@@ -314,4 +314,24 @@ https://mp.weixin.qq.com/s/lHhmUR-DXMceJSxwIn7QGw
 
 探寻开放域对话生成中的隐式反馈
 
+https://mp.weixin.qq.com/s/CYgnTHpQi3FDXV6RwUzi-Q
+
+神经网络结构在命名实体识别（NER）中的应用
+
+https://mp.weixin.qq.com/s/bZgis3dxMbv6AnLNyk04Og
+
+用数据做酷的事！手把手教你搭建问答系统
+
+https://mp.weixin.qq.com/s/X1h6EfLVDAnDj2pKZUqyJA
+
+英文文本挖掘预处理流程
+
+https://mp.weixin.qq.com/s/tntgiltyHfbIBktgdL3peA
+
+15年研发经验博士手把手教学：从零开始搭建智能客服
+
+https://mp.weixin.qq.com/s/EmACAfXwJnkUh3jYNWA-Dg
+
+如何使用深度学习执行文本实体提取
+
 

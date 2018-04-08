@@ -130,6 +130,14 @@ http://www.holmesconan.me/2018/04/cifar10-vgg.html
 
 CIFAR-10 Estimator之Vgg模型
 
+https://mp.weixin.qq.com/s/BfwTOtLnwnMsS3-PQQBHSg
+
+使用TensorFlow训练WDL模型性能问题定位与调优
+
+https://mp.weixin.qq.com/s/kw3BYTXdyhnIyVZrnQuPew
+
+基于深度学习和迁移学习的识花实践
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/75xrjqzW0S1TgAfTyvccdw
@@ -179,5 +187,45 @@ https://mp.weixin.qq.com/s/tKccNaGe5EqEEqpoItfn5Q
 https://mp.weixin.qq.com/s/hjRRmCK4QBJ6UTABAR-cig
 
 神经网络quine：自我复制+解决辅助任务
+
+https://mp.weixin.qq.com/s/fJUQXnVwTlfOC37Go0lLUg
+
+携程图像智能化建设之路
+
+https://mp.weixin.qq.com/s/lEaq8NylJG4bUY2YupZh0g
+
+5秒钟内将手绘网站线框图转换为可用的HTML网站
+
+https://mp.weixin.qq.com/s/6agNNraba4wlOzWnDfedBg
+
+UIUC & Zillow提出LayoutNet：从单个RGB图像中重建3D房间布局
+
+https://zhuanlan.zhihu.com/p/35305264
+
+一文看懂深度学习中的VQA(视觉问答)技术
+
+https://mp.weixin.qq.com/s/FJCZvc8pl-CwFhyiCD6E-g
+
+Pinterest视觉搜索工程师孙彦：视觉搜索不是“鸡肋”
+
+https://mp.weixin.qq.com/s/SwJs0OUzBlhiIOyFHFBK_g
+
+一文看懂JeffDean等提出的ENAS到底好在哪？
+
+https://mp.weixin.qq.com/s/eAv0vTBwnGEUDA9PyhlDnA
+
+FAIR等机构联合提出IntPhys：你的智能系统的物理知识，比得上婴儿吗？
+
+https://mp.weixin.qq.com/s/NgsSQS6opjOsusTIr9Vx-w
+
+腾讯AI Lab、MIT等机构提出TVNet：可端到端学习视频的运动表征
+
+https://mp.weixin.qq.com/s/1rtONnhwEc3Osf9gP5fBCQ
+
+李飞飞CVPR最新论文“文本转图”效果优化可多一步：物体关系描述
+
+https://mp.weixin.qq.com/s/D0n3xY0k25d6Ouf4mCi7Nw
+
+让AI识别语义空间关系：斯坦福大学李飞飞组提出“参考关系模型”
 
 

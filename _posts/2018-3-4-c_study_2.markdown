@@ -148,3 +148,9 @@ C - undefined reference to “sqrt” even with '-lm'
 
 12.熊野丸 March 1945
 
+## 2018.4
+
+http://bbs.tianya.cn/post-no05-401394-340.shtml
+
+美军太平洋战争中的战机
+

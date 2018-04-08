@@ -278,6 +278,10 @@ https://mp.weixin.qq.com/s/PZMmjT9eXL7rU2pxkQWTiw
 
 从90年代的SRNN开始，纵览循环神经网络27年的研究进展
 
+https://mp.weixin.qq.com/s/7LcqRGPYX6JXpY_0hbjmbA
+
+循环神经网络(RNN)入门帖：向量到序列，序列到序列，双向RNN，马尔科夫化
+
 # LSTM
 
 本篇笔记主要摘自：

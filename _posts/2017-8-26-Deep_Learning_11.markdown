@@ -60,36 +60,6 @@ http://blog.csdn.net/mao_xiao_feng/article/details/78002811
 
 tf.nn.separable_conv2d如何实现深度可分卷积?
 
-和Xception类似的还有MobileNets。
-
-论文：
-
-《MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications》
-
-代码：
-
-https://github.com/Zehaos/MobileNet
-
-![](/images/article/dwl_pwl.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/f3bmtbCY5BfA4v3movwLVg
-
-向手机端神经网络进发：MobileNet压缩指南
-
-https://mp.weixin.qq.com/s/mcK8M6pnHiZZRAkYVdaYGQ
-
-MobileNet在手机端上的速度评测：iPhone 8 Plus竟不如iPhone 7 Plus
-
-https://mp.weixin.qq.com/s/2XqBeq3N4mvu05S1Jo2UwA
-
-CNN模型之MobileNet
-
-https://mp.weixin.qq.com/s/fdgaDoYm2sfjqO2esv7jyA
-
-Google论文解读：轻量化卷积神经网络MobileNetV2
-
 ## 3D卷积
 
 3D卷积一般用于视频（2D图像+1D时序）和医学影像（3D立体图像）的分析处理中。
@@ -249,10 +219,10 @@ e \\ f \\
 \end{bmatrix}=
 \begin{bmatrix}
 c & -d \\
-d & c \\  
+d & c \\
 \end{bmatrix}
 \begin{bmatrix}
-a \\ b \\  
+a \\ b \\
 \end{bmatrix}$$
 
 上式包含了4个乘法和2个加法。

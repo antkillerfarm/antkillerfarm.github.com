@@ -264,6 +264,16 @@ https://sites.google.com/site/vsummsite/
 
 需要翻墙。
 
+## IndRNN
+
+https://mp.weixin.qq.com/s/cAqpclkkeVrTiifz07HC1g
+
+新型循环神经网络IndRNN：可构建更长更深的RNN
+
+https://mp.weixin.qq.com/s/7-K-nZTijoYCaprRNYXxFg
+
+新型RNN：将层内神经元相互独立以提高长程记忆
+
 ## 参考
 
 https://mp.weixin.qq.com/s/4IHzOAvNhHG9c8GP0zXVkQ
@@ -289,10 +299,6 @@ Nested LSTM：一种能处理更长期信息的新型LSTM扩展
 https://www.zhihu.com/question/62399257
 
 如何理解LSTM后接CRF？
-
-https://mp.weixin.qq.com/s/cAqpclkkeVrTiifz07HC1g
-
-新型循环神经网络IndRNN：可构建更长更深的RNN
 
 https://mp.weixin.qq.com/s/XAbzaMXP3QOret_vxqVF9A
 

@@ -237,6 +237,14 @@ $$\left( 1 - \sum_{i=1}^p \phi_i L^i \right) Y_t = \left( 1 + \sum_{i=1}^q \thet
 
 >注：上面的内容只是对ARIMA模型给出一个简单的定义。实际的假设检验、参数估计的步骤，还是比较复杂的，完全可以写本书来说。
 
+## 其它
+
+除了ARIMA系列模型之外，ARCH系列模型也用的比较多：
+
+autoregressive conditional heteroskedasticity, ARCH
+
+generalized autoregressive conditional heteroskedasticity, GARCH
+
 ## 参考
 
 https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average

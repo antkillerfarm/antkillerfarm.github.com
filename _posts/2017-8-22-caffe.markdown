@@ -282,6 +282,10 @@ caffe-orc主流ocr算法：CNN+BLSTM+CTC架构实现
 
 https://caffe2.ai/
 
+2018.4，Caffe2的框架代码与PyTorch合并。Caffe2将主要应用于客户端的推理过程。
+
+>感觉Caffe2属于典型的昙花一现，虽然借助Caffe的影响力，立了一个山头，但FaceBook终究精力有限，能支撑一个不被Google打倒的框架已经是颇不容易了，两个根本别想！
+
 参考：
 
 https://mp.weixin.qq.com/s/YYwmRwq5TN7JPah_arNyaQ

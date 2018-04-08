@@ -1,196 +1,18 @@
 ---
 layout: post
-title:  图像处理理论（六）——经典目标跟踪算法, 经典人脸识别算法
+title:  图像处理理论（六）——LBP
 category: graphics 
 ---
 
-# 经典目标跟踪算法
+# Eigenface（续）
 
-camshift、meanshift、Kalman filter、particle filter、Optical flow、TLD、KCF、Struck
-
-## Meanshift
-
-参考：
-
-http://www.cnblogs.com/liqizhou/archive/2012/05/12/2497220.html
-
-Meanshift，聚类算法
-
-https://wenku.baidu.com/view/0d9eb876a417866fb84a8eb2.html
-
-mean-shift算法概述
-
-http://www.cnblogs.com/cfantaisie/archive/2011/06/10/2077188.html
-
-meanshift聚类
-
-## Camshift
-
-参考：
-
-http://blog.sina.com.cn/s/blog_5d1476580101a57j.html
-
-Camshift算法
-
-http://blog.163.com/thomaskjh@126/blog/static/370829982010113133152722/
-
-CAMSHIFT原理
-
-https://wenku.baidu.com/view/59596ac42cc58bd63186bd37.html
-
-Camshift算法原理
-
-## Optical flow
-
-http://www.cnblogs.com/walccott/p/4956858.html
-
-Horn-Schunck光流法
-
-http://blog.csdn.net/u014568921/article/details/46638557
-
-目标跟踪之Lukas-Kanade光流法
-
-http://blog.csdn.net/zouxy09/article/details/8683859
-
-光流Optical Flow介绍与OpenCV实现
-
-http://www.cnblogs.com/gnuhpc/archive/2012/12/04/2802124.html
-
-Lucas–Kanade光流算法
-
-http://www.cnblogs.com/dzyBK/p/5096860.html
-
-光流算法：Brox算法
-
-http://www.cnblogs.com/quarryman/p/optical_flow.html
-
-图像分析之光流之经典
-
-https://zhuanlan.zhihu.com/p/31726032
-
-走进光流的世界
-
-## Particle filter
-
-http://www.cvvision.cn/6002.html
-
-基于粒子滤波器的目标跟踪算法及实现
-
-http://www.cnblogs.com/zjb0823/p/3806333.html
-
-运动目标跟踪算法综述
-
-https://wenku.baidu.com/view/6554ba7402768e9951e73864.html
-
-基于粒子滤波的视频目标追踪
-
-http://www.cnblogs.com/feisky/archive/2009/11/10/1600086.html
-
-粒子滤波概述
-
-http://www.cnblogs.com/yangyangcv/archive/2010/05/23/1742263.html
-
-基于粒子滤波的物体跟踪
-
-https://www.zhihu.com/question/25371476
-
-怎样从实际场景上理解粒子滤波（Particle Filter）？
-
-http://freemind.pluskid.org/machine-learning/hmm-kalman-particle-filtering
-
-漫谈HMM：Kalman/Particle Filtering
-
-## TLD
-
-http://blog.csdn.net/zouxy09/article/details/7893011
-
-TLD（Tracking-Learning-Detection）学习与源码理解系列文章
-
-http://blog.csdn.net/carson2005/article/details/7647500
-
-比微软kinect更强的视频跟踪算法--TLD跟踪算法介绍
-
-http://www.cnblogs.com/lxy2017/p/3927456.html
-
-TLD（Tracking-Learning-Detection）一种目标跟踪算法
-
-# 经典人脸识别算法
-
-## Eigenface
-
-Eigenface是M. Turk和A. Pentland于1991年提出的人脸识别算法。
-
->Matthew A. Turk，Virginia Tech本科（1982）+CMU硕士（1984）+MIT博士（1991）。UCSB教授。
-
->Alex Paul "Sandy" Pentland，1952年生，MIT博士（1982）。MIT教授。
-
-论文：
-
-《Face recognition using eigenfaces》
-
-### 计算Eigenface
-
-**Step 1**：假设有M张训练照片$$I_1,\dots,I_M$$，每张照片的尺寸为NxN，将照片$$I_i$$转换成1维vector $$\Gamma_i$$。显然，$$\Gamma_i$$的大小是$$N^2$$。
-
-**Step 2**：计算均值vector $$\Psi$$（也就是常说的平均脸（average face/mean face））：
-
-$$\Psi=\frac{1}{M}\sum_{i=1}^M\Gamma_i$$
-
-**Step 3**：计算图片与均值的差：
-
-$$\Phi_i=\Gamma_i-\Psi$$
-
-**Step 4**：计算协方差矩阵：
-
-$$C=\frac{1}{M}\sum_{n=1}^M\Phi_n \Phi_n^T=AA^T(N^2\times N^2 \text{matrix})$$
-
-**Step 5**：计算的$$AA^T$$特征向量$$u_i$$。然而，$$AA^T$$太大了，我们只能退而求其次计算$$A^TA(M\times M \text{matrix})$$的特征向量$$v_i$$。
-
-那么$$u_i$$和$$v_i$$到底有什么关系呢？我们首先根据特征向量的定义，给出下式：
-
-$$A^TAv_i=\mu_iv_i$$
-
-其中，$$\mu_i$$是$$A^TA$$的特征值。
-
-$$A^TAv_i=\mu_iv_i\Rightarrow AA^TAv_i=\mu_iAv_i\Rightarrow CAv_i=\mu_iAv_i$$
-
-令$$u_i=Av_i$$，则：
-
-$$Cu_i=\mu_iu_i$$
-
-可见$$\mu_i$$同时也是$$AA^T$$的特征值，而对应的特征向量则是$$Av_i$$。
-
-实际上，$$A^TA$$的M个特征值，就是$$AA^T$$的前M大的特征值。
-
-**Step 6**：从中选出K个最大的特征向量供后续使用。
-
-### 使用Eigenface
-
-**Step 1**：给定图片$$\Gamma$$，计算：
-
-$$\Phi=\Gamma-\Psi$$
-
-**Step 2**：将$$\Phi$$映射到K维特征向量空间：
-
-$$\Omega=[w_1,\dots,w_K]^T$$
-
-**Step 3**：计算与图片l的距离：
-
-$$e_r=\|\Omega-\Omega^l\|$$
-
-当$$e_r<T_r$$时，就认为是同一张人脸。
-
-这里的距离可以是欧氏距离，但作者指出使用马式距离效果更佳。
-
-综上，**Eigenface实际上就是PCA在人脸识别上的应用。**
-
-### Eigenface的缺点
+## Eigenface的缺点
 
 1.训练图片中人脸需要对齐，且图片大小一致。
 
 2.Eigenface对于大数据集的计算效率不佳。在Eigenface出现的年代，数字图片尚不多见，因此，数据集普遍较小。但现在即便是mini数据集也动辄上万张图片，甚至$$M>N^2$$的情况也不罕见。而对超大矩阵进行SVD分解，是个很吃计算量的事情，这也限制了Eigenface的应用。
 
-### 参考
+## 参考
 
 http://blog.csdn.net/smartempire/article/details/21406005
 
@@ -204,17 +26,84 @@ http://www.cnblogs.com/little-monkey/p/8118938.html
 
 人脸识别算法——EigenFace、FisherFace、LBPH
 
-## Local Binary Patterns
+# LBP
 
-LBP算法是Matti Kalevi Pietikäinen于1994年提出的方法，后来被用到了人脸识别领域。
+LBP（Local Binary Patterns）算法是Matti Kalevi Pietikäinen于1994年提出的方法，后来被用到了人脸识别领域。
 
 >Matti Kalevi Pietikäinen，University of Oulu博士（1982）、教授。
+
+>Timo Ojala，Pietikäinen的博士生。现亦为University of Oulu教授。
 
 论文：
 
 《Face Recognition with Local Binary Patterns》
 
-参考：
+## LBP特征提取
+
+最初的LBP是定义在像素3x3邻域内的，以邻域中心像素为阈值，将相邻的8个像素的灰度值与其进行比较，若周围像素值大于中心像素值，则该像素点的位置被标记为1，否则为0。这样，3x3邻域内的8个点经比较可产生8位二进制数（通常转换为十进制数即LBP码，共256种），即得到该邻域中心像素点的LBP值，并用这个值来反映该区域的纹理信息。如下图所示：
+
+![](/images/img2/LBP.png)
+
+即：
+
+$$LBP(x_c,y_c)=\sum_{p=0}^{P-1}2^ps(i_p-i_c)$$
+
+其中，c表示中心元素，p表示领域内的其它元素。
+
+$$s(x)=\begin{cases}
+1, & \text{if  } x \ge 0 \\
+0, & \text{else} \\
+\end{cases}$$
+
+## 圆形LBP算子
+
+基本的LBP算子的最大缺陷在于它只覆盖了一个固定半径范围内的小区域，这显然不能满足不同尺寸和频率纹理的需要。为了适应不同尺度的纹理特征，并达到灰度和旋转不变性的要求，Ojala等对LBP算子进行了改进，将3x3邻域扩展到任意邻域，并用圆形邻域代替了正方形邻域，改进后的LBP算子允许在半径为R的圆形邻域内有任意多个像素点。从而得到了诸如半径为R的圆形区域内含有P个采样点的LBP算子。比如下图定了一个5x5的邻域：
+
+![](/images/img2/LBP_2.png)
+
+上图内有八个黑色的采样点，每个采样点的值可以通过下式计算：
+
+$$x_p=x_c+R\cos(\frac{2\pi p}{P})\\
+y_p=y_c-R\sin(\frac{2\pi p}{P})$$
+
+通过上式可以计算任意个采样点的坐标，但是计算得到的坐标未必完全是整数，所以可以通过双线性插值来得到该采样点的像素值：
+
+$$f(x,y)\approx \begin{bmatrix}
+1-x & x \\
+\end{bmatrix}
+\begin{bmatrix}
+f(0,0) & f(0,1) \\
+f(1,0) & f(1,1) \\
+\end{bmatrix}
+\begin{bmatrix}
+1-y \\ y \\
+\end{bmatrix}$$
+
+## LBP等价模式
+
+一个LBP算子可以产生不同的二进制模式，对于半径为R的圆形区域内含有P个采样点的LBP算子将会产生$$2^p$$种模式。很显然，随着邻域集内采样点数的增加，二进制模式的种类是急剧增加的。例如：5×5邻域内20个采样点，有$$$$＝1,048,576种二进制模式。如此多的二值模式无论对于纹理的提取还是对于纹理的识别、分类及信息的存取都是不利的。
+
+同时，过多的模式种类对于纹理的表达是不利的。例如，将LBP算子用于纹理分类或人脸识别时，常采用LBP模式的统计直方图来表达图像的信息，而较多的模式种类将使得数据量过大，且直方图过于稀疏。因此，需要对原始的LBP模式进行降维，使得数据量减少的情况下能最好的代表图像的信息。
+
+为了解决二进制模式过多的问题，提高统计性，Ojala提出了采用一种“等价模式”（Uniform Pattern）来对LBP算子的模式种类进行降维。Ojala等认为，在实际图像中，绝大多数LBP模式最多只包含两次从1到0或从0到1的跳变。因此，Ojala将“等价模式”定义为：当某个LBP所对应的循环二进制数从0到1或从1到0最多有两次跳变时，该LBP所对应的二进制就称为一个等价模式类。如00000000（0次跳变），00000111（只含一次从0到1的跳变），10001111（先由1跳到0，再由0跳到1，共两次跳变）都是等价模式类。除等价模式类以外的模式都归为另一类，称为混合模式类。
+
+通过这样的改进，二进制模式的种类大大减少，而不会丢失任何信息。模式数量由原来的$$2^p$$种减少为$$p(p-1)+2$$种。这种丢掉2次以上跳变信息的方法，实际上就是一种**高频滤波**。
+
+## LBP特征匹配
+
+如果将以上得到的LBP值直接用于人脸识别，其实和不提取LBP特征没什么区别，会造成计算量准确率等一系列问题。我们可以将一副人脸图像分为7x7的子区域，并在子区域内根据LBP值统计其直方图，以直方图作为其判别特征。这样做的好处是在一定范围内避免图像没完全对准的情况，同时也对LBP特征做了降维处理。
+
+对于得到的直方图特征，有多种方法可以判别其相似性。常见的有Histogram intersection和Chi square statistic。
+
+## Histogram intersection
+
+
+
+## Chi square statistic
+
+
+
+## 参考
 
 http://blog.csdn.net/smartempire/article/details/23249517
 
@@ -228,13 +117,13 @@ https://mp.weixin.qq.com/s/iFlnZ8z5baUdWCZxIGkq5g
 
 机器学习实战——LBP特征提取
 
-## Fisherface
+# Fisherface
 
 http://blog.csdn.net/smartempire/article/details/23377385
 
 Fisherface（LDA）
 
-## Viola-Jones
+# Viola-Jones
 
 >Paul Viola，MIT本科（1988）+博士（1995）。先后在微软、Amazon担任研究员。
 
@@ -251,116 +140,4 @@ http://c.blog.sina.com.cn/profile.php?blogid=ab0aa22c890006v0
 http://www.cnblogs.com/hrlnw/archive/2013/10/23/3374707.html
 
 Viola Jones Face Detector
-
-# 压缩感知
-
-http://blog.csdn.net/abcjennifer/article/details/7721834
-
-初识压缩感知Compressive Sensing
-
-http://blog.csdn.net/abcjennifer/article/details/7724360
-
-中国压缩传感资源（China Compressive Sensing Resources）
-
-http://blog.csdn.net/xiahouzuoxin/article/details/38820925
-
-白话压缩感知（含Matlab代码）
-
-http://blog.csdn.net/abcjennifer/article/details/7748833
-
-压缩感知进阶——有关稀疏矩阵
-
-# 元胞自动机
-
-http://www.doc88.com/p-8939046003005.html
-
-元胞自动机理论及其在计算机仿真模拟中的应用
-
-http://blog.csdn.net/chl033/article/details/5367861
-
-元胞自动机与相关理论和方法
-
-http://blog.csdn.net/deepfuture/article/details/5065284
-
-元胞自动机
-
-http://www.cnblogs.com/Firefly727/articles/1856328.html
-
-元胞自动机
-
-# 聚类
-
-https://mp.weixin.qq.com/s/xGPiaXTnQad3RcMwIELP4w
-
-流式聚类算法
-
-https://wenku.baidu.com/view/4169e77f27284b73f2425047.html
-
-层次聚类
-
-https://mp.weixin.qq.com/s/uSHLJKB0knVcCY759Ul25w
-
-什么是聚类和降维？
-
-https://mp.weixin.qq.com/s/ORLOOhufrInyPdS6fbywOw
-
-深入浅出——基于密度的聚类方法
-
-https://mp.weixin.qq.com/s/Vi4Yb8TOJydj9yL078iNHw
-
-BIRCH层次聚类详解
-
-https://mp.weixin.qq.com/s/_5A3DuVyN6aE9n5OEc19kA
-
-数据科学家必须了解的六大聚类算法：带你发现数据之美
-
-https://mp.weixin.qq.com/s/pDiZt4ydWw-4cYeE4gpjiw
-
-数据科学家需要了解的5大聚类算法
-
-https://www.zhihu.com/question/34554321
-
-用于数据挖掘的聚类算法有哪些，各有何优势？
-
-# 可视化
-
-![](/images/img2/data_visual.png)
-
-https://mp.weixin.qq.com/s/Ul6Qg2ylCgvDfJTQre4DWQ
-
-2017年数据可视化的七大趋势
-
-https://mp.weixin.qq.com/s/i2Ex8Zmu2ZzHPcoPr-1Rlw
-
-太阳系相关图，教你优雅的打开“可视化”的大门
-
-https://mp.weixin.qq.com/s/q5mPN_rt1Af5L2fnxuTdCA
-
-46款数据可视化分析工具大集合
-
-https://mp.weixin.qq.com/s/tHNd6y2v7GXN2mSIv0qXlg
-
-手把手：一张图看清编程语言发展史，你也能用Python画出来！
-
-https://mp.weixin.qq.com/s/mD732PqDtqYdFZSxZWtvvg
-
-从1维到6维，一文读懂多维数据可视化策略
-
-## howmuch.net
-
-howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：
-
-![](/images/article/top_10_company.jpg)
-
-网址：
-
-https://howmuch.net/
-
-## Gephi
-
-Gephi是一个针对图和网络的可视化工具。
-
-官网：
-
-https://gephi.org/
 

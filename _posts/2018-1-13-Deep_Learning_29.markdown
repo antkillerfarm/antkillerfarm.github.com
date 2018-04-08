@@ -120,6 +120,10 @@ https://kexue.fm/archives/5332
 
 基于CNN和VAE的作诗机器人：随机成诗
 
+https://kexue.fm/archives/5383
+
+变分自编码器：这样做为什么能成？
+
 # RBM & DBN & Deep Autoencoder
 
 ## RBM

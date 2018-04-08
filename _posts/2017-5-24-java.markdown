@@ -197,6 +197,14 @@ https://mp.weixin.qq.com/s/F5jCHDzgj1YSJBGrEi-RfA
 
 JavaScript性能优化的小知识总结
 
+https://mp.weixin.qq.com/s/WS1hQN5SmK5uavT_0fbrkg
+
+一文说透为什么JavaScript最牛逼
+
+https://mp.weixin.qq.com/s/OwJ2gBWvmj8rJ_vW5nzaPA
+
+10个免费好用功能强大的网页动画效果库
+
 # Scala
 
 官网：

@@ -176,6 +176,10 @@ https://mp.weixin.qq.com/s/0v57oHMEDcJuUivs8D5pnQ
 
 善于单挑却难以协作，构建多智能体AI系统为何如此之难？
 
+https://simoninithomas.github.io/Deep_reinforcement_learning_Course/
+
+老外写的简易深度强化学习入门
+
 # 模型压缩
 
 对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。

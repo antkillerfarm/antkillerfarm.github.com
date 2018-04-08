@@ -188,6 +188,12 @@ https://mp.weixin.qq.com/s/DuFvVmcyazyUYxyoekh38w
 
 邓侃解读：深度学习病历分析前沿进展
 
+https://mp.weixin.qq.com/s/QB5d6HwAcT7DiVQbmoD8qg
+
+AI研发新药真有那么神？可能哈佛、斯坦福和阿斯利康实验室都在吹牛
+
+>医药方面的AI应用，也是AI的一个潜在的应用领域。这篇文章敢把各个大学鄙视一番，还是有些干货的。
+
 ## 图结构
 
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
@@ -213,6 +219,16 @@ https://mp.weixin.qq.com/s/bMpugd2Lp35VPr8fQAPzsg
 https://zhuanlan.zhihu.com/p/31067515
 
 《Semi-Supervised Classification with Graph Convolutional Networks》阅读笔记
+
+# 元学习
+
+https://mp.weixin.qq.com/s/KKK3VEpwL90g6Aro8qtXxQ
+
+学习如何学习的算法：简述元学习研究方向现状
+
+https://mp.weixin.qq.com/s/KtO3OTZ-bZ6m0ZSI6jTyjw
+
+OpenAI提出Reptile：可扩展的元学习算法
 
 # DL参考资源
 
@@ -383,12 +399,6 @@ https://mp.weixin.qq.com/s/PF6-txnq3SV258EfNVufSw
 https://mp.weixin.qq.com/s/yQG0983RjQHIkt9oBlkDqQ
 
 瞎谈CNN：通过优化求解输入图像
-
-https://mp.weixin.qq.com/s/QB5d6HwAcT7DiVQbmoD8qg
-
-AI研发新药真有那么神？可能哈佛、斯坦福和阿斯利康实验室都在吹牛
-
->医药方面的AI应用，也是AI的一个潜在的应用领域。这篇文章敢把各个大学鄙视一番，还是有些干货的。
 
 https://mp.weixin.qq.com/s/iZZHmxGFHQHk1rlzMzDQcg
 

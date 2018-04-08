@@ -113,6 +113,14 @@ https://mp.weixin.qq.com/s/fZUiAjhSg1pESsVspqaCFQ
 
 胶囊网络是如何克服卷积神经网络的这些缺点的？
 
+https://mp.weixin.qq.com/s/x7SIa4NAczTHcWs6nxP9NQ
+
+胶囊网络（Capsule Network）在文本分类中的探索
+
+https://mp.weixin.qq.com/s/HbqmdaxIQrQc7vDgiExtrw
+
+可视化CapsNet，详解Hinton等人提出的胶囊概念与原理
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：

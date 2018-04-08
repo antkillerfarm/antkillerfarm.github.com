@@ -186,6 +186,14 @@ https://mp.weixin.qq.com/s/qhqCqHo9xGr_Tc-2bnS4mw
 
 用数学方程和不等式创作艺术
 
+## 金融模型
+
+Capital asset pricing model
+
+Fama–French three-factor model
+
+Carhart four-factor model
+
 # LSTM在Audio上的应用实例
 
 最近，领导布置寻找一些LSTM在Audio上的实例，所以特地搜集了一下。
