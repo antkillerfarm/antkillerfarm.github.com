@@ -24,7 +24,19 @@ GBDT属于集成学习（Ensemble Learning）的范畴。集成学习的思路�
 
 **并行算法**：若干个不同的分类器同时分类，选择票数多的分类结果。这类算法包括bagging和随机森林等。
 
-**串行算法**：使用同种或不同的分类器，不断迭代。每次迭代的目标是缩小残差或者提高预测错误项的权重。这类算法包括Adaboost和GBDT等。
+**串行算法**：使用同种或不同的分类器，不断迭代。每次迭代的目标是缩小残差或者提高预测错误项的权重。这类算法包括Adaboost和GBDT等各种Boosting算法。
+
+这些Boosting算法的差异在于：
+
+1）如何计算学习误差率e?
+
+2) 如何得到弱学习器权重系数$$\alpha$$?
+
+3）如何更新样本权重D?
+
+4) 使用何种结合策略？
+
+只要是Boosting家族的算法，都要解决这4个问题。
 
 GBDT写的比较好的，有以下blog：
 
@@ -78,14 +90,6 @@ https://mp.weixin.qq.com/s/LC41Mk7Sjm30qr1KXsZd8Q
 
 机器学习利器——决策树和随机森林！
 
-https://mp.weixin.qq.com/s/PZ-1fkNvdJmv_8zLbvoW1g
-
-Adaboost算法原理小结
-
-https://mp.weixin.qq.com/s/KoOUgwXLOfJfOjWhbFX52Q
-
-如果Boosting你懂，那Adaboost你懂么？
-
 https://mp.weixin.qq.com/s/3yVosp2Kgp8cUyYWw_ULvw
 
 如何解读决策树和随机森林的内部工作机制？
@@ -122,10 +126,6 @@ https://mp.weixin.qq.com/s/I5AXiHrN02zpyhF85Ze-jg
 
 从零开始学习Gradient Boosting算法
 
-https://mp.weixin.qq.com/s/Joz2FpGgBY0tC8lpoFz8Mw
-
-AdaBoost元算法如何提高分类性能——机器学习实战
-
 https://mp.weixin.qq.com/s/6X27b97X_7OOOSijqAau9g
 
 随机森林（Random Forest）
@@ -145,10 +145,6 @@ https://mp.weixin.qq.com/s/epHGb0dq9mX6O4PGw3x8aA
 https://mp.weixin.qq.com/s/EXOqekYaKpGHGSFOH_gxfA
 
 “神经网络”能否代替“决策树算法”？
-
-https://mp.weixin.qq.com/s/G06VDc6iTwmNGsH4IfSeJQ
-
-Adaboost从原理到实现
 
 # 关联规则挖掘
 

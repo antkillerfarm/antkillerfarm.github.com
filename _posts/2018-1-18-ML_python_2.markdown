@@ -188,6 +188,14 @@ https://mp.weixin.qq.com/s/lfkTryraR22INdPzR0sidg
 
 基于协同过滤的推荐系统实战
 
+https://mp.weixin.qq.com/s/n3gaWuJCt945ycmliJatpA
+
+python语音识别指南终极版
+
+https://mp.weixin.qq.com/s/pDTbiS8xFH0llUBaN1Mb_Q
+
+算法应用实践：如何用Python写一个贪吃蛇AI
+
 # 推荐系统的工程细节
 
 推荐系统不仅是算法，还包括若干工程细节。这些细节虽然不算复杂，够不上算法的层面，然而对产品的成败，却有举足轻重的作用。

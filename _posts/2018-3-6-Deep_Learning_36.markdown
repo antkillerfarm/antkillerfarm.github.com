@@ -180,6 +180,14 @@ https://mp.weixin.qq.com/s/9nGjIgwzGG2sXvEzvYEptQ
 
 基于“翻译”的推荐系统方案，加州大学圣地亚哥分校最新工作
 
+https://mp.weixin.qq.com/s/Qupo61cnuO_10sVpRe-wQA
+
+DKN:基于深度知识感知的新闻推荐网络
+
+https://mp.weixin.qq.com/s/9xw-FwWEK9VI2wNzc8EhPA
+
+阿里盖坤：解读阿里深度学习实践，CTR 预估、MLR 模型、兴趣分布网络等
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512
@@ -335,6 +343,10 @@ http://mp.weixin.qq.com/s/n8C80a3B54FhrCe-GhhcDA
 https://mp.weixin.qq.com/s/MYhQt9uC16BadiZKWjPTzA
 
 华中科技大学提出多向文本检测方法：基于角定位与区域分割
+
+http://ilovin.me/2017-04-23/tensorflow-lstm-ctc-input-output/
+
+tensorflow LSTM+CTC/warpCTC使用详解
 
 # CRNN
 

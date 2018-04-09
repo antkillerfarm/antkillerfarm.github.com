@@ -216,6 +216,10 @@ https://zhuanlan.zhihu.com/p/35103140
 
 “传说中”的异步电路能否在AI芯片界异军突起？
 
+https://mp.weixin.qq.com/s/DnurlGgd5q4Fwjxy3YnIrQ
+
+当数据库遇见FPGA：X-DB异构计算如何实现百万级TPS？
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293

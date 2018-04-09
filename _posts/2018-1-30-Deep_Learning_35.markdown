@@ -256,6 +256,10 @@ https://mp.weixin.qq.com/s/x_9klKK_hIiFV1fGhxZIVA
 
 Mask R-CNN神应用：像英剧《黑镜》一样屏蔽人像
 
+https://mp.weixin.qq.com/s/V6m1xBS2vZQ6VRlAg5zOSA
+
+干掉照片中那些讨厌的家伙！Mask R-CNN助你一键“除”人！
+
 # 手势识别
 
 https://zhuanlan.zhihu.com/p/26630215

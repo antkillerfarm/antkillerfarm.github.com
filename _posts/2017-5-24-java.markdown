@@ -116,6 +116,12 @@ https://scratch.mit.edu/
 
 `sudo apt install scratch`
 
+参考：
+
+https://mp.weixin.qq.com/s/HzbegP_NIowUwRoeDne5Vw
+
+适合小朋友的Scratch动手项目！AI在生活中的19个应用
+
 ## Squeak
 
 Squeak是一个是一个现代的，开源的，功能齐全的Smalltalk程序设计语言和执行环境。适合9岁以上的儿童。

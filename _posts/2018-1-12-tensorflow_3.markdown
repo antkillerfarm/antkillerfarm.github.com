@@ -140,10 +140,6 @@ https://mp.weixin.qq.com/s/kw3BYTXdyhnIyVZrnQuPew
 
 # DL参考资源
 
-https://mp.weixin.qq.com/s/75xrjqzW0S1TgAfTyvccdw
-
-如何用深度学习将前端设计模型自动转换为代码？
-
 https://mp.weixin.qq.com/s/LTtcD5CBT8m127thjBaRsw
 
 DeepMind提出神经元删除法：通过理解每个神经元来理解深度学习
@@ -228,4 +224,7 @@ https://mp.weixin.qq.com/s/D0n3xY0k25d6Ouf4mCi7Nw
 
 让AI识别语义空间关系：斯坦福大学李飞飞组提出“参考关系模型”
 
+https://mp.weixin.qq.com/s/_P-4hhd7QiOwrR_uBCPbZg
+
+脑洞大开的机器视觉多领域学习模型结构
 

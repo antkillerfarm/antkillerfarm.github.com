@@ -1,10 +1,22 @@
 ---
 layout: post
-title:  深度学习（二十四）——CTC
+title:  深度学习（二十四）——语音识别, CTC
 category: DL 
 ---
 
-# 语音识别（续）
+# 语音识别
+
+## 书籍
+
+《Speech and Language Processing: An introduction to natural language processing, computational linguistics, and speech recognition》，Daniel Jurafsky & James H. Martin著。
+
+>Daniel Jurafsky，1962年生，UCB本科（1983）+博士（1992）。斯坦福大学教授。   
+>个人主页：   
+>https://web.stanford.edu/~jurafsky/
+
+>James H. Martin，哥伦比亚大学本科+UCB博士。University of Colorado Boulder教授。   
+>个人主页：   
+>http://www.cs.colorado.edu/~martin/
 
 ## 传统方法
 

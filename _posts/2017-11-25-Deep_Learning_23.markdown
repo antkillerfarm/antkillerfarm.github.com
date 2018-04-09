@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十三）——Fast Image Processing, SVDF, LCNN, LSTM进阶, 语音识别
+title:  深度学习（二十三）——Fast Image Processing, SVDF, LCNN, LSTM进阶
 category: DL 
 ---
 
@@ -308,18 +308,7 @@ https://mp.weixin.qq.com/s/eeA5RZh35BvlFt45ywVvFg
 
 可视化LSTM网络：探索“记忆”的形成
 
-# 语音识别
+https://mp.weixin.qq.com/s/h-MYTNTLy7ToPPEZ2JVHpw
 
-## 书籍
-
-《Speech and Language Processing: An introduction to natural language processing, computational linguistics, and speech recognition》，Daniel Jurafsky & James H. Martin著。
-
->Daniel Jurafsky，1962年生，UCB本科（1983）+博士（1992）。斯坦福大学教授。   
->个人主页：   
->https://web.stanford.edu/~jurafsky/
-
->James H. Martin，哥伦比亚大学本科+UCB博士。University of Colorado Boulder教授。   
->个人主页：   
->http://www.cs.colorado.edu/~martin/
-
+阿里巴巴论文提出Advanced LSTM：关于更优时间依赖性刻画在情感识别方面的应用
 

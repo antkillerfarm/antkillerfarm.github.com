@@ -204,11 +204,23 @@ https://github.com/pandeydivesh15/AVSR-Deep-Speech
 
 https://github.com/sdhayalk/TensorFlow_Speech_Recognition_Challenge
 
-TensorFlow提供的Speech Commands Datasets：
-
 http://download.tensorflow.org/data/speech_commands_v0.01.tar.gz
 
-TIMIT数据集（收费）：
+TensorFlow提供的Speech Commands Datasets
 
 https://catalog.ldc.upenn.edu/LDC93S1
+
+TIMIT数据集（收费）
+
+http://spandh.dcs.shef.ac.uk/chime_challenge/chime2016/
+
+CHiMe – Computational Hearing in Multisource Environments-国际多通道语音分离和识别大赛
+
+https://github.com/petewarden/extract_loudest_section
+
+抽取一段wav文件中声音最大的那部分
+
+https://www.kaggle.com/davids1992/speech-representation-and-data-exploration/notebook
+
+包含对Speech Commands Datasets的数据处理过程的blog
 

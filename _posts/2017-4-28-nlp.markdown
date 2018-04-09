@@ -442,3 +442,7 @@ https://github.com/plison/opendial
 https://github.com/zhangziliang04/OpendialEx
 
 某牛的Opendial
+
+https://github.com/dingdang-robot/dingdang-robot
+
+叮当是一款可以工作在Raspberry Pi上的中文语音对话机器人/智能音箱项目。

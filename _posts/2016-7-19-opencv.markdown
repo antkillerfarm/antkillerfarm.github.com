@@ -290,6 +290,10 @@ https://mp.weixin.qq.com/s/95hftpJfSDIMlMVOC7iq4g
 
 OpenCV中使用YOLO对象检测
 
+https://zhuanlan.zhihu.com/p/35390012
+
+OpenCV实战：人脸关键点检测（FaceMark）
+
 # GNU Octave
 
 GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。
