@@ -294,6 +294,10 @@ https://zhuanlan.zhihu.com/p/35390012
 
 OpenCV实战：人脸关键点检测（FaceMark）
 
+https://mp.weixin.qq.com/s/g5MM-pXOAuY7HaBUik9POg
+
+Android平台上OpenCV深度网络实现对象检测
+
 # GNU Octave
 
 GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。

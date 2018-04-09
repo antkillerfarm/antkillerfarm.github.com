@@ -1,12 +1,26 @@
 ---
 layout: post
-title:  深度学习（二十五）——Deep Speech, WaveNet, L2 Normalization
+title:  深度学习（二十五）——Deep Speech, WaveNet
 category: DL 
 ---
 
-# CTC
+# CTC（续）
 
-## 算法推导（续）
+## 算法推导
+
+为了推导CTC对齐的具体形式，我们首先考虑一种初级的做法：假设输入长度为6，Y=[c,a,t]，对齐X和Y的一种方法是将输出字符分配给每个输入步骤并折叠重复的部分。
+
+这种方法存在两个问题：
+
+1.通常，强制每个输入步骤与某些输出对齐是没有意义的。例如在语音识别中，输入可以具有无声的延伸，但没有相应的输出。
+
+2.我们没有办法产生连续多个字符的输出。考虑这个对齐[h，h，e，l，l，l，o]，折叠重复将产生“helo”而不是“hello”。
+
+为了解决这些问题，CTC为一组允许的输出引入了一个新的标记。 这个新的标记有时被称为空白标记。 我们在这里将其称为$$\epsilon$$，$$\epsilon$$标记不对应任何东西，可以从输出中移除。
+
+CTC允许的对齐是与输入的长度相同。 在合并重复并移除ε标记后，我们允许任何映射到Y的对齐方式。
+
+如果Y在同一行中有两个相同的字符，那么一个有效的对齐必须在它们之间有一个$$\epsilon$$。 有了这个规则，我们就可以区分崩“hello”和“helo”。
 
 CTC对齐有一些显著的特性：
 
@@ -292,26 +306,4 @@ http://mp.weixin.qq.com/s/0Xg_acbGG3pTIgsRQKJjrQ
 https://mp.weixin.qq.com/s/u1UnAuGllcWn8Ik5wDPY6w
 
 可视化语音分析：深度对比Wavenet、t-SNE和PCA等算法
-
-# L2 Normalization
-
-L2 Normalization本身并不复杂，然而多数资料都只提到1维的L2 Normalization的计算公式：
-
-$$x=[x_1,x_2,\dots,x_d]\\
-y=[y_1,y_2,\dots,y_d]\\
-y=\frac{x}{\sqrt{\sum_{i=1}^dx_i^2}}=\frac{x}{\sqrt{x^Tx}}
-$$
-
-对于多维L2 Normalization几乎未曾提及，这里以3维tensor：A[width, height, channel]为例介绍一下多维L2 Normalization的计算方法。
-
-多维L2 Normalization有一个叫axis(有时也叫dim)的参数，如果axis=0的话，实际上就是将整个tensor flatten之后，再L2 Normalization。这个是比较简单的。
-
-这里说说axis=3的情况。axis=3意味着对channel进行Normalization，也就是：
-
-$$B_{xy}=\sum_{z=0}^Z \sqrt{A_{xyz}^2}\\
-C_{xyz}=\frac{A_{xyz}}{B_{xy}}\\
-D_{xyz}=C_{xyz} \cdot S_{xy}
-$$
-
-一般来说，求出C被称作L2 Normalization，而求出D被称作L2 Scale Normalization，S被称为Scale。
 

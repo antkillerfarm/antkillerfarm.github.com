@@ -60,6 +60,28 @@ Hidden Markov Model Toolkit是另一个语音识别的工具包。官网：
 
 http://htk.eng.cam.ac.uk/
 
+## CMU Sphinx
+
+CMU Sphinx是李开复的博士课题项目，后来成为了CMU的长期项目。洪小文、黄学东也先后参与过。
+
+>李开复，1961年生，Columbia University本科（1983）+CMU博士（1988）。先后供职于Apple、SGI、Microsoft、Google。现为创新工场董事长。
+
+>洪小文，1963年生，台湾大学本科+CMU博士。先后供职于Apple、Microsoft，现为微软亚洲研究院院长。
+
+>黄学东，1962年生，湖南大学本科（1982）+清华大学硕士（1984）+University of Edinburgh博士（1989）。现为微软首席语音科学家。
+
+>Raj Reddy，1937年生，印度裔美国计算机科学家。印度University of Madras本科（1958）+澳大利亚University of New South Wales硕士（1960）+Stanford University博士。CMU教授，首位亚裔图灵奖得主（1994）。   
+>他还是印度Rajiv Gandhi University of Knowledge Technologies创始人和International Institute of Information Technology, Hyderabad主席。   
+>他是李开复、洪小文的博士导师，黄学东的博士后导师。
+
+官网：
+
+https://cmusphinx.github.io/
+
+注意：还有一个类似Elasticsearch的文本搜索引擎也叫Sphinx。它的官网是：
+
+http://sphinxsearch.com/
+
 ## WFST
 
 Weighted-Finite-State-Transducer
@@ -316,20 +338,4 @@ CTC算法可以克服这些挑战。对于一个给定的X，它给我们一个�
 **推理**：在我们训练好模型后，我们希望使用它来推断给定X的最可能的Y。即：
 
 $$Y^*=\mathop{\text{argmax}}_{Y} p(Y \mid X)$$
-
-## 算法推导
-
-为了推导CTC对齐的具体形式，我们首先考虑一种初级的做法：假设输入长度为6，Y=[c,a,t]，对齐X和Y的一种方法是将输出字符分配给每个输入步骤并折叠重复的部分。
-
-这种方法存在两个问题：
-
-1.通常，强制每个输入步骤与某些输出对齐是没有意义的。例如在语音识别中，输入可以具有无声的延伸，但没有相应的输出。
-
-2.我们没有办法产生连续多个字符的输出。考虑这个对齐[h，h，e，l，l，l，o]，折叠重复将产生“helo”而不是“hello”。
-
-为了解决这些问题，CTC为一组允许的输出引入了一个新的标记。 这个新的标记有时被称为空白标记。 我们在这里将其称为$$\epsilon$$，$$\epsilon$$标记不对应任何东西，可以从输出中移除。
-
-CTC允许的对齐是与输入的长度相同。 在合并重复并移除ε标记后，我们允许任何映射到Y的对齐方式。
-
-如果Y在同一行中有两个相同的字符，那么一个有效的对齐必须在它们之间有一个$$\epsilon$$。 有了这个规则，我们就可以区分崩“hello”和“helo”。
 
