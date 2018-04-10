@@ -232,3 +232,6 @@ https://blog.csdn.net/hadoopdevelop/article/details/79784722
 
 基于知识图谱的智能问答机器人技术架构
 
+https://mp.weixin.qq.com/s/C1kd8pD0yLu9nO9JVW1pEw
+
+复旦大学肖仰华教授：知识图谱与认知智能

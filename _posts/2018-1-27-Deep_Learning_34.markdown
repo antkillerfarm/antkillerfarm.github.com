@@ -84,6 +84,8 @@ https://102.alibaba.com/downloadFile.do?file=1517812754285/reinforcement_learnin
 
 《Asynchronous Methods for Deep Reinforcement Learning》
 
+《Deep Reinforcement Learning for Dialogue Generation》
+
 ## blog
 
 https://zhuanlan.zhihu.com/sharerl

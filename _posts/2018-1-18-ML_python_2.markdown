@@ -196,6 +196,10 @@ https://mp.weixin.qq.com/s/pDTbiS8xFH0llUBaN1Mb_Q
 
 算法应用实践：如何用Python写一个贪吃蛇AI
 
+https://mp.weixin.qq.com/s/mABDO5Sxv-Wc-gAgDQAbFQ
+
+用Python实现机器学习算法——简单的神经网络
+
 # 推荐系统的工程细节
 
 推荐系统不仅是算法，还包括若干工程细节。这些细节虽然不算复杂，够不上算法的层面，然而对产品的成败，却有举足轻重的作用。

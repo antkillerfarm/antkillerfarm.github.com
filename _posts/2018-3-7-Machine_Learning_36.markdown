@@ -1,44 +1,8 @@
 ---
 layout: post
-title:  机器学习（三十六）——Adaboost, XGBoost, LightGBM, Parameter Server, LambdaMART, NLP机器翻译常用评价度量
+title:  机器学习（三十六）——XGBoost, LightGBM, Parameter Server, LambdaMART, NLP机器翻译常用评价度量
 category: ML 
 ---
-
-# Adaboost
-
-Adaboost是Yoav Freund和Robert Schapire于1997年提出的算法。两人后来因为该算法被授予Gödel Prize（2003）。
-
->Yoav Freund，UCSC博士，UCSD教授。
-
->Robert Elias Schapire，MIT博士。先后供职于Princeton University、AT&T Labs和Microsoft Research。
-
->Gödel Prize，由欧洲计算机学会（EATCS）与美国计算机学会基础理论专业组织（ACM SIGACT）于1993年共同设立，颁给理论计算机领域最杰出的学术论文。其名称取自Kurt Gödel。
-
->Kurt Friedrich Gödel，1906～1978，奥地利逻辑学家，数学家，哲学家，后加入美国藉。维也纳大学博士（1930）。在逻辑学方面，他是继Aristotle、Gottlob Frege之后最伟大的逻辑学家。在数学方面，他以哥德尔不完备定理著称，和Bertrand Russell、 David Hilbert、Georg Cantor齐名。
-
-Adaboost既可用于分类问题，也可用于回归问题。这里仅针对二分类问题进行讨论。
-
-假设我们有数据集$$\{(x_1, y_1), \ldots, (x_N, y_N)\}$$，其中$$y_i \in \{-1, 1\}$$，还有一系列弱分类器$$\{k_1, \ldots, k_L\}$$
-
-$$C_{(m-1)}(x_i) = \alpha_1k_1(x_i) + \cdots + \alpha_{m-1}k_{m-1}(x_i)$$
-
-参考：
-
-https://mp.weixin.qq.com/s/G06VDc6iTwmNGsH4IfSeJQ
-
-Adaboost从原理到实现
-
-https://mp.weixin.qq.com/s/PZ-1fkNvdJmv_8zLbvoW1g
-
-Adaboost算法原理小结
-
-https://mp.weixin.qq.com/s/KoOUgwXLOfJfOjWhbFX52Q
-
-如果Boosting你懂，那Adaboost你懂么？
-
-https://mp.weixin.qq.com/s/Joz2FpGgBY0tC8lpoFz8Mw
-
-AdaBoost元算法如何提高分类性能——机器学习实战
 
 # XGBoost
 

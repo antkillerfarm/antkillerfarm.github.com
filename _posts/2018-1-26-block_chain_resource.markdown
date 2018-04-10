@@ -186,6 +186,10 @@ https://mp.weixin.qq.com/s/Z0oZrvzn7ktdTIQX-0KMLA
 
 手把手：用Python实现一个基于RSA算法的区块链客户端
 
+https://mp.weixin.qq.com/s/Ue9sIInRMon-CCyC-qyNsw
+
+手把手：用Python搭建一个加密货币交易模拟器，不用投钱就能玩 
+
 # CPU
 
 https://zhuanlan.zhihu.com/p/29743431

@@ -188,6 +188,10 @@ https://mp.weixin.qq.com/s/9xw-FwWEK9VI2wNzc8EhPA
 
 阿里盖坤：解读阿里深度学习实践，CTR 预估、MLR 模型、兴趣分布网络等
 
+https://zhuanlan.zhihu.com/p/35472804
+
+TransNets: Learning to Transform for Recommendation
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512
