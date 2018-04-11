@@ -129,6 +129,20 @@ Fisherface（LDA）
 
 >Michael Jones，MIT博士（1997）。现为Mitsubishi electric research laboratories研究员。
 
+论文：
+
+《Rapid Object Detection using a Boosted Cascade of Simple Features》
+
+《Robust real-time face detection》
+
+《An Extended Set of Haar-like Features for Rapid Object Detection》
+
+《Learning Multi-scale Block Local Binary Patterns for Face Recognition》
+
+《Implementing the Viola-Jones Face Detection Algorithm》
+
+参考：
+
 https://www.jianshu.com/p/024ad859c8de
 
 人脸检测的Viola-Jones方法

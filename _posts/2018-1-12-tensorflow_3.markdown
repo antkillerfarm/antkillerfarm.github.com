@@ -264,3 +264,7 @@ https://mp.weixin.qq.com/s/-4b3u02KiIt5i4Yzz-Ed3g
 
 从信息论的角度理解与可视化神经网络
 
+https://mp.weixin.qq.com/s/NJf5e25tvT_xKXLD7UY1AQ
+
+MySQL智能调度系统。这篇blog其实和MySQL关系不大，算是DL在负载均衡方面的应用吧。
+
