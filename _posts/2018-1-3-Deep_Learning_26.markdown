@@ -21,7 +21,7 @@ $$
 
 $$B_{xy}=\sum_{z=0}^Z \sqrt{A_{xyz}^2}\\
 C_{xyz}=\frac{A_{xyz}}{B_{xy}}\\
-D_{xyz}=C_{xyz} \cdot S_{xy}
+D_{xyz}=C_{xyz} \cdot S_{z}
 $$
 
 一般来说，求出C被称作L2 Normalization，而求出D被称作L2 Scale Normalization，S被称为Scale。

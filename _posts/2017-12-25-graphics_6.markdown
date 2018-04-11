@@ -97,7 +97,7 @@ f(1,0) & f(1,1) \\
 
 ## Histogram intersection
 
-
+![](/images/img2/Histogram_intersection.png)
 
 ## Chi square statistic
 

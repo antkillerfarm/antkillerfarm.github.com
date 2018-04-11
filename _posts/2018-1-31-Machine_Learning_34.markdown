@@ -262,13 +262,7 @@ laurent series
 
 Base32/Base36/Base64/Base85
 
-Reinforcement Learning and Control
-
-Linear Discriminant Analysis
-
-https://mp.weixin.qq.com/s/7Vy7l1YyBT7rMYW2i1AsuA
-
-线性判别分析(LDA)原理详解
+方差分析(Analysis of Variance，简称ANOVA)
 
 Partial Least Squares Discriminant Analysis
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Pytorch, PaddlePaddle
+title:  Pytorch, PaddlePaddle, MXNet
 category: AI 
 ---
 
@@ -148,6 +148,10 @@ https://mp.weixin.qq.com/s/_hbuk9nZaLoNSZ5AnDnELg
 
 使用PyTorch从零开始构建Elman循环神经网络
 
+https://mp.weixin.qq.com/s/FQxSYjyR1U3TIinSShnOfg
+
+从头开始了解PyTorch的简单实现
+
 # PaddlePaddle
 
 https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q
@@ -211,4 +215,9 @@ http://mp.weixin.qq.com/s/Z5X7Vamuw1BwtienhOrSvQ
 https://mp.weixin.qq.com/s/_PAzff6V9UgwLCos05B4rg
 
 十分钟从PyTorch转MXNet
+
+https://mp.weixin.qq.com/s/2ulMPGEHYkOqWhT2XY449w
+
+TensorFlow、MXNet、PaddlePaddle三个开源库对比
+
 

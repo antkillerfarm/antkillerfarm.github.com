@@ -185,3 +185,8 @@ t-SNE完整笔记
 https://yq.aliyun.com/articles/70733
 
 比PCA降维更高级——（R/Python）t-SNE聚类算法实践指南
+
+https://mp.weixin.qq.com/s/7Vy7l1YyBT7rMYW2i1AsuA
+
+线性判别分析(LDA)原理详解
+

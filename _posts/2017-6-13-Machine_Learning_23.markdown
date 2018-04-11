@@ -104,6 +104,10 @@ https://mp.weixin.qq.com/s/HYNHkk9KSxuWZEfmPXAJKA
 
 KNN简明教程
 
+https://mp.weixin.qq.com/s/7ohIh_dVfzNyt7TpBlCFYw
+
+机器学习算法KNN简介及实现
+
 # Optimizer
 
 在《机器学习（一）》中，我们已经指出梯度下降是解决凸优化问题的一般方法。而如何更有效率的梯度下降，就是本节中Optimizer的责任了。

@@ -110,9 +110,9 @@ https://mp.weixin.qq.com/s/HgXTHPGZRPEXsum-CFe3ag
 
 比特币这么火热，看看这篇比特币初学者指南
 
-https://mp.weixin.qq.com/s/LnyQDW7-Y7muYvi19LqDjA
+https://mp.weixin.qq.com/s/s_-3iwu94F3pGSDsci7TFg
 
-区块链到底是个什么？一幅漫画让你秒懂！
+漫画：什么是区块链？
 
 https://mp.weixin.qq.com/s/DZaOp0eD2GGNKvkJYVxl-Q
 

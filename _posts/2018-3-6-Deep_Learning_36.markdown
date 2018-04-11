@@ -192,6 +192,14 @@ https://zhuanlan.zhihu.com/p/35472804
 
 TransNets: Learning to Transform for Recommendation
 
+https://mp.weixin.qq.com/s/_xAB7-LxKRlH76FVsyezzQ
+
+阿里妈妈资深技术专家刘凯鹏解读基于深度学习的智能搜索营销
+
+https://mp.weixin.qq.com/s/CMZHhxAMno2GlnQCjv0BKg
+
+深度学习在CTR预估中的应用
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

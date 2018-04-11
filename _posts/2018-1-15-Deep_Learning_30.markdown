@@ -177,3 +177,8 @@ Google论文解读：轻量化卷积神经网络MobileNetV2
 https://mp.weixin.qq.com/s/7vFxmvRZuM2DqSYN7C88SA
 
 谷歌发布MobileNetV2：可做语义分割的下一代移动端计算机视觉架构
+
+https://mp.weixin.qq.com/s/lu0GHCpWCmogkmHRKnJ8zQ
+
+浅析两代MobileNet
+

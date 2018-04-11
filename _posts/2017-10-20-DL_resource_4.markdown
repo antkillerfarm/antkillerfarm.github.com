@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/KtO3OTZ-bZ6m0ZSI6jTyjw
 
 OpenAI提出Reptile：可扩展的元学习算法
 
+https://mp.weixin.qq.com/s/T4GiL9vW7ALOzWloE_QQBA
+
+OpenAI开发可拓展元学习算法Reptile，能快速学习
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/ygt31lL0mBcyRmwAlsl8Sg
@@ -395,29 +399,4 @@ https://mp.weixin.qq.com/s/PKqDlbKynnCLE6JAy0NuQQ
 https://mp.weixin.qq.com/s/PF6-txnq3SV258EfNVufSw
 
 深度学习与XGBoost在小数据集上的测评
-
-https://mp.weixin.qq.com/s/yQG0983RjQHIkt9oBlkDqQ
-
-瞎谈CNN：通过优化求解输入图像
-
-https://mp.weixin.qq.com/s/iZZHmxGFHQHk1rlzMzDQcg
-
-训练深度神经网络失败的罪魁祸首不是梯度消失，而是退化
-
-https://mp.weixin.qq.com/s/yvHZ9hVueYUKsMXcNQQzmQ
-
-深度学习会被可微分编程取代？
-
-https://mp.weixin.qq.com/s/KZhL477ApHgQfmM2xFrYJw
-
-Tensorlang：基于TensorFlow的可微编程语言
-
-https://mp.weixin.qq.com/s/ZIDiFrN3qQV4u-m9Wr3wiA
-
-斯坦福完全可解释深度神经网络：你需要用决策树搞点事
-
-https://mp.weixin.qq.com/s/M7w7tMVd23YToIW7DypYjA
-
-用DL实现Bug自动归类：微软研究院提出DBRNN-A
-
 
