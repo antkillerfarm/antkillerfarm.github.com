@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  图像处理理论（六）——LBP
+title:  图像处理理论（六）——LBP, Fisherface, Viola-Jones
 category: graphics 
 ---
 
@@ -97,11 +97,50 @@ f(1,0) & f(1,1) \\
 
 ## Histogram intersection
 
+Histogram intersection出自以下论文：
+
+《The Pyramid Match Kernel: Discriminative Classification with Sets of Image Features》
+
+>Kristen Grauman，Boston College本科（2001）+MIT硕士（2003）+MIT博士（2006），University of Texas at Austin教授，Marr Prize（2011）。导师是Trevor Darrell。   
+>绝对的美女，靠脸吃饭都没问题的那种。   
+>个人主页：   
+>http://www.cs.utexas.edu/~grauman/   
+>从她的主页来看，她手下有很多亚裔学生。还有一些在线课程，其中有部分是博士课程，只适合高手挑战。
+
+>David Courtnay Marr，1945～1980，英国神经学家和生理学家。Trinity College, Cambridge博士（1972），MIT教授。35岁死于白血病。他在神经科学，尤其是视觉方面有重大贡献。   
+>Marr Prize由International Conference on Computer Vision颁发，2年一次，是CV界的最高荣誉。何恺明是去年（2017）的新晋得主。
+
+假设图像或其他数据的特征可以构成直方图，根据直方图间距的不同可以得到多种类型的直方图：
+
+$$\Psi(x)=[H_{-1}(x),H_0(x),\dots,H_L(x)]$$
+
+H的下标每增加1,则直方图间距变为原来的两倍。$$H_{-1}$$表示每个样本都有自己的bin，而$$H_L$$表示所有的样本都在一个bin中。
+
+两个数据集的相似度可以用下式来匹配：
+
+$$K_\Delta(\Psi(y),\Psi(z))=\sum_{i=0}^Lw_iN_i$$
+
+其中，$$w_i=\frac{1}{2^i},N_i=I(H_i(y),H_i(z))-I(H_{i-1}(y),H_{i-1}(z))$$。
+
+I的计算方法如下图所示：
+
 ![](/images/img2/Histogram_intersection.png)
+
+(a)里的y和z代表两种数据分布，三幅图代表三层金字塔，每一层里有间距相等的虚线。
+
+可以看到红点蓝点的位置是固定的，但是根据直方图宽度的不同可以划到不同的直方图里，如(b)所示。
+
+(c)图就是L的计算结果，是通过(b)里两种直方图取交集得来的。
+
+>注意：这里的I表示的是交集里元素的个数（即(a)中的连线数），而不是交集的个数（即(c)中的绿条个数）。
 
 ## Chi square statistic
 
+在《数学狂想曲（五）》中，我们给出了$$\chi^2$$检验的原理和公式。这里仅对于直方图相似度给出最后的公式：
 
+$$\chi_w^2(S,M)=\sum_{i,j}w_j\frac{(S_{i,j}-M_{i,j})^2}{S_{i,j}+M_{i,j}}$$
+
+其中，i为图像的某块小区域，j为小区域内直方图的某一列的值。$$w_j$$是每块小区域的权重，比如在人脸区域中，眼睛、嘴巴等区域包含的信息量更为丰富，那么这些区域的权重就可以设置的大一些。
 
 ## 参考
 
@@ -119,11 +158,29 @@ https://mp.weixin.qq.com/s/iFlnZ8z5baUdWCZxIGkq5g
 
 # Fisherface
 
+Fisherface由Peter N. Belhumeur, Joao P. Hespanha和David J. Kriegman于1997年提出。
+
+>Peter N. Belhumeur，Brown University本科（1985）+Harvard University博士（1993）,Yale University和Columbia University教授。
+
+>Joao P. Hespanha，Instituto Superior Técnico, Lisbon, Portugal本硕（1991,1993）+ Yale University博士。UCSB教授。
+
+>David J. Kriegman，Princeton University本科（1983）+Stanford University硕博（1984,1989）。UCSD教授。
+
+论文：
+
+《Eigenfaces vs. Fisherfaces: Recognition Using Class Specific Linear Projection》
+
+Eigenfaces的主要原理基于PCA，而Fisherface的主要原理基于LDA（参见《机器学习（三十一）》）。这里不再赘述。
+
+参考：
+
 http://blog.csdn.net/smartempire/article/details/23377385
 
 Fisherface（LDA）
 
 # Viola-Jones
+
+Viola-Jones方法由Paul Viola和Michael Jones于2001年提出。
 
 >Paul Viola，MIT本科（1988）+博士（1995）。先后在微软、Amazon担任研究员。
 
@@ -141,17 +198,4 @@ Fisherface（LDA）
 
 《Implementing the Viola-Jones Face Detection Algorithm》
 
-参考：
-
-https://www.jianshu.com/p/024ad859c8de
-
-人脸检测的Viola-Jones方法
-
-http://c.blog.sina.com.cn/profile.php?blogid=ab0aa22c890006v0
-
-从Viola&Jones的人脸检测说起
-
-http://www.cnblogs.com/hrlnw/archive/2013/10/23/3374707.html
-
-Viola Jones Face Detector
-
+和之前的方法不同，Viola-Jones不仅是一个算法，更是一个框架，前DL时代的人脸检测一般都采用该框架。其准确度也由Fisherface时代的不到70%，上升到90%以上。当然，这里所用的数据集以今天的眼光来看，只能算作玩具了——基本都是正面、无遮挡的标准照，光照也比较理想。但不管怎么说，这也是第一个进入商业实用阶段的目标检测框架，目前大多数的商业化产品仍然基于该框架。

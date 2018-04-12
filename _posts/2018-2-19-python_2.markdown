@@ -356,3 +356,7 @@ https://mp.weixin.qq.com/s/wIXCIMzZmh75SV-qJIKbCw
 
 Python程序员最常犯的10个错误，你中招了吗？
 
+https://mp.weixin.qq.com/s/W1j4G_QQqlzDYru231dZFA
+
+Python：编写条件分支代码的技巧
+

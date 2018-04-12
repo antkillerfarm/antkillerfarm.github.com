@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Elasticsearch（二）, scrapy, Flume & Kafka
+title:  Elasticsearch（二）, scrapy, Flume & Kafka, 垃圾筐
 category: AI 
 ---
 
@@ -257,7 +257,9 @@ https://mp.weixin.qq.com/s/o-zfrJS5Ito1kWPBJUIryg
 
 Kafka相关资源
 
-# 压缩感知
+# 垃圾筐
+
+## 压缩感知
 
 http://blog.csdn.net/abcjennifer/article/details/7721834
 
@@ -275,7 +277,7 @@ http://blog.csdn.net/abcjennifer/article/details/7748833
 
 压缩感知进阶——有关稀疏矩阵
 
-# 元胞自动机
+## 元胞自动机
 
 http://www.doc88.com/p-8939046003005.html
 
@@ -293,7 +295,7 @@ http://www.cnblogs.com/Firefly727/articles/1856328.html
 
 元胞自动机
 
-# 聚类
+## 聚类
 
 https://mp.weixin.qq.com/s/xGPiaXTnQad3RcMwIELP4w
 
@@ -327,7 +329,7 @@ https://www.zhihu.com/question/34554321
 
 用于数据挖掘的聚类算法有哪些，各有何优势？
 
-# 可视化
+## 可视化
 
 ![](/images/img2/data_visual.png)
 

@@ -330,4 +330,11 @@ https://mp.weixin.qq.com/s/shI6UQCbH4_CwbncvPNHIA
 
 手把手教你Tableau高级数据分析功能
 
+https://mp.weixin.qq.com/s/bzaG5VRUQkcCV9lQzI9FdQ
+
+无监督学习的魅力
+
+https://idea-instructions.com/
+
+IDEA 是由 SándorP. Fekete、Sebastian Morr 和 Sebastian Stiller 共同推出的图解算法系列。 它们最初是为 Sándor 在德国不伦瑞克工业大学开设的算法和数据结构讲座而设计的。
 

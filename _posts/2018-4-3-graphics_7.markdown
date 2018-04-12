@@ -4,6 +4,24 @@ title:  图像处理理论（七）——经典目标跟踪算法, 从BOW到SPM,
 category: graphics 
 ---
 
+# Viola-Jones（续）
+
+
+
+## 参考
+
+https://www.jianshu.com/p/024ad859c8de
+
+人脸检测的Viola-Jones方法
+
+http://c.blog.sina.com.cn/profile.php?blogid=ab0aa22c890006v0
+
+从Viola&Jones的人脸检测说起
+
+http://www.cnblogs.com/hrlnw/archive/2013/10/23/3374707.html
+
+Viola Jones Face Detector
+
 # 经典目标跟踪算法
 
 camshift、meanshift、Kalman filter、particle filter、Optical flow、TLD、KCF、Struck

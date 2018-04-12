@@ -188,7 +188,11 @@ https://mp.weixin.qq.com/s/Z0oZrvzn7ktdTIQX-0KMLA
 
 https://mp.weixin.qq.com/s/Ue9sIInRMon-CCyC-qyNsw
 
-手把手：用Python搭建一个加密货币交易模拟器，不用投钱就能玩 
+手把手：用Python搭建一个加密货币交易模拟器，不用投钱就能玩
+
+https://zhuanlan.zhihu.com/p/35563341
+
+为什么越来越少人用CPU/GPU挖矿？ASIC矿机优势在哪里？
 
 # CPU
 
