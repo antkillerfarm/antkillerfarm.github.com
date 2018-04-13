@@ -224,6 +224,12 @@ TensorRT：嵌入式设备上专用于DL inference的计算库。
 
 NVIDIA DIGITS：一款web应用工具，可在网页上对Caffe进行图形化操作和可视化。
 
+参考：
+
+https://mp.weixin.qq.com/s/v8-JHd5tWm41WLqR-h6eKA
+
+使用TensorRT集成加速TensorFlow推理
+
 ## NVDLA
 
 NVIDIA Deep Learning Accelerator是一个开源的用于inference的芯片方案。官网：

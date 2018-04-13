@@ -48,11 +48,19 @@ http://blog.csdn.net/wxb1553725576/article/details/78048546
 
 Kaldi特征提取之-FBank
 
+## 项目
+
+https://en.wikipedia.org/wiki/List_of_speech_recognition_software
+
 ## Kaldi
 
 Kaldi是一个语音识别的工具包。官网：
 
 https://github.com/kaldi-asr/kaldi
+
+文档：
+
+http://kaldi-asr.org/doc/
 
 ## HTK
 
@@ -180,6 +188,10 @@ https://mp.weixin.qq.com/s/cvSz5Pxe3z54Tl5z3WTbQA
 
 手把手教你在音频分类DCASE2017比赛中夺冠
 
+https://blog.csdn.net/ffmpeg4976/article/details/52347845
+
+语音识别系统及科大讯飞最新实践
+
 https://mp.weixin.qq.com/s/UGhkTavbh21vBhtrrBeTfw
 
 麦克风阵列的语音信号处理技术
@@ -291,6 +303,10 @@ https://mp.weixin.qq.com/s/p_VjFwwDCu1i_ovUljaoVw
 https://mp.weixin.qq.com/s/xR172RUG3JO59_2cJj_U2A
 
 显著超越流行长短时记忆网络，阿里提出DFSMN语音识别声学模型
+
+https://mp.weixin.qq.com/s/9QrahPP1gDM3eMNgx91spA
+
+深度学习也能实现“鸡尾酒会效应”：谷歌提出新型音频-视觉语音分离模型
 
 # CTC
 

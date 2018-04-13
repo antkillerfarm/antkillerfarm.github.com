@@ -312,3 +312,7 @@ https://mp.weixin.qq.com/s/h-MYTNTLy7ToPPEZ2JVHpw
 
 阿里巴巴论文提出Advanced LSTM：关于更优时间依赖性刻画在情感识别方面的应用
 
+https://mp.weixin.qq.com/s/SeR_zNZTu4t7kqB6ltNrmQ
+
+从循环到卷积，探索序列建模的奥秘
+

@@ -194,6 +194,10 @@ AI研发新药真有那么神？可能哈佛、斯坦福和阿斯利康实验室
 
 >医药方面的AI应用，也是AI的一个潜在的应用领域。这篇文章敢把各个大学鄙视一番，还是有些干货的。
 
+https://mp.weixin.qq.com/s/ZMw12BJuexG0xM8OwWUc4w
+
+谷歌《Cell》论文：使用深度学习，直接对细胞影像生成荧光标记
+
 ## 图结构
 
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
@@ -233,6 +237,10 @@ OpenAI提出Reptile：可扩展的元学习算法
 https://mp.weixin.qq.com/s/T4GiL9vW7ALOzWloE_QQBA
 
 OpenAI开发可拓展元学习算法Reptile，能快速学习
+
+https://mp.weixin.qq.com/s/MWcoGsQJg1GBbSqzyPD9uQ
+
+基于梯度的元学习算法，可高效适应非平稳环境
 
 # DL参考资源
 

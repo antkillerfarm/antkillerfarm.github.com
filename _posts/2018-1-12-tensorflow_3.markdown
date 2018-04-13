@@ -268,3 +268,11 @@ https://mp.weixin.qq.com/s/NJf5e25tvT_xKXLD7UY1AQ
 
 MySQL智能调度系统。这篇blog其实和MySQL关系不大，算是DL在负载均衡方面的应用吧。
 
+https://mp.weixin.qq.com/s/o2A9yo6lIWTphf3jLviyEg
+
+用狗的数据训练AI，华盛顿大学研发模拟狗行为的AI系统
+
+https://mp.weixin.qq.com/s/4UH-XWyIxYHq_ErRfkzzsQ
+
+与神经网络相比，你对P图一无所知
+

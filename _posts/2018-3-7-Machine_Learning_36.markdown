@@ -158,6 +158,10 @@ https://mp.weixin.qq.com/s/zopaNDXABhPVqqUur9FFYg
 
 lightgbm算法优化-不平衡二分类问题
 
+https://mp.weixin.qq.com/s/JQasgzl-EpqBey7W6jKCTw
+
+LightGBM大战XGBoost，谁将夺得桂冠？
+
 # CatBoost
 
 这是Yandex推出的Boost工具包。

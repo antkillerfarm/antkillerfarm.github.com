@@ -406,6 +406,10 @@ https://mp.weixin.qq.com/s/_afSKRdag06VmGjM7VibBQ
 
 计算机视觉必读：目标跟踪、网络压缩、图像分类、人脸识别等
 
+https://mp.weixin.qq.com/s/47S-iGFzZtXcSIgIC4w0FA
+
+从入门到高阶，读懂机器学习需要哪些数学知识
+
 ## 算法
 
 http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww

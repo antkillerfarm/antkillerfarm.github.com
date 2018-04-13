@@ -28,6 +28,12 @@ https://github.com/fchollet/keras/
 
 `sudo pip install keras`
 
+## 项目
+
+https://github.com/Ahmkel/Keras-Project-Template
+
+本项目是一个基于Keras库的项目模板，模板能让你更容易地构建和训练深度学习模型，并支持Checkpoints和TensorBoard。
+
 ## 实战GAN
 
 最近实战了一下GAN，主要参考了以下文章：

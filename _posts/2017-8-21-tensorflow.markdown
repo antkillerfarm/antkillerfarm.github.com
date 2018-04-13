@@ -156,6 +156,10 @@ http://www.cnblogs.com/wangduo/p/7383989.html
 
 Ubuntu 16.04+CUDA 8.0+cuDNN v5.1+TensorFlow(GPU support)安装配置详解
 
+https://mp.weixin.qq.com/s/bxJ7VCI_120psBti-j376w
+
+在ubuntu上配置tensorflow 1.7+CUDA踩过的坑
+
 ## 基本概念
 
 **Variables**：维持计算图执行过程中的状态信息的变量。一般来说，这就是神经网络的参数。

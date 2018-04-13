@@ -257,6 +257,10 @@ https://mp.weixin.qq.com/s/o-zfrJS5Ito1kWPBJUIryg
 
 Kafka相关资源
 
+https://mp.weixin.qq.com/s/l0AL89M0xPbWMFj6U7yYZw
+
+消息中间件选型分析：从Kafka与RabbitMQ的对比看全局
+
 # 垃圾筐
 
 ## 压缩感知

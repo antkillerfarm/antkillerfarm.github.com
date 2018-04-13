@@ -186,6 +186,10 @@ https://mp.weixin.qq.com/s/qhqCqHo9xGr_Tc-2bnS4mw
 
 用数学方程和不等式创作艺术
 
+https://mp.weixin.qq.com/s/CM7WLc7iSp877WrkH8R_7g
+
+如何用数学方法估算一个女生前男友的数量？
+
 ## 金融模型
 
 Capital asset pricing model
@@ -194,27 +198,33 @@ Fama–French three-factor model
 
 Carhart four-factor model
 
-# LSTM在Audio上的应用实例
+# LSTM Speech Recognition实战
 
-最近，领导布置寻找一些LSTM在Audio上的实例，所以特地搜集了一下。
+## 数据集
+
+首先，在Github上搜寻了一番，发现了以下项目：
 
 https://github.com/zzw922cn/Automatic_Speech_Recognition
 
 https://github.com/pandeydivesh15/AVSR-Deep-Speech
 
-https://github.com/sdhayalk/TensorFlow_Speech_Recognition_Challenge
-
-http://download.tensorflow.org/data/speech_commands_v0.01.tar.gz
-
-TensorFlow提供的Speech Commands Datasets
+但是无奈他们使用的TIMIT数据集是收费的，只好放弃了。
 
 https://catalog.ldc.upenn.edu/LDC93S1
 
 TIMIT数据集（收费）
 
-http://spandh.dcs.shef.ac.uk/chime_challenge/chime2016/
+最终，找到了如下项目：
 
-CHiMe – Computational Hearing in Multisource Environments-国际多通道语音分离和识别大赛
+https://github.com/sdhayalk/TensorFlow_Speech_Recognition_Challenge
+
+它的数据集：
+
+http://download.tensorflow.org/data/speech_commands_v0.01.tar.gz
+
+TensorFlow提供的Speech Commands Datasets
+
+还有相关的工具：
 
 https://github.com/petewarden/extract_loudest_section
 
@@ -223,4 +233,65 @@ https://github.com/petewarden/extract_loudest_section
 https://www.kaggle.com/davids1992/speech-representation-and-data-exploration/notebook
 
 包含对Speech Commands Datasets的数据处理过程的blog
+
+## 复现结果
+
+这里只实验了最简单的那个模型，遗憾的是该代码并不能直接使用，需要相应的预处理：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/TensorFlow_Speech_Recognition_Challenge
+
+这里还有一个坑，该项目只使用了11类声音，而把其他19类都归为unknown。这会导致unknown的权重过重，测试准确度虚高，（无脑分类为unknown都有60%以上的精度）但实际结果很差。需要使用一些方法处理数据的不平衡。
+
+最终，复现结果精度大概在75%～80%之间。训练时间大概要16小时。
+
+## 炼丹一
+
+把类别扩展到30类，精度略高，但也就80%上下。如此费时的训练，只有这点结果，实在让人丧气。于是参考warpCTC，进行炼丹。
+
+1.LSTM由3层减为1层。
+
+2.使用CTC loss。（参见《深度学习（二十五）》）
+
+在识别验证码的例子中，假如有两幅图，分别是123和4567，那么Label就是：
+
+{% highlight text %}
+[[1,2,3,0]
+ [4,5,6,7]]
+{% endhighlight %}
+
+虽然英语是表音文字，但直接分解字母作为标签显然是不太精确的。
+
+这里需要用到ARPABET表，该表可以看做是国际音标的另一种表示法：
+
+https://en.wikipedia.org/wiki/ARPABET
+
+还有如下工具可以将英文单词转换为ARPABET表示：
+
+http://www.speech.cs.cmu.edu/tools/lextool.html
+
+这个工具所使用的词典在：
+
+http://svn.code.sf.net/p/cmusphinx/code/trunk/cmudict/
+
+精度大为提高到90%。
+
+## 炼丹二
+
+1.将LSTM改为BiLSTM。
+
+2.使用1x1的卷积处理频谱。给feature map以不同的权重，有助于强化有效声音，弱化噪声。
+
+3.使用3层FC。只对同一time step的频点做FC，不跨time step。
+
+原理参见《深度学习（二十五）》中的Deep speech 2。
+
+精度再次提高到96%。如果不做第1步的修改的话，精度大概是94%，但计算快了很多，大概2个小时。
+
+## 参考
+
+http://spandh.dcs.shef.ac.uk/chime_challenge/chime2016/
+
+CHiMe – Computational Hearing in Multisource Environments-国际多通道语音分离和识别大赛
+
+
 

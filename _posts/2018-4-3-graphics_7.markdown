@@ -6,7 +6,37 @@ category: graphics
 
 # Viola-Jones（续）
 
+## 概述
 
+和之前的方法不同，Viola-Jones不仅是一个算法，更是一个框架，前DL时代的人脸检测一般都采用该框架。其准确度也由Fisherface时代的不到70%，上升到90%以上。当然，这里所用的数据集以今天的眼光来看，只能算作玩具了——基本都是正面、无遮挡的标准照，光照也比较理想。但不管怎么说，这也是第一个进入商业实用阶段的目标检测框架，目前大多数的商业化产品仍然基于该框架。
+
+Viola-Jones框架主要有三个要点：
+
+1.Haar-like特征，AdaBoost算法和Cascade结构。Haar-like特征利用积分图像（Integral Image）快速的计算矩形区域的差分信号；
+
+2.AdaBoost算法选择区分能力强的特征结合Stump函数做弱分类器，然后把若干这些弱分类器线性组合在一起增强分类性能；
+
+3.Cascade结构做Early decision快速抛弃明显不是人脸的扫描窗口。
+
+下面我们分别描述一下这几个要点。
+
+## Integral image
+
+
+
+![](/images/img2/integral_image_a.png)
+
+![](/images/img2/integral_image_b.png)
+
+$$46 – 22 – 20 + 10 = 14$$
+
+
+
+参考：
+
+http://www.mathworks.com/help/vision/ref/integralimage.html
+
+Integral image
 
 ## 参考
 

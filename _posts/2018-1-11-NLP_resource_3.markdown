@@ -330,4 +330,7 @@ https://mp.weixin.qq.com/s/EmACAfXwJnkUh3jYNWA-Dg
 
 如何使用深度学习执行文本实体提取
 
+https://mp.weixin.qq.com/s/21bhPa4ECNFmUcF0GOQSkw
+
+从字符级的语言建模开始，了解语言模型与序列建模的基本概念
 

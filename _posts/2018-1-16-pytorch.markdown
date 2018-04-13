@@ -34,6 +34,16 @@ Model Zoo(非官方):
 
 https://github.com/Cadene/pretrained-models.pytorch
 
+## 项目
+
+https://github.com/CSAILVision/semantic-segmentation-pytorch
+
+Semantic Segmentation PyTorch：PyTorch上最好的语义分割工具包
+
+https://github.com/PetrochukM/PyTorch-NLP
+
+支持快速成型的深度学习NLP工具包
+
 ## 参考
 
 https://mp.weixin.qq.com/s/zhkaenFdnB5KgaEYb-XDEQ

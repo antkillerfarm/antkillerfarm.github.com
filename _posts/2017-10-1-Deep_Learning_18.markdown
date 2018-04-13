@@ -102,6 +102,10 @@ https://mp.weixin.qq.com/s/UWuCiV6dBk9Z0XusEBS6-g
 
 物体检测经典模型YOLO新升级，就看一眼，速度提升3倍！
 
+https://mp.weixin.qq.com/s/BF7mj-_D303cLiD5e6oy6w
+
+期待已久的—YOLO V3
+
 # 其它目标检测网络
 
 ## A-Fast-RCNN

@@ -204,6 +204,10 @@ https://mp.weixin.qq.com/s/6wp4rlBODJAkYf3O4O-2GA
 
 SciPy库以及图像高斯模糊实战
 
+https://mp.weixin.qq.com/s/U4ttnC9VRO39Ic5stG9pBQ
+
+手把手：基于概率编程Pyro的金融预测，让正则化结果更有趣！
+
 # 推荐系统的工程细节
 
 推荐系统不仅是算法，还包括若干工程细节。这些细节虽然不算复杂，够不上算法的层面，然而对产品的成败，却有举足轻重的作用。

@@ -296,3 +296,7 @@ https://mp.weixin.qq.com/s/LpNlUlXpt2poRKXEvuIDjw
 
 Kubernetes NetworkPolicy工作原理浅析
 
+https://mp.weixin.qq.com/s/s5eDSQF6mFt2F9_nVtYemQ
+
+PaaS将吞噬云计算？Kubernetes的市场冲击波
+
