@@ -372,6 +372,10 @@ http://www.cnblogs.com/codemind/p/smart_spider_parser.html
 
 ## 参考
 
+https://mp.weixin.qq.com/s/X9NPFFTHTk62V21o63ceOA
+
+Python 爬虫的工具列表大全
+
 http://www.gooseeker.com/
 
 一个基于FireFox的网络爬虫。
@@ -407,4 +411,8 @@ https://mp.weixin.qq.com/s/5sVrSxRAXWBn3-NBSlYMIg
 https://mp.weixin.qq.com/s/z2uWLEWF6e0TJWIpXyY6mQ
 
 如何用Python爬虫获取那些价值博文
+
+https://mp.weixin.qq.com/s/SkGUZMgBW_oFBygc4d1zQg
+
+如何用Python编写知乎爬虫？
 

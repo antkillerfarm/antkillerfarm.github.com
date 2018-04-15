@@ -138,6 +138,18 @@ https://mp.weixin.qq.com/s/kw3BYTXdyhnIyVZrnQuPew
 
 基于深度学习和迁移学习的识花实践
 
+https://mp.weixin.qq.com/s/F965Zu_PgA-1ZUGIQ0nIEQ
+
+TensorFlow协同过滤推荐实战
+
+https://mp.weixin.qq.com/s/RR3EEI8vm05EZSd7dGU__A
+
+史上最全的Tensorflow学习资源汇总，速藏！
+
+http://gitbook.cn/books/593d71ba4686067a2200aec6/index.html
+
+用TensorFlow实现智能机器人的原理及如何实现一个对话机器人
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/LTtcD5CBT8m127thjBaRsw
@@ -275,4 +287,25 @@ https://mp.weixin.qq.com/s/o2A9yo6lIWTphf3jLviyEg
 https://mp.weixin.qq.com/s/4UH-XWyIxYHq_ErRfkzzsQ
 
 与神经网络相比，你对P图一无所知
+
+https://mp.weixin.qq.com/s/KTBC1VBj7V7pjQ9JVCn7fQ
+
+新加坡国立大学论文：利用互补几何模型改善运动分割
+
+https://mp.weixin.qq.com/s/19U2Rhwgj5NoB0esKyxSyA
+
+神经网络告诉我，谁是世界上最“美”的人？
+
+https://mp.weixin.qq.com/s/ZOVWXNym5yHoo-MmpxXo0A
+
+自监督对抗哈希SSAH：当前最佳的跨模态检索框架
+
+https://mp.weixin.qq.com/s/wni3F9lKuO4OT32BVe0QDQ
+
+谷歌发大招：搜索全面AI化，不用关键词就能轻松“撩书”
+
+https://mp.weixin.qq.com/s/oNXmYpp--GutT66c5p6Q8A
+
+AI说，它可以把你变成个游戏：3D人体模型
+
 

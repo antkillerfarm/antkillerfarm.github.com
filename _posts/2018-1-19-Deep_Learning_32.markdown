@@ -120,6 +120,10 @@ https://mp.weixin.qq.com/s/S9VcoS_59nbZWe_P3ye2Tw
 
 减少模型半数内存用量：百度&英伟达提出混合精度训练法
 
+https://zhuanlan.zhihu.com/p/35700882
+
+CNN量化技术
+
 ## NN硬件的指标术语
 
 MACC：multiply-accumulate，乘法累加。

@@ -116,6 +116,10 @@ https://mp.weixin.qq.com/s/7_-a-suPO4qpAQVVJyz8BQ
 
 概率论之概念解析：极大似然估计
 
+https://mp.weixin.qq.com/s/vqYX1jpNsdw6F88a-CtZyw
+
+什么是最大似然估计、最大后验估计以及贝叶斯参数估计
+
 ## 指数类分布
 
 线性回归和对数回归的迭代公式相同不是偶然的，它们都是指数类分布的特例。

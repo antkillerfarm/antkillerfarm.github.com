@@ -36,10 +36,6 @@ http://wiki.jikexueyuan.com/project/tensorflow-zh/
 
 https://developers.google.cn/machine-learning/crash-course/
 
-TensorFlow中文社区：
-
-http://www.tensorfly.cn/
-
 API官方中文版：
 
 http://tensorflow.google.cn/
@@ -47,6 +43,14 @@ http://tensorflow.google.cn/
 另一个API中文版：
 
 https://www.w3cschool.cn/tensorflow_python/
+
+TensorFlow官方中文社区论坛：
+
+https://www.tensorflowers.cn
+
+TensorFlow中文社区：
+
+http://www.tensorfly.cn/
 
 安装：
 

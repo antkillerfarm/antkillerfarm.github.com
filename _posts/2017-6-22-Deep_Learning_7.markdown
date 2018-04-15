@@ -186,6 +186,10 @@ https://mp.weixin.qq.com/s/nK__d-PV6DY5mDfA_UgDmQ
 
 全解：目标检测，图像分类、分割、生成……
 
+https://mp.weixin.qq.com/s/Go8AQay7tgykXLRtfHGLmg
+
+改变你对世界看法的五大计算机视觉技术！
+
 ## CNN简史
 
 ![](/images/article/computer_vision_3.jpg)

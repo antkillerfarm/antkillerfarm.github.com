@@ -340,5 +340,7 @@ https://mp.weixin.qq.com/s/3oL0Bso3mwbsfaG8X5-xoA
 
 英特尔提出新型压缩技术DeepThin，适合移动端设备深度神经网络
 
+https://mp.weixin.qq.com/s/ekKg46bQlWrlg9Hon01M5g
 
+Hinton胶囊网络后最新研究：用“在线蒸馏”训练大规模分布式神经网络
 

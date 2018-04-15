@@ -298,6 +298,14 @@ https://mp.weixin.qq.com/s/g5MM-pXOAuY7HaBUik9POg
 
 Android平台上OpenCV深度网络实现对象检测
 
+https://mp.weixin.qq.com/s/8MkOfaOyjEoMBmV51I1mDg
+
+OpenCV直线拟合检测
+
+https://mp.weixin.qq.com/s/VS2MXdyb849jVU4F_QMRpA
+
+OpenCV中几何形状识别与测量
+
 # GNU Octave
 
 GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。

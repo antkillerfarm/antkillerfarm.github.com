@@ -360,3 +360,12 @@ https://mp.weixin.qq.com/s/W1j4G_QQqlzDYru231dZFA
 
 Python：编写条件分支代码的技巧
 
+http://www.cnblogs.com/Python666/p/7506546.html
+
+Python单例模式
+
+https://mp.weixin.qq.com/s/ST7TQ5Wkn_owv5bpTiTKVA
+
+2018年最好用的5个python网站开发框架
+
+

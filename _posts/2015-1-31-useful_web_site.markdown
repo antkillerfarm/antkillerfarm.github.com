@@ -464,6 +464,10 @@ https://mp.weixin.qq.com/s/zU1Mw3yaNmk4D5pP9vxxaw
 
 TCP三次握手和SYN攻击
 
+https://mp.weixin.qq.com/s/3VqdjEK4QkER4Q05JgfjhQ
+
+详解TCP之滑动窗口
+
 https://mp.weixin.qq.com/s/D-XvKCSUCzMGcEz_xWTwqg
 
 现代CSS进化史
@@ -471,6 +475,10 @@ https://mp.weixin.qq.com/s/D-XvKCSUCzMGcEz_xWTwqg
 https://mp.weixin.qq.com/s/wKpNJY6PD0ArxnKtl71xwQ
 
 程序员实用的工具网站整理
+
+https://blog.csdn.net/zhengzhb/article/details/8590390
+
+SQL查找删除重复行
 
 ## 有用的blog
 

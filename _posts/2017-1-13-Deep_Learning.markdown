@@ -239,6 +239,10 @@ https://mp.weixin.qq.com/s/mFA2PeO70o3HR6AQ74Lp3g
 
 深度学习最佳实践之权重初始化
 
+https://mp.weixin.qq.com/s/M1TswiDh-LkH9G7jCQ_UqA
+
+神经网络编程-前向传播和后向传播
+
 # BP算法的缺点
 
 虽然传统的BP算法，理论上可以支持任意深度的神经网络。然而实际使用中，却很少能支持3层以上的神经网络。

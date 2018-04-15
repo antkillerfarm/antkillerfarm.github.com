@@ -237,7 +237,7 @@ https://github.com/MSiam/TFSegmentation
 
 ![](/images/img2/ShuffleSeg.png)
 
-这是一个语义分割的网络，本来不该放在这里。然而既然要灌水，那就灌的更猛一些吧。
+这是一个语义分割的网络，本来不该放在这里。然而既然要灌水，那就灌的更猛一些吧。ShuffleNet也难逃毒手。
 
 参考：
 

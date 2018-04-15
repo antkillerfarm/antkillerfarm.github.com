@@ -198,6 +198,10 @@ https://mp.weixin.qq.com/s/ZMw12BJuexG0xM8OwWUc4w
 
 谷歌《Cell》论文：使用深度学习，直接对细胞影像生成荧光标记
 
+https://mp.weixin.qq.com/s/OkZdmBvSeMEsZbJyoZQvBQ
+
+深度学习+基因组学：破译人类30亿碱基对
+
 ## 图结构
 
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
@@ -241,6 +245,10 @@ OpenAI开发可拓展元学习算法Reptile，能快速学习
 https://mp.weixin.qq.com/s/MWcoGsQJg1GBbSqzyPD9uQ
 
 基于梯度的元学习算法，可高效适应非平稳环境
+
+https://zhuanlan.zhihu.com/p/35695477
+
+基于Meta Learning在动态竞争环境中实现策略自适应
 
 # DL参考资源
 

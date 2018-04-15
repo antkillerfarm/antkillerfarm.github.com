@@ -316,3 +316,8 @@ https://mp.weixin.qq.com/s/SeR_zNZTu4t7kqB6ltNrmQ
 
 从循环到卷积，探索序列建模的奥秘
 
+https://mp.weixin.qq.com/s/_q69BV1r46S9X5wnLuFPSw
+
+关于序列建模，是时候抛弃RNN和LSTM了
+
+

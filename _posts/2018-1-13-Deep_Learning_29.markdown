@@ -124,6 +124,10 @@ https://kexue.fm/archives/5383
 
 变分自编码器：这样做为什么能成？
 
+https://mp.weixin.qq.com/s/TJDGZvAvT7KamR_WN-oYYw
+
+如何使用变分自编码器VAE生成动漫人物形象
+
 # RBM & DBN & Deep Autoencoder
 
 ## RBM
