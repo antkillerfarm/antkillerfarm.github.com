@@ -1,357 +1,190 @@
 ---
 layout: post
-title:  深度学习（二十四）——语音识别, CTC
+title:  深度学习（二十四）——L2 Normalization, Attention（1）
 category: DL 
 ---
 
-# 语音识别
+# L2 Normalization
 
-## 书籍
+L2 Normalization本身并不复杂，然而多数资料都只提到1维的L2 Normalization的计算公式：
 
-《Speech and Language Processing: An introduction to natural language processing, computational linguistics, and speech recognition》，Daniel Jurafsky & James H. Martin著。
+$$x=[x_1,x_2,\dots,x_d]\\
+y=[y_1,y_2,\dots,y_d]\\
+y=\frac{x}{\sqrt{\sum_{i=1}^dx_i^2}}=\frac{x}{\sqrt{x^Tx}}
+$$
 
->Daniel Jurafsky，1962年生，UCB本科（1983）+博士（1992）。斯坦福大学教授。   
->个人主页：   
->https://web.stanford.edu/~jurafsky/
+对于多维L2 Normalization几乎未曾提及，这里以3维tensor：A[width, height, channel]为例介绍一下多维L2 Normalization的计算方法。
 
->James H. Martin，哥伦比亚大学本科+UCB博士。University of Colorado Boulder教授。   
->个人主页：   
->http://www.cs.colorado.edu/~martin/
+多维L2 Normalization有一个叫axis(有时也叫dim)的参数，如果axis=0的话，实际上就是将整个tensor flatten之后，再L2 Normalization。这个是比较简单的。
 
-## 传统方法
+这里说说axis=3的情况。axis=3意味着对channel进行Normalization，也就是：
 
-http://blog.csdn.net/zouxy09/article/details/9140207
+$$B_{xy}=\sum_{z=0}^Z \sqrt{A_{xyz}^2}\\
+C_{xyz}=\frac{A_{xyz}}{B_{xy}}\\
+D_{xyz}=C_{xyz} \cdot S_{z}
+$$
 
-语音信号处理之（一）动态时间规整（DTW）
+一般来说，求出C被称作L2 Normalization，而求出D被称作L2 Scale Normalization，S被称为Scale。
 
-http://blog.csdn.net/zouxy09/article/details/9141875
-
-语音信号处理之（二）基音周期估计（Pitch Detection）
-
-http://blog.csdn.net/zouxy09/article/details/9153255
-
-语音信号处理之（三）矢量量化（Vector Quantization）
-
-http://blog.csdn.net/zouxy09/article/details/9156785
-
-语音信号处理之（四）梅尔频率倒谱系数（MFCC）
-
-https://my.oschina.net/jamesju/blog/193343
-
-语音特征参数MFCC提取过程详解
-
-https://liuyanfeier.github.io/2017/10/26/2017-10-27-Kaldi%E4%B9%8Bfbank%E5%92%8Cmfcc%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/
-
-kaldi之fbank和mfcc特征提取
-
-http://blog.csdn.net/wxb1553725576/article/details/78048546
-
-Kaldi特征提取之-FBank
-
-## 项目
-
-https://en.wikipedia.org/wiki/List_of_speech_recognition_software
-
-## Kaldi
-
-Kaldi是一个语音识别的工具包。官网：
-
-https://github.com/kaldi-asr/kaldi
-
-文档：
-
-http://kaldi-asr.org/doc/
-
-## HTK
-
-Hidden Markov Model Toolkit是另一个语音识别的工具包。官网：
-
-http://htk.eng.cam.ac.uk/
-
-## CMU Sphinx
-
-CMU Sphinx是李开复的博士课题项目，后来成为了CMU的长期项目。洪小文、黄学东也先后参与过。
-
->李开复，1961年生，Columbia University本科（1983）+CMU博士（1988）。先后供职于Apple、SGI、Microsoft、Google。现为创新工场董事长。
-
->洪小文，1963年生，台湾大学本科+CMU博士。先后供职于Apple、Microsoft，现为微软亚洲研究院院长。
-
->黄学东，1962年生，湖南大学本科（1982）+清华大学硕士（1984）+University of Edinburgh博士（1989）。现为微软首席语音科学家。
-
->Raj Reddy，1937年生，印度裔美国计算机科学家。印度University of Madras本科（1958）+澳大利亚University of New South Wales硕士（1960）+Stanford University博士。CMU教授，首位亚裔图灵奖得主（1994）。   
->他还是印度Rajiv Gandhi University of Knowledge Technologies创始人和International Institute of Information Technology, Hyderabad主席。   
->他是李开复、洪小文的博士导师，黄学东的博士后导师。
-
-官网：
-
-https://cmusphinx.github.io/
-
-注意：还有一个类似Elasticsearch的文本搜索引擎也叫Sphinx。它的官网是：
-
-http://sphinxsearch.com/
-
-## WFST
-
-Weighted-Finite-State-Transducer
-
-https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/ParallelizingWFSTSpeechDecoders.ICASSP2016.pdf
-
-PARALLELIZING WFST SPEECH DECODERS
-
-http://www.cs.nyu.edu/~mohri/pub/csl01.pdf
-
-Weighted Finite-State Transducers in Speech Recognition
-
-## Tacotron
-
-论文：
-
-《Tacotron: A Fully End-to-End Text-To-Speech Synthesis Model》
-
-![](/images/img2/Tacotron.png)
-
-![](/images/img2/Tacotron_2.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/MJE2JRYU7KakNKmHkD42CA
-
-谷歌发布TTS新系统Tacotron 2：直接从文本生成类人语音
-
-https://mp.weixin.qq.com/s/uh-Gh8BSxBi-jjG6-d7-UQ
-
-Tacotron一种端到端的Text-to-Speech合成模型
-
-https://www.jiqizhixin.com/articles/2017-03-31-5
-
-谷歌全端到端语音合成系统Tacotron：直接从字符合成语音
-
-## 参考
-
-https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=400189223&idx=1&sn=1cb32bee42de626443ebadbf065ec79c
-
-百度贾磊：汉语语音识别技术重大突破：LSTM+CTC详解
-
-https://www.zhihu.com/question/20398418
-
-语音识别的技术原理是什么？
-
-https://www.zhihu.com/question/46829056
-
-语音识别领域的最新进展目前是什么样的水准？
-
-https://www.zhihu.com/question/29168274
-
-语音识别中，如何理解HMM是一个生成模型，而DNN是一个判别模型呢？
-
-https://zhuanlan.zhihu.com/p/24979135
-
-从声学模型算法总结2016年语音识别的重大进步
-
-https://mp.weixin.qq.com/s/LsVhMaHrh8JgfpDra6KSPw
-
-横向对比5大开源语音识别工具包
-
-https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw
-
-SampleRNN语音合成模型
-
-https://mp.weixin.qq.com/s/zEqgDh6_fnDgXEI8MC9cmg
-
-端对端的深度卷积神经网络在语音识别中的应用
-
-https://mp.weixin.qq.com/s/pimQBFd5uxrZk4dSgUsblg
-
-苹果机器学习期刊“Siri三部曲”之一：通过跨带宽和跨语言初始化提升神经网络声学模型
-
-https://mp.weixin.qq.com/s/u1R7NUg_kgI_mpjIFrO02A
-
-探索Siri背后的技术：将逆文本标准化（ITN）转化为标签问题
-
-https://mp.weixin.qq.com/s/2xpwLVHT8qU68uoV7Uj2cw
-
-小米的语音识别系统是如何搭建的
-
-https://mp.weixin.qq.com/s/xAO7mX64miTXE8E2vZ5q_w
-
-Facebook开源TTS神经网络VoiceLoop：基于室外声音的语音合成
-
-https://mp.weixin.qq.com/s/CVBSvQwnDqT-IVCZV7idog
-
-极限元语音算法专家刘斌：基于深度学习的语音生成问题
-
-https://mp.weixin.qq.com/s/cYBMy4TIhcutvrAt0y70Ow
-
-腾讯AI Lab副主任俞栋：过去两年基于深度学习的声学模型进展
-
-https://mp.weixin.qq.com/s/cvSz5Pxe3z54Tl5z3WTbQA
-
-手把手教你在音频分类DCASE2017比赛中夺冠
-
-https://blog.csdn.net/ffmpeg4976/article/details/52347845
-
-语音识别系统及科大讯飞最新实践
-
-https://mp.weixin.qq.com/s/UGhkTavbh21vBhtrrBeTfw
-
-麦克风阵列的语音信号处理技术
-
-https://mp.weixin.qq.com/s/1ZWrTdd3S5zYRyANfFmBOw
-
-声学模型
-
-https://mp.weixin.qq.com/s/mY2__KWvdAd8ZcNm-voSsg
-
-语音识别之解码器技术简介
-
-http://mp.weixin.qq.com/s/-QQjz61VAOVcWE7j-EJPhg
-
-谈谈蚂蚁金服的语音唤醒系统
-
-http://mp.weixin.qq.com/s/0WNJq4OLZlZETKPf1Ewq7w
-
-浅谈语音测试方案
-
-https://mp.weixin.qq.com/s/KBLCrupGIuPa5nVrxcS5WQ
-
-新研究将GRU简化成单门架构，或更适用于语音识别
-
-https://mp.weixin.qq.com/s/b0bOf1bZ2p0yWMzhp66HhA
-
-A flight (to Boston) to Denver-基于转移的顺滑技术研究
-
-https://mp.weixin.qq.com/s/0AvV268s3TZ0z8WwtJv6sw
-
-一文概览语音识别中尚未解决的问题
-
-https://mp.weixin.qq.com/s/T96S0b7Lp9YWR4cRcMQr6A
-
-一文概览基于深度学习的监督语音分离
-
-https://mp.weixin.qq.com/s/TTPpOOxSLbCgOmAsI9TLiw
-
-百度发布Deep Voice 3：全卷积注意力机制TTS系统
-
-http://mp.weixin.qq.com/s/xRA9Xh-FTrhbIg0wLnfzhA
-
-温正棋谈语音质检方案：从关键词检索到情感识别
-
-https://mp.weixin.qq.com/s/XUHS4o2G-iGuV9uuOmfBdQ
-
-为什么在说话人识别技术中，PLDA面对神经网络依然坚挺？
-
-https://mp.weixin.qq.com/s/zWmJ3uXnFtXaI2BotoadHA
-
-从技术到产品，苹果Siri深度学习语音合成技术揭秘
-
-https://mp.weixin.qq.com/s/I2nbzD2QqSYgahI2jLjYTQ
-
-批训练、注意力模型及其声纹分割应用，谷歌三篇论文揭示其声纹识别技术原理
-
-https://mp.weixin.qq.com/s/XP4NVYMmKj9RLsgonP3ooQ
-
-无需进行滤波后处理，利用循环推断算法实现歌唱语音分离
-
-https://mp.weixin.qq.com/s/GZI4uvCR3QzZDNddpBX2OQ
-
-深度学习也解决不掉语音识别问题
-
-https://mp.weixin.qq.com/s/w9_D1_VVhk9md4RANaipDg
-
-Mozilla开源语音识别模型和世界第二大语音数据集
-
-https://mp.weixin.qq.com/s/E8brCI73IWY3P47IYPxSkg
-
-谷歌发布全新端到端语音识别系统：词错率降至5.6%
-
-http://www.cnblogs.com/qcloud1001/p/7941158.html
-
-详解卷积神经网络（CNN）在语音识别中的应用
-
-https://mp.weixin.qq.com/s/6xxXOx59lDZx0kUPb_ftBA
-
-漫谈语音合成之Char2Wav模型
-
-https://mp.weixin.qq.com/s/grqKRvv4dwKU26zT1qhq2g
-
-Facebook开源语音识别工具包wav2letter
-
-https://mp.weixin.qq.com/s/OeCiH4n-Y3kigI3ynMyZSg
-
-有趣的研究奥巴马Net：从文本合成真实的唇语口型
-
-https://mp.weixin.qq.com/s/8e4bkyTJIxHZ1y95GshA0Q
-
-开源的语音合成系统WORLD介绍以及使用方法
-
-https://mp.weixin.qq.com/s/mRmbrUJ2MgeDxbZn_0UiIQ
-
-2017年深度学习总结：文本和语音应用
-
-https://mp.weixin.qq.com/s/JSnyE2k7jqd5GR1lHA6WUg
-
-阿里巴巴Oral论文：用于语音合成的深度前馈序列记忆网络
-
-https://mp.weixin.qq.com/s/H77iom38lTR0KzeFXrdWew
-
-DeepMind与谷歌大脑联手推出WaveRNN，移动端合成高保真音频媲美WaveNet
-
-https://mp.weixin.qq.com/s/p_VjFwwDCu1i_ovUljaoVw
-
-阿里巴巴语音交互智能团队：基于线性网络的语音合成说话人自适应
-
-https://mp.weixin.qq.com/s/xR172RUG3JO59_2cJj_U2A
-
-显著超越流行长短时记忆网络，阿里提出DFSMN语音识别声学模型
-
-https://mp.weixin.qq.com/s/9QrahPP1gDM3eMNgx91spA
-
-深度学习也能实现“鸡尾酒会效应”：谷歌提出新型音频-视觉语音分离模型
-
-# CTC
+# Attention
 
 ## 概述
 
-Connectionist Temporal Classification，是一种改进的RNN模型。它主要解决的是时序模型中，输入数大于输出数，输入输出如何对齐的问题。它由Alex Graves于2006年提出。
+众所周知，RNN在处理长距离依赖关系时会出现问题。理论上，LSTM这类结构能够处理这个问题，但在实践中，长距离依赖关系仍旧是个问题。例如，研究人员发现将原文倒序（将其倒序输入编码器）产生了显著改善的结果，因为从解码器到编码器对应部分的路径被缩短了。同样，两次输入同一个序列似乎也有助于网络更好地记忆。
+
+倒序句子这种方法属于“hack”手段。它属于被实践证明有效的方法，而不是有理论依据的解决方法。
+
+大多数翻译的基准都是用法语、德语等语种，它们和英语非常相似（即使汉语的词序与英语也极其相似）。但是有些语种（像日语）句子的最后一个词语在英语译文中对第一个词语有高度预言性。那么，倒序输入将使得结果更糟糕。
+
+还有其它办法吗？那就是Attention机制。
+
+![](/images/article/attention.png)
+
+上图是Attention机制的结构图。y是编码器生成的译文词语，x是原文的词语。上图使用了双向递归网络，但这并不是重点，你先忽略反向的路径吧。重点在于现在每个解码器输出的词语$$y_t$$取决于所有输入状态的一个权重组合，而不只是最后一个状态。a是决定每个输入状态对输出状态的权重贡献。因此，如果$$a_{3,2}$$的值很大，这意味着解码器在生成译文的第三个词语时，会更关注于原文句子的第二个状态。a求和的结果通常归一化到1（因此它是输入状态的一个分布）。
+
+Attention机制的一个主要优势是它让我们能够解释并可视化整个模型。举个例子，通过对attention权重矩阵a的可视化，我们能够理解模型翻译的过程。
+
+![](/images/article/attention_2.png)
+
+我们注意到当从法语译为英语时，网络模型顺序地关注每个输入状态，但有时输出一个词语时会关注两个原文的词语，比如将“la Syrie”翻译为“Syria”。
+
+如果再仔细观察attention的等式，我们会发现attention机制有一定的成本。我们需要为每个输入输出组合分别计算attention值。50个单词的输入序列和50个单词的输出序列需要计算2500个attention值。这还不算太糟糕，但如果你做字符级别的计算，而且字符序列长达几百个字符，那么attention机制将会变得代价昂贵。
+
+attention机制解决的根本问题是允许网络返回到输入序列，而不是把所有信息编码成固定长度的向量。正如我在上面提到，我认为使用attention有点儿用词不当。换句话说，attention机制只是简单地让网络模型访问它的内部存储器，也就是编码器的隐藏状态。在这种解释中，网络选择从记忆中检索东西，而不是选择“注意”什么。不同于典型的内存，这里的内存访问机制是弹性的，也就是说模型检索到的是所有内存位置的加权组合，而不是某个独立离散位置的值。弹性的内存访问机制好处在于我们可以很容易地用反向传播算法端到端地训练网络模型（虽然有non-fuzzy的方法，其中的梯度使用抽样方法计算，而不是反向传播）。
 
 论文：
 
-《Connectionist Temporal Classification: Labelling Unsegmented
-Sequence Data with Recurrent Neural Networks》
+《Learning to combine foveal glimpses with a third-order Boltzmann machine》
 
->Alex Graves，瑞士IDSIA研究所博士，DeepMind研究员。
+《Learning where to Attend with Deep Architectures for Image Tracking》
 
-![](/images/img2/CTC.png)
+《Neural Machine Translation by Jointly Learning to Align and Translate》
 
-上图展示了音频数据被识别的过程：
+## Neural Turing Machines
 
-1.将音频数据均分成若干段，每段匹配一个音节。
+以下章节主要翻译自下文：
 
-2.合并重复的音节，并去掉分割音节（即上图中的$$\epsilon$$）。
+https://distill.pub/2016/augmented-rnns/
 
-相比于图像识别，人类语音的音节种类要少的多。但麻烦的是，一个音节的长短，会由于语速等因素的改变，而有较大差异。因此如何将数据段和音节匹配，成为了语音识别的难点。
+Attention and Augmented Recurrent Neural Networks
 
-这个问题不只是在语音识别中出现，我们在其他许多地方也能看到它。比如手写体识别、视频行为标注等。
+>distill.pub虽然blog数量不多，但篇篇都是经典。背后站台的更有Yoshua Bengio、Ian Goodfellow、Andrej Karpathy等大牛。
 
-![](/images/img2/CTC_2.png)
+该文主要讲述了Attention在RNN领域的应用。
 
-我们首先用数学的方式定义对齐问题。假设输入序列为$$X=[x_1,x_2,\dots,x_T]$$，输出序列为$$Y=[y_1,y_2,\dots,y_U]$$，所谓对齐问题就是将X映射到Y。
+----
 
-这里的主要问题在于：
+NTM是一种使用Neural Network为基础来实现传统图灵机的理论计算模型。利用该模型，可以通过训练的方式让系统“学会”具有时序关联的任务流。
 
-1.X和Y的长度可以变。
+图灵机的详细定义可参见：
 
-2.X和Y的长度比例可变。
+https://baike.baidu.com/item/图灵机
 
-3.我们没有一个X和Y之间的准确的对齐（对应元素）。
+![](/images/img2/NTM.png)
 
-CTC算法可以克服这些挑战。对于一个给定的X，它给我们一个所有可能Y值的输出分布。我们可以使用这个分布来推断可能的输出或者评估一个给定输出的概率。
+和传统图灵机相比，这里的memory中保存的是向量，我们的目标是根据输入序列，确定读写操作。具体的步骤如下图所示：
 
-并不是所有的计算损失函数和执行推理的方法都是易于处理的。我们要求CTC可以有效地做到这两点。
+![](/images/img2/NTM_2.png)
 
-**损失函数**：对于给定的输入，我们希望训练模型来最大化分配到正确答案的概率。 为此，我们需要有效地计算条件概率$$p(Y \mid X)$$。 函数$$p(Y \mid X)$$也应该是可微的，可以使用梯度下降。
+1.计算query vector和memory中每个vector的相似度。
 
-**推理**：在我们训练好模型后，我们希望使用它来推断给定X的最可能的Y。即：
+2.将相似度softmax为一个分布。
 
-$$Y^*=\mathop{\text{argmax}}_{Y} p(Y \mid X)$$
+3.用之前训练好的attention模型调整分布值。
+
+4.图灵机的Shift操作也可以引入attention模型。
+
+5.sharpen分布值，选择最终的读写操作。sharpen操作，实际上就是选择较大的概率值，而忽略较小的概率值。
+
+## Attentional Interfaces
+
+以下是另外的一些Attention的用例。
+
+![](/images/img2/Attention.png)
+
+上图中，一个RNN模型可以输入另一个RNN模型的输出。它在每一步都会关注另一个RNN模型的不同位置。
+
+![](/images/img2/Attention_2.png)
+
+这是一个和NTM非常类似的模型。RNN模型生成一个搜索词描述其希望关注的位置。然后计算每条内容与搜索词的点乘得分，表示其与搜索词的匹配程度。这些分数经过softmax函数的运算产生聚焦的分布。
+
+![](/images/img2/Attention_3.png)
+
+上图是语言翻译方面的模型。若用传统的序列到序列模型做翻译，需要把整个输入词汇串缩简为单个向量，然后再展开恢复为序列目标语言的词汇串。Attention机制则可以避免上述操作，RNN模型逐个处理输入词语的信息，随即生成相对应的词语。
+
+![](/images/img2/Attention_4.png)
+
+RNN模型之间的这类聚焦还有许多其它的应用。它可以用于语音识别，其中一个RNN模型处理语音信号，另一个RNN模型则滑动处理其输出，然后关注相关的区域生成文本内容。
+
+## Adaptive Computation Time
+
+标准的RNN模型每一步所消耗的计算时间都相同。这似乎与我们的直觉不符。我们在思考难题的时候难道不需要更多的时间吗？
+
+适应性计算时间（Adaptive Computation Time）是解决RNN每一步消耗不同计算量的方法。笼统地说：就是让RNN模型可以在每个时间片段内进行不同次数的计算步骤。
+
+![](/images/img2/ACT.png)
+
+上图是ACT的网络结构图。下面来分步讲解一下。
+
+![](/images/img2/ACT_2.png)
+
+这一步就是典型的RNN+输出各个状态的带权重组合。
+
+![](/images/img2/ACT_3.png)
+
+每一步的权重值由“halting neuron”决定。这个神经元事实上是一个sigmoid函数，输出一个终止权重，可以理解为需要在当前步骤终止的概率值。
+
+![](/images/img2/ACT_4.png)
+
+停止权重值的总和等于1，每一步结束后要减去相应的值。一旦这个值小于了epsilon，我们就停止计算。
+
+![](/images/img2/ACT_5.png)
+
+当训练Adaptive Computation Time模型时，可以在损失函数添加一项“ponder cost”，用来惩罚模型的累积计算时间。这一项的值越大，就更不倾向于降低计算时间。
+
+## Scaled Dot-Product Attention
+
+以下内容摘自：
+
+https://kexue.fm/archives/4765
+
+《Attention is All You Need》浅读
+
+《Attention is All You Need》是Google 2017年的作品。论文中提出了若干Attention的变种。比如下图所示的Scaled Dot-Product Attention。
+
+![](/images/img2/Attention_5.png)
+
+上图用公式表述就是：
+
+$$Attention(\boldsymbol{Q},\boldsymbol{K},\boldsymbol{V}) = softmax\left(\frac{\boldsymbol{Q}\boldsymbol{K}^{\top}}{\sqrt{d_k}}\right)\boldsymbol{V}$$
+
+如果忽略激活函数softmax的话，那么事实上它就是三个$$n\times d_k,d_k\times m, m\times d_v$$的矩阵相乘，最后的结果就是一个$$n\times d_v$$的矩阵。于是我们可以认为：这是一个Attention层，将$$n\times d_k$$的序列Q编码成了一个新的$$n\times d_v$$的序列。
+
+那怎么理解这种结构呢？我们不妨逐个向量来看。
+
+$$Attention(\boldsymbol{q}_t,\boldsymbol{K},\boldsymbol{V}) = \sum_{s=1}^m \frac{1}{Z}\exp\left(\frac{\langle\boldsymbol{q}_t, \boldsymbol{k}_s\rangle}{\sqrt{d_k}}\right)\boldsymbol{v}_s$$
+
+其中Z是归一化因子。事实上q,k,v分别是query,key,value的简写，K,V是一一对应的，它们就像是key-value的关系，那么上式的意思就是$$q_t$$这个query，通过与各个$$k_s$$内积的并softmax的方式，来得到$$q_t$$与各个$$v_s$$的相似度，然后加权求和，得到一个$$d_v$$维的向量。其中因子$$\sqrt{d_k}$$起到调节作用，使得内积不至于太大（太大的话softmax后就非0即1了，不够“soft”了）。
+
+概括的说就是：**比较Q和K的相似度，以得到合适的V。**
+
+## Multi-Head Attention
+
+![](/images/img2/Attention_6.png)
+
+这个是Google提出的新概念，是Attention机制的完善。不过从形式上看，它其实就再简单不过了，就是把Q,K,V通过参数矩阵映射一下，然后再做Attention，把这个过程重复做h次，结果拼接起来就行了，可谓“大道至简”了。具体来说：
+
+$$head_i = Attention(\boldsymbol{Q}\boldsymbol{W}_i^Q,\boldsymbol{K}\boldsymbol{W}_i^K,\boldsymbol{V}\boldsymbol{W}_i^V)$$
+
+所谓“多头”（Multi-Head），就是只多做几次同样的事情（参数不共享），然后把结果拼接。
+
+## Self Attention
+
+到目前为止，对Attention层的描述都是一般化的，我们可以落实一些应用。比如，如果做阅读理解的话，Q可以是篇章的词向量序列，取K=V
+
+为问题的词向量序列，那么输出就是所谓的Aligned Question Embedding。
+
+而在Google的论文中，大部分的Attention都是Self Attention，即“自注意力”，或者叫内部注意力。
+
+所谓Self Attention，其实就是Attention(X,X,X)，X就是前面说的输入序列。也就是说，在序列内部做Attention，寻找序列内部的联系。
 

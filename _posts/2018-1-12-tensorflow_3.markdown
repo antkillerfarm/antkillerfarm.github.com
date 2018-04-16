@@ -150,6 +150,10 @@ http://gitbook.cn/books/593d71ba4686067a2200aec6/index.html
 
 用TensorFlow实现智能机器人的原理及如何实现一个对话机器人
 
+https://mp.weixin.qq.com/s/lLaSXG1VF9Rys2GNzFP7pw
+
+轻松使用多种预训练卷积网络抽取图像特征
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/LTtcD5CBT8m127thjBaRsw
@@ -308,4 +312,11 @@ https://mp.weixin.qq.com/s/oNXmYpp--GutT66c5p6Q8A
 
 AI说，它可以把你变成个游戏：3D人体模型
 
+https://mp.weixin.qq.com/s/zDKjyxqSbqYVlx3TveL8fg
+
+单摄像头数秒构建3D人体模型
+
+https://mp.weixin.qq.com/s/0dDzWjXZfHEh9jP-X4avbg
+
+英伟达新研究：“狗生猫，猫生万物”的多模态无监督图像转换
 

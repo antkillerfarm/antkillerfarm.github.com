@@ -58,6 +58,10 @@ http://echarts.baidu.com/echarts2/doc/example.html
 
 各种大数据展示用的图表。
 
+https://mp.weixin.qq.com/s/BZTCNehoioM9ie8WoL7sUg
+
+机器学习中的这12条经验，希望对你有所帮助
+
 https://www.zhihu.com/question/28810567
 
 ELM算法相关

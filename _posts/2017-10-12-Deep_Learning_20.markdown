@@ -1,8 +1,38 @@
 ---
 layout: post
-title:  深度学习（二十）——Ultra Deep Network, 图像超分辨率算法
+title:  深度学习（二十）——GCN, Ultra Deep Network
 category: DL 
 ---
+
+# Global Convolutional Network
+
+Global Convolutional Network是孙剑团队的Chao Peng于2017年提出的。
+
+论文：
+
+《Large Kernel Matters -- Improve Semantic Segmentation by Global Convolutional Network》
+
+>孙剑，西安交通大学博士（2003年）。后一直在微软亚洲研究院工作，担任首席研究员。2016年7月正式加入旷视科技担任首席科学家。
+
+![](/images/article/GCN.png)
+
+上图是论文的关键结构GCN，它主要用于计算超大卷积核。这里借鉴了Separable convolution的思想（将一个k x k的卷积运算，转换成1 x k + k x 1的卷积运算）。
+
+然而正如我们在《深度学习（九）》中指出的，不是所有的卷积核都满足可分离条件。单纯采用先1 x k后k x 1，或者先k x 1后1 x k，效果都是不好的。而将两者结合起来，可以有效提高计算的精度。
+
+![](/images/article/GCN_2.png)
+
+这是GCN提出的另一个新结构。
+
+![](/images/article/GCN_3.png)
+
+上图是GCN的整体结构图。
+
+参考：
+
+http://blog.csdn.net/bea_tree/article/details/60977512
+
+旷视最新：Global Convolutional Network
 
 # 语义分割的展望
 
@@ -188,17 +218,4 @@ http://blog.csdn.net/u014380165/article/details/75676216
 
 DPN（Dual Path Network）算法详解
 
-# 图像超分辨率算法
-
-![](/images/img2/Super_Resolution.png)
-
-如上图所示，一张低分辨率的小图（Low Resolution，LR）如果采用简单的插值算法进行图片放大的话，图像中物体的边缘会比较模糊。如何用算法将这种LR的图片放大成HR的图片，这就是Super Resolution（SR）的目标了。
-
-SR目前主要有两个用途：
-
-1.提升设备的测量精度。这个在天文和医疗图像方面用的比较多，比如Google和NASA利用AI探测太阳系外的行星，还有癌症的早期诊断。
-
-2.Image Signal Processor。上面的两个应用比较高端，SR最主要的用途恐怕还是相机的ISP领域。ISP的基本概念参见《图像处理理论（五）》。
-
-这里主要讨论DL在SR领域的应用。
 

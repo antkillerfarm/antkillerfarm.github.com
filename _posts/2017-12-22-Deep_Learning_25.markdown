@@ -1,309 +1,235 @@
 ---
 layout: post
-title:  深度学习（二十五）——Deep Speech, WaveNet
+title:  深度学习（二十五）——Attention（2）
 category: DL 
 ---
 
-# CTC（续）
+# Attention（续）
 
-## 算法推导
+## Position Embedding
 
-为了推导CTC对齐的具体形式，我们首先考虑一种初级的做法：假设输入长度为6，Y=[c,a,t]，对齐X和Y的一种方法是将输出字符分配给每个输入步骤并折叠重复的部分。
+然而，只要稍微思考一下就会发现，这样的模型并不能捕捉序列的顺序！换句话说，如果将K,V
 
-这种方法存在两个问题：
+按行打乱顺序（相当于句子中的词序打乱），那么Attention的结果还是一样的。这就表明了，到目前为止，Attention模型顶多是一个非常精妙的“词袋模型”而已。
 
-1.通常，强制每个输入步骤与某些输出对齐是没有意义的。例如在语音识别中，输入可以具有无声的延伸，但没有相应的输出。
+这问题就比较严重了，大家知道，对于时间序列来说，尤其是对于NLP中的任务来说，顺序是很重要的信息，它代表着局部甚至是全局的结构，学习不到顺序信息，那么效果将会大打折扣（比如机器翻译中，有可能只把每个词都翻译出来了，但是不能组织成合理的句子）。
 
-2.我们没有办法产生连续多个字符的输出。考虑这个对齐[h，h，e，l，l，l，o]，折叠重复将产生“helo”而不是“hello”。
+于是Google再祭出了一招——Position Embedding，也就是“位置向量”，将每个位置编号，然后每个编号对应一个向量，通过结合位置向量和词向量，就给每个词都引入了一定的位置信息，这样Attention就可以分辨出不同位置的词了。
 
-为了解决这些问题，CTC为一组允许的输出引入了一个新的标记。 这个新的标记有时被称为空白标记。 我们在这里将其称为$$\epsilon$$，$$\epsilon$$标记不对应任何东西，可以从输出中移除。
+## Hard Attention
 
-CTC允许的对齐是与输入的长度相同。 在合并重复并移除ε标记后，我们允许任何映射到Y的对齐方式。
+论文：
 
-如果Y在同一行中有两个相同的字符，那么一个有效的对齐必须在它们之间有一个$$\epsilon$$。 有了这个规则，我们就可以区分崩“hello”和“helo”。
+《Show, Attend and Tell: Neural Image Caption Generation with Visual Attention》
 
-CTC对齐有一些显著的特性：
+我们之前所描述的传统的Attention Mechanism是Soft Attention。Soft Attention是参数化的（Parameterization），因此可导，可以被嵌入到模型中去，直接训练。梯度可以经过Attention Mechanism模块，反向传播到模型其他部分。
 
-首先，X和Y之间允许的对齐是单调的。如果我们前进到下一个输入，我们可以保持相应的输出相同或前进到下一个输入。
+相反，Hard Attention是一个随机的过程。Hard Attention不会选择整个encoder的输出做为其输入，Hard Attention会依概率Si来采样输入端的隐状态一部分来进行计算，而不是整个encoder的隐状态。为了实现梯度的反向传播，需要采用蒙特卡洛采样的方法来估计模块的梯度。
 
-第二个属性是X到Y的对齐是多对一的。一个或多个输入元素可以对齐到一个输出元素，但反过来不成立。
+两种Attention Mechanism都有各自的优势，但目前更多的研究和应用还是更倾向于使用Soft Attention，因为其可以直接求导，进行梯度反向传播。
 
-这意味着第三个属性：Y的长度不能大于X的长度。
+## Local Attention
 
-![](/images/img2/full_collapse_from_audio.png)
+论文：
 
-上图是CTC对齐的一般步骤：
+《Effective Approaches to Attention-based Neural Machine Translation》
 
-1.输入序列（如音频的频谱图）导入一个RNN模型。
+>Thang Luong，越南人，Stanford博士（2016），现为Google研究员。导师是Christopher Manning。
+>个人主页：   
+>https://nlp.stanford.edu/~lmthang/
 
-2.RNN给出每个time step所对应的音节的概率$$p_t(a \mid X)$$。上图中音节的颜色越深，其概率p越高。
+>Christopher Manning，澳大利亚人，Stanford博士（1994），现为Stanford教授。从事NLP近三十年，率先将统计方法引入NLP。
 
-3.计算各种时序组合的概率，给出整个序列的概率。
+![](/images/img2/Global_attention.png)
 
-4.合并重复并移除空白之后，得到最终的Y。
+传统的Attention model中，所有的hidden state都被用于计算Context vector的权重，因此也叫做Global Attention。
 
-严格的说，一对(X,Y)的CTC目标函数是：
+Local Attention：Global Attention有一个明显的缺点就是，每一次，encoder端的所有hidden state都要参与计算，这样做计算开销会比较大，特别是当encoder的句子偏长，比如，一段话或者一篇文章，效率偏低。因此，为了提高效率，Local Attention应运而生。
 
-$$p(Y\mid X)=\sum_{A\in A_{X,Y}}\prod_{t=1}^Tp_t(a_t\mid X)$$
+Local Attention是一种介于Kelvin Xu所提出的Soft Attention和Hard Attention之间的一种Attention方式，即把两种方式结合起来。其结构如下图所示。
 
-这里的模型通常使用一个RNN来估计每个time step的概率，但是也可以自由使用任何学习算法，在给定一个固定尺寸输入片段的情况下产生一个输出类别的分布。
+![](/images/img2/Local_attention.png)
 
-在实际训练中，针对训练集$$\mathcal{D}$$，一般采用最小化log-likelihood的方式计算CTC loss：
+## Attention over Attention
 
-$$\sum_{(X,Y)\in \mathcal{D}}-\log p(Y\mid X)$$
+《Attention-over-Attention Neural Networks for Reading Comprehension》
 
-采用穷举法计算上述目标函数，计算量是非常巨大的。我们可以使用动态规划算法更快的计算loss。关键点是，如果两个对齐在同一步已经达到了相同的输出，可以合并它们。如下图所示：
+![](/images/img2/Attention-over-Attention.png)
 
-![](/images/img2/CTC_3.png)
+## 总结
 
-这里如果把音节匹配换成掷骰子的例子，就可以看出这实际上和《机器学习（二十二）》中HMM所解决的第二个问题是类似的，而HMM的前向计算正是一种动态规划算法。动态规划算法可参见《机器学习（二十七）》。
+从最初的原始Attention，到后面的各种示例，不难看出**Attention实际上是一个大箩筐，凡是不好用CNN、RNN、FC概括的累计乘加，基本都可冠以XX Attention的名义**。
 
-下面我们来介绍一下具体的计算方法。
+虽然，权重的确代表了Attention的程度，然而直接叫累计乘加，似乎更接近操作本身一些。
 
-首先使用$$\epsilon$$分隔Y中的符号，就得到了序列Z：
+考虑到神经网络的各种操作基本都是累计乘加的变种，因此，Attention is All You Need实际上是很自然的结论，你总可以对Attention进行修改，让它实现CNN、RNN、FC的效果。
 
-$$Z=[\epsilon,y_1,\epsilon,y_2,\dots,\epsilon,y_U,\epsilon]$$
+这点在AI芯片领域尤为突出，**无论IC架构差异如何巨大，硬件底层基本就是乘累加器。**
 
-用$$\alpha_{s,t}$$表示子序列$$Z_{1:s}$$在t步之后的CTC值。显然，我们需要计算的目标$$P(Y\mid X)$$和最后一步的$$\alpha$$有关，但只有计算出了上一步的$$\alpha$$，我们才能计算当前的$$\alpha$$。
+## Transformer
 
-![](/images/img2/CTC_4.png)
+Attention的介绍到此为止，但《Attention is All You Need》的传奇继续，该文不仅提出了两种Attention模块，而且还提出了如下图所示的Transformer模型。该模型主要用于NMT领域，由于Attention不依赖上一刻的数据，同时精度也不弱于LSTM，因此有很好并行计算特性，在工业界得到了广泛应用。阿里巴巴和搜狗目前的NMT方案都是基于Transformer模型的。
 
-不同于掷骰子过程中，骰子的每种状态都有可能出现的情况，语音由于具有连续性，因此有些情况实际上是不可能的。比如上图的$$x_1$$就不大可能是后三个符号。
+![](/images/img2/Transformer.png)
 
-所以，可能的情况实际上只有两种：
+参考：
 
-### Case 1
+https://mp.weixin.qq.com/s/HquT_mKm7x_rbDGz4Voqpw
 
-![](/images/img2/CTC_6.png)
+阿里巴巴最新实践：TVM+TensorFlow提高神经机器翻译性能
 
-上图表示的是语音在两个相同token之间切换的情况。（这种情况也就是上面提到的hello例子中，语音在两个l之间过渡的情况。）
+https://mp.weixin.qq.com/s/S_xhaDrOaPe38ZvDLWl4dg
 
-在这种情况下，$$\alpha$$的计算公式如下：
-
-$$\alpha_{s,t}=(\alpha_{s-1,t-1}+\alpha_{s,t-1})\cdot p_t(Z_s \mid X)$$
-
-### Case 2
-
-![](/images/img2/CTC_7.png)
-
-上图表示的是语音在两个不同token之间切换的情况。
-
-在这种情况下，$$\alpha$$的计算公式如下：
-
-$$\alpha_{s,t}=(\alpha_{s-2,t-1}+\alpha_{s-1,t-1}+\alpha_{s,t-1})\cdot p_t(Z_s \mid X)$$
-
-## 推断计算
-
-我们首先看看CTC的正向推断（Inference）是如何计算的。
-
-在前面的章节我们已经指出，由于对齐有很多种可能的情况，采用穷举法是不现实的。
-
-另一个比较容易想到的方法是：每步只采用最大可能的token。这种启发式算法，实际上就是A*算法。
-
-A*算法计算速度快，但不一定能找到最优解。
-
-一般采用改良的Beam Search算法，在准确率和计算量上取得一个trade off。
-
-![](/images/img2/CTC_5.png)
-
-上图是一个Beam Width为3的Beam Search。Beam Search的细节可参见《机器学习（二十五）》。
-
-由于语音的特殊性，我们实际上用的是Beam Search的一个变种：
-
-![](/images/img2/CTC_8.png)
-
-如上图所示，所有在合并规则下，能够合并为同一前缀的分支，在后续计算中，都被认为是同一分支。其概率值为各被合并分支的概率和。
-
-此外，如果在语音识别中，能够结合语言模型的话，将可以极大的改善语音识别的准确率。这种情况下的CTC loss为：
-
-$$Y^*=\mathop{\text{argmax}}_{Y} p(Y \mid X)\cdot p(Y)^{\alpha}\cdot L(Y)^{\beta}$$
-
-其中，$$p(Y)^{\alpha}$$是语言模型概率，而$$L(Y)^{\beta}$$表示词嵌入奖励。
-
-## CTC的特性
-
-CTC是条件独立的。
-
-缺点：条件独立的假设太强，与实际情况不符，因此需要语言模型来改善条件依赖性，以取得更好的效果。
-
-优点：可迁移性比较好。比如朋友之间的聊天和正式发言之间的差异较大，但它们的声学模型却是类似的。
-
-CTC是单调对齐的。这在语音识别上是没啥问题的，但在机器翻译的时候，源语言和目标语言之间的语序不一定一致，也就不满足单调对齐的条件。
-
-CTC的输入/输出是many-to-one的，不支持one-to-one或one-to-many。比如，“th”在英文中是一个音节对应两个字母，这就是one-to-many的案例。
-
-最后，Y的数量不能超过X，否则CTC还是没法work。
-
-## CTC应用
-
-### HMM
-
-![](/images/img2/CTC_9.png)
-
-如上图所示，CTC是一种特殊的HMM。CTC的状态图是单向的，这也就是上面提到的单调对齐特性，这相当于给普通HMM模型提供了一个先验条件。因此，对于满足该条件的情况，CTC的准确度要超过HMM。
-
-最重要的是，CTC是判别模型，它可以直接和RNN对接。
-
-### Encoder-Decoder模型
-
-Encoder-Decoder模型是sequence问题最常用的框架，它的数学形式为：
-
-$$
-H=encode(X)\\
-p(Y\mid X)=decode(H)
-$$
-
-这里的H是模型的hidden representation。
-
-CTC模型可以使用各种Encoder，只要保证输入比输出多即可。CTC模型常用的Decoder一般是softmax。
+从技术到产品，搜狗为我们解读了神经机器翻译的现状
 
 ## 参考
 
-https://distill.pub/2017/ctc/
+http://geek.csdn.net/news/detail/106118
 
-Sequence Modeling With CTC
+Attention and Augmented Recurrent Neural Networks译文
 
-http://blog.csdn.net/laolu1573/article/details/78791992
+http://blog.csdn.net/rtygbwwwerr/article/details/50548311
 
-Sequence Modeling With CTC中文版
+Neural Turing Machines
 
-http://blog.csdn.net/u012968002/article/details/78890846
+http://www.robots.ox.ac.uk/~tvg/publications/talks/NeuralTuringMachines.pdf
 
-CTC原理
+Neural Turing Machines
 
-https://www.zhihu.com/question/47642307
+http://blog.csdn.net/malefactor/article/details/50550211
 
-语音识别中的CTC方法的基本原理
+自然语言处理中的Attention Model
 
-https://www.zhihu.com/question/55851184
+https://yq.aliyun.com/articles/65356
 
-基于CTC等端到端语音识别方法的出现是否标志着统治数年的HMM方法终结？
+图文结合详解深度学习Memory & Attention
 
-https://zhuanlan.zhihu.com/p/23308976
+http://www.cosmosshadow.com/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/2016/03/08/Attention.html
 
-CTC——下雨天和RNN更配哦
+Attention
 
-https://zhuanlan.zhihu.com/p/23293860
+http://geek.csdn.net/news/detail/50558
 
-CTC实现——compute ctc loss（1）
+深度学习和自然语言处理中的attention和memory机制
 
-https://zhuanlan.zhihu.com/p/23309693
+https://zhuanlan.zhihu.com/p/25928551
 
-CTC实现——compute ctc loss（2）
+用深度学习（CNN RNN Attention）解决大规模文本分类问题-综述和实践
 
-http://blog.csdn.net/xmdxcsj/article/details/70300591
+http://blog.csdn.net/leo_xu06/article/details/53491400
 
-端到端语音识别（二）ctc。这个blog中还有5篇《CTC学习笔记》的链接。
+视觉注意力的循环神经网络模型
 
-## Warp-CTC
+https://mp.weixin.qq.com/s/XrlveG0kwij2qNL45TZdBg
 
-Warp-CTC是一个可以应用在CPU和GPU上的高效并行的CTC代码库，由百度硅谷实验室开发。
+Attention的另类用法
 
-官网：
+https://zhuanlan.zhihu.com/p/31547842
 
-https://github.com/baidu-research/warp-ctc
+深度学习中Attention Mechanism详细介绍：原理、分类及应用
 
-非官方caffe版本：
+https://zhuanlan.zhihu.com/p/32089282
 
-https://github.com/xmfbit/warpctc-caffe
+Attention学习笔记
 
-# Deep Speech
+https://mp.weixin.qq.com/s/0yb-YRGe-q4-vpKpuE4D_w
 
-Deep Speech是吴恩达领导的百度硅谷AI Lab 2014年的作品。
+多种注意力机制互补完成VQA（视觉问答）
+
+https://mp.weixin.qq.com/s/LQ7uv0-AakkHE5b17yemqw
+
+Awni Hannun：序列模型Attention Model中的问题与挑战
+
+https://mp.weixin.qq.com/s/xr_1ZYbvADMMwgxLEAflCw
+
+如何在语言翻译中理解Attention Mechanism？
+
+https://mp.weixin.qq.com/s/Nyq_36aFmQYRWdpgbgxpuA
+
+将注意力机制引入RNN，解决5大应用领域的序列预测问题
+
+https://mp.weixin.qq.com/s/2gxp7A38epQWoy7wK8Nl6A
+
+谷歌翻译最新突破，“关注机制”让机器读懂词与词的联系
+
+https://mp.weixin.qq.com/s/g2PcmsDW9ixUCh_yP8W-Vg
+
+各类Seq2Seq模型对比及《Attention Is All You Need》中技术详解
+
+https://mp.weixin.qq.com/s/FtI94xY6a8TEvFCHfjMnmA
+
+小组讨论谷歌机器翻译Attention is All You Need
+
+https://mp.weixin.qq.com/s/SqIMkiP1IZMGWzwZWGOI7w
+
+谈谈神经网络的注意机制和使用方法
+
+https://mp.weixin.qq.com/s/POYTh4Jf7HttxoLhrHZQhw
+
+基于双向注意力机制视觉问答pyTorch实现
+
+https://mp.weixin.qq.com/s/EMCZHuvk5dOV_Rz00GkJMA
+
+近年火爆的Attention模型，它的套路这里都有！
+
+https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA
+
+阿里北大提出新attention建模框架，一个模型预测多种行为
+
+https://mp.weixin.qq.com/s/Yq3S4WrsQRQC06GvRgGjTQ
+
+打入神经网络思维内部
+
+https://mp.weixin.qq.com/s/MJ1578NdTKbjU-j3Uuo9Ww
+
+基于文档级问答任务的新注意力模型
+
+https://mp.weixin.qq.com/s/C4f0N_bVWU9YPY34t-HAEA
+
+UNC&Adobe提出模块化注意力模型MAttNet，解决指示表达的理解问题
+
+https://mp.weixin.qq.com/s/V3brXuey7Gear0f_KAdq2A
+
+基于注意力机制的交易上下文感知推荐，悉尼科技大学和电子科技大学最新工作
+
+http://mp.weixin.qq.com/s/Bt6EMD4opHCnRoHKYitsUA
+
+结合人类视觉注意力进行图像分类
+
+https://zhuanlan.zhihu.com/p/27464080
+
+从《Convolutional Sequence to Sequence Learning》到《Attention Is All You Need》
+
+http://www.cnblogs.com/robert-dlut/p/8638283.html
+
+自然语言处理中的自注意力机制！
+
+# VAE
+
+变分自编码器（Variational Auto-Encoder，VAE）是Autoencoder的一种扩展。
 
 论文：
 
-《Deep Speech: Scaling up end-to-end speech recognition》
+《Auto-Encoding Variational Bayes》
 
-代码：
+以下部分主要摘自：
 
-https://github.com/mozilla/DeepSpeech
+https://kexue.fm/archives/5253
 
-![](/images/img2/Deep_Speech.png)
+变分自编码器：原来是这么一回事
 
-上图是Deep Speech的网络结构图。网络的前三层和第5层是FC，第4层是双向RNN，Loss是CTC。
+## 分布变换
 
-主要思路：
+通常我们会拿VAE跟GAN比较，的确，它们两个的目标基本是一致的——希望构建一个从隐变量Z生成目标数据X的模型，但是实现上有所不同。更准确地讲，它们是假设了Z服从某些常见的分布（比如正态分布或均匀分布），然后希望训练一个模型$$X=g(Z)$$，这个模型能够将原来的概率分布映射到训练集的概率分布，也就是说，它们的目的都是进行分布之间的映射。
 
-1.这里的FC只处理部分音频片段，因此和CNN有异曲同工之妙。
+现在假设Z服从标准的正态分布，那么我就可以从中采样得到若干个$$Z_1, Z_2, \dots, Z_n$$，然后对它做变换得到$$\hat{X}_1 = g(Z_1),\hat{X}_2 = g(Z_2),\dots,\hat{X}_n = g(Z_n)$$，我们怎么判断这个通过f构造出来的数据集，它的分布跟我们目标数据集的分布是不是一样的呢？
 
-2.论文解释了不用LSTM的原因是：很难并行处理。
+![](/images/img2/VAE.png)
 
-参考：
+**生成模型的难题就是判断生成分布与真实分布的相似度，因为我们只知道两者的采样结果，不知道它们的分布表达式。**
 
-http://blog.csdn.net/xmdxcsj/article/details/54848838
+有读者说不是有KL散度吗？当然不行，因为KL散度是根据两个概率分布的表达式来算它们的相似度的，然而目前我们并不知道它们的概率分布的表达式，我们只有一批从构造的分布采样而来的数据$$\{\hat{X}_1,\hat{X}_2,\dots,\hat{X}_n\}$$，还有一批从真实的分布采样而来的数据$$\{X_1,X_2,\dots,X_n\}$$（也就是我们希望生成的训练集）。我们只有样本本身，没有分布表达式，当然也就没有方法算KL散度。
 
-Deep Speech笔记
+虽然遇到困难，但还是要想办法解决的。GAN的思路很直接粗犷：既然没有合适的度量，那我干脆把这个度量也用神经网络训练出来吧。而VAE则使用了一个精致迂回的技巧。
 
-# Deep speech 2
-
-Deep speech 2是Deep speech原班人马2015年的作品。
-
-论文：
-
-《Deep speech 2: End-to-end speech recognition in english and mandarin》
-
-代码：
-
-https://github.com/PaddlePaddle/DeepSpeech
-
-这个官方代码是PaddlePaddle实现的，由于比较小众，所以还有非官方的代码：
-
-https://github.com/ShankHarinath/DeepSpeech2-Keras
-
-![](/images/img2/Deep_Speech_2.png)
-
-不出所料，这里使用CNN代替了FC，音频数据和图像数据一样，都是局部特征很明显的数据，从直觉上，CNN应该要比FC好使。
-
-至于多层RNN或者GRU都是很自然的尝试。论文的很大篇幅都是各种调参，也就是俗称的“深度炼丹”。
-
-论文附录中，如何利用集群进行分布式训练，是本文的干货，这里不再赘述。
-
-# WaveNet
-
-WaveNet是DeepMind 2016年的作品，主要用于语音合成，也可用于语音识别。
-
-DeepMind在WaveNet方面，按照时间顺序有3篇论文：
-
-《WAVENET: A GENERATIVE MODEL FOR RAW AUDIO》
-
-《Neural Machine Translation in Linear Time》
-
-《Parallel WaveNet: Fast High-Fidelity Speech Synthesis》
-
-代码：
-
-https://github.com/ibab/tensorflow-wavenet
-
-一个Tensorflow实现
-
-https://github.com/buriburisuri/speech-to-text-wavenet
-
-这个Tensorflow实现，利用WaveNet实现了语音识别。
-
-![](/images/img2/WaveNet.png)
-
-![](/images/img2/WaveNet.gif)
-
-参考：
-
-https://www.leiphone.com/news/201609/ErWGa8fs7yR1zn2L.html
-
-DeepMind发布最新原始音频波形深度生成模型WaveNet，将为TTS带来无数可能
-
-https://zhuanlan.zhihu.com/p/27064536
-
-用Wavenet做中文语音识别
-
-https://mp.weixin.qq.com/s/-NTQG7_-GqGQWrRhiGgAQQ
-
-详述DeepMind wavenet原理及其TensorFlow实现
-
-http://mp.weixin.qq.com/s/0Xg_acbGG3pTIgsRQKJjrQ
-
-历经一年，DeepMind WaveNet语音合成技术正式产品化
-
-https://mp.weixin.qq.com/s/u1UnAuGllcWn8Ik5wDPY6w
-
-可视化语音分析：深度对比Wavenet、t-SNE和PCA等算法
 

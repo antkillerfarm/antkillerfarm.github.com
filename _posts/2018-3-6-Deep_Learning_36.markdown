@@ -200,6 +200,10 @@ https://mp.weixin.qq.com/s/CMZHhxAMno2GlnQCjv0BKg
 
 深度学习在CTR预估中的应用
 
+https://mp.weixin.qq.com/s/nboZ6p_l30L__FJNyz6Ohw
+
+深度学习如何应用在广告、推荐及搜索业务？
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

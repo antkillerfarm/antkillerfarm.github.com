@@ -1,235 +1,196 @@
 ---
 layout: post
-title:  深度学习（二十七）——Attention（2）
+title:  深度学习（二十七）——RBM & DBN & Deep Autoencoder
 category: DL 
 ---
 
-# Attention（续）
+# VAE（续）
 
-## Position Embedding
+## VAE的另一个介绍
 
-然而，只要稍微思考一下就会发现，这样的模型并不能捕捉序列的顺序！换句话说，如果将K,V
+以下章节的内容主要摘自：
 
-按行打乱顺序（相当于句子中的词序打乱），那么Attention的结果还是一样的。这就表明了，到目前为止，Attention模型顶多是一个非常精妙的“词袋模型”而已。
+https://www.jeremyjordan.me/variational-autoencoders/
 
-这问题就比较严重了，大家知道，对于时间序列来说，尤其是对于NLP中的任务来说，顺序是很重要的信息，它代表着局部甚至是全局的结构，学习不到顺序信息，那么效果将会大打折扣（比如机器翻译中，有可能只把每个词都翻译出来了，但是不能组织成合理的句子）。
+Variational autoencoders
 
-于是Google再祭出了一招——Position Embedding，也就是“位置向量”，将每个位置编号，然后每个编号对应一个向量，通过结合位置向量和词向量，就给每个词都引入了一定的位置信息，这样Attention就可以分辨出不同位置的词了。
+该文中文版：
 
-## Hard Attention
+https://mp.weixin.qq.com/s/tRB85VF8XH9TTXZsiNVLhA
 
-论文：
+深入理解变分自编码器
 
-《Show, Attend and Tell: Neural Image Caption Generation with Visual Attention》
+自编码器是发现数据的一些隐状态（不完整，稀疏，去噪，收缩）表示的模型。 更具体地说，输入数据被转换成一个编码向量，其中每个维度表示从数据学到的属性。 最重要的是编码器为每个编码维度输出单个值， 解码器随后接收这些值并尝试重新创建原始输入。
 
-我们之前所描述的传统的Attention Mechanism是Soft Attention。Soft Attention是参数化的（Parameterization），因此可导，可以被嵌入到模型中去，直接训练。梯度可以经过Attention Mechanism模块，反向传播到模型其他部分。
+变分自编码器（VAE）提供了描述隐空间观察的概率方式。 因此，我们不需要构建一个输出单个值来描述每个隐状态属性的编码器，而是要用编码器描述每个隐属性的概率分布。
 
-相反，Hard Attention是一个随机的过程。Hard Attention不会选择整个encoder的输出做为其输入，Hard Attention会依概率Si来采样输入端的隐状态一部分来进行计算，而不是整个encoder的隐状态。为了实现梯度的反向传播，需要采用蒙特卡洛采样的方法来估计模块的梯度。
+举个例子，假设我们已经在一个大型人脸数据集上训练了一个Autoencoder模型, encoder的维度是6。理想情况下, 我们希望自编码器学习面部的描述性属性，比如肤色，人是否戴眼镜，从而能够用一些特征值来表示这些属性。
 
-两种Attention Mechanism都有各自的优势，但目前更多的研究和应用还是更倾向于使用Soft Attention，因为其可以直接求导，进行梯度反向传播。
+![](/images/img2/VAE_7.png)
 
-## Local Attention
+在上面的示例中，我们使用单个值来描述输入图像的隐属性。 但是，我们其实更愿意用一个分布去表示每个隐属性。 比如, 输入蒙娜丽莎的照片，我们很难非常自信的为微笑属性分配一个具体值, 但是用了变分自编码器, 我们有能比较自信的说微笑属性服从什么分布。
 
-论文：
+![](/images/img2/VAE_8.png)
 
-《Effective Approaches to Attention-based Neural Machine Translation》
+通过这种方法，我们现在将给定输入的每个隐属性表示为概率分布。 当从隐状态解码时，我们将从每个隐状态分布中随机采样，来生成向量作为解码器的输入。
 
->Thang Luong，越南人，Stanford博士（2016），现为Google研究员。导师是Christopher Manning。
->个人主页：   
->https://nlp.stanford.edu/~lmthang/
+![](/images/img2/VAE_9.png)
 
->Christopher Manning，澳大利亚人，Stanford博士（1994），现为Stanford教授。从事NLP近三十年，率先将统计方法引入NLP。
+通过构造我们的编码器来输出一系列可能的值（统计分布），然后随机采样该值作为解码器的输入，我们能够学习到一个连续，平滑的隐空间。因此，在隐空间中彼此相邻的值应该与非常类似的重建相对应。而从隐分布中采样到的任何样本，我们都希望解码器理解, 并准确重构出来。
 
-![](/images/img2/Global_attention.png)
+![](/images/img2/VAE_10.png)
 
-传统的Attention model中，所有的hidden state都被用于计算Context vector的权重，因此也叫做Global Attention。
+我们可以进一步将此模型构造成神经网络架构：
 
-Local Attention：Global Attention有一个明显的缺点就是，每一次，encoder端的所有hidden state都要参与计算，这样做计算开销会比较大，特别是当encoder的句子偏长，比如，一段话或者一篇文章，效率偏低。因此，为了提高效率，Local Attention应运而生。
+![](/images/img2/VAE_11.png)
 
-Local Attention是一种介于Kelvin Xu所提出的Soft Attention和Hard Attention之间的一种Attention方式，即把两种方式结合起来。其结构如下图所示。
+下图是VAE的结构图：
 
-![](/images/img2/Local_attention.png)
+![](/images/img2/VAE_12.png)
 
-## Attention over Attention
+Reparameterization Trick的图示：
 
-《Attention-over-Attention Neural Networks for Reading Comprehension》
+![](/images/img2/VAE_13.png)
 
-![](/images/img2/Attention-over-Attention.png)
+Reparameterization Trick的反向传播：
 
-## 总结
+![](/images/img2/VAE_14.png)
 
-从最初的原始Attention，到后面的各种示例，不难看出**Attention实际上是一个大箩筐，凡是不好用CNN、RNN、FC概括的累计乘加，基本都可冠以XX Attention的名义**。
+## 数值计算 vs 采样计算
 
-虽然，权重的确代表了Attention的程度，然而直接叫累计乘加，似乎更接近操作本身一些。
+VAE的基本概念到此差不多了，苏剑林君趁热打铁又写了以下理论文章：
 
-考虑到神经网络的各种操作基本都是累计乘加的变种，因此，Attention is All You Need实际上是很自然的结论，你总可以对Attention进行修改，让它实现CNN、RNN、FC的效果。
+https://kexue.fm/archives/5343
 
-这点在AI芯片领域尤为突出，**无论IC架构差异如何巨大，硬件底层基本就是乘累加器。**
+变分自编码器：从贝叶斯观点出发
 
-## Transformer
+特将要点摘录如下。
 
-Attention的介绍到此为止，但《Attention is All You Need》的传奇继续，该文不仅提出了两种Attention模块，而且还提出了如下图所示的Transformer模型。该模型主要用于NMT领域，由于Attention不依赖上一刻的数据，同时精度也不弱于LSTM，因此有很好并行计算特性，在工业界得到了广泛应用。阿里巴巴和搜狗目前的NMT方案都是基于Transformer模型的。
+对于不是很熟悉概率统计的读者，容易混淆数值计算和采样计算的概念。
 
-![](/images/img2/Transformer.png)
+已知概率密度函数p(x)，那么x的期望也就定义为：
 
-参考：
+$$\mathbb{E}[x] = \int x p(x)dx\tag{1}$$
 
-https://mp.weixin.qq.com/s/HquT_mKm7x_rbDGz4Voqpw
+如果要对它进行数值计算，也就是数值积分，那么可以选若干个有代表性的点$$x_0 < x_1 < \dots < x_n$$，然后得到：
 
-阿里巴巴最新实践：TVM+TensorFlow提高神经机器翻译性能
+$$\mathbb{E}[x] \approx \sum_{i=1}^n x_i p(x_i) \left(\frac{x_i - x_{i-1}}{x_n - x_0}\right)\tag{2}$$
 
-https://mp.weixin.qq.com/s/S_xhaDrOaPe38ZvDLWl4dg
+如果从p(x)中采样若干个点$$x_1,x_2,\dots,x_n$$，那么我们有：
 
-从技术到产品，搜狗为我们解读了神经机器翻译的现状
+$$\mathbb{E}[x] \approx \frac{1}{n}\sum_{i=1}^n x_i,\quad x_i \sim p(x)\tag{3}$$
+
+我们可以比较(2)跟(3)，它们的主要区别是(2)中包含了概率的计算而(3)中仅有x的计算，这是因为在(3)中$$x_i$$是从p(x)中依概率采样出来的，概率大的$$x_i$$出现的次数也多，所以可以说采样的结果已经包含了p(x)在里边，就不用再乘以$$p(x_i)$$了。
+
+## 生成模型近似
+
+对于二值数据，我们可以对decoder用sigmoid函数激活，然后用交叉熵作为损失函数，这对应于$$q(x\mid z)$$为伯努利分布；而对于一般数据，我们用MSE作为损失函数，这对应于$$q(x\mid z)$$为固定方差的正态分布。
 
 ## 参考
 
-http://geek.csdn.net/news/detail/106118
+https://mp.weixin.qq.com/s/TqZnlXLKHhZn3U29PlqetA
 
-Attention and Augmented Recurrent Neural Networks译文
+变分自编码器VAE面临的挑战与发展方向
 
-http://blog.csdn.net/rtygbwwwerr/article/details/50548311
+https://mp.weixin.qq.com/s/mtZ4_pwl8_GhitgImAU0VA
 
-Neural Turing Machines
+一文读懂什么是变分自编码器
 
-http://www.robots.ox.ac.uk/~tvg/publications/talks/NeuralTuringMachines.pdf
+https://mp.weixin.qq.com/s/LQFuXgI7uZK2UKRfZvlVbA
 
-Neural Turing Machines
+Variational AutoEncoder
 
-http://blog.csdn.net/malefactor/article/details/50550211
+https://mp.weixin.qq.com/s/lnSMdOk8fYfdU4aGeI5j7Q
 
-自然语言处理中的Attention Model
+未标注的数据如何处理？一文读懂变分自编码器VAE
 
-https://yq.aliyun.com/articles/65356
+https://zhuanlan.zhihu.com/p/27549418
 
-图文结合详解深度学习Memory & Attention
+花式解释AutoEncoder与VAE
 
-http://www.cosmosshadow.com/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/2016/03/08/Attention.html
+https://mp.weixin.qq.com/s/ZlLuhu08m_RnD-h86df8sA
 
-Attention
+清华大学提出SA-VAE框架，通过单样本/少样本学习生成任意风格的汉字
 
-http://geek.csdn.net/news/detail/50558
+https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
 
-深度学习和自然语言处理中的attention和memory机制
+面向无监督任务：DeepMind提出神经离散表示学习生成模型VQ-VAE
 
-https://zhuanlan.zhihu.com/p/25928551
+https://kexue.fm/archives/5332
 
-用深度学习（CNN RNN Attention）解决大规模文本分类问题-综述和实践
+基于CNN和VAE的作诗机器人：随机成诗
 
-http://blog.csdn.net/leo_xu06/article/details/53491400
+https://kexue.fm/archives/5383
 
-视觉注意力的循环神经网络模型
+变分自编码器：这样做为什么能成？
 
-https://mp.weixin.qq.com/s/XrlveG0kwij2qNL45TZdBg
+https://mp.weixin.qq.com/s/TJDGZvAvT7KamR_WN-oYYw
 
-Attention的另类用法
+如何使用变分自编码器VAE生成动漫人物形象
 
-https://zhuanlan.zhihu.com/p/31547842
+# RBM & DBN & Deep Autoencoder
 
-深度学习中Attention Mechanism详细介绍：原理、分类及应用
+## RBM
 
-https://zhuanlan.zhihu.com/p/32089282
+Restricted Boltzmann Machines由Hinton发明，是一种用于降维、分类、回归、协同过滤、特征学习和主题建模的算法。
 
-Attention学习笔记
+![](/images/img2/multiple_inputs_RBM.png)
 
-https://mp.weixin.qq.com/s/0yb-YRGe-q4-vpKpuE4D_w
+在重构阶段，第一隐藏层的激活值成为反向传递中的输入。这些输入值与同样的权重相乘，每两个相连的节点之间各有一个权重，就像正向传递中输入x的加权运算一样。这些乘积的和再与每个可见层的偏差相加，所得结果就是重构值，亦即原始输入的近似值。这一过程可以用下图来表示：
 
-多种注意力机制互补完成VQA（视觉问答）
+![](/images/img2/reconstruction_RBM.png)
 
-https://mp.weixin.qq.com/s/LQ7uv0-AakkHE5b17yemqw
+由于RBM权重初始值是随机决定的，重构值与原始输入之间的差别通常很大。可以将r值与输入值之差视为重构误差，此误差值随后经由反向传播来修正RBM的权重，如此不断反复，直至误差达到最小。
 
-Awni Hannun：序列模型Attention Model中的问题与挑战
+由此可见，RBM在正向传递中使用输入值来预测节点的激活值，亦即输入为加权的x时输出的概率：$$p(a\mid x; w)$$。
 
-https://mp.weixin.qq.com/s/xr_1ZYbvADMMwgxLEAflCw
+但在反向传递时，激活值成为输入，而输出的是对于原始数据的重构值，或者说猜测值。此时RBM则是在尝试估计激活值为a时输入为x的概率，激活值的加权系数与正向传递中的权重相同。 第二个阶段可以表示为$$p(x\mid a; w)$$。
 
-如何在语言翻译中理解Attention Mechanism？
+上述两种预测值相结合，可以得到输入x和激活值a的联合概率分布，即$$p(x, a)$$。
 
-https://mp.weixin.qq.com/s/Nyq_36aFmQYRWdpgbgxpuA
+重构与回归、分类运算不同。回归运算根据许多输入值估测一个连续值，分类运算是猜测应当为一个特定的输入样例添加哪种具体的标签。
 
-将注意力机制引入RNN，解决5大应用领域的序列预测问题
+而重构则是在猜测原始输入的概率分布，亦即同时预测许多不同的点的值。这被称为生成学习，必须和分类器所进行的判别学习区分开来，后者是将输入值映射至标签，用直线将数据点划分为不同的组。
 
-https://mp.weixin.qq.com/s/2gxp7A38epQWoy7wK8Nl6A
+RBM用KL散度来衡量预测的概率分布与输入值的基准分布之间的距离。
 
-谷歌翻译最新突破，“关注机制”让机器读懂词与词的联系
+最后一点：你会发现RBM有两个偏差值。这是RBM与其他自动编码器的区别所在。隐藏的偏差值帮助RBM在正向传递中生成激活值（因为偏差设定了下限，所以无论数据有多稀疏，至少有一部分节点会被激活），而可见层的偏差则帮助RBM通过反向传递学习重构数据。
 
-https://mp.weixin.qq.com/s/g2PcmsDW9ixUCh_yP8W-Vg
+权重能够近似模拟出数据的特征后，也就为下一步的学习奠定了良好基础，比如可以在随后的有监督学习阶段使用深度置信网络来对图像进行分类。
 
-各类Seq2Seq模型对比及《Attention Is All You Need》中技术详解
+RBM有许多用途，其中最强的功能之一就是对权重进行合理的初始化，为之后的学习和分类做好准备。从某种意义上来说，RBM的作用与反向传播相似：让权重能够有效地模拟数据。可以认为预训练和反向传播是实现同一个目的的不同方法，二者可以相互替代。
 
-https://mp.weixin.qq.com/s/FtI94xY6a8TEvFCHfjMnmA
+## DBN
 
-小组讨论谷歌机器翻译Attention is All You Need
+RBM不仅可以单独使用，也可以堆叠起来形成Deep Belief Nets(DBNs)，其中每个RBM层都与其前后的层进行通信。单个层中的节点之间不会横向通信。
 
-https://mp.weixin.qq.com/s/SqIMkiP1IZMGWzwZWGOI7w
+深度置信网络可以直接用于处理无监督学习中的未标记数据聚类问题，也可以在RBM层的堆叠结构最后加上一个Softmax层来构成分类器。
 
-谈谈神经网络的注意机制和使用方法
+除了第一个和最后一个层，深度置信网络中的每一层都扮演着双重角色：既是前一层节点的隐藏层，也是后一层节点的输入（或“可见”）层。深度置信网络是由多个单层网络组成的。
 
-https://mp.weixin.qq.com/s/POYTh4Jf7HttxoLhrHZQhw
+深度置信网络常用于图像、视频序列和动作捕捉数据的识别、聚类与生成。
 
-基于双向注意力机制视觉问答pyTorch实现
+## Deep Autoencoder
 
-https://mp.weixin.qq.com/s/EMCZHuvk5dOV_Rz00GkJMA
+![](/images/img2/deep_autoencoder.png)
 
-近年火爆的Attention模型，它的套路这里都有！
+Deep Autoencoder由两个对称的DBN组成，其中一个DBN通常有四到五个浅层，构成负责编码的部分，另一个四到五层的网络则是解码部分。
 
-https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA
+让我们用以下的示例来描绘一个编码器的大致结构：
 
-阿里北大提出新attention建模框架，一个模型预测多种行为
+784 (输入) ----> 1000 ----> 500 ----> 250 ----> 100 -----> 30
 
-https://mp.weixin.qq.com/s/Yq3S4WrsQRQC06GvRgGjTQ
+假设进入网络的输入是784个像素（MNIST数据集中28x28像素的图像），那么深度自动编码器的第一层应当有1000个参数，即相对较大。
 
-打入神经网络思维内部
+这可能会显得有违常理，因为参数多于输入往往会导致神经网络过拟合。
 
-https://mp.weixin.qq.com/s/MJ1578NdTKbjU-j3Uuo9Ww
+在这个例子当中， 增加参数从某种意义上来看也就是增加输入本身的特征，而这将使经过自动编码的数据最终能被解码。
 
-基于文档级问答任务的新注意力模型
+其原因在于每个层中用于变换的sigmoid置信单元的表示能力。sigmoid置信单元无法表示与实数数据等量的信息和差异，而补偿方法之一就是扩张第一个层。
 
-https://mp.weixin.qq.com/s/C4f0N_bVWU9YPY34t-HAEA
+各个层将分别有1000、500、250、100个节点，直至网络最终生成一个30个数值长的向量。这一30个数值的向量是深度自动编码器负责预定型的前半部分的最后一层，由一个普通的RBM生成，而不是一个通常会出现在深度置信网络末端的Softmax或逻辑回归分类输出层。
 
-UNC&Adobe提出模块化注意力模型MAttNet，解决指示表达的理解问题
+解码的DBN是一个完全相反的结构。
 
-https://mp.weixin.qq.com/s/V3brXuey7Gear0f_KAdq2A
-
-基于注意力机制的交易上下文感知推荐，悉尼科技大学和电子科技大学最新工作
-
-http://mp.weixin.qq.com/s/Bt6EMD4opHCnRoHKYitsUA
-
-结合人类视觉注意力进行图像分类
-
-https://zhuanlan.zhihu.com/p/27464080
-
-从《Convolutional Sequence to Sequence Learning》到《Attention Is All You Need》
-
-http://www.cnblogs.com/robert-dlut/p/8638283.html
-
-自然语言处理中的自注意力机制！
-
-# VAE
-
-变分自编码器（Variational Auto-Encoder，VAE）是Autoencoder的一种扩展。
-
-论文：
-
-《Auto-Encoding Variational Bayes》
-
-以下部分主要摘自：
-
-https://kexue.fm/archives/5253
-
-变分自编码器：原来是这么一回事
-
-## 分布变换
-
-通常我们会拿VAE跟GAN比较，的确，它们两个的目标基本是一致的——希望构建一个从隐变量Z生成目标数据X的模型，但是实现上有所不同。更准确地讲，它们是假设了Z服从某些常见的分布（比如正态分布或均匀分布），然后希望训练一个模型$$X=g(Z)$$，这个模型能够将原来的概率分布映射到训练集的概率分布，也就是说，它们的目的都是进行分布之间的映射。
-
-现在假设Z服从标准的正态分布，那么我就可以从中采样得到若干个$$Z_1, Z_2, \dots, Z_n$$，然后对它做变换得到$$\hat{X}_1 = g(Z_1),\hat{X}_2 = g(Z_2),\dots,\hat{X}_n = g(Z_n)$$，我们怎么判断这个通过f构造出来的数据集，它的分布跟我们目标数据集的分布是不是一样的呢？
-
-![](/images/img2/VAE.png)
-
-**生成模型的难题就是判断生成分布与真实分布的相似度，因为我们只知道两者的采样结果，不知道它们的分布表达式。**
-
-有读者说不是有KL散度吗？当然不行，因为KL散度是根据两个概率分布的表达式来算它们的相似度的，然而目前我们并不知道它们的概率分布的表达式，我们只有一批从构造的分布采样而来的数据$$\{\hat{X}_1,\hat{X}_2,\dots,\hat{X}_n\}$$，还有一批从真实的分布采样而来的数据$$\{X_1,X_2,\dots,X_n\}$$（也就是我们希望生成的训练集）。我们只有样本本身，没有分布表达式，当然也就没有方法算KL散度。
-
-虽然遇到困难，但还是要想办法解决的。GAN的思路很直接粗犷：既然没有合适的度量，那我干脆把这个度量也用神经网络训练出来吧。而VAE则使用了一个精致迂回的技巧。
-
+相比Autoencoder，Deep Autoencoder显然能够“消化”更复杂的数据。
 

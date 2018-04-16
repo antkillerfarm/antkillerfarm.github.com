@@ -60,6 +60,16 @@ CS 333: Robotics
 
 LIDAR：LIght Detection And Ranging
 
+LDW：lane departure warning，车道偏离警告系统
+
+LKS：lane keeping system，车道保持系统
+
+LCA：lane centering assist
+
+FCW：Forward Collision Warning，前向碰撞预警
+
+AEB：Automatic emergency braking，自动紧急刹车
+
 ## blog
 
 http://www.cnblogs.com/yhlx125/

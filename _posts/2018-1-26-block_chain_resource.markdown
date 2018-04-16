@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  区块链参考资源, CPU, 图像渲染
+title:  区块链参考资源, CPU, 图像渲染, 硬件, 数据库
 category: resource 
 ---
 
@@ -246,6 +246,24 @@ https://zhuanlan.zhihu.com/p/34858149
 
 128G的固态硬盘为什么有的标120G，有的标100G？固态硬盘容量背后的秘密
 
+https://zhuanlan.zhihu.com/p/30565679
+
+人工智能技术热潮中，是否存在破解苹果A11处理器的可能？
+
+https://mp.weixin.qq.com/s/UWpp2r0_yDxNyJk-cldVyA
+
+处理器高危漏洞无人幸免？树莓派：我们不受影响
+
+>最近的Meltdown和Spectre漏洞被炒的沸沸扬扬，然而能用python语言讲述复杂的CPU计算原理，这是该文的一大创见。
+
+https://mp.weixin.qq.com/s/v_BsfSFp-LwiCOFKaMIS_g
+
+后摩尔时代，如何给你的CPU减负？
+
+https://mp.weixin.qq.com/s/-2kGkJzjay2WJzIpMs2Adw
+
+IEEE盘点27款震撼世界的芯片
+
 # 图像渲染
 
 http://blog.csdn.net/pizi0475/article/details/6650851
@@ -270,4 +288,59 @@ https://zhuanlan.zhihu.com/p/33956771
 
 超算排名之中的地区和架构之争
 
+# 硬件
+
+https://mp.weixin.qq.com/s/ZPAE1CwhfD0PNT1MJ8erIw
+
+一种用于汽车防撞雷达的波束赋形阵列天线
+
+https://mp.weixin.qq.com/s/NwptdxWiN4SadjUQafA5rw
+
+高端MEMS固体波动陀螺的发展与应用
+
+https://mp.weixin.qq.com/s/ZexnsNmqsD2yq-7YNASohw
+
+数模转换器的基本原理及DAC类型简介
+
+https://mp.weixin.qq.com/s/1XmbkoRkXUtmR0pnENhfGA
+
+基于高速DDFS的高精度DAC的设计
+
+https://mp.weixin.qq.com/s/vmQKK9cEbBRIvd2uOzmC1w
+
+AN/TPS-78固态雷达系列
+
+https://mp.weixin.qq.com/s/UdKVffV42v0GnV6i8xMWOg
+
+PESA/AESA：无源/有源电子扫描阵列天线及其辐射方向图
+
+https://mp.weixin.qq.com/s/udl4hQQXY4FQDPLsWERhkg
+
+史上最全最详细无线通信频率分配表
+
+https://mp.weixin.qq.com/s/77BgUiwjQ8ryGNRjMCiBoQ
+
+“雷达电子战”常用公式
+
+# 数据库
+
+https://blog.csdn.net/zhengzhb/article/details/8590390
+
+SQL查找删除重复行
+
+https://mp.weixin.qq.com/s/k5gNa71eRbnxt_oSR-pmyw
+
+MySQL锁之源码探索
+
+https://mp.weixin.qq.com/s/09BlPee0-kP-At2aDyDbMw
+
+中国数据库40年历史：隐秘的江湖与恩怨
+
+https://mp.weixin.qq.com/s/4lZ7My6cs4-VJQ1qGhQxZg
+
+AliSQL X-Cluste：基于X-Paxos的高性能强一致MySQL数据库
+
+https://mp.weixin.qq.com/s/tPzBlQGxGq1WEnXz5ggpxg
+
+sysbench在美团点评中的应用
 

@@ -1,10 +1,20 @@
 ---
 layout: post
-title:  深度学习（十九）——FCN, SegNet, DeconvNet, DeepLab, ENet, GCN
+title:  深度学习（十九）——FCN, SegNet, DeconvNet, DeepLab, ENet
 category: DL 
 ---
 
-# 前DL时代的语义分割（续）
+# 前DL时代的语义分割
+
+## Normalized cut（续）
+
+针对这一情形，N-cut则提出了一种考虑全局信息的方法来进行图划分（Graph partitioning），即，将两个分割部分$$\bf{A},\bf{B}$$与全图节点的连接权重（$${\rm assoc(\bf{A},\bf{V})}$$和$$\rm assoc(\bf{B},\bf{V})$$）考虑进去：
+
+$$N_{cut}(\bf{A},\bf{B})=\frac{cut(\bf{A},\bf{B})}{assoc(\bf{A},\bf{V})}+\frac{cut(\bf{A},\bf{B})}{assoc(\bf{B},\bf{V})}$$
+
+如此一来，在离群点划分中，$$N_{cut}(\bf{A},\bf{B})$$中的某一项会接近1，而这样的图划分显然不能使得$$N_{cut}(\bf{A},\bf{B})$$是一个较小的值，故达到考虑全局信息而摒弃划分离群点的目的。这样的操作类似于机器学习中特征的规范化（Normalization）操作，故称为Normalized cut。N-cut不仅可以处理二类语义分割，而且将二分图扩展为K路（K-way）图划分即可完成多语义的图像语义分割，如下图例。
+
+![](/images/article/N_cut_2.jpg)
 
 ## Grab cut
 
@@ -241,34 +251,4 @@ ENet对Pooling操作进行了一定的修改：
 http://blog.csdn.net/zijinxuxu/article/details/67638290
 
 论文中文版blog
-
-# Global Convolutional Network
-
-Global Convolutional Network是孙剑团队的Chao Peng于2017年提出的。
-
-论文：
-
-《Large Kernel Matters -- Improve Semantic Segmentation by Global Convolutional Network》
-
->孙剑，西安交通大学博士（2003年）。后一直在微软亚洲研究院工作，担任首席研究员。2016年7月正式加入旷视科技担任首席科学家。
-
-![](/images/article/GCN.png)
-
-上图是论文的关键结构GCN，它主要用于计算超大卷积核。这里借鉴了Separable convolution的思想（将一个k x k的卷积运算，转换成1 x k + k x 1的卷积运算）。
-
-然而正如我们在《深度学习（九）》中指出的，不是所有的卷积核都满足可分离条件。单纯采用先1 x k后k x 1，或者先k x 1后1 x k，效果都是不好的。而将两者结合起来，可以有效提高计算的精度。
-
-![](/images/article/GCN_2.png)
-
-这是GCN提出的另一个新结构。
-
-![](/images/article/GCN_3.png)
-
-上图是GCN的整体结构图。
-
-参考：
-
-http://blog.csdn.net/bea_tree/article/details/60977512
-
-旷视最新：Global Convolutional Network
 

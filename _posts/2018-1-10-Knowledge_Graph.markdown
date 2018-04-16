@@ -235,3 +235,9 @@ https://blog.csdn.net/hadoopdevelop/article/details/79784722
 https://mp.weixin.qq.com/s/C1kd8pD0yLu9nO9JVW1pEw
 
 复旦大学肖仰华教授：知识图谱与认知智能
+
+https://mp.weixin.qq.com/s/SrhACueWelBAGU4sC2nBtg
+
+开放域中文知识图谱《大词林》
+
+

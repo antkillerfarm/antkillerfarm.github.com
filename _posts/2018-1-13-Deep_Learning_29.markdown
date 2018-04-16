@@ -1,196 +1,273 @@
 ---
 layout: post
-title:  深度学习（二十九）——RBM & DBN & Deep Autoencoder
+title:  深度学习（二十九）——语音识别, CTC
 category: DL 
 ---
 
-# VAE（续）
+# 语音识别
 
-## VAE的另一个介绍
+## WFST
 
-以下章节的内容主要摘自：
+Weighted-Finite-State-Transducer
 
-https://www.jeremyjordan.me/variational-autoencoders/
+https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/ParallelizingWFSTSpeechDecoders.ICASSP2016.pdf
 
-Variational autoencoders
+PARALLELIZING WFST SPEECH DECODERS
 
-该文中文版：
+http://www.cs.nyu.edu/~mohri/pub/csl01.pdf
 
-https://mp.weixin.qq.com/s/tRB85VF8XH9TTXZsiNVLhA
+Weighted Finite-State Transducers in Speech Recognition
 
-深入理解变分自编码器
+## Tacotron
 
-自编码器是发现数据的一些隐状态（不完整，稀疏，去噪，收缩）表示的模型。 更具体地说，输入数据被转换成一个编码向量，其中每个维度表示从数据学到的属性。 最重要的是编码器为每个编码维度输出单个值， 解码器随后接收这些值并尝试重新创建原始输入。
+论文：
 
-变分自编码器（VAE）提供了描述隐空间观察的概率方式。 因此，我们不需要构建一个输出单个值来描述每个隐状态属性的编码器，而是要用编码器描述每个隐属性的概率分布。
+《Tacotron: A Fully End-to-End Text-To-Speech Synthesis Model》
 
-举个例子，假设我们已经在一个大型人脸数据集上训练了一个Autoencoder模型, encoder的维度是6。理想情况下, 我们希望自编码器学习面部的描述性属性，比如肤色，人是否戴眼镜，从而能够用一些特征值来表示这些属性。
+![](/images/img2/Tacotron.png)
 
-![](/images/img2/VAE_7.png)
+![](/images/img2/Tacotron_2.png)
 
-在上面的示例中，我们使用单个值来描述输入图像的隐属性。 但是，我们其实更愿意用一个分布去表示每个隐属性。 比如, 输入蒙娜丽莎的照片，我们很难非常自信的为微笑属性分配一个具体值, 但是用了变分自编码器, 我们有能比较自信的说微笑属性服从什么分布。
+参考：
 
-![](/images/img2/VAE_8.png)
+https://mp.weixin.qq.com/s/MJE2JRYU7KakNKmHkD42CA
 
-通过这种方法，我们现在将给定输入的每个隐属性表示为概率分布。 当从隐状态解码时，我们将从每个隐状态分布中随机采样，来生成向量作为解码器的输入。
+谷歌发布TTS新系统Tacotron 2：直接从文本生成类人语音
 
-![](/images/img2/VAE_9.png)
+https://mp.weixin.qq.com/s/uh-Gh8BSxBi-jjG6-d7-UQ
 
-通过构造我们的编码器来输出一系列可能的值（统计分布），然后随机采样该值作为解码器的输入，我们能够学习到一个连续，平滑的隐空间。因此，在隐空间中彼此相邻的值应该与非常类似的重建相对应。而从隐分布中采样到的任何样本，我们都希望解码器理解, 并准确重构出来。
+Tacotron一种端到端的Text-to-Speech合成模型
 
-![](/images/img2/VAE_10.png)
+https://www.jiqizhixin.com/articles/2017-03-31-5
 
-我们可以进一步将此模型构造成神经网络架构：
-
-![](/images/img2/VAE_11.png)
-
-下图是VAE的结构图：
-
-![](/images/img2/VAE_12.png)
-
-Reparameterization Trick的图示：
-
-![](/images/img2/VAE_13.png)
-
-Reparameterization Trick的反向传播：
-
-![](/images/img2/VAE_14.png)
-
-## 数值计算 vs 采样计算
-
-VAE的基本概念到此差不多了，苏剑林君趁热打铁又写了以下理论文章：
-
-https://kexue.fm/archives/5343
-
-变分自编码器：从贝叶斯观点出发
-
-特将要点摘录如下。
-
-对于不是很熟悉概率统计的读者，容易混淆数值计算和采样计算的概念。
-
-已知概率密度函数p(x)，那么x的期望也就定义为：
-
-$$\mathbb{E}[x] = \int x p(x)dx\tag{1}$$
-
-如果要对它进行数值计算，也就是数值积分，那么可以选若干个有代表性的点$$x_0 < x_1 < \dots < x_n$$，然后得到：
-
-$$\mathbb{E}[x] \approx \sum_{i=1}^n x_i p(x_i) \left(\frac{x_i - x_{i-1}}{x_n - x_0}\right)\tag{2}$$
-
-如果从p(x)中采样若干个点$$x_1,x_2,\dots,x_n$$，那么我们有：
-
-$$\mathbb{E}[x] \approx \frac{1}{n}\sum_{i=1}^n x_i,\quad x_i \sim p(x)\tag{3}$$
-
-我们可以比较(2)跟(3)，它们的主要区别是(2)中包含了概率的计算而(3)中仅有x的计算，这是因为在(3)中$$x_i$$是从p(x)中依概率采样出来的，概率大的$$x_i$$出现的次数也多，所以可以说采样的结果已经包含了p(x)在里边，就不用再乘以$$p(x_i)$$了。
-
-## 生成模型近似
-
-对于二值数据，我们可以对decoder用sigmoid函数激活，然后用交叉熵作为损失函数，这对应于$$q(x\mid z)$$为伯努利分布；而对于一般数据，我们用MSE作为损失函数，这对应于$$q(x\mid z)$$为固定方差的正态分布。
+谷歌全端到端语音合成系统Tacotron：直接从字符合成语音
 
 ## 参考
 
-https://mp.weixin.qq.com/s/TqZnlXLKHhZn3U29PlqetA
+https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=400189223&idx=1&sn=1cb32bee42de626443ebadbf065ec79c
 
-变分自编码器VAE面临的挑战与发展方向
+百度贾磊：汉语语音识别技术重大突破：LSTM+CTC详解
 
-https://mp.weixin.qq.com/s/mtZ4_pwl8_GhitgImAU0VA
+https://www.zhihu.com/question/20398418
 
-一文读懂什么是变分自编码器
+语音识别的技术原理是什么？
 
-https://mp.weixin.qq.com/s/LQFuXgI7uZK2UKRfZvlVbA
+https://www.zhihu.com/question/46829056
 
-Variational AutoEncoder
+语音识别领域的最新进展目前是什么样的水准？
 
-https://mp.weixin.qq.com/s/lnSMdOk8fYfdU4aGeI5j7Q
+https://www.zhihu.com/question/29168274
 
-未标注的数据如何处理？一文读懂变分自编码器VAE
+语音识别中，如何理解HMM是一个生成模型，而DNN是一个判别模型呢？
 
-https://zhuanlan.zhihu.com/p/27549418
+https://zhuanlan.zhihu.com/p/24979135
 
-花式解释AutoEncoder与VAE
+从声学模型算法总结2016年语音识别的重大进步
 
-https://mp.weixin.qq.com/s/ZlLuhu08m_RnD-h86df8sA
+https://mp.weixin.qq.com/s/LsVhMaHrh8JgfpDra6KSPw
 
-清华大学提出SA-VAE框架，通过单样本/少样本学习生成任意风格的汉字
+横向对比5大开源语音识别工具包
 
-https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
+https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw
 
-面向无监督任务：DeepMind提出神经离散表示学习生成模型VQ-VAE
+SampleRNN语音合成模型
 
-https://kexue.fm/archives/5332
+https://mp.weixin.qq.com/s/zEqgDh6_fnDgXEI8MC9cmg
 
-基于CNN和VAE的作诗机器人：随机成诗
+端对端的深度卷积神经网络在语音识别中的应用
 
-https://kexue.fm/archives/5383
+https://mp.weixin.qq.com/s/pimQBFd5uxrZk4dSgUsblg
 
-变分自编码器：这样做为什么能成？
+苹果机器学习期刊“Siri三部曲”之一：通过跨带宽和跨语言初始化提升神经网络声学模型
 
-https://mp.weixin.qq.com/s/TJDGZvAvT7KamR_WN-oYYw
+https://mp.weixin.qq.com/s/u1R7NUg_kgI_mpjIFrO02A
 
-如何使用变分自编码器VAE生成动漫人物形象
+探索Siri背后的技术：将逆文本标准化（ITN）转化为标签问题
 
-# RBM & DBN & Deep Autoencoder
+https://mp.weixin.qq.com/s/2xpwLVHT8qU68uoV7Uj2cw
 
-## RBM
+小米的语音识别系统是如何搭建的
 
-Restricted Boltzmann Machines由Hinton发明，是一种用于降维、分类、回归、协同过滤、特征学习和主题建模的算法。
+https://mp.weixin.qq.com/s/xAO7mX64miTXE8E2vZ5q_w
 
-![](/images/img2/multiple_inputs_RBM.png)
+Facebook开源TTS神经网络VoiceLoop：基于室外声音的语音合成
 
-在重构阶段，第一隐藏层的激活值成为反向传递中的输入。这些输入值与同样的权重相乘，每两个相连的节点之间各有一个权重，就像正向传递中输入x的加权运算一样。这些乘积的和再与每个可见层的偏差相加，所得结果就是重构值，亦即原始输入的近似值。这一过程可以用下图来表示：
+https://mp.weixin.qq.com/s/CVBSvQwnDqT-IVCZV7idog
 
-![](/images/img2/reconstruction_RBM.png)
+极限元语音算法专家刘斌：基于深度学习的语音生成问题
 
-由于RBM权重初始值是随机决定的，重构值与原始输入之间的差别通常很大。可以将r值与输入值之差视为重构误差，此误差值随后经由反向传播来修正RBM的权重，如此不断反复，直至误差达到最小。
+https://mp.weixin.qq.com/s/cYBMy4TIhcutvrAt0y70Ow
 
-由此可见，RBM在正向传递中使用输入值来预测节点的激活值，亦即输入为加权的x时输出的概率：$$p(a\mid x; w)$$。
+腾讯AI Lab副主任俞栋：过去两年基于深度学习的声学模型进展
 
-但在反向传递时，激活值成为输入，而输出的是对于原始数据的重构值，或者说猜测值。此时RBM则是在尝试估计激活值为a时输入为x的概率，激活值的加权系数与正向传递中的权重相同。 第二个阶段可以表示为$$p(x\mid a; w)$$。
+https://mp.weixin.qq.com/s/cvSz5Pxe3z54Tl5z3WTbQA
 
-上述两种预测值相结合，可以得到输入x和激活值a的联合概率分布，即$$p(x, a)$$。
+手把手教你在音频分类DCASE2017比赛中夺冠
 
-重构与回归、分类运算不同。回归运算根据许多输入值估测一个连续值，分类运算是猜测应当为一个特定的输入样例添加哪种具体的标签。
+https://blog.csdn.net/ffmpeg4976/article/details/52347845
 
-而重构则是在猜测原始输入的概率分布，亦即同时预测许多不同的点的值。这被称为生成学习，必须和分类器所进行的判别学习区分开来，后者是将输入值映射至标签，用直线将数据点划分为不同的组。
+语音识别系统及科大讯飞最新实践
 
-RBM用KL散度来衡量预测的概率分布与输入值的基准分布之间的距离。
+https://mp.weixin.qq.com/s/UGhkTavbh21vBhtrrBeTfw
 
-最后一点：你会发现RBM有两个偏差值。这是RBM与其他自动编码器的区别所在。隐藏的偏差值帮助RBM在正向传递中生成激活值（因为偏差设定了下限，所以无论数据有多稀疏，至少有一部分节点会被激活），而可见层的偏差则帮助RBM通过反向传递学习重构数据。
+麦克风阵列的语音信号处理技术
 
-权重能够近似模拟出数据的特征后，也就为下一步的学习奠定了良好基础，比如可以在随后的有监督学习阶段使用深度置信网络来对图像进行分类。
+https://mp.weixin.qq.com/s/1ZWrTdd3S5zYRyANfFmBOw
 
-RBM有许多用途，其中最强的功能之一就是对权重进行合理的初始化，为之后的学习和分类做好准备。从某种意义上来说，RBM的作用与反向传播相似：让权重能够有效地模拟数据。可以认为预训练和反向传播是实现同一个目的的不同方法，二者可以相互替代。
+声学模型
 
-## DBN
+https://mp.weixin.qq.com/s/mY2__KWvdAd8ZcNm-voSsg
 
-RBM不仅可以单独使用，也可以堆叠起来形成Deep Belief Nets(DBNs)，其中每个RBM层都与其前后的层进行通信。单个层中的节点之间不会横向通信。
+语音识别之解码器技术简介
 
-深度置信网络可以直接用于处理无监督学习中的未标记数据聚类问题，也可以在RBM层的堆叠结构最后加上一个Softmax层来构成分类器。
+http://mp.weixin.qq.com/s/-QQjz61VAOVcWE7j-EJPhg
 
-除了第一个和最后一个层，深度置信网络中的每一层都扮演着双重角色：既是前一层节点的隐藏层，也是后一层节点的输入（或“可见”）层。深度置信网络是由多个单层网络组成的。
+谈谈蚂蚁金服的语音唤醒系统
 
-深度置信网络常用于图像、视频序列和动作捕捉数据的识别、聚类与生成。
+http://mp.weixin.qq.com/s/0WNJq4OLZlZETKPf1Ewq7w
 
-## Deep Autoencoder
+浅谈语音测试方案
 
-![](/images/img2/deep_autoencoder.png)
+https://mp.weixin.qq.com/s/KBLCrupGIuPa5nVrxcS5WQ
 
-Deep Autoencoder由两个对称的DBN组成，其中一个DBN通常有四到五个浅层，构成负责编码的部分，另一个四到五层的网络则是解码部分。
+新研究将GRU简化成单门架构，或更适用于语音识别
 
-让我们用以下的示例来描绘一个编码器的大致结构：
+https://mp.weixin.qq.com/s/b0bOf1bZ2p0yWMzhp66HhA
 
-784 (输入) ----> 1000 ----> 500 ----> 250 ----> 100 -----> 30
+A flight (to Boston) to Denver-基于转移的顺滑技术研究
 
-假设进入网络的输入是784个像素（MNIST数据集中28x28像素的图像），那么深度自动编码器的第一层应当有1000个参数，即相对较大。
+https://mp.weixin.qq.com/s/0AvV268s3TZ0z8WwtJv6sw
 
-这可能会显得有违常理，因为参数多于输入往往会导致神经网络过拟合。
+一文概览语音识别中尚未解决的问题
 
-在这个例子当中， 增加参数从某种意义上来看也就是增加输入本身的特征，而这将使经过自动编码的数据最终能被解码。
+https://mp.weixin.qq.com/s/T96S0b7Lp9YWR4cRcMQr6A
 
-其原因在于每个层中用于变换的sigmoid置信单元的表示能力。sigmoid置信单元无法表示与实数数据等量的信息和差异，而补偿方法之一就是扩张第一个层。
+一文概览基于深度学习的监督语音分离
 
-各个层将分别有1000、500、250、100个节点，直至网络最终生成一个30个数值长的向量。这一30个数值的向量是深度自动编码器负责预定型的前半部分的最后一层，由一个普通的RBM生成，而不是一个通常会出现在深度置信网络末端的Softmax或逻辑回归分类输出层。
+https://mp.weixin.qq.com/s/TTPpOOxSLbCgOmAsI9TLiw
 
-解码的DBN是一个完全相反的结构。
+百度发布Deep Voice 3：全卷积注意力机制TTS系统
 
-相比Autoencoder，Deep Autoencoder显然能够“消化”更复杂的数据。
+http://mp.weixin.qq.com/s/xRA9Xh-FTrhbIg0wLnfzhA
+
+温正棋谈语音质检方案：从关键词检索到情感识别
+
+https://mp.weixin.qq.com/s/XUHS4o2G-iGuV9uuOmfBdQ
+
+为什么在说话人识别技术中，PLDA面对神经网络依然坚挺？
+
+https://mp.weixin.qq.com/s/zWmJ3uXnFtXaI2BotoadHA
+
+从技术到产品，苹果Siri深度学习语音合成技术揭秘
+
+https://mp.weixin.qq.com/s/I2nbzD2QqSYgahI2jLjYTQ
+
+批训练、注意力模型及其声纹分割应用，谷歌三篇论文揭示其声纹识别技术原理
+
+https://mp.weixin.qq.com/s/XP4NVYMmKj9RLsgonP3ooQ
+
+无需进行滤波后处理，利用循环推断算法实现歌唱语音分离
+
+https://mp.weixin.qq.com/s/GZI4uvCR3QzZDNddpBX2OQ
+
+深度学习也解决不掉语音识别问题
+
+https://mp.weixin.qq.com/s/w9_D1_VVhk9md4RANaipDg
+
+Mozilla开源语音识别模型和世界第二大语音数据集
+
+https://mp.weixin.qq.com/s/E8brCI73IWY3P47IYPxSkg
+
+谷歌发布全新端到端语音识别系统：词错率降至5.6%
+
+http://www.cnblogs.com/qcloud1001/p/7941158.html
+
+详解卷积神经网络（CNN）在语音识别中的应用
+
+https://mp.weixin.qq.com/s/6xxXOx59lDZx0kUPb_ftBA
+
+漫谈语音合成之Char2Wav模型
+
+https://mp.weixin.qq.com/s/grqKRvv4dwKU26zT1qhq2g
+
+Facebook开源语音识别工具包wav2letter
+
+https://mp.weixin.qq.com/s/OeCiH4n-Y3kigI3ynMyZSg
+
+有趣的研究奥巴马Net：从文本合成真实的唇语口型
+
+https://mp.weixin.qq.com/s/8e4bkyTJIxHZ1y95GshA0Q
+
+开源的语音合成系统WORLD介绍以及使用方法
+
+https://mp.weixin.qq.com/s/mRmbrUJ2MgeDxbZn_0UiIQ
+
+2017年深度学习总结：文本和语音应用
+
+https://mp.weixin.qq.com/s/JSnyE2k7jqd5GR1lHA6WUg
+
+阿里巴巴Oral论文：用于语音合成的深度前馈序列记忆网络
+
+https://mp.weixin.qq.com/s/H77iom38lTR0KzeFXrdWew
+
+DeepMind与谷歌大脑联手推出WaveRNN，移动端合成高保真音频媲美WaveNet
+
+https://mp.weixin.qq.com/s/p_VjFwwDCu1i_ovUljaoVw
+
+阿里巴巴语音交互智能团队：基于线性网络的语音合成说话人自适应
+
+https://mp.weixin.qq.com/s/xR172RUG3JO59_2cJj_U2A
+
+显著超越流行长短时记忆网络，阿里提出DFSMN语音识别声学模型
+
+https://mp.weixin.qq.com/s/9QrahPP1gDM3eMNgx91spA
+
+深度学习也能实现“鸡尾酒会效应”：谷歌提出新型音频-视觉语音分离模型
+
+# CTC
+
+## 概述
+
+Connectionist Temporal Classification，是一种改进的RNN模型。它主要解决的是时序模型中，输入数大于输出数，输入输出如何对齐的问题。它由Alex Graves于2006年提出。
+
+论文：
+
+《Connectionist Temporal Classification: Labelling Unsegmented
+Sequence Data with Recurrent Neural Networks》
+
+>Alex Graves，瑞士IDSIA研究所博士，DeepMind研究员。
+
+![](/images/img2/CTC.png)
+
+上图展示了音频数据被识别的过程：
+
+1.将音频数据均分成若干段，每段匹配一个音节。
+
+2.合并重复的音节，并去掉分割音节（即上图中的$$\epsilon$$）。
+
+相比于图像识别，人类语音的音节种类要少的多。但麻烦的是，一个音节的长短，会由于语速等因素的改变，而有较大差异。因此如何将数据段和音节匹配，成为了语音识别的难点。
+
+这个问题不只是在语音识别中出现，我们在其他许多地方也能看到它。比如手写体识别、视频行为标注等。
+
+![](/images/img2/CTC_2.png)
+
+我们首先用数学的方式定义对齐问题。假设输入序列为$$X=[x_1,x_2,\dots,x_T]$$，输出序列为$$Y=[y_1,y_2,\dots,y_U]$$，所谓对齐问题就是将X映射到Y。
+
+这里的主要问题在于：
+
+1.X和Y的长度可以变。
+
+2.X和Y的长度比例可变。
+
+3.我们没有一个X和Y之间的准确的对齐（对应元素）。
+
+CTC算法可以克服这些挑战。对于一个给定的X，它给我们一个所有可能Y值的输出分布。我们可以使用这个分布来推断可能的输出或者评估一个给定输出的概率。
+
+并不是所有的计算损失函数和执行推理的方法都是易于处理的。我们要求CTC可以有效地做到这两点。
+
+**损失函数**：对于给定的输入，我们希望训练模型来最大化分配到正确答案的概率。 为此，我们需要有效地计算条件概率$$p(Y \mid X)$$。 函数$$p(Y \mid X)$$也应该是可微的，可以使用梯度下降。
+
+**推理**：在我们训练好模型后，我们希望使用它来推断给定X的最可能的Y。即：
+
+$$Y^*=\mathop{\text{argmax}}_{Y} p(Y \mid X)$$
 

@@ -1,190 +1,97 @@
 ---
 layout: post
-title:  深度学习（二十六）——L2 Normalization, Attention（1）
+title:  深度学习（二十六）——VAE
 category: DL 
 ---
 
-# L2 Normalization
+# VAE（续）
 
-L2 Normalization本身并不复杂，然而多数资料都只提到1维的L2 Normalization的计算公式：
+## VAE的传统理解
 
-$$x=[x_1,x_2,\dots,x_d]\\
-y=[y_1,y_2,\dots,y_d]\\
-y=\frac{x}{\sqrt{\sum_{i=1}^dx_i^2}}=\frac{x}{\sqrt{x^Tx}}
-$$
+首先我们有一批数据样本$$\{X_1,\dots,X_n\}$$，其整体用X来描述，我们本想根据$$\{X_1,\dots,X_n\}$$得到X的分布p(X)，如果能得到的话，那我直接根据p(X)来采样，就可以得到所有可能的X了（包括$$\{X_1,\dots,X_n\}$$以外的），这是一个终极理想的生成模型了。当然，这个理想很难实现，于是我们将分布改一改：
 
-对于多维L2 Normalization几乎未曾提及，这里以3维tensor：A[width, height, channel]为例介绍一下多维L2 Normalization的计算方法。
+$$p(X)=\sum_Z p(X|Z)p(Z)$$
 
-多维L2 Normalization有一个叫axis(有时也叫dim)的参数，如果axis=0的话，实际上就是将整个tensor flatten之后，再L2 Normalization。这个是比较简单的。
+此时$$p(X\mid Z)$$就描述了一个由Z来生成X的模型，而我们假设Z服从标准正态分布，也就是$$p(Z)=\mathcal{N}(0,I)$$。如果这个理想能实现，那么我们就可以先从标准正态分布中采样一个Z，然后根据Z来算一个X，也是一个很棒的生成模型。接下来就是结合自编码器来实现重构，保证有效信息没有丢失，再加上一系列的推导，最后把模型实现。框架的示意图如下：
 
-这里说说axis=3的情况。axis=3意味着对channel进行Normalization，也就是：
+![](/images/img2/VAE_2.png)
 
-$$B_{xy}=\sum_{z=0}^Z \sqrt{A_{xyz}^2}\\
-C_{xyz}=\frac{A_{xyz}}{B_{xy}}\\
-D_{xyz}=C_{xyz} \cdot S_{z}
-$$
+看出了什么问题了吗？如果像这个图的话，我们其实完全不清楚：究竟经过重新采样出来的$$Z_k$$，是不是还对应着原来的$$X_k$$，所以我们如果直接最小化$$\mathcal{D}(\hat{X}_k,X_k)^2$$（这里D代表某种距离函数）是很不科学的，而事实上你看代码也会发现根本不是这样实现的。
 
-一般来说，求出C被称作L2 Normalization，而求出D被称作L2 Scale Normalization，S被称为Scale。
+## VAE初现
 
-# Attention
+其实，在整个VAE模型中，我们并没有去使用p(Z)（先验分布）是正态分布的假设，我们用的是假设$$p(Z\mid X)$$（后验分布）是正态分布！！
 
-## 概述
+具体来说，给定一个真实样本$$X_k$$，我们假设存在一个专属于$$X_k$$的分布$$p(Z\mid X_k)$$（学名叫后验分布），并进一步假设这个分布是（独立的、多元的）正态分布。为什么要强调“专属”呢？因为我们后面要训练一个生成器$$X=g(Z)$$，希望能够把从分布$$p(Z\mid X_k)$$采样出来的一个$$Z_k$$还原为$$X_k$$。如果假设p(Z)是正态分布，然后从p(Z)中采样一个Z，那么我们怎么知道这个Z对应于哪个真实的X呢？现在$$p(Z\mid X_k)$$专属于$$X_k$$，我们有理由说从这个分布采样出来的Z应该要还原到$$X_k$$中去。
 
-众所周知，RNN在处理长距离依赖关系时会出现问题。理论上，LSTM这类结构能够处理这个问题，但在实践中，长距离依赖关系仍旧是个问题。例如，研究人员发现将原文倒序（将其倒序输入编码器）产生了显著改善的结果，因为从解码器到编码器对应部分的路径被缩短了。同样，两次输入同一个序列似乎也有助于网络更好地记忆。
+这样有多少个X就有多少个正态分布了。我们知道正态分布有两组参数：均值$$\mu$$和方差$$\sigma^2$$（多元的话，它们都是向量），那我怎么找出专属于$$X_k$$的正态分布$$p(Z\mid X_k)$$的均值和方差呢？好像并没有什么直接的思路。那好吧，就用神经网络拟合出来吧！
 
-倒序句子这种方法属于“hack”手段。它属于被实践证明有效的方法，而不是有理论依据的解决方法。
+![](/images/img2/VAE_3.png)
 
-大多数翻译的基准都是用法语、德语等语种，它们和英语非常相似（即使汉语的词序与英语也极其相似）。但是有些语种（像日语）句子的最后一个词语在英语译文中对第一个词语有高度预言性。那么，倒序输入将使得结果更糟糕。
+于是我们构建两个神经网络$$\mu_k = f_1(X_k),\log \sigma^2 = f_2(X_k)$$来算它们了。我们选择拟合$$\log \sigma^2$$而不是直接拟合$$\sigma^2$$，是因为$$\sigma^2$$总是非负的，需要加激活函数处理，而拟合$$\log \sigma^2$$不需要加激活函数，因为它可正可负。到这里，知道专属于$$X_k$$的均值和方差，也就知道它的正态分布长什么样了，然后从这个专属分布中采样一个$$Z_k$$出来，经过一个生成器得到$$\hat{X}_k=g(Z_k)$$，现在我们可以放心地最小化$$\mathcal{D}(\hat{X}_k,X_k)^2$$，因为$$Z_k$$是从专属$$X_k$$的分布中采样出来的，这个生成器应该要把开始的$$X_k$$还原回来。
 
-还有其它办法吗？那就是Attention机制。
+## 分布标准化
 
-![](/images/article/attention.png)
+让我们来思考一下，根据上图的训练过程，最终会得到什么结果。
 
-上图是Attention机制的结构图。y是编码器生成的译文词语，x是原文的词语。上图使用了双向递归网络，但这并不是重点，你先忽略反向的路径吧。重点在于现在每个解码器输出的词语$$y_t$$取决于所有输入状态的一个权重组合，而不只是最后一个状态。a是决定每个输入状态对输出状态的权重贡献。因此，如果$$a_{3,2}$$的值很大，这意味着解码器在生成译文的第三个词语时，会更关注于原文句子的第二个状态。a求和的结果通常归一化到1（因此它是输入状态的一个分布）。
+首先，我们希望重构X，也就是最小化$$\mathcal{D}(\hat{X}_k,X_k)^2$$，但是这个重构过程受到噪声的影响，因为$$Z_k$$是通过重新采样过的，不是直接由encoder算出来的。显然噪声会增加重构的难度，不过好在这个噪声强度（也就是方差）通过一个神经网络算出来的，所以最终模型为了重构得更好，肯定会想尽办法让方差为0。而方差为0的话，也就没有随机性了，所以不管怎么采样其实都只是得到确定的结果（也就是均值）。说白了，**模型会慢慢退化成普通的AutoEncoder，噪声不再起作用。**
 
-Attention机制的一个主要优势是它让我们能够解释并可视化整个模型。举个例子，通过对attention权重矩阵a的可视化，我们能够理解模型翻译的过程。
+为了使模型具有生成能力，VAE决定让所有的$$p(Z\mid X)$$都向标准正态分布看齐。如果所有的$$p(Z\mid X)$$都很接近标准正态分布$$\mathcal{N}(0,I)$$，那么根据定义：
 
-![](/images/article/attention_2.png)
+$$p(Z)=\sum_X p(Z|X)p(X)=\sum_X \mathcal{N}(0,I)p(X)=\mathcal{N}(0,I) \sum_X p(X) = \mathcal{N}(0,I)$$
 
-我们注意到当从法语译为英语时，网络模型顺序地关注每个输入状态，但有时输出一个词语时会关注两个原文的词语，比如将“la Syrie”翻译为“Syria”。
+这样我们就能达到我们的先验假设：p(Z)是标准正态分布。然后我们就可以放心地从$$\mathcal{N}(0,I)$$中采样来生成图像了。
 
-如果再仔细观察attention的等式，我们会发现attention机制有一定的成本。我们需要为每个输入输出组合分别计算attention值。50个单词的输入序列和50个单词的输出序列需要计算2500个attention值。这还不算太糟糕，但如果你做字符级别的计算，而且字符序列长达几百个字符，那么attention机制将会变得代价昂贵。
+那怎么让所有的$$p(Z\mid X)$$都向$$\mathcal{N}(0,I)$$看齐呢？如果没有外部知识的话，其实最直接的方法应该是在重构误差的基础上中加入额外的loss：
 
-attention机制解决的根本问题是允许网络返回到输入序列，而不是把所有信息编码成固定长度的向量。正如我在上面提到，我认为使用attention有点儿用词不当。换句话说，attention机制只是简单地让网络模型访问它的内部存储器，也就是编码器的隐藏状态。在这种解释中，网络选择从记忆中检索东西，而不是选择“注意”什么。不同于典型的内存，这里的内存访问机制是弹性的，也就是说模型检索到的是所有内存位置的加权组合，而不是某个独立离散位置的值。弹性的内存访问机制好处在于我们可以很容易地用反向传播算法端到端地训练网络模型（虽然有non-fuzzy的方法，其中的梯度使用抽样方法计算，而不是反向传播）。
+$$\mathcal{L}_{\mu}=\Vert f_1(X_k)\Vert^2,\mathcal{L}_{\sigma^2}=\Vert f_2(X_k)\Vert^2$$
 
-论文：
+因为它们分别代表了均值$$\mu_k$$和方差的对数$$\log \sigma^2$$，达到$$\mathcal{N}(0,I)$$就是希望二者尽量接近于0了。不过，这又会面临着这两个损失的比例要怎么选取的问题，选取得不好，生成的图像会比较模糊。所以，原论文直接算了一般（各分量独立的）正态分布与标准正态分布的KL散度$$KL\Big(N(\mu,\sigma^2)\Big\Vert N(0,I)\Big)$$作为这个额外的loss，计算结果为：
 
-《Learning to combine foveal glimpses with a third-order Boltzmann machine》
+$$\mathcal{L}_{\mu,\sigma^2}=\frac{1}{2} \sum_{i=1}^d \Big(\mu_{(i)}^2 + \sigma_{(i)}^2 - \log \sigma_{(i)}^2 - 1\Big)$$
 
-《Learning where to Attend with Deep Architectures for Image Tracking》
+这里的d是隐变量Z的维度，而$$\mu_{(i)}$$和$$\sigma_{(i)}^2$$分别代表一般正态分布的均值向量和方差向量的第i个分量。直接用这个式子做补充loss，就不用考虑均值损失和方差损失的相对比例问题了。显然，这个loss也可以分两部分理解：
 
-《Neural Machine Translation by Jointly Learning to Align and Translate》
+$$\begin{aligned}&\mathcal{L}_{\mu,\sigma^2}=\mathcal{L}_{\mu} + \mathcal{L}_{\sigma^2}\\ 
+&\mathcal{L}_{\mu}=\frac{1}{2} \sum_{i=1}^d \mu_{(i)}^2=\frac{1}{2}\Vert f_1(X)\Vert^2\\ 
+&\mathcal{L}_{\sigma^2}=\frac{1}{2} \sum_{i=1}^d\Big(\sigma_{(i)}^2 - \log \sigma_{(i)}^2 - 1\Big)\end{aligned}$$
 
-## Neural Turing Machines
+## Reparameterization Trick
 
-以下章节主要翻译自下文：
+这是实现模型的一个技巧。我们要从$$p(Z\mid X_k)$$中采样一个$$Z_k$$出来，尽管我们知道了$$p(Z\mid X_k)$$是正态分布，但是均值方差都是靠模型算出来的，我们要靠这个过程反过来优化均值方差的模型，但是“采样”这个操作是不可导的，而采样的结果是可导的，于是我们利用了一个事实：
 
-https://distill.pub/2016/augmented-rnns/
+>从$$\mathcal{N}(\mu,\sigma^2)$$中采样一个Z，相当于从$$\mathcal{N}(0,I)$$中采样一个$$\varepsilon$$，然后让$$Z=\mu + \varepsilon \times \sigma$$。
 
-Attention and Augmented Recurrent Neural Networks
+![](/images/img2/VAE_4.png)
 
->distill.pub虽然blog数量不多，但篇篇都是经典。背后站台的更有Yoshua Bengio、Ian Goodfellow、Andrej Karpathy等大牛。
+于是，我们将从$$\mathcal{N}(\mu,\sigma^2)$$采样变成了从$$\mathcal{N}(0,I)$$中采样，然后通过参数变换得到从$$\mathcal{N}(\mu,\sigma^2)$$中采样的结果。这样一来，“采样”这个操作就不用参与梯度下降了，改为采样的结果参与，使得整个模型可训练了。
 
-该文主要讲述了Attention在RNN领域的应用。
+## VAE本质
 
-----
+VAE本质上就是在我们常规的自编码器的基础上，对encoder的结果（在VAE中对应着计算均值的网络）加上了“高斯噪声”，使得结果decoder能够对噪声有鲁棒性；而那个额外的KL loss（目的是让均值为0，方差为1），事实上就是相当于对encoder的一个正则项，希望encoder出来的东西均有零均值。
 
-NTM是一种使用Neural Network为基础来实现传统图灵机的理论计算模型。利用该模型，可以通过训练的方式让系统“学会”具有时序关联的任务流。
+那另外一个encoder（对应着计算方差的网络）的作用呢？它是用来动态调节噪声的强度的。直觉上来想，当decoder还没有训练好时（重构误差远大于KL loss），就会适当降低噪声（KL loss增加），使得拟合起来容易一些（重构误差开始下降）；反之，如果decoder训练得还不错时（重构误差小于KL loss），这时候噪声就会增加（KL loss减少），使得拟合更加困难了（重构误差又开始增加），这时候decoder就要想办法提高它的生成能力了。
 
-图灵机的详细定义可参见：
+![](/images/img2/VAE_5.png)
 
-https://baike.baidu.com/item/图灵机
+简言之，**重构的过程是希望没噪声的，而KL loss则希望有高斯噪声的，两者是对立的。所以，VAE跟GAN一样，内部其实是包含了一个对抗的过程，只不过它们两者是混合起来，共同进化的。**
 
-![](/images/img2/NTM.png)
+## 正态分布？
 
-和传统图灵机相比，这里的memory中保存的是向量，我们的目标是根据输入序列，确定读写操作。具体的步骤如下图所示：
+对于$$p(Z\mid X)$$的分布，是不是必须选择正态分布？可以选择均匀分布吗？
 
-![](/images/img2/NTM_2.png)
+正态分布有两组独立的参数：均值和方差，而均匀分布只有一组。前面我们说，在VAE中，重构跟噪声是相互对抗的，重构误差跟噪声强度是两个相互对抗的指标，而在改变噪声强度时原则上需要有保持均值不变的能力，不然我们很难确定重构误差增大了，究竟是均值变化了（encoder的锅）还是方差变大了（噪声的锅）。而均匀分布不能做到保持均值不变的情况下改变方差，所以正态分布应该更加合理。
 
-1.计算query vector和memory中每个vector的相似度。
+## 条件VAE
 
-2.将相似度softmax为一个分布。
+最后，因为目前的VAE是无监督训练的，因此很自然想到：如果有标签数据，那么能不能把标签信息加进去辅助生成样本呢？这个问题的意图，往往是希望能够实现控制某个变量来实现生成某一类图像。当然，这是肯定可以的，我们把这种情况叫做Conditional VAE，或者叫CVAE。（相应地，在GAN中我们也有个CGAN。）
 
-3.用之前训练好的attention模型调整分布值。
+但是，CVAE不是一个特定的模型，而是一类模型，总之就是把标签信息融入到VAE中的方式有很多，目的也不一样。这里基于前面的讨论，给出一种非常简单的VAE。
 
-4.图灵机的Shift操作也可以引入attention模型。
+![](/images/img2/VAE_6.png)
 
-5.sharpen分布值，选择最终的读写操作。sharpen操作，实际上就是选择较大的概率值，而忽略较小的概率值。
+在前面的讨论中，我们希望X经过编码后，Z的分布都具有零均值和单位方差，这个“希望”是通过加入了KL loss来实现的。如果现在多了类别信息Y，我们可以希望同一个类的样本都有一个专属的均值$$\mu^Y$$（方差不变，还是单位方差），这个$$\mu^Y$$让模型自己训练出来。这样的话，有多少个类就有多少个正态分布，而在生成的时候，我们就可以通过控制均值来控制生成图像的类别。事实上，这样可能也是在VAE的基础上加入最少的代码来实现CVAE的方案了，因为这个“新希望”也只需通过修改KL loss实现：
 
-## Attentional Interfaces
+$$\mathcal{L}_{\mu,\sigma^2}=\frac{1}{2} \sum_{i=1}^d\Big[\big(\mu_{(i)}-\mu^Y_{(i)}\big)^2 + \sigma_{(i)}^2 - \log \sigma_{(i)}^2 - 1\Big]$$
 
-以下是另外的一些Attention的用例。
-
-![](/images/img2/Attention.png)
-
-上图中，一个RNN模型可以输入另一个RNN模型的输出。它在每一步都会关注另一个RNN模型的不同位置。
-
-![](/images/img2/Attention_2.png)
-
-这是一个和NTM非常类似的模型。RNN模型生成一个搜索词描述其希望关注的位置。然后计算每条内容与搜索词的点乘得分，表示其与搜索词的匹配程度。这些分数经过softmax函数的运算产生聚焦的分布。
-
-![](/images/img2/Attention_3.png)
-
-上图是语言翻译方面的模型。若用传统的序列到序列模型做翻译，需要把整个输入词汇串缩简为单个向量，然后再展开恢复为序列目标语言的词汇串。Attention机制则可以避免上述操作，RNN模型逐个处理输入词语的信息，随即生成相对应的词语。
-
-![](/images/img2/Attention_4.png)
-
-RNN模型之间的这类聚焦还有许多其它的应用。它可以用于语音识别，其中一个RNN模型处理语音信号，另一个RNN模型则滑动处理其输出，然后关注相关的区域生成文本内容。
-
-## Adaptive Computation Time
-
-标准的RNN模型每一步所消耗的计算时间都相同。这似乎与我们的直觉不符。我们在思考难题的时候难道不需要更多的时间吗？
-
-适应性计算时间（Adaptive Computation Time）是解决RNN每一步消耗不同计算量的方法。笼统地说：就是让RNN模型可以在每个时间片段内进行不同次数的计算步骤。
-
-![](/images/img2/ACT.png)
-
-上图是ACT的网络结构图。下面来分步讲解一下。
-
-![](/images/img2/ACT_2.png)
-
-这一步就是典型的RNN+输出各个状态的带权重组合。
-
-![](/images/img2/ACT_3.png)
-
-每一步的权重值由“halting neuron”决定。这个神经元事实上是一个sigmoid函数，输出一个终止权重，可以理解为需要在当前步骤终止的概率值。
-
-![](/images/img2/ACT_4.png)
-
-停止权重值的总和等于1，每一步结束后要减去相应的值。一旦这个值小于了epsilon，我们就停止计算。
-
-![](/images/img2/ACT_5.png)
-
-当训练Adaptive Computation Time模型时，可以在损失函数添加一项“ponder cost”，用来惩罚模型的累积计算时间。这一项的值越大，就更不倾向于降低计算时间。
-
-## Scaled Dot-Product Attention
-
-以下内容摘自：
-
-https://kexue.fm/archives/4765
-
-《Attention is All You Need》浅读
-
-《Attention is All You Need》是Google 2017年的作品。论文中提出了若干Attention的变种。比如下图所示的Scaled Dot-Product Attention。
-
-![](/images/img2/Attention_5.png)
-
-上图用公式表述就是：
-
-$$Attention(\boldsymbol{Q},\boldsymbol{K},\boldsymbol{V}) = softmax\left(\frac{\boldsymbol{Q}\boldsymbol{K}^{\top}}{\sqrt{d_k}}\right)\boldsymbol{V}$$
-
-如果忽略激活函数softmax的话，那么事实上它就是三个$$n\times d_k,d_k\times m, m\times d_v$$的矩阵相乘，最后的结果就是一个$$n\times d_v$$的矩阵。于是我们可以认为：这是一个Attention层，将$$n\times d_k$$的序列Q编码成了一个新的$$n\times d_v$$的序列。
-
-那怎么理解这种结构呢？我们不妨逐个向量来看。
-
-$$Attention(\boldsymbol{q}_t,\boldsymbol{K},\boldsymbol{V}) = \sum_{s=1}^m \frac{1}{Z}\exp\left(\frac{\langle\boldsymbol{q}_t, \boldsymbol{k}_s\rangle}{\sqrt{d_k}}\right)\boldsymbol{v}_s$$
-
-其中Z是归一化因子。事实上q,k,v分别是query,key,value的简写，K,V是一一对应的，它们就像是key-value的关系，那么上式的意思就是$$q_t$$这个query，通过与各个$$k_s$$内积的并softmax的方式，来得到$$q_t$$与各个$$v_s$$的相似度，然后加权求和，得到一个$$d_v$$维的向量。其中因子$$\sqrt{d_k}$$起到调节作用，使得内积不至于太大（太大的话softmax后就非0即1了，不够“soft”了）。
-
-概括的说就是：**比较Q和K的相似度，以得到合适的V。**
-
-## Multi-Head Attention
-
-![](/images/img2/Attention_6.png)
-
-这个是Google提出的新概念，是Attention机制的完善。不过从形式上看，它其实就再简单不过了，就是把Q,K,V通过参数矩阵映射一下，然后再做Attention，把这个过程重复做h次，结果拼接起来就行了，可谓“大道至简”了。具体来说：
-
-$$head_i = Attention(\boldsymbol{Q}\boldsymbol{W}_i^Q,\boldsymbol{K}\boldsymbol{W}_i^K,\boldsymbol{V}\boldsymbol{W}_i^V)$$
-
-所谓“多头”（Multi-Head），就是只多做几次同样的事情（参数不共享），然后把结果拼接。
-
-## Self Attention
-
-到目前为止，对Attention层的描述都是一般化的，我们可以落实一些应用。比如，如果做阅读理解的话，Q可以是篇章的词向量序列，取K=V
-
-为问题的词向量序列，那么输出就是所谓的Aligned Question Embedding。
-
-而在Google的论文中，大部分的Attention都是Self Attention，即“自注意力”，或者叫内部注意力。
-
-所谓Self Attention，其实就是Attention(X,X,X)，X就是前面说的输入序列。也就是说，在序列内部做Attention，寻找序列内部的联系。
 

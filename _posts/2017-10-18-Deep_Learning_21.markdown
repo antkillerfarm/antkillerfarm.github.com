@@ -1,10 +1,22 @@
 ---
 layout: post
-title:  深度学习（二十一）——SRCNN, DRCN, VDSR
+title:  深度学习（二十一）——图像超分辨率算法, SRCNN, DRCN, VDSR
 category: DL 
 ---
 
-# 图像超分辨率算法（续）
+# 图像超分辨率算法
+
+![](/images/img2/Super_Resolution.png)
+
+如上图所示，一张低分辨率的小图（Low Resolution，LR）如果采用简单的插值算法进行图片放大的话，图像中物体的边缘会比较模糊。如何用算法将这种LR的图片放大成HR的图片，这就是Super Resolution（SR）的目标了。
+
+SR目前主要有两个用途：
+
+1.提升设备的测量精度。这个在天文和医疗图像方面用的比较多，比如Google和NASA利用AI探测太阳系外的行星，还有癌症的早期诊断。
+
+2.Image Signal Processor。上面的两个应用比较高端，SR最主要的用途恐怕还是相机的ISP领域。ISP的基本概念参见《图像处理理论（五）》。
+
+这里主要讨论DL在SR领域的应用。
 
 ## 前DL时代的SR
 

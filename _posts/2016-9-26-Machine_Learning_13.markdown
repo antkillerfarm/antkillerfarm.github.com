@@ -238,6 +238,12 @@ https://mp.weixin.qq.com/s/tZqkbJ18ANCcA7ndWmJEGw
 
 http://wenku.baidu.com/view/9ce143eb81c758f5f61f6730.html
 
+行(列)满秩阵的几点性质
+
+https://mp.weixin.qq.com/s/N16K511-crzj6h-R1L10rQ
+
+如何通过心形线快速认识秩的几何意义？
+
 ## 奇异矩阵
 
 对应的行列式等于0的方阵，被称为奇异矩阵（singular matrix）。

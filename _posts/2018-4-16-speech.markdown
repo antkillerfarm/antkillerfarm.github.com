@@ -1,0 +1,226 @@
+---
+layout: post
+title:  语音识别——概述, 传统方法
+category: graphics 
+---
+
+# 概述
+
+虽然现在的语音识别中，DL已经应用的非常广泛了，但是语音识别终究还是有一些领域知识的，将之归类为DL或者ML，似乎都不妥当。但是本人现状又不大可能专门研究这个领域，形成系列文章，因此暂时归入graphics分类，用以描述speech recognition的领域知识和传统方法。
+
+说起来还是要感谢DL，不然按照传统的行业划分，几乎不会有人同时研究CV和SR。DL的出现，实际上大大降低了算法的领域迁移成本，领域知识的重要性相对下降了。
+
+## 书籍
+
+《Speech and Language Processing: An introduction to natural language processing, computational linguistics, and speech recognition》，Daniel Jurafsky & James H. Martin著。
+
+>Daniel Jurafsky，1962年生，UCB本科（1983）+博士（1992）。斯坦福大学教授。   
+>个人主页：   
+>https://web.stanford.edu/~jurafsky/
+
+>James H. Martin，哥伦比亚大学本科+UCB博士。University of Colorado Boulder教授。   
+>个人主页：   
+>http://www.cs.colorado.edu/~martin/
+
+## 项目
+
+https://en.wikipedia.org/wiki/List_of_speech_recognition_software
+
+## Kaldi
+
+Kaldi是一个语音识别的工具包。官网：
+
+https://github.com/kaldi-asr/kaldi
+
+文档：
+
+http://kaldi-asr.org/doc/
+
+## HTK
+
+Hidden Markov Model Toolkit是另一个语音识别的工具包。官网：
+
+http://htk.eng.cam.ac.uk/
+
+## CMU Sphinx
+
+CMU Sphinx是李开复的博士课题项目，后来成为了CMU的长期项目。洪小文、黄学东也先后参与过。
+
+>李开复，1961年生，Columbia University本科（1983）+CMU博士（1988）。先后供职于Apple、SGI、Microsoft、Google。现为创新工场董事长。
+
+>洪小文，1963年生，台湾大学本科+CMU博士。先后供职于Apple、Microsoft，现为微软亚洲研究院院长。
+
+>黄学东，1962年生，湖南大学本科（1982）+清华大学硕士（1984）+University of Edinburgh博士（1989）。现为微软首席语音科学家。
+
+>Raj Reddy，1937年生，印度裔美国计算机科学家。印度University of Madras本科（1958）+澳大利亚University of New South Wales硕士（1960）+Stanford University博士。CMU教授，首位亚裔图灵奖得主（1994）。   
+>他还是印度Rajiv Gandhi University of Knowledge Technologies创始人和International Institute of Information Technology, Hyderabad主席。   
+>他是李开复、洪小文的博士导师，黄学东的博士后导师。
+
+官网：
+
+https://cmusphinx.github.io/
+
+注意：还有一个类似Elasticsearch的文本搜索引擎也叫Sphinx。它的官网是：
+
+http://sphinxsearch.com/
+
+## 公司
+
+http://www.aispeech.com/
+
+思必驰
+
+http://www.soundai.com/
+
+声智科技。偏重于语音信号处理。
+
+# 语音信号处理
+
+## Microphone
+
+麦克风作为业界通俗的一种叫法，是英文Microphone的音译名称，国内的称呼乱一些，有时候也简单称作话筒，香港和台湾地区也会称作微音器、拾音器。麦克风的中文学术名称是传声器，这是一种将声音转换成电子信号的换能器，即把声信号转成电信号，这其实和光电转换的原理是完全一致的。 
+
+消费级市场的麦克风基本都是标量麦克风，也就说只能采集单一的物理量信息——声压。声压是指声波通过媒质时，由振动所产生的压强改变量，也可以理解为声音的幅度或者强度。声压常用字母"p"表示，单位是帕斯卡（符号Pa）。声压的帕斯卡单位由于不方便记忆（比如$$20\times 10^{-6}$$Pa~20Pa），一般就以对数尺衡量有效声压相对于一个基准值的大小来表示，即声压级，其单位是分贝（符号dB）。
+
+人类对于1KHz的声音的听阈为$$20\times 10^{-6}$$Pa，通常以此作为声压级的基准值。这样讲可能晦涩难懂，我们来简单的类比一下：人类的呼吸声压是$$60\times 10^{-6}$$左右，声压级大约10dB，火箭发射的声压是4000Pa左右，声压级大约165dB，闪光弹的声压超过1万Pa，声压级大约175dB。
+
+为了描述麦克风的性能，有几个性能指标是非常关键的，这包括了灵敏度、指向性、频率响应、阻抗、动态范围、信噪比、最大声压级（或AOP，声学过载点）、一致性等。
+
+现在麦克风阵列主要使用的是**数字MEMS麦克风**，其最长尺寸仅有3.76MM。MEMS麦克风也是手机中大量使用的传感器件，一般手机至少有2个以上这类麦克风。MEMS麦克风实际上只是工艺上的改进，其原理依然属于电容式麦克风。
+
+与MEMS麦克风直接PK的，就是**驻极体麦克风**。它的性能更优秀，但一致性不如MEMS麦克风，因此主要用在单麦上。而麦克风阵列一般都是MEMS麦克风。
+
+被淘汰的技术：带式麦克风、碳精麦克风（老式电话）。
+
+先进技术：压电麦克风、光纤麦克风、激光麦克风、矢量麦克风。
+
+Microphone的主要厂商：
+
+1.Knowles 美国
+
+2.瑞声(AAC) 中国
+
+3.歌尔(Goertek) 中国
+
+4.BSE 韩国
+
+5.ST 欧洲
+
+参考：
+
+https://zhuanlan.zhihu.com/p/27610503
+
+盘点麦克风技术及市场，远场语音交互如何选型麦克风
+
+## Microphone Array
+
+麦克风阵列(Microphone Array)，从字面上，指的是麦克风的排列。也就是说由一定数目的声学传感器(一般是麦克风)组成，用来对声场的空间特性进行采样并处理的系统。
+
+![](/images/img2/Echo.png)
+
+上图是Amazon Echo所采用的6+1麦克风阵列。
+
+根据声波传导理论，利用多个麦克风收集到的信号可以将某一方向传来的声音增强或抑制。利用这种方法，麦克风阵列可以将噪声环境中特定声音信号有效的增强。由于麦克风阵列技术具有很好的抑制噪声和语音增强的能力，又不需要麦克风时刻指向声源方向，因此在语音处理领域具有非常好的前景，可以用在非常广的应用领域。
+
+双麦克风阵列：结构简单、成本低、容易实施、功耗低。
+
+像空调、电视这类家电产品，它永远都是贴墙放，八个麦克风在实际应用上是多余的。而双麦克技术在任何产品上均可自然适配。
+
+在机器人领域里，对声源定位的要求比较高，所以一般都会使用环形多麦克方案。这两年国内比较火的Rokid机器人就采用了8麦克的阵列。
+
+参考：
+
+https://www.leiphone.com/news/201610/5Ye8zxxwtlLGiW1y.html
+
+技术解读：从亚马逊Echo到谷歌Home，双麦克风阵列更有优势？
+
+## 声源定位
+
+https://wenku.baidu.com/view/903f907f31b765ce05081431.html
+
+基于传声器阵列的声源定位
+
+https://zhuanlan.zhihu.com/p/35590325
+
+MIT提出像素级声源定位系统PixelPlayer：无监督地分离视频中的目标声源
+
+https://zhuanlan.zhihu.com/p/27921878
+
+揭秘武林绝学——“听声辨位”
+
+## 参考
+
+https://www.zhihu.com/question/48537863
+
+远场（far-field）语音识别的主流技术有哪些？
+
+https://www.leiphone.com/news/201610/BSlh3Kf6wcqNCRH9.html
+
+聊一聊麦克风阵列技术：语音交互应该选用怎样的方案？
+
+https://zhuanlan.zhihu.com/p/27977550
+
+极限元：智能语音前端处理中的几个关键问题
+
+https://zhuanlan.zhihu.com/p/29809882
+
+让机器听懂人类语言，主流麦克风阵列技术解读
+
+https://zhuanlan.zhihu.com/p/24139910
+
+远场语音交互中的麦克风阵列技术解读
+
+https://zhuanlan.zhihu.com/p/22512377
+
+自然的语音交互——麦克风阵列
+
+
+
+# 传统方法
+
+http://blog.csdn.net/zouxy09/article/details/9140207
+
+语音信号处理之（一）动态时间规整（DTW）
+
+http://blog.csdn.net/zouxy09/article/details/9141875
+
+语音信号处理之（二）基音周期估计（Pitch Detection）
+
+http://blog.csdn.net/zouxy09/article/details/9153255
+
+语音信号处理之（三）矢量量化（Vector Quantization）
+
+http://blog.csdn.net/zouxy09/article/details/9156785
+
+语音信号处理之（四）梅尔频率倒谱系数（MFCC）
+
+https://my.oschina.net/jamesju/blog/193343
+
+语音特征参数MFCC提取过程详解
+
+https://liuyanfeier.github.io/2017/10/26/2017-10-27-Kaldi%E4%B9%8Bfbank%E5%92%8Cmfcc%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/
+
+kaldi之fbank和mfcc特征提取
+
+http://blog.csdn.net/wxb1553725576/article/details/78048546
+
+Kaldi特征提取之-FBank
+
+# 汽车声学
+
+https://zhuanlan.zhihu.com/p/22722073
+
+当我谈汽车声学时，我在谈什么(一)
+
+https://zhuanlan.zhihu.com/p/28608243
+
+当我谈汽车声学时，我在谈什么(二)
+
+https://zhuanlan.zhihu.com/p/31240294
+
+当我谈汽车声学时，我在谈什么(三)
+
+https://zhuanlan.zhihu.com/p/34256635
+
+当我谈汽车声学时，我在谈什么(四)
+

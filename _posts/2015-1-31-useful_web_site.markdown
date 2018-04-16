@@ -154,10 +154,6 @@ https://mp.weixin.qq.com/s/2-PB-5tTNeGPLPHQBdRwBA
 
 40张动态图详解全部传感器工作原理
 
-https://mp.weixin.qq.com/s/tPzBlQGxGq1WEnXz5ggpxg
-
-sysbench在美团点评中的应用
-
 https://mp.weixin.qq.com/s/aumZu90B4gZQ4nKNY4PRxA
 
 Redux从设计到源码
@@ -177,10 +173,6 @@ https://zhuanlan.zhihu.com/p/27971065
 http://blog.csdn.net/u013709270/article/details/53470428
 
 跳跃表的原理及实现
-
-https://mp.weixin.qq.com/s/-2kGkJzjay2WJzIpMs2Adw
-
-IEEE盘点27款震撼世界的芯片
 
 https://mp.weixin.qq.com/s/5KA7jtlRmnXxijGQhU1k4A
 
@@ -206,10 +198,6 @@ https://mp.weixin.qq.com/s/sCJFFZm-soWAt8kDyYulPQ
 
 99%留学生都不知道的Paper写作神器，Google从此是路人
 
-https://mp.weixin.qq.com/s/4lZ7My6cs4-VJQ1qGhQxZg
-
-AliSQL X-Cluste：基于X-Paxos的高性能强一致MySQL数据库
-
 https://mp.weixin.qq.com/s/vOJPxzH_1SUyXzNeE85zHQ
 
 编译器入门：没有siri的那些年，我们如何实现人机对话？
@@ -226,10 +214,6 @@ https://mp.weixin.qq.com/s/JeqjD5NYGyG17o5csfzp7w
 
 镜像/容器/仓库/数据卷基本命令
 
-https://mp.weixin.qq.com/s/09BlPee0-kP-At2aDyDbMw
-
-中国数据库40年历史：隐秘的江湖与恩怨
-
 https://mp.weixin.qq.com/s/INlW41lJWWjfAHJAnnfB8A
 
 程序员不能错过的28份技术知识图谱，你的进阶路上必备
@@ -245,14 +229,6 @@ https://mp.weixin.qq.com/s/T7bVFQqzTbZJ7GuQDiNwoA
 https://mp.weixin.qq.com/s/tIau6pRZU0r4Aasofca5yQ
 
 50张动图带你走进神奇的物理化学生物世界，超震撼！
-
-https://mp.weixin.qq.com/s/v_BsfSFp-LwiCOFKaMIS_g
-
-后摩尔时代，如何给你的CPU减负？
-
-https://mp.weixin.qq.com/s/77BgUiwjQ8ryGNRjMCiBoQ
-
-“雷达电子战”常用公式
 
 http://mp.weixin.qq.com/s/aftxoxvzefZtzbGK3XrmuA
 
@@ -282,21 +258,9 @@ http://www.xuliangwei.com/xubusi/885.html
 
 一篇文章全面了解监控知识体系
 
-https://mp.weixin.qq.com/s/udl4hQQXY4FQDPLsWERhkg
-
-史上最全最详细无线通信频率分配表
-
 https://www.floydhub.com
 
 一个提供深度模型训练和部署的云服务平台
-
-https://mp.weixin.qq.com/s/vmQKK9cEbBRIvd2uOzmC1w
-
-AN/TPS-78固态雷达系列
-
-https://mp.weixin.qq.com/s/UdKVffV42v0GnV6i8xMWOg
-
-PESA/AESA：无源/有源电子扫描阵列天线及其辐射方向图
 
 http://www.xfyun.cn/share/?p=2626
 
@@ -305,26 +269,6 @@ http://www.xfyun.cn/share/?p=2626
 http://lucacardelli.name/
 
 Luca Andrea Cardelli的个人主页。英国皇家学会会员。主要从事生物化学领域的信息处理和计算。
-
-https://mp.weixin.qq.com/s/ZPAE1CwhfD0PNT1MJ8erIw
-
-一种用于汽车防撞雷达的波束赋形阵列天线
-
-https://mp.weixin.qq.com/s/NwptdxWiN4SadjUQafA5rw
-
-高端MEMS固体波动陀螺的发展与应用
-
-https://mp.weixin.qq.com/s/ZexnsNmqsD2yq-7YNASohw
-
-数模转换器的基本原理及DAC类型简介
-
-https://mp.weixin.qq.com/s/1XmbkoRkXUtmR0pnENhfGA
-
-基于高速DDFS的高精度DAC的设计
-
-https://zhuanlan.zhihu.com/p/30565679
-
-人工智能技术热潮中，是否存在破解苹果A11处理器的可能？
 
 http://www.cnblogs.com/xybaby/p/7867735.html
 
@@ -353,12 +297,6 @@ https://mp.weixin.qq.com/s/yPl746zhMFdMVtJaPUoAxg
 https://mp.weixin.qq.com/s/bUrTDj1atJSZvFeWA8H-SA
 
 正向代理和反向代理
-
-https://mp.weixin.qq.com/s/UWpp2r0_yDxNyJk-cldVyA
-
-处理器高危漏洞无人幸免？树莓派：我们不受影响
-
->最近的Meltdown和Spectre漏洞被炒的沸沸扬扬，然而能用python语言讲述复杂的CPU计算原理，这是该文的一大创见。
 
 https://mp.weixin.qq.com/s/mTOzcdjaak-z6ypL9MR2Lw
 
@@ -440,10 +378,6 @@ https://mp.weixin.qq.com/s/TL87BY3DdP1bolc0Sxkahg
 
 gRPC客户端创建和调用原理解析
 
-https://mp.weixin.qq.com/s/k5gNa71eRbnxt_oSR-pmyw
-
-MySQL锁之源码探索
-
 https://mp.weixin.qq.com/s/agS2-wu6HGO__QfbIt7Esw
 
 数字签名是什么？
@@ -475,10 +409,6 @@ https://mp.weixin.qq.com/s/D-XvKCSUCzMGcEz_xWTwqg
 https://mp.weixin.qq.com/s/wKpNJY6PD0ArxnKtl71xwQ
 
 程序员实用的工具网站整理
-
-https://blog.csdn.net/zhengzhb/article/details/8590390
-
-SQL查找删除重复行
 
 ## 有用的blog
 

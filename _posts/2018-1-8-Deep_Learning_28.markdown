@@ -1,97 +1,184 @@
 ---
 layout: post
-title:  深度学习（二十八）——VAE
+title:  深度学习（二十八）——SOM, Group Normalization, MobileNet
 category: DL 
 ---
 
-# VAE（续）
+# RBM & DBN & Deep Autoencoder（续）
 
-## VAE的传统理解
+## 参考
 
-首先我们有一批数据样本$$\{X_1,\dots,X_n\}$$，其整体用X来描述，我们本想根据$$\{X_1,\dots,X_n\}$$得到X的分布p(X)，如果能得到的话，那我直接根据p(X)来采样，就可以得到所有可能的X了（包括$$\{X_1,\dots,X_n\}$$以外的），这是一个终极理想的生成模型了。当然，这个理想很难实现，于是我们将分布改一改：
+https://deeplearning4j.org/cn/restrictedboltzmannmachine
 
-$$p(X)=\sum_Z p(X|Z)p(Z)$$
+受限玻尔兹曼机基础教程
 
-此时$$p(X\mid Z)$$就描述了一个由Z来生成X的模型，而我们假设Z服从标准正态分布，也就是$$p(Z)=\mathcal{N}(0,I)$$。如果这个理想能实现，那么我们就可以先从标准正态分布中采样一个Z，然后根据Z来算一个X，也是一个很棒的生成模型。接下来就是结合自编码器来实现重构，保证有效信息没有丢失，再加上一系列的推导，最后把模型实现。框架的示意图如下：
+http://txshi-mt.com/2018/02/04/UTNN-11-Hopfield-Nets-and-Boltzmann-Machines/
 
-![](/images/img2/VAE_2.png)
+Hopfield网和玻尔兹曼机
 
-看出了什么问题了吗？如果像这个图的话，我们其实完全不清楚：究竟经过重新采样出来的$$Z_k$$，是不是还对应着原来的$$X_k$$，所以我们如果直接最小化$$\mathcal{D}(\hat{X}_k,X_k)^2$$（这里D代表某种距离函数）是很不科学的，而事实上你看代码也会发现根本不是这样实现的。
+http://txshi-mt.com/2018/02/10/UTNN-12-Restricted-Boltzmann-Machines/
 
-## VAE初现
+受限玻尔兹曼机
 
-其实，在整个VAE模型中，我们并没有去使用p(Z)（先验分布）是正态分布的假设，我们用的是假设$$p(Z\mid X)$$（后验分布）是正态分布！！
+http://www.cnblogs.com/kemaswill/p/3269138.html
 
-具体来说，给定一个真实样本$$X_k$$，我们假设存在一个专属于$$X_k$$的分布$$p(Z\mid X_k)$$（学名叫后验分布），并进一步假设这个分布是（独立的、多元的）正态分布。为什么要强调“专属”呢？因为我们后面要训练一个生成器$$X=g(Z)$$，希望能够把从分布$$p(Z\mid X_k)$$采样出来的一个$$Z_k$$还原为$$X_k$$。如果假设p(Z)是正态分布，然后从p(Z)中采样一个Z，那么我们怎么知道这个Z对应于哪个真实的X呢？现在$$p(Z\mid X_k)$$专属于$$X_k$$，我们有理由说从这个分布采样出来的Z应该要还原到$$X_k$$中去。
+基于受限玻尔兹曼机(RBM)的协同过滤
 
-这样有多少个X就有多少个正态分布了。我们知道正态分布有两组参数：均值$$\mu$$和方差$$\sigma^2$$（多元的话，它们都是向量），那我怎么找出专属于$$X_k$$的正态分布$$p(Z\mid X_k)$$的均值和方差呢？好像并没有什么直接的思路。那好吧，就用神经网络拟合出来吧！
+http://www.cnblogs.com/kemaswill/p/3203605.html
 
-![](/images/img2/VAE_3.png)
+受限波尔兹曼机简介
 
-于是我们构建两个神经网络$$\mu_k = f_1(X_k),\log \sigma^2 = f_2(X_k)$$来算它们了。我们选择拟合$$\log \sigma^2$$而不是直接拟合$$\sigma^2$$，是因为$$\sigma^2$$总是非负的，需要加激活函数处理，而拟合$$\log \sigma^2$$不需要加激活函数，因为它可正可负。到这里，知道专属于$$X_k$$的均值和方差，也就知道它的正态分布长什么样了，然后从这个专属分布中采样一个$$Z_k$$出来，经过一个生成器得到$$\hat{X}_k=g(Z_k)$$，现在我们可以放心地最小化$$\mathcal{D}(\hat{X}_k,X_k)^2$$，因为$$Z_k$$是从专属$$X_k$$的分布中采样出来的，这个生成器应该要把开始的$$X_k$$还原回来。
+https://mp.weixin.qq.com/s/MqnJ39GPrzP4xJWDZi9gnQ
 
-## 分布标准化
+博士生开源深度学习C++库DLL：快速构建卷积受限玻尔兹曼机
 
-让我们来思考一下，根据上图的训练过程，最终会得到什么结果。
+http://www.cs.toronto.edu/~fritz/absps/cogscibm.pdf
 
-首先，我们希望重构X，也就是最小化$$\mathcal{D}(\hat{X}_k,X_k)^2$$，但是这个重构过程受到噪声的影响，因为$$Z_k$$是通过重新采样过的，不是直接由encoder算出来的。显然噪声会增加重构的难度，不过好在这个噪声强度（也就是方差）通过一个神经网络算出来的，所以最终模型为了重构得更好，肯定会想尽办法让方差为0。而方差为0的话，也就没有随机性了，所以不管怎么采样其实都只是得到确定的结果（也就是均值）。说白了，**模型会慢慢退化成普通的AutoEncoder，噪声不再起作用。**
+A Learning Algorithm for Boltzmann Machines
 
-为了使模型具有生成能力，VAE决定让所有的$$p(Z\mid X)$$都向标准正态分布看齐。如果所有的$$p(Z\mid X)$$都很接近标准正态分布$$\mathcal{N}(0,I)$$，那么根据定义：
+http://www.cs.toronto.edu/~hinton/absps/dbm.pdf
 
-$$p(Z)=\sum_X p(Z|X)p(X)=\sum_X \mathcal{N}(0,I)p(X)=\mathcal{N}(0,I) \sum_X p(X) = \mathcal{N}(0,I)$$
+Deep Boltzmann Machines
 
-这样我们就能达到我们的先验假设：p(Z)是标准正态分布。然后我们就可以放心地从$$\mathcal{N}(0,I)$$中采样来生成图像了。
+http://www.cs.toronto.edu/~hinton/absps/guideTR.pdf
 
-那怎么让所有的$$p(Z\mid X)$$都向$$\mathcal{N}(0,I)$$看齐呢？如果没有外部知识的话，其实最直接的方法应该是在重构误差的基础上中加入额外的loss：
+A Practical Guide to Training Restricted Boltzmann Machines
 
-$$\mathcal{L}_{\mu}=\Vert f_1(X_k)\Vert^2,\mathcal{L}_{\sigma^2}=\Vert f_2(X_k)\Vert^2$$
+http://www.taodocs.com/p-62206829.html
 
-因为它们分别代表了均值$$\mu_k$$和方差的对数$$\log \sigma^2$$，达到$$\mathcal{N}(0,I)$$就是希望二者尽量接近于0了。不过，这又会面临着这两个损失的比例要怎么选取的问题，选取得不好，生成的图像会比较模糊。所以，原论文直接算了一般（各分量独立的）正态分布与标准正态分布的KL散度$$KL\Big(N(\mu,\sigma^2)\Big\Vert N(0,I)\Big)$$作为这个额外的loss，计算结果为：
+《受限波尔兹曼机简介》张春霞著
 
-$$\mathcal{L}_{\mu,\sigma^2}=\frac{1}{2} \sum_{i=1}^d \Big(\mu_{(i)}^2 + \sigma_{(i)}^2 - \log \sigma_{(i)}^2 - 1\Big)$$
+# SOM
 
-这里的d是隐变量Z的维度，而$$\mu_{(i)}$$和$$\sigma_{(i)}^2$$分别代表一般正态分布的均值向量和方差向量的第i个分量。直接用这个式子做补充loss，就不用考虑均值损失和方差损失的相对比例问题了。显然，这个loss也可以分两部分理解：
+Self Organizing Maps (SOM)是一种无监督算法，主要用于聚类和可视化。
 
-$$\begin{aligned}&\mathcal{L}_{\mu,\sigma^2}=\mathcal{L}_{\mu} + \mathcal{L}_{\sigma^2}\\ 
-&\mathcal{L}_{\mu}=\frac{1}{2} \sum_{i=1}^d \mu_{(i)}^2=\frac{1}{2}\Vert f_1(X)\Vert^2\\ 
-&\mathcal{L}_{\sigma^2}=\frac{1}{2} \sum_{i=1}^d\Big(\sigma_{(i)}^2 - \log \sigma_{(i)}^2 - 1\Big)\end{aligned}$$
+>Teuvo Kohonen，1934年生，芬兰科学家。Helsinki University of Technology博士和教授。
 
-## Reparameterization Trick
+![](/images/img2/SOM.png)
 
-这是实现模型的一个技巧。我们要从$$p(Z\mid X_k)$$中采样一个$$Z_k$$出来，尽管我们知道了$$p(Z\mid X_k)$$是正态分布，但是均值方差都是靠模型算出来的，我们要靠这个过程反过来优化均值方差的模型，但是“采样”这个操作是不可导的，而采样的结果是可导的，于是我们利用了一个事实：
+上图是一个SOM可视化的案例。左边的六角形网格被称作SOM的map space。其中，越相似的国家，在map space上的颜色和位置越接近。
 
->从$$\mathcal{N}(\mu,\sigma^2)$$中采样一个Z，相当于从$$\mathcal{N}(0,I)$$中采样一个$$\varepsilon$$，然后让$$Z=\mu + \varepsilon \times \sigma$$。
+下面来说一下SOM的具体训练方法。
 
-![](/images/img2/VAE_4.png)
+## 构建map space
 
-于是，我们将从$$\mathcal{N}(\mu,\sigma^2)$$采样变成了从$$\mathcal{N}(0,I)$$中采样，然后通过参数变换得到从$$\mathcal{N}(\mu,\sigma^2)$$中采样的结果。这样一来，“采样”这个操作就不用参与梯度下降了，改为采样的结果参与，使得整个模型可训练了。
+首先，map space是有拓扑关系的。这个拓扑关系需要我们确定，如果想要一维的模型，那么隐藏节点依次连成一条线；如果想要二维的拓扑关系，那么就组成一个平面网格。换句话说，SOM的目标就是**将任意维度的输入离散化到一维或者二维(更高维度的不常见)的离散空间上。**
 
-## VAE本质
+网格的形状一般是矩形或六角形。网格中的每个node关联一个weight vector，其中的值表示一个input space中的点，因此weight vector和input vector的维度是相同的。
 
-VAE本质上就是在我们常规的自编码器的基础上，对encoder的结果（在VAE中对应着计算均值的网络）加上了“高斯噪声”，使得结果decoder能够对噪声有鲁棒性；而那个额外的KL loss（目的是让均值为0，方差为1），事实上就是相当于对encoder的一个正则项，希望encoder出来的东西均有零均值。
+## 初始化weight vector
 
-那另外一个encoder（对应着计算方差的网络）的作用呢？它是用来动态调节噪声的强度的。直觉上来想，当decoder还没有训练好时（重构误差远大于KL loss），就会适当降低噪声（KL loss增加），使得拟合起来容易一些（重构误差开始下降）；反之，如果decoder训练得还不错时（重构误差小于KL loss），这时候噪声就会增加（KL loss减少），使得拟合更加困难了（重构误差又开始增加），这时候decoder就要想办法提高它的生成能力了。
+![](/images/img2/SOM_2.png)
 
-![](/images/img2/VAE_5.png)
+上图展示了SOM的训练过程。SOM训练的目的就是使map space尽量贴合样本分布。
 
-简言之，**重构的过程是希望没噪声的，而KL loss则希望有高斯噪声的，两者是对立的。所以，VAE跟GAN一样，内部其实是包含了一个对抗的过程，只不过它们两者是混合起来，共同进化的。**
+因此，通常有两种初始化weight vector的方法：
 
-## 正态分布？
+1.用小的随机值初始化。
 
-对于$$p(Z\mid X)$$的分布，是不是必须选择正态分布？可以选择均匀分布吗？
+2.从最大的两个主特征向量上进行采样。
 
-正态分布有两组独立的参数：均值和方差，而均匀分布只有一组。前面我们说，在VAE中，重构跟噪声是相互对抗的，重构误差跟噪声强度是两个相互对抗的指标，而在改变噪声强度时原则上需要有保持均值不变的能力，不然我们很难确定重构误差增大了，究竟是均值变化了（encoder的锅）还是方差变大了（噪声的锅）。而均匀分布不能做到保持均值不变的情况下改变方差，所以正态分布应该更加合理。
+显然，第2种训练起来要快的多。因为它已经是SOM weights的一个很好的近似了。
 
-## 条件VAE
+## 训练SOM
 
-最后，因为目前的VAE是无监督训练的，因此很自然想到：如果有标签数据，那么能不能把标签信息加进去辅助生成样本呢？这个问题的意图，往往是希望能够实现控制某个变量来实现生成某一类图像。当然，这是肯定可以的，我们把这种情况叫做Conditional VAE，或者叫CVAE。（相应地，在GAN中我们也有个CGAN。）
+1.对于每一个输入数据，找到与它最相配的node，这个node一般被称作best matching unit(BMU)。这里一般使用Euclidean distance作为相似度的度量。
 
-但是，CVAE不是一个特定的模型，而是一类模型，总之就是把标签信息融入到VAE中的方式有很多，目的也不一样。这里基于前面的讨论，给出一种非常简单的VAE。
+2.更新BMU的weight，使之更接近输入数据。同时也要更新BMU周围的node的weight，离BMU越近，更新幅度越大。更新公式为：
 
-![](/images/img2/VAE_6.png)
+$$W_{v}(s + 1) = W_{v}(s) + \theta(u, v, s) \cdot \alpha(s) \cdot (D(t) - W_{v}(s))$$
 
-在前面的讨论中，我们希望X经过编码后，Z的分布都具有零均值和单位方差，这个“希望”是通过加入了KL loss来实现的。如果现在多了类别信息Y，我们可以希望同一个类的样本都有一个专属的均值$$\mu^Y$$（方差不变，还是单位方差），这个$$\mu^Y$$让模型自己训练出来。这样的话，有多少个类就有多少个正态分布，而在生成的时候，我们就可以通过控制均值来控制生成图像的类别。事实上，这样可能也是在VAE的基础上加入最少的代码来实现CVAE的方案了，因为这个“新希望”也只需通过修改KL loss实现：
+其中，D(t)是输入数据，u表示BMU的index，v是被更新node的index，s是迭代的次数，$$\alpha(s)$$是更新率，一般为一个单调递减函数。$$\theta(u, v, s)$$是时空衰减因子，公式通常为：
 
-$$\mathcal{L}_{\mu,\sigma^2}=\frac{1}{2} \sum_{i=1}^d\Big[\big(\mu_{(i)}-\mu^Y_{(i)}\big)^2 + \sigma_{(i)}^2 - \log \sigma_{(i)}^2 - 1\Big]$$
+$$\theta(u, v, s)=\exp \left(-\frac{dist(u,v)}{2\sigma^2(s)}\right)$$
 
+反复多次进行以上2步的迭代之后，SOM会趋于收敛。
+
+## 与K-Means的比较
+
+同样是无监督的聚类方法，SOM与K-Means有什么不同呢？
+
+1.K-Means需要事先定下类的个数，也就是K的值。SOM则不用，隐藏层中的某些节点可以没有任何输入数据属于它。所以，K-Means受初始化的影响要比较大。
+
+2.K-means为每个输入数据找到一个最相似的类后，只更新这个类的参数。SOM则会更新临近的节点。所以K-mean受noise data的影响比较大，SOM的准确性可能会比k-means低（因为也更新了临近节点）。
+
+3.SOM的可视化比较好。优雅的拓扑关系图。
+
+![](/images/img2/SOMsPCA.png)
+
+上图中蓝线表示PCA的主轴，而红点是SOM的node结点，可见SOM对数据的贴合程度要高于PCA。
+
+## 参考
+
+http://chem-eng.utoronto.ca/~datamining/Presentations/SOM.pdf
+
+Self-Organizing Maps
+
+http://www.cnblogs.com/sylvanas2012/p/5117056.html
+
+Self Organizing Maps (SOM): 一种基于神经网络的聚类算法
+
+http://blog.csdn.net/Loyal2M/article/details/11225987
+
+聚类算法实践（3）——PCCA、SOM、Affinity Propagation
+
+http://www.ai-junkie.com/ann/som/som1.html
+
+Kohonen's Self Organizing Feature Maps
+
+# Group Normalization
+
+论文：
+
+《Group Normalization》
+
+![](/images/img2/Group_Normalization.png)
+
+参考：
+
+https://mp.weixin.qq.com/s/H2GmqloNumttFlaSArjgUg
+
+FAIR何恺明等人提出组归一化：替代批归一化，不受批量大小限制
+
+https://mp.weixin.qq.com/s/44RvXEYYc5lebsHs_ooswg
+
+全面解读Group Normalization
+
+# MobileNet
+
+论文：
+
+《MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications》
+
+代码：
+
+https://github.com/Zehaos/MobileNet
+
+![](/images/article/dwl_pwl.png)
+
+参考：
+
+https://mp.weixin.qq.com/s/f3bmtbCY5BfA4v3movwLVg
+
+向手机端神经网络进发：MobileNet压缩指南
+
+https://mp.weixin.qq.com/s/mcK8M6pnHiZZRAkYVdaYGQ
+
+MobileNet在手机端上的速度评测：iPhone 8 Plus竟不如iPhone 7 Plus
+
+https://mp.weixin.qq.com/s/2XqBeq3N4mvu05S1Jo2UwA
+
+CNN模型之MobileNet
+
+https://mp.weixin.qq.com/s/fdgaDoYm2sfjqO2esv7jyA
+
+Google论文解读：轻量化卷积神经网络MobileNetV2
+
+https://mp.weixin.qq.com/s/7vFxmvRZuM2DqSYN7C88SA
+
+谷歌发布MobileNetV2：可做语义分割的下一代移动端计算机视觉架构
+
+https://mp.weixin.qq.com/s/lu0GHCpWCmogkmHRKnJ8zQ
+
+浅析两代MobileNet
 

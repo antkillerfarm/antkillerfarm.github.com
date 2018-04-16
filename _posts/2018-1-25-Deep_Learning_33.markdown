@@ -121,6 +121,10 @@ https://mp.weixin.qq.com/s/HbqmdaxIQrQc7vDgiExtrw
 
 可视化CapsNet，详解Hinton等人提出的胶囊概念与原理
 
+https://mp.weixin.qq.com/s/VcZSHw98w6nvgz4Hzjto3A
+
+深度学习之CapsuleNets理论与Python实践
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：

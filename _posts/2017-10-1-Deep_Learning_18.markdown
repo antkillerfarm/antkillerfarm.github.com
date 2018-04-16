@@ -92,6 +92,10 @@ http://lanbing510.info/2017/09/04/YOLOV2.html
 
 目标检测之YOLOv2
 
+https://mp.weixin.qq.com/s/r2mfq0UkljKce8_dYrCNEw
+
+YOLOv2原理与实现
+
 # YOLOv3
 
 https://zhuanlan.zhihu.com/p/34945787
@@ -216,6 +220,14 @@ https://mp.weixin.qq.com/s/M1Oo4ST2aspgZF8UeSUDww
 
 如何妙笔勾檀妆：像素级语义理解
 
+https://mp.weixin.qq.com/s/xalo2XtKtzR5tA_dPFzaJw
+
+一文介绍3篇无需Proposal的实例分割论文
+
+https://mp.weixin.qq.com/s/BL1xZ_YuuPe9frIc9E1fkA
+
+南开大学提出新物体分割评价指标
+
 # 前DL时代的语义分割
 
 从最简单的像素级别“阈值法”（Thresholding methods）、基于像素聚类的分割方法（Clustering-based segmentation methods）到“图划分”的分割方法（Graph partitioning segmentation methods），在DL“一统江湖”之前，图像语义分割方面的工作可谓“百花齐放”。在此，我们仅以“Normalized cut”和“Grab cut”这两个基于图划分的经典分割方法为例，介绍一下前DL时代语义分割方面的研究。
@@ -229,12 +241,3 @@ Normalized cut （N-cut）方法是基于图划分（Graph partitioning）的语
 常用的方法为经典的最小割算法（Min-cut algorithm）。不过，在边的权重计算时，经典min-cut算法只考虑了局部信息。如下图所示，以二分图为例（将$$\bf{G}$$分为不相交的$$\bf{A},\bf{B}$$两部分），若只考虑局部信息，那么分离出一个点显然是一个min-cut，因此图划分的结果便是类似$$n_1$$或$$n_2$$这样离群点，而从全局来看，实际想分成的组却是左右两大部分。
 
 ![](/images/article/N_cut.jpg)
-
-针对这一情形，N-cut则提出了一种考虑全局信息的方法来进行图划分（Graph partitioning），即，将两个分割部分$$\bf{A},\bf{B}$$与全图节点的连接权重（$${\rm assoc(\bf{A},\bf{V})}$$和$$\rm assoc(\bf{B},\bf{V})$$）考虑进去：
-
-$$N_{cut}(\bf{A},\bf{B})=\frac{cut(\bf{A},\bf{B})}{assoc(\bf{A},\bf{V})}+\frac{cut(\bf{A},\bf{B})}{assoc(\bf{B},\bf{V})}$$
-
-如此一来，在离群点划分中，$$N_{cut}(\bf{A},\bf{B})$$中的某一项会接近1，而这样的图划分显然不能使得$$N_{cut}(\bf{A},\bf{B})$$是一个较小的值，故达到考虑全局信息而摒弃划分离群点的目的。这样的操作类似于机器学习中特征的规范化（Normalization）操作，故称为Normalized cut。N-cut不仅可以处理二类语义分割，而且将二分图扩展为K路（K-way）图划分即可完成多语义的图像语义分割，如下图例。
-
-![](/images/article/N_cut_2.jpg)
-
