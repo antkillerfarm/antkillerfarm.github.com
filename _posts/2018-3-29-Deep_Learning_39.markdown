@@ -317,3 +317,8 @@ https://zhuanlan.zhihu.com/p/34778414
 https://zhuanlan.zhihu.com/p/35296881
 
 刷新三数据集纪录的跨镜追踪(行人再识别-ReID)技术介绍
+
+https://mp.weixin.qq.com/s/ZbmJGO3lqwNM2z-E4_Mpbw
+
+由“刷脸”到“识人”，云从科技刷新跨镜追踪(ReID)技术三项世界纪录！
+

@@ -418,6 +418,10 @@ https://mp.weixin.qq.com/s/47S-iGFzZtXcSIgIC4w0FA
 
 从入门到高阶，读懂机器学习需要哪些数学知识
 
+https://mp.weixin.qq.com/s/qpqqeSaRwQyBJlo3P25q6g
+
+如何从零开始构建深度学习项目？这里有一份详细的教程
+
 ## 算法
 
 http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww

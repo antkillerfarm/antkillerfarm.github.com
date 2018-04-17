@@ -79,6 +79,10 @@ http://blog.csdn.net/young_gy/article/details/73485518
 
 强化学习之Q-learning简介
 
+https://mp.weixin.qq.com/s/34E1tEQMZuaxvZA66_HRwA
+
+通过Q-learning深入理解强化学习
+
 # Markov Decision Process
 
 上边Q-Learning的例子中，由于action能够唯一确定状态的变换，因此又被称为**Markov Reward Process**：

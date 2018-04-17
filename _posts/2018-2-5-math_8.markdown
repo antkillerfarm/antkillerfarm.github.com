@@ -92,3 +92,12 @@ $$X_n\xrightarrow{a.s.}X \supseteq X_n\xrightarrow{P}X$$
 
 http://www.topologywithouttears.net/topbookchinese.pdf
 
+# DL参考资源
+
+https://mp.weixin.qq.com/s/XfYV7pPd54a3gunjznVwdw
+
+诺奖评委、工业 4.0 教父沃夫冈解读AI研究大趋势
+
+https://mp.weixin.qq.com/s/wzUbYyrBOxU-2bY-EJm4KA
+
+极端图像压缩的生成对抗网络，可生成低码率的高质量图像

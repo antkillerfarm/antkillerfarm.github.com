@@ -102,6 +102,12 @@ https://www.wilddog.com/
 
 一个物联网后端云平台。
 
+>一声叹息啊！野狗的产品算是不错的，但是商业模式不赚钱，终究撑不住了。
+
+http://intellif.com/
+
+云天励飞——一家人脸识别的公司
+
 http://blog.shengbin.me/posts/multi-user-video-conference-based-on-webrtc
 
 基于WebRTC的多人视频会议

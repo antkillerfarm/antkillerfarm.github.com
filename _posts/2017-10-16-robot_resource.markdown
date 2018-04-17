@@ -394,3 +394,7 @@ https://mp.weixin.qq.com/s/PYqhSHzlyO5HqLvBaEqlwQ
 
 直接建模视觉智能体？让“小狗”动起来～
 
+https://mp.weixin.qq.com/s/WiS-iJHA1zoIyb1cvKiuZQ
+
+自动驾驶传感器“一哥之争”，这事儿你怎么看？
+

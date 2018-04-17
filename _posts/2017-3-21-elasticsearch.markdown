@@ -20,6 +20,10 @@ https://www.elastic.co
 
 扩展组件：Beats, X-Pack, Cloud
 
+http://solr-vs-elasticsearch.com/
+
+ElasticSearch和Solr的对比
+
 ## 简易安装步骤
 
 为了避免版本混乱，目前Elastic Stack将各组件的版本号统一为一个。使用时，各组件版本号应该一致。

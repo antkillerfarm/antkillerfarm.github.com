@@ -166,3 +166,29 @@ http://trac.webkit.org/wiki/BuildingGtk
 
 4)libgail-dev
 
+# GraphQL
+
+GraphQL是在Facebook内部应用多年的一套数据查询语言和runtime。
+
+官网：
+
+http://graphql.org/
+
+中文官网：
+
+http://graphql.cn/
+
+代码：
+
+https://github.com/facebook/graphql
+
+参考：
+
+https://zhuanlan.zhihu.com/p/20638731
+
+GraphQL and Relay浅析
+
+https://mp.weixin.qq.com/s/4AnLu0m2IILGwyPyuK37Fg
+
+基本操作：Go创建GraphQL API
+
