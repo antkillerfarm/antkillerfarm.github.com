@@ -162,6 +162,10 @@ https://mp.weixin.qq.com/s/Pjfhs-03HxFeyeKo1BmAPw
 
 Apollo小度车载系统打造更舒心的出行
 
+https://mp.weixin.qq.com/s/j4faPastB3nFmgH_nhVW6g
+
+Apollo仿真平台如何Hold住99.9999%的复杂场景？
+
 ## 文章
 
 http://blog.exbot.net/

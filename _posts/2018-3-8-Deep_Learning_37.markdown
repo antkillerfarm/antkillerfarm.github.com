@@ -244,6 +244,10 @@ https://zhuanlan.zhihu.com/p/22451474
 
 SeetaFace开源人脸识别引擎介绍
 
+https://mp.weixin.qq.com/s/MyA8_yt4YCkFl67AyhpZow
+
+尺度不变人脸检测器（S3FD-Single Shot Scale-invariant Face Detector）
+
 # 迁移学习
 
 >龙明盛，清华本科（2008）+博士（2016），迁移学习的最早提出者之一。清华大学副教授，博导。   

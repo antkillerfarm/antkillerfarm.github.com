@@ -154,6 +154,10 @@ https://mp.weixin.qq.com/s/lLaSXG1VF9Rys2GNzFP7pw
 
 轻松使用多种预训练卷积网络抽取图像特征
 
+https://mp.weixin.qq.com/s/Lvd4NfLg0Lzivb4BingV7w
+
+Tensorflow Eager Execution入门指南
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/LTtcD5CBT8m127thjBaRsw
@@ -319,4 +323,9 @@ https://mp.weixin.qq.com/s/zDKjyxqSbqYVlx3TveL8fg
 https://mp.weixin.qq.com/s/0dDzWjXZfHEh9jP-X4avbg
 
 英伟达新研究：“狗生猫，猫生万物”的多模态无监督图像转换
+
+https://mp.weixin.qq.com/s/w84gLswUFkl4NJSMv0RnIA
+
+OpenAI详细解析：攻击者是如何使用「对抗样本」攻击机器学习的！
+
 

@@ -1,0 +1,96 @@
+---
+layout: post
+title:  语音识别（二）——传统方法
+category: graphics 
+---
+
+# 声源定位（续）
+
+## 超分辨谱估计
+
+如MUSIC，ESPRIT等，对其协方差矩阵（相关矩阵）进行特征分解，构造空间谱，关于方向的频谱，谱峰对应的方向即为声源方向。适合多个声源的情况，且声源的分辨率与阵列尺寸无关，突破了物理限制，因此成为超分辨谱方案。这类方法可以拓展到宽带处理，但是对误差十分敏感，如麦克风单体误差，通道误差，适合远场模型，矩阵运算量巨大。
+
+## TDOA
+
+TDOA（time difference of arrival）是先后估计声源到达不同麦克风的时延差，通过时延来计算距离差，再利用距离差和麦克风阵列的空间几何位置来确定声源的位置。分为TDOA估计和TDOA定位两步：
+
+### TDOA估计
+
+
+
+## 参考
+
+https://wenku.baidu.com/view/903f907f31b765ce05081431.html
+
+基于传声器阵列的声源定位
+
+https://zhuanlan.zhihu.com/p/35590325
+
+MIT提出像素级声源定位系统PixelPlayer：无监督地分离视频中的目标声源
+
+https://zhuanlan.zhihu.com/p/27921878
+
+揭秘武林绝学——“听声辨位”
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/27977550
+
+极限元：智能语音前端处理中的几个关键问题
+
+https://zhuanlan.zhihu.com/p/24139910
+
+远场语音交互中的麦克风阵列技术解读
+
+https://zhuanlan.zhihu.com/p/22512377
+
+自然的语音交互——麦克风阵列
+
+# 传统方法
+
+http://blog.csdn.net/zouxy09/article/details/9140207
+
+语音信号处理之（一）动态时间规整（DTW）
+
+http://blog.csdn.net/zouxy09/article/details/9141875
+
+语音信号处理之（二）基音周期估计（Pitch Detection）
+
+http://blog.csdn.net/zouxy09/article/details/9153255
+
+语音信号处理之（三）矢量量化（Vector Quantization）
+
+http://blog.csdn.net/zouxy09/article/details/9156785
+
+语音信号处理之（四）梅尔频率倒谱系数（MFCC）
+
+https://my.oschina.net/jamesju/blog/193343
+
+语音特征参数MFCC提取过程详解
+
+https://liuyanfeier.github.io/2017/10/26/2017-10-27-Kaldi%E4%B9%8Bfbank%E5%92%8Cmfcc%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/
+
+kaldi之fbank和mfcc特征提取
+
+http://blog.csdn.net/wxb1553725576/article/details/78048546
+
+Kaldi特征提取之-FBank
+
+# 汽车声学
+
+https://zhuanlan.zhihu.com/p/22722073
+
+当我谈汽车声学时，我在谈什么(一)
+
+https://zhuanlan.zhihu.com/p/28608243
+
+当我谈汽车声学时，我在谈什么(二)
+
+https://zhuanlan.zhihu.com/p/31240294
+
+当我谈汽车声学时，我在谈什么(三)
+
+https://zhuanlan.zhihu.com/p/34256635
+
+当我谈汽车声学时，我在谈什么(四)
+

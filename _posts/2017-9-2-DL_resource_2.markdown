@@ -6,6 +6,48 @@ category: resource
 
 # DL参考资源
 
+## 算法
+
+https://mp.weixin.qq.com/s/09uzm9LJxJwLL-bEoayJbg
+
+深度学习中的常见分布
+
+https://wenku.baidu.com/view/98590eedaeaad1f346933f88.html
+
+小波神经网络简介
+
+https://mp.weixin.qq.com/s/mAkC6TDwLJ3hj2wSGiFdFg
+
+深度神经网络训练的必知技巧
+
+https://mp.weixin.qq.com/s/qz6Xn7dpp1s96pKyWcUbjg
+
+从变分边界到进化策略，一文读懂机器学习变换技巧
+
+https://mp.weixin.qq.com/s/ye4QvDfKPGyX0eK3Mti1Kw
+
+从反向传播到迁移学习，盘点人工智能从业者必备的10个深度学习方法
+
+https://mp.weixin.qq.com/s/WCRYppBLdl_M4etUChnfgw
+
+PyMC3和Theano代码构建贝叶斯深度网络
+
+https://mp.weixin.qq.com/s/2gBoVr_072DLJ_MMHPHNLQ
+
+这8种神经网络结构，你掌握了几个？
+
+https://mp.weixin.qq.com/s/UMi5NUqcqNTBjlt946jFFQ
+
+深度学习应该使用复数吗？
+
+https://mp.weixin.qq.com/s/vFBlFAQLvDZP7IvwKoaPhA
+
+无问西东，只问哈希
+
+https://mp.weixin.qq.com/s/SeNIQQL_MqjFG4ek_wJoIg
+
+必须了解的8种神经网络架构
+
 ## AI芯片
 
 https://cloud.tencent.com/community/article/244743
@@ -220,6 +262,10 @@ https://mp.weixin.qq.com/s/DnurlGgd5q4Fwjxy3YnIrQ
 
 当数据库遇见FPGA：X-DB异构计算如何实现百万级TPS？
 
+https://mp.weixin.qq.com/s/PDe8O5zskxD_mycwH0_3lg
+
+AI是如何影响计算机内存系统的？
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293
@@ -355,32 +401,6 @@ https://mp.weixin.qq.com/s/wIdTDHEPffWqHA3_XWBLyw
 没错，纯SQL查询语句可以实现神经网络。
 
 >SQL跑神经网络固然没有太大意义，然而分布式数据库已经有数十年的历史，对于设计分布式深度学习框架亦有重大的启发意义。
-
-## 面试
-
-https://www.zhihu.com/question/41233373
-
-如果你是面试官，你怎么去判断一个面试者的深度学习水平？
-
-https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
-
-20万、50万、100万的算法工程师，到底有什么区别？
-
-https://www.zhihu.com/question/56676679/answer/151505274
-
-机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
-
-https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
-
-面试官是如何看出你机器学习水平的？
-
-https://mp.weixin.qq.com/s?__biz=MzI3NTA0MzM1OQ==&mid=2651615534&idx=1&sn=00ecd7dc1d8472c070e720a1b63f04c4
-
-我如何考察面试者的机器学习水平
-
-https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
-
-谷歌等巨头机器学习面试题：从逻辑回归到智力测验
 
 ## 行业
 

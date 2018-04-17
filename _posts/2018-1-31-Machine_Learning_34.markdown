@@ -188,6 +188,10 @@ https://mp.weixin.qq.com/s/xsuLIMPJVCThBGMRlz09Hg
 
 Isolation Forest算法原理详解
 
+http://www.bigdata8.top/front/article/466
+
+异常值检测-滑动均值实现智能告警
+
 # 自适应滤波器
 
 《自适应滤波器原理》，Simon Haykin著。

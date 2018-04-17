@@ -306,6 +306,10 @@ https://mp.weixin.qq.com/s/VS2MXdyb849jVU4F_QMRpA
 
 OpenCV中几何形状识别与测量
 
+https://mp.weixin.qq.com/s/Jv8CD_x-lgUdx3J5l1zYSg
+
+OpenCV实现人脸对齐
+
 # GNU Octave
 
 GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。

@@ -180,6 +180,14 @@ https://www.matroid.com/blog/post/slides-and-videos-from-scaledml-2018
 
 Slides and Videos from ScaledML 2018
 
+http://techforum-img.cn-hangzhou.oss-pub.aliyun-inc.com/1523848064814/AliTech101_Algorithms.pdf
+
+《阿里技术参考图册》（算法篇）
+
+http://techforum-img.cn-hangzhou.oss-pub.aliyun-inc.com/1523849261680/AliTech101_RD.pdf
+
+《阿里技术参考图册》（研发篇）
+
 ## 项目集锦
 
 https://mp.weixin.qq.com/s/ZNNgEB9rFjAE8SdfMo9NLA
@@ -459,40 +467,4 @@ https://mp.weixin.qq.com/s/xbimfckVD0Ol0T1n0-_ktA
 https://mp.weixin.qq.com/s/Lp2pq95woQ5-E3RemdRnyw
 
 动态层归一化（Dynamic Layer Normalization）
-
-https://mp.weixin.qq.com/s/09uzm9LJxJwLL-bEoayJbg
-
-深度学习中的常见分布
-
-https://wenku.baidu.com/view/98590eedaeaad1f346933f88.html
-
-小波神经网络简介
-
-https://mp.weixin.qq.com/s/mAkC6TDwLJ3hj2wSGiFdFg
-
-深度神经网络训练的必知技巧
-
-https://mp.weixin.qq.com/s/qz6Xn7dpp1s96pKyWcUbjg
-
-从变分边界到进化策略，一文读懂机器学习变换技巧
-
-https://mp.weixin.qq.com/s/ye4QvDfKPGyX0eK3Mti1Kw
-
-从反向传播到迁移学习，盘点人工智能从业者必备的10个深度学习方法
-
-https://mp.weixin.qq.com/s/WCRYppBLdl_M4etUChnfgw
-
-PyMC3和Theano代码构建贝叶斯深度网络
-
-https://mp.weixin.qq.com/s/2gBoVr_072DLJ_MMHPHNLQ
-
-这8种神经网络结构，你掌握了几个？
-
-https://mp.weixin.qq.com/s/UMi5NUqcqNTBjlt946jFFQ
-
-深度学习应该使用复数吗？
-
-https://mp.weixin.qq.com/s/vFBlFAQLvDZP7IvwKoaPhA
-
-无问西东，只问哈希
 

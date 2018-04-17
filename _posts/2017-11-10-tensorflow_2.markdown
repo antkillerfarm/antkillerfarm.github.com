@@ -240,6 +240,10 @@ http://www.jianshu.com/p/d443aab9bcb1
 
 在TensorFlow上使用LSTM进行情感分析
 
+https://mp.weixin.qq.com/s/gW_KX6eF9XEsSUO1UzJ3WQ
+
+基于LSTM的情感分析
+
 https://mp.weixin.qq.com/s/5QYlh6gV9IqdQfraK4DC8w
 
 10种深度学习算法的TensorFlow实现
