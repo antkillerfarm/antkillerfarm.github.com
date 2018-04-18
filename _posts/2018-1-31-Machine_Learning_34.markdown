@@ -170,6 +170,10 @@ https://mp.weixin.qq.com/s/1rx_R1BGRVAIDqKixNLMQA
 
 终极入门 马尔可夫网络 (Markov Networks)——概率图模型
 
+https://mp.weixin.qq.com/s/GXbFxlExDtjtQe-OPwfokA
+
+一文轻松搞懂-条件随机场CRF
+
 # 异常点检测
 
 http://chuansong.me/n/377440751130
@@ -311,32 +315,4 @@ https://mp.weixin.qq.com/s/E_EzwLr4JOzR1pk3MOeU_w
 https://mp.weixin.qq.com/s/QmDCFY0SP3cl71HvwvthJQ
 
 如果高斯没有故意“坑”黎曼，估计这门神奇的学科就不会出现了……
-
-https://mp.weixin.qq.com/s/QJQnRCrBu9j94-VhNq_4tA
-
-群论的创立：两个少年天才的接力
-
-https://mp.weixin.qq.com/s/H6QV5L-Ewdb1NkMKZrNK9w
-
-一杯咖啡背后的拓扑
-
-https://mp.weixin.qq.com/s/FqY19sTQd7GPdGSsB5L9eQ
-
-数学大反例合集
-
-https://mp.weixin.qq.com/s/7usiElPtYAt1DCBIv5BZ2Q
-
-多项式插值算法与回归算法
-
-https://mp.weixin.qq.com/s/6fd8oxnahJ0EoocRV4q8Bg
-
-一看就懂的Alpha-Beta剪枝算法详解
-
-https://mp.weixin.qq.com/s/rZwqxyBmQg07Pq1ihTjNMg
-
-动图解释泰勒级数（一）
-
-https://mp.weixin.qq.com/s/yqAnIjGmXpubgSsGDx6O8w
-
-动图解释泰勒级数（二）
 
