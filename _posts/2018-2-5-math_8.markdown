@@ -101,3 +101,12 @@ https://mp.weixin.qq.com/s/XfYV7pPd54a3gunjznVwdw
 https://mp.weixin.qq.com/s/wzUbYyrBOxU-2bY-EJm4KA
 
 极端图像压缩的生成对抗网络，可生成低码率的高质量图像
+
+https://mp.weixin.qq.com/s/G3Uy78fEwEAUtIjlTWJoqw
+
+“尬聊”被拉黑后，这个浙大学生开发了一个深度学习模型
+
+https://mp.weixin.qq.com/s/tUSNk5R_zbEFz-yIx0LXYQ
+
+基于DNN的人脸识别中的反欺骗机制
+

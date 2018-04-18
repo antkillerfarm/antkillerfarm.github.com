@@ -184,15 +184,19 @@ https://mp.weixin.qq.com/s/BK7-dZErDEST8C2TD1HEDA
 
 https://mp.weixin.qq.com/s/Z0oZrvzn7ktdTIQX-0KMLA
 
-手把手：用Python实现一个基于RSA算法的区块链客户端
+用Python实现一个基于RSA算法的区块链客户端
 
 https://mp.weixin.qq.com/s/Ue9sIInRMon-CCyC-qyNsw
 
-手把手：用Python搭建一个加密货币交易模拟器，不用投钱就能玩
+用Python搭建一个加密货币交易模拟器，不用投钱就能玩
 
 https://zhuanlan.zhihu.com/p/35563341
 
 为什么越来越少人用CPU/GPU挖矿？ASIC矿机优势在哪里？
+
+https://mp.weixin.qq.com/s/c9Ix4d8NqyOFlX75e6Gnsg
+
+区块链背后的4大核心技术
 
 # CPU
 

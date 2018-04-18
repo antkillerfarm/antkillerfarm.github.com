@@ -342,3 +342,7 @@ https://mp.weixin.qq.com/s/TDazJQVnLp9bfRi-pdHAhw
 
 每天1800万单，1小时送到，美团外卖如何优化配送模型？
 
+https://mp.weixin.qq.com/s/RP9AfRNfztgKR9JTqhTTqQ
+
+资本资产定价模型简介
+

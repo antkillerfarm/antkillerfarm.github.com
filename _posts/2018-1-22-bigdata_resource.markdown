@@ -398,3 +398,7 @@ https://mp.weixin.qq.com/s/QxV4-sa72ALCZdD4QWqLPA
 
 如何让快递更"快"？菜鸟自研定时任务调度引擎首次公开
 
+https://mp.weixin.qq.com/s/MSR18sqUznuiUgUM5YkvZg
+
+携程图片服务架构
+

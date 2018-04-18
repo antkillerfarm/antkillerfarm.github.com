@@ -46,7 +46,7 @@ https://mp.weixin.qq.com/s/Ty46-s0kvr2MpbUhQPXJfQ
 
 https://mp.weixin.qq.com/s/CMxo4FNxWYyoG-gxAgtzyA
 
-从零开始：手把手教你安装深度学习操作系统、驱动和各种python库！
+手把手教你安装深度学习操作系统、驱动和各种python库！
 
 https://github.com/leetmaa/KMCLib
 
@@ -106,7 +106,7 @@ Python可以被用来做哪些神奇好玩的事情
 
 https://mp.weixin.qq.com/s/-SHD9rXUGQ-yp21RtFhJpg
 
-手把手教你 Python挖掘用户评论典型意见并自动生产报告
+Python挖掘用户评论典型意见并自动生产报告
 
 https://mp.weixin.qq.com/s/OxNj9fWaEMh8SuQiK52HWg
 
@@ -162,7 +162,7 @@ https://mp.weixin.qq.com/s/HGLBPA9Ob7-3DzSNuF39Mg
 
 https://mp.weixin.qq.com/s/VmLphhs8rGabdNXtvllgdQ
 
-小白学数据：教你用Python实现简单监督学习算法
+教你用Python实现简单监督学习算法
 
 https://mp.weixin.qq.com/s/TglQzG1iE0keEGLKZ-pGIg
 
@@ -170,7 +170,7 @@ Python数据处理实战——使用Scikit-Learn进行多类文本分类
 
 https://mp.weixin.qq.com/s/WdYa7Q-yA-s_EO59YkYbqw
 
-来自小姐姐的入门推荐：7个基本机器学习算法Python实现
+7个基本机器学习算法Python实现
 
 https://mp.weixin.qq.com/s/NIOLuK8-ctvncglmpIOEhQ
 
@@ -194,7 +194,7 @@ python语音识别指南终极版
 
 https://mp.weixin.qq.com/s/pDTbiS8xFH0llUBaN1Mb_Q
 
-算法应用实践：如何用Python写一个贪吃蛇AI
+如何用Python写一个贪吃蛇AI
 
 https://mp.weixin.qq.com/s/mABDO5Sxv-Wc-gAgDQAbFQ
 
@@ -206,11 +206,15 @@ SciPy库以及图像高斯模糊实战
 
 https://mp.weixin.qq.com/s/U4ttnC9VRO39Ic5stG9pBQ
 
-手把手：基于概率编程Pyro的金融预测，让正则化结果更有趣！
+基于概率编程Pyro的金融预测，让正则化结果更有趣！
 
 https://mp.weixin.qq.com/s/8idFi0W7eJx9XDti48B9WQ
 
-一个很皮的实践 Python自动生成表情包
+Python自动生成表情包
+
+https://mp.weixin.qq.com/s/NJed2PbqBU8utLq8HQxctQ
+
+一个Python自动提取内容摘要的实践
 
 # 推荐系统的工程细节
 
