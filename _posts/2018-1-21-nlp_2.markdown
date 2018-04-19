@@ -190,6 +190,34 @@ https://mp.weixin.qq.com/s/CM7WLc7iSp877WrkH8R_7g
 
 如何用数学方法估算一个女生前男友的数量？
 
+https://mp.weixin.qq.com/s/QJQnRCrBu9j94-VhNq_4tA
+
+群论的创立：两个少年天才的接力
+
+https://mp.weixin.qq.com/s/H6QV5L-Ewdb1NkMKZrNK9w
+
+一杯咖啡背后的拓扑
+
+https://mp.weixin.qq.com/s/FqY19sTQd7GPdGSsB5L9eQ
+
+数学大反例合集
+
+https://mp.weixin.qq.com/s/7usiElPtYAt1DCBIv5BZ2Q
+
+多项式插值算法与回归算法
+
+https://mp.weixin.qq.com/s/6fd8oxnahJ0EoocRV4q8Bg
+
+一看就懂的Alpha-Beta剪枝算法详解
+
+https://mp.weixin.qq.com/s/rZwqxyBmQg07Pq1ihTjNMg
+
+动图解释泰勒级数（一）
+
+https://mp.weixin.qq.com/s/yqAnIjGmXpubgSsGDx6O8w
+
+动图解释泰勒级数（二）
+
 ## 金融模型
 
 Capital asset pricing model
