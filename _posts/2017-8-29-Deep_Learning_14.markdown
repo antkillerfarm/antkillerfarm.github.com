@@ -280,6 +280,10 @@ https://mp.weixin.qq.com/s/Oy7YAp1NoVICQZqXRz0uVg
 
 基于深度学习的目标检测综述(一）
 
+https://mp.weixin.qq.com/s/Gq3bflJq59Tx-nDCvbweNA
+
+无需预训练分类器，清华&旷视提出专用于目标检测的骨干网络DetNet
+
 # RCNN
 
 《深度学习（五）》中提到的AlexNet、VGG、GoogleNet主要用于图片分类。而这里介绍的RCNN(Regions with CNN)主要用于目标检测。

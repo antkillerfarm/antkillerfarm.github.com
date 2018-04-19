@@ -158,6 +158,10 @@ https://mp.weixin.qq.com/s/Lvd4NfLg0Lzivb4BingV7w
 
 Tensorflow Eager Execution入门指南
 
+https://mp.weixin.qq.com/s/U_Pew90j9swIqti3oKEIQg
+
+玩转TensorFlow Lite：有道云笔记实操案例分享
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/LTtcD5CBT8m127thjBaRsw

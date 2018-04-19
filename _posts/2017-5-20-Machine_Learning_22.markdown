@@ -30,7 +30,15 @@ EMD有时也称作Wasserstein距离。
 
 https://vincentherrmann.github.io/blog/wasserstein/
 
+Wasserstein GAN and the Kantorovich-Rubinstein Duality
+
 http://chaofan.io/archives/earth-movers-distance-%e6%8e%a8%e5%9c%9f%e6%9c%ba%e8%b7%9d%e7%a6%bb
+
+Earth Mover's Distance——推土机距离
+
+https://mp.weixin.qq.com/s/rvPLYa1NFg_LRvb8Y8-aCQ
+
+Wasserstein距离在生成模型中的应用
 
 # LSA
 

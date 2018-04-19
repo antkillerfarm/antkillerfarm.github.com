@@ -432,6 +432,10 @@ http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw
 
 周志华教授gcForest（多粒度级联森林）算法预测股指期货涨跌
 
+https://mp.weixin.qq.com/s/GU9-rH0gFan620Jhc1HTDg
+
+周志华提出的gcForest能否取代深度神经网络？
+
 https://mp.weixin.qq.com/s/dEmox_pi6KGXwFoevbv14Q
 
 周志华：首个基于森林的自编码器，性能优于DNN

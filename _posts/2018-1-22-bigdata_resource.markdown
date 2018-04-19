@@ -402,3 +402,7 @@ https://mp.weixin.qq.com/s/MSR18sqUznuiUgUM5YkvZg
 
 携程图片服务架构
 
+https://mp.weixin.qq.com/s/yQSMSLBYg4iauu8yeUfvjw
+
+深度解读！时序数据库HiTSDB：分布式流式聚合引擎
+

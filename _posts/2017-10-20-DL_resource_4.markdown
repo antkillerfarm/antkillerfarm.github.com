@@ -250,6 +250,14 @@ https://zhuanlan.zhihu.com/p/35695477
 
 基于Meta Learning在动态竞争环境中实现策略自适应
 
+https://mp.weixin.qq.com/s/AhadWUjtgsFmb8uTylTvqg
+
+OpenAI提出新型元学习方法EPG，调整损失函数实现新任务上的快速训练
+
+https://mp.weixin.qq.com/s/dmRdp2oMn0vGukclJSVZDg
+
+Uber AI论文：利用反向传播训练可塑神经网络，生物启发的元学习范式
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/ygt31lL0mBcyRmwAlsl8Sg

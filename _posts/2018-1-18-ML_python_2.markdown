@@ -216,6 +216,10 @@ https://mp.weixin.qq.com/s/NJed2PbqBU8utLq8HQxctQ
 
 一个Python自动提取内容摘要的实践
 
+https://mp.weixin.qq.com/s/yBmpdtYJ0B5iq00dKvIprw
+
+一文教你构建图书推荐系统
+
 # 推荐系统的工程细节
 
 推荐系统不仅是算法，还包括若干工程细节。这些细节虽然不算复杂，够不上算法的层面，然而对产品的成败，却有举足轻重的作用。
