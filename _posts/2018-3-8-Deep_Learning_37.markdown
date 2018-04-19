@@ -248,6 +248,10 @@ https://mp.weixin.qq.com/s/MyA8_yt4YCkFl67AyhpZow
 
 尺度不变人脸检测器（S3FD-Single Shot Scale-invariant Face Detector）
 
+https://mp.weixin.qq.com/s/b-v_hDHJjUxMithBDr3TcQ
+
+实时旋转鲁棒人脸检测算法
+
 # 迁移学习
 
 >龙明盛，清华本科（2008）+博士（2016），迁移学习的最早提出者之一。清华大学副教授，博导。   

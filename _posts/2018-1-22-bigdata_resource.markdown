@@ -406,3 +406,12 @@ https://mp.weixin.qq.com/s/yQSMSLBYg4iauu8yeUfvjw
 
 深度解读！时序数据库HiTSDB：分布式流式聚合引擎
 
+https://mp.weixin.qq.com/s/pxNRzWs3sZmbr-K18FvnrA
+
+美团点评智能支付核心交易系统的可用性实践
+
+https://mp.weixin.qq.com/s/UYN4cxH4gT0WsFTrBKRKGA
+
+美团酒旅实时数据规则引擎应用实践
+
+

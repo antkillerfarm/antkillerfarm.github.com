@@ -266,4 +266,7 @@ https://mp.weixin.qq.com/s/ycwTgOAZ8j-PiOZOqKzd7A
 
 RNN作为识别器，判定加权语言一致性
 
+https://mp.weixin.qq.com/s/nL5T3j09Elp6uziNmePIMg
+
+猿辅导MSMARCO冠军团队：用MARS模型解决机器阅读任务
 

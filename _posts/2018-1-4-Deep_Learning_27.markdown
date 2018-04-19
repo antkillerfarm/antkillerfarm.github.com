@@ -170,6 +170,12 @@ RBM不仅可以单独使用，也可以堆叠起来形成Deep Belief Nets(DBNs)�
 
 深度置信网络常用于图像、视频序列和动作捕捉数据的识别、聚类与生成。
 
+参考：
+
+https://mp.weixin.qq.com/s/7V0GSWcKZGyXeLeMPhE9fQ
+
+神经网络简史：BP算法后的又一突破—信念网络
+
 ## Deep Autoencoder
 
 ![](/images/img2/deep_autoencoder.png)
