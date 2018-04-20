@@ -296,6 +296,14 @@ https://mp.weixin.qq.com/s/6dpKSaLFVo-ge4gtbG8GQg
 
 简述脉冲神经网络SNN：下一代神经网络
 
+# LSM
+
+liquid state machine (LSM)
+
+http://www.docin.com/p-390935406.html
+
+基于液体状态机的脑运动神经系统的建模研究
+
 # DNC
 
 https://zhuanlan.zhihu.com/p/27773709

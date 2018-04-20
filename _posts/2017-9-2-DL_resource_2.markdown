@@ -402,6 +402,10 @@ https://mp.weixin.qq.com/s/wIdTDHEPffWqHA3_XWBLyw
 
 >SQL跑神经网络固然没有太大意义，然而分布式数据库已经有数十年的历史，对于设计分布式深度学习框架亦有重大的启发意义。
 
+https://zhuanlan.zhihu.com/p/33351291
+
+基于忆阻器（ReRAM），Computing-in-Memory的DLA
+
 ## 行业
 
 李开复的这篇文章不可不读：

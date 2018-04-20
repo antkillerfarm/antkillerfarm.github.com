@@ -416,3 +416,7 @@ https://mp.weixin.qq.com/s/SkGUZMgBW_oFBygc4d1zQg
 
 如何用Python编写知乎爬虫？
 
+https://mp.weixin.qq.com/s/-PPlfkHhQzGF1N6-dMlRNA
+
+高阶Python爬虫实战：破解极验滑动验证码
+

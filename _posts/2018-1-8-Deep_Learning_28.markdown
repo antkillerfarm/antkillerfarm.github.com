@@ -50,7 +50,7 @@ http://www.taodocs.com/p-62206829.html
 
 # SOM
 
-Self Organizing Maps (SOM)是一种无监督算法，主要用于聚类和可视化。
+Self Organizing Maps (SOM)（也叫kohonen network）是一种无监督算法，主要用于聚类和可视化。
 
 >Teuvo Kohonen，1934年生，芬兰科学家。Helsinki University of Technology博士和教授。
 
@@ -125,6 +125,14 @@ http://blog.csdn.net/Loyal2M/article/details/11225987
 http://www.ai-junkie.com/ann/som/som1.html
 
 Kohonen's Self Organizing Feature Maps
+
+# ESN
+
+Echo State Network
+
+https://blog.csdn.net/zwqhehe/article/details/77025035
+
+回声状态网络(ESN)原理详解
 
 # Group Normalization
 

@@ -158,9 +158,17 @@ https://mp.weixin.qq.com/s/Lvd4NfLg0Lzivb4BingV7w
 
 Tensorflow Eager Execution入门指南
 
+https://mp.weixin.qq.com/s/OVWbxBNc4i0_5jgy06xS1A
+
+基于Tensorflow Estimators的文本分类
+
 https://mp.weixin.qq.com/s/U_Pew90j9swIqti3oKEIQg
 
 玩转TensorFlow Lite：有道云笔记实操案例分享
+
+https://mp.weixin.qq.com/s/c_2_9gvOynHaVW6pi4qQjQ
+
+用TensorFlow让机器人唱首歌给你听
 
 # DL参考资源
 
