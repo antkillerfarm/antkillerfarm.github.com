@@ -174,6 +174,10 @@ https://mp.weixin.qq.com/s/GXbFxlExDtjtQe-OPwfokA
 
 一文轻松搞懂-条件随机场CRF
 
+https://zhuanlan.zhihu.com/p/35969159
+
+CRF条件随机场
+
 # 异常点检测
 
 http://chuansong.me/n/377440751130

@@ -148,6 +148,10 @@ https://zhuanlan.zhihu.com/p/21434933
 
 DQN实战篇 从零开始安装Ubuntu, Cuda, Cudnn, Tensorflow, OpenAI Gym
 
+https://mp.weixin.qq.com/s/0HukwNmg3k-rBrIBByLhnQ
+
+深度Q学习：一步步实现能玩《毁灭战士》的智能体
+
 ## 参考
 
 https://www.nervanasys.com/demystifying-deep-reinforcement-learning/

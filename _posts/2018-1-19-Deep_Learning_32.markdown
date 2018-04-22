@@ -86,6 +86,10 @@ https://mp.weixin.qq.com/s/98k1fNHDIwITFyLnNutt4A
 
 Entity Embeddings: 利用深度学习训练结构化数据的实体嵌入
 
+https://blog.csdn.net/malefactor/article/details/50767711
+
+利用Word Embedding自动生成语义相近句子
+
 # NN的INT8计算
 
 ## 概述

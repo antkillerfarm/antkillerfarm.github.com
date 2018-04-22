@@ -266,21 +266,9 @@ https://mp.weixin.qq.com/s/VoBK-l_ieSg2UupC2ix2pA
 
 听说你了解深度学习最常用的学习算法：Adam优化算法？
 
-https://mp.weixin.qq.com/s/T-v9OTcJa5OQ71QmYrFtbg
-
-斯坦福大学提出SGD动量自调节器YellowFin
-
 https://mp.weixin.qq.com/s/4XOI8Dq6fqe8rhtJjeyxeA
 
 超级收敛：使用超大学习率超快速训练残差网络
-
-http://mp.weixin.qq.com/s/Q5kBCNZs3a6oiznC9-2bVg
-
-Michael Jordan新研究官方解读：如何有效地避开鞍点
-
-https://mp.weixin.qq.com/s/idmt0F49tOCh-ghWdHLdUw
-
-吴恩达导师Michael I.Jordan学术演讲：如何有效避开鞍点。这是Jordan半年后的另一个演讲，有些新内容。
 
 https://mp.weixin.qq.com/s/YRyqvlNe24mlFZ7GB9vDnw
 
@@ -306,14 +294,6 @@ https://mp.weixin.qq.com/s/T4f4W0V6YNBbjWqWBF19mA
 
 目标函数的经典优化算法介绍
 
-https://mp.weixin.qq.com/s/6u5W7Lm81Wtczdzp5WCJWw
-
-DeepMind提出新型超参数最优化方法：性能超越手动调参和贝叶斯优化
-
-https://mp.weixin.qq.com/s/0V8B-u5_bRM5Fu9oOAYjqw
-
-清华大学：通过在单纯形上软门限投影的加速随机贪心坐标下降
-
 https://mp.weixin.qq.com/s/fXlbB7KmiX0iIv6xwSxNIA
 
 梯度下降法的三种形式BGD、SGD以及MBGD
@@ -322,25 +302,9 @@ https://mp.weixin.qq.com/s/R_0_E5Ieaj9KiWgg1prxeg
 
 为什么梯度的方向与等高线切线方向垂直？
 
-https://mp.weixin.qq.com/s/LuuvvL9yZ3ucXxRq0pZfsg
-
-优化策略：Label Smoothing Regularization_LSR原理分析
-
-https://zhuanlan.zhihu.com/p/23866364
-
-从梯度下降到Hessian-Free优化
-
 https://mp.weixin.qq.com/s/0gdGNv98DytB8KxwVu_M0A
 
 通俗易懂讲解Deep Learning最优化方法之AdaGrad
-
-https://mp.weixin.qq.com/s/HPrjEdszBSvVoVS66W-Fjw
-
-2017年深度学习优化算法研究亮点最新综述
-
-https://mp.weixin.qq.com/s/W06YcuGWalDbyUaZa_kZnQ
-
-2017年深度学习优化算法最新综述
 
 https://mp.weixin.qq.com/s/VVHe2msyeUTGiC7f_f0FFA
 
@@ -349,4 +313,12 @@ https://mp.weixin.qq.com/s/VVHe2msyeUTGiC7f_f0FFA
 https://mp.weixin.qq.com/s/qp5tJynA2uZIgv-IzJ_lrA
 
 从基础知识到实际应用，一文了解“机器学习非凸优化技术”
+
+https://mp.weixin.qq.com/s/zFGQzC_uQdAwlr9BzA-CYg
+
+深度学习需要了解的四种神经网络优化算法
+
+https://mp.weixin.qq.com/s/rUqIfKWmEBVjajlAn2HXfg
+
+理解深度学习中的学习率及多种选择策略
 

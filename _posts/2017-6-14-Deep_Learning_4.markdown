@@ -58,6 +58,10 @@ https://mp.weixin.qq.com/s/Ci0HPy3ENz1ZooB784aMcA
 
 谷歌大脑Wasserstein自编码器：新一代生成模型算法
 
+https://mp.weixin.qq.com/s/Pgf6JMokilV9JxYWi7Y20Q
+
+揭秘自编码器，一种捕捉数据最重要特征的神经网络
+
 # 词向量
 
 ## One-hot Representation

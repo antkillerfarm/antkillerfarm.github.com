@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十六）——XGBoost, LightGBM, Parameter Server, LambdaMART, NLP机器翻译常用评价度量
+title:  机器学习（三十六）——XGBoost, LightGBM, Parameter Server, LambdaMART, NLP机器翻译常用评价度量, Optimizer进阶
 category: ML 
 ---
 
@@ -241,4 +241,62 @@ https://mp.weixin.qq.com/s/XiZ6Uc5cHZjczn-qoupQnA
 https://zhuanlan.zhihu.com/p/33088748
 
 数据集和评价指标介绍
+
+# Optimizer进阶
+
+http://mp.weixin.qq.com/s/Q5kBCNZs3a6oiznC9-2bVg
+
+Michael Jordan新研究官方解读：如何有效地避开鞍点
+
+https://mp.weixin.qq.com/s/idmt0F49tOCh-ghWdHLdUw
+
+吴恩达导师Michael I.Jordan学术演讲：如何有效避开鞍点。这是Jordan半年后的另一个演讲，有些新内容。
+
+https://mp.weixin.qq.com/s/jVjemfcLzIWOdWdxMgoxsA
+
+超越Adam，从适应性学习率家族出发解读ICLR 2018高分论文
+
+https://mp.weixin.qq.com/s/B9nUwPtgpsLkEyCOlSAO5A
+
+1cycle策略：实践中的学习率设定应该是先增再降
+
+https://mp.weixin.qq.com/s/dseeCB-CRtZnzC3d4_8pYw
+
+AMSGrad能够取代Adam吗
+
+https://mp.weixin.qq.com/s/7E8o1TnvmAvZgB7_AWCunQ
+
+2018值得尝试的无参数全局优化新算法
+
+https://mp.weixin.qq.com/s/hK6BJGAPyg_RqqilCcf2NA
+
+全局自动优化：C++机器学习库dlib引入自动调参算法
+
+https://mp.weixin.qq.com/s/T-v9OTcJa5OQ71QmYrFtbg
+
+斯坦福大学提出SGD动量自调节器YellowFin
+
+https://mp.weixin.qq.com/s/6u5W7Lm81Wtczdzp5WCJWw
+
+DeepMind提出新型超参数最优化方法：性能超越手动调参和贝叶斯优化
+
+https://mp.weixin.qq.com/s/0V8B-u5_bRM5Fu9oOAYjqw
+
+清华大学：通过在单纯形上软门限投影的加速随机贪心坐标下降
+
+https://mp.weixin.qq.com/s/LuuvvL9yZ3ucXxRq0pZfsg
+
+优化策略：Label Smoothing Regularization_LSR原理分析
+
+https://zhuanlan.zhihu.com/p/23866364
+
+从梯度下降到Hessian-Free优化
+
+https://mp.weixin.qq.com/s/HPrjEdszBSvVoVS66W-Fjw
+
+2017年深度学习优化算法研究亮点最新综述
+
+https://mp.weixin.qq.com/s/W06YcuGWalDbyUaZa_kZnQ
+
+2017年深度学习优化算法最新综述
 

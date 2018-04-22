@@ -204,6 +204,10 @@ http://www.cnblogs.com/robert-dlut/p/8638283.html
 
 自然语言处理中的自注意力机制！
 
+https://mp.weixin.qq.com/s/l4HN0_VzaiO-DwtNp9cLVA
+
+循环注意力区域实现图像多标签分类
+
 # VAE
 
 变分自编码器（Variational Auto-Encoder，VAE）是Autoencoder的一种扩展。

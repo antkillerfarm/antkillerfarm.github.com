@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  语音识别（二）——传统方法
+title:  语音识别（二）——DTW
 category: graphics 
 ---
 
@@ -70,29 +70,53 @@ https://zhuanlan.zhihu.com/p/22512377
 
 自然的语音交互——麦克风阵列
 
-# 传统方法
+# DTW
 
-## Dynamic Time Warping
+Dynamic Time Warping是Vintsiuk于1968年提出的算法。
+
+>Taras Klymovych Vintsiuk，1939～2012，乌克兰科学家，毕业于Kyiv Polytechnic Institute。模式识别专家，语音识别领域的奠基人之一。
 
 
+
+![](/images/img2/Dynamic_time_warping.png)
+
+参考：
 
 http://blog.csdn.net/zouxy09/article/details/9140207
 
 语音信号处理之（一）动态时间规整（DTW）
 
-## Pitch Detection
+https://blog.csdn.net/raym0ndkwan/article/details/45614813
+
+DTW动态时间规整
+
+# Pitch Detection
 
 http://blog.csdn.net/zouxy09/article/details/9141875
 
 语音信号处理之（二）基音周期估计（Pitch Detection）
 
-## Vector Quantization
+# Vector Quantization
 
 http://blog.csdn.net/zouxy09/article/details/9153255
 
 语音信号处理之（三）矢量量化（Vector Quantization）
 
-## MFCC
+# MFCC
+
+Mel scale
+
+>Stanley Smith Stevens，1906～1973，Harvard University心理学教授。
+
+>John E. Volkmann，1905～1980，Radio Corporation of America研究员。
+
+>Edwin B. Newman，1908~1989，Harvard University心理学教授。
+
+Mel-frequency cepstral coefficients
+
+
+
+参考：
 
 http://blog.csdn.net/zouxy09/article/details/9156785
 
@@ -106,7 +130,7 @@ https://liuyanfeier.github.io/2017/10/26/2017-10-27-Kaldi%E4%B9%8Bfbank%E5%92%8C
 
 kaldi之fbank和mfcc特征提取
 
-## FBank
+# FBank
 
 http://blog.csdn.net/wxb1553725576/article/details/78048546
 

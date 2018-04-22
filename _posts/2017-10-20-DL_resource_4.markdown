@@ -258,6 +258,10 @@ https://mp.weixin.qq.com/s/dmRdp2oMn0vGukclJSVZDg
 
 Uber AI论文：利用反向传播训练可塑神经网络，生物启发的元学习范式
 
+https://mp.weixin.qq.com/s/Cc4EHc6ei-PtZWhewM10xw
+
+学习如何学习的算法：简述元学习研究方向现状
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/ygt31lL0mBcyRmwAlsl8Sg
@@ -400,27 +404,5 @@ https://mp.weixin.qq.com/s/kMTMjlLgcR24DT7CXvezsA
 
 深度学习概念、架构和tensorflow的思维导图！
 
-https://mp.weixin.qq.com/s/-iziuLKUsRA4VpR5xJqEww
 
-斯坦福提出神经任务编程NTP：让机器人从层级任务中学习
-
-https://mp.weixin.qq.com/s/-zl2tQuzdlJd5TXIW9EPyA
-
-Google：机器学习系统，隐藏多少技术债？
-
-https://mp.weixin.qq.com/s/nF-RIAzQv3gMSXkM_92Rbg
-
-MIT博士生Bolei Zhou：CVPR2017关于如何解释深度学习模型的讲座
-
-https://mp.weixin.qq.com/s/gUJkqVtObFi8Y4BgbR82GA
-
-提升DNN参数准确度：MILA提出贝叶斯超网络
-
-https://mp.weixin.qq.com/s/PKqDlbKynnCLE6JAy0NuQQ
-
-谷歌深度学习公开课任务 1: notMNIST
-
-https://mp.weixin.qq.com/s/PF6-txnq3SV258EfNVufSw
-
-深度学习与XGBoost在小数据集上的测评
 

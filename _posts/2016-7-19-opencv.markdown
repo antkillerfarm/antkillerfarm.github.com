@@ -310,6 +310,10 @@ https://mp.weixin.qq.com/s/Jv8CD_x-lgUdx3J5l1zYSg
 
 OpenCV实现人脸对齐
 
+https://mp.weixin.qq.com/s/pG5nq1fQ9XHp8WZN1AiLJQ
+
+OpenCV 基于Inception模型图像分类
+
 # GNU Octave
 
 GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。
@@ -403,5 +407,9 @@ https://mp.weixin.qq.com/s/DbDrDhbQAhXOsfxQ8UJVZg
 https://mp.weixin.qq.com/s/gOikxUxWpqdDRr6_KT2jxQ
 
 图像处理，计算机视觉与machine learning的区别与联系
+
+https://mp.weixin.qq.com/s/7fvVmmpPSldwa3TZ3dVb2g
+
+3D LUT--色彩校正的利器
 
 

@@ -188,6 +188,10 @@ https://zhuanlan.zhihu.com/p/35567591
 
 强化学习在关系抽取、QA场景的应用
 
+https://mp.weixin.qq.com/s/oOslkEklaZSbRb8eDDCRBw
+
+天津大学、东京大学等研究：用深度强化学习检测模型缺陷
+
 # 模型压缩
 
 对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。

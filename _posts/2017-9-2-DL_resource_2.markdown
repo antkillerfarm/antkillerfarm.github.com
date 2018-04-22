@@ -266,6 +266,10 @@ https://mp.weixin.qq.com/s/PDe8O5zskxD_mycwH0_3lg
 
 AI是如何影响计算机内存系统的？
 
+https://blog.csdn.net/lien0906/article/details/78863118
+
+深度学习中GPU和显存分析
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293

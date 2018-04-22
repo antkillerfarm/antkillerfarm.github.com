@@ -4,34 +4,6 @@ title:  机器学习（二十四）——单分类SVM&多分类SVM, 时间序列
 category: ML 
 ---
 
-# Optimizer
-
-## 参考（续）
-
-https://mp.weixin.qq.com/s/7E8o1TnvmAvZgB7_AWCunQ
-
-2018值得尝试的无参数全局优化新算法
-
-https://mp.weixin.qq.com/s/hK6BJGAPyg_RqqilCcf2NA
-
-全局自动优化：C++机器学习库dlib引入自动调参算法
-
-https://mp.weixin.qq.com/s/zFGQzC_uQdAwlr9BzA-CYg
-
-深度学习需要了解的四种神经网络优化算法
-
-https://mp.weixin.qq.com/s/rUqIfKWmEBVjajlAn2HXfg
-
-理解深度学习中的学习率及多种选择策略
-
-https://mp.weixin.qq.com/s/jVjemfcLzIWOdWdxMgoxsA
-
-超越Adam，从适应性学习率家族出发解读ICLR 2018高分论文
-
-https://mp.weixin.qq.com/s/B9nUwPtgpsLkEyCOlSAO5A
-
-1cycle策略：实践中的学习率设定应该是先增再降
-
 # 单分类SVM&多分类SVM
 
 原始的SVM主要用于二分类，然而稍加变化，也可用于单分类和多分类。

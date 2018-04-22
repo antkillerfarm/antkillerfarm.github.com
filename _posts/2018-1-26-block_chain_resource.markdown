@@ -198,6 +198,10 @@ https://mp.weixin.qq.com/s/c9Ix4d8NqyOFlX75e6Gnsg
 
 区块链背后的4大核心技术
 
+https://mp.weixin.qq.com/s/K9zSNM2SKjC0BEqoYr2U5w
+
+比特币的数据版图
+
 # CPU
 
 https://zhuanlan.zhihu.com/p/29743431
