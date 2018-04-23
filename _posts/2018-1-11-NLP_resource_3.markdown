@@ -270,3 +270,16 @@ https://mp.weixin.qq.com/s/nL5T3j09Elp6uziNmePIMg
 
 猿辅导MSMARCO冠军团队：用MARS模型解决机器阅读任务
 
+https://mp.weixin.qq.com/s/W-oIQRGuOHTgQtQY1jvpuA
+
+简述表征句子的3种无监督深度学习方法
+
+https://mp.weixin.qq.com/s/vLw-krU2vorr5ZUAPI7VMA
+
+李航：自然语言的现状和发展
+
+https://mp.weixin.qq.com/s/FvQUvyB32XZt0AIS0m6KDw
+
+基于连通图的篇章级事件抽取与相关度计算
+
+

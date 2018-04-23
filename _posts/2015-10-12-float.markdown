@@ -134,6 +134,10 @@ void main()
 
 https://en.wikipedia.org/wiki/IEEE_754
 
+https://mp.weixin.qq.com/s/9YKlVtumOmSGa-mE32ZUBA
+
+x86-64体系下一个奇怪问题的定位
+
 # 并行计算
 
 ## 概述

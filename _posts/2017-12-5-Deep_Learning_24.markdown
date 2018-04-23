@@ -4,6 +4,64 @@ title:  深度学习（二十四）——L2 Normalization, Attention（1）
 category: DL 
 ---
 
+# LSTM进阶（续）
+
+## IndRNN
+
+https://mp.weixin.qq.com/s/cAqpclkkeVrTiifz07HC1g
+
+新型循环神经网络IndRNN：可构建更长更深的RNN
+
+https://mp.weixin.qq.com/s/7-K-nZTijoYCaprRNYXxFg
+
+新型RNN：将层内神经元相互独立以提高长程记忆
+
+## 参考
+
+https://mp.weixin.qq.com/s/4IHzOAvNhHG9c8GP0zXVkQ
+
+Simple Recurrent Unit For Sentence Classification
+
+https://mp.weixin.qq.com/s/h3fF6Zvr1rSzSMpqdu8B0A
+
+电子科大提出BT-RNN：替代全连接操作而大幅度提升LSTM效率
+
+https://mp.weixin.qq.com/s/fCzHbOi7aJ8-W9GzctUFNg
+
+LSTM文本分类实战
+
+http://mp.weixin.qq.com/s/3nwgft9c27ih172ANwHzvg
+
+从零开始：如何使用LSTM预测汇率变化趋势
+
+https://mp.weixin.qq.com/s/M18c3sgvjV2b2ksCsyOxbQ
+
+Nested LSTM：一种能处理更长期信息的新型LSTM扩展
+
+https://www.zhihu.com/question/62399257
+
+如何理解LSTM后接CRF？
+
+https://mp.weixin.qq.com/s/XAbzaMXP3QOret_vxqVF9A
+
+用深度学习LSTM炒股：对冲基金案例分析
+
+https://mp.weixin.qq.com/s/eeA5RZh35BvlFt45ywVvFg
+
+可视化LSTM网络：探索“记忆”的形成
+
+https://mp.weixin.qq.com/s/h-MYTNTLy7ToPPEZ2JVHpw
+
+阿里巴巴论文提出Advanced LSTM：关于更优时间依赖性刻画在情感识别方面的应用
+
+https://mp.weixin.qq.com/s/SeR_zNZTu4t7kqB6ltNrmQ
+
+从循环到卷积，探索序列建模的奥秘
+
+https://mp.weixin.qq.com/s/_q69BV1r46S9X5wnLuFPSw
+
+关于序列建模，是时候抛弃RNN和LSTM了
+
 # L2 Normalization
 
 L2 Normalization本身并不复杂，然而多数资料都只提到1维的L2 Normalization的计算公式：
@@ -167,24 +225,4 @@ $$Attention(\boldsymbol{q}_t,\boldsymbol{K},\boldsymbol{V}) = \sum_{s=1}^m \frac
 其中Z是归一化因子。事实上q,k,v分别是query,key,value的简写，K,V是一一对应的，它们就像是key-value的关系，那么上式的意思就是$$q_t$$这个query，通过与各个$$k_s$$内积的并softmax的方式，来得到$$q_t$$与各个$$v_s$$的相似度，然后加权求和，得到一个$$d_v$$维的向量。其中因子$$\sqrt{d_k}$$起到调节作用，使得内积不至于太大（太大的话softmax后就非0即1了，不够“soft”了）。
 
 概括的说就是：**比较Q和K的相似度，以得到合适的V。**
-
-## Multi-Head Attention
-
-![](/images/img2/Attention_6.png)
-
-这个是Google提出的新概念，是Attention机制的完善。不过从形式上看，它其实就再简单不过了，就是把Q,K,V通过参数矩阵映射一下，然后再做Attention，把这个过程重复做h次，结果拼接起来就行了，可谓“大道至简”了。具体来说：
-
-$$head_i = Attention(\boldsymbol{Q}\boldsymbol{W}_i^Q,\boldsymbol{K}\boldsymbol{W}_i^K,\boldsymbol{V}\boldsymbol{W}_i^V)$$
-
-所谓“多头”（Multi-Head），就是只多做几次同样的事情（参数不共享），然后把结果拼接。
-
-## Self Attention
-
-到目前为止，对Attention层的描述都是一般化的，我们可以落实一些应用。比如，如果做阅读理解的话，Q可以是篇章的词向量序列，取K=V
-
-为问题的词向量序列，那么输出就是所谓的Aligned Question Embedding。
-
-而在Google的论文中，大部分的Attention都是Self Attention，即“自注意力”，或者叫内部注意力。
-
-所谓Self Attention，其实就是Attention(X,X,X)，X就是前面说的输入序列。也就是说，在序列内部做Attention，寻找序列内部的联系。
 

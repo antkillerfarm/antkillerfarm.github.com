@@ -314,6 +314,10 @@ https://mp.weixin.qq.com/s/pG5nq1fQ9XHp8WZN1AiLJQ
 
 OpenCV 基于Inception模型图像分类
 
+https://mp.weixin.qq.com/s/EqeNS6s72_Qwg6mmDRl6wQ
+
+OpenCV基于DLCO描述子匹配
+
 # GNU Octave
 
 GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。

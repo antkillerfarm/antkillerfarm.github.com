@@ -1,8 +1,70 @@
 ---
 layout: post
-title:  深度学习（二十一）——图像超分辨率算法, SRCNN, DRCN, VDSR
+title:  深度学习（二十一）——图像超分辨率算法, SRCNN, DRCN
 category: DL 
 ---
+
+# Ultra Deep Network（续）
+
+## Dual Path Networks
+
+DPN是冯佳时和颜水成团队的Yunpeng Chen的作品。
+
+>冯佳时，中国科学技术大学自动化系学士，新加坡国立大学电子与计算机工程系博士。现任新加坡国立大学电子与计算机工程系助理教授。
+
+论文：
+
+《Dual Path Networks》
+
+代码：
+
+https://github.com/cypw/DPNs
+
+这篇论文首先从拓扑关系的角度分析了ResNet、DenseNet和HORNN（Higher Order RNN）之间的联系。
+
+![](/images/img2/DPN_3.png)
+
+如上所示，RNN相当于共享权值的串联的ResNet，而DenseNet则相当于并联的RNN。
+
+更进一步的，上述三者都可表述为以下通式：
+
+$$h^k=g^k\left[\sum_{t=0}^{k-1}f_t^k(h^t)\right]$$
+
+其中，$$h^t$$表示t时刻的隐层状态；索引k表示当前时刻；$$x^t$$表示t时刻的输入；$$f_t^k(⋅)$$表示特征提取；$$g^k$$表示对提取特征做输出前的变换。
+
+如果$$f_t^k(\cdot)$$和$$g^k(\cdot)$$每个Step都共享，那么就是HORNN，如果只有$$f_t^k(\cdot)$$共享，那么就是ResNet，两者都不共享，那就是DenseNet。
+
+![](/images/img2/DPN.png)
+
+上图展示的是ResNet和DenseNet的示意图。图中用线填充的柱状体，表示的是主干结点的tensor的大小。
+
+ResNet由于跨层和主干之间是element-wise的加法运算，因此每个主干结点的tensor都是一样大的。
+
+而DenseNet的跨层和主干之间是Concatenation运算，因此主干越往下，tensor越大。
+
+通过上面的分析，我们可以认识到 ：
+
+ResNet： 侧重于特征的再利用，但不善于发掘新的特征；
+
+DenseNet: 侧重于新特征的发掘，但又会产生很多冗余；
+
+为了综合二者的优点，作者设计了DPN网络：
+
+![](/images/img2/DPN_2.png)
+
+参考：
+
+http://blog.csdn.net/scutlihaoyu/article/details/75645551
+
+《Dual Path Networks》笔记
+
+http://www.cnblogs.com/mrxsc/p/7693316.html
+
+Dual Path Networks
+
+http://blog.csdn.net/u014380165/article/details/75676216
+
+DPN（Dual Path Network）算法详解
 
 # 图像超分辨率算法
 
@@ -176,52 +238,4 @@ SRCNN的层数较少，同时感受野也较小（13x13）。DRCN提出使用更
 http://blog.csdn.net/u011692048/article/details/77500764
 
 超分辨率重建之DRCN
-
-# VDSR
-
-VDSR是DRCN的原班人马的新作。
-
-论文：
-
-《Accurate Image Super-Resolution Using Very Deep Convolutional Networks》
-
-代码：
-
-code：https://github.com/huangzehao/caffe-vdsr
-
-SRCNN存在三个问题需要进行改进：
-
-1、依赖于小图像区域的内容；
-
-2、训练收敛太慢；
-
-3、网络只对于某一个比例有效。
-
-![](/images/img2/VDSR.png)
-
-VDSR模型主要有以下几点贡献：
-
-1、增加了感受野，在处理大图像上有优势，由SRCNN的13x13变为41x41。（20层的3x3卷积）
-
-2、采用残差图像进行训练，收敛速度变快，因为残差图像更加稀疏，更加容易收敛（换种理解就是LR携带者低频信息，这些信息依然被训练到HR图像，然而HR图像和LR图像的低频信息相近，这部分花费了大量时间进行训练）。
-
-3、考虑多个尺度，一个卷积网络可以处理多尺度问题。
-
-训练的策略：
-
-1、采用残差的方式进行训练，避免训练过长的时间。
-
-2、使用大的学习进行训练。
-
-3、自适应梯度裁剪，将梯度限制在某一个范围。
-
-4、多尺度，多种尺度样本一起训练可以提高大尺度的准确率。
-
-对于边界问题，由于卷积的操作导致图像变小的问题，本文作者提出一个新的策略，就是每次卷积后，图像的size变小，但是，在下一次卷积前，对图像进行补0操作，恢复到原来大小，这样不仅解决了网络深度的问题，同时，实验证明对边界像素的预测结果也得到了提升。
-
-参考：
-
-http://blog.csdn.net/u011692048/article/details/77512310
-
-超分辨率重建之VDSR
 

@@ -272,6 +272,10 @@ https://mp.weixin.qq.com/s/-2kGkJzjay2WJzIpMs2Adw
 
 IEEE盘点27款震撼世界的芯片
 
+https://mp.weixin.qq.com/s/gpfMOW7gzVa2HhYOlDy2nQ
+
+从Intel和ARM争霸战，看看做芯片有多难
+
 # 图像渲染
 
 http://blog.csdn.net/pizi0475/article/details/6650851

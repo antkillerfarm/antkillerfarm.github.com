@@ -32,6 +32,12 @@ Grab cut是微软剑桥研究院于2004年提出的著名交互式图像语义�
 
 不难看出，前DL时代的语义分割工作多是根据图像像素自身的低阶视觉信息（Low-level visual cues）来进行图像分割。由于这样的方法没有算法训练阶段，因此往往计算复杂度不高，但是在较困难的分割任务上（如果不提供人为的辅助信息），其分割效果并不能令人满意。
 
+参考：
+
+https://mp.weixin.qq.com/s/AiuwMytfux9BMt__eVtj6w
+
+基于图割算法的木材表面缺陷图像分析
+
 # FCN
 
 Fully Convolutional Networks是Jonathan Long和Evan Shelhamer于2015年提出的网络结构。

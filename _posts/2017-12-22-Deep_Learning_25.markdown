@@ -6,6 +6,26 @@ category: DL
 
 # Attention（续）
 
+## Multi-Head Attention
+
+![](/images/img2/Attention_6.png)
+
+这个是Google提出的新概念，是Attention机制的完善。不过从形式上看，它其实就再简单不过了，就是把Q,K,V通过参数矩阵映射一下，然后再做Attention，把这个过程重复做h次，结果拼接起来就行了，可谓“大道至简”了。具体来说：
+
+$$head_i = Attention(\boldsymbol{Q}\boldsymbol{W}_i^Q,\boldsymbol{K}\boldsymbol{W}_i^K,\boldsymbol{V}\boldsymbol{W}_i^V)$$
+
+所谓“多头”（Multi-Head），就是只多做几次同样的事情（参数不共享），然后把结果拼接。
+
+## Self Attention
+
+到目前为止，对Attention层的描述都是一般化的，我们可以落实一些应用。比如，如果做阅读理解的话，Q可以是篇章的词向量序列，取K=V
+
+为问题的词向量序列，那么输出就是所谓的Aligned Question Embedding。
+
+而在Google的论文中，大部分的Attention都是Self Attention，即“自注意力”，或者叫内部注意力。
+
+所谓Self Attention，其实就是Attention(X,X,X)，X就是前面说的输入序列。也就是说，在序列内部做Attention，寻找序列内部的联系。
+
 ## Position Embedding
 
 然而，只要稍微思考一下就会发现，这样的模型并不能捕捉序列的顺序！换句话说，如果将K,V

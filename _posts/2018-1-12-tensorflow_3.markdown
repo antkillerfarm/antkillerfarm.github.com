@@ -170,6 +170,14 @@ https://mp.weixin.qq.com/s/c_2_9gvOynHaVW6pi4qQjQ
 
 用TensorFlow让机器人唱首歌给你听
 
+https://mp.weixin.qq.com/s/NPuYanaUnaX4mYbaNbNNSQ
+
+概率编程工具：TensorFlow Probability官方简介
+
+https://mp.weixin.qq.com/s/hn-LqyREkusxP2TOWfTJ6g
+
+使用TensorFlow官方Java API调用TensorFlow模型
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/LTtcD5CBT8m127thjBaRsw

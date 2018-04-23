@@ -1,8 +1,56 @@
 ---
 layout: post
-title:  深度学习（二十二）——ESPCN, FSRCNN, VESPCN, SRGAN, DemosaicNet, MemNet, RDN, ShuffleSeg
+title:  深度学习（二十二）——VDSR, ESPCN, FSRCNN, VESPCN, SRGAN, DemosaicNet, MemNet, RDN
 category: DL 
 ---
+
+# VDSR
+
+VDSR是DRCN的原班人马的新作。
+
+论文：
+
+《Accurate Image Super-Resolution Using Very Deep Convolutional Networks》
+
+代码：
+
+code：https://github.com/huangzehao/caffe-vdsr
+
+SRCNN存在三个问题需要进行改进：
+
+1、依赖于小图像区域的内容；
+
+2、训练收敛太慢；
+
+3、网络只对于某一个比例有效。
+
+![](/images/img2/VDSR.png)
+
+VDSR模型主要有以下几点贡献：
+
+1、增加了感受野，在处理大图像上有优势，由SRCNN的13x13变为41x41。（20层的3x3卷积）
+
+2、采用残差图像进行训练，收敛速度变快，因为残差图像更加稀疏，更加容易收敛（换种理解就是LR携带者低频信息，这些信息依然被训练到HR图像，然而HR图像和LR图像的低频信息相近，这部分花费了大量时间进行训练）。
+
+3、考虑多个尺度，一个卷积网络可以处理多尺度问题。
+
+训练的策略：
+
+1、采用残差的方式进行训练，避免训练过长的时间。
+
+2、使用大的学习进行训练。
+
+3、自适应梯度裁剪，将梯度限制在某一个范围。
+
+4、多尺度，多种尺度样本一起训练可以提高大尺度的准确率。
+
+对于边界问题，由于卷积的操作导致图像变小的问题，本文作者提出一个新的策略，就是每次卷积后，图像的size变小，但是，在下一次卷积前，对图像进行补0操作，恢复到原来大小，这样不仅解决了网络深度的问题，同时，实验证明对边界像素的预测结果也得到了提升。
+
+参考：
+
+http://blog.csdn.net/u011692048/article/details/77512310
+
+超分辨率重建之VDSR
 
 # ESPCN
 
@@ -222,46 +270,4 @@ Residual Dense Network是美国东北大学的张宇伦的作品。
 https://mp.weixin.qq.com/s/_r3MKxMTIR856ezEozFOGA
 
 残差密集网络：利用所有分层特征的图像超分辨率网络
-
-# ShuffleSeg
-
-ShuffleSeg是开罗大学的Mostafa Gamal和Mennatullah Siam的作品（2018.3）。看名字应该是阿拉伯人，而且一男一女。
-
-论文：
-
-《ShuffleSeg: Real-time Semantic Segmentation Network》
-
-代码：
-
-https://github.com/MSiam/TFSegmentation
-
-![](/images/img2/ShuffleSeg.png)
-
-这是一个语义分割的网络，本来不该放在这里。然而既然要灌水，那就灌的更猛一些吧。ShuffleNet也难逃毒手。
-
-参考：
-
-https://mp.weixin.qq.com/s/W2reKR5prcf3_DMp53-2yw
-
-新型实时形义分割网络ShuffleSeg：可用于嵌入式设备
-
-# Fast Image Processing
-
-![](/images/article/FIP.png)
-
-上图是照片界常用的几种修图方式之一。一般将这些图片风格转换的算法，称为图像处理算子（image processing operators）。如何加速image processing operators的计算，就成为了学界研究的课题之一。
-
-本文提出的模型就是用来加速image processing operators计算的。它是Intel Lab的Qifeng Chen和Jia Xu于2017年提出的。
-
-论文：
-
-《Fast Image Processing with Fully-Convolutional Networks》
-
-代码：
-
-https://github.com/CQFIO/FastImageProcessing
-
-Demo网站：
-
-http://cqf.io/ImageProcessing/
 

@@ -1,10 +1,50 @@
 ---
 layout: post
-title:  深度学习（二十三）——Fast Image Processing, SVDF, LCNN, LSTM进阶
+title:  深度学习（二十三）——ShuffleSeg, Fast Image Processing, SVDF, LCNN, LSTM进阶
 category: DL 
 ---
 
-# Fast Image Processing（续）
+# ShuffleSeg
+
+ShuffleSeg是开罗大学的Mostafa Gamal和Mennatullah Siam的作品（2018.3）。看名字应该是阿拉伯人，而且一男一女。
+
+论文：
+
+《ShuffleSeg: Real-time Semantic Segmentation Network》
+
+代码：
+
+https://github.com/MSiam/TFSegmentation
+
+![](/images/img2/ShuffleSeg.png)
+
+这是一个语义分割的网络，本来不该放在这里。然而既然要灌水，那就灌的更猛一些吧。ShuffleNet也难逃毒手。
+
+参考：
+
+https://mp.weixin.qq.com/s/W2reKR5prcf3_DMp53-2yw
+
+新型实时形义分割网络ShuffleSeg：可用于嵌入式设备
+
+# Fast Image Processing
+
+![](/images/article/FIP.png)
+
+上图是照片界常用的几种修图方式之一。一般将这些图片风格转换的算法，称为图像处理算子（image processing operators）。如何加速image processing operators的计算，就成为了学界研究的课题之一。
+
+本文提出的模型就是用来加速image processing operators计算的。它是Intel Lab的Qifeng Chen和Jia Xu于2017年提出的。
+
+论文：
+
+《Fast Image Processing with Fully-Convolutional Networks》
+
+代码：
+
+https://github.com/CQFIO/FastImageProcessing
+
+Demo网站：
+
+http://cqf.io/ImageProcessing/
 
 这个课题一般使用MIT-Adobe FiveK Dataset作为基准数据集。网址：
 
@@ -263,61 +303,5 @@ OVP and YouTube datasets:
 https://sites.google.com/site/vsummsite/
 
 需要翻墙。
-
-## IndRNN
-
-https://mp.weixin.qq.com/s/cAqpclkkeVrTiifz07HC1g
-
-新型循环神经网络IndRNN：可构建更长更深的RNN
-
-https://mp.weixin.qq.com/s/7-K-nZTijoYCaprRNYXxFg
-
-新型RNN：将层内神经元相互独立以提高长程记忆
-
-## 参考
-
-https://mp.weixin.qq.com/s/4IHzOAvNhHG9c8GP0zXVkQ
-
-Simple Recurrent Unit For Sentence Classification
-
-https://mp.weixin.qq.com/s/h3fF6Zvr1rSzSMpqdu8B0A
-
-电子科大提出BT-RNN：替代全连接操作而大幅度提升LSTM效率
-
-https://mp.weixin.qq.com/s/fCzHbOi7aJ8-W9GzctUFNg
-
-LSTM文本分类实战
-
-http://mp.weixin.qq.com/s/3nwgft9c27ih172ANwHzvg
-
-从零开始：如何使用LSTM预测汇率变化趋势
-
-https://mp.weixin.qq.com/s/M18c3sgvjV2b2ksCsyOxbQ
-
-Nested LSTM：一种能处理更长期信息的新型LSTM扩展
-
-https://www.zhihu.com/question/62399257
-
-如何理解LSTM后接CRF？
-
-https://mp.weixin.qq.com/s/XAbzaMXP3QOret_vxqVF9A
-
-用深度学习LSTM炒股：对冲基金案例分析
-
-https://mp.weixin.qq.com/s/eeA5RZh35BvlFt45ywVvFg
-
-可视化LSTM网络：探索“记忆”的形成
-
-https://mp.weixin.qq.com/s/h-MYTNTLy7ToPPEZ2JVHpw
-
-阿里巴巴论文提出Advanced LSTM：关于更优时间依赖性刻画在情感识别方面的应用
-
-https://mp.weixin.qq.com/s/SeR_zNZTu4t7kqB6ltNrmQ
-
-从循环到卷积，探索序列建模的奥秘
-
-https://mp.weixin.qq.com/s/_q69BV1r46S9X5wnLuFPSw
-
-关于序列建模，是时候抛弃RNN和LSTM了
 
 
