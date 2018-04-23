@@ -264,14 +264,3 @@ $$f * K = f * (V * H) = f * V * H$$
 
 显然，不是所有的卷积核都满足可分离条件。但是不要紧，NN有自动学习并逼近函数的能力。经过训练之后：$$K \approx V * H$$
 
-## 可变形卷积核
-
-MSRA于2017年提出了可变形卷积核的概念。
-
-论文：
-
-《Deformable Convolutional Networks》
-
-![](/images/article/Deformable_convolution.png)
-
-

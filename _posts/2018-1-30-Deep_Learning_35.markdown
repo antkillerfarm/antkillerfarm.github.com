@@ -146,6 +146,10 @@ https://mp.weixin.qq.com/s/NCtgHHpiG473gixu1tZeJA
 
 哈工大提出STRCF：克服遮挡和大幅形变的实时视觉追踪算法
 
+https://mp.weixin.qq.com/s/2RNLG4KU81z7thk3CLwD9Q
+
+商汤科技 & 中科院自动化所：视觉跟踪之端到端的光流相关滤波
+
 # FlowNet
 
 论文：
@@ -259,6 +263,10 @@ Mask R-CNN神应用：像英剧《黑镜》一样屏蔽人像
 https://mp.weixin.qq.com/s/V6m1xBS2vZQ6VRlAg5zOSA
 
 干掉照片中那些讨厌的家伙！Mask R-CNN助你一键“除”人！
+
+https://mp.weixin.qq.com/s/48eIhnBdYzgEiV_wESHsJA
+
+如何使用Mask RCNN模型进行图像实体分割？
 
 # 手势识别
 

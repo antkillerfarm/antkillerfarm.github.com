@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  语音识别（二）——声源定位, DTW
+title:  语音识别（二）——声源定位, 声学模型
 category: graphics 
 ---
 

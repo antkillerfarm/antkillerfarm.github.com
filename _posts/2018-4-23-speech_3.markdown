@@ -52,7 +52,9 @@ Mel scale是Stevens、Volkmann和Newman于1937年发明的一种主观音阶标�
 
 >Edwin B. Newman，1908~1989，Harvard University心理学教授。
 
+声音作为一种波动
 
+$$m = 2595 \log_{10}\left(1 + \frac{f}{700}\right)$$
 
 Mel-frequency cepstral coefficients
 

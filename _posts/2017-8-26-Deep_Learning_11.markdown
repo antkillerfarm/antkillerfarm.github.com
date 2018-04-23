@@ -60,48 +60,6 @@ http://blog.csdn.net/mao_xiao_feng/article/details/78002811
 
 tf.nn.separable_conv2d如何实现深度可分卷积?
 
-## 3D卷积
-
-3D卷积一般用于视频（2D图像+1D时序）和医学影像（3D立体图像）的分析处理中。
-
-![](/images/article/conv_3d.png)
-
-如上图所示，3D卷积的kernel不再是2D的，而是3D的。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/21325913
-
-3D卷积神经网络Note01
-
-https://zhuanlan.zhihu.com/p/21331911
-
-3D卷积神经网络Note02
-
-https://zhuanlan.zhihu.com/p/31841353
-
-3D CNN阅读笔记
-
-https://zhuanlan.zhihu.com/p/25912625
-
-C3D network: 用于视频特征提取的3维卷积网络
-
-https://zhuanlan.zhihu.com/p/26350774
-
-SCNN-用于时序动作定位的多阶段3D卷积网络
-
-https://www.jiqizhixin.com/articles/2016-08-03
-
-FusionNet融合三个卷积网络：识别对象从二维升级到三维
-
-http://blog.csdn.net/zouxy09/article/details/9002508
-
-基于3D卷积神经网络的人体行为理解
-
-https://mp.weixin.qq.com/s/YdON6Yzddq2f_QGbQsOY8w
-
-深度三维残差神经网络：视频理解新突破
-
 ## 感受野
 
 Receptive Field本来是神经科学领域的概念，后来才被推广到DL（尤其是CNN）领域。
@@ -132,10 +90,6 @@ https://mp.weixin.qq.com/s/kJEeKzC9pC375EjIJpTuzg
 
 一文全解深度学习中的卷积
 
-http://mp.weixin.qq.com/s/dvuX3Ih_DZrv0kgqFn8-lg
-
-卷积神经网络结构变化——可变形卷积网络deformable convolutional networks
-
 http://cs.nyu.edu/~fergus/drafts/utexas2.pdf
 
 Deconvolutional Networks
@@ -152,25 +106,9 @@ https://buptldy.github.io/2016/10/01/2016-10-01-im2col/
 
 Implementing convolution as a matrix multiplication（中文blog）
 
-https://mp.weixin.qq.com/s/iN2LDAQ2ee-rQnlD3N1yaw
-
-变形卷积核、可分离卷积？CNN中十大拍案叫绝的操作！
-
-http://www.msra.cn/zh-cn/news/features/deformable-convolutional-networks-20170609
-
-可变形卷积网络：计算机新“视”界
-
 https://mp.weixin.qq.com/s/ybI8kJPRn7sH-hJbc5uqnw
 
 CMU研究者探索新卷积方法：在实验中可媲美基准CNN
-
-https://mp.weixin.qq.com/s/qReN6z8s45870HSMCMNatw
-
-微软亚洲研究院：逐层集中Attention的卷积模型
-
-http://blog.csdn.net/shuzfan/article/details/77964370
-
-不规则卷积神经网络
 
 # Winograd
 

@@ -128,6 +128,10 @@ https://mp.weixin.qq.com/s/TJDGZvAvT7KamR_WN-oYYw
 
 如何使用变分自编码器VAE生成动漫人物形象
 
+https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw
+
+变分U-Net，可按条件独立变换目标的外观和形状
+
 # RBM & DBN & Deep Autoencoder
 
 ## RBM

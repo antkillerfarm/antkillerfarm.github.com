@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十八）——SOM, Group Normalization, MobileNet
+title:  深度学习（二十八）——SOM, Group Normalization, MobileNet, 花式卷积进阶
 category: DL 
 ---
 
@@ -189,4 +189,102 @@ https://mp.weixin.qq.com/s/7vFxmvRZuM2DqSYN7C88SA
 https://mp.weixin.qq.com/s/lu0GHCpWCmogkmHRKnJ8zQ
 
 浅析两代MobileNet
+
+# 花式卷积进阶
+
+## 可变形卷积核
+
+MSRA于2017年提出了可变形卷积核的概念。
+
+论文：
+
+《Deformable Convolutional Networks》
+
+![](/images/article/Deformable_convolution.png)
+
+(a) 所示的正常卷积规律的采样 9 个点（绿点），(b)(c)(d) 为可变形卷积，在正常的采样坐标上加上一个位移量（蓝色箭头），其中(c)(d) 作为 (b) 的特殊情况，展示了可变形卷积可以作为尺度变换，比例变换和旋转变换的特殊情况。
+
+参考：
+
+https://mp.weixin.qq.com/s/okI3MT3E2o2PKCeokE7Niw
+
+MSRA视觉组最新研究：可变形卷积网络
+
+http://mp.weixin.qq.com/s/dvuX3Ih_DZrv0kgqFn8-lg
+
+卷积神经网络结构变化——可变形卷积网络deformable convolutional networks
+
+https://mp.weixin.qq.com/s/iN2LDAQ2ee-rQnlD3N1yaw
+
+变形卷积核、可分离卷积？CNN中十大拍案叫绝的操作！
+
+http://www.msra.cn/zh-cn/news/features/deformable-convolutional-networks-20170609
+
+可变形卷积网络：计算机新“视”界
+
+https://www.jianshu.com/p/940d21c79aa3
+
+Deformable Convolution Networks
+
+## 3D卷积
+
+3D卷积一般用于视频（2D图像+1D时序）和医学影像（3D立体图像）的分析处理中。
+
+![](/images/article/conv_3d.png)
+
+如上图所示，3D卷积的kernel不再是2D的，而是3D的。
+
+论文：
+
+《A two-stage 3D Unet framework for multi-class segmentation on full resolution image》
+
+![](/images/img2/UNet-3D.jpg)
+
+处理大型高分辨率3D数据时的一个常见问题是，由于计算设备的存储容量有限，输入深度CNN的体积必须进行裁剪（crop）或降采样（downsample）。这些操作会导致输入数据 batches 中分辨率的降低和类不平衡的增加，从而降低分割算法的性能。
+
+受到图像超分辨率CNN（SRCNN）和self-normalization（SNN）的架构的启发，我们开发了一个两阶段修改的Unet框架，它可以同时学习检测整个体积内的ROI并对体素进行分类而不会丢失原始图像解析度。对各种多模式音量的实验表明，当用简单加权的模子系数和我们定制的学习程序进行训练时，该框架显示比具有高级相似性度量标准的最先进的深CNN更好的分割性能。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/21325913
+
+3D卷积神经网络Note01
+
+https://zhuanlan.zhihu.com/p/21331911
+
+3D卷积神经网络Note02
+
+https://zhuanlan.zhihu.com/p/31841353
+
+3D CNN阅读笔记
+
+https://zhuanlan.zhihu.com/p/25912625
+
+C3D network: 用于视频特征提取的3维卷积网络
+
+https://zhuanlan.zhihu.com/p/26350774
+
+SCNN-用于时序动作定位的多阶段3D卷积网络
+
+https://www.jiqizhixin.com/articles/2016-08-03
+
+FusionNet融合三个卷积网络：识别对象从二维升级到三维
+
+http://blog.csdn.net/zouxy09/article/details/9002508
+
+基于3D卷积神经网络的人体行为理解
+
+https://mp.weixin.qq.com/s/YdON6Yzddq2f_QGbQsOY8w
+
+深度三维残差神经网络：视频理解新突破
+
+## 参考
+
+https://mp.weixin.qq.com/s/qReN6z8s45870HSMCMNatw
+
+微软亚洲研究院：逐层集中Attention的卷积模型
+
+http://blog.csdn.net/shuzfan/article/details/77964370
+
+不规则卷积神经网络
 

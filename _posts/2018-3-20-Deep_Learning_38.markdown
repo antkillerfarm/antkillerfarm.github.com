@@ -192,6 +192,10 @@ https://mp.weixin.qq.com/s/oOslkEklaZSbRb8eDDCRBw
 
 天津大学、东京大学等研究：用深度强化学习检测模型缺陷
 
+https://mp.weixin.qq.com/s/DNT9rMynbN4Th0AVDHeY_w
+
+BAIR提出人机合作新范式：教你如何高效安全地在月球着陆
+
 # 模型压缩
 
 对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。
