@@ -246,29 +246,9 @@ https://github.com/pandeydivesh15/AVSR-Deep-Speech
 
 但是无奈他们使用的TIMIT数据集是收费的，只好放弃了。
 
-https://catalog.ldc.upenn.edu/LDC93S1
-
-TIMIT数据集（收费）
-
 最终，找到了如下项目：
 
 https://github.com/sdhayalk/TensorFlow_Speech_Recognition_Challenge
-
-它的数据集：
-
-http://download.tensorflow.org/data/speech_commands_v0.01.tar.gz
-
-TensorFlow提供的Speech Commands Datasets
-
-还有相关的工具：
-
-https://github.com/petewarden/extract_loudest_section
-
-抽取一段wav文件中声音最大的那部分
-
-https://www.kaggle.com/davids1992/speech-representation-and-data-exploration/notebook
-
-包含对Speech Commands Datasets的数据处理过程的blog
 
 ## 复现结果
 
@@ -325,9 +305,27 @@ http://svn.code.sf.net/p/cmusphinx/code/trunk/cmudict/
 
 ## 参考
 
+论文：
+
+《Small-footprint Keyword Spotting Using Deep Neural Network and Connectionist Temporal Classifier》
+
+这篇文章是蚂蚁金服提出的Keyword Spotting（KWS）的论文，它和本次实战所用的Speech Commands Datasets契合度很高，值得参考。
+
+http://mp.weixin.qq.com/s/-QQjz61VAOVcWE7j-EJPhg
+
+谈谈蚂蚁金服的语音唤醒系统
+
+这里还有两篇炼丹文：
+
+https://zhuanlan.zhihu.com/p/28133530
+
+一次CTC-RNN调参经历
+
+http://www.tbluche.com/ctc_and_blank.html
+
+The intriguing blank label in CTC
+
 http://spandh.dcs.shef.ac.uk/chime_challenge/chime2016/
 
 CHiMe – Computational Hearing in Multisource Environments-国际多通道语音分离和识别大赛
-
-
 

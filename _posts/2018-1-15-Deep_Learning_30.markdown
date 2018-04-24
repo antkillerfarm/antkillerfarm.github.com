@@ -167,6 +167,10 @@ http://blog.csdn.net/laolu1573/article/details/78791992
 
 Sequence Modeling With CTC中文版
 
+https://mp.weixin.qq.com/s?__biz=MzIzNDQyNjI5Mg==&mid=2247483834&idx=1&sn=3a92eb19858d2cec709af28d2eb69c4a
+
+时序分类算法之Connectionist Temporal Classification
+
 http://blog.csdn.net/u012968002/article/details/78890846
 
 CTC原理
@@ -306,4 +310,10 @@ http://mp.weixin.qq.com/s/0Xg_acbGG3pTIgsRQKJjrQ
 https://mp.weixin.qq.com/s/u1UnAuGllcWn8Ik5wDPY6w
 
 可视化语音分析：深度对比Wavenet、t-SNE和PCA等算法
+
+# EESEN
+
+论文：
+
+《EESEN: End-to-end speech recognition using deep RNN models and WFST-based decoding》
 

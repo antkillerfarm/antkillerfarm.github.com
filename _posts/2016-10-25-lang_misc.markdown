@@ -96,6 +96,8 @@ XML、HTML、JavaScript必修。PHP、ASP、JSP，选修其中之一。Nodejs近
 
 http://www.15yan.com/story/5Y8BZqIGwjg/
 
+那些奇奇怪怪的编程语言
+
 # Github显示数学公式
 
 这里主要用到了LaTeX和MathJax。

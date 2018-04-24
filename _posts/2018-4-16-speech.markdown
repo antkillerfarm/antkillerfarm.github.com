@@ -22,13 +22,47 @@ category: graphics
 >个人主页：   
 >http://www.cs.colorado.edu/~martin/
 
+>这本书比较老了（1999年），但毕竟是本1000页左右的书，传统方法该说的基本都说了。DL方法目前还没有一本类似的书，主要还是看论文。
+
+## blog
+
+http://www.cnblogs.com/welen/
+
+https://blog.csdn.net/weiqiwu1986
+
+上面两个都是welen的blog，而且内容貌似还不重复。。。
+
+http://blog.csdn.net/xmdxcsj
+
+一个语音识别的blog
+
 ## 项目
 
 https://en.wikipedia.org/wiki/List_of_speech_recognition_software
 
+List of speech recognition software
+
+https://mp.weixin.qq.com/s/LsVhMaHrh8JgfpDra6KSPw
+
+横向对比5大开源语音识别工具包
+
+https://github.com/lingochamp/kaldi-ctc
+
+英语流利说开源的kaldi-ctc
+
+https://zhuanlan.zhihu.com/p/23177950
+
+kaldi-ctc: CTC End-to-End ASR
+
 ## Kaldi
 
-Kaldi是一个语音识别的工具包。官网：
+Kaldi是一个语音识别的工具包。它由Daniel Povey于2009年创建。
+
+>Daniel Povey，Johns Hopkins University副教授。   
+>个人主页：   
+>http://danielpovey.com/
+
+官网：
 
 https://github.com/kaldi-asr/kaldi
 
@@ -36,15 +70,21 @@ https://github.com/kaldi-asr/kaldi
 
 http://kaldi-asr.org/doc/
 
+此外，Dan的主页上也有一些教程：
+
+http://danielpovey.com/kaldi-lectures.html
+
 ## HTK
 
-Hidden Markov Model Toolkit是另一个语音识别的工具包。官网：
+Hidden Markov Model Toolkit是另一个语音识别的工具包。
+
+官网：
 
 http://htk.eng.cam.ac.uk/
 
 ## CMU Sphinx
 
-CMU Sphinx是李开复的博士课题项目，后来成为了CMU的长期项目。洪小文、黄学东也先后参与过。
+CMU Sphinx是李开复的博士课题项目，后来成为了CMU的长期项目。洪小文、黄学东也先后参与过。该项目比较早的将HMM应用于语音识别，这在当时算是一个重大创新。
 
 >李开复，1961年生，Columbia University本科（1983）+CMU博士（1988）。先后供职于Apple、SGI、Microsoft、Google。现为创新工场董事长。
 
@@ -78,6 +118,38 @@ https://zhuanlan.zhihu.com/chenxl
 
 声智科技创始人陈孝良的专栏
 
+## 数据集
+
+http://www.speech.cs.cmu.edu/databases/an4/
+
+The CMU Audio Databases。这个数据集非常老了（1991年），只有64M。
+
+http://download.tensorflow.org/data/speech_commands_v0.01.tar.gz
+
+TensorFlow提供的Speech Commands Datasets
+
+还有相关的工具：
+
+https://github.com/petewarden/extract_loudest_section
+
+抽取一段wav文件中声音最大的那部分
+
+https://www.kaggle.com/davids1992/speech-representation-and-data-exploration/notebook
+
+包含对Speech Commands Datasets的数据处理过程的blog
+
+https://catalog.ldc.upenn.edu/LDC93S1
+
+TIMIT数据集（收费）
+
+https://mp.weixin.qq.com/s/w9_D1_VVhk9md4RANaipDg
+
+Mozilla开源语音识别模型和世界第二大语音数据集
+
+http://www.voxforge.org/
+
+VoxForge是一个非常活跃的众包语音识别数据库和经过训练的模型库
+
 # 基本框架
 
 语音识别系统主要有四部分组成：信号处理和特征提取、声学模型、语言模型（Language Model, LM）和解码器(Decoder)。
@@ -91,6 +163,44 @@ https://zhuanlan.zhihu.com/chenxl
 **语言模型**估计通过重训练语料学习词之间的相互概率，来估计假设词序列的可能性，也即语言模型得分。如果了解领域或者任务相关的先验知识，语言模型得分通常可以估计得更准确。
 
 **解码器**对给定的特征向量序列和若干假设词序列计算声学模型得分和语言模型得分，将总体输出分数最高的词序列作为识别结果。
+
+![](/images/img2/speech_2.png)
+
+上图是一个实际的recognition engine的结构图。其原文地址：
+
+https://eprints.lib.hokudai.ac.jp/dspace/bitstream/2115/39654/1/MP-SS1-4.pdf
+
+王赟写的《语音识别技术的前世今生》，写的非常好，下载地址：
+
+https://zhihu-live.zhimg.com/0af15bfda98f5885ffb509acd470b0fa
+
+>王赟，清华本科（2010）+CMU在读博士。   
+>个人主页：   
+>http://www.cs.cmu.edu/~yunwang/
+
+下面是网友写的注解版本：
+
+http://www.cnblogs.com/lyu0709/p/6929659.html
+
+《语音识别的前世今生：GMM+HMM & 深度学习》讲座笔记
+
+http://www.cnblogs.com/lyu0709/p/6929692.html
+
+《语音识别的前世今生》Q&A
+
+参考：
+
+https://blog.csdn.net/by21010/article/details/51506292
+
+语音识别系统结构——鸟瞰
+
+http://www.cnblogs.com/welen/p/7489504.html
+
+语音识别概述
+
+https://www.zhihu.com/question/20398418
+
+语音识别的技术原理是什么？
 
 # Microphone
 
@@ -157,24 +267,4 @@ https://zhuanlan.zhihu.com/p/27610503
 https://www.leiphone.com/news/201610/5Ye8zxxwtlLGiW1y.html
 
 技术解读：从亚马逊Echo到谷歌Home，双麦克风阵列更有优势？
-
-## Microphone Array vs 人耳
-
-偶尔会听到行业人士做的一个类比，人类有两只耳朵，所以两个麦克风就能达到同样性能。这实际上是一个误解，以现在技术来看，即便用100个麦克风，也未必能达到人耳的效果。人耳是极其复杂的一个结构，至今为止实际上科学也没搞清楚所有原理，更谈不上用简单的麦克风进行模拟了。现在的麦克风，实际上都是标量麦克风，所获取的仅仅是声压变化转成的电信号，而且还没有耳廓，更无法根据场景变化随动调整。
-
-## Microphone Array与语音交互技术架构
-
-前端主要解决了产品是否听得准的问题，这其中有五个核心指标：**远场语音唤醒率、复杂环境 误唤醒率、远场语音识别率、总体延迟时间和总体稳定性**。这五个核心指标决定了用户的第一体验。
-
-1.**以Google为代表的纯云端技术架构。**麦克风阵列的阵元较多，产生的数据容量太大，而当前的网络上传带宽严重不足，所以只能权衡选择更少的麦克风。
-
-2.**以科胜讯为代表的纯前端技术架构。**纯前端方案的优点就是容易集成到芯片上，缺点就是很难升级以及扩展，这恰好与人工智能不断迭代的趋势不太兼容，也是当前这种方案无法流行的主要原因。
-
-3.**以Amazon为代表的前端+云端方案。**这种方案是把算法分别放置到前端和云端，根据具体场景可以调配优化，更容易优化性能并扩展功能。这种方案考虑了麦克风阵列与唤醒和识别技术一体化的问题，由于唤醒和识别严重依赖麦克风阵列的算法处理效果，实际上这三种技术是无法完全分割的，特别是麦克风阵列和唤醒技术更是浑然一体。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/29809882
-
-让机器听懂人类语言，主流麦克风阵列技术解读
 

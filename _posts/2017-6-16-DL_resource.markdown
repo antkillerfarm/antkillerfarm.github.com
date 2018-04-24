@@ -160,10 +160,6 @@ https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap
 
 独立AI研究员Flood Sung提供的初学者阅读论文的路线图
 
-http://blog.csdn.net/xmdxcsj
-
-一个语音识别的blog
-
 http://blog.csdn.net/app_12062011
 
 一个DL+CV的blog，专注于人脸识别、目标跟踪、相机标定和图像拼接等。

@@ -304,6 +304,10 @@ https://mp.weixin.qq.com/s/6dpKSaLFVo-ge4gtbG8GQg
 
 简述脉冲神经网络SNN：下一代神经网络
 
+https://mp.weixin.qq.com/s/0n50YO1jIv_mxqe0EeS6kw
+
+综述AI未来：神经科学启发的类脑计算
+
 # LSM
 
 liquid state machine (LSM)

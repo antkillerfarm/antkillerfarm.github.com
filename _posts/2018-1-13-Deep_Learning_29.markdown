@@ -1,22 +1,10 @@
 ---
 layout: post
-title:  深度学习（二十九）——语音识别, CTC
+title:  深度学习（二十九）——语音识别, 语音合成, CTC
 category: DL 
 ---
 
 # 语音识别
-
-## WFST
-
-Weighted-Finite-State-Transducer
-
-https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/ParallelizingWFSTSpeechDecoders.ICASSP2016.pdf
-
-PARALLELIZING WFST SPEECH DECODERS
-
-http://www.cs.nyu.edu/~mohri/pub/csl01.pdf
-
-Weighted Finite-State Transducers in Speech Recognition
 
 ## Tacotron
 
@@ -48,10 +36,6 @@ https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=400189223&idx=1&sn=1cb32be
 
 百度贾磊：汉语语音识别技术重大突破：LSTM+CTC详解
 
-https://www.zhihu.com/question/20398418
-
-语音识别的技术原理是什么？
-
 https://www.zhihu.com/question/46829056
 
 语音识别领域的最新进展目前是什么样的水准？
@@ -63,14 +47,6 @@ https://www.zhihu.com/question/29168274
 https://zhuanlan.zhihu.com/p/24979135
 
 从声学模型算法总结2016年语音识别的重大进步
-
-https://mp.weixin.qq.com/s/LsVhMaHrh8JgfpDra6KSPw
-
-横向对比5大开源语音识别工具包
-
-https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw
-
-SampleRNN语音合成模型
 
 https://mp.weixin.qq.com/s/zEqgDh6_fnDgXEI8MC9cmg
 
@@ -88,14 +64,6 @@ https://mp.weixin.qq.com/s/2xpwLVHT8qU68uoV7Uj2cw
 
 小米的语音识别系统是如何搭建的
 
-https://mp.weixin.qq.com/s/xAO7mX64miTXE8E2vZ5q_w
-
-Facebook开源TTS神经网络VoiceLoop：基于室外声音的语音合成
-
-https://mp.weixin.qq.com/s/CVBSvQwnDqT-IVCZV7idog
-
-极限元语音算法专家刘斌：基于深度学习的语音生成问题
-
 https://mp.weixin.qq.com/s/cYBMy4TIhcutvrAt0y70Ow
 
 腾讯AI Lab副主任俞栋：过去两年基于深度学习的声学模型进展
@@ -107,22 +75,6 @@ https://mp.weixin.qq.com/s/cvSz5Pxe3z54Tl5z3WTbQA
 https://blog.csdn.net/ffmpeg4976/article/details/52347845
 
 语音识别系统及科大讯飞最新实践
-
-https://mp.weixin.qq.com/s/UGhkTavbh21vBhtrrBeTfw
-
-麦克风阵列的语音信号处理技术
-
-https://mp.weixin.qq.com/s/1ZWrTdd3S5zYRyANfFmBOw
-
-声学模型
-
-https://mp.weixin.qq.com/s/mY2__KWvdAd8ZcNm-voSsg
-
-语音识别之解码器技术简介
-
-http://mp.weixin.qq.com/s/-QQjz61VAOVcWE7j-EJPhg
-
-谈谈蚂蚁金服的语音唤醒系统
 
 http://mp.weixin.qq.com/s/0WNJq4OLZlZETKPf1Ewq7w
 
@@ -144,10 +96,6 @@ https://mp.weixin.qq.com/s/T96S0b7Lp9YWR4cRcMQr6A
 
 一文概览基于深度学习的监督语音分离
 
-https://mp.weixin.qq.com/s/TTPpOOxSLbCgOmAsI9TLiw
-
-百度发布Deep Voice 3：全卷积注意力机制TTS系统
-
 http://mp.weixin.qq.com/s/xRA9Xh-FTrhbIg0wLnfzhA
 
 温正棋谈语音质检方案：从关键词检索到情感识别
@@ -155,10 +103,6 @@ http://mp.weixin.qq.com/s/xRA9Xh-FTrhbIg0wLnfzhA
 https://mp.weixin.qq.com/s/XUHS4o2G-iGuV9uuOmfBdQ
 
 为什么在说话人识别技术中，PLDA面对神经网络依然坚挺？
-
-https://mp.weixin.qq.com/s/zWmJ3uXnFtXaI2BotoadHA
-
-从技术到产品，苹果Siri深度学习语音合成技术揭秘
 
 https://mp.weixin.qq.com/s/I2nbzD2QqSYgahI2jLjYTQ
 
@@ -172,10 +116,6 @@ https://mp.weixin.qq.com/s/GZI4uvCR3QzZDNddpBX2OQ
 
 深度学习也解决不掉语音识别问题
 
-https://mp.weixin.qq.com/s/w9_D1_VVhk9md4RANaipDg
-
-Mozilla开源语音识别模型和世界第二大语音数据集
-
 https://mp.weixin.qq.com/s/E8brCI73IWY3P47IYPxSkg
 
 谷歌发布全新端到端语音识别系统：词错率降至5.6%
@@ -183,10 +123,6 @@ https://mp.weixin.qq.com/s/E8brCI73IWY3P47IYPxSkg
 http://www.cnblogs.com/qcloud1001/p/7941158.html
 
 详解卷积神经网络（CNN）在语音识别中的应用
-
-https://mp.weixin.qq.com/s/6xxXOx59lDZx0kUPb_ftBA
-
-漫谈语音合成之Char2Wav模型
 
 https://mp.weixin.qq.com/s/grqKRvv4dwKU26zT1qhq2g
 
@@ -196,25 +132,9 @@ https://mp.weixin.qq.com/s/OeCiH4n-Y3kigI3ynMyZSg
 
 有趣的研究奥巴马Net：从文本合成真实的唇语口型
 
-https://mp.weixin.qq.com/s/8e4bkyTJIxHZ1y95GshA0Q
-
-开源的语音合成系统WORLD介绍以及使用方法
-
 https://mp.weixin.qq.com/s/mRmbrUJ2MgeDxbZn_0UiIQ
 
 2017年深度学习总结：文本和语音应用
-
-https://mp.weixin.qq.com/s/JSnyE2k7jqd5GR1lHA6WUg
-
-阿里巴巴Oral论文：用于语音合成的深度前馈序列记忆网络
-
-https://mp.weixin.qq.com/s/H77iom38lTR0KzeFXrdWew
-
-DeepMind与谷歌大脑联手推出WaveRNN，移动端合成高保真音频媲美WaveNet
-
-https://mp.weixin.qq.com/s/p_VjFwwDCu1i_ovUljaoVw
-
-阿里巴巴语音交互智能团队：基于线性网络的语音合成说话人自适应
 
 https://mp.weixin.qq.com/s/xR172RUG3JO59_2cJj_U2A
 
@@ -227,6 +147,52 @@ https://mp.weixin.qq.com/s/9QrahPP1gDM3eMNgx91spA
 https://mp.weixin.qq.com/s/p1mAfM8LBLMQILeNOpbf6Q
 
 改进语音识别性能的数据增强技巧
+
+https://wenku.baidu.com/view/942891aba98271fe910ef9e3.html
+
+基于深度学习的语音识别
+
+# 语音合成
+
+https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw
+
+SampleRNN语音合成模型
+
+https://mp.weixin.qq.com/s/xAO7mX64miTXE8E2vZ5q_w
+
+Facebook开源TTS神经网络VoiceLoop：基于室外声音的语音合成
+
+https://mp.weixin.qq.com/s/CVBSvQwnDqT-IVCZV7idog
+
+极限元语音算法专家刘斌：基于深度学习的语音生成问题
+
+https://mp.weixin.qq.com/s/TTPpOOxSLbCgOmAsI9TLiw
+
+百度发布Deep Voice 3：全卷积注意力机制TTS系统
+
+https://mp.weixin.qq.com/s/zWmJ3uXnFtXaI2BotoadHA
+
+从技术到产品，苹果Siri深度学习语音合成技术揭秘
+
+https://mp.weixin.qq.com/s/6xxXOx59lDZx0kUPb_ftBA
+
+漫谈语音合成之Char2Wav模型
+
+https://mp.weixin.qq.com/s/8e4bkyTJIxHZ1y95GshA0Q
+
+开源的语音合成系统WORLD介绍以及使用方法
+
+https://mp.weixin.qq.com/s/JSnyE2k7jqd5GR1lHA6WUg
+
+阿里巴巴Oral论文：用于语音合成的深度前馈序列记忆网络
+
+https://mp.weixin.qq.com/s/H77iom38lTR0KzeFXrdWew
+
+DeepMind与谷歌大脑联手推出WaveRNN，移动端合成高保真音频媲美WaveNet
+
+https://mp.weixin.qq.com/s/p_VjFwwDCu1i_ovUljaoVw
+
+阿里巴巴语音交互智能团队：基于线性网络的语音合成说话人自适应
 
 # CTC
 
