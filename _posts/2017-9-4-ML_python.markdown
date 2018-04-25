@@ -240,6 +240,10 @@ https://mp.weixin.qq.com/s/1xHeXs9gM3LzEzCUz0jhXA
 
 简单实用的pandas技巧：如何将内存占用降低90%
 
+https://mp.weixin.qq.com/s/SCoowjQatUwzetQAuGhH9Q
+
+python科学计算之Pandas使用
+
 ## mysql
 
 http://www.runoob.com/python/python-mysql.html
@@ -469,36 +473,4 @@ Python3实现决策树算法
 https://mp.weixin.qq.com/s?__biz=MzA3MTM3NTA5Ng==&mid=2651056396&idx=1&sn=dabbda2c433e54a2bad506fc13bfd743
 
 <<战狼Ⅱ>>豆瓣十二万影评浅析
-
-https://mp.weixin.qq.com/s/QIfxxY6z7y77RDE_8gDEIg
-
-并行运算Process Pools
-
-https://mp.weixin.qq.com/s/hNOF6YvDjIuX4u36Wr7LCA
-
-随机森林之美
-
-https://mp.weixin.qq.com/s/AHz81u8SGyi9_k40040QVg
-
-Python机器学习入门到进阶
-
-https://mp.weixin.qq.com/s/hFg1TvNocrMi5CpDtvRLcQ
-
-推荐一个计算“造人”成功与否的贝叶斯模型！
-
-http://www.sohu.com/a/168170785_642762
-
-基于机器学习的Python信用卡欺诈检测
-
-https://mp.weixin.qq.com/s/p69x5YyWxMulxx_OwX3nzQ
-
-TuChart：基于Tushare和Echarts的股票数据视觉化应用
-
-https://mp.weixin.qq.com/s/Xl9ZT7_I8P_ZU4O8j6bS5Q
-
-基于Python的人脸识别：识别准确率高达99.38%！
-
-https://mp.weixin.qq.com/s/tN7KVBA9GqdjpAjW-_WF8Q
-
-Python学习者最易上手的机器学习漫游指南
 

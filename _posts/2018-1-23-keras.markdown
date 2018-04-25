@@ -218,6 +218,10 @@ https://mp.weixin.qq.com/s/wlJaBaKj8mET43e7c0GpLw
 
 textgenrnn：只需几行代码即可训练文本生成网络
 
+https://mp.weixin.qq.com/s/aZPlDOICUsXDZer0jSa65A
+
+使用Keras和CNN构建分类器
+
 # OpenAI Gym
 
 Openai gym是一个用于开发和比较强化学习（reinforcement learning，RL）算法的工具包，与其他的数值计算库兼容，如tensorflow或者theano库。现在主要支持的是python语言，以后将支持其他语言。

@@ -166,6 +166,10 @@ https://mp.weixin.qq.com/s/j4faPastB3nFmgH_nhVW6g
 
 Apollo仿真平台如何Hold住99.9999%的复杂场景？
 
+https://mp.weixin.qq.com/s/PFCCRBGWmaTQkeyOlG1qng
+
+Apollo 2.0多传感器融合定位模块
+
 ## 文章
 
 http://blog.exbot.net/
@@ -397,4 +401,8 @@ https://mp.weixin.qq.com/s/PYqhSHzlyO5HqLvBaEqlwQ
 https://mp.weixin.qq.com/s/WiS-iJHA1zoIyb1cvKiuZQ
 
 自动驾驶传感器“一哥之争”，这事儿你怎么看？
+
+https://mp.weixin.qq.com/s/myWTfgvjiqli_Rxfr-FY0w
+
+360扫地机原理大揭秘，竟还有无人驾驶技术？——浅析家用机器人SLAM方案
 

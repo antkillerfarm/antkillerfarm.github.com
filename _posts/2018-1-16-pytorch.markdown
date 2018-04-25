@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Pytorch, PaddlePaddle, MXNet
+title:  Pytorch, PaddlePaddle, MXNet, Kaldi
 category: AI 
 ---
 
@@ -238,4 +238,40 @@ https://mp.weixin.qq.com/s/2ulMPGEHYkOqWhT2XY449w
 
 TensorFlow、MXNet、PaddlePaddle三个开源库对比
 
+# Kaldi
+
+Kaldi是一个语音识别的工具包。它由Daniel Povey于2009年创建。
+
+>Daniel Povey，Johns Hopkins University副教授。   
+>个人主页：   
+>http://danielpovey.com/
+
+官网：
+
+https://github.com/kaldi-asr/kaldi
+
+文档：
+
+http://kaldi-asr.org/doc/
+
+此外，Dan的主页上也有一些教程：
+
+http://danielpovey.com/kaldi-lectures.html
+
+## 安装
+
+1.检查依赖。
+
+{% highlight bash %}
+cd tool
+extras/check_dependencies.sh
+{% endhighlight %}
+
+根据提示，缺什么就装什么。
+
+2.编译
+
+{% highlight bash %}
+make -j 4
+{% endhighlight %}
 

@@ -260,6 +260,10 @@ https://mp.weixin.qq.com/s/X6FwTgr282hbqgOz3oBX-w
 
 多任务学习概述论文：从定义和方法到应用和原理分析
 
+https://blog.csdn.net/CoderPai/article/details/80080455
+
+多任务学习与深度学习
+
 # AutoDL
 
 DL领域目前存在的主要问题之一是：如何设计网络结构和调整超参数。目前的做法，通常依赖于作者的直觉，属于典型的拍脑袋想点子。

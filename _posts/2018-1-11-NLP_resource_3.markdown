@@ -282,4 +282,16 @@ https://mp.weixin.qq.com/s/FvQUvyB32XZt0AIS0m6KDw
 
 基于连通图的篇章级事件抽取与相关度计算
 
+https://mp.weixin.qq.com/s/wU3sZKQ6gkYHeTEEClB4Gw
+
+通过深度模型加深和拓宽聊天话题，让你与机器多聊两句
+
+https://mp.weixin.qq.com/s/55-YouMoqOtGFPpIsGWwOg
+
+Google工程师带你看遍聊天机器人的前世今生
+
+https://mp.weixin.qq.com/s/CQDYzRvFqJHPVXDu94pgLA
+
+思必驰和上交大提出口语语义理解新方法：基于对抗多任务学习的半监督训练
+
 

@@ -364,6 +364,10 @@ https://mp.weixin.qq.com/s/eBSPMJUY6LVvjy-4AAUphA
 
 一文读懂进化算法[Evolutionary Algorithm]简介
 
+https://mp.weixin.qq.com/s/iIj1kymBgwH8sUgLyuWiSQ
+
+在个人电脑上快速训练Atari深度学习模型：Uber开源“深度神经进化”加速版 
+
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA

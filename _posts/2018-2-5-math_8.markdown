@@ -190,3 +190,15 @@ https://mp.weixin.qq.com/s/uI5gUGtiR8VDXreU4YEZYA
 
 MILA提出防御增强型网络：简单修改已有网络即可提升防攻击能力
 
+https://mp.weixin.qq.com/s/R72RzLi4AC4Su1EJ_W52aA
+
+Petuum提出深度生成模型统一的统计学框架
+
+https://mp.weixin.qq.com/s/33VKfq-jFHfn9GBQzFYq0Q
+
+震撼！英伟达用深度学习做图像修复，毫无ps痕迹
+
+https://mp.weixin.qq.com/s/FxrLxSp1Cd7w9i6xVqLJEw
+
+Tree-CNN：一招解决深度学习中的“灾难性遗忘”
+

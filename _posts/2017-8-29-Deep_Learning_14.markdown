@@ -136,6 +136,10 @@ https://zhuanlan.zhihu.com/p/21533724
 
 对话CVPR2016：目标检测新进展
 
+https://zhuanlan.zhihu.com/p/36088972
+
+基于深度学习的目标检测算法综述
+
 https://mp.weixin.qq.com/s/r9tXvKIN-eqKW_65yFyOew
 
 谷歌开源TensorFlow Object Detection API

@@ -54,26 +54,6 @@ https://zhuanlan.zhihu.com/p/23177950
 
 kaldi-ctc: CTC End-to-End ASR
 
-## Kaldi
-
-Kaldi是一个语音识别的工具包。它由Daniel Povey于2009年创建。
-
->Daniel Povey，Johns Hopkins University副教授。   
->个人主页：   
->http://danielpovey.com/
-
-官网：
-
-https://github.com/kaldi-asr/kaldi
-
-文档：
-
-http://kaldi-asr.org/doc/
-
-此外，Dan的主页上也有一些教程：
-
-http://danielpovey.com/kaldi-lectures.html
-
 ## HTK
 
 Hidden Markov Model Toolkit是另一个语音识别的工具包。
