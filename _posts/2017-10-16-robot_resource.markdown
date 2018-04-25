@@ -170,6 +170,10 @@ https://mp.weixin.qq.com/s/PFCCRBGWmaTQkeyOlG1qng
 
 Apollo 2.0多传感器融合定位模块
 
+https://mp.weixin.qq.com/s/KEdXmwUGHysy_LZAfdkmlw
+
+Apollo的分布式可扩展计算平台探索
+
 ## 文章
 
 http://blog.exbot.net/

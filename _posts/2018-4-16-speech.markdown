@@ -24,6 +24,12 @@ category: graphics
 
 >这本书比较老了（1999年），但毕竟是本1000页左右的书，传统方法该说的基本都说了。DL方法目前还没有一本类似的书，主要还是看论文。
 
+## 教程
+
+http://tts.speech.cs.cmu.edu/courses/11492/schedule.html
+
+Speech Processing
+
 ## blog
 
 http://www.cnblogs.com/welen/
