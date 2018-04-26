@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Git
+title:  Git, 爬虫
 category: technology 
 ---
 
@@ -230,4 +230,74 @@ https://www.gerritcodereview.com/
 https://mp.weixin.qq.com/s/DbvRbaH7BJKeTCT4LVXUoA
 
 Git的4个阶段的撤销更改
+
+# 爬虫
+
+## 自动解析网页的结构化数据
+
+抽取结构树，对比两个网页的dom tree的相似度（卷积核），找出并抽取相似节点。
+
+参考：
+
+http://www.doc88.com/p-2045913772352.html
+
+Web页面中结构化数据抽取的实现与应用
+
+http://www.cnblogs.com/codemind/p/smart_spider_parser.html
+
+爬虫数据采集技术趋势－智能化解析
+
+## 参考
+
+https://mp.weixin.qq.com/s/X9NPFFTHTk62V21o63ceOA
+
+Python 爬虫的工具列表大全
+
+http://www.gooseeker.com/
+
+一个基于FireFox的网络爬虫。
+
+https://mp.weixin.qq.com/s/0yDokR2dYzetUy4NI9edSQ
+
+那些你不知道的爬虫反爬虫套路
+
+https://mp.weixin.qq.com/s/yR_wENRSbxvfrcYr9O9BuQ
+
+23个Python爬虫开源项目代码：爬取微信、淘宝、豆瓣、知乎、微博等
+
+https://mp.weixin.qq.com/s/38ofY693bXwFWIMNqYx4-A
+
+常用的Python爬虫技巧总结
+
+https://mp.weixin.qq.com/s/Hp6tEQujSgCnPwSKhAE72g
+
+关于Python爬虫，这里有一条高效的学习路径
+
+https://mp.weixin.qq.com/s/0QnOgT8F090MOzazzsZfZA
+
+不会编程也能爬数据！3个爬虫小工具教你实现
+
+https://mp.weixin.qq.com/s/7HxZGSTJvxjvpAsF5LfS-g
+
+零基础的我是这样开始写Python爬虫的
+
+https://mp.weixin.qq.com/s/5sVrSxRAXWBn3-NBSlYMIg
+
+不踩坑的Python爬虫：如何在一个月内学会爬取大规模数据
+
+https://mp.weixin.qq.com/s/z2uWLEWF6e0TJWIpXyY6mQ
+
+如何用Python爬虫获取那些价值博文
+
+https://mp.weixin.qq.com/s/SkGUZMgBW_oFBygc4d1zQg
+
+如何用Python编写知乎爬虫？
+
+https://mp.weixin.qq.com/s/-PPlfkHhQzGF1N6-dMlRNA
+
+高阶Python爬虫实战：破解极验滑动验证码
+
+https://mp.weixin.qq.com/s/w8U-GkOhAQivuHmrVFpw3w
+
+Python爬虫抓取智联招聘
 

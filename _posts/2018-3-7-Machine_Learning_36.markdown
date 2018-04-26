@@ -198,6 +198,10 @@ http://blog.csdn.net/cyh_24/article/details/50545780
 
 Parameter Server详解
 
+https://mp.weixin.qq.com/s/yuHavuGTYMH5JDC_1fnjcg
+
+阿里妈妈基于TensorFlow做了哪些深度优化？TensorFlowRS架构解析
+
 # LambdaMART
 
 https://www.zhihu.com/question/41418093

@@ -36,6 +36,34 @@ https://mp.weixin.qq.com/s/-EU4jTElNll9MQomjuqFXA
 
 姿态估计相比Mask-RCNN提高8.2%，上海交大卢策吾团队开源AlphaPose
 
+# DensePose
+
+与OpenPose类似的还有Facebook提出的DensePose。
+
+论文：
+
+《DensePose: Dense Human Pose Estimation In The Wild》
+
+数据集：
+
+http://densepose.org/
+
+这里包含了一个名为DensePose-COCO的姿态数据集。
+
+参考：
+
+https://mp.weixin.qq.com/s/sFd9hrMrKDl5UJwlY6N7mw
+
+Facebook提出DensePose数据集和网络架构：可实现实时的人体姿态估计
+
+https://mp.weixin.qq.com/s/t29ITfRPD3yCmRD5wJyq7g
+
+ICCV2017 PoseTrack challenge优异方法：基于检测和跟踪的视频中人体姿态估计
+
+https://mp.weixin.qq.com/s/mGcKpu3BXlAGO-t2FUCxAg
+
+基于深度模型的人脸对齐和姿态标准化
+
 # 深度目标跟踪
 
 ## 概述

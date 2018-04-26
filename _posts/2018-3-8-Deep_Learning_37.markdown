@@ -228,10 +228,6 @@ https://mp.weixin.qq.com/s/HVooLtr_k6fwh2N3GjMb1A
 
 新研究提出深度残差等价映射：由正脸加强侧脸识别效果
 
-https://mp.weixin.qq.com/s/mGcKpu3BXlAGO-t2FUCxAg
-
-基于深度模型的人脸对齐和姿态标准化
-
 https://mp.weixin.qq.com/s/9noWOZJSRAi424ZDTD1IRQ
 
 世界权威评测冠军：百度人脸检测算法PyramidBox
@@ -251,6 +247,10 @@ https://mp.weixin.qq.com/s/MyA8_yt4YCkFl67AyhpZow
 https://mp.weixin.qq.com/s/b-v_hDHJjUxMithBDr3TcQ
 
 实时旋转鲁棒人脸检测算法
+
+https://blog.csdn.net/xiamentingtao/article/details/50908190
+
+Facial Landmark Detection(人脸特征点检测)
 
 # 迁移学习
 
@@ -381,4 +381,9 @@ https://mp.weixin.qq.com/s/ovSltv5Ct8AsPcxCFsYwYw
 https://mp.weixin.qq.com/s/3H1u2JJ0JwfjwDKs5imcxQ
 
 零资源机器翻译的最新进展
+
+https://mp.weixin.qq.com/s/5DkqsOkTo9l9QtNp16MGOg
+
+北京大学计算机研究所提出深度跨媒体知识迁移方法
+
 

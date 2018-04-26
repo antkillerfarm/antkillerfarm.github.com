@@ -196,6 +196,10 @@ https://mp.weixin.qq.com/s/tAhaVwlsxJ5ml0wxiew_4Q
 
 在PaddlePaddle上实现MNIST手写体数字识别
 
+https://mp.weixin.qq.com/s/nGXhXvEd8mXbpTqmFHNJcQ
+
+说说为什么选择Paddlepaddle而不是TensorFlow
+
 # MXNet
 
 https://mp.weixin.qq.com/s/lVja7woyFWpmr9sH0CitAA
@@ -238,6 +242,10 @@ https://mp.weixin.qq.com/s/2ulMPGEHYkOqWhT2XY449w
 
 TensorFlow、MXNet、PaddlePaddle三个开源库对比
 
+https://mp.weixin.qq.com/s/-BlBm3ZTZ32ijORJux7rTA
+
+DMLC团队发布GluonCV和GluonNLP：两种简单易用的DL工具箱
+
 # Kaldi
 
 Kaldi是一个语音识别的工具包。它由Daniel Povey于2009年创建。
@@ -254,9 +262,17 @@ https://github.com/kaldi-asr/kaldi
 
 http://kaldi-asr.org/doc/
 
-此外，Dan的主页上也有一些教程：
+此外，Daniel的主页上也有一些教程：
 
 http://danielpovey.com/kaldi-lectures.html
+
+数据：
+
+http://www.openslr.org/
+
+这是Daniel Povey为了Kaldi中的示例所创建的资源网站。它还有个国内的镜像：
+
+http://cn-mirror.openslr.org/
 
 ## 安装
 
@@ -275,3 +291,28 @@ extras/check_dependencies.sh
 make -j 4
 {% endhighlight %}
 
+## 运行示例
+
+示例放在egs文件夹下，目前已经有很多示例了。这里以thchs30为例进行介绍。这里主要参考了下文：
+
+https://blog.csdn.net/shichaog/article/details/73655628
+
+kaldi在线中文识别系统搭建
+
+thchs30下有个s5文件夹。Daniel教程中提到，在原来的老示例中还有s1、s2这样的文件夹，因此这个5姑且可以看成版本号吧。
+
+**Kaldi只是一个工具包，而非框架。**因此，它并不能直接运行，而只能被别人调用。
+
+在示例中，一般是通过run.sh对Kaldi的功能进行调用。
+
+1.下载数据
+
+http://cn-mirror.openslr.org/18/
+
+2.
+
+## 参考
+
+https://blog.csdn.net/lijin6249/article/details/51838936
+
+基于kaldi的在线中文识别，online的操作介绍

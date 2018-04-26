@@ -28,7 +28,16 @@ category: graphics
 
 http://tts.speech.cs.cmu.edu/courses/11492/schedule.html
 
-Speech Processing
+Speech Processing。CMU的这个教程主要包含ASR（Automatic Speech Recognition）、TTS（Text To Speech）和SDS（Spoken Dialog Systems）等三方面的内容。
+
+>Alan W Black，苏格兰计算机科学家。Coventry University本科（1984）+University of Edinburgh硕博（1984,1993）。CMU教授。语音处理专家。   
+>个人主页：
+>http://www.cs.cmu.edu/~awb/   
+>他的主页上有好多Speech、NLP方面的教程。他本人长得太像Java之父James Gosling了。
+
+http://web.stanford.edu/class/cs224s/index.html
+
+CS224S / LINGUIST285 - Spoken Language Processing。Stanford的教程相对比较新，DL涉及的比较多。
 
 ## blog
 
@@ -41,6 +50,14 @@ https://blog.csdn.net/weiqiwu1986
 http://blog.csdn.net/xmdxcsj
 
 一个语音识别的blog
+
+https://blog.csdn.net/shichaog
+
+一个语音识别+Kaldi的blog
+
+https://blog.csdn.net/dearwind153/article/category/6506891
+
+这哥们的blog很杂，这是语音相关的专栏
 
 ## 项目
 
@@ -135,6 +152,10 @@ Mozilla开源语音识别模型和世界第二大语音数据集
 http://www.voxforge.org/
 
 VoxForge是一个非常活跃的众包语音识别数据库和经过训练的模型库
+
+http://pan.baidu.com/s/1dEhUghz
+
+清华大学语音和语言技术研究中心（CSLT）公开的数据集
 
 # 基本框架
 
@@ -234,23 +255,4 @@ https://zhuanlan.zhihu.com/p/27610503
 
 根据声波传导理论，利用多个麦克风收集到的信号可以将某一方向传来的声音增强或抑制。利用这种方法，麦克风阵列可以将噪声环境中特定声音信号有效的增强。由于麦克风阵列技术具有很好的抑制噪声和语音增强的能力，又不需要麦克风时刻指向声源方向，因此在语音处理领域具有非常好的前景，可以用在非常广的应用领域。
 
-## Microphone Array形状
-
-麦克风阵列一般来说有线形、环形和球形之分，严谨的应该说成一字、十字、双L、平面、螺旋、球形等。
-
-至于麦克风阵列的阵元数量，也就是麦克风数量，可以从2个到上千个不等。由于成本限制，消费级麦克风阵列的阵元数量一般不超过8个，所以市面上最常见的就是6麦和4麦的阵型。
-
-智能音箱一般都是放置桌面，需要360度响应指令，所以环形阵列比较适合，而智能中控一般贴墙固定，仅照顾180度范围即可，这时候线形阵列就能满足。
-
-双麦克风阵列：结构简单、成本低、容易实施、功耗低。
-
-像空调、电视这类家电产品，它永远都是贴墙放，八个麦克风在实际应用上是多余的。而双麦克技术在任何产品上均可自然适配。
-
-在机器人领域里，对声源定位的要求比较高，所以一般都会使用环形多麦克方案。这两年国内比较火的Rokid机器人就采用了8麦克的阵列。
-
-参考：
-
-https://www.leiphone.com/news/201610/5Ye8zxxwtlLGiW1y.html
-
-技术解读：从亚马逊Echo到谷歌Home，双麦克风阵列更有优势？
 

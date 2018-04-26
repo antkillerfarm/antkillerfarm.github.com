@@ -208,10 +208,6 @@ https://mp.weixin.qq.com/s/XorPkuIdhRNI1zGLwg-55A
 
 斯坦福新深度学习系统 NoScope：视频对象检测快1000倍
 
-https://mp.weixin.qq.com/s/t29ITfRPD3yCmRD5wJyq7g
-
-ICCV2017 PoseTrack challenge优异方法：基于检测和跟踪的视频中人体姿态估计
-
 https://mp.weixin.qq.com/s/7w5nYWfZO-YOJ4cA47kQXg
 
 无监督视频物体分割新思路：实例嵌入迁移

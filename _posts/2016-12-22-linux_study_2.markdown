@@ -32,7 +32,17 @@ https://mp.weixin.qq.com/s/FV13ma9LxI1gsgi9ovU4Mw
 
 free命令的内容比较概括，主要包含系统内存的整体使用情况，不深入到进程一级。
 
-## 查看查看磁盘IO情况
+# 查看CPU核数
+
+复杂版：
+
+`cat /proc/cpuinfo`
+
+简单版：
+
+`lscpu`
+
+# 查看查看磁盘IO情况
 
 ## vmstat
 
