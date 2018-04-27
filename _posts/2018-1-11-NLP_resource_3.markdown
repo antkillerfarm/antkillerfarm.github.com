@@ -294,4 +294,8 @@ https://mp.weixin.qq.com/s/CQDYzRvFqJHPVXDu94pgLA
 
 思必驰和上交大提出口语语义理解新方法：基于对抗多任务学习的半监督训练
 
+https://mp.weixin.qq.com/s/tFL5x-7a9iyzxbSpNa0-4w
+
+当RNN神经网络遇上NER（命名实体识别）：双向LSTM，条件随机场（CRF），层叠Stack LSTM，字母嵌入
+
 

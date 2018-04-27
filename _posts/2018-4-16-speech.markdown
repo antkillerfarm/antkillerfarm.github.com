@@ -10,6 +10,10 @@ category: graphics
 
 说起来还是要感谢DL，不然按照传统的行业划分，几乎不会有人同时研究CV和SR。DL的出现，实际上大大降低了算法的领域迁移成本，领域知识的重要性相对下降了。
 
+## 学校
+
+SR领域最牛的高校主要是美国的CMU、Johns Hopkins University和英国的Cambridge University。
+
 ## 书籍
 
 《Speech and Language Processing: An introduction to natural language processing, computational linguistics, and speech recognition》，Daniel Jurafsky & James H. Martin著。
@@ -79,7 +83,7 @@ kaldi-ctc: CTC End-to-End ASR
 
 ## HTK
 
-Hidden Markov Model Toolkit是另一个语音识别的工具包。
+Hidden Markov Model Toolkit是Cambridge University开发的语音识别的工具包。
 
 官网：
 

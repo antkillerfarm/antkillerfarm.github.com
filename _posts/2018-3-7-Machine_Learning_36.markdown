@@ -304,3 +304,7 @@ https://mp.weixin.qq.com/s/W06YcuGWalDbyUaZa_kZnQ
 
 2017年深度学习优化算法最新综述
 
+https://mp.weixin.qq.com/s/WQ6CxRS-v_y-7PnYY-1ffg
+
+在局部误差边界条件下的随机子梯度方法的加速
+
