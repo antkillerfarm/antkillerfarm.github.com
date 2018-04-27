@@ -62,6 +62,10 @@ https://mp.weixin.qq.com/s/_q69BV1r46S9X5wnLuFPSw
 
 关于序列建模，是时候抛弃RNN和LSTM了
 
+https://mp.weixin.qq.com/s/pv3gQfCayGmsmGKLbMIFpA
+
+神奇！只有遗忘门的LSTM性能优于标准LSTM
+
 # L2 Normalization
 
 L2 Normalization本身并不复杂，然而多数资料都只提到1维的L2 Normalization的计算公式：
