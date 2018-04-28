@@ -152,6 +152,10 @@ https://wenku.baidu.com/view/942891aba98271fe910ef9e3.html
 
 基于深度学习的语音识别
 
+https://mp.weixin.qq.com/s/HSdhkazt1j5phMTLRMjFlQ
+
+深度对抗声学模型训练框架
+
 # 语音合成
 
 https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw

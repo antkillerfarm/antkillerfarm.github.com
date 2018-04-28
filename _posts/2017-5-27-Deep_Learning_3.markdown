@@ -198,6 +198,10 @@ http://blog.csdn.net/zy3381/article/details/44409535
 
 CNN误差反传时旋转卷积核的简明分析
 
+https://mp.weixin.qq.com/s/dnElNURJ6xfWHJVf_yeT8w
+
+理解多层CNN中转置卷积的反向传播
+
 卷积的反向传播，有时也被称为反卷积。
 
 ![](/images/article/dcign.png)

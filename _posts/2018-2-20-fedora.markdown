@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Fedora, CentOS
+title:  Fedora, CentOS, Ubuntu使用技巧（三）
 category: linux 
 ---
 
@@ -124,4 +124,22 @@ VNCSERVERARGS[1]="-geometry 1280x1024"
 http://www.tecmint.com/install-tightvnc-remote-desktop/
 
 Install TightVNC Server in RHEL/CentOS and Fedora to Access Remote Desktops
+
+# Ubuntu 18.04使用手记
+
+又是两年过去了，这次是Ubuntu 18.04（2018.4.26发布）。
+
+这次的变化还是有点大，Ubuntu舍弃了自己开发的Unity，转回Gnome，连带着好多软件的界面都出现了一定的调整。这个适应过程，要长于之前的几次升级。
+
+>前些年由于Unity界面乏善可陈，Ubuntu的版本升级被吐槽为换壁纸。这次算是换主题吧。
+
+由于这个改变是2017.4做出的，有了1年的过渡期，因此拿到手的Ubuntu 18.04的成品度还是蛮高的。
+
+输入法比原来好，但有些软件存在兼容问题。
+
+内核：4.15
+
+LibreOffice：6.0
+
+Emacs：25.2
 

@@ -367,6 +367,10 @@ https://code.visualstudio.com/
 
 `umake ide visual-studio-code`
 
+在Ubuntu 18.04中，umake安装方法没有处理好依赖，需要：
+
+`sudo apt install libgconf-2-4`
+
 ## 细节
 
 ctrl+P 命令行

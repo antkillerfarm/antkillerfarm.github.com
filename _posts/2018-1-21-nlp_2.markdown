@@ -218,6 +218,14 @@ https://mp.weixin.qq.com/s/yqAnIjGmXpubgSsGDx6O8w
 
 动图解释泰勒级数（二）
 
+https://mp.weixin.qq.com/s/LlAul8AoAUGUCgFP-qPvrA
+
+中心极限定理通俗介绍
+
+https://zhuanlan.zhihu.com/p/36230460
+
+黑盒函数的探索
+
 ## 金融模型
 
 Capital asset pricing model

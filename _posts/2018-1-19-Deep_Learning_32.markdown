@@ -136,6 +136,12 @@ FLOPS：Floating-point Operations Per Second，每秒所执行的浮点运算次
 
 显然NN的INT8计算主要以MACC为单位。
 
+## 参考
+
+https://mp.weixin.qq.com/s/9DXMqiPIK5P5wzUMT7_Vfw
+
+基于交替方向法的循环神经网络多比特量化
+
 # 视频目标分割
 
 视频目标分割任务和语义分割有两个基本区别：
