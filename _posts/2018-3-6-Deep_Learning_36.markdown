@@ -286,6 +286,10 @@ Google的这两篇论文在这里做了一些尝试：
 
 参考：
 
+https://mp.weixin.qq.com/s/Ia-8qFLAyY65Nai5PGAw0w
+
+人人都能用的深度学习：当前三大自动化深度学习平台简介
+
 http://blog.csdn.net/u014380165/article/details/78525687
 
 自学网络结构（二）：Learning Transferable Architectures for Scalable Image Recognition

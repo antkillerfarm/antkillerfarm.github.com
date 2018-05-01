@@ -62,7 +62,9 @@ https://github.com/mgedmin/indicator-netspeed.git
 
 最初，打算在ubuntu的虚拟机上搭建FTP服务器，而在windows下用Filezilla客户端访问并共享。所用的参考文献如下:
 
-[http://blog.chinaunix.net/uid-11187-id-3026834.html](http://blog.chinaunix.net/uid-11187-id-3026834.html)
+http://blog.chinaunix.net/uid-11187-id-3026834.html
+
+如何搭建虚拟机的FTP服务器
 
 但是最后并没有成功，现将主要的关键点罗列如下：
 

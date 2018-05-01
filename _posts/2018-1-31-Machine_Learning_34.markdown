@@ -200,6 +200,14 @@ http://www.bigdata8.top/front/article/466
 
 异常值检测-滑动均值实现智能告警
 
+https://mp.weixin.qq.com/s/ujG6Fr161kZh3S-lEiTJUg
+
+异常检测（Anomaly Detection）
+
+https://mp.weixin.qq.com/s/_Sds7O1wonVARKkb7qscww
+
+腾讯：机器学习构建通用的数据异常检测平台
+
 # 自适应滤波器
 
 《自适应滤波器原理》，Simon Haykin著。

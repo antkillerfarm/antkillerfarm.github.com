@@ -386,4 +386,7 @@ https://mp.weixin.qq.com/s/5DkqsOkTo9l9QtNp16MGOg
 
 北京大学计算机研究所提出深度跨媒体知识迁移方法
 
+https://mp.weixin.qq.com/s/ZvBzU_PSTCTS4hWrkJ2ZFg
+
+zero-shot视觉模仿系统GSP，仅观察演示就学会执行任务
 

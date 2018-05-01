@@ -132,6 +132,10 @@ https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw
 
 变分U-Net，可按条件独立变换目标的外观和形状
 
+https://mp.weixin.qq.com/s/1q36Cb4Fy4Mg7DcrAcJv3A
+
+双人协作游戏带你理解变分自编码器
+
 # RBM & DBN & Deep Autoencoder
 
 ## RBM

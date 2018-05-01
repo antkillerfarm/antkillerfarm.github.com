@@ -298,4 +298,11 @@ https://mp.weixin.qq.com/s/tFL5x-7a9iyzxbSpNa0-4w
 
 当RNN神经网络遇上NER（命名实体识别）：双向LSTM，条件随机场（CRF），层叠Stack LSTM，字母嵌入
 
+https://mp.weixin.qq.com/s/pKT4g_bs6Ly1OWNxV5zXbw
+
+FAIR新一代无监督机器翻译：模型更简洁，性能更优
+
+https://mp.weixin.qq.com/s/HJDkNw_Fuu1QKEpyHY1Q-w
+
+语义分析的方法简述之文本基本处理
 

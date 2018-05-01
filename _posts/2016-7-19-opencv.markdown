@@ -318,6 +318,10 @@ https://mp.weixin.qq.com/s/EqeNS6s72_Qwg6mmDRl6wQ
 
 OpenCV基于DLCO描述子匹配
 
+https://mp.weixin.qq.com/s/JVuxMUmN2_DNfg1Ol5b8cw
+
+OpenCV3新特性-图像无缝克隆函数演示
+
 # GNU Octave
 
 GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。

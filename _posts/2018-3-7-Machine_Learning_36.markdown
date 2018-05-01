@@ -308,3 +308,8 @@ https://mp.weixin.qq.com/s/WQ6CxRS-v_y-7PnYY-1ffg
 
 在局部误差边界条件下的随机子梯度方法的加速
 
+https://mp.weixin.qq.com/s/rOltA6fDzWmxcSyoHYqeSg
+
+谷歌提出最新参数优化方法Adafactor，已在TensorFlow中开源
+
+

@@ -350,3 +350,12 @@ https://mp.weixin.qq.com/s/1JSxjkKEUlWOzXCQPTve3A
 
 贝叶斯线性回归简介
 
+https://blog.csdn.net/CoderPai/article/details/80138774
+
+使用数据驱动进行配对交易：简单交易策略
+
+https://blog.csdn.net/CoderPai/article/details/80143990
+
+量化交易：相关系数
+
+
