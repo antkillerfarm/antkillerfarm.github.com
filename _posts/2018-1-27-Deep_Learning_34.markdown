@@ -282,3 +282,7 @@ https://mp.weixin.qq.com/s/P-iSI80IVmb5s-Q15Re2HQ
 
 All In!我学会了用强化学习打德州扑克
 
+https://zhuanlan.zhihu.com/p/36322095
+
+最前沿：从虚拟到现实，DRL让小狗机器人跑起来了！
+

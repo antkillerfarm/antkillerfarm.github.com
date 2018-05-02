@@ -104,6 +104,8 @@ bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg #�
 
 configure脚本会自动选择CPU指令集优化，因此源代码编译的TensorFlow，肯定比pip安装的要运行的快。
 
+注意：这里即使只编译TF for python3，也要安装python2，否则bazel脚本会出错。
+
 bazel编译相当消耗资源，在配置低的机器上，可通过如下选项限制使用资源的数量。（最常出现的后果是内存耗尽导致的假死。）
 
 `--jobs n --local_resources availableRAM(MB),availableCPU,availableIO`

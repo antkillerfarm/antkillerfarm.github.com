@@ -202,6 +202,10 @@ https://mp.weixin.qq.com/s/K9zSNM2SKjC0BEqoYr2U5w
 
 比特币的数据版图
 
+https://mp.weixin.qq.com/s/m9KwANPIudVesoXjejnOJA
+
+火币袁煜明：区块链的本质、意义与商业体系设计
+
 # CPU
 
 https://zhuanlan.zhihu.com/p/29743431

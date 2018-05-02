@@ -366,7 +366,11 @@ https://mp.weixin.qq.com/s/eBSPMJUY6LVvjy-4AAUphA
 
 https://mp.weixin.qq.com/s/iIj1kymBgwH8sUgLyuWiSQ
 
-在个人电脑上快速训练Atari深度学习模型：Uber开源“深度神经进化”加速版 
+在个人电脑上快速训练Atari深度学习模型：Uber开源“深度神经进化”加速版
+
+https://mp.weixin.qq.com/s/Jc5f4iX9uoOo5igQ79P77w
+
+多目标进化算法在混合可再生能源系统的应用
 
 ## 连续学习
 

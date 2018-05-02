@@ -390,3 +390,7 @@ https://mp.weixin.qq.com/s/ZvBzU_PSTCTS4hWrkJ2ZFg
 
 zero-shot视觉模仿系统GSP，仅观察演示就学会执行任务
 
+https://mp.weixin.qq.com/s/kTiQdoCI-mk8c-m0uL5BkQ
+
+如何实现少样本学习？先让神经网络get视觉比较能力
+

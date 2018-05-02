@@ -346,10 +346,6 @@ https://mp.weixin.qq.com/s/RP9AfRNfztgKR9JTqhTTqQ
 
 资本资产定价模型简介
 
-https://mp.weixin.qq.com/s/1JSxjkKEUlWOzXCQPTve3A
-
-贝叶斯线性回归简介
-
 https://blog.csdn.net/CoderPai/article/details/80138774
 
 使用数据驱动进行配对交易：简单交易策略

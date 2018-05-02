@@ -122,6 +122,10 @@ https://mp.weixin.qq.com/s/md3SL076cw0TgZDRlwWG5A
 
 用数据玩点花样！如何构建skim-gram模型来训练和可视化词向量
 
+https://mp.weixin.qq.com/s/HjNjTk_Hs82K87pP3QrNqw
+
+不懂word2vec，还敢说自己是做NLP？
+
 # RNN
 
 ## RNN的基本结构

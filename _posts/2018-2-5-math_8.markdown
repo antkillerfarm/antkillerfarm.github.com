@@ -222,4 +222,7 @@ https://mp.weixin.qq.com/s/fbsowjTuN7XfIgylsbXg9A
 
 360首席科学家颜水成：人工智能杂谈
 
+https://mp.weixin.qq.com/s/xTSLpFrBdKBgazCfjuLiwA
+
+Spotlight论文：解耦神经网络DCNet，性能优于标准CNN
 

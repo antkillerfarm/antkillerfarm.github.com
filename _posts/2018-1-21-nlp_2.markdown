@@ -56,6 +56,14 @@ https://mp.weixin.qq.com/s/xjSw7PbVrESo9u4otBOM1Q
 
 白话TF-IDF应用（一）：自动提取关键词
 
+## 句法分析
+
+传统方法主要是PCFG （Probabilistic Context-Free Grammar）。
+
+https://blog.csdn.net/continueOo/article/details/72851724
+
+统计自然语言处理（概率上下文无关文法）
+
 ## 论文
 
 《Distant Supervision for relation extraction without labeled data》
@@ -154,6 +162,10 @@ Nimbus的作用是将运行的jar分发到各Node去执行。
 
 # 垃圾筐
 
+http://www.matrix67.com/
+
+一个数学blog
+
 http://blog.huajh7.com/2013/03/06/variational-bayes/
 
 变分贝叶斯算法理解与推导
@@ -229,6 +241,20 @@ https://mp.weixin.qq.com/s/lc1oTETReXevVjK3NarbGg
 https://zhuanlan.zhihu.com/p/36230460
 
 黑盒函数的探索
+
+http://www.matrix67.com/blog/archives/4570
+
+再谈Julia集与Mandelbrot集
+
+## 贝叶斯线性回归
+
+https://mp.weixin.qq.com/s/szTmHY-Yvn7N3s_GzTDiEA
+
+解开贝叶斯黑暗魔法：通俗理解贝叶斯线性回归
+
+https://mp.weixin.qq.com/s/1JSxjkKEUlWOzXCQPTve3A
+
+贝叶斯线性回归简介
 
 ## 金融模型
 

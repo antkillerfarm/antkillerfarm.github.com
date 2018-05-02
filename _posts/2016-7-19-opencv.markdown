@@ -312,7 +312,7 @@ OpenCV实现人脸对齐
 
 https://mp.weixin.qq.com/s/pG5nq1fQ9XHp8WZN1AiLJQ
 
-OpenCV 基于Inception模型图像分类
+OpenCV基于Inception模型图像分类
 
 https://mp.weixin.qq.com/s/EqeNS6s72_Qwg6mmDRl6wQ
 
@@ -321,6 +321,10 @@ OpenCV基于DLCO描述子匹配
 https://mp.weixin.qq.com/s/JVuxMUmN2_DNfg1Ol5b8cw
 
 OpenCV3新特性-图像无缝克隆函数演示
+
+https://mp.weixin.qq.com/s/PibBxTkVJNM0n_wXHS99KQ
+
+OpenCV基于Landmark实现人脸交换
 
 # GNU Octave
 

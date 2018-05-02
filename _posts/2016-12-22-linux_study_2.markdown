@@ -66,7 +66,17 @@ dstat是后起之秀，号称可以替代vmstat、iostat、ifstat。
 
 `dstat -d --top-io`
 
-## 时间的表示方法
+# 性能分析
+
+Linux上主要有perf、gprof和valgrind三个性能分析工具。
+
+参考：
+
+https://cloud.tencent.com/developer/article/1063652
+
+Linux性能分析工具与图形化方法
+
+# 时间的表示方法
 
 一般遵循ISO 8601标准：
 

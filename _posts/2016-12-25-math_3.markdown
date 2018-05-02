@@ -140,10 +140,6 @@ https://mp.weixin.qq.com/s/i4G2k5yZZV_Q8U4T30XX2A
 
 概率论之概念解析：边缘化（Marginalisation）
 
-https://mp.weixin.qq.com/s/szTmHY-Yvn7N3s_GzTDiEA
-
-解开贝叶斯黑暗魔法：通俗理解贝叶斯线性回归
-
 https://mp.weixin.qq.com/s/Jcwxx5oxACjDEVZr9qgPGQ
 
 一个我们几乎每天都在使用的数学工具
