@@ -262,6 +262,10 @@ https://mp.weixin.qq.com/s/Cc4EHc6ei-PtZWhewM10xw
 
 学习如何学习的算法：简述元学习研究方向现状
 
+https://mp.weixin.qq.com/s/4f6-gXovdrYk7240TrUwJg
+
+谷歌大脑：基于元学习的无监督学习更新规则
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/ygt31lL0mBcyRmwAlsl8Sg

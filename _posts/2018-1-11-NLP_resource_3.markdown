@@ -306,3 +306,7 @@ https://mp.weixin.qq.com/s/HJDkNw_Fuu1QKEpyHY1Q-w
 
 语义分析的方法简述之文本基本处理
 
+https://mp.weixin.qq.com/s/v8azzXP1Kl5jnRCFpVdBGg
+
+语义分析的方法简述二
+

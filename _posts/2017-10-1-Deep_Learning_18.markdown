@@ -228,6 +228,10 @@ https://mp.weixin.qq.com/s/BL1xZ_YuuPe9frIc9E1fkA
 
 南开大学提出新物体分割评价指标
 
+https://mp.weixin.qq.com/s/3rfZUhio4Bk1RUGkEk5xoQ
+
+ETH Zurich提出新型网络“ROAD-Net”，解决语义分割域适配问题
+
 # 前DL时代的语义分割
 
 从最简单的像素级别“阈值法”（Thresholding methods）、基于像素聚类的分割方法（Clustering-based segmentation methods）到“图划分”的分割方法（Graph partitioning segmentation methods），在DL“一统江湖”之前，图像语义分割方面的工作可谓“百花齐放”。在此，我们仅以“Normalized cut”和“Grab cut”这两个基于图划分的经典分割方法为例，介绍一下前DL时代语义分割方面的研究。

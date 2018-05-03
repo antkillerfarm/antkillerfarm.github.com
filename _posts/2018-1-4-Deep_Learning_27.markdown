@@ -134,7 +134,11 @@ https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw
 
 https://mp.weixin.qq.com/s/1q36Cb4Fy4Mg7DcrAcJv3A
 
-双人协作游戏带你理解变分自编码器
+双人协作游戏带你理解变分自编码器-Part1
+
+https://mp.weixin.qq.com/s/zJf-dWsMe5WELgDz7TlivA
+
+双人协作游戏带你理解变分自编码器-Part2
 
 # RBM & DBN & Deep Autoencoder
 
