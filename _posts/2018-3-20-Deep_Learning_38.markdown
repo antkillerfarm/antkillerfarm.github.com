@@ -196,3 +196,7 @@ https://mp.weixin.qq.com/s/DNT9rMynbN4Th0AVDHeY_w
 
 BAIR提出人机合作新范式：教你如何高效安全地在月球着陆
 
+https://zhuanlan.zhihu.com/p/36375292
+
+最前沿：当我们以为Rainbow就是Atari游戏的巅峰时，Ape-X出来把Rainbow秒成了渣！
+

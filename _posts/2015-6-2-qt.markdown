@@ -282,6 +282,10 @@ Kubernetes是Google开源的容器集群管理系统，基于Docker构建一个�
 
 https://kubernetes.io/
 
+Kubernetes还有个ML的工具集叫KubeFlow。
+
+https://github.com/kubeflow/kubeflow
+
 参考：
 
 http://violetgo.com/blogs/2015/10/14/k8s.html

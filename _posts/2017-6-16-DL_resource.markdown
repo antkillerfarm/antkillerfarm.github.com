@@ -32,6 +32,10 @@ http://www.msra.cn/zh-cn/news?wd&content-type=posts
 
 MSRA的文章官网
 
+https://facebook.ai/developers
+
+Facebook的AI官网
+
 http://www.cnblogs.com/adong7639/p/6386316.html
 
 迄今为止计算机视觉领域超有实力的研究人物主页

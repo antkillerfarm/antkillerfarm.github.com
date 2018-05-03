@@ -12,6 +12,8 @@ Capsule是深度学习先驱Hinton于2017年提出的概念。
 
 《Dynamic Routing Between Capsules》
 
+《Matrix capsules with EM Routing》
+
 官方代码：
 
 https://github.com/Sarasra/models/tree/master/research/capsules
@@ -125,6 +127,10 @@ https://mp.weixin.qq.com/s/VcZSHw98w6nvgz4Hzjto3A
 
 深度学习之CapsuleNets理论与Python实践
 
+https://jhui.github.io/2017/11/14/Matrix-Capsules-with-EM-routing-Capsule-Network/
+
+“Understanding Matrix capsules with EM Routing (Based on Hinton's Capsule Networks)”
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：
@@ -135,7 +141,35 @@ https://deepmind.com/research/alphago/alphago-games-simplified-chinese/
 
 《Mastering the game of Go with deep neural networks and tree search》
 
-参考：
+## Leela Zero
+
+Leela Zero是比利时人Gian-Carlo Pascutto开源的围棋AI。它的算法与AlphaGo Zero相同。而训练采用GTP协议，集合全球算力，进行分布式训练。
+
+官网：
+
+http://zero.sjeng.org/
+
+代码：
+
+https://github.com/gcp/leela-zero
+
+>十多年前，当我还是一个中二青年的时候，就幻想有朝一日能够拿围棋世界冠军。当然，就算再中二，我自己也明白靠实力那是不可能的，当时做梦的法宝是制造一个AI，然后碾压一下所谓的国手。   
+>按照当时人们的预计(2000年前后)，这个AI在2030年之前，都不可能造出来，然而，最终的结果实际上只花了一半左右的时间。   
+>再之后，随着AI围棋的平民化，我的中二梦终于也有人将之付诸实现了：   
+>https://mp.weixin.qq.com/s/npt2zZrKwPnNdY-hsa2RjQ   
+>AI再乱围棋圈：“食言之战”柯洁落败；首例素人作弊引风波
+
+这次作弊风波所使用的AI就是Leela Zero，可见目前（2018.5）它的棋力已经超过了顶尖棋手。
+
+## ELF OpenGo
+
+ELF OpenGo是Facebook开源的围棋AI，它是FB的AI游戏框架ELF的一部分。
+
+官网：
+
+https://github.com/pytorch/ELF
+
+## 参考
 
 https://mp.weixin.qq.com/s/Sfv-jzQAkN0PsZOGZUQhkQ
 
@@ -189,10 +223,6 @@ https://mp.weixin.qq.com/s/nbTkr0PImlXUSYl91HD91Q
 
 AlphaGo背后的力量：蒙特卡洛树搜索入门指南
 
-https://github.com/gcp/leela-zero
-
-开源版的AlphaGo Zero
-
 https://mp.weixin.qq.com/s/-tH7DQo1cK9gA0bcpBJSDA
 
 AlphaGo Zero：笔记与伪代码
@@ -231,7 +261,7 @@ https://mp.weixin.qq.com/s/gsRnbknytz2FY2dWgdWEYg
 
 https://mp.weixin.qq.com/s/Przl4ivbNuOFmz4pcYTrpQ
 
-浅述：从 Minimax到AlphaZero，完全信息博弈之路（1）
+浅述：从Minimax到AlphaZero，完全信息博弈之路（1）
 
 https://zhuanlan.zhihu.com/p/32089487
 

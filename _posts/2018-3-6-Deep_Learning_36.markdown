@@ -332,6 +332,8 @@ https://zhuanlan.zhihu.com/p/35050923
 
 # OCR
 
+光学字符识别（Optical Character Recognition, OCR），是指对文本资料的图像文件进行分析识别处理，获取文字及版面信息的过程。
+
 ## tesseract
 
 linux下可以使用tesseract作为OCR工具。安装方法：
@@ -347,6 +349,10 @@ linux下可以使用tesseract作为OCR工具。安装方法：
 https://mp.weixin.qq.com/s/h7HVyGbmtLmNVJp4p0rCRQ
 
 字符识别(OCR)相关工具/库/教材/论文等资源整理
+
+https://mp.weixin.qq.com/s/WmsHrTIMJhSt8MtFO7-yXA
+
+证件全文本OCR技术，了解一下
 
 https://zhuanlan.zhihu.com/p/21344595
 
