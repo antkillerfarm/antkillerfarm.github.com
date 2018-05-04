@@ -202,6 +202,10 @@ https://mp.weixin.qq.com/s/OkZdmBvSeMEsZbJyoZQvBQ
 
 深度学习+基因组学：破译人类30亿碱基对
 
+https://mp.weixin.qq.com/s/RBBdPLvSYy5Ss4mOU-in4Q
+
+用深度学习方法修复医学图像数据集
+
 ## 图结构
 
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw

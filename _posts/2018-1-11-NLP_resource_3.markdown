@@ -310,3 +310,7 @@ https://mp.weixin.qq.com/s/v8azzXP1Kl5jnRCFpVdBGg
 
 语义分析的方法简述二
 
+https://mp.weixin.qq.com/s/QFDHxI2Yuezc7ypZ5MURHw
+
+神经语义解析的结构化表示学习
+

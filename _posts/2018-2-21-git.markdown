@@ -207,6 +207,37 @@ http://www.cnblogs.com/sdgf/p/6237847.html
 
 git换行符LF与CRLF转换问题
 
+## 下载单个文件夹
+
+使用Git拉去github上的一些开源项目，无比方便，但是有些项目比较庞大，而我们只想拉取其中指定的一部分文件夹或者文件，那就需要我们另外动些手脚了。
+
+1.使用SVN。
+
+需要修改URL：
+
+https://github.com/Sarasra/models/tree/master/research/capsules
+
+将`/tree/master/`换成`/trunk/`即可。
+
+2.使用Sparse checkout。
+
+{% highlight bash %}
+git init
+git remote add -f origin <url>
+git config core.sparsecheckout true
+echo “libs” >> .git/info/sparse-checkout
+{% endhighlight %}
+
+参考：
+
+https://blog.csdn.net/deeplies/article/details/52754980
+
+如何在github上下载单个文件夹？
+
+https://www.zhihu.com/question/25369412
+
+如何从GitHub上下载单个文件夹？
+
 ## Git Server
 
 ### Bonobo Git Server

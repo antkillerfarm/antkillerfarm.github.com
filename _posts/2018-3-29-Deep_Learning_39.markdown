@@ -250,6 +250,10 @@ https://zhuanlan.zhihu.com/p/34042498
 
 深度解密换脸应用Deepfake
 
+https://mp.weixin.qq.com/s/gvPTNtrd5Du9Oablp3jZYw
+
+如何使用DeepFake实现视频换脸
+
 https://mp.weixin.qq.com/s/uJEGXNvBVJfsxYJUQCz4DQ
 
 DA-GAN技术：计算机帮你创造奇妙“新物种”

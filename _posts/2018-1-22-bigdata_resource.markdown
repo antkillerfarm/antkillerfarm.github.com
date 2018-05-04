@@ -6,6 +6,14 @@ category: resource
 
 # 大数据平台参考资源
 
+https://dzone.com/
+
+这是一个大数据方面的资源网站，但是是英文的
+
+https://mp.weixin.qq.com/s/giF05uBffq6WKHnTUqUPvg
+
+这是dzone中一些资源的列表
+
 http://v.kuaidadi.com/
 
 滴滴快的大数据平台
@@ -418,4 +426,7 @@ https://mp.weixin.qq.com/s/6Nr7LF9VxYQ4NlLlk8bCVw
 
 不了解边缘计算，你可能就要被“边缘”了
 
+https://mp.weixin.qq.com/s/oYiQEMelkXHbT3ke2BmHOw
+
+如何逐步去构建一个大型网站系统
 

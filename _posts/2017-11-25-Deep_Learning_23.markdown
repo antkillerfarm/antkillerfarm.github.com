@@ -186,6 +186,12 @@ https://vsubhashini.github.io/s2vt.html
 
 ![](/images/article/S2VTarchitecture.png)
 
+参考：
+
+https://mp.weixin.qq.com/s/HqffHVMKJkA6H1E9ItQU4A
+
+《sequence to sequence: video to text》视频描述的全文翻译
+
 ## 《Long-term Recurrent Convolutional Networks for Visual Recognition and Description》
 
 Long-term Recurrent Convolutional Networks是LSTM的一种应用方式，它结合了LSTM、CNN、CRF等不同网络组件。

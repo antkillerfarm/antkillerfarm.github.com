@@ -128,6 +128,20 @@ Theano被同样基于计算图的TensorFlow淘汰。2017年9月停止更新。
 
 Torch相对变动最小，它被PyTorch替代。这更可以看作是python对于lua的胜利。
 
+## TFLite
+
+Tensorflow源代码中自带的toco工具，可用于生成一个可供TensorFlow Lite框架使用的tflite文件。
+
+代码：
+
+https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/lite/toco
+
+参考：
+
+https://www.jianshu.com/p/fa204a54a956
+
+生成TFLite模型文件
+
 ## blog
 
 http://www.jianshu.com/u/eaec1fc422e9
