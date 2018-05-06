@@ -234,3 +234,25 @@ https://mp.weixin.qq.com/s/_w4IIRY6LwqehpDlEXt90A
 
 牛津大学提出神经网络新训练法：用低秩结构增强网络压缩和对抗稳健性
 
+https://mp.weixin.qq.com/s/d4N-Xz0NImb5khLup5DmpQ
+
+让机器“察言作画”：从语言到视觉
+
+https://mp.weixin.qq.com/s/0JgwBizaCwvPP9TfLKTang
+
+密歇根大学&谷歌提出TAL-Net：将Faster R-CNN泛化至视频动作定位中
+
+https://mp.weixin.qq.com/s/_1rKAj-KOs4P8WnKzen64w
+
+传统方法已经Out了？OpenAI提出全新辩论模式训练AI
+
+https://zhuanlan.zhihu.com/p/36479489
+
+图像检索（一）：因缘际会与前瞻
+
+https://mp.weixin.qq.com/s/Mk_EkwTYK2141cU9zC1hvQ
+
+合成逼真图像，试试港中大&英特尔的半参数方法
+
+
+

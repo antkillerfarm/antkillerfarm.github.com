@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenVX, NVIDIA, NN中间语言
+title:  OpenVX, 运算加速库, NVIDIA, NN中间语言
 category: AI 
 ---
 
@@ -112,6 +112,8 @@ ComputeCpp是Codeplay公司提供的SYCL接口的实现。它除了支持OpenCL�
 
 https://www.codeplay.com/products/computesuite/computecpp
 
+# 运算加速库
+
 ## MKL
 
 Intel Math Kernel Library是一套经过高度优化和广泛线程化的数学例程，专为需要极致性能的科学、工程及金融等领域的应用而设计。
@@ -135,6 +137,20 @@ Intel的Neon专为DL设计。
 官网：
 
 https://ai.intel.com/neon/
+
+## OpenACC
+
+官网：
+
+https://www.openacc.org/
+
+## PGI
+
+PGI是由The Portland Group开发的并行计算库，但后者已于2013年被NVIDIA收购。
+
+官网：
+
+https://www.pgroup.com/
 
 # HSA
 

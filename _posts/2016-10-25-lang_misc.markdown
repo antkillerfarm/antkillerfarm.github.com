@@ -216,6 +216,10 @@ gridslides是一个用于制作slide的tex包。
 
 https://github.com/minad/gridslides
 
+安装依赖：
+
+`sudo apt install biber texlive-latex-extra texlive-fonts-extra texlive-extra-utils`
+
 ## 参考
 
 https://www.zhihu.com/question/40763253

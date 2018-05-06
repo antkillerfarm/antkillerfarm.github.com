@@ -246,24 +246,6 @@ http://www.matrix67.com/blog/archives/4570
 
 再谈Julia集与Mandelbrot集
 
-## 贝叶斯线性回归
-
-https://mp.weixin.qq.com/s/szTmHY-Yvn7N3s_GzTDiEA
-
-解开贝叶斯黑暗魔法：通俗理解贝叶斯线性回归
-
-https://mp.weixin.qq.com/s/1JSxjkKEUlWOzXCQPTve3A
-
-贝叶斯线性回归简介
-
-## 金融模型
-
-Capital asset pricing model
-
-Fama–French three-factor model
-
-Carhart four-factor model
-
 ## LSM (Log Structured Merge)
 
 十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面之一就是它所使用的文件组织方式，这个方法更一般的名字叫 Log Structured-Merge Tree。

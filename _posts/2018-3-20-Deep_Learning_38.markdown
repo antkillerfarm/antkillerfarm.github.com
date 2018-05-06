@@ -200,3 +200,7 @@ https://zhuanlan.zhihu.com/p/36375292
 
 最前沿：当我们以为Rainbow就是Atari游戏的巅峰时，Ape-X出来把Rainbow秒成了渣！
 
+https://mp.weixin.qq.com/s/KqLCTSYk1C0wYpJw-hpc1g
+
+论强化学习和概率推断的等价性：一种全新概率模型
+

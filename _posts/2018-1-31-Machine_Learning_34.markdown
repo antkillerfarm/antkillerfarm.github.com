@@ -256,25 +256,9 @@ http://www.doc88.com/p-7082821463697.html
 
 改进的热传导和物质扩散混合推荐算法
 
-# 强连通分量算法
-
-http://ishare.iask.sina.com.cn/f/34626295.html
-
-矩阵不可约的充要条件
-
-http://www.cnblogs.com/saltless/archive/2010/11/08/1871430.html
-
-求强连通分量的Tarjan算法
-
-http://blog.csdn.net/dm_vincent/article/details/8554244
-
-求解强连通分量算法之---Kosaraju算法
-
-http://www.cnblogs.com/luweiseu/archive/2012/07/14/2591370.html
-
-强连通分支算法--Kosaraju算法、Tarjan算法和Gabow算法
-
 # 垃圾筐
+
+Introspective Neural Networks
 
 高斯背景
 

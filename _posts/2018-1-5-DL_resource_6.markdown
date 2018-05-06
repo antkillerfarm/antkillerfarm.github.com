@@ -126,6 +126,10 @@ https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg
 
 深度离散哈希算法，可用于图像检索！
 
+https://mp.weixin.qq.com/s/XUYJub0559wwQ9H1wA_SAg
+
+机器学习时代的哈希算法，将如何更高效地索引数据
+
 https://mp.weixin.qq.com/s/VSQEFD2fQVrjlJ-LNn0CGg
 
 李飞飞等人提出MentorNet：让深度神经网络克服大数据中的噪声

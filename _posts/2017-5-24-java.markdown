@@ -282,7 +282,7 @@ sbt支持：
 
 中文教程：
 
-http://www.cbi.pku.edu.cn/chinese/documents/perl/index.htm
+http://www.runoob.com/perl/perl-tutorial.html
 
 perl的语法和C差别不算太大，好多语法大致上从关键字也可以猜出来。这里仅对一些符号做个简短的说明。
 
@@ -293,6 +293,8 @@ perl的语法和C差别不算太大，好多语法大致上从关键字也可以
 `&name`：函数name。这种情况下，name的定义在使用之后。如果name的定义在使用之前，`&`可省略。
 
 `%name`：哈希数组name。
+
+perl的包管理器叫做cpan。这实际上也是该工具网站的名字。
 
 # Kotlin
 

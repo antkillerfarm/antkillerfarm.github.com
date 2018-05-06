@@ -128,6 +128,10 @@ http://www.cosmosshadow.com/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/2016/03/08/A
 
 Attention
 
+https://mp.weixin.qq.com/s/b5d_jNNDB_a_VFdT3J3Vog
+
+通俗易懂理解Attention机制
+
 http://geek.csdn.net/news/detail/50558
 
 深度学习和自然语言处理中的attention和memory机制

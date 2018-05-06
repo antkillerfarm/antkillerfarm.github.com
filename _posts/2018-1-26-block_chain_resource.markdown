@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  区块链参考资源, CPU, 图像渲染, 硬件, 数据库
+title:  区块链参考资源, CPU, 图像渲染, 硬件, 雷达, 数据库
 category: resource 
 ---
 
@@ -306,10 +306,6 @@ https://zhuanlan.zhihu.com/p/33956771
 
 # 硬件
 
-https://mp.weixin.qq.com/s/ZPAE1CwhfD0PNT1MJ8erIw
-
-一种用于汽车防撞雷达的波束赋形阵列天线
-
 https://mp.weixin.qq.com/s/NwptdxWiN4SadjUQafA5rw
 
 高端MEMS固体波动陀螺的发展与应用
@@ -321,6 +317,8 @@ https://mp.weixin.qq.com/s/ZexnsNmqsD2yq-7YNASohw
 https://mp.weixin.qq.com/s/1XmbkoRkXUtmR0pnENhfGA
 
 基于高速DDFS的高精度DAC的设计
+
+# 雷达
 
 https://mp.weixin.qq.com/s/vmQKK9cEbBRIvd2uOzmC1w
 
@@ -334,9 +332,53 @@ https://mp.weixin.qq.com/s/udl4hQQXY4FQDPLsWERhkg
 
 史上最全最详细无线通信频率分配表
 
+https://mp.weixin.qq.com/s/ZPAE1CwhfD0PNT1MJ8erIw
+
+一种用于汽车防撞雷达的波束赋形阵列天线
+
 https://mp.weixin.qq.com/s/77BgUiwjQ8ryGNRjMCiBoQ
 
 “雷达电子战”常用公式
+
+https://mp.weixin.qq.com/s/H4mdQIz1iRzC5LV6dwA55Q
+
+雷达发射机和接收机
+
+https://mp.weixin.qq.com/s/UuiRP0vvNmk8gkPLqrvxQw
+
+参数估计和目标跟踪
+
+https://mp.weixin.qq.com/s/pl2tcjFeJdpKv2Z7QzZpDw
+
+电子扫描阵列天线（ESA）
+
+https://mp.weixin.qq.com/s/683EzxZXLNxbkajtDs0Qpg
+
+多普勒效应及其成因
+
+https://mp.weixin.qq.com/s/t6jGgiB1gG_LsD3dE6o27w
+
+多普勒滤波器组的基本知识
+
+https://mp.weixin.qq.com/s/ZKNuj3QRUj45vo3MHiHlYg
+
+合成孔径雷达系统
+
+https://mp.weixin.qq.com/s/0GXku08Bwzortc52JEobKA
+
+这10多种电子干扰技术，你都知道吗？
+
+https://mp.weixin.qq.com/s/B8IslH8QYWR1ZxdsBgxeoA
+
+MIMO雷达基础理解
+
+https://mp.weixin.qq.com/s/_VK-PCRQLM8x5w7xufe7ww
+
+DRFM 数字射频存储技术
+
+https://mp.weixin.qq.com/s/ftD1yRed4wvdetcMy90aYg
+
+调频连续波雷达(FMCW)测距/测速原理
 
 # 数据库
 

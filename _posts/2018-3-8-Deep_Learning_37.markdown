@@ -252,6 +252,10 @@ https://blog.csdn.net/xiamentingtao/article/details/50908190
 
 Facial Landmark Detection(人脸特征点检测)
 
+https://mp.weixin.qq.com/s/i4HdS-lCrsv9YR39Hja8ow
+
+深度人脸表情识别技术综述，没有比这更全的了
+
 # 迁移学习
 
 >龙明盛，清华本科（2008）+博士（2016），迁移学习的最早提出者之一。清华大学副教授，博导。   

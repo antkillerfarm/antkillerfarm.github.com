@@ -166,6 +166,10 @@ https://silencezjl.coding.me/2017/05/01/%E5%81%B7%E4%B8%80%E6%B3%A2%E8%B5%84%E6%
 
 各种TensorFlow资源
 
+https://mp.weixin.qq.com/s/haj9lS59yWtk-C75EtGIcw
+
+深度学习工程模板：简化加载数据、构建网络、训练模型和预测样本的流程
+
 https://github.com/zsdev2015/machine_learning
 
 某国内小牛写的中文入门demo，注释非常详细
@@ -418,34 +422,4 @@ https://github.com/ZhuanZhiCode/TensorFlow-Eager-Execution-Examples
 
 Eager Execution的代码示例
 
-https://mp.weixin.qq.com/s/8Hrq_z8s_5ms6Q_6OOaU-g
 
-如何使用TensorFlow和自编码器模型生成手写数字
-
-https://mp.weixin.qq.com/s/vbBNYzKq6AnsDTy8lFsKAw
-
-TensorFlow RNN深度学习BiLSTM+CRF实现sequence labeling序列标注
-
-https://mp.weixin.qq.com/s/knw7yuUxHe-qeCLfj20onw
-
-Bayesian GAN的TensorFlow实现
-
-https://mp.weixin.qq.com/s/Sxui9CvdGocIxVG2FM4JtQ
-
-基于tensorflow使用CNN-RNN进行中文文本分类！
-
-https://mp.weixin.qq.com/s/X7ISLRMy5cddpmO5mev4MA
-
-自创数据集，使用TensorFlow预测股票入门
-
-https://mp.weixin.qq.com/s/65HiEwCyzeA_d9flPBcpLQ
-
-谷歌正式发布TensorFlowLite，半监督跨平台快速训练ML模型
-
-http://www.jianshu.com/p/1da012a83b74
-
-利用TensorFlow实现排序和搜索算法
-
-https://mp.weixin.qq.com/s/oEqMjOTj8xpd3sg60ZUhqA
-
-TensorFlow的c++实践及各种坑

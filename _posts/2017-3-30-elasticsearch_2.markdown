@@ -361,6 +361,10 @@ https://mp.weixin.qq.com/s/mD732PqDtqYdFZSxZWtvvg
 
 从1维到6维，一文读懂多维数据可视化策略
 
+https://zhuanlan.zhihu.com/c_122608198
+
+一个可视化方面的专栏
+
 ## howmuch.net
 
 howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：
@@ -379,3 +383,38 @@ Gephi是一个针对图和网络的可视化工具。
 
 https://gephi.org/
 
+## 贝叶斯线性回归
+
+https://mp.weixin.qq.com/s/szTmHY-Yvn7N3s_GzTDiEA
+
+解开贝叶斯黑暗魔法：通俗理解贝叶斯线性回归
+
+https://mp.weixin.qq.com/s/1JSxjkKEUlWOzXCQPTve3A
+
+贝叶斯线性回归简介
+
+## 金融模型
+
+Capital asset pricing model
+
+Fama–French three-factor model
+
+Carhart four-factor model
+
+# 强连通分量算法
+
+http://ishare.iask.sina.com.cn/f/34626295.html
+
+矩阵不可约的充要条件
+
+http://www.cnblogs.com/saltless/archive/2010/11/08/1871430.html
+
+求强连通分量的Tarjan算法
+
+http://blog.csdn.net/dm_vincent/article/details/8554244
+
+求解强连通分量算法之---Kosaraju算法
+
+http://www.cnblogs.com/luweiseu/archive/2012/07/14/2591370.html
+
+强连通分支算法--Kosaraju算法、Tarjan算法和Gabow算法

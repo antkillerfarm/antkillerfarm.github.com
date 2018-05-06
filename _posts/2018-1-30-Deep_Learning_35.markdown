@@ -178,6 +178,10 @@ https://mp.weixin.qq.com/s/2RNLG4KU81z7thk3CLwD9Q
 
 商汤科技 & 中科院自动化所：视觉跟踪之端到端的光流相关滤波
 
+https://zhuanlan.zhihu.com/p/36463844
+
+目标跟踪新高度ECO+：解除深度特征被封印的力量
+
 # FlowNet
 
 论文：

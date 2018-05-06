@@ -164,7 +164,7 @@ http://graphics.stanford.edu/projects/brookgpu/
 | OpenMP | 移植改动少 | CPU多线程而已，和GPU无关。 |
 | Metal | for iOS | - |
 
-其他的并行计算框架还有：OpenACC、AMD stream。
+其他的并行计算框架还有：OpenACC、AMD stream、PGI。
 
 NVIDIA相关产品线：
 

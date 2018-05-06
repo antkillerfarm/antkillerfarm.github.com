@@ -18,6 +18,23 @@ Capsule是深度学习先驱Hinton于2017年提出的概念。
 
 https://github.com/Sarasra/models/tree/master/research/capsules
 
+讲述Capsule的blog已经有很多了，但论通俗，还得是苏剑林的这三篇blog：
+
+http://kexue.fm/archives/4819/
+
+揭开迷雾，来一顿美味的“Capsule”盛宴
+
+https://kexue.fm/archives/5112/
+
+再来一顿贺岁宴：从K-Means到Capsule
+
+https://kexue.fm/archives/5155/
+
+三味Capsule：矩阵Capsule与EM路由
+
+老规矩，这里依旧是整理摘要。
+
+## 
 
 
 
@@ -94,18 +111,6 @@ https://mp.weixin.qq.com/s/k3WV7qN37r-r3VBJsrjB1A
 https://mp.weixin.qq.com/s/AchyBBTZ3X3zYSM8-9WTrA
 
 Capsule Network在TIMIT语音识别中的实践（一）
-
-http://kexue.fm/archives/4819/
-
-揭开迷雾，来一顿美味的“Capsule”盛宴
-
-https://kexue.fm/archives/5112/
-
-再来一顿贺岁宴：从K-Means到Capsule
-
-https://kexue.fm/archives/5155/
-
-三味Capsule：矩阵Capsule与EM路由
 
 https://zhuanlan.zhihu.com/p/30830319
 

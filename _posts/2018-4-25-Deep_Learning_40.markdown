@@ -164,3 +164,7 @@ https://mp.weixin.qq.com/s/JnW7RnOQKG-dPOOAQeOmSA
 
 当前深度神经网络模型压缩和加速都有哪些方法？
 
+https://mp.weixin.qq.com/s/YUg2dZZhDSsRpSftdNfiIQ
+
+极致的优化：智能手机是如何处理大型神经网络的
+
