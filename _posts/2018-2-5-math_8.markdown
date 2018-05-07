@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（八）——随机过程
+title:  数学狂想曲（八）——核弹当量问题, Lanchester战争模型, 随机过程
 category: math 
 ---
 
@@ -43,6 +43,48 @@ The Expansion of the Fireball of an Explosion
 实测值2.46和理论值符合的非常好。
 
 这里的推导和热力学统计其实没多大关系，算是本人学习玻尔兹曼分布的副产品吧。
+
+# Lanchester战争模型
+
+第一次世界大战期间，英国工程师Lanchester针对战争问题建模，以预测战争的结果。
+
+>Frederick William Lanchester，1868～1946，被誉为英国三大最杰出汽车工程师之一。英国皇家学会会员。
+
+该模型包含了两个子模型：
+
+**Lanchester's linear law**：假设双方的装备能力相当，则单位时间内的损失，和战线的长度成正比，且双方损失的数量相等。这个模型主要适用于远程兵器威力有限的古代战争，古代战争以短兵相接的肉搏战为主。而肉搏战的特点就是**一对一**。
+
+**Lanchester's square law**：现代战争越来越立体化，因此是个**多对多**的模型。
+
+首先，我们假设A军在战斗开始后的t时刻有$$x(t)$$人，B军在战斗开始后的t时刻有$$y(t)$$人，且每支军队的减员均由敌方攻击造成，减员速率与敌方人数成正比。忽略增员部队与非战斗减员，我们可以根据双方的减员速率列出如下的微分方程组：
+
+$$\frac{\mathrm{d}x}{\mathrm{d}t}=-by\tag{1}$$
+
+$$\frac{\mathrm{d}y}{\mathrm{d}t}=-cx\tag{2}$$
+
+在上述微分方程组中，b与c分别代表B军与A军的单兵作战效率，即每个战士在单位时间内干掉的敌军数量。我们可以用这个量来代表士兵的“质量”或“效率”，显然这个量与军队的武器水平，指挥员的指挥水平与战士的单兵素质有关。
+
+用公式2除以公式1，得：
+
+$$\cfrac{\cfrac{\mathrm{d}y}{\mathrm{d}t}}{\cfrac{\mathrm{d}x}{\mathrm{d}t}}=\frac{-cx}{-by}$$
+
+$$\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{cx}{by}$$
+
+$$by\mathrm{d}y=cx\mathrm{d}x$$
+
+两边同时求t的定积分：
+
+$$\int_{t_0}^t by(t)\mathrm{d}y(t)=\int_{t_0}^t cx(t)\mathrm{d}x(t)$$
+
+
+
+Lanchester首次给出了战争模型之后，给战争建模成为了一个科学问题，类似的模型还有Salvo combat model。
+
+参考：
+
+https://mp.weixin.qq.com/s/npprTz_GRgdv3BK7ff2grg
+
+Lanchester战争模型：用可分离变量的微分方程占卜战事
 
 # 随机过程
 
@@ -206,7 +248,7 @@ https://zhuanlan.zhihu.com/p/36117802
 
 《Learn to Represent Programs with Graphs》阅读笔记。这篇论文讲述了DL在程序代码纠错方面的应用。
 
-https://mp.weixin.qq.com/s/FQW_sv0bUo2ZX3NXRC-pcw
+https://zhuanlan.zhihu.com/p/36520673
 
 让机器“观色”：真实世界的表情识别
 
@@ -229,30 +271,4 @@ Spotlight论文：解耦神经网络DCNet，性能优于标准CNN
 https://mp.weixin.qq.com/s/IsLlzDWnUXe8LVp4Y1Jb_A
 
 35亿张图像！Facebook基于弱监督学习刷新ImageNet基准测试记录
-
-https://mp.weixin.qq.com/s/_w4IIRY6LwqehpDlEXt90A
-
-牛津大学提出神经网络新训练法：用低秩结构增强网络压缩和对抗稳健性
-
-https://mp.weixin.qq.com/s/d4N-Xz0NImb5khLup5DmpQ
-
-让机器“察言作画”：从语言到视觉
-
-https://mp.weixin.qq.com/s/0JgwBizaCwvPP9TfLKTang
-
-密歇根大学&谷歌提出TAL-Net：将Faster R-CNN泛化至视频动作定位中
-
-https://mp.weixin.qq.com/s/_1rKAj-KOs4P8WnKzen64w
-
-传统方法已经Out了？OpenAI提出全新辩论模式训练AI
-
-https://zhuanlan.zhihu.com/p/36479489
-
-图像检索（一）：因缘际会与前瞻
-
-https://mp.weixin.qq.com/s/Mk_EkwTYK2141cU9zC1hvQ
-
-合成逼真图像，试试港中大&英特尔的半参数方法
-
-
 

@@ -204,3 +204,7 @@ https://mp.weixin.qq.com/s/KqLCTSYk1C0wYpJw-hpc1g
 
 论强化学习和概率推断的等价性：一种全新概率模型
 
+https://mp.weixin.qq.com/s/FROyReDu7i5amGv-J4cmtg
+
+“世界模型”实现，一步步让机器掌握赛车和躲避火球的技能
+

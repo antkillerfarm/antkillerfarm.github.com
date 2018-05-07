@@ -314,3 +314,7 @@ https://mp.weixin.qq.com/s/QFDHxI2Yuezc7ypZ5MURHw
 
 神经语义解析的结构化表示学习
 
+https://mp.weixin.qq.com/s/5VrZTMlNxbgZmaeOxBps_w
+
+Sentiment Analysis情感分析
+

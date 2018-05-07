@@ -207,6 +207,14 @@ http://blog.csdn.net/Star_Bob/article/details/47808499
 
 Gensim Word2vec使用教程
 
+https://mp.weixin.qq.com/s/Vawp4ywOAxX0Acwm9oyKEg
+
+利用NLTK和Gensim进行主题建模
+
+https://mp.weixin.qq.com/s/doaJJa04U_aiRgvfiUh9Eg
+
+15分钟入门NLP神器—Gensim
+
 ### GloVe
 
 GloVe:Global Vectors for Word Representation

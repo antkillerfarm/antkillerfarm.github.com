@@ -217,6 +217,10 @@ http://mp.weixin.qq.com/s/21CN4hAA6p7ZjWsO1sT2rA
 
 一文看懂生成式对抗网络GANs：介绍指南及前景展望
 
+https://mp.weixin.qq.com/s/Lll9e5bCVwxdD0-Q2wamKg
+
+一文详解生成对抗网络(GAN)的原理
+
 https://mp.weixin.qq.com/s/YLys6L9WT7eCC-xGr1j0Iw
 
 带多分类判别器的GAN模型
