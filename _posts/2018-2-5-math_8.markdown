@@ -76,9 +76,9 @@ $$by\mathrm{d}y=cx\mathrm{d}x$$
 
 $$\int_{t_0}^t by(t)\mathrm{d}y(t)=\int_{t_0}^t cx(t)\mathrm{d}x(t)$$
 
+$$b\int_{y_0}^y y\mathrm{d}y=c\int_{x_0}^x x\mathrm{d}x$$
 
-
-Lanchester首次给出了战争模型之后，给战争建模成为了一个科学问题，类似的模型还有Salvo combat model。
+Lanchester首次提出战争模型之后，如何给战争建模，从此就成为了一个科学问题，类似的模型还有Salvo combat model。
 
 参考：
 

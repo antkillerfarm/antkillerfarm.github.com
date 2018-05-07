@@ -318,3 +318,7 @@ https://mp.weixin.qq.com/s/5VrZTMlNxbgZmaeOxBps_w
 
 Sentiment Analysis情感分析
 
+https://mp.weixin.qq.com/s/TUTAZe_Bw7SsPkja9i7Drg
+
+基于叙事事理图谱和可扩展图神经⽹络的脚本事件预测模型
+

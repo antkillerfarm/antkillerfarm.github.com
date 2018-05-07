@@ -84,6 +84,12 @@ https://zhuanlan.zhihu.com/p/23648888
 
 语音识别之解码器技术简介
 
+# 人类语言
+
+https://wenku.baidu.com/view/6123ba2f0066f5335a8121fe.html
+
+人声频率范围及各频段音色效果
+
 # DTW
 
 Dynamic Time Warping是Vintsiuk于1968年提出的算法。

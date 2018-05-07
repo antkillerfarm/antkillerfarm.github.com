@@ -208,3 +208,7 @@ https://mp.weixin.qq.com/s/FROyReDu7i5amGv-J4cmtg
 
 “世界模型”实现，一步步让机器掌握赛车和躲避火球的技能
 
+https://mp.weixin.qq.com/s/curzH8WrFyl5WWT4lDfpwQ
+
+Chrome暗藏的恐龙跳一跳，已经被AI轻松掌握了
+
