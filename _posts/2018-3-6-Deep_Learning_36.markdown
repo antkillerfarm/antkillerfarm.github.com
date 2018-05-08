@@ -204,6 +204,10 @@ https://mp.weixin.qq.com/s/nboZ6p_l30L__FJNyz6Ohw
 
 深度学习如何应用在广告、推荐及搜索业务？
 
+https://zhuanlan.zhihu.com/p/36564514
+
+基于深度学习的评论文本表示论文引介
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

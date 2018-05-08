@@ -422,6 +422,10 @@ https://mp.weixin.qq.com/s/qpqqeSaRwQyBJlo3P25q6g
 
 如何从零开始构建深度学习项目？这里有一份详细的教程
 
+https://mp.weixin.qq.com/s/AEyr7FNeIHprprs9k7HE9w
+
+这些神经网络调参细节，你都了解了吗
+
 ## 算法
 
 http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww

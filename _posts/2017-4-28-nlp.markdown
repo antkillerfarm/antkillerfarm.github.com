@@ -215,6 +215,20 @@ https://mp.weixin.qq.com/s/doaJJa04U_aiRgvfiUh9Eg
 
 15分钟入门NLP神器—Gensim
 
+## SpaCy
+
+SpaCy是新出来的一个NLP库，对DL的支持较好，可无缝衔接TensorFlow, PyTorch, scikit-learn, Gensim等库。
+
+官网：
+
+https://spacy.io/
+
+参考：
+
+https://mp.weixin.qq.com/s/xQrq1UbnliGPUWdF_lufRw
+
+在Python中使用SpaCy进行文本分类
+
 ### GloVe
 
 GloVe:Global Vectors for Word Representation
@@ -433,24 +447,4 @@ protege软件是斯坦福大学医学院生物信息研究中心基于Java语言
 
 https://protege.stanford.edu/products.php
 
-## Opendial
 
-Opendial是一个基于Java的对话系统。可用于开发聊天机器人。
-
-官网：
-
-http://www.opendial-toolkit.net/
-
-代码：
-
-https://github.com/plison/opendial
-
-参考：
-
-https://github.com/zhangziliang04/OpendialEx
-
-某牛的Opendial
-
-https://github.com/dingdang-robot/dingdang-robot
-
-叮当是一款可以工作在Raspberry Pi上的中文语音对话机器人/智能音箱项目。

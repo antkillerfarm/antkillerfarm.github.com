@@ -78,7 +78,21 @@ $$\int_{t_0}^t by(t)\mathrm{d}y(t)=\int_{t_0}^t cx(t)\mathrm{d}x(t)$$
 
 $$b\int_{y_0}^y y\mathrm{d}y=c\int_{x_0}^x x\mathrm{d}x$$
 
-Lanchester首次提出战争模型之后，如何给战争建模，从此就成为了一个科学问题，类似的模型还有Salvo combat model。
+$$by^2-by_0^2=cx^2-cx_0^2$$
+
+$$by^2-cx^2=by_0^2-cx_0^2=K$$
+
+我们可以由b，c，与双方初始人数$$y_0，x_0$$计算出K值。显然：
+
+当K=0时，A、B平手。
+
+当K>0时，B胜。
+
+当K<0时，A胜。
+
+Lanchester模型是一个连续模型，但实际战斗，尤其是海战，一般是离散模型，这时就要用到Salvo combat model了。
+
+>比如中途岛战役，美国在击沉日本3艘航母之后，遭到日本飞龙号的反击，损失了约克城号，直到第二波攻击，才最终将飞龙号击沉。
 
 参考：
 

@@ -362,3 +362,7 @@ https://mp.weixin.qq.com/s/UIiLl8J1DphZverFv1FwQQ
 
 如何用技术提升3倍反套现识别量？支付宝第五代风控引擎AlphaRisk模型解析
 
+https://mp.weixin.qq.com/s/1AeuKy2sSCtjURTy-CG6pQ
+
+运筹学在航空业有哪些应用？
+

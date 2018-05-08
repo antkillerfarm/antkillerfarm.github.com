@@ -6,6 +6,28 @@ category: AI
 
 # NLP
 
+## Opendial
+
+Opendial是一个基于Java的对话系统。可用于开发聊天机器人。
+
+官网：
+
+http://www.opendial-toolkit.net/
+
+代码：
+
+https://github.com/plison/opendial
+
+参考：
+
+https://github.com/zhangziliang04/OpendialEx
+
+某牛的Opendial
+
+https://github.com/dingdang-robot/dingdang-robot
+
+叮当是一款可以工作在Raspberry Pi上的中文语音对话机器人/智能音箱项目。
+
 ## TextInfoExp
 
 TextInfoExp是某网友提供的自然语言处理相关实验（基于sougou数据集），包含文本特征提取（TF-IDF），文本分类，文本聚类，word2vec训练词向量及同义词词林中文词语相似度计算、文档自动摘要，信息抽取，情感分析与观点挖掘等。
@@ -246,6 +268,10 @@ http://www.matrix67.com/blog/archives/4570
 
 再谈Julia集与Mandelbrot集
 
+https://mp.weixin.qq.com/s/3svGvbk0-ek5tQCWJ9ii4A
+
+读懂相对论：从弯曲空间的几何开始
+
 ## LSM (Log Structured Merge)
 
 十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面之一就是它所使用的文件组织方式，这个方法更一般的名字叫 Log Structured-Merge Tree。
@@ -322,6 +348,26 @@ http://svn.code.sf.net/p/cmusphinx/code/trunk/cmudict/
 原理参见《深度学习（三十）》中的Deep speech 2。
 
 精度再次提高到96%。如果不做第1步的修改的话，精度大概是94%，但计算快了很多，大概2个小时。
+
+## fftw
+
+fftw是一个C语言的FFT库，由MIT的Matteo Frigo和Steven G. Johnson编写。
+
+官网：
+
+http://fftw.org/
+
+代码：
+
+https://github.com/FFTW/fftw3
+
+然而，由于fftw的代码是自动生成的，因此这个代码库实际上只供专业人士使用。普通用户直接在官网下载源代码包即可。
+
+参考：
+
+https://blog.csdn.net/congwulong/article/details/7576012
+
+FFTW中文参考
 
 ## 参考
 

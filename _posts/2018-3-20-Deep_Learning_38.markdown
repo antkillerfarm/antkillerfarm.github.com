@@ -212,3 +212,7 @@ https://mp.weixin.qq.com/s/curzH8WrFyl5WWT4lDfpwQ
 
 Chrome暗藏的恐龙跳一跳，已经被AI轻松掌握了
 
+https://mp.weixin.qq.com/s/1b3_AiFhwXqxb7FozdRYIQ
+
+最in强化学习+NLP技术分享会
+

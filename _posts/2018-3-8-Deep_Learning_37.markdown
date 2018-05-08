@@ -256,6 +256,10 @@ https://mp.weixin.qq.com/s/i4HdS-lCrsv9YR39Hja8ow
 
 深度人脸表情识别技术综述，没有比这更全的了
 
+https://mp.weixin.qq.com/s/S_T0tYhZ1pjoIMysP0aVWA
+
+美军AI黑科技：黑暗中也能准确识别人脸，谁该为此感到紧张？
+
 # 迁移学习
 
 >龙明盛，清华本科（2008）+博士（2016），迁移学习的最早提出者之一。清华大学副教授，博导。   

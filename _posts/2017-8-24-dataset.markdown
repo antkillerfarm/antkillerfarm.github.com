@@ -268,3 +268,7 @@ https://mp.weixin.qq.com/s/NXI9Bp4xxbZCQqAddK1HgA
 
 Google开放最大目标检测数据集，还要为它举办AI挑战赛
 
+https://mp.weixin.qq.com/s/eAqtNDT7LDdMg_41QWJ5iA
+
+DuReader：百度大规模的中文机器阅读理解数据集
+
