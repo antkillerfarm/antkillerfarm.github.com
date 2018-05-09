@@ -406,3 +406,6 @@ https://mp.weixin.qq.com/s/tPzBlQGxGq1WEnXz5ggpxg
 
 sysbench在美团点评中的应用
 
+https://mp.weixin.qq.com/s/lJfIkLQaZnN4e9DxX163SA
+
+一款可能解放DBA的分布式数据库RadonDB的体验之旅

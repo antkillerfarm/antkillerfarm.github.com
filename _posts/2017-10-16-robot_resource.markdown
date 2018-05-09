@@ -174,6 +174,10 @@ https://mp.weixin.qq.com/s/KEdXmwUGHysy_LZAfdkmlw
 
 Apollo的分布式可扩展计算平台探索
 
+https://mp.weixin.qq.com/s/MfTsH9mowuWFA54z7vs5fA
+
+Apollo Control模块源码解析
+
 ## 文章
 
 http://blog.exbot.net/

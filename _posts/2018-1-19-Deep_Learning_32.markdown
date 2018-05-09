@@ -142,6 +142,10 @@ https://mp.weixin.qq.com/s/9DXMqiPIK5P5wzUMT7_Vfw
 
 基于交替方向法的循环神经网络多比特量化
 
+https://mp.weixin.qq.com/s/PDeChj1hQqUrZiepxXODJg
+
+ICLR oral：清华提出离散化架构WAGE，神经网络训练推理合二为一
+
 # 视频目标分割
 
 视频目标分割任务和语义分割有两个基本区别：

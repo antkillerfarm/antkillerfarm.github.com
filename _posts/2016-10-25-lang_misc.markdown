@@ -172,6 +172,10 @@ TikZ是一个用于绘图的Tex包。
 
 `sudo apt install qtikz texlive-fonts-recommended`
 
+官方文档：
+
+https://stuff.mit.edu/afs/athena/contrib/tex-contrib/beamer/pgf-1.01/doc/generic/pgf/version-for-tex4ht/en/pgfmanual.html
+
 在线编辑：
 
 https://www.sharelatex.com/
@@ -196,9 +200,13 @@ http://www.texample.net/tikz/examples/
 
 各种tikz示例的网站
 
-http://www.fuzihao.org/blog/2015/08/11/TikZ%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/
+https://en.wikibooks.org/wiki/LaTeX/PGF/TikZ
 
 TikZ入门教程
+
+http://www.fuzihao.org/blog/2015/08/11/TikZ%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/
+
+另一个TikZ入门教程
 
 http://www.cnblogs.com/wangl393/
 
@@ -207,6 +215,10 @@ http://www.cnblogs.com/wangl393/
 https://sandrocirulli.net/how-to-plot-functions-with-latex/
 
 安装pgfplots
+
+http://www.latexstudio.net/archives/category/tex-graphics/tikz-example
+
+一个tikz的论坛
 
 ## gridslides
 

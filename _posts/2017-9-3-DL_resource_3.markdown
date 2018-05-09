@@ -246,6 +246,10 @@ https://mp.weixin.qq.com/s/b6wIxn1faieAR2ioU-UxTQ
 
 IBM全新机器学习库SnapML：训练提速46倍，40亿样本仅需91.5秒
 
+https://mp.weixin.qq.com/s/SUz2aqz9VM3xnvKUL80y1w
+
+IBM、哈佛联合提出Seq2Seq-Vis：机器翻译模型的可视化调试工具
+
 ## 量子计算 & 遗传算法
 
 https://www.zhihu.com/question/28171555

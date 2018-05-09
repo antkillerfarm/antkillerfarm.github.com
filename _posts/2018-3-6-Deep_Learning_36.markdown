@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十六）——深度推荐系统, Recursive NN, Spatial Transformer Networks, 多任务学习, AutoDL, OCR
+title:  深度学习（三十六）——深度推荐系统, Recursive NN, Spatial Transformer Networks, 多任务学习, AutoDL
 category: DL 
 ---
 
@@ -208,6 +208,10 @@ https://zhuanlan.zhihu.com/p/36564514
 
 基于深度学习的评论文本表示论文引介
 
+https://mp.weixin.qq.com/s/a-lDJuwFYVNupeNhxyXDkA
+
+跨域社交推荐：如何透过用户社交信息“猜你喜欢”？
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512
@@ -333,70 +337,4 @@ https://mp.weixin.qq.com/s/HJ5caV1bQi7qVDeNXZ21qg
 https://zhuanlan.zhihu.com/p/35050923
 
 跬步至千里：揭秘谷歌AutoML背后的渐进式搜索技术
-
-# OCR
-
-光学字符识别（Optical Character Recognition, OCR），是指对文本资料的图像文件进行分析识别处理，获取文字及版面信息的过程。
-
-## tesseract
-
-linux下可以使用tesseract作为OCR工具。安装方法：
-
-`sudo apt install tesseract-ocr libtesseract-dev`
-
-使用方法：
-
-`tesseract ./111.png 1 -l chi_sim+eng`
-
-## 参考
-
-https://mp.weixin.qq.com/s/h7HVyGbmtLmNVJp4p0rCRQ
-
-字符识别(OCR)相关工具/库/教材/论文等资源整理
-
-https://mp.weixin.qq.com/s/WmsHrTIMJhSt8MtFO7-yXA
-
-证件全文本OCR技术，了解一下
-
-https://zhuanlan.zhihu.com/p/21344595
-
-端到端的OCR：验证码识别(LSTM+CTC)
-
-http://www.jianshu.com/p/86489f1afd36
-
-端到端的OCR：基于CNN的实现
-
-http://www.jianshu.com/p/4fadf629895b
-
-端到端的OCR：LSTM＋CTC的实现
-
-https://mp.weixin.qq.com/s/axpA7Y_Rhiols5bDIdc6jg
-
-Tesseract-OCR 3.0.1训练自己的语言库之图像文字识别
-
-http://mp.weixin.qq.com/s/n8C80a3B54FhrCe-GhhcDA
-
-文档扫描：深度神经网络在移动端的实践
-
-https://mp.weixin.qq.com/s/MYhQt9uC16BadiZKWjPTzA
-
-华中科技大学提出多向文本检测方法：基于角定位与区域分割
-
-http://ilovin.me/2017-04-23/tensorflow-lstm-ctc-input-output/
-
-tensorflow LSTM+CTC/warpCTC使用详解
-
-https://mp.weixin.qq.com/s/k0dRu1wx49HTi_oJYJEGPw
-
-阿里提出IncepText：全新多向场景文本检测模块
-
-# CRNN
-
-论文：
-
-《An End-to-End Trainable Neural Network for Image-based Sequence Recognition and Its Application to Scene Text Recognition》
-
-代码：
-
-https://github.com/bgshih/crnn
 
