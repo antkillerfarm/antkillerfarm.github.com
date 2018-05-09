@@ -174,6 +174,10 @@ https://mp.weixin.qq.com/s/88klahIOAfBcA5Rdv70JNg
 
 PyTorch的动态计算图深入浅出
 
+https://mp.weixin.qq.com/s/Mcj9SwC6GZEjXxi55vfsaw
+
+minibatching，数据加载和模型构建
+
 # PaddlePaddle
 
 https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q
