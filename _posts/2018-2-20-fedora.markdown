@@ -201,9 +201,21 @@ https://mp.weixin.qq.com/s/_w4IIRY6LwqehpDlEXt90A
 
 牛津大学提出神经网络新训练法：用低秩结构增强网络压缩和对抗稳健性
 
+https://zhuanlan.zhihu.com/p/36520673
+
+让机器“观色”：真实世界的表情识别
+
 https://mp.weixin.qq.com/s/d4N-Xz0NImb5khLup5DmpQ
 
 让机器“察言作画”：从语言到视觉
+
+https://mp.weixin.qq.com/s/zBNJzajap4Lwb5o_W2A-jw
+
+让机器“析毫剖厘”：图像理解与编辑
+
+https://mp.weixin.qq.com/s/_WOzunt9_I-tDZ1NaCguyA
+
+让机器“答问如流”：从视觉到语言
 
 https://mp.weixin.qq.com/s/0JgwBizaCwvPP9TfLKTang
 
@@ -229,10 +241,6 @@ https://zhuanlan.zhihu.com/p/36527644
 
 Learning with Noise: Enhance Distantly Supervised Relation Extraction with Dynamic Transition Matrix——一种对噪音数据显式建模的方法
 
-https://mp.weixin.qq.com/s/zBNJzajap4Lwb5o_W2A-jw
-
-让机器“析毫剖厘”：图像理解与编辑
-
 https://mp.weixin.qq.com/s/tjnpIYJGmrTLGUsdtBI2Vw
 
 AI设计师“鹿班”核心技术公开：如何1秒设计8000张海报？
@@ -240,4 +248,8 @@ AI设计师“鹿班”核心技术公开：如何1秒设计8000张海报？
 https://mp.weixin.qq.com/s/zeN7rjmAnvh_7BbTmScrZw
 
 细粒度分类你懂吗？——fine-gained image classification
+
+https://mp.weixin.qq.com/s/Ob1ngUEmRgSybcAD5zg0QQ
+
+利用深度学习消去反光
 

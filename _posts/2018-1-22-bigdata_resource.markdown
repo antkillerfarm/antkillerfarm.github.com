@@ -434,3 +434,7 @@ https://mp.weixin.qq.com/s/xlCO__HucTUd_gYNRTueGg
 
 携程基于大数据分析的实时风控体系
 
+https://mp.weixin.qq.com/s/B9zo0zThARAi11hRuJ-AqA
+
+开源实时数据处理系统Pulsar：一套搞定Kafka+Flink+DB
+
