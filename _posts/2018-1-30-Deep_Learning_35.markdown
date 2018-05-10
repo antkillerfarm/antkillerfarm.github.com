@@ -340,6 +340,18 @@ https://mp.weixin.qq.com/s/0n50YO1jIv_mxqe0EeS6kw
 
 综述AI未来：神经科学启发的类脑计算
 
+https://mp.weixin.qq.com/s/5KA7jtlRmnXxijGQhU1k4A
+
+DeepMind哈萨比斯狂推的神经科学，入门需要看什么书？
+
+https://mp.weixin.qq.com/s/TWdeHVCgEf54STvdA1QUPg
+
+DeepMind哈萨比斯长文：伟大的AI离不开神经科学
+
+https://mp.weixin.qq.com/s/8ibcyvyBLYArAMhQElqRzg
+
+Cell研究揭示生物神经元强大新特性，是时候设计更复杂的神经网络了！
+
 # LSM
 
 liquid state machine (LSM)

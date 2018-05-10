@@ -176,6 +176,10 @@ TikZ是一个用于绘图的Tex包。
 
 https://stuff.mit.edu/afs/athena/contrib/tex-contrib/beamer/pgf-1.01/doc/generic/pgf/version-for-tex4ht/en/pgfmanual.html
 
+http://www.bu.edu/math/files/2013/08/tikzpgfmanual.pdf
+
+此外，ubuntu上还有一个叫做texdoctk的程序，可以查看各种tex包的用户手册。
+
 在线编辑：
 
 https://www.sharelatex.com/

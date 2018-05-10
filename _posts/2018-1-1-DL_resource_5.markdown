@@ -310,10 +310,6 @@ https://www.jiqizhixin.com/articles/2017-07-27-2
 
 CVPR 2017李飞飞总结8年ImageNet历史，宣布挑战赛最终归于Kaggle
 
-https://mp.weixin.qq.com/s/TWdeHVCgEf54STvdA1QUPg
-
-DeepMind哈萨比斯长文：伟大的AI离不开神经科学
-
 https://mp.weixin.qq.com/s/DQcRqWALLuPpNabCv83Vcg
 
 自动机器学习，神经网络自主编程

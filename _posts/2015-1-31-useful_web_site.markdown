@@ -180,10 +180,6 @@ http://blog.csdn.net/u013709270/article/details/53470428
 
 跳跃表的原理及实现
 
-https://mp.weixin.qq.com/s/5KA7jtlRmnXxijGQhU1k4A
-
-DeepMind哈萨比斯狂推的神经科学，入门需要看什么书？
-
 https://mp.weixin.qq.com/s/WZyuTtEfaTFLnCfvhOrp7g
 
 虚拟化原理和分类

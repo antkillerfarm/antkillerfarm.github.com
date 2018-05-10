@@ -322,3 +322,7 @@ https://mp.weixin.qq.com/s/TUTAZe_Bw7SsPkja9i7Drg
 
 基于叙事事理图谱和可扩展图神经⽹络的脚本事件预测模型
 
+https://mp.weixin.qq.com/s/Kj39qXVgaIN9BsxRNlXvvQ
+
+百度提出交互式语言学习新方法：让智能体具备单次概念学习能力
+

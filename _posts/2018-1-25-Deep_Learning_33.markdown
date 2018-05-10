@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十三）——Capsule, AlphaGo
+title:  深度学习（三十三）——Capsule
 category: DL 
 ---
 
@@ -35,6 +35,53 @@ https://kexue.fm/archives/5155/
 老规矩，这里依旧是整理摘要。
 
 ## 何为Capsule？
+
+![](/images/img2/capsule.png)
+
+上图是FC的示意图。其中的$$x_i,y_i$$都是标量，可以被看作是某个特征的值。
+
+公式化的表示如下：
+
+$$\boldsymbol{x}\in\mathbb{R}^n,\boldsymbol{y}=Activation(\boldsymbol{W}\boldsymbol{x}+\boldsymbol{b})\in \mathbb{R}^k$$
+
+但是，实际问题中，特征的值不见得全是标量，也有可能是矢量。
+
+比如下面的文章就讨论了$$x_i$$是复数，也就是二维矢量的情况：
+
+https://mp.weixin.qq.com/s/UMi5NUqcqNTBjlt946jFFQ
+
+深度学习应该使用复数吗？
+
+Hinton当然不满足于此，他将特征的值推广到多维，也就引出了Capsule的概念。
+
+![](/images/img2/capsule_2.png)
+
+上图中的$$x_i$$是一个矢量，它被Hinton称之为Capsule。
+
+公式化的表示如下：
+
+$$\boldsymbol{x}\in\mathbb{R}^{n\times d_x}, \boldsymbol{y}=Routing(\boldsymbol{x})\in \mathbb{R}^{k\times d_y}$$
+
+细心的读者，应该已经发现了，普通FC中的Activation，在这里被换成了Routing。
+
+那么，这些胶囊要怎么运算呢？
+
+![](/images/img2/capsule_3.png)
+
+我们先留心观察capsule的一部分连接。目前已经有了$$u_1$$这个特征（假设是羽毛），那么我想知道它属于上层特征$$v_1,v_2,v_3,v_4$$（假设分别代表了鸡、鸭、鱼、狗）中的哪一个。分类问题我们显然已经是很熟悉了，不就是内积后softmax吗？于是单靠$$u_1$$这个特征，我们推导出它是属于鸡、鸭、鱼、狗的概率分别是：
+
+$$\big(p_{1\mid 1},p_{2\mid 1},p_{3\mid 1},p_{4\mid 1}\big) = \frac{1}{Z_1}\Big(e^{\langle\boldsymbol{u}_1,\boldsymbol{v}_1\rangle}, 
+e^{\langle\boldsymbol{u}_1,\boldsymbol{v}_2\rangle}, 
+e^{\langle\boldsymbol{u}_1,\boldsymbol{v}_1\rangle}, 
+e^{\langle\boldsymbol{u}_1,\boldsymbol{v}_1\rangle}\Big)$$
+
+我们当然期望$$p_{1\mid 1}$$和$$p_{2\mid 1}$$会明显大于$$p_{3\mid 1}$$和$$p_{4\mid 1}$$。不过，单靠这个特征还不够，我们还需要综合各个特征，于是可以把上述操作对各个$$u_i$$都做一遍，继而得到$$\big(p_{1\mid 2},p_{2\mid 2},p_{3\mid 2},p_{4\mid 2}\big),\big(p_{1\mid 3},p_{2\mid 3},p_{3\mid 3},p_{4\mid 3}\big),\dots$$
+
+Hinton认为，既然$$u_i$$这个特征得到的概率分布是$$\big(p_{1\mid i},p_{2\mid i},p_{3\mid i},p_{4\mid i}\big)$$，那么我把这个特征切成四份，分别为$$\big(p_{1\mid i}\boldsymbol{u}_i,p_{2\mid i}\boldsymbol{u}_i,p_{3\mid i}\boldsymbol{u}_i,p_{4\mid i}\boldsymbol{u}_i\big)$$，然后把这几个特征分别传给$$v_1,v_2,v_3,v_4$$，最后$$v_1,v_2,v_3,v_4$$其实就是各个底层传入的特征的累加，即：
+
+$$\boldsymbol{v}_j = squash\left(\sum_{i} p_{j\mid i} \boldsymbol{u}_i\right) = squash\left(\sum_{i} \frac{e^{\langle\boldsymbol{u}_i,\boldsymbol{v}_j\rangle}}{Z_i} \boldsymbol{u}_i\right)$$
+
+## squash与聚类
 
 
 
@@ -135,156 +182,4 @@ https://mp.weixin.qq.com/s/VcZSHw98w6nvgz4Hzjto3A
 https://jhui.github.io/2017/11/14/Matrix-Capsules-with-EM-routing-Capsule-Network/
 
 “Understanding Matrix capsules with EM Routing (Based on Hinton's Capsule Networks)”
-
-# AlphaGo
-
-樊麾讲解AlphaGo与李世石的五番棋：
-
-https://deepmind.com/research/alphago/alphago-games-simplified-chinese/
-
-论文：
-
-《Mastering the game of Go with deep neural networks and tree search》
-
-## Leela Zero
-
-Leela Zero是比利时人Gian-Carlo Pascutto开源的围棋AI。它的算法与AlphaGo Zero相同。而训练采用GTP协议，集合全球算力，进行分布式训练。
-
-官网：
-
-http://zero.sjeng.org/
-
-代码：
-
-https://github.com/gcp/leela-zero
-
->十多年前，当我还是一个中二青年的时候，就幻想有朝一日能够拿围棋世界冠军。当然，就算再中二，我自己也明白靠实力那是不可能的，当时做梦的法宝是制造一个AI，然后碾压一下所谓的国手。   
->按照当时人们的预计(2000年前后)，这个AI在2030年之前，都不可能造出来，然而，最终的结果实际上只花了一半左右的时间。   
->再之后，随着AI围棋的平民化，我的中二梦终于也有人将之付诸实现了：   
->https://mp.weixin.qq.com/s/npt2zZrKwPnNdY-hsa2RjQ   
->AI再乱围棋圈：“食言之战”柯洁落败；首例素人作弊引风波
-
-这次作弊风波所使用的AI就是Leela Zero，可见目前（2018.5）它的棋力已经超过了顶尖棋手。
-
-## ELF OpenGo
-
-ELF OpenGo是Facebook开源的围棋AI，它是FB的AI游戏框架ELF的一部分。
-
-官网：
-
-https://github.com/pytorch/ELF
-
-## 参考
-
-https://mp.weixin.qq.com/s/Sfv-jzQAkN0PsZOGZUQhkQ
-
-AlphaGo Zero横空出世，DeepMind Nature论文解密不使用人类知识掌握围棋
-
-https://mp.weixin.qq.com/s/oAxouYX7-wDC5okbu--Wuw
-
-Nature重磅：人工智能从0到1, 无师自通完爆阿法狗100-0
-
-https://zhuanlan.zhihu.com/p/30262872
-
-关于AlphaGo Zero
-
-https://zhuanlan.zhihu.com/p/30263585
-
-DeepMind新一代围棋程序AlphaGo Zero再次登上Nature
-
-https://www.zhihu.com/question/66861459
-
-如何评价DeepMind发表在Nature上的AlphaGo Zero？
-
-http://www.alphago-games.com/
-
-AlphaGo的棋谱
-
-https://deepmind.com/blog/alphago-zero-learning-scratch/
-
-AlphaGo Zero官方声明
-
-https://zhuanlan.zhihu.com/mathNote
-
-某牛的专栏，主要讲自制AlphaGo
-
-https://mp.weixin.qq.com/s/DC9QqHdWT0xFnowEBuJDbw
-
-自动化所解读“深度强化学习”：从AlphaGo到AlphaGoZero
-
-https://mp.weixin.qq.com/s/uZtaxRwROCqYmL2k6Muxaw
-
-从阿尔法狗元(AlphaGo Zero)的诞生看终极算法的可能性
-
-https://mp.weixin.qq.com/s/i5OmLu8aNbypiTUmP4teeQ
-
-刘遥行：深入浅出看懂AlphaGo Zero
-
-https://mp.weixin.qq.com/s/aBrwbB_DOGTen-6XL7LGFQ
-
-邓侃：白话蒙特卡洛树搜索和ResNet
-
-https://mp.weixin.qq.com/s/nbTkr0PImlXUSYl91HD91Q
-
-AlphaGo背后的力量：蒙特卡洛树搜索入门指南
-
-https://mp.weixin.qq.com/s/-tH7DQo1cK9gA0bcpBJSDA
-
-AlphaGo Zero：笔记与伪代码
-
-https://mp.weixin.qq.com/s/CJuVoOf7idUChFIn7dH0Lg
-
-围棋中的数学原理
-
-https://mp.weixin.qq.com/s/d46qNFaftt4wxpV4sZnG-w
-
-一张图看懂AlphaGo Zero
-
-https://zhuanlan.zhihu.com/p/31749249
-
-比AlphaGo Zero更强的AlphaZero问世，8小时解决一切棋类！
-
-https://mp.weixin.qq.com/s/L7bZMkqyncwEt6D5tK1OdQ
-
-AlphaZero炼成最强通用棋类AI，DeepMind强化学习算法8小时完爆人类棋类游戏
-
-https://mp.weixin.qq.com/s/tFdnxqV5a5xZrFtB6E0AiQ
-
-新AlphaZero出世称霸棋界，8小时搞定一切棋类！自对弈通用强化学习无师自通！
-
-https://mp.weixin.qq.com/s/qYWsFBKNCKCGUmizX_1sVg
-
-AlphaGo 教学工具终于上线了！
-
-https://mp.weixin.qq.com/s/JxbIeDk8_wnYu_ewUHp29g
-
-深度学习与围棋实战书籍《Deep Learning and the Game of Go》
-
-https://mp.weixin.qq.com/s/gsRnbknytz2FY2dWgdWEYg
-
-精通国际象棋的AI研究员：AlphaZero真的是一次突破吗？
-
-https://mp.weixin.qq.com/s/Przl4ivbNuOFmz4pcYTrpQ
-
-浅述：从Minimax到AlphaZero，完全信息博弈之路（1）
-
-https://zhuanlan.zhihu.com/p/32089487
-
-AlphaZero实战：从零学下五子棋
-
-http://mp.weixin.qq.com/s/72riTTC3w0q9oF5H-51kXA
-
-手把手教你搭建AlphaZero（使用Python和Keras）
-
-https://mp.weixin.qq.com/s/Qw2tT7H1PwDvPgOYy8YUsQ
-
-AlphaGo Zero代码迟迟不开源，TF等不及自己推了一个
-
-https://mp.weixin.qq.com/s/Vq-osjgNXJQu5avGkxQdsw
-
-手把手：AlphaGo有啥了不起，我也能教你做一个
-
-https://mp.weixin.qq.com/s/ajajJ9yJZsOy4Vc0ULBxXg
-
-国际象棋版AlphaZero出来了诶，还开源了Keras实现
 

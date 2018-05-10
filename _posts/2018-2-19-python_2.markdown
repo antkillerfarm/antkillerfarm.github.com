@@ -328,6 +328,10 @@ https://mp.weixin.qq.com/s/-CaMHjsY580et8Hh_D2FSg
 
 简约而不简单的Django新手图文教程
 
+https://mp.weixin.qq.com/s/O5okcuVKuf339BZzhmxiew
+
+13个Python GUI库
+
 https://mp.weixin.qq.com/s/jHnkmpnOz1LApVCLJL-8Tw
 
 如何写出优雅又地道的Python代码？
@@ -368,4 +372,7 @@ https://mp.weixin.qq.com/s/ST7TQ5Wkn_owv5bpTiTKVA
 
 2018年最好用的5个python网站开发框架
 
+https://mp.weixin.qq.com/s/3nr8uHnRoSgs-Zu6QxGiqw
+
+Python实现数据库一键导出为Excel表格！大大的增加了工作效率！
 

@@ -172,6 +172,10 @@ https://zhuanlan.zhihu.com/p/22094600
 
 Deep Learning回顾之LeNet、AlexNet、GoogLeNet、VGG、ResNet
 
+https://mp.weixin.qq.com/s/28GtBOuAZkHs7JLRVLlSyg
+
+深度卷积神经网络演化历史及结构改进脉络
+
 http://www.leiphone.com/news/201609/303vE8MIwFC7E3DB.html
 
 Google最新开源Inception-ResNet-v2，借助残差网络进一步提升图像分类水准

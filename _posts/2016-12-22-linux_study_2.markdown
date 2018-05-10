@@ -384,6 +384,12 @@ exit用于整个shell脚本的退出。
 
 `$$`: 当前shell的PID。
 
+## 参考
+
+https://blog.csdn.net/iot_flower/article/details/69055590
+
+shell脚本第一行：#!/bin/bash的含义
+
 # SWIG
 
 Simplified Wrapper and Interface Generator可以为C/C++的库生成其他高级脚本语言的Wrapper。
