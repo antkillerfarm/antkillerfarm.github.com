@@ -438,3 +438,7 @@ https://mp.weixin.qq.com/s/B9zo0zThARAi11hRuJ-AqA
 
 开源实时数据处理系统Pulsar：一套搞定Kafka+Flink+DB
 
+https://mp.weixin.qq.com/s/y6ntgPxTaLFBJDn3usBd1g
+
+美团点评广告实时索引的设计与实现
+

@@ -326,3 +326,7 @@ https://mp.weixin.qq.com/s/Kj39qXVgaIN9BsxRNlXvvQ
 
 百度提出交互式语言学习新方法：让智能体具备单次概念学习能力
 
+https://mp.weixin.qq.com/s/N2Zw2WMuLtd3Pe8v3wbaAw
+
+如何用技术搞好英俄翻译？
+

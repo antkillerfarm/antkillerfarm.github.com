@@ -197,6 +197,54 @@ https://www.zhihu.com/question/60815243/answer/380089581
 
 # DL参考资源
 
+https://mp.weixin.qq.com/s/ygt31lL0mBcyRmwAlsl8Sg
+
+RCN仅凭极少样本就成功攻破验证码
+
+https://mp.weixin.qq.com/s/0Ofh_NSMmvlEZ2JPCffujg
+
+Vicarious发布生成视觉模型:RCN
+
+https://mp.weixin.qq.com/s/UDAcjmCOUdzbXaAgKWOczQ
+
+深度判别和共享特征学习的图像分类
+
+https://mp.weixin.qq.com/s/PtQSktfTpqzWB92jelgbTA
+
+Representation Learning on Network网络表示学习笔记
+
+https://mp.weixin.qq.com/s/ZDPPWH570Vc6e1irwP1b1Q
+
+精细识别现实世界图像：李飞飞团队提出半监督适应性模型
+
+https://mp.weixin.qq.com/s/4dlWdPOCbYedu02aLAQ04Q
+
+MIT“创世纪”机器学习新系统，自动生成补丁修复Bug
+
+http://mp.weixin.qq.com/s/rS4xCsytYGqBLMUzlyA12A
+
+构建多层感知器神经网络对数字图片进行文本识别
+
+https://mp.weixin.qq.com/s/sbuqNhIVTDUe4Q6BxS5fWw
+
+盘点金融领域里常用的深度学习模型
+
+https://mp.weixin.qq.com/s/R6vZU_gBaODsh1XtsjTpFA
+
+MIT与FAIR提出“mixup”：利用数据和标签的随机线性插值提高神经网络的健壮性
+
+https://mp.weixin.qq.com/s/xZbsxAqo0mVUb-LyH6fU1g
+
+Yann LeCun：大脑如何高效率学习？
+
+https://mp.weixin.qq.com/s/mfdF5I2vsYJeShnOh_cp8Q
+
+MIT新算法骗过神经网络3D物体分类，成功率超90%
+
+https://mp.weixin.qq.com/s?__biz=MzI3MTM5ODA0Nw==&mid=2247484058&idx=1&sn=0dfe92a0991294afba2514b137217a66
+
+朱松纯：浅谈人工智能：现状、任务、构架与统一
+
 https://mp.weixin.qq.com/s/_w4IIRY6LwqehpDlEXt90A
 
 牛津大学提出神经网络新训练法：用低秩结构增强网络压缩和对抗稳健性
@@ -217,39 +265,4 @@ https://mp.weixin.qq.com/s/_WOzunt9_I-tDZ1NaCguyA
 
 让机器“答问如流”：从视觉到语言
 
-https://mp.weixin.qq.com/s/0JgwBizaCwvPP9TfLKTang
-
-密歇根大学&谷歌提出TAL-Net：将Faster R-CNN泛化至视频动作定位中
-
-https://mp.weixin.qq.com/s/_1rKAj-KOs4P8WnKzen64w
-
-传统方法已经Out了？OpenAI提出全新辩论模式训练AI
-
-https://zhuanlan.zhihu.com/p/36479489
-
-图像检索（一）：因缘际会与前瞻
-
-https://mp.weixin.qq.com/s/Mk_EkwTYK2141cU9zC1hvQ
-
-合成逼真图像，试试港中大&英特尔的半参数方法
-
-https://mp.weixin.qq.com/s/ovjoHCcR1xYb9N6kyFJUTg
-
-视频广告段落检测——从一个偏门说计算机视觉的发展历史
-
-https://zhuanlan.zhihu.com/p/36527644
-
-Learning with Noise: Enhance Distantly Supervised Relation Extraction with Dynamic Transition Matrix——一种对噪音数据显式建模的方法
-
-https://mp.weixin.qq.com/s/tjnpIYJGmrTLGUsdtBI2Vw
-
-AI设计师“鹿班”核心技术公开：如何1秒设计8000张海报？
-
-https://mp.weixin.qq.com/s/zeN7rjmAnvh_7BbTmScrZw
-
-细粒度分类你懂吗？——fine-gained image classification
-
-https://mp.weixin.qq.com/s/Ob1ngUEmRgSybcAD5zg0QQ
-
-利用深度学习消去反光
 

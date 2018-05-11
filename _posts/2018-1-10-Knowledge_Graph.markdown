@@ -240,4 +240,8 @@ https://mp.weixin.qq.com/s/SrhACueWelBAGU4sC2nBtg
 
 开放域中文知识图谱《大词林》
 
+https://mp.weixin.qq.com/s/WU6PezrzTwQuXi7DE9Z0sg
+
+W3C之RDFa中文文档
+
 

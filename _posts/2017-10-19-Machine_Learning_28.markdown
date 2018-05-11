@@ -76,6 +76,10 @@ https://mp.weixin.qq.com/s/a1C1ezL59azNfdM3TFGaGw
 
 递推与储存，是动态规划的关键
 
+http://www.cnblogs.com/SDJL/archive/2008/08/22/1274312.html
+
+通过金矿模型介绍动态规划
+
 # Monte-Carlo
 
 ## 概率算法

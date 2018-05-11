@@ -274,63 +274,43 @@ https://mp.weixin.qq.com/s/cAbMB-DB9vu2ua8t5J28ww
 
 从零开始，了解元学习
 
+## 面试
+
+https://www.zhihu.com/question/41233373
+
+如果你是面试官，你怎么去判断一个面试者的深度学习水平？
+
+https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
+
+20万、50万、100万的算法工程师，到底有什么区别？
+
+https://www.zhihu.com/question/56676679/answer/151505274
+
+机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
+
+https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
+
+面试官是如何看出你机器学习水平的？
+
+https://mp.weixin.qq.com/s?__biz=MzI3NTA0MzM1OQ==&mid=2651615534&idx=1&sn=00ecd7dc1d8472c070e720a1b63f04c4
+
+我如何考察面试者的机器学习水平
+
+https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
+
+谷歌等巨头机器学习面试题：从逻辑回归到智力测验
+
+## 深度哈希
+
+https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg
+
+深度离散哈希算法，可用于图像检索！
+
+https://mp.weixin.qq.com/s/XUYJub0559wwQ9H1wA_SAg
+
+机器学习时代的哈希算法，将如何更高效地索引数据 
+
 # DL参考资源
-
-https://mp.weixin.qq.com/s/ygt31lL0mBcyRmwAlsl8Sg
-
-RCN仅凭极少样本就成功攻破验证码
-
-https://mp.weixin.qq.com/s/0Ofh_NSMmvlEZ2JPCffujg
-
-Vicarious发布生成视觉模型:RCN
-
-https://mp.weixin.qq.com/s/UDAcjmCOUdzbXaAgKWOczQ
-
-深度判别和共享特征学习的图像分类
-
-https://mp.weixin.qq.com/s/PtQSktfTpqzWB92jelgbTA
-
-Representation Learning on Network网络表示学习笔记
-
-https://mp.weixin.qq.com/s/ZDPPWH570Vc6e1irwP1b1Q
-
-精细识别现实世界图像：李飞飞团队提出半监督适应性模型
-
-https://mp.weixin.qq.com/s/4dlWdPOCbYedu02aLAQ04Q
-
-MIT“创世纪”机器学习新系统，自动生成补丁修复Bug
-
-https://mp.weixin.qq.com/s/vRHA3Hf1ivsgKBB2XuECNg
-
-李飞飞论文：神经网络是怎样给一幅图增加文字描述，实现“看图说话”的？
-
-http://mp.weixin.qq.com/s/rS4xCsytYGqBLMUzlyA12A
-
-构建多层感知器神经网络对数字图片进行文本识别
-
-https://mp.weixin.qq.com/s/sbuqNhIVTDUe4Q6BxS5fWw
-
-盘点金融领域里常用的深度学习模型
-
-https://mp.weixin.qq.com/s/R6vZU_gBaODsh1XtsjTpFA
-
-MIT与FAIR提出“mixup”：利用数据和标签的随机线性插值提高神经网络的健壮性
-
-https://mp.weixin.qq.com/s/SIH63n1rQgVpIifUCsIZvw
-
-中科院提出深度离散哈希算法，可用于图像检索
-
-https://mp.weixin.qq.com/s/xZbsxAqo0mVUb-LyH6fU1g
-
-Yann LeCun：大脑如何高效率学习？
-
-https://mp.weixin.qq.com/s/mfdF5I2vsYJeShnOh_cp8Q
-
-MIT新算法骗过神经网络3D物体分类，成功率超90%
-
-https://mp.weixin.qq.com/s?__biz=MzI3MTM5ODA0Nw==&mid=2247484058&idx=1&sn=0dfe92a0991294afba2514b137217a66
-
-朱松纯：浅谈人工智能：现状、任务、构架与统一
 
 https://github.com/Alibaba-Technology/hangzhouYunQi2017ppt
 
@@ -411,10 +391,4 @@ https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
 https://zhuanlan.zhihu.com/p/28639662
 
 百家争鸣的Meta Learning/Learning to learn
-
-https://mp.weixin.qq.com/s/kMTMjlLgcR24DT7CXvezsA
-
-深度学习概念、架构和tensorflow的思维导图！
-
-
 

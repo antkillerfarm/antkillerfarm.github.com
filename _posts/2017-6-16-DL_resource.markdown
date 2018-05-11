@@ -330,6 +330,10 @@ https://mp.weixin.qq.com/s/ywCnn1jXAU95RCY8PIusig
 
 十个机器学习误区 By 李飞飞
 
+https://mp.weixin.qq.com/s/kMTMjlLgcR24DT7CXvezsA
+
+深度学习概念、架构和tensorflow的思维导图！
+
 http://blog.csdn.net/life_is_amazing/article/details/51884237
 
 这个博客不错,一些深度学习资源链接

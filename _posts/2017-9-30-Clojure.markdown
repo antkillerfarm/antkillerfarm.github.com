@@ -138,3 +138,41 @@ https://www.douban.com/group/topic/27583755/
 然而，由于低层实现的限制，这些UI配置文件语法各异，虽然有设计器来简化设计难度，但注定不能做的太复杂。因此，功能上无论如何都无法与网页相比，更不必说和HTML 5相比了。
 
 2012年以后，以CEF（Chromium Embedded Framework）和XULRunner为代表的浏览器派，开始逐渐崭露头角。从此，开发桌面应用程序，不再是Javascript的禁区。桌面应用UI和网页前端开始呈现融合的局面。
+
+# DL参考资源
+
+https://mp.weixin.qq.com/s/0JgwBizaCwvPP9TfLKTang
+
+密歇根大学&谷歌提出TAL-Net：将Faster R-CNN泛化至视频动作定位中
+
+https://mp.weixin.qq.com/s/_1rKAj-KOs4P8WnKzen64w
+
+传统方法已经Out了？OpenAI提出全新辩论模式训练AI
+
+https://zhuanlan.zhihu.com/p/36479489
+
+图像检索（一）：因缘际会与前瞻
+
+https://mp.weixin.qq.com/s/Mk_EkwTYK2141cU9zC1hvQ
+
+合成逼真图像，试试港中大&英特尔的半参数方法
+
+https://mp.weixin.qq.com/s/ovjoHCcR1xYb9N6kyFJUTg
+
+视频广告段落检测——从一个偏门说计算机视觉的发展历史
+
+https://zhuanlan.zhihu.com/p/36527644
+
+Learning with Noise: Enhance Distantly Supervised Relation Extraction with Dynamic Transition Matrix——一种对噪音数据显式建模的方法
+
+https://mp.weixin.qq.com/s/tjnpIYJGmrTLGUsdtBI2Vw
+
+AI设计师“鹿班”核心技术公开：如何1秒设计8000张海报？
+
+https://mp.weixin.qq.com/s/zeN7rjmAnvh_7BbTmScrZw
+
+细粒度分类你懂吗？——fine-gained image classification
+
+https://mp.weixin.qq.com/s/Ob1ngUEmRgSybcAD5zg0QQ
+
+利用深度学习消去反光

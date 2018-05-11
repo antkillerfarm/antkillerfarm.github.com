@@ -48,6 +48,10 @@ https://www.zhihu.com/question/62068158
 
 《Distilling the Knowledge in a Neural Network》
 
+![](/images/img2/Distilling.jpeg)
+
+老师网络可以被固定（正如在精炼过程中）或联合优化，甚至同时训练多个不同大小的学生网络。
+
 图森科技的后两篇论文也是在Hinton论文的基础上改进的。
 
 论文：

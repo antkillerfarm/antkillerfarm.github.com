@@ -234,4 +234,6 @@ https://mp.weixin.qq.com/s/CBqDR7JEPfhIwTc8BDdeoQ
 
 “诗画合一”的跨媒体理解与检索
 
+https://mp.weixin.qq.com/s/vRHA3Hf1ivsgKBB2XuECNg
 
+李飞飞论文：神经网络是怎样给一幅图增加文字描述，实现“看图说话”的？

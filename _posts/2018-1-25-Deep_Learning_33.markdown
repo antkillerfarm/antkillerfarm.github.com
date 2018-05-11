@@ -81,9 +81,21 @@ Hinton认为，既然$$u_i$$这个特征得到的概率分布是$$\big(p_{1\mid 
 
 $$\boldsymbol{v}_j = squash\left(\sum_{i} p_{j\mid i} \boldsymbol{u}_i\right) = squash\left(\sum_{i} \frac{e^{\langle\boldsymbol{u}_i,\boldsymbol{v}_j\rangle}}{Z_i} \boldsymbol{u}_i\right)$$
 
+从上式括号中的部分可以看出，$$v_j$$实际上就是所有$$u_i$$的加权平均，这实际上就是一种类似K-Means的聚类。因此，Capsule的核心思想就是**输出是输入的某种聚类的结果**。
+
 ## squash与聚类
 
+使用何种规则进行聚类呢？Hinton给出了如下squash函数：
 
+$$squash(\boldsymbol{x})=\frac{\Vert\boldsymbol{x}\Vert^2}{1+\Vert\boldsymbol{x}\Vert^2}\frac{\boldsymbol{x}}{\Vert\boldsymbol{x}\Vert}$$
+
+这个函数的特点是：用模长代表特征的概率，模长越大，这个特征越显著。
+
+![](/images/img2/capsule_4.png)
+
+为了突出模长的这一含义，也需要在设计模型的时候有所配合。如图，尽管$$v_1$$所代表的类所包含的特征向量$$u_1,u_2,u_4,u_8$$的模长均比较小，但因为成员多（“小弟多”），因此v1的模长也能占优（“势力大”）。这说明，一个类要突出，跟类内向量的数目、每个类内向量本身的模长都有关联。
+
+苏建林认为将squash函数中的1，改成0.5，似乎效果更好一些。这个函数的特点是在模长很接近于0时起到放大作用，而不像原来的函数那样全局都压缩。
 
 ## 参考
 

@@ -287,17 +287,29 @@ http://cn-mirror.openslr.org/
 1.检查依赖。
 
 {% highlight bash %}
-cd tool
+cd tools
 extras/check_dependencies.sh
 {% endhighlight %}
 
 根据提示，缺什么就装什么。
 
-2.编译
+2.编译tools文件夹
 
 {% highlight bash %}
 make -j 4
 {% endhighlight %}
+
+3.编译src文件夹
+
+{% highlight bash %}
+cd ../src
+sudo apt install libatlas-base-dev
+./configure --shared
+make depend -j 4
+make -j 4
+{% endhighlight %}
+
+
 
 ## 运行示例
 

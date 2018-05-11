@@ -110,6 +110,10 @@ https://mp.weixin.qq.com/s/BF7mj-_D303cLiD5e6oy6w
 
 期待已久的—YOLO V3
 
+https://mp.weixin.qq.com/s/-Ixqxx6QGJDTM4g50y6LyA
+
+进击的YOLOv3，目标检测网络的巅峰之作
+
 # 其它目标检测网络
 
 ## A-Fast-RCNN

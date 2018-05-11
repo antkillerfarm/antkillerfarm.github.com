@@ -376,3 +376,11 @@ https://mp.weixin.qq.com/s/3nr8uHnRoSgs-Zu6QxGiqw
 
 Python实现数据库一键导出为Excel表格！大大的增加了工作效率！
 
+https://mp.weixin.qq.com/s/dmJI2GlzgUJgYllfVOPt4g
+
+两句话轻松掌握Python最难知识点
+
+https://mp.weixin.qq.com/s/PkzD1ig_D5AIUTkO5zH8pQ
+
+Python字节码介绍
+

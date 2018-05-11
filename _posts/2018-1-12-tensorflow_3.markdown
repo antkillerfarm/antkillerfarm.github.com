@@ -210,6 +210,10 @@ https://mp.weixin.qq.com/s/hn-LqyREkusxP2TOWfTJ6g
 
 使用TensorFlow官方Java API调用TensorFlow模型
 
+https://mp.weixin.qq.com/s/IuD1oxeiFBq8kqh_zRLb0Q
+
+一步实现从TF到TF Lite，谷歌提出定制on-device模型框架
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/LTtcD5CBT8m127thjBaRsw

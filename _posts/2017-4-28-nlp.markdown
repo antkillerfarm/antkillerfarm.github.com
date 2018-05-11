@@ -385,6 +385,10 @@ http://www.simsimi.com/
 
 SimSimi是一款来自韩国的聊天机器人应用，以吉祥物“小鸡鸡”自居。
 
+https://github.com/BYVoid/OpenCC
+
+OpenCC：一个中文简繁转换的工具
+
 ## NLPchina
 
 NLPchina(中国自然语言处理开源组织)旗下有许多好用的工具。
