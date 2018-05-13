@@ -178,6 +178,10 @@ https://mp.weixin.qq.com/s/Mcj9SwC6GZEjXxi55vfsaw
 
 minibatching，数据加载和模型构建
 
+https://mp.weixin.qq.com/s/EweQNoP5BlB9e1eVJsCFvg
+
+GANs很难？这篇文章教你50行代码搞定
+
 # PaddlePaddle
 
 https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q
@@ -309,8 +313,6 @@ make depend -j 4
 make -j 4
 {% endhighlight %}
 
-
-
 ## 运行示例
 
 示例放在egs文件夹下，目前已经有很多示例了。这里以thchs30为例进行介绍。这里主要参考了下文：
@@ -331,8 +333,15 @@ http://cn-mirror.openslr.org/18/
 
 2.
 
+## 目录结构
+
+KWS：Keyword Search
+
+CMVN：cepstral mean and variance
+
 ## 参考
 
 https://blog.csdn.net/lijin6249/article/details/51838936
 
 基于kaldi的在线中文识别，online的操作介绍
+

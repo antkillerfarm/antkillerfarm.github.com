@@ -156,7 +156,47 @@ https://mp.weixin.qq.com/s/HSdhkazt1j5phMTLRMjFlQ
 
 深度对抗声学模型训练框架
 
+https://mp.weixin.qq.com/s/bgIJMRZ64En3xMk3IGK-Vw
+
+如何基于迁移学习快速识别出讲话的人是谁？
+
 # 语音合成
+
+语音合成（Speech synthesis），有时也叫做text-to-speech (TTS)。
+
+## 教程
+
+http://web.stanford.edu/~jurafsky/slp3/ed3book.pdf
+
+《语音与语言处理》第三版，NLP和语音合成方面的专著
+
+## 开源项目
+
+### Festival
+
+Festival是CMU的Rob Clark和Alan Black发起的项目。
+
+官网：
+
+http://www.cstr.ed.ac.uk/projects/festival/
+
+### eSpeak NG
+
+官网：
+
+https://github.com/espeak-ng/espeak-ng/
+
+### gnuspeech
+
+官网：
+
+https://www.gnu.org/software/gnuspeech/
+
+### 其他
+
+其他的开源项目还有Gnopernicus、Orca、FreeTTS和Automatik Text Reader，但是这些项目目前基本处于不更新的状态了。
+
+## 参考
 
 https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw
 

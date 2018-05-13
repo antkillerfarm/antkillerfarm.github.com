@@ -330,10 +330,6 @@ https://mp.weixin.qq.com/s/TelGG-uVQyxwQjiDGE1pqA
 
 特征金字塔网络FPN
 
-https://mp.weixin.qq.com/s/RpaOrngeXTKycLb3iCygZw
-
-利用贝叶斯神经网络进行随机动力系统中的学习与策略搜索
-
 https://mp.weixin.qq.com/s/6KC1vhKcyqQ0eZEXJyPqVA
 
 密集连接卷积网络

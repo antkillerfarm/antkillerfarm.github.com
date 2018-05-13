@@ -38,10 +38,6 @@ https://mp.weixin.qq.com/s/TSc4E8lKwgc-EvzP8OlJeg
 
 初学者如何查阅自然语言处理（NLP）领域学术资料
 
-http://web.stanford.edu/~jurafsky/slp3/ed3book.pdf
-
-《语音与语言处理》第三版，NLP和语音合成方面的专著
-
 https://mp.weixin.qq.com/s/5KhTWdOk-b84DXmoVr68-A
 
 CIPS ATT 2017 文本分析和自然语言课程PPT

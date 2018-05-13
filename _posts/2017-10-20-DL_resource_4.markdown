@@ -308,29 +308,39 @@ https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg
 
 https://mp.weixin.qq.com/s/XUYJub0559wwQ9H1wA_SAg
 
-机器学习时代的哈希算法，将如何更高效地索引数据 
+机器学习时代的哈希算法，将如何更高效地索引数据
 
-# DL参考资源
+## 行业
 
-https://github.com/Alibaba-Technology/hangzhouYunQi2017ppt
+李开复的这篇文章不可不读：
 
-2017杭州云栖大会精华PPT
+https://mp.weixin.qq.com/s/OLIO4UIZUuzjX5oQbn3Tug
 
-https://mp.weixin.qq.com/s/Opnf5GBxoUqznWuYBb8xaA
+拥抱人工智能的中国：现状和展望（上）
 
-清华唐杰AMiner团队全球H-index Top 10000学者半世纪迁移图
+https://mp.weixin.qq.com/s/KbKlgRAfjP_39WdXh7gOLg
 
-https://mp.weixin.qq.com/s/ulLh_JfLa9Os3ZFFAWVETA
+拥抱人工智能的中国：现状和展望（下）
 
-谷歌大脑最新研究：高斯过程“超越”随机梯度下降！
+## 连续学习
 
-https://mp.weixin.qq.com/s/DsmjjfInV_yPFWB2oSq-dA
+https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
 
-取代学习率衰减的新方法：谷歌大脑提出增加Batch Size
+终身机器学习: 一种持续学习的范式
 
-https://mp.weixin.qq.com/s/PsIa3XDFqZlY2tKcvqvddw
+https://mp.weixin.qq.com/s/SBppyDBWqQUariiHbpaq1w
 
-Training RNNs as Fast as CNNs
+实时深度学习的推理加速和连续学习
+
+https://mp.weixin.qq.com/s/83HufWMDnuXIOCCfgqeDJw
+
+为什么说持续学习才是AI的关键
+
+https://mp.weixin.qq.com/s/kmEFjzFIbNq0_qdjc1Wm_w
+
+DeepMind新智能体架构Unicorn：持续学习能力胜过多个基准智能体
+
+## 贝叶斯学习
 
 https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og
 
@@ -340,25 +350,15 @@ https://mp.weixin.qq.com/s/Zd4rFU7Lebr4zmzxThNyVw
 
 详解珠算：清华大学开源的贝叶斯深度学习库
 
-https://mp.weixin.qq.com/s/vUK2NneOs8OR0vcJEZNbrA
+https://mp.weixin.qq.com/s/RpaOrngeXTKycLb3iCygZw
 
-田渊栋等人论文：何时卷积滤波器容易学习？
+利用贝叶斯神经网络进行随机动力系统中的学习与策略搜索
 
-https://mp.weixin.qq.com/s/HP8KLbo26W5UscCGavKDRw
+https://mp.weixin.qq.com/s/lKm_ypn5I7tSjoQHceJ0jQ
 
-IBM Watson提出人机推理网络HuMaINs，结合人机两者优势
+概率编程：使用贝叶斯神经网络预测金融市场价格
 
-https://mp.weixin.qq.com/s/fPj4wMtiFX55c_UjNsQnBg
-
-PointCNN全面刷新测试记录：山东大学提出通用点云卷积框架
-
-https://mp.weixin.qq.com/s/tzAp6PxAn3GszcttRzfz8Q
-
-CMU提出新型智能体定位方法：“主动神经定位器”
-
-https://mp.weixin.qq.com/s/dWIhQVPNi9SlzuhMiatEVQ
-
-几张贴纸就让神经网络看不懂道路标志，伯克利为真实环境生成对抗样本
+# DL参考资源
 
 https://mp.weixin.qq.com/s/oltHCTombWE2WP_zbbOr3A
 

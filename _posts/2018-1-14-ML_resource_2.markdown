@@ -366,3 +366,8 @@ https://mp.weixin.qq.com/s/1AeuKy2sSCtjURTy-CG6pQ
 
 运筹学在航空业有哪些应用？
 
+https://mp.weixin.qq.com/s/lE_ih5WD5S5GGN9CUsIhCQ
+
+阿里新供应链体系架构解读
+
+

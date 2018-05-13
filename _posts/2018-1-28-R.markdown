@@ -361,4 +361,7 @@ https://mp.weixin.qq.com/s/GEUxw5RnbMSBAagpify3bQ
 
 用R也可以跑Python了
 
+https://mp.weixin.qq.com/s/GKluYqwt3O3Um630zrK7Eg
+
+深入对比数据科学工具箱: SparkR vs Sparklyr
 

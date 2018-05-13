@@ -260,6 +260,10 @@ http://www.doc88.com/p-7082821463697.html
 
 Introspective Neural Networks
 
+http://www.cnblogs.com/cyjb/p/UnionFindSets.html
+
+并查集（Union-find Sets）
+
 高斯背景
 
 laurent series

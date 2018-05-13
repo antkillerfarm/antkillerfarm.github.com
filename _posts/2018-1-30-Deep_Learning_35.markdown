@@ -352,6 +352,10 @@ https://mp.weixin.qq.com/s/8ibcyvyBLYArAMhQElqRzg
 
 Cell研究揭示生物神经元强大新特性，是时候设计更复杂的神经网络了！
 
+https://mp.weixin.qq.com/s/cb6JBlb11xW0Xw0RWI4vFA
+
+浙大&川大提出脉冲版ResNet：继承ResNet优势，实现当前最佳
+
 # LSM
 
 liquid state machine (LSM)

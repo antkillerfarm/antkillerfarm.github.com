@@ -90,6 +90,10 @@ https://blog.csdn.net/malefactor/article/details/50767711
 
 利用Word Embedding自动生成语义相近句子
 
+https://mp.weixin.qq.com/s/4sqMV3tS146VNrTyyncYnQ
+
+中英文词向量评测理论与实践
+
 # NN的INT8计算
 
 ## 概述
@@ -145,6 +149,14 @@ https://mp.weixin.qq.com/s/9DXMqiPIK5P5wzUMT7_Vfw
 https://mp.weixin.qq.com/s/PDeChj1hQqUrZiepxXODJg
 
 ICLR oral：清华提出离散化架构WAGE，神经网络训练推理合二为一
+
+http://blog.csdn.net/tangwei2014/article/details/55077172
+
+二值化神经网络介绍
+
+https://mp.weixin.qq.com/s/oumf8l28ijYLxc9fge0FMQ
+
+嵌入式深度学习之神经网络二值化
 
 # 视频目标分割
 

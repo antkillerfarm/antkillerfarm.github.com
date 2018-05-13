@@ -460,27 +460,3 @@ https://mp.weixin.qq.com/s/TGuEvNXw_9S5-9a3KyDvvw
 
 基于图卷积网络的图深度学习
 
-https://mp.weixin.qq.com/s/FLrnRF8UQg6vLn-sndSpiw
-
-代替支持向量机，南大周志华组提出多类最优边界分配机mcODM
-
-http://mp.weixin.qq.com/s/9fJT0dMLvYQdfMVvSEiG4A
-
-深度学习的时间序列模型评价
-
-http://blog.csdn.net/tangwei2014/article/details/55077172
-
-二值化神经网络介绍
-
-https://mp.weixin.qq.com/s/XAxuLg2i3q5_uKDo1wU_rA
-
-从哈希到卷积神经网络：高精度&低功耗
-
-https://mp.weixin.qq.com/s/xbimfckVD0Ol0T1n0-_ktA
-
-从浅层模型到深度模型：概览机器学习优化算法
-
-https://mp.weixin.qq.com/s/Lp2pq95woQ5-E3RemdRnyw
-
-动态层归一化（Dynamic Layer Normalization）
-

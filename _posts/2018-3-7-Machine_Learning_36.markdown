@@ -312,4 +312,7 @@ https://mp.weixin.qq.com/s/rOltA6fDzWmxcSyoHYqeSg
 
 谷歌提出最新参数优化方法Adafactor，已在TensorFlow中开源
 
+https://mp.weixin.qq.com/s/eTVPLSpZir4A49bhmWAibQ
+
+深度学习中的各种优化算法
 

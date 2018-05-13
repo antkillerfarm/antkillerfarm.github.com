@@ -212,6 +212,10 @@ https://mp.weixin.qq.com/s/a-lDJuwFYVNupeNhxyXDkA
 
 跨域社交推荐：如何透过用户社交信息“猜你喜欢”？
 
+https://mp.weixin.qq.com/s/FvuWZPNKcnimAGzsfgVdBQ
+
+阿里妈妈公开全新CVR预估模型
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

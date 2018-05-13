@@ -220,6 +220,14 @@ https://mp.weixin.qq.com/s/RKQb7-mQ-ELRRq18db02Pg
 
 DeepMind大突破！AI模拟大脑导航功能，学会像动物一样“抄近路”
 
+https://mp.weixin.qq.com/s/qBwszD9rn4gKazXdwqexSQ
+
+MIT提出使用“深度强化学习”帮助智能体在运动中做出“动作决策”
+
+https://mp.weixin.qq.com/s/i-udn1M4kiJpF8U7u5Uepg
+
+专家解读DeepMind最新论文：深度学习模型复现大脑网格细胞
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：

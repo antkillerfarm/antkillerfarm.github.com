@@ -238,6 +238,10 @@ $$e^z=e^x(\cos y + i \sin y)$$
 
 《不可思议的e》
 
+https://mp.weixin.qq.com/s/kwfA7CqBz1myyUR3NBKp1g
+
+虚数i是真实存在的吗？
+
 # 傅里叶变换
 
 $$\hat{f}(\xi) = \int_{-\infty}^{+\infty} f(x)\ e^{- 2\pi i x \xi}\mathrm{d}x$$
@@ -278,20 +282,3 @@ https://mp.weixin.qq.com/s/fFN54auRn1O3EZpPeOwIhQ
 
 傅里叶变换就是这么简单，你学会了吗? 
 
-# 一道证明题
-
-设A、B、C为任意可数有限集合，则
-
-$$size(A-C)\le size(A-B)+size(B-C)$$
-
-其中$$size(X)$$表示集合X中的元素个数。
-
-证明：
-
-$$A-C=\{x\mid x\in A \cap x\notin C\}=\{x\mid x\in A \cap (x\in B \cup x\notin B)\cap x\notin C\}
-\\=\{x\mid (x\in A \cap x\notin B \cap x\notin C) \cup (x\in A \cap x\in B \cap x\notin C) \}
-\\\subseteq \{x\mid (x\in A \cap x\notin B) \cup (x\in B \cap x\notin C) \}=(A-B)\cup (B-C)$$
-
-又因为：$$size(X\cup Y)\le size(X)+size(Y)$$，所以
-
-$$size(A-C)\le size((A-B)\cup (B-C))\le size(A-B)+size(B-C)$$
