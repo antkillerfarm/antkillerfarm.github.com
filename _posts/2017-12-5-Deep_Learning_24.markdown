@@ -66,6 +66,10 @@ https://mp.weixin.qq.com/s/pv3gQfCayGmsmGKLbMIFpA
 
 神奇！只有遗忘门的LSTM性能优于标准LSTM
 
+https://mp.weixin.qq.com/s/mIuAn4G9l3AKFAswpbaQdA
+
+时间卷积网络（TCN）将取代RNN成为NLP预测领域王者
+
 # L2 Normalization
 
 L2 Normalization本身并不复杂，然而多数资料都只提到1维的L2 Normalization的计算公式：

@@ -266,6 +266,20 @@ ELF OpenGo是Facebook开源的围棋AI，它是FB的AI游戏框架ELF的一部�
 
 https://github.com/pytorch/ELF
 
+## PhoenixGo
+
+PhoenixGo是腾讯微信团队的AlphaGo Zero复刻版。
+
+官网：
+
+https://github.com/Tencent/PhoenixGo
+
+参考：
+
+https://mp.weixin.qq.com/s/tJDmxsuS1QigYS75ZIdzRA
+
+微信团队开源围棋AI技术PhoenixGo，复现AlphaGo Zero论文
+
 ## 参考
 
 https://mp.weixin.qq.com/s/Sfv-jzQAkN0PsZOGZUQhkQ

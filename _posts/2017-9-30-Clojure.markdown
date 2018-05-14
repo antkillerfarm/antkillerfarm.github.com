@@ -191,7 +191,7 @@ https://mp.weixin.qq.com/s/_1rKAj-KOs4P8WnKzen64w
 
 https://zhuanlan.zhihu.com/p/36479489
 
-图像检索（一）：因缘际会与前瞻
+图像检索：因缘际会与前瞻
 
 https://mp.weixin.qq.com/s/Mk_EkwTYK2141cU9zC1hvQ
 
@@ -220,4 +220,8 @@ https://mp.weixin.qq.com/s/Ob1ngUEmRgSybcAD5zg0QQ
 https://mp.weixin.qq.com/s/3aAaM1DWsnCWEEbP7dOZEg
 
 伯克利等提出无监督特征学习新方法，代码已开源
+
+https://mp.weixin.qq.com/s/Y_qX16JaenbPtLiEiRhHpw
+
+隐私和机器学习：两个意想不到的盟友？一文了解差分隐私
 

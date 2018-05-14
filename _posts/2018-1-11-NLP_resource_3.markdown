@@ -330,3 +330,7 @@ https://mp.weixin.qq.com/s/N2Zw2WMuLtd3Pe8v3wbaAw
 
 如何用技术搞好英俄翻译？
 
+https://mp.weixin.qq.com/s/1bCw7m8YVLVA0g_jhw9HCg
+
+在消费意图识别任务上的基于树核最大平均差异的领域自适应
+

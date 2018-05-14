@@ -260,6 +260,10 @@ https://mp.weixin.qq.com/s/S_T0tYhZ1pjoIMysP0aVWA
 
 美军AI黑科技：黑暗中也能准确识别人脸，谁该为此感到紧张？
 
+https://mp.weixin.qq.com/s/GLKvzC_o6MR1ixThAVc9lQ
+
+CosFace: 面向深度人脸识别的增强边缘余弦损失函数设计
+
 # 迁移学习
 
 >龙明盛，清华本科（2008）+博士（2016），迁移学习的最早提出者之一。清华大学副教授，博导。   
