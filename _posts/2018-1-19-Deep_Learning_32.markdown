@@ -94,6 +94,10 @@ https://mp.weixin.qq.com/s/4sqMV3tS146VNrTyyncYnQ
 
 中英文词向量评测理论与实践
 
+https://zhuanlan.zhihu.com/p/36788547
+
+网络表示学习论文引介
+
 # NN的INT8计算
 
 ## 概述

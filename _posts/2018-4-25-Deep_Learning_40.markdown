@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十）——模型压缩, OCR
+title:  深度学习（四十）——模型压缩, OCR, 目标检测进阶
 category: DL 
 ---
 
@@ -241,4 +241,39 @@ https://mp.weixin.qq.com/s/k0dRu1wx49HTi_oJYJEGPw
 代码：
 
 https://github.com/bgshih/crnn
+
+# 目标检测进阶
+
+https://mp.weixin.qq.com/s/LtXylKTKsHdjMPw9Q1HyXA
+
+优于MobileNet、YOLOv2：移动设备上的实时目标检测系统Pelee
+
+https://mp.weixin.qq.com/s/Gq3bflJq59Tx-nDCvbweNA
+
+无需预训练分类器，清华&旷视提出专用于目标检测的骨干网络DetNet
+
+https://mp.weixin.qq.com/s/u3eXhoFvo7vZujc0XoQQWQ
+
+旷视研究院解读Light-Head R-CNN：平衡精准度和速度
+
+https://mp.weixin.qq.com/s/6cUP9vvfcuv8rIEnGnAFiA
+
+NCSU&阿里巴巴论文：可解释的R-CNN
+
+https://mp.weixin.qq.com/s/x0r-2J_YdYgIQlRDqvGofg
+
+CVPR 2017论文解读：用于单目图像车辆3D检测的多任务网络
+
+https://mp.weixin.qq.com/s/1vOdOMyByBacSBMVrscq5Q
+
+黄畅：基于DenesBox的目标检测在自动驾驶中的应用
+
+https://mp.weixin.qq.com/s/-PeXMU_gkcT5YnMcLoaKag
+
+CVPR清华大学研究，高效视觉目标检测框架RON
+
+https://mp.weixin.qq.com/s/AupXIoVmhcOBrX1z1vgdtw
+
+弱监督实现精确目标检测，上交大提出协同学习框架
+
 

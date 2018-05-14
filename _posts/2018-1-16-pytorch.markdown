@@ -286,7 +286,7 @@ http://www.openslr.org/
 
 http://cn-mirror.openslr.org/
 
-## 安装
+## 编译
 
 1.检查依赖。
 
@@ -331,13 +331,87 @@ thchs30下有个s5文件夹。Daniel教程中提到，在原来的老示例中�
 
 http://cn-mirror.openslr.org/18/
 
-2.
+2.修改cmd.sh。
+
+{% highlight bash %}
+export train_cmd=run.pl
+export decode_cmd="run.pl --mem 4G"
+export mkgraph_cmd="run.pl --mem 8G"
+export cuda_cmd="run.pl --gpu 1"
+#export train_cmd=queue.pl
+#export decode_cmd="queue.pl --mem 4G"
+#export mkgraph_cmd="queue.pl --mem 8G"
+#export cuda_cmd="queue.pl --gpu 1"
+{% endhighlight %}
+
+3.修改run.sh中的数据路径，并运行之。
+
+## 不成功的探险
+
+上文中被替换的queue.pl实际上是run.pl的分布式计算版本，用到了SLURM等技术。
+
+`sudo apt install slurm-wlm-torque slurm-wlm-doc`
+
+SLURM和Torque都是job scheduler。他们的官网分别是：
+
+https://slurm.schedmd.com/
+
+http://www.adaptivecomputing.com/products/open-source/torque/
+
+3.在浏览器中运行/usr/share/doc/slurm-wlm-doc/html/configurator.html以生成slurm.conf文件，然后把该文件保存到/etc/slurm-llnl下。
+
+但是遗憾的是，由于我填的不对，最终没有走通这条路。
+
+LLNL是Lawrence Livermore National Laboratory的简称，它上面有几篇文章不错：
+
+https://computing.llnl.gov/tutorials/parallel_comp/
+
+Introduction to Parallel Computing
+
+https://computing.llnl.gov/tutorials/linux_clusters/
+
+Linux Clusters Overview
 
 ## 目录结构
+
+kaldi的调用层次可分为三级：
+
+1.**脚本**。包括shell脚本和perl脚本。主要在egs/wsj文件夹下。
+
+2.**工具**。一些可执行文件。在src/XXXbin文件夹下。
+
+3.**算法实现**。在src/XXX文件夹下。
+
+工具和算法实现基本都是C/C++写的。外部工具在tools文件夹下，主要是openfst、sctk、sph2pipe。
+
 
 KWS：Keyword Search
 
 CMVN：cepstral mean and variance
+
+## OpenFst
+
+OpenFst是一个构造、合并、优化和搜索加权有限状态机FST的库。
+
+官网：
+
+http://www.openfst.org/
+
+## SCTK
+
+Speech Recognition Scoring Toolkit是NIST（National Institute of Standards and Technology, 美国国家标准与技术协会）提出的一套工具集。
+
+官网：
+
+https://github.com/usnistgov/SCTK
+
+## sph2pipe
+
+LDC提供的数据很多是基于NIST的SPHERE格式，使用时需要将之转换为其他格式，这时就要用到sph2pipe了。
+
+官网：
+
+https://www.ldc.upenn.edu/language-resources/tools/sphere-conversion-tools
 
 ## 参考
 

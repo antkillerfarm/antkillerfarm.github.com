@@ -128,6 +128,10 @@ CV的输入一般是由像素组成的矩阵。相比其他领域的数据挖掘
 
 ## 参考
 
+https://github.com/amusi/awesome-object-detection
+
+目标检测最全论文集锦
+
 https://www.zhihu.com/question/34223049
 
 从近两年的CVPR会议来看，目标检测的研究方向是怎么样的？
@@ -143,10 +147,6 @@ https://zhuanlan.zhihu.com/p/36088972
 https://mp.weixin.qq.com/s/r9tXvKIN-eqKW_65yFyOew
 
 谷歌开源TensorFlow Object Detection API
-
-https://mp.weixin.qq.com/s/-PeXMU_gkcT5YnMcLoaKag
-
-CVPR清华大学研究，高效视觉目标检测框架RON
 
 https://mp.weixin.qq.com/s/_cOuhToH8KvZldNfraumSQ
 
@@ -216,10 +216,6 @@ https://mp.weixin.qq.com/s/zJ3EN175_9num2OknVvnyA
 
 邬书哲：物体检测算法的革新与传承
 
-https://mp.weixin.qq.com/s/1vOdOMyByBacSBMVrscq5Q
-
-黄畅：基于DenesBox的目标检测在自动驾驶中的应用
-
 https://mp.weixin.qq.com/s/6rSeJOqbKyrDj3FpS8J5eg
 
 黄李超讲物体检测
@@ -236,21 +232,9 @@ https://mp.weixin.qq.com/s/66yXsRIeZdHfoZkJkci24w
 
 地平线黄李超开讲：深度学习和物体检测！
 
-https://mp.weixin.qq.com/s/x0r-2J_YdYgIQlRDqvGofg
-
-CVPR 2017论文解读：用于单目图像车辆3D检测的多任务网络
-
 http://blog.csdn.net/zhang11wu4/article/details/53967688
 
 目标检测最新方法介绍
-
-https://mp.weixin.qq.com/s/RNHgm1GW79iXVe2tit6IyA
-
-旷视&清华大学提出新型两步检测器Light-Head R-CNN
-
-https://mp.weixin.qq.com/s/6cUP9vvfcuv8rIEnGnAFiA
-
-NCSU&阿里巴巴论文：可解释的R-CNN
 
 https://mp.weixin.qq.com/s/ZrZtGBxVOZmexDMw_S_Orw
 
@@ -259,10 +243,6 @@ TensorFlow深度学习目标检测模型及源码架构解析
 https://mp.weixin.qq.com/s/HPzQST8cq5lBhU3wnz7-cg
 
 R-FCN每秒30帧实时检测3000类物体，马里兰大学Larry Davis组最新目标检测工作
-
-https://mp.weixin.qq.com/s/u3eXhoFvo7vZujc0XoQQWQ
-
-旷视研究院解读Light-Head R-CNN：平衡精准度和速度
 
 https://mp.weixin.qq.com/s/A9F3UsITUaNvR69roHa0mg
 
@@ -284,10 +264,6 @@ https://mp.weixin.qq.com/s/Oy7YAp1NoVICQZqXRz0uVg
 
 基于深度学习的目标检测综述(一）
 
-https://mp.weixin.qq.com/s/Gq3bflJq59Tx-nDCvbweNA
-
-无需预训练分类器，清华&旷视提出专用于目标检测的骨干网络DetNet
-
 https://mp.weixin.qq.com/s/5zE78EU_NdV5ZeW5t1yV7A
 
 从RCNN到SSD，这应该是最全的一份目标检测算法盘点
@@ -295,10 +271,6 @@ https://mp.weixin.qq.com/s/5zE78EU_NdV5ZeW5t1yV7A
 https://mp.weixin.qq.com/s/a1GFDzcR98b7pyJR1Gn-TA
 
 深度学习之目标检测网络学习总结（from RCNN to YOLO V3）
-
-https://mp.weixin.qq.com/s/LtXylKTKsHdjMPw9Q1HyXA
-
-优于MobileNet、YOLOv2：移动设备上的实时目标检测系统Pelee
 
 # RCNN
 

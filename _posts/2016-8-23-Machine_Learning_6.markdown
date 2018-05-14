@@ -216,6 +216,30 @@ $$\alpha_i=C \Leftrightarrow y^{(i)}u_i\le 1$$
 
 最后的收敛条件是在界内（$$0<\alpha_i<C$$）的样例都能够遵循KKT条件，且其对应的$$\alpha_i$$只在极小的范围内变动。
 
+## 尾声
+
+除了吴恩达的课程外，以下SVM系列课程也写得不错：
+
+https://mp.weixin.qq.com/s/Ahvp0IAdgK9OVHFXigBk_Q
+
+线性支持向量机（LSVM）
+
+https://mp.weixin.qq.com/s/Q5bFR3vDDXPhtzXlVAE3Rg
+
+对偶支持向量机（DSVM）
+
+https://mp.weixin.qq.com/s/cLovkwwgGJRgSSa1XWZ8eg
+
+核支持向量机（KSVM）
+
+https://mp.weixin.qq.com/s/hfkWgBtSBKW8pT0bi62xzQ
+
+一文详解SVM的Soft-Margin机制
+
+https://mp.weixin.qq.com/s/rU8ijCdbnu4fvM1X2AxQUA
+
+详解烧脑的Support Vector Regression
+
 ## 参考
 
 https://mp.weixin.qq.com/s/pXhNRAvJI88tycMsrWhgcQ

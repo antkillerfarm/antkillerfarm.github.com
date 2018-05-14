@@ -160,6 +160,10 @@ https://mp.weixin.qq.com/s/bgIJMRZ64En3xMk3IGK-Vw
 
 如何基于迁移学习快速识别出讲话的人是谁？
 
+https://mp.weixin.qq.com/s/jHB5pRsisvh-ZB8uY1oRTA
+
+基于TensorFlow，人声识别如何在端上实现？
+
 # 语音合成
 
 语音合成（Speech synthesis），有时也叫做text-to-speech (TTS)。

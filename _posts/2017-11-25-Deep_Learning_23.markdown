@@ -96,6 +96,10 @@ https://mp.weixin.qq.com/s/WYsxFX4LyM562bZD8rO95w
 
 图鸭发布图片压缩TNG，节省55%带宽
 
+https://mp.weixin.qq.com/s/meK8UBnVHzA9YspQ2RFp6Q
+
+体积减半画质翻倍，他用TensorFlow实现了这个图像极度压缩模型
+
 # SVDF
 
 SVDF是UCB和Google Speech Group的作品，主要用于简化Speech模型的计算量。

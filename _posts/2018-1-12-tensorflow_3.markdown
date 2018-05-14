@@ -66,6 +66,10 @@ https://mp.weixin.qq.com/s/DAV3TDI4JYr0sXqTGU6t2A
 
 分布式TensorFlow入坑指南：从实例到代码带你玩转多机器深度学习
 
+https://mp.weixin.qq.com/s/QU5NjksCEswjHnkY7WXWXQ
+
+分布式TensorFlow入门教程
+
 https://mp.weixin.qq.com/s/pBR4wMITrigbSVAvn0d6vQ
 
 利用TensorFlow实现上下文的Chat-bots
