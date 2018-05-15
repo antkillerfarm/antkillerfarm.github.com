@@ -70,10 +70,6 @@ https://mp.weixin.qq.com/s/SfFRXlekKkEapbjoSeKEog
 
 自然语言处理中N-Gram模型介绍
 
-https://mp.weixin.qq.com/s/NdY9cL5_SDrqWAGAyrFxsA
-
-阿里妈妈首次公开新一代自研智能检索模型
-
 https://mp.weixin.qq.com/s/AVPquGDa05q1yqz-AJpBGA
 
 如何为神经机器翻译任务配置编码-解码模型
@@ -333,4 +329,8 @@ https://mp.weixin.qq.com/s/N2Zw2WMuLtd3Pe8v3wbaAw
 https://mp.weixin.qq.com/s/1bCw7m8YVLVA0g_jhw9HCg
 
 在消费意图识别任务上的基于树核最大平均差异的领域自适应
+
+https://mp.weixin.qq.com/s/x8GwNyd9y7xqyi2KeIcqTw
+
+5篇AAAI 2018论文看“应答生成”
 

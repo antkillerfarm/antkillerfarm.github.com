@@ -272,3 +272,7 @@ https://mp.weixin.qq.com/s/eAqtNDT7LDdMg_41QWJ5iA
 
 DuReader：百度大规模的中文机器阅读理解数据集
 
+https://mp.weixin.qq.com/s/tENiB4P1--sD5B5r3Af16w
+
+Chinese Word Vectors：目前最全的中文预训练词向量集合
+

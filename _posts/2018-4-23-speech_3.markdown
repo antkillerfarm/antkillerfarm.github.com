@@ -218,6 +218,10 @@ http://djt.qq.com/article/view/507
 
 定制你的语音识别-并行语音识别解码空间
 
+https://blog.csdn.net/lucky_ricky/article/details/77511543
+
+Kaldi WFST 构图 学习
+
 # 汽车声学
 
 https://zhuanlan.zhihu.com/p/22722073

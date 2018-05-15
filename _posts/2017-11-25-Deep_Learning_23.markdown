@@ -100,6 +100,16 @@ https://mp.weixin.qq.com/s/meK8UBnVHzA9YspQ2RFp6Q
 
 体积减半画质翻倍，他用TensorFlow实现了这个图像极度压缩模型
 
+https://mp.weixin.qq.com/s/_5tyt7pU0gIXbkmTOVEtDw
+
+嫌图片太大？！卷积神经网络轻松实现无损压缩到20%！
+
+# SR之外的DL ISP
+
+https://mp.weixin.qq.com/s/Wdxkvlz4nLbJS_gWqHwMjw
+
+无需额外硬件，全卷积网络让机器学习学会夜视能力
+
 # SVDF
 
 SVDF是UCB和Google Speech Group的作品，主要用于简化Speech模型的计算量。

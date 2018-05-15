@@ -6,6 +6,26 @@ category: resource
 
 # DL参考资源
 
+## 并行 & 框架（续）
+
+https://mp.weixin.qq.com/s/fx0Pfu0MOPjSkzi5mL6U_A
+
+清华&斯坦福提出深度梯度压缩DGC，大幅降低分布式训练网络带宽需求
+
+https://mp.weixin.qq.com/s/wIdTDHEPffWqHA3_XWBLyw
+
+没错，纯SQL查询语句可以实现神经网络。
+
+>SQL跑神经网络固然没有太大意义，然而分布式数据库已经有数十年的历史，对于设计分布式深度学习框架亦有重大的启发意义。
+
+https://zhuanlan.zhihu.com/p/33351291
+
+基于忆阻器（ReRAM），Computing-in-Memory的DLA
+
+https://mp.weixin.qq.com/s/eTwSo3GnxSnK-BwwZeWmKA
+
+Jeff Dean等提出自动化分层模型，优化CPU、GPU等异构环境，性能提升超60%
+
 ## 实战
 
 http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg
@@ -379,4 +399,8 @@ https://mp.weixin.qq.com/s/Jc5f4iX9uoOo5igQ79P77w
 https://mp.weixin.qq.com/s/GdY4UAdF5ufiTpl0GsTbpQ
 
 数据+进化算法=数据驱动的进化优化？进化算法 PK 数学优化
+
+https://mp.weixin.qq.com/s/iAmkb2EdYofJU1AoBw2HyA
+
+多目标优化详解
 

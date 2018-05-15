@@ -154,6 +154,10 @@ https://mp.weixin.qq.com/s/jBaxkJMQ_6RwtMmY7U29-w
 
 一样的打游戏，不一样的酷
 
+https://mp.weixin.qq.com/s/sYXVqnk5p8tvl6s0EIkr3w
+
+游戏代理框架，帮助您创建AI来玩任何您拥有的游戏！
+
 ## AI医疗
 
 https://github.com/albarqouni/Deep-Learning-for-Medical-Applications
@@ -273,6 +277,10 @@ https://mp.weixin.qq.com/s/4f6-gXovdrYk7240TrUwJg
 https://mp.weixin.qq.com/s/cAbMB-DB9vu2ua8t5J28ww
 
 从零开始，了解元学习
+
+https://mp.weixin.qq.com/s/Q36vpS1HF2IfeCsFLh656A
+
+基于元强化学习的神经科学新理论
 
 ## 面试
 

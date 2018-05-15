@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  知识图谱参考资源
+title:  知识图谱参考资源, Kaldi（2）
 category: resource 
 ---
 
@@ -244,4 +244,109 @@ https://mp.weixin.qq.com/s/WU6PezrzTwQuXi7DE9Z0sg
 
 W3C之RDFa中文文档
 
+# Kaldi（续）
+
+## SCTK
+
+Speech Recognition Scoring Toolkit是NIST（National Institute of Standards and Technology, 美国国家标准与技术协会）提出的一套工具集。
+
+官网：
+
+https://github.com/usnistgov/SCTK
+
+## sph2pipe
+
+LDC提供的数据很多是基于NIST的SPHERE格式，使用时需要将之转换为其他格式，这时就要用到sph2pipe了。
+
+官网：
+
+https://www.ldc.upenn.edu/language-resources/tools/sphere-conversion-tools
+
+## SRILM
+
+SRILM - The SRI Language Modeling Toolkit是由SRI International提出的一套工具集，主要用于创建和使用统计语言模型。
+
+官网：
+
+http://www.speech.sri.com/projects/srilm/
+
+>SRI International是一家非营利的研究机构，创建于1946年。SRI是Stanford Research Institute的缩写。
+
+thchs30中的lm文件（例如lm_phone/phone.3gram.lm）就是由SRILM生成的。
+
+参考：
+
+http://www.52nlp.cn/language-model-training-tools-srilm-details
+
+语言模型训练工具SRILM详解
+
+## ARPA文件格式
+
+SRILM生成的lm文件是ARPA文件格式。
+
+{% highlight text %}
+\data\
+ngram 1=64000
+ngram 2=522530
+ngram 3=173445
+
+\1-grams:
+-5.24036     'cause  -0.2084827
+-4.675221    'em     -0.221857
+-4.989297    'n      -0.05809768
+-5.365303    'til    -0.1855581
+{% endhighlight %}
+
+这个文件的头部比较好懂，不解释。
+
+1-grams部分中每一条包括了3项，其中第二项显然是条目文本本身。
+
+第一项表示ngram的条件概率，即$$P(word_N \mid word_1，word_2，\dots，word_{N-1})$$。
+
+第三项表示回退（backoff）概率。
+
+下面我们举例说明条件概率和回退概率的用法。
+
+假设arpa的最高元是3元，则句子ABCDEF发生的概率为：
+
+$$P(ABCDEF)=P(A)*P(B\mid A)*P(C\mid AB)*P(D\mid BC)*P(E\mid CD)*(F\mid DE)$$
+
+其中，P(A)通过访问arpa中的1-grams项获得，$$P(B\mid A)$$通过访问2-grams项获得，其他的概率通过访问3-grams项获得。
+
+P(A)的计算直接找对应A的文法项获得概率即可。如果2-grams中存在“A B”项，$$P(B\mid A)$$的概率也很容易获得，但是如果“A B”词组在2-grams中不存在，我们就需要利用回退概率计算$$P(B\mid A)$$，计算公式为$$P(B\mid A)=\alpha(A)*P(B)$$，其中的$$\alpha(A)$$就表示A的回退概率。
+
+类似地，可以获得三元词组的概率计算公式：
+
+$$P(C│AB)=\left\{\begin{matrix}P(C\mid AB) \qquad ABC存在
+\\ \alpha(AB)*P(C\mid B) \qquad BC存在
+\\ \alpha(AB)*\alpha(B)*P(C) \qquad 其他
+\end{matrix}\right.$$
+
+参考：
+
+https://blog.csdn.net/lv_xinmy/article/details/8595561
+
+ARPA的n-gram语言模型格式
+
+https://blog.csdn.net/SAJIAHAN/article/details/52901422
+
+语言模型-ARPA格式
+
+https://blog.csdn.net/yutianzuijin/article/details/78756130
+
+arpa2fst原理详解
+
+https://www.jianshu.com/p/ab356b3c889e
+
+Kaldi(A5)语言模型及HCLG.fst生成
+
+https://blog.csdn.net/nihaomafb/article/details/48009695
+
+语言模型Katz backoff以及HMM模型
+
+## 参考
+
+https://blog.csdn.net/lijin6249/article/details/51838936
+
+基于kaldi的在线中文识别，online的操作介绍
 

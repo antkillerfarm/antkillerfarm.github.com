@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Pytorch, PaddlePaddle, MXNet, Kaldi
+title:  Pytorch, PaddlePaddle, MXNet, Kaldi（1）
 category: AI 
 ---
 
@@ -181,6 +181,10 @@ minibatching，数据加载和模型构建
 https://mp.weixin.qq.com/s/EweQNoP5BlB9e1eVJsCFvg
 
 GANs很难？这篇文章教你50行代码搞定
+
+https://mp.weixin.qq.com/s/1KAbFAWC3jgJTE-zp5Qu6g
+
+如何直观地理解条件随机场，并通过PyTorch简单地实现
 
 # PaddlePaddle
 
@@ -384,6 +388,9 @@ kaldi的调用层次可分为三级：
 
 工具和算法实现基本都是C/C++写的。外部工具在tools文件夹下，主要是openfst、sctk、sph2pipe。
 
+## 术语
+
+LM：language model
 
 KWS：Keyword Search
 
@@ -396,26 +403,4 @@ OpenFst是一个构造、合并、优化和搜索加权有限状态机FST的库�
 官网：
 
 http://www.openfst.org/
-
-## SCTK
-
-Speech Recognition Scoring Toolkit是NIST（National Institute of Standards and Technology, 美国国家标准与技术协会）提出的一套工具集。
-
-官网：
-
-https://github.com/usnistgov/SCTK
-
-## sph2pipe
-
-LDC提供的数据很多是基于NIST的SPHERE格式，使用时需要将之转换为其他格式，这时就要用到sph2pipe了。
-
-官网：
-
-https://www.ldc.upenn.edu/language-resources/tools/sphere-conversion-tools
-
-## 参考
-
-https://blog.csdn.net/lijin6249/article/details/51838936
-
-基于kaldi的在线中文识别，online的操作介绍
 

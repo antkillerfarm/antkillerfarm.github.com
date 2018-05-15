@@ -54,10 +54,6 @@ https://mp.weixin.qq.com/s/HD370E4cCYvy_pdEKAvLIA
 
 教机器学习编程
 
-https://mp.weixin.qq.com/s/AS1VFjBFnSk19QJ28tBVWA
-
-NIPS 2017斯坦福赛题大公开：强化学习模拟人类肌肉骨骼模型
-
 https://mp.weixin.qq.com/s/cDqxmRVQCIqdM5oiUh82YQ
 
 Yee Whye Teh：《贝叶斯深度学习与深度贝叶斯学习》
@@ -101,10 +97,6 @@ DeepMind新论文，关联推理为什么是智能最重要的特征
 https://mp.weixin.qq.com/s/V6JQuACFbDWBl-iYkDnRig
 
 自动修复Bug正确率达78.3%，北大、微软等提出ACS技术
-
-https://mp.weixin.qq.com/s/_5tyt7pU0gIXbkmTOVEtDw
-
-嫌图片太大？！卷积神经网络轻松实现无损压缩到20%！
 
 https://mp.weixin.qq.com/s/QSo4wtXg8k0Uwks7_VBycw
 
@@ -254,10 +246,6 @@ https://mp.weixin.qq.com/s/8unG1Yo1kQJdgSMlKiqgbA
 
 逻辑回归和深度神经网络：哪个更适合你？
 
-https://mp.weixin.qq.com/s/Zq3ngbTAObQuIr86nkTwjQ
-
-视频换脸技术，女神都下海了吗？
-
 https://mp.weixin.qq.com/s/o-MFPt6LR_5XDpacqw754Q
 
 马里兰大学论文：可视化神经网络的损失函数
@@ -361,10 +349,6 @@ DIY发现新行星操作指南：谷歌开源了行星发现代码
 https://mp.weixin.qq.com/s/2w_Bwqx9C9KwenK480sVMQ
 
 如何可视化卷积网络分类图像时关注的焦点
-
-https://mp.weixin.qq.com/s/joRcvCQwLYgRd29mfPd7XA
-
-中科大&微软提出立体神经风格迁移模型，可用于3D视频风格化
 
 https://zhuanlan.zhihu.com/p/34286453
 

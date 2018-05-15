@@ -42,10 +42,6 @@ https://mp.weixin.qq.com/s/iXmjuBh2zzno7-D9ClYbSA
 
 讲解DeepMind论文：AI在复杂环境中学习运动
 
-https://mp.weixin.qq.com/s/sYXVqnk5p8tvl6s0EIkr3w
-
-游戏代理框架，帮助您创建AI来玩任何您拥有的游戏！
-
 https://mp.weixin.qq.com/s/0KaSWHi8r9kSXxlwswIY5g
 
 乔宇：深度模型让机器理解场景
@@ -98,10 +94,6 @@ https://mp.weixin.qq.com/s/SPdkJTYU80bioNdZrBj4cw
 
 卷积优化-Cpython(Cuda)施工和分析
 
-https://mp.weixin.qq.com/s/qWJarPrjOrwxSX77xQ9rCw
-
-面向卷积神经网络的卷积核冗余消除策略
-
 https://mp.weixin.qq.com/s/pnCdKcdRCxhFEcXyWb9xlQ
 
 深度学习助力实现智能行为分析和事件识别
@@ -153,10 +145,6 @@ https://mp.weixin.qq.com/s/oe8Zcv3EecDV2OUl9qejCA
 http://mp.weixin.qq.com/s/khOINUyrNV3TFfgNRheH0A
 
 卷积神经网络压缩、多模态的语义分析研究
-
-http://mp.weixin.qq.com/s/1UDKVasluMpPiteysmEx1A
-
-深度学习必备---用Keras和直方图均衡化---数据增强
 
 http://mp.weixin.qq.com/s/zi1E-O8qHv0NUwkQmXI9Vw
 
@@ -273,10 +261,6 @@ https://mp.weixin.qq.com/s/OjpIeAdPTeOpYa5T0h992A
 https://mp.weixin.qq.com/s/DS_l4ucLzOifJMuM1EXqXQ
 
 美国东北大学提出MoNet，使用紧密池化缓解特征高维问题
-
-https://mp.weixin.qq.com/s/eTwSo3GnxSnK-BwwZeWmKA
-
-Jeff Dean等提出自动化分层模型，优化CPU、GPU等异构环境，性能提升超60%
 
 https://mp.weixin.qq.com/s/lwvRz1jtv1aCBwL9W447_A
 

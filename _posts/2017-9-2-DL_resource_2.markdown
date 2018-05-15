@@ -412,17 +412,3 @@ https://mp.weixin.qq.com/s/28n8g_epHsYB0I9GVc_lww
 
 陈天奇团队TVM重磅更新：直接在浏览器使用GPU
 
-https://mp.weixin.qq.com/s/fx0Pfu0MOPjSkzi5mL6U_A
-
-清华&斯坦福提出深度梯度压缩DGC，大幅降低分布式训练网络带宽需求
-
-https://mp.weixin.qq.com/s/wIdTDHEPffWqHA3_XWBLyw
-
-没错，纯SQL查询语句可以实现神经网络。
-
->SQL跑神经网络固然没有太大意义，然而分布式数据库已经有数十年的历史，对于设计分布式深度学习框架亦有重大的启发意义。
-
-https://zhuanlan.zhihu.com/p/33351291
-
-基于忆阻器（ReRAM），Computing-in-Memory的DLA
-

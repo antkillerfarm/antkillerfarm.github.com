@@ -294,9 +294,31 @@ https://mp.weixin.qq.com/s/Y8D0gr1ybQ48H0bDpPvD8w
 
 二次元萌妹高清舞姿随心变，换装只需一瞬间：又是GAN立功了
 
+# 图像变换
+
+https://mp.weixin.qq.com/s/88tBoAVziGEFXIGfvZZp8g
+
+深度学习图像处理项目集锦：生成可爱的动漫头像，骡子变斑马等入选
+
 https://mp.weixin.qq.com/s/iV-OXiKF1jgAhSmX4QUIXw
 
 综述：图像风格化算法最全盘点
+
+https://mp.weixin.qq.com/s/Zq3ngbTAObQuIr86nkTwjQ
+
+视频换脸技术，女神都下海了吗？
+
+https://mp.weixin.qq.com/s/eqI5fVuF68RQWb1a5O219w
+
+腾讯研发“一键卸妆” ,让女神秒变路人!
+
+https://mp.weixin.qq.com/s/joRcvCQwLYgRd29mfPd7XA
+
+中科大&微软提出立体神经风格迁移模型，可用于3D视频风格化
+
+https://mp.weixin.qq.com/s/73mkWlqJsVdu9m1kPDvfbQ
+
+用AI让静图变动图：CVPR热文提出动态纹理合成新方法
 
 # 行人重识别
 

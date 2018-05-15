@@ -228,6 +228,10 @@ https://mp.weixin.qq.com/s/i-udn1M4kiJpF8U7u5Uepg
 
 专家解读DeepMind最新论文：深度学习模型复现大脑网格细胞
 
+https://mp.weixin.qq.com/s/AS1VFjBFnSk19QJ28tBVWA
+
+NIPS 2017斯坦福赛题大公开：强化学习模拟人类肌肉骨骼模型
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：

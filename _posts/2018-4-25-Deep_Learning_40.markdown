@@ -176,6 +176,10 @@ https://mp.weixin.qq.com/s/Ck_GDv1Xo-YMZcu-00gTOA
 
 中星微夺冠国际人工智能算法竞赛，目标检测一步法精度速度双赢
 
+https://mp.weixin.qq.com/s/qWJarPrjOrwxSX77xQ9rCw
+
+面向卷积神经网络的卷积核冗余消除策略
+
 # OCR
 
 光学字符识别（Optical Character Recognition, OCR），是指对文本资料的图像文件进行分析识别处理，获取文字及版面信息的过程。

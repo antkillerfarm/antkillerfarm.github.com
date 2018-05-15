@@ -216,6 +216,10 @@ https://mp.weixin.qq.com/s/FvuWZPNKcnimAGzsfgVdBQ
 
 阿里妈妈公开全新CVR预估模型
 
+https://mp.weixin.qq.com/s/8sI7StMcg7Emm98i93hNsQ
+
+解析阿里妈妈如何将深度学习应用在广告、推荐及搜索业务
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

@@ -6,10 +6,6 @@ category: resource
 
 # DL参考资源
 
-https://mp.weixin.qq.com/s/eqI5fVuF68RQWb1a5O219w
-
-腾讯研发“一键卸妆” ,让女神秒变路人!
-
 https://mp.weixin.qq.com/s/NdwbnEMEVfiX6YGepK9PBA
 
 追根溯源！一图看尽深度学习架构谱系
@@ -181,10 +177,6 @@ https://mp.weixin.qq.com/s/r6Dnv3v6TYwTsAQJTDR0Mg
 https://zhuanlan.zhihu.com/p/28654835
 
 视觉推理（Visual Reasoning），神经网络也可以有逻辑
-
-https://mp.weixin.qq.com/s/88tBoAVziGEFXIGfvZZp8g
-
-深度学习图像处理项目集锦：生成可爱的动漫头像，骡子变斑马等入选
 
 https://mp.weixin.qq.com/s/rxP9PlTJJdw5VmGbwRPMog
 
