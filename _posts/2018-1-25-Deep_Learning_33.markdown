@@ -79,7 +79,7 @@ e^{\langle\boldsymbol{u}_1,\boldsymbol{v}_1\rangle}\Big)$$
 
 Hinton认为，既然$$u_i$$这个特征得到的概率分布是$$\big(p_{1\mid i},p_{2\mid i},p_{3\mid i},p_{4\mid i}\big)$$，那么我把这个特征切成四份，分别为$$\big(p_{1\mid i}\boldsymbol{u}_i,p_{2\mid i}\boldsymbol{u}_i,p_{3\mid i}\boldsymbol{u}_i,p_{4\mid i}\boldsymbol{u}_i\big)$$，然后把这几个特征分别传给$$v_1,v_2,v_3,v_4$$，最后$$v_1,v_2,v_3,v_4$$其实就是各个底层传入的特征的累加，即：
 
-$$\boldsymbol{v}_j = squash\left(\sum_{i} p_{j\mid i} \boldsymbol{u}_i\right) = squash\left(\sum_{i} \frac{e^{\langle\boldsymbol{u}_i,\boldsymbol{v}_j\rangle}}{Z_i} \boldsymbol{u}_i\right)$$
+$$\boldsymbol{v}_j = squash\left(\sum_{i} p_{j\mid i} \boldsymbol{u}_i\right) = squash\left(\sum_{i} \frac{e^{\langle\boldsymbol{u}_i,\boldsymbol{v}_j\rangle}}{Z_i} \boldsymbol{u}_i\right)\tag{1}$$
 
 从上式括号中的部分可以看出，$$v_j$$实际上就是所有$$u_i$$的加权平均，这实际上就是一种类似K-Means的聚类。因此，Capsule的核心思想就是**输出是输入的某种聚类的结果**。
 
@@ -95,7 +95,25 @@ $$squash(\boldsymbol{x})=\frac{\Vert\boldsymbol{x}\Vert^2}{1+\Vert\boldsymbol{x}
 
 为了突出模长的这一含义，也需要在设计模型的时候有所配合。如图，尽管$$v_1$$所代表的类所包含的特征向量$$u_1,u_2,u_4,u_8$$的模长均比较小，但因为成员多（“小弟多”），因此v1的模长也能占优（“势力大”）。这说明，一个类要突出，跟类内向量的数目、每个类内向量本身的模长都有关联。
 
-苏建林认为将squash函数中的1，改成0.5，似乎效果更好一些。这个函数的特点是在模长很接近于0时起到放大作用，而不像原来的函数那样全局都压缩。
+苏剑林认为将squash函数中的1，改成0.5，似乎效果更好一些。这个函数的特点是在模长很接近于0时起到放大作用，而不像原来的函数那样全局都压缩。
+
+## Dynamic Routing
+
+注意到(1)式，为了求$$v_j$$需要求softmax，可是为了求softmax又需要知道$$v_j$$，这不是个鸡生蛋、蛋生鸡的问题了吗？这时候就要上“主菜”了，即“动态路由”（Dynamic Routing），它能够根据自身的特性来更新（部分）参数，从而初步达到了Hinton的放弃梯度下降的目标。
+
+我们首先回顾一下最简单的聚类算法K-Means算法是如何解决鸡生蛋、蛋生鸡的问题的。（参见《机器学习（九）》）
+
+答案是迭代算法。由K-Means算法的收敛性可知，这类迭代算法至少可以收敛到一个局部最优解。
+
+具体到Capsule，为了得到各个$$v_j$$，一开始先让它们全都等于$$u_i$$的均值，然后反复迭代就好。说白了，输出是输入的聚类结果，而聚类通常都需要迭代算法，这个迭代算法就称为“动态路由”。
+
+至于这个动态路由的细节，其实是不固定的，取决于聚类的算法，比如关于Capsule的新文章《Matrix capsules with EM Routing》就使用了Gaussian Mixture Model来聚类。
+
+## Capsule的优点
+
+Capsule的可解释性有很大提升，下图是Hinton论文中给出的示例：
+
+![](/images/img2/capsule_5.png)
 
 ## 参考
 

@@ -52,6 +52,12 @@ http://www.cnblogs.com/hrlnw/archive/2013/10/23/3374707.html
 
 Viola Jones Face Detector
 
+# 直方图反向投影
+
+http://www.cnblogs.com/zsb517/archive/2012/06/20/2556508.html
+
+opencv直方图反向投影
+
 # 经典目标跟踪算法
 
 camshift、meanshift、Kalman filter、particle filter、Optical flow、TLD、KCF、Struck

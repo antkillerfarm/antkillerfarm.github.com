@@ -374,7 +374,7 @@ MIMO雷达基础理解
 
 https://mp.weixin.qq.com/s/_VK-PCRQLM8x5w7xufe7ww
 
-DRFM 数字射频存储技术
+DRFM数字射频存储技术
 
 https://mp.weixin.qq.com/s/ftD1yRed4wvdetcMy90aYg
 
@@ -383,6 +383,10 @@ https://mp.weixin.qq.com/s/ftD1yRed4wvdetcMy90aYg
 https://mp.weixin.qq.com/s/YI1axNbO46dzLVPX0VSwyw
 
 杂波抑制和多普勒滤波
+
+https://mp.weixin.qq.com/s/7RQ6WGnbca5Sn87GUSQJdQ
+
+认知MIMO雷达的波束形成技术
 
 # 数据库
 
