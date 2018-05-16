@@ -334,3 +334,7 @@ https://mp.weixin.qq.com/s/x8GwNyd9y7xqyi2KeIcqTw
 
 5篇AAAI 2018论文看“应答生成”
 
+https://mp.weixin.qq.com/s/41mynm-vB5mpLPcR-ByOdA
+
+北大与百度提出多文章验证方法：让机器验证阅读理解候选答案
+
