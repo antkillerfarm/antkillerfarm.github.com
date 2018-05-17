@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  区块链参考资源, CPU, 图像渲染, 硬件, 雷达, 数据库
+title:  区块链参考资源, CPU, 图像渲染, 硬件, 雷达
 category: resource 
 ---
 
@@ -387,29 +387,3 @@ https://mp.weixin.qq.com/s/YI1axNbO46dzLVPX0VSwyw
 https://mp.weixin.qq.com/s/7RQ6WGnbca5Sn87GUSQJdQ
 
 认知MIMO雷达的波束形成技术
-
-# 数据库
-
-https://blog.csdn.net/zhengzhb/article/details/8590390
-
-SQL查找删除重复行
-
-https://mp.weixin.qq.com/s/k5gNa71eRbnxt_oSR-pmyw
-
-MySQL锁之源码探索
-
-https://mp.weixin.qq.com/s/09BlPee0-kP-At2aDyDbMw
-
-中国数据库40年历史：隐秘的江湖与恩怨
-
-https://mp.weixin.qq.com/s/4lZ7My6cs4-VJQ1qGhQxZg
-
-AliSQL X-Cluste：基于X-Paxos的高性能强一致MySQL数据库
-
-https://mp.weixin.qq.com/s/tPzBlQGxGq1WEnXz5ggpxg
-
-sysbench在美团点评中的应用
-
-https://mp.weixin.qq.com/s/lJfIkLQaZnN4e9DxX163SA
-
-一款可能解放DBA的分布式数据库RadonDB的体验之旅

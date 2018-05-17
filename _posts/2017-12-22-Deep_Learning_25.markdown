@@ -236,6 +236,10 @@ https://mp.weixin.qq.com/s/uvr-G5-_lKpyfyn5g7ES0w
 
 基于注意力机制，机器之心带你理解与训练神经机器翻译系统
 
+https://mp.weixin.qq.com/s/ANpBFnsLXTIiW6WHzGrv2g
+
+自注意力机制学习句子embedding
+
 # VAE
 
 变分自编码器（Variational Auto-Encoder，VAE）是Autoencoder的一种扩展。

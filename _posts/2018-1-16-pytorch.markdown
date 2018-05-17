@@ -186,6 +186,10 @@ https://mp.weixin.qq.com/s/1KAbFAWC3jgJTE-zp5Qu6g
 
 如何直观地理解条件随机场，并通过PyTorch简单地实现
 
+https://mp.weixin.qq.com/s/1_fm6F1c_ldQNyb042NQRg
+
+还在自己写训练过程么？你需要一个训练引擎
+
 # PaddlePaddle
 
 https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q

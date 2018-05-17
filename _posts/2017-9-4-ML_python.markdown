@@ -252,7 +252,7 @@ python操作mysql数据库
 
 ## chainer
 
-chainer是一个日本人写的基于python的深度学习框架。
+chainer是一个日本公司Preferred Networks写的基于python的深度学习框架。
 
 官网：
 
@@ -261,6 +261,14 @@ https://chainer.org/
 代码：
 
 https://github.com/chainer/chainer
+
+Preferred Networks是日本目前最强的AI创业公司，估值已经超过20亿美元。在工业机器人领域具有很强的实力。
+
+它推出的PaintsChainer是一个给黑白线稿上色的App。
+
+官网：
+
+https://github.com/pfnet/PaintsChainer
 
 ## iPython
 

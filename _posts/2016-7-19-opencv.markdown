@@ -326,6 +326,10 @@ https://mp.weixin.qq.com/s/PibBxTkVJNM0n_wXHS99KQ
 
 OpenCV基于Landmark实现人脸交换
 
+https://mp.weixin.qq.com/s/DN2bl429DjVB3HWp-2HTTg
+
+OpenCV图像噪声与去噪函数方法对比使用介绍
+
 # GNU Octave
 
 GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。

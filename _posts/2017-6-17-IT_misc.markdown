@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  IT杂谈
+title:  IT杂谈, Sikuli
 category: technology 
 ---
 
@@ -123,4 +123,18 @@ PS：这里吐槽一下IT技术进步的速度，以基于文本的搜索为例�
 如果你在2008年的时候，掌握这门手艺，至少也可以到Robin手下获得一份不错的薪水。
 
 如果你在2016年的时候，掌握这门手艺，那么你离失业已经不远了。因为，几乎不会有老板，会为了一个15年前的老技术而投资招人。
+
+# Sikuli
+
+Sikuli是一种新颖的图形脚本语言，或者说是一种另类的自动化测试技术。它采用图像识别的方式进行自动检测。
+
+参考：
+
+https://mp.weixin.qq.com/s/MYA6l9V4BYIZO8Jgtds6GA
+
+图像识别在测试中的应用
+
+http://www.cnblogs.com/fnng/archive/2012/12/15/2819367.html
+
+图形脚本语言sikuli
 

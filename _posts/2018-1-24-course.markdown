@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  名校机器学习相关课程
+title:  名校机器学习相关课程, 数据库
 category: resource 
 ---
 
@@ -252,6 +252,68 @@ http://www.math.pku.edu.cn/teachers/ganr/course/pr2010/
 
 北京大学：模式识别
 
+# 数据库
+
+https://blog.csdn.net/zhengzhb/article/details/8590390
+
+SQL查找删除重复行
+
+https://mp.weixin.qq.com/s/k5gNa71eRbnxt_oSR-pmyw
+
+MySQL锁之源码探索
+
+https://mp.weixin.qq.com/s/09BlPee0-kP-At2aDyDbMw
+
+中国数据库40年历史：隐秘的江湖与恩怨
+
+https://mp.weixin.qq.com/s/4lZ7My6cs4-VJQ1qGhQxZg
+
+AliSQL X-Cluste：基于X-Paxos的高性能强一致MySQL数据库
+
+https://mp.weixin.qq.com/s/tPzBlQGxGq1WEnXz5ggpxg
+
+sysbench在美团点评中的应用
+
+https://mp.weixin.qq.com/s/lJfIkLQaZnN4e9DxX163SA
+
+一款可能解放DBA的分布式数据库RadonDB的体验之旅
+
+http://mp.weixin.qq.com/s/idz6b2rls97W4Iw6J-ubng
+
+美团点评SQL优化工具SQLAdvisor开源
+
+https://mp.weixin.qq.com/s/jCFjhkwQpj1_P-seQurPqQ
+
+SQL解析在美团点评中的应用
+
+https://mp.weixin.qq.com/s/RME5b3plT97nYfUaCl9ePw
+
+关于缓存和数据库强一致的可行方案
+
+https://mp.weixin.qq.com/s/Al0yvkv0FUPjEBtcxS6Fmg
+
+传统数据仓库和云数据仓库的区别
+
+https://mp.weixin.qq.com/s/GXGSDxukbIAM5W-YSX0pDg
+
+美团点评数据库高可用架构的演进与设想
+
+https://mp.weixin.qq.com/s/crluKkEdvfZlHyF_gQm1ZA
+
+漫谈推荐系统及数据库技术
+
+https://mp.weixin.qq.com/s/CwUW-Ntb4qphrqha24P-Og
+
+漫谈推荐系统及数据库技术（二）——分布式数据库技术
+
+https://mp.weixin.qq.com/s/1pXMCcO6NR1SMBzsyES-cw
+
+分布式数据库又支持关系数据模型了？
+
+https://mp.weixin.qq.com/s/yQSMSLBYg4iauu8yeUfvjw
+
+深度解读！时序数据库HiTSDB：分布式流式聚合引擎
+
 # 大数据平台参考资源
 
 https://mp.weixin.qq.com/s/oYiQEMelkXHbT3ke2BmHOw
@@ -270,11 +332,7 @@ https://mp.weixin.qq.com/s/y6ntgPxTaLFBJDn3usBd1g
 
 美团点评广告实时索引的设计与实现
 
-https://mp.weixin.qq.com/s/RME5b3plT97nYfUaCl9ePw
+https://mp.weixin.qq.com/s/-K2K22fLOz4Hl7MIUAJfRA
 
-关于缓存和数据库强一致的可行方案
-
-https://mp.weixin.qq.com/s/Al0yvkv0FUPjEBtcxS6Fmg
-
-传统数据仓库和云数据仓库的区别
+美团点评数据平台Kerberos优化实战
 

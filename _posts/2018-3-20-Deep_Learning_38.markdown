@@ -232,6 +232,10 @@ https://mp.weixin.qq.com/s/AS1VFjBFnSk19QJ28tBVWA
 
 NIPS 2017斯坦福赛题大公开：强化学习模拟人类肌肉骨骼模型
 
+https://mp.weixin.qq.com/s/TWjFWe6-dZWDoTi5gN1BxA
+
+深度强化学习在指代消解中的一种尝试
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：

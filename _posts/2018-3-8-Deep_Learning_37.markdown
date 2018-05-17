@@ -24,6 +24,10 @@ http://blog.csdn.net/shuzfan/article/details/52668935
 
 人脸检测——MTCNN
 
+https://mp.weixin.qq.com/s/IrZEQ69RNUdcs0Fl8fHmmQ
+
+如何应用MTCNN和FaceNet模型实现人脸检测及识别
+
 ## 人脸年龄识别
 
 https://www.openu.ac.il/home/hassner/projects/cnn_agegender/

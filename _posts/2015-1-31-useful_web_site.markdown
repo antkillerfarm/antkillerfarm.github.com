@@ -124,10 +124,6 @@ http://chongzhuang.windowszj.com/
 
 系统之家一键重装
 
-http://mp.weixin.qq.com/s/idz6b2rls97W4Iw6J-ubng
-
-美团点评SQL优化工具SQLAdvisor开源
-
 https://commons.wikimedia.org/wiki/Main_Page
 
 一个图片资源站点

@@ -26,10 +26,6 @@ https://mp.weixin.qq.com/s/_z0-90xbsCd4Pdi6UlEvnA
 
 分布式ID生成器
 
-https://mp.weixin.qq.com/s/GXGSDxukbIAM5W-YSX0pDg
-
-美团点评数据库高可用架构的演进与设想
-
 https://mp.weixin.qq.com/s/HJ6uZEYOQFvgR5bZBs5_dA
 
 全球100款大数据工具汇总
@@ -210,14 +206,6 @@ https://mp.weixin.qq.com/s/ToJJTBWJXlpj3LkDj5YYvw
 
 为什么要选择Apache Pulsar
 
-https://mp.weixin.qq.com/s/crluKkEdvfZlHyF_gQm1ZA
-
-漫谈推荐系统及数据库技术
-
-https://mp.weixin.qq.com/s/CwUW-Ntb4qphrqha24P-Og
-
-漫谈推荐系统及数据库技术（二）——分布式数据库技术
-
 https://mp.weixin.qq.com/s/3oQ2yYGNuEz1cuEo4xLZzA
 
 如何解决大规模机器学习的三大痛点？
@@ -229,10 +217,6 @@ http://www.jianshu.com/p/7a720bd7d6b5
 https://mp.weixin.qq.com/s/znr_oRlG_Y30K1XUwupwpg
 
 技术如何秒懂你？阿里百万级QPS资源调度系统揭秘
-
-https://mp.weixin.qq.com/s/1pXMCcO6NR1SMBzsyES-cw
-
-分布式数据库又支持关系数据模型了？
 
 https://mp.weixin.qq.com/s/jMWuMuIvI1cFThC-WQGbHQ
 
@@ -409,10 +393,6 @@ https://mp.weixin.qq.com/s/QxV4-sa72ALCZdD4QWqLPA
 https://mp.weixin.qq.com/s/MSR18sqUznuiUgUM5YkvZg
 
 携程图片服务架构
-
-https://mp.weixin.qq.com/s/yQSMSLBYg4iauu8yeUfvjw
-
-深度解读！时序数据库HiTSDB：分布式流式聚合引擎
 
 https://mp.weixin.qq.com/s/pxNRzWs3sZmbr-K18FvnrA
 
