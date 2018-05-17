@@ -426,19 +426,3 @@ https://mp.weixin.qq.com/s/6Nr7LF9VxYQ4NlLlk8bCVw
 
 不了解边缘计算，你可能就要被“边缘”了
 
-https://mp.weixin.qq.com/s/oYiQEMelkXHbT3ke2BmHOw
-
-如何逐步去构建一个大型网站系统
-
-https://mp.weixin.qq.com/s/xlCO__HucTUd_gYNRTueGg
-
-携程基于大数据分析的实时风控体系
-
-https://mp.weixin.qq.com/s/B9zo0zThARAi11hRuJ-AqA
-
-开源实时数据处理系统Pulsar：一套搞定Kafka+Flink+DB
-
-https://mp.weixin.qq.com/s/y6ntgPxTaLFBJDn3usBd1g
-
-美团点评广告实时索引的设计与实现
-

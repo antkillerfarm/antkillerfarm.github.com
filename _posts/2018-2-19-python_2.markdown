@@ -392,3 +392,7 @@ https://mp.weixin.qq.com/s/RdnAQPAn9E8qDvtnCEgcKw
 
 Tkinter可视化窗口
 
+https://mp.weixin.qq.com/s/_fi4fpfN8Whe7_ZpkPL0tA
+
+怎么给Python写C扩展？
+

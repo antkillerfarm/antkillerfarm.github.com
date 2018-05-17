@@ -70,11 +70,11 @@ Reparameterization Trick的反向传播：
 
 ## 数值计算 vs 采样计算
 
-VAE的基本概念到此差不多了，苏剑林君趁热打铁又写了以下理论文章：
+VAE的基本概念到此差不多了，苏剑林趁热打铁又写了以下理论文章：
 
 https://kexue.fm/archives/5343
 
-变分自编码器：从贝叶斯观点出发
+变分自编码器（二）：从贝叶斯观点出发
 
 特将要点摘录如下。
 
@@ -97,6 +97,16 @@ $$\mathbb{E}[x] \approx \frac{1}{n}\sum_{i=1}^n x_i,\quad x_i \sim p(x)\tag{3}$$
 ## 生成模型近似
 
 对于二值数据，我们可以对decoder用sigmoid函数激活，然后用交叉熵作为损失函数，这对应于$$q(x\mid z)$$为伯努利分布；而对于一般数据，我们用MSE作为损失函数，这对应于$$q(x\mid z)$$为固定方差的正态分布。
+
+苏剑林稍后还写了以下两文，都很值得一看：
+
+https://kexue.fm/archives/5332
+
+基于CNN和VAE的作诗机器人：随机成诗
+
+https://kexue.fm/archives/5383
+
+变分自编码器：这样做为什么能成？
 
 ## 参考
 
@@ -127,14 +137,6 @@ https://mp.weixin.qq.com/s/ZlLuhu08m_RnD-h86df8sA
 https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
 
 面向无监督任务：DeepMind提出神经离散表示学习生成模型VQ-VAE
-
-https://kexue.fm/archives/5332
-
-基于CNN和VAE的作诗机器人：随机成诗
-
-https://kexue.fm/archives/5383
-
-变分自编码器：这样做为什么能成？
 
 https://mp.weixin.qq.com/s/TJDGZvAvT7KamR_WN-oYYw
 

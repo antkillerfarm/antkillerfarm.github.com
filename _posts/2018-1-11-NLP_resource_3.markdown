@@ -338,3 +338,15 @@ https://mp.weixin.qq.com/s/41mynm-vB5mpLPcR-ByOdA
 
 北大与百度提出多文章验证方法：让机器验证阅读理解候选答案
 
+https://mp.weixin.qq.com/s/12RA4Bd86SJS6Q4CAvOEWw
+
+深度学习技术如何应用于文本智能处理？
+
+https://mp.weixin.qq.com/s/PJQgrAzwefmFgSBF39_yIA
+
+Gmail新功能：结合BoW模型和RNN-LM，帮助用户快速写邮件
+
+https://mp.weixin.qq.com/s/5X5FZmhGM0XCFIjhlNiPLA
+
+北京大学提出新型分层式端到端模型，整合文本摘要和情感分类
+

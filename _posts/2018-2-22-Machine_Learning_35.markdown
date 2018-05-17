@@ -208,3 +208,7 @@ https://mp.weixin.qq.com/s/Joz2FpGgBY0tC8lpoFz8Mw
 
 AdaBoost元算法如何提高分类性能——机器学习实战
 
+https://mp.weixin.qq.com/s/MLEVUKse5usmKIWJF-yfOQ
+
+通俗易懂讲解自适应提升算法AdaBoost
+

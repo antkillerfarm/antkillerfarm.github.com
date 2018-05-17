@@ -96,6 +96,10 @@ http://datartisan.com/article/detail/120.html
 
 Seq2Seq的DIY简介
 
+https://mp.weixin.qq.com/s/U5yqXBHFD9LgIQJrqOlXFw
+
+机器翻译不可不知的Seq2Seq模型
+
 http://www.cnblogs.com/Determined22/p/6650373.html
 
 DL4NLP——seq2seq+attention机制的应用：文档自动摘要（Automatic Text Summarization）

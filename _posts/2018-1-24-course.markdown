@@ -252,3 +252,29 @@ http://www.math.pku.edu.cn/teachers/ganr/course/pr2010/
 
 北京大学：模式识别
 
+# 大数据平台参考资源
+
+https://mp.weixin.qq.com/s/oYiQEMelkXHbT3ke2BmHOw
+
+如何逐步去构建一个大型网站系统
+
+https://mp.weixin.qq.com/s/xlCO__HucTUd_gYNRTueGg
+
+携程基于大数据分析的实时风控体系
+
+https://mp.weixin.qq.com/s/B9zo0zThARAi11hRuJ-AqA
+
+开源实时数据处理系统Pulsar：一套搞定Kafka+Flink+DB
+
+https://mp.weixin.qq.com/s/y6ntgPxTaLFBJDn3usBd1g
+
+美团点评广告实时索引的设计与实现
+
+https://mp.weixin.qq.com/s/RME5b3plT97nYfUaCl9ePw
+
+关于缓存和数据库强一致的可行方案
+
+https://mp.weixin.qq.com/s/Al0yvkv0FUPjEBtcxS6Fmg
+
+传统数据仓库和云数据仓库的区别
+

@@ -18,9 +18,7 @@ $$head_i = Attention(\boldsymbol{Q}\boldsymbol{W}_i^Q,\boldsymbol{K}\boldsymbol{
 
 ## Self Attention
 
-到目前为止，对Attention层的描述都是一般化的，我们可以落实一些应用。比如，如果做阅读理解的话，Q可以是篇章的词向量序列，取K=V
-
-为问题的词向量序列，那么输出就是所谓的Aligned Question Embedding。
+到目前为止，对Attention层的描述都是一般化的，我们可以落实一些应用。比如，如果做阅读理解的话，Q可以是篇章的词向量序列，取K=V为问题的词向量序列，那么输出就是所谓的Aligned Question Embedding。
 
 而在Google的论文中，大部分的Attention都是Self Attention，即“自注意力”，或者叫内部注意力。
 
@@ -28,9 +26,7 @@ $$head_i = Attention(\boldsymbol{Q}\boldsymbol{W}_i^Q,\boldsymbol{K}\boldsymbol{
 
 ## Position Embedding
 
-然而，只要稍微思考一下就会发现，这样的模型并不能捕捉序列的顺序！换句话说，如果将K,V
-
-按行打乱顺序（相当于句子中的词序打乱），那么Attention的结果还是一样的。这就表明了，到目前为止，Attention模型顶多是一个非常精妙的“词袋模型”而已。
+然而，只要稍微思考一下就会发现，这样的模型并不能捕捉序列的顺序！换句话说，如果将K,V按行打乱顺序（相当于句子中的词序打乱），那么Attention的结果还是一样的。这就表明了，到目前为止，Attention模型顶多是一个非常精妙的“词袋模型”而已。
 
 这问题就比较严重了，大家知道，对于时间序列来说，尤其是对于NLP中的任务来说，顺序是很重要的信息，它代表着局部甚至是全局的结构，学习不到顺序信息，那么效果将会大打折扣（比如机器翻译中，有可能只把每个词都翻译出来了，但是不能组织成合理的句子）。
 
@@ -252,6 +248,4 @@ https://mp.weixin.qq.com/s/uvr-G5-_lKpyfyn5g7ES0w
 
 https://kexue.fm/archives/5253
 
-变分自编码器：原来是这么一回事
-
-
+变分自编码器（一）：原来是这么一回事

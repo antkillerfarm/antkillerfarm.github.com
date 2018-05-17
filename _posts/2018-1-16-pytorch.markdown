@@ -396,6 +396,8 @@ KWS：Keyword Search
 
 CMVN：cepstral mean and variance
 
+G2P：Grapheme-to-Phoneme
+
 ## OpenFst
 
 OpenFst是一个构造、合并、优化和搜索加权有限状态机FST的库。

@@ -275,3 +275,7 @@ https://mp.weixin.qq.com/s/rKHA2H4msHSInVn7A-fqHg
 
 让机器“看山是山”：脑启发的视觉计算
 
+https://mp.weixin.qq.com/s/MHaweyu4zegUrrgu6gm_LQ
+
+让机器“删繁就简”：深度神经网络加速与压缩
+
