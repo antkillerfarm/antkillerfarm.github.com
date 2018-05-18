@@ -387,3 +387,8 @@ https://mp.weixin.qq.com/s/YI1axNbO46dzLVPX0VSwyw
 https://mp.weixin.qq.com/s/7RQ6WGnbca5Sn87GUSQJdQ
 
 认知MIMO雷达的波束形成技术
+
+https://mp.weixin.qq.com/s/HIqnzT0X1zcVMv0YWUAZUg
+
+雷达波形和脉冲压缩
+

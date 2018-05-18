@@ -266,6 +266,10 @@ https://mp.weixin.qq.com/s/-BlBm3ZTZ32ijORJux7rTA
 
 DMLC团队发布GluonCV和GluonNLP：两种简单易用的DL工具箱
 
+https://mp.weixin.qq.com/s/PjwsfdlwZMRvuprkmi-saQ
+
+云脑科技-实习僧文本匹配模型及基于百度PaddlePaddle的应用
+
 # Kaldi
 
 Kaldi是一个语音识别的工具包。它由Daniel Povey于2009年创建。

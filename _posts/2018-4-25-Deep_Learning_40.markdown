@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  深度学习（四十）——模型压缩, OCR, 目标检测进阶
+title:  深度学习（四十）——模型压缩与加速, OCR, 目标检测进阶
 category: DL 
 ---
 
-# 模型压缩
+# 模型压缩与加速
 
 对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。
 
@@ -179,6 +179,10 @@ https://mp.weixin.qq.com/s/Ck_GDv1Xo-YMZcu-00gTOA
 https://mp.weixin.qq.com/s/qWJarPrjOrwxSX77xQ9rCw
 
 面向卷积神经网络的卷积核冗余消除策略
+
+https://mp.weixin.qq.com/s/QSGgvhkMUj3cXVlQwlzTFQ
+
+深度神经网络加速和压缩新进展年度报告
 
 # OCR
 

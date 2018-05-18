@@ -236,6 +236,10 @@ https://mp.weixin.qq.com/s/TWjFWe6-dZWDoTi5gN1BxA
 
 深度强化学习在指代消解中的一种尝试
 
+https://mp.weixin.qq.com/s/YnMgJDAh3XhyyNdI8RXmtw
+
+腾讯知文等提出新型生成式摘要模型：结合主题信息和强化训练生成更优摘要
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：

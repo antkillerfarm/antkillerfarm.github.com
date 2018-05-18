@@ -276,3 +276,7 @@ https://mp.weixin.qq.com/s/tENiB4P1--sD5B5r3Af16w
 
 Chinese Word Vectors：目前最全的中文预训练词向量集合
 
+https://mp.weixin.qq.com/s/S6KrNNz3TJQr8i3-fAZe-Q
+
+今日头条新闻文本分类数据集
+

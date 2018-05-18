@@ -416,6 +416,14 @@ https://mp.weixin.qq.com/s/yduK_XKQ-qhiYTNl-YZMFg
 
 利用Python实现卷积神经网络的可视化
 
+## Seaborn
+
+Seaborn是另一个非常棒的Matplotlib的威力加强版，专注于统计绘图，并可无缝对接Pandas库。
+
+官网：
+
+https://seaborn.pydata.org
+
 ## 参考
 
 https://mp.weixin.qq.com/s/S7gnAdekPFcyd4ni1m9phg
@@ -465,20 +473,3 @@ https://mp.weixin.qq.com/s/z3N5v4H_W2sxh2XPpFbAcA
 https://mp.weixin.qq.com/s/U2cDVRxZPVsqoL-zHn__CA
 
 Python做机器学习之路
-
-https://mp.weixin.qq.com/s/LgVS5N80UlCeEfrPtyUF4Q
-
-深度学习矩阵运算的概念和代码实现
-
-https://mp.weixin.qq.com/s/0XteuIk71qSpxrZPGVnMbg
-
-Python3实现K-近邻算法
-
-https://mp.weixin.qq.com/s/bGudwxu8c0LIxv1h64qZtQ
-
-Python3实现决策树算法
-
-https://mp.weixin.qq.com/s?__biz=MzA3MTM3NTA5Ng==&mid=2651056396&idx=1&sn=dabbda2c433e54a2bad506fc13bfd743
-
-<<战狼Ⅱ>>豆瓣十二万影评浅析
-

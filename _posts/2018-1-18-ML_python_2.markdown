@@ -8,6 +8,22 @@ category: AI
 
 ## 参考
 
+https://mp.weixin.qq.com/s/LgVS5N80UlCeEfrPtyUF4Q
+
+深度学习矩阵运算的概念和代码实现
+
+https://mp.weixin.qq.com/s/0XteuIk71qSpxrZPGVnMbg
+
+Python3实现K-近邻算法
+
+https://mp.weixin.qq.com/s/bGudwxu8c0LIxv1h64qZtQ
+
+Python3实现决策树算法
+
+https://mp.weixin.qq.com/s?__biz=MzA3MTM3NTA5Ng==&mid=2651056396&idx=1&sn=dabbda2c433e54a2bad506fc13bfd743
+
+<<战狼Ⅱ>>豆瓣十二万影评浅析
+
 https://mp.weixin.qq.com/s/QIfxxY6z7y77RDE_8gDEIg
 
 并行运算Process Pools
