@@ -270,6 +270,10 @@ https://mp.weixin.qq.com/s/PjwsfdlwZMRvuprkmi-saQ
 
 云脑科技-实习僧文本匹配模型及基于百度PaddlePaddle的应用
 
+https://mp.weixin.qq.com/s/Vb-7hGw7UOx4jP3lwW3Leg
+
+从VGG到ResNet，你想要的MXNet预训练模型轻松学
+
 # Kaldi
 
 Kaldi是一个语音识别的工具包。它由Daniel Povey于2009年创建。

@@ -152,6 +152,10 @@ https://mp.weixin.qq.com/s/NoeGzkZJVbbYG-mP_HZ4qQ
 
 一文详解决策树算法模型
 
+https://mp.weixin.qq.com/s/NTgzCXvbdXDR4N5J5z9Xpw
+
+通俗解释随机森林算法
+
 # 关联规则挖掘
 
 ## 基本概念

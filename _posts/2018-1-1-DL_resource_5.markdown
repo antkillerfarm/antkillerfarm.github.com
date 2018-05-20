@@ -4,6 +4,24 @@ title:  DL参考资源（五）
 category: resource 
 ---
 
+## 贝叶斯学习
+
+https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og
+
+贝叶斯学习与未来人工智能
+
+https://mp.weixin.qq.com/s/Zd4rFU7Lebr4zmzxThNyVw
+
+详解珠算：清华大学开源的贝叶斯深度学习库
+
+https://mp.weixin.qq.com/s/RpaOrngeXTKycLb3iCygZw
+
+利用贝叶斯神经网络进行随机动力系统中的学习与策略搜索
+
+https://mp.weixin.qq.com/s/lKm_ypn5I7tSjoQHceJ0jQ
+
+概率编程：使用贝叶斯神经网络预测金融市场价格
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/NdwbnEMEVfiX6YGepK9PBA

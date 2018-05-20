@@ -4,6 +4,66 @@ title:  DL参考资源（四）
 category: resource 
 ---
 
+# DL参考资源
+
+## 量子计算
+
+https://www.zhihu.com/question/28171555
+
+如何理解“量子退火”？
+
+http://mp.weixin.qq.com/s/FjET9HFNjVVMjqQM2KhtKA
+
+5分钟看懂中国最新的量子计算机
+
+https://mp.weixin.qq.com/s/WcRYHwXnv9FWpMcOEwIdQg
+
+量子计算的发展及核心问题
+
+https://mp.weixin.qq.com/s/Fb6EsXz8avFkGY7sMdNF6A
+
+用量子计算辅助深度学习：研究者提出量子辅助Helmholtz机
+
+https://mp.weixin.qq.com/s/8Gnk2bidyQ89VvKEcWKABw
+
+量子计算时代的机器学习
+
+https://mp.weixin.qq.com/s/XWFnRSj_y-W7VHctgQLpdA
+
+一文读懂量子机器学习
+
+https://mp.weixin.qq.com/s/9ZQc3RqCCcWYDplZ4RU2oA
+
+清华段路明组发现深度学习和量子物理重要关联
+
+https://mp.weixin.qq.com/s/LbyqAA_scfdDXDe_ESWEKg
+
+姚期智：呼之欲出的量子计算机，和它漫长的最后一英里
+
+https://mp.weixin.qq.com/s/BZpNi0b7vt71MUvN7bKvbw
+
+通往人工智能未来的三路竞赛：量子vs.神经形态vs.高性能计算
+
+https://mp.weixin.qq.com/s/ULciN9h2IybE59JMO6Kcgg
+
+清华大学段路明组提出生成模型的量子算法
+
+https://mp.weixin.qq.com/s/mNOLn7WiZFpGW25Ppefo3g
+
+何为量子机器学习？
+
+https://mp.weixin.qq.com/s/egmodqeThnw5H7DwKRwQbw
+
+如何运用数学进行高效生产？（模拟退火算法）
+
+https://mp.weixin.qq.com/s/86c59-nIsrTNUABx4QYobA
+
+量子机器学习入门科普：解读量子力学和机器学习的共生关系
+
+https://mp.weixin.qq.com/s/9woLRUGuirTV91uuHaP69A
+
+中科大潘建伟团队在光量子处理器上成功实现拓扑数据分析
+
 ## AI与游戏
 
 https://zhuanlan.zhihu.com/p/22604627
@@ -158,6 +218,10 @@ https://mp.weixin.qq.com/s/sYXVqnk5p8tvl6s0EIkr3w
 
 游戏代理框架，帮助您创建AI来玩任何您拥有的游戏！
 
+https://mp.weixin.qq.com/s/IFGUXI3YXVsjIVuJ717uaw
+
+用人工智能打王者荣耀：匹茨堡大学&腾讯AI Lab为游戏AI引入MCTS方法
+
 ## AI医疗
 
 https://github.com/albarqouni/Deep-Learning-for-Medical-Applications
@@ -236,7 +300,7 @@ https://zhuanlan.zhihu.com/p/31067515
 
 《Semi-Supervised Classification with Graph Convolutional Networks》阅读笔记
 
-# 元学习
+## 元学习
 
 https://mp.weixin.qq.com/s/KKK3VEpwL90g6Aro8qtXxQ
 
@@ -347,56 +411,4 @@ https://mp.weixin.qq.com/s/83HufWMDnuXIOCCfgqeDJw
 https://mp.weixin.qq.com/s/kmEFjzFIbNq0_qdjc1Wm_w
 
 DeepMind新智能体架构Unicorn：持续学习能力胜过多个基准智能体
-
-## 贝叶斯学习
-
-https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og
-
-贝叶斯学习与未来人工智能
-
-https://mp.weixin.qq.com/s/Zd4rFU7Lebr4zmzxThNyVw
-
-详解珠算：清华大学开源的贝叶斯深度学习库
-
-https://mp.weixin.qq.com/s/RpaOrngeXTKycLb3iCygZw
-
-利用贝叶斯神经网络进行随机动力系统中的学习与策略搜索
-
-https://mp.weixin.qq.com/s/lKm_ypn5I7tSjoQHceJ0jQ
-
-概率编程：使用贝叶斯神经网络预测金融市场价格
-
-# DL参考资源
-
-https://mp.weixin.qq.com/s/oltHCTombWE2WP_zbbOr3A
-
-Deep Learning之训练过程中出现NaN问题
-
-http://mp.weixin.qq.com/s/sIIoGilZgQHn4jDiYzEelw
-
-大咖解读Bengio笔记——邓侃：用深度学习模型，解构并重构人类思维
-
-http://mp.weixin.qq.com/s/Ybq6hSTPpyYQSNGJg1tgeQ
-
-AI距离匹敌人类大脑还有多远？人工神经网络和生物神经网络最详细对比
-
-http://mp.weixin.qq.com/s/UKu9T5zS1Z2dfNB1YsYGkQ
-
-NEAT学习：教机器自我编程
-
-http://mp.weixin.qq.com/s/vhBOrR6uTL2vGXnYC8BS1w
-
-Windows版深度学习软件安装指南
-
-https://mp.weixin.qq.com/s/ViQqeER1NXtJOtnLg76TWg
-
-关于远程监督，我们来推荐几篇值得读的论文
-
-https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
-
-谷歌提出多图像抠图算法，并弥补水印技术的一致性漏洞
-
-https://zhuanlan.zhihu.com/p/28639662
-
-百家争鸣的Meta Learning/Learning to learn
 

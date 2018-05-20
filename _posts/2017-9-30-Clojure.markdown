@@ -233,3 +233,38 @@ https://mp.weixin.qq.com/s/qos7VRFP7uYZ6Qt83KiPhw
 
 用机器学习构建O(N)复杂度的排序算法，可在GPU和TPU上加速计算
 
+https://mp.weixin.qq.com/s/X1Alcl7rVfTtZGZ40iXjXw
+
+Spotlight 论文：非参数化方法实现的极端无监督特征学习
+
+https://mp.weixin.qq.com/s/oltHCTombWE2WP_zbbOr3A
+
+Deep Learning之训练过程中出现NaN问题
+
+http://mp.weixin.qq.com/s/sIIoGilZgQHn4jDiYzEelw
+
+大咖解读Bengio笔记——邓侃：用深度学习模型，解构并重构人类思维
+
+http://mp.weixin.qq.com/s/Ybq6hSTPpyYQSNGJg1tgeQ
+
+AI距离匹敌人类大脑还有多远？人工神经网络和生物神经网络最详细对比
+
+http://mp.weixin.qq.com/s/UKu9T5zS1Z2dfNB1YsYGkQ
+
+NEAT学习：教机器自我编程
+
+http://mp.weixin.qq.com/s/vhBOrR6uTL2vGXnYC8BS1w
+
+Windows版深度学习软件安装指南
+
+https://mp.weixin.qq.com/s/ViQqeER1NXtJOtnLg76TWg
+
+关于远程监督，我们来推荐几篇值得读的论文
+
+https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
+
+谷歌提出多图像抠图算法，并弥补水印技术的一致性漏洞
+
+https://zhuanlan.zhihu.com/p/28639662
+
+百家争鸣的Meta Learning/Learning to learn

@@ -72,6 +72,10 @@ http://www.taodocs.com/p-62206829.html
 
 《受限波尔兹曼机简介》张春霞著
 
+https://mp.weixin.qq.com/s/mXJthyETebtww5TvEljuoQ
+
+预测电影偏好？如何利用自编码器实现协同过滤方法
+
 # SOM
 
 Self Organizing Maps (SOM)（也叫kohonen network）是一种无监督算法，主要用于聚类和可视化。

@@ -98,6 +98,10 @@ https://zhuanlan.zhihu.com/p/36788547
 
 网络表示学习论文引介
 
+https://mp.weixin.qq.com/s/p7sCt5Xj1U5vIZftRXBvzw
+
+cw2vec理论及其实现
+
 # NN的INT8计算
 
 ## 概述
@@ -161,6 +165,10 @@ http://blog.csdn.net/tangwei2014/article/details/55077172
 https://mp.weixin.qq.com/s/oumf8l28ijYLxc9fge0FMQ
 
 嵌入式深度学习之神经网络二值化
+
+https://mp.weixin.qq.com/s/tbRj5Wd69n9gvSzW4oKStg
+
+异或神经网络
 
 # 视频目标分割
 

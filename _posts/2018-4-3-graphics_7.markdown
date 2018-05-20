@@ -228,3 +228,63 @@ ILSVRC 2010的冠军是NEC和UIUC的联合队伍。这也是DL于2012年大放�
 
 上图是NEC算法的基本流程图。这里不打算描述整个算法，而仅对其中涉及的术语做一个解释。
 
+# FBank
+
+http://blog.csdn.net/wxb1553725576/article/details/78048546
+
+Kaldi特征提取之-FBank
+
+# fMLLR
+
+https://blog.csdn.net/xmdxcsj/article/details/78512645
+
+声学特征变换fMLLR
+
+# SGMM
+
+https://blog.csdn.net/quhediegooo/article/details/68946100
+
+子空间高斯混合模型-SGMM
+
+# WFST
+
+Weighted-Finite-State-Transducer
+
+https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/ParallelizingWFSTSpeechDecoders.ICASSP2016.pdf
+
+PARALLELIZING WFST SPEECH DECODERS
+
+http://www.cs.nyu.edu/~mohri/pub/csl01.pdf
+
+Weighted Finite-State Transducers in Speech Recognition
+
+https://blog.csdn.net/l_b_yuan/article/category/6132477
+
+这个专栏包含了4篇WFST的blog
+
+http://djt.qq.com/article/view/507
+
+定制你的语音识别-并行语音识别解码空间
+
+https://blog.csdn.net/lucky_ricky/article/details/77511543
+
+Kaldi WFST 构图 学习
+
+# 汽车声学
+
+https://zhuanlan.zhihu.com/p/22722073
+
+当我谈汽车声学时，我在谈什么(一)
+
+https://zhuanlan.zhihu.com/p/28608243
+
+当我谈汽车声学时，我在谈什么(二)
+
+https://zhuanlan.zhihu.com/p/31240294
+
+当我谈汽车声学时，我在谈什么(三)
+
+https://zhuanlan.zhihu.com/p/34256635
+
+当我谈汽车声学时，我在谈什么(四)
+

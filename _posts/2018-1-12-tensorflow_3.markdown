@@ -388,4 +388,7 @@ https://mp.weixin.qq.com/s/w84gLswUFkl4NJSMv0RnIA
 
 OpenAI详细解析：攻击者是如何使用「对抗样本」攻击机器学习的！
 
+https://mp.weixin.qq.com/s/ebLHZAG8H78TsZUKSzAtIw
+
+TF官方博客：基于TensorFlow.js框架的浏览器实时姿态估计
 

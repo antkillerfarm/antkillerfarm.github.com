@@ -246,14 +246,6 @@ https://mp.weixin.qq.com/s/QeMjOGlUqYSPmcSjnj1HQQ
 
 用生成对抗网络解决NLP问题：谷歌大脑提出MaskGAN
 
-https://zhuanlan.zhihu.com/p/34042498
-
-深度解密换脸应用Deepfake
-
-https://mp.weixin.qq.com/s/gvPTNtrd5Du9Oablp3jZYw
-
-如何使用DeepFake实现视频换脸
-
 https://mp.weixin.qq.com/s/uJEGXNvBVJfsxYJUQCz4DQ
 
 DA-GAN技术：计算机帮你创造奇妙“新物种”
@@ -294,6 +286,10 @@ https://mp.weixin.qq.com/s/Y8D0gr1ybQ48H0bDpPvD8w
 
 二次元萌妹高清舞姿随心变，换装只需一瞬间：又是GAN立功了
 
+https://mp.weixin.qq.com/s/H_EcHi9BRur214rktocGbg
+
+怎样用GAN生成各种胖吉猫？谷歌大脑程序员教你撩妹神技
+
 # 图像变换
 
 https://mp.weixin.qq.com/s/88tBoAVziGEFXIGfvZZp8g
@@ -319,6 +315,22 @@ https://mp.weixin.qq.com/s/joRcvCQwLYgRd29mfPd7XA
 https://mp.weixin.qq.com/s/73mkWlqJsVdu9m1kPDvfbQ
 
 用AI让静图变动图：CVPR热文提出动态纹理合成新方法
+
+https://mp.weixin.qq.com/s/gEFzogsteK_1VeywbQxbgQ
+
+(GAN)延时摄影视频的生成
+
+https://zhuanlan.zhihu.com/p/34042498
+
+深度解密换脸应用Deepfake
+
+https://mp.weixin.qq.com/s/gvPTNtrd5Du9Oablp3jZYw
+
+如何使用DeepFake实现视频换脸
+
+https://mp.weixin.qq.com/s/BTzV7ulweqFQokdQ-AX2Rg
+
+三位一体的纯正视频换脸术，拒绝别人的嘴替我说话
 
 # 行人重识别
 

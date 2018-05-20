@@ -354,3 +354,11 @@ http://www.crownpku.com//2017/08/19/%E7%94%A8Bi-GRU%E5%92%8C%E5%AD%97%E5%90%91%E
 
 用Bi-GRU和字向量做端到端的中文关系抽取
 
+https://mp.weixin.qq.com/s/gJFwWnKn7BV_BcADu_vJCg
+
+谷歌语义文本最新进展+两个开源新模型
+
+https://mp.weixin.qq.com/s/f8NoGxirMkTzwLERKon1Vw
+
+北京大学提出基于CNN的学术论文自动评分模型
+

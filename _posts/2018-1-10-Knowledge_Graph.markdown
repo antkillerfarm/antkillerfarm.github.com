@@ -244,6 +244,10 @@ https://mp.weixin.qq.com/s/WU6PezrzTwQuXi7DE9Z0sg
 
 W3C之RDFa中文文档
 
+https://mp.weixin.qq.com/s/MYbH12y9u9nlgMVX2SiPog
+
+清华大学刘知远：在深度学习时代用HowNet搞事情
+
 # Kaldi（续）
 
 ## SCTK

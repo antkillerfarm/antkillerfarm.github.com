@@ -26,6 +26,10 @@ https://mp.weixin.qq.com/s/eTwSo3GnxSnK-BwwZeWmKA
 
 Jeff Dean等提出自动化分层模型，优化CPU、GPU等异构环境，性能提升超60%
 
+https://mp.weixin.qq.com/s/q0VENBNgolpeWmDapF5q_g
+
+在有池化层、1步幅的CNN上减少冗余计算，一种广泛适用的架构转换方法
+
 ## 实战
 
 http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg
@@ -270,31 +274,7 @@ https://mp.weixin.qq.com/s/SUz2aqz9VM3xnvKUL80y1w
 
 IBM、哈佛联合提出Seq2Seq-Vis：机器翻译模型的可视化调试工具
 
-## 量子计算 & 遗传算法
-
-https://www.zhihu.com/question/28171555
-
-如何理解“量子退火”？
-
-http://mp.weixin.qq.com/s/FjET9HFNjVVMjqQM2KhtKA
-
-5分钟看懂中国最新的量子计算机
-
-https://mp.weixin.qq.com/s/WcRYHwXnv9FWpMcOEwIdQg
-
-量子计算的发展及核心问题
-
-https://mp.weixin.qq.com/s/Fb6EsXz8avFkGY7sMdNF6A
-
-用量子计算辅助深度学习：研究者提出量子辅助Helmholtz机
-
-https://mp.weixin.qq.com/s/8Gnk2bidyQ89VvKEcWKABw
-
-量子计算时代的机器学习
-
-https://mp.weixin.qq.com/s/XWFnRSj_y-W7VHctgQLpdA
-
-一文读懂量子机器学习
+## 遗传算法 & 进化算法
 
 http://blog.csdn.net/u010945683/article/details/40987331
 
@@ -351,38 +331,6 @@ https://mp.weixin.qq.com/s/0esR8Z6YlWayKpz-TS2_Zg
 https://mp.weixin.qq.com/s/K65ORf5Ke3ywANNP11xBvQ
 
 利用进化方法自动生成神经网络：深度进化网络DENSER
-
-https://mp.weixin.qq.com/s/9ZQc3RqCCcWYDplZ4RU2oA
-
-清华段路明组发现深度学习和量子物理重要关联
-
-https://mp.weixin.qq.com/s/LbyqAA_scfdDXDe_ESWEKg
-
-姚期智：呼之欲出的量子计算机，和它漫长的最后一英里
-
-https://mp.weixin.qq.com/s/BZpNi0b7vt71MUvN7bKvbw
-
-通往人工智能未来的三路竞赛：量子vs.神经形态vs.高性能计算
-
-https://mp.weixin.qq.com/s/ULciN9h2IybE59JMO6Kcgg
-
-清华大学段路明组提出生成模型的量子算法
-
-https://mp.weixin.qq.com/s/mNOLn7WiZFpGW25Ppefo3g
-
-何为量子机器学习？
-
-https://mp.weixin.qq.com/s/egmodqeThnw5H7DwKRwQbw
-
-如何运用数学进行高效生产？（模拟退火算法）
-
-https://mp.weixin.qq.com/s/86c59-nIsrTNUABx4QYobA
-
-量子机器学习入门科普：解读量子力学和机器学习的共生关系
-
-https://mp.weixin.qq.com/s/9woLRUGuirTV91uuHaP69A
-
-中科大潘建伟团队在光量子处理器上成功实现拓扑数据分析
 
 https://mp.weixin.qq.com/s/eBSPMJUY6LVvjy-4AAUphA
 

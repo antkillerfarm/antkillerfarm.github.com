@@ -90,6 +90,10 @@ https://mp.weixin.qq.com/s/1X9xiZkmVPI-j-aipr-ocg
 
 AlphaGo Master最新架构和算法，谷歌云与TPU拆解
 
+https://mp.weixin.qq.com/s/Yo0uKd1Mzy4mmS4r0mxfVw
+
+有图有真相：深度拆解谷歌TPU3.0，新一代AI协同处理器
+
 https://mp.weixin.qq.com/s/8HIZRhb-KJOtPnQtQ3GQVg
 
 第一代芯片是CPU，第二代是GPU，第三代是什么？

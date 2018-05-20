@@ -36,6 +36,10 @@ http://cs229.stanford.edu/syllabus.html
 
 ![](/images/article/ML.jpg)
 
+除此之外，国立台湾大学林轩田教授的《机器学习基石》也是写的非常好的：
+
+https://www.csie.ntu.edu.tw/~htlin/mooc/
+
 # 线性回归
 
 线性回归属于有监督学习（supervised learning）的其中一种方法。

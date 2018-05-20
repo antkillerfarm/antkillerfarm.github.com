@@ -279,3 +279,7 @@ https://mp.weixin.qq.com/s/MHaweyu4zegUrrgu6gm_LQ
 
 让机器“删繁就简”：深度神经网络加速与压缩
 
+https://mp.weixin.qq.com/s/_HxhOp1E7cRD03RXqx97Vg
+
+让机器“提纲挈领”：视觉系统的紧凑性初探
+
