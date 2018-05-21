@@ -179,6 +179,12 @@ SRGAN的网络结构如下图所示：
 
 由于SRGAN的目标不在于最小化MSE，因此通常情况下，它的PSNR和SSIM都不是太好，但的确能提供一些其它方法无法提供的细节。
 
+参考：
+
+https://mp.weixin.qq.com/s/YPdIfrCQrWGYqtREIl3OaA
+
+SRGAN With WGAN：让超分辨率算法训练更稳定
+
 # DemosaicNet
 
 DemosaicNet是MIT CSAIL的在读博士生Michaël Gharbi的作品。

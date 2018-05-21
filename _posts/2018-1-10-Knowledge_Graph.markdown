@@ -348,6 +348,14 @@ https://blog.csdn.net/nihaomafb/article/details/48009695
 
 语言模型Katz backoff以及HMM模型
 
+## nnet
+
+kaldi的nnet1和nnet2是以层设计为基础的，也即当你新增加一种神经网络层时需要自己定义它的结构，都有哪些变量，正向怎么算，反向误差怎么传播等等，并且过于复杂的连接方式很难支持。
+
+而kaldi的nnet3和CNTK以及TensorFlow都是以图结构为基础的，通过配置文件实现对网络连接方式的定义，数据就像流水一样在你定义的网络图中游走，并自己实现误差的反向传播。
+
+
+
 ## 参考
 
 https://blog.csdn.net/lijin6249/article/details/51838936

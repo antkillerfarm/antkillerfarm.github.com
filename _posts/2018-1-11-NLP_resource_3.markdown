@@ -362,3 +362,6 @@ https://mp.weixin.qq.com/s/f8NoGxirMkTzwLERKon1Vw
 
 北京大学提出基于CNN的学术论文自动评分模型
 
+https://mp.weixin.qq.com/s/-SQETPUnV2hu5QRqYsXdmg
+
+利用跨语言知识改进稀缺资源语言命名实体识别

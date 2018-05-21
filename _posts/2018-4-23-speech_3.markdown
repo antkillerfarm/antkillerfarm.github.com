@@ -108,6 +108,8 @@ Dynamic Time Warping是Vintsiuk于1968年提出的算法。
 
 ![](/images/img2/Dynamic_time_warping.png)
 
+**图1**
+
 如上图所示，因为语音信号具有相当大的随机性，即使同一个人在不同时刻发同一个音，也不可能具有完全的时间长度。而且同一个单词内的不同音素的发音速度也不同，比如有的人会把“A”这个音拖得很长，或者把“i”发的很短。在这些复杂情况下，使用传统的欧几里得距离，无法有效地求得两个时间序列之间的距离（或者相似性）。
 
 回到上面的图。如果我们将两个序列中相关联的点，用上图中的虚线连接的话，就会发现这两个序列实际上是很相似的。
@@ -124,20 +126,53 @@ Dynamic Time Warping是Vintsiuk于1968年提出的算法。
 
 显然，这个归整路径不是随意选择的，它需要满足以下几个约束：
 
-1）边界条件：$$w_1=(1,1)$$和$$w_k=(m,n)$$。任何一种语音的发音快慢都有可能变化，但是其各部分的先后次序不可能改变，因此所选的路径必定是从左下角出发，在右上角结束。
+1）**边界条件**：$$w_1=(1,1)$$和$$w_k=(m,n)$$。任何一种语音的发音快慢都有可能变化，但是其各部分的先后次序不可能改变，因此所选的路径必定是从左下角出发，在右上角结束。
 
-2）连续性：如果$$w_{k-1}= (a’, b’)$$，那么对于路径的下一个点wk=(a, b)需要满足 (a-a’) <=1和 (b-b’) <=1。也就是不可能跨过某个点去匹配，只能和自己相邻的点对齐。这样可以保证Q和C中的每个坐标都在W中出现。
+2）**连续性**：如果$$w_{k-1}= (a’, b’)$$，那么对于路径的下一个点$$w_k=(a, b)$$需要满足$$(a-a’) \le 1$$和$$(b-b’) \le 1$$。也就是不可能跨过某个点去匹配，只能和自己相邻的点对齐。这样可以保证R和T中的每个坐标都在W中出现。
 
-3）单调性：如果wk-1= (a’, b’)，那么对于路径的下一个点wk=(a, b)需要满足0<=(a-a’)和0<= (b-b’)。这限制W上面的点必须是随着时间单调进行的。以保证图B中的虚线不会相交。
+3）**单调性**：如果$$w_{k-1}= (a’, b’)$$，那么对于路径的下一个点$$w_k=(a, b)$$需要满足$$0\le (a-a’)$$和$$0\le (b-b’)$$。这限制W上面的点必须是随着时间单调进行的。以保证图1中的虚线不会相交。
 
-这里假设标准模板R为字母ABCDEF(6个)，测试模板T为1234(4个)。R和T中各元素之间的距离已经给出。如下：
+结合连续性和单调性约束，每一个格点的路径就只有三个方向了。例如如果路径已经通过了格点$$(i, j)$$，那么下一个通过的格点只可能是下列三种情况之一：$$(i+1, j)$$，$$(i, j+1)$$或者$$(i+1, j+1)$$。
+
+归整路径实际上就是满足上述约束的所有路径中，cumulative distances最小的那条路径，即：
+
+$$D(i,j)=Dist(i,j)+\min(D(i-1,j),D(i,j-1),D(i-1,j-1)), D(1,1) = 0$$
+
+这里的距离可以使用欧氏距离，也可以使用马氏距离。
+
+DTW实例的具体计算过程可参见：
+
+http://www.cnblogs.com/tornadomeet/archive/2012/03/23/2413363.html
+
+从一个实例中学习DTW算法
+
+从中可以看出，DTW实际上是一个动态规划问题。
+
+更一般的，DTW也可用于计算两个离散的序列(不一定要与时间有关)的相似度。和《机器学习（二十二）》的EMD距离相比，DTW距离能够**保持序列的形状信息**。
+
+除此之外，我们还可以增加别的约束：
+
+**全局路径窗口(Warping Window)**：$$\mid \phi_x(s)-\phi_y(s)\mid \leq r$$。比较好的匹配路径往往在对角线附近，所以我们可以只考虑在对角线附近的一个区域寻找合适路径(r就是这个区域的宽度);
+
+**斜率约束(Slope Constrain)**：$$\dfrac{\phi_x(m)-\phi_x(n)}{\phi_y(m)-\phi_y(n)}\leq p$$和$$\dfrac{\phi_y(m)-\phi_y(n)}{\phi_x(m)-\phi_x(n)}\leq q$$，这个可以看做是局部的Warping Window，用于避免路径太过平缓或陡峭，导致短的序列匹配到太长的序列或者太长的序列匹配到太短的序列。
 
 ![](/images/img2/DTW.png)
 
+上图是两种常见的约束搜索空间的方法。
 
+DTW的缺点：
 
+1.运算量大；
 
-更一般的，DTW也可用于计算两个离散的序列(不一定要与时间有关)的相似度。
+2.识别性能过分依赖于端点检测；
+
+3.太依赖于说话人的原来发音；
+
+4.不能对样本作动态训练；
+
+5.没有充分利用语音信号的时序动态特性；
+
+DTW适合于特定人基元较小的场合，多用于孤立词识别；
 
 参考：
 
@@ -148,10 +183,6 @@ http://blog.csdn.net/zouxy09/article/details/9140207
 https://blog.csdn.net/raym0ndkwan/article/details/45614813
 
 DTW动态时间规整
-
-http://www.cnblogs.com/tornadomeet/archive/2012/03/23/2413363.html
-
-从一个实例中学习DTW算法
 
 http://www.cnblogs.com/luxiaoxun/archive/2013/05/09/3069036.html
 
@@ -168,54 +199,4 @@ http://blog.csdn.net/zouxy09/article/details/9141875
 http://blog.csdn.net/zouxy09/article/details/9153255
 
 矢量量化（Vector Quantization）
-
-# MFCC
-
-## Mel scale
-
-Mel scale是Stevens、Volkmann和Newman于1937年发明的一种主观音阶标准。
-
->Stanley Smith Stevens，1906～1973，Harvard University心理学教授。
-
->John E. Volkmann，1905～1980，Radio Corporation of America研究员。
-
->Edwin B. Newman，1908~1989，Harvard University心理学教授。
-
-声音作为一种波动，一般以Hz作为频率差异的客观标准，然而相同频率差的两组声音，在人耳听来，其频率差（也就是所谓的音阶）实际上是不同的。因此，Stevens等人采取实验的方法，确定了人耳的主观音阶标准。
-
-该标准以Mel作为单位，规定1000Hz的声音所对应的音阶为1000Mel。
-
-Mel scale从严格的定义上并没有一个简单的公式来表示。但一般采用如下公式进行转换：
-
-$$m = 2595 \log_{10}\left(1 + \frac{f}{700}\right)$$
-
-从中可以看出，人耳对于高频声音的分辨率实际上是不如低频声音的。
-
-![](/images/img2/Mel_scale.png)
-
->Mel是melody的别称，有的blog上说Mel是个人，他发明了MFCC，这纯粹是胡说八道。
-
-## MFCC
-
-Mel-frequency cepstral coefficients是由Paul Mermelstein提出的一种音频特征。
-
->Paul G. Mermelstein，明尼苏达大学神经科学教授。
-
-## 参考
-
-http://blog.csdn.net/zouxy09/article/details/9156785
-
-梅尔频率倒谱系数（MFCC）
-
-https://my.oschina.net/jamesju/blog/193343
-
-语音特征参数MFCC提取过程详解
-
-https://liuyanfeier.github.io/2017/10/26/2017-10-27-Kaldi%E4%B9%8Bfbank%E5%92%8Cmfcc%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/
-
-kaldi之fbank和mfcc特征提取
-
-https://zhuanlan.zhihu.com/p/26680599
-
-语音信号预处理及特征参数提取
 

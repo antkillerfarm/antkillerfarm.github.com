@@ -174,6 +174,10 @@ https://mp.weixin.qq.com/s/UyNpJZ7k_q1qVdcNhrzDcQ
 
 直观详解：拉格朗日乘法和KKT条件
 
+https://mp.weixin.qq.com/s/PELnlB5vMV0gGJbL6BzoIA
+
+原始-对偶算法的设计原理
+
 ## 支持向量
 
 针对最优边距分类问题，我们定义：

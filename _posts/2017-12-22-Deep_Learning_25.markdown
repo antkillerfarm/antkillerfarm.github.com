@@ -240,6 +240,10 @@ https://mp.weixin.qq.com/s/ANpBFnsLXTIiW6WHzGrv2g
 
 自注意力机制学习句子embedding
 
+https://mp.weixin.qq.com/s/49fQX8yiOIwDyof3PD01rA
+
+CMU&谷歌大脑提出新型问答模型QANet：仅使用卷积和自注意力，性能大大优于RNN
+
 # VAE
 
 变分自编码器（Variational Auto-Encoder，VAE）是Autoencoder的一种扩展。

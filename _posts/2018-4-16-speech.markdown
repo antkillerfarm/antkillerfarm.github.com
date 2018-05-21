@@ -87,7 +87,7 @@ kaldi-ctc: CTC End-to-End ASR
 
 ## HTK
 
-Hidden Markov Model Toolkit是Cambridge University开发的语音识别的工具包。
+Hidden Markov Model Toolkit是Cambridge University开发的语音识别的工具包。它是GMM-HMM时代最为流行的语音识别工具，但缺乏对DL的支持。
 
 官网：
 
