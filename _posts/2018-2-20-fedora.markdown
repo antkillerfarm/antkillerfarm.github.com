@@ -297,3 +297,6 @@ https://mp.weixin.qq.com/s/_HxhOp1E7cRD03RXqx97Vg
 
 让机器“提纲挈领”：视觉系统的紧凑性初探
 
+https://mp.weixin.qq.com/s/C1PydJQJjZtf0mHIIDcFvg
+
+让机器“解疑释惑”：视觉世界中的结构化理解

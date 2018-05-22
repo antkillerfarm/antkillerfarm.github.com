@@ -250,6 +250,10 @@ https://mp.weixin.qq.com/s/opJtn5mPVjnfRwr5UZ4aJg
 
 FTRL原理与工程实践
 
+http://www.cnblogs.com/EE-NovRain/p/3810737.html
+
+各大公司广泛使用的在线学习算法FTRL详解
+
 https://mp.weixin.qq.com/s/q9FU19Hpw2eWLLhsY5lYJQ
 
 parameter-free contextual bandits
