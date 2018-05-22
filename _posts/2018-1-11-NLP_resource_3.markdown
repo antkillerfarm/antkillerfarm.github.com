@@ -365,3 +365,9 @@ https://mp.weixin.qq.com/s/f8NoGxirMkTzwLERKon1Vw
 https://mp.weixin.qq.com/s/-SQETPUnV2hu5QRqYsXdmg
 
 利用跨语言知识改进稀缺资源语言命名实体识别
+
+https://mp.weixin.qq.com/s/ILn-XqAQ_DYCFsiRgqYBrQ
+
+微软亚洲研究院院长副院长周明：语言智能的进展
+
+

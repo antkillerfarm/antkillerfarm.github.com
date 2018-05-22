@@ -248,6 +248,10 @@ https://mp.weixin.qq.com/s/MYbH12y9u9nlgMVX2SiPog
 
 清华大学刘知远：在深度学习时代用HowNet搞事情
 
+https://mp.weixin.qq.com/s/86y2VP3gMTUnfbN2OK5BNw
+
+基于实体、属性和关系的知识表示学习
+
 # Kaldi（续）
 
 ## SCTK

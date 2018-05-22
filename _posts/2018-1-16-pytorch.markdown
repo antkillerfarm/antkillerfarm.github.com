@@ -274,6 +274,10 @@ https://mp.weixin.qq.com/s/Vb-7hGw7UOx4jP3lwW3Leg
 
 从VGG到ResNet，你想要的MXNet预训练模型轻松学
 
+https://mp.weixin.qq.com/s/CgxrvNfyu35SMvWBAt-5kg
+
+MXNet开放支持Keras，高效实现CNN与RNN的分布式训练
+
 # Kaldi
 
 Kaldi是一个语音识别的工具包。它由Daniel Povey于2009年创建。

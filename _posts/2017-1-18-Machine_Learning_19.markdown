@@ -100,6 +100,10 @@ https://mp.weixin.qq.com/s/hY5cEug3xEpkkPE1X0Ykvg
 
 GBDT详解
 
+https://mp.weixin.qq.com/s/JU0H1cYIyWLgOkdBgra-eA
+
+GBDT！深入浅出详解梯度提升决策树
+
 https://mp.weixin.qq.com/s/-AwJvJ_YQ7p_yo5TNHTOfw
 
 决策树的python实现

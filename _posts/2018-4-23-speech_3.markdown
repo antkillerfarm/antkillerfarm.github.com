@@ -6,6 +6,16 @@ category: graphics
 
 # 其他前端问题（续）
 
+## 声源信号提取
+
+家里人说话太多，DingDong听谁的呢。这个时候就需要DingDong聪明的辨别出哪个声音才是指令。而麦克风阵列可以实现声源信号提取，声源信号的提取就是从多个声音信号中提取出目标信号，声源信号分离技术则是将需要将多个混合声音全部提取出来。
+
+利用麦克风阵列做信号的提取和分离主要有以下几种方式：
+
+(1)基于波束形成的方法，即通过向不同方向的声源分别形成拾音波束，并且抑制其他方向的声音，来进行语音提取或分离；
+
+(2)基于传统的盲源信号分离（Blind Source Separation）的方法进行，主要包括主成分分析（Principal Component Analysis，PCA）和基于独立成分分析（Independent Component Analysis，ICA）的方法。
+
 ## 回声抵消
 
 严格来说，这里不应该叫回声，应该叫“自噪声”。回声是混响的延伸概念，这两者的区别就是回声的时延更长。一般来说，超过100毫秒时延的混响，人类能够明显区分出，似乎一个声音同时出现了两次，我们就叫做回声，比如天坛著名的回声壁。
@@ -100,6 +110,18 @@ https://wenku.baidu.com/view/6123ba2f0066f5335a8121fe.html
 
 人声频率范围及各频段音色效果
 
+# 建模单元
+
+建模单元是指声音建模的最小单元。从细到粗，一般有**state、phoneme、character**三级。
+
+描述一种语言的基本单位被称为音素phoneme，例如BRYAN这个词就可以看做是由B, R, AY, AX, N五个音素构成的。这种模式也叫做单音素monophone模式。
+
+然而语音没有图像识别那么简单，因为我们再说话的时候很多发音都是连在一起的，很难区分，所以一般用左中右三个HMM state来描述一个音素，也就是说BRYAN这个词中的R音素就变成了用B-R, R, R-AY三个HMM state来表示。这种模式又被称作三音素triphone模式。
+
+character显然是个最粗的划分，尽管英语是表音文字，然而一个字母有多个发音，仍然是个普遍现象。
+
+在GMM-HMM时代，人们倾向于细粒度建模，因为模型越细，效果越好。但DL时代，人们更倾向于粗粒度建模，因为这样做，可以加快语音识别的解码速度，从而可以使用更深、更复杂的神经网络建模声学模型。
+
 # DTW
 
 Dynamic Time Warping是Vintsiuk于1968年提出的算法。
@@ -149,54 +171,4 @@ http://www.cnblogs.com/tornadomeet/archive/2012/03/23/2413363.html
 从中可以看出，DTW实际上是一个动态规划问题。
 
 更一般的，DTW也可用于计算两个离散的序列(不一定要与时间有关)的相似度。和《机器学习（二十二）》的EMD距离相比，DTW距离能够**保持序列的形状信息**。
-
-除此之外，我们还可以增加别的约束：
-
-**全局路径窗口(Warping Window)**：$$\mid \phi_x(s)-\phi_y(s)\mid \leq r$$。比较好的匹配路径往往在对角线附近，所以我们可以只考虑在对角线附近的一个区域寻找合适路径(r就是这个区域的宽度);
-
-**斜率约束(Slope Constrain)**：$$\dfrac{\phi_x(m)-\phi_x(n)}{\phi_y(m)-\phi_y(n)}\leq p$$和$$\dfrac{\phi_y(m)-\phi_y(n)}{\phi_x(m)-\phi_x(n)}\leq q$$，这个可以看做是局部的Warping Window，用于避免路径太过平缓或陡峭，导致短的序列匹配到太长的序列或者太长的序列匹配到太短的序列。
-
-![](/images/img2/DTW.png)
-
-上图是两种常见的约束搜索空间的方法。
-
-DTW的缺点：
-
-1.运算量大；
-
-2.识别性能过分依赖于端点检测；
-
-3.太依赖于说话人的原来发音；
-
-4.不能对样本作动态训练；
-
-5.没有充分利用语音信号的时序动态特性；
-
-DTW适合于特定人基元较小的场合，多用于孤立词识别；
-
-参考：
-
-http://blog.csdn.net/zouxy09/article/details/9140207
-
-动态时间规整（DTW）
-
-https://blog.csdn.net/raym0ndkwan/article/details/45614813
-
-DTW动态时间规整
-
-http://www.cnblogs.com/luxiaoxun/archive/2013/05/09/3069036.html
-
-Dynamic Time Warping动态时间规整算法
-
-# Pitch Detection
-
-http://blog.csdn.net/zouxy09/article/details/9141875
-
-基音周期估计（Pitch Detection）
-
-# Vector Quantization
-
-http://blog.csdn.net/zouxy09/article/details/9153255
-
-矢量量化（Vector Quantization）
 

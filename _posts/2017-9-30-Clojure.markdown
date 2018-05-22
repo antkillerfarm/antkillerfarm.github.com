@@ -268,3 +268,9 @@ https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
 https://zhuanlan.zhihu.com/p/28639662
 
 百家争鸣的Meta Learning/Learning to learn
+
+https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw
+
+分段映射」帮助利用少量样本习得新类别细粒度分类器
+
+

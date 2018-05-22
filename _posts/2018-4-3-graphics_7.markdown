@@ -228,6 +228,58 @@ ILSVRC 2010的冠军是NEC和UIUC的联合队伍。这也是DL于2012年大放�
 
 上图是NEC算法的基本流程图。这里不打算描述整个算法，而仅对其中涉及的术语做一个解释。
 
+# DTW（续）
+
+除此之外，我们还可以增加别的约束：
+
+**全局路径窗口(Warping Window)**：$$\mid \phi_x(s)-\phi_y(s)\mid \leq r$$。比较好的匹配路径往往在对角线附近，所以我们可以只考虑在对角线附近的一个区域寻找合适路径(r就是这个区域的宽度);
+
+**斜率约束(Slope Constrain)**：$$\dfrac{\phi_x(m)-\phi_x(n)}{\phi_y(m)-\phi_y(n)}\leq p$$和$$\dfrac{\phi_y(m)-\phi_y(n)}{\phi_x(m)-\phi_x(n)}\leq q$$，这个可以看做是局部的Warping Window，用于避免路径太过平缓或陡峭，导致短的序列匹配到太长的序列或者太长的序列匹配到太短的序列。
+
+![](/images/img2/DTW.png)
+
+上图是两种常见的约束搜索空间的方法。
+
+DTW的缺点：
+
+1.运算量大；
+
+2.识别性能过分依赖于端点检测；
+
+3.太依赖于说话人的原来发音；
+
+4.不能对样本作动态训练；
+
+5.没有充分利用语音信号的时序动态特性；
+
+DTW适合于特定人基元较小的场合，多用于孤立词识别；
+
+参考：
+
+http://blog.csdn.net/zouxy09/article/details/9140207
+
+动态时间规整（DTW）
+
+https://blog.csdn.net/raym0ndkwan/article/details/45614813
+
+DTW动态时间规整
+
+http://www.cnblogs.com/luxiaoxun/archive/2013/05/09/3069036.html
+
+Dynamic Time Warping动态时间规整算法
+
+# Pitch Detection
+
+http://blog.csdn.net/zouxy09/article/details/9141875
+
+基音周期估计（Pitch Detection）
+
+# Vector Quantization
+
+http://blog.csdn.net/zouxy09/article/details/9153255
+
+矢量量化（Vector Quantization）
+
 # MFCC
 
 ## Mel scale
@@ -296,6 +348,12 @@ https://blog.csdn.net/quhediegooo/article/details/68946100
 
 子空间高斯混合模型-SGMM
 
+# VTLN
+
+https://blog.csdn.net/jiangyangbo/article/details/6535928
+
+VTLN(Vocal Tract Length Normalisation)
+
 # WFST
 
 Weighted-Finite-State-Transducer
@@ -319,22 +377,4 @@ http://djt.qq.com/article/view/507
 https://blog.csdn.net/lucky_ricky/article/details/77511543
 
 Kaldi WFST 构图 学习
-
-# 汽车声学
-
-https://zhuanlan.zhihu.com/p/22722073
-
-当我谈汽车声学时，我在谈什么(一)
-
-https://zhuanlan.zhihu.com/p/28608243
-
-当我谈汽车声学时，我在谈什么(二)
-
-https://zhuanlan.zhihu.com/p/31240294
-
-当我谈汽车声学时，我在谈什么(三)
-
-https://zhuanlan.zhihu.com/p/34256635
-
-当我谈汽车声学时，我在谈什么(四)
 

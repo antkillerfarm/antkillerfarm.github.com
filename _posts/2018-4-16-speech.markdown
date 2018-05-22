@@ -43,6 +43,16 @@ http://web.stanford.edu/class/cs224s/index.html
 
 CS224S / LINGUIST285 - Spoken Language Processing。Stanford的教程相对比较新，DL涉及的比较多。
 
+http://www.inf.ed.ac.uk/teaching/courses/asr/index.html
+
+Automatic Speech Recognition。这个课程至少从2012年就开始了，每年都有更新。
+
+http://speech.ee.ntu.edu.tw/DSP2018Spring/
+
+国立台湾大学李琳山教授的课程。
+
+>李琳山，国立台湾大学本科（1974）+Stanford博士（1977）。国立台湾大学教授。
+
 ## blog
 
 http://www.cnblogs.com/welen/
@@ -67,6 +77,10 @@ https://blog.csdn.net/dearwind153/article/category/6506891
 
 这哥们的blog很杂，这是语音相关的专栏
 
+https://blog.csdn.net/wbgxx333
+
+一个语音识别+Kaldi的blog
+
 ## 项目
 
 https://en.wikipedia.org/wiki/List_of_speech_recognition_software
@@ -87,11 +101,15 @@ kaldi-ctc: CTC End-to-End ASR
 
 ## HTK
 
-Hidden Markov Model Toolkit是Cambridge University开发的语音识别的工具包。它是GMM-HMM时代最为流行的语音识别工具，但缺乏对DL的支持。
+Hidden Markov Model Toolkit是Cambridge University开发的语音识别的工具包。它是GMM-HMM时代最为流行的语音识别工具，但近来流行度不如Kaldi。
 
 官网：
 
 http://htk.eng.cam.ac.uk/
+
+HTK Book不仅是使用手册，也是一本介绍原理的书。
+
+http://speech.ee.ntu.edu.tw/homework/DSP_HW2-1/htkbook.pdf
 
 ## CMU Sphinx
 
@@ -114,6 +132,30 @@ https://cmusphinx.github.io/
 注意：还有一个类似Elasticsearch的文本搜索引擎也叫Sphinx。它的官网是：
 
 http://sphinxsearch.com/
+
+## SPTK
+
+The Speech Signal Processing Toolkit是日本的几个科学家开发的语音识别工具库。
+
+官网：
+
+http://sp-tk.sourceforge.net/
+
+## Julius
+
+Julius是另一个日本人开发的语音识别工具库。
+
+官网：
+
+http://julius.osdn.jp/en_index.php
+
+## HTS
+
+HMM/DNN-based Speech Synthesis System也是日本人开发的工具库，主要用于语音合成。
+
+官网：
+
+http://hts.sp.nitech.ac.jp
 
 ## 公司
 
@@ -252,15 +294,4 @@ Microphone的主要厂商：
 https://zhuanlan.zhihu.com/p/27610503
 
 盘点麦克风技术及市场，远场语音交互如何选型麦克风
-
-# Microphone Array
-
-麦克风阵列(Microphone Array)，从字面上，指的是麦克风的排列。也就是说由一定数目的声学传感器(一般是麦克风)组成，用来对声场的空间特性进行采样并处理的系统。
-
-![](/images/img2/Echo.png)
-
-上图是Amazon Echo所采用的6+1麦克风阵列。
-
-根据声波传导理论，利用多个麦克风收集到的信号可以将某一方向传来的声音增强或抑制。利用这种方法，麦克风阵列可以将噪声环境中特定声音信号有效的增强。由于麦克风阵列技术具有很好的抑制噪声和语音增强的能力，又不需要麦克风时刻指向声源方向，因此在语音处理领域具有非常好的前景，可以用在非常广的应用领域。
-
 
