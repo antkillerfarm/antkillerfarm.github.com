@@ -352,3 +352,29 @@ https://mp.weixin.qq.com/s/iAmkb2EdYofJU1AoBw2HyA
 
 多目标优化详解
 
+## 深度哈希
+
+https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg
+
+深度离散哈希算法，可用于图像检索！
+
+https://mp.weixin.qq.com/s/XUYJub0559wwQ9H1wA_SAg
+
+机器学习时代的哈希算法，将如何更高效地索引数据
+
+https://mp.weixin.qq.com/s/YVIvdMznb3oatIXqD5a5_A
+
+陈天奇等人提出AutoTVM：让AI来编译优化AI系统底层算子
+
+https://mp.weixin.qq.com/s/vFBlFAQLvDZP7IvwKoaPhA
+
+无问西东，只问哈希
+
+https://mp.weixin.qq.com/s/XAxuLg2i3q5_uKDo1wU_rA
+
+从哈希到卷积神经网络：高精度&低功耗
+
+https://mp.weixin.qq.com/s/i8iQtCC7ahXLY1a1wOacsA
+
+Science：最新发现哈希可能是大脑的通用计算原理
+

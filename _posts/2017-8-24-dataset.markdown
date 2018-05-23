@@ -280,3 +280,11 @@ https://mp.weixin.qq.com/s/S6KrNNz3TJQr8i3-fAZe-Q
 
 今日头条新闻文本分类数据集
 
+https://mp.weixin.qq.com/s/gAFNbMhatFVwnGmBEUFOQA
+
+耶鲁大学发布自然语言处理资源引擎TutorialBank: 让NLP学习不再困难
+
+https://mp.weixin.qq.com/s/vaIhDnyQ7vh8kfrgCpXpQA
+
+从医疗语音到灾难响应，这八大优质数据集快抱走
+

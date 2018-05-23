@@ -252,7 +252,31 @@ https://mp.weixin.qq.com/s/86y2VP3gMTUnfbN2OK5BNw
 
 基于实体、属性和关系的知识表示学习
 
+https://mp.weixin.qq.com/s/wBuy2-gNrumZ__-H48KEMA
+
+关于知识图谱，各路大神最近都在读哪些论文？
+
 # Kaldi（续）
+
+## 术语
+
+LM：language model
+
+KWS：Keyword Search
+
+CMVN：cepstral mean and variance
+
+G2P：Grapheme-to-Phoneme
+
+WSJ：Wall Street Journal
+
+## OpenFst
+
+OpenFst是一个构造、合并、优化和搜索加权有限状态机FST的库。
+
+官网：
+
+http://www.openfst.org/
 
 ## SCTK
 
@@ -261,6 +285,10 @@ Speech Recognition Scoring Toolkit是NIST（National Institute of Standards and 
 官网：
 
 https://github.com/usnistgov/SCTK
+
+以下网页包含了SCTK支持的几种数据格式：trn, txt, stm, ctm。这在Kaldi中用的比较多。
+
+http://www1.icsi.berkeley.edu/Speech/docs/sctk-1.2/infmts.htm
 
 ## sph2pipe
 
@@ -352,17 +380,23 @@ https://blog.csdn.net/nihaomafb/article/details/48009695
 
 语言模型Katz backoff以及HMM模型
 
-## nnet
+## 命令行粗解
 
-kaldi的nnet1和nnet2是以层设计为基础的，也即当你新增加一种神经网络层时需要自己定义它的结构，都有哪些变量，正向怎么算，反向误差怎么传播等等，并且过于复杂的连接方式很难支持。
+kaldi的命令行脚本之所以不好读，主要在于它有一套自己的语法。
 
-而kaldi的nnet3和CNTK以及TensorFlow都是以图结构为基础的，通过配置文件实现对网络连接方式的定义，数据就像流水一样在你定义的网络图中游走，并自己实现误差的反向传播。
+`head -1 $featdir/raw_mfcc_train.1.scp | copy-feats scp:- ark:- | copy-feats ark:- ark,t:- | head`
 
+上面是一个典型的kaldi脚本的片段。可以看出kaldi命令是一个典型的pipeline结构，用`|`作为命令间的分隔符，这和一般的Linux shell是一致的。比较让人困惑的是scp和ark。
 
+.ark（archive）是数据文件，可以是text或binary（默认）格式。
 
-## 参考
+.scp（script）是描述文件，记录对应ark的路径，它是text-only的格式的。
 
-https://blog.csdn.net/lijin6249/article/details/51838936
+.scp相当于C语言的指针，而.ark相当于指针指向的内容。
 
-基于kaldi的在线中文识别，online的操作介绍
+`ark,t:-`中的t是IO描述符，IO描述符分为读和写两大类，t是读描述符，表示text。
+
+而`-`是文件描述符，`-`表示标准输入输出设备。它也可以是其他命令的输出，例如：
+
+`ark:gunzip -c $srcdir/fsts.JOB.gz`
 

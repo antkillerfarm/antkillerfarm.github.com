@@ -52,6 +52,18 @@ https://www.zhihu.com/question/62068158
 
 老师网络可以被固定（正如在精炼过程中）或联合优化，甚至同时训练多个不同大小的学生网络。
 
+![](/images/img2/Distilling_2.jpeg)
+
+上图是另一篇论文的图：
+
+《Object detection at 200 Frames Per Second》
+
+该论文的中文版：
+
+https://mp.weixin.qq.com/s/OCG1TiHl2dsuS24uacQ-MA
+
+又快又准确，新目标检测器速度可达每秒200帧
+
 图森科技的后两篇论文也是在Hinton论文的基础上改进的。
 
 论文：

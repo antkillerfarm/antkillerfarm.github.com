@@ -134,10 +134,6 @@ https://mp.weixin.qq.com/s/FNQSLPHQSHSkDipREE702A
 
 利用分布鲁棒优化方法应对对抗样本干扰
 
-https://mp.weixin.qq.com/s/rPDvLnG4MBDRUMCWs2fjcQ
-
-最新StarGAN对抗生成网络实现多领域图像变换
-
 https://mp.weixin.qq.com/s/h7lrJYQ_RqJDako8UoYK-A
 
 六种改进均未超越原版：谷歌新研究对GAN现状提出质疑
@@ -331,6 +327,14 @@ https://mp.weixin.qq.com/s/gvPTNtrd5Du9Oablp3jZYw
 https://mp.weixin.qq.com/s/BTzV7ulweqFQokdQ-AX2Rg
 
 三位一体的纯正视频换脸术，拒绝别人的嘴替我说话
+
+https://mp.weixin.qq.com/s/rPDvLnG4MBDRUMCWs2fjcQ
+
+最新StarGAN对抗生成网络实现多领域图像变换
+
+https://mp.weixin.qq.com/s/97Uj-ATLToy1bNhnSUO8Jw
+
+非监督任意姿势人体图像合成
 
 # 行人重识别
 

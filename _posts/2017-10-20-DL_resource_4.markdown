@@ -372,16 +372,6 @@ https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
 
 谷歌等巨头机器学习面试题：从逻辑回归到智力测验
 
-## 深度哈希
-
-https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg
-
-深度离散哈希算法，可用于图像检索！
-
-https://mp.weixin.qq.com/s/XUYJub0559wwQ9H1wA_SAg
-
-机器学习时代的哈希算法，将如何更高效地索引数据
-
 ## 行业
 
 李开复的这篇文章不可不读：

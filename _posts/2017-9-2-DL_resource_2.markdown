@@ -16,10 +16,6 @@ http://mp.weixin.qq.com/s/9fJT0dMLvYQdfMVvSEiG4A
 
 深度学习的时间序列模型评价
 
-https://mp.weixin.qq.com/s/XAxuLg2i3q5_uKDo1wU_rA
-
-从哈希到卷积神经网络：高精度&低功耗
-
 https://mp.weixin.qq.com/s/xbimfckVD0Ol0T1n0-_ktA
 
 从浅层模型到深度模型：概览机器学习优化算法
@@ -55,10 +51,6 @@ PyMC3和Theano代码构建贝叶斯深度网络
 https://mp.weixin.qq.com/s/2gBoVr_072DLJ_MMHPHNLQ
 
 这8种神经网络结构，你掌握了几个？
-
-https://mp.weixin.qq.com/s/vFBlFAQLvDZP7IvwKoaPhA
-
-无问西东，只问哈希
 
 https://mp.weixin.qq.com/s/SeNIQQL_MqjFG4ek_wJoIg
 

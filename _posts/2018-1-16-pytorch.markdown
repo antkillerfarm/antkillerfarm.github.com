@@ -306,6 +306,14 @@ http://www.openslr.org/
 
 http://cn-mirror.openslr.org/
 
+参考：
+
+https://www.eleanorchodroff.com/tutorial/kaldi/kaldi-intro.html
+
+这是Eleanor Chodroff写的kaldi指南。
+
+>Eleanor Chodroff，New York University本科（2012）+Johns Hopkins University硕博（2014，2017）。现为Northwestern University博士后。
+
 ## 编译
 
 1.检查依赖。
@@ -403,24 +411,3 @@ kaldi的调用层次可分为三级：
 3.**算法实现**。在src/XXX文件夹下。
 
 工具和算法实现基本都是C/C++写的。外部工具在tools文件夹下，主要是openfst、sctk、sph2pipe。
-
-## 术语
-
-LM：language model
-
-KWS：Keyword Search
-
-CMVN：cepstral mean and variance
-
-G2P：Grapheme-to-Phoneme
-
-WSJ：Wall Street Journal
-
-## OpenFst
-
-OpenFst是一个构造、合并、优化和搜索加权有限状态机FST的库。
-
-官网：
-
-http://www.openfst.org/
-

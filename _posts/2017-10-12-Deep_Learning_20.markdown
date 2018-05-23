@@ -162,4 +162,7 @@ https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2651988934&idx=2&sn=0e5ffa
 
 ResNets、HighwayNets、DenseNets：用TensorFlow实现超深度神经网络
 
+https://mp.weixin.qq.com/s/okx0jZR6PmFm3ikCCUbNkg
+
+从DensNet到CliqueNet，解读北大在卷积架构上的探索
 

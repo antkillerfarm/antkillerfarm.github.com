@@ -140,10 +140,6 @@ https://mp.weixin.qq.com/s/aBDx_602GZXA36awEyjb-A
 
 从深度学习研究论文中自动生成可执行源代码
 
-https://mp.weixin.qq.com/s/i8iQtCC7ahXLY1a1wOacsA
-
-Science：最新发现哈希可能是大脑的通用计算原理
-
 https://mp.weixin.qq.com/s/xRLXCPF92vT7Gs-NLs2RGA
 
 谷歌、百度等搜索巨头应该从果蝇身上学习什么？专访解读果蝇算法
