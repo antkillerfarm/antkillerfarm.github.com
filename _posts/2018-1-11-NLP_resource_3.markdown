@@ -370,4 +370,8 @@ https://mp.weixin.qq.com/s/ILn-XqAQ_DYCFsiRgqYBrQ
 
 微软亚洲研究院院长副院长周明：语言智能的进展
 
+https://mp.weixin.qq.com/s/A4r01mV-X8CTJy3vPa9BPw
+
+对话式交互技术原理及流程揭秘
+
 
