@@ -222,6 +222,10 @@ https://mp.weixin.qq.com/s/IFGUXI3YXVsjIVuJ717uaw
 
 用人工智能打王者荣耀：匹茨堡大学&腾讯AI Lab为游戏AI引入MCTS方法
 
+https://mp.weixin.qq.com/s/Mp_thK_zTMOX0p5oSZOIQw
+
+一台笔记本打败超算：CMU冷扑大师团队提出全新德扑AI Modicum
+
 ## AI医疗
 
 https://github.com/albarqouni/Deep-Learning-for-Medical-Applications

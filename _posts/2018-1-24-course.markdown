@@ -314,6 +314,10 @@ https://mp.weixin.qq.com/s/yQSMSLBYg4iauu8yeUfvjw
 
 深度解读！时序数据库HiTSDB：分布式流式聚合引擎
 
+https://mp.weixin.qq.com/s/WQh-Ro03e9F1Yrhk0tTZ0A
+
+图解SQL的JOIN
+
 # 大数据平台参考资源
 
 https://mp.weixin.qq.com/s/oYiQEMelkXHbT3ke2BmHOw

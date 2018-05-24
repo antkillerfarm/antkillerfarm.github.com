@@ -174,3 +174,9 @@ $$V(S_t)\leftarrow V(S_t)+\alpha\delta_tE_t(s)$$
 
 如果$$\lambda=1$$，TD($$\lambda=1$$)粗略看与每次访问的MC算法等同；在线更新时，状态价值差每一步都会有积累；离线更新时，TD($$\lambda=1$$)等同于MC算法(即遍历整个Episode)。
 
+参考：
+
+https://mp.weixin.qq.com/s/X6bukOqZ2Eg7jZ6MydHwSg
+
+伯克利提出时序差分模型TDM：让深度强化学习更像人类
+

@@ -286,6 +286,10 @@ https://mp.weixin.qq.com/s/H_EcHi9BRur214rktocGbg
 
 怎样用GAN生成各种胖吉猫？谷歌大脑程序员教你撩妹神技
 
+https://mp.weixin.qq.com/s/FDyN6fblDFGOSNRFs5OYqA
+
+什么都能GAN，无监督神经网络翻译新方法
+
 # 图像变换
 
 https://mp.weixin.qq.com/s/88tBoAVziGEFXIGfvZZp8g
@@ -335,6 +339,10 @@ https://mp.weixin.qq.com/s/rPDvLnG4MBDRUMCWs2fjcQ
 https://mp.weixin.qq.com/s/97Uj-ATLToy1bNhnSUO8Jw
 
 非监督任意姿势人体图像合成
+
+https://mp.weixin.qq.com/s/cfw8mRsmzE1lU8PRM8UC0w
+
+秒变莫扎特、贝多芬，Facebook提出完美转换音乐风格的神经网络
 
 # 行人重识别
 

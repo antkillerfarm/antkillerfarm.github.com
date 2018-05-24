@@ -414,3 +414,7 @@ https://mp.weixin.qq.com/s/myWTfgvjiqli_Rxfr-FY0w
 
 360扫地机原理大揭秘，竟还有无人驾驶技术？——浅析家用机器人SLAM方案
 
+https://mp.weixin.qq.com/s/Ja6DxqadbFBIWUk44DjGqw
+
+密集场景中自动驾驶车辆的仿真与导航
+
