@@ -188,6 +188,10 @@ http://techforum-img.cn-hangzhou.oss-pub.aliyun-inc.com/1523849261680/AliTech101
 
 《阿里技术参考图册》（研发篇）
 
+https://zhuanlan.zhihu.com/cvpr2018
+
+CVPR 2018论文笔记
+
 ## 项目集锦
 
 https://mp.weixin.qq.com/s/ZNNgEB9rFjAE8SdfMo9NLA

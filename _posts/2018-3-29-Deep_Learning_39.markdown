@@ -238,10 +238,6 @@ https://mp.weixin.qq.com/s/M-YeUqvcSVHj_MbCS_c-6Q
 
 无平行文本照样破解密码，CipherGAN有望提升机器翻译水平
 
-https://mp.weixin.qq.com/s/QeMjOGlUqYSPmcSjnj1HQQ
-
-用生成对抗网络解决NLP问题：谷歌大脑提出MaskGAN
-
 https://mp.weixin.qq.com/s/uJEGXNvBVJfsxYJUQCz4DQ
 
 DA-GAN技术：计算机帮你创造奇妙“新物种”

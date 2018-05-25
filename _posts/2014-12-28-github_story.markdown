@@ -192,3 +192,27 @@ https://mp.weixin.qq.com/s/4AnLu0m2IILGwyPyuK37Fg
 
 基本操作：Go创建GraphQL API
 
+# WFST
+
+Weighted-Finite-State-Transducer
+
+https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/ParallelizingWFSTSpeechDecoders.ICASSP2016.pdf
+
+PARALLELIZING WFST SPEECH DECODERS
+
+http://www.cs.nyu.edu/~mohri/pub/csl01.pdf
+
+Weighted Finite-State Transducers in Speech Recognition
+
+https://blog.csdn.net/l_b_yuan/article/category/6132477
+
+这个专栏包含了4篇WFST的blog
+
+http://djt.qq.com/article/view/507
+
+定制你的语音识别-并行语音识别解码空间
+
+https://blog.csdn.net/lucky_ricky/article/details/77511543
+
+Kaldi WFST 构图 学习
+

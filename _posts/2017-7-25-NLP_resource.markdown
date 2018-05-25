@@ -10,6 +10,10 @@ https://mp.weixin.qq.com/s/4eyxX_EfrImGXnYmTRUFHw
 
 自然语言处理(NLP)入门指南
 
+https://mp.weixin.qq.com/s/PebcTkIanjwh915IVn-oDA
+
+八大步骤解决90%的NLP问题
+
 https://mp.weixin.qq.com/s/bcVGqVkQoVdo3fYUJJkpCQ
 
 NLP入门+实战必读：一文教会你最常见的10种自然语言处理技术

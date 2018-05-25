@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  语音识别（一）——概述, 基本框架, Microphone Array
+title:  语音识别（一）——概述, 基本框架
 category: graphics 
 ---
 
@@ -10,9 +10,19 @@ category: graphics
 
 说起来还是要感谢DL，不然按照传统的行业划分，几乎不会有人同时研究CV和SR。DL的出现，实际上大大降低了算法的领域迁移成本，领域知识的重要性相对下降了。
 
+## 历史
+
+早在电子计算机出现之前，人们就有了让机器识别语音的梦想。1920年生产的“Radio Rex”玩具狗可能是世界上最早的语音识别器，当有人喊“Rex”的时候，这只狗能够从底座上弹出来。
+
+![](/images/img2/Rex.jpeg)
+
+但实际上它所用到的技术并不是真正的语音识别，而是通过一个弹簧，这个弹簧在接收到500赫兹的声音时会自动释放，而500赫兹恰好是人们喊出“Rex”中元音的第一个共振峰。
+
+![](/images/img2/SR.jpeg)
+
 ## 学校
 
-SR领域最牛的高校主要是美国的CMU、Johns Hopkins University和英国的Cambridge University。
+SR领域最牛的高校主要是美国的CMU、Johns Hopkins University、英国的Cambridge University和日本的东京大学。
 
 ## 书籍
 
@@ -53,6 +63,12 @@ http://speech.ee.ntu.edu.tw/DSP2018Spring/
 
 >李琳山，国立台湾大学本科（1974）+Stanford博士（1977）。国立台湾大学教授。
 
+http://www.cs.cmu.edu/afs/cs/user/bhiksha/WWW/courses/11-756.asr/spring2014/
+
+Theory and practice of speech recognition systems。CMU的Bhiksha Raj教授的课程，只有ASR的内容。
+
+顺便说一句，Bhiksha Raj的主页上还有好多其他课程。
+
 ## blog
 
 http://www.cnblogs.com/welen/
@@ -80,6 +96,14 @@ https://blog.csdn.net/dearwind153/article/category/6506891
 https://blog.csdn.net/wbgxx333
 
 一个语音识别+Kaldi的blog
+
+http://www.cnblogs.com/JarvanWang/
+
+一个语音识别+Kaldi的blog
+
+https://www.zhihu.com/question/65516424
+
+语音识别kaldi该如何学习？
 
 ## 项目
 
@@ -268,30 +292,4 @@ https://www.zhihu.com/question/20398418
 人类对于1KHz的声音的听阈为$$20\times 10^{-6}$$Pa，通常以此作为声压级的基准值。这样讲可能晦涩难懂，我们来简单的类比一下：人类的呼吸声压是$$60\times 10^{-6}$$左右，声压级大约10dB，火箭发射的声压是4000Pa左右，声压级大约165dB，闪光弹的声压超过1万Pa，声压级大约175dB。
 
 为了描述麦克风的性能，有几个性能指标是非常关键的，这包括了灵敏度、指向性、频率响应、阻抗、动态范围、信噪比、最大声压级（或AOP，声学过载点）、一致性等。
-
-现在麦克风阵列主要使用的是**数字MEMS麦克风**，其最长尺寸仅有3.76MM。MEMS麦克风也是手机中大量使用的传感器件，一般手机至少有2个以上这类麦克风。MEMS麦克风实际上只是工艺上的改进，其原理依然属于电容式麦克风。
-
-与MEMS麦克风直接PK的，就是**驻极体麦克风**。它的性能更优秀，但一致性不如MEMS麦克风，因此主要用在单麦上。而麦克风阵列一般都是MEMS麦克风。
-
-被淘汰的技术：带式麦克风、碳精麦克风（老式电话）。
-
-先进技术：压电麦克风、光纤麦克风、激光麦克风、矢量麦克风。
-
-Microphone的主要厂商：
-
-1.Knowles 美国
-
-2.瑞声(AAC) 中国
-
-3.歌尔(Goertek) 中国
-
-4.BSE 韩国
-
-5.ST 欧洲
-
-参考：
-
-https://zhuanlan.zhihu.com/p/27610503
-
-盘点麦克风技术及市场，远场语音交互如何选型麦克风
 

@@ -270,50 +270,6 @@ CosFace: 面向深度人脸识别的增强边缘余弦损失函数设计
 
 # 迁移学习
 
->龙明盛，清华本科（2008）+博士（2016），迁移学习的最早提出者之一。清华大学副教授，博导。   
->个人主页：   
->http://ise.thss.tsinghua.edu.cn/~mlong/
-
-https://mp.weixin.qq.com/s/HmkTkv7QT08lGtJsHD7EvQ
-
-迁移学习（Transfer Learning）技术概述
-
-https://zhuanlan.zhihu.com/wjdml
-
-《小王爱迁移》系列blog
-
-https://mp.weixin.qq.com/s/BWBrso7O1O3Rfxa4QWZH4g
-
-分分钟学会基于深度学习的图像真实风格迁移！
-
-https://mp.weixin.qq.com/s/5DtTgc9bIrdXQkmuqRm8CA
-
-谷歌大脑迁移学习：减少调参，直接在数据集中学习最佳图像架构
-
-https://mp.weixin.qq.com/s/fEKc6yFZwTPAHjXJlcHA-w
-
-香港科技大学提出L2T框架：学习如何迁移学习
-
-https://mp.weixin.qq.com/s/pbyByPoZ9SVoP9B7pJMxXg
-
-深度卷积网络迁移学习的脸部表情识别
-
-https://www.zhihu.com/question/50996014
-
-什么是One/zero-shot learning？
-
-https://mp.weixin.qq.com/s/SZlFgnUBL0T6yNa-i_WLvg
-
-领域适应性Domain Adaptation、One-shot/zero-shot Learning概述
-
-https://mp.weixin.qq.com/s/sAf2fLLnKHOs433pV_6bSQ
-
-One-shot Learning：孪生网络少样本精准分类
-
-https://mp.weixin.qq.com/s/J8ZmIVKd-4X3hMGGIJWoDQ
-
-一文看懂迁移学习：从基础概念到技术研究！
-
 https://mp.weixin.qq.com/s/qYoTgqwjaUlEycuk9LlonA
 
 迁移学习：6张图像vs13000张图像，超越2013 Kaggle猫狗识别竞赛领先水平
@@ -410,3 +366,6 @@ https://mp.weixin.qq.com/s/kTiQdoCI-mk8c-m0uL5BkQ
 
 如何实现少样本学习？先让神经网络get视觉比较能力
 
+https://mp.weixin.qq.com/s/i_znaQX0IFJD1ttmVbtcZQ
+
+阿里提出新零样本学习方法，有效解决偏置问题

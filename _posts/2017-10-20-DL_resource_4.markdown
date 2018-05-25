@@ -388,6 +388,10 @@ https://mp.weixin.qq.com/s/KbKlgRAfjP_39WdXh7gOLg
 
 拥抱人工智能的中国：现状和展望（下）
 
+https://mp.weixin.qq.com/s/hoo34-eMcYV7hV6LFbJqcg
+
+10分钟带你读完人工智能的三生三世
+
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA

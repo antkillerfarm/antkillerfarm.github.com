@@ -288,3 +288,7 @@ https://mp.weixin.qq.com/s/vaIhDnyQ7vh8kfrgCpXpQA
 
 从医疗语音到灾难响应，这八大优质数据集快抱走
 
+https://mp.weixin.qq.com/s/DsBoGT2Pl4tRwHX8REOqnw
+
+MURA：斯坦福ML团队开放的大型放射影像数据集与挑战赛
+

@@ -230,6 +230,16 @@ ILSVRC 2010的冠军是NEC和UIUC的联合队伍。这也是DL于2012年大放�
 
 # DTW（续）
 
+DTW实例的具体计算过程可参见：
+
+http://www.cnblogs.com/tornadomeet/archive/2012/03/23/2413363.html
+
+从一个实例中学习DTW算法
+
+从中可以看出，DTW实际上是一个动态规划问题。
+
+更一般的，DTW也可用于计算两个离散的序列(不一定要与时间有关)的相似度。和《机器学习（二十二）》的EMD距离相比，DTW距离能够**保持序列的形状信息**。
+
 除此之外，我们还可以增加别的约束：
 
 **全局路径窗口(Warping Window)**：$$\mid \phi_x(s)-\phi_y(s)\mid \leq r$$。比较好的匹配路径往往在对角线附近，所以我们可以只考虑在对角线附近的一个区域寻找合适路径(r就是这个区域的宽度);
@@ -353,28 +363,4 @@ https://blog.csdn.net/quhediegooo/article/details/68946100
 https://blog.csdn.net/jiangyangbo/article/details/6535928
 
 VTLN(Vocal Tract Length Normalisation)
-
-# WFST
-
-Weighted-Finite-State-Transducer
-
-https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/ParallelizingWFSTSpeechDecoders.ICASSP2016.pdf
-
-PARALLELIZING WFST SPEECH DECODERS
-
-http://www.cs.nyu.edu/~mohri/pub/csl01.pdf
-
-Weighted Finite-State Transducers in Speech Recognition
-
-https://blog.csdn.net/l_b_yuan/article/category/6132477
-
-这个专栏包含了4篇WFST的blog
-
-http://djt.qq.com/article/view/507
-
-定制你的语音识别-并行语音识别解码空间
-
-https://blog.csdn.net/lucky_ricky/article/details/77511543
-
-Kaldi WFST 构图 学习
 

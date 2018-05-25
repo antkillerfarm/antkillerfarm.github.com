@@ -190,4 +190,37 @@ http://blog.csdn.net/augusdi/article/details/12833235
 
 比较知名的Optimizer软件有：CPlex, Gurobi, Mosek, cvx, LINGO
 
+# DL参考资源
+
+https://mp.weixin.qq.com/s/ygt31lL0mBcyRmwAlsl8Sg
+
+RCN仅凭极少样本就成功攻破验证码
+
+https://mp.weixin.qq.com/s/0Ofh_NSMmvlEZ2JPCffujg
+
+Vicarious发布生成视觉模型:RCN
+
+https://mp.weixin.qq.com/s/UDAcjmCOUdzbXaAgKWOczQ
+
+深度判别和共享特征学习的图像分类
+
+https://mp.weixin.qq.com/s/PtQSktfTpqzWB92jelgbTA
+
+Representation Learning on Network网络表示学习笔记
+
+https://mp.weixin.qq.com/s/ZDPPWH570Vc6e1irwP1b1Q
+
+精细识别现实世界图像：李飞飞团队提出半监督适应性模型
+
+https://mp.weixin.qq.com/s/4dlWdPOCbYedu02aLAQ04Q
+
+MIT“创世纪”机器学习新系统，自动生成补丁修复Bug
+
+http://mp.weixin.qq.com/s/rS4xCsytYGqBLMUzlyA12A
+
+构建多层感知器神经网络对数字图片进行文本识别
+
+https://mp.weixin.qq.com/s/zv264-dqDQYRkYmjX_QZpQ
+
+郑宇解读地理传感器时间序列预测问题
 

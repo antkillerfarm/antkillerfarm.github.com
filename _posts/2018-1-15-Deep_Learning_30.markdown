@@ -4,43 +4,9 @@ title:  深度学习（三十）——Deep Speech, WaveNet
 category: DL 
 ---
 
-# CTC（续）
+# CTC
 
-## 算法推导
-
-为了推导CTC对齐的具体形式，我们首先考虑一种初级的做法：假设输入长度为6，Y=[c,a,t]，对齐X和Y的一种方法是将输出字符分配给每个输入步骤并折叠重复的部分。
-
-这种方法存在两个问题：
-
-1.通常，强制每个输入步骤与某些输出对齐是没有意义的。例如在语音识别中，输入可以具有无声的延伸，但没有相应的输出。
-
-2.我们没有办法产生连续多个字符的输出。考虑这个对齐[h，h，e，l，l，l，o]，折叠重复将产生“helo”而不是“hello”。
-
-为了解决这些问题，CTC为一组允许的输出引入了一个新的标记。 这个新的标记有时被称为空白标记。 我们在这里将其称为$$\epsilon$$，$$\epsilon$$标记不对应任何东西，可以从输出中移除。
-
-CTC允许的对齐是与输入的长度相同。 在合并重复并移除ε标记后，我们允许任何映射到Y的对齐方式。
-
-如果Y在同一行中有两个相同的字符，那么一个有效的对齐必须在它们之间有一个$$\epsilon$$。 有了这个规则，我们就可以区分崩“hello”和“helo”。
-
-CTC对齐有一些显著的特性：
-
-首先，X和Y之间允许的对齐是单调的。如果我们前进到下一个输入，我们可以保持相应的输出相同或前进到下一个输入。
-
-第二个属性是X到Y的对齐是多对一的。一个或多个输入元素可以对齐到一个输出元素，但反过来不成立。
-
-这意味着第三个属性：Y的长度不能大于X的长度。
-
-![](/images/img2/full_collapse_from_audio.png)
-
-上图是CTC对齐的一般步骤：
-
-1.输入序列（如音频的频谱图）导入一个RNN模型。
-
-2.RNN给出每个time step所对应的音节的概率$$p_t(a \mid X)$$。上图中音节的颜色越深，其概率p越高。
-
-3.计算各种时序组合的概率，给出整个序列的概率。
-
-4.合并重复并移除空白之后，得到最终的Y。
+## 算法推导（续）
 
 严格的说，一对(X,Y)的CTC目标函数是：
 
@@ -316,4 +282,19 @@ https://mp.weixin.qq.com/s/u1UnAuGllcWn8Ik5wDPY6w
 论文：
 
 《EESEN: End-to-end speech recognition using deep RNN models and WFST-based decoding》
+
+# Chain
+
+Chain是Kaldi的作者Daniel Povey新进引入的技术，该工作可以看做是对CTC的进一步扩展，直接使用句子级区分性准则进行模型的训练，该方法被认为是下一步提升语音识别效率与性能最有潜力的技术之一。
+
+论文：
+
+《Purely Sequence-Trained Neural Networks for ASR Based on Lattice-Free MMI》
+
+参考：
+
+https://www.cnblogs.com/JarvanWang/p/7499589.html
+
+Kaldi中的Chain模型
+
 

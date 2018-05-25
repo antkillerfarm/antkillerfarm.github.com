@@ -67,11 +67,17 @@ $$K(x,z)=\exp\left(-\frac{\|x-z\|^2}{2\sigma^2}\right)$$
 
 ![](/images/article/SVM_5.png)
 
+Gaussian kernel也叫做Radial Basis Function(RBF) kernel，即径向基函数。
+
 参考：
 
 https://mp.weixin.qq.com/s/e-dGnE4Egepmp1OOaOJoNQ
 
 例子通俗解释机器学习中核函数的定义和作用
+
+https://mp.weixin.qq.com/s/VF7yWMYyPGbLmVMmV_G-bQ
+
+通俗易懂讲解RBF网络
 
 ## 核函数的有效性
 
