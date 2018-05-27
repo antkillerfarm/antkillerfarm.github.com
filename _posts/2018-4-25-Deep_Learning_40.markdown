@@ -196,6 +196,10 @@ https://mp.weixin.qq.com/s/QSGgvhkMUj3cXVlQwlzTFQ
 
 深度神经网络加速和压缩新进展年度报告
 
+https://zhuanlan.zhihu.com/p/37074222
+
+CVPR 2018 高效小网络探密
+
 # OCR
 
 光学字符识别（Optical Character Recognition, OCR），是指对文本资料的图像文件进行分析识别处理，获取文字及版面信息的过程。

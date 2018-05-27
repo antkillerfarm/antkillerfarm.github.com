@@ -282,6 +282,14 @@ https://blog.csdn.net/lien0906/article/details/78863118
 
 深度学习中GPU和显存分析
 
+https://zhuanlan.zhihu.com/p/33990592
+
+HBM火了，它到底是什么？
+
+https://zhuanlan.zhihu.com/p/34164501
+
+HBM技术之显卡应用
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293

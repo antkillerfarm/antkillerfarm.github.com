@@ -242,44 +242,91 @@ https://www.zhihu.com/question/40763253
 
 如何在Word和PowerPoint中优雅地插入Latex公式？
 
-# GMM-HMM
+# MFCC
 
-https://blog.csdn.net/abcjennifer/article/details/27346787
+## Mel scale
 
-GMM-HMM语音识别模型 原理篇
+Mel scale是Stevens、Volkmann和Newman于1937年发明的一种主观音阶标准。
 
-https://zhuanlan.zhihu.com/p/22482625
+>Stanley Smith Stevens，1906～1973，Harvard University心理学教授。
 
-无痛理解GMM-HMM语音识别算法
+>John E. Volkmann，1905～1980，Radio Corporation of America研究员。
 
-# LDA-MLLT
+>Edwin B. Newman，1908~1989，Harvard University心理学教授。
 
-Maximum Likelihood Linear Transform (MLLT)，又名Global Semi-tied Covariance (STC)。因此，在科技文献中，常被称作STC/MLLT。
+声音作为一种波动，一般以Hz作为频率差异的客观标准，然而相同频率差的两组声音，在人耳听来，其频率差（也就是所谓的音阶）实际上是不同的。因此，Stevens等人采取实验的方法，确定了人耳的主观音阶标准。
 
-《Semi-tied Covariance Matrices for Hidden Markov Models》
+该标准以Mel作为单位，规定1000Hz的声音所对应的音阶为1000Mel。
 
-《Improved feature processing for Deep Neural Networks》
+Mel scale从严格的定义上并没有一个简单的公式来表示。但一般采用如下公式进行转换：
 
-![](/images/img2/MLLT.png)
+$$m = 2595 \log_{10}\left(1 + \frac{f}{700}\right)$$
 
-https://blog.csdn.net/xmdxcsj/article/details/78512652
+从中可以看出，人耳对于高频声音的分辨率实际上是不如低频声音的。
 
-声学特征变换 STC/MLLT
+![](/images/img2/Mel_scale.png)
 
-# 汽车声学
+>Mel是melody的别称，有的blog上说Mel是个人，他发明了MFCC，这纯粹是胡说八道。
 
-https://zhuanlan.zhihu.com/p/22722073
+## MFCC
 
-当我谈汽车声学时，我在谈什么(一)
+Mel-frequency cepstral coefficients是由Paul Mermelstein提出的一种音频特征。
 
-https://zhuanlan.zhihu.com/p/28608243
+>Paul G. Mermelstein，明尼苏达大学神经科学教授。
 
-当我谈汽车声学时，我在谈什么(二)
+## 参考
 
-https://zhuanlan.zhihu.com/p/31240294
+http://blog.csdn.net/zouxy09/article/details/9156785
 
-当我谈汽车声学时，我在谈什么(三)
+梅尔频率倒谱系数（MFCC）
 
-https://zhuanlan.zhihu.com/p/34256635
+https://my.oschina.net/jamesju/blog/193343
 
-当我谈汽车声学时，我在谈什么(四)
+语音特征参数MFCC提取过程详解
+
+https://liuyanfeier.github.io/2017/10/26/2017-10-27-Kaldi%E4%B9%8Bfbank%E5%92%8Cmfcc%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/
+
+kaldi之fbank和mfcc特征提取
+
+https://zhuanlan.zhihu.com/p/26680599
+
+语音信号预处理及特征参数提取
+
+# Pitch Detection
+
+http://blog.csdn.net/zouxy09/article/details/9141875
+
+基音周期估计（Pitch Detection）
+
+# Vector Quantization
+
+http://blog.csdn.net/zouxy09/article/details/9153255
+
+矢量量化（Vector Quantization）
+
+# FBank
+
+http://blog.csdn.net/wxb1553725576/article/details/78048546
+
+Kaldi特征提取之-FBank
+
+# fMLLR
+
+https://blog.csdn.net/xmdxcsj/article/details/78512645
+
+声学特征变换fMLLR
+
+# SGMM
+
+https://blog.csdn.net/quhediegooo/article/details/68946100
+
+子空间高斯混合模型-SGMM
+
+# VTLN
+
+https://blog.csdn.net/jiangyangbo/article/details/6535928
+
+VTLN(Vocal Tract Length Normalisation)
+
+
+

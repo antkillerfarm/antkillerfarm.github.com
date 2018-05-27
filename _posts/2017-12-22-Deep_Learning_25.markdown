@@ -244,6 +244,10 @@ https://mp.weixin.qq.com/s/49fQX8yiOIwDyof3PD01rA
 
 CMU&谷歌大脑提出新型问答模型QANet：仅使用卷积和自注意力，性能大大优于RNN
 
+https://mp.weixin.qq.com/s/c64XucML13OwI26_UE9xDQ
+
+滴滴披露语音识别新进展：基于Attention显著提升中文识别率
+
 # VAE
 
 变分自编码器（Variational Auto-Encoder，VAE）是Autoencoder的一种扩展。

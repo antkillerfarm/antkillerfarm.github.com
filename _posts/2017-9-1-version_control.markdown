@@ -111,6 +111,12 @@ grep -nri 'ruby' #n 显示行号，r 子目录搜索，i 忽略大小写
 ip addr show br-lan | grep 'inet ' | awk  '{print $2}' | sed 's/\/.*//g'
 {% endhighlight %}
 
+参考：
+
+https://mp.weixin.qq.com/s/o1vuL3RrWz9tyUPguZeSWA
+
+简单快捷的数据处理，数据科学需要注意的命令行
+
 # Win10历险记
 
 我大概在2015年4、5月间，听说了Win10免费升级的消息。于是一直很期待7月29日的到来。果然到了29日当天下午的时候，公司电脑就收到了升级的通知。然而由于网速不给力，当天并未对公司电脑进行升级。倒是晚上在家里的电脑上，虽然耗时2小时，但却一路顺利的升级成功。

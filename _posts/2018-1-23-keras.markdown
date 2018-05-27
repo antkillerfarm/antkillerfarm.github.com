@@ -254,6 +254,10 @@ http://tech.163.com/16/0510/09/BMMOPSCR00094OE0.html
 
 马斯克的AI野心——OpenAI Gym系统深度解析
 
+https://mp.weixin.qq.com/s/KK1gwDW2EyptZOiuFjyAlw
+
+OpenAI发布强化学习环境Gym Retro：支持千种游戏
+
 # Kaldi（续）
 
 ## thchs30之run.sh粗解

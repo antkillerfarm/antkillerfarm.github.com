@@ -262,6 +262,10 @@ https://mp.weixin.qq.com/s/T-yCjebTzc_t6D4o5gyQLQ
 
 Collaborative Metric Learning
 
+https://mp.weixin.qq.com/s/9xxLU51eqhc6C81jzHQijQ
+
+简述推荐系统中的矩阵分解
+
 # 决策树
 
 Decision Tree讲的最好的，首推周志华的《机器学习》。这里只对要点进行备忘。

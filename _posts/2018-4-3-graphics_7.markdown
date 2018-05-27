@@ -278,89 +278,68 @@ http://www.cnblogs.com/luxiaoxun/archive/2013/05/09/3069036.html
 
 Dynamic Time Warping动态时间规整算法
 
-# Pitch Detection
+# Spectrogram
 
-http://blog.csdn.net/zouxy09/article/details/9141875
+DTW是一种时域方法，作为信号处理自然少不了频域方法。这里我们先来了解一个叫声谱图的东西。
 
-基音周期估计（Pitch Detection）
+![](/images/img2/Spectrogram.png)
 
-# Vector Quantization
+这段语音被分为很多帧，每帧语音都对应于一个频谱（通过短时FFT计算），频谱表示频率与能量的关系。在实际使用中，频谱图有三种，即线性振幅谱、对数振幅谱、自功率谱（对数振幅谱中各谱线的振幅都作了对数计算，所以其纵坐标的单位是dB（分贝）。这个变换的目的是使那些振幅较低的成分相对高振幅成分得以拉高，以便观察掩盖在低幅噪声中的周期信号）。
 
-http://blog.csdn.net/zouxy09/article/details/9153255
+![](/images/img2/Spectrogram_2.png)
 
-矢量量化（Vector Quantization）
+我们先将其中一帧语音的频谱通过坐标表示出来。
 
-# MFCC
+![](/images/img2/Spectrogram_3.png)
 
-## Mel scale
+再将左边的频谱旋转90度。
 
-Mel scale是Stevens、Volkmann和Newman于1937年发明的一种主观音阶标准。
+![](/images/img2/Spectrogram_4.png)
 
->Stanley Smith Stevens，1906～1973，Harvard University心理学教授。
+然后把这些幅度映射到一个灰度级表示的直方图。0表示白色，255表示黑色。幅度值越大，相应的区域越黑。
 
->John E. Volkmann，1905～1980，Radio Corporation of America研究员。
+![](/images/img2/Spectrogram_5.png)
 
->Edwin B. Newman，1908~1989，Harvard University心理学教授。
+这样我们会得到一个随着时间变化的频谱图，这个就是描述语音信号的spectrogram声谱图。
 
-声音作为一种波动，一般以Hz作为频率差异的客观标准，然而相同频率差的两组声音，在人耳听来，其频率差（也就是所谓的音阶）实际上是不同的。因此，Stevens等人采取实验的方法，确定了人耳的主观音阶标准。
+# Cepstrum Analysis
 
-该标准以Mel作为单位，规定1000Hz的声音所对应的音阶为1000Mel。
+![](/images/img2/Cepstral.png)
 
-Mel scale从严格的定义上并没有一个简单的公式来表示。但一般采用如下公式进行转换：
+上图是一个语音的频谱图。峰值就表示语音的主要频率成分，我们把这些峰值称为共振峰（formants），而共振峰就是携带了声音的辨识属性（就是个人身份证一样）。所以它特别重要。用它就可以识别不同的声音。
 
-$$m = 2595 \log_{10}\left(1 + \frac{f}{700}\right)$$
+![](/images/img2/Cepstral_2.png)
 
-从中可以看出，人耳对于高频声音的分辨率实际上是不如低频声音的。
+既然它那么重要，那我们就是需要把它提取出来！我们要提取的不仅仅是共振峰的位置，还得提取它们转变的过程。所以我们提取的是频谱的包络（Spectral Envelope）。这包络就是一条连接这些共振峰点的平滑曲线。
 
-![](/images/img2/Mel_scale.png)
+![](/images/img2/Cepstral_3.png)
 
->Mel是melody的别称，有的blog上说Mel是个人，他发明了MFCC，这纯粹是胡说八道。
+原始的频谱由两部分组成：包络和频谱的细节。这里用到的是对数频谱，所以单位是dB。
 
-## MFCC
+![](/images/img2/Cepstral_4.png)
 
-Mel-frequency cepstral coefficients是由Paul Mermelstein提出的一种音频特征。
+怎么把他们分离开呢？也就是，怎么在给定$$\log X[k]$$的基础上，求得$$\log H[k]$$和$$\log E[k]$$以满足$$\log X[k] = \log H[k] + \log E[k]$$呢？
 
->Paul G. Mermelstein，明尼苏达大学神经科学教授。
+![](/images/img2/Cepstral_5.png)
 
-## 参考
+为了达到这个目标，我们需要Play a Mathematical Trick。这个Trick是什么呢？就是对频谱做FFT。
 
-http://blog.csdn.net/zouxy09/article/details/9156785
+这里，我们对Fourier transform做一个简单的回顾。
 
-梅尔频率倒谱系数（MFCC）
+设h(t)是一个时域函数，而H(f)是一个频域函数，则Fourier transform为：
 
-https://my.oschina.net/jamesju/blog/193343
+$$H(f)=\int_{-\infty}^\infty h(t)e^{2\pi i ft}\mathrm{d}t$$
 
-语音特征参数MFCC提取过程详解
+inverse Fourier transformation为：
 
-https://liuyanfeier.github.io/2017/10/26/2017-10-27-Kaldi%E4%B9%8Bfbank%E5%92%8Cmfcc%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/
+$$h(t)=\int_{-\infty}^\infty H(f)e^{-2\pi i ft}\mathrm{d}f$$
 
-kaldi之fbank和mfcc特征提取
+因此，对频谱做FFT，也被叫做inverse FFT，简称IFFT。
 
-https://zhuanlan.zhihu.com/p/26680599
+传统的IFFT的结果是一个时域函数，然而这里是对log frequency domain做IFFT，因此，它的值域只能被称作pseudo-frequency domain。
 
-语音信号预处理及特征参数提取
+从上图可以看出，**Spectral Envelope主要是低频成分，而Spectral details主要是高频成分。**
 
-# FBank
+![](/images/img2/Cepstral_6.png)
 
-http://blog.csdn.net/wxb1553725576/article/details/78048546
-
-Kaldi特征提取之-FBank
-
-# fMLLR
-
-https://blog.csdn.net/xmdxcsj/article/details/78512645
-
-声学特征变换fMLLR
-
-# SGMM
-
-https://blog.csdn.net/quhediegooo/article/details/68946100
-
-子空间高斯混合模型-SGMM
-
-# VTLN
-
-https://blog.csdn.net/jiangyangbo/article/details/6535928
-
-VTLN(Vocal Tract Length Normalisation)
 

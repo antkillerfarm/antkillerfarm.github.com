@@ -370,4 +370,11 @@ https://mp.weixin.qq.com/s/lE_ih5WD5S5GGN9CUsIhCQ
 
 阿里新供应链体系架构解读
 
+https://mp.weixin.qq.com/s/wygcR4ukL22jS_qizp0VEA
+
+机器学习技法终章
+
+https://mp.weixin.qq.com/s/tME5GsKEXveVcgWb-Zbx_A
+
+乔明达ICML 2018论文提出协作学习的鲁棒性方法
 

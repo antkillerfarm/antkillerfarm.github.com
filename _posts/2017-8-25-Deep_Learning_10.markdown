@@ -94,6 +94,10 @@ h1ttps://www.zhihu.com/question/49534423
 
 迁移学习与fine-tuning有什么区别？
 
+https://zhuanlan.zhihu.com/p/37341493
+
+基于Pre-trained模型加速模型学习的6点建议
+
 # 李飞飞
 
 ## AI大佬

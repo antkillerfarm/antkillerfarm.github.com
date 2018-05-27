@@ -374,4 +374,12 @@ https://mp.weixin.qq.com/s/A4r01mV-X8CTJy3vPa9BPw
 
 对话式交互技术原理及流程揭秘
 
+https://mp.weixin.qq.com/s/JoYmVC_9bw3NHK6WXggAcA
+
+通用句子语义编码器，谷歌在语义文本相似性上的探索
+
+https://mp.weixin.qq.com/s/c6ZhSk4r3pvnjHsvpwkkSw
+
+用图卷积网络(GCN)来做语义角色标注
+
 

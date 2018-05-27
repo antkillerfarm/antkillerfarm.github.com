@@ -308,7 +308,7 @@ http://www.cnblogs.com/yu-zhang/p/3817024.html
 
 python调用java程序--jpype
 
-# Celery
+## Celery
 
 Celery是一个专注于实时处理和任务调度的分布式任务队列，可用于执行定时任务。
 
@@ -317,6 +317,20 @@ Celery是一个专注于实时处理和任务调度的分布式任务队列，�
 https://zhuanlan.zhihu.com/p/22304455
 
 使用Celery
+
+## Gunicorn
+
+Gunicorn是一个高效的Python WSGI Server，地位相当于Java中的Tomcat。
+
+官网：
+
+http://gunicorn.org/
+
+参考：
+
+http://www.cnblogs.com/ArtsCrafts/p/gunicorn.html
+
+Gunicorn快速入门
 
 ## 参考
 

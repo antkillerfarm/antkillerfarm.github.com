@@ -142,6 +142,24 @@ https://www.jianshu.com/p/fa204a54a956
 
 生成TFLite模型文件
 
+## TensorFlow Serving
+
+TensorFlow Serving是一个用于机器学习模型serving的高性能开源库。它可以将训练好的机器学习模型部署到线上，使用gRPC作为接口接受外部调用。更加让人眼前一亮的是，它支持模型热更新与自动模型版本管理。
+
+代码：
+
+https://github.com/tensorflow/serving
+
+参考：
+
+https://zhuanlan.zhihu.com/p/23361413
+
+TensorFlow Serving尝尝鲜
+
+http://www.cnblogs.com/xuchenCN/p/5888638.html
+
+tensorflow serving
+
 ## blog
 
 http://www.jianshu.com/u/eaec1fc422e9
