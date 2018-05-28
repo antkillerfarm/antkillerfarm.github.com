@@ -120,10 +120,6 @@ http://www.zanmel.com/2015/12/14/10-great-datasets-on-movies/
 
 最知名的电影数据集。
 
-http://www.speech.cs.cmu.edu/databases/an4/
-
-CMU的音频数据库，可用于语音识别
-
 http://blog.csdn.net/wangkr111/article/details/44514097
 
 肤色检测&人脸检测数据集等链接大集合
@@ -147,10 +143,6 @@ http://universaldependencies.org/
 https://zhuanlan.zhihu.com/p/25138563
 
 各领域公开数据集下载
-
-https://mp.weixin.qq.com/s/pB9IRbvvscichAWy0hzxUQ
-
-谷歌开放语音命令数据集，助力初学者利用深度学习解决音频识别问题
 
 https://mp.weixin.qq.com/s/Kxnvv1i0nvkg0vUDBlx6MA
 

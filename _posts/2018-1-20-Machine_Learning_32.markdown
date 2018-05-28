@@ -190,3 +190,7 @@ https://mp.weixin.qq.com/s/7Vy7l1YyBT7rMYW2i1AsuA
 
 线性判别分析(LDA)原理详解
 
+https://mp.weixin.qq.com/s/cnzQ7XepftDOZXslCf1MUA
+
+你真的会用t-SNE么？有关t-SNE的小技巧
+

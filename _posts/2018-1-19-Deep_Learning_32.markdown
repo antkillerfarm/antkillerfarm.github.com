@@ -250,6 +250,26 @@ https://mp.weixin.qq.com/s/PhMPa-e4sbzqWKmFzRZE4Q
 
 实时替换视频背景：谷歌展示全新移动端分割技术
 
+https://mp.weixin.qq.com/s/ovjoHCcR1xYb9N6kyFJUTg
+
+视频广告段落检测——从一个偏门说计算机视觉的发展历史
+
+https://mp.weixin.qq.com/s/0JgwBizaCwvPP9TfLKTang
+
+密歇根大学&谷歌提出TAL-Net：将Faster R-CNN泛化至视频动作定位中
+
+http://mp.weixin.qq.com/s/LAgDobWyK0SOH08GCLXG7A
+
+减少30%流量，增加清晰度：MIT提出人工智能视频缓存新算法
+
+https://mp.weixin.qq.com/s/_ZmbwM-lmS0o2DjAAc_TWQ
+
+美图云+中科院AAAI2018：视频语义理解的类脑智能NOASSOM
+
+https://mp.weixin.qq.com/s/iqLHjbmLOmvfEeEUB_SqSA
+
+计算机视觉视频理解领域的经典方法和最新成果
+
 # 迁移学习
 
 >龙明盛，清华本科（2008）+博士（2016），迁移学习的最早提出者之一。清华大学副教授，博导。   

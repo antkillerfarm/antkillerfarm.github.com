@@ -292,7 +292,13 @@ http://www1.icsi.berkeley.edu/Speech/docs/sctk-1.2/infmts.htm
 
 ## sph2pipe
 
-LDC提供的数据很多是基于NIST的SPHERE格式，使用时需要将之转换为其他格式，这时就要用到sph2pipe了。
+Kaldi里的音频默认是16k采样率，16bits，单通道。如果是其他参数，需要根据配置来修改。此外，kaldi数据处理部分还有个音量跟语速的脚本，这部分在kaldi里通过sox来实现的。
+
+Kaldi里有很大一部分数据是LDC的，比如timit，rm，wsj等。它们虽然是wave的格式，但其实不是真正的wav格式，其实是nist的SPHERE格式，kaldi里通过sph2pipe这个来把格式转成真正的wave格式。
+
+如果有人要在windows下看这些音频，可以在linux下通过sph2pipe转换下，或者有个叫voicebox的matlab程序里有个readsph的程序来转下。
+
+此外，kaldi里librispeech其实是FLAC格式，这是一个无损的格式，也需要通过flac命令来转成wave来处理。
 
 官网：
 

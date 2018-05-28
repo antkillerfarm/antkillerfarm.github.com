@@ -318,6 +318,10 @@ https://mp.weixin.qq.com/s/WQh-Ro03e9F1Yrhk0tTZ0A
 
 图解SQL的JOIN
 
+https://mp.weixin.qq.com/s/4s7lDKlQjV1mUoVv558Y7Q
+
+面向云数据库，超低延迟文件系统PolarFS诞生了
+
 # 大数据平台参考资源
 
 https://mp.weixin.qq.com/s/oYiQEMelkXHbT3ke2BmHOw
@@ -343,4 +347,8 @@ https://mp.weixin.qq.com/s/-K2K22fLOz4Hl7MIUAJfRA
 https://mp.weixin.qq.com/s/NwjYJde9_TC4PXMPpYw1Gw
 
 聊聊开源消息中间件的架构和原理
+
+https://mp.weixin.qq.com/s/Kv1Qq4118I2itYwPYyQUoA
+
+Spark Streaming 实时计算在甜橙金融监控系统中的应用及优化
 

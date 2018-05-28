@@ -242,6 +242,28 @@ https://www.zhihu.com/question/40763253
 
 如何在Word和PowerPoint中优雅地插入Latex公式？
 
+# Cepstrum Analysis（续）
+
+这里，我们对Fourier transform做一个简单的回顾。
+
+设h(t)是一个时域函数，而H(f)是一个频域函数，则Fourier transform为：
+
+$$H(f)=\int_{-\infty}^\infty h(t)e^{2\pi i ft}\mathrm{d}t$$
+
+inverse Fourier transformation为：
+
+$$h(t)=\int_{-\infty}^\infty H(f)e^{-2\pi i ft}\mathrm{d}f$$
+
+因此，对频谱做FFT，也被叫做inverse FFT，简称IFFT。
+
+传统的IFFT的结果是一个时域函数，然而这里是对log frequency domain做IFFT，因此，它的值域只能被称作pseudo-frequency domain。
+
+从上图可以看出，**Spectral Envelope主要是低频成分，而Spectral details主要是高频成分。**
+
+![](/images/img2/Cepstral_6.png)
+
+
+
 # MFCC
 
 ## Mel scale

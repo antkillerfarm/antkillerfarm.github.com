@@ -418,3 +418,7 @@ https://mp.weixin.qq.com/s/Ja6DxqadbFBIWUk44DjGqw
 
 密集场景中自动驾驶车辆的仿真与导航
 
+https://mp.weixin.qq.com/s/mZbO-y4haBx-IodgEtdUBA
+
+LSTM之父最新力作：手把手教你训练一个有世界观的AI赛车手
+

@@ -45,7 +45,7 @@ http://tts.speech.cs.cmu.edu/courses/11492/schedule.html
 Speech Processing。CMU的这个教程主要包含ASR（Automatic Speech Recognition）、TTS（Text To Speech）和SDS（Spoken Dialog Systems）等三方面的内容。
 
 >Alan W Black，苏格兰计算机科学家。Coventry University本科（1984）+University of Edinburgh硕博（1984,1993）。CMU教授。语音处理专家。   
->个人主页：
+>个人主页：   
 >http://www.cs.cmu.edu/~awb/   
 >他的主页上有好多Speech、NLP方面的教程。他本人长得太像Java之父James Gosling了。
 
@@ -68,6 +68,18 @@ http://www.cs.cmu.edu/afs/cs/user/bhiksha/WWW/courses/11-756.asr/spring2014/
 Theory and practice of speech recognition systems。CMU的Bhiksha Raj教授的课程，只有ASR的内容。
 
 顺便说一句，Bhiksha Raj的主页上还有好多其他课程。
+
+https://cs.nyu.edu/~eugenew/asr13/
+
+这是MIT博士Eugene Weinstein在NYU当助教的时候（2013年）开的课程。
+
+https://www.clsp.jhu.edu/~zak/678/
+
+Automatic Speech Processing & Recognition（2005年）。这是Johns Hopkins University的课程，就是有些老了。
+
+http://berlin.csie.ntnu.edu.tw/Courses/Speech%20Processing/Speech%20Processing_Main_2016S.htm
+
+Speech Processing。国立台湾师范大学的陈柏琳教授的课程。陈教授教学多年，主页上还有好多其他课程。
 
 ## blog
 
@@ -104,6 +116,10 @@ http://www.cnblogs.com/JarvanWang/
 https://www.zhihu.com/question/65516424
 
 语音识别kaldi该如何学习？
+
+https://zhuanlan.zhihu.com/voicebiometrics
+
+专栏：声纹识别的应用实践
 
 ## 项目
 
@@ -229,7 +245,17 @@ VoxForge是一个非常活跃的众包语音识别数据库和经过训练的模
 
 http://pan.baidu.com/s/1dEhUghz
 
-清华大学语音和语言技术研究中心（CSLT）公开的数据集
+清华大学语音和语言技术研究中心（CSLT）公开的数据集。这个数据集除了包含thchs30之外，还包含了其他几个小语种的数据集。
+
+http://cn-mirror.openslr.org/18/
+
+单独的thchs30数据集
+
+http://cn-mirror.openslr.org/33/
+
+AISHELL数据库是THCHS-30之后，目前中文语音数据开源最大的数据库。
+
+它是由北京希尔贝壳科技有限公司(http://www.aishelltech.com)录制的中文普通话数据。由400名来自不同方言区的发音人录制，男女比例均衡。按照设计好的文本，在相对安静环境中使用手机（Android和IOS系统）录制格式为16kHz、16bit单声道数据和高保真麦克风录制格式为44.1kHz、16bit单声道数据同时采集。
 
 # 基本框架
 
@@ -282,14 +308,4 @@ http://www.cnblogs.com/welen/p/7489504.html
 https://www.zhihu.com/question/20398418
 
 语音识别的技术原理是什么？
-
-# Microphone
-
-麦克风作为业界通俗的一种叫法，是英文Microphone的音译名称，国内的称呼乱一些，有时候也简单称作话筒，香港和台湾地区也会称作微音器、拾音器。麦克风的中文学术名称是传声器，这是一种将声音转换成电子信号的换能器，即把声信号转成电信号，这其实和光电转换的原理是完全一致的。 
-
-消费级市场的麦克风基本都是标量麦克风，也就说只能采集单一的物理量信息——声压。声压是指声波通过媒质时，由振动所产生的压强改变量，也可以理解为声音的幅度或者强度。声压常用字母"p"表示，单位是帕斯卡（符号Pa）。声压的帕斯卡单位由于不方便记忆（比如$$20\times 10^{-6}$$Pa~20Pa），一般就以对数尺衡量有效声压相对于一个基准值的大小来表示，即声压级，其单位是分贝（符号dB）。
-
-人类对于1KHz的声音的听阈为$$20\times 10^{-6}$$Pa，通常以此作为声压级的基准值。这样讲可能晦涩难懂，我们来简单的类比一下：人类的呼吸声压是$$60\times 10^{-6}$$左右，声压级大约10dB，火箭发射的声压是4000Pa左右，声压级大约165dB，闪光弹的声压超过1万Pa，声压级大约175dB。
-
-为了描述麦克风的性能，有几个性能指标是非常关键的，这包括了灵敏度、指向性、频率响应、阻抗、动态范围、信噪比、最大声压级（或AOP，声学过载点）、一致性等。
 

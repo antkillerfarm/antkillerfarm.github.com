@@ -200,6 +200,10 @@ https://zhuanlan.zhihu.com/p/37074222
 
 CVPR 2018 高效小网络探密
 
+https://mp.weixin.qq.com/s/SqxooZqSeD3wA4EFK5D3Kg
+
+再生神经网络：利用知识蒸馏收敛到更优的模型
+
 # OCR
 
 光学字符识别（Optical Character Recognition, OCR），是指对文本资料的图像文件进行分析识别处理，获取文字及版面信息的过程。

@@ -220,6 +220,10 @@ https://mp.weixin.qq.com/s/8sI7StMcg7Emm98i93hNsQ
 
 解析阿里妈妈如何将深度学习应用在广告、推荐及搜索业务
 
+https://mp.weixin.qq.com/s/Ya8RZ3TouAapU_xuvMjjMQ
+
+深度协同过滤：用神经网络取代内积建模
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

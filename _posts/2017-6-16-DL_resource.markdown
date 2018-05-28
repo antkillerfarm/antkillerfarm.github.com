@@ -434,11 +434,7 @@ https://mp.weixin.qq.com/s/AEyr7FNeIHprprs9k7HE9w
 
 这些神经网络调参细节，你都了解了吗
 
-## 算法
-
-http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww
-
-MIT最新算法，双向传播比BP快25倍
+## gcForest
 
 http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw
 
@@ -460,7 +456,7 @@ https://mp.weixin.qq.com/s/N80l9PZQposbIOKXbv8ayw
 
 周志华：最新实验表明gcForest已经是最好的非深度神经网络方法
 
-https://mp.weixin.qq.com/s/TGuEvNXw_9S5-9a3KyDvvw
+https://mp.weixin.qq.com/s/8QP5X9Hxi_6qyfxP4O0Gwg
 
-基于图卷积网络的图深度学习
+周志华团队和蚂蚁金服合作：用分布式深度森林算法检测套现欺诈
 

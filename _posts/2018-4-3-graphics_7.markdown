@@ -230,6 +230,14 @@ ILSVRC 2010的冠军是NEC和UIUC的联合队伍。这也是DL于2012年大放�
 
 # DTW（续）
 
+结合连续性和单调性约束，每一个格点的路径就只有三个方向了。例如如果路径已经通过了格点$$(i, j)$$，那么下一个通过的格点只可能是下列三种情况之一：$$(i+1, j)$$，$$(i, j+1)$$或者$$(i+1, j+1)$$。
+
+归整路径实际上就是满足上述约束的所有路径中，cumulative distances最小的那条路径，即：
+
+$$D(i,j)=Dist(i,j)+\min(D(i-1,j),D(i,j-1),D(i-1,j-1)), D(1,1) = 0$$
+
+这里的距离可以使用欧氏距离，也可以使用马氏距离。
+
 DTW实例的具体计算过程可参见：
 
 http://www.cnblogs.com/tornadomeet/archive/2012/03/23/2413363.html
@@ -323,23 +331,4 @@ DTW是一种时域方法，作为信号处理自然少不了频域方法。这�
 ![](/images/img2/Cepstral_5.png)
 
 为了达到这个目标，我们需要Play a Mathematical Trick。这个Trick是什么呢？就是对频谱做FFT。
-
-这里，我们对Fourier transform做一个简单的回顾。
-
-设h(t)是一个时域函数，而H(f)是一个频域函数，则Fourier transform为：
-
-$$H(f)=\int_{-\infty}^\infty h(t)e^{2\pi i ft}\mathrm{d}t$$
-
-inverse Fourier transformation为：
-
-$$h(t)=\int_{-\infty}^\infty H(f)e^{-2\pi i ft}\mathrm{d}f$$
-
-因此，对频谱做FFT，也被叫做inverse FFT，简称IFFT。
-
-传统的IFFT的结果是一个时域函数，然而这里是对log frequency domain做IFFT，因此，它的值域只能被称作pseudo-frequency domain。
-
-从上图可以看出，**Spectral Envelope主要是低频成分，而Spectral details主要是高频成分。**
-
-![](/images/img2/Cepstral_6.png)
-
 

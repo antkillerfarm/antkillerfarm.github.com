@@ -382,4 +382,7 @@ https://mp.weixin.qq.com/s/c6ZhSk4r3pvnjHsvpwkkSw
 
 用图卷积网络(GCN)来做语义角色标注
 
+https://mp.weixin.qq.com/s/I50ceRiZZfVGDx8UzoobwA
+
+微软提出新型通用神经机器翻译方法，挑战低资源语言翻译问题
 

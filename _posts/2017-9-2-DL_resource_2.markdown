@@ -6,7 +6,15 @@ category: resource
 
 # DL参考资源
 
-## 算法（续）
+## 算法
+
+http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww
+
+MIT最新算法，双向传播比BP快25倍
+
+https://mp.weixin.qq.com/s/TGuEvNXw_9S5-9a3KyDvvw
+
+基于图卷积网络的图深度学习
 
 https://mp.weixin.qq.com/s/FLrnRF8UQg6vLn-sndSpiw
 

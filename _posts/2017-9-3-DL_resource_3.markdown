@@ -274,6 +274,10 @@ https://mp.weixin.qq.com/s/SUz2aqz9VM3xnvKUL80y1w
 
 IBM、哈佛联合提出Seq2Seq-Vis：机器翻译模型的可视化调试工具
 
+https://mp.weixin.qq.com/s/FXWhnmelkjkrSBo-zVpBLw
+
+可视化工具Yellowbrick：超参与行为的可视化带来更优秀的实现
+
 ## 遗传算法 & 进化算法
 
 http://blog.csdn.net/u010945683/article/details/40987331
