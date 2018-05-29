@@ -194,3 +194,13 @@ https://mp.weixin.qq.com/s/cnzQ7XepftDOZXslCf1MUA
 
 你真的会用t-SNE么？有关t-SNE的小技巧
 
+# Bloom Filter
+
+https://blog.csdn.net/zhaodedong/article/details/78186450
+
+Bloom Filter的原理和实现
+
+https://blog.csdn.net/zhaodedong/article/details/78445910
+
+Bloom Filter的数学背景
+

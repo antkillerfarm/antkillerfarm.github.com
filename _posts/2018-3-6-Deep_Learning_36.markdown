@@ -288,6 +288,10 @@ https://blog.csdn.net/CoderPai/article/details/80087188
 
 利用TensorFlow一步一步构建一个多任务学习模型
 
+https://mp.weixin.qq.com/s/fcFb6WkJVP8TYpoxkQgiWQ
+
+CMU提出“十字绣网络”，自动决定多任务学习的最佳共享层
+
 # AutoDL
 
 DL领域目前存在的主要问题之一是：如何设计网络结构和调整超参数。目前的做法，通常依赖于作者的直觉，属于典型的拍脑袋想点子。

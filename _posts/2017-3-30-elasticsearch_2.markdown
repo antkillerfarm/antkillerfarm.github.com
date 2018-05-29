@@ -201,6 +201,10 @@ https://scrapy.org/
 
 `scrapy crawl csdn`
 
+新建工程：
+
+`scrapy startproject tutorial`
+
 参考：
 
 https://segmentfault.com/a/1190000000583419

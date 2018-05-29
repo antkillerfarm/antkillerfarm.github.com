@@ -242,21 +242,9 @@ https://mp.weixin.qq.com/s/uJEGXNvBVJfsxYJUQCz4DQ
 
 DA-GAN技术：计算机帮你创造奇妙“新物种”
 
-https://mp.weixin.qq.com/s/TiXILy4l6Q3dxVwapyd9KQ
-
-二维码太丑？用风格迁移生成个性二维码了解一下
-
-https://mp.weixin.qq.com/s/7GHBH79kWIpEBLYX-VEd7A
-
-CycleGAN：图片风格，想换就换
-
 https://mp.weixin.qq.com/s/b8g_wNqi4dD5x9whj9ZN4A
 
 争议、流派，有关GAN的一切：Ian Goodfellow Q&A
-
-https://mp.weixin.qq.com/s/tzPCU1bxQ7NWtQ7o2PjF0g
-
-BAIR提出MC-GAN，使用GAN实现字体风格迁移
 
 https://mp.weixin.qq.com/s/9N-eOyRseMc6zVH1_VBE4w
 
@@ -339,6 +327,18 @@ https://mp.weixin.qq.com/s/97Uj-ATLToy1bNhnSUO8Jw
 https://mp.weixin.qq.com/s/cfw8mRsmzE1lU8PRM8UC0w
 
 秒变莫扎特、贝多芬，Facebook提出完美转换音乐风格的神经网络
+
+https://mp.weixin.qq.com/s/TiXILy4l6Q3dxVwapyd9KQ
+
+二维码太丑？用风格迁移生成个性二维码了解一下
+
+https://mp.weixin.qq.com/s/7GHBH79kWIpEBLYX-VEd7A
+
+CycleGAN：图片风格，想换就换
+
+https://mp.weixin.qq.com/s/tzPCU1bxQ7NWtQ7o2PjF0g
+
+BAIR提出MC-GAN，使用GAN实现字体风格迁移
 
 # 行人重识别
 

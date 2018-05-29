@@ -306,6 +306,10 @@ nnet1和nnet2的模型文件的格式是不兼容的。可以使用steps/nnet2/c
 
 而kaldi的nnet3和CNTK以及TensorFlow都是以图结构为基础的，通过配置文件实现对网络连接方式的定义，数据就像流水一样在你定义的网络图中游走，并自己实现误差的反向传播。
 
+kaldi的DL实现，**不仅具有inference的能力，也具有train的能力**。
+
+kaldi中cnn的例程较少，而且其最新的cnn实现单元TimeHeightConvolutionComponent与机器视觉那边的cnn实现有着很大的区别, 如果按照机器视觉中的cnn实现去做语音识别，那么训练的计算复杂度太高；kaldi最初的cnn实现单元ConvolutionComponent的设计思路和机器视觉cnn实现的思路是一致的，但是由于计算复杂度太高，现在已经打算废弃。
+
 ## online
 
 online识别通常会通过麦克风来获取音频，这部分一般是系统函数调用获取得到音频数据，一般系统采用16k采样率，16bits，单通道的音频。当然也可能会用到高采样率等，但对于识别来说已经足够。

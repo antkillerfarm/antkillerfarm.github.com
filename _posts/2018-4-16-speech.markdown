@@ -105,10 +105,6 @@ https://blog.csdn.net/dearwind153/article/category/6506891
 
 这哥们的blog很杂，这是语音相关的专栏
 
-https://blog.csdn.net/wbgxx333
-
-一个语音识别+Kaldi的blog
-
 http://www.cnblogs.com/JarvanWang/
 
 一个语音识别+Kaldi的blog
