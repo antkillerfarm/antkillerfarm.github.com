@@ -386,3 +386,7 @@ https://mp.weixin.qq.com/s/I50ceRiZZfVGDx8UzoobwA
 
 微软提出新型通用神经机器翻译方法，挑战低资源语言翻译问题
 
+https://mp.weixin.qq.com/s/odRDdSNNuTd5LnUf8rfRaw
+
+Google发布语义文本相似度研究新成果：通用语句编码器
+

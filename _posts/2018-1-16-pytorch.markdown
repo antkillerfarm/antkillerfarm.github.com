@@ -322,6 +322,10 @@ https://blog.csdn.net/wbgxx333
 
 一个语音识别+Kaldi的blog。这个博主还写了一个《kaldi资料归纳和总结》的文章，可加入博主的QQ群，在群文件中获得。
 
+http://jrmeyer.github.io/asr/2016/12/15/DNN-AM-Kaldi.html
+
+How to Train a Deep Neural Net Acoustic Model with Kaldi
+
 ## 编译
 
 1.检查依赖。
@@ -408,14 +412,3 @@ https://computing.llnl.gov/tutorials/linux_clusters/
 
 Linux Clusters Overview
 
-## 目录结构
-
-kaldi的调用层次可分为三级：
-
-1.**脚本**。包括shell脚本和perl脚本。主要在egs/wsj文件夹下。
-
-2.**工具**。一些可执行文件。在src/XXXbin文件夹下。
-
-3.**算法实现**。在src/XXX文件夹下。
-
-工具和算法实现基本都是C/C++写的。外部工具在tools文件夹下，主要是openfst、sctk、sph2pipe。

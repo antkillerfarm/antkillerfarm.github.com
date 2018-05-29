@@ -260,6 +260,26 @@ OpenAI发布强化学习环境Gym Retro：支持千种游戏
 
 # Kaldi（续）
 
+## 命令行粗解
+
+kaldi的命令行脚本之所以不好读，主要在于它有一套自己的语法。
+
+`head -1 $featdir/raw_mfcc_train.1.scp | copy-feats scp:- ark:- | copy-feats ark:- ark,t:- | head`
+
+上面是一个典型的kaldi脚本的片段。可以看出kaldi命令是一个典型的pipeline结构，用`|`作为命令间的分隔符，这和一般的Linux shell是一致的。比较让人困惑的是scp和ark。
+
+.ark（archive）是数据文件，可以是text或binary（默认）格式。
+
+.scp（script）是描述文件，记录对应ark的路径，它是text-only的格式的。
+
+.scp相当于C语言的指针，而.ark相当于指针指向的内容。
+
+`ark,t:-`中的t是IO描述符，IO描述符分为读和写两大类，t是读描述符，表示text。
+
+而`-`是文件描述符，`-`表示标准输入输出设备。它也可以是其他命令的输出，例如：
+
+`ark:gunzip -c $srcdir/fsts.JOB.gz`
+
 ## thchs30之run.sh粗解
 
 1.数据准备。
@@ -329,23 +349,4 @@ https://blog.csdn.net/lijin6249/article/details/51838936
 https://mp.weixin.qq.com/s/Scq8LumtTisPAdRE4CYPdA
 
 kaldi里的在线识别
-
-## 数据增强
-
-数据集的基础数据往往是单一的，我们怎么才能让数据变多呢？
-
-目前在基础数据上增加数据的方法主要有：加性噪声，乘性噪声，便音量，变语速等。这四种方法kaldi里都有对应的脚本干这些事情。
-
-1.加性噪声。比如不同风格的纯音乐和歌曲，不同场景的环境噪声。加冲击响应或者加性噪声的脚本位于egs/aspire/s5/local/multi_condition
-
-2.乘性噪声。不同场景的信道情况，混响，衰减等因素。
-
-3.变音量跟变语速：
-
-音量脚本：egs/wsj/s5/utils/data/perturb_data_dir_volume.sh
-
-语速脚本：egs/wsj/s5/utils/data/perturb_data_dir_speed_3way.sh
-
-kaldi的变音量跟变语速都是借助sox这个工具来实现的，具体的命令大家可以参考脚本，音量的变化范围从1.0/8到2；语速的变化范围就0.9,1,1.1。
-
 

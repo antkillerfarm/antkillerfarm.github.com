@@ -262,9 +262,15 @@ $$h(t)=\int_{-\infty}^\infty H(f)e^{-2\pi i ft}\mathrm{d}f$$
 
 ![](/images/img2/Cepstral_6.png)
 
+显然，如果把Spectral Envelope和Spectral details叠加起来就是原来的频谱信号了。
 
+换句话说，我们知道了$$\log X[k]$$，就可以求出$$x[k]$$，经过低通滤波就可以得到$$h[k]$$。
 
-# MFCC
+这里的$$x[k]$$被称作倒谱Cepstrum（这个是一个新造出来的词，把spectrum的前面四个字母顺序倒过来就是倒谱的单词了）。
+
+而我们所关心的$$h[k]$$就是倒谱的低频部分，它在语音识别中被广泛用于描述特征。
+
+# Mel-Frequency Analysis
 
 ## Mel scale
 
@@ -295,6 +301,8 @@ $$m = 2595 \log_{10}\left(1 + \frac{f}{700}\right)$$
 Mel-frequency cepstral coefficients是由Paul Mermelstein提出的一种音频特征。
 
 >Paul G. Mermelstein，明尼苏达大学神经科学教授。
+
+
 
 ## 参考
 

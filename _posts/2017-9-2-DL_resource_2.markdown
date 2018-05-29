@@ -424,3 +424,8 @@ https://mp.weixin.qq.com/s/28n8g_epHsYB0I9GVc_lww
 
 陈天奇团队TVM重磅更新：直接在浏览器使用GPU
 
+https://mp.weixin.qq.com/s/UxN9ZRmKLN30s7uPqMpHPQ
+
+Jeff Dean等提出动态控制流编程模型，大规模机器学习性能提升21%
+
+

@@ -258,6 +258,18 @@ https://mp.weixin.qq.com/s/wBuy2-gNrumZ__-H48KEMA
 
 # Kaldi（续）
 
+## 目录结构
+
+kaldi的调用层次可分为三级：
+
+1.**脚本**。包括shell脚本和perl脚本。主要在egs/wsj文件夹下。
+
+2.**工具**。一些可执行文件。在src/XXXbin文件夹下。
+
+3.**算法实现**。在src/XXX文件夹下。
+
+工具和算法实现基本都是C/C++写的。外部工具在tools文件夹下，主要是openfst、sctk、sph2pipe。
+
 ## 术语
 
 LM：language model
@@ -269,6 +281,12 @@ CMVN：cepstral mean and variance
 G2P：Grapheme-to-Phoneme
 
 WSJ：Wall Street Journal
+
+WER/CER/PER：Word/Character/Phoneme Error Rate
+
+https://blog.csdn.net/quhediegooo/article/details/56834417
+
+语音识别评估标准-WER
 
 ## OpenFst
 
@@ -385,24 +403,4 @@ Kaldi(A5)语言模型及HCLG.fst生成
 https://blog.csdn.net/nihaomafb/article/details/48009695
 
 语言模型Katz backoff以及HMM模型
-
-## 命令行粗解
-
-kaldi的命令行脚本之所以不好读，主要在于它有一套自己的语法。
-
-`head -1 $featdir/raw_mfcc_train.1.scp | copy-feats scp:- ark:- | copy-feats ark:- ark,t:- | head`
-
-上面是一个典型的kaldi脚本的片段。可以看出kaldi命令是一个典型的pipeline结构，用`|`作为命令间的分隔符，这和一般的Linux shell是一致的。比较让人困惑的是scp和ark。
-
-.ark（archive）是数据文件，可以是text或binary（默认）格式。
-
-.scp（script）是描述文件，记录对应ark的路径，它是text-only的格式的。
-
-.scp相当于C语言的指针，而.ark相当于指针指向的内容。
-
-`ark,t:-`中的t是IO描述符，IO描述符分为读和写两大类，t是读描述符，表示text。
-
-而`-`是文件描述符，`-`表示标准输入输出设备。它也可以是其他命令的输出，例如：
-
-`ark:gunzip -c $srcdir/fsts.JOB.gz`
 

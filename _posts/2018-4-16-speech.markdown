@@ -73,10 +73,6 @@ https://cs.nyu.edu/~eugenew/asr13/
 
 这是MIT博士Eugene Weinstein在NYU当助教的时候（2013年）开的课程。
 
-https://www.clsp.jhu.edu/~zak/678/
-
-Automatic Speech Processing & Recognition（2005年）。这是Johns Hopkins University的课程，就是有些老了。
-
 http://berlin.csie.ntnu.edu.tw/Courses/Speech%20Processing/Speech%20Processing_Main_2016S.htm
 
 Speech Processing。国立台湾师范大学的陈柏琳教授的课程。陈教授教学多年，主页上还有好多其他课程。

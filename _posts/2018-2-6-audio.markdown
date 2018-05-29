@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  音频常识, 区块链
+title:  音频常识, 区块链, Kaldi（4）
 category: technology 
 ---
 
@@ -223,3 +223,23 @@ https://solidity.readthedocs.io/
 https://zhuanlan.zhihu.com/p/32796998
 
 10分钟搞定ICO
+
+# Kaldi（续）
+
+## 数据增强
+
+数据集的基础数据往往是单一的，我们怎么才能让数据变多呢？
+
+目前在基础数据上增加数据的方法主要有：加性噪声，乘性噪声，便音量，变语速等。这四种方法kaldi里都有对应的脚本干这些事情。
+
+1.加性噪声。比如不同风格的纯音乐和歌曲，不同场景的环境噪声。加冲击响应或者加性噪声的脚本位于egs/aspire/s5/local/multi_condition
+
+2.乘性噪声。不同场景的信道情况，混响，衰减等因素。
+
+3.变音量跟变语速：
+
+音量脚本：egs/wsj/s5/utils/data/perturb_data_dir_volume.sh
+
+语速脚本：egs/wsj/s5/utils/data/perturb_data_dir_speed_3way.sh
+
+kaldi的变音量跟变语速都是借助sox这个工具来实现的，具体的命令大家可以参考脚本，音量的变化范围从1.0/8到2；语速的变化范围就0.9,1,1.1。
