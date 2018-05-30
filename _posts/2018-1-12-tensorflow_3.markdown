@@ -392,3 +392,7 @@ https://mp.weixin.qq.com/s/ebLHZAG8H78TsZUKSzAtIw
 
 TF官方博客：基于TensorFlow.js框架的浏览器实时姿态估计
 
+https://mp.weixin.qq.com/s/kS92vYyeHLc38RGc_4CZbg
+
+如何应用TFGAN快速实践生成对抗网络？
+
