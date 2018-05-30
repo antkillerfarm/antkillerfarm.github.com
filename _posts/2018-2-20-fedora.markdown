@@ -235,6 +235,10 @@ https://mp.weixin.qq.com/s/rM78u0bF2bqI7eQ4t6lxpw
 
 国内奇葩小学数学题横扫推特，老外被难哭了
 
+----
+
+![](/images/img2/iran_dynasties.jpg)
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/sbuqNhIVTDUe4Q6BxS5fWw
@@ -296,5 +300,3 @@ https://mp.weixin.qq.com/s/C1PydJQJjZtf0mHIIDcFvg
 https://mp.weixin.qq.com/s/SB5ZSD_YGPvC6hPTZXiB4A
 
 让机器“一叶知秋”：弱监督视觉语义分割
-
-

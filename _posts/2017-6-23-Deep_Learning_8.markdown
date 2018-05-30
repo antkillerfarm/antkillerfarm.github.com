@@ -236,6 +236,10 @@ https://mp.weixin.qq.com/s/gwH9s1ggMTj2dJkad9wUuw
 
 从VGG到NASNet，一文概览图像分类网络
 
+https://mp.weixin.qq.com/s/hIAIbpqItS09KDOSFxaeqg
+
+从Inception v1到Inception-ResNet，一文概览Inception家族的“奋斗史”
+
 # GAN
 
 ## 概况

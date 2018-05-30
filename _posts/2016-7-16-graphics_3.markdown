@@ -190,6 +190,10 @@ Tight Frame有个重要特性：
 
 >作者：Peng Yang，Shiguang Shan，Wen Gao，Stan Z. Li，Dong Zhang，中科院计算所和微软亚洲研究院的几个小牛。
 
+>高文，1956年生，哈尔滨工业大学博士（1988）+东京大学博士（1991）。中科院计算所所长，中国工程院院士。
+
+>山世光，1975年生，哈尔滨工业大学本硕（1997，1999）+中科院博士（2004）。中科视拓CEO。
+
 5.http://www.cnblogs.com/Jack-Lee/p/3649114.html
 
 基于OpenCV的Gabor变换及特征提取

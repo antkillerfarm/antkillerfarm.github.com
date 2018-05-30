@@ -290,73 +290,25 @@ Mel scale从严格的定义上并没有一个简单的公式来表示。但一�
 
 $$m = 2595 \log_{10}\left(1 + \frac{f}{700}\right)$$
 
-从中可以看出，人耳对于高频声音的分辨率实际上是不如低频声音的。
+从中可以看出，**人耳对于高频声音的分辨率实际上是不如低频声音的**。
 
 ![](/images/img2/Mel_scale.png)
 
 >Mel是melody的别称，有的blog上说Mel是个人，他发明了MFCC，这纯粹是胡说八道。
 
-## MFCC
+## Window function
 
-Mel-frequency cepstral coefficients是由Paul Mermelstein提出的一种音频特征。
+Fourier transform研究的是整个时间域和频率域的关系。但实际的信号处理过程，不可能对无限长的信号进行测量和运算，而是取其有限的时间片段进行分析。做法是从信号中截取一个时间片段，然后用截取的信号时间片段进行周期延拓处理，得到虚拟的无限长的信号，然后就可以对信号进行FT、相关分析等数学处理。
 
->Paul G. Mermelstein，明尼苏达大学神经科学教授。
+无限长的信号被截断以后，其频谱发生了畸变，原来集中在f(0)处的能量被分散到两个较宽的频带中去了（这种现象称之为频谱能量泄漏）。
 
+为了减少频谱能量泄漏，可采用不同的截取函数对信号进行截断，这些截断函数称为Window function。
 
+常用的Window function有：Rectangular window、Triangular window、Hamming window、Gaussian window等。
 
-## 参考
+不同的窗函数对信号频谱的影响是不一样的。例如，Rectangular window主瓣窄，旁瓣大，频率识别精度最高，幅值识别精度最低；Blackman window主瓣宽，旁瓣小，频率识别精度最低，但幅值识别精度最高。
 
-http://blog.csdn.net/zouxy09/article/details/9156785
+对Window function更详细的叙述参见：
 
-梅尔频率倒谱系数（MFCC）
-
-https://my.oschina.net/jamesju/blog/193343
-
-语音特征参数MFCC提取过程详解
-
-https://liuyanfeier.github.io/2017/10/26/2017-10-27-Kaldi%E4%B9%8Bfbank%E5%92%8Cmfcc%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/
-
-kaldi之fbank和mfcc特征提取
-
-https://zhuanlan.zhihu.com/p/26680599
-
-语音信号预处理及特征参数提取
-
-# Pitch Detection
-
-http://blog.csdn.net/zouxy09/article/details/9141875
-
-基音周期估计（Pitch Detection）
-
-# Vector Quantization
-
-http://blog.csdn.net/zouxy09/article/details/9153255
-
-矢量量化（Vector Quantization）
-
-# FBank
-
-http://blog.csdn.net/wxb1553725576/article/details/78048546
-
-Kaldi特征提取之-FBank
-
-# fMLLR
-
-https://blog.csdn.net/xmdxcsj/article/details/78512645
-
-声学特征变换fMLLR
-
-# SGMM
-
-https://blog.csdn.net/quhediegooo/article/details/68946100
-
-子空间高斯混合模型-SGMM
-
-# VTLN
-
-https://blog.csdn.net/jiangyangbo/article/details/6535928
-
-VTLN(Vocal Tract Length Normalisation)
-
-
+https://en.wikipedia.org/wiki/Window_function
 

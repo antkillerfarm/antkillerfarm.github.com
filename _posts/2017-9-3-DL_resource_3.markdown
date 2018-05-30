@@ -356,6 +356,10 @@ https://mp.weixin.qq.com/s/iAmkb2EdYofJU1AoBw2HyA
 
 多目标优化详解
 
+https://mp.weixin.qq.com/s/MCKkngSzzsABxyiGAFA1lg
+
+进化计算在深度学习中的应用
+
 ## 深度哈希
 
 https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg

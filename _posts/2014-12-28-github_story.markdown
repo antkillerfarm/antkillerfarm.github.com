@@ -192,6 +192,20 @@ https://mp.weixin.qq.com/s/4AnLu0m2IILGwyPyuK37Fg
 
 基本操作：Go创建GraphQL API
 
+# LDA-MLLT
+
+Maximum Likelihood Linear Transform (MLLT)，又名Global Semi-tied Covariance (STC)。因此，在科技文献中，常被称作STC/MLLT。
+
+《Semi-tied Covariance Matrices for Hidden Markov Models》
+
+《Improved feature processing for Deep Neural Networks》
+
+![](/images/img2/MLLT.png)
+
+https://blog.csdn.net/xmdxcsj/article/details/78512652
+
+声学特征变换 STC/MLLT
+
 # WFST
 
 Weighted-Finite-State-Transducer
@@ -215,4 +229,22 @@ http://djt.qq.com/article/view/507
 https://blog.csdn.net/lucky_ricky/article/details/77511543
 
 Kaldi WFST 构图 学习
+
+# 汽车声学
+
+https://zhuanlan.zhihu.com/p/22722073
+
+当我谈汽车声学时，我在谈什么(一)
+
+https://zhuanlan.zhihu.com/p/28608243
+
+当我谈汽车声学时，我在谈什么(二)
+
+https://zhuanlan.zhihu.com/p/31240294
+
+当我谈汽车声学时，我在谈什么(三)
+
+https://zhuanlan.zhihu.com/p/34256635
+
+当我谈汽车声学时，我在谈什么(四)
 
