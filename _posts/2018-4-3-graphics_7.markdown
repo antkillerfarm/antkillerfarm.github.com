@@ -320,15 +320,12 @@ DTW是一种时域方法，作为信号处理自然少不了频域方法。这�
 
 既然它那么重要，那我们就是需要把它提取出来！我们要提取的不仅仅是共振峰的位置，还得提取它们转变的过程。所以我们提取的是频谱的包络（Spectral Envelope）。这包络就是一条连接这些共振峰点的平滑曲线。
 
-![](/images/img2/Cepstral_3.png)
-
 原始的频谱由两部分组成：包络和频谱的细节。这里用到的是对数频谱，所以单位是dB。
 
-![](/images/img2/Cepstral_4.png)
+![](/images/img2/Cepstral_3.png)
 
 怎么把他们分离开呢？也就是，怎么在给定$$\log X[k]$$的基础上，求得$$\log H[k]$$和$$\log E[k]$$以满足$$\log X[k] = \log H[k] + \log E[k]$$呢？
 
-![](/images/img2/Cepstral_5.png)
+![](/images/img2/Cepstral_4.png)
 
 为了达到这个目标，我们需要Play a Mathematical Trick。这个Trick是什么呢？就是对频谱做FFT。
-

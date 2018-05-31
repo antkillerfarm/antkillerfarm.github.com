@@ -260,7 +260,7 @@ $$h(t)=\int_{-\infty}^\infty H(f)e^{-2\pi i ft}\mathrm{d}f$$
 
 从上图可以看出，**Spectral Envelope主要是低频成分，而Spectral details主要是高频成分。**
 
-![](/images/img2/Cepstral_6.png)
+![](/images/img2/Cepstral_5.png)
 
 显然，如果把Spectral Envelope和Spectral details叠加起来就是原来的频谱信号了。
 

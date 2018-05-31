@@ -227,6 +227,10 @@ https://mp.weixin.qq.com/s/A2QNr4-LTUNy-H8zE0OgXA
 
 教你用Scrapy建立你自己的数据集
 
+https://mp.weixin.qq.com/s/i-umuOi8jGw8dMQmG44liQ
+
+如何租到靠谱的房子？Scrapy爬虫帮你一网打尽各平台租房信息！这篇blog中，还有如何用Kibana处理数据的内容
+
 # Flume & Kafka
 
 Flume和Kafka都是日志系统。

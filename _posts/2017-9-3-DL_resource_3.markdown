@@ -36,6 +36,10 @@ http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg
 
 GitHub最受欢迎深度学习项目Top 20
 
+https://mp.weixin.qq.com/s/WNJD8ZjnSVsE91H8Hks4vA
+
+手把手教你从零搭建深度学习项目
+
 https://mp.weixin.qq.com/s/Shz6BmsOrtbEFtoJRSkl9A
 
 简单车牌检测

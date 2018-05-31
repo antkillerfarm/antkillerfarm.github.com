@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十二）——EMD, LSA, HMM, AutoML, KNN
+title:  机器学习（二十二）——EMD, LSA, HMM
 category: ML 
 ---
 
@@ -102,6 +102,14 @@ TF-IDF不容小觑
 
 ![](/images/article/HMM_3.png)
 
+上图中的隐含状态，也称states。可见状态，也称observations。黑线被称为transition probability，而红线则是emission probability或output probability。第一个observations的概率被称为start probability。
+
+因此一个HMM可以表示为：
+
+$$\mu=(A,B,\Pi)$$
+
+其中，A是transition probability，B是emission probability，$$\Pi$$是start probability。
+
 和HMM（Hidden Markov Model，隐马尔可夫模型）模型相关的算法主要分为三类，分别解决三种问题：
 
 1）**知道骰子有几种（隐含状态数量），每种骰子是什么（转换概率），根据掷骰子掷出的结果（可见状态链），我想知道每次掷出来的都是哪种骰子（隐含状态链）。**
@@ -114,7 +122,7 @@ TF-IDF不容小觑
 
 3）**知道骰子有几种（隐含状态数量），不知道每种骰子是什么（转换概率），观测到很多次掷骰子的结果（可见状态链），我想反推出每种骰子是什么（转换概率）。**
 
-这个问题很重要，因为这是最常见的情况。很多时候我们只有可见结果，不知道HMM模型里的参数，我们需要从可见结果估计出这些参数，这是建模的一个必要步骤。
+这个问题很重要，因为这是最常见的情况。很多时候我们只有可见结果，不知道HMM模型里的参数，我们需要从可见结果估计出这些参数，这是训练建模的一个必要步骤。
 
 参考：
 
@@ -148,6 +156,8 @@ Viterbi算法是求解最大似然状态路径的常用算法，被广泛应用�
 
 上图是Viterbi算法的动画图。简单来说就是：从开始状态之后每走一步，就记录下到达该状态的所有路径的概率最大值，然后以此最大值为基准继续向后推进。显然，如果这个最大值都不能使该状态成为最大似然状态路径上的结点的话，那些小于它的概率值（以及对应的路径）就更没有可能了。
 
+Viterbi算法只能求出最佳路径，对于N-best问题就需要进行扩展方可。
+
 参考：
 
 https://mp.weixin.qq.com/s/FQ520ojMmbFhNMoNCVTKug
@@ -176,71 +186,27 @@ forward算法是求解问题2的常用算法。
 
 ## Baum–Welch算法
 
-Baum–Welch算法是求解问题3的常用算法。
+Baum–Welch算法是求解问题3的常用算法，由Baum和Welch于1972年提出。它虽然是EM算法的一个特例，但后者却是1977年才提出的。
 
 >Leonard Esau Baum，1931～2017，美国数学家，哈佛博士（1958）。国防分析研究所研究员，70年代末，加盟对冲基金——文艺复兴科技公司。
 
 >Lloyd Richard Welch，生于1927年，美国数学家，加州理工博士（1958），南加州大学教授。美国工程院院士，Shannon Award获得者（2003）。
 
-## HMM在NLP领域的应用
+Baum–Welch算法也叫前向后向算法。因为它包含了前向和后向两个步骤。
 
-具体到分词系统，可以将“标签”当作隐含状态，“字或词”当作可见状态。那么，几个NLP的问题就可以转化为：
+1:expectation，计算隐变量的概率分布，并得到可观察变量与隐变量联合概率的log-likelihood在前面求得的隐变量概率分布下的期望。这个步骤就是所谓的前向步骤，算法和求解问题2的forward算法是一致的
 
-词性标注：给定一个词的序列（也就是句子），找出最可能的词性序列（标签是词性）。如ansj分词和ICTCLAS分词等。
+2:maximization求得使上述期望最大的新的模型参数。若达到收敛条件则退出，否则回到步骤1。
 
-分词：给定一个字的序列，找出最可能的标签序列（断句符号：[词尾]或[非词尾]构成的序列）。结巴分词目前就是利用BMES标签来分词的，B（开头）,M（中间),E(结尾),S(独立成词）
+前向后向算法则主要是解决Expectation这步中求隐变量概率分布的一个算法，它利用dynamic programming大大减少了计算量。
 
-命名实体识别：给定一个词的序列，找出最可能的标签序列（内外符号：[内]表示词属于命名实体，[外]表示不属于）。如ICTCLAS实现的人名识别、翻译人名识别、地名识别都是用同一个Tagger实现的。
+此外，训练HMM模型时，也需要对模型参数进行随机初始化，不然和神经网络一样，由于参数没有差异性，而无法进行训练。
 
-# AutoML
+参考：
 
-## 概述
+https://blog.csdn.net/xmu_jupiter/article/details/50965039
 
-尽管现在已经有许多成熟的ML算法，然而大多数ML任务仍依赖于专业人员的手工编程实现。
-
-然而但凡做过若干同类项目的人都明白，在算法选择和参数调优的过程中，有大量的套路可以遵循。
-
-比如有人就总结出参加kaggle比赛的套路：
-
-http://www.jianshu.com/p/63ef4b87e197
-
-一个框架解决几乎所有机器学习问题
-
-https://mlwave.com/kaggle-ensembling-guide/
-
-Kaggle Ensembling Guide
-
-既然是套路，那么就有将之自动化的可能，比如下面网页中，就有好几个AutoML的框架：
-
-https://mp.weixin.qq.com/s/QIR_l8OqvCQzXXXVY2WA1w
-
-十大你不可忽视的机器学习项目
-
-下面给几个套路图：
-
-![](/images/article/ML.png)
-
-![](/images/article/AutoML.jpg)
-
-## 超参数
-
-所谓hyper-parameters，就是机器学习模型里面的框架参数，比如聚类方法里面类的个数，或者话题模型里面话题的个数等等，都称为超参数。它们跟训练过程中学习的参数（权重）是不一样的，通常是手工设定，不断试错调整，或者对一系列穷举出来的参数组合一通枚举（叫做网格搜索）。
-
-AutoML很大程度上就是自动化寻找合适的hyper-parameters的方案或方法。
-
-参见：
-
-http://blog.csdn.net/xiewenbo/article/details/51585054
-
-什么是超参数
-
-http://www.cnblogs.com/fhsy9373/p/6993675.html
-
-如何选取一个神经网络中的超参数hyper-parameters
-
-https://mp.weixin.qq.com/s/Q7Xqb-GZXktFIM5yW8moPg
-
-机器学习中的超参数的选择与交叉验证
+HMM的Baum-Welch算法和Viterbi算法公式推导细节
 
 
 

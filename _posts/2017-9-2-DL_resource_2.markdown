@@ -298,6 +298,14 @@ https://zhuanlan.zhihu.com/p/34164501
 
 HBM技术之显卡应用
 
+http://eyeriss.mit.edu/
+
+Eyeriss是MIT设计的一款NN加速器。
+
+https://zhuanlan.zhihu.com/p/37520172
+
+一窥ARM的AI处理器
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293

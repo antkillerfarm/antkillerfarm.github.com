@@ -52,6 +52,8 @@ http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf
 
 http://www.cnblogs.com/neopenx/p/4453161.html
 
+ReLu(Rectified Linear Units)激活函数
+
 https://en.wikipedia.org/wiki/Activation_function
 
 ## ReLU

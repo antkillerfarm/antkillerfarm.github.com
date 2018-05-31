@@ -248,7 +248,7 @@ MXNet版本：
 
 https://github.com/TuSimple/mx-maskrcnn
 
-![](/images/img2/mask_rcnn.jpg)
+![](/images/img2/mask_rcnn.png)
 
 参考：
 

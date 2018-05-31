@@ -70,6 +70,8 @@ $$D_{KL}(P\|Q)=\sum_iP(i)\log\frac{P(i)}{Q(i)}$$
 
 其中，P和Q是离散概率分布，$$P(i)$$和$$Q(i)$$是相应分布的概率密度函数。如果P和Q是连续随机变量的话，将上式中的累加符号换成积分符号即可。
 
+**KL散度越小，两个分布之间的匹配就越好。**
+
 但KL散度并不是真正的度量（metric）。它既不满足三角不等式(两边之和$$\ge$$第三边)，也不满足对称性（即$$D_{KL}(P\|Q)\neq D_{KL}(Q\|P)$$）。
 
 >注：Solomon Kullback，1907～1994，美国数学家和密码学家。乔治·华盛顿大学博士。NSA首任首席科学家。二战期间，参与破解德国的Enigma机器。
@@ -81,6 +83,10 @@ $$D_{KL}(P\|Q)=\sum_iP(i)\log\frac{P(i)}{Q(i)}$$
 https://mp.weixin.qq.com/s/e7YQfG578vWxApD-4gsWIg
 
 如何理解KL散度的不对称性
+
+https://mp.weixin.qq.com/s/PPz5iKY5Kb0vGqlfHvCJHA
+
+初学机器学习：直观解读KL散度的数学概念
 
 ## 过滤特征选择方法
 

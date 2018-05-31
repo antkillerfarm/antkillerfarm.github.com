@@ -124,6 +124,10 @@ https://mp.weixin.qq.com/s/31DGDYpDHcYg-4qM4OczxA
 
 深入浅出Nginx
 
+https://mp.weixin.qq.com/s/h9sXZc4Y62f4KOSVXAB1Pg
+
+Nginx基本功能极速入门
+
 http://chongzhuang.windowszj.com/
 
 系统之家一键重装
