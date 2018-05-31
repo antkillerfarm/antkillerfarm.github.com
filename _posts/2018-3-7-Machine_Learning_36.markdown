@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十六）——XGBoost, LightGBM, Parameter Server, LambdaMART, NLP机器翻译常用评价度量, KNN, Optimizer进阶
+title:  机器学习（三十六）——XGBoost, LightGBM, Parameter Server, LambdaMART, KNN, Optimizer进阶
 category: ML 
 ---
 
@@ -215,36 +215,6 @@ LambdaMART不太简短之介绍
 http://blog.csdn.net/huagong_adu/article/details/40710305
 
 Learning To Rank之LambdaMART的前世今生
-
-# NLP机器翻译常用评价度量
-
-机器翻译的评价指标主要有：BLEU、NIST、Rouge、METEOR等。
-
-参考：
-
-http://blog.csdn.net/joshuaxx316/article/details/58696552
-
-BLEU，ROUGE，METEOR，ROUGE-浅述自然语言处理机器翻译常用评价度量
-
-http://blog.csdn.net/guolindonggld/article/details/56966200
-
-机器翻译评价指标之BLEU
-
-http://blog.csdn.net/han_xiaoyang/article/details/10118517
-
-机器翻译评估标准介绍和计算方法
-
-http://blog.csdn.net/lcj369387335/article/details/69845385
-
-自动文档摘要评价方法---Edmundson和ROUGE
-
-https://mp.weixin.qq.com/s/XiZ6Uc5cHZjczn-qoupQnA
-
-对话系统评价方法综述
-
-https://zhuanlan.zhihu.com/p/33088748
-
-数据集和评价指标介绍
 
 # KNN
 

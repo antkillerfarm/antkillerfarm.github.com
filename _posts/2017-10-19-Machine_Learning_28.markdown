@@ -80,6 +80,10 @@ http://www.cnblogs.com/SDJL/archive/2008/08/22/1274312.html
 
 通过金矿模型介绍动态规划
 
+https://mp.weixin.qq.com/s/fTQbatHpZFxxU6VGhJNVrg
+
+0-1背包问题的动态规划算法
+
 # Monte-Carlo
 
 ## 概率算法

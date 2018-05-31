@@ -260,6 +260,10 @@ https://mp.weixin.qq.com/s/k0dRu1wx49HTi_oJYJEGPw
 
 阿里提出IncepText：全新多向场景文本检测模块
 
+https://mp.weixin.qq.com/s/0ysaJGNslckesv21o752FA
+
+图像OCR年度进展
+
 # CRNN
 
 论文：
