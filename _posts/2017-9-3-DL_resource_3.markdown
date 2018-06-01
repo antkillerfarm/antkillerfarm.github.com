@@ -282,6 +282,10 @@ https://mp.weixin.qq.com/s/FXWhnmelkjkrSBo-zVpBLw
 
 可视化工具Yellowbrick：超参与行为的可视化带来更优秀的实现
 
+https://mp.weixin.qq.com/s/f3pRA_lyT5jfzWimy6CleA
+
+TensorEditor：一个小白都能快速玩转的神经网络搭建工具
+
 ## 遗传算法 & 进化算法
 
 http://blog.csdn.net/u010945683/article/details/40987331

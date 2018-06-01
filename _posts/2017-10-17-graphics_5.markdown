@@ -40,6 +40,10 @@ https://mp.weixin.qq.com/s/wYiwuBt8VVYOheJ_jgCHgA
 
 一文读懂图像局部特征点检测算法！
 
+https://mp.weixin.qq.com/s/sM78DCOK3fuG2JrP2QaSZA
+
+SIFT与CNN的碰撞：万字长文回顾图像检索任务十年探索历程
+
 # YUV & YCbCr & RGB
 
 在RGB颜色空间中，红，绿，蓝是基本元素。RGB格式是显示器通常使用的格式。

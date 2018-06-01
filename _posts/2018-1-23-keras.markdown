@@ -330,23 +330,6 @@ kaldi的DL实现，**不仅具有inference的能力，也具有train的能力**�
 
 kaldi中cnn的例程较少，而且其最新的cnn实现单元TimeHeightConvolutionComponent与机器视觉那边的cnn实现有着很大的区别, 如果按照机器视觉中的cnn实现去做语音识别，那么训练的计算复杂度太高；kaldi最初的cnn实现单元ConvolutionComponent的设计思路和机器视觉cnn实现的思路是一致的，但是由于计算复杂度太高，现在已经打算废弃。
 
-## online
+值得注意的是，除了TensorFlow提供的Speech Commands Datasets之外，其他的数据集基本都是以一句话作为训练数据的最小单元。由于训练数据存在着语音和文字之间的帧对齐问题，因此即便是DL方案，通常也需要利用由传统方法生成的粗糙模型，进行相关的对齐操作。
 
-online识别通常会通过麦克风来获取音频，这部分一般是系统函数调用获取得到音频数据，一般系统采用16k采样率，16bits，单通道的音频。当然也可能会用到高采样率等，但对于识别来说已经足够。
-
-kaldi里的在线识别有2个版本，online跟online2。
-
-online是很早的一些版本，通过麦克风获取数据，然后得到文本结果，但只支持gmm的模型。
-
-online2版本没有麦克风获取数据这部分，就直接是音频文件到识别结果，这里支持nnet2跟nnet3的模型。
-
-参考：
-
-https://blog.csdn.net/lijin6249/article/details/51838936
-
-基于kaldi的在线中文识别，online的操作介绍
-
-https://mp.weixin.qq.com/s/Scq8LumtTisPAdRE4CYPdA
-
-kaldi里的在线识别
 

@@ -226,6 +226,26 @@ https://zhuanlan.zhihu.com/p/32796998
 
 # Kaldi（续）
 
+## online
+
+online识别通常会通过麦克风来获取音频，这部分一般是系统函数调用获取得到音频数据，一般系统采用16k采样率，16bits，单通道的音频。当然也可能会用到高采样率等，但对于识别来说已经足够。
+
+kaldi里的在线识别有2个版本，online跟online2。
+
+online是很早的一些版本，通过麦克风获取数据，然后得到文本结果，但只支持gmm的模型。
+
+online2版本没有麦克风获取数据这部分，就直接是音频文件到识别结果，这里支持nnet2跟nnet3的模型。
+
+参考：
+
+https://blog.csdn.net/lijin6249/article/details/51838936
+
+基于kaldi的在线中文识别，online的操作介绍
+
+https://mp.weixin.qq.com/s/Scq8LumtTisPAdRE4CYPdA
+
+kaldi里的在线识别
+
 ## 数据增强
 
 数据集的基础数据往往是单一的，我们怎么才能让数据变多呢？

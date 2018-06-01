@@ -170,6 +170,10 @@ https://mp.weixin.qq.com/s/tbRj5Wd69n9gvSzW4oKStg
 
 异或神经网络
 
+https://mp.weixin.qq.com/s/KgM1k1bziLTCec67hQ8hlQ
+
+超全总结：神经网络加速之量化模型
+
 # 视频目标分割
 
 视频目标分割任务和语义分割有两个基本区别：

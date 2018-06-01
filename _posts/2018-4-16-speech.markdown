@@ -36,7 +36,11 @@ SR领域最牛的高校主要是美国的CMU、Johns Hopkins University、英国
 >个人主页：   
 >http://www.cs.colorado.edu/~martin/
 
->这本书比较老了（1999年），但毕竟是本1000页左右的书，传统方法该说的基本都说了。DL方法目前还没有一本类似的书，主要还是看论文。
+这本书比较老了（1999年），但毕竟是本1000页左右的书，传统方法该说的基本都说了。主要问题在于NLP和语义学的内容较多，相对来说ASR的内容就少了些。
+
+《Spoken Language Processing-A Guide to Theory, Algorithm and System Development》，黄学东等著。
+
+这本书基本上是ASR传统方法的大全了，无论理论还是工程实践都有相当大的篇幅，但也有些老了（2001年）。
 
 ## 教程
 

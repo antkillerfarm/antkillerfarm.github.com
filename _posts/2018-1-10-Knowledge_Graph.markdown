@@ -282,12 +282,6 @@ G2P：Grapheme-to-Phoneme
 
 WSJ：Wall Street Journal
 
-WER/CER/PER：Word/Character/Phoneme Error Rate
-
-https://blog.csdn.net/quhediegooo/article/details/56834417
-
-语音识别评估标准-WER
-
 ## OpenFst
 
 OpenFst是一个构造、合并、优化和搜索加权有限状态机FST的库。

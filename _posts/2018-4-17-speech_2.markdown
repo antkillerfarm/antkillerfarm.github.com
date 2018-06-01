@@ -44,7 +44,7 @@ https://zhuanlan.zhihu.com/p/27610503
 
 麦克风阵列(Microphone Array)，从字面上，指的是麦克风的排列。也就是说由一定数目的声学传感器(一般是麦克风)组成，用来对声场的空间特性进行采样并处理的系统。
 
-![](/images/img2/Echo.png)
+![](/images/img2/Echo.jpg)
 
 上图是Amazon Echo所采用的6+1麦克风阵列。
 

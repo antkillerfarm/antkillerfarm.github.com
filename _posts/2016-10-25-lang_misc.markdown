@@ -242,73 +242,70 @@ https://www.zhihu.com/question/40763253
 
 如何在Word和PowerPoint中优雅地插入Latex公式？
 
-# Cepstrum Analysis（续）
+# GMM-HMM
 
-这里，我们对Fourier transform做一个简单的回顾。
+混合高斯模型是为了计算某个观察状态的mfcc分布和某个特定音子的mfcc之间的似然度的，但由于音子的mfcc分布并不是真的符合高斯分布，因此需要叠加多个高斯混合模型，来逼近某个特定音子的mfcc特征分布。我们叠加的模型数量越多，拟合的效果就越好。
 
-设h(t)是一个时域函数，而H(f)是一个频域函数，则Fourier transform为：
+最简单的情况下，每个音子（例如ah这个音子）都需要至少一个39维的多维高斯模型进行建模，但是这样做的前提是，ah这个音的39维mfcc特征的分布符合高斯分布。
 
-$$H(f)=\int_{-\infty}^\infty h(t)e^{2\pi i ft}\mathrm{d}t$$
+但事实上，ah并不完全符合高斯分布，于是我们就用一组（比如10个）高斯模型，混合在一起，去逼近这个音的mfcc特征分布。这样当有一帧通过计算得到一个39维的向量的时候，我们就可以把这个向量带入加权混合后的高斯模型中，计算这个向量属于ah这个音的概率。
 
-inverse Fourier transformation为：
+以thchs为例，一共有3000个高斯核对音素进行建模，那是如何分配的呢？
 
-$$h(t)=\int_{-\infty}^\infty H(f)e^{-2\pi i ft}\mathrm{d}f$$
+如果是triphone模型，那么3000个高斯核每个都会分配一个三音子态。也就是说，每个核只用来建模一个三音子态。要确定这件事，只要看模型文件里有没有用来分配高斯混合模型权重的文件就可以了。
 
-因此，对频谱做FFT，也被叫做inverse FFT，简称IFFT。
+比如在sphinx这个库里面，模型文件中会有一个叫mixture_weight的文件，就是用来储存权重的，如果没有这个文件，意味着每个高斯核只用来建模一个音子态。
 
-传统的IFFT的结果是一个时域函数，然而这里是对log frequency domain做IFFT，因此，它的值域只能被称作pseudo-frequency domain。
+虽然音子只有60个，但是排列组合后的音子态就多达几千个了。
 
-从上图可以看出，**Spectral Envelope主要是低频成分，而Spectral details主要是高频成分。**
+参考：
 
-![](/images/img2/Cepstral_5.png)
+https://blog.csdn.net/abcjennifer/article/details/27346787
 
-显然，如果把Spectral Envelope和Spectral details叠加起来就是原来的频谱信号了。
+GMM-HMM语音识别模型 原理篇
 
-换句话说，我们知道了$$\log X[k]$$，就可以求出$$x[k]$$，经过低通滤波就可以得到$$h[k]$$。
+https://zhuanlan.zhihu.com/p/22482625
 
-这里的$$x[k]$$被称作倒谱Cepstrum（这个是一个新造出来的词，把spectrum的前面四个字母顺序倒过来就是倒谱的单词了）。
+无痛理解GMM-HMM语音识别算法
 
-而我们所关心的$$h[k]$$就是倒谱的低频部分，它在语音识别中被广泛用于描述特征。
+https://mp.weixin.qq.com/s/Sn4RPdghzzQhQc-r4z8Iuw
 
-# Mel-Frequency Analysis
+Kaldi单音素GMM学习笔记
 
-## Mel scale
+# LDA-MLLT
 
-Mel scale是Stevens、Volkmann和Newman于1937年发明的一种主观音阶标准。
+Maximum Likelihood Linear Transform (MLLT)，又名Global Semi-tied Covariance (STC)。因此，在科技文献中，常被称作STC/MLLT。
 
->Stanley Smith Stevens，1906～1973，Harvard University心理学教授。
+《Semi-tied Covariance Matrices for Hidden Markov Models》
 
->John E. Volkmann，1905～1980，Radio Corporation of America研究员。
+《Improved feature processing for Deep Neural Networks》
 
->Edwin B. Newman，1908~1989，Harvard University心理学教授。
+![](/images/img2/MLLT.png)
 
-声音作为一种波动，一般以Hz作为频率差异的客观标准，然而相同频率差的两组声音，在人耳听来，其频率差（也就是所谓的音阶）实际上是不同的。因此，Stevens等人采取实验的方法，确定了人耳的主观音阶标准。
+https://blog.csdn.net/xmdxcsj/article/details/78512652
 
-该标准以Mel作为单位，规定1000Hz的声音所对应的音阶为1000Mel。
+声学特征变换 STC/MLLT
 
-Mel scale从严格的定义上并没有一个简单的公式来表示。但一般采用如下公式进行转换：
+# WFST
 
-$$m = 2595 \log_{10}\left(1 + \frac{f}{700}\right)$$
+Weighted-Finite-State-Transducer
 
-从中可以看出，**人耳对于高频声音的分辨率实际上是不如低频声音的**。
+https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/ParallelizingWFSTSpeechDecoders.ICASSP2016.pdf
 
-![](/images/img2/Mel_scale.png)
+PARALLELIZING WFST SPEECH DECODERS
 
->Mel是melody的别称，有的blog上说Mel是个人，他发明了MFCC，这纯粹是胡说八道。
+http://www.cs.nyu.edu/~mohri/pub/csl01.pdf
 
-## Window function
+Weighted Finite-State Transducers in Speech Recognition
 
-Fourier transform研究的是整个时间域和频率域的关系。但实际的信号处理过程，不可能对无限长的信号进行测量和运算，而是取其有限的时间片段进行分析。做法是从信号中截取一个时间片段，然后用截取的信号时间片段进行周期延拓处理，得到虚拟的无限长的信号，然后就可以对信号进行FT、相关分析等数学处理。
+https://blog.csdn.net/l_b_yuan/article/category/6132477
 
-无限长的信号被截断以后，其频谱发生了畸变，原来集中在f(0)处的能量被分散到两个较宽的频带中去了（这种现象称之为频谱能量泄漏）。
+这个专栏包含了4篇WFST的blog
 
-为了减少频谱能量泄漏，可采用不同的截取函数对信号进行截断，这些截断函数称为Window function。
+http://djt.qq.com/article/view/507
 
-常用的Window function有：Rectangular window、Triangular window、Hamming window、Gaussian window等。
+定制你的语音识别-并行语音识别解码空间
 
-不同的窗函数对信号频谱的影响是不一样的。例如，Rectangular window主瓣窄，旁瓣大，频率识别精度最高，幅值识别精度最低；Blackman window主瓣宽，旁瓣小，频率识别精度最低，但幅值识别精度最高。
+https://blog.csdn.net/lucky_ricky/article/details/77511543
 
-对Window function更详细的叙述参见：
-
-https://en.wikipedia.org/wiki/Window_function
-
+Kaldi WFST 构图 学习

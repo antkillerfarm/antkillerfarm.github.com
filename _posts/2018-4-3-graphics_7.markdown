@@ -228,104 +228,131 @@ ILSVRC 2010的冠军是NEC和UIUC的联合队伍。这也是DL于2012年大放�
 
 上图是NEC算法的基本流程图。这里不打算描述整个算法，而仅对其中涉及的术语做一个解释。
 
-# DTW（续）
+# Mel-Frequency Analysis（续）
 
-结合连续性和单调性约束，每一个格点的路径就只有三个方向了。例如如果路径已经通过了格点$$(i, j)$$，那么下一个通过的格点只可能是下列三种情况之一：$$(i+1, j)$$，$$(i, j+1)$$或者$$(i+1, j+1)$$。
+## 参考
 
-归整路径实际上就是满足上述约束的所有路径中，cumulative distances最小的那条路径，即：
+http://blog.csdn.net/zouxy09/article/details/9156785
 
-$$D(i,j)=Dist(i,j)+\min(D(i-1,j),D(i,j-1),D(i-1,j-1)), D(1,1) = 0$$
+梅尔频率倒谱系数（MFCC）
 
-这里的距离可以使用欧氏距离，也可以使用马氏距离。
+https://my.oschina.net/jamesju/blog/193343
 
-DTW实例的具体计算过程可参见：
+语音特征参数MFCC提取过程详解
 
-http://www.cnblogs.com/tornadomeet/archive/2012/03/23/2413363.html
+https://liuyanfeier.github.io/2017/10/26/2017-10-27-Kaldi%E4%B9%8Bfbank%E5%92%8Cmfcc%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/
 
-从一个实例中学习DTW算法
+kaldi之fbank和mfcc特征提取
 
-从中可以看出，DTW实际上是一个动态规划问题。
+https://zhuanlan.zhihu.com/p/26680599
 
-更一般的，DTW也可用于计算两个离散的序列(不一定要与时间有关)的相似度。和《机器学习（二十二）》的EMD距离相比，DTW距离能够**保持序列的形状信息**。
+语音信号预处理及特征参数提取
 
-除此之外，我们还可以增加别的约束：
+# FBank
 
-**全局路径窗口(Warping Window)**：$$\mid \phi_x(s)-\phi_y(s)\mid \leq r$$。比较好的匹配路径往往在对角线附近，所以我们可以只考虑在对角线附近的一个区域寻找合适路径(r就是这个区域的宽度);
+FBank和MFCC的计算步骤基本一致，只是没有做IDST而已。
 
-**斜率约束(Slope Constrain)**：$$\dfrac{\phi_x(m)-\phi_x(n)}{\phi_y(m)-\phi_y(n)}\leq p$$和$$\dfrac{\phi_y(m)-\phi_y(n)}{\phi_x(m)-\phi_x(n)}\leq q$$，这个可以看做是局部的Warping Window，用于避免路径太过平缓或陡峭，导致短的序列匹配到太长的序列或者太长的序列匹配到太短的序列。
+FBank与MFCC对比：
 
-![](/images/img2/DTW.png)
+1.计算量：MFCC是在FBank的基础上进行的，所以MFCC的计算量更大
 
-上图是两种常见的约束搜索空间的方法。
+2.特征区分度：FBank特征相关性较高（相邻滤波器组有重叠），MFCC具有更好的判别度，这也是在大多数语音识别论文中用的是MFCC，而不是FBank的原因
 
-DTW的缺点：
+3.使用对角协方差矩阵的GMM由于忽略了不同特征维度的相关性，MFCC更适合用来做特征。
 
-1.运算量大；
-
-2.识别性能过分依赖于端点检测；
-
-3.太依赖于说话人的原来发音；
-
-4.不能对样本作动态训练；
-
-5.没有充分利用语音信号的时序动态特性；
-
-DTW适合于特定人基元较小的场合，多用于孤立词识别；
+4.DNN/CNN可以更好的利用这些相关性，使用fbank特征可以更多地降低WER。
 
 参考：
 
-http://blog.csdn.net/zouxy09/article/details/9140207
+http://blog.csdn.net/wxb1553725576/article/details/78048546
 
-动态时间规整（DTW）
+Kaldi特征提取之-FBank
 
-https://blog.csdn.net/raym0ndkwan/article/details/45614813
+# Pitch Detection
 
-DTW动态时间规整
+http://blog.csdn.net/zouxy09/article/details/9141875
 
-http://www.cnblogs.com/luxiaoxun/archive/2013/05/09/3069036.html
+基音周期估计（Pitch Detection）
 
-Dynamic Time Warping动态时间规整算法
+# Vector Quantization
 
-# Spectrogram
+http://blog.csdn.net/zouxy09/article/details/9153255
 
-DTW是一种时域方法，作为信号处理自然少不了频域方法。这里我们先来了解一个叫声谱图的东西。
+矢量量化（Vector Quantization）
 
-![](/images/img2/Spectrogram.png)
+# fMLLR
 
-这段语音被分为很多帧，每帧语音都对应于一个频谱（通过短时FFT计算），频谱表示频率与能量的关系。在实际使用中，频谱图有三种，即线性振幅谱、对数振幅谱、自功率谱（对数振幅谱中各谱线的振幅都作了对数计算，所以其纵坐标的单位是dB（分贝）。这个变换的目的是使那些振幅较低的成分相对高振幅成分得以拉高，以便观察掩盖在低幅噪声中的周期信号）。
+https://blog.csdn.net/xmdxcsj/article/details/78512645
 
-![](/images/img2/Spectrogram_2.png)
+声学特征变换fMLLR
 
-我们先将其中一帧语音的频谱通过坐标表示出来。
+# SGMM
 
-![](/images/img2/Spectrogram_3.png)
+https://blog.csdn.net/quhediegooo/article/details/68946100
 
-再将左边的频谱旋转90度。
+子空间高斯混合模型-SGMM
 
-![](/images/img2/Spectrogram_4.png)
+# VTLN
 
-然后把这些幅度映射到一个灰度级表示的直方图。0表示白色，255表示黑色。幅度值越大，相应的区域越黑。
+https://blog.csdn.net/jiangyangbo/article/details/6535928
 
-![](/images/img2/Spectrogram_5.png)
+VTLN(Vocal Tract Length Normalisation)
 
-这样我们会得到一个随着时间变化的频谱图，这个就是描述语音信号的spectrogram声谱图。
+# HMM与语音识别
 
-# Cepstrum Analysis
+HMM的基本概念参见《机器学习（二十二）》，这里谈一下HMM在语音识别领域的应用。
 
-![](/images/img2/Cepstral.png)
+从概率的角度来说，语音识别的目标是寻找最可能的$$P(W\mid O)$$。这里的W表示word，O表示observation。
 
-上图是一个语音的频谱图。峰值就表示语音的主要频率成分，我们把这些峰值称为共振峰（formants），而共振峰就是携带了声音的辨识属性（就是个人身份证一样）。所以它特别重要。用它就可以识别不同的声音。
+直接找显然没这么容易，所以要用到Bayes公式：
 
-![](/images/img2/Cepstral_2.png)
+$$\frac{P(W)P(O\mid W)}{P(O)}$$
 
-既然它那么重要，那我们就是需要把它提取出来！我们要提取的不仅仅是共振峰的位置，还得提取它们转变的过程。所以我们提取的是频谱的包络（Spectral Envelope）。这包络就是一条连接这些共振峰点的平滑曲线。
+这里只有$$P(O)$$已知，剩下的两个参数都需要额外提供。其中HMM提供$$P(O\mid W)$$，LM提供$$P(W)$$。
 
-原始的频谱由两部分组成：包络和频谱的细节。这里用到的是对数频谱，所以单位是dB。
+由于HMM的path上的概率是各个transition probability的乘积，而这些概率都小于1，因此他们的乘积必然是更小的数。这时可以考虑使用对数，不仅可将乘法变为加法，同时数值的范围也得到了改善。
 
-![](/images/img2/Cepstral_3.png)
+# 语音识别的评价指标
 
-怎么把他们分离开呢？也就是，怎么在给定$$\log X[k]$$的基础上，求得$$\log H[k]$$和$$\log E[k]$$以满足$$\log X[k] = \log H[k] + \log E[k]$$呢？
+语音识别的评价指标主要是Word Error Rate（WER）。
 
-![](/images/img2/Cepstral_4.png)
+错误的情况包括三种：
 
-为了达到这个目标，我们需要Play a Mathematical Trick。这个Trick是什么呢？就是对频谱做FFT。
+1.Substitutions：错词。
+
+2.Deletions：漏词。
+
+3.Insertions：多词。
+
+$$WER=100\%\times \frac{Subs+Dels+Ins}{\text{word in correct sentence}}$$
+
+类似的还有CER/PER：Character/Phoneme Error Rate。
+
+需要注意的是，评价WER时，需要在ASR output和Label之间进行对齐操作，而不是简单的从左往右匹配，否则将无法正确处理Deletions和Insertions的情形。
+
+还有根据公式可知，WER是可以大于100%的。
+
+参考：
+
+https://blog.csdn.net/quhediegooo/article/details/56834417
+
+语音识别评估标准-WER
+
+# 声学模型进阶
+
+## 语音质量
+
+更高的采样率可以降低WER。一般来说，16KHz相比8KHz的WER要小10%左右。
+
+## Voice Detection
+
+长时间的silence会增加WER，因此我们需要判断当前是否在说话。
+
+Voice Detection包括两个方面：
+
+1.Beginning-Point Detection。也叫做Voice Activity Detection（VAD）。有些类似于唤醒检测，但并不局限于设备的开机时刻。
+
+2.End-Point Detection。
+
+## Feature normalization
+

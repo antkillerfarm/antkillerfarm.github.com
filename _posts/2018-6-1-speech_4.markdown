@@ -1,0 +1,234 @@
+---
+layout: post
+title:  语音识别（四）——Spectrogram, Cepstrum Analysis, Mel-Frequency Analysis
+category: graphics 
+---
+
+# DTW（续）
+
+结合连续性和单调性约束，每一个格点的路径就只有三个方向了。例如如果路径已经通过了格点$$(i, j)$$，那么下一个通过的格点只可能是下列三种情况之一：$$(i+1, j)$$，$$(i, j+1)$$或者$$(i+1, j+1)$$。
+
+归整路径实际上就是满足上述约束的所有路径中，cumulative distances最小的那条路径，即：
+
+$$D(i,j)=Dist(i,j)+\min(D(i-1,j),D(i,j-1),D(i-1,j-1)), D(1,1) = 0$$
+
+这里的距离可以使用欧氏距离，也可以使用马氏距离。
+
+DTW实例的具体计算过程可参见：
+
+http://www.cnblogs.com/tornadomeet/archive/2012/03/23/2413363.html
+
+从一个实例中学习DTW算法
+
+从中可以看出，DTW实际上是一个动态规划问题。
+
+更一般的，DTW也可用于计算两个离散的序列(不一定要与时间有关)的相似度。和《机器学习（二十二）》的EMD距离相比，DTW距离能够**保持序列的形状信息**。
+
+除此之外，我们还可以增加别的约束：
+
+**全局路径窗口(Warping Window)**：$$\mid \phi_x(s)-\phi_y(s)\mid \leq r$$。比较好的匹配路径往往在对角线附近，所以我们可以只考虑在对角线附近的一个区域寻找合适路径(r就是这个区域的宽度);
+
+**斜率约束(Slope Constrain)**：$$\dfrac{\phi_x(m)-\phi_x(n)}{\phi_y(m)-\phi_y(n)}\leq p$$和$$\dfrac{\phi_y(m)-\phi_y(n)}{\phi_x(m)-\phi_x(n)}\leq q$$，这个可以看做是局部的Warping Window，用于避免路径太过平缓或陡峭，导致短的序列匹配到太长的序列或者太长的序列匹配到太短的序列。
+
+![](/images/img2/DTW.png)
+
+上图是两种常见的约束搜索空间的方法。
+
+DTW的缺点：
+
+1.运算量大；
+
+2.识别性能过分依赖于端点检测；
+
+3.太依赖于说话人的原来发音；
+
+4.不能对样本作动态训练；
+
+5.没有充分利用语音信号的时序动态特性；
+
+DTW适合于特定人基元较小的场合，多用于孤立词识别；
+
+参考：
+
+http://blog.csdn.net/zouxy09/article/details/9140207
+
+动态时间规整（DTW）
+
+https://blog.csdn.net/raym0ndkwan/article/details/45614813
+
+DTW动态时间规整
+
+http://www.cnblogs.com/luxiaoxun/archive/2013/05/09/3069036.html
+
+Dynamic Time Warping动态时间规整算法
+
+# Spectrogram
+
+DTW是一种时域方法，作为信号处理自然少不了频域方法。这里我们先来了解一个叫声谱图的东西。
+
+![](/images/img2/Spectrogram.png)
+
+这段语音被分为很多帧，每帧语音都对应于一个频谱（通过短时FFT计算），频谱表示频率与能量的关系。在实际使用中，频谱图有三种，即线性振幅谱、对数振幅谱、自功率谱（对数振幅谱中各谱线的振幅都作了对数计算，所以其纵坐标的单位是dB（分贝）。这个变换的目的是使那些振幅较低的成分相对高振幅成分得以拉高，以便观察掩盖在低幅噪声中的周期信号）。
+
+![](/images/img2/Spectrogram_2.png)
+
+我们先将其中一帧语音的频谱通过坐标表示出来。
+
+![](/images/img2/Spectrogram_3.png)
+
+再将左边的频谱旋转90度。
+
+![](/images/img2/Spectrogram_4.png)
+
+然后把这些幅度映射到一个灰度级表示的直方图。0表示白色，255表示黑色。幅度值越大，相应的区域越黑。
+
+![](/images/img2/Spectrogram_5.png)
+
+这样我们会得到一个随着时间变化的频谱图，这个就是描述语音信号的spectrogram声谱图。
+
+# Cepstrum Analysis
+
+![](/images/img2/Cepstral.png)
+
+上图是一个语音的频谱图。峰值就表示语音的主要频率成分，我们把这些峰值称为共振峰（formants），而共振峰就是携带了声音的辨识属性（就是个人身份证一样）。所以它特别重要。用它就可以识别不同的声音。
+
+![](/images/img2/Cepstral_2.png)
+
+既然它那么重要，那我们就是需要把它提取出来！我们要提取的不仅仅是共振峰的位置，还得提取它们转变的过程。所以我们提取的是频谱的包络（Spectral Envelope）。这包络就是一条连接这些共振峰点的平滑曲线。
+
+原始的频谱由两部分组成：包络和频谱的细节。这里用到的是对数频谱，所以单位是dB。
+
+![](/images/img2/Cepstral_3.png)
+
+怎么把他们分离开呢？也就是，怎么在给定$$\log X[k]$$的基础上，求得$$\log H[k]$$和$$\log E[k]$$以满足$$\log X[k] = \log H[k] + \log E[k]$$呢？
+
+![](/images/img2/Cepstral_4.png)
+
+为了达到这个目标，我们需要Play a Mathematical Trick。这个Trick是什么呢？就是对频谱做FFT。
+
+这里，我们对Fourier transform做一个简单的回顾。
+
+设h(t)是一个时域函数，而H(f)是一个频域函数，则Fourier transform为：
+
+$$H(f)=\int_{-\infty}^\infty h(t)e^{2\pi i ft}\mathrm{d}t$$
+
+inverse Fourier transformation为：
+
+$$h(t)=\int_{-\infty}^\infty H(f)e^{-2\pi i ft}\mathrm{d}f$$
+
+因此，对频谱做FFT，也被叫做inverse FFT，简称IFFT。
+
+传统的IFFT的结果是一个时域函数，然而这里是对log frequency domain做IFFT，因此，它的值域只能被称作pseudo-frequency domain。
+
+从上图可以看出，**Spectral Envelope主要是低频成分，而Spectral details主要是高频成分。**
+
+![](/images/img2/Cepstral_5.png)
+
+显然，如果把Spectral Envelope和Spectral details叠加起来就是原来的频谱信号了。
+
+换句话说，我们知道了$$\log X[k]$$，就可以求出$$x[k]$$，经过低通滤波就可以得到$$h[k]$$。
+
+这里的$$x[k]$$被称作倒谱Cepstrum（这个是一个新造出来的词，把spectrum的前面四个字母顺序倒过来就是倒谱的单词了）。
+
+而我们所关心的$$h[k]$$就是倒谱的低频部分，它在语音识别中被广泛用于描述特征。
+
+# Mel-Frequency Analysis
+
+## Mel scale
+
+Mel scale是Stevens、Volkmann和Newman于1937年发明的一种主观音阶标准。
+
+>Stanley Smith Stevens，1906～1973，Harvard University心理学教授。
+
+>John E. Volkmann，1905～1980，Radio Corporation of America研究员。
+
+>Edwin B. Newman，1908~1989，Harvard University心理学教授。
+
+声音作为一种波动，一般以Hz作为频率差异的客观标准，然而相同频率差的两组声音，在人耳听来，其频率差（也就是所谓的音阶）实际上是不同的。因此，Stevens等人采取实验的方法，确定了人耳的主观音阶标准。
+
+该标准以Mel作为单位，规定1000Hz的声音所对应的音阶为1000Mel。
+
+Mel scale从严格的定义上并没有一个简单的公式来表示。但一般采用如下公式进行转换：
+
+$$m = 2595 \log_{10}\left(1 + \frac{f}{700}\right)$$
+
+从中可以看出，**人耳对于高频声音的分辨率实际上是不如低频声音的**。
+
+![](/images/img2/Mel_scale.png)
+
+>Mel是melody的别称，有的blog上说Mel是个人，他发明了MFCC，这纯粹是胡说八道。
+
+## Window function
+
+Fourier transform研究的是整个时间域和频率域的关系。但实际的信号处理过程，不可能对无限长的信号进行测量和运算，而是取其有限的时间片段进行分析。做法是从信号中截取一个时间片段，然后用截取的信号时间片段进行周期延拓处理，得到虚拟的无限长的信号，然后就可以对信号进行FT、相关分析等数学处理。
+
+无限长的信号被截断以后，其频谱发生了畸变，原来集中在f(0)处的能量被分散到两个较宽的频带中去了（这种现象称之为频谱能量泄漏）。
+
+为了减少频谱能量泄漏，可采用不同的截取函数对信号进行截断，这些截断函数称为Window function。
+
+常用的Window function有：Rectangular window、Triangular window、Hamming window、Gaussian window等。
+
+不同的窗函数对信号频谱的影响是不一样的。例如，Rectangular window主瓣窄，旁瓣大，频率识别精度最高，幅值识别精度最低；Blackman window主瓣宽，旁瓣小，频率识别精度最低，但幅值识别精度最高。
+
+对Window function更详细的叙述参见：
+
+https://en.wikipedia.org/wiki/Window_function
+
+## MFCC
+
+Mel-frequency Cepstral Coefficients是由Paul Mermelstein提出的一种音频特征。
+
+>Paul G. Mermelstein，明尼苏达大学神经科学教授。
+
+![](/images/img2/Mel_Filters.png)
+
+由之前对Mel scale的介绍可知：人耳对于高频声音的分辨率实际上是不如低频声音的。
+
+因此，我们可以使用一组Triangular window对声音进行滤波（如上图所示）。这里的Triangular window不是均匀分布的，而是低频部分更密集一些。
+
+这些Triangular window被称作**Mel-Filters**。被Mel-Filters过滤之后的Spectrum，被称作**Mel-Spectrum**。
+
+对Mel-Spectrum执行Cepstrum Analysis，就得到了Mel-Frequency Cepstral Coefficients，也就是MFCC。
+
+![](/images/img2/MFCC.png)
+
+上图是MFCC的计算流程。
+
+除了MFCC之外，delta MFCC和double-delta MFCC也是常用的特征。他们的计算过程如下所示：
+
+![](/images/img2/MFCC_2.jpg)
+
+可见，delta MFCC和double-delta MFCC，实际上就是MFCC的一阶差分和二阶差分。
+
+在实际中使用的语音特征，往往是各种特征的组合。比如，常用的39维MFCC特征，其组成如下：
+
+12 MFCC feature
+
+1 energy feature
+
+12 delta MFCC features
+
+12 double-delta MFCC features
+
+1 delta energy feature
+
+1 double-delta energy feature
+
+## 计算能量谱
+
+energy的计算比较简单，无论是如上图的时域能量统计，还是在DFT之后进行频域能量统计都是可以的。参见《数学狂想曲（一）》。
+
+需要注意的是，频域能量包含了实部能量+虚部能量。
+
+## Discrete Cosine Transform
+
+离散傅里叶变换需要进行复数运算，尽管有FFT可以提高运算速度，但在图像编码、特别是在实时处理中非常不便。离散傅里叶变换在实际的图像通信系统中很少使用，但它具有理论的指导意义。
+
+根据离散傅里叶变换的性质，实偶函数的傅里叶变换只含实的余弦项，因此构造了一种实数域的变换——离散余弦变换(DCT)。
+
+通过研究发现，DCT除了具有一般的正交变换性质外，其变换阵的基向量很近似于Toeplitz矩阵的特征向量，后者体现了人类的语言、图像信号的相关特性。因此，在对语音、图像信号变换的确定的变换矩阵正交变换中，DCT变换被认为是一种准最佳变换。
+
+相应的还有IDCT。
+
+DCT还有一个特点是，对于一般的语音信号，这一步的结果的前几个系数特别大，后面的系数比较小，可以忽略。比如Mel-Filters一般取40个三角形，所以DCT的结果也是40个点；实际中，一般仅保留前12~20个，这就进一步压缩了数据。
+

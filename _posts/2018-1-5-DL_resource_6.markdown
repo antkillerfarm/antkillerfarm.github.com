@@ -142,10 +142,6 @@ https://mp.weixin.qq.com/s/0qyJtD124O5pRJ1UYEV0qg
 
 为给定任务自动生成神经网络：MIT提出RNN架构生成新方法
 
-https://mp.weixin.qq.com/s/Ieha-lJ_KuEnpbJha_nxJw
-
-利用人脸图片准确识别年龄：上海大学研究者提出“深度回归森林”
-
 https://mp.weixin.qq.com/s/kxEfoSjCF8n2jxlDfMaNDA
 
 半监督学习在图像分类上的基本工作方式

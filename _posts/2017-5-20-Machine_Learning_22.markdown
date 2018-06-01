@@ -208,5 +208,3 @@ https://blog.csdn.net/xmu_jupiter/article/details/50965039
 
 HMM的Baum-Welch算法和Viterbi算法公式推导细节
 
-
-

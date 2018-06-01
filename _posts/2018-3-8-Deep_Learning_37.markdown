@@ -268,6 +268,26 @@ https://mp.weixin.qq.com/s/GLKvzC_o6MR1ixThAVc9lQ
 
 CosFace: 面向深度人脸识别的增强边缘余弦损失函数设计
 
+https://mp.weixin.qq.com/s/AMDkkbdTQbL-2jyweVid-A
+
+摆好Pose却没管理好面部表情？腾讯优图Facelet-Bank人脸处理技术了解一下
+
+https://mp.weixin.qq.com/s/OjId_YfxkhEh4tJ1Sw-Hbw
+
+多伦多大学反人脸识别，身份欺骗成功率达99.5%
+
+https://mp.weixin.qq.com/s/tUSNk5R_zbEFz-yIx0LXYQ
+
+基于DNN的人脸识别中的反欺骗机制
+
+https://mp.weixin.qq.com/s/mjdW7xY77H03RIKuKuFmQg
+
+人脸画像合成研究的综述与对比分析
+
+https://mp.weixin.qq.com/s/Ieha-lJ_KuEnpbJha_nxJw
+
+利用人脸图片准确识别年龄：上海大学研究者提出“深度回归森林”
+
 # 迁移学习
 
 https://mp.weixin.qq.com/s/qYoTgqwjaUlEycuk9LlonA
