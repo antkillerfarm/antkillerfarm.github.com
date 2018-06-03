@@ -206,6 +206,8 @@ https://mp.weixin.qq.com/s/m9KwANPIudVesoXjejnOJA
 
 火币袁煜明：区块链的本质、意义与商业体系设计
 
+iele虚拟机, plutus-marlowe智能合约语言，hydra分片，sidechain侧链, ourobros generic共识协议，kemadelia p2p网络
+
 # CPU
 
 https://zhuanlan.zhihu.com/p/29743431
@@ -399,4 +401,9 @@ https://mp.weixin.qq.com/s/7_eozJQ-8CX3I9Idb7ey6g
 https://mp.weixin.qq.com/s/_BgcUItHCufMBlPijuNAGw
 
 雷达系统和数字信号处理
+
+https://mp.weixin.qq.com/s/BFjC2Pop8K9gXqT06N8kVA
+
+天波超视距雷达(OTH)基本概念
+
 

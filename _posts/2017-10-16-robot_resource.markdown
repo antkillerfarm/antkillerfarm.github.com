@@ -426,3 +426,6 @@ https://mp.weixin.qq.com/s/mZbO-y4haBx-IodgEtdUBA
 
 LSTM之父最新力作：手把手教你训练一个有世界观的AI赛车手
 
+https://mp.weixin.qq.com/s/vFyifSgGLImUrTwcw9bPsg
+
+自动驾驶感知训练指南：不许你歧视车道线，那也是路面的一部分

@@ -1,8 +1,51 @@
 ---
 layout: post
-title:  机器学习（十五）——协同过滤的ALS算法（2）
+title:  机器学习（十五）——协同过滤的ALS算法
 category: ML 
 ---
+
+# 协同过滤的ALS算法
+
+## 协同过滤概述
+
+>注：最近研究商品推荐系统的算法，因此，Andrew Ng讲义的内容，后续再写。
+
+协同过滤是目前很多电商、社交网站的用户推荐系统的算法基础，也是目前工业界应用最广泛的机器学习领域。
+
+协同过滤是利用集体智慧的一个典型方法。要理解什么是协同过滤 (Collaborative Filtering,简称CF)，首先想一个简单的问题，如果你现在想看个电影，但你不知道具体看哪部，你会怎么做？大部分的人会问问周围的朋友，看看最近有什么好看的电影推荐，而我们一般更倾向于从口味比较类似的朋友那里得到推荐。这就是协同过滤的核心思想。
+
+如何找到相似的用户和物品呢？其实就是计算用户间以及物品间的相似度。以下是几种计算相似度的方法：
+
+### 欧氏距离
+
+$$d(x,y)=\sqrt{\sum(x_i-y_i)^2},sim(x,y)=\frac{1}{1+d(x,y)}$$
+
+### Cosine相似度
+
+$$\cos(x,y)=\frac{\langle x,y\rangle}{\mid x\mid \mid y\mid }=\frac{\sum x_iy_i}{\sqrt{\sum x_i^2}~\sqrt{\sum y_i^2}}$$
+
+### 皮尔逊相关系数（Pearson product-moment correlation coefficient，PPMCC or PCC）：
+
+$$\begin{align}
+p(x,y)&=\frac{cov(X,Y)}{\sigma_X\sigma_Y}=\frac{\operatorname{E}[XY]-\operatorname{E}[X]\operatorname{E}[Y]}{\sqrt{\operatorname{E}[X^2]-\operatorname{E}[X]^2}~\sqrt{\operatorname{E}[Y^2]- \operatorname{E}[Y]^2}}
+\\&=\frac{n\sum x_iy_i-\sum x_i\sum y_i}{\sqrt{n\sum x_i^2-(\sum x_i)^2}~\sqrt{n\sum y_i^2-(\sum y_i)^2}}
+\end{align}$$
+
+该系数由Karl Pearson发明。参见《机器学习（二）》中对Karl Pearson的简介。Fisher对该系数也有研究和贡献。
+
+![](/images/article/pearson.png)
+
+如上图所示，Cosine相似度计算的是两个样本点和坐标原点之间的直线的夹角，而PCC计算的是两个样本点和数学期望点之间的直线的夹角。
+
+PCC能够有效解决，在协同过滤数据集中，不同用户评分尺度不一的问题。
+
+参见：
+
+https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient
+
+https://mp.weixin.qq.com/s/RjpH7XD5SCMkrSdcmG394g
+
+从PCC到MIC，一文教你如何计算变量之间的相关性
 
 ### Spearman秩相关系数（Spearman's rank correlation coefficient）
 
@@ -258,50 +301,4 @@ $$RMSE=\sqrt{\frac{\sum(R-XY^T)^2}{N}}$$
 
 因为这个迭代过程，交替优化X和Y，因此又被称作交替最小二乘算法（Alternating Least Squares，ALS）。
 
-## 隐式反馈
-
-用户给商品评分是个非常简单粗暴的用户行为。在实际的电商网站中，还有大量的用户行为，同样能够间接反映用户的喜好，比如用户的购买记录、搜索关键字，甚至是鼠标的移动。我们将这些间接用户行为称之为隐式反馈（implicit feedback），以区别于评分这样的显式反馈（explicit feedback）。
-
-隐式反馈有以下几个特点：
-
-1.没有负面反馈（negative feedback）。用户一般会直接忽略不喜欢的商品，而不是给予负面评价。
-
-2.隐式反馈包含大量噪声。比如，电视机在某一时间播放某一节目，然而用户已经睡着了，或者忘了换台。
-
-3.显式反馈表现的是用户的**喜好（preference）**，而隐式反馈表现的是用户的**信任（confidence）**。比如用户最喜欢的一般是电影，但观看时间最长的却是连续剧。大米购买的比较频繁，量也大，但未必是用户最想吃的食物。
-
-4.隐式反馈非常难以量化。
-
-## ALS-WR
-
-针对隐式反馈，有ALS-WR算法（ALS with Weighted-$$\lambda$$-Regularization）。
-
-首先将用户反馈分类：
-
-$$p_{ui}=\begin{cases}
-1, & \text{preference} \\
-0, & \text{no preference} \\
-\end{cases}$$
-
-但是喜好是有程度差异的，因此需要定义程度系数：
-
-$$c_{ui}=1+\alpha r_{ui}$$
-
-这里的$$r_{ui}$$表示原始量化值，比如观看电影的时间；
-
-这个公式里的1表示最低信任度，$$\alpha$$表示根据用户行为所增加的信任度。
-
-最终，损失函数变为：
-
-$$\min_{x_*,y_*}L(X,Y)=\min_{x_*,y_*}\sum_{u,i}c_{ui}(p_{ui}-x_u^Ty_i)^2+\lambda(\sum_u\mid x_u\mid ^2+\sum_i\mid y_i\mid ^2)$$
-
-除此之外，我们还可以使用指数函数来定义$$c_{ui}$$：
-
-$$c_{ui}=1+\alpha \log(1+r_{ui}/\epsilon)$$
-
-ALS-WR没有考虑到时序行为的影响，时序行为相关的内容，可参见：
-
-http://www.jos.org.cn/1000-9825/4478.htm
-
-基于时序行为的协同过滤推荐算法
 

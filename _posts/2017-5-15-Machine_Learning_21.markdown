@@ -6,6 +6,50 @@ category: ML
 
 # PageRank算法（续）
 
+## 马尔可夫链
+
+Markov链的基本定义参见《机器学习（十六）》。
+
+这里补充一些定义：
+
+**定义1**：设C为状态空间的一个子集，如果从C内任一状态i不能到C外的任何状态，则称C为**闭集**。除了整个状态空间之外，没有别的闭集的Markov链被称为**不可约的**。
+
+如果用状态转移图表示Markov链的话，上面的定义表征了Markov链的**连通性**。
+
+**定义2**：如果有正整数d，只有当$$n=d,2d,\dots$$时，$$P_{ii}^{(n)}>0$$，或者说当n不能被d整除时，$$P_{ii}^{(n)}=0$$，则称i状态为**周期性状态**。如果除了$$d=1$$之外，使$$P_{ii}^{(n)}>0$$的各n值没有公约数，则称该状态i为**非周期性状态**。
+
+这个定义表征了Markov链各状态的**独立性**。
+
+**定义3**：
+
+$$f_{ij}^{(n)}=P(X_{m+v}\neq j,X_{m+n}=j|X_m=i)$$
+
+其中，$$n>1,1\le v\le n-1$$。
+
+上式表示由i出发，首次到达j的概率，也叫**首中概率**。
+
+相应的还有**最终概率**：
+
+$$f_{ij}=\sum_{n=1}^\infty f_{ij}^{(n)}$$
+
+**定义4**：
+
+如果$$f_{ii}=1$$, 则称状态i为**常返**的，如果$$f_{ii}<1$$, 则称状态i为**非常返**的。
+
+令$$u_i=\sum_{n=1}^\infty nf_{ii}^{(n)}$$，则$$u_i$$表示由i出发i，再返回i的**平均返回时间**。
+
+如果$$u_i=\infty$$，则称i为**零常返**的。
+
+常返态表征Markov链的极限分布。显然如果长期来看，状态i“入不敷出”的话，则其最终的极限概率为0。
+
+根据上面的定义，还可得到Markov链的三个推论：
+
+**推论1**：有限状态的不可约非周期Markov链必存在平稳分布。
+
+**推论2**：若不可约Markov链的所有状态是非常返或零常返的，则不存在平稳分布。
+
+**推论3**：若$$X_j$$是不可约的非周期的Markov链的平稳分布，则$$\lim_{n\to\infty}P_{ij}^{(n)}=X_j$$，即极限分布等于平稳分布。
+
 ## 简易推导
 
 ![](/images/article/page_rank.jpg)
@@ -217,43 +261,4 @@ https://en.wikipedia.org/wiki/Sensitivity_and_specificity
 ![](/images/article/P_R_F.gif)
 
 如果是做搜索，那就是保证召回的情况下提升准确率；如果做疾病监测、反垃圾，则是保准确率的条件下，提升召回率。所以，在两者都要求高的情况下，可以用F-measure来衡量。
-
-Accuracy和Precision是一对容易混淆的概念。其一般定义如下图所示：
-
-![](/images/article/Accuracy_and_precision.svg)
-
-当然，这个定义和机器学习中的定义无关，主要用于物理和统计领域。
-
-这里再提几个和上述概念类似的ML术语。
-
-**Ground truth**：在有监督学习中，数据是有标注的，以(x, t)的形式出现，其中x是输入数据，t是标注。正确的t标注是ground truth， 错误的标记则不是。（也有人将所有标注数据都叫做ground truth）
-
-由于使用错误的数据，对模型的估计比实际要糟糕，因此使用高质量的数据是很有必要的。
-
-**Golden**：Golden这个术语的使用范围并不局限于ML领域，凡是能够给出“标准答案”的地方，都可以将该答案称为Golden。
-
-比如在DL领域的硬件优化中，通常使用标准算法生成Golden结果，然后用优化之后的运算结果与之比对，以验证优化的正确性。
-
-参考：
-
-https://mp.weixin.qq.com/s/5nnHBKEToepi3dhXLfQBtw
-
-机器学习分类器性能指标详解
-
-https://mp.weixin.qq.com/s/6eESoUvMObXSb2jy_KPRyg
-
-如何评价我们分类模型的性能？
-
-https://mp.weixin.qq.com/s/mOYUCc3xKMfVw81B6zSeNw
-
-7种最常用的机器学习算法衡量指标
-
-https://mp.weixin.qq.com/s/zvxB6VqrSOosgGSViCmjEQ
-
-不止准确率：为分类任务选择正确的机器学习度量指标
-
-https://mp.weixin.qq.com/s/2HKx36bIBZAqvzdXfcSfqA
-
-我们常听说的置信区间与置信度到底是什么？
-
 

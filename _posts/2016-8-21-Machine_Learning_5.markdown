@@ -4,6 +4,32 @@ title:  机器学习（五）——SVM（2）
 category: ML 
 ---
 
+## 支持向量（续）
+
+最终我们得到如下对偶优化问题：
+
+$$\begin{align}
+&\operatorname{max}_\alpha & & W(\alpha)=\sum_{i=1}^m\alpha_i-\frac{1}{2}\sum_{i,j=1}^my^{(i)}y^{(j)}\alpha_i\alpha_j\langle x^{(i)},x^{(j)}\rangle\\
+&\operatorname{s.t.}& & \alpha_i\ge 0,i=1,\dots,m\\
+& & & \sum_{i=1}^m\alpha_iy^{(i)}=0
+\end{align}$$
+
+这个对偶问题的求解，留在后面的章节。这里只讨论求解出$$\alpha^*$$之后的情况。
+
+首先，根据公式3可求解$$w^*$$。然后
+
+$$b^*=-\frac{\max_{i:y^{(i)}=-1}w^{*T}x^{(i)}+\min_{i:y^{(i)}=1}w^{*T}x^{(i)}}{2}$$
+
+除此之外，我们还有：
+
+$$w^Tx+b=\left(\sum_{i=1}^m\alpha_iy^{(i)}x^{(i)}\right)^Tx+b=\sum_{i=1}^m\alpha_iy^{(i)}\langle x^{(i)},x\rangle+b$$
+
+在之前的讨论中，我们已经指出只有支持向量对应的$$\alpha_i$$才为非零值，因此：
+
+$$w^Tx+b=\sum_{i\in SV}\alpha_iy^{(i)}\langle x^{(i)},x\rangle+b$$
+
+从上式可以看出，在空间维数比较高的情况下，SVM（support vector machines）可以有效降低计算量。
+
 ## 核函数
 
 假设我们从样本点的分布中看到x和y符合3次曲线，那么我们希望使用x的三次多项式来逼近这些样本点。那么首先需要将特征x扩展到三维$$(x,x^2,x^3)$$ ，然后寻找特征和结果之间的模型。我们将这种特征变换称作特征映射（feature mapping）。
@@ -180,33 +206,4 @@ $$\begin{align}
 ![](/images/article/SVM_7.png)
 
 图中的直线表示迭代优化的路径，可以看到每一步前进路线都是平行于坐标轴的，因为每一步只优化一个变量。
-
-## 序列最小优化方法
-
-序列最小优化方法（Sequential Minimal Optimization，SMO）算法由Microsoft Research的John C. Platt在1998年提出，并成为最快的二次规划优化算法，特别针对SVM和数据稀疏时性能更优。关于SMO最好的资料就是他本人写的《Sequential Minimal Optimization A Fast Algorithm for Training Support Vector Machines》。
-
->注：John Carlton Platt，1963年生，14岁进入加州州立大学长滩分校，加州理工学院博士。先后供职于Synaptics和Microsoft Research，现为Google首席科学家。
-
-针对之前列出的SVM对偶优化问题：
-
-$$\begin{align}
-&\operatorname{max}_\alpha & & W(\alpha)=\sum_{i=1}^m\alpha_i-\frac{1}{2}\sum_{i,j=1}^my^{(i)}y^{(j)}\alpha_i\alpha_j\langle x^{(i)},x^{(j)}\rangle \tag{1}\\
-&\operatorname{s.t.}& & 0\le\alpha_i\le C,i=1,\dots,m \tag{2}\\
-& & & \sum_{i=1}^m\alpha_iy^{(i)}=0 \tag{3}
-\end{align}$$
-
-我们可以考虑使用坐标上升法，即首先固定除$$\alpha_1$$以外的所有参数,然后在$$\alpha_1$$上求极值。然而由于约束3的存在，把除$$\alpha_1$$以外的所有参数固定，实际上也就把$$\alpha_1$$给固定了。因此，需要一定的技巧来处理，比如:
-
->Repeat till convergence:{   
->>1.挑选一对$$\alpha_i$$和$$\alpha_j$$（挑选的规则可以是启发式的，以收敛快为准则）   
->>2.固定除$$\alpha_i$$和$$\alpha_j$$之外的其余参数，以确定W极值条件下的$$\alpha_i$$和$$\alpha_j$$   
->
->}
-
-这里假设我们固定$$\alpha_3,\dots,\alpha_m$$，来优化$$\alpha_1$$和$$\alpha_2$$。由约束3可得：
-
-$$\alpha_1y^{(1)}+\alpha_2y^{(2)}=-\sum_{i=3}^m\alpha_iy^{(i)}=\zeta\tag{4}$$
-
-因为$$\alpha_3,\dots,\alpha_m$$的值已经固定，所以$$\zeta$$实际上是个常数。
-
 

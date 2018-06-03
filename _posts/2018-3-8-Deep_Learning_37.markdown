@@ -389,3 +389,7 @@ https://mp.weixin.qq.com/s/kTiQdoCI-mk8c-m0uL5BkQ
 https://mp.weixin.qq.com/s/i_znaQX0IFJD1ttmVbtcZQ
 
 阿里提出新零样本学习方法，有效解决偏置问题
+
+https://github.com/vipstone/faceai
+
+FaceAI

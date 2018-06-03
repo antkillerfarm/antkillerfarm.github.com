@@ -4,7 +4,13 @@ title:  机器学习（四）——SVM（1）
 category: ML 
 ---
 
-# 支持向量机（续）
+# 支持向量机
+
+支持向量机（SVM，Support Vector Machines）是目前最好的监督学习算法。它由Vladimir Naumovich Vapnik与Alexey Ya. Chervonenkis于1963年提出。
+
+>注：Vladimir Naumovich Vapnik，1936年生，乌兹别克国立大学学士，莫斯科控制科学学院博士，后成为该学院计算机科学研究部门负责人。1990年代末移民美国，先后供职于AT&T Bell、NEC、Facebook，伦敦大学和哥伦比亚大学教授。
+
+>Alexey Yakovlevich Chervonenkis，1938～2014，俄罗斯数学家。俄罗斯科学院院士，伦敦大学教授。
 
 我们首先来看一幅图：
 
@@ -225,29 +231,4 @@ $$\begin{align}\mathcal{L}(w,b,\alpha)&=\frac{1}{2}\|w\|^2-\sum_{i=1}^m\alpha_i[
 我们定义如下内积符号$$\langle x,y\rangle=x^Ty$$，并将公式4代入公式5可得：
 
 $$\mathcal{L}(w,b,\alpha)=\sum_{i=1}^m\alpha_i-\frac{1}{2}\sum_{i,j=1}^my^{(i)}y^{(j)}\alpha_i\alpha_j\langle x^{(i)},x^{(j)}\rangle$$
-
-最终我们得到如下对偶优化问题：
-
-$$\begin{align}
-&\operatorname{max}_\alpha & & W(\alpha)=\sum_{i=1}^m\alpha_i-\frac{1}{2}\sum_{i,j=1}^my^{(i)}y^{(j)}\alpha_i\alpha_j\langle x^{(i)},x^{(j)}\rangle\\
-&\operatorname{s.t.}& & \alpha_i\ge 0,i=1,\dots,m\\
-& & & \sum_{i=1}^m\alpha_iy^{(i)}=0
-\end{align}$$
-
-这个对偶问题的求解，留在后面的章节。这里只讨论求解出$$\alpha^*$$之后的情况。
-
-首先，根据公式3可求解$$w^*$$。然后
-
-$$b^*=-\frac{\max_{i:y^{(i)}=-1}w^{*T}x^{(i)}+\min_{i:y^{(i)}=1}w^{*T}x^{(i)}}{2}$$
-
-除此之外，我们还有：
-
-$$w^Tx+b=\left(\sum_{i=1}^m\alpha_iy^{(i)}x^{(i)}\right)^Tx+b=\sum_{i=1}^m\alpha_iy^{(i)}\langle x^{(i)},x\rangle+b$$
-
-在之前的讨论中，我们已经指出只有支持向量对应的$$\alpha_i$$才为非零值，因此：
-
-$$w^Tx+b=\sum_{i\in SV}\alpha_iy^{(i)}\langle x^{(i)},x\rangle+b$$
-
-从上式可以看出，在空间维数比较高的情况下，SVM（support vector machines）可以有效降低计算量。
-
 

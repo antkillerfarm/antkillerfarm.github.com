@@ -410,3 +410,7 @@ https://mp.weixin.qq.com/s/_fi4fpfN8Whe7_ZpkPL0tA
 
 怎么给Python写C扩展？
 
+https://mp.weixin.qq.com/s/-erFsz8NvLZ5mOIXyDosFg
+
+使用PyInstaller将python转成可执行文件exe笔记
+

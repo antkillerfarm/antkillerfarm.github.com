@@ -287,3 +287,8 @@ MURA：斯坦福ML团队开放的大型放射影像数据集与挑战赛
 https://mp.weixin.qq.com/s/nDX4oSV-_zs5TMl3Q8eP3A
 
 伯克利发布BDD100K：目前最大规模开放驾驶视频数据集
+
+https://mp.weixin.qq.com/s/_wQoiC6ogcLWSEUFUGHd5g
+
+Facebook，MIT等发布大规模卫星图像理解数据挑战赛DeepGlobe 2018
+

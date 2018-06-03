@@ -1,10 +1,61 @@
 ---
 layout: post
-title:  机器学习（九）——K-Means算法, 高斯混合模型和EM算法
+title:  机器学习（九）——在线学习, K-Means算法
 category: ML 
 ---
 
-# 在线学习（续）
+## 贝叶斯统计和规则化ML（续）
+
+假若我们要求期望值的话，那么套用求期望的公式即可：
+
+$$E[y\mid x,S]=\int_y yp(y\mid x,S)\mathrm{d}y$$
+
+由上可见，贝叶斯估计将$$\theta$$视为随机变量，$$\theta$$的值满足一定的分布，不是固定值，我们无法通过计算获得其值，只能在预测时计算积分。
+
+上述贝叶斯估计方法，虽然公式合理优美，但后验概率$$p(\theta\mid S)$$通常是很难计算的，因为它是$$\theta$$上的高维积分函数。
+
+观察$$p(\theta\mid S)$$的公式，在分母$$P(S)$$一定的情况下，分子越大则值越大，也就是$$p(\theta\mid S)$$的概率越大。
+
+因此，可得如下算法：
+
+$$\theta_{MAP}=\arg\max_\theta\left(\prod_{i=1}^mp(y^{(i)}\mid x^{(i)},\theta)\right)p(\theta)$$
+
+这个算法叫做最大后验概率估计（maximum a posteriori）。
+
+和ML相比，MAP算法只是在最后多了一项$$p(\theta)$$。通常使用中，我们认为$$p(\theta)$$符合$$\theta\sim N(0,\tau^2I)$$。
+
+由于$$p(\theta)$$实际上就是先验分布，它会对最后结果进行一定的修正。因此，实际上最大后验概率估计相对于最大似然估计来说，较容易克服过度拟合的问题。
+
+![](/images/article/MAP.png)
+
+参见：
+
+http://www.cs.cornell.edu/courses/cs5540/2010sp/lectures/Lec9.Estimation-continued.pdf
+
+Statistical Estimation: Least Squares, Maximum Likelihood and Maximum A Posteriori Estimators
+
+https://mp.weixin.qq.com/s/XnsbCb7H9jHmJ4dV9p2Oug
+
+频率学派还是贝叶斯学派？聊一聊机器学习中的MLE和MAP
+
+https://mp.weixin.qq.com/s/dQxN46wEbFrpvV369uOHdA
+
+详解最大后验概率估计（MAP）的理解
+
+# 在线学习
+
+我们之前讨论的算法，都是给定一个训练集S，经训练之后，得到预测函数h，然后再在新的样本集上进行预测。这种方法被称为批量学习（batch learning）。
+
+与之相对的，还有一种边学习边预测的在线学习（online learning）算法。其步骤如下：
+
+>1.$$i:=0$$。   
+>2.输入$$x^{(i)}$$，算法预测$$y^{(i)}$$。   
+>3.根据$$y^{(i)}$$的真实值，修正算法模型。这一步也被称作更新过程（update procedure）   
+>4.令$$i:=i+1$$，以处理下一个数据样本。
+
+在线学习的优点：
+1.算法在学习过程中，即可预测。
+2.随着数据样本的增多，预测会更加准确，即具有自我完善的的能力。
 
 下面以感知器（perceptron）算法为例，讨论一下在线学习的误差问题。
 
@@ -183,57 +234,4 @@ http://www.cse.psu.edu/~rtc12/CSE586/lectures/EMLectureFeb3.pdf
 上面这篇文章比较直观，比Andrew讲义的Problem Set详细的多。然而Andrew这样写是有原因的，在后面的章节，借助Jensen不等式，Andrew给出一个更简单且一般化的推导过程。
 
 接下来的问题就是：$$z^{(i)}$$的值我们是不知道的，该怎么办呢？
-
-EM算法的思路是：
-
->1.猜测$$z^{(i)}$$的值。（这一步即所谓的Expectation，简称E-Step。）   
->2.最大化计算，以更新模型的参数。（这一步即所谓的Maximization，简称M-Step。）
-
-具体到这里就是：
-
->Repeat until convergence {   
->>(E-step) For each i, j：   
->>>$$w_j^{(i)}:=p(z^{(i)}=j\mid x^{(i)};\phi,\mu,\Sigma)$$   
->>
->>(M-step) Update the parameters：   
->>>$$\phi_j:=\frac{1}{m}\sum_{i=1}^mw_j^{(i)}$$   
->>>$$\mu_j:=\frac{\sum_{i=1}^mw_j^{(i)}x^{(i)}}{\sum_{i=1}^mw_j^{(i)}}$$   
->>>$$\Sigma_j:=\frac{\sum_{i=1}^mw_j^{(i)}(x^{(i)}-\mu_j)(x^{(i)}-\mu_j)^T}{\sum_{i=1}^mw_j^{(i)}}$$   
->
->}
-
-E-Step中，根据贝叶斯公式可得：
-
-$$p(z^{(i)}=j\mid x^{(i)};\phi,\mu,\Sigma)=\frac{p(x^{(i)}\mid z^{(i)}=j;\mu,\Sigma)p(z^{(i)}=j;\phi)}{\sum_{l=1}^kp(x^{(i)}\mid z^{(i)}=l;\mu,\Sigma)p(z^{(i)}=l;\phi)}$$
-
-将假设模型的各概率密度函数代入上式，即可计算得到$$w_j^{(i)}$$。
-
-相比于K-means算法，GMM算法中的$$z^{(i)}$$是个概率值，而非确定值，因此也被称为soft assignments。
-
-K-means算法各个聚类的特征都是一样的，也就是“圆圈”的半径一致。而GMM算法的“圆圈”半径可以不同。如下面两图所示：
-
-| ![](/images/article/EM_2.png) | ![](/images/article/EM_3.png) |
-| K-means算法 | GMM算法 |
-
->注意：这里的圆圈是先验估计值，它和最后的聚类形状无关。
-
-GMM算法结果也是局部最优解。对其他参数取不同的初始值进行多次计算同样适用于GMM算法。
-
-![](/images/img2/Clustering.jpg)
-
-![](/images/img2/Clustering_2.jpg)
-
-参考：
-
-http://cseweb.ucsd.edu/~atsmith/project1_253.pdf
-
-Clustering With EM and K-Means
-
-https://mp.weixin.qq.com/s/wk3_wG1xSuMX1HjJeEgErQ
-
-kmeans聚类理论篇K的选择（轮廓系数）
-
-https://mp.weixin.qq.com/s/tLcF7_jjl3_FmjM7L1kcfw
-
-一文详解高斯混合模型原理
 

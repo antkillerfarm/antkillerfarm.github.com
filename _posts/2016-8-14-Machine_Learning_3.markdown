@@ -173,6 +173,10 @@ https://mp.weixin.qq.com/s/xNZ0x3_o77C1KL1WTdYkfQ
 
 解读实践中最广泛应用的分类模型：朴素贝叶斯算法
 
+https://mp.weixin.qq.com/s/KNV0KfWktmsPUtQ93a7cDQ
+
+这个男人嫁还是不嫁？懂点朴素贝叶斯(Naive Bayes)原理让你更幸福
+
 ## 拉普拉斯平滑
 
 对于样本集中未出现的单词，在其首次出现时，由于先验概率$$p(x_i\mid y=1)=0,p(x_i\mid y=0)=0$$，这时公式1会出现$$\frac{0}{0}$$的情况。
@@ -198,13 +202,4 @@ $$\phi_j=p(y=j)=\frac{\sum_{i=1}^m1\{y^{(i)}=j\}+1}{m+k}$$
 这相当于重复投掷$$\lvert V\rvert$$面的骰子，将观察值记录下来就形成了一封邮件。每个面的概率服从$$p(x_i\mid y)$$，而且每次试验条件独立。这样我们得到的邮件概率是$$p(y)\prod_{i=1}^np(x_i\mid y)$$。
 
 需要注意的是，上面两个事件模型的概率公式虽然一致，但含义却有很大差异，不要弄混了。
-
-# 支持向量机
-
-支持向量机（SVM，Support Vector Machines）是目前最好的监督学习算法。它由Vladimir Naumovich Vapnik与Alexey Ya. Chervonenkis于1963年提出。
-
->注：Vladimir Naumovich Vapnik，1936年生，乌兹别克国立大学学士，莫斯科控制科学学院博士，后成为该学院计算机科学研究部门负责人。1990年代末移民美国，先后供职于AT&T Bell、NEC、Facebook，伦敦大学和哥伦比亚大学教授。
-
->Alexey Yakovlevich Chervonenkis，1938～2014，俄罗斯数学家。俄罗斯科学院院士，伦敦大学教授。
-
 

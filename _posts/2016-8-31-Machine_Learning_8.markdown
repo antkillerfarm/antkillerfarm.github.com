@@ -1,8 +1,54 @@
 ---
 layout: post
-title:  机器学习（八）——规则化和模型选择, 在线学习
+title:  机器学习（八）——规则化和模型选择
 category: ML 
 ---
+
+## $$\mathcal{H}$$为无限集的情况（续）
+
+下面是$$\mathcal{H}$$参数化的问题。一个线性分类器可以写为：
+
+$$h_\theta(x)=1\{\theta_0+\theta_1x_1+\dots+\theta_nx_n\ge 0\}$$
+
+这种形式有$$n+1$$个参数。
+
+但它也可以写为：
+
+$$h_{u,v}(x)=1\{(u_0^2-v_0^2)+(u_0^2-v_0^2)x_1+\dots+(u_n^2-v_n^2)x_n\ge 0\}$$
+
+这种形式有$$2n+2$$个参数。
+
+显然这两种形式在数学上是等价的，但参数的个数却不同。为此我们引入Vapnik-Chervonenkis维度（简称VC维度），用以刻画参数的个数。
+
+![](/images/article/VC.png)
+
+如上图所示，3个样本点有以上几种分布方式。毫无疑问，它们都能被$$h_\theta(x)=1\{\theta_0+\theta_1x_1+\theta_2x_2\ge 0\}$$所分割，且它们的训练误差为0。但如果是4个点的话，就不能无训练误差的分割了。我们将这种最大分割的个数称作VC维度，这里$$VC(\mathcal{H})=3$$。
+
+需要注意的是，VC维度表征的是模型的最大切割能力，而不是针对所有的情况都成立。比如下图所示的三个点，就不可以被$$h_\theta(x)=1\{\theta_0+\theta_1x_1+\theta_2x_2\ge 0\}$$所分割，但这并不影响$$h_\theta(x)$$的VC维度值。
+
+![](/images/article/VC_2.png)
+
+如果模型能切割任意大小的样本集，则$$VC(\mathcal{H})=\infty$$。
+
+我们将VC维度值替换$$\mathcal{H}$$为有限集时的$$\lvert\mathcal{H}\rvert$$，可得以下相关结论：
+
+令$$VC(\mathcal{H})=d$$，则：
+
+$$\lvert\varepsilon(h)-\hat\varepsilon(h)\rvert\le O\left(\sqrt{\frac{d}{m}\log\frac{m}{d}+\frac{1}{m}\log\frac{1}{\delta}}\right)$$
+
+$$\varepsilon(\hat h)\le \varepsilon(h^*)+O\left(\sqrt{\frac{d}{m}\log\frac{m}{d}+\frac{1}{m}\log\frac{1}{\delta}}\right)$$
+
+$$m=O_{\gamma,\delta}(d)$$
+
+以上公式的其他条件，与$$\mathcal{H}$$为有限集时相同，这里不再赘述。
+
+# 规则化和模型选择
+
+对于多项回归模型$$h_\theta(x)=g(\theta_0+\theta_1x_1+\dots+\theta_kx_k)$$来说，如何选择合适的k值呢？
+
+或者，我们是选择局部权重回归（locally weighted regression），还是SVM呢？
+
+我们定义算法模型的集合为$$\mathcal{M}=\{M_1,\dots,M_d\}$$。其中的$$M_i$$为不同的算法模型，比如SVM、神经网络等等。
 
 ## 交叉验证
 
@@ -161,56 +207,4 @@ $$p(y\mid x,S)=\int_\theta p(y\mid x,\theta)p(\theta\mid S)\mathrm{d}\theta$$
 这个公式又被称作后验预测分布（Posterior predictive distribution）。
 
 $$p(\theta\mid S)$$可由前面的公式得到。
-
-假若我们要求期望值的话，那么套用求期望的公式即可：
-
-$$E[y\mid x,S]=\int_y yp(y\mid x,S)\mathrm{d}y$$
-
-由上可见，贝叶斯估计将$$\theta$$视为随机变量，$$\theta$$的值满足一定的分布，不是固定值，我们无法通过计算获得其值，只能在预测时计算积分。
-
-上述贝叶斯估计方法，虽然公式合理优美，但后验概率$$p(\theta\mid S)$$通常是很难计算的，因为它是$$\theta$$上的高维积分函数。
-
-观察$$p(\theta\mid S)$$的公式，在分母$$P(S)$$一定的情况下，分子越大则值越大，也就是$$p(\theta\mid S)$$的概率越大。
-
-因此，可得如下算法：
-
-$$\theta_{MAP}=\arg\max_\theta\left(\prod_{i=1}^mp(y^{(i)}\mid x^{(i)},\theta)\right)p(\theta)$$
-
-这个算法叫做最大后验概率估计（maximum a posteriori）。
-
-和ML相比，MAP算法只是在最后多了一项$$p(\theta)$$。通常使用中，我们认为$$p(\theta)$$符合$$\theta\sim N(0,\tau^2I)$$。
-
-由于$$p(\theta)$$实际上就是先验分布，它会对最后结果进行一定的修正。因此，实际上最大后验概率估计相对于最大似然估计来说，较容易克服过度拟合的问题。
-
-![](/images/article/MAP.png)
-
-参见：
-
-http://www.cs.cornell.edu/courses/cs5540/2010sp/lectures/Lec9.Estimation-continued.pdf
-
-Statistical Estimation: Least Squares, Maximum Likelihood and Maximum A Posteriori Estimators
-
-https://mp.weixin.qq.com/s/XnsbCb7H9jHmJ4dV9p2Oug
-
-频率学派还是贝叶斯学派？聊一聊机器学习中的MLE和MAP
-
-https://mp.weixin.qq.com/s/dQxN46wEbFrpvV369uOHdA
-
-详解最大后验概率估计（MAP）的理解
-
-# 在线学习
-
-我们之前讨论的算法，都是给定一个训练集S，经训练之后，得到预测函数h，然后再在新的样本集上进行预测。这种方法被称为批量学习（batch learning）。
-
-与之相对的，还有一种边学习边预测的在线学习（online learning）算法。其步骤如下：
-
->1.$$i:=0$$。   
->2.输入$$x^{(i)}$$，算法预测$$y^{(i)}$$。   
->3.根据$$y^{(i)}$$的真实值，修正算法模型。这一步也被称作更新过程（update procedure）   
->4.令$$i:=i+1$$，以处理下一个数据样本。
-
-在线学习的优点：
-1.算法在学习过程中，即可预测。
-2.随着数据样本的增多，预测会更加准确，即具有自我完善的的能力。
-
 

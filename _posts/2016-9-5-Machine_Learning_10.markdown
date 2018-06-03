@@ -1,8 +1,63 @@
 ---
 layout: post
-title:  机器学习（十）——因子分析（1）
+title:  机器学习（十）——高斯混合模型和EM算法
 category: ML 
 ---
+
+# 高斯混合模型和EM算法（续）
+
+EM算法的思路是：
+
+>1.猜测$$z^{(i)}$$的值。（这一步即所谓的Expectation，简称E-Step。）   
+>2.最大化计算，以更新模型的参数。（这一步即所谓的Maximization，简称M-Step。）
+
+具体到这里就是：
+
+>Repeat until convergence {   
+>>(E-step) For each i, j：   
+>>>$$w_j^{(i)}:=p(z^{(i)}=j\mid x^{(i)};\phi,\mu,\Sigma)$$   
+>>
+>>(M-step) Update the parameters：   
+>>>$$\phi_j:=\frac{1}{m}\sum_{i=1}^mw_j^{(i)}$$   
+>>>$$\mu_j:=\frac{\sum_{i=1}^mw_j^{(i)}x^{(i)}}{\sum_{i=1}^mw_j^{(i)}}$$   
+>>>$$\Sigma_j:=\frac{\sum_{i=1}^mw_j^{(i)}(x^{(i)}-\mu_j)(x^{(i)}-\mu_j)^T}{\sum_{i=1}^mw_j^{(i)}}$$   
+>
+>}
+
+E-Step中，根据贝叶斯公式可得：
+
+$$p(z^{(i)}=j\mid x^{(i)};\phi,\mu,\Sigma)=\frac{p(x^{(i)}\mid z^{(i)}=j;\mu,\Sigma)p(z^{(i)}=j;\phi)}{\sum_{l=1}^kp(x^{(i)}\mid z^{(i)}=l;\mu,\Sigma)p(z^{(i)}=l;\phi)}$$
+
+将假设模型的各概率密度函数代入上式，即可计算得到$$w_j^{(i)}$$。
+
+相比于K-means算法，GMM算法中的$$z^{(i)}$$是个概率值，而非确定值，因此也被称为soft assignments。
+
+K-means算法各个聚类的特征都是一样的，也就是“圆圈”的半径一致。而GMM算法的“圆圈”半径可以不同。如下面两图所示：
+
+| ![](/images/article/EM_2.png) | ![](/images/article/EM_3.png) |
+| K-means算法 | GMM算法 |
+
+>注意：这里的圆圈是先验估计值，它和最后的聚类形状无关。
+
+GMM算法结果也是局部最优解。对其他参数取不同的初始值进行多次计算同样适用于GMM算法。
+
+![](/images/img2/Clustering.jpg)
+
+![](/images/img2/Clustering_2.jpg)
+
+参考：
+
+http://cseweb.ucsd.edu/~atsmith/project1_253.pdf
+
+Clustering With EM and K-Means
+
+https://mp.weixin.qq.com/s/wk3_wG1xSuMX1HjJeEgErQ
+
+kmeans聚类理论篇K的选择（轮廓系数）
+
+https://mp.weixin.qq.com/s/tLcF7_jjl3_FmjM7L1kcfw
+
+一文详解高斯混合模型原理
 
 # EM算法
 
@@ -212,68 +267,4 @@ $$\nabla_{\mu_l}\mu_l^T\Sigma_l^{-1}\mu_l=2\Sigma_l^{-1}\mu_l\tag{5.12}$$
 回到正题，令公式4等于0，可得：
 
 $$\mu_j:=\frac{\sum_{i=1}^mw_j^{(i)}x^{(i)}}{\sum_{i=1}^mw_j^{(i)}}$$
-
-同样的，对$$\phi_j$$求导，可得：
-
-$$\sum_{i=1}^m\sum_{j=1}^kw_j^{(i)}\log\phi_j$$
-
-因为存在$$\sum_{j=1}^k\phi_j=1$$这样的约束，因此需要使用拉格朗日函数：
-
-$$\mathcal{L}(\phi)=\sum_{i=1}^m\sum_{j=1}^kw_j^{(i)}\log\phi_j+\beta(\sum_{j=1}^k\phi_j-1)$$
-
-这里的$$\beta$$是拉格朗日乘子，$$\phi_j\ge 0$$的约束条件不用考虑，因为对$$\log\phi_j$$求导已经隐含了这个条件。
-
-因此：
-
-$$\frac{\partial\mathcal{L}(\phi)}{\partial\phi_j}=\sum_{i=1}^m\frac{w_j^{(i)}}{\phi_j}+\beta$$
-
-令上式等于0，可得：
-
-$$\frac{\sum_{i=1}^mw_j^{(i)}}{\phi_j}=-\beta=\frac{\sum_{i=1}^m\sum_{j=1}^kw_j^{(i)}}{\sum_{j=1}^k\phi_j}$$
-
-因为$$\sum_{j=1}^k\phi_j=1,\sum_{j=1}^kw_j^{(i)}=1$$，所以：
-
-$$-\beta=\frac{\sum_{i=1}^m1}{1}=m$$
-
-因此：
-
-$$\phi_j:=\frac{1}{m}\sum_{i=1}^mw_j^{(i)}$$  
-
-# 因子分析
-
-之前的讨论都是基于样本个数m远大于特征数n的，现在来看看$$m\ll n$$的情况。
-
-这种情况本质上意味着，样本只覆盖了很小一部分的特征空间。当我们应用高斯模型的时候，会发现协方差矩阵$$\Sigma$$根本就不存在，自然也就没法利用之前的方法了。
-
-那么我们应该怎么办呢？
-
-## 对$$\Sigma$$的限制
-
-有两种方法可以对$$\Sigma$$进行限制。
-
-方法一：
-
-设定$$\Sigma$$为对角线矩阵，即所有非对角线元素都是0。其对角线元素为：
-
-$$\Sigma_{jj}=\frac{1}{m}\sum_{i=1}^m(x_j^{(i)}-\mu_j)^2$$
-
-二维多元高斯分布在平面上的投影是个椭圆，中心点由$$\mu$$决定，椭圆的形状由$$\Sigma$$决定。$$\Sigma$$如果变成对角阵，就意味着椭圆的两个轴都和坐标轴平行了。
-
-方法二：
-
-还可以进一步约束$$\Sigma$$，可以假设对角线上的元素都是相等的，即：
-
-$$\Sigma=\sigma^2I$$
-
-其中：
-
-$$\sigma=\frac{1}{mn}\sum_{j=1}^n\sum_{i=1}^m(x_j^{(i)}-\mu_j)^2$$
-
-这实际上也就是方法一中对角线元素的均值，反映到二维高斯分布图上就是椭圆变成圆。
-
-当我们要估计出完整的$$\Sigma$$时，我们需要$$m\ge n+1$$才能保证在最大似然估计下得出的$$\Sigma$$是非奇异的。然而在上面的任何一种假设限定条件下，只要$$m\ge 2$$就可以估计出限定的$$\Sigma$$。
-
-这样做的缺点也是显而易见的，我们认为特征间相互独立，这个假设太强。接下来，我们给出一种称为因子分析（factor analysis）的方法，使用更多的参数来分析特征间的关系，并且不需要计算一个完整的$$\Sigma$$。
-
-
 

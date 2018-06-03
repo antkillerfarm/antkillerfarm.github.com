@@ -4,7 +4,25 @@ title:  机器学习（二十三）——AutoML, Optimizer
 category: ML 
 ---
 
-# HMM（续）
+# HMM
+
+## Baum–Welch算法（续）
+
+Baum–Welch算法也叫前向后向算法。因为它包含了前向和后向两个步骤。
+
+1:expectation，计算隐变量的概率分布，并得到可观察变量与隐变量联合概率的log-likelihood在前面求得的隐变量概率分布下的期望。这个步骤就是所谓的前向步骤，算法和求解问题2的forward算法是一致的
+
+2:maximization求得使上述期望最大的新的模型参数。若达到收敛条件则退出，否则回到步骤1。
+
+前向后向算法则主要是解决Expectation这步中求隐变量概率分布的一个算法，它利用dynamic programming大大减少了计算量。
+
+此外，训练HMM模型时，也需要对模型参数进行随机初始化，不然和神经网络一样，由于参数没有差异性，而无法进行训练。
+
+参考：
+
+https://blog.csdn.net/xmu_jupiter/article/details/50965039
+
+HMM的Baum-Welch算法和Viterbi算法公式推导细节
 
 ## HMM在NLP领域的应用
 

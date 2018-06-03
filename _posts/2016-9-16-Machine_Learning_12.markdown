@@ -4,7 +4,63 @@ title:  机器学习（十二）——机器学习中的矩阵方法（1）LU分
 category: ML 
 ---
 
-## 因子分析的EM估计（续）
+## 因子分析模型（续）
+
+又因为$$E[zz^T]=Cov(z)=I$$，所以$$\Sigma_{zx}=\Lambda^T$$。
+
+$$\begin{align}
+\Sigma_{xx}&=E[(x-E[x])(x-E[x])^T]=E[(\mu+\Lambda z+\epsilon-\mu)(\mu+\Lambda z+\epsilon-\mu)^T]
+\\&=E[(\Lambda z+\epsilon)(\Lambda z^T+\epsilon^T)]=E[\Lambda z(\Lambda z)^T+\epsilon(\Lambda z)^T+\Lambda z\epsilon^T+\epsilon\epsilon^T]
+\\&=E[\Lambda zz^T\Lambda^T+\epsilon z^T\Lambda^T+\Lambda z\epsilon^T+\epsilon\epsilon^T]
+\\&=\Lambda E[zz^T]\Lambda^T+E[\epsilon z^T]\Lambda^T+\Lambda E[z\epsilon^T]+E[\epsilon\epsilon^T]
+\\&=\Lambda I\Lambda^T+0+0+\Psi=\Lambda \Lambda^T+\Psi
+\end{align}$$
+
+把这些结果合在一起，可得：
+
+$$\begin{bmatrix} z \\ x \end{bmatrix}\sim N\left(\begin{bmatrix} \vec{0} \\ \mu \end{bmatrix},\begin{bmatrix} I & \Lambda^T \\ \Lambda & \Lambda \Lambda^T+\Psi \end{bmatrix}\right)\tag{1}$$
+
+从这个结论可以看出：$$x\sim N(\mu,\Lambda \Lambda^T+\Psi)$$
+
+因此它的对数似然函数为：
+
+$$\ell(\mu,\Lambda,\Psi)=\log\prod_{i=1}^m\frac{1}{(2\pi)^{n/2}\lvert\Lambda \Lambda^T+\Psi\rvert^{1/2}}\exp\left(-\frac{1}{2}(x^{(i)}-\mu)^T(\Lambda \Lambda^T+\Psi)^{-1}(x^{(i)}-\mu)\right)$$
+
+但这个函数是很难最大化的，需要使用EM算法解决之。
+
+## 因子分析的EM估计
+
+E-step比较简单。由《机器学习（十）》公式1、2和公式1，可得：
+
+$$\mu_{z^{(i)}\mid x^{(i)}}=\Lambda^T(\Lambda \Lambda^T+\Psi)^{-1}(x^{(i)}-\mu)$$
+
+$$\Sigma_{z^{(i)}\mid x^{(i)}}=I-\Lambda^T(\Lambda \Lambda^T+\Psi)^{-1}\Lambda$$
+
+因此：
+
+$$Q_i(z^{(i)})=\frac{1}{(2\pi)^{n/2}\lvert\Sigma_{z^{(i)}\mid x^{(i)}}\rvert^{1/2}}\exp\left(-\frac{1}{2}(x^{(i)}-\mu_{z^{(i)}\mid x^{(i)}})^T\Sigma_{z^{(i)}\mid x^{(i)}}^{-1}(x^{(i)}-\mu_{z^{(i)}\mid x^{(i)}})\right)$$
+
+M-step的最大化的目标是：
+
+$$\sum_{i=1}^m\int_{z^{(i)}}Q_i(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\mu,\Lambda,\Psi)}{Q_i(z^{(i)})}\mathrm{d}z^{(i)}$$
+
+下面我们重点求$$\Lambda$$的估计公式。
+
+首先将上式简化为:
+
+$$\begin{align}
+&\sum_{i=1}^m\int_{z^{(i)}}Q_i(z^{(i)})\log\frac{p(x^{(i)}\mid z^{(i)};\mu,\Lambda,\Psi)p(z^{(i)})}{Q_i(z^{(i)})}\mathrm{d}z^{(i)}
+\\&=\sum_{i=1}^m\int_{z^{(i)}}Q_i(z^{(i)})\left[\log p(x^{(i)}\mid z^{(i)};\mu,\Lambda,\Psi)+\log p(z^{(i)})-\log Q_i(z^{(i)})\right]\mathrm{d}z^{(i)}
+\\&=\sum_{i=1}^m E_{z^{(i)}\sim Q_i}\left[\log p(x^{(i)}\mid z^{(i)};\mu,\Lambda,\Psi)+\log p(z^{(i)})-\log Q_i(z^{(i)})\right]
+\end{align}$$
+
+去掉和各参数无关的部分后，可得：
+
+$$\begin{align}
+&\sum_{i=1}^mE\left[\log p(x^{(i)}\mid z^{(i)};\mu,\Lambda,\Psi)\right]
+\\&=\sum_{i=1}^mE\left[\frac{1}{(2\pi)^{n/2}\lvert\Psi\rvert^{1/2}}\exp\left(-\frac{1}{2}(x^{(i)}-\mu-\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu-\Lambda z^{(i)})\right)\right]
+\\&=\sum_{i=1}^mE\left[-\frac{1}{2}\log\lvert\Psi\rvert-\frac{n}{2}\log(2\pi)-\frac{1}{2}(x^{(i)}-\mu-\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu-\Lambda z^{(i)})\right]
+\end{align}$$
 
 去掉和$$\Lambda$$无关的部分，并求导可得：
 
@@ -231,39 +287,3 @@ $$a_{ij}=\begin{cases}
 
 http://www3.nd.edu/~zxu2/acms40390F11/Alg-LU-Crout.pdf
 
-## QR分解
-
-任意实数方阵A，都能被分解为$$A=QR$$。这里的Q为正交单位阵，即$$Q^TQ=I$$。R是一个上三角矩阵。这种分解被称为QR分解。
-
-QR分解也有若干种算法，常见的包括Gram–Schmidt、Householder和Givens算法。
-
->注：Jørgen Pedersen Gram，1850～1916，丹麦数学家，在矩阵、数论、泛函等领域皆有贡献。他居然是被自行车撞死的...
-
->Erhard Schmidt，1876～1959，德国数学家，哥廷根大学博士，柏林大学教授。David Hilbert的学生。20世纪数学界的几位超级大神之一。1933年前的哥廷根大学数学系，秒杀其他所有学校。所谓“一流的学生去哥廷根，智商欠费才去藤校”。
-
->Alston Scott Householder，1904～1993，美国数学家，芝加哥大学博士，田纳西大学教授。ACM主席。
-
->James Wallace Givens, Jr.，1910～1993，美国数学家，普林斯顿大学博士，西北大学教授。参与UNIVAC I机器项目（1951年），这是最早的商用计算机。
-
-这里只介绍Gram–Schmidt算法，这个算法虽然名为Gram–Schmidt，然而拉普拉斯和柯西早就已经用过了。
-
-首先介绍一下向量的投影运算的符号表示。
-
-![](/images/article/Projection_and_rejection.png)
-
-如上图所示，根据余弦定理和向量点乘的定义可得：
-
-$$a\cdot b=\mid a\mid \mid b\mid \cos \theta$$
-
-因此，向量a在向量b上的投影向量$$a_1$$，可表示为：
-
-$$a_1=\mid a\mid \cos \theta\hat b=\mid a\mid \frac{a\cdot b}{\mid a\mid \mid b\mid }\frac{b}{\mid b\mid }=\frac{a\cdot b}{\mid b\mid ^2}b=\frac{a\cdot b}{b\cdot b}b=\frac{\langle a,b\rangle}{\langle b,b\rangle}b$$
-
-特别的，当b为单位向量时：
-
-$$a_1=\langle a,b\rangle\tag{1}$$
-
-我们定义投影符号如下：
-
-$$\mathrm{proj}_{\mathbf{e}}\mathbf{a}
-= \frac{\left\langle\mathbf{e},\mathbf{a}\right\rangle}{\left\langle\mathbf{e},\mathbf{e}\right\rangle}\mathbf{e}$$

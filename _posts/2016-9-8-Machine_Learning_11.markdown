@@ -1,8 +1,72 @@
 ---
 layout: post
-title:  机器学习（十一）——因子分析（2）
+title:  机器学习（十一）——因子分析
 category: ML 
 ---
+
+## 重新审视混合高斯模型（续）
+
+同样的，对$$\phi_j$$求导，可得：
+
+$$\sum_{i=1}^m\sum_{j=1}^kw_j^{(i)}\log\phi_j$$
+
+因为存在$$\sum_{j=1}^k\phi_j=1$$这样的约束，因此需要使用拉格朗日函数：
+
+$$\mathcal{L}(\phi)=\sum_{i=1}^m\sum_{j=1}^kw_j^{(i)}\log\phi_j+\beta(\sum_{j=1}^k\phi_j-1)$$
+
+这里的$$\beta$$是拉格朗日乘子，$$\phi_j\ge 0$$的约束条件不用考虑，因为对$$\log\phi_j$$求导已经隐含了这个条件。
+
+因此：
+
+$$\frac{\partial\mathcal{L}(\phi)}{\partial\phi_j}=\sum_{i=1}^m\frac{w_j^{(i)}}{\phi_j}+\beta$$
+
+令上式等于0，可得：
+
+$$\frac{\sum_{i=1}^mw_j^{(i)}}{\phi_j}=-\beta=\frac{\sum_{i=1}^m\sum_{j=1}^kw_j^{(i)}}{\sum_{j=1}^k\phi_j}$$
+
+因为$$\sum_{j=1}^k\phi_j=1,\sum_{j=1}^kw_j^{(i)}=1$$，所以：
+
+$$-\beta=\frac{\sum_{i=1}^m1}{1}=m$$
+
+因此：
+
+$$\phi_j:=\frac{1}{m}\sum_{i=1}^mw_j^{(i)}$$  
+
+# 因子分析
+
+之前的讨论都是基于样本个数m远大于特征数n的，现在来看看$$m\ll n$$的情况。
+
+这种情况本质上意味着，样本只覆盖了很小一部分的特征空间。当我们应用高斯模型的时候，会发现协方差矩阵$$\Sigma$$根本就不存在，自然也就没法利用之前的方法了。
+
+那么我们应该怎么办呢？
+
+## 对$$\Sigma$$的限制
+
+有两种方法可以对$$\Sigma$$进行限制。
+
+方法一：
+
+设定$$\Sigma$$为对角线矩阵，即所有非对角线元素都是0。其对角线元素为：
+
+$$\Sigma_{jj}=\frac{1}{m}\sum_{i=1}^m(x_j^{(i)}-\mu_j)^2$$
+
+二维多元高斯分布在平面上的投影是个椭圆，中心点由$$\mu$$决定，椭圆的形状由$$\Sigma$$决定。$$\Sigma$$如果变成对角阵，就意味着椭圆的两个轴都和坐标轴平行了。
+
+方法二：
+
+还可以进一步约束$$\Sigma$$，可以假设对角线上的元素都是相等的，即：
+
+$$\Sigma=\sigma^2I$$
+
+其中：
+
+$$\sigma=\frac{1}{mn}\sum_{j=1}^n\sum_{i=1}^m(x_j^{(i)}-\mu_j)^2$$
+
+这实际上也就是方法一中对角线元素的均值，反映到二维高斯分布图上就是椭圆变成圆。
+
+当我们要估计出完整的$$\Sigma$$时，我们需要$$m\ge n+1$$才能保证在最大似然估计下得出的$$\Sigma$$是非奇异的。然而在上面的任何一种假设限定条件下，只要$$m\ge 2$$就可以估计出限定的$$\Sigma$$。
+
+这样做的缺点也是显而易见的，我们认为特征间相互独立，这个假设太强。接下来，我们给出一种称为因子分析（factor analysis）的方法，使用更多的参数来分析特征间的关系，并且不需要计算一个完整的$$\Sigma$$。
 
 ## 利用多元高斯分布密度函数计算积分的技巧
 
@@ -188,60 +252,3 @@ $$\begin{align}
 \end{align}$$
 
 因为z和$$\epsilon$$是相互独立的随机变量，因此$$E[z\epsilon^T]=E[z]E[\epsilon^T]=0$$。
-
-又因为$$E[zz^T]=Cov(z)=I$$，所以$$\Sigma_{zx}=\Lambda^T$$。
-
-$$\begin{align}
-\Sigma_{xx}&=E[(x-E[x])(x-E[x])^T]=E[(\mu+\Lambda z+\epsilon-\mu)(\mu+\Lambda z+\epsilon-\mu)^T]
-\\&=E[(\Lambda z+\epsilon)(\Lambda z^T+\epsilon^T)]=E[\Lambda z(\Lambda z)^T+\epsilon(\Lambda z)^T+\Lambda z\epsilon^T+\epsilon\epsilon^T]
-\\&=E[\Lambda zz^T\Lambda^T+\epsilon z^T\Lambda^T+\Lambda z\epsilon^T+\epsilon\epsilon^T]
-\\&=\Lambda E[zz^T]\Lambda^T+E[\epsilon z^T]\Lambda^T+\Lambda E[z\epsilon^T]+E[\epsilon\epsilon^T]
-\\&=\Lambda I\Lambda^T+0+0+\Psi=\Lambda \Lambda^T+\Psi
-\end{align}$$
-
-把这些结果合在一起，可得：
-
-$$\begin{bmatrix} z \\ x \end{bmatrix}\sim N\left(\begin{bmatrix} \vec{0} \\ \mu \end{bmatrix},\begin{bmatrix} I & \Lambda^T \\ \Lambda & \Lambda \Lambda^T+\Psi \end{bmatrix}\right)\tag{1}$$
-
-从这个结论可以看出：$$x\sim N(\mu,\Lambda \Lambda^T+\Psi)$$
-
-因此它的对数似然函数为：
-
-$$\ell(\mu,\Lambda,\Psi)=\log\prod_{i=1}^m\frac{1}{(2\pi)^{n/2}\lvert\Lambda \Lambda^T+\Psi\rvert^{1/2}}\exp\left(-\frac{1}{2}(x^{(i)}-\mu)^T(\Lambda \Lambda^T+\Psi)^{-1}(x^{(i)}-\mu)\right)$$
-
-但这个函数是很难最大化的，需要使用EM算法解决之。
-
-## 因子分析的EM估计
-
-E-step比较简单。由《机器学习（十）》公式1、2和公式1，可得：
-
-$$\mu_{z^{(i)}\mid x^{(i)}}=\Lambda^T(\Lambda \Lambda^T+\Psi)^{-1}(x^{(i)}-\mu)$$
-
-$$\Sigma_{z^{(i)}\mid x^{(i)}}=I-\Lambda^T(\Lambda \Lambda^T+\Psi)^{-1}\Lambda$$
-
-因此：
-
-$$Q_i(z^{(i)})=\frac{1}{(2\pi)^{n/2}\lvert\Sigma_{z^{(i)}\mid x^{(i)}}\rvert^{1/2}}\exp\left(-\frac{1}{2}(x^{(i)}-\mu_{z^{(i)}\mid x^{(i)}})^T\Sigma_{z^{(i)}\mid x^{(i)}}^{-1}(x^{(i)}-\mu_{z^{(i)}\mid x^{(i)}})\right)$$
-
-M-step的最大化的目标是：
-
-$$\sum_{i=1}^m\int_{z^{(i)}}Q_i(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\mu,\Lambda,\Psi)}{Q_i(z^{(i)})}\mathrm{d}z^{(i)}$$
-
-下面我们重点求$$\Lambda$$的估计公式。
-
-首先将上式简化为:
-
-$$\begin{align}
-&\sum_{i=1}^m\int_{z^{(i)}}Q_i(z^{(i)})\log\frac{p(x^{(i)}\mid z^{(i)};\mu,\Lambda,\Psi)p(z^{(i)})}{Q_i(z^{(i)})}\mathrm{d}z^{(i)}
-\\&=\sum_{i=1}^m\int_{z^{(i)}}Q_i(z^{(i)})\left[\log p(x^{(i)}\mid z^{(i)};\mu,\Lambda,\Psi)+\log p(z^{(i)})-\log Q_i(z^{(i)})\right]\mathrm{d}z^{(i)}
-\\&=\sum_{i=1}^m E_{z^{(i)}\sim Q_i}\left[\log p(x^{(i)}\mid z^{(i)};\mu,\Lambda,\Psi)+\log p(z^{(i)})-\log Q_i(z^{(i)})\right]
-\end{align}$$
-
-去掉和各参数无关的部分后，可得：
-
-$$\begin{align}
-&\sum_{i=1}^mE\left[\log p(x^{(i)}\mid z^{(i)};\mu,\Lambda,\Psi)\right]
-\\&=\sum_{i=1}^mE\left[\frac{1}{(2\pi)^{n/2}\lvert\Psi\rvert^{1/2}}\exp\left(-\frac{1}{2}(x^{(i)}-\mu-\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu-\Lambda z^{(i)})\right)\right]
-\\&=\sum_{i=1}^mE\left[-\frac{1}{2}\log\lvert\Psi\rvert-\frac{n}{2}\log(2\pi)-\frac{1}{2}(x^{(i)}-\mu-\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu-\Lambda z^{(i)})\right]
-\end{align}$$
-

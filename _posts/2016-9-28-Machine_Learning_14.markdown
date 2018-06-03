@@ -1,8 +1,72 @@
 ---
 layout: post
-title:  机器学习（十四）——机器学习中的矩阵方法（3）病态矩阵, 协同过滤的ALS算法（1）
+title:  机器学习（十四）——机器学习中的矩阵方法（3）病态矩阵
 category: ML 
 ---
+
+## 奇异值分解（续）
+
+>Gene Howard Golub，1932～2007，美国数学家，斯坦福大学教授。
+
+>William Morton Kahan，1933年生，加拿大数学家，多伦多大学博士，UCB教授。图灵奖获得者（1989）。IEEE-754标准（即浮点数标准）的主要制订者，被称为“浮点数之父”。ACM院士。
+
+参见：
+
+http://www.doc88.com/p-089411326888.html
+
+SVD(奇异值分解)算法及其评估
+
+https://mp.weixin.qq.com/s/46oOYoL486WZ4oPwgLrrrQ
+
+奇异值分解SVD原理与应用详解
+
+https://mp.weixin.qq.com/s/1pg8jY1R-8kJKu1L_RPLkg
+
+奇异值分解(SVD)原理
+
+https://mp.weixin.qq.com/s/tZqkbJ18ANCcA7ndWmJEGw
+
+奇异值分解简介：从原理到基础机器学习应用
+
+## 矩阵的秩
+
+一个矩阵A的列（行）秩是A的线性独立的列（行）的极大数。
+
+下面不加证明的给出矩阵的秩的性质：
+
+1.矩阵的行秩等于列秩，因此可统称为矩阵的秩。
+
+2.秩是n的$$m\times n$$矩阵为列满秩阵；秩是n的$$n\times p$$矩阵为行满秩阵。
+
+3.设$$A\in M_{m\times n}(F)$$，若A是行满秩阵，则$$m\le n$$；若A是列满秩阵 ，则$$n\le m$$。
+
+4.设A为$$m\times n$$列满秩阵，则n元齐次线性方程组$$AX=0$$只有零解。
+
+5.线性方程组$$AX=B$$对任一m维列向量B都有解$$\Leftrightarrow$$系数矩阵A为行满秩阵。
+
+参见：
+
+http://wenku.baidu.com/view/9ce143eb81c758f5f61f6730.html
+
+行(列)满秩阵的几点性质
+
+https://mp.weixin.qq.com/s/N16K511-crzj6h-R1L10rQ
+
+如何通过心形线快速认识秩的几何意义？
+
+## 奇异矩阵
+
+对应的行列式等于0的方阵，被称为奇异矩阵（singular matrix）。
+
+奇异矩阵和线性相关、秩等概念密切相关。
+
+下面不加证明的给出奇异矩阵的性质：
+
+1.如果A为非奇异矩阵$$\Leftrightarrow$$A满秩。
+
+2.如果A为奇异矩阵，则AX=0有无穷解，AX=b有无穷解或者无解。如果A为非奇异矩阵，则AX=0有且只有唯一零解，AX=b有唯一解。
+
+对于A不是方阵的情况，一般使用$$A^TA$$来评估矩阵是否是奇异矩阵。
 
 ## 正定矩阵
 
@@ -216,45 +280,3 @@ https://mp.weixin.qq.com/s/ctLe1UbvWqBJ8jh-ppU3rA
 
 机器学习中的五种回归模型及其优缺点
 
-# 协同过滤的ALS算法
-
-## 协同过滤概述
-
->注：最近研究商品推荐系统的算法，因此，Andrew Ng讲义的内容，后续再写。
-
-协同过滤是目前很多电商、社交网站的用户推荐系统的算法基础，也是目前工业界应用最广泛的机器学习领域。
-
-协同过滤是利用集体智慧的一个典型方法。要理解什么是协同过滤 (Collaborative Filtering,简称CF)，首先想一个简单的问题，如果你现在想看个电影，但你不知道具体看哪部，你会怎么做？大部分的人会问问周围的朋友，看看最近有什么好看的电影推荐，而我们一般更倾向于从口味比较类似的朋友那里得到推荐。这就是协同过滤的核心思想。
-
-如何找到相似的用户和物品呢？其实就是计算用户间以及物品间的相似度。以下是几种计算相似度的方法：
-
-### 欧氏距离
-
-$$d(x,y)=\sqrt{\sum(x_i-y_i)^2},sim(x,y)=\frac{1}{1+d(x,y)}$$
-
-### Cosine相似度
-
-$$\cos(x,y)=\frac{\langle x,y\rangle}{\mid x\mid \mid y\mid }=\frac{\sum x_iy_i}{\sqrt{\sum x_i^2}~\sqrt{\sum y_i^2}}$$
-
-### 皮尔逊相关系数（Pearson product-moment correlation coefficient，PPMCC or PCC）：
-
-$$\begin{align}
-p(x,y)&=\frac{cov(X,Y)}{\sigma_X\sigma_Y}=\frac{\operatorname{E}[XY]-\operatorname{E}[X]\operatorname{E}[Y]}{\sqrt{\operatorname{E}[X^2]-\operatorname{E}[X]^2}~\sqrt{\operatorname{E}[Y^2]- \operatorname{E}[Y]^2}}
-\\&=\frac{n\sum x_iy_i-\sum x_i\sum y_i}{\sqrt{n\sum x_i^2-(\sum x_i)^2}~\sqrt{n\sum y_i^2-(\sum y_i)^2}}
-\end{align}$$
-
-该系数由Karl Pearson发明。参见《机器学习（二）》中对Karl Pearson的简介。Fisher对该系数也有研究和贡献。
-
-![](/images/article/pearson.png)
-
-如上图所示，Cosine相似度计算的是两个样本点和坐标原点之间的直线的夹角，而PCC计算的是两个样本点和数学期望点之间的直线的夹角。
-
-PCC能够有效解决，在协同过滤数据集中，不同用户评分尺度不一的问题。
-
-参见：
-
-https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient
-
-https://mp.weixin.qq.com/s/RjpH7XD5SCMkrSdcmG394g
-
-从PCC到MIC，一文教你如何计算变量之间的相关性

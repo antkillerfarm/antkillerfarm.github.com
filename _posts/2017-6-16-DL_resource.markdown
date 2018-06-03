@@ -222,6 +222,10 @@ https://mp.weixin.qq.com/s/L6O-I7y9HiA1WnjBRMh1cQ
 
 我们对比了GitHub上8800个开源机器学习项目，并选出了其中的Top30
 
+https://mp.weixin.qq.com/s/DENlDE6rJ7sbX2ag6tKadw
+
+50种机器学习和预测应用的API，你想要的全都有
+
 https://mp.weixin.qq.com/s/FLCmaSU8qlmTWSzs1PEhnw
 
 C++从零实现神经网络

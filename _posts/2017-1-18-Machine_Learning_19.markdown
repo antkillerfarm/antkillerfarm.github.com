@@ -1,10 +1,52 @@
 ---
 layout: post
-title:  机器学习（十九）——关联规则挖掘
+title:  机器学习（十九）——决策树, 关联规则挖掘
 category: ML 
 ---
 
-# 决策树（续）
+# 决策树
+
+Decision Tree讲的最好的，首推周志华的《机器学习》。这里只对要点进行备忘。
+
+当前样本集合D中，第k类样本所占的比例为$$p_k(k=1,2,\dots,\mid y\mid)$$，则D的信息熵（information entropy）定义为：
+
+$$Ent(D)=-\sum_{k=1}^{\mid y\mid }p_k\log_2p_k$$
+
+假定离散属性a有V个可能的取值，若使用a对D进行划分，则第v个分支结点包含了D中所有在a上取值$$a^v$$的样本，记为$$D^v$$。则信息增益（information gain）为：
+
+$$Gain(D,a)=Ent(D)-\sum_{v=1}^V\frac{\mid D^v\mid }{\mid D\mid }Ent(D^v)$$
+
+增益率（gain ratio）：
+
+$$Gain\_ratio(D,a)=\frac{Gain(D,a)}{IV(a)}$$
+
+其中
+
+$$IV(a)=-\sum_{v=1}^V\frac{\mid D^v\mid }{\mid D\mid }\log_2 \frac{\mid D^v\mid }{\mid D\mid }$$
+
+基尼值：
+
+$$Gini(D)=1-\sum_{k=1}^{\mid y\mid }p_k^2$$
+
+基尼指数：
+
+$$Gini\_index(D,a)=\sum_{v=1}^V\frac{\mid D^v\mid }{\mid D\mid }Gini(D^v)$$
+
+各种决策树和它的划分依据如下表所示：
+
+| 名称 | 划分依据 |
+|:--:|:--:|
+| ID3 | Gain |
+| C4.5 | Gain_ratio |
+| CART | Gini_index |
+
+决策树是一种可以将训练误差变为0的算法，只要每个样本对应一个叶子结点即可，然而这样做会导致过拟合。为了限制树的生长，我们可以加入阈值，当增益大于阈值时才让节点分裂。
+
+参考：
+
+https://mp.weixin.qq.com/s/TTU9LMG8TuB1gzgfCfWjjw
+
+从香农熵到手推KL散度：一文带你纵览机器学习中的信息论
 
 ## GBDT
 
@@ -225,42 +267,4 @@ $$confidence(X\Rightarrow Y)=\frac{support(X\Rightarrow Y)}{support(X)}$$
 http://blog.csdn.net/OpenNaive/article/details/7047823
 
 关联规则挖掘（一）：基本概念
-
-## Apriori算法
-
-Apriori算法的思路如下：
-
-1.第一次扫描交易数据库D时，产生1-频繁集。在此基础上经过连接、修剪产生2-频繁集。以此类推，直到无法产生更高阶的频繁集为止。
-
-2.在第k次循环中，也就是产生k-频繁集的时候，首先产生k-候选集，k-候选集中每一个项集都是对两个只有一个项不同的属于k-1频繁集的项集连接产生的。
-
-3.k-候选集经过筛选后产生k-频繁集。
-
-从频繁集的定义，我们可以很容易的推导出如下结论：
-
-**如果项目集X是频繁集，那么它的非空子集都是频繁集。**
-
-如果k-候选集中的项集Y，包含有某个k-1阶子集不属于k-1频繁集，那么Y就不可能是频繁集，应该从候选集中裁剪掉。Apriori算法就是利用了频繁集的这个性质。
-
-参考：
-
-http://zhan.renren.com/dmeryuyang?gid=3602888498023976650
-
-小白学数据分析----->关联分析学习算法篇Apriori
-
-http://blog.csdn.net/lizhengnanhua/article/details/9061755
-
-Apriori算法详解之：一、相关概念和核心步骤
-
-https://mp.weixin.qq.com/s/W1Bu_I3p2DO_sT2Nl0582w
-
-Apriori算法原理总结
-
-http://blog.csdn.net/u013250416/article/details/52701633
-
-关联规则DHP算法详解
-
-https://www.jianshu.com/p/1ccf4d450da0
-
-频繁模式挖掘-DHP算法详解
 

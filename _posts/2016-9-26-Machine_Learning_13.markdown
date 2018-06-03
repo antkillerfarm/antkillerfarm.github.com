@@ -4,7 +4,42 @@ title:  机器学习（十三）——机器学习中的矩阵方法（2）QR分
 category: ML 
 ---
 
-## QR分解（续）
+## QR分解
+
+任意实数方阵A，都能被分解为$$A=QR$$。这里的Q为正交单位阵，即$$Q^TQ=I$$。R是一个上三角矩阵。这种分解被称为QR分解。
+
+QR分解也有若干种算法，常见的包括Gram–Schmidt、Householder和Givens算法。
+
+>注：Jørgen Pedersen Gram，1850～1916，丹麦数学家，在矩阵、数论、泛函等领域皆有贡献。他居然是被自行车撞死的...
+
+>Erhard Schmidt，1876～1959，德国数学家，哥廷根大学博士，柏林大学教授。David Hilbert的学生。20世纪数学界的几位超级大神之一。1933年前的哥廷根大学数学系，秒杀其他所有学校。所谓“一流的学生去哥廷根，智商欠费才去藤校”。
+
+>Alston Scott Householder，1904～1993，美国数学家，芝加哥大学博士，田纳西大学教授。ACM主席。
+
+>James Wallace Givens, Jr.，1910～1993，美国数学家，普林斯顿大学博士，西北大学教授。参与UNIVAC I机器项目（1951年），这是最早的商用计算机。
+
+这里只介绍Gram–Schmidt算法，这个算法虽然名为Gram–Schmidt，然而拉普拉斯和柯西早就已经用过了。
+
+首先介绍一下向量的投影运算的符号表示。
+
+![](/images/article/Projection_and_rejection.png)
+
+如上图所示，根据余弦定理和向量点乘的定义可得：
+
+$$a\cdot b=\mid a\mid \mid b\mid \cos \theta$$
+
+因此，向量a在向量b上的投影向量$$a_1$$，可表示为：
+
+$$a_1=\mid a\mid \cos \theta\hat b=\mid a\mid \frac{a\cdot b}{\mid a\mid \mid b\mid }\frac{b}{\mid b\mid }=\frac{a\cdot b}{\mid b\mid ^2}b=\frac{a\cdot b}{b\cdot b}b=\frac{\langle a,b\rangle}{\langle b,b\rangle}b$$
+
+特别的，当b为单位向量时：
+
+$$a_1=\langle a,b\rangle\tag{1}$$
+
+我们定义投影符号如下：
+
+$$\mathrm{proj}_{\mathbf{e}}\mathbf{a}
+= \frac{\left\langle\mathbf{e},\mathbf{a}\right\rangle}{\left\langle\mathbf{e},\mathbf{e}\right\rangle}\mathbf{e}$$
 
 令$$A=[\mathbf{a}_1, \cdots, \mathbf{a}_n]$$，其中$$a_i$$为列向量。则：
 
@@ -195,67 +230,3 @@ $$M=U\Sigma V^*$$
 ![](/images/article/Singular-Value-Decomposition.png)
 
 虽然，我们可以通过计算矩阵$$\sqrt{M^*M}$$的特征值的方法，计算奇异值，然而这个方法的计算量十分巨大。1965年，Gene Howard Golub和William Morton Kahan发明了目前较为通用的算法。但该方法比较复杂，这里不作介绍。
-
->Gene Howard Golub，1932～2007，美国数学家，斯坦福大学教授。
-
->William Morton Kahan，1933年生，加拿大数学家，多伦多大学博士，UCB教授。图灵奖获得者（1989）。IEEE-754标准（即浮点数标准）的主要制订者，被称为“浮点数之父”。ACM院士。
-
-参见：
-
-http://www.doc88.com/p-089411326888.html
-
-SVD(奇异值分解)算法及其评估
-
-https://mp.weixin.qq.com/s/46oOYoL486WZ4oPwgLrrrQ
-
-奇异值分解SVD原理与应用详解
-
-https://mp.weixin.qq.com/s/1pg8jY1R-8kJKu1L_RPLkg
-
-奇异值分解(SVD)原理
-
-https://mp.weixin.qq.com/s/tZqkbJ18ANCcA7ndWmJEGw
-
-奇异值分解简介：从原理到基础机器学习应用
-
-## 矩阵的秩
-
-一个矩阵A的列（行）秩是A的线性独立的列（行）的极大数。
-
-下面不加证明的给出矩阵的秩的性质：
-
-1.矩阵的行秩等于列秩，因此可统称为矩阵的秩。
-
-2.秩是n的$$m\times n$$矩阵为列满秩阵；秩是n的$$n\times p$$矩阵为行满秩阵。
-
-3.设$$A\in M_{m\times n}(F)$$，若A是行满秩阵，则$$m\le n$$；若A是列满秩阵 ，则$$n\le m$$。
-
-4.设A为$$m\times n$$列满秩阵，则n元齐次线性方程组$$AX=0$$只有零解。
-
-5.线性方程组$$AX=B$$对任一m维列向量B都有解$$\Leftrightarrow$$系数矩阵A为行满秩阵。
-
-参见：
-
-http://wenku.baidu.com/view/9ce143eb81c758f5f61f6730.html
-
-行(列)满秩阵的几点性质
-
-https://mp.weixin.qq.com/s/N16K511-crzj6h-R1L10rQ
-
-如何通过心形线快速认识秩的几何意义？
-
-## 奇异矩阵
-
-对应的行列式等于0的方阵，被称为奇异矩阵（singular matrix）。
-
-奇异矩阵和线性相关、秩等概念密切相关。
-
-下面不加证明的给出奇异矩阵的性质：
-
-1.如果A为非奇异矩阵$$\Leftrightarrow$$A满秩。
-
-2.如果A为奇异矩阵，则AX=0有无穷解，AX=b有无穷解或者无解。如果A为非奇异矩阵，则AX=0有且只有唯一零解，AX=b有唯一解。
-
-对于A不是方阵的情况，一般使用$$A^TA$$来评估矩阵是否是奇异矩阵。
-
-

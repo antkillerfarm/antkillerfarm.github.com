@@ -1,10 +1,38 @@
 ---
 layout: post
-title:  机器学习（十八）——推荐系统进阶, 决策树
+title:  机器学习（十八）——推荐系统进阶
 category: ML 
 ---
 
-## Unigram Model（续）
+## Gibbs Sampling
+
+这个算法虽然以Gibbs命名，但却是Geman兄弟于1984年研究Gibbs random field时，发现的算法。
+
+>注：Josiah Willard Gibbs，1839~1903，美国科学家。他在物理、化学和数学方面都有重大理论贡献。耶鲁大学博士和教授。统计力学的创始人。
+
+>Donald Jay Geman，1943年生，美国数学家。美国西北大学博士，布朗大学教授。随机森林算法的早期研究者之一。
+
+>Stuart Alan Geman，1949年生，美国数学家。MIT博士，约翰霍普金斯大学教授。美国科学院院士。最早将Markov random field（MRF）应用于机器视觉和机器学习。
+
+因为高维空间中，沿坐标轴方向上的两点之间的转移，满足细致平稳条件。因此，Gibbs Sampling的核心就是沿坐标轴循环迭代采样，该算法收敛之后的采样点即符合指定概率分布。
+
+这里需要特别指出的是，Gibbs Sampling比Metropolis–Hastings算法高效的原因在于：Gibbs Sampling每次沿坐标轴的转移是必然会被接受的，即$$\alpha=1$$。
+
+## Unigram Model
+
+假设我们的词典中一共有V个词$$v_1,v_2,\cdots v_V$$，那么最简单的Unigram Model是定义一个V面的骰子，每抛一次骰子，抛出的面就对应产生一个词。
+
+频率学派的Unigram Model如下图：
+
+![](/images/article/unigram-model.jpg)
+
+贝叶斯学派的Unigram Model如下图：
+
+![](/images/article/dirichlet-multinomial-unigram.jpg)
+
+这里使用Dirichlet分布的原因在于，数据采用多项分布，而Dirichlet分布正好是多项分布的共轭先验分布。
+
+$$Dir(\overrightarrow{p}\mid \overrightarrow{\alpha})+MultCount(\overrightarrow{n})=Dir(\overrightarrow{p}\mid \overrightarrow{\alpha}+\overrightarrow{n})$$
 
 和wiki上对Dirichlet分布的pdf函数的描述（参见《数学狂想曲（二）》中的公式1）不同，rickjin在这里采用了如下定义：
 
@@ -265,49 +293,4 @@ Collaborative Metric Learning
 https://mp.weixin.qq.com/s/9xxLU51eqhc6C81jzHQijQ
 
 简述推荐系统中的矩阵分解
-
-# 决策树
-
-Decision Tree讲的最好的，首推周志华的《机器学习》。这里只对要点进行备忘。
-
-当前样本集合D中，第k类样本所占的比例为$$p_k(k=1,2,\dots,\mid y\mid)$$，则D的信息熵（information entropy）定义为：
-
-$$Ent(D)=-\sum_{k=1}^{\mid y\mid }p_k\log_2p_k$$
-
-假定离散属性a有V个可能的取值，若使用a对D进行划分，则第v个分支结点包含了D中所有在a上取值$$a^v$$的样本，记为$$D^v$$。则信息增益（information gain）为：
-
-$$Gain(D,a)=Ent(D)-\sum_{v=1}^V\frac{\mid D^v\mid }{\mid D\mid }Ent(D^v)$$
-
-增益率（gain ratio）：
-
-$$Gain\_ratio(D,a)=\frac{Gain(D,a)}{IV(a)}$$
-
-其中
-
-$$IV(a)=-\sum_{v=1}^V\frac{\mid D^v\mid }{\mid D\mid }\log_2 \frac{\mid D^v\mid }{\mid D\mid }$$
-
-基尼值：
-
-$$Gini(D)=1-\sum_{k=1}^{\mid y\mid }p_k^2$$
-
-基尼指数：
-
-$$Gini\_index(D,a)=\sum_{v=1}^V\frac{\mid D^v\mid }{\mid D\mid }Gini(D^v)$$
-
-各种决策树和它的划分依据如下表所示：
-
-| 名称 | 划分依据 |
-|:--:|:--:|
-| ID3 | Gain |
-| C4.5 | Gain_ratio |
-| CART | Gini_index |
-
-决策树是一种可以将训练误差变为0的算法，只要每个样本对应一个叶子结点即可，然而这样做会导致过拟合。为了限制树的生长，我们可以加入阈值，当增益大于阈值时才让节点分裂。
-
-参考：
-
-https://mp.weixin.qq.com/s/TTU9LMG8TuB1gzgfCfWjjw
-
-从香农熵到手推KL散度：一文带你纵览机器学习中的信息论
-
 

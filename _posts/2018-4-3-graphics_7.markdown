@@ -356,3 +356,6 @@ Voice Detection包括两个方面：
 
 ## Feature normalization
 
+有时候需要对Feature进行normalization。例如，对MFCC特征减去均值，可以有效提升在噪声环境下的识别率。
+
+

@@ -4,6 +4,46 @@ title:  机器学习（二十二）——EMD, LSA, HMM
 category: ML 
 ---
 
+# 机器学习分类器性能指标（续）
+
+Accuracy和Precision是一对容易混淆的概念。其一般定义如下图所示：
+
+![](/images/article/Accuracy_and_precision.svg)
+
+当然，这个定义和机器学习中的定义无关，主要用于物理和统计领域。
+
+这里再提几个和上述概念类似的ML术语。
+
+**Ground truth**：在有监督学习中，数据是有标注的，以(x, t)的形式出现，其中x是输入数据，t是标注。正确的t标注是ground truth， 错误的标记则不是。（也有人将所有标注数据都叫做ground truth）
+
+由于使用错误的数据，对模型的估计比实际要糟糕，因此使用高质量的数据是很有必要的。
+
+**Golden**：Golden这个术语的使用范围并不局限于ML领域，凡是能够给出“标准答案”的地方，都可以将该答案称为Golden。
+
+比如在DL领域的硬件优化中，通常使用标准算法生成Golden结果，然后用优化之后的运算结果与之比对，以验证优化的正确性。
+
+参考：
+
+https://mp.weixin.qq.com/s/5nnHBKEToepi3dhXLfQBtw
+
+机器学习分类器性能指标详解
+
+https://mp.weixin.qq.com/s/6eESoUvMObXSb2jy_KPRyg
+
+如何评价我们分类模型的性能？
+
+https://mp.weixin.qq.com/s/mOYUCc3xKMfVw81B6zSeNw
+
+7种最常用的机器学习算法衡量指标
+
+https://mp.weixin.qq.com/s/zvxB6VqrSOosgGSViCmjEQ
+
+不止准确率：为分类任务选择正确的机器学习度量指标
+
+https://mp.weixin.qq.com/s/2HKx36bIBZAqvzdXfcSfqA
+
+我们常听说的置信区间与置信度到底是什么？
+
 # Earth mover's distance
 
 推土机距离（EMD）是两个概率分布之间的距离度量的一种方式。如果将区间D的概率分布比作沙堆P，那么$$P_r$$和$$P_\theta$$之间的EMD距离，就是推土机将$$P_r$$改造为$$P_\theta$$所需要的工作量。
@@ -191,20 +231,4 @@ Baum–Welch算法是求解问题3的常用算法，由Baum和Welch于1972年提
 >Leonard Esau Baum，1931～2017，美国数学家，哈佛博士（1958）。国防分析研究所研究员，70年代末，加盟对冲基金——文艺复兴科技公司。
 
 >Lloyd Richard Welch，生于1927年，美国数学家，加州理工博士（1958），南加州大学教授。美国工程院院士，Shannon Award获得者（2003）。
-
-Baum–Welch算法也叫前向后向算法。因为它包含了前向和后向两个步骤。
-
-1:expectation，计算隐变量的概率分布，并得到可观察变量与隐变量联合概率的log-likelihood在前面求得的隐变量概率分布下的期望。这个步骤就是所谓的前向步骤，算法和求解问题2的forward算法是一致的
-
-2:maximization求得使上述期望最大的新的模型参数。若达到收敛条件则退出，否则回到步骤1。
-
-前向后向算法则主要是解决Expectation这步中求隐变量概率分布的一个算法，它利用dynamic programming大大减少了计算量。
-
-此外，训练HMM模型时，也需要对模型参数进行随机初始化，不然和神经网络一样，由于参数没有差异性，而无法进行训练。
-
-参考：
-
-https://blog.csdn.net/xmu_jupiter/article/details/50965039
-
-HMM的Baum-Welch算法和Viterbi算法公式推导细节
 

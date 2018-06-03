@@ -360,3 +360,11 @@ https://mp.weixin.qq.com/s/ajajJ9yJZsOy4Vc0ULBxXg
 
 国际象棋版AlphaZero出来了诶，还开源了Keras实现
 
+https://mp.weixin.qq.com/s/snNvN4FFP0VEZwDA0TAp1w
+
+强化学习训练Chrome小恐龙Dino Run：最高超过4000分
+
+https://mp.weixin.qq.com/s/kmk3mKASZPixA8VS9sipcA
+
+走近流行强化学习算法：最优Q-Learning
+

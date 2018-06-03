@@ -42,6 +42,10 @@ SR领域最牛的高校主要是美国的CMU、Johns Hopkins University、英国
 
 这本书基本上是ASR传统方法的大全了，无论理论还是工程实践都有相当大的篇幅，但也有些老了（2001年）。
 
+《解析深度学习:语音识别实践》，俞栋、邓力著。
+
+这本书算是中文写的比较好的教程了，而且DL的篇幅很大，内容非常新。
+
 ## 教程
 
 http://tts.speech.cs.cmu.edu/courses/11492/schedule.html

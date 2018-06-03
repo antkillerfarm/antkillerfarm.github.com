@@ -256,6 +256,10 @@ https://mp.weixin.qq.com/s/wBuy2-gNrumZ__-H48KEMA
 
 关于知识图谱，各路大神最近都在读哪些论文？
 
+https://mp.weixin.qq.com/s/MG_SrExDkbd1vVGLex0-RA
+
+推荐算法不够精准？让知识图谱来解决
+
 # Kaldi（续）
 
 ## 目录结构

@@ -4,6 +4,80 @@ title:  机器学习（七）——学习理论
 category: ML 
 ---
 
+# SVM（续）
+
+## SMO中拉格朗日乘子的启发式选择方法
+
+所谓的启发式选择方法主要思想是每次选择拉格朗日乘子的时候，优先选择$$0<\alpha_i<C$$的$$\alpha_i$$作优化，因为边界上的$$\alpha_i$$在迭代之后通常不会更改。
+
+给定初始值$$\alpha_i=0$$后，先对所有样例进行循环，循环中碰到违背KKT条件的（不管边界上还是边界内）都进行迭代更新。等这轮过后，如果没有收敛，第二轮就只针对$$0<\alpha_i<C$$的样例进行迭代更新。
+
+软边距SVM问题的KKT条件为：
+
+$$\alpha_i=0 \Leftrightarrow y^{(i)}u_i\ge 1$$
+
+$$0<\alpha_i<C \Leftrightarrow y^{(i)}u_i=1$$
+
+$$\alpha_i=C \Leftrightarrow y^{(i)}u_i\le 1$$
+
+在第一个乘子选择后，第二个乘子也使用启发式方法选择， 第二个乘子的迭代步长大致正比于$$\lvert E_1-E_2\rvert$$，选择能使$$\lvert E_1-E_2\rvert$$最大的$$\alpha_2$$即可。
+
+最后的收敛条件是在界内（$$0<\alpha_i<C$$）的样例都能够遵循KKT条件，且其对应的$$\alpha_i$$只在极小的范围内变动。
+
+## 尾声
+
+除了吴恩达的课程外，以下SVM系列课程也写得不错：
+
+https://mp.weixin.qq.com/s/Ahvp0IAdgK9OVHFXigBk_Q
+
+线性支持向量机（LSVM）
+
+https://mp.weixin.qq.com/s/Q5bFR3vDDXPhtzXlVAE3Rg
+
+对偶支持向量机（DSVM）
+
+https://mp.weixin.qq.com/s/cLovkwwgGJRgSSa1XWZ8eg
+
+核支持向量机（KSVM）
+
+https://mp.weixin.qq.com/s/hfkWgBtSBKW8pT0bi62xzQ
+
+一文详解SVM的Soft-Margin机制
+
+https://mp.weixin.qq.com/s/rU8ijCdbnu4fvM1X2AxQUA
+
+详解烧脑的Support Vector Regression
+
+## 参考
+
+https://mp.weixin.qq.com/s/pXhNRAvJI88tycMsrWhgcQ
+
+机器学习中的算法：支持向量机(SVM)基础
+
+http://www.jianshu.com/p/1aa67a321e33
+
+SVM和Logistic Regression分别在什么时候使用？
+
+https://mp.weixin.qq.com/s/5tUQ9B5juP-Vg8z-gp60rg
+
+详解支持向量机SVM：快速可靠的分类算法
+
+https://mp.weixin.qq.com/s/MfYRipBX4la5jEG-ZMBhEw
+
+详解LinearSVM
+
+https://mp.weixin.qq.com/s/AaTlJTWR3lWdx3_gGurVeQ
+
+从大间隔分类器到核函数：全面理解支持向量机
+
+https://www.zhihu.com/question/41066458
+
+现在还有必要对SVM深入学习吗？
+
+https://mp.weixin.qq.com/s?__biz=MzU0MDQ3MDk3NA==&mid=2247483671&idx=1&sn=0348314f21cb5be0f727054334f58445
+
+libsvm中的svm-toy尝试
+
 # 学习理论
 
 ## 偏差和方差
@@ -175,51 +249,3 @@ $$m\ge O\left(\frac{1}{\gamma^2}\log\frac{2^{64d}}{\delta}\right)=O\left(\frac{d
 这里的下标$$\gamma,\delta$$表示一些依赖于它们的常量。从上式可以看出需要的训练样本的数量和预测模型的参数个数成线性关系。
 
 以上就是和ERM相关的算法的理论知识，至于其他非ERM算法理论仍在研究之中。
-
-下面是$$\mathcal{H}$$参数化的问题。一个线性分类器可以写为：
-
-$$h_\theta(x)=1\{\theta_0+\theta_1x_1+\dots+\theta_nx_n\ge 0\}$$
-
-这种形式有$$n+1$$个参数。
-
-但它也可以写为：
-
-$$h_{u,v}(x)=1\{(u_0^2-v_0^2)+(u_0^2-v_0^2)x_1+\dots+(u_n^2-v_n^2)x_n\ge 0\}$$
-
-这种形式有$$2n+2$$个参数。
-
-显然这两种形式在数学上是等价的，但参数的个数却不同。为此我们引入Vapnik-Chervonenkis维度（简称VC维度），用以刻画参数的个数。
-
-![](/images/article/VC.png)
-
-如上图所示，3个样本点有以上几种分布方式。毫无疑问，它们都能被$$h_\theta(x)=1\{\theta_0+\theta_1x_1+\theta_2x_2\ge 0\}$$所分割，且它们的训练误差为0。但如果是4个点的话，就不能无训练误差的分割了。我们将这种最大分割的个数称作VC维度，这里$$VC(\mathcal{H})=3$$。
-
-需要注意的是，VC维度表征的是模型的最大切割能力，而不是针对所有的情况都成立。比如下图所示的三个点，就不可以被$$h_\theta(x)=1\{\theta_0+\theta_1x_1+\theta_2x_2\ge 0\}$$所分割，但这并不影响$$h_\theta(x)$$的VC维度值。
-
-![](/images/article/VC_2.png)
-
-如果模型能切割任意大小的样本集，则$$VC(\mathcal{H})=\infty$$。
-
-我们将VC维度值替换$$\mathcal{H}$$为有限集时的$$\lvert\mathcal{H}\rvert$$，可得以下相关结论：
-
-令$$VC(\mathcal{H})=d$$，则：
-
-$$\lvert\varepsilon(h)-\hat\varepsilon(h)\rvert\le O\left(\sqrt{\frac{d}{m}\log\frac{m}{d}+\frac{1}{m}\log\frac{1}{\delta}}\right)$$
-
-$$\varepsilon(\hat h)\le \varepsilon(h^*)+O\left(\sqrt{\frac{d}{m}\log\frac{m}{d}+\frac{1}{m}\log\frac{1}{\delta}}\right)$$
-
-$$m=O_{\gamma,\delta}(d)$$
-
-以上公式的其他条件，与$$\mathcal{H}$$为有限集时相同，这里不再赘述。
-
-# 规则化和模型选择
-
-对于多项回归模型$$h_\theta(x)=g(\theta_0+\theta_1x_1+\dots+\theta_kx_k)$$来说，如何选择合适的k值呢？
-
-或者，我们是选择局部权重回归（locally weighted regression），还是SVM呢？
-
-我们定义算法模型的集合为$$\mathcal{M}=\{M_1,\dots,M_d\}$$。其中的$$M_i$$为不同的算法模型，比如SVM、神经网络等等。
-
-
-
-

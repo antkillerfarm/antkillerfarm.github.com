@@ -4,7 +4,33 @@ title:  机器学习（六）——SVM（3）
 category: ML 
 ---
 
-## 序列最小优化方法（续）
+## 序列最小优化方法
+
+序列最小优化方法（Sequential Minimal Optimization，SMO）算法由Microsoft Research的John C. Platt在1998年提出，并成为最快的二次规划优化算法，特别针对SVM和数据稀疏时性能更优。关于SMO最好的资料就是他本人写的《Sequential Minimal Optimization A Fast Algorithm for Training Support Vector Machines》。
+
+>注：John Carlton Platt，1963年生，14岁进入加州州立大学长滩分校，加州理工学院博士。先后供职于Synaptics和Microsoft Research，现为Google首席科学家。
+
+针对之前列出的SVM对偶优化问题：
+
+$$\begin{align}
+&\operatorname{max}_\alpha & & W(\alpha)=\sum_{i=1}^m\alpha_i-\frac{1}{2}\sum_{i,j=1}^my^{(i)}y^{(j)}\alpha_i\alpha_j\langle x^{(i)},x^{(j)}\rangle \tag{1}\\
+&\operatorname{s.t.}& & 0\le\alpha_i\le C,i=1,\dots,m \tag{2}\\
+& & & \sum_{i=1}^m\alpha_iy^{(i)}=0 \tag{3}
+\end{align}$$
+
+我们可以考虑使用坐标上升法，即首先固定除$$\alpha_1$$以外的所有参数,然后在$$\alpha_1$$上求极值。然而由于约束3的存在，把除$$\alpha_1$$以外的所有参数固定，实际上也就把$$\alpha_1$$给固定了。因此，需要一定的技巧来处理，比如:
+
+>Repeat till convergence:{   
+>>1.挑选一对$$\alpha_i$$和$$\alpha_j$$（挑选的规则可以是启发式的，以收敛快为准则）   
+>>2.固定除$$\alpha_i$$和$$\alpha_j$$之外的其余参数，以确定W极值条件下的$$\alpha_i$$和$$\alpha_j$$   
+>
+>}
+
+这里假设我们固定$$\alpha_3,\dots,\alpha_m$$，来优化$$\alpha_1$$和$$\alpha_2$$。由约束3可得：
+
+$$\alpha_1y^{(1)}+\alpha_2y^{(2)}=-\sum_{i=3}^m\alpha_iy^{(i)}=\zeta\tag{4}$$
+
+因为$$\alpha_3,\dots,\alpha_m$$的值已经固定，所以$$\zeta$$实际上是个常数。
 
 同理：
 
@@ -198,75 +224,4 @@ $$w^{new}=w+y^{(1)}(\alpha_1^{new}-\alpha_1)x^{(1)}+y^{(2)}(\alpha_2^{new}-\alph
 
 K函数最大的作用不在于计算线性SVM，而在于计算非线性的SVM。
 
-## SMO中拉格朗日乘子的启发式选择方法
-
-所谓的启发式选择方法主要思想是每次选择拉格朗日乘子的时候，优先选择$$0<\alpha_i<C$$的$$\alpha_i$$作优化，因为边界上的$$\alpha_i$$在迭代之后通常不会更改。
-
-给定初始值$$\alpha_i=0$$后，先对所有样例进行循环，循环中碰到违背KKT条件的（不管边界上还是边界内）都进行迭代更新。等这轮过后，如果没有收敛，第二轮就只针对$$0<\alpha_i<C$$的样例进行迭代更新。
-
-软边距SVM问题的KKT条件为：
-
-$$\alpha_i=0 \Leftrightarrow y^{(i)}u_i\ge 1$$
-
-$$0<\alpha_i<C \Leftrightarrow y^{(i)}u_i=1$$
-
-$$\alpha_i=C \Leftrightarrow y^{(i)}u_i\le 1$$
-
-在第一个乘子选择后，第二个乘子也使用启发式方法选择， 第二个乘子的迭代步长大致正比于$$\lvert E_1-E_2\rvert$$，选择能使$$\lvert E_1-E_2\rvert$$最大的$$\alpha_2$$即可。
-
-最后的收敛条件是在界内（$$0<\alpha_i<C$$）的样例都能够遵循KKT条件，且其对应的$$\alpha_i$$只在极小的范围内变动。
-
-## 尾声
-
-除了吴恩达的课程外，以下SVM系列课程也写得不错：
-
-https://mp.weixin.qq.com/s/Ahvp0IAdgK9OVHFXigBk_Q
-
-线性支持向量机（LSVM）
-
-https://mp.weixin.qq.com/s/Q5bFR3vDDXPhtzXlVAE3Rg
-
-对偶支持向量机（DSVM）
-
-https://mp.weixin.qq.com/s/cLovkwwgGJRgSSa1XWZ8eg
-
-核支持向量机（KSVM）
-
-https://mp.weixin.qq.com/s/hfkWgBtSBKW8pT0bi62xzQ
-
-一文详解SVM的Soft-Margin机制
-
-https://mp.weixin.qq.com/s/rU8ijCdbnu4fvM1X2AxQUA
-
-详解烧脑的Support Vector Regression
-
-## 参考
-
-https://mp.weixin.qq.com/s/pXhNRAvJI88tycMsrWhgcQ
-
-机器学习中的算法：支持向量机(SVM)基础
-
-http://www.jianshu.com/p/1aa67a321e33
-
-SVM和Logistic Regression分别在什么时候使用？
-
-https://mp.weixin.qq.com/s/5tUQ9B5juP-Vg8z-gp60rg
-
-详解支持向量机SVM：快速可靠的分类算法
-
-https://mp.weixin.qq.com/s/MfYRipBX4la5jEG-ZMBhEw
-
-详解LinearSVM
-
-https://mp.weixin.qq.com/s/AaTlJTWR3lWdx3_gGurVeQ
-
-从大间隔分类器到核函数：全面理解支持向量机
-
-https://www.zhihu.com/question/41066458
-
-现在还有必要对SVM深入学习吗？
-
-https://mp.weixin.qq.com/s?__biz=MzU0MDQ3MDk3NA==&mid=2247483671&idx=1&sn=0348314f21cb5be0f727054334f58445
-
-libsvm中的svm-toy尝试
 

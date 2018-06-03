@@ -240,4 +240,15 @@ https://mp.weixin.qq.com/s/CGe1MAKRiLtaFFyVOkauhw
 
 16岁高中生夺冠Kaggle地标检索挑战赛！
 
+https://mp.weixin.qq.com/s/cQtXvOjSXFc4YKn7ANBc_w
+
+谷歌大脑提出自动数据增强方法AutoAugment：可迁移至不同数据集
+
+https://mp.weixin.qq.com/s/YJFA9WbeeHbFhp7T2vhMog
+
+超酷的神经网络合成动物运动动画，解救动画师！
+
+https://mp.weixin.qq.com/s/1wqguIqDS4FNsS67Yj77Qw
+
+牛津大学&Emotech首次严谨评估语义分割模型对对抗攻击的鲁棒性
 

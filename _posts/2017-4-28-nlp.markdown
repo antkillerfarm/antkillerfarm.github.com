@@ -83,6 +83,10 @@ https://mp.weixin.qq.com/s/FNKFbUk0A6meXdE-HpwfvQ
 
 Python自然语言处理实战书籍和代码《Natural Language Processing in Action》
 
+https://github.com/jacobeisenstein/gt-nlp-class/tree/master/notes
+
+乔治亚理工大学Jacob Eisenstein教授写的教材
+
 ## 网站
 
 http://www.52nlp.cn/

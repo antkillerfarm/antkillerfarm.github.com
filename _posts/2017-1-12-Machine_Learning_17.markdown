@@ -1,8 +1,20 @@
 ---
 layout: post
-title:  机器学习（十七）——隐式狄利克雷划分
+title:  机器学习（十七）——独立成分分析, 隐式狄利克雷划分
 category: ML 
 ---
+
+# 独立成分分析
+
+这一节我们将讲述独立成分分析（Independent Components Analysis，ICA）算法。
+
+首先，我们介绍一下经典的鸡尾酒宴会问题(cocktail party problem)。
+
+假设在party中有n个人，他们可以同时说话，我们也在房间中放置了n个声音接收器(Microphone)用来记录声音。宴会过后，我们从n个麦克风中得到了m组数据$$x^{(i)}$$，其中的i表示采样的时间顺序。由于宴会上人们的说话声是混杂在一起的，因此，采样得到的声音也是混杂不清的，那么我们是否有办法从混杂的数据中，提取出每个人的声音呢？
+
+为了更为正式的描述这个问题，我们假设数据$$s\in R^n$$是由n个独立的源生成的。我们接收到的信号可写作：$$x=As$$。其中，A被称为混合矩阵（mixing matrix）。在这个问题中，$$s^{(i)}$$是一个n维向量，$$s_j^{(i)}$$表示第j个说话者在i时刻的声音。同理，$$x_j^{(i)}$$表示第j个麦克风在i时刻的记录下的数据。
+
+我们把$$W=A^{-1}$$称作unmixing matrix。我们的目标就是找到W，然后利用$$s=Wx$$，求得s。我们使用$$w_i^T$$表示W矩阵的第i行，因此：$$s_j^{(i)}=w_j^Tx^{(i)}$$。
 
 ## ICA的不确定性
 
@@ -172,34 +184,4 @@ $$\alpha$$的大小，决定了马氏链的收敛速度。$$\alpha$$越大，收
 $$\alpha(i,j) = \min\left\{\frac{p(j)q(j,i)}{p(i)q(i,j)},1\right\}$$
 
 >注：Wilfred Keith Hastings，1930~2016，美国统计学家，多伦多大学博士，维多利亚大学教授。
-
-## Gibbs Sampling
-
-这个算法虽然以Gibbs命名，但却是Geman兄弟于1984年研究Gibbs random field时，发现的算法。
-
->注：Josiah Willard Gibbs，1839~1903，美国科学家。他在物理、化学和数学方面都有重大理论贡献。耶鲁大学博士和教授。统计力学的创始人。
-
->Donald Jay Geman，1943年生，美国数学家。美国西北大学博士，布朗大学教授。随机森林算法的早期研究者之一。
-
->Stuart Alan Geman，1949年生，美国数学家。MIT博士，约翰霍普金斯大学教授。美国科学院院士。最早将Markov random field（MRF）应用于机器视觉和机器学习。
-
-因为高维空间中，沿坐标轴方向上的两点之间的转移，满足细致平稳条件。因此，Gibbs Sampling的核心就是沿坐标轴循环迭代采样，该算法收敛之后的采样点即符合指定概率分布。
-
-这里需要特别指出的是，Gibbs Sampling比Metropolis–Hastings算法高效的原因在于：Gibbs Sampling每次沿坐标轴的转移是必然会被接受的，即$$\alpha=1$$。
-
-## Unigram Model
-
-假设我们的词典中一共有V个词$$v_1,v_2,\cdots v_V$$，那么最简单的Unigram Model是定义一个V面的骰子，每抛一次骰子，抛出的面就对应产生一个词。
-
-频率学派的Unigram Model如下图：
-
-![](/images/article/unigram-model.jpg)
-
-贝叶斯学派的Unigram Model如下图：
-
-![](/images/article/dirichlet-multinomial-unigram.jpg)
-
-这里使用Dirichlet分布的原因在于，数据采用多项分布，而Dirichlet分布正好是多项分布的共轭先验分布。
-
-$$Dir(\overrightarrow{p}\mid \overrightarrow{\alpha})+MultCount(\overrightarrow{n})=Dir(\overrightarrow{p}\mid \overrightarrow{\alpha}+\overrightarrow{n})$$
 
