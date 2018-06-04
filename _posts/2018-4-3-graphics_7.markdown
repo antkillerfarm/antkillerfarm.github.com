@@ -1,10 +1,28 @@
 ---
 layout: post
-title:  图像处理理论（七）——经典目标跟踪算法, 从BOW到SPM, ILSVRC 2010考古
+title:  图像处理理论（七）——Viola-Jones, 经典目标跟踪算法, 从BOW到SPM, ILSVRC 2010考古
 category: graphics 
 ---
 
-# Viola-Jones（续）
+# Viola-Jones
+
+Viola-Jones方法由Paul Viola和Michael Jones于2001年提出。
+
+>Paul Viola，MIT本科（1988）+博士（1995）。先后在微软、Amazon担任研究员。
+
+>Michael Jones，MIT博士（1997）。现为Mitsubishi electric research laboratories研究员。
+
+论文：
+
+《Rapid Object Detection using a Boosted Cascade of Simple Features》
+
+《Robust real-time face detection》
+
+《An Extended Set of Haar-like Features for Rapid Object Detection》
+
+《Learning Multi-scale Block Local Binary Patterns for Face Recognition》
+
+《Implementing the Viola-Jones Face Detection Algorithm》
 
 ## 概述
 
@@ -357,11 +375,4 @@ Voice Detection包括两个方面：
 ## Feature normalization
 
 有时候需要对Feature进行normalization。例如，对MFCC特征减去均值，可以有效提升在噪声环境下的识别率。
-
-## Tri-phone Models
-
-英语一般包含43个音素，因此Tri-phone共有$$43^3\approx 80K$$种不同组合。
-
-但是这些组合的概率是众寡悬殊的，有些组合很常见，而有些组合很罕见。因此我们需要合并相似的发音组合。这通常采用CART决策树来进行聚类。
-
 

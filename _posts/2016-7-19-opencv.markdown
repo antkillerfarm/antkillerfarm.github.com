@@ -334,6 +334,10 @@ https://mp.weixin.qq.com/s/V-msRCrMDUD5nwp6y0tiPQ
 
 OpenCV人脸检测与三角剖分绘制
 
+https://mp.weixin.qq.com/s/mqgKVvZWnrNlImbTmay5PA
+
+OpenCV实现图像连通组件标记与分析
+
 # GNU Octave
 
 GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。

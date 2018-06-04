@@ -214,7 +214,7 @@ $$\min_f \sum_{i=1}^nV(f(\hat x_i),\hat y_i)+\lambda R(f)$$
 
 其中的$$\lambda$$表示规则化因子的权重。
 
->注：稀疏矩阵并不一定是病态矩阵，比如单位阵就不是病态的。但是从系统论的角度，高维空间中样本量的稀疏，的确会带来很大的不确定性。
+>注：稀疏矩阵并不一定是病态矩阵，比如单位阵就不是病态的。但是从系统论的角度，高维空间中样本量的稀疏，的确会带来很大的不确定性。可类比下围棋，棋子过于稀疏的地方，只能称作势力范围，而不能称作实地。
 
 函数V（又叫做Fit measure）和R（又叫做Entropy measure），在不同的算法中，有不同的取值。
 
@@ -249,6 +249,8 @@ $$L_1$$ regularization又被称为Lasso（least absolute shrinkage and selection
 $$\min_f \sum_{i=1}^nV(f(\hat x_i),\hat y_i)+\lambda \|\beta\|_1 + \eta  \|\beta\|_2$$
 
 这种方法也被称为弹性网络回归（ElasticNet Regression）。
+
+规则化同时也提供了一种衡量特征重要度的方法：**loss函数的值，如果显著小于规则项，则说明该特征不太重要。**
 
 参见：
 

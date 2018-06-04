@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NLP（二）, Storm
+title:  NLP（二）, Storm, LSTM Speech Recognition实战
 category: AI 
 ---
 

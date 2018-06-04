@@ -1,10 +1,40 @@
 ---
 layout: post
-title:  图像处理理论（四）——霍夫变换, HOG, Haar, SIFT
+title:  图像处理理论（四）——Schmid滤波, 霍夫变换, HOG, Haar, SIFT
 category: graphics 
 ---
 
-# 霍夫变换（续）
+# Schmid滤波
+
+Schmid滤波器是一种类Gabor滤波器。其计算公式为：
+
+$$F(r,\sigma,\tau)=\frac{1}{Z}\cos\left(\frac{2\pi\tau r}{\sigma}\right)e^{-\frac{r^2}{2\sigma^2}}$$
+
+下图是Schmid滤波器和Gabor滤波器的“核”图像。“核”图像是滤波器“核”函数的图像化展示。
+
+![](/images/article/gabor4.png)
+
+其中，前13个是Schmid滤波器，后8个是Gabor滤波器。“核”图像中的白色部分，实际上就是该滤波器的带通部分。
+
+从中可以看出，Gabor滤波器有方向性，而Schmid滤波器是**各向同性**的环状滤波。
+
+## 参考
+
+2010年IEEE论文：《Constructing models for content-based image retrieval》
+
+>作者：Cordelia Schmid，女，卡尔斯鲁厄理工学院博士。现在INRIA（法国国家信息与自动化研究所）从事研究工作。
+
+# 霍夫变换
+
+Hough Transform最早是Paul V.C. Hough于1962年在一篇专利中提出的。1972年，Richard O. Duda和Peter E. Hart对其进行了扩展，并发表论文《Use of the Hough Transformation to Detect Lines and Curves in Pictures》。但是直到1981年，Dana H. Ballard发表《Generalizing the Hough transform to detect arbitrary shapes》之后，它才被人广泛使用。
+
+>注：Paul V.C. Hough，生平不详。只知道是个物理学家，曾在Brookhaven National Laboratory工作过。
+
+>Richard O. Duda，MIT博士，圣何塞州立大学教授。曾供职于SRI International。
+
+>Peter E. Hart，斯坦福大学博士。SRI International研究员。
+
+>Dana Harry Ballard，1946年生，UCI博士，德克萨斯大学教授。
 
 ![](/images/article/R_theta_line.gif)
 
@@ -214,24 +244,4 @@ http://blog.csdn.net/kezunhai/article/details/11579785
 离散空间的极值点并不是真正的极值点，上图显示了二维函数离散空间得到的极值点与连续空间极值点的差别。利用已知的离散空间点插值得到的连续空间极值点的方法叫做子像素插值（Sub-pixel Interpolation）。
 
 为了使描述符具有旋转不变性，需要利用图像的局部特征为给每一个关键点分配一个基准方向。使用图像梯度的方法求取局部结构的稳定方向。对于在DOG金字塔中检测出的关键点，采集其所在高斯金字塔图像$$3\sigma$$邻域窗口内像素的梯度和方向分布特征。
-
-在完成关键点的梯度计算后，使用直方图统计邻域内像素的梯度和方向：
-
-![](/images/article/sift.jpg)
-
-方向直方图的峰值则代表了该特征点处邻域梯度的方向，以直方图中最大值作为该关键点的主方向。为了增强匹配的鲁棒性，只保留峰值大于主方向峰值80％的方向作为该关键点的辅方向。
-
-因此，对于有多个峰值的关键点位置，在相同位置和尺度将会有多个关键点被创建。这些关键点梯度相同，但方向不同。仅有15％的关键点被赋予多个方向，但可以明显的提高关键点匹配的稳定性。
-
-实际编程实现中，就是把该关键点复制成多份关键点，并将方向值分别赋给这些复制后的关键点，并且离散的梯度方向直方图要进行插值拟合处理，来求得更精确的方向角度值，检测结果如下图所示：
-
-![](/images/article/sift_2.jpg)
-
-通过以上步骤，对于每一个关键点，拥有三个信息：**位置、尺度以及方向**。
-
-## 关键点特征描述
-
-接下来就是为每个关键点建立一个描述符，用一组向量将这个关键点描述出来，使其不随各种变化而改变，比如光照变化、视角变化等等。这个描述子不但包括关键点，也包含关键点周围对其有贡献的像素点，并且描述符应该有较高的独特性，以便于提高特征点正确匹配的概率。
-
-Lowe建议描述子使用在关键点尺度空间内4*4的窗口中计算的8个方向的梯度信息，共4x4x8=128维向量表征。
 

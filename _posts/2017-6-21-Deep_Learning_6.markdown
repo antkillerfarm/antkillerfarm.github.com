@@ -125,6 +125,10 @@ https://mp.weixin.qq.com/s/m_cOjUHwvW496Gv9_aYgpA
 
 LSTM和循环神经网络基础教程
 
+https://blog.csdn.net/taoqick/article/details/79475350
+
+学会区分RNN的output和state
+
 # 神经元激活函数进阶
 
 在《深度学习（一、二）》中，我们探讨了ReLU相对于sigmoid函数的改进，以及一些保证深度神经网络能够训练的措施。然而即便如此，深度神经网络的训练仍然是一件非常困难的事情，还需要更多的技巧和方法。

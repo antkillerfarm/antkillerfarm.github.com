@@ -252,3 +252,7 @@ https://mp.weixin.qq.com/s/1wqguIqDS4FNsS67Yj77Qw
 
 牛津大学&Emotech首次严谨评估语义分割模型对对抗攻击的鲁棒性
 
+https://mp.weixin.qq.com/s/v8I8kBnjcctGjCv7nAscrg
+
+为打造无人仓，菜鸟自研了一套柔性自动化技术
+

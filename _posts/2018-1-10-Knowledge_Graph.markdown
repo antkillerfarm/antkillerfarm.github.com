@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  知识图谱参考资源, Kaldi（2）
+title:  知识图谱参考资源, Kaldi（3）
 category: resource 
 ---
 
@@ -262,143 +262,20 @@ https://mp.weixin.qq.com/s/MG_SrExDkbd1vVGLex0-RA
 
 # Kaldi（续）
 
-## 目录结构
+## 数据增强
 
-kaldi的调用层次可分为三级：
+数据集的基础数据往往是单一的，我们怎么才能让数据变多呢？
 
-1.**脚本**。包括shell脚本和perl脚本。主要在egs/wsj文件夹下。
+目前在基础数据上增加数据的方法主要有：加性噪声，乘性噪声，便音量，变语速等。这四种方法kaldi里都有对应的脚本干这些事情。
 
-2.**工具**。一些可执行文件。在src/XXXbin文件夹下。
+1.加性噪声。比如不同风格的纯音乐和歌曲，不同场景的环境噪声。加冲击响应或者加性噪声的脚本位于egs/aspire/s5/local/multi_condition
 
-3.**算法实现**。在src/XXX文件夹下。
+2.乘性噪声。不同场景的信道情况，混响，衰减等因素。
 
-工具和算法实现基本都是C/C++写的。外部工具在tools文件夹下，主要是openfst、sctk、sph2pipe。
+3.变音量跟变语速：
 
-## 术语
+音量脚本：egs/wsj/s5/utils/data/perturb_data_dir_volume.sh
 
-LM：language model
+语速脚本：egs/wsj/s5/utils/data/perturb_data_dir_speed_3way.sh
 
-KWS：Keyword Search
-
-CMVN：cepstral mean and variance
-
-G2P：Grapheme-to-Phoneme
-
-WSJ：Wall Street Journal
-
-## OpenFst
-
-OpenFst是一个构造、合并、优化和搜索加权有限状态机FST的库。
-
-官网：
-
-http://www.openfst.org/
-
-## SCTK
-
-Speech Recognition Scoring Toolkit是NIST（National Institute of Standards and Technology, 美国国家标准与技术协会）提出的一套工具集。
-
-官网：
-
-https://github.com/usnistgov/SCTK
-
-以下网页包含了SCTK支持的几种数据格式：trn, txt, stm, ctm。这在Kaldi中用的比较多。
-
-http://www1.icsi.berkeley.edu/Speech/docs/sctk-1.2/infmts.htm
-
-## sph2pipe
-
-Kaldi里的音频默认是16k采样率，16bits，单通道。如果是其他参数，需要根据配置来修改。此外，kaldi数据处理部分还有个音量跟语速的脚本，这部分在kaldi里通过sox来实现的。
-
-Kaldi里有很大一部分数据是LDC的，比如timit，rm，wsj等。它们虽然是wave的格式，但其实不是真正的wav格式，其实是nist的SPHERE格式，kaldi里通过sph2pipe这个来把格式转成真正的wave格式。
-
-如果有人要在windows下看这些音频，可以在linux下通过sph2pipe转换下，或者有个叫voicebox的matlab程序里有个readsph的程序来转下。
-
-此外，kaldi里librispeech其实是FLAC格式，这是一个无损的格式，也需要通过flac命令来转成wave来处理。
-
-官网：
-
-https://www.ldc.upenn.edu/language-resources/tools/sphere-conversion-tools
-
-## SRILM
-
-SRILM - The SRI Language Modeling Toolkit是由SRI International提出的一套工具集，主要用于创建和使用统计语言模型。
-
-官网：
-
-http://www.speech.sri.com/projects/srilm/
-
->SRI International是一家非营利的研究机构，创建于1946年。SRI是Stanford Research Institute的缩写。
-
-thchs30中的lm文件（例如lm_phone/phone.3gram.lm）就是由SRILM生成的。
-
-参考：
-
-http://www.52nlp.cn/language-model-training-tools-srilm-details
-
-语言模型训练工具SRILM详解
-
-## ARPA文件格式
-
-SRILM生成的lm文件是ARPA文件格式。
-
-{% highlight text %}
-\data\
-ngram 1=64000
-ngram 2=522530
-ngram 3=173445
-
-\1-grams:
--5.24036     'cause  -0.2084827
--4.675221    'em     -0.221857
--4.989297    'n      -0.05809768
--5.365303    'til    -0.1855581
-{% endhighlight %}
-
-这个文件的头部比较好懂，不解释。
-
-1-grams部分中每一条包括了3项，其中第二项显然是条目文本本身。
-
-第一项表示ngram的条件概率，即$$P(word_N \mid word_1，word_2，\dots，word_{N-1})$$。
-
-第三项表示回退（backoff）概率。
-
-下面我们举例说明条件概率和回退概率的用法。
-
-假设arpa的最高元是3元，则句子ABCDEF发生的概率为：
-
-$$P(ABCDEF)=P(A)*P(B\mid A)*P(C\mid AB)*P(D\mid BC)*P(E\mid CD)*(F\mid DE)$$
-
-其中，P(A)通过访问arpa中的1-grams项获得，$$P(B\mid A)$$通过访问2-grams项获得，其他的概率通过访问3-grams项获得。
-
-P(A)的计算直接找对应A的文法项获得概率即可。如果2-grams中存在“A B”项，$$P(B\mid A)$$的概率也很容易获得，但是如果“A B”词组在2-grams中不存在，我们就需要利用回退概率计算$$P(B\mid A)$$，计算公式为$$P(B\mid A)=\alpha(A)*P(B)$$，其中的$$\alpha(A)$$就表示A的回退概率。
-
-类似地，可以获得三元词组的概率计算公式：
-
-$$P(C│AB)=\left\{\begin{matrix}P(C\mid AB) \qquad ABC存在
-\\ \alpha(AB)*P(C\mid B) \qquad BC存在
-\\ \alpha(AB)*\alpha(B)*P(C) \qquad 其他
-\end{matrix}\right.$$
-
-参考：
-
-https://blog.csdn.net/lv_xinmy/article/details/8595561
-
-ARPA的n-gram语言模型格式
-
-https://blog.csdn.net/SAJIAHAN/article/details/52901422
-
-语言模型-ARPA格式
-
-https://blog.csdn.net/yutianzuijin/article/details/78756130
-
-arpa2fst原理详解
-
-https://www.jianshu.com/p/ab356b3c889e
-
-Kaldi(A5)语言模型及HCLG.fst生成
-
-https://blog.csdn.net/nihaomafb/article/details/48009695
-
-语言模型Katz backoff以及HMM模型
-
+kaldi的变音量跟变语速都是借助sox这个工具来实现的，具体的命令大家可以参考脚本，音量的变化范围从1.0/8到2；语速的变化范围就0.9,1,1.1。

@@ -252,6 +252,10 @@ http://www.math.pku.edu.cn/teachers/ganr/course/pr2010/
 
 北京大学：模式识别
 
+http://slazebni.cs.illinois.edu/spring17/
+
+CS 598 LAZ: Cutting-Edge Trends in Deep Learning and Recognition。这是一门研究生的课程，很有深度和广度。
+
 # 数据库
 
 https://blog.csdn.net/zhengzhb/article/details/8590390

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Pytorch, PaddlePaddle, MXNet, Kaldi（1）
+title:  Pytorch, PaddlePaddle, MXNet, Kaldi（2）
 category: AI 
 ---
 
@@ -284,131 +284,37 @@ MXNet开放支持Keras，高效实现CNN与RNN的分布式训练
 
 # Kaldi
 
-Kaldi是一个语音识别的工具包。它由Daniel Povey于2009年创建。
+## nnet（续）
 
->Daniel Povey，Johns Hopkins University副教授。   
->个人主页：   
->http://danielpovey.com/
+kaldi的nnet1和nnet2是以层设计为基础的，也即当你新增加一种神经网络层时需要自己定义它的结构，都有哪些变量，正向怎么算，反向误差怎么传播等等，并且过于复杂的连接方式很难支持。
 
-官网：
+nnet1和nnet2的模型文件的格式是不兼容的。可以使用steps/nnet2/convert_nnet1_to_nnet2.sh将nnet1的模型文件转换成nnet2的模型文件。
 
-https://github.com/kaldi-asr/kaldi
+而kaldi的nnet3和CNTK以及TensorFlow都是以图结构为基础的，通过配置文件实现对网络连接方式的定义，数据就像流水一样在你定义的网络图中游走，并自己实现误差的反向传播。
 
-文档：
+kaldi的DL实现，**不仅具有inference的能力，也具有train的能力**。
 
-http://kaldi-asr.org/doc/
+kaldi中cnn的例程较少，而且其最新的cnn实现单元TimeHeightConvolutionComponent与机器视觉那边的cnn实现有着很大的区别, 如果按照机器视觉中的cnn实现去做语音识别，那么训练的计算复杂度太高；kaldi最初的cnn实现单元ConvolutionComponent的设计思路和机器视觉cnn实现的思路是一致的，但是由于计算复杂度太高，现在已经打算废弃。
 
-此外，Daniel的主页上也有一些教程：
+值得注意的是，除了TensorFlow提供的Speech Commands Datasets之外，其他的数据集基本都是以一句话作为训练数据的最小单元。由于训练数据存在着语音和文字之间的帧对齐问题，因此即便是DL方案，通常也需要利用由传统方法生成的粗糙模型，进行相关的对齐操作。
 
-http://danielpovey.com/kaldi-lectures.html
+## online
 
-数据：
+online识别通常会通过麦克风来获取音频，这部分一般是系统函数调用获取得到音频数据，一般系统采用16k采样率，16bits，单通道的音频。当然也可能会用到高采样率等，但对于识别来说已经足够。
 
-http://www.openslr.org/
+kaldi里的在线识别有2个版本，online跟online2。
 
-这是Daniel Povey为了Kaldi中的示例所创建的资源网站。它还有个国内的镜像：
+online是很早的一些版本，通过麦克风获取数据，然后得到文本结果，但只支持gmm的模型。
 
-http://cn-mirror.openslr.org/
+online2版本没有麦克风获取数据这部分，就直接是音频文件到识别结果，这里支持nnet2跟nnet3的模型。
 
 参考：
 
-https://www.eleanorchodroff.com/tutorial/kaldi/kaldi-intro.html
+https://blog.csdn.net/lijin6249/article/details/51838936
 
-这是Eleanor Chodroff写的kaldi指南。
+基于kaldi的在线中文识别，online的操作介绍
 
->Eleanor Chodroff，New York University本科（2012）+Johns Hopkins University硕博（2014，2017）。现为Northwestern University博士后。
+https://mp.weixin.qq.com/s/Scq8LumtTisPAdRE4CYPdA
 
-https://blog.csdn.net/wbgxx333
-
-一个语音识别+Kaldi的blog。这个博主还写了一个《kaldi资料归纳和总结》的文章，可加入博主的QQ群，在群文件中获得。
-
-http://jrmeyer.github.io/asr/2016/12/15/DNN-AM-Kaldi.html
-
-How to Train a Deep Neural Net Acoustic Model with Kaldi
-
-## 编译
-
-1.检查依赖。
-
-{% highlight bash %}
-cd tools
-extras/check_dependencies.sh
-{% endhighlight %}
-
-根据提示，缺什么就装什么。
-
-2.编译tools文件夹
-
-{% highlight bash %}
-make -j 4
-{% endhighlight %}
-
-3.编译src文件夹
-
-{% highlight bash %}
-cd ../src
-sudo apt install libatlas-base-dev
-./configure --shared
-make depend -j 4
-make -j 4
-{% endhighlight %}
-
-## 运行示例
-
-示例放在egs文件夹下，目前已经有很多示例了。这里以thchs30为例进行介绍。这里主要参考了下文：
-
-https://blog.csdn.net/shichaog/article/details/73655628
-
-kaldi在线中文识别系统搭建
-
-thchs30下有个s5文件夹。Daniel教程中提到，在原来的老示例中还有s1、s2这样的文件夹，因此这个5姑且可以看成版本号吧。
-
-**Kaldi只是一个工具包，而非框架。**因此，它并不能直接运行，而只能被别人调用。
-
-在示例中，一般是通过run.sh对Kaldi的功能进行调用。
-
-1.下载数据
-
-http://cn-mirror.openslr.org/18/
-
-2.修改cmd.sh。
-
-{% highlight bash %}
-export train_cmd=run.pl
-export decode_cmd="run.pl --mem 4G"
-export mkgraph_cmd="run.pl --mem 8G"
-export cuda_cmd="run.pl --gpu 1"
-#export train_cmd=queue.pl
-#export decode_cmd="queue.pl --mem 4G"
-#export mkgraph_cmd="queue.pl --mem 8G"
-#export cuda_cmd="queue.pl --gpu 1"
-{% endhighlight %}
-
-3.修改run.sh中的数据路径，并运行之。
-
-## 不成功的探险
-
-上文中被替换的queue.pl实际上是run.pl的分布式计算版本，用到了SLURM等技术。
-
-`sudo apt install slurm-wlm-torque slurm-wlm-doc`
-
-SLURM和Torque都是job scheduler。他们的官网分别是：
-
-https://slurm.schedmd.com/
-
-http://www.adaptivecomputing.com/products/open-source/torque/
-
-3.在浏览器中运行/usr/share/doc/slurm-wlm-doc/html/configurator.html以生成slurm.conf文件，然后把该文件保存到/etc/slurm-llnl下。
-
-但是遗憾的是，由于我填的不对，最终没有走通这条路。
-
-LLNL是Lawrence Livermore National Laboratory的简称，它上面有几篇文章不错：
-
-https://computing.llnl.gov/tutorials/parallel_comp/
-
-Introduction to Parallel Computing
-
-https://computing.llnl.gov/tutorials/linux_clusters/
-
-Linux Clusters Overview
+kaldi里的在线识别
 

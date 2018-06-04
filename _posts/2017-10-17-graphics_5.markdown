@@ -1,12 +1,32 @@
 ---
 layout: post
-title:  图像处理理论（五）——ISP, Eigenface
+title:  图像处理理论（五）——ISP
 category: graphics 
 ---
 
 # SIFT
 
-## 关键点特征描述（续）
+## 关键点（续）
+
+在完成关键点的梯度计算后，使用直方图统计邻域内像素的梯度和方向：
+
+![](/images/article/sift.jpg)
+
+方向直方图的峰值则代表了该特征点处邻域梯度的方向，以直方图中最大值作为该关键点的主方向。为了增强匹配的鲁棒性，只保留峰值大于主方向峰值80％的方向作为该关键点的辅方向。
+
+因此，对于有多个峰值的关键点位置，在相同位置和尺度将会有多个关键点被创建。这些关键点梯度相同，但方向不同。仅有15％的关键点被赋予多个方向，但可以明显的提高关键点匹配的稳定性。
+
+实际编程实现中，就是把该关键点复制成多份关键点，并将方向值分别赋给这些复制后的关键点，并且离散的梯度方向直方图要进行插值拟合处理，来求得更精确的方向角度值，检测结果如下图所示：
+
+![](/images/article/sift_2.jpg)
+
+通过以上步骤，对于每一个关键点，拥有三个信息：**位置、尺度以及方向**。
+
+## 关键点特征描述
+
+接下来就是为每个关键点建立一个描述符，用一组向量将这个关键点描述出来，使其不随各种变化而改变，比如光照变化、视角变化等等。这个描述子不但包括关键点，也包含关键点周围对其有贡献的像素点，并且描述符应该有较高的独特性，以便于提高特征点正确匹配的概率。
+
+Lowe建议描述子使用在关键点尺度空间内4*4的窗口中计算的8个方向的梯度信息，共4x4x8=128维向量表征。
 
 表示步骤如下：
 
@@ -42,7 +62,11 @@ https://mp.weixin.qq.com/s/wYiwuBt8VVYOheJ_jgCHgA
 
 https://mp.weixin.qq.com/s/sM78DCOK3fuG2JrP2QaSZA
 
-SIFT与CNN的碰撞：万字长文回顾图像检索任务十年探索历程
+SIFT与CNN的碰撞：万字长文回顾图像检索任务十年探索历程（上）
+
+https://mp.weixin.qq.com/s/yzVMDEpwbXVS0y-CwWSBEA
+
+SIFT与CNN的碰撞：万字长文回顾图像检索任务十年探索历程（下）
 
 # YUV & YCbCr & RGB
 
@@ -241,61 +265,3 @@ Eigenface是M. Turk和A. Pentland于1991年提出的人脸识别算法。
 论文：
 
 《Face recognition using eigenfaces》
-
-## 计算Eigenface
-
-**Step 1**：假设有M张训练照片$$I_1,\dots,I_M$$，每张照片的尺寸为NxN，将照片$$I_i$$转换成1维vector $$\Gamma_i$$。显然，$$\Gamma_i$$的大小是$$N^2$$。
-
-**Step 2**：计算均值vector $$\Psi$$（也就是常说的平均脸（average face/mean face））：
-
-$$\Psi=\frac{1}{M}\sum_{i=1}^M\Gamma_i$$
-
-**Step 3**：计算图片与均值的差：
-
-$$\Phi_i=\Gamma_i-\Psi$$
-
-**Step 4**：计算协方差矩阵：
-
-$$C=\frac{1}{M}\sum_{n=1}^M\Phi_n \Phi_n^T=AA^T(N^2\times N^2 \text{matrix})$$
-
-**Step 5**：计算的$$AA^T$$特征向量$$u_i$$。然而，$$AA^T$$太大了，我们只能退而求其次计算$$A^TA(M\times M \text{matrix})$$的特征向量$$v_i$$。
-
-那么$$u_i$$和$$v_i$$到底有什么关系呢？我们首先根据特征向量的定义，给出下式：
-
-$$A^TAv_i=\mu_iv_i$$
-
-其中，$$\mu_i$$是$$A^TA$$的特征值。
-
-$$A^TAv_i=\mu_iv_i\Rightarrow AA^TAv_i=\mu_iAv_i\Rightarrow CAv_i=\mu_iAv_i$$
-
-令$$u_i=Av_i$$，则：
-
-$$Cu_i=\mu_iu_i$$
-
-可见$$\mu_i$$同时也是$$AA^T$$的特征值，而对应的特征向量则是$$Av_i$$。
-
-实际上，$$A^TA$$的M个特征值，就是$$AA^T$$的前M大的特征值。
-
-**Step 6**：从中选出K个最大的特征向量供后续使用。
-
-## 使用Eigenface
-
-**Step 1**：给定图片$$\Gamma$$，计算：
-
-$$\Phi=\Gamma-\Psi$$
-
-**Step 2**：将$$\Phi$$映射到K维特征向量空间：
-
-$$\Omega=[w_1,\dots,w_K]^T$$
-
-**Step 3**：计算与图片l的距离：
-
-$$e_r=\|\Omega-\Omega^l\|$$
-
-当$$e_r<T_r$$时，就认为是同一张人脸。
-
-这里的距离可以是欧氏距离，但作者指出使用马式距离效果更佳。
-
-综上，**Eigenface实际上就是PCA在人脸识别上的应用。**
-
-

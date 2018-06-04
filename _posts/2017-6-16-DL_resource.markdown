@@ -464,3 +464,7 @@ https://mp.weixin.qq.com/s/8QP5X9Hxi_6qyfxP4O0Gwg
 
 周志华团队和蚂蚁金服合作：用分布式深度森林算法检测套现欺诈
 
+https://mp.weixin.qq.com/s/bE9BZQ6wCICvrgomdySDuw
+
+周志华组提出可做表征学习的多层梯度提升决策树
+

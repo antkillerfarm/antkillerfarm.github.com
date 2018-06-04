@@ -392,6 +392,10 @@ https://mp.weixin.qq.com/s/hoo34-eMcYV7hV6LFbJqcg
 
 10分钟带你读完人工智能的三生三世
 
+https://mp.weixin.qq.com/s/yAC6VTOl3jAxjUT0QbTVrw
+
+为什么要在边缘设备部署机器学习？
+
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA

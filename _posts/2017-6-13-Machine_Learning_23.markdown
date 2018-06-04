@@ -272,6 +272,10 @@ http://blog.csdn.net/acdreamers/article/details/44728041
 
 L-BFGS算法
 
+https://mp.weixin.qq.com/s/lGrTUYALmKOQkO70DZpbPQ
+
+小改进，大飞跃：深度学习中的最小牛顿求解器
+
 ## 参考
 
 http://sebastianruder.com/optimizing-gradient-descent/

@@ -140,6 +140,10 @@ https://mp.weixin.qq.com/s/C2Gn8NSZe4u5uZsCeLnfVQ
 
 22分钟直冲Kaggle竞赛第二名！一文教你做到
 
+https://mp.weixin.qq.com/s/JRfZIH6YikmW2og9Sn0hQg
+
+如何快速训练免费的文本生成神经网络
+
 ## 工具
 
 https://mp.weixin.qq.com/s/TT4whft1Tj1pCEPbnMH1cA

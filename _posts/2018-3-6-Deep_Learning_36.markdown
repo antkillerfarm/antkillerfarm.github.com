@@ -228,6 +228,10 @@ https://mp.weixin.qq.com/s/CyelwdWX4yPVp8o79itonQ
 
 阿里提出联合预估算法JUMP：点击率和停留时长预测效果最优
 
+https://mp.weixin.qq.com/s/HS2zcnA1YSRU8-DrodJ6Qw
+
+淘宝用强化学习优化商品搜索后，总收入能提高2%
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512
