@@ -270,6 +270,28 @@ https://mp.weixin.qq.com/s/7ohIh_dVfzNyt7TpBlCFYw
 
 # Optimizer进阶
 
+## AdaSecant
+
+《ADASECANT: Robust Adaptive Secant Method for Stochastic Gradient》
+
+## 二阶Optimizer
+
+虽然二阶Optimizer的收敛效果优于一阶Optimizer，但由于计算量较大，通常用的较少。
+
+常用的算法有BGFS和L-BFGS。
+
+http://www.cnblogs.com/kemaswill/p/3352898.html
+
+优化算法-BFGS
+
+http://blog.csdn.net/acdreamers/article/details/44728041
+
+L-BFGS算法
+
+https://mp.weixin.qq.com/s/lGrTUYALmKOQkO70DZpbPQ
+
+小改进，大飞跃：深度学习中的最小牛顿求解器
+
 ## 参考
 
 https://mp.weixin.qq.com/s/4XOI8Dq6fqe8rhtJjeyxeA

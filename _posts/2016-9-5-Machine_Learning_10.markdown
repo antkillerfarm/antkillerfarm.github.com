@@ -45,7 +45,19 @@ GMM算法结果也是局部最优解。对其他参数取不同的初始值进�
 
 ![](/images/img2/Clustering_2.jpg)
 
-参考：
+## GMM与概率分布
+
+Andrew讲义在介绍GMM的时候，由于要和K-means做对比，因此主要介绍了GMM在聚类中的应用，但GMM的应用并不仅于此。
+
+我们知道函数有泰勒级数和傅立叶级数等展开方式，同样的**任意随机变量的概率分布，也可以展开为若干高斯分布的和**：
+
+$$p(x)=\sum_{m=1}^M c_m \mathcal{N}(x;\mu_m,\sigma_m^2)$$
+
+不难看出上式和上节的公式5是等价的。
+
+GMM的这种用法在语音识别领域用的较多，是GMM-HMM算法的核心思想之一。
+
+## 参考
 
 http://cseweb.ucsd.edu/~atsmith/project1_253.pdf
 

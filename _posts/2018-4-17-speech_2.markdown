@@ -4,6 +4,32 @@ title:  语音识别（二）——Microphone Array, 声源定位
 category: graphics 
 ---
 
+# 基本框架（续）
+
+下面是网友写的注解版本：
+
+http://www.cnblogs.com/lyu0709/p/6929659.html
+
+《语音识别的前世今生：GMM+HMM & 深度学习》讲座笔记
+
+http://www.cnblogs.com/lyu0709/p/6929692.html
+
+《语音识别的前世今生》Q&A
+
+参考：
+
+https://blog.csdn.net/by21010/article/details/51506292
+
+语音识别系统结构——鸟瞰
+
+http://www.cnblogs.com/welen/p/7489504.html
+
+语音识别概述
+
+https://www.zhihu.com/question/20398418
+
+语音识别的技术原理是什么？
+
 # Microphone
 
 麦克风作为业界通俗的一种叫法，是英文Microphone的音译名称，国内的称呼乱一些，有时候也简单称作话筒，香港和台湾地区也会称作微音器、拾音器。麦克风的中文学术名称是传声器，这是一种将声音转换成电子信号的换能器，即把声信号转成电信号，这其实和光电转换的原理是完全一致的。 
@@ -141,32 +167,4 @@ https://www.zhihu.com/question/48537863
 ## 超分辨谱估计
 
 如MUSIC，ESPRIT等，对其协方差矩阵（相关矩阵）进行特征分解，构造空间谱，关于方向的频谱，谱峰对应的方向即为声源方向。适合多个声源的情况，且声源的分辨率与阵列尺寸无关，突破了物理限制，因此成为超分辨谱方案。这类方法可以拓展到宽带处理，但是对误差十分敏感，如麦克风单体误差，通道误差，适合远场模型，矩阵运算量巨大。
-
-## TDOA
-
-TDOA（time difference of arrival）是先后估计声源到达不同麦克风的时延差，通过时延来计算距离差，再利用距离差和麦克风阵列的空间几何位置来确定声源的位置。分为TDOA估计和TDOA定位两步：
-
-### TDOA估计
-
-常用的有广义互相关GCC（Generalized Cross Correlation）和LMS自适应滤波。
-
-### TDOA定位
-
-TDOA估值进行声源定位，三颗麦克风阵列可以确定空间声源位置，增加麦克风会增高数据精度。定位的方法有MLE最大似然估计，最小方差，球形差值和线性相交等。
-
-TDOA相对来讲应用广泛，定位精度高，且计算量最小，实时性好，可用于实时跟踪，在目前大部分的智能定位产品中均采用TDOA技术做为定位技术。
-
-## 参考
-
-https://wenku.baidu.com/view/903f907f31b765ce05081431.html
-
-基于传声器阵列的声源定位
-
-https://zhuanlan.zhihu.com/p/35590325
-
-MIT提出像素级声源定位系统PixelPlayer：无监督地分离视频中的目标声源
-
-https://zhuanlan.zhihu.com/p/27921878
-
-揭秘武林绝学——“听声辨位”
 

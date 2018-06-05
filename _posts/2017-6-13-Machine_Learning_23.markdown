@@ -34,6 +34,8 @@ HMM的Baum-Welch算法和Viterbi算法公式推导细节
 
 命名实体识别：给定一个词的序列，找出最可能的标签序列（内外符号：[内]表示词属于命名实体，[外]表示不属于）。如ICTCLAS实现的人名识别、翻译人名识别、地名识别都是用同一个Tagger实现的。
 
+综上，**在监督学习中，一般把训练数据当作HMM的可见状态，而把标签当作隐含状态。**当然这里的标签可能是生成最终训练标签的一个概率模型的参数。
+
 参考：
 
 http://blog.sina.com.cn/s/blog_8267db980102wq4l.html
@@ -253,28 +255,6 @@ $$\theta_{t+1} = \theta_{t} - \dfrac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \hat{m}_
 http://cs229.stanford.edu/proj2015/054_report.pdf
 
 ncorporating Nesterov Momentum into Adam
-
-## AdaSecant
-
-《ADASECANT: Robust Adaptive Secant Method for Stochastic Gradient》
-
-## 二阶Optimizer
-
-虽然二阶Optimizer的收敛效果优于一阶Optimizer，但由于计算量较大，通常用的较少。
-
-常用的算法有BGFS和L-BFGS。
-
-http://www.cnblogs.com/kemaswill/p/3352898.html
-
-优化算法-BFGS
-
-http://blog.csdn.net/acdreamers/article/details/44728041
-
-L-BFGS算法
-
-https://mp.weixin.qq.com/s/lGrTUYALmKOQkO70DZpbPQ
-
-小改进，大飞跃：深度学习中的最小牛顿求解器
 
 ## 参考
 

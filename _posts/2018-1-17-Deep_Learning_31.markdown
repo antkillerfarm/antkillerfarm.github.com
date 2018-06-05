@@ -238,6 +238,10 @@ https://mp.weixin.qq.com/s/vRHA3Hf1ivsgKBB2XuECNg
 
 李飞飞论文：神经网络是怎样给一幅图增加文字描述，实现“看图说话”的？
 
+https://mp.weixin.qq.com/s/DXRiGSI0p8u7yA9uW1hHxA
+
+最新四篇CVPR2018 视频描述生成相关论文—双向注意力、Transformer、重构网络、层次强化学习
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：

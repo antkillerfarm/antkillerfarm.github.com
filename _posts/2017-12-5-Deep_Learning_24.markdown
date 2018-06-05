@@ -70,6 +70,10 @@ https://mp.weixin.qq.com/s/mIuAn4G9l3AKFAswpbaQdA
 
 时间卷积网络（TCN）将取代RNN成为NLP预测领域王者
 
+https://mp.weixin.qq.com/s/m5GRNp6qDfVfC0mkQ4m4Yw
+
+神经语言模型如何利用上下文信息：长距离上下文的词序并不重要
+
 # L2 Normalization
 
 L2 Normalization本身并不复杂，然而多数资料都只提到1维的L2 Normalization的计算公式：

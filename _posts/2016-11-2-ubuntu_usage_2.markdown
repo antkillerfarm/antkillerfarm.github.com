@@ -351,4 +351,21 @@ http://www.ubuntuthemes.org/
 
 在逛Ubuntu软件中心的时候，发现了Battle of Wesnoth这个开源的回合制战旗游戏。试着玩了一下，感觉蛮不错的。正好这个项目在Source Forge上使用Git管理源代码。考虑到Android Source也是用Git管理的，于是就用Git下载了Battle of Wesnoth的source来熟悉一下Git的用法。
 
+# Ubuntu 18.04使用手记
+
+又是两年过去了，这次是Ubuntu 18.04（2018.4.26发布）。
+
+这次的变化还是有点大，Ubuntu舍弃了自己开发的Unity，转回Gnome，连带着好多软件的界面都出现了一定的调整。这个适应过程，要长于之前的几次升级。
+
+>前些年由于Unity界面乏善可陈，Ubuntu的版本升级被吐槽为换壁纸。这次算是换主题吧。
+
+由于这个改变是2017.4做出的，有了1年的过渡期，因此拿到手的Ubuntu 18.04的成品度还是蛮高的。
+
+输入法比原来好，但有些软件存在兼容问题。
+
+内核：4.15
+
+LibreOffice：6.0
+
+Emacs：25.2
 

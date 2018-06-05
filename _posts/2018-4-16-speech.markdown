@@ -197,6 +197,14 @@ HMM/DNN-based Speech Synthesis System也是日本人开发的工具库，主要�
 
 http://hts.sp.nitech.ac.jp
 
+## Praat
+
+Praat是一款跨平台的多功能语音学专业软件，由University of Amsterdam的Paul Boersma和David Weenink开发。主要用于对数字化的语音信号进行分析、标注、处理及合成等实验，同时生成各种语图和文字报表。
+
+官网：
+
+http://www.fon.hum.uva.nl/praat/
+
 ## 公司
 
 http://www.aispeech.com/
@@ -284,28 +292,4 @@ https://zhihu-live.zhimg.com/0af15bfda98f5885ffb509acd470b0fa
 >王赟，清华本科（2010）+CMU在读博士。   
 >个人主页：   
 >http://www.cs.cmu.edu/~yunwang/
-
-下面是网友写的注解版本：
-
-http://www.cnblogs.com/lyu0709/p/6929659.html
-
-《语音识别的前世今生：GMM+HMM & 深度学习》讲座笔记
-
-http://www.cnblogs.com/lyu0709/p/6929692.html
-
-《语音识别的前世今生》Q&A
-
-参考：
-
-https://blog.csdn.net/by21010/article/details/51506292
-
-语音识别系统结构——鸟瞰
-
-http://www.cnblogs.com/welen/p/7489504.html
-
-语音识别概述
-
-https://www.zhihu.com/question/20398418
-
-语音识别的技术原理是什么？
 

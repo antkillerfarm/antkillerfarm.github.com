@@ -248,6 +248,24 @@ ILSVRC 2010的冠军是NEC和UIUC的联合队伍。这也是DL于2012年大放�
 
 # Mel-Frequency Analysis（续）
 
+## 计算能量谱
+
+energy的计算比较简单，无论是如上图的时域能量统计，还是在DFT之后进行频域能量统计都是可以的。参见《数学狂想曲（一）》。
+
+需要注意的是，频域能量包含了实部能量+虚部能量。
+
+## Discrete Cosine Transform
+
+离散傅里叶变换需要进行复数运算，尽管有FFT可以提高运算速度，但在图像编码、特别是在实时处理中非常不便。离散傅里叶变换在实际的图像通信系统中很少使用，但它具有理论的指导意义。
+
+根据离散傅里叶变换的性质，实偶函数的傅里叶变换只含实的余弦项，因此构造了一种实数域的变换——离散余弦变换(DCT)。
+
+通过研究发现，DCT除了具有一般的正交变换性质外，其变换阵的基向量很近似于Toeplitz矩阵的特征向量，后者体现了人类的语言、图像信号的相关特性。因此，在对语音、图像信号变换的确定的变换矩阵正交变换中，DCT变换被认为是一种准最佳变换。
+
+相应的还有IDCT。
+
+DCT还有一个特点是，对于一般的语音信号，这一步的结果的前几个系数特别大，后面的系数比较小，可以忽略。比如Mel-Filters一般取40个三角形，所以DCT的结果也是40个点；实际中，一般仅保留前12~20个，这就进一步压缩了数据。
+
 ## 参考
 
 http://blog.csdn.net/zouxy09/article/details/9156785
@@ -355,24 +373,4 @@ $$WER=100\%\times \frac{Subs+Dels+Ins}{\text{word in correct sentence}}$$
 https://blog.csdn.net/quhediegooo/article/details/56834417
 
 语音识别评估标准-WER
-
-# 声学模型进阶
-
-## 语音质量
-
-更高的采样率可以降低WER。一般来说，16KHz相比8KHz的WER要小10%左右。
-
-## Voice Detection
-
-长时间的silence会增加WER，因此我们需要判断当前是否在说话。
-
-Voice Detection包括两个方面：
-
-1.Beginning-Point Detection。也叫做Voice Activity Detection（VAD）。有些类似于唤醒检测，但并不局限于设备的开机时刻。
-
-2.End-Point Detection。
-
-## Feature normalization
-
-有时候需要对Feature进行normalization。例如，对MFCC特征减去均值，可以有效提升在噪声环境下的识别率。
 

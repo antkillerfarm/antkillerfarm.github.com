@@ -390,3 +390,7 @@ https://mp.weixin.qq.com/s/odRDdSNNuTd5LnUf8rfRaw
 
 Google发布语义文本相似度研究新成果：通用语句编码器
 
+https://mp.weixin.qq.com/s/5DvSVL0CRJTymtXPDvS-0w
+
+基于主题信息的神经网络作文生成模型
+

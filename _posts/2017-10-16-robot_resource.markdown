@@ -429,3 +429,8 @@ LSTM之父最新力作：手把手教你训练一个有世界观的AI赛车手
 https://mp.weixin.qq.com/s/vFyifSgGLImUrTwcw9bPsg
 
 自动驾驶感知训练指南：不许你歧视车道线，那也是路面的一部分
+
+https://mp.weixin.qq.com/s/aXck7MLpHojuIkvVP1iHKg
+
+北航机器人研究所名誉所长王田苗：人工智能与机器人的发展趋势
+
