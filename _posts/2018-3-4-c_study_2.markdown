@@ -144,3 +144,7 @@ https://mp.weixin.qq.com/s/IsLlzDWnUXe8LVp4Y1Jb_A
 
 35亿张图像！Facebook基于弱监督学习刷新ImageNet基准测试记录
 
+https://mp.weixin.qq.com/s/vpBPkjuCebSWh5qPLYHCkw
+
+上海交大提出多模态框架“EmotionMeter”，更精准地识别人类情绪
+

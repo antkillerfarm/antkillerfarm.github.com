@@ -208,6 +208,10 @@ https://mp.weixin.qq.com/s/m9KwANPIudVesoXjejnOJA
 
 iele虚拟机, plutus-marlowe智能合约语言，hydra分片，sidechain侧链, ourobros generic共识协议，kemadelia p2p网络
 
+https://mp.weixin.qq.com/s/Z2wz5jb7k4QVf0PNCd0THg
+
+Cocos王哲：讲解COCOS区块链游戏的发展之路！
+
 # CPU
 
 https://zhuanlan.zhihu.com/p/29743431
@@ -406,4 +410,7 @@ https://mp.weixin.qq.com/s/BFjC2Pop8K9gXqT06N8kVA
 
 天波超视距雷达(OTH)基本概念
 
+https://mp.weixin.qq.com/s/CdaaLk1YBuqN7HSkMWT2KA
+
+二次雷达基础，它与一次雷达区别在哪？
 

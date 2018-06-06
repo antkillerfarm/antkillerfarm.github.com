@@ -102,6 +102,10 @@ https://mp.weixin.qq.com/s/p7sCt5Xj1U5vIZftRXBvzw
 
 cw2vec理论及其实现
 
+https://mp.weixin.qq.com/s/df-k5kJcJXhSWbFMu2mtCA
+
+当前最好的词句嵌入技术概览：从无监督学习转向监督、多任务学习
+
 # NN的INT8计算
 
 ## 概述

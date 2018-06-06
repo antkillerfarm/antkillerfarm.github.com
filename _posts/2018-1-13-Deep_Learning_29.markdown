@@ -4,6 +4,40 @@ title:  深度学习（二十九）——语音识别, 语音合成, CTC
 category: DL 
 ---
 
+# 花式卷积进阶
+
+## 3D卷积（续）
+
+https://zhuanlan.zhihu.com/p/25912625
+
+C3D network: 用于视频特征提取的3维卷积网络
+
+https://zhuanlan.zhihu.com/p/26350774
+
+SCNN-用于时序动作定位的多阶段3D卷积网络
+
+https://www.jiqizhixin.com/articles/2016-08-03
+
+FusionNet融合三个卷积网络：识别对象从二维升级到三维
+
+http://blog.csdn.net/zouxy09/article/details/9002508
+
+基于3D卷积神经网络的人体行为理解
+
+https://mp.weixin.qq.com/s/YdON6Yzddq2f_QGbQsOY8w
+
+深度三维残差神经网络：视频理解新突破
+
+## 参考
+
+https://mp.weixin.qq.com/s/qReN6z8s45870HSMCMNatw
+
+微软亚洲研究院：逐层集中Attention的卷积模型
+
+http://blog.csdn.net/shuzfan/article/details/77964370
+
+不规则卷积神经网络
+
 # 语音识别
 
 ## Tacotron
@@ -305,23 +339,4 @@ CTC允许的对齐是与输入的长度相同。 在合并重复并移除ε标�
 
 如果Y在同一行中有两个相同的字符，那么一个有效的对齐必须在它们之间有一个$$\epsilon$$。 有了这个规则，我们就可以区分崩“hello”和“helo”。
 
-CTC对齐有一些显著的特性：
-
-首先，X和Y之间允许的对齐是单调的。如果我们前进到下一个输入，我们可以保持相应的输出相同或前进到下一个输入。
-
-第二个属性是X到Y的对齐是多对一的。一个或多个输入元素可以对齐到一个输出元素，但反过来不成立。
-
-这意味着第三个属性：Y的长度不能大于X的长度。
-
-![](/images/img2/full_collapse_from_audio.png)
-
-上图是CTC对齐的一般步骤：
-
-1.输入序列（如音频的频谱图）导入一个RNN模型。
-
-2.RNN给出每个time step所对应的音节的概率$$p_t(a \mid X)$$。上图中音节的颜色越深，其概率p越高。
-
-3.计算各种时序组合的概率，给出整个序列的概率。
-
-4.合并重复并移除空白之后，得到最终的Y。
 

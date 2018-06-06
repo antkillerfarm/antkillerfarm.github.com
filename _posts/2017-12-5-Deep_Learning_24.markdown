@@ -6,6 +6,34 @@ category: DL
 
 # LSTM进阶（续）
 
+## 《Video Summarization with Long Short-term Memory》
+
+这是一篇用于提取视频关键帧（也叫静态视频摘要）的论文，是南加州大学沙飞小组的作品。
+
+![](/images/img2/dppLSTM.png)
+
+上图是该文提出的DPP LSTM的网络结构图。它的主体是一个BiLSTM，算是中规中矩吧。
+
+该文的创新点在于提出了DPP loss的概念。上图中的$$y_t$$表示帧的分值（越大表示越重要），$$\phi_t$$表示帧之间的相似度。该文的实验表明，将两个特征分开抽取，有助于提升模型的准确度。
+
+这篇论文主要用到了3个数据集：
+
+TVSum dataset: 
+
+https://github.com/yalesong/tvsum
+
+这个需要Yahoo账号和一个高校的邮件地址才行。
+
+SumMe dataset: 
+
+https://people.ee.ethz.ch/~gyglim/vsum/#benchmark
+
+OVP and YouTube datasets: 
+
+https://sites.google.com/site/vsummsite/
+
+需要翻墙。
+
 ## IndRNN
 
 https://mp.weixin.qq.com/s/cAqpclkkeVrTiifz07HC1g
@@ -211,30 +239,4 @@ RNN模型之间的这类聚焦还有许多其它的应用。它可以用于语�
 ![](/images/img2/ACT_5.png)
 
 当训练Adaptive Computation Time模型时，可以在损失函数添加一项“ponder cost”，用来惩罚模型的累积计算时间。这一项的值越大，就更不倾向于降低计算时间。
-
-## Scaled Dot-Product Attention
-
-以下内容摘自：
-
-https://kexue.fm/archives/4765
-
-《Attention is All You Need》浅读
-
-《Attention is All You Need》是Google 2017年的作品。论文中提出了若干Attention的变种。比如下图所示的Scaled Dot-Product Attention。
-
-![](/images/img2/Attention_5.png)
-
-上图用公式表述就是：
-
-$$Attention(\boldsymbol{Q},\boldsymbol{K},\boldsymbol{V}) = softmax\left(\frac{\boldsymbol{Q}\boldsymbol{K}^{\top}}{\sqrt{d_k}}\right)\boldsymbol{V}$$
-
-如果忽略激活函数softmax的话，那么事实上它就是三个$$n\times d_k,d_k\times m, m\times d_v$$的矩阵相乘，最后的结果就是一个$$n\times d_v$$的矩阵。于是我们可以认为：这是一个Attention层，将$$n\times d_k$$的序列Q编码成了一个新的$$n\times d_v$$的序列。
-
-那怎么理解这种结构呢？我们不妨逐个向量来看。
-
-$$Attention(\boldsymbol{q}_t,\boldsymbol{K},\boldsymbol{V}) = \sum_{s=1}^m \frac{1}{Z}\exp\left(\frac{\langle\boldsymbol{q}_t, \boldsymbol{k}_s\rangle}{\sqrt{d_k}}\right)\boldsymbol{v}_s$$
-
-其中Z是归一化因子。事实上q,k,v分别是query,key,value的简写，K,V是一一对应的，它们就像是key-value的关系，那么上式的意思就是$$q_t$$这个query，通过与各个$$k_s$$内积的并softmax的方式，来得到$$q_t$$与各个$$v_s$$的相似度，然后加权求和，得到一个$$d_v$$维的向量。其中因子$$\sqrt{d_k}$$起到调节作用，使得内积不至于太大（太大的话softmax后就非0即1了，不够“soft”了）。
-
-概括的说就是：**比较Q和K的相似度，以得到合适的V。**
 

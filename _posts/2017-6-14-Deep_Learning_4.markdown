@@ -202,13 +202,25 @@ Word2Vec作者Mikolov加盟Facebook之后，提出了文本分类新作FastText�
 
 FastText模型架构和Word2Vec中的CBOW模型很类似。不同之处在于，FastText预测标签，而CBOW模型预测中间词。
 
-http://www.algorithmdog.com/fast-fasttext
-
 Github：
 
 https://github.com/facebookresearch/fastText
 
+FastText的论文其实有两篇：
+
+《Bag of Tricks for Efficient Text Classification》
+
+这篇就是上述文本分类的论文。
+
+《Enriching Word Vectors with Subword Information》
+
+这篇是根据词根改进词向量的论文。因此，有的blog说，使用FastText生成词向量，实际上就是指的这篇文章。
+
 参考：
+
+http://www.algorithmdog.com/fast-fasttext
+
+超快的 fastText
 
 https://mp.weixin.qq.com/s/tXgF7rQdZm3IFAluMU5ywg
 

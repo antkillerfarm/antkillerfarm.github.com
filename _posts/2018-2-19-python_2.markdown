@@ -414,3 +414,7 @@ https://mp.weixin.qq.com/s/-erFsz8NvLZ5mOIXyDosFg
 
 使用PyInstaller将python转成可执行文件exe笔记
 
+https://mp.weixin.qq.com/s/b19SLduKoiOIeE5CA3ZOjg
+
+Python标准库之LRU缓存实现学习
+

@@ -231,6 +231,10 @@ https://mp.weixin.qq.com/s/i-umuOi8jGw8dMQmG44liQ
 
 如何租到靠谱的房子？Scrapy爬虫帮你一网打尽各平台租房信息！这篇blog中，还有如何用Kibana处理数据的内容
 
+https://mp.weixin.qq.com/s/hzl8D-AhpCwqZVSLTK56XQ
+
+Python爬虫--Scrapy入门
+
 # Flume & Kafka
 
 Flume和Kafka都是日志系统。

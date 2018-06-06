@@ -6,6 +6,32 @@ category: DL
 
 # Attention（续）
 
+## Scaled Dot-Product Attention
+
+以下内容摘自：
+
+https://kexue.fm/archives/4765
+
+《Attention is All You Need》浅读
+
+《Attention is All You Need》是Google 2017年的作品。论文中提出了若干Attention的变种。比如下图所示的Scaled Dot-Product Attention。
+
+![](/images/img2/Attention_5.png)
+
+上图用公式表述就是：
+
+$$Attention(\boldsymbol{Q},\boldsymbol{K},\boldsymbol{V}) = softmax\left(\frac{\boldsymbol{Q}\boldsymbol{K}^{\top}}{\sqrt{d_k}}\right)\boldsymbol{V}$$
+
+如果忽略激活函数softmax的话，那么事实上它就是三个$$n\times d_k,d_k\times m, m\times d_v$$的矩阵相乘，最后的结果就是一个$$n\times d_v$$的矩阵。于是我们可以认为：这是一个Attention层，将$$n\times d_k$$的序列Q编码成了一个新的$$n\times d_v$$的序列。
+
+那怎么理解这种结构呢？我们不妨逐个向量来看。
+
+$$Attention(\boldsymbol{q}_t,\boldsymbol{K},\boldsymbol{V}) = \sum_{s=1}^m \frac{1}{Z}\exp\left(\frac{\langle\boldsymbol{q}_t, \boldsymbol{k}_s\rangle}{\sqrt{d_k}}\right)\boldsymbol{v}_s$$
+
+其中Z是归一化因子。事实上q,k,v分别是query,key,value的简写，K,V是一一对应的，它们就像是key-value的关系，那么上式的意思就是$$q_t$$这个query，通过与各个$$k_s$$内积的并softmax的方式，来得到$$q_t$$与各个$$v_s$$的相似度，然后加权求和，得到一个$$d_v$$维的向量。其中因子$$\sqrt{d_k}$$起到调节作用，使得内积不至于太大（太大的话softmax后就非0即1了，不够“soft”了）。
+
+概括的说就是：**比较Q和K的相似度，以得到合适的V。**
+
 ## Multi-Head Attention
 
 ![](/images/img2/Attention_6.png)
@@ -220,44 +246,4 @@ https://zhuanlan.zhihu.com/p/27464080
 
 从《Convolutional Sequence to Sequence Learning》到《Attention Is All You Need》
 
-http://www.cnblogs.com/robert-dlut/p/8638283.html
 
-自然语言处理中的自注意力机制！
-
-https://mp.weixin.qq.com/s/l4HN0_VzaiO-DwtNp9cLVA
-
-循环注意力区域实现图像多标签分类
-
-https://mp.weixin.qq.com/s/zhZLK4pgJzQXN49YkYnSjA
-
-自适应注意力机制在Image Caption中的应用
-
-https://mp.weixin.qq.com/s/uvr-G5-_lKpyfyn5g7ES0w
-
-基于注意力机制，机器之心带你理解与训练神经机器翻译系统
-
-https://mp.weixin.qq.com/s/ANpBFnsLXTIiW6WHzGrv2g
-
-自注意力机制学习句子embedding
-
-https://mp.weixin.qq.com/s/49fQX8yiOIwDyof3PD01rA
-
-CMU&谷歌大脑提出新型问答模型QANet：仅使用卷积和自注意力，性能大大优于RNN
-
-https://mp.weixin.qq.com/s/c64XucML13OwI26_UE9xDQ
-
-滴滴披露语音识别新进展：基于Attention显著提升中文识别率
-
-# VAE
-
-变分自编码器（Variational Auto-Encoder，VAE）是Autoencoder的一种扩展。
-
-论文：
-
-《Auto-Encoding Variational Bayes》
-
-以下部分主要摘自：
-
-https://kexue.fm/archives/5253
-
-变分自编码器（一）：原来是这么一回事

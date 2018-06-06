@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Kaldi（1）
+title:  Kaldi（一）
 category: AI 
 ---
 

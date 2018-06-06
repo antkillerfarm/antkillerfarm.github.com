@@ -230,6 +230,10 @@ http://mp.weixin.qq.com/s/1UDKVasluMpPiteysmEx1A
 
 深度学习必备---用Keras和直方图均衡化---数据增强
 
+https://mp.weixin.qq.com/s/bSWatfZqkvdcXJQop4LMxw
+
+TensorFlow快餐教程：程序员快速入门深度学习五步法
+
 # OpenAI Gym
 
 Openai gym是一个用于开发和比较强化学习（reinforcement learning，RL）算法的工具包，与其他的数值计算库兼容，如tensorflow或者theano库。现在主要支持的是python语言，以后将支持其他语言。
@@ -258,64 +262,3 @@ https://mp.weixin.qq.com/s/KK1gwDW2EyptZOiuFjyAlw
 
 OpenAI发布强化学习环境Gym Retro：支持千种游戏
 
-# GMM-HMM（续）
-
-以thchs为例，一共有3000个高斯核对音素进行建模，那是如何分配的呢？
-
-如果是triphone模型，那么3000个高斯核每个都会分配一个三音子态。也就是说，每个核只用来建模一个三音子态。要确定这件事，只要看模型文件里有没有用来分配高斯混合模型权重的文件就可以了。
-
-比如在sphinx这个库里面，模型文件中会有一个叫mixture_weight的文件，就是用来储存权重的，如果没有这个文件，意味着每个高斯核只用来建模一个音子态。
-
-虽然音子只有60个，但是排列组合后的三音子态就多达几千个了。
-
-参考：
-
-https://blog.csdn.net/abcjennifer/article/details/27346787
-
-GMM-HMM语音识别模型 原理篇
-
-https://zhuanlan.zhihu.com/p/22482625
-
-无痛理解GMM-HMM语音识别算法
-
-https://mp.weixin.qq.com/s/Sn4RPdghzzQhQc-r4z8Iuw
-
-Kaldi单音素GMM学习笔记
-
-# LDA-MLLT
-
-Maximum Likelihood Linear Transform (MLLT)，又名Global Semi-tied Covariance (STC)。因此，在科技文献中，常被称作STC/MLLT。
-
-《Semi-tied Covariance Matrices for Hidden Markov Models》
-
-《Improved feature processing for Deep Neural Networks》
-
-![](/images/img2/MLLT.png)
-
-https://blog.csdn.net/xmdxcsj/article/details/78512652
-
-声学特征变换 STC/MLLT
-
-# WFST
-
-Weighted-Finite-State-Transducer
-
-https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/ParallelizingWFSTSpeechDecoders.ICASSP2016.pdf
-
-PARALLELIZING WFST SPEECH DECODERS
-
-http://www.cs.nyu.edu/~mohri/pub/csl01.pdf
-
-Weighted Finite-State Transducers in Speech Recognition
-
-https://blog.csdn.net/l_b_yuan/article/category/6132477
-
-这个专栏包含了4篇WFST的blog
-
-http://djt.qq.com/article/view/507
-
-定制你的语音识别-并行语音识别解码空间
-
-https://blog.csdn.net/lucky_ricky/article/details/77511543
-
-Kaldi WFST 构图 学习

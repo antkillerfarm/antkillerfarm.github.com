@@ -4,7 +4,51 @@ title:  深度学习（二十六）——VAE
 category: DL 
 ---
 
-# VAE（续）
+# Attention
+
+## 参考（续）
+
+http://www.cnblogs.com/robert-dlut/p/8638283.html
+
+自然语言处理中的自注意力机制！
+
+https://mp.weixin.qq.com/s/l4HN0_VzaiO-DwtNp9cLVA
+
+循环注意力区域实现图像多标签分类
+
+https://mp.weixin.qq.com/s/zhZLK4pgJzQXN49YkYnSjA
+
+自适应注意力机制在Image Caption中的应用
+
+https://mp.weixin.qq.com/s/uvr-G5-_lKpyfyn5g7ES0w
+
+基于注意力机制，机器之心带你理解与训练神经机器翻译系统
+
+https://mp.weixin.qq.com/s/ANpBFnsLXTIiW6WHzGrv2g
+
+自注意力机制学习句子embedding
+
+https://mp.weixin.qq.com/s/49fQX8yiOIwDyof3PD01rA
+
+CMU&谷歌大脑提出新型问答模型QANet：仅使用卷积和自注意力，性能大大优于RNN
+
+https://mp.weixin.qq.com/s/c64XucML13OwI26_UE9xDQ
+
+滴滴披露语音识别新进展：基于Attention显著提升中文识别率
+
+# VAE
+
+变分自编码器（Variational Auto-Encoder，VAE）是Autoencoder的一种扩展。
+
+论文：
+
+《Auto-Encoding Variational Bayes》
+
+以下部分主要摘自：
+
+https://kexue.fm/archives/5253
+
+变分自编码器（一）：原来是这么一回事
 
 ## 分布变换
 
@@ -89,11 +133,4 @@ VAE本质上就是在我们常规的自编码器的基础上，对encoder的结�
 ![](/images/img2/VAE_5.png)
 
 简言之，**重构的过程是希望没噪声的，而KL loss则希望有高斯噪声的，两者是对立的。所以，VAE跟GAN一样，内部其实是包含了一个对抗的过程，只不过它们两者是混合起来，共同进化的。**
-
-## 正态分布？
-
-对于$$p(Z\mid X)$$的分布，是不是必须选择正态分布？可以选择均匀分布吗？
-
-正态分布有两组独立的参数：均值和方差，而均匀分布只有一组。前面我们说，在VAE中，重构跟噪声是相互对抗的，重构误差跟噪声强度是两个相互对抗的指标，而在改变噪声强度时原则上需要有保持均值不变的能力，不然我们很难确定重构误差增大了，究竟是均值变化了（encoder的锅）还是方差变大了（噪声的锅）。而均匀分布不能做到保持均值不变的情况下改变方差，所以正态分布应该更加合理。
-
 

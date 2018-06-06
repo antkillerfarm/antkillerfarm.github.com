@@ -6,6 +6,22 @@ category: DL
 
 # RBM & DBN & Deep Autoencoder（续）
 
+## DBN
+
+RBM不仅可以单独使用，也可以堆叠起来形成Deep Belief Nets(DBNs)，其中每个RBM层都与其前后的层进行通信。单个层中的节点之间不会横向通信。
+
+深度置信网络可以直接用于处理无监督学习中的未标记数据聚类问题，也可以在RBM层的堆叠结构最后加上一个Softmax层来构成分类器。
+
+除了第一个和最后一个层，深度置信网络中的每一层都扮演着双重角色：既是前一层节点的隐藏层，也是后一层节点的输入（或“可见”）层。深度置信网络是由多个单层网络组成的。
+
+深度置信网络常用于图像、视频序列和动作捕捉数据的识别、聚类与生成。
+
+参考：
+
+https://mp.weixin.qq.com/s/7V0GSWcKZGyXeLeMPhE9fQ
+
+神经网络简史：BP算法后的又一突破—信念网络
+
 ## Deep Autoencoder
 
 ![](/images/img2/deep_autoencoder.png)
@@ -289,34 +305,4 @@ https://zhuanlan.zhihu.com/p/21331911
 https://zhuanlan.zhihu.com/p/31841353
 
 3D CNN阅读笔记
-
-https://zhuanlan.zhihu.com/p/25912625
-
-C3D network: 用于视频特征提取的3维卷积网络
-
-https://zhuanlan.zhihu.com/p/26350774
-
-SCNN-用于时序动作定位的多阶段3D卷积网络
-
-https://www.jiqizhixin.com/articles/2016-08-03
-
-FusionNet融合三个卷积网络：识别对象从二维升级到三维
-
-http://blog.csdn.net/zouxy09/article/details/9002508
-
-基于3D卷积神经网络的人体行为理解
-
-https://mp.weixin.qq.com/s/YdON6Yzddq2f_QGbQsOY8w
-
-深度三维残差神经网络：视频理解新突破
-
-## 参考
-
-https://mp.weixin.qq.com/s/qReN6z8s45870HSMCMNatw
-
-微软亚洲研究院：逐层集中Attention的卷积模型
-
-http://blog.csdn.net/shuzfan/article/details/77964370
-
-不规则卷积神经网络
 
