@@ -340,3 +340,6 @@ https://mp.weixin.qq.com/s/AVoySo0s6l85wTG9mgkrYQ
 
 Python网络爬虫与信息抽取系列笔记（共8篇）
 
+https://mp.weixin.qq.com/s/SEpclyZ5Y6iF7YF7_ZjQGg
+
+爬虫实战：爬取当当网所有Python书籍

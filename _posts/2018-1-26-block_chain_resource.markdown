@@ -212,6 +212,10 @@ https://mp.weixin.qq.com/s/Z2wz5jb7k4QVf0PNCd0THg
 
 Cocos王哲：讲解COCOS区块链游戏的发展之路！
 
+https://mp.weixin.qq.com/s/iKiU_QF5y4t1KMmr6WMctw
+
+一文看懂DGames（区块链游戏）的技术架构和业务逻辑！
+
 # CPU
 
 https://zhuanlan.zhihu.com/p/29743431

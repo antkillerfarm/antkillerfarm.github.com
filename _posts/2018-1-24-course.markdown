@@ -256,6 +256,10 @@ http://slazebni.cs.illinois.edu/spring17/
 
 CS 598 LAZ: Cutting-Edge Trends in Deep Learning and Recognition。这是一门研究生的课程，很有深度和广度。
 
+https://tianchi.aliyun.com/markets/tianchi/aiacademy
+
+阿里发布免费深度学习课程
+
 # 数据库
 
 https://blog.csdn.net/zhengzhb/article/details/8590390

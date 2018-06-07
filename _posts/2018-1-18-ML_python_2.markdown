@@ -312,6 +312,10 @@ https://mp.weixin.qq.com/s/rDg0mPA715zHmwpDMC_83Q
 
 用Python写一个抖音漂亮小姐姐发掘器。使用腾讯人脸API
 
+https://mp.weixin.qq.com/s/4PyXz2p00Lf783bEUg_N2Q
+
+距离产生美？k近邻算法python实现
+
 # 推荐系统的工程细节
 
 推荐系统不仅是算法，还包括若干工程细节。这些细节虽然不算复杂，够不上算法的层面，然而对产品的成败，却有举足轻重的作用。

@@ -106,6 +106,10 @@ https://mp.weixin.qq.com/s/df-k5kJcJXhSWbFMu2mtCA
 
 当前最好的词句嵌入技术概览：从无监督学习转向监督、多任务学习
 
+https://mp.weixin.qq.com/s/nmuLM38Q_0MVN_6EtQ_7fQ
+
+艾伦人工智能研究所提出新型深度语境化词表征
+
 # NN的INT8计算
 
 ## 概述

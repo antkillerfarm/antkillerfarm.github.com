@@ -226,6 +226,10 @@ https://mp.weixin.qq.com/s/Mp_thK_zTMOX0p5oSZOIQw
 
 一台笔记本打败超算：CMU冷扑大师团队提出全新德扑AI Modicum
 
+https://mp.weixin.qq.com/s/IVo28uAL4RQEKCF_j30QMA
+
+备战世界杯！先用深度学习与强化学习踢场FIFA 18
+
 ## AI医疗
 
 https://github.com/albarqouni/Deep-Learning-for-Medical-Applications

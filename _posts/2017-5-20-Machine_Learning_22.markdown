@@ -150,6 +150,8 @@ $$\mu=(A,B,\Pi)$$
 
 其中，A是transition probability，B是emission probability，$$\Pi$$是start probability。
 
+如果可见状态和隐含状态之间，存在一对一的关系，那么HMM就退化成普通的Markov链了。
+
 和HMM（Hidden Markov Model，隐马尔可夫模型）模型相关的算法主要分为三类，分别解决三种问题：
 
 1）**知道骰子有几种（隐含状态数量），每种骰子是什么（转换概率），根据掷骰子掷出的结果（可见状态链），我想知道每次掷出来的都是哪种骰子（隐含状态链）。**
