@@ -198,6 +198,14 @@ https://mp.weixin.qq.com/s/jHB5pRsisvh-ZB8uY1oRTA
 
 基于TensorFlow，人声识别如何在端上实现？
 
+https://mp.weixin.qq.com/s/I2XU9u28S6LFoTY4kizoqw
+
+清华大学郑方：语音技术与身份信息的隐私保护
+
+https://mp.weixin.qq.com/s/i7ugVM0mGqohThLW6NjNoQ
+
+阿里开源自研语音识别模型DFSMN，准确率高达96.04%
+
 # 语音合成
 
 语音合成（Speech synthesis），有时也叫做text-to-speech (TTS)。

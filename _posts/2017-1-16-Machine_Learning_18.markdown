@@ -200,6 +200,10 @@ https://mp.weixin.qq.com/s/_bAiiJqPjPPMzJ0hiuCkOg
 
 通过Python实现马尔科夫链蒙特卡罗方法的入门级应用
 
+https://mp.weixin.qq.com/s/BJaRUnpcPe8iybSz14gabw
+
+一文读懂如何用LSA、PSLA、LDA和lda2vec进行主题建模
+
 # 推荐系统进阶
 
 除了《机器学习（十三～十五）》提及的ALS和PCA之外，相关的算法还包括：

@@ -184,6 +184,10 @@ https://mp.weixin.qq.com/s/LZbprcnben6vPqsoC1DgDA
 
 DeepMind提出元梯度强化学习算法，显著提高大规模深度强化学习应用的性能
 
+https://mp.weixin.qq.com/s/JbCIBFDRvg5qcpZ11g58dw
+
+DeepMind提出关系性深度强化学习：在星际争霸2任务中获得最优水平
+
 # AlphaGo（续）
 
 ## 参考

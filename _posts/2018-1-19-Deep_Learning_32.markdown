@@ -327,3 +327,7 @@ One-shot Learning：孪生网络少样本精准分类
 https://mp.weixin.qq.com/s/J8ZmIVKd-4X3hMGGIJWoDQ
 
 一文看懂迁移学习：从基础概念到技术研究！
+
+https://mp.weixin.qq.com/s/aqmeIEVIG-845wiKlyXlsA
+
+小数据、高准确率的文本分类：利用迁移学习创造通用语言模型

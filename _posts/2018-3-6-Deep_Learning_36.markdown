@@ -232,6 +232,18 @@ https://mp.weixin.qq.com/s/HS2zcnA1YSRU8-DrodJ6Qw
 
 淘宝用强化学习优化商品搜索后，总收入能提高2%
 
+https://mp.weixin.qq.com/s/9Fcj5lO-JPfFVnRSSM_56w
+
+深度学习在美团搜索广告排序的应用实践
+
+https://mp.weixin.qq.com/s/QZeyEN2DDM_etEki7uodMg
+
+一个神奇的特征选择轮子----MLFeatureSelection
+
+https://mp.weixin.qq.com/s/aZsj1FQnzHOr-YBcy_ljpw
+
+DNN在搜索场景中的应用
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

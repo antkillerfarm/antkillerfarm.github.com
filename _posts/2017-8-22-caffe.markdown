@@ -24,6 +24,47 @@ API：
 
 http://caffe.berkeleyvision.org/doxygen/index.html
 
+## 安装
+
+Ubuntu 17.04以后：
+
+`sudo apt install caffe-cpu`
+
+`sudo apt install caffe-cuda`
+
+不过由于DL进展比较快，自定义Layer的需求也是相当广泛，因此有必要掌握源代码编译的方法。
+
+`sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler`
+
+`sudo apt-get install --no-install-recommends libboost-all-dev`
+
+虽然Caffe支持CMake Build，但是定制化没有Make Build方便，所以我选择后者。
+
+{% highlight bash %}
+cp Makefile.config.example Makefile.config
+make all -j 8
+make test -j 8
+make runtest -j 8
+{% endhighlight %}
+
+这里会遇到`fatal error: hdf5.h`的问题，解决办法：
+
+Makefile.config文件的第90行：
+
+`INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include`
+
+改为：
+
+`INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial/`
+
+Makefile文件的第180行：
+
+`LIBRARIES += glog gflags protobuf boost_system boost_filesystem m hdf5_hl hdf5`
+
+改为：
+
+`LIBRARIES += glog gflags protobuf boost_system boost_filesystem m hdf5_serial_hl hdf5_serial`
+
 ## 运行方式
 
 Caffe有两种运行方式：

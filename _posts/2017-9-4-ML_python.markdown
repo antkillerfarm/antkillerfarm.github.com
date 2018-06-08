@@ -432,6 +432,20 @@ mlpy是一个开源的ML库。只是它最近的一次更新，已经是2012年�
 
 http://mlpy.sourceforge.net
 
+## Pyecharts
+
+pyecharts是一个用于生成Echarts图表的类库。Echarts是百度开源的一个数据可视化JS库。
+
+官网：
+
+http://pyecharts.org/
+
+参考：
+
+https://mp.weixin.qq.com/s/3T594c4DzuRmPW5A4zu8Dg
+
+Pyecharts：极其强大的Python数据可视化模块
+
 ## 参考
 
 https://mp.weixin.qq.com/s/S7gnAdekPFcyd4ni1m9phg

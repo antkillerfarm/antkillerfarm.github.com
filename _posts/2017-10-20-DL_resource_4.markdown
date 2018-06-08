@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/IVo28uAL4RQEKCF_j30QMA
 
 备战世界杯！先用深度学习与强化学习踢场FIFA 18
 
+https://mp.weixin.qq.com/s/Bl1iFTzqeWwR1fIiIDrOlw
+
+Kaggle 20G数据集强势分析“绝地求生”，科学吃鸡攻略拿走不谢！
+
 ## AI医疗
 
 https://github.com/albarqouni/Deep-Learning-for-Medical-Applications

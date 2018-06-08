@@ -102,6 +102,10 @@ https://mp.weixin.qq.com/s/m5GRNp6qDfVfC0mkQ4m4Yw
 
 神经语言模型如何利用上下文信息：长距离上下文的词序并不重要
 
+https://mp.weixin.qq.com/s/kuoUnt2Vhz9NhfnNqMFAhQ
+
+DeepMind提出关系RNN：构建关系推理模块，强化学习利器
+
 # L2 Normalization
 
 L2 Normalization本身并不复杂，然而多数资料都只提到1维的L2 Normalization的计算公式：
