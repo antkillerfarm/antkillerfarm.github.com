@@ -382,3 +382,19 @@ https://mp.weixin.qq.com/s/3enk8alUaYoYqtf4hju7mA
 
 通俗解释优化的线性感知机算法：Pocket PLA
 
+https://mp.weixin.qq.com/s/824-TbpwJz9n_jT9uuOE8g
+
+中小企业如何做好推荐系统？
+
+https://mp.weixin.qq.com/s/ibiElLIgrT3wYx3tDYMMTw
+
+理解特征工程
+
+https://mp.weixin.qq.com/s/qfsakjq9D06DeIe6yx8aJw
+
+供应链、物流、采购到底有什么区别？
+
+https://mp.weixin.qq.com/s/4sfWR-BTtIYipUZQD5kyyg
+
+整数规划求解方法大全
+

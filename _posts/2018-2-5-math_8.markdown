@@ -251,19 +251,9 @@ https://www.zhihu.com/question/22913867
 
 4.复数在场论描述中的应用。
 
-# 张量分析
+参考：
 
-在同构的意义下，第零阶张量（r = 0）为标量（Scalar），第一阶张量（r = 1）为向量（Vector），第二阶张量（r = 2）则成为矩阵（Matrix）。
+https://mp.weixin.qq.com/s/SUWUAMQjSuB5Gs06SPliTQ
 
-《张量分析》，黄克智著。
-
->注：黄克智，1927年生，固体力学家。江西中正大学本科+清华硕士+莫斯科大学博士（因应召回国，放弃博士学位）。清华大学工程力学系教授、工程力学研究所所长，中国科学院院士。断裂力学领域权威。
-
-# 拓扑学
-
-《Topopogy Without Tears》，University of New South Wales的Sidney A. Morris著。
-
-该书的中文版：
-
-http://www.topologywithouttears.net/topbookchinese.pdf
+复数求导在信号处理中的应用
 

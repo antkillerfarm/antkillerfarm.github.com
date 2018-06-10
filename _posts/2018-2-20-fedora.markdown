@@ -129,6 +129,14 @@ Install TightVNC Server in RHEL/CentOS and Fedora to Access Remote Desktops
 
 ## 2018.4（续）
 
+Kyligence CEO韩卿：
+
+我毕业后加入的第一家公司叫做：浙大中控（中控集团），一家提供自动化与信息化技术和产品的高科技公司。自动化，非常抽象，说的简单点，化工厂，啤酒厂，水泥厂等流程行业，各个环节的控制不可能靠人工去监控和调节各种参数、温度等，必须有一整套的自动化系统来管理和控制，确保稳定的工艺，及更重要的安全性等。然而，这样一套系统，以前都是被霍尼韦尔等国外巨头垄断，每个化工厂都需要购买，且没有谈判价格的余地。今天，依然记得很清楚，入职培训的时候，负责技术的金总讲过的那些故事。中控在那个年代，做出的第一代产品推销极难，只能在浙江的小厂不断实验和验证，不断的获取客户的信任，不断改进产品和技术。艰苦的几年后终于获得了行业的认可，当有能力做到领先水平的时候，国外巨头却不断降价来封杀来竞争。不过竞争的结果，中控在国内今天是自动化控制行业的龙头，承担863计划，有博士后工作站，不得不说，如果没有中控，作为基础行业的化工等行业在这块的技术极大可能还将被垄断在国外巨头手中。
+
+![](/images/img2/China_USA.jpg)
+
+----
+
 1940年10月4日，日本海军第12航空队8架零战掩护27架攻击机空袭成都。第12航空队第3小队长东山市郎空曹长、羽切松雄1空曹、大石英男2空曹、中濑正幸3空曹竟不可一世地降落于成都太平寺机场，接下来就膛目结舌地发生了东山、中濑两人在举目无人的光天化日之下，竟相约徒手一举将指挥所纵火烧毁，再升空扬长而去。
 
 1938年7月18日日机混合编队空袭南昌，第15航空队舰爆分队长松本真实少佐所属的小川正一中尉所率小野了、德永、滨上等4架95舰爆一举突破了中、苏战机的拦截，对南昌新机场实施轰炸，小野了2空兵甚至明目张胆地降落于新机场，肆无顾忌地将地面我战机5架放火焚毁，再升空归队，并报称击落我2架战机。
@@ -259,64 +267,7 @@ https://www.sohu.com/a/233954413_157078
 
 套路多的何止三文鱼 你买的“鳕鱼”也没几条是真的
 
-# DL参考资源
+----
 
-https://mp.weixin.qq.com/s/sbuqNhIVTDUe4Q6BxS5fWw
+![](/images/img2/Physics.jpg)
 
-盘点金融领域里常用的深度学习模型
-
-https://mp.weixin.qq.com/s/R6vZU_gBaODsh1XtsjTpFA
-
-MIT与FAIR提出“mixup”：利用数据和标签的随机线性插值提高神经网络的健壮性
-
-https://mp.weixin.qq.com/s/xZbsxAqo0mVUb-LyH6fU1g
-
-Yann LeCun：大脑如何高效率学习？
-
-https://mp.weixin.qq.com/s/mfdF5I2vsYJeShnOh_cp8Q
-
-MIT新算法骗过神经网络3D物体分类，成功率超90%
-
-https://mp.weixin.qq.com/s?__biz=MzI3MTM5ODA0Nw==&mid=2247484058&idx=1&sn=0dfe92a0991294afba2514b137217a66
-
-朱松纯：浅谈人工智能：现状、任务、构架与统一
-
-https://mp.weixin.qq.com/s/_w4IIRY6LwqehpDlEXt90A
-
-牛津大学提出神经网络新训练法：用低秩结构增强网络压缩和对抗稳健性
-
-https://zhuanlan.zhihu.com/p/36520673
-
-让机器“观色”：真实世界的表情识别
-
-https://mp.weixin.qq.com/s/d4N-Xz0NImb5khLup5DmpQ
-
-让机器“察言作画”：从语言到视觉
-
-https://mp.weixin.qq.com/s/zBNJzajap4Lwb5o_W2A-jw
-
-让机器“析毫剖厘”：图像理解与编辑
-
-https://mp.weixin.qq.com/s/_WOzunt9_I-tDZ1NaCguyA
-
-让机器“答问如流”：从视觉到语言
-
-https://mp.weixin.qq.com/s/rKHA2H4msHSInVn7A-fqHg
-
-让机器“看山是山”：脑启发的视觉计算
-
-https://mp.weixin.qq.com/s/MHaweyu4zegUrrgu6gm_LQ
-
-让机器“删繁就简”：深度神经网络加速与压缩
-
-https://mp.weixin.qq.com/s/_HxhOp1E7cRD03RXqx97Vg
-
-让机器“提纲挈领”：视觉系统的紧凑性初探
-
-https://mp.weixin.qq.com/s/C1PydJQJjZtf0mHIIDcFvg
-
-让机器“解疑释惑”：视觉世界中的结构化理解
-
-https://mp.weixin.qq.com/s/SB5ZSD_YGPvC6hPTZXiB4A
-
-让机器“一叶知秋”：弱监督视觉语义分割

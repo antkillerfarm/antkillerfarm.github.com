@@ -86,6 +86,16 @@ https://blog.csdn.net/quhediegooo/article/details/68946100
 
 子空间高斯混合模型-SGMM
 
+# PLP
+
+Perceptual Linear Prediction
+
+《Perceptual Time Varying Linear Prediction Model for Speech Applications》
+
+https://www.isip.piconepress.com/courses/msstate/ece_8463/lectures/current/lecture_17/index.html
+
+SPECTRAL TRANSFORMATIONS
+
 # VTLN
 
 https://blog.csdn.net/jiangyangbo/article/details/6535928
@@ -156,7 +166,7 @@ Voice Detection包括两个方面：
 
 英语一般包含43个音素，因此Tri-phone共有$$43^3\approx 80K$$种不同组合。
 
-但是这些组合的概率是众寡悬殊的，有些组合很常见，而有些组合很罕见。因此我们需要合并相似的发音组合。这通常采用CART决策树来进行聚类。
+但是这些组合的概率是众寡悬殊的，有些组合很常见，而有些组合很罕见。因此我们需要合并相似的发音组合。这通常采用CART决策树来进行聚类。这样做还可以减少状态数量，提高计算效率。
 
 ## 发音词典
 
@@ -241,13 +251,19 @@ https://blog.csdn.net/xmdxcsj/article/details/78512652
 
 Weighted-Finite-State-Transducer
 
+论文：
+
+《Speech Recognition with Weighted Finite-State Transducers》
+
+参考：
+
 https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/ParallelizingWFSTSpeechDecoders.ICASSP2016.pdf
 
-PARALLELIZING WFST SPEECH DECODERS
+《parallelizing WFST speech decoders》
 
 http://www.cs.nyu.edu/~mohri/pub/csl01.pdf
 
-Weighted Finite-State Transducers in Speech Recognition
+《Weighted Finite-State Transducers in Speech Recognition》
 
 https://blog.csdn.net/l_b_yuan/article/category/6132477
 
@@ -260,6 +276,10 @@ http://djt.qq.com/article/view/507
 https://blog.csdn.net/lucky_ricky/article/details/77511543
 
 Kaldi WFST 构图 学习
+
+https://blog.csdn.net/dearwind153/article/details/70053704
+
+Kaldi HCLG深入理解
 
 # 汽车声学
 

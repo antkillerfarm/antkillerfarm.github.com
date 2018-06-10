@@ -260,6 +260,18 @@ https://tianchi.aliyun.com/markets/tianchi/aiacademy
 
 阿里发布免费深度学习课程
 
+https://www.isip.piconepress.com/courses/msstate/ece_8443/index.html
+
+ECE 8443: pattern recognition
+
+https://www.isip.piconepress.com/courses/msstate/ece_8423/index.html
+
+ECE 8423: adaptive signal processing
+
+http://crcv.ucf.edu/courses/
+
+UCF的系列Vision课程，其中的CAP 6412：Advanced Computer Vision是一门高级课程。
+
 # 数据库
 
 https://blog.csdn.net/zhengzhb/article/details/8590390
@@ -363,4 +375,8 @@ Spark Streaming 实时计算在甜橙金融监控系统中的应用及优化
 https://mp.weixin.qq.com/s/syM4ReAWpZ5d4KI87ogpiQ
 
 从单一架构到分布式交易架构，网易严选的成功实践
+
+https://mp.weixin.qq.com/s/qh88sawJUZedv3X0LIRsAQ
+
+ESearch：58集团基于C++语言自主研发的搜索内核
 

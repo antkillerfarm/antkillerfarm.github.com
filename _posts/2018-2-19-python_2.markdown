@@ -426,3 +426,12 @@ https://mp.weixin.qq.com/s/VPCUd5op6Vd-b0LbFEMSYQ
 
 秒懂Python编程中的if __name__ == 'main' 的作用和原理
 
+https://mp.weixin.qq.com/s/FtlAkInyXgvUxDnSCikTIw
+
+全面深入理解Python面向对象编程
+
+https://mp.weixin.qq.com/s/_PtdgGElw0mvr_rRm5xrCg
+
+Python性能优化的20条招数
+
+

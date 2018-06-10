@@ -85,6 +85,26 @@ http://berlin.csie.ntnu.edu.tw/Courses/Speech%20Processing/Speech%20Processing_M
 
 Speech Processing。国立台湾师范大学的陈柏琳教授的课程。陈教授教学多年，主页上还有好多其他课程。
 
+https://www.isip.piconepress.com/courses/msstate/ece_8463/lectures/current/index.html
+
+Mississippi State University：ECE 8463: fundamentals of speech recognition
+
+https://www.isip.piconepress.com/courses/msstate/ece_7000_speech/index.html
+
+ECE 8000: special topics in speech recognition
+
+https://www.isip.piconepress.com/courses/msstate/ece_8990_info/index.html
+
+ECE 8990: Information Theory。这门课偏重数学理论，包括Entropy、Markov Processes、Kolmogorov Complexity等内容，适合用于补数学基础。
+
+http://courses.cs.tamu.edu/rgutier/csce630_f14/
+
+CSCE 630: Speech Processing
+
+http://courses.cs.tamu.edu/rgutier/cpsc689_s07/
+
+CPSC 689-604: Special topics in Speech and Face Recognition
+
 ## blog
 
 http://www.cnblogs.com/welen/
@@ -278,18 +298,4 @@ AISHELL数据库是THCHS-30之后，目前中文语音数据开源最大的数�
 **语言模型**估计通过重训练语料学习词之间的相互概率，来估计假设词序列的可能性，也即语言模型得分。如果了解领域或者任务相关的先验知识，语言模型得分通常可以估计得更准确。
 
 **解码器**对给定的特征向量序列和若干假设词序列计算声学模型得分和语言模型得分，将总体输出分数最高的词序列作为识别结果。
-
-![](/images/img2/speech_2.png)
-
-上图是一个实际的recognition engine的结构图。其原文地址：
-
-https://eprints.lib.hokudai.ac.jp/dspace/bitstream/2115/39654/1/MP-SS1-4.pdf
-
-王赟写的《语音识别技术的前世今生》，写的非常好，下载地址：
-
-https://zhihu-live.zhimg.com/0af15bfda98f5885ffb509acd470b0fa
-
->王赟，清华本科（2010）+CMU在读博士。   
->个人主页：   
->http://www.cs.cmu.edu/~yunwang/
 

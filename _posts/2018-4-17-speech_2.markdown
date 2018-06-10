@@ -6,6 +6,20 @@ category: graphics
 
 # 基本框架（续）
 
+![](/images/img2/speech_2.png)
+
+上图是一个实际的recognition engine的结构图。其原文地址：
+
+https://eprints.lib.hokudai.ac.jp/dspace/bitstream/2115/39654/1/MP-SS1-4.pdf
+
+王赟写的《语音识别技术的前世今生》，写的非常好，下载地址：
+
+https://zhihu-live.zhimg.com/0af15bfda98f5885ffb509acd470b0fa
+
+>王赟，清华本科（2010）+CMU在读博士。   
+>个人主页：   
+>http://www.cs.cmu.edu/~yunwang/
+
 下面是网友写的注解版本：
 
 http://www.cnblogs.com/lyu0709/p/6929659.html

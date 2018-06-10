@@ -4,9 +4,85 @@ title:  Kaldi（二）
 category: AI 
 ---
 
-# Kaldi
+# 数据格式
 
-## nnet（续）
+## text
+
+`utt_id    WORD1 WORD2 WORD3 WORD4 ...`
+
+{% highlight text %}
+110236_20091006_82330_F_0001 I'M WORRIED ABOUT THAT
+110236_20091006_82330_F_0002 AT LEAST NOW WE HAVE THE BENEFIT
+110236_20091006_82330_F_0003 DID YOU EVER GO ON STRIKE
+{% endhighlight %}
+
+## segments
+
+`utt_id    file_id    start_time    end_time`
+
+{% highlight text %}
+110236_20091006_82330_F_001 110236_20091006_82330_F 0.0 3.44
+110236_20091006_82330_F_002 110236_20091006_82330_F 4.60 8.54
+110236_20091006_82330_F_003 110236_20091006_82330_F 9.45 12.05
+110236_20091006_82330_F_004 110236_20091006_82330_F 13.29 16.13
+{% endhighlight %}
+
+## wav.scp
+
+`file_id    path/file`
+
+{% highlight text %}
+110236_20091006_82330_F path/110236_20091006_82330_F.wav
+111138_20091215_82636_F path/111138_20091215_82636_F.wav
+111138_20091217_82636_F path/111138_20091217_82636_F.wav
+{% endhighlight %}
+
+## utt2spk
+
+`utt_id    spkr_id`
+
+{% highlight text %}
+110236_20091006_82330_F_0001 110236
+110236_20091006_82330_F_0002 110236
+110236_20091006_82330_F_0003 110236
+{% endhighlight %}
+
+## spk2utt
+
+`spkr_id    utt_id1 utt_id2 utt_id3`
+
+## lexicon.txt
+
+lexicon.txt就是发声词典。
+
+{% highlight text %}
+WORD        W ER D
+LEXICON     L EH K S IH K AH N
+{% endhighlight %}
+
+# 对齐工具
+
+Montreal-Forced-Aligner：
+
+https://github.com/MontrealCorpusTools/Montreal-Forced-Aligner
+
+Penn Forced Aligner：
+
+https://web.sas.upenn.edu/phonetics-lab/
+
+FAVE：
+
+http://fave.ling.upenn.edu
+
+# nnet
+
+2010年以后，DL算法逐渐取代传统算法，成为目前的主流。因此，传统部分的代码已经基本稳定，而DL部分还在不断更新中。
+
+kaldi包含了三个不同的DL实现：
+
+nnet1：最早的一个实现，由Karel Vesely维护，因此又叫做Karel's DNN。这个版本只支持单GPU训练，因此修改起来比较简单。nnet1还使用了早期DL常用的pre-training步骤，这在目前基本已经废弃了。
+
+nnet2：nnet1的加强版，由Daniel Povey维护，又叫做Dan's DNN。这个版本支持多GPU、多GPU多线程，而且这些GPU可以不在一台PC上。
 
 kaldi的nnet1和nnet2是以层设计为基础的，也即当你新增加一种神经网络层时需要自己定义它的结构，都有哪些变量，正向怎么算，反向误差怎么传播等等，并且过于复杂的连接方式很难支持。
 
@@ -20,7 +96,7 @@ kaldi中cnn的例程较少，而且其最新的cnn实现单元TimeHeightConvolut
 
 值得注意的是，除了TensorFlow提供的Speech Commands Datasets之外，其他的数据集基本都是以一句话作为训练数据的最小单元。由于训练数据存在着语音和文字之间的帧对齐问题，因此即便是DL方案，通常也需要利用由传统方法生成的粗糙模型，进行相关的对齐操作。
 
-## online
+# online
 
 online识别通常会通过麦克风来获取音频，这部分一般是系统函数调用获取得到音频数据，一般系统采用16k采样率，16bits，单通道的音频。当然也可能会用到高采样率等，但对于识别来说已经足够。
 
@@ -40,7 +116,7 @@ https://mp.weixin.qq.com/s/Scq8LumtTisPAdRE4CYPdA
 
 kaldi里的在线识别
 
-## 数据增强
+# 数据增强
 
 数据集的基础数据往往是单一的，我们怎么才能让数据变多呢？
 

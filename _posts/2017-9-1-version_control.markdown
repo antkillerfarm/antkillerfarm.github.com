@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  版本管理工具的前世今生, awk&sed&grep, Win10历险记, 运维工具集, Kannel
+title:  版本管理工具的前世今生, Kannel, awk&sed&grep, Win10历险记, 运维工具集
 category: technology 
 ---
 
@@ -202,5 +202,12 @@ http://baojie.org/blog/2014/06/23/python-text-extraction/
 浏览器默认是不允许在HTTPS里面引用HTTP资源的，一般都会弹出提示框，用户确认后才会继续加载，用户体验非常差。
 
 对于同时支持HTTPS和HTTP的资源，引用的时候要把引用资源的URL里的协议头去掉，例如：//www.example.com/scirpt.js，这样相当于相对路径，即浏览器会自动根据当前是HTTPS还是HTTP来给资源URL补上协议头的，可以达到无缝切换。
+
+# DL参考资源
+
+https://mp.weixin.qq.com/s/b7QSUeHb2fYTKk3e3V00uA
+
+担心面部识别泄露隐私？多伦多大学图像“隐私过滤器”了解一下
+
 
 

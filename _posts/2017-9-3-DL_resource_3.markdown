@@ -48,6 +48,10 @@ https://mp.weixin.qq.com/s/QjoxqCpN5JDroBowWmVk1Q
 
 边玩边入门深度学习，我们帮你找了10个简易应用demo
 
+https://mp.weixin.qq.com/s/8TALhdJqyR9WJOz2RjENBw
+
+生产级深度学习的开发经验分享：数据集的构建和提升是关键
+
 http://mp.weixin.qq.com/s/G4lQqiiVvmCW9SmX2blDEg
 
 实战——目标检测与识别

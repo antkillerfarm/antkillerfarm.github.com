@@ -192,6 +192,30 @@ http://blog.csdn.net/augusdi/article/details/12833235
 
 # DL参考资源
 
+https://mp.weixin.qq.com/s/sbuqNhIVTDUe4Q6BxS5fWw
+
+盘点金融领域里常用的深度学习模型
+
+https://mp.weixin.qq.com/s/R6vZU_gBaODsh1XtsjTpFA
+
+MIT与FAIR提出“mixup”：利用数据和标签的随机线性插值提高神经网络的健壮性
+
+https://mp.weixin.qq.com/s/xZbsxAqo0mVUb-LyH6fU1g
+
+Yann LeCun：大脑如何高效率学习？
+
+https://mp.weixin.qq.com/s/mfdF5I2vsYJeShnOh_cp8Q
+
+MIT新算法骗过神经网络3D物体分类，成功率超90%
+
+https://mp.weixin.qq.com/s?__biz=MzI3MTM5ODA0Nw==&mid=2247484058&idx=1&sn=0dfe92a0991294afba2514b137217a66
+
+朱松纯：浅谈人工智能：现状、任务、构架与统一
+
+https://mp.weixin.qq.com/s/_w4IIRY6LwqehpDlEXt90A
+
+牛津大学提出神经网络新训练法：用低秩结构增强网络压缩和对抗稳健性
+
 https://mp.weixin.qq.com/s/ygt31lL0mBcyRmwAlsl8Sg
 
 RCN仅凭极少样本就成功攻破验证码
@@ -272,4 +296,7 @@ https://mp.weixin.qq.com/s/bKpQPuUlnuYo0SZdZ9TPVQ
 
 可微编程：打开深度学习的黑盒子
 
+https://mp.weixin.qq.com/s/w5ldyp00CqkX8Kp-8Aw0nQ
+
+图深度学习(GraphDL)，下一个人工智能算法热点？一文了解最新GDL相关文章
 

@@ -178,6 +178,10 @@ https://zhuanlan.zhihu.com/p/35969159
 
 CRF条件随机场
 
+https://mp.weixin.qq.com/s/0FIns5Xt2G1seqFbpGvzTQ
+
+长文详解基于并行计算的条件随机场
+
 # 异常点检测
 
 http://chuansong.me/n/377440751130

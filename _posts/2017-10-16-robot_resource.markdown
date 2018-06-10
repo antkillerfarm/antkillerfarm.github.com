@@ -434,3 +434,11 @@ https://mp.weixin.qq.com/s/aXck7MLpHojuIkvVP1iHKg
 
 北航机器人研究所名誉所长王田苗：人工智能与机器人的发展趋势
 
+https://mp.weixin.qq.com/s/V3PLx3kP9zOcR1CZZI8Yqw
+
+速感科技CTO张一茗：视觉SLAM的技术现状和应用趋势
+
+https://mp.weixin.qq.com/s/k3RbUz9txd09PpiLUEHVfA
+
+无人驾驶汽车系统入门：深度前馈网络，深度学习的正则化，交通信号识别
+

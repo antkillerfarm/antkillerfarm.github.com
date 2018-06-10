@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十一）——依存分析, 信息检索, Image Caption Generation, AlphaGo（1）
+title:  深度学习（三十一）——依存分析, 信息检索, Image Caption Generation
 category: DL 
 ---
 
@@ -241,56 +241,4 @@ https://mp.weixin.qq.com/s/vRHA3Hf1ivsgKBB2XuECNg
 https://mp.weixin.qq.com/s/DXRiGSI0p8u7yA9uW1hHxA
 
 最新四篇CVPR2018 视频描述生成相关论文—双向注意力、Transformer、重构网络、层次强化学习
-
-# AlphaGo
-
-樊麾讲解AlphaGo与李世石的五番棋：
-
-https://deepmind.com/research/alphago/alphago-games-simplified-chinese/
-
-论文：
-
-《Mastering the game of Go with deep neural networks and tree search》
-
-## Leela Zero
-
-Leela Zero是比利时人Gian-Carlo Pascutto开源的围棋AI。它的算法与AlphaGo Zero相同。而训练采用GTP协议，集合全球算力，进行分布式训练。
-
-官网：
-
-http://zero.sjeng.org/
-
-代码：
-
-https://github.com/gcp/leela-zero
-
->十多年前，当我还是一个中二青年的时候，就幻想有朝一日能够拿围棋世界冠军。当然，就算再中二，我自己也明白靠实力那是不可能的，当时做梦的法宝是制造一个AI，然后碾压一下所谓的国手。   
->按照当时人们的预计(2000年前后)，这个AI在2030年之前，都不可能造出来，然而，最终的结果实际上只花了一半左右的时间。   
->再之后，随着AI围棋的平民化，我的中二梦终于也有人将之付诸实现了：   
->https://mp.weixin.qq.com/s/npt2zZrKwPnNdY-hsa2RjQ   
->AI再乱围棋圈：“食言之战”柯洁落败；首例素人作弊引风波
-
-这次作弊风波所使用的AI就是Leela Zero，可见目前（2018.5）它的棋力已经超过了顶尖棋手。
-
-## ELF OpenGo
-
-ELF OpenGo是Facebook开源的围棋AI，它是FB的AI游戏框架ELF的一部分。
-
-官网：
-
-https://github.com/pytorch/ELF
-
-## PhoenixGo
-
-PhoenixGo是腾讯微信团队的AlphaGo Zero复刻版。
-
-官网：
-
-https://github.com/Tencent/PhoenixGo
-
-参考：
-
-https://mp.weixin.qq.com/s/tJDmxsuS1QigYS75ZIdzRA
-
-微信团队开源围棋AI技术PhoenixGo，复现AlphaGo Zero论文
 

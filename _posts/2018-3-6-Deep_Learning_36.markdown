@@ -244,6 +244,10 @@ https://mp.weixin.qq.com/s/aZsj1FQnzHOr-YBcy_ljpw
 
 DNN在搜索场景中的应用
 
+https://mp.weixin.qq.com/s/1jgdI-Pt0PtN3oAs0Wh4XA
+
+阿里提出电商搜索全局排序方法，淘宝无线主搜GMV提升5%
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512
