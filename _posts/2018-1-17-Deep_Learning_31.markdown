@@ -242,3 +242,7 @@ https://mp.weixin.qq.com/s/DXRiGSI0p8u7yA9uW1hHxA
 
 最新四篇CVPR2018 视频描述生成相关论文—双向注意力、Transformer、重构网络、层次强化学习
 
+https://mp.weixin.qq.com/s/bDLVD_8LscgWSNp0ZNc0Pg
+
+图像和文本的融合表示学习——Text2Image和Image2Text
+

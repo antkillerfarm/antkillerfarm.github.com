@@ -6,6 +6,30 @@ category: resource
 
 # DL参考资源
 
+https://mp.weixin.qq.com/s/NdwbnEMEVfiX6YGepK9PBA
+
+追根溯源！一图看尽深度学习架构谱系
+
+https://mp.weixin.qq.com/s/_IOdMk8CJbZkeYO9CDDgZQ
+
+AI设计师“鲁班”进化史：每秒制作8000张双11海报，没有一张雷同！
+
+https://mp.weixin.qq.com/s/UsoLQbrwj6rpLUAV5kYkUA
+
+大数据和网络分析的可扩展算法
+
+https://mp.weixin.qq.com/s/I9dm8uDEqO0X19s758jOGw
+
+良心GitHub项目：各种机器学习任务的顶级结果（论文）汇总
+
+https://mp.weixin.qq.com/s/UfmyH4BBWwErakrOoselQA
+
+随机计算图：在随机结点中执行反向传播的新方法
+
+https://mp.weixin.qq.com/s/Yoledi-OYgJmafxKBlHVPg
+
+国科大本科生以第一作者身份发表AAAI论文，用神经网络分析三维模型
+
 https://mp.weixin.qq.com/s/kLXJsHbBnRIFC3NLChPhzA
 
 如何高效进行大规模分类？港中文联合商汤提出新方法

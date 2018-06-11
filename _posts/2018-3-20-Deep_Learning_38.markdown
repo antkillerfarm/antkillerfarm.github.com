@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十八）——深度强化学习（2）, CNN进阶
+title:  深度学习（三十八）——深度强化学习（2）, CNN进阶, 行人重识别
 category: DL 
 ---
 
@@ -201,3 +201,60 @@ https://mp.weixin.qq.com/s/hIAIbpqItS09KDOSFxaeqg
 https://mp.weixin.qq.com/s/r143qYj8bziu_N-27RWRRw
 
 机器学习5年大跃进，可能是个错觉
+
+# 行人重识别
+
+行人重识别（Person re-identification）也称行人再识别，是利用计算机视觉技术判断图像或者视频序列中是否存在特定行人的技术。广泛被认为是一个图像检索的子问题。给定一个监控行人图像，检索跨设备下的该行人图像。旨在弥补目前固定的摄像头的视觉局限，并可与行人检测/行人跟踪技术相结合 ，可广泛应用于智能视频监控、智能安保等领域。
+
+https://mp.weixin.qq.com/s/ZmX_ir1pSUZbCaFpbcQ6Lw
+
+一文读懂行人检测算法
+
+https://zhuanlan.zhihu.com/p/26168232
+
+行人重识别：从哈利波特地图说起
+
+https://mp.weixin.qq.com/s/_NDw7pFmDB07mliHTA6VYQ
+
+旷视行人再识别（ReID）突破
+
+https://zhuanlan.zhihu.com/p/31181247
+
+从人脸识别到行人重识别，下一个风口
+
+https://mp.weixin.qq.com/s/zRdJktyk1LZWUd2cyTjpiw
+
+基于图像检索的行人重识别
+
+https://zhuanlan.zhihu.com/p/31473785
+
+行人再识别中的迁移学习：图像风格转换
+
+https://mp.weixin.qq.com/s/fX94rPgNHrOaQTqBv-ZADg
+
+基于视频的行人再识别新进展：区域质量估计方法和高质量的数据集
+
+https://mp.weixin.qq.com/s/rf-pGfkQFK3abkOLEEVOeA
+
+PTGAN：针对行人重识别的生成对抗网络
+
+https://zhuanlan.zhihu.com/p/34778414
+
+基于时空模型无监督迁移学习的行人重识别
+
+https://zhuanlan.zhihu.com/p/35296881
+
+刷新三数据集纪录的跨镜追踪(行人再识别-ReID)技术介绍
+
+https://mp.weixin.qq.com/s/ZbmJGO3lqwNM2z-E4_Mpbw
+
+由“刷脸”到“识人”，云从科技刷新跨镜追踪(ReID)技术三项世界纪录！
+
+https://mp.weixin.qq.com/s/leuILzYz40PqrwsCatYhPw
+
+行人再识别年度进展
+
+https://zhuanlan.zhihu.com/p/37931822
+
+你需要知道的10种行人属性
+

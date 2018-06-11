@@ -8,6 +8,10 @@ category: resource
 
 ## 量子计算
 
+https://www.zhihu.com/people/xuan-xing-29/posts
+
+某量子通信牛人的blog
+
 https://www.zhihu.com/question/28171555
 
 如何理解“量子退火”？
@@ -403,22 +407,4 @@ https://mp.weixin.qq.com/s/hoo34-eMcYV7hV6LFbJqcg
 https://mp.weixin.qq.com/s/yAC6VTOl3jAxjUT0QbTVrw
 
 为什么要在边缘设备部署机器学习？
-
-## 连续学习
-
-https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
-
-终身机器学习: 一种持续学习的范式
-
-https://mp.weixin.qq.com/s/SBppyDBWqQUariiHbpaq1w
-
-实时深度学习的推理加速和连续学习
-
-https://mp.weixin.qq.com/s/83HufWMDnuXIOCCfgqeDJw
-
-为什么说持续学习才是AI的关键
-
-https://mp.weixin.qq.com/s/kmEFjzFIbNq0_qdjc1Wm_w
-
-DeepMind新智能体架构Unicorn：持续学习能力胜过多个基准智能体
 

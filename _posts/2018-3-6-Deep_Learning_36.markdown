@@ -248,6 +248,14 @@ https://mp.weixin.qq.com/s/1jgdI-Pt0PtN3oAs0Wh4XA
 
 阿里提出电商搜索全局排序方法，淘宝无线主搜GMV提升5%
 
+https://mp.weixin.qq.com/s/8MQ1G-JWGAw5Ev1Ws3V_ig
+
+IJCAI 2018国际广告算法大赛迁移学习夺冠，中国包揽冠亚季军
+
+https://mp.weixin.qq.com/s/QCGemlo8CYIz6imMde_cmg
+
+推荐系统中的机器学习算法与评估实战
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

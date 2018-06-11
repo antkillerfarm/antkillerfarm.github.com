@@ -22,31 +22,25 @@ https://mp.weixin.qq.com/s/lKm_ypn5I7tSjoQHceJ0jQ
 
 概率编程：使用贝叶斯神经网络预测金融市场价格
 
+## 连续学习
+
+https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
+
+终身机器学习: 一种持续学习的范式
+
+https://mp.weixin.qq.com/s/SBppyDBWqQUariiHbpaq1w
+
+实时深度学习的推理加速和连续学习
+
+https://mp.weixin.qq.com/s/83HufWMDnuXIOCCfgqeDJw
+
+为什么说持续学习才是AI的关键
+
+https://mp.weixin.qq.com/s/kmEFjzFIbNq0_qdjc1Wm_w
+
+DeepMind新智能体架构Unicorn：持续学习能力胜过多个基准智能体
+
 # DL参考资源
-
-https://mp.weixin.qq.com/s/NdwbnEMEVfiX6YGepK9PBA
-
-追根溯源！一图看尽深度学习架构谱系
-
-https://mp.weixin.qq.com/s/_IOdMk8CJbZkeYO9CDDgZQ
-
-AI设计师“鲁班”进化史：每秒制作8000张双11海报，没有一张雷同！
-
-https://mp.weixin.qq.com/s/UsoLQbrwj6rpLUAV5kYkUA
-
-大数据和网络分析的可扩展算法
-
-https://mp.weixin.qq.com/s/I9dm8uDEqO0X19s758jOGw
-
-良心GitHub项目：各种机器学习任务的顶级结果（论文）汇总
-
-https://mp.weixin.qq.com/s/UfmyH4BBWwErakrOoselQA
-
-随机计算图：在随机结点中执行反向传播的新方法
-
-https://mp.weixin.qq.com/s/Yoledi-OYgJmafxKBlHVPg
-
-国科大本科生以第一作者身份发表AAAI论文，用神经网络分析三维模型
 
 https://mp.weixin.qq.com/s/5vDSrWeUvlBuZgmX0R9pBQ
 

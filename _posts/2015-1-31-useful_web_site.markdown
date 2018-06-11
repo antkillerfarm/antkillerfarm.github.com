@@ -312,13 +312,13 @@ https://mp.weixin.qq.com/s/SBVEo53irSZfI40sBFZXWQ
 
 shift：解决shell编程中的入参问题
 
-https://www.zhihu.com/people/xuan-xing-29/posts
-
-某量子通信牛人的blog
-
 https://mp.weixin.qq.com/s/ZfprFQjVANuCE2N693gZBQ
 
 用户空间和内核空间
+
+https://mp.weixin.qq.com/s/z5zMETSMUGoTiZYMooKZ-g
+
+内核空间镜像攻击揭秘：ARM硬件特性，竟能开启安卓8终端的上帝模式？
 
 https://mp.weixin.qq.com/s/mHJnbgOjydUrAmF-bLKJ1Q
 

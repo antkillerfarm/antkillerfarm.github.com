@@ -209,5 +209,21 @@ https://mp.weixin.qq.com/s/b7QSUeHb2fYTKk3e3V00uA
 
 担心面部识别泄露隐私？多伦多大学图像“隐私过滤器”了解一下
 
+https://mp.weixin.qq.com/s/0q5nWOm5JVrpZVAeufmLPw
+
+卷积神经网络十五问：CNN与生物视觉系统的研究探索
+
+https://mp.weixin.qq.com/s/gmNVS0_yc-c7VaB9r-w9bQ
+
+为什么我的CNN石乐志？我只是平移了一下图像而已
+
+https://mp.weixin.qq.com/s/KRttAyx7YW1vkmzo1w1fAg
+
+教机器遗忘或许比学习更重要：让AI健忘的三种方式
+
+https://mp.weixin.qq.com/s/0jPuPBDokan6B_OltKp9mw
+
+德国本届世界杯胜算最大？帕绍大学基于ELO评级预测 
+
 
 

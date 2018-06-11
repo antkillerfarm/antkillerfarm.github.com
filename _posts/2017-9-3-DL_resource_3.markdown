@@ -376,6 +376,10 @@ https://mp.weixin.qq.com/s/MCKkngSzzsABxyiGAFA1lg
 
 进化计算在深度学习中的应用
 
+https://mp.weixin.qq.com/s/G8Xj_G9rxI4SinX0VZ35WA
+
+用人工蜂群算法求解k-分区聚类问题
+
 ## 深度哈希
 
 https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg
