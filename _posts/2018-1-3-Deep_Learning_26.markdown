@@ -36,6 +36,10 @@ https://mp.weixin.qq.com/s/c64XucML13OwI26_UE9xDQ
 
 滴滴披露语音识别新进展：基于Attention显著提升中文识别率
 
+https://mp.weixin.qq.com/s/sAYOXEjAdA91x3nliHNX8w
+
+Attention模型方法综述
+
 # VAE
 
 变分自编码器（Variational Auto-Encoder，VAE）是Autoencoder的一种扩展。
