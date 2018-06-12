@@ -306,6 +306,10 @@ https://zhuanlan.zhihu.com/p/37520172
 
 一窥ARM的AI处理器
 
+https://mp.weixin.qq.com/s/QPuOmv7-agrcgnchgs3Hkg
+
+清华大学提出AI计算芯片的存储优化新方法
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293

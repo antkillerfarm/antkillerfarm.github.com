@@ -162,6 +162,14 @@ https://github.com/vipstone/faceai
 
 FaceAI
 
+https://mp.weixin.qq.com/s/v6denCbxx6q530yAg_bq2A
+
+使用Transformer与无监督学习，OpenAI提出可迁移至多种NLP任务的通用模型
+
+https://mp.weixin.qq.com/s/tfScYQYeCz0gEkHTnOEkIg
+
+鸡尾酒网络DCTN：源分布结合律引导的迁移学习框架
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：

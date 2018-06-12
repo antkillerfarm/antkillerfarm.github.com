@@ -40,6 +40,16 @@ http://blog.csdn.net/shuzfan/article/details/77964370
 
 # 语音识别
 
+## end-to-end
+
+《exploring neural transducers for end-to-end speech recognition》
+
+|  | CTC | Transducer | Attention |
+|:--:|:--:|:--:|:--:|:--:|
+| 输出语言模型 | 无 | 有 | 有 |
+| 对齐 | 单调，硬 | 单调，硬 | 不单调，软 |
+| 解码所需步数 | 输入长度 | 输入长度+输出长度 | 输出长度 |
+
 ## Tacotron
 
 论文：

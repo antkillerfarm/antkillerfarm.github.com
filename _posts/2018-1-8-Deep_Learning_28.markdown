@@ -92,6 +92,10 @@ https://mp.weixin.qq.com/s/mXJthyETebtww5TvEljuoQ
 
 预测电影偏好？如何利用自编码器实现协同过滤方法
 
+https://blog.csdn.net/hanlin_tan/article/details/62078935
+
+机器学习中的玻尔兹曼分布——最小代价和极大似然
+
 # SOM
 
 Self Organizing Maps (SOM)（也叫kohonen network）是一种无监督算法，主要用于聚类和可视化。

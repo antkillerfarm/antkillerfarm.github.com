@@ -152,6 +152,14 @@ https://zhuanlan.zhihu.com/hsmyy
 
 一个DL的blog，专注于RL、CTC、FCN。
 
+https://zhuanlan.zhihu.com/p/22464594
+
+无痛的机器学习第一季目录
+
+https://zhuanlan.zhihu.com/p/26884917
+
+无痛的机器学习第二季目录
+
 https://zhuanlan.zhihu.com/personReid
 
 一个DL的blog，专注于行人重识别

@@ -78,6 +78,10 @@ https://mp.weixin.qq.com/s?__biz=MzU0MDQ3MDk3NA==&mid=2247483671&idx=1&sn=034831
 
 libsvm中的svm-toy尝试
 
+https://mp.weixin.qq.com/s/UhckYnIVPCgkJZNeuba1YQ
+
+基于线性SVM的CIFAR-10图像集分类
+
 # 学习理论
 
 ## 偏差和方差

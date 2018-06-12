@@ -28,6 +28,12 @@ $$p(y\mid x)=\frac{p(x\mid y)p(y)}{p(x\mid y=1)p(y=1)+p(x\mid y=0)p(y=0)}=\frac{
 
 $$\arg\max_yp(y\mid x)=\arg\max_y\frac{p(x\mid y)p(y)}{p(x)}=\arg\max_yp(x\mid y)p(y) \tag{7}$$
 
+先验/后验概率还可从参数估计的角度来考虑：
+
+$$p(\theta\mid x)=\frac{p(x\mid \theta)p(\theta)}{p(x)}$$
+
+这里的$$\theta$$表示模型的参数。先验概率是根据经验设定的参数值，后验概率是样本实测值，代入Bayes公式即可得到参数的真实值。
+
 ## 高斯分布的向量形式
 
 高斯分布的向量形式$$N(\mu,\Sigma)$$的概率密度函数为：

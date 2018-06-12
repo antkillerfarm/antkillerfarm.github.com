@@ -160,6 +160,10 @@ https://mp.weixin.qq.com/s/zJf-dWsMe5WELgDz7TlivA
 
 双人协作游戏带你理解变分自编码器-Part2
 
+https://mp.weixin.qq.com/s/fzadP8NwPTxuhEB0O4GU8g
+
+漫谈生成模型，从AE到CVAE-GAN
+
 # RBM & DBN & Deep Autoencoder
 
 ## RBM

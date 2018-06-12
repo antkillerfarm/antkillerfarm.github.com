@@ -144,6 +144,10 @@ https://mp.weixin.qq.com/s/Jcwxx5oxACjDEVZr9qgPGQ
 
 一个我们几乎每天都在使用的数学工具
 
+https://mp.weixin.qq.com/s/vuFBY99-TDdyQELcUdXjTQ
+
+浅谈贝叶斯和MCMC
+
 # PID算法
 
 PID算法是自动控制领域最基础应用也最广泛的算法。它是三个单词proportional（P，比例）、integral（I，积分）和differential（D，微分）的缩写。
