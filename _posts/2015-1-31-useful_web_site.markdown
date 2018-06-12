@@ -16,11 +16,11 @@ http://linux.die.net/man/
 
 Linux手册（相当于Linux的MSDN）
 
-www.alldatasheet.com
+http://www.alldatasheet.com/
 
 可以查找各类芯片的手册。
 
-www.hellogcc.org
+http://www.hellogcc.org/
 
 一个有关GCC和GDB的博客。其中的大牛teawater（朱辉）开发了一个Linux动态跟踪器KGTP，他的blog：http://teawater.github.io/
 
@@ -107,6 +107,10 @@ https://www.wilddog.com/
 一个物联网后端云平台。
 
 >一声叹息啊！野狗的产品算是不错的，但是商业模式不赚钱，终究撑不住了。
+
+http://www.hello2025.com/
+
+一个自动化+物联网的网站。
 
 http://intellif.com/
 
