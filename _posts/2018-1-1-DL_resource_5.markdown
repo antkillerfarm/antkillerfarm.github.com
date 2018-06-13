@@ -22,23 +22,51 @@ https://mp.weixin.qq.com/s/lKm_ypn5I7tSjoQHceJ0jQ
 
 概率编程：使用贝叶斯神经网络预测金融市场价格
 
-## 连续学习
+## 元学习
 
-https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
+https://mp.weixin.qq.com/s/KKK3VEpwL90g6Aro8qtXxQ
 
-终身机器学习: 一种持续学习的范式
+学习如何学习的算法：简述元学习研究方向现状
 
-https://mp.weixin.qq.com/s/SBppyDBWqQUariiHbpaq1w
+https://mp.weixin.qq.com/s/KtO3OTZ-bZ6m0ZSI6jTyjw
 
-实时深度学习的推理加速和连续学习
+OpenAI提出Reptile：可扩展的元学习算法
 
-https://mp.weixin.qq.com/s/83HufWMDnuXIOCCfgqeDJw
+https://mp.weixin.qq.com/s/T4GiL9vW7ALOzWloE_QQBA
 
-为什么说持续学习才是AI的关键
+OpenAI开发可拓展元学习算法Reptile，能快速学习
 
-https://mp.weixin.qq.com/s/kmEFjzFIbNq0_qdjc1Wm_w
+https://mp.weixin.qq.com/s/MWcoGsQJg1GBbSqzyPD9uQ
 
-DeepMind新智能体架构Unicorn：持续学习能力胜过多个基准智能体
+基于梯度的元学习算法，可高效适应非平稳环境
+
+https://zhuanlan.zhihu.com/p/35695477
+
+基于Meta Learning在动态竞争环境中实现策略自适应
+
+https://mp.weixin.qq.com/s/AhadWUjtgsFmb8uTylTvqg
+
+OpenAI提出新型元学习方法EPG，调整损失函数实现新任务上的快速训练
+
+https://mp.weixin.qq.com/s/dmRdp2oMn0vGukclJSVZDg
+
+Uber AI论文：利用反向传播训练可塑神经网络，生物启发的元学习范式
+
+https://mp.weixin.qq.com/s/Cc4EHc6ei-PtZWhewM10xw
+
+学习如何学习的算法：简述元学习研究方向现状
+
+https://mp.weixin.qq.com/s/4f6-gXovdrYk7240TrUwJg
+
+谷歌大脑：基于元学习的无监督学习更新规则
+
+https://mp.weixin.qq.com/s/cAbMB-DB9vu2ua8t5J28ww
+
+从零开始，了解元学习
+
+https://mp.weixin.qq.com/s/Q36vpS1HF2IfeCsFLh656A
+
+基于元强化学习的神经科学新理论
 
 # DL参考资源
 
@@ -349,28 +377,4 @@ https://mp.weixin.qq.com/s/AAmQymWdKQDeL8DQacEZ3A
 https://mp.weixin.qq.com/s/210l9K94KMqtJtqbrZ-mgg
 
 打开黑箱重要一步，MIT提出TbD-net，弥合视觉推理模型的性能与可解释性鸿沟
-
-https://mp.weixin.qq.com/s/PC5KXU0zmE1eg2k_S9_pQg
-
-增加深度，加速神经网络优化？这是一份反直觉的实验结果
-
-https://mp.weixin.qq.com/s/sbV5SL6fAGad5KlBoqUKFQ
-
-斯坦福大学教授Christopher Manning提出全可微神经网络架构MAC：可用于机器推理
-
-https://mp.weixin.qq.com/s/uztYEW_azetOkOGiZcbCuw
-
-JeffDean又用深度学习搞事情：这次要颠覆整个计算机系统结构设计。这篇blog介绍了如何用DL方法提高内存访问的命中率。
-
-https://mp.weixin.qq.com/s/1oDM6HvHKPBT6rKTSzUfVA
-
-手把手：教你如何用深度学习模型预测加密货币价格
-
-https://zhuanlan.zhihu.com/p/34437681
-
-情感预测SHINE: Signed Heterogeneous Information Network Embedding for Sentiment Link Prediction引介
-
-https://mp.weixin.qq.com/s/Ng3tyXqiO499dhNDX5561g
-
-扔掉代码表！用RNN“破解”摩斯电码
 

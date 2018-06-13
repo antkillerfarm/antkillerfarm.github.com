@@ -184,6 +184,11 @@ Pronunciation Dict用于将文本转换成对应的发音。比较常用的有CM
 
 ## 语言理论
 
+语言理论方面主要是Chomsky提出的Chomsky hierarchy。
+
+>Avram Noam Chomsky，1928年生，University of Pennsylvania本硕（1951）+Harvard University博士。MIT教授。美国科学院、美国艺术科学院院士。   
+>他的《生成语法》被认为是20世纪理论语言学研究上最伟大的贡献，他也被誉为“现代语言学之父”。他对于形式语言的研究，在计算机科学的各领域产生了巨大的影响。这些领域包括：编译原理、AI等。
+
 | 名称 | 概述 | 形式化 | 时间复杂度 | 空间复杂度 |
 |:--:|:--:|:--:|:--:|:--:|
 | **Finite State Machines** | 正则化的语言，无嵌套 | $$a^*b^*$$ | O(n) | O(1) |
@@ -212,6 +217,8 @@ https://www.w3.org/TR/jsgf/
 # GMM-HMM
 
 混合高斯模型是为了计算某个观察状态的mfcc分布和某个特定音子的mfcc之间的似然度的，但由于音子的mfcc分布并不是真的符合高斯分布，因此需要叠加多个高斯混合模型，来逼近某个特定音子的mfcc特征分布。我们叠加的模型数量越多，拟合的效果就越好。
+
+![](/images/img2/GMM.png)
 
 最简单的情况下，每个音子（例如ah这个音子）都需要至少一个39维的多维高斯模型进行建模，但是这样做的前提是，ah这个音的39维mfcc特征的分布符合高斯分布。
 
@@ -273,46 +280,10 @@ https://cs.nyu.edu/~mohri/asr12/
 
 作为WFST的发明人，Mohri的Speech Recognition课程在解码器方面有相当大的篇幅。
 
-参考：
+以下内容主要参考下文：
 
-https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/ParallelizingWFSTSpeechDecoders.ICASSP2016.pdf
+http://vsooda.github.io/2016/08/28/wfst/
 
-《parallelizing WFST speech decoders》
+加权有限状态转换器
 
-http://www.cs.nyu.edu/~mohri/pub/csl01.pdf
 
-《Weighted Finite-State Transducers in Speech Recognition》
-
-https://blog.csdn.net/l_b_yuan/article/category/6132477
-
-这个专栏包含了4篇WFST的blog
-
-http://djt.qq.com/article/view/507
-
-定制你的语音识别-并行语音识别解码空间
-
-https://blog.csdn.net/lucky_ricky/article/details/77511543
-
-Kaldi WFST 构图 学习
-
-https://blog.csdn.net/dearwind153/article/details/70053704
-
-Kaldi HCLG深入理解
-
-# 汽车声学
-
-https://zhuanlan.zhihu.com/p/22722073
-
-当我谈汽车声学时，我在谈什么(一)
-
-https://zhuanlan.zhihu.com/p/28608243
-
-当我谈汽车声学时，我在谈什么(二)
-
-https://zhuanlan.zhihu.com/p/31240294
-
-当我谈汽车声学时，我在谈什么(三)
-
-https://zhuanlan.zhihu.com/p/34256635
-
-当我谈汽车声学时，我在谈什么(四)

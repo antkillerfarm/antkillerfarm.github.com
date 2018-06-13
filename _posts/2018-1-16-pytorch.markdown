@@ -194,6 +194,10 @@ https://mp.weixin.qq.com/s/mThkHpcq1ThnfONiSKmOKA
 
 如何捕获一只彩色卓别林？黑白照片AI上色教程很友好
 
+https://mp.weixin.qq.com/s/tD4Inrr0l1oBnLhUD81FCA
+
+用PyTorch进行RNN语言建模 - Packed Batching和Tied Weight
+
 # PaddlePaddle
 
 https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q

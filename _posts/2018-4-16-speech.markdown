@@ -141,6 +141,10 @@ https://zhuanlan.zhihu.com/voicebiometrics
 
 专栏：声纹识别的应用实践
 
+http://vsooda.github.io/archive/
+
+一个语音识别+DL的blog
+
 ## 项目
 
 https://en.wikipedia.org/wiki/List_of_speech_recognition_software

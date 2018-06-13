@@ -294,6 +294,10 @@ https://mp.weixin.qq.com/s/f3pRA_lyT5jfzWimy6CleA
 
 TensorEditor：一个小白都能快速玩转的神经网络搭建工具
 
+https://mp.weixin.qq.com/s/PD13jQ_00QJ-VOUM8Zm21g
+
+深度学习图像标注工具汇总
+
 ## 遗传算法 & 进化算法
 
 http://blog.csdn.net/u010945683/article/details/40987331

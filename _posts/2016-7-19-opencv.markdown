@@ -12,7 +12,7 @@ OpenCV是一套跨平台计算机视觉库。其官网为：
 
 http://opencv.org/
 
-安装方法：
+Ubuntu安装方法：
 
 `sudo apt-get install libopencv-dev python-opencv`
 
@@ -23,6 +23,10 @@ http://opencv.org/
 http://milq.github.io/install-opencv-ubuntu-debian/
 
 Install OpenCV on Ubuntu or Debian
+
+Windows安装方法：
+
+https://sourceforge.net/projects/opencvlibrary/files/opencv-win/
 
 代码下载地址：
 

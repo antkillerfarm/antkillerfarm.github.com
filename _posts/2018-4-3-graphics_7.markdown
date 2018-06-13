@@ -246,3 +246,72 @@ ILSVRC 2010的冠军是NEC和UIUC的联合队伍。这也是DL于2012年大放�
 
 上图是NEC算法的基本流程图。这里不打算描述整个算法，而仅对其中涉及的术语做一个解释。
 
+# WFST（续）
+
+## FSM -> FST -> WFST
+
+![](/images/img2/FSM.png)
+
+上图是finite-state machine的示意图。图中的Node表示State，顾名思义，FSM的State数量是有限的。图中的Edge表示Transition，Edge上的Label表示Input/Event。
+
+FSM的含义是，在某一状态下，获得一个输入，从而产生一个状态转换。例如，上图中Sleep状态下，如果输入是hungry的话
+
+![](/images/img2/FST.png)
+
+参考：
+
+https://www.jianshu.com/p/5eb45c64f3e3
+
+深入浅出理解有限状态机
+
+http://infolocata.com/mirovia/finite-state-transducers-for-natural-language-processing/
+
+Finite-State-Transducers for Natural Language Processing
+
+## 参考
+
+https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/ParallelizingWFSTSpeechDecoders.ICASSP2016.pdf
+
+《parallelizing WFST speech decoders》
+
+http://www.cs.nyu.edu/~mohri/pub/csl01.pdf
+
+《Weighted Finite-State Transducers in Speech Recognition》
+
+https://blog.csdn.net/l_b_yuan/article/category/6132477
+
+这个专栏包含了4篇WFST的blog
+
+http://djt.qq.com/article/view/507
+
+定制你的语音识别-并行语音识别解码空间
+
+https://blog.csdn.net/lucky_ricky/article/details/77511543
+
+Kaldi WFST 构图 学习
+
+https://blog.csdn.net/dearwind153/article/details/70053704
+
+Kaldi HCLG深入理解
+
+https://zhuanlan.zhihu.com/p/31174085
+
+有限状态自动机和转换器在元音和谐处理中的应用。这篇blog研究的问题相对偏门，但是文末附有若干FST方面的软件资源，可以提供OpenFST之外的选择。
+
+# 汽车声学
+
+https://zhuanlan.zhihu.com/p/22722073
+
+当我谈汽车声学时，我在谈什么(一)
+
+https://zhuanlan.zhihu.com/p/28608243
+
+当我谈汽车声学时，我在谈什么(二)
+
+https://zhuanlan.zhihu.com/p/31240294
+
+当我谈汽车声学时，我在谈什么(三)
+
+https://zhuanlan.zhihu.com/p/34256635
+
+当我谈汽车声学时，我在谈什么(四)

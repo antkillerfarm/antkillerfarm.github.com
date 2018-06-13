@@ -185,7 +185,11 @@ Elasticsearch性能监控（二）
 
 http://blog.csdn.net/qq_21383435/article/details/79367457
 
-linux下ElasticSearch.6.2.1与head、Kibana、X-Pack、SQL、IK、PINYIN插件的配置安装 
+linux下ElasticSearch.6.2.1与head、Kibana、X-Pack、SQL、IK、PINYIN插件的配置安装
+
+https://mp.weixin.qq.com/s/Wzrt7H9gDIUQn7KEc0qZHQ
+
+在Python中使用Elasticsearch
 
 # scrapy
 

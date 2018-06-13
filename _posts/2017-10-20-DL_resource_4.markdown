@@ -316,51 +316,43 @@ https://zhuanlan.zhihu.com/p/31067515
 
 《Semi-Supervised Classification with Graph Convolutional Networks》阅读笔记
 
-## 元学习
+https://mp.weixin.qq.com/s/6viSk0Ts_7eTfYrWYi_HDQ
 
-https://mp.weixin.qq.com/s/KKK3VEpwL90g6Aro8qtXxQ
+基于图结构的实体和关系联合抽取模型简介
 
-学习如何学习的算法：简述元学习研究方向现状
+https://mp.weixin.qq.com/s/w5ldyp00CqkX8Kp-8Aw0nQ
 
-https://mp.weixin.qq.com/s/KtO3OTZ-bZ6m0ZSI6jTyjw
+图深度学习(GraphDL)，下一个人工智能算法热点？一文了解最新GDL相关文章
 
-OpenAI提出Reptile：可扩展的元学习算法
+https://mp.weixin.qq.com/s/Jt6CjMqNFEXWoL5pkLeVyw
 
-https://mp.weixin.qq.com/s/T4GiL9vW7ALOzWloE_QQBA
+洛桑理工：Graph上的深度学习报告
 
-OpenAI开发可拓展元学习算法Reptile，能快速学习
+https://zhuanlan.zhihu.com/p/36117802
 
-https://mp.weixin.qq.com/s/MWcoGsQJg1GBbSqzyPD9uQ
+《Learn to Represent Programs with Graphs》阅读笔记。这篇论文讲述了DL在程序代码纠错方面的应用。
 
-基于梯度的元学习算法，可高效适应非平稳环境
+https://zhuanlan.zhihu.com/p/37278426
 
-https://zhuanlan.zhihu.com/p/35695477
+Graph2Seq: Graph to Sequence Learning with Attention-based Neural Networks
 
-基于Meta Learning在动态竞争环境中实现策略自适应
+## 连续学习
 
-https://mp.weixin.qq.com/s/AhadWUjtgsFmb8uTylTvqg
+https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
 
-OpenAI提出新型元学习方法EPG，调整损失函数实现新任务上的快速训练
+终身机器学习: 一种持续学习的范式
 
-https://mp.weixin.qq.com/s/dmRdp2oMn0vGukclJSVZDg
+https://mp.weixin.qq.com/s/SBppyDBWqQUariiHbpaq1w
 
-Uber AI论文：利用反向传播训练可塑神经网络，生物启发的元学习范式
+实时深度学习的推理加速和连续学习
 
-https://mp.weixin.qq.com/s/Cc4EHc6ei-PtZWhewM10xw
+https://mp.weixin.qq.com/s/83HufWMDnuXIOCCfgqeDJw
 
-学习如何学习的算法：简述元学习研究方向现状
+为什么说持续学习才是AI的关键
 
-https://mp.weixin.qq.com/s/4f6-gXovdrYk7240TrUwJg
+https://mp.weixin.qq.com/s/kmEFjzFIbNq0_qdjc1Wm_w
 
-谷歌大脑：基于元学习的无监督学习更新规则
-
-https://mp.weixin.qq.com/s/cAbMB-DB9vu2ua8t5J28ww
-
-从零开始，了解元学习
-
-https://mp.weixin.qq.com/s/Q36vpS1HF2IfeCsFLh656A
-
-基于元强化学习的神经科学新理论
+DeepMind新智能体架构Unicorn：持续学习能力胜过多个基准智能体
 
 ## 面试
 

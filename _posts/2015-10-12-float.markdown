@@ -248,10 +248,6 @@ https://mp.weixin.qq.com/s/zv264-dqDQYRkYmjX_QZpQ
 
 郑宇解读地理传感器时间序列预测问题
 
-https://zhuanlan.zhihu.com/p/37278426
-
-Graph2Seq: Graph to Sequence Learning with Attention-based Neural Networks
-
 https://mp.weixin.qq.com/s/cr0BJLkyN2kW35-w1pebGQ
 
 学习在黑暗中看世界（Learning to See in the Dark）
@@ -296,7 +292,4 @@ https://mp.weixin.qq.com/s/bKpQPuUlnuYo0SZdZ9TPVQ
 
 可微编程：打开深度学习的黑盒子
 
-https://mp.weixin.qq.com/s/w5ldyp00CqkX8Kp-8Aw0nQ
-
-图深度学习(GraphDL)，下一个人工智能算法热点？一文了解最新GDL相关文章
 

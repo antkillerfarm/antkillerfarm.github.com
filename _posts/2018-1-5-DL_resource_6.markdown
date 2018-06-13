@@ -354,3 +354,27 @@ https://mp.weixin.qq.com/s/5OMT6BvqkUgtshow_tLkNw
 
 精准防御对抗性攻击，清华大学提出对抗正则化训练方法DeepDefense
 
+https://mp.weixin.qq.com/s/PC5KXU0zmE1eg2k_S9_pQg
+
+增加深度，加速神经网络优化？这是一份反直觉的实验结果
+
+https://mp.weixin.qq.com/s/sbV5SL6fAGad5KlBoqUKFQ
+
+斯坦福大学教授Christopher Manning提出全可微神经网络架构MAC：可用于机器推理
+
+https://mp.weixin.qq.com/s/uztYEW_azetOkOGiZcbCuw
+
+JeffDean又用深度学习搞事情：这次要颠覆整个计算机系统结构设计。这篇blog介绍了如何用DL方法提高内存访问的命中率。
+
+https://mp.weixin.qq.com/s/1oDM6HvHKPBT6rKTSzUfVA
+
+手把手：教你如何用深度学习模型预测加密货币价格
+
+https://zhuanlan.zhihu.com/p/34437681
+
+情感预测SHINE: Signed Heterogeneous Information Network Embedding for Sentiment Link Prediction引介
+
+https://mp.weixin.qq.com/s/Ng3tyXqiO499dhNDX5561g
+
+扔掉代码表！用RNN“破解”摩斯电码
+

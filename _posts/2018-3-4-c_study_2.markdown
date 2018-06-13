@@ -120,10 +120,6 @@ https://mp.weixin.qq.com/s/FxrLxSp1Cd7w9i6xVqLJEw
 
 Tree-CNN：一招解决深度学习中的“灾难性遗忘”
 
-https://zhuanlan.zhihu.com/p/36117802
-
-《Learn to Represent Programs with Graphs》阅读笔记。这篇论文讲述了DL在程序代码纠错方面的应用。
-
 https://mp.weixin.qq.com/s/TrWwp-DBTrKqIT_Pfy_o5w
 
 阿里妈妈首次公开新一代智能广告检索模型，重新定义传统搜索框架
