@@ -198,6 +198,10 @@ https://mp.weixin.qq.com/s/tD4Inrr0l1oBnLhUD81FCA
 
 用PyTorch进行RNN语言建模 - Packed Batching和Tied Weight
 
+https://mp.weixin.qq.com/s/HQJxbnIHXF-GFLIoNTOxGg
+
+手把手教你用torchtext处理文本数据
+
 # PaddlePaddle
 
 https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q

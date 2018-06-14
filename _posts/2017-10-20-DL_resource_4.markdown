@@ -336,6 +336,10 @@ https://zhuanlan.zhihu.com/p/37278426
 
 Graph2Seq: Graph to Sequence Learning with Attention-based Neural Networks
 
+https://mp.weixin.qq.com/s/iQYVyo2PHuGbEsYgdIf_oQ
+
+DeepMind等机构提出“图网络”：面向关系推理
+
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA

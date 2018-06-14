@@ -78,6 +78,10 @@ https://mp.weixin.qq.com/s/HTIgKm8HuZZ_-lIQ3nIFhQ
 
 浅入深出之大话SoftMax
 
+https://mp.weixin.qq.com/s/XBK7T1P7z3rm3o-3BDNeOA
+
+三分钟带你对Softmax划重点
+
 # 目标检测
 
 ## 概述

@@ -234,6 +234,10 @@ https://mp.weixin.qq.com/s/bSWatfZqkvdcXJQop4LMxw
 
 TensorFlow快餐教程：程序员快速入门深度学习五步法
 
+https://mp.weixin.qq.com/s/eoSpoeNpKwKSouMgrA70xQ
+
+用Python语言模型和LSTM做一个Drake饶舌歌词生成器
+
 # OpenAI Gym
 
 Openai gym是一个用于开发和比较强化学习（reinforcement learning，RL）算法的工具包，与其他的数值计算库兼容，如tensorflow或者theano库。现在主要支持的是python语言，以后将支持其他语言。

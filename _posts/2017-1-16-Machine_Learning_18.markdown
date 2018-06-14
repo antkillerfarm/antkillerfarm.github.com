@@ -298,3 +298,7 @@ https://mp.weixin.qq.com/s/9xxLU51eqhc6C81jzHQijQ
 
 简述推荐系统中的矩阵分解
 
+https://mp.weixin.qq.com/s/pf_BqYLw9sTtuJsYQZXehA
+
+计算广告CTR预估系列
+

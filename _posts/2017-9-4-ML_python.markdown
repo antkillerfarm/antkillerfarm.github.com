@@ -396,6 +396,10 @@ http://pythonware.com/products/pil/
 
 `sudo apt install python-imaging`
 
+文档：
+
+http://www.effbot.org/imagingbook/pil-index.htm
+
 参考：
 
 https://mp.weixin.qq.com/s/lJYzxehwo3K2APB2l_WeTA

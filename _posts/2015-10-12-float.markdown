@@ -292,4 +292,11 @@ https://mp.weixin.qq.com/s/bKpQPuUlnuYo0SZdZ9TPVQ
 
 可微编程：打开深度学习的黑盒子
 
+https://mp.weixin.qq.com/s/6pNZ8Crs4Lel2C0TlFAc4Q
+
+真能“穿墙识人”，MIT人体姿态估计系统创历史最高精度！
+
+https://mp.weixin.qq.com/s/GHjmiB6F2W3Zo8gVllTyyQ
+
+重现“世界模型”实验，无监督方式快速训练
 

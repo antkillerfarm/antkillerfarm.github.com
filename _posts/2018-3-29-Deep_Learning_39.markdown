@@ -274,6 +274,10 @@ https://mp.weixin.qq.com/s/FDyN6fblDFGOSNRFs5OYqA
 
 什么都能GAN，无监督神经网络翻译新方法
 
+https://mp.weixin.qq.com/s/DYSnAwP9xt-p0ihsEtKm1Q
+
+TensorFlow实现StarGAN代码全部开源，1天训练完
+
 # 图像变换
 
 https://mp.weixin.qq.com/s/88tBoAVziGEFXIGfvZZp8g

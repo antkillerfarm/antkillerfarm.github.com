@@ -138,3 +138,52 @@ http://www.cnblogs.com/fnng/archive/2012/12/15/2819367.html
 
 图形脚本语言sikuli
 
+# DL参考资源
+
+https://mp.weixin.qq.com/s/XfYV7pPd54a3gunjznVwdw
+
+诺奖评委、工业 4.0 教父沃夫冈解读AI研究大趋势
+
+https://mp.weixin.qq.com/s/wzUbYyrBOxU-2bY-EJm4KA
+
+极端图像压缩的生成对抗网络，可生成低码率的高质量图像
+
+https://mp.weixin.qq.com/s/G3Uy78fEwEAUtIjlTWJoqw
+
+“尬聊”被拉黑后，这个浙大学生开发了一个深度学习模型
+
+https://mp.weixin.qq.com/s/DGi8w1YAv64wGAsdUtXZaQ
+
+奥巴马吐槽川普“笨蛋”的视频火了，这又得“归功”于AI
+
+https://mp.weixin.qq.com/s/-iziuLKUsRA4VpR5xJqEww
+
+斯坦福提出神经任务编程NTP：让机器人从层级任务中学习
+
+https://mp.weixin.qq.com/s/-zl2tQuzdlJd5TXIW9EPyA
+
+Google：机器学习系统，隐藏多少技术债？
+
+https://mp.weixin.qq.com/s/nF-RIAzQv3gMSXkM_92Rbg
+
+MIT博士生Bolei Zhou：CVPR2017关于如何解释深度学习模型的讲座
+
+https://mp.weixin.qq.com/s/gUJkqVtObFi8Y4BgbR82GA
+
+提升DNN参数准确度：MILA提出贝叶斯超网络
+
+https://mp.weixin.qq.com/s/PKqDlbKynnCLE6JAy0NuQQ
+
+谷歌深度学习公开课任务 1: notMNIST
+
+https://mp.weixin.qq.com/s/PF6-txnq3SV258EfNVufSw
+
+深度学习与XGBoost在小数据集上的测评
+
+https://mp.weixin.qq.com/s/XisuT68H_r_SvVg0HVnWJw
+
+海康威视Oral论文：分层式共现网络，实现更好的动作识别和检测
+
+https://mp.weixin.qq.com/s/uI5gUGtiR8VDXreU4YEZYA
+
+MILA提出防御增强型网络：简单修改已有网络即可提升防攻击能力

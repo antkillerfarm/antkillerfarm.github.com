@@ -440,4 +440,7 @@ https://github.com/ZhuanZhiCode/TensorFlow-Eager-Execution-Examples
 
 Eager Execution的代码示例
 
+https://mp.weixin.qq.com/s/By_GKPtY6xr8MwkWA6frzA
+
+TensorFlow的动态图工具Eager怎么用？这是一篇极简教程
 

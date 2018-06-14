@@ -248,25 +248,31 @@ ILSVRC 2010的冠军是NEC和UIUC的联合队伍。这也是DL于2012年大放�
 
 # WFST（续）
 
-## FSM -> FST -> WFST
+## FSM
 
 ![](/images/img2/FSM.png)
 
-上图是finite-state machine的示意图。图中的Node表示State，顾名思义，FSM的State数量是有限的。图中的Edge表示Transition，Edge上的Label表示Input/Event。
+上图是finite-state machine（也叫finite-state automaton，FSA）的示意图。图中的Node表示State，顾名思义，FSM的State数量是有限的。图中的Edge表示Transition，Edge上的Label表示Input/Event。
 
-FSM的含义是，在某一状态下，获得一个输入，从而产生一个状态转换。例如，上图中Sleep状态下，如果输入是hungry的话
+FSM的含义是，在某一状态下，获得一个输入，从而产生一个状态转换。例如，上图中在Sleep状态下，如果输入是hungry的话，那么状态就会切换到Eat状态。当然了，输入也可以不改变状态，比如在Sleep状态下，输入是tired的时候。
+
+## FST
 
 ![](/images/img2/FST.png)
 
-参考：
+上图是finite-state transducers的示意图。FST和FSM的差别主要在Edge上的Label。FST收到Input的时候，不仅会发生状态改变，还会产生Output序列。因此，其Label的格式为`input:output`。
 
-https://www.jianshu.com/p/5eb45c64f3e3
+## WFST
 
-深入浅出理解有限状态机
+![](/images/img2/WFST.png)
 
-http://infolocata.com/mirovia/finite-state-transducers-for-natural-language-processing/
+上图是WFST的示意图。顾名思义，Label上不仅有Input、Output，还有Weight信息，其格式为`input:output/weight`。
 
-Finite-State-Transducers for Natural Language Processing
+在有些图中会碰到$$\epsilon$$. 这个符号在输入时表示不消耗任何输入，在输出位置表示不产生任何输出。
+
+## Composition
+
+
 
 ## 参考
 
@@ -297,6 +303,14 @@ Kaldi HCLG深入理解
 https://zhuanlan.zhihu.com/p/31174085
 
 有限状态自动机和转换器在元音和谐处理中的应用。这篇blog研究的问题相对偏门，但是文末附有若干FST方面的软件资源，可以提供OpenFST之外的选择。
+
+https://www.jianshu.com/p/5eb45c64f3e3
+
+深入浅出理解有限状态机
+
+http://infolocata.com/mirovia/finite-state-transducers-for-natural-language-processing/
+
+Finite-State-Transducers for Natural Language Processing
 
 # 汽车声学
 
