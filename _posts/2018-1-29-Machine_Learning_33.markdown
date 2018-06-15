@@ -106,7 +106,7 @@ https://mp.weixin.qq.com/s/HapJwwmN3-dbQvzp2jzt1w
 |  | Text Classification | 文本分类 |  |
 | MDP | Markov Decision Process | 马尔可夫决策过程 |  |
 | GEMM | General Matrix Multiply | 通用矩阵乘法 |  |
-|  |  |  |  |
+| VIF | Variance Inflation Factor | 方差膨胀因子 |  |
 |  |  |  |  |
 
 参考：

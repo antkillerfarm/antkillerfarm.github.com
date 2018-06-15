@@ -238,6 +238,10 @@ https://mp.weixin.qq.com/s/eoSpoeNpKwKSouMgrA70xQ
 
 用Python语言模型和LSTM做一个Drake饶舌歌词生成器
 
+https://mp.weixin.qq.com/s/rVliMXPCYU4rTKU8i-gxtQ
+
+如何用50行代码构建情感分类器
+
 # OpenAI Gym
 
 Openai gym是一个用于开发和比较强化学习（reinforcement learning，RL）算法的工具包，与其他的数值计算库兼容，如tensorflow或者theano库。现在主要支持的是python语言，以后将支持其他语言。

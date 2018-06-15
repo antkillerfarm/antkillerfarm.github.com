@@ -342,3 +342,7 @@ https://mp.weixin.qq.com/s/Z4Mv_L68QaG7KfGmA3pBwQ
 
 DeepMind论文解读：让机器更深入地理解文本
 
+https://mp.weixin.qq.com/s/F9ZV4jV3UiVuKVz1aqgv9w
+
+如何匹配两段文本的语义？
+

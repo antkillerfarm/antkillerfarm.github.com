@@ -264,3 +264,7 @@ https://mp.weixin.qq.com/s/QO34vyt3uBSKvnYSW0Kumg
 
 如何将知识图谱特征学习应用到推荐系统？
 
+https://mp.weixin.qq.com/s/ePJPoQlOveTrCvCTy8_Xxg
+
+知识图谱的技术与应用
+

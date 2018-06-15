@@ -170,6 +170,10 @@ https://mp.weixin.qq.com/s/tfScYQYeCz0gEkHTnOEkIg
 
 鸡尾酒网络DCTN：源分布结合律引导的迁移学习框架
 
+https://mp.weixin.qq.com/s/2NLPma-wITAUKVnSRrHX9w
+
+小样本学习年度进展
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：

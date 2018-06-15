@@ -225,5 +225,15 @@ https://mp.weixin.qq.com/s/0jPuPBDokan6B_OltKp9mw
 
 德国本届世界杯胜算最大？帕绍大学基于ELO评级预测 
 
+https://mp.weixin.qq.com/s/wIdcZh3EkUIm6-91pT2oSQ
 
+DeepMind生成查询网络GQN，无监督学习展现3D场景
+
+https://mp.weixin.qq.com/s/Sb_kPgtwyQFWloDT3707TA
+
+深度学习了40万个表情，一大波AI表情包来了
+
+https://mp.weixin.qq.com/s/dwtul6XjwRYOtRqmZl2SMg
+
+来看一场AI重建的3D全息世界杯比赛！
 
