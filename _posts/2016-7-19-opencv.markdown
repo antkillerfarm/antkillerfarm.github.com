@@ -6,7 +6,7 @@ category: AI
 
 # OpenCV
 
-## 参考资料
+## 概述
 
 OpenCV是一套跨平台计算机视觉库。其官网为：
 
@@ -16,7 +16,7 @@ Ubuntu安装方法：
 
 `sudo apt-get install libopencv-dev python-opencv`
 
->注意：这种方法安装的版本有些老，目前还是2.x。
+>注意：这种方法安装的版本有些老，目前还是2.x。（2016.4）
 
 参见：
 
@@ -56,6 +56,12 @@ http://wiki.opencv.org.cn/
 
 国人办的OpenCV中文网。
 
+## 示例
+
+https://github.com/antkillerfarm/antkillerfarm_rubbish/tree/master/opencv/1
+
+这里有个简单示例，可用于验证安装的正确性。支持CMake和makefile两种方式。
+
 ## blog
 
 http://blog.csdn.net/morewindows/article/category/1291764
@@ -83,6 +89,10 @@ http://blog.csdn.net/kezunhai
 一个CV的blog。
 
 http://blog.csdn.net/yang_xian521/
+
+一个CV的blog。
+
+https://blog.csdn.net/u012679707
 
 一个CV的blog。
 

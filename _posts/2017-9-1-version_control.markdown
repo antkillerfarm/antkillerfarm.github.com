@@ -237,3 +237,15 @@ https://mp.weixin.qq.com/s/dwtul6XjwRYOtRqmZl2SMg
 
 来看一场AI重建的3D全息世界杯比赛！
 
+https://mp.weixin.qq.com/s/dJXl5tI-WKB3O28sgJmbkw
+
+机器也能感知时间，AI系统可预测5分钟内的未来！
+
+https://mp.weixin.qq.com/s/xS8EsNtSdHiFgg_HnuJJWg
+
+照片有灵异鬼影？伯克利陈启峰培育高能FCN“除灵师”
+
+https://mp.weixin.qq.com/s/OfDaoRb2l_gei--bLSzTRw
+
+宅男福音DeepFake进阶版！基于位置映射图网络进行3D人脸重建
+

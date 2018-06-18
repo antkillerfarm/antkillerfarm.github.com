@@ -64,6 +64,10 @@ https://mp.weixin.qq.com/s/SeNIQQL_MqjFG4ek_wJoIg
 
 必须了解的8种神经网络架构
 
+https://blog.csdn.net/stdcoutzyx/article/details/50926174
+
+二值神经网络（Binary Neural Network，BNN）
+
 ## AI芯片
 
 https://cloud.tencent.com/community/article/244743
@@ -309,6 +313,10 @@ https://zhuanlan.zhihu.com/p/37520172
 https://mp.weixin.qq.com/s/QPuOmv7-agrcgnchgs3Hkg
 
 清华大学提出AI计算芯片的存储优化新方法
+
+http://tieba.baidu.com/p/2250616047
+
+史上最全桌面显卡天梯图
 
 ## 并行 & 框架
 

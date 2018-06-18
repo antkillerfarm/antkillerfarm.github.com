@@ -124,6 +124,10 @@ http://yongyuan.name/blog/
 
 一个DL+CV的blog
 
+https://blog.csdn.net/wfei101
+
+一个DL+CV的blog
+
 https://zhuanlan.zhihu.com/dlgirls
 
 写给妹子的深度学习教程

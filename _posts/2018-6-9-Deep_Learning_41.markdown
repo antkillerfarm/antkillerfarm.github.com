@@ -174,6 +174,10 @@ https://mp.weixin.qq.com/s/2NLPma-wITAUKVnSRrHX9w
 
 小样本学习年度进展
 
+https://mp.weixin.qq.com/s/Fodqc5cw1TISFJwtrstg9Q
+
+CMU、NYU与FAIR共同提出GLoMo：迁移学习新范式
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：

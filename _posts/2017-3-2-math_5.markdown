@@ -119,6 +119,10 @@ https://mp.weixin.qq.com/s/Z1_ujG7iP_AFUD0gVO8HXQ
 
 信息熵、交叉熵和相对熵
 
+https://mp.weixin.qq.com/s/2_ZkKrwPhaS31JnyYXyfrQ
+
+简单的交叉熵损失函数，你真的懂了吗？
+
 http://blog.csdn.net/shijing_0214/article/details/51116046
 
 理解最大熵模型

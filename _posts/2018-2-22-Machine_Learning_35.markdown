@@ -126,6 +126,20 @@ Learning to Retrieve Information (SCC 1995), Learning to Order Things (NIPS 1998
 
 LambdaRank (NIPS 2006), AdaRank (SIGIR 2007), SVM-MAP (SIGIR 2007), SoftRank (LR4IR 2007), GPRank (LR4IR 2007), CCA (SIGIR 2007), RankCosine (IP&M 2007), ListNet (ICML 2007), ListMLE (ICML 2008) 。
 
+## LambdaMART
+
+https://www.zhihu.com/question/41418093
+
+求解LambdaMART的疑惑？
+
+https://liam0205.me/2016/07/10/a-not-so-simple-introduction-to-lambdamart/
+
+LambdaMART不太简短之介绍
+
+http://blog.csdn.net/huagong_adu/article/details/40710305
+
+Learning To Rank之LambdaMART的前世今生
+
 ## 参考
 
 https://mp.weixin.qq.com/s/YjYVE6jzySVsZmXSPivB5w
@@ -139,6 +153,14 @@ https://mp.weixin.qq.com/s/UpN7tAMjbFLSPcDYsWaykg
 https://mp.weixin.qq.com/s/xigME-griWFwEvvPNqWuvg
 
 美团点评联盟广告的场景化定向排序机制
+
+https://blog.csdn.net/stdcoutzyx/article/details/50879219
+
+Learning to Rank简介
+
+http://www.cnblogs.com/wentingtu/archive/2012/03/13/2393993.html
+
+Learning to Rank入门小结
 
 # NLP机器翻译常用评价度量
 

@@ -346,3 +346,7 @@ https://mp.weixin.qq.com/s/F9ZV4jV3UiVuKVz1aqgv9w
 
 如何匹配两段文本的语义？
 
+https://mp.weixin.qq.com/s/xIkYLncxmLKqLQqeq-XxAw
+
+深度学习文本分类方法综述
+

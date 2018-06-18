@@ -108,6 +108,10 @@ Stanford的狗图片数据集。
 
 ## 其他
 
+https://mp.weixin.qq.com/s/Kmq2tG5XQUO9k1pD3YW2oA
+
+从文本处理到自动驾驶：机器学习最常用的50大免费数据集
+
 http://www.csdn.net/article/2014-06-06/2820111-100-Interesting-Data-Sets-for-Statistics/1
 
 100+诡异的数据集

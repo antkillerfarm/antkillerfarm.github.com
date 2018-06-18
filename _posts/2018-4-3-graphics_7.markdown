@@ -270,62 +270,73 @@ FSM的含义是，在某一状态下，获得一个输入，从而产生一个�
 
 在有些图中会碰到$$\epsilon$$. 这个符号在输入时表示不消耗任何输入，在输出位置表示不产生任何输出。
 
+## 相关的群论知识
+
+WFST是基于半环代数理论的，在介绍半环之前我先简单的说一下群和半群。
+
+**群（Group）**：G为非空集合，如果在G上定义的二元运算*，满足：
+
+（1）封闭性（Closure）：对于任意$$a,b\in G$$,有$$a*b\in G$$;
+
+（2）结合律（Associativity）：对于任意$$a,b,c\in G,(a*b)*c=a*(b*c)$$;
+
+（3）幺元（Identity）：存在幺元e，使得对于任意$$a\in G,e*a=a*e=a$$;
+
+（4）逆元：对于任意$$a\in G$$,存在逆元$$a^{-1}*a=a*a^{-1}=e$$。
+
+则称（G,*）为群。
+
+**半群（Semigroup）**：仅满足封闭性和结合律群称为半群；如果还包含幺元，则成为幺元半群。
+
+**半环（semiring）**：指具有两个二元运算$$+$$和$$\cdot$$的非空集合S，且满足：
+
+（1）$$(S,+),(S,\cdot)$$都是半群；
+
+（2）$$\forall a,b,c\in S,(a+b)c = ac+bc, c(a+b) = ca+cb$$
+
+半环的形式化表示如下：
+
+$$(K, \bigoplus, \bigotimes，0， 1)$$
+
+其中K是一个数集，$$\bigoplus, \bigotimes$$是两个二元操作，’0’和’1’是特定的（designated）零元素和幺元素（不一定是真正的数0和数1）。
+
+常用的半环如下表所示：
+
+| Semiring | Set | $$\oplus$$ | $$\otimes$$ | 0 | 1 |
+|:--:|:--:|:--:|:--:|:--:|:--:|
+| Boolean | $$\{0,1\}$$ | $$\lor$$ | $$\land$$ | 0 | 1 |
+| Probability | $$R_+$$ | $$+$$ | $$\times$$ | 0 | 1 |
+| Log | $$R\cup\{-\infty，+\infty\}$$ | $$\oplus_{log}$$ | + | $$+\infty$$ | 0 |
+| Tropical | $$R\cup\{-\infty，+\infty\}$$ | min | + | $$+\infty$$ | 0 |
+| Probability | $$R_+$$ | $$+$$ | $$\times$$ | 0 | 1 |
+
+接下来定义WFST上的二元运算：
+
+一整条路径的权重$$w[\pi ]=w[e_1]\bigotimes \cdots \bigotimes w[e_k]$$。
+
+多个有限路径集合的权重$$w[R]=\bigoplus_{\pi \in R} w[\pi]$$。
+
+参考：
+
+http://hongjiang.info/semigroup-and-monoid/
+
+半群(semigroup)与幺半群(monoid)
+
 ## Composition
 
+介绍完WFST的定义，再来介绍一下定义在它之上的运算。
 
+Composition用来合并不同级别的转换器。用$$T=T_1\circ T_2$$表示这种操作。
 
-## 参考
+![](/images/img2/composition.png)
 
-https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/ParallelizingWFSTSpeechDecoders.ICASSP2016.pdf
+它的形式化描述为：
 
-《parallelizing WFST speech decoders》
+$$(T_1\circ T_2)(x,y)=\bigoplus_{z\in \mathcal{B}^*} T_1(x,z)\bigotimes T_2(z,y)$$
 
-http://www.cs.nyu.edu/~mohri/pub/csl01.pdf
+起始状态应该是T1，T2的起始状态
 
-《Weighted Finite-State Transducers in Speech Recognition》
+结束状态是T1，T2的结束状态
 
-https://blog.csdn.net/l_b_yuan/article/category/6132477
+如果q1到r1的边t1的输出等于q2到r2的边t2的输入，那么(q1,q2)和(r1,r2)应该有一条边，如果是tripical半环，则该边权重是以上两边权重之和
 
-这个专栏包含了4篇WFST的blog
-
-http://djt.qq.com/article/view/507
-
-定制你的语音识别-并行语音识别解码空间
-
-https://blog.csdn.net/lucky_ricky/article/details/77511543
-
-Kaldi WFST 构图 学习
-
-https://blog.csdn.net/dearwind153/article/details/70053704
-
-Kaldi HCLG深入理解
-
-https://zhuanlan.zhihu.com/p/31174085
-
-有限状态自动机和转换器在元音和谐处理中的应用。这篇blog研究的问题相对偏门，但是文末附有若干FST方面的软件资源，可以提供OpenFST之外的选择。
-
-https://www.jianshu.com/p/5eb45c64f3e3
-
-深入浅出理解有限状态机
-
-http://infolocata.com/mirovia/finite-state-transducers-for-natural-language-processing/
-
-Finite-State-Transducers for Natural Language Processing
-
-# 汽车声学
-
-https://zhuanlan.zhihu.com/p/22722073
-
-当我谈汽车声学时，我在谈什么(一)
-
-https://zhuanlan.zhihu.com/p/28608243
-
-当我谈汽车声学时，我在谈什么(二)
-
-https://zhuanlan.zhihu.com/p/31240294
-
-当我谈汽车声学时，我在谈什么(三)
-
-https://zhuanlan.zhihu.com/p/34256635
-
-当我谈汽车声学时，我在谈什么(四)

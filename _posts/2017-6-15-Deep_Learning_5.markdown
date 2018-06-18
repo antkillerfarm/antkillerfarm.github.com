@@ -126,6 +126,10 @@ https://mp.weixin.qq.com/s/HjNjTk_Hs82K87pP3QrNqw
 
 不懂word2vec，还敢说自己是做NLP？
 
+https://mp.weixin.qq.com/s/nHEyJLU18AE-SatW9HKeOw
+
+Word2Vec——深度学习的一小步，自然语言处理的一大步
+
 # RNN
 
 ## RNN的基本结构

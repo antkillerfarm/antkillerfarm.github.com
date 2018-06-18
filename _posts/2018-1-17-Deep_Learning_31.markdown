@@ -246,3 +246,7 @@ https://mp.weixin.qq.com/s/bDLVD_8LscgWSNp0ZNc0Pg
 
 图像和文本的融合表示学习——Text2Image和Image2Text
 
+https://mp.weixin.qq.com/s/oV8gcKqmp43EBYzQhr5S6w
+
+逆视觉问答任务：一种根据回答与图像想问题的模型
+

@@ -198,7 +198,11 @@ https://mp.weixin.qq.com/s/QSGgvhkMUj3cXVlQwlzTFQ
 
 https://zhuanlan.zhihu.com/p/37074222
 
-CVPR 2018 高效小网络探密
+CVPR 2018 高效小网络探密（上）
+
+https://zhuanlan.zhihu.com/p/37919669
+
+CVPR 2018 高效小网络探密（下）
 
 https://mp.weixin.qq.com/s/SqxooZqSeD3wA4EFK5D3Kg
 

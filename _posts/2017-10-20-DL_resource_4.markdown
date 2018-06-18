@@ -238,6 +238,10 @@ https://mp.weixin.qq.com/s/Bl1iFTzqeWwR1fIiIDrOlw
 
 Kaggle 20G数据集强势分析“绝地求生”，科学吃鸡攻略拿走不谢！
 
+https://mp.weixin.qq.com/s/_tEqbOfe0GyBnUo1leOOkA
+
+分离特征抽取与决策制定，如何用6-18个神经元玩转Atari游戏
+
 ## AI医疗
 
 https://github.com/albarqouni/Deep-Learning-for-Medical-Applications

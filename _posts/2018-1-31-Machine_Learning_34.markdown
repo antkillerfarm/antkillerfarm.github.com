@@ -290,10 +290,6 @@ https://mp.weixin.qq.com/s/zQJve_w5OoM6u-WcSWArdQ
 
 神速Hash
 
-http://www.cnblogs.com/wentingtu/archive/2012/03/13/2393993.html
-
-Learning to Rank入门小结
-
 FPN (Feature Pyramid Network)
 
 http://www.cnblogs.com/pinard/p/6221564.html
@@ -319,4 +315,8 @@ https://mp.weixin.qq.com/s/E_EzwLr4JOzR1pk3MOeU_w
 https://mp.weixin.qq.com/s/QmDCFY0SP3cl71HvwvthJQ
 
 如果高斯没有故意“坑”黎曼，估计这门神奇的学科就不会出现了……
+
+http://www.cnblogs.com/zeze/p/6999651.html
+
+粗糙集（Rough Set Approach）
 

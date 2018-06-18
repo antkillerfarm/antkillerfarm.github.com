@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十六）——XGBoost, LightGBM, Parameter Server, LambdaMART
+title:  机器学习（三十六）——XGBoost, LightGBM, Parameter Server
 category: ML 
 ---
 
@@ -202,17 +202,5 @@ https://mp.weixin.qq.com/s/yuHavuGTYMH5JDC_1fnjcg
 
 阿里妈妈基于TensorFlow做了哪些深度优化？TensorFlowRS架构解析
 
-# LambdaMART
 
-https://www.zhihu.com/question/41418093
-
-求解LambdaMART的疑惑？
-
-https://liam0205.me/2016/07/10/a-not-so-simple-introduction-to-lambdamart/
-
-LambdaMART不太简短之介绍
-
-http://blog.csdn.net/huagong_adu/article/details/40710305
-
-Learning To Rank之LambdaMART的前世今生
 

@@ -58,3 +58,60 @@ https://stackoverflow.com/questions/27475977/c-undefined-reference-to-sqrt-even-
 
 C - undefined reference to “sqrt” even with '-lm'
 
+# WFST（续）
+
+## 参考
+
+https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/ParallelizingWFSTSpeechDecoders.ICASSP2016.pdf
+
+《parallelizing WFST speech decoders》
+
+http://www.cs.nyu.edu/~mohri/pub/csl01.pdf
+
+《Weighted Finite-State Transducers in Speech Recognition》
+
+https://blog.csdn.net/l_b_yuan/article/category/6132477
+
+这个专栏包含了4篇WFST的blog
+
+http://djt.qq.com/article/view/507
+
+定制你的语音识别-并行语音识别解码空间
+
+https://blog.csdn.net/lucky_ricky/article/details/77511543
+
+Kaldi WFST 构图 学习
+
+https://blog.csdn.net/dearwind153/article/details/70053704
+
+Kaldi HCLG深入理解
+
+https://zhuanlan.zhihu.com/p/31174085
+
+有限状态自动机和转换器在元音和谐处理中的应用。这篇blog研究的问题相对偏门，但是文末附有若干FST方面的软件资源，可以提供OpenFST之外的选择。
+
+https://www.jianshu.com/p/5eb45c64f3e3
+
+深入浅出理解有限状态机
+
+http://infolocata.com/mirovia/finite-state-transducers-for-natural-language-processing/
+
+Finite-State-Transducers for Natural Language Processing
+
+# 汽车声学
+
+https://zhuanlan.zhihu.com/p/22722073
+
+当我谈汽车声学时，我在谈什么(一)
+
+https://zhuanlan.zhihu.com/p/28608243
+
+当我谈汽车声学时，我在谈什么(二)
+
+https://zhuanlan.zhihu.com/p/31240294
+
+当我谈汽车声学时，我在谈什么(三)
+
+https://zhuanlan.zhihu.com/p/34256635
+
+当我谈汽车声学时，我在谈什么(四)

@@ -278,6 +278,10 @@ https://mp.weixin.qq.com/s/DYSnAwP9xt-p0ihsEtKm1Q
 
 TensorFlow实现StarGAN代码全部开源，1天训练完
 
+https://mp.weixin.qq.com/s/se_2Ci4eE5fxiiG4LZrv8w
+
+怎样用可交互对抗网络增强人类创造力
+
 # 图像变换
 
 https://mp.weixin.qq.com/s/88tBoAVziGEFXIGfvZZp8g
@@ -359,4 +363,13 @@ https://mp.weixin.qq.com/s/12_Gl4snq-LdMHJSZn4oOA
 https://mp.weixin.qq.com/s/BBg04rDtiqU-XrWortufNA
 
 康奈尔&英伟达提出多模态无监督图像转换新方法
+
+https://mp.weixin.qq.com/s/A2VhfO3CkyQGCs5GqBWzOg
+
+实景照片秒变新海诚风格漫画：清华大学提出CartoonGAN
+
+https://mp.weixin.qq.com/s/lPzPfjYiAsNvVcVWdL08dA
+
+照片闭眼也无妨，Facebook黑科技完美补全大眼睛
+
 

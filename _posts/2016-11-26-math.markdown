@@ -16,8 +16,6 @@ category: math
 
 以下是推导步骤：
 
-利用半角公式进行变换。
-
 由半角公式：
 
 $$2\sin^2\frac{x}{2}=1-\cos x$$
@@ -285,4 +283,9 @@ https://zhuanlan.zhihu.com/p/19763358
 https://mp.weixin.qq.com/s/fFN54auRn1O3EZpPeOwIhQ
 
 傅里叶变换就是这么简单，你学会了吗? 
+
+https://mp.weixin.qq.com/s/kWRhRQQEGSNQxCzfGJkGYg
+
+如何直观形象、生动有趣地介绍傅里叶变换？
+
 
