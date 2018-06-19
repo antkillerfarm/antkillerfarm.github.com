@@ -56,11 +56,55 @@ https://stackoverflow.com/questions/27475977/c-undefined-reference-to-sqrt-even-
 
 C - undefined reference to “sqrt” even with '-lm'
 
-# WFST
+# WFST（续）
 
-## Composition（续）
+## Reversal
 
-当$$T_1$$的输出包含$$\epsilon$$，$$T_2$$的输入包含$$\epsilon$$的时候，会导致产生大量多余的边，使得最终结果不正确。这时需要去除$$\epsilon$$-path。
+![](/images/img2/reversal.png)
+
+Reversal运算的形式化描述为：
+
+$$[\widetilde{T}](x,y)=[T](\widetilde{x},\widetilde{y})$$
+
+## Inversion
+
+![](/images/img2/inversion.png)
+
+Inversion运算的形式化描述为：
+
+$$[T^{-1}](x,y)=[T](y,x)$$
+
+## Projection
+
+![](/images/img2/projection.png)
+
+Projection运算的形式化描述为：
+
+$$[\prod_1(T)](x)=\bigoplus_y[T](x,y)$$
+
+## Composition
+
+Composition用来合并不同级别的转换器。用$$T=T_1\circ T_2$$表示这种操作。
+
+![](/images/img2/composition.png)
+
+Composition运算的形式化描述为：
+
+$$[T_1\circ T_2](x,y)=\bigoplus_z [T_1](x,z)\bigotimes [T_2](z,y)$$
+
+通俗一些的说法就是：
+
+（1）起始状态应该是$$T_1，T_2$$的起始状态
+
+（2）结束状态是$$T_1，T_2$$的结束状态
+
+（3）如果$$q_1$$到$$r_1$$的边$$t_1$$的输出等于$$q_2$$到$$r_2$$的边$$t_2$$的输入，那么$$(q_1,q_2)$$和$$(r_1,r_2)$$应该有一条边，如果是tripical半环，则该边权重是以上两边权重之和。
+
+当$$T_1$$的输出包含$$\epsilon$$，$$T_2$$的输入包含$$\epsilon$$的时候，会导致产生大量多余的边，使得最终结果不正确。这时需要去除$$\epsilon$$-path。细节略。
+
+## Intersection
+
+
 
 ## Determinization
 
@@ -69,6 +113,8 @@ Determinization：所有状态在接受某个输入后只有一条输出边，�
 这个操作的根本前提：两个自动机或者转换器是否相等，不需要每条边，每个权重都相等。只需要对于任何一个输入序列，其输出及权重相同，而不用在意权重的分布是否相同。
 
 一般使用$$\otimes$$来计算分支内的权重。使用$$\oplus$$来处理分支间最终输出的权重。
+
+
 
 ## 参考
 

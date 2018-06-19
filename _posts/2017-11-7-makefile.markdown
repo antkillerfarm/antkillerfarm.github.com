@@ -212,3 +212,77 @@ OkBuck是Uber推出的构建工具。官网：
 
 https://github.com/uber/okbuck
 
+# DL参考资源
+
+https://github.com/Alibaba-Technology/hangzhouYunQi2017ppt
+
+2017杭州云栖大会精华PPT
+
+https://mp.weixin.qq.com/s/Opnf5GBxoUqznWuYBb8xaA
+
+清华唐杰AMiner团队全球H-index Top 10000学者半世纪迁移图
+
+https://mp.weixin.qq.com/s/ulLh_JfLa9Os3ZFFAWVETA
+
+谷歌大脑最新研究：高斯过程“超越”随机梯度下降！
+
+https://mp.weixin.qq.com/s/DsmjjfInV_yPFWB2oSq-dA
+
+取代学习率衰减的新方法：谷歌大脑提出增加Batch Size
+
+https://mp.weixin.qq.com/s/PsIa3XDFqZlY2tKcvqvddw
+
+Training RNNs as Fast as CNNs
+
+https://mp.weixin.qq.com/s/vUK2NneOs8OR0vcJEZNbrA
+
+田渊栋等人论文：何时卷积滤波器容易学习？
+
+https://mp.weixin.qq.com/s/HP8KLbo26W5UscCGavKDRw
+
+IBM Watson提出人机推理网络HuMaINs，结合人机两者优势
+
+https://mp.weixin.qq.com/s/fPj4wMtiFX55c_UjNsQnBg
+
+PointCNN全面刷新测试记录：山东大学提出通用点云卷积框架
+
+https://mp.weixin.qq.com/s/tzAp6PxAn3GszcttRzfz8Q
+
+CMU提出新型智能体定位方法：“主动神经定位器”
+
+https://mp.weixin.qq.com/s/dWIhQVPNi9SlzuhMiatEVQ
+
+几张贴纸就让神经网络看不懂道路标志，伯克利为真实环境生成对抗样本
+
+https://mp.weixin.qq.com/s/_1rKAj-KOs4P8WnKzen64w
+
+传统方法已经Out了？OpenAI提出全新辩论模式训练AI
+
+https://zhuanlan.zhihu.com/p/36479489
+
+图像检索：因缘际会与前瞻
+
+https://mp.weixin.qq.com/s/Mk_EkwTYK2141cU9zC1hvQ
+
+合成逼真图像，试试港中大&英特尔的半参数方法
+
+https://zhuanlan.zhihu.com/p/36527644
+
+Learning with Noise: Enhance Distantly Supervised Relation Extraction with Dynamic Transition Matrix——一种对噪音数据显式建模的方法
+
+https://mp.weixin.qq.com/s/tjnpIYJGmrTLGUsdtBI2Vw
+
+AI设计师“鹿班”核心技术公开：如何1秒设计8000张海报？
+
+https://mp.weixin.qq.com/s/zeN7rjmAnvh_7BbTmScrZw
+
+细粒度分类你懂吗？——fine-gained image classification
+
+https://mp.weixin.qq.com/s/Ob1ngUEmRgSybcAD5zg0QQ
+
+利用深度学习消去反光
+
+https://mp.weixin.qq.com/s/3aAaM1DWsnCWEEbP7dOZEg
+
+伯克利等提出无监督特征学习新方法，代码已开源
+

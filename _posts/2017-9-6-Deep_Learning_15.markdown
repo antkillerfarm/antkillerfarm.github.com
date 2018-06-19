@@ -186,6 +186,10 @@ https://mp.weixin.qq.com/s/XTuemvxIR4PGpqJprUYuFw
 
 什么是MAP？理解目标检测模型中的性能评估
 
+https://mp.weixin.qq.com/s/e4Bi4LRY8SCZcXTq4Zd3OQ
+
+最完整的检测模型评估指标mAP计算指南
+
 ## 总结
 
 ![](/images/article/rcnn_p_2.png)

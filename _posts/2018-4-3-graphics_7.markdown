@@ -270,6 +270,8 @@ FSM的含义是，在某一状态下，获得一个输入，从而产生一个�
 
 在有些图中会碰到$$\epsilon$$. 这个符号在输入时表示不消耗任何输入，在输出位置表示不产生任何输出。
 
+此外，还有格式为`input/weight`的FSM，一般被称为Weighted Finite-State Acceptors。
+
 ## 相关的群论知识
 
 WFST是基于半环代数理论的，在介绍半环之前我先简单的说一下群和半群。
@@ -324,23 +326,31 @@ http://hongjiang.info/semigroup-and-monoid/
 
 半群(semigroup)与幺半群(monoid)
 
-## Composition
+## Sum(Union)
 
 介绍完WFST的定义，再来介绍一下定义在它之上的运算。
 
-Composition用来合并不同级别的转换器。用$$T=T_1\circ T_2$$表示这种操作。
+![](/images/img2/sum.png)
 
-![](/images/img2/composition.png)
+Sum运算的形式化描述为：
 
-它的形式化描述为：
+$$[T_1 \oplus T_2](x,y)=[T_1](x,y)\oplus [T_2](x,y)$$
 
-$$(T_1\circ T_2)(x,y)=\bigoplus_{z\in \mathcal{B}^*} T_1(x,z)\bigotimes T_2(z,y)$$
+## Product(Concatenation)
 
-通俗一些的说法就是：
+![](/images/img2/product.png)
 
-（1）起始状态应该是$$T_1，T_2$$的起始状态
+Product运算的形式化描述为：
 
-（2）结束状态是$$T_1，T_2$$的结束状态
+$$[T_1 \otimes T_2](x,y)=\bigoplus_{x=x_1x_2,y=y_1y_2} [T_1](x_1,y_1)\otimes [T_2](x_2,y_2)$$
 
-（3）如果$$q_1$$到$$r_1$$的边$$t_1$$的输出等于$$q_2$$到$$r_2$$的边$$t_2$$的输入，那么$$(q_1,q_2)$$和$$(r_1,r_2)$$应该有一条边，如果是tripical半环，则该边权重是以上两边权重之和。
+## Closure
+
+![](/images/img2/closure.png)
+
+Closure运算的形式化描述为：
+
+$$[T^*](x,y)=\bigoplus_{n=0}^{\infty}[T^n](x,y)$$
+
+
 
