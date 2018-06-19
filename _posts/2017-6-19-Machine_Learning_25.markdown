@@ -1,10 +1,60 @@
 ---
 layout: post
-title:  机器学习（二十五）——Beam Search, 强化学习
+title:  机器学习（二十五）——Tri-training, Beam Search, 强化学习
 category: ML 
 ---
 
-# Tri-training（续）
+# 时间序列分析
+
+## 参考（续）
+
+https://mp.weixin.qq.com/s/JR-GIXwHF45OysoE0qvwzw
+
+时间序列异常检测机制的研究
+
+https://mp.weixin.qq.com/s/2hpQ_7Ih58d1RKYb1oW_Sg
+
+时间序列简介（一）
+
+https://mp.weixin.qq.com/s/05WAZcklXnL_hFPLZW9t7Q
+
+时间序列模型之相空间重构模型
+
+https://zhuanlan.zhihu.com/p/34407471
+
+如何理解时间序列？—从Riemann积分和Lebesgue积分谈起
+
+https://zhuanlan.zhihu.com/p/35093835
+
+时间序列的自回归模型—从线性代数的角度来看
+
+https://mp.weixin.qq.com/s/lmJk-iIzxxPmnZa6D8i_nw
+
+一文简述如何使用嵌套交叉验证方法处理时序数据
+
+# Tri-training
+
+## 半监督学习
+
+之前提到的算法，多数都属于监督学习算法。其特点在于，构建一个包含标记数据的训练集，用来训练算法模型。
+
+然而，获得标记数据是一个费时费力的高成本过程，实际工作中，更有可能的情况是：少量标记数据+大量未标记数据。
+
+未标记数据的处理方式，一般有如下三种：
+
+![](/images/article/Semi_supervised_Learning.png)
+
+### 主动学习
+
+1.根据标记数据生成一个简单的模型A。
+
+2.挑出对改善模型性能帮助最大的样本数据B。
+
+3.通过查询行业专家获得B的真实标记。
+
+4.根据B的真实标记，更新模型A。
+
+以SVM为例，对于改善模型性能帮助最大的样本往往是位于分类边界的样本，可将这些样本挑出来，查询它的标记。
 
 ### 纯半监督学习和推断学习
 
@@ -169,24 +219,4 @@ https://mp.weixin.qq.com/s/N7DE0kvf8THhJQwroHj4vA
 而且在我们找到一个策略，让游戏获得不错的奖励时，我们是选择继续坚持当前的策略，还是探索新的策略以求更多的奖励？这就是**探索与开发（Explore-exploit Dilemma）**的问题。
 
 因此，**强化学习某种意义上可看做具有延迟标记信息的监督学习**。
-
-![](/images/article/reinforcement_learning.png)
-
-上图是强化学习的基本流程图。从控制论的角度来说，这是一个反馈控制系统，和经典的Kalman filters系统非常类似。因此，目前强化学习的主要用途，也多数和系统控制相关，例如机器人和自动驾驶。
-
-在推荐系统领域，由于有用户的反馈信息，亦可使用相关强化学习算法。
-
-## MDP
-
-强化学习任务通常用**马尔可夫决策过程（Markov Decision Process）**来描述：
-
-$$<\mathcal{S},\mathcal{A},\mathcal{P},\mathcal{R},\gamma>$$
-
-这个五元组依次代表：states、actions、state transition probability matrix、reward function、discount factor。
-
->MDP中有两个对象：Agent和Environment。   
->1.Environment处于一个特定的状态（State）（如打砖块游戏中挡板的位置、各个砖块的状态等）。   
->2.Agent可以通过执行特定的动作（Actions）（如向左向右移动挡板）来改变Environment的状态。   
->3.Environment状态改变之后会返回一个观察（Observation）给Agent，同时还会得到一个奖励（Reward）（可以为负，就是惩罚）。   
->4.Agent根据返回的信息采取新的动作，如此反复下去。Agent如何选择动作叫做策略（Policy）。MDP的任务就是找到一个策略，来最大化奖励。
 

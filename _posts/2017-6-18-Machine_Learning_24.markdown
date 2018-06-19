@@ -1,8 +1,60 @@
 ---
 layout: post
-title:  机器学习（二十四）——单分类SVM&多分类SVM, 时间序列分析, Tri-training
+title:  机器学习（二十四）——单分类SVM&多分类SVM, 时间序列分析
 category: ML 
 ---
+
+# Optimizer
+
+## 参考（续）
+
+https://mp.weixin.qq.com/s/q7BI-YyhtmNzUfBMTKVdqQ
+
+Hitting time analysis of SGLD！
+
+https://mp.weixin.qq.com/s/vt7BEHbwJrAzlL2Pc-6QFg
+
+掌握机器学习数学基础之优化（上）
+
+https://mp.weixin.qq.com/s/6NBLLLa-S625iaehR8zDfQ
+
+掌握机器学习数学基础之优化（下）
+
+https://mp.weixin.qq.com/s/o10Fp2VCwoLqgzirbGL9LQ
+
+如何估算深度神经网络的最优学习率
+
+https://mp.weixin.qq.com/s/T4f4W0V6YNBbjWqWBF19mA
+
+目标函数的经典优化算法介绍
+
+https://mp.weixin.qq.com/s/fXlbB7KmiX0iIv6xwSxNIA
+
+梯度下降法的三种形式BGD、SGD以及MBGD
+
+https://mp.weixin.qq.com/s/R_0_E5Ieaj9KiWgg1prxeg
+
+为什么梯度的方向与等高线切线方向垂直？
+
+https://mp.weixin.qq.com/s/0gdGNv98DytB8KxwVu_M0A
+
+通俗易懂讲解Deep Learning最优化方法之AdaGrad
+
+https://mp.weixin.qq.com/s/VVHe2msyeUTGiC7f_f0FFA
+
+一文概览深度学习中的五大正则化方法和七大优化策略
+
+https://mp.weixin.qq.com/s/qp5tJynA2uZIgv-IzJ_lrA
+
+从基础知识到实际应用，一文了解“机器学习非凸优化技术”
+
+https://mp.weixin.qq.com/s/zFGQzC_uQdAwlr9BzA-CYg
+
+深度学习需要了解的四种神经网络优化算法
+
+https://mp.weixin.qq.com/s/rUqIfKWmEBVjajlAn2HXfg
+
+理解深度学习中的学习率及多种选择策略
 
 # 单分类SVM&多分类SVM
 
@@ -242,52 +294,4 @@ http://blog.csdn.net/kicilove/article/details/78315335
 https://mp.weixin.qq.com/s/K-XGuaWTcF6BDPJagaJDPQ
 
 时序数据与事件的关联分析
-
-https://mp.weixin.qq.com/s/JR-GIXwHF45OysoE0qvwzw
-
-时间序列异常检测机制的研究
-
-https://mp.weixin.qq.com/s/2hpQ_7Ih58d1RKYb1oW_Sg
-
-时间序列简介（一）
-
-https://mp.weixin.qq.com/s/05WAZcklXnL_hFPLZW9t7Q
-
-时间序列模型之相空间重构模型
-
-https://zhuanlan.zhihu.com/p/34407471
-
-如何理解时间序列？—从Riemann积分和Lebesgue积分谈起
-
-https://zhuanlan.zhihu.com/p/35093835
-
-时间序列的自回归模型—从线性代数的角度来看
-
-https://mp.weixin.qq.com/s/lmJk-iIzxxPmnZa6D8i_nw
-
-一文简述如何使用嵌套交叉验证方法处理时序数据
-
-# Tri-training
-
-## 半监督学习
-
-之前提到的算法，多数都属于监督学习算法。其特点在于，构建一个包含标记数据的训练集，用来训练算法模型。
-
-然而，获得标记数据是一个费时费力的高成本过程，实际工作中，更有可能的情况是：少量标记数据+大量未标记数据。
-
-未标记数据的处理方式，一般有如下三种：
-
-![](/images/article/Semi_supervised_Learning.png)
-
-### 主动学习
-
-1.根据标记数据生成一个简单的模型A。
-
-2.挑出对改善模型性能帮助最大的样本数据B。
-
-3.通过查询行业专家获得B的真实标记。
-
-4.根据B的真实标记，更新模型A。
-
-以SVM为例，对于改善模型性能帮助最大的样本往往是位于分类边界的样本，可将这些样本挑出来，查询它的标记。
 

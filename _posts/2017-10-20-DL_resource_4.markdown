@@ -242,169 +242,155 @@ https://mp.weixin.qq.com/s/_tEqbOfe0GyBnUo1leOOkA
 
 分离特征抽取与决策制定，如何用6-18个神经元玩转Atari游戏
 
-## AI医疗
+## 并行 & 框架
 
-https://github.com/albarqouni/Deep-Learning-for-Medical-Applications
+https://zhuanlan.zhihu.com/p/26552293
 
-基于深度学习的医疗影像论文汇总
+Dataflow架构和神经网络加速器
 
-https://mp.weixin.qq.com/s/vtJUM94oYpN_h3Sdg3exLQ
+https://zhuanlan.zhihu.com/p/28445511
 
-张益肇：AI+医疗，微软有哪些布局？
+浅析深度学习框架设计中的关键技术
 
-https://mp.weixin.qq.com/s/mkYVhiwQJwcXxUdBVUvU8w
+https://mp.weixin.qq.com/s/B4aQp_0YvS0jyUHNLQ5rRA
 
-体素科技丁晓伟：医疗影像的哲学三问
+IBM发布新型分布式深度学习系统：结合软硬件实现当前最优性能
 
-https://mp.weixin.qq.com/s/aGc8Y8I_Xt0837H0MUVL-g
+http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks
 
-CMU副教授马坚：精准基因组数据和智能医疗最新进展
+神经网络的分布式训练
 
-https://mp.weixin.qq.com/s/1E9gunSpgYt5xl9Q_uQNJg
+https://mp.weixin.qq.com/s/IE6blClvhYlq3-QAGHo5ww
 
-使用深度学习进行医疗影像分析：文件格式篇
+TensorFlow分布式计算机制解读：以数据并行为重
 
-https://mp.weixin.qq.com/s/uy3MNxyT5nQIVsfWkXnL5Q
+https://mp.weixin.qq.com/s/7JGLm-hkCZBNDLA98qvWNA
 
-结合生成式与判别式方法，Petuum新研究助力医疗诊断
+自动生成硬件优化内核：陈天奇等人发布深度学习编译器TVM
 
-https://mp.weixin.qq.com/s/1A6p672z4Yz__MF6TWORSw
+https://mp.weixin.qq.com/s/4Ii3um3jqfm5yKKxZAFdmA
 
-备战医疗大赛必看！
+继1小时训练ImageNet之后，大批量训练扩展到了3万2千个样本
 
-https://mp.weixin.qq.com/s/DuFvVmcyazyUYxyoekh38w
+https://mp.weixin.qq.com/s/kOCftzSbHe2mvDmlRp-ihA
 
-邓侃解读：深度学习病历分析前沿进展
+Jeff Dean：AI对计算机系统设计的影响
 
-https://mp.weixin.qq.com/s/QB5d6HwAcT7DiVQbmoD8qg
+https://mp.weixin.qq.com/s/XjNPaL6PC9LHX1PEGn5UZg
 
-AI研发新药真有那么神？可能哈佛、斯坦福和阿斯利康实验室都在吹牛
+微软实时AI系统“脑波计划”有多牛？看完秒懂！
 
->医药方面的AI应用，也是AI的一个潜在的应用领域。这篇文章敢把各个大学鄙视一番，还是有些干货的。
+https://mp.weixin.qq.com/s/OkqUulFYHQSdgAbf9Fi9LA
 
-https://mp.weixin.qq.com/s/ZMw12BJuexG0xM8OwWUc4w
+CoCoA：大规模机器学习的分布式优化通用框架
 
-谷歌《Cell》论文：使用深度学习，直接对细胞影像生成荧光标记
+https://mp.weixin.qq.com/s/ToIDncp9dS_qk47PsdZm5A
 
-https://mp.weixin.qq.com/s/OkZdmBvSeMEsZbJyoZQvBQ
+杜克大学：分布式深度学习训练算法TernGrad
 
-深度学习+基因组学：破译人类30亿碱基对
+https://mp.weixin.qq.com/s/rhtrN2qDspGkpJYDAVSX7w
 
-https://mp.weixin.qq.com/s/RBBdPLvSYy5Ss4mOU-in4Q
+UC Berkeley展示全新并行处理方法
 
-用深度学习方法修复医学图像数据集
+https://mp.weixin.qq.com/s/ASqpPSIgW_bcFPBfRYz7Xg
 
-## 图结构
+哈佛大学提出在云、边缘与终端设备上的分布式深度神经网络DDNN
 
-https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
+http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
 
-Bengio等人提出图注意网络架构GAT，可处理复杂结构图
+《Large Scale Distributed Deep Networks》中译文
 
-https://zhuanlan.zhihu.com/p/34232818
+https://mp.weixin.qq.com/s/X7XG51yohLnEZ_Jg6XK9oQ
 
-《Graph Attention Networks》阅读笔记
+Caffe作者贾扬清教你怎样打造更加优秀的深度学习架构
 
-https://zhuanlan.zhihu.com/p/28170197
+https://mp.weixin.qq.com/s/_mrYI7McMBUx0lEh4rNiYQ
 
-《Gated Graph Sequence Neural Networks》阅读笔记
+百度开源移动端深度学习框架MDL，手机部署CNN支持iOS GPU
 
-https://mp.weixin.qq.com/s/Pm1HiEQOBnbo_GQ_v6Y_zw
+https://mp.weixin.qq.com/s/qOjGrR59Mf0Mzgh4bpDhrA
 
-腾讯提出自适应图卷积神经网络，接受不同图结构和规模的数据
+详解Horovod：Uber开源的TensorFlow分布式深度学习框架
 
-https://mp.weixin.qq.com/s/bMpugd2Lp35VPr8fQAPzsg
+https://mp.weixin.qq.com/s/ZCNSq5FC2REoVTKAK2mJQg
 
-一文概览图卷积网络基本结构和最新进展
+分布式深度学习原理、算法详细介绍
 
-https://zhuanlan.zhihu.com/p/31067515
+https://mp.weixin.qq.com/s/Ewiil56vMkzhO2xDWgo-Wg
 
-《Semi-Supervised Classification with Graph Convolutional Networks》阅读笔记
+苹果发布Turi Create机器学习框架，5行代码开发图像识别
 
-https://mp.weixin.qq.com/s/6viSk0Ts_7eTfYrWYi_HDQ
+https://mp.weixin.qq.com/s/jOVUPhrCBI9W9vPvD9eKYg
 
-基于图结构的实体和关系联合抽取模型简介
+UC Berkeley提出新型分布式框架Ray：实时动态学习的开端
 
-https://mp.weixin.qq.com/s/w5ldyp00CqkX8Kp-8Aw0nQ
+https://mp.weixin.qq.com/s/r951Iasr4dke6MPHsUO0TA
 
-图深度学习(GraphDL)，下一个人工智能算法热点？一文了解最新GDL相关文章
+开源DAWN，Stanford的又一力作
 
-https://mp.weixin.qq.com/s/Jt6CjMqNFEXWoL5pkLeVyw
+https://mp.weixin.qq.com/s/2jrMDeMcb47zpPfFLEcnIA
 
-洛桑理工：Graph上的深度学习报告
+深度学习平台技术演进
 
-https://zhuanlan.zhihu.com/p/36117802
+https://mp.weixin.qq.com/s/L4CMKS53pNyvhhqvQhja0g
 
-《Learn to Represent Programs with Graphs》阅读笔记。这篇论文讲述了DL在程序代码纠错方面的应用。
+5种商业AI产品的技术架构设计
 
-https://zhuanlan.zhihu.com/p/37278426
+https://mp.weixin.qq.com/s/IqjKdAlGYREqCR9XQB5N1A
 
-Graph2Seq: Graph to Sequence Learning with Attention-based Neural Networks
+伯克利AI分布式框架Ray，兼容TensorFlow、PyTorch与MXNet
 
-https://mp.weixin.qq.com/s/iQYVyo2PHuGbEsYgdIf_oQ
+https://mp.weixin.qq.com/s/aNX_8UDYI_0u-MwMTYeqdQ
 
-DeepMind等机构提出“图网络”：面向关系推理
+开发易、通用难，深度学习框架何时才能飞入寻常百姓家？
 
-## 连续学习
+https://mp.weixin.qq.com/s/UbAHB-uEIvqYZCB7xIAJTg
 
-https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
+机器学习新框架Propel：使用JavaScript做可微分编程
 
-终身机器学习: 一种持续学习的范式
+https://mp.weixin.qq.com/s/_-z2d1GE_3FElzAwPyJZ8A
 
-https://mp.weixin.qq.com/s/SBppyDBWqQUariiHbpaq1w
+十大流行AI框架和库的优缺点比较
 
-实时深度学习的推理加速和连续学习
+https://mp.weixin.qq.com/s/7nugWFKtD-C6cpwm2TyvdQ
 
-https://mp.weixin.qq.com/s/83HufWMDnuXIOCCfgqeDJw
+手把手教你如何部署深度学习模型
 
-为什么说持续学习才是AI的关键
+https://mp.weixin.qq.com/s/Ctl65r4iZNEOBxiiX2I2eQ
 
-https://mp.weixin.qq.com/s/kmEFjzFIbNq0_qdjc1Wm_w
+Momenta王晋玮：让深度学习更高效运行的两个视角
 
-DeepMind新智能体架构Unicorn：持续学习能力胜过多个基准智能体
+https://mp.weixin.qq.com/s/irvBbPKENiZX9G_6wh5c-Q
 
-## 面试
+陈天奇等人提出TVM：深度学习自动优化代码生成器
 
-https://www.zhihu.com/question/41233373
+https://mp.weixin.qq.com/s/28n8g_epHsYB0I9GVc_lww
 
-如果你是面试官，你怎么去判断一个面试者的深度学习水平？
+陈天奇团队TVM重磅更新：直接在浏览器使用GPU
 
-https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
+https://mp.weixin.qq.com/s/UxN9ZRmKLN30s7uPqMpHPQ
 
-20万、50万、100万的算法工程师，到底有什么区别？
+Jeff Dean等提出动态控制流编程模型，大规模机器学习性能提升21%
 
-https://www.zhihu.com/question/56676679/answer/151505274
+https://mp.weixin.qq.com/s/fx0Pfu0MOPjSkzi5mL6U_A
 
-机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
+清华&斯坦福提出深度梯度压缩DGC，大幅降低分布式训练网络带宽需求
 
-https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
+https://mp.weixin.qq.com/s/wIdTDHEPffWqHA3_XWBLyw
 
-面试官是如何看出你机器学习水平的？
+没错，纯SQL查询语句可以实现神经网络。
 
-https://mp.weixin.qq.com/s?__biz=MzI3NTA0MzM1OQ==&mid=2651615534&idx=1&sn=00ecd7dc1d8472c070e720a1b63f04c4
+>SQL跑神经网络固然没有太大意义，然而分布式数据库已经有数十年的历史，对于设计分布式深度学习框架亦有重大的启发意义。
 
-我如何考察面试者的机器学习水平
+https://zhuanlan.zhihu.com/p/33351291
 
-https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
+基于忆阻器（ReRAM），Computing-in-Memory的DLA
 
-谷歌等巨头机器学习面试题：从逻辑回归到智力测验
+https://mp.weixin.qq.com/s/eTwSo3GnxSnK-BwwZeWmKA
 
-## 行业
+Jeff Dean等提出自动化分层模型，优化CPU、GPU等异构环境，性能提升超60%
 
-李开复的这篇文章不可不读：
+https://mp.weixin.qq.com/s/q0VENBNgolpeWmDapF5q_g
 
-https://mp.weixin.qq.com/s/OLIO4UIZUuzjX5oQbn3Tug
-
-拥抱人工智能的中国：现状和展望（上）
-
-https://mp.weixin.qq.com/s/KbKlgRAfjP_39WdXh7gOLg
-
-拥抱人工智能的中国：现状和展望（下）
-
-https://mp.weixin.qq.com/s/hoo34-eMcYV7hV6LFbJqcg
-
-10分钟带你读完人工智能的三生三世
-
-https://mp.weixin.qq.com/s/yAC6VTOl3jAxjUT0QbTVrw
-
-为什么要在边缘设备部署机器学习？
+在有池化层、1步幅的CNN上减少冗余计算，一种广泛适用的架构转换方法
 

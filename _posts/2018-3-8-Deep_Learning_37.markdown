@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十七）——人脸识别
+title:  深度学习（三十七）——人脸识别, Graph NN
 category: DL 
 ---
 
@@ -287,4 +287,58 @@ https://mp.weixin.qq.com/s/mjdW7xY77H03RIKuKuFmQg
 https://mp.weixin.qq.com/s/Ieha-lJ_KuEnpbJha_nxJw
 
 利用人脸图片准确识别年龄：上海大学研究者提出“深度回归森林”
+
+## Graph NN
+
+https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
+
+Bengio等人提出图注意网络架构GAT，可处理复杂结构图
+
+https://zhuanlan.zhihu.com/p/34232818
+
+《Graph Attention Networks》阅读笔记
+
+https://zhuanlan.zhihu.com/p/28170197
+
+《Gated Graph Sequence Neural Networks》阅读笔记
+
+https://mp.weixin.qq.com/s/Pm1HiEQOBnbo_GQ_v6Y_zw
+
+腾讯提出自适应图卷积神经网络，接受不同图结构和规模的数据
+
+https://mp.weixin.qq.com/s/bMpugd2Lp35VPr8fQAPzsg
+
+一文概览图卷积网络基本结构和最新进展
+
+https://zhuanlan.zhihu.com/p/31067515
+
+《Semi-Supervised Classification with Graph Convolutional Networks》阅读笔记
+
+https://mp.weixin.qq.com/s/6viSk0Ts_7eTfYrWYi_HDQ
+
+基于图结构的实体和关系联合抽取模型简介
+
+https://mp.weixin.qq.com/s/w5ldyp00CqkX8Kp-8Aw0nQ
+
+图深度学习(GraphDL)，下一个人工智能算法热点？一文了解最新GDL相关文章
+
+https://mp.weixin.qq.com/s/Jt6CjMqNFEXWoL5pkLeVyw
+
+洛桑理工：Graph上的深度学习报告
+
+https://zhuanlan.zhihu.com/p/36117802
+
+《Learn to Represent Programs with Graphs》阅读笔记。这篇论文讲述了DL在程序代码纠错方面的应用。
+
+https://zhuanlan.zhihu.com/p/37278426
+
+Graph2Seq: Graph to Sequence Learning with Attention-based Neural Networks
+
+https://mp.weixin.qq.com/s/iQYVyo2PHuGbEsYgdIf_oQ
+
+DeepMind等机构提出“图网络”：面向关系推理
+
+https://mp.weixin.qq.com/s/TAccHagxXQ82lfE91Y6xWg
+
+CNN已老，GNN来了：重磅论文讲述深度学习的因果推理
 

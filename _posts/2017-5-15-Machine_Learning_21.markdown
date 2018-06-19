@@ -4,7 +4,19 @@ title:  机器学习（二十一）——loss function详解, 机器学习分类
 category: ML 
 ---
 
-# PageRank算法（续）
+# PageRank算法
+
+## 概述（续）
+
+**优点**：
+
+这是一个与查询无关的静态算法，所有网页的PageRank值通过离线计算获得；有效减少在线查询时的计算量，极大降低了查询响应时间。
+
+**缺点**：
+
+1）人们的查询具有主题特征，PageRank忽略了主题相关性，导致结果的相关性和主题性降低
+
+2）旧的页面等级会比新页面高。因为即使是非常好的新页面也不会有很多上游链接，除非它是某个站点的子站点。
 
 ## 马尔可夫链
 
@@ -134,6 +146,8 @@ https://mp.weixin.qq.com/s/J9OmqFzQK-GS95FjgAJkTw
 
 # loss function详解
 
+![](/images/img2/loss.png)
+
 ## Mean Squared Error(MSE)/Mean Squared Deviation(MSD)
 
 $$\operatorname{MSE}=\frac{1}{n}\sum_{i=1}^n(\hat{Y_i} - Y_i)^2$$
@@ -220,6 +234,10 @@ https://mp.weixin.qq.com/s/kI22wSoyNT3QXXI8pVwbjA
 
 腾讯AI Lab提出新型损失函数LMCL：可显著增强人脸识别模型的判别能力
 
+https://mp.weixin.qq.com/s/YOdmv88koSHx5AMMEQZGgg
+
+通俗聊聊损失函数中的均方误差以及平方误差
+
 # 机器学习分类器性能指标
 
 很多学习器是为测试样本产生一个实值或概率预测，然后将这个预测值与一个分类阈值（threshold）进行比较，若大于阈值则分为正类，否则为反类。这个实值或概率预测结果的好坏，直接决定了学习器的泛化能力。实际上，根据这个实值或概率预测结果，我们可将测试样本进行**排序**，“最可能”是正例的排在最前面，“最不可能”是正例的排在最后面。这样，分类过程就相当于在这个排序中以某个“截断点”（cut point）将样本分为两部分，前一部分判作正例，后一部分则判作反例。
@@ -239,26 +257,4 @@ $$P=\frac{TP}{TP+FP},R=\frac{TP}{TP+FN}$$
 >注意：   
 >1.测试样本的**排序**过程非常重要。不然P-R曲线的峰值可能出现在图形的中部。   
 >2.虽然P-R曲线总体上是个下降曲线，但不是严格的单调下降曲线。在局部，会由于TP样本的增多，使P值升高。
-
-ROC（Receiver operating characteristic）曲线的纵轴是真正例率（True Positive Rate，TPR），横轴是假正例率（False Positive Rate，FPR）。其定义如下：
-
-$$TPR=\frac{TP}{TP+FN},FPR=\frac{FP}{TN+FP}$$
-
-ROC曲线下方的面积被称为AUC（Area Under ROC Curve）。
-
-![](/images/article/ROC.gif)
-
-更多内容参见下图：
-
-![](/images/article/sensitivity_and_specificity.png)
-
-原图地址：
-
-https://en.wikipedia.org/wiki/Sensitivity_and_specificity
-
-除此之外，还有F-measure：
-
-![](/images/article/P_R_F.gif)
-
-如果是做搜索，那就是保证召回的情况下提升准确率；如果做疾病监测、反垃圾，则是保准确率的条件下，提升召回率。所以，在两者都要求高的情况下，可以用F-measure来衡量。
 

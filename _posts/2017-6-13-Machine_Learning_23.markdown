@@ -4,9 +4,27 @@ title:  机器学习（二十三）——AutoML, Optimizer
 category: ML 
 ---
 
-# HMM
+# HMM（续）
 
-## Baum–Welch算法（续）
+## 前向算法
+
+forward算法是求解问题2的常用算法。
+
+仍以上面的掷骰子为例，要算用正常的三个骰子掷出这个结果的概率，其实就是将所有可能情况的概率进行加和计算。同样，简单而暴力的方法就是把穷举所有的骰子序列，还是计算每个骰子序列对应的概率，但是这回，我们不挑最大值了，而是把所有算出来的概率相加，得到的总概率就是我们要求的结果。
+
+穷举法的计算量太大，不适用于计算较长的马尔可夫链。但是我们可以观察一下穷举法的计算步骤。
+
+![](/images/article/forward_algorithm.png)
+
+上图是某骰子序列的穷举计算过程，可以看出第3步计算的概率和公式的某些项，实际上在之前的步骤中已经计算出来了，前向递推的计算量并没有想象中的大。
+
+## Baum–Welch算法
+
+Baum–Welch算法是求解问题3的常用算法，由Baum和Welch于1972年提出。它虽然是EM算法的一个特例，但后者却是1977年才提出的。
+
+>Leonard Esau Baum，1931～2017，美国数学家，哈佛博士（1958）。国防分析研究所研究员，70年代末，加盟对冲基金——文艺复兴科技公司。
+
+>Lloyd Richard Welch，生于1927年，美国数学家，加州理工博士（1958），南加州大学教授。美国工程院院士，Shannon Award获得者（2003）。
 
 Baum–Welch算法也叫前向后向算法。因为它包含了前向和后向两个步骤。
 
@@ -285,51 +303,3 @@ https://mp.weixin.qq.com/s/VoBK-l_ieSg2UupC2ix2pA
 https://mp.weixin.qq.com/s/YRyqvlNe24mlFZ7GB9vDnw
 
 一文看懂常用的梯度下降算法
-
-https://mp.weixin.qq.com/s/q7BI-YyhtmNzUfBMTKVdqQ
-
-Hitting time analysis of SGLD！
-
-https://mp.weixin.qq.com/s/vt7BEHbwJrAzlL2Pc-6QFg
-
-掌握机器学习数学基础之优化（上）
-
-https://mp.weixin.qq.com/s/6NBLLLa-S625iaehR8zDfQ
-
-掌握机器学习数学基础之优化（下）
-
-https://mp.weixin.qq.com/s/o10Fp2VCwoLqgzirbGL9LQ
-
-如何估算深度神经网络的最优学习率
-
-https://mp.weixin.qq.com/s/T4f4W0V6YNBbjWqWBF19mA
-
-目标函数的经典优化算法介绍
-
-https://mp.weixin.qq.com/s/fXlbB7KmiX0iIv6xwSxNIA
-
-梯度下降法的三种形式BGD、SGD以及MBGD
-
-https://mp.weixin.qq.com/s/R_0_E5Ieaj9KiWgg1prxeg
-
-为什么梯度的方向与等高线切线方向垂直？
-
-https://mp.weixin.qq.com/s/0gdGNv98DytB8KxwVu_M0A
-
-通俗易懂讲解Deep Learning最优化方法之AdaGrad
-
-https://mp.weixin.qq.com/s/VVHe2msyeUTGiC7f_f0FFA
-
-一文概览深度学习中的五大正则化方法和七大优化策略
-
-https://mp.weixin.qq.com/s/qp5tJynA2uZIgv-IzJ_lrA
-
-从基础知识到实际应用，一文了解“机器学习非凸优化技术”
-
-https://mp.weixin.qq.com/s/zFGQzC_uQdAwlr9BzA-CYg
-
-深度学习需要了解的四种神经网络优化算法
-
-https://mp.weixin.qq.com/s/rUqIfKWmEBVjajlAn2HXfg
-
-理解深度学习中的学习率及多种选择策略

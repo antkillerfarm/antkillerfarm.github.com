@@ -6,6 +6,28 @@ category: ML
 
 # 机器学习分类器性能指标（续）
 
+ROC（Receiver operating characteristic）曲线的纵轴是真正例率（True Positive Rate，TPR），横轴是假正例率（False Positive Rate，FPR）。其定义如下：
+
+$$TPR=\frac{TP}{TP+FN},FPR=\frac{FP}{TN+FP}$$
+
+ROC曲线下方的面积被称为AUC（Area Under ROC Curve）。
+
+![](/images/article/ROC.gif)
+
+更多内容参见下图：
+
+![](/images/article/sensitivity_and_specificity.png)
+
+原图地址：
+
+https://en.wikipedia.org/wiki/Sensitivity_and_specificity
+
+除此之外，还有F-measure：
+
+![](/images/article/P_R_F.gif)
+
+如果是做搜索，那就是保证召回的情况下提升准确率；如果做疾病监测、反垃圾，则是保准确率的条件下，提升召回率。所以，在两者都要求高的情况下，可以用F-measure来衡量。
+
 Accuracy和Precision是一对容易混淆的概念。其一般定义如下图所示：
 
 ![](/images/article/Accuracy_and_precision.svg)
@@ -213,24 +235,4 @@ https://www.zhihu.com/question/20136144
 https://mp.weixin.qq.com/s/xyWY3Z5PiHkCFzCP0noBvA
 
 一文读懂HMM模型和Viterbi算法
-
-## 前向算法
-
-forward算法是求解问题2的常用算法。
-
-仍以上面的掷骰子为例，要算用正常的三个骰子掷出这个结果的概率，其实就是将所有可能情况的概率进行加和计算。同样，简单而暴力的方法就是把穷举所有的骰子序列，还是计算每个骰子序列对应的概率，但是这回，我们不挑最大值了，而是把所有算出来的概率相加，得到的总概率就是我们要求的结果。
-
-穷举法的计算量太大，不适用于计算较长的马尔可夫链。但是我们可以观察一下穷举法的计算步骤。
-
-![](/images/article/forward_algorithm.png)
-
-上图是某骰子序列的穷举计算过程，可以看出第3步计算的概率和公式的某些项，实际上在之前的步骤中已经计算出来了，前向递推的计算量并没有想象中的大。
-
-## Baum–Welch算法
-
-Baum–Welch算法是求解问题3的常用算法，由Baum和Welch于1972年提出。它虽然是EM算法的一个特例，但后者却是1977年才提出的。
-
->Leonard Esau Baum，1931～2017，美国数学家，哈佛博士（1958）。国防分析研究所研究员，70年代末，加盟对冲基金——文艺复兴科技公司。
-
->Lloyd Richard Welch，生于1927年，美国数学家，加州理工博士（1958），南加州大学教授。美国工程院院士，Shannon Award获得者（2003）。
 

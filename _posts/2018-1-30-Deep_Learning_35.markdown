@@ -64,6 +64,10 @@ https://mp.weixin.qq.com/s/mGcKpu3BXlAGO-t2FUCxAg
 
 基于深度模型的人脸对齐和姿态标准化
 
+https://mp.weixin.qq.com/s/gwRD3SzTof349V8W0_lRfg
+
+实时评估世界杯球员的正确姿势：FAIR开源DensePose
+
 # 深度目标跟踪
 
 ## 概述

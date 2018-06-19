@@ -262,3 +262,7 @@ https://zhuanlan.zhihu.com/p/37931822
 
 你需要知道的10种行人属性
 
+https://mp.weixin.qq.com/s/YBorhQrJ0UL3HZQHgd5D6A
+
+清华等机构提出基于内部一致性的行人检索方法，实现当前最优
+

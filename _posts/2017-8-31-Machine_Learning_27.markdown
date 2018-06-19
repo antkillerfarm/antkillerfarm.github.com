@@ -4,6 +4,34 @@ title:  机器学习（二十七）——Q-learning, 动态规划
 category: ML 
 ---
 
+# K-摇臂赌博机（续）
+
+## Gradient-Bandit算法
+
+Gradient-Bandit算法的定义如下：
+
+$$Pr\{A_t=a\}=\frac{e^{H_t(a)}}{\sum_{b=1}^ke^{H_t(b)}}=\pi_t(a)$$
+
+$$H_{t+1}(a)=H_t(a)+\alpha(R_t-\overline R_t)(1\{A_t=a\}-\pi_t(a))$$
+
+$$\overline R_t=\frac{1}{t}\sum_{i=1}^tR_i$$
+
+其中，$$H_t(a)$$被称作策略偏好（preference）。这实际上是一个Softmax算法的变种。
+
+## 多步强化学习
+
+对于多步强化学习任务，虽然可以将其中的每一步看作一个k-armed Bandit问题，然而由于这种方法忽视了决策过程之间的联系，存在很多局限，因此不如MDP相关的算法。
+
+## 参考
+
+http://www.xfyun.cn/share/?p=2606
+
+Bandit算法与推荐系统
+
+https://mp.weixin.qq.com/s/9dXqXmRkINjwJYB4csjU5A
+
+强化学习初探-从多臂老虎机问题说起
+
 # Q-learning
 
 Q-learning是强化学习中很重要的算法，也是最早被引入DL领域的强化学习算法，对它的研究催生了Deep Q-learning Networks。
@@ -208,25 +236,4 @@ $$q_*(s,a)=\max_{\pi}q_{\pi}(s,a)$$
 RL领域的DP算法的主要思想是：利用value function构建搜索Good Policy的方法。这里用$$v_*(s)$$或$$q_*(s, a)$$表示最优的value function。
 
 RL DP主要包括以下算法：（为了抓住问题的本质，这里仅列出各算法最关键的Bellman equation，至于流程参照Q-learning算法即可。）
-
-### Policy Iteration
-
-Policy Iteration包含如下两步：
-
-Policy Evaluation：
-
-$$v_{k+1}(s) = \sum_{a \in \mathcal{A}}\pi(a \mid  s)\left(\mathcal{R}_s^a + \gamma \sum_{s'\in \mathcal{S}}\mathcal{P}_{ss'}^a v_k(s')\right)$$
-
-Policy Improvement：
-
-$$\pi_{k+1}(s) = \arg \max_{a \in \mathcal{A}}\left(\mathcal{R}_s^a + \gamma \sum_{s'\in \mathcal{S}}\mathcal{P}_{ss'}^a v_k(s')\right)$$
-
-由于$$q_*(s, a)$$对应的$$v(s)$$必是$$v_*(s)$$，反之亦然，因此Policy Iteration的过程通常如下所示：
-
-![](/images/article/Policy_Iteration.png)
-
-![](/images/article/Policy_Iteration_2.png)
-
-如果只需要Prediction，不需要Control的话，也可以只进行Policy Evaluation，这时也被称为Iterative Policy Evaluation。
-
 

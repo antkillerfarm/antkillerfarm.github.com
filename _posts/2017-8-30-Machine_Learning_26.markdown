@@ -6,7 +6,27 @@ category: ML
 
 # 强化学习
 
-## MDP（续）
+## 概述（续）
+
+![](/images/article/reinforcement_learning.png)
+
+上图是强化学习的基本流程图。从控制论的角度来说，这是一个反馈控制系统，和经典的Kalman filters系统非常类似。因此，目前强化学习的主要用途，也多数和系统控制相关，例如机器人和自动驾驶。
+
+在推荐系统领域，由于有用户的反馈信息，亦可使用相关强化学习算法。
+
+## MDP
+
+强化学习任务通常用**马尔可夫决策过程（Markov Decision Process）**来描述：
+
+$$<\mathcal{S},\mathcal{A},\mathcal{P},\mathcal{R},\gamma>$$
+
+这个五元组依次代表：states、actions、state transition probability matrix、reward function、discount factor。
+
+>MDP中有两个对象：Agent和Environment。   
+>1.Environment处于一个特定的状态（State）（如打砖块游戏中挡板的位置、各个砖块的状态等）。   
+>2.Agent可以通过执行特定的动作（Actions）（如向左向右移动挡板）来改变Environment的状态。   
+>3.Environment状态改变之后会返回一个观察（Observation）给Agent，同时还会得到一个奖励（Reward）（可以为负，就是惩罚）。   
+>4.Agent根据返回的信息采取新的动作，如此反复下去。Agent如何选择动作叫做策略（Policy）。MDP的任务就是找到一个策略，来最大化奖励。
 
 注意State和Observation区别：State是Environment的私有表达，我们往往不会直接得到。
 
@@ -206,29 +226,4 @@ $$Q_{n+1}=Q_n+\alpha[R_n-Q_n]$$
 
 详细内容参见《数学狂想曲（四）》的“软件滤波算法”一节的“一阶滞后滤波法”和“加权递推平均滤波法”。
 
-## Gradient-Bandit算法
-
-Gradient-Bandit算法的定义如下：
-
-$$Pr\{A_t=a\}=\frac{e^{H_t(a)}}{\sum_{b=1}^ke^{H_t(b)}}=\pi_t(a)$$
-
-$$H_{t+1}(a)=H_t(a)+\alpha(R_t-\overline R_t)(1\{A_t=a\}-\pi_t(a))$$
-
-$$\overline R_t=\frac{1}{t}\sum_{i=1}^tR_i$$
-
-其中，$$H_t(a)$$被称作策略偏好（preference）。这实际上是一个Softmax算法的变种。
-
-## 多步强化学习
-
-对于多步强化学习任务，虽然可以将其中的每一步看作一个k-armed Bandit问题，然而由于这种方法忽视了决策过程之间的联系，存在很多局限，因此不如MDP相关的算法。
-
-## 参考
-
-http://www.xfyun.cn/share/?p=2606
-
-Bandit算法与推荐系统
-
-https://mp.weixin.qq.com/s/9dXqXmRkINjwJYB4csjU5A
-
-强化学习初探-从多臂老虎机问题说起
 

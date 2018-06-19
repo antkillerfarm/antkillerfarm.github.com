@@ -380,3 +380,7 @@ https://mp.weixin.qq.com/s/qh88sawJUZedv3X0LIRsAQ
 
 ESearch：58集团基于C++语言自主研发的搜索内核
 
+https://mp.weixin.qq.com/s/uMj3JEhgyYw4CaIhP1-GTQ
+
+阿里巴巴为什么不用ZooKeeper做服务发现？
+

@@ -4,6 +4,30 @@ title:  机器学习（三十）——Model-Free Control
 category: ML 
 ---
 
+# Temporal-Difference Learning
+
+### 反向认识TD($$\lambda$$)（续）
+
+特别的，E值并不需要等到完整的Episode结束才能计算出来，它可以每经过一个时刻就得到更新。E值存在饱和现象，有一个瞬时最高上限：
+
+$$E_\max=1/(1-\gamma\lambda)$$
+
+结合之前提到的TD error和ET，则更新公式可改为：
+
+$$V(S_t)\leftarrow V(S_t)+\alpha\delta_tE_t(s)$$
+
+如果$$\lambda=0$$，则只有当前状态得到更新，即$$E_t(s)=1(S_t=s)$$，这实际上就和之前提到TD(n=0)算法是一致的了。
+
+>David Silver的课件在这里存在表示混乱的问题，在之前的章节中，TD(X)表示的是n=X，而下文中TD(X)有的时候指的是$$\lambda=X$$。这里借用python表示参数的语法，更准确的描述公式。
+
+如果$$\lambda=1$$，TD($$\lambda=1$$)粗略看与每次访问的MC算法等同；在线更新时，状态价值差每一步都会有积累；离线更新时，TD($$\lambda=1$$)等同于MC算法(即遍历整个Episode)。
+
+参考：
+
+https://mp.weixin.qq.com/s/X6bukOqZ2Eg7jZ6MydHwSg
+
+伯克利提出时序差分模型TDM：让深度强化学习更像人类
+
 # Model-Free Control
 
 ## 概述
@@ -171,16 +195,3 @@ $$V(S_t)\leftarrow V(S_t)+\alpha(G_t^{\pi/\mu}-V(S_t))$$
 $$V(S_t)\leftarrow V(S_t)+\alpha\left(\frac{\pi(A_t\mid S_t)}{\mu(A_t\mid S_t)}(R_{t+1}+\gamma V(S_{t+1}))-V(S_t)\right)$$
 
 应用这种思想最好的方法是基于TD(0)的Q-learning。Q-learning的相关内容参见《机器学习（二十七）》。
-
-### DP和TD的关系
-
-|  | Full Backup (DP) | Sample Backup (TD) |
-|:--:|:--:|:--:|
-| Bellman Expectation<br/>Equation for $$v_\pi(s)$$ | Iterative Policy Evaluation<br/>$$V(s)\leftarrow E[R+\gamma V(S')\mid s]$$ | TD Learning<br/>$$V(S)\xleftarrow{\alpha} R+\gamma V(S')$$ |
-| Bellman Expectation<br/>Equation for $$q_\pi(s,a)$$ | Q-Policy Iteration<br/>$$Q(s,a)\leftarrow E[R+\gamma Q(S',A')\mid s,a]$$ | Sarsa<br/>$$Q(S,A)\xleftarrow{\alpha} R+\gamma Q(S',A')$$ |
-| Bellman Optimality<br/>Equation for $$q_*(s,a)$$ | Q-Value Iteration<br/>$$Q(s,a)\leftarrow E[R+\gamma \max_{a'\in A}Q(S',a')\mid s]$$ | Q-Learning<br/>$$Q(S,A)\xleftarrow{\alpha} R+\gamma \max_{a'\in A}Q(S',a')$$ |
-
-上表中$$x\xleftarrow{\alpha}y\equiv x\leftarrow x+\alpha(y-x)$$。
-
-
-

@@ -177,6 +177,10 @@ https://mp.weixin.qq.com/s/GobKiuxgZv0-ufSRBpTcIA
 
 Ian Goodfellow ICCV2017演讲：解读GAN的原理与应用
 
+https://mp.weixin.qq.com/s/NDZPPA-0FhqSzRndQOhNEw
+
+Google GAN之父Ian Goodfellow 最新演讲：生成对抗网络介绍
+
 https://mp.weixin.qq.com/s/TIgRVbnZYtrGUCDNLcL1uw
 
 GAN的入门与实践

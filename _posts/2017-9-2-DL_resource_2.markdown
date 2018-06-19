@@ -318,134 +318,103 @@ http://tieba.baidu.com/p/2250616047
 
 史上最全桌面显卡天梯图
 
-## 并行 & 框架
+## AI医疗
 
-https://zhuanlan.zhihu.com/p/26552293
+https://github.com/albarqouni/Deep-Learning-for-Medical-Applications
 
-Dataflow架构和神经网络加速器
+基于深度学习的医疗影像论文汇总
 
-https://zhuanlan.zhihu.com/p/28445511
+https://mp.weixin.qq.com/s/vtJUM94oYpN_h3Sdg3exLQ
 
-浅析深度学习框架设计中的关键技术
+张益肇：AI+医疗，微软有哪些布局？
 
-https://mp.weixin.qq.com/s/B4aQp_0YvS0jyUHNLQ5rRA
+https://mp.weixin.qq.com/s/mkYVhiwQJwcXxUdBVUvU8w
 
-IBM发布新型分布式深度学习系统：结合软硬件实现当前最优性能
+体素科技丁晓伟：医疗影像的哲学三问
 
-http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks
+https://mp.weixin.qq.com/s/aGc8Y8I_Xt0837H0MUVL-g
 
-神经网络的分布式训练
+CMU副教授马坚：精准基因组数据和智能医疗最新进展
 
-https://mp.weixin.qq.com/s/IE6blClvhYlq3-QAGHo5ww
+https://mp.weixin.qq.com/s/1E9gunSpgYt5xl9Q_uQNJg
 
-TensorFlow分布式计算机制解读：以数据并行为重
+使用深度学习进行医疗影像分析：文件格式篇
 
-https://mp.weixin.qq.com/s/7JGLm-hkCZBNDLA98qvWNA
+https://mp.weixin.qq.com/s/uy3MNxyT5nQIVsfWkXnL5Q
 
-自动生成硬件优化内核：陈天奇等人发布深度学习编译器TVM
+结合生成式与判别式方法，Petuum新研究助力医疗诊断
 
-https://mp.weixin.qq.com/s/4Ii3um3jqfm5yKKxZAFdmA
+https://mp.weixin.qq.com/s/1A6p672z4Yz__MF6TWORSw
 
-继1小时训练ImageNet之后，大批量训练扩展到了3万2千个样本
+备战医疗大赛必看！
 
-https://mp.weixin.qq.com/s/kOCftzSbHe2mvDmlRp-ihA
+https://mp.weixin.qq.com/s/DuFvVmcyazyUYxyoekh38w
 
-Jeff Dean：AI对计算机系统设计的影响
+邓侃解读：深度学习病历分析前沿进展
 
-https://mp.weixin.qq.com/s/XjNPaL6PC9LHX1PEGn5UZg
+https://mp.weixin.qq.com/s/QB5d6HwAcT7DiVQbmoD8qg
 
-微软实时AI系统“脑波计划”有多牛？看完秒懂！
+AI研发新药真有那么神？可能哈佛、斯坦福和阿斯利康实验室都在吹牛
 
-https://mp.weixin.qq.com/s/OkqUulFYHQSdgAbf9Fi9LA
+>医药方面的AI应用，也是AI的一个潜在的应用领域。这篇文章敢把各个大学鄙视一番，还是有些干货的。
 
-CoCoA：大规模机器学习的分布式优化通用框架
+https://mp.weixin.qq.com/s/ZMw12BJuexG0xM8OwWUc4w
 
-https://mp.weixin.qq.com/s/ToIDncp9dS_qk47PsdZm5A
+谷歌《Cell》论文：使用深度学习，直接对细胞影像生成荧光标记
 
-杜克大学：分布式深度学习训练算法TernGrad
+https://mp.weixin.qq.com/s/OkZdmBvSeMEsZbJyoZQvBQ
 
-https://mp.weixin.qq.com/s/rhtrN2qDspGkpJYDAVSX7w
+深度学习+基因组学：破译人类30亿碱基对
 
-UC Berkeley展示全新并行处理方法
+https://mp.weixin.qq.com/s/RBBdPLvSYy5Ss4mOU-in4Q
 
-https://mp.weixin.qq.com/s/ASqpPSIgW_bcFPBfRYz7Xg
+用深度学习方法修复医学图像数据集
 
-哈佛大学提出在云、边缘与终端设备上的分布式深度神经网络DDNN
+https://mp.weixin.qq.com/s/aSCTrmfYEE7Dc1uPkg0fZg
 
-http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
+百度提出NCRF：深度学习癌症图像检测效率再提升
 
-《Large Scale Distributed Deep Networks》中译文
+## 连续学习
 
-https://mp.weixin.qq.com/s/X7XG51yohLnEZ_Jg6XK9oQ
+https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
 
-Caffe作者贾扬清教你怎样打造更加优秀的深度学习架构
+终身机器学习: 一种持续学习的范式
 
-https://mp.weixin.qq.com/s/_mrYI7McMBUx0lEh4rNiYQ
+https://mp.weixin.qq.com/s/SBppyDBWqQUariiHbpaq1w
 
-百度开源移动端深度学习框架MDL，手机部署CNN支持iOS GPU
+实时深度学习的推理加速和连续学习
 
-https://mp.weixin.qq.com/s/qOjGrR59Mf0Mzgh4bpDhrA
+https://mp.weixin.qq.com/s/83HufWMDnuXIOCCfgqeDJw
 
-详解Horovod：Uber开源的TensorFlow分布式深度学习框架
+为什么说持续学习才是AI的关键
 
-https://mp.weixin.qq.com/s/ZCNSq5FC2REoVTKAK2mJQg
+https://mp.weixin.qq.com/s/kmEFjzFIbNq0_qdjc1Wm_w
 
-分布式深度学习原理、算法详细介绍
+DeepMind新智能体架构Unicorn：持续学习能力胜过多个基准智能体
 
-https://mp.weixin.qq.com/s/Ewiil56vMkzhO2xDWgo-Wg
+## 面试
 
-苹果发布Turi Create机器学习框架，5行代码开发图像识别
+https://www.zhihu.com/question/41233373
 
-https://mp.weixin.qq.com/s/jOVUPhrCBI9W9vPvD9eKYg
+如果你是面试官，你怎么去判断一个面试者的深度学习水平？
 
-UC Berkeley提出新型分布式框架Ray：实时动态学习的开端
+https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
 
-https://mp.weixin.qq.com/s/r951Iasr4dke6MPHsUO0TA
+20万、50万、100万的算法工程师，到底有什么区别？
 
-开源DAWN，Stanford的又一力作
+https://www.zhihu.com/question/56676679/answer/151505274
 
-https://mp.weixin.qq.com/s/2jrMDeMcb47zpPfFLEcnIA
+机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
 
-深度学习平台技术演进
+https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
 
-https://mp.weixin.qq.com/s/L4CMKS53pNyvhhqvQhja0g
+面试官是如何看出你机器学习水平的？
 
-5种商业AI产品的技术架构设计
+https://mp.weixin.qq.com/s?__biz=MzI3NTA0MzM1OQ==&mid=2651615534&idx=1&sn=00ecd7dc1d8472c070e720a1b63f04c4
 
-https://mp.weixin.qq.com/s/IqjKdAlGYREqCR9XQB5N1A
+我如何考察面试者的机器学习水平
 
-伯克利AI分布式框架Ray，兼容TensorFlow、PyTorch与MXNet
+https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
 
-https://mp.weixin.qq.com/s/aNX_8UDYI_0u-MwMTYeqdQ
-
-开发易、通用难，深度学习框架何时才能飞入寻常百姓家？
-
-https://mp.weixin.qq.com/s/UbAHB-uEIvqYZCB7xIAJTg
-
-机器学习新框架Propel：使用JavaScript做可微分编程
-
-https://mp.weixin.qq.com/s/_-z2d1GE_3FElzAwPyJZ8A
-
-十大流行AI框架和库的优缺点比较
-
-https://mp.weixin.qq.com/s/7nugWFKtD-C6cpwm2TyvdQ
-
-手把手教你如何部署深度学习模型
-
-https://mp.weixin.qq.com/s/Ctl65r4iZNEOBxiiX2I2eQ
-
-Momenta王晋玮：让深度学习更高效运行的两个视角
-
-https://mp.weixin.qq.com/s/irvBbPKENiZX9G_6wh5c-Q
-
-陈天奇等人提出TVM：深度学习自动优化代码生成器
-
-https://mp.weixin.qq.com/s/28n8g_epHsYB0I9GVc_lww
-
-陈天奇团队TVM重磅更新：直接在浏览器使用GPU
-
-https://mp.weixin.qq.com/s/UxN9ZRmKLN30s7uPqMpHPQ
-
-Jeff Dean等提出动态控制流编程模型，大规模机器学习性能提升21%
-
+谷歌等巨头机器学习面试题：从逻辑回归到智力测验
 

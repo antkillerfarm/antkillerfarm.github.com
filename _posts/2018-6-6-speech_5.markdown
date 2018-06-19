@@ -262,6 +262,8 @@ https://blog.csdn.net/xmdxcsj/article/details/78512652
 
 # WFST
 
+## 概述
+
 Weighted Finite State Transducer是目前解码器模块的关键技术。
 
 论文：
@@ -279,6 +281,22 @@ https://cs.nyu.edu/~mohri/courses.html
 https://cs.nyu.edu/~mohri/asr12/
 
 作为WFST的发明人，Mohri的Speech Recognition课程在解码器方面有相当大的篇幅。
+
+此外，OpenFst的官网也有一些教程：
+
+http://openfst.org/twiki/bin/view/FST/FstBackground
+
+OpenFst Background Material
+
+其中，最重要的是两个tutorial：
+
+http://openfst.org/twiki/bin/view/FST/FstHltTutorial
+
+OpenFst: An Open-Source, Weighted Finite-State Transducer Library and its Applications to Speech and Language
+
+http://openfst.org/twiki/bin/view/FST/FstSltTutorial
+
+OpenFst: a General and Efficient Weighted Finite-State Transducer Library
 
 以下内容主要参考下文：
 

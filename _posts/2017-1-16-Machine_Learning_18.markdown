@@ -278,27 +278,3 @@ https://mp.weixin.qq.com/s/bu9rSno_WmHHisE3lzYnqg
 
 ConvMF
 
-https://mp.weixin.qq.com/s/opJtn5mPVjnfRwr5UZ4aJg
-
-FTRL原理与工程实践
-
-http://www.cnblogs.com/EE-NovRain/p/3810737.html
-
-各大公司广泛使用的在线学习算法FTRL详解
-
-https://mp.weixin.qq.com/s/q9FU19Hpw2eWLLhsY5lYJQ
-
-parameter-free contextual bandits
-
-https://mp.weixin.qq.com/s/T-yCjebTzc_t6D4o5gyQLQ
-
-Collaborative Metric Learning
-
-https://mp.weixin.qq.com/s/9xxLU51eqhc6C81jzHQijQ
-
-简述推荐系统中的矩阵分解
-
-https://mp.weixin.qq.com/s/pf_BqYLw9sTtuJsYQZXehA
-
-计算广告CTR预估系列
-

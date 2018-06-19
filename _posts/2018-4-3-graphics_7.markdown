@@ -308,7 +308,9 @@ $$(K, \bigoplus, \bigotimes，0， 1)$$
 | Probability | $$R_+$$ | $$+$$ | $$\times$$ | 0 | 1 |
 | Log | $$R\cup\{-\infty，+\infty\}$$ | $$\oplus_{log}$$ | + | $$+\infty$$ | 0 |
 | Tropical | $$R\cup\{-\infty，+\infty\}$$ | min | + | $$+\infty$$ | 0 |
-| Probability | $$R_+$$ | $$+$$ | $$\times$$ | 0 | 1 |
+| String | $$\Sigma^*\cup\{\infty\}$$ | $$\land$$ | $$\cdot$$ | $$\infty$$ | $$\epsilon$$ |
+
+在WFST中用的比较多的是log半环和tropical半环。前者对路径概率进行了对数运算，而后者在log半环的基础上，进行了viterbi approximation，也就是用若干路径的概率极值，作为当前概率值，这和动态规划中的viterbi算法是一致的。
 
 接下来定义WFST上的二元运算：
 
@@ -334,9 +336,11 @@ Composition用来合并不同级别的转换器。用$$T=T_1\circ T_2$$表示这
 
 $$(T_1\circ T_2)(x,y)=\bigoplus_{z\in \mathcal{B}^*} T_1(x,z)\bigotimes T_2(z,y)$$
 
-起始状态应该是T1，T2的起始状态
+通俗一些的说法就是：
 
-结束状态是T1，T2的结束状态
+（1）起始状态应该是$$T_1，T_2$$的起始状态
 
-如果q1到r1的边t1的输出等于q2到r2的边t2的输入，那么(q1,q2)和(r1,r2)应该有一条边，如果是tripical半环，则该边权重是以上两边权重之和
+（2）结束状态是$$T_1，T_2$$的结束状态
+
+（3）如果$$q_1$$到$$r_1$$的边$$t_1$$的输出等于$$q_2$$到$$r_2$$的边$$t_2$$的输入，那么$$(q_1,q_2)$$和$$(r_1,r_2)$$应该有一条边，如果是tripical半环，则该边权重是以上两边权重之和。
 

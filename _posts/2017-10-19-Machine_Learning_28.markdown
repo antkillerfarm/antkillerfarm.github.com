@@ -6,6 +6,26 @@ category: ML
 
 # 动态规划（续）
 
+### Policy Iteration
+
+Policy Iteration包含如下两步：
+
+Policy Evaluation：
+
+$$v_{k+1}(s) = \sum_{a \in \mathcal{A}}\pi(a \mid  s)\left(\mathcal{R}_s^a + \gamma \sum_{s'\in \mathcal{S}}\mathcal{P}_{ss'}^a v_k(s')\right)$$
+
+Policy Improvement：
+
+$$\pi_{k+1}(s) = \arg \max_{a \in \mathcal{A}}\left(\mathcal{R}_s^a + \gamma \sum_{s'\in \mathcal{S}}\mathcal{P}_{ss'}^a v_k(s')\right)$$
+
+由于$$q_*(s, a)$$对应的$$v(s)$$必是$$v_*(s)$$，反之亦然，因此Policy Iteration的过程通常如下所示：
+
+![](/images/article/Policy_Iteration.png)
+
+![](/images/article/Policy_Iteration_2.png)
+
+如果只需要Prediction，不需要Control的话，也可以只进行Policy Evaluation，这时也被称为Iterative Policy Evaluation。
+
 ### Value Iteration
 
 $$v_{k+1}(s) = \max_{a \in \mathcal{A}}\left(\mathcal{R}_s^a + \gamma \sum_{s'\in \mathcal{S}}\mathcal{P}_{ss'}^a v_k(s')\right)$$
@@ -228,24 +248,4 @@ TD算法相当于在整个返家的过程中（一个Episode），根据已经�
 而对于TD学习，在一开始离开办公室的时候你可能会预估总耗时30分钟，但是当你取到车发现下雨的时候，你会立刻想到原来的预计过于乐观，因为既往的经验告诉你下雨会延长你的返家总时间，此时你会更新目前的状态价值估计，从原来的30分钟提高到40分钟。同样当你驾车离开高速公路时，会一路根据当前的状态（位置、路况等）对应的预估返家剩余时间，直到返回家门得到实际的返家总耗时。这一过程中，你会根据状态的变化实时更新该状态的价值。
 
 ![](/images/img2/TD.png)
-
-## TD vs. MC---1
-
-通过这个例子，我们可以直观的了解到：
-
-1.TD在知道结果之前可以学习，MC必须等到最后结果才能学习；
-
-2.TD可以在没有结果时学习，可以在持续进行的环境里学习。
-
-## TD vs. MC---2
-
-$$G_t = R_{t+1} + \gamma R_{t+2} + \dots + \gamma^{T−1}R_T$$是$$V_{\pi}(S_t)$$的无偏估计值。
-
-True TD target：$$R_{t+1}+\gamma V_{\pi}(S_{t+1})$$，也是$$V_{\pi}(S_t)$$的无偏估计值。
-
-TD target：$$R_{t+1}+\gamma V(S_{t+1})$$，是$$V_{\pi}(S_t)$$的有偏估计值。
-
-MC没有bias，但有着较高的Variance，且对初始值不敏感；
-
-TD低variance, 但有一定程度的bias，对初始值较敏感，通常比MC更高效；
 

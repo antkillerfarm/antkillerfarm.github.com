@@ -6,29 +6,25 @@ category: resource
 
 # DL参考资源
 
-## 并行 & 框架（续）
+## 行业
 
-https://mp.weixin.qq.com/s/fx0Pfu0MOPjSkzi5mL6U_A
+李开复的这篇文章不可不读：
 
-清华&斯坦福提出深度梯度压缩DGC，大幅降低分布式训练网络带宽需求
+https://mp.weixin.qq.com/s/OLIO4UIZUuzjX5oQbn3Tug
 
-https://mp.weixin.qq.com/s/wIdTDHEPffWqHA3_XWBLyw
+拥抱人工智能的中国：现状和展望（上）
 
-没错，纯SQL查询语句可以实现神经网络。
+https://mp.weixin.qq.com/s/KbKlgRAfjP_39WdXh7gOLg
 
->SQL跑神经网络固然没有太大意义，然而分布式数据库已经有数十年的历史，对于设计分布式深度学习框架亦有重大的启发意义。
+拥抱人工智能的中国：现状和展望（下）
 
-https://zhuanlan.zhihu.com/p/33351291
+https://mp.weixin.qq.com/s/hoo34-eMcYV7hV6LFbJqcg
 
-基于忆阻器（ReRAM），Computing-in-Memory的DLA
+10分钟带你读完人工智能的三生三世
 
-https://mp.weixin.qq.com/s/eTwSo3GnxSnK-BwwZeWmKA
+https://mp.weixin.qq.com/s/yAC6VTOl3jAxjUT0QbTVrw
 
-Jeff Dean等提出自动化分层模型，优化CPU、GPU等异构环境，性能提升超60%
-
-https://mp.weixin.qq.com/s/q0VENBNgolpeWmDapF5q_g
-
-在有池化层、1步幅的CNN上减少冗余计算，一种广泛适用的架构转换方法
+为什么要在边缘设备部署机器学习？
 
 ## 实战
 

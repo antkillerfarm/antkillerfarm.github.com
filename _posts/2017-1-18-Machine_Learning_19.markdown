@@ -4,6 +4,38 @@ title:  机器学习（十九）——决策树, 关联规则挖掘
 category: ML 
 ---
 
+# 推荐系统进阶
+
+## 其他（续）
+
+https://mp.weixin.qq.com/s/opJtn5mPVjnfRwr5UZ4aJg
+
+FTRL原理与工程实践
+
+http://www.cnblogs.com/EE-NovRain/p/3810737.html
+
+各大公司广泛使用的在线学习算法FTRL详解
+
+https://mp.weixin.qq.com/s/q9FU19Hpw2eWLLhsY5lYJQ
+
+parameter-free contextual bandits
+
+https://mp.weixin.qq.com/s/T-yCjebTzc_t6D4o5gyQLQ
+
+Collaborative Metric Learning
+
+https://mp.weixin.qq.com/s/9xxLU51eqhc6C81jzHQijQ
+
+简述推荐系统中的矩阵分解
+
+https://mp.weixin.qq.com/s/pf_BqYLw9sTtuJsYQZXehA
+
+计算广告CTR预估系列
+
+https://zhuanlan.zhihu.com/p/38117606
+
+早期购买行为的分析和预测建模
+
 # 决策树
 
 Decision Tree讲的最好的，首推周志华的《机器学习》。这里只对要点进行备忘。
@@ -255,20 +287,4 @@ $$support(X\Rightarrow Y)=\frac{count(X\cap Y)}{\mid D\mid }$$
 $$confidence(X\Rightarrow Y)=\frac{support(X\Rightarrow Y)}{support(X)}$$
 
 可信度反映了如果交易中包含X，则交易包含Y的概率。一般来说，只有支持度和可信度较高的关联规则才是用户感兴趣的。
-
-**定义八**：设定关联规则的最小支持度和最小可信度为$$SUP_{min}$$和$$CONF_{min}$$。规则R的支持度和可信度均不小于$$SUP_{min}$$和$$CONF_{min}$$，则称为**强关联规则**。关联规则挖掘的目的就是找出强关联规则，从而指导商家的决策。
-
-这八个定义包含了关联规则相关的几个重要基本概念，关联规则挖掘主要有两个问题：
-
-1.找出交易数据库中所有大于或等于用户指定的最小支持度的频繁项集。
-
-2.利用频繁项集生成所需要的关联规则，根据用户设定的最小可信度筛选出强关联规则。
-
-其中，步骤1是关联规则挖掘算法的难点，下文介绍的Apriori算法和FP-growth算法，都是解决步骤1问题的算法。
-
-参考：
-
-http://blog.csdn.net/OpenNaive/article/details/7047823
-
-关联规则挖掘（一）：基本概念
 

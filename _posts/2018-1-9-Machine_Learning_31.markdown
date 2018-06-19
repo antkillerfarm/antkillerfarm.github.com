@@ -4,6 +4,18 @@ title:  机器学习（三十一）——价值函数的近似表示, 数据不�
 category: ML 
 ---
 
+# Model-Free Control（续）
+
+### DP和TD的关系
+
+|  | Full Backup (DP) | Sample Backup (TD) |
+|:--:|:--:|:--:|
+| Bellman Expectation<br/>Equation for $$v_\pi(s)$$ | Iterative Policy Evaluation<br/>$$V(s)\leftarrow E[R+\gamma V(S')\mid s]$$ | TD Learning<br/>$$V(S)\xleftarrow{\alpha} R+\gamma V(S')$$ |
+| Bellman Expectation<br/>Equation for $$q_\pi(s,a)$$ | Q-Policy Iteration<br/>$$Q(s,a)\leftarrow E[R+\gamma Q(S',A')\mid s,a]$$ | Sarsa<br/>$$Q(S,A)\xleftarrow{\alpha} R+\gamma Q(S',A')$$ |
+| Bellman Optimality<br/>Equation for $$q_*(s,a)$$ | Q-Value Iteration<br/>$$Q(s,a)\leftarrow E[R+\gamma \max_{a'\in A}Q(S',a')\mid s]$$ | Q-Learning<br/>$$Q(S,A)\xleftarrow{\alpha} R+\gamma \max_{a'\in A}Q(S',a')$$ |
+
+上表中$$x\xleftarrow{\alpha}y\equiv x\leftarrow x+\alpha(y-x)$$。
+
 # 价值函数的近似表示
 
 之前的内容都是讲解一些强化学习的基础理论，这些知识只能解决一些中小规模的问题，很多价值函数需要用一张大表来存储，获取某一状态或行为价值的时候通常需要一个查表操作（Table Lookup），这对于那些状态空间或行为空间很大的问题几乎无法求解。
