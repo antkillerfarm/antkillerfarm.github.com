@@ -178,6 +178,10 @@ https://mp.weixin.qq.com/s/Fodqc5cw1TISFJwtrstg9Q
 
 CMU、NYU与FAIR共同提出GLoMo：迁移学习新范式
 
+https://mp.weixin.qq.com/s/HAc1R74Yj2nwiohuRy5emA
+
+任务分类法：解构任务迁移学习
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：

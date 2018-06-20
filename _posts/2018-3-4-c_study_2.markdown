@@ -58,6 +58,14 @@ C - undefined reference to “sqrt” even with '-lm'
 
 # WFST（续）
 
+## Closure
+
+![](/images/img2/closure.png)
+
+Closure运算的形式化描述为：
+
+$$[T^*](x,y)=\bigoplus_{n=0}^{\infty}[T^n](x,y)$$
+
 ## Reversal
 
 ![](/images/img2/reversal.png)
@@ -104,7 +112,11 @@ $$[T_1\circ T_2](x,y)=\bigoplus_z [T_1](x,z)\bigotimes [T_2](z,y)$$
 
 ## Intersection
 
+![](/images/img2/intersection.png)
 
+Intersection运算的形式化描述为：
+
+$$[A_1\cap A_2](x)=[A_1](x)\otimes[A_2](x)$$
 
 ## Determinization
 

@@ -212,6 +212,10 @@ https://zhuanlan.zhihu.com/p/38046989
 
 从ISCA论文看AI硬件加速的新技巧
 
+https://mp.weixin.qq.com/s/jqRBrs9Y_-3qvemL0RTflA
+
+支付宝如何优化移动端深度学习引擎？
+
 # OCR
 
 光学字符识别（Optical Character Recognition, OCR），是指对文本资料的图像文件进行分析识别处理，获取文字及版面信息的过程。

@@ -372,4 +372,7 @@ https://mp.weixin.qq.com/s/lPzPfjYiAsNvVcVWdL08dA
 
 照片闭眼也无妨，Facebook黑科技完美补全大眼睛
 
+https://mp.weixin.qq.com/s/h-mp7_oO9aZ1yYxiJMLziQ
+
+作画、写诗、弹曲子，AI还能这么玩？
 

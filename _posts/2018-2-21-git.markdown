@@ -258,6 +258,10 @@ https://www.gerritcodereview.com/
 
 ## 参考
 
+https://mp.weixin.qq.com/s/0Cv968LpSSYKJpAbW1MlMA
+
+手把手教你git全操作
+
 https://mp.weixin.qq.com/s/DbvRbaH7BJKeTCT4LVXUoA
 
 Git的4个阶段的撤销更改

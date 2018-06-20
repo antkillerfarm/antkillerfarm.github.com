@@ -268,3 +268,6 @@ https://mp.weixin.qq.com/s/ePJPoQlOveTrCvCTy8_Xxg
 
 知识图谱的技术与应用
 
+https://mp.weixin.qq.com/s/fuI9U7aZpuk-WX6GQNtOuA
+
+这是一份通俗易懂的知识图谱技术与应用指南
