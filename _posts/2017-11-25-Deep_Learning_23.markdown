@@ -104,6 +104,10 @@ https://mp.weixin.qq.com/s/_5tyt7pU0gIXbkmTOVEtDw
 
 嫌图片太大？！卷积神经网络轻松实现无损压缩到20%！
 
+https://mp.weixin.qq.com/s/a4oU8UK_hLMrKXNRQizAag
+
+图鸭科技获CVPR 2018图像压缩挑战赛单项冠军，技术解读端到端图像压缩框架
+
 # SR之外的DL ISP
 
 https://mp.weixin.qq.com/s/Wdxkvlz4nLbJS_gWqHwMjw

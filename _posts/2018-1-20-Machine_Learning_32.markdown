@@ -1,78 +1,10 @@
 ---
 layout: post
-title:  机器学习（三十二）——t-SNE
+title:  机器学习（三十二）——t-SNE, 价值函数的近似表示
 category: ML 
 ---
 
-# Linear Discriminant Analysis（续）
-
-使用LDA的一些限制：
-
-1.LDA至多可生成C-1维子空间。C为类别数。
-
-LDA降维后的维度区间在[1,C-1]，与原始特征数n无关，对于二值分类，最多投影到1维。
-
-2.LDA不适合对非高斯分布样本进行降维。
-
-![](/images/img2/LDA_5.jpg)
-
-上图中红色区域表示一类样本，蓝色区域表示另一类，由于是2类，所以最多投影到1维上。不管在直线上怎么投影，都难使红色点和蓝色点内部凝聚，类间分离。
-
-3.LDA在样本分类信息依赖方差而不是均值时，效果不好。
-
-![](/images/img2/LDA_6.png)
-
-上图中，样本点依靠方差信息进行分类，而不是均值信息。LDA不能够进行有效分类，因为LDA过度依靠均值信息。
-
-对LDA稍加扩展就得到了《图像处理理论（一）》中的Otsu法。**Otsu法实际上是一维离散域的LDA。**
-
-此外，对于二值分类问题，最小二乘法和Fisher线性判别分析是一致的。
-
-参考：
-
-https://mp.weixin.qq.com/s/u-6nPrb4r9AS2gtrl5s-FA
-
-LDA(Linear Discriminant Analysis)算法介绍
-
-http://www.cnblogs.com/jerrylead/archive/2011/04/21/2024384.html
-
-线性判别分析（Linear Discriminant Analysis）（一）
-
-http://www.cnblogs.com/jerrylead/archive/2011/04/21/2024389.html
-
-线性判别分析（Linear Discriminant Analysis）（二）
-
-# t-SNE
-
-## 概述
-
-t-SNE(t-distributed stochastic neighbor embedding)是用于降维的一种机器学习算法，是由Laurens van der Maaten和Geoffrey Hinton在08年提出来。此外，t-SNE 是一种非线性降维算法，非常适用于高维数据降维到2维或者3维，进行可视化。
-
-论文：
-
-《Visualizing Data using t-SNE》
-
-以下是几种常见的降维算法：
-
-1.主成分分析（线性）
-
-2.t-SNE（非参数/非线性）
-
-3.萨蒙映射（非线性）
-
-4.等距映射（非线性）
-
-5.局部线性嵌入（非线性）
-
-6.规范相关分析（非线性）
-
-7.SNE（非线性）
-
-8.最小方差无偏估计（非线性）
-
-9.拉普拉斯特征图（非线性）
-
-PCA的相关内容参见《机器学习（十六）》。
+# t-SNE（续）
 
 ## SNE
 
@@ -194,13 +126,63 @@ https://mp.weixin.qq.com/s/cnzQ7XepftDOZXslCf1MUA
 
 你真的会用t-SNE么？有关t-SNE的小技巧
 
-# Bloom Filter
+# 价值函数的近似表示
 
-https://blog.csdn.net/zhaodedong/article/details/78186450
+之前的内容都是讲解一些强化学习的基础理论，这些知识只能解决一些中小规模的问题，很多价值函数需要用一张大表来存储，获取某一状态或行为价值的时候通常需要一个查表操作（Table Lookup），这对于那些状态空间或行为空间很大的问题几乎无法求解。
 
-Bloom Filter的原理和实现
+在实际应用中，对于状态和行为空间都比较大的情况下，精确获得各种v(S)和q(s,a)几乎是不可能的。这时候需要找到近似的函数，具体可以使用线性组合、神经网络以及其他方法来近似价值函数：
 
-https://blog.csdn.net/zhaodedong/article/details/78445910
+$$\hat v(s,w)\approx v_\pi(s)\\
+\hat q(s,a,w)\approx q_\pi(s,a)
+$$
 
-Bloom Filter的数学背景
+其中w是该近似函数的参数。
+
+## 线性函数
+
+这里仍然从最简单的线性函数说起：
+
+$$\hat v(S,w)=x(S)^Tw=\sum_{j=1}^nx_j(S)w_j$$
+
+目标函数为：
+
+$$J(w)=E_\pi[(v_\pi(S)-x(S)^Tw)^2]$$
+
+更新公式为：
+
+$$\Delta w=\alpha (v_\pi(S)-\hat v(S,w))x(S)$$
+
+上述公式都是基本的ML方法，这里不再赘述。既然是传统ML方法，自然少不了特征工程。
+
+比如Table Lookup Features：
+
+$$x^{table}(S)=\begin{pmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{pmatrix}$$
+
+则：
+
+$$\hat v(S,w)=\begin{pmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{pmatrix}\begin{pmatrix} w_1 \\ \vdots \\ w_n \end{pmatrix}$$
+
+## Incremental Prediction Algorithms
+
+事实上，之前所列的公式都不能直接用于强化学习，因为公式里都有一个实际价值函数$$v_\pi(S)$$，或者是一个具体的数值，而强化学习没有监督数据，因此不能直接使用上述公式。
+
+因此，我们需要找到一个替代$$v_\pi(S)$$的目标。
+
+|:--:|:--:|:--:|:--:|
+| MC | $$\Delta w=\alpha (\color{red}{G_t}-\hat v(S_t,w))\nabla_w \hat v(S_t,w)$$ | 有噪声、无偏采样 | 收敛至一个局部最优解 |
+| TD(0) | $$\Delta w=\alpha (\color{red}{R_{t+1}+\gamma\hat v(S_{t+1},w)}-\hat v(S_t,w))\nabla_w \hat v(S_t,w)$$ | 有噪声、有偏采样 | 收敛至全局最优解 |
+| TD($$\lambda$$) | $$\Delta w=\alpha (\color{red}{G_t^\lambda}-\hat v(S_t,w))\nabla_w \hat v(S_t,w)$$ | 有噪声、有偏采样 |  |
+
+上面公式中，红色的部分就是目标函数。
+
+对于$$\hat q(S,A,w)$$，我们也有类似的结论：
+
+|:--:|:--:|:--:|:--:|
+| MC | $$\Delta w=\alpha (\color{red}{G_t}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、无偏采样 | 收敛至一个局部最优解 |
+| TD(0) | $$\Delta w=\alpha (\color{red}{R_{t+1}+\gamma\hat q(S_{t+1},A_{t+1},w)}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、有偏采样 | 收敛至全局最优解 |
+| TD($$\lambda$$) | $$\Delta w=\alpha (\color{red}{q_t^\lambda}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、有偏采样 |  |
+
+## Batch Methods
+
+前面所说的递增算法都是基于数据流的，经历一步，更新算法后，我们就不再使用这步的数据了，这种算法简单，但有时候不够高效。与之相反，批方法则是把一段时期内的数据集中起来，通过学习来使得参数能较好地符合这段时期内所有的数据。这里的训练数据集“块”相当于个体的一段经验。
 

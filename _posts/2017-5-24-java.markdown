@@ -354,4 +354,7 @@ https://mp.weixin.qq.com/s/0bOg1kvSR66-8rvFDqtLIQ
 
 用文本挖掘分析了5万首《全唐诗》，竟然发现这些秘密
 
+https://mp.weixin.qq.com/s/B_hnpOp_AVsIoL8gbkL4Hw
+
+深度学习在文本领域的应用
 

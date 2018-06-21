@@ -320,6 +320,10 @@ https://mp.weixin.qq.com/s/E0INxsn_p-MBNA-wg-2nbQs
 
 无监督学习—聚类、层次聚类、t-SNE，DBSCAN
 
+https://mp.weixin.qq.com/s/wIaDAewwOBMPRDr28DqGoQ
+
+Feature Tools：可自动构造机器学习特征的Python库
+
 # 推荐系统的工程细节
 
 推荐系统不仅是算法，还包括若干工程细节。这些细节虽然不算复杂，够不上算法的层面，然而对产品的成败，却有举足轻重的作用。

@@ -300,3 +300,7 @@ https://mp.weixin.qq.com/s/GHjmiB6F2W3Zo8gVllTyyQ
 
 重现“世界模型”实验，无监督方式快速训练
 
+https://mp.weixin.qq.com/s/v0IOMRChFFLX9hOgwxlsaQ
+
+反“换脸”魔高一丈：新方法识别假视频正确率达99%
+
