@@ -124,7 +124,7 @@ YOLO有一些缺陷：每个网格只预测一个物体，容易造成漏检；�
 
 ![](/images/article/ssd_2.png)
 
-上图是从另一个角度观察SSD，可以看出SSD可检出8372个default box。这里沿用Faster R-CNN的Anchor方法生成default box。
+上图是从另一个角度观察SSD，可以看出SSD可检出8372个default box（也叫做prior box）。这里沿用Faster R-CNN的Anchor方法生成default box。
 
 ![](/images/article/ssd_3.png)
 

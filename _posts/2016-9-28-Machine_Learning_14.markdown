@@ -282,3 +282,6 @@ https://mp.weixin.qq.com/s/ctLe1UbvWqBJ8jh-ppU3rA
 
 机器学习中的五种回归模型及其优缺点
 
+https://mp.weixin.qq.com/s/zzCRiSSyfTAFYSGMnr8zfg
+
+机器学习中L1和L2正则化的直观解释

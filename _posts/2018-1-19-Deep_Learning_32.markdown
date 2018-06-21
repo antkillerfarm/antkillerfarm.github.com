@@ -124,17 +124,43 @@ https://china.xilinx.com/support/documentation/white_papers/c_wp486-deep-learnin
 
 利用Xilinx器件的INT8优化开展深度学习
 
+## INT量化
+
 论文：
 
 《On the efficient representation and execution of deep acoustic models》
 
 ![](/images/img2/INT8.png)
 
+一个浮点数包括底数和指数两部分。将两者分开，就得到了一般的INT量化。
+
+## UINT量化
+
+论文：
+
 《Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference》
 
 ![](/images/img2/INT8_2.png)
 
-参考：
+UINT量化使用bias将数据搬移到正数区间。
+
+## NN硬件的指标术语
+
+MACC：multiply-accumulate，乘法累加。
+
+FLOPS：Floating-point Operations Per Second，每秒所执行的浮点运算次数。
+
+显然NN的INT8计算主要以MACC为单位。
+
+## gemmlowp
+
+gemmlowp是Google提出的一个支持低精度数据的GEMM（General Matrix Multiply）库。
+
+代码：
+
+https://github.com/google/gemmlowp
+
+## 参考
 
 https://www.chiphell.com/thread-1620755-1-1.html
 
@@ -147,16 +173,6 @@ https://mp.weixin.qq.com/s/S9VcoS_59nbZWe_P3ye2Tw
 https://zhuanlan.zhihu.com/p/35700882
 
 CNN量化技术
-
-## NN硬件的指标术语
-
-MACC：multiply-accumulate，乘法累加。
-
-FLOPS：Floating-point Operations Per Second，每秒所执行的浮点运算次数。
-
-显然NN的INT8计算主要以MACC为单位。
-
-## 参考
 
 https://mp.weixin.qq.com/s/9DXMqiPIK5P5wzUMT7_Vfw
 

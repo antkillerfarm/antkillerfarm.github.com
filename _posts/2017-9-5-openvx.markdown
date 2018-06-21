@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenVX, 运算加速库, NVIDIA, NN中间语言
+title:  OpenVX, 运算加速库, NVIDIA
 category: AI 
 ---
 
@@ -252,6 +252,14 @@ NVIDIA Deep Learning Accelerator是一个开源的用于inference的芯片方案
 
 http://nvdla.org/
 
+## NVIDIA DALI
+
+NVIDIA DALI是一个GPU加速的数据增强和图像加载库，为优化深度学习框架数据pipeline而设计，而其中的NVIDIA nvJPEG是用于JPEG解码的高性能GPU加速库。
+
+代码：
+
+https://github.com/NVIDIA/dali
+
 ## CUDA实战
 
 安装：
@@ -288,80 +296,6 @@ https://mp.weixin.qq.com/s/bvNnzkOzGYYYewc3G9DOIw
 
 GPU是如何优化运行机器学习算法的？
 
-# NN中间语言
-
-## 概述
-
-随着目前DL框架越来越多，如何在框架之间对模型进行相互转换，就成为了工业界的一个大问题。
-
-https://github.com/ysh329/deep-learning-model-convertor
-
-这个网页包含了各种深度框架之间的模型相互转换的工具的列表。从中可以看出ONNX和MMdnn算是目前比较有用的转换工具了。
-
-这类many-to-many工具从实现原理上，主要是将各种模型转换成中间语言（IR，intermediate representation），然后再变换成目标语言。
-
-## NNEF
-
-Neural Network Exchange Format是Khronos制定的用于交换NN模型数据的数据格式标准。
-
-官网：
-
-https://www.khronos.org/nnef
-
-## ONNX
-
-和NNEF竞争的标准还有微软和Facebook联合推出的Open Neural Network Exchange。
-
-官网：
-
-https://github.com/onnx
-
-参考：
-
-https://mp.weixin.qq.com/s/etSrI8Z3-NWbrqNWIbfzjw
-
-微软Facebook联手发布AI生态系统
-
-## NNVM
-
-陈天奇等推出的NNVM也是一个类似的中间表示。官网：
-
-https://github.com/dmlc/nnvm
-
-参考：
-
-https://mp.weixin.qq.com/s/qkvX0rmEe0yQ-BhCmWAXSQ
-
-李沐：AWS开源端到端AI框架编译器NNVM
-
-## Android NN
-
-https://developer.android.com/ndk/guides/neuralnetworks/index.html
-
-这是Android NDK中的NN相关的接口文档
-
-https://developer.arm.com/products/software/mali-drivers/android-nnapi
-
-这是ARM对于Android NN的一个实现。
-
-## MMdnn
-
-MMdnn是微软推出的工具集，也是目前功能最强的工具集。
-
-官网：
-
-https://github.com/Microsoft/MMdnn
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/32711259
-
-从NNVM和ONNX看AI芯片的基础运算算子
-
-https://mp.weixin.qq.com/s/jjT0x99ht8xtfWmzL-0R1A
-
-深度学习的IR“之争”
-
 # CATIA
 
 CATIA是法国达索公司的产品开发旗舰解决方案。作为PLM协同解决方案的一个重要组成部分，它可以通过建模帮助制造厂商设计他们未来的产品，并支持从项目前阶段、具体的设计、分析、模拟、组装到维护在内的全部工业设计流程。CATIA是GPU在工业上的一个重要的应用案例。
@@ -385,4 +319,18 @@ https://mlperf.org/
 RDMA网卡（Remote Direct Memory Access，这是一种硬件的网络技术，它使得计算机访问远程的内存时无需远程机器上CPU的干预）已经可以提供50~100Gbps的网络带宽和微秒级的传输延迟。
 
 目前许多以深度学习为目标应用的GPU机群都部署了这样的网络。
+
+# NN计算的硬件设计
+
+NN计算问题的瓶颈主要包括两类：
+
+1.数学运算的速度。NN运算主要以乘加为主，实现这类加速功能的硬件单元一般被称为NN Processor。这也是第一代AI芯片主要解决的问题。
+
+再细分的话，又有矩阵派和卷积派两种。
+
+矩阵派的通用性好，且FC运算速度快于卷积派。
+
+而卷积派由于针对Conv的Kernel数据不变这一特点进行优化，Conv速度极快。
+
+2.IO问题，也称带宽问题。早期的NN由于算子有限，基本只有FC、Conv、Pooling、Activation等少数几种算子。但现在的NN模型算子可就多了，且有相当部分算子属于非计算类的搬运数据算子，比如permute等。针对这类运算，一般采用被称作Tensor Processor的硬件单元进行加速。
 

@@ -118,6 +118,34 @@ Intersection运算的形式化描述为：
 
 $$[A_1\cap A_2](x)=[A_1](x)\otimes[A_2](x)$$
 
+Intersection是求两个WFST的公共部分，并把相应的权重相加。
+
+## Difference
+
+![](/images/img2/difference.png)
+
+Difference运算的形式化描述为：
+
+$$[A_1 - A_2](x)=[A_1\cap \overline{A_2}](x)$$
+
+Difference大约是简单操作中最不好懂的了，我足足看了2个小时才看明白。
+
+Difference的字面意思是：从A中去掉B。
+
+比如上图中的A可以接受4个序列：ab,ad,cb,cd。但是ab,cd出现在B中，因此A-B就只有ad和cb了。可以看出，这里的B，其权重是无关紧要的，因此该操作要求B必须是无权重的FST。
+
+Difference的示例也可以很复杂，比如下图就不那么容易看懂了。这也是卡了我2个小时的元凶。
+
+![](/images/img2/difference_2.png)
+
+## Connection
+
+下面的几个运算属于图优化的范畴，因此没有形式化描述。
+
+![](/images/img2/connection.png)
+
+Connection运算用于计算FST的连通性。上图中的状态3，4和初始状态0之间没有连通，所以应该去掉。状态5没有路径到达终止状态2，所以也应该去掉。
+
 ## Determinization
 
 Determinization：所有状态在接受某个输入后只有一条输出边，而且不包含$$\epsilon$$。

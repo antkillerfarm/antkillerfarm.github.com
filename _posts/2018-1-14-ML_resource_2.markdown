@@ -398,3 +398,10 @@ https://mp.weixin.qq.com/s/4sfWR-BTtIYipUZQD5kyyg
 
 整数规划求解方法大全
 
+https://mp.weixin.qq.com/s/6Oyp5Tt1t8xKapw2NqCdFQ
+
+整数规划分解方法：Benders Decomposition简介
+
+https://mp.weixin.qq.com/s/eXeOSwvk2RoEVSmpN5NtcA
+
+2018世界杯球迷群体分析实录
