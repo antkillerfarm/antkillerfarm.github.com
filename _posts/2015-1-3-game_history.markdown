@@ -20,6 +20,8 @@ Age of Empires 1、2、3、Age of Mythology。Rise of Nations是Microsoft的另�
 
 Dune 2、2000、3000、Command & Conquer 1、2、3、Red Alart 1、2、Command & Conquer:Generals
 
+![](/images/img2/red_alert.gif)
+
 ## 4.3DO
 
 Heroes of Might and Magic 3、4、5

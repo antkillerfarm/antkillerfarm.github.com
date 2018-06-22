@@ -192,6 +192,10 @@ https://mp.weixin.qq.com/s/SpCorsAiTWGYGiohT_gZtg
 
 如何训练智能体Agent玩毁灭战士ViZDoom？
 
+https://mp.weixin.qq.com/s/ewC2_8O29Gg0blxK7mHsYA
+
+比TD、MC、MCTS指数级快，性能超越A3C、DDQN等模型，这篇RL算法论文在Reddit上火了
+
 # CNN进阶
 
 https://mp.weixin.qq.com/s/gwH9s1ggMTj2dJkad9wUuw
