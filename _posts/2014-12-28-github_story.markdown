@@ -220,3 +220,9 @@ https://mp.weixin.qq.com/s/4AnLu0m2IILGwyPyuK37Fg
 
 基本操作：Go创建GraphQL API
 
+# DL参考资源
+
+https://mp.weixin.qq.com/s/bgP_xMfi3hXayscf9D5JIg
+
+谷歌提出Sim2Real：让机器人像人类一样观察世界
+

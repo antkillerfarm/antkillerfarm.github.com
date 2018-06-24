@@ -56,7 +56,51 @@ https://stackoverflow.com/questions/27475977/c-undefined-reference-to-sqrt-even-
 
 C - undefined reference to “sqrt” even with '-lm'
 
-# WFST（续）
+# WFST
+
+## 相关的群论知识（续）
+
+常用的半环如下表所示：
+
+| Semiring | Set | $$\oplus$$ | $$\otimes$$ | 0 | 1 |
+|:--:|:--:|:--:|:--:|:--:|:--:|
+| Boolean | $$\{0,1\}$$ | $$\lor$$ | $$\land$$ | 0 | 1 |
+| Probability | $$R_+$$ | $$+$$ | $$\times$$ | 0 | 1 |
+| Log | $$R\cup\{-\infty，+\infty\}$$ | $$\oplus_{log}$$ | + | $$+\infty$$ | 0 |
+| Tropical | $$R\cup\{-\infty，+\infty\}$$ | min | + | $$+\infty$$ | 0 |
+| String | $$\Sigma^*\cup\{\infty\}$$ | $$\land$$ | $$\cdot$$ | $$\infty$$ | $$\epsilon$$ |
+
+在WFST中用的比较多的是log半环和tropical半环。前者对路径概率进行了对数运算，而后者在log半环的基础上，进行了viterbi approximation，也就是用若干路径的概率极值，作为当前概率值，这和动态规划中的viterbi算法是一致的。
+
+接下来定义WFST上的二元运算：
+
+一整条路径的权重$$w[\pi ]=w[e_1]\bigotimes \cdots \bigotimes w[e_k]$$。
+
+多个有限路径集合的权重$$w[R]=\bigoplus_{\pi \in R} w[\pi]$$。
+
+参考：
+
+http://hongjiang.info/semigroup-and-monoid/
+
+半群(semigroup)与幺半群(monoid)
+
+## Sum(Union)
+
+介绍完WFST的定义，再来介绍一下定义在它之上的运算。
+
+![](/images/img2/sum.png)
+
+Sum运算的形式化描述为：
+
+$$[T_1 \oplus T_2](x,y)=[T_1](x,y)\oplus [T_2](x,y)$$
+
+## Product(Concatenation)
+
+![](/images/img2/product.png)
+
+Product运算的形式化描述为：
+
+$$[T_1 \otimes T_2](x,y)=\bigoplus_{x=x_1x_2,y=y_1y_2} [T_1](x_1,y_1)\otimes [T_2](x_2,y_2)$$
 
 ## Closure
 
@@ -182,11 +226,27 @@ Determinization之后的FST采用`(原始状态号,剩余权重)`的方式表示
 
 ## Pushing
 
-如果WFST不在乎权重的分布，而只在乎最终权重的大小的话，则可以将权重前推（Pushing），以利于最小化。
-
 Pushing包括Weight Pushing和Label Pushing两种情况。
 
 ![](/images/img2/weight_pushing.png)
+
+上图是Weight Pushing的例子。如果WFST不在乎权重的分布，而只在乎最终权重的大小的话，则可以将权重前推（Pushing），以利于最小化。
+
+![](/images/img2/label_pushing.png)
+
+上图是Label Pushing的例子，将非$$\epsilon$$的label前推。
+
+## Minimization
+
+最小化的目的是减少原图中的状态数，以及转移边数。从而减少存储空间和计算时间。
+
+最小化一般是消除相同结点。常用算法与DFA的最小化算法类似。
+
+## HCLG
+
+介绍完WFST的基本运算，这里来介绍一下WFST在语音识别上的应用——HCLG。
+
+
 
 ## 参考
 

@@ -80,6 +80,10 @@ http://www.cnblogs.com/gaoxiang12/
 
 一个SLAM方面的blog。作者半闲居士，目前在德国慕尼黑工业大学留学，清华本科。
 
+https://blog.csdn.net/heyijia0327
+
+一个SLAM方面的blog。
+
 ## 软件
 
 https://github.com/raulmur/ORB_SLAM2

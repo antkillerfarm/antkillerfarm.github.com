@@ -216,6 +216,10 @@ https://mp.weixin.qq.com/s/iKiU_QF5y4t1KMmr6WMctw
 
 一文看懂DGames（区块链游戏）的技术架构和业务逻辑！
 
+https://mp.weixin.qq.com/s/zyU0ANfBS_JrFLNylnErUw
+
+C# 200行代码实现区块链
+
 # CPU
 
 https://zhuanlan.zhihu.com/p/29743431

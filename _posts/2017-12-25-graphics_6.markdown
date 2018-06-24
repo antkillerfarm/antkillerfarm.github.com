@@ -4,7 +4,17 @@ title:  图像处理理论（六）——Eigenface, LBP, Fisherface
 category: graphics 
 ---
 
-# Eigenface（续）
+# Eigenface
+
+Eigenface是M. Turk和A. Pentland于1991年提出的人脸识别算法。
+
+>Matthew A. Turk，Virginia Tech本科（1982）+CMU硕士（1984）+MIT博士（1991）。UCSB教授。
+
+>Alex Paul "Sandy" Pentland，1952年生，MIT博士（1982）。MIT教授。
+
+论文：
+
+《Face recognition using eigenfaces》
 
 ## 计算Eigenface
 

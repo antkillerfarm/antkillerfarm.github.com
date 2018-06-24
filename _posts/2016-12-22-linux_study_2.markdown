@@ -4,29 +4,7 @@ title:  linux学习心得（二）, diff&patch, bash, SWIG, BBR
 category: linux 
 ---
 
-# 查看内存使用情况
-
-## top命令
-
-top命令可在进程这一级查看内存、运行时间、CPU等的使用情况。并可根据不同属性对结果排序：
-
-P：按%CPU使用率排序
-
-T：按TIME+排序
-
-M：按%MEM排序
-
-注：运行top命令之后，输入相应字符即可切换排序。
-
-参考：
-
-https://mp.weixin.qq.com/s/8892B95aQZHw4fZhi8iO5A
-
-Linux中load average意义
-
-https://mp.weixin.qq.com/s/FV13ma9LxI1gsgi9ovU4Mw
-
-30个实例详解TOP命令
+# 查看内存使用情况（续）
 
 ## free命令
 
@@ -362,6 +340,24 @@ patch -R B C #B还原为A
 
 # bash
 
+## 空格和TAB的细节
+
+在大多数编程语言中，空格和TAB都不是有意义的字符，有没有或者有多少都无所谓。但Linux Shell不是这样的，尽管它看起来并没有如python那样的对缩进的强制语言规定。
+
+以下是它在使用空格和TAB时的一些细节：
+
+1.makefile文件中，规则定义部分的shell脚本命令需要使用TAB开头，使用空格会出错。
+
+2.if命令的格式：
+
+{% highlight bash %}
+if [ "$yn" == "Y" ] || [ "$yn" == "y" ]; then
+	echo "OK, continue"
+fi
+{% endhighlight %}
+
+注意一下上面脚本中的表达式[]之间的部分。其中所使用的空格不可省略，否则会出错。bash在处理[]表达式的时候，实际上调用了`/usr/bin/[`命令。如果把`[`当作特殊名称的普通命令的话，就会发现这里的空格用法实际上并不奇怪。
+
 ## 查看当前使用的shell
 
 实时查看：
@@ -389,6 +385,18 @@ exit用于整个shell脚本的退出。
 https://blog.csdn.net/iot_flower/article/details/69055590
 
 shell脚本第一行：#!/bin/bash的含义
+
+https://mp.weixin.qq.com/s/ZaIX8jv9LMWmrHQb4ew-dQ
+
+写好shell脚本的13个技巧
+
+http://www.ywnds.com/?p=12325
+
+Shell版俄罗斯方块
+
+https://mp.weixin.qq.com/s/SBVEo53irSZfI40sBFZXWQ
+
+shift：解决shell编程中的入参问题
 
 # SWIG
 
@@ -461,5 +469,3 @@ QUIC协议原理分析
 https://mp.weixin.qq.com/s/_RAXrlGPeN_3D6dhJFf6Qg
 
 让互联网更快的协议，QUIC在腾讯的实践及性能优化
-
-

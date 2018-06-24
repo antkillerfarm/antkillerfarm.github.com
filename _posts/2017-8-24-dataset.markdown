@@ -296,3 +296,7 @@ https://mp.weixin.qq.com/s/_wQoiC6ogcLWSEUFUGHd5g
 
 Facebook，MIT等发布大规模卫星图像理解数据挑战赛DeepGlobe 2018
 
+https://mp.weixin.qq.com/s/COnDB9EveANOBmCksCqoYg
+
+微软内部研究数据集正式对外开放，覆盖NLP、CV等9个领域
+

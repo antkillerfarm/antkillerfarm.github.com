@@ -434,4 +434,7 @@ https://mp.weixin.qq.com/s/_PtdgGElw0mvr_rRm5xrCg
 
 Python性能优化的20条招数
 
+https://mp.weixin.qq.com/s/0Rpbuo7LCRo1SnbE8NcH4Q
+
+快速学习 Python 的全套14张思维导图
 

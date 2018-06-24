@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十八）——深度强化学习（2）, CNN进阶, 行人重识别
+title:  深度学习（三十八）——深度强化学习（2）, CNN进阶, 图像变换
 category: DL 
 ---
 
@@ -196,6 +196,14 @@ https://mp.weixin.qq.com/s/ewC2_8O29Gg0blxK7mHsYA
 
 比TD、MC、MCTS指数级快，性能超越A3C、DDQN等模型，这篇RL算法论文在Reddit上火了
 
+https://mp.weixin.qq.com/s/Q9QzXo_M3jYKjBWSsLYwgQ
+
+强化学习+树搜索：一种新型程序合成方法
+
+https://mp.weixin.qq.com/s/2SOHQElaYbplse3QqG9tYw
+
+强化学习介绍
+
 # CNN进阶
 
 https://mp.weixin.qq.com/s/gwH9s1ggMTj2dJkad9wUuw
@@ -210,63 +218,101 @@ https://mp.weixin.qq.com/s/r143qYj8bziu_N-27RWRRw
 
 机器学习5年大跃进，可能是个错觉
 
-# 行人重识别
+# 图像变换
 
-行人重识别（Person re-identification）也称行人再识别，是利用计算机视觉技术判断图像或者视频序列中是否存在特定行人的技术。广泛被认为是一个图像检索的子问题。给定一个监控行人图像，检索跨设备下的该行人图像。旨在弥补目前固定的摄像头的视觉局限，并可与行人检测/行人跟踪技术相结合 ，可广泛应用于智能视频监控、智能安保等领域。
+https://mp.weixin.qq.com/s/88tBoAVziGEFXIGfvZZp8g
 
-https://mp.weixin.qq.com/s/ZmX_ir1pSUZbCaFpbcQ6Lw
+深度学习图像处理项目集锦：生成可爱的动漫头像，骡子变斑马等入选
 
-一文读懂行人检测算法
+https://mp.weixin.qq.com/s/iV-OXiKF1jgAhSmX4QUIXw
 
-https://zhuanlan.zhihu.com/p/26168232
+综述：图像风格化算法最全盘点
 
-行人重识别：从哈利波特地图说起
+https://mp.weixin.qq.com/s/Zq3ngbTAObQuIr86nkTwjQ
 
-https://mp.weixin.qq.com/s/_NDw7pFmDB07mliHTA6VYQ
+视频换脸技术，女神都下海了吗？
 
-旷视行人再识别（ReID）突破
+https://mp.weixin.qq.com/s/eqI5fVuF68RQWb1a5O219w
 
-https://zhuanlan.zhihu.com/p/31181247
+腾讯研发“一键卸妆” ,让女神秒变路人!
 
-从人脸识别到行人重识别，下一个风口
+https://mp.weixin.qq.com/s/joRcvCQwLYgRd29mfPd7XA
 
-https://mp.weixin.qq.com/s/zRdJktyk1LZWUd2cyTjpiw
+中科大&微软提出立体神经风格迁移模型，可用于3D视频风格化
 
-基于图像检索的行人重识别
+https://mp.weixin.qq.com/s/73mkWlqJsVdu9m1kPDvfbQ
 
-https://zhuanlan.zhihu.com/p/31473785
+用AI让静图变动图：CVPR热文提出动态纹理合成新方法
 
-行人再识别中的迁移学习：图像风格转换
+https://mp.weixin.qq.com/s/gEFzogsteK_1VeywbQxbgQ
 
-https://mp.weixin.qq.com/s/fX94rPgNHrOaQTqBv-ZADg
+(GAN)延时摄影视频的生成
 
-基于视频的行人再识别新进展：区域质量估计方法和高质量的数据集
+https://zhuanlan.zhihu.com/p/34042498
 
-https://mp.weixin.qq.com/s/rf-pGfkQFK3abkOLEEVOeA
+深度解密换脸应用Deepfake
 
-PTGAN：针对行人重识别的生成对抗网络
+https://mp.weixin.qq.com/s/gvPTNtrd5Du9Oablp3jZYw
 
-https://zhuanlan.zhihu.com/p/34778414
+如何使用DeepFake实现视频换脸
 
-基于时空模型无监督迁移学习的行人重识别
+https://mp.weixin.qq.com/s/BTzV7ulweqFQokdQ-AX2Rg
 
-https://zhuanlan.zhihu.com/p/35296881
+三位一体的纯正视频换脸术，拒绝别人的嘴替我说话
 
-刷新三数据集纪录的跨镜追踪(行人再识别-ReID)技术介绍
+https://mp.weixin.qq.com/s/rPDvLnG4MBDRUMCWs2fjcQ
 
-https://mp.weixin.qq.com/s/ZbmJGO3lqwNM2z-E4_Mpbw
+最新StarGAN对抗生成网络实现多领域图像变换
 
-由“刷脸”到“识人”，云从科技刷新跨镜追踪(ReID)技术三项世界纪录！
+https://mp.weixin.qq.com/s/97Uj-ATLToy1bNhnSUO8Jw
 
-https://mp.weixin.qq.com/s/leuILzYz40PqrwsCatYhPw
+非监督任意姿势人体图像合成
 
-行人再识别年度进展
+https://mp.weixin.qq.com/s/cfw8mRsmzE1lU8PRM8UC0w
 
-https://zhuanlan.zhihu.com/p/37931822
+秒变莫扎特、贝多芬，Facebook提出完美转换音乐风格的神经网络
 
-你需要知道的10种行人属性
+https://mp.weixin.qq.com/s/TiXILy4l6Q3dxVwapyd9KQ
 
-https://mp.weixin.qq.com/s/YBorhQrJ0UL3HZQHgd5D6A
+二维码太丑？用风格迁移生成个性二维码了解一下
 
-清华等机构提出基于内部一致性的行人检索方法，实现当前最优
+https://mp.weixin.qq.com/s/7GHBH79kWIpEBLYX-VEd7A
+
+CycleGAN：图片风格，想换就换
+
+https://mp.weixin.qq.com/s/tzPCU1bxQ7NWtQ7o2PjF0g
+
+BAIR提出MC-GAN，使用GAN实现字体风格迁移
+
+https://mp.weixin.qq.com/s/RMz5fwt72j2ufrGpdD6POw
+
+带自注意力机制的生成对抗网络，实现效果怎样？
+
+https://mp.weixin.qq.com/s/PVM7wMsT6TpJkQUlt7d2Aw
+
+用风格迁移搞事情！超越艺术字：卷积神经网络打造最美汉字
+
+https://mp.weixin.qq.com/s/12_Gl4snq-LdMHJSZn4oOA
+
+换脸AI升级版：面部表情、身体动作、视线方向都能实时迁移
+
+https://mp.weixin.qq.com/s/BBg04rDtiqU-XrWortufNA
+
+康奈尔&英伟达提出多模态无监督图像转换新方法
+
+https://mp.weixin.qq.com/s/A2VhfO3CkyQGCs5GqBWzOg
+
+实景照片秒变新海诚风格漫画：清华大学提出CartoonGAN
+
+https://mp.weixin.qq.com/s/lPzPfjYiAsNvVcVWdL08dA
+
+照片闭眼也无妨，Facebook黑科技完美补全大眼睛
+
+https://mp.weixin.qq.com/s/h-mp7_oO9aZ1yYxiJMLziQ
+
+作画、写诗、弹曲子，AI还能这么玩？
+
+https://mp.weixin.qq.com/s/txJAnu4FOOjmLhbtGTM-BQ
+
+还敢吹「毫无PS痕迹」？小心被Adobe官方AI打脸
 

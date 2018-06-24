@@ -232,6 +232,10 @@ Sharpness是对图像边缘进行锐化。
 
 Denoise & Sharpness或者后续更复杂的处理，都属于图像增强的范畴了。这里功能的多少主要取决于ISP的性能，并不是每个ISP都有。
 
+## 总结
+
+上面提到的主要是普通相机的ISP，但从目前的趋势来看，由于汽车自动驾驶技术的目标逐渐趋于全自动驾驶，以人的视觉友好性为目的的图像色彩重建变得多余，而以计算机视觉友好性为目的的图像质量需求将会进一步增加。
+
 ## 参考
 
 http://www.cnblogs.com/agllero/p/4489689.html
@@ -254,14 +258,3 @@ https://github.com/codeauroraforum/gtec-demo-framework/tree/master/DemoApps/Open
 
 一个基于OpenVX的ISP软实现。
 
-# Eigenface
-
-Eigenface是M. Turk和A. Pentland于1991年提出的人脸识别算法。
-
->Matthew A. Turk，Virginia Tech本科（1982）+CMU硕士（1984）+MIT博士（1991）。UCSB教授。
-
->Alex Paul "Sandy" Pentland，1952年生，MIT博士（1982）。MIT教授。
-
-论文：
-
-《Face recognition using eigenfaces》

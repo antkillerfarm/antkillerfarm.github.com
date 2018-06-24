@@ -110,6 +110,10 @@ https://mp.weixin.qq.com/s/nmuLM38Q_0MVN_6EtQ_7fQ
 
 艾伦人工智能研究所提出新型深度语境化词表征
 
+https://mp.weixin.qq.com/s/rYvbV4ssmXgblOg20KQVyQ
+
+文本嵌入的经典模型与最新进展
+
 # NN的INT8计算
 
 ## 概述

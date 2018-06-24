@@ -6,6 +6,46 @@ category: graphics
 
 # Mel-Frequency Analysis（续）
 
+## MFCC
+
+Mel-frequency Cepstral Coefficients是由Paul Mermelstein提出的一种音频特征。
+
+>Paul G. Mermelstein，明尼苏达大学神经科学教授。
+
+![](/images/img2/Mel_Filters.png)
+
+由之前对Mel scale的介绍可知：人耳对于高频声音的分辨率实际上是不如低频声音的。
+
+因此，我们可以使用一组Triangular window对声音进行滤波（如上图所示）。这里的Triangular window不是均匀分布的，而是低频部分更密集一些。
+
+这些Triangular window被称作**Mel-Filters**。被Mel-Filters过滤之后的Spectrum，被称作**Mel-Spectrum**。
+
+对Mel-Spectrum执行Cepstrum Analysis，就得到了Mel-Frequency Cepstral Coefficients，也就是MFCC。
+
+![](/images/img2/MFCC.png)
+
+上图是MFCC的计算流程。
+
+除了MFCC之外，delta MFCC和double-delta MFCC也是常用的特征。他们的计算过程如下所示：
+
+![](/images/img2/MFCC_2.jpg)
+
+可见，delta MFCC和double-delta MFCC，实际上就是MFCC的一阶差分和二阶差分。
+
+在实际中使用的语音特征，往往是各种特征的组合。比如，常用的39维MFCC特征，其组成如下：
+
+12 MFCC feature
+
+1 energy feature
+
+12 delta MFCC features
+
+12 double-delta MFCC features
+
+1 delta energy feature
+
+1 double-delta energy feature
+
 ## 计算能量谱
 
 energy的计算比较简单，无论是如上图的时域能量统计，还是在DFT之后进行频域能量统计都是可以的。参见《数学狂想曲（一）》。
@@ -245,62 +285,3 @@ https://zhuanlan.zhihu.com/p/22482625
 https://mp.weixin.qq.com/s/Sn4RPdghzzQhQc-r4z8Iuw
 
 Kaldi单音素GMM学习笔记
-
-# LDA-MLLT
-
-Maximum Likelihood Linear Transform (MLLT)，又名Global Semi-tied Covariance (STC)。因此，在科技文献中，常被称作STC/MLLT。
-
-《Semi-tied Covariance Matrices for Hidden Markov Models》
-
-《Improved feature processing for Deep Neural Networks》
-
-![](/images/img2/MLLT.png)
-
-https://blog.csdn.net/xmdxcsj/article/details/78512652
-
-声学特征变换 STC/MLLT
-
-# WFST
-
-## 概述
-
-Weighted Finite State Transducer是目前解码器模块的关键技术。
-
-论文：
-
-《Speech Recognition with Weighted Finite-State Transducers》
-
->Mehryar Mohri，法国人，Ecole Polytechnique本科+ENS Ulm硕士+University of Paris 7博士。New York University教授。Google研究顾问。   
->个人主页：   
->https://cs.nyu.edu/~mohri/
-
-https://cs.nyu.edu/~mohri/courses.html
-
-这是Mohri的课程主页。
-
-https://cs.nyu.edu/~mohri/asr12/
-
-作为WFST的发明人，Mohri的Speech Recognition课程在解码器方面有相当大的篇幅。
-
-此外，OpenFst的官网也有一些教程：
-
-http://openfst.org/twiki/bin/view/FST/FstBackground
-
-OpenFst Background Material
-
-其中，最重要的是两个tutorial：
-
-http://openfst.org/twiki/bin/view/FST/FstHltTutorial
-
-OpenFst: An Open-Source, Weighted Finite-State Transducer Library and its Applications to Speech and Language
-
-http://openfst.org/twiki/bin/view/FST/FstSltTutorial
-
-OpenFst: a General and Efficient Weighted Finite-State Transducer Library
-
-以下内容主要参考下文：
-
-http://vsooda.github.io/2016/08/28/wfst/
-
-加权有限状态转换器
-

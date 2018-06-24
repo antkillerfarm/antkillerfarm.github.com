@@ -246,7 +246,63 @@ ILSVRC 2010的冠军是NEC和UIUC的联合队伍。这也是DL于2012年大放�
 
 上图是NEC算法的基本流程图。这里不打算描述整个算法，而仅对其中涉及的术语做一个解释。
 
-# WFST（续）
+# LDA-MLLT
+
+Maximum Likelihood Linear Transform (MLLT)，又名Global Semi-tied Covariance (STC)。因此，在科技文献中，常被称作STC/MLLT。
+
+《Semi-tied Covariance Matrices for Hidden Markov Models》
+
+《Improved feature processing for Deep Neural Networks》
+
+![](/images/img2/MLLT.png)
+
+https://blog.csdn.net/xmdxcsj/article/details/78512652
+
+声学特征变换 STC/MLLT
+
+# WFST
+
+## 概述
+
+Weighted Finite State Transducer是目前解码器模块的关键技术。
+
+论文：
+
+《Speech Recognition with Weighted Finite-State Transducers》
+
+>Mehryar Mohri，法国人，Ecole Polytechnique本科+ENS Ulm硕士+University of Paris 7博士。New York University教授。Google研究顾问。   
+>个人主页：   
+>https://cs.nyu.edu/~mohri/
+
+https://cs.nyu.edu/~mohri/courses.html
+
+这是Mohri的课程主页。
+
+https://cs.nyu.edu/~mohri/asr12/
+
+作为WFST的发明人，Mohri的Speech Recognition课程在解码器方面有相当大的篇幅。
+
+此外，OpenFst的官网也有一些教程：
+
+http://openfst.org/twiki/bin/view/FST/FstBackground
+
+OpenFst Background Material
+
+其中，最重要的是两个tutorial：
+
+http://openfst.org/twiki/bin/view/FST/FstHltTutorial
+
+OpenFst: An Open-Source, Weighted Finite-State Transducer Library and its Applications to Speech and Language
+
+http://openfst.org/twiki/bin/view/FST/FstSltTutorial
+
+OpenFst: a General and Efficient Weighted Finite-State Transducer Library
+
+以下内容主要参考下文：
+
+http://vsooda.github.io/2016/08/28/wfst/
+
+加权有限状态转换器
 
 ## FSM
 
@@ -309,46 +365,3 @@ WFST是基于半环代数理论的，在介绍半环之前我先简单的说一�
 $$(K, \bigoplus, \bigotimes，0， 1)$$
 
 其中K是一个数集，$$\bigoplus, \bigotimes$$是两个二元操作，’0’和’1’是特定的（designated）零元素和幺元素（不一定是真正的数0和数1）。
-
-常用的半环如下表所示：
-
-| Semiring | Set | $$\oplus$$ | $$\otimes$$ | 0 | 1 |
-|:--:|:--:|:--:|:--:|:--:|:--:|
-| Boolean | $$\{0,1\}$$ | $$\lor$$ | $$\land$$ | 0 | 1 |
-| Probability | $$R_+$$ | $$+$$ | $$\times$$ | 0 | 1 |
-| Log | $$R\cup\{-\infty，+\infty\}$$ | $$\oplus_{log}$$ | + | $$+\infty$$ | 0 |
-| Tropical | $$R\cup\{-\infty，+\infty\}$$ | min | + | $$+\infty$$ | 0 |
-| String | $$\Sigma^*\cup\{\infty\}$$ | $$\land$$ | $$\cdot$$ | $$\infty$$ | $$\epsilon$$ |
-
-在WFST中用的比较多的是log半环和tropical半环。前者对路径概率进行了对数运算，而后者在log半环的基础上，进行了viterbi approximation，也就是用若干路径的概率极值，作为当前概率值，这和动态规划中的viterbi算法是一致的。
-
-接下来定义WFST上的二元运算：
-
-一整条路径的权重$$w[\pi ]=w[e_1]\bigotimes \cdots \bigotimes w[e_k]$$。
-
-多个有限路径集合的权重$$w[R]=\bigoplus_{\pi \in R} w[\pi]$$。
-
-参考：
-
-http://hongjiang.info/semigroup-and-monoid/
-
-半群(semigroup)与幺半群(monoid)
-
-## Sum(Union)
-
-介绍完WFST的定义，再来介绍一下定义在它之上的运算。
-
-![](/images/img2/sum.png)
-
-Sum运算的形式化描述为：
-
-$$[T_1 \oplus T_2](x,y)=[T_1](x,y)\oplus [T_2](x,y)$$
-
-## Product(Concatenation)
-
-![](/images/img2/product.png)
-
-Product运算的形式化描述为：
-
-$$[T_1 \otimes T_2](x,y)=\bigoplus_{x=x_1x_2,y=y_1y_2} [T_1](x_1,y_1)\otimes [T_2](x_2,y_2)$$
-

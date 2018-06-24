@@ -68,6 +68,10 @@ https://mp.weixin.qq.com/s/Q36vpS1HF2IfeCsFLh656A
 
 基于元强化学习的神经科学新理论
 
+https://mp.weixin.qq.com/s/XtzvHOk7CdXRBy02kUmgsg
+
+近期爆火的Meta Learnjng，遗传算法与深度学习的火花，再不了解你就out了
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/5vDSrWeUvlBuZgmX0R9pBQ

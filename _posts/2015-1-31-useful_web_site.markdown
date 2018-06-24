@@ -312,10 +312,6 @@ https://mp.weixin.qq.com/s/mTOzcdjaak-z6ypL9MR2Lw
 
 小白科普：悲观锁和乐观锁
 
-https://mp.weixin.qq.com/s/SBVEo53irSZfI40sBFZXWQ
-
-shift：解决shell编程中的入参问题
-
 https://mp.weixin.qq.com/s/ZfprFQjVANuCE2N693gZBQ
 
 用户空间和内核空间
@@ -347,10 +343,6 @@ Linux从程序到进程
 https://mp.weixin.qq.com/s/tguC-WOleKRWLfTmGdJlQg
 
 Linux文件系统的实现
-
-http://www.ywnds.com/?p=12325
-
-Shell版俄罗斯方块
 
 https://mp.weixin.qq.com/s/eEuNPtTaPwJ7hSghgeU32g
 
@@ -423,6 +415,10 @@ https://mp.weixin.qq.com/s/wKpNJY6PD0ArxnKtl71xwQ
 https://mp.weixin.qq.com/s/5MNvW9czxaRWso8jbBRyBw
 
 Go调度程序：Ms，Ps&Gs
+
+https://mp.weixin.qq.com/s/mUhPHycvLSYYkBQSfIgIdA
+
+Channels In Go
 
 https://blog.csdn.net/jaccen2012/article/details/80328043
 

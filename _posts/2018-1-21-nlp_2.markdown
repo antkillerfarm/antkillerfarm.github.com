@@ -315,3 +315,53 @@ http://spandh.dcs.shef.ac.uk/chime_challenge/chime2016/
 
 CHiMe – Computational Hearing in Multisource Environments-国际多通道语音分离和识别大赛
 
+# NLP参考资源
+
+https://mp.weixin.qq.com/s/5DvSVL0CRJTymtXPDvS-0w
+
+基于主题信息的神经网络作文生成模型
+
+https://mp.weixin.qq.com/s/4Tj92Mmj2-zOHfk1Tk167w
+
+白翔：复杂开放场景中的文本理解
+
+https://mp.weixin.qq.com/s/lB44D_RFBqbNB6YX5gEULg
+
+近期值得读的QA论文！专题论文解读
+
+https://mp.weixin.qq.com/s/lgGDTCF3qg84njv2IeHC9A
+
+大规模集成Transformer模型，阿里达摩院如何打造WMT 2018机器翻译获胜系统
+
+https://mp.weixin.qq.com/s/5toWf90bJeSMGso6HaNTMQ
+
+腾讯提出用于文本匹配的多信道信息交叉模型，在真实任务中表现优异
+
+https://mp.weixin.qq.com/s/Z4Mv_L68QaG7KfGmA3pBwQ
+
+DeepMind论文解读：让机器更深入地理解文本
+
+https://mp.weixin.qq.com/s/F9ZV4jV3UiVuKVz1aqgv9w
+
+如何匹配两段文本的语义？
+
+https://mp.weixin.qq.com/s/xIkYLncxmLKqLQqeq-XxAw
+
+深度学习文本分类方法综述
+
+https://mp.weixin.qq.com/s/0bOg1kvSR66-8rvFDqtLIQ
+
+用文本挖掘分析了5万首《全唐诗》，竟然发现这些秘密
+
+https://mp.weixin.qq.com/s/B_hnpOp_AVsIoL8gbkL4Hw
+
+深度学习在文本领域的应用
+
+https://mp.weixin.qq.com/s/PrrEUHXrmBEnOegP5jqOJg
+
+你知道《圣经》中的主要角色有哪些吗？三种NLP工具将告诉你答案！
+
+https://mp.weixin.qq.com/s/8LV27Hn5JKS7Zo1omRMxzA
+
+基于汉语短文本对话的立场检测系统理论与实践
+

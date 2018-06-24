@@ -164,6 +164,10 @@ https://mp.weixin.qq.com/s/fzadP8NwPTxuhEB0O4GU8g
 
 漫谈生成模型，从AE到CVAE-GAN
 
+https://mp.weixin.qq.com/s/d_P-4uQx0kC2w6J69OZIAw
+
+Deepmind研究科学家最新演讲：VAEs and GANs
+
 # RBM & DBN & Deep Autoencoder
 
 ## RBM
