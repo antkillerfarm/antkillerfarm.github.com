@@ -365,3 +365,7 @@ https://mp.weixin.qq.com/s/8LV27Hn5JKS7Zo1omRMxzA
 
 基于汉语短文本对话的立场检测系统理论与实践
 
+https://mp.weixin.qq.com/s/sQ903WNSR4v367t78_VG1Q
+
+自然语言处理全家福：纵览当前NLP中的任务、数据、模型与论文
+

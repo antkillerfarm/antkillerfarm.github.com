@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十八）——深度强化学习（2）, CNN进阶, 图像变换
+title:  深度学习（三十八）——深度强化学习（2）, Multi-agent, CNN进阶, 图像变换
 category: DL 
 ---
 
@@ -56,10 +56,6 @@ http://mp.weixin.qq.com/s/EPbKE-TAnAPugJDhXHEyNA
 
 DeepMind开源Psychlab平台——搭建AI和认知心理学的桥梁
 
-https://mp.weixin.qq.com/s/TlcVxjhHXXGSpIvptC4H8g
-
-使用Gym和CNN构建多智能体自动驾驶马里奥赛车
-
 https://mp.weixin.qq.com/s/4qeHfU9GS4aDWOHsu4Dw2g
 
 记忆增强蒙特卡洛树搜索细节解读
@@ -79,10 +75,6 @@ DeepMind发布通用强化学习新范式，自主机器人可学会任何任务
 https://mp.weixin.qq.com/s/_lmz0l1vP_CQ6p6DdFnHWA
 
 谷歌大脑工程师的深度强化学习劝退文
-
-https://mp.weixin.qq.com/s/zRcq1LMtK72Cl4T3877tgQ
-
-牛津教授吐槽DeepMind心智神经网络，还推荐了这些多智能体学习论文
 
 https://mp.weixin.qq.com/s/To3pnx1hVq_4p7UnQVMw9A
 
@@ -111,10 +103,6 @@ DeepMind的AI学会了画画，利用强化学习完全不需人教：SPIRAL
 https://mp.weixin.qq.com/s/rpPN2rgru6krRz2fr1RhsQ
 
 模拟世界的模型：谷歌大脑与Jürgen Schmidhuber提出“人工智能梦境”
-
-https://mp.weixin.qq.com/s/0v57oHMEDcJuUivs8D5pnQ
-
-善于单挑却难以协作，构建多智能体AI系统为何如此之难？
 
 https://simoninithomas.github.io/Deep_reinforcement_learning_Course/
 
@@ -203,6 +191,44 @@ https://mp.weixin.qq.com/s/Q9QzXo_M3jYKjBWSsLYwgQ
 https://mp.weixin.qq.com/s/2SOHQElaYbplse3QqG9tYw
 
 强化学习介绍
+
+# Multi-agent
+
+https://mp.weixin.qq.com/s/bQx-ydEAfijgK1Ii5ilPFQ
+
+UCL汪军团队新方法提高群体智能，解决大规模AI合作竞争
+
+https://mp.weixin.qq.com/s/4lj_G2z0Lbfk5mOgvxLC6w
+
+对抗式协作：一个框架解决多个无监督学习视觉问题
+
+https://mp.weixin.qq.com/s/0v57oHMEDcJuUivs8D5pnQ
+
+善于单挑却难以协作，构建多智能体AI系统为何如此之难？
+
+https://mp.weixin.qq.com/s/tME5GsKEXveVcgWb-Zbx_A
+
+乔明达ICML 2018论文提出协作学习的鲁棒性方法
+
+https://mp.weixin.qq.com/s/0Xuxr7CXqsxrssW2I6NCBQ
+
+通用智能化：BAIR简述人类-机器人协作新技术
+
+https://mp.weixin.qq.com/s/GNbCu1lbOmwJDCU3vgMbtQ
+
+OpenAI发布多智能体深度强化学习新算法LOLA
+
+https://mp.weixin.qq.com/s/5Go20MyBxdVI1r5SkwA6lw
+
+面向星际争霸：DeepMind提出多智能体强化学习新方法
+
+https://mp.weixin.qq.com/s/TlcVxjhHXXGSpIvptC4H8g
+
+使用Gym和CNN构建多智能体自动驾驶马里奥赛车
+
+https://mp.weixin.qq.com/s/zRcq1LMtK72Cl4T3877tgQ
+
+牛津教授吐槽DeepMind心智神经网络，还推荐了这些多智能体学习论文
 
 # CNN进阶
 
@@ -315,4 +341,12 @@ https://mp.weixin.qq.com/s/h-mp7_oO9aZ1yYxiJMLziQ
 https://mp.weixin.qq.com/s/txJAnu4FOOjmLhbtGTM-BQ
 
 还敢吹「毫无PS痕迹」？小心被Adobe官方AI打脸
+
+https://mp.weixin.qq.com/s/a1Qg1Hl5NMvEJPXhJR-2BA
+
+效果惊艳！北大团队提出Attentive GAN去除图像中雨滴
+
+https://mp.weixin.qq.com/s/iK7XR0tHV_dE0p1grNQIHw
+
+只需一张照片，运动视频分分钟伪造出来
 

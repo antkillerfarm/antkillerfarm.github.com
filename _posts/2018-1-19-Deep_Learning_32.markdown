@@ -114,6 +114,10 @@ https://mp.weixin.qq.com/s/rYvbV4ssmXgblOg20KQVyQ
 
 文本嵌入的经典模型与最新进展
 
+https://mp.weixin.qq.com/s/lpQWcGg7uRBAorj_5QyunA
+
+使用三重损失网络学习位置嵌入：让位置数据也能进行算术运算
+
 # NN的INT8计算
 
 ## 概述
@@ -148,6 +152,8 @@ https://china.xilinx.com/support/documentation/white_papers/c_wp486-deep-learnin
 
 UINT量化使用bias将数据搬移到正数区间。
 
+这篇论文的另一个贡献在于：原先的INT8量化是针对已经训练好的模型。而现在还可以在训练的时候就进行量化——前向计算进行量化，而反向的误差修正不做量化。
+
 ## NN硬件的指标术语
 
 MACC：multiply-accumulate，乘法累加。
@@ -163,6 +169,10 @@ gemmlowp是Google提出的一个支持低精度数据的GEMM（General Matrix Mu
 代码：
 
 https://github.com/google/gemmlowp
+
+## 论文
+
+《Quantizing deep convolutional networks for efficient inference: A whitepaper》
 
 ## 参考
 

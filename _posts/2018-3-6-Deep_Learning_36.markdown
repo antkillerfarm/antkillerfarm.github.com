@@ -324,6 +324,10 @@ https://mp.weixin.qq.com/s/fcFb6WkJVP8TYpoxkQgiWQ
 
 CMU提出“十字绣网络”，自动决定多任务学习的最佳共享层
 
+https://mp.weixin.qq.com/s/i7WAFjQHK1NGVACR8x3v0A
+
+自然语言十项全能：转化为问答的多任务学习
+
 # AutoDL
 
 DL领域目前存在的主要问题之一是：如何设计网络结构和调整超参数。目前的做法，通常依赖于作者的直觉，属于典型的拍脑袋想点子。

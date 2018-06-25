@@ -242,11 +242,27 @@ Pushing包括Weight Pushing和Label Pushing两种情况。
 
 最小化一般是消除相同结点。常用算法与DFA的最小化算法类似。
 
+## Pruning
+
+![](/images/img2/pruning.png)
+
+Pruning的目的是去除大于最短路径的$$\otimes$$分支。
+
 ## HCLG
 
 介绍完WFST的基本运算，这里来介绍一下WFST在语音识别上的应用——HCLG。
 
+![](/images/img2/HCLG.png)
 
+上图中，Language Model又名Grammar Model，Phonemic Model又名Lexicon Model，故名HCLG。
+
+这个流程的形式化描述为：
+
+$$H\circ C\circ L\circ G$$
+
+直接使用这个WFST的状态空间较大，搜索效率比较低，Mohri因此提出了一个简化方案：
+
+$$N = \pi_{\epsilon} (min(det(\tilde{H} \circ det(\tilde{C} \circ det(\tilde{L} \circ G)))))$$
 
 ## 参考
 

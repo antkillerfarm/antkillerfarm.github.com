@@ -250,3 +250,7 @@ https://mp.weixin.qq.com/s/oV8gcKqmp43EBYzQhr5S6w
 
 逆视觉问答任务：一种根据回答与图像想问题的模型
 
+https://mp.weixin.qq.com/s/YgYod-gcFZruEGtE4wF87w
+
+牛津大学提出全新生成式模型“SQAIR”，用于移动目标的视频理解
+

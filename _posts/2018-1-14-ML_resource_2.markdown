@@ -374,10 +374,6 @@ https://mp.weixin.qq.com/s/wygcR4ukL22jS_qizp0VEA
 
 机器学习技法终章
 
-https://mp.weixin.qq.com/s/tME5GsKEXveVcgWb-Zbx_A
-
-乔明达ICML 2018论文提出协作学习的鲁棒性方法
-
 https://mp.weixin.qq.com/s/3enk8alUaYoYqtf4hju7mA
 
 通俗解释优化的线性感知机算法：Pocket PLA
@@ -405,3 +401,8 @@ https://mp.weixin.qq.com/s/6Oyp5Tt1t8xKapw2NqCdFQ
 https://mp.weixin.qq.com/s/eXeOSwvk2RoEVSmpN5NtcA
 
 2018世界杯球迷群体分析实录
+
+https://mp.weixin.qq.com/s/bBlngBJR-TtzguXBEK_HnQ
+
+十张图帮你理解供应链IT名词！
+

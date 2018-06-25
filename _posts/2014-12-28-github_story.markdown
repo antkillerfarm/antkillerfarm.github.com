@@ -226,3 +226,20 @@ https://mp.weixin.qq.com/s/bgP_xMfi3hXayscf9D5JIg
 
 谷歌提出Sim2Real：让机器人像人类一样观察世界
 
+https://mp.weixin.qq.com/s/aqfwn0kiXbZwVDVhHXBAXQ
+
+谷歌大脑研究员玩转汉字RNN：神经网络生成新华字典
+
+https://mp.weixin.qq.com/s/GxWOuIf25JQnQoCstVyGLQ
+
+李飞飞团队提出OpenTag模型：减少人工标注，自动提取产品属性值
+
+https://mp.weixin.qq.com/s/HaTNeqblwp2mALznK2nvMA
+
+用脑电波控制智能假肢：如何利用深度学习技术进行EGG数据分类
+
+https://mp.weixin.qq.com/s/iAMYqJjlMWAvFq4Hddh4ig
+
+从0上手Kaggle图像分类挑战：冠军解决方案详解
+
+

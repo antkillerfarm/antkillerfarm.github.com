@@ -6,6 +6,14 @@ category: resource
 
 # 机器人参考资源
 
+## 行业
+
+![](/images/img2/ADAS.jpg)
+
+https://mp.weixin.qq.com/s/Okolok3ZLZhgw0TQ_TROKA
+
+一文看尽国内智能驾驶格局：三条技术路线和玩家鏖战2020年
+
 ## 课程
 
 http://selfdrivingcars.mit.edu/
@@ -357,10 +365,6 @@ https://mp.weixin.qq.com/s/QkWCcr86yX_M-T_rT_fwBQ
 https://mp.weixin.qq.com/s/pOX84vc2JlYidkTZt73rcQ
 
 英特尔&丰田联合开源城市驾驶模拟器CARLA
-
-https://mp.weixin.qq.com/s/0Xuxr7CXqsxrssW2I6NCBQ
-
-通用智能化：BAIR简述人类-机器人协作新技术
 
 https://mp.weixin.qq.com/s/qEX2cRgce2Lknncsa67HSA
 

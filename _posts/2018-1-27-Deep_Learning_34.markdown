@@ -238,14 +238,6 @@ https://mp.weixin.qq.com/s/uDFsWebfLmka-zZX3Y_8kg
 
 深度强化学习在面向任务的对话管理中的应用
 
-https://mp.weixin.qq.com/s/GNbCu1lbOmwJDCU3vgMbtQ
-
-OpenAI发布多智能体深度强化学习新算法LOLA
-
-https://mp.weixin.qq.com/s/5Go20MyBxdVI1r5SkwA6lw
-
-面向星际争霸：DeepMind提出多智能体强化学习新方法
-
 https://mp.weixin.qq.com/s/nYOOwVoijl1p4V0A7yaI3w
 
 机遇与挑战：用强化学习自动搜索优化算法

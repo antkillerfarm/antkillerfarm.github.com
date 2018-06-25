@@ -428,6 +428,12 @@ Seaborn是另一个非常棒的Matplotlib的威力加强版，专注于统计绘
 
 https://seaborn.pydata.org
 
+参考：
+
+https://mp.weixin.qq.com/s/hPbTZHR2iDH4t1eQghNvUQ
+
+数据可视化详解+代码演练
+
 ## mlpy
 
 mlpy是一个开源的ML库。只是它最近的一次更新，已经是2012年的事情了。

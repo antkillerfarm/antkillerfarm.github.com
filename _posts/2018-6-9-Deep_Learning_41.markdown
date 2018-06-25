@@ -182,6 +182,10 @@ https://mp.weixin.qq.com/s/HAc1R74Yj2nwiohuRy5emA
 
 任务分类法：解构任务迁移学习
 
+https://mp.weixin.qq.com/s/N1ciRHJAPMzgjpZhPVoHXw
+
+现实版柯南“蝴蝶结变声器”：谷歌发布从声纹识别到多重声线语音合成的迁移学习 
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：
