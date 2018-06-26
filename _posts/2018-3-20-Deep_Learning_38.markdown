@@ -230,6 +230,18 @@ https://mp.weixin.qq.com/s/zRcq1LMtK72Cl4T3877tgQ
 
 牛津教授吐槽DeepMind心智神经网络，还推荐了这些多智能体学习论文
 
+https://mp.weixin.qq.com/s/qU6XD45RGeMI-T7GI0dg2Q
+
+OpenAI竞争性自我对抗训练：简单环境下获得复杂的智能体
+
+https://mp.weixin.qq.com/s/rPsxvzOLuoo_IRtgH94Ecw
+
+OpenAI自学习多智能体5v5团队战击败人类玩家
+
+https://mp.weixin.qq.com/s/VPVzXzBYD_nYO1SjTMNGVA
+
+Dota2团战AI击败人类最全解析：能团又能gank，AI一日人间180年
+
 # CNN进阶
 
 https://mp.weixin.qq.com/s/gwH9s1ggMTj2dJkad9wUuw

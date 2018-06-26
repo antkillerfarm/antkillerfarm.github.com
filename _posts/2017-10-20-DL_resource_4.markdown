@@ -158,10 +158,6 @@ https://mp.weixin.qq.com/s/AndV-htPeTXlpAm1GONNtA
 
 中科院开源星际争霸2宏观运营研究数据集MSC
 
-https://mp.weixin.qq.com/s/qU6XD45RGeMI-T7GI0dg2Q
-
-OpenAI竞争性自我对抗训练：简单环境下获得复杂的智能体
-
 https://mp.weixin.qq.com/s/0OlKixcT20wao4xkWa6M5A
 
 超越蒙特卡洛树搜索：北大提出深度交替网络和长期评估围棋模型

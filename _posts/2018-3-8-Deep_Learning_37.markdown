@@ -68,6 +68,10 @@ https://zhuanlan.zhihu.com/p/22591740
 
 从事人脸识别研究必读的N篇文章
 
+https://mp.weixin.qq.com/s/7cZTbTBttEvN6NvOarSFgw
+
+如何构建自定义人脸识别数据集
+
 https://mp.weixin.qq.com/s/ZZmLbFzi843g0k3gTncQmA
 
 拿下人脸识别“世界杯”冠军！松下-NUS和美国东北大学实战分享

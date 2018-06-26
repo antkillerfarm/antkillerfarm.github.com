@@ -430,3 +430,6 @@ https://mp.weixin.qq.com/s/whCTTVxf-zsdjJjx5X01Rg
 
 有源相控阵雷达系统
 
+https://mp.weixin.qq.com/s/qGV9vxZHRreYVxj2zGjoIg
+
+合成孔径雷达自动目标识别

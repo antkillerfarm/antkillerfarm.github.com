@@ -247,6 +247,10 @@ https://mp.weixin.qq.com/s/Dygdn0Xzpx40-zUQadiiHg
 
 通过梯度检验帮助实现反向传播
 
+https://mp.weixin.qq.com/s/auNRIPYEwRlROFXug41Ang
+
+简单初始化，训练10000层CNN
+
 # BP算法的缺点
 
 虽然传统的BP算法，理论上可以支持任意深度的神经网络。然而实际使用中，却很少能支持3层以上的神经网络。

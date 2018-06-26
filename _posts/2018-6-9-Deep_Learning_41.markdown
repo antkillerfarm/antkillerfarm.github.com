@@ -184,7 +184,11 @@ https://mp.weixin.qq.com/s/HAc1R74Yj2nwiohuRy5emA
 
 https://mp.weixin.qq.com/s/N1ciRHJAPMzgjpZhPVoHXw
 
-现实版柯南“蝴蝶结变声器”：谷歌发布从声纹识别到多重声线语音合成的迁移学习 
+现实版柯南“蝴蝶结变声器”：谷歌发布从声纹识别到多重声线语音合成的迁移学习
+
+https://mp.weixin.qq.com/s/jhWt7ZlBVvmyGpKPeoHZug
+
+更优的ImageNet模型可迁移性更强？谷歌大脑论文给出验证
 
 # AlphaGo
 

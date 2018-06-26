@@ -248,6 +248,10 @@ Pushing包括Weight Pushing和Label Pushing两种情况。
 
 Pruning的目的是去除大于最短路径的$$\otimes$$分支。
 
+## Other
+
+除了这些常用操作之外，还有add-self-loops和remove-disambiguation-symbols等操作。这里不再赘述。
+
 ## HCLG
 
 介绍完WFST的基本运算，这里来介绍一下WFST在语音识别上的应用——HCLG。
