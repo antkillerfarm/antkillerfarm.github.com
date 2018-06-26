@@ -203,6 +203,8 @@ Parameter Server就是处理海量特征计算的一种方法。
 
 >2017.5，我曾去某电商面试推荐系统职位。言谈之中发现他们对于DL几乎一无所知，当时就觉得有些古怪。直到接触Parameter Server才明白了他们的玩法。。。非常庆幸他们鄙视了我。后来到了2017.12的时候，他们主动找我，想再次面试，被我婉拒。
 
+这类问题的另一个特征是：特征虽多，但单独的一个样本具有的有效特征相对有限，一般不过数百个。使用样本更新参数时，只考虑这几百个特征即可，这也为相关的分布式运算提供了有利条件。
+
 参考：
 
 https://www.zhihu.com/question/26998075
@@ -220,6 +222,10 @@ https://mp.weixin.qq.com/s/yuHavuGTYMH5JDC_1fnjcg
 https://zhuanlan.zhihu.com/p/29968773
 
 大规模机器学习框架的四重境界
+
+https://mp.weixin.qq.com/s/2RCH2Or_ITUTGrlfYLB8mg
+
+腾讯千亿级参数分布式ML系统无量背后的秘密
 
 # Bloom Filter
 

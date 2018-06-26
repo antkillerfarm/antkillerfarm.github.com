@@ -36,6 +36,10 @@ https://zhuanlan.zhihu.com/p/38117606
 
 早期购买行为的分析和预测建模
 
+https://mp.weixin.qq.com/s/nQAqEZW_TJSsbVp-kVcKGA
+
+简谈马尔可夫模型在个性化推荐中的应用
+
 # 决策树
 
 Decision Tree讲的最好的，首推周志华的《机器学习》。这里只对要点进行备忘。

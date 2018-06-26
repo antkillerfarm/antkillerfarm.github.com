@@ -108,6 +108,10 @@ https://mp.weixin.qq.com/s/a4oU8UK_hLMrKXNRQizAag
 
 图鸭科技获CVPR 2018图像压缩挑战赛单项冠军，技术解读端到端图像压缩框架
 
+https://mp.weixin.qq.com/s/VDyPjzXdwMGEsoXQmhrp9g
+
+图鸭科技斩获CVPR图像压缩挑战赛冠军，TNGcnn4p技术全解读
+
 # SR之外的DL ISP
 
 https://mp.weixin.qq.com/s/Wdxkvlz4nLbJS_gWqHwMjw
