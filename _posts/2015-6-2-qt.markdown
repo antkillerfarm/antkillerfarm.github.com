@@ -304,3 +304,41 @@ https://mp.weixin.qq.com/s/s5eDSQF6mFt2F9_nVtYemQ
 
 PaaS将吞噬云计算？Kubernetes的市场冲击波
 
+# DL参考资源
+
+https://mp.weixin.qq.com/s/zDKjyxqSbqYVlx3TveL8fg
+
+单摄像头数秒构建3D人体模型
+
+https://mp.weixin.qq.com/s/0dDzWjXZfHEh9jP-X4avbg
+
+英伟达新研究：“狗生猫，猫生万物”的多模态无监督图像转换
+
+https://mp.weixin.qq.com/s/w84gLswUFkl4NJSMv0RnIA
+
+OpenAI详细解析：攻击者是如何使用「对抗样本」攻击机器学习的！
+
+https://mp.weixin.qq.com/s/wni3F9lKuO4OT32BVe0QDQ
+
+谷歌发大招：搜索全面AI化，不用关键词就能轻松“撩书”
+
+https://mp.weixin.qq.com/s/oNXmYpp--GutT66c5p6Q8A
+
+AI说，它可以把你变成个游戏：3D人体模型
+
+https://mp.weixin.qq.com/s/o2A9yo6lIWTphf3jLviyEg
+
+用狗的数据训练AI，华盛顿大学研发模拟狗行为的AI系统
+
+https://mp.weixin.qq.com/s/4UH-XWyIxYHq_ErRfkzzsQ
+
+与神经网络相比，你对P图一无所知
+
+https://mp.weixin.qq.com/s/KTBC1VBj7V7pjQ9JVCn7fQ
+
+新加坡国立大学论文：利用互补几何模型改善运动分割
+
+https://mp.weixin.qq.com/s/19U2Rhwgj5NoB0esKyxSyA
+
+神经网络告诉我，谁是世界上最“美”的人？
+

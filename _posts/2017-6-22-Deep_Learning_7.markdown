@@ -36,6 +36,10 @@ https://mp.weixin.qq.com/s/7fWh2dovmfbsF8afaX9UOg
 
 一文简述ResNet及其多种变体
 
+https://mp.weixin.qq.com/s/fxq-H2_ZyXVd_kJx6rwEcQ
+
+何恺明CVPR2018关于视觉深度表示学习教程
+
 # Bi-directional RNN
 
 众所周知，RNN在处理长距离依赖关系时会出现问题。LSTM虽然改进了一些，但也只能缓解问题，而不能解决该问题。

@@ -242,4 +242,51 @@ https://mp.weixin.qq.com/s/iAMYqJjlMWAvFq4Hddh4ig
 
 从0上手Kaggle图像分类挑战：冠军解决方案详解
 
+https://mp.weixin.qq.com/s/LtWMGRBk2sbPDjeC9PmJ7g
+
+弱监督学习下的商品识别：CVPR 2018细粒度识别挑战赛获胜方案简介
+
+https://mp.weixin.qq.com/s/ZIDiFrN3qQV4u-m9Wr3wiA
+
+斯坦福完全可解释深度神经网络：你需要用决策树搞点事
+
+https://mp.weixin.qq.com/s/M7w7tMVd23YToIW7DypYjA
+
+用DL实现Bug自动归类：微软研究院提出DBRNN-A
+
+https://mp.weixin.qq.com/s/KX85CCpYrXFOvdTU5Q4Frg
+
+阿里巴巴论文提出针对影视作品的语音情感识别信息融合框架
+
+https://mp.weixin.qq.com/s/1R9ttaKnXso_quIGTY1nfA
+
+海康、UCLA、北理联合提出3D DescriptorNet：可按条件生成3D形状，克服模式崩溃
+
+https://mp.weixin.qq.com/s/-4b3u02KiIt5i4Yzz-Ed3g
+
+从信息论的角度理解与可视化神经网络
+
+https://mp.weixin.qq.com/s/NJf5e25tvT_xKXLD7UY1AQ
+
+MySQL智能调度系统。这篇blog其实和MySQL关系不大，算是DL在负载均衡方面的应用吧。
+
+https://mp.weixin.qq.com/s/D0n3xY0k25d6Ouf4mCi7Nw
+
+让AI识别语义空间关系：斯坦福大学李飞飞组提出“参考关系模型”
+
+https://mp.weixin.qq.com/s/_P-4hhd7QiOwrR_uBCPbZg
+
+脑洞大开的机器视觉多领域学习模型结构
+
+https://mp.weixin.qq.com/s/yQG0983RjQHIkt9oBlkDqQ
+
+瞎谈CNN：通过优化求解输入图像
+
+https://mp.weixin.qq.com/s/iZZHmxGFHQHk1rlzMzDQcg
+
+训练深度神经网络失败的罪魁祸首不是梯度消失，而是退化
+
+https://mp.weixin.qq.com/s/yvHZ9hVueYUKsMXcNQQzmQ
+
+深度学习会被可微分编程取代？
 

@@ -4,7 +4,7 @@ title:  深度学习（三十八）——深度强化学习（2）, Multi-agent,
 category: DL 
 ---
 
-# 深度强化学习
+# 深度强化学习（续）
 
 ## 参考
 
@@ -361,4 +361,16 @@ https://mp.weixin.qq.com/s/a1Qg1Hl5NMvEJPXhJR-2BA
 https://mp.weixin.qq.com/s/iK7XR0tHV_dE0p1grNQIHw
 
 只需一张照片，运动视频分分钟伪造出来
+
+https://mp.weixin.qq.com/s/-j4p7nUF-rCGk6yK0nccvw
+
+机器人也会画漫画
+
+https://mp.weixin.qq.com/s/3Aq1HXpBzgNdcB130tCKbQ
+
+GAN网络图像翻译机：图像复原、模糊变清晰、素描变彩图
+
+https://mp.weixin.qq.com/s/fMtuJbWG_d9zyCZ0oYyX_w
+
+经得住考验的“假图片”：用TensorFlow为神经网络生成对抗样本
 

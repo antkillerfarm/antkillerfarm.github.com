@@ -299,3 +299,37 @@ Director::drawScene
 
 http://www.topologywithouttears.net/topbookchinese.pdf
 
+# DL参考资源
+
+https://mp.weixin.qq.com/s/jdRu-cishwV8qBmGLTFJCA
+
+美团“猜你喜欢”深度学习排序模型实践
+
+https://mp.weixin.qq.com/s/QFYZwbrTJuN-JiMJ5NQxWg
+
+AI学会了视觉推理，“脑补”看不清的物体
+
+https://mp.weixin.qq.com/s/mPN3MXueeZImY2z0KBD6CA
+
+CMU&谷歌Spotlight论文：超越卷积的视觉推理框架
+
+https://mp.weixin.qq.com/s/RwofVKhBFqo3dYJzy9mlJw
+
+国科大本科生连续在CVPR，AAAI发文，系统提出三维模型库变形分析方法
+
+https://mp.weixin.qq.com/s/tKccNaGe5EqEEqpoItfn5Q
+
+我在谷歌大脑见习机器学习的一年：Node.js创始人的尝试笔记
+
+https://mp.weixin.qq.com/s/hjRRmCK4QBJ6UTABAR-cig
+
+神经网络quine：自我复制+解决辅助任务
+
+https://mp.weixin.qq.com/s/fJUQXnVwTlfOC37Go0lLUg
+
+携程图像智能化建设之路
+
+https://mp.weixin.qq.com/s/lEaq8NylJG4bUY2YupZh0g
+
+5秒钟内将手绘网站线框图转换为可用的HTML网站
+

@@ -406,3 +406,11 @@ https://mp.weixin.qq.com/s/i8iQtCC7ahXLY1a1wOacsA
 
 Science：最新发现哈希可能是大脑的通用计算原理
 
+https://mp.weixin.qq.com/s/ZOVWXNym5yHoo-MmpxXo0A
+
+自监督对抗哈希SSAH：当前最佳的跨模态检索框架
+
+https://mp.weixin.qq.com/s/VldzlYg5AfDRho8bsROL_g
+
+HashGAN:基于注意力机制的深度对抗哈希模型提升跨模态检索效果
+

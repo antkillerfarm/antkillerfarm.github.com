@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十六）——深度推荐系统, Recursive NN, Spatial Transformer Networks, 多任务学习, AutoDL
+title:  深度学习（三十六）——深度推荐系统, Recursive NN, 多任务学习, AutoDL
 category: DL 
 ---
 
@@ -266,30 +266,6 @@ http://blog.csdn.net/mengmengz07/article/details/51348554
 
 recursive neural network梳理
 
-# Spatial Transformer Networks
-
-论文：
-
-《Spatial Transformer Networks》
-
-参考：
-
-http://www.cnblogs.com/neopenx/p/4851806.html
-
-Spatial Transformer Networks(空间变换神经网络)
-
-http://blog.csdn.net/shaoxiaohu1/article/details/51809605
-
-论文笔记：Spatial Transformer Networks
-
-http://blog.csdn.net/shaoxiaohu1/article/details/51809605
-
-Spatial Transformer Networks
-
-https://mp.weixin.qq.com/s/ciqQMezcB-oM24X8eQqTNg
-
-花式玩耍Spatial Transformation Networks
-
 # 多任务学习
 
 https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA
@@ -327,6 +303,10 @@ CMU提出“十字绣网络”，自动决定多任务学习的最佳共享层
 https://mp.weixin.qq.com/s/i7WAFjQHK1NGVACR8x3v0A
 
 自然语言十项全能：转化为问答的多任务学习
+
+https://mp.weixin.qq.com/s/NpO1UP_mzyaeqW26xLY1Xg
+
+CVPR 2018最佳论文作者亲笔解读：研究视觉任务关联性的Taskonomy
 
 # AutoDL
 
@@ -389,4 +369,8 @@ https://mp.weixin.qq.com/s/HJ5caV1bQi7qVDeNXZ21qg
 https://zhuanlan.zhihu.com/p/35050923
 
 跬步至千里：揭秘谷歌AutoML背后的渐进式搜索技术
+
+https://mp.weixin.qq.com/s/bjVTpdaKFx4fFtT8BjMNew
+
+指数级加速架构搜索：CMU提出基于梯度下降的可微架构搜索方法
 

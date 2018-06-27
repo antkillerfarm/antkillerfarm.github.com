@@ -406,3 +406,39 @@ https://mp.weixin.qq.com/s/6Nr7LF9VxYQ4NlLlk8bCVw
 
 不了解边缘计算，你可能就要被“边缘”了
 
+https://mp.weixin.qq.com/s/oYiQEMelkXHbT3ke2BmHOw
+
+如何逐步去构建一个大型网站系统
+
+https://mp.weixin.qq.com/s/xlCO__HucTUd_gYNRTueGg
+
+携程基于大数据分析的实时风控体系
+
+https://mp.weixin.qq.com/s/B9zo0zThARAi11hRuJ-AqA
+
+开源实时数据处理系统Pulsar：一套搞定Kafka+Flink+DB
+
+https://mp.weixin.qq.com/s/y6ntgPxTaLFBJDn3usBd1g
+
+美团点评广告实时索引的设计与实现
+
+https://mp.weixin.qq.com/s/-K2K22fLOz4Hl7MIUAJfRA
+
+美团点评数据平台Kerberos优化实战
+
+https://mp.weixin.qq.com/s/NwjYJde9_TC4PXMPpYw1Gw
+
+聊聊开源消息中间件的架构和原理
+
+https://mp.weixin.qq.com/s/Kv1Qq4118I2itYwPYyQUoA
+
+Spark Streaming 实时计算在甜橙金融监控系统中的应用及优化
+
+https://mp.weixin.qq.com/s/syM4ReAWpZ5d4KI87ogpiQ
+
+从单一架构到分布式交易架构，网易严选的成功实践
+
+https://mp.weixin.qq.com/s/qh88sawJUZedv3X0LIRsAQ
+
+ESearch：58集团基于C++语言自主研发的搜索内核
+

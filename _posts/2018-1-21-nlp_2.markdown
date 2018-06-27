@@ -369,3 +369,7 @@ https://mp.weixin.qq.com/s/sQ903WNSR4v367t78_VG1Q
 
 自然语言处理全家福：纵览当前NLP中的任务、数据、模型与论文
 
+https://mp.weixin.qq.com/s/mU5I7FCIwfwbYl4ED7EIXA
+
+基于深度学习的NLP研究大盘点
+

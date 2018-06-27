@@ -96,38 +96,6 @@ TensorFlow学习_01_安装_基本操作_可视化结构、过程_Mnist
 
 迁移学习的时候，有的时候需要保持某几层的权值，在后续训练中不被改变。这时，可以在创建Variable时，令trainable=false。
 
-## 我的TensorFlow实践
-
-### MNIST+Softmax
-
-代码：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_mnist.py
-
-### MNIST+CNN
-
-代码：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_cnn.py
-
-第一个例子中，我对CPU的计算能力还没有切肤之痛，但在这里使用CPU差不多要花半个小时时间。。。
-
-### 框架怀古（2017.9）
-
-http://deeplearning.net/
-
-这个网站是Theano的主站，也是我最早接触DL时浏览的网站。其时，我虽然对DL有浓厚的兴趣，但尚未以此作为工作内容。
-
-从该网站提供的招聘信息来看，Caffe、Theano、Torch是当时主流的三大框架库。
-
-岂料时隔一年半载之后，这三大框架都渐趋式微。
-
-Caffe被Caffe 2替代，但使用的广泛度仍超过后者。
-
-Theano被同样基于计算图的TensorFlow淘汰。2017年9月停止更新。
-
-Torch相对变动最小，它被PyTorch替代。这更可以看作是python对于lua的胜利。
-
 ## TFLite
 
 Tensorflow源代码中自带的toco工具，可用于生成一个可供TensorFlow Lite框架使用的tflite文件。
@@ -160,6 +128,18 @@ http://www.cnblogs.com/xuchenCN/p/5888638.html
 
 tensorflow serving
 
+## op的C++实现
+
+有的时候为了将Tensorflow的op移植到其他平台，需要找到相应op的cpu实现。比如space_to_batch这个op，它的实现在：
+
+core/kernels/spacetobatch_op.cc
+
+简单的op一般找到这里就可以了，但space_to_batch还要更深一层：
+
+core/kernels/spacetobatch_functor.cc
+
+一般XXX_impl.cc或者XXX_functor.cc才是op实现真正所在的位置。
+
 ## blog
 
 http://www.jianshu.com/u/eaec1fc422e9
@@ -169,6 +149,38 @@ http://www.jianshu.com/u/eaec1fc422e9
 http://blog.csdn.net/u012436149
 
 一个TensorFlow+PyTorch的blog
+
+## 我的TensorFlow实践
+
+### MNIST+Softmax
+
+代码：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_mnist.py
+
+### MNIST+CNN
+
+代码：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_cnn.py
+
+第一个例子中，我对CPU的计算能力还没有切肤之痛，但在这里使用CPU差不多要花半个小时时间。。。
+
+### 框架怀古（2017.9）
+
+http://deeplearning.net/
+
+这个网站是Theano的主站，也是我最早接触DL时浏览的网站。其时，我虽然对DL有浓厚的兴趣，但尚未以此作为工作内容。
+
+从该网站提供的招聘信息来看，Caffe、Theano、Torch是当时主流的三大框架库。
+
+岂料时隔一年半载之后，这三大框架都渐趋式微。
+
+Caffe被Caffe 2替代，但使用的广泛度仍超过后者。
+
+Theano被同样基于计算图的TensorFlow淘汰。2017年9月停止更新。
+
+Torch相对变动最小，它被PyTorch替代。这更可以看作是python对于lua的胜利。
 
 ## 参考
 
@@ -419,28 +431,4 @@ https://mp.weixin.qq.com/s/YdcIDXadEnDsyfc6Iu1gGw
 https://mp.weixin.qq.com/s/Off0pgaRNyik2nvjHaQQkw
 
 在TensorFlow中对比两大生成模型：VAE与GAN
-
-https://mp.weixin.qq.com/s/rMYjsIgFNvv47F4YZjY8SA
-
-如何在K8S上玩转TensorFlow？
-
-https://mp.weixin.qq.com/s/xJaoqHLVFmouaspjaLjoSg
-
-TFX：基于TensorFlow可大规模扩展的机器学习平台
-
-https://mp.weixin.qq.com/s/Yp2zE85VCx8q67YXvuw5qw
-
-TensorFlow引入了动态图机制Eager Execution
-
-https://zhuanlan.zhihu.com/p/30751039
-
-TensorFlow全新的数据读取方式：Dataset API入门教程
-
-https://github.com/ZhuanZhiCode/TensorFlow-Eager-Execution-Examples
-
-Eager Execution的代码示例
-
-https://mp.weixin.qq.com/s/By_GKPtY6xr8MwkWA6frzA
-
-TensorFlow的动态图工具Eager怎么用？这是一篇极简教程
 

@@ -142,10 +142,6 @@ https://mp.weixin.qq.com/s/dwEHorYSJuX9JapIYLHiXg
 
 BicycleGAN：图像转换多样化，大幅提升pix2pix生成图像效果
 
-https://mp.weixin.qq.com/s/VldzlYg5AfDRho8bsROL_g
-
-HashGAN:基于注意力机制的深度对抗哈希模型提升跨模态检索效果
-
 https://mp.weixin.qq.com/s/W4WVHMIMKPNvt5lcCe1v4g
 
 半监督学习需要Bad GAN，清华特奖学霸与苹果AI总监提出

@@ -372,5 +372,3 @@ sess = tf.Session()
 sess.run(tf.global_variables_initializer())
 saver.save(sess, 'my_test_model')
 {% endhighlight %}
-
-

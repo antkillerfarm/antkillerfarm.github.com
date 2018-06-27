@@ -152,6 +152,10 @@ https://mp.weixin.qq.com/s/0HukwNmg3k-rBrIBByLhnQ
 
 深度Q学习：一步步实现能玩《毁灭战士》的智能体
 
+https://mp.weixin.qq.com/s/x-qCA0TzoVUtZ8VAf8ey0A
+
+深度Q学习介绍
+
 ## 参考
 
 https://www.nervanasys.com/demystifying-deep-reinforcement-learning/

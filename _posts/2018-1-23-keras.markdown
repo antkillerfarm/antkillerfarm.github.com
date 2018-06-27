@@ -242,6 +242,10 @@ https://mp.weixin.qq.com/s/rVliMXPCYU4rTKU8i-gxtQ
 
 如何用50行代码构建情感分类器
 
+https://mp.weixin.qq.com/s/Cbpm7oMmRMC60p5_uzbn7Q
+
+无需数学背景！谷歌研究员为你解密生成式对抗网络
+
 # OpenAI Gym
 
 Openai gym是一个用于开发和比较强化学习（reinforcement learning，RL）算法的工具包，与其他的数值计算库兼容，如tensorflow或者theano库。现在主要支持的是python语言，以后将支持其他语言。

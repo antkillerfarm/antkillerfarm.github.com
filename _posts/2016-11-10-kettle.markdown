@@ -323,3 +323,24 @@ http://liweithu.com/petuum
 
 面向机器学习的分布式计算框架:Petuum
 
+# DL参考资源
+
+https://mp.weixin.qq.com/s/LTtcD5CBT8m127thjBaRsw
+
+DeepMind提出神经元删除法：通过理解每个神经元来理解深度学习
+
+https://mp.weixin.qq.com/s/e63_T75iG6YvqFKCE5cbvA
+
+AI不仅能画画，还能编和弦了：谷歌这几年取得了哪些艺术成就？
+
+https://mp.weixin.qq.com/s/yfuMacLnj9q-9gpXCUfZhg
+
+PSU提出深度k-最近邻算法：解决深度学习应用的安全漏洞
+
+https://mp.weixin.qq.com/s/kdWxbwamSuiTWdZj8MfwyQ
+
+如何用AI算法识别骗保行为？蚂蚁保险智能风控模型首次公开！
+
+https://mp.weixin.qq.com/s/D_HNrlTS-uTA9GWPu7WJaQ
+
+简单的「图像旋转」预测，为图像特征学习提供强大监督信号

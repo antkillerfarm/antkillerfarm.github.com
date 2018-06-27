@@ -233,10 +233,6 @@ https://mp.weixin.qq.com/s/lqQeCpLQVqSdJPWx0oxs2g
 
 例解生成对抗网络
 
-https://mp.weixin.qq.com/s/fMtuJbWG_d9zyCZ0oYyX_w
-
-经得住考验的“假图片”：用TensorFlow为神经网络生成对抗样本
-
 https://mp.weixin.qq.com/s/LAS0KgPiVekGdQXbqlw1cQ
 
 深度学习的三大生成模型：VAE、GAN、GAN的变种
@@ -248,10 +244,6 @@ https://mp.weixin.qq.com/s/N7YU-YeXiVX7gSB-mzYgnw
 https://mp.weixin.qq.com/s/gDzti2DISq_cwGbP5T7ICQ
 
 聊聊对抗自编码器
-
-https://mp.weixin.qq.com/s/3Aq1HXpBzgNdcB130tCKbQ
-
-GAN网络图像翻译机：图像复原、模糊变清晰、素描变彩图
 
 https://mp.weixin.qq.com/s/mPtv1fQd0NBgdY2b_ALNTQ
 
@@ -280,8 +272,3 @@ https://mp.weixin.qq.com/s/6AtZZ434HehQSf_YgbylTw
 https://mp.weixin.qq.com/s/df51nYaA-uz7vd4WbBuE8g
 
 GAN货：生成对抗网络知识资料全集
-
-https://mp.weixin.qq.com/s/-j4p7nUF-rCGk6yK0nccvw
-
-机器人也会画漫画
-

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十）——模型压缩与加速, OCR, 目标检测进阶
+title:  深度学习（四十）——模型压缩与加速, OCR, 目标检测进阶, Spatial Transformer Networks
 category: DL 
 ---
 
@@ -324,4 +324,26 @@ https://mp.weixin.qq.com/s/AupXIoVmhcOBrX1z1vgdtw
 
 弱监督实现精确目标检测，上交大提出协同学习框架
 
+# Spatial Transformer Networks
 
+论文：
+
+《Spatial Transformer Networks》
+
+参考：
+
+http://www.cnblogs.com/neopenx/p/4851806.html
+
+Spatial Transformer Networks(空间变换神经网络)
+
+http://blog.csdn.net/shaoxiaohu1/article/details/51809605
+
+论文笔记：Spatial Transformer Networks
+
+http://blog.csdn.net/shaoxiaohu1/article/details/51809605
+
+Spatial Transformer Networks
+
+https://mp.weixin.qq.com/s/ciqQMezcB-oM24X8eQqTNg
+
+花式玩耍Spatial Transformation Networks

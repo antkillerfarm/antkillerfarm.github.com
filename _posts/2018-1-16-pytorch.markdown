@@ -244,6 +244,10 @@ https://mp.weixin.qq.com/s/G8hUNK5hyZPDHt9JRROMKw
 
 PaddleFluid和TensorFlow基本使用概念对比
 
+https://mp.weixin.qq.com/s/RuVtfoGDdbWSBBfN-A0OOw
+
+使用PaddleFluid和TensorFlow实现图像分类网络SE_ResNeXt
+
 # MXNet
 
 https://mp.weixin.qq.com/s/lVja7woyFWpmr9sH0CitAA
