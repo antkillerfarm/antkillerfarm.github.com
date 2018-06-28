@@ -190,6 +190,12 @@ http://blog.csdn.net/augusdi/article/details/12833235
 
 比较知名的Optimizer软件有：CPlex, Gurobi, Mosek, cvx, LINGO
 
+参考：
+
+https://mp.weixin.qq.com/s/kdfGUzY6KnI3tpcDg0GX6w
+
+运筹优化问题求解工具Lingo
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/sbuqNhIVTDUe4Q6BxS5fWw

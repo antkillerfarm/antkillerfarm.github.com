@@ -280,6 +280,10 @@ https://mp.weixin.qq.com/s/0ysaJGNslckesv21o752FA
 
 图像OCR年度进展
 
+https://mp.weixin.qq.com/s/VIEsfc4qKAGsi-O9LD4mng
+
+深度学习在OCR中的应用
+
 # CRNN
 
 论文：
