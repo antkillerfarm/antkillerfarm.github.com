@@ -44,6 +44,10 @@ https://github.com/PetrochukM/PyTorch-NLP
 
 支持快速成型的深度学习NLP工具包
 
+## op的C++实现
+
+Pytorch目前已经和Caffe2合并，所以相关op的代码在caffe2/operators下。一般XXX_op.h包含了CPU实现，而XXX_op.cu包含GPU实现。
+
 ## 参考
 
 https://mp.weixin.qq.com/s/zhkaenFdnB5KgaEYb-XDEQ
@@ -209,6 +213,10 @@ https://mp.weixin.qq.com/s/KNaFelqk9UO6JYjbPTQohA
 https://mp.weixin.qq.com/s/A5ka8evElmcuHdowof7kww
 
 Intel发布神经网络压缩库Distiller：快速利用前沿算法压缩PyTorch模型
+
+https://mp.weixin.qq.com/s/7p26q8Mu3IlK39DG7u41ZA
+
+PyTorch之迁移学习实战
 
 # PaddlePaddle
 

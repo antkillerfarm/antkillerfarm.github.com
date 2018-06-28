@@ -271,3 +271,8 @@ https://mp.weixin.qq.com/s/ePJPoQlOveTrCvCTy8_Xxg
 https://mp.weixin.qq.com/s/fuI9U7aZpuk-WX6GQNtOuA
 
 这是一份通俗易懂的知识图谱技术与应用指南
+
+https://mp.weixin.qq.com/s/lBeV6XWzk5bqNGiIMok-zw
+
+一文揭秘！自底向上构建知识图谱全过程
+

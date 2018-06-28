@@ -236,6 +236,8 @@ Pushing包括Weight Pushing和Label Pushing两种情况。
 
 上图是Label Pushing的例子，将非$$\epsilon$$的label前推。
 
+Kaldi中没有使用weight pushing。
+
 ## Minimization
 
 最小化的目的是减少原图中的状态数，以及转移边数。从而减少存储空间和计算时间。

@@ -373,3 +373,11 @@ https://mp.weixin.qq.com/s/mU5I7FCIwfwbYl4ED7EIXA
 
 基于深度学习的NLP研究大盘点
 
+https://mp.weixin.qq.com/s/o3rYqUDhre5KCcFzd_u8lQ
+
+命名实体识别从数据集到算法实现
+
+https://mp.weixin.qq.com/s/yXs_bLSAIPcUOIrvJ9-0Sw
+
+ACM BCB 2018 CausalTriad: 从医学文本数据中推断出新的因果关系假设
+

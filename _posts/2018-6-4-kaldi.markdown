@@ -210,70 +210,6 @@ http://www.52nlp.cn/language-model-training-tools-srilm-details
 
 语言模型训练工具SRILM详解
 
-# ARPA文件格式
-
-SRILM生成的lm文件是ARPA文件格式。
-
-{% highlight text %}
-\data\
-ngram 1=64000
-ngram 2=522530
-ngram 3=173445
-
-\1-grams:
--5.24036     'cause  -0.2084827
--4.675221    'em     -0.221857
--4.989297    'n      -0.05809768
--5.365303    'til    -0.1855581
-{% endhighlight %}
-
-这个文件的头部比较好懂，不解释。
-
-1-grams部分中每一条包括了3项，其中第二项显然是条目文本本身。
-
-第一项表示ngram的条件概率，即$$P(word_N \mid word_1，word_2，\dots，word_{N-1})$$。
-
-第三项表示回退（backoff）概率。
-
-下面我们举例说明条件概率和回退概率的用法。
-
-假设arpa的最高元是3元，则句子ABCDEF发生的概率为：
-
-$$P(ABCDEF)=P(A)*P(B\mid A)*P(C\mid AB)*P(D\mid BC)*P(E\mid CD)*(F\mid DE)$$
-
-其中，P(A)通过访问arpa中的1-grams项获得，$$P(B\mid A)$$通过访问2-grams项获得，其他的概率通过访问3-grams项获得。
-
-P(A)的计算直接找对应A的文法项获得概率即可。如果2-grams中存在“A B”项，$$P(B\mid A)$$的概率也很容易获得，但是如果“A B”词组在2-grams中不存在，我们就需要利用回退概率计算$$P(B\mid A)$$，计算公式为$$P(B\mid A)=\alpha(A)*P(B)$$，其中的$$\alpha(A)$$就表示A的回退概率。
-
-类似地，可以获得三元词组的概率计算公式：
-
-$$P(C│AB)=\left\{\begin{matrix}P(C\mid AB) \qquad ABC存在
-\\ \alpha(AB)*P(C\mid B) \qquad BC存在
-\\ \alpha(AB)*\alpha(B)*P(C) \qquad 其他
-\end{matrix}\right.$$
-
-参考：
-
-https://blog.csdn.net/lv_xinmy/article/details/8595561
-
-ARPA的n-gram语言模型格式
-
-https://blog.csdn.net/SAJIAHAN/article/details/52901422
-
-语言模型-ARPA格式
-
-https://blog.csdn.net/yutianzuijin/article/details/78756130
-
-arpa2fst原理详解
-
-https://www.jianshu.com/p/ab356b3c889e
-
-Kaldi(A5)语言模型及HCLG.fst生成
-
-https://blog.csdn.net/nihaomafb/article/details/48009695
-
-语言模型Katz backoff以及HMM模型
-
 # 命令行粗解
 
 kaldi的命令行脚本之所以不好读，主要在于它有一套自己的语法。
@@ -340,3 +276,93 @@ https://blog.csdn.net/snowdroptulip/article/details/78943748
 
 运行thchs30
 
+# 数据格式
+
+## text
+
+`utt_id    WORD1 WORD2 WORD3 WORD4 ...`
+
+{% highlight text %}
+110236_20091006_82330_F_0001 I'M WORRIED ABOUT THAT
+110236_20091006_82330_F_0002 AT LEAST NOW WE HAVE THE BENEFIT
+110236_20091006_82330_F_0003 DID YOU EVER GO ON STRIKE
+{% endhighlight %}
+
+## segments
+
+`utt_id    file_id    start_time    end_time`
+
+{% highlight text %}
+110236_20091006_82330_F_001 110236_20091006_82330_F 0.0 3.44
+110236_20091006_82330_F_002 110236_20091006_82330_F 4.60 8.54
+110236_20091006_82330_F_003 110236_20091006_82330_F 9.45 12.05
+110236_20091006_82330_F_004 110236_20091006_82330_F 13.29 16.13
+{% endhighlight %}
+
+## wav.scp
+
+`file_id    path/file`
+
+{% highlight text %}
+110236_20091006_82330_F path/110236_20091006_82330_F.wav
+111138_20091215_82636_F path/111138_20091215_82636_F.wav
+111138_20091217_82636_F path/111138_20091217_82636_F.wav
+{% endhighlight %}
+
+## utt2spk
+
+`utt_id    spkr_id`
+
+{% highlight text %}
+110236_20091006_82330_F_0001 110236
+110236_20091006_82330_F_0002 110236
+110236_20091006_82330_F_0003 110236
+{% endhighlight %}
+
+## spk2utt
+
+`spkr_id    utt_id1 utt_id2 utt_id3`
+
+## lexicon.txt
+
+lexicon.txt就是发声词典。
+
+{% highlight text %}
+WORD        W ER D
+LEXICON     L EH K S IH K AH N
+{% endhighlight %}
+
+# ARPA文件格式
+
+SRILM生成的lm文件是ARPA文件格式。
+
+{% highlight text %}
+\data\
+ngram 1=64000
+ngram 2=522530
+ngram 3=173445
+
+\1-grams:
+-5.24036     'cause  -0.2084827
+-4.675221    'em     -0.221857
+-4.989297    'n      -0.05809768
+-5.365303    'til    -0.1855581
+{% endhighlight %}
+
+这个文件的头部比较好懂，不解释。
+
+1-grams部分中每一条包括了3项，其中第二项显然是条目文本本身。
+
+第一项表示ngram的条件概率，即$$P(word_N \mid word_1，word_2，\dots，word_{N-1})$$。
+
+第三项表示回退（backoff）概率。
+
+下面我们举例说明条件概率和回退概率的用法。
+
+假设arpa的最高元是3元，则句子ABCDEF发生的概率为：
+
+$$P(ABCDEF)=P(A)*P(B\mid A)*P(C\mid AB)*P(D\mid BC)*P(E\mid CD)*(F\mid DE)$$
+
+其中，P(A)通过访问arpa中的1-grams项获得，$$P(B\mid A)$$通过访问2-grams项获得，其他的概率通过访问3-grams项获得。
+
+P(A)的计算直接找对应A的文法项获得概率即可。如果2-grams中存在“A B”项，$$P(B\mid A)$$的概率也很容易获得，但是如果“A B”词组在2-grams中不存在，我们就需要利用回退概率计算$$P(B\mid A)$$，计算公式为$$P(B\mid A)=\alpha(A)*P(B)$$，其中的$$\alpha(A)$$就表示A的回退概率。

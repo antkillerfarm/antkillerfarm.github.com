@@ -326,6 +326,10 @@ https://mp.weixin.qq.com/s/ZbmJGO3lqwNM2z-E4_Mpbw
 
 由“刷脸”到“识人”，云从科技刷新跨镜追踪(ReID)技术三项世界纪录！
 
+https://zhuanlan.zhihu.com/p/38603624
+
+云从科技资深算法研究员：详解跨镜追踪(ReID)技术实现及难点
+
 https://mp.weixin.qq.com/s/leuILzYz40PqrwsCatYhPw
 
 行人再识别年度进展

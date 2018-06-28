@@ -4,61 +4,92 @@ title:  Kaldi（二）
 category: AI 
 ---
 
-# 数据格式
+# ARPA文件格式（续）
 
-## text
+类似地，可以获得三元词组的概率计算公式：
 
-`utt_id    WORD1 WORD2 WORD3 WORD4 ...`
+$$P(C│AB)=\left\{\begin{matrix}P(C\mid AB) \qquad ABC存在
+\\ \alpha(AB)*P(C\mid B) \qquad BC存在
+\\ \alpha(AB)*\alpha(B)*P(C) \qquad 其他
+\end{matrix}\right.$$
 
-{% highlight text %}
-110236_20091006_82330_F_0001 I'M WORRIED ABOUT THAT
-110236_20091006_82330_F_0002 AT LEAST NOW WE HAVE THE BENEFIT
-110236_20091006_82330_F_0003 DID YOU EVER GO ON STRIKE
+参考：
+
+https://blog.csdn.net/lv_xinmy/article/details/8595561
+
+ARPA的n-gram语言模型格式
+
+https://blog.csdn.net/SAJIAHAN/article/details/52901422
+
+语言模型-ARPA格式
+
+https://blog.csdn.net/yutianzuijin/article/details/78756130
+
+arpa2fst原理详解
+
+https://www.jianshu.com/p/ab356b3c889e
+
+Kaldi(A5)语言模型及HCLG.fst生成
+
+https://blog.csdn.net/nihaomafb/article/details/48009695
+
+语言模型Katz backoff以及HMM模型
+
+# WFST
+
+## 生成WFST
+
+生成L：
+
+{% highlight bash %}
+scripts/make_lexicon_fst.pl data/lexicon.txt 0.5 SIL | \
+  fstcompile --isymbols=data/phones.txt --osymbols=data/words.txt \
+  --keep_isymbols=false --keep_osymbols=false | \
+   fstarcsort --sort_type=olabel > data/L.fst
 {% endhighlight %}
 
-## segments
+生成G：
 
-`utt_id    file_id    start_time    end_time`
-
-{% highlight text %}
-110236_20091006_82330_F_001 110236_20091006_82330_F 0.0 3.44
-110236_20091006_82330_F_002 110236_20091006_82330_F 4.60 8.54
-110236_20091006_82330_F_003 110236_20091006_82330_F 9.45 12.05
-110236_20091006_82330_F_004 110236_20091006_82330_F 13.29 16.13
+{% highlight bash %}
+gunzip -c data_prep/lm.arpa.gz | \
+  arpa2fst --disambig-symbol=#0 \
+             --read-symbol-table=data/words.txt - data/G.fst
 {% endhighlight %}
 
-## wav.scp
+生成$$L \circ G$$：
 
-`file_id    path/file`
-
-{% highlight text %}
-110236_20091006_82330_F path/110236_20091006_82330_F.wav
-111138_20091215_82636_F path/111138_20091215_82636_F.wav
-111138_20091217_82636_F path/111138_20091217_82636_F.wav
+{% highlight bash %}
+fsttablecompose data/L_disambig.fst data/G.fst | \
+    fstdeterminizestar --use-log=true | \
+    fstminimizeencoded | fstpushspecial | \
+    fstarcsort --sort-type=ilabel > somedir/LG.fst
 {% endhighlight %}
 
-## utt2spk
+生成$$C \circ L \circ G$$：
 
-`utt_id    spkr_id`
-
-{% highlight text %}
-110236_20091006_82330_F_0001 110236
-110236_20091006_82330_F_0002 110236
-110236_20091006_82330_F_0003 110236
+{% highlight bash %}
+fstmakecontextfst --read-disambig-syms=$dir/disambig_phones.list \
+--write-disambig-syms=$dir/disambig_ilabels.list data/phones.txt $subseq_sym \
+  $dir/ilabels | fstarcsort --sort_type=olabel > $dir/C.fst
+fstaddsubsequentialloop $subseq_sym $dir/LG.fst | \
+ fsttablecompose $dir/C.fst - > $dir/CLG.fst
 {% endhighlight %}
 
-## spk2utt
+生成$$H \circ C \circ L \circ G$$：
 
-`spkr_id    utt_id1 utt_id2 utt_id3`
-
-## lexicon.txt
-
-lexicon.txt就是发声词典。
-
-{% highlight text %}
-WORD        W ER D
-LEXICON     L EH K S IH K AH N
+{% highlight bash %}
+make-h-transducer --disambig-syms-out=$dir/disambig_tstate.list \
+   --transition-scale=1.0  $dir/ilabels.remapped \
+   $tree $model  > $dir/Ha.fst
+fsttablecompose $dir/Ha.fst $dir/CLG2.fst | \
+   fstdeterminizestar --use-log=true | \
+   fstrmsymbols $dir/disambig_tstate.list | \
+   fstrmepslocal  | fstminimizeencoded > $dir/HCLGa.fst
+add-self-loops --self-loop-scale=0.1 \
+    --reorder=true $model < $dir/HCLGa.fst > $dir/HCLG.fst
 {% endhighlight %}
+
+## 
 
 # 对齐工具
 
@@ -133,8 +164,4 @@ kaldi里的在线识别
 语速脚本：egs/wsj/s5/utils/data/perturb_data_dir_speed_3way.sh
 
 kaldi的变音量跟变语速都是借助sox这个工具来实现的，具体的命令大家可以参考脚本，音量的变化范围从1.0/8到2；语速的变化范围就0.9,1,1.1。
-
-# WFST
-
-
 

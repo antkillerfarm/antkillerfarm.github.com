@@ -305,3 +305,8 @@ Fortran作为最早的高级语言（1957年），至今仍有很强的生命力
 https://mp.weixin.qq.com/s/uMj3JEhgyYw4CaIhP1-GTQ
 
 阿里巴巴为什么不用ZooKeeper做服务发现？
+
+http://www.cnblogs.com/rjzheng/p/8994962.html
+
+分布式之消息队列复习精讲
+

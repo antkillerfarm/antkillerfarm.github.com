@@ -187,3 +187,8 @@ https://mp.weixin.qq.com/s/XisuT68H_r_SvVg0HVnWJw
 https://mp.weixin.qq.com/s/uI5gUGtiR8VDXreU4YEZYA
 
 MILA提出防御增强型网络：简单修改已有网络即可提升防攻击能力
+
+https://mp.weixin.qq.com/s/jpfvRbmTgFVQczHzKekmLw
+
+北邮夺冠CVPR 2018 DeepGlobe比赛，他们是这样做卫星图像识别的
+
