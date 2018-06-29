@@ -242,6 +242,14 @@ https://mp.weixin.qq.com/s/VPVzXzBYD_nYO1SjTMNGVA
 
 Dota2团战AI击败人类最全解析：能团又能gank，AI一日人间180年
 
+https://mp.weixin.qq.com/s/cUFSaHWGKhyZhEvRdX09hw
+
+谷歌大脑QT-Opt算法，机器人探囊取物成功率96%
+
+https://mp.weixin.qq.com/s/xxB1lsiQxSfaHPKwZUI9bw
+
+拔掉机器人的一条腿，它还能学走路？——三次元里优化的DRL策略
+
 # CNN进阶
 
 https://mp.weixin.qq.com/s/gwH9s1ggMTj2dJkad9wUuw

@@ -202,6 +202,8 @@ https://github.com/fyu/drn
 >个人主页：   
 >http://www.yf.io/
 
+在实际计算中，可以采用space_to_batch和batch_to_space操作，将之转换为普通卷积。
+
 参考：
 
 https://zhuanlan.zhihu.com/p/28822428

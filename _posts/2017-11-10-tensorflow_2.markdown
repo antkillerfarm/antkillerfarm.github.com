@@ -140,6 +140,10 @@ core/kernels/spacetobatch_functor.cc
 
 一般XXX_impl.cc或者XXX_functor.cc才是op实现真正所在的位置。
 
+此外，TFlite的实现往往更加简单：
+
+tensorflow/contrib/lite/kernels/internal/reference/reference_ops.h
+
 ## blog
 
 http://www.jianshu.com/u/eaec1fc422e9

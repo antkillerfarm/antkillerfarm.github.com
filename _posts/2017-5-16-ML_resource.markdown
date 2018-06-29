@@ -90,6 +90,10 @@ https://mp.weixin.qq.com/s/Ot2RcB1hbb6CEAZ5Tn5oAg
 
 10种机器学习算法的要点
 
+https://mp.weixin.qq.com/s/Oot7qI5Atj8kNGfhqYwDcA
+
+掌握这12条经验，对理解机器学习至关重要！
+
 https://www.zhihu.com/question/21664179
 
 如何在论文中画出漂亮的插图？
