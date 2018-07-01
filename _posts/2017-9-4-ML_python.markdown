@@ -96,6 +96,10 @@ API参考：
 
 https://docs.scipy.org/doc/numpy/reference/
 
+quickstart中文版：
+
+https://mp.weixin.qq.com/s/q0jSrxRRQAB7FUUqgD5H6A
+
 ### 文件存取
 
 原始二进制文件：tofile()和fromfile()

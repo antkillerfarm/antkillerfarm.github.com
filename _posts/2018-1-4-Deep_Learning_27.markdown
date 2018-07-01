@@ -168,6 +168,10 @@ https://mp.weixin.qq.com/s/d_P-4uQx0kC2w6J69OZIAw
 
 Deepmind研究科学家最新演讲：VAEs and GANs
 
+https://mp.weixin.qq.com/s/51Xu7osdVa-fCV-IZbHdCA
+
+Wasserstein自编码器
+
 # RBM & DBN & Deep Autoencoder
 
 ## RBM

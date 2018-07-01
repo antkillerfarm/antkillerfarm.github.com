@@ -425,11 +425,7 @@ https://zhuanlan.zhihu.com/p/36297534
 
 x = cos x 的解析形式
 
-## LSM (Log Structured Merge)
+https://mp.weixin.qq.com/s/0o6fjKlUJVHZ6Vb65bFjGg
 
-十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面之一就是它所使用的文件组织方式，这个方法更一般的名字叫 Log Structured-Merge Tree。
-
-http://www.open-open.com/lib/view/open1424916275249.html
-
-Log Structured Merge Trees(LSM)原理
+俄罗斯方块可以永无止境地玩下去吗？
 

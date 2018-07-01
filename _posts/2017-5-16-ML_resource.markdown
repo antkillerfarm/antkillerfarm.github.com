@@ -426,4 +426,19 @@ https://mp.weixin.qq.com/s/5TcykXfFw97mT_aR_ZDOkA
 
 Kaggle大神带你上榜单Top2%：点击预测大赛纪实（下）
 
+https://mp.weixin.qq.com/s/7N6eDoEV8oEwUpP-zK1RpQ
+
+560万Facebook人际关系数据，揭秘家庭职业传承“真相”
+
+http://www.jianshu.com/p/af7e063ac9b3
+
+机器学习在金融比赛中的应用
+
+https://mp.weixin.qq.com/s/OW44XEI1t5-oJWmmq4gJvw
+
+从概念到案例：初学者须知的十大机器学习算法
+
+https://mp.weixin.qq.com/s/94IGjVPXZ0FeCILQN33eBQ
+
+遇见大数据可视化：不要错过这么漂亮的数据可视化案例！
 

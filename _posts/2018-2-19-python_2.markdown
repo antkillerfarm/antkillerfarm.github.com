@@ -248,6 +248,10 @@ https://mp.weixin.qq.com/s/p86yvl3uAm3FXw4V9NlNoA
 
 一文带你上手Python网页抓取神器BeautifulSoup库
 
+https://mp.weixin.qq.com/s/3o_T7Tyrstur6jkj0gexMA
+
+BeautifulSoup的使用
+
 ## Sqlite
 
 Ubuntu下的安装方法是：

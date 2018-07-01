@@ -354,6 +354,10 @@ https://mp.weixin.qq.com/s/6A9wYqTrz_h5cR15WZwedQ
 
 你还在付费爱奇艺VIP？神级程序员教你用Python任意下！
 
+https://mp.weixin.qq.com/s/2k2XdzpLx5syeg_68LL4Xg
+
+12行Python暴力爬《黑豹》豆瓣短评
+
 # ZeroMQ
 
 ZeroMQ是个在Socket之上，而在MQ之下的网络通信库。正如名称所言，它实际上并不是一个完整的MQ，而仅仅只有MQ的一些子功能罢了。

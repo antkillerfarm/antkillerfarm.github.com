@@ -242,6 +242,10 @@ https://mp.weixin.qq.com/s/F9jzF50910ZGupSZNNnHtQ
 
 机器学习实战之决策树
 
+https://mp.weixin.qq.com/s/rV4R-y2VYE8RJlClvQV5zQ
+
+决策树的理论与实践
+
 # 关联规则挖掘
 
 ## 基本概念

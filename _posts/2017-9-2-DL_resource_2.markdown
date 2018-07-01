@@ -418,3 +418,7 @@ https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
 
 谷歌等巨头机器学习面试题：从逻辑回归到智力测验
 
+https://mp.weixin.qq.com/s/9ivDZXpPpLE3fuPgpNUyJA
+
+超全数据科学与机器学习面试指南
+

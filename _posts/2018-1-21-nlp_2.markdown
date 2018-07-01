@@ -381,3 +381,11 @@ https://mp.weixin.qq.com/s/yXs_bLSAIPcUOIrvJ9-0Sw
 
 ACM BCB 2018 CausalTriad: 从医学文本数据中推断出新的因果关系假设
 
+https://mp.weixin.qq.com/s/rA6oTLlFWmIvGUq_XPLOKQ
+
+利用Lattice LSTM的最优中文命名实体识别方法
+
+https://mp.weixin.qq.com/s/Dq-H4rUM19MaQb5W2DGlqA
+
+用递归神经网络，撰写一份特朗普式发言稿！
+

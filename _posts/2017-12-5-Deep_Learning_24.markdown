@@ -106,6 +106,10 @@ https://mp.weixin.qq.com/s/kuoUnt2Vhz9NhfnNqMFAhQ
 
 DeepMind提出关系RNN：构建关系推理模块，强化学习利器
 
+https://mp.weixin.qq.com/s/8BPZ_M8EGk3KxkSleYWSNw
+
+训练可解释、可压缩、高准确率的LSTM
+
 # L2 Normalization
 
 L2 Normalization本身并不复杂，然而多数资料都只提到1维的L2 Normalization的计算公式：

@@ -382,3 +382,11 @@ https://mp.weixin.qq.com/s/fMtuJbWG_d9zyCZ0oYyX_w
 
 经得住考验的“假图片”：用TensorFlow为神经网络生成对抗样本
 
+https://mp.weixin.qq.com/s/djkjAfUO_DefTP2drzY_iQ
+
+在《绝地求生》中玩《堡垒之夜》！ 深度学习帮你转换画风
+
+https://mp.weixin.qq.com/s/cTlXMxcpzc7_5NVsTm1jcA
+
+学习一帧，为整段黑白视频上色：谷歌提出自监督视觉追踪模型
+

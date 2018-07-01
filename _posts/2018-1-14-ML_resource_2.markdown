@@ -6,22 +6,6 @@ category: resource
 
 # ML参考资源
 
-https://mp.weixin.qq.com/s/7N6eDoEV8oEwUpP-zK1RpQ
-
-560万Facebook人际关系数据，揭秘家庭职业传承“真相”
-
-http://www.jianshu.com/p/af7e063ac9b3
-
-机器学习在金融比赛中的应用
-
-https://mp.weixin.qq.com/s/OW44XEI1t5-oJWmmq4gJvw
-
-从概念到案例：初学者须知的十大机器学习算法
-
-https://mp.weixin.qq.com/s/94IGjVPXZ0FeCILQN33eBQ
-
-遇见大数据可视化：不要错过这么漂亮的数据可视化案例！
-
 https://zhuanlan.zhihu.com/p/30383356
 
 掌握机器学习数学基础之信息论及其他
@@ -385,6 +369,10 @@ https://mp.weixin.qq.com/s/824-TbpwJz9n_jT9uuOE8g
 https://mp.weixin.qq.com/s/ibiElLIgrT3wYx3tDYMMTw
 
 理解特征工程
+
+https://mp.weixin.qq.com/s/3Ce8uMf_Kyt-hEZUYfdh3g
+
+特征工程之特征选择
 
 https://mp.weixin.qq.com/s/qfsakjq9D06DeIe6yx8aJw
 

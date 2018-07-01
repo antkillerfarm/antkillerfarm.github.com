@@ -417,7 +417,7 @@ Fama–French three-factor model
 
 Carhart four-factor model
 
-# 强连通分量算法
+## 强连通分量算法
 
 http://ishare.iask.sina.com.cn/f/34626295.html
 
@@ -434,3 +434,11 @@ http://blog.csdn.net/dm_vincent/article/details/8554244
 http://www.cnblogs.com/luweiseu/archive/2012/07/14/2591370.html
 
 强连通分支算法--Kosaraju算法、Tarjan算法和Gabow算法
+
+## LSM (Log Structured Merge)
+
+十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫 Log Structured-Merge Tree。
+
+http://www.open-open.com/lib/view/open1424916275249.html
+
+Log Structured Merge Trees(LSM)原理
