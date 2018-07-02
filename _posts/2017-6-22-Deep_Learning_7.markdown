@@ -40,6 +40,10 @@ https://mp.weixin.qq.com/s/fxq-H2_ZyXVd_kJx6rwEcQ
 
 何恺明CVPR2018关于视觉深度表示学习教程
 
+https://mp.weixin.qq.com/s/xTJr-jWMjk73TCZ8gBT4Ww
+
+一个神经元统治一切：ResNet强大的理论证明
+
 # Bi-directional RNN
 
 众所周知，RNN在处理长距离依赖关系时会出现问题。LSTM虽然改进了一些，但也只能缓解问题，而不能解决该问题。

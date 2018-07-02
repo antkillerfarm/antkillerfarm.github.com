@@ -460,6 +460,14 @@ https://mp.weixin.qq.com/s/3T594c4DzuRmPW5A4zu8Dg
 
 Pyecharts：极其强大的Python数据可视化模块
 
+## ImageAI
+
+ImageAI是一个CV方面的库，集成了大量的DL模型，其目标是使用数十行代码完成一个CV任务。
+
+代码：
+
+https://github.com/OlafenwaMoses/ImageAI
+
 ## 参考
 
 https://mp.weixin.qq.com/s/S7gnAdekPFcyd4ni1m9phg
@@ -490,22 +498,3 @@ https://mp.weixin.qq.com/s/HKHLiCqEAtoCAqf4CHv86w
 
 python机器学习算法代码实现
 
-https://mp.weixin.qq.com/s/PtZ3YvFrUgbK5y3pcAeW9A
-
-使用OpenCV和Python实现的机器学习
-
-https://mp.weixin.qq.com/s/wbcAIrI0eNALfKhgkZQYTQ
-
-用Python也能进军金融领域？这有一份股票交易策略开发指南
-
-https://mp.weixin.qq.com/s/e--IeRTRZMqhs_DSJKpgyQ
-
-特征工程之Scikit-learn
-
-https://mp.weixin.qq.com/s/z3N5v4H_W2sxh2XPpFbAcA
-
-除了Python，这些语言写的机器学习项目也很牛
-
-https://mp.weixin.qq.com/s/U2cDVRxZPVsqoL-zHn__CA
-
-Python做机器学习之路

@@ -360,6 +360,10 @@ https://mp.weixin.qq.com/s/HbNtWyA_EG4tLdVRueLLAA
 
 OpenCV实现0到9数字识别OCR
 
+https://mp.weixin.qq.com/s/5j-WNi4vafLDeyKqfVER0g
+
+图形图像算法中必须要了解的设计模式
+
 # GNU Octave
 
 GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。
@@ -465,4 +469,8 @@ Omnivision HDR sensor简介
 https://mp.weixin.qq.com/s/oeMqE0MzXyGeABGekY9eiQ
 
 眼擎科技CEO朱继志：如何设计自动驾驶的视觉成像系统
+
+https://blog.csdn.net/weixin_38285131/article/details/80457068
+
+光场相机重聚焦原理介绍及代码解析
 

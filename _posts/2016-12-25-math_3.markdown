@@ -116,6 +116,10 @@ MCMC和Gibbs Sampling最早都是统计力学的概念，后来才被用于机�
 
 参考：
 
+https://mp.weixin.qq.com/s/uFeyZ-6gFo2oOYKTnt2R9Q
+
+揭示贝叶斯公式应用中的认识误区
+
 https://mp.weixin.qq.com/s/AsZyjwUclEoxxl2VRBekHA
 
 拟合目标函数后验分布的调参利器：贝叶斯优化

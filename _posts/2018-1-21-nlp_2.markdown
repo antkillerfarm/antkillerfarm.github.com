@@ -389,3 +389,7 @@ https://mp.weixin.qq.com/s/Dq-H4rUM19MaQb5W2DGlqA
 
 用递归神经网络，撰写一份特朗普式发言稿！
 
+https://mp.weixin.qq.com/s/VCeEz5QhGqQ5TF0lkCk40A
+
+COLING 2018 最佳论文解读：序列标注经典模型复现
+

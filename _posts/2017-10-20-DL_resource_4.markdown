@@ -390,3 +390,7 @@ https://mp.weixin.qq.com/s/q0VENBNgolpeWmDapF5q_g
 
 在有池化层、1步幅的CNN上减少冗余计算，一种广泛适用的架构转换方法
 
+https://mp.weixin.qq.com/s/sn8fMAbJbeT6JUbCpBpN6A
+
+Jeff Dean与David Patterson：不思考体系结构的深度学习研究者不是好工程师
+

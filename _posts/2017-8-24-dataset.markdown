@@ -300,3 +300,7 @@ https://mp.weixin.qq.com/s/COnDB9EveANOBmCksCqoYg
 
 微软内部研究数据集正式对外开放，覆盖NLP、CV等9个领域
 
+https://mp.weixin.qq.com/s/U96j-8_8yo_KGEu9ufWBGg
+
+亚马逊Kindle电子书和纸质图书销售排行数据
+

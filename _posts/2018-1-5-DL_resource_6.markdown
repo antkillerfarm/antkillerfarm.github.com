@@ -54,10 +54,6 @@ https://mp.weixin.qq.com/s/HD370E4cCYvy_pdEKAvLIA
 
 教机器学习编程
 
-https://mp.weixin.qq.com/s/cDqxmRVQCIqdM5oiUh82YQ
-
-Yee Whye Teh：《贝叶斯深度学习与深度贝叶斯学习》
-
 https://mp.weixin.qq.com/s/OXVrijBMMq3A_oRSfVB1nQ
 
 田渊栋等人最新论文：别担心深度网络中的虚假局部极小值

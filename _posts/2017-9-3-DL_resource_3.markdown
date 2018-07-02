@@ -308,6 +308,10 @@ https://mp.weixin.qq.com/s/rXDj5ryRvjbkenp9IEokDQ
 
 一文读懂遗传算法工作原理
 
+https://mp.weixin.qq.com/s/3lZx252EjvHtsp5DWNQ7Eg
+
+进化算法简介
+
 https://mp.weixin.qq.com/s/wvcpx41O2763OgA8uYSFHw
 
 AI系统首次实现真正自主编程：利用遗传算法，完爆初级程序员

@@ -22,6 +22,10 @@ https://mp.weixin.qq.com/s/lKm_ypn5I7tSjoQHceJ0jQ
 
 概率编程：使用贝叶斯神经网络预测金融市场价格
 
+https://mp.weixin.qq.com/s/cDqxmRVQCIqdM5oiUh82YQ
+
+Yee Whye Teh：《贝叶斯深度学习与深度贝叶斯学习》
+
 ## 元学习
 
 https://mp.weixin.qq.com/s/KKK3VEpwL90g6Aro8qtXxQ

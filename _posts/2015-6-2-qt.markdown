@@ -131,6 +131,12 @@ d->threadData = (parent && !parent->thread()) ? parent->d_func()->threadData : Q
 
 显然这个例子代码并没有真正实现OpenGL多线程处理，所有的OpenGL操作实际上都是在主线程完成的。
 
+参考：
+
+https://blog.csdn.net/feiyangqingyun/
+
+一个Qt的blog
+
 # 线程池
 
 假设一个服务器完成一项任务所需时间为：T1创建线程时间，T2在线程中执行任务的时间，T3销毁线程时间。如果：T1+T3远大于T2，则可以采用线程池，以提高服务器性能。

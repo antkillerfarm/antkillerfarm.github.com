@@ -40,6 +40,10 @@ https://mp.weixin.qq.com/s/sAYOXEjAdA91x3nliHNX8w
 
 Attention模型方法综述
 
+https://mp.weixin.qq.com/s/7OYY3L7gL4wVv_EjoosOHA
+
+如何增强Attention Model的推理能力
+
 # VAE
 
 变分自编码器（Variational Auto-Encoder，VAE）是Autoencoder的一种扩展。
