@@ -154,3 +154,11 @@ https://mp.weixin.qq.com/s/eTVPLSpZir4A49bhmWAibQ
 
 深度学习中的各种优化算法
 
+https://mp.weixin.qq.com/s/CQpIhVinDPhXpp70WhyYww
+
+当前训练神经网络最快的方式：AdamW优化算法+超级收敛
+
+https://mp.weixin.qq.com/s/y3ThoC2A04q4uWiOsuhUJw
+
+腾讯AI Lab提出误差补偿式量化SGD：显著降低分布式机器学习的通信成本
+
