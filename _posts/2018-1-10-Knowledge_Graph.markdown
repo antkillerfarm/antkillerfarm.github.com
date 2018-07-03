@@ -276,3 +276,7 @@ https://mp.weixin.qq.com/s/lBeV6XWzk5bqNGiIMok-zw
 
 一文揭秘！自底向上构建知识图谱全过程
 
+https://mp.weixin.qq.com/s/uSPkgV-zIBEEJ0Ml-ILXqQ
+
+如何从零开始搭建知识图谱？
+

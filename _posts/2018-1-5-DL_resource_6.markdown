@@ -70,10 +70,6 @@ https://mp.weixin.qq.com/s/hBPsCUCQjT6cIKjjrHyQYg
 
 继图像识别后，图像标注系统也被对抗样本攻陷!
 
-https://mp.weixin.qq.com/s/4baaoCCdGX4iTw2MO_Y9rA
-
-熊元骏：人类行为理解研究进展
-
 https://mp.weixin.qq.com/s/MpuUdZi8CWcu0b-ij-bHjA
 
 Jeff Dean出品：用机器学习索引替代B-Trees，3倍性能提升，10-100倍空间缩小
@@ -105,10 +101,6 @@ Bengio最新论文提出GibbsNet：深度图模型中的迭代性对抗推断
 https://mp.weixin.qq.com/s/Pn3YLetgcf3-xoTvBcvDUQ
 
 基于信息理论的机器学习-中科院自动化所胡包钢研究员教程分享
-
-https://mp.weixin.qq.com/s/pTlELRhUL9Zg50HXDWjbqw
-
-基于双流递归神经网络的人体骨架行为识别！
 
 https://mp.weixin.qq.com/s/VSQEFD2fQVrjlJ-LNn0CGg
 

@@ -52,6 +52,16 @@ https://mp.weixin.qq.com/s/Jx0o17CwlIVcRV22PXk4wQ
 
 看穿机器学习的黑箱（III）
 
+## GAN的评估指标
+
+尽管可用的GAN模型非常多，但对它们的评估仍然主要是定性评估，通常需要借助人工检验生成图像的视觉保真度来进行。此类评估非常耗时，且主观性较强、具备一定误导性。鉴于定性评估的内在缺陷，恰当的定量评估指标对于GAN的发展和更好模型的设计至关重要。
+
+参考：
+
+https://mp.weixin.qq.com/s/EPwsQ_005CYNlCK_82SYWQ
+
+六种GAN评估指标的综合评估实验，迈向定量评估GAN的重要一步
+
 ## 参考
 
 https://mp.weixin.qq.com/s/E28lA-fcAQ6Sp6Qv64H3TQ

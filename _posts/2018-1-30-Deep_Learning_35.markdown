@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  深度学习（三十五）——OpenPose, 深度目标跟踪, Mask R-CNN, 手势识别, Spiking Neuron Networks, DNC
+title:  深度学习（三十五）——姿态/行为检测, 深度目标跟踪, Mask R-CNN, 手势识别, Spiking Neuron Networks, DNC
 category: DL 
 ---
 
-# OpenPose
+# 姿态/行为检测
+
+## OpenPose
 
 OpenPose是一个实时多人关键点检测的库，基于OpenCV和Caffe编写。它是CMU的Yaser Sheikh小组的作品。
 
@@ -36,7 +38,7 @@ https://mp.weixin.qq.com/s/-EU4jTElNll9MQomjuqFXA
 
 姿态估计相比Mask-RCNN提高8.2%，上海交大卢策吾团队开源AlphaPose
 
-# DensePose
+## DensePose
 
 与OpenPose类似的还有Facebook提出的DensePose。
 
@@ -67,6 +69,44 @@ https://mp.weixin.qq.com/s/mGcKpu3BXlAGO-t2FUCxAg
 https://mp.weixin.qq.com/s/gwRD3SzTof349V8W0_lRfg
 
 实时评估世界杯球员的正确姿势：FAIR开源DensePose
+
+## 参考
+
+https://mp.weixin.qq.com/s/6pNZ8Crs4Lel2C0TlFAc4Q
+
+真能“穿墙识人”，MIT人体姿态估计系统创历史最高精度！
+
+https://mp.weixin.qq.com/s/B0G-OLKXL7WZQgwOotxh2g
+
+CVPR大规模行为识别竞赛连续两年夺冠，上交大详细技术分享
+
+https://mp.weixin.qq.com/s/X-0txgjl129MLv6Dnv_t8g
+
+剑桥大学等研发“暴力行为”检测系统，用无人机精准识别人群暴力
+
+https://mp.weixin.qq.com/s/-kXWmaIfw67rvb8IRi5mCQ
+
+视频行为理解新边界
+
+https://mp.weixin.qq.com/s/Ns8oD_HBpFoumMMDbMq8-g
+
+DeepMind视频行为分类竞赛，百度IDL获第一
+
+https://mp.weixin.qq.com/s/4baaoCCdGX4iTw2MO_Y9rA
+
+熊元骏：人类行为理解研究进展
+
+https://mp.weixin.qq.com/s/pTlELRhUL9Zg50HXDWjbqw
+
+基于双流递归神经网络的人体骨架行为识别！
+
+https://mp.weixin.qq.com/s/pnCdKcdRCxhFEcXyWb9xlQ
+
+深度学习助力实现智能行为分析和事件识别
+
+https://mp.weixin.qq.com/s/uxawHWsVXMNOTLNthAL0vg
+
+时空图卷积网络：港中文提出基于动态骨骼的行为识别新方案
 
 # 深度目标跟踪
 

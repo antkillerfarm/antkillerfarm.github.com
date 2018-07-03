@@ -393,3 +393,11 @@ https://mp.weixin.qq.com/s/VCeEz5QhGqQ5TF0lkCk40A
 
 COLING 2018 最佳论文解读：序列标注经典模型复现
 
+https://mp.weixin.qq.com/s/QUbZZokROzxUwy2kZZ7jeA
+
+Hybrid semi-Markov CRF for Neural Sequence Labeling
+
+https://mp.weixin.qq.com/s/wHweI0_LYHaW7K8jEAY74g
+
+文综提分哪家强？上海交大找AI
+

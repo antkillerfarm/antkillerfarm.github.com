@@ -206,7 +206,15 @@ http://blog.csdn.net/tangwei2014/article/details/55077172
 
 https://mp.weixin.qq.com/s/oumf8l28ijYLxc9fge0FMQ
 
-嵌入式深度学习之神经网络二值化
+嵌入式深度学习之神经网络二值化（1）
+
+https://mp.weixin.qq.com/s/tbRj5Wd69n9gvSzW4oKStg
+
+嵌入式深度学习之神经网络二值化（2）
+
+https://mp.weixin.qq.com/s/RsZCTqCKwpnjATUFC8da7g
+
+嵌入式深度学习之神经网络二值化（3）
 
 https://mp.weixin.qq.com/s/tbRj5Wd69n9gvSzW4oKStg
 
@@ -260,10 +268,6 @@ https://mp.weixin.qq.com/s/WMakTEN68KPi7X9kMQetiw
 
 OpenAI:3段视频演示无人驾驶目标检测强大的对抗性样本！
 
-https://mp.weixin.qq.com/s/-kXWmaIfw67rvb8IRi5mCQ
-
-视频行为理解新边界
-
 https://mp.weixin.qq.com/s/j5YPHYEPioLiEIDc6lK3kA
 
 在线视频衣物精确检索技术，开启刷剧败明星同款时代
@@ -271,10 +275,6 @@ https://mp.weixin.qq.com/s/j5YPHYEPioLiEIDc6lK3kA
 https://mp.weixin.qq.com/s/CXKuSMi0Vd43BGDf5BgoqA
 
 弱监督视频物体识别新方法：香港科技大学联合CMU提出TD-Graph LSTM
-
-https://mp.weixin.qq.com/s/Ns8oD_HBpFoumMMDbMq8-g
-
-DeepMind视频行为分类竞赛，百度IDL获第一
 
 https://mp.weixin.qq.com/s/nZVIVJ9z0AWA8VFouNpafg
 

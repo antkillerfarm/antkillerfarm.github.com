@@ -89,7 +89,7 @@ add-self-loops --self-loop-scale=0.1 \
     --reorder=true $model < $dir/HCLGa.fst > $dir/HCLG.fst
 {% endhighlight %}
 
-## 
+## 解码
 
 # 对齐工具
 
@@ -126,6 +126,16 @@ kaldi的DL实现，**不仅具有inference的能力，也具有train的能力**�
 kaldi中cnn的例程较少，而且其最新的cnn实现单元TimeHeightConvolutionComponent与机器视觉那边的cnn实现有着很大的区别, 如果按照机器视觉中的cnn实现去做语音识别，那么训练的计算复杂度太高；kaldi最初的cnn实现单元ConvolutionComponent的设计思路和机器视觉cnn实现的思路是一致的，但是由于计算复杂度太高，现在已经打算废弃。
 
 值得注意的是，除了TensorFlow提供的Speech Commands Datasets之外，其他的数据集基本都是以一句话作为训练数据的最小单元。由于训练数据存在着语音和文字之间的帧对齐问题，因此即便是DL方案，通常也需要利用由传统方法生成的粗糙模型，进行相关的对齐操作。
+
+# Chain
+
+Chain是nnet3的改进版本，也是目前Daniel Povey主推的模型。
+
+参考：
+
+http://www.cnblogs.com/JarvanWang/p/7499589.html
+
+Kaldi中的Chain模型
 
 # online
 

@@ -118,10 +118,6 @@ https://mp.weixin.qq.com/s/SPdkJTYU80bioNdZrBj4cw
 
 卷积优化-Cpython(Cuda)施工和分析
 
-https://mp.weixin.qq.com/s/pnCdKcdRCxhFEcXyWb9xlQ
-
-深度学习助力实现智能行为分析和事件识别
-
 https://mp.weixin.qq.com/s/M120ZRfLoT9abWZOmgj-TQ
 
 面部识别技术能用来识别鲸鱼？
@@ -181,10 +177,6 @@ DeepMind提出可微分逻辑编程，结合深度学习与符号程序优点
 https://zhuanlan.zhihu.com/p/33445638
 
 传统不死：在CNN中学习和构建空间传播模块
-
-https://mp.weixin.qq.com/s/uxawHWsVXMNOTLNthAL0vg
-
-时空图卷积网络：港中文提出基于动态骨骼的行为识别新方案
 
 https://mp.weixin.qq.com/s/4LjWHFO0wTP7kqnKf2mdWw
 

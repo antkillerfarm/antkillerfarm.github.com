@@ -50,6 +50,12 @@ https://www.jianshu.com/p/35a3bf866c46
 
 3.如果$$P_1,P_2$$的结论基本相反的话，则说明发生了欠拟合现象。而过拟合则并没有这么夸张的效果。
 
+参考：
+
+https://mp.weixin.qq.com/s/zv8Mtch5Klm-qSgyBxI9QQ
+
+六步走，时刻小心过拟合
+
 # Neural Network Zoo
 
 在继续后续讲解之前，我们首先给出常见神经网络的结构图：

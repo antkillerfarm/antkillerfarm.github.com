@@ -294,6 +294,10 @@ https://mp.weixin.qq.com/s/gpfMOW7gzVa2HhYOlDy2nQ
 
 从Intel和ARM争霸战，看看做芯片有多难
 
+https://zhuanlan.zhihu.com/p/38847308
+
+为什么硬盘转速是5400或者7200这么奇怪的数字？7200转的硬盘一定比5400快吗？
+
 # 图像渲染
 
 http://blog.csdn.net/pizi0475/article/details/6650851

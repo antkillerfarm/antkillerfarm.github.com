@@ -290,17 +290,9 @@ https://mp.weixin.qq.com/s/Mi62oqtXUT5If_Dj4KmVYA
 
 计算机视觉如何知道你想看什么？个人显著性检测
 
-https://mp.weixin.qq.com/s/X-0txgjl129MLv6Dnv_t8g
-
-剑桥大学等研发“暴力行为”检测系统，用无人机精准识别人群暴力
-
 https://mp.weixin.qq.com/s/bKpQPuUlnuYo0SZdZ9TPVQ
 
 可微编程：打开深度学习的黑盒子
-
-https://mp.weixin.qq.com/s/6pNZ8Crs4Lel2C0TlFAc4Q
-
-真能“穿墙识人”，MIT人体姿态估计系统创历史最高精度！
 
 https://mp.weixin.qq.com/s/GHjmiB6F2W3Zo8gVllTyyQ
 
