@@ -284,6 +284,10 @@ https://mp.weixin.qq.com/s/VIEsfc4qKAGsi-O9LD4mng
 
 深度学习在OCR中的应用
 
+https://zhuanlan.zhihu.com/p/34757009
+
+场景文字检测—CTPN原理与实现
+
 # CRNN
 
 论文：

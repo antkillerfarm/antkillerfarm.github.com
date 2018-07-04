@@ -357,3 +357,8 @@ http://kexue.fm/usr/uploads/2016/06/1002322295.pdf
 https://mp.weixin.qq.com/s/W2DqCjmF3oyPLKeETAO5XA
 
 CNN实现“读脑术”，成功解码人脑视觉活动，准确率超50%
+
+https://mp.weixin.qq.com/s/W92qf_xq2QbtN3PLobrvHQ
+
+如何让机器向“时尚达人”学习？
+

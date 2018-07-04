@@ -90,6 +90,12 @@ ROI Pooling有两个输入：feature map和ROI区域。Pooling方式一般为Max
 
 由于两个Task的信息互为补充，使得分类预测任务的softmax准确率大为提升，SVM也就没有存在的必要了。
 
+上图中提到的smooth L1 Loss可参见：
+
+http://pages.cs.wisc.edu/~gfung/GeneralL1/L1_approx_bounds.pdf
+
+Fast Optimization Methods for L1 Regularization: A Comparative Study and Two New Approaches Suplemental Material
+
 ## 全连接层提速
 
 Fast R-CNN的论文中还提到了全连接层提速的概念。这个概念本身和Fast R-CNN倒没有多大关系。因此，完全可以将之推广到其他场合。
@@ -178,7 +184,13 @@ anchor的后处理如上图所示。
 
 $$L(\{p_i\},\{t_i\})=\frac{1}{N_{cls}}\sum_iL_{cls}(p_i,p_i^*)+\lambda \frac{1}{N_{reg}}\sum_ip_i^*L_{reg}(t_i,t_i^*)$$
 
-该公式的含义和计算都比较复杂，这里不再赘述。
+该公式的含义和计算都比较复杂，这里不做过多解释，而仅对检测框的坐标位置（$$t_i$$）的计算步骤做一个简要的概述。
+
+1.生成anchor坐标。这里由于是按照固定的规则生成的，因此可以预先生成。它的值与图片内容无关，而仅与图片大小相关。
+
+2.bounding box修正。如果把anchor坐标看作A，那么bounding box修正就是$$\Delta A$$。
+
+3.im_info修正。对于一副任意大小PxQ图像，传入Faster RCNN前首先reshape到固定MxN，im_info=[W, H, scale_W, scale_H]则保存了此次缩放的所有信息。
 
 上图中，二分类softmax前后各添加了一个reshape layer，是什么原因呢？
 
@@ -237,6 +249,10 @@ https://mp.weixin.qq.com/s/VKQufVUQ3TP5m7_2vOxnEQ
 http://blog.csdn.net/zy1034092330/article/details/62044941
 
 Faster RCNN详解
+
+https://zhuanlan.zhihu.com/p/31426458
+
+一文读懂Faster RCNN
 
 https://mp.weixin.qq.com/s/IZ9Q3fDJVawiEbD6x9WRLg
 

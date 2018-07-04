@@ -250,6 +250,10 @@ https://mp.weixin.qq.com/s/I1qdzgf-OtOchK3ox4W3Dg
 
 来自Google大脑团队的19个数据可视化项目
 
+https://mp.weixin.qq.com/s/d8-e1y3ZvlxNWRbXohfhDQ
+
+从人脸识别到情感分析，50个机器学习实用API
+
 ## 教程
 
 https://theneuralperspective.com/tag/tutorials/

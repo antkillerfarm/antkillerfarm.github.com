@@ -256,6 +256,10 @@ https://mp.weixin.qq.com/s/RuVtfoGDdbWSBBfN-A0OOw
 
 使用PaddleFluid和TensorFlow实现图像分类网络SE_ResNeXt
 
+https://mp.weixin.qq.com/s/JULU6bO7sPUbEJZ9tUDqiQ
+
+使用PaddleFluid和TensorFlow训练RNN语言模型
+
 # MXNet
 
 https://mp.weixin.qq.com/s/lVja7woyFWpmr9sH0CitAA
