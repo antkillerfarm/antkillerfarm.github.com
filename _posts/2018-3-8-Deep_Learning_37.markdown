@@ -350,3 +350,7 @@ https://mp.weixin.qq.com/s/UONtTJJgDawRPWtatAVKkg
 
 如何利用高效的搜索算法来搜索网络的拓扑结构
 
+https://mp.weixin.qq.com/s/lt9lZbulkW0C8A_xi6hodQ
+
+浅析图卷积神经网络
+

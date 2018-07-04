@@ -220,6 +220,10 @@ https://mp.weixin.qq.com/s/-V6hlZAKp1vuARSibZDBQQ
 
 深度学习高效计算与处理器设计
 
+https://mp.weixin.qq.com/s/NJzGR-tY_WWeccbdshHckA
+
+基于交错组卷积的高效深度神经网络
+
 # OCR
 
 光学字符识别（Optical Character Recognition, OCR），是指对文本资料的图像文件进行分析识别处理，获取文字及版面信息的过程。

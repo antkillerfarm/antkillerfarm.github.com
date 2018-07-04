@@ -374,6 +374,10 @@ https://mp.weixin.qq.com/s/3Ce8uMf_Kyt-hEZUYfdh3g
 
 特征工程之特征选择
 
+https://mp.weixin.qq.com/s/tOcyfK68jW7Tr-PGCvdXMA
+
+特征工程最后一个要点 : 特征预处理
+
 https://mp.weixin.qq.com/s/qfsakjq9D06DeIe6yx8aJw
 
 供应链、物流、采购到底有什么区别？
@@ -401,4 +405,8 @@ https://mp.weixin.qq.com/s/OBHMQnNwA71mth1qx9Yy8g
 https://mp.weixin.qq.com/s/QuHwvxRjpmtbuvT0Dg-ZCg
 
 用滴滴出行数据透视中国城市空间发展
+
+https://mp.weixin.qq.com/s/r9_adYcYBPY9KPaSIR1CdQ
+
+探索直方图
 

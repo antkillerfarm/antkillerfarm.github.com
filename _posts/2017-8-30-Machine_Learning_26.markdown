@@ -160,6 +160,10 @@ https://mp.weixin.qq.com/s/qhRxZTq0IdMonAeNj25K1Q
 
 马尔科夫决策过程之Markov Processes
 
+https://mp.weixin.qq.com/s/s-6utyFffAdHOkjadzXYwg
+
+强化学习：Policy-based方法
+
 # K-摇臂赌博机
 
 ![](/images/article/Multi-Armed_Bandit.jpg)

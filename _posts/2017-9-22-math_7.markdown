@@ -69,7 +69,7 @@ $$f(b)\ge f(a)+\nabla f(a)^{\top}(b-a)+\frac{\lambda}{2}\|b-a\|_2^2$$
 ## Weierstrass Function
 
 >Karl Theodor Wilhelm Weierstrass，1815～1897，德国数学家，被誉为“现代分析之父”。   
->青年时代，Weierstrass被父亲送到波恩大学学习法律和商业，然而他对此根本不感兴趣，精力都花到数学上了，这直接导致离开大学时，没有拿到学位。   
+>青年时代，Weierstrass被父亲送到波恩大学学习法律和商业，然而他对此根本不感兴趣，精力都花到数学上了，这直接导致他离开大学时，没有拿到学位。   
 >此后经过努力，他获得了一份中学数学教师的职位。他30～40岁的时光，就是在两所不知名的中学度过的。   
 >所幸，他的努力没有白费。1854年，他获得格尼斯堡大学荣誉博士学位。此后先后任教于柏林工业大学和柏林洪堡大学。   
 >他的博士学生知名的有：集合论创始人Georg Cantor，世界历史上第一位数学女博士Sofia Kovalevskaya和Hermann Schwarz（没错就是提出Cauchy–Schwarz inequality的那位）。
