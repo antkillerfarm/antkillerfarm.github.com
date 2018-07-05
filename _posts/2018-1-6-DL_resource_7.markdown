@@ -82,10 +82,6 @@ https://mp.weixin.qq.com/s/x5rTpvvCfABWWkjpgnJ5BA
 
 谷歌大脑提出Adversarial Spheres：从简单流形探讨对抗性样本的来源
 
-https://mp.weixin.qq.com/s/GqPfvWwH1T0XFwiZ86cW8A
-
-SamplePairing：针对图像处理领域的高效数据增强方式
-
 https://mp.weixin.qq.com/s/a4A5WCFalH1en0IEM3mu2Q
 
 双流束网络：北理工提出深度立体匹配新方法
@@ -361,4 +357,20 @@ CNN实现“读脑术”，成功解码人脑视觉活动，准确率超50%
 https://mp.weixin.qq.com/s/W92qf_xq2QbtN3PLobrvHQ
 
 如何让机器向“时尚达人”学习？
+
+https://mp.weixin.qq.com/s/bKpQPuUlnuYo0SZdZ9TPVQ
+
+可微编程：打开深度学习的黑盒子
+
+https://mp.weixin.qq.com/s/GHjmiB6F2W3Zo8gVllTyyQ
+
+重现“世界模型”实验，无监督方式快速训练
+
+https://mp.weixin.qq.com/s/v0IOMRChFFLX9hOgwxlsaQ
+
+反“换脸”魔高一丈：新方法识别假视频正确率达99%
+
+https://mp.weixin.qq.com/s/3_VtdZNKBwNtMEMf2xc7qw
+
+CVPR智慧城市挑战赛：无监督交通异常检测，冠军团队技术分享
 

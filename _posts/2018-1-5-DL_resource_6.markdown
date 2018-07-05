@@ -366,3 +366,18 @@ https://mp.weixin.qq.com/s/Ng3tyXqiO499dhNDX5561g
 
 扔掉代码表！用RNN“破解”摩斯电码
 
+https://mp.weixin.qq.com/s/1wqguIqDS4FNsS67Yj77Qw
+
+牛津大学&Emotech首次严谨评估语义分割模型对对抗攻击的鲁棒性
+
+https://mp.weixin.qq.com/s/v8I8kBnjcctGjCv7nAscrg
+
+为打造无人仓，菜鸟自研了一套柔性自动化技术
+
+https://mp.weixin.qq.com/s/Ja3uc06ZndbM7b6PitNdQQ
+
+瑟瑟发抖……神经网络可能在欺骗你！
+
+https://mp.weixin.qq.com/s/Mi62oqtXUT5If_Dj4KmVYA
+
+计算机视觉如何知道你想看什么？个人显著性检测

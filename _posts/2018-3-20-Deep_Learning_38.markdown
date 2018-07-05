@@ -192,7 +192,15 @@ https://mp.weixin.qq.com/s/2SOHQElaYbplse3QqG9tYw
 
 强化学习介绍
 
+https://mp.weixin.qq.com/s/KZHidOi5KYgg393R_JspBA
+
+DeepMind都拿不下的游戏，刚刚被OpenAI玩出历史最高分
+
 # Multi-agent
+
+https://zhuanlan.zhihu.com/p/39037444
+
+多智能体强化学习笔记
 
 https://mp.weixin.qq.com/s/bQx-ydEAfijgK1Ii5ilPFQ
 
@@ -393,4 +401,8 @@ https://mp.weixin.qq.com/s/cTlXMxcpzc7_5NVsTm1jcA
 https://mp.weixin.qq.com/s/X8osUSPROJqGVTvw0gieDQ
 
 T2T：利用StackGAN和ProGAN从文本生成人脸
+
+https://mp.weixin.qq.com/s/moDVf7h8Q2S1SL0IuxXQtQ
+
+算法音乐往事：二次元女神“初音未来”诞生记
 

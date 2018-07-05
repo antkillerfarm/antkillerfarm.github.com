@@ -266,39 +266,7 @@ https://mp.weixin.qq.com/s/CGe1MAKRiLtaFFyVOkauhw
 
 16岁高中生夺冠Kaggle地标检索挑战赛！
 
-https://mp.weixin.qq.com/s/cQtXvOjSXFc4YKn7ANBc_w
-
-谷歌大脑提出自动数据增强方法AutoAugment：可迁移至不同数据集
-
 https://mp.weixin.qq.com/s/YJFA9WbeeHbFhp7T2vhMog
 
 超酷的神经网络合成动物运动动画，解救动画师！
-
-https://mp.weixin.qq.com/s/1wqguIqDS4FNsS67Yj77Qw
-
-牛津大学&Emotech首次严谨评估语义分割模型对对抗攻击的鲁棒性
-
-https://mp.weixin.qq.com/s/v8I8kBnjcctGjCv7nAscrg
-
-为打造无人仓，菜鸟自研了一套柔性自动化技术
-
-https://mp.weixin.qq.com/s/Ja3uc06ZndbM7b6PitNdQQ
-
-瑟瑟发抖……神经网络可能在欺骗你！
-
-https://mp.weixin.qq.com/s/Mi62oqtXUT5If_Dj4KmVYA
-
-计算机视觉如何知道你想看什么？个人显著性检测
-
-https://mp.weixin.qq.com/s/bKpQPuUlnuYo0SZdZ9TPVQ
-
-可微编程：打开深度学习的黑盒子
-
-https://mp.weixin.qq.com/s/GHjmiB6F2W3Zo8gVllTyyQ
-
-重现“世界模型”实验，无监督方式快速训练
-
-https://mp.weixin.qq.com/s/v0IOMRChFFLX9hOgwxlsaQ
-
-反“换脸”魔高一丈：新方法识别假视频正确率达99%
 

@@ -188,10 +188,6 @@ https://mp.weixin.qq.com/s/9QrahPP1gDM3eMNgx91spA
 
 深度学习也能实现“鸡尾酒会效应”：谷歌提出新型音频-视觉语音分离模型
 
-https://mp.weixin.qq.com/s/p1mAfM8LBLMQILeNOpbf6Q
-
-改进语音识别性能的数据增强技巧
-
 https://wenku.baidu.com/view/942891aba98271fe910ef9e3.html
 
 基于深度学习的语音识别

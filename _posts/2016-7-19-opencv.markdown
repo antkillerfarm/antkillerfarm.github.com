@@ -474,3 +474,7 @@ https://blog.csdn.net/weixin_38285131/article/details/80457068
 
 光场相机重聚焦原理介绍及代码解析
 
+https://mp.weixin.qq.com/s/eyIeLaBZ0f_EsxglsUuH8A
+
+深度学习自动构图研究报告
+

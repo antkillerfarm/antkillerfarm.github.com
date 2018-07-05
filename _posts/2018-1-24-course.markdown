@@ -356,3 +356,7 @@ https://mp.weixin.qq.com/s/z2bdlhaala2ko55MYiyXNw
 
 CNN也能用于NLP任务，一文简述文本分类任务的7个模型
 
+https://mp.weixin.qq.com/s/foknrQWnBxc4b0bpkFKSdQ
+
+上海科技大学ACL2018高分论文：混合高斯隐向量文法
+
