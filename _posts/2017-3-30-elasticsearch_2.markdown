@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Elasticsearch（二）, scrapy, Flume & Kafka, 垃圾筐
+title:  Elasticsearch（二）, scrapy, Flume & Kafka, Flutter, 垃圾筐
 category: AI 
 ---
 
@@ -277,6 +277,24 @@ https://mp.weixin.qq.com/s/l0AL89M0xPbWMFj6U7yYZw
 
 消息中间件选型分析：从Kafka与RabbitMQ的对比看全局
 
+# Flutter
+
+Flutter是Google用以帮助开发者在Ios和Android两个平台开发高质量原生应用的全新移动UI框架。Beta1版本于2018年2月27日在2018世界移动大会上公布。
+
+官网：
+
+https://flutter.io/
+
+参考：
+
+https://mp.weixin.qq.com/s/pU75twMDry4VUYtTHeV_IQ
+
+一文深入了解Flutter界面开发
+
+https://mp.weixin.qq.com/s/yPvaB7sLuJoGfsjj7x7wcg
+
+深入理解Flutter的编译原理与优化
+
 # 垃圾筐
 
 ## 压缩感知
@@ -443,8 +461,3 @@ http://www.open-open.com/lib/view/open1424916275249.html
 
 Log Structured Merge Trees(LSM)原理
 
-## Bélády's Algorithm
-
-Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。
-
->László Bélády，1928年生，匈牙利计算机科学家。Technical University of Budapest本硕。IBM研究员。

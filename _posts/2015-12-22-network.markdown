@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  网络杂谈, Docker
+title:  网络杂谈, Docker, Actor model
 category: technology 
 ---
 
@@ -356,3 +356,18 @@ Docker容器介绍
 https://mp.weixin.qq.com/s/KBNFQA_4KG0LLadzRtvPPw
 
 如何用两个小时入门Docker？
+
+# Actor model
+
+https://elbarco.cn/2017/01/21/introduction-to-actor-model/
+
+并发编程模型之Actor模型
+
+https://www.jianshu.com/p/449850aa8e82
+
+10分钟了解Actor模型
+
+https://www.cnblogs.com/MOBIN/p/7236893.html
+
+Actor模型原理
+

@@ -437,3 +437,8 @@ https://mp.weixin.qq.com/s/whCTTVxf-zsdjJjx5X01Rg
 https://mp.weixin.qq.com/s/qGV9vxZHRreYVxj2zGjoIg
 
 合成孔径雷达自动目标识别
+
+https://mp.weixin.qq.com/s/CJDh0jIUMj8LsihGSBV8kw
+
+天线增益与有效辐射功率的理解！
+

@@ -360,3 +360,7 @@ https://mp.weixin.qq.com/s/foknrQWnBxc4b0bpkFKSdQ
 
 上海科技大学ACL2018高分论文：混合高斯隐向量文法
 
+https://zhuanlan.zhihu.com/p/37621168
+
+微博关键词抽取：借力评论信息
+

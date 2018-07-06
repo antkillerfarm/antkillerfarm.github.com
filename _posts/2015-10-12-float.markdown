@@ -270,3 +270,15 @@ https://mp.weixin.qq.com/s/YJFA9WbeeHbFhp7T2vhMog
 
 超酷的神经网络合成动物运动动画，解救动画师！
 
+https://mp.weixin.qq.com/s/WHJjOdPiZzY83YK5LQontQ
+
+高新波：异质图像合成与识别
+
+https://mp.weixin.qq.com/s/dhE-psddToT18oLV9vVNPQ
+
+如何保证算法公正性？ICML 2018两篇获奖论文解读
+
+https://mp.weixin.qq.com/s/64sT64srUywV27zQMKNOTg
+
+神经网络碰上高斯过程，DeepMind连发两篇论文开启深度学习新方向
+

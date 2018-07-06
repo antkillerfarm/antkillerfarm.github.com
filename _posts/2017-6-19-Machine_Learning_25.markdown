@@ -32,6 +32,10 @@ https://mp.weixin.qq.com/s/lmJk-iIzxxPmnZa6D8i_nw
 
 一文简述如何使用嵌套交叉验证方法处理时序数据
 
+https://zhuanlan.zhihu.com/p/39105270
+
+时间序列的表示与信息提取
+
 # Tri-training
 
 ## 半监督学习

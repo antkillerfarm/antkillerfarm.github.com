@@ -294,6 +294,10 @@ https://mp.weixin.qq.com/s/PD13jQ_00QJ-VOUM8Zm21g
 
 深度学习图像标注工具汇总
 
+https://mp.weixin.qq.com/s/KxeIeVzyhfFCRfqxF4mduA
+
+当深度学习遇见大数据：一文概览BDL学习框架
+
 ## 遗传算法 & 进化算法
 
 http://blog.csdn.net/u010945683/article/details/40987331

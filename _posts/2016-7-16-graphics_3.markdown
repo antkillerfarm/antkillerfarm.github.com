@@ -212,6 +212,8 @@ Tight Frame有个重要特性：
 
 3.http://blog.csdn.net/xiaowei_cqu/article/details/24745945
 
+Gabor滤波器
+
 4.《Face recognition using Ada-Boosted Gabor features》
 
 >作者：Peng Yang，Shiguang Shan，Wen Gao，Stan Z. Li，Dong Zhang，中科院计算所和微软亚洲研究院的几个小牛。
@@ -224,7 +226,11 @@ Tight Frame有个重要特性：
 
 基于OpenCV的Gabor变换及特征提取
 
-6.https://mp.weixin.qq.com/s/RS0Zw6iLFQBUlpOdkuoFbg
+https://mp.weixin.qq.com/s/RS0Zw6iLFQBUlpOdkuoFbg
 
 从傅立叶变换到Gabor滤波器
+
+https://mp.weixin.qq.com/s/UDJAYB79KaPB0pgnnCIPTw
+
+不确定性原理的前世今生
 
