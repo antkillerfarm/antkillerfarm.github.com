@@ -368,6 +368,10 @@ https://mp.weixin.qq.com/s/909FlTC_ROtlziJekcRJ9Q
 
 图形图像算法中必须要了解的设计模式(2)
 
+https://mp.weixin.qq.com/s/vgOkHsxKaFcgWDCBpY7kng
+
+如何用OpenCV、Python和深度学习实现面部识别？
+
 # GNU Octave
 
 GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。
@@ -481,4 +485,8 @@ https://blog.csdn.net/weixin_38285131/article/details/80457068
 https://mp.weixin.qq.com/s/eyIeLaBZ0f_EsxglsUuH8A
 
 深度学习自动构图研究报告
+
+https://mp.weixin.qq.com/s/k2JLF_aM3j68GjEByCZF-g
+
+模拟/数字增益对图像噪声的影响
 

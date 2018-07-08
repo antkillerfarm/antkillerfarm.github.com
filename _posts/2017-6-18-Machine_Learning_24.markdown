@@ -28,10 +28,6 @@ https://mp.weixin.qq.com/s/T4f4W0V6YNBbjWqWBF19mA
 
 目标函数的经典优化算法介绍
 
-https://mp.weixin.qq.com/s/fXlbB7KmiX0iIv6xwSxNIA
-
-梯度下降法的三种形式BGD、SGD以及MBGD
-
 https://mp.weixin.qq.com/s/R_0_E5Ieaj9KiWgg1prxeg
 
 为什么梯度的方向与等高线切线方向垂直？

@@ -432,6 +432,14 @@ https://mp.weixin.qq.com/s/9YXsJo_u2zVNqvABoGqfqg
 
 五种IO模型分析
 
+https://mp.weixin.qq.com/s/zDt92-5NVaAFZJRfEHCUvg
+
+什么是Native、Web App、Hybrid、React Native 和 Weex？
+
+https://mp.weixin.qq.com/s/pdOVONHbjfIJPW45nEw1fg
+
+前端本地文件操作与上传
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

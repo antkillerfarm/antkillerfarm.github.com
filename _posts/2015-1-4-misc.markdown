@@ -34,22 +34,6 @@ http://www.opda.com.cn/viewthread.php?tid=182217&page=1#pid3004888
 
 如果在开始利用向导生成代码时，没有选择armv5或gcce，而只选择了模拟器的情况下，在代码生成之后，再添加armv5或gcce的话，是不能自动生成sis文件的，可以在Project->Properties->Carbide c++->Build Configurations->SIS Builder中添加。
 
-# Sqlite
-
-《Inside Sqlite》是最好的参考书，目前已经有人把它翻译成中文，可以在CSDN上找到。
-
-《SQLite Optimization FAQ》另一篇很好的文章。
-
-http://web.utk.edu/~jplyon/sqlite/SQLite_optimization_FAQ.html
-
-关于编译和使用的问题，写的最好的是以下两篇：
-
-http://www.99inf.net/SoftwareDev/VC/39396.htm
-
-http://www.cnblogs.com/giszhang/archive/2008/10/09/1307509.html
-
-VC2005 + SQLite 3.6.3 编译、测试开发手记
-
 # Apache与CGI
 
 本来以为CGI编程会比较复杂，没想到从原理的角度，似乎比之前的JSP还要简单一些。这次主要是用C来编写CGI，使用的web服务器是Apache 2.0.55。网上看到了几篇同类的文章，但大多过于简略，有的甚至颇有错误，所以自己就重新写一篇吧。
@@ -175,6 +159,26 @@ sudo add-apt-repository ppa:yannubuntu/boot-repair
 sudo apt-get update
 sudo apt-get install -y boot-repair
 sudo boot-repair
+{% endhighlight %}
+
+7)
+
+最近Win10升级，把我的grub弄乱了，导致开机出现了grub rescue提示符。
+
+用`grub rescue> ls (hd0,msdos1)/`依次尝试每个分区，直到找到linux分区。
+
+{% highlight bash %}
+grub rescue> set root=hd0,msdos1
+grub rescue> set prefix=(hd0,msdos1)/root/grub
+grub rescue> insmod normal
+grub rescue> normal
+{% endhighlight %}
+
+这样就能进入linux系统了。进入之后：
+
+{% highlight bash %}
+sudo update-grub
+sudo grub-install /dev/sda
 {% endhighlight %}
 
 下面针对最近几天的安装实践，做一个总结性的概括：

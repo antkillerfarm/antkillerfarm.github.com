@@ -290,6 +290,10 @@ https://mp.weixin.qq.com/s/p_VjFwwDCu1i_ovUljaoVw
 
 阿里巴巴语音交互智能团队：基于线性网络的语音合成说话人自适应
 
+https://mp.weixin.qq.com/s/imotc0RfPsvA9h5-1nouMA
+
+端到端语音合成及其优化实践
+
 # CTC
 
 ## 概述

@@ -82,6 +82,10 @@ https://mp.weixin.qq.com/s/lGrTUYALmKOQkO70DZpbPQ
 
 ## 参考
 
+https://mp.weixin.qq.com/s/n1Ks8I3Ldgb-u-kVbGBZ5Q
+
+机器学习中的优化方法
+
 https://mp.weixin.qq.com/s/4XOI8Dq6fqe8rhtJjeyxeA
 
 超级收敛：使用超大学习率超快速训练残差网络

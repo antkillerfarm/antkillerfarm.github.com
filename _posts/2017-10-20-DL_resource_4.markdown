@@ -394,3 +394,6 @@ https://mp.weixin.qq.com/s/sn8fMAbJbeT6JUbCpBpN6A
 
 Jeff Dean与David Patterson：不思考体系结构的深度学习研究者不是好工程师
 
+https://mp.weixin.qq.com/s/6zLrWJ4nE0bHFlVe5dMxHw
+
+分布式深度学习新进展：让“分布式”和“深度学习”真正深度融合

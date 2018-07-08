@@ -274,6 +274,24 @@ UCF的系列Vision课程，其中的CAP 6412：Advanced Computer Vision是一门
 
 # 数据库
 
+## Sqlite
+
+《Inside Sqlite》是最好的参考书，目前已经有人把它翻译成中文，可以在CSDN上找到。
+
+《SQLite Optimization FAQ》另一篇很好的文章。
+
+http://web.utk.edu/~jplyon/sqlite/SQLite_optimization_FAQ.html
+
+关于编译和使用的问题，写的最好的是以下两篇：
+
+http://www.99inf.net/SoftwareDev/VC/39396.htm
+
+http://www.cnblogs.com/giszhang/archive/2008/10/09/1307509.html
+
+VC2005 + SQLite 3.6.3 编译、测试开发手记
+
+## 参考
+
 https://blog.csdn.net/zhengzhb/article/details/8590390
 
 SQL查找删除重复行
@@ -342,25 +360,32 @@ https://mp.weixin.qq.com/s/4s7lDKlQjV1mUoVv558Y7Q
 
 面向云数据库，超低延迟文件系统PolarFS诞生了
 
-# NLP参考资源
+# 机器人参考资源
 
-https://mp.weixin.qq.com/s/C7GkZk7UWk_2XsVfn1J_lg
+https://mp.weixin.qq.com/s/Ja6DxqadbFBIWUk44DjGqw
 
-ACL 2018使用知识蒸馏提高基于搜索的结构预测
+密集场景中自动驾驶车辆的仿真与导航
 
-https://mp.weixin.qq.com/s/SYUq1Qd-IOmVjgs7Kp4OAg
+https://mp.weixin.qq.com/s/mZbO-y4haBx-IodgEtdUBA
 
-如何打造智能问答引擎
+LSTM之父最新力作：手把手教你训练一个有世界观的AI赛车手
 
-https://mp.weixin.qq.com/s/z2bdlhaala2ko55MYiyXNw
+https://mp.weixin.qq.com/s/vFyifSgGLImUrTwcw9bPsg
 
-CNN也能用于NLP任务，一文简述文本分类任务的7个模型
+自动驾驶感知训练指南：不许你歧视车道线，那也是路面的一部分
 
-https://mp.weixin.qq.com/s/foknrQWnBxc4b0bpkFKSdQ
+https://mp.weixin.qq.com/s/aXck7MLpHojuIkvVP1iHKg
 
-上海科技大学ACL2018高分论文：混合高斯隐向量文法
+北航机器人研究所名誉所长王田苗：人工智能与机器人的发展趋势
 
-https://zhuanlan.zhihu.com/p/37621168
+https://mp.weixin.qq.com/s/V3PLx3kP9zOcR1CZZI8Yqw
 
-微博关键词抽取：借力评论信息
+速感科技CTO张一茗：视觉SLAM的技术现状和应用趋势
 
+https://mp.weixin.qq.com/s/k3RbUz9txd09PpiLUEHVfA
+
+无人驾驶汽车系统入门：深度前馈网络，深度学习的正则化，交通信号识别
+
+https://mp.weixin.qq.com/s/WWm1tkCXVJgdlVbsXCTYIg
+
+自动驾驶汽车硬件系统概述

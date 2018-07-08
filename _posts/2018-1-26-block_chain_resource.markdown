@@ -220,6 +220,10 @@ https://mp.weixin.qq.com/s/zyU0ANfBS_JrFLNylnErUw
 
 C# 200行代码实现区块链
 
+https://mp.weixin.qq.com/s/OUfDGYdgw6XKRgaUXmog1w
+
+区块链对供应链管理的五大意义
+
 # CPU
 
 https://zhuanlan.zhihu.com/p/29743431

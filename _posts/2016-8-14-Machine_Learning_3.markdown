@@ -4,6 +4,26 @@ title:  机器学习（三）——生成学习算法, 朴素贝叶斯方法
 category: ML 
 ---
 
+## 广义线性模型（续）
+
+最大似然估计对数函数：
+
+$$\ell(\theta)=\sum_{i=1}^m\log p(y^{(i)}\mid x^{(i)};\theta)=\sum_{i=1}^m\log\prod_{l=1}^k\left(\frac{\exp(\theta_{l}^Tx^{(i)})}{\sum_{j=1}^k\exp(\theta_j^Tx^{(i)})}\right)^{1\{y^{(i)}=l\}}$$
+
+参考：
+
+http://statmath.wu.ac.at/courses/heather_turner/
+
+INTRODUCTION TO GENERALIZED LINEAR MODELS
+
+https://mp.weixin.qq.com/s/jeloJDgfa3eFXUPduhesVA
+
+logistic函数和softmax函数
+
+https://mp.weixin.qq.com/s/iGJ7Xt4_QSZOC0fG0yJfhg
+
+从最大似然估计开始，你需要打下的机器学习基石
+
 ## 机器学习的优化问题
 
 优化理论和算法是机器学习用于处理问题的重要工具，但是机器学习有自己独特的看待问题的视角，并且其中也有很多和 Optimization 并不直接相关的部分，反过来Machine Learning也对Optimization产生影响。
@@ -198,20 +218,4 @@ $$\phi_j=p(y=j)=\frac{\sum_{i=1}^m1\{y^{(i)}=j\}+1}{m+k}$$
 https://mp.weixin.qq.com/s/_wuE3-7nWyz7VDWdDPJSeQ
 
 一文理解朴素贝叶斯分类的拉普拉斯平滑
-
-## 文本分类的事件模型
-
-文本分类的事件模型有两类：
-
-1.多值伯努利事件模型（multi-variate Bernoulli event model）。
-
-在这个模型中，我们首先随机选定了邮件的类型（垃圾或者普通邮件，也就是$$p(y)$$），然后翻阅词典，随机决定一个词是否要在邮件中出现，出现则$$x_i$$标示为1，否则标示为0。然后将出现的词，组成一封邮件。一个词是否出现的概率为$$p(x_i\mid y)$$，整封邮件的概率为$$p(y)\prod_{i=1}^np(x_i\mid y)$$。
-
-2.多项事件模型（multinomial event model）。
-
-令$$x_i$$表示邮件的第i个词在字典中的位置，那么$$x_i$$的取值范围为$${1,2,...\lvert V\rvert}$$，$$\lvert V\rvert$$表示字典中单词的数目。这样一封邮件可以表示成$$(x_1,x_2,\dots,x_n)$$，这里n为邮件包含的单词个数，显然每个邮件的n值一般是不同的。
-
-这相当于重复投掷$$\lvert V\rvert$$面的骰子，将观察值记录下来就形成了一封邮件。每个面的概率服从$$p(x_i\mid y)$$，而且每次试验条件独立。这样我们得到的邮件概率是$$p(y)\prod_{i=1}^np(x_i\mid y)$$。
-
-需要注意的是，上面两个事件模型的概率公式虽然一致，但含义却有很大差异，不要弄混了。
 

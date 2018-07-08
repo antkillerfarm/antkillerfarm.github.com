@@ -57,6 +57,10 @@ http://www.csdn.net/article/2015-06-05/2824880
 
 深入浅出LSTM神经网络
 
+https://blog.csdn.net/zhangxb35/article/details/70060295
+
+RNN, LSTM, GRU公式总结
+
 https://zhuanlan.zhihu.com/p/25821063
 
 循环神经网络——scan实现LSTM

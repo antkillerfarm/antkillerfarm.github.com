@@ -70,6 +70,10 @@ https://mp.weixin.qq.com/s/gwRD3SzTof349V8W0_lRfg
 
 实时评估世界杯球员的正确姿势：FAIR开源DensePose
 
+https://zhuanlan.zhihu.com/p/39219404
+
+Dense Pose
+
 ## 参考
 
 https://mp.weixin.qq.com/s/6pNZ8Crs4Lel2C0TlFAc4Q

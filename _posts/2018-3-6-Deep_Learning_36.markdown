@@ -256,6 +256,14 @@ https://mp.weixin.qq.com/s/QCGemlo8CYIz6imMde_cmg
 
 推荐系统中的机器学习算法与评估实战
 
+https://mp.weixin.qq.com/s/v8L0E6G-ShOiyvaymw8MYg
+
+一文搞懂DeepFM的理论与实践
+
+https://mp.weixin.qq.com/s/QaMjHRZ5fiN2zBJLIeGrSg
+
+阿里推出DeepInsight平台：可视化理解深度神经网络CTR预估模型
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

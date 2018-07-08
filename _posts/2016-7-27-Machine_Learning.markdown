@@ -217,9 +217,9 @@ $$\theta_j:=\theta_j+\alpha(y^{(i)}-h_{\theta}(x^{(i)}))x^{(i)}_j \tag{4}$$
 
 参考：
 
-https://mp.weixin.qq.com/s/fOFFyFo_YNDM57RFEdywQQ
+https://mp.weixin.qq.com/s/7sS-r6jIF4GAhZicBfFGDA
 
-梯度下降法的三种形式BGD、SGD以及MBGD
+通过代码原理教你搞懂SGD随机梯度下降、BGD、MBGD
 
 ## 正规方程组算法
 
@@ -265,16 +265,4 @@ $$L(x)=\sum_{j=0}^ky_jl_j(x),l_j(x)=\prod_{0\le m\le k\atop m\neq j}\frac{x-x_m}
 $$N(x)=\sum_{j=0}^ka_jn_j(x),n_j(x)=\prod_{i=0}^{j-1}(x-x_i),a_j=[y_0,\dots,y_j]$$
 
 此外还有分段插值法，即将整个定义域分为若干区间，在区间内部进行线性插值或多项式插值。
-
-## 欠拟合与过拟合
-
-![](/images/article/interpolation.png)
-
-对于上图所示的6个采样点，采用线性回归时（左图），拟合程度不佳。如果采用二次曲线（中图）的话，效果就要好得多了。但也不是越多越好，比如五次曲线（右图）的情况下，虽然曲线完美的经过了6个采样点，但却偏离了实际情况——假设横轴表示房屋面积，纵轴表示房屋售价。
-
-我们把左图的情况叫做欠拟合（Underfitting），右图的情况叫做过拟合（Overfitting）。
-
-这里换个角度看：如果我们把上述多项式回归中的$$x,x^2,\dots,x^n$$看作是线性回归时的特征集的话，那么多项式回归就可以转化成为线性回归。
-
-从中可以看出，欠拟合或过拟合实际上就是线性回归中的特征集选取问题。特征集选取不当，就会导致预测不准。
 

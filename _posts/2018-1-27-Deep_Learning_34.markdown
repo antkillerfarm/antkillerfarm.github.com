@@ -78,6 +78,10 @@ https://102.alibaba.com/downloadFile.do?file=1517812754285/reinforcement_learnin
 
 《强化学习在阿里的技术演进与业务创新》，这是阿里出品的RL实战类书籍。
 
+https://mp.weixin.qq.com/s/RbUcEOctRm8kX6_Ar4J0CA
+
+446页简易Python强化学习教程书籍
+
 ## 论文
 
 《A Brief Survey of Deep Reinforcement Learning》

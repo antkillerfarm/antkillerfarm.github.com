@@ -394,3 +394,30 @@ https://mp.weixin.qq.com/s/OwP16MNTpFTLkpi9wnda-Q
 
 挑战深度学习与自然语言处理的极限！
 
+https://mp.weixin.qq.com/s/C7GkZk7UWk_2XsVfn1J_lg
+
+ACL 2018使用知识蒸馏提高基于搜索的结构预测
+
+https://mp.weixin.qq.com/s/SYUq1Qd-IOmVjgs7Kp4OAg
+
+如何打造智能问答引擎
+
+https://mp.weixin.qq.com/s/z2bdlhaala2ko55MYiyXNw
+
+CNN也能用于NLP任务，一文简述文本分类任务的7个模型
+
+https://mp.weixin.qq.com/s/foknrQWnBxc4b0bpkFKSdQ
+
+上海科技大学ACL2018高分论文：混合高斯隐向量文法
+
+https://zhuanlan.zhihu.com/p/37621168
+
+微博关键词抽取：借力评论信息
+
+https://blog.csdn.net/zhangxb35/article/details/78626799
+
+Text Summarization综述
+
+https://mp.weixin.qq.com/s/Mzycy0chQUNWjJYdpERBOw
+
+一文详解维基百科的开放性问答系统

@@ -6,6 +6,18 @@ category: ML
 
 # 线性回归（续）
 
+## 欠拟合与过拟合
+
+![](/images/article/interpolation.png)
+
+对于上图所示的6个采样点，采用线性回归时（左图），拟合程度不佳。如果采用二次曲线（中图）的话，效果就要好得多了。但也不是越多越好，比如五次曲线（右图）的情况下，虽然曲线完美的经过了6个采样点，但却偏离了实际情况——假设横轴表示房屋面积，纵轴表示房屋售价。
+
+我们把左图的情况叫做欠拟合（Underfitting），右图的情况叫做过拟合（Overfitting）。
+
+这里换个角度看：如果我们把上述多项式回归中的$$x,x^2,\dots,x^n$$看作是线性回归时的特征集的话，那么多项式回归就可以转化成为线性回归。
+
+从中可以看出，欠拟合或过拟合实际上就是线性回归中的特征集选取问题。特征集选取不当，就会导致预测不准。
+
 ## 局部加权线性回归
 
 局部加权线性回归（LWR，locally weighted linear regression）算法是一种对特征集选取不敏感的算法。它将公式2中的代价函数修改为：
@@ -231,23 +243,4 @@ $$\phi_i=\frac{e^{\eta_i}}{\sum_{j=1}^ke^{\eta_j}}=\frac{e^{\theta_i^Tx}}{\sum_{
 
 $$h_\theta(x)=E[T(y)\mid x;\theta]=\begin{bmatrix} \phi_1 \\ \phi_2 \\ \vdots \\ \phi_{k-1} \end{bmatrix}
 =\begin{bmatrix} \frac{\exp(\theta_1^Tx)}{\sum_{j=1}^k\exp(\theta_j^Tx)} \\ \frac{\exp(\theta_2^Tx)}{\sum_{j=1}^k\exp(\theta_j^Tx)} \\ \vdots \\ \frac{\exp(\theta_{k-1}^Tx)}{\sum_{j=1}^k\exp(\theta_j^Tx)} \end{bmatrix}$$
-
-最大似然估计对数函数：
-
-$$\ell(\theta)=\sum_{i=1}^m\log p(y^{(i)}\mid x^{(i)};\theta)=\sum_{i=1}^m\log\prod_{l=1}^k\left(\frac{\exp(\theta_{l}^Tx^{(i)})}{\sum_{j=1}^k\exp(\theta_j^Tx^{(i)})}\right)^{1\{y^{(i)}=l\}}$$
-
-参考：
-
-http://statmath.wu.ac.at/courses/heather_turner/
-
-INTRODUCTION TO GENERALIZED LINEAR MODELS
-
-https://mp.weixin.qq.com/s/jeloJDgfa3eFXUPduhesVA
-
-logistic函数和softmax函数
-
-https://mp.weixin.qq.com/s/iGJ7Xt4_QSZOC0fG0yJfhg
-
-从最大似然估计开始，你需要打下的机器学习基石
-
 

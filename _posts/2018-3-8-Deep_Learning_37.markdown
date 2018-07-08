@@ -292,6 +292,10 @@ https://mp.weixin.qq.com/s/Ieha-lJ_KuEnpbJha_nxJw
 
 利用人脸图片准确识别年龄：上海大学研究者提出“深度回归森林”
 
+https://mp.weixin.qq.com/s/YlrWHDPIPzN4dQO2vo4DjA
+
+人脸颜值研究综述
+
 ## Graph NN
 
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
@@ -353,4 +357,5 @@ https://mp.weixin.qq.com/s/UONtTJJgDawRPWtatAVKkg
 https://mp.weixin.qq.com/s/lt9lZbulkW0C8A_xi6hodQ
 
 浅析图卷积神经网络
+
 

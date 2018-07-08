@@ -112,6 +112,24 @@ http://blog.csdn.net/lewif/article/details/78575840
 
 OpenDrive格式地图数据解析
 
+## ArUco
+
+ArUco是一个开源的微型的现实增强库，可用于视觉定位。
+
+官网：
+
+http://www.uco.es/investiga/grupos/ava/node/26
+
+参考：
+
+https://blog.csdn.net/lixujie666/article/details/80246909
+
+基于ArUco的视觉定位
+
+https://blog.csdn.net/Shawn_Zhangguang/article/details/78737686
+
+ArUco--一个微型现实增强库的介绍及视觉应用
+
 ## Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。
@@ -430,30 +448,3 @@ https://mp.weixin.qq.com/s/myWTfgvjiqli_Rxfr-FY0w
 
 360扫地机原理大揭秘，竟还有无人驾驶技术？——浅析家用机器人SLAM方案
 
-https://mp.weixin.qq.com/s/Ja6DxqadbFBIWUk44DjGqw
-
-密集场景中自动驾驶车辆的仿真与导航
-
-https://mp.weixin.qq.com/s/mZbO-y4haBx-IodgEtdUBA
-
-LSTM之父最新力作：手把手教你训练一个有世界观的AI赛车手
-
-https://mp.weixin.qq.com/s/vFyifSgGLImUrTwcw9bPsg
-
-自动驾驶感知训练指南：不许你歧视车道线，那也是路面的一部分
-
-https://mp.weixin.qq.com/s/aXck7MLpHojuIkvVP1iHKg
-
-北航机器人研究所名誉所长王田苗：人工智能与机器人的发展趋势
-
-https://mp.weixin.qq.com/s/V3PLx3kP9zOcR1CZZI8Yqw
-
-速感科技CTO张一茗：视觉SLAM的技术现状和应用趋势
-
-https://mp.weixin.qq.com/s/k3RbUz9txd09PpiLUEHVfA
-
-无人驾驶汽车系统入门：深度前馈网络，深度学习的正则化，交通信号识别
-
-https://mp.weixin.qq.com/s/WWm1tkCXVJgdlVbsXCTYIg
-
-自动驾驶汽车硬件系统概述

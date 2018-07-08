@@ -116,6 +116,10 @@ https://mp.weixin.qq.com/s/TD3RbdDidCrcL45oWpxNmw
 
 从结构到性能，一文概述XGBoost、Light GBM和CatBoost的同与不同
 
+https://mp.weixin.qq.com/s/_uscpKaRXZbwfMiWGoY0Uw
+
+多GPU加速学习，这是一份崭新的XGBoost库
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。

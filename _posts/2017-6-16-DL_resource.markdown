@@ -188,6 +188,10 @@ http://www.cnblogs.com/wangxiaocvpr
 
 一个DL的blog，专注于RL+CV。
 
+https://blog.csdn.net/u014365862/article/details/78422372
+
+一个ML+DL+CV的blog。
+
 https://www.matroid.com/blog/post/slides-and-videos-from-scaledml-2018
 
 Slides and Videos from ScaledML 2018
@@ -453,6 +457,10 @@ https://mp.weixin.qq.com/s/qpqqeSaRwQyBJlo3P25q6g
 https://mp.weixin.qq.com/s/AEyr7FNeIHprprs9k7HE9w
 
 这些神经网络调参细节，你都了解了吗
+
+https://mp.weixin.qq.com/s/miKs4tWu8Hh1yHvx-XZFwg
+
+构建深度神经网络，我有20条“不成熟”的小建议
 
 ## gcForest
 
