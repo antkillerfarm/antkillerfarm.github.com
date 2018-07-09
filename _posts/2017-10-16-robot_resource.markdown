@@ -24,7 +24,15 @@ MIT 6.S094: Deep Learning for Self-Driving Cars
 >个人主页：   
 >http://lexfridman.com/
 
-这个课程不仅提供了课件，还提供了DeepTraffic和DeepTesla两个小工具供学生验证自己的算法。这两个工具是用ConvNetJS编写的。
+这个课程不仅提供了课件，还提供了DeepTraffic和DeepTesla两个小工具供学生验证自己的算法。
+
+参考：
+
+https://mp.weixin.qq.com/s/cPyWAD-t-qLHfZJT1To2wQ
+
+自动驾驶“老司机”拼车技，MIT的这个比赛已经飙到了时速123公里
+
+这两个工具是用ConvNetJS编写的。
 
 ConvNetJS是Andrej Karpathy编写的基于JavaScript的DL框架。
 

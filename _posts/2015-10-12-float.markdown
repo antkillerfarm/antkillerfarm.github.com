@@ -282,3 +282,11 @@ https://mp.weixin.qq.com/s/64sT64srUywV27zQMKNOTg
 
 神经网络碰上高斯过程，DeepMind连发两篇论文开启深度学习新方向
 
+https://mp.weixin.qq.com/s/qnZhKhpCw2RjLMjcZBRx3Q
+
+密集对象网络：通过机器人操作学习密集的视觉对象描述符
+
+https://mp.weixin.qq.com/s/2QuwBVaFCQjl81z38u6L-g
+
+一文看尽三种针对人工智能系统的攻击技术及防御策略
+

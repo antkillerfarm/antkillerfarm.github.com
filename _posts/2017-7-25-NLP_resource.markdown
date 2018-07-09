@@ -421,3 +421,8 @@ Text Summarization综述
 https://mp.weixin.qq.com/s/Mzycy0chQUNWjJYdpERBOw
 
 一文详解维基百科的开放性问答系统
+
+https://mp.weixin.qq.com/s/znafd7_N_TrQBFWvxYM_hg
+
+基于强化学习的中文零指代消解模型
+
