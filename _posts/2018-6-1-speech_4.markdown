@@ -92,6 +92,10 @@ http://www.cnblogs.com/luxiaoxun/archive/2013/05/09/3069036.html
 
 Dynamic Time Warping动态时间规整算法
 
+https://zhuanlan.zhihu.com/p/39450321
+
+时间序列的搜索
+
 # Spectrogram
 
 DTW是一种时域方法，作为信号处理自然少不了频域方法。这里我们先来了解一个叫声谱图的东西。
