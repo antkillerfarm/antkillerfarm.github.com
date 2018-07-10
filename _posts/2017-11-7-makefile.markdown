@@ -286,3 +286,26 @@ https://mp.weixin.qq.com/s/3aAaM1DWsnCWEEbP7dOZEg
 
 伯克利等提出无监督特征学习新方法，代码已开源
 
+https://mp.weixin.qq.com/s/ZDPPWH570Vc6e1irwP1b1Q
+
+精细识别现实世界图像：李飞飞团队提出半监督适应性模型
+
+https://mp.weixin.qq.com/s/4dlWdPOCbYedu02aLAQ04Q
+
+MIT“创世纪”机器学习新系统，自动生成补丁修复Bug
+
+http://mp.weixin.qq.com/s/rS4xCsytYGqBLMUzlyA12A
+
+构建多层感知器神经网络对数字图片进行文本识别
+
+https://mp.weixin.qq.com/s/zv264-dqDQYRkYmjX_QZpQ
+
+郑宇解读地理传感器时间序列预测问题
+
+https://mp.weixin.qq.com/s/cr0BJLkyN2kW35-w1pebGQ
+
+学习在黑暗中看世界（Learning to See in the Dark）
+
+https://mp.weixin.qq.com/s/zWoQCKbZNz2td3cZxEsqKQ
+
+腾讯优图提出SRN-DeblurNet：高效高质量去除复杂图像模糊

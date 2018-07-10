@@ -196,6 +196,14 @@ https://mp.weixin.qq.com/s/KZHidOi5KYgg393R_JspBA
 
 DeepMind都拿不下的游戏，刚刚被OpenAI玩出历史最高分
 
+https://mp.weixin.qq.com/s/VrVdsxn94ux_46mIyS8f0w
+
+谷歌大脑实现更宽广的智能体视野，在Atari2600上可持续超越人类玩家！
+
+https://mp.weixin.qq.com/s/P5EysBHBaR6L3IfeSgo6fw
+
+强化学习20分钟，剑桥博士教汽车学会自动驾驶！
+
 # Multi-agent
 
 https://zhuanlan.zhihu.com/p/39037444

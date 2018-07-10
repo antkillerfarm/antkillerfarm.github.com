@@ -185,13 +185,9 @@ https://mp.weixin.qq.com/s/TIgRVbnZYtrGUCDNLcL1uw
 
 GAN的入门与实践
 
-https://mp.weixin.qq.com/s/oCDlhzjOYTIhsr5JuoRCJQ
+https://mp.weixin.qq.com/s/er-VG1P8iNIcQew2gXZqGw
 
-IRGAN：大一统信息检索模型的博弈竞争
-
-https://mp.weixin.qq.com/s/4Daw-2aRmzcCMtxdvB3uYQ
-
-IRGAN ：生成对抗网络在搜狗图片搜索排序中的应用
+一文读懂生成对抗网络
 
 https://mp.weixin.qq.com/s/QacQCrjh3KmrQSMp-G_rEg
 
@@ -212,10 +208,6 @@ https://zhuanlan.zhihu.com/p/27012520
 https://mp.weixin.qq.com/s/uyn41vKKoptXPZXBP2vVDQ
 
 生成对抗网络（GAN）之MNIST数据生成
-
-https://zhuanlan.zhihu.com/p/28342644
-
-CycleGAN的原理与实验详解
 
 http://mp.weixin.qq.com/s/21CN4hAA6p7ZjWsO1sT2rA
 
@@ -256,10 +248,6 @@ https://mp.weixin.qq.com/s/uUSq3irEIcBM35JCYGDPfw
 https://mp.weixin.qq.com/s/nuT6Glyx0-tU7WJyoPji9w
 
 GANs正在多个层面有所突破
-
-https://zhuanlan.zhihu.com/p/30532830
-
-眼见已不为实，迄今最真实的GAN：Progressive Growing of GANs
 
 https://mp.weixin.qq.com/s/d_W0O7LNqlBuZV87Ou9uqw
 

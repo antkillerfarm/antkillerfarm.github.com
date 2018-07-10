@@ -8,14 +8,6 @@ category: DL
 
 ## 参考（续）
 
-https://mp.weixin.qq.com/s/ouLWl623r_YaZdIdpqSWcw
-
-深度卷积对抗生成网络(DCGAN)实战
-
-https://mp.weixin.qq.com/s/PkZ069S8ysY_JCQx1nzfGg
-
-NVIDIA新作解读：用GAN生成前所未有的高清图像（附PyTorch复现）
-
 https://mp.weixin.qq.com/s/cI4xZOw6eL0w9sz9Q2mSCw
 
 Ian Goodfellow盛赞：一个GAN生成ImageNet全部1000类物体
@@ -39,10 +31,6 @@ GAN系列学习(1)——前生今世
 https://mp.weixin.qq.com/s/JRyQ5vp_zDwcG3X15e32Gw
 
 GAN系列学习(2)——前生今世
-
-https://mp.weixin.qq.com/s/Q_1IUS-65ZAFt9w0RlZUpw
-
-谷歌开源TFGAN：轻量级生成对抗网络工具库
 
 https://mp.weixin.qq.com/s/BCA7MmYnivuGbwyjHqDQUw
 

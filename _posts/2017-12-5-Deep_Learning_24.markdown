@@ -110,6 +110,10 @@ https://mp.weixin.qq.com/s/8BPZ_M8EGk3KxkSleYWSNw
 
 训练可解释、可压缩、高准确率的LSTM
 
+https://mp.weixin.qq.com/s/wfOzCxe3L2t11VguYLGC9Q
+
+上海交大搞出SRNN，比普通RNN也就快135倍
+
 # L2 Normalization
 
 L2 Normalization本身并不复杂，然而多数资料都只提到1维的L2 Normalization的计算公式：

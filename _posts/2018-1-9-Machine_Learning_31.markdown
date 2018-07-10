@@ -58,6 +58,10 @@ https://mp.weixin.qq.com/s/zLgD8DjnW1DfeqL_xITisQ
 
 教你如何用python解决非平衡数据建模
 
+https://mp.weixin.qq.com/s/ElOFb0Ln4qyG1x38NRFyag
+
+如何处理数据不均衡问题
+
 # Linear Discriminant Analysis
 
 在《机器学习（十七）》中，我们已经讨论了一个LDA，这里我们来看看另一个LDA。

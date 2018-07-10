@@ -112,6 +112,10 @@ https://mp.weixin.qq.com/s/VDyPjzXdwMGEsoXQmhrp9g
 
 图鸭科技斩获CVPR图像压缩挑战赛冠军，TNGcnn4p技术全解读
 
+https://mp.weixin.qq.com/s/B7reSwa9sCZqbkYVM5-VOA
+
+图像压缩哪家强？请看这份超详细对比
+
 # SR之外的DL ISP
 
 https://mp.weixin.qq.com/s/Wdxkvlz4nLbJS_gWqHwMjw

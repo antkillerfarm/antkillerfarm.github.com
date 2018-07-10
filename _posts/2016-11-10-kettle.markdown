@@ -344,3 +344,20 @@ https://mp.weixin.qq.com/s/kdWxbwamSuiTWdZj8MfwyQ
 https://mp.weixin.qq.com/s/D_HNrlTS-uTA9GWPu7WJaQ
 
 简单的「图像旋转」预测，为图像特征学习提供强大监督信号
+
+https://mp.weixin.qq.com/s/qnZhKhpCw2RjLMjcZBRx3Q
+
+密集对象网络：通过机器人操作学习密集的视觉对象描述符
+
+https://mp.weixin.qq.com/s/2QuwBVaFCQjl81z38u6L-g
+
+一文看尽三种针对人工智能系统的攻击技术及防御策略
+
+https://mp.weixin.qq.com/s/5gsbviBZ9Wkns0NTwCfDFw
+
+孙剑：如何打造云、端、芯上的视觉计算
+
+https://mp.weixin.qq.com/s/7dIf0YbUJCwz-_X9yTYIsA
+
+一文读懂AI如何判断照片中人物的社交关系
+

@@ -249,3 +249,18 @@ https://mp.weixin.qq.com/s/OfDaoRb2l_gei--bLSzTRw
 
 宅男福音DeepFake进阶版！基于位置映射图网络进行3D人脸重建
 
+https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
+
+北大：一种基于新闻特征抽取和循环神经网络的股票预测方法
+
+https://mp.weixin.qq.com/s/UboQNEywHSBAYc0740qmzQ
+
+让机器学会创造新的概念：DeepMind提出符号-概念关联网络SCAN
+
+https://mp.weixin.qq.com/s/AAmQymWdKQDeL8DQacEZ3A
+
+用深度学习解决Bongard问题
+
+https://mp.weixin.qq.com/s/210l9K94KMqtJtqbrZ-mgg
+
+打开黑箱重要一步，MIT提出TbD-net，弥合视觉推理模型的性能与可解释性鸿沟

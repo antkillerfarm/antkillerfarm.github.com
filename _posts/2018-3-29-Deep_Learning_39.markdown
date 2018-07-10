@@ -64,6 +64,34 @@ https://mp.weixin.qq.com/s/EPwsQ_005CYNlCK_82SYWQ
 
 ## 参考
 
+https://mp.weixin.qq.com/s/oCDlhzjOYTIhsr5JuoRCJQ
+
+IRGAN：大一统信息检索模型的博弈竞争
+
+https://mp.weixin.qq.com/s/4Daw-2aRmzcCMtxdvB3uYQ
+
+IRGAN ：生成对抗网络在搜狗图片搜索排序中的应用
+
+https://zhuanlan.zhihu.com/p/28342644
+
+CycleGAN的原理与实验详解
+
+https://zhuanlan.zhihu.com/p/30532830
+
+眼见已不为实，迄今最真实的GAN：Progressive Growing of GANs
+
+https://mp.weixin.qq.com/s/ouLWl623r_YaZdIdpqSWcw
+
+深度卷积对抗生成网络(DCGAN)实战
+
+https://mp.weixin.qq.com/s/PkZ069S8ysY_JCQx1nzfGg
+
+NVIDIA新作解读：用GAN生成前所未有的高清图像（附PyTorch复现）
+
+https://mp.weixin.qq.com/s/Q_1IUS-65ZAFt9w0RlZUpw
+
+谷歌开源TFGAN：轻量级生成对抗网络工具库
+
 https://mp.weixin.qq.com/s/E28lA-fcAQ6Sp6Qv64H3TQ
 
 GAN in NLP
@@ -291,6 +319,14 @@ https://mp.weixin.qq.com/s/se_2Ci4eE5fxiiG4LZrv8w
 https://mp.weixin.qq.com/s/29Ror1CKFubB0n38cihMqQ
 
 六种GAN评估指标的综合评估实验，迈向定量评估GAN的重要一步
+
+https://mp.weixin.qq.com/s/0I8jLO3srXC3fUdoMC585w
+
+一些fancy的GAN应用
+
+https://mp.weixin.qq.com/s/2cY3NCtMYiRlLayB32wl-w
+
+下一个GAN？OpenAI提出可逆生成模型Glow
 
 # 行人重识别
 

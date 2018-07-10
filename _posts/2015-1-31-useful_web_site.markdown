@@ -368,6 +368,10 @@ https://mp.weixin.qq.com/s/xttZJVR0r5vssOJ19sBHGQ
 
 快速排序算法
 
+https://mp.weixin.qq.com/s/jQ6fEi_K2RSesJxZn_kujg
+
+外部排序
+
 https://mp.weixin.qq.com/s/DDk5YZv9Q7CaqdiKvQxZGQ
 
 从理论到实践，全方位认识DNS（理论篇）
@@ -375,6 +379,10 @@ https://mp.weixin.qq.com/s/DDk5YZv9Q7CaqdiKvQxZGQ
 https://mp.weixin.qq.com/s/rZU35kVTXs5ebf7k6lnheQ
 
 从理论到实践，全方位认识DNS（实践篇）
+
+https://mp.weixin.qq.com/s/iN8NQd8SuWL4gCWhRbY6tg
+
+图解基于HTTPS的DNS
 
 https://mp.weixin.qq.com/s/TL87BY3DdP1bolc0Sxkahg
 

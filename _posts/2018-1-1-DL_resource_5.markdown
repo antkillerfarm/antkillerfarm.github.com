@@ -76,6 +76,36 @@ https://mp.weixin.qq.com/s/XtzvHOk7CdXRBy02kUmgsg
 
 近期爆火的Meta Learnjng，遗传算法与深度学习的火花，再不了解你就out了
 
+## gcForest
+
+http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw
+
+周志华教授gcForest（多粒度级联森林）算法预测股指期货涨跌
+
+https://mp.weixin.qq.com/s/GU9-rH0gFan620Jhc1HTDg
+
+周志华提出的gcForest能否取代深度神经网络？
+
+https://mp.weixin.qq.com/s/dEmox_pi6KGXwFoevbv14Q
+
+周志华：首个基于森林的自编码器，性能优于DNN
+
+http://mp.weixin.qq.com/s/IfEgSOIkIPA-YtC9NQW1ng
+
+非神经网络的深度模型gcForest
+
+https://mp.weixin.qq.com/s/N80l9PZQposbIOKXbv8ayw
+
+周志华：最新实验表明gcForest已经是最好的非深度神经网络方法
+
+https://mp.weixin.qq.com/s/8QP5X9Hxi_6qyfxP4O0Gwg
+
+周志华团队和蚂蚁金服合作：用分布式深度森林算法检测套现欺诈
+
+https://mp.weixin.qq.com/s/bE9BZQ6wCICvrgomdySDuw
+
+周志华组提出可做表征学习的多层梯度提升决策树
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/5vDSrWeUvlBuZgmX0R9pBQ
@@ -369,20 +399,3 @@ https://mp.weixin.qq.com/s/TelGG-uVQyxwQjiDGE1pqA
 https://mp.weixin.qq.com/s/6KC1vhKcyqQ0eZEXJyPqVA
 
 密集连接卷积网络
-
-https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
-
-北大：一种基于新闻特征抽取和循环神经网络的股票预测方法
-
-https://mp.weixin.qq.com/s/UboQNEywHSBAYc0740qmzQ
-
-让机器学会创造新的概念：DeepMind提出符号-概念关联网络SCAN
-
-https://mp.weixin.qq.com/s/AAmQymWdKQDeL8DQacEZ3A
-
-用深度学习解决Bongard问题
-
-https://mp.weixin.qq.com/s/210l9K94KMqtJtqbrZ-mgg
-
-打开黑箱重要一步，MIT提出TbD-net，弥合视觉推理模型的性能与可解释性鸿沟
-

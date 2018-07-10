@@ -246,6 +246,10 @@ https://mp.weixin.qq.com/s/rV4R-y2VYE8RJlClvQV5zQ
 
 决策树的理论与实践
 
+https://mp.weixin.qq.com/s/mhD1U_iJm7NNXCTRLLifkw
+
+Bagging与随机森林算法原理小结
+
 # 关联规则挖掘
 
 ## 基本概念

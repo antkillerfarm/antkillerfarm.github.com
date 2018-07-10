@@ -397,3 +397,8 @@ Jeff Dean与David Patterson：不思考体系结构的深度学习研究者不�
 https://mp.weixin.qq.com/s/6zLrWJ4nE0bHFlVe5dMxHw
 
 分布式深度学习新进展：让“分布式”和“深度学习”真正深度融合
+
+https://mp.weixin.qq.com/s/hjC-WTMIpbWWpmXoLBfD2g
+
+腾讯大规模分布式机器学习系统无量是如何进行技术选型的？
+
