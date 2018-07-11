@@ -6,6 +6,22 @@ category: DL
 
 # Deep Residual Network（续）
 
+残差网络的明显特征是有着相当深的深度，从32层到152层，其深度远远超过了之前提出的深度网络结构，而后又针对小数据设计了1001层的网络结构。
+
+其简化版的结构图如下所示：
+
+![](/images/article/drn.png)
+
+简单的说，就是把前面的层跨几层直接接到后面去，以使误差梯度能够传的更远一些。
+
+DRN的基本思想倒不是什么新东西了，在2003年Bengio提出的词向量模型中，就已经采用了这样的思路。
+
+DRN的实现依赖于下图所示的res block：
+
+![](/images/article/res_block.png)
+
+从中可以看出，所谓残差跨层传递，其实就是将本层ternsor $$\mathcal{F}(x)$$和跨层tensor x加在一起而已。
+
 参考：
 
 https://zhuanlan.zhihu.com/p/22447440

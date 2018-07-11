@@ -352,6 +352,14 @@ https://mp.weixin.qq.com/s/48eIhnBdYzgEiV_wESHsJA
 
 如何使用Mask RCNN模型进行图像实体分割？
 
+https://mp.weixin.qq.com/s/g6032xTGEtvbsfwXboMJ4A
+
+大阪大学副校长Yasushi Yagi：步态分析
+
+http://mp.weixin.qq.com/s/Y-PvMz_Vz8nBGRZo9dwUCA
+
+中科院步态识别技术：不看脸50米内在人群中认出你！
+
 # 手势识别
 
 https://zhuanlan.zhihu.com/p/26630215

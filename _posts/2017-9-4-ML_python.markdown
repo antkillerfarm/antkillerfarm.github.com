@@ -140,6 +140,10 @@ https://mp.weixin.qq.com/s/DiFTV29gvMlosoy2HaPQjw
 
 用Python做图像处理（3）
 
+https://mp.weixin.qq.com/s/qMiNGHHZMnPeFqXFz9c6rQ
+
+numpy ndarray之内功心法，理解高维操作！
+
 ## SciPy
 
 SciPy提供了一些更高阶的数学运算库，比如：积分、插值、信号处理、傅立叶变换、矩阵特征值、统计计算等。

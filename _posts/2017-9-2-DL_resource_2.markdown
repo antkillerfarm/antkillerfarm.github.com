@@ -318,6 +318,10 @@ http://tieba.baidu.com/p/2250616047
 
 史上最全桌面显卡天梯图
 
+https://mp.weixin.qq.com/s/eyzzeYOKdah-9WGUrhbAkg
+
+非冯诺依曼新架构：IBM100万忆阻器大规模神经网络加速AI
+
 ## AI医疗
 
 https://github.com/albarqouni/Deep-Learning-for-Medical-Applications

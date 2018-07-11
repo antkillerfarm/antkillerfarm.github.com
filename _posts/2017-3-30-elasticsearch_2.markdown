@@ -455,9 +455,13 @@ http://www.cnblogs.com/luweiseu/archive/2012/07/14/2591370.html
 
 ## LSM (Log Structured Merge)
 
-十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫 Log Structured-Merge Tree。
+十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。
 
 http://www.open-open.com/lib/view/open1424916275249.html
 
 Log Structured Merge Trees(LSM)原理
+
+https://mp.weixin.qq.com/s/CmYg22NObamkNOqGjKg0-w
+
+解读现代存储系统背后的经典算法
 

@@ -280,6 +280,10 @@ https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA
 
 多任务学习-Multitask Learning概述
 
+https://mp.weixin.qq.com/s/A-CVKTz_moaFzTYywSt2gg
+
+张宇 杨强：多任务学习概述
+
 https://mp.weixin.qq.com/s/ZlCI02UdRuFBc-uKqIPE_w
 
 深度学习多任务学习综述

@@ -314,10 +314,6 @@ http://mp.weixin.qq.com/s/9mtgdNynv92FC2dA8-5KJA
 
 VAE和Adam发明人博士论文：变分推理和深度学习
 
-http://mp.weixin.qq.com/s/Y-PvMz_Vz8nBGRZo9dwUCA
-
-中科院步态识别技术：不看脸50米内在人群中认出你！
-
 https://mp.weixin.qq.com/s/ZTjklje_3fcAn6ZQ23yd4A
 
 ScanComplete：可实现3D扫描的大规模“场景完成”和“语义分割”

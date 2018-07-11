@@ -296,6 +296,10 @@ https://mp.weixin.qq.com/s/YlrWHDPIPzN4dQO2vo4DjA
 
 人脸颜值研究综述
 
+https://mp.weixin.qq.com/s/d3aaN4vGAtMfLqOpU9oC6w
+
+香港中文大学助理教授吕健勤：面向人脸分析的深度学习方法
+
 ## Graph NN
 
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw

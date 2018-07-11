@@ -276,5 +276,3 @@ http://kexue.fm/archives/4439/
 
 老规矩，摘要+点评。
 
-
-

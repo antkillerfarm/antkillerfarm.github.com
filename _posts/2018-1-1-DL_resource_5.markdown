@@ -74,7 +74,11 @@ https://mp.weixin.qq.com/s/Q36vpS1HF2IfeCsFLh656A
 
 https://mp.weixin.qq.com/s/XtzvHOk7CdXRBy02kUmgsg
 
-近期爆火的Meta Learnjng，遗传算法与深度学习的火花，再不了解你就out了
+近期爆火的Meta Learning，遗传算法与深度学习的火花，再不了解你就out了
+
+https://mp.weixin.qq.com/s/KvgYyuyICueNQPo_S27fEA
+
+BAIR展示新型模仿学习，学会像人那样执行任务
 
 ## gcForest
 

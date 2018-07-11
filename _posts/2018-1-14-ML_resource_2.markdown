@@ -410,3 +410,7 @@ https://mp.weixin.qq.com/s/r9_adYcYBPY9KPaSIR1CdQ
 
 探索直方图
 
+https://mp.weixin.qq.com/s/WJIvsH8szWa4PVCxH1EU3A
+
+你知道词袋模型吗？
+

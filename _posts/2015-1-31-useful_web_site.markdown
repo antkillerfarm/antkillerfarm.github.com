@@ -448,6 +448,10 @@ https://mp.weixin.qq.com/s/pdOVONHbjfIJPW45nEw1fg
 
 前端本地文件操作与上传
 
+https://mp.weixin.qq.com/s/9oi-zkuUtjv0P6GyBLmatg
+
+简单说明CGI和动态请求是什么
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/
