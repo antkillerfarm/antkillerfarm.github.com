@@ -442,4 +442,7 @@ https://mp.weixin.qq.com/s/jiZw-x6EMhUIySIObm5XjA
 
 大数据近似最近邻搜索哈希方法综述（下）
 
+https://mp.weixin.qq.com/s/NbEki2ByMmA93DyoQF1yjA
+
+运满满如何将机器学习应用于车货匹配和公路干线价格预测？
 

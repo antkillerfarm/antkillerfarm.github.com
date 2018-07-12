@@ -378,6 +378,10 @@ https://mp.weixin.qq.com/s/aSCTrmfYEE7Dc1uPkg0fZg
 
 百度提出NCRF：深度学习癌症图像检测效率再提升
 
+https://mp.weixin.qq.com/s/fqHTGcmTZ91lXbhcrUQNcg
+
+弱监督学习在医学影像中的探索
+
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA

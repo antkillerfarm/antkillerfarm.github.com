@@ -264,6 +264,10 @@ https://mp.weixin.qq.com/s/QaMjHRZ5fiN2zBJLIeGrSg
 
 阿里推出DeepInsight平台：可视化理解深度神经网络CTR预估模型
 
+https://mp.weixin.qq.com/s/JEOfAXg4nDepMtzPCgElrg
+
+SIGIR 2018最佳论文：深入分析流行度在推荐系统中的作用
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

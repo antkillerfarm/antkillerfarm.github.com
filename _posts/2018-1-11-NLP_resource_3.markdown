@@ -402,3 +402,7 @@ https://mp.weixin.qq.com/s/3aipKax9Md4nG8YGrGc4Tg
 
 提高NLP语义解析准确度：融合SQL语法的生成式语义解析模型
 
+https://mp.weixin.qq.com/s/xILU9fJhs64z8nE1-sDnOA
+
+基于递归联合注意力的句子匹配模型
+

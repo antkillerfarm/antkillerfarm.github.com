@@ -372,6 +372,10 @@ https://mp.weixin.qq.com/s/vgOkHsxKaFcgWDCBpY7kng
 
 如何用OpenCV、Python和深度学习实现面部识别？
 
+https://mp.weixin.qq.com/s/Dmk4EWidsWpz31JYAx7mbQ
+
+使用OpenCV与sklearn实现基于词袋模型(Bag of Word)的图像分类预测与搜索
+
 # GNU Octave
 
 GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。
