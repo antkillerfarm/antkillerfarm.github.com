@@ -122,6 +122,10 @@ https://mp.weixin.qq.com/s/BHA-tFCQjvhf1Tj53SBEaw
 
 基线系统需要受到更多关注：基于词向量的简单模型
 
+https://mp.weixin.qq.com/s/WQlSghxG89JCroNZSmop8w
+
+朱军：关于图的表达学习
+
 # NN的INT8计算
 
 ## 概述

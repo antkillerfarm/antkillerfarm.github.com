@@ -187,6 +187,10 @@ https://mp.weixin.qq.com/s/6ErpBtVg0r2dhsBGbIkvDg
 
 Bisecting K-Means算法
 
+https://mp.weixin.qq.com/s/oAvNzxENTfaxUkSRypCo1g
+
+K-Means算法的10个有趣用例
+
 ## 聚类结果的评价
 
 可考虑用以下几个指标来评价聚类效果：

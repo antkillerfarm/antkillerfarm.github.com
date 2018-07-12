@@ -390,3 +390,15 @@ https://mp.weixin.qq.com/s/odRDdSNNuTd5LnUf8rfRaw
 
 Google发布语义文本相似度研究新成果：通用语句编码器
 
+https://mp.weixin.qq.com/s/6x389FoDoWPgGdl8-pKzhw
+
+“博彩众长，自成一家”的神经机器翻译
+
+https://mp.weixin.qq.com/s/h51gh-9LISEBdJx8X--Lsg
+
+近期有哪些值得读的QA论文？
+
+https://mp.weixin.qq.com/s/3aipKax9Md4nG8YGrGc4Tg
+
+提高NLP语义解析准确度：融合SQL语法的生成式语义解析模型
+

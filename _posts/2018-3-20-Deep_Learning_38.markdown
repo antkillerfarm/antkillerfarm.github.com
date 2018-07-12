@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十八）——深度强化学习（2）, Multi-agent, CNN进阶, 图像变换
+title:  深度学习（三十八）——深度强化学习（2）, CNN进阶, 图像变换
 category: DL 
 ---
 
@@ -204,68 +204,6 @@ https://mp.weixin.qq.com/s/P5EysBHBaR6L3IfeSgo6fw
 
 强化学习20分钟，剑桥博士教汽车学会自动驾驶！
 
-# Multi-agent
-
-https://zhuanlan.zhihu.com/p/39037444
-
-多智能体强化学习笔记
-
-https://mp.weixin.qq.com/s/bQx-ydEAfijgK1Ii5ilPFQ
-
-UCL汪军团队新方法提高群体智能，解决大规模AI合作竞争
-
-https://mp.weixin.qq.com/s/4lj_G2z0Lbfk5mOgvxLC6w
-
-对抗式协作：一个框架解决多个无监督学习视觉问题
-
-https://mp.weixin.qq.com/s/0v57oHMEDcJuUivs8D5pnQ
-
-善于单挑却难以协作，构建多智能体AI系统为何如此之难？
-
-https://mp.weixin.qq.com/s/tME5GsKEXveVcgWb-Zbx_A
-
-乔明达ICML 2018论文提出协作学习的鲁棒性方法
-
-https://mp.weixin.qq.com/s/0Xuxr7CXqsxrssW2I6NCBQ
-
-通用智能化：BAIR简述人类-机器人协作新技术
-
-https://mp.weixin.qq.com/s/GNbCu1lbOmwJDCU3vgMbtQ
-
-OpenAI发布多智能体深度强化学习新算法LOLA
-
-https://mp.weixin.qq.com/s/5Go20MyBxdVI1r5SkwA6lw
-
-面向星际争霸：DeepMind提出多智能体强化学习新方法
-
-https://mp.weixin.qq.com/s/TlcVxjhHXXGSpIvptC4H8g
-
-使用Gym和CNN构建多智能体自动驾驶马里奥赛车
-
-https://mp.weixin.qq.com/s/zRcq1LMtK72Cl4T3877tgQ
-
-牛津教授吐槽DeepMind心智神经网络，还推荐了这些多智能体学习论文
-
-https://mp.weixin.qq.com/s/qU6XD45RGeMI-T7GI0dg2Q
-
-OpenAI竞争性自我对抗训练：简单环境下获得复杂的智能体
-
-https://mp.weixin.qq.com/s/rPsxvzOLuoo_IRtgH94Ecw
-
-OpenAI自学习多智能体5v5团队战击败人类玩家
-
-https://mp.weixin.qq.com/s/VPVzXzBYD_nYO1SjTMNGVA
-
-Dota2团战AI击败人类最全解析：能团又能gank，AI一日人间180年
-
-https://mp.weixin.qq.com/s/cUFSaHWGKhyZhEvRdX09hw
-
-谷歌大脑QT-Opt算法，机器人探囊取物成功率96%
-
-https://mp.weixin.qq.com/s/xxB1lsiQxSfaHPKwZUI9bw
-
-拔掉机器人的一条腿，它还能学走路？——三次元里优化的DRL策略
-
 # CNN进阶
 
 https://mp.weixin.qq.com/s/gwH9s1ggMTj2dJkad9wUuw
@@ -279,6 +217,14 @@ https://mp.weixin.qq.com/s/hIAIbpqItS09KDOSFxaeqg
 https://mp.weixin.qq.com/s/r143qYj8bziu_N-27RWRRw
 
 机器学习5年大跃进，可能是个错觉
+
+https://mp.weixin.qq.com/s/pollD4LN_GHJckzJAjwPqg
+
+侧抑制”卷积神经网络，了解一下？
+
+https://mp.weixin.qq.com/s/gil2K-JKzfRqdzc-abnh6A
+
+王井东：深度融合——一种神经网络结构设计模式
 
 # 图像变换
 

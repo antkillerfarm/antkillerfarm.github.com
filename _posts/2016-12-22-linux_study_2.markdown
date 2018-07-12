@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  linux学习心得（二）, diff&patch, bash, SWIG, BBR
+title:  linux学习心得（二）, diff&patch, bash, SWIG
 category: linux 
 ---
 
@@ -398,6 +398,10 @@ https://mp.weixin.qq.com/s/SBVEo53irSZfI40sBFZXWQ
 
 shift：解决shell编程中的入参问题
 
+https://mp.weixin.qq.com/s/T_XwLS6CIrkXbgXJVIo2Jw
+
+一文了解十大 Linux 命令行工具！
+
 # SWIG
 
 Simplified Wrapper and Interface Generator可以为C/C++的库生成其他高级脚本语言的Wrapper。
@@ -406,66 +410,45 @@ Simplified Wrapper and Interface Generator可以为C/C++的库生成其他高级
 
 http://swig.org/
 
-# BBR
+# DL参考资源
 
-**B**ottleneck **B**andwidth and **R**ound-trip propagation time是Google于2016年10月提出的TCP拥塞控制算法，其相关代码目前已经加入Linux内核中。
+https://mp.weixin.qq.com/s/bgP_xMfi3hXayscf9D5JIg
 
-经典的拥塞控制算法设计于1980年代，当时将丢包作为拥塞的信号，这是符合当时落后的实际情况的。
+谷歌提出Sim2Real：让机器人像人类一样观察世界
 
-但是网络丢包存在两种情况：第一为拥塞丢包，第二为错误丢包。因此丢包通常并不等同于拥塞。
+https://mp.weixin.qq.com/s/aqfwn0kiXbZwVDVhHXBAXQ
 
-随着带宽的增加，第一类丢包已经大为减少。目前广域网普遍属于高带宽，高延迟的情况。这种情况术语叫做**长肥管道**（**long-fat pipe**，即延迟高、带宽大的链路）。
+谷歌大脑研究员玩转汉字RNN：神经网络生成新华字典
 
-BBR就是针对长肥管道而设计的新式算法。
+https://mp.weixin.qq.com/s/GxWOuIf25JQnQoCstVyGLQ
 
-参考：
+李飞飞团队提出OpenTag模型：减少人工标注，自动提取产品属性值
 
-http://netdevconf.org/1.2/slides/oct5/04_Making_Linux_TCP_Fast_netdev_1.2_final.pdf
+https://mp.weixin.qq.com/s/HaTNeqblwp2mALznK2nvMA
 
-Making Linux TCP Fast
+用脑电波控制智能假肢：如何利用深度学习技术进行EGG数据分类
 
-https://www.zhihu.com/question/53559433
+https://mp.weixin.qq.com/s/iAMYqJjlMWAvFq4Hddh4ig
 
-Linux Kernel 4.9 中的BBR算法与之前的TCP拥塞控制相比有什么优势？
+从0上手Kaggle图像分类挑战：冠军解决方案详解
 
-http://blog.csdn.net/dog250/article/details/52895080
+https://mp.weixin.qq.com/s/LtWMGRBk2sbPDjeC9PmJ7g
 
-Google's BBR拥塞控制算法模型解析
+弱监督学习下的商品识别：CVPR 2018细粒度识别挑战赛获胜方案简介
 
-https://zhuanlan.zhihu.com/p/24431669
+https://mp.weixin.qq.com/s/ZIDiFrN3qQV4u-m9Wr3wiA
 
-BBR是个什么鬼？-1 带宽与RTT探测
+斯坦福完全可解释深度神经网络：你需要用决策树搞点事
 
-https://zhuanlan.zhihu.com/p/26321951
+https://mp.weixin.qq.com/s/M7w7tMVd23YToIW7DypYjA
 
-BBR是个什么鬼？-2 外皮后的真相
+用DL实现Bug自动归类：微软研究院提出DBRNN-A
 
-https://mp.weixin.qq.com/s/NWNMfykpJQ-LD9oV1X6zTw
+https://mp.weixin.qq.com/s/KX85CCpYrXFOvdTU5Q4Frg
 
-基于bbr拥塞控制的云盘提速实践
+阿里巴巴论文提出针对影视作品的语音情感识别信息融合框架
 
-# QUIC
+https://mp.weixin.qq.com/s/1R9ttaKnXso_quIGTY1nfA
 
-Quic全称quick udp internet connection，“快速 UDP 互联网连接”，是由google提出的使用udp进行多路并发传输的协议。
+海康、UCLA、北理联合提出3D DescriptorNet：可按条件生成3D形状，克服模式崩溃
 
-Quic相比现在广泛应用的 http2+tcp+tls 协议有如下优势：
-
-1.减少了TCP三次握手及TLS握手时间。
-
-2.改进的拥塞控制。
-
-3.避免队头阻塞的多路复用。
-
-4.连接迁移。
-
-5.前向冗余纠错。
-
-参考：
-
-https://mp.weixin.qq.com/s/vpz6bp3PT1IDzZervyOfqw
-
-QUIC协议原理分析
-
-https://mp.weixin.qq.com/s/_RAXrlGPeN_3D6dhJFf6Qg
-
-让互联网更快的协议，QUIC在腾讯的实践及性能优化

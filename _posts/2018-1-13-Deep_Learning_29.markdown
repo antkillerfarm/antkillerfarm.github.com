@@ -212,6 +212,10 @@ https://mp.weixin.qq.com/s/i7ugVM0mGqohThLW6NjNoQ
 
 阿里开源自研语音识别模型DFSMN，准确率高达96.04%
 
+https://mp.weixin.qq.com/s/o5UAnIOuDsjBWjsKg8wYCg
+
+陶建华：深度神经网络与语音
+
 # 语音合成
 
 语音合成（Speech synthesis），有时也叫做text-to-speech (TTS)。

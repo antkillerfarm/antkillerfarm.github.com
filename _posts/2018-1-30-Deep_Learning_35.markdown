@@ -360,6 +360,18 @@ http://mp.weixin.qq.com/s/Y-PvMz_Vz8nBGRZo9dwUCA
 
 中科院步态识别技术：不看脸50米内在人群中认出你！
 
+https://mp.weixin.qq.com/s/0KaSWHi8r9kSXxlwswIY5g
+
+乔宇：深度模型让机器理解场景
+
+https://mp.weixin.qq.com/s/CSSN0K_9CYm5MnplUqU5xg
+
+乔宇: 面向复杂行为理解的深度学习模型及应用
+
+https://mp.weixin.qq.com/s/3Pe5wJ0VomzwKMF84OqcMg
+
+步态识别的深度学习综述
+
 # 手势识别
 
 https://zhuanlan.zhihu.com/p/26630215
@@ -381,6 +393,10 @@ https://www.zhihu.com/question/20131478
 https://www.leiphone.com/news/201502/QM7LdSN874dWXFLo.html
 
 带你了解世界最先进的手势识别技术
+
+https://mp.weixin.qq.com/s/DbvH6jM1VV47xKylbW-pug
+
+掌纹识别近十年进展综述
 
 # Spiking Neuron Networks
 

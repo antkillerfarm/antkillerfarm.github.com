@@ -166,3 +166,7 @@ https://mp.weixin.qq.com/s/y3ThoC2A04q4uWiOsuhUJw
 
 腾讯AI Lab提出误差补偿式量化SGD：显著降低分布式机器学习的通信成本
 
+https://mp.weixin.qq.com/s/aBt0qXPHFvwSs-0MtJYKjQ
+
+一文告诉你Adam、AdamW、Amsgrad区别和联系，助你实现Super-convergence的终极目标
+

@@ -250,3 +250,42 @@ https://mp.weixin.qq.com/s/YyGf7tJcGhdqtciKuw4bbw
 
 谭铁牛院士：Biometric Data Analysis
 
+https://mp.weixin.qq.com/s/iuOmxW0OAhSA7xSoIIn1dw
+
+鲁继文：面向视觉内容理解的深度度量学习
+
+https://mp.weixin.qq.com/s/3Pe5wJ0VomzwKMF84OqcMg
+
+脑启发的视觉计算2017年度关键进展回顾
+
+https://zhuanlan.zhihu.com/p/39512000
+
+Noise2Noise：图像降噪，无需干净样本
+
+https://mp.weixin.qq.com/s/D0n3xY0k25d6Ouf4mCi7Nw
+
+让AI识别语义空间关系：斯坦福大学李飞飞组提出“参考关系模型”
+
+https://mp.weixin.qq.com/s/_P-4hhd7QiOwrR_uBCPbZg
+
+脑洞大开的机器视觉多领域学习模型结构
+
+https://mp.weixin.qq.com/s/yQG0983RjQHIkt9oBlkDqQ
+
+瞎谈CNN：通过优化求解输入图像
+
+https://mp.weixin.qq.com/s/iZZHmxGFHQHk1rlzMzDQcg
+
+训练深度神经网络失败的罪魁祸首不是梯度消失，而是退化
+
+https://mp.weixin.qq.com/s/yvHZ9hVueYUKsMXcNQQzmQ
+
+深度学习会被可微分编程取代？
+https://mp.weixin.qq.com/s/-4b3u02KiIt5i4Yzz-Ed3g
+
+从信息论的角度理解与可视化神经网络
+
+https://mp.weixin.qq.com/s/NJf5e25tvT_xKXLD7UY1AQ
+
+MySQL智能调度系统。这篇blog其实和MySQL关系不大，算是DL在负载均衡方面的应用吧。
+

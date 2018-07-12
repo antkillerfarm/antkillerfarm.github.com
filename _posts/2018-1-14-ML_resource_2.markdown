@@ -414,3 +414,32 @@ https://mp.weixin.qq.com/s/WJIvsH8szWa4PVCxH1EU3A
 
 你知道词袋模型吗？
 
+https://mp.weixin.qq.com/s/4ttXxu5oLeaKVLYSwR8PCg
+
+国内近三年模式分类研究现状综述
+
+https://mp.weixin.qq.com/s/o6VZDRuYs8LhGm0JSI_c3w
+
+孙仕亮：多视图机器学习综述
+
+https://mp.weixin.qq.com/s/fCpbownZuD1FCiDxqkD-sA
+
+操龙兵：非独立同分布学习
+
+https://mp.weixin.qq.com/s/zXABOzbQRV7sfgAhr_WqZw
+
+跨领域推荐系统文献综述（上）
+
+https://mp.weixin.qq.com/s/OxUCIhoIED_Z1Cf91Va36g
+
+跨领域推荐系统文献综述（下）
+
+https://mp.weixin.qq.com/s/bdZ5e8CaiPuI8TpLNRrFUQ
+
+大数据近似最近邻搜索哈希方法综述（上）
+
+https://mp.weixin.qq.com/s/jiZw-x6EMhUIySIObm5XjA
+
+大数据近似最近邻搜索哈希方法综述（下）
+
+

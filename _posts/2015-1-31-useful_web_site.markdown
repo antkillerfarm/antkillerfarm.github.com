@@ -452,6 +452,10 @@ https://mp.weixin.qq.com/s/9oi-zkuUtjv0P6GyBLmatg
 
 简单说明CGI和动态请求是什么
 
+https://mp.weixin.qq.com/s/ka5woeuvNxX3Y0Y4UMlruw
+
+Go上下文取消操作
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

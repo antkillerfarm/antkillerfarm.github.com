@@ -20,6 +20,8 @@ $$\mathbf{u\times v} = \begin{vmatrix}
   v_1&v_2&v_3\\
 \end{vmatrix}$$
 
+由于Cross product和a、b所在平面垂直，因此多用于求解平面的法向量，且该法向量的方向符合“右手定则”。
+
 ## 向量的混合积
 
 triple product，又称mixed product或box product。
@@ -29,6 +31,8 @@ $$\mathbf{a}\cdot(\mathbf{b}\times \mathbf{c}) \equiv \det \begin{bmatrix}
   b_1 & b_2 & b_3 \\
   c_1 & c_2 & c_3 \\
 \end{bmatrix}={\rm det}\left(\mathbf{a},\mathbf{b},\mathbf{c}\right)$$
+
+混合积相当于求解以a、b、c为棱的六面体的体积。由体积的唯一性，易得混合积具有交换律和结合律。
 
 ## 向量的笛卡尔积
 

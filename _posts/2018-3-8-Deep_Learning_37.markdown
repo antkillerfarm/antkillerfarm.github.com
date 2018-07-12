@@ -300,6 +300,10 @@ https://mp.weixin.qq.com/s/d3aaN4vGAtMfLqOpU9oC6w
 
 香港中文大学助理教授吕健勤：面向人脸分析的深度学习方法
 
+https://mp.weixin.qq.com/s/XF4Sjx0jNPFdJFfAlYPJMQ
+
+超长综述让你走近深度人脸识别
+
 ## Graph NN
 
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw

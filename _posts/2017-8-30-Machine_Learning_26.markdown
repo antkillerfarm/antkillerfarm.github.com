@@ -162,7 +162,11 @@ https://mp.weixin.qq.com/s/qhRxZTq0IdMonAeNj25K1Q
 
 https://mp.weixin.qq.com/s/s-6utyFffAdHOkjadzXYwg
 
-强化学习：Policy-based方法
+强化学习：Policy-based方法Part1
+
+https://mp.weixin.qq.com/s/wMwqDfIAdDyeeE_ZnBh0zg
+
+强化学习：Policy-based方法Part2
 
 # K-摇臂赌博机
 

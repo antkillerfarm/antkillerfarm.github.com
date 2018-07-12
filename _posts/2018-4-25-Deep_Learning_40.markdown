@@ -228,6 +228,10 @@ https://mp.weixin.qq.com/s/ccFccLb2UTyFyMwFPjsDaA
 
 让CNN跑得更快，腾讯优图提出全局和动态过滤器剪枝
 
+https://mp.weixin.qq.com/s/vswtn3D1-VZZlyKLJmHc7A
+
+纪荣嵘：深度神经网络压缩及应用
+
 # OCR
 
 光学字符识别（Optical Character Recognition, OCR），是指对文本资料的图像文件进行分析识别处理，获取文字及版面信息的过程。

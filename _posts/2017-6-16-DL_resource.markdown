@@ -12,6 +12,10 @@ https://mp.weixin.qq.com/s/NdOhtEIN02tGqEzNvCB26Q
 
 人工智能领域26个主题知识资料全集（入门/进阶/论文/综述/视频/专家等）
 
+http://www.zhuanzhi.ai/topics
+
+中科院自动化所的人工智能搜索引擎和资源库
+
 https://mp.weixin.qq.com/s/aUrk-wcqhk08_d0QPP9Bxg
 
 一文打尽人工智能和机器学习网络资源，反正我已经收藏了！

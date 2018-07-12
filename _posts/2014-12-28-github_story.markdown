@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GitHub, Google Code, and other
+title:  GitHub, Google Code, and other, BBR
 category: technology 
 ---
 
@@ -220,73 +220,67 @@ https://mp.weixin.qq.com/s/4AnLu0m2IILGwyPyuK37Fg
 
 基本操作：Go创建GraphQL API
 
-# DL参考资源
+# BBR
 
-https://mp.weixin.qq.com/s/bgP_xMfi3hXayscf9D5JIg
+**B**ottleneck **B**andwidth and **R**ound-trip propagation time是Google于2016年10月提出的TCP拥塞控制算法，其相关代码目前已经加入Linux内核中。
 
-谷歌提出Sim2Real：让机器人像人类一样观察世界
+经典的拥塞控制算法设计于1980年代，当时将丢包作为拥塞的信号，这是符合当时落后的实际情况的。
 
-https://mp.weixin.qq.com/s/aqfwn0kiXbZwVDVhHXBAXQ
+但是网络丢包存在两种情况：第一为拥塞丢包，第二为错误丢包。因此丢包通常并不等同于拥塞。
 
-谷歌大脑研究员玩转汉字RNN：神经网络生成新华字典
+随着带宽的增加，第一类丢包已经大为减少。目前广域网普遍属于高带宽，高延迟的情况。这种情况术语叫做**长肥管道**（**long-fat pipe**，即延迟高、带宽大的链路）。
 
-https://mp.weixin.qq.com/s/GxWOuIf25JQnQoCstVyGLQ
+BBR就是针对长肥管道而设计的新式算法。
 
-李飞飞团队提出OpenTag模型：减少人工标注，自动提取产品属性值
+参考：
 
-https://mp.weixin.qq.com/s/HaTNeqblwp2mALznK2nvMA
+http://netdevconf.org/1.2/slides/oct5/04_Making_Linux_TCP_Fast_netdev_1.2_final.pdf
 
-用脑电波控制智能假肢：如何利用深度学习技术进行EGG数据分类
+Making Linux TCP Fast
 
-https://mp.weixin.qq.com/s/iAMYqJjlMWAvFq4Hddh4ig
+https://www.zhihu.com/question/53559433
 
-从0上手Kaggle图像分类挑战：冠军解决方案详解
+Linux Kernel 4.9 中的BBR算法与之前的TCP拥塞控制相比有什么优势？
 
-https://mp.weixin.qq.com/s/LtWMGRBk2sbPDjeC9PmJ7g
+http://blog.csdn.net/dog250/article/details/52895080
 
-弱监督学习下的商品识别：CVPR 2018细粒度识别挑战赛获胜方案简介
+Google's BBR拥塞控制算法模型解析
 
-https://mp.weixin.qq.com/s/ZIDiFrN3qQV4u-m9Wr3wiA
+https://zhuanlan.zhihu.com/p/24431669
 
-斯坦福完全可解释深度神经网络：你需要用决策树搞点事
+BBR是个什么鬼？-1 带宽与RTT探测
 
-https://mp.weixin.qq.com/s/M7w7tMVd23YToIW7DypYjA
+https://zhuanlan.zhihu.com/p/26321951
 
-用DL实现Bug自动归类：微软研究院提出DBRNN-A
+BBR是个什么鬼？-2 外皮后的真相
 
-https://mp.weixin.qq.com/s/KX85CCpYrXFOvdTU5Q4Frg
+https://mp.weixin.qq.com/s/NWNMfykpJQ-LD9oV1X6zTw
 
-阿里巴巴论文提出针对影视作品的语音情感识别信息融合框架
+基于bbr拥塞控制的云盘提速实践
 
-https://mp.weixin.qq.com/s/1R9ttaKnXso_quIGTY1nfA
+# QUIC
 
-海康、UCLA、北理联合提出3D DescriptorNet：可按条件生成3D形状，克服模式崩溃
+Quic全称quick udp internet connection，“快速 UDP 互联网连接”，是由google提出的使用udp进行多路并发传输的协议。
 
-https://mp.weixin.qq.com/s/-4b3u02KiIt5i4Yzz-Ed3g
+Quic相比现在广泛应用的 http2+tcp+tls 协议有如下优势：
 
-从信息论的角度理解与可视化神经网络
+1.减少了TCP三次握手及TLS握手时间。
 
-https://mp.weixin.qq.com/s/NJf5e25tvT_xKXLD7UY1AQ
+2.改进的拥塞控制。
 
-MySQL智能调度系统。这篇blog其实和MySQL关系不大，算是DL在负载均衡方面的应用吧。
+3.避免队头阻塞的多路复用。
 
-https://mp.weixin.qq.com/s/D0n3xY0k25d6Ouf4mCi7Nw
+4.连接迁移。
 
-让AI识别语义空间关系：斯坦福大学李飞飞组提出“参考关系模型”
+5.前向冗余纠错。
 
-https://mp.weixin.qq.com/s/_P-4hhd7QiOwrR_uBCPbZg
+参考：
 
-脑洞大开的机器视觉多领域学习模型结构
+https://mp.weixin.qq.com/s/vpz6bp3PT1IDzZervyOfqw
 
-https://mp.weixin.qq.com/s/yQG0983RjQHIkt9oBlkDqQ
+QUIC协议原理分析
 
-瞎谈CNN：通过优化求解输入图像
+https://mp.weixin.qq.com/s/_RAXrlGPeN_3D6dhJFf6Qg
 
-https://mp.weixin.qq.com/s/iZZHmxGFHQHk1rlzMzDQcg
-
-训练深度神经网络失败的罪魁祸首不是梯度消失，而是退化
-
-https://mp.weixin.qq.com/s/yvHZ9hVueYUKsMXcNQQzmQ
-
-深度学习会被可微分编程取代？
+让互联网更快的协议，QUIC在腾讯的实践及性能优化
 

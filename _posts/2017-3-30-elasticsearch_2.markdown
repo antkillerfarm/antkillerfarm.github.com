@@ -371,6 +371,10 @@ https://mp.weixin.qq.com/s/7zV370J7nv5wSWxdYa5Plg
 
 DBSCAN聚类算法原理介绍，以及代码实现
 
+https://mp.weixin.qq.com/s/8dB2OQCoZ7_kSxExm32WSA
+
+于剑：聚类理论与算法选讲
+
 ## 可视化
 
 ![](/images/img2/data_visual.png)
