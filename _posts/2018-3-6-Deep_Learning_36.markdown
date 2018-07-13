@@ -268,6 +268,10 @@ https://mp.weixin.qq.com/s/JEOfAXg4nDepMtzPCgElrg
 
 SIGIR 2018最佳论文：深入分析流行度在推荐系统中的作用
 
+https://mp.weixin.qq.com/s/5wdGemYBtkYUvq1n5ioyFg
+
+详解Wide&Deep理论与实践
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

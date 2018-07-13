@@ -124,18 +124,6 @@ https://mp.weixin.qq.com/s/MK_al7CgieiVXB1MGWZ9GA
 
 听说你用JavaScript写代码？本文是你的机器学习指南
 
-https://mp.weixin.qq.com/s/7Z2tDhSle-9MOslYEUpq6g
-
-从概念到实践，我们该如何构建自动微分库
-
-https://mp.weixin.qq.com/s/bigKoR3IX_Jvo-re9UjqUA
-
-机器学习之——自动求导
-
-https://www.jianshu.com/p/4c2032c685dc
-
-自动求导框架综述
-
 https://mp.weixin.qq.com/s/C2Gn8NSZe4u5uZsCeLnfVQ
 
 22分钟直冲Kaggle竞赛第二名！一文教你做到
@@ -297,6 +285,10 @@ https://mp.weixin.qq.com/s/PD13jQ_00QJ-VOUM8Zm21g
 https://mp.weixin.qq.com/s/KxeIeVzyhfFCRfqxF4mduA
 
 当深度学习遇见大数据：一文概览BDL学习框架
+
+https://mp.weixin.qq.com/s/K7m7IGwD2Y_ffP9OvMFPMA
+
+TensorFlow推出新工具Seedbank：即刻使用的预训练模型库
 
 ## 遗传算法 & 进化算法
 

@@ -257,6 +257,10 @@ http://blog.csdn.net/xingxiupaioxue/article/details/71747284
 
 如何将大规模数据导入Neo4j
 
+https://mp.weixin.qq.com/s/_Zm88TyBcXAZ4LeQOuJCHA
+
+管理neo4j的用户
+
 ## openCypher
 
 openCypher是基于Neo4j的查询语言Cypher开发的，Cypher用于在图数据库中存储和检索数据。在图数据库领域，目前还没有像关系数据库中访问数据的SQL这样的通用查询语言标准。

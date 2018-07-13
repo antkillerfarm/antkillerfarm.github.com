@@ -377,3 +377,23 @@ https://mp.weixin.qq.com/s/Ja3uc06ZndbM7b6PitNdQQ
 https://mp.weixin.qq.com/s/Mi62oqtXUT5If_Dj4KmVYA
 
 计算机视觉如何知道你想看什么？个人显著性检测
+
+https://mp.weixin.qq.com/s/3Pe5wJ0VomzwKMF84OqcMg
+
+脑启发的视觉计算2017年度关键进展回顾
+
+https://zhuanlan.zhihu.com/p/39512000
+
+Noise2Noise：图像降噪，无需干净样本
+
+https://mp.weixin.qq.com/s/D0n3xY0k25d6Ouf4mCi7Nw
+
+让AI识别语义空间关系：斯坦福大学李飞飞组提出“参考关系模型”
+
+https://mp.weixin.qq.com/s/_P-4hhd7QiOwrR_uBCPbZg
+
+脑洞大开的机器视觉多领域学习模型结构
+
+https://mp.weixin.qq.com/s/yQG0983RjQHIkt9oBlkDqQ
+
+瞎谈CNN：通过优化求解输入图像

@@ -310,3 +310,6 @@ http://www.cnblogs.com/rjzheng/p/8994962.html
 
 分布式之消息队列复习精讲
 
+https://mp.weixin.qq.com/s/Mcg5rj3QrgVj3wyY4xttnQ
+
+关于商业部署机器学习，这有一篇详尽指南

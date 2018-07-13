@@ -322,6 +322,10 @@ https://mp.weixin.qq.com/s/eyzzeYOKdah-9WGUrhbAkg
 
 非冯诺依曼新架构：IBM100万忆阻器大规模神经网络加速AI
 
+https://mp.weixin.qq.com/s/1oDVo7eGMGYODRd00OxpIw
+
+陈天奇团队推出开源AI芯片栈VTA，降低芯片设计门槛
+
 ## AI医疗
 
 https://github.com/albarqouni/Deep-Learning-for-Medical-Applications

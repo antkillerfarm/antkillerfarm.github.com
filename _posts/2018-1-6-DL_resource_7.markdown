@@ -146,10 +146,6 @@ https://mp.weixin.qq.com/s/oe8Zcv3EecDV2OUl9qejCA
 
 图像分类、定位、检测，语义分割和实例分割方法梳理
 
-http://mp.weixin.qq.com/s/khOINUyrNV3TFfgNRheH0A
-
-卷积神经网络压缩、多模态的语义分析研究
-
 http://mp.weixin.qq.com/s/zi1E-O8qHv0NUwkQmXI9Vw
 
 用AlphaGo背后的人工智能做金融投资
@@ -189,10 +185,6 @@ https://mp.weixin.qq.com/s/A4ewMO50xoopctpn9B7Y5Q
 https://mp.weixin.qq.com/s/ApMaDAnbc2FE3gNbeeVxuQ
 
 周志华组最新论文提出“溯因学习”，受玛雅文字启发的神经逻辑机
-
-https://mp.weixin.qq.com/s/mnPh8w3VuG9apprOkugbLA
-
-中科大提出新型连续手语识别框架LS-HAN，帮助“听”懂听障人士
 
 https://mp.weixin.qq.com/s/xiXWHc_4cdEIkyaGny56cQ
 
@@ -366,3 +358,34 @@ https://mp.weixin.qq.com/s/3_VtdZNKBwNtMEMf2xc7qw
 
 CVPR智慧城市挑战赛：无监督交通异常检测，冠军团队技术分享
 
+https://mp.weixin.qq.com/s/ygt31lL0mBcyRmwAlsl8Sg
+
+RCN仅凭极少样本就成功攻破验证码
+
+https://mp.weixin.qq.com/s/0Ofh_NSMmvlEZ2JPCffujg
+
+Vicarious发布生成视觉模型:RCN
+
+https://mp.weixin.qq.com/s/UDAcjmCOUdzbXaAgKWOczQ
+
+深度判别和共享特征学习的图像分类
+
+https://mp.weixin.qq.com/s/PtQSktfTpqzWB92jelgbTA
+
+Representation Learning on Network网络表示学习笔记
+
+https://mp.weixin.qq.com/s/8tM3uK9gj5QNdzKEOfq6Wg
+
+模型层面的对偶学习
+
+https://mp.weixin.qq.com/s/LOFbNzJQEE3wieNOn6gxXg
+
+瑞士生物识别研究与测试中心主任SebastienMarcel教授：生物特征识别攻击和反攻击技术
+
+https://mp.weixin.qq.com/s/YyGf7tJcGhdqtciKuw4bbw
+
+谭铁牛院士：Biometric Data Analysis
+
+https://mp.weixin.qq.com/s/iuOmxW0OAhSA7xSoIIn1dw
+
+鲁继文：面向视觉内容理解的深度度量学习

@@ -198,82 +198,6 @@ https://mp.weixin.qq.com/s/kdfGUzY6KnI3tpcDg0GX6w
 
 # DL参考资源
 
-https://mp.weixin.qq.com/s/sbuqNhIVTDUe4Q6BxS5fWw
-
-盘点金融领域里常用的深度学习模型
-
-https://mp.weixin.qq.com/s/R6vZU_gBaODsh1XtsjTpFA
-
-MIT与FAIR提出“mixup”：利用数据和标签的随机线性插值提高神经网络的健壮性
-
-https://mp.weixin.qq.com/s/xZbsxAqo0mVUb-LyH6fU1g
-
-Yann LeCun：大脑如何高效率学习？
-
-https://mp.weixin.qq.com/s/mfdF5I2vsYJeShnOh_cp8Q
-
-MIT新算法骗过神经网络3D物体分类，成功率超90%
-
-https://mp.weixin.qq.com/s?__biz=MzI3MTM5ODA0Nw==&mid=2247484058&idx=1&sn=0dfe92a0991294afba2514b137217a66
-
-朱松纯：浅谈人工智能：现状、任务、构架与统一
-
-https://mp.weixin.qq.com/s/_w4IIRY6LwqehpDlEXt90A
-
-牛津大学提出神经网络新训练法：用低秩结构增强网络压缩和对抗稳健性
-
-https://mp.weixin.qq.com/s/ygt31lL0mBcyRmwAlsl8Sg
-
-RCN仅凭极少样本就成功攻破验证码
-
-https://mp.weixin.qq.com/s/0Ofh_NSMmvlEZ2JPCffujg
-
-Vicarious发布生成视觉模型:RCN
-
-https://mp.weixin.qq.com/s/UDAcjmCOUdzbXaAgKWOczQ
-
-深度判别和共享特征学习的图像分类
-
-https://mp.weixin.qq.com/s/PtQSktfTpqzWB92jelgbTA
-
-Representation Learning on Network网络表示学习笔记
-
-https://mp.weixin.qq.com/s/8tM3uK9gj5QNdzKEOfq6Wg
-
-模型层面的对偶学习
-
-https://mp.weixin.qq.com/s/LOFbNzJQEE3wieNOn6gxXg
-
-瑞士生物识别研究与测试中心主任SebastienMarcel教授：生物特征识别攻击和反攻击技术
-
-https://mp.weixin.qq.com/s/YyGf7tJcGhdqtciKuw4bbw
-
-谭铁牛院士：Biometric Data Analysis
-
-https://mp.weixin.qq.com/s/iuOmxW0OAhSA7xSoIIn1dw
-
-鲁继文：面向视觉内容理解的深度度量学习
-
-https://mp.weixin.qq.com/s/3Pe5wJ0VomzwKMF84OqcMg
-
-脑启发的视觉计算2017年度关键进展回顾
-
-https://zhuanlan.zhihu.com/p/39512000
-
-Noise2Noise：图像降噪，无需干净样本
-
-https://mp.weixin.qq.com/s/D0n3xY0k25d6Ouf4mCi7Nw
-
-让AI识别语义空间关系：斯坦福大学李飞飞组提出“参考关系模型”
-
-https://mp.weixin.qq.com/s/_P-4hhd7QiOwrR_uBCPbZg
-
-脑洞大开的机器视觉多领域学习模型结构
-
-https://mp.weixin.qq.com/s/yQG0983RjQHIkt9oBlkDqQ
-
-瞎谈CNN：通过优化求解输入图像
-
 https://mp.weixin.qq.com/s/iZZHmxGFHQHk1rlzMzDQcg
 
 训练深度神经网络失败的罪魁祸首不是梯度消失，而是退化
@@ -288,4 +212,8 @@ https://mp.weixin.qq.com/s/-4b3u02KiIt5i4Yzz-Ed3g
 https://mp.weixin.qq.com/s/NJf5e25tvT_xKXLD7UY1AQ
 
 MySQL智能调度系统。这篇blog其实和MySQL关系不大，算是DL在负载均衡方面的应用吧。
+
+https://mp.weixin.qq.com/s/-axtm6ZBm8yYneiA3mvQrw
+
+SIGIR 2018大会最佳短论文：利用对抗学习的跨域正则化
 

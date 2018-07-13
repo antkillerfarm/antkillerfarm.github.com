@@ -284,3 +284,7 @@ https://mp.weixin.qq.com/s/DALB8eBgVWHhFcZoJFLSpg
 
 基于图的RDF知识图谱数据管理
 
+https://mp.weixin.qq.com/s/An9mGawI8mhtlqyrVxTzYw
+
+SIGIR 2018基于知识图谱的文本信息检索
+

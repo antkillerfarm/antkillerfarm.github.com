@@ -226,6 +226,10 @@ https://mp.weixin.qq.com/s/gil2K-JKzfRqdzc-abnh6A
 
 王井东：深度融合——一种神经网络结构设计模式
 
+https://mp.weixin.qq.com/s/7l0J5LIAawlkCIrUEGG9aA
+
+卷积神经网络“失陷”，CoordConv来填坑
+
 # 图像变换
 
 https://mp.weixin.qq.com/s/88tBoAVziGEFXIGfvZZp8g
@@ -304,10 +308,6 @@ https://mp.weixin.qq.com/s/12_Gl4snq-LdMHJSZn4oOA
 
 换脸AI升级版：面部表情、身体动作、视线方向都能实时迁移
 
-https://mp.weixin.qq.com/s/BBg04rDtiqU-XrWortufNA
-
-康奈尔&英伟达提出多模态无监督图像转换新方法
-
 https://mp.weixin.qq.com/s/A2VhfO3CkyQGCs5GqBWzOg
 
 实景照片秒变新海诚风格漫画：清华大学提出CartoonGAN
@@ -359,4 +359,12 @@ T2T：利用StackGAN和ProGAN从文本生成人脸
 https://mp.weixin.qq.com/s/moDVf7h8Q2S1SL0IuxXQtQ
 
 算法音乐往事：二次元女神“初音未来”诞生记
+
+https://mp.weixin.qq.com/s/4UH-XWyIxYHq_ErRfkzzsQ
+
+与神经网络相比，你对P图一无所知
+
+https://mp.weixin.qq.com/s/33VKfq-jFHfn9GBQzFYq0Q
+
+震撼！英伟达用深度学习做图像修复，毫无ps痕迹
 

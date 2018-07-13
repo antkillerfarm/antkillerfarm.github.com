@@ -372,6 +372,10 @@ https://mp.weixin.qq.com/s/3Pe5wJ0VomzwKMF84OqcMg
 
 步态识别的深度学习综述
 
+https://mp.weixin.qq.com/s/ZRS58dqdfeNczVNufoUXgQ
+
+基于交互感知的时空金字塔注意力机制神经网络的行为分类
+
 # 手势识别
 
 https://zhuanlan.zhihu.com/p/26630215
@@ -397,6 +401,10 @@ https://www.leiphone.com/news/201502/QM7LdSN874dWXFLo.html
 https://mp.weixin.qq.com/s/DbvH6jM1VV47xKylbW-pug
 
 掌纹识别近十年进展综述
+
+https://mp.weixin.qq.com/s/mnPh8w3VuG9apprOkugbLA
+
+中科大提出新型连续手语识别框架LS-HAN，帮助“听”懂听障人士
 
 # Spiking Neuron Networks
 

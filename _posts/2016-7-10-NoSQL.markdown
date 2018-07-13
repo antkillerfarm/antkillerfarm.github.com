@@ -188,10 +188,6 @@ https://mp.weixin.qq.com/s/R72RzLi4AC4Su1EJ_W52aA
 
 Petuum提出深度生成模型统一的统计学框架
 
-https://mp.weixin.qq.com/s/33VKfq-jFHfn9GBQzFYq0Q
-
-震撼！英伟达用深度学习做图像修复，毫无ps痕迹
-
 https://mp.weixin.qq.com/s/FxrLxSp1Cd7w9i6xVqLJEw
 
 Tree-CNN：一招解决深度学习中的“灾难性遗忘”
@@ -216,7 +212,27 @@ https://mp.weixin.qq.com/s/IsLlzDWnUXe8LVp4Y1Jb_A
 
 35亿张图像！Facebook基于弱监督学习刷新ImageNet基准测试记录
 
-https://mp.weixin.qq.com/s/vpBPkjuCebSWh5qPLYHCkw
+https://mp.weixin.qq.com/s/sbuqNhIVTDUe4Q6BxS5fWw
 
-上海交大提出多模态框架“EmotionMeter”，更精准地识别人类情绪
+盘点金融领域里常用的深度学习模型
+
+https://mp.weixin.qq.com/s/R6vZU_gBaODsh1XtsjTpFA
+
+MIT与FAIR提出“mixup”：利用数据和标签的随机线性插值提高神经网络的健壮性
+
+https://mp.weixin.qq.com/s/xZbsxAqo0mVUb-LyH6fU1g
+
+Yann LeCun：大脑如何高效率学习？
+
+https://mp.weixin.qq.com/s/mfdF5I2vsYJeShnOh_cp8Q
+
+MIT新算法骗过神经网络3D物体分类，成功率超90%
+
+https://mp.weixin.qq.com/s?__biz=MzI3MTM5ODA0Nw==&mid=2247484058&idx=1&sn=0dfe92a0991294afba2514b137217a66
+
+朱松纯：浅谈人工智能：现状、任务、构架与统一
+
+https://mp.weixin.qq.com/s/_w4IIRY6LwqehpDlEXt90A
+
+牛津大学提出神经网络新训练法：用低秩结构增强网络压缩和对抗稳健性
 
