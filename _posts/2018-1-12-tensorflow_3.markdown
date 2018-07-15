@@ -254,6 +254,10 @@ https://mp.weixin.qq.com/s/KZhL477ApHgQfmM2xFrYJw
 
 Tensorlang：基于TensorFlow的可微编程语言
 
+https://mp.weixin.qq.com/s/_9NJ6QLQArUAD1DKb0KRfA
+
+如何使用TensorFlow mobile部署模型到移动设备
+
 # 汽车声学
 
 https://zhuanlan.zhihu.com/p/22722073

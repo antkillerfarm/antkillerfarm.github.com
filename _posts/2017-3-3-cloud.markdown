@@ -251,6 +251,14 @@ http://d.xiumi.us/board/v5/39rut/82854193
 
 老司机带路系列：多维交叉分析引擎-Kylin
 
+https://mp.weixin.qq.com/s/e0nkJK927ANPCsoFzlBFsg
+
+OLAP系统解析：Apache Kylin和Baidu Palo哪家强？
+
+https://blog.csdn.net/zhangzheng0413/article/details/8271322
+
+OLAP、OLTP的介绍和比较
+
 # 多维数组的行优先和列优先
 
 这里以numpy为工具，介绍一下多维数组的行优先和列优先的概念。

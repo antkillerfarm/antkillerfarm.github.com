@@ -157,6 +157,10 @@ https://mp.weixin.qq.com/s/naq73D27vsCOUBperKto8A
 
 从监督式到DAgger，综述论文描绘模仿学习全貌
 
+https://mp.weixin.qq.com/s/LNNqp2KsEAljG26hY43mUw
+
+ICML2018 模仿学习教程
+
 # 三门问题
 
 https://www.zhihu.com/question/26709273/

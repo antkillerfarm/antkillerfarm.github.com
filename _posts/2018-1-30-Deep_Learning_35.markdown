@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十五）——姿态/行为检测, 深度目标跟踪, Mask R-CNN, 手势识别, Spiking Neuron Networks, DNC
+title:  深度学习（三十五）——姿态/行为检测, 深度目标跟踪, Mask R-CNN, Spiking Neuron Networks, DNC
 category: DL 
 ---
 
@@ -111,6 +111,38 @@ https://mp.weixin.qq.com/s/pnCdKcdRCxhFEcXyWb9xlQ
 https://mp.weixin.qq.com/s/uxawHWsVXMNOTLNthAL0vg
 
 时空图卷积网络：港中文提出基于动态骨骼的行为识别新方案
+
+https://mp.weixin.qq.com/s/g6032xTGEtvbsfwXboMJ4A
+
+大阪大学副校长Yasushi Yagi：步态分析
+
+http://mp.weixin.qq.com/s/Y-PvMz_Vz8nBGRZo9dwUCA
+
+中科院步态识别技术：不看脸50米内在人群中认出你！
+
+https://mp.weixin.qq.com/s/0KaSWHi8r9kSXxlwswIY5g
+
+乔宇：深度模型让机器理解场景
+
+https://mp.weixin.qq.com/s/CSSN0K_9CYm5MnplUqU5xg
+
+乔宇: 面向复杂行为理解的深度学习模型及应用
+
+https://mp.weixin.qq.com/s/3Pe5wJ0VomzwKMF84OqcMg
+
+步态识别的深度学习综述
+
+https://mp.weixin.qq.com/s/ZRS58dqdfeNczVNufoUXgQ
+
+基于交互感知的时空金字塔注意力机制神经网络的行为分类
+
+https://mp.weixin.qq.com/s/6WmXY1-BmdOHkSRA_Ds9IQ
+
+密集人体姿态估计：2D图像帧可实时生成UV贴图
+
+https://mp.weixin.qq.com/s/1yV8qz-9-mV8Loz2b2iJNQ
+
+一文看懂如何将深度学习应用于视频动作识别
 
 # 深度目标跟踪
 
@@ -324,10 +356,6 @@ https://mp.weixin.qq.com/s/4BRwMEr6rFYvkmKXM7rYLg
 
 效果惊艳！FAIR提出人体姿势估计新模型，升级版Mask-RCNN
 
-https://mp.weixin.qq.com/s/6WmXY1-BmdOHkSRA_Ds9IQ
-
-密集人体姿态估计：2D图像帧可实时生成UV贴图
-
 https://mp.weixin.qq.com/s/UXzhMkGIwqek4zHVNPgRbA
 
 Mask-RCNN论文解读
@@ -351,60 +379,6 @@ https://mp.weixin.qq.com/s/V6m1xBS2vZQ6VRlAg5zOSA
 https://mp.weixin.qq.com/s/48eIhnBdYzgEiV_wESHsJA
 
 如何使用Mask RCNN模型进行图像实体分割？
-
-https://mp.weixin.qq.com/s/g6032xTGEtvbsfwXboMJ4A
-
-大阪大学副校长Yasushi Yagi：步态分析
-
-http://mp.weixin.qq.com/s/Y-PvMz_Vz8nBGRZo9dwUCA
-
-中科院步态识别技术：不看脸50米内在人群中认出你！
-
-https://mp.weixin.qq.com/s/0KaSWHi8r9kSXxlwswIY5g
-
-乔宇：深度模型让机器理解场景
-
-https://mp.weixin.qq.com/s/CSSN0K_9CYm5MnplUqU5xg
-
-乔宇: 面向复杂行为理解的深度学习模型及应用
-
-https://mp.weixin.qq.com/s/3Pe5wJ0VomzwKMF84OqcMg
-
-步态识别的深度学习综述
-
-https://mp.weixin.qq.com/s/ZRS58dqdfeNczVNufoUXgQ
-
-基于交互感知的时空金字塔注意力机制神经网络的行为分类
-
-# 手势识别
-
-https://zhuanlan.zhihu.com/p/26630215
-
-浅谈手势识别在直播中的运用
-
-https://zhuanlan.zhihu.com/p/30561160
-
-2017-最全手势识别/跟踪相关资源大列表分享
-
-http://www.sohu.com/a/203306961_465975
-
-浙江大学CSPS最佳论文：使用卷积神经网络的多普勒雷达手势识别
-
-https://www.zhihu.com/question/20131478
-
-我打算只根据手的形状来识别手势。用哪种机器学习算法比较好？
-
-https://www.leiphone.com/news/201502/QM7LdSN874dWXFLo.html
-
-带你了解世界最先进的手势识别技术
-
-https://mp.weixin.qq.com/s/DbvH6jM1VV47xKylbW-pug
-
-掌纹识别近十年进展综述
-
-https://mp.weixin.qq.com/s/mnPh8w3VuG9apprOkugbLA
-
-中科大提出新型连续手语识别框架LS-HAN，帮助“听”懂听障人士
 
 # Spiking Neuron Networks
 

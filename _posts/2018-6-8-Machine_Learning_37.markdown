@@ -170,3 +170,103 @@ https://mp.weixin.qq.com/s/aBt0qXPHFvwSs-0MtJYKjQ
 
 一文告诉你Adam、AdamW、Amsgrad区别和联系，助你实现Super-convergence的终极目标
 
+https://mp.weixin.qq.com/s/aZlJNZsSv60ZZi2heGo_Mw
+
+一文简述深度学习优化方法——梯度下降
+
+# WFST（续）
+
+## HCLG
+
+介绍完WFST的基本运算，这里来介绍一下WFST在语音识别上的应用——HCLG。
+
+![](/images/img2/HCLG.png)
+
+上图中，Language Model又名Grammar Model，Phonemic Model又名Lexicon Model，故名HCLG。
+
+这个流程的形式化描述为：
+
+$$H\circ C\circ L\circ G$$
+
+直接使用这个WFST的状态空间较大，搜索效率比较低，Mohri因此提出了一个简化方案：
+
+$$N = \pi_{\epsilon} (min(det(\tilde{H} \circ det(\tilde{C} \circ det(\tilde{L} \circ G)))))$$
+
+## 参考
+
+https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/ParallelizingWFSTSpeechDecoders.ICASSP2016.pdf
+
+《parallelizing WFST speech decoders》
+
+http://www.cs.nyu.edu/~mohri/pub/csl01.pdf
+
+《Weighted Finite-State Transducers in Speech Recognition》
+
+https://blog.csdn.net/l_b_yuan/article/category/6132477
+
+这个专栏包含了4篇WFST的blog
+
+http://djt.qq.com/article/view/507
+
+定制你的语音识别-并行语音识别解码空间
+
+https://blog.csdn.net/lucky_ricky/article/details/77511543
+
+Kaldi WFST 构图 学习
+
+https://blog.csdn.net/dearwind153/article/details/70053704
+
+Kaldi HCLG深入理解
+
+https://zhuanlan.zhihu.com/p/31174085
+
+有限状态自动机和转换器在元音和谐处理中的应用。这篇blog研究的问题相对偏门，但是文末附有若干FST方面的软件资源，可以提供OpenFST之外的选择。
+
+https://www.jianshu.com/p/5eb45c64f3e3
+
+深入浅出理解有限状态机
+
+http://infolocata.com/mirovia/finite-state-transducers-for-natural-language-processing/
+
+Finite-State-Transducers for Natural Language Processing
+
+https://zhuanlan.zhihu.com/p/23664023
+
+构建CTC语音识别解码网络
+
+# 声纹识别
+
+声纹识别关心的“谁在说”，用于解决生物身份确认和识别；而语音识别关心的“说了什么”，用于解决对说话内容的识别。
+
+对测试语音，同样提取mfcc->提取i-vector，然后进行打分，打分的方法有cosine, LDA, PLDA，其中PLDA的效果是最好的，但是需要数据去训练获得参数。
+
+代码的话，推荐kaldi里的sre10/v1，里面有全套的i-vector/PLDA说话人识别系统流程。
+
+这方面的数据集有：
+
+https://ivectorchallenge.nist.gov
+
+NIST i-vector Machine Learning Challenge
+
+参考：
+
+https://zhuanlan.zhihu.com/voicebiometrics
+
+专栏：声纹识别的应用实践
+
+https://www.jianshu.com/p/513dadeef1fd
+
+声纹识别
+
+https://blog.csdn.net/twinkle_star1314/article/details/55049746
+
+声纹识别
+
+https://blog.csdn.net/twinkle_star1314/article/details/55050138
+
+声纹识别2
+
+https://zhuanlan.zhihu.com/p/24425179
+
+End-to-End Voiceprint
+

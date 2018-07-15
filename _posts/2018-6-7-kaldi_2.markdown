@@ -129,7 +129,11 @@ kaldi中cnn的例程较少，而且其最新的cnn实现单元TimeHeightConvolut
 
 # Chain
 
-Chain是nnet3的改进版本，也是目前Daniel Povey主推的模型。
+Chain是Kaldi的作者Daniel Povey新进引入的技术，该工作可以看做是对CTC的进一步扩展，直接使用句子级区分性准则进行模型的训练，该方法被认为是下一步提升语音识别效率与性能最有潜力的技术之一。
+
+论文：
+
+《Purely Sequence-Trained Neural Networks for ASR Based on Lattice-Free MMI》
 
 参考：
 

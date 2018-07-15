@@ -332,6 +332,10 @@ https://mp.weixin.qq.com/s/1cUM8_AUZ40JWGI37HsqFw
 
 换脸效果媲美GAN！一文解析OpenAI最新流生成模型Glow
 
+https://mp.weixin.qq.com/s/IjlIT-3FVY7IfYzNDtkkgg
+
+谷歌大脑发布GAN全景图：看百家争鸣的生成对抗网络
+
 # 行人重识别
 
 行人重识别（Person re-identification）也称行人再识别，是利用计算机视觉技术判断图像或者视频序列中是否存在特定行人的技术。广泛被认为是一个图像检索的子问题。给定一个监控行人图像，检索跨设备下的该行人图像。旨在弥补目前固定的摄像头的视觉局限，并可与行人检测/行人跟踪技术相结合 ，可广泛应用于智能视频监控、智能安保等领域。

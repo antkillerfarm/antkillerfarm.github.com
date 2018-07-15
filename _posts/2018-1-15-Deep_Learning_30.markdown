@@ -303,20 +303,6 @@ https://mp.weixin.qq.com/s/u1UnAuGllcWn8Ik5wDPY6w
 
 《EESEN: End-to-end speech recognition using deep RNN models and WFST-based decoding》
 
-# Chain
-
-Chain是Kaldi的作者Daniel Povey新进引入的技术，该工作可以看做是对CTC的进一步扩展，直接使用句子级区分性准则进行模型的训练，该方法被认为是下一步提升语音识别效率与性能最有潜力的技术之一。
-
-论文：
-
-《Purely Sequence-Trained Neural Networks for ASR Based on Lattice-Free MMI》
-
-参考：
-
-https://www.cnblogs.com/JarvanWang/p/7499589.html
-
-Kaldi中的Chain模型
-
 # 自动求导
 
 https://mp.weixin.qq.com/s/7Z2tDhSle-9MOslYEUpq6g

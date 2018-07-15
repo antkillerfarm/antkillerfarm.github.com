@@ -188,13 +188,69 @@ TLD（Tracking-Learning-Detection）一种目标跟踪算法
 
 # Harris
 
+## 角点
+
+角点是图像很重要的特征,对图像图形的理解和分析有很重要的作用。角点在保留图像图形重要特征的同时,可以有效地减少信息的数据量,使其信息的含量很高,有效地提高了计算的速度,有利于图像的可靠匹配,使得实时处理成为可能。角点在三维场景重建运动估计，目标跟踪、目标识别、图像配准与匹配等计算机视觉领域起着非常重要的作用。
+
+下面有两幅不同视角的图像，通过找出对应的角点进行匹配。
+
+![](/images/img2/corner_matching.png)
+
+我们可以直观的概括下角点所具有的特征：
+
+>轮廓之间的交点；
+
+>对于同一场景，即使视角发生变化，通常具备稳定性质的特征；
+
+>该点附近区域的像素点无论在梯度方向上还是其梯度幅值上有着较大变化；
+
+角点匹配（corner matching）是指寻找两幅图像之间的特征像素点的对应关系，从而确定两幅图像的位置关系。
+
+角点匹配可以分为以下四个步骤：
+
+**提取检测子**：在两张待匹配的图像中寻找那些最容易识别的像素点(角点)，比如纹理丰富的物体边缘点等。
+
+**提取描述子**：对于检测出的角点，用一些数学上的特征对其进行描述，如梯度直方图，局部随机二值特征等。检测子和描述子的常用提取方法有:sift, harris, surf, fast, agast, brisk, freak, brisk,orb等。
+
+**匹配**：通过各个角点的描述子来判断它们在两张图像中的对应关系。常用方法如flann。
+
+**去外点**：去除错误匹配的外点，保留正确的内点。常用方法有Ransac, GTM。
+
+这里我们只介绍最常用的Harris算子。
+
+## Harris Corner Detector
+
+Harris Corner Detector是Chris Harris和Mike Stephens于1988年提出的算子。
+
+论文：
+
+《A Combined Corner and Edge Detector》
+
+![](/images/img2/Harris.png)
+
+如上图所示。人眼对角点的识别通常是在一个局部的小区域或小窗口完成的。如果在各个方向上移动这个特征的小窗口，窗口内区域的灰度发生了较大的变化，那么就认为在窗口内遇到了角点。如果这个特定的窗口在图像各个方向上移动时，窗口内图像的灰度没有发生变化，那么窗口内就不存在角点；如果窗口在某一个方向移动时，窗口内图像的灰度发生了较大的变化，而在另一些方向上没有发生变化，那么，窗口内的图像可能就是一条直线的线段。
+
+
+
+$$c(x,y;\Delta x,\Delta y) = \sum_{(u,v)\in W(x,y)}w(u,v)(I(u,v) – I(u+\Delta x,v+\Delta y))^2$$
+
+## 参考
+
 http://blog.csdn.net/lwzkiller/article/details/54633670
 
 Harris角点检测原理详解
 
-http://www.cnblogs.com/king-lps/p/6375424.html
+http://www.cnblogs.com/ronny/p/4009425.html
 
-Harris角点检测
+Harris角点
+
+https://blog.csdn.net/davebobo/article/details/52598850
+
+检测并匹配兴趣点
+
+https://blog.csdn.net/songzitea/article/details/17969375
+
+角点匹配方法
 
 # 从BOW到SPM
 
@@ -304,64 +360,3 @@ http://vsooda.github.io/2016/08/28/wfst/
 
 加权有限状态转换器
 
-## FSM
-
-![](/images/img2/FSM.png)
-
-上图是finite-state machine（也叫finite-state automaton，FSA）的示意图。图中的Node表示State，顾名思义，FSM的State数量是有限的。图中的Edge表示Transition，Edge上的Label表示Input/Event。
-
-FSM的含义是，在某一状态下，获得一个输入，从而产生一个状态转换。例如，上图中在Sleep状态下，如果输入是hungry的话，那么状态就会切换到Eat状态。当然了，输入也可以不改变状态，比如在Sleep状态下，输入是tired的时候。
-
-## FST
-
-![](/images/img2/FST.png)
-
-上图是finite-state transducers的示意图。FST和FSM的差别主要在Edge上的Label。FST收到Input的时候，不仅会发生状态改变，还会产生Output序列。因此，其Label的格式为`input:output`。
-
-## WFST
-
-![](/images/img2/WFST.png)
-
-上图是WFST的示意图。顾名思义，Label上不仅有Input、Output，还有Weight信息，其格式为`input:output/weight`。
-
-在有些图中会碰到$$\epsilon$$. 这个符号在输入时表示不消耗任何输入，在输出位置表示不产生任何输出。
-
-此外，还有格式为`input/weight`的FSM，一般被称为Weighted Finite-State Acceptors。
-
-![](/images/img2/WA.png)
-
-不仅Edge上的Label可以有权重，Node上的Label也可以有权重，如上图所示。没有权重的Label，其权重为1。
-
-例如，上图中：
-
-$$[A](ab)=1\times 1\times 2+2\times 3\times 2=14$$
-
-## 相关的群论知识
-
-WFST是基于半环代数理论的，在介绍半环之前我先简单的说一下群和半群。
-
-**群（Group）**：G为非空集合，如果在G上定义的二元运算*，满足：
-
-（1）封闭性（Closure）：对于任意$$a,b\in G$$,有$$a*b\in G$$;
-
-（2）结合律（Associativity）：对于任意$$a,b,c\in G,(a*b)*c=a*(b*c)$$;
-
-（3）幺元（Identity）：存在幺元e，使得对于任意$$a\in G,e*a=a*e=a$$;
-
-（4）逆元：对于任意$$a\in G$$,存在逆元$$a^{-1}*a=a*a^{-1}=e$$。
-
-则称（G,*）为群。
-
-**半群（Semigroup）**：仅满足封闭性和结合律群称为半群；如果还包含幺元，则成为幺元半群。
-
-**半环（semiring）**：指具有两个二元运算$$+$$和$$\cdot$$的非空集合S，且满足：
-
-（1）$$(S,+),(S,\cdot)$$都是半群；
-
-（2）$$\forall a,b,c\in S,(a+b)c = ac+bc, c(a+b) = ca+cb$$
-
-半环的形式化表示如下：
-
-$$(K, \bigoplus, \bigotimes，0， 1)$$
-
-其中K是一个数集，$$\bigoplus, \bigotimes$$是两个二元操作，’0’和’1’是特定的（designated）零元素和幺元素（不一定是真正的数0和数1）。

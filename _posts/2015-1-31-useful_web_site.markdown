@@ -456,6 +456,10 @@ https://mp.weixin.qq.com/s/ka5woeuvNxX3Y0Y4UMlruw
 
 Go上下文取消操作
 
+http://phdcomics.com/
+
+一个关于博士学习生活的漫画网站
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

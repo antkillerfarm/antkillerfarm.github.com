@@ -426,23 +426,4 @@ https://mp.weixin.qq.com/s/fCpbownZuD1FCiDxqkD-sA
 
 操龙兵：非独立同分布学习
 
-https://mp.weixin.qq.com/s/zXABOzbQRV7sfgAhr_WqZw
-
-跨领域推荐系统文献综述（上）
-
-https://mp.weixin.qq.com/s/OxUCIhoIED_Z1Cf91Va36g
-
-跨领域推荐系统文献综述（下）
-
-https://mp.weixin.qq.com/s/bdZ5e8CaiPuI8TpLNRrFUQ
-
-大数据近似最近邻搜索哈希方法综述（上）
-
-https://mp.weixin.qq.com/s/jiZw-x6EMhUIySIObm5XjA
-
-大数据近似最近邻搜索哈希方法综述（下）
-
-https://mp.weixin.qq.com/s/NbEki2ByMmA93DyoQF1yjA
-
-运满满如何将机器学习应用于车货匹配和公路干线价格预测？
 

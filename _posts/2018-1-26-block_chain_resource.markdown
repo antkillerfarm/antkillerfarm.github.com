@@ -446,3 +446,7 @@ https://mp.weixin.qq.com/s/CJDh0jIUMj8LsihGSBV8kw
 
 天线增益与有效辐射功率的理解！
 
+https://mp.weixin.qq.com/s/JKs0xpFllpWre9c-iJR41Q
+
+现代舰载雷达系统，有源相控阵的子系统分析
+

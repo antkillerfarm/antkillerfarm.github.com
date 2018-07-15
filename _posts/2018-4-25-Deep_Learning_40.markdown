@@ -10,7 +10,13 @@ category: DL
 
 此外，对于一些较大的模型（如VGG），即使机器再给力，单位时间内能处理的图像数量，往往也无法达到实际应用的要求。这点在自动驾驶和视频处理领域显得尤为突出。
 
-这里首先提到的是韩松的两篇论文：
+这里首先提到的是斯坦福的相关课程：
+
+https://cs217.github.io/
+
+CS 217: Hardware Accelerators for Machine Learning
+
+其次是韩松的两篇论文：
 
 《Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding》
 
@@ -34,7 +40,7 @@ category: DL
 
 虽然这些参数、结点和层相对不重要，但是去掉之后，仍然会对准确度有所影响。这时可以对精简之后的模型，用训练样本进行re-train，通过残差对模型进行一定程度的修正，以提高准确度。
 
-其次还可以看看图森科技的论文：
+还可以看看图森科技的论文：
 
 https://www.zhihu.com/question/62068158
 

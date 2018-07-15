@@ -259,3 +259,24 @@ Pika是一个可持久化的大容量redis存储服务，兼容string、hash、l
 
 https://github.com/Qihoo360/pika/
 
+# DL参考资源
+
+https://mp.weixin.qq.com/s/iZZHmxGFHQHk1rlzMzDQcg
+
+训练深度神经网络失败的罪魁祸首不是梯度消失，而是退化
+
+https://mp.weixin.qq.com/s/yvHZ9hVueYUKsMXcNQQzmQ
+
+深度学习会被可微分编程取代？
+https://mp.weixin.qq.com/s/-4b3u02KiIt5i4Yzz-Ed3g
+
+从信息论的角度理解与可视化神经网络
+
+https://mp.weixin.qq.com/s/NJf5e25tvT_xKXLD7UY1AQ
+
+MySQL智能调度系统。这篇blog其实和MySQL关系不大，算是DL在负载均衡方面的应用吧。
+
+https://mp.weixin.qq.com/s/-axtm6ZBm8yYneiA3mvQrw
+
+SIGIR 2018大会最佳短论文：利用对抗学习的跨域正则化
+

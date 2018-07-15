@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  机器人参考资源
+title:  机器人/无人驾驶参考资源
 category: resource 
 ---
 
-# 机器人参考资源
+# 机器人/无人驾驶参考资源
 
 ## 行业
 
@@ -137,92 +137,6 @@ https://blog.csdn.net/lixujie666/article/details/80246909
 https://blog.csdn.net/Shawn_Zhangguang/article/details/78737686
 
 ArUco--一个微型现实增强库的介绍及视觉应用
-
-## Apollo
-
-Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。
-
-官网：
-
-http://apollo.auto/
-
-代码：
-
-https://github.com/ApolloAuto/apollo
-
-参考：
-
-https://github.com/TeamStuQ/skill-map/blob/master/data/map-Apollo.md
-
-Apollo自动驾驶工程师技能图谱
-
-http://mp.weixin.qq.com/s/baXCaD1EdHKCJbCIh2HDeA
-
-Apollo高精地图技术与应用
-
-https://mp.weixin.qq.com/s/qtoHF4Mnj_aeGBJbkjJUMA
-
-Apollo小度车载系统
-
-https://mp.weixin.qq.com/s/rWhnazEC35U7nsVpsxhFEg
-
-Apollo 2.0 软硬件框架初探（一）
-
-https://mp.weixin.qq.com/s/GccST3xJ1QRIVM7cFgsn3A
-
-Apollo 2.0 软硬件框架初探（二）
-
-https://mp.weixin.qq.com/s/UHQXF2Ju8erw9thm0Jjt2A
-
-Apollo 2.0框架及源码分析(三)
-
-https://mp.weixin.qq.com/s/3i8mJn4OPjt-KV1fp8bZQQ
-
-Apollo Planning模块源代码分析（上）
-
-https://mp.weixin.qq.com/s/DfdMDOQMncTau-9zGq9CYw
-
-Apollo Planning模块源代码分析（下）
-
-https://mp.weixin.qq.com/s/bH6khM8gO3JE4YT9i8hSlQ
-
-Apollo 2.0自动驾驶平台技术解析与应用
-
-https://mp.weixin.qq.com/s/EgsdlDhd8lIXU3bnTYJh0w
-
-Apollo高精地图解析
-
-https://mp.weixin.qq.com/s/027QogNXtW2NPIDVcGQGzw
-
-Apollo“云+端”研发迭代新模式实战
-
-https://mp.weixin.qq.com/s/Pjfhs-03HxFeyeKo1BmAPw
-
-Apollo小度车载系统打造更舒心的出行
-
-https://mp.weixin.qq.com/s/j4faPastB3nFmgH_nhVW6g
-
-Apollo仿真平台如何Hold住99.9999%的复杂场景？
-
-https://mp.weixin.qq.com/s/PFCCRBGWmaTQkeyOlG1qng
-
-Apollo 2.0多传感器融合定位模块
-
-https://mp.weixin.qq.com/s/KEdXmwUGHysy_LZAfdkmlw
-
-Apollo的分布式可扩展计算平台探索
-
-https://mp.weixin.qq.com/s/MfTsH9mowuWFA54z7vs5fA
-
-Apollo Control模块源码解析
-
-https://mp.weixin.qq.com/s/bIjnm74cJcHP8Zab4kt5zA
-
-Apollo 2.5实时相对地图的分享
-
-https://mp.weixin.qq.com/s/hU8__GPgxaCStSgv4FyLIw
-
-无人驾驶行业及Apollo的Overview
 
 ## 文章
 
@@ -455,4 +369,66 @@ https://mp.weixin.qq.com/s/WiS-iJHA1zoIyb1cvKiuZQ
 https://mp.weixin.qq.com/s/myWTfgvjiqli_Rxfr-FY0w
 
 360扫地机原理大揭秘，竟还有无人驾驶技术？——浅析家用机器人SLAM方案
+
+https://mp.weixin.qq.com/s/Ja6DxqadbFBIWUk44DjGqw
+
+密集场景中自动驾驶车辆的仿真与导航
+
+https://mp.weixin.qq.com/s/mZbO-y4haBx-IodgEtdUBA
+
+LSTM之父最新力作：手把手教你训练一个有世界观的AI赛车手
+
+https://mp.weixin.qq.com/s/vFyifSgGLImUrTwcw9bPsg
+
+自动驾驶感知训练指南：不许你歧视车道线，那也是路面的一部分
+
+https://mp.weixin.qq.com/s/aXck7MLpHojuIkvVP1iHKg
+
+北航机器人研究所名誉所长王田苗：人工智能与机器人的发展趋势
+
+https://mp.weixin.qq.com/s/V3PLx3kP9zOcR1CZZI8Yqw
+
+速感科技CTO张一茗：视觉SLAM的技术现状和应用趋势
+
+https://mp.weixin.qq.com/s/k3RbUz9txd09PpiLUEHVfA
+
+无人驾驶汽车系统入门：深度前馈网络，深度学习的正则化，交通信号识别
+
+https://mp.weixin.qq.com/s/WWm1tkCXVJgdlVbsXCTYIg
+
+自动驾驶汽车硬件系统概述
+
+https://mp.weixin.qq.com/s/_lK-DPldCYGcicV7O0njfg
+
+上海交大卢策吾团队开源PointSIFT刷新点云语义分割记录
+
+# ML参考资源
+
+https://mp.weixin.qq.com/s/zXABOzbQRV7sfgAhr_WqZw
+
+跨领域推荐系统文献综述（上）
+
+https://mp.weixin.qq.com/s/OxUCIhoIED_Z1Cf91Va36g
+
+跨领域推荐系统文献综述（下）
+
+https://mp.weixin.qq.com/s/bdZ5e8CaiPuI8TpLNRrFUQ
+
+大数据近似最近邻搜索哈希方法综述（上）
+
+https://mp.weixin.qq.com/s/jiZw-x6EMhUIySIObm5XjA
+
+大数据近似最近邻搜索哈希方法综述（下）
+
+https://mp.weixin.qq.com/s/NbEki2ByMmA93DyoQF1yjA
+
+运满满如何将机器学习应用于车货匹配和公路干线价格预测？
+
+https://mp.weixin.qq.com/s/R7Qud_x6DGqbHAOl7OMruQ
+
+一文带你入门算法分发！
+
+https://mp.weixin.qq.com/s/s2XpGne0sAqnuN-u6g5k1A
+
+资金流因子全面测试兼正交化方法详解
 

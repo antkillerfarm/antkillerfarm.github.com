@@ -32,7 +32,7 @@ Mel-frequency Cepstral Coefficients是由Paul Mermelstein提出的一种音频�
 
 可见，delta MFCC和double-delta MFCC，实际上就是MFCC的一阶差分和二阶差分。
 
-在实际中使用的语音特征，往往是各种特征的组合。比如，常用的39维MFCC特征，其组成如下：
+在实际中使用的语音特征，往往是各种特征的组合。比如，常用的**39维MFCC特征**，其组成如下：
 
 12 MFCC feature
 

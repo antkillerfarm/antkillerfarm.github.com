@@ -28,6 +28,12 @@ https://github.com/fchollet/keras/
 
 `sudo pip install keras`
 
+## 书籍
+
+https://mp.weixin.qq.com/s/2VoTmFJshvIq2Wc0Ko0iaA
+
+使用TensorFlow和Keras实践机器学习和深度学习
+
 ## 项目
 
 https://github.com/Ahmkel/Keras-Project-Template
