@@ -432,3 +432,7 @@ https://mp.weixin.qq.com/s/s2XpGne0sAqnuN-u6g5k1A
 
 资金流因子全面测试兼正交化方法详解
 
+https://mp.weixin.qq.com/s/vwhetMpQllczILptBNcoWg
+
+基于快速GeoHash，如何实现海量商品与商圈的高效匹配？
+

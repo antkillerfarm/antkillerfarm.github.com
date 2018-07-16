@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  图像处理理论（七）——Viola-Jones, 经典目标跟踪算法, 从BOW到SPM, ILSVRC 2010考古
+title:  图像处理理论（七）——Viola-Jones, 经典目标跟踪算法, Harris, 从BOW到SPM, ILSVRC 2010考古
 category: graphics 
 ---
 
