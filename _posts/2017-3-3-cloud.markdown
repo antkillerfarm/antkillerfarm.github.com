@@ -321,3 +321,12 @@ http://www.cnblogs.com/rjzheng/p/8994962.html
 https://mp.weixin.qq.com/s/Mcg5rj3QrgVj3wyY4xttnQ
 
 关于商业部署机器学习，这有一篇详尽指南
+
+https://mp.weixin.qq.com/s/d7xMT1jrkwT_csC1kugw4w
+
+360数据处理平台的架构演进及优化实践
+
+https://mp.weixin.qq.com/s/Mw-bQiWURE6oBz-EwfoiiA
+
+Meteor实时计算平台架构与实践
+

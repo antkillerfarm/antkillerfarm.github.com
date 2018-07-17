@@ -112,6 +112,10 @@ http://www.docin.com/p-976961701.html
 
 >注：杨元喜，1956年生，大地测量学家。中国科学院院士。
 
+https://blog.csdn.net/tiandijun/article/details/72469471
+
+通俗理解卡尔曼滤波及其算法实现
+
 # 推荐算法中的常用排序算法
 
 ## Pointwise方法

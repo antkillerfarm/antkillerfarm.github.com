@@ -280,3 +280,11 @@ https://mp.weixin.qq.com/s/ora66weNks8tHlFTKJrKSA
 
 谷歌AI自动重构3D大脑，最高精度绘制神经元
 
+https://mp.weixin.qq.com/s/o0hjJH6P-8pICS43VFVjIA
+
+Tomaso Poggio深度学习理论：深度网络“过拟合缺失”的本质
+
+https://mp.weixin.qq.com/s/ZvTm9omnIRqPXcLFbZtoeg
+
+深度学习的关键：无监督深度学习简介
+

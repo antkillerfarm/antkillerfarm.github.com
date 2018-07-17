@@ -288,3 +288,7 @@ https://mp.weixin.qq.com/s/An9mGawI8mhtlqyrVxTzYw
 
 SIGIR 2018基于知识图谱的文本信息检索
 
+https://mp.weixin.qq.com/s/V_VDw-rRF49qXKTDG1Mpew
+
+知识图谱论文大合集，这份干货满满的笔记解读值得收藏
+
