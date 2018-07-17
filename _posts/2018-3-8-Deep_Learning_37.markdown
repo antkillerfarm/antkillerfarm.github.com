@@ -366,4 +366,7 @@ https://mp.weixin.qq.com/s/lt9lZbulkW0C8A_xi6hodQ
 
 浅析图卷积神经网络
 
+https://mp.weixin.qq.com/s/SGCtwYWfnxjcpMJeeH1b4w
+
+图神经网络+池化模块，斯坦福等提出层级图表征学习
 

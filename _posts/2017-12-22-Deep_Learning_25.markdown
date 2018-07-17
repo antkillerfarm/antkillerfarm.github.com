@@ -158,6 +158,10 @@ http://geek.csdn.net/news/detail/50558
 
 深度学习和自然语言处理中的attention和memory机制
 
+https://mp.weixin.qq.com/s/rKvh9fqfVf_EYBxa5QRDOw
+
+不得不了解的五种Attention模型方法及其应用
+
 https://zhuanlan.zhihu.com/p/25928551
 
 用深度学习（CNN RNN Attention）解决大规模文本分类问题-综述和实践

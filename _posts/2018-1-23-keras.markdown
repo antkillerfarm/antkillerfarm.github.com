@@ -200,6 +200,14 @@ https://mp.weixin.qq.com/s/_B_WaHJyH-JPS2izq_DuFg
 
 如何使用LSTM在Keras中快速实现情感分析任务
 
+https://mp.weixin.qq.com/s/NZErOUOeD7FidM98NlT2hQ
+
+教你使用Keras一步步构建深度神经网络：以情感分析任务为例
+
+https://mp.weixin.qq.com/s/uOP-VT_ITufMEW16hKRweA
+
+手把手教你用RNN做情感分析
+
 https://mp.weixin.qq.com/s/kIrmFLn3g-JlW74DAt4hEg
 
 Python新玩法！如何自己动手实现FaceID功能
@@ -215,10 +223,6 @@ https://mp.weixin.qq.com/s/_Kh9ZMLmAfcACVYxt02lqA
 https://mp.weixin.qq.com/s/yzYRMLYKEwHMGjsmYzFLAw
 
 在Keras上实现GAN：构建消除图片模糊的应用
-
-https://mp.weixin.qq.com/s/NZErOUOeD7FidM98NlT2hQ
-
-教你使用Keras一步步构建深度神经网络：以情感分析任务为例
 
 https://mp.weixin.qq.com/s/wlJaBaKj8mET43e7c0GpLw
 

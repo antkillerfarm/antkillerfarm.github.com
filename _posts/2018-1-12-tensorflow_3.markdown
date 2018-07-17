@@ -258,6 +258,10 @@ https://mp.weixin.qq.com/s/_9NJ6QLQArUAD1DKb0KRfA
 
 如何使用TensorFlow mobile部署模型到移动设备
 
+https://mp.weixin.qq.com/s/e_TzQxFLAonLMyYAhte6Cg
+
+face-api.js：在浏览器中进行人脸识别的JavaScript接口
+
 # 汽车声学
 
 https://zhuanlan.zhihu.com/p/22722073

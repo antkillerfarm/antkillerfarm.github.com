@@ -1,8 +1,140 @@
 ---
 layout: post
-title:  图像处理理论（六）——Eigenface, LBP, Fisherface
+title:  图像处理理论（六）——Harris, Eigenface
 category: graphics 
 ---
+
+# Harris
+
+## 角点
+
+角点是图像很重要的特征,对图像图形的理解和分析有很重要的作用。角点在保留图像图形重要特征的同时,可以有效地减少信息的数据量,使其信息的含量很高,有效地提高了计算的速度,有利于图像的可靠匹配,使得实时处理成为可能。角点在三维场景重建运动估计，目标跟踪、目标识别、图像配准与匹配等计算机视觉领域起着非常重要的作用。
+
+下面有两幅不同视角的图像，通过找出对应的角点进行匹配。
+
+![](/images/img2/corner_matching.png)
+
+我们可以直观的概括下角点所具有的特征：
+
+>轮廓之间的交点；
+
+>对于同一场景，即使视角发生变化，通常具备稳定性质的特征；
+
+>该点附近区域的像素点无论在梯度方向上还是其梯度幅值上有着较大变化；
+
+角点匹配（corner matching）是指寻找两幅图像之间的特征像素点的对应关系，从而确定两幅图像的位置关系。
+
+角点匹配可以分为以下四个步骤：
+
+**提取检测子**：在两张待匹配的图像中寻找那些最容易识别的像素点(角点)，比如纹理丰富的物体边缘点等。
+
+**提取描述子**：对于检测出的角点，用一些数学上的特征对其进行描述，如梯度直方图，局部随机二值特征等。检测子和描述子的常用提取方法有:sift, harris, surf, fast, agast, brisk, freak, brisk,orb等。
+
+**匹配**：通过各个角点的描述子来判断它们在两张图像中的对应关系。常用方法如flann。
+
+**去外点**：去除错误匹配的外点，保留正确的内点。常用方法有Ransac, GTM。
+
+这里我们只介绍最常用的Harris算子。
+
+## Harris Corner Detector
+
+Harris Corner Detector是Chris Harris和Mike Stephens于1988年提出的算子。
+
+论文：
+
+《A Combined Corner and Edge Detector》
+
+![](/images/img2/Harris.png)
+
+如上图所示。人眼对角点的识别通常是在一个局部的小区域或小窗口完成的。如果在各个方向上移动这个特征的小窗口，窗口内区域的灰度发生了较大的变化，那么就认为在窗口内遇到了角点。如果这个特定的窗口在图像各个方向上移动时，窗口内图像的灰度没有发生变化，那么窗口内就不存在角点；如果窗口在某一个方向移动时，窗口内图像的灰度发生了较大的变化，而在另一些方向上没有发生变化，那么，窗口内的图像可能就是一条直线的线段。
+
+对于图像$$I(x,y)$$，当在点(x,y)处平移$$(\Delta x,\Delta y)$$后的自相似性，可以通过自相关函数给出：
+
+$$c(x,y;\Delta x,\Delta y) = \sum_{(u,v)\in W(x,y)}w(u,v)(I(u,v) – I(u+\Delta x,v+\Delta y))^2$$
+
+其中，$$W(x,y)$$是以点(x,y)为中心的窗口，$$w(u,v)$$为加权函数，它既可是常数，也可以是高斯加权函数。
+
+![](/images/img2/harris_window.png)
+
+根据泰勒展开，对图像$$I(x,y)$$在平移$$(\Delta x,\Delta y)$$后进行一阶近似：
+
+$$I(u+\Delta x,v+\Delta y) = I(u,v)+I_x(u,v)\Delta x+I_y(u,v)\Delta y+O(\Delta x^2,\Delta y^2)\approx I(u,v)+I_x(u,v)\Delta x+I_y(u,v)\Delta y$$
+
+其中，$$I_x,I_y$$是图像$$I(x,y)$$的偏导数，则自相关函数可简化为：
+
+$$c(x,y;\Delta x,\Delta y)\approx \sum_w (I_x(u,v)\Delta x+I_y(u,v)\Delta y)^2=[\Delta x,\Delta y]M(x,y)\begin{bmatrix}\Delta x \\ \Delta y\end{bmatrix}$$
+
+其中：
+
+$$M(x,y)=\sum_w \begin{bmatrix}I_x(x,y)^2&I_x(x,y)I_y(x,y) \\ I_x(x,y)I_y(x,y)&I_y(x,y)^2\end{bmatrix} = \begin{bmatrix}\sum_w I_x(x,y)^2&\sum_w I_x(x,y)I_y(x,y) \\\sum_w I_x(x,y)I_y(x,y)&\sum_w I_y(x,y)^2\end{bmatrix}=\begin{bmatrix}A&C\\C&B\end{bmatrix}$$
+
+即：
+
+$$c(x,y;\Delta x,\Delta y)\approx A\Delta x^2+2C\Delta x\Delta y+B\Delta y^2$$
+
+其中：
+
+$$A=\sum_w I_x^2, B=\sum_w I_y^2,C=\sum_w I_x I_y$$
+
+二次项函数本质上就是一个椭圆函数。椭圆的扁率和尺寸是由M(x,y)的特征值$$\lambda_1, \lambda_2$$决定的，轴向是由M(x,y)的特征矢量决定的，如下图所示，椭圆方程为：
+
+$$[\Delta x,\Delta y]M(x,y)\begin{bmatrix}\Delta x \\ \Delta y\end{bmatrix} = 1$$
+
+![](/images/img2/harris_2.png)
+
+椭圆函数特征值与图像中的角点、直线（边缘）和平面之间的关系如下图所示。共可分为三种情况：
+
+**图像中的直线**。一个特征值大，另一个特征值小，$$\lambda_1\gg \lambda_2$$或$$\lambda_2\gg \lambda_1$$。自相关函数值在某一方向上大，在其他方向上小。
+
+**图像中的平面**。两个特征值都小，且近似相等；自相关函数数值在各个方向上都小。
+
+**图像中的角点**。两个特征值都大，且近似相等，自相关函数在所有方向都增大。
+
+![](/images/img2/harris_3.png)
+
+根据二次项函数特征值的计算公式，我们可以求M(x,y)矩阵的特征值。但是Harris给出的角点差别方法并不需要计算具体的特征值，而是计算一个角点响应值R来判断角点。R的计算公式为：
+
+$$R=det \boldsymbol{M} - \alpha(trace\boldsymbol{M})^2$$
+
+式中，$$det\boldsymbol{M}$$为矩阵$$\boldsymbol{M}=\begin{bmatrix}A&B\\B&C\end{bmatrix}$$的行列式；$$trace\boldsymbol{M}$$为矩阵M的直迹；$$\alpha$$为经验常数，取值范围为0.04~0.06。事实上，特征是隐含在$$det\boldsymbol{M}$$和$$trace\boldsymbol{M}$$中，因为，
+
+$$det\boldsymbol{M} = \lambda_1\lambda_2=AC-B^2$$
+
+$$trace\boldsymbol{M}=\lambda_2+\lambda_2=A+C$$
+
+## Harris角点的性质
+
+**增大$$\alpha$$的值，将减小角点响应值R，降低角点检测的灵性，减少被检测角点的数量；减小$$\alpha$$值，将增大角点响应值R，增加角点检测的灵敏性，增加被检测角点的数量**。
+
+**Harris角点检测算子对亮度和对比度的变化不敏感**。这是因为在进行Harris角点检测时，使用了微分算子对图像进行微分运算，而微分运算对图像密度的拉升或收缩和对亮度的抬高或下降不敏感。换言之，对亮度和对比度的仿射变换并不改变Harris响应的极值点出现的位置。
+
+Harris角点检测算子使用的是角点附近的区域灰度二阶矩矩阵。而二阶矩矩阵可以表示成一个椭圆，椭圆的长短轴正是二阶矩矩阵特征值平方根的倒数。当特征椭圆转动时，特征值并不发生变化，所以判断角点响应值R也不发生变化，由此说明**Harris角点检测算子具有旋转不变性**。
+
+**Harris角点检测算子不具有尺度不变性**。如下图所示，当右图被缩小时，在检测窗口尺寸不变的前提下，在窗口内所包含图像的内容是完全不同的。左侧的图像可能被检测为边缘或曲线，而右侧的图像则可能被检测为一个角点。
+
+![](/images/img2/harris_4.png)
+
+为了解决尺度不变性问题，可以使用多尺度Harris角点算法，将Harris角点检测算子与高斯尺度空间表示相结合，使其具有尺度不变性：
+
+$$\boldsymbol{M}=\mu(x,\sigma_I,\sigma_D)=\sigma_D^2g(\sigma_I)\otimes\begin{bmatrix}L_x^2(x,\sigma_D)&L_xL_y(x,\sigma_D)\\L_xL_y(x,\sigma_D)&L_y^2(x,\sigma_D)\end{bmatrix}$$
+
+## 参考
+
+http://blog.csdn.net/lwzkiller/article/details/54633670
+
+Harris角点检测原理详解
+
+http://www.cnblogs.com/ronny/p/4009425.html
+
+Harris角点
+
+https://blog.csdn.net/davebobo/article/details/52598850
+
+检测并匹配兴趣点
+
+https://blog.csdn.net/songzitea/article/details/17969375
+
+角点匹配方法
 
 # Eigenface
 
@@ -120,127 +252,4 @@ $$s(x)=\begin{cases}
 1, & \text{if  } x \ge 0 \\
 0, & \text{else} \\
 \end{cases}$$
-
-## 圆形LBP算子
-
-基本的LBP算子的最大缺陷在于它只覆盖了一个固定半径范围内的小区域，这显然不能满足不同尺寸和频率纹理的需要。为了适应不同尺度的纹理特征，并达到灰度和旋转不变性的要求，Ojala等对LBP算子进行了改进，将3x3邻域扩展到任意邻域，并用圆形邻域代替了正方形邻域，改进后的LBP算子允许在半径为R的圆形邻域内有任意多个像素点。从而得到了诸如半径为R的圆形区域内含有P个采样点的LBP算子。比如下图定了一个5x5的邻域：
-
-![](/images/img2/LBP_2.png)
-
-上图内有八个黑色的采样点，每个采样点的值可以通过下式计算：
-
-$$x_p=x_c+R\cos(\frac{2\pi p}{P})\\
-y_p=y_c-R\sin(\frac{2\pi p}{P})$$
-
-通过上式可以计算任意个采样点的坐标，但是计算得到的坐标未必完全是整数，所以可以通过双线性插值来得到该采样点的像素值：
-
-$$f(x,y)\approx \begin{bmatrix}
-1-x & x \\
-\end{bmatrix}
-\begin{bmatrix}
-f(0,0) & f(0,1) \\
-f(1,0) & f(1,1) \\
-\end{bmatrix}
-\begin{bmatrix}
-1-y \\ y \\
-\end{bmatrix}$$
-
-## LBP等价模式
-
-一个LBP算子可以产生不同的二进制模式，对于半径为R的圆形区域内含有P个采样点的LBP算子将会产生$$2^p$$种模式。很显然，随着邻域集内采样点数的增加，二进制模式的种类是急剧增加的。例如：5×5邻域内20个采样点，有$$$$＝1,048,576种二进制模式。如此多的二值模式无论对于纹理的提取还是对于纹理的识别、分类及信息的存取都是不利的。
-
-同时，过多的模式种类对于纹理的表达是不利的。例如，将LBP算子用于纹理分类或人脸识别时，常采用LBP模式的统计直方图来表达图像的信息，而较多的模式种类将使得数据量过大，且直方图过于稀疏。因此，需要对原始的LBP模式进行降维，使得数据量减少的情况下能最好的代表图像的信息。
-
-为了解决二进制模式过多的问题，提高统计性，Ojala提出了采用一种“等价模式”（Uniform Pattern）来对LBP算子的模式种类进行降维。Ojala等认为，在实际图像中，绝大多数LBP模式最多只包含两次从1到0或从0到1的跳变。因此，Ojala将“等价模式”定义为：当某个LBP所对应的循环二进制数从0到1或从1到0最多有两次跳变时，该LBP所对应的二进制就称为一个等价模式类。如00000000（0次跳变），00000111（只含一次从0到1的跳变），10001111（先由1跳到0，再由0跳到1，共两次跳变）都是等价模式类。除等价模式类以外的模式都归为另一类，称为混合模式类。
-
-通过这样的改进，二进制模式的种类大大减少，而不会丢失任何信息。模式数量由原来的$$2^p$$种减少为$$p(p-1)+2$$种。这种丢掉2次以上跳变信息的方法，实际上就是一种**高频滤波**。
-
-## LBP特征匹配
-
-如果将以上得到的LBP值直接用于人脸识别，其实和不提取LBP特征没什么区别，会造成计算量准确率等一系列问题。我们可以将一副人脸图像分为7x7的子区域，并在子区域内根据LBP值统计其直方图，以直方图作为其判别特征。这样做的好处是在一定范围内避免图像没完全对准的情况，同时也对LBP特征做了降维处理。
-
-对于得到的直方图特征，有多种方法可以判别其相似性。常见的有Histogram intersection和Chi square statistic。
-
-## Histogram intersection
-
-Histogram intersection出自以下论文：
-
-《The Pyramid Match Kernel: Discriminative Classification with Sets of Image Features》
-
->Kristen Grauman，Boston College本科（2001）+MIT硕士（2003）+MIT博士（2006），University of Texas at Austin教授，Marr Prize（2011）。导师是Trevor Darrell。   
->绝对的美女，靠脸吃饭都没问题的那种。   
->个人主页：   
->http://www.cs.utexas.edu/~grauman/   
->从她的主页来看，她手下有很多亚裔学生。还有一些在线课程，其中有部分是博士课程，只适合高手挑战。
-
->David Courtnay Marr，1945～1980，英国神经学家和生理学家。Trinity College, Cambridge博士（1972），MIT教授。35岁死于白血病。他在神经科学，尤其是视觉方面有重大贡献。   
->Marr Prize由International Conference on Computer Vision颁发，2年一次，是CV界的最高荣誉。何恺明是去年（2017）的新晋得主。
-
-假设图像或其他数据的特征可以构成直方图，根据直方图间距的不同可以得到多种类型的直方图：
-
-$$\Psi(x)=[H_{-1}(x),H_0(x),\dots,H_L(x)]$$
-
-H的下标每增加1,则直方图间距变为原来的两倍。$$H_{-1}$$表示每个样本都有自己的bin，而$$H_L$$表示所有的样本都在一个bin中。
-
-两个数据集的相似度可以用下式来匹配：
-
-$$K_\Delta(\Psi(y),\Psi(z))=\sum_{i=0}^Lw_iN_i$$
-
-其中，$$w_i=\frac{1}{2^i},N_i=I(H_i(y),H_i(z))-I(H_{i-1}(y),H_{i-1}(z))$$。
-
-I的计算方法如下图所示：
-
-![](/images/img2/Histogram_intersection.png)
-
-(a)里的y和z代表两种数据分布，三幅图代表三层金字塔，每一层里有间距相等的虚线。
-
-可以看到红点蓝点的位置是固定的，但是根据直方图宽度的不同可以划到不同的直方图里，如(b)所示。
-
-(c)图就是L的计算结果，是通过(b)里两种直方图取交集得来的。
-
->注意：这里的I表示的是交集里元素的个数（即(a)中的连线数），而不是交集的个数（即(c)中的绿条个数）。
-
-## Chi square statistic
-
-在《数学狂想曲（五）》中，我们给出了$$\chi^2$$检验的原理和公式。这里仅对于直方图相似度给出最后的公式：
-
-$$\chi_w^2(S,M)=\sum_{i,j}w_j\frac{(S_{i,j}-M_{i,j})^2}{S_{i,j}+M_{i,j}}$$
-
-其中，i为图像的某块小区域，j为小区域内直方图的某一列的值。$$w_j$$是每块小区域的权重，比如在人脸区域中，眼睛、嘴巴等区域包含的信息量更为丰富，那么这些区域的权重就可以设置的大一些。
-
-## 参考
-
-http://blog.csdn.net/smartempire/article/details/23249517
-
-LBP方法
-
-http://blog.csdn.net/dujian996099665/article/details/8886576
-
-LBP算法的研究及其实现
-
-https://mp.weixin.qq.com/s/iFlnZ8z5baUdWCZxIGkq5g
-
-机器学习实战——LBP特征提取
-
-# Fisherface
-
-Fisherface由Peter N. Belhumeur, Joao P. Hespanha和David J. Kriegman于1997年提出。
-
->Peter N. Belhumeur，Brown University本科（1985）+Harvard University博士（1993）,Yale University和Columbia University教授。
-
->Joao P. Hespanha，Instituto Superior Técnico, Lisbon, Portugal本硕（1991,1993）+ Yale University博士。UCSB教授。
-
->David J. Kriegman，Princeton University本科（1983）+Stanford University硕博（1984,1989）。UCSD教授。
-
-论文：
-
-《Eigenfaces vs. Fisherfaces: Recognition Using Class Specific Linear Projection》
-
-Eigenfaces的主要原理基于PCA，而Fisherface的主要原理基于LDA（参见《机器学习（三十一）》）。这里不再赘述。
-
-参考：
-
-http://blog.csdn.net/smartempire/article/details/23377385
-
-Fisherface（LDA）
 

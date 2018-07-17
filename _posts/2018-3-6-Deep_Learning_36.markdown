@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十六）——深度推荐系统, Recursive NN, 多任务学习, AutoDL
+title:  深度学习（三十六）——深度推荐系统, Recursive NN, AutoDL
 category: DL 
 ---
 
@@ -56,6 +56,10 @@ https://mp.weixin.qq.com/s/JNGKz4-fWG4ygl7f6UkxcQ
 
 DeepFM
 
+这些算法的演化路径具体来说有两条：其一是从FM开始推演其在深度学习上的各种推广（对应下图的红线），另一条是从embedding+MLP自身的演进特点结合CTR预估本身的业务场景进行推演（对应下图黑线部分）。 
+
+![](/images/img2/DL_recommend.jpg)
+
 ## 工具
 
 https://www.librec.net/
@@ -63,6 +67,10 @@ https://www.librec.net/
 这是一个Java写的推荐系统。东北大学的郭贵冰主持的项目。该网址同时也有不少相关论文可供阅读。
 
 ## 参考
+
+https://mp.weixin.qq.com/s/GMHjXa2r_1SG3HsA-bcIOQ
+
+从FM推演各深度CTR预估模型
 
 https://zhuanlan.zhihu.com/p/26237106
 
@@ -281,52 +289,6 @@ http://blog.csdn.net/qq_26609915/article/details/52119512
 http://blog.csdn.net/mengmengz07/article/details/51348554
 
 recursive neural network梳理
-
-# 多任务学习
-
-https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA
-
-多任务学习-Multitask Learning概述
-
-https://mp.weixin.qq.com/s/A-CVKTz_moaFzTYywSt2gg
-
-张宇 杨强：多任务学习概述
-
-https://mp.weixin.qq.com/s/ZlCI02UdRuFBc-uKqIPE_w
-
-深度学习多任务学习综述
-
-https://mp.weixin.qq.com/s/QXOy2jo4RhCZrD5bSVzBOQ
-
-共享相关任务表征，一文读懂深度神经网络多任务学习
-
-https://mp.weixin.qq.com/s/mm9bXXTEzd8DwyYlMgGMZg
-
-NLP多任务学习：一种层次增长的神经网络结构
-
-https://mp.weixin.qq.com/s/X6FwTgr282hbqgOz3oBX-w
-
-多任务学习概述论文：从定义和方法到应用和原理分析
-
-https://blog.csdn.net/CoderPai/article/details/80080455
-
-多任务学习与深度学习
-
-https://blog.csdn.net/CoderPai/article/details/80087188
-
-利用TensorFlow一步一步构建一个多任务学习模型
-
-https://mp.weixin.qq.com/s/fcFb6WkJVP8TYpoxkQgiWQ
-
-CMU提出“十字绣网络”，自动决定多任务学习的最佳共享层
-
-https://mp.weixin.qq.com/s/i7WAFjQHK1NGVACR8x3v0A
-
-自然语言十项全能：转化为问答的多任务学习
-
-https://mp.weixin.qq.com/s/NpO1UP_mzyaeqW26xLY1Xg
-
-CVPR 2018最佳论文作者亲笔解读：研究视觉任务关联性的Taskonomy
 
 # AutoDL
 

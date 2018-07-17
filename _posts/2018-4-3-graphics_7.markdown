@@ -1,8 +1,133 @@
 ---
 layout: post
-title:  图像处理理论（七）——Viola-Jones, 经典目标跟踪算法, Harris, 从BOW到SPM, ILSVRC 2010考古
+title:  图像处理理论（七）——LBP, Fisherface, Viola-Jones, 经典目标跟踪算法
 category: graphics 
 ---
+
+# LBP（续）
+
+## 圆形LBP算子
+
+基本的LBP算子的最大缺陷在于它只覆盖了一个固定半径范围内的小区域，这显然不能满足不同尺寸和频率纹理的需要。为了适应不同尺度的纹理特征，并达到灰度和旋转不变性的要求，Ojala等对LBP算子进行了改进，将3x3邻域扩展到任意邻域，并用圆形邻域代替了正方形邻域，改进后的LBP算子允许在半径为R的圆形邻域内有任意多个像素点。从而得到了诸如半径为R的圆形区域内含有P个采样点的LBP算子。比如下图定了一个5x5的邻域：
+
+![](/images/img2/LBP_2.png)
+
+上图内有八个黑色的采样点，每个采样点的值可以通过下式计算：
+
+$$x_p=x_c+R\cos(\frac{2\pi p}{P})\\
+y_p=y_c-R\sin(\frac{2\pi p}{P})$$
+
+通过上式可以计算任意个采样点的坐标，但是计算得到的坐标未必完全是整数，所以可以通过双线性插值来得到该采样点的像素值：
+
+$$f(x,y)\approx \begin{bmatrix}
+1-x & x \\
+\end{bmatrix}
+\begin{bmatrix}
+f(0,0) & f(0,1) \\
+f(1,0) & f(1,1) \\
+\end{bmatrix}
+\begin{bmatrix}
+1-y \\ y \\
+\end{bmatrix}$$
+
+## LBP等价模式
+
+一个LBP算子可以产生不同的二进制模式，对于半径为R的圆形区域内含有P个采样点的LBP算子将会产生$$2^p$$种模式。很显然，随着邻域集内采样点数的增加，二进制模式的种类是急剧增加的。例如：5×5邻域内20个采样点，有$$$$＝1,048,576种二进制模式。如此多的二值模式无论对于纹理的提取还是对于纹理的识别、分类及信息的存取都是不利的。
+
+同时，过多的模式种类对于纹理的表达是不利的。例如，将LBP算子用于纹理分类或人脸识别时，常采用LBP模式的统计直方图来表达图像的信息，而较多的模式种类将使得数据量过大，且直方图过于稀疏。因此，需要对原始的LBP模式进行降维，使得数据量减少的情况下能最好的代表图像的信息。
+
+为了解决二进制模式过多的问题，提高统计性，Ojala提出了采用一种“等价模式”（Uniform Pattern）来对LBP算子的模式种类进行降维。Ojala等认为，在实际图像中，绝大多数LBP模式最多只包含两次从1到0或从0到1的跳变。因此，Ojala将“等价模式”定义为：当某个LBP所对应的循环二进制数从0到1或从1到0最多有两次跳变时，该LBP所对应的二进制就称为一个等价模式类。如00000000（0次跳变），00000111（只含一次从0到1的跳变），10001111（先由1跳到0，再由0跳到1，共两次跳变）都是等价模式类。除等价模式类以外的模式都归为另一类，称为混合模式类。
+
+通过这样的改进，二进制模式的种类大大减少，而不会丢失任何信息。模式数量由原来的$$2^p$$种减少为$$p(p-1)+2$$种。这种丢掉2次以上跳变信息的方法，实际上就是一种**高频滤波**。
+
+## LBP特征匹配
+
+如果将以上得到的LBP值直接用于人脸识别，其实和不提取LBP特征没什么区别，会造成计算量准确率等一系列问题。我们可以将一副人脸图像分为7x7的子区域，并在子区域内根据LBP值统计其直方图，以直方图作为其判别特征。这样做的好处是在一定范围内避免图像没完全对准的情况，同时也对LBP特征做了降维处理。
+
+对于得到的直方图特征，有多种方法可以判别其相似性。常见的有Histogram intersection和Chi square statistic。
+
+## Histogram intersection
+
+Histogram intersection出自以下论文：
+
+《The Pyramid Match Kernel: Discriminative Classification with Sets of Image Features》
+
+>Kristen Grauman，Boston College本科（2001）+MIT硕士（2003）+MIT博士（2006），University of Texas at Austin教授，Marr Prize（2011）。导师是Trevor Darrell。   
+>绝对的美女，靠脸吃饭都没问题的那种。   
+>个人主页：   
+>http://www.cs.utexas.edu/~grauman/   
+>从她的主页来看，她手下有很多亚裔学生。还有一些在线课程，其中有部分是博士课程，只适合高手挑战。
+
+>David Courtnay Marr，1945～1980，英国神经学家和生理学家。Trinity College, Cambridge博士（1972），MIT教授。35岁死于白血病。他在神经科学，尤其是视觉方面有重大贡献。   
+>Marr Prize由International Conference on Computer Vision颁发，2年一次，是CV界的最高荣誉。何恺明是去年（2017）的新晋得主。
+
+假设图像或其他数据的特征可以构成直方图，根据直方图间距的不同可以得到多种类型的直方图：
+
+$$\Psi(x)=[H_{-1}(x),H_0(x),\dots,H_L(x)]$$
+
+H的下标每增加1,则直方图间距变为原来的两倍。$$H_{-1}$$表示每个样本都有自己的bin，而$$H_L$$表示所有的样本都在一个bin中。
+
+两个数据集的相似度可以用下式来匹配：
+
+$$K_\Delta(\Psi(y),\Psi(z))=\sum_{i=0}^Lw_iN_i$$
+
+其中，$$w_i=\frac{1}{2^i},N_i=I(H_i(y),H_i(z))-I(H_{i-1}(y),H_{i-1}(z))$$。
+
+I的计算方法如下图所示：
+
+![](/images/img2/Histogram_intersection.png)
+
+(a)里的y和z代表两种数据分布，三幅图代表三层金字塔，每一层里有间距相等的虚线。
+
+可以看到红点蓝点的位置是固定的，但是根据直方图宽度的不同可以划到不同的直方图里，如(b)所示。
+
+(c)图就是L的计算结果，是通过(b)里两种直方图取交集得来的。
+
+>注意：这里的I表示的是交集里元素的个数（即(a)中的连线数），而不是交集的个数（即(c)中的绿条个数）。
+
+## Chi square statistic
+
+在《数学狂想曲（五）》中，我们给出了$$\chi^2$$检验的原理和公式。这里仅对于直方图相似度给出最后的公式：
+
+$$\chi_w^2(S,M)=\sum_{i,j}w_j\frac{(S_{i,j}-M_{i,j})^2}{S_{i,j}+M_{i,j}}$$
+
+其中，i为图像的某块小区域，j为小区域内直方图的某一列的值。$$w_j$$是每块小区域的权重，比如在人脸区域中，眼睛、嘴巴等区域包含的信息量更为丰富，那么这些区域的权重就可以设置的大一些。
+
+## 参考
+
+http://blog.csdn.net/smartempire/article/details/23249517
+
+LBP方法
+
+http://blog.csdn.net/dujian996099665/article/details/8886576
+
+LBP算法的研究及其实现
+
+https://mp.weixin.qq.com/s/iFlnZ8z5baUdWCZxIGkq5g
+
+机器学习实战——LBP特征提取
+
+# Fisherface
+
+Fisherface由Peter N. Belhumeur, Joao P. Hespanha和David J. Kriegman于1997年提出。
+
+>Peter N. Belhumeur，Brown University本科（1985）+Harvard University博士（1993）,Yale University和Columbia University教授。
+
+>Joao P. Hespanha，Instituto Superior Técnico, Lisbon, Portugal本硕（1991,1993）+ Yale University博士。UCSB教授。
+
+>David J. Kriegman，Princeton University本科（1983）+Stanford University硕博（1984,1989）。UCSD教授。
+
+论文：
+
+《Eigenfaces vs. Fisherfaces: Recognition Using Class Specific Linear Projection》
+
+Eigenfaces的主要原理基于PCA，而Fisherface的主要原理基于LDA（参见《机器学习（三十一）》）。这里不再赘述。
+
+参考：
+
+http://blog.csdn.net/smartempire/article/details/23377385
+
+Fisherface（LDA）
 
 # Viola-Jones
 
@@ -40,7 +165,7 @@ Viola-Jones框架主要有三个要点：
 
 ## Integral image
 
-
+Integral image一种计算差分数据的快速方法。
 
 ![](/images/img2/integral_image_a.png)
 
@@ -171,192 +296,4 @@ https://www.zhihu.com/question/25371476
 http://freemind.pluskid.org/machine-learning/hmm-kalman-particle-filtering
 
 漫谈HMM：Kalman/Particle Filtering
-
-## TLD
-
-http://blog.csdn.net/zouxy09/article/details/7893011
-
-TLD（Tracking-Learning-Detection）学习与源码理解系列文章
-
-http://blog.csdn.net/carson2005/article/details/7647500
-
-比微软kinect更强的视频跟踪算法--TLD跟踪算法介绍
-
-http://www.cnblogs.com/lxy2017/p/3927456.html
-
-TLD（Tracking-Learning-Detection）一种目标跟踪算法
-
-# Harris
-
-## 角点
-
-角点是图像很重要的特征,对图像图形的理解和分析有很重要的作用。角点在保留图像图形重要特征的同时,可以有效地减少信息的数据量,使其信息的含量很高,有效地提高了计算的速度,有利于图像的可靠匹配,使得实时处理成为可能。角点在三维场景重建运动估计，目标跟踪、目标识别、图像配准与匹配等计算机视觉领域起着非常重要的作用。
-
-下面有两幅不同视角的图像，通过找出对应的角点进行匹配。
-
-![](/images/img2/corner_matching.png)
-
-我们可以直观的概括下角点所具有的特征：
-
->轮廓之间的交点；
-
->对于同一场景，即使视角发生变化，通常具备稳定性质的特征；
-
->该点附近区域的像素点无论在梯度方向上还是其梯度幅值上有着较大变化；
-
-角点匹配（corner matching）是指寻找两幅图像之间的特征像素点的对应关系，从而确定两幅图像的位置关系。
-
-角点匹配可以分为以下四个步骤：
-
-**提取检测子**：在两张待匹配的图像中寻找那些最容易识别的像素点(角点)，比如纹理丰富的物体边缘点等。
-
-**提取描述子**：对于检测出的角点，用一些数学上的特征对其进行描述，如梯度直方图，局部随机二值特征等。检测子和描述子的常用提取方法有:sift, harris, surf, fast, agast, brisk, freak, brisk,orb等。
-
-**匹配**：通过各个角点的描述子来判断它们在两张图像中的对应关系。常用方法如flann。
-
-**去外点**：去除错误匹配的外点，保留正确的内点。常用方法有Ransac, GTM。
-
-这里我们只介绍最常用的Harris算子。
-
-## Harris Corner Detector
-
-Harris Corner Detector是Chris Harris和Mike Stephens于1988年提出的算子。
-
-论文：
-
-《A Combined Corner and Edge Detector》
-
-![](/images/img2/Harris.png)
-
-如上图所示。人眼对角点的识别通常是在一个局部的小区域或小窗口完成的。如果在各个方向上移动这个特征的小窗口，窗口内区域的灰度发生了较大的变化，那么就认为在窗口内遇到了角点。如果这个特定的窗口在图像各个方向上移动时，窗口内图像的灰度没有发生变化，那么窗口内就不存在角点；如果窗口在某一个方向移动时，窗口内图像的灰度发生了较大的变化，而在另一些方向上没有发生变化，那么，窗口内的图像可能就是一条直线的线段。
-
-
-
-$$c(x,y;\Delta x,\Delta y) = \sum_{(u,v)\in W(x,y)}w(u,v)(I(u,v) – I(u+\Delta x,v+\Delta y))^2$$
-
-## 参考
-
-http://blog.csdn.net/lwzkiller/article/details/54633670
-
-Harris角点检测原理详解
-
-http://www.cnblogs.com/ronny/p/4009425.html
-
-Harris角点
-
-https://blog.csdn.net/davebobo/article/details/52598850
-
-检测并匹配兴趣点
-
-https://blog.csdn.net/songzitea/article/details/17969375
-
-角点匹配方法
-
-# 从BOW到SPM
-
-## BOW
-
-Bag-of-words模型是信息检索领域常用的文档表示方法。在信息检索中，BOW模型假定对于一个文档，忽略它的单词顺序和语法、句法等要素，将其仅仅看作是若干个词汇的集合，文档中每个单词的出现都是独立的，不依赖于其它单词是否出现。
-
-为了表示一幅图像，我们可以将图像看作文档，即若干个“视觉词汇”的集合，同样的，视觉词汇相互之间没有顺序。
-
-![](/images/article/cv_bow.jpg)
-
-由于图像中的词汇不像文本文档中的那样是现成的，我们需要首先从图像中提取出相互独立的视觉词汇，这通常需要经过三个步骤：
-
-（1）特征检测。
-
-（2）特征表示。
-
-（3）单词本的生成。
-
-而SIFT算法是提取图像中局部不变特征的应用最广泛的算法，因此我们可以用SIFT算法从图像中提取不变特征点，作为视觉词汇，并构造单词表，用单词表中的单词表示一幅图像。
-
-参考：
-
-http://blog.csdn.net/v_JULY_v/article/details/6555899
-
-SIFT算法的应用--目标识别之Bag-of-words模型
-
-https://zhuanlan.zhihu.com/p/25999669
-
-BOW算法，被CNN打爆之前的王者
-
-## SPM
-
-http://blog.csdn.net/chlele0105/article/details/16972695
-
-SPM:Spatial Pyramid Matching for Recognizing Natural Scene Categories空间金字塔匹配
-
-http://blog.csdn.net/jwh_bupt/article/details/9625469
-
-Spatial Pyramid Matching 小结
-
-# ILSVRC 2010考古
-
-ILSVRC 2010的冠军是NEC和UIUC的联合队伍。这也是DL于2012年大放光彩之前比较杰出的成果。虽然现在它通常作为反面教材，出现在与DL的对比场景中，然而不可否认的是，它仍然是一个算法的杰作。
-
->林元庆，清华大学硕士+宾夕法尼亚大学博士（2008年）。原百度研究院院长。
-
-![](/images/article/ILSVRC_2010.png)
-
-上图是NEC算法的基本流程图。这里不打算描述整个算法，而仅对其中涉及的术语做一个解释。
-
-# LDA-MLLT
-
-Maximum Likelihood Linear Transform (MLLT)，又名Global Semi-tied Covariance (STC)。因此，在科技文献中，常被称作STC/MLLT。
-
-《Semi-tied Covariance Matrices for Hidden Markov Models》
-
-《Improved feature processing for Deep Neural Networks》
-
-![](/images/img2/MLLT.png)
-
-https://blog.csdn.net/xmdxcsj/article/details/78512652
-
-声学特征变换 STC/MLLT
-
-# WFST
-
-## 概述
-
-Weighted Finite State Transducer是目前解码器模块的关键技术。
-
-论文：
-
-《Speech Recognition with Weighted Finite-State Transducers》
-
->Mehryar Mohri，法国人，Ecole Polytechnique本科+ENS Ulm硕士+University of Paris 7博士。New York University教授。Google研究顾问。   
->个人主页：   
->https://cs.nyu.edu/~mohri/
-
-https://cs.nyu.edu/~mohri/courses.html
-
-这是Mohri的课程主页。
-
-https://cs.nyu.edu/~mohri/asr12/
-
-作为WFST的发明人，Mohri的Speech Recognition课程在解码器方面有相当大的篇幅。
-
-此外，OpenFst的官网也有一些教程：
-
-http://openfst.org/twiki/bin/view/FST/FstBackground
-
-OpenFst Background Material
-
-其中，最重要的是两个tutorial：
-
-http://openfst.org/twiki/bin/view/FST/FstHltTutorial
-
-OpenFst: An Open-Source, Weighted Finite-State Transducer Library and its Applications to Speech and Language
-
-http://openfst.org/twiki/bin/view/FST/FstSltTutorial
-
-OpenFst: a General and Efficient Weighted Finite-State Transducer Library
-
-以下内容主要参考下文：
-
-http://vsooda.github.io/2016/08/28/wfst/
-
-加权有限状态转换器
 

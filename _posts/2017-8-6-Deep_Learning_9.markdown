@@ -217,6 +217,10 @@ https://mp.weixin.qq.com/s/Lll9e5bCVwxdD0-Q2wamKg
 
 一文详解生成对抗网络(GAN)的原理
 
+https://mp.weixin.qq.com/s/Qso0pv0NjtNrYhZR-sV2xg
+
+通俗了解对抗生成网络(GAN)核心思想
+
 https://mp.weixin.qq.com/s/YLys6L9WT7eCC-xGr1j0Iw
 
 带多分类判别器的GAN模型

@@ -56,7 +56,63 @@ https://stackoverflow.com/questions/27475977/c-undefined-reference-to-sqrt-even-
 
 C - undefined reference to “sqrt” even with '-lm'
 
-# WFST（续）
+# LDA-MLLT
+
+Maximum Likelihood Linear Transform (MLLT)，又名Global Semi-tied Covariance (STC)。因此，在科技文献中，常被称作STC/MLLT。
+
+《Semi-tied Covariance Matrices for Hidden Markov Models》
+
+《Improved feature processing for Deep Neural Networks》
+
+![](/images/img2/MLLT.png)
+
+https://blog.csdn.net/xmdxcsj/article/details/78512652
+
+声学特征变换 STC/MLLT
+
+# WFST
+
+## 概述
+
+Weighted Finite State Transducer是目前解码器模块的关键技术。
+
+论文：
+
+《Speech Recognition with Weighted Finite-State Transducers》
+
+>Mehryar Mohri，法国人，Ecole Polytechnique本科+ENS Ulm硕士+University of Paris 7博士。New York University教授。Google研究顾问。   
+>个人主页：   
+>https://cs.nyu.edu/~mohri/
+
+https://cs.nyu.edu/~mohri/courses.html
+
+这是Mohri的课程主页。
+
+https://cs.nyu.edu/~mohri/asr12/
+
+作为WFST的发明人，Mohri的Speech Recognition课程在解码器方面有相当大的篇幅。
+
+此外，OpenFst的官网也有一些教程：
+
+http://openfst.org/twiki/bin/view/FST/FstBackground
+
+OpenFst Background Material
+
+其中，最重要的是两个tutorial：
+
+http://openfst.org/twiki/bin/view/FST/FstHltTutorial
+
+OpenFst: An Open-Source, Weighted Finite-State Transducer Library and its Applications to Speech and Language
+
+http://openfst.org/twiki/bin/view/FST/FstSltTutorial
+
+OpenFst: a General and Efficient Weighted Finite-State Transducer Library
+
+以下内容主要参考下文：
+
+http://vsooda.github.io/2016/08/28/wfst/
+
+加权有限状态转换器
 
 ## FSM
 
@@ -271,46 +327,4 @@ $$ED(0\to 3)=ED(0\to 1)+ED(1\to 3)=\epsilon:\epsilon/0.2+\epsilon:\epsilon/0.6=\
 这里以0->4之间的`a:a/1.6`为例介绍一下计算方法。首先，0->4之间并没有直接的`a:a`连线，但是3->4有`a:a`连线。因此：
 
 $$a:a/0.8+ED(0\to 3)=a:a/0.8+\epsilon:\epsilon/0.8=a:a/1.6$$
-
-## Determinization
-
-Determinization：所有状态在接受某个输入后只有一条输出边，而且不包含$$\epsilon$$。
-
-这个操作的根本前提：两个自动机或者转换器是否相等，不需要每条边，每个权重都相等。只需要对于任何一个输入序列，其输出及权重相同，而不用在意权重的分布是否相同。
-
-一般使用$$\otimes$$来计算分支内的权重。使用$$\oplus$$来处理分支间最终输出的权重。
-
-![](/images/img2/determinization.png)
-
-Determinization之后的FST采用`(原始状态号,剩余权重)`的方式表示Node。例如上图中，从(0,0)到(1,0)(2,1)的边a/1上消耗权重1，原图状态1，状态2剩余权重分别是0和1，所以用(1,0)(2,1)表示。 在输出到下一个状态时候，将剩余权重加上。比如原图中d/6,这里变成d/7。
-
-## Pushing
-
-Pushing包括Weight Pushing和Label Pushing两种情况。
-
-![](/images/img2/weight_pushing.png)
-
-上图是Weight Pushing的例子。如果WFST不在乎权重的分布，而只在乎最终权重的大小的话，则可以将权重前推（Pushing），以利于最小化。
-
-![](/images/img2/label_pushing.png)
-
-上图是Label Pushing的例子，将非$$\epsilon$$的label前推。
-
-Kaldi中没有使用weight pushing。
-
-## Minimization
-
-最小化的目的是减少原图中的状态数，以及转移边数。从而减少存储空间和计算时间。
-
-最小化一般是消除相同结点。常用算法与DFA的最小化算法类似。
-
-## Pruning
-
-![](/images/img2/pruning.png)
-
-Pruning的目的是去除大于最短路径的$$\otimes$$分支。
-
-## Other
-
-除了这些常用操作之外，还有add-self-loops和remove-disambiguation-symbols等操作。这里不再赘述。
 
