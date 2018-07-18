@@ -334,10 +334,6 @@ https://zhuanlan.zhihu.com/p/34286453
 
 林倞：Beyond Supervised Deep Learning--后深度学习时代的挑战
 
-https://mp.weixin.qq.com/s/5OMT6BvqkUgtshow_tLkNw
-
-精准防御对抗性攻击，清华大学提出对抗正则化训练方法DeepDefense
-
 https://mp.weixin.qq.com/s/PC5KXU0zmE1eg2k_S9_pQg
 
 增加深度，加速神经网络优化？这是一份反直觉的实验结果

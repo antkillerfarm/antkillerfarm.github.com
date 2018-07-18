@@ -285,3 +285,20 @@ https://mp.weixin.qq.com/s/ctLe1UbvWqBJ8jh-ppU3rA
 https://mp.weixin.qq.com/s/zzCRiSSyfTAFYSGMnr8zfg
 
 机器学习中L1和L2正则化的直观解释
+
+https://mp.weixin.qq.com/s/xwYldlEjJ9Co9uo8o0mlKQ
+
+深度学习之DNN的多种正则化方式
+
+https://mp.weixin.qq.com/s/-axtm6ZBm8yYneiA3mvQrw
+
+SIGIR 2018大会最佳短论文：利用对抗学习的跨域正则化
+
+https://mp.weixin.qq.com/s/5OMT6BvqkUgtshow_tLkNw
+
+精准防御对抗性攻击，清华大学提出对抗正则化训练方法DeepDefense
+
+https://mp.weixin.qq.com/s/FtWA1rff13e7_FM0lJKCVg
+
+Petuum提出新型正则化方法：非重叠促进型变量选择
+

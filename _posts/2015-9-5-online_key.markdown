@@ -187,7 +187,11 @@ F表示相关的算法。只有符合F算法的P和U，才能通过程序的验�
 
 http://www.cnblogs.com/wuhou/archive/2008/09/28/1301071.html
 
+Ubuntu安装配置Mysql
+
 http://www.cnblogs.com/wanghetao/p/3806888.html
+
+MySQL添加用户、删除用户与授权
 
 ## 执行脚本
 
@@ -198,6 +202,8 @@ mysql命令行下执行：
 ## 导入csv文件
 
 http://www.mysqltutorial.org/import-csv-file-mysql-table/
+
+Import CSV File Into MySQL Table
 
 示例：
 
@@ -217,6 +223,8 @@ IGNORE 1 ROWS;
 ## 日志
 
 http://www.cnblogs.com/jevo/p/3281139.html
+
+MySQL日志
 
 ## 时间的格式
 
@@ -252,6 +260,8 @@ View并不在数据库中存储数据，而是在查询时，执行其中的sele
 
 http://www.cnblogs.com/GT_Andy/archive/2009/12/25/1921914.html
 
+SQL 模糊查询
+
 ## 三种Join的区别
 
 left join(左联接)返回包括左表中的所有记录和右表中联结字段相等的记录。
@@ -261,4 +271,12 @@ right join(右联接)返回包括右表中的所有记录和左表中联结字�
 inner join(等值连接)只返回两个表中联结字段相等的行。
 
 http://www.cnblogs.com/pcjim/articles/799302.html
+
+sql之left join、right join、inner join的区别
+
+## 参考
+
+https://mp.weixin.qq.com/s/ok6VD1b5fhG_mY9O3d_VGA
+
+记住，永远不要在MySQL中使用“utf8”
 

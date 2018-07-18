@@ -296,10 +296,6 @@ https://blog.csdn.net/zhengzhb/article/details/8590390
 
 SQL查找删除重复行
 
-https://mp.weixin.qq.com/s/k5gNa71eRbnxt_oSR-pmyw
-
-MySQL锁之源码探索
-
 https://mp.weixin.qq.com/s/09BlPee0-kP-At2aDyDbMw
 
 中国数据库40年历史：隐秘的江湖与恩怨

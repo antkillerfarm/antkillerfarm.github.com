@@ -276,7 +276,3 @@ https://mp.weixin.qq.com/s/NJf5e25tvT_xKXLD7UY1AQ
 
 MySQL智能调度系统。这篇blog其实和MySQL关系不大，算是DL在负载均衡方面的应用吧。
 
-https://mp.weixin.qq.com/s/-axtm6ZBm8yYneiA3mvQrw
-
-SIGIR 2018大会最佳短论文：利用对抗学习的跨域正则化
-

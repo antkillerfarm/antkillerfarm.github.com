@@ -262,6 +262,10 @@ https://mp.weixin.qq.com/s/e_TzQxFLAonLMyYAhte6Cg
 
 face-api.js：在浏览器中进行人脸识别的JavaScript接口
 
+https://mp.weixin.qq.com/s/23FoaaA3Z_3kf03BmepFPg
+
+如何将模型部署到安卓移动端，这里有一份简单教程
+
 # 汽车声学
 
 https://zhuanlan.zhihu.com/p/22722073

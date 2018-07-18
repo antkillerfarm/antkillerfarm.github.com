@@ -292,3 +292,8 @@ https://mp.weixin.qq.com/s/V_VDw-rRF49qXKTDG1Mpew
 
 知识图谱论文大合集，这份干货满满的笔记解读值得收藏
 
+https://mp.weixin.qq.com/s/RpPEqjRUnBIHpX7_guItoQ
+
+如何构建行业知识图谱
+
+

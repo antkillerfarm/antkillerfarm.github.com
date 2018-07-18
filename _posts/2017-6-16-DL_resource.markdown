@@ -410,10 +410,6 @@ https://mp.weixin.qq.com/s/9xVMh2Zf9fP0_vXRoTe7ng
 
 详解前馈、卷积和循环神经网络技术
 
-https://mp.weixin.qq.com/s/xwYldlEjJ9Co9uo8o0mlKQ
-
-深度学习之DNN的多种正则化方式
-
 https://mp.weixin.qq.com/s/GYno7htF_-Hw4UN_Nc2etg
 
 直观梳理深度学习关键概念：优化算法、调参基本思路、正则化方式等

@@ -334,3 +334,13 @@ NN计算问题的瓶颈主要包括两类：
 
 2.IO问题，也称带宽问题。早期的NN由于算子有限，基本只有FC、Conv、Pooling、Activation等少数几种算子。但现在的NN模型算子可就多了，且有相当部分算子属于非计算类的搬运数据算子，比如permute等。针对这类运算，一般采用被称作Tensor Processor的硬件单元进行加速。
 
+# NLP参考资源
+
+https://mp.weixin.qq.com/s/pXmYJA6-1vtHTwTNanLovQ
+
+Encoder-Decoder自动生成对联，要试试么？
+
+https://mp.weixin.qq.com/s/_SfY-JZsUEKReSoI6qHg9w
+
+TA-NMT：利用大语种语料，提升小语种神经机器翻译能力
+

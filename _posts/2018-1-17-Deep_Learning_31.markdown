@@ -254,6 +254,10 @@ https://mp.weixin.qq.com/s/YgYod-gcFZruEGtE4wF87w
 
 牛津大学提出全新生成式模型“SQAIR”，用于移动目标的视频理解
 
+https://mp.weixin.qq.com/s/eBNoTDOMLlVymiU3LUqSgQ
+
+用Attention模型自动生成图像字幕
+
 # Multi-agent
 
 https://zhuanlan.zhihu.com/p/39037444

@@ -216,6 +216,10 @@ https://mp.weixin.qq.com/s/mQqEe4LC0VHBH2ZAtFanWQ
 
 基于深度学习的图像语义分割方法回顾
 
+https://mp.weixin.qq.com/s/9G3kahaoOSoB-DiGey1VLA
+
+基于深度学习的图像语义分割算法综述
+
 https://mp.weixin.qq.com/s/zOWA1oKbopZJuYIAYYlKTA
 
 港中文-商汤联合论文：自监督语义分割的混合与匹配调节
