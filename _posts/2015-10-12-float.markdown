@@ -288,3 +288,7 @@ https://mp.weixin.qq.com/s/ZvTm9omnIRqPXcLFbZtoeg
 
 深度学习的关键：无监督深度学习简介
 
+https://mp.weixin.qq.com/s/5xlSoC5sgzsAwMYMSFCjnw
+
+TextTopicNet:CMU开源无标注高精度自监督模型
+

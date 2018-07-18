@@ -344,3 +344,11 @@ https://mp.weixin.qq.com/s/_SfY-JZsUEKReSoI6qHg9w
 
 TA-NMT：利用大语种语料，提升小语种神经机器翻译能力
 
+https://mp.weixin.qq.com/s/6_FHq8IrkAW_Y5FSYcJ0fw
+
+CMU与谷歌大脑联合出品：62页PPT带你理解SQuAD大赛冠军--QANet
+
+https://mp.weixin.qq.com/s/uL7J5cSU3P7QsFczvT1fTA
+
+基于深度学习的文本分类6大算法-原理、结构、论文、源码打包分享
+

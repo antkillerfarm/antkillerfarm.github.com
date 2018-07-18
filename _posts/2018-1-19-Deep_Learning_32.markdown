@@ -320,6 +320,10 @@ https://mp.weixin.qq.com/s/iqLHjbmLOmvfEeEUB_SqSA
 
 计算机视觉视频理解领域的经典方法和最新成果
 
+https://mp.weixin.qq.com/s/LzKsD_vFlA1n-TYOGJkDZg
+
+商汤科技开源DAVIS2017视频目标分割冠军代码
+
 # 多任务学习
 
 https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA

@@ -308,6 +308,10 @@ https://mp.weixin.qq.com/s/VCJoBf2ECdvyRLU7atciYA
 
 浙江大学和帝国理工大学发布的交通速度预测数据集
 
+https://mp.weixin.qq.com/s/WPESySGMv_ehSt6oNUkVGg
+
+视频语义显著实例分割数据集SESIV
+
 # 世说新语
 
 ## 2018.7（续）

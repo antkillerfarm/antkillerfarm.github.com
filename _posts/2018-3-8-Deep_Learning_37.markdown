@@ -304,6 +304,10 @@ https://mp.weixin.qq.com/s/XF4Sjx0jNPFdJFfAlYPJMQ
 
 超长综述让你走近深度人脸识别
 
+https://mp.weixin.qq.com/s/wHIT2pm_5O4MOR_QLpHVLQ
+
+PRNet：人脸3D重建与密集对齐
+
 ## Graph NN
 
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
