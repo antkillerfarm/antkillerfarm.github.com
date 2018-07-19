@@ -64,6 +64,10 @@ http://txshi-mt.com/2018/02/10/UTNN-12-Restricted-Boltzmann-Machines/
 
 受限玻尔兹曼机
 
+https://mp.weixin.qq.com/s/pWhJR6_6lRtDBl1MnYSIiw
+
+深度学习来一波，受限玻尔兹曼机原理及在推荐系统中的应用 
+
 http://www.cnblogs.com/kemaswill/p/3269138.html
 
 基于受限玻尔兹曼机(RBM)的协同过滤

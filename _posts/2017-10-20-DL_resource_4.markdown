@@ -66,7 +66,11 @@ https://mp.weixin.qq.com/s/86c59-nIsrTNUABx4QYobA
 
 https://mp.weixin.qq.com/s/9woLRUGuirTV91uuHaP69A
 
-中科大潘建伟团队在光量子处理器上成功实现拓扑数据分析
+中科大潘建伟团队在光量子处理器上成功实现拓扑数据分析cdewxs
+
+https://mp.weixin.qq.com/s/b3X44NlQOZokyl0jWkNH8A
+
+谷歌开源量子计算框架Cirq，可在Bristlecone处理器上运行
 
 ## AI与游戏
 

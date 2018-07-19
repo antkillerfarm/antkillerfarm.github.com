@@ -326,6 +326,10 @@ https://mp.weixin.qq.com/s/1oDVo7eGMGYODRd00OxpIw
 
 陈天奇团队推出开源AI芯片栈VTA，降低芯片设计门槛
 
+https://mp.weixin.qq.com/s/oOYGa4Mti6KpkpI4TtpitQ
+
+地平线杨铭：从无形视觉到有形芯片
+
 ## AI医疗
 
 https://github.com/albarqouni/Deep-Learning-for-Medical-Applications
