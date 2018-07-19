@@ -304,6 +304,10 @@ https://mp.weixin.qq.com/s/XF4Sjx0jNPFdJFfAlYPJMQ
 
 超长综述让你走近深度人脸识别
 
+https://mp.weixin.qq.com/s/wHIT2pm_5O4MOR_QLpHVLQ
+
+PRNet：人脸3D重建与密集对齐
+
 # 行人重识别
 
 行人重识别（Person re-identification）也称行人再识别，是利用计算机视觉技术判断图像或者视频序列中是否存在特定行人的技术。广泛被认为是一个图像检索的子问题。给定一个监控行人图像，检索跨设备下的该行人图像。旨在弥补目前固定的摄像头的视觉局限，并可与行人检测/行人跟踪技术相结合 ，可广泛应用于智能视频监控、智能安保等领域。

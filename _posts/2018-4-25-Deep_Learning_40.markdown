@@ -306,6 +306,10 @@ https://zhuanlan.zhihu.com/p/34757009
 
 场景文字检测—CTPN原理与实现
 
+https://mp.weixin.qq.com/s/h3VaKs0Pc44n-hXYNlkALA
+
+开源OCR文字识别软件Calamari
+
 # CRNN
 
 论文：

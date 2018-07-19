@@ -144,6 +144,14 @@ https://mp.weixin.qq.com/s/1yV8qz-9-mV8Loz2b2iJNQ
 
 一文看懂如何将深度学习应用于视频动作识别
 
+https://mp.weixin.qq.com/s/_LXH2-il65wkpRUQZpfU2g
+
+检测与跟踪：快速视频姿态估计
+
+https://mp.weixin.qq.com/s/daGdfe8c5RACq6hjh1ORVw
+
+MultiPoseNet:人体检测、姿态估计、语义分割一“网”打尽
+
 # 深度目标跟踪
 
 ## 概述

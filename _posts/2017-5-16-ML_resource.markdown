@@ -62,6 +62,10 @@ https://mp.weixin.qq.com/s/BZTCNehoioM9ie8WoL7sUg
 
 机器学习中的这12条经验，希望对你有所帮助
 
+https://mp.weixin.qq.com/s/k_UA4LIEji14fucj_NH7Cg
+
+7种回归方法！请务必掌握！
+
 https://www.zhihu.com/question/28810567
 
 ELM算法相关
