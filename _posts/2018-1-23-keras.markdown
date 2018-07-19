@@ -400,3 +400,7 @@ https://mp.weixin.qq.com/s/MnK2LTWR9qEKiiz3OMsSMQ
 
 深度学习漂亮的图像软分割一览
 
+https://mp.weixin.qq.com/s/5xlSoC5sgzsAwMYMSFCjnw
+
+TextTopicNet:CMU开源无标注高精度自监督模型
+
