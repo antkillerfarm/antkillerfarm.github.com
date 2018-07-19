@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十五）——Probabilistic Robotics, 推荐算法中的常用排序算法, NLP机器翻译常用评价度量, Adaboost
+title:  机器学习（三十五）——Probabilistic Robotics, 推荐算法中的常用排序算法, NLP机器翻译常用评价度量, 价值函数的近似表示
 category: ML 
 ---
 
@@ -196,75 +196,62 @@ https://zhuanlan.zhihu.com/p/33088748
 
 数据集和评价指标介绍
 
-# Adaboost
+# 价值函数的近似表示
 
-Adaboost是Yoav Freund和Robert Schapire于1997年提出的算法。两人后来因为该算法被授予Gödel Prize（2003）。
+之前的内容都是讲解一些强化学习的基础理论，这些知识只能解决一些中小规模的问题，很多价值函数需要用一张大表来存储，获取某一状态或行为价值的时候通常需要一个查表操作（Table Lookup），这对于那些状态空间或行为空间很大的问题几乎无法求解。
 
->Yoav Freund，UCSC博士，UCSD教授。
+在实际应用中，对于状态和行为空间都比较大的情况下，精确获得各种v(S)和q(s,a)几乎是不可能的。这时候需要找到近似的函数，具体可以使用线性组合、神经网络以及其他方法来近似价值函数：
 
->Robert Elias Schapire，MIT博士。先后供职于Princeton University、AT&T Labs和Microsoft Research。
+$$\hat v(s,w)\approx v_\pi(s)\\
+\hat q(s,a,w)\approx q_\pi(s,a)
+$$
 
->Gödel Prize，由欧洲计算机学会（EATCS）与美国计算机学会基础理论专业组织（ACM SIGACT）于1993年共同设立，颁给理论计算机领域最杰出的学术论文。其名称取自Kurt Gödel。
+其中w是该近似函数的参数。
 
->Kurt Friedrich Gödel，1906～1978，奥地利逻辑学家，数学家，哲学家，后加入美国藉。维也纳大学博士（1930）。在逻辑学方面，他是继Aristotle、Gottlob Frege之后最伟大的逻辑学家。在数学方面，他以哥德尔不完备定理著称，和Bertrand Russell、 David Hilbert、Georg Cantor齐名。
+## 线性函数
 
-Adaboost既可用于分类问题，也可用于回归问题。这里仅针对二分类问题进行讨论。
+这里仍然从最简单的线性函数说起：
 
-假设我们有数据集$$\{(x_1, y_1), \ldots, (x_N, y_N)\}$$，其中$$y_i \in \{-1, 1\}$$，还有一系列弱分类器$$\{k_1, \ldots, k_L\}$$。
+$$\hat v(S,w)=x(S)^Tw=\sum_{j=1}^nx_j(S)w_j$$
 
-由于Boost算法是个串行算法，每次迭代就会加入一个弱分类器。这样m-1次迭代之后的分类器如下所示：
+目标函数为：
 
-$$C_{(m-1)}(x_i) = \alpha_1k_1(x_i) + \cdots + \alpha_{m-1}k_{m-1}(x_i)$$
+$$J(w)=E_\pi[(v_\pi(S)-x(S)^Tw)^2]$$
 
-而m次迭代之后的分类器则为：
+更新公式为：
 
-$$C_{m}(x_i) = C_{(m-1)}(x_i) + \alpha_m k_m(x_i)$$
+$$\Delta w=\alpha (v_\pi(S)-\hat v(S,w))x(S)$$
 
-如何选择新加入的弱分类器$$k_m$$和对应的权重$$\alpha_m$$呢？我们可以定义误差E如下所示：
+上述公式都是基本的ML方法，这里不再赘述。既然是传统ML方法，自然少不了特征工程。
 
-$$E = \sum_{i=1}^N e^{-y_i C_m(x_i)}$$
+比如Table Lookup Features：
 
-令$$w_i^{(1)} = 1,w_i^{(m)} = e^{-y_i C_{m-1}(x_i)}$$，则：
+$$x^{table}(S)=\begin{pmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{pmatrix}$$
 
-$$E = \sum_{i=1}^N w_i^{(m)}e^{-y_i\alpha_m k_m(x_i)}$$
+则：
 
-因为$$k_m$$分类正确时，$$y_i k_m(x_i) = 1$$，分类错误时，$$y_i k_m(x_i) = -1$$。所以：
+$$\hat v(S,w)=\begin{pmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{pmatrix}\begin{pmatrix} w_1 \\ \vdots \\ w_n \end{pmatrix}$$
 
-$$E = \sum_{y_i = k_m(x_i)} w_i^{(m)}e^{-\alpha_m} + \sum_{y_i \neq k_m(x_i)} w_i^{(m)}e^{\alpha_m}\\= \sum_{i=1}^N w_i^{(m)}e^{-\alpha_m} + \sum_{y_i \neq k_m(x_i)} w_i^{(m)}(e^{\alpha_m}-e^{-\alpha_m})$$
+## Incremental Prediction Algorithms
 
-可以看出和$$k_m$$相关的实际上只有上式的右半部分。显然，使得$$\sum_{y_i \neq k_m(x_i)} w_i^{(m)}$$最小的$$k_m$$，也会令E最小，这也就是我们选择加入的$$k_m$$。
+事实上，之前所列的公式都不能直接用于强化学习，因为公式里都有一个实际价值函数$$v_\pi(S)$$，或者是一个具体的数值，而强化学习没有监督数据，因此不能直接使用上述公式。
 
-对E求导，得：
+因此，我们需要找到一个替代$$v_\pi(S)$$的目标。
 
-$$\frac{d E}{d \alpha_m} = \frac{d (\sum_{y_i = k_m(x_i)} w_i^{(m)}e^{-\alpha_m} + \sum_{y_i \neq k_m(x_i)} w_i^{(m)}e^{\alpha_m}) }{d \alpha_m}$$
+|:--:|:--:|:--:|:--:|
+| MC | $$\Delta w=\alpha (\color{red}{G_t}-\hat v(S_t,w))\nabla_w \hat v(S_t,w)$$ | 有噪声、无偏采样 | 收敛至一个局部最优解 |
+| TD(0) | $$\Delta w=\alpha (\color{red}{R_{t+1}+\gamma\hat v(S_{t+1},w)}-\hat v(S_t,w))\nabla_w \hat v(S_t,w)$$ | 有噪声、有偏采样 | 收敛至全局最优解 |
+| TD($$\lambda$$) | $$\Delta w=\alpha (\color{red}{G_t^\lambda}-\hat v(S_t,w))\nabla_w \hat v(S_t,w)$$ | 有噪声、有偏采样 |  |
 
-令导数为0，可得：
+上面公式中，红色的部分就是目标函数。
 
-$$\alpha_m = \frac{1}{2}\ln\left(\frac{\sum_{y_i = k_m(x_i)} w_i^{(m)}}{\sum_{y_i \neq k_m(x_i)} w_i^{(m)}}\right)$$
+对于$$\hat q(S,A,w)$$，我们也有类似的结论：
 
-令$$\epsilon_m = \sum_{y_i \neq k_m(x_i)} w_i^{(m)} / \sum_{i=1}^N w_i^{(m)}$$，则：
+|:--:|:--:|:--:|:--:|
+| MC | $$\Delta w=\alpha (\color{red}{G_t}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、无偏采样 | 收敛至一个局部最优解 |
+| TD(0) | $$\Delta w=\alpha (\color{red}{R_{t+1}+\gamma\hat q(S_{t+1},A_{t+1},w)}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、有偏采样 | 收敛至全局最优解 |
+| TD($$\lambda$$) | $$\Delta w=\alpha (\color{red}{q_t^\lambda}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、有偏采样 |  |
 
-$$\alpha_m = \frac{1}{2}\ln\left( \frac{1 - \epsilon_m}{\epsilon_m}\right)$$
+## Batch Methods
 
-参考：
-
-https://mp.weixin.qq.com/s/G06VDc6iTwmNGsH4IfSeJQ
-
-Adaboost从原理到实现
-
-https://mp.weixin.qq.com/s/PZ-1fkNvdJmv_8zLbvoW1g
-
-Adaboost算法原理小结
-
-https://mp.weixin.qq.com/s/KoOUgwXLOfJfOjWhbFX52Q
-
-如果Boosting你懂，那Adaboost你懂么？
-
-https://mp.weixin.qq.com/s/Joz2FpGgBY0tC8lpoFz8Mw
-
-AdaBoost元算法如何提高分类性能——机器学习实战
-
-https://mp.weixin.qq.com/s/MLEVUKse5usmKIWJF-yfOQ
-
-通俗易懂讲解自适应提升算法AdaBoost
-
+前面所说的递增算法都是基于数据流的，经历一步，更新算法后，我们就不再使用这步的数据了，这种算法简单，但有时候不够高效。与之相反，批方法则是把一段时期内的数据集中起来，通过学习来使得参数能较好地符合这段时期内所有的数据。这里的训练数据集“块”相当于个体的一段经验。

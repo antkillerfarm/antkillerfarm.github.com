@@ -110,31 +110,33 @@ https://mp.weixin.qq.com/s/bE9BZQ6wCICvrgomdySDuw
 
 周志华组提出可做表征学习的多层梯度提升决策树
 
+## 深度ISP
+
+https://mp.weixin.qq.com/s/wA85XFQXeypuoqFnmN2P4g
+
+降噪的新时代
+
+https://mp.weixin.qq.com/s/919VEvennHEG3iXKkMZoQQ
+
+不止是去噪---从去噪看AI ISP的趋势
+
+https://mp.weixin.qq.com/s/1HA6XKnWpqVd8k7IIfzB7w
+
+利用卷积自编码器对图片进行降噪
+
+https://zhuanlan.zhihu.com/p/39512000
+
+Noise2Noise：图像降噪，无需干净样本
+
+https://mp.weixin.qq.com/s/_tvOQPvybqmvLF19kHcbFg
+
+北大开源ECCV2018深度去雨算法：RESCAN
+
+https://mp.weixin.qq.com/s/Wdxkvlz4nLbJS_gWqHwMjw
+
+无需额外硬件，全卷积网络让机器学习学会夜视能力
+
 # DL参考资源
-
-https://mp.weixin.qq.com/s/5vDSrWeUvlBuZgmX0R9pBQ
-
-斯坦福“黑盒学习”研究：使用神经变分推理的无向图模型，可替代“采样”
-
-https://mp.weixin.qq.com/s/t0lGL66YIJwIvI4emNfN7Q
-
-UC Berkeley新研究：通过深度学习建模注意点采样阵列
-
-https://mp.weixin.qq.com/s/w8l8T1zx0uGF92dC2PVB6g
-
-Yann LeCun说是时候放弃概率论了，因果关系才是理解世界的基石
-
-https://mp.weixin.qq.com/s/_gKE_nHsCYD0sYXC9jhvLA
-
-超越Softmax瓶颈：一种高秩RNN语言模型
-
-https://mp.weixin.qq.com/s/3bAn-ev14lO9uxQzE0Tk0Q
-
-如何使用深度学习去除人物图像背景
-
-https://mp.weixin.qq.com/s/MnK2LTWR9qEKiiz3OMsSMQ
-
-深度学习漂亮的图像软分割一览
 
 https://mp.weixin.qq.com/s/ZV32xDgGTriIAUbHohc90Q
 

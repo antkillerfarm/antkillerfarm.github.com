@@ -1,12 +1,20 @@
 ---
 layout: post
-title:  深度学习（十九）——FCN, SegNet, DeconvNet, DeepLab, ENet
+title:  深度学习（十九）——FCN, SegNet, DeconvNet, DeepLab
 category: DL 
 ---
 
 # 前DL时代的语义分割
 
-## Normalized cut（续）
+## Normalized cut
+
+Normalized cut （N-cut）方法是基于图划分（Graph partitioning）的语义分割方法中最著名的方法之一，于2000年Jianbo Shi和Jitendra Malik发表于相关领域顶级期刊TPAMI。
+
+通常，传统基于图划分的语义分割方法都是将图像抽象为图（Graph）的形式$$\bf{G}=(\bf{V},\bf{E})$$（$$\bf{V}$$为图节点，$$\bf{E}$$为图的边），然后借助图理论（Graph theory）中的理论和算法进行图像的语义分割。
+
+常用的方法为经典的最小割算法（Min-cut algorithm）。不过，在边的权重计算时，经典min-cut算法只考虑了局部信息。如下图所示，以二分图为例（将$$\bf{G}$$分为不相交的$$\bf{A},\bf{B}$$两部分），若只考虑局部信息，那么分离出一个点显然是一个min-cut，因此图划分的结果便是类似$$n_1$$或$$n_2$$这样离群点，而从全局来看，实际想分成的组却是左右两大部分。
+
+![](/images/article/N_cut.jpg)
 
 针对这一情形，N-cut则提出了一种考虑全局信息的方法来进行图划分（Graph partitioning），即，将两个分割部分$$\bf{A},\bf{B}$$与全图节点的连接权重（$${\rm assoc(\bf{A},\bf{V})}$$和$$\rm assoc(\bf{B},\bf{V})$$）考虑进去：
 
@@ -93,6 +101,10 @@ http://www.cnblogs.com/gujianhan/p/6030639.html
 https://zhuanlan.zhihu.com/p/32506912
 
 FCN的简单实现
+
+https://mp.weixin.qq.com/s/kc0tTcTzRAT0p7q6ejXbqQ
+
+重新发现语义分割，一文简述全卷积网络
 
 # SegNet
 
@@ -223,38 +235,4 @@ Deeplab v2安装及调试全过程
 https://mp.weixin.qq.com/s/pL1Wvd3oBRVtqG9I4O4oDg
 
 DeepLab V3
-
-# ENet
-
-ENet是波兰的Adam Paszke于2016年提出的。
-
-论文：
-
-《ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation》
-
-代码：
-
-https://github.com/TimoSaemann/ENet
-
-![](/images/article/ENet.png)
-
-ENet的网络结构如上图所示。其中的initial和bottleneck结构分别见下图的(a)和(b)：
-
-![](/images/article/ENet_2.png)
-
-从大的结构来看，ENet的设计主要参考了Resnet和SqueezeNet。
-
-ENet对Pooling操作进行了一定的修改：
-
-1.下采样时，除了输出Pooling值之外，还输出Pooling值的位置，即所谓的Pooling Mask。
-
-2.上采样时，利用第1步的Pooling Mask信息，获得更好的精确度。
-
-显然这个修改在思路上和Dilated convolution是非常类似的。
-
-参考：
-
-http://blog.csdn.net/zijinxuxu/article/details/67638290
-
-论文中文版blog
 

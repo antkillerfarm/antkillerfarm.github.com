@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  语音识别（三）——声学模型, 解码器技术
-category: graphics 
+category: speech 
 ---
 
 # 声源定位（续）

@@ -56,10 +56,6 @@ https://mp.weixin.qq.com/s/KoRXcV-ujIT-5eO4RUkWYw
 
 基于TensorFlow和OpenCV实现文档检测功能！
 
-https://mp.weixin.qq.com/s/1HA6XKnWpqVd8k7IIfzB7w
-
-利用卷积自编码器对图片进行降噪
-
 https://mp.weixin.qq.com/s/ObIYpiH7MLZEi5XzXdGBYg
 
 10大深度学习架构

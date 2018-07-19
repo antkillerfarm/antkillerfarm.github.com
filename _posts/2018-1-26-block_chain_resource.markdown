@@ -450,3 +450,7 @@ https://mp.weixin.qq.com/s/JKs0xpFllpWre9c-iJR41Q
 
 现代舰载雷达系统，有源相控阵的子系统分析
 
+https://mp.weixin.qq.com/s/aavlfxII5PW_RrsF6nS99g
+
+模-数转换(A/D)技术
+

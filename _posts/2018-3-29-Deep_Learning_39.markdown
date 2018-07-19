@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十九）——GAN进阶, 行人重识别
+title:  深度学习（三十九）——GAN进阶, Graph NN
 category: DL 
 ---
 
@@ -27,6 +27,14 @@ GAN的各种变种。
 https://zhuanlan.zhihu.com/p/34016536
 
 历史最全GAN网络及其各种变体整理
+
+https://mp.weixin.qq.com/s/rE_RYklz8G_Etg5Gstlhew
+
+十款神奇的GAN，总有一个适合你！
+
+https://mp.weixin.qq.com/s/IjlIT-3FVY7IfYzNDtkkgg
+
+谷歌大脑发布GAN全景图：看百家争鸣的生成对抗网络
 
 ## GAN的理论解释
 
@@ -332,71 +340,68 @@ https://mp.weixin.qq.com/s/1cUM8_AUZ40JWGI37HsqFw
 
 换脸效果媲美GAN！一文解析OpenAI最新流生成模型Glow
 
-https://mp.weixin.qq.com/s/IjlIT-3FVY7IfYzNDtkkgg
+# Graph NN
 
-谷歌大脑发布GAN全景图：看百家争鸣的生成对抗网络
+https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
 
-# 行人重识别
+Bengio等人提出图注意网络架构GAT，可处理复杂结构图
 
-行人重识别（Person re-identification）也称行人再识别，是利用计算机视觉技术判断图像或者视频序列中是否存在特定行人的技术。广泛被认为是一个图像检索的子问题。给定一个监控行人图像，检索跨设备下的该行人图像。旨在弥补目前固定的摄像头的视觉局限，并可与行人检测/行人跟踪技术相结合 ，可广泛应用于智能视频监控、智能安保等领域。
+https://zhuanlan.zhihu.com/p/34232818
 
-https://mp.weixin.qq.com/s/ZmX_ir1pSUZbCaFpbcQ6Lw
+《Graph Attention Networks》阅读笔记
 
-一文读懂行人检测算法
+https://zhuanlan.zhihu.com/p/28170197
 
-https://zhuanlan.zhihu.com/p/26168232
+《Gated Graph Sequence Neural Networks》阅读笔记
 
-行人重识别：从哈利波特地图说起
+https://mp.weixin.qq.com/s/Pm1HiEQOBnbo_GQ_v6Y_zw
 
-https://mp.weixin.qq.com/s/_NDw7pFmDB07mliHTA6VYQ
+腾讯提出自适应图卷积神经网络，接受不同图结构和规模的数据
 
-旷视行人再识别（ReID）突破
+https://mp.weixin.qq.com/s/bMpugd2Lp35VPr8fQAPzsg
 
-https://zhuanlan.zhihu.com/p/31181247
+一文概览图卷积网络基本结构和最新进展
 
-从人脸识别到行人重识别，下一个风口
+https://zhuanlan.zhihu.com/p/31067515
 
-https://mp.weixin.qq.com/s/zRdJktyk1LZWUd2cyTjpiw
+《Semi-Supervised Classification with Graph Convolutional Networks》阅读笔记
 
-基于图像检索的行人重识别
+https://mp.weixin.qq.com/s/6viSk0Ts_7eTfYrWYi_HDQ
 
-https://zhuanlan.zhihu.com/p/31473785
+基于图结构的实体和关系联合抽取模型简介
 
-行人再识别中的迁移学习：图像风格转换
+https://mp.weixin.qq.com/s/w5ldyp00CqkX8Kp-8Aw0nQ
 
-https://mp.weixin.qq.com/s/fX94rPgNHrOaQTqBv-ZADg
+图深度学习(GraphDL)，下一个人工智能算法热点？一文了解最新GDL相关文章
 
-基于视频的行人再识别新进展：区域质量估计方法和高质量的数据集
+https://mp.weixin.qq.com/s/Jt6CjMqNFEXWoL5pkLeVyw
 
-https://mp.weixin.qq.com/s/rf-pGfkQFK3abkOLEEVOeA
+洛桑理工：Graph上的深度学习报告
 
-PTGAN：针对行人重识别的生成对抗网络
+https://zhuanlan.zhihu.com/p/36117802
 
-https://zhuanlan.zhihu.com/p/34778414
+《Learn to Represent Programs with Graphs》阅读笔记。这篇论文讲述了DL在程序代码纠错方面的应用。
 
-基于时空模型无监督迁移学习的行人重识别
+https://zhuanlan.zhihu.com/p/37278426
 
-https://zhuanlan.zhihu.com/p/35296881
+Graph2Seq: Graph to Sequence Learning with Attention-based Neural Networks
 
-刷新三数据集纪录的跨镜追踪(行人再识别-ReID)技术介绍
+https://mp.weixin.qq.com/s/iQYVyo2PHuGbEsYgdIf_oQ
 
-https://mp.weixin.qq.com/s/ZbmJGO3lqwNM2z-E4_Mpbw
+DeepMind等机构提出“图网络”：面向关系推理
 
-由“刷脸”到“识人”，云从科技刷新跨镜追踪(ReID)技术三项世界纪录！
+https://mp.weixin.qq.com/s/TAccHagxXQ82lfE91Y6xWg
 
-https://zhuanlan.zhihu.com/p/38603624
+CNN已老，GNN来了：重磅论文讲述深度学习的因果推理
 
-云从科技资深算法研究员：详解跨镜追踪(ReID)技术实现及难点
+https://mp.weixin.qq.com/s/UONtTJJgDawRPWtatAVKkg
 
-https://mp.weixin.qq.com/s/leuILzYz40PqrwsCatYhPw
+如何利用高效的搜索算法来搜索网络的拓扑结构
 
-行人再识别年度进展
+https://mp.weixin.qq.com/s/lt9lZbulkW0C8A_xi6hodQ
 
-https://zhuanlan.zhihu.com/p/37931822
+浅析图卷积神经网络
 
-你需要知道的10种行人属性
+https://mp.weixin.qq.com/s/SGCtwYWfnxjcpMJeeH1b4w
 
-https://mp.weixin.qq.com/s/YBorhQrJ0UL3HZQHgd5D6A
-
-清华等机构提出基于内部一致性的行人检索方法，实现当前最优
-
+图神经网络+池化模块，斯坦福等提出层级图表征学习

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十七）——人脸识别, Graph NN
+title:  深度学习（三十七）——人脸识别, 行人重识别
 category: DL 
 ---
 
@@ -304,69 +304,67 @@ https://mp.weixin.qq.com/s/XF4Sjx0jNPFdJFfAlYPJMQ
 
 超长综述让你走近深度人脸识别
 
-## Graph NN
+# 行人重识别
 
-https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
+行人重识别（Person re-identification）也称行人再识别，是利用计算机视觉技术判断图像或者视频序列中是否存在特定行人的技术。广泛被认为是一个图像检索的子问题。给定一个监控行人图像，检索跨设备下的该行人图像。旨在弥补目前固定的摄像头的视觉局限，并可与行人检测/行人跟踪技术相结合 ，可广泛应用于智能视频监控、智能安保等领域。
 
-Bengio等人提出图注意网络架构GAT，可处理复杂结构图
+https://mp.weixin.qq.com/s/ZmX_ir1pSUZbCaFpbcQ6Lw
 
-https://zhuanlan.zhihu.com/p/34232818
+一文读懂行人检测算法
 
-《Graph Attention Networks》阅读笔记
+https://zhuanlan.zhihu.com/p/26168232
 
-https://zhuanlan.zhihu.com/p/28170197
+行人重识别：从哈利波特地图说起
 
-《Gated Graph Sequence Neural Networks》阅读笔记
+https://mp.weixin.qq.com/s/_NDw7pFmDB07mliHTA6VYQ
 
-https://mp.weixin.qq.com/s/Pm1HiEQOBnbo_GQ_v6Y_zw
+旷视行人再识别（ReID）突破
 
-腾讯提出自适应图卷积神经网络，接受不同图结构和规模的数据
+https://zhuanlan.zhihu.com/p/31181247
 
-https://mp.weixin.qq.com/s/bMpugd2Lp35VPr8fQAPzsg
+从人脸识别到行人重识别，下一个风口
 
-一文概览图卷积网络基本结构和最新进展
+https://mp.weixin.qq.com/s/zRdJktyk1LZWUd2cyTjpiw
 
-https://zhuanlan.zhihu.com/p/31067515
+基于图像检索的行人重识别
 
-《Semi-Supervised Classification with Graph Convolutional Networks》阅读笔记
+https://zhuanlan.zhihu.com/p/31473785
 
-https://mp.weixin.qq.com/s/6viSk0Ts_7eTfYrWYi_HDQ
+行人再识别中的迁移学习：图像风格转换
 
-基于图结构的实体和关系联合抽取模型简介
+https://mp.weixin.qq.com/s/fX94rPgNHrOaQTqBv-ZADg
 
-https://mp.weixin.qq.com/s/w5ldyp00CqkX8Kp-8Aw0nQ
+基于视频的行人再识别新进展：区域质量估计方法和高质量的数据集
 
-图深度学习(GraphDL)，下一个人工智能算法热点？一文了解最新GDL相关文章
+https://mp.weixin.qq.com/s/rf-pGfkQFK3abkOLEEVOeA
 
-https://mp.weixin.qq.com/s/Jt6CjMqNFEXWoL5pkLeVyw
+PTGAN：针对行人重识别的生成对抗网络
 
-洛桑理工：Graph上的深度学习报告
+https://zhuanlan.zhihu.com/p/34778414
 
-https://zhuanlan.zhihu.com/p/36117802
+基于时空模型无监督迁移学习的行人重识别
 
-《Learn to Represent Programs with Graphs》阅读笔记。这篇论文讲述了DL在程序代码纠错方面的应用。
+https://zhuanlan.zhihu.com/p/35296881
 
-https://zhuanlan.zhihu.com/p/37278426
+刷新三数据集纪录的跨镜追踪(行人再识别-ReID)技术介绍
 
-Graph2Seq: Graph to Sequence Learning with Attention-based Neural Networks
+https://mp.weixin.qq.com/s/ZbmJGO3lqwNM2z-E4_Mpbw
 
-https://mp.weixin.qq.com/s/iQYVyo2PHuGbEsYgdIf_oQ
+由“刷脸”到“识人”，云从科技刷新跨镜追踪(ReID)技术三项世界纪录！
 
-DeepMind等机构提出“图网络”：面向关系推理
+https://zhuanlan.zhihu.com/p/38603624
 
-https://mp.weixin.qq.com/s/TAccHagxXQ82lfE91Y6xWg
+云从科技资深算法研究员：详解跨镜追踪(ReID)技术实现及难点
 
-CNN已老，GNN来了：重磅论文讲述深度学习的因果推理
+https://mp.weixin.qq.com/s/leuILzYz40PqrwsCatYhPw
 
-https://mp.weixin.qq.com/s/UONtTJJgDawRPWtatAVKkg
+行人再识别年度进展
 
-如何利用高效的搜索算法来搜索网络的拓扑结构
+https://zhuanlan.zhihu.com/p/37931822
 
-https://mp.weixin.qq.com/s/lt9lZbulkW0C8A_xi6hodQ
+你需要知道的10种行人属性
 
-浅析图卷积神经网络
+https://mp.weixin.qq.com/s/YBorhQrJ0UL3HZQHgd5D6A
 
-https://mp.weixin.qq.com/s/SGCtwYWfnxjcpMJeeH1b4w
-
-图神经网络+池化模块，斯坦福等提出层级图表征学习
+清华等机构提出基于内部一致性的行人检索方法，实现当前最优
 

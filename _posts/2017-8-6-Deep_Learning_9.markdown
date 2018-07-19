@@ -189,6 +189,10 @@ https://mp.weixin.qq.com/s/er-VG1P8iNIcQew2gXZqGw
 
 一文读懂生成对抗网络
 
+https://mp.weixin.qq.com/s/BNWPTPl_vowAlQUQ7__wvQ
+
+有三说GANs
+
 https://mp.weixin.qq.com/s/QacQCrjh3KmrQSMp-G_rEg
 
 贝叶斯生成对抗网络

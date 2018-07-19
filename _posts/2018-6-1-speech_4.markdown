@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  语音识别（四）——DTW, Spectrogram, Cepstrum Analysis, Mel-Frequency Analysis
-category: graphics 
+category: speech 
 ---
 
 # DTW

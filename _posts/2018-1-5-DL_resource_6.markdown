@@ -378,10 +378,6 @@ https://mp.weixin.qq.com/s/3Pe5wJ0VomzwKMF84OqcMg
 
 脑启发的视觉计算2017年度关键进展回顾
 
-https://zhuanlan.zhihu.com/p/39512000
-
-Noise2Noise：图像降噪，无需干净样本
-
 https://mp.weixin.qq.com/s/D0n3xY0k25d6Ouf4mCi7Nw
 
 让AI识别语义空间关系：斯坦福大学李飞飞组提出“参考关系模型”

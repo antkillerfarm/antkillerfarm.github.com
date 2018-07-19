@@ -1,8 +1,42 @@
 ---
 layout: post
-title:  深度学习（二十）——GCN, Ultra Deep Network
+title:  深度学习（二十）——ENet, GCN, Ultra Deep Network
 category: DL 
 ---
+
+# ENet
+
+ENet是波兰的Adam Paszke于2016年提出的。
+
+论文：
+
+《ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation》
+
+代码：
+
+https://github.com/TimoSaemann/ENet
+
+![](/images/article/ENet.png)
+
+ENet的网络结构如上图所示。其中的initial和bottleneck结构分别见下图的(a)和(b)：
+
+![](/images/article/ENet_2.png)
+
+从大的结构来看，ENet的设计主要参考了Resnet和SqueezeNet。
+
+ENet对Pooling操作进行了一定的修改：
+
+1.下采样时，除了输出Pooling值之外，还输出Pooling值的位置，即所谓的Pooling Mask。
+
+2.上采样时，利用第1步的Pooling Mask信息，获得更好的精确度。
+
+显然这个修改在思路上和Dilated convolution是非常类似的。
+
+参考：
+
+http://blog.csdn.net/zijinxuxu/article/details/67638290
+
+论文中文版blog
 
 # Global Convolutional Network
 

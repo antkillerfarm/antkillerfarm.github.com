@@ -270,28 +270,3 @@ https://mp.weixin.qq.com/s/5OkPWPLRyf07mZwLRSZ3Fw
 
 机器视觉目标检测补习贴之R-CNN系列—R-CNN,Fast R-CNN,Faster R-CNN
 
-# YOLO
-
-YOLO: Real-Time Object Detection，是一个基于神经网络的实时对象检测软件。它的原理基于Joseph Chet Redmon 2016年的论文：
-
-《You Only Look Once: Unified, Real-Time Object Detection》
-
-这也是Ross Girshick去Facebook之后，参与的又一力作。
-
-官网：
-
-https://pjreddie.com/darknet/yolo/
-
->注：Joseph Chet Redmon，Middlebury College本科+华盛顿大学博士（在读）。网名：pjreddie。
-
-pjreddie不仅是个算法达人，也是个造轮子的高手。YOLO的原始代码基于他本人编写的DL框架——darknet。
-
-darknet代码：
-
-https://github.com/pjreddie/darknet/
-
-YOLO的caffe版本有很多（当然都是非官方的），这里推荐：
-
-https://github.com/yeahkun/caffe-yolo
-
-

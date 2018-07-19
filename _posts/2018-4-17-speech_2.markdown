@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  语音识别（二）——基本框架, Microphone Array, 声源定位
-category: graphics 
+category: speech 
 ---
 
 # 基本框架

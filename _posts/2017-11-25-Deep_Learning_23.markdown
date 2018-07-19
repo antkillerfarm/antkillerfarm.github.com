@@ -116,12 +116,6 @@ https://mp.weixin.qq.com/s/B7reSwa9sCZqbkYVM5-VOA
 
 图像压缩哪家强？请看这份超详细对比
 
-# SR之外的DL ISP
-
-https://mp.weixin.qq.com/s/Wdxkvlz4nLbJS_gWqHwMjw
-
-无需额外硬件，全卷积网络让机器学习学会夜视能力
-
 # SVDF
 
 SVDF是UCB和Google Speech Group的作品，主要用于简化Speech模型的计算量。

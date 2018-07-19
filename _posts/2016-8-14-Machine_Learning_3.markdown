@@ -54,6 +54,18 @@ $$p(\theta\mid x)=\frac{p(x\mid \theta)p(\theta)}{p(x)}$$
 
 这里的$$\theta$$表示模型的参数。先验概率是根据经验设定的参数值，后验概率是样本实测值，代入Bayes公式即可得到参数的真实值。
 
+常见的判别式模型有Logistic Regression，Linear Regression，SVM，Traditional Neural Networks，Nearest Neighbor，CRF等。
+
+常见的生成式模型有Naive Bayes，Mixtures of Gaussians， HMMs，Markov Random Fields等。
+
+判别式模型，优点是分类边界灵活，学习简单，性能较好；缺点是不能得到概率分布。
+
+生成式模型，优点是收敛速度快，可学习分布，可应对隐变量；缺点是学习复杂，分类性能较差。
+
+![](/images/img2/Discriminative_Generative.jpg)
+
+上面是一个分类例子，可知判别式模型，有清晰的分界面，而生成式模型，有清晰的概率密度分布。生成式模型，可以转换为判别式模型，反之则不能。
+
 ## 高斯分布的向量形式
 
 高斯分布的向量形式$$N(\mu,\Sigma)$$的概率密度函数为：

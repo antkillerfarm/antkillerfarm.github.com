@@ -22,6 +22,16 @@ category: graphics
 
 近年来，由于深度学习的崛起，传统CV算法基本都已经过时了。这个blog系列主要对传统算法进行有针对性的讲述，也包括一些传统CV和DL CV共有的概念的讲解。
 
+# 特征工程
+
+颜色特征：RGB、HSV、Lab
+
+几何特征：Edge、Corner、Blob
+
+纹理特征：HOG、LBP、Gabor
+
+局部特征：SIFT、SURF、ORB、FAST
+
 # 对比度和亮度
 
 $$

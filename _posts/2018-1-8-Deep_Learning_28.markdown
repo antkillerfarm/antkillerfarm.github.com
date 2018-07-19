@@ -22,6 +22,10 @@ https://mp.weixin.qq.com/s/7V0GSWcKZGyXeLeMPhE9fQ
 
 神经网络简史：BP算法后的又一突破—信念网络
 
+https://zhuanlan.zhihu.com/p/40100223
+
+深度学习与TensorFlow：关于DBN的一些认识
+
 ## Deep Autoencoder
 
 ![](/images/img2/deep_autoencoder.png)

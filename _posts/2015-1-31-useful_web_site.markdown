@@ -400,6 +400,10 @@ https://mp.weixin.qq.com/s/C68icGtwh3IzuUbANaRXEg
 
 也许，这样理解HTTPS更容易
 
+https://mp.weixin.qq.com/s/ewI7sHDFj1AHaNAtBDM8uA
+
+HTTPS到底加密了什么？
+
 https://mp.weixin.qq.com/s/CP_Egs4LUx7I8BXSqrS_dQ
 
 互联网协议入门（一）

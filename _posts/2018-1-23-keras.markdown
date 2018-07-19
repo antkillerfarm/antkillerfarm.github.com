@@ -373,3 +373,30 @@ GMV (Gross Merchandise Volume) 成交额
 ![](/images/article/pv.jpg)
 
 Click-Through-Rate, 网络广告（图片广告/文字广告/关键词广告/排名广告/视频广告等）的点击到达率，即该广告的点击量（严格的来说，可以是到达目标页面的数量）除以广告的浏览量（PV- Page View）。
+
+# DL参考资源
+
+https://mp.weixin.qq.com/s/5vDSrWeUvlBuZgmX0R9pBQ
+
+斯坦福“黑盒学习”研究：使用神经变分推理的无向图模型，可替代“采样”
+
+https://mp.weixin.qq.com/s/t0lGL66YIJwIvI4emNfN7Q
+
+UC Berkeley新研究：通过深度学习建模注意点采样阵列
+
+https://mp.weixin.qq.com/s/w8l8T1zx0uGF92dC2PVB6g
+
+Yann LeCun说是时候放弃概率论了，因果关系才是理解世界的基石
+
+https://mp.weixin.qq.com/s/_gKE_nHsCYD0sYXC9jhvLA
+
+超越Softmax瓶颈：一种高秩RNN语言模型
+
+https://mp.weixin.qq.com/s/3bAn-ev14lO9uxQzE0Tk0Q
+
+如何使用深度学习去除人物图像背景
+
+https://mp.weixin.qq.com/s/MnK2LTWR9qEKiiz3OMsSMQ
+
+深度学习漂亮的图像软分割一览
+

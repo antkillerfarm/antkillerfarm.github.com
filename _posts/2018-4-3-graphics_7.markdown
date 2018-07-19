@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  图像处理理论（七）——LBP, Fisherface, Viola-Jones, 经典目标跟踪算法
+title:  图像处理理论（七）——LBP, Fisherface, Viola-Jones
 category: graphics 
 ---
 
@@ -169,17 +169,21 @@ Integral image一种计算差分数据的快速方法。
 
 ![](/images/img2/integral_image_a.png)
 
+上图左侧是图像的像素值，右侧是相应的积分图。
+
 ![](/images/img2/integral_image_b.png)
 
-$$46 – 22 – 20 + 10 = 14$$
-
-
+由$$46 – 22 – 20 + 10 = 14$$，我们可以很快计算出左侧蓝色区域的像素值之和。
 
 参考：
 
 http://www.mathworks.com/help/vision/ref/integralimage.html
 
 Integral image
+
+## Cascade分类器
+
+Cascade分类器，简单来说，就是先将几个通过Adaboost方法得到的强分类器进行排序，排序原则是简单的放在前边。因为通常来说人脸只占一小部分，所以可以很放心地在前几层分类器就拒绝掉大部分非人脸区域。只要前一级拒绝了，就不在进入下一级分类器，这可以大大提高速度。其本质是一颗退化决策树。
 
 ## 参考
 
@@ -195,105 +199,19 @@ http://www.cnblogs.com/hrlnw/archive/2013/10/23/3374707.html
 
 Viola Jones Face Detector
 
+# ORB
+
+ORB（Oriented FAST and Rotated BRIEF）特征，从它的名字中可以看出它是对FAST特征点与BREIF特征描述子的一种结合与改进，这个算法是由Ethan Rublee,Vincent Rabaud,Kurt Konolige以及Gary R.Bradski在2011年一篇名为“ORB：An Efficient Alternative to SIFT or SURF”的文章中提出。
+
+参考：
+
+http://www.cnblogs.com/ronny/p/4083537.html
+
+ORB特征点检测
+
 # 直方图反向投影
 
 http://www.cnblogs.com/zsb517/archive/2012/06/20/2556508.html
 
 opencv直方图反向投影
-
-# 经典目标跟踪算法
-
-camshift、meanshift、Kalman filter、particle filter、Optical flow、TLD、KCF、Struck
-
-## Meanshift
-
-参考：
-
-http://www.cnblogs.com/liqizhou/archive/2012/05/12/2497220.html
-
-Meanshift，聚类算法
-
-https://wenku.baidu.com/view/0d9eb876a417866fb84a8eb2.html
-
-mean-shift算法概述
-
-http://www.cnblogs.com/cfantaisie/archive/2011/06/10/2077188.html
-
-meanshift聚类
-
-## Camshift
-
-参考：
-
-http://blog.sina.com.cn/s/blog_5d1476580101a57j.html
-
-Camshift算法
-
-http://blog.163.com/thomaskjh@126/blog/static/370829982010113133152722/
-
-CAMSHIFT原理
-
-https://wenku.baidu.com/view/59596ac42cc58bd63186bd37.html
-
-Camshift算法原理
-
-## Optical flow
-
-http://www.cnblogs.com/walccott/p/4956858.html
-
-Horn-Schunck光流法
-
-http://blog.csdn.net/u014568921/article/details/46638557
-
-目标跟踪之Lukas-Kanade光流法
-
-http://blog.csdn.net/zouxy09/article/details/8683859
-
-光流Optical Flow介绍与OpenCV实现
-
-http://www.cnblogs.com/gnuhpc/archive/2012/12/04/2802124.html
-
-Lucas–Kanade光流算法
-
-http://www.cnblogs.com/dzyBK/p/5096860.html
-
-光流算法：Brox算法
-
-http://www.cnblogs.com/quarryman/p/optical_flow.html
-
-图像分析之光流之经典
-
-https://zhuanlan.zhihu.com/p/31726032
-
-走进光流的世界
-
-## Particle filter
-
-http://www.cvvision.cn/6002.html
-
-基于粒子滤波器的目标跟踪算法及实现
-
-http://www.cnblogs.com/zjb0823/p/3806333.html
-
-运动目标跟踪算法综述
-
-https://wenku.baidu.com/view/6554ba7402768e9951e73864.html
-
-基于粒子滤波的视频目标追踪
-
-http://www.cnblogs.com/feisky/archive/2009/11/10/1600086.html
-
-粒子滤波概述
-
-http://www.cnblogs.com/yangyangcv/archive/2010/05/23/1742263.html
-
-基于粒子滤波的物体跟踪
-
-https://www.zhihu.com/question/25371476
-
-怎样从实际场景上理解粒子滤波（Particle Filter）？
-
-http://freemind.pluskid.org/machine-learning/hmm-kalman-particle-filtering
-
-漫谈HMM：Kalman/Particle Filtering
 
