@@ -280,6 +280,10 @@ https://mp.weixin.qq.com/s/5wdGemYBtkYUvq1n5ioyFg
 
 详解Wide&Deep理论与实践
 
+https://mp.weixin.qq.com/s/pA1SSEnwC884LBZGiH3jhg
+
+基于改进注意力循环控制门，品牌个性化排序升级系统来了
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

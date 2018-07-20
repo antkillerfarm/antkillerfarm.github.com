@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  图像处理理论（五）——ISP
+title:  图像处理理论（五）——ISP, 颜色空间
 category: graphics 
 ---
 
@@ -67,16 +67,6 @@ SIFT与CNN的碰撞：万字长文回顾图像检索任务十年探索历程（�
 https://mp.weixin.qq.com/s/yzVMDEpwbXVS0y-CwWSBEA
 
 SIFT与CNN的碰撞：万字长文回顾图像检索任务十年探索历程（下）
-
-# YUV & YCbCr & RGB
-
-在RGB颜色空间中，红，绿，蓝是基本元素。RGB格式是显示器通常使用的格式。
-
-然而，人类视觉系统(HVS)相比亮度来说对于颜色不是那么敏感的。通过把亮度与颜色信息分离，并对亮度值取更高的分辨率可以更有效地表示一个颜色图像。这就是所谓的YUV颜色空间。Y表示亮度，B－Y（即U）、R－Y（即V）是色差信息。
-
-实际使用中，为了更有效率，又定义了YCbCr格式。两个Y、Cb和U、Cr和V的含义相同，但是表示方法不同。YCbCr在YUV的基础上，进行了比例和偏置变换。
-
-相关的定义及转换标准是：ITU-R Recommendation BT.601（标清）和ITU-R Recommendation BT.709（高清）。
 
 # ISP
 
@@ -258,3 +248,22 @@ https://github.com/codeauroraforum/gtec-demo-framework/tree/master/DemoApps/Open
 
 一个基于OpenVX的ISP软实现。
 
+# 颜色空间
+
+## YUV & YCbCr & RGB
+
+在RGB颜色空间中，红，绿，蓝是基本元素。RGB格式是显示器通常使用的格式。
+
+然而，人类视觉系统(HVS)相比亮度来说对于颜色不是那么敏感的。通过把亮度与颜色信息分离，并对亮度值取更高的分辨率可以更有效地表示一个颜色图像。这就是所谓的YUV颜色空间。Y表示亮度，B－Y（即U）、R－Y（即V）是色差信息。
+
+实际使用中，为了更有效率，又定义了YCbCr格式。两个Y、Cb和U、Cr和V的含义相同，但是表示方法不同。YCbCr在YUV的基础上，进行了比例和偏置变换。
+
+相关的定义及转换标准是：ITU-R Recommendation BT.601（标清）和ITU-R Recommendation BT.709（高清）。
+
+## HSV/HSB & HSL
+
+RGB和YUV都是针对设备的颜色空间，反映的是设备产生的光的物理特性。但是人眼对于光的颜色的感知是非线性的，因此又有了针对人眼的HSV/HSB、HSL颜色空间。
+
+HSV/HSB为Hue（色相）, Saturation（饱和度）, Value/Brightness（明度）。
+
+HSL为Hue, Saturation, Lightness（亮度）。

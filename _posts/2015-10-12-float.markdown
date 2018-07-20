@@ -196,127 +196,89 @@ https://mp.weixin.qq.com/s/kdfGUzY6KnI3tpcDg0GX6w
 
 运筹优化问题求解工具Lingo
 
-# Meanshift
+# 目标跟踪
+
+## 概述
+
+目标跟踪（object tracking）就是在连续的视频序列中，建立所要跟踪物体的位置关系，得到物体完整的运动轨迹。
+
+目标跟踪分为单目标跟踪和多目标跟踪。本文如无特别指出，均指单目标跟踪。
+
+通常的做法是：
+
+1.在第1帧给一个bbox框住需要跟踪的物体。
+
+2.在不借助重检测（re-detection）的情况下，尽可能长时间的跟住物体。
+
+3.不能使用依赖外部特征的姿态估计（pose estimation）。
+
+当然这是针对目标跟踪算法的要求，至于实际产品中，对象的重检测以及依赖外部特征的姿态估计都是必不可少的。
+
+比如，自动驾驶领域的车辆跟踪，一般都会针对车辆的运动特点建立模型，以辅助目标跟踪。
+
+## TB50 & TB100
+
+这个领域最著名的数据集是吴毅提出的TB50 & TB100，50和100分别代表视频数量。有的论文也把它们称作OTB-2013和OTB-2015。
+
+>吴毅，中国科学院自动化研究所博士（2009年）。南京审计大学副教授。
+
+官网：
+
+http://cvlab.hanyang.ac.kr/tracker_benchmark/
+
+论文：
+
+《Online object tracking: A benchmark》
+
+《Object tracking benchmark》
+
+上面的论文在TB数据集上比较了包括2012年及之前的29个顶尖的tracker，基本解决了统一标准的问题，因此也成为了目标跟踪领域的权威数据集。
+
+《Object tracking: A survey》
+
+这篇论文总结了2006年以前的目标跟踪算法。
+
+## VOT
+
+VOT竞赛数据集是另一个常用数据集。官网：
+
+http://votchallenge.net/challenges.html
+
+OTB包括25%的灰度序列，但VOT都是彩色序列，这也是造成很多颜色特征算法性能差异的原因。
+
+## 目标跟踪的难点
+
+![](/images/article/tracker_hard.png)
+
+![](/images/article/tracker_hard_2.png)
+
+## 目标跟踪算法的分类
+
+![](/images/img2/object_tracking.png)
 
 经典的目标跟踪算法主要有：meanshift、camshift、Kalman filter、particle filter、Optical flow、TLD、KCF、Struck等。
 
-## Meanshift聚类
-
 参考：
 
-http://www.cnblogs.com/liqizhou/archive/2012/05/12/2497220.html
+https://blog.csdn.net/app_12062011/article/details/48436959
 
-Meanshift，聚类算法
+目标跟踪算法的分类（一）
 
-https://wenku.baidu.com/view/0d9eb876a417866fb84a8eb2.html
+https://blog.csdn.net/app_12062011/article/details/51760256
 
-mean-shift算法概述
+目标跟踪算法的分类（二）
 
-http://www.cnblogs.com/cfantaisie/archive/2011/06/10/2077188.html
+https://blog.csdn.net/app_12062011/article/details/52277537
 
-meanshift聚类
+目标跟踪算法的分类（三）
 
-## Meanshift在目标跟踪上的应用
+## 参考
 
-https://blog.csdn.net/li_dongxuan/article/details/70667170
+https://www.zhihu.com/question/26493945
 
-目标跟踪：Meanshift, Camshift
+计算机视觉中，目前有哪些经典的目标跟踪算法？
 
-http://www.cnblogs.com/cfantaisie/archive/2011/06/10/2077190.html
+https://mp.weixin.qq.com/s/Wz-loMz1oOlxtm10gazQRg
 
-meanshift目标跟踪算法总结
-
-https://blog.csdn.net/jinshengtao/article/details/30258833
-
-基于MeanShift的目标跟踪算法及实现
-
-## Camshift
-
-参考：
-
-http://blog.sina.com.cn/s/blog_5d1476580101a57j.html
-
-Camshift算法
-
-http://blog.163.com/thomaskjh@126/blog/static/370829982010113133152722/
-
-CAMSHIFT原理
-
-https://wenku.baidu.com/view/59596ac42cc58bd63186bd37.html
-
-Camshift算法原理
-
-## Optical flow
-
-http://www.cnblogs.com/walccott/p/4956858.html
-
-Horn-Schunck光流法
-
-http://blog.csdn.net/u014568921/article/details/46638557
-
-目标跟踪之Lukas-Kanade光流法
-
-http://blog.csdn.net/zouxy09/article/details/8683859
-
-光流Optical Flow介绍与OpenCV实现
-
-http://www.cnblogs.com/gnuhpc/archive/2012/12/04/2802124.html
-
-Lucas–Kanade光流算法
-
-http://www.cnblogs.com/dzyBK/p/5096860.html
-
-光流算法：Brox算法
-
-http://www.cnblogs.com/quarryman/p/optical_flow.html
-
-图像分析之光流之经典
-
-https://zhuanlan.zhihu.com/p/31726032
-
-走进光流的世界
-
-## Particle filter
-
-http://www.cvvision.cn/6002.html
-
-基于粒子滤波器的目标跟踪算法及实现
-
-http://www.cnblogs.com/zjb0823/p/3806333.html
-
-运动目标跟踪算法综述
-
-https://wenku.baidu.com/view/6554ba7402768e9951e73864.html
-
-基于粒子滤波的视频目标追踪
-
-http://www.cnblogs.com/feisky/archive/2009/11/10/1600086.html
-
-粒子滤波概述
-
-http://www.cnblogs.com/yangyangcv/archive/2010/05/23/1742263.html
-
-基于粒子滤波的物体跟踪
-
-https://www.zhihu.com/question/25371476
-
-怎样从实际场景上理解粒子滤波（Particle Filter）？
-
-http://freemind.pluskid.org/machine-learning/hmm-kalman-particle-filtering
-
-漫谈HMM：Kalman/Particle Filtering
-
-## TLD
-
-http://blog.csdn.net/zouxy09/article/details/7893011
-
-TLD（Tracking-Learning-Detection）学习与源码理解系列文章
-
-http://blog.csdn.net/carson2005/article/details/7647500
-
-比微软kinect更强的视频跟踪算法--TLD跟踪算法介绍
-
-http://www.cnblogs.com/lxy2017/p/3927456.html
-
-TLD（Tracking-Learning-Detection）一种目标跟踪算法
+目标检测（Object Detection）和目标跟踪（Object Tracking）的区别
 

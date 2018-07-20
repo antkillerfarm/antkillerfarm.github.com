@@ -454,3 +454,7 @@ https://mp.weixin.qq.com/s/aavlfxII5PW_RrsF6nS99g
 
 模-数转换(A/D)技术
 
+https://mp.weixin.qq.com/s/qEZaUgIdpb9LabAwPpw7jg
+
+雷达自适应波束形成：基于FPGA的QRD+WBS算法
+

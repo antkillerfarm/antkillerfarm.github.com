@@ -288,53 +288,94 @@ https://zhuanlan.zhihu.com/p/34256635
 
 当我谈汽车声学时，我在谈什么(四)
 
-# 从BOW到SPM
+# Meanshift
 
-## BOW
+## Meanshift聚类
 
-Bag-of-words模型是信息检索领域常用的文档表示方法。在信息检索中，BOW模型假定对于一个文档，忽略它的单词顺序和语法、句法等要素，将其仅仅看作是若干个词汇的集合，文档中每个单词的出现都是独立的，不依赖于其它单词是否出现。
+Meanshift（均值漂移）首先是个聚类算法，然后才应用到目标跟踪领域。它是Keinosuke Fukunaga和Larry D. Hostetler于1975年发明的。
 
-为了表示一幅图像，我们可以将图像看作文档，即若干个“视觉词汇”的集合，同样的，视觉词汇相互之间没有顺序。
+>Keinosuke Fukunaga，日本裔美国科学家，普渡大学教授。著有《Introduction to Statistical Pattern Recognition》一书。
 
-![](/images/article/cv_bow.jpg)
+我们首先来定义一下Mean Shift向量。
 
-由于图像中的词汇不像文本文档中的那样是现成的，我们需要首先从图像中提取出相互独立的视觉词汇，这通常需要经过三个步骤：
+对于给定的d维空间$$R^d$$中的n个样本点$$x_i, i=1,\cdots , n$$，则对于x点，其Mean Shift向量的基本形式为：
 
-（1）特征检测。
+$$M_h\left ( x \right )=\frac{1}{k}\sum_{x_i\in S_h}\left ( x_i-x \right )$$
 
-（2）特征表示。
+其中，$$S_h$$指的是一个半径为h的高维球区域，如上图中的蓝色的圆形区域。$$S_h$$的定义为：
 
-（3）单词本的生成。
+从物理的角度来看，由于$$\frac{1}{k}\sum_{x_i\in S_h}x_i$$实际上是$$S_h$$的质量中心，因此$$M_h\left ( x \right )$$实际上就是从x指向质心的向量，也被叫做归一化的概率密度梯度。所以，Meanshift聚类实际上是一种密度聚类。
 
-而SIFT算法是提取图像中局部不变特征的应用最广泛的算法，因此我们可以用SIFT算法从图像中提取不变特征点，作为视觉词汇，并构造单词表，用单词表中的单词表示一幅图像。
+下面来看一下Meanshift算法的具体步骤。
+
+![](/images/img2/meanshift.png)
+
+首先，在空间中任选一点x（上图中蓝色的圈），以x为圆心，h为半径做一个高维球（上图中蓝色的圆）。计算得到质心（上图中黄色的圈）。移动x到质心，并重复之前的步骤。最终x会收敛到最密集区域的质心。
+
+基本的Mean Shift形式存在一个问题：在$$S_h$$的区域内，每一个点对x的贡献是一样的。而实际上，这种贡献与x到每一个点之间的距离是相关的。同时，对于每一个样本，其重要程度也是不一样的。
+
+到了1995年，Yizong Cheng（现为University of Cincinnati副教授）对基本的Mean Shift算法在以下两个方面做了推广。
+
+首先，定义了一族核函数,使得随着样本与被偏移点的距离不同,其偏移量对均值偏移向量的贡献也不同。
+
+其次，还设定了一个权重系数,使得不同的样本点重要性不一样,这大大扩大了Mean Shift的适用范围。
+
+基于以上的考虑，可对基本的Mean Shift向量形式中增加核函数和样本权重，得到如下的改进的Mean Shift向量形式：
+
+$$M_h\left ( x \right )=\frac{\sum_{i=1}^{n}G_H\left ( x_i-x \right )w\left ( x_i \right )\left ( x_i-x \right )}{\sum_{i=1}^{n}G_H\left ( x_i-x \right )w\left ( x_i \right )}$$
+
+其中：
+
+$$G_H\left ( x_i-x \right )=\left | H \right |^{-\frac{1}{2}}G\left ( H^{-\frac{1}{2}}\left ( x_i-x \right ) \right )$$
+
+G(x)是一个单位的核函数。H是一个正定的对称d×d矩阵，称为带宽矩阵，其是一个对角阵。$$w\left ( x_i \right )\geqslant 0$$是每一个样本的权重。对角阵H的形式为：
+
+$$H=\begin{pmatrix}
+h_1^2 & 0 & \cdots & 0\\ 
+0 & h_2^2 & \cdots & 0\\ 
+\vdots  & \vdots  &  & \vdots \\ 
+0 & 0 & \cdots & h_d^2
+\end{pmatrix}_{d\times d}$$
+
+因此，上述Mean Shift向量也可以改写成：
+
+$$M_h\left ( x \right )=\frac{\sum_{i=1}^{n}G\left ( \frac{x_i-x}{h_i} \right )w\left ( x_i \right )\left ( x_i-x \right )}{\sum_{i=1}^{n}G\left ( \frac{x_i-x}{h_i} \right )w\left ( x_i \right )}$$
+
+这里的核函数可以是Uniform核，也可以是Gaussian核。
 
 参考：
 
-http://blog.csdn.net/v_JULY_v/article/details/6555899
+https://wenku.baidu.com/view/5862334827d3240c8447ef40.html
 
-SIFT算法的应用--目标识别之Bag-of-words模型
+meanshift算法简介
 
-https://zhuanlan.zhihu.com/p/25999669
+http://www.cnblogs.com/liqizhou/archive/2012/05/12/2497220.html
 
-BOW算法，被CNN打爆之前的王者
+Meanshift，聚类算法
 
-## SPM
+https://wenku.baidu.com/view/0d9eb876a417866fb84a8eb2.html
 
-http://blog.csdn.net/chlele0105/article/details/16972695
+mean-shift算法概述
 
-SPM:Spatial Pyramid Matching for Recognizing Natural Scene Categories空间金字塔匹配
+http://www.cnblogs.com/cfantaisie/archive/2011/06/10/2077188.html
 
-http://blog.csdn.net/jwh_bupt/article/details/9625469
+meanshift聚类
 
-Spatial Pyramid Matching 小结
+https://blog.csdn.net/google19890102/article/details/51030884
 
-# ILSVRC 2010考古
+Mean Shift聚类算法
 
-ILSVRC 2010的冠军是NEC和UIUC的联合队伍。这也是DL于2012年大放光彩之前比较杰出的成果。虽然现在它通常作为反面教材，出现在与DL的对比场景中，然而不可否认的是，它仍然是一个算法的杰作。
+## 反向投影图
 
->林元庆，清华大学硕士+宾夕法尼亚大学博士（2008年）。原百度研究院院长。
+在继续介绍Meanshift之前，我们先引入反向投影图的概念。
 
-![](/images/article/ILSVRC_2010.png)
+首先，我们对图像的像素值按照某种特征进行直方图统计，得到一组bin值。
 
-上图是NEC算法的基本流程图。这里不打算描述整个算法，而仅对其中涉及的术语做一个解释。
+然后，计算位置x上的bin值，并用该bin值替换原来的像素值，就得到了反向投影图。
+
+参考：
+
+https://blog.csdn.net/poiiy333/article/details/9051409
+
+反向投影图
 

@@ -261,6 +261,14 @@ https://mp.weixin.qq.com/s/_Zm88TyBcXAZ4LeQOuJCHA
 
 管理neo4j的用户
 
+## neo4j-graph-algorithms
+
+Neo4j Graph Algorithms扩展包，是一个关于图算法的jar包，集成了一些常见的图算法，比如社区发现，路径扩展，中心点计算，PageRank等。
+
+代码：
+
+https://github.com/neo4j-contrib/neo4j-graph-algorithms
+
 ## openCypher
 
 openCypher是基于Neo4j的查询语言Cypher开发的，Cypher用于在图数据库中存储和检索数据。在图数据库领域，目前还没有像关系数据库中访问数据的SQL这样的通用查询语言标准。
