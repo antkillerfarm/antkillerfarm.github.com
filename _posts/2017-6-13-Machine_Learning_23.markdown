@@ -303,3 +303,8 @@ https://mp.weixin.qq.com/s/VoBK-l_ieSg2UupC2ix2pA
 https://mp.weixin.qq.com/s/YRyqvlNe24mlFZ7GB9vDnw
 
 一文看懂常用的梯度下降算法
+
+https://mp.weixin.qq.com/s/aNWtGeNhzFG4ruLsbEdkNQ
+
+解析深度学习优化：Momentum、RMSProp 和 Adam
+

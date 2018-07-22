@@ -284,6 +284,10 @@ https://mp.weixin.qq.com/s/pA1SSEnwC884LBZGiH3jhg
 
 基于改进注意力循环控制门，品牌个性化排序升级系统来了
 
+https://mp.weixin.qq.com/s/V6tjQzfzsekXuoXhbXbKSQ
+
+一文搞懂阿里Deep Interest Network
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

@@ -267,3 +267,6 @@ RGB和YUV都是针对设备的颜色空间，反映的是设备产生的光的�
 HSV/HSB为Hue（色相）, Saturation（饱和度）, Value/Brightness（明度）。
 
 HSL为Hue, Saturation, Lightness（亮度）。
+
+类似的还有Munsell Color System，即HCV：Hue, Chroma（色度）, Value。
+

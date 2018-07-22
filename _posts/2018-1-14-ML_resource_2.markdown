@@ -426,4 +426,7 @@ https://mp.weixin.qq.com/s/fCpbownZuD1FCiDxqkD-sA
 
 操龙兵：非独立同分布学习
 
+https://zhuanlan.zhihu.com/p/40214106
+
+流形学习概述
 

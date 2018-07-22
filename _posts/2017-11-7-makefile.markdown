@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  makefile, Autotools, premake, Bazel
+title:  makefile, Autotools, premake, Bazel, CPU
 category: technology 
 ---
 
@@ -212,100 +212,80 @@ OkBuck是Uber推出的构建工具。官网：
 
 https://github.com/uber/okbuck
 
-# DL参考资源
+# CPU
 
-https://github.com/Alibaba-Technology/hangzhouYunQi2017ppt
+https://zhuanlan.zhihu.com/p/29743431
 
-2017杭州云栖大会精华PPT
+CPU制造的那些事之一：i7和i5其实是孪生兄弟！？
 
-https://mp.weixin.qq.com/s/Opnf5GBxoUqznWuYBb8xaA
+https://zhuanlan.zhihu.com/p/29767262
 
-清华唐杰AMiner团队全球H-index Top 10000学者半世纪迁移图
+CPU制造的那些事之二：Die的大小和良品率
 
-https://mp.weixin.qq.com/s/ulLh_JfLa9Os3ZFFAWVETA
+https://zhuanlan.zhihu.com/p/31848803
 
-谷歌大脑最新研究：高斯过程“超越”随机梯度下降！
+为什么CPU越来越多地采用硅脂而不是焊锡散热？
 
-https://mp.weixin.qq.com/s/DsmjjfInV_yPFWB2oSq-dA
+https://zhuanlan.zhihu.com/p/27624654
 
-取代学习率衰减的新方法：谷歌大脑提出增加Batch Size
+CPU风扇停转后会发生什么？CPU凭什么烧不坏
 
-https://mp.weixin.qq.com/s/PsIa3XDFqZlY2tKcvqvddw
+https://zhuanlan.zhihu.com/p/30409360
 
-Training RNNs as Fast as CNNs
+为什么CPU的频率止步于4G?我们触到频率天花板了吗？
 
-https://mp.weixin.qq.com/s/vUK2NneOs8OR0vcJEZNbrA
+https://zhuanlan.zhihu.com/p/33145828
 
-田渊栋等人论文：何时卷积滤波器容易学习？
+什么是Speculative Execution？为什么要有它？
 
-https://mp.weixin.qq.com/s/HP8KLbo26W5UscCGavKDRw
+http://mp.weixin.qq.com/s/sshhUppVPP6qM7LH1V3nSQ
 
-IBM Watson提出人机推理网络HuMaINs，结合人机两者优势
+四位计算机的原理及其实现
 
-https://mp.weixin.qq.com/s/fPj4wMtiFX55c_UjNsQnBg
+https://zhuanlan.zhihu.com/p/33579054
 
-PointCNN全面刷新测试记录：山东大学提出通用点云卷积框架
+Reset重启后发生了什么？它和关机后再开机有什么区别？
 
-https://mp.weixin.qq.com/s/tzAp6PxAn3GszcttRzfz8Q
+https://zhuanlan.zhihu.com/p/34003929
 
-CMU提出新型智能体定位方法：“主动神经定位器”
+调试程序时，设置断点的原理是什么？
 
-https://mp.weixin.qq.com/s/dWIhQVPNi9SlzuhMiatEVQ
+>Visual Studio有个有趣的特性是debug编译后，会把0xcc（INT 3）填入代码的空隙，这样一旦程序越界就会被VS捕捉而容易发现错误。而0xCCCC在中国的GBK编码是“烫”。有中国程序员翻看内存到代码段会发现很多"烫烫烫"，不明所以，以为发生了什么神奇的事情。
 
-几张贴纸就让神经网络看不懂道路标志，伯克利为真实环境生成对抗样本
+https://zhuanlan.zhihu.com/p/34091597
 
-https://mp.weixin.qq.com/s/_1rKAj-KOs4P8WnKzen64w
+ARM攒机指南-网络篇
 
-传统方法已经Out了？OpenAI提出全新辩论模式训练AI
+https://zhuanlan.zhihu.com/p/34223088
 
-https://zhuanlan.zhihu.com/p/36479489
+如何进入BIOS？
 
-图像检索：因缘际会与前瞻
+https://zhuanlan.zhihu.com/p/34858149
 
-https://mp.weixin.qq.com/s/Mk_EkwTYK2141cU9zC1hvQ
+128G的固态硬盘为什么有的标120G，有的标100G？固态硬盘容量背后的秘密
 
-合成逼真图像，试试港中大&英特尔的半参数方法
+https://zhuanlan.zhihu.com/p/30565679
 
-https://zhuanlan.zhihu.com/p/36527644
+人工智能技术热潮中，是否存在破解苹果A11处理器的可能？
 
-Learning with Noise: Enhance Distantly Supervised Relation Extraction with Dynamic Transition Matrix——一种对噪音数据显式建模的方法
+https://mp.weixin.qq.com/s/UWpp2r0_yDxNyJk-cldVyA
 
-https://mp.weixin.qq.com/s/tjnpIYJGmrTLGUsdtBI2Vw
+处理器高危漏洞无人幸免？树莓派：我们不受影响
 
-AI设计师“鹿班”核心技术公开：如何1秒设计8000张海报？
+>最近的Meltdown和Spectre漏洞被炒的沸沸扬扬，然而能用python语言讲述复杂的CPU计算原理，这是该文的一大创见。
 
-https://mp.weixin.qq.com/s/zeN7rjmAnvh_7BbTmScrZw
+https://mp.weixin.qq.com/s/v_BsfSFp-LwiCOFKaMIS_g
 
-细粒度分类你懂吗？——fine-gained image classification
+后摩尔时代，如何给你的CPU减负？
 
-https://mp.weixin.qq.com/s/Ob1ngUEmRgSybcAD5zg0QQ
+https://mp.weixin.qq.com/s/-2kGkJzjay2WJzIpMs2Adw
 
-利用深度学习消去反光
+IEEE盘点27款震撼世界的芯片
 
-https://mp.weixin.qq.com/s/3aAaM1DWsnCWEEbP7dOZEg
+https://mp.weixin.qq.com/s/gpfMOW7gzVa2HhYOlDy2nQ
 
-伯克利等提出无监督特征学习新方法，代码已开源
+从Intel和ARM争霸战，看看做芯片有多难
 
-https://mp.weixin.qq.com/s/ZDPPWH570Vc6e1irwP1b1Q
+https://zhuanlan.zhihu.com/p/38847308
 
-精细识别现实世界图像：李飞飞团队提出半监督适应性模型
-
-https://mp.weixin.qq.com/s/4dlWdPOCbYedu02aLAQ04Q
-
-MIT“创世纪”机器学习新系统，自动生成补丁修复Bug
-
-http://mp.weixin.qq.com/s/rS4xCsytYGqBLMUzlyA12A
-
-构建多层感知器神经网络对数字图片进行文本识别
-
-https://mp.weixin.qq.com/s/zv264-dqDQYRkYmjX_QZpQ
-
-郑宇解读地理传感器时间序列预测问题
-
-https://mp.weixin.qq.com/s/cr0BJLkyN2kW35-w1pebGQ
-
-学习在黑暗中看世界（Learning to See in the Dark）
-
-https://mp.weixin.qq.com/s/zWoQCKbZNz2td3cZxEsqKQ
-
-腾讯优图提出SRN-DeblurNet：高效高质量去除复杂图像模糊
+为什么硬盘转速是5400或者7200这么奇怪的数字？7200转的硬盘一定比5400快吗？

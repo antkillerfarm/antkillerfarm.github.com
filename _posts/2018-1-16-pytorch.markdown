@@ -396,3 +396,33 @@ https://mp.weixin.qq.com/s/jjT0x99ht8xtfWmzL-0R1A
 
 深度学习的IR“之争”
 
+# DL参考资源
+
+https://github.com/Alibaba-Technology/hangzhouYunQi2017ppt
+
+2017杭州云栖大会精华PPT
+
+https://mp.weixin.qq.com/s/Opnf5GBxoUqznWuYBb8xaA
+
+清华唐杰AMiner团队全球H-index Top 10000学者半世纪迁移图
+
+https://mp.weixin.qq.com/s/ulLh_JfLa9Os3ZFFAWVETA
+
+谷歌大脑最新研究：高斯过程“超越”随机梯度下降！
+
+https://mp.weixin.qq.com/s/DsmjjfInV_yPFWB2oSq-dA
+
+取代学习率衰减的新方法：谷歌大脑提出增加Batch Size
+
+https://mp.weixin.qq.com/s/PsIa3XDFqZlY2tKcvqvddw
+
+Training RNNs as Fast as CNNs
+
+https://mp.weixin.qq.com/s/vUK2NneOs8OR0vcJEZNbrA
+
+田渊栋等人论文：何时卷积滤波器容易学习？
+
+https://mp.weixin.qq.com/s/HP8KLbo26W5UscCGavKDRw
+
+IBM Watson提出人机推理网络HuMaINs，结合人机两者优势
+

@@ -352,3 +352,7 @@ https://mp.weixin.qq.com/s/uL7J5cSU3P7QsFczvT1fTA
 
 基于深度学习的文本分类6大算法-原理、结构、论文、源码打包分享
 
+https://mp.weixin.qq.com/s/uWMGJmiEfahRql1sn1B0hA
+
+通过全新学习和推断机制提升seq2seq 模型的语法改错性能
+

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十九）——GAN进阶, Graph NN
+title:  深度学习（三十九）——GAN进阶, Spiking Neuron Networks
 category: DL 
 ---
 
@@ -340,68 +340,40 @@ https://mp.weixin.qq.com/s/1cUM8_AUZ40JWGI37HsqFw
 
 换脸效果媲美GAN！一文解析OpenAI最新流生成模型Glow
 
-# Graph NN
+https://mp.weixin.qq.com/s/kD_163rjGRp4rXOdIPCvRA
 
-https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
+亲历IJCAI 2018，为什么北京大学SentiGAN能获杰出论文？
 
-Bengio等人提出图注意网络架构GAT，可处理复杂结构图
+# Spiking Neuron Networks
 
-https://zhuanlan.zhihu.com/p/34232818
+除了基于BP算法的NN之外，Spiking Neuron Networks也是一大类NN。Spiking NN和人脑结构更相似，功耗也更小，但是相关训练和数据量化的算法尚不成熟，属于潜力股。
 
-《Graph Attention Networks》阅读笔记
+参考：
 
-https://zhuanlan.zhihu.com/p/28170197
+https://homepages.cwi.nl/~sbohte/publication/paugam_moisy_bohte_SNNChapter.pdf
 
-《Gated Graph Sequence Neural Networks》阅读笔记
+Computing with Spiking Neuron Networks
 
-https://mp.weixin.qq.com/s/Pm1HiEQOBnbo_GQ_v6Y_zw
+https://mp.weixin.qq.com/s/6dpKSaLFVo-ge4gtbG8GQg
 
-腾讯提出自适应图卷积神经网络，接受不同图结构和规模的数据
+简述脉冲神经网络SNN：下一代神经网络
 
-https://mp.weixin.qq.com/s/bMpugd2Lp35VPr8fQAPzsg
+https://mp.weixin.qq.com/s/0n50YO1jIv_mxqe0EeS6kw
 
-一文概览图卷积网络基本结构和最新进展
+综述AI未来：神经科学启发的类脑计算
 
-https://zhuanlan.zhihu.com/p/31067515
+https://mp.weixin.qq.com/s/5KA7jtlRmnXxijGQhU1k4A
 
-《Semi-Supervised Classification with Graph Convolutional Networks》阅读笔记
+DeepMind哈萨比斯狂推的神经科学，入门需要看什么书？
 
-https://mp.weixin.qq.com/s/6viSk0Ts_7eTfYrWYi_HDQ
+https://mp.weixin.qq.com/s/TWdeHVCgEf54STvdA1QUPg
 
-基于图结构的实体和关系联合抽取模型简介
+DeepMind哈萨比斯长文：伟大的AI离不开神经科学
 
-https://mp.weixin.qq.com/s/w5ldyp00CqkX8Kp-8Aw0nQ
+https://mp.weixin.qq.com/s/8ibcyvyBLYArAMhQElqRzg
 
-图深度学习(GraphDL)，下一个人工智能算法热点？一文了解最新GDL相关文章
+Cell研究揭示生物神经元强大新特性，是时候设计更复杂的神经网络了！
 
-https://mp.weixin.qq.com/s/Jt6CjMqNFEXWoL5pkLeVyw
+https://mp.weixin.qq.com/s/cb6JBlb11xW0Xw0RWI4vFA
 
-洛桑理工：Graph上的深度学习报告
-
-https://zhuanlan.zhihu.com/p/36117802
-
-《Learn to Represent Programs with Graphs》阅读笔记。这篇论文讲述了DL在程序代码纠错方面的应用。
-
-https://zhuanlan.zhihu.com/p/37278426
-
-Graph2Seq: Graph to Sequence Learning with Attention-based Neural Networks
-
-https://mp.weixin.qq.com/s/iQYVyo2PHuGbEsYgdIf_oQ
-
-DeepMind等机构提出“图网络”：面向关系推理
-
-https://mp.weixin.qq.com/s/TAccHagxXQ82lfE91Y6xWg
-
-CNN已老，GNN来了：重磅论文讲述深度学习的因果推理
-
-https://mp.weixin.qq.com/s/UONtTJJgDawRPWtatAVKkg
-
-如何利用高效的搜索算法来搜索网络的拓扑结构
-
-https://mp.weixin.qq.com/s/lt9lZbulkW0C8A_xi6hodQ
-
-浅析图卷积神经网络
-
-https://mp.weixin.qq.com/s/SGCtwYWfnxjcpMJeeH1b4w
-
-图神经网络+池化模块，斯坦福等提出层级图表征学习
+浙大&川大提出脉冲版ResNet：继承ResNet优势，实现当前最佳

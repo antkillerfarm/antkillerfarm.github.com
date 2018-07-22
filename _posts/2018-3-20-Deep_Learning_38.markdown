@@ -368,3 +368,7 @@ https://mp.weixin.qq.com/s/33VKfq-jFHfn9GBQzFYq0Q
 
 震撼！英伟达用深度学习做图像修复，毫无ps痕迹
 
+https://mp.weixin.qq.com/s/FTfpjo-qT_PK4cbR5j0ulw
+
+AI当“暖男”：给裸照自动穿上比基尼
+

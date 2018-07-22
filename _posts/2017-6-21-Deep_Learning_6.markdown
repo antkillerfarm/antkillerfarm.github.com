@@ -40,6 +40,10 @@ LSTM主要包括以下4个步骤（也可称为4个功能或门）：
 
 **但是，上述标准LSTM模型中，tanh函数可以随意替换，而sigmoid函数却不能被替换，切记。**
 
+sigmoid用在了各种gate上，产生0~1之间的值，这个一般只有sigmoid最直接了。
+
+tanh用在了状态和输出上，是对数据的处理，这个用其他激活函数也可以。
+
 forget bias的初始值可以设为以1为均值，这对于训练很有好处，这就是tensorflow中forget_bias参数的来历。参见论文：
 
 《An Empirical Exploration of Recurrent Network Architectures》
@@ -163,6 +167,10 @@ https://blog.csdn.net/taoqick/article/details/79475350
 https://mp.weixin.qq.com/s/d9XmDCahK6UBlYWhI0D5jQ
 
 深度线性神经网络也能做非线性计算，OpenAI使用进化策略新发现
+
+https://mp.weixin.qq.com/s/PNe2aKVMYjV_Nd7qZwGuOw
+
+理解激活函数作用，看这篇文章就够了！
 
 ## ReLU的缺点
 

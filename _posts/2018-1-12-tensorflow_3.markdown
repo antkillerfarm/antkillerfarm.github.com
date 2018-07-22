@@ -270,6 +270,10 @@ https://mp.weixin.qq.com/s/MT1YaMm4KBWsIZeHehahgw
 
 TensorFlow重大升级：自动将Python代码转为TF Graph，大幅简化动态图处理！
 
+https://mp.weixin.qq.com/s/z6p4A4DfCuK8IBGVGwrtLQ
+
+如何利用TensorFlow.js部署简单的AI版“你画我猜”图像识别应用
+
 # 汽车声学
 
 https://zhuanlan.zhihu.com/p/22722073

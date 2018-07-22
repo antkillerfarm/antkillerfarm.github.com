@@ -205,8 +205,27 @@ Kaldi离线在线解码应用
 
 # Optical flow
 
+从本质上说，**光流就是你在这个运动着的世界里感觉到的明显的视觉运动**。例如，当你坐在火车上，然后往窗外看。你可以看到树、地面、建筑等等，他们都在往后退。这个运动就是光流。
 
+一些比较远的目标，例如云、山，它们移动很慢，感觉就像静止一样。但一些离得比较近的物体，例如建筑和树，就比较快的往后退，然后离我们的距离越近，它们往后退的速度越快。**可以通过不同目标的光流运动速度判断它们与我们的距离。**
 
+光流除了提供远近外，还可以提供**角度信息**。与咱们的眼睛正对着的方向成90度方向运动的物体速度要比其他角度的快。
+
+以上是光流的一个直观的定义和特性，下面谈一下它的严谨的研究性定义。
+
+光流的概念是Gibson在1950年首先提出来的。**它是空间运动物体在观察成像平面上的像素运动的瞬时速度，是利用图像序列中像素在时间域上的变化以及相邻帧之间的相关性来找到上一帧跟当前帧之间存在的对应关系，从而计算出相邻帧之间物体的运动信息的一种方法。**一般而言，光流是由于场景中前景目标本身的移动、相机的运动，或者两者的共同运动所产生的。
+
+当人的眼睛观察运动物体时，物体的景象在人眼的视网膜上形成一系列连续变化的图像，这一系列连续变化的信息不断“流过”视网膜（即图像平面），好像一种光的“流”，故称之为光流（optical flow）。光流表达了图像的变化，由于它包含了目标运动的信息，因此可被观察者用来确定目标的运动情况。
+
+研究光流场的目的就是为了从图片序列中近似得到不能直接得到的运动场。**运动场（motion field），其实就是物体在三维真实世界中的运动；光流场，是运动场在二维图像平面上（人的眼睛或者摄像头）的投影。**
+
+1981年，Horn和Schunck创造性地将二维速度场与灰度相联系，引入光流约束方程，得到光流计算的基本算法。人们基于不同的理论基础提出各种光流计算方法，算法性能各有不同。Barron等人对多种光流计算技术进行了总结，按照理论基础与数学方法的区别把它们分成四种：基于梯度的方法、基于匹配的方法、基于能量的方法、基于相位的方法。近年来神经动力学方法也颇受学者重视。
+
+参考：
+
+http://blog.csdn.net/zouxy09/article/details/8683859
+
+光流Optical Flow介绍与OpenCV实现
 
 http://www.cnblogs.com/walccott/p/4956858.html
 
@@ -215,10 +234,6 @@ Horn-Schunck光流法
 http://blog.csdn.net/u014568921/article/details/46638557
 
 目标跟踪之Lukas-Kanade光流法
-
-http://blog.csdn.net/zouxy09/article/details/8683859
-
-光流Optical Flow介绍与OpenCV实现
 
 http://www.cnblogs.com/gnuhpc/archive/2012/12/04/2802124.html
 
@@ -266,66 +281,4 @@ http://freemind.pluskid.org/machine-learning/hmm-kalman-particle-filtering
 
 漫谈HMM：Kalman/Particle Filtering
 
-# TLD
 
-http://blog.csdn.net/zouxy09/article/details/7893011
-
-TLD（Tracking-Learning-Detection）学习与源码理解系列文章
-
-http://blog.csdn.net/carson2005/article/details/7647500
-
-比微软kinect更强的视频跟踪算法--TLD跟踪算法介绍
-
-http://www.cnblogs.com/lxy2017/p/3927456.html
-
-TLD（Tracking-Learning-Detection）一种目标跟踪算法
-
-# 从BOW到SPM
-
-## BOW
-
-Bag-of-words模型是信息检索领域常用的文档表示方法。在信息检索中，BOW模型假定对于一个文档，忽略它的单词顺序和语法、句法等要素，将其仅仅看作是若干个词汇的集合，文档中每个单词的出现都是独立的，不依赖于其它单词是否出现。
-
-为了表示一幅图像，我们可以将图像看作文档，即若干个“视觉词汇”的集合，同样的，视觉词汇相互之间没有顺序。
-
-![](/images/article/cv_bow.jpg)
-
-由于图像中的词汇不像文本文档中的那样是现成的，我们需要首先从图像中提取出相互独立的视觉词汇，这通常需要经过三个步骤：
-
-（1）特征检测。
-
-（2）特征表示。
-
-（3）单词本的生成。
-
-而SIFT算法是提取图像中局部不变特征的应用最广泛的算法，因此我们可以用SIFT算法从图像中提取不变特征点，作为视觉词汇，并构造单词表，用单词表中的单词表示一幅图像。
-
-参考：
-
-http://blog.csdn.net/v_JULY_v/article/details/6555899
-
-SIFT算法的应用--目标识别之Bag-of-words模型
-
-https://zhuanlan.zhihu.com/p/25999669
-
-BOW算法，被CNN打爆之前的王者
-
-## SPM
-
-http://blog.csdn.net/chlele0105/article/details/16972695
-
-SPM:Spatial Pyramid Matching for Recognizing Natural Scene Categories空间金字塔匹配
-
-http://blog.csdn.net/jwh_bupt/article/details/9625469
-
-Spatial Pyramid Matching 小结
-
-# ILSVRC 2010考古
-
-ILSVRC 2010的冠军是NEC和UIUC的联合队伍。这也是DL于2012年大放光彩之前比较杰出的成果。虽然现在它通常作为反面教材，出现在与DL的对比场景中，然而不可否认的是，它仍然是一个算法的杰作。
-
->林元庆，清华大学硕士+宾夕法尼亚大学博士（2008年）。原百度研究院院长。
-
-![](/images/article/ILSVRC_2010.png)
-
-上图是NEC算法的基本流程图。这里不打算描述整个算法，而仅对其中涉及的术语做一个解释。

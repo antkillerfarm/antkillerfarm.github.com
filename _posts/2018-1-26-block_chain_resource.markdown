@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  区块链参考资源, CPU, 图像渲染, 硬件, 雷达
+title:  区块链参考资源, 图像渲染, 硬件, 雷达
 category: resource 
 ---
 
@@ -224,83 +224,9 @@ https://mp.weixin.qq.com/s/OUfDGYdgw6XKRgaUXmog1w
 
 区块链对供应链管理的五大意义
 
-# CPU
+https://mp.weixin.qq.com/s/k_mYbnchN2UF0kZ_2JD4Wg
 
-https://zhuanlan.zhihu.com/p/29743431
-
-CPU制造的那些事之一：i7和i5其实是孪生兄弟！？
-
-https://zhuanlan.zhihu.com/p/29767262
-
-CPU制造的那些事之二：Die的大小和良品率
-
-https://zhuanlan.zhihu.com/p/31848803
-
-为什么CPU越来越多地采用硅脂而不是焊锡散热？
-
-https://zhuanlan.zhihu.com/p/27624654
-
-CPU风扇停转后会发生什么？CPU凭什么烧不坏
-
-https://zhuanlan.zhihu.com/p/30409360
-
-为什么CPU的频率止步于4G?我们触到频率天花板了吗？
-
-https://zhuanlan.zhihu.com/p/33145828
-
-什么是Speculative Execution？为什么要有它？
-
-http://mp.weixin.qq.com/s/sshhUppVPP6qM7LH1V3nSQ
-
-四位计算机的原理及其实现
-
-https://zhuanlan.zhihu.com/p/33579054
-
-Reset重启后发生了什么？它和关机后再开机有什么区别？
-
-https://zhuanlan.zhihu.com/p/34003929
-
-调试程序时，设置断点的原理是什么？
-
->Visual Studio有个有趣的特性是debug编译后，会把0xcc（INT 3）填入代码的空隙，这样一旦程序越界就会被VS捕捉而容易发现错误。而0xCCCC在中国的GBK编码是“烫”。有中国程序员翻看内存到代码段会发现很多"烫烫烫"，不明所以，以为发生了什么神奇的事情。
-
-https://zhuanlan.zhihu.com/p/34091597
-
-ARM攒机指南-网络篇
-
-https://zhuanlan.zhihu.com/p/34223088
-
-如何进入BIOS？
-
-https://zhuanlan.zhihu.com/p/34858149
-
-128G的固态硬盘为什么有的标120G，有的标100G？固态硬盘容量背后的秘密
-
-https://zhuanlan.zhihu.com/p/30565679
-
-人工智能技术热潮中，是否存在破解苹果A11处理器的可能？
-
-https://mp.weixin.qq.com/s/UWpp2r0_yDxNyJk-cldVyA
-
-处理器高危漏洞无人幸免？树莓派：我们不受影响
-
->最近的Meltdown和Spectre漏洞被炒的沸沸扬扬，然而能用python语言讲述复杂的CPU计算原理，这是该文的一大创见。
-
-https://mp.weixin.qq.com/s/v_BsfSFp-LwiCOFKaMIS_g
-
-后摩尔时代，如何给你的CPU减负？
-
-https://mp.weixin.qq.com/s/-2kGkJzjay2WJzIpMs2Adw
-
-IEEE盘点27款震撼世界的芯片
-
-https://mp.weixin.qq.com/s/gpfMOW7gzVa2HhYOlDy2nQ
-
-从Intel和ARM争霸战，看看做芯片有多难
-
-https://zhuanlan.zhihu.com/p/38847308
-
-为什么硬盘转速是5400或者7200这么奇怪的数字？7200转的硬盘一定比5400快吗？
+教你用C++搭建一条迷你区块链！
 
 # 图像渲染
 
@@ -339,6 +265,10 @@ https://mp.weixin.qq.com/s/ZexnsNmqsD2yq-7YNASohw
 https://mp.weixin.qq.com/s/1XmbkoRkXUtmR0pnENhfGA
 
 基于高速DDFS的高精度DAC的设计
+
+https://mp.weixin.qq.com/s/aavlfxII5PW_RrsF6nS99g
+
+模-数转换(A/D)技术
 
 # 雷达
 
@@ -450,11 +380,11 @@ https://mp.weixin.qq.com/s/JKs0xpFllpWre9c-iJR41Q
 
 现代舰载雷达系统，有源相控阵的子系统分析
 
-https://mp.weixin.qq.com/s/aavlfxII5PW_RrsF6nS99g
-
-模-数转换(A/D)技术
-
 https://mp.weixin.qq.com/s/qEZaUgIdpb9LabAwPpw7jg
 
 雷达自适应波束形成：基于FPGA的QRD+WBS算法
+
+https://mp.weixin.qq.com/s/hj9Nh6Ckc0072B2GL5YIHA
+
+数字化的重要理论：带通采样定理
 

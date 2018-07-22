@@ -310,6 +310,14 @@ Fortran作为最早的高级语言（1957年），至今仍有很强的生命力
 
 # 大数据平台参考资源
 
+https://mp.weixin.qq.com/s/syM4ReAWpZ5d4KI87ogpiQ
+
+从单一架构到分布式交易架构，网易严选的成功实践
+
+https://mp.weixin.qq.com/s/qh88sawJUZedv3X0LIRsAQ
+
+ESearch：58集团基于C++语言自主研发的搜索内核
+
 https://mp.weixin.qq.com/s/uMj3JEhgyYw4CaIhP1-GTQ
 
 阿里巴巴为什么不用ZooKeeper做服务发现？
@@ -329,4 +337,3 @@ https://mp.weixin.qq.com/s/d7xMT1jrkwT_csC1kugw4w
 https://mp.weixin.qq.com/s/Mw-bQiWURE6oBz-EwfoiiA
 
 Meteor实时计算平台架构与实践
-

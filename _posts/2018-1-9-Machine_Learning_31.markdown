@@ -62,6 +62,36 @@ https://mp.weixin.qq.com/s/ElOFb0Ln4qyG1x38NRFyag
 
 如何处理数据不均衡问题
 
+# DL参考资源
+
+https://mp.weixin.qq.com/s/o0hjJH6P-8pICS43VFVjIA
+
+Tomaso Poggio深度学习理论：深度网络“过拟合缺失”的本质
+
+https://mp.weixin.qq.com/s/ZvTm9omnIRqPXcLFbZtoeg
+
+深度学习的关键：无监督深度学习简介
+
+https://mp.weixin.qq.com/s/ouHPvm4vQKga5sZfG_CHBw
+
+DeepMind用深度学习模仿大脑推理，预测编码智能推进一大步！
+
+https://mp.weixin.qq.com/s/494I6XHrk9fB2DvhiMM9iQ
+
+第四范式联合港科大提出样本自适应在线卷积稀疏编码
+
+https://mp.weixin.qq.com/s/hcoAL1AHm_HtderWU8fSBw
+
+大连理工大学在CVPR18大规模精细粒度物种识别竞赛中获得冠军
+
+https://mp.weixin.qq.com/s/p8u2aTJL2gfPIXLsLfoJyg
+
+谷歌大脑提出MAPO：用于程序合成的策略优化方法
+
+https://mp.weixin.qq.com/s/zC5iGXVn7xH8TYBXtkntzA
+
+让计算机一眼认出“猫”：哈佛提出新高维数据分析法
+
 # Linear Discriminant Analysis
 
 在《机器学习（十七）》中，我们已经讨论了一个LDA，这里我们来看看另一个LDA。

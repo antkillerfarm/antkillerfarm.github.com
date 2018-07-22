@@ -310,6 +310,10 @@ https://mp.weixin.qq.com/s/h3VaKs0Pc44n-hXYNlkALA
 
 开源OCR文字识别软件Calamari
 
+https://mp.weixin.qq.com/s/ynpqG7Vfu5b8lYNW6Y-TpA
+
+快准狠！Intel论文揭示自家车牌识别算法:LPRNet
+
 # CRNN
 
 论文：

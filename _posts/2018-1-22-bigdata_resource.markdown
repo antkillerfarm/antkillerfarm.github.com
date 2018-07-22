@@ -182,6 +182,14 @@ https://mp.weixin.qq.com/s/NvD-NSR-aE8HTADR2LSSjA
 
 基于Flink流处理的动态实时超大规模用户行为分析
 
+https://mp.weixin.qq.com/s/B9zo0zThARAi11hRuJ-AqA
+
+开源实时数据处理系统Pulsar：一套搞定Kafka+Flink+DB
+
+https://mp.weixin.qq.com/s/UFzFuHFqsXl6ynKyYoOnRA
+
+容错和高性能如何兼得: Flink创始人谈流计算核心架构演化和现状
+
 https://mp.weixin.qq.com/s/p5NxvhpfYmoKMVnbAK6-zA
 
 如何降低90%Java垃圾回收时间？以阿里HBase的GC优化实践为例
@@ -414,10 +422,6 @@ https://mp.weixin.qq.com/s/xlCO__HucTUd_gYNRTueGg
 
 携程基于大数据分析的实时风控体系
 
-https://mp.weixin.qq.com/s/B9zo0zThARAi11hRuJ-AqA
-
-开源实时数据处理系统Pulsar：一套搞定Kafka+Flink+DB
-
 https://mp.weixin.qq.com/s/y6ntgPxTaLFBJDn3usBd1g
 
 美团点评广告实时索引的设计与实现
@@ -433,12 +437,3 @@ https://mp.weixin.qq.com/s/NwjYJde9_TC4PXMPpYw1Gw
 https://mp.weixin.qq.com/s/Kv1Qq4118I2itYwPYyQUoA
 
 Spark Streaming 实时计算在甜橙金融监控系统中的应用及优化
-
-https://mp.weixin.qq.com/s/syM4ReAWpZ5d4KI87ogpiQ
-
-从单一架构到分布式交易架构，网易严选的成功实践
-
-https://mp.weixin.qq.com/s/qh88sawJUZedv3X0LIRsAQ
-
-ESearch：58集团基于C++语言自主研发的搜索内核
-

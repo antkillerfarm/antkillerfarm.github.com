@@ -4,6 +4,36 @@ title:  机器学习（十五）——协同过滤的ALS算法
 category: ML 
 ---
 
+## 矩阵规则化（续）
+
+https://mp.weixin.qq.com/s/MRabAUZrfgD2t2GhnLI43Q
+
+开发者必读：计算机科学中的线性代数
+
+https://mp.weixin.qq.com/s/ctLe1UbvWqBJ8jh-ppU3rA
+
+机器学习中的五种回归模型及其优缺点
+
+https://mp.weixin.qq.com/s/zzCRiSSyfTAFYSGMnr8zfg
+
+机器学习中L1和L2正则化的直观解释
+
+https://mp.weixin.qq.com/s/xwYldlEjJ9Co9uo8o0mlKQ
+
+深度学习之DNN的多种正则化方式
+
+https://mp.weixin.qq.com/s/-axtm6ZBm8yYneiA3mvQrw
+
+SIGIR 2018大会最佳短论文：利用对抗学习的跨域正则化
+
+https://mp.weixin.qq.com/s/5OMT6BvqkUgtshow_tLkNw
+
+精准防御对抗性攻击，清华大学提出对抗正则化训练方法DeepDefense
+
+https://mp.weixin.qq.com/s/FtWA1rff13e7_FM0lJKCVg
+
+Petuum提出新型正则化方法：非重叠促进型变量选择
+
 # 协同过滤的ALS算法
 
 ## 协同过滤概述
@@ -275,30 +305,4 @@ $$Y^TYx_u+\lambda Ix_u=Y^Tr_u\Rightarrow x_u=(Y^TY+\lambda I)^{-1}Y^Tr_u\tag{3}$
 同理，对$$y_i$$求导，由于X和Y是对称的，因此可得类似的结论：
 
 $$y_i=(X^TX+\lambda I)^{-1}X^Tr_i\tag{4}$$
-
-因此整个优化迭代的过程为：
-
->1.随机生成X、Y。（相当于对迭代算法给出一个初始解。）   
->Repeat until convergence {   
->>2.固定Y，使用公式3更新$$x_u$$。    
->>3.固定X，使用公式4更新$$y_i$$。    
->
->}
-
-一般使用RMSE（root-mean-square error）评估误差是否收敛，具体到这里就是：
-
-$$RMSE=\sqrt{\frac{\sum(R-XY^T)^2}{N}}$$
-
-其中，N为三元组<User,Item,Rating>的个数。当RMSE值变化很小时，就可以认为结果已经收敛。
-
-算法复杂度：
-
-1.求$$x_u$$：$$O(k^2N+k^3m)$$
-
-2.求$$y_i$$：$$O(k^2N+k^3n)$$
-
-可以看出当k一定的时候，这个算法的复杂度是**线性**的。
-
-因为这个迭代过程，交替优化X和Y，因此又被称作交替最小二乘算法（Alternating Least Squares，ALS）。
-
 

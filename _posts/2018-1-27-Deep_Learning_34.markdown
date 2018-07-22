@@ -82,6 +82,10 @@ https://mp.weixin.qq.com/s/RbUcEOctRm8kX6_Ar4J0CA
 
 446页简易Python强化学习教程书籍
 
+https://mp.weixin.qq.com/s/7DlbuJI_gARJRABnlZQcxQ
+
+伯克利大学ICML2018强化学习80页教程
+
 ## 论文
 
 《A Brief Survey of Deep Reinforcement Learning》
@@ -159,6 +163,10 @@ https://mp.weixin.qq.com/s/0HukwNmg3k-rBrIBByLhnQ
 https://mp.weixin.qq.com/s/x-qCA0TzoVUtZ8VAf8ey0A
 
 深度Q学习介绍
+
+https://mp.weixin.qq.com/s/snNvN4FFP0VEZwDA0TAp1w
+
+强化学习训练Chrome小恐龙Dino Run：最高超过4000分
 
 ## 参考
 

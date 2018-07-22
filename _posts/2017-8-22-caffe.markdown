@@ -350,35 +350,11 @@ Facebook开源产业级深度学习框架Caffe2
 
 # DL参考资源
 
-https://mp.weixin.qq.com/s/uUMPUdG2TI10W5RumPaXkA
+https://mp.weixin.qq.com/s/LqjEQN7pHTL47ToDh4WgZg
 
-DeepMind无监督表示学习重大突破：语音、图像、文本、强化学习全能冠军！
+CVPR 2018，盘点我心中的创意 TOP10
 
-https://mp.weixin.qq.com/s/ESX-V5oMk35NhP7MKu_d0A
+https://mp.weixin.qq.com/s/R3T2CveNbjZszoJ1iL_3bw
 
-美剧《硅谷》深度学习APP获艾美奖提名：使用TensorFlow和GPU开发
-
-https://mp.weixin.qq.com/s/2FKgCmQ8i58XamT_plrl1w
-
-深度神经网络为什么不易过拟合？傅里叶分析发现固有频谱偏差
-
-https://mp.weixin.qq.com/s/ora66weNks8tHlFTKJrKSA
-
-谷歌AI自动重构3D大脑，最高精度绘制神经元
-
-https://mp.weixin.qq.com/s/o0hjJH6P-8pICS43VFVjIA
-
-Tomaso Poggio深度学习理论：深度网络“过拟合缺失”的本质
-
-https://mp.weixin.qq.com/s/ZvTm9omnIRqPXcLFbZtoeg
-
-深度学习的关键：无监督深度学习简介
-
-https://mp.weixin.qq.com/s/ouHPvm4vQKga5sZfG_CHBw
-
-DeepMind用深度学习模仿大脑推理，预测编码智能推进一大步！
-
-https://mp.weixin.qq.com/s/494I6XHrk9fB2DvhiMM9iQ
-
-第四范式联合港科大提出样本自适应在线卷积稀疏编码
+带引导的进化策略：摆脱随机搜索中维数爆炸的魔咒
 
