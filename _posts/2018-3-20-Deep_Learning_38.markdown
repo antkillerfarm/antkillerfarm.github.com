@@ -204,6 +204,10 @@ https://mp.weixin.qq.com/s/P5EysBHBaR6L3IfeSgo6fw
 
 强化学习20分钟，剑桥博士教汽车学会自动驾驶！
 
+https://mp.weixin.qq.com/s/IYyGgnoXZm6YfamLejqoNQ
+
+深度强化学习试金石：DeepMind和OpenAI攻克蒙特祖玛复仇的真正意义
+
 # CNN进阶
 
 https://mp.weixin.qq.com/s/gwH9s1ggMTj2dJkad9wUuw

@@ -376,6 +376,10 @@ https://mp.weixin.qq.com/s/G8Xj_G9rxI4SinX0VZ35WA
 
 用人工蜂群算法求解k-分区聚类问题
 
+https://mp.weixin.qq.com/s/su2F2F3dtl6W-WNuQHNpJg
+
+不使用深度学习，进化算法也能玩Atari游戏！
+
 ## 深度哈希
 
 https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg

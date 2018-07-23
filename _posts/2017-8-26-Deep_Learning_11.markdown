@@ -68,6 +68,12 @@ Receptive Field的大小实际上就是采样范围的大小，例如一个kerne
 
 其他卷积的情况，可以依此类推。
 
+参考：
+
+https://mp.weixin.qq.com/s/R8rEngNI31w0DQwjjeS6kw
+
+关于感受野的总结
+
 ## 参考
 
 https://github.com/vdumoulin/conv_arithmetic

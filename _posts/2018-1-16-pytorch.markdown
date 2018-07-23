@@ -264,6 +264,14 @@ https://mp.weixin.qq.com/s/ceCopgMboWvNxl8qgmeB-Q
 
 使用PaddleFluid和TensorFlow训练序列标注模型
 
+https://mp.weixin.qq.com/s/PjwsfdlwZMRvuprkmi-saQ
+
+云脑科技-实习僧文本匹配模型及基于百度PaddlePaddle的应用
+
+https://mp.weixin.qq.com/s/oC1ZMRNrJK9oY4y6oHxzbA
+
+百度PaddlePaddle的新特性与大规模稀疏数据分布式模型训练
+
 # MXNet
 
 https://mp.weixin.qq.com/s/lVja7woyFWpmr9sH0CitAA
@@ -309,10 +317,6 @@ TensorFlow、MXNet、PaddlePaddle三个开源库对比
 https://mp.weixin.qq.com/s/-BlBm3ZTZ32ijORJux7rTA
 
 DMLC团队发布GluonCV和GluonNLP：两种简单易用的DL工具箱
-
-https://mp.weixin.qq.com/s/PjwsfdlwZMRvuprkmi-saQ
-
-云脑科技-实习僧文本匹配模型及基于百度PaddlePaddle的应用
 
 https://mp.weixin.qq.com/s/Vb-7hGw7UOx4jP3lwW3Leg
 

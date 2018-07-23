@@ -162,6 +162,10 @@ http://www.cnblogs.com/gaoxiang12/p/5113334.html
 
 视觉SLAM中的数学基础
 
+http://www.cnblogs.com/gaoxiang12/p/5560360.html
+
+SLAM中的EKF，UKF，PF原理简介
+
 https://zhuanlan.zhihu.com/p/26988866
 
 机器人学习Robot Learning的发展

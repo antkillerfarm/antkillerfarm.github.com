@@ -242,6 +242,10 @@ https://mp.weixin.qq.com/s/_tEqbOfe0GyBnUo1leOOkA
 
 分离特征抽取与决策制定，如何用6-18个神经元玩转Atari游戏
 
+https://mp.weixin.qq.com/s/6PJYGuJTUXF_Ht_wF1swmA
+
+英雄联盟如何指挥团战？AI帮你做决策
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293

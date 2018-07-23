@@ -157,6 +157,10 @@ http://www.jianshu.com/p/e2d2d7cbbe49
 
 50行代码实现GAN
 
+https://mp.weixin.qq.com/s/pgWysIGObceGVrxs85kyew
+
+白话生成对抗网络GAN，50行代码玩转GAN模型！
+
 https://mp.weixin.qq.com/s/YnOF9CCUFvtaiTY8HXYOuw
 
 深入浅出：GAN原理与应用入门介绍

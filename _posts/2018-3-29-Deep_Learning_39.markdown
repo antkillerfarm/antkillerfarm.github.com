@@ -344,6 +344,10 @@ https://mp.weixin.qq.com/s/kD_163rjGRp4rXOdIPCvRA
 
 亲历IJCAI 2018，为什么北京大学SentiGAN能获杰出论文？
 
+https://mp.weixin.qq.com/s/v23rSjIKyVEAGCN8rEtsfg
+
+伯克利新论文：合成GAN（Compositional GAN）
+
 # Spiking Neuron Networks
 
 除了基于BP算法的NN之外，Spiking Neuron Networks也是一大类NN。Spiking NN和人脑结构更相似，功耗也更小，但是相关训练和数据量化的算法尚不成熟，属于潜力股。

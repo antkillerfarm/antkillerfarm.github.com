@@ -364,3 +364,7 @@ https://mp.weixin.qq.com/s/bjVTpdaKFx4fFtT8BjMNew
 
 指数级加速架构搜索：CMU提出基于梯度下降的可微架构搜索方法
 
+https://mp.weixin.qq.com/s/wGt3Xk_ARqHei-ddU9iXNg
+
+算力节省240倍！上交大、MIT新方法低成本达到谷歌AutoML性能
+

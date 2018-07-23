@@ -152,6 +152,10 @@ https://mp.weixin.qq.com/s/daGdfe8c5RACq6hjh1ORVw
 
 MultiPoseNet:人体检测、姿态估计、语义分割一“网”打尽
 
+https://mp.weixin.qq.com/s/aJvnzck__8z4DaPPgzT_sA
+
+美图云联合中科院提出基于交互感知注意力机制神经网络的行为分类技术
+
 # 深度目标跟踪
 
 https://zhuanlan.zhihu.com/p/22334661

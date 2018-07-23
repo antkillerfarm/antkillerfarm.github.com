@@ -156,6 +156,10 @@ https://docs.python.org/2/library/json.html
 
 python自带的json包的文档
 
+https://mp.weixin.qq.com/s/qk8hlcE3oxa-4a-G4sxGVg
+
+为什么说JSON不适合做配置语言？
+
 ## Jackson
 
 Jackson是常用的Java语言的JSON库。

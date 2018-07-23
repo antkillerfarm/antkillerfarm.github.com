@@ -358,3 +358,8 @@ https://mp.weixin.qq.com/s/R3T2CveNbjZszoJ1iL_3bw
 
 带引导的进化策略：摆脱随机搜索中维数爆炸的魔咒
 
+https://mp.weixin.qq.com/s/NXyrqkwqMHFsWJZE7D_SMA
+
+线性模型可解释一定比DNN高？UCSD科学家：大错特错！
+
+

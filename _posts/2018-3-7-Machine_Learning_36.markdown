@@ -241,3 +241,52 @@ https://blog.csdn.net/zhaodedong/article/details/78445910
 
 Bloom Filter的数学背景
 
+# 从BOW到SPM
+
+## BOW
+
+Bag-of-words模型是信息检索领域常用的文档表示方法。在信息检索中，BOW模型假定对于一个文档，忽略它的单词顺序和语法、句法等要素，将其仅仅看作是若干个词汇的集合，文档中每个单词的出现都是独立的，不依赖于其它单词是否出现。
+
+为了表示一幅图像，我们可以将图像看作文档，即若干个“视觉词汇”的集合，同样的，视觉词汇相互之间没有顺序。
+
+![](/images/article/cv_bow.jpg)
+
+由于图像中的词汇不像文本文档中的那样是现成的，我们需要首先从图像中提取出相互独立的视觉词汇，这通常需要经过三个步骤：
+
+（1）特征检测。
+
+（2）特征表示。
+
+（3）单词本的生成。
+
+而SIFT算法是提取图像中局部不变特征的应用最广泛的算法，因此我们可以用SIFT算法从图像中提取不变特征点，作为视觉词汇，并构造单词表，用单词表中的单词表示一幅图像。
+
+参考：
+
+http://blog.csdn.net/v_JULY_v/article/details/6555899
+
+SIFT算法的应用--目标识别之Bag-of-words模型
+
+https://zhuanlan.zhihu.com/p/25999669
+
+BOW算法，被CNN打爆之前的王者
+
+## SPM
+
+http://blog.csdn.net/chlele0105/article/details/16972695
+
+SPM:Spatial Pyramid Matching for Recognizing Natural Scene Categories空间金字塔匹配
+
+http://blog.csdn.net/jwh_bupt/article/details/9625469
+
+Spatial Pyramid Matching 小结
+
+# ILSVRC 2010考古
+
+ILSVRC 2010的冠军是NEC和UIUC的联合队伍。这也是DL于2012年大放光彩之前比较杰出的成果。虽然现在它通常作为反面教材，出现在与DL的对比场景中，然而不可否认的是，它仍然是一个算法的杰作。
+
+>林元庆，清华大学硕士+宾夕法尼亚大学博士（2008年）。原百度研究院院长。
+
+![](/images/article/ILSVRC_2010.png)
+
+上图是NEC算法的基本流程图。这里不打算描述整个算法，而仅对其中涉及的术语做一个解释。

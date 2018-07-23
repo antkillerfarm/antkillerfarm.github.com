@@ -359,6 +359,10 @@ https://mp.weixin.qq.com/s/Vi4Yb8TOJydj9yL078iNHw
 
 BIRCH层次聚类详解
 
+https://mp.weixin.qq.com/s/dIsq3RKAU_K6vS0-MPKbzA
+
+BIRCH聚类算法原理
+
 https://mp.weixin.qq.com/s/_5A3DuVyN6aE9n5OEc19kA
 
 数据科学家必须了解的六大聚类算法：带你发现数据之美

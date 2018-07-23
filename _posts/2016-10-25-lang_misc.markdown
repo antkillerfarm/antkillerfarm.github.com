@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  小众语言集中营, Github显示数学公式， SCR-300 & SCR-536
+title:  小众语言集中营, Github显示数学公式, SCR-300 & SCR-536
 category: language 
 ---
 
