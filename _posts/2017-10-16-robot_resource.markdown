@@ -86,6 +86,8 @@ FCW：Forward Collision Warning，前向碰撞预警
 
 AEB：Automatic emergency braking，自动紧急刹车
 
+SLAM：Simultaneous Localization and Mapping
+
 ## blog
 
 http://www.cnblogs.com/yhlx125/

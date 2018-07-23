@@ -291,6 +291,10 @@ http://freemind.pluskid.org/machine-learning/hmm-kalman-particle-filtering
 
 漫谈HMM：Kalman/Particle Filtering
 
+https://zhuanlan.zhihu.com/p/26783371
+
+视频跟踪算法之粒子滤波
+
 # TLD
 
 http://blog.csdn.net/zouxy09/article/details/7893011

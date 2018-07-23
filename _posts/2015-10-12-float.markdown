@@ -294,6 +294,18 @@ https://blog.csdn.net/app_12062011/article/details/52277537
 
 目标跟踪算法的分类（三）
 
+## 多目标追踪
+
+Multiple Object Tracking
+
+https://zhuanlan.zhihu.com/p/34730368
+
+多目标追踪
+
+https://zhuanlan.zhihu.com/p/36462982
+
+多目标追踪算法：条件随机场算法
+
 ## 参考
 
 https://www.zhihu.com/question/26493945
@@ -303,4 +315,3 @@ https://www.zhihu.com/question/26493945
 https://mp.weixin.qq.com/s/Wz-loMz1oOlxtm10gazQRg
 
 目标检测（Object Detection）和目标跟踪（Object Tracking）的区别
-
