@@ -258,6 +258,10 @@ https://mp.weixin.qq.com/s/eBNoTDOMLlVymiU3LUqSgQ
 
 用Attention模型自动生成图像字幕
 
+https://mp.weixin.qq.com/s/4wuYNYGDesNgsJ13y65XQA
+
+AI都可以将文字轻松转成图像
+
 # Multi-agent
 
 https://zhuanlan.zhihu.com/p/39037444

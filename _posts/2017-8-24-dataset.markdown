@@ -312,6 +312,10 @@ https://mp.weixin.qq.com/s/WPESySGMv_ehSt6oNUkVGg
 
 视频语义显著实例分割数据集SESIV
 
+https://mp.weixin.qq.com/s/AW5PGDXCTPMf8hwsPxOfjg
+
+NIHCC发布迄今世界最大的CT医学影像数据集
+
 # 世说新语
 
 ## 2018.7（续）
@@ -334,3 +338,12 @@ https://mp.weixin.qq.com/s/WPESySGMv_ehSt6oNUkVGg
 
 俄罗斯二人转尽在弗拉基米尔大舞台。
 
+----
+
+https://www.zhihu.com/question/67018316
+
+老式的手操高射炮是怎么射中万米高空的敌机的？
+
+>Charles Stark "Doc" Draper，1901～1987，美国科学家和工程师，惯性导航之父。Stanford本科（1922）+MIT硕博（1928，1938）。美国科学院、美国工程院院士。MIT教授，他所在的实验室后来被称为Charles Stark Draper Laboratory。美国工程院设有Charles Stark Draper Prize。
+
+除了MK14瞄准具之外，Draper还设计了弹道导弹和登月飞船的惯性导航机构，为美国的航空航天事业做出了极大的贡献。

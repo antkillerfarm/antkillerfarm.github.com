@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Machine Learning之Python篇（二）
+title:  Machine Learning之Python篇（二）, 数字成像
 category: AI 
 ---
 
@@ -363,4 +363,110 @@ https://mp.weixin.qq.com/s/tJwgNXKVwoJby-WkeMeBqQ
 https://mp.weixin.qq.com/s/8NI-NayCg_gZmJ6-1FZ_DA
 
 一个Python特征选择工具，助力实现高效机器学习
+
+# 数字成像
+
+https://mp.weixin.qq.com/s/od9uDZdRU4QaBKPHb0tLag
+
+cmos sensor基础
+
+https://mp.weixin.qq.com/s/lVS3CgZGItUkWG-OtolbSA
+
+数字成像书籍推荐与资料分享
+
+https://mp.weixin.qq.com/s/1IHHo4sV79sXdtXNzKNhMA
+
+计算摄影--google相机的王者之道
+
+https://mp.weixin.qq.com/s/T4XULnykHANEetmDIhZdaw
+
+mobile camera sensor技术方向选择的经验与教训
+
+https://mp.weixin.qq.com/s/EcAAc_ypajEKXUQbOoYAMA
+
+如何选择IR filter
+
+https://mp.weixin.qq.com/s/5rNpp2cYZhcOKZCiy4LkMQ
+
+SAR成像原理及图像鉴赏
+
+https://mp.weixin.qq.com/s/typXBdisUI-d_viVInx9XQ
+
+解析DXO图像质量评价体系
+
+https://mp.weixin.qq.com/s/t-Mzx0IEdZG7_TmMpT_cBA
+
+小谈CMOS Sensor设计之FSI和BSI
+
+https://mp.weixin.qq.com/s/gyuKlDwlIqaZmC3w-r8oqg
+
+手机相机如何排名
+
+https://mp.weixin.qq.com/s/o_XsmqLSPhvuC0iiK7xHag
+
+结构光（1）基本介绍
+
+https://mp.weixin.qq.com/s/cDrVpqsY7f2HZCJa4X8Iww
+
+Google Pixel 2/2XL视频稳定技术探究
+
+https://mp.weixin.qq.com/s/7E9QDSM095KyYwPs-wDznA
+
+成像相关颜色测量仪器简介
+
+https://mp.weixin.qq.com/s/DH3mZgh4YbnceaFGs03kOQ
+
+曹汛：计算摄像学研究
+
+https://mp.weixin.qq.com/s/f2BIrZ8if7_rX__J9hMHog
+
+广色域----iphone X/8 camera的色彩进化
+
+http://mp.weixin.qq.com/s/MWQDwMoRc0c1ofkENzn3Ew
+
+结构光，TOF，双目视觉的异同
+
+https://mp.weixin.qq.com/s/VjzXYgkzAGloczaaPXni2A
+
+PDAF进化史
+
+https://mp.weixin.qq.com/s/7es1wtJXatJR2eHScrk2_w
+
+深度相机大盘点（1）
+
+https://mp.weixin.qq.com/s/m7q6jHbdnb7fw4lKIDfVWw
+
+camera接口之MIPI联盟浅谈
+
+https://mp.weixin.qq.com/s/DbDrDhbQAhXOsfxQ8UJVZg
+
+三星S9凝时摄影背后的sensor技术
+
+https://mp.weixin.qq.com/s/gOikxUxWpqdDRr6_KT2jxQ
+
+图像处理，计算机视觉与machine learning的区别与联系
+
+https://mp.weixin.qq.com/s/7fvVmmpPSldwa3TZ3dVb2g
+
+3D LUT--色彩校正的利器
+
+https://mp.weixin.qq.com/s/sXC263Lq25tKp2AK2Tsb-A
+
+Omnivision HDR sensor简介
+
+https://mp.weixin.qq.com/s/oeMqE0MzXyGeABGekY9eiQ
+
+眼擎科技CEO朱继志：如何设计自动驾驶的视觉成像系统
+
+https://blog.csdn.net/weixin_38285131/article/details/80457068
+
+光场相机重聚焦原理介绍及代码解析
+
+https://mp.weixin.qq.com/s/eyIeLaBZ0f_EsxglsUuH8A
+
+深度学习自动构图研究报告
+
+https://mp.weixin.qq.com/s/k2JLF_aM3j68GjEByCZF-g
+
+模拟/数字增益对图像噪声的影响
 

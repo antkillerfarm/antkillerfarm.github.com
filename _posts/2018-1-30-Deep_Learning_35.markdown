@@ -280,6 +280,10 @@ MXNet版本：
 
 https://github.com/TuSimple/mx-maskrcnn
 
+Pytorch版本：
+
+https://github.com/wannabeOG/Mask-RCNN
+
 ![](/images/img2/mask_rcnn.png)
 
 参考：

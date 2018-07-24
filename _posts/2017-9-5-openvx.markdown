@@ -354,5 +354,12 @@ https://mp.weixin.qq.com/s/uL7J5cSU3P7QsFczvT1fTA
 
 https://mp.weixin.qq.com/s/uWMGJmiEfahRql1sn1B0hA
 
-通过全新学习和推断机制提升seq2seq 模型的语法改错性能
+通过全新学习和推断机制提升seq2seq模型的语法改错性能
 
+https://mp.weixin.qq.com/s/_O4YqFK2xkFuB4nTbcu1cw
+
+哈佛NLP组论文解读：基于隐变量的注意力模型
+
+https://mp.weixin.qq.com/s/6BIspcIQrn7k3VQ9NP63Ng
+
+DeepMind提出空间语言集成模型SLIM，有效编码自然语言的空间关系

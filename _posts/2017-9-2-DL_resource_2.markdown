@@ -330,6 +330,10 @@ https://mp.weixin.qq.com/s/oOYGa4Mti6KpkpI4TtpitQ
 
 地平线杨铭：从无形视觉到有形芯片
 
+https://mp.weixin.qq.com/s/_8lbTU0GFEXQr_4pdQ6XPw
+
+同步SGD等现有分布式训练方式将过时，Yoshua Bengio谈迈向硬件友好的深度学习
+
 ## AI医疗
 
 https://github.com/albarqouni/Deep-Learning-for-Medical-Applications
