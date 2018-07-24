@@ -372,3 +372,37 @@ https://mp.weixin.qq.com/s/YBorhQrJ0UL3HZQHgd5D6A
 
 清华等机构提出基于内部一致性的行人检索方法，实现当前最优
 
+# 垃圾筐
+
+https://mp.weixin.qq.com/s/rZwqxyBmQg07Pq1ihTjNMg
+
+动图解释泰勒级数（一）
+
+https://mp.weixin.qq.com/s/yqAnIjGmXpubgSsGDx6O8w
+
+动图解释泰勒级数（二）
+
+https://zhuanlan.zhihu.com/p/36230460
+
+黑盒函数的探索
+
+http://www.matrix67.com/blog/archives/4570
+
+再谈Julia集与Mandelbrot集
+
+https://mp.weixin.qq.com/s/3svGvbk0-ek5tQCWJ9ii4A
+
+读懂相对论：从弯曲空间的几何开始
+
+https://mp.weixin.qq.com/s/xin9VUuIVCZqP-KPn_xAlw
+
+没想到，用极坐标画素数时竟然出现了这神奇的一幕！
+
+https://mp.weixin.qq.com/s/GFO84scpniELyqLdf8HzOQ
+
+一个10*10的正方形里，最多可以放多少个直径为1的圆？为啥不是100个？
+
+https://zhuanlan.zhihu.com/p/36297534
+
+x = cos x 的解析形式
+

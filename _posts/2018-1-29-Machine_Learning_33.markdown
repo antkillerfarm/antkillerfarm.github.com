@@ -91,7 +91,7 @@ https://mp.weixin.qq.com/s/HapJwwmN3-dbQvzp2jzt1w
 | HDP | Hierarchical Dirichlet Processes | 分层狄利克雷进程 |  |
 | LSA/LSI | Latent Semantic Analysis/Latent Semantic Indexing | 隐式语义分析/隐式语义索引 |  |
 | NER | Named Entity Recognition | 命名实体识别 |  |
-| LSTM | Long Short-Term Memory | 长时记忆 |  |
+| LSTM | Long Short-Term Memory | 长短时记忆 |  |
 | GRU | Gated Recurrent Unit |  |  |
 | DRN | Deep Residual Network | 深度残差网络 |  |
 | SVDD | Support Vector Domain Description | 支持向量域描述 |  |

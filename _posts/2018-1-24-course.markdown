@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  名校机器学习相关课程, 数据库, Apollo
+title:  名校机器学习相关课程, Apollo
 category: resource 
 ---
 
@@ -280,89 +280,29 @@ https://exp-platform.com/2017abtestingtutorial/
 
 A/B Testing
 
-# 数据库
+http://www.cs.tut.fi/~tabus/LSC.html
 
-## Sqlite
+SGN-2306 Signal Compression
 
-《Inside Sqlite》是最好的参考书，目前已经有人把它翻译成中文，可以在CSDN上找到。
+http://www.cs.tut.fi/~tabus/course/AdvSP.html
 
-《SQLite Optimization FAQ》另一篇很好的文章。
+SGN 21006 Advanced Signal Processing
 
-http://web.utk.edu/~jplyon/sqlite/SQLite_optimization_FAQ.html
+http://www.cs.cmu.edu/~me/811/mathfund.html
 
-关于编译和使用的问题，写的最好的是以下两篇：
+16-811: Math Fundamentals for Robotics
 
-http://www.99inf.net/SoftwareDev/VC/39396.htm
+https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-241j-dynamic-systems-and-control-spring-2011/
 
-http://www.cnblogs.com/giszhang/archive/2008/10/09/1307509.html
+Dynamic Systems and Control
 
-VC2005 + SQLite 3.6.3 编译、测试开发手记
+http://www.cs.tut.fi/~hehu/SSP/
 
-## 参考
+SGN-2607 Statistical Signal Processing
 
-https://blog.csdn.net/zhengzhb/article/details/8590390
+http://web-static-aws.seas.harvard.edu/courses/cs281/
 
-SQL查找删除重复行
-
-https://mp.weixin.qq.com/s/09BlPee0-kP-At2aDyDbMw
-
-中国数据库40年历史：隐秘的江湖与恩怨
-
-https://mp.weixin.qq.com/s/4lZ7My6cs4-VJQ1qGhQxZg
-
-AliSQL X-Cluste：基于X-Paxos的高性能强一致MySQL数据库
-
-https://mp.weixin.qq.com/s/tPzBlQGxGq1WEnXz5ggpxg
-
-sysbench在美团点评中的应用
-
-https://mp.weixin.qq.com/s/lJfIkLQaZnN4e9DxX163SA
-
-一款可能解放DBA的分布式数据库RadonDB的体验之旅
-
-http://mp.weixin.qq.com/s/idz6b2rls97W4Iw6J-ubng
-
-美团点评SQL优化工具SQLAdvisor开源
-
-https://mp.weixin.qq.com/s/jCFjhkwQpj1_P-seQurPqQ
-
-SQL解析在美团点评中的应用
-
-https://mp.weixin.qq.com/s/RME5b3plT97nYfUaCl9ePw
-
-关于缓存和数据库强一致的可行方案
-
-https://mp.weixin.qq.com/s/Al0yvkv0FUPjEBtcxS6Fmg
-
-传统数据仓库和云数据仓库的区别
-
-https://mp.weixin.qq.com/s/GXGSDxukbIAM5W-YSX0pDg
-
-美团点评数据库高可用架构的演进与设想
-
-https://mp.weixin.qq.com/s/crluKkEdvfZlHyF_gQm1ZA
-
-漫谈推荐系统及数据库技术
-
-https://mp.weixin.qq.com/s/CwUW-Ntb4qphrqha24P-Og
-
-漫谈推荐系统及数据库技术（二）——分布式数据库技术
-
-https://mp.weixin.qq.com/s/1pXMCcO6NR1SMBzsyES-cw
-
-分布式数据库又支持关系数据模型了？
-
-https://mp.weixin.qq.com/s/yQSMSLBYg4iauu8yeUfvjw
-
-深度解读！时序数据库HiTSDB：分布式流式聚合引擎
-
-https://mp.weixin.qq.com/s/WQh-Ro03e9F1Yrhk0tTZ0A
-
-图解SQL的JOIN
-
-https://mp.weixin.qq.com/s/4s7lDKlQjV1mUoVv558Y7Q
-
-面向云数据库，超低延迟文件系统PolarFS诞生了
+CS281: Advanced Machine Learning
 
 # Apollo
 

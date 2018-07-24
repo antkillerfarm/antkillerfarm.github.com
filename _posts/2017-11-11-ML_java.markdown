@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Machine Learning之Java篇, Matlab, 数据描述语言, 垃圾筐
+title:  Machine Learning之Java篇, Matlab, 数据描述语言, 数字成像
 category: AI 
 ---
 
@@ -335,122 +335,109 @@ http://www.cnblogs.com/wingyip/p/5185593.html
 
 FlatBuffers初探
 
-# 垃圾筐
+# 数字成像
 
-http://www.matrix67.com/
+https://mp.weixin.qq.com/s/od9uDZdRU4QaBKPHb0tLag
 
-一个数学blog
+cmos sensor基础
 
-http://blog.huajh7.com/2013/03/06/variational-bayes/
+https://mp.weixin.qq.com/s/lVS3CgZGItUkWG-OtolbSA
 
-变分贝叶斯算法理解与推导
+数字成像书籍推荐与资料分享
 
-https://www.zhihu.com/question/267166775
+https://mp.weixin.qq.com/s/1IHHo4sV79sXdtXNzKNhMA
 
-真空中有两个位置固定的引力源(恒星)，一个质量较小的小球(行星)有哪些典型的稳定绕转方式?
+计算摄影--google相机的王者之道
 
-http://www.matrix67.com/blog/archives/6750
+https://mp.weixin.qq.com/s/T4XULnykHANEetmDIhZdaw
 
-趣题：两个方阵是怎样互相穿过对方的？
+mobile camera sensor技术方向选择的经验与教训
 
-https://mp.weixin.qq.com/s/r95iMIKMctgjko1GRn9-5A
+https://mp.weixin.qq.com/s/EcAAc_ypajEKXUQbOoYAMA
 
-史上最贱的数学题
+如何选择IR filter
 
-https://mp.weixin.qq.com/s/BkKw2C3n9WsmIchJkkZxUw
+https://mp.weixin.qq.com/s/5rNpp2cYZhcOKZCiy4LkMQ
 
-从七桥问题开始：全面介绍图论及其应用
+SAR成像原理及图像鉴赏
 
-https://mp.weixin.qq.com/s/ZDY3Yt67eXK5pjXgvJkkyQ
+https://mp.weixin.qq.com/s/typXBdisUI-d_viVInx9XQ
 
-图论的各种基本算法
+解析DXO图像质量评价体系
 
-https://mp.weixin.qq.com/s/2h1dgvPbYKBOYZPiixg9iw
+https://mp.weixin.qq.com/s/t-Mzx0IEdZG7_TmMpT_cBA
 
-手把手：四色猜想、七桥问题…程序员眼里的图论，了解下？
+小谈CMOS Sensor设计之FSI和BSI
 
-https://mp.weixin.qq.com/s/qhqCqHo9xGr_Tc-2bnS4mw
+https://mp.weixin.qq.com/s/gyuKlDwlIqaZmC3w-r8oqg
 
-用数学方程和不等式创作艺术
+手机相机如何排名
 
-https://mp.weixin.qq.com/s/CM7WLc7iSp877WrkH8R_7g
+https://mp.weixin.qq.com/s/o_XsmqLSPhvuC0iiK7xHag
 
-如何用数学方法估算一个女生前男友的数量？
+结构光（1）基本介绍
 
-https://mp.weixin.qq.com/s/QJQnRCrBu9j94-VhNq_4tA
+https://mp.weixin.qq.com/s/cDrVpqsY7f2HZCJa4X8Iww
 
-群论的创立：两个少年天才的接力
+Google Pixel 2/2XL视频稳定技术探究
 
-https://mp.weixin.qq.com/s/H6QV5L-Ewdb1NkMKZrNK9w
+https://mp.weixin.qq.com/s/7E9QDSM095KyYwPs-wDznA
 
-一杯咖啡背后的拓扑
+成像相关颜色测量仪器简介
 
-https://mp.weixin.qq.com/s/FqY19sTQd7GPdGSsB5L9eQ
+https://mp.weixin.qq.com/s/DH3mZgh4YbnceaFGs03kOQ
 
-数学大反例合集
+曹汛：计算摄像学研究
 
-https://mp.weixin.qq.com/s/7usiElPtYAt1DCBIv5BZ2Q
+https://mp.weixin.qq.com/s/f2BIrZ8if7_rX__J9hMHog
 
-多项式插值算法与回归算法
+广色域----iphone X/8 camera的色彩进化
 
-https://mp.weixin.qq.com/s/6fd8oxnahJ0EoocRV4q8Bg
+http://mp.weixin.qq.com/s/MWQDwMoRc0c1ofkENzn3Ew
 
-一看就懂的Alpha-Beta剪枝算法详解
+结构光，TOF，双目视觉的异同
 
-https://mp.weixin.qq.com/s/rZwqxyBmQg07Pq1ihTjNMg
+https://mp.weixin.qq.com/s/VjzXYgkzAGloczaaPXni2A
 
-动图解释泰勒级数（一）
+PDAF进化史
 
-https://mp.weixin.qq.com/s/yqAnIjGmXpubgSsGDx6O8w
+https://mp.weixin.qq.com/s/7es1wtJXatJR2eHScrk2_w
 
-动图解释泰勒级数（二）
+深度相机大盘点（1）
 
-https://zhuanlan.zhihu.com/p/36230460
+https://mp.weixin.qq.com/s/m7q6jHbdnb7fw4lKIDfVWw
 
-黑盒函数的探索
+camera接口之MIPI联盟浅谈
 
-http://www.matrix67.com/blog/archives/4570
+https://mp.weixin.qq.com/s/DbDrDhbQAhXOsfxQ8UJVZg
 
-再谈Julia集与Mandelbrot集
+三星S9凝时摄影背后的sensor技术
 
-https://mp.weixin.qq.com/s/3svGvbk0-ek5tQCWJ9ii4A
+https://mp.weixin.qq.com/s/gOikxUxWpqdDRr6_KT2jxQ
 
-读懂相对论：从弯曲空间的几何开始
+图像处理，计算机视觉与machine learning的区别与联系
 
-https://mp.weixin.qq.com/s/xin9VUuIVCZqP-KPn_xAlw
+https://mp.weixin.qq.com/s/7fvVmmpPSldwa3TZ3dVb2g
 
-没想到，用极坐标画素数时竟然出现了这神奇的一幕！
+3D LUT--色彩校正的利器
 
-https://mp.weixin.qq.com/s/GFO84scpniELyqLdf8HzOQ
+https://mp.weixin.qq.com/s/sXC263Lq25tKp2AK2Tsb-A
 
-一个10*10的正方形里，最多可以放多少个直径为1的圆？为啥不是100个？
+Omnivision HDR sensor简介
 
-https://zhuanlan.zhihu.com/p/36297534
+https://mp.weixin.qq.com/s/oeMqE0MzXyGeABGekY9eiQ
 
-x = cos x 的解析形式
+眼擎科技CEO朱继志：如何设计自动驾驶的视觉成像系统
 
-https://mp.weixin.qq.com/s/0o6fjKlUJVHZ6Vb65bFjGg
+https://blog.csdn.net/weixin_38285131/article/details/80457068
 
-俄罗斯方块可以永无止境地玩下去吗？
+光场相机重聚焦原理介绍及代码解析
 
-https://mp.weixin.qq.com/s/Rw3O5MDbEIfgmWCVgFe95w
+https://mp.weixin.qq.com/s/eyIeLaBZ0f_EsxglsUuH8A
 
-五次方程的微分方程解法
+深度学习自动构图研究报告
 
-https://mp.weixin.qq.com/s/ei84HDZIkXQr2k0ghlN_Mw
+https://mp.weixin.qq.com/s/k2JLF_aM3j68GjEByCZF-g
 
-C罗踢球时在想什么？这是一篇空气动力学的blog
+模拟/数字增益对图像噪声的影响
 
-https://mp.weixin.qq.com/s/CC77DL5RKhr5SekDyfqm3Q
-
-为什么我一唱歌，就有人说我的音乐是数学老师教的？
-
-https://mp.weixin.qq.com/s/uRdMOX63mefH71sM-PBNnA
-
-立交桥布局中的迷人曲线
-
-## Bélády's Algorithm
-
-Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。
-
->László Bélády，1928年生，匈牙利计算机科学家。Technical University of Budapest本硕。IBM研究员。

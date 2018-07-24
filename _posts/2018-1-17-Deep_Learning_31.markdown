@@ -327,3 +327,31 @@ https://mp.weixin.qq.com/s/xxB1lsiQxSfaHPKwZUI9bw
 https://mp.weixin.qq.com/s/e4hriDvTRLkg-mIifVWayw
 
 如何解决深度学习中的多体问题
+
+# 垃圾筐
+
+https://mp.weixin.qq.com/s/0o6fjKlUJVHZ6Vb65bFjGg
+
+俄罗斯方块可以永无止境地玩下去吗？
+
+https://mp.weixin.qq.com/s/Rw3O5MDbEIfgmWCVgFe95w
+
+五次方程的微分方程解法
+
+https://mp.weixin.qq.com/s/ei84HDZIkXQr2k0ghlN_Mw
+
+C罗踢球时在想什么？这是一篇空气动力学的blog
+
+https://mp.weixin.qq.com/s/CC77DL5RKhr5SekDyfqm3Q
+
+为什么我一唱歌，就有人说我的音乐是数学老师教的？
+
+https://mp.weixin.qq.com/s/uRdMOX63mefH71sM-PBNnA
+
+立交桥布局中的迷人曲线
+
+## Bélády's Algorithm
+
+Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。
+
+>László Bélády，1928年生，匈牙利计算机科学家。Technical University of Budapest本硕。IBM研究员。

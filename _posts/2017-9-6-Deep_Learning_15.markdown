@@ -218,6 +218,36 @@ http://mp.weixin.qq.com/s/_U6EJBP_qmx68ih00IhGjQ
 
 Object Detection R-CNN
 
+# 垃圾筐
+
+https://mp.weixin.qq.com/s/qhqCqHo9xGr_Tc-2bnS4mw
+
+用数学方程和不等式创作艺术
+
+https://mp.weixin.qq.com/s/CM7WLc7iSp877WrkH8R_7g
+
+如何用数学方法估算一个女生前男友的数量？
+
+https://mp.weixin.qq.com/s/QJQnRCrBu9j94-VhNq_4tA
+
+群论的创立：两个少年天才的接力
+
+https://mp.weixin.qq.com/s/H6QV5L-Ewdb1NkMKZrNK9w
+
+一杯咖啡背后的拓扑
+
+https://mp.weixin.qq.com/s/FqY19sTQd7GPdGSsB5L9eQ
+
+数学大反例合集
+
+https://mp.weixin.qq.com/s/7usiElPtYAt1DCBIv5BZ2Q
+
+多项式插值算法与回归算法
+
+https://mp.weixin.qq.com/s/6fd8oxnahJ0EoocRV4q8Bg
+
+一看就懂的Alpha-Beta剪枝算法详解
+
 # SPPNet
 
 SPPNet是何恺明2014年的作品。

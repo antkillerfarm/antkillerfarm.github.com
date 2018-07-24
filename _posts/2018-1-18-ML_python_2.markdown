@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Machine Learning之Python篇（二）, 数字成像
+title:  Machine Learning之Python篇（二）, 数据库
 category: AI 
 ---
 
@@ -364,109 +364,86 @@ https://mp.weixin.qq.com/s/8NI-NayCg_gZmJ6-1FZ_DA
 
 一个Python特征选择工具，助力实现高效机器学习
 
-# 数字成像
+# 数据库
 
-https://mp.weixin.qq.com/s/od9uDZdRU4QaBKPHb0tLag
+## Sqlite
 
-cmos sensor基础
+《Inside Sqlite》是最好的参考书，目前已经有人把它翻译成中文，可以在CSDN上找到。
 
-https://mp.weixin.qq.com/s/lVS3CgZGItUkWG-OtolbSA
+《SQLite Optimization FAQ》另一篇很好的文章。
 
-数字成像书籍推荐与资料分享
+http://web.utk.edu/~jplyon/sqlite/SQLite_optimization_FAQ.html
 
-https://mp.weixin.qq.com/s/1IHHo4sV79sXdtXNzKNhMA
+关于编译和使用的问题，写的最好的是以下两篇：
 
-计算摄影--google相机的王者之道
+http://www.99inf.net/SoftwareDev/VC/39396.htm
 
-https://mp.weixin.qq.com/s/T4XULnykHANEetmDIhZdaw
+http://www.cnblogs.com/giszhang/archive/2008/10/09/1307509.html
 
-mobile camera sensor技术方向选择的经验与教训
+VC2005 + SQLite 3.6.3 编译、测试开发手记
 
-https://mp.weixin.qq.com/s/EcAAc_ypajEKXUQbOoYAMA
+## 参考
 
-如何选择IR filter
+https://blog.csdn.net/zhengzhb/article/details/8590390
 
-https://mp.weixin.qq.com/s/5rNpp2cYZhcOKZCiy4LkMQ
+SQL查找删除重复行
 
-SAR成像原理及图像鉴赏
+https://mp.weixin.qq.com/s/09BlPee0-kP-At2aDyDbMw
 
-https://mp.weixin.qq.com/s/typXBdisUI-d_viVInx9XQ
+中国数据库40年历史：隐秘的江湖与恩怨
 
-解析DXO图像质量评价体系
+https://mp.weixin.qq.com/s/4lZ7My6cs4-VJQ1qGhQxZg
 
-https://mp.weixin.qq.com/s/t-Mzx0IEdZG7_TmMpT_cBA
+AliSQL X-Cluste：基于X-Paxos的高性能强一致MySQL数据库
 
-小谈CMOS Sensor设计之FSI和BSI
+https://mp.weixin.qq.com/s/tPzBlQGxGq1WEnXz5ggpxg
 
-https://mp.weixin.qq.com/s/gyuKlDwlIqaZmC3w-r8oqg
+sysbench在美团点评中的应用
 
-手机相机如何排名
+https://mp.weixin.qq.com/s/lJfIkLQaZnN4e9DxX163SA
 
-https://mp.weixin.qq.com/s/o_XsmqLSPhvuC0iiK7xHag
+一款可能解放DBA的分布式数据库RadonDB的体验之旅
 
-结构光（1）基本介绍
+http://mp.weixin.qq.com/s/idz6b2rls97W4Iw6J-ubng
 
-https://mp.weixin.qq.com/s/cDrVpqsY7f2HZCJa4X8Iww
+美团点评SQL优化工具SQLAdvisor开源
 
-Google Pixel 2/2XL视频稳定技术探究
+https://mp.weixin.qq.com/s/jCFjhkwQpj1_P-seQurPqQ
 
-https://mp.weixin.qq.com/s/7E9QDSM095KyYwPs-wDznA
+SQL解析在美团点评中的应用
 
-成像相关颜色测量仪器简介
+https://mp.weixin.qq.com/s/RME5b3plT97nYfUaCl9ePw
 
-https://mp.weixin.qq.com/s/DH3mZgh4YbnceaFGs03kOQ
+关于缓存和数据库强一致的可行方案
 
-曹汛：计算摄像学研究
+https://mp.weixin.qq.com/s/Al0yvkv0FUPjEBtcxS6Fmg
 
-https://mp.weixin.qq.com/s/f2BIrZ8if7_rX__J9hMHog
+传统数据仓库和云数据仓库的区别
 
-广色域----iphone X/8 camera的色彩进化
+https://mp.weixin.qq.com/s/GXGSDxukbIAM5W-YSX0pDg
 
-http://mp.weixin.qq.com/s/MWQDwMoRc0c1ofkENzn3Ew
+美团点评数据库高可用架构的演进与设想
 
-结构光，TOF，双目视觉的异同
+https://mp.weixin.qq.com/s/crluKkEdvfZlHyF_gQm1ZA
 
-https://mp.weixin.qq.com/s/VjzXYgkzAGloczaaPXni2A
+漫谈推荐系统及数据库技术
 
-PDAF进化史
+https://mp.weixin.qq.com/s/CwUW-Ntb4qphrqha24P-Og
 
-https://mp.weixin.qq.com/s/7es1wtJXatJR2eHScrk2_w
+漫谈推荐系统及数据库技术（二）——分布式数据库技术
 
-深度相机大盘点（1）
+https://mp.weixin.qq.com/s/1pXMCcO6NR1SMBzsyES-cw
 
-https://mp.weixin.qq.com/s/m7q6jHbdnb7fw4lKIDfVWw
+分布式数据库又支持关系数据模型了？
 
-camera接口之MIPI联盟浅谈
+https://mp.weixin.qq.com/s/yQSMSLBYg4iauu8yeUfvjw
 
-https://mp.weixin.qq.com/s/DbDrDhbQAhXOsfxQ8UJVZg
+深度解读！时序数据库HiTSDB：分布式流式聚合引擎
 
-三星S9凝时摄影背后的sensor技术
+https://mp.weixin.qq.com/s/WQh-Ro03e9F1Yrhk0tTZ0A
 
-https://mp.weixin.qq.com/s/gOikxUxWpqdDRr6_KT2jxQ
+图解SQL的JOIN
 
-图像处理，计算机视觉与machine learning的区别与联系
+https://mp.weixin.qq.com/s/4s7lDKlQjV1mUoVv558Y7Q
 
-https://mp.weixin.qq.com/s/7fvVmmpPSldwa3TZ3dVb2g
-
-3D LUT--色彩校正的利器
-
-https://mp.weixin.qq.com/s/sXC263Lq25tKp2AK2Tsb-A
-
-Omnivision HDR sensor简介
-
-https://mp.weixin.qq.com/s/oeMqE0MzXyGeABGekY9eiQ
-
-眼擎科技CEO朱继志：如何设计自动驾驶的视觉成像系统
-
-https://blog.csdn.net/weixin_38285131/article/details/80457068
-
-光场相机重聚焦原理介绍及代码解析
-
-https://mp.weixin.qq.com/s/eyIeLaBZ0f_EsxglsUuH8A
-
-深度学习自动构图研究报告
-
-https://mp.weixin.qq.com/s/k2JLF_aM3j68GjEByCZF-g
-
-模拟/数字增益对图像噪声的影响
-
+面向云数据库，超低延迟文件系统PolarFS诞生了

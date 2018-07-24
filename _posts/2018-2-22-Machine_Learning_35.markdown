@@ -79,14 +79,36 @@ $$\mathbf{Bel(x_t)}=\eta P(z_t\mid x_t)\overline{\mathbf{Bel(x_t)}}$$
 
 ## 递归最小二乘法
 
-http://www.blog.huajh7.com/adaptive-filters-lms-rls-kalman-filter-1/
+Recursive Least Squares
+
+http://www.doc88.com/p-6836102414531.html
+
+RLS自适应算法基本原理
+
+https://blog.csdn.net/HJ199404182515/article/details/52504150
+
+浅谈自适应滤波器
 
 ## 卡尔曼滤波
 
 >注：Rudolf (Rudi) Emil Kálmán，1930～2016，匈牙利出生的美国科学家。哥伦比亚大学博士（1957），先后执教于斯坦福大学和佛罗里达大学。现代控制理论的里程碑人物，美国科学院院士。   
 >卡尔曼滤波从纯数学的角度讲，并没有多大意义。因此，主流数学家们在很长一段时间内，并不承认Kálmán是数学家。只是由于卡尔曼滤波在工程界的巨大影响力，才不得不于2012年，授予其美国数学协会院士。
 
-Kalman filters是一种高斯线性滤波器。
+| 名称 | 使用场景 |
+|:--:|:--:|
+| Kalman filters | Linear Gaussian |
+| Extended Kalman filter | Nonlinear Gaussian |
+| Iterated EKF | Nonlinear Gaussian |
+| Unscented Kalman filters | Nonlinear Gaussian |
+| Particle filter | Nonlinear Non-Gaussian |
+
+《State estimation for Robotics: A Matrix Lie Group Approach》
+
+>Marius Sophus Lie，1842～1899，挪威数学家。University of Christiania博士（1871），University of Leipzig教授。当时德国的大学，一个系只有一个教授，所以这里的教授相当于现在的系主任或者院长。Lie接的是Felix Klein的班，后者跑到University of Göttingen当教授去了。
+
+unscented transformation
+
+![](/images/img2/UKF.png)
 
 参考：
 
