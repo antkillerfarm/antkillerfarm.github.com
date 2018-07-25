@@ -224,7 +224,22 @@ https://zhuanlan.zhihu.com/p/32796998
 
 10分钟搞定ICO
 
-# Optical flow（续）
+# Optical flow
+
+## 光流约束方程（续）
+
+根据亮度恒定假设可得：
+
+$$\frac{\partial I}{\partial x}\Delta x + \frac{\partial I}{\partial y}\Delta y + \frac{\partial I}{\partial t}\Delta t = 0$$
+
+上式即为亮度恒定假设的**光流约束方程**。由于这个方程有两个未知数，所以没有唯一解。为了得到唯一解，就必须新增约束或假设，因此也就有了如下不同的算法。
+
+| 名称 | 约束或假设 |
+|:--:|:--:|
+| Lukas-Kanade | 亮度恒定假设+局部光流恒定 |
+| Farneback | 梯度恒定假设+局部光流恒定 |
+| Horn-Schunck | 亮度恒定假设+光流场平滑 |
+| Brox | 亮度恒定假设+梯度恒定假设+光流场平滑 |
 
 ## 参考
 

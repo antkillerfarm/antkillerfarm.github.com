@@ -326,6 +326,14 @@ https://mp.weixin.qq.com/s/CgxrvNfyu35SMvWBAt-5kg
 
 MXNet开放支持Keras，高效实现CNN与RNN的分布式训练
 
+https://mp.weixin.qq.com/s/qLax1Jb0OOfFOU68wn_2PA
+
+从三大神经网络，测试对比TensorFlow、MXNet、CNTK、Theano四个框架
+
+https://mp.weixin.qq.com/s/hRH7hVsaQBqf0vhD_BqBgg
+
+五大深度学习框架三类神经网络全面测评
+
 # NN中间语言
 
 ## 概述

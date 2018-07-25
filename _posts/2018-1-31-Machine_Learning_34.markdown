@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十四）——概率图模型, 机器学习语录, 垃圾筐
+title:  机器学习（三十四）——概率图模型, 机器学习语录
 category: ML 
 ---
 
@@ -214,7 +214,7 @@ https://mp.weixin.qq.com/s/_Sds7O1wonVARKkb7qscww
 
 # 自适应滤波器
 
-《自适应滤波器原理》，Simon Haykin著。
+《自适应滤波器原理（Adaptive Filter Theory）》，Simon Haykin著。
 
 ## 基本估计
 
@@ -227,6 +227,24 @@ https://mp.weixin.qq.com/s/_Sds7O1wonVARKkb7qscww
 **预测（Prediction）**：利用$$[0,t]$$的数据，来估计$$t+\tau(\tau>0)$$时刻信息的运算过程。
 
 可见，滤波和预测是实时运算，而平滑是非实时运算。
+
+## Optimal Wiener Filters
+
+>Norbert Wiener，1894～1964，美国数学家，控制论之父。18岁获得Harvard博士。MIT教授。
+
+Wiener Filter主要用于**平稳状态下的线性滤波**。该滤波器在均方误差意义上是最优的。误差信号均方值相对于线性滤波器可调参数的曲线，称为**误差性能曲面**。该曲面的极小点即为Wiener solutions。
+
+根据滤波器的记忆能力，可将线性滤波器分为Finite Impulse Response和Infinite Impulse Response，分别代表有限记忆和无限长但衰减的记忆。
+
+在非平稳环境下，误差性能曲面随时间变化而变化，但只要输入数据的变化与算法学习率相比是慢的，则滤波器就能跟踪住。
+
+
+
+参考：
+
+https://blog.csdn.net/bluecol/article/details/46242355
+
+图像去模糊（维纳滤波）
 
 # Robust PCA
 
@@ -260,66 +278,3 @@ http://www.doc88.com/p-7082821463697.html
 
 改进的热传导和物质扩散混合推荐算法
 
-# 垃圾筐
-
-Introspective Neural Networks
-
-http://www.cnblogs.com/cyjb/p/UnionFindSets.html
-
-并查集（Union-find Sets）
-
-高斯背景
-
-laurent series
-
-Base32/Base36/Base64/Base85
-
-方差分析(Analysis of Variance，简称ANOVA)
-
-Partial Least Squares Discriminant Analysis
-
-http://blog.codinglabs.org/articles/algorithms-for-cardinality-estimation-part-i.html
-
-解读Cardinality Estimation算法
-
-http://blog.csdn.net/icvpr/article/details/12342159
-
-局部敏感哈希(Locality-Sensitive Hashing, LSH)方法介绍
-
-https://mp.weixin.qq.com/s/zQJve_w5OoM6u-WcSWArdQ
-
-神速Hash
-
-FPN (Feature Pyramid Network)
-
-http://www.cnblogs.com/pinard/p/6221564.html
-
-谱聚类（spectral clustering）原理总结
-
-https://mp.weixin.qq.com/s/NlJ4-b5SjIjPGgvLUuSxFw
-
-孩子，有时候并不是生活欺骗了你，而是你可能还不懂概率统计……
-
-http://blog.csdn.net/luo123n/article/details/48574123
-
-PMI（Pointwise Mutual Information）
-
-http://www.cnblogs.com/6DAN_HUST/archive/2010/11/11/1874681.html
-
-运筹学——线性规划及单纯形法求解
-
-https://mp.weixin.qq.com/s/E_EzwLr4JOzR1pk3MOeU_w
-
-复动力系统简介
-
-https://mp.weixin.qq.com/s/QmDCFY0SP3cl71HvwvthJQ
-
-如果高斯没有故意“坑”黎曼，估计这门神奇的学科就不会出现了……
-
-http://www.cnblogs.com/zeze/p/6999651.html
-
-粗糙集（Rough Set Approach）
-
-https://mp.weixin.qq.com/s/mc9aH5hDgRFS2h2blPhb8w
-
-21张绘画完美演绎地球演化新说！

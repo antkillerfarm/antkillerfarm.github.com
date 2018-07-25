@@ -298,6 +298,10 @@ https://mp.weixin.qq.com/s/imotc0RfPsvA9h5-1nouMA
 
 端到端语音合成及其优化实践
 
+https://mp.weixin.qq.com/s/HLe4DUZWWfdorcgYOj9gzw
+
+语音合成领域的首个完全端到端模型，百度提出并行音频波形生成模型ClariNet
+
 # CTC
 
 ## 概述

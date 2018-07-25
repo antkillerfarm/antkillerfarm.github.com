@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  区块链参考资源, 图像渲染, 硬件, 雷达
+title:  区块链参考资源, 图像渲染, 雷达
 category: resource 
 ---
 
@@ -228,6 +228,14 @@ https://mp.weixin.qq.com/s/k_mYbnchN2UF0kZ_2JD4Wg
 
 教你用C++搭建一条迷你区块链！
 
+https://mp.weixin.qq.com/s/9hhUZyeax206bAsSqks-1w
+
+比特币黑客攻击手段大揭秘
+
+https://mp.weixin.qq.com/s/Xxi50rDBjrqG-7MIloZMDw
+
+浅谈区块链技术与阿里云的探索实践
+
 # 图像渲染
 
 http://blog.csdn.net/pizi0475/article/details/6650851
@@ -241,34 +249,6 @@ Ray Tracing，Ray Casting，Path Tracing，Ray Marching 的区别？
 https://www.jianshu.com/p/4ec47871973c
 
 Path Tracing介绍
-
-# 超算
-
-https://www.top500.org/
-
-超算排名网站
-
-https://zhuanlan.zhihu.com/p/33956771
-
-超算排名之中的地区和架构之争
-
-# 硬件
-
-https://mp.weixin.qq.com/s/NwptdxWiN4SadjUQafA5rw
-
-高端MEMS固体波动陀螺的发展与应用
-
-https://mp.weixin.qq.com/s/ZexnsNmqsD2yq-7YNASohw
-
-数模转换器的基本原理及DAC类型简介
-
-https://mp.weixin.qq.com/s/1XmbkoRkXUtmR0pnENhfGA
-
-基于高速DDFS的高精度DAC的设计
-
-https://mp.weixin.qq.com/s/aavlfxII5PW_RrsF6nS99g
-
-模-数转换(A/D)技术
 
 # 雷达
 

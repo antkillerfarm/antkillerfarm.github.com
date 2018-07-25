@@ -84,18 +84,6 @@ https://mp.weixin.qq.com/s/Ez9zn6HN4tX_QFpGDWs_rA
 
 30行JavaScript代码，教你分分钟创建神经网络
 
-https://mp.weixin.qq.com/s/qLax1Jb0OOfFOU68wn_2PA
-
-从三大神经网络，测试对比TensorFlow、MXNet、CNTK、Theano四个框架
-
-https://mp.weixin.qq.com/s/zeZs48XbYJGhvOoIysZ8QA
-
-Docker Compose+GPU+TensorFlow所产生的奇妙火花
-
-https://mp.weixin.qq.com/s/hRH7hVsaQBqf0vhD_BqBgg
-
-五大深度学习框架三类神经网络全面测评
-
 https://zhuanlan.zhihu.com/p/26078299
 
 使用深度学习来破解captcha验证码
@@ -127,6 +115,10 @@ https://mp.weixin.qq.com/s/C2Gn8NSZe4u5uZsCeLnfVQ
 https://mp.weixin.qq.com/s/JRfZIH6YikmW2og9Sn0hQg
 
 如何快速训练免费的文本生成神经网络
+
+https://mp.weixin.qq.com/s/qussbqTKjLI23xNxJ2eRPw
+
+手把手教你训练一个秒杀科比的投篮AI，不服来练
 
 ## 工具
 

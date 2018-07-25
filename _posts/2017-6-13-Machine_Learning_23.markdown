@@ -90,6 +90,8 @@ https://mp.weixin.qq.com/s/QIR_l8OqvCQzXXXVY2WA1w
 
 ![](/images/article/AutoML.jpg)
 
+![](/images/img2/AutoNLP.png)
+
 ## 超参数
 
 所谓hyper-parameters，就是机器学习模型里面的框架参数，比如聚类方法里面类的个数，或者话题模型里面话题的个数等等，都称为超参数。它们跟训练过程中学习的参数（权重）是不一样的，通常是手工设定，不断试错调整，或者对一系列穷举出来的参数组合一通枚举（叫做网格搜索）。
@@ -159,6 +161,10 @@ http://automl.info/
 https://mp.weixin.qq.com/s/gXkD2PPNRhZGcXDxDXRAiQ
 
 由0到1走入Kaggle-入门指导
+
+https://mp.weixin.qq.com/s/2ZwhNN7kqigwRLqRnUOENw
+
+谷歌做了45万次不同类型的文本分类后，总结出一个通用的“模型选择算法”
 
 # Optimizer
 

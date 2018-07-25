@@ -203,6 +203,30 @@ http://www.luojie1987.com/index.php/post/140.html
 
 Kaldi离线在线解码应用
 
+# Camshift（续）
+
+缺点：
+
+（1）只利用颜色统计做的跟踪，在背景有相似颜色时，会出现跟踪错误的情况。
+
+（2）不能做多目标跟踪。
+
+（3）由于它只在初始位置（而不是从每个像素点）开始迭代，所以有可能在初始位置错了后，收敛的位置还是原位置（即跟丢了后，可能会找不回来）。
+
+参考：
+
+http://blog.sina.com.cn/s/blog_5d1476580101a57j.html
+
+Camshift算法
+
+http://blog.163.com/thomaskjh@126/blog/static/370829982010113133152722/
+
+CAMSHIFT原理
+
+https://wenku.baidu.com/view/59596ac42cc58bd63186bd37.html
+
+Camshift算法原理
+
 # Optical flow
 
 ## 基本概念
@@ -236,17 +260,4 @@ $$I(x,y,t) = I(x + \Delta x, y + \Delta y, t + \Delta t)$$
 我们对上式右侧进行一阶Taylor展开，可得：
 
 $$I(x + \Delta x, y + \Delta y, t + \Delta t) \approx I(x,y,t) + \frac{\partial I}{\partial x}\Delta x + \frac{\partial I}{\partial y}\Delta y + \frac{\partial I}{\partial t}\Delta t$$
-
-根据亮度恒定假设可得：
-
-$$\frac{\partial I}{\partial x}\Delta x + \frac{\partial I}{\partial y}\Delta y + \frac{\partial I}{\partial t}\Delta t = 0$$
-
-上式即为亮度恒定假设的**光流约束方程**。由于这个方程有两个未知数，所以没有唯一解。为了得到唯一解，就必须新增约束或假设，因此也就有了如下不同的算法。
-
-| 名称 | 约束或假设 |
-|:--:|:--:|
-| Lukas-Kanade | 亮度恒定假设+局部光流恒定 |
-| Farneback | 梯度恒定假设+局部光流恒定 |
-| Horn-Schunck | 亮度恒定假设+光流场平滑 |
-| Brox | 亮度恒定假设+梯度恒定假设+光流场平滑 |
 

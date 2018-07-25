@@ -404,3 +404,45 @@ https://gnu.org/software/octave/
 
 `sudo apt-get install octave`
 
+# NLP参考资源
+
+https://mp.weixin.qq.com/s/gWxe90P9OdT-5pySYJfs0Q
+
+Adaptation for Neural Machine Translation
+
+>场景：假设储备了大量新闻领域双语语料，少量科技领域双语语料（或者没有），科技领域单语语料（大量、少量或者没有）的大菜鸟翻译公司，接到一个科技领域的翻译项目。如何使用现有资源去尽可能的把科技领域的翻译做好。   
+>问题：这里的科技领域就是in-domain，新闻领域是out-domain。如何使用数量有限的in-domain parallel corpus和相对丰富的out-domain parallel corpus来更好地提升in-domain translation performance。
+
+# 垃圾筐
+
+https://mp.weixin.qq.com/s/rZwqxyBmQg07Pq1ihTjNMg
+
+动图解释泰勒级数（一）
+
+https://mp.weixin.qq.com/s/yqAnIjGmXpubgSsGDx6O8w
+
+动图解释泰勒级数（二）
+
+https://zhuanlan.zhihu.com/p/36230460
+
+黑盒函数的探索
+
+http://www.matrix67.com/blog/archives/4570
+
+再谈Julia集与Mandelbrot集
+
+https://mp.weixin.qq.com/s/3svGvbk0-ek5tQCWJ9ii4A
+
+读懂相对论：从弯曲空间的几何开始
+
+https://mp.weixin.qq.com/s/xin9VUuIVCZqP-KPn_xAlw
+
+没想到，用极坐标画素数时竟然出现了这神奇的一幕！
+
+https://mp.weixin.qq.com/s/GFO84scpniELyqLdf8HzOQ
+
+一个10*10的正方形里，最多可以放多少个直径为1的圆？为啥不是100个？
+
+https://zhuanlan.zhihu.com/p/36297534
+
+x = cos x 的解析形式

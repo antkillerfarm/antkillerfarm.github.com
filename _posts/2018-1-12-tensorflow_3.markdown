@@ -274,6 +274,10 @@ https://mp.weixin.qq.com/s/z6p4A4DfCuK8IBGVGwrtLQ
 
 如何利用TensorFlow.js部署简单的AI版“你画我猜”图像识别应用
 
+https://mp.weixin.qq.com/s/zeZs48XbYJGhvOoIysZ8QA
+
+Docker Compose+GPU+TensorFlow所产生的奇妙火花
+
 # 汽车声学
 
 https://zhuanlan.zhihu.com/p/22722073
@@ -368,18 +372,3 @@ meanshift聚类
 https://blog.csdn.net/google19890102/article/details/51030884
 
 Mean Shift聚类算法
-
-## 反向投影图
-
-在继续介绍Meanshift之前，我们先引入反向投影图的概念。
-
-首先，我们对图像的像素值按照某种特征进行直方图统计，得到一组bin值。
-
-然后，计算位置x上的bin值，并用该bin值替换原来的像素值，就得到了反向投影图。
-
-参考：
-
-https://blog.csdn.net/poiiy333/article/details/9051409
-
-反向投影图
-

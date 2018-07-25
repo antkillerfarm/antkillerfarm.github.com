@@ -298,6 +298,20 @@ https://mp.weixin.qq.com/s/RpPEqjRUnBIHpX7_guItoQ
 
 # Meanshift（续）
 
+## 反向投影图
+
+在继续介绍Meanshift之前，我们先引入反向投影图的概念。
+
+首先，我们对图像的像素值按照某种特征进行直方图统计，得到一组bin值。
+
+然后，计算位置x上的bin值，并用该bin值替换原来的像素值，就得到了反向投影图。
+
+参考：
+
+https://blog.csdn.net/poiiy333/article/details/9051409
+
+反向投影图
+
 ## Meanshift与目标跟踪
 
 由于RGB对光照的变化比较敏感，而这种敏感对目标跟踪而言是不利的。因此，通常我们要将图像转换到HSV颜色空间。
@@ -367,26 +381,4 @@ Camshift算法是Continuously Adaptive Mean Shift algorithm的简称。它是一
 **扩大**：在计算窗口大小前，在MeanShift算出的窗口的四个方向上增大了TOLERANCE，即高和宽都增大了2TOLERANCE（此值自己调整设置）。
 
 **缩小**：在扩大的窗口内重新计算0阶矩，1阶矩和2阶矩，利用矩的值重新计算高和宽。
-
-缺点：
-
-（1）只利用颜色统计做的跟踪，在背景有相似颜色时，会出现跟踪错误的情况。
-
-（2）不能做多目标跟踪。
-
-（3）由于它只在初始位置（而不是从每个像素点）开始迭代，所以有可能在初始位置错了后，收敛的位置还是原位置（即跟丢了后，可能会找不回来）。
-
-参考：
-
-http://blog.sina.com.cn/s/blog_5d1476580101a57j.html
-
-Camshift算法
-
-http://blog.163.com/thomaskjh@126/blog/static/370829982010113133152722/
-
-CAMSHIFT原理
-
-https://wenku.baidu.com/view/59596ac42cc58bd63186bd37.html
-
-Camshift算法原理
 

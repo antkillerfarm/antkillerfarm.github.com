@@ -116,6 +116,10 @@ https://mp.weixin.qq.com/s/B7reSwa9sCZqbkYVM5-VOA
 
 图像压缩哪家强？请看这份超详细对比
 
+https://mp.weixin.qq.com/s/K17wlC3tueNBfHkYBUFcQg
+
+基于深度学习的HEVC复杂度优化。这是篇视频压缩的blog。
+
 # SVDF
 
 SVDF是UCB和Google Speech Group的作品，主要用于简化Speech模型的计算量。

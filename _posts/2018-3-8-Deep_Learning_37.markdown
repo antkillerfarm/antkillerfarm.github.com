@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十七）——人脸识别, 行人重识别
+title:  深度学习（三十七）——人脸识别
 category: DL 
 ---
 
@@ -8,7 +8,33 @@ category: DL
 
 ## Cascade CNN
 
+论文：
+
 《A Convolutional Neural Network Cascade for Face Detection》
+
+![](/images/img2/CascadeCNN.jpg)
+
+这篇可以说是对经典的Viola-Jones方法的深度卷积网络实现，可以明显看出是3阶级联（12-net、24-net、48-net）。
+
+前2阶的网络都非常简单，只有第3阶才比较复杂。这不是重点，重点是我们要从上图中学习多尺度特征组合。
+
+以第2阶段的24-net为例，首先把上一阶段剩下的窗口resize为24*24大小，然后送入网络，得到全连接层的特征。同时，将之前12-net的全连接层特征取出与之拼接在一起。最后对组合后的特征进行softmax分类。
+
+除了分类网络之外，Cascade CNN还包含了3个修正bounding box的CNN网络，分别叫做12-calibration-net，24-calibration-net和48-calibration-net。他们的结构与12-net等类似。
+
+网络结构方面也就这样了，该论文最牛之处在于给出了这类级联网络的训练方法。
+
+![](/images/img2/CascadeCNN_2.jpg)
+
+1、按照一般的方法组织正负样本训练第一阶段的12-net和12-calibration-net网络；
+
+2、 利用上述的1层网络在AFLW数据集上作人脸检测，在保证99%的召回率的基础上确定判别阈值T1。
+
+3、将在AFLW上判为人脸的非人脸窗口作为负样本，将所有真实人脸作为正样本，训练第二阶段的24-net和24-calibration-net网络；
+
+4、重复2和3，完成最后阶段的训练。
+
+参考：
 
 http://blog.csdn.net/shuzfan/article/details/50358809
 
@@ -72,50 +98,6 @@ https://mp.weixin.qq.com/s/7cZTbTBttEvN6NvOarSFgw
 
 如何构建自定义人脸识别数据集
 
-https://mp.weixin.qq.com/s/ZZmLbFzi843g0k3gTncQmA
-
-拿下人脸识别“世界杯”冠军！松下-NUS和美国东北大学实战分享
-
-https://mp.weixin.qq.com/s/DYCXef_09yFFNR0uHL2Q0Q
-
-基于Python的开源人脸识别库：离线识别率高达99.38%
-
-https://mp.weixin.qq.com/s/eOxd5XbeyVcRYyAAmPr20Q
-
-利用空间融合卷积神经网络通过面部关键点进行伪装人脸识别
-
-https://mp.weixin.qq.com/s/vAjWHpn5HP_lwSv49g71SA
-
-新型半参数变分自动编码器DeepCoder：可分层级编码人脸动作
-
-https://mp.weixin.qq.com/s/IS5iAPZeUrvvyWs29O8Ukg
-
-通过提取神经元知识实现人脸模型压缩
-
-https://mp.weixin.qq.com/s/DEJ0z2CahZIrhTE3VXNVvg
-
-基于注意力机制学习的人脸幻构
-
-https://mp.weixin.qq.com/s/-G94Mj-8972i2HtEcIZDpA
-
-人脸识别世界杯榜单出炉，微软百万名人识别竞赛冠军分享
-
-https://mp.weixin.qq.com/s/bqWle_188lhYO4hpCfafkQ
-
-用浏览器做人脸检测，竟然这么简单？
-
-https://mp.weixin.qq.com/s/kn9JS55wIW2cfpUv7Jm0eQ
-
-深度学习教你如何“以貌取人”！
-
-https://mp.weixin.qq.com/s/3xEDtMoe0iRQSZiN5A1FGw
-
-IPHONE X“刷脸”技术奥秘大揭底
-
-https://mp.weixin.qq.com/s/s5HL6y2P9_KqpSAQg08URw
-
-世界最大人脸对齐数据集ICCV 2017：距离解决人脸对齐已不远
-
 https://mp.weixin.qq.com/s/Z06oUe7oExgkKZ8g2_PnPw
 
 科普人脸表情识别技术
@@ -136,29 +118,9 @@ https://zhuanlan.zhihu.com/p/23340343
 
 Center Loss及其在人脸识别中的应用
 
-https://mp.weixin.qq.com/s/7AnF0uMgepchiUeqfqVbCg
-
-清华大学王生进：新智能安防：人脸识别技术与应用系统
-
-https://mp.weixin.qq.com/s/-T5k2ViPjvEoXccKt-_J3Q
-
-中科院自动化研究所提出FaceBoxes：实时、高准确率的CPU面部检测器
-
-https://www.leiphone.com/news/201707/mFuwXGvZBhoVQD5S.html
-
-一秒分辨出杨臣刚、王大治和孙楠，这个黑产居然用AI来"打码"
-
-https://mp.weixin.qq.com/s/PF7_kSnwngnJ1jeh7ebyww
-
-手把手教你用1行代码实现人脸识别
-
 https://mp.weixin.qq.com/s/Gqlo4wU0wtIcJDvQs2kTAw
 
 为了让你分清人脸识别与人脸检测，苹果要亲自给你科普
-
-http://blog.csdn.net/gitchat/article/details/78546894
-
-TensorFlow人脸识别网络与对抗网络搭建
 
 https://mp.weixin.qq.com/s/ZJmgC8xTruaRLfCocodjqA
 
@@ -184,38 +146,6 @@ https://mp.weixin.qq.com/s/CvdeV5xgUF0kStJQdRst0w
 
 从传统方法到深度学习，人脸关键点检测方法综述
 
-https://mp.weixin.qq.com/s/YRsVi09u3W0aQMdsR5KY4Q
-
-腾讯AI Lab提出Face R-FCN与Face CNN，刷新人脸检测与识别两大测评记录
-
-https://mp.weixin.qq.com/s/A1pbiU5PA9Owe69lGX9afw
-
-活体识别告诉你为什么照片无法破解人脸系统
-
-https://mp.weixin.qq.com/s/zyMIRGig-m732rvraPKxwA
-
-单样本学习：使用孪生神经网络进行人脸识别
-
-https://mp.weixin.qq.com/s/QJm7YoCYmiF0dX8uac5w4Q
-
-旷视研究院：被遮挡人脸区域检测的技术细节
-
-https://mp.weixin.qq.com/s/Fmi9RJz-bMOYBoZWt1nWag
-
-人脸注意机制网络
-
-https://mp.weixin.qq.com/s/s9H_OXX-CCakrTAQUFDm8g
-
-申省梅颜水成团队获国际非受限人脸识别竞赛IJB-A冠军，主要负责人熊霖技术分享
-
-https://mp.weixin.qq.com/s/ZFFSTFDVxFUe2KOFy8XDxw
-
-人脸识别——新的一个境界（无约束）
-
-https://mp.weixin.qq.com/s/GlS2VJdX7Y_nfBOEnUt2NQ
-
-使用Siamese神经网络进行人脸识别
-
 https://mp.weixin.qq.com/s/RSCrkeIToeNKrFvMITxzDg
 
 通过OpenFace来理解人脸识别
@@ -227,26 +157,6 @@ https://zhuanlan.zhihu.com/p/34404607
 https://mp.weixin.qq.com/s/ZrnAqDJCLtMy_qTQ2RZT0A
 
 级联MobileNet-V2实现人脸关键点检测
-
-https://mp.weixin.qq.com/s/xDEga2tITO8rVkvXCZ62sg
-
-中国团以98%精度夺得MegaFace人脸识别冠军
-
-https://mp.weixin.qq.com/s/HVooLtr_k6fwh2N3GjMb1A
-
-新研究提出深度残差等价映射：由正脸加强侧脸识别效果
-
-https://mp.weixin.qq.com/s/9noWOZJSRAi424ZDTD1IRQ
-
-世界权威评测冠军：百度人脸检测算法PyramidBox
-
-https://www.zhihu.com/question/37060782
-
-人脸识别哪家强？不如问哪家公司吹牛逼强
-
-https://zhuanlan.zhihu.com/p/22451474
-
-SeetaFace开源人脸识别引擎介绍
 
 https://mp.weixin.qq.com/s/MyA8_yt4YCkFl67AyhpZow
 
@@ -264,34 +174,6 @@ https://mp.weixin.qq.com/s/i4HdS-lCrsv9YR39Hja8ow
 
 深度人脸表情识别技术综述，没有比这更全的了
 
-https://mp.weixin.qq.com/s/S_T0tYhZ1pjoIMysP0aVWA
-
-美军AI黑科技：黑暗中也能准确识别人脸，谁该为此感到紧张？
-
-https://mp.weixin.qq.com/s/GLKvzC_o6MR1ixThAVc9lQ
-
-CosFace: 面向深度人脸识别的增强边缘余弦损失函数设计
-
-https://mp.weixin.qq.com/s/AMDkkbdTQbL-2jyweVid-A
-
-摆好Pose却没管理好面部表情？腾讯优图Facelet-Bank人脸处理技术了解一下
-
-https://mp.weixin.qq.com/s/OjId_YfxkhEh4tJ1Sw-Hbw
-
-多伦多大学反人脸识别，身份欺骗成功率达99.5%
-
-https://mp.weixin.qq.com/s/tUSNk5R_zbEFz-yIx0LXYQ
-
-基于DNN的人脸识别中的反欺骗机制
-
-https://mp.weixin.qq.com/s/mjdW7xY77H03RIKuKuFmQg
-
-人脸画像合成研究的综述与对比分析
-
-https://mp.weixin.qq.com/s/Ieha-lJ_KuEnpbJha_nxJw
-
-利用人脸图片准确识别年龄：上海大学研究者提出“深度回归森林”
-
 https://mp.weixin.qq.com/s/YlrWHDPIPzN4dQO2vo4DjA
 
 人脸颜值研究综述
@@ -304,105 +186,15 @@ https://mp.weixin.qq.com/s/XF4Sjx0jNPFdJFfAlYPJMQ
 
 超长综述让你走近深度人脸识别
 
-https://mp.weixin.qq.com/s/wHIT2pm_5O4MOR_QLpHVLQ
+https://mp.weixin.qq.com/s/Cy5gxHl_Z4v7BX0k8SDNSQ
 
-PRNet：人脸3D重建与密集对齐
+AI人像美妆算法初识
 
-# 行人重识别
+https://mp.weixin.qq.com/s/Ht8kFTgIWASusfSUQqoaJA
 
-行人重识别（Person re-identification）也称行人再识别，是利用计算机视觉技术判断图像或者视频序列中是否存在特定行人的技术。广泛被认为是一个图像检索的子问题。给定一个监控行人图像，检索跨设备下的该行人图像。旨在弥补目前固定的摄像头的视觉局限，并可与行人检测/行人跟踪技术相结合 ，可广泛应用于智能视频监控、智能安保等领域。
+人脸表情识别研究
 
-https://mp.weixin.qq.com/s/ZmX_ir1pSUZbCaFpbcQ6Lw
+https://mp.weixin.qq.com/s/qUFjfsDtTQfAEjBCuoWHew
 
-一文读懂行人检测算法
-
-https://zhuanlan.zhihu.com/p/26168232
-
-行人重识别：从哈利波特地图说起
-
-https://mp.weixin.qq.com/s/_NDw7pFmDB07mliHTA6VYQ
-
-旷视行人再识别（ReID）突破
-
-https://zhuanlan.zhihu.com/p/31181247
-
-从人脸识别到行人重识别，下一个风口
-
-https://mp.weixin.qq.com/s/zRdJktyk1LZWUd2cyTjpiw
-
-基于图像检索的行人重识别
-
-https://zhuanlan.zhihu.com/p/31473785
-
-行人再识别中的迁移学习：图像风格转换
-
-https://mp.weixin.qq.com/s/fX94rPgNHrOaQTqBv-ZADg
-
-基于视频的行人再识别新进展：区域质量估计方法和高质量的数据集
-
-https://mp.weixin.qq.com/s/rf-pGfkQFK3abkOLEEVOeA
-
-PTGAN：针对行人重识别的生成对抗网络
-
-https://zhuanlan.zhihu.com/p/34778414
-
-基于时空模型无监督迁移学习的行人重识别
-
-https://zhuanlan.zhihu.com/p/35296881
-
-刷新三数据集纪录的跨镜追踪(行人再识别-ReID)技术介绍
-
-https://mp.weixin.qq.com/s/ZbmJGO3lqwNM2z-E4_Mpbw
-
-由“刷脸”到“识人”，云从科技刷新跨镜追踪(ReID)技术三项世界纪录！
-
-https://zhuanlan.zhihu.com/p/38603624
-
-云从科技资深算法研究员：详解跨镜追踪(ReID)技术实现及难点
-
-https://mp.weixin.qq.com/s/leuILzYz40PqrwsCatYhPw
-
-行人再识别年度进展
-
-https://zhuanlan.zhihu.com/p/37931822
-
-你需要知道的10种行人属性
-
-https://mp.weixin.qq.com/s/YBorhQrJ0UL3HZQHgd5D6A
-
-清华等机构提出基于内部一致性的行人检索方法，实现当前最优
-
-# 垃圾筐
-
-https://mp.weixin.qq.com/s/rZwqxyBmQg07Pq1ihTjNMg
-
-动图解释泰勒级数（一）
-
-https://mp.weixin.qq.com/s/yqAnIjGmXpubgSsGDx6O8w
-
-动图解释泰勒级数（二）
-
-https://zhuanlan.zhihu.com/p/36230460
-
-黑盒函数的探索
-
-http://www.matrix67.com/blog/archives/4570
-
-再谈Julia集与Mandelbrot集
-
-https://mp.weixin.qq.com/s/3svGvbk0-ek5tQCWJ9ii4A
-
-读懂相对论：从弯曲空间的几何开始
-
-https://mp.weixin.qq.com/s/xin9VUuIVCZqP-KPn_xAlw
-
-没想到，用极坐标画素数时竟然出现了这神奇的一幕！
-
-https://mp.weixin.qq.com/s/GFO84scpniELyqLdf8HzOQ
-
-一个10*10的正方形里，最多可以放多少个直径为1的圆？为啥不是100个？
-
-https://zhuanlan.zhihu.com/p/36297534
-
-x = cos x 的解析形式
+人脸脸型分类研究现状
 
