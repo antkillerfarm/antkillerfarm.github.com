@@ -276,6 +276,10 @@ https://mp.weixin.qq.com/s/a1GFDzcR98b7pyJR1Gn-TA
 
 深度学习之目标检测网络学习总结（from RCNN to YOLO V3）
 
+https://blog.csdn.net/savant_ning/article/details/69950588
+
+多视图3D目标检测学习笔记
+
 # RCNN
 
 《深度学习（五）》中提到的AlexNet、VGG、GoogleNet主要用于图片分类。而这里介绍的RCNN(Regions with CNN)主要用于目标检测。

@@ -42,6 +42,22 @@ http://blog.csdn.net/shuzfan/article/details/50358809
 
 ## MTCNN
 
+论文：
+
+《Joint Face Detection and Alignment using Multi-task Cascaded Convolutional Networks》
+
+![](/images/img2/MTCNN.png)
+
+上面是该方法的流程图，可以看出也是三阶级联，和CascadeCNN很像。
+
+stage1: 在构建图像金字塔的基础上，利用fully convolutional network来进行检测，同时利用boundingbox regression和NMS来进行修正。
+
+stage2: 将通过stage1的所有窗口输入作进一步判断，同时也要做boundingbox regression和NMS。
+
+stage3: 和stage2相似，只不过增加了更强的约束：5个人脸关键点（landmark）。
+
+参考：
+
 http://blog.csdn.net/qq_14845119/article/details/52680940
 
 MTCNN（Multi-task convolutional neural networks）人脸对齐
@@ -53,6 +69,50 @@ http://blog.csdn.net/shuzfan/article/details/52668935
 https://mp.weixin.qq.com/s/IrZEQ69RNUdcs0Fl8fHmmQ
 
 如何应用MTCNN和FaceNet模型实现人脸检测及识别
+
+## Triplet Loss
+
+https://blog.csdn.net/u010167269/article/details/52027378
+
+Triplet Loss、Coupled Cluster Loss探究
+
+https://blog.csdn.net/tangwei2014/article/details/46788025
+
+triplet loss原理以及梯度推导
+
+https://www.zhihu.com/question/62486208
+
+triplet loss在深度学习中主要应用在什么地方？有什么明显的优势？
+
+## FaceNet
+
+论文：
+
+《FaceNet: A Unified Embedding for Face Recognition and Clustering》
+
+https://blog.csdn.net/stdcoutzyx/article/details/46687471
+
+FaceNet--Google的人脸识别
+
+## OpenFace
+
+OpenFace是一款开源的人脸识别软件。它的原理基于CVPR 2015年的论文：FaceNet。由于采用了深度学习技术，OpenFace对人脸识别的准确率，大大超过了OpenCV。
+
+OpenFace是用Python和Torch编写的。
+
+官网：
+
+https://cmusatyalab.github.io/openface/
+
+参考：
+
+http://www.cnblogs.com/pandaroll/p/6590339.html
+
+开源人脸识别openface
+
+https://mp.weixin.qq.com/s/RSCrkeIToeNKrFvMITxzDg
+
+通过OpenFace来理解人脸识别
 
 ## 人脸年龄识别
 
@@ -74,9 +134,9 @@ https://mp.weixin.qq.com/s/eZ78biXN-mVw3s9Ky_LBZg
 
 如何走近深度学习人脸识别？你需要这篇超长综述
 
-http://www.cnblogs.com/pandaroll/p/6590339.html
+https://zhuanlan.zhihu.com/p/32702868
 
-开源人脸识别openface
+人脸检测背景介绍和发展现状
 
 http://mp.weixin.qq.com/s/KQxGQdLa3XzKVIFYqlrV7g
 
@@ -145,10 +205,6 @@ https://mp.weixin.qq.com/s/1g9PXc_3nhKMf1_-E_cVAA
 https://mp.weixin.qq.com/s/CvdeV5xgUF0kStJQdRst0w
 
 从传统方法到深度学习，人脸关键点检测方法综述
-
-https://mp.weixin.qq.com/s/RSCrkeIToeNKrFvMITxzDg
-
-通过OpenFace来理解人脸识别
 
 https://zhuanlan.zhihu.com/p/34404607
 

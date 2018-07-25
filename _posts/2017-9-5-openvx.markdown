@@ -363,3 +363,8 @@ https://mp.weixin.qq.com/s/_O4YqFK2xkFuB4nTbcu1cw
 https://mp.weixin.qq.com/s/6BIspcIQrn7k3VQ9NP63Ng
 
 DeepMind提出空间语言集成模型SLIM，有效编码自然语言的空间关系
+
+https://mp.weixin.qq.com/s/eehpqW2H3wWCOa6r8jbEvQ
+
+ACL 2018 鲁棒、无偏的NLP训练方法
+

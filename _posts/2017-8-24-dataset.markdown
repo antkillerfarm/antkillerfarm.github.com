@@ -316,6 +316,14 @@ https://mp.weixin.qq.com/s/AW5PGDXCTPMf8hwsPxOfjg
 
 NIHCC发布迄今世界最大的CT医学影像数据集
 
+http://mmlab.ie.cuhk.edu.hk/projects/WIDERFace/
+
+WIDER FACE: A Face Detection Benchmark
+
+http://mmlab.ie.cuhk.edu.hk/archive/CNN_FacePoint.htm
+
+人脸关键点检测的训练数据集
+
 # 世说新语
 
 ## 2018.7（续）
@@ -336,7 +344,7 @@ NIHCC发布迄今世界最大的CT医学影像数据集
 
 ----
 
-7.23 疫苗之王
+7.21 疫苗之王
 
 ----
 
