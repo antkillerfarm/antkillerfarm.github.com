@@ -72,6 +72,28 @@ https://mp.weixin.qq.com/s/IrZEQ69RNUdcs0Fl8fHmmQ
 
 ## Triplet Loss
 
+Triplet loss通常是在个体级别的细粒度识别上使用，传统的分类是花鸟狗的大类别的识别，但是有些需求是要精确到个体级别，比如精确到哪个人的人脸识别，所以triplet loss的最主要应用也就是face identification，person re-identification，vehicle re-identification的各种identification识别问题上。
+
+当然你可以把每个人当做一个类别来进行分类训练，但是往往最后会造成softmax的维数远大于feature的维数。
+
+![](/images/img2/Triplet_Loss.png)
+
+如上图所示，triplet是一个三元组，这个三元组是这样构成的：从训练数据集中随机选一个样本，该样本称为Anchor，然后再随机选取一个和Anchor(记为$$x^a$$)属于同一类的样本和不同类的样本,这两个样本对应的称为Positive(记为$$x^p$$)和Negative(记为$$x^n$$)，由此构成一个（Anchor，Positive，Negative）三元组。
+
+针对每个样本$$x_i$$，训练一个参数共享或者不共享的网络，得到三个元素的特征表达，分别记为：$$f(x_i^a), f(x_i^p), f(x_i^n)$$。
+
+triplet loss的目的就是通过学习，让$$x^a$$和$$x^p$$特征表达之间的距离尽可能小，而$$x^a$$和$$x^n$$的特征表达之间的距离尽可能大。公式化的表示就是：
+
+$$\|f(x_i^a)-f(x_i^p)\|_2^2 + \alpha < \|f(x_i^a)-f(x_i^n)\|_2^2$$
+
+其中，$$\alpha$$表示两个距离之间的间隔。因此，对应的目标函数也就很清楚了：
+
+$$\sum_i^N\left[\|f(x_i^a)-f(x_i^p)\|_2^2 - \|f(x_i^a)-f(x_i^n)\|_2^2 + \alpha \right]_+$$
+
+这里距离用欧式距离度量，+表示[]内的值大于零的时候，取该值为损失，小于零的时候，损失为零。 
+
+参考：
+
 https://blog.csdn.net/u010167269/article/details/52027378
 
 Triplet Loss、Coupled Cluster Loss探究
@@ -83,6 +105,20 @@ triplet loss原理以及梯度推导
 https://www.zhihu.com/question/62486208
 
 triplet loss在深度学习中主要应用在什么地方？有什么明显的优势？
+
+## Coupled Cluster Loss
+
+论文：
+
+《Deep Relative Distance Learning: Tell the Difference Between Similar Vehicles》
+
+
+
+参考：
+
+https://blog.csdn.net/u010167269/article/details/51783446
+
+论文中文笔记
 
 ## FaceNet
 

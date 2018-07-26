@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  makefile, Autotools, premake, Bazel, CPU
+title:  makefile, Autotools, premake, Bazel, Spring
 category: technology 
 ---
 
@@ -212,84 +212,49 @@ OkBuck是Uber推出的构建工具。官网：
 
 https://github.com/uber/okbuck
 
-# CPU
+# Spring
 
-https://zhuanlan.zhihu.com/p/29743431
+Spring是一个Java Web应用框架。官网：
 
-CPU制造的那些事之一：i7和i5其实是孪生兄弟！？
+http://spring.io/
 
-https://zhuanlan.zhihu.com/p/29767262
+## Ubuntu安装Eclipse、Spring
 
-CPU制造的那些事之二：Die的大小和良品率
+1.安装Eclipse
 
-https://zhuanlan.zhihu.com/p/31848803
+`sudo apt-get install eclipse`
 
-为什么CPU越来越多地采用硅脂而不是焊锡散热？
+2.安装Spring
 
-https://zhuanlan.zhihu.com/p/27624654
+`sudo apt-get install libspring-web-portlet-java`
 
-CPU风扇停转后会发生什么？CPU凭什么烧不坏
+注意：ubuntu软件仓库中还有一个叫做spring的游戏引擎，不要弄错了。
 
-https://zhuanlan.zhihu.com/p/30409360
+http://www.mkyong.com/spring/quick-start-maven-spring-example/
 
-为什么CPU的频率止步于4G?我们触到频率天花板了吗？
+Maven+Spring hello world example
 
-https://zhuanlan.zhihu.com/p/33145828
+http://wiki.jikexueyuan.com/project/spring/
 
-什么是Speculative Execution？为什么要有它？
+Spring 教程
 
-http://mp.weixin.qq.com/s/sshhUppVPP6qM7LH1V3nSQ
+## Restful
 
-四位计算机的原理及其实现
+http://spring.io/guides/gs/rest-service/
 
-https://zhuanlan.zhihu.com/p/33579054
+## Spring Boot
 
-Reset重启后发生了什么？它和关机后再开机有什么区别？
+https://www.tianmaying.com/tutorial/deploy-spring-boot-application
 
-https://zhuanlan.zhihu.com/p/34003929
+部署Spring Boot应用
 
-调试程序时，设置断点的原理是什么？
+http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
 
->Visual Studio有个有趣的特性是debug编译后，会把0xcc（INT 3）填入代码的空隙，这样一旦程序越界就会被VS捕捉而容易发现错误。而0xCCCC在中国的GBK编码是“烫”。有中国程序员翻看内存到代码段会发现很多"烫烫烫"，不明所以，以为发生了什么神奇的事情。
+Spring Boot默认的配置文件
 
-https://zhuanlan.zhihu.com/p/34091597
+## WebService
 
-ARM攒机指南-网络篇
+https://spring.io/guides/gs/producing-web-service/
 
-https://zhuanlan.zhihu.com/p/34223088
+http://localhost:9999/ws/countries.wsdl
 
-如何进入BIOS？
-
-https://zhuanlan.zhihu.com/p/34858149
-
-128G的固态硬盘为什么有的标120G，有的标100G？固态硬盘容量背后的秘密
-
-https://zhuanlan.zhihu.com/p/30565679
-
-人工智能技术热潮中，是否存在破解苹果A11处理器的可能？
-
-https://mp.weixin.qq.com/s/UWpp2r0_yDxNyJk-cldVyA
-
-处理器高危漏洞无人幸免？树莓派：我们不受影响
-
->最近的Meltdown和Spectre漏洞被炒的沸沸扬扬，然而能用python语言讲述复杂的CPU计算原理，这是该文的一大创见。
-
-https://mp.weixin.qq.com/s/v_BsfSFp-LwiCOFKaMIS_g
-
-后摩尔时代，如何给你的CPU减负？
-
-https://mp.weixin.qq.com/s/-2kGkJzjay2WJzIpMs2Adw
-
-IEEE盘点27款震撼世界的芯片
-
-https://mp.weixin.qq.com/s/gpfMOW7gzVa2HhYOlDy2nQ
-
-从Intel和ARM争霸战，看看做芯片有多难
-
-https://zhuanlan.zhihu.com/p/38847308
-
-为什么硬盘转速是5400或者7200这么奇怪的数字？7200转的硬盘一定比5400快吗？
-
-https://zhuanlan.zhihu.com/p/40601422
-
-双通道、四通道内存对游戏重要吗？

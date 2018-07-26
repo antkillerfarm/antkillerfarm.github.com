@@ -278,6 +278,10 @@ https://mp.weixin.qq.com/s/K7m7IGwD2Y_ffP9OvMFPMA
 
 TensorFlow推出新工具Seedbank：即刻使用的预训练模型库
 
+https://mp.weixin.qq.com/s/4mZjdFL68V_OXKCkZ72KrQ
+
+谷歌BigQuery ML正式上岗，只会用SQL也能玩转机器学习！
+
 ## 遗传算法 & 进化算法
 
 http://blog.csdn.net/u010945683/article/details/40987331

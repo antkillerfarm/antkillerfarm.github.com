@@ -8,6 +8,50 @@ category: DL
 
 ## 参考（续）
 
+https://mp.weixin.qq.com/s/YLys6L9WT7eCC-xGr1j0Iw
+
+带多分类判别器的GAN模型
+
+https://mp.weixin.qq.com/s/lqQeCpLQVqSdJPWx0oxs2g
+
+例解生成对抗网络
+
+https://mp.weixin.qq.com/s/LAS0KgPiVekGdQXbqlw1cQ
+
+深度学习的三大生成模型：VAE、GAN、GAN的变种
+
+https://mp.weixin.qq.com/s/N7YU-YeXiVX7gSB-mzYgnw
+
+生成式对抗网络GAN的研究进展与展望
+
+https://mp.weixin.qq.com/s/gDzti2DISq_cwGbP5T7ICQ
+
+聊聊对抗自编码器
+
+https://mp.weixin.qq.com/s/mPtv1fQd0NBgdY2b_ALNTQ
+
+机器之心GitHub项目：GAN完整理论推导与实现，Perfect！
+
+https://mp.weixin.qq.com/s/uUSq3irEIcBM35JCYGDPfw
+
+生成对抗网络综述：从架构到训练技巧，看这篇论文就够了
+
+https://mp.weixin.qq.com/s/nuT6Glyx0-tU7WJyoPji9w
+
+GANs正在多个层面有所突破
+
+https://mp.weixin.qq.com/s/d_W0O7LNqlBuZV87Ou9uqw
+
+训练GAN的16个技巧
+
+https://mp.weixin.qq.com/s/6AtZZ434HehQSf_YgbylTw
+
+用100元的支票骗到100万：看看对抗性攻击是怎么为非作歹的
+
+https://mp.weixin.qq.com/s/df51nYaA-uz7vd4WbBuE8g
+
+GAN货：生成对抗网络知识资料全集
+
 https://mp.weixin.qq.com/s/cI4xZOw6eL0w9sz9Q2mSCw
 
 Ian Goodfellow盛赞：一个GAN生成ImageNet全部1000类物体
@@ -241,20 +285,4 @@ Momenta详解ImageNet 2017夺冠架构SENet
 http://blog.csdn.net/u014380165/article/details/78006626
 
 SENet（Squeeze-and-Excitation Networks）算法笔记
-
-## Separable convolution
-
-前面介绍的都是正方形的卷积核，实际上长条形的卷积核也是很常用的。比如可分离卷积。
-
-我们知道卷积的计算量和卷积核的面积成正比。对于k x k的卷积核K来说，计算复杂度就是$$O(k^2)$$。
-
-如果我们能找到1 x k的卷积核H和k x 1的卷积核V，且$$K = V * H$$，则称K是可分离的卷积核。
-
-根据卷积运算满足结合律，可得：
-
-$$f * K = f * (V * H) = f * V * H$$
-
-这样就将一个k x k的卷积运算，转换成1 x k + k x 1的卷积运算，从而大大节省了参数和计算量。
-
-显然，不是所有的卷积核都满足可分离条件。但是不要紧，NN有自动学习并逼近函数的能力。经过训练之后：$$K \approx V * H$$
 

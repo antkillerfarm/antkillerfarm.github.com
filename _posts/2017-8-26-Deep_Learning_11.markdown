@@ -6,6 +6,22 @@ category: DL
 
 # 花式卷积（续）
 
+## Separable convolution
+
+前面介绍的都是正方形的卷积核，实际上长条形的卷积核也是很常用的。比如可分离卷积。
+
+我们知道卷积的计算量和卷积核的面积成正比。对于k x k的卷积核K来说，计算复杂度就是$$O(k^2)$$。
+
+如果我们能找到1 x k的卷积核H和k x 1的卷积核V，且$$K = V * H$$，则称K是可分离的卷积核。
+
+根据卷积运算满足结合律，可得：
+
+$$f * K = f * (V * H) = f * V * H$$
+
+这样就将一个k x k的卷积运算，转换成1 x k + k x 1的卷积运算，从而大大节省了参数和计算量。
+
+显然，不是所有的卷积核都满足可分离条件。但是不要紧，NN有自动学习并逼近函数的能力。经过训练之后：$$K \approx V * H$$
+
 ## 1 x 1卷积
 
 1、升维或降维。
@@ -137,48 +153,6 @@ https://mp.weixin.qq.com/s/xJhWu-1FyhIWbFBC5oHMkw
 https://mp.weixin.qq.com/s/OctAGrcBB0a6TOGWMmVKUw
 
 深度学习中的数据增强（下）
-
-# DL参考资源
-
-https://mp.weixin.qq.com/s/fPj4wMtiFX55c_UjNsQnBg
-
-PointCNN全面刷新测试记录：山东大学提出通用点云卷积框架
-
-https://mp.weixin.qq.com/s/tzAp6PxAn3GszcttRzfz8Q
-
-CMU提出新型智能体定位方法：“主动神经定位器”
-
-https://mp.weixin.qq.com/s/dWIhQVPNi9SlzuhMiatEVQ
-
-几张贴纸就让神经网络看不懂道路标志，伯克利为真实环境生成对抗样本
-
-https://mp.weixin.qq.com/s/_1rKAj-KOs4P8WnKzen64w
-
-传统方法已经Out了？OpenAI提出全新辩论模式训练AI
-
-https://zhuanlan.zhihu.com/p/36479489
-
-图像检索：因缘际会与前瞻
-
-https://mp.weixin.qq.com/s/Mk_EkwTYK2141cU9zC1hvQ
-
-合成逼真图像，试试港中大&英特尔的半参数方法
-
-https://zhuanlan.zhihu.com/p/36527644
-
-Learning with Noise: Enhance Distantly Supervised Relation Extraction with Dynamic Transition Matrix——一种对噪音数据显式建模的方法
-
-https://mp.weixin.qq.com/s/tjnpIYJGmrTLGUsdtBI2Vw
-
-AI设计师“鹿班”核心技术公开：如何1秒设计8000张海报？
-
-https://mp.weixin.qq.com/s/zeN7rjmAnvh_7BbTmScrZw
-
-细粒度分类你懂吗？——fine-gained image classification
-
-https://mp.weixin.qq.com/s/Ob1ngUEmRgSybcAD5zg0QQ
-
-利用深度学习消去反光
 
 # Winograd
 

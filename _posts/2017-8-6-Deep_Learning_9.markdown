@@ -4,7 +4,49 @@ title:  深度学习（九）——GAN
 category: DL 
 ---
 
-# GAN（续）
+# GAN
+
+## 概况
+
+GAN是“生成对抗网络”（Generative Adversarial Networks）的简称，由2014年还在蒙特利尔读博士的Ian Goodfellow引入深度学习领域。
+
+>注：Ian J. Goodfellow，斯坦福大学本硕+蒙特利尔大学博士。导师是Yoshua Bengio。现为Google研究员。   
+>个人主页：   
+>http://www.iangoodfellow.com/
+
+论文：
+
+《Generative Adversarial Nets》
+
+教程：
+
+http://www.iangoodfellow.com/slides/2016-12-04-NIPS.pdf
+
+## 通俗解释
+
+对于GAN来说，最通俗的解释就是**“伪造者-鉴别者”**的解释，如艺术画的伪造者和鉴别者。一开始伪造者和鉴别者的水平都不高，但是鉴别者还是比较容易鉴别出伪造者伪造出来的艺术画。但随着伪造者对伪造技术的学习后，其伪造的艺术画会让鉴别者识别错误；或者随着鉴别者对鉴别技术的学习后，能够很简单的鉴别出伪造者伪造的艺术画。这是一个双方不断学习技术，以达到最高的伪造和鉴别水平的过程。
+
+从上面的解释可以看出，GAN实际上一种**零和游戏上的无监督算法**。
+
+![](/images/article/GAN.png)
+
+## 基本原理
+
+上面的解释虽然通俗，却并未涉及算法的实现。要实现上述原理，至少要解决三个问题：
+
+**1.什么是伪造者。**
+
+**2.什么是鉴别者。**
+
+**3.如何对抗。**
+
+以下文章的组织顺序，主要参考下文：
+
+http://kexue.fm/archives/4439/
+
+互怼的艺术：从零直达WGAN-GP
+
+老规矩，摘要+点评。
 
 ## 伪造者
 
@@ -229,46 +271,3 @@ https://mp.weixin.qq.com/s/Qso0pv0NjtNrYhZR-sV2xg
 
 通俗了解对抗生成网络(GAN)核心思想
 
-https://mp.weixin.qq.com/s/YLys6L9WT7eCC-xGr1j0Iw
-
-带多分类判别器的GAN模型
-
-https://mp.weixin.qq.com/s/lqQeCpLQVqSdJPWx0oxs2g
-
-例解生成对抗网络
-
-https://mp.weixin.qq.com/s/LAS0KgPiVekGdQXbqlw1cQ
-
-深度学习的三大生成模型：VAE、GAN、GAN的变种
-
-https://mp.weixin.qq.com/s/N7YU-YeXiVX7gSB-mzYgnw
-
-生成式对抗网络GAN的研究进展与展望
-
-https://mp.weixin.qq.com/s/gDzti2DISq_cwGbP5T7ICQ
-
-聊聊对抗自编码器
-
-https://mp.weixin.qq.com/s/mPtv1fQd0NBgdY2b_ALNTQ
-
-机器之心GitHub项目：GAN完整理论推导与实现，Perfect！
-
-https://mp.weixin.qq.com/s/uUSq3irEIcBM35JCYGDPfw
-
-生成对抗网络综述：从架构到训练技巧，看这篇论文就够了
-
-https://mp.weixin.qq.com/s/nuT6Glyx0-tU7WJyoPji9w
-
-GANs正在多个层面有所突破
-
-https://mp.weixin.qq.com/s/d_W0O7LNqlBuZV87Ou9uqw
-
-训练GAN的16个技巧
-
-https://mp.weixin.qq.com/s/6AtZZ434HehQSf_YgbylTw
-
-用100元的支票骗到100万：看看对抗性攻击是怎么为非作歹的
-
-https://mp.weixin.qq.com/s/df51nYaA-uz7vd4WbBuE8g
-
-GAN货：生成对抗网络知识资料全集

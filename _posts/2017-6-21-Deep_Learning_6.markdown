@@ -1,10 +1,68 @@
 ---
 layout: post
-title:  深度学习（六）——神经元激活函数进阶, DRN
+title:  深度学习（六）——LSTM, 神经元激活函数进阶
 category: DL 
 ---
 
-# LSTM（续）
+# RNN
+
+## 参考（续）
+
+https://mp.weixin.qq.com/s/BqVicouktsZu8xLVR-XnFg
+
+完全图解RNN、RNN变体、Seq2Seq、Attention机制
+
+https://mp.weixin.qq.com/s/gGGXKT2fTn2xPPvo7PE8IA
+
+像训练CNN一样快速训练RNN：全新RNN实现，比优化后的LSTM快10倍
+
+https://mp.weixin.qq.com/s/0TLaC8ACXAFEK5aMNK9O-Q
+
+简单循环单元SRU：像CNN一样快速训练RNN
+
+https://zhuanlan.zhihu.com/p/27104240
+
+CW-RNN收益率时间序列回归
+
+https://mp.weixin.qq.com/s/OltT-GFDVxaiukb1HVSY3w
+
+通俗讲解循环神经网络的两种应用
+
+https://mp.weixin.qq.com/s/PZMmjT9eXL7rU2pxkQWTiw
+
+从90年代的SRNN开始，纵览循环神经网络27年的研究进展
+
+https://mp.weixin.qq.com/s/7LcqRGPYX6JXpY_0hbjmbA
+
+循环神经网络(RNN)入门帖：向量到序列，序列到序列，双向RNN，马尔科夫化
+
+# LSTM
+
+本篇笔记主要摘自：
+
+http://www.jianshu.com/p/9dc9f41f0b29
+
+理解LSTM网络
+
+## LSTM结构图
+
+为了解决原始RNN只有短时记忆的问题，人们又提出了一个RNN的变种——LSTM（Long Short-Term Memory）。其结构图如下所示：
+
+![](/images/article/LSTM.png)
+
+和RNN的时序展开图类似，这里的每个方框表示**某个时刻从输入层到隐层的映射**。
+
+我们首先回顾一下之前的模型在这里的处理。
+
+MLP的该映射关系为：
+
+$$h=\sigma (W\cdot x+b)$$
+
+RNN在上式基础上添加了历史状态$$h_{t-1}$$：
+
+$$h_t=\sigma (W\cdot [h_{t-1},x_t]+b)$$
+
+LSTM不仅添加了历史状态$$h_{t-1}$$，还添加了所谓的**细胞状态**$$C_{t-1}$$，即上图中图像上部的水平横线。
 
 ## 步骤详解
 
@@ -146,7 +204,7 @@ https://blog.csdn.net/taoqick/article/details/79475350
 
 # 神经元激活函数进阶
 
-在《深度学习（一、二）》中，我们探讨了ReLU相对于sigmoid函数的改进，以及一些保证深度神经网络能够训练的措施。然而即便如此，深度神经网络的训练仍然是一件非常困难的事情，还需要更多的技巧和方法。
+在《深度学习（二）》中，我们探讨了ReLU相对于sigmoid函数的改进，以及一些保证深度神经网络能够训练的措施。然而即便如此，深度神经网络的训练仍然是一件非常困难的事情，还需要更多的技巧和方法。
 
 ## 激活函数的作用
 
@@ -271,67 +329,4 @@ https://mp.weixin.qq.com/s/JticD0itOWH7Aq7ye1yzvg
 http://kexue.fm/archives/4647/
 
 浅谈神经网络中激活函数的设计
-
-## 其他激活函数
-
-### hard tanh
-
-$$\text{HardTanh}(x)=\begin{cases}
--1, & x<-1 \\
-x, & -1\le x \le 1 \\
-1, & x>1 \\
-\end{cases}$$
-
-![](/images/article/hard_tanh.png)
-
-### soft sign
-
-$$\text{softsign}(x)=\frac{x}{1+\mid x\mid }$$
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/22142013
-
-深度学习中的激活函数导引
-
-http://blog.csdn.net/u012328159/article/details/69898137
-
-几种常见的激活函数
-
-https://mp.weixin.qq.com/s/Hic01RxwWT_YwnErsJaipQ
-
-什么是激活函数？
-
-https://mp.weixin.qq.com/s/4gElB_8AveWuDVjtLw5JUA
-
-深度学习激活函数大全
-
-https://mp.weixin.qq.com/s/7DgiXCNBS5vb07WIKTFYRQ
-
-从ReLU到Sinc，26种神经网络激活函数可视化
-
-http://www.cnblogs.com/ymjyqsx/p/6294021.html
-
-PReLU与ReLU
-
-http://www.cnblogs.com/pinard/p/6437495.html
-
-深度神经网络（DNN）损失函数和激活函数的选择
-
-# Deep Residual Network
-
-无论采用何种方法，可训练的神经网络的层数都不可能无限深。有的时候，即使没有梯度消失，也存在训练退化（即深层网络的效果还不如浅层网络）的问题。
-
-最终2015年，微软亚洲研究院的何恺明等人，使用残差网络ResNet参加了当年的ILSVRC，在图像分类、目标检测等任务中的表现大幅超越前一年的比赛的性能水准，并最终取得冠军。
-
-论文：
-
-《Deep Residual Learning for Image Recognition》
-
-代码：
-
-https://github.com/KaimingHe/deep-residual-networks
-
->注：何恺明，清华本科+香港中文大学博士（2011）。先后在MS和Facebook担任研究员。   
->个人主页：http://kaiminghe.com/
 

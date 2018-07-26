@@ -6,6 +6,58 @@ category: DL
 
 # CNN进化史（续）
 
+## VGG
+
+Visual Geometry Group是牛津大学的一个科研团队。他们推出的一系列深度模型，被称作VGG模型。
+
+代码：
+
+http://www.robots.ox.ac.uk/~vgg/research/very_deep/
+
+VGG的结构图如下：
+
+![](/images/article/vgg.png)
+
+该系列包括A/A-LRN/B/C/D/E等6个不同的型号。其中的D/E，根据其神经网络的层数，也被称为VGG16/VGG19。
+
+从原理角度，VGG相比AlexNet并没有太多的改进。其最主要的意义就是实践了“**神经网络越深越好**”的理念。也是自那时起，神经网络逐渐有了“深度学习”这个别名。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/37706726
+
+VGG论文笔记
+
+## GoogleNet
+
+GoogleNet的进化道路和VGG有所不同。VGG实际上就是“大力出奇迹”的暴力模型，其他地方不足称道。
+
+而GoogleNet不仅继承了VGG“越深越好”的理念，对于网络结构本身也作了大胆的创新。可以对比的是，AlexNet有60M个参数，而GoogleNet只有4M个参数。
+
+因此，在ILSVRC 2014大赛中，GoogleNet获得第一名，而VGG屈居第二。
+
+![](/images/article/GoogleNet.jpg)
+
+上图是GoogleNet的结构图。从中可以看出，GoogleNet除了AlexNet的基本要素之外，还有被称作Inception的结构。
+
+![](/images/article/inception.png)
+
+上图是Inception的结构图。它的原理实际上就是**将不同尺寸的卷积组合起来，以提供不同尺寸的特征**。
+
+原始的GoogleNet也被称作Inception-v1。在后面的几年，GoogleNet还提出了几种改进的版本，最新的一个是Inception-v4（2016.8）。
+
+论文：
+
+《Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning》
+
+代码：
+
+https://github.com/BVLC/caffe/tree/master/models/bvlc_googlenet
+
+Inception系列的改进方向基本都集中在构建不同的Inception模型上。
+
+GoogleNet的另一个改进是**减少了全连接层**（Full Connection, FC），这是减少模型参数的一个重要改进。事实上，在稍后的实践中，人们发现去掉VGG的第一个FC层，对于效果几乎没有任何影响。
+
 ## SqueezeNet
 
 GoogleNet之后，最有名的CNN模型当属何恺明的Deep Residual Network。DRN在《深度学习（六）》中已有提及，这里不再赘述。
@@ -231,48 +283,4 @@ http://www.sohu.com/a/222873093_651893
 https://mp.weixin.qq.com/s/-d4T2hgjy6kGdd_ig_J9eg
 
 LeCun亲授的深度学习入门课：从飞行器的发明到卷积神经网络
-
-# GAN
-
-## 概况
-
-GAN是“生成对抗网络”（Generative Adversarial Networks）的简称，由2014年还在蒙特利尔读博士的Ian Goodfellow引入深度学习领域。
-
->注：Ian J. Goodfellow，斯坦福大学本硕+蒙特利尔大学博士。导师是Yoshua Bengio。现为Google研究员。   
->个人主页：   
->http://www.iangoodfellow.com/
-
-论文：
-
-《Generative Adversarial Nets》
-
-教程：
-
-http://www.iangoodfellow.com/slides/2016-12-04-NIPS.pdf
-
-## 通俗解释
-
-对于GAN来说，最通俗的解释就是**“伪造者-鉴别者”**的解释，如艺术画的伪造者和鉴别者。一开始伪造者和鉴别者的水平都不高，但是鉴别者还是比较容易鉴别出伪造者伪造出来的艺术画。但随着伪造者对伪造技术的学习后，其伪造的艺术画会让鉴别者识别错误；或者随着鉴别者对鉴别技术的学习后，能够很简单的鉴别出伪造者伪造的艺术画。这是一个双方不断学习技术，以达到最高的伪造和鉴别水平的过程。
-
-从上面的解释可以看出，GAN实际上一种**零和游戏上的无监督算法**。
-
-![](/images/article/GAN.png)
-
-## 基本原理
-
-上面的解释虽然通俗，却并未涉及算法的实现。要实现上述原理，至少要解决三个问题：
-
-**1.什么是伪造者。**
-
-**2.什么是鉴别者。**
-
-**3.如何对抗。**
-
-以下文章的组织顺序，主要参考下文：
-
-http://kexue.fm/archives/4439/
-
-互怼的艺术：从零直达WGAN-GP
-
-老规矩，摘要+点评。
 

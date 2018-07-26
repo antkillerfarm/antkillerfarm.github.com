@@ -413,6 +413,14 @@ Adaptation for Neural Machine Translation
 >场景：假设储备了大量新闻领域双语语料，少量科技领域双语语料（或者没有），科技领域单语语料（大量、少量或者没有）的大菜鸟翻译公司，接到一个科技领域的翻译项目。如何使用现有资源去尽可能的把科技领域的翻译做好。   
 >问题：这里的科技领域就是in-domain，新闻领域是out-domain。如何使用数量有限的in-domain parallel corpus和相对丰富的out-domain parallel corpus来更好地提升in-domain translation performance。
 
+https://mp.weixin.qq.com/s/ZU9QUKDgEuqpTaViAbQfuw
+
+DeepMind提出空间语言集成模型SLIM，有效编码自然语言的空间关系
+
+https://mp.weixin.qq.com/s/fSYU4Xl4vdlWTgIPo0mS7Q
+
+哈工大讯飞联合实验室勇夺中文语法检错大赛冠军
+
 # 垃圾筐
 
 https://mp.weixin.qq.com/s/rZwqxyBmQg07Pq1ihTjNMg

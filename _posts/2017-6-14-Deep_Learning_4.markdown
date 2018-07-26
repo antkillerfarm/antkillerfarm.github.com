@@ -282,25 +282,3 @@ yandex后来又提出了一个加速版本的RNNLM：
 
 https://github.com/yandex/faster-rnnlm
 
-## Item2Vec
-
-本质上，word2vec模型是在word-context的co-occurrence矩阵基础上建立起来的。因此，任何基于co-occurrence矩阵的算法模型，都可以套用word2vec算法的思路加以改进。
-
-比如，推荐系统领域的协同过滤算法。
-
-协同过滤算法是建立在一个user-item的co-occurrence矩阵的基础上，通过行向量或列向量的相似性进行推荐。如果我们将同一个user购买的item视为一个context，就可以建立一个item-context的矩阵。进一步的，可以在这个矩阵上借鉴CBoW模型或Skip-gram模型计算出item的向量表达，在更高阶上计算item间的相似度。
-
-论文：
-
-《Item2Vec: Neural Item Embedding for Collaborative Filtering》
-
-参考：
-
-https://mp.weixin.qq.com/s/vpxCP1Uw23y9XNTRUhY79w
-
-达观数据推荐算法实现：协同过滤之item embedding
-
-https://www.sohu.com/a/215535516_99992181
-
-有这好事？神经网络模型Word2vec竟能根据个人喜好推荐音乐
-

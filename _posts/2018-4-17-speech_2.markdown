@@ -182,3 +182,7 @@ https://www.zhihu.com/question/48537863
 
 远场（far-field）语音识别的主流技术有哪些？
 
+https://mp.weixin.qq.com/s/1GjBWW5gn2WQb1GWExtB5A
+
+HOA声场重建原理
+

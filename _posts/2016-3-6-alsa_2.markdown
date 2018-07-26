@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ALSA（二）, GStreamer（三）, WebSocket, Spring, Blog维护日志
+title:  ALSA（二）, GStreamer（三）, WebSocket, Blog维护日志
 category: technology 
 ---
 
@@ -286,53 +286,15 @@ new_pad_type = new_pad.query_caps(None).to_string()
 
 从这里也可以看出，gst_parse_launch会自动处理媒体流的格式匹配问题，而使用普通函数的时候，必须自己编程处理格式匹配的问题。
 
-# Spring
-
-Spring是一个Java Web应用框架。官网：
-
-http://spring.io/
-
-## Ubuntu安装Eclipse、Spring
-
-1.安装Eclipse
-
-`sudo apt-get install eclipse`
-
-2.安装Spring
-
-`sudo apt-get install libspring-web-portlet-java`
-
-注意：ubuntu软件仓库中还有一个叫做spring的游戏引擎，不要弄错了。
-
-http://www.mkyong.com/spring/quick-start-maven-spring-example/
-
-Maven+Spring hello world example
-
-http://wiki.jikexueyuan.com/project/spring/
-
-Spring 教程
-
-## Restful
-
-http://spring.io/guides/gs/rest-service/
-
-## Spring Boot
-
-https://www.tianmaying.com/tutorial/deploy-spring-boot-application
-
-部署Spring Boot应用
-
-http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
-
-Spring Boot默认的配置文件
-
-## WebService
-
-https://spring.io/guides/gs/producing-web-service/
-
-http://localhost:9999/ws/countries.wsdl
-
 # Blog维护日志
+
+2018.7.26 近来blog相关的事情比较多。
+
+1. CSDN编辑拉我进高级作者微信群。另一不知名小编居然和我约稿。。。太瞧得起我的水平了。。。
+
+2. 添了一个Google的follower，居然还是tensorflow的committer，就连做的工作都和我类似。。。
+
+3. 添了一个Azerbaijan的follower，有没有搞错啊！你确定你看得懂中文吗？
 
 2018.7.19 添加Speech分类。
 
@@ -360,6 +322,8 @@ http://localhost:9999/ws/countries.wsdl
 
 2016.8.1 添加blog数量的统计信息，将MathJax升级到2.6.1。
 
+2016.5.12 为了广而告之，特将blog登录CSDN。但由于编辑方式的差异，Github仍为主站，内容较新较全。
+
 2016.4.12 将MathJax等资源切换为国内的cdn。
 
 2016.4.10 首页将技术文章和非技术文章分栏显示。
@@ -375,4 +339,3 @@ http://localhost:9999/ws/countries.wsdl
 2015.1.7 blog搬家基本完成。
 
 2014.12.23 围观大徐的blog有感，特在github上安家落户，废弃了原来的搜狐blog。
-

@@ -1,10 +1,73 @@
 ---
 layout: post
-title:  深度学习（七）——Bi-directional RNN, seq2seq, DMN
+title:  深度学习（七）——DRN, Bi-directional RNN, seq2seq, DMN
 category: DL 
 ---
 
-# Deep Residual Network（续）
+# 神经元激活函数进阶（续）
+
+## 其他激活函数
+
+### hard tanh
+
+$$\text{HardTanh}(x)=\begin{cases}
+-1, & x<-1 \\
+x, & -1\le x \le 1 \\
+1, & x>1 \\
+\end{cases}$$
+
+![](/images/article/hard_tanh.png)
+
+### soft sign
+
+$$\text{softsign}(x)=\frac{x}{1+\mid x\mid }$$
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/22142013
+
+深度学习中的激活函数导引
+
+http://blog.csdn.net/u012328159/article/details/69898137
+
+几种常见的激活函数
+
+https://mp.weixin.qq.com/s/Hic01RxwWT_YwnErsJaipQ
+
+什么是激活函数？
+
+https://mp.weixin.qq.com/s/4gElB_8AveWuDVjtLw5JUA
+
+深度学习激活函数大全
+
+https://mp.weixin.qq.com/s/7DgiXCNBS5vb07WIKTFYRQ
+
+从ReLU到Sinc，26种神经网络激活函数可视化
+
+http://www.cnblogs.com/ymjyqsx/p/6294021.html
+
+PReLU与ReLU
+
+http://www.cnblogs.com/pinard/p/6437495.html
+
+深度神经网络（DNN）损失函数和激活函数的选择
+
+# Deep Residual Network
+
+无论采用何种方法，可训练的神经网络的层数都不可能无限深。有的时候，即使没有梯度消失，也存在训练退化（即深层网络的效果还不如浅层网络）的问题。
+
+最终2015年，微软亚洲研究院的何恺明等人，使用残差网络ResNet参加了当年的ILSVRC，在图像分类、目标检测等任务中的表现大幅超越前一年的比赛的性能水准，并最终取得冠军。
+
+论文：
+
+《Deep Residual Learning for Image Recognition》
+
+代码：
+
+https://github.com/KaimingHe/deep-residual-networks
+
+>注：何恺明，清华本科+香港中文大学博士（2011）。先后在MS和Facebook担任研究员。   
+>个人主页：http://kaiminghe.com/
 
 残差网络的明显特征是有着相当深的深度，从32层到152层，其深度远远超过了之前提出的深度网络结构，而后又针对小数据设计了1001层的网络结构。
 
@@ -284,54 +347,3 @@ https://zhuanlan.zhihu.com/p/22538465
 
 运用CNN对ImageNet进行图像分类
 
-## VGG
-
-Visual Geometry Group是牛津大学的一个科研团队。他们推出的一系列深度模型，被称作VGG模型。
-
-代码：
-
-http://www.robots.ox.ac.uk/~vgg/research/very_deep/
-
-VGG的结构图如下：
-
-![](/images/article/vgg.png)
-
-该系列包括A/A-LRN/B/C/D/E等6个不同的型号。其中的D/E，根据其神经网络的层数，也被称为VGG16/VGG19。
-
-从原理角度，VGG相比AlexNet并没有太多的改进。其最主要的意义就是实践了“**神经网络越深越好**”的理念。也是自那时起，神经网络逐渐有了“深度学习”这个别名。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/37706726
-
-VGG论文笔记
-
-## GoogleNet
-
-GoogleNet的进化道路和VGG有所不同。VGG实际上就是“大力出奇迹”的暴力模型，其他地方不足称道。
-
-而GoogleNet不仅继承了VGG“越深越好”的理念，对于网络结构本身也作了大胆的创新。可以对比的是，AlexNet有60M个参数，而GoogleNet只有4M个参数。
-
-因此，在ILSVRC 2014大赛中，GoogleNet获得第一名，而VGG屈居第二。
-
-![](/images/article/GoogleNet.jpg)
-
-上图是GoogleNet的结构图。从中可以看出，GoogleNet除了AlexNet的基本要素之外，还有被称作Inception的结构。
-
-![](/images/article/inception.png)
-
-上图是Inception的结构图。它的原理实际上就是**将不同尺寸的卷积组合起来，以提供不同尺寸的特征**。
-
-原始的GoogleNet也被称作Inception-v1。在后面的几年，GoogleNet还提出了几种改进的版本，最新的一个是Inception-v4（2016.8）。
-
-论文：
-
-《Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning》
-
-代码：
-
-https://github.com/BVLC/caffe/tree/master/models/bvlc_googlenet
-
-Inception系列的改进方向基本都集中在构建不同的Inception模型上。
-
-GoogleNet的另一个改进是**减少了全连接层**（Full Connection, FC），这是减少模型参数的一个重要改进。事实上，在稍后的实践中，人们发现去掉VGG的第一个FC层，对于效果几乎没有任何影响。

@@ -120,6 +120,10 @@ https://mp.weixin.qq.com/s/_uscpKaRXZbwfMiWGoY0Uw
 
 多GPU加速学习，这是一份崭新的XGBoost库
 
+https://mp.weixin.qq.com/s/7RU3Nzy5qkTL8-2LOjg9qg
+
+从基础到实现：集成学习综合教程
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。

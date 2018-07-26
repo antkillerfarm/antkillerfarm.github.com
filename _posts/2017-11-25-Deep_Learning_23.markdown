@@ -60,7 +60,7 @@ http://groups.csail.mit.edu/graphics/fivek_dataset/
 
 上图是本文模型的网络结构图。它的设计特点如下：
 
-1.采用Multi-Scale Context Aggregation作为基础网络。MCA的内容参见《深度学习（九）》。
+1.采用Multi-Scale Context Aggregation作为基础网络。MCA的内容参见《深度学习（十）》中的Dilated convolution一节。
 
 2.传统MCA一般有下采样的过程，但这里由于网络输入和输出的尺寸维度是一样的，因此，所有的feature maps都是等大的。
 
