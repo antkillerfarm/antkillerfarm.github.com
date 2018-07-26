@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三）——Neural Network Zoo, CNN, Autoencoder
+title:  深度学习（三）——Neural Network Zoo, CNN
 category: DL 
 ---
 
@@ -313,12 +313,4 @@ https://mp.weixin.qq.com/s/VcjivPhJuCk7NPQ1FNQULw
 https://mp.weixin.qq.com/s/zvPNuP_LT7pWIgoxzfeUWw
 
 综述卷积神经网络：从基础技术到研究前景
-
-# Autoencoder
-
-Bengio在2003年的《A neural probabilistic language model》中指出，维度过高，会导致每次学习，都会强制改变大部分参数。
-
-由此发生蝴蝶效应，本来很好的参数，可能就因为一个小小传播误差，就改的乱七八糟。
-
-因此，数据降维是数据预处理中，非常重要的一环。常用的降维算法，除了线性的PCA算法之外，还有非线性的Autoencoder。
 

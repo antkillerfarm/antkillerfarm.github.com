@@ -314,6 +314,10 @@ https://mp.weixin.qq.com/s/ynpqG7Vfu5b8lYNW6Y-TpA
 
 快准狠！Intel论文揭示自家车牌识别算法:LPRNet
 
+https://mp.weixin.qq.com/s/FjoJA0gF4LgsB8hw24I0EQ
+
+华科白翔老师团队ECCV2018 OCR论文：Mask TextSpotter
+
 # CRNN
 
 论文：

@@ -186,10 +186,6 @@ https://www.zhihu.com/question/37060782
 
 人脸识别哪家强？不如问哪家公司吹牛逼强
 
-https://zhuanlan.zhihu.com/p/22451474
-
-SeetaFace开源人脸识别引擎介绍
-
 https://mp.weixin.qq.com/s/S_T0tYhZ1pjoIMysP0aVWA
 
 美军AI黑科技：黑暗中也能准确识别人脸，谁该为此感到紧张？
@@ -226,6 +222,20 @@ PRNet：人脸3D重建与密集对齐
 
 ## 2018.7（续）
 
+https://www.zhihu.com/question/67018316
+
+老式的手操高射炮是怎么射中万米高空的敌机的？
+
+>Charles Stark "Doc" Draper，1901～1987，美国科学家和工程师，惯性导航之父。Stanford本科（1922）+MIT硕博（1928，1938）。美国科学院、美国工程院院士。MIT教授，他所在的实验室后来被称为Charles Stark Draper Laboratory。美国工程院设有Charles Stark Draper Prize。
+
+除了MK14瞄准具之外，Draper还设计了弹道导弹和登月飞船的惯性导航机构，为美国的航空航天事业做出了极大的贡献。
+
+----
+
+CVPR = Conference of Very P**r Research
+
+----
+
 二战初期，美国空军降落伞合格率为99.9%，这意味着每一千个就有一个出事，对于这种百万级的战略性产品而言，这非常影响士气，军方要求必须达到100%。 最后，美军想出了一个微小创新后来叫“降落伞规则”：军方不再考察合格率了，调换了一个角度改变检查质量的制度，决定在每次交货的降落伞中随机挑出一两个，让厂家最主要的负责人亲自从飞机上往跳下。 结果呢？不用你费劲猜，奇迹出现了，不合格率很快降为零。
 
 # DL参考资源
@@ -233,4 +243,28 @@ PRNet：人脸3D重建与密集对齐
 https://mp.weixin.qq.com/s/naD6hVwDg3QSA76sXy2GZA
 
 上海交通大学CVPR Spotlight论文：利用形态相似性生成人体部位解析数据
+
+https://mp.weixin.qq.com/s/OfDaoRb2l_gei--bLSzTRw
+
+宅男福音DeepFake进阶版！基于位置映射图网络进行3D人脸重建
+
+https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
+
+北大：一种基于新闻特征抽取和循环神经网络的股票预测方法
+
+https://mp.weixin.qq.com/s/UboQNEywHSBAYc0740qmzQ
+
+让机器学会创造新的概念：DeepMind提出符号-概念关联网络SCAN
+
+https://mp.weixin.qq.com/s/AAmQymWdKQDeL8DQacEZ3A
+
+用深度学习解决Bongard问题
+
+https://mp.weixin.qq.com/s/210l9K94KMqtJtqbrZ-mgg
+
+打开黑箱重要一步，MIT提出TbD-net，弥合视觉推理模型的性能与可解释性鸿沟
+
+https://mp.weixin.qq.com/s/E5VpBt53VTjOxt8wE3SrLA
+
+工程师如何解决穿衣搭配烦恼？
 

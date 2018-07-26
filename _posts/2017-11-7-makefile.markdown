@@ -289,3 +289,7 @@ https://mp.weixin.qq.com/s/gpfMOW7gzVa2HhYOlDy2nQ
 https://zhuanlan.zhihu.com/p/38847308
 
 为什么硬盘转速是5400或者7200这么奇怪的数字？7200转的硬盘一定比5400快吗？
+
+https://zhuanlan.zhihu.com/p/40601422
+
+双通道、四通道内存对游戏重要吗？

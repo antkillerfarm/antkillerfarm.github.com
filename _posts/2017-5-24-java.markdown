@@ -211,6 +211,10 @@ https://mp.weixin.qq.com/s/OwJ2gBWvmj8rJ_vW5nzaPA
 
 10个免费好用功能强大的网页动画效果库
 
+https://mp.weixin.qq.com/s/pYtKpfL68lEy9bus9HHAMQ
+
+Javascript将HTML页面生成PDF并下载
+
 # Scala
 
 官网：

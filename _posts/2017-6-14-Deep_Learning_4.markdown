@@ -1,10 +1,18 @@
 ---
 layout: post
-title:  深度学习（四）——词向量
+title:  深度学习（四）——Autoencoder, 词向量
 category: DL 
 ---
 
-# Autoencoder（续）
+# Autoencoder
+
+## Basic AE
+
+Bengio在2003年的《A neural probabilistic language model》中指出，维度过高，会导致每次学习，都会强制改变大部分参数。
+
+由此发生蝴蝶效应，本来很好的参数，可能就因为一个小小传播误差，就改的乱七八糟。
+
+因此，数据降维是数据预处理中，非常重要的一环。常用的降维算法，除了线性的PCA算法之外，还有非线性的Autoencoder。
 
 ![](/images/article/Autoencoder.png)
 
@@ -20,7 +28,27 @@ Autoencoder的结构如上图所示。它的特殊之处在于：
 
 和Autoencoder类似的神经网络还有：Denoising Autoencoder（DAE）、Variational Autoencoder（VAE）、Sparse Autoencoder（SAE）。
 
+## Stacked Autoencoders
+
+AE不仅可以单独使用，还可以堆叠式的使用。
+
+![](/images/img2/Stacked_SparseAE_Features1.png)
+
+上图是个普通的AE，其中的hidden层可以看作是input的Features，不妨称作Features I。
+
+![](/images/img2/Stacked_SparseAE_Features2.png)
+
+将Features I作为input，送进另一个AE，得到Features II。依此类推，就可以形成一个深度网络，这种方法叫做Stacked Auto-encoder Networks（SANs）。
+
+这实际上，就是Relu发明之前，预训练DNN的标准做法。经过SANs预训练的网络，每层的参数都被归一化，即使使用sigmoid激活函数，也没有严重的梯度消失现象，从而使DNN的训练成为了可能。
+
 参考：
+
+http://ufldl.stanford.edu/wiki/index.php/Stacked_Autoencoders
+
+Stacked Autoencoders
+
+## 参考
 
 http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/
 
@@ -275,12 +303,4 @@ https://mp.weixin.qq.com/s/vpxCP1Uw23y9XNTRUhY79w
 https://www.sohu.com/a/215535516_99992181
 
 有这好事？神经网络模型Word2vec竟能根据个人喜好推荐音乐
-
-## word2vec/doc2vec的缺点
-
-1.word2vec/doc2vec基于BOW（Bag Of Word，词袋）模型。该模型的特点是忽略词序，因此对于那些交换词序会改变含义的句子，无法准确评估它们的区别。
-
-2.虽然我们一般使用word2vec/doc2vec来比较文本相似度，但是从原理来说，word2vec/doc2vec提供的是关联性（relatedness），而不是相似性（similarity）。这会带来以下问题：不但近义词的词向量相似，反义词的词向量也相似。因为它们和其他词的关系（也就是语境）是类似的。
-
-3.由于一个词只有一个向量来表示，因此，无法处理一词多义的情况。
 

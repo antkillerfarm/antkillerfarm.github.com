@@ -114,6 +114,28 @@ https://mp.weixin.qq.com/s/RSCrkeIToeNKrFvMITxzDg
 
 通过OpenFace来理解人脸识别
 
+## SeetaFace
+
+SeetaFace人脸识别引擎由中科院计算所山世光研究员带领的人脸识别研究组研发。代码基于C++实现，且不依赖于任何第三方的库函数，开源协议为BSD-2，可供学术界和工业界免费使用。
+
+代码：
+
+https://github.com/seetaface
+
+论文：
+
+《Coarse-to-Fine Auto-Encoder Networks (CFAN) for Real-Time Face Alignment》
+
+参考：
+
+https://zhuanlan.zhihu.com/p/22451474
+
+SeetaFace开源人脸识别引擎介绍
+
+http://www.cnblogs.com/nenya33/p/6801045.html
+
+CFAN
+
 ## 人脸年龄识别
 
 https://www.openu.ac.il/home/hassner/projects/cnn_agegender/

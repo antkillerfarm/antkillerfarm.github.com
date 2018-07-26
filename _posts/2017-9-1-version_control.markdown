@@ -163,6 +163,12 @@ https://jenkins.io/index.html
 
 gitlab管理代码版本，触发jenkins自动构建+测试，然后走迭代或者发布，全部环境都在docker内。
 
+参考：
+
+https://mp.weixin.qq.com/s/jcpynCa6CToITUGD9hRylw
+
+推荐10款最佳Jenkins插件
+
 ## Walle
 
 Walle一个web部署系统工具，配置简单、功能完善、界面流畅、开箱即用！支持git、svn版本管理，支持各种web代码发布，PHP，Python，JAVA等代码的发布、回滚，可以通过web来一键完成。
@@ -245,22 +251,3 @@ https://mp.weixin.qq.com/s/xS8EsNtSdHiFgg_HnuJJWg
 
 照片有灵异鬼影？伯克利陈启峰培育高能FCN“除灵师”
 
-https://mp.weixin.qq.com/s/OfDaoRb2l_gei--bLSzTRw
-
-宅男福音DeepFake进阶版！基于位置映射图网络进行3D人脸重建
-
-https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
-
-北大：一种基于新闻特征抽取和循环神经网络的股票预测方法
-
-https://mp.weixin.qq.com/s/UboQNEywHSBAYc0740qmzQ
-
-让机器学会创造新的概念：DeepMind提出符号-概念关联网络SCAN
-
-https://mp.weixin.qq.com/s/AAmQymWdKQDeL8DQacEZ3A
-
-用深度学习解决Bongard问题
-
-https://mp.weixin.qq.com/s/210l9K94KMqtJtqbrZ-mgg
-
-打开黑箱重要一步，MIT提出TbD-net，弥合视觉推理模型的性能与可解释性鸿沟
