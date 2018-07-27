@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十四）——Softmax详解, 目标检测
+title:  深度学习（十四）——Instance Normalization, IBN-Net, Softmax详解, 目标检测
 category: DL 
 ---
 
@@ -29,6 +29,26 @@ $$y_{tijk}=\frac{x_{tijk}-\mu_{ti}}{\sqrt{\sigma_{ti}^2+\epsilon}}, \mu_{ti}=\fr
 http://www.jianshu.com/p/d77b6273b990
 
 论文中文版
+
+# IBN-Net
+
+IBN-Net是汤晓鸥小组的新作（2018.7）。
+
+![](/images/article/rcnn_2.png)
+
+与BN相比，IN有两个主要的特点：第一，它不是用训练批次来将图像特征标准化，而是用单个样本的统计信息；第二，IN能将同样的标准化步骤既用于训练，又用于推断。
+
+潘新钢等发现，IN和BN的核心区别在于，IN学习到的是不随着颜色、风格、虚拟性/现实性等外观变化而改变的特征，而要保留与内容相关的信息，就要用到BN。
+
+论文：
+
+《Two at Once: Enhancing Learning and Generalization Capacities via IBN-Net》
+
+参考：
+
+https://mp.weixin.qq.com/s/LVL90n4--WPgFLMQ-Gnf6g
+
+汤晓鸥为CNN搓了一颗大力丸
 
 # Softmax详解
 

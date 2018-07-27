@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十）——模型压缩与加速, OCR, 目标检测进阶, Spatial Transformer Networks
+title:  深度学习（四十）——模型压缩与加速, OCR, Spatial Transformer Networks
 category: DL 
 ---
 
@@ -240,7 +240,21 @@ https://mp.weixin.qq.com/s/vswtn3D1-VZZlyKLJmHc7A
 
 # OCR
 
+## 概述
+
 光学字符识别（Optical Character Recognition, OCR），是指对文本资料的图像文件进行分析识别处理，获取文字及版面信息的过程。
+
+华中科大白翔教授的实验室算是目前国内OCR做的比较好的了。
+
+白翔的个人主页：
+
+http://cloud.eic.hust.edu.cn:8071/~xbai/
+
+该主页上有一个OCR方面的综述，是入门的最好资料。
+
+http://www.cnblogs.com/lillylin/
+
+这是一个OCR方面的blog。对白翔的论文，几乎都有阅读笔记。
 
 ## tesseract
 
@@ -251,6 +265,34 @@ linux下可以使用tesseract作为OCR工具。安装方法：
 使用方法：
 
 `tesseract ./111.png 1 -l chi_sim+eng`
+
+## CRNN
+
+CRNN是白翔小组的作品。
+
+论文：
+
+《An End-to-End Trainable Neural Network for Image-based Sequence Recognition and Its Application to Scene Text Recognition》
+
+代码：
+
+https://github.com/bgshih/crnn
+
+## ASTER
+
+ASTER也是白翔小组的作品。
+
+《ASTER: An Attentional Scene Text Recognizer with Flexible Rectification》
+
+代码：
+
+https://github.com/bgshih/aster
+
+参考：
+
+https://www.cnblogs.com/lillylin/p/9315180.html
+
+论文阅读笔记
 
 ## 参考
 
@@ -317,50 +359,6 @@ https://mp.weixin.qq.com/s/ynpqG7Vfu5b8lYNW6Y-TpA
 https://mp.weixin.qq.com/s/FjoJA0gF4LgsB8hw24I0EQ
 
 华科白翔老师团队ECCV2018 OCR论文：Mask TextSpotter
-
-# CRNN
-
-论文：
-
-《An End-to-End Trainable Neural Network for Image-based Sequence Recognition and Its Application to Scene Text Recognition》
-
-代码：
-
-https://github.com/bgshih/crnn
-
-# 目标检测进阶
-
-https://mp.weixin.qq.com/s/LtXylKTKsHdjMPw9Q1HyXA
-
-优于MobileNet、YOLOv2：移动设备上的实时目标检测系统Pelee
-
-https://mp.weixin.qq.com/s/Gq3bflJq59Tx-nDCvbweNA
-
-无需预训练分类器，清华&旷视提出专用于目标检测的骨干网络DetNet
-
-https://mp.weixin.qq.com/s/u3eXhoFvo7vZujc0XoQQWQ
-
-旷视研究院解读Light-Head R-CNN：平衡精准度和速度
-
-https://mp.weixin.qq.com/s/6cUP9vvfcuv8rIEnGnAFiA
-
-NCSU&阿里巴巴论文：可解释的R-CNN
-
-https://mp.weixin.qq.com/s/x0r-2J_YdYgIQlRDqvGofg
-
-CVPR 2017论文解读：用于单目图像车辆3D检测的多任务网络
-
-https://mp.weixin.qq.com/s/1vOdOMyByBacSBMVrscq5Q
-
-黄畅：基于DenesBox的目标检测在自动驾驶中的应用
-
-https://mp.weixin.qq.com/s/-PeXMU_gkcT5YnMcLoaKag
-
-CVPR清华大学研究，高效视觉目标检测框架RON
-
-https://mp.weixin.qq.com/s/AupXIoVmhcOBrX1z1vgdtw
-
-弱监督实现精确目标检测，上交大提出协同学习框架
 
 # Spatial Transformer Networks
 

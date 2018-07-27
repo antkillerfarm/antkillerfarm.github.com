@@ -224,103 +224,53 @@ https://zhuanlan.zhihu.com/p/32796998
 
 10分钟搞定ICO
 
-# Optical flow
+# DL参考资源
 
-## 光流约束方程（续）
+https://mp.weixin.qq.com/s/3aAaM1DWsnCWEEbP7dOZEg
 
-根据亮度恒定假设可得：
+伯克利等提出无监督特征学习新方法，代码已开源
 
-$$\frac{\partial I}{\partial x}\Delta x + \frac{\partial I}{\partial y}\Delta y + \frac{\partial I}{\partial t}\Delta t = 0$$
+https://mp.weixin.qq.com/s/ZDPPWH570Vc6e1irwP1b1Q
 
-上式即为亮度恒定假设的**光流约束方程**。由于这个方程有两个未知数，所以没有唯一解。为了得到唯一解，就必须新增约束或假设，因此也就有了如下不同的算法。
+精细识别现实世界图像：李飞飞团队提出半监督适应性模型
 
-| 名称 | 约束或假设 |
-|:--:|:--:|
-| Lukas-Kanade | 亮度恒定假设+局部光流恒定 |
-| Farneback | 梯度恒定假设+局部光流恒定 |
-| Horn-Schunck | 亮度恒定假设+光流场平滑 |
-| Brox | 亮度恒定假设+梯度恒定假设+光流场平滑 |
+https://mp.weixin.qq.com/s/4dlWdPOCbYedu02aLAQ04Q
 
-## 参考
+MIT“创世纪”机器学习新系统，自动生成补丁修复Bug
 
-http://blog.csdn.net/zouxy09/article/details/8683859
+http://mp.weixin.qq.com/s/rS4xCsytYGqBLMUzlyA12A
 
-光流Optical Flow介绍与OpenCV实现
+构建多层感知器神经网络对数字图片进行文本识别
 
-http://www.cnblogs.com/walccott/p/4956858.html
+https://mp.weixin.qq.com/s/zv264-dqDQYRkYmjX_QZpQ
 
-Horn-Schunck光流法
+郑宇解读地理传感器时间序列预测问题
 
-http://blog.csdn.net/u014568921/article/details/46638557
+https://mp.weixin.qq.com/s/cr0BJLkyN2kW35-w1pebGQ
 
-目标跟踪之Lukas-Kanade光流法
+学习在黑暗中看世界（Learning to See in the Dark）
 
-http://www.cnblogs.com/gnuhpc/archive/2012/12/04/2802124.html
+https://mp.weixin.qq.com/s/zWoQCKbZNz2td3cZxEsqKQ
 
-Lucas–Kanade光流算法
+腾讯优图提出SRN-DeblurNet：高效高质量去除复杂图像模糊
 
-http://www.cnblogs.com/dzyBK/p/5096860.html
+https://mp.weixin.qq.com/s/uUMPUdG2TI10W5RumPaXkA
 
-光流算法：Brox算法
+DeepMind无监督表示学习重大突破：语音、图像、文本、强化学习全能冠军！
 
-http://www.cnblogs.com/quarryman/p/optical_flow.html
+https://mp.weixin.qq.com/s/ESX-V5oMk35NhP7MKu_d0A
 
-图像分析之光流之经典
+美剧《硅谷》深度学习APP获艾美奖提名：使用TensorFlow和GPU开发
 
-https://zhuanlan.zhihu.com/p/31726032
+https://mp.weixin.qq.com/s/2FKgCmQ8i58XamT_plrl1w
 
-走进光流的世界
+深度神经网络为什么不易过拟合？傅里叶分析发现固有频谱偏差
 
-# Particle filter
+https://mp.weixin.qq.com/s/ora66weNks8tHlFTKJrKSA
 
+谷歌AI自动重构3D大脑，最高精度绘制神经元
 
+https://mp.weixin.qq.com/s/WXVZkqCGlj6ym5YrSZS3Vg
 
-
-参考：
-
-http://www.cvvision.cn/6002.html
-
-基于粒子滤波器的目标跟踪算法及实现
-
-http://www.cnblogs.com/zjb0823/p/3806333.html
-
-运动目标跟踪算法综述
-
-https://wenku.baidu.com/view/6554ba7402768e9951e73864.html
-
-基于粒子滤波的视频目标追踪
-
-http://www.cnblogs.com/feisky/archive/2009/11/10/1600086.html
-
-粒子滤波概述
-
-http://www.cnblogs.com/yangyangcv/archive/2010/05/23/1742263.html
-
-基于粒子滤波的物体跟踪
-
-https://www.zhihu.com/question/25371476
-
-怎样从实际场景上理解粒子滤波（Particle Filter）？
-
-http://freemind.pluskid.org/machine-learning/hmm-kalman-particle-filtering
-
-漫谈HMM：Kalman/Particle Filtering
-
-https://zhuanlan.zhihu.com/p/26783371
-
-视频跟踪算法之粒子滤波
-
-# TLD
-
-http://blog.csdn.net/zouxy09/article/details/7893011
-
-TLD（Tracking-Learning-Detection）学习与源码理解系列文章
-
-http://blog.csdn.net/carson2005/article/details/7647500
-
-比微软kinect更强的视频跟踪算法--TLD跟踪算法介绍
-
-http://www.cnblogs.com/lxy2017/p/3927456.html
-
-TLD（Tracking-Learning-Detection）一种目标跟踪算法
+谷歌普林斯顿提出首个端到端立体双目系统深度学习方案
 

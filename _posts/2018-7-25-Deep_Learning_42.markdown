@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十二）——行人重识别, 人脸识别进阶
+title:  深度学习（四十二）——行人重识别, 人脸识别进阶, 目标检测进阶
 category: DL 
 ---
 
@@ -218,25 +218,39 @@ https://mp.weixin.qq.com/s/wHIT2pm_5O4MOR_QLpHVLQ
 
 PRNet：人脸3D重建与密集对齐
 
-# 世说新语
+# 目标检测进阶
 
-## 2018.7（续）
+https://mp.weixin.qq.com/s/LtXylKTKsHdjMPw9Q1HyXA
 
-https://www.zhihu.com/question/67018316
+优于MobileNet、YOLOv2：移动设备上的实时目标检测系统Pelee
 
-老式的手操高射炮是怎么射中万米高空的敌机的？
+https://mp.weixin.qq.com/s/Gq3bflJq59Tx-nDCvbweNA
 
->Charles Stark "Doc" Draper，1901～1987，美国科学家和工程师，惯性导航之父。Stanford本科（1922）+MIT硕博（1928，1938）。美国科学院、美国工程院院士。MIT教授，他所在的实验室后来被称为Charles Stark Draper Laboratory。美国工程院设有Charles Stark Draper Prize。
+无需预训练分类器，清华&旷视提出专用于目标检测的骨干网络DetNet
 
-除了MK14瞄准具之外，Draper还设计了弹道导弹和登月飞船的惯性导航机构，为美国的航空航天事业做出了极大的贡献。
+https://mp.weixin.qq.com/s/u3eXhoFvo7vZujc0XoQQWQ
 
-----
+旷视研究院解读Light-Head R-CNN：平衡精准度和速度
 
-CVPR = Conference of Very P**r Research
+https://mp.weixin.qq.com/s/6cUP9vvfcuv8rIEnGnAFiA
 
-----
+NCSU&阿里巴巴论文：可解释的R-CNN
 
-二战初期，美国空军降落伞合格率为99.9%，这意味着每一千个就有一个出事，对于这种百万级的战略性产品而言，这非常影响士气，军方要求必须达到100%。 最后，美军想出了一个微小创新后来叫“降落伞规则”：军方不再考察合格率了，调换了一个角度改变检查质量的制度，决定在每次交货的降落伞中随机挑出一两个，让厂家最主要的负责人亲自从飞机上往跳下。 结果呢？不用你费劲猜，奇迹出现了，不合格率很快降为零。
+https://mp.weixin.qq.com/s/x0r-2J_YdYgIQlRDqvGofg
+
+CVPR 2017论文解读：用于单目图像车辆3D检测的多任务网络
+
+https://mp.weixin.qq.com/s/1vOdOMyByBacSBMVrscq5Q
+
+黄畅：基于DenesBox的目标检测在自动驾驶中的应用
+
+https://mp.weixin.qq.com/s/-PeXMU_gkcT5YnMcLoaKag
+
+CVPR清华大学研究，高效视觉目标检测框架RON
+
+https://mp.weixin.qq.com/s/AupXIoVmhcOBrX1z1vgdtw
+
+弱监督实现精确目标检测，上交大提出协同学习框架
 
 # DL参考资源
 
