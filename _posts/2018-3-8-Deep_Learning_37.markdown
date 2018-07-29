@@ -106,6 +106,10 @@ https://www.zhihu.com/question/62486208
 
 triplet loss在深度学习中主要应用在什么地方？有什么明显的优势？
 
+https://mp.weixin.qq.com/s/XB9VsW3NRwHua6AdRL3n8w
+
+Lossless Triplet Loss:一种高效的Siamese网络损失函数
+
 ## Coupled Cluster Loss
 
 论文：
@@ -171,6 +175,20 @@ SeetaFace开源人脸识别引擎介绍
 http://www.cnblogs.com/nenya33/p/6801045.html
 
 CFAN
+
+## Siamese network
+
+https://www.jianshu.com/p/92d7f6eaacf5
+
+Siamese network孪生神经网络--一个简单神奇的结构
+
+https://blog.csdn.net/sxf1061926959/article/details/54836696
+
+Siamese Network理解
+
+https://vra.github.io/2016/12/13/siamese-caffe/
+
+Caffe中的Siamese网络
 
 ## 人脸年龄识别
 

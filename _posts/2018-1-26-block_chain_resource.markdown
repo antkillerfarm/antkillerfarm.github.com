@@ -372,26 +372,7 @@ https://mp.weixin.qq.com/s/fEkZwnyaK4TM-_1UWdfhXw
 
 雷达方程
 
-# Roy Vagelos & Merck
+https://mp.weixin.qq.com/s/4q0LujqRyR-5VuirwbZhSw
 
-1989年，在默克公司总裁Roy Vagelos的主导下，乙肝疫苗生产技术被以极低的价格送给中国人民。他说，预防医学是最好的医学，对付传染性疾病的最好方法是预防它。
+便携式雷达的天线设计
 
-2017年12月，在纽约的采访中，Vagelos先生说，在这次谈判中做最后决策时，自己受到公司前总裁George W. Merck（1894.3-1957.11）在几十年前的一个善举的影响——将默克公司治疗肺结核的药物链霉素免专利费转让日本。
-
-Merck不仅是老牌的全世界十大药厂之一，而且是原创新药第一的公司。目前全世界有4300多个生物制药企业，大部分没有发明过任何创新性药物，大部分生存期都低于20年。Merck不仅生存期非常长，而且是所有药厂原创药物最多的企业，非常强调原创性科学。
-
-它用Vagelos时，后者只做过研究、担任过大学的系主任，却立马领导大药厂的研发，当时Vagelos本人都感到奇怪。Merck告诉他，我们就是要你的原创，不在乎你没有药厂经验。Vagelos没有辜负期望，带领Merck通过原创性药物造福人类。
-
-Roy and Diana Vagelos Education Center, Columbia University Medical Center.
-
-应当永远铭记，药物是为人类而生产，不是为追求利润而制造的。只要坚守这一信念，利润必将随之而来。---George W. Merck
-
-默克集团（Merck KGaA）创建于1668年，拥有约350年历史，总部位于德国达姆施塔特市（Darmstadt）。1917年，在美国的子公司（Merck & Co）由于一战的原因被没收，并从此独立。后者于1953年和Sharp & Dohme合并，因此在美国与加拿大称为默克（Merck），在其他地区称为默沙东（MSD）。本文的Merck实际上是MSD。
-
-http://news.163.com/18/0406/17/DENPP5U40001899N.html
-
-罗伊·瓦杰洛斯博士的礼物:为了一个没有乙肝的中国
-
-https://zhuanlan.zhihu.com/p/37832750
-
-阿维菌素的发现：2015年诺贝尔奖之虚实真假

@@ -146,6 +146,10 @@ https://zhuanlan.zhihu.com/p/25999669
 
 BOW算法，被CNN打爆之前的王者
 
+https://mp.weixin.qq.com/s/Sda94q-40goiZGSYGgm_Yw
+
+基于内容的图像检索技术综述-传统经典方法
+
 ## SPM
 
 http://blog.csdn.net/chlele0105/article/details/16972695

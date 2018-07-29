@@ -212,6 +212,10 @@ https://mp.weixin.qq.com/s/_Sds7O1wonVARKkb7qscww
 
 腾讯：机器学习构建通用的数据异常检测平台
 
+https://mp.weixin.qq.com/s/UcMPIf6ZRAhPjn79H2n1ig
+
+异常点检测算法小结
+
 # 自适应滤波器
 
 《自适应滤波器原理（Adaptive Filter Theory）》，Simon Haykin著。

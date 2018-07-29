@@ -328,3 +328,7 @@ https://mp.weixin.qq.com/s/d-fIQwMxHXTJvFWQUKHAvw
 
 我用5000万组数据分析了“猜画小歌”
 
+https://zhuanlan.zhihu.com/p/40785841
+
+6个推荐系统开放公共数据集整理分享
+

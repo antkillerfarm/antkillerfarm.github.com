@@ -4,138 +4,6 @@ title:  DL参考资源（五）
 category: resource 
 ---
 
-## 贝叶斯学习
-
-https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og
-
-贝叶斯学习与未来人工智能
-
-https://mp.weixin.qq.com/s/Zd4rFU7Lebr4zmzxThNyVw
-
-详解珠算：清华大学开源的贝叶斯深度学习库
-
-https://mp.weixin.qq.com/s/RpaOrngeXTKycLb3iCygZw
-
-利用贝叶斯神经网络进行随机动力系统中的学习与策略搜索
-
-https://mp.weixin.qq.com/s/lKm_ypn5I7tSjoQHceJ0jQ
-
-概率编程：使用贝叶斯神经网络预测金融市场价格
-
-https://mp.weixin.qq.com/s/cDqxmRVQCIqdM5oiUh82YQ
-
-Yee Whye Teh：《贝叶斯深度学习与深度贝叶斯学习》
-
-## 元学习
-
-https://mp.weixin.qq.com/s/KKK3VEpwL90g6Aro8qtXxQ
-
-学习如何学习的算法：简述元学习研究方向现状
-
-https://mp.weixin.qq.com/s/KtO3OTZ-bZ6m0ZSI6jTyjw
-
-OpenAI提出Reptile：可扩展的元学习算法
-
-https://mp.weixin.qq.com/s/T4GiL9vW7ALOzWloE_QQBA
-
-OpenAI开发可拓展元学习算法Reptile，能快速学习
-
-https://mp.weixin.qq.com/s/MWcoGsQJg1GBbSqzyPD9uQ
-
-基于梯度的元学习算法，可高效适应非平稳环境
-
-https://zhuanlan.zhihu.com/p/35695477
-
-基于Meta Learning在动态竞争环境中实现策略自适应
-
-https://mp.weixin.qq.com/s/AhadWUjtgsFmb8uTylTvqg
-
-OpenAI提出新型元学习方法EPG，调整损失函数实现新任务上的快速训练
-
-https://mp.weixin.qq.com/s/dmRdp2oMn0vGukclJSVZDg
-
-Uber AI论文：利用反向传播训练可塑神经网络，生物启发的元学习范式
-
-https://mp.weixin.qq.com/s/Cc4EHc6ei-PtZWhewM10xw
-
-学习如何学习的算法：简述元学习研究方向现状
-
-https://mp.weixin.qq.com/s/4f6-gXovdrYk7240TrUwJg
-
-谷歌大脑：基于元学习的无监督学习更新规则
-
-https://mp.weixin.qq.com/s/cAbMB-DB9vu2ua8t5J28ww
-
-从零开始，了解元学习
-
-https://mp.weixin.qq.com/s/Q36vpS1HF2IfeCsFLh656A
-
-基于元强化学习的神经科学新理论
-
-https://mp.weixin.qq.com/s/XtzvHOk7CdXRBy02kUmgsg
-
-近期爆火的Meta Learning，遗传算法与深度学习的火花，再不了解你就out了
-
-https://mp.weixin.qq.com/s/KvgYyuyICueNQPo_S27fEA
-
-BAIR展示新型模仿学习，学会像人那样执行任务
-
-## gcForest
-
-http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw
-
-周志华教授gcForest（多粒度级联森林）算法预测股指期货涨跌
-
-https://mp.weixin.qq.com/s/GU9-rH0gFan620Jhc1HTDg
-
-周志华提出的gcForest能否取代深度神经网络？
-
-https://mp.weixin.qq.com/s/dEmox_pi6KGXwFoevbv14Q
-
-周志华：首个基于森林的自编码器，性能优于DNN
-
-http://mp.weixin.qq.com/s/IfEgSOIkIPA-YtC9NQW1ng
-
-非神经网络的深度模型gcForest
-
-https://mp.weixin.qq.com/s/N80l9PZQposbIOKXbv8ayw
-
-周志华：最新实验表明gcForest已经是最好的非深度神经网络方法
-
-https://mp.weixin.qq.com/s/8QP5X9Hxi_6qyfxP4O0Gwg
-
-周志华团队和蚂蚁金服合作：用分布式深度森林算法检测套现欺诈
-
-https://mp.weixin.qq.com/s/bE9BZQ6wCICvrgomdySDuw
-
-周志华组提出可做表征学习的多层梯度提升决策树
-
-## 深度ISP
-
-https://mp.weixin.qq.com/s/wA85XFQXeypuoqFnmN2P4g
-
-降噪的新时代
-
-https://mp.weixin.qq.com/s/919VEvennHEG3iXKkMZoQQ
-
-不止是去噪---从去噪看AI ISP的趋势
-
-https://mp.weixin.qq.com/s/1HA6XKnWpqVd8k7IIfzB7w
-
-利用卷积自编码器对图片进行降噪
-
-https://zhuanlan.zhihu.com/p/39512000
-
-Noise2Noise：图像降噪，无需干净样本
-
-https://mp.weixin.qq.com/s/_tvOQPvybqmvLF19kHcbFg
-
-北大开源ECCV2018深度去雨算法：RESCAN
-
-https://mp.weixin.qq.com/s/Wdxkvlz4nLbJS_gWqHwMjw
-
-无需额外硬件，全卷积网络让机器学习学会夜视能力
-
 # DL参考资源
 
 https://mp.weixin.qq.com/s/ZV32xDgGTriIAUbHohc90Q
@@ -405,3 +273,79 @@ https://mp.weixin.qq.com/s/TelGG-uVQyxwQjiDGE1pqA
 https://mp.weixin.qq.com/s/6KC1vhKcyqQ0eZEXJyPqVA
 
 密集连接卷积网络
+
+https://mp.weixin.qq.com/s/4dlWdPOCbYedu02aLAQ04Q
+
+MIT“创世纪”机器学习新系统，自动生成补丁修复Bug
+
+http://mp.weixin.qq.com/s/rS4xCsytYGqBLMUzlyA12A
+
+构建多层感知器神经网络对数字图片进行文本识别
+
+https://mp.weixin.qq.com/s/zv264-dqDQYRkYmjX_QZpQ
+
+郑宇解读地理传感器时间序列预测问题
+
+https://mp.weixin.qq.com/s/cr0BJLkyN2kW35-w1pebGQ
+
+学习在黑暗中看世界（Learning to See in the Dark）
+
+https://mp.weixin.qq.com/s/zWoQCKbZNz2td3cZxEsqKQ
+
+腾讯优图提出SRN-DeblurNet：高效高质量去除复杂图像模糊
+
+https://mp.weixin.qq.com/s/uUMPUdG2TI10W5RumPaXkA
+
+DeepMind无监督表示学习重大突破：语音、图像、文本、强化学习全能冠军！
+
+https://mp.weixin.qq.com/s/ESX-V5oMk35NhP7MKu_d0A
+
+美剧《硅谷》深度学习APP获艾美奖提名：使用TensorFlow和GPU开发
+
+https://mp.weixin.qq.com/s/2FKgCmQ8i58XamT_plrl1w
+
+深度神经网络为什么不易过拟合？傅里叶分析发现固有频谱偏差
+
+https://mp.weixin.qq.com/s/ora66weNks8tHlFTKJrKSA
+
+谷歌AI自动重构3D大脑，最高精度绘制神经元
+
+https://mp.weixin.qq.com/s/WXVZkqCGlj6ym5YrSZS3Vg
+
+谷歌普林斯顿提出首个端到端立体双目系统深度学习方案
+
+https://mp.weixin.qq.com/s/54twfwVlM7UQbrFvOAQ2_w
+
+fine-gained image classification
+
+https://mp.weixin.qq.com/s/4mHIM51e9prKvp1xQIDnTA
+
+DeepMind提出对比预测编码，通过预测未来学习高级表征
+
+https://github.com/Alibaba-Technology/hangzhouYunQi2017ppt
+
+2017杭州云栖大会精华PPT
+
+https://mp.weixin.qq.com/s/Opnf5GBxoUqznWuYBb8xaA
+
+清华唐杰AMiner团队全球H-index Top 10000学者半世纪迁移图
+
+https://mp.weixin.qq.com/s/ulLh_JfLa9Os3ZFFAWVETA
+
+谷歌大脑最新研究：高斯过程“超越”随机梯度下降！
+
+https://mp.weixin.qq.com/s/DsmjjfInV_yPFWB2oSq-dA
+
+取代学习率衰减的新方法：谷歌大脑提出增加Batch Size
+
+https://mp.weixin.qq.com/s/PsIa3XDFqZlY2tKcvqvddw
+
+Training RNNs as Fast as CNNs
+
+https://mp.weixin.qq.com/s/vUK2NneOs8OR0vcJEZNbrA
+
+田渊栋等人论文：何时卷积滤波器容易学习？
+
+https://mp.weixin.qq.com/s/HP8KLbo26W5UscCGavKDRw
+
+IBM Watson提出人机推理网络HuMaINs，结合人机两者优势

@@ -286,3 +286,7 @@ http://blog.csdn.net/u014380165/article/details/78006626
 
 SENet（Squeeze-and-Excitation Networks）算法笔记
 
+https://mp.weixin.qq.com/s/tceLrEalafgL8R44DZYP9g
+
+旷视科技提出新型轻量架构ShuffleNet V2：从理论复杂度到实用设计准则
+

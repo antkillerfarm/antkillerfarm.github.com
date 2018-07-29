@@ -352,6 +352,10 @@ https://mp.weixin.qq.com/s/ddR7dwwBZnu3knKmfDWjCg
 
 115页Slides带你领略深度生成模型（Deep Generative Model）全貌
 
+https://mp.weixin.qq.com/s/DSHuCNQWKN3pLozZ8i16hQ
+
+卡成PPT不开心？GAN也能生成流畅的连续表情了
+
 # Spiking Neuron Networks
 
 除了基于BP算法的NN之外，Spiking Neuron Networks也是一大类NN。Spiking NN和人脑结构更相似，功耗也更小，但是相关训练和数据量化的算法尚不成熟，属于潜力股。

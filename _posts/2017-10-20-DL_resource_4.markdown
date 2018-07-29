@@ -6,341 +6,364 @@ category: resource
 
 # DL参考资源
 
-## AI与游戏
+## 实战
 
-https://zhuanlan.zhihu.com/p/22604627
+http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg
 
-AI玩FPS游戏
+GitHub最受欢迎深度学习项目Top 20
 
-http://www.biologic.com.au/bugbrain/
+https://mp.weixin.qq.com/s/WNJD8ZjnSVsE91H8Hks4vA
 
-BugBrain是一个神经网络相关的益智游戏。
+手把手教你从零搭建深度学习项目
 
-https://mp.weixin.qq.com/s/zbki0baZw-NjAgZwKcfgFg
+https://mp.weixin.qq.com/s/Shz6BmsOrtbEFtoJRSkl9A
 
-《星际争霸》与人工智能
+简单车牌检测
 
-https://mp.weixin.qq.com/s/xnbNkKOomwvwYC_ThKPJ_g
+https://mp.weixin.qq.com/s/QjoxqCpN5JDroBowWmVk1Q
 
-田渊栋报告：游戏中的人工智能：成就与挑战
+边玩边入门深度学习，我们帮你找了10个简易应用demo
 
-https://mp.weixin.qq.com/s/napcf9UDwTVmUXV7BBzdaw
+https://mp.weixin.qq.com/s/8TALhdJqyR9WJOz2RjENBw
 
-田渊栋：深度学习如何进行游戏推理？
+生产级深度学习的开发经验分享：数据集的构建和提升是关键
 
-https://mp.weixin.qq.com/s/5Vg9RFvyNv6T7QkIfPm1aQ
+http://mp.weixin.qq.com/s/G4lQqiiVvmCW9SmX2blDEg
 
-DOTA2中打败Dendi的AI如何炼出？
+实战——目标检测与识别
 
-https://mp.weixin.qq.com/s/Jdd7S6JFKRdsVe2w-W01IA
+https://mp.weixin.qq.com/s/KoRXcV-ujIT-5eO4RUkWYw
 
-Facebook田渊栋开源游戏平台ELF，简化版《星际争霸》完美测试人工智能
+基于TensorFlow和OpenCV实现文档检测功能！
 
-https://mp.weixin.qq.com/s/QD6BdAB332xHoSH3dIfM5Q
+https://mp.weixin.qq.com/s/ObIYpiH7MLZEi5XzXdGBYg
 
-学习顶级玩家Replay，人工智能学会了星际争霸的“大局观”
+10大深度学习架构
 
-https://mp.weixin.qq.com/s/0Q-Kg6pNVRl3tqv8-wH-bg
+https://mp.weixin.qq.com/s/-39_7SbRFChDOOpcpJjVMQ
 
-Facebook开源史上最大星际争霸AI研究数据集
+如何在浏览器使用synaptic.js训练简单的神经网络推荐系统
 
-https://mp.weixin.qq.com/s/KbFvs8EcEfm29zhLCPt0Iw
+https://mp.weixin.qq.com/s/ZG_PShoIys6oiPBEN7Pwuw
 
-DeepMind进军星际争霸2，谷歌Facebook打响通用AI战争
+无需基础知识，使用JavaScript构建你的第一个神经网络
 
-https://mp.weixin.qq.com/s/WTRD3wRQ_wSXjjlt7jiwSg
+https://mp.weixin.qq.com/s/iwPI8g2JwabwiCO8kfw8Hw
 
-CommandCenter：基于暴雪官方API的星际争霸2 AI Bot
+用开源工具DIY车牌识别系统
 
-https://mp.weixin.qq.com/s/cCnSvD5oEWZSu48Oyec-Kg
+https://mp.weixin.qq.com/s/ObIYpiH7MLZEi5XzXdGBYg
 
-从FPS到RTS，一文概述游戏人工智能中的深度学习算法
+从TensorFlow到PyTorch：九大深度学习框架哪款最适合你？
 
-https://mp.weixin.qq.com/s/CQmZcwI4bgrEiWHP0gBLfQ
+https://mp.weixin.qq.com/s/bU541QHjC4grICDjnTSYDA
 
-DeepMind星际争霸2开源机器学习平台入门
+10大深度学习框架实验对比
 
-https://zhuanlan.zhihu.com/p/28434323
+https://mp.weixin.qq.com/s/Ez9zn6HN4tX_QFpGDWs_rA
 
-迈向通用人工智能：星际争霸2人工智能研究环境SC2LE完全入门指南
+30行JavaScript代码，教你分分钟创建神经网络
 
-https://zhuanlan.zhihu.com/p/29246185
+https://zhuanlan.zhihu.com/p/26078299
 
-重现DeepMind星际争霸强化学习算法
+使用深度学习来破解captcha验证码
 
-https://mp.weixin.qq.com/s/SAp0alFSLKN1CHX0_vdTjg
+https://mp.weixin.qq.com/s/dY5r_KJVkpipluo7ji9H6w
 
-扑克AI对抗人类30年历史，解密冷扑大师前世今生
+如何用“摄像头秒解数独”
 
-https://mp.weixin.qq.com/s/mmMrGy3ggwVid_NxfpEA7Q
+https://mp.weixin.qq.com/s/HTj9OozYdq_VLJuGKaiEAg
 
-冷扑大师发明人：用于策略推理的超人AI
+百行代码构建神经网络黑白图片自动上色系统
 
-https://mp.weixin.qq.com/s/zExzGJ-QMldHIi71jKnq_Q
+https://mp.weixin.qq.com/s/hbvM64QPT1mKQZey6Kauww
 
-CMU“冷扑大师”不完美信息博弈研究获奖
+图像算法在电商大促中的应用浅析
 
-https://mp.weixin.qq.com/s/VLLF37J1hUnIMd2Yy1fS2w
+https://mp.weixin.qq.com/s/10nLPqBgQ1XJAP8jXqFU0g
 
-Libratus如何在双人无限注德扑中击败人类顶级选手
+讲解Vision图像识别框架API详解
 
-https://mp.weixin.qq.com/s/WMDbCdrX_3W22Qfh_joB-A
+https://mp.weixin.qq.com/s/MK_al7CgieiVXB1MGWZ9GA
 
-一文读懂人工智能打德扑
+听说你用JavaScript写代码？本文是你的机器学习指南
 
-https://mp.weixin.qq.com/s/x0G-LNCano7qjGdpj-fpCQ
+https://mp.weixin.qq.com/s/C2Gn8NSZe4u5uZsCeLnfVQ
 
-2017年度星际争霸AI竞赛结果出炉
+22分钟直冲Kaggle竞赛第二名！一文教你做到
 
-https://mp.weixin.qq.com/s/AndV-htPeTXlpAm1GONNtA
+https://mp.weixin.qq.com/s/JRfZIH6YikmW2og9Sn0hQg
 
-中科院开源星际争霸2宏观运营研究数据集MSC
+如何快速训练免费的文本生成神经网络
 
-https://mp.weixin.qq.com/s/0OlKixcT20wao4xkWa6M5A
+https://mp.weixin.qq.com/s/qussbqTKjLI23xNxJ2eRPw
 
-超越蒙特卡洛树搜索：北大提出深度交替网络和长期评估围棋模型
+手把手教你训练一个秒杀科比的投篮AI，不服来练
 
-https://mp.weixin.qq.com/s/2b82VzQ2dJF9kWg-FfMelQ
+## 工具
 
-人工智能在《LOL&王者荣耀》游戏中的角色
+https://mp.weixin.qq.com/s/TT4whft1Tj1pCEPbnMH1cA
 
-https://mp.weixin.qq.com/s/c160AUDdgw37L1XruPoZ-w
+清华大学发布OpenNE：用于网络嵌入的开源工具包
 
-电竞数据化：英雄联盟总决赛也靠它！
+https://mp.weixin.qq.com/s/r01vfSKb4VpFXVyokb54Bg
 
-https://zhuanlan.zhihu.com/p/29222384
+MIT开放图像标注工具LabelMe源代码：助力机器视觉的发展
 
-sc2-101: 第一个rule-base的星际二agent
+https://mp.weixin.qq.com/s/30dK7nGJOWIaa1j9QElrYA
 
-https://mp.weixin.qq.com/s/rmi5ulyLdRIw11sKDxPYvQ
+详解帝国理工集成工具TensorLayer：控制深度学习开发复杂度
 
-学会了玩街霸2的AI，你怕不怕？
+https://mp.weixin.qq.com/s/m_2LE2QN_8_a1hti6G0Cow
 
-https://mp.weixin.qq.com/s/Wqy-GeXpW8s0j7m5OYpcDA
+Netflix开源稀疏数据专用神经网络库：Vectorflow
 
-过去十年，我们用了哪些即时战略游戏训练AI？
+https://mp.weixin.qq.com/s/bMfJ1Ez6bOBjHLquuZFnmQ
 
-https://mp.weixin.qq.com/s/ma2SgFuNYu50oexnfBYYLw
+Uber与斯坦福大学开源深度概率编程语言Pyro：基于PyTorch
 
-用AI打王者荣耀？认真谈谈强化学习的价值
+https://mp.weixin.qq.com/s/ImtSR6VwYalN6gTgjVJOsQ
 
-https://mp.weixin.qq.com/s/28r1deIM2-eDOpX29QWLfw
+十五分钟完成Regex五天任务：FlashText，语料库数据快速清理利器
 
-AI真的会杀人？DeepMind开发了二维网格游戏来做测试
+https://mp.weixin.qq.com/s/IKxweABi4IEyXjKNw9BJgA
 
-https://mp.weixin.qq.com/s/jbzkq6UHsTu18fdGJzDxMw
+正则表达式太慢？这里有一个提速100倍的方案：FlashText
 
-你也可以成为游戏高手，Facebook FAIR实验室田渊栋研究员PPT详解
+https://mp.weixin.qq.com/s/dsxyQLHcOsNIlNAIf8FQfw
 
-https://mp.weixin.qq.com/s/xhvwha-N7XQdWQk_9lV4jg
+Facebook开源相似性搜索类库Faiss，超越已知最快算法8.5倍
 
-最擅长玩《毁灭战士》的AI开源了：来自CMU的论文&代码
+https://mp.weixin.qq.com/s/3r8c63BOiiYfts9KLkXovw
 
-https://mp.weixin.qq.com/s/QoQprj77xcvgeFSkQD2vKw
+谷歌发布自然语言框架语义解析器SLING
 
-AI玩微信跳一跳的正确姿势：跳一跳Auto-Jump算法详解
+https://mp.weixin.qq.com/s/jTXoCaXEhPPVNcJiyjtN5Q
 
-https://zhuanlan.zhihu.com/p/32819519
+谷歌宣布对外开放聊天机器人数据分析平台Chatbase
 
-AI玩跳一跳的终极奥义：首个端到端神经网络，看AI在玩游戏时注意什么
+https://mp.weixin.qq.com/s/MhLissrrNw5fJP6I7cxFNA
 
-https://mp.weixin.qq.com/s/wakcCF81Ew0q4km29mjIrQ
+360推出XLearning：可支持多种机器学习，深度学习框架调度系统！
 
-DeepMind发布Nature论文: 博弈网络让智能体成为游戏大咖
+https://mp.weixin.qq.com/s/ZFtUOtb8mxa11zBHYbza9A
 
-https://mp.weixin.qq.com/s/jBaxkJMQ_6RwtMmY7U29-w
+动态神经网络工具包Dynet
 
-一样的打游戏，不一样的酷
+https://mp.weixin.qq.com/s/KKy0EBVwrdAgqeG07H9vjg
 
-https://mp.weixin.qq.com/s/sYXVqnk5p8tvl6s0EIkr3w
+中科院发布：深度文本匹配开源工具（MatchZoo）
 
-游戏代理框架，帮助您创建AI来玩任何您拥有的游戏！
+https://mp.weixin.qq.com/s/CetbsnDNQiyaV7grWGgJCg
 
-https://mp.weixin.qq.com/s/IFGUXI3YXVsjIVuJ717uaw
+谷歌发布机器学习工具库Kubeflow：可提供最佳OSS解决方案
 
-用人工智能打王者荣耀：匹茨堡大学&腾讯AI Lab为游戏AI引入MCTS方法
+https://mp.weixin.qq.com/s/3n6HrpIqSbOKZ-ysTcOTWA
 
-https://mp.weixin.qq.com/s/Mp_thK_zTMOX0p5oSZOIQw
+GitHub新项目Deepo：一键安装11项深度学习框架与环境（基于docker）
 
-一台笔记本打败超算：CMU冷扑大师团队提出全新德扑AI Modicum
+https://mp.weixin.qq.com/s/VsJh1Er02lIGZap4QUy6eA
 
-https://mp.weixin.qq.com/s/IVo28uAL4RQEKCF_j30QMA
+PyTorch实现的神经网络翻译框架——机器翻译工具包nmtpytorch
 
-备战世界杯！先用深度学习与强化学习踢场FIFA 18
+https://mp.weixin.qq.com/s/VBmKPBxWtknWMjLCWcoGjA
 
-https://mp.weixin.qq.com/s/Bl1iFTzqeWwR1fIiIDrOlw
+如何用Docker成为更高效的数据科学家？
 
-Kaggle 20G数据集强势分析“绝地求生”，科学吃鸡攻略拿走不谢！
+https://mp.weixin.qq.com/s/DxNtgyuNzNqpbZ_9k8uflQ
 
-https://mp.weixin.qq.com/s/_tEqbOfe0GyBnUo1leOOkA
+谷歌开源机器学习可视化工具Facets：从全新角度观察数据
 
-分离特征抽取与决策制定，如何用6-18个神经元玩转Atari游戏
+https://mp.weixin.qq.com/s/wFfKcwLu6fmnIn-r_QL7Lw
 
-https://mp.weixin.qq.com/s/6PJYGuJTUXF_Ht_wF1swmA
+完全云端运行：使用谷歌CoLaboratory训练神经网络
 
-英雄联盟如何指挥团战？AI帮你做决策
+https://mp.weixin.qq.com/s/-3Gmmk28anznxtg1TWrluw
 
-## 并行 & 框架
+Parris：机器学习算法自动化训练工具
 
-https://zhuanlan.zhihu.com/p/26552293
+https://mp.weixin.qq.com/s/5ScRIl2MHNGaUyIEJJKnKw
 
-Dataflow架构和神经网络加速器
+DeepMind开源强化学习研究环境Control Suite
 
-https://zhuanlan.zhihu.com/p/28445511
+https://mp.weixin.qq.com/s/ven_4JbWYFswIkGyhjTcww
 
-浅析深度学习框架设计中的关键技术
+Prophet：教你如何用加法模型探索时间序列数据
 
-https://mp.weixin.qq.com/s/B4aQp_0YvS0jyUHNLQ5rRA
+https://mp.weixin.qq.com/s/9-svsjeSFyUeM8IYphSsgw
 
-IBM发布新型分布式深度学习系统：结合软硬件实现当前最优性能
+Darkon：可更好理解深度学习模型的开源工具包
 
-http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks
+https://mp.weixin.qq.com/s/JW4QXHzuCkYNV6Y_k3bsFw
 
-神经网络的分布式训练
+整合全部顶尖目标检测算法：FAIR开源Detectron
 
-https://mp.weixin.qq.com/s/IE6blClvhYlq3-QAGHo5ww
+https://mp.weixin.qq.com/s/kL1bhjdTc1wyYEL4KJqDpg
 
-TensorFlow分布式计算机制解读：以数据并行为重
+Detectron精读系列之一：学习率的调节和踩坑
 
-https://mp.weixin.qq.com/s/7JGLm-hkCZBNDLA98qvWNA
+http://mp.weixin.qq.com/s/TByhSlSbVU5oHqLTLIJgwA
 
-自动生成硬件优化内核：陈天奇等人发布深度学习编译器TVM
+NiftyNet：开源的卷积神经网络和医疗影像分析平台
 
-https://mp.weixin.qq.com/s/4Ii3um3jqfm5yKKxZAFdmA
+https://mp.weixin.qq.com/s/TvKUa4DSzPb0ASubGadwEA
 
-继1小时训练ImageNet之后，大批量训练扩展到了3万2千个样本
+上交大推出Texygen：文本生成模型的基准测试平台
 
-https://mp.weixin.qq.com/s/kOCftzSbHe2mvDmlRp-ihA
+https://mp.weixin.qq.com/s/EfqE3wbPRDffQKXTG4tdkQ
 
-Jeff Dean：AI对计算机系统设计的影响
+用好这几款炼丹利器，调参从此得心应手
 
-https://mp.weixin.qq.com/s/XjNPaL6PC9LHX1PEGn5UZg
+https://mp.weixin.qq.com/s/2GEcD5kzqBtpPdXkhxksNw
 
-微软实时AI系统“脑波计划”有多牛？看完秒懂！
+Facebook发布Tensor Comprehensions：自动编译高性能机器学习核心的C++库 
 
-https://mp.weixin.qq.com/s/OkqUulFYHQSdgAbf9Fi9LA
+https://mp.weixin.qq.com/s/Rutl-aVbxTu39J0vWHbz-w
 
-CoCoA：大规模机器学习的分布式优化通用框架
+Keras作者力推开源框架Lore：15分钟搞定深度学习模型从配置到部署
 
-https://mp.weixin.qq.com/s/ToIDncp9dS_qk47PsdZm5A
+https://mp.weixin.qq.com/s/TZQcN8rYSc2tH8C1UvyF4g
 
-杜克大学：分布式深度学习训练算法TernGrad
+从预处理到部署：如何使用Lore快速构建机器学习模型
 
-https://mp.weixin.qq.com/s/rhtrN2qDspGkpJYDAVSX7w
+https://mp.weixin.qq.com/s/7g81BnGAD5DpS_1pDxA6QQ
 
-UC Berkeley展示全新并行处理方法
+Uber开源神经进化算法开发的交互式可视化工具VINE
 
-https://mp.weixin.qq.com/s/ASqpPSIgW_bcFPBfRYz7Xg
+https://mp.weixin.qq.com/s/b6wIxn1faieAR2ioU-UxTQ
 
-哈佛大学提出在云、边缘与终端设备上的分布式深度神经网络DDNN
+IBM全新机器学习库SnapML：训练提速46倍，40亿样本仅需91.5秒
 
-http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
+https://mp.weixin.qq.com/s/SUz2aqz9VM3xnvKUL80y1w
 
-《Large Scale Distributed Deep Networks》中译文
+IBM、哈佛联合提出Seq2Seq-Vis：机器翻译模型的可视化调试工具
 
-https://mp.weixin.qq.com/s/X7XG51yohLnEZ_Jg6XK9oQ
+https://mp.weixin.qq.com/s/FXWhnmelkjkrSBo-zVpBLw
 
-Caffe作者贾扬清教你怎样打造更加优秀的深度学习架构
+可视化工具Yellowbrick：超参与行为的可视化带来更优秀的实现
 
-https://mp.weixin.qq.com/s/_mrYI7McMBUx0lEh4rNiYQ
+https://mp.weixin.qq.com/s/f3pRA_lyT5jfzWimy6CleA
 
-百度开源移动端深度学习框架MDL，手机部署CNN支持iOS GPU
+TensorEditor：一个小白都能快速玩转的神经网络搭建工具
 
-https://mp.weixin.qq.com/s/qOjGrR59Mf0Mzgh4bpDhrA
+https://mp.weixin.qq.com/s/PD13jQ_00QJ-VOUM8Zm21g
 
-详解Horovod：Uber开源的TensorFlow分布式深度学习框架
+深度学习图像标注工具汇总
 
-https://mp.weixin.qq.com/s/ZCNSq5FC2REoVTKAK2mJQg
+https://mp.weixin.qq.com/s/KxeIeVzyhfFCRfqxF4mduA
 
-分布式深度学习原理、算法详细介绍
+当深度学习遇见大数据：一文概览BDL学习框架
 
-https://mp.weixin.qq.com/s/Ewiil56vMkzhO2xDWgo-Wg
+https://mp.weixin.qq.com/s/K7m7IGwD2Y_ffP9OvMFPMA
 
-苹果发布Turi Create机器学习框架，5行代码开发图像识别
+TensorFlow推出新工具Seedbank：即刻使用的预训练模型库
 
-https://mp.weixin.qq.com/s/jOVUPhrCBI9W9vPvD9eKYg
+https://mp.weixin.qq.com/s/4mZjdFL68V_OXKCkZ72KrQ
 
-UC Berkeley提出新型分布式框架Ray：实时动态学习的开端
+谷歌BigQuery ML正式上岗，只会用SQL也能玩转机器学习！
 
-https://mp.weixin.qq.com/s/r951Iasr4dke6MPHsUO0TA
+## 贝叶斯学习
 
-开源DAWN，Stanford的又一力作
+https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og
 
-https://mp.weixin.qq.com/s/2jrMDeMcb47zpPfFLEcnIA
+贝叶斯学习与未来人工智能
 
-深度学习平台技术演进
+https://mp.weixin.qq.com/s/Zd4rFU7Lebr4zmzxThNyVw
 
-https://mp.weixin.qq.com/s/L4CMKS53pNyvhhqvQhja0g
+详解珠算：清华大学开源的贝叶斯深度学习库
 
-5种商业AI产品的技术架构设计
+https://mp.weixin.qq.com/s/RpaOrngeXTKycLb3iCygZw
 
-https://mp.weixin.qq.com/s/IqjKdAlGYREqCR9XQB5N1A
+利用贝叶斯神经网络进行随机动力系统中的学习与策略搜索
 
-伯克利AI分布式框架Ray，兼容TensorFlow、PyTorch与MXNet
+https://mp.weixin.qq.com/s/lKm_ypn5I7tSjoQHceJ0jQ
 
-https://mp.weixin.qq.com/s/aNX_8UDYI_0u-MwMTYeqdQ
+概率编程：使用贝叶斯神经网络预测金融市场价格
 
-开发易、通用难，深度学习框架何时才能飞入寻常百姓家？
+https://mp.weixin.qq.com/s/cDqxmRVQCIqdM5oiUh82YQ
 
-https://mp.weixin.qq.com/s/UbAHB-uEIvqYZCB7xIAJTg
+Yee Whye Teh：《贝叶斯深度学习与深度贝叶斯学习》
 
-机器学习新框架Propel：使用JavaScript做可微分编程
+## 元学习
 
-https://mp.weixin.qq.com/s/_-z2d1GE_3FElzAwPyJZ8A
+https://mp.weixin.qq.com/s/KKK3VEpwL90g6Aro8qtXxQ
 
-十大流行AI框架和库的优缺点比较
+学习如何学习的算法：简述元学习研究方向现状
 
-https://mp.weixin.qq.com/s/7nugWFKtD-C6cpwm2TyvdQ
+https://mp.weixin.qq.com/s/KtO3OTZ-bZ6m0ZSI6jTyjw
 
-手把手教你如何部署深度学习模型
+OpenAI提出Reptile：可扩展的元学习算法
 
-https://mp.weixin.qq.com/s/Ctl65r4iZNEOBxiiX2I2eQ
+https://mp.weixin.qq.com/s/T4GiL9vW7ALOzWloE_QQBA
 
-Momenta王晋玮：让深度学习更高效运行的两个视角
+OpenAI开发可拓展元学习算法Reptile，能快速学习
 
-https://mp.weixin.qq.com/s/irvBbPKENiZX9G_6wh5c-Q
+https://mp.weixin.qq.com/s/MWcoGsQJg1GBbSqzyPD9uQ
 
-陈天奇等人提出TVM：深度学习自动优化代码生成器
+基于梯度的元学习算法，可高效适应非平稳环境
 
-https://mp.weixin.qq.com/s/28n8g_epHsYB0I9GVc_lww
+https://zhuanlan.zhihu.com/p/35695477
 
-陈天奇团队TVM重磅更新：直接在浏览器使用GPU
+基于Meta Learning在动态竞争环境中实现策略自适应
 
-https://mp.weixin.qq.com/s/UxN9ZRmKLN30s7uPqMpHPQ
+https://mp.weixin.qq.com/s/AhadWUjtgsFmb8uTylTvqg
 
-Jeff Dean等提出动态控制流编程模型，大规模机器学习性能提升21%
+OpenAI提出新型元学习方法EPG，调整损失函数实现新任务上的快速训练
 
-https://mp.weixin.qq.com/s/fx0Pfu0MOPjSkzi5mL6U_A
+https://mp.weixin.qq.com/s/dmRdp2oMn0vGukclJSVZDg
 
-清华&斯坦福提出深度梯度压缩DGC，大幅降低分布式训练网络带宽需求
+Uber AI论文：利用反向传播训练可塑神经网络，生物启发的元学习范式
 
-https://mp.weixin.qq.com/s/wIdTDHEPffWqHA3_XWBLyw
+https://mp.weixin.qq.com/s/Cc4EHc6ei-PtZWhewM10xw
 
-没错，纯SQL查询语句可以实现神经网络。
+学习如何学习的算法：简述元学习研究方向现状
 
->SQL跑神经网络固然没有太大意义，然而分布式数据库已经有数十年的历史，对于设计分布式深度学习框架亦有重大的启发意义。
+https://mp.weixin.qq.com/s/4f6-gXovdrYk7240TrUwJg
 
-https://zhuanlan.zhihu.com/p/33351291
+谷歌大脑：基于元学习的无监督学习更新规则
 
-基于忆阻器（ReRAM），Computing-in-Memory的DLA
+https://mp.weixin.qq.com/s/cAbMB-DB9vu2ua8t5J28ww
 
-https://mp.weixin.qq.com/s/eTwSo3GnxSnK-BwwZeWmKA
+从零开始，了解元学习
 
-Jeff Dean等提出自动化分层模型，优化CPU、GPU等异构环境，性能提升超60%
+https://mp.weixin.qq.com/s/Q36vpS1HF2IfeCsFLh656A
 
-https://mp.weixin.qq.com/s/q0VENBNgolpeWmDapF5q_g
+基于元强化学习的神经科学新理论
 
-在有池化层、1步幅的CNN上减少冗余计算，一种广泛适用的架构转换方法
+https://mp.weixin.qq.com/s/XtzvHOk7CdXRBy02kUmgsg
 
-https://mp.weixin.qq.com/s/sn8fMAbJbeT6JUbCpBpN6A
+近期爆火的Meta Learning，遗传算法与深度学习的火花，再不了解你就out了
 
-Jeff Dean与David Patterson：不思考体系结构的深度学习研究者不是好工程师
+https://mp.weixin.qq.com/s/KvgYyuyICueNQPo_S27fEA
 
-https://mp.weixin.qq.com/s/6zLrWJ4nE0bHFlVe5dMxHw
+BAIR展示新型模仿学习，学会像人那样执行任务
 
-分布式深度学习新进展：让“分布式”和“深度学习”真正深度融合
+## gcForest
 
-https://mp.weixin.qq.com/s/hjC-WTMIpbWWpmXoLBfD2g
+http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw
 
-腾讯大规模分布式机器学习系统无量是如何进行技术选型的？
+周志华教授gcForest（多粒度级联森林）算法预测股指期货涨跌
 
+https://mp.weixin.qq.com/s/GU9-rH0gFan620Jhc1HTDg
+
+周志华提出的gcForest能否取代深度神经网络？
+
+https://mp.weixin.qq.com/s/dEmox_pi6KGXwFoevbv14Q
+
+周志华：首个基于森林的自编码器，性能优于DNN
+
+http://mp.weixin.qq.com/s/IfEgSOIkIPA-YtC9NQW1ng
+
+非神经网络的深度模型gcForest
+
+https://mp.weixin.qq.com/s/N80l9PZQposbIOKXbv8ayw
+
+周志华：最新实验表明gcForest已经是最好的非深度神经网络方法
+
+https://mp.weixin.qq.com/s/8QP5X9Hxi_6qyfxP4O0Gwg
+
+周志华团队和蚂蚁金服合作：用分布式深度森林算法检测套现欺诈
+
+https://mp.weixin.qq.com/s/bE9BZQ6wCICvrgomdySDuw
+
+周志华组提出可做表征学习的多层梯度提升决策树

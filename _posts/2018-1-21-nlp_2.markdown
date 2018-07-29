@@ -112,6 +112,8 @@ https://blog.csdn.net/continueOo/article/details/72851724
 
 《Convolutional Neural Networks for Sentence Classification》：TextCNN的开山之作
 
+Semantic Role Labeling
+
 # Storm
 
 Storm是一个大数据领域的实时计算框架。

@@ -262,6 +262,10 @@ https://mp.weixin.qq.com/s/4wuYNYGDesNgsJ13y65XQA
 
 AI都可以将文字轻松转成图像
 
+https://mp.weixin.qq.com/s/TtU0R8P-YIq8JOJrgHP07w
+
+Facobook开源视觉问答VQA框架：Pythia
+
 # Multi-agent
 
 https://zhuanlan.zhihu.com/p/39037444

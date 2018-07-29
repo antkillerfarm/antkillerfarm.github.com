@@ -308,32 +308,3 @@ Fortran作为最早的高级语言（1957年），至今仍有很强的生命力
 
 2.没有指针等复杂特性。这一点既降低了上手的门槛，又对于编译器优化（尤其是现在比较流行的并行计算优化）很有好处。普通科技人员即使没有经过特殊的程序训练，也可以写出非常高效的程序。
 
-# 大数据平台参考资源
-
-https://mp.weixin.qq.com/s/syM4ReAWpZ5d4KI87ogpiQ
-
-从单一架构到分布式交易架构，网易严选的成功实践
-
-https://mp.weixin.qq.com/s/qh88sawJUZedv3X0LIRsAQ
-
-ESearch：58集团基于C++语言自主研发的搜索内核
-
-https://mp.weixin.qq.com/s/uMj3JEhgyYw4CaIhP1-GTQ
-
-阿里巴巴为什么不用ZooKeeper做服务发现？
-
-http://www.cnblogs.com/rjzheng/p/8994962.html
-
-分布式之消息队列复习精讲
-
-https://mp.weixin.qq.com/s/Mcg5rj3QrgVj3wyY4xttnQ
-
-关于商业部署机器学习，这有一篇详尽指南
-
-https://mp.weixin.qq.com/s/d7xMT1jrkwT_csC1kugw4w
-
-360数据处理平台的架构演进及优化实践
-
-https://mp.weixin.qq.com/s/Mw-bQiWURE6oBz-EwfoiiA
-
-Meteor实时计算平台架构与实践

@@ -212,6 +212,10 @@ https://zhuanlan.zhihu.com/cvpr2018
 
 CVPR 2018论文笔记
 
+https://www.ailab.microsoft.com/
+
+MS AI Lab。这里的很多项目都是开源的，但貌似用的是TF。看来MS自家的CNTK，就连自己人都不想用。
+
 ## 项目集锦
 
 https://mp.weixin.qq.com/s/ZNNgEB9rFjAE8SdfMo9NLA

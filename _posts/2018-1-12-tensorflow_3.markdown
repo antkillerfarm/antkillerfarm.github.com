@@ -278,6 +278,10 @@ https://mp.weixin.qq.com/s/zeZs48XbYJGhvOoIysZ8QA
 
 Docker Compose+GPU+TensorFlow所产生的奇妙火花
 
+https://mp.weixin.qq.com/s/sOggiB57D-ekWOsbL6TY_A
+
+TensorFlow中那些鲜为人知却又极其实用的知识
+
 # 汽车声学
 
 https://zhuanlan.zhihu.com/p/22722073

@@ -222,10 +222,6 @@ https://mp.weixin.qq.com/s/h-QbwEbaivvHjdhDhE4V1A
 
 如何为单变量模型选择最佳的回归函数
 
-https://mp.weixin.qq.com/s/XB9VsW3NRwHua6AdRL3n8w
-
-Lossless Triplet Loss:一种高效的Siamese网络损失函数
-
 https://mp.weixin.qq.com/s/qXZMo_RitSenmI7x0xGNsg
 
 中科院自动化所多媒体计算与图形学团队NIPS 2017论文提出平均Top-K损失函数，专注于解决复杂样本
