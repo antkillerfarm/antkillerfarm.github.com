@@ -127,6 +127,10 @@ http://blog.csdn.net/shijing_0214/article/details/51116046
 
 理解最大熵模型
 
+https://mp.weixin.qq.com/s/yUJDMSU1Fmf36vN2Q2y1TA
+
+最大熵模型原理小结
+
 https://mp.weixin.qq.com/s/a3TlUFwSm9aIptfhy6MnGA
 
 机器学习是如何借鉴物理学思想的？从伊辛模型谈起

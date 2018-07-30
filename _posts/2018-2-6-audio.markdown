@@ -246,3 +246,7 @@ https://mp.weixin.qq.com/s/mbjVliHWT9tt7h998FU9Tg
 
 L2正则化视角下的对抗样本
 
+https://mp.weixin.qq.com/s/ZWUPaSeL4vGfoEOxI57umw
+
+为卷积模型执行加入循环和远程反馈，更完整地拟合生物视觉
+

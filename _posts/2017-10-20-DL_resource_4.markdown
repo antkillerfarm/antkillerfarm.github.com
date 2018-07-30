@@ -262,6 +262,10 @@ https://mp.weixin.qq.com/s/4mZjdFL68V_OXKCkZ72KrQ
 
 谷歌BigQuery ML正式上岗，只会用SQL也能玩转机器学习！
 
+https://mp.weixin.qq.com/s/q4Q8uInrFT9IPN0gF928kA
+
+日立开源语义分割数据集标注工具Semantic Segmentation Editor
+
 ## 贝叶斯学习
 
 https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og

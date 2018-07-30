@@ -190,6 +190,10 @@ https://mp.weixin.qq.com/s/jhWt7ZlBVvmyGpKPeoHZug
 
 更优的ImageNet模型可迁移性更强？谷歌大脑论文给出验证
 
+https://mp.weixin.qq.com/s/irR_LjSpUN41Vpo7God_ig
+
+深度网络自我学习，最终实现更少样本的学习
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：

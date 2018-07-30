@@ -376,3 +376,7 @@ https://mp.weixin.qq.com/s/FTfpjo-qT_PK4cbR5j0ulw
 
 AI当“暖男”：给裸照自动穿上比基尼
 
+https://mp.weixin.qq.com/s/LwYzxFO6Fj9Biiww3Y22qw
+
+斯坦福CS230第一名：图像超级补全，效果惊艳
+
