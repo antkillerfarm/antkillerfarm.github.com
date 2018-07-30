@@ -166,6 +166,10 @@ https://mp.weixin.qq.com/s/2ZwhNN7kqigwRLqRnUOENw
 
 谷歌做了45万次不同类型的文本分类后，总结出一个通用的“模型选择算法”
 
+https://mp.weixin.qq.com/s/WQ-8OvF9-fRpRf5lgr5_iw
+
+一种简单有效的网络结构搜索
+
 # Optimizer
 
 在《机器学习（一）》中，我们已经指出梯度下降是解决凸优化问题的一般方法。而如何更有效率的梯度下降，就是本节中Optimizer的责任了。
@@ -301,16 +305,4 @@ https://morvanzhou.github.io/tutorials/machine-learning/ML-intro/3-06-speed-up-l
 http://www.cnblogs.com/neopenx/p/4768388.html
 
 自适应学习率调整：AdaDelta
-
-https://mp.weixin.qq.com/s/VoBK-l_ieSg2UupC2ix2pA
-
-听说你了解深度学习最常用的学习算法：Adam优化算法？
-
-https://mp.weixin.qq.com/s/YRyqvlNe24mlFZ7GB9vDnw
-
-一文看懂常用的梯度下降算法
-
-https://mp.weixin.qq.com/s/aNWtGeNhzFG4ruLsbEdkNQ
-
-解析深度学习优化：Momentum、RMSProp 和 Adam
 

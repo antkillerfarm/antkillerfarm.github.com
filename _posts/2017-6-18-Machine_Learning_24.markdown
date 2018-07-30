@@ -8,6 +8,18 @@ category: ML
 
 ## 参考（续）
 
+https://mp.weixin.qq.com/s/VoBK-l_ieSg2UupC2ix2pA
+
+听说你了解深度学习最常用的学习算法：Adam优化算法？
+
+https://mp.weixin.qq.com/s/YRyqvlNe24mlFZ7GB9vDnw
+
+一文看懂常用的梯度下降算法
+
+https://mp.weixin.qq.com/s/aNWtGeNhzFG4ruLsbEdkNQ
+
+解析深度学习优化：Momentum、RMSProp 和 Adam
+
 https://mp.weixin.qq.com/s/q7BI-YyhtmNzUfBMTKVdqQ
 
 Hitting time analysis of SGLD！

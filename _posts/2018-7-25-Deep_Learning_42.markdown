@@ -252,6 +252,10 @@ https://mp.weixin.qq.com/s/AupXIoVmhcOBrX1z1vgdtw
 
 弱监督实现精确目标检测，上交大提出协同学习框架
 
+https://mp.weixin.qq.com/s/Lt00ASVSb_fDDJdtCO0-tQ
+
+物体检测中的结构推理网络
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/naD6hVwDg3QSA76sXy2GZA
