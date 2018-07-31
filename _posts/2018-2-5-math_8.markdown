@@ -267,3 +267,4 @@ https://mp.weixin.qq.com/s/zozViMoimcL6nJvyBnTQtQ
 
 八岁小孩眼里的欧拉公式
 
+这里讲的是拓扑学中的欧拉公式：V−E+R=2，然而成年人的世界里没有Easy这个词，V−E+R会不会等于其他数呢？于是就有了Euler characteristic。

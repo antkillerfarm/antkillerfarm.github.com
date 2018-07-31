@@ -12,7 +12,7 @@ Khronos Group是一个行业组织，创建开放标准以实现并行计算、�
 
 OpenSL：音频的硬件加速接口。
 
-Vulkan：OpenGL的升级版本。
+Vulkan：OpenGL的升级版本。在OpenGL中Context和单一线程是绑定的，所以所有需要作用于Context的操作，例如改变渲染状态，绑定Shader，调用Draw Call，都只能在单一线程上进行。Vulkan中不再需要依赖于绑定在某个线程上的Context，而是用全新的基于Queue的方式向GPU递交任务，并且提供多种Synchronization的组件让多线程编程更加亲民。
 
 简单来说，Khronos的任务就是创建一个统一的硬件和软件之间的API，这样无论软件厂商，还是硬件厂商，都能各行其道，互不干扰了。
 
@@ -111,6 +111,26 @@ ComputeCpp是Codeplay公司提供的SYCL接口的实现。它除了支持OpenCL�
 官网：
 
 https://www.codeplay.com/products/computesuite/computecpp
+
+## OpenVG
+
+OpenVG是针对诸如Flash和SVG的矢量图形算法库提供底层硬件加速界面的免授权费、跨平台应用程序接口API。
+
+官网：
+
+https://www.khronos.org/openvg/
+
+OpenVG和OpenGL 3D的差异：
+
+1.OpenVG能实现的功能，OpenGL 3D都能实现，后者的功能要强大的多。
+
+2.OpenGL 3D的基本图元是三角形，而OpenVG的基本图元是Path，也就是闭合曲线。通常来说，Path的顶点要远少于三角形。例如，绘制一个圆形，要用很多三角形拟合，但使用Path的话，用3段Bézier curve就可以表示了。
+
+3.OpenVG支持物体任意缩放而不失真，而OpenGL 3D中的物体在大分辨率下会有锯齿。
+
+![](/images/img2/openvg_pipeline.jpg)
+
+上图是OpenVG的pipeline。
 
 # 运算加速库
 
