@@ -188,6 +188,10 @@ http://www.cnblogs.com/wentingtu/archive/2012/03/13/2393993.html
 
 Learning to Rank入门小结
 
+https://mp.weixin.qq.com/s/dRaiYPIdh_oJcQD-UxAlkA
+
+优秀的排序算法如何成就了伟大的机器学习技术
+
 # 价值函数的近似表示
 
 之前的内容都是讲解一些强化学习的基础理论，这些知识只能解决一些中小规模的问题，很多价值函数需要用一张大表来存储，获取某一状态或行为价值的时候通常需要一个查表操作（Table Lookup），这对于那些状态空间或行为空间很大的问题几乎无法求解。

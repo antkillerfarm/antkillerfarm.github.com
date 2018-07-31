@@ -6,6 +6,38 @@ category: AI
 
 # TensorFlow
 
+http://www.jianshu.com/p/4e16ae0aad25
+
+利用TensorFlow入门Word2Vec
+
+https://mp.weixin.qq.com/s/YJmMfBhQ3cLNUp_HHsXhGA
+
+手把手教你使用TensorFlow生成对抗样本
+
+https://mp.weixin.qq.com/s/pIESRzjsmqoO46P4x5Iqhw
+
+Tensorflow卷积神经网络
+
+https://mp.weixin.qq.com/s/Cge_GY19aZ1AcMkhW93C1A
+
+TensorFlow中的那些高级API
+
+https://mp.weixin.qq.com/s/kJxXIN6D5TEEFSFhGJNIyw
+
+开源神经网络图片上色技术解析
+
+https://mp.weixin.qq.com/s/qXMRHxDDRa-_rJZMhXWB4w
+
+详解TensorFlow的新seq2seq模块及其用法
+
+https://mp.weixin.qq.com/s/YdcIDXadEnDsyfc6Iu1gGw
+
+手把手教你用TensorFlow训练模型
+
+https://mp.weixin.qq.com/s/Off0pgaRNyik2nvjHaQQkw
+
+在TensorFlow中对比两大生成模型：VAE与GAN
+
 https://mp.weixin.qq.com/s/rMYjsIgFNvv47F4YZjY8SA
 
 如何在K8S上玩转TensorFlow？
@@ -174,14 +206,6 @@ https://mp.weixin.qq.com/s/l3hQCQWh5NgihzTs2A049w
 
 风格迁移原理及tensorflow实现
 
-https://mp.weixin.qq.com/s/dqMS4NjmNYs7IFHm8uFM8w
-
-TensorFlow发布面向JavaScript开发者的机器学习框架TensorFlow.js
-
-https://zhuanlan.zhihu.com/p/35181413
-
-TensorFlow.js人脸识别—玩转吃豆豆小游戏
-
 https://mp.weixin.qq.com/s/mjUnrPBPBuY6XKXkUymX-w
 
 实例介绍TensorFlow的输入流水线
@@ -242,9 +266,7 @@ https://mp.weixin.qq.com/s/IuD1oxeiFBq8kqh_zRLb0Q
 
 一步实现从TF到TF Lite，谷歌提出定制on-device模型框架
 
-https://mp.weixin.qq.com/s/ebLHZAG8H78TsZUKSzAtIw
 
-TF官方博客：基于TensorFlow.js框架的浏览器实时姿态估计
 
 https://mp.weixin.qq.com/s/kS92vYyeHLc38RGc_4CZbg
 
@@ -270,9 +292,7 @@ https://mp.weixin.qq.com/s/MT1YaMm4KBWsIZeHehahgw
 
 TensorFlow重大升级：自动将Python代码转为TF Graph，大幅简化动态图处理！
 
-https://mp.weixin.qq.com/s/z6p4A4DfCuK8IBGVGwrtLQ
 
-如何利用TensorFlow.js部署简单的AI版“你画我猜”图像识别应用
 
 https://mp.weixin.qq.com/s/zeZs48XbYJGhvOoIysZ8QA
 

@@ -186,6 +186,28 @@ Theano被同样基于计算图的TensorFlow淘汰。2017年9月停止更新。
 
 Torch相对变动最小，它被PyTorch替代。这更可以看作是python对于lua的胜利。
 
+## TensorFlow.js
+
+https://mp.weixin.qq.com/s/dqMS4NjmNYs7IFHm8uFM8w
+
+TensorFlow发布面向JavaScript开发者的机器学习框架TensorFlow.js
+
+https://zhuanlan.zhihu.com/p/35181413
+
+TensorFlow.js人脸识别—玩转吃豆豆小游戏
+
+https://mp.weixin.qq.com/s/ebLHZAG8H78TsZUKSzAtIw
+
+TF官方博客：基于TensorFlow.js框架的浏览器实时姿态估计
+
+https://mp.weixin.qq.com/s/z6p4A4DfCuK8IBGVGwrtLQ
+
+如何利用TensorFlow.js部署简单的AI版“你画我猜”图像识别应用
+
+https://mp.weixin.qq.com/s/NO_XY-JmTpIkoC-fpkZ-qg
+
+在浏览器上也能训练神经网络？TensorFlow.js带你玩游戏~
+
 ## 参考
 
 https://mp.weixin.qq.com/s/IzijD8Sh3G2WsCz7aaxyhg
@@ -403,36 +425,4 @@ https://mp.weixin.qq.com/s/WqE-FRl-Thys7tHUvFNlWQ
 https://mp.weixin.qq.com/s/WfzlHtz0FFJMsPFwPoMqJg
 
 如何利用VGG-16等模型在CPU上测评各深度学习框架
-
-http://www.jianshu.com/p/4e16ae0aad25
-
-利用TensorFlow入门Word2Vec
-
-https://mp.weixin.qq.com/s/YJmMfBhQ3cLNUp_HHsXhGA
-
-手把手教你使用TensorFlow生成对抗样本
-
-https://mp.weixin.qq.com/s/pIESRzjsmqoO46P4x5Iqhw
-
-Tensorflow卷积神经网络
-
-https://mp.weixin.qq.com/s/Cge_GY19aZ1AcMkhW93C1A
-
-TensorFlow中的那些高级API
-
-https://mp.weixin.qq.com/s/kJxXIN6D5TEEFSFhGJNIyw
-
-开源神经网络图片上色技术解析
-
-https://mp.weixin.qq.com/s/qXMRHxDDRa-_rJZMhXWB4w
-
-详解TensorFlow的新seq2seq模块及其用法
-
-https://mp.weixin.qq.com/s/YdcIDXadEnDsyfc6Iu1gGw
-
-手把手教你用TensorFlow训练模型
-
-https://mp.weixin.qq.com/s/Off0pgaRNyik2nvjHaQQkw
-
-在TensorFlow中对比两大生成模型：VAE与GAN
 

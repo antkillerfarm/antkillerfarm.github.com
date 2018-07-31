@@ -376,3 +376,53 @@ https://mp.weixin.qq.com/s/4q0LujqRyR-5VuirwbZhSw
 
 便携式雷达的天线设计
 
+https://mp.weixin.qq.com/s/n4oBKVma8-oY9sLLUG3aAg
+
+详细分析非聚焦SAR成像的基础与局限
+
+https://mp.weixin.qq.com/s/uxNUKcbJIsYW3y0nucDvAg
+
+聚焦SAR雷达处理与实现
+
+# NLP参考资源
+
+https://mp.weixin.qq.com/s/pXmYJA6-1vtHTwTNanLovQ
+
+Encoder-Decoder自动生成对联，要试试么？
+
+https://mp.weixin.qq.com/s/_SfY-JZsUEKReSoI6qHg9w
+
+TA-NMT：利用大语种语料，提升小语种神经机器翻译能力
+
+https://mp.weixin.qq.com/s/6_FHq8IrkAW_Y5FSYcJ0fw
+
+CMU与谷歌大脑联合出品：62页PPT带你理解SQuAD大赛冠军--QANet
+
+https://mp.weixin.qq.com/s/uL7J5cSU3P7QsFczvT1fTA
+
+基于深度学习的文本分类6大算法-原理、结构、论文、源码打包分享
+
+https://mp.weixin.qq.com/s/uWMGJmiEfahRql1sn1B0hA
+
+通过全新学习和推断机制提升seq2seq模型的语法改错性能
+
+https://mp.weixin.qq.com/s/_O4YqFK2xkFuB4nTbcu1cw
+
+哈佛NLP组论文解读：基于隐变量的注意力模型
+
+https://mp.weixin.qq.com/s/6BIspcIQrn7k3VQ9NP63Ng
+
+DeepMind提出空间语言集成模型SLIM，有效编码自然语言的空间关系
+
+https://mp.weixin.qq.com/s/eehpqW2H3wWCOa6r8jbEvQ
+
+ACL 2018 鲁棒、无偏的NLP训练方法
+
+https://mp.weixin.qq.com/s/EU0O-WR0ynI04NsPZ-bn2g
+
+无从下手落地问答系统？实用百度开源框架了解一下
+
+https://mp.weixin.qq.com/s/ffuiRE0qbglhVz__Z6FD7A
+
+这里可能是对机器智能中的文本情感计算最全面的概括了
+

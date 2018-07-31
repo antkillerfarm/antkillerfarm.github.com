@@ -42,7 +42,11 @@ $$\int_{-\infty}^{+\infty}\frac{1-\cos x}{x^2}\mathrm{d}x=\frac{1}{2}\cdot 2\pi=
 
 http://wenku.baidu.com/view/bb9c8ffe910ef12d2af9e71a.html
 
+关于Dirichlet积分的十种计算方法
+
 http://wenku.baidu.com/view/1b47c415cc7931b765ce1547.html
+
+常用函数傅立叶变换表
 
 下面回到原题，何为“能量积分”呢？
 
@@ -75,6 +79,8 @@ $$e^{ix}=\cos x + i \sin x$$
 推荐阅读以下文章：
 
 https://www.zhihu.com/question/20296247/answer/29370489
+
+数学里的e为什么叫做自然底数？是不是自然界里什么东西恰好是e？
 
 这里对上文中的要点做一个摘要。
 

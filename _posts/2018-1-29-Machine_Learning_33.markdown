@@ -121,9 +121,17 @@ Google发布机器学习术语表 (包括简体中文)
 
 # simhash
 
+simhash是一种能计算文档相似度的hash算法。
+
+论文：
+
+《Detecting Near-Duplicates for Web Crawling》
+
 代码：
 
 https://github.com/yanyiwu/simhash
+
+类似的相似度Hash算法，还有用于图像搜索的aHash、pHash、dHash。
 
 参考：
 
@@ -142,6 +150,14 @@ simhash与Google的网页去重
 http://blog.jobbole.com/21928/
 
 Simhash算法原理和网页查重应用
+
+https://blog.csdn.net/luoweifu/article/details/8220992
+
+看起来像它——图像搜索其实也不难
+
+https://www.jianshu.com/p/193f0089b7a2
+
+相似图片检测：感知哈希算法之dHash的Python实现
 
 # 模仿学习
 
@@ -249,31 +265,4 @@ AlphaGo Zero用它来调参？“高斯过程”到底有何过人之处？
 https://mp.weixin.qq.com/s/VzN02XW3yN2peqTD6q-4Cg
 
 从数学到实现，全面回顾高斯过程中的函数最优化
-
-# 莫比乌斯反演
-
-http://blog.csdn.net/acdreamers/article/details/8542292
-
-莫比乌斯反演
-
-http://blog.csdn.net/litble/article/details/72804050
-
-初涉莫比乌斯反演
-
-http://blog.csdn.net/u013632138/article/details/52250567
-
-莫比乌斯反演讲解
-
-http://blog.csdn.net/Ripped/article/details/70263965
-
-莫比乌斯反演详解
-
-http://blog.csdn.net/hzj1054689699/article/details/51659994
-
-莫比乌斯反演入门
-
-http://blog.csdn.net/outer_form/article/details/50588307
-
-莫比乌斯反演定理证明
-
 

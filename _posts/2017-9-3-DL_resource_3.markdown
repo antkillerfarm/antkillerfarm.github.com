@@ -180,6 +180,10 @@ https://mp.weixin.qq.com/s/6PJYGuJTUXF_Ht_wF1swmA
 
 英雄联盟如何指挥团战？AI帮你做决策
 
+https://mp.weixin.qq.com/s/uJ4RIJdGF8RxT9qVTkM-jA
+
+AI为超级马里奥兄弟创造了游戏新级别
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293

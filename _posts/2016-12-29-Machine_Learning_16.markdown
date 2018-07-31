@@ -296,7 +296,7 @@ $$X_{n\times m}\approx U_{n\times k}Y_{k\times m}$$
 
 两者虽然都是降维算法，但特征选择是在原有的n个特征中选择k个特征，而PCA是重建k个新的特征。
 
-参考：
+## 参考
 
 https://mp.weixin.qq.com/s/tJ_FbL2nFQfkvKqpQJ8kmg
 
@@ -313,4 +313,8 @@ https://mp.weixin.qq.com/s/JDWgw3OOdBurDAShrPHJ7Q
 https://mp.weixin.qq.com/s/ZDipXGPOxKhxtAx2Dc9RjA
 
 主成分分析（PCA）以及在图像上的应用
+
+https://mp.weixin.qq.com/s/9-nNNhhDWSYWy46u0hTazQ
+
+降维：PCA真的能改善分类结果吗？
 

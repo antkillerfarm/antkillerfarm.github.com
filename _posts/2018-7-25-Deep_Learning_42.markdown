@@ -256,6 +256,10 @@ https://mp.weixin.qq.com/s/Lt00ASVSb_fDDJdtCO0-tQ
 
 物体检测中的结构推理网络
 
+https://mp.weixin.qq.com/s/f0Ynln-27z5A6LXt8j5qKQ
+
+据说以后在探头下面用帽子挡脸没用了：SymmNet遮挡物检测的对称卷积神经网络
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/naD6hVwDg3QSA76sXy2GZA

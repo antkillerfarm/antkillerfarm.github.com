@@ -296,3 +296,7 @@ https://mp.weixin.qq.com/s/RpPEqjRUnBIHpX7_guItoQ
 
 如何构建行业知识图谱
 
+https://mp.weixin.qq.com/s/CK-rtWoqjq8pb_6xK4xssQ
+
+知识图谱的前世今生与RDF的实践
+

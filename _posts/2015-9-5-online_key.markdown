@@ -280,3 +280,6 @@ https://mp.weixin.qq.com/s/ok6VD1b5fhG_mY9O3d_VGA
 
 记住，永远不要在MySQL中使用“utf8”
 
+https://mp.weixin.qq.com/s/duYi1Y5jEWSPQbO3Bgsrrw
+
+SQL Server 与 MySQL 中排序规则与字符集相关知识的一点总结

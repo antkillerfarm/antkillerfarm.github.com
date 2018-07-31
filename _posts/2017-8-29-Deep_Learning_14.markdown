@@ -102,6 +102,10 @@ https://mp.weixin.qq.com/s/XBK7T1P7z3rm3o-3BDNeOA
 
 三分钟带你对Softmax划重点
 
+https://mp.weixin.qq.com/s/vhvXsSsEHPVjJGqtCOOwLw
+
+Softmax和交叉熵的深度解析和Python实现
+
 # 目标检测
 
 ## 概述
