@@ -250,3 +250,7 @@ https://mp.weixin.qq.com/s/ZWUPaSeL4vGfoEOxI57umw
 
 为卷积模型执行加入循环和远程反馈，更完整地拟合生物视觉
 
+https://mp.weixin.qq.com/s/DtxjX9RfRgehxLsJ7MFoNw
+
+谷歌大脑开源TensorFuzz，自动Debug神经网络！
+

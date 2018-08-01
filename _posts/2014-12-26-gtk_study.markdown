@@ -73,6 +73,12 @@ GtkScale有两个容易混淆的事件：change-value和value-changed。
 
 两者的区别是，change-value是一个主动事件，只有用户通过GUI操作控件才会触发；而value-changed是一个被动事件，无论什么原因，只要改变控件的值，就会触发。
 
+## 资源
+
+https://blog.csdn.net/taiyang1987912/article/category/5778511
+
+一个GTK的专栏
+
 # 在Windows下使用GTK+3
 
 2013.9

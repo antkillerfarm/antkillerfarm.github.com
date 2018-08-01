@@ -300,3 +300,37 @@ https://mp.weixin.qq.com/s/CK-rtWoqjq8pb_6xK4xssQ
 
 知识图谱的前世今生与RDF的实践
 
+# ML参考资源
+
+https://mp.weixin.qq.com/s/zXABOzbQRV7sfgAhr_WqZw
+
+跨领域推荐系统文献综述（上）
+
+https://mp.weixin.qq.com/s/OxUCIhoIED_Z1Cf91Va36g
+
+跨领域推荐系统文献综述（下）
+
+https://mp.weixin.qq.com/s/bdZ5e8CaiPuI8TpLNRrFUQ
+
+大数据近似最近邻搜索哈希方法综述（上）
+
+https://mp.weixin.qq.com/s/jiZw-x6EMhUIySIObm5XjA
+
+大数据近似最近邻搜索哈希方法综述（下）
+
+https://mp.weixin.qq.com/s/NbEki2ByMmA93DyoQF1yjA
+
+运满满如何将机器学习应用于车货匹配和公路干线价格预测？
+
+https://mp.weixin.qq.com/s/R7Qud_x6DGqbHAOl7OMruQ
+
+一文带你入门算法分发！
+
+https://mp.weixin.qq.com/s/s2XpGne0sAqnuN-u6g5k1A
+
+资金流因子全面测试兼正交化方法详解
+
+https://mp.weixin.qq.com/s/oblwg01BUIJjVhBeHa9HQQ
+
+程序员分析了50万条拼多多商品数据，告诉你到底是消费升级还是降级！
+

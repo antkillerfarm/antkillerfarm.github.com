@@ -320,4 +320,19 @@ https://zhuanlan.zhihu.com/p/34256635
 
 当我谈汽车声学时，我在谈什么(四)
 
+# Machine Learning之Python篇
+
+## 参考（续）
+
+https://mp.weixin.qq.com/s/4s7lDKlQjV1mUoVv558Y7Q
+
+面向云数据库，超低延迟文件系统PolarFS诞生了
+
+https://mp.weixin.qq.com/s/VfmudolvWzQN4ghgnI2rZA
+
+机器学习中Python库的3个简单实践——你的图片将由你来创造
+
+https://mp.weixin.qq.com/s/goxciguoxcamTo2WyUd1Lg
+
+大吉大利，今晚如何用Python解锁“吃鸡”的正确姿势
 

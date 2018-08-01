@@ -1,0 +1,61 @@
+---
+layout: post
+title:  数学狂想曲（九）——Bézier curve
+category: math 
+---
+
+# Bézier curve
+
+Bézier curve在数学界发现的时间很早——他是1912年由Sergei Natanovich Bernstein提出的。然而，真正将之发扬广大的，却是法国工程师Pierre Étienne Bézier。
+
+>Sergei Natanovich Bernstein，1880～1968，苏联数学家。University of Paris博士（1904），先后执教于University of Paris、University of Goettingen、University of Kharkiv、Leningrad University、Steklov Institute of Mathematics等名校和研究所。解决了Hilbert的第19个问题。
+
+>Pierre Étienne Bézier，1910～1999，École nationale supérieure d'arts etmétiers本科（1930）。终身供职于法国雷诺汽车公司。开发了最早的CAD/CAM系统（1960），被称为CAD/CAM之父。退休后，获得Pierre-and-Marie-Curie University博士学位（1977）。注意，这可不是荣誉学位，人家可是有重量级的博士论文的。
+
+Bézier curve的数学公式比较复杂，但是实际的绘制方法却很简单。
+
+![](/images/img2/Bezier.png)
+
+如上图所示。假设我们要绘制曲线$$C_{P_0P_2}$$上0.25位置上的点，那么可以在线段$$L_{P_0P_1}$$上找到0.25位置点$$Q_0$$,在线段$$L_{P_1P_2}$$上找到0.25位置点$$Q_1$$，最后在线段$$L_{Q_0Q_1}$$上找到0.25位置点B，即为所求。
+
+这个过程连续起来，就如下图所示：
+
+![](/images/img2/Bezier.gif)
+
+可见Bézier curve具有良好的数值稳定性，可产生类似皮筋的图像效应，是拟合**光滑曲线**的利器，因此被广泛应用于CAD/CAM领域。
+
+# 复变函数
+
+1.复球面表示。
+
+2.条件严格性。
+
+点域：连续<可导（可微）<可解析
+
+区域：连续<可导（可微）=可解析
+
+3.函数可微的充要条件：Cauchy-Riemann Equations
+
+4.复数在场论描述中的应用。
+
+参考：
+
+https://mp.weixin.qq.com/s/SUWUAMQjSuB5Gs06SPliTQ
+
+复数求导在信号处理中的应用
+
+## Hermite矩阵
+
+复数矩阵通常不能直接转置，而必须进行共轭转置。共轭转置也叫做Hermite转置，用$$A^H$$表示。
+
+如果$$A=A^H$$，则A被称为Hermite矩阵。
+
+>Charles Hermite，1822～1901，19世纪下半叶法国最著名的数学家，代数学领域的宗师级人物。Henri Poincaré的导师。他首先证明了e是超越数。以他的名字命名的数学术语竟达10项之多。   
+>Hermite虽然不是如某些地摊文学所言，一遇考试就跪。但是的确不太擅长考试，大学（他考的大学类似国内的清北的地位）入学成绩排在第68位，完全没有学神的风范。相比之下，Poincaré的入学成绩可是排第一位的。尽管就成就而言，Hermite绝不逊于Poincaré。
+
+## Toeplitz矩阵
+
+Toeplitz矩阵（diagonal-constant matrix），指矩阵中每条自左上至右下的斜线上的元素相同。
+
+>Otto Toeplitz，1881～1940，德国犹太裔数学家。University of Breslau博士（1905），先后执教于Göttingen University（在David Hilbert手下供职）、University of Kiel和Bonn University。1939年，为了躲避元首的迫害，逃亡耶路撒冷，次年去世。
+

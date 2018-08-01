@@ -106,6 +106,10 @@ https://mp.weixin.qq.com/s/b_0sxD0noWnuIkCxxUBlDA
 
 终极入门：马尔可夫网络 (Markov Networks)
 
+https://mp.weixin.qq.com/s/QvD97vfnv1x8w-e33WymRA
+
+从贝叶斯理论到图像马尔科夫随机场
+
 # 机器学习语录
 
 这里收录一些网上的只言片语式的心得，以区别于一般的教程。

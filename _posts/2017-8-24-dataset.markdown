@@ -336,3 +336,7 @@ https://mp.weixin.qq.com/s/dsLVogBtYjYeMULWp4QrhA
 
 一网打尽成语歇后语，GitHub新华字典数据库
 
+https://zhuanlan.zhihu.com/p/40984645
+
+打通推荐系统与知识图谱: 第一个公开的大规模链接数据集合
+

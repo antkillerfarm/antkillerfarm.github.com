@@ -6,6 +6,8 @@ category: resource
 
 # 机器人/无人驾驶参考资源
 
+由于已经有了强化学习系列blog和资源，因此本资源中不再包含强化学习的内容。但毫无疑问，强化学习才是这方面的主角。
+
 ## 行业
 
 ![](/images/img2/ADAS.jpg)
@@ -407,38 +409,4 @@ https://mp.weixin.qq.com/s/WWm1tkCXVJgdlVbsXCTYIg
 https://mp.weixin.qq.com/s/_lK-DPldCYGcicV7O0njfg
 
 上海交大卢策吾团队开源PointSIFT刷新点云语义分割记录
-
-# ML参考资源
-
-https://mp.weixin.qq.com/s/zXABOzbQRV7sfgAhr_WqZw
-
-跨领域推荐系统文献综述（上）
-
-https://mp.weixin.qq.com/s/OxUCIhoIED_Z1Cf91Va36g
-
-跨领域推荐系统文献综述（下）
-
-https://mp.weixin.qq.com/s/bdZ5e8CaiPuI8TpLNRrFUQ
-
-大数据近似最近邻搜索哈希方法综述（上）
-
-https://mp.weixin.qq.com/s/jiZw-x6EMhUIySIObm5XjA
-
-大数据近似最近邻搜索哈希方法综述（下）
-
-https://mp.weixin.qq.com/s/NbEki2ByMmA93DyoQF1yjA
-
-运满满如何将机器学习应用于车货匹配和公路干线价格预测？
-
-https://mp.weixin.qq.com/s/R7Qud_x6DGqbHAOl7OMruQ
-
-一文带你入门算法分发！
-
-https://mp.weixin.qq.com/s/s2XpGne0sAqnuN-u6g5k1A
-
-资金流因子全面测试兼正交化方法详解
-
-https://mp.weixin.qq.com/s/vwhetMpQllczILptBNcoWg
-
-基于快速GeoHash，如何实现海量商品与商圈的高效匹配？
 

@@ -215,6 +215,10 @@ https://mp.weixin.qq.com/s/pYtKpfL68lEy9bus9HHAMQ
 
 Javascript将HTML页面生成PDF并下载
 
+https://zhuanlan.zhihu.com/p/35551654
+
+基于React的高质量坦克大战复刻版
+
 # Scala
 
 官网：
@@ -319,24 +323,4 @@ https://huanglizhuo.gitbooks.io/kotlin-in-chinese/content/
 国内中文文档2：
 
 http://www.liying-cn.net/kotlin/docs/reference/
-
-# Bézier curve
-
-Bézier curve在数学界发现的时间很早——他是1912年由Sergei Natanovich Bernstein提出的。然而，真正将之发扬广大的，却是法国工程师Pierre Étienne Bézier。
-
->Sergei Natanovich Bernstein，1880～1968，苏联数学家。University of Paris博士（1904），先后执教于University of Paris、University of Goettingen、University of Kharkiv、Leningrad University、Steklov Institute of Mathematics等名校和研究所。解决了Hilbert的第19个问题。
-
->Pierre Étienne Bézier，1910～1999，École nationale supérieure d'arts etmétiers本科（1930）。终身供职于法国雷诺汽车公司。开发了最早的CAD/CAM系统（1960），被称为CAD/CAM之父。退休后，获得Pierre-and-Marie-Curie University博士学位（1977）。注意，这可不是荣誉学位，人家可是有重量级的博士论文的。
-
-Bézier curve的数学公式比较复杂，但是实际的绘制方法却很简单。
-
-![](/images/img2/Bezier.png)
-
-如上图所示。假设我们要绘制曲线$$C_{P_0P_2}$$上0.25位置上的点，那么可以在线段$$L_{P_0P_1}$$上找到0.25位置点$$Q_0$$,在线段$$L_{P_1P_2}$$上找到0.25位置点$$Q_1$$，最后在线段$$L_{Q_0Q_1}$$上找到0.25位置点B，即为所求。
-
-这个过程连续起来，就如下图所示：
-
-![](/images/img2/Bezier.gif)
-
-可见Bézier curve具有良好的数值稳定性，可产生类似皮筋的图像效应，因此被广泛应用于CAD/CAM领域。
 

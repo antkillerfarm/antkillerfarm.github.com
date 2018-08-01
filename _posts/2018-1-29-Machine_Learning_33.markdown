@@ -159,6 +159,10 @@ https://www.jianshu.com/p/193f0089b7a2
 
 相似图片检测：感知哈希算法之dHash的Python实现
 
+https://mp.weixin.qq.com/s/vwhetMpQllczILptBNcoWg
+
+基于快速GeoHash，如何实现海量商品与商圈的高效匹配？
+
 # 模仿学习
 
 https://zhuanlan.zhihu.com/p/27935902

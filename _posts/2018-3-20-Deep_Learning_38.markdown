@@ -208,6 +208,10 @@ https://mp.weixin.qq.com/s/IYyGgnoXZm6YfamLejqoNQ
 
 深度强化学习试金石：DeepMind和OpenAI攻克蒙特祖玛复仇的真正意义
 
+https://mp.weixin.qq.com/s/w3SsadgKaL8-tlzYLvMm-A
+
+讲真？一天就学会了自动驾驶——强化学习在自动驾驶的应用
+
 # CNN进阶
 
 https://mp.weixin.qq.com/s/gwH9s1ggMTj2dJkad9wUuw

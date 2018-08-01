@@ -444,6 +444,3 @@ https://mp.weixin.qq.com/s/WQh-Ro03e9F1Yrhk0tTZ0A
 
 图解SQL的JOIN
 
-https://mp.weixin.qq.com/s/4s7lDKlQjV1mUoVv558Y7Q
-
-面向云数据库，超低延迟文件系统PolarFS诞生了

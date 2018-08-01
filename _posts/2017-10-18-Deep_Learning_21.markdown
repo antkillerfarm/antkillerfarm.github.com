@@ -148,6 +148,10 @@ https://mp.weixin.qq.com/s/i-im1sy6MNWP1Fmi5oWMZg
 
 华为推出新型HiSR：移动端的超分辨率算法
 
+https://mp.weixin.qq.com/s/h4Xzt-aS1_-5zjTB0ypTLg
+
+普通视频转高清：10个基于深度学习的超分辨率神经网络
+
 # SRCNN
 
 SRCNN（Super-Resolution CNN）是汤晓鸥小组的Chao Dong的作品。

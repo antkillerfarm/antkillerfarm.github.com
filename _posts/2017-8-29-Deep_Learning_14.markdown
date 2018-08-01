@@ -304,6 +304,10 @@ https://blog.csdn.net/savant_ning/article/details/69950588
 
 多视图3D目标检测学习笔记
 
+https://mp.weixin.qq.com/s/_kzPi1QgwqvT4glRI-FCzg
+
+深度学习目标检测指南：如何过滤不感兴趣的分类及添加新分类？
+
 # RCNN
 
 《深度学习（五）》中提到的AlexNet、VGG、GoogleNet主要用于图片分类。而这里介绍的RCNN(Regions with CNN)主要用于目标检测。
