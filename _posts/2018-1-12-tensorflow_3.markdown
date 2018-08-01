@@ -292,8 +292,6 @@ https://mp.weixin.qq.com/s/MT1YaMm4KBWsIZeHehahgw
 
 TensorFlow重大升级：自动将Python代码转为TF Graph，大幅简化动态图处理！
 
-
-
 https://mp.weixin.qq.com/s/zeZs48XbYJGhvOoIysZ8QA
 
 Docker Compose+GPU+TensorFlow所产生的奇妙火花
@@ -301,6 +299,10 @@ Docker Compose+GPU+TensorFlow所产生的奇妙火花
 https://mp.weixin.qq.com/s/sOggiB57D-ekWOsbL6TY_A
 
 TensorFlow中那些鲜为人知却又极其实用的知识
+
+https://mp.weixin.qq.com/s/SDVQSn1aVDXk_RPGuVcQgQ
+
+TensorFlow深度自动编码器入门实践
 
 # 汽车声学
 

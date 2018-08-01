@@ -260,6 +260,14 @@ https://mp.weixin.qq.com/s/f0Ynln-27z5A6LXt8j5qKQ
 
 据说以后在探头下面用帽子挡脸没用了：SymmNet遮挡物检测的对称卷积神经网络
 
+https://mp.weixin.qq.com/s/cEg6HmS651riJVAtHdPafg
+
+基于域适应弱监督学习的目标检测
+
+https://mp.weixin.qq.com/s/PpT-NmTVjRi0_SEq0lISXw
+
+旷视科技Oral论文解读：IoU-Net让目标检测用上定位置信度
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/naD6hVwDg3QSA76sXy2GZA
