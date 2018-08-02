@@ -158,6 +158,16 @@ API参考：
 
 https://docs.scipy.org/doc/scipy/reference/
 
+### Gaussian filter
+
+w = 2*int(truncate*sigma + 0.5) + 1
+
+参考：
+
+https://stackoverflow.com/questions/25216382/gaussian-filter-in-scipy
+
+Gaussian filter in scipy
+
 ## Scikit-learn
 
 Scikit-learn提供了常见的机器学习算法的实现。

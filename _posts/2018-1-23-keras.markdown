@@ -258,7 +258,11 @@ https://mp.weixin.qq.com/s/Cbpm7oMmRMC60p5_uzbn7Q
 
 https://mp.weixin.qq.com/s/u-Yq5MR0h7SDwxORZ0zQ-w
 
-Keras vs PyTorch：谁是「第一」深度学习框架？
+Keras vs PyTorch：谁是“第一”深度学习框架？
+
+https://mp.weixin.qq.com/s/uFe0gQ2pxxfG-cHCZ38O_Q
+
+手把手教你用Keras实现LSTM预测英语单词发音
 
 # OpenAI Gym
 

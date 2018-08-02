@@ -410,3 +410,7 @@ https://mp.weixin.qq.com/s/_lK-DPldCYGcicV7O0njfg
 
 上海交大卢策吾团队开源PointSIFT刷新点云语义分割记录
 
+https://mp.weixin.qq.com/s/09NwPaWTDU5g6ZjSPxLgTw
+
+肖健雄：无人车量产的4大技术储备
+

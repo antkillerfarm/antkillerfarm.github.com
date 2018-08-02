@@ -324,6 +324,10 @@ https://mp.weixin.qq.com/s/LzKsD_vFlA1n-TYOGJkDZg
 
 商汤科技开源DAVIS2017视频目标分割冠军代码
 
+https://mp.weixin.qq.com/s/FiAju9F_MWexstP7FrIquw
+
+凭一张照片找到视频中你所有的镜头，包括背影
+
 # 多任务学习
 
 https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA

@@ -84,3 +84,9 @@ https://zhuanlan.zhihu.com/p/24425179
 
 End-to-End Voiceprint
 
+# ASR参考资源
+
+https://zhuanlan.zhihu.com/p/40329331
+
+谈谈语音识别与人声的物理原理，以及真声假声头声混声等概念
+

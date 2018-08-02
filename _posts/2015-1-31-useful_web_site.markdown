@@ -464,6 +464,10 @@ http://phdcomics.com/
 
 一个关于博士学习生活的漫画网站
 
+https://mp.weixin.qq.com/s/_bWOYpZNjA4p7ZWM1J_4mw
+
+通信协议之序列化
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

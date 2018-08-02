@@ -89,3 +89,7 @@ https://mp.weixin.qq.com/s/IA0kPncWRVx0JBQXvJLY6w
 
 微信高级研究员解析深度学习在NLP中的发展和应用
 
+https://zhuanlan.zhihu.com/p/40988001
+
+多轮对话状态管理（DST）--模型介绍篇
+

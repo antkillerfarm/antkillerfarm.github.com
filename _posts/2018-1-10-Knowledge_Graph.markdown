@@ -334,3 +334,11 @@ https://mp.weixin.qq.com/s/oblwg01BUIJjVhBeHa9HQQ
 
 程序员分析了50万条拼多多商品数据，告诉你到底是消费升级还是降级！
 
+https://mp.weixin.qq.com/s/4HVkEnk6_hONWJYdi8L53g
+
+闲聊结构化预测（structured learning）
+
+https://mp.weixin.qq.com/s/_AHqFqf1zFNtBifayiTfXQ
+
+你应具备这3大统计学常识&大数据思维
+
