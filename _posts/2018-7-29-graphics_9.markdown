@@ -169,3 +169,14 @@ ILSVRC 2010的冠军是NEC和UIUC的联合队伍。这也是DL于2012年大放�
 ![](/images/article/ILSVRC_2010.png)
 
 上图是NEC算法的基本流程图。这里不打算描述整个算法，而仅对其中涉及的术语做一个解释。
+
+# 模板匹配
+
+https://blog.csdn.net/liyuanbhu/article/details/49837661
+
+OpenCV 学习笔记（模板匹配）
+
+https://blog.csdn.net/xxboy61/article/details/38319757
+
+OpenCV实现之模板匹配(Template Matching)
+

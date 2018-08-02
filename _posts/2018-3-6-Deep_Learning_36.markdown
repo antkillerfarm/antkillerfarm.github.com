@@ -367,3 +367,8 @@ https://mp.weixin.qq.com/s/bjVTpdaKFx4fFtT8BjMNew
 https://mp.weixin.qq.com/s/wGt3Xk_ARqHei-ddU9iXNg
 
 算力节省240倍！上交大、MIT新方法低成本达到谷歌AutoML性能
+
+https://mp.weixin.qq.com/s/pXskwKkzCtgIuNtgFVF_wg
+
+ImageNet分类精度再创新高！李飞飞组ECCV Oral提出全新渐进式神经结构搜索
+

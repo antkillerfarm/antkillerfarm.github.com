@@ -93,3 +93,11 @@ https://zhuanlan.zhihu.com/p/40988001
 
 多轮对话状态管理（DST）--模型介绍篇
 
+https://mp.weixin.qq.com/s/Dsw-mEQlLFehwrXxEIdvAg
+
+哈工大秦兵：机器智能中的文本情感计算
+
+https://mp.weixin.qq.com/s/T5ybwhxZF2bN2hIPxELe4A
+
+监管机器翻译质量？且看阿里如何搭建翻译质量评估模型
+

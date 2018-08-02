@@ -74,6 +74,10 @@ https://zhuanlan.zhihu.com/p/39219404
 
 Dense Pose
 
+https://blog.csdn.net/sinat_26917383/article/details/79704097
+
+关键点定位：四款人体姿势关键点估计论文笔记
+
 ## 参考
 
 https://mp.weixin.qq.com/s/6pNZ8Crs4Lel2C0TlFAc4Q

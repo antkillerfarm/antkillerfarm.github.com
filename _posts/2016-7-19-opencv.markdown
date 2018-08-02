@@ -128,6 +128,10 @@ http://www.cs.rug.nl/~imaging/
 
 一个在线的图像处理网站。
 
+https://blog.csdn.net/liyuanbhu/
+
+一个CV+math的blog。没错，该博主似乎对实分析很感兴趣。
+
 ## 论文
 
 《Moving Gradients: A Path-Based Method for Plausible Image Interpolation》：视频帧插值算法

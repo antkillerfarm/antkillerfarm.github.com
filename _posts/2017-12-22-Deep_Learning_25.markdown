@@ -22,7 +22,7 @@ https://kexue.fm/archives/4765
 
 $$Attention(\boldsymbol{Q},\boldsymbol{K},\boldsymbol{V}) = softmax\left(\frac{\boldsymbol{Q}\boldsymbol{K}^{\top}}{\sqrt{d_k}}\right)\boldsymbol{V}$$
 
-如果忽略激活函数softmax的话，那么事实上它就是三个$$n\times d_k,d_k\times m, m\times d_v$$的矩阵相乘，最后的结果就是一个$$n\times d_v$$的矩阵。于是我们可以认为：这是一个Attention层，将$$n\times d_k$$的序列Q编码成了一个新的$$n\times d_v$$的序列。
+如果忽略激活函数softmax的话，那么事实上它就是三个$$n\times d_k,d_k\times m, m\times d_v$$的矩阵相乘，最后的结果就是一个$$n\times d_v$$的矩阵。于是我们可以认为：**这是一个Attention层，将$$n\times d_k$$的序列Q编码成了一个新的$$n\times d_v$$的序列**。
 
 那怎么理解这种结构呢？我们不妨逐个向量来看。
 
@@ -56,7 +56,7 @@ $$head_i = Attention(\boldsymbol{Q}\boldsymbol{W}_i^Q,\boldsymbol{K}\boldsymbol{
 
 这问题就比较严重了，大家知道，对于时间序列来说，尤其是对于NLP中的任务来说，顺序是很重要的信息，它代表着局部甚至是全局的结构，学习不到顺序信息，那么效果将会大打折扣（比如机器翻译中，有可能只把每个词都翻译出来了，但是不能组织成合理的句子）。
 
-于是Google再祭出了一招——Position Embedding，也就是“位置向量”，将每个位置编号，然后每个编号对应一个向量，通过结合位置向量和词向量，就给每个词都引入了一定的位置信息，这样Attention就可以分辨出不同位置的词了。
+于是Google再祭出了一招——Position Embedding，也就是“位置向量”，将每个位置编号，然后每个编号对应一个向量，通过结合位置向量和词向量，就给每个词都引入了一定的位置信息，**这样Attention就可以分辨出不同位置的词了**。
 
 ## Hard Attention
 
@@ -114,6 +114,8 @@ Attention的介绍到此为止，但《Attention is All You Need》的传奇继�
 
 ![](/images/img2/Transformer.png)
 
+$$FFN(x) = \max(0,xW_1 + b_1)W_2 + b_2$$
+
 参考：
 
 https://mp.weixin.qq.com/s/HquT_mKm7x_rbDGz4Voqpw
@@ -125,6 +127,10 @@ https://mp.weixin.qq.com/s/S_xhaDrOaPe38ZvDLWl4dg
 从技术到产品，搜狗为我们解读了神经机器翻译的现状
 
 ## 参考
+
+https://blog.csdn.net/mijiaoxiaosan/article/details/73251443
+
+对Attention is all you need的理解
 
 http://geek.csdn.net/news/detail/106118
 
