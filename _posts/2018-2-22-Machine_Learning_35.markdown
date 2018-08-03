@@ -138,6 +138,10 @@ https://blog.csdn.net/tiandijun/article/details/72469471
 
 通俗理解卡尔曼滤波及其算法实现
 
+https://zhuanlan.zhihu.com/p/40413223
+
+卡尔曼滤波器实现详解
+
 # 推荐算法中的常用排序算法
 
 ## Pointwise方法

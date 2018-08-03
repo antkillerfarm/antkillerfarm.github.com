@@ -254,6 +254,3 @@ https://mp.weixin.qq.com/s/DtxjX9RfRgehxLsJ7MFoNw
 
 谷歌大脑开源TensorFuzz，自动Debug神经网络！
 
-https://mp.weixin.qq.com/s/_aDUFWFFX-XiSuKA2wsKbA
-
-手把手教你从零起步构建自己的图像搜索模型

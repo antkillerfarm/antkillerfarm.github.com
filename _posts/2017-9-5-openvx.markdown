@@ -90,6 +90,14 @@ OpenCL是一个硬件中立标准，原则上和计算机的体系结构无关�
 
 简单来说，**OpenVX的封装粒度在层一级，而OpenCL最多只提供到矩阵运算一级的API**。
 
+术语：
+
+Shared Virtual Memory，SVM
+
+Memory consistency model
+
+Multisample anti-aliasing，MSAA
+
 参考：
 
 http://blog.csdn.net/leonwei/article/details/8880012

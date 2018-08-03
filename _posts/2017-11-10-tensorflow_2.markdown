@@ -144,6 +144,44 @@ core/kernels/spacetobatch_functor.cc
 
 tensorflow/contrib/lite/kernels/internal/reference/reference_ops.h
 
+## Tensor2Tensor
+
+T2T库利用TensorFlow工具来开发，定义了一个深度学习系统中需要的多个部分：数据集、模型架构、优化工具、学习速率衰减计划，以及超参数等等。
+
+最重要的是，T2T在所有这些部分之间实现了标准接口，并配置了当前机器学习的最佳行为方式。
+
+因此，你可以选择任意数据集、模型、优化工具，以及一套超参数，随后运行训练，看看效果如何。
+
+论文：
+
+《Tensor2Tensor for Neural Machine Translation》
+
+代码：
+
+https://github.com/tensorflow/tensor2tensor
+
+## TensorFlow.js
+
+https://mp.weixin.qq.com/s/dqMS4NjmNYs7IFHm8uFM8w
+
+TensorFlow发布面向JavaScript开发者的机器学习框架TensorFlow.js
+
+https://zhuanlan.zhihu.com/p/35181413
+
+TensorFlow.js人脸识别—玩转吃豆豆小游戏
+
+https://mp.weixin.qq.com/s/ebLHZAG8H78TsZUKSzAtIw
+
+TF官方博客：基于TensorFlow.js框架的浏览器实时姿态估计
+
+https://mp.weixin.qq.com/s/z6p4A4DfCuK8IBGVGwrtLQ
+
+如何利用TensorFlow.js部署简单的AI版“你画我猜”图像识别应用
+
+https://mp.weixin.qq.com/s/NO_XY-JmTpIkoC-fpkZ-qg
+
+在浏览器上也能训练神经网络？TensorFlow.js带你玩游戏~
+
 ## blog
 
 http://www.jianshu.com/u/eaec1fc422e9
@@ -185,28 +223,6 @@ Caffe被Caffe 2替代，但使用的广泛度仍超过后者。
 Theano被同样基于计算图的TensorFlow淘汰。2017年9月停止更新。
 
 Torch相对变动最小，它被PyTorch替代。这更可以看作是python对于lua的胜利。
-
-## TensorFlow.js
-
-https://mp.weixin.qq.com/s/dqMS4NjmNYs7IFHm8uFM8w
-
-TensorFlow发布面向JavaScript开发者的机器学习框架TensorFlow.js
-
-https://zhuanlan.zhihu.com/p/35181413
-
-TensorFlow.js人脸识别—玩转吃豆豆小游戏
-
-https://mp.weixin.qq.com/s/ebLHZAG8H78TsZUKSzAtIw
-
-TF官方博客：基于TensorFlow.js框架的浏览器实时姿态估计
-
-https://mp.weixin.qq.com/s/z6p4A4DfCuK8IBGVGwrtLQ
-
-如何利用TensorFlow.js部署简单的AI版“你画我猜”图像识别应用
-
-https://mp.weixin.qq.com/s/NO_XY-JmTpIkoC-fpkZ-qg
-
-在浏览器上也能训练神经网络？TensorFlow.js带你玩游戏~
 
 ## 参考
 
@@ -401,28 +417,3 @@ https://mp.weixin.qq.com/s/KohwsQQetwjfTj-PXvLjwA
 http://mp.weixin.qq.com/s/ioaS7RQ6bsJs4_X0G4ZHyQ
 
 如何优雅地用TensorFlow预测时间序列：TFTS库详细教程
-
-http://mp.weixin.qq.com/s/hpv6bzr-5VZet-UCHOCQLQ
-
-谷歌TFX：基于TensorFlow可大规模扩展的机器学习平台
-
-https://mp.weixin.qq.com/s/GaK_iSTBl7B4LTdaOtiR_Q
-
-香港科技大学TensorFlow课件分享
-
-https://mp.weixin.qq.com/s/cPWXAI2TBv3_ssnWDFoQ4w
-
-TensorFlow sucks，有人吐槽TensorFlow晦涩难用
-
-https://mp.weixin.qq.com/s/_kr28kN0_1QFP8BR_wGo5w
-
-TensorFlow RNN入门
-
-https://mp.weixin.qq.com/s/WqE-FRl-Thys7tHUvFNlWQ
-
-盯住梅西：TensorFlow目标检测实战
-
-https://mp.weixin.qq.com/s/WfzlHtz0FFJMsPFwPoMqJg
-
-如何利用VGG-16等模型在CPU上测评各深度学习框架
-

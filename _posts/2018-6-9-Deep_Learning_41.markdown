@@ -194,6 +194,10 @@ https://mp.weixin.qq.com/s/irR_LjSpUN41Vpo7God_ig
 
 深度网络自我学习，最终实现更少样本的学习
 
+https://mp.weixin.qq.com/s/bh1E8lOs0k4AecrPwEicxg
+
+如何高效提炼有效信息？阿里武大创造了一种零样本文档过滤模型
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：

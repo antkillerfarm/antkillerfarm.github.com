@@ -268,6 +268,10 @@ https://mp.weixin.qq.com/s/PpT-NmTVjRi0_SEq0lISXw
 
 旷视科技Oral论文解读：IoU-Net让目标检测用上定位置信度
 
+https://mp.weixin.qq.com/s/tmp1HXU7cLerLr0DY9NluQ
+
+杂乱环境下的显著性物体： 将显著性物体检测推向新高度
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/naD6hVwDg3QSA76sXy2GZA
@@ -313,10 +317,6 @@ https://mp.weixin.qq.com/s/dWIhQVPNi9SlzuhMiatEVQ
 https://mp.weixin.qq.com/s/_1rKAj-KOs4P8WnKzen64w
 
 传统方法已经Out了？OpenAI提出全新辩论模式训练AI
-
-https://zhuanlan.zhihu.com/p/36479489
-
-图像检索：因缘际会与前瞻
 
 https://mp.weixin.qq.com/s/Mk_EkwTYK2141cU9zC1hvQ
 

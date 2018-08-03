@@ -252,6 +252,10 @@ Path Tracing介绍
 
 # 雷达
 
+https://mp.weixin.qq.com/s/zDcbrZeK4tlO0jA3-s_lYg
+
+雷达方面的术语
+
 https://mp.weixin.qq.com/s/vmQKK9cEbBRIvd2uOzmC1w
 
 AN/TPS-78固态雷达系列

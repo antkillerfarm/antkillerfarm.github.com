@@ -6,6 +6,30 @@ category: AI
 
 # TensorFlow
 
+http://mp.weixin.qq.com/s/hpv6bzr-5VZet-UCHOCQLQ
+
+谷歌TFX：基于TensorFlow可大规模扩展的机器学习平台
+
+https://mp.weixin.qq.com/s/GaK_iSTBl7B4LTdaOtiR_Q
+
+香港科技大学TensorFlow课件分享
+
+https://mp.weixin.qq.com/s/cPWXAI2TBv3_ssnWDFoQ4w
+
+TensorFlow sucks，有人吐槽TensorFlow晦涩难用
+
+https://mp.weixin.qq.com/s/_kr28kN0_1QFP8BR_wGo5w
+
+TensorFlow RNN入门
+
+https://mp.weixin.qq.com/s/WqE-FRl-Thys7tHUvFNlWQ
+
+盯住梅西：TensorFlow目标检测实战
+
+https://mp.weixin.qq.com/s/WfzlHtz0FFJMsPFwPoMqJg
+
+如何利用VGG-16等模型在CPU上测评各深度学习框架
+
 http://www.jianshu.com/p/4e16ae0aad25
 
 利用TensorFlow入门Word2Vec
@@ -265,8 +289,6 @@ https://mp.weixin.qq.com/s/hn-LqyREkusxP2TOWfTJ6g
 https://mp.weixin.qq.com/s/IuD1oxeiFBq8kqh_zRLb0Q
 
 一步实现从TF到TF Lite，谷歌提出定制on-device模型框架
-
-
 
 https://mp.weixin.qq.com/s/kS92vYyeHLc38RGc_4CZbg
 

@@ -212,6 +212,10 @@ https://mp.weixin.qq.com/s/w3SsadgKaL8-tlzYLvMm-A
 
 讲真？一天就学会了自动驾驶——强化学习在自动驾驶的应用
 
+https://mp.weixin.qq.com/s/oyxqA_LYtze1f_YDwDZziQ
+
+从零开始自学设计新型药物，UNC提出结构进化强化学习
+
 # CNN进阶
 
 https://mp.weixin.qq.com/s/gwH9s1ggMTj2dJkad9wUuw

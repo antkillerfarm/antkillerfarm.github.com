@@ -60,14 +60,6 @@ https://mp.weixin.qq.com/s/wYiwuBt8VVYOheJ_jgCHgA
 
 一文读懂图像局部特征点检测算法！
 
-https://mp.weixin.qq.com/s/sM78DCOK3fuG2JrP2QaSZA
-
-SIFT与CNN的碰撞：万字长文回顾图像检索任务十年探索历程（上）
-
-https://mp.weixin.qq.com/s/yzVMDEpwbXVS0y-CwWSBEA
-
-SIFT与CNN的碰撞：万字长文回顾图像检索任务十年探索历程（下）
-
 # ISP
 
 ISP(Image Signal Processor)，图像信号处理器，是运用在相机或者具备拍摄功能设备上的一种芯片。在相机成像的整个环节中，它负责接收感光元件（Sensor）的原始信号数据，可以理解为整个相机拍照、录像的第一步处理流程，对图像质量起着非常重要的作用。

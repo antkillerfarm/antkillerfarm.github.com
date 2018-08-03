@@ -393,6 +393,10 @@ https://github.com/BYVoid/OpenCC
 
 OpenCC：一个中文简繁转换的工具
 
+https://mp.weixin.qq.com/s/-3A4eNAPa6DP-bX4x4HfQA
+
+横向对比4大NLP Python工具包，总有一款适合你！
+
 ## NLPchina
 
 NLPchina(中国自然语言处理开源组织)旗下有许多好用的工具。

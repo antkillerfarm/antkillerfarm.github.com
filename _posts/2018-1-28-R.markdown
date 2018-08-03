@@ -369,6 +369,10 @@ https://mp.weixin.qq.com/s/sTuA-S9bQzVySoI0BMz19g
 
 三种可视化方法，手把手教你用R绘制地图网络图！
 
+https://mp.weixin.qq.com/s/83494v_5XDPlyNIccMINtQ
+
+美团R语言数据运营实战
+
 # DL参考资源
 
 https://zhuanlan.zhihu.com/p/36520673

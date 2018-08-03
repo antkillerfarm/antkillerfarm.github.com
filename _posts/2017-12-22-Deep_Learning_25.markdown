@@ -116,7 +116,27 @@ Attention的介绍到此为止，但《Attention is All You Need》的传奇继�
 
 $$FFN(x) = \max(0,xW_1 + b_1)W_2 + b_2$$
 
+代码：
+
+https://github.com/Kyubyong/transformer
+
 参考：
+
+http://jalammar.github.io/illustrated-transformer/
+
+The Illustrated Transformer
+
+http://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/
+
+Visualizing A Neural Machine Translation Model (Mechanics of Seq2seq Models With Attention)
+
+https://zhuanlan.zhihu.com/p/39034683
+
+Attention is all you need模型笔记
+
+https://zhuanlan.zhihu.com/p/40920384
+
+真正的完全图解Seq2Seq Attention模型
 
 https://mp.weixin.qq.com/s/HquT_mKm7x_rbDGz4Voqpw
 

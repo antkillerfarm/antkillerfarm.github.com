@@ -250,6 +250,10 @@ https://mp.weixin.qq.com/s/9ivDZXpPpLE3fuPgpNUyJA
 
 超全数据科学与机器学习面试指南
 
+https://mp.weixin.qq.com/s/qmdfLlTfQzT0QVq_SzEPUw
+
+机器学习和深度学习中值得弄清楚的一些问题
+
 ## 遗传算法 & 进化算法
 
 http://blog.csdn.net/u010945683/article/details/40987331
