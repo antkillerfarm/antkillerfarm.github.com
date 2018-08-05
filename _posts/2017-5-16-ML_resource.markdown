@@ -302,10 +302,6 @@ https://mp.weixin.qq.com/s/g1PWYFvxyoEZ8uX_GBwKSQ
 
 学会数据分析背后的挖掘思维，分析就完成了一半!
 
-https://mp.weixin.qq.com/s/_rKnE833oPkRTUfkZGn7fQ
-
-机器学习之集成学习
-
 https://mp.weixin.qq.com/s/BHR_W-B9w6evWFs9PYB8zw
 
 机器学习方法体系汇总

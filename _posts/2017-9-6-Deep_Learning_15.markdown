@@ -142,6 +142,10 @@ http://mp.weixin.qq.com/s/Cg9tHG1YgDCdI3NPYl5-vQ
 
 如何用Soft-NMS实现目标检测并提升准确率
 
+https://mp.weixin.qq.com/s/Pd1zA-xZS_xEALfMJ3aHNw
+
+丧尸目标检测：和你分享Python非极大值抑制方法运行得飞快的秘诀
+
 ## ground truth
 
 在有监督学习中，数据是有标注的，以(x,t)的形式出现，其中x是输入数据，t是标注。正确的t标注是ground truth，错误的标记则不是。（也有人将所有标注数据都叫做ground truth）

@@ -38,6 +38,10 @@ https://mp.weixin.qq.com/s/0JmB0sMUVsiuwrVObN_10g
 
 ## 参考
 
+https://mp.weixin.qq.com/s/4ZlVisY08XvisjbK5zSheg
+
+NLP中“词袋”模型和词嵌入模型的比较
+
 https://mp.weixin.qq.com/s/L6_BV-cWR4wge2ritmyqzA
 
 让你上瘾的网易云音乐推荐算法，用Word2vec就可以实现
@@ -327,6 +331,10 @@ https://mp.weixin.qq.com/s/LzKsD_vFlA1n-TYOGJkDZg
 https://mp.weixin.qq.com/s/FiAju9F_MWexstP7FrIquw
 
 凭一张照片找到视频中你所有的镜头，包括背影
+
+https://mp.weixin.qq.com/s/3H0ZJjnPsh1BzALmG0W7og
+
+DAVIS2017视频目标分割冠军代码开源了
 
 # 多任务学习
 

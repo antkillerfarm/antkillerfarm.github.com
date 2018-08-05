@@ -72,6 +72,10 @@ https://zhuanlan.zhihu.com/p/40514536
 
 一个强力的ReID basemodel
 
+https://mp.weixin.qq.com/s/mktVMZ0Fdo0mubstpl2GDA
+
+Repulsion loss：专注于遮挡情况下的行人检测
+
 # 人脸识别进阶
 
 https://mp.weixin.qq.com/s/ZZmLbFzi843g0k3gTncQmA

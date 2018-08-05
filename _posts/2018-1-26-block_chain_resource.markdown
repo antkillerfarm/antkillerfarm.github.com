@@ -388,6 +388,10 @@ https://mp.weixin.qq.com/s/uxNUKcbJIsYW3y0nucDvAg
 
 聚焦SAR雷达处理与实现
 
+https://mp.weixin.qq.com/s/xTsFbkKERi_mNl-o6ue3VA
+
+SAR运动补偿，自动聚焦以及图像解译
+
 # NLP参考资源
 
 https://mp.weixin.qq.com/s/pXmYJA6-1vtHTwTNanLovQ

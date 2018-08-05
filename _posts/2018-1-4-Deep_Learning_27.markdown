@@ -176,6 +176,10 @@ https://mp.weixin.qq.com/s/0HK026K6jru10VscvT2rOQ
 
 哈佛大学提出变分注意力：用VAE重建注意力机制
 
+https://mp.weixin.qq.com/s/790wbFnxkNbNRampiV-0MQ
+
+谷歌大脑提出对抗正则化方法，显著改善自编码器的泛化和表征学习能力
+
 # RBM & DBN & Deep Autoencoder
 
 ## RBM

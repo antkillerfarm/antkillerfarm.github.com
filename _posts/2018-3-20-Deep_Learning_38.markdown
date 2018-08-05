@@ -216,6 +216,10 @@ https://mp.weixin.qq.com/s/oyxqA_LYtze1f_YDwDZziQ
 
 从零开始自学设计新型药物，UNC提出结构进化强化学习
 
+https://zhuanlan.zhihu.com/p/39999667
+
+强化学习路在何方？
+
 # CNN进阶
 
 https://mp.weixin.qq.com/s/gwH9s1ggMTj2dJkad9wUuw

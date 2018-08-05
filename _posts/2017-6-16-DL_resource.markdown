@@ -470,3 +470,11 @@ https://mp.weixin.qq.com/s/UBhiAn449f6EUkNYcr7aVA
 
 普林斯顿ICML2018教程：深度学习理论理解的探索
 
+https://mp.weixin.qq.com/s/bcVRsXlPe0V61xYQHc5Kkg
+
+如何搞明白深度学习的算法、理论与计算系统？这一份CMU邢波教授286页全面为你阐述
+
+https://mp.weixin.qq.com/s/GVPCjPZPvrGRwpZoAOUzTA
+
+十种确保搞砸人工智能项目的方法，文因互联CEO鲍捷
+

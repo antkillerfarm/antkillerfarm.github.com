@@ -338,7 +338,15 @@ https://mp.weixin.qq.com/s/4HVkEnk6_hONWJYdi8L53g
 
 闲聊结构化预测（structured learning）
 
+https://mp.weixin.qq.com/s/GP_t_fhklpVNhC6J6i0YbA
+
+再聊聊自然语言处理中的结构化预测问题
+
 https://mp.weixin.qq.com/s/_AHqFqf1zFNtBifayiTfXQ
 
 你应具备这3大统计学常识&大数据思维
+
+https://mp.weixin.qq.com/s/Z1ixoRmUDl17CF4k7JS4zg
+
+浅谈物流网络中的选址规划问题
 

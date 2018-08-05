@@ -292,6 +292,10 @@ https://mp.weixin.qq.com/s/cDqxmRVQCIqdM5oiUh82YQ
 
 Yee Whye Teh：《贝叶斯深度学习与深度贝叶斯学习》
 
+https://mp.weixin.qq.com/s/Zk2YG-IJNhJxTBU8THSM-g
+
+让DL可解释？这一份66页贝叶斯深度学习教程告诉你
+
 ## 元学习
 
 https://mp.weixin.qq.com/s/KKK3VEpwL90g6Aro8qtXxQ
@@ -345,6 +349,14 @@ https://mp.weixin.qq.com/s/XtzvHOk7CdXRBy02kUmgsg
 https://mp.weixin.qq.com/s/KvgYyuyICueNQPo_S27fEA
 
 BAIR展示新型模仿学习，学会像人那样执行任务
+
+https://zhuanlan.zhihu.com/p/41223529
+
+最前沿: Meta RL论文解读
+
+https://zhuanlan.zhihu.com/p/40600485
+
+最前沿：Meta Learning前沿进展扫描
 
 ## gcForest
 

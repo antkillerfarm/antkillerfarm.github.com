@@ -182,6 +182,10 @@ https://mp.weixin.qq.com/s/JU0H1cYIyWLgOkdBgra-eA
 
 GBDT！深入浅出详解梯度提升决策树
 
+https://mp.weixin.qq.com/s/KyvjI_2CLss_fzVFxPrE7A
+
+Facebook经典模型LR+GBDT理论与实践
+
 https://mp.weixin.qq.com/s/-AwJvJ_YQ7p_yo5TNHTOfw
 
 决策树的python实现
@@ -217,6 +221,14 @@ https://mp.weixin.qq.com/s/6X27b97X_7OOOSijqAau9g
 https://mp.weixin.qq.com/s/hGoprRIeyoXPt5OnzgV-bg
 
 集成学习算法(Ensemble Method)浅析
+
+https://mp.weixin.qq.com/s/_rKnE833oPkRTUfkZGn7fQ
+
+机器学习之集成学习
+
+https://mp.weixin.qq.com/s/VgFnREuG_D6lbTvs3JLBHg
+
+集成学习基础通俗入门
 
 https://mp.weixin.qq.com/s/2EtQTsumOcHmYFjxOlPApQ
 

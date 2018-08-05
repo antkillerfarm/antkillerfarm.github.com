@@ -414,3 +414,6 @@ https://mp.weixin.qq.com/s/09NwPaWTDU5g6ZjSPxLgTw
 
 肖健雄：无人车量产的4大技术储备
 
+https://zhuanlan.zhihu.com/p/41287237
+
+点云感知CVPR 2018论文总结

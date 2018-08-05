@@ -101,3 +101,6 @@ https://mp.weixin.qq.com/s/T5ybwhxZF2bN2hIPxELe4A
 
 监管机器翻译质量？且看阿里如何搭建翻译质量评估模型
 
+https://mp.weixin.qq.com/s/_XyqNPkInWfy-gUQtHjNIg
+
+基于深度神经网络的自动问答系统概述

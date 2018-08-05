@@ -386,3 +386,7 @@ https://mp.weixin.qq.com/s/osCRnfnuCFGJIR1jkhgUwA
 
 弃用ETL，为什么说ELT才更适合AI应用场景？
 
+https://mp.weixin.qq.com/s/IvGkPnYdifuAzrUV3MTyhA
+
+数据埋点太难！知乎的做法有何可借鉴之处？
+

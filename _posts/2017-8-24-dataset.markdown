@@ -168,10 +168,6 @@ https://niessner.github.io/Matterport/
 
 全球最大的3D数据集公开了！标记好的10800张全景图
 
-https://mp.weixin.qq.com/s/fR8-zODLNp24nlR5dJ85Nw
-
-3万患者11万图像14类病理：NIH公开大规模胸部X光数据集
-
 https://mp.weixin.qq.com/s/Aatv0Q-Mfkkb75h_ZF8AIA
 
 100大机器学习数据集，总有一款适合你！
@@ -315,6 +311,10 @@ https://mp.weixin.qq.com/s/WPESySGMv_ehSt6oNUkVGg
 https://mp.weixin.qq.com/s/AW5PGDXCTPMf8hwsPxOfjg
 
 NIHCC发布迄今世界最大的CT医学影像数据集
+
+https://mp.weixin.qq.com/s/fR8-zODLNp24nlR5dJ85Nw
+
+3万患者11万图像14类病理：NIH公开大规模胸部X光数据集
 
 http://mmlab.ie.cuhk.edu.hk/projects/WIDERFace/
 
