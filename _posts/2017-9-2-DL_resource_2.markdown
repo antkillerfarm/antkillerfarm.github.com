@@ -6,6 +6,28 @@ category: resource
 
 # DL参考资源
 
+## 教程（续）
+
+https://mp.weixin.qq.com/s/miKs4tWu8Hh1yHvx-XZFwg
+
+构建深度神经网络，我有20条“不成熟”的小建议
+
+https://mp.weixin.qq.com/s/UBhiAn449f6EUkNYcr7aVA
+
+普林斯顿ICML2018教程：深度学习理论理解的探索
+
+https://mp.weixin.qq.com/s/bcVRsXlPe0V61xYQHc5Kkg
+
+如何搞明白深度学习的算法、理论与计算系统？这一份CMU邢波教授286页全面为你阐述
+
+https://mp.weixin.qq.com/s/GVPCjPZPvrGRwpZoAOUzTA
+
+十种确保搞砸人工智能项目的方法，文因互联CEO鲍捷
+
+https://mp.weixin.qq.com/s/yMq-m2uGS705Jyxm_oVUng
+
+称霸Kaggle的十大深度学习技巧
+
 ## 算法
 
 http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww
@@ -386,22 +408,3 @@ https://mp.weixin.qq.com/s/3Z2Zc8zTq2uiPyw7ZuuZfw
 
 解密美图大规模多媒体数据检索技术DeepHash
 
-## 行业
-
-李开复的这篇文章不可不读：
-
-https://mp.weixin.qq.com/s/OLIO4UIZUuzjX5oQbn3Tug
-
-拥抱人工智能的中国：现状和展望（上）
-
-https://mp.weixin.qq.com/s/KbKlgRAfjP_39WdXh7gOLg
-
-拥抱人工智能的中国：现状和展望（下）
-
-https://mp.weixin.qq.com/s/hoo34-eMcYV7hV6LFbJqcg
-
-10分钟带你读完人工智能的三生三世
-
-https://mp.weixin.qq.com/s/yAC6VTOl3jAxjUT0QbTVrw
-
-为什么要在边缘设备部署机器学习？

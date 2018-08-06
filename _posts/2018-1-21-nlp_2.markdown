@@ -275,6 +275,8 @@ http://svn.code.sf.net/p/cmusphinx/code/trunk/cmudict/
 
 fftw是一个C语言的FFT库，由MIT的Matteo Frigo和Steven G. Johnson编写。
 
+>fft的实现往简单的说，也就几十行代码。这里这个3M+的庞然大物当然没这么简单。它使用了汇编、并行等加速手段，还支持DCT和DST变换。
+
 官网：
 
 http://fftw.org/
@@ -290,6 +292,40 @@ https://github.com/FFTW/fftw3
 https://blog.csdn.net/congwulong/article/details/7576012
 
 FFTW中文参考
+
+## aubio
+
+aubio是一个C语言的音频分析库，提供了提取fbank、MFCC等特征的能力。
+
+找到aubio的过程，堪称曲折。最近要移植MFCC提取功能，到一嵌入式平台。因此要求代码必须是C语言。
+
+1.Kaldi是C++写的，不合要求。
+
+2.scipy.fftpack的核心是用C和Fortran写的，其实最主要的部分是Fortran写的。
+
+3.使用Java语言的话，jMIR是个不错的选择。
+
+代码：
+
+https://github.com/aubio/aubio
+
+参考：
+
+http://www.cnblogs.com/daleloogn/p/4510137.html
+
+音乐检索研究中使用的工具
+
+## Ooura
+
+Takuya Ooura是东京大学的教授，他写了一套数值计算的软件叫做Ooura，其中包含了FFT的实现。这也是aubio默认的FFT实现。
+
+代码：
+
+http://www.kurims.kyoto-u.ac.jp/~ooura/fft.html
+
+这是作者收集的FFT库的列表：
+
+http://www.kurims.kyoto-u.ac.jp/~ooura/fftlinks.html
 
 ## 参考
 
@@ -354,56 +390,4 @@ https://mp.weixin.qq.com/s/xIkYLncxmLKqLQqeq-XxAw
 https://mp.weixin.qq.com/s/0bOg1kvSR66-8rvFDqtLIQ
 
 用文本挖掘分析了5万首《全唐诗》，竟然发现这些秘密
-
-https://mp.weixin.qq.com/s/B_hnpOp_AVsIoL8gbkL4Hw
-
-深度学习在文本领域的应用
-
-https://mp.weixin.qq.com/s/PrrEUHXrmBEnOegP5jqOJg
-
-你知道《圣经》中的主要角色有哪些吗？三种NLP工具将告诉你答案！
-
-https://mp.weixin.qq.com/s/8LV27Hn5JKS7Zo1omRMxzA
-
-基于汉语短文本对话的立场检测系统理论与实践
-
-https://mp.weixin.qq.com/s/sQ903WNSR4v367t78_VG1Q
-
-自然语言处理全家福：纵览当前NLP中的任务、数据、模型与论文
-
-https://mp.weixin.qq.com/s/mU5I7FCIwfwbYl4ED7EIXA
-
-基于深度学习的NLP研究大盘点
-
-https://mp.weixin.qq.com/s/o3rYqUDhre5KCcFzd_u8lQ
-
-命名实体识别从数据集到算法实现
-
-https://mp.weixin.qq.com/s/yXs_bLSAIPcUOIrvJ9-0Sw
-
-ACM BCB 2018 CausalTriad: 从医学文本数据中推断出新的因果关系假设
-
-https://mp.weixin.qq.com/s/rA6oTLlFWmIvGUq_XPLOKQ
-
-利用Lattice LSTM的最优中文命名实体识别方法
-
-https://mp.weixin.qq.com/s/Dq-H4rUM19MaQb5W2DGlqA
-
-用递归神经网络，撰写一份特朗普式发言稿！
-
-https://mp.weixin.qq.com/s/VCeEz5QhGqQ5TF0lkCk40A
-
-COLING 2018 最佳论文解读：序列标注经典模型复现
-
-https://mp.weixin.qq.com/s/QUbZZokROzxUwy2kZZ7jeA
-
-Hybrid semi-Markov CRF for Neural Sequence Labeling
-
-https://mp.weixin.qq.com/s/wHweI0_LYHaW7K8jEAY74g
-
-文综提分哪家强？上海交大找AI
-
-https://mp.weixin.qq.com/s/VOyJu8FBIK91MsumCBaMyg
-
-NLP领域的ImageNet时代到来：词嵌入“已死”，语言模型当立
 

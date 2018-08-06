@@ -360,6 +360,10 @@ https://mp.weixin.qq.com/s/5S6TsyT6dwXP3cTE_KQleg
 
 把酱油瓶放进菜篮子：UC Berkeley提出高度逼真的物体组合网络Compositional GAN
 
+https://mp.weixin.qq.com/s/c84LMFnIhoDeolc1B4MIVA
+
+AI以假乱真怎么办？TequilaGAN教你轻松辨真伪
+
 # Spiking Neuron Networks
 
 除了基于BP算法的NN之外，Spiking Neuron Networks也是一大类NN。Spiking NN和人脑结构更相似，功耗也更小，但是相关训练和数据量化的算法尚不成熟，属于潜力股。

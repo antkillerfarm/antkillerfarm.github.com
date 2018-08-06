@@ -373,3 +373,23 @@ https://mp.weixin.qq.com/s/_tvOQPvybqmvLF19kHcbFg
 https://mp.weixin.qq.com/s/Wdxkvlz4nLbJS_gWqHwMjw
 
 无需额外硬件，全卷积网络让机器学习学会夜视能力
+
+## 行业
+
+李开复的这篇文章不可不读：
+
+https://mp.weixin.qq.com/s/OLIO4UIZUuzjX5oQbn3Tug
+
+拥抱人工智能的中国：现状和展望（上）
+
+https://mp.weixin.qq.com/s/KbKlgRAfjP_39WdXh7gOLg
+
+拥抱人工智能的中国：现状和展望（下）
+
+https://mp.weixin.qq.com/s/hoo34-eMcYV7hV6LFbJqcg
+
+10分钟带你读完人工智能的三生三世
+
+https://mp.weixin.qq.com/s/yAC6VTOl3jAxjUT0QbTVrw
+
+为什么要在边缘设备部署机器学习？

@@ -400,6 +400,30 @@ https://mp.weixin.qq.com/s/Sda94q-40goiZGSYGgm_Yw
 
 AI美发算法
 
+# CCV
+
+CCV是一个C语言的CV库。
+
+官网：
+
+http://libccv.org/
+
+代码：
+
+https://github.com/liuliu/ccv
+
+# VLFeat
+
+VLFeat也是一个C语言的CV库。
+
+官网：
+
+http://www.vlfeat.org/
+
+代码：
+
+https://github.com/vlfeat/vlfeat
+
 # GNU Octave
 
 GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。

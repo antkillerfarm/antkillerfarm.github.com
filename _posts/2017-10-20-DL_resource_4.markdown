@@ -270,6 +270,10 @@ https://mp.weixin.qq.com/s/q4Q8uInrFT9IPN0gF928kA
 
 日立开源语义分割数据集标注工具Semantic Segmentation Editor
 
+https://mp.weixin.qq.com/s/PxYG7VxpCw0G3r_PpxVuoQ
+
+Kaggle放大招：简单几步实现海量数据分析及可视化
+
 ## 贝叶斯学习
 
 https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og

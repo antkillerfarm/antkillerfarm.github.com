@@ -108,6 +108,10 @@ https://mp.weixin.qq.com/s/c9yagjJIe-m07twPvIoPJA
 
 YOLO算法的原理与实现
 
+https://mp.weixin.qq.com/s/JKyX5cdvknIRoF341Au7Ew
+
+单级式目标检测方法概述：YOLO与SSD
+
 # SSD
 
 SSD是Wei Liu于2016年提出的算法。

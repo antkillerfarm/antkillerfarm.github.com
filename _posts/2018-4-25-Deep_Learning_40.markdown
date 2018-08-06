@@ -238,6 +238,10 @@ https://mp.weixin.qq.com/s/vswtn3D1-VZZlyKLJmHc7A
 
 纪荣嵘：深度神经网络压缩及应用
 
+https://mp.weixin.qq.com/s/cSYCT1I1asaSCIc5Hgu0Jw
+
+计算成本降低35倍！谷歌发布手机端自动设计神经网络MnasNet
+
 # OCR
 
 ## 概述

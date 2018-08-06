@@ -154,6 +154,10 @@ https://mp.weixin.qq.com/s/OctAGrcBB0a6TOGWMmVKUw
 
 深度学习中的数据增强（下）
 
+https://mp.weixin.qq.com/s/lMU6_ywQqneyunqEV6uDiA
+
+如何改善你的训练数据集？
+
 # Winograd
 
 矩阵方面的数值计算，Shmuel Winograd是一个无法绕开的人物。

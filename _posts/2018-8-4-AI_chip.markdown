@@ -390,3 +390,7 @@ https://mp.weixin.qq.com/s/IvGkPnYdifuAzrUV3MTyhA
 
 数据埋点太难！知乎的做法有何可借鉴之处？
 
+https://mp.weixin.qq.com/s/fV3OqXreZqaQ5neQaFIlOQ
+
+非易失性内存在阿里生产环境的首次应用：Tair NVM最佳实践总结
+

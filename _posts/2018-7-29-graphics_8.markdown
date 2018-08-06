@@ -20,6 +20,8 @@ $$M_h\left ( x \right )=\frac{1}{k}\sum_{x_i\in S_h}\left ( x_i-x \right )$$
 
 其中，$$S_h$$指的是一个半径为h的高维球区域，如上图中的蓝色的圆形区域。$$S_h$$的定义为：
 
+$$S_h\left ( x \right )=\left ( y\mid \left ( y-x \right )\left ( y-x \right )^T\leqslant h^2 \right )$$
+
 从物理的角度来看，由于$$\frac{1}{k}\sum_{x_i\in S_h}x_i$$实际上是$$S_h$$的质量中心，因此$$M_h\left ( x \right )$$实际上就是从x指向质心的向量，也被叫做归一化的概率密度梯度。所以，Meanshift聚类实际上是一种密度聚类。
 
 下面来看一下Meanshift算法的具体步骤。

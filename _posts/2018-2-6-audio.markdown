@@ -254,3 +254,35 @@ https://mp.weixin.qq.com/s/DtxjX9RfRgehxLsJ7MFoNw
 
 谷歌大脑开源TensorFuzz，自动Debug神经网络！
 
+https://mp.weixin.qq.com/s/TEk_i4kEjUqmAqF8LgTVjg
+
+FAIR提出用聚类方法结合卷积网络，实现无监督端到端图像分类
+
+https://mp.weixin.qq.com/s/5vDSrWeUvlBuZgmX0R9pBQ
+
+斯坦福“黑盒学习”研究：使用神经变分推理的无向图模型，可替代“采样”
+
+https://mp.weixin.qq.com/s/t0lGL66YIJwIvI4emNfN7Q
+
+UC Berkeley新研究：通过深度学习建模注意点采样阵列
+
+https://mp.weixin.qq.com/s/w8l8T1zx0uGF92dC2PVB6g
+
+Yann LeCun说是时候放弃概率论了，因果关系才是理解世界的基石
+
+https://mp.weixin.qq.com/s/_gKE_nHsCYD0sYXC9jhvLA
+
+超越Softmax瓶颈：一种高秩RNN语言模型
+
+https://mp.weixin.qq.com/s/3bAn-ev14lO9uxQzE0Tk0Q
+
+如何使用深度学习去除人物图像背景
+
+https://mp.weixin.qq.com/s/MnK2LTWR9qEKiiz3OMsSMQ
+
+深度学习漂亮的图像软分割一览
+
+https://mp.weixin.qq.com/s/5xlSoC5sgzsAwMYMSFCjnw
+
+TextTopicNet:CMU开源无标注高精度自监督模型
+
