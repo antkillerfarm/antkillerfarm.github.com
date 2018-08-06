@@ -274,6 +274,10 @@ https://mp.weixin.qq.com/s/PxYG7VxpCw0G3r_PpxVuoQ
 
 Kaggle放大招：简单几步实现海量数据分析及可视化
 
+https://mp.weixin.qq.com/s/Bcxeq1BVDyw1Jc3G4MNR4g
+
+斯坦福开源Weld：高效实现数据分析的端到端优化
+
 ## 贝叶斯学习
 
 https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og
