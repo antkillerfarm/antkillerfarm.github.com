@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Java（二）, 孩子的编程语言, Javascript（二）, Scala, perl, Kotlin, Bézier curve
+title:  Java（二）, 孩子的编程语言, Javascript（二）, Scala, perl, Kotlin
 category: language 
 ---
 

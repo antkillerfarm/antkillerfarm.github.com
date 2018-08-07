@@ -65,4 +65,10 @@ Toeplitz矩阵（diagonal-constant matrix），指矩阵中每条自左上至右
 
 离散时间随机过程的相关矩阵是非负定的，并且几乎总是正定的。（等于零，只有在无噪声且观测向量线性相关的情况下，才会出现。）
 
+## 白噪声
+
+$$E[v(n)v^*(n-k)]=\begin{cases}
+\sigma_v^2, & k = 0 \\
+0, & k \neq 0 \\
+\end{cases}$$
 

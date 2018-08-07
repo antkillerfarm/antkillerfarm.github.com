@@ -110,7 +110,7 @@ https://zhuanlan.zhihu.com/p/26680599
 
 # FBank
 
-FBank和MFCC的计算步骤基本一致，只是没有做IDST而已。
+FBank和MFCC的计算步骤基本一致，只是没有做IDFT而已。
 
 FBank与MFCC对比：
 
