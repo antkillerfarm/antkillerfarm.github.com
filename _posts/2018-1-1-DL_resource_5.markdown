@@ -304,7 +304,7 @@ https://mp.weixin.qq.com/s/ESX-V5oMk35NhP7MKu_d0A
 
 https://mp.weixin.qq.com/s/2FKgCmQ8i58XamT_plrl1w
 
-深度神经网络为什么不易过拟合？傅里叶分析发现固有频谱偏差
+深度神经网络为什么不易过拟合？傅立叶分析发现固有频谱偏差
 
 https://mp.weixin.qq.com/s/ora66weNks8tHlFTKJrKSA
 

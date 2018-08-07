@@ -1,8 +1,40 @@
 ---
 layout: post
-title:  语音识别（六）——WFST
+title:  语音识别（六）——GMM-HMM, WFST
 category: speech 
 ---
+
+# GMM-HMM
+
+混合高斯模型是为了计算某个观察状态的mfcc分布和某个特定音子的mfcc之间的似然度的，但由于音子的mfcc分布并不是真的符合高斯分布，因此需要叠加多个高斯混合模型，来逼近某个特定音子的mfcc特征分布。我们叠加的模型数量越多，拟合的效果就越好。
+
+![](/images/img2/GMM.png)
+
+最简单的情况下，每个音子（例如ah这个音子）都需要至少一个39维的多维高斯模型进行建模，但是这样做的前提是，ah这个音的39维mfcc特征的分布符合高斯分布。
+
+但事实上，ah并不完全符合高斯分布，于是我们就用一组（比如10个）高斯模型，混合在一起，去逼近这个音的mfcc特征分布。这样当有一帧通过计算得到一个39维的向量的时候，我们就可以把这个向量带入加权混合后的高斯模型中，计算这个向量属于ah这个音的概率。
+
+以thchs为例，一共有3000个高斯核对音素进行建模，那是如何分配的呢？
+
+如果是triphone模型，那么3000个高斯核每个都会分配一个三音子态。也就是说，每个核只用来建模一个三音子态。要确定这件事，只要看模型文件里有没有用来分配高斯混合模型权重的文件就可以了。
+
+比如在sphinx这个库里面，模型文件中会有一个叫mixture_weight的文件，就是用来储存权重的，如果没有这个文件，意味着每个高斯核只用来建模一个音子态。
+
+虽然音子只有60个，但是排列组合后的三音子态就多达几千个了。
+
+参考：
+
+https://blog.csdn.net/abcjennifer/article/details/27346787
+
+GMM-HMM语音识别模型 原理篇
+
+https://zhuanlan.zhihu.com/p/22482625
+
+无痛理解GMM-HMM语音识别算法
+
+https://mp.weixin.qq.com/s/Sn4RPdghzzQhQc-r4z8Iuw
+
+Kaldi单音素GMM学习笔记
 
 # LDA-MLLT
 
@@ -275,62 +307,4 @@ $$ED(0\to 3)=ED(0\to 1)+ED(1\to 3)=\epsilon:\epsilon/0.2+\epsilon:\epsilon/0.6=\
 这里以0->4之间的`a:a/1.6`为例介绍一下计算方法。首先，0->4之间并没有直接的`a:a`连线，但是3->4有`a:a`连线。因此：
 
 $$a:a/0.8+ED(0\to 3)=a:a/0.8+\epsilon:\epsilon/0.8=a:a/1.6$$
-
-## Determinization
-
-Determinization：所有状态在接受某个输入后只有一条输出边，而且不包含$$\epsilon$$。
-
-这个操作的根本前提：两个自动机或者转换器是否相等，不需要每条边，每个权重都相等。只需要对于任何一个输入序列，其输出及权重相同，而不用在意权重的分布是否相同。
-
-一般使用$$\otimes$$来计算分支内的权重。使用$$\oplus$$来处理分支间最终输出的权重。
-
-![](/images/img2/determinization.png)
-
-Determinization之后的FST采用`(原始状态号,剩余权重)`的方式表示Node。例如上图中，从(0,0)到(1,0)(2,1)的边a/1上消耗权重1，原图状态1，状态2剩余权重分别是0和1，所以用(1,0)(2,1)表示。 在输出到下一个状态时候，将剩余权重加上。比如原图中d/6,这里变成d/7。
-
-## Pushing
-
-Pushing包括Weight Pushing和Label Pushing两种情况。
-
-![](/images/img2/weight_pushing.png)
-
-上图是Weight Pushing的例子。如果WFST不在乎权重的分布，而只在乎最终权重的大小的话，则可以将权重前推（Pushing），以利于最小化。
-
-![](/images/img2/label_pushing.png)
-
-上图是Label Pushing的例子，将非$$\epsilon$$的label前推。
-
-Kaldi中没有使用weight pushing。
-
-## Minimization
-
-最小化的目的是减少原图中的状态数，以及转移边数。从而减少存储空间和计算时间。
-
-最小化一般是消除相同结点。常用算法与DFA的最小化算法类似。
-
-## Pruning
-
-![](/images/img2/pruning.png)
-
-Pruning的目的是去除大于最短路径的$$\otimes$$分支。
-
-## Other
-
-除了这些常用操作之外，还有add-self-loops和remove-disambiguation-symbols等操作。这里不再赘述。
-
-## HCLG
-
-介绍完WFST的基本运算，这里来介绍一下WFST在语音识别上的应用——HCLG。
-
-![](/images/img2/HCLG.png)
-
-上图中，Language Model又名Grammar Model，Phonemic Model又名Lexicon Model，故名HCLG。
-
-这个流程的形式化描述为：
-
-$$H\circ C\circ L\circ G$$
-
-直接使用这个WFST的状态空间较大，搜索效率比较低，Mohri因此提出了一个简化方案：
-
-$$N = \pi_{\epsilon} (min(det(\tilde{H} \circ det(\tilde{C} \circ det(\tilde{L} \circ G)))))$$
 

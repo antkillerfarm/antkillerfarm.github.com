@@ -34,6 +34,14 @@ https://mp.weixin.qq.com/s/FtWA1rff13e7_FM0lJKCVg
 
 Petuum提出新型正则化方法：非重叠促进型变量选择
 
+https://mp.weixin.qq.com/s/u7HxMuJxQG91qFbvS_8csA
+
+L2正则化和对抗鲁棒性的关系
+
+https://mp.weixin.qq.com/s/mbjVliHWT9tt7h998FU9Tg
+
+L2正则化视角下的对抗样本
+
 # 协同过滤的ALS算法
 
 ## 协同过滤概述

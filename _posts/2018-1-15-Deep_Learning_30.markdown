@@ -338,3 +338,8 @@ https://mp.weixin.qq.com/s/BBg04rDtiqU-XrWortufNA
 http://mp.weixin.qq.com/s/khOINUyrNV3TFfgNRheH0A
 
 卷积神经网络压缩、多模态的语义分析研究
+
+https://mp.weixin.qq.com/s/ywU4L659iRcmIgmV6RtbXA
+
+DeepMind新研究连接听与看，实现“听声辨位”的多模态学习
+

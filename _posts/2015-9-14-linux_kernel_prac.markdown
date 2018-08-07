@@ -246,6 +246,7 @@ https://github.com/ksv1986/luvcview
 IP Camera无须驱动，只要提供网口就行了。有的设备支持wifi，连网口也省了。
 
 IP Camera的应用层接口一般为网络协议接口，如TCP/IP、HTTP、RTP/RTSP等。
+
 # GPIO
 
 GPIO相对来说是最简单的一类驱动，代码在drivers/gpio文件夹下。
@@ -312,6 +313,6 @@ Keyboards --->
 
 ## active_low
 
- active_low的设置要根据硬件的连接，如果按下按键为高电平那么active_low=0，如果按下按键为低电平那么active_low=1.如果这个参数搞错了，按键松开后就不断发按键键码，表现为屏幕上乱动作。
+active_low的设置要根据硬件的连接，如果按下按键为高电平那么active_low=0，如果按下按键为低电平那么active_low=1.如果这个参数搞错了，按键松开后就不断发按键键码，表现为屏幕上乱动作。
 
 也因为active_low的存在，input_event返回的value实际上并不是GPIO的值，1表示按键按下，0表示按键抬起。

@@ -278,6 +278,10 @@ https://mp.weixin.qq.com/s/Bcxeq1BVDyw1Jc3G4MNR4g
 
 斯坦福开源Weld：高效实现数据分析的端到端优化
 
+https://mp.weixin.qq.com/s/Jv0yDTrXhBbuzzTupBmw5A
+
+OpenCV开发团队开源计算机视觉标注工具CVAT
+
 ## 贝叶斯学习
 
 https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og

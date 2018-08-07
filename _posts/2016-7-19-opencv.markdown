@@ -376,6 +376,10 @@ https://mp.weixin.qq.com/s/909FlTC_ROtlziJekcRJ9Q
 
 图形图像算法中必须要了解的设计模式(2)
 
+https://mp.weixin.qq.com/s/2aN9V8VlmugoSRk_AesOzw
+
+图形图像算法中必须要了解的设计模式(3)
+
 https://mp.weixin.qq.com/s/vgOkHsxKaFcgWDCBpY7kng
 
 如何用OpenCV、Python和深度学习实现面部识别？

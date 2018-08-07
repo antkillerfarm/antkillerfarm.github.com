@@ -326,24 +326,6 @@ https://mp.weixin.qq.com/s/SDVQSn1aVDXk_RPGuVcQgQ
 
 TensorFlow深度自动编码器入门实践
 
-# 汽车声学
-
-https://zhuanlan.zhihu.com/p/22722073
-
-当我谈汽车声学时，我在谈什么(一)
-
-https://zhuanlan.zhihu.com/p/28608243
-
-当我谈汽车声学时，我在谈什么(二)
-
-https://zhuanlan.zhihu.com/p/31240294
-
-当我谈汽车声学时，我在谈什么(三)
-
-https://zhuanlan.zhihu.com/p/34256635
-
-当我谈汽车声学时，我在谈什么(四)
-
 # Machine Learning之Python篇
 
 ## 参考（续）

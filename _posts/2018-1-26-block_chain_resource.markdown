@@ -392,6 +392,10 @@ https://mp.weixin.qq.com/s/xTsFbkKERi_mNl-o6ue3VA
 
 SAR运动补偿，自动聚焦以及图像解译
 
+https://mp.weixin.qq.com/s/ARqiy_zPghf2aKL7PewegQ
+
+雷达的主要战术指标、分类与对抗
+
 # NLP参考资源
 
 https://mp.weixin.qq.com/s/pXmYJA6-1vtHTwTNanLovQ

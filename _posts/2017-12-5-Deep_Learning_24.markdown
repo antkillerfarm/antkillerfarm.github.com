@@ -114,6 +114,10 @@ https://mp.weixin.qq.com/s/wfOzCxe3L2t11VguYLGC9Q
 
 上海交大搞出SRNN，比普通RNN也就快135倍
 
+https://mp.weixin.qq.com/s/f0sv7c-H5o5L_wy2sUonUQ
+
+CNN取代RNN？当序列建模不再需要循环网络
+
 # L2 Normalization
 
 L2 Normalization本身并不复杂，然而多数资料都只提到1维的L2 Normalization的计算公式：

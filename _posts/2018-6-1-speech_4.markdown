@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  语音识别（四）——DTW, Spectrogram, Cepstrum Analysis, Mel-Frequency Analysis
+title:  语音识别（四）——DTW, Spectrogram, Cepstrum Analysis
 category: speech 
 ---
 
@@ -98,6 +98,42 @@ https://zhuanlan.zhihu.com/p/39450321
 
 # Spectrogram
 
+## Window function
+
+Fourier transform研究的是整个时间域和频率域的关系。但实际的信号处理过程，不可能对无限长的信号进行测量和运算，而是取其有限的时间片段进行分析。做法是从信号中截取一个时间片段，然后用截取的信号时间片段进行周期延拓处理，得到虚拟的无限长的信号，然后就可以对信号进行FT、相关分析等数学处理。
+
+无限长的信号被截断以后，其频谱发生了畸变，原来集中在f(0)处的能量被分散到两个较宽的频带中去了（这种现象称之为频谱能量泄漏）。
+
+为了减少频谱能量泄漏，可采用不同的截取函数对信号进行截断，这些截断函数称为Window function。
+
+常用的Window function有：Hann window、Rectangular window、Triangular window、Hamming window、Gaussian window等。
+
+不同的窗函数对信号频谱的影响是不一样的。例如，Rectangular window主瓣窄，旁瓣大，频率识别精度最高，幅值识别精度最低；Blackman window主瓣宽，旁瓣小，频率识别精度最低，但幅值识别精度最高。
+
+对Window function更详细的叙述参见：
+
+https://en.wikipedia.org/wiki/Window_function
+
+## Hann window
+
+Hann window虽然是以Julius Ferdinand von Hann的名字命名，但却是Blackman和Tukey的作品。他们和同一实验室的Claude E. Shannon, Hendrik Wade Bode，合称为Information Age的四大先锋。
+
+>Julius Ferdinand von Hann，1839～1921，奥地利气象学家。现代气象学之父。
+
+>Ralph Beebe Blackman，1904～1990，美国数学家。长期供职于AT&T Bell Laboratories。二战时，参与了防空火炮控制系统的平滑研究。
+
+>John Wilder Tukey，1915～2000，美国数学家。Princeton University博士，长期供职于AT&T Bell Laboratories。英国皇家学会会员。Cooley–Tukey FFT算法发明者。
+
+$$w(n) = a_0 - \underbrace{(1-a_0)}_{a_1}\cdot \cos\left( \tfrac{2 \pi n}{N - 1} \right),\quad 0\le n \le N-1$$
+
+## STFT
+
+$$\mathbf{STFT}\{x(t)\}(\tau,\omega) \equiv X(\tau, \omega) = \int_{-\infty}^{\infty} x(t) w(t-\tau) e^{-j \omega t} \, dt$$
+
+上式是STFT（Short-time Fourier transform）的定义。和FT相比，STFT将FT中的被积函数$$x(t)$$，换成了$$x(t) w(t-\tau)$$。其中，w(t)是窗函数（Window function），因此STFT又叫做加窗傅立叶变换。
+
+## Spectrogram
+
 DTW是一种时域方法，作为信号处理自然少不了频域方法。这里我们先来了解一个叫声谱图的东西。
 
 ![](/images/img2/Spectrogram.png)
@@ -165,46 +201,4 @@ $$h(t)=\int_{-\infty}^\infty H(f)e^{-2\pi i ft}\mathrm{d}f$$
 这里的$$x[k]$$被称作倒谱Cepstrum（这个是一个新造出来的词，把spectrum的前面四个字母顺序倒过来就是倒谱的单词了）。
 
 而我们所关心的$$h[k]$$就是倒谱的低频部分，它在语音识别中被广泛用于描述特征。
-
-# Mel-Frequency Analysis
-
-## Mel scale
-
-Mel scale是Stevens、Volkmann和Newman于1937年发明的一种主观音阶标准。
-
->Stanley Smith Stevens，1906～1973，Harvard University心理学教授。
-
->John E. Volkmann，1905～1980，Radio Corporation of America研究员。
-
->Edwin B. Newman，1908~1989，Harvard University心理学教授。
-
-声音作为一种波动，一般以Hz作为频率差异的客观标准，然而相同频率差的两组声音，在人耳听来，其频率差（也就是所谓的音阶）实际上是不同的。因此，Stevens等人采取实验的方法，确定了人耳的主观音阶标准。
-
-该标准以Mel作为单位，规定1000Hz的声音所对应的音阶为1000Mel。
-
-Mel scale从严格的定义上并没有一个简单的公式来表示。但一般采用如下公式进行转换：
-
-$$m = 2595 \log_{10}\left(1 + \frac{f}{700}\right)$$
-
-从中可以看出，**人耳对于高频声音的分辨率实际上是不如低频声音的**。
-
-![](/images/img2/Mel_scale.png)
-
->Mel是melody的别称，有的blog上说Mel是个人，他发明了MFCC，这纯粹是胡说八道。
-
-## Window function
-
-Fourier transform研究的是整个时间域和频率域的关系。但实际的信号处理过程，不可能对无限长的信号进行测量和运算，而是取其有限的时间片段进行分析。做法是从信号中截取一个时间片段，然后用截取的信号时间片段进行周期延拓处理，得到虚拟的无限长的信号，然后就可以对信号进行FT、相关分析等数学处理。
-
-无限长的信号被截断以后，其频谱发生了畸变，原来集中在f(0)处的能量被分散到两个较宽的频带中去了（这种现象称之为频谱能量泄漏）。
-
-为了减少频谱能量泄漏，可采用不同的截取函数对信号进行截断，这些截断函数称为Window function。
-
-常用的Window function有：Rectangular window、Triangular window、Hamming window、Gaussian window等。
-
-不同的窗函数对信号频谱的影响是不一样的。例如，Rectangular window主瓣窄，旁瓣大，频率识别精度最高，幅值识别精度最低；Blackman window主瓣宽，旁瓣小，频率识别精度最低，但幅值识别精度最高。
-
-对Window function更详细的叙述参见：
-
-https://en.wikipedia.org/wiki/Window_function
 

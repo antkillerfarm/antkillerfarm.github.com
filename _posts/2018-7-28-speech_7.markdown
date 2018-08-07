@@ -6,6 +6,64 @@ category: speech
 
 # WFST（续）
 
+## Determinization
+
+Determinization：所有状态在接受某个输入后只有一条输出边，而且不包含$$\epsilon$$。
+
+这个操作的根本前提：两个自动机或者转换器是否相等，不需要每条边，每个权重都相等。只需要对于任何一个输入序列，其输出及权重相同，而不用在意权重的分布是否相同。
+
+一般使用$$\otimes$$来计算分支内的权重。使用$$\oplus$$来处理分支间最终输出的权重。
+
+![](/images/img2/determinization.png)
+
+Determinization之后的FST采用`(原始状态号,剩余权重)`的方式表示Node。例如上图中，从(0,0)到(1,0)(2,1)的边a/1上消耗权重1，原图状态1，状态2剩余权重分别是0和1，所以用(1,0)(2,1)表示。 在输出到下一个状态时候，将剩余权重加上。比如原图中d/6,这里变成d/7。
+
+## Pushing
+
+Pushing包括Weight Pushing和Label Pushing两种情况。
+
+![](/images/img2/weight_pushing.png)
+
+上图是Weight Pushing的例子。如果WFST不在乎权重的分布，而只在乎最终权重的大小的话，则可以将权重前推（Pushing），以利于最小化。
+
+![](/images/img2/label_pushing.png)
+
+上图是Label Pushing的例子，将非$$\epsilon$$的label前推。
+
+Kaldi中没有使用weight pushing。
+
+## Minimization
+
+最小化的目的是减少原图中的状态数，以及转移边数。从而减少存储空间和计算时间。
+
+最小化一般是消除相同结点。常用算法与DFA的最小化算法类似。
+
+## Pruning
+
+![](/images/img2/pruning.png)
+
+Pruning的目的是去除大于最短路径的$$\otimes$$分支。
+
+## Other
+
+除了这些常用操作之外，还有add-self-loops和remove-disambiguation-symbols等操作。这里不再赘述。
+
+## HCLG
+
+介绍完WFST的基本运算，这里来介绍一下WFST在语音识别上的应用——HCLG。
+
+![](/images/img2/HCLG.png)
+
+上图中，Language Model又名Grammar Model，Phonemic Model又名Lexicon Model，故名HCLG。
+
+这个流程的形式化描述为：
+
+$$H\circ C\circ L\circ G$$
+
+直接使用这个WFST的状态空间较大，搜索效率比较低，Mohri因此提出了一个简化方案：
+
+$$N = \pi_{\epsilon} (min(det(\tilde{H} \circ det(\tilde{C} \circ det(\tilde{L} \circ G)))))$$
+
 ## 参考
 
 https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/ParallelizingWFSTSpeechDecoders.ICASSP2016.pdf
@@ -83,6 +141,24 @@ https://blog.csdn.net/twinkle_star1314/article/details/55050138
 https://zhuanlan.zhihu.com/p/24425179
 
 End-to-End Voiceprint
+
+# 汽车声学
+
+https://zhuanlan.zhihu.com/p/22722073
+
+当我谈汽车声学时，我在谈什么(一)
+
+https://zhuanlan.zhihu.com/p/28608243
+
+当我谈汽车声学时，我在谈什么(二)
+
+https://zhuanlan.zhihu.com/p/31240294
+
+当我谈汽车声学时，我在谈什么(三)
+
+https://zhuanlan.zhihu.com/p/34256635
+
+当我谈汽车声学时，我在谈什么(四)
 
 # ASR参考资源
 

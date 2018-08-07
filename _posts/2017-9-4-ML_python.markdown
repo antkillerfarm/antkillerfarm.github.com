@@ -388,14 +388,6 @@ https://mp.weixin.qq.com/s/CExdIdtUxZi4c2B39xdYJA
 
 谷歌开源Tangent
 
-## LibROSA
-
-LibROSA是一个分析音乐和语音的库。
-
-官网：
-
-http://librosa.github.io/
-
 ## PIL
 
 PIL：Python Imaging Library，已经是Python平台事实上的图像处理标准库了。PIL功能非常强大，但API却非常简单易用。

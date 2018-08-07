@@ -242,10 +242,6 @@ https://mp.weixin.qq.com/s/DCoYcEpkH3t7WSpBBH_rLA
 
 诺基亚首席科学家范力欣：用模糊逻辑实现可解释的深度神经网络
 
-https://mp.weixin.qq.com/s/mbjVliHWT9tt7h998FU9Tg
-
-L2正则化视角下的对抗样本
-
 https://mp.weixin.qq.com/s/ZWUPaSeL4vGfoEOxI57umw
 
 为卷积模型执行加入循环和远程反馈，更完整地拟合生物视觉
@@ -285,4 +281,8 @@ https://mp.weixin.qq.com/s/MnK2LTWR9qEKiiz3OMsSMQ
 https://mp.weixin.qq.com/s/5xlSoC5sgzsAwMYMSFCjnw
 
 TextTopicNet:CMU开源无标注高精度自监督模型
+
+https://mp.weixin.qq.com/s/lrl4si8Aeh7Pl76leBSmeA
+
+Nature论文解读：用于改善加权生物网络信噪比的网络增强方法
 
