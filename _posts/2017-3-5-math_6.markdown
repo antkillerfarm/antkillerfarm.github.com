@@ -6,7 +6,39 @@ category: math
 
 # 概率分布（2）
 
-## KS检验（续）
+## 一元线性回归的显著性检验（续）
+
+由推论4可得：
+
+$$E(Q_e/\sigma^2)=n-2$$
+
+即：
+
+$$Q_e=\hat\sigma^2(n-2)\tag{4}$$
+
+由推论2和5、公式2和4，可得：
+
+$$\frac{\hat b-b}{\sqrt{\sigma^2/S_{xx}}}\bigg /\sqrt{\frac{(n-2)\hat \sigma^2}{\sigma^2}\bigg /(n-2)}\sim t(n-2)$$
+
+即：
+
+$$\frac{\hat b-b}{\hat \sigma}\sqrt{S_{xx}}\sim t(n-2)$$
+
+当假设$$H_0$$被拒绝时，认为回归效果是显著的，反之就认为回归效果不显著。
+
+不显著的原因可能有以下几种：
+
+1.影响y取值的，除了x，还有其他不可忽略因素。
+
+2.y与x的关系不是线性的，存在其他的关系。
+
+3.y与x不存在关系。
+
+## KS检验
+
+Kolmogorov–Smirnov test用于对样本是否属于某种分布进行假设检验。
+
+>注：Andrey Nikolaevich Kolmogorov，1903～1987，二十世纪俄国最伟大的数学家之一。莫斯科州立大学博士和教授。俄罗斯科学院院士，挪威科学院和英国皇家学会外籍院士。沃尔夫奖获得者（1980年）。他在数学的许多领域都有重要贡献，以他的名字命名的理论竟有30项之多。
 
 >由于Nobel Prizes没有数学奖，因此数学界的最高奖一般有三个：   
 >1.**Fields Medal**。获奖难度最高，因为有40岁的年龄限制。在国内比较知名的丘成桐、陶哲轩都是该奖的获奖者。   
@@ -168,18 +200,3 @@ $$\lim_{a\to\infty}A\ge\lim_{a\to\infty}2\pi\ln(a)=\infty$$
 
 Gabriel's horn现象不仅存在于表面积/体积中，也存在于长度/面积中，即所谓的无限长海岸线问题。对此的进一步研究，开拓了数学中的分形几何领域。
 
-# 函数连续性
-
-函数连续性本质上是刻画函数在自变量变化的情况下，函数值变化的稳定程度。
-
-## 连续函数（Continuous function）
-
-$$\forall x \in I \; \forall \epsilon > 0 \; \exists \delta > 0 \; \forall y \in I ;  \, |x - y|<\delta \, \Rightarrow \, |f(x) - f(y)| < \epsilon$$
-
-连续函数有很多种等价定义，为了方便和之后的一致连续进行对比，这里选用量词（Quantifier）逻辑的定义。
-
-这个定义实际上是个Nest定义。以$$\exists$$为界，整个Quantifier被分成3部分：定值、存在变量、变量。上边的例子实际上是说：在给定$$x, \epsilon$$的情况下，存在$$\delta$$，对所有y，结论都成立。
-
-因为x不变，所以这实际上是个定点连续的条件。因此，这种连续又叫做Pointwise continuity。
-
-通俗的说法：**f的函数曲线在区间内没有断点。**

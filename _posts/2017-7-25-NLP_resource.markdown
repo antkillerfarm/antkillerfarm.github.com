@@ -26,7 +26,75 @@ https://mp.weixin.qq.com/s/hL0n2V7lEZxNIAwP3wir6g
 
 35页自然语言处理深度学习综述，带你纵览NLP知识全貌
 
-https://www.geekhub.cn/a/1163.html
+https://mp.weixin.qq.com/s/sQ903WNSR4v367t78_VG1Q
+
+自然语言处理全家福：纵览当前NLP中的任务、数据、模型与论文
+
+https://mp.weixin.qq.com/s/mU5I7FCIwfwbYl4ED7EIXA
+
+基于深度学习的NLP研究大盘点
+
+https://mp.weixin.qq.com/s/B_hnpOp_AVsIoL8gbkL4Hw
+
+深度学习在文本领域的应用
+
+https://mp.weixin.qq.com/s/xIkYLncxmLKqLQqeq-XxAw
+
+深度学习文本分类方法综述
+
+https://mp.weixin.qq.com/s?__biz=MzIwMTQ4MzQwNQ==&mid=2653318072&idx=1&sn=a4f8912af0b1af816739a483f933803a
+
+NLP概念图及自然语言系统架构简说
+
+https://mp.weixin.qq.com/s/4-pb-G1P3GMbq02kyZ0q8A
+
+NLP存在的问题与未来的架构
+
+https://mp.weixin.qq.com/s/T3Q0XiC20jo339JOhm2Pag
+
+微软研究院Jianfeng Gao：基于深度学习的自然语言处理导论
+
+https://mp.weixin.qq.com/s/NcUHJ89DPVdB7cJttsh-xw
+
+基于神经网络的知识推理
+
+https://mp.weixin.qq.com/s/fRw4DBX_Gl5CD0kvuiS5ag
+
+最新人机对话系统简略综述
+
+https://mp.weixin.qq.com/s/sREYZGiK2OmuETrPdeJptA
+
+从冷战到深度学习：一篇图文并茂的机器翻译史
+
+http://mp.weixin.qq.com/s/k4dxj6qTGKNyoTn1uTb_aA
+
+李航：深度学习NLP的现有优势与未来挑战
+
+https://mp.weixin.qq.com/s/acCd1G1wnRZtleudUKhuWA
+
+一文概述2017年深度学习NLP重大进展与趋势
+
+https://mp.weixin.qq.com/s/5ftsfNSAb7pAizVA5m-xXw
+
+2017 年回顾：NLP、深度学习与大数据
+
+https://mp.weixin.qq.com/s/BcUB3bXrPJF0WQetWs7Law
+
+用深度学习解决自然语言处理中的7大问题，文本分类、语言建模、机器翻译等
+
+https://mp.weixin.qq.com/s/M6ufA_9jyGjDCOSDNDrIYg
+
+CMU神经网络自然语言处理课程推荐的学习资料（非教程）
+
+https://mp.weixin.qq.com/s/xHeEFuv1m1jXFig4tXZY8w
+
+自然语言处理（NLP）快速入门指南
+
+https://mp.weixin.qq.com/s/VPs6OB81K1H7_TMV9xLUVQ
+
+零基础进行神经网络语言建模
+
+https://www.msra.cn/zh-cn/news/features/ruihua-song-20161226
 
 宋睿华：好玩的文本生成
 
@@ -38,33 +106,13 @@ http://www.cnblogs.com/CheeseZH/p/5768389.html
 
 依存句法分析与语义依存分析的区别
 
-http://www.taodocs.com/p-4795349.html
-
-基于大规模问答语料的问题检索系统
-
-https://wenku.baidu.com/view/d38ab1e8856a561252d36fab.html
-
-短文本相似度计算在用户交互式问答系统中的应用
-
 https://zhuanlan.zhihu.com/p/26461511
 
 关于WordNet，我的一些用法和思路
 
-http://mp.weixin.qq.com/s/YUV2YDXCH9fS_3ckPPBsFQ
-
-手把手教你如何用TensorFlow实现基于DNN的文本分类
-
-http://mp.weixin.qq.com/s/XPlyWdfZbOR5z25Ly-bUGQ
-
-如何在Pytorch中通过OpenNMT系统实现神经机器翻译
-
 http://mp.weixin.qq.com/s?__biz=MzI4MDYzNzg4Mw==&mid=2247483922&idx=1&sn=cffbaf797cc58e303a65a8a2ae370b86
 
 句法分析（syntactic parsing）在NLP领域的应用是怎样的？
-
-https://github.com/facebookresearch/fairseq
-
-facebook的一个开源的翻译类深度学习项目。
 
 https://speechlab.sjtu.edu.cn/pages/sz128/homepage/year/10/27/survey-on-grammar-retrieval/
 
@@ -254,10 +302,6 @@ https://mp.weixin.qq.com/s/JAWDiNUfU62n8lDRG8zzRw
 
 嘿，朋友，老夫掐指一算你就是“水军”
 
-https://mp.weixin.qq.com/s/5ajhhc4mpIhoqkl5VkGnaw
-
-深度学习实现问答机器人
-
 http://blog.csdn.net/a635661820/article/details/43906731
 
 Statistical language model统计语言模型 
@@ -293,14 +337,6 @@ https://mp.weixin.qq.com/s/jk1XgnuydrsTg3HvV0CVvw
 https://mp.weixin.qq.com/s/DhiCkZd4TU4YIAm83e_vLg
 
 更近人类的对话系统自动评测方法
-
-https://mp.weixin.qq.com/s/2aKoOx18RB0GGQTzb3Tjzg
-
-Facebook开源DrQA的PyTorch实现：基于维基百科的问答系统
-
-https://mp.weixin.qq.com/s/4TC7180LmD7V6u1CdVYRFw
-
-漫谈机器阅读理解之Facebook提出的DrQA系统 
 
 https://mp.weixin.qq.com/s/9uG8lqr2Kn0vzZKyjLHNGg
 
@@ -378,59 +414,5 @@ http://mp.weixin.qq.com/s/fn9WKu0_aH2-lx6VvxC_RA
 
 生成式关键短语识别
 
-https://mp.weixin.qq.com/s/M6ufA_9jyGjDCOSDNDrIYg
 
-CMU神经网络自然语言处理课程推荐的学习资料（非教程）
-
-https://mp.weixin.qq.com/s/xHeEFuv1m1jXFig4tXZY8w
-
-自然语言处理（NLP）快速入门指南
-
-https://mp.weixin.qq.com/s/VPs6OB81K1H7_TMV9xLUVQ
-
-零基础进行神经网络语言建模
-
-http://blog.csdn.net/xizero00/article/details/51182003
-
-论文阅读：End-To-End Memory Networks
-
-https://mp.weixin.qq.com/s/jYpaljuvNf4CdlRUAgAL1w
-
-Bi-LSTM+CRF在文本序列标注中的应用
-
-https://mp.weixin.qq.com/s/OwP16MNTpFTLkpi9wnda-Q
-
-挑战深度学习与自然语言处理的极限！
-
-https://mp.weixin.qq.com/s/C7GkZk7UWk_2XsVfn1J_lg
-
-ACL 2018使用知识蒸馏提高基于搜索的结构预测
-
-https://mp.weixin.qq.com/s/SYUq1Qd-IOmVjgs7Kp4OAg
-
-如何打造智能问答引擎
-
-https://mp.weixin.qq.com/s/z2bdlhaala2ko55MYiyXNw
-
-CNN也能用于NLP任务，一文简述文本分类任务的7个模型
-
-https://mp.weixin.qq.com/s/foknrQWnBxc4b0bpkFKSdQ
-
-上海科技大学ACL2018高分论文：混合高斯隐向量文法
-
-https://zhuanlan.zhihu.com/p/37621168
-
-微博关键词抽取：借力评论信息
-
-https://blog.csdn.net/zhangxb35/article/details/78626799
-
-Text Summarization综述
-
-https://mp.weixin.qq.com/s/Mzycy0chQUNWjJYdpERBOw
-
-一文详解维基百科的开放性问答系统
-
-https://mp.weixin.qq.com/s/znafd7_N_TrQBFWvxYM_hg
-
-基于强化学习的中文零指代消解模型
 

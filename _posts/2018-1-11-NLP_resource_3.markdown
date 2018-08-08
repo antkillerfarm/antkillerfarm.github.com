@@ -6,10 +6,6 @@ category: resource
 
 # NLP参考资源
 
-https://mp.weixin.qq.com/s?__biz=MzIwMTQ4MzQwNQ==&mid=2653318072&idx=1&sn=a4f8912af0b1af816739a483f933803a
-
-NLP概念图及自然语言系统架构简说
-
 https://mp.weixin.qq.com/s/7yi67lPjseigeaqTD269mQ
 
 触类旁通，专业技能热度智能分析
@@ -94,17 +90,9 @@ https://mp.weixin.qq.com/s/Zrxi0AK0oimjKNr5kG_MMA
 
 数据挖掘之父韩家炜：文本语料库的数据挖掘
 
-https://mp.weixin.qq.com/s/4-pb-G1P3GMbq02kyZ0q8A
-
-NLP存在的问题与未来的架构
-
 https://mp.weixin.qq.com/s/Y-_Y8PLBRLE3wn1CPRogsw
 
 重磅！一文彻底读懂智能对话系统！当前研究综述和未来趋势
-
-https://mp.weixin.qq.com/s/T3Q0XiC20jo339JOhm2Pag
-
-微软研究院Jianfeng Gao：基于深度学习的自然语言处理导论
 
 https://mp.weixin.qq.com/s/joZnfPtR3vv6LJPsRrY9Jw
 
@@ -158,10 +146,6 @@ https://mp.weixin.qq.com/s/JDAlR3Z3_V0XfQlMCOM8PQ
 
 基于转移的语义依存图分析
 
-https://www.cnblogs.com/combfish/p/6708667.html
-
-(QA-LSTM)自然语言处理：智能问答IBM保险QA QA-LSTM实现笔记
-
 https://mp.weixin.qq.com/s/aJJFXwTorXJZqyu8T70ApA
 
 OpenAI的实体消歧新发现
@@ -174,21 +158,9 @@ https://github.com/brightmart/text_classification
 
 一个文本分类的代码库
 
-https://mp.weixin.qq.com/s/NcUHJ89DPVdB7cJttsh-xw
-
-基于神经网络的知识推理
-
-https://mp.weixin.qq.com/s/fRw4DBX_Gl5CD0kvuiS5ag
-
-最新人机对话系统简略综述
-
 https://mp.weixin.qq.com/s/_upoBXADzTXEduYxr6ZxRQ
 
 非自回归神经机器翻译
-
-https://mp.weixin.qq.com/s/sREYZGiK2OmuETrPdeJptA
-
-从冷战到深度学习：一篇图文并茂的机器翻译史
 
 https://mp.weixin.qq.com/s/wLnWLNWyZdBUAPfQvg01yQ
 
@@ -202,14 +174,6 @@ https://mp.weixin.qq.com/s/T1_mxvAJzTf-JtxEqsSUxA
 
 清华大学刘洋：基于深度学习的机器翻译
 
-https://mp.weixin.qq.com/s/sCpKkkf2Tj37Nr5j7S7M6Q
-
-基于Freebase的问答研究
-
-https://mp.weixin.qq.com/s/BhDy55Mj5oMArO0MKwvnKw
-
-基于异构社交网络学习的社区问答方法，同时建模问题、回答和回答者
-
 https://mp.weixin.qq.com/s/go0TK5ml_LZkLTSxrQLvfA
 
 携程“小诗机”背后的机器学习和自然语言处理技术
@@ -217,10 +181,6 @@ https://mp.weixin.qq.com/s/go0TK5ml_LZkLTSxrQLvfA
 https://mp.weixin.qq.com/s/jifGPaxdqVii3q6gG4F2ag
 
 Google工程师带你了解聊天机器人的工作原理和未来发展
-
-https://mp.weixin.qq.com/s/XTgYPCejKwy1WyQYQYXZvQ
-
-基于知识库的问答：生成查询图进行语义分析
 
 https://mp.weixin.qq.com/s/h3OXtnEOmT_YPs4QEU1Gag
 
@@ -233,10 +193,6 @@ https://mp.weixin.qq.com/s/lHhmUR-DXMceJSxwIn7QGw
 https://mp.weixin.qq.com/s/CYgnTHpQi3FDXV6RwUzi-Q
 
 神经网络结构在命名实体识别（NER）中的应用
-
-https://mp.weixin.qq.com/s/bZgis3dxMbv6AnLNyk04Og
-
-用数据做酷的事！手把手教你搭建问答系统
 
 https://mp.weixin.qq.com/s/X1h6EfLVDAnDj2pKZUqyJA
 
@@ -394,10 +350,6 @@ https://mp.weixin.qq.com/s/6x389FoDoWPgGdl8-pKzhw
 
 “博彩众长，自成一家”的神经机器翻译
 
-https://mp.weixin.qq.com/s/h51gh-9LISEBdJx8X--Lsg
-
-近期有哪些值得读的QA论文？
-
 https://mp.weixin.qq.com/s/3aipKax9Md4nG8YGrGc4Tg
 
 提高NLP语义解析准确度：融合SQL语法的生成式语义解析模型
@@ -406,3 +358,54 @@ https://mp.weixin.qq.com/s/xILU9fJhs64z8nE1-sDnOA
 
 基于递归联合注意力的句子匹配模型
 
+https://mp.weixin.qq.com/s/Dq-H4rUM19MaQb5W2DGlqA
+
+用递归神经网络，撰写一份特朗普式发言稿！
+
+https://mp.weixin.qq.com/s/VCeEz5QhGqQ5TF0lkCk40A
+
+COLING 2018 最佳论文解读：序列标注经典模型复现
+
+https://mp.weixin.qq.com/s/QUbZZokROzxUwy2kZZ7jeA
+
+Hybrid semi-Markov CRF for Neural Sequence Labeling
+
+https://mp.weixin.qq.com/s/wHweI0_LYHaW7K8jEAY74g
+
+文综提分哪家强？上海交大找AI
+
+https://mp.weixin.qq.com/s/o3rYqUDhre5KCcFzd_u8lQ
+
+命名实体识别从数据集到算法实现
+
+https://mp.weixin.qq.com/s/yXs_bLSAIPcUOIrvJ9-0Sw
+
+ACM BCB 2018 CausalTriad: 从医学文本数据中推断出新的因果关系假设
+
+https://mp.weixin.qq.com/s/rA6oTLlFWmIvGUq_XPLOKQ
+
+利用Lattice LSTM的最优中文命名实体识别方法
+
+https://mp.weixin.qq.com/s/C7GkZk7UWk_2XsVfn1J_lg
+
+ACL 2018使用知识蒸馏提高基于搜索的结构预测
+
+https://mp.weixin.qq.com/s/z2bdlhaala2ko55MYiyXNw
+
+CNN也能用于NLP任务，一文简述文本分类任务的7个模型
+
+https://mp.weixin.qq.com/s/foknrQWnBxc4b0bpkFKSdQ
+
+上海科技大学ACL2018高分论文：混合高斯隐向量文法
+
+https://zhuanlan.zhihu.com/p/37621168
+
+微博关键词抽取：借力评论信息
+
+https://blog.csdn.net/zhangxb35/article/details/78626799
+
+Text Summarization综述
+
+https://mp.weixin.qq.com/s/znafd7_N_TrQBFWvxYM_hg
+
+基于强化学习的中文零指代消解模型

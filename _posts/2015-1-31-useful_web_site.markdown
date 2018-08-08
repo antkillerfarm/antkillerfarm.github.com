@@ -468,6 +468,10 @@ https://mp.weixin.qq.com/s/_bWOYpZNjA4p7ZWM1J_4mw
 
 通信协议之序列化
 
+https://mp.weixin.qq.com/s/OJJLY5DiCa0e3UVjPtLXmw
+
+PPT中帅气的文字云，该怎么用？
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

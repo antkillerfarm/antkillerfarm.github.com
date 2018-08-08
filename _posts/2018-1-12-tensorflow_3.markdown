@@ -326,6 +326,10 @@ https://mp.weixin.qq.com/s/SDVQSn1aVDXk_RPGuVcQgQ
 
 TensorFlow深度自动编码器入门实践
 
+https://mp.weixin.qq.com/s/mZ79KAuSIJLtBEXvKwUi-w
+
+如何利用TensorFlow.js部署简单的AI版“你画我猜”图像识别应用
+
 # Machine Learning之Python篇
 
 ## 参考（续）

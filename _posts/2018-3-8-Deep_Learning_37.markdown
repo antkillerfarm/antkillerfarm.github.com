@@ -330,3 +330,7 @@ https://mp.weixin.qq.com/s/qUFjfsDtTQfAEjBCuoWHew
 
 人脸脸型分类研究现状
 
+https://mp.weixin.qq.com/s/5vx1FGgSOhF71FwHeUwaAQ
+
+清华&商汤开源CVPR2018超高精度人脸对齐算法LAB
+

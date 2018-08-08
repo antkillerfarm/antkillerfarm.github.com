@@ -198,6 +198,13 @@ https://mp.weixin.qq.com/s/bh1E8lOs0k4AecrPwEicxg
 
 如何高效提炼有效信息？阿里武大创造了一种零样本文档过滤模型
 
+https://mp.weixin.qq.com/s/gWxe90P9OdT-5pySYJfs0Q
+
+Adaptation for Neural Machine Translation
+
+>场景：假设储备了大量新闻领域双语语料，少量科技领域双语语料（或者没有），科技领域单语语料（大量、少量或者没有）的大菜鸟翻译公司，接到一个科技领域的翻译项目。如何使用现有资源去尽可能的把科技领域的翻译做好。   
+>问题：这里的科技领域就是in-domain，新闻领域是out-domain。如何使用数量有限的in-domain parallel corpus和相对丰富的out-domain parallel corpus来更好地提升in-domain translation performance。
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：

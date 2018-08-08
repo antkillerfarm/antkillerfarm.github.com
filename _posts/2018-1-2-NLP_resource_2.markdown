@@ -14,14 +14,6 @@ https://mp.weixin.qq.com/s/27Mbw2ViT8eJPJasD6tdfw
 
 神经混合模型：提升模型性能，显著降低困惑度
 
-https://mp.weixin.qq.com/s/nIMk-xl8Wzy1ANcT3ApAng
-
-百度提出问答模型GNR：检索速度提高25倍
-
-https://mp.weixin.qq.com/s/eDA6-BqPmjGBOPsOom0VIw
-
-自动组合神经网络做问答系统！
-
 https://mp.weixin.qq.com/s/vt25TVX-tcurtAC63dYYNA
 
 让聊天机器人同你聊得更带劲-对话策略学习
@@ -33,10 +25,6 @@ https://mp.weixin.qq.com/s/2dTCvWujgJ71Dsbm-pGcrA
 https://mp.weixin.qq.com/s/AqvzxiI7cNesdGt_IfVb-w
 
 Highway Networks For Sentence Classification
-
-http://mp.weixin.qq.com/s/k4dxj6qTGKNyoTn1uTb_aA
-
-李航：深度学习NLP的现有优势与未来挑战
 
 http://mp.weixin.qq.com/s/ZrFcpYf7E57j8E6zQsBexg
 
@@ -174,10 +162,6 @@ https://zhuanlan.zhihu.com/p/31453283
 
 浅谈NLP中条件语言模型(Conditioned Language Models)的生成和评估
 
-https://mp.weixin.qq.com/s/vazeuiFvCC8aIhP2uAXoew
-
-达观数据智能问答技术研究
-
 https://mp.weixin.qq.com/s/M8Awv6Tod4SEo85F8xzqqg
 
 基于半监督学习技术的达观数据文本过滤系统
@@ -250,10 +234,6 @@ https://mp.weixin.qq.com/s/-qk__SLahfssHuYsGNhKSA
 
 阿里巴巴首次近万字公布人工智能对话交互技术
 
-https://mp.weixin.qq.com/s/eaxyhk93PbEFzHk-qiniOQ
-
-ReQuest: 使用问答数据产生实体关系抽取的间接监督
-
 https://mp.weixin.qq.com/s/eJIkNjRqVdjm1eRVwzc1vg
 
 聊一聊分词原理
@@ -270,22 +250,6 @@ https://mp.weixin.qq.com/s/6mE3qPL5ag1C6ZVUsQibdg
 
 LR如何在语言理解NLU中实现文本分类
 
-https://mp.weixin.qq.com/s/1VYdCLw6q4rS91_YV4SclA
-
-理解智能问答系统（Ⅰ）
-
-https://mp.weixin.qq.com/s/x4yXjl0YXytAgp8a64ebXg
-
-智能问答开源项目之YodaQA（Ⅱ）
-
-https://mp.weixin.qq.com/s/2VPfk7jX0eBP2NZMB9igBg
-
-智能问答之使用UIMA进行文本挖掘（Ⅲ）
-
-https://mp.weixin.qq.com/s/NohUxQKHw8Z3kX_riGM10g
-
-智能问答之答案抽取（Ⅳ）
-
 https://mp.weixin.qq.com/s/0nyc8Lxb5Eb0hgT1ax6r0Q
 
 仅使用单语语料库的无监督机器翻译
@@ -298,10 +262,6 @@ https://mp.weixin.qq.com/s/4fYvp9XFyJP4fE9BYvYLBw
 
 百度AAAI 2018论文提出新型NMT模型，性能堪比深层模型
 
-https://mp.weixin.qq.com/s/acCd1G1wnRZtleudUKhuWA
-
-一文概述2017年深度学习NLP重大进展与趋势
-
 https://mp.weixin.qq.com/s/kbF8WnaVWf6nOpzvbELpOw
 
 产品评论分析系统
@@ -310,17 +270,9 @@ https://mp.weixin.qq.com/s/PSs0H237ldauSZhlMlNHXA
 
 CMU邢波：基于双向语言模型的生物医学命名实体识别，无标签数据提升NER效果
 
-https://mp.weixin.qq.com/s/5ftsfNSAb7pAizVA5m-xXw
-
-2017 年回顾：NLP、深度学习与大数据
-
 https://mp.weixin.qq.com/s/2NLckUqFrCOwaIamwWFOqQ
 
 基于深度 AND-OR 语法网络的目标识别方法
-
-https://mp.weixin.qq.com/s/Z1fqUMLjWFs0zA8f739kww
-
-2017深度学习NLP进展与趋势
 
 https://mp.weixin.qq.com/s/IVSoI6QM1uY3JLKMiha9vQ
 
@@ -329,10 +281,6 @@ https://mp.weixin.qq.com/s/IVSoI6QM1uY3JLKMiha9vQ
 https://mp.weixin.qq.com/s/C9UbA0482F8SvB27i-V_9Q
 
 微软亚洲研究院周明：自然语言对话引擎
-
-https://mp.weixin.qq.com/s/F1z7evNDqghEzSD-_Xbgfw
-
-基于卷积深度相关性计算的社区问答方法，建模问题和回答的匹配关系
 
 https://mp.weixin.qq.com/s/Ce3gOZSqkG8wZQ6X1CUE1Q
 
@@ -386,14 +334,6 @@ http://www.jianshu.com/p/0273c377c34e
 
 机器学习算法在文本分类中的应用综述
 
-https://mp.weixin.qq.com/s/BcUB3bXrPJF0WQetWs7Law
-
-用深度学习解决自然语言处理中的7大问题，文本分类、语言建模、机器翻译等
-
-https://mp.weixin.qq.com/s/GyE9qdXPGvrq12dMAf4nrQ
-
-论文推荐：QA，增强学习，知识图谱，机器阅读理解
-
 https://mp.weixin.qq.com/s/eCtqMIo3_UDxAR4fWzMjZQ
 
 站在锤子手机背后，小源科技用AI打造短信场景服务
@@ -410,11 +350,62 @@ https://mp.weixin.qq.com/s/KWWbaE2em4fEBInPoWTq8A
 
 Python实现多种模型(Naive Bayes, SVM, CNN, LSTM, etc)用于推文情感分析
 
-https://mp.weixin.qq.com/s/_klvAhH-K8tcYmamlr6FcA
-
-Logistic Regression Models分析交互式问答
-
 https://mp.weixin.qq.com/s/V3w5Iu804O6PmnBjmwCbgw
 
 常用文本特征选择
 
+https://mp.weixin.qq.com/s/VOyJu8FBIK91MsumCBaMyg
+
+NLP领域的ImageNet时代到来：词嵌入“已死”，语言模型当立
+
+https://mp.weixin.qq.com/s/5DvSVL0CRJTymtXPDvS-0w
+
+基于主题信息的神经网络作文生成模型
+
+https://mp.weixin.qq.com/s/4Tj92Mmj2-zOHfk1Tk167w
+
+白翔：复杂开放场景中的文本理解
+
+https://mp.weixin.qq.com/s/lgGDTCF3qg84njv2IeHC9A
+
+大规模集成Transformer模型，阿里达摩院如何打造WMT 2018机器翻译获胜系统
+
+https://mp.weixin.qq.com/s/5toWf90bJeSMGso6HaNTMQ
+
+腾讯提出用于文本匹配的多信道信息交叉模型，在真实任务中表现优异
+
+https://mp.weixin.qq.com/s/Z4Mv_L68QaG7KfGmA3pBwQ
+
+DeepMind论文解读：让机器更深入地理解文本
+
+https://mp.weixin.qq.com/s/F9ZV4jV3UiVuKVz1aqgv9w
+
+如何匹配两段文本的语义？
+
+https://mp.weixin.qq.com/s/0bOg1kvSR66-8rvFDqtLIQ
+
+用文本挖掘分析了5万首《全唐诗》，竟然发现这些秘密
+
+http://blog.csdn.net/xizero00/article/details/51182003
+
+论文阅读：End-To-End Memory Networks
+
+https://mp.weixin.qq.com/s/jYpaljuvNf4CdlRUAgAL1w
+
+Bi-LSTM+CRF在文本序列标注中的应用
+
+https://mp.weixin.qq.com/s/OwP16MNTpFTLkpi9wnda-Q
+
+挑战深度学习与自然语言处理的极限！
+
+http://mp.weixin.qq.com/s/YUV2YDXCH9fS_3ckPPBsFQ
+
+手把手教你如何用TensorFlow实现基于DNN的文本分类
+
+http://mp.weixin.qq.com/s/XPlyWdfZbOR5z25Ly-bUGQ
+
+如何在Pytorch中通过OpenNMT系统实现神经机器翻译
+
+https://github.com/facebookresearch/fairseq
+
+facebook的一个开源的翻译类深度学习项目。

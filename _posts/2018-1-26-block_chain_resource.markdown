@@ -430,10 +430,6 @@ https://mp.weixin.qq.com/s/eehpqW2H3wWCOa6r8jbEvQ
 
 ACL 2018 鲁棒、无偏的NLP训练方法
 
-https://mp.weixin.qq.com/s/EU0O-WR0ynI04NsPZ-bn2g
-
-无从下手落地问答系统？实用百度开源框架了解一下
-
 https://mp.weixin.qq.com/s/ffuiRE0qbglhVz__Z6FD7A
 
 这里可能是对机器智能中的文本情感计算最全面的概括了

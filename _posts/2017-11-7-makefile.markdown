@@ -180,7 +180,9 @@ Google软件构建工具Bazel FAQ
 
 ## blade
 
-blade是腾讯出品的构建工具。官网：
+blade是腾讯出品的构建工具。
+
+官网：
 
 https://github.com/chen3feng/typhoon-blade
 
@@ -196,7 +198,9 @@ https://www.ibm.com/developerworks/cn/linux/l-cn-scons/
 
 ## MSbuild
 
-MSbuild当然是微软的构建工具了。官网：
+MSbuild当然是微软的构建工具了。
+
+官网：
 
 https://msdn.microsoft.com/en-us/library/dd393574.aspx
 
@@ -208,9 +212,19 @@ MSBuild入门
 
 ## OkBuck
 
-OkBuck是Uber推出的构建工具。官网：
+OkBuck是Uber推出的构建工具。
+
+官网：
 
 https://github.com/uber/okbuck
+
+## WAF
+
+WAF是一个python写的构建工具。
+
+官网：
+
+https://waf.io
 
 # Spring
 

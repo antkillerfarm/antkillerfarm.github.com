@@ -16,6 +16,10 @@ https://mp.weixin.qq.com/s/Okolok3ZLZhgw0TQ_TROKA
 
 一文看尽国内智能驾驶格局：三条技术路线和玩家鏖战2020年
 
+https://mp.weixin.qq.com/s/Jz-VqWCyNc6nUi-2PuB8rg
+
+中美“军用无人机”发展情况及其制造商
+
 ## 课程
 
 http://selfdrivingcars.mit.edu/

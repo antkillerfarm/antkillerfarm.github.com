@@ -1,8 +1,42 @@
 ---
 layout: post
-title:  语音识别（六）——GMM-HMM, WFST
+title:  语音识别（六）——语言模型进阶, GMM-HMM, WFST
 category: speech 
 ---
+
+# 语言模型进阶
+
+## 语言理论
+
+语言理论方面主要是Chomsky提出的Chomsky hierarchy。
+
+>Avram Noam Chomsky，1928年生，University of Pennsylvania本硕（1951）+Harvard University博士。MIT教授。美国科学院、美国艺术科学院院士。   
+>他的《生成语法》被认为是20世纪理论语言学研究上最伟大的贡献，他也被誉为“现代语言学之父”。他对于形式语言的研究，在计算机科学的各领域产生了巨大的影响。这些领域包括：编译原理、AI等。
+
+| 名称 | 概述 | 形式化 | 时间复杂度 | 空间复杂度 |
+|:--:|:--:|:--:|:--:|:--:|
+| **Finite State Machines** | 正则化的语言，无嵌套 | $$a^*b^*$$ | O(n) | O(1) |
+| **Context Free Grammars** | 允许嵌套 | $$a^nb^n$$ | O(n^3) | 取决于嵌套的层数 |
+| **Context Sensitive Grammars** | 有特定的语法规则 | $$a^nb^nc^n$$ | 多项式复杂度 |  |
+| **Generalized Rewrite Rules/Turing machines** | 无任何限制 |  | NP complete |  |
+
+从中可以看出，编程语言最多也就到Context Sensitive Grammars的程度。
+
+## N-gram
+
+可以用Entropy和Perplexity评价N-gram模型的效果。一般来说，Perplexity越低，识别效果越好。
+
+## Recognition Network
+
+![](/images/img2/Recognition_Network.png)
+
+## JSGF
+
+JSpeech Grammar Format是一个用于描述ASR grammar的规范。
+
+官网：
+
+https://www.w3.org/TR/jsgf/
 
 # GMM-HMM
 
@@ -277,34 +311,4 @@ Difference的字面意思是：从A中去掉B。
 Difference的示例也可以很复杂，比如下图就不那么容易看懂了。这也是卡了我2个小时的元凶。
 
 ![](/images/img2/difference_2.png)
-
-## Connection
-
-下面的几个运算属于图优化的范畴，因此没有简单的形式化描述，而只有算法流程。但限于篇幅，这里只讲运算的含义，而不讲具体的算法流程。
-
-**既然是优化，则运算前后的FST必然是等价的。**
-
-![](/images/img2/connection.png)
-
-Connection运算用于计算FST的连通性。上图中的状态3，4和初始状态0之间没有连通，所以应该去掉。状态5没有路径到达终止状态2，所以也应该去掉。
-
-## $$\epsilon$$-Removal
-
-![](/images/img2/remove.png)
-
-$$\epsilon$$-Removal运算用于去除FST中的$$\epsilon$$-transitions。
-
-这里分为两步。
-
-**Step1：计算$$\epsilon$$-closures。**closures中两个State的距离被称作$$\epsilon$$-Distances，这里不妨用$$ED(A\to B)$$来表示。
-
-例如上图中：
-
-$$ED(0\to 3)=ED(0\to 1)+ED(1\to 3)=\epsilon:\epsilon/0.2+\epsilon:\epsilon/0.6=\epsilon:\epsilon/0.8$$
-
-**Step2：去除$$\epsilon$$-transitions。**
-
-这里以0->4之间的`a:a/1.6`为例介绍一下计算方法。首先，0->4之间并没有直接的`a:a`连线，但是3->4有`a:a`连线。因此：
-
-$$a:a/0.8+ED(0\to 3)=a:a/0.8+\epsilon:\epsilon/0.8=a:a/1.6$$
 

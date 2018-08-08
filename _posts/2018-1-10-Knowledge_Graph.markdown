@@ -300,6 +300,14 @@ https://mp.weixin.qq.com/s/CK-rtWoqjq8pb_6xK4xssQ
 
 知识图谱的前世今生与RDF的实践
 
+https://mp.weixin.qq.com/s/sCpKkkf2Tj37Nr5j7S7M6Q
+
+基于Freebase的问答研究
+
+https://mp.weixin.qq.com/s/XTgYPCejKwy1WyQYQYXZvQ
+
+基于知识库的问答：生成查询图进行语义分析
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/zXABOzbQRV7sfgAhr_WqZw
@@ -353,4 +361,8 @@ https://mp.weixin.qq.com/s/Z1ixoRmUDl17CF4k7JS4zg
 https://mp.weixin.qq.com/s/voumCoLRPJO2eHFUVGm0PA
 
 理解Scikit-Learn中分类性能度量指标
+
+https://mp.weixin.qq.com/s/JW62V3wBguSPSAkyWKAEpQ
+
+一个数据分析师眼中的数据预测与监控
 

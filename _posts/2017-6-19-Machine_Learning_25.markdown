@@ -36,6 +36,10 @@ https://zhuanlan.zhihu.com/p/39105270
 
 时间序列的表示与信息提取
 
+https://mp.weixin.qq.com/s/iah8PvIC0oZngSaNHw7gJw
+
+从上帝视角看透时间序列和数据挖掘
+
 # Tri-training
 
 ## 半监督学习

@@ -6,7 +6,15 @@ category: math
 
 # 概率分布（1）
 
-## 多项分布和狄利克雷分布（续）
+## 多项分布和狄利克雷分布
+
+伯努利试验只有两个可能的实验结果，如果实验结果的个数超过2个，那么二项分布就变成了多项分布（multinomial distribution）：
+
+$$f(x_1,\ldots,x_k;n,p_1,\ldots,p_k)=\frac{n!}{x_1!\cdots x_k!} p_1^{x_1} \cdots p_k^{x_k}$$
+
+多项分布对应的共轭先验分布是狄利克雷分布（Dirichlet distribution）：
+
+$$f \left(x_1,\cdots, x_{K}; \alpha_1,\cdots, \alpha_K \right) = \frac{1}{\mathrm{B}(\boldsymbol\alpha)} \prod_{i=1}^K x_i^{\alpha_i - 1}\tag{1}$$
 
 这里引入向量表示的贝塔函数：
 
@@ -273,40 +281,4 @@ https://mp.weixin.qq.com/s/AFTaowkCz1pfFzaMDen-RA
 Scalar multiplication的定义如下：
 
 $$c\mathbf{a}=c[a_1,\dots,a_n]=[ca_1,\dots,ca_n]$$
-
-## 向量的点积
-
-Dot product，又称inner product。
-
-代数定义：
-
-$$\mathbf{a}\cdot\mathbf{b}=\sum_{i=1}^n a_ib_i=a_1b_1+a_2b_2+\cdots+a_nb_n$$
-
-几何定义：
-
-$$\mathbf{a}\cdot\mathbf{b}=\|\mathbf{a}\|\ \|\mathbf{b}\|\cos(\theta)$$
-
-复变积分定义：
-
-$$\left\langle \psi , \chi \right\rangle = \int_a^b \psi(x) \overline{\chi(x)} d x $$
-
-## 矩阵的积
-
-matrix product的定义如下（以3阶方阵为例）：
-
-$$\mathbf{AB} = \begin{pmatrix}
-a & b & c \\
-p & q & r \\
-u & v & w
-\end{pmatrix} \begin{pmatrix}
-\alpha & \beta & \gamma \\
-\lambda & \mu & \nu \\
-\rho & \sigma & \tau \\
-\end{pmatrix} =\begin{pmatrix}
-a\alpha + b\lambda + c\rho & a\beta + b\mu + c\sigma & a\gamma + b\nu + c\tau \\
-p\alpha + q\lambda + r\rho & p\beta + q\mu + r\sigma & p\gamma + q\nu + r\tau \\
-u\alpha + v\lambda + w\rho & u\beta + v\mu + w\sigma & u\gamma + v\nu + w\tau
-\end{pmatrix}$$
-
-可以看出，积矩阵的每个元素是矩阵A、B相应行列向量的内积。
 

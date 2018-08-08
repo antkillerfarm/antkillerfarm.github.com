@@ -6,6 +6,36 @@ category: speech
 
 # WFST（续）
 
+## Connection
+
+下面的几个运算属于图优化的范畴，因此没有简单的形式化描述，而只有算法流程。但限于篇幅，这里只讲运算的含义，而不讲具体的算法流程。
+
+**既然是优化，则运算前后的FST必然是等价的。**
+
+![](/images/img2/connection.png)
+
+Connection运算用于计算FST的连通性。上图中的状态3，4和初始状态0之间没有连通，所以应该去掉。状态5没有路径到达终止状态2，所以也应该去掉。
+
+## $$\epsilon$$-Removal
+
+![](/images/img2/remove.png)
+
+$$\epsilon$$-Removal运算用于去除FST中的$$\epsilon$$-transitions。
+
+这里分为两步。
+
+**Step1：计算$$\epsilon$$-closures。**closures中两个State的距离被称作$$\epsilon$$-Distances，这里不妨用$$ED(A\to B)$$来表示。
+
+例如上图中：
+
+$$ED(0\to 3)=ED(0\to 1)+ED(1\to 3)=\epsilon:\epsilon/0.2+\epsilon:\epsilon/0.6=\epsilon:\epsilon/0.8$$
+
+**Step2：去除$$\epsilon$$-transitions。**
+
+这里以0->4之间的`a:a/1.6`为例介绍一下计算方法。首先，0->4之间并没有直接的`a:a`连线，但是3->4有`a:a`连线。因此：
+
+$$a:a/0.8+ED(0\to 3)=a:a/0.8+\epsilon:\epsilon/0.8=a:a/1.6$$
+
 ## Determinization
 
 Determinization：所有状态在接受某个输入后只有一条输出边，而且不包含$$\epsilon$$。

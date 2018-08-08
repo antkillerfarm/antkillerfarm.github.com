@@ -4,7 +4,21 @@ title:  数学狂想曲（七）——函数连续性, 莱洛三角形
 category: math 
 ---
 
-# 函数连续性（续）
+# 函数连续性
+
+函数连续性本质上是刻画函数在自变量变化的情况下，函数值变化的稳定程度。
+
+## 连续函数（Continuous function）
+
+$$\forall x \in I \; \forall \epsilon > 0 \; \exists \delta > 0 \; \forall y \in I ;  \, |x - y|<\delta \, \Rightarrow \, |f(x) - f(y)| < \epsilon$$
+
+连续函数有很多种等价定义，为了方便和之后的一致连续进行对比，这里选用量词（Quantifier）逻辑的定义。
+
+这个定义实际上是个Nest定义。以$$\exists$$为界，整个Quantifier被分成3部分：定值、存在变量、变量。上边的例子实际上是说：在给定$$x, \epsilon$$的情况下，存在$$\delta$$，对所有y，结论都成立。
+
+因为x不变，所以这实际上是个定点连续的条件。因此，这种连续又叫做Pointwise continuity。
+
+通俗的说法：**f的函数曲线在区间内没有断点。**
 
 ## 一致连续（Uniform continuity）
 
@@ -214,16 +228,3 @@ http://twistedsifter.com/2012/11/animated-gifs-that-explain-how-things-work/
 
 >Henry Ernest Dudeney，1857～1930，英国上世纪最知名的数学科普作家。
 
-# 数学家轶事
-
-有一次正在做穿过欧洲的旅行，他与一个陌生人聊天，他很谦虚的自我介绍：“我是Daniel Bernoullis。”
-
-那个人当时就怒了，说：“我还是Issac Newton（牛顿）呢。”
-
-Daniel从此之后在很多的场合深情的回忆起这一次经历把他当作他曾经听过的最衷心的赞扬。
-
-----
-
-Klein和Poincare都在研究自守函数什么的，对于2维的情况，Poincare把自己的结果用Fuchs的名字来命名，因为这个人的东西他曾经看过，并且有很大的影响，Klein感到特别的不爽，他也得到了这样的结果。然而，Fuchs本人对此却一无所知，如此冠名，他自然觉得很不妥。
-
-后来，他和Poincare分别做3维的情况，无奈自己不是Poincare那样的天才，用功过度，体力不支，身体都垮了，从此结束了自己创造性的数学生涯。Poincare自己也不在乎这个东西，于是把3维自己得到的群命名为Klein群。

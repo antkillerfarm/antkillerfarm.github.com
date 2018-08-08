@@ -124,7 +124,23 @@ Hann window虽然是以Julius Ferdinand von Hann的名字命名，但却是Black
 
 >John Wilder Tukey，1915～2000，美国数学家。Princeton University博士，长期供职于AT&T Bell Laboratories。英国皇家学会会员。Cooley–Tukey FFT算法发明者。
 
+$$w(n) = \sum_{k = 0}^{K} (-1)^k a_k\; \cos\left( \frac{2 \pi k n}{N-1} \right),\quad 0\le n \le N-1$$
+
+上式是Cosine-sum windows的计算公式，令K=1，则：
+
 $$w(n) = a_0 - \underbrace{(1-a_0)}_{a_1}\cdot \cos\left( \tfrac{2 \pi n}{N - 1} \right),\quad 0\le n \le N-1$$
+
+这类Window function有好几个特例：
+
+Hann window：
+
+$$w(n) = 0.5\; \left[1 - \cos \left ( \frac{2 \pi n}{N-1} \right) \right] = \sin^2 \left ( \frac{\pi n}{N-1} \right)$$
+
+Hamming window：
+
+$$w(n) = 0.54 - 0.46\cdot \cos\left( \tfrac{2 \pi n}{N - 1}\right)$$
+
+>Richard Wesley Hamming，1915～1998，美国数学家。University of Chicago本科（1937）+University of Nebraska硕士（1939）+UIUC博士（1942）。参与曼哈顿计划，后长期供职于Bell Lab。通信和计算机工程领域的宗师级人物，美国工程院院士，图灵奖得主（1968）。Hamming code 、Hamming distance等都是他的贡献。
 
 ## STFT
 
@@ -176,29 +192,4 @@ DTW是一种时域方法，作为信号处理自然少不了频域方法。这�
 
 为了达到这个目标，我们需要Play a Mathematical Trick。这个Trick是什么呢？就是对频谱做FFT。
 
-这里，我们对Fourier transform做一个简单的回顾。
-
-设h(t)是一个时域函数，而H(f)是一个频域函数，则Fourier transform为：
-
-$$H(f)=\int_{-\infty}^\infty h(t)e^{2\pi i ft}\mathrm{d}t$$
-
-inverse Fourier transformation为：
-
-$$h(t)=\int_{-\infty}^\infty H(f)e^{-2\pi i ft}\mathrm{d}f$$
-
-因此，对频谱做FFT，也被叫做inverse FFT，简称IFFT。
-
-传统的IFFT的结果是一个时域函数，然而这里是对log frequency domain做IFFT，因此，它的值域只能被称作pseudo-frequency domain。
-
-从上图可以看出，**Spectral Envelope主要是低频成分，而Spectral details主要是高频成分。**
-
-![](/images/img2/Cepstral_5.png)
-
-显然，如果把Spectral Envelope和Spectral details叠加起来就是原来的频谱信号了。
-
-换句话说，我们知道了$$\log X[k]$$，就可以求出$$x[k]$$，经过低通滤波就可以得到$$h[k]$$。
-
-这里的$$x[k]$$被称作倒谱Cepstrum（这个是一个新造出来的词，把spectrum的前面四个字母顺序倒过来就是倒谱的单词了）。
-
-而我们所关心的$$h[k]$$就是倒谱的低频部分，它在语音识别中被广泛用于描述特征。
 

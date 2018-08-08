@@ -1,8 +1,38 @@
 ---
 layout: post
-title:  语音识别（五）——Mel-Frequency Analysis, FBank, 语音识别的评价指标, 声学模型进阶, 语言模型进阶
+title:  语音识别（五）——Mel-Frequency Analysis, FBank, 语音识别的评价指标, 声学模型进阶
 category: speech 
 ---
+
+# Cepstrum Analysis（续）
+
+这里，我们对Fourier transform做一个简单的回顾。
+
+设h(t)是一个时域函数，而H(f)是一个频域函数，则Fourier transform为：
+
+$$H(f)=\int_{-\infty}^\infty h(t)e^{2\pi i ft}\mathrm{d}t$$
+
+inverse Fourier transformation为：
+
+$$h(t)=\int_{-\infty}^\infty H(f)e^{-2\pi i ft}\mathrm{d}f$$
+
+因此，对频谱做FT，也被叫做inverse FT，简称IFT。
+
+>从上式还可以看出，FT和IFT的公式非常类似，因此从编程角度，一个FT函数既可以做FT，也可以稍作修改后，做IFT运算。因此在不强调目的性的情况下，IFT也可以直接称为FT。比如，MFCC特征最后的IDFT变换，实际上是DCT变换。
+
+传统的IFFT的结果是一个时域函数，然而这里是对log frequency domain做IFFT，因此，它的值域只能被称作pseudo-frequency domain。
+
+从上图可以看出，**Spectral Envelope主要是低频成分，而Spectral details主要是高频成分。**
+
+![](/images/img2/Cepstral_5.png)
+
+显然，如果把Spectral Envelope和Spectral details叠加起来就是原来的频谱信号了。
+
+换句话说，我们知道了$$\log X[k]$$，就可以求出$$x[k]$$，经过低通滤波就可以得到$$h[k]$$。
+
+这里的$$x[k]$$被称作倒谱Cepstrum（这个是一个新造出来的词，把spectrum的前面四个字母顺序倒过来就是倒谱的单词了）。
+
+而我们所关心的$$h[k]$$就是倒谱的低频部分，它在语音识别中被广泛用于描述特征。
 
 # Mel-Frequency Analysis
 
@@ -90,6 +120,12 @@ DCT还有一个特点是，对于一般的语音信号，这一步的结果的�
 
 类似的，还有Discrete Sine Transform，它和DCT的区别在于：DST用于实奇对称数据，而DCT用于实偶对称数据。这里的对称指的是采样对称，而非物理数值上的对称。
 
+除此之外，针对人耳的听觉特性，还有Constant-Q transform。它与STFT的公式基本相同，差别在于后者的filter的中心频点间隔均匀，而前者的间隔越往高频越稀疏：
+
+$$\delta f_k = 2^{1/n} \cdot \delta f_{k-1} = \left( 2^{1/n} \right)^k \cdot \delta f_\text{min}$$
+
+上式中的$$f_k$$即为filter的中心频点。
+
 ## 参考
 
 http://blog.csdn.net/zouxy09/article/details/9156785
@@ -110,7 +146,7 @@ https://zhuanlan.zhihu.com/p/26680599
 
 # FBank
 
-FBank和MFCC的计算步骤基本一致，只是没有做IDFT而已。
+Filter bank和MFCC的计算步骤基本一致，只是没有做IDFT而已。
 
 FBank与MFCC对比：
 
@@ -253,38 +289,4 @@ VAD综述
 Pronunciation Dict用于将文本转换成对应的发音。比较常用的有CMU的发音词典，用于美国英语，包含了100K的单词。用法参见《LSTM Speech Recognition实战》。
 
 然而，无论多大的词典都会有遇到Unknown Words的情况。一般可根据现有发音构建统计模型，来预测发音。这也是符合人们的认知规律的：人遇到一个陌生的新词，也会根据过往的经验，来预测词的发音。通常这样做，会有70%～85%的准确率。
-
-# 语言模型进阶
-
-## 语言理论
-
-语言理论方面主要是Chomsky提出的Chomsky hierarchy。
-
->Avram Noam Chomsky，1928年生，University of Pennsylvania本硕（1951）+Harvard University博士。MIT教授。美国科学院、美国艺术科学院院士。   
->他的《生成语法》被认为是20世纪理论语言学研究上最伟大的贡献，他也被誉为“现代语言学之父”。他对于形式语言的研究，在计算机科学的各领域产生了巨大的影响。这些领域包括：编译原理、AI等。
-
-| 名称 | 概述 | 形式化 | 时间复杂度 | 空间复杂度 |
-|:--:|:--:|:--:|:--:|:--:|
-| **Finite State Machines** | 正则化的语言，无嵌套 | $$a^*b^*$$ | O(n) | O(1) |
-| **Context Free Grammars** | 允许嵌套 | $$a^nb^n$$ | O(n^3) | 取决于嵌套的层数 |
-| **Context Sensitive Grammars** | 有特定的语法规则 | $$a^nb^nc^n$$ | 多项式复杂度 |  |
-| **Generalized Rewrite Rules/Turing machines** | 无任何限制 |  | NP complete |  |
-
-从中可以看出，编程语言最多也就到Context Sensitive Grammars的程度。
-
-## N-gram
-
-可以用Entropy和Perplexity评价N-gram模型的效果。一般来说，Perplexity越低，识别效果越好。
-
-## Recognition Network
-
-![](/images/img2/Recognition_Network.png)
-
-## JSGF
-
-JSpeech Grammar Format是一个用于描述ASR grammar的规范。
-
-官网：
-
-https://www.w3.org/TR/jsgf/
 

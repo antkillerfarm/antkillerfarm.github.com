@@ -6,6 +6,42 @@ category: math
 
 # 矩阵&向量的积（续）
 
+## 向量的点积
+
+Dot product，又称inner product。
+
+代数定义：
+
+$$\mathbf{a}\cdot\mathbf{b}=\sum_{i=1}^n a_ib_i=a_1b_1+a_2b_2+\cdots+a_nb_n$$
+
+几何定义：
+
+$$\mathbf{a}\cdot\mathbf{b}=\|\mathbf{a}\|\ \|\mathbf{b}\|\cos(\theta)$$
+
+复变积分定义：
+
+$$\left\langle \psi , \chi \right\rangle = \int_a^b \psi(x) \overline{\chi(x)} d x $$
+
+## 矩阵的积
+
+matrix product的定义如下（以3阶方阵为例）：
+
+$$\mathbf{AB} = \begin{pmatrix}
+a & b & c \\
+p & q & r \\
+u & v & w
+\end{pmatrix} \begin{pmatrix}
+\alpha & \beta & \gamma \\
+\lambda & \mu & \nu \\
+\rho & \sigma & \tau \\
+\end{pmatrix} =\begin{pmatrix}
+a\alpha + b\lambda + c\rho & a\beta + b\mu + c\sigma & a\gamma + b\nu + c\tau \\
+p\alpha + q\lambda + r\rho & p\beta + q\mu + r\sigma & p\gamma + q\nu + r\tau \\
+u\alpha + v\lambda + w\rho & u\beta + v\mu + w\sigma & u\gamma + v\nu + w\tau
+\end{pmatrix}$$
+
+可以看出，积矩阵的每个元素是矩阵A、B相应行列向量的内积。
+
 ## 向量的向量积
 
 Cross product是一个向量，其定义如下：
@@ -205,13 +241,3 @@ https://mp.weixin.qq.com/s/6I2-5zWbpAUSgoHRUEkj3Q
 
 通俗理解信息熵
 
-## 最大信息熵原理
-
-事实上，有些随机事件其概率往往不可能直接计算，平常我们对具体问题作出处理时，掌握的仅仅是一些与随机事件有关的随机变量的统计平均值，以及某些其他制约条件。而当一个随机变量的平均值给定时，还可以有多种概率分布与之相容。现在的问题是如何从这些相容的概率分布中挑选出“最可几”的分布来作为实际上的分布。显然，要做到这点，必须有个挑选标准，最大信息熵原理就可作为这种挑选标准。
-
->注：最可几分布（Most Probable Distribution），又称最概然分布。它表征在特定系统的特定状态下，出现概率最大的分布。从它的定义可以看出，它实际上并不是某种具体的分布，而更像是符合某一特定目标的分布。   
->比如，麦克斯韦-玻尔兹曼分布、费米-狄拉克分布和玻色-爱因斯坦分布，是热力学常见的三种最可几分布。但它们所处的系统，以及系统的状态各不相同。
-
-最大熵原理是1957年由E.T.Jaynes提出的，其主要思想是，在只掌握关于未知分布的部分知识时，应该选取符合这些知识但熵值最大的概率分布。其实质就是，在已知部分知识的前提下，关于未知分布最合理的推断就是符合已知知识最不确定或最随机的推断，这是我们可以作出的唯一不偏不倚的选择，任何其它的选择都意味着我们增加了其它的约束和假设，这些约束和假设根据我们掌握的信息无法作出。
-
->注：Edwin Thompson Jaynes，1922～1998，美国统计学家。普林斯顿大学博士，华盛顿大学教授。

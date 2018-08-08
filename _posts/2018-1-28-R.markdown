@@ -373,6 +373,10 @@ https://mp.weixin.qq.com/s/83494v_5XDPlyNIccMINtQ
 
 美团R语言数据运营实战
 
+https://mp.weixin.qq.com/s/57j-YxA4ODMy0RybI8n7uQ
+
+教你在R中使用Keras和TensorFlow构建深度学习模型
+
 # DL参考资源
 
 https://zhuanlan.zhihu.com/p/36520673

@@ -309,6 +309,10 @@ aubio是一个C语言的音频分析库，提供了提取fbank、MFCC等特征�
 
 https://github.com/aubio/aubio
 
+安装：
+
+`sudo apt-get install python3-aubio python-aubio aubio-tools libaubio-dev`
+
 参考：
 
 http://www.cnblogs.com/daleloogn/p/4510137.html

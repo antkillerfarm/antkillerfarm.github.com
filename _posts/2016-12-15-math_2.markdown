@@ -28,6 +28,8 @@ $$F(s) =\int_0^\infty e^{-st} f(t)\mathrm{d}t,s = \sigma + i \omega$$
 
 此外，傅立叶变换和拉普拉斯变换之所以在计算上比较方便，还在于**指数函数正好是线性微分方程的特征函数**。
 
+由于一阶微分方程$$\frac{dy}{dt}=\lambda y$$的解是$$e^{\lambda t}$$。由线性代数中的特征向量可类比得到，$$e^{\lambda t}$$是线性微分方程的特征函数，从而可以将线性微分方程转换为线性方程。
+
 参考：
 
 https://www.zhihu.com/question/22085329
@@ -274,15 +276,4 @@ $$先验参数分布+数据分布\to 后验分布$$
 http://blog.csdn.net/u010945683/article/details/49149815
 
 共轭先验分布
-
-## 多项分布和狄利克雷分布
-
-伯努利试验只有两个可能的实验结果，如果实验结果的个数超过2个，那么二项分布就变成了多项分布（multinomial distribution）：
-
-$$f(x_1,\ldots,x_k;n,p_1,\ldots,p_k)=\frac{n!}{x_1!\cdots x_k!} p_1^{x_1} \cdots p_k^{x_k}$$
-
-多项分布对应的共轭先验分布是狄利克雷分布（Dirichlet distribution）：
-
-$$f \left(x_1,\cdots, x_{K}; \alpha_1,\cdots, \alpha_K \right) = \frac{1}{\mathrm{B}(\boldsymbol\alpha)} \prod_{i=1}^K x_i^{\alpha_i - 1}\tag{1}$$
-
 

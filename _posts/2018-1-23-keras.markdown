@@ -84,9 +84,9 @@ https://mp.weixin.qq.com/s/tyWUxJndljOSZT1-aYPgeg
 
 Keras入门必看教程
 
-https://mp.weixin.qq.com/s/57j-YxA4ODMy0RybI8n7uQ
+https://kexue.fm/archives/5765
 
-教你在R中使用Keras和TensorFlow构建深度学习模型
+让Keras更酷一些！Keras模型杂谈
 
 https://mp.weixin.qq.com/s/H-oAETObn0SLUxK8--xudg
 

@@ -237,14 +237,3 @@ https://www.zhihu.com/question/22913867
 
 怎样理解和区分中心极限定理与大数定律？
 
-# 数学家轶事（续）
-
-高斯给出了正十七边形可以尺规作图的理论可能性，然而他并不会做。第一个真正的正十七边形尺规作图法直到1825年才由约翰尼斯·厄钦格（Johannes Erchinger）给出。现在比较通行的做法是1893年Herbert William Richmond给出的。距离高斯给出证明（1801年），差不多过了100年。
-
-----
-
-https://mp.weixin.qq.com/s/zozViMoimcL6nJvyBnTQtQ
-
-八岁小孩眼里的欧拉公式
-
-这里讲的是拓扑学中的欧拉公式：V−E+R=2，然而成年人的世界里没有Easy这个词，V−E+R会不会等于其他数呢？于是就有了Euler characteristic。
