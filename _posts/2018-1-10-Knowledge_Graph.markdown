@@ -308,6 +308,10 @@ https://mp.weixin.qq.com/s/XTgYPCejKwy1WyQYQYXZvQ
 
 基于知识库的问答：生成查询图进行语义分析
 
+https://mp.weixin.qq.com/s/kTrBLTH46KtfcAK4aZ2H0A
+
+请查收本周份“知识图谱”专题论文解读
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/zXABOzbQRV7sfgAhr_WqZw

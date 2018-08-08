@@ -198,3 +198,7 @@ https://mp.weixin.qq.com/s/6dKticG2I2zqlxnZ3W0ZgQ
 
 “猜你所想，答你所问”，携程智能客服算法实践
 
+https://mp.weixin.qq.com/s/yiAC6SddIFFo3bR351b_0Q
+
+Embodied Question Answering
+

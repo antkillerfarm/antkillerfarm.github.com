@@ -94,6 +94,14 @@ https://mp.weixin.qq.com/s/VPs6OB81K1H7_TMV9xLUVQ
 
 零基础进行神经网络语言建模
 
+https://mp.weixin.qq.com/s/nMX5YNdJcLc6Hwr63qHzrA
+
+188页PPT帮你理解深度学习在智能对话系统中应用
+
+https://mp.weixin.qq.com/s/RSWF5XxH3B1eQvY_DlEwew
+
+深度学习、机器学习与NLP的前世今生
+
 https://www.msra.cn/zh-cn/news/features/ruihua-song-20161226
 
 宋睿华：好玩的文本生成
@@ -318,18 +326,6 @@ https://mp.weixin.qq.com/s/wH-YYzifsEqMCD_4n8B-Kw
 
 12张图看懂Gartner《智能客服机器人行业最佳实践》报告
 
-https://mp.weixin.qq.com/s/PRhhpoYqjMSZCPgrcfqibw
-
-基于序列到序列模型的句子级复述生成
-
-https://mp.weixin.qq.com/s/oMKhVtCTmQKLTmhMx008MA
-
-基于背景知识的对话模型
-
-https://mp.weixin.qq.com/s/PGj1IjLPz-RmTaLbcnYNCw
-
-自然语言处理领军人刘兵：没有终身学习，机器不可能智能
-
 https://mp.weixin.qq.com/s/jk1XgnuydrsTg3HvV0CVvw
 
 当深度学习遇见自动文本摘要
@@ -341,10 +337,6 @@ https://mp.weixin.qq.com/s/DhiCkZd4TU4YIAm83e_vLg
 https://mp.weixin.qq.com/s/9uG8lqr2Kn0vzZKyjLHNGg
 
 从文本挖掘综述分类、聚类和信息提取等算法
-
-https://mp.weixin.qq.com/s/p8gEbamEbJBp_wzsy8_21A
-
-词义的动态变迁
 
 https://mp.weixin.qq.com/s/62b7kK0StmwTP_DGusE0MA
 
@@ -413,6 +405,3 @@ https://mp.weixin.qq.com/s/9HeLayEDTUCy_ACJUV8fYA
 http://mp.weixin.qq.com/s/fn9WKu0_aH2-lx6VvxC_RA
 
 生成式关键短语识别
-
-
-

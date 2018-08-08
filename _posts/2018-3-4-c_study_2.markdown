@@ -102,4 +102,19 @@ https://mp.weixin.qq.com/s/8LV27Hn5JKS7Zo1omRMxzA
 
 基于汉语短文本对话的立场检测系统理论与实践
 
+https://mp.weixin.qq.com/s/PRhhpoYqjMSZCPgrcfqibw
+
+基于序列到序列模型的句子级复述生成
+
+https://mp.weixin.qq.com/s/oMKhVtCTmQKLTmhMx008MA
+
+基于背景知识的对话模型
+
+https://mp.weixin.qq.com/s/PGj1IjLPz-RmTaLbcnYNCw
+
+自然语言处理领军人刘兵：没有终身学习，机器不可能智能
+
+https://mp.weixin.qq.com/s/p8gEbamEbJBp_wzsy8_21A
+
+词义的动态变迁
 
