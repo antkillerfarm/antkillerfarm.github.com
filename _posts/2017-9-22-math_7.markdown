@@ -4,6 +4,20 @@ title:  数学狂想曲（七）——函数连续性, 莱洛三角形
 category: math 
 ---
 
+# Gabriel's Horn（续）
+
+$$V=\pi\int\limits_1^a\left(\frac{1}{x}\right)^2\mathrm{d}x=\pi\left(1-\frac{1}{a}\right)$$
+
+$$\lim_{a\to\infty}V=\lim_{a\to\infty}\pi\left(1-\frac{1}{a}\right)=\pi\cdot\lim_{a\to\infty}\left(1-\frac{1}{a}\right)=\pi$$
+
+$$A=2\pi\int\limits_1^a {\frac{1}{x}}\sqrt{1+\left(-\frac{1}{x^2}\right)^2}\mathrm{d}x > 2\pi\int\limits_1^a \frac{\mathrm{d}x}{x}=2\pi\ln(a)$$
+
+$$\lim_{a\to\infty}A\ge\lim_{a\to\infty}2\pi\ln(a)=\infty$$
+
+但是反过来的情况，即表面积有限，而体积无限的情况，也就是所谓的Gabriel's horn逆现象，是不存在的。——实际上，众所周知的是表面积一定的形状中，球形体积最大。
+
+Gabriel's horn现象不仅存在于表面积/体积中，也存在于长度/面积中，即所谓的无限长海岸线问题。对此的进一步研究，开拓了数学中的分形几何领域。
+
 # 函数连续性
 
 函数连续性本质上是刻画函数在自变量变化的情况下，函数值变化的稳定程度。
@@ -189,42 +203,4 @@ Michael I. Jordan最新清华授课笔记！
 上图是Reuleaux triangle的尺规做图方法。
 
 Reuleaux triangle是“**除了圆形以外，还有什么形状的下水道盖不会掉入下水道？**”这个问题的一个答案。这也是所有定宽曲线的特性。但Reuleaux triangle的特殊之处在于：它是定宽曲线所能构成的面积最小的图形。因此它做的井盖非常省铁。
-
-![](/images/article/Manhole_cover_for_reclaimed_water_SFWD.jpg)
-
-![](/images/article/Rotation_of_Reuleaux_triangle.gif)
-
-上图展示了零件上的方孔是如何钻出来的。类似的还有：
-
-![](/images/article/delta_curves.gif)
-
-后者叫做delta curves，不过它并不是个定宽曲线。
-
-当然，Reuleaux triangle也有它的问题：
-
-![](/images/article/Reuleaux_triangle_2.jpg)
-
-Reuleaux triangle形状的轮子，在上面铺板子跑，当然毫无问题。但如果安装车轴的话，那就蛋碎了...
-
-参考：
-
-https://en.wikipedia.org/wiki/Curve_of_constant_width
-
-https://en.wikipedia.org/wiki/Reuleaux_triangle
-
-https://en.wikipedia.org/wiki/Reuleaux_tetrahedron
-
-http://www.cnblogs.com/hxsyl/archive/2012/07/05/2578448.html
-
-莱洛三角形和定宽曲线
-
-http://twistedsifter.com/2012/11/animated-gifs-that-explain-how-things-work/
-
-20 Animated Gifs that Explain How Things Work
-
-# hinged dissections
-
-![](/images/img2/Haberdasher-anm-01.gif)
-
->Henry Ernest Dudeney，1857～1930，英国上世纪最知名的数学科普作家。
 

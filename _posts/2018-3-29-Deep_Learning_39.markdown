@@ -80,6 +80,10 @@ https://mp.weixin.qq.com/s/EPwsQ_005CYNlCK_82SYWQ
 
 ## 参考
 
+https://blog.csdn.net/liuxiao214/article/category/6940697
+
+某GAN专栏
+
 https://mp.weixin.qq.com/s/oCDlhzjOYTIhsr5JuoRCJQ
 
 IRGAN：大一统信息检索模型的博弈竞争

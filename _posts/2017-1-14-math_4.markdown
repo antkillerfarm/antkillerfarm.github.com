@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（四）——软件滤波算法, 玻尔兹曼分布
+title:  数学狂想曲（四）——矩阵&向量的积, 软件滤波算法, 玻尔兹曼分布
 category: math 
 ---
 
@@ -86,6 +86,8 @@ $$\begin{align}\mathbf{u} \otimes \mathbf{v} = \mathbf{u} \mathbf{v}^\mathrm{T}
 = \begin{bmatrix}u_1v_1 & u_1v_2 & u_1v_3 \\ u_2v_1 & u_2v_2 & u_2v_3 \\ u_3v_1 & u_3v_2 & u_3v_3 \\ u_4v_1 & u_4v_2 & u_4v_3\end{bmatrix}\end{align}$$
 
 可以看出，Tensor product和Cartesian product，虽然形式上都是各向量的组合，然而前者是2维的，而后者是1维的。
+
+>外积这个术语，在中文中也可以指Cross product，所以最好避免使用外积这个术语，避免混淆。
 
 ## 矩阵的张量积
 

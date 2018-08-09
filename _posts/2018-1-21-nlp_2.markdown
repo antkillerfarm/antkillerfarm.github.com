@@ -313,6 +313,8 @@ https://github.com/aubio/aubio
 
 `sudo apt-get install python3-aubio python-aubio aubio-tools libaubio-dev`
 
+aubio的fft结果是以极坐标的格式保存的，而LibROSA则是以平面坐标的格式保存的。
+
 参考：
 
 http://www.cnblogs.com/daleloogn/p/4510137.html

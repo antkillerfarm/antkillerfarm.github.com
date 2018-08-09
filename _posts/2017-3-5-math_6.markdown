@@ -105,6 +105,10 @@ $$\langle a,b\rangle=a_0b_0+a_1b_1+\dots+a_nb_n$$
 
 $$\mathcal{F}\{f * g\} = k\cdot \mathcal{F}\{f\}\cdot \mathcal{F}\{g\}$$
 
+不管怎么组合，**自相关&互相关&卷积实际上都是向量的内积运算**。
+
+除此之外，还有利用**向量张量积运算**的**相关矩阵**。同样的，也有自相关矩阵和互相关矩阵。
+
 # 闵可夫斯基距离
 
 >Hermann Minkowski（1864-1909），德国数学家，哥廷根大学数学教授，爱因斯坦的老师。
@@ -187,16 +191,4 @@ Gabriel's Horn，又名托里拆利小号（Torricelli's trumpet），是数学�
 ![](/images/article/GabrielHorn.png)
 
 上图是Gabriel's Horn的图像，它由$$y=\frac{1}{x}(x>1)$$绕x轴旋转得到。Torricelli发现Gabriel's Horn是个**体积有限，而表面积无限**的形状。
-
-$$V=\pi\int\limits_1^a\left(\frac{1}{x}\right)^2\mathrm{d}x=\pi\left(1-\frac{1}{a}\right)$$
-
-$$\lim_{a\to\infty}V=\lim_{a\to\infty}\pi\left(1-\frac{1}{a}\right)=\pi\cdot\lim_{a\to\infty}\left(1-\frac{1}{a}\right)=\pi$$
-
-$$A=2\pi\int\limits_1^a {\frac{1}{x}}\sqrt{1+\left(-\frac{1}{x^2}\right)^2}\mathrm{d}x > 2\pi\int\limits_1^a \frac{\mathrm{d}x}{x}=2\pi\ln(a)$$
-
-$$\lim_{a\to\infty}A\ge\lim_{a\to\infty}2\pi\ln(a)=\infty$$
-
-但是反过来的情况，即表面积有限，而体积无限的情况，也就是所谓的Gabriel's horn逆现象，是不存在的。——实际上，众所周知的是表面积一定的形状中，球形体积最大。
-
-Gabriel's horn现象不仅存在于表面积/体积中，也存在于长度/面积中，即所谓的无限长海岸线问题。对此的进一步研究，开拓了数学中的分形几何领域。
 

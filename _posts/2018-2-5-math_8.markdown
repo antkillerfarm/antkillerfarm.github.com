@@ -4,6 +4,46 @@ title:  数学狂想曲（八）——核弹当量问题, Lanchester战争模型
 category: math 
 ---
 
+# 莱洛三角形（续）
+
+![](/images/article/Manhole_cover_for_reclaimed_water_SFWD.jpg)
+
+![](/images/article/Rotation_of_Reuleaux_triangle.gif)
+
+上图展示了零件上的方孔是如何钻出来的。类似的还有：
+
+![](/images/article/delta_curves.gif)
+
+后者叫做delta curves，不过它并不是个定宽曲线。
+
+当然，Reuleaux triangle也有它的问题：
+
+![](/images/article/Reuleaux_triangle_2.jpg)
+
+Reuleaux triangle形状的轮子，在上面铺板子跑，当然毫无问题。但如果安装车轴的话，那就蛋碎了...
+
+参考：
+
+https://en.wikipedia.org/wiki/Curve_of_constant_width
+
+https://en.wikipedia.org/wiki/Reuleaux_triangle
+
+https://en.wikipedia.org/wiki/Reuleaux_tetrahedron
+
+http://www.cnblogs.com/hxsyl/archive/2012/07/05/2578448.html
+
+莱洛三角形和定宽曲线
+
+http://twistedsifter.com/2012/11/animated-gifs-that-explain-how-things-work/
+
+20 Animated Gifs that Explain How Things Work
+
+# hinged dissections
+
+![](/images/img2/Haberdasher-anm-01.gif)
+
+>Henry Ernest Dudeney，1857～1930，英国上世纪最知名的数学科普作家。
+
 # 核弹当量问题
 
 核弹爆炸由于是个复杂的过程，因此就有了爆炸火球半径、辐射半径、冲击波半径以及热辐射半径等不同的威力评价标准。
@@ -218,22 +258,4 @@ $$lim_{n\rightarrow \infty}F_n(x)=\int_{-\infty}^x\frac{1}{\sqrt{2\pi}}e^{-\frac
 2、大数定律负责给出估计——期望，中心极限定理负责给出大数定律的估计的误差——标准差乘以标准正态分布。
 
 3、其实我们还可以进行更高阶的展开，貌似三阶展开对应的统计量叫做skewness，wiki上常用分布的词条都会给出这一数值。不过，在实际应用中，中心极限定理已经足够，所以通常也就不需要了。
-
-参考：
-
-https://mp.weixin.qq.com/s/LlAul8AoAUGUCgFP-qPvrA
-
-中心极限定理通俗介绍
-
-https://mp.weixin.qq.com/s/lc1oTETReXevVjK3NarbGg
-
-大数定律和中心极限定理的区别和联系
-
-https://blog.csdn.net/dawnranger/article/details/52950873
-
-大数定律与中心极限定理
-
-https://www.zhihu.com/question/22913867
-
-怎样理解和区分中心极限定理与大数定律？
 
