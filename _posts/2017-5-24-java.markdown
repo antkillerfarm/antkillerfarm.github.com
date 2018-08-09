@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Java（二）, 孩子的编程语言, Javascript（二）, Scala, perl, Kotlin, 数据库
+title:  Java（二）, 孩子的编程语言, Javascript（二）, Scala, perl, Kotlin, 数据库, Lua
 category: language 
 ---
 
@@ -403,3 +403,19 @@ https://mp.weixin.qq.com/s/yQSMSLBYg4iauu8yeUfvjw
 https://mp.weixin.qq.com/s/WQh-Ro03e9F1Yrhk0tTZ0A
 
 图解SQL的JOIN
+
+# Lua
+
+Lua的包管理工具叫做LuaRocks。官网：
+
+https://luarocks.org/
+
+参考：
+
+https://mp.weixin.qq.com/s/nwhSDxz1Pu2JCU_IeMR9ww
+
+Lua程序逆向之Luac文件格式分析
+
+http://lua-users.org/wiki/GraphicalUserInterfaceToolkits
+
+Lua的GUI工具列表

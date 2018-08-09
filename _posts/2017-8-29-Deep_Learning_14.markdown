@@ -50,6 +50,10 @@ https://mp.weixin.qq.com/s/LVL90n4--WPgFLMQ-Gnf6g
 
 汤晓鸥为CNN搓了一颗大力丸
 
+https://mp.weixin.qq.com/s/6hNpgffEnUTkNAfrPgKHkA
+
+IBN-Net：打开Domain Generalization的新方式
+
 # Softmax详解
 
 首先给出Softmax function的定义:

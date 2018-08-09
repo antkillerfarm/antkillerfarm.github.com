@@ -376,3 +376,7 @@ https://mp.weixin.qq.com/s/c84LMFnIhoDeolc1B4MIVA
 
 AI以假乱真怎么办？TequilaGAN教你轻松辨真伪
 
+https://mp.weixin.qq.com/s/fgL6FtjeF-EgG5jjAGDR7A
+
+GANimation让图片秒变GIF表情包，秒杀StarGAN
+

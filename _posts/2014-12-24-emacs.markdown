@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Emacs, Vi, VS Code, Lua
+title:  Emacs, Vi, VS Code
 category: language 
 ---
 
@@ -325,34 +325,6 @@ https://mp.weixin.qq.com/s/5694PDHy9BeoL8qy31MaxQ
 
 如何用vim格式化代码
 
-# Source Insight
-
-Shift+F8：高亮选中的字
-
-http://www.cnblogs.com/bluestorm/archive/2012/10/28/2743792.html
-
-Source Insight常用设置和快捷键大全
-
-# Eclipse
-
-## 分栏显示
-
-1.拖住一个文件不放，直到鼠标图案发生改变。
-
-2.如果需要左右显示两个文件，向左右移动鼠标，如果需要上下显示两个文件，上下移动。这里的移动需要移出编辑窗口范围。
-
-# VS
-
-## 分栏显示
-
-1.Window -> New Window
-
-2.Window -> New Vertical Tab Group
-
-## Visual Studio Tab转换为空格的设置
-
-打开“Tools --> Options --> Text Editor”，如果是编写C/C++程序，就打开“C/C++-->Tabs”，在这里，选中“Insert spaces”即可。
-
 # VS Code
 
 VS Code（Visual Studio Code）是由微软研发的一款免费、开源的跨平台文本（代码）编辑器。（首发于2015年）从文件来看应该是基于nodejs所做，据说脱胎于Atom。
@@ -375,25 +347,48 @@ https://code.visualstudio.com/
 
 ctrl+P 命令行
 
-# Other
+## 插件
+
+filesize：在底部状态栏显示当前文件大小，点击后还可以看到详细创建、修改时间
+
+## 参考
+
+https://blog.csdn.net/GossipHHH/article/details/78132398
+
+VsCode插件安装及推荐
+
+# IDE
+
+## Source Insight
+
+Shift+F8：高亮选中的字
+
+http://www.cnblogs.com/bluestorm/archive/2012/10/28/2743792.html
+
+Source Insight常用设置和快捷键大全
+
+## Eclipse
+
+### 分栏显示
+
+1.拖住一个文件不放，直到鼠标图案发生改变。
+
+2.如果需要左右显示两个文件，向左右移动鼠标，如果需要上下显示两个文件，上下移动。这里的移动需要移出编辑窗口范围。
+
+## VS
+
+### 分栏显示
+
+1.Window -> New Window
+
+2.Window -> New Vertical Tab Group
+
+### Visual Studio Tab转换为空格的设置
+
+打开“Tools --> Options --> Text Editor”，如果是编写C/C++程序，就打开“C/C++-->Tabs”，在这里，选中“Insert spaces”即可。
+
+## Other
 
 http://dcloud.io/index.html
 
 HBuilder，一个html编辑的IDE。
-
-# Lua
-
-Lua的包管理工具叫做LuaRocks。官网：
-
-https://luarocks.org/
-
-参考：
-
-https://mp.weixin.qq.com/s/nwhSDxz1Pu2JCU_IeMR9ww
-
-Lua程序逆向之Luac文件格式分析
-
-http://lua-users.org/wiki/GraphicalUserInterfaceToolkits
-
-Lua的GUI工具列表
-

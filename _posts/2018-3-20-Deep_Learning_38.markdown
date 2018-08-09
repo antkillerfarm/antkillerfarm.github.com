@@ -246,6 +246,10 @@ https://mp.weixin.qq.com/s/7l0J5LIAawlkCIrUEGG9aA
 
 卷积神经网络“失陷”，CoordConv来填坑
 
+https://mp.weixin.qq.com/s/4GPLeJiQoDfBZJzF4QmuAg
+
+Excel再现人脸识别：CNN用于计算机视觉任务不再神秘
+
 # 图像变换
 
 https://mp.weixin.qq.com/s/88tBoAVziGEFXIGfvZZp8g
