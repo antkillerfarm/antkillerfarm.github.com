@@ -76,6 +76,10 @@ https://mp.weixin.qq.com/s/mktVMZ0Fdo0mubstpl2GDA
 
 Repulsion loss：专注于遮挡情况下的行人检测
 
+https://mp.weixin.qq.com/s/LZCYx-VyOAMWXBS76ttkFw
+
+如何在不同摄像头里识别行人？多层相似度感知CNN网络解析
+
 # 人脸识别进阶
 
 https://mp.weixin.qq.com/s/ZZmLbFzi843g0k3gTncQmA
@@ -275,6 +279,10 @@ https://mp.weixin.qq.com/s/PpT-NmTVjRi0_SEq0lISXw
 https://mp.weixin.qq.com/s/tmp1HXU7cLerLr0DY9NluQ
 
 杂乱环境下的显著性物体： 将显著性物体检测推向新高度
+
+https://mp.weixin.qq.com/s/e74-zFcMZzn67KaFXb_fdQ
+
+CornerNet目标检测开启预测“边界框”到预测“点对”的新思路
 
 # DL参考资源
 

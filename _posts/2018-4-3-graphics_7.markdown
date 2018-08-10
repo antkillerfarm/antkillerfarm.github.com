@@ -4,7 +4,56 @@ title:  图像处理理论（七）——LBP, Fisherface, Viola-Jones
 category: graphics 
 ---
 
-# LBP（续）
+# Eigenface（续）
+
+## Eigenface的缺点
+
+1.训练图片中人脸需要对齐，且图片大小一致。
+
+2.Eigenface对于大数据集的计算效率不佳。在Eigenface出现的年代，数字图片尚不多见，因此，数据集普遍较小。但现在即便是mini数据集也动辄上万张图片，甚至$$M>N^2$$的情况也不罕见。而对超大矩阵进行SVD分解，是个很吃计算量的事情，这也限制了Eigenface的应用。
+
+## 参考
+
+http://blog.csdn.net/smartempire/article/details/21406005
+
+特征脸方法（Eigenface）
+
+http://vision.jhu.edu/teaching/vision08/Handouts/case_study_pca1.pdf
+
+Eigenfaces for Face Detection/Recognition
+
+http://www.cnblogs.com/little-monkey/p/8118938.html
+
+人脸识别算法——EigenFace、FisherFace、LBPH
+
+# LBP
+
+LBP（Local Binary Patterns）算法是Matti Kalevi Pietikäinen于1994年提出的方法，后来被用到了人脸识别领域。
+
+>Matti Kalevi Pietikäinen，University of Oulu博士（1982）、教授。
+
+>Timo Ojala，Pietikäinen的博士生。现亦为University of Oulu教授。
+
+论文：
+
+《Face Recognition with Local Binary Patterns》
+
+## LBP特征提取
+
+最初的LBP是定义在像素3x3邻域内的，以邻域中心像素为阈值，将相邻的8个像素的灰度值与其进行比较，若周围像素值大于中心像素值，则该像素点的位置被标记为1，否则为0。这样，3x3邻域内的8个点经比较可产生8位二进制数（通常转换为十进制数即LBP码，共256种），即得到该邻域中心像素点的LBP值，并用这个值来反映该区域的纹理信息。如下图所示：
+
+![](/images/img2/LBP.png)
+
+即：
+
+$$LBP(x_c,y_c)=\sum_{p=0}^{P-1}2^ps(i_p-i_c)$$
+
+其中，c表示中心元素，p表示领域内的其它元素。
+
+$$s(x)=\begin{cases}
+1, & \text{if  } x \ge 0 \\
+0, & \text{else} \\
+\end{cases}$$
 
 ## 圆形LBP算子
 
@@ -180,38 +229,4 @@ Integral image一种计算差分数据的快速方法。
 http://www.mathworks.com/help/vision/ref/integralimage.html
 
 Integral image
-
-## Cascade分类器
-
-Cascade分类器，简单来说，就是先将几个通过Adaboost方法得到的强分类器进行排序，排序原则是简单的放在前边。因为通常来说人脸只占一小部分，所以可以很放心地在前几层分类器就拒绝掉大部分非人脸区域。只要前一级拒绝了，就不在进入下一级分类器，这可以大大提高速度。其本质是一颗退化决策树。
-
-## 参考
-
-https://www.jianshu.com/p/024ad859c8de
-
-人脸检测的Viola-Jones方法
-
-http://c.blog.sina.com.cn/profile.php?blogid=ab0aa22c890006v0
-
-从Viola&Jones的人脸检测说起
-
-http://www.cnblogs.com/hrlnw/archive/2013/10/23/3374707.html
-
-Viola Jones Face Detector
-
-# ORB
-
-ORB（Oriented FAST and Rotated BRIEF）特征，从它的名字中可以看出它是对FAST特征点与BREIF特征描述子的一种结合与改进，这个算法是由Ethan Rublee,Vincent Rabaud,Kurt Konolige以及Gary R.Bradski在2011年一篇名为“ORB：An Efficient Alternative to SIFT or SURF”的文章中提出。
-
-参考：
-
-http://www.cnblogs.com/ronny/p/4083537.html
-
-ORB特征点检测
-
-# 直方图反向投影
-
-http://www.cnblogs.com/zsb517/archive/2012/06/20/2556508.html
-
-opencv直方图反向投影
 

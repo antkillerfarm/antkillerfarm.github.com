@@ -4,6 +4,42 @@ title:  图像处理理论（八）——目标跟踪, Meanshift
 category: graphics 
 ---
 
+# Viola-Jones（续）
+
+## Cascade分类器
+
+Cascade分类器，简单来说，就是先将几个通过Adaboost方法得到的强分类器进行排序，排序原则是简单的放在前边。因为通常来说人脸只占一小部分，所以可以很放心地在前几层分类器就拒绝掉大部分非人脸区域。只要前一级拒绝了，就不在进入下一级分类器，这可以大大提高速度。其本质是一颗退化决策树。
+
+## 参考
+
+https://www.jianshu.com/p/024ad859c8de
+
+人脸检测的Viola-Jones方法
+
+http://c.blog.sina.com.cn/profile.php?blogid=ab0aa22c890006v0
+
+从Viola&Jones的人脸检测说起
+
+http://www.cnblogs.com/hrlnw/archive/2013/10/23/3374707.html
+
+Viola Jones Face Detector
+
+# ORB
+
+ORB（Oriented FAST and Rotated BRIEF）特征，从它的名字中可以看出它是对FAST特征点与BREIF特征描述子的一种结合与改进，这个算法是由Ethan Rublee,Vincent Rabaud,Kurt Konolige以及Gary R.Bradski在2011年一篇名为“ORB：An Efficient Alternative to SIFT or SURF”的文章中提出。
+
+参考：
+
+http://www.cnblogs.com/ronny/p/4083537.html
+
+ORB特征点检测
+
+# 直方图反向投影
+
+http://www.cnblogs.com/zsb517/archive/2012/06/20/2556508.html
+
+opencv直方图反向投影
+
 # 目标跟踪
 
 ## 概述
@@ -256,24 +292,4 @@ meanshift目标跟踪算法总结
 https://blog.csdn.net/jinshengtao/article/details/30258833
 
 基于MeanShift的目标跟踪算法及实现
-
-## Meanshift与图像分割
-
-除此之外，mean shift还可以用于图像分割。
-
-![](/images/img2/meanshift_2.png)
-
-如上图所示，算法过程可分三步走：模点搜索/图像平滑、模点聚类/合并相似区域、兼并小区域（可选）。
-
-模点搜索是为了找到每个数据点的到类中心，以中心的颜色代替自己的颜色，从而平滑图像。
-
-但模点搜索得到的模点太多，并且很多模点挨得很近，若果将每个模点都作为一类的话，类别太多，容易产生过分割，即分割太细，所以要合并掉一些模点，也就是合并相似区域。
-
-模点聚类后所得到的分割区域中，有些区域所包含的像素点太少，这些小区域也不是我们想要的，需要再次合并。
-
-参考：
-
-https://blog.csdn.net/ttransposition/article/details/38514127
-
-mean shift图像分割
 

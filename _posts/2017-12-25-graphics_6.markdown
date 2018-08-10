@@ -1,8 +1,30 @@
 ---
 layout: post
-title:  图像处理理论（六）——Harris, Eigenface
+title:  图像处理理论（六）——颜色空间, Harris, Eigenface
 category: graphics 
 ---
+
+# 颜色空间
+
+## YUV & YCbCr & RGB
+
+在RGB颜色空间中，红，绿，蓝是基本元素。RGB格式是显示器通常使用的格式。
+
+然而，人类视觉系统(HVS)相比亮度来说对于颜色不是那么敏感的。通过把亮度与颜色信息分离，并对亮度值取更高的分辨率可以更有效地表示一个颜色图像。这就是所谓的YUV颜色空间。Y表示亮度，B－Y（即U）、R－Y（即V）是色差信息。
+
+实际使用中，为了更有效率，又定义了YCbCr格式。两个Y、Cb和U、Cr和V的含义相同，但是表示方法不同。YCbCr在YUV的基础上，进行了比例和偏置变换。
+
+相关的定义及转换标准是：ITU-R Recommendation BT.601（标清）和ITU-R Recommendation BT.709（高清）。
+
+## HSV/HSB & HSL
+
+RGB和YUV都是针对设备的颜色空间，反映的是设备产生的光的物理特性。但是人眼对于光的颜色的感知是非线性的，因此又有了针对人眼的HSV/HSB、HSL颜色空间。
+
+HSV/HSB为Hue（色相）, Saturation（饱和度）, Value/Brightness（明度）。
+
+HSL为Hue, Saturation, Lightness（亮度）。
+
+类似的还有Munsell Color System，即HCV：Hue, Chroma（色度）, Value。
 
 # Harris
 
@@ -203,53 +225,4 @@ $$e_r=\|\Omega-\Omega^l\|$$
 这里的距离可以是欧氏距离，但作者指出使用马式距离效果更佳。
 
 综上，**Eigenface实际上就是PCA在人脸识别上的应用。**
-
-## Eigenface的缺点
-
-1.训练图片中人脸需要对齐，且图片大小一致。
-
-2.Eigenface对于大数据集的计算效率不佳。在Eigenface出现的年代，数字图片尚不多见，因此，数据集普遍较小。但现在即便是mini数据集也动辄上万张图片，甚至$$M>N^2$$的情况也不罕见。而对超大矩阵进行SVD分解，是个很吃计算量的事情，这也限制了Eigenface的应用。
-
-## 参考
-
-http://blog.csdn.net/smartempire/article/details/21406005
-
-特征脸方法（Eigenface）
-
-http://vision.jhu.edu/teaching/vision08/Handouts/case_study_pca1.pdf
-
-Eigenfaces for Face Detection/Recognition
-
-http://www.cnblogs.com/little-monkey/p/8118938.html
-
-人脸识别算法——EigenFace、FisherFace、LBPH
-
-# LBP
-
-LBP（Local Binary Patterns）算法是Matti Kalevi Pietikäinen于1994年提出的方法，后来被用到了人脸识别领域。
-
->Matti Kalevi Pietikäinen，University of Oulu博士（1982）、教授。
-
->Timo Ojala，Pietikäinen的博士生。现亦为University of Oulu教授。
-
-论文：
-
-《Face Recognition with Local Binary Patterns》
-
-## LBP特征提取
-
-最初的LBP是定义在像素3x3邻域内的，以邻域中心像素为阈值，将相邻的8个像素的灰度值与其进行比较，若周围像素值大于中心像素值，则该像素点的位置被标记为1，否则为0。这样，3x3邻域内的8个点经比较可产生8位二进制数（通常转换为十进制数即LBP码，共256种），即得到该邻域中心像素点的LBP值，并用这个值来反映该区域的纹理信息。如下图所示：
-
-![](/images/img2/LBP.png)
-
-即：
-
-$$LBP(x_c,y_c)=\sum_{p=0}^{P-1}2^ps(i_p-i_c)$$
-
-其中，c表示中心元素，p表示领域内的其它元素。
-
-$$s(x)=\begin{cases}
-1, & \text{if  } x \ge 0 \\
-0, & \text{else} \\
-\end{cases}$$
 

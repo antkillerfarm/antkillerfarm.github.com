@@ -1,12 +1,18 @@
 ---
 layout: post
-title:  图像处理理论（五）——ISP, 颜色空间
+title:  图像处理理论（五）——ISP
 category: graphics 
 ---
 
-# SIFT
+# SIFT（续）
 
-## 关键点（续）
+## 关键点
+
+![](/images/article/extreme_point.jpg)
+
+离散空间的极值点并不是真正的极值点，上图显示了二维函数离散空间得到的极值点与连续空间极值点的差别。利用已知的离散空间点插值得到的连续空间极值点的方法叫做子像素插值（Sub-pixel Interpolation）。
+
+为了使描述符具有旋转不变性，需要利用图像的局部特征为给每一个关键点分配一个基准方向。使用图像梯度的方法求取局部结构的稳定方向。对于在DOG金字塔中检测出的关键点，采集其所在高斯金字塔图像$$3\sigma$$邻域窗口内像素的梯度和方向分布特征。
 
 在完成关键点的梯度计算后，使用直方图统计邻域内像素的梯度和方向：
 
@@ -240,25 +246,4 @@ https://github.com/codeauroraforum/gtec-demo-framework/tree/master/DemoApps/Open
 
 一个基于OpenVX的ISP软实现。
 
-# 颜色空间
-
-## YUV & YCbCr & RGB
-
-在RGB颜色空间中，红，绿，蓝是基本元素。RGB格式是显示器通常使用的格式。
-
-然而，人类视觉系统(HVS)相比亮度来说对于颜色不是那么敏感的。通过把亮度与颜色信息分离，并对亮度值取更高的分辨率可以更有效地表示一个颜色图像。这就是所谓的YUV颜色空间。Y表示亮度，B－Y（即U）、R－Y（即V）是色差信息。
-
-实际使用中，为了更有效率，又定义了YCbCr格式。两个Y、Cb和U、Cr和V的含义相同，但是表示方法不同。YCbCr在YUV的基础上，进行了比例和偏置变换。
-
-相关的定义及转换标准是：ITU-R Recommendation BT.601（标清）和ITU-R Recommendation BT.709（高清）。
-
-## HSV/HSB & HSL
-
-RGB和YUV都是针对设备的颜色空间，反映的是设备产生的光的物理特性。但是人眼对于光的颜色的感知是非线性的，因此又有了针对人眼的HSV/HSB、HSL颜色空间。
-
-HSV/HSB为Hue（色相）, Saturation（饱和度）, Value/Brightness（明度）。
-
-HSL为Hue, Saturation, Lightness（亮度）。
-
-类似的还有Munsell Color System，即HCV：Hue, Chroma（色度）, Value。
 

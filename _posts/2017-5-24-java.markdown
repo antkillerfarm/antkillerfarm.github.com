@@ -404,6 +404,10 @@ https://mp.weixin.qq.com/s/WQh-Ro03e9F1Yrhk0tTZ0A
 
 图解SQL的JOIN
 
+https://mp.weixin.qq.com/s/NbV76hDZXKzvark4JEoyMA
+
+我是如何用2个Unix命令给SQL提速的
+
 # Lua
 
 Lua的包管理工具叫做LuaRocks。官网：

@@ -434,3 +434,7 @@ https://mp.weixin.qq.com/s/ffuiRE0qbglhVz__Z6FD7A
 
 这里可能是对机器智能中的文本情感计算最全面的概括了
 
+https://mp.weixin.qq.com/s/S6qSU6CGUMsqYaIPCEVhxA
+
+剖析CNN句子分类任务
+

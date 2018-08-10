@@ -58,6 +58,16 @@ Inception系列的改进方向基本都集中在构建不同的Inception模型�
 
 GoogleNet的另一个改进是**减少了全连接层**（Full Connection, FC），这是减少模型参数的一个重要改进。事实上，在稍后的实践中，人们发现去掉VGG的第一个FC层，对于效果几乎没有任何影响。
 
+参考：
+
+https://mp.weixin.qq.com/s/ceOxFS3Iwf3iLWY73ueoNw
+
+GoogLeNet中的inception结构，你看懂了吗
+
+http://www.cnblogs.com/Allen-rg/p/5833919.html
+
+GoogLeNet学习心得
+
 ## SqueezeNet
 
 GoogleNet之后，最有名的CNN模型当属何恺明的Deep Residual Network。DRN在《深度学习（六）》中已有提及，这里不再赘述。
@@ -255,10 +265,6 @@ AlexNet简介
 http://simtalk.cn/2016/09/12/CNNs/
 
 CNN简介
-
-http://www.cnblogs.com/Allen-rg/p/5833919.html
-
-GoogLeNet学习心得
 
 https://mp.weixin.qq.com/s/I94gGXXW_eE5hSHIBOsJFQ
 

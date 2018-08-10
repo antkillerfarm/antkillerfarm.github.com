@@ -4,6 +4,28 @@ title:  图像处理理论（九）——Camshift, Optical flow, Particle filter
 category: graphics 
 ---
 
+# Meanshift（续）
+
+## Meanshift与图像分割
+
+除此之外，mean shift还可以用于图像分割。
+
+![](/images/img2/meanshift_2.png)
+
+如上图所示，算法过程可分三步走：模点搜索/图像平滑、模点聚类/合并相似区域、兼并小区域（可选）。
+
+模点搜索是为了找到每个数据点的到类中心，以中心的颜色代替自己的颜色，从而平滑图像。
+
+但模点搜索得到的模点太多，并且很多模点挨得很近，若果将每个模点都作为一类的话，类别太多，容易产生过分割，即分割太细，所以要合并掉一些模点，也就是合并相似区域。
+
+模点聚类后所得到的分割区域中，有些区域所包含的像素点太少，这些小区域也不是我们想要的，需要再次合并。
+
+参考：
+
+https://blog.csdn.net/ttransposition/article/details/38514127
+
+mean shift图像分割
+
 # Camshift
 
 Camshift算法是Continuously Adaptive Mean Shift algorithm的简称。它是一个基于MeanSift的改进算法。它首次由Gary R.Bradski等人提出和应用在人脸的跟踪上，并取得了不错的效果。

@@ -251,3 +251,7 @@ https://mp.weixin.qq.com/s/xS8EsNtSdHiFgg_HnuJJWg
 
 照片有灵异鬼影？伯克利陈启峰培育高能FCN“除灵师”
 
+https://mp.weixin.qq.com/s/keWrgmCfJrnswDDKEL52Cg
+
+数据少，就享受不到深度学习的红利了么？总是有办法的！
+
