@@ -18,6 +18,10 @@ https://zhuanlan.zhihu.com/wjdml
 
 《小王爱迁移》系列blog
 
+https://mp.weixin.qq.com/s/WuX7-w--MGX3BfU_K7qT0A
+
+什么是迁移学习 (Transfer Learning)？这个领域历史发展前景如何？
+
 https://mp.weixin.qq.com/s/BWBrso7O1O3Rfxa4QWZH4g
 
 分分钟学会基于深度学习的图像真实风格迁移！
@@ -370,4 +374,8 @@ https://mp.weixin.qq.com/s/Vq-osjgNXJQu5avGkxQdsw
 https://mp.weixin.qq.com/s/ajajJ9yJZsOy4Vc0ULBxXg
 
 国际象棋版AlphaZero出来了诶，还开源了Keras实现
+
+https://zhuanlan.zhihu.com/p/41814142
+
+从源码解密AlphaGo Zero背后基本原理
 

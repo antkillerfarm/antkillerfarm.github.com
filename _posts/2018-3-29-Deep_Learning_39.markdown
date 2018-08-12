@@ -380,3 +380,11 @@ https://mp.weixin.qq.com/s/fgL6FtjeF-EgG5jjAGDR7A
 
 GANimation让图片秒变GIF表情包，秒杀StarGAN
 
+https://mp.weixin.qq.com/s/NPUJ89nddF1WHfFv2nn-Hg
+
+GANs有嘻哈：一次学完10个GANs明星模型
+
+https://mp.weixin.qq.com/s/yShYrMFKox30jXajXXQPGw
+
+如何让GAN生成更高质量图像？斯坦福大学给你答案
+

@@ -438,3 +438,7 @@ https://mp.weixin.qq.com/s/S6qSU6CGUMsqYaIPCEVhxA
 
 剖析CNN句子分类任务
 
+https://mp.weixin.qq.com/s/e6YXItElVa5iaY8Txi8wzA
+
+NAACL2018tutorial深度学习在智能对话系统中应用
+

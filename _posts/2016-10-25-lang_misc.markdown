@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  小众语言集中营, Github显示数学公式
+title:  小众语言集中营, Julia, Github显示数学公式
 category: language 
 ---
 
@@ -97,6 +97,26 @@ XML、HTML、JavaScript必修。PHP、ASP、JSP，选修其中之一。Nodejs近
 http://www.15yan.com/story/5Y8BZqIGwjg/
 
 那些奇奇怪怪的编程语言
+
+# Julia
+
+1.安装依赖
+
+`sudo apt-get install build-essential libatomic1 python gfortran perl wget m4 cmake pkg-config`
+
+2.源码编译
+
+`make -j 4`
+
+参考：
+
+https://mp.weixin.qq.com/s/dvVQ9H14eyVjyD4yhadRnQ
+
+MIT正式发布编程语言Julia 1.0：Python、R、C++三合一
+
+https://mp.weixin.qq.com/s/X_MDcEmmKDN_RHYTx3kjhw
+
+Julia 1.0正式发布，这是新出炉的一份简单中文教程
 
 # Github显示数学公式
 

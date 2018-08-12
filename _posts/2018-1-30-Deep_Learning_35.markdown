@@ -160,6 +160,10 @@ https://mp.weixin.qq.com/s/aJvnzck__8z4DaPPgzT_sA
 
 美图云联合中科院提出基于交互感知注意力机制神经网络的行为分类技术
 
+https://mp.weixin.qq.com/s/WtDZs3rsEBWrTqTUCHDFxg
+
+中山大学&商汤提出部分分组网络PGN，解决实例级人体解析难题
+
 # 深度目标跟踪
 
 https://zhuanlan.zhihu.com/p/22334661

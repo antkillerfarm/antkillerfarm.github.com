@@ -391,3 +391,8 @@ Spatial Transformer Networks
 https://mp.weixin.qq.com/s/ciqQMezcB-oM24X8eQqTNg
 
 花式玩耍Spatial Transformation Networks
+
+https://mp.weixin.qq.com/s/4VE2lZeFf05AyLp_s3nTFQ
+
+理解Spatial Transformer Networks
+

@@ -346,3 +346,6 @@ https://mp.weixin.qq.com/s/goxciguoxcamTo2WyUd1Lg
 
 大吉大利，今晚如何用Python解锁“吃鸡”的正确姿势
 
+https://mp.weixin.qq.com/s/dQ75O2h1orGzKcaCSDWshQ
+
+自然语言处理是如何工作的？一步步教你构建 NLP 流水线

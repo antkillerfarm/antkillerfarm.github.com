@@ -374,3 +374,7 @@ https://mp.weixin.qq.com/s/JW62V3wBguSPSAkyWKAEpQ
 
 一个数据分析师眼中的数据预测与监控
 
+https://mp.weixin.qq.com/s/Xk1myDvYQxvKKyQ7RKqcyw
+
+机器学习可重复性最佳实践
+

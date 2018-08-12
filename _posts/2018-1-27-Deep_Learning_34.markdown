@@ -356,3 +356,6 @@ https://mp.weixin.qq.com/s/RH4ifA46njdC7fyRI9kVMg
 
 深度Q网络与视觉格斗类游戏
 
+https://mp.weixin.qq.com/s/K-z_dX2-NepkEHbr45QlvQ
+
+微软研究院开源项目TextWorld：可用于强化学习训练的文本游戏

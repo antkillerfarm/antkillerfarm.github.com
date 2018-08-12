@@ -108,6 +108,14 @@ https://blog.csdn.net/heyijia0327
 
 一个SLAM方面的blog。
 
+https://zhuanlan.zhihu.com/c_194571463
+
+一个SLAM方面的专栏
+
+https://www.cnblogs.com/21207-iHome/
+
+一个Robot方面比较全面的blog
+
 ## 软件
 
 https://github.com/raulmur/ORB_SLAM2

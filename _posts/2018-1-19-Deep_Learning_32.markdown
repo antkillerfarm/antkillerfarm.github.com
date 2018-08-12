@@ -130,6 +130,10 @@ https://mp.weixin.qq.com/s/WQlSghxG89JCroNZSmop8w
 
 朱军：关于图的表达学习
 
+https://mp.weixin.qq.com/s/x_4k1ICo0GUFJzo4jRSoIQ
+
+中文词向量论文综述（一）
+
 # NN的INT8计算
 
 ## 概述

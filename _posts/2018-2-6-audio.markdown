@@ -290,3 +290,7 @@ https://mp.weixin.qq.com/s/0AOOiyWQqpGIdG4-9UmF8Q
 
 DeepMind提出视觉问题回答新模型，CLEVR准确率达98.8％
 
+https://mp.weixin.qq.com/s/8dVronQoeZLJI2g49AljLg
+
+技术讲解概率机器学习——深度学习革命之后AI道路
+

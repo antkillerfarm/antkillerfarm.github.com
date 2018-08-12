@@ -255,3 +255,15 @@ https://mp.weixin.qq.com/s/keWrgmCfJrnswDDKEL52Cg
 
 数据少，就享受不到深度学习的红利了么？总是有办法的！
 
+https://mp.weixin.qq.com/s/MldsH2WSI53ljbcbBwyPzA
+
+国防科大、普林斯顿提出共面性检测网络：助力三维场景重建
+
+https://mp.weixin.qq.com/s/oUpoqnUUhMR_zlQqrvdLTw
+
+一文读懂如何用深度学习实现网络安全
+
+https://mp.weixin.qq.com/s/bWHaBTaKkjtJec3taFugeQ
+
+向人类免疫系统学习，AI如何做到挽救30亿美元的网络犯罪损失？
+

@@ -282,6 +282,10 @@ https://mp.weixin.qq.com/s/Jv0yDTrXhBbuzzTupBmw5A
 
 OpenCV开发团队开源计算机视觉标注工具CVAT
 
+https://mp.weixin.qq.com/s/lgzi1l-fhwvwAsjHvn9wYg
+
+开源Featuretools：机器学习开发提速10倍！
+
 ## 贝叶斯学习
 
 https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og
