@@ -348,4 +348,12 @@ https://mp.weixin.qq.com/s/goxciguoxcamTo2WyUd1Lg
 
 https://mp.weixin.qq.com/s/dQ75O2h1orGzKcaCSDWshQ
 
-自然语言处理是如何工作的？一步步教你构建 NLP 流水线
+自然语言处理是如何工作的？一步步教你构建NLP流水线
+
+https://mp.weixin.qq.com/s/dwxTla5iiYKvELrpbWf1yQ
+
+8个Python高效数据分析的技巧
+
+https://mp.weixin.qq.com/s/1Iyhsp5-2DyTfOb0JzqLZg
+
+比Python快100倍，利用spaCy和Cython实现高速NLP项目

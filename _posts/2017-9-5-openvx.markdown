@@ -228,6 +228,12 @@ https://github.com/xianyi/OpenBLAS
 >个人主页：   
 >http://xianyi.github.io/index_cn.htm
 
+OpenBLAS需要gfortran参与编译：
+
+`sudo apt install gfortran`
+
+需要注意gcc的版本和gfortran的版本必须一致。例如，某台机器为了项目需要，没有使用ubuntu默认的gcc版本，这样即使安装了gfortran，也还是不行。最后，安装匹配的gfortran才解决了该问题。
+
 # NVIDIA
 
 NVIDIA作为行业龙头，其影响力甚至在Khronos Group之上，它提出的标准很多成为了行业的事实标准。
@@ -347,18 +353,4 @@ https://mlperf.org/
 RDMA网卡（Remote Direct Memory Access，这是一种硬件的网络技术，它使得计算机访问远程的内存时无需远程机器上CPU的干预）已经可以提供50~100Gbps的网络带宽和微秒级的传输延迟。
 
 目前许多以深度学习为目标应用的GPU机群都部署了这样的网络。
-
-# NN计算的硬件设计
-
-NN计算问题的瓶颈主要包括两类：
-
-1.数学运算的速度。NN运算主要以乘加为主，实现这类加速功能的硬件单元一般被称为NN Processor。这也是第一代AI芯片主要解决的问题。
-
-再细分的话，又有矩阵派和卷积派两种。
-
-矩阵派的通用性好，且FC运算速度快于卷积派。
-
-而卷积派由于针对Conv的Kernel数据不变这一特点进行优化，Conv速度极快。
-
-2.IO问题，也称带宽问题。早期的NN由于算子有限，基本只有FC、Conv、Pooling、Activation等少数几种算子。但现在的NN模型算子可就多了，且有相当部分算子属于非计算类的搬运数据算子，比如permute等。针对这类运算，一般采用被称作Tensor Processor的硬件单元进行加速。
 

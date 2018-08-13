@@ -180,6 +180,10 @@ https://mp.weixin.qq.com/s/790wbFnxkNbNRampiV-0MQ
 
 谷歌大脑提出对抗正则化方法，显著改善自编码器的泛化和表征学习能力
 
+https://mp.weixin.qq.com/s/NuWP9v_5b2-V7rPdyqtM0A
+
+DanceNet：帮你生成会跳舞的小姐姐
+
 # RBM & DBN & Deep Autoencoder
 
 ## RBM

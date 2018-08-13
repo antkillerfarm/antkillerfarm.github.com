@@ -185,6 +185,10 @@ http://blog.csdn.net/xmdxcsj/article/details/70300591
 
 端到端语音识别（二）ctc。这个blog中还有5篇《CTC学习笔记》的链接。
 
+https://blog.csdn.net/luodongri/article/details/77005948
+
+白话CTC(connectionist temporal classification)算法讲解
+
 ## Warp-CTC
 
 Warp-CTC是一个可以应用在CPU和GPU上的高效并行的CTC代码库，由百度硅谷实验室开发。

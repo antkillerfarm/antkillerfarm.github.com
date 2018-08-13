@@ -284,6 +284,10 @@ https://mp.weixin.qq.com/s/e74-zFcMZzn67KaFXb_fdQ
 
 CornerNet目标检测开启预测“边界框”到预测“点对”的新思路
 
+https://zhuanlan.zhihu.com/p/41897137
+
+物体检测中的结构推理网络
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/naD6hVwDg3QSA76sXy2GZA

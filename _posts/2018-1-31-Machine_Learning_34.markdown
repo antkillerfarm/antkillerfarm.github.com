@@ -186,6 +186,10 @@ https://mp.weixin.qq.com/s/0FIns5Xt2G1seqFbpGvzTQ
 
 长文详解基于并行计算的条件随机场
 
+https://blog.csdn.net/liuyuemaicha/article/details/73147548
+
+从PGM到HMM再到CRF
+
 # 异常点检测
 
 http://chuansong.me/n/377440751130

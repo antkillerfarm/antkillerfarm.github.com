@@ -404,6 +404,14 @@ https://mp.weixin.qq.com/s/Sda94q-40goiZGSYGgm_Yw
 
 AI美发算法
 
+https://mp.weixin.qq.com/s/9VsCRYrKQHqx68xkJsPC5g
+
+App基于手机壳颜色换肤？先尝试一下用KMeans来提取图像中的主色
+
+https://mp.weixin.qq.com/s/40SXxtks9yGbYHEikQPjrg
+
+用OpenCV实现八种不同的目标跟踪算法
+
 # CCV
 
 CCV是一个C语言的CV库。

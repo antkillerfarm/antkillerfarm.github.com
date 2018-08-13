@@ -241,3 +241,45 @@ http://spandh.dcs.shef.ac.uk/chime_challenge/chime2016/
 
 CHiMe – Computational Hearing in Multisource Environments-国际多通道语音分离和识别大赛
 
+# 大数据平台参考资源
+
+https://mp.weixin.qq.com/s/syM4ReAWpZ5d4KI87ogpiQ
+
+从单一架构到分布式交易架构，网易严选的成功实践
+
+https://mp.weixin.qq.com/s/qh88sawJUZedv3X0LIRsAQ
+
+ESearch：58集团基于C++语言自主研发的搜索内核
+
+https://mp.weixin.qq.com/s/uMj3JEhgyYw4CaIhP1-GTQ
+
+阿里巴巴为什么不用ZooKeeper做服务发现？
+
+http://www.cnblogs.com/rjzheng/p/8994962.html
+
+分布式之消息队列复习精讲
+
+https://mp.weixin.qq.com/s/Mcg5rj3QrgVj3wyY4xttnQ
+
+关于商业部署机器学习，这有一篇详尽指南
+
+https://mp.weixin.qq.com/s/d7xMT1jrkwT_csC1kugw4w
+
+360数据处理平台的架构演进及优化实践
+
+https://mp.weixin.qq.com/s/Mw-bQiWURE6oBz-EwfoiiA
+
+Meteor实时计算平台架构与实践
+
+https://mp.weixin.qq.com/s/osCRnfnuCFGJIR1jkhgUwA
+
+弃用ETL，为什么说ELT才更适合AI应用场景？
+
+https://mp.weixin.qq.com/s/IvGkPnYdifuAzrUV3MTyhA
+
+数据埋点太难！知乎的做法有何可借鉴之处？
+
+https://mp.weixin.qq.com/s/fV3OqXreZqaQ5neQaFIlOQ
+
+非易失性内存在阿里生产环境的首次应用：Tair NVM最佳实践总结
+

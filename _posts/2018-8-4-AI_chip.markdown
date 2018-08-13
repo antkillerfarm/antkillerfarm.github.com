@@ -6,6 +6,22 @@ category: resource
 
 # AI Chip
 
+## NN计算的硬件设计
+
+NN计算问题的瓶颈主要包括两类：
+
+1.数学运算的速度。NN运算主要以乘加为主，实现这类加速功能的硬件单元一般被称为NN Processor。这也是第一代AI芯片主要解决的问题。
+
+再细分的话，又有矩阵派和卷积派两种。
+
+矩阵派的通用性好，且FC运算速度快于卷积派。
+
+而卷积派由于针对Conv的Kernel数据不变这一特点进行优化，Conv速度极快。
+
+2.IO问题，也称带宽问题。早期的NN由于算子有限，基本只有FC、Conv、Pooling、Activation等少数几种算子。但现在的NN模型算子可就多了，且有相当部分算子属于非计算类的搬运数据算子，比如permute等。针对这类运算，一般采用被称作Tensor Processor的硬件单元进行加速。
+
+## 参考
+
 https://cloud.tencent.com/community/article/244743
 
 深度学习的异构加速技术（一）：AI 需要一个多大的“心脏”？
@@ -351,46 +367,4 @@ https://zhuanlan.zhihu.com/p/38847308
 https://zhuanlan.zhihu.com/p/40601422
 
 双通道、四通道内存对游戏重要吗？
-
-# 大数据平台参考资源
-
-https://mp.weixin.qq.com/s/syM4ReAWpZ5d4KI87ogpiQ
-
-从单一架构到分布式交易架构，网易严选的成功实践
-
-https://mp.weixin.qq.com/s/qh88sawJUZedv3X0LIRsAQ
-
-ESearch：58集团基于C++语言自主研发的搜索内核
-
-https://mp.weixin.qq.com/s/uMj3JEhgyYw4CaIhP1-GTQ
-
-阿里巴巴为什么不用ZooKeeper做服务发现？
-
-http://www.cnblogs.com/rjzheng/p/8994962.html
-
-分布式之消息队列复习精讲
-
-https://mp.weixin.qq.com/s/Mcg5rj3QrgVj3wyY4xttnQ
-
-关于商业部署机器学习，这有一篇详尽指南
-
-https://mp.weixin.qq.com/s/d7xMT1jrkwT_csC1kugw4w
-
-360数据处理平台的架构演进及优化实践
-
-https://mp.weixin.qq.com/s/Mw-bQiWURE6oBz-EwfoiiA
-
-Meteor实时计算平台架构与实践
-
-https://mp.weixin.qq.com/s/osCRnfnuCFGJIR1jkhgUwA
-
-弃用ETL，为什么说ELT才更适合AI应用场景？
-
-https://mp.weixin.qq.com/s/IvGkPnYdifuAzrUV3MTyhA
-
-数据埋点太难！知乎的做法有何可借鉴之处？
-
-https://mp.weixin.qq.com/s/fV3OqXreZqaQ5neQaFIlOQ
-
-非易失性内存在阿里生产环境的首次应用：Tair NVM最佳实践总结
 

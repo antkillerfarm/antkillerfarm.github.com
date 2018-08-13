@@ -442,3 +442,7 @@ https://mp.weixin.qq.com/s/e6YXItElVa5iaY8Txi8wzA
 
 NAACL2018tutorial深度学习在智能对话系统中应用
 
+https://mp.weixin.qq.com/s/29vqbjnTkHsq2Fv9ZyMOVQ
+
+COLING 2018 基于目标依赖财经文档表示学习的累积超额收益预测
+

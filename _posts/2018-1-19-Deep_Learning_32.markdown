@@ -16,6 +16,10 @@ https://mp.weixin.qq.com/s/wcFlZPbB5dl6C87kdfjmKw
 
 NE(Network Embedding)论文小览
 
+https://mp.weixin.qq.com/s/rWn6Bi5T3JfucD4C0jYSBA
+
+Network Embedding指南
+
 https://mp.weixin.qq.com/s/zTNX_LeVMeHhJG7kPewn2g
 
 除了自然语言处理，你还可以用Word2Vec做什么？

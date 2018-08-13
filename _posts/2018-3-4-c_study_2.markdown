@@ -118,3 +118,7 @@ https://mp.weixin.qq.com/s/p8gEbamEbJBp_wzsy8_21A
 
 词义的动态变迁
 
+https://zhuanlan.zhihu.com/p/41944121
+
+NLP系列学习：意图识别
+

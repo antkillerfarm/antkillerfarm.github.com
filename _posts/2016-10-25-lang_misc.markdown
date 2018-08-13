@@ -100,15 +100,43 @@ http://www.15yan.com/story/5Y8BZqIGwjg/
 
 # Julia
 
+Julia是新晋发布1.0版本的科学计算类语言，号称兼具C++、python、matlab的优点。
+
+官网：
+
+https://julialang.org/
+
+代码：
+
+https://github.com/JuliaLang/julia
+
+## 安装
+
+Julia目前暂时没有apt安装的办法，需要源代码编译，后者安装预编译的版本。这里讲讲源码编译的过程。
+
 1.安装依赖
 
-`sudo apt-get install build-essential libatomic1 python gfortran perl wget m4 cmake pkg-config`
+`sudo apt install build-essential libatomic1 python gfortran perl wget m4 cmake pkg-config`
 
 2.源码编译
 
 `make -j 4`
 
-参考：
+3.安装
+
+`echo "alias julia='/path/to/install/folder/bin/julia'" >> ~/.bashrc && source ~/.bashrc`
+
+## GTK
+
+1.安装
+
+Julia使用pkg模式进行安装。在Julia命令行下，输入`]`即可进入pkg模式。
+
+`(v1.0) pkg> add Gtk`
+
+输入Ctrl+C可退出pkg模式。
+
+## 参考
 
 https://mp.weixin.qq.com/s/dvVQ9H14eyVjyD4yhadRnQ
 

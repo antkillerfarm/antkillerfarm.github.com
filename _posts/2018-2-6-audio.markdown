@@ -294,3 +294,7 @@ https://mp.weixin.qq.com/s/8dVronQoeZLJI2g49AljLg
 
 技术讲解概率机器学习——深度学习革命之后AI道路
 
+https://mp.weixin.qq.com/s/LU5-zrWof5HmgqiIx6aNsg
+
+用神经网络来判定量子纠缠？这里有一篇简单易懂的方法解读
+

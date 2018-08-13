@@ -116,6 +116,10 @@ https://github.com/tianmaying/node-blog-demo
 
 这是“天码营”提供的node.js实现网站的示例。
 
+https://mp.weixin.qq.com/s/3HoR-PVuwcJFGWEw3X2Y8w
+
+Nodejs探秘：深入理解单线程实现高并发原理
+
 ## NPM
 
 npm是node.js的软件包管理工具。它的官网是：
