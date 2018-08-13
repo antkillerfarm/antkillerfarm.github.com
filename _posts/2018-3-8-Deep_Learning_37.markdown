@@ -338,3 +338,7 @@ https://mp.weixin.qq.com/s/PW_fjdC0hzzwmeY3gUXPkw
 
 如何降低遮挡对人脸识别的影响
 
+https://mp.weixin.qq.com/s/UFOB2V12gQQ3mV-Kh9RTUw
+
+高精度人脸表情识别
+

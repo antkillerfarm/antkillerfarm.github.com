@@ -423,10 +423,6 @@ https://zhuanlan.zhihu.com/p/35305264
 
 一文看懂深度学习中的VQA(视觉问答)技术
 
-https://mp.weixin.qq.com/s/FJCZvc8pl-CwFhyiCD6E-g
-
-Pinterest视觉搜索工程师孙彦：视觉搜索不是“鸡肋”
-
 https://mp.weixin.qq.com/s/SwJs0OUzBlhiIOyFHFBK_g
 
 一文看懂JeffDean等提出的ENAS到底好在哪？

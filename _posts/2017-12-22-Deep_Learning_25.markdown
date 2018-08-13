@@ -188,14 +188,6 @@ https://mp.weixin.qq.com/s/rKvh9fqfVf_EYBxa5QRDOw
 
 不得不了解的五种Attention模型方法及其应用
 
-https://zhuanlan.zhihu.com/p/25928551
-
-用深度学习（CNN RNN Attention）解决大规模文本分类问题-综述和实践
-
-http://blog.csdn.net/leo_xu06/article/details/53491400
-
-视觉注意力的循环神经网络模型
-
 https://mp.weixin.qq.com/s/XrlveG0kwij2qNL45TZdBg
 
 Attention的另类用法
@@ -207,10 +199,6 @@ https://zhuanlan.zhihu.com/p/31547842
 https://zhuanlan.zhihu.com/p/32089282
 
 Attention学习笔记
-
-https://mp.weixin.qq.com/s/0yb-YRGe-q4-vpKpuE4D_w
-
-多种注意力机制互补完成VQA（视觉问答）
 
 https://mp.weixin.qq.com/s/LQ7uv0-AakkHE5b17yemqw
 
@@ -224,10 +212,6 @@ https://mp.weixin.qq.com/s/Nyq_36aFmQYRWdpgbgxpuA
 
 将注意力机制引入RNN，解决5大应用领域的序列预测问题
 
-https://mp.weixin.qq.com/s/2gxp7A38epQWoy7wK8Nl6A
-
-谷歌翻译最新突破，“关注机制”让机器读懂词与词的联系
-
 https://mp.weixin.qq.com/s/g2PcmsDW9ixUCh_yP8W-Vg
 
 各类Seq2Seq模型对比及《Attention Is All You Need》中技术详解
@@ -240,40 +224,11 @@ https://mp.weixin.qq.com/s/SqIMkiP1IZMGWzwZWGOI7w
 
 谈谈神经网络的注意机制和使用方法
 
-https://mp.weixin.qq.com/s/POYTh4Jf7HttxoLhrHZQhw
-
-基于双向注意力机制视觉问答pyTorch实现
-
 https://mp.weixin.qq.com/s/EMCZHuvk5dOV_Rz00GkJMA
 
 近年火爆的Attention模型，它的套路这里都有！
 
-https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA
-
-阿里北大提出新attention建模框架，一个模型预测多种行为
-
-https://mp.weixin.qq.com/s/Yq3S4WrsQRQC06GvRgGjTQ
-
-打入神经网络思维内部
-
-https://mp.weixin.qq.com/s/MJ1578NdTKbjU-j3Uuo9Ww
-
-基于文档级问答任务的新注意力模型
-
-https://mp.weixin.qq.com/s/C4f0N_bVWU9YPY34t-HAEA
-
-UNC&Adobe提出模块化注意力模型MAttNet，解决指示表达的理解问题
-
-https://mp.weixin.qq.com/s/V3brXuey7Gear0f_KAdq2A
-
-基于注意力机制的交易上下文感知推荐，悉尼科技大学和电子科技大学最新工作
-
-http://mp.weixin.qq.com/s/Bt6EMD4opHCnRoHKYitsUA
-
-结合人类视觉注意力进行图像分类
-
 https://zhuanlan.zhihu.com/p/27464080
 
 从《Convolutional Sequence to Sequence Learning》到《Attention Is All You Need》
-
 
