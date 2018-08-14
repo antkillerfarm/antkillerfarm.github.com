@@ -284,3 +284,7 @@ https://mp.weixin.qq.com/s/7OYY3L7gL4wVv_EjoosOHA
 
 如何增强Attention Model的推理能力
 
+https://mp.weixin.qq.com/s/9Kt6_DfeYRnhsb10aCSFGw
+
+FAGAN：完全注意力机制（Full Attention）GAN，Self-attention+GAN
+

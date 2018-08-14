@@ -196,6 +196,10 @@ https://blog.csdn.net/u014365862/article/details/78422372
 
 一个ML+DL+CV的blog。
 
+https://blog.csdn.net/shenziheng1
+
+一个DL+CV的blog
+
 https://www.matroid.com/blog/post/slides-and-videos-from-scaledml-2018
 
 Slides and Videos from ScaledML 2018

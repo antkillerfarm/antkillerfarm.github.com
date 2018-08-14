@@ -242,6 +242,10 @@ https://mp.weixin.qq.com/s/cSYCT1I1asaSCIc5Hgu0Jw
 
 计算成本降低35倍！谷歌发布手机端自动设计神经网络MnasNet
 
+https://mp.weixin.qq.com/s/p_qdKcQwQ8y_JUw3gQUEnA
+
+谷歌大脑用强化学习为移动设备量身定做最好最快的CNN模型
+
 # OCR
 
 ## 概述

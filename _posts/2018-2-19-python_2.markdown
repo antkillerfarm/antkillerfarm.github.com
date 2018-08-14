@@ -444,9 +444,12 @@ Python性能优化的20条招数
 
 https://mp.weixin.qq.com/s/0Rpbuo7LCRo1SnbE8NcH4Q
 
-快速学习 Python 的全套14张思维导图
+快速学习Python的全套14张思维导图
 
 https://mp.weixin.qq.com/s/ODA74xgoS8X1HFxp4BfshQ
 
 如何将Python自然语言处理速度提升100倍：用spaCy/Cython加速NLP
 
+https://mp.weixin.qq.com/s/Cujl2nxITCuZL7B72uKVrQ
+
+为什么Python这么慢？

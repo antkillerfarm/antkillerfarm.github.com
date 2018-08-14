@@ -20,6 +20,10 @@ https://mp.weixin.qq.com/s/rWn6Bi5T3JfucD4C0jYSBA
 
 Network Embedding指南
 
+https://mp.weixin.qq.com/s/luSTZVzaK6fPw4veIDuMwg
+
+网络表示学习综述：一文理解Network Embedding
+
 https://mp.weixin.qq.com/s/zTNX_LeVMeHhJG7kPewn2g
 
 除了自然语言处理，你还可以用Word2Vec做什么？

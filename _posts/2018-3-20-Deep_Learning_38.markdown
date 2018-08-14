@@ -220,6 +220,10 @@ https://zhuanlan.zhihu.com/p/39999667
 
 强化学习路在何方？
 
+https://mp.weixin.qq.com/s/oA98YyLqn1B22QZ5b_iDVA
+
+IJCAI 2018：聚焦强化学习的学习效率
+
 # CNN进阶
 
 https://mp.weixin.qq.com/s/gwH9s1ggMTj2dJkad9wUuw
