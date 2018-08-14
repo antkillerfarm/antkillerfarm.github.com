@@ -222,6 +222,10 @@ https://mp.weixin.qq.com/s/yGtDUbvO2APT88MwcSh8IA
 
 GAN如此简单的PyTorch实现，一张脸生成72种表情
 
+https://mp.weixin.qq.com/s/u9GEDCmR-PT0--0Xf4vKDA
+
+Pytorch的tensorboard食谱帮你可视化误差结果
+
 # PaddlePaddle
 
 https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q

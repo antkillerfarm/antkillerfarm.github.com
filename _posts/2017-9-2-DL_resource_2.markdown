@@ -224,6 +224,10 @@ https://mp.weixin.qq.com/s/fqHTGcmTZ91lXbhcrUQNcg
 
 弱监督学习在医学影像中的探索
 
+https://mp.weixin.qq.com/s/aRipNkT2BSc5NefB9k4rEA
+
+Nature Medicine论文展示DeepMind眼疾诊断里程碑：临床专家级、“解决“黑箱问题
+
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  AI Chip, CPU
+title:  AI Chip
 category: resource 
 ---
 
@@ -19,6 +19,42 @@ NN计算问题的瓶颈主要包括两类：
 而卷积派由于针对Conv的Kernel数据不变这一特点进行优化，Conv速度极快。
 
 2.IO问题，也称带宽问题。早期的NN由于算子有限，基本只有FC、Conv、Pooling、Activation等少数几种算子。但现在的NN模型算子可就多了，且有相当部分算子属于非计算类的搬运数据算子，比如permute等。针对这类运算，一般采用被称作Tensor Processor的硬件单元进行加速。
+
+## DEEPHi
+
+2018.8
+
+深鉴科技是一家AI Chip公司。
+
+官网：
+
+http://www.deephi.com/
+
+它最近出了一套深度学习SDK：
+
+http://www.deephi.com/zh-cn/dnndk.html
+
+----
+
+如果说2017年以前的AI Chip领域，主要解决的是芯片有无的问题的话，那么2018年的重点就聚焦在如何更好的使用上了。
+
+性能方面各家各有千秋，即使不考虑功耗、面积等约束，也没有哪家在所有运算上，都比别人快，因此产品只要不是全面落伍，就还有的混。但易用性方面差距就比较大了。
+
+1.CPU+NN混合编程。深鉴这方面做的还不错，似乎一套工具链就可以搞定，就是不知道自动化程度如何。有的友商连这一步都没做好，两套工具链+手动链接，把应用工程师折腾惨了。
+
+2.模型压缩。Pruning方面由于有韩神的加持，确然做的很好，比我司强。Quantization方面，INT8量化算是最基本的量化了，不知道UINT8/INT16，他们做的如何。
+
+3.Tensor Processor。现在的NN模型算子比较多，且有相当部分算子属于非计算类的搬运数据算子，比如permute等。针对这类运算，一般采用被称作Tensor Processor的硬件单元进行加速。深鉴这方面似乎是空白，这导致的一个结果就是AI Chip支持的运算非常有限，CPU负载过高，而AI Chip的负载相对就不行了。
+
+4.模型导入。这方面深鉴只能说还不入流。虽然表面看来，它支持了Caffe和Tensorflow。然而它的支持方案是修改源代码。。。众所周知，pb文件的易用性是建立在通信双方使用同一套协议的基础之上。但目前AI领域魔改成风，跑个开源模型，还必须要下载作者魔改版的Caffe。。。可以想见深鉴这方面的自动化程度一定不咋样，肯定有很多手工活要做。
+
+那么正确的做法是什么呢？参见ONNX。我司的方案比ONNX略早，但思路基本一致。
+
+5.Model Zoo。这个比较寒碜了，只有三个模型，而且还都是最简单的分类模型。不过从支持Inception v1来看，应该是掌握了加速分支网络的技巧。其他的Face Detection等只有视频，没有模型，似乎还处于实验室阶段，可能易用性还有待提升。
+
+无耻的谈一下我司的Model Zoo。包含40+的模型，涵盖图像分类、目标检测、图像分割、人脸识别、超分辨率、OCR等。目前，主要往RNN、Attention方面发展。这里会遇到循环结构的问题，还没有做的太好。
+
+目前的AI Chip战争，入局的玩家基本都解决了芯片有无的问题。体系结构的红利也吃的差不多了，在未来几年不大可能再保持目前的算力增速。因此，未来争夺的焦点将转向软件方面。实际上，今年以来，已经有客户拿友商产品性能来压我们。然而也就是压一下而已，让他弃用他肯定不干。原因无他，我司80%的功能都已经自动化，没人会和好用过不去。
 
 ## 参考
 
@@ -285,86 +321,4 @@ https://mp.weixin.qq.com/s/oOYGa4Mti6KpkpI4TtpitQ
 https://mp.weixin.qq.com/s/_8lbTU0GFEXQr_4pdQ6XPw
 
 同步SGD等现有分布式训练方式将过时，Yoshua Bengio谈迈向硬件友好的深度学习
-
-# CPU
-
-https://zhuanlan.zhihu.com/p/29743431
-
-CPU制造的那些事之一：i7和i5其实是孪生兄弟！？
-
-https://zhuanlan.zhihu.com/p/29767262
-
-CPU制造的那些事之二：Die的大小和良品率
-
-https://zhuanlan.zhihu.com/p/31848803
-
-为什么CPU越来越多地采用硅脂而不是焊锡散热？
-
-https://zhuanlan.zhihu.com/p/27624654
-
-CPU风扇停转后会发生什么？CPU凭什么烧不坏
-
-https://zhuanlan.zhihu.com/p/30409360
-
-为什么CPU的频率止步于4G?我们触到频率天花板了吗？
-
-https://zhuanlan.zhihu.com/p/33145828
-
-什么是Speculative Execution？为什么要有它？
-
-http://mp.weixin.qq.com/s/sshhUppVPP6qM7LH1V3nSQ
-
-四位计算机的原理及其实现
-
-https://zhuanlan.zhihu.com/p/33579054
-
-Reset重启后发生了什么？它和关机后再开机有什么区别？
-
-https://zhuanlan.zhihu.com/p/34003929
-
-调试程序时，设置断点的原理是什么？
-
->Visual Studio有个有趣的特性是debug编译后，会把0xcc（INT 3）填入代码的空隙，这样一旦程序越界就会被VS捕捉而容易发现错误。而0xCCCC在中国的GBK编码是“烫”。有中国程序员翻看内存到代码段会发现很多"烫烫烫"，不明所以，以为发生了什么神奇的事情。
-
-https://zhuanlan.zhihu.com/p/34091597
-
-ARM攒机指南-网络篇
-
-https://zhuanlan.zhihu.com/p/34223088
-
-如何进入BIOS？
-
-https://zhuanlan.zhihu.com/p/34858149
-
-128G的固态硬盘为什么有的标120G，有的标100G？固态硬盘容量背后的秘密
-
-https://zhuanlan.zhihu.com/p/30565679
-
-人工智能技术热潮中，是否存在破解苹果A11处理器的可能？
-
-https://mp.weixin.qq.com/s/UWpp2r0_yDxNyJk-cldVyA
-
-处理器高危漏洞无人幸免？树莓派：我们不受影响
-
->最近的Meltdown和Spectre漏洞被炒的沸沸扬扬，然而能用python语言讲述复杂的CPU计算原理，这是该文的一大创见。
-
-https://mp.weixin.qq.com/s/v_BsfSFp-LwiCOFKaMIS_g
-
-后摩尔时代，如何给你的CPU减负？
-
-https://mp.weixin.qq.com/s/-2kGkJzjay2WJzIpMs2Adw
-
-IEEE盘点27款震撼世界的芯片
-
-https://mp.weixin.qq.com/s/gpfMOW7gzVa2HhYOlDy2nQ
-
-从Intel和ARM争霸战，看看做芯片有多难
-
-https://zhuanlan.zhihu.com/p/38847308
-
-为什么硬盘转速是5400或者7200这么奇怪的数字？7200转的硬盘一定比5400快吗？
-
-https://zhuanlan.zhihu.com/p/40601422
-
-双通道、四通道内存对游戏重要吗？
 

@@ -288,6 +288,10 @@ https://zhuanlan.zhihu.com/p/41897137
 
 物体检测中的结构推理网络
 
+https://mp.weixin.qq.com/s/OqlZ2TRGbHURYW00440lgQ
+
+微软亚洲研究院与北京大学共同提出用于物体检测的可学习区域特征提取模块
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/naD6hVwDg3QSA76sXy2GZA

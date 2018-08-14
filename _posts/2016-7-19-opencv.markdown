@@ -284,6 +284,10 @@ https://mp.weixin.qq.com/s/bY5UIKPPvDE1XBC1LyoqPg
 
 教你快速使用OpenCV/Python/dlib进行眨眼检测识别！
 
+https://mp.weixin.qq.com/s/cgxTJ6X5ya6PDIfeJ9_z6Q
+
+基于OpenCV与Dlib的行人计数开源实现
+
 https://mp.weixin.qq.com/s/kWaD-UQdiDd1SU9Mo43ihg
 
 OpenCV从零基础---检测及分割图像的目标区域

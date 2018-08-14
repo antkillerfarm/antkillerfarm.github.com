@@ -280,6 +280,10 @@ https://mp.weixin.qq.com/s/sDeh0Oqqs6ERJ4Hz5ROA5Q
 
 DeepMind重磅：神经算术逻辑单元，Keras实现
 
+https://mp.weixin.qq.com/s/VmHckiVzz6oAvuHgyWkeUg
+
+使用Keras实现多输出分类：用单个模型同时执行两个独立分类任务
+
 # OpenAI Gym
 
 Openai gym是一个用于开发和比较强化学习（reinforcement learning，RL）算法的工具包，与其他的数值计算库兼容，如tensorflow或者theano库。现在主要支持的是python语言，以后将支持其他语言。

@@ -415,24 +415,6 @@ https://zhuanlan.zhihu.com/c_122608198
 
 一个可视化方面的专栏
 
-## howmuch.net
-
-howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：
-
-![](/images/article/top_10_company.jpg)
-
-网址：
-
-https://howmuch.net/
-
-## Gephi
-
-Gephi是一个针对图和网络的可视化工具。
-
-官网：
-
-https://gephi.org/
-
 ## 贝叶斯线性回归
 
 https://mp.weixin.qq.com/s/szTmHY-Yvn7N3s_GzTDiEA
