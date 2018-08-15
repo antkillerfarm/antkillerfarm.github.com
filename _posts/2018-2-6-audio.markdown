@@ -298,3 +298,18 @@ https://mp.weixin.qq.com/s/LU5-zrWof5HmgqiIx6aNsg
 
 用神经网络来判定量子纠缠？这里有一篇简单易懂的方法解读
 
+https://mp.weixin.qq.com/s/VvU8OfXKJiyEKaujWfCrWw
+
+上海交通大学ECCV 2018四篇入选论文解读
+
+https://mp.weixin.qq.com/s/gtIRUM58DtLgZtJYBOixvA
+
+单幅RGB图像整体三维场景解析与重建
+
+https://mp.weixin.qq.com/s/_IkE5NPYjpT2QGVo9mfWvA
+
+MIT&谷歌视频运动放大让计算机辅助人眼“明察秋毫” 
+
+https://mp.weixin.qq.com/s/yOuK39WdkfvyV36c1_SOnQ
+
+社会媒体数据挖掘与信息传播预测

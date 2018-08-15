@@ -322,3 +322,7 @@ https://mp.weixin.qq.com/s/_8lbTU0GFEXQr_4pdQ6XPw
 
 同步SGD等现有分布式训练方式将过时，Yoshua Bengio谈迈向硬件友好的深度学习
 
+https://zhuanlan.zhihu.com/p/33462550
+
+传统IP Vendor的AI加速器一览
+

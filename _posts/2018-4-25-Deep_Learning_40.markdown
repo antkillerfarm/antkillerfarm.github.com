@@ -246,6 +246,10 @@ https://mp.weixin.qq.com/s/p_qdKcQwQ8y_JUw3gQUEnA
 
 谷歌大脑用强化学习为移动设备量身定做最好最快的CNN模型
 
+https://mp.weixin.qq.com/s/OyEIcS5o6kWUu2UzuWZi3g
+
+这么Deep且又轻量的Network，实时目标检测
+
 # OCR
 
 ## 概述
