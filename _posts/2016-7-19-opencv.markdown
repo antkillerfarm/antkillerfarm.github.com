@@ -416,6 +416,10 @@ https://mp.weixin.qq.com/s/40SXxtks9yGbYHEikQPjrg
 
 用OpenCV实现八种不同的目标跟踪算法
 
+https://www.jianshu.com/p/53982e81d781
+
+OpenCV十字激光中心与端点识别
+
 # CCV
 
 CCV是一个C语言的CV库。
@@ -451,46 +455,4 @@ https://gnu.org/software/octave/
 安装方法:
 
 `sudo apt-get install octave`
-
-# 垃圾筐
-
-https://mp.weixin.qq.com/s/rZwqxyBmQg07Pq1ihTjNMg
-
-动图解释泰勒级数（一）
-
-https://mp.weixin.qq.com/s/yqAnIjGmXpubgSsGDx6O8w
-
-动图解释泰勒级数（二）
-
-https://zhuanlan.zhihu.com/p/36230460
-
-黑盒函数的探索
-
-http://www.matrix67.com/blog/archives/4570
-
-再谈Julia集与Mandelbrot集
-
-https://mp.weixin.qq.com/s/3svGvbk0-ek5tQCWJ9ii4A
-
-读懂相对论：从弯曲空间的几何开始
-
-https://mp.weixin.qq.com/s/xin9VUuIVCZqP-KPn_xAlw
-
-没想到，用极坐标画素数时竟然出现了这神奇的一幕！
-
-https://mp.weixin.qq.com/s/GFO84scpniELyqLdf8HzOQ
-
-一个10*10的正方形里，最多可以放多少个直径为1的圆？为啥不是100个？
-
-https://zhuanlan.zhihu.com/p/36297534
-
-x = cos x 的解析形式
-
-https://mp.weixin.qq.com/s/5PR4OUubguj0WLB85aa9Mg
-
-2018年菲尔兹奖候选人分析
-
-https://mp.weixin.qq.com/s/COIYp4Ao9fBPnaUZvhCxkg
-
-表情包的画质是如何越传越差甚至还变绿的？
 
