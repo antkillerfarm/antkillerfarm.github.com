@@ -122,3 +122,6 @@ https://zhuanlan.zhihu.com/p/41944121
 
 NLP系列学习：意图识别
 
+https://mp.weixin.qq.com/s/ciKPaiqk59SrAomI5RsN6Q
+
+Facebook开源了两个无监督翻译模型，只用单语就能训练双语

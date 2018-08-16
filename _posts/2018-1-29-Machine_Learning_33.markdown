@@ -270,3 +270,7 @@ https://mp.weixin.qq.com/s/VzN02XW3yN2peqTD6q-4Cg
 
 从数学到实现，全面回顾高斯过程中的函数最优化
 
+https://zhuanlan.zhihu.com/gpml2016
+
+高斯世界下的Machine Learning
+

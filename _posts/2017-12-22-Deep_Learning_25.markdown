@@ -146,6 +146,10 @@ https://mp.weixin.qq.com/s/S_xhaDrOaPe38ZvDLWl4dg
 
 从技术到产品，搜狗为我们解读了神经机器翻译的现状
 
+https://mp.weixin.qq.com/s/vzjKU_0qhapWKOYZ4Rnj-Q
+
+谷歌的机器翻译模型Transformer，现在可以用来做任何事了
+
 ## 参考
 
 https://blog.csdn.net/mijiaoxiaosan/article/details/73251443

@@ -286,6 +286,10 @@ https://mp.weixin.qq.com/s/lgzi1l-fhwvwAsjHvn9wYg
 
 开源Featuretools：机器学习开发提速10倍！
 
+https://mp.weixin.qq.com/s/tgUguHC56FjgBdUGyg8yRg
+
+Oracle开源GraphPipe：几行代码让你在TensorFlow部署PyTorch模型
+
 ## 贝叶斯学习
 
 https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og

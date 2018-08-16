@@ -184,6 +184,10 @@ https://mp.weixin.qq.com/s/NuWP9v_5b2-V7rPdyqtM0A
 
 DanceNet：帮你生成会跳舞的小姐姐
 
+https://mp.weixin.qq.com/s/iOdh1iIP0GIYe4gRDE0z-g
+
+漫谈概率PCA和变分自编码器
+
 # RBM & DBN & Deep Autoencoder
 
 ## RBM

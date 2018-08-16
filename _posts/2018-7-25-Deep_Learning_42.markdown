@@ -292,68 +292,25 @@ https://mp.weixin.qq.com/s/OqlZ2TRGbHURYW00440lgQ
 
 微软亚洲研究院与北京大学共同提出用于物体检测的可学习区域特征提取模块
 
-# DL参考资源
+# GAN进阶（续）
 
-https://mp.weixin.qq.com/s/naD6hVwDg3QSA76sXy2GZA
+https://mp.weixin.qq.com/s/c84LMFnIhoDeolc1B4MIVA
 
-上海交通大学CVPR Spotlight论文：利用形态相似性生成人体部位解析数据
+AI以假乱真怎么办？TequilaGAN教你轻松辨真伪
 
-https://mp.weixin.qq.com/s/OfDaoRb2l_gei--bLSzTRw
+https://mp.weixin.qq.com/s/fgL6FtjeF-EgG5jjAGDR7A
 
-宅男福音DeepFake进阶版！基于位置映射图网络进行3D人脸重建
+GANimation让图片秒变GIF表情包，秒杀StarGAN
 
-https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
+https://mp.weixin.qq.com/s/NPUJ89nddF1WHfFv2nn-Hg
 
-北大：一种基于新闻特征抽取和循环神经网络的股票预测方法
+GANs有嘻哈：一次学完10个GANs明星模型
 
-https://mp.weixin.qq.com/s/UboQNEywHSBAYc0740qmzQ
+https://mp.weixin.qq.com/s/yShYrMFKox30jXajXXQPGw
 
-让机器学会创造新的概念：DeepMind提出符号-概念关联网络SCAN
+如何让GAN生成更高质量图像？斯坦福大学给你答案
 
-https://mp.weixin.qq.com/s/AAmQymWdKQDeL8DQacEZ3A
+https://mp.weixin.qq.com/s/qiLFQowjH67XECXBlppUDg
 
-用深度学习解决Bongard问题
+对抗深度学习:鱼(模型准确性)与熊掌(模型鲁棒性)能否兼得？
 
-https://mp.weixin.qq.com/s/210l9K94KMqtJtqbrZ-mgg
-
-打开黑箱重要一步，MIT提出TbD-net，弥合视觉推理模型的性能与可解释性鸿沟
-
-https://mp.weixin.qq.com/s/E5VpBt53VTjOxt8wE3SrLA
-
-工程师如何解决穿衣搭配烦恼？
-
-https://mp.weixin.qq.com/s/fPj4wMtiFX55c_UjNsQnBg
-
-PointCNN全面刷新测试记录：山东大学提出通用点云卷积框架
-
-https://mp.weixin.qq.com/s/tzAp6PxAn3GszcttRzfz8Q
-
-CMU提出新型智能体定位方法：“主动神经定位器”
-
-https://mp.weixin.qq.com/s/dWIhQVPNi9SlzuhMiatEVQ
-
-几张贴纸就让神经网络看不懂道路标志，伯克利为真实环境生成对抗样本
-
-https://mp.weixin.qq.com/s/_1rKAj-KOs4P8WnKzen64w
-
-传统方法已经Out了？OpenAI提出全新辩论模式训练AI
-
-https://mp.weixin.qq.com/s/Mk_EkwTYK2141cU9zC1hvQ
-
-合成逼真图像，试试港中大&英特尔的半参数方法
-
-https://zhuanlan.zhihu.com/p/36527644
-
-Learning with Noise: Enhance Distantly Supervised Relation Extraction with Dynamic Transition Matrix——一种对噪音数据显式建模的方法
-
-https://mp.weixin.qq.com/s/tjnpIYJGmrTLGUsdtBI2Vw
-
-AI设计师“鹿班”核心技术公开：如何1秒设计8000张海报？
-
-https://mp.weixin.qq.com/s/zeN7rjmAnvh_7BbTmScrZw
-
-细粒度分类你懂吗？——fine-gained image classification
-
-https://mp.weixin.qq.com/s/Ob1ngUEmRgSybcAD5zg0QQ
-
-利用深度学习消去反光
