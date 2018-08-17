@@ -314,3 +314,7 @@ https://mp.weixin.qq.com/s/qiLFQowjH67XECXBlppUDg
 
 对抗深度学习:鱼(模型准确性)与熊掌(模型鲁棒性)能否兼得？
 
+https://mp.weixin.qq.com/s/Fgptle5p9jFtP6JPvjPHNw
+
+腾讯优图提出几何对抗损失函数在单视图3D物体重建中的应用
+

@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  深度学习（三十七）——人脸识别
+title:  深度学习（三十七）——人脸检测/识别
 category: DL 
 ---
 
-# 人脸识别
+# 人脸检测/识别
 
 ## Cascade CNN
 
@@ -69,6 +69,18 @@ http://blog.csdn.net/shuzfan/article/details/52668935
 https://mp.weixin.qq.com/s/IrZEQ69RNUdcs0Fl8fHmmQ
 
 如何应用MTCNN和FaceNet模型实现人脸检测及识别
+
+## 人脸识别
+
+人脸检测是从一张图片中，识别出人脸，这和通常的目标检测没有太大的差别。**而人脸识别，则是精确到具体的人。**
+
+人脸识别通常的做法是：
+
+1.使用人脸检测，得到人脸区域的图像。
+
+2.提取人脸特征。一般采用CNN+FC+loss的结构。其中，CNN用于提取特征，而FC+loss仅用于训练阶段。在推理阶段，我们使用CNN得到人脸的特征向量即可。
+
+3.特征的对比。比较两个特征向量的相似度（可以使用LMS或者cos相似度）。超过阈值，即认为是同一张脸。
 
 ## Triplet Loss
 
@@ -285,6 +297,10 @@ https://mp.weixin.qq.com/s/CvdeV5xgUF0kStJQdRst0w
 https://zhuanlan.zhihu.com/p/34404607
 
 人脸识别的LOSS（上）
+
+https://zhuanlan.zhihu.com/p/34436551
+
+人脸识别的LOSS（下）
 
 https://mp.weixin.qq.com/s/ZrnAqDJCLtMy_qTQ2RZT0A
 

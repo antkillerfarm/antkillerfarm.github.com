@@ -212,3 +212,11 @@ https://mp.weixin.qq.com/s/xTSLpFrBdKBgazCfjuLiwA
 
 Spotlight论文：解耦神经网络DCNet，性能优于标准CNN
 
+https://mp.weixin.qq.com/s/I1IJkNqNfT1TkB7NgchIYA
+
+基于多粒度监督的图像语义物体协同标注
+
+https://mp.weixin.qq.com/s/Cz_GzYrcofFJJUmcjonjfQ
+
+何恺明等新作：用35亿社交网络图片训练AI算法，吴恩达推荐
+

@@ -4,9 +4,29 @@ title:  机器学习（二十五）——Tri-training, Beam Search, 强化学习
 category: ML 
 ---
 
-# 时间序列分析
+# 时间序列分析（续）
 
-## 参考（续）
+## 参考
+
+https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average
+
+https://en.wikipedia.org/wiki/Autoregressive%E2%80%93moving-average_model
+
+https://zhuanlan.zhihu.com/p/23534595
+
+时间序列分析：结合ARMA的卡尔曼滤波算法（该文的参考文献中有不少好文）
+
+http://blog.csdn.net/aliceyangxi1987/article/details/71079522
+
+用ARIMA模型做需求预测
+
+http://blog.csdn.net/kicilove/article/details/78315335
+
+时间序列初级理论篇
+
+https://mp.weixin.qq.com/s/K-XGuaWTcF6BDPJagaJDPQ
+
+时序数据与事件的关联分析
 
 https://mp.weixin.qq.com/s/JR-GIXwHF45OysoE0qvwzw
 
@@ -175,20 +195,6 @@ Beam Search算法及其应用
 https://mp.weixin.qq.com/s/GTtjjBgCDdLRwPrUqfwlVA
 
 如何使用贪婪搜索和束搜索解码算法进行自然语言处理
-
-# 模型驱动 vs 数据驱动
-
-最近阅读了这篇文章，深有感慨：
-
-https://mp.weixin.qq.com/s/N7DE0kvf8THhJQwroHj4vA
-
-成不了AI高手？因为你根本不懂数据！听听这位老教授多年心血练就的最实用统计学
-
->注：吴喜之教授是我国著名的统计学家，退休前在中国人民大学统计学院任统计学教授。吴教授上世纪六十年代就读于北京大学数学力学系，八十年代出国深造，在美国北卡罗来纳大学获得统计学博士学位，是改革开放之后第一批留美并获得统计学博士学位的中国学者。多年来吴教授在国内外数十所高校讲授统计学课程，在国内统计学界享有盛誉。其知名的学生有李舰和刘思喆。
-
->李舰，从2003年开始，一直把R当作随身武器奋战在统计学和数据分析的第一线，是Rweibo、Rwordseg、tmcn等高质量R包的作者，在业界积累了大量的经验，目前供职于Mango Solutions（中国），任数据总监。
-
->刘思喆，2012至2016年就职于京东商城，推荐系统平台部高级经理，主要负责和推荐系统离线、在线相关的用户行为、商品特征的建模，以及数据监控平台。因工作业绩，在《京东技术解密》一书中获“数据达人”称号。
 
 # 强化学习
 

@@ -231,19 +231,21 @@ ARIMA模型全称为差分自回归移动平均模型(Autoregressive Integrated 
 
 $$X_t = c + \sum_{i=1}^p \varphi_i X_{t-i}+ \varepsilon_t$$
 
-其中，p为阶数，$$\varepsilon_t$$为白噪声。上式又记作AR(p)。显然，AR模型是一个系统状态模型。
+其中，p为阶数，$$\varepsilon_t$$为白噪声。上式又记作**AR(p)**。显然，AR模型是一个系统状态模型。
 
 ### MA模型
 
 $$X_t = \mu + \varepsilon_t + \sum_{i=1}^q \theta_i \varepsilon_{t-i}$$
 
-上式记作MA(q)，其中q和$$\varepsilon_t$$的含义与上同。MA模型是一个噪声模型。
+上式记作**MA(q)**，其中q和$$\varepsilon_t$$的含义与上同。MA模型是一个噪声模型。
 
 ### ARMA模型
 
 AR模型和MA模型合起来，就是ARMA模型：
 
 $$X_t = c + \varepsilon_t +  \sum_{i=1}^p \varphi_i X_{t-i} + \sum_{i=1}^q \theta_i \varepsilon_{t-i}$$
+
+同理，上式也被记作**ARMA(p,q)**。
 
 ### Lag operator
 
@@ -255,7 +257,7 @@ $$L X_t = X_{t-1} \; \text{or} \; X_t = L X_{t+1}$$
 
 $$(1-L)^d X_t$$
 
-上式中d为阶数，因此上式也记作I(d)。显然$$I(0)=X_t$$。
+上式中d为阶数，因此上式也记作**I(d)**。显然$$I(0)=X_t$$。
 
 I模型有什么用呢？我们观察一下I(1)：
 
@@ -265,11 +267,22 @@ $$(1-L) X_t = X_t - X_{t-1} = \Delta X$$
 
 ### ARIMA模型
 
+ARIMA模型可以看作是两个随机过程的组合。
+
+首先是非平稳过程：
+
 $$Y_t = (1-L)^d X_t$$
+
+接着是一个广义平稳过程：
 
 $$\left( 1 - \sum_{i=1}^p \phi_i L^i \right) Y_t = \left( 1 + \sum_{i=1}^q \theta_i L^i \right) \varepsilon_t$$
 
-从上式可以看出，ARIMA模型实际上就是利用I模型，将时间序列转化为平稳序列之后的ARMA模型。
+最后得到ARIMA模型的公式：
+
+$$\left( 1 - \sum_{i=1}^p \phi_i L^i\right)
+(1-L)^d X_t = \delta + \left( 1 + \sum_{i=1}^q \theta_i L^i \right) \varepsilon_t$$
+
+上式也被记作**ARIMA(p,d,q)**。从上式可以看出，ARIMA模型实际上就是利用I模型，将时间序列转化为平稳序列之后的ARMA模型。
 
 >注：上面的内容只是对ARIMA模型给出一个简单的定义。实际的假设检验、参数估计的步骤，还是比较复杂的，完全可以写本书来说。
 
@@ -280,26 +293,4 @@ $$\left( 1 - \sum_{i=1}^p \phi_i L^i \right) Y_t = \left( 1 + \sum_{i=1}^q \thet
 autoregressive conditional heteroskedasticity, ARCH
 
 generalized autoregressive conditional heteroskedasticity, GARCH
-
-## 参考
-
-https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average
-
-https://en.wikipedia.org/wiki/Autoregressive%E2%80%93moving-average_model
-
-https://zhuanlan.zhihu.com/p/23534595
-
-时间序列分析：结合ARMA的卡尔曼滤波算法（该文的参考文献中有不少好文）
-
-http://blog.csdn.net/aliceyangxi1987/article/details/71079522
-
-用ARIMA模型做需求预测
-
-http://blog.csdn.net/kicilove/article/details/78315335
-
-时间序列初级理论篇
-
-https://mp.weixin.qq.com/s/K-XGuaWTcF6BDPJagaJDPQ
-
-时序数据与事件的关联分析
 
