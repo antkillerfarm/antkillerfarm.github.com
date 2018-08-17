@@ -271,3 +271,57 @@ Github：
 
 https://github.com/hprose
 
+# 垃圾筐
+
+https://mp.weixin.qq.com/s/rZwqxyBmQg07Pq1ihTjNMg
+
+动图解释泰勒级数（一）
+
+https://mp.weixin.qq.com/s/yqAnIjGmXpubgSsGDx6O8w
+
+动图解释泰勒级数（二）
+
+https://zhuanlan.zhihu.com/p/36230460
+
+黑盒函数的探索
+
+http://www.matrix67.com/blog/archives/4570
+
+再谈Julia集与Mandelbrot集
+
+https://mp.weixin.qq.com/s/3svGvbk0-ek5tQCWJ9ii4A
+
+读懂相对论：从弯曲空间的几何开始
+
+https://mp.weixin.qq.com/s/xin9VUuIVCZqP-KPn_xAlw
+
+没想到，用极坐标画素数时竟然出现了这神奇的一幕！
+
+https://mp.weixin.qq.com/s/GFO84scpniELyqLdf8HzOQ
+
+一个10*10的正方形里，最多可以放多少个直径为1的圆？为啥不是100个？
+
+https://zhuanlan.zhihu.com/p/36297534
+
+x = cos x 的解析形式
+
+https://mp.weixin.qq.com/s/5PR4OUubguj0WLB85aa9Mg
+
+2018年菲尔兹奖候选人分析
+
+https://mp.weixin.qq.com/s/COIYp4Ao9fBPnaUZvhCxkg
+
+表情包的画质是如何越传越差甚至还变绿的？
+
+## LSM (Log Structured Merge)
+
+十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。
+
+http://www.open-open.com/lib/view/open1424916275249.html
+
+Log Structured Merge Trees(LSM)原理
+
+https://mp.weixin.qq.com/s/CmYg22NObamkNOqGjKg0-w
+
+解读现代存储系统背后的经典算法
+
