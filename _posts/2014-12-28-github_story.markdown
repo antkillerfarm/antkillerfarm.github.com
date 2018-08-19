@@ -56,7 +56,7 @@ sudo gem sources --add https://gems.ruby-china.org/ --remove https://rubygems.or
 
 在ubuntu上可以这样：
 
-`sudo apt-get install ruby-dev`
+`sudo apt install ruby-dev`
 
 在windows下需要下载一个Dev-kit的安装包。但是Ruby的网站经常访问不了，所以其实还可以这样安装：
 
@@ -64,7 +64,7 @@ sudo gem sources --add https://gems.ruby-china.org/ --remove https://rubygems.or
 
 4.安装jekyll和rdiscount
 
-`gem install jekyll rdiscount`
+`sudo gem install jekyll rdiscount`
 
 5.进入blog的根目录之后,运行
 

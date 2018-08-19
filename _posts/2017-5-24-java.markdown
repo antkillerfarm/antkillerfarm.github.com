@@ -223,6 +223,10 @@ https://mp.weixin.qq.com/s/zfOZAmgpndcqgxHHaS1j3g
 
 用Vue和React构建相同应用程序，区别在哪？
 
+https://mp.weixin.qq.com/s/DHxEqsTMOyc7pHfmJrfNEg
+
+一篇文章理解JS继承
+
 # Scala
 
 官网：

@@ -226,6 +226,10 @@ https://zhuanlan.zhihu.com/p/39614034
 
 基于孪生区域推荐网络的高性能单目标跟踪
 
+https://mp.weixin.qq.com/s/Lmvx_KurxG3nfmvhXAD_tQ
+
+一种轻量级在线多目标车辆跟踪方法
+
 # FlowNet
 
 论文：
@@ -435,38 +439,4 @@ https://mp.weixin.qq.com/s/lt9lZbulkW0C8A_xi6hodQ
 https://mp.weixin.qq.com/s/SGCtwYWfnxjcpMJeeH1b4w
 
 图神经网络+池化模块，斯坦福等提出层级图表征学习
-
-# 垃圾筐
-
-http://www.matrix67.com/
-
-一个数学blog
-
-http://blog.huajh7.com/2013/03/06/variational-bayes/
-
-变分贝叶斯算法理解与推导
-
-https://www.zhihu.com/question/267166775
-
-真空中有两个位置固定的引力源(恒星)，一个质量较小的小球(行星)有哪些典型的稳定绕转方式?
-
-http://www.matrix67.com/blog/archives/6750
-
-趣题：两个方阵是怎样互相穿过对方的？
-
-https://mp.weixin.qq.com/s/r95iMIKMctgjko1GRn9-5A
-
-史上最贱的数学题
-
-https://mp.weixin.qq.com/s/BkKw2C3n9WsmIchJkkZxUw
-
-从七桥问题开始：全面介绍图论及其应用
-
-https://mp.weixin.qq.com/s/ZDY3Yt67eXK5pjXgvJkkyQ
-
-图论的各种基本算法
-
-https://mp.weixin.qq.com/s/2h1dgvPbYKBOYZPiixg9iw
-
-手把手：四色猜想、七桥问题…程序员眼里的图论，了解下？
 

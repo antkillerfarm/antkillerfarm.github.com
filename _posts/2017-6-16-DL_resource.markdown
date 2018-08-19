@@ -466,3 +466,7 @@ https://mp.weixin.qq.com/s/AEyr7FNeIHprprs9k7HE9w
 
 这些神经网络调参细节，你都了解了吗
 
+https://mp.weixin.qq.com/s/S6_HzgyTnoNvc8vp4_C1kw
+
+利用Matlab实现深度学习
+

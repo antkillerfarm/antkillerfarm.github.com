@@ -433,3 +433,15 @@ https://mp.weixin.qq.com/s/09NwPaWTDU5g6ZjSPxLgTw
 https://zhuanlan.zhihu.com/p/41287237
 
 点云感知CVPR 2018论文总结
+
+https://mp.weixin.qq.com/s/yO_Lc5Fo-8fBC9PwVCQBqA
+
+自动驾驶入门课程第①讲—无人驾驶概览
+
+https://mp.weixin.qq.com/s/IVD0aq8V-qZoB0tcLMigYw
+
+自动驾驶入门课程第②讲 — 高精地图
+
+https://mp.weixin.qq.com/s/KJbm4wfsTLxT5LGR7GV_SA
+
+自动驾驶入门课程第③讲 — 定位

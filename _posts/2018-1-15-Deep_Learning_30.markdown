@@ -305,7 +305,17 @@ https://mp.weixin.qq.com/s/u1UnAuGllcWn8Ik5wDPY6w
 
 论文：
 
-《EESEN: End-to-end speech recognition using deep RNN models and WFST-based decoding》
+《EESEN: End-to-End Speech Recognition using Deep RNN Models and WFST-based Decoding》
+
+>苗亚杰，南京邮电大学本科（2008）+清华硕士（2011）+CMU博士（2016）。   
+>个人主页：   
+>http://www.cs.cmu.edu/~ymiao/
+
+官网：
+
+https://github.com/srvk/eesen
+
+eesen是基于Tensorflow开发的，苗博士之前还有个用Theano开发的叫PDNN的库。
 
 # 自动求导
 
