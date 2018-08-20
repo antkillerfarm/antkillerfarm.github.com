@@ -296,6 +296,10 @@ https://mp.weixin.qq.com/s/5I9uzGCNFD93L1mzakTl0Q
 
 目标检测网络学习总结（RCNN-->YOLO V3）
 
+https://mp.weixin.qq.com/s/ZQqcsJenqkXtH1czOe5WnA
+
+阿里巴巴提出Auto-Context R-CNN算法，刷出Faster RCNN目标检测新高度
+
 # GAN进阶（续）
 
 https://mp.weixin.qq.com/s/c84LMFnIhoDeolc1B4MIVA
