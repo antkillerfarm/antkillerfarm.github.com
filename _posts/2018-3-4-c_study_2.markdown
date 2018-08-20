@@ -129,3 +129,7 @@ Facebook开源了两个无监督翻译模型，只用单语就能训练双语
 https://mp.weixin.qq.com/s/C-Oh0bmpEon1Oeq5M6Q1GQ
 
 针对商品标题冗长问题，阿里工程师怎么解决？
+
+https://mp.weixin.qq.com/s/Pj_sfced_IfjwoeA-_vvMg
+
+COLING 2018对话语义理解的序列到序列数据增强

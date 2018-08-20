@@ -92,6 +92,8 @@ https://github.com/shelhamer/fcn.berkeleyvision.org
 
 上图的结构在论文中被称为Skip Layer。
 
+FCN的另一贡献是**支持任意大小的图像**。在CNN的常见操作中，Conv和Pooling都不在意图像大小。一组参数可以应用于任意大小的图像，但FC要求固定的输入维度，这决定了输入的图像的大小必须是固定的。因此，现代的CNN为了支持任意大小的图像，都有意减少或避免使用FC。
+
 参考：
 
 http://www.cnblogs.com/gujianhan/p/6030639.html
@@ -105,6 +107,10 @@ FCN的简单实现
 https://mp.weixin.qq.com/s/kc0tTcTzRAT0p7q6ejXbqQ
 
 重新发现语义分割，一文简述全卷积网络
+
+https://www.zhihu.com/question/56688854
+
+卷积神经网络里输入图像大小何时是固定，何时是任意？
 
 # SegNet
 

@@ -50,6 +50,8 @@ https://www.cs.toronto.edu/~kriz/cifar.html
 
 http://www.cnblogs.com/neopenx/p/4480701.html
 
+CNN训练Cifar-10技巧
+
 ## ImageNet
 
 ImageNet是由李飞飞等创建的一个计算机视觉系统识别项目，是目前世界上图像识别最大的数据库。

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十二）——行人重识别, 人脸识别进阶, 目标检测进阶
+title:  深度学习（四十二）——行人重识别, 人脸识别进阶, 目标检测进阶, CNN进阶
 category: DL 
 ---
 
@@ -292,6 +292,10 @@ https://mp.weixin.qq.com/s/OqlZ2TRGbHURYW00440lgQ
 
 微软亚洲研究院与北京大学共同提出用于物体检测的可学习区域特征提取模块
 
+https://mp.weixin.qq.com/s/5I9uzGCNFD93L1mzakTl0Q
+
+目标检测网络学习总结（RCNN-->YOLO V3）
+
 # GAN进阶（续）
 
 https://mp.weixin.qq.com/s/c84LMFnIhoDeolc1B4MIVA
@@ -317,4 +321,8 @@ https://mp.weixin.qq.com/s/qiLFQowjH67XECXBlppUDg
 https://mp.weixin.qq.com/s/Fgptle5p9jFtP6JPvjPHNw
 
 腾讯优图提出几何对抗损失函数在单视图3D物体重建中的应用
+
+https://mp.weixin.qq.com/s/1SpHGtjkSfDEFCZuudCm0Q
+
+基于GAN和VAE的跨模态图像生成
 

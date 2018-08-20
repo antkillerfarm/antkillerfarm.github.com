@@ -184,6 +184,10 @@ https://mp.weixin.qq.com/s/b5d_jNNDB_a_VFdT3J3Vog
 
 通俗易懂理解Attention机制
 
+https://mp.weixin.qq.com/s/eY2XJipUIKHIlrYVOhiMRQ
+
+什么是自注意力机制？
+
 http://geek.csdn.net/news/detail/50558
 
 深度学习和自然语言处理中的attention和memory机制

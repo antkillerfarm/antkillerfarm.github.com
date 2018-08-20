@@ -372,3 +372,7 @@ https://mp.weixin.qq.com/s/pXskwKkzCtgIuNtgFVF_wg
 
 ImageNet分类精度再创新高！李飞飞组ECCV Oral提出全新渐进式神经结构搜索
 
+https://mp.weixin.qq.com/s/GLiOZjqC9DSvGEX3xqbHJg
+
+鸡生蛋与蛋生鸡，纵览神经架构搜索方法
+

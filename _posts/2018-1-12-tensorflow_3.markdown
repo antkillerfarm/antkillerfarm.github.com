@@ -330,6 +330,10 @@ https://mp.weixin.qq.com/s/mZ79KAuSIJLtBEXvKwUi-w
 
 如何利用TensorFlow.js部署简单的AI版“你画我猜”图像识别应用
 
+https://mp.weixin.qq.com/s/zz8XCykJ6jxbE5J4YwAkEA
+
+一招教你使用tf.keras和eager execution解决复杂问题
+
 # Machine Learning之Python篇
 
 ## 参考（续）
