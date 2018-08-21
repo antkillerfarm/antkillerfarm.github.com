@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NLP（二）, Storm
+title:  NLP（二）, Storm, SLAM
 category: AI 
 ---
 
@@ -201,4 +201,98 @@ Nimbus的作用是将运行的jar分发到各Node去执行。
 虽然`bin/storm nimbus`可以启动nimbus，然而这种方法启动的是前台进程，一旦退出终端，进程就会被杀死。可用如下方法解决之：
 
 `start-stop-daemon --start --background --exec /root/apache-storm-1.0.2/bin/storm nimbus`
+
+# SLAM
+
+## blog
+
+http://www.cnblogs.com/gaoxiang12/
+
+一个SLAM方面的blog。作者半闲居士，目前在德国慕尼黑工业大学留学，清华本科。
+
+https://blog.csdn.net/heyijia0327
+
+一个SLAM方面的blog。
+
+https://zhuanlan.zhihu.com/c_194571463
+
+一个SLAM方面的专栏
+
+https://www.zhihu.com/people/yang-jian-hua-63-91/posts
+
+一个DL+SLAM方面的专栏
+
+## 参考
+
+http://www.cnblogs.com/yhlx125/p/4707693.html
+
+SLAM(simultaneous localization and mapping)学习笔记
+
+http://www.cnblogs.com/gaoxiang12/p/5113334.html
+
+视觉SLAM中的数学基础
+
+http://www.cnblogs.com/gaoxiang12/p/5560360.html
+
+SLAM中的EKF，UKF，PF原理简介
+
+https://mp.weixin.qq.com/s/tH-1XTEC-S7bIFoDdDK5CQ
+
+如何给机器人一双慧眼：从视觉SLAM技术说起！
+
+http://www.cnblogs.com/gaoxiang12/p/3695962.html
+
+视觉SLAM漫谈
+
+https://mp.weixin.qq.com/s/zIYgNQcuxDJboABzXSPGQw
+
+迈向几何型深度SLAM
+
+https://mp.weixin.qq.com/s/LO7Vo7zmC-avdijP7T9o8w
+
+对比激光SLAM与视觉SLAM：谁会成为未来主流趋势？
+
+https://mp.weixin.qq.com/s/Tfqqs_aOBIObeAMfG-9e4w
+
+SLAM入门+典型SLAM应用及解决方案
+
+https://mp.weixin.qq.com/s/97bIBKTADd2oIUBAabM04Q
+
+实时SLAM的未来以及深度学习与SLAM的比较
+
+https://mp.weixin.qq.com/s/CHhek4wK42oQkGtneyZymw
+
+SLAM：基础知识
+
+https://mp.weixin.qq.com/s/mjhPt2fnFSYlr8q-C_i-0g
+
+SLAM：视觉里程计
+
+https://mp.weixin.qq.com/s/ANP_dlwWjhe-lXzf2ocKkg
+
+视觉SLAM中直接法的应用实践
+
+https://mp.weixin.qq.com/s/09v9gj1cmf4zIJAGqHnJWw
+
+视觉SLAM中的直接法在智能驾驶中的应用实践！
+
+https://mp.weixin.qq.com/s/pL2S3UypKJgpP32QLRR5BQ
+
+视觉SLAM漫淡：机器人即时定位与地图构建！
+
+https://zhuanlan.zhihu.com/p/30707986
+
+章国锋：黑暗中的前行--复杂环境下的鲁棒SfM与SLAM
+
+https://www.zhihu.com/question/35116055
+
+orb-slam在众多SLAM方法中处于怎样的地位？
+
+https://mp.weixin.qq.com/s/myWTfgvjiqli_Rxfr-FY0w
+
+360扫地机原理大揭秘，竟还有无人驾驶技术？——浅析家用机器人SLAM方案
+
+https://mp.weixin.qq.com/s/V3PLx3kP9zOcR1CZZI8Yqw
+
+速感科技CTO张一茗：视觉SLAM的技术现状和应用趋势
 

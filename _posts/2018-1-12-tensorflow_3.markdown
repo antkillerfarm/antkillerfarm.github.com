@@ -334,6 +334,10 @@ https://mp.weixin.qq.com/s/zz8XCykJ6jxbE5J4YwAkEA
 
 一招教你使用tf.keras和eager execution解决复杂问题
 
+https://mp.weixin.qq.com/s/atQHJ5U2pJpSG6PguN7J4Q
+
+如何保持运动小车上的旗杆屹立不倒？TensorFlow利用A3C算法训练智能体玩CartPole游戏
+
 # Machine Learning之Python篇
 
 ## 参考（续）

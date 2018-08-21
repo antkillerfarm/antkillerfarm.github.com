@@ -373,3 +373,8 @@ https://mp.weixin.qq.com/s/LwYzxFO6Fj9Biiww3Y22qw
 https://mp.weixin.qq.com/s/X96oI-duHwyCFAR79inlig
 
 真实到可怕！英伟达MIT造出马良的神笔
+
+https://mp.weixin.qq.com/s/MFKhmHcaQvufdRawFqisjA
+
+Distill详述「可微图像参数化」：神经网络可视化和风格迁移利器！
+

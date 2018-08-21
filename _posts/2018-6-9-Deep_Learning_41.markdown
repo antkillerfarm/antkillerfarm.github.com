@@ -209,6 +209,10 @@ Adaptation for Neural Machine Translation
 >场景：假设储备了大量新闻领域双语语料，少量科技领域双语语料（或者没有），科技领域单语语料（大量、少量或者没有）的大菜鸟翻译公司，接到一个科技领域的翻译项目。如何使用现有资源去尽可能的把科技领域的翻译做好。   
 >问题：这里的科技领域就是in-domain，新闻领域是out-domain。如何使用数量有限的in-domain parallel corpus和相对丰富的out-domain parallel corpus来更好地提升in-domain translation performance。
 
+https://mp.weixin.qq.com/s/xAWW8aqrj5Qf1KaGGZLqfQ
+
+只有100个标记数据，如何精确分类400万用户评论？
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十三）——图像检索, Spiking Neuron Networks, 问答系统, Attention进阶
+title:  深度学习（四十三）——图像检索, Spiking Neuron Networks, 问答系统, Attention进阶, CNN进阶, 多任务学习
 category: DL 
 ---
 
@@ -317,3 +317,49 @@ https://mp.weixin.qq.com/s/7l0J5LIAawlkCIrUEGG9aA
 https://mp.weixin.qq.com/s/4GPLeJiQoDfBZJzF4QmuAg
 
 Excel再现人脸识别：CNN用于计算机视觉任务不再神秘
+
+# 多任务学习
+
+https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA
+
+多任务学习-Multitask Learning概述
+
+https://mp.weixin.qq.com/s/A-CVKTz_moaFzTYywSt2gg
+
+张宇 杨强：多任务学习概述
+
+https://mp.weixin.qq.com/s/ZlCI02UdRuFBc-uKqIPE_w
+
+深度学习多任务学习综述
+
+https://mp.weixin.qq.com/s/QXOy2jo4RhCZrD5bSVzBOQ
+
+共享相关任务表征，一文读懂深度神经网络多任务学习
+
+https://mp.weixin.qq.com/s/mm9bXXTEzd8DwyYlMgGMZg
+
+NLP多任务学习：一种层次增长的神经网络结构
+
+https://mp.weixin.qq.com/s/X6FwTgr282hbqgOz3oBX-w
+
+多任务学习概述论文：从定义和方法到应用和原理分析
+
+https://blog.csdn.net/CoderPai/article/details/80080455
+
+多任务学习与深度学习
+
+https://blog.csdn.net/CoderPai/article/details/80087188
+
+利用TensorFlow一步一步构建一个多任务学习模型
+
+https://mp.weixin.qq.com/s/fcFb6WkJVP8TYpoxkQgiWQ
+
+CMU提出“十字绣网络”，自动决定多任务学习的最佳共享层
+
+https://mp.weixin.qq.com/s/i7WAFjQHK1NGVACR8x3v0A
+
+自然语言十项全能：转化为问答的多任务学习
+
+https://mp.weixin.qq.com/s/NpO1UP_mzyaeqW26xLY1Xg
+
+CVPR 2018最佳论文作者亲笔解读：研究视觉任务关联性的Taskonomy

@@ -182,6 +182,10 @@ https://mp.weixin.qq.com/s/NO_XY-JmTpIkoC-fpkZ-qg
 
 在浏览器上也能训练神经网络？TensorFlow.js带你玩游戏~
 
+## 细节
+
+1.执行`session.run(out)`，会在终端打印out的值，但执行`res = session.run(out)`则不会。
+
 ## blog
 
 http://www.jianshu.com/u/eaec1fc422e9

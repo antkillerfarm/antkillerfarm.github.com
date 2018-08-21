@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十二）——词向量进阶, NN的INT8计算, 视频目标分割, 多任务学习
+title:  深度学习（三十二）——词向量进阶, NN的INT8计算, 视频目标分割
 category: DL 
 ---
 
@@ -166,6 +166,18 @@ https://china.xilinx.com/support/documentation/white_papers/c_wp486-deep-learnin
 
 一个浮点数包括底数和指数两部分。将两者分开，就得到了一般的INT量化。
 
+量化的过程一般如下：
+
+1.使用一批样本进行推断，记录下每个layer的数值范围。
+
+2.根据该范围进行量化。
+
+量化误差过大，一般可用以下方法减小：
+
+1.按照每个channel的数值范围，分别量化。
+
+2.
+
 ## UINT量化
 
 论文：
@@ -243,6 +255,10 @@ https://mp.weixin.qq.com/s/tbRj5Wd69n9gvSzW4oKStg
 https://mp.weixin.qq.com/s/KgM1k1bziLTCec67hQ8hlQ
 
 超全总结：神经网络加速之量化模型
+
+https://mp.weixin.qq.com/s/7dzQhgblEm-kzRnpddweSw
+
+嵌入式端CNN网络计算的量化-动态定点法（1）
 
 # 视频目标分割
 
@@ -347,50 +363,4 @@ https://mp.weixin.qq.com/s/FiAju9F_MWexstP7FrIquw
 https://mp.weixin.qq.com/s/3H0ZJjnPsh1BzALmG0W7og
 
 DAVIS2017视频目标分割冠军代码开源了
-
-# 多任务学习
-
-https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA
-
-多任务学习-Multitask Learning概述
-
-https://mp.weixin.qq.com/s/A-CVKTz_moaFzTYywSt2gg
-
-张宇 杨强：多任务学习概述
-
-https://mp.weixin.qq.com/s/ZlCI02UdRuFBc-uKqIPE_w
-
-深度学习多任务学习综述
-
-https://mp.weixin.qq.com/s/QXOy2jo4RhCZrD5bSVzBOQ
-
-共享相关任务表征，一文读懂深度神经网络多任务学习
-
-https://mp.weixin.qq.com/s/mm9bXXTEzd8DwyYlMgGMZg
-
-NLP多任务学习：一种层次增长的神经网络结构
-
-https://mp.weixin.qq.com/s/X6FwTgr282hbqgOz3oBX-w
-
-多任务学习概述论文：从定义和方法到应用和原理分析
-
-https://blog.csdn.net/CoderPai/article/details/80080455
-
-多任务学习与深度学习
-
-https://blog.csdn.net/CoderPai/article/details/80087188
-
-利用TensorFlow一步一步构建一个多任务学习模型
-
-https://mp.weixin.qq.com/s/fcFb6WkJVP8TYpoxkQgiWQ
-
-CMU提出“十字绣网络”，自动决定多任务学习的最佳共享层
-
-https://mp.weixin.qq.com/s/i7WAFjQHK1NGVACR8x3v0A
-
-自然语言十项全能：转化为问答的多任务学习
-
-https://mp.weixin.qq.com/s/NpO1UP_mzyaeqW26xLY1Xg
-
-CVPR 2018最佳论文作者亲笔解读：研究视觉任务关联性的Taskonomy
 

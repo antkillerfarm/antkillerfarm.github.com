@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十二）——行人重识别, 人脸识别进阶, 目标检测进阶, CNN进阶
+title:  深度学习（四十二）——行人重识别, 人脸识别进阶, 目标检测进阶
 category: DL 
 ---
 
@@ -329,4 +329,8 @@ https://mp.weixin.qq.com/s/Fgptle5p9jFtP6JPvjPHNw
 https://mp.weixin.qq.com/s/1SpHGtjkSfDEFCZuudCm0Q
 
 基于GAN和VAE的跨模态图像生成
+
+https://mp.weixin.qq.com/s/02amaVnLFxeLDBsjG-iN1Q
+
+UBC&腾讯AI Lab提出首个模块化GAN架构，搞定任意图像PS组合
 

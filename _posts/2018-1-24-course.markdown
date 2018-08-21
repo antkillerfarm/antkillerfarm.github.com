@@ -398,6 +398,10 @@ https://mp.weixin.qq.com/s/7ftd941pycD7h_R10cDecg
 
 Apollo 2.5自动驾驶规划控制
 
+https://mp.weixin.qq.com/s/y_mOKpgLEvDjoO-UdMBcyw
+
+Apollo AdaperManager和Routing模块源代码分析
+
 # 垃圾筐
 
 Introspective Neural Networks

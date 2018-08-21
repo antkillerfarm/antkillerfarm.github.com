@@ -380,6 +380,14 @@ https://mp.weixin.qq.com/s/x-_fuVPgDYnle23IDsYCTw
 
 百度深度学习图像识别决赛代码分享
 
+https://mp.weixin.qq.com/s/r7GaYsdKLELXPmW5u2ysPw
+
+OpenCV深度学习文本检测示例程序（EAST text detector）
+
+https://mp.weixin.qq.com/s/Twki3TeNWwj_SqP9chXuxw
+
+AdvancedEAST高效场景文本检测
+
 # Spatial Transformer Networks
 
 论文：
