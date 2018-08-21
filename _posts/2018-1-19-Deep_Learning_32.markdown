@@ -44,6 +44,10 @@ https://mp.weixin.qq.com/s/0JmB0sMUVsiuwrVObN_10g
 
 浙江大学提出设计网络嵌入算法的度惩罚原则，可有效保留无标度特性
 
+https://mp.weixin.qq.com/s/F2jF1vuzK4u8ZPrDK_CyLw
+
+KDD2018 网络表示学习最新教程：DeepWalk作者Perozzi等人带你探索最前沿
+
 ## 参考
 
 https://mp.weixin.qq.com/s/4ZlVisY08XvisjbK5zSheg

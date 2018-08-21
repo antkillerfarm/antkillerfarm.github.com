@@ -316,6 +316,10 @@ https://mp.weixin.qq.com/s/XTJ0t39SbeIDXtseCUcDBA
 
 复旦大学肖仰华：领域知识图谱落地实践中的问题与对策
 
+https://mp.weixin.qq.com/s/4huHklyr_H6fFDb6VJ7ozw
+
+知识图谱的前世今生：为什么我们需要知识图谱？
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/zXABOzbQRV7sfgAhr_WqZw

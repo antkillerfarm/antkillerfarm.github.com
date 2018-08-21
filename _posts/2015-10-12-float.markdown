@@ -282,6 +282,10 @@ https://zhuanlan.zhihu.com/p/40601422
 
 双通道、四通道内存对游戏重要吗？
 
+https://www.zhihu.com/question/288500826/answer/470917953
+
+Windows等操作系统是如何做到复制几G文件不出错的？
+
 # 垃圾筐
 
 ## howmuch.net
