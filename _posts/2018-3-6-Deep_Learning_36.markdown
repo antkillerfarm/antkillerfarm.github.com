@@ -288,6 +288,10 @@ https://mp.weixin.qq.com/s/V6tjQzfzsekXuoXhbXbKSQ
 
 一文搞懂阿里Deep Interest Network
 
+https://mp.weixin.qq.com/s/ro3D_d-ZPP0TasqPr4PgPA
+
+推荐系统特征构建新进展：极深因子分解机模型
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

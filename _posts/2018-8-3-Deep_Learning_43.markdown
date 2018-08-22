@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十三）——图像检索, Spiking Neuron Networks, 问答系统, Attention进阶, CNN进阶, 多任务学习, 语义分割进阶
+title:  深度学习（四十三）——图像检索, 图像变换, Attention进阶, 多任务学习, 语义分割进阶
 category: DL 
 ---
 
@@ -46,169 +46,159 @@ https://mp.weixin.qq.com/s/QgYtfvsLGcfqLA98mp19tg
 
 KDD2018阿里巴巴论文揭示自家大规模视觉搜索算法
 
-# Spiking Neuron Networks
+# 图像变换
 
-除了基于BP算法的NN之外，Spiking Neuron Networks也是一大类NN。Spiking NN和人脑结构更相似，功耗也更小，但是相关训练和数据量化的算法尚不成熟，属于潜力股。
+https://mp.weixin.qq.com/s/88tBoAVziGEFXIGfvZZp8g
 
-参考：
+深度学习图像处理项目集锦：生成可爱的动漫头像，骡子变斑马等入选
 
-https://homepages.cwi.nl/~sbohte/publication/paugam_moisy_bohte_SNNChapter.pdf
+https://mp.weixin.qq.com/s/iV-OXiKF1jgAhSmX4QUIXw
 
-Computing with Spiking Neuron Networks
+综述：图像风格化算法最全盘点
 
-https://mp.weixin.qq.com/s/6dpKSaLFVo-ge4gtbG8GQg
+https://mp.weixin.qq.com/s/Zq3ngbTAObQuIr86nkTwjQ
 
-简述脉冲神经网络SNN：下一代神经网络
+视频换脸技术，女神都下海了吗？
 
-https://mp.weixin.qq.com/s/0n50YO1jIv_mxqe0EeS6kw
+https://mp.weixin.qq.com/s/eqI5fVuF68RQWb1a5O219w
 
-综述AI未来：神经科学启发的类脑计算
+腾讯研发“一键卸妆” ,让女神秒变路人!
 
-https://mp.weixin.qq.com/s/5KA7jtlRmnXxijGQhU1k4A
+https://mp.weixin.qq.com/s/joRcvCQwLYgRd29mfPd7XA
 
-DeepMind哈萨比斯狂推的神经科学，入门需要看什么书？
+中科大&微软提出立体神经风格迁移模型，可用于3D视频风格化
 
-https://mp.weixin.qq.com/s/TWdeHVCgEf54STvdA1QUPg
+https://mp.weixin.qq.com/s/73mkWlqJsVdu9m1kPDvfbQ
 
-DeepMind哈萨比斯长文：伟大的AI离不开神经科学
+用AI让静图变动图：CVPR热文提出动态纹理合成新方法
 
-https://mp.weixin.qq.com/s/8ibcyvyBLYArAMhQElqRzg
+https://mp.weixin.qq.com/s/gEFzogsteK_1VeywbQxbgQ
 
-Cell研究揭示生物神经元强大新特性，是时候设计更复杂的神经网络了！
+(GAN)延时摄影视频的生成
 
-https://mp.weixin.qq.com/s/cb6JBlb11xW0Xw0RWI4vFA
+https://zhuanlan.zhihu.com/p/34042498
 
-浙大&川大提出脉冲版ResNet：继承ResNet优势，实现当前最佳
+深度解密换脸应用Deepfake
 
-# 问答系统
+https://mp.weixin.qq.com/s/gvPTNtrd5Du9Oablp3jZYw
 
-GA-Reader
+如何使用DeepFake实现视频换脸
 
-Match-LSTM
+https://mp.weixin.qq.com/s/BTzV7ulweqFQokdQ-AX2Rg
 
-Bi-DAF
+三位一体的纯正视频换脸术，拒绝别人的嘴替我说话
 
-R-Net
+https://mp.weixin.qq.com/s/rPDvLnG4MBDRUMCWs2fjcQ
 
-QA-Net
+最新StarGAN对抗生成网络实现多领域图像变换
 
-S-Net
+https://mp.weixin.qq.com/s/97Uj-ATLToy1bNhnSUO8Jw
 
-R3
+非监督任意姿势人体图像合成
 
-## 参考
+https://mp.weixin.qq.com/s/cfw8mRsmzE1lU8PRM8UC0w
 
-https://mp.weixin.qq.com/s/IahvlkiACOAjicX68teA0A
+秒变莫扎特、贝多芬，Facebook提出完美转换音乐风格的神经网络
 
-套路深深深几许？管窥问答系统、阅读理解的小江湖
+https://mp.weixin.qq.com/s/TiXILy4l6Q3dxVwapyd9KQ
 
-https://mp.weixin.qq.com/s/h51gh-9LISEBdJx8X--Lsg
+二维码太丑？用风格迁移生成个性二维码了解一下
 
-近期有哪些值得读的QA论文？
+https://mp.weixin.qq.com/s/7GHBH79kWIpEBLYX-VEd7A
 
-https://mp.weixin.qq.com/s/lB44D_RFBqbNB6YX5gEULg
+CycleGAN：图片风格，想换就换
 
-近期值得读的QA论文！专题论文解读
+https://mp.weixin.qq.com/s/tzPCU1bxQ7NWtQ7o2PjF0g
 
-http://www.taodocs.com/p-4795349.html
+BAIR提出MC-GAN，使用GAN实现字体风格迁移
 
-基于大规模问答语料的问题检索系统
+https://mp.weixin.qq.com/s/RMz5fwt72j2ufrGpdD6POw
 
-https://wenku.baidu.com/view/d38ab1e8856a561252d36fab.html
+带自注意力机制的生成对抗网络，实现效果怎样？
 
-短文本相似度计算在用户交互式问答系统中的应用
+https://mp.weixin.qq.com/s/PVM7wMsT6TpJkQUlt7d2Aw
 
-https://mp.weixin.qq.com/s/5ajhhc4mpIhoqkl5VkGnaw
+用风格迁移搞事情！超越艺术字：卷积神经网络打造最美汉字
 
-深度学习实现问答机器人
+https://mp.weixin.qq.com/s/12_Gl4snq-LdMHJSZn4oOA
 
-https://mp.weixin.qq.com/s/2aKoOx18RB0GGQTzb3Tjzg
+换脸AI升级版：面部表情、身体动作、视线方向都能实时迁移
 
-Facebook开源DrQA的PyTorch实现：基于维基百科的问答系统
+https://mp.weixin.qq.com/s/A2VhfO3CkyQGCs5GqBWzOg
 
-https://mp.weixin.qq.com/s/4TC7180LmD7V6u1CdVYRFw
+实景照片秒变新海诚风格漫画：清华大学提出CartoonGAN
 
-漫谈机器阅读理解之Facebook提出的DrQA系统
+https://mp.weixin.qq.com/s/lPzPfjYiAsNvVcVWdL08dA
 
-https://mp.weixin.qq.com/s/SYUq1Qd-IOmVjgs7Kp4OAg
+照片闭眼也无妨，Facebook黑科技完美补全大眼睛
 
-如何打造智能问答引擎
+https://mp.weixin.qq.com/s/h-mp7_oO9aZ1yYxiJMLziQ
 
-https://mp.weixin.qq.com/s/Mzycy0chQUNWjJYdpERBOw
+作画、写诗、弹曲子，AI还能这么玩？
 
-一文详解维基百科的开放性问答系统
+https://mp.weixin.qq.com/s/txJAnu4FOOjmLhbtGTM-BQ
 
-https://www.cnblogs.com/combfish/p/6708667.html
+还敢吹「毫无PS痕迹」？小心被Adobe官方AI打脸
 
-(QA-LSTM)自然语言处理：智能问答IBM保险QA QA-LSTM实现笔记
+https://mp.weixin.qq.com/s/a1Qg1Hl5NMvEJPXhJR-2BA
 
-https://mp.weixin.qq.com/s/BhDy55Mj5oMArO0MKwvnKw
+效果惊艳！北大团队提出Attentive GAN去除图像中雨滴
 
-基于异构社交网络学习的社区问答方法，同时建模问题、回答和回答者
+https://mp.weixin.qq.com/s/iK7XR0tHV_dE0p1grNQIHw
 
-https://mp.weixin.qq.com/s/bZgis3dxMbv6AnLNyk04Og
+只需一张照片，运动视频分分钟伪造出来
 
-用数据做酷的事！手把手教你搭建问答系统
+https://mp.weixin.qq.com/s/-j4p7nUF-rCGk6yK0nccvw
 
-https://mp.weixin.qq.com/s/nIMk-xl8Wzy1ANcT3ApAng
+机器人也会画漫画
 
-百度提出问答模型GNR：检索速度提高25倍
+https://mp.weixin.qq.com/s/3Aq1HXpBzgNdcB130tCKbQ
 
-https://mp.weixin.qq.com/s/eDA6-BqPmjGBOPsOom0VIw
+GAN网络图像翻译机：图像复原、模糊变清晰、素描变彩图
 
-自动组合神经网络做问答系统！
+https://mp.weixin.qq.com/s/fMtuJbWG_d9zyCZ0oYyX_w
 
-https://mp.weixin.qq.com/s/vazeuiFvCC8aIhP2uAXoew
+经得住考验的“假图片”：用TensorFlow为神经网络生成对抗样本
 
-达观数据智能问答技术研究
+https://mp.weixin.qq.com/s/djkjAfUO_DefTP2drzY_iQ
 
-https://mp.weixin.qq.com/s/eaxyhk93PbEFzHk-qiniOQ
+在《绝地求生》中玩《堡垒之夜》！ 深度学习帮你转换画风
 
-ReQuest: 使用问答数据产生实体关系抽取的间接监督
+https://mp.weixin.qq.com/s/cTlXMxcpzc7_5NVsTm1jcA
 
-https://mp.weixin.qq.com/s/1VYdCLw6q4rS91_YV4SclA
+学习一帧，为整段黑白视频上色：谷歌提出自监督视觉追踪模型
 
-理解智能问答系统（Ⅰ）
+https://mp.weixin.qq.com/s/X8osUSPROJqGVTvw0gieDQ
 
-https://mp.weixin.qq.com/s/x4yXjl0YXytAgp8a64ebXg
+T2T：利用StackGAN和ProGAN从文本生成人脸
 
-智能问答开源项目之YodaQA（Ⅱ）
+https://mp.weixin.qq.com/s/moDVf7h8Q2S1SL0IuxXQtQ
 
-https://mp.weixin.qq.com/s/2VPfk7jX0eBP2NZMB9igBg
+算法音乐往事：二次元女神“初音未来”诞生记
 
-智能问答之使用UIMA进行文本挖掘（Ⅲ）
+https://mp.weixin.qq.com/s/4UH-XWyIxYHq_ErRfkzzsQ
 
-https://mp.weixin.qq.com/s/NohUxQKHw8Z3kX_riGM10g
+与神经网络相比，你对P图一无所知
 
-智能问答之答案抽取（Ⅳ）
+https://mp.weixin.qq.com/s/33VKfq-jFHfn9GBQzFYq0Q
 
-https://mp.weixin.qq.com/s/EU0O-WR0ynI04NsPZ-bn2g
+震撼！英伟达用深度学习做图像修复，毫无ps痕迹
 
-无从下手落地问答系统？实用百度开源框架了解一下
+https://mp.weixin.qq.com/s/FTfpjo-qT_PK4cbR5j0ulw
 
-https://mp.weixin.qq.com/s/F1z7evNDqghEzSD-_Xbgfw
+AI当“暖男”：给裸照自动穿上比基尼
 
-基于卷积深度相关性计算的社区问答方法，建模问题和回答的匹配关系
+https://mp.weixin.qq.com/s/LwYzxFO6Fj9Biiww3Y22qw
 
-https://mp.weixin.qq.com/s/_klvAhH-K8tcYmamlr6FcA
+斯坦福CS230第一名：图像超级补全，效果惊艳
 
-Logistic Regression Models分析交互式问答
+https://mp.weixin.qq.com/s/X96oI-duHwyCFAR79inlig
 
-https://mp.weixin.qq.com/s/_XyqNPkInWfy-gUQtHjNIg
+真实到可怕！英伟达MIT造出马良的神笔
 
-基于深度神经网络的自动问答系统概述
+https://mp.weixin.qq.com/s/MFKhmHcaQvufdRawFqisjA
 
-https://mp.weixin.qq.com/s/GyE9qdXPGvrq12dMAf4nrQ
-
-论文推荐：QA，增强学习，知识图谱，机器阅读理解
-
-https://mp.weixin.qq.com/s/6dKticG2I2zqlxnZ3W0ZgQ
-
-“猜你所想，答你所问”，携程智能客服算法实践
-
-https://mp.weixin.qq.com/s/yiAC6SddIFFo3bR351b_0Q
-
-Embodied Question Answering
+Distill详述「可微图像参数化」：神经网络可视化和风格迁移利器！
 
 # Attention进阶
 
@@ -287,40 +277,6 @@ https://mp.weixin.qq.com/s/7OYY3L7gL4wVv_EjoosOHA
 https://mp.weixin.qq.com/s/9Kt6_DfeYRnhsb10aCSFGw
 
 FAGAN：完全注意力机制（Full Attention）GAN，Self-attention+GAN
-
-# CNN进阶
-
-https://mp.weixin.qq.com/s/gwH9s1ggMTj2dJkad9wUuw
-
-从VGG到NASNet，一文概览图像分类网络
-
-https://mp.weixin.qq.com/s/hIAIbpqItS09KDOSFxaeqg
-
-从Inception v1到Inception-ResNet，一文概览Inception家族的“奋斗史”
-
-https://mp.weixin.qq.com/s/r143qYj8bziu_N-27RWRRw
-
-机器学习5年大跃进，可能是个错觉
-
-https://mp.weixin.qq.com/s/pollD4LN_GHJckzJAjwPqg
-
-侧抑制”卷积神经网络，了解一下？
-
-https://mp.weixin.qq.com/s/gil2K-JKzfRqdzc-abnh6A
-
-王井东：深度融合——一种神经网络结构设计模式
-
-https://mp.weixin.qq.com/s/7l0J5LIAawlkCIrUEGG9aA
-
-卷积神经网络“失陷”，CoordConv来填坑
-
-https://mp.weixin.qq.com/s/4GPLeJiQoDfBZJzF4QmuAg
-
-Excel再现人脸识别：CNN用于计算机视觉任务不再神秘
-
-https://mp.weixin.qq.com/s/30_AwwHS0eqfmYwTvRQ85Q
-
-pooling去哪儿了？
 
 # 多任务学习
 
@@ -425,3 +381,7 @@ https://mp.weixin.qq.com/s/deepxMWCpIEe3jk_kanfMg
 https://mp.weixin.qq.com/s/LVD7rry0BajGh9iQg-Y2jw
 
 MIT用AI实现3分钟自动抠图，精细到头发丝
+
+https://mp.weixin.qq.com/s/5n3jpvv_LxnHB0w4hsCEzQ
+
+NVIDIA ECCV18论文:超像素采样网络助力语义分割与光流估计

@@ -382,6 +382,10 @@ https://mp.weixin.qq.com/s/Xk1myDvYQxvKKyQ7RKqcyw
 
 机器学习可重复性最佳实践
 
+https://mp.weixin.qq.com/s/tnkS6xtuv29A_TGlPUAxlQ
+
+我猜，每个程序员对着电梯都想过调度算法吧！
+
 # 垃圾筐
 
 http://www.matrix67.com/

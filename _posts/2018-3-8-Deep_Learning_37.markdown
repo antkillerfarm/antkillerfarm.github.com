@@ -122,6 +122,10 @@ https://mp.weixin.qq.com/s/XB9VsW3NRwHua6AdRL3n8w
 
 Lossless Triplet Loss:一种高效的Siamese网络损失函数
 
+https://gehaocool.github.io/2018/03/20/Angular-Margin-%E5%9C%A8%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/
+
+Angular Margin在人脸识别中的应用
+
 ## Coupled Cluster Loss
 
 论文：
