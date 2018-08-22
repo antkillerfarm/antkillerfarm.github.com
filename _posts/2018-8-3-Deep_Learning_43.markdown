@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十三）——图像检索, Spiking Neuron Networks, 问答系统, Attention进阶, CNN进阶, 多任务学习
+title:  深度学习（四十三）——图像检索, Spiking Neuron Networks, 问答系统, Attention进阶, CNN进阶, 多任务学习, 语义分割进阶
 category: DL 
 ---
 
@@ -318,6 +318,10 @@ https://mp.weixin.qq.com/s/4GPLeJiQoDfBZJzF4QmuAg
 
 Excel再现人脸识别：CNN用于计算机视觉任务不再神秘
 
+https://mp.weixin.qq.com/s/30_AwwHS0eqfmYwTvRQ85Q
+
+pooling去哪儿了？
+
 # 多任务学习
 
 https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA
@@ -363,3 +367,61 @@ https://mp.weixin.qq.com/s/i7WAFjQHK1NGVACR8x3v0A
 https://mp.weixin.qq.com/s/NpO1UP_mzyaeqW26xLY1Xg
 
 CVPR 2018最佳论文作者亲笔解读：研究视觉任务关联性的Taskonomy
+
+# 语义分割进阶
+
+https://mp.weixin.qq.com/s/cANlqQAI-A2mC9vnd3imQA
+
+Instance-Aware图像语义分割
+
+https://mp.weixin.qq.com/s/v_TLYYq6cFWuwR9tXM8m-A
+
+如何通过CRF-RNN模型实现图像语义分割任务
+
+https://mp.weixin.qq.com/s/ceCC7Q6yr0QKESeZXi6lWQ
+
+堆叠解卷积网络实现图像语义分割顶尖效果
+
+https://zhuanlan.zhihu.com/p/24738319
+
+“见微知著”——细粒度图像分析进展综述
+
+https://mp.weixin.qq.com/s/V4_euZRcyyxeimXAA_waAg
+
+贾佳亚：最有效的COCO物体分割算法
+
+https://mp.weixin.qq.com/s/Amr34SdrPZho1GQpFS7WBA
+
+见微知著：语义分割中的弱监督学习
+
+https://mp.weixin.qq.com/s/zOWA1oKbopZJuYIAYYlKTA
+
+港中文-商汤联合论文：自监督语义分割的混合与匹配调节
+
+https://mp.weixin.qq.com/s/M1Oo4ST2aspgZF8UeSUDww
+
+如何妙笔勾檀妆：像素级语义理解
+
+https://mp.weixin.qq.com/s/xalo2XtKtzR5tA_dPFzaJw
+
+一文介绍3篇无需Proposal的实例分割论文
+
+https://mp.weixin.qq.com/s/BL1xZ_YuuPe9frIc9E1fkA
+
+南开大学提出新物体分割评价指标
+
+https://mp.weixin.qq.com/s/3rfZUhio4Bk1RUGkEk5xoQ
+
+ETH Zurich提出新型网络“ROAD-Net”，解决语义分割域适配问题
+
+https://mp.weixin.qq.com/s/qMLCi-CghxvTcwyPnvFxnQ
+
+ConvCRF：一种结合条件随机场与CNN的高效语义分割方法
+
+https://mp.weixin.qq.com/s/deepxMWCpIEe3jk_kanfMg
+
+金字塔注意力网络：一种利用底层像素与高级特征的语义分割网络
+
+https://mp.weixin.qq.com/s/LVD7rry0BajGh9iQg-Y2jw
+
+MIT用AI实现3分钟自动抠图，精细到头发丝

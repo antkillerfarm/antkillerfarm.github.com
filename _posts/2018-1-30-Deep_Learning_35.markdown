@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/Lmvx_KurxG3nfmvhXAD_tQ
 
 一种轻量级在线多目标车辆跟踪方法
 
+https://mp.weixin.qq.com/s/tr1oWpaRZair9zG5CHWvbg
+
+视觉目标跟踪之DaSiamRPN
+
 # FlowNet
 
 论文：
@@ -440,3 +444,6 @@ https://mp.weixin.qq.com/s/SGCtwYWfnxjcpMJeeH1b4w
 
 图神经网络+池化模块，斯坦福等提出层级图表征学习
 
+https://mp.weixin.qq.com/s/DOau_vTbwCauQ8mrHkGu9Q
+
+首个面向Facebook、arXiv网络图类的对抗攻击研究

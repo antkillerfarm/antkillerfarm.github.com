@@ -1,10 +1,34 @@
 ---
 layout: post
-title:  深度学习（十一）——数据增强, Winograd（1）
+title:  深度学习（十一）——Winograd（1）
 category: DL 
 ---
 
-# 花式卷积（续）
+# 花式卷积
+
+## 分组卷积（续）
+
+参考：
+
+https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg
+
+旷视科技提出新型卷积网络ShuffleNet，专为移动端设计
+
+https://mp.weixin.qq.com/s/0MvCnm46pgeMGEw-EdNv_w
+
+CNN模型之ShuffleNet
+
+https://mp.weixin.qq.com/s/tLqsWWhzUU6TkDbhnxxZow
+
+Momenta详解ImageNet 2017夺冠架构SENet
+
+http://blog.csdn.net/u014380165/article/details/78006626
+
+SENet（Squeeze-and-Excitation Networks）算法笔记
+
+https://mp.weixin.qq.com/s/tceLrEalafgL8R44DZYP9g
+
+旷视科技提出新型轻量架构ShuffleNet V2：从理论复杂度到实用设计准则
 
 ## Separable convolution
 
@@ -131,32 +155,6 @@ Implementing convolution as a matrix multiplication（中文blog）
 https://mp.weixin.qq.com/s/ybI8kJPRn7sH-hJbc5uqnw
 
 CMU研究者探索新卷积方法：在实验中可媲美基准CNN
-
-# 数据增强
-
-https://mp.weixin.qq.com/s/GqPfvWwH1T0XFwiZ86cW8A
-
-SamplePairing：针对图像处理领域的高效数据增强方式
-
-https://mp.weixin.qq.com/s/cQtXvOjSXFc4YKn7ANBc_w
-
-谷歌大脑提出自动数据增强方法AutoAugment：可迁移至不同数据集
-
-https://mp.weixin.qq.com/s/ojFo7-gUh73iK3uImFS2-Q
-
-一文道尽主流开源框架中的数据增强
-
-https://mp.weixin.qq.com/s/xJhWu-1FyhIWbFBC5oHMkw
-
-一文道尽深度学习中的数据增强方法（上）
-
-https://mp.weixin.qq.com/s/OctAGrcBB0a6TOGWMmVKUw
-
-深度学习中的数据增强（下）
-
-https://mp.weixin.qq.com/s/lMU6_ywQqneyunqEV6uDiA
-
-如何改善你的训练数据集？
 
 # Winograd
 

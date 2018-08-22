@@ -114,6 +114,10 @@ https://mp.weixin.qq.com/s/Q7Xqb-GZXktFIM5yW8moPg
 
 ## 参考
 
+https://mp.weixin.qq.com/s/-0--sZXjMvFKxxo87w4udg
+
+自动机器学习工具全景图：精选22种框架，解放炼丹师
+
 http://blog.csdn.net/aliceyangxi1987/article/details/71079448
 
 一个框架解决几乎所有机器学习问题

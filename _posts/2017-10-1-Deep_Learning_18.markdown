@@ -192,33 +192,9 @@ https://zhuanlan.zhihu.com/p/27794982
 
 语义分割中的深度学习方法全解：从FCN、SegNet到各代DeepLab
 
-https://mp.weixin.qq.com/s/cANlqQAI-A2mC9vnd3imQA
-
-Instance-Aware图像语义分割
-
-https://mp.weixin.qq.com/s/v_TLYYq6cFWuwR9tXM8m-A
-
-如何通过CRF-RNN模型实现图像语义分割任务
-
-https://mp.weixin.qq.com/s/ceCC7Q6yr0QKESeZXi6lWQ
-
-堆叠解卷积网络实现图像语义分割顶尖效果
-
 https://mp.weixin.qq.com/s/4BvvwV11f9MrrYyLwUrX9w
 
 还在用ps抠图抠瞎眼？机器学习通用背景去除产品诞生记
-
-https://zhuanlan.zhihu.com/p/24738319
-
-“见微知著”——细粒度图像分析进展综述
-
-https://mp.weixin.qq.com/s/V4_euZRcyyxeimXAA_waAg
-
-贾佳亚：最有效的COCO物体分割算法
-
-https://mp.weixin.qq.com/s/Amr34SdrPZho1GQpFS7WBA
-
-见微知著：语义分割中的弱监督学习
 
 https://mp.weixin.qq.com/s/mQqEe4LC0VHBH2ZAtFanWQ
 
@@ -228,30 +204,6 @@ https://mp.weixin.qq.com/s/9G3kahaoOSoB-DiGey1VLA
 
 基于深度学习的图像语义分割算法综述
 
-https://mp.weixin.qq.com/s/zOWA1oKbopZJuYIAYYlKTA
-
-港中文-商汤联合论文：自监督语义分割的混合与匹配调节
-
-https://mp.weixin.qq.com/s/M1Oo4ST2aspgZF8UeSUDww
-
-如何妙笔勾檀妆：像素级语义理解
-
-https://mp.weixin.qq.com/s/xalo2XtKtzR5tA_dPFzaJw
-
-一文介绍3篇无需Proposal的实例分割论文
-
-https://mp.weixin.qq.com/s/BL1xZ_YuuPe9frIc9E1fkA
-
-南开大学提出新物体分割评价指标
-
-https://mp.weixin.qq.com/s/3rfZUhio4Bk1RUGkEk5xoQ
-
-ETH Zurich提出新型网络“ROAD-Net”，解决语义分割域适配问题
-
-https://mp.weixin.qq.com/s/qMLCi-CghxvTcwyPnvFxnQ
-
-ConvCRF：一种结合条件随机场与CNN的高效语义分割方法
-
 https://mp.weixin.qq.com/s/JbdwtpA3iRXReyerO4HYIg
 
 一文了解什么是语义分割及常用的语义分割方法有哪些
@@ -260,10 +212,16 @@ https://mp.weixin.qq.com/s/jCv259hI0vl7st80Obfrcg
 
 图像语义分割的工作原理和CNN架构变迁
 
-https://mp.weixin.qq.com/s/deepxMWCpIEe3jk_kanfMg
-
-金字塔注意力网络：一种利用底层像素与高级特征的语义分割网络
-
 # 前DL时代的语义分割
 
 从最简单的像素级别“阈值法”（Thresholding methods）、基于像素聚类的分割方法（Clustering-based segmentation methods）到“图划分”的分割方法（Graph partitioning segmentation methods），在DL“一统江湖”之前，图像语义分割方面的工作可谓“百花齐放”。在此，我们仅以“Normalized cut”和“Grab cut”这两个基于图划分的经典分割方法为例，介绍一下前DL时代语义分割方面的研究。
+
+## Normalized cut
+
+Normalized cut （N-cut）方法是基于图划分（Graph partitioning）的语义分割方法中最著名的方法之一，于2000年Jianbo Shi和Jitendra Malik发表于相关领域顶级期刊TPAMI。
+
+通常，传统基于图划分的语义分割方法都是将图像抽象为图（Graph）的形式$$\bf{G}=(\bf{V},\bf{E})$$（$$\bf{V}$$为图节点，$$\bf{E}$$为图的边），然后借助图理论（Graph theory）中的理论和算法进行图像的语义分割。
+
+常用的方法为经典的最小割算法（Min-cut algorithm）。不过，在边的权重计算时，经典min-cut算法只考虑了局部信息。如下图所示，以二分图为例（将$$\bf{G}$$分为不相交的$$\bf{A},\bf{B}$$两部分），若只考虑局部信息，那么分离出一个点显然是一个min-cut，因此图划分的结果便是类似$$n_1$$或$$n_2$$这样离群点，而从全局来看，实际想分成的组却是左右两大部分。
+
+![](/images/article/N_cut.jpg)

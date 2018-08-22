@@ -34,11 +34,9 @@ https://mp.weixin.qq.com/s/TL15EgRfbIFnaOo6-SimfQ
 
 斯坦福CS231n(李飞飞):卷积神经网络视觉识别课程讲义（完整版）
 
-https://www.coursera.org/learn/machine-learning
+https://github.com/afshinea/stanford-cs-229-machine-learning
 
-《斯坦福大学机器学习课程讲义》CS229
-
-Andrew Ng，也就是吴恩达写的讲义，写的非常浅显易懂。
+CS229小抄精华版
 
 http://openclassroom.stanford.edu/MainFolder/VideoPage.php?course=MachineLearning
 

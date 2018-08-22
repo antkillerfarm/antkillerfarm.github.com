@@ -8,6 +8,30 @@ category: DL
 
 ## 参考（续）
 
+https://mp.weixin.qq.com/s/YUMIL-f019vKpQ84mKS-8g
+
+这篇TensorFlow实例教程文章告诉你GANs为何引爆机器学习？
+
+https://zhuanlan.zhihu.com/p/27012520
+
+从头开始GAN
+
+https://mp.weixin.qq.com/s/uyn41vKKoptXPZXBP2vVDQ
+
+生成对抗网络（GAN）之MNIST数据生成
+
+http://mp.weixin.qq.com/s/21CN4hAA6p7ZjWsO1sT2rA
+
+一文看懂生成式对抗网络GANs：介绍指南及前景展望
+
+https://mp.weixin.qq.com/s/Lll9e5bCVwxdD0-Q2wamKg
+
+一文详解生成对抗网络(GAN)的原理
+
+https://mp.weixin.qq.com/s/Qso0pv0NjtNrYhZR-sV2xg
+
+通俗了解对抗生成网络(GAN)核心思想
+
 https://mp.weixin.qq.com/s/YLys6L9WT7eCC-xGr1j0Iw
 
 带多分类判别器的GAN模型
@@ -267,26 +291,4 @@ Paper笔记：Dilated Residual Networks
 ![](/images/img2/ShuffleNet_2.png)
 
 上图是ShuffleNet的Unit结构图，DWConv表示depthwise convolution，GConv表示pointwise group convolution。a是普通的Deep Residual Unit，b的进化用以提高精度，c的进一步进化用以减少计算量。
-
-参考：
-
-https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg
-
-旷视科技提出新型卷积网络ShuffleNet，专为移动端设计
-
-https://mp.weixin.qq.com/s/0MvCnm46pgeMGEw-EdNv_w
-
-CNN模型之ShuffleNet
-
-https://mp.weixin.qq.com/s/tLqsWWhzUU6TkDbhnxxZow
-
-Momenta详解ImageNet 2017夺冠架构SENet
-
-http://blog.csdn.net/u014380165/article/details/78006626
-
-SENet（Squeeze-and-Excitation Networks）算法笔记
-
-https://mp.weixin.qq.com/s/tceLrEalafgL8R44DZYP9g
-
-旷视科技提出新型轻量架构ShuffleNet V2：从理论复杂度到实用设计准则
 

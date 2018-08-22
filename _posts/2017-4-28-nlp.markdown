@@ -257,6 +257,12 @@ TensorFlow文本摘要生成 - 基于注意力的序列到序列模型
 
 https://github.com/fxsjy/jieba
 
+参考：
+
+https://mp.weixin.qq.com/s/f2tegV4KwjyttMAhoHknMg
+
+jieba分词快速入门
+
 ### NLPIR
 
 NLPIR汉语分词系统(又名ICTCLAS2013)，是中科院张华平博士的作品。官网：

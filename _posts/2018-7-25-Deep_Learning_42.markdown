@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十二）——行人重识别, 人脸识别进阶, 目标检测进阶
+title:  深度学习（四十二）——行人重识别, 人脸识别进阶, 目标检测进阶, 数据增强
 category: DL 
 ---
 
@@ -299,6 +299,36 @@ https://mp.weixin.qq.com/s/5I9uzGCNFD93L1mzakTl0Q
 https://mp.weixin.qq.com/s/ZQqcsJenqkXtH1czOe5WnA
 
 阿里巴巴提出Auto-Context R-CNN算法，刷出Faster RCNN目标检测新高度
+
+# 数据增强
+
+https://mp.weixin.qq.com/s/GqPfvWwH1T0XFwiZ86cW8A
+
+SamplePairing：针对图像处理领域的高效数据增强方式
+
+https://mp.weixin.qq.com/s/cQtXvOjSXFc4YKn7ANBc_w
+
+谷歌大脑提出自动数据增强方法AutoAugment：可迁移至不同数据集
+
+https://mp.weixin.qq.com/s/ojFo7-gUh73iK3uImFS2-Q
+
+一文道尽主流开源框架中的数据增强
+
+https://mp.weixin.qq.com/s/xJhWu-1FyhIWbFBC5oHMkw
+
+一文道尽深度学习中的数据增强方法（上）
+
+https://mp.weixin.qq.com/s/OctAGrcBB0a6TOGWMmVKUw
+
+深度学习中的数据增强（下）
+
+https://mp.weixin.qq.com/s/lMU6_ywQqneyunqEV6uDiA
+
+如何改善你的训练数据集？
+
+https://mp.weixin.qq.com/s/ooX9Hj5ejO6po6Ghb4zOug
+
+一文解读合成数据在机器学习技术下的表现
 
 # GAN进阶（续）
 

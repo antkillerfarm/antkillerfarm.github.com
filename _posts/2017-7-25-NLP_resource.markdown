@@ -26,6 +26,10 @@ https://mp.weixin.qq.com/s/hL0n2V7lEZxNIAwP3wir6g
 
 35页自然语言处理深度学习综述，带你纵览NLP知识全貌
 
+https://mp.weixin.qq.com/s/IxDZLprG1xwlIqN-uxeGkg
+
+UIUC韩家炜团队218页文本语料数据挖掘教程
+
 https://mp.weixin.qq.com/s/sQ903WNSR4v367t78_VG1Q
 
 自然语言处理全家福：纵览当前NLP中的任务、数据、模型与论文
@@ -76,7 +80,7 @@ https://mp.weixin.qq.com/s/acCd1G1wnRZtleudUKhuWA
 
 https://mp.weixin.qq.com/s/5ftsfNSAb7pAizVA5m-xXw
 
-2017 年回顾：NLP、深度学习与大数据
+2017年回顾：NLP、深度学习与大数据
 
 https://mp.weixin.qq.com/s/BcUB3bXrPJF0WQetWs7Law
 
@@ -388,7 +392,7 @@ https://mp.weixin.qq.com/s/r9WRkmApBaHvlCQ5F5ypjg
 
 https://mp.weixin.qq.com/s/rLFm2J6Bao6H5Qj9Fw0wUg
 
-百度陈翔 ：基于机器学习的搜索语义理解技术！
+百度陈翔：基于机器学习的搜索语义理解技术！
 
 https://mp.weixin.qq.com/s/BWg77FZ2IugBhO_HWHpfHw
 

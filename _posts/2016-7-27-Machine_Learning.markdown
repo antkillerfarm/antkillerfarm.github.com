@@ -34,6 +34,10 @@ http://cs229.stanford.edu/syllabus.html
 
 用吴恩达自己的话来说，他还拿着斯坦福教职，很大程度就是想教这门课。因此，该课程内容每年都有小幅更新。
 
+它在coursera上也有个网页，内容相对简单一些：
+
+https://www.coursera.org/learn/machine-learning
+
 ![](/images/article/ML.jpg)
 
 除此之外，国立台湾大学林轩田教授的《机器学习基石》也是写的非常好的：

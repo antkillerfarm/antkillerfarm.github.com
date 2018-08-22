@@ -4,6 +4,34 @@ title:  深度学习（九）——GAN
 category: DL 
 ---
 
+# CNN进化史
+
+## 参考（续）
+
+https://mp.weixin.qq.com/s/I94gGXXW_eE5hSHIBOsJFQ
+
+无需数学背景，读懂ResNet、Inception和Xception三大变革性架构
+
+https://mp.weixin.qq.com/s/ToogpkDo-DpQaSoRoalnPg
+
+没看过这5个模型，不要说你玩过CNN!
+
+https://zhuanlan.zhihu.com/p/31006686
+
+从LeNet-5到DenseNet
+
+https://mp.weixin.qq.com/s/L9JY875UjXMv_slAakBrGA
+
+从AlexNet到残差网络，理解卷积神经网络的不同架构
+
+http://www.sohu.com/a/222873093_651893
+
+从LeNet到SENet——卷积神经网络回顾
+
+https://mp.weixin.qq.com/s/-d4T2hgjy6kGdd_ig_J9eg
+
+LeCun亲授的深度学习入门课：从飞行器的发明到卷积神经网络
+
 # GAN
 
 ## 概况
@@ -246,28 +274,4 @@ https://mp.weixin.qq.com/s/QacQCrjh3KmrQSMp-G_rEg
 https://zhuanlan.zhihu.com/p/24897387
 
 GAN的基本原理、应用和走向
-
-https://mp.weixin.qq.com/s/YUMIL-f019vKpQ84mKS-8g
-
-这篇TensorFlow实例教程文章告诉你GANs为何引爆机器学习？
-
-https://zhuanlan.zhihu.com/p/27012520
-
-从头开始GAN
-
-https://mp.weixin.qq.com/s/uyn41vKKoptXPZXBP2vVDQ
-
-生成对抗网络（GAN）之MNIST数据生成
-
-http://mp.weixin.qq.com/s/21CN4hAA6p7ZjWsO1sT2rA
-
-一文看懂生成式对抗网络GANs：介绍指南及前景展望
-
-https://mp.weixin.qq.com/s/Lll9e5bCVwxdD0-Q2wamKg
-
-一文详解生成对抗网络(GAN)的原理
-
-https://mp.weixin.qq.com/s/Qso0pv0NjtNrYhZR-sV2xg
-
-通俗了解对抗生成网络(GAN)核心思想
 

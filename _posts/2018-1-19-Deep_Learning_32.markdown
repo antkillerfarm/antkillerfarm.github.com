@@ -176,11 +176,23 @@ https://china.xilinx.com/support/documentation/white_papers/c_wp486-deep-learnin
 
 2.根据该范围进行量化。
 
+量化的方法又分为两种：
+
+1）直接使用浮点数表示中的指数。也就是所谓的fractional length，相当于2的整数幂。
+
+2）使用更一般的scale来表示。这种方式的精度较高，但运算量稍大。
+
 量化误差过大，一般可用以下方法减小：
 
 1.按照每个channel的数值范围，分别量化。
 
-2.
+2.分析weight、bias，找到异常值，并消除之。这些异常值通常是由于死去的神经元所导致的误差无法更新造成的。
+
+参考：
+
+http://on-demand.gputechconf.com/gtc/2017/presentation/s7310-8-bit-inference-with-tensorrt.pdf
+
+8-bit Inference with TensorRT
 
 ## UINT量化
 
@@ -190,9 +202,17 @@ https://china.xilinx.com/support/documentation/white_papers/c_wp486-deep-learnin
 
 ![](/images/img2/INT8_2.png)
 
-UINT量化使用bias将数据搬移到正数区间。
+UINT量化使用bias将数据搬移到均值为0的区间。
 
 这篇论文的另一个贡献在于：原先的INT8量化是针对已经训练好的模型。而现在还可以在训练的时候就进行量化——前向计算进行量化，而反向的误差修正不做量化。
+
+## Saturate Quantization
+
+上述各种量化方法都是在保证数值表示范围的情况下，尽可能提高fl或者scale。这种方法也叫做Non-saturation Quantization。
+
+Saturate Quantization的做法是：将超出上限或下限的值，设置为上限值或下限值。
+
+由于Activations的存在，这种方法在合理设置上下限T的情况下，是没有误差的。
 
 ## NN硬件的指标术语
 

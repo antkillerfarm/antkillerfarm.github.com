@@ -287,6 +287,10 @@ https://mp.weixin.qq.com/s/39FG8FXADFC9UQuUJGTwbQ
 
 基于DAG的分布式任务调度平台：Maat
 
+https://mp.weixin.qq.com/s/qnjM4nMMGzO_gsnktQubSw
+
+携程度假起价引擎架构演变
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/naD6hVwDg3QSA76sXy2GZA
