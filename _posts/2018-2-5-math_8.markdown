@@ -202,6 +202,14 @@ $$X_n\xrightarrow{a.s.}X \supseteq X_n\xrightarrow{P}X$$
 | 相关函数 | $$R(X,Y)=E[\overline{X}Y]$$ |
 | 均方极限 | $${l.i.m}_{n \to +\infty}X$$ |
 
+https://mp.weixin.qq.com/s/46NrpIako2lJ2ZitAQs8Sw
+
+划重点！通俗解释协方差与相关系数
+
+http://pinkyjie.com/2010/08/31/covariance/
+
+浅谈协方差矩阵
+
 ## 平稳过程
 
 严平稳过程：有限维分布。

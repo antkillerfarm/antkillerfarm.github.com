@@ -290,3 +290,11 @@ https://www.zhihu.com/question/40763253
 
 如何在Word和PowerPoint中优雅地插入Latex公式？
 
+# DL参考资源
+
+https://mp.weixin.qq.com/s/5zt8UIpNBcgNZpwHHJj68Q
+
+光学CNN层替换传统CNN层，超省电
+
+
+

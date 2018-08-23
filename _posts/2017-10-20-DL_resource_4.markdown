@@ -100,6 +100,10 @@ https://mp.weixin.qq.com/s/qussbqTKjLI23xNxJ2eRPw
 
 手把手教你训练一个秒杀科比的投篮AI，不服来练
 
+https://mp.weixin.qq.com/s/v63CjKknQTVhGXaS7nBceQ
+
+你们都用Python做人脸识别，我就偏要用Go！
+
 ## 工具
 
 https://mp.weixin.qq.com/s/TT4whft1Tj1pCEPbnMH1cA

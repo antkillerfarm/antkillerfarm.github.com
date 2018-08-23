@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（九）——Bézier curve
+title:  数学狂想曲（九）——Bézier curve, 熵
 category: math 
 ---
 
@@ -43,6 +43,42 @@ Bézier curve的数学公式比较复杂，但是实际的绘制方法却很简�
 ![](/images/img2/Bezier.gif)
 
 可见Bézier curve具有良好的数值稳定性，可产生类似皮筋的图像效应，是拟合**光滑曲线**的利器，因此被广泛应用于CAD/CAM领域。
+
+# 熵
+
+在《数学狂想曲（四）》的“玻尔兹曼分布”一节，我们提到了Shannon entropy的公式。然而，这个公式是如何推导出来的呢？
+
+## 经典热力学定义
+
+1803年，Lazare Carnot发现热机不能将所有的热量转换为机械能。1824年，其子Sadi Carnot在此基础上提出了理想热机的Carnot cycle。
+
+>Lazare Nicolas Marguerite, Count Carnot，1753～1823，法国政治家、数学家和物理学家。虽然他在热机方面作出了重大贡献，但他的名声主要还是在政治领域。他当过国民会议主席（法国大革命期间的国家元首），曾力排众议启用拿破仑作为远征意大利的主帅，算是拿破仑政治上的恩师。他是法国大革命和拿破仑时期的一位重要政治人物。
+
+>Nicolas Léonard Sadi Carnot，1796～1832，法国工程师和物理学家，被誉为“热力学之父”。Lazare Carnot之子。
+
+![](/images/img2/Carnot_heat_engine.png)
+
+上图是一个理想热机的示意图，其中,$$T_H$$是热源温度，$$T_C$$是环境温度，$$Q_H$$是热机吸收的热量，而$$Q_C$$是热机释放的热量。W是热机产生的机械能。
+
+
+
+1850年代，Rudolf Clausius深入研究Carnot cycle之后，发现：
+
+
+
+>Rudolf Julius Emanuel Clausius，1822～1888，德国物理学家和数学家。University of Halle博士（1847）+ETH Zürich教授。经典热力学的集大成者。普法战争期间，上战场获得了一枚铁十字勋章。
+
+当这个颇有来历的名称被1923年到南京讲学的普朗克介绍给中国物理学家时，胡刚复教授在翻译时灵机一动，创造了一个新词汇“熵”。
+
+参考：
+
+https://mp.weixin.qq.com/s/JSnAK22gohPDCGZ_BipHqg
+
+Heat Engines: the Carnot Cycle
+
+## 统计热力学定义
+
+
 
 # 复变函数
 

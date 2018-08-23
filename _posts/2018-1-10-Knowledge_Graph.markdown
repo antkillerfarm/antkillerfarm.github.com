@@ -419,3 +419,8 @@ https://mp.weixin.qq.com/s/ZDY3Yt67eXK5pjXgvJkkyQ
 https://mp.weixin.qq.com/s/2h1dgvPbYKBOYZPiixg9iw
 
 手把手：四色猜想、七桥问题…程序员眼里的图论，了解下？
+
+https://mp.weixin.qq.com/s/JSnAK22gohPDCGZ_BipHqg
+
+sin1°是否为超越数？
+

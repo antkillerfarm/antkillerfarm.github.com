@@ -138,3 +138,8 @@ https://mp.weixin.qq.com/s/R-BuHOYFEadVe0yx5q92Dg
 
 文本表示简介
 
+https://mp.weixin.qq.com/s/6xTdgOYHtnCSsH9QRGkcCw
+
+一文理解词性标注、依存分析和命名实体识别任务
+
+
