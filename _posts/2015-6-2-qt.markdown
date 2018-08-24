@@ -316,10 +316,6 @@ https://mp.weixin.qq.com/s/zDKjyxqSbqYVlx3TveL8fg
 
 单摄像头数秒构建3D人体模型
 
-https://mp.weixin.qq.com/s/w84gLswUFkl4NJSMv0RnIA
-
-OpenAI详细解析：攻击者是如何使用「对抗样本」攻击机器学习的！
-
 https://mp.weixin.qq.com/s/wni3F9lKuO4OT32BVe0QDQ
 
 谷歌发大招：搜索全面AI化，不用关键词就能轻松“撩书”

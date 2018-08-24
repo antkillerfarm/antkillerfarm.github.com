@@ -472,6 +472,14 @@ https://mp.weixin.qq.com/s/OJJLY5DiCa0e3UVjPtLXmw
 
 PPT中帅气的文字云，该怎么用？
 
+https://mp.weixin.qq.com/s/m15ZrDHeHjU6E_pTcRrdlg
+
+先过滤后解析：斯坦福开源数据解析引擎Sparser，解析提速22倍
+
+https://mp.weixin.qq.com/s/23YB5JyULJ1l08OJ7LeaGg
+
+微信小程序30分钟从陌生到熟悉（上）
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

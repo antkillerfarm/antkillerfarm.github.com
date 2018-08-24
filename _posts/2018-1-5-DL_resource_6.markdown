@@ -66,10 +66,6 @@ https://mp.weixin.qq.com/s/xVG72Q0zQrEqY7oRxES8Ug
 
 如何对机器学习代码进行单元测试？
 
-https://mp.weixin.qq.com/s/hBPsCUCQjT6cIKjjrHyQYg
-
-继图像识别后，图像标注系统也被对抗样本攻陷!
-
 https://mp.weixin.qq.com/s/MpuUdZi8CWcu0b-ij-bHjA
 
 Jeff Dean出品：用机器学习索引替代B-Trees，3倍性能提升，10-100倍空间缩小
@@ -233,10 +229,6 @@ https://mp.weixin.qq.com/s/8unG1Yo1kQJdgSMlKiqgbA
 https://mp.weixin.qq.com/s/o-MFPt6LR_5XDpacqw754Q
 
 马里兰大学论文：可视化神经网络的损失函数
-
-https://mp.weixin.qq.com/s/c8-lS2TyuQ1lE2sDrW626A
-
-神奇的面包机！谷歌造出对抗样本的实体版
 
 https://mp.weixin.qq.com/s/7hPMb250EBfKwcZesIBxBg
 

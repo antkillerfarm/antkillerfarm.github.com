@@ -188,10 +188,6 @@ http://blog.csdn.net/amds123/article/details/70199708
 
 生成对抗网络GAN最近在NLP领域有哪些应用？
 
-https://mp.weixin.qq.com/s/FNQSLPHQSHSkDipREE702A
-
-利用分布鲁棒优化方法应对对抗样本干扰
-
 https://mp.weixin.qq.com/s/h7lrJYQ_RqJDako8UoYK-A
 
 六种改进均未超越原版：谷歌新研究对GAN现状提出质疑
@@ -211,10 +207,6 @@ https://mp.weixin.qq.com/s/_PlISSOaowgvVW5msa7GlQ
 https://mp.weixin.qq.com/s/PoSA6JXYE_OexEoJYzaX4A
 
 利用条件GANs的pix2pix进化版：高分辨率图像合成和语义操作
-
-https://mp.weixin.qq.com/s/T--R4c0QfyPS2vrGdyUlOw
-
-UIUC学者构建欺骗检测器的对抗样本！
 
 https://mp.weixin.qq.com/s/jG7r7THhVAnJTYgDeWX2Eg
 

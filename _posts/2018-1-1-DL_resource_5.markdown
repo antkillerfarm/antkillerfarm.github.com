@@ -6,6 +6,70 @@ category: resource
 
 # DL参考资源
 
+## AI与安全
+
+https://mp.weixin.qq.com/s/jBE4gP3O0qVJ50G49Q_xmQ
+
+对抗样本攻防战，清华大学TSAIL团队再获CAAD攻防赛第一
+
+https://mp.weixin.qq.com/s/w84gLswUFkl4NJSMv0RnIA
+
+OpenAI详细解析：攻击者是如何使用“对抗样本”攻击机器学习的！
+
+https://mp.weixin.qq.com/s/u7HxMuJxQG91qFbvS_8csA
+
+L2正则化和对抗鲁棒性的关系
+
+https://mp.weixin.qq.com/s/mbjVliHWT9tt7h998FU9Tg
+
+L2正则化视角下的对抗样本
+
+https://mp.weixin.qq.com/s/5OMT6BvqkUgtshow_tLkNw
+
+精准防御对抗性攻击，清华大学提出对抗正则化训练方法DeepDefense
+
+https://mp.weixin.qq.com/s/hBPsCUCQjT6cIKjjrHyQYg
+
+继图像识别后，图像标注系统也被对抗样本攻陷!
+
+https://mp.weixin.qq.com/s/c8-lS2TyuQ1lE2sDrW626A
+
+神奇的面包机！谷歌造出对抗样本的实体版
+
+https://mp.weixin.qq.com/s/FNQSLPHQSHSkDipREE702A
+
+利用分布鲁棒优化方法应对对抗样本干扰
+
+https://mp.weixin.qq.com/s/T--R4c0QfyPS2vrGdyUlOw
+
+UIUC学者构建欺骗检测器的对抗样本！
+
+https://mp.weixin.qq.com/s/fMtuJbWG_d9zyCZ0oYyX_w
+
+经得住考验的“假图片”：用TensorFlow为神经网络生成对抗样本
+
+https://mp.weixin.qq.com/s/dWIhQVPNi9SlzuhMiatEVQ
+
+几张贴纸就让神经网络看不懂道路标志，伯克利为真实环境生成对抗样本
+
+https://mp.weixin.qq.com/s/yfuMacLnj9q-9gpXCUfZhg
+
+PSU提出深度k-最近邻算法：解决深度学习应用的安全漏洞
+
+https://mp.weixin.qq.com/s/oUpoqnUUhMR_zlQqrvdLTw
+
+一文读懂如何用深度学习实现网络安全
+
+https://mp.weixin.qq.com/s/bWHaBTaKkjtJec3taFugeQ
+
+向人类免疫系统学习，AI如何做到挽救30亿美元的网络犯罪损失？
+
+https://mp.weixin.qq.com/s/KNXD-MpVHQRXYvJKTqn6WA
+
+完善强化学习安全性：UC Berkeley提出约束型策略优化新算法
+
+## 参考
+
 https://mp.weixin.qq.com/s/ZV32xDgGTriIAUbHohc90Q
 
 4个学生，1个暑假，百度深度学习开源平台PaddlePaddle诞生了智能桃子分拣器
@@ -338,42 +402,3 @@ https://mp.weixin.qq.com/s/DsmjjfInV_yPFWB2oSq-dA
 
 取代学习率衰减的新方法：谷歌大脑提出增加Batch Size
 
-https://mp.weixin.qq.com/s/PsIa3XDFqZlY2tKcvqvddw
-
-Training RNNs as Fast as CNNs
-
-https://mp.weixin.qq.com/s/vUK2NneOs8OR0vcJEZNbrA
-
-田渊栋等人论文：何时卷积滤波器容易学习？
-
-https://mp.weixin.qq.com/s/HP8KLbo26W5UscCGavKDRw
-
-IBM Watson提出人机推理网络HuMaINs，结合人机两者优势
-
-https://mp.weixin.qq.com/s/IsLlzDWnUXe8LVp4Y1Jb_A
-
-35亿张图像！Facebook基于弱监督学习刷新ImageNet基准测试记录
-
-https://mp.weixin.qq.com/s/sbuqNhIVTDUe4Q6BxS5fWw
-
-盘点金融领域里常用的深度学习模型
-
-https://mp.weixin.qq.com/s/R6vZU_gBaODsh1XtsjTpFA
-
-MIT与FAIR提出“mixup”：利用数据和标签的随机线性插值提高神经网络的健壮性
-
-https://mp.weixin.qq.com/s/xZbsxAqo0mVUb-LyH6fU1g
-
-Yann LeCun：大脑如何高效率学习？
-
-https://mp.weixin.qq.com/s/mfdF5I2vsYJeShnOh_cp8Q
-
-MIT新算法骗过神经网络3D物体分类，成功率超90%
-
-https://mp.weixin.qq.com/s?__biz=MzI3MTM5ODA0Nw==&mid=2247484058&idx=1&sn=0dfe92a0991294afba2514b137217a66
-
-朱松纯：浅谈人工智能：现状、任务、构架与统一
-
-https://mp.weixin.qq.com/s/_w4IIRY6LwqehpDlEXt90A
-
-牛津大学提出神经网络新训练法：用低秩结构增强网络压缩和对抗稳健性

@@ -365,3 +365,8 @@ https://mp.weixin.qq.com/s/IVD0aq8V-qZoB0tcLMigYw
 https://mp.weixin.qq.com/s/KJbm4wfsTLxT5LGR7GV_SA
 
 自动驾驶入门课程第③讲 — 定位
+
+https://mp.weixin.qq.com/s/BCNrsuoThJt031jCnbAjAA
+
+自动驾驶入门课程第④讲 — 感知（上）
+

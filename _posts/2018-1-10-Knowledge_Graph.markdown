@@ -320,6 +320,10 @@ https://mp.weixin.qq.com/s/4huHklyr_H6fFDb6VJ7ozw
 
 知识图谱的前世今生：为什么我们需要知识图谱？
 
+https://mp.weixin.qq.com/s/8REGSXSpXXvz0YIMspZm4g
+
+最佳论文：南京大学提出DSKG，将多层RNN用于知识图谱补全
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/zXABOzbQRV7sfgAhr_WqZw

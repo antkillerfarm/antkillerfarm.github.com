@@ -125,3 +125,85 @@ http://www.tecmint.com/install-tightvnc-remote-desktop/
 
 Install TightVNC Server in RHEL/CentOS and Fedora to Access Remote Desktops
 
+# 复变函数
+
+1.复球面表示。
+
+2.条件严格性。
+
+点域：连续<可导（可微）<可解析
+
+区域：连续<可导（可微）=可解析
+
+3.函数可微的充要条件：Cauchy-Riemann Equations
+
+4.复数在场论描述中的应用。
+
+参考：
+
+https://mp.weixin.qq.com/s/SUWUAMQjSuB5Gs06SPliTQ
+
+复数求导在信号处理中的应用
+
+## Hermite矩阵
+
+复数矩阵通常不能直接转置，而必须进行共轭转置。共轭转置也叫做Hermite转置，用$$A^H$$表示。
+
+如果$$A=A^H$$，则A被称为Hermite矩阵。
+
+>Charles Hermite，1822～1901，19世纪下半叶法国最著名的数学家，代数学领域的宗师级人物。Henri Poincaré的导师。他首先证明了e是超越数。以他的名字命名的数学术语竟达10项之多。   
+>Hermite虽然不是如某些地摊文学所言，一遇考试就跪。但是的确不太擅长考试，大学（他考的大学类似国内的清北的地位）入学成绩排在第68位，完全没有学神的风范。相比之下，Poincaré的入学成绩可是排第一位的。尽管就成就而言，Hermite绝不逊于Poincaré。
+
+# 平稳离散时间随机过程
+
+## Toeplitz矩阵
+
+Toeplitz矩阵（diagonal-constant matrix），指矩阵中每条自左上至右下的斜线上的元素相同。
+
+>Otto Toeplitz，1881～1940，德国犹太裔数学家。University of Breslau博士（1905），先后执教于Göttingen University（在David Hilbert手下供职）、University of Kiel和Bonn University。1939年，为了躲避元首的迫害，逃亡耶路撒冷，次年去世。
+
+广义平稳离散时间随机过程的相关矩阵是Hermite矩阵，也是Toeplitz矩阵。反之，如果相关矩阵是Toeplitz矩阵，则该离散时间随机过程，一定是广义平稳的。
+
+离散时间随机过程的相关矩阵是非负定的，并且几乎总是正定的。（等于零，只有在无噪声且观测向量线性相关的情况下，才会出现。）
+
+## 白噪声
+
+$$E[v(n)v^*(n-k)]=\begin{cases}
+\sigma_v^2, & k = 0 \\
+0, & k \neq 0 \\
+\end{cases}$$
+
+## 线性差分方程
+
+时间随机过程本身是由时间序列组成的，因此也可以使用《机器学习（二十四）》中提到的ARIMA模型。该模型的关键是求解线性差分方程。这通常要使用“信号与系统”课程中的z变换（离散域的拉普拉斯变换）求解。考虑到“信号与系统”是一个很大的课程。这里仅对本人关心的要点，做一个简要记录。
+
+绝对可积->收敛域
+
+z变换：$$f(z)\to F(z)$$
+
+z逆变换：$$F(z)\to f(z)$$
+
+系统函数：$$H(z)=\frac{R(z)}{E(z)}$$。其中，E是激励信号，R是系统响应。
+
+E的收敛域：$$\mid z\mid >1$$
+
+差分算子->特征方程->特征根
+
+H的平稳条件：H的特征根满足$$\mid z\mid \le 1$$
+
+特征根是正实数，且$$\mid z \mid<1$$：自相关函数为阻尼曲线，仅有幅变。
+
+特征根是负实数或者复数，且$$\mid z \mid<1$$：自相关函数为正弦阻尼曲线，不仅有幅变，还有相变。
+
+## 选择ARIMA的阶数
+
+如前所述，ARIMA(p,d,q)除了一些参数之外，还包括p，d，p这三个阶数的超参数。
+
+
+
+参考：
+
+https://mp.weixin.qq.com/s/66lY17sOO83Q-xhvQi72dw
+
+周期性时间序列的预测
+

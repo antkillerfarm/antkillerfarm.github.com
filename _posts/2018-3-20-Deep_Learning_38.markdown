@@ -224,6 +224,10 @@ https://mp.weixin.qq.com/s/oA98YyLqn1B22QZ5b_iDVA
 
 IJCAI 2018：聚焦强化学习的学习效率
 
+https://mp.weixin.qq.com/s/qWuoo6cGLWLk4OKlunR-Og
+
+滴滴KDD 2018论文详解：基于强化学习技术的智能派单模型
+
 # Spiking Neuron Networks
 
 除了基于BP算法的NN之外，Spiking Neuron Networks也是一大类NN。Spiking NN和人脑结构更相似，功耗也更小，但是相关训练和数据量化的算法尚不成熟，属于潜力股。

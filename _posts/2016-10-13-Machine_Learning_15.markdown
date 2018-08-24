@@ -26,21 +26,9 @@ https://mp.weixin.qq.com/s/-axtm6ZBm8yYneiA3mvQrw
 
 SIGIR 2018大会最佳短论文：利用对抗学习的跨域正则化
 
-https://mp.weixin.qq.com/s/5OMT6BvqkUgtshow_tLkNw
-
-精准防御对抗性攻击，清华大学提出对抗正则化训练方法DeepDefense
-
 https://mp.weixin.qq.com/s/FtWA1rff13e7_FM0lJKCVg
 
 Petuum提出新型正则化方法：非重叠促进型变量选择
-
-https://mp.weixin.qq.com/s/u7HxMuJxQG91qFbvS_8csA
-
-L2正则化和对抗鲁棒性的关系
-
-https://mp.weixin.qq.com/s/mbjVliHWT9tt7h998FU9Tg
-
-L2正则化视角下的对抗样本
 
 # 协同过滤的ALS算法
 

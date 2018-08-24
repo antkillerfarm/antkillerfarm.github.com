@@ -329,10 +329,6 @@ https://mp.weixin.qq.com/s/tzAp6PxAn3GszcttRzfz8Q
 
 CMU提出新型智能体定位方法：“主动神经定位器”
 
-https://mp.weixin.qq.com/s/dWIhQVPNi9SlzuhMiatEVQ
-
-几张贴纸就让神经网络看不懂道路标志，伯克利为真实环境生成对抗样本
-
 https://mp.weixin.qq.com/s/_1rKAj-KOs4P8WnKzen64w
 
 传统方法已经Out了？OpenAI提出全新辩论模式训练AI

@@ -156,10 +156,6 @@ https://mp.weixin.qq.com/s/3Aq1HXpBzgNdcB130tCKbQ
 
 GAN网络图像翻译机：图像复原、模糊变清晰、素描变彩图
 
-https://mp.weixin.qq.com/s/fMtuJbWG_d9zyCZ0oYyX_w
-
-经得住考验的“假图片”：用TensorFlow为神经网络生成对抗样本
-
 https://mp.weixin.qq.com/s/djkjAfUO_DefTP2drzY_iQ
 
 在《绝地求生》中玩《堡垒之夜》！ 深度学习帮你转换画风

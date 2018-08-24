@@ -104,6 +104,10 @@ https://mp.weixin.qq.com/s/v63CjKknQTVhGXaS7nBceQ
 
 你们都用Python做人脸识别，我就偏要用Go！
 
+https://mp.weixin.qq.com/s/BCNrsuoThJt031jCnbAjAA
+
+腾讯广告算法大赛季军SML_21队伍解决方案
+
 ## 工具
 
 https://mp.weixin.qq.com/s/TT4whft1Tj1pCEPbnMH1cA

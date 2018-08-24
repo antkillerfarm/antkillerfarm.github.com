@@ -338,6 +338,10 @@ https://mp.weixin.qq.com/s/atQHJ5U2pJpSG6PguN7J4Q
 
 如何保持运动小车上的旗杆屹立不倒？TensorFlow利用A3C算法训练智能体玩CartPole游戏
 
+https://mp.weixin.qq.com/s/rQ9eZosHOoDOXg9tAg4t6A
+
+tensorflow Object Detection API使用预训练模型mask r-cnn实现对象检测
+
 # Machine Learning之Python篇
 
 ## 参考（续）

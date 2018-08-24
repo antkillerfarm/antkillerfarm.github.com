@@ -192,10 +192,6 @@ https://mp.weixin.qq.com/s/6n5HawyR4AgH8Dq0gJMw2g
 
 强化学习的基本概念与代码实现
 
-https://mp.weixin.qq.com/s/KNXD-MpVHQRXYvJKTqn6WA
-
-完善强化学习安全性：UC Berkeley提出约束型策略优化新算法
-
 http://mp.weixin.qq.com/s/lLPRwInF5qaw7ewYHOpPyw
 
 深度强化学习资料

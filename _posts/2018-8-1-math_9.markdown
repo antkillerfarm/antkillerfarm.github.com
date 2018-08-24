@@ -108,17 +108,49 @@ $$\eta=\frac{W}{Q_1}=\frac{Q_1-Q_2}{Q_1}=1-\frac{Q_2}{Q_1}=1-\frac{T_2}{T_1}\tag
 
 公式10就是所谓Carnot's theorem。Carnot发现所有热机的效率都不可能高于$$\eta$$。
 
->需要指出的是，Carnot时代，科学界主流的理论还是热质说。这算是歪打正着。
+由Carnot's theorem可以容易的得到如下结论：
+
+1.冷热温度是热机效率的关键因素。但是低温热源降温是件很麻烦的事，需要设计基于Carnot逆循环的热机。这实际上就是现代空调的原理。
+
+2.提高高温热源温度。比如内燃机就比蒸汽机热效高。
+
+3.Carnot逆循环还表明，没有外界做功，低温热源不可能降温。这实际上揭示了热的不可逆特性，也就是热力学第二定律。
+
+>必须指出的是，Carnot时代，科学界主流的理论还是热质说。虽然当今课本介绍Carnot's theorem时，一般基于热力学第二定律进行讲解，但后者的发现实际上是30年之后的事了。
 
 到了1850年代，Rudolf Clausius深入研究Carnot cycle之后，发现如果用负号表示放热的话，公式9可改写为：
 
 $$\frac{Q_1}{T_1}+\frac{Q_2}{T_2}=0\tag{11}$$
 
+这表明Carnot cycle中的路径积分：
 
+$$\oint \frac{Q}{T} = 0$$
+
+然而Carnot cycle是理想状况，真实热机不可能达到。因此：
+
+$$W<\left(1-\frac{T_C}{T_H}\right)Q_H\tag{12}$$
+
+$$Q_H-Q_C<\left(1-\frac{T_C}{T_H}\right)Q_H$$
+
+即：
+
+$$Q_C>\frac{T_C}{T_H}Q_H$$
+
+也就是：
+
+$$\oint \frac{Q}{T} \le 0\tag{13}$$
+
+Clausius意识到
+
+$$dS = \frac{Q}{T}\tag{14}$$
+
+是一个很重要的物理量，于是将之命名为Entropy。En表示energy，tropy是希腊文中transformation的意思。当这个颇有来历的名称被1923年到南京讲学的普朗克介绍给中国物理学家时，胡刚复教授在翻译时灵机一动，创造了一个新词汇“熵”。
 
 >Rudolf Julius Emanuel Clausius，1822～1888，德国物理学家和数学家。University of Halle博士（1847）+ETH Zürich教授。经典热力学的集大成者。普法战争期间，上战场获得了一枚铁十字勋章。
 
-当这个颇有来历的名称被1923年到南京讲学的普朗克介绍给中国物理学家时，胡刚复教授在翻译时灵机一动，创造了一个新词汇“熵”。
+>胡刚复，1892～1966，物理学家。哈佛大学博士（1918），历任南京大学、上海交通大学、浙江大学、南开大学教授。他的兄弟姐妹胡敦复、胡明复、胡范若、胡芷华等创办了上海大同大学，是上海乃至全国私立大学中的翘楚，素有“北有南开、南有大同”之说。
+
+从公式13可以看出，如果没有外界能量注入，热机是无法完成循环的，但由热力学第一定律可知，系统的能量总量是不变的，因此这意味着系统的一部分能量成为了无法利用的能量，而这部分能量正好可以用Entropy进行度量。
 
 参考：
 
@@ -128,89 +160,59 @@ Heat Engines: the Carnot Cycle
 
 ## 统计热力学定义
 
+Entropy的统计热力学定义，相对就比较复杂了。这里仅列出推导的要点，不细讲了。
 
+首先是两个假设：
 
-# 复变函数
+1.**统计物理量的加和性**。（刘维尔定理）
 
-1.复球面表示。
+2.**概率分布的乘积性**。（不相关变量的概率分布公式）
 
-2.条件严格性。
+设系统有两部分，其熵为$$S_1,S_2$$，其概率分布为$$\Omega_1,\Omega_2$$，则根据上述假设可得：
 
-点域：连续<可导（可微）<可解析
+$$S=S_1+S_2$$
 
-区域：连续<可导（可微）=可解析
+$$\Omega=\Omega_1\times \Omega_2$$
 
-3.函数可微的充要条件：Cauchy-Riemann Equations
+令$$S=f(\Omega)$$，则：
 
-4.复数在场论描述中的应用。
+$$S_1=f(\Omega_1),S_2=f(\Omega_2),S=f(\Omega_1)+f(\Omega_1)=f(\Omega_1\times \Omega_2)$$
 
-参考：
-
-https://mp.weixin.qq.com/s/SUWUAMQjSuB5Gs06SPliTQ
-
-复数求导在信号处理中的应用
-
-## Hermite矩阵
-
-复数矩阵通常不能直接转置，而必须进行共轭转置。共轭转置也叫做Hermite转置，用$$A^H$$表示。
-
-如果$$A=A^H$$，则A被称为Hermite矩阵。
-
->Charles Hermite，1822～1901，19世纪下半叶法国最著名的数学家，代数学领域的宗师级人物。Henri Poincaré的导师。他首先证明了e是超越数。以他的名字命名的数学术语竟达10项之多。   
->Hermite虽然不是如某些地摊文学所言，一遇考试就跪。但是的确不太擅长考试，大学（他考的大学类似国内的清北的地位）入学成绩排在第68位，完全没有学神的风范。相比之下，Poincaré的入学成绩可是排第一位的。尽管就成就而言，Hermite绝不逊于Poincaré。
-
-# 平稳离散时间随机过程
-
-## Toeplitz矩阵
-
-Toeplitz矩阵（diagonal-constant matrix），指矩阵中每条自左上至右下的斜线上的元素相同。
-
->Otto Toeplitz，1881～1940，德国犹太裔数学家。University of Breslau博士（1905），先后执教于Göttingen University（在David Hilbert手下供职）、University of Kiel和Bonn University。1939年，为了躲避元首的迫害，逃亡耶路撒冷，次年去世。
-
-广义平稳离散时间随机过程的相关矩阵是Hermite矩阵，也是Toeplitz矩阵。反之，如果相关矩阵是Toeplitz矩阵，则该离散时间随机过程，一定是广义平稳的。
-
-离散时间随机过程的相关矩阵是非负定的，并且几乎总是正定的。（等于零，只有在无噪声且观测向量线性相关的情况下，才会出现。）
-
-## 白噪声
-
-$$E[v(n)v^*(n-k)]=\begin{cases}
-\sigma_v^2, & k = 0 \\
-0, & k \neq 0 \\
+$$\begin{cases}
+\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_1} = \frac{\mathrm{d}f(\Omega_1\times\Omega_2)}{\mathrm{d}(\Omega_1\times\Omega_2)}\mathrm{d}\Omega_2 \\
+\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_2} = \frac{\mathrm{d}f(\Omega_1\times\Omega_2)}{\mathrm{d}(\Omega_1\times\Omega_2)}\mathrm{d}\Omega_1 \\
+\end{cases}
+\Rightarrow
+\begin{cases}
+\Omega_1\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_1} = \frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega}\Omega \\
+\Omega_2\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_2} = \frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega}\Omega \\
 \end{cases}$$
 
-## 线性差分方程
+$$\Omega_1\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_1} =\Omega_2\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_2}=\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega}\Omega = K$$
 
-时间随机过程本身是由时间序列组成的，因此也可以使用《机器学习（二十四）》中提到的ARIMA模型。该模型的关键是求解线性差分方程。这通常要使用“信号与系统”课程中的z变换（离散域的拉普拉斯变换）求解。考虑到“信号与系统”是一个很大的课程。这里仅对本人关心的要点，做一个简要记录。
+$$\mathrm{d}f(\Omega)=K\frac{\mathrm{d}\Omega}{\Omega}\Rightarrow f(\Omega) = K\ln \Omega + C$$
 
-绝对可积->收敛域
+根据热力学第三定律，使用绝对零度作为原点，则：
 
-z变换：$$f(z)\to F(z)$$
+$$S=K\ln \Omega$$
 
-z逆变换：$$F(z)\to f(z)$$
+上式就是Boltzmann's entropy formula。这里隐含的另一个假设是：分子随机运动没有偏好性，即**各状态的概率相等**。
 
-系统函数：$$H(z)=\frac{R(z)}{E(z)}$$。其中，E是激励信号，R是系统响应。
+如果状态概率不等的话，则：
 
-E的收敛域：$$\mid z\mid >1$$
+$$S = K \cdot E[\ln \Omega] = K \sum \Omega_i \ln \Omega_i$$
 
-差分算子->特征方程->特征根
-
-H的平稳条件：H的特征根满足$$\mid z\mid \le 1$$
-
-特征根是正实数，且$$\mid z \mid<1$$：自相关函数为阻尼曲线，仅有幅变。
-
-特征根是负实数或者复数，且$$\mid z \mid<1$$：自相关函数为正弦阻尼曲线，不仅有幅变，还有相变。
-
-## 选择ARIMA的阶数
-
-如前所述，ARIMA(p,d,q)除了一些参数之外，还包括p，d，p这三个阶数的超参数。
-
-
+上式被称作Gibbs entropy。
 
 参考：
 
-https://mp.weixin.qq.com/s/66lY17sOO83Q-xhvQi72dw
+https://wenku.baidu.com/view/a90518a37c1cfad6185fa746.html
 
-周期性时间序列的预测
+热力学中的熵
+
+## 信息熵
+
+**信息熵和热力学熵的假设相同**，因此有类似结论不足为奇，毕竟数学上都是同一个微分方程。
 
 # 数学家轶事
 
