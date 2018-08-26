@@ -229,19 +229,11 @@ https://mp.weixin.qq.com/s/KRttAyx7YW1vkmzo1w1fAg
 
 https://mp.weixin.qq.com/s/0jPuPBDokan6B_OltKp9mw
 
-德国本届世界杯胜算最大？帕绍大学基于ELO评级预测 
-
-https://mp.weixin.qq.com/s/wIdcZh3EkUIm6-91pT2oSQ
-
-DeepMind生成查询网络GQN，无监督学习展现3D场景
+德国本届世界杯胜算最大？帕绍大学基于ELO评级预测
 
 https://mp.weixin.qq.com/s/Sb_kPgtwyQFWloDT3707TA
 
 深度学习了40万个表情，一大波AI表情包来了
-
-https://mp.weixin.qq.com/s/dwtul6XjwRYOtRqmZl2SMg
-
-来看一场AI重建的3D全息世界杯比赛！
 
 https://mp.weixin.qq.com/s/dJXl5tI-WKB3O28sgJmbkw
 
@@ -254,8 +246,4 @@ https://mp.weixin.qq.com/s/xS8EsNtSdHiFgg_HnuJJWg
 https://mp.weixin.qq.com/s/keWrgmCfJrnswDDKEL52Cg
 
 数据少，就享受不到深度学习的红利了么？总是有办法的！
-
-https://mp.weixin.qq.com/s/MldsH2WSI53ljbcbBwyPzA
-
-国防科大、普林斯顿提出共面性检测网络：助力三维场景重建
 

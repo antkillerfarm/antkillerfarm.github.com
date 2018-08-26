@@ -304,10 +304,6 @@ https://mp.weixin.qq.com/s/a1GFDzcR98b7pyJR1Gn-TA
 
 深度学习之目标检测网络学习总结（from RCNN to YOLO V3）
 
-https://blog.csdn.net/savant_ning/article/details/69950588
-
-多视图3D目标检测学习笔记
-
 https://mp.weixin.qq.com/s/_kzPi1QgwqvT4glRI-FCzg
 
 深度学习目标检测指南：如何过滤不感兴趣的分类及添加新分类？

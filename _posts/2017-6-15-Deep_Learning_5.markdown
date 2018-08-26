@@ -70,6 +70,10 @@ https://mp.weixin.qq.com/s/VMK_UpOUI0y7apTGR02D1Q
 
 图解Word2Vec
 
+https://mp.weixin.qq.com/s/CMcNkEFW9UUXAW0832dT6g
+
+对学习/理解Word2Vec有帮助的材料
+
 https://mp.weixin.qq.com/s/XMGZXAt_LUX5iTet7_SX4Q
 
 深度学习和自然语言处理：诠释词向量的魅力

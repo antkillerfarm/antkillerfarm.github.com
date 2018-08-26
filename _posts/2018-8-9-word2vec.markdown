@@ -297,10 +297,6 @@ https://mp.weixin.qq.com/s/naD6hVwDg3QSA76sXy2GZA
 
 上海交通大学CVPR Spotlight论文：利用形态相似性生成人体部位解析数据
 
-https://mp.weixin.qq.com/s/OfDaoRb2l_gei--bLSzTRw
-
-宅男福音DeepFake进阶版！基于位置映射图网络进行3D人脸重建
-
 https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
 
 北大：一种基于新闻特征抽取和循环神经网络的股票预测方法
@@ -356,3 +352,20 @@ https://mp.weixin.qq.com/s/Ob1ngUEmRgSybcAD5zg0QQ
 https://mp.weixin.qq.com/s/vamNsEAmAA_3yjQp5ImZNg
 
 XNN：打开了自己黑箱的神经网络
+
+https://mp.weixin.qq.com/s/4mHIM51e9prKvp1xQIDnTA
+
+DeepMind提出对比预测编码，通过预测未来学习高级表征
+
+https://github.com/Alibaba-Technology/hangzhouYunQi2017ppt
+
+2017杭州云栖大会精华PPT
+
+https://mp.weixin.qq.com/s/Opnf5GBxoUqznWuYBb8xaA
+
+清华唐杰AMiner团队全球H-index Top 10000学者半世纪迁移图
+
+https://mp.weixin.qq.com/s/ulLh_JfLa9Os3ZFFAWVETA
+
+谷歌大脑最新研究：高斯过程“超越”随机梯度下降！
+

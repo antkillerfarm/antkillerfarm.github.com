@@ -282,10 +282,6 @@ https://mp.weixin.qq.com/s/Wa2om6y27aFCB9kGRwZqBA
 
 孙剑：如何在公司做好计算机视觉的研究
 
-https://mp.weixin.qq.com/s/GXeAG118a6Wwt8zE3LE-hQ
-
-Autodesk提出新算法：用“自动编码器网络”生成3D模型！
-
 https://mp.weixin.qq.com/s/gA_qtlZg8zCkLqndkb3YJw
 
 解读ICCV2017 12篇论文
@@ -305,10 +301,6 @@ http://mp.weixin.qq.com/s/D2Nw3oKF2DYgMZysmi_ysg
 http://mp.weixin.qq.com/s/9mtgdNynv92FC2dA8-5KJA
 
 VAE和Adam发明人博士论文：变分推理和深度学习
-
-https://mp.weixin.qq.com/s/ZTjklje_3fcAn6ZQ23yd4A
-
-ScanComplete：可实现3D扫描的大规模“场景完成”和“语义分割”
 
 https://mp.weixin.qq.com/s/giwq3IZs6KSILSyXDn90pA
 

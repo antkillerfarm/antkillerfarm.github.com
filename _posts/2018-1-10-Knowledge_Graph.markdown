@@ -390,6 +390,10 @@ https://mp.weixin.qq.com/s/tnkS6xtuv29A_TGlPUAxlQ
 
 我猜，每个程序员对着电梯都想过调度算法吧！
 
+https://mp.weixin.qq.com/s/0m5DuJzh92aYUgdiQ3PfIg
+
+数据竞赛大杀器之模型融合(stacking & blending)
+
 # 垃圾筐
 
 http://www.matrix67.com/

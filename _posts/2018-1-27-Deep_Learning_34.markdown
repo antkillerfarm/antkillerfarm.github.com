@@ -228,10 +228,6 @@ https://mp.weixin.qq.com/s/-JHHOQPB6pKVuge64NkMuQ
 
 DeepMind主攻的深度强化学习3大核心算法及7大挑战
 
-https://mp.weixin.qq.com/s/YQpuYuzk0jv5OngH5u8bEg
-
-阿里菜鸟物流：使用深度强化学习方法求解一类新型三维装箱问题
-
 https://mp.weixin.qq.com/s/OY56lJ_NFf5vVAgKfKyx2A
 
 利用强化学习自动搜索最优化方法

@@ -262,6 +262,10 @@ http://wiki.jikexueyuan.com/project/start-learning-python/311.html
 
 python科学计算之Pandas使用
 
+https://mp.weixin.qq.com/s/L95slIQ8so5IWpIpy7ZHEQ
+
+23种Pandas核心操作，你需要过一遍吗？
+
 ## mysql
 
 http://www.runoob.com/python/python-mysql.html

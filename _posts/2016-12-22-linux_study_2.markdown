@@ -448,7 +448,3 @@ https://mp.weixin.qq.com/s/KX85CCpYrXFOvdTU5Q4Frg
 
 阿里巴巴论文提出针对影视作品的语音情感识别信息融合框架
 
-https://mp.weixin.qq.com/s/1R9ttaKnXso_quIGTY1nfA
-
-海康、UCLA、北理联合提出3D DescriptorNet：可按条件生成3D形状，克服模式崩溃
-

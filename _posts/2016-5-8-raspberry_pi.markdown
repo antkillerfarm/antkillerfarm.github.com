@@ -261,6 +261,10 @@ https://mp.weixin.qq.com/s/_Zm88TyBcXAZ4LeQOuJCHA
 
 管理neo4j的用户
 
+https://mp.weixin.qq.com/s/dzPZTqUhWKIiKj2o7OkMbA
+
+Neo4j的python操作库Neo4j-Driver
+
 ## neo4j-graph-algorithms
 
 Neo4j Graph Algorithms扩展包，是一个关于图算法的jar包，集成了一些常见的图算法，比如社区发现，路径扩展，中心点计算，PageRank等。

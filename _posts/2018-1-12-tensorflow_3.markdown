@@ -342,6 +342,10 @@ https://mp.weixin.qq.com/s/rQ9eZosHOoDOXg9tAg4t6A
 
 tensorflow Object Detection API使用预训练模型mask r-cnn实现对象检测
 
+https://mp.weixin.qq.com/s/8I5Nvw4t2jT1NR9vIYT5XA
+
+深入理解TensorFlow中的tf.metrics算子
+
 # Machine Learning之Python篇
 
 ## 参考（续）

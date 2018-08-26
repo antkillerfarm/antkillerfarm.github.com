@@ -106,6 +106,10 @@ https://mp.weixin.qq.com/s/RSWF5XxH3B1eQvY_DlEwew
 
 深度学习、机器学习与NLP的前世今生
 
+https://mp.weixin.qq.com/s/sBRqSEKozodG2iA3Iqrpxw
+
+300页文本知识提取与推断最新教程
+
 https://www.msra.cn/zh-cn/news/features/ruihua-song-20161226
 
 宋睿华：好玩的文本生成

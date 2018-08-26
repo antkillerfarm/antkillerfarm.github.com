@@ -164,6 +164,10 @@ https://mp.weixin.qq.com/s/WtDZs3rsEBWrTqTUCHDFxg
 
 中山大学&商汤提出部分分组网络PGN，解决实例级人体解析难题
 
+https://mp.weixin.qq.com/s/UvwUu0cwpk_gvMmBGX1vfQ
+
+嘿嘿，想变成会跳舞的小哥哥或小姐姐吗？超简单！
+
 # 深度目标跟踪
 
 https://zhuanlan.zhihu.com/p/22334661

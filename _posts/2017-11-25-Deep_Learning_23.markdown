@@ -252,6 +252,12 @@ Long-term Recurrent Convolutional Networks是LSTM的一种应用方式，它结�
 
 但是SRU的精度没有LSTM高，需要通过增加layer和filter的数量来达到相同的精度，当然即使这样，计算时间仍然小于LSTM。
 
+参考：
+
+https://mp.weixin.qq.com/s/PsIa3XDFqZlY2tKcvqvddw
+
+Training RNNs as Fast as CNNs
+
 ## 《Neural Machine Translation in Linear Time》
 
 该论文是Deepmind的作品，它提出的ByteNet，计算复杂度为线性，也是LSTM的优化方案之一。

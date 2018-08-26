@@ -199,7 +199,9 @@ H的平稳条件：H的特征根满足$$\mid z\mid \le 1$$
 
 如前所述，ARIMA(p,d,q)除了一些参数之外，还包括p，d，p这三个阶数的超参数。
 
+AIC信息准则即Akaike information criterion，是衡量统计模型拟合优良性(Goodness of fit)的一种标准，由于它为日本统计学家赤池弘次创立和发展的，因此又称赤池信息量准则。AIC方法主要使用了KL散度。
 
+MDL(minimum description length,最小描述长度) 原理是Rissane在研究通用编码时提出的。其基本原理是选择总描述长度最小的模型。
 
 参考：
 
@@ -207,3 +209,16 @@ https://mp.weixin.qq.com/s/66lY17sOO83Q-xhvQi72dw
 
 周期性时间序列的预测
 
+# 功率谱
+
+随机过程二阶统计：
+
+时域：自相关函数
+
+频域：功率谱密度（power spectral density, PSD），也称为功率谱（power spectrum）
+
+参考：
+
+https://www.zhihu.com/question/29520851
+
+功率谱密度如何理解？

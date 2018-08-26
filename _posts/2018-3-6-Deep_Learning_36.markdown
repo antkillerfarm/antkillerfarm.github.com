@@ -380,3 +380,7 @@ https://mp.weixin.qq.com/s/GLiOZjqC9DSvGEX3xqbHJg
 
 鸡生蛋与蛋生鸡，纵览神经架构搜索方法
 
+https://mp.weixin.qq.com/s/DLpMVOmkvpWqlHIAZojwog
+
+一文看懂深度学习新王者「AutoML」：是什么、怎么用、未来如何发展？
+

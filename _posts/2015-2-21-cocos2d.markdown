@@ -313,10 +313,6 @@ https://mp.weixin.qq.com/s/mPN3MXueeZImY2z0KBD6CA
 
 CMU&谷歌Spotlight论文：超越卷积的视觉推理框架
 
-https://mp.weixin.qq.com/s/RwofVKhBFqo3dYJzy9mlJw
-
-国科大本科生连续在CVPR，AAAI发文，系统提出三维模型库变形分析方法
-
 https://mp.weixin.qq.com/s/tKccNaGe5EqEEqpoItfn5Q
 
 我在谷歌大脑见习机器学习的一年：Node.js创始人的尝试笔记

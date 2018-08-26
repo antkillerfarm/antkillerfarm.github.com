@@ -284,6 +284,10 @@ https://mp.weixin.qq.com/s/7dzQhgblEm-kzRnpddweSw
 
 嵌入式端CNN网络计算的量化-动态定点法（1）
 
+https://mp.weixin.qq.com/s/XzLJzfvpP93cDYplf6-LXA
+
+港科腾讯等提出Bi-Real net：超XNOR-net 10%的ImageNet分类精度
+
 # 视频目标分割
 
 视频目标分割任务和语义分割有两个基本区别：

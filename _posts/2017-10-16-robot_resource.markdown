@@ -84,6 +84,28 @@ https://www.doc.ic.ac.uk/~ajd/Robotics/index.html
 
 CS 333: Robotics
 
+https://mp.weixin.qq.com/s/T7wI4cjKbciYC3ZNxKfReA
+
+143页 MIT自动驾驶算法地图推理教程
+
+## 自动驾驶入门课程
+
+https://mp.weixin.qq.com/s/yO_Lc5Fo-8fBC9PwVCQBqA
+
+自动驾驶入门课程第①讲—无人驾驶概览
+
+https://mp.weixin.qq.com/s/IVD0aq8V-qZoB0tcLMigYw
+
+自动驾驶入门课程第②讲 — 高精地图
+
+https://mp.weixin.qq.com/s/KJbm4wfsTLxT5LGR7GV_SA
+
+自动驾驶入门课程第③讲 — 定位
+
+https://mp.weixin.qq.com/s/BCNrsuoThJt031jCnbAjAA
+
+自动驾驶入门课程第④讲 — 感知（上）
+
 ## 术语
 
 LIDAR：LIght Detection And Ranging
@@ -302,10 +324,6 @@ https://mp.weixin.qq.com/s/rqDYpGj6dG0Zwn5C6kNApA
 
 群雄逐“图”，百度缘何备受关注？这是一篇关于高精地图的blog
 
-https://mp.weixin.qq.com/s/aCAFcCWkyAcz-wyqhOldNg
-
-基于图像的场景三维建模
-
 https://blog.csdn.net/qq_35723367/article/details/79721503
 
 四轴飞行器基本组成及其飞行原理详解
@@ -353,20 +371,4 @@ https://mp.weixin.qq.com/s/09NwPaWTDU5g6ZjSPxLgTw
 https://zhuanlan.zhihu.com/p/41287237
 
 点云感知CVPR 2018论文总结
-
-https://mp.weixin.qq.com/s/yO_Lc5Fo-8fBC9PwVCQBqA
-
-自动驾驶入门课程第①讲—无人驾驶概览
-
-https://mp.weixin.qq.com/s/IVD0aq8V-qZoB0tcLMigYw
-
-自动驾驶入门课程第②讲 — 高精地图
-
-https://mp.weixin.qq.com/s/KJbm4wfsTLxT5LGR7GV_SA
-
-自动驾驶入门课程第③讲 — 定位
-
-https://mp.weixin.qq.com/s/BCNrsuoThJt031jCnbAjAA
-
-自动驾驶入门课程第④讲 — 感知（上）
 

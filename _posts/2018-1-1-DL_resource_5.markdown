@@ -74,10 +74,6 @@ https://mp.weixin.qq.com/s/ZV32xDgGTriIAUbHohc90Q
 
 4个学生，1个暑假，百度深度学习开源平台PaddlePaddle诞生了智能桃子分拣器
 
-https://mp.weixin.qq.com/s/0BZxFKjcwxKj7R66NRIWqQ
-
-UC Berkeley新研究：多视角图像3D模型重建技术
-
 https://mp.weixin.qq.com/s/kbqTHIOzAj1aERl4tm-kVA
 
 2017上半年无监督特征学习研究成果汇总
@@ -126,22 +122,6 @@ https://mp.weixin.qq.com/s/tk7ghSXi2jz8SYbBeWR8jg
 
 神经网络模糊测试：将DNN应用于软件安全测试
 
-https://mp.weixin.qq.com/s/0E4VpN9z2sNvsGCvOI5RVA
-
-稀疏&集成的卷积神经网络学习
-
-https://mp.weixin.qq.com/s/4wMvfnvTaWF10Xq7HqbO-A
-
-稀疏&集成的卷积神经网络学习（续）
-
-https://mp.weixin.qq.com/s/aBDx_602GZXA36awEyjb-A
-
-从深度学习研究论文中自动生成可执行源代码
-
-https://mp.weixin.qq.com/s/xRLXCPF92vT7Gs-NLs2RGA
-
-谷歌、百度等搜索巨头应该从果蝇身上学习什么？专访解读果蝇算法
-
 https://mp.weixin.qq.com/s/_7yx6IywJ1EOClZUcr0AsA
 
 PNAS：绘制情绪图谱，人类内心的表情包其实很丰富
@@ -189,10 +169,6 @@ https://mp.weixin.qq.com/s/r6Dnv3v6TYwTsAQJTDR0Mg
 https://zhuanlan.zhihu.com/p/28654835
 
 视觉推理（Visual Reasoning），神经网络也可以有逻辑
-
-https://mp.weixin.qq.com/s/rxP9PlTJJdw5VmGbwRPMog
-
-解决3D重建难题，伯克利大学根据单张平面彩图重建高精度3D结构
 
 https://mp.weixin.qq.com/s/ty8RyPREo_EA7O8vA2pQuQ
 
@@ -370,35 +346,39 @@ https://mp.weixin.qq.com/s/2FKgCmQ8i58XamT_plrl1w
 
 深度神经网络为什么不易过拟合？傅立叶分析发现固有频谱偏差
 
-https://mp.weixin.qq.com/s/ora66weNks8tHlFTKJrKSA
+https://mp.weixin.qq.com/s/vUK2NneOs8OR0vcJEZNbrA
 
-谷歌AI自动重构3D大脑，最高精度绘制神经元
+田渊栋等人论文：何时卷积滤波器容易学习？
 
-https://mp.weixin.qq.com/s/WXVZkqCGlj6ym5YrSZS3Vg
+https://mp.weixin.qq.com/s/HP8KLbo26W5UscCGavKDRw
 
-谷歌普林斯顿提出首个端到端立体双目系统深度学习方案
+IBM Watson提出人机推理网络HuMaINs，结合人机两者优势
 
-https://mp.weixin.qq.com/s/54twfwVlM7UQbrFvOAQ2_w
+https://mp.weixin.qq.com/s/IsLlzDWnUXe8LVp4Y1Jb_A
 
-fine-gained image classification
+35亿张图像！Facebook基于弱监督学习刷新ImageNet基准测试记录
 
-https://mp.weixin.qq.com/s/4mHIM51e9prKvp1xQIDnTA
+https://mp.weixin.qq.com/s/sbuqNhIVTDUe4Q6BxS5fWw
 
-DeepMind提出对比预测编码，通过预测未来学习高级表征
+盘点金融领域里常用的深度学习模型
 
-https://github.com/Alibaba-Technology/hangzhouYunQi2017ppt
+https://mp.weixin.qq.com/s/R6vZU_gBaODsh1XtsjTpFA
 
-2017杭州云栖大会精华PPT
+MIT与FAIR提出“mixup”：利用数据和标签的随机线性插值提高神经网络的健壮性
 
-https://mp.weixin.qq.com/s/Opnf5GBxoUqznWuYBb8xaA
+https://mp.weixin.qq.com/s/xZbsxAqo0mVUb-LyH6fU1g
 
-清华唐杰AMiner团队全球H-index Top 10000学者半世纪迁移图
+Yann LeCun：大脑如何高效率学习？
 
-https://mp.weixin.qq.com/s/ulLh_JfLa9Os3ZFFAWVETA
+https://mp.weixin.qq.com/s?__biz=MzI3MTM5ODA0Nw==&mid=2247484058&idx=1&sn=0dfe92a0991294afba2514b137217a66
 
-谷歌大脑最新研究：高斯过程“超越”随机梯度下降！
+朱松纯：浅谈人工智能：现状、任务、构架与统一
 
-https://mp.weixin.qq.com/s/DsmjjfInV_yPFWB2oSq-dA
+https://mp.weixin.qq.com/s/_w4IIRY6LwqehpDlEXt90A
 
-取代学习率衰减的新方法：谷歌大脑提出增加Batch Size
+牛津大学提出神经网络新训练法：用低秩结构增强网络压缩和对抗稳健性
+
+https://mp.weixin.qq.com/s/w-6z8B60cIHUF5tU-RoQ3w
+
+旷视科技提出统一感知解析网络UPerNet，优化场景理解
 

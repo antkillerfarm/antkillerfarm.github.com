@@ -312,17 +312,9 @@ PaaS将吞噬云计算？Kubernetes的市场冲击波
 
 # DL参考资源
 
-https://mp.weixin.qq.com/s/zDKjyxqSbqYVlx3TveL8fg
-
-单摄像头数秒构建3D人体模型
-
 https://mp.weixin.qq.com/s/wni3F9lKuO4OT32BVe0QDQ
 
 谷歌发大招：搜索全面AI化，不用关键词就能轻松“撩书”
-
-https://mp.weixin.qq.com/s/oNXmYpp--GutT66c5p6Q8A
-
-AI说，它可以把你变成个游戏：3D人体模型
 
 https://mp.weixin.qq.com/s/o2A9yo6lIWTphf3jLviyEg
 
@@ -336,3 +328,18 @@ https://mp.weixin.qq.com/s/19U2Rhwgj5NoB0esKyxSyA
 
 神经网络告诉我，谁是世界上最“美”的人？
 
+https://mp.weixin.qq.com/s/0E4VpN9z2sNvsGCvOI5RVA
+
+稀疏&集成的卷积神经网络学习
+
+https://mp.weixin.qq.com/s/4wMvfnvTaWF10Xq7HqbO-A
+
+稀疏&集成的卷积神经网络学习（续）
+
+https://mp.weixin.qq.com/s/aBDx_602GZXA36awEyjb-A
+
+从深度学习研究论文中自动生成可执行源代码
+
+https://mp.weixin.qq.com/s/xRLXCPF92vT7Gs-NLs2RGA
+
+谷歌、百度等搜索巨头应该从果蝇身上学习什么？专访解读果蝇算法

@@ -64,10 +64,6 @@ https://mp.weixin.qq.com/s/eqI5fVuF68RQWb1a5O219w
 
 腾讯研发“一键卸妆” ,让女神秒变路人!
 
-https://mp.weixin.qq.com/s/joRcvCQwLYgRd29mfPd7XA
-
-中科大&微软提出立体神经风格迁移模型，可用于3D视频风格化
-
 https://mp.weixin.qq.com/s/73mkWlqJsVdu9m1kPDvfbQ
 
 用AI让静图变动图：CVPR热文提出动态纹理合成新方法
@@ -194,7 +190,11 @@ https://mp.weixin.qq.com/s/X96oI-duHwyCFAR79inlig
 
 https://mp.weixin.qq.com/s/MFKhmHcaQvufdRawFqisjA
 
-Distill详述「可微图像参数化」：神经网络可视化和风格迁移利器！
+Distill详述“可微图像参数化“：神经网络可视化和风格迁移利器！
+
+https://mp.weixin.qq.com/s/rt4uuqh8IrZTjsYXEZvxKQ
+
+阿里提出全新风格化自编码GAN，图像生成更逼真！
 
 # Attention进阶
 
@@ -273,6 +273,10 @@ https://mp.weixin.qq.com/s/7OYY3L7gL4wVv_EjoosOHA
 https://mp.weixin.qq.com/s/9Kt6_DfeYRnhsb10aCSFGw
 
 FAGAN：完全注意力机制（Full Attention）GAN，Self-attention+GAN
+
+https://mp.weixin.qq.com/s/lZOIK5BRXZrmL_Z9crl6sA
+
+机器翻译新突破！“普适注意力”模型：概念简单参数少，性能大增
 
 # 多任务学习
 
@@ -381,3 +385,7 @@ MIT用AI实现3分钟自动抠图，精细到头发丝
 https://mp.weixin.qq.com/s/5n3jpvv_LxnHB0w4hsCEzQ
 
 NVIDIA ECCV18论文:超像素采样网络助力语义分割与光流估计
+
+https://mp.weixin.qq.com/s/MiChpWim5pGlRj88rcQtaA
+
+谷歌等祭出图像语义理解分割神器，PS再也不用专业设计师！

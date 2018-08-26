@@ -142,4 +142,7 @@ https://mp.weixin.qq.com/s/6xTdgOYHtnCSsH9QRGkcCw
 
 一文理解词性标注、依存分析和命名实体识别任务
 
+https://mp.weixin.qq.com/s/c1rSq8vY9fiXjV-WsxLVQw
+
+一文详解深度学习在命名实体识别(NER)中的应用
 

@@ -26,10 +26,6 @@ https://mp.weixin.qq.com/s/UfmyH4BBWwErakrOoselQA
 
 随机计算图：在随机结点中执行反向传播的新方法
 
-https://mp.weixin.qq.com/s/Yoledi-OYgJmafxKBlHVPg
-
-国科大本科生以第一作者身份发表AAAI论文，用神经网络分析三维模型
-
 https://mp.weixin.qq.com/s/kLXJsHbBnRIFC3NLChPhzA
 
 如何高效进行大规模分类？港中文联合商汤提出新方法
@@ -73,10 +69,6 @@ https://mp.weixin.qq.com/s/glwjwXNNoMYBmhgwEcpUeg
 https://mp.weixin.qq.com/s/x5rTpvvCfABWWkjpgnJ5BA
 
 谷歌大脑提出Adversarial Spheres：从简单流形探讨对抗性样本的来源
-
-https://mp.weixin.qq.com/s/a4A5WCFalH1en0IEM3mu2Q
-
-双流束网络：北理工提出深度立体匹配新方法
 
 https://mp.weixin.qq.com/s/xCzS7sYMFmk5K4ClB1I2YQ
 
@@ -385,3 +377,15 @@ https://mp.weixin.qq.com/s/YyGf7tJcGhdqtciKuw4bbw
 https://mp.weixin.qq.com/s/iuOmxW0OAhSA7xSoIIn1dw
 
 鲁继文：面向视觉内容理解的深度度量学习
+
+https://mp.weixin.qq.com/s/ora66weNks8tHlFTKJrKSA
+
+谷歌AI自动重构3D大脑，最高精度绘制神经元
+
+https://mp.weixin.qq.com/s/WXVZkqCGlj6ym5YrSZS3Vg
+
+谷歌普林斯顿提出首个端到端立体双目系统深度学习方案
+
+https://mp.weixin.qq.com/s/54twfwVlM7UQbrFvOAQ2_w
+
+fine-gained image classification

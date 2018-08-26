@@ -326,3 +326,11 @@ https://zhuanlan.zhihu.com/p/33462550
 
 传统IP Vendor的AI加速器一览
 
+https://mp.weixin.qq.com/s/IaCWZXQI8mYLJQXwDoNQcQ
+
+自动驾驶芯片：GPU的现在和ASIC的未来
+
+https://mp.weixin.qq.com/s/acAbNP_ERnKlL3_9v_mwow
+
+FPGA：AI ASIC的必经之路？
+

@@ -102,6 +102,10 @@ https://mp.weixin.qq.com/s/Oot7qI5Atj8kNGfhqYwDcA
 
 掌握这12条经验，对理解机器学习至关重要！
 
+https://mp.weixin.qq.com/s/C_ZpuqBNuJHzeEfru5Fe5A
+
+10幅图解释机器学习中的基本概念
+
 https://www.zhihu.com/question/21664179
 
 如何在论文中画出漂亮的插图？

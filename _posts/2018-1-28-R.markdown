@@ -415,10 +415,6 @@ https://mp.weixin.qq.com/s/SB5ZSD_YGPvC6hPTZXiB4A
 
 让机器“一叶知秋”：弱监督视觉语义分割
 
-https://mp.weixin.qq.com/s/6agNNraba4wlOzWnDfedBg
-
-UIUC & Zillow提出LayoutNet：从单个RGB图像中重建3D房间布局
-
 https://zhuanlan.zhihu.com/p/35305264
 
 一文看懂深度学习中的VQA(视觉问答)技术

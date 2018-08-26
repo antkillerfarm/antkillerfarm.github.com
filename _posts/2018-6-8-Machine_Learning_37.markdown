@@ -174,3 +174,7 @@ https://mp.weixin.qq.com/s/aZlJNZsSv60ZZi2heGo_Mw
 
 一文简述深度学习优化方法——梯度下降
 
+https://mp.weixin.qq.com/s/DsmjjfInV_yPFWB2oSq-dA
+
+取代学习率衰减的新方法：谷歌大脑提出增加Batch Size
+

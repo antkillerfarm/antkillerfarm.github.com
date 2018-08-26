@@ -462,3 +462,7 @@ https://zhuanlan.zhihu.com/p/41293278
 
 把python翻译成C++
 
+https://mp.weixin.qq.com/s/KCiR6ZE1EpYVfySaCG097A
+
+上半年最常见的Python面试题
+

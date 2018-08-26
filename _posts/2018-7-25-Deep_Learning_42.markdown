@@ -80,6 +80,14 @@ https://mp.weixin.qq.com/s/LZCYx-VyOAMWXBS76ttkFw
 
 如何在不同摄像头里识别行人？多层相似度感知CNN网络解析
 
+https://mp.weixin.qq.com/s/iUPZ4DfL65_NV2v3eWomww
+
+无监督深度关联学习大幅提高行人重识别性能
+
+https://mp.weixin.qq.com/s/Wj6RBS7gYd9skE3AU1s4Qg
+
+尺度不变提升人群计数性能
+
 # 人脸识别进阶
 
 https://mp.weixin.qq.com/s/ZZmLbFzi843g0k3gTncQmA
@@ -222,10 +230,6 @@ https://mp.weixin.qq.com/s/Ieha-lJ_KuEnpbJha_nxJw
 
 利用人脸图片准确识别年龄：上海大学研究者提出“深度回归森林”
 
-https://mp.weixin.qq.com/s/wHIT2pm_5O4MOR_QLpHVLQ
-
-PRNet：人脸3D重建与密集对齐
-
 # 目标检测进阶
 
 https://mp.weixin.qq.com/s/LtXylKTKsHdjMPw9Q1HyXA
@@ -243,10 +247,6 @@ https://mp.weixin.qq.com/s/u3eXhoFvo7vZujc0XoQQWQ
 https://mp.weixin.qq.com/s/6cUP9vvfcuv8rIEnGnAFiA
 
 NCSU&阿里巴巴论文：可解释的R-CNN
-
-https://mp.weixin.qq.com/s/x0r-2J_YdYgIQlRDqvGofg
-
-CVPR 2017论文解读：用于单目图像车辆3D检测的多任务网络
 
 https://mp.weixin.qq.com/s/1vOdOMyByBacSBMVrscq5Q
 
@@ -352,10 +352,6 @@ https://mp.weixin.qq.com/s/qiLFQowjH67XECXBlppUDg
 
 对抗深度学习:鱼(模型准确性)与熊掌(模型鲁棒性)能否兼得？
 
-https://mp.weixin.qq.com/s/Fgptle5p9jFtP6JPvjPHNw
-
-腾讯优图提出几何对抗损失函数在单视图3D物体重建中的应用
-
 https://mp.weixin.qq.com/s/1SpHGtjkSfDEFCZuudCm0Q
 
 基于GAN和VAE的跨模态图像生成
@@ -364,3 +360,6 @@ https://mp.weixin.qq.com/s/02amaVnLFxeLDBsjG-iN1Q
 
 UBC&腾讯AI Lab提出首个模块化GAN架构，搞定任意图像PS组合
 
+https://mp.weixin.qq.com/s/pf0fNSoNDaI9bZvohRX28A
+
+不再使用人眼评估，你训练的GAN还OK吗？ 

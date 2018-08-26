@@ -228,6 +228,10 @@ https://mp.weixin.qq.com/s/aRipNkT2BSc5NefB9k4rEA
 
 Nature Medicine论文展示DeepMind眼疾诊断里程碑：临床专家级、“解决“黑箱问题
 
+https://mp.weixin.qq.com/s/NyRiLMDDADoOsa1Os9xcMw
+
+Neuromation新研究：利用卷积神经网络进行儿童骨龄评估
+
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
