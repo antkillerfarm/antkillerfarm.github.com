@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Qt, 线程池, WebService, Kubernetes
+title:  Qt, 线程池, WebService, Kubernetes, Actor model
 category: technology 
 ---
 
@@ -310,6 +310,20 @@ https://mp.weixin.qq.com/s/s5eDSQF6mFt2F9_nVtYemQ
 
 PaaS将吞噬云计算？Kubernetes的市场冲击波
 
+# Actor model
+
+https://elbarco.cn/2017/01/21/introduction-to-actor-model/
+
+并发编程模型之Actor模型
+
+https://www.jianshu.com/p/449850aa8e82
+
+10分钟了解Actor模型
+
+https://www.cnblogs.com/MOBIN/p/7236893.html
+
+Actor模型原理
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/wni3F9lKuO4OT32BVe0QDQ
@@ -328,18 +342,3 @@ https://mp.weixin.qq.com/s/19U2Rhwgj5NoB0esKyxSyA
 
 神经网络告诉我，谁是世界上最“美”的人？
 
-https://mp.weixin.qq.com/s/0E4VpN9z2sNvsGCvOI5RVA
-
-稀疏&集成的卷积神经网络学习
-
-https://mp.weixin.qq.com/s/4wMvfnvTaWF10Xq7HqbO-A
-
-稀疏&集成的卷积神经网络学习（续）
-
-https://mp.weixin.qq.com/s/aBDx_602GZXA36awEyjb-A
-
-从深度学习研究论文中自动生成可执行源代码
-
-https://mp.weixin.qq.com/s/xRLXCPF92vT7Gs-NLs2RGA
-
-谷歌、百度等搜索巨头应该从果蝇身上学习什么？专访解读果蝇算法

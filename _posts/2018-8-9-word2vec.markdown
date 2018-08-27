@@ -241,6 +241,26 @@ http://spandh.dcs.shef.ac.uk/chime_challenge/chime2016/
 
 CHiMe – Computational Hearing in Multisource Environments-国际多通道语音分离和识别大赛
 
+# Jetty
+
+Jetty是一个Java Servlet容器。官网：
+
+https://www.eclipse.org/jetty/
+
+它与Tomcat的差异在于：
+
+1.Jetty是Eclipse基金会的项目，而Tomcat是Apache基金会的项目。
+
+2.Jetty是轻量级的Web Server，系统开销小，而Tomcat是重量级的Web Server，功能更强大。
+
+3.启动方式不同。Jetty一般是嵌入Java程序中，在程序启动之后，再启动Jetty。而Tomcat是首先启动自己作为后台服务，然后再加载功能性的应用。
+
+参考：
+
+https://github.com/jasonish/jetty-springmvc-jsp-template
+
+一个Jetty+Spring MVC+JSP的demo。
+
 # 大数据平台参考资源
 
 https://mp.weixin.qq.com/s/syM4ReAWpZ5d4KI87ogpiQ
@@ -250,10 +270,6 @@ https://mp.weixin.qq.com/s/syM4ReAWpZ5d4KI87ogpiQ
 https://mp.weixin.qq.com/s/qh88sawJUZedv3X0LIRsAQ
 
 ESearch：58集团基于C++语言自主研发的搜索内核
-
-https://mp.weixin.qq.com/s/uMj3JEhgyYw4CaIhP1-GTQ
-
-阿里巴巴为什么不用ZooKeeper做服务发现？
 
 http://www.cnblogs.com/rjzheng/p/8994962.html
 
@@ -336,36 +352,4 @@ https://mp.weixin.qq.com/s/Mk_EkwTYK2141cU9zC1hvQ
 https://zhuanlan.zhihu.com/p/36527644
 
 Learning with Noise: Enhance Distantly Supervised Relation Extraction with Dynamic Transition Matrix——一种对噪音数据显式建模的方法
-
-https://mp.weixin.qq.com/s/tjnpIYJGmrTLGUsdtBI2Vw
-
-AI设计师“鹿班”核心技术公开：如何1秒设计8000张海报？
-
-https://mp.weixin.qq.com/s/zeN7rjmAnvh_7BbTmScrZw
-
-细粒度分类你懂吗？——fine-gained image classification
-
-https://mp.weixin.qq.com/s/Ob1ngUEmRgSybcAD5zg0QQ
-
-利用深度学习消去反光
-
-https://mp.weixin.qq.com/s/vamNsEAmAA_3yjQp5ImZNg
-
-XNN：打开了自己黑箱的神经网络
-
-https://mp.weixin.qq.com/s/4mHIM51e9prKvp1xQIDnTA
-
-DeepMind提出对比预测编码，通过预测未来学习高级表征
-
-https://github.com/Alibaba-Technology/hangzhouYunQi2017ppt
-
-2017杭州云栖大会精华PPT
-
-https://mp.weixin.qq.com/s/Opnf5GBxoUqznWuYBb8xaA
-
-清华唐杰AMiner团队全球H-index Top 10000学者半世纪迁移图
-
-https://mp.weixin.qq.com/s/ulLh_JfLa9Os3ZFFAWVETA
-
-谷歌大脑最新研究：高斯过程“超越”随机梯度下降！
 

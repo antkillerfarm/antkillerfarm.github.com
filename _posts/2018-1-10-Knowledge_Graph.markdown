@@ -324,6 +324,10 @@ https://mp.weixin.qq.com/s/8REGSXSpXXvz0YIMspZm4g
 
 最佳论文：南京大学提出DSKG，将多层RNN用于知识图谱补全
 
+https://mp.weixin.qq.com/s/zusfpa3c2T8mSyRSaXhVLg
+
+健康知识图谱，阿里工程师如何实现？
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/zXABOzbQRV7sfgAhr_WqZw

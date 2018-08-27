@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  网络杂谈, Docker, Actor model
+title:  网络杂谈, Docker
 category: technology 
 ---
 
@@ -287,25 +287,13 @@ http://www.ibm.com/developerworks/cn/opensource/os-cn-zookeeper/index.html
 
 分布式服务框架 Zookeeper--管理分布式环境中的数据
 
-# Jetty
+https://mp.weixin.qq.com/s/uMj3JEhgyYw4CaIhP1-GTQ
 
-Jetty是一个Java Servlet容器。官网：
+阿里巴巴为什么不用ZooKeeper做服务发现？
 
-https://www.eclipse.org/jetty/
+https://mp.weixin.qq.com/s/KFzJAxL_xvrrjhubd7zH-Q
 
-它与Tomcat的差异在于：
-
-1.Jetty是Eclipse基金会的项目，而Tomcat是Apache基金会的项目。
-
-2.Jetty是轻量级的Web Server，系统开销小，而Tomcat是重量级的Web Server，功能更强大。
-
-3.启动方式不同。Jetty一般是嵌入Java程序中，在程序启动之后，再启动Jetty。而Tomcat是首先启动自己作为后台服务，然后再加载功能性的应用。
-
-参考：
-
-https://github.com/jasonish/jetty-springmvc-jsp-template
-
-一个Jetty+Spring MVC+JSP的demo。
+Facebook为何放弃ZooKeeper转用自研配置管理系统？
 
 # Docker
 
@@ -372,18 +360,4 @@ Docker完全指南
 https://mp.weixin.qq.com/s/e51KpBltxRd8Qk-VRj6EhQ
 
 让Docker更强大的9个安全开源工具
-
-# Actor model
-
-https://elbarco.cn/2017/01/21/introduction-to-actor-model/
-
-并发编程模型之Actor模型
-
-https://www.jianshu.com/p/449850aa8e82
-
-10分钟了解Actor模型
-
-https://www.cnblogs.com/MOBIN/p/7236893.html
-
-Actor模型原理
 

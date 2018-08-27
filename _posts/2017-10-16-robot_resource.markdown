@@ -144,6 +144,10 @@ http://www.ros.org/
 
 ROS(Robot Operating System）是一个机器人软件平台，前身是斯坦福人工智能实验室为了支持斯坦福智能机器人STAIR而建立的项目。
 
+https://blog.csdn.net/yuxuan20062007/
+
+一个无人驾驶的blog
+
 ## 软件
 
 https://github.com/raulmur/ORB_SLAM2

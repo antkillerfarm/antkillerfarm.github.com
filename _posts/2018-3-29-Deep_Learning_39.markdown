@@ -354,11 +354,11 @@ https://mp.weixin.qq.com/s/v23rSjIKyVEAGCN8rEtsfg
 
 https://mp.weixin.qq.com/s/ddR7dwwBZnu3knKmfDWjCg
 
-115页Slides带你领略深度生成模型（Deep Generative Model）全貌
+斯坦福大学PH.D Aditya Grover：115页Slides带你领略深度生成模型（Deep Generative Model）全貌
 
 https://mp.weixin.qq.com/s/QjEShm__Rq0n7n_sdc6GNg
 
-深度概率生成模型—156页普林斯顿教程带你回顾深度生成模型最新发展脉络
+Ryan P.Adams教授：深度概率生成模型—156页普林斯顿教程带你回顾深度生成模型最新发展脉络
 
 https://mp.weixin.qq.com/s/DSHuCNQWKN3pLozZ8i16hQ
 

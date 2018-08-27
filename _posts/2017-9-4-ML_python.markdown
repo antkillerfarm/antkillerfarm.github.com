@@ -38,6 +38,14 @@ https://store.chrisalbon.com/
 
 Chris Albon写的ML卡片书。
 
+https://github.com/CharlesPikachu/Games
+
+一个python制作游戏的示例库，包括使用AI玩游戏（DQN等）
+
+https://github.com/CharlesPikachu/AIGames
+
+上个作者的另一个python+AI+游戏的代码库
+
 ## Anaconda
 
 Anaconda是一个科学计算方面的python发行版，下面提到的所有工具都可以通过Anaconda一站式安装。
@@ -79,6 +87,20 @@ Python多版本切换工具-Pyenv\virtualenv及Anaconda科学计算环境的配�
 http://www.jianshu.com/p/d2e15200ee9b
 
 Anaconda多环境多版本python配置指导
+
+## virtualenv
+
+安装：
+
+`pip3 install virtualenv`
+
+创建env：
+
+`virtualenv --no-site-packages venv`
+
+使用：
+
+`source venv/bin/activate`
 
 ## NumPy
 
