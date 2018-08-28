@@ -350,6 +350,10 @@ https://mp.weixin.qq.com/s/aMarI-nyIvFqhtpJWQrNhQ
 
 谷歌推强化学习新框架“多巴胺“，基于TensorFlow，已开源
 
+https://mp.weixin.qq.com/s/kYOwUWlTP4T0IYKDWDbCsg
+
+tensorflow object detection API训练公开数据集Oxford-IIIT Pets Dataset
+
 # Machine Learning之Python篇
 
 ## 参考（续）
