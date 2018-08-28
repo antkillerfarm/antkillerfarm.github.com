@@ -68,6 +68,10 @@ https://mp.weixin.qq.com/s/KNXD-MpVHQRXYvJKTqn6WA
 
 完善强化学习安全性：UC Berkeley提出约束型策略优化新算法
 
+https://mp.weixin.qq.com/s/AL48Gp4NbGWPrz9I0eBOXA
+
+“房间里的大象“：让目标检测器一脸懵逼
+
 ## 参考
 
 https://mp.weixin.qq.com/s/ZV32xDgGTriIAUbHohc90Q

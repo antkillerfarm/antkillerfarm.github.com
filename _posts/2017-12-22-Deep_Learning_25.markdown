@@ -150,6 +150,14 @@ https://mp.weixin.qq.com/s/vzjKU_0qhapWKOYZ4Rnj-Q
 
 谷歌的机器翻译模型Transformer，现在可以用来做任何事了
 
+https://mp.weixin.qq.com/s/lgGDTCF3qg84njv2IeHC9A
+
+大规模集成Transformer模型，阿里达摩院如何打造WMT 2018机器翻译获胜系统
+
+https://mp.weixin.qq.com/s/_UC2jlOfb34tfB_tsEXjMg
+
+谷歌全新神经网络架构Transformer：基于自注意力机制，擅长自然语言理解
+
 ## 参考
 
 https://blog.csdn.net/mijiaoxiaosan/article/details/73251443

@@ -480,6 +480,14 @@ https://mp.weixin.qq.com/s/23YB5JyULJ1l08OJ7LeaGg
 
 微信小程序30分钟从陌生到熟悉（上）
 
+https://mp.weixin.qq.com/s/sYm-5jo-batq1fwv_tCmQw
+
+微信小程序30分钟从陌生到熟悉（下）
+
+https://mp.weixin.qq.com/s/fEAfuVzfOwKjnTB-mdS5UA
+
+用JS写一个同Excel表现的智能填充算法
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

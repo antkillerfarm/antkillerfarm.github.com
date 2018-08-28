@@ -336,6 +336,8 @@ M：按%MEM排序
 
 注：运行top命令之后，输入相应字符即可切换排序。
 
+除此之外，还有个升级版本的命令htop。
+
 参考：
 
 https://mp.weixin.qq.com/s/8892B95aQZHw4fZhi8iO5A

@@ -346,6 +346,10 @@ https://mp.weixin.qq.com/s/8I5Nvw4t2jT1NR9vIYT5XA
 
 深入理解TensorFlow中的tf.metrics算子
 
+https://mp.weixin.qq.com/s/aMarI-nyIvFqhtpJWQrNhQ
+
+谷歌推强化学习新框架“多巴胺“，基于TensorFlow，已开源
+
 # Machine Learning之Python篇
 
 ## 参考（续）

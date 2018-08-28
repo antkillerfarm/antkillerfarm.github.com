@@ -110,6 +110,10 @@ https://mp.weixin.qq.com/s/sBRqSEKozodG2iA3Iqrpxw
 
 300页文本知识提取与推断最新教程
 
+https://mp.weixin.qq.com/s/mekBRtHcXqbMJiN1CgbgQg
+
+聊天机器人是如何工作的：基于深度学习的对话系统教程 152页PPT
+
 https://www.msra.cn/zh-cn/news/features/ruihua-song-20161226
 
 宋睿华：好玩的文本生成
@@ -401,10 +405,6 @@ https://mp.weixin.qq.com/s/rLFm2J6Bao6H5Qj9Fw0wUg
 https://mp.weixin.qq.com/s/BWg77FZ2IugBhO_HWHpfHw
 
 深度学习在自然语言处理中的应用综述
-
-https://mp.weixin.qq.com/s/_UC2jlOfb34tfB_tsEXjMg
-
-谷歌全新神经网络架构Transformer：基于自注意力机制，擅长自然语言理解
 
 https://mp.weixin.qq.com/s/9HeLayEDTUCy_ACJUV8fYA
 

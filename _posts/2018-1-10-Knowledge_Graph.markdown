@@ -328,6 +328,10 @@ https://mp.weixin.qq.com/s/zusfpa3c2T8mSyRSaXhVLg
 
 健康知识图谱，阿里工程师如何实现？
 
+https://mp.weixin.qq.com/s/dmgfvLUTg14KWqe216kkFg
+
+300页文本知识提取与推断最新教程
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/zXABOzbQRV7sfgAhr_WqZw

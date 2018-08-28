@@ -366,10 +366,6 @@ https://mp.weixin.qq.com/s/4Tj92Mmj2-zOHfk1Tk167w
 
 白翔：复杂开放场景中的文本理解
 
-https://mp.weixin.qq.com/s/lgGDTCF3qg84njv2IeHC9A
-
-大规模集成Transformer模型，阿里达摩院如何打造WMT 2018机器翻译获胜系统
-
 https://mp.weixin.qq.com/s/5toWf90bJeSMGso6HaNTMQ
 
 腾讯提出用于文本匹配的多信道信息交叉模型，在真实任务中表现优异

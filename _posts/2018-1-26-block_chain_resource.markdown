@@ -396,6 +396,10 @@ https://mp.weixin.qq.com/s/ARqiy_zPghf2aKL7PewegQ
 
 雷达的主要战术指标、分类与对抗
 
+https://mp.weixin.qq.com/s/FYDYV0wVxX-h9makD0JEEA
+
+将基于深度学习的检测和识别算法应用到SAR图像智能解译
+
 # NLP参考资源
 
 https://mp.weixin.qq.com/s/pXmYJA6-1vtHTwTNanLovQ

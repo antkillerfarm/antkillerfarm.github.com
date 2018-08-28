@@ -229,6 +229,10 @@ https://jhui.github.io/2017/11/14/Matrix-Capsules-with-EM-routing-Capsule-Networ
 
 “Understanding Matrix capsules with EM Routing (Based on Hinton's Capsule Networks)”
 
+https://zhuanlan.zhihu.com/p/42864711
+
+胶囊网络到底是什么东东？
+
 # 手势识别
 
 https://zhuanlan.zhihu.com/p/26630215

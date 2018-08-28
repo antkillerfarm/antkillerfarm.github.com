@@ -255,6 +255,10 @@ https://mp.weixin.qq.com/s/My6gZIVBVEjjDoQ5IpPKCw
 
 Redis查漏补缺：最易错过的技术要点大扫盲
 
+https://mp.weixin.qq.com/s/T2AmwNTYwTPlB0WbCsy-3g
+
+Redis单线程架构
+
 # Pika
 
 Pika是一个可持久化的大容量redis存储服务，兼容string、hash、list、zset、set的绝大部分接口(兼容详情)，解决redis由于存储数据量巨大而导致内存不够用的容量瓶颈。

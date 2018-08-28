@@ -146,3 +146,7 @@ https://mp.weixin.qq.com/s/c1rSq8vY9fiXjV-WsxLVQw
 
 一文详解深度学习在命名实体识别(NER)中的应用
 
+https://mp.weixin.qq.com/s/Boake8McJdWfoTRLFwxQRA
+
+国防科大登顶SQuAD 2.0排行榜，机器阅读也要“不知为不知”
+
