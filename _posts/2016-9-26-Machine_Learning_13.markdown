@@ -204,7 +204,11 @@ $$M^*=(\overline M)^T=\overline{M^T}$$
 
 https://www.zhihu.com/question/22237507/answer/53804902
 
+奇异值的物理意义是什么？
+
 http://www.ams.org/samplings/feature-column/fcarc-svd
+
+We Recommend a Singular Value Decomposition
 
 ## 奇异值分解
 

@@ -34,10 +34,6 @@ https://mp.weixin.qq.com/s/M4U0RKcFqZKZAiwK5IyOFA
 
 GAN之父Ian Goodfellow在Quora：机器学习十问十答
 
-https://mp.weixin.qq.com/s/PiQB2AvhtDceMJxYN8O8jA
-
-通用卷积神经网络交错组卷积
-
 http://stanford.edu/~rezab/nips2014workshop/slides/jeff.pdf
 
 Techniques and Systems for Training Large Neural Networks Quickly
@@ -109,10 +105,6 @@ DeepXplore：深度学习系统的自动化白盒测试
 https://mp.weixin.qq.com/s/WMpcamrHjUDnYwqyISdooA
 
 斯坦福Jure Leskovec图表示学习：无监督和有监督方法
-
-https://mp.weixin.qq.com/s/X6m4ZHDKY4gC-v0YN5g4YA
-
-谷歌云提出渐进式神经架构搜索：高效搜索高质量CNN结构
 
 https://mp.weixin.qq.com/s/0QyLIvH1McooGLc19hIAHA
 
@@ -310,10 +302,6 @@ https://mp.weixin.qq.com/s/VdZLGE3DU80Ycid1ePIR6w
 
 DIY发现新行星操作指南：谷歌开源了行星发现代码
 
-https://mp.weixin.qq.com/s/2w_Bwqx9C9KwenK480sVMQ
-
-如何可视化卷积网络分类图像时关注的焦点
-
 https://zhuanlan.zhihu.com/p/34286453
 
 林倞：Beyond Supervised Deep Learning--后深度学习时代的挑战
@@ -370,6 +358,18 @@ https://mp.weixin.qq.com/s/_P-4hhd7QiOwrR_uBCPbZg
 
 脑洞大开的机器视觉多领域学习模型结构
 
-https://mp.weixin.qq.com/s/yQG0983RjQHIkt9oBlkDqQ
+https://mp.weixin.qq.com/s/0E4VpN9z2sNvsGCvOI5RVA
 
-瞎谈CNN：通过优化求解输入图像
+稀疏&集成的卷积神经网络学习
+
+https://mp.weixin.qq.com/s/4wMvfnvTaWF10Xq7HqbO-A
+
+稀疏&集成的卷积神经网络学习（续）
+
+https://mp.weixin.qq.com/s/aBDx_602GZXA36awEyjb-A
+
+从深度学习研究论文中自动生成可执行源代码
+
+https://mp.weixin.qq.com/s/xRLXCPF92vT7Gs-NLs2RGA
+
+谷歌、百度等搜索巨头应该从果蝇身上学习什么？专访解读果蝇算法

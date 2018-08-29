@@ -34,6 +34,12 @@ https://sites.google.com/site/vsummsite/
 
 需要翻墙。
 
+## LSTM加速技巧
+
+LSTM的主要运算量集中在$$W[h_{t-1},x_t]$$上，这里实际上可以用$$W[(h_{t-2}+\Delta h_{t-1}),x_t]$$代替。
+
+由于时间序列通常具有惯性，因此$$\Delta h_{t-1}$$一般包含了大量的0，这对于某些具有跳0功能的硬件来说，是非常有利的。
+
 ## IndRNN
 
 https://mp.weixin.qq.com/s/cAqpclkkeVrTiifz07HC1g

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十八）——深度强化学习（2）, Spiking Neuron Networks, 问答系统, CNN进阶
+title:  深度学习（三十八）——深度强化学习（2）, Spiking Neuron Networks, 问答系统
 category: DL 
 ---
 
@@ -388,36 +388,3 @@ https://mp.weixin.qq.com/s/yiAC6SddIFFo3bR351b_0Q
 
 Embodied Question Answering
 
-# CNN进阶
-
-https://mp.weixin.qq.com/s/gwH9s1ggMTj2dJkad9wUuw
-
-从VGG到NASNet，一文概览图像分类网络
-
-https://mp.weixin.qq.com/s/hIAIbpqItS09KDOSFxaeqg
-
-从Inception v1到Inception-ResNet，一文概览Inception家族的“奋斗史”
-
-https://mp.weixin.qq.com/s/r143qYj8bziu_N-27RWRRw
-
-机器学习5年大跃进，可能是个错觉
-
-https://mp.weixin.qq.com/s/pollD4LN_GHJckzJAjwPqg
-
-侧抑制”卷积神经网络，了解一下？
-
-https://mp.weixin.qq.com/s/gil2K-JKzfRqdzc-abnh6A
-
-王井东：深度融合——一种神经网络结构设计模式
-
-https://mp.weixin.qq.com/s/7l0J5LIAawlkCIrUEGG9aA
-
-卷积神经网络“失陷”，CoordConv来填坑
-
-https://mp.weixin.qq.com/s/4GPLeJiQoDfBZJzF4QmuAg
-
-Excel再现人脸识别：CNN用于计算机视觉任务不再神秘
-
-https://mp.weixin.qq.com/s/30_AwwHS0eqfmYwTvRQ85Q
-
-pooling去哪儿了？

@@ -384,3 +384,7 @@ https://mp.weixin.qq.com/s/DLpMVOmkvpWqlHIAZojwog
 
 一文看懂深度学习新王者「AutoML」：是什么、怎么用、未来如何发展？
 
+https://mp.weixin.qq.com/s/X6m4ZHDKY4gC-v0YN5g4YA
+
+谷歌云提出渐进式神经架构搜索：高效搜索高质量CNN结构
+

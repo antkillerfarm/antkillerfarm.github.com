@@ -6,6 +6,27 @@ category: AI
 
 # TensorFlow
 
+https://github.com/indiejoseph/cnn-text-classification-tf-chinese
+
+CNN for Chinese Text Classification in Tensorflow
+
+https://mp.weixin.qq.com/s/yc1ssCzaPzI4UUsl4jl5Yw
+
+用TensorFlow和TensorBoard从零开始构建ConvNet
+
+https://mp.weixin.qq.com/s/hquOoKeeHQXqWcHM6Bkvbw
+
+如何训练一个简单的音频识别网络
+
+https://mp.weixin.qq.com/s/KohwsQQetwjfTj-PXvLjwA
+
+使用MNIST数据集，在TensorFlow上实现基础LSTM网络
+
+http://mp.weixin.qq.com/s/ioaS7RQ6bsJs4_X0G4ZHyQ
+
+如何优雅地用TensorFlow预测时间序列：TFTS库详细教程
+
+
 http://mp.weixin.qq.com/s/hpv6bzr-5VZet-UCHOCQLQ
 
 谷歌TFX：基于TensorFlow可大规模扩展的机器学习平台

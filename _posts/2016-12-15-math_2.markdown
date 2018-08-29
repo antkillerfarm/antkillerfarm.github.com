@@ -44,6 +44,10 @@ https://mp.weixin.qq.com/s/ObYF_kMBvBdz4djdT7G77w
 
 傅立叶变换和拉普拉斯变换的物理解释及区别
 
+https://www.zhihu.com/question/33177784
+
+解微分方程为什么会出现个e？
+
 # 随机变量的特征函数
 
 特征函数是描述随机变量概率分布的重要工具，其定义如下。

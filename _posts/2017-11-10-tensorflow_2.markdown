@@ -184,7 +184,15 @@ https://mp.weixin.qq.com/s/NO_XY-JmTpIkoC-fpkZ-qg
 
 ## 细节
 
-1.执行`session.run(out)`，会在终端打印out的值，但执行`res = session.run(out)`则不会。
+执行`session.run(out)`，会在终端打印out的值，但执行`res = session.run(out)`则不会。
+
+----
+
+tensorflow的程序中,在main函数下,都是使用tf.app.run()来启动。查看源码可知,该函数是用来处理flag解析，然后执行main函数。
+
+https://blog.csdn.net/lujiandong1/article/details/53262612
+
+tensorflow中的tf.app.run()
 
 ## blog
 
@@ -402,22 +410,3 @@ https://mp.weixin.qq.com/s/a68brFJthczgwiFoUBh30A
 
 TensorFlow数据集和估算器介绍
 
-https://github.com/indiejoseph/cnn-text-classification-tf-chinese
-
-CNN for Chinese Text Classification in Tensorflow
-
-https://mp.weixin.qq.com/s/yc1ssCzaPzI4UUsl4jl5Yw
-
-用TensorFlow和TensorBoard从零开始构建ConvNet
-
-https://mp.weixin.qq.com/s/hquOoKeeHQXqWcHM6Bkvbw
-
-如何训练一个简单的音频识别网络
-
-https://mp.weixin.qq.com/s/KohwsQQetwjfTj-PXvLjwA
-
-使用MNIST数据集，在TensorFlow上实现基础LSTM网络
-
-http://mp.weixin.qq.com/s/ioaS7RQ6bsJs4_X0G4ZHyQ
-
-如何优雅地用TensorFlow预测时间序列：TFTS库详细教程

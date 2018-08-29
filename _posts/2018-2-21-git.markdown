@@ -362,6 +362,10 @@ https://mp.weixin.qq.com/s/RccEAl2g6P66RBuvxg9N1w
 
 从Google百度到微博，优酷腾讯到抖音，这些爬虫你用过了吗？
 
+https://mp.weixin.qq.com/s/WDovrR4octHEIOqSEs9pxA
+
+Python爬虫的两套解析方法和四种爬虫实现
+
 # ZeroMQ
 
 ZeroMQ是个在Socket之上，而在MQ之下的网络通信库。正如名称所言，它实际上并不是一个完整的MQ，而仅仅只有MQ的一些子功能罢了。
@@ -420,10 +424,6 @@ https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
 
 谷歌提出多图像抠图算法，并弥补水印技术的一致性漏洞
 
-https://zhuanlan.zhihu.com/p/28639662
-
-百家争鸣的Meta Learning/Learning to learn
-
 https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw
 
 分段映射：帮助利用少量样本习得新类别细粒度分类器
@@ -431,10 +431,6 @@ https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw
 https://mp.weixin.qq.com/s/zTB59Fg_JFg9ZZPRlq9txA
 
 不使用残差连接，ICML新研究靠初始化训练上万层标准CNN
-
-https://mp.weixin.qq.com/s/XqD1iDdqQomYRMXhie_Xqw
-
-2017以来的2D to 3D
 
 https://mp.weixin.qq.com/s/9KOXSic-DellLuaVFjbKeA
 

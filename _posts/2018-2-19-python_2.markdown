@@ -20,6 +20,16 @@ https://mp.weixin.qq.com/s/Q3cqLuOZDSMOdAjVrCDrtQ
 
 在Python 2.7即将停止支持时，我们为你准备了一份3.x迁移指南
 
+## yield
+
+yield就是return返回一个值，并且记住这个返回的位置，下次迭代就从这个位置后(下一行)开始。
+
+参考：
+
+https://www.jianshu.com/p/d09778f4e055
+
+彻底理解Python中的yield
+
 ## tqdm
 
 tqdm是一个快速，可扩展的进度条。
@@ -433,36 +443,4 @@ Python的进阶：copy()与deepcopy()区别
 https://mp.weixin.qq.com/s/VPCUd5op6Vd-b0LbFEMSYQ
 
 秒懂Python编程中的if __name__ == 'main' 的作用和原理
-
-https://mp.weixin.qq.com/s/FtlAkInyXgvUxDnSCikTIw
-
-全面深入理解Python面向对象编程
-
-https://mp.weixin.qq.com/s/_PtdgGElw0mvr_rRm5xrCg
-
-Python性能优化的20条招数
-
-https://mp.weixin.qq.com/s/0Rpbuo7LCRo1SnbE8NcH4Q
-
-快速学习Python的全套14张思维导图
-
-https://mp.weixin.qq.com/s/ODA74xgoS8X1HFxp4BfshQ
-
-如何将Python自然语言处理速度提升100倍：用spaCy/Cython加速NLP
-
-https://mp.weixin.qq.com/s/Cujl2nxITCuZL7B72uKVrQ
-
-为什么Python这么慢？
-
-https://mp.weixin.qq.com/s/a3YTmQMfpnviHnidXrhYtg
-
-这17个骚操作你都Ok吗
-
-https://zhuanlan.zhihu.com/p/41293278
-
-把python翻译成C++
-
-https://mp.weixin.qq.com/s/KCiR6ZE1EpYVfySaCG097A
-
-上半年最常见的Python面试题
 

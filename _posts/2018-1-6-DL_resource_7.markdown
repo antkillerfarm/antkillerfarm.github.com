@@ -142,21 +142,9 @@ http://mp.weixin.qq.com/s/zi1E-O8qHv0NUwkQmXI9Vw
 
 用AlphaGo背后的人工智能做金融投资
 
-http://mp.weixin.qq.com/s/5ozeLeF6IyKTOqAxYEdaog
-
-山东大学提出PointCNN：让CNN更好地处理不规则和无序的点云数据
-
-https://zhuanlan.zhihu.com/p/33445638
-
-传统不死：在CNN中学习和构建空间传播模块
-
 https://mp.weixin.qq.com/s/4LjWHFO0wTP7kqnKf2mdWw
 
 林倞：Beyond Supervised Deep Learning--后深度学习时代的挑战
-
-https://zhuanlan.zhihu.com/p/33485388
-
-mixup与paring samples ，ICLR2018投稿论文的数据增广两种方式
 
 https://zhuanlan.zhihu.com/p/33177237
 
@@ -181,10 +169,6 @@ CMU & Facebook论文解读：非局部神经网络
 https://mp.weixin.qq.com/s/FrcKszax89PvH8YUARt58Q
 
 详解香港中文大学超大规模分类加速算法
-
-https://mp.weixin.qq.com/s/t9ZHW8fkWtnvpM7ynJOTDw
-
-从语义上理解卷积核行为，UCLA朱松纯等人使用决策树量化解释CNN
 
 https://mp.weixin.qq.com/s/Rbc_OOYi2-Y-wyy4j6MsWg
 
@@ -274,18 +258,6 @@ https://mp.weixin.qq.com/s/Jmlia3v5P8UzG-MEuIMULQ
 
 对抗攻击的12种攻击方法和15种防御方法
 
-https://mp.weixin.qq.com/s/_3zTCvUCZea7wwNaWnBUAg
-
-Mixup vs. SamplePairing：ICLR2018投稿论文的两种数据增广方式
-
-https://mp.weixin.qq.com/s/mtocyqpybSEpwekS20xgmQ
-
-使用CNN生成图像先验，实现更广泛场景的盲图像去模糊
-
-https://mp.weixin.qq.com/s/Uc0VFMmYoOFvH0c7IExKIg
-
-何恺明团队计算机视觉最新进展：从特征金字塔网络、Mask R-CNN到学习分割一切
-
 https://mp.weixin.qq.com/s/YpU4rXJ9XGJza9mXeV0NSg
 
 从背景介绍到未来挑战，一文综述移动和无线网络深度学习研究
@@ -321,10 +293,6 @@ Vicarious发表Science论文：概率生成模型超越神经网络
 http://kexue.fm/usr/uploads/2016/06/1002322295.pdf
 
 基于深度学习的图像识别进展：百度的若干实践
-
-https://mp.weixin.qq.com/s/W2DqCjmF3oyPLKeETAO5XA
-
-CNN实现“读脑术”，成功解码人脑视觉活动，准确率超50%
 
 https://mp.weixin.qq.com/s/W92qf_xq2QbtN3PLobrvHQ
 
@@ -389,3 +357,39 @@ https://mp.weixin.qq.com/s/WXVZkqCGlj6ym5YrSZS3Vg
 https://mp.weixin.qq.com/s/54twfwVlM7UQbrFvOAQ2_w
 
 fine-gained image classification
+
+https://mp.weixin.qq.com/s/tjnpIYJGmrTLGUsdtBI2Vw
+
+AI设计师“鹿班”核心技术公开：如何1秒设计8000张海报？
+
+https://mp.weixin.qq.com/s/zeN7rjmAnvh_7BbTmScrZw
+
+细粒度分类你懂吗？——fine-gained image classification
+
+https://mp.weixin.qq.com/s/Ob1ngUEmRgSybcAD5zg0QQ
+
+利用深度学习消去反光
+
+https://mp.weixin.qq.com/s/vamNsEAmAA_3yjQp5ImZNg
+
+XNN：打开了自己黑箱的神经网络
+
+https://mp.weixin.qq.com/s/4mHIM51e9prKvp1xQIDnTA
+
+DeepMind提出对比预测编码，通过预测未来学习高级表征
+
+https://github.com/Alibaba-Technology/hangzhouYunQi2017ppt
+
+2017杭州云栖大会精华PPT
+
+https://mp.weixin.qq.com/s/Opnf5GBxoUqznWuYBb8xaA
+
+清华唐杰AMiner团队全球H-index Top 10000学者半世纪迁移图
+
+https://mp.weixin.qq.com/s/ulLh_JfLa9Os3ZFFAWVETA
+
+谷歌大脑最新研究：高斯过程“超越”随机梯度下降！
+
+https://mp.weixin.qq.com/s/iH7gbRn4opLsWgKWoVFpBA
+
+腾讯优图&港科大提出较大前景运动下的深度高动态范围成像

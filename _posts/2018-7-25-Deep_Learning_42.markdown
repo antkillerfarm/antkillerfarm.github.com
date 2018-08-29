@@ -330,6 +330,10 @@ https://mp.weixin.qq.com/s/ooX9Hj5ejO6po6Ghb4zOug
 
 一文解读合成数据在机器学习技术下的表现
 
+https://zhuanlan.zhihu.com/p/33485388
+
+mixup与paring samples ，ICLR2018投稿论文的数据增广两种方式
+
 # GAN进阶（续）
 
 https://mp.weixin.qq.com/s/c84LMFnIhoDeolc1B4MIVA

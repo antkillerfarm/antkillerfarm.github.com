@@ -48,6 +48,14 @@ KDD2018阿里巴巴论文揭示自家大规模视觉搜索算法
 
 # 图像变换
 
+https://blog.csdn.net/u011534057/article/details/78935202
+
+风格迁移学习笔记(1):Multimodal Transfer: A Hierarchical Deep Convolutional Neural Network for Fast
+
+https://blog.csdn.net/u011534057/article/details/78935230
+
+风格迁移学习笔记(2):Universal Style Transfer via Feature Transforms
+
 https://mp.weixin.qq.com/s/88tBoAVziGEFXIGfvZZp8g
 
 深度学习图像处理项目集锦：生成可爱的动漫头像，骡子变斑马等入选

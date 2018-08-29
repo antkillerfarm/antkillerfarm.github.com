@@ -218,10 +218,6 @@ https://mp.weixin.qq.com/s/LFAnmDec05JPojO3ncdJBw
 
 使用深度学习和树搜索进行从零开始的既快又慢的学习
 
-https://mp.weixin.qq.com/s/31r9FjuJn9yxrZMnfozkMQ
-
-全卷积注意网络的细粒度识别
-
 https://mp.weixin.qq.com/s/r-tl6ooNcQ_j4OFzV-5f3w
 
 计算机视觉这一年
@@ -253,10 +249,6 @@ https://mp.weixin.qq.com/s/BpU2num-p95OTKnG1tAp3w
 https://mp.weixin.qq.com/s/_VC6PGdCjlhcsndpunIteg
 
 何恺明等人提出新型半监督实例分割方法：学习分割Every Thing
-
-https://zhuanlan.zhihu.com/p/31595192
-
-Deep Image Prior：深度卷积网络先天就理解自然图像
 
 https://mp.weixin.qq.com/s/NXA7ymIuk0DaRwhFf0OHqA
 
@@ -310,14 +302,6 @@ https://mp.weixin.qq.com/s/HlqzSdhj3Q3nX4Zl63PM0A
 
 商汤科技23篇论文横扫CVPR
 
-https://mp.weixin.qq.com/s/TelGG-uVQyxwQjiDGE1pqA
-
-特征金字塔网络FPN
-
-https://mp.weixin.qq.com/s/6KC1vhKcyqQ0eZEXJyPqVA
-
-密集连接卷积网络
-
 https://mp.weixin.qq.com/s/4dlWdPOCbYedu02aLAQ04Q
 
 MIT“创世纪”机器学习新系统，自动生成补丁修复Bug
@@ -349,10 +333,6 @@ https://mp.weixin.qq.com/s/ESX-V5oMk35NhP7MKu_d0A
 https://mp.weixin.qq.com/s/2FKgCmQ8i58XamT_plrl1w
 
 深度神经网络为什么不易过拟合？傅立叶分析发现固有频谱偏差
-
-https://mp.weixin.qq.com/s/vUK2NneOs8OR0vcJEZNbrA
-
-田渊栋等人论文：何时卷积滤波器容易学习？
 
 https://mp.weixin.qq.com/s/HP8KLbo26W5UscCGavKDRw
 
