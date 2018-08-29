@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十四）——三维处理, 深度贝叶斯学习, 元学习, CNN进阶
+title:  深度学习（四十四）——三维处理, 元学习, CNN进阶, 视频目标分割
 category: DL 
 ---
 
@@ -109,36 +109,6 @@ https://mp.weixin.qq.com/s/a4A5WCFalH1en0IEM3mu2Q
 https://mp.weixin.qq.com/s/XqD1iDdqQomYRMXhie_Xqw
 
 2017以来的2D to 3D
-
-# 深度贝叶斯学习
-
-https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og
-
-贝叶斯学习与未来人工智能
-
-https://mp.weixin.qq.com/s/Zd4rFU7Lebr4zmzxThNyVw
-
-详解珠算：清华大学开源的贝叶斯深度学习库
-
-https://mp.weixin.qq.com/s/RpaOrngeXTKycLb3iCygZw
-
-利用贝叶斯神经网络进行随机动力系统中的学习与策略搜索
-
-https://mp.weixin.qq.com/s/lKm_ypn5I7tSjoQHceJ0jQ
-
-概率编程：使用贝叶斯神经网络预测金融市场价格
-
-https://mp.weixin.qq.com/s/cDqxmRVQCIqdM5oiUh82YQ
-
-Yee Whye Teh：《贝叶斯深度学习与深度贝叶斯学习》
-
-https://mp.weixin.qq.com/s/Zk2YG-IJNhJxTBU8THSM-g
-
-让DL可解释？这一份66页贝叶斯深度学习教程告诉你
-
-https://mp.weixin.qq.com/s/-izo9VUdxN33pwVFGV_tjw
-
-299页PPT带你回顾深度贝叶斯学习最新发展脉络
 
 # 元学习
 
@@ -304,3 +274,106 @@ https://mp.weixin.qq.com/s/5zt8UIpNBcgNZpwHHJj68Q
 
 光学CNN层替换传统CNN层，超省电
 
+# 视频目标分割
+
+视频目标分割任务和语义分割有两个基本区别：
+
+1.视频目标分割任务分割的是一般的、非语义的目标；
+
+2.视频目标分割添加了一个时序模块：它的任务是在视频的每一连续帧中寻找感兴趣目标的对应像素。
+
+![](/images/article/Segmentation.png)
+
+上图是Segmentation的细分，其中的每一个叶子都有一个示例数据集。
+
+基于视频任务的特性，我们可以将问题分成两个子类：
+
+无监督（亦称作视频显著性检测）：寻找并分割视频中的主要目标。这意味着算法需要自行决定哪个物体才是“主要的”。
+
+半监督：在输入中（只）给出视频第一帧的正确分割掩膜，然后在之后的每一连续帧中分割标注的目标。
+
+参考：
+
+http://mp.weixin.qq.com/s/pGrzmq5aGoLb2uiJRYAXVw
+
+一文概览视频目标分割
+
+https://www.zhihu.com/question/52185576
+
+视频中的目标检测与图像中的目标检测具体有什么区别？
+
+https://mp.weixin.qq.com/s/noljXreGfoMfiZb_n90R3w
+
+模仿人类的印象机制，商汤提出精确实时的视频目标检测方法
+
+http://mp.weixin.qq.com/s/-Av3-ZNi6UGlKNv_jduAeQ
+
+微软新论文：如何利用深度特征流提高视频识别准确率？
+
+https://mp.weixin.qq.com/s/z1APyCxlOEPHn48OeJAHkQ
+
+基于深度学习的视频内容识别
+
+https://mp.weixin.qq.com/s/WMakTEN68KPi7X9kMQetiw
+
+OpenAI:3段视频演示无人驾驶目标检测强大的对抗性样本！
+
+https://mp.weixin.qq.com/s/j5YPHYEPioLiEIDc6lK3kA
+
+在线视频衣物精确检索技术，开启刷剧败明星同款时代
+
+https://mp.weixin.qq.com/s/CXKuSMi0Vd43BGDf5BgoqA
+
+弱监督视频物体识别新方法：香港科技大学联合CMU提出TD-Graph LSTM
+
+https://mp.weixin.qq.com/s/nZVIVJ9z0AWA8VFouNpafg
+
+深度学习之视频摘要简述
+
+https://mp.weixin.qq.com/s/7ccEaDRngVo42OSU6FBlVg
+
+从视频到语句，优必选获TRECVID 2017子任务冠军
+
+https://mp.weixin.qq.com/s/XorPkuIdhRNI1zGLwg-55A
+
+斯坦福新深度学习系统 NoScope：视频对象检测快1000倍
+
+https://mp.weixin.qq.com/s/7w5nYWfZO-YOJ4cA47kQXg
+
+无监督视频物体分割新思路：实例嵌入迁移
+
+https://mp.weixin.qq.com/s/PhMPa-e4sbzqWKmFzRZE4Q
+
+实时替换视频背景：谷歌展示全新移动端分割技术
+
+https://mp.weixin.qq.com/s/ovjoHCcR1xYb9N6kyFJUTg
+
+视频广告段落检测——从一个偏门说计算机视觉的发展历史
+
+https://mp.weixin.qq.com/s/0JgwBizaCwvPP9TfLKTang
+
+密歇根大学&谷歌提出TAL-Net：将Faster R-CNN泛化至视频动作定位中
+
+http://mp.weixin.qq.com/s/LAgDobWyK0SOH08GCLXG7A
+
+减少30%流量，增加清晰度：MIT提出人工智能视频缓存新算法
+
+https://mp.weixin.qq.com/s/_ZmbwM-lmS0o2DjAAc_TWQ
+
+美图云+中科院AAAI2018：视频语义理解的类脑智能NOASSOM
+
+https://mp.weixin.qq.com/s/iqLHjbmLOmvfEeEUB_SqSA
+
+计算机视觉视频理解领域的经典方法和最新成果
+
+https://mp.weixin.qq.com/s/LzKsD_vFlA1n-TYOGJkDZg
+
+商汤科技开源DAVIS2017视频目标分割冠军代码
+
+https://mp.weixin.qq.com/s/FiAju9F_MWexstP7FrIquw
+
+凭一张照片找到视频中你所有的镜头，包括背影
+
+https://mp.weixin.qq.com/s/3H0ZJjnPsh1BzALmG0W7og
+
+DAVIS2017视频目标分割冠军代码开源了

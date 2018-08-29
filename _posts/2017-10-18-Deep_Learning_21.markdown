@@ -152,6 +152,10 @@ https://mp.weixin.qq.com/s/h4Xzt-aS1_-5zjTB0ypTLg
 
 普通视频转高清：10个基于深度学习的超分辨率神经网络
 
+https://mp.weixin.qq.com/s/WmqagSGRy98USgnz21W3Pg
+
+WDSR
+
 # SRCNN
 
 SRCNN（Super-Resolution CNN）是汤晓鸥小组的Chao Dong的作品。

@@ -326,10 +326,6 @@ https://mp.weixin.qq.com/s/UDAcjmCOUdzbXaAgKWOczQ
 
 深度判别和共享特征学习的图像分类
 
-https://mp.weixin.qq.com/s/PtQSktfTpqzWB92jelgbTA
-
-Representation Learning on Network网络表示学习笔记
-
 https://mp.weixin.qq.com/s/8tM3uK9gj5QNdzKEOfq6Wg
 
 模型层面的对偶学习

@@ -102,14 +102,6 @@ https://mp.weixin.qq.com/s/ZlVuVGW_XA_MTgBJhMmqXg
 
 DeepXplore：深度学习系统的自动化白盒测试
 
-https://mp.weixin.qq.com/s/WMpcamrHjUDnYwqyISdooA
-
-斯坦福Jure Leskovec图表示学习：无监督和有监督方法
-
-https://mp.weixin.qq.com/s/0QyLIvH1McooGLc19hIAHA
-
-预测你的下一步-动态网络节点表示学习
-
 https://mp.weixin.qq.com/s/PhaDqX3OT-mqyFHohDMfdA
 
 从Pix2Code到CycleGAN：2017年深度学习重大研究进展全解读
@@ -281,10 +273,6 @@ https://mp.weixin.qq.com/s/gA_qtlZg8zCkLqndkb3YJw
 https://mp.weixin.qq.com/s/eIy73UmlsCs7n2fmiEmACw
 
 斯坦福论文提出MoleculeNet：分子机器学习新基准
-
-https://mp.weixin.qq.com/s/QW7t7iaIN1yaHYzOtwgYAQ
-
-Representation Learning on Network网络表示学习
 
 http://mp.weixin.qq.com/s/D2Nw3oKF2DYgMZysmi_ysg
 
