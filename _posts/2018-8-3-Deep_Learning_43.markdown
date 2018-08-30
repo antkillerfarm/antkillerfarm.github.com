@@ -204,6 +204,10 @@ https://mp.weixin.qq.com/s/rt4uuqh8IrZTjsYXEZvxKQ
 
 阿里提出全新风格化自编码GAN，图像生成更逼真！
 
+https://mp.weixin.qq.com/s/VFq3BWLpzyKZ3sqVWf1HKA
+
+从换脸到换姿势，AI 在图像处理的道路上越走越魔幻
+
 # Attention进阶
 
 https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA

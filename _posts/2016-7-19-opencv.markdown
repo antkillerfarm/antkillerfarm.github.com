@@ -420,6 +420,10 @@ https://www.jianshu.com/p/53982e81d781
 
 OpenCV十字激光中心与端点识别
 
+https://mp.weixin.qq.com/s/N4mRrQ4180qM2tuq5smK8w
+
+如何识别出轮廓准确的长和宽
+
 # CCV
 
 CCV是一个C语言的CV库。

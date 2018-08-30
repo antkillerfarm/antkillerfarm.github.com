@@ -300,6 +300,10 @@ https://mp.weixin.qq.com/s/ZQqcsJenqkXtH1czOe5WnA
 
 阿里巴巴提出Auto-Context R-CNN算法，刷出Faster RCNN目标检测新高度
 
+https://mp.weixin.qq.com/s/aLYQepnr_BjS27Fb-zoZ_g
+
+迈向完全可学习的物体检测器：可学习区域特征提取方法
+
 # 数据增强
 
 https://mp.weixin.qq.com/s/GqPfvWwH1T0XFwiZ86cW8A
