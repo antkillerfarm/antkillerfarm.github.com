@@ -402,6 +402,10 @@ https://mp.weixin.qq.com/s/0m5DuJzh92aYUgdiQ3PfIg
 
 数据竞赛大杀器之模型融合(stacking & blending)
 
+https://mp.weixin.qq.com/s/lJQprqGShGys3vfhYSxDWg
+
+机器学习在股票交易中难点分析
+
 # 垃圾筐
 
 http://www.matrix67.com/

@@ -38,6 +38,10 @@ https://mp.weixin.qq.com/s/-EU4jTElNll9MQomjuqFXA
 
 姿态估计相比Mask-RCNN提高8.2%，上海交大卢策吾团队开源AlphaPose
 
+https://zhuanlan.zhihu.com/p/37526892
+
+OpenPose：实时多人2D姿态估计
+
 ## DensePose
 
 与OpenPose类似的还有Facebook提出的DensePose。

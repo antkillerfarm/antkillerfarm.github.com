@@ -248,3 +248,17 @@ https://blog.csdn.net/xxboy61/article/details/38319757
 
 OpenCV实现之模板匹配(Template Matching)
 
+# CG/CV参考资源
+
+https://www.cnblogs.com/mengdd/p/3237991.html
+
+图形学理论知识BRDF双向反射分布函数（Bidirectional Reflectance Distribution Function）
+
+https://zhuanlan.zhihu.com/p/31921046
+
+深度相机的主流技术方案一览Structure Light，ToF，Stereo Dual
+
+https://zhuanlan.zhihu.com/p/32752535
+
+立体匹配成像算法BM，SGBM，GC，SAD一览
+

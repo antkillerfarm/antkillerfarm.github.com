@@ -243,6 +243,10 @@ http://www.cnblogs.com/jerrylead/archive/2011/04/21/2024389.html
 
 线性判别分析（Linear Discriminant Analysis）（二）
 
+https://mp.weixin.qq.com/s/AeLwfmM0N-b1dfxt3v4C-A
+
+教科书上的LDA为什么长这样？
+
 # t-SNE
 
 ## 概述

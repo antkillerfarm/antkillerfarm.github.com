@@ -30,6 +30,72 @@ https://www.jianshu.com/p/d09778f4e055
 
 彻底理解Python中的yield
 
+## with
+
+Python的with语句允许我们非常方便地使用资源，而不必担心资源没有关闭。例如：
+
+{% highlight python %}
+with open('/path/to/file', 'r') as f:
+    f.read()
+{% endhighlight %}
+
+任何对象，只要正确实现了上下文管理，就可以用于with语句。
+
+实现上下文管理是通过__enter__和__exit__这两个方法实现的：
+
+{% highlight python %}
+class Query(object):
+
+    def __init__(self, name):
+        self.name = name
+
+    def __enter__(self):
+        print('Begin')
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        if exc_type:
+            print('Error')
+        else:
+            print('End')
+
+    def query(self):
+        print('Query info about %s...' % self.name)
+{% endhighlight %}
+
+编写__enter__和__exit__仍然很繁琐，因此Python的标准库contextlib提供了更简单的写法：
+
+{% highlight python %}
+from contextlib import contextmanager
+
+@contextmanager
+def tag(name):
+    print("<%s>" % name)
+    yield
+    print("</%s>" % name)
+
+with tag("h1"):
+    print("hello")
+    print("world")
+{% endhighlight %}
+
+上述代码执行结果为：
+
+{% highlight text %}
+<h1>
+hello
+world
+</h1>
+{% endhighlight %}
+
+with语句首先执行yield之前的语句，因此打印出<h1>；yield调用会执行with语句内部的所有语句，因此打印出hello和world；最后执行yield之后的语句，打印出</h1>。
+
+参考：
+
+https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001478651770626de401ff1c0d94f379774cabd842222ff000
+
+contextlib
+
 ## tqdm
 
 tqdm是一个快速，可扩展的进度条。
@@ -379,68 +445,4 @@ https://mp.weixin.qq.com/s/xCKC3cz7jUvrwl4uvMNKTA
 https://mp.weixin.qq.com/s/HGH2e_0ocHv2VWsjOje9BQ
 
 程序员必知的Python陷阱与缺陷列表
-
-http://blog.csdn.net/linda1000/article/details/8315892
-
-单引号、双引号和三双引号的区别
-
-https://mp.weixin.qq.com/s/czqO4Lo1Jt9zqg2UKNlLYg
-
-手把手教你用Python创建微信聊天机器人
-
-https://mp.weixin.qq.com/s/wIXCIMzZmh75SV-qJIKbCw
-
-Python程序员最常犯的10个错误，你中招了吗？
-
-https://mp.weixin.qq.com/s/W1j4G_QQqlzDYru231dZFA
-
-Python：编写条件分支代码的技巧
-
-http://www.cnblogs.com/Python666/p/7506546.html
-
-Python单例模式
-
-https://mp.weixin.qq.com/s/ST7TQ5Wkn_owv5bpTiTKVA
-
-2018年最好用的5个python网站开发框架
-
-https://mp.weixin.qq.com/s/3nr8uHnRoSgs-Zu6QxGiqw
-
-Python实现数据库一键导出为Excel表格！大大的增加了工作效率！
-
-https://mp.weixin.qq.com/s/dmJI2GlzgUJgYllfVOPt4g
-
-两句话轻松掌握Python最难知识点
-
-https://mp.weixin.qq.com/s/PkzD1ig_D5AIUTkO5zH8pQ
-
-Python字节码介绍
-
-https://mp.weixin.qq.com/s/_ZvF6jK5Jo4rFGwHvEoAig
-
-一文读懂Python装饰器由来
-
-https://mp.weixin.qq.com/s/RdnAQPAn9E8qDvtnCEgcKw
-
-Tkinter可视化窗口
-
-https://mp.weixin.qq.com/s/_fi4fpfN8Whe7_ZpkPL0tA
-
-怎么给Python写C扩展？
-
-https://mp.weixin.qq.com/s/-erFsz8NvLZ5mOIXyDosFg
-
-使用PyInstaller将python转成可执行文件exe笔记
-
-https://mp.weixin.qq.com/s/b19SLduKoiOIeE5CA3ZOjg
-
-Python标准库之LRU缓存实现学习
-
-https://mp.weixin.qq.com/s/0jjJrclscaA5LkdhHUNkUg
-
-Python的进阶：copy()与deepcopy()区别
-
-https://mp.weixin.qq.com/s/VPCUd5op6Vd-b0LbFEMSYQ
-
-秒懂Python编程中的if __name__ == 'main' 的作用和原理
 

@@ -6,6 +6,10 @@ category: DL
 
 # 三维处理
 
+https://mp.weixin.qq.com/s/pMhNgAdnfN8wnPKV-aw3hg
+
+基于图像的三维建模参考资料
+
 https://mp.weixin.qq.com/s/wHIT2pm_5O4MOR_QLpHVLQ
 
 PRNet：人脸3D重建与密集对齐
