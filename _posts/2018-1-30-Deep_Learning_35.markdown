@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十五）——姿态/行为检测, 深度目标跟踪, Mask R-CNN, DNC, Graph NN
+title:  深度学习（三十五）——姿态/行为检测, 深度目标跟踪, Mask R-CNN, DNC
 category: DL 
 ---
 
@@ -179,6 +179,10 @@ https://mp.weixin.qq.com/s/UvwUu0cwpk_gvMmBGX1vfQ
 https://mp.weixin.qq.com/s/7YzkgpXRCgYqguTng4nf7g
 
 超越CycleGAN：这个人体动态迁移技术让白痴变舞王
+
+https://mp.weixin.qq.com/s/naD6hVwDg3QSA76sXy2GZA
+
+上海交通大学CVPR Spotlight论文：利用形态相似性生成人体部位解析数据
 
 # 深度目标跟踪
 
@@ -394,72 +398,3 @@ https://zhuanlan.zhihu.com/p/28433712
 
 DNC4广义线性回归
 
-# Graph NN
-
-https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
-
-Bengio等人提出图注意网络架构GAT，可处理复杂结构图
-
-https://zhuanlan.zhihu.com/p/34232818
-
-《Graph Attention Networks》阅读笔记
-
-https://zhuanlan.zhihu.com/p/28170197
-
-《Gated Graph Sequence Neural Networks》阅读笔记
-
-https://mp.weixin.qq.com/s/Pm1HiEQOBnbo_GQ_v6Y_zw
-
-腾讯提出自适应图卷积神经网络，接受不同图结构和规模的数据
-
-https://mp.weixin.qq.com/s/bMpugd2Lp35VPr8fQAPzsg
-
-一文概览图卷积网络基本结构和最新进展
-
-https://zhuanlan.zhihu.com/p/31067515
-
-《Semi-Supervised Classification with Graph Convolutional Networks》阅读笔记
-
-https://mp.weixin.qq.com/s/6viSk0Ts_7eTfYrWYi_HDQ
-
-基于图结构的实体和关系联合抽取模型简介
-
-https://mp.weixin.qq.com/s/w5ldyp00CqkX8Kp-8Aw0nQ
-
-图深度学习(GraphDL)，下一个人工智能算法热点？一文了解最新GDL相关文章
-
-https://mp.weixin.qq.com/s/Jt6CjMqNFEXWoL5pkLeVyw
-
-洛桑理工：Graph上的深度学习报告
-
-https://zhuanlan.zhihu.com/p/36117802
-
-《Learn to Represent Programs with Graphs》阅读笔记。这篇论文讲述了DL在程序代码纠错方面的应用。
-
-https://zhuanlan.zhihu.com/p/37278426
-
-Graph2Seq: Graph to Sequence Learning with Attention-based Neural Networks
-
-https://mp.weixin.qq.com/s/iQYVyo2PHuGbEsYgdIf_oQ
-
-DeepMind等机构提出“图网络”：面向关系推理
-
-https://mp.weixin.qq.com/s/TAccHagxXQ82lfE91Y6xWg
-
-CNN已老，GNN来了：重磅论文讲述深度学习的因果推理
-
-https://mp.weixin.qq.com/s/UONtTJJgDawRPWtatAVKkg
-
-如何利用高效的搜索算法来搜索网络的拓扑结构
-
-https://mp.weixin.qq.com/s/lt9lZbulkW0C8A_xi6hodQ
-
-浅析图卷积神经网络
-
-https://mp.weixin.qq.com/s/SGCtwYWfnxjcpMJeeH1b4w
-
-图神经网络+池化模块，斯坦福等提出层级图表征学习
-
-https://mp.weixin.qq.com/s/DOau_vTbwCauQ8mrHkGu9Q
-
-首个面向Facebook、arXiv网络图类的对抗攻击研究

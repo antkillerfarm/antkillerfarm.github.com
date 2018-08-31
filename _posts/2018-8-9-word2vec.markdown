@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  word2vec, LSTM Speech Recognition实战
+title:  word2vec, LSTM Speech Recognition实战, 图数据库
 category: AI 
 ---
 
@@ -261,6 +261,66 @@ https://github.com/jasonish/jetty-springmvc-jsp-template
 
 一个Jetty+Spring MVC+JSP的demo。
 
+# 图数据库
+
+## Neo4j
+
+Neo4j大概算是最著名的图数据库了，它具有成熟和健壮的数据库的所有特性。相对于关系数据库来说，图数据库（Graph Database）善于处理大量复杂、互连接、低结构化的数据，这些数据变化迅速，需要频繁的查询——在关系数据库中，这些查询会导致大量的表连接，因此会产生性能上的问题。
+
+官网：
+
+https://neo4j.com/
+
+参考：
+
+http://blog.csdn.net/xingxiupaioxue/article/details/71747284
+
+如何将大规模数据导入Neo4j
+
+https://mp.weixin.qq.com/s/_Zm88TyBcXAZ4LeQOuJCHA
+
+管理neo4j的用户
+
+https://mp.weixin.qq.com/s/dzPZTqUhWKIiKj2o7OkMbA
+
+Neo4j的python操作库Neo4j-Driver
+
+https://mp.weixin.qq.com/s/mupuyM7m_41eOzQc7LGRRw
+
+Neo4j的python操作库Neomodel
+
+## neo4j-graph-algorithms
+
+Neo4j Graph Algorithms扩展包，是一个关于图算法的jar包，集成了一些常见的图算法，比如社区发现，路径扩展，中心点计算，PageRank等。
+
+代码：
+
+https://github.com/neo4j-contrib/neo4j-graph-algorithms
+
+## openCypher
+
+openCypher是基于Neo4j的查询语言Cypher开发的，Cypher用于在图数据库中存储和检索数据。在图数据库领域，目前还没有像关系数据库中访问数据的SQL这样的通用查询语言标准。
+
+openCypher的目标是通过简化存储、分析，以及用于访问图数据模型的工具平台，促进图处理和分析的使用。技术厂商可以在他们的工具和平台内实现Cypher。
+
+官网：
+
+http://www.opencypher.org/
+
+## RedisGraph
+
+RedisGraph是Redis推出的基于Redis的图数据库。
+
+官网：
+
+http://redisgraph.io/
+
+参考：
+
+https://mp.weixin.qq.com/s/BzQBy6AoMXXpjsdGyXh1zA
+
+揭秘RedisGraph: Redis内嵌高性能内存图数据库
+
 # 大数据平台参考资源
 
 https://mp.weixin.qq.com/s/syM4ReAWpZ5d4KI87ogpiQ
@@ -311,49 +371,6 @@ https://mp.weixin.qq.com/s/qmTJ6d0VtfqvIYJzRUMvsw
 
 互联网账户系统如何设计（上篇）
 
-# DL参考资源
+https://mp.weixin.qq.com/s/NV5sYF15Q-016sfxRMEVmg
 
-https://mp.weixin.qq.com/s/naD6hVwDg3QSA76sXy2GZA
-
-上海交通大学CVPR Spotlight论文：利用形态相似性生成人体部位解析数据
-
-https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
-
-北大：一种基于新闻特征抽取和循环神经网络的股票预测方法
-
-https://mp.weixin.qq.com/s/UboQNEywHSBAYc0740qmzQ
-
-让机器学会创造新的概念：DeepMind提出符号-概念关联网络SCAN
-
-https://mp.weixin.qq.com/s/AAmQymWdKQDeL8DQacEZ3A
-
-用深度学习解决Bongard问题
-
-https://mp.weixin.qq.com/s/210l9K94KMqtJtqbrZ-mgg
-
-打开黑箱重要一步，MIT提出TbD-net，弥合视觉推理模型的性能与可解释性鸿沟
-
-https://mp.weixin.qq.com/s/E5VpBt53VTjOxt8wE3SrLA
-
-工程师如何解决穿衣搭配烦恼？
-
-https://mp.weixin.qq.com/s/fPj4wMtiFX55c_UjNsQnBg
-
-PointCNN全面刷新测试记录：山东大学提出通用点云卷积框架
-
-https://mp.weixin.qq.com/s/tzAp6PxAn3GszcttRzfz8Q
-
-CMU提出新型智能体定位方法：“主动神经定位器”
-
-https://mp.weixin.qq.com/s/_1rKAj-KOs4P8WnKzen64w
-
-传统方法已经Out了？OpenAI提出全新辩论模式训练AI
-
-https://mp.weixin.qq.com/s/Mk_EkwTYK2141cU9zC1hvQ
-
-合成逼真图像，试试港中大&英特尔的半参数方法
-
-https://zhuanlan.zhihu.com/p/36527644
-
-Learning with Noise: Enhance Distantly Supervised Relation Extraction with Dynamic Transition Matrix——一种对噪音数据显式建模的方法
-
+浅谈高并发系统性能调优

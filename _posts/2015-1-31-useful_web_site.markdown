@@ -252,14 +252,6 @@ http://chrome.360.cn/test/html5/index.html
 
 一个用于检测浏览器对html 5支持情况的网页
 
-https://mp.weixin.qq.com/s/h-vgHkzLjh9AAa6Z0lZqlg
-
-基于物理渲染(PBR)的车漆技术
-
-https://zhuanlan.zhihu.com/p/32095589
-
-在《硬影像》与罗登老师/导演聊渲染技术
-
 https://www.codewar.cn/
 
 CodeCombat是一个让学生通过玩游戏学习计算机科学的平台
@@ -372,18 +364,6 @@ https://mp.weixin.qq.com/s/jQ6fEi_K2RSesJxZn_kujg
 
 外部排序
 
-https://mp.weixin.qq.com/s/DDk5YZv9Q7CaqdiKvQxZGQ
-
-从理论到实践，全方位认识DNS（理论篇）
-
-https://mp.weixin.qq.com/s/rZU35kVTXs5ebf7k6lnheQ
-
-从理论到实践，全方位认识DNS（实践篇）
-
-https://mp.weixin.qq.com/s/iN8NQd8SuWL4gCWhRbY6tg
-
-图解基于HTTPS的DNS
-
 https://mp.weixin.qq.com/s/TL87BY3DdP1bolc0Sxkahg
 
 gRPC客户端创建和调用原理解析
@@ -395,30 +375,6 @@ https://mp.weixin.qq.com/s/agS2-wu6HGO__QfbIt7Esw
 https://mp.weixin.qq.com/s/bk22ljMgODKSfZxibic0rw
 
 这是你见过最简单的 “算法说明书”
-
-https://mp.weixin.qq.com/s/C68icGtwh3IzuUbANaRXEg
-
-也许，这样理解HTTPS更容易
-
-https://mp.weixin.qq.com/s/ewI7sHDFj1AHaNAtBDM8uA
-
-HTTPS到底加密了什么？
-
-https://mp.weixin.qq.com/s/CP_Egs4LUx7I8BXSqrS_dQ
-
-互联网协议入门（一）
-
-https://mp.weixin.qq.com/s/zU1Mw3yaNmk4D5pP9vxxaw
-
-TCP三次握手和SYN攻击
-
-https://mp.weixin.qq.com/s/3VqdjEK4QkER4Q05JgfjhQ
-
-详解TCP之滑动窗口
-
-https://mp.weixin.qq.com/s/yH3PzGEFopbpA-jw4MythQ
-
-TCP三次握手原理，你真的理解吗？
 
 https://mp.weixin.qq.com/s/D-XvKCSUCzMGcEz_xWTwqg
 
@@ -435,10 +391,6 @@ Go调度程序：Ms，Ps&Gs
 https://mp.weixin.qq.com/s/mUhPHycvLSYYkBQSfIgIdA
 
 Channels In Go
-
-https://blog.csdn.net/jaccen2012/article/details/80328043
-
-跨平台渲染引擎简介
 
 https://mp.weixin.qq.com/s/9YXsJo_u2zVNqvABoGqfqg
 
@@ -464,10 +416,6 @@ http://phdcomics.com/
 
 一个关于博士学习生活的漫画网站
 
-https://mp.weixin.qq.com/s/_bWOYpZNjA4p7ZWM1J_4mw
-
-通信协议之序列化
-
 https://mp.weixin.qq.com/s/OJJLY5DiCa0e3UVjPtLXmw
 
 PPT中帅气的文字云，该怎么用？
@@ -487,6 +435,10 @@ https://mp.weixin.qq.com/s/sYm-5jo-batq1fwv_tCmQw
 https://mp.weixin.qq.com/s/fEAfuVzfOwKjnTB-mdS5UA
 
 用JS写一个同Excel表现的智能填充算法
+
+https://mp.weixin.qq.com/s/VgJSMN0mkfEerhWpWpEFbg
+
+一个42KB的文件，解压完其实是个4.5PB的“炸弹”
 
 ## 有用的blog
 

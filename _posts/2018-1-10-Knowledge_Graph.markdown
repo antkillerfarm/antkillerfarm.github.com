@@ -332,6 +332,14 @@ https://mp.weixin.qq.com/s/dmgfvLUTg14KWqe216kkFg
 
 300页文本知识提取与推断最新教程
 
+https://mp.weixin.qq.com/s/8M4MyZ-EUKfGkuqzkuvYgw
+
+金融知识图谱搭建全攻略
+
+https://mp.weixin.qq.com/s/RoiIHPCV3vXAH_sUHhTOYw
+
+为电商而生的知识图谱，如何感应用户需求？
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/zXABOzbQRV7sfgAhr_WqZw

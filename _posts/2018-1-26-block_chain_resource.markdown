@@ -250,6 +250,22 @@ https://www.jianshu.com/p/4ec47871973c
 
 Path Tracing介绍
 
+https://mp.weixin.qq.com/s/h-vgHkzLjh9AAa6Z0lZqlg
+
+基于物理渲染(PBR)的车漆技术
+
+https://zhuanlan.zhihu.com/p/32095589
+
+在《硬影像》与罗登老师/导演聊渲染技术
+
+https://blog.csdn.net/jaccen2012/article/details/80328043
+
+跨平台渲染引擎简介
+
+https://www.cnblogs.com/mengdd/p/3237991.html
+
+图形学理论知识BRDF双向反射分布函数（Bidirectional Reflectance Distribution Function）
+
 # 雷达
 
 https://mp.weixin.qq.com/s/zDcbrZeK4tlO0jA3-s_lYg
@@ -399,54 +415,4 @@ https://mp.weixin.qq.com/s/ARqiy_zPghf2aKL7PewegQ
 https://mp.weixin.qq.com/s/FYDYV0wVxX-h9makD0JEEA
 
 将基于深度学习的检测和识别算法应用到SAR图像智能解译
-
-# NLP参考资源
-
-https://mp.weixin.qq.com/s/pXmYJA6-1vtHTwTNanLovQ
-
-Encoder-Decoder自动生成对联，要试试么？
-
-https://mp.weixin.qq.com/s/_SfY-JZsUEKReSoI6qHg9w
-
-TA-NMT：利用大语种语料，提升小语种神经机器翻译能力
-
-https://mp.weixin.qq.com/s/6_FHq8IrkAW_Y5FSYcJ0fw
-
-CMU与谷歌大脑联合出品：62页PPT带你理解SQuAD大赛冠军--QANet
-
-https://mp.weixin.qq.com/s/uL7J5cSU3P7QsFczvT1fTA
-
-基于深度学习的文本分类6大算法-原理、结构、论文、源码打包分享
-
-https://mp.weixin.qq.com/s/uWMGJmiEfahRql1sn1B0hA
-
-通过全新学习和推断机制提升seq2seq模型的语法改错性能
-
-https://mp.weixin.qq.com/s/_O4YqFK2xkFuB4nTbcu1cw
-
-哈佛NLP组论文解读：基于隐变量的注意力模型
-
-https://mp.weixin.qq.com/s/6BIspcIQrn7k3VQ9NP63Ng
-
-DeepMind提出空间语言集成模型SLIM，有效编码自然语言的空间关系
-
-https://mp.weixin.qq.com/s/eehpqW2H3wWCOa6r8jbEvQ
-
-ACL 2018 鲁棒、无偏的NLP训练方法
-
-https://mp.weixin.qq.com/s/ffuiRE0qbglhVz__Z6FD7A
-
-这里可能是对机器智能中的文本情感计算最全面的概括了
-
-https://mp.weixin.qq.com/s/S6qSU6CGUMsqYaIPCEVhxA
-
-剖析CNN句子分类任务
-
-https://mp.weixin.qq.com/s/e6YXItElVa5iaY8Txi8wzA
-
-NAACL2018tutorial深度学习在智能对话系统中应用
-
-https://mp.weixin.qq.com/s/29vqbjnTkHsq2Fv9ZyMOVQ
-
-COLING 2018 基于目标依赖财经文档表示学习的累积超额收益预测
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十六）——深度推荐系统, Recursive NN, AutoDL
+title:  深度学习（三十六）——深度推荐系统, Recursive NN
 category: DL 
 ---
 
@@ -301,90 +301,4 @@ http://blog.csdn.net/qq_26609915/article/details/52119512
 http://blog.csdn.net/mengmengz07/article/details/51348554
 
 recursive neural network梳理
-
-# AutoDL
-
-DL领域目前存在的主要问题之一是：如何设计网络结构和调整超参数。目前的做法，通常依赖于作者的直觉，属于典型的拍脑袋想点子。
-
-既然AI已经能够做很多事了，那么有没有可能，使用AI自动生成网络结构呢？
-
-Google的这两篇论文在这里做了一些尝试：
-
-《Neural Architecture Search With Reinforcement Learning》
-
-《Learning Transferable Architectures for Scalable Image Recognition》
-
-这里主要采用强化学习的方法，在一个广阔的搜索空间中，寻找最合适的网络结构。但对于计算能力提出了很高的要求。论文中提到，他们使用了500块GPU。**有钱真的是可以为所欲为的。**
-
-这里学到的模型，一般被称为NASNet。
-
-参考：
-
-https://mp.weixin.qq.com/s/Ia-8qFLAyY65Nai5PGAw0w
-
-人人都能用的深度学习：当前三大自动化深度学习平台简介
-
-http://blog.csdn.net/u014380165/article/details/78525687
-
-自学网络结构（二）：Learning Transferable Architectures for Scalable Image Recognition
-
-http://blog.csdn.net/u014380165/article/details/78525500
-
-自学网络结构（一）：Neural Architecture Search With Reinforcement Learning
-
-https://www.zhihu.com/question/67477086
-
-如何评价Google最新的论文NASNet？
-
-https://mp.weixin.qq.com/s/MkXBtGq4xt5YOh1-uhMBbg
-
-循环神经网络自动生成程序：谷歌大脑提出“优先级队列训练”
-
-https://mp.weixin.qq.com/s/D0HngY-U7_fP4vqDIjvaew
-
-自动选模型+调参：谷歌AutoML背后的技术解析
-
-https://mp.weixin.qq.com/s/vctbsYk4LRwrQ7_Hs7fqkg
-
-谷歌大脑发布神经架构搜索新方法：提速1000倍
-
-https://mp.weixin.qq.com/s/tWO1Qv1aoemC8nHvJXZyeA
-
-清华大学张长水教授：神经网络模型的结构优化
-
-https://mp.weixin.qq.com/s/9qpZUVoEzWaY8zILc3Pl1A
-
-进化算法+AutoML，谷歌提出新型神经网络架构搜索方法
-
-https://mp.weixin.qq.com/s/HJ5caV1bQi7qVDeNXZ21qg
-
-手把手教你用Cloud AutoML做毒蜘蛛分类器
-
-https://zhuanlan.zhihu.com/p/35050923
-
-跬步至千里：揭秘谷歌AutoML背后的渐进式搜索技术
-
-https://mp.weixin.qq.com/s/bjVTpdaKFx4fFtT8BjMNew
-
-指数级加速架构搜索：CMU提出基于梯度下降的可微架构搜索方法
-
-https://mp.weixin.qq.com/s/wGt3Xk_ARqHei-ddU9iXNg
-
-算力节省240倍！上交大、MIT新方法低成本达到谷歌AutoML性能
-
-https://mp.weixin.qq.com/s/pXskwKkzCtgIuNtgFVF_wg
-
-ImageNet分类精度再创新高！李飞飞组ECCV Oral提出全新渐进式神经结构搜索
-
-https://mp.weixin.qq.com/s/GLiOZjqC9DSvGEX3xqbHJg
-
-鸡生蛋与蛋生鸡，纵览神经架构搜索方法
-
-https://mp.weixin.qq.com/s/DLpMVOmkvpWqlHIAZojwog
-
-一文看懂深度学习新王者「AutoML」：是什么、怎么用、未来如何发展？
-
-https://mp.weixin.qq.com/s/X6m4ZHDKY4gC-v0YN5g4YA
-
-谷歌云提出渐进式神经架构搜索：高效搜索高质量CNN结构
 

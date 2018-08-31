@@ -180,6 +180,10 @@ https://zhuanlan.zhihu.com/SemanticSegmentation
 
 一个语义分割的专栏
 
+https://mp.weixin.qq.com/s/zZ-i54_wqzVQxTCFABNIMQ
+
+闲聊图像分割这件事儿
+
 https://zhuanlan.zhihu.com/p/22308032
 
 图像语义分割之FCN和CRF

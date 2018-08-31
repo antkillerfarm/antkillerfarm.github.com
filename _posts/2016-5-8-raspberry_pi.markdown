@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Raspberry Pi, UPNP（二）, 图数据库
+title:  Raspberry Pi, UPNP（二）
 category: technology 
 ---
 
@@ -241,58 +241,45 @@ https://sourceforge.net/projects/libmcupnp/
 
 https://wiki.gnome.org/Projects/GUPnP
 
-# 图数据库
+# 通信协议
 
-## Neo4j
+https://mp.weixin.qq.com/s/_bWOYpZNjA4p7ZWM1J_4mw
 
-Neo4j大概算是最著名的图数据库了，它具有成熟和健壮的数据库的所有特性。相对于关系数据库来说，图数据库（Graph Database）善于处理大量复杂、互连接、低结构化的数据，这些数据变化迅速，需要频繁的查询——在关系数据库中，这些查询会导致大量的表连接，因此会产生性能上的问题。
+通信协议之序列化
 
-官网：
+https://mp.weixin.qq.com/s/C68icGtwh3IzuUbANaRXEg
 
-https://neo4j.com/
+也许，这样理解HTTPS更容易
 
-参考：
+https://mp.weixin.qq.com/s/ewI7sHDFj1AHaNAtBDM8uA
 
-http://blog.csdn.net/xingxiupaioxue/article/details/71747284
+HTTPS到底加密了什么？
 
-如何将大规模数据导入Neo4j
+https://mp.weixin.qq.com/s/CP_Egs4LUx7I8BXSqrS_dQ
 
-https://mp.weixin.qq.com/s/_Zm88TyBcXAZ4LeQOuJCHA
+互联网协议入门（一）
 
-管理neo4j的用户
+https://mp.weixin.qq.com/s/zU1Mw3yaNmk4D5pP9vxxaw
 
-https://mp.weixin.qq.com/s/dzPZTqUhWKIiKj2o7OkMbA
+TCP三次握手和SYN攻击
 
-Neo4j的python操作库Neo4j-Driver
+https://mp.weixin.qq.com/s/3VqdjEK4QkER4Q05JgfjhQ
 
-## neo4j-graph-algorithms
+详解TCP之滑动窗口
 
-Neo4j Graph Algorithms扩展包，是一个关于图算法的jar包，集成了一些常见的图算法，比如社区发现，路径扩展，中心点计算，PageRank等。
+https://mp.weixin.qq.com/s/yH3PzGEFopbpA-jw4MythQ
 
-代码：
+TCP三次握手原理，你真的理解吗？
 
-https://github.com/neo4j-contrib/neo4j-graph-algorithms
+https://mp.weixin.qq.com/s/DDk5YZv9Q7CaqdiKvQxZGQ
 
-## openCypher
+从理论到实践，全方位认识DNS（理论篇）
 
-openCypher是基于Neo4j的查询语言Cypher开发的，Cypher用于在图数据库中存储和检索数据。在图数据库领域，目前还没有像关系数据库中访问数据的SQL这样的通用查询语言标准。
+https://mp.weixin.qq.com/s/rZU35kVTXs5ebf7k6lnheQ
 
-openCypher的目标是通过简化存储、分析，以及用于访问图数据模型的工具平台，促进图处理和分析的使用。技术厂商可以在他们的工具和平台内实现Cypher。
+从理论到实践，全方位认识DNS（实践篇）
 
-官网：
+https://mp.weixin.qq.com/s/iN8NQd8SuWL4gCWhRbY6tg
 
-http://www.opencypher.org/
+图解基于HTTPS的DNS
 
-## RedisGraph
-
-RedisGraph是Redis推出的基于Redis的图数据库。
-
-官网：
-
-http://redisgraph.io/
-
-参考：
-
-https://mp.weixin.qq.com/s/BzQBy6AoMXXpjsdGyXh1zA
-
-揭秘RedisGraph: Redis内嵌高性能内存图数据库

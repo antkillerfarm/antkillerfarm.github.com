@@ -424,6 +424,10 @@ https://mp.weixin.qq.com/s/N4mRrQ4180qM2tuq5smK8w
 
 如何识别出轮廓准确的长和宽
 
+https://mp.weixin.qq.com/s/QkjMY-qEqn2cGfYbFEmv5w
+
+计算机视觉开源工具中的瑞士军刀—Dlib最新高级特性教程
+
 # CCV
 
 CCV是一个C语言的CV库。

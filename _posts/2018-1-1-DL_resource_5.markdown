@@ -304,3 +304,34 @@ https://mp.weixin.qq.com/s/52hm3Cq3TFRnTMfDppivSQ
 
 中山大学等提出HSE：基于层次语义嵌入模型的精细化物体分类
 
+https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
+
+北大：一种基于新闻特征抽取和循环神经网络的股票预测方法
+
+https://mp.weixin.qq.com/s/UboQNEywHSBAYc0740qmzQ
+
+让机器学会创造新的概念：DeepMind提出符号-概念关联网络SCAN
+
+https://mp.weixin.qq.com/s/AAmQymWdKQDeL8DQacEZ3A
+
+用深度学习解决Bongard问题
+
+https://mp.weixin.qq.com/s/210l9K94KMqtJtqbrZ-mgg
+
+打开黑箱重要一步，MIT提出TbD-net，弥合视觉推理模型的性能与可解释性鸿沟
+
+https://mp.weixin.qq.com/s/E5VpBt53VTjOxt8wE3SrLA
+
+工程师如何解决穿衣搭配烦恼？
+
+https://mp.weixin.qq.com/s/tzAp6PxAn3GszcttRzfz8Q
+
+CMU提出新型智能体定位方法：“主动神经定位器”
+
+https://mp.weixin.qq.com/s/_1rKAj-KOs4P8WnKzen64w
+
+传统方法已经Out了？OpenAI提出全新辩论模式训练AI
+
+https://zhuanlan.zhihu.com/p/36527644
+
+Learning with Noise: Enhance Distantly Supervised Relation Extraction with Dynamic Transition Matrix——一种对噪音数据显式建模的方法

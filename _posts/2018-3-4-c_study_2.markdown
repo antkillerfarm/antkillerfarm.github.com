@@ -161,3 +161,8 @@ https://mp.weixin.qq.com/s/pq2m4A31c9QQwka1j7XJDQ
 https://mp.weixin.qq.com/s/Vy7OxAojvgndgGkvmFrBKw
 
 61页slides理解句法分析过程
+
+https://mp.weixin.qq.com/s/icGEBkHP_xeOIdL8vM0K2A
+
+面向任务型对话中基于对话状态表示的序列到序列学习
+

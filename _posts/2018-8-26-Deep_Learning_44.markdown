@@ -10,6 +10,10 @@ https://mp.weixin.qq.com/s/pMhNgAdnfN8wnPKV-aw3hg
 
 基于图像的三维建模参考资料
 
+https://mp.weixin.qq.com/s/CGF-6P4RDtzQnc2XClu5zw
+
+3D计算机视觉简介
+
 https://mp.weixin.qq.com/s/wHIT2pm_5O4MOR_QLpHVLQ
 
 PRNet：人脸3D重建与密集对齐
@@ -113,6 +117,10 @@ https://mp.weixin.qq.com/s/a4A5WCFalH1en0IEM3mu2Q
 https://mp.weixin.qq.com/s/XqD1iDdqQomYRMXhie_Xqw
 
 2017以来的2D to 3D
+
+https://mp.weixin.qq.com/s/fPj4wMtiFX55c_UjNsQnBg
+
+PointCNN全面刷新测试记录：山东大学提出通用点云卷积框架
 
 # 元学习
 

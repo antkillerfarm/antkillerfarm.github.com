@@ -294,6 +294,12 @@ NVIDIA DALI是一个GPU加速的数据增强和图像加载库，为优化深度
 
 https://github.com/NVIDIA/dali
 
+## Tensor Core
+
+https://mp.weixin.qq.com/s/pPjPLqgXZ8iCPS42vXJpuQ
+
+NVIDIA Tensor Core深度学习核心解析
+
 ## CUDA实战
 
 安装：
