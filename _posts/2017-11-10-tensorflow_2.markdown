@@ -236,6 +236,14 @@ Theano被同样基于计算图的TensorFlow淘汰。2017年9月停止更新。
 
 Torch相对变动最小，它被PyTorch替代。这更可以看作是python对于lua的胜利。
 
+### Tensor2Tensor transformer实战
+
+准备数据：
+
+tensor2tensor/data_generators/translate_enzh.py
+
+
+
 ## 参考
 
 https://mp.weixin.qq.com/s/IzijD8Sh3G2WsCz7aaxyhg
@@ -397,16 +405,4 @@ https://mp.weixin.qq.com/s/Bx5Djj-RE0jPJ7LjyQ7GPg
 https://mp.weixin.qq.com/s/3URLEdhB8hs0XXekKbvsnw
 
 使用TensorFlow在卷积神经网络上实现L2约束的softmax损失函数
-
-https://mp.weixin.qq.com/s/dgLJrn3omUKMqmqTIEcoyg
-
-Tensorflow实现DDPG
-
-https://mp.weixin.qq.com/s/FdPrRQr0LukcWh7B703MlQ
-
-利用tf.gradients在TensorFlow中实现梯度下降
-
-https://mp.weixin.qq.com/s/a68brFJthczgwiFoUBh30A
-
-TensorFlow数据集和估算器介绍
 

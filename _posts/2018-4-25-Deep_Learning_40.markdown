@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十）——模型压缩与加速, OCR, Spatial Transformer Networks
+title:  深度学习（四十）——模型压缩与加速, OCR
 category: DL 
 ---
 
@@ -254,6 +254,10 @@ https://mp.weixin.qq.com/s/OyEIcS5o6kWUu2UzuWZi3g
 
 这么Deep且又轻量的Network，实时目标检测
 
+https://mp.weixin.qq.com/s/mWfZ4jfuby4myGfi6TW3wQ
+
+从超参数到架构，一文简述模型优化策略
+
 # OCR
 
 ## 概述
@@ -388,31 +392,7 @@ https://mp.weixin.qq.com/s/Twki3TeNWwj_SqP9chXuxw
 
 AdvancedEAST高效场景文本检测
 
-# Spatial Transformer Networks
+https://mp.weixin.qq.com/s/PyV0Ml9ppTx0HZvz5VTe-Q
 
-论文：
-
-《Spatial Transformer Networks》
-
-参考：
-
-http://www.cnblogs.com/neopenx/p/4851806.html
-
-Spatial Transformer Networks(空间变换神经网络)
-
-http://blog.csdn.net/shaoxiaohu1/article/details/51809605
-
-论文笔记：Spatial Transformer Networks
-
-http://blog.csdn.net/shaoxiaohu1/article/details/51809605
-
-Spatial Transformer Networks
-
-https://mp.weixin.qq.com/s/ciqQMezcB-oM24X8eQqTNg
-
-花式玩耍Spatial Transformation Networks
-
-https://mp.weixin.qq.com/s/4VE2lZeFf05AyLp_s3nTFQ
-
-理解Spatial Transformer Networks
+ICPR图像识别与检测挑战赛冠军方案出炉，基于偏旁部首来识别Duang字
 

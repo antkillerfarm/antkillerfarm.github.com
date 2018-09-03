@@ -179,6 +179,10 @@ http://mp.weixin.qq.com/s/96_u9QM63SISwTbimmH6wA
 
 支持向量回归机
 
+https://mp.weixin.qq.com/s/0yvu3oG7YXUdeQz4QwEJ-A
+
+线性分类原来是这么一回事
+
 ## 数据不平衡问题
 
 SVM中超参数C决定了错误分类的惩罚值，为了处理不平衡类别的问题，我们可以给C按类加权重：

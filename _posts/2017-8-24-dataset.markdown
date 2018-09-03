@@ -108,6 +108,20 @@ http://vision.stanford.edu/aditya86/ImageNetDogs/
 
 Stanford的狗图片数据集。
 
+## WMT
+
+WMT数据集是一个多语种的机器翻译数据集。
+
+官网：
+
+http://www.statmt.org/
+
+这里不仅包含数据，还包含了若干相关软件。
+
+数据下载：
+
+http://data.statmt.org/
+
 ## 其他
 
 https://mp.weixin.qq.com/s/Kmq2tG5XQUO9k1pD3YW2oA

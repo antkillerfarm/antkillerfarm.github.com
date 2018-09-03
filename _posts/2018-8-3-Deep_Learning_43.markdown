@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十三）——图像检索, 图像变换, Graph NN
+title:  深度学习（四十三）——图像检索, 图像变换, Graph NN, Spatial Transformer Networks
 category: DL 
 ---
 
@@ -212,6 +212,14 @@ https://mp.weixin.qq.com/s/Mk_EkwTYK2141cU9zC1hvQ
 
 合成逼真图像，试试港中大&英特尔的半参数方法
 
+https://mp.weixin.qq.com/s/K2kptEfezAbcQTE8OgPMtQ
+
+手把手教你用OpenCV和Python实现图像和视频神经风格迁移
+
+https://mp.weixin.qq.com/s/l33D8zNtHVcaMjlw4IY05g
+
+想让照片里的美女“回头”？清华MIT谷歌用AI帮你实现了
+
 # Graph NN
 
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
@@ -281,3 +289,35 @@ https://mp.weixin.qq.com/s/SGCtwYWfnxjcpMJeeH1b4w
 https://mp.weixin.qq.com/s/DOau_vTbwCauQ8mrHkGu9Q
 
 首个面向Facebook、arXiv网络图类的对抗攻击研究
+
+https://mp.weixin.qq.com/s/XSug_qOqq_QaphkiRlGkIg
+
+图卷积GCN前沿方法介绍
+
+# Spatial Transformer Networks
+
+论文：
+
+《Spatial Transformer Networks》
+
+参考：
+
+http://www.cnblogs.com/neopenx/p/4851806.html
+
+Spatial Transformer Networks(空间变换神经网络)
+
+http://blog.csdn.net/shaoxiaohu1/article/details/51809605
+
+论文笔记：Spatial Transformer Networks
+
+http://blog.csdn.net/shaoxiaohu1/article/details/51809605
+
+Spatial Transformer Networks
+
+https://mp.weixin.qq.com/s/ciqQMezcB-oM24X8eQqTNg
+
+花式玩耍Spatial Transformation Networks
+
+https://mp.weixin.qq.com/s/4VE2lZeFf05AyLp_s3nTFQ
+
+理解Spatial Transformer Networks

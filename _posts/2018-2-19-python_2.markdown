@@ -269,6 +269,10 @@ https://mp.weixin.qq.com/s/1QjJqFfJNNych9b6ae5VUg
 
 深入理解Python装饰器
 
+https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/00143186781871161bc8d6497004764b398401a401d4cce000
+
+使用@property
+
 ## range & xrange
 
 1.range会直接生成一个list对象。

@@ -286,6 +286,10 @@ https://www.zhihu.com/question/288500826/answer/470917953
 
 Windows等操作系统是如何做到复制几G文件不出错的？
 
+https://mp.weixin.qq.com/s/7QKbyJ-Xa2dgHIkwBWJ4eA
+
+关于芯片，这篇说得最详细！
+
 # 3D芯片
 
 随着半导体工艺日益接近物理极限，2D芯片已经不能满足进化的需要，芯片的设计也迈向了立体发展的阶段。目前主流的3D芯片技术包括FinFET（1999）与FD-SOI（2000），他们都是胡正明团队的作品。

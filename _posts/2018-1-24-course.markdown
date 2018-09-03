@@ -302,6 +302,10 @@ http://web-static-aws.seas.harvard.edu/courses/cs281/
 
 CS281: Advanced Machine Learning
 
+https://cs.nyu.edu/~panozzo/ustc/
+
+Robust Mesh Generation and Applications to Geometry Processing
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。

@@ -184,6 +184,10 @@ https://mp.weixin.qq.com/s/uJ4RIJdGF8RxT9qVTkM-jA
 
 AI为超级马里奥兄弟创造了游戏新级别
 
+https://mp.weixin.qq.com/s/OdQ_zH9jbZgEqOD3vHtkng
+
+不设目标也能通关“马里奥”的AI算法，全靠好奇心学习
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293

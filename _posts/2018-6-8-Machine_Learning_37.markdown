@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十七）——KNN, Optimizer进阶
+title:  机器学习（三十七）——KNN, Optimizer进阶, 聚类算法
 category: ML 
 ---
 
@@ -178,3 +178,56 @@ https://mp.weixin.qq.com/s/DsmjjfInV_yPFWB2oSq-dA
 
 取代学习率衰减的新方法：谷歌大脑提出增加Batch Size
 
+https://mp.weixin.qq.com/s/jgOQGDqDKtbJXbAj3EpI9A
+
+别用大批量mini-batch训练神经网络，用局部SGD！
+
+# 聚类算法
+
+https://mp.weixin.qq.com/s/xGPiaXTnQad3RcMwIELP4w
+
+流式聚类算法
+
+https://wenku.baidu.com/view/4169e77f27284b73f2425047.html
+
+层次聚类
+
+https://mp.weixin.qq.com/s/uSHLJKB0knVcCY759Ul25w
+
+什么是聚类和降维？
+
+https://mp.weixin.qq.com/s/ORLOOhufrInyPdS6fbywOw
+
+深入浅出——基于密度的聚类方法
+
+https://mp.weixin.qq.com/s/Vi4Yb8TOJydj9yL078iNHw
+
+BIRCH层次聚类详解
+
+https://mp.weixin.qq.com/s/dIsq3RKAU_K6vS0-MPKbzA
+
+BIRCH聚类算法原理
+
+https://mp.weixin.qq.com/s/_5A3DuVyN6aE9n5OEc19kA
+
+数据科学家必须了解的六大聚类算法：带你发现数据之美
+
+https://mp.weixin.qq.com/s/pDiZt4ydWw-4cYeE4gpjiw
+
+数据科学家需要了解的5大聚类算法
+
+https://www.zhihu.com/question/34554321
+
+用于数据挖掘的聚类算法有哪些，各有何优势？
+
+https://mp.weixin.qq.com/s/7zV370J7nv5wSWxdYa5Plg
+
+DBSCAN聚类算法原理介绍，以及代码实现
+
+https://mp.weixin.qq.com/s/8dB2OQCoZ7_kSxExm32WSA
+
+于剑：聚类理论与算法选讲
+
+https://mp.weixin.qq.com/s/1SOQZ3fsiYtT4emt4jvMxQ
+
+深入浅出聚类算法

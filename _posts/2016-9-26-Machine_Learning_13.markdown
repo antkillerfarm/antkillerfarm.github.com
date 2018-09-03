@@ -109,6 +109,10 @@ https://mp.weixin.qq.com/s/mZ4AeCcoU0LhWRWfa9_kvw
 
 花了10分钟，终于弄懂了特征值和特征向量到底有什么意义
 
+https://mp.weixin.qq.com/s/uL5fCNTegK9ST2LOO13-4g
+
+图说幂法求特征值和特征向量
+
 ## QR算法
 
 对矩阵A进行QR分解可得：$$A=QR$$

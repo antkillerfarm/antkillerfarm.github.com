@@ -230,6 +230,14 @@ https://mp.weixin.qq.com/s/Ieha-lJ_KuEnpbJha_nxJw
 
 利用人脸图片准确识别年龄：上海大学研究者提出“深度回归森林”
 
+https://mp.weixin.qq.com/s/9VTpbqwALmxr07pEfdQBCA
+
+旷视科技提出GridFace：通过学习局部单应变换实现人脸校正
+
+https://mp.weixin.qq.com/s/h_ENriEXr7WI_XR_DtxpMQ
+
+这样可以更精确的目标检测——超网络
+
 # 目标检测进阶
 
 https://mp.weixin.qq.com/s/LtXylKTKsHdjMPw9Q1HyXA
@@ -304,6 +312,10 @@ https://mp.weixin.qq.com/s/aLYQepnr_BjS27Fb-zoZ_g
 
 迈向完全可学习的物体检测器：可学习区域特征提取方法
 
+https://zhuanlan.zhihu.com/p/43655912
+
+“别挡我，我要C位出道！”谈谈深度学习目标检测中的遮挡问题
+
 # 数据增强
 
 https://mp.weixin.qq.com/s/GqPfvWwH1T0XFwiZ86cW8A
@@ -371,3 +383,8 @@ UBC&腾讯AI Lab提出首个模块化GAN架构，搞定任意图像PS组合
 https://mp.weixin.qq.com/s/pf0fNSoNDaI9bZvohRX28A
 
 不再使用人眼评估，你训练的GAN还OK吗？ 
+
+https://mp.weixin.qq.com/s/KeXXi5kwvWAfArv13f6VPg
+
+给Cycle-GAN加上时间约束，CMU等提出新型视频转换方法Recycle-GAN
+

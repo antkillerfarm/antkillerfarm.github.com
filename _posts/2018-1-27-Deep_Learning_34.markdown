@@ -196,10 +196,6 @@ http://mp.weixin.qq.com/s/lLPRwInF5qaw7ewYHOpPyw
 
 深度强化学习资料
 
-https://mp.weixin.qq.com/s/aVWHlwOmNIqOlu3025_RXQ
-
-DeepMind提出多任务强化学习新方法Distral
-
 https://zhuanlan.zhihu.com/p/27699682
 
 荐译一篇通俗易懂的策略梯度（Policy Gradient）方法讲解
@@ -216,13 +212,25 @@ https://mp.weixin.qq.com/s/RnUWHa6QzgJbE_XqLeAQmg
 
 深度强化学习，决策与控制
 
-https://mp.weixin.qq.com/s/W9yhj7_frLYWJocoBR1TMQ
+https://mp.weixin.qq.com/s/RLEuaiRdq6AbTSUcYQ5O3A
 
-避免AI错把黑人识别为大猩猩：伯克利大学提出协同反向强化学习
+深度强化学习在NLP怎么用？看清华黄民烈老师这一份120页《自然语言处理和搜索中的深度强化学习应用》讲义
 
-https://mp.weixin.qq.com/s/R308ohdMU8b7Ap4CLofvDg
+https://mp.weixin.qq.com/s/I8IwPCY6-zocJKFXMr6rUg
 
-OpenAI开源算法ACKTR与A2C：把可扩展的自然梯度应用到强化学习
+深度强化学习的18个关键问题
+
+https://mp.weixin.qq.com/s/_dskX5U8gHAEl6aToBvQvg
+
+从Q学习到DDPG，一文简述多种强化学习算法
+
+https://zhuanlan.zhihu.com/p/29019246
+
+基于策略的增强学习
+
+https://mp.weixin.qq.com/s/SckTPgEw7KWmfKXWriNIRg
+
+浅谈强化学习的方法及学习路线
 
 https://mp.weixin.qq.com/s/-JHHOQPB6pKVuge64NkMuQ
 
@@ -232,17 +240,17 @@ https://mp.weixin.qq.com/s/OY56lJ_NFf5vVAgKfKyx2A
 
 利用强化学习自动搜索最优化方法
 
-https://mp.weixin.qq.com/s/zWo2iSiJBEBwnFF478xxfQ
+https://simoninithomas.github.io/Deep_reinforcement_learning_Course/
 
-DeepMind：探索人类行为中的强化学习机制
+老外写的简易深度强化学习入门
+
+https://mp.weixin.qq.com/s/2SOHQElaYbplse3QqG9tYw
+
+强化学习介绍
 
 https://mp.weixin.qq.com/s/R30quVGK0TgjerLpiIK9eg
 
 从算法到训练，综述强化学习实现技巧与调试经验
-
-https://mp.weixin.qq.com/s/l46yJdRaftMlwr6odiSiHg
-
-Yoshua Bengio团队基于深度强化学习打造聊天机器人MILABOT
 
 https://mp.weixin.qq.com/s/uDFsWebfLmka-zZX3Y_8kg
 
@@ -255,14 +263,6 @@ https://mp.weixin.qq.com/s/nYOOwVoijl1p4V0A7yaI3w
 https://mp.weixin.qq.com/s/uymKtR_7IgMpfXcekfkCDg
 
 从强化学习基本概念到Q学习的实现，打造自己的迷宫智能体
-
-https://mp.weixin.qq.com/s/6_cW22DCzSw3DpUDrLXLcA
-
-OpenAI提出强化学习近端策略优化，可替代策略梯度法
-
-http://mp.weixin.qq.com/s/S4jhpNKYZP5YQWaiiOQGFA
-
-DeepMind：“预测地图”海马体催生强化学习新算法
 
 http://mp.weixin.qq.com/s/TBVVdX3erOpXNjXmhLmxOw
 

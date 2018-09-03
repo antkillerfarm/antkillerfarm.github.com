@@ -192,6 +192,8 @@ ArUco--一个微型现实增强库的介绍及视觉应用
 
 ## 传感器
 
+这里主要讨论自动驾驶方面的传感器，但也包括了一些非自动驾驶类的传感器知识。
+
 https://mp.weixin.qq.com/s/Ee18sjKXNGMowKwqLB0jVg
 
 给自动驾驶一双"通天眼"——环境感知器篇
@@ -227,6 +229,14 @@ https://mp.weixin.qq.com/s/WWm1tkCXVJgdlVbsXCTYIg
 https://mp.weixin.qq.com/s/C77q2LEA-lMEabtsO30LxQ
 
 自动驾驶需要几个camera
+
+https://mp.weixin.qq.com/s/2-PB-5tTNeGPLPHQBdRwBA
+
+40张动态图详解全部传感器工作原理
+
+https://mp.weixin.qq.com/s/oCEeIM_DhmQ67zT_KLVb7Q
+
+Face ID 与3D传感技术科普
 
 ## 参考
 
@@ -380,3 +390,6 @@ https://zhuanlan.zhihu.com/p/41287237
 
 点云感知CVPR 2018论文总结
 
+https://mp.weixin.qq.com/s/-dGXe4RuU4w8DN8ffCMiFg
+
+让AI自动调参，才是百度无人车的进化方式：适应环境全靠自己

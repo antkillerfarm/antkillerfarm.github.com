@@ -238,3 +238,12 @@ https://zhuanlan.zhihu.com/p/41293278
 https://mp.weixin.qq.com/s/KCiR6ZE1EpYVfySaCG097A
 
 上半年最常见的Python面试题
+
+https://mp.weixin.qq.com/s/0dw2LHsIKFv8B_JaIMoekg
+
+python 字符编码处理总结
+
+https://mp.weixin.qq.com/s/fTs_r7DLbLWoos4uRM3KYA
+
+10个Python常见面试题，这些弄不明白不要说学过Python！
+

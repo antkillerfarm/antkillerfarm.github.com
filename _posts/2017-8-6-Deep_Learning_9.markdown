@@ -32,6 +32,10 @@ https://mp.weixin.qq.com/s/-d4T2hgjy6kGdd_ig_J9eg
 
 LeCun亲授的深度学习入门课：从飞行器的发明到卷积神经网络
 
+https://mp.weixin.qq.com/s/z26bXb8eAelrwj6Tkvm_-A
+
+卷积神经网络常见架构AlexNet、ZFNet、VGGNet、GoogleNet和ResNet模型的理论与实践
+
 # GAN
 
 ## 概况

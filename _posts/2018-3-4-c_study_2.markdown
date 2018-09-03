@@ -166,3 +166,7 @@ https://mp.weixin.qq.com/s/icGEBkHP_xeOIdL8vM0K2A
 
 面向任务型对话中基于对话状态表示的序列到序列学习
 
+https://mp.weixin.qq.com/s/ejq-XHS_g_P6mVDv5jMqEA
+
+Facebook全新无监督机器翻译法，BLUE测试提升超过10分
+

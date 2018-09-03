@@ -6,6 +6,18 @@ category: AI
 
 # TensorFlow
 
+https://mp.weixin.qq.com/s/dgLJrn3omUKMqmqTIEcoyg
+
+Tensorflow实现DDPG
+
+https://mp.weixin.qq.com/s/FdPrRQr0LukcWh7B703MlQ
+
+利用tf.gradients在TensorFlow中实现梯度下降
+
+https://mp.weixin.qq.com/s/a68brFJthczgwiFoUBh30A
+
+TensorFlow数据集和估算器介绍
+
 https://github.com/indiejoseph/cnn-text-classification-tf-chinese
 
 CNN for Chinese Text Classification in Tensorflow
@@ -402,3 +414,8 @@ https://mp.weixin.qq.com/s/dwxTla5iiYKvELrpbWf1yQ
 https://mp.weixin.qq.com/s/1Iyhsp5-2DyTfOb0JzqLZg
 
 比Python快100倍，利用spaCy和Cython实现高速NLP项目
+
+https://mp.weixin.qq.com/s/TYiqZvY25qxHcmEXRpqO5Q
+
+如何用Python做自动化特征工程
+

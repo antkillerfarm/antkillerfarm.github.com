@@ -226,6 +226,10 @@ https://zhuanlan.zhihu.com/p/26522315
 
 脉动阵列-因Google TPU获得新生
 
+https://mp.weixin.qq.com/s/wunqEHC6c-yUVXTl4yTG4w
+
+仅需1/5成本：TPU是如何超越GPU，成为深度学习首选处理器的
+
 https://zhuanlan.zhihu.com/p/31782874
 
 Graphcore AI芯片：更多分析
@@ -333,4 +337,8 @@ https://mp.weixin.qq.com/s/IaCWZXQI8mYLJQXwDoNQcQ
 https://mp.weixin.qq.com/s/acAbNP_ERnKlL3_9v_mwow
 
 FPGA：AI ASIC的必经之路？
+
+https://mp.weixin.qq.com/s/5MyuZf_TBm2NV47CRAz5Dw
+
+2017图灵奖得主：通用芯片每年仅提升3%，神经专用架构才是未来
 

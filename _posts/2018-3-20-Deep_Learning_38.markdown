@@ -20,9 +20,9 @@ https://mp.weixin.qq.com/s/CCQOHRCAolsorm8FEPdjoQ
 
 什么时候强化学习未必好用？
 
-https://mp.weixin.qq.com/s/I8IwPCY6-zocJKFXMr6rUg
+https://mp.weixin.qq.com/s/aVWHlwOmNIqOlu3025_RXQ
 
-深度强化学习的18个关键问题
+DeepMind提出多任务强化学习新方法Distral
 
 https://mp.weixin.qq.com/s/gFHbLF-q91sddMAX1CRbEQ
 
@@ -40,9 +40,9 @@ https://mp.weixin.qq.com/s/TUk1PWT9CfPGEW77UKxpjw
 
 三招武林绝学带你玩转“强化学习”
 
-https://mp.weixin.qq.com/s/_dskX5U8gHAEl6aToBvQvg
+https://mp.weixin.qq.com/s/W9yhj7_frLYWJocoBR1TMQ
 
-从Q学习到DDPG，一文简述多种强化学习算法
+避免AI错把黑人识别为大猩猩：伯克利大学提出协同反向强化学习
 
 https://mp.weixin.qq.com/s/p2hlc2PsLgrvxOF8wBZANg
 
@@ -80,17 +80,13 @@ https://mp.weixin.qq.com/s/U0K79ELLj4wsOR4sd5G4Vw
 
 Vicarious详解新型图式网络：赋予强化学习泛化能力
 
-https://zhuanlan.zhihu.com/p/29019246
+https://mp.weixin.qq.com/s/R308ohdMU8b7Ap4CLofvDg
 
-基于策略的增强学习
+OpenAI开源算法ACKTR与A2C：把可扩展的自然梯度应用到强化学习
 
 https://mp.weixin.qq.com/s/C8hsGkHGtoaS9Vzm6Ub4tw
 
 Berkeley提出“随机搜索”训练线性策略，提高RL的性能
-
-https://mp.weixin.qq.com/s/SckTPgEw7KWmfKXWriNIRg
-
-浅谈强化学习的方法及学习路线
 
 https://mp.weixin.qq.com/s/vYDb1rTdPxO1sIS38VX5xA
 
@@ -100,10 +96,6 @@ https://mp.weixin.qq.com/s/rpPN2rgru6krRz2fr1RhsQ
 
 模拟世界的模型：谷歌大脑与Jürgen Schmidhuber提出“人工智能梦境”
 
-https://simoninithomas.github.io/Deep_reinforcement_learning_Course/
-
-老外写的简易深度强化学习入门
-
 https://mp.weixin.qq.com/s/AelAD57G4GOh7qm-_rvYsg
 
 伯克利提出DeepMimic：使用强化学习练就18般武艺
@@ -111,6 +103,10 @@ https://mp.weixin.qq.com/s/AelAD57G4GOh7qm-_rvYsg
 https://zhuanlan.zhihu.com/p/35567591
 
 强化学习在关系抽取、QA场景的应用
+
+https://mp.weixin.qq.com/s/zWo2iSiJBEBwnFF478xxfQ
+
+DeepMind：探索人类行为中的强化学习机制
 
 https://mp.weixin.qq.com/s/oOslkEklaZSbRb8eDDCRBw
 
@@ -184,9 +180,17 @@ https://mp.weixin.qq.com/s/Q9QzXo_M3jYKjBWSsLYwgQ
 
 强化学习+树搜索：一种新型程序合成方法
 
-https://mp.weixin.qq.com/s/2SOHQElaYbplse3QqG9tYw
+https://mp.weixin.qq.com/s/l46yJdRaftMlwr6odiSiHg
 
-强化学习介绍
+Yoshua Bengio团队基于深度强化学习打造聊天机器人MILABOT
+
+https://mp.weixin.qq.com/s/6_cW22DCzSw3DpUDrLXLcA
+
+OpenAI提出强化学习近端策略优化，可替代策略梯度法
+
+http://mp.weixin.qq.com/s/S4jhpNKYZP5YQWaiiOQGFA
+
+DeepMind：“预测地图”海马体催生强化学习新算法
 
 https://mp.weixin.qq.com/s/KZHidOi5KYgg393R_JspBA
 
@@ -223,6 +227,14 @@ IJCAI 2018：聚焦强化学习的学习效率
 https://mp.weixin.qq.com/s/qWuoo6cGLWLk4OKlunR-Og
 
 滴滴KDD 2018论文详解：基于强化学习技术的智能派单模型
+
+https://zhuanlan.zhihu.com/p/43496459
+
+解决Sparse Reward RL任务的简单回顾
+
+https://mp.weixin.qq.com/s/G99vqIYeWzgQ4kL4p77cKA
+
+用强化学习做神经机器翻译：中山大学&MSRA填补多项空白
 
 # Spiking Neuron Networks
 
