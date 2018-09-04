@@ -58,6 +58,10 @@ https://mp.weixin.qq.com/s/T3Q0XiC20jo339JOhm2Pag
 
 微软研究院Jianfeng Gao：基于深度学习的自然语言处理导论
 
+https://mp.weixin.qq.com/s/nydByhX-sYROK2-OkUWA2g
+
+基于深度学习的自然语言处理
+
 https://mp.weixin.qq.com/s/NcUHJ89DPVdB7cJttsh-xw
 
 基于神经网络的知识推理

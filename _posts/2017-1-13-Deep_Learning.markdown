@@ -83,6 +83,8 @@ https://mp.weixin.qq.com/s/w_LKb-xOdyBsQBRGmHo6zw
 
 深度学习综述：Hinton、Yann LeCun和Bengio经典重读
 
+![](/images/img2/AI.jpg)
+
 # MP神经元模型
 
 MP神经元模型是1943年，由Warren McCulloch和Walter Pitts提出的。

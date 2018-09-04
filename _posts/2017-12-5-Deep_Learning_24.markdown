@@ -124,6 +124,10 @@ https://mp.weixin.qq.com/s/f0sv7c-H5o5L_wy2sUonUQ
 
 CNN取代RNN？当序列建模不再需要循环网络
 
+https://mp.weixin.qq.com/s/OgN4rVDKH5WABIaRY7CHog
+
+如何让RNN神经元拥有基础通用的注意力能力
+
 # L2 Normalization
 
 L2 Normalization本身并不复杂，然而多数资料都只提到1维的L2 Normalization的计算公式：
@@ -245,20 +249,4 @@ RNN模型之间的这类聚焦还有许多其它的应用。它可以用于语�
 ![](/images/img2/ACT.png)
 
 上图是ACT的网络结构图。下面来分步讲解一下。
-
-![](/images/img2/ACT_2.png)
-
-这一步就是典型的RNN+输出各个状态的带权重组合。
-
-![](/images/img2/ACT_3.png)
-
-每一步的权重值由“halting neuron”决定。这个神经元事实上是一个sigmoid函数，输出一个终止权重，可以理解为需要在当前步骤终止的概率值。
-
-![](/images/img2/ACT_4.png)
-
-停止权重值的总和等于1，每一步结束后要减去相应的值。一旦这个值小于了epsilon，我们就停止计算。
-
-![](/images/img2/ACT_5.png)
-
-当训练Adaptive Computation Time模型时，可以在损失函数添加一项“ponder cost”，用来惩罚模型的累积计算时间。这一项的值越大，就更不倾向于降低计算时间。
 

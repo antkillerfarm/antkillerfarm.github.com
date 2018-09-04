@@ -419,3 +419,7 @@ https://mp.weixin.qq.com/s/TYiqZvY25qxHcmEXRpqO5Q
 
 如何用Python做自动化特征工程
 
+https://mp.weixin.qq.com/s/84Rk5CP2uLaCBIifL465VQ
+
+从统计到概率，入门者都能用Python试验的机器学习基础
+

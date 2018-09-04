@@ -4,7 +4,25 @@ title:  深度学习（二十五）——Attention（2）
 category: DL 
 ---
 
-# Attention（续）
+# Attention
+
+## Adaptive Computation Time（续）
+
+![](/images/img2/ACT_2.png)
+
+这一步就是典型的RNN+输出各个状态的带权重组合。
+
+![](/images/img2/ACT_3.png)
+
+每一步的权重值由“halting neuron”决定。这个神经元事实上是一个sigmoid函数，输出一个终止权重，可以理解为需要在当前步骤终止的概率值。
+
+![](/images/img2/ACT_4.png)
+
+停止权重值的总和等于1，每一步结束后要减去相应的值。一旦这个值小于了epsilon，我们就停止计算。
+
+![](/images/img2/ACT_5.png)
+
+当训练Adaptive Computation Time模型时，可以在损失函数添加一项“ponder cost”，用来惩罚模型的累积计算时间。这一项的值越大，就更不倾向于降低计算时间。
 
 ## Scaled Dot-Product Attention
 
@@ -231,20 +249,3 @@ https://mp.weixin.qq.com/s/Nyq_36aFmQYRWdpgbgxpuA
 https://mp.weixin.qq.com/s/g2PcmsDW9ixUCh_yP8W-Vg
 
 各类Seq2Seq模型对比及《Attention Is All You Need》中技术详解
-
-https://mp.weixin.qq.com/s/FtI94xY6a8TEvFCHfjMnmA
-
-小组讨论谷歌机器翻译Attention is All You Need
-
-https://mp.weixin.qq.com/s/SqIMkiP1IZMGWzwZWGOI7w
-
-谈谈神经网络的注意机制和使用方法
-
-https://mp.weixin.qq.com/s/EMCZHuvk5dOV_Rz00GkJMA
-
-近年火爆的Attention模型，它的套路这里都有！
-
-https://zhuanlan.zhihu.com/p/27464080
-
-从《Convolutional Sequence to Sequence Learning》到《Attention Is All You Need》
-

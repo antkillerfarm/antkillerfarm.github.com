@@ -393,3 +393,7 @@ https://zhuanlan.zhihu.com/p/41287237
 https://mp.weixin.qq.com/s/-dGXe4RuU4w8DN8ffCMiFg
 
 让AI自动调参，才是百度无人车的进化方式：适应环境全靠自己
+
+https://mp.weixin.qq.com/s/YDIoVf20kybu8JEUY3GZWg
+
+Lattice Planner规划算法

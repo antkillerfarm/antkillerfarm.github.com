@@ -310,6 +310,12 @@ http://mazhuang.org/2016/12/14/rtfsc-with-opengrok/
 
 搭建大型源码阅读环境——使用 OpenGrok
 
+# 参考
+
+https://www.zhihu.com/question/270348678/answer/460715569
+
+生产力应用大汇总
+
 # diff&patch
 
 diff/patch这对工具在数学上来说，diff是对2个集合求差，patch是求和。

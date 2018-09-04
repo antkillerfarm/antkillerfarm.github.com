@@ -335,3 +335,12 @@ https://mp.weixin.qq.com/s/_1rKAj-KOs4P8WnKzen64w
 https://zhuanlan.zhihu.com/p/36527644
 
 Learning with Noise: Enhance Distantly Supervised Relation Extraction with Dynamic Transition Matrix——一种对噪音数据显式建模的方法
+
+https://mp.weixin.qq.com/s/gPI6Vq6smDn8IiKhGe61bA
+
+用深度学习DIY自动化监控系统
+
+https://mp.weixin.qq.com/s/JkYFx4tN2x8y5tYPyonE9g
+
+建模任务相关注视点转移，实现第一人称视频注视点的准确估计
+

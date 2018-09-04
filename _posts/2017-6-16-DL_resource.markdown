@@ -454,6 +454,10 @@ https://mp.weixin.qq.com/s/_afSKRdag06VmGjM7VibBQ
 
 计算机视觉必读：目标跟踪、网络压缩、图像分类、人脸识别等
 
+https://mp.weixin.qq.com/s/sK4kZ8Sto8_t1F0XSg4jvg
+
+计算机视觉领域最全汇总
+
 https://mp.weixin.qq.com/s/47S-iGFzZtXcSIgIC4w0FA
 
 从入门到高阶，读懂机器学习需要哪些数学知识
@@ -470,3 +474,6 @@ https://mp.weixin.qq.com/s/S6_HzgyTnoNvc8vp4_C1kw
 
 利用Matlab实现深度学习
 
+https://mp.weixin.qq.com/s/z360mTVRqeDFMBiJ0Q_9SQ
+
+调参心得：超参数优化之旅
