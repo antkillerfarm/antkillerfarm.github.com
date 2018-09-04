@@ -316,6 +316,10 @@ https://zhuanlan.zhihu.com/p/43655912
 
 “别挡我，我要C位出道！”谈谈深度学习目标检测中的遮挡问题
 
+https://zhuanlan.zhihu.com/p/28442066
+
+何恺明团队提出Focal Loss，目标检测精度高达39.1AP，打破现有记录
+
 # 数据增强
 
 https://mp.weixin.qq.com/s/GqPfvWwH1T0XFwiZ86cW8A

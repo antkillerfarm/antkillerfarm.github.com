@@ -213,6 +213,10 @@ https://mp.weixin.qq.com/s/xAWW8aqrj5Qf1KaGGZLqfQ
 
 只有100个标记数据，如何精确分类400万用户评论？
 
+https://zhuanlan.zhihu.com/p/43681859
+
+迁移学习在自然语言处理中的应用之通用语言建模
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：

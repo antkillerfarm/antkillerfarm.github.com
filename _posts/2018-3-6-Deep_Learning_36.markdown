@@ -268,6 +268,10 @@ https://mp.weixin.qq.com/s/v8L0E6G-ShOiyvaymw8MYg
 
 一文搞懂DeepFM的理论与实践
 
+https://mp.weixin.qq.com/s/u4onsUU4G4DNm4F5ytiNhQ
+
+互联网广告CTR预估新算法：基于神经网络的DeepFM原理解读
+
 https://mp.weixin.qq.com/s/QaMjHRZ5fiN2zBJLIeGrSg
 
 阿里推出DeepInsight平台：可视化理解深度神经网络CTR预估模型
