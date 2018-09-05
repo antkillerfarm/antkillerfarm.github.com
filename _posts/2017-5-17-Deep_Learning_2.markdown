@@ -110,6 +110,10 @@ https://mp.weixin.qq.com/s/WvPS9LQ6vfD4OkaRbZ0wBw
 
 如何通过方差偏移理解批归一化与Dropout之间的冲突
 
+https://mp.weixin.qq.com/s/yvwAPmclvgtytfhmETM_mg
+
+Hinton提出的经典防过拟合方法Dropout，只是SDR的特例
+
 ## Dropout预测阶段
 
 经Dropout处理过的模型，在预测阶段不再Dropout，而是打开所有的神经元。这样的效果类似于集成学习，即若干个弱分类器，集成为一个强分类器。

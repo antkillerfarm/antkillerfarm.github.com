@@ -44,6 +44,12 @@ https://www.coursera.org/learn/machine-learning
 
 https://www.csie.ntu.edu.tw/~htlin/mooc/
 
+参考：
+
+https://mp.weixin.qq.com/s/5lpwvBr3oYnu36onF2S5EA
+
+机器学习发展历史回顾
+
 # 线性回归
 
 线性回归属于有监督学习（supervised learning）的其中一种方法。

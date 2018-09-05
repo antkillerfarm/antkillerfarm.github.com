@@ -380,14 +380,6 @@ https://mp.weixin.qq.com/s/wKpNJY6PD0ArxnKtl71xwQ
 
 程序员实用的工具网站整理
 
-https://mp.weixin.qq.com/s/5MNvW9czxaRWso8jbBRyBw
-
-Go调度程序：Ms，Ps&Gs
-
-https://mp.weixin.qq.com/s/mUhPHycvLSYYkBQSfIgIdA
-
-Channels In Go
-
 https://mp.weixin.qq.com/s/9YXsJo_u2zVNqvABoGqfqg
 
 五种IO模型分析
@@ -403,10 +395,6 @@ https://mp.weixin.qq.com/s/pdOVONHbjfIJPW45nEw1fg
 https://mp.weixin.qq.com/s/9oi-zkuUtjv0P6GyBLmatg
 
 简单说明CGI和动态请求是什么
-
-https://mp.weixin.qq.com/s/ka5woeuvNxX3Y0Y4UMlruw
-
-Go上下文取消操作
 
 http://phdcomics.com/
 

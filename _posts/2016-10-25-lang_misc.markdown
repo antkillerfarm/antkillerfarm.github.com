@@ -146,6 +146,24 @@ https://mp.weixin.qq.com/s/X_MDcEmmKDN_RHYTx3kjhw
 
 Julia 1.0正式发布，这是新出炉的一份简单中文教程
 
+# Go
+
+https://mp.weixin.qq.com/s/ka5woeuvNxX3Y0Y4UMlruw
+
+Go上下文取消操作
+
+https://mp.weixin.qq.com/s/5MNvW9czxaRWso8jbBRyBw
+
+Go调度程序：Ms，Ps&Gs
+
+https://mp.weixin.qq.com/s/mUhPHycvLSYYkBQSfIgIdA
+
+Channels In Go
+
+https://mp.weixin.qq.com/s/neBQ4Etx3RLhMQdM6GksVg
+
+Go语言HTTP/2探险之旅
+
 # Github显示数学公式
 
 这里主要用到了LaTeX和MathJax。
