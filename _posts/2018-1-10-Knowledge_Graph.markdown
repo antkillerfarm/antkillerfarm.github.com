@@ -418,3 +418,7 @@ https://mp.weixin.qq.com/s/lpNTdnfp2FnJ97EivhUv2g
 
 12种降维方法终极指南
 
+https://mp.weixin.qq.com/s/150raN1kPc6c0pAB1DVLWw
+
+118页概率思维教程——基础、技巧与算法
+

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十七）——KNN, Optimizer进阶, 聚类算法
+title:  机器学习（三十七）——KNN, Optimizer进阶, 聚类算法, 特征工程
 category: ML 
 ---
 
@@ -231,3 +231,22 @@ https://mp.weixin.qq.com/s/8dB2OQCoZ7_kSxExm32WSA
 https://mp.weixin.qq.com/s/1SOQZ3fsiYtT4emt4jvMxQ
 
 深入浅出聚类算法
+
+# 特征工程
+
+https://mp.weixin.qq.com/s/ibiElLIgrT3wYx3tDYMMTw
+
+理解特征工程
+
+https://mp.weixin.qq.com/s/3Ce8uMf_Kyt-hEZUYfdh3g
+
+特征工程之特征选择
+
+https://mp.weixin.qq.com/s/tOcyfK68jW7Tr-PGCvdXMA
+
+特征工程最后一个要点:特征预处理
+
+https://mp.weixin.qq.com/s/c9iHdgtErVd_iitwny7_zw
+
+Kaggle前1%参赛者经验：特征工程为何如此重要？
+

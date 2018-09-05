@@ -247,3 +247,13 @@ https://mp.weixin.qq.com/s/fTs_r7DLbLWoos4uRM3KYA
 
 10个Python常见面试题，这些弄不明白不要说学过Python！
 
+# 大数据平台参考资源
+
+https://mp.weixin.qq.com/s/nqOvcKtxpqehWFO4XkXr5g
+
+为减少用户电话排队，阿里研发了智能客服调度系统
+
+https://mp.weixin.qq.com/s/lc9fWkEVt1kG5Mw3Xeuv3g
+
+Apache Beam实战指南：手把手教你玩转KafkaIO与Flink
+

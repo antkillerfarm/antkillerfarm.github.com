@@ -202,6 +202,10 @@ https://mp.weixin.qq.com/s/J6UMzWSpcmSQVGwWKtm2Hw
 
 UC伯克利提出基于自适应相似场的语义分割
 
+https://zhuanlan.zhihu.com/p/43774180
+
+提升密集预测的平滑的空洞卷积
+
 # AutoDL
 
 DL领域目前存在的主要问题之一是：如何设计网络结构和调整超参数。目前的做法，通常依赖于作者的直觉，属于典型的拍脑袋想点子。

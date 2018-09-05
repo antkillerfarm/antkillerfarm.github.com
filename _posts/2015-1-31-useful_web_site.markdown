@@ -436,6 +436,14 @@ https://mp.weixin.qq.com/s/VgJSMN0mkfEerhWpWpEFbg
 
 一个42KB的文件，解压完其实是个4.5PB的“炸弹”
 
+http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
+
+理解OAuth 2.0
+
+https://www.cnblogs.com/linianhui/category/929878.html
+
+一个认证授权方面的专栏
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

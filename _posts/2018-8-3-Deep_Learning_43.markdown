@@ -48,6 +48,22 @@ KDD2018阿里巴巴论文揭示自家大规模视觉搜索算法
 
 # 图像变换
 
+## 语义分割逆变换
+
+![](/images/img2/SCAN.png)
+
+参考：
+
+https://mp.weixin.qq.com/s/tusm3CYqKKep-BJQ0Vp6Ww
+
+腾讯AI lab & 复旦大学合作提出无监督高分辨率的图像到图像转换方法SCAN
+
+https://mp.weixin.qq.com/s/X96oI-duHwyCFAR79inlig
+
+真实到可怕！英伟达MIT造出马良的神笔
+
+## 参考
+
 https://blog.csdn.net/u011534057/article/details/78935202
 
 风格迁移学习笔记(1):Multimodal Transfer: A Hierarchical Deep Convolutional Neural Network for Fast
@@ -192,10 +208,6 @@ https://mp.weixin.qq.com/s/LwYzxFO6Fj9Biiww3Y22qw
 
 斯坦福CS230第一名：图像超级补全，效果惊艳
 
-https://mp.weixin.qq.com/s/X96oI-duHwyCFAR79inlig
-
-真实到可怕！英伟达MIT造出马良的神笔
-
 https://mp.weixin.qq.com/s/MFKhmHcaQvufdRawFqisjA
 
 Distill详述“可微图像参数化“：神经网络可视化和风格迁移利器！
@@ -206,7 +218,7 @@ https://mp.weixin.qq.com/s/rt4uuqh8IrZTjsYXEZvxKQ
 
 https://mp.weixin.qq.com/s/VFq3BWLpzyKZ3sqVWf1HKA
 
-从换脸到换姿势，AI 在图像处理的道路上越走越魔幻
+从换脸到换姿势，AI在图像处理的道路上越走越魔幻
 
 https://mp.weixin.qq.com/s/Mk_EkwTYK2141cU9zC1hvQ
 

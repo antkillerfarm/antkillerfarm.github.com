@@ -366,18 +366,6 @@ https://mp.weixin.qq.com/s/824-TbpwJz9n_jT9uuOE8g
 
 中小企业如何做好推荐系统？
 
-https://mp.weixin.qq.com/s/ibiElLIgrT3wYx3tDYMMTw
-
-理解特征工程
-
-https://mp.weixin.qq.com/s/3Ce8uMf_Kyt-hEZUYfdh3g
-
-特征工程之特征选择
-
-https://mp.weixin.qq.com/s/tOcyfK68jW7Tr-PGCvdXMA
-
-特征工程最后一个要点 : 特征预处理
-
 https://mp.weixin.qq.com/s/qfsakjq9D06DeIe6yx8aJw
 
 供应链、物流、采购到底有什么区别？

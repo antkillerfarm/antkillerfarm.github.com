@@ -389,3 +389,7 @@ https://mp.weixin.qq.com/s/FiAju9F_MWexstP7FrIquw
 https://mp.weixin.qq.com/s/3H0ZJjnPsh1BzALmG0W7og
 
 DAVIS2017视频目标分割冠军代码开源了
+
+https://mp.weixin.qq.com/s/ZqnfSL6U5E9NzE15QMdxtg
+
+腾讯AI Lab提出视频再定位任务，准确定位相关视频内容

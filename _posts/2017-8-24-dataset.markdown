@@ -356,3 +356,6 @@ https://zhuanlan.zhihu.com/p/40984645
 
 打通推荐系统与知识图谱: 第一个公开的大规模链接数据集合
 
+https://mp.weixin.qq.com/s/h4FUBI6w1IPQssebR1eSXw
+
+这是一份非常全面的开源数据集，你，真的不想要吗？
