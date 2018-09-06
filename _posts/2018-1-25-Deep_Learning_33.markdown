@@ -262,3 +262,7 @@ https://mp.weixin.qq.com/s/DbvH6jM1VV47xKylbW-pug
 https://mp.weixin.qq.com/s/mnPh8w3VuG9apprOkugbLA
 
 中科大提出新型连续手语识别框架LS-HAN，帮助“听”懂听障人士
+
+https://mp.weixin.qq.com/s/pUciYFjOKL3ea91fLCy0Yw
+
+基于OpenCV与tensorflow实现实时手势识别

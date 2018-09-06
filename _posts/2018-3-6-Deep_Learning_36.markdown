@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十六）——深度推荐系统, Recursive NN
+title:  深度学习（三十六）——深度推荐系统, Recursive NN, Spiking Neuron Networks
 category: DL 
 ---
 
@@ -296,6 +296,10 @@ https://mp.weixin.qq.com/s/ro3D_d-ZPP0TasqPr4PgPA
 
 推荐系统特征构建新进展：极深因子分解机模型
 
+https://mp.weixin.qq.com/s/MoUd99mCR3Xyu_FnV8jLKA
+
+机器如何“猜你喜欢”？深度学习模型在1688的应用实践
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512
@@ -306,3 +310,36 @@ http://blog.csdn.net/mengmengz07/article/details/51348554
 
 recursive neural network梳理
 
+# Spiking Neuron Networks
+
+除了基于BP算法的NN之外，Spiking Neuron Networks也是一大类NN。Spiking NN和人脑结构更相似，功耗也更小，但是相关训练和数据量化的算法尚不成熟，属于潜力股。
+
+参考：
+
+https://homepages.cwi.nl/~sbohte/publication/paugam_moisy_bohte_SNNChapter.pdf
+
+Computing with Spiking Neuron Networks
+
+https://mp.weixin.qq.com/s/6dpKSaLFVo-ge4gtbG8GQg
+
+简述脉冲神经网络SNN：下一代神经网络
+
+https://mp.weixin.qq.com/s/0n50YO1jIv_mxqe0EeS6kw
+
+综述AI未来：神经科学启发的类脑计算
+
+https://mp.weixin.qq.com/s/5KA7jtlRmnXxijGQhU1k4A
+
+DeepMind哈萨比斯狂推的神经科学，入门需要看什么书？
+
+https://mp.weixin.qq.com/s/TWdeHVCgEf54STvdA1QUPg
+
+DeepMind哈萨比斯长文：伟大的AI离不开神经科学
+
+https://mp.weixin.qq.com/s/8ibcyvyBLYArAMhQElqRzg
+
+Cell研究揭示生物神经元强大新特性，是时候设计更复杂的神经网络了！
+
+https://mp.weixin.qq.com/s/cb6JBlb11xW0Xw0RWI4vFA
+
+浙大&川大提出脉冲版ResNet：继承ResNet优势，实现当前最佳

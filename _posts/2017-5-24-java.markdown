@@ -420,6 +420,10 @@ https://mp.weixin.qq.com/s/gQAA2-YuvTHrL2IP8Bco6w
 
 缓存与数据库的数据一致性方案介绍
 
+https://mp.weixin.qq.com/s/m76PFxbcY6_-XyeU7uu4Jg
+
+数据库的最简单实现
+
 # Lua
 
 Lua的包管理工具叫做LuaRocks。官网：
