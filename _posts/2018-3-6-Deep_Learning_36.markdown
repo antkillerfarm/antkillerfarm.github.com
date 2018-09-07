@@ -300,6 +300,10 @@ https://mp.weixin.qq.com/s/MoUd99mCR3Xyu_FnV8jLKA
 
 机器如何“猜你喜欢”？深度学习模型在1688的应用实践
 
+https://mp.weixin.qq.com/s/O_BYzrw5YAbLkfVDqcmwmw
+
+36页最新《深度学习在推荐系统上的应用》综述论文，209篇参考论文
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

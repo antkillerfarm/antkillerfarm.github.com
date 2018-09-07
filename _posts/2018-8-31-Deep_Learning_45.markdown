@@ -206,6 +206,10 @@ https://zhuanlan.zhihu.com/p/43774180
 
 提升密集预测的平滑的空洞卷积
 
+https://mp.weixin.qq.com/s/01D9wYK92i4PjjGcwFTxOw
+
+揭秘阿里巴巴神奇的人物抠图算法内幕
+
 # AutoDL
 
 DL领域目前存在的主要问题之一是：如何设计网络结构和调整超参数。目前的做法，通常依赖于作者的直觉，属于典型的拍脑袋想点子。
@@ -299,4 +303,8 @@ https://mp.weixin.qq.com/s/0te0JUKYZlSLs3kzsFV-NA
 https://mp.weixin.qq.com/s/dSAjdx7jsKgI5SQpMY213w
 
 微软&中科大提出新型自动神经架构设计方法NAO
+
+https://mp.weixin.qq.com/s/KvkkmDIY7Y0NBgYF86E2Pw
+
+神经网络突变自动选择AI优化算法，速度提升50000倍！
 

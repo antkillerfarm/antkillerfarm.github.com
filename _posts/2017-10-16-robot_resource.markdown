@@ -92,7 +92,7 @@ https://mp.weixin.qq.com/s/T7wI4cjKbciYC3ZNxKfReA
 
 https://mp.weixin.qq.com/s/yO_Lc5Fo-8fBC9PwVCQBqA
 
-自动驾驶入门课程第①讲—无人驾驶概览
+自动驾驶入门课程第①讲 — 无人驾驶概览
 
 https://mp.weixin.qq.com/s/IVD0aq8V-qZoB0tcLMigYw
 
@@ -109,6 +109,10 @@ https://mp.weixin.qq.com/s/BCNrsuoThJt031jCnbAjAA
 https://mp.weixin.qq.com/s/FqW2X9LJZvNe9efllAYhTQ
 
 自动驾驶入门课程第⑤讲 — 感知（下）
+
+https://mp.weixin.qq.com/s/6ro9y69h-6yHZ7MfodxUHQ
+
+自动驾驶入门课程第⑥讲 — 预测
 
 ## 术语
 

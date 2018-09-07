@@ -257,3 +257,7 @@ https://mp.weixin.qq.com/s/lc9fWkEVt1kG5Mw3Xeuv3g
 
 Apache Beam实战指南：手把手教你玩转KafkaIO与Flink
 
+https://mp.weixin.qq.com/s/bTh8N45BLNQHSLUZAakkCA
+
+Oceanus：美团点评HTTP流量定制化路由的实践
+

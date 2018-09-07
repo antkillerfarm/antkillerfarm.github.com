@@ -44,10 +44,6 @@ https://mp.weixin.qq.com/s/0JmB0sMUVsiuwrVObN_10g
 
 浙江大学提出设计网络嵌入算法的度惩罚原则，可有效保留无标度特性
 
-https://mp.weixin.qq.com/s/F2jF1vuzK4u8ZPrDK_CyLw
-
-KDD2018 网络表示学习最新教程：DeepWalk作者Perozzi等人带你探索最前沿
-
 ## 参考
 
 https://mp.weixin.qq.com/s/4ZlVisY08XvisjbK5zSheg
@@ -161,6 +157,14 @@ https://mp.weixin.qq.com/s/0QyLIvH1McooGLc19hIAHA
 https://mp.weixin.qq.com/s/QW7t7iaIN1yaHYzOtwgYAQ
 
 Representation Learning on Network网络表示学习
+
+https://mp.weixin.qq.com/s/F2jF1vuzK4u8ZPrDK_CyLw
+
+KDD2018 网络表示学习最新教程：DeepWalk作者Perozzi等人带你探索最前沿
+
+https://mp.weixin.qq.com/s/KK-_G7Sc9HyYlxH1nLxVfA
+
+斯坦福大学提出全新网络嵌入方法—GraphWave
 
 # NN的INT8计算
 
@@ -333,6 +337,10 @@ https://mp.weixin.qq.com/s/Zk2YG-IJNhJxTBU8THSM-g
 https://mp.weixin.qq.com/s/-izo9VUdxN33pwVFGV_tjw
 
 299页PPT带你回顾深度贝叶斯学习最新发展脉络
+
+https://github.com/bayesgroup/deepbayes-2018
+
+Seminars DeepBayes Summer School 2018
 
 # 数据增强
 

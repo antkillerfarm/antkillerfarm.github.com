@@ -126,6 +126,10 @@ https://mp.weixin.qq.com/s/cnzQ7XepftDOZXslCf1MUA
 
 你真的会用t-SNE么？有关t-SNE的小技巧
 
+https://mp.weixin.qq.com/s/lbpe2NO1m8S38wpnp47BEg
+
+通过可视化隐藏表示，更好地理解神经网络
+
 # Adaboost
 
 Adaboost是Yoav Freund和Robert Schapire于1997年提出的算法。两人后来因为该算法被授予Gödel Prize（2003）。

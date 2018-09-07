@@ -88,6 +88,10 @@ https://mp.weixin.qq.com/s/Wj6RBS7gYd9skE3AU1s4Qg
 
 尺度不变提升人群计数性能
 
+https://mp.weixin.qq.com/s/3eLL5Xg2mBFWnbYFbW486A
+
+行人检测全新视角：从人体中轴线标注出发
+
 # 人脸识别进阶
 
 https://mp.weixin.qq.com/s/ZZmLbFzi843g0k3gTncQmA
@@ -234,9 +238,9 @@ https://mp.weixin.qq.com/s/9VTpbqwALmxr07pEfdQBCA
 
 旷视科技提出GridFace：通过学习局部单应变换实现人脸校正
 
-https://mp.weixin.qq.com/s/h_ENriEXr7WI_XR_DtxpMQ
+https://mp.weixin.qq.com/s/z726pDBhn5bML5Xho2XCig
 
-这样可以更精确的目标检测——超网络
+人脸对齐与跟踪如何克服遮挡、姿态变化带来的特征点跳变？
 
 # 目标检测进阶
 
@@ -328,6 +332,10 @@ https://mp.weixin.qq.com/s/VtlSVF4d9LwPJhDEYSbgTg
 
 无监督难分样本挖掘改进目标检测
 
+https://mp.weixin.qq.com/s/h_ENriEXr7WI_XR_DtxpMQ
+
+这样可以更精确的目标检测——超网络
+
 # GAN进阶（续）
 
 https://mp.weixin.qq.com/s/c84LMFnIhoDeolc1B4MIVA
@@ -365,4 +373,12 @@ https://mp.weixin.qq.com/s/pf0fNSoNDaI9bZvohRX28A
 https://mp.weixin.qq.com/s/KeXXi5kwvWAfArv13f6VPg
 
 给Cycle-GAN加上时间约束，CMU等提出新型视频转换方法Recycle-GAN
+
+https://mp.weixin.qq.com/s/IzVTkH7fEiS4gAUIyA_IrA
+
+谷歌GAN 实验室来了！迄今最强可视化工具，在浏览器运行GAN
+
+https://mp.weixin.qq.com/s/1jBpz55pPgM8oxlUZLSWXA
+
+ICML2018对抗生成网络论文评述
 

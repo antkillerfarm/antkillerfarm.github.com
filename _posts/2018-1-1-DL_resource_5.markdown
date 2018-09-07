@@ -344,3 +344,11 @@ https://mp.weixin.qq.com/s/JkYFx4tN2x8y5tYPyonE9g
 
 建模任务相关注视点转移，实现第一人称视频注视点的准确估计
 
+https://mp.weixin.qq.com/s/OCSe_o6bJjOYNEpYaOQ_Cg
+
+最大化互信息来学习深度表示，Bengio等提出Deep INFOMAX
+
+https://mp.weixin.qq.com/s/2If152RIpW7w_0HkF8j4Lw
+
+Deep Unrolling：深度网络与传统模型之间的桥梁
+

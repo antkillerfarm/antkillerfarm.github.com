@@ -38,6 +38,10 @@ https://mp.weixin.qq.com/s/-EU4jTElNll9MQomjuqFXA
 
 姿态估计相比Mask-RCNN提高8.2%，上海交大卢策吾团队开源AlphaPose
 
+https://mp.weixin.qq.com/s/HY9fRbiQrFARPMUsNANndA
+
+最高比Mask-RCNN快3倍！上交大实时姿态估计AlphaPose升级
+
 https://zhuanlan.zhihu.com/p/37526892
 
 OpenPose：实时多人2D姿态估计
@@ -183,6 +187,10 @@ https://mp.weixin.qq.com/s/7YzkgpXRCgYqguTng4nf7g
 https://mp.weixin.qq.com/s/naD6hVwDg3QSA76sXy2GZA
 
 上海交通大学CVPR Spotlight论文：利用形态相似性生成人体部位解析数据
+
+https://mp.weixin.qq.com/s/L8TlPWBfirF09xKLT3bWVg
+
+最佳学生论文：EPFL&FAIR提出QuaterNet，更好地解决人类动作建模问题
 
 # 深度目标跟踪
 

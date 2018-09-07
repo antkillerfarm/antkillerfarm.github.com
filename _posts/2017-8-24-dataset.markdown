@@ -124,6 +124,10 @@ http://data.statmt.org/
 
 ## 其他
 
+https://mp.weixin.qq.com/s/jezxjPZTnOXWca-VUpfslw
+
+AI研发者福利！谷歌推出数据集搜索专用引擎Dataset Search
+
 https://mp.weixin.qq.com/s/Kmq2tG5XQUO9k1pD3YW2oA
 
 从文本处理到自动驾驶：机器学习最常用的50大免费数据集
@@ -151,6 +155,10 @@ MIT发布的10大自然语言处理数据集和语料库
 https://github.com/candlewill/Dialog_Corpus/blob/master/README.md
 
 用于对话系统的中英文语料
+
+https://mp.weixin.qq.com/s/ywjgVzEh8e7-lcUmIAtzCA
+
+这是一份非常全面的开源数据集，你真的不想要吗
 
 http://www.cvpapers.com/datasets.html
 
