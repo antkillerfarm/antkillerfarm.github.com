@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十二）——词向量进阶, NN的INT8计算, 深度贝叶斯学习, 数据增强
+title:  深度学习（三十二）——词向量进阶, NN的量化计算, 深度贝叶斯学习
 category: DL 
 ---
 
@@ -166,7 +166,7 @@ https://mp.weixin.qq.com/s/KK-_G7Sc9HyYlxH1nLxVfA
 
 斯坦福大学提出全新网络嵌入方法—GraphWave
 
-# NN的INT8计算
+# NN的量化计算
 
 ## 概述
 
@@ -208,11 +208,11 @@ https://china.xilinx.com/support/documentation/white_papers/c_wp486-deep-learnin
 
 2.分析weight、bias，找到异常值，并消除之。这些异常值通常是由于死去的神经元所导致的误差无法更新造成的。
 
-参考：
+如何确定每个layer的数值范围，实际上也有多种方法：
 
-http://on-demand.gputechconf.com/gtc/2017/presentation/s7310-8-bit-inference-with-tensorrt.pdf
+1.取整批样本在该layer的数值范围的并集，也就是所有最大（小）值的极值。
 
-8-bit Inference with TensorRT
+2.取所有最大（小）值的平均值。
 
 ## UINT量化
 
@@ -230,9 +230,19 @@ UINT量化使用bias将数据搬移到均值为0的区间。
 
 上述各种量化方法都是在保证数值表示范围的情况下，尽可能提高fl或者scale。这种方法也叫做Non-saturation Quantization。
 
+NVIDIA在如下文章中提出了一种新方法：
+
+http://on-demand.gputechconf.com/gtc/2017/presentation/s7310-8-bit-inference-with-tensorrt.pdf
+
+8-bit Inference with TensorRT
+
+![](/images/img2/INT8_3.png)
+
 Saturate Quantization的做法是：将超出上限或下限的值，设置为上限值或下限值。
 
-由于Activations的存在，这种方法在合理设置上下限T的情况下，是没有误差的。
+如何设置合理的Saturate threshold呢？
+
+可以设置一组门限，然后计算每个门限的分布和原分布的相似度，即KL散度。然后选择最相似分布的门限即可。
 
 ## NN硬件的指标术语
 
@@ -342,36 +352,3 @@ https://github.com/bayesgroup/deepbayes-2018
 
 Seminars DeepBayes Summer School 2018
 
-# 数据增强
-
-https://mp.weixin.qq.com/s/GqPfvWwH1T0XFwiZ86cW8A
-
-SamplePairing：针对图像处理领域的高效数据增强方式
-
-https://mp.weixin.qq.com/s/cQtXvOjSXFc4YKn7ANBc_w
-
-谷歌大脑提出自动数据增强方法AutoAugment：可迁移至不同数据集
-
-https://mp.weixin.qq.com/s/ojFo7-gUh73iK3uImFS2-Q
-
-一文道尽主流开源框架中的数据增强
-
-https://mp.weixin.qq.com/s/xJhWu-1FyhIWbFBC5oHMkw
-
-一文道尽深度学习中的数据增强方法（上）
-
-https://mp.weixin.qq.com/s/OctAGrcBB0a6TOGWMmVKUw
-
-深度学习中的数据增强（下）
-
-https://mp.weixin.qq.com/s/lMU6_ywQqneyunqEV6uDiA
-
-如何改善你的训练数据集？
-
-https://mp.weixin.qq.com/s/ooX9Hj5ejO6po6Ghb4zOug
-
-一文解读合成数据在机器学习技术下的表现
-
-https://zhuanlan.zhihu.com/p/33485388
-
-mixup与paring samples ，ICLR2018投稿论文的数据增广两种方式

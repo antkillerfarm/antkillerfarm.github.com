@@ -261,3 +261,7 @@ https://mp.weixin.qq.com/s/bTh8N45BLNQHSLUZAakkCA
 
 Oceanus：美团点评HTTP流量定制化路由的实践
 
+https://mp.weixin.qq.com/s/qhiX62dALXd3owYYP9KsEQ
+
+支持流式处理ACID事务！Flink团队开源新作Streaming Ledger
+

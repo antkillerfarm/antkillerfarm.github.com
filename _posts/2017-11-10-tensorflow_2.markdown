@@ -246,6 +246,10 @@ tensor2tensor/data_generators/translate_enzh.py
 
 ## 参考
 
+https://mp.weixin.qq.com/s/t1QFIOq-VBNOrSm0zW-PlQ
+
+深度学习TensorFlow实现集合
+
 https://mp.weixin.qq.com/s/IzijD8Sh3G2WsCz7aaxyhg
 
 TensorFlow深度学习概述

@@ -289,6 +289,10 @@ https://mp.weixin.qq.com/s/mupuyM7m_41eOzQc7LGRRw
 
 Neo4j的python操作库Neomodel
 
+https://mp.weixin.qq.com/s/YVo6KduIvckYKH53fjDogw
+
+neo4j扩展包APOC的图算法
+
 ## neo4j-graph-algorithms
 
 Neo4j Graph Algorithms扩展包，是一个关于图算法的jar包，集成了一些常见的图算法，比如社区发现，路径扩展，中心点计算，PageRank等。

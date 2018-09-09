@@ -224,6 +224,20 @@ https://zhuanlan.zhihu.com/p/32796998
 
 10分钟搞定ICO
 
+## 矿机江湖
+
+2018.9
+
+https://mp.weixin.qq.com/s/yyoUoIUBUPV5zkeE88P7Iw
+
+矿机芯片：转型背后的江湖纷争与隐忧
+
+这篇文章把中国矿机界的几个主角的恩恩怨怨基本都讲了一遍，不错的江湖文章。
+
+只是比特币这东西价格起起落落，2018年第一季度，比特大陆豪赚20亿美元，利润甚至超过了近年风头甚高的NVIDIA，岂料第二季度，形势急转直下，坊间甚至有比特大陆亏损6、7亿美元的传闻。
+
+至于比特大陆的AI芯片，似乎对标的是NVIDIA的云服务领域。不是我小看比特大陆，AI芯片这东西光有钱，没有时间积累，是做不好的。
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/3aAaM1DWsnCWEEbP7dOZEg
@@ -298,14 +312,3 @@ https://mp.weixin.qq.com/s/LU5-zrWof5HmgqiIx6aNsg
 
 用神经网络来判定量子纠缠？这里有一篇简单易懂的方法解读
 
-https://mp.weixin.qq.com/s/VvU8OfXKJiyEKaujWfCrWw
-
-上海交通大学ECCV 2018四篇入选论文解读
-
-https://mp.weixin.qq.com/s/_IkE5NPYjpT2QGVo9mfWvA
-
-MIT&谷歌视频运动放大让计算机辅助人眼“明察秋毫” 
-
-https://mp.weixin.qq.com/s/yOuK39WdkfvyV36c1_SOnQ
-
-社会媒体数据挖掘与信息传播预测

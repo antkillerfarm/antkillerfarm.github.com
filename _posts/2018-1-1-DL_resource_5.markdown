@@ -6,6 +6,20 @@ category: resource
 
 # DL参考资源
 
+# 光神经网络
+
+https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ
+
+3D打印的深度神经网络，光速执行AI运算
+
+https://mp.weixin.qq.com/s/5zt8UIpNBcgNZpwHHJj68Q
+
+光学CNN层替换传统CNN层，超省电
+
+https://mp.weixin.qq.com/s/IheyYAC1yIigYOW-gtc5Eg
+
+Science重磅！用光速实现深度学习，跟GPU说再见
+
 ## 参考
 
 https://mp.weixin.qq.com/s/ZV32xDgGTriIAUbHohc90Q
@@ -352,3 +366,14 @@ https://mp.weixin.qq.com/s/2If152RIpW7w_0HkF8j4Lw
 
 Deep Unrolling：深度网络与传统模型之间的桥梁
 
+https://mp.weixin.qq.com/s/VvU8OfXKJiyEKaujWfCrWw
+
+上海交通大学ECCV 2018四篇入选论文解读
+
+https://mp.weixin.qq.com/s/_IkE5NPYjpT2QGVo9mfWvA
+
+MIT&谷歌视频运动放大让计算机辅助人眼“明察秋毫” 
+
+https://mp.weixin.qq.com/s/yOuK39WdkfvyV36c1_SOnQ
+
+社会媒体数据挖掘与信息传播预测

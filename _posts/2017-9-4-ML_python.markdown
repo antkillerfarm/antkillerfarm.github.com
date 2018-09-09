@@ -288,6 +288,10 @@ https://mp.weixin.qq.com/s/L95slIQ8so5IWpIpy7ZHEQ
 
 23种Pandas核心操作，你需要过一遍吗？
 
+https://mp.weixin.qq.com/s/CAddyz0qQt8SY56VOtcpJA
+
+AI开发最大升级：Pandas与Scikit-Learn合并，新工作流程更简单强大！
+
 ## mysql
 
 http://www.runoob.com/python/python-mysql.html
@@ -493,34 +497,4 @@ ImageAI是一个CV方面的库，集成了大量的DL模型，其目标是使用
 代码：
 
 https://github.com/OlafenwaMoses/ImageAI
-
-## 参考
-
-https://mp.weixin.qq.com/s/S7gnAdekPFcyd4ni1m9phg
-
-GitHub最著名的20个Python机器学习项目，值得收藏！
-
-https://github.com/neozhaoliang/pywonderland/tree/master/
-
-如何用Python画各种著名数学图案
-
-http://old.sebug.net/paper/books/scipydoc/index.html
-
-用Python做科学计算
-
-https://pan.baidu.com/s/1qYPUHNQ
-
-小抄合集
-
-https://mp.weixin.qq.com/s/1--i1OhxRNPvNnmP9bFo3g
-
-全机器学习和Python的27个速查表
-
-https://mp.weixin.qq.com/s/8wI49YBAs7ckkYdc4B_WNQ
-
-14张思维导图读懂Python编程核心知识体系
-
-https://mp.weixin.qq.com/s/HKHLiCqEAtoCAqf4CHv86w
-
-python机器学习算法代码实现
 

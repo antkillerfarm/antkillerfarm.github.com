@@ -477,3 +477,8 @@ https://mp.weixin.qq.com/s/S6_HzgyTnoNvc8vp4_C1kw
 https://mp.weixin.qq.com/s/z360mTVRqeDFMBiJ0Q_9SQ
 
 调参心得：超参数优化之旅
+
+https://mp.weixin.qq.com/s/YVNuuH0yyZx0_L4ch6gcbw
+
+220页深度神经网络训练归一化: 数学基础与理论、挑战
+

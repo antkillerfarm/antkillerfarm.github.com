@@ -259,6 +259,10 @@ https://mp.weixin.qq.com/s/T2AmwNTYwTPlB0WbCsy-3g
 
 Redis单线程架构
 
+https://mp.weixin.qq.com/s/XZYxHEUx0AJozQ2oM5fTrw
+
+秒杀Redis的KVS上云了！伯克利重磅开源Anna 1.0
+
 # Pika
 
 Pika是一个可持久化的大容量redis存储服务，兼容string、hash、list、zset、set的绝大部分接口(兼容详情)，解决redis由于存储数据量巨大而导致内存不够用的容量瓶颈。
@@ -266,30 +270,4 @@ Pika是一个可持久化的大容量redis存储服务，兼容string、hash、l
 官网：
 
 https://github.com/Qihoo360/pika/
-
-# DL参考资源
-
-https://mp.weixin.qq.com/s/iZZHmxGFHQHk1rlzMzDQcg
-
-训练深度神经网络失败的罪魁祸首不是梯度消失，而是退化
-
-https://mp.weixin.qq.com/s/yvHZ9hVueYUKsMXcNQQzmQ
-
-深度学习会被可微分编程取代？
-
-https://mp.weixin.qq.com/s/OCjznxO1WjJnnryuK8uRTw
-
-Scikit-learn 作者之一可微分动态编程51页教程
-
-https://mp.weixin.qq.com/s/lPAcNayqcz1sh8xNVklzEA
-
-DeepMind提出可微分逻辑编程，结合深度学习与符号程序优点
-
-https://mp.weixin.qq.com/s/-4b3u02KiIt5i4Yzz-Ed3g
-
-从信息论的角度理解与可视化神经网络
-
-https://mp.weixin.qq.com/s/NJf5e25tvT_xKXLD7UY1AQ
-
-MySQL智能调度系统。这篇blog其实和MySQL关系不大，算是DL在负载均衡方面的应用吧。
 

@@ -191,6 +191,12 @@ $$C_k=C*W_k$$
 
 其中，权值和类别K出现的频率成反比。
 
+## Platt scaling
+
+https://blog.csdn.net/giskun/article/details/49329095
+
+SVM的概率输出（Platt scaling）
+
 # 时间序列分析
 
 ## 书籍和教程

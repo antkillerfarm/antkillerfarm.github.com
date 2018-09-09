@@ -373,6 +373,12 @@ https://zhuanlan.zhihu.com/c_122608198
 
 一个可视化方面的专栏
 
+https://mp.weixin.qq.com/s/yF1XJ-_YteoZbVbdIvlbmg
+
+如果伦敦地铁图是数据科学家画的……
+
+>Henry Charles Beck，1902～1974，英国制图师。其1931年绘制的伦敦地铁图成为了现代地铁图的设计范例。
+
 ## 贝叶斯线性回归
 
 https://mp.weixin.qq.com/s/szTmHY-Yvn7N3s_GzTDiEA
@@ -408,4 +414,22 @@ http://blog.csdn.net/dm_vincent/article/details/8554244
 http://www.cnblogs.com/luweiseu/archive/2012/07/14/2591370.html
 
 强连通分支算法--Kosaraju算法、Tarjan算法和Gabow算法
+
+## howmuch.net
+
+howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：
+
+![](/images/article/top_10_company.jpg)
+
+网址：
+
+https://howmuch.net/
+
+## Gephi
+
+Gephi是一个针对图和网络的可视化工具。
+
+官网：
+
+https://gephi.org/
 

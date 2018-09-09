@@ -160,10 +160,6 @@ https://mp.weixin.qq.com/s/CkLgTO9w7PctjwsE6VQ8nA
 
 南科大翁文康：“量子霸权”的基础概念和可行方案
 
-https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ
-
-3D打印的深度神经网络，光速执行AI运算
-
 ## AI医疗
 
 https://github.com/albarqouni/Deep-Learning-for-Medical-Applications

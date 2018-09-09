@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十三）——图像检索, 图像变换, Graph NN, Spatial Transformer Networks
+title:  深度学习（四十三）——图像检索, 图像变换, Graph NN, Spatial Transformer Networks, 数据增强
 category: DL 
 ---
 
@@ -306,6 +306,10 @@ https://mp.weixin.qq.com/s/XSug_qOqq_QaphkiRlGkIg
 
 图卷积GCN前沿方法介绍
 
+https://mp.weixin.qq.com/s/aeQyZ8cpz81cK8Dg-84mjA
+
+网络表征学习综述
+
 # Spatial Transformer Networks
 
 论文：
@@ -333,3 +337,37 @@ https://mp.weixin.qq.com/s/ciqQMezcB-oM24X8eQqTNg
 https://mp.weixin.qq.com/s/4VE2lZeFf05AyLp_s3nTFQ
 
 理解Spatial Transformer Networks
+
+# 数据增强
+
+https://mp.weixin.qq.com/s/GqPfvWwH1T0XFwiZ86cW8A
+
+SamplePairing：针对图像处理领域的高效数据增强方式
+
+https://mp.weixin.qq.com/s/cQtXvOjSXFc4YKn7ANBc_w
+
+谷歌大脑提出自动数据增强方法AutoAugment：可迁移至不同数据集
+
+https://mp.weixin.qq.com/s/ojFo7-gUh73iK3uImFS2-Q
+
+一文道尽主流开源框架中的数据增强
+
+https://mp.weixin.qq.com/s/xJhWu-1FyhIWbFBC5oHMkw
+
+一文道尽深度学习中的数据增强方法（上）
+
+https://mp.weixin.qq.com/s/OctAGrcBB0a6TOGWMmVKUw
+
+深度学习中的数据增强（下）
+
+https://mp.weixin.qq.com/s/lMU6_ywQqneyunqEV6uDiA
+
+如何改善你的训练数据集？
+
+https://mp.weixin.qq.com/s/ooX9Hj5ejO6po6Ghb4zOug
+
+一文解读合成数据在机器学习技术下的表现
+
+https://zhuanlan.zhihu.com/p/33485388
+
+mixup与paring samples ，ICLR2018投稿论文的数据增广两种方式

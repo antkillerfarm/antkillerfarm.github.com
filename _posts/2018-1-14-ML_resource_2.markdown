@@ -418,3 +418,7 @@ https://zhuanlan.zhihu.com/p/40214106
 
 流形学习概述
 
+https://mp.weixin.qq.com/s/oGSk9Hsu6lbthJjLHF59Hg
+
+摩拜&京东联合利用智能单车数据挖掘违章停车
+

@@ -306,23 +306,12 @@ http://www.sohu.com/a/108777952_467791
 
 多少年了，终于明白了FinFET与FD-SOI制程
 
-# 垃圾筐
+# 浸润式微影
 
-## howmuch.net
+缩短波长的方法除了增加频率之外，其实还有更换介质。
 
-howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：
+参考：
 
-![](/images/article/top_10_company.jpg)
+https://mp.weixin.qq.com/s/NZGNrO_LxNc6qrIdofOIfQ
 
-网址：
-
-https://howmuch.net/
-
-## Gephi
-
-Gephi是一个针对图和网络的可视化工具。
-
-官网：
-
-https://gephi.org/
-
+假如没有他，就没有今天的台积电

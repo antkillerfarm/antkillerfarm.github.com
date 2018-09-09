@@ -282,10 +282,6 @@ https://mp.weixin.qq.com/s/t9ZHW8fkWtnvpM7ynJOTDw
 
 从语义上理解卷积核行为，UCLA朱松纯等人使用决策树量化解释CNN
 
-https://mp.weixin.qq.com/s/5zt8UIpNBcgNZpwHHJj68Q
-
-光学CNN层替换传统CNN层，超省电
-
 # 视频目标分割
 
 视频目标分割任务和语义分割有两个基本区别：
@@ -393,3 +389,7 @@ DAVIS2017视频目标分割冠军代码开源了
 https://mp.weixin.qq.com/s/ZqnfSL6U5E9NzE15QMdxtg
 
 腾讯AI Lab提出视频再定位任务，准确定位相关视频内容
+
+https://mp.weixin.qq.com/s/6MXLtUDi_idMYqbHARkbcg
+
+港中文林达华团队提出计算机视觉新方向：电影情节分析

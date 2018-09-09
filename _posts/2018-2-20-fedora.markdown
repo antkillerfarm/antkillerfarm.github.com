@@ -211,17 +211,39 @@ https://mp.weixin.qq.com/s/66lY17sOO83Q-xhvQi72dw
 
 # 功率谱
 
-随机过程二阶统计：
+随机过程（设时间序列为$$u(n)$$）二阶统计：
 
-时域：自相关函数
+时域——自相关函数：
+
+$$r_N(n-k)=E[u_N(n)u_N^*(k)]$$
+
+其中，$$u_N^*(k)$$是$$u_N(k)$$的复共轭。
 
 频域：功率谱密度（power spectral density, PSD），也称为功率谱（power spectrum）
+
+$$U_N(\omega)=\sum_{n=-N}^N$$
 
 参考：
 
 https://www.zhihu.com/question/29520851
 
 功率谱密度如何理解？
+
+# 张量分析
+
+在同构的意义下，第零阶张量（r = 0）为标量（Scalar），第一阶张量（r = 1）为向量（Vector），第二阶张量（r = 2）则成为矩阵（Matrix）。
+
+《张量分析》，黄克智著。
+
+>注：黄克智，1927年生，固体力学家。江西中正大学本科+清华硕士+莫斯科大学博士（因应召回国，放弃博士学位）。清华大学工程力学系教授、工程力学研究所所长，中国科学院院士。断裂力学领域权威。
+
+# 拓扑学
+
+《Topopogy Without Tears》，University of New South Wales的Sidney A. Morris著。
+
+该书的中文版：
+
+http://www.topologywithouttears.net/topbookchinese.pdf
 
 # NLP参考资源
 
