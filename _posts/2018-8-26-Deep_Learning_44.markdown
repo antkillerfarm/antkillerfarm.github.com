@@ -122,6 +122,10 @@ https://mp.weixin.qq.com/s/fPj4wMtiFX55c_UjNsQnBg
 
 PointCNN全面刷新测试记录：山东大学提出通用点云卷积框架
 
+https://mp.weixin.qq.com/s/ZU6NN-jdKzYeSnJweP-E0g
+
+Pixel2Mesh：从单帧RGB图像生成三维网格模型
+
 # 元学习
 
 https://mp.weixin.qq.com/s/KKK3VEpwL90g6Aro8qtXxQ

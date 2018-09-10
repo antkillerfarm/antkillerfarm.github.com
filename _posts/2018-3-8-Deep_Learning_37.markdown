@@ -290,6 +290,10 @@ https://zhuanlan.zhihu.com/p/25335957
 
 人脸检测与深度学习
 
+https://mp.weixin.qq.com/s/a4aPycxfIe_qNIP_vrIZ5w
+
+人脸检测算法综述
+
 http://www.leiphone.com/news/201608/MPXlWtGaJLPYL7NB.html
 
 人脸检测发展：从VJ到深度学习
@@ -365,16 +369,4 @@ https://mp.weixin.qq.com/s/ZrnAqDJCLtMy_qTQ2RZT0A
 https://mp.weixin.qq.com/s/i4HdS-lCrsv9YR39Hja8ow
 
 深度人脸表情识别技术综述，没有比这更全的了
-
-https://mp.weixin.qq.com/s/YlrWHDPIPzN4dQO2vo4DjA
-
-人脸颜值研究综述
-
-https://mp.weixin.qq.com/s/d3aaN4vGAtMfLqOpU9oC6w
-
-香港中文大学助理教授吕健勤：面向人脸分析的深度学习方法
-
-https://mp.weixin.qq.com/s/wcKUURsYiEYVzn7qTMVPag
-
-格灵深瞳：人脸识别最新进展以及工业级大规模人脸识别实践探讨
 

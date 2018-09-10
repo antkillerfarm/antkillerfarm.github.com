@@ -387,6 +387,10 @@ https://mp.weixin.qq.com/s/kYOwUWlTP4T0IYKDWDbCsg
 
 tensorflow object detection API训练公开数据集Oxford-IIIT Pets Dataset
 
+https://mp.weixin.qq.com/s/ntHkMIef1o2-FF-AJf_bZQ
+
+三分钟训练眼球追踪术，AI就知道你在盯着哪个妹子——TensorFlow.js代码
+
 # Machine Learning之Python篇
 
 ## 参考（续）
