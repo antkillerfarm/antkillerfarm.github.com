@@ -174,6 +174,10 @@ https://mp.weixin.qq.com/s/WQ-8OvF9-fRpRf5lgr5_iw
 
 一种简单有效的网络结构搜索
 
+https://mp.weixin.qq.com/s/g8U2C9bi75mE5OqWLPkgQw
+
+自动化学习框架（AutoML）的性能比较
+
 # Optimizer
 
 在《机器学习（一）》中，我们已经指出梯度下降是解决凸优化问题的一般方法。而如何更有效率的梯度下降，就是本节中Optimizer的责任了。

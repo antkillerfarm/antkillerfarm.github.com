@@ -192,6 +192,10 @@ https://mp.weixin.qq.com/s/L8TlPWBfirF09xKLT3bWVg
 
 最佳学生论文：EPFL&FAIR提出QuaterNet，更好地解决人类动作建模问题
 
+https://mp.weixin.qq.com/s/AmJ4SRgNG8XHNpxPfDOjBg   
+
+Facebook开发姿态转换模型，只需一张照片就能让它跳舞
+
 # 深度目标跟踪
 
 https://zhuanlan.zhihu.com/p/22334661

@@ -340,6 +340,10 @@ https://mp.weixin.qq.com/s/RoiIHPCV3vXAH_sUHhTOYw
 
 为电商而生的知识图谱，如何感应用户需求？
 
+https://mp.weixin.qq.com/s/-D5heoQLfOnp-AcWsJOi7A
+
+哈工大SCIR正式对外发布金融事理图谱Demo V1.0
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/zXABOzbQRV7sfgAhr_WqZw

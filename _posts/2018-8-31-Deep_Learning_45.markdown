@@ -308,3 +308,49 @@ https://mp.weixin.qq.com/s/KvkkmDIY7Y0NBgYF86E2Pw
 
 神经网络突变自动选择AI优化算法，速度提升50000倍！
 
+# GAN进阶（续）
+
+https://mp.weixin.qq.com/s/c84LMFnIhoDeolc1B4MIVA
+
+AI以假乱真怎么办？TequilaGAN教你轻松辨真伪
+
+https://mp.weixin.qq.com/s/fgL6FtjeF-EgG5jjAGDR7A
+
+GANimation让图片秒变GIF表情包，秒杀StarGAN
+
+https://mp.weixin.qq.com/s/NPUJ89nddF1WHfFv2nn-Hg
+
+GANs有嘻哈：一次学完10个GANs明星模型
+
+https://mp.weixin.qq.com/s/yShYrMFKox30jXajXXQPGw
+
+如何让GAN生成更高质量图像？斯坦福大学给你答案
+
+https://mp.weixin.qq.com/s/qiLFQowjH67XECXBlppUDg
+
+对抗深度学习:鱼(模型准确性)与熊掌(模型鲁棒性)能否兼得？
+
+https://mp.weixin.qq.com/s/1SpHGtjkSfDEFCZuudCm0Q
+
+基于GAN和VAE的跨模态图像生成
+
+https://mp.weixin.qq.com/s/02amaVnLFxeLDBsjG-iN1Q
+
+UBC&腾讯AI Lab提出首个模块化GAN架构，搞定任意图像PS组合
+
+https://mp.weixin.qq.com/s/pf0fNSoNDaI9bZvohRX28A
+
+不再使用人眼评估，你训练的GAN还OK吗？ 
+
+https://mp.weixin.qq.com/s/KeXXi5kwvWAfArv13f6VPg
+
+给Cycle-GAN加上时间约束，CMU等提出新型视频转换方法Recycle-GAN
+
+https://mp.weixin.qq.com/s/IzVTkH7fEiS4gAUIyA_IrA
+
+谷歌GAN 实验室来了！迄今最强可视化工具，在浏览器运行GAN
+
+https://mp.weixin.qq.com/s/1jBpz55pPgM8oxlUZLSWXA
+
+ICML2018对抗生成网络论文评述
+

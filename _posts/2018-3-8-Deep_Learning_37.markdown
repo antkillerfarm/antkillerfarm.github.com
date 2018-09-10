@@ -140,6 +140,48 @@ https://blog.csdn.net/u010167269/article/details/51783446
 
 论文中文笔记
 
+## Focal Loss
+
+https://zhuanlan.zhihu.com/p/28442066
+
+何恺明团队提出Focal Loss，目标检测精度高达39.1AP，打破现有记录
+
+https://www.zhihu.com/question/63581984
+
+如何评价Kaiming的Focal Loss for Dense Object Detection？
+
+## OHEM
+
+论文：
+
+《Training Region-based Object Detectors with Online Hard Example Mining》
+
+代码：
+
+https://github.com/abhi2610/ohem
+
+参考：
+
+https://blog.csdn.net/zimenglan_sysu/article/details/51318058
+
+论文笔记
+
+https://blog.csdn.net/Wayne2019/article/details/78945099
+
+OHEM，Batch Hard（识别乱入），Focal Loss
+
+https://blog.csdn.net/Z5337209/article/details/72838049
+
+Faster R-CNN 深入理解 && 改进方法汇总
+
+https://zhuanlan.zhihu.com/p/28202204
+
+困难样本挖掘
+
+https://zhuanlan.zhihu.com/p/34179420
+
+目标检测入门（二）：模型的评测与训练技巧
+
 ## FaceNet
 
 论文：
@@ -205,6 +247,16 @@ Siamese Network理解
 https://vra.github.io/2016/12/13/siamese-caffe/
 
 Caffe中的Siamese网络
+
+## S3FD
+
+https://mp.weixin.qq.com/s/MyA8_yt4YCkFl67AyhpZow
+
+尺度不变人脸检测器（S3FD-Single Shot Scale-invariant Face Detector）
+
+https://github.com/sfzhang15/SFD
+
+S3FD: Single Shot Scale-invariant Face Detector
 
 ## 人脸年龄识别
 
@@ -310,18 +362,6 @@ https://mp.weixin.qq.com/s/ZrnAqDJCLtMy_qTQ2RZT0A
 
 级联MobileNet-V2实现人脸关键点检测
 
-https://mp.weixin.qq.com/s/MyA8_yt4YCkFl67AyhpZow
-
-尺度不变人脸检测器（S3FD-Single Shot Scale-invariant Face Detector）
-
-https://mp.weixin.qq.com/s/b-v_hDHJjUxMithBDr3TcQ
-
-实时旋转鲁棒人脸检测算法
-
-https://blog.csdn.net/xiamentingtao/article/details/50908190
-
-Facial Landmark Detection(人脸特征点检测)
-
 https://mp.weixin.qq.com/s/i4HdS-lCrsv9YR39Hja8ow
 
 深度人脸表情识别技术综述，没有比这更全的了
@@ -337,28 +377,4 @@ https://mp.weixin.qq.com/s/d3aaN4vGAtMfLqOpU9oC6w
 https://mp.weixin.qq.com/s/wcKUURsYiEYVzn7qTMVPag
 
 格灵深瞳：人脸识别最新进展以及工业级大规模人脸识别实践探讨
-
-https://mp.weixin.qq.com/s/Cy5gxHl_Z4v7BX0k8SDNSQ
-
-AI人像美妆算法初识
-
-https://mp.weixin.qq.com/s/Ht8kFTgIWASusfSUQqoaJA
-
-人脸表情识别研究
-
-https://mp.weixin.qq.com/s/qUFjfsDtTQfAEjBCuoWHew
-
-人脸脸型分类研究现状
-
-https://mp.weixin.qq.com/s/5vx1FGgSOhF71FwHeUwaAQ
-
-清华&商汤开源CVPR2018超高精度人脸对齐算法LAB
-
-https://mp.weixin.qq.com/s/PW_fjdC0hzzwmeY3gUXPkw
-
-如何降低遮挡对人脸识别的影响
-
-https://mp.weixin.qq.com/s/UFOB2V12gQQ3mV-Kh9RTUw
-
-高精度人脸表情识别
 
