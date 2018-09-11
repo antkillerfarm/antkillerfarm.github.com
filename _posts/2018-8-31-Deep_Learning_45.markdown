@@ -354,3 +354,6 @@ https://mp.weixin.qq.com/s/1jBpz55pPgM8oxlUZLSWXA
 
 ICML2018对抗生成网络论文评述
 
+https://mp.weixin.qq.com/s/L1nkhc4I6VX2s6S5Tiv0Zw
+
+小白也能搭建深度模型，百度EasyDL的背后你知多少

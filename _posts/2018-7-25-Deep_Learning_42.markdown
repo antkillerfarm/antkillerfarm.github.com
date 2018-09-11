@@ -94,6 +94,18 @@ https://mp.weixin.qq.com/s/3eLL5Xg2mBFWnbYFbW486A
 
 # 人脸识别进阶
 
+https://mp.weixin.qq.com/s/YlrWHDPIPzN4dQO2vo4DjA
+
+人脸颜值研究综述
+
+https://mp.weixin.qq.com/s/d3aaN4vGAtMfLqOpU9oC6w
+
+香港中文大学助理教授吕健勤：面向人脸分析的深度学习方法
+
+https://mp.weixin.qq.com/s/wcKUURsYiEYVzn7qTMVPag
+
+格灵深瞳：人脸识别最新进展以及工业级大规模人脸识别实践探讨
+
 https://mp.weixin.qq.com/s/Cy5gxHl_Z4v7BX0k8SDNSQ
 
 AI人像美妆算法初识
@@ -277,6 +289,10 @@ https://mp.weixin.qq.com/s/9VTpbqwALmxr07pEfdQBCA
 https://mp.weixin.qq.com/s/z726pDBhn5bML5Xho2XCig
 
 人脸对齐与跟踪如何克服遮挡、姿态变化带来的特征点跳变？
+
+https://mp.weixin.qq.com/s/qpP6AzLdgtH6NnIUl4JNpQ
+
+腾讯AI Lab提出正交深度特征分解算法：在多个跨年龄人脸识别任务中创造新记录
 
 # 目标检测进阶
 

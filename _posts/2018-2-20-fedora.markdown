@@ -219,9 +219,19 @@ $$r_N(n-k)=E[u_N(n)u_N^*(k)]$$
 
 其中，$$u_N^*(k)$$是$$u_N(k)$$的复共轭。
 
-频域：功率谱密度（power spectral density, PSD），也称为功率谱（power spectrum）
+频域：
 
-$$U_N(\omega)=\sum_{n=-N}^N$$
+$$U_N(\omega)=\sum_{n=-N}^Nu_N(n)e^{-j\omega n}$$
+
+$$S(\omega)=\lim_{N\to\infty}\frac{1}{N}E[\mid U_N(\omega)\mid^2]=\sum_{l=-\infty}^{+\infty}r(l)e^{-j\omega l}$$
+
+其中，$$S(\omega)$$就是功率谱密度（power spectral density, PSD），也称为功率谱（power spectrum）。
+
+自相关函数和功率谱密度组成了傅立叶变换对，这种关系又被称为EWK（Einstein-Wiener-Khintchine）关系。
+
+>Einstein最早提出idea，Wiener证明了一个特例，Khintchine做了扩展证明。
+
+>Aleksandr Yakovlevich Khinchin，1894～1959，苏联数学家。莫斯科州立大学毕业，并留校任教，直到去世。苏联概率学派的重要人物。苏联科学院院士。概率论中，著名的Khintchine inequality就是他的成果。
 
 参考：
 
@@ -303,3 +313,6 @@ https://mp.weixin.qq.com/s/emuKFxxHoRl3M8Lg3oA9Jw
 
 2018 NLPCC Chinese Grammatical Error Correction论文小结
 
+https://mp.weixin.qq.com/s/2-Uzlp4PBcDC6V0jW35KaQ
+
+NLG ≠ 机器写作

@@ -399,3 +399,7 @@ ICPR图像识别与检测挑战赛冠军方案出炉，基于偏旁部首来识�
 https://mp.weixin.qq.com/s/gxpDyd5Lf0fmNZwFrJJZzg
 
 OCR大突破：Facebook推出大规模图像文字检测识别系统——Rosetta
+
+https://mp.weixin.qq.com/s/JIoTsadw4JBkr0e40RwVQQ
+
+这篇论文开源的车牌识别系统打败了目前最先进的商业软件

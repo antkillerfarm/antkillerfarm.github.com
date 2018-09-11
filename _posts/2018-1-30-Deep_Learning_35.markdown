@@ -196,6 +196,14 @@ https://mp.weixin.qq.com/s/AmJ4SRgNG8XHNpxPfDOjBg
 
 Facebook开发姿态转换模型，只需一张照片就能让它跳舞
 
+https://mp.weixin.qq.com/s/hfnx7dLomPlQz-7OLl66iQ
+
+YOLO遇上OpenPose，近200FPS的高帧数多人姿态检测
+
+https://mp.weixin.qq.com/s/hpWDqyLclqEfWwakFZtBIQ
+
+用DensePose，教照片里的人学跳舞，系群体鬼畜
+
 # 深度目标跟踪
 
 https://zhuanlan.zhihu.com/p/22334661

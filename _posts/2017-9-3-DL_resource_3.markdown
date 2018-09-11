@@ -352,6 +352,10 @@ https://mp.weixin.qq.com/s/hjC-WTMIpbWWpmXoLBfD2g
 
 腾讯大规模分布式机器学习系统无量是如何进行技术选型的？
 
+https://mp.weixin.qq.com/s/mg-d1W5i9rzaLMNrvq0tSQ
+
+32分钟训练神经机器翻译，速度提升45倍
+
 ## 深度ISP
 
 https://mp.weixin.qq.com/s/wA85XFQXeypuoqFnmN2P4g
