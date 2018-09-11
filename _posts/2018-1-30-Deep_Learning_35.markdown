@@ -258,15 +258,11 @@ https://zhuanlan.zhihu.com/p/39614034
 
 基于孪生区域推荐网络的高性能单目标跟踪
 
-https://mp.weixin.qq.com/s/Lmvx_KurxG3nfmvhXAD_tQ
-
-一种轻量级在线多目标车辆跟踪方法
-
 https://mp.weixin.qq.com/s/tr1oWpaRZair9zG5CHWvbg
 
 视觉目标跟踪之DaSiamRPN
 
-# FlowNet
+## FlowNet
 
 论文：
 
@@ -294,7 +290,7 @@ http://blog.csdn.net/bea_tree/article/details/67049373
 
 几分钟走进神奇的光流：FlowNet 2.0: Evolution of Optical Flow Estimation with Deep Networks
 
-# SpyNet
+## SpyNet
 
 论文：
 
@@ -309,6 +305,26 @@ https://github.com/anuragranj/spynet
 http://www.cnblogs.com/wangxiaocvpr/p/7058617.html
 
 论文笔记之：Optical Flow Estimation using a Spatial Pyramid Network
+
+## 多目标追踪
+
+Multiple Object Tracking
+
+https://zhuanlan.zhihu.com/p/34730368
+
+多目标追踪
+
+https://zhuanlan.zhihu.com/p/36462982
+
+多目标追踪算法：条件随机场算法
+
+https://mp.weixin.qq.com/s/Lmvx_KurxG3nfmvhXAD_tQ
+
+一种轻量级在线多目标车辆跟踪方法
+
+https://mp.weixin.qq.com/s/zlo59TVpSq5w6zTwJLjbXg
+
+视觉多目标跟踪算法综述（上）
 
 # Mask R-CNN
 

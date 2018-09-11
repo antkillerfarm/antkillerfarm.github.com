@@ -367,3 +367,12 @@ https://zhuanlan.zhihu.com/p/40984645
 https://mp.weixin.qq.com/s/h4FUBI6w1IPQssebR1eSXw
 
 这是一份非常全面的开源数据集，你，真的不想要吗？
+
+https://mp.weixin.qq.com/s/7xFlELcm325Q6wEB5Pyphg
+
+让AI学会刨根问底和放飞自我，斯坦福最新问答数据集CoQA
+
+https://mp.weixin.qq.com/s/-NQa2VeuskDx5XN9WMCmPQ
+
+腾讯开源业内最大多标签图像数据集，附ResNet-101模型
+

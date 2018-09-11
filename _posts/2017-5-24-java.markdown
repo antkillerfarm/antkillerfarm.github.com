@@ -227,6 +227,10 @@ https://mp.weixin.qq.com/s/DHxEqsTMOyc7pHfmJrfNEg
 
 一篇文章理解JS继承
 
+https://mp.weixin.qq.com/s/tNi5LJmotuXSoHbZhNgPcw
+
+GitHub已完全弃用jQuery，问题是为什么？
+
 # Scala
 
 官网：

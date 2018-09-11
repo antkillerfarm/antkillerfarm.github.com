@@ -243,6 +243,10 @@ http://blog.csdn.net/u011534057/article/category/6396518
 
 GAN系列blog
 
+https://mp.weixin.qq.com/s/f93aCYrxlBFhRn0bgPDiTg
+
+微软剑桥研究院153页最新GAN教程
+
 https://mp.weixin.qq.com/s/4CypEZscTfmUzOk-p_rZog
 
 生成对抗网络初学入门：一文读懂GAN的基本原理
@@ -278,4 +282,3 @@ https://mp.weixin.qq.com/s/QacQCrjh3KmrQSMp-G_rEg
 https://zhuanlan.zhihu.com/p/24897387
 
 GAN的基本原理、应用和走向
-

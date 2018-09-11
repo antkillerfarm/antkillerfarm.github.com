@@ -294,3 +294,12 @@ NAACL2018tutorial深度学习在智能对话系统中应用
 https://mp.weixin.qq.com/s/29vqbjnTkHsq2Fv9ZyMOVQ
 
 COLING 2018 基于目标依赖财经文档表示学习的累积超额收益预测
+
+https://mp.weixin.qq.com/s/nTLxvrxnKRmHl8ZDWxI42Q
+
+结合通用和专用NMT的优势，CMU为NMT引入“语境参数生成器”
+
+https://mp.weixin.qq.com/s/emuKFxxHoRl3M8Lg3oA9Jw
+
+2018 NLPCC Chinese Grammatical Error Correction论文小结
+

@@ -138,6 +138,10 @@ http://blog.csdn.net/ttransposition/article/details/12966521
 
 DPM(Deformable Parts Model)--原理
 
+https://mp.weixin.qq.com/s/BFL2PhAojZ5zHstgTrhlrw
+
+悉尼大学欧阳万里等人30页最新目标检测综述
+
 ## CV实践的难点
 
 从理论上说，无论是传统CV，还是新近崛起的DL CV，其本质都是通过比对目标图片和训练图片的相似度，从而得到识别的结果。
