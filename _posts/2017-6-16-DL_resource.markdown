@@ -482,3 +482,6 @@ https://mp.weixin.qq.com/s/YVNuuH0yyZx0_L4ch6gcbw
 
 220页深度神经网络训练归一化: 数学基础与理论、挑战
 
+https://mp.weixin.qq.com/s/E7ajoDSxEGktqYuEfFo33A
+
+220页深度神经网络基础、理论与挑战PPT

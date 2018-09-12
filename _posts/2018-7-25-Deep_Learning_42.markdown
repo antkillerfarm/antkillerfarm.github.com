@@ -352,6 +352,10 @@ https://zhuanlan.zhihu.com/p/41865617
 
 CornerNet：目标检测算法新思路
 
+https://mp.weixin.qq.com/s/e6B22xpue_xZwrXmIlZodw
+
+ECCV-2018最佼佼者CornerNet的目标检测算法
+
 https://zhuanlan.zhihu.com/p/41897137
 
 物体检测中的结构推理网络

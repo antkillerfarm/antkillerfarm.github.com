@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Roy Vagelos & Merck, 入行以来涉及的技术简史（二）, Thach Weave
+title: Roy Vagelos & Merck, Thach Weave
 category: essay 
 ---
 

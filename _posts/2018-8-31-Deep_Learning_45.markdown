@@ -86,6 +86,10 @@ https://mp.weixin.qq.com/s/lZOIK5BRXZrmL_Z9crl6sA
 
 机器翻译新突破！“普适注意力”模型：概念简单参数少，性能大增
 
+https://mp.weixin.qq.com/s/JoTzaInn_uAA9oZgMcfskw
+
+计算机视觉技术self-attention最新进展
+
 # 多任务学习
 
 https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA
@@ -210,6 +214,10 @@ https://mp.weixin.qq.com/s/01D9wYK92i4PjjGcwFTxOw
 
 揭秘阿里巴巴神奇的人物抠图算法内幕
 
+https://mp.weixin.qq.com/s/sjD36kUDQ5iCmIKpR8_rlA   
+
+双重注意力网络：中科院自动化所提出新的自然场景图像分割框架
+
 # AutoDL
 
 DL领域目前存在的主要问题之一是：如何设计网络结构和调整超参数。目前的做法，通常依赖于作者的直觉，属于典型的拍脑袋想点子。
@@ -226,7 +234,21 @@ Google的这两篇论文在这里做了一些尝试：
 
 这里学到的模型，一般被称为NASNet。
 
-参考：
+## 工具
+
+https://mp.weixin.qq.com/s/9OZiFgziY8fMn-lkmdtiqQ
+
+终结谷歌AutoML的真正杀手！Saleforce开源TransmogrifAI
+
+https://mp.weixin.qq.com/s/GFjYzxf6IdKPvkij8-i_Dg
+
+调参工要凉？微软重磅开源AutoML工具包NNI
+
+https://mp.weixin.qq.com/s/L1nkhc4I6VX2s6S5Tiv0Zw
+
+小白也能搭建深度模型，百度EasyDL的背后你知多少
+
+## 参考
 
 https://mp.weixin.qq.com/s/Ia-8qFLAyY65Nai5PGAw0w
 
@@ -290,7 +312,7 @@ https://mp.weixin.qq.com/s/GLiOZjqC9DSvGEX3xqbHJg
 
 https://mp.weixin.qq.com/s/DLpMVOmkvpWqlHIAZojwog
 
-一文看懂深度学习新王者「AutoML」：是什么、怎么用、未来如何发展？
+一文看懂深度学习新王者“AutoML”：是什么、怎么用、未来如何发展？
 
 https://mp.weixin.qq.com/s/X6m4ZHDKY4gC-v0YN5g4YA
 
@@ -354,6 +376,3 @@ https://mp.weixin.qq.com/s/1jBpz55pPgM8oxlUZLSWXA
 
 ICML2018对抗生成网络论文评述
 
-https://mp.weixin.qq.com/s/L1nkhc4I6VX2s6S5Tiv0Zw
-
-小白也能搭建深度模型，百度EasyDL的背后你知多少

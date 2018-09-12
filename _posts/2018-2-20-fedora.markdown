@@ -213,25 +213,55 @@ https://mp.weixin.qq.com/s/66lY17sOO83Q-xhvQi72dw
 
 随机过程（设时间序列为$$u(n)$$）二阶统计：
 
-时域——自相关函数：
+时域——**自相关函数**：
 
-$$r_N(n-k)=E[u_N(n)u_N^*(k)]$$
+$$r_N(n-k)=E[u_N(n)u_N^*(k)]\tag{1}$$
 
 其中，$$u_N^*(k)$$是$$u_N(k)$$的复共轭。
 
 频域：
 
-$$U_N(\omega)=\sum_{n=-N}^Nu_N(n)e^{-j\omega n}$$
+$$U_N(\omega)=\sum_{n=-N}^Nu_N(n)e^{-j\omega n}\tag{2}$$
 
-$$S(\omega)=\lim_{N\to\infty}\frac{1}{N}E[\mid U_N(\omega)\mid^2]=\sum_{l=-\infty}^{+\infty}r(l)e^{-j\omega l}$$
+$$S(\omega)=\lim_{N\to\infty}\frac{1}{N}E[\mid U_N(\omega)\mid^2]=\sum_{l=-\infty}^{+\infty}r(l)e^{-j\omega l}\tag{3}$$
 
-其中，$$S(\omega)$$就是功率谱密度（power spectral density, PSD），也称为功率谱（power spectrum）。
+其中，$$S(\omega)$$就是**功率谱密度（power spectral density, PSD）**，也称为功率谱（power spectrum）。
 
-自相关函数和功率谱密度组成了傅立叶变换对，这种关系又被称为EWK（Einstein-Wiener-Khintchine）关系。
+自相关函数和功率谱密度组成了傅立叶变换对，这种关系又被称为**EWK（Einstein-Wiener-Khintchine）关系**。
 
 >Einstein最早提出idea，Wiener证明了一个特例，Khintchine做了扩展证明。
 
 >Aleksandr Yakovlevich Khinchin，1894～1959，苏联数学家。莫斯科州立大学毕业，并留校任教，直到去世。苏联概率学派的重要人物。苏联科学院院士。概率论中，著名的Khintchine inequality就是他的成果。
+
+在频域上，我们有Nyquist频率，相应的在时域上，我们也有**Nyquist间隔**：在这个间隔之外，$$S(\omega)$$是周期性的。
+
+**离散时间随机过程的功率谱密度是非负实函数。**
+
+$$S_o(\omega)=\mid H(e^{j\omega})\mid S(\omega)\tag{4}$$
+
+其中，H为系统函数，$$S_o$$输出信号的功率谱密度。
+
+功率谱密度的Cramér表示：
+
+$$u(n)=\frac{1}{2\pi}\int_{-\pi}^{\pi}e^{j\omega n}\mathrm{d}Z(\omega)\tag{5}$$
+
+其中，$$\mathrm{d}Z(\omega)$$被称为**增量过程（increment process）**。
+
+>Harald Cramér，1893～1985，瑞典数学家、统计学家。Stockholm University博士（1917）、教授、校长、瑞典高等教育系统大臣。被誉为“统计理论的巨人”。
+
+由公式2和5，可得：
+
+$$U_N(\omega)=\frac{1}{2\pi}\int_{-\pi}^{\pi}\sum_{n=-N}^N e^{(-j(\omega-v) n)}\mathrm{d}Z(v)\tag{6}$$
+
+我们定义：
+
+$$K_N(\omega)=\sum_{n=-N}^N e^{j\omega n}=\frac{\sin((2N+1)\omega/2)}{\sin(\omega/2)}\tag{7}$$
+
+则公式6可改写为：
+
+$$U_N(\omega)=\frac{1}{2\pi}\int_{-\pi}^{\pi}K_N(\omega-v)\mathrm{d}Z(v)\tag{8}$$
+
+这里的K被称作Dirichlet Kernel。参见《数学狂想曲（一）》的相关章节。
 
 参考：
 
@@ -255,64 +285,3 @@ https://www.zhihu.com/question/29520851
 
 http://www.topologywithouttears.net/topbookchinese.pdf
 
-# NLP参考资源
-
-https://mp.weixin.qq.com/s/pXmYJA6-1vtHTwTNanLovQ
-
-Encoder-Decoder自动生成对联，要试试么？
-
-https://mp.weixin.qq.com/s/_SfY-JZsUEKReSoI6qHg9w
-
-TA-NMT：利用大语种语料，提升小语种神经机器翻译能力
-
-https://mp.weixin.qq.com/s/6_FHq8IrkAW_Y5FSYcJ0fw
-
-CMU与谷歌大脑联合出品：62页PPT带你理解SQuAD大赛冠军--QANet
-
-https://mp.weixin.qq.com/s/uL7J5cSU3P7QsFczvT1fTA
-
-基于深度学习的文本分类6大算法-原理、结构、论文、源码打包分享
-
-https://mp.weixin.qq.com/s/uWMGJmiEfahRql1sn1B0hA
-
-通过全新学习和推断机制提升seq2seq模型的语法改错性能
-
-https://mp.weixin.qq.com/s/_O4YqFK2xkFuB4nTbcu1cw
-
-哈佛NLP组论文解读：基于隐变量的注意力模型
-
-https://mp.weixin.qq.com/s/6BIspcIQrn7k3VQ9NP63Ng
-
-DeepMind提出空间语言集成模型SLIM，有效编码自然语言的空间关系
-
-https://mp.weixin.qq.com/s/eehpqW2H3wWCOa6r8jbEvQ
-
-ACL 2018 鲁棒、无偏的NLP训练方法
-
-https://mp.weixin.qq.com/s/ffuiRE0qbglhVz__Z6FD7A
-
-这里可能是对机器智能中的文本情感计算最全面的概括了
-
-https://mp.weixin.qq.com/s/S6qSU6CGUMsqYaIPCEVhxA
-
-剖析CNN句子分类任务
-
-https://mp.weixin.qq.com/s/e6YXItElVa5iaY8Txi8wzA
-
-NAACL2018tutorial深度学习在智能对话系统中应用
-
-https://mp.weixin.qq.com/s/29vqbjnTkHsq2Fv9ZyMOVQ
-
-COLING 2018 基于目标依赖财经文档表示学习的累积超额收益预测
-
-https://mp.weixin.qq.com/s/nTLxvrxnKRmHl8ZDWxI42Q
-
-结合通用和专用NMT的优势，CMU为NMT引入“语境参数生成器”
-
-https://mp.weixin.qq.com/s/emuKFxxHoRl3M8Lg3oA9Jw
-
-2018 NLPCC Chinese Grammatical Error Correction论文小结
-
-https://mp.weixin.qq.com/s/2-Uzlp4PBcDC6V0jW35KaQ
-
-NLG ≠ 机器写作

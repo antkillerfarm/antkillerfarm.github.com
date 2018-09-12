@@ -126,6 +126,14 @@ https://mp.weixin.qq.com/s/ZU6NN-jdKzYeSnJweP-E0g
 
 Pixel2Mesh：从单帧RGB图像生成三维网格模型
 
+https://mp.weixin.qq.com/s/pK8zt6UFXtSIS9GAQNgICw
+
+超越像素平面：聚焦3D深度学习的现在和未来
+
+https://mp.weixin.qq.com/s/gRFq44pnhRScO9p3M15Gfw
+
+基于三维重建的全新相机姿态估计方法
+
 # 元学习
 
 https://mp.weixin.qq.com/s/KKK3VEpwL90g6Aro8qtXxQ

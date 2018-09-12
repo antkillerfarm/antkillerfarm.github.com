@@ -112,10 +112,6 @@ https://mp.weixin.qq.com/s/__ESveAdBS9KJf26R3EMVA
 
 对比TensorFlow提升树与XGBoost：我们该使用怎样的梯度提升方法
 
-https://mp.weixin.qq.com/s/TD3RbdDidCrcL45oWpxNmw
-
-从结构到性能，一文概述XGBoost、Light GBM和CatBoost的同与不同
-
 https://mp.weixin.qq.com/s/_uscpKaRXZbwfMiWGoY0Uw
 
 多GPU加速学习，这是一份崭新的XGBoost库
@@ -169,6 +165,18 @@ lightgbm算法优化-不平衡二分类问题
 https://mp.weixin.qq.com/s/JQasgzl-EpqBey7W6jKCTw
 
 LightGBM大战XGBoost，谁将夺得桂冠？
+
+http://blog.csdn.net/xwd18280820053/article/details/68927422
+
+关于树的几个ensemble模型的比较（GBDT、xgBoost、lightGBM、RF）
+
+https://mp.weixin.qq.com/s/TD3RbdDidCrcL45oWpxNmw
+
+从结构到性能，一文概述XGBoost、Light GBM和CatBoost的同与不同
+
+https://mp.weixin.qq.com/s/8IFKL0thCMBh40wUolbTVw
+
+从XGB到LGB：美团外卖树模型的迭代之路
 
 # CatBoost
 

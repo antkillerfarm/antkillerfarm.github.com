@@ -232,6 +232,10 @@ https://mp.weixin.qq.com/s/l33D8zNtHVcaMjlw4IY05g
 
 想让照片里的美女“回头”？清华MIT谷歌用AI帮你实现了
 
+https://mp.weixin.qq.com/s/s6VHo8QW9OENMrbqfp6--w
+
+视频换脸新境界：CMU不仅给人类变脸，还能给花草、天气变脸
+
 # Graph NN
 
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw

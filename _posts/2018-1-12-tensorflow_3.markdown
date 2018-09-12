@@ -427,3 +427,7 @@ https://mp.weixin.qq.com/s/84Rk5CP2uLaCBIifL465VQ
 
 从统计到概率，入门者都能用Python试验的机器学习基础
 
+https://mp.weixin.qq.com/s/7rTmEBfh613SrNnTQvfSjw
+
+懒人福利：不写代码调优深度模型，谷歌开源的“What-If”了解一下
+

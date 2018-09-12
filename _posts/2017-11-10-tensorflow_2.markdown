@@ -8,6 +8,17 @@ category: AI
 
 ## 模型文件（续）
 
+### 保存模型
+
+{% highlight python %}
+w1 = tf.Variable(tf.random_normal(shape=[2]), name='w1')
+w2 = tf.Variable(tf.random_normal(shape=[5]), name='w2')
+saver = tf.train.Saver()
+sess = tf.Session()
+sess.run(tf.global_variables_initializer())
+saver.save(sess, 'my_test_model')
+{% endhighlight %}
+
 ### 加载模型
 
 {% highlight python %}
@@ -77,20 +88,6 @@ decoder = { tf.equal(image_ext, '.png'):  decode_png,
             tf.equal(image_ext, '.jpg'):  decode_jpg}
 image_tensor = tf.case(decoder, default = decode_png, exclusive = True)
 {% endhighlight %}
-
-## 可视化神经网络结构
-
-`writer = tf.summary.FileWriter("logs/", sess.graph)`
-
-然后
-
-`tensorboard --logdir='logs/'`
-
-参考：
-
-http://blog.csdn.net/u013082989/article/details/53510625
-
-TensorFlow学习_01_安装_基本操作_可视化结构、过程_Mnist
 
 ## 权值保持不变
 

@@ -298,10 +298,6 @@ https://mp.weixin.qq.com/s/tgUguHC56FjgBdUGyg8yRg
 
 Oracle开源GraphPipe：几行代码让你在TensorFlow部署PyTorch模型
 
-https://mp.weixin.qq.com/s/9OZiFgziY8fMn-lkmdtiqQ
-
-终结谷歌AutoML的真正杀手！Saleforce开源TransmogrifAI
-
 ## gcForest
 
 http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw

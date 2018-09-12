@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十一）——loss function详解, 机器学习分类器性能指标
+title:  机器学习（二十一）——Loss function详解, 机器学习分类器性能指标
 category: ML 
 ---
 
@@ -144,7 +144,7 @@ https://mp.weixin.qq.com/s/J9OmqFzQK-GS95FjgAJkTw
 
 浅析PageRank算法
 
-# loss function详解
+# Loss function详解
 
 ![](/images/img2/loss.png)
 
@@ -241,6 +241,10 @@ pytorch loss function总结
 https://mp.weixin.qq.com/s/Xbi5iOh3xoBIK5kVmqbKYA
 
 机器学习大牛是如何选择回归损失函数的？
+
+https://mp.weixin.qq.com/s/f29WSb_xZxY1S_MP3Yp0dg
+
+机器学习中常用的损失函数你知多少？
 
 # 机器学习分类器性能指标
 

@@ -194,10 +194,6 @@ https://mp.weixin.qq.com/s/PkUPGnsfCjiGPJpOmjACkA
 
 Bagging与随机森林
 
-http://blog.csdn.net/xwd18280820053/article/details/68927422
-
-关于树的几个ensemble模型的比较（GBDT、xgBoost、lightGBM、RF）
-
 https://mp.weixin.qq.com/s/XbrnhlxUbmK0JzQ4I_X2wQ
 
 决策树之随机森林
