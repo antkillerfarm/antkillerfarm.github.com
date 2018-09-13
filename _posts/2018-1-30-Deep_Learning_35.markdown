@@ -270,6 +270,10 @@ https://mp.weixin.qq.com/s/tr1oWpaRZair9zG5CHWvbg
 
 视觉目标跟踪之DaSiamRPN
 
+https://mp.weixin.qq.com/s/Nd5XLnncXRawu4V8TOzHxg
+
+视觉物体跟踪新进展：让跟踪器读懂目标语义信息
+
 ## FlowNet
 
 论文：

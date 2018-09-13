@@ -356,48 +356,40 @@ https://mp.weixin.qq.com/s/mg-d1W5i9rzaLMNrvq0tSQ
 
 32分钟训练神经机器翻译，速度提升45倍
 
-## 深度ISP
+## 深度哈希
 
-https://mp.weixin.qq.com/s/wA85XFQXeypuoqFnmN2P4g
+https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg
 
-降噪的新时代
+深度离散哈希算法，可用于图像检索！
 
-https://mp.weixin.qq.com/s/919VEvennHEG3iXKkMZoQQ
+https://mp.weixin.qq.com/s/XUYJub0559wwQ9H1wA_SAg
 
-不止是去噪---从去噪看AI ISP的趋势
+机器学习时代的哈希算法，将如何更高效地索引数据
 
-https://mp.weixin.qq.com/s/1HA6XKnWpqVd8k7IIfzB7w
+https://mp.weixin.qq.com/s/YVIvdMznb3oatIXqD5a5_A
 
-利用卷积自编码器对图片进行降噪
+陈天奇等人提出AutoTVM：让AI来编译优化AI系统底层算子
 
-https://zhuanlan.zhihu.com/p/39512000
+https://mp.weixin.qq.com/s/vFBlFAQLvDZP7IvwKoaPhA
 
-Noise2Noise：图像降噪，无需干净样本
+无问西东，只问哈希
 
-https://mp.weixin.qq.com/s/_tvOQPvybqmvLF19kHcbFg
+https://mp.weixin.qq.com/s/XAxuLg2i3q5_uKDo1wU_rA
 
-北大开源ECCV2018深度去雨算法：RESCAN
+从哈希到卷积神经网络：高精度&低功耗
 
-https://mp.weixin.qq.com/s/Wdxkvlz4nLbJS_gWqHwMjw
+https://mp.weixin.qq.com/s/i8iQtCC7ahXLY1a1wOacsA
 
-无需额外硬件，全卷积网络让机器学习学会夜视能力
+Science：最新发现哈希可能是大脑的通用计算原理
 
-## 行业
+https://mp.weixin.qq.com/s/ZOVWXNym5yHoo-MmpxXo0A
 
-李开复的这篇文章不可不读：
+自监督对抗哈希SSAH：当前最佳的跨模态检索框架
 
-https://mp.weixin.qq.com/s/OLIO4UIZUuzjX5oQbn3Tug
+https://mp.weixin.qq.com/s/VldzlYg5AfDRho8bsROL_g
 
-拥抱人工智能的中国：现状和展望（上）
+HashGAN:基于注意力机制的深度对抗哈希模型提升跨模态检索效果
 
-https://mp.weixin.qq.com/s/KbKlgRAfjP_39WdXh7gOLg
+https://mp.weixin.qq.com/s/3Z2Zc8zTq2uiPyw7ZuuZfw
 
-拥抱人工智能的中国：现状和展望（下）
-
-https://mp.weixin.qq.com/s/hoo34-eMcYV7hV6LFbJqcg
-
-10分钟带你读完人工智能的三生三世
-
-https://mp.weixin.qq.com/s/yAC6VTOl3jAxjUT0QbTVrw
-
-为什么要在边缘设备部署机器学习？
+解密美图大规模多媒体数据检索技术DeepHash

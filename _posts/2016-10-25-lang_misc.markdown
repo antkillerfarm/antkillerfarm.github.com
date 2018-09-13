@@ -338,3 +338,7 @@ https://mp.weixin.qq.com/s/NJf5e25tvT_xKXLD7UY1AQ
 
 MySQL智能调度系统。这篇blog其实和MySQL关系不大，算是DL在负载均衡方面的应用吧。
 
+https://mp.weixin.qq.com/s/VdMYtZfH0yBNWMbiuGElOg
+
+商汤及联合实验室入选论文重点解读：ECCV 2018
+

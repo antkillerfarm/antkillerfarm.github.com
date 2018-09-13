@@ -304,6 +304,10 @@ https://mp.weixin.qq.com/s/O_BYzrw5YAbLkfVDqcmwmw
 
 36页最新《深度学习在推荐系统上的应用》综述论文，209篇参考论文
 
+https://mp.weixin.qq.com/s/frUPjpCQGlZc7Dag_v7r3A
+
+2018年最全的推荐系统干货
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

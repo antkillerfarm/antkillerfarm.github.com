@@ -236,6 +236,10 @@ https://mp.weixin.qq.com/s/s6VHo8QW9OENMrbqfp6--w
 
 视频换脸新境界：CMU不仅给人类变脸，还能给花草、天气变脸
 
+https://mp.weixin.qq.com/s/UySQTv8uuGungjxFNeHbRw
+
+给动漫人物轻松换装、编舞，这家游戏公司用GAN做到了！
+
 # Graph NN
 
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw

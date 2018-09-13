@@ -320,6 +320,10 @@ https://blog.csdn.net/jinzhuojun/article/details/78508203
 
 常用增强学习实验环境 II (ViZDoom, Roboschool, TensorFlow Agents, ELF, Coach等)
 
+https://mp.weixin.qq.com/s/0oVG7zMi08dzMQrk43T3mw
+
+像训练Dota2一样训练真实机器人？Gibson Environment环境了解一下
+
 # 推荐系统的工程细节
 
 推荐系统不仅是算法，还包括若干工程细节。这些细节虽然不算复杂，够不上算法的层面，然而对产品的成败，却有举足轻重的作用。

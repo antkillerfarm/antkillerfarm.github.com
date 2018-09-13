@@ -286,6 +286,10 @@ https://www.jianshu.com/p/940d21c79aa3
 
 Deformable Convolution Networks
 
+https://mp.weixin.qq.com/s/aLvlLi97JTd_cCfCZfraIg
+
+“不正经”的卷积神经网络
+
 ## 3D卷积
 
 3D卷积一般用于视频（2D图像+1D时序）和医学影像（3D立体图像）的分析处理中。

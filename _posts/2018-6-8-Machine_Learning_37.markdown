@@ -56,6 +56,10 @@ https://mp.weixin.qq.com/s/7ohIh_dVfzNyt7TpBlCFYw
 
 机器学习算法KNN简介及实现
 
+https://mp.weixin.qq.com/s/NukVEGgbqVx0S-LlBNrb-Q
+
+以前你可能一直用错“K均值聚类”？
+
 # Optimizer进阶
 
 ## AdaSecant

@@ -135,9 +135,33 @@ Install TightVNC Server in RHEL/CentOS and Fedora to Access Remote Desktops
 
 区域：连续<可导（可微）=可解析
 
-3.函数可微的充要条件：Cauchy-Riemann Equations
+由于复平面的存在，极限$$z\to z_0$$中，趋向于点$$z_0$$的路径有无穷多种，必须所有路径的极限都存在且一致，才可以说极限$$z\to z_0$$存在。
+
+3.函数可微的充要条件：**Cauchy-Riemann Equations**
+
+若$$f(x + iy) = u(x,y) + iv(x,y)$$可导，则：
+
+1）$$u(x,y)$$和$$v(x,y)$$在点$$(x,y)$$可导。
+
+2）
+
+$$\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y},\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$$
 
 4.复数在场论描述中的应用。
+
+## 复数求导
+
+信号处理领域，很多需要求导的函数往往是不解析的。比如一系列的二乘loss：MSE、LS、WLS等。这些函数都包含$$\mid e(k)\mid^2=zz^*$$的成分。然而，这个函数是不可导的。
+
+$$zz^*=x^2+y^2$$
+
+所以
+
+$$\frac{\partial u}{\partial x}=2x,\frac{\partial v}{\partial x}=0$$
+
+上式显然不满足Cauchy-Riemann Equations，因此函数不可导。
+
+
 
 参考：
 
@@ -252,36 +276,4 @@ $$u(n)=\frac{1}{2\pi}\int_{-\pi}^{\pi}e^{j\omega n}\mathrm{d}Z(\omega)\tag{5}$$
 由公式2和5，可得：
 
 $$U_N(\omega)=\frac{1}{2\pi}\int_{-\pi}^{\pi}\sum_{n=-N}^N e^{(-j(\omega-v) n)}\mathrm{d}Z(v)\tag{6}$$
-
-我们定义：
-
-$$K_N(\omega)=\sum_{n=-N}^N e^{j\omega n}=\frac{\sin((2N+1)\omega/2)}{\sin(\omega/2)}\tag{7}$$
-
-则公式6可改写为：
-
-$$U_N(\omega)=\frac{1}{2\pi}\int_{-\pi}^{\pi}K_N(\omega-v)\mathrm{d}Z(v)\tag{8}$$
-
-这里的K被称作Dirichlet Kernel。参见《数学狂想曲（一）》的相关章节。
-
-参考：
-
-https://www.zhihu.com/question/29520851
-
-功率谱密度如何理解？
-
-# 张量分析
-
-在同构的意义下，第零阶张量（r = 0）为标量（Scalar），第一阶张量（r = 1）为向量（Vector），第二阶张量（r = 2）则成为矩阵（Matrix）。
-
-《张量分析》，黄克智著。
-
->注：黄克智，1927年生，固体力学家。江西中正大学本科+清华硕士+莫斯科大学博士（因应召回国，放弃博士学位）。清华大学工程力学系教授、工程力学研究所所长，中国科学院院士。断裂力学领域权威。
-
-# 拓扑学
-
-《Topopogy Without Tears》，University of New South Wales的Sidney A. Morris著。
-
-该书的中文版：
-
-http://www.topologywithouttears.net/topbookchinese.pdf
 

@@ -220,6 +220,14 @@ https://www.ailab.microsoft.com/
 
 MS AI Lab。这里的很多项目都是开源的，但貌似用的是TF。看来MS自家的CNTK，就连自己人都不想用。
 
+https://mp.weixin.qq.com/s/azHvzRcvupdbw_cJ2BsKAw
+
+计算机视觉三大会议之——ECCV 2018 观看指南
+
+https://eccv2018.org/program/workshops_tutorials/
+
+ECCV 2018的教程和专题
+
 ## 项目集锦
 
 https://mp.weixin.qq.com/s/ZNNgEB9rFjAE8SdfMo9NLA
@@ -346,9 +354,11 @@ https://mp.weixin.qq.com/s/b0LZ2-4_hCqvxICMGzkqjg
 
 https://zhuanlan.zhihu.com/p/25549497
 
+126篇殿堂级深度学习论文分类整理 从入门到应用（上）
+
 https://zhuanlan.zhihu.com/p/25549585
 
-126篇殿堂级深度学习论文分类整理 从入门到应用（上）（下）
+126篇殿堂级深度学习论文分类整理 从入门到应用（下）
 
 https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap
 
@@ -465,23 +475,3 @@ https://mp.weixin.qq.com/s/47S-iGFzZtXcSIgIC4w0FA
 https://mp.weixin.qq.com/s/qpqqeSaRwQyBJlo3P25q6g
 
 如何从零开始构建深度学习项目？这里有一份详细的教程
-
-https://mp.weixin.qq.com/s/AEyr7FNeIHprprs9k7HE9w
-
-这些神经网络调参细节，你都了解了吗
-
-https://mp.weixin.qq.com/s/S6_HzgyTnoNvc8vp4_C1kw
-
-利用Matlab实现深度学习
-
-https://mp.weixin.qq.com/s/z360mTVRqeDFMBiJ0Q_9SQ
-
-调参心得：超参数优化之旅
-
-https://mp.weixin.qq.com/s/YVNuuH0yyZx0_L4ch6gcbw
-
-220页深度神经网络训练归一化: 数学基础与理论、挑战
-
-https://mp.weixin.qq.com/s/E7ajoDSxEGktqYuEfFo33A
-
-220页深度神经网络基础、理论与挑战PPT

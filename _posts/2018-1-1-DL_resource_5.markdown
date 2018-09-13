@@ -20,6 +20,52 @@ https://mp.weixin.qq.com/s/IheyYAC1yIigYOW-gtc5Eg
 
 Science重磅！用光速实现深度学习，跟GPU说再见
 
+## 深度ISP
+
+https://mp.weixin.qq.com/s/wA85XFQXeypuoqFnmN2P4g
+
+降噪的新时代
+
+https://mp.weixin.qq.com/s/919VEvennHEG3iXKkMZoQQ
+
+不止是去噪---从去噪看AI ISP的趋势
+
+https://mp.weixin.qq.com/s/1HA6XKnWpqVd8k7IIfzB7w
+
+利用卷积自编码器对图片进行降噪
+
+https://zhuanlan.zhihu.com/p/39512000
+
+Noise2Noise：图像降噪，无需干净样本
+
+https://mp.weixin.qq.com/s/_tvOQPvybqmvLF19kHcbFg
+
+北大开源ECCV2018深度去雨算法：RESCAN
+
+https://mp.weixin.qq.com/s/Wdxkvlz4nLbJS_gWqHwMjw
+
+无需额外硬件，全卷积网络让机器学习学会夜视能力
+
+## 行业
+
+李开复的这篇文章不可不读：
+
+https://mp.weixin.qq.com/s/OLIO4UIZUuzjX5oQbn3Tug
+
+拥抱人工智能的中国：现状和展望（上）
+
+https://mp.weixin.qq.com/s/KbKlgRAfjP_39WdXh7gOLg
+
+拥抱人工智能的中国：现状和展望（下）
+
+https://mp.weixin.qq.com/s/hoo34-eMcYV7hV6LFbJqcg
+
+10分钟带你读完人工智能的三生三世
+
+https://mp.weixin.qq.com/s/yAC6VTOl3jAxjUT0QbTVrw
+
+为什么要在边缘设备部署机器学习？
+
 ## 参考
 
 https://mp.weixin.qq.com/s/ZV32xDgGTriIAUbHohc90Q
@@ -350,30 +396,3 @@ https://zhuanlan.zhihu.com/p/36527644
 
 Learning with Noise: Enhance Distantly Supervised Relation Extraction with Dynamic Transition Matrix——一种对噪音数据显式建模的方法
 
-https://mp.weixin.qq.com/s/gPI6Vq6smDn8IiKhGe61bA
-
-用深度学习DIY自动化监控系统
-
-https://mp.weixin.qq.com/s/JkYFx4tN2x8y5tYPyonE9g
-
-建模任务相关注视点转移，实现第一人称视频注视点的准确估计
-
-https://mp.weixin.qq.com/s/OCSe_o6bJjOYNEpYaOQ_Cg
-
-最大化互信息来学习深度表示，Bengio等提出Deep INFOMAX
-
-https://mp.weixin.qq.com/s/2If152RIpW7w_0HkF8j4Lw
-
-Deep Unrolling：深度网络与传统模型之间的桥梁
-
-https://mp.weixin.qq.com/s/VvU8OfXKJiyEKaujWfCrWw
-
-上海交通大学ECCV 2018四篇入选论文解读
-
-https://mp.weixin.qq.com/s/_IkE5NPYjpT2QGVo9mfWvA
-
-MIT&谷歌视频运动放大让计算机辅助人眼“明察秋毫” 
-
-https://mp.weixin.qq.com/s/yOuK39WdkfvyV36c1_SOnQ
-
-社会媒体数据挖掘与信息传播预测

@@ -8,6 +8,34 @@ category: resource
 
 ## 教程（续）
 
+https://mp.weixin.qq.com/s/AEyr7FNeIHprprs9k7HE9w
+
+这些神经网络调参细节，你都了解了吗
+
+https://mp.weixin.qq.com/s/S6_HzgyTnoNvc8vp4_C1kw
+
+利用Matlab实现深度学习
+
+https://mp.weixin.qq.com/s/z360mTVRqeDFMBiJ0Q_9SQ
+
+调参心得：超参数优化之旅
+
+https://mp.weixin.qq.com/s/YVNuuH0yyZx0_L4ch6gcbw
+
+220页深度神经网络训练归一化: 数学基础与理论、挑战
+
+https://mp.weixin.qq.com/s/E7ajoDSxEGktqYuEfFo33A
+
+220页深度神经网络基础、理论与挑战PPT
+
+https://mp.weixin.qq.com/s/35vcaVsFPRTEWQ1ZP9y51Q
+
+228页教程全面理解视觉定位技术
+
+https://mp.weixin.qq.com/s/1MzoBW3e_crV1n-MMWjATg
+
+308页教程介绍最新几何对象映射技术，functional maps
+
 https://mp.weixin.qq.com/s/miKs4tWu8Hh1yHvx-XZFwg
 
 构建深度神经网络，我有20条“不成熟”的小建议
@@ -373,42 +401,3 @@ https://mp.weixin.qq.com/s/G8Xj_G9rxI4SinX0VZ35WA
 https://mp.weixin.qq.com/s/su2F2F3dtl6W-WNuQHNpJg
 
 不使用深度学习，进化算法也能玩Atari游戏！
-
-## 深度哈希
-
-https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg
-
-深度离散哈希算法，可用于图像检索！
-
-https://mp.weixin.qq.com/s/XUYJub0559wwQ9H1wA_SAg
-
-机器学习时代的哈希算法，将如何更高效地索引数据
-
-https://mp.weixin.qq.com/s/YVIvdMznb3oatIXqD5a5_A
-
-陈天奇等人提出AutoTVM：让AI来编译优化AI系统底层算子
-
-https://mp.weixin.qq.com/s/vFBlFAQLvDZP7IvwKoaPhA
-
-无问西东，只问哈希
-
-https://mp.weixin.qq.com/s/XAxuLg2i3q5_uKDo1wU_rA
-
-从哈希到卷积神经网络：高精度&低功耗
-
-https://mp.weixin.qq.com/s/i8iQtCC7ahXLY1a1wOacsA
-
-Science：最新发现哈希可能是大脑的通用计算原理
-
-https://mp.weixin.qq.com/s/ZOVWXNym5yHoo-MmpxXo0A
-
-自监督对抗哈希SSAH：当前最佳的跨模态检索框架
-
-https://mp.weixin.qq.com/s/VldzlYg5AfDRho8bsROL_g
-
-HashGAN:基于注意力机制的深度对抗哈希模型提升跨模态检索效果
-
-https://mp.weixin.qq.com/s/3Z2Zc8zTq2uiPyw7ZuuZfw
-
-解密美图大规模多媒体数据检索技术DeepHash
-

@@ -201,15 +201,15 @@ http://blog.csdn.net/u012436149
 
 一个TensorFlow+PyTorch的blog
 
-## 我的TensorFlow实践
+# 我的TensorFlow实践
 
-### MNIST+Softmax
+## MNIST+Softmax
 
 代码：
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_mnist.py
 
-### MNIST+CNN
+## MNIST+CNN
 
 代码：
 
@@ -217,7 +217,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tenso
 
 第一个例子中，我对CPU的计算能力还没有切肤之痛，但在这里使用CPU差不多要花半个小时时间。。。
 
-### 框架怀古（2017.9）
+## 框架怀古（2017.9）
 
 http://deeplearning.net/
 
@@ -233,15 +233,23 @@ Theano被同样基于计算图的TensorFlow淘汰。2017年9月停止更新。
 
 Torch相对变动最小，它被PyTorch替代。这更可以看作是python对于lua的胜利。
 
-### Tensor2Tensor transformer实战
+## Tensor2Tensor transformer实战
 
-准备数据：
+## 准备数据
 
 tensor2tensor/data_generators/translate_enzh.py
 
+这个脚本包含了很多数据集的下载地址。
+
+## 模型
+
+tensor2tensor/models/transformer.py
+
+这里我采用的是transformer_base_single_gpu的超参，loss可降至0.4左右。如果采用transformer_base的话，就只能降到2.0左右。
 
 
-## 参考
+
+# TensorFlow参考
 
 https://mp.weixin.qq.com/s/t1QFIOq-VBNOrSm0zW-PlQ
 
