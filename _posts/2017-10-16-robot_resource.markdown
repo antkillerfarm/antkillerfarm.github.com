@@ -114,6 +114,10 @@ https://mp.weixin.qq.com/s/6ro9y69h-6yHZ7MfodxUHQ
 
 自动驾驶入门课程第⑥讲 — 预测
 
+https://mp.weixin.qq.com/s/ZBHKDtnaEI9sVCfEfeeUlQ
+
+自动驾驶入门课程第⑦讲 — 规划（上）
+
 ## 术语
 
 LIDAR：LIght Detection And Ranging

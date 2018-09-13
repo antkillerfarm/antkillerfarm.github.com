@@ -379,3 +379,8 @@ https://mp.weixin.qq.com/s/ooX9Hj5ejO6po6Ghb4zOug
 https://zhuanlan.zhihu.com/p/33485388
 
 mixup与paring samples ，ICLR2018投稿论文的数据增广两种方式
+
+https://mp.weixin.qq.com/s/_7xFBLPGT0VRTJ22toHJ3g
+
+深度学习中常用的图像数据增强方法
+

@@ -299,6 +299,10 @@ https://mp.weixin.qq.com/s/Lvd4NfLg0Lzivb4BingV7w
 
 Tensorflow Eager Execution入门指南
 
+https://mp.weixin.qq.com/s/q6bJfCV5kU8BzvWjOXkCDg
+
+简单粗暴TensorFlow Eager教程
+
 https://mp.weixin.qq.com/s/OVWbxBNc4i0_5jgy06xS1A
 
 基于Tensorflow Estimators的文本分类
