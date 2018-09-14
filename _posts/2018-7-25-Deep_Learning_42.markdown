@@ -92,6 +92,10 @@ https://mp.weixin.qq.com/s/3eLL5Xg2mBFWnbYFbW486A
 
 行人检测全新视角：从人体中轴线标注出发
 
+https://mp.weixin.qq.com/s/VwejfjxjVnGFW3WXXyL1og
+
+ALFNet：向高效行人检测迈进
+
 # 人脸识别进阶
 
 https://mp.weixin.qq.com/s/YlrWHDPIPzN4dQO2vo4DjA

@@ -76,7 +76,17 @@ https://mp.weixin.qq.com/s/OCG1TiHl2dsuS24uacQ-MA
 
 《Articulatory and Spectrum Features Integration using Generalized Distillation Framework》
 
-参考：
+## 权值稀疏化实战
+
+这里讲一下韩松论文提到的裁剪方法中，最简单的一种——“权值稀疏化“的工程实现细节。以darknet框架为例。
+
+1.在src/parser.c中找到save_XXX_weights函数。判断权值是否接近0，如果是，则强制设为0。
+
+2.使用修改后的weights进行re-train。训练好之后，重复第1、2步。
+
+3.反复多次之后，进入最终prune阶段。修改src/network.c:update_network，令其不更新0权值。
+
+## 参考
 
 https://zhuanlan.zhihu.com/p/24337627
 

@@ -40,6 +40,10 @@ https://mp.weixin.qq.com/s/nQAqEZW_TJSsbVp-kVcKGA
 
 简谈马尔可夫模型在个性化推荐中的应用
 
+https://mp.weixin.qq.com/s/Zalby_gZsxzrmBq6ZePsiQ
+
+短视频如何做到千人千面？FM+GBM排序模型深度解析
+
 # 决策树
 
 Decision Tree讲的最好的，首推周志华的《机器学习》。这里只对要点进行备忘。

@@ -379,6 +379,18 @@ https://mp.weixin.qq.com/s/yF1XJ-_YteoZbVbdIvlbmg
 
 >Henry Charles Beck，1902～1974，英国制图师。其1931年绘制的伦敦地铁图成为了现代地铁图的设计范例。
 
+https://www.zhihu.com/question/21664179
+
+如何在论文中画出漂亮的插图？
+
+https://zhuanlan.zhihu.com/p/20756711
+
+用Excel做出强大漂亮的数据地图
+
+https://mp.weixin.qq.com/s/XuoeOqGT_mJcFP08ZLq38g
+
+如何选择一个合适的数据图表？
+
 ## 贝叶斯线性回归
 
 https://mp.weixin.qq.com/s/szTmHY-Yvn7N3s_GzTDiEA

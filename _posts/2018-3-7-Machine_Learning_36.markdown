@@ -257,6 +257,10 @@ https://blog.csdn.net/zhaodedong/article/details/78445910
 
 Bloom Filter的数学背景
 
+https://mp.weixin.qq.com/s/aPepcwG_VMioqGQ_Fp3deg
+
+海量数据处理利器之布隆过滤器
+
 # 模型驱动 vs 数据驱动
 
 最近阅读了这篇文章，深有感慨：

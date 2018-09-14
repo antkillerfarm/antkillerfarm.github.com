@@ -344,23 +344,11 @@ https://mp.weixin.qq.com/s/-D5heoQLfOnp-AcWsJOi7A
 
 哈工大SCIR正式对外发布金融事理图谱Demo V1.0
 
+https://zhuanlan.zhihu.com/p/44497869
+
+知识图谱中的深度学习技术应用概述
+
 # ML参考资源
-
-https://mp.weixin.qq.com/s/zXABOzbQRV7sfgAhr_WqZw
-
-跨领域推荐系统文献综述（上）
-
-https://mp.weixin.qq.com/s/OxUCIhoIED_Z1Cf91Va36g
-
-跨领域推荐系统文献综述（下）
-
-https://mp.weixin.qq.com/s/bdZ5e8CaiPuI8TpLNRrFUQ
-
-大数据近似最近邻搜索哈希方法综述（上）
-
-https://mp.weixin.qq.com/s/jiZw-x6EMhUIySIObm5XjA
-
-大数据近似最近邻搜索哈希方法综述（下）
 
 https://mp.weixin.qq.com/s/NbEki2ByMmA93DyoQF1yjA
 

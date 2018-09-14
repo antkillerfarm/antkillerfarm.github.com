@@ -158,7 +158,7 @@ https://mp.weixin.qq.com/s/h-mp7_oO9aZ1yYxiJMLziQ
 
 https://mp.weixin.qq.com/s/txJAnu4FOOjmLhbtGTM-BQ
 
-还敢吹「毫无PS痕迹」？小心被Adobe官方AI打脸
+还敢吹“毫无PS痕迹”？小心被Adobe官方AI打脸
 
 https://mp.weixin.qq.com/s/a1Qg1Hl5NMvEJPXhJR-2BA
 
@@ -239,6 +239,10 @@ https://mp.weixin.qq.com/s/s6VHo8QW9OENMrbqfp6--w
 https://mp.weixin.qq.com/s/UySQTv8uuGungjxFNeHbRw
 
 给动漫人物轻松换装、编舞，这家游戏公司用GAN做到了！
+
+https://mp.weixin.qq.com/s/dRa1mss4dve487FhS4KjTg
+
+AI帮你抠图，阿里妈妈自研算法入选国际顶级学术会议
 
 # Graph NN
 
@@ -383,4 +387,8 @@ mixup与paring samples ，ICLR2018投稿论文的数据增广两种方式
 https://mp.weixin.qq.com/s/_7xFBLPGT0VRTJ22toHJ3g
 
 深度学习中常用的图像数据增强方法
+
+https://mp.weixin.qq.com/s/sXV9epWguGbJEZYo4yNp5Q
+
+如何正确使用样本扩充改进目标检测性能
 

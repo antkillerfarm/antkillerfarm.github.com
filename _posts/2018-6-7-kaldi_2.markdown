@@ -209,3 +209,61 @@ https://mp.weixin.qq.com/s/xBbYHMQhxkRQ-dy-0gHvaw
 
 如何用kaldi参加京东金融对话语音识别大赛
 
+# Machine Learning之Python篇
+
+## 参考（续）
+
+https://mp.weixin.qq.com/s/4s7lDKlQjV1mUoVv558Y7Q
+
+面向云数据库，超低延迟文件系统PolarFS诞生了
+
+https://mp.weixin.qq.com/s/VfmudolvWzQN4ghgnI2rZA
+
+机器学习中Python库的3个简单实践——你的图片将由你来创造
+
+https://mp.weixin.qq.com/s/goxciguoxcamTo2WyUd1Lg
+
+大吉大利，今晚如何用Python解锁“吃鸡”的正确姿势
+
+https://mp.weixin.qq.com/s/dQ75O2h1orGzKcaCSDWshQ
+
+自然语言处理是如何工作的？一步步教你构建NLP流水线
+
+https://mp.weixin.qq.com/s/dwxTla5iiYKvELrpbWf1yQ
+
+8个Python高效数据分析的技巧
+
+https://mp.weixin.qq.com/s/1Iyhsp5-2DyTfOb0JzqLZg
+
+比Python快100倍，利用spaCy和Cython实现高速NLP项目
+
+https://mp.weixin.qq.com/s/TYiqZvY25qxHcmEXRpqO5Q
+
+如何用Python做自动化特征工程
+
+https://mp.weixin.qq.com/s/84Rk5CP2uLaCBIifL465VQ
+
+从统计到概率，入门者都能用Python试验的机器学习基础
+
+# 世说新语
+
+## 2018.9（续）
+
+1954年6月22日，台湾的国民党海军在台湾南部巴士海峡某一地点劫持了苏联货船“图阿普谢”号。船货人全部被台湾国民党政府吞了，苏联也拿其没办法。这就是对后来影响深远的“图阿普谢”号被劫持事件。
+
+----
+
+2019.9.11 唐家三少妻子去世。
+
+----
+
+早期，磁带和硬盘驱动器的面密度相似。但由于的市场规模和硬盘销售收入的增加，为更大规模的研发工作提供了资金，这使得他们的制造商能够更积极地扩大存储密度。因此，大容量硬盘驱动器的当前面密度约为最新磁带驱动器的100倍。
+
+相比之下，磁带存储设备目前的区域密度远低于超顺磁极限。 因此，磁带的摩尔定律可以持续十年或更长时间，而不会遇到基础物理学方面的障碍。
+
+参考：
+
+https://mp.weixin.qq.com/s/Fzu5YmWYxEohDJjmcGGjhQ
+
+为什么说，数据存储的未来属于磁带
+

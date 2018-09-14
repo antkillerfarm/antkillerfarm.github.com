@@ -70,9 +70,9 @@ https://mp.weixin.qq.com/s/k_UA4LIEji14fucj_NH7Cg
 
 7种回归方法！请务必掌握！
 
-https://www.zhihu.com/question/28810567
+https://mp.weixin.qq.com/s/JwwrmsfmUsph8eSl1o0EaQ
 
-ELM算法相关
+39个slides带你回顾那些传统数据挖掘算法
 
 http://url.cn/40IkU7z
 
@@ -98,21 +98,53 @@ https://mp.weixin.qq.com/s/Ot2RcB1hbb6CEAZ5Tn5oAg
 
 10种机器学习算法的要点
 
-https://mp.weixin.qq.com/s/Oot7qI5Atj8kNGfhqYwDcA
-
-掌握这12条经验，对理解机器学习至关重要！
-
 https://mp.weixin.qq.com/s/C_ZpuqBNuJHzeEfru5Fe5A
 
 10幅图解释机器学习中的基本概念
 
-https://www.zhihu.com/question/21664179
+https://mp.weixin.qq.com/s/svmHc7S9S-SXz3YrOCJeGw
 
-如何在论文中画出漂亮的插图？
+数据挖掘知识点整理
 
-https://zhuanlan.zhihu.com/p/20756711
+https://mp.weixin.qq.com/s/oipXH06mgmPBwLQdbe-g4w
 
-用Excel做出强大漂亮的数据地图
+数据分析与挖掘、数据科学的96个在线学习课程
+
+https://github.com/josephmisiti/awesome-machine-learning
+
+各种语言的机器学习工具库
+
+https://mp.weixin.qq.com/s/1ijibTVgvF-RhS9H0zM8hQ
+
+ML\DL\NLP\DM等8大领域经典模型和知识！
+
+https://mp.weixin.qq.com/s/eSAbkGYzfAiEpiOYTT5Z0A
+
+图解机器学习十大算法
+
+https://mp.weixin.qq.com/s/rCCYmwmwodWKS0ZG4COPNg
+
+第四范式戴文渊：机器学习教科书的7大经典问题
+
+https://mp.weixin.qq.com/s/5W24x067Dc1-136lGF8XuQ
+
+计算机科学中最重要的32个算法
+
+https://mp.weixin.qq.com/s/OW44XEI1t5-oJWmmq4gJvw
+
+从概念到案例：初学者须知的十大机器学习算法
+
+https://mp.weixin.qq.com/s/0QMjw2cfZu_31BWfpKXMbg
+
+数据挖掘中的十大实用方法，可能你并不一定都熟悉！
+
+http://mp.weixin.qq.com/s/lvGPcID0f8Jark8ag5NGfQ
+
+机器学习面试题目总结
+
+https://mp.weixin.qq.com/s/Fa7P3v969JRr6OOAyrGptA
+
+数据驱动决策的13种思维
 
 http://wenku.baidu.com/view/44a63fd2b14e852458fb577f.html
 
@@ -134,10 +166,6 @@ http://mp.weixin.qq.com/s/v0z-s72juBF6Wwb9tc_Z_g
 
 深入理解空间搜索算法
 
-https://github.com/josephmisiti/awesome-machine-learning
-
-各种语言的机器学习工具库
-
 http://mp.weixin.qq.com/s/xP4lnLXwGlYE_RmJfRwJ4w
 
 关于如何解释机器学习的一些方法
@@ -157,10 +185,6 @@ https://mp.weixin.qq.com/s/3fsV-9pYlLk6wvFa0mJ8pg
 https://mp.weixin.qq.com/s/f6zi_FlygorqUIQFgWKMfA
 
 评测时如何构造训练数据分布与测试数据分布保持一致
-
-https://mp.weixin.qq.com/s/1ijibTVgvF-RhS9H0zM8hQ
-
-ML\DL\NLP\DM等8大领域经典模型和知识！
 
 https://mp.weixin.qq.com/s/MtnHYmPVoDAid9SNHnlzUw
 
@@ -226,10 +250,6 @@ https://mp.weixin.qq.com/s/2QHG0D1j0hQyErYg7Cp53w
 
 最全面的感知机总结
 
-https://mp.weixin.qq.com/s/svmHc7S9S-SXz3YrOCJeGw
-
-数据挖掘知识点整理
-
 https://mp.weixin.qq.com/s/I5NUF5GraCwCVoSdUQNsmw
 
 如何用Python和机器学习炒股赚钱？
@@ -238,21 +258,9 @@ https://mp.weixin.qq.com/s/9llI8EPy2PNBYZ4Q_LdOFg
 
 深度学习中的基础线代知识-初学者指南
 
-https://mp.weixin.qq.com/s/oipXH06mgmPBwLQdbe-g4w
-
-数据分析与挖掘、数据科学的96个在线学习课程
-
 https://mp.weixin.qq.com/s/-Zji6xGISaUzFhQ6tMlQqw
 
 最大似然估计与最小二乘法的一点浅见
-
-https://mp.weixin.qq.com/s/ttCfpEomKLJUC1C3xK64HA
-
-10幅图解释机器学习中的基本概念
-
-https://mp.weixin.qq.com/s/eSAbkGYzfAiEpiOYTT5Z0A
-
-图解机器学习十大算法
 
 https://mp.weixin.qq.com/s/ubpRPQ7-1nvY5CzICWi1Cg
 
@@ -261,10 +269,6 @@ https://mp.weixin.qq.com/s/ubpRPQ7-1nvY5CzICWi1Cg
 https://mp.weixin.qq.com/s/lNYKzNU6VcT7orPCotbUdg
 
 用机器学习检测异常点击流
-
-https://mp.weixin.qq.com/s/rCCYmwmwodWKS0ZG4COPNg
-
-第四范式戴文渊：机器学习教科书的7大经典问题
 
 https://mp.weixin.qq.com/s/9cnXRCOmFwNnll-H0ts-FQ
 
@@ -282,10 +286,6 @@ https://mp.weixin.qq.com/s?__biz=MzU3NTE1OTE0Ng==&mid=2247483709&idx=1&sn=6e1a81
 
 如何定义信用评分中的“好”、“坏”人？
 
-https://mp.weixin.qq.com/s/5W24x067Dc1-136lGF8XuQ
-
-计算机科学中最重要的32个算法
-
 https://mp.weixin.qq.com/s/wTwx0JULdBc3cqxPhig8UA
 
 感知机更新算法正确性的直观理解
@@ -297,14 +297,6 @@ https://mp.weixin.qq.com/s/4O1_9ly5DxpdjzQ2Nilcpw
 https://mp.weixin.qq.com/s/h8qkDt7fmFzVxQcKkwqRzQ
 
 滴滴KDD2017论文：基于组合优化的出租车分单模型
-
-https://mp.weixin.qq.com/s/XuoeOqGT_mJcFP08ZLq38g
-
-如何选择一个合适的数据图表？
-
-https://mp.weixin.qq.com/s/Fa7P3v969JRr6OOAyrGptA
-
-数据驱动决策的13种思维
 
 https://mp.weixin.qq.com/s/g1PWYFvxyoEZ8uX_GBwKSQ
 
@@ -346,17 +338,9 @@ https://mp.weixin.qq.com/s/4NDVjCXprHQvcH2Qji_5Rw
 
 浅析Axiomatic Clustering算法
 
-https://mp.weixin.qq.com/s/yGQSihfBDcXgqBnvvpQDog
-
-蒙特卡罗方法入门
-
 https://mp.weixin.qq.com/s/2YFjtQn9c8g7mgH5tl-egg
 
 大规模机器学习系统中的No Free Lunch
-
-https://mp.weixin.qq.com/s/0QMjw2cfZu_31BWfpKXMbg
-
-数据挖掘中的十大实用方法，可能你并不一定都熟悉！
 
 http://mp.weixin.qq.com/s/DG5VbDgOcqlRhbEbiP9_aw
 
@@ -365,10 +349,6 @@ Kaggle机器学习之模型融合（stacking）心得
 http://mp.weixin.qq.com/s/LMEOL6KUYPnKfSMs1R6d1g
 
 搜寻失落的信号：无监督学习面临的众多挑战
-
-http://mp.weixin.qq.com/s/lvGPcID0f8Jark8ag5NGfQ
-
-机器学习面试题目总结
 
 http://mp.weixin.qq.com/s/AlBWioRkf88dw69C4SAZ8w
 
@@ -410,10 +390,6 @@ https://mp.weixin.qq.com/s/JF23e8-XbkpPxLi6kTxfNA
 
 一文搞懂Hungarian Algorithm匈牙利算法
 
-https://mp.weixin.qq.com/s/aPepcwG_VMioqGQ_Fp3deg
-
-海量数据处理利器之布隆过滤器
-
 https://mp.weixin.qq.com/s/lQKD83sKwgcrBH6o_QUxvg
 
 抛弃爬下来的灰色数据，有门槛的风控怎么做？
@@ -442,11 +418,26 @@ http://www.jianshu.com/p/af7e063ac9b3
 
 机器学习在金融比赛中的应用
 
-https://mp.weixin.qq.com/s/OW44XEI1t5-oJWmmq4gJvw
-
-从概念到案例：初学者须知的十大机器学习算法
-
 https://mp.weixin.qq.com/s/94IGjVPXZ0FeCILQN33eBQ
 
 遇见大数据可视化：不要错过这么漂亮的数据可视化案例！
 
+https://www.zhihu.com/question/28810567
+
+ELM算法相关
+
+https://mp.weixin.qq.com/s/zXABOzbQRV7sfgAhr_WqZw
+
+跨领域推荐系统文献综述（上）
+
+https://mp.weixin.qq.com/s/OxUCIhoIED_Z1Cf91Va36g
+
+跨领域推荐系统文献综述（下）
+
+https://mp.weixin.qq.com/s/bdZ5e8CaiPuI8TpLNRrFUQ
+
+大数据近似最近邻搜索哈希方法综述（上）
+
+https://mp.weixin.qq.com/s/jiZw-x6EMhUIySIObm5XjA
+
+大数据近似最近邻搜索哈希方法综述（下）

@@ -161,7 +161,9 @@ $$\frac{\partial u}{\partial x}=2x,\frac{\partial v}{\partial x}=0$$
 
 上式显然不满足Cauchy-Riemann Equations，因此函数不可导。
 
+上述结论我们也可以另一个角度观察。
 
+假设$$f(z)$$
 
 参考：
 

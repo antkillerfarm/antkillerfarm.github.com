@@ -6,6 +6,26 @@ category: AI
 
 # TensorFlow
 
+https://mp.weixin.qq.com/s/3QgtemxxsQmuNQVEdpiMwA
+
+如何做准确率达98%的交通标志识别系统？
+
+https://mp.weixin.qq.com/s/pSE2V8wD3_KHMI71kLTXng
+
+如何基于TensorFlow使用LSTM和CNN实现时序分类任务
+
+https://mp.weixin.qq.com/s/dHkmDvFVUGmt4Ch-gv3s1g
+
+一步一步带你用TensorFlow玩转LSTM
+
+https://mp.weixin.qq.com/s/Bx5Djj-RE0jPJ7LjyQ7GPg
+
+基于gym和tensorflow的强化学习算法实现
+
+https://mp.weixin.qq.com/s/3URLEdhB8hs0XXekKbvsnw
+
+使用TensorFlow在卷积神经网络上实现L2约束的softmax损失函数
+
 https://mp.weixin.qq.com/s/dgLJrn3omUKMqmqTIEcoyg
 
 Tensorflow实现DDPG
@@ -37,7 +57,6 @@ https://mp.weixin.qq.com/s/KohwsQQetwjfTj-PXvLjwA
 http://mp.weixin.qq.com/s/ioaS7RQ6bsJs4_X0G4ZHyQ
 
 如何优雅地用TensorFlow预测时间序列：TFTS库详细教程
-
 
 http://mp.weixin.qq.com/s/hpv6bzr-5VZet-UCHOCQLQ
 
@@ -395,43 +414,11 @@ https://mp.weixin.qq.com/s/ntHkMIef1o2-FF-AJf_bZQ
 
 三分钟训练眼球追踪术，AI就知道你在盯着哪个妹子——TensorFlow.js代码
 
-# Machine Learning之Python篇
-
-## 参考（续）
-
-https://mp.weixin.qq.com/s/4s7lDKlQjV1mUoVv558Y7Q
-
-面向云数据库，超低延迟文件系统PolarFS诞生了
-
-https://mp.weixin.qq.com/s/VfmudolvWzQN4ghgnI2rZA
-
-机器学习中Python库的3个简单实践——你的图片将由你来创造
-
-https://mp.weixin.qq.com/s/goxciguoxcamTo2WyUd1Lg
-
-大吉大利，今晚如何用Python解锁“吃鸡”的正确姿势
-
-https://mp.weixin.qq.com/s/dQ75O2h1orGzKcaCSDWshQ
-
-自然语言处理是如何工作的？一步步教你构建NLP流水线
-
-https://mp.weixin.qq.com/s/dwxTla5iiYKvELrpbWf1yQ
-
-8个Python高效数据分析的技巧
-
-https://mp.weixin.qq.com/s/1Iyhsp5-2DyTfOb0JzqLZg
-
-比Python快100倍，利用spaCy和Cython实现高速NLP项目
-
-https://mp.weixin.qq.com/s/TYiqZvY25qxHcmEXRpqO5Q
-
-如何用Python做自动化特征工程
-
-https://mp.weixin.qq.com/s/84Rk5CP2uLaCBIifL465VQ
-
-从统计到概率，入门者都能用Python试验的机器学习基础
-
 https://mp.weixin.qq.com/s/7rTmEBfh613SrNnTQvfSjw
 
 懒人福利：不写代码调优深度模型，谷歌开源的“What-If”了解一下
+
+https://mp.weixin.qq.com/s/eX3LWYiSH-KObH_7F_3QCA
+
+TensorFlow 1.11.0发布，一键多GPU
 

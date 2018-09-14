@@ -136,6 +136,10 @@ https://mp.weixin.qq.com/s/NpO1UP_mzyaeqW26xLY1Xg
 
 CVPR 2018最佳论文作者亲笔解读：研究视觉任务关联性的Taskonomy
 
+https://mp.weixin.qq.com/s/DUSa3SW1AgvJ0szL030NHQ
+
+一个AI玩57个游戏，DeepMind离真正“万能”的AGI不远了！
+
 # 语义分割进阶
 
 https://mp.weixin.qq.com/s/cANlqQAI-A2mC9vnd3imQA
@@ -375,4 +379,8 @@ https://mp.weixin.qq.com/s/IzVTkH7fEiS4gAUIyA_IrA
 https://mp.weixin.qq.com/s/1jBpz55pPgM8oxlUZLSWXA
 
 ICML2018对抗生成网络论文评述
+
+https://mp.weixin.qq.com/s/uQpmP7pJ8wnEgyJrvvHgwg
+
+基于解剖结构的面部表情生成
 
