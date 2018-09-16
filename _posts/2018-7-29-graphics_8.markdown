@@ -34,12 +34,6 @@ http://www.cnblogs.com/ronny/p/4083537.html
 
 ORB特征点检测
 
-# 直方图反向投影
-
-http://www.cnblogs.com/zsb517/archive/2012/06/20/2556508.html
-
-opencv直方图反向投影
-
 # 目标跟踪
 
 ## 概述
@@ -240,6 +234,10 @@ Mean Shift聚类算法
 https://blog.csdn.net/poiiy333/article/details/9051409
 
 反向投影图
+
+http://www.cnblogs.com/zsb517/archive/2012/06/20/2556508.html
+
+opencv直方图反向投影
 
 ## Meanshift与目标跟踪
 

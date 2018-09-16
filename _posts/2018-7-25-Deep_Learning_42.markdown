@@ -298,6 +298,10 @@ https://mp.weixin.qq.com/s/qpP6AzLdgtH6NnIUl4JNpQ
 
 腾讯AI Lab提出正交深度特征分解算法：在多个跨年龄人脸识别任务中创造新记录
 
+https://mp.weixin.qq.com/s/J4_snLK7DoV5oN7GP5M_Ww
+
+新思路！商汤开源利用无标注数据大幅提高精度的人脸识别算法
+
 # 目标检测进阶
 
 https://mp.weixin.qq.com/s/LtXylKTKsHdjMPw9Q1HyXA

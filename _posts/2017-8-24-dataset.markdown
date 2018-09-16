@@ -376,3 +376,7 @@ https://mp.weixin.qq.com/s/-NQa2VeuskDx5XN9WMCmPQ
 
 腾讯开源业内最大多标签图像数据集，附ResNet-101模型
 
+https://mp.weixin.qq.com/s/Rf3NAYlNMrcVythVA-90cQ
+
+端到端对话模型新突破！Facebook发布大规模个性化对话数据库
+

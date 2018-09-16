@@ -334,6 +334,10 @@ https://mp.weixin.qq.com/s/KvkkmDIY7Y0NBgYF86E2Pw
 
 神经网络突变自动选择AI优化算法，速度提升50000倍！
 
+https://zhuanlan.zhihu.com/p/44576620
+
+让算法解放算法工程师----NAS综述
+
 # GAN进阶（续）
 
 https://mp.weixin.qq.com/s/c84LMFnIhoDeolc1B4MIVA
@@ -384,3 +388,6 @@ https://mp.weixin.qq.com/s/uQpmP7pJ8wnEgyJrvvHgwg
 
 基于解剖结构的面部表情生成
 
+https://mp.weixin.qq.com/s/cLCtxS1frJYvC5tLsQAWrQ
+
+用神经网络生成音乐

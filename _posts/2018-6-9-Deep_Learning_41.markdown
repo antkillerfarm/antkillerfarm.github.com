@@ -22,6 +22,10 @@ https://mp.weixin.qq.com/s/WuX7-w--MGX3BfU_K7qT0A
 
 什么是迁移学习 (Transfer Learning)？这个领域历史发展前景如何？
 
+https://mp.weixin.qq.com/s/ThwsfHME_2csqTlKuG5heg
+
+综述论文：四大类深度迁移学习
+
 https://mp.weixin.qq.com/s/BWBrso7O1O3Rfxa4QWZH4g
 
 分分钟学会基于深度学习的图像真实风格迁移！

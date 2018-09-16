@@ -247,3 +247,7 @@ https://mp.weixin.qq.com/s/keWrgmCfJrnswDDKEL52Cg
 
 数据少，就享受不到深度学习的红利了么？总是有办法的！
 
+https://mp.weixin.qq.com/s/YTHM0Ue2iWVyYhOp6UTr1g
+
+图像识别泛化能力人机对比：CNN比人类还差得远
+
