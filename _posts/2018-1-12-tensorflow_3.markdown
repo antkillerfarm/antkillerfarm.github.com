@@ -398,6 +398,14 @@ https://mp.weixin.qq.com/s/rQ9eZosHOoDOXg9tAg4t6A
 
 tensorflow Object Detection API使用预训练模型mask r-cnn实现对象检测
 
+https://mp.weixin.qq.com/s/kYOwUWlTP4T0IYKDWDbCsg
+
+tensorflow object detection API训练公开数据集Oxford-IIIT Pets Dataset
+
+https://mp.weixin.qq.com/s/8uDsaZjsiKXGea6M-w-RvA
+
+tensorflow object detection API使用之GPU训练实现宠物识别
+
 https://mp.weixin.qq.com/s/8I5Nvw4t2jT1NR9vIYT5XA
 
 深入理解TensorFlow中的tf.metrics算子
@@ -405,10 +413,6 @@ https://mp.weixin.qq.com/s/8I5Nvw4t2jT1NR9vIYT5XA
 https://mp.weixin.qq.com/s/aMarI-nyIvFqhtpJWQrNhQ
 
 谷歌推强化学习新框架“多巴胺“，基于TensorFlow，已开源
-
-https://mp.weixin.qq.com/s/kYOwUWlTP4T0IYKDWDbCsg
-
-tensorflow object detection API训练公开数据集Oxford-IIIT Pets Dataset
 
 https://mp.weixin.qq.com/s/ntHkMIef1o2-FF-AJf_bZQ
 
