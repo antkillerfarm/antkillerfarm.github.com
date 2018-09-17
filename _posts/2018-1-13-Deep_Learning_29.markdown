@@ -124,10 +124,6 @@ http://mp.weixin.qq.com/s/0WNJq4OLZlZETKPf1Ewq7w
 
 浅谈语音测试方案
 
-https://mp.weixin.qq.com/s/KBLCrupGIuPa5nVrxcS5WQ
-
-新研究将GRU简化成单门架构，或更适用于语音识别
-
 https://mp.weixin.qq.com/s/b0bOf1bZ2p0yWMzhp66HhA
 
 A flight (to Boston) to Denver-基于转移的顺滑技术研究

@@ -128,6 +128,14 @@ https://mp.weixin.qq.com/s/OgN4rVDKH5WABIaRY7CHog
 
 如何让RNN神经元拥有基础通用的注意力能力
 
+https://mp.weixin.qq.com/s/KBLCrupGIuPa5nVrxcS5WQ
+
+新研究将GRU简化成单门架构，或更适用于语音识别
+
+https://mp.weixin.qq.com/s/kQozftKd_n_kYIF7KKCc8g
+
+短视频那么多，快手如何利用GRU实现各种炫酷的语音应用
+
 # L2 Normalization
 
 L2 Normalization本身并不复杂，然而多数资料都只提到1维的L2 Normalization的计算公式：

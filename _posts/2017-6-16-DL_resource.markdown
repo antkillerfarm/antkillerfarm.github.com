@@ -228,6 +228,10 @@ https://eccv2018.org/program/workshops_tutorials/
 
 ECCV 2018的教程和专题
 
+https://blog.csdn.net/zhangjunhit
+
+一个DL+CV的blog
+
 ## 项目集锦
 
 https://mp.weixin.qq.com/s/ZNNgEB9rFjAE8SdfMo9NLA

@@ -322,6 +322,10 @@ https://mp.weixin.qq.com/s/aeQyZ8cpz81cK8Dg-84mjA
 
 网络表征学习综述
 
+https://mp.weixin.qq.com/s/_0quf0IRe8mn4dnsBwf6Aw
+
+基于路径的实体图关系抽取模型
+
 # Spatial Transformer Networks
 
 论文：

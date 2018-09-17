@@ -298,6 +298,10 @@ https://mp.weixin.qq.com/s/tgUguHC56FjgBdUGyg8yRg
 
 Oracle开源GraphPipe：几行代码让你在TensorFlow部署PyTorch模型
 
+https://mp.weixin.qq.com/s/e8BUqCvnfHaLFQMSO1lVkw
+
+腾讯AI Lab提出自动化模型压缩框架PocketFlow：将深度学习装进口袋
+
 ## gcForest
 
 http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw

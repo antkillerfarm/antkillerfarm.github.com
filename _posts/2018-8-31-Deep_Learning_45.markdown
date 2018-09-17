@@ -90,6 +90,10 @@ https://mp.weixin.qq.com/s/JoTzaInn_uAA9oZgMcfskw
 
 计算机视觉技术self-attention最新进展
 
+https://mp.weixin.qq.com/s/jRfOzKO6OlQLokIzipbqUQ
+
+为什么使用自注意力机制？
+
 # 多任务学习
 
 https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA

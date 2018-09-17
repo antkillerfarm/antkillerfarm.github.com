@@ -157,6 +157,48 @@ T2T库利用TensorFlow工具来开发，定义了一个深度学习系统中需�
 
 https://github.com/tensorflow/tensor2tensor
 
+## Tensor2Tensor transformer实战
+
+### 准备数据
+
+tensor2tensor/data_generators/translate_enzh.py
+
+这个脚本包含了很多数据集的下载地址。
+
+我们这里使用的是官方提供英汉翻译数据集：
+
+http://data.statmt.org/wmt18/translation-task/training-parallel-nc-v13.tgz
+
+这个数据集中，中英文是分开的：
+
+training-parallel-nc-v13/news-commentary-v13.zh-en.en
+
+training-parallel-nc-v13/news-commentary-v13.zh-en.zh
+
+上面是训练集，测试集也是类似的。
+
+### 模型
+
+tensor2tensor/models/transformer.py
+
+这里我采用的是transformer_base_single_gpu的超参，loss可降至0.4左右。如果采用transformer_base的话，就只能降到2.0左右。
+
+num_encoder_layers/num_decoder_layers控制transformer的层数，如果为0，就使用num_hidden_layers的值。
+
+### 数据预处理
+
+这个过程比较漫长，大约1小时左右，期间CPU全满，而GPU全空，一度让我以为我的GPU相关配置不对。
+
+由于中文符号表中，不仅有字还有词，让我一度以为使用了什么分词工具，后来才发现只是简单的词频统计处理而已。相关代码在：
+
+tensor2tensor/data_generators/text_encoder.py：build_from_token_counts
+
+
+
+### mesh tensorflow
+
+T2T不仅支持单机，还支持网格（Mesh）计算，推出了所谓的mesh tensorflow，简称MTF。
+
 ## TensorFlow.js
 
 https://mp.weixin.qq.com/s/dqMS4NjmNYs7IFHm8uFM8w
@@ -232,44 +274,6 @@ Caffe被Caffe 2替代，但使用的广泛度仍超过后者。
 Theano被同样基于计算图的TensorFlow淘汰。2017年9月停止更新。
 
 Torch相对变动最小，它被PyTorch替代。这更可以看作是python对于lua的胜利。
-
-## Tensor2Tensor transformer实战
-
-### 准备数据
-
-tensor2tensor/data_generators/translate_enzh.py
-
-这个脚本包含了很多数据集的下载地址。
-
-我们这里使用的是官方提供英汉翻译数据集：
-
-http://data.statmt.org/wmt18/translation-task/training-parallel-nc-v13.tgz
-
-这个数据集中，中英文是分开的：
-
-training-parallel-nc-v13/news-commentary-v13.zh-en.en
-
-training-parallel-nc-v13/news-commentary-v13.zh-en.zh
-
-上面是训练集，测试集也是类似的。
-
-### 模型
-
-tensor2tensor/models/transformer.py
-
-这里我采用的是transformer_base_single_gpu的超参，loss可降至0.4左右。如果采用transformer_base的话，就只能降到2.0左右。
-
-num_encoder_layers/num_decoder_layers控制transformer的层数，如果为0，就使用num_hidden_layers的值。
-
-### 数据预处理
-
-这个过程比较漫长，大约1小时左右，期间CPU全满，而GPU全空，一度让我以为我的GPU相关配置不对。
-
-
-
-### mesh tensorflow
-
-T2T不仅支持单机，还支持网格（Mesh）计算，推出了所谓的mesh tensorflow，简称MTF。
 
 # TensorFlow参考
 

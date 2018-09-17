@@ -50,6 +50,10 @@ https://mp.weixin.qq.com/s/SZlFgnUBL0T6yNa-i_WLvg
 
 领域适应性Domain Adaptation、One-shot/zero-shot Learning概述
 
+https://zhuanlan.zhihu.com/p/34656727
+
+零次学习（Zero-Shot Learning）入门
+
 https://mp.weixin.qq.com/s/sAf2fLLnKHOs433pV_6bSQ
 
 One-shot Learning：孪生网络少样本精准分类

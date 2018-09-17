@@ -247,6 +247,10 @@ https://mp.weixin.qq.com/s/fTs_r7DLbLWoos4uRM3KYA
 
 10个Python常见面试题，这些弄不明白不要说学过Python！
 
+https://mp.weixin.qq.com/s/zIHJsyankFEf_ig4Xnb0Uw
+
+工具推荐！我是如何使用Python脚本分析CPU使用情况的？
+
 # 大数据平台参考资源
 
 https://mp.weixin.qq.com/s/nqOvcKtxpqehWFO4XkXr5g
