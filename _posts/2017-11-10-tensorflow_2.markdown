@@ -193,6 +193,8 @@ num_encoder_layers/num_decoder_layers控制transformer的层数，如果为0，�
 
 tensor2tensor/data_generators/text_encoder.py：build_from_token_counts
 
+tensor2tensor/layers/common_layers.py：embedding
+
 
 
 ### mesh tensorflow

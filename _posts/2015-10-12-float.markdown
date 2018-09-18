@@ -294,6 +294,10 @@ https://zhuanlan.zhihu.com/p/43768401
 
 如何像搭积木一样构建CPU？Intel和AMD都是怎么做的？
 
+https://mp.weixin.qq.com/s/cSu-P-aDSXH0CYLN2HNrxw
+
+深入理解Cache（上）
+
 # 3D芯片
 
 随着半导体工艺日益接近物理极限，2D芯片已经不能满足进化的需要，芯片的设计也迈向了立体发展的阶段。目前主流的3D芯片技术包括FinFET（1999）与FD-SOI（2000），他们都是胡正明团队的作品。

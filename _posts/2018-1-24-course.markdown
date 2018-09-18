@@ -306,6 +306,10 @@ https://cs.nyu.edu/~panozzo/ustc/
 
 Robust Mesh Generation and Applications to Geometry Processing
 
+https://cyclostationary.blog
+
+Cyclostationary Signal Processing。这个是一个在信号处理领域使用统计学的blog。作者Chad Spooner，UCB本科（1986）+UCD博士（1992）。
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。
@@ -451,19 +455,3 @@ PMI（Pointwise Mutual Information）
 http://www.cnblogs.com/6DAN_HUST/archive/2010/11/11/1874681.html
 
 运筹学——线性规划及单纯形法求解
-
-https://mp.weixin.qq.com/s/E_EzwLr4JOzR1pk3MOeU_w
-
-复动力系统简介
-
-https://mp.weixin.qq.com/s/QmDCFY0SP3cl71HvwvthJQ
-
-如果高斯没有故意“坑”黎曼，估计这门神奇的学科就不会出现了……
-
-http://www.cnblogs.com/zeze/p/6999651.html
-
-粗糙集（Rough Set Approach）
-
-https://mp.weixin.qq.com/s/mc9aH5hDgRFS2h2blPhb8w
-
-21张绘画完美演绎地球演化新说！

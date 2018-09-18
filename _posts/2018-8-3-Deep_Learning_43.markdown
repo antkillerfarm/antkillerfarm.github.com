@@ -244,6 +244,14 @@ https://mp.weixin.qq.com/s/dRa1mss4dve487FhS4KjTg
 
 AI帮你抠图，阿里妈妈自研算法入选国际顶级学术会议
 
+https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247504304&idx=2&sn=fff79ab61fd3d2b6c7c80911bd29b78e
+
+3D版pix2pix来了，画一只猫就能抱起来吸
+
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650748774&idx=4&sn=efb794e4e418493f17138e7fa7eb84ab
+
+这种两阶段深度着色模型，为黑白照披上了彩衣
+
 # Graph NN
 
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw

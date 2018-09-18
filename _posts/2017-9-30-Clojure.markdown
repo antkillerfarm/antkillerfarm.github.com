@@ -251,6 +251,10 @@ https://mp.weixin.qq.com/s/zIHJsyankFEf_ig4Xnb0Uw
 
 工具推荐！我是如何使用Python脚本分析CPU使用情况的？
 
+https://mp.weixin.qq.com/s/v-N5jUTVFBb-wV0a_RAg5A
+
+Python实现代码雨效果
+
 # 大数据平台参考资源
 
 https://mp.weixin.qq.com/s/nqOvcKtxpqehWFO4XkXr5g
@@ -268,4 +272,8 @@ Oceanus：美团点评HTTP流量定制化路由的实践
 https://mp.weixin.qq.com/s/qhiX62dALXd3owYYP9KsEQ
 
 支持流式处理ACID事务！Flink团队开源新作Streaming Ledger
+
+https://mp.weixin.qq.com/s/VKsbBvKibLDc-wFvYn3nxg
+
+阿里如何实现秒级百万TPS？搜索离线大数据平台架构解读
 
