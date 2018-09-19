@@ -172,6 +172,10 @@ https://mp.weixin.qq.com/s/-j4p7nUF-rCGk6yK0nccvw
 
 机器人也会画漫画
 
+https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247504381&idx=2&sn=465027cc2a8f75a7f6ddf400830f61e0
+
+这个品质超高的漫画自动上色AI，让你DIY出喜欢的配色
+
 https://mp.weixin.qq.com/s/3Aq1HXpBzgNdcB130tCKbQ
 
 GAN网络图像翻译机：图像复原、模糊变清晰、素描变彩图
@@ -244,9 +248,9 @@ https://mp.weixin.qq.com/s/dRa1mss4dve487FhS4KjTg
 
 AI帮你抠图，阿里妈妈自研算法入选国际顶级学术会议
 
-https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247504304&idx=2&sn=fff79ab61fd3d2b6c7c80911bd29b78e
+https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652026913&idx=2&sn=fc38fa94211c277d616f4f37aa6d8b5d
 
-3D版pix2pix来了，画一只猫就能抱起来吸
+pix2pix 3D版：几笔线条生成超炫猫咪霹雳舞！
 
 https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650748774&idx=4&sn=efb794e4e418493f17138e7fa7eb84ab
 

@@ -348,6 +348,10 @@ https://zhuanlan.zhihu.com/p/44497869
 
 知识图谱中的深度学习技术应用概述
 
+https://mp.weixin.qq.com/s/HNeInMIpho5pTDoK6dZ-ng
+
+一文详解达观数据知识图谱技术与应用——技术直播回顾
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/NbEki2ByMmA93DyoQF1yjA
@@ -417,3 +421,8 @@ https://mp.weixin.qq.com/s/150raN1kPc6c0pAB1DVLWw
 https://mp.weixin.qq.com/s/Sez56UaCAt3Aspn7OTFj_Q
 
 让AI来一场“简单”的黄金点游戏
+
+https://mp.weixin.qq.com/s?__biz=MzUyMjE2MTE0Mw==&mid=2247486970&idx=2&sn=6878205053d13467f66055a3314eeba1
+
+如何利用高效的搜索算法来搜索网络的拓扑结构
+

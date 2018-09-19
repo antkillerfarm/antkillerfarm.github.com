@@ -302,3 +302,7 @@ https://mp.weixin.qq.com/s/J4_snLK7DoV5oN7GP5M_Ww
 
 新思路！商汤开源利用无标注数据大幅提高精度的人脸识别算法
 
+https://mp.weixin.qq.com/s?__biz=MzU4MjQ3MDkwNA==&mid=2247486721&idx=1&sn=f0e5b2b0165e391c0d5adc4ce253f2f6
+
+人脸识别中的活体检测算法综述
+

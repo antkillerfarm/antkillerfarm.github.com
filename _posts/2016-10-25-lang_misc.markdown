@@ -164,6 +164,10 @@ https://mp.weixin.qq.com/s/neBQ4Etx3RLhMQdM6GksVg
 
 Go语言HTTP/2探险之旅
 
+https://mp.weixin.qq.com/s/_d_-qg-mY3QLSxfACsNBJw
+
+Golang之不可重入函数实现
+
 # Github显示数学公式
 
 这里主要用到了LaTeX和MathJax。
@@ -341,4 +345,8 @@ MySQL智能调度系统。这篇blog其实和MySQL关系不大，算是DL在负�
 https://mp.weixin.qq.com/s/VdMYtZfH0yBNWMbiuGElOg
 
 商汤及联合实验室入选论文重点解读：ECCV 2018
+
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650748834&idx=3&sn=805564d2d9956dff6bb888ccb61e9b7b
+
+看图聊天的骚操作，MIT开发精准到单词的语音-图像配对系统
 

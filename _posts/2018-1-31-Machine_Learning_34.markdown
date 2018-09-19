@@ -224,6 +224,10 @@ https://mp.weixin.qq.com/s/UcMPIf6ZRAhPjn79H2n1ig
 
 异常点检测算法小结
 
+https://mp.weixin.qq.com/s?__biz=MzIxODM4MjA5MA==&mid=2247487342&idx=3&sn=1981a6caec4591a19043d7a6176d359f
+
+异常检测的阈值，你怎么选？给你整理好了...
+
 # 自适应滤波器
 
 《自适应滤波器原理（Adaptive Filter Theory）》，Simon Haykin著。

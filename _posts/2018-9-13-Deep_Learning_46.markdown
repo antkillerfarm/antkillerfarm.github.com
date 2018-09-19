@@ -302,9 +302,17 @@ https://www.zhihu.com/question/29520851
 
 ## Moment
 
+Moment（矩）的定义为：
 
+$$\mu_n = \int_{-\infty}^\infty (x - c)^n\,f(x)\,\mathrm{d}x$$
+
+其中，c=0时，被称作Raw Moment。c为均值时，被称作Central Moment。如果用$$\mu_n/\sigma^n$$替换$$\mu_n$$，就是所谓的Normalised Moment了。
+
+1阶Raw Moment叫做Mean，2阶Central Moment叫做Variance，3阶Normalised Moment叫做Skewness，4阶Normalised Moment叫做kurtosis。
 
 ## Cumulants
+
+Cumulants（累积量）的思想最早是Thorvald Thiele提出的，后来被Ronald Fisher和John Wishart发扬光大。
 
 >Thorvald Nicolai Thiele，1838～1910，丹麦天文学家。哥本哈根大学博士。哥本哈根天文台台长（1978～1907）。曾研究过三体问题。被Ronald Fisher誉为“最伟大的统计学家”。
 

@@ -44,6 +44,10 @@ http://setosa.io/ev/
 
 一个将很多算法可视化的blog
 
+https://blog.csdn.net/pipisorry/article/category/5814671
+
+一个海量数据挖掘的专栏
+
 ## 文章
 
 http://www.open-open.com/lib/view/open1420687784625.html
@@ -145,6 +149,10 @@ http://mp.weixin.qq.com/s/lvGPcID0f8Jark8ag5NGfQ
 https://mp.weixin.qq.com/s/Fa7P3v969JRr6OOAyrGptA
 
 数据驱动决策的13种思维
+
+https://mp.weixin.qq.com/s/LtmzL4nk-yS7G7zKv5jR8A
+
+帝国理工学院134页机器学习中的数学知识
 
 http://wenku.baidu.com/view/44a63fd2b14e852458fb577f.html
 
