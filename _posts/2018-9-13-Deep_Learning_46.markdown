@@ -254,22 +254,6 @@ https://mp.weixin.qq.com/s?__biz=MzI5MDUyMDIxNA==&mid=2247486104&idx=1&sn=5580a4
 
 # 功率谱（续）
 
-我们定义：
-
-$$K_N(\omega)=\sum_{n=-N}^N e^{j\omega n}=\frac{\sin((2N+1)\omega/2)}{\sin(\omega/2)}\tag{7}$$
-
-则公式6可改写为：
-
-$$U_N(\omega)=\frac{1}{2\pi}\int_{-\pi}^{\pi}K_N(\omega-v)\mathrm{d}Z(v)\tag{8}$$
-
-这里的K被称作Dirichlet Kernel。参见《数学狂想曲（一）》的相关章节。
-
-一般来说，在公式8中，$$U_N(\omega)$$是已知的，而$$\mathrm{d}Z(\omega)$$是未知的。从数学上来说，这个积分方程可看做第一类Fredholm积分方程的一个例子。
-
->Erik Ivar Fredholm，1866～1927，瑞典数学家。Uppsala University博士（1898）+Stockholm University教授。不知道是不是瑞典的保险业比较发达，他和Cramér居然都当过兼职的精算师。。。瑞典皇家科学院院士。
-
->Uppsala University是瑞典，也是北欧最古老的大学，始建于1477年。
-
 功率谱密度的估计方法主要包括参数法和非参数法两大类。
 
 参数法包括：
@@ -319,6 +303,9 @@ Cumulants（累积量）的思想最早是Thorvald Thiele提出的，后来被Ro
 >John Wishart，1898～1956，苏格兰数学家和农业统计学家。Edinburgh University本科+Cambridge University硕士+University College London博士。导师是Karl Pearson，和Ronald Fisher也有过合作。Royal Society of Edinburgh会员。Cambridge University统计实验室首任主任。
 
 >苏格兰人的自我意识真是强，足球有自己的协会，就连皇家学会也有自己的。
+
+
+
 
 ## Polyspectrum
 
