@@ -26,10 +26,6 @@ https://mp.weixin.qq.com/s/hL0n2V7lEZxNIAwP3wir6g
 
 35页自然语言处理深度学习综述，带你纵览NLP知识全貌
 
-https://mp.weixin.qq.com/s/IxDZLprG1xwlIqN-uxeGkg
-
-UIUC韩家炜团队218页文本语料数据挖掘教程
-
 https://mp.weixin.qq.com/s/sQ903WNSR4v367t78_VG1Q
 
 自然语言处理全家福：纵览当前NLP中的任务、数据、模型与论文
@@ -102,21 +98,9 @@ https://mp.weixin.qq.com/s/VPs6OB81K1H7_TMV9xLUVQ
 
 零基础进行神经网络语言建模
 
-https://mp.weixin.qq.com/s/nMX5YNdJcLc6Hwr63qHzrA
-
-188页PPT帮你理解深度学习在智能对话系统中应用
-
 https://mp.weixin.qq.com/s/RSWF5XxH3B1eQvY_DlEwew
 
 深度学习、机器学习与NLP的前世今生
-
-https://mp.weixin.qq.com/s/sBRqSEKozodG2iA3Iqrpxw
-
-300页文本知识提取与推断最新教程
-
-https://mp.weixin.qq.com/s/mekBRtHcXqbMJiN1CgbgQg
-
-聊天机器人是如何工作的：基于深度学习的对话系统教程 152页PPT
 
 https://www.msra.cn/zh-cn/news/features/ruihua-song-20161226
 

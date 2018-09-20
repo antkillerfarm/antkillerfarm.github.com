@@ -132,6 +132,10 @@ https://blog.csdn.net/liyuanbhu/
 
 一个CV+math的blog。没错，该博主似乎对实分析很感兴趣。
 
+https://blog.csdn.net/taily_duan/article/category/6156573
+
+一个CV的专栏
+
 ## 论文
 
 《Moving Gradients: A Path-Based Method for Plausible Image Interpolation》：视频帧插值算法
@@ -161,6 +165,28 @@ https://docs.opencv.org/3.4.0/d6/d0f/group__dnn.html
 https://zhuanlan.zhihu.com/p/28323601
 
 鱼和熊掌兼得，DNN加入OpenCV全家桶
+
+## Halcon
+
+HALCON是德国MVtec公司开发的一套完善的标准的机器视觉（machine vision）算法包。
+
+官网：
+
+https://www.mvtec.com/products/halcon/
+
+它和OpenCV的差异在于：
+
+1.halcon侧重工业视觉比如检测、测量等，而opencv则要广泛些。
+
+2.halcon是商业软件，看不到源代码；而opencv则是open free的。
+
+3.如果你是搞算法的，并且项目周期长，公司不愿意购买商业视觉软件的，可以考虑Opencv,；如果你的项目周期短，公司可以承受商业软件的成本，选择Halcon会是比较明智的选择。
+
+参考：
+
+https://blog.csdn.net/taily_duan/article/category/2623893
+
+一个Halcon的专栏
 
 ## 参考
 
@@ -451,16 +477,4 @@ http://www.vlfeat.org/
 代码：
 
 https://github.com/vlfeat/vlfeat
-
-# GNU Octave
-
-GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。
-
-官网：
-
-https://gnu.org/software/octave/
-
-安装方法:
-
-`sudo apt-get install octave`
 

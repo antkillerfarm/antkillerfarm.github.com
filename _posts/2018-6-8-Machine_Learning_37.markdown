@@ -254,3 +254,92 @@ https://mp.weixin.qq.com/s/c9iHdgtErVd_iitwny7_zw
 
 Kaggle前1%参赛者经验：特征工程为何如此重要？
 
+# 垃圾筐
+
+Introspective Neural Networks
+
+http://www.cnblogs.com/cyjb/p/UnionFindSets.html
+
+并查集（Union-find Sets）
+
+高斯背景
+
+laurent series
+
+Base32/Base36/Base64/Base85
+
+方差分析(Analysis of Variance，简称ANOVA)
+
+Partial Least Squares Discriminant Analysis
+
+Wavenumber
+
+http://blog.codinglabs.org/articles/algorithms-for-cardinality-estimation-part-i.html
+
+解读Cardinality Estimation算法
+
+http://blog.csdn.net/icvpr/article/details/12342159
+
+局部敏感哈希(Locality-Sensitive Hashing, LSH)方法介绍
+
+https://mp.weixin.qq.com/s/zQJve_w5OoM6u-WcSWArdQ
+
+神速Hash
+
+FPN (Feature Pyramid Network)
+
+http://www.cnblogs.com/pinard/p/6221564.html
+
+谱聚类（spectral clustering）原理总结
+
+https://mp.weixin.qq.com/s/NlJ4-b5SjIjPGgvLUuSxFw
+
+孩子，有时候并不是生活欺骗了你，而是你可能还不懂概率统计……
+
+http://blog.csdn.net/luo123n/article/details/48574123
+
+PMI（Pointwise Mutual Information）
+
+http://www.cnblogs.com/6DAN_HUST/archive/2010/11/11/1874681.html
+
+运筹学——线性规划及单纯形法求解
+
+https://mp.weixin.qq.com/s/7usiElPtYAt1DCBIv5BZ2Q
+
+多项式插值算法与回归算法
+
+https://mp.weixin.qq.com/s/6fd8oxnahJ0EoocRV4q8Bg
+
+一看就懂的Alpha-Beta剪枝算法详解
+
+https://mp.weixin.qq.com/s/0o6fjKlUJVHZ6Vb65bFjGg
+
+俄罗斯方块可以永无止境地玩下去吗？
+
+https://mp.weixin.qq.com/s/Rw3O5MDbEIfgmWCVgFe95w
+
+五次方程的微分方程解法
+
+https://mp.weixin.qq.com/s/ei84HDZIkXQr2k0ghlN_Mw
+
+C罗踢球时在想什么？这是一篇空气动力学的blog
+
+https://mp.weixin.qq.com/s/CC77DL5RKhr5SekDyfqm3Q
+
+为什么我一唱歌，就有人说我的音乐是数学老师教的？
+
+https://mp.weixin.qq.com/s/uRdMOX63mefH71sM-PBNnA
+
+立交桥布局中的迷人曲线
+
+https://mp.weixin.qq.com/s/xHm4AjopGKSUE0-uAk5IHg
+
+用概率论告诉你：直觉到底有多不靠谱。包括了三门问题和本福特定律。
+
+https://mp.weixin.qq.com/s/5Ti9_9DMOpRjGCuC2fjc4w
+
+河流为什么是弯曲的？
+
+https://mp.weixin.qq.com/s/E_EzwLr4JOzR1pk3MOeU_w
+
+复动力系统简介

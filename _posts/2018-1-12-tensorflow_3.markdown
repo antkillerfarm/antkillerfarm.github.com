@@ -393,3 +393,7 @@ https://mp.weixin.qq.com/s/7rTmEBfh613SrNnTQvfSjw
 https://mp.weixin.qq.com/s/eX3LWYiSH-KObH_7F_3QCA
 
 TensorFlow 1.11.0发布，一键多GPU
+
+https://mp.weixin.qq.com/s/316VVXLQfeIsKNk4ld-VRw
+
+TensorFlow语义分割套件开源了ECCV18旷视科技BiSeNet实时分割算法

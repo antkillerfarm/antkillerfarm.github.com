@@ -326,10 +326,6 @@ https://mp.weixin.qq.com/s/yvHZ9hVueYUKsMXcNQQzmQ
 
 深度学习会被可微分编程取代？
 
-https://mp.weixin.qq.com/s/OCjznxO1WjJnnryuK8uRTw
-
-Scikit-learn 作者之一可微分动态编程51页教程
-
 https://mp.weixin.qq.com/s/lPAcNayqcz1sh8xNVklzEA
 
 DeepMind提出可微分逻辑编程，结合深度学习与符号程序优点

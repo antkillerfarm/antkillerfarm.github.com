@@ -136,6 +136,10 @@ https://mp.weixin.qq.com/s/kQozftKd_n_kYIF7KKCc8g
 
 短视频那么多，快手如何利用GRU实现各种炫酷的语音应用
 
+https://mp.weixin.qq.com/s/xwuM2Vj8G7UyuEyzTyO13A
+
+将CNN与RNN组合使用，天才还是错乱？
+
 # L2 Normalization
 
 L2 Normalization本身并不复杂，然而多数资料都只提到1维的L2 Normalization的计算公式：

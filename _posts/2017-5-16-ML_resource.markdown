@@ -150,10 +150,6 @@ https://mp.weixin.qq.com/s/Fa7P3v969JRr6OOAyrGptA
 
 数据驱动决策的13种思维
 
-https://mp.weixin.qq.com/s/LtmzL4nk-yS7G7zKv5jR8A
-
-帝国理工学院134页机器学习中的数学知识
-
 http://wenku.baidu.com/view/44a63fd2b14e852458fb577f.html
 
 kriging插值

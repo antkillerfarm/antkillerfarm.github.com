@@ -128,9 +128,9 @@ https://mp.weixin.qq.com/s/U-dlYhnaR8OQw2UKYKUWKQ
 
 知识图谱前沿技术课程实录
 
-https://mp.weixin.qq.com/s/MZE_SXsNg6Yt4dz2fmB1sA
+https://mp.weixin.qq.com/s/dmgfvLUTg14KWqe216kkFg
 
-阿里知识图谱首次曝光：每天千万级拦截量，亿级别全量智能审核
+300页文本知识提取与推断最新教程
 
 https://mp.weixin.qq.com/s/WIro7pk7kboMvdwpZOSdQA
 
@@ -140,17 +140,9 @@ https://mp.weixin.qq.com/s/JZYH_m1eS93KRjkWA82GoA
 
 复旦肖仰华：基于知识图谱的问答系统
 
-https://mp.weixin.qq.com/s/cEmtOAtfP2gSBlaPfGXb3w
-
-多源信息表示学习在知识图谱中的应用
-
 https://mp.weixin.qq.com/s/cL1aKdu8ig8-ocOPirXk2w
 
 如何构建知识图谱
-
-https://mp.weixin.qq.com/s/Nh7XJOLNBDdpibopVG4MrQ
-
-中文通用百科知识图谱（CN-DBpedia）
 
 https://mp.weixin.qq.com/s/qrP_tWlHyc3ZAMPOqu9E0A
 
@@ -159,6 +151,18 @@ https://mp.weixin.qq.com/s/qrP_tWlHyc3ZAMPOqu9E0A
 https://mp.weixin.qq.com/s/I4sfT8rlwXIXxEjfdQoFbA
 
 东南大学周张泉：基于知识图谱的推理技术
+
+https://mp.weixin.qq.com/s/MZE_SXsNg6Yt4dz2fmB1sA
+
+阿里知识图谱首次曝光：每天千万级拦截量，亿级别全量智能审核
+
+https://mp.weixin.qq.com/s/cEmtOAtfP2gSBlaPfGXb3w
+
+多源信息表示学习在知识图谱中的应用
+
+https://mp.weixin.qq.com/s/Nh7XJOLNBDdpibopVG4MrQ
+
+中文通用百科知识图谱（CN-DBpedia）
 
 https://zhuanlan.zhihu.com/p/30320631
 
@@ -328,10 +332,6 @@ https://mp.weixin.qq.com/s/zusfpa3c2T8mSyRSaXhVLg
 
 健康知识图谱，阿里工程师如何实现？
 
-https://mp.weixin.qq.com/s/dmgfvLUTg14KWqe216kkFg
-
-300页文本知识提取与推断最新教程
-
 https://mp.weixin.qq.com/s/8M4MyZ-EUKfGkuqzkuvYgw
 
 金融知识图谱搭建全攻略
@@ -414,10 +414,6 @@ https://mp.weixin.qq.com/s/lpNTdnfp2FnJ97EivhUv2g
 
 12种降维方法终极指南
 
-https://mp.weixin.qq.com/s/150raN1kPc6c0pAB1DVLWw
-
-118页概率思维教程——基础、技巧与算法
-
 https://mp.weixin.qq.com/s/Sez56UaCAt3Aspn7OTFj_Q
 
 让AI来一场“简单”的黄金点游戏
@@ -425,8 +421,4 @@ https://mp.weixin.qq.com/s/Sez56UaCAt3Aspn7OTFj_Q
 https://mp.weixin.qq.com/s?__biz=MzUyMjE2MTE0Mw==&mid=2247486970&idx=2&sn=6878205053d13467f66055a3314eeba1
 
 如何利用高效的搜索算法来搜索网络的拓扑结构
-
-https://mp.weixin.qq.com/s/iPuP2WOcFTpO-EomfS6sjg
-
-554页《统计关联性与概率编程》教程
 

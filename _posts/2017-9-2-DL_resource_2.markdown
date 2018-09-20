@@ -20,22 +20,6 @@ https://mp.weixin.qq.com/s/z360mTVRqeDFMBiJ0Q_9SQ
 
 调参心得：超参数优化之旅
 
-https://mp.weixin.qq.com/s/YVNuuH0yyZx0_L4ch6gcbw
-
-220页深度神经网络训练归一化: 数学基础与理论、挑战
-
-https://mp.weixin.qq.com/s/E7ajoDSxEGktqYuEfFo33A
-
-220页深度神经网络基础、理论与挑战PPT
-
-https://mp.weixin.qq.com/s/35vcaVsFPRTEWQ1ZP9y51Q
-
-228页教程全面理解视觉定位技术
-
-https://mp.weixin.qq.com/s/1MzoBW3e_crV1n-MMWjATg
-
-308页教程介绍最新几何对象映射技术，functional maps
-
 https://mp.weixin.qq.com/s/miKs4tWu8Hh1yHvx-XZFwg
 
 构建深度神经网络，我有20条“不成熟”的小建议

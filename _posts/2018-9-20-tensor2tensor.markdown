@@ -102,6 +102,18 @@ https://blog.csdn.net/hpulfc/article/details/82625217
 
 tensor2tensor自定义问题，训练模型(bpe篇)
 
+# GNU Octave
+
+GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。
+
+官网：
+
+https://gnu.org/software/octave/
+
+安装方法:
+
+`sudo apt-get install octave`
+
 # 功率谱（续）
 
 自相关函数和功率谱密度组成了傅立叶变换对，这种关系又被称为**EWK（Einstein-Wiener-Khintchine）关系**。
@@ -196,7 +208,9 @@ Cumulants（累积量）的思想最早是Thorvald Thiele提出的，后来被Ro
 
 >苏格兰人的自我意识真是强，足球有自己的协会，就连皇家学会也有自己的。
 
+在介绍Cumulants之前，我们首先看一下Moment-generating function：
 
+$$$$
 
 ## Polyspectrum
 

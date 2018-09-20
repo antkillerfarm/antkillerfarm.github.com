@@ -310,6 +310,42 @@ https://cyclostationary.blog
 
 Cyclostationary Signal Processing。这个是一个在信号处理领域使用统计学的blog。作者Chad Spooner，UCB本科（1986）+UCD博士（1992）。
 
+https://mp.weixin.qq.com/s/150raN1kPc6c0pAB1DVLWw
+
+118页概率思维教程——基础、技巧与算法
+
+https://mp.weixin.qq.com/s/iPuP2WOcFTpO-EomfS6sjg
+
+554页《统计关联性与概率编程》教程
+
+https://mp.weixin.qq.com/s/c1M5R3AYhIpJX0MHmp52_g
+
+246页《统计机器学习与凸优化》教程
+
+https://mp.weixin.qq.com/s/OCjznxO1WjJnnryuK8uRTw
+
+Scikit-learn作者之一可微分动态编程51页教程
+
+https://mp.weixin.qq.com/s/LtmzL4nk-yS7G7zKv5jR8A
+
+帝国理工学院134页机器学习中的数学知识
+
+https://mp.weixin.qq.com/s/YVNuuH0yyZx0_L4ch6gcbw
+
+220页深度神经网络训练归一化: 数学基础与理论、挑战
+
+https://mp.weixin.qq.com/s/E7ajoDSxEGktqYuEfFo33A
+
+220页深度神经网络基础、理论与挑战PPT
+
+https://mp.weixin.qq.com/s/35vcaVsFPRTEWQ1ZP9y51Q
+
+228页教程全面理解视觉定位技术
+
+https://mp.weixin.qq.com/s/1MzoBW3e_crV1n-MMWjATg
+
+308页教程介绍最新几何对象映射技术，functional maps
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。
@@ -408,52 +444,3 @@ https://mp.weixin.qq.com/s/y_mOKpgLEvDjoO-UdMBcyw
 
 Apollo AdaperManager和Routing模块源代码分析
 
-# 垃圾筐
-
-Introspective Neural Networks
-
-http://www.cnblogs.com/cyjb/p/UnionFindSets.html
-
-并查集（Union-find Sets）
-
-高斯背景
-
-laurent series
-
-Base32/Base36/Base64/Base85
-
-方差分析(Analysis of Variance，简称ANOVA)
-
-Partial Least Squares Discriminant Analysis
-
-Wavenumber
-
-http://blog.codinglabs.org/articles/algorithms-for-cardinality-estimation-part-i.html
-
-解读Cardinality Estimation算法
-
-http://blog.csdn.net/icvpr/article/details/12342159
-
-局部敏感哈希(Locality-Sensitive Hashing, LSH)方法介绍
-
-https://mp.weixin.qq.com/s/zQJve_w5OoM6u-WcSWArdQ
-
-神速Hash
-
-FPN (Feature Pyramid Network)
-
-http://www.cnblogs.com/pinard/p/6221564.html
-
-谱聚类（spectral clustering）原理总结
-
-https://mp.weixin.qq.com/s/NlJ4-b5SjIjPGgvLUuSxFw
-
-孩子，有时候并不是生活欺骗了你，而是你可能还不懂概率统计……
-
-http://blog.csdn.net/luo123n/article/details/48574123
-
-PMI（Pointwise Mutual Information）
-
-http://www.cnblogs.com/6DAN_HUST/archive/2010/11/11/1874681.html
-
-运筹学——线性规划及单纯形法求解
