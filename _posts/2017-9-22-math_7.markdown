@@ -1,10 +1,40 @@
 ---
 layout: post
-title:  数学狂想曲（七）——函数连续性, 莱洛三角形
+title:  数学狂想曲（七）——数学的深渊, Gabriel's Horn, 函数连续性
 category: math 
 ---
 
-# Gabriel's Horn（续）
+# 马氏距离（续）
+
+2）在计算马氏距离过程中，要求总体样本数大于样本的维数，否则得到的总体样本协方差矩阵逆矩阵不存在，这种情况下，用欧式距离来代替马氏距离，也可以理解为，如果样本数小于样本的维数，这种情况下求其中两个样本的距离，采用欧式距离计算即可。
+
+3）还有一种情况，满足了条件总体样本数大于样本的维数，但是协方差矩阵的逆矩阵仍然不存在，比如A（3，4），B（5，6）；C（7，8），这种情况是因为这三个样本在其所处的二维空间平面内共线。这种情况下，也采用欧式距离计算。
+
+4）在实际应用中“总体样本数大于样本的维数”这个条件是很容易满足的，而所有样本点出现3）中所描述的情况是很少出现的，所以在绝大多数情况下，马氏距离是可以顺利计算的，但是马氏距离的计算是不稳定的，不稳定的来源是协方差矩阵，这也是马氏距离与欧式距离的最大差异之处。
+
+参考：
+
+https://mp.weixin.qq.com/s/xiVmQjJDqY_iOBz_bB_O7g
+
+距离度量，浅谈！
+
+# 数学的深渊
+
+![](/images/article/math_trench.jpg)
+
+当然，类似的还有个AI的深渊：
+
+![](/images/article/AI_hell.jpg)
+
+# Gabriel's Horn
+
+Gabriel's Horn，又名托里拆利小号（Torricelli's trumpet），是数学史上非常经典的模型。它最早由Evangelista Torricelli提出，故名。
+
+>注：Evangelista Torricelli，1608~1647，意大利物理学家和数学家。主要研究气压、水压，提出了托里拆利原理，并发明了气压计。
+
+![](/images/article/GabrielHorn.png)
+
+上图是Gabriel's Horn的图像，它由$$y=\frac{1}{x}(x>1)$$绕x轴旋转得到。Torricelli发现Gabriel's Horn是个**体积有限，而表面积无限**的形状。
 
 $$V=\pi\int\limits_1^a\left(\frac{1}{x}\right)^2\mathrm{d}x=\pi\left(1-\frac{1}{a}\right)$$
 
@@ -178,29 +208,4 @@ https://max.book118.com/html/2015/0401/14126427.shtm
 https://mp.weixin.qq.com/s/jrNIhSlTiXsO2sGWmzcFfg
 
 Michael I. Jordan最新清华授课笔记！
-
-# 莱洛三角形
-
-定宽曲线（Curve of constant width），或称恒宽曲线，定义：平面上一凸形封闭曲线，不论如何转动，其宽度永远不变，则称之定宽曲线或恒宽曲线。这里所称的“宽度”是指平行线“夹住”某封闭曲线时，平行线间的距离，所谓"夹住"是指每个平行线与凸形封闭曲线相交至少一点且与凸形封闭曲线围起来的内部区域（interior）不相交。
-
-或者可以说，将一个闭合曲线放在两条平行线中间，使之与这两平行线相切，则可以做到：无论这个闭合曲线如何运动，只要它仍与原平行线中的一条直线相切，就必与另一条直线线相切，那么此闭合曲线为定宽曲线。
-
-![](/images/article/Reuleaux_triangle.jpg)
-
-上图是定宽曲线的一个直观的解释。平板下方的两个轮子转动的过程中，平板和桌面的距离保持不变。
-
-这两个轮子一个是圆形，另一个就是本篇的主角——莱洛三角形（Reuleaux triangle）。
-
->Franz Reuleaux，1829～1905，德国人。这个人可谓是全才。   
->在教育界，当过ETH和柏林工业大学的教授和校长，当然了那个时代这两所学校还不叫现在的名字。   
->在工业界，他发明了300多种机械模型，被誉为动力学（kinematics）之父。动力学是一门研究机械以及组成机械的各个部件之间的运动关系的科学，被广泛应用于机械设计领域。比如：   
->![](/images/article/Reuleaux_triangle.gif)   
->上图是一个没有活塞的发动机气缸，转子的形状是Reuleaux triangle的。   
->在政界，他是1876年世界工业博览会德国代表团的主席，参与创立了德国的专利体系。
-
-![](/images/article/Construction_triangle_Reuleaux.png)
-
-上图是Reuleaux triangle的尺规做图方法。
-
-Reuleaux triangle是“**除了圆形以外，还有什么形状的下水道盖不会掉入下水道？**”这个问题的一个答案。这也是所有定宽曲线的特性。但Reuleaux triangle的特殊之处在于：它是定宽曲线所能构成的面积最小的图形。因此它做的井盖非常省铁。
 

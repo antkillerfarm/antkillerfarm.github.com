@@ -6,38 +6,6 @@ category: AI
 
 # TensorFlow
 
-https://mp.weixin.qq.com/s/3QgtemxxsQmuNQVEdpiMwA
-
-如何做准确率达98%的交通标志识别系统？
-
-https://mp.weixin.qq.com/s/pSE2V8wD3_KHMI71kLTXng
-
-如何基于TensorFlow使用LSTM和CNN实现时序分类任务
-
-https://mp.weixin.qq.com/s/dHkmDvFVUGmt4Ch-gv3s1g
-
-一步一步带你用TensorFlow玩转LSTM
-
-https://mp.weixin.qq.com/s/Bx5Djj-RE0jPJ7LjyQ7GPg
-
-基于gym和tensorflow的强化学习算法实现
-
-https://mp.weixin.qq.com/s/3URLEdhB8hs0XXekKbvsnw
-
-使用TensorFlow在卷积神经网络上实现L2约束的softmax损失函数
-
-https://mp.weixin.qq.com/s/dgLJrn3omUKMqmqTIEcoyg
-
-Tensorflow实现DDPG
-
-https://mp.weixin.qq.com/s/FdPrRQr0LukcWh7B703MlQ
-
-利用tf.gradients在TensorFlow中实现梯度下降
-
-https://mp.weixin.qq.com/s/a68brFJthczgwiFoUBh30A
-
-TensorFlow数据集和估算器介绍
-
 https://github.com/indiejoseph/cnn-text-classification-tf-chinese
 
 CNN for Chinese Text Classification in Tensorflow
@@ -425,4 +393,3 @@ https://mp.weixin.qq.com/s/7rTmEBfh613SrNnTQvfSjw
 https://mp.weixin.qq.com/s/eX3LWYiSH-KObH_7F_3QCA
 
 TensorFlow 1.11.0发布，一键多GPU
-

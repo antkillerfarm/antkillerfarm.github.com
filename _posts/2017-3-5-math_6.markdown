@@ -1,12 +1,46 @@
 ---
 layout: post
-title:  数学狂想曲（六）——自相关&互相关&卷积, 闵可夫斯基距离, 马氏距离, 数学的深渊, Gabriel's Horn
+title:  数学狂想曲（六）——自相关&互相关&卷积, 闵可夫斯基距离, 马氏距离
 category: math 
 ---
 
 # 概率分布（2）
 
 ## 一元线性回归的显著性检验（续）
+
+上面这些都是正态样本的参数检验。
+
+对于非参数检验或者非正态样本检验，其他的检验方法还有Wilcoxon signed-rank test、Kruskal–Wallis test、Friedman test等。
+
+>注：Frank Wilcoxon，1892～1965，美国化学家。康奈尔大学博士。先后供职于几家美国化工企业的研究机构。
+
+>William Henry ("Bill") Kruskal，1919～2005，美国数学家。哥伦比亚大学博士，芝加哥大学教授。
+
+>Milton Friedman，1912～2006，美国经济学家。哥伦比亚大学博士，芝加哥大学教授。1976年获诺贝尔经济学奖。芝加哥学派第二代的领军人物。
+
+>Wilson Allen Wallis，1912～1998，美国经济学家。先后就读于明尼苏达大学和芝加哥大学，但是没有博士学位。罗彻斯特大学校长。从艾森豪威尔到里根的历届共和党总统的顾问。Milton Friedman的至交。其父Wilson Dallam Wallis为美国人类学家，明尼苏达大学教授。
+
+## 一元线性回归的显著性检验
+
+假设y关于x的回归具有形式$$a+bx$$，则$$H_0:b=0$$。
+
+这里使用t检验法进行假设检验。
+
+首先，不加证明的给出如下结论：
+
+**推论1**：$$\overline y\sim N(a+b\overline x,\sigma^2/n)$$
+
+**推论2**：$$\hat b\sim N(b,\sigma^2/S_{xx})$$
+
+**推论3**：$$\hat y_0=\hat a+\hat b x_0=\overline y+\hat b(x_0-\overline x)\sim N\left(a+bx_0,\left[\frac{1}{n}+\frac{(x_0-\overline x)^2}{S_{xx}}\right]\sigma^2\right)$$
+
+**推论4**：$$Q_e/\sigma^2\sim \chi^2(n-2)$$
+
+**推论5**：$$\overline y,\hat b,Q_e$$相互独立。
+
+**推论6**：若$$y_0=a+bx_0+\epsilon_0$$与$$y_1,\dots,y_n$$独立，则$$y_0,\hat y_0,Q_e$$相互独立。
+
+其中，$$\overline y$$表示y的均值，而$$\hat y$$表示y的估计值,$$S_{xx}$$表示方差，$$Q_e$$为残差平方和$$\sum_{i=1}^n(y_i-\hat y_i)^2$$。
 
 由推论4可得：
 
@@ -161,34 +195,4 @@ $$d_M(x,y)=\sqrt{(\frac{x_1-y_1}{s_1})^2+\dots+(\frac{x_p-y_p}{s_p})^2}=\sqrt{(x
 马氏距离的特点还包括：
 
 1）马氏距离的计算是建立在总体样本的基础上的，这一点可以从上述协方差矩阵的解释中可以得出，也就是说，如果拿同样的两个样本，放入两个不同的总体中，最后计算得出的两个样本间的马氏距离通常是不相同的，除非这两个总体的协方差矩阵碰巧相同；
-
-2）在计算马氏距离过程中，要求总体样本数大于样本的维数，否则得到的总体样本协方差矩阵逆矩阵不存在，这种情况下，用欧式距离来代替马氏距离，也可以理解为，如果样本数小于样本的维数，这种情况下求其中两个样本的距离，采用欧式距离计算即可。
-
-3）还有一种情况，满足了条件总体样本数大于样本的维数，但是协方差矩阵的逆矩阵仍然不存在，比如A（3，4），B（5，6）；C（7，8），这种情况是因为这三个样本在其所处的二维空间平面内共线。这种情况下，也采用欧式距离计算。
-
-4）在实际应用中“总体样本数大于样本的维数”这个条件是很容易满足的，而所有样本点出现3）中所描述的情况是很少出现的，所以在绝大多数情况下，马氏距离是可以顺利计算的，但是马氏距离的计算是不稳定的，不稳定的来源是协方差矩阵，这也是马氏距离与欧式距离的最大差异之处。
-
-参考：
-
-https://mp.weixin.qq.com/s/xiVmQjJDqY_iOBz_bB_O7g
-
-距离度量，浅谈！
-
-# 数学的深渊
-
-![](/images/article/math_trench.jpg)
-
-当然，类似的还有个AI的深渊：
-
-![](/images/article/AI_hell.jpg)
-
-# Gabriel's Horn
-
-Gabriel's Horn，又名托里拆利小号（Torricelli's trumpet），是数学史上非常经典的模型。它最早由Evangelista Torricelli提出，故名。
-
->注：Evangelista Torricelli，1608~1647，意大利物理学家和数学家。主要研究气压、水压，提出了托里拆利原理，并发明了气压计。
-
-![](/images/article/GabrielHorn.png)
-
-上图是Gabriel's Horn的图像，它由$$y=\frac{1}{x}(x>1)$$绕x轴旋转得到。Torricelli发现Gabriel's Horn是个**体积有限，而表面积无限**的形状。
 

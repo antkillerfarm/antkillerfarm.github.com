@@ -204,6 +204,10 @@ https://mp.weixin.qq.com/s/hpWDqyLclqEfWwakFZtBIQ
 
 用DensePose，教照片里的人学跳舞，系群体鬼畜
 
+https://mp.weixin.qq.com/s/OUFGRHa-uYKUg_giGmL6yQ
+
+机器人读懂人心的九大模型。一个动作识别的blog
+
 # 深度目标跟踪
 
 https://zhuanlan.zhihu.com/p/22334661

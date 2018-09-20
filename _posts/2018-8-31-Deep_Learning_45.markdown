@@ -144,8 +144,6 @@ https://mp.weixin.qq.com/s/DUSa3SW1AgvJ0szL030NHQ
 
 一个AI玩57个游戏，DeepMind离真正“万能”的AGI不远了！
 
-
-
 # AutoDL
 
 DL领域目前存在的主要问题之一是：如何设计网络结构和调整超参数。目前的做法，通常依赖于作者的直觉，属于典型的拍脑袋想点子。
@@ -261,6 +259,10 @@ https://mp.weixin.qq.com/s/KvkkmDIY7Y0NBgYF86E2Pw
 https://zhuanlan.zhihu.com/p/44576620
 
 让算法解放算法工程师----NAS综述
+
+https://mp.weixin.qq.com/s/3njCAKQsQ8UhL3gqDDHZGQ
+
+近期大热的AutoML领域，都有哪些值得读的论文？
 
 # GAN进阶（续）
 

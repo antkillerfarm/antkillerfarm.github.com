@@ -143,6 +143,18 @@ https://www.douban.com/group/topic/27583755/
 
 ## 参考（续）
 
+https://mp.weixin.qq.com/s/5xs1ivkrUAP_Rr9P-EMc5g
+
+代码优化指南：人生苦短，我用Python。这篇blog主要介绍了如何追踪Python脚本的CPU使用情况。
+
+https://mp.weixin.qq.com/s/xCKC3cz7jUvrwl4uvMNKTA
+
+20行Python代码教你批量将PDF转为Word
+
+https://mp.weixin.qq.com/s/HGH2e_0ocHv2VWsjOje9BQ
+
+程序员必知的Python陷阱与缺陷列表
+
 http://blog.csdn.net/linda1000/article/details/8315892
 
 单引号、双引号和三双引号的区别

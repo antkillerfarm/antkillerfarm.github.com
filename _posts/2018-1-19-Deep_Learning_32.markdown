@@ -166,6 +166,10 @@ https://mp.weixin.qq.com/s/KK-_G7Sc9HyYlxH1nLxVfA
 
 斯坦福大学提出全新网络嵌入方法—GraphWave
 
+https://zhuanlan.zhihu.com/p/44755895
+
+"Social Rank":节点重要度在网络表示学习中的影响
+
 # NN的量化计算
 
 ## 概述

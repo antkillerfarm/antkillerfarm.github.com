@@ -1,10 +1,42 @@
 ---
 layout: post
-title:  数学狂想曲（三）——统计杂谈, PID算法, 20世纪10大算法
+title:  数学狂想曲（三）——统计杂谈, PID算法
 category: math 
 ---
 
 # 概率分布（1）
+
+## 贝塔分布和共轭先验分布（续）
+
+上述过程的形式化描述为：
+
+$$Uniform(\theta)+B(n,\theta)\to Beta(x+1,n-x+1)$$
+
+即
+
+$$先验参数分布+数据分布\to 后验分布$$
+
+**定义**：设$$\theta$$是某分布中的一个参数，$$\pi(\theta)$$是其先验分布。假如由抽样信息算得的后验分布$$\pi(\theta \mid x)$$与$$\pi(\theta)$$同属于一个分布族，则称$$\pi(\theta)$$是$$\theta$$的**共轭先验分布**。
+
+从这个定义可以看出，共轭先验分布是对某一分布中的参数而言的，离开指定参数及其所在的分布，谈论共轭先验分布是没有意义的。
+
+常见的共轭先验分布：
+
+| 总体分布 | 参数 | 共轭先验分布 |
+|:--:|:--:|:--:|
+| 二项分布 | 成功概率 | 贝塔分布 |
+| 泊松分布 | 均值 | 伽马分布 |
+| 指数分布 | 均值倒数 | 伽马分布 |
+| 正态分布（方差已知） | 均值 | 正态分布 |
+| 正态分布（方差未知） | 方差 | 倒伽马分布 |
+
+共轭先验分布中，由于先验分布和后验分布都是同一个分布族，因此有利于简化计算。同时，先验参数往往会传递到后验分布，这样就能够比较方便的确定参数的实际意义。
+
+参考：
+
+http://blog.csdn.net/u010945683/article/details/49149815
+
+共轭先验分布
 
 ## 多项分布和狄利克雷分布
 
@@ -249,50 +281,4 @@ https://blog.csdn.net/qq_25005909/article/details/77941243
 https://blog.csdn.net/nemol1990/article/details/45131603
 
 四轴PID讲解
-
-# 20世纪10大算法
-
-2000年，IEEE评选出20世纪10大算法。名单如下：
-
-1.[Metropolis Algorithm for Monte Carlo](http://en.wikipedia.org/wiki/Metropolis_Algorithm)
-
-2.[Simplex Method for Linear Programming](http://en.wikipedia.org/wiki/Simplex_Method)
-
-3.[Krylov Subspace Iteration Methods](http://en.wikipedia.org/wiki/Krylov_subspace_methods)
-
-4.[The Decompositional Approach to Matrix Computations](http://en.wikipedia.org/wiki/Matrix_(mathematics)#Decomposition)
-
-5.[The Fortran Optimizing Compiler](http://en.wikipedia.org/wiki/Fortran#History)
-
-6.[QR Algorithm for Computing Eigenvalues](http://en.wikipedia.org/wiki/QR_algorithm)
-
-7.[Quicksort Algorithm for Sorting](http://en.wikipedia.org/wiki/Quicksort)
-
-8.[Fast Fourier Transform](http://en.wikipedia.org/wiki/Fast_Fourier_Transform)
-
-9.[Integer Relation Detection](http://en.wikipedia.org/wiki/Integer_relation_algorithm)
-
-10.[Fast Multipole Method](http://en.wikipedia.org/wiki/Fast_Multipole_Method)
-
-详细内容参见：
-
-http://www.uta.edu/faculty/rcli/TopTen/topten.pdf
-
-中文版本：
-
-http://blog.csdn.net/v_JULY_v/article/details/6127953
-
-类似的，还有奥地利符号计算研究所（Research Institute for Symbolic Computation，简称RISC）的Christoph Koutschan博士，针对计算机科学家所做的调查，选出的最重要的32个算法：
-
-https://mp.weixin.qq.com/s/AFTaowkCz1pfFzaMDen-RA
-
-# 矩阵&向量的积
-
-矩阵&向量有很多种积的定义，特罗列如下：
-
-## 向量的数乘
-
-Scalar multiplication的定义如下：
-
-$$c\mathbf{a}=c[a_1,\dots,a_n]=[ca_1,\dots,ca_n]$$
 

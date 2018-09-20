@@ -1,10 +1,54 @@
 ---
 layout: post
-title:  数学狂想曲（四）——矩阵&向量的积, 软件滤波算法, 玻尔兹曼分布
+title:  数学狂想曲（四）——20世纪10大算法, 矩阵&向量的积, 软件滤波算法
 category: math 
 ---
 
-# 矩阵&向量的积（续）
+# 20世纪10大算法
+
+2000年，IEEE评选出20世纪10大算法。名单如下：
+
+1.[Metropolis Algorithm for Monte Carlo](http://en.wikipedia.org/wiki/Metropolis_Algorithm)
+
+2.[Simplex Method for Linear Programming](http://en.wikipedia.org/wiki/Simplex_Method)
+
+3.[Krylov Subspace Iteration Methods](http://en.wikipedia.org/wiki/Krylov_subspace_methods)
+
+4.[The Decompositional Approach to Matrix Computations](http://en.wikipedia.org/wiki/Matrix_(mathematics)#Decomposition)
+
+5.[The Fortran Optimizing Compiler](http://en.wikipedia.org/wiki/Fortran#History)
+
+6.[QR Algorithm for Computing Eigenvalues](http://en.wikipedia.org/wiki/QR_algorithm)
+
+7.[Quicksort Algorithm for Sorting](http://en.wikipedia.org/wiki/Quicksort)
+
+8.[Fast Fourier Transform](http://en.wikipedia.org/wiki/Fast_Fourier_Transform)
+
+9.[Integer Relation Detection](http://en.wikipedia.org/wiki/Integer_relation_algorithm)
+
+10.[Fast Multipole Method](http://en.wikipedia.org/wiki/Fast_Multipole_Method)
+
+详细内容参见：
+
+http://www.uta.edu/faculty/rcli/TopTen/topten.pdf
+
+中文版本：
+
+http://blog.csdn.net/v_JULY_v/article/details/6127953
+
+类似的，还有奥地利符号计算研究所（Research Institute for Symbolic Computation，简称RISC）的Christoph Koutschan博士，针对计算机科学家所做的调查，选出的最重要的32个算法：
+
+https://mp.weixin.qq.com/s/AFTaowkCz1pfFzaMDen-RA
+
+# 矩阵&向量的积
+
+矩阵&向量有很多种积的定义，特罗列如下：
+
+## 向量的数乘
+
+Scalar multiplication的定义如下：
+
+$$c\mathbf{a}=c[a_1,\dots,a_n]=[ca_1,\dots,ca_n]$$
 
 ## 向量的点积
 
@@ -211,34 +255,3 @@ $$b_0*X(n)+b_1*X(n-1)+b_2*X(n-2)+...+b_k*X(n-k)$$
 
 缺点：运算量大。
 
-# 玻尔兹曼分布
-
-Boltzmann distribution（又叫Gibbs distribution）本来是脱胎于热力学和统计力学的分布，但在量子力学和机器学习领域也得到了广泛的应用。
-
->注：Ludwig Eduard Boltzmann，1844～1906，奥地利物理学家，统计力学的奠基人之一。维也纳大学博士，先后执教于格拉茨大学、维也纳大学、慕尼黑大学和莱比锡大学。英国皇家学会会员。
-
-## 信息熵
-
-设概率实验X有n个可能的独立结局，即n个随机事件$$A_1,\dots,A_n$$，每个随机事件的概率为$$p_1,\dots,p_n$$。则信息熵的定义为：
-
-$$H_n=-k\sum_{i=1}^{n}p_i\ln p_i\tag{1}$$
-
-其中k为一正常数。可以看出$$H_n$$实际上是$$p_i$$的泛函。
-
-以下我们主要从信息熵的角度出发研究玻尔兹曼分布。但不能忽视的是，玻尔兹曼分布最早脱胎于热力学，而信息熵与热力学统计物理中的熵，虽然数学形式一致，但本质是不同的。两者相差一个玻尔兹曼常数。参见：
-
-https://www.zhihu.com/question/20992022/answer/50458123
-
-信息熵与热力学统计物理中的熵有什么区别和联系？
-
->注：信息熵的定义有多种，公式1给出的是Shannon熵的定义，除此之外还有von Neumann熵、Renyi熵等。以下如无特殊指出，信息熵均指Shannon熵。
-
-参考：
-
-https://mp.weixin.qq.com/s/LGyNq3fRlsRSatu1lpFnnw
-
-机器学习各种熵：从入门到全面掌握
-
-https://mp.weixin.qq.com/s/6I2-5zWbpAUSgoHRUEkj3Q
-
-通俗理解信息熵

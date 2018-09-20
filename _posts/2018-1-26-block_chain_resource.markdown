@@ -416,3 +416,30 @@ https://mp.weixin.qq.com/s/FYDYV0wVxX-h9makD0JEEA
 
 将基于深度学习的检测和识别算法应用到SAR图像智能解译
 
+# 垃圾筐
+
+https://mp.weixin.qq.com/s/QmDCFY0SP3cl71HvwvthJQ
+
+如果高斯没有故意“坑”黎曼，估计这门神奇的学科就不会出现了……
+
+http://www.cnblogs.com/zeze/p/6999651.html
+
+粗糙集（Rough Set Approach）
+
+https://mp.weixin.qq.com/s/mc9aH5hDgRFS2h2blPhb8w
+
+21张绘画完美演绎地球演化新说！
+
+https://zhuanlan.zhihu.com/p/43934918
+
+诡异的布雷斯悖论：为什么越是修新路，城市反而更堵了！
+
+https://zhuanlan.zhihu.com/p/43472599
+
+为什么现在的动物不如恐龙那样巨大？
+
+## Bélády's Algorithm
+
+Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。
+
+>László Bélády，1928年生，匈牙利计算机科学家。Technical University of Budapest本硕。IBM研究员。

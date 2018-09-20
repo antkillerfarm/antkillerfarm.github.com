@@ -20,6 +20,18 @@ https://mp.weixin.qq.com/s/Q3cqLuOZDSMOdAjVrCDrtQ
 
 在Python 2.7即将停止支持时，我们为你准备了一份3.x迁移指南
 
+## six
+
+six是一个专门用来兼容 Python 2 和 Python 3 的库。它解决了诸如 urllib 的部分方法不兼容， str 和 bytes 类型不兼容等“知名”问题。
+
+代码：
+
+https://bitbucket.org/gutworth/six
+
+文档：
+
+https://bitbucket.org/gutworth/six
+
 ## yield
 
 yield就是return返回一个值，并且记住这个返回的位置，下次迭代就从这个位置后(下一行)开始。
@@ -437,16 +449,4 @@ https://mp.weixin.qq.com/s/O5okcuVKuf339BZzhmxiew
 https://mp.weixin.qq.com/s/jHnkmpnOz1LApVCLJL-8Tw
 
 如何写出优雅又地道的Python代码？
-
-https://mp.weixin.qq.com/s/5xs1ivkrUAP_Rr9P-EMc5g
-
-代码优化指南：人生苦短，我用Python。这篇blog主要介绍了如何追踪Python脚本的CPU使用情况。
-
-https://mp.weixin.qq.com/s/xCKC3cz7jUvrwl4uvMNKTA
-
-20行Python代码教你批量将PDF转为Word
-
-https://mp.weixin.qq.com/s/HGH2e_0ocHv2VWsjOje9BQ
-
-程序员必知的Python陷阱与缺陷列表
 

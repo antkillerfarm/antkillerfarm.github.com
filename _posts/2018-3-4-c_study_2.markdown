@@ -238,3 +238,7 @@ https://mp.weixin.qq.com/s/rn-yv510ff5IKq0cL5bypQ
 
 新加坡科技设计大学杨杰：Recent Advances in Sequence Labeling
 
+https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651009365&idx=4&sn=b8a0bcf9c17bee15a23a4585291788d3
+
+百度UNIT对话系统核心技术解析
+

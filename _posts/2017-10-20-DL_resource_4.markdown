@@ -302,6 +302,10 @@ https://mp.weixin.qq.com/s/e8BUqCvnfHaLFQMSO1lVkw
 
 腾讯AI Lab提出自动化模型压缩框架PocketFlow：将深度学习装进口袋
 
+https://mp.weixin.qq.com/s/eRDdspv7T-Kvm4Zue4RZnA
+
+领英开源TonY：构建在Hadoop YARN上的TensorFlow框架
+
 ## gcForest
 
 http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw
