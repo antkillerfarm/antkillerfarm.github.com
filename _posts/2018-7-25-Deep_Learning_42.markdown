@@ -96,6 +96,10 @@ https://mp.weixin.qq.com/s/VwejfjxjVnGFW3WXXyL1og
 
 ALFNet：向高效行人检测迈进
 
+https://mp.weixin.qq.com/s/3gzlln0yqqXQ6Xbwt-VXjw
+
+OR-CNN行人检测：为‘遮挡’而生
+
 # 人脸识别进阶
 
 https://mp.weixin.qq.com/s/YlrWHDPIPzN4dQO2vo4DjA

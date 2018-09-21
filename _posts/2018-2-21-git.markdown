@@ -430,10 +430,6 @@ https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
 
 谷歌提出多图像抠图算法，并弥补水印技术的一致性漏洞
 
-https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw
-
-分段映射：帮助利用少量样本习得新类别细粒度分类器
-
 https://mp.weixin.qq.com/s/zTB59Fg_JFg9ZZPRlq9txA
 
 不使用残差连接，ICML新研究靠初始化训练上万层标准CNN

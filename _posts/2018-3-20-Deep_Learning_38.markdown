@@ -240,6 +240,14 @@ https://zhuanlan.zhihu.com/p/43843955
 
 BAIR：基于人类演示&RL的夹爪训练——高效、通用、低成本
 
+https://mp.weixin.qq.com/s/ADZlLx6gMTFU6IoBCF669g
+
+快1万倍！伯克利提出用深度RL优化SQL查询
+
+https://mp.weixin.qq.com/s/oZDDP59o-1qwfz8prK3nJQ
+
+伯克利最新研究：如何用目标图像进行机器视觉强化学习？
+
 # 问答系统
 
 GA-Reader

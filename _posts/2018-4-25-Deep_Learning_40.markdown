@@ -286,10 +286,6 @@ https://mp.weixin.qq.com/s/ceCC7Q6yr0QKESeZXi6lWQ
 
 堆叠解卷积网络实现图像语义分割顶尖效果
 
-https://zhuanlan.zhihu.com/p/24738319
-
-“见微知著”——细粒度图像分析进展综述
-
 https://mp.weixin.qq.com/s/V4_euZRcyyxeimXAA_waAg
 
 贾佳亚：最有效的COCO物体分割算法

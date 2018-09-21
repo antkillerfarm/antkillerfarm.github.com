@@ -188,6 +188,10 @@ https://mp.weixin.qq.com/s/OdQ_zH9jbZgEqOD3vHtkng
 
 不设目标也能通关“马里奥”的AI算法，全靠好奇心学习
 
+https://mp.weixin.qq.com/s/h0be7yRQMjLFi8EteTzuMQ
+
+腾讯AI在星际2完整对战中击败“作弊级”内建Bot
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293

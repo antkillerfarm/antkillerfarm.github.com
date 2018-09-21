@@ -432,6 +432,10 @@ https://mp.weixin.qq.com/s/rZuGW9Fe0TA3dNEY7dh_Jg
 
 TimescaleDB比拼InfluxDB：如何选择合适的时序数据库？
 
+https://mp.weixin.qq.com/s/pZnAcjFlBM2I4Hyctd6MHw
+
+图数据库真的比关系数据库更先进吗？
+
 # Lua
 
 Lua的包管理工具叫做LuaRocks。官网：

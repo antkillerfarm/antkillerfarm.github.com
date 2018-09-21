@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十四）——三维处理, 元学习, CNN进阶, 视频目标分割
+title:  深度学习（四十四）——三维处理, CNN进阶, 视频目标分割
 category: DL 
 ---
 
@@ -134,72 +134,6 @@ https://mp.weixin.qq.com/s/gRFq44pnhRScO9p3M15Gfw
 
 基于三维重建的全新相机姿态估计方法
 
-# 元学习
-
-https://mp.weixin.qq.com/s/KKK3VEpwL90g6Aro8qtXxQ
-
-学习如何学习的算法：简述元学习研究方向现状
-
-https://mp.weixin.qq.com/s/KtO3OTZ-bZ6m0ZSI6jTyjw
-
-OpenAI提出Reptile：可扩展的元学习算法
-
-https://mp.weixin.qq.com/s/T4GiL9vW7ALOzWloE_QQBA
-
-OpenAI开发可拓展元学习算法Reptile，能快速学习
-
-https://mp.weixin.qq.com/s/MWcoGsQJg1GBbSqzyPD9uQ
-
-基于梯度的元学习算法，可高效适应非平稳环境
-
-https://zhuanlan.zhihu.com/p/35695477
-
-基于Meta Learning在动态竞争环境中实现策略自适应
-
-https://mp.weixin.qq.com/s/AhadWUjtgsFmb8uTylTvqg
-
-OpenAI提出新型元学习方法EPG，调整损失函数实现新任务上的快速训练
-
-https://mp.weixin.qq.com/s/dmRdp2oMn0vGukclJSVZDg
-
-Uber AI论文：利用反向传播训练可塑神经网络，生物启发的元学习范式
-
-https://mp.weixin.qq.com/s/Cc4EHc6ei-PtZWhewM10xw
-
-学习如何学习的算法：简述元学习研究方向现状
-
-https://mp.weixin.qq.com/s/4f6-gXovdrYk7240TrUwJg
-
-谷歌大脑：基于元学习的无监督学习更新规则
-
-https://mp.weixin.qq.com/s/cAbMB-DB9vu2ua8t5J28ww
-
-从零开始，了解元学习
-
-https://mp.weixin.qq.com/s/Q36vpS1HF2IfeCsFLh656A
-
-基于元强化学习的神经科学新理论
-
-https://mp.weixin.qq.com/s/XtzvHOk7CdXRBy02kUmgsg
-
-近期爆火的Meta Learning，遗传算法与深度学习的火花，再不了解你就out了
-
-https://mp.weixin.qq.com/s/KvgYyuyICueNQPo_S27fEA
-
-BAIR展示新型模仿学习，学会像人那样执行任务
-
-https://zhuanlan.zhihu.com/p/41223529
-
-最前沿: Meta RL论文解读
-
-https://zhuanlan.zhihu.com/p/40600485
-
-最前沿：Meta Learning前沿进展扫描
-
-https://zhuanlan.zhihu.com/p/28639662
-
-百家争鸣的Meta Learning/Learning to learn
-
 # CNN进阶
 
 https://mp.weixin.qq.com/s/gwH9s1ggMTj2dJkad9wUuw
@@ -237,10 +171,6 @@ pooling去哪儿了？
 https://mp.weixin.qq.com/s/yTkAhje3A0dRSyTobjsm2A
 
 Pervasive Attention：用于序列到序列预测的2D卷积神经网络
-
-https://mp.weixin.qq.com/s/31r9FjuJn9yxrZMnfozkMQ
-
-全卷积注意网络的细粒度识别
 
 https://zhuanlan.zhihu.com/p/31595192
 

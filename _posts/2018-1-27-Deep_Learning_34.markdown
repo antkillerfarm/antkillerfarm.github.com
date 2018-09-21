@@ -86,6 +86,10 @@ https://mp.weixin.qq.com/s/7DlbuJI_gARJRABnlZQcxQ
 
 伯克利大学ICML2018强化学习80页教程
 
+https://mp.weixin.qq.com/s/7WnlNvxk0KKVPYqvSi7fKA
+
+40页 PPT，BMM夏令营《强化学习简明教程》
+
 ## 论文
 
 《A Brief Survey of Deep Reinforcement Learning》

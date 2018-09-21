@@ -414,10 +414,6 @@ https://mp.weixin.qq.com/s/494I6XHrk9fB2DvhiMM9iQ
 
 第四范式联合港科大提出样本自适应在线卷积稀疏编码
 
-https://mp.weixin.qq.com/s/hcoAL1AHm_HtderWU8fSBw
-
-大连理工大学在CVPR18大规模精细粒度物种识别竞赛中获得冠军
-
 https://mp.weixin.qq.com/s/p8u2aTJL2gfPIXLsLfoJyg
 
 谷歌大脑提出MAPO：用于程序合成的策略优化方法

@@ -438,10 +438,6 @@ https://mp.weixin.qq.com/s/iAMYqJjlMWAvFq4Hddh4ig
 
 从0上手Kaggle图像分类挑战：冠军解决方案详解
 
-https://mp.weixin.qq.com/s/LtWMGRBk2sbPDjeC9PmJ7g
-
-弱监督学习下的商品识别：CVPR 2018细粒度识别挑战赛获胜方案简介
-
 https://mp.weixin.qq.com/s/ZIDiFrN3qQV4u-m9Wr3wiA
 
 斯坦福完全可解释深度神经网络：你需要用决策树搞点事

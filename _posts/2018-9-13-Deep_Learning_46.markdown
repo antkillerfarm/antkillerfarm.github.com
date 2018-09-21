@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十六）——OCR, 目标检测进阶
+title:  深度学习（四十六）——OCR, 目标检测进阶, 细粒度分类, 元学习
 category: DL 
 ---
 
@@ -256,3 +256,98 @@ https://mp.weixin.qq.com/s/nL9l7hvG3RG7G7LzCzzvug
 
 旷视科技2018 COCO负责人俞刚：如何构建检测与分割的冠军系统
 
+# 细粒度分类
+
+https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw
+
+分段映射：帮助利用少量样本习得新类别细粒度分类器
+
+https://mp.weixin.qq.com/s/zeN7rjmAnvh_7BbTmScrZw
+
+细粒度分类你懂吗？——fine-gained image classification
+
+https://mp.weixin.qq.com/s/LtWMGRBk2sbPDjeC9PmJ7g
+
+弱监督学习下的商品识别：CVPR 2018细粒度识别挑战赛获胜方案简介
+
+https://mp.weixin.qq.com/s/hcoAL1AHm_HtderWU8fSBw
+
+大连理工大学在CVPR18大规模精细粒度物种识别竞赛中获得冠军
+
+https://mp.weixin.qq.com/s/31r9FjuJn9yxrZMnfozkMQ
+
+全卷积注意网络的细粒度识别
+
+https://zhuanlan.zhihu.com/p/24738319
+
+“见微知著”——细粒度图像分析进展综述
+
+https://zhuanlan.zhihu.com/p/42067661
+
+CVPR Look Closer to See Better
+
+# 元学习
+
+https://mp.weixin.qq.com/s/KKK3VEpwL90g6Aro8qtXxQ
+
+学习如何学习的算法：简述元学习研究方向现状
+
+https://mp.weixin.qq.com/s/KtO3OTZ-bZ6m0ZSI6jTyjw
+
+OpenAI提出Reptile：可扩展的元学习算法
+
+https://mp.weixin.qq.com/s/T4GiL9vW7ALOzWloE_QQBA
+
+OpenAI开发可拓展元学习算法Reptile，能快速学习
+
+https://mp.weixin.qq.com/s/MWcoGsQJg1GBbSqzyPD9uQ
+
+基于梯度的元学习算法，可高效适应非平稳环境
+
+https://zhuanlan.zhihu.com/p/35695477
+
+基于Meta Learning在动态竞争环境中实现策略自适应
+
+https://mp.weixin.qq.com/s/AhadWUjtgsFmb8uTylTvqg
+
+OpenAI提出新型元学习方法EPG，调整损失函数实现新任务上的快速训练
+
+https://mp.weixin.qq.com/s/dmRdp2oMn0vGukclJSVZDg
+
+Uber AI论文：利用反向传播训练可塑神经网络，生物启发的元学习范式
+
+https://mp.weixin.qq.com/s/Cc4EHc6ei-PtZWhewM10xw
+
+学习如何学习的算法：简述元学习研究方向现状
+
+https://mp.weixin.qq.com/s/4f6-gXovdrYk7240TrUwJg
+
+谷歌大脑：基于元学习的无监督学习更新规则
+
+https://mp.weixin.qq.com/s/cAbMB-DB9vu2ua8t5J28ww
+
+从零开始，了解元学习
+
+https://mp.weixin.qq.com/s/Q36vpS1HF2IfeCsFLh656A
+
+基于元强化学习的神经科学新理论
+
+https://mp.weixin.qq.com/s/XtzvHOk7CdXRBy02kUmgsg
+
+近期爆火的Meta Learning，遗传算法与深度学习的火花，再不了解你就out了
+
+https://mp.weixin.qq.com/s/KvgYyuyICueNQPo_S27fEA
+
+BAIR展示新型模仿学习，学会像人那样执行任务
+
+https://zhuanlan.zhihu.com/p/41223529
+
+最前沿: Meta RL论文解读
+
+https://zhuanlan.zhihu.com/p/40600485
+
+最前沿：Meta Learning前沿进展扫描
+
+https://zhuanlan.zhihu.com/p/28639662
+
+百家争鸣的Meta Learning/Learning to learn

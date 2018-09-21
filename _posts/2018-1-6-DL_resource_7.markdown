@@ -358,10 +358,6 @@ https://mp.weixin.qq.com/s/tjnpIYJGmrTLGUsdtBI2Vw
 
 AI设计师“鹿班”核心技术公开：如何1秒设计8000张海报？
 
-https://mp.weixin.qq.com/s/zeN7rjmAnvh_7BbTmScrZw
-
-细粒度分类你懂吗？——fine-gained image classification
-
 https://mp.weixin.qq.com/s/Ob1ngUEmRgSybcAD5zg0QQ
 
 利用深度学习消去反光
