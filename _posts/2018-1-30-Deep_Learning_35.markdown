@@ -416,6 +416,10 @@ https://mp.weixin.qq.com/s/48eIhnBdYzgEiV_wESHsJA
 
 如何使用Mask RCNN模型进行图像实体分割？
 
+https://mp.weixin.qq.com/s/G_2tuZlaxX5w-2c1DO8FwQ
+
+利用边缘监督信息加速Mask R-CNN实例分割训练
+
 # LSM
 
 liquid state machine (LSM)

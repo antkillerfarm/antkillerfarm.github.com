@@ -140,6 +140,10 @@ https://mp.weixin.qq.com/s/xwuM2Vj8G7UyuEyzTyO13A
 
 将CNN与RNN组合使用，天才还是错乱？
 
+https://mp.weixin.qq.com/s/c7XkzjLH1n5EtqdQik618g
+
+Dropout在RNN中的应用综述
+
 # L2 Normalization
 
 L2 Normalization本身并不复杂，然而多数资料都只提到1维的L2 Normalization的计算公式：

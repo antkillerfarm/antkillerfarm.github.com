@@ -267,6 +267,10 @@ https://mp.weixin.qq.com/s/v-N5jUTVFBb-wV0a_RAg5A
 
 Python实现代码雨效果
 
+https://mp.weixin.qq.com/s/0wJRlGS2QXpEL2XaU_Ke-g
+
+Python实现烟花特效
+
 # 大数据平台参考资源
 
 https://mp.weixin.qq.com/s/nqOvcKtxpqehWFO4XkXr5g
@@ -292,3 +296,8 @@ https://mp.weixin.qq.com/s/VKsbBvKibLDc-wFvYn3nxg
 https://mp.weixin.qq.com/s/7kKhAYtkIuvlBnZlaYATnw
 
 全链路压测平台（Quake）在美团中的实践
+
+https://mp.weixin.qq.com/s/4WCgzvTjOvNONrrZLc7yOQ
+
+比Hive快800倍！大数据实时分析领域黑马开源ClickHouse
+

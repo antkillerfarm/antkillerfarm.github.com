@@ -46,6 +46,10 @@ https://github.com/CharlesPikachu/AIGames
 
 上个作者的另一个python+AI+游戏的代码库
 
+https://github.com/HuberTRoy/leetCode
+
+Python实现各种基础算法
+
 ## Anaconda
 
 Anaconda是一个科学计算方面的python发行版，下面提到的所有工具都可以通过Anaconda一站式安装。

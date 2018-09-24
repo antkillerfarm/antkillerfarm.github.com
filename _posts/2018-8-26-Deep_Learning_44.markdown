@@ -134,6 +134,10 @@ https://mp.weixin.qq.com/s/gRFq44pnhRScO9p3M15Gfw
 
 基于三维重建的全新相机姿态估计方法
 
+https://mp.weixin.qq.com/s/7P6iMcZUNNVAefrUz-dAsQ
+
+MIT谷歌伯克利三强联手 ，AI创造超现实主义3D运动雕塑
+
 # CNN进阶
 
 https://mp.weixin.qq.com/s/gwH9s1ggMTj2dJkad9wUuw

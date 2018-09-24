@@ -360,40 +360,25 @@ https://mp.weixin.qq.com/s/mg-d1W5i9rzaLMNrvq0tSQ
 
 32分钟训练神经机器翻译，速度提升45倍
 
-## 深度哈希
+https://mp.weixin.qq.com/s/iW0k80TUPuWDE9xwHvX91g
 
-https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg
+为什么你需要Raven：全球首个真正分布式深度学习训练协议
 
-深度离散哈希算法，可用于图像检索！
+## 连续学习
 
-https://mp.weixin.qq.com/s/XUYJub0559wwQ9H1wA_SAg
+https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
 
-机器学习时代的哈希算法，将如何更高效地索引数据
+终身机器学习: 一种持续学习的范式
 
-https://mp.weixin.qq.com/s/YVIvdMznb3oatIXqD5a5_A
+https://mp.weixin.qq.com/s/SBppyDBWqQUariiHbpaq1w
 
-陈天奇等人提出AutoTVM：让AI来编译优化AI系统底层算子
+实时深度学习的推理加速和连续学习
 
-https://mp.weixin.qq.com/s/vFBlFAQLvDZP7IvwKoaPhA
+https://mp.weixin.qq.com/s/83HufWMDnuXIOCCfgqeDJw
 
-无问西东，只问哈希
+为什么说持续学习才是AI的关键
 
-https://mp.weixin.qq.com/s/XAxuLg2i3q5_uKDo1wU_rA
+https://mp.weixin.qq.com/s/kmEFjzFIbNq0_qdjc1Wm_w
 
-从哈希到卷积神经网络：高精度&低功耗
+DeepMind新智能体架构Unicorn：持续学习能力胜过多个基准智能体
 
-https://mp.weixin.qq.com/s/i8iQtCC7ahXLY1a1wOacsA
-
-Science：最新发现哈希可能是大脑的通用计算原理
-
-https://mp.weixin.qq.com/s/ZOVWXNym5yHoo-MmpxXo0A
-
-自监督对抗哈希SSAH：当前最佳的跨模态检索框架
-
-https://mp.weixin.qq.com/s/VldzlYg5AfDRho8bsROL_g
-
-HashGAN:基于注意力机制的深度对抗哈希模型提升跨模态检索效果
-
-https://mp.weixin.qq.com/s/3Z2Zc8zTq2uiPyw7ZuuZfw
-
-解密美图大规模多媒体数据检索技术DeepHash

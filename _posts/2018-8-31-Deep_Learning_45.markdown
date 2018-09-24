@@ -326,3 +326,11 @@ https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247491630&idx=1&sn=394ffe
 
 杜伦大学提出GANomaly：无需负例样本实现异常检测
 
+https://mp.weixin.qq.com/s/BEuA5icaQwRJGsJJLnAFVg
+
+用机器学习生成图片：GAN的局限性以及如何GAN的更爽
+
+https://zhuanlan.zhihu.com/p/41114883
+
+手机照片脑补成超大画幅，这个GAN想象力惊人
+

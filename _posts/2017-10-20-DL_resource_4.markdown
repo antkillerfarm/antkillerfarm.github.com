@@ -306,6 +306,10 @@ https://mp.weixin.qq.com/s/eRDdspv7T-Kvm4Zue4RZnA
 
 领英开源TonY：构建在Hadoop YARN上的TensorFlow框架
 
+https://mp.weixin.qq.com/s/--EnBghI4yHNf9WAToKdOw
+
+Petuum&CMU开源Texar：一个模块化、多功能、可扩展的文本生成工具包
+
 ## gcForest
 
 http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw

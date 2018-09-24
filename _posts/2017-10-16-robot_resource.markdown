@@ -26,6 +26,10 @@ https://mp.weixin.qq.com/s/oi5ME4QRTt3U526lzAHTcA
 
 滴滴重磅发布：KDD2018大会187页人工智能+交通教程
 
+https://mp.weixin.qq.com/s/BUwu6R83klL3E5tI7TEX9A
+
+一文带你看懂自动驾驶
+
 ## 课程
 
 http://selfdrivingcars.mit.edu/

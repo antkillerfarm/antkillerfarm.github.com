@@ -154,6 +154,10 @@ https://mp.weixin.qq.com/s/JIoTsadw4JBkr0e40RwVQQ
 
 这篇论文开源的车牌识别系统打败了目前最先进的商业软件
 
+https://blog.csdn.net/linolzhang/article/details/82780071
+
+OCR文字识别
+
 # 目标检测进阶
 
 https://mp.weixin.qq.com/s/LtXylKTKsHdjMPw9Q1HyXA
@@ -255,6 +259,10 @@ https://mp.weixin.qq.com/s?__biz=MzI5MDUyMDIxNA==&mid=2247486104&idx=1&sn=5580a4
 https://mp.weixin.qq.com/s/nL9l7hvG3RG7G7LzCzzvug
 
 旷视科技2018 COCO负责人俞刚：如何构建检测与分割的冠军系统
+
+https://mp.weixin.qq.com/s/zeruKQOye_QNWgluVIN0BA
+
+从R-CNN到RFBNet，目标检测架构5年演进全盘点
 
 # 细粒度分类
 

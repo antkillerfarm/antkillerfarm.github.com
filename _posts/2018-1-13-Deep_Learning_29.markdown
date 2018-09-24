@@ -212,6 +212,10 @@ https://mp.weixin.qq.com/s/o5UAnIOuDsjBWjsKg8wYCg
 
 陶建华：深度神经网络与语音
 
+https://mp.weixin.qq.com/s/DjskKa-KxiCX-hLKEw75Tg
+
+Towards End-to-End Speech Recognition
+
 # 语音合成
 
 语音合成（Speech synthesis），有时也叫做text-to-speech (TTS)。
@@ -355,10 +359,9 @@ $$Y^*=\mathop{\text{argmax}}_{Y} p(Y \mid X)$$
 
 2.我们没有办法产生连续多个字符的输出。考虑这个对齐[h，h，e，l，l，l，o]，折叠重复将产生“helo”而不是“hello”。
 
-为了解决这些问题，CTC为一组允许的输出引入了一个新的标记。 这个新的标记有时被称为空白标记。 我们在这里将其称为$$\epsilon$$，$$\epsilon$$标记不对应任何东西，可以从输出中移除。
+为了解决这些问题，CTC为一组允许的输出引入了一个新的标记。这个新的标记有时被称为空白标记。我们在这里将其称为$$\epsilon$$，$$\epsilon$$标记不对应任何东西，可以从输出中移除。
 
 CTC允许的对齐是与输入的长度相同。 在合并重复并移除ε标记后，我们允许任何映射到Y的对齐方式。
 
-如果Y在同一行中有两个相同的字符，那么一个有效的对齐必须在它们之间有一个$$\epsilon$$。 有了这个规则，我们就可以区分崩“hello”和“helo”。
-
+如果Y在同一行中有两个相同的字符，那么一个有效的对齐必须在它们之间有一个$$\epsilon$$。有了这个规则，我们就可以区分“hello”和“helo”了。
 

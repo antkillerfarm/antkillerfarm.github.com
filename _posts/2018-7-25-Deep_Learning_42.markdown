@@ -100,6 +100,10 @@ https://mp.weixin.qq.com/s/3gzlln0yqqXQ6Xbwt-VXjw
 
 OR-CNN行人检测：为‘遮挡’而生
 
+https://mp.weixin.qq.com/s/yrygkZUwsCL-twTFvA--1w
+
+尺度不变网络提升人群计数性能
+
 # 人脸识别进阶
 
 https://mp.weixin.qq.com/s/YlrWHDPIPzN4dQO2vo4DjA
