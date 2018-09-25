@@ -6,20 +6,6 @@ category: math
 
 # 概率分布（2）
 
-## 一元线性回归的显著性检验（续）
-
-上面这些都是正态样本的参数检验。
-
-对于非参数检验或者非正态样本检验，其他的检验方法还有Wilcoxon signed-rank test、Kruskal–Wallis test、Friedman test等。
-
->注：Frank Wilcoxon，1892～1965，美国化学家。康奈尔大学博士。先后供职于几家美国化工企业的研究机构。
-
->William Henry ("Bill") Kruskal，1919～2005，美国数学家。哥伦比亚大学博士，芝加哥大学教授。
-
->Milton Friedman，1912～2006，美国经济学家。哥伦比亚大学博士，芝加哥大学教授。1976年获诺贝尔经济学奖。芝加哥学派第二代的领军人物。
-
->Wilson Allen Wallis，1912～1998，美国经济学家。先后就读于明尼苏达大学和芝加哥大学，但是没有博士学位。罗彻斯特大学校长。从艾森豪威尔到里根的历届共和党总统的顾问。Milton Friedman的至交。其父Wilson Dallam Wallis为美国人类学家，明尼苏达大学教授。
-
 ## 一元线性回归的显著性检验
 
 假设y关于x的回归具有形式$$a+bx$$，则$$H_0:b=0$$。
@@ -67,6 +53,18 @@ $$\frac{\hat b-b}{\hat \sigma}\sqrt{S_{xx}}\sim t(n-2)$$
 2.y与x的关系不是线性的，存在其他的关系。
 
 3.y与x不存在关系。
+
+上面这些都是正态样本的参数检验。
+
+对于非参数检验或者非正态样本检验，其他的检验方法还有Wilcoxon signed-rank test、Kruskal–Wallis test、Friedman test等。
+
+>注：Frank Wilcoxon，1892～1965，美国化学家。康奈尔大学博士。先后供职于几家美国化工企业的研究机构。
+
+>William Henry ("Bill") Kruskal，1919～2005，美国数学家。哥伦比亚大学博士，芝加哥大学教授。
+
+>Milton Friedman，1912～2006，美国经济学家。哥伦比亚大学博士，芝加哥大学教授。1976年获诺贝尔经济学奖。芝加哥学派第二代的领军人物。
+
+>Wilson Allen Wallis，1912～1998，美国经济学家。先后就读于明尼苏达大学和芝加哥大学，但是没有博士学位。罗彻斯特大学校长。从艾森豪威尔到里根的历届共和党总统的顾问。Milton Friedman的至交。其父Wilson Dallam Wallis为美国人类学家，明尼苏达大学教授。
 
 ## KS检验
 
