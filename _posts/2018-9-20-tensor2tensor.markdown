@@ -230,7 +230,19 @@ Cumulants（累积量）的思想最早是Thorvald Thiele提出的，后来被Ro
 
 在介绍Cumulants之前，我们首先看一下Moment-generating function：
 
-$$$$
+$$M_X(t) := \operatorname E \left[e^{tX}\right], \quad t \in \mathbb{R}$$
+
+可以看出，MGF和《数学狂想曲（二）》中提到的随机变量的特征函数（Characteristic function）的形式非常类似。
+
+而cumulant-generating function则是MGF的对数，即：
+
+$$K(t)=\log\operatorname{E}\left[e^{tX}\right]$$
+
+对上式进行Maclaurin展开，可得：
+
+$$K(t)=\sum_{n=1}^\infty \kappa_{n} \frac{t^{n}}{n!} = \mu t + \sigma^2 \frac{t^2}{2} + \cdots$$
+
+这里的$$\kappa_{n}$$就是Cumulants了。
 
 ## Polyspectrum
 

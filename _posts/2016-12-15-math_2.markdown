@@ -6,7 +6,7 @@ category: math
 
 # 拉普拉斯变换
 
-$$F(s) =\int_0^\{+infty} e^{-st} f(t)\mathrm{d}t,s = \sigma + i \omega\tag{1}$$
+$$F(s) =\int_0^{+\infty} e^{-st} f(t)\mathrm{d}t,s = \sigma + i \omega \tag{1}$$
 
 傅立叶变换的收敛有一个狄利克雷条件，要求信号绝对可积/绝对可和。
 
@@ -60,7 +60,7 @@ https://www.zhihu.com/question/33177784
 
 # 随机变量的特征函数
 
-特征函数是描述随机变量概率分布的重要工具，其定义如下。
+特征函数（Characteristic function）是描述随机变量概率分布的重要工具，其定义如下。
 
 设随机变量X的CDF为$$F_X(x)$$，则其特征函数定义为：
 
@@ -113,6 +113,8 @@ $$B(\alpha,\beta)=\int_{0}^{1}x^{\alpha-1}(1-x)^{\beta-1}dx$$
 $$\Gamma(\theta)=\int_{0}^{\infty}x^{\theta-1}e^{-x}dx$$
 
 http://cos.name/2013/01/lda-math-gamma-function/
+
+神奇的Gamma函数
 
 这篇文章对伽马函数的历史由来，讲的比较透彻。
 

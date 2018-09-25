@@ -186,6 +186,10 @@ https://mp.weixin.qq.com/s/jgOQGDqDKtbJXbAj3EpI9A
 
 别用大批量mini-batch训练神经网络，用局部SGD！
 
+https://zhuanlan.zhihu.com/p/45298186
+
+Matrix Factorization方法证明总结
+
 # 聚类算法
 
 https://mp.weixin.qq.com/s/xGPiaXTnQad3RcMwIELP4w

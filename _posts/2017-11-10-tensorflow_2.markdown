@@ -394,3 +394,7 @@ https://mp.weixin.qq.com/s/FdPrRQr0LukcWh7B703MlQ
 https://mp.weixin.qq.com/s/a68brFJthczgwiFoUBh30A
 
 TensorFlow数据集和估算器介绍
+
+https://mp.weixin.qq.com/s/eSczqqyzh4PZomJL4saxug
+
+出门问问：使用 TensorFlow Lite 在嵌入式端部署热词检测模型
