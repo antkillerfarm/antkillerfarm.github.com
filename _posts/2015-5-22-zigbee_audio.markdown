@@ -70,26 +70,6 @@ http://www.aptchina.com/zhuanli/3684478/
 
 2.音频压缩算法是系统实现的关键。
 
-# 开源音频编解码包
-
-## 1.Speex
-
-http://speex.org/
-
-一个老项目，教程多，但官方已经放弃，转而推荐Opus。
-
-## 2.Opus
-
-http://opus-codec.org/
-
-最近的一个新项目，基于IETF RFC 6716（2012.9）。由于比较新，教程很少。
-
-## 3.G.726等一系列算法代码
-
-http://www.itu.int/rec/T-REC-G.191-201003-I/en
-
-ITU官网上的工具包，包含了G.711和G.726算法。
-
 # 6LowPAN
 
 ## IPv6和IPv4的区别
@@ -231,6 +211,12 @@ IEEE为了统一标准，提出了802.11s。目前该标准默认使用HWMP。
 ## 消息发送的类型
 
 ![](/images/article/cast.png)
+
+## 参考
+
+https://mp.weixin.qq.com/s/GgwehPL4r-Y1pEd2k60Y_Q
+
+一文看懂蓝牙Mesh技术
 
 # 各种智能家居通信技术比较
 

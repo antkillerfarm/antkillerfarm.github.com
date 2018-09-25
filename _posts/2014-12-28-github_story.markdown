@@ -30,6 +30,12 @@ https://github.com/trending/python?since=monthly
 
 这个可以看到python的月度趋势，便于分析技术热点。其他语言可以此类推。
 
+`svn checkout https://github.com/rain1024/slp2-pdf/trunk/complete-book-pdf`
+
+上述命令可以下载单个文件或文件夹。
+
+要点：将`tree/master`换成`trunk`。
+
 ## 搭建本地GitHub Blog服务
 
 1.安装ruby

@@ -114,6 +114,10 @@ https://mp.weixin.qq.com/s/R8rEngNI31w0DQwjjeS6kw
 
 关于感受野的总结
 
+https://zhuanlan.zhihu.com/p/44106492
+
+卷积神经网络的感受野
+
 ## 参考
 
 https://github.com/vdumoulin/conv_arithmetic

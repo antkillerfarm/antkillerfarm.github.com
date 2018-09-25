@@ -104,6 +104,10 @@ https://mp.weixin.qq.com/s/rvPLYa1NFg_LRvb8Y8-aCQ
 
 Wasserstein距离在生成模型中的应用
 
+https://mp.weixin.qq.com/s/2xOrSyyWSbp8rBVbFoNrxQ
+
+Wasserstein is all you need：构建无监督表示的统一框架
+
 # LSA
 
 ## 基本原理

@@ -205,6 +205,12 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/other/vncserver
 
 默认的hostname是raspberrypi。将/etc/hostname和/etc/hosts中的相应字段，改成你想要的名字，保存重启即可。
 
+## 参考
+
+https://mp.weixin.qq.com/s/YeoBILcLy2LNzDAnxygKAg
+
+如何手动养成一只“咖啡女仆”？
+
 # UPNP（二）
 
 ## upnp-inspector

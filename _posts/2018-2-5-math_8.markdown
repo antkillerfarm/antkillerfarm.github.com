@@ -111,7 +111,7 @@ The Expansion of the Fireball of an Explosion
 
 第一次世界大战期间，英国工程师Lanchester针对战争问题建模，以预测战争的结果。
 
->Frederick William Lanchester，1868～1946，被誉为英国三大最杰出汽车工程师之一。英国皇家学会会员。
+>Frederick William Lanchester，1868～1946，被誉为英国三大最杰出的汽车工程师之一。英国皇家学会会员。
 
 该模型包含了两个子模型：
 

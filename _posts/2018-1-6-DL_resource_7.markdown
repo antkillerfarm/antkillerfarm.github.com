@@ -118,10 +118,6 @@ http://mp.weixin.qq.com/s/SNfSY4CKhX1RDWd4itPx2Q
 
 马里兰大学论文：训练深度神经网络中的一致性难题
 
-https://mp.weixin.qq.com/s/caXnseARUwLIXdsZ7BXOUw
-
-用于金融时序预测的神经网络：可改善移动平均线经典策略
-
 https://mp.weixin.qq.com/s/Vjbf_UWatV0s3lJ0u9xj0g
 
 清华马少平教授：强图灵测试与弱图灵测试
@@ -302,17 +298,9 @@ https://mp.weixin.qq.com/s/bKpQPuUlnuYo0SZdZ9TPVQ
 
 可微编程：打开深度学习的黑盒子
 
-https://mp.weixin.qq.com/s/GHjmiB6F2W3Zo8gVllTyyQ
-
-重现“世界模型”实验，无监督方式快速训练
-
 https://mp.weixin.qq.com/s/v0IOMRChFFLX9hOgwxlsaQ
 
 反“换脸”魔高一丈：新方法识别假视频正确率达99%
-
-https://mp.weixin.qq.com/s/3_VtdZNKBwNtMEMf2xc7qw
-
-CVPR智慧城市挑战赛：无监督交通异常检测，冠军团队技术分享
 
 https://mp.weixin.qq.com/s/ygt31lL0mBcyRmwAlsl8Sg
 

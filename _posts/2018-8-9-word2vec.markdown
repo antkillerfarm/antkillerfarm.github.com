@@ -215,6 +215,18 @@ http://www.cnblogs.com/xingshansi/p/6816308.html
 
 音频特征提取——librosa工具包使用
 
+## python_speech_features
+
+python_speech_features是另一个分析音乐和语音的Python库。
+
+代码：
+
+https://github.com/jameslyons/python_speech_features
+
+文档：
+
+https://python-speech-features.readthedocs.io/en/latest/
+
 ## 参考
 
 论文：
@@ -354,28 +366,3 @@ Meteor实时计算平台架构与实践
 https://mp.weixin.qq.com/s/osCRnfnuCFGJIR1jkhgUwA
 
 弃用ETL，为什么说ELT才更适合AI应用场景？
-
-https://mp.weixin.qq.com/s/IvGkPnYdifuAzrUV3MTyhA
-
-数据埋点太难！知乎的做法有何可借鉴之处？
-
-https://mp.weixin.qq.com/s/fV3OqXreZqaQ5neQaFIlOQ
-
-非易失性内存在阿里生产环境的首次应用：Tair NVM最佳实践总结
-
-https://mp.weixin.qq.com/s/39FG8FXADFC9UQuUJGTwbQ
-
-基于DAG的分布式任务调度平台：Maat
-
-https://mp.weixin.qq.com/s/qnjM4nMMGzO_gsnktQubSw
-
-携程度假起价引擎架构演变
-
-https://mp.weixin.qq.com/s/qmTJ6d0VtfqvIYJzRUMvsw
-
-互联网账户系统如何设计（上篇）
-
-https://mp.weixin.qq.com/s/NV5sYF15Q-016sfxRMEVmg
-
-浅谈高并发系统性能调优
-

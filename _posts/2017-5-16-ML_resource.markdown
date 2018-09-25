@@ -48,6 +48,10 @@ https://blog.csdn.net/pipisorry/article/category/5814671
 
 一个海量数据挖掘的专栏
 
+https://github.com/masinoa/machine_learning
+
+一个python写的算法示例库
+
 ## 文章
 
 http://www.open-open.com/lib/view/open1420687784625.html

@@ -240,6 +240,10 @@ https://mp.weixin.qq.com/s/NyRiLMDDADoOsa1Os9xcMw
 
 Neuromation新研究：利用卷积神经网络进行儿童骨龄评估
 
+https://mp.weixin.qq.com/s/0IAdT2cP_OIGwwXmMaCFfw
+
+如何利用深度学习诊断心脏病？
+
 ## 面试
 
 https://www.zhihu.com/question/41233373

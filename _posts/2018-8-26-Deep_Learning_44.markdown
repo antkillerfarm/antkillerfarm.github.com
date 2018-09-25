@@ -339,3 +339,7 @@ https://mp.weixin.qq.com/s/ZqnfSL6U5E9NzE15QMdxtg
 https://mp.weixin.qq.com/s/6MXLtUDi_idMYqbHARkbcg
 
 港中文林达华团队提出计算机视觉新方向：电影情节分析
+
+https://mp.weixin.qq.com/s/Np4xyvPrncd7MJ9q1WShBA
+
+Python视频深度学习：计算任意影片中所有演员出镜时间

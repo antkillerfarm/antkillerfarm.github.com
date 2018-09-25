@@ -388,3 +388,7 @@ https://mp.weixin.qq.com/s/yZ138cMv4203wJdIY_0sUA
 
 FAIR重磅发布大规模语料库XNLI：解决跨15种语言理解难题
 
+https://mp.weixin.qq.com/s/jOjiAAK1byUx8ic011f33w
+
+2200万室内场景数据集，包含语义、全景、灯光等十余种效果
+

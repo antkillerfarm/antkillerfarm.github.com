@@ -158,6 +158,10 @@ https://blog.csdn.net/linolzhang/article/details/82780071
 
 OCR文字识别
 
+https://mp.weixin.qq.com/s/lVRIy6DdwfRxdoVW3qFiNg
+
+OCR如何读取皱巴巴的文件？深度学习在文档图像形变矫正的应用详解
+
 # 目标检测进阶
 
 https://mp.weixin.qq.com/s/LtXylKTKsHdjMPw9Q1HyXA
@@ -293,6 +297,10 @@ https://zhuanlan.zhihu.com/p/24738319
 https://zhuanlan.zhihu.com/p/42067661
 
 CVPR Look Closer to See Better
+
+https://mp.weixin.qq.com/s/52hm3Cq3TFRnTMfDppivSQ
+
+中山大学等提出HSE：基于层次语义嵌入模型的精细化物体分类
 
 # 元学习
 

@@ -94,6 +94,10 @@ https://mp.weixin.qq.com/s/jRfOzKO6OlQLokIzipbqUQ
 
 为什么使用自注意力机制？
 
+https://mp.weixin.qq.com/s/h7sLwVXb_UI8jvJU-oe3Cg
+
+Google AI提出“透明注意力”机制，实现更深层NMT模型
+
 # 多任务学习
 
 https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA

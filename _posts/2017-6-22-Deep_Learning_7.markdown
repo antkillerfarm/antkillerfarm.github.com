@@ -173,7 +173,17 @@ seq2seq最早用于Neural Machine Translation领域（与之相对应的有Stati
 
 在Decoder阶段，我们根据输出序列，反向修正RNN的参数，以达到训练神经网络的目的。
 
-参考：
+## Beam Search Decoder
+
+https://guillaumegenthial.github.io/sequence-to-sequence.html
+
+Seq2Seq with Attention and Beam Search
+
+https://blog.csdn.net/mr_tyting/article/details/78604721
+
+Seq2Seq Learning(Encoder-Decoder,Beam Search,Attention)
+
+## 参考
 
 https://github.com/ematvey/tensorflow-seq2seq-tutorials
 

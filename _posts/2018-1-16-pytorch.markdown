@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/RBclQdtaA8prvSoUUdhrEQ
 
 机器学习的Pytorch实现资源集合
 
+https://mp.weixin.qq.com/s/zPv-3fMy1rZwAwPqjs7oAA
+
+Pytorch图像分类从模型自定义到测试
+
 # PaddlePaddle
 
 https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q
@@ -283,6 +287,10 @@ https://mp.weixin.qq.com/s/PjwsfdlwZMRvuprkmi-saQ
 https://mp.weixin.qq.com/s/oC1ZMRNrJK9oY4y6oHxzbA
 
 百度PaddlePaddle的新特性与大规模稀疏数据分布式模型训练
+
+https://mp.weixin.qq.com/s/ZV32xDgGTriIAUbHohc90Q
+
+4个学生，1个暑假，百度深度学习开源平台PaddlePaddle诞生了智能桃子分拣器
 
 # MXNet
 

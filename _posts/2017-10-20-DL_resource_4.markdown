@@ -310,35 +310,9 @@ https://mp.weixin.qq.com/s/--EnBghI4yHNf9WAToKdOw
 
 Petuum&CMU开源Texar：一个模块化、多功能、可扩展的文本生成工具包
 
-## gcForest
+https://mp.weixin.qq.com/s/n8wbUgmV873fZw5MI43ljg
 
-http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw
-
-周志华教授gcForest（多粒度级联森林）算法预测股指期货涨跌
-
-https://mp.weixin.qq.com/s/GU9-rH0gFan620Jhc1HTDg
-
-周志华提出的gcForest能否取代深度神经网络？
-
-https://mp.weixin.qq.com/s/dEmox_pi6KGXwFoevbv14Q
-
-周志华：首个基于森林的自编码器，性能优于DNN
-
-http://mp.weixin.qq.com/s/IfEgSOIkIPA-YtC9NQW1ng
-
-非神经网络的深度模型gcForest
-
-https://mp.weixin.qq.com/s/N80l9PZQposbIOKXbv8ayw
-
-周志华：最新实验表明gcForest已经是最好的非深度神经网络方法
-
-https://mp.weixin.qq.com/s/8QP5X9Hxi_6qyfxP4O0Gwg
-
-周志华团队和蚂蚁金服合作：用分布式深度森林算法检测套现欺诈
-
-https://mp.weixin.qq.com/s/bE9BZQ6wCICvrgomdySDuw
-
-周志华组提出可做表征学习的多层梯度提升决策树
+简化数据获取！Uber开源深度学习分布训练库Petastorm
 
 ## AI与安全
 
@@ -405,4 +379,22 @@ https://mp.weixin.qq.com/s/KNXD-MpVHQRXYvJKTqn6WA
 https://mp.weixin.qq.com/s/AL48Gp4NbGWPrz9I0eBOXA
 
 “房间里的大象“：让目标检测器一脸懵逼
+
+https://mp.weixin.qq.com/s/tk7ghSXi2jz8SYbBeWR8jg
+
+神经网络模糊测试：将DNN应用于软件安全测试
+
+# 光神经网络
+
+https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ
+
+3D打印的深度神经网络，光速执行AI运算
+
+https://mp.weixin.qq.com/s/5zt8UIpNBcgNZpwHHJj68Q
+
+光学CNN层替换传统CNN层，超省电
+
+https://mp.weixin.qq.com/s/IheyYAC1yIigYOW-gtc5Eg
+
+Science重磅！用光速实现深度学习，跟GPU说再见
 

@@ -204,6 +204,8 @@ Information Retrieval是用户进行信息查询和获取的主要方式，是�
 
 Image Caption Generation的目标是：给定一张图片，让计算机用一句话来描述这张图片。
 
+当然，它也有反操作：Generating Videos from Captions。
+
 参考：
 
 http://geek.csdn.net/news/detail/97193
@@ -265,6 +267,10 @@ AI都可以将文字轻松转成图像
 https://mp.weixin.qq.com/s/TtU0R8P-YIq8JOJrgHP07w
 
 Facobook开源视觉问答VQA框架：Pythia
+
+https://mp.weixin.qq.com/s/sc3ROchBFK9pAb-FCKNwLg
+
+你说我导！微软玩转标题描述生成视频
 
 # Multi-agent
 

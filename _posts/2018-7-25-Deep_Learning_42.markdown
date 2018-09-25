@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十二）——行人重识别, 人脸识别进阶
+title:  深度学习（四十二）——行人重识别, 人脸识别进阶, AI前沿
 category: DL 
 ---
 
@@ -313,4 +313,28 @@ https://mp.weixin.qq.com/s/J4_snLK7DoV5oN7GP5M_Ww
 https://mp.weixin.qq.com/s?__biz=MzU4MjQ3MDkwNA==&mid=2247486721&idx=1&sn=f0e5b2b0165e391c0d5adc4ce253f2f6
 
 人脸识别中的活体检测算法综述
+
+# AI前沿
+
+人工智能前沿7大热点：
+
+1.强化学习
+
+2.元学习
+
+3.模仿学习
+
+4.机器人
+
+5.概念与抽象
+
+6.感知与意识
+
+7.因果推理
+
+参考：
+
+https://mp.weixin.qq.com/s/QtO-4ARpAQf0kXfALqMKSQ
+
+DeepMind-深度学习: AI革命及其前沿进展
 

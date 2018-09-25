@@ -6,6 +6,34 @@ category: resource
 
 # DL参考资源
 
+https://mp.weixin.qq.com/s/UboQNEywHSBAYc0740qmzQ
+
+让机器学会创造新的概念：DeepMind提出符号-概念关联网络SCAN
+
+https://mp.weixin.qq.com/s/AAmQymWdKQDeL8DQacEZ3A
+
+用深度学习解决Bongard问题
+
+https://mp.weixin.qq.com/s/210l9K94KMqtJtqbrZ-mgg
+
+打开黑箱重要一步，MIT提出TbD-net，弥合视觉推理模型的性能与可解释性鸿沟
+
+https://mp.weixin.qq.com/s/E5VpBt53VTjOxt8wE3SrLA
+
+工程师如何解决穿衣搭配烦恼？
+
+https://mp.weixin.qq.com/s/tzAp6PxAn3GszcttRzfz8Q
+
+CMU提出新型智能体定位方法：“主动神经定位器”
+
+https://mp.weixin.qq.com/s/_1rKAj-KOs4P8WnKzen64w
+
+传统方法已经Out了？OpenAI提出全新辩论模式训练AI
+
+https://zhuanlan.zhihu.com/p/36527644
+
+Learning with Noise: Enhance Distantly Supervised Relation Extraction with Dynamic Transition Matrix——一种对噪音数据显式建模的方法
+
 https://mp.weixin.qq.com/s/mEnYNs9tP-246lVM3WFgZg
 
 颜水成团队CVPR新架构，提速300%
@@ -109,10 +137,6 @@ https://mp.weixin.qq.com/s/PhaDqX3OT-mqyFHohDMfdA
 https://mp.weixin.qq.com/s/0qyJtD124O5pRJ1UYEV0qg
 
 为给定任务自动生成神经网络：MIT提出RNN架构生成新方法
-
-https://mp.weixin.qq.com/s/kxEfoSjCF8n2jxlDfMaNDA
-
-半监督学习在图像分类上的基本工作方式
 
 https://mp.weixin.qq.com/s/eEQhwV1cA4nEgEBcOKDenA
 

@@ -398,10 +398,6 @@ https://mp.weixin.qq.com/s/qos7VRFP7uYZ6Qt83KiPhw
 
 用机器学习构建O(N)复杂度的排序算法，可在GPU和TPU上加速计算
 
-https://mp.weixin.qq.com/s/X1Alcl7rVfTtZGZ40iXjXw
-
-Spotlight 论文：非参数化方法实现的极端无监督特征学习
-
 https://mp.weixin.qq.com/s/oltHCTombWE2WP_zbbOr3A
 
 Deep Learning之训练过程中出现NaN问题

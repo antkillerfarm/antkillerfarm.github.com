@@ -164,6 +164,26 @@ I2S总线在硬件测试时，可播放1KHz正弦波的wav文件。这个wav文�
 
 Pre-emphasis,预加重。与之对应的是De-emphasis去加重。是一项关于噪声整形的技术。
 
+## 开源音频编解码包
+
+## 1.Speex
+
+http://speex.org/
+
+一个老项目，教程多，但官方已经放弃，转而推荐Opus。
+
+## 2.Opus
+
+http://opus-codec.org/
+
+最近的一个新项目，基于IETF RFC 6716（2012.9）。由于比较新，教程很少。
+
+## 3.G.726等一系列算法代码
+
+http://www.itu.int/rec/T-REC-G.191-201003-I/en
+
+ITU官网上的工具包，包含了G.711和G.726算法。
+
 # 区块链
 
 比特币闻名已久，大概2009年时，我就听说过，然而一直没有研究它的原理。直到最近比特币大火，方才有所研究。不过这个东西，不太合我的研究兴趣，所以也就简单写一些吧。
@@ -240,14 +260,6 @@ https://mp.weixin.qq.com/s/yyoUoIUBUPV5zkeE88P7Iw
 
 # DL参考资源
 
-https://mp.weixin.qq.com/s/3aAaM1DWsnCWEEbP7dOZEg
-
-伯克利等提出无监督特征学习新方法，代码已开源
-
-https://mp.weixin.qq.com/s/ZDPPWH570Vc6e1irwP1b1Q
-
-精细识别现实世界图像：李飞飞团队提出半监督适应性模型
-
 https://mp.weixin.qq.com/s/ENYX87SMlgv30x08iYFQIw
 
 几乎零能耗零延迟！UCLA科学家发明光衍射神经网络，登上Science
@@ -311,4 +323,3 @@ https://mp.weixin.qq.com/s/8dVronQoeZLJI2g49AljLg
 https://mp.weixin.qq.com/s/LU5-zrWof5HmgqiIx6aNsg
 
 用神经网络来判定量子纠缠？这里有一篇简单易懂的方法解读
-

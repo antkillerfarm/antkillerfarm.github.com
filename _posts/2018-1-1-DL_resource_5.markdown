@@ -6,20 +6,6 @@ category: resource
 
 # DL参考资源
 
-# 光神经网络
-
-https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ
-
-3D打印的深度神经网络，光速执行AI运算
-
-https://mp.weixin.qq.com/s/5zt8UIpNBcgNZpwHHJj68Q
-
-光学CNN层替换传统CNN层，超省电
-
-https://mp.weixin.qq.com/s/IheyYAC1yIigYOW-gtc5Eg
-
-Science重磅！用光速实现深度学习，跟GPU说再见
-
 ## 深度ISP
 
 https://mp.weixin.qq.com/s/wA85XFQXeypuoqFnmN2P4g
@@ -66,11 +52,37 @@ https://mp.weixin.qq.com/s/yAC6VTOl3jAxjUT0QbTVrw
 
 为什么要在边缘设备部署机器学习？
 
-## 参考
+## gcForest
 
-https://mp.weixin.qq.com/s/ZV32xDgGTriIAUbHohc90Q
+http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw
 
-4个学生，1个暑假，百度深度学习开源平台PaddlePaddle诞生了智能桃子分拣器
+周志华教授gcForest（多粒度级联森林）算法预测股指期货涨跌
+
+https://mp.weixin.qq.com/s/GU9-rH0gFan620Jhc1HTDg
+
+周志华提出的gcForest能否取代深度神经网络？
+
+https://mp.weixin.qq.com/s/dEmox_pi6KGXwFoevbv14Q
+
+周志华：首个基于森林的自编码器，性能优于DNN
+
+http://mp.weixin.qq.com/s/IfEgSOIkIPA-YtC9NQW1ng
+
+非神经网络的深度模型gcForest
+
+https://mp.weixin.qq.com/s/N80l9PZQposbIOKXbv8ayw
+
+周志华：最新实验表明gcForest已经是最好的非深度神经网络方法
+
+https://mp.weixin.qq.com/s/8QP5X9Hxi_6qyfxP4O0Gwg
+
+周志华团队和蚂蚁金服合作：用分布式深度森林算法检测套现欺诈
+
+https://mp.weixin.qq.com/s/bE9BZQ6wCICvrgomdySDuw
+
+周志华组提出可做表征学习的多层梯度提升决策树
+
+## 无监督/半监督深度学习
 
 https://mp.weixin.qq.com/s/kbqTHIOzAj1aERl4tm-kVA
 
@@ -84,9 +96,65 @@ https://mp.weixin.qq.com/s/9kMz-eNRwC51Fi0-7BfKzA
 
 Active Learning: 一个降低深度学习时间，空间，经济成本的解决方案
 
-https://mp.weixin.qq.com/s/0IAdT2cP_OIGwwXmMaCFfw
+https://mp.weixin.qq.com/s/ZvTm9omnIRqPXcLFbZtoeg
 
-如何利用深度学习诊断心脏病？
+深度学习的关键：无监督深度学习简介
+
+https://mp.weixin.qq.com/s/GHjmiB6F2W3Zo8gVllTyyQ
+
+重现“世界模型”实验，无监督方式快速训练
+
+https://mp.weixin.qq.com/s/3_VtdZNKBwNtMEMf2xc7qw
+
+CVPR智慧城市挑战赛：无监督交通异常检测，冠军团队技术分享
+
+https://mp.weixin.qq.com/s/3aAaM1DWsnCWEEbP7dOZEg
+
+伯克利等提出无监督特征学习新方法，代码已开源
+
+https://mp.weixin.qq.com/s/ZDPPWH570Vc6e1irwP1b1Q
+
+精细识别现实世界图像：李飞飞团队提出半监督适应性模型
+
+https://mp.weixin.qq.com/s/X1Alcl7rVfTtZGZ40iXjXw
+
+Spotlight 论文：非参数化方法实现的极端无监督特征学习
+
+https://mp.weixin.qq.com/s/kxEfoSjCF8n2jxlDfMaNDA
+
+半监督学习在图像分类上的基本工作方式
+
+https://mp.weixin.qq.com/s/uUMPUdG2TI10W5RumPaXkA
+
+DeepMind无监督表示学习重大突破：语音、图像、文本、强化学习全能冠军！
+
+https://mp.weixin.qq.com/s/_VC6PGdCjlhcsndpunIteg
+
+何恺明等人提出新型半监督实例分割方法：学习分割Every Thing
+
+https://mp.weixin.qq.com/s/qaxzSSDuuscwL5tt0QCQ0Q
+
+破解人类识别文字之谜：对图像中的字母进行无监督学习
+
+https://mp.weixin.qq.com/s/IsLlzDWnUXe8LVp4Y1Jb_A
+
+35亿张图像！Facebook基于弱监督学习刷新ImageNet基准测试记录
+
+## 深度时间序列
+
+https://mp.weixin.qq.com/s/zv264-dqDQYRkYmjX_QZpQ
+
+郑宇解读地理传感器时间序列预测问题
+
+https://mp.weixin.qq.com/s/JwRXBNmXBaQM2GK6BDRqMw
+
+Kaggle网站流量预测任务第一名解决方案：从模型到代码详解时序预测
+
+https://mp.weixin.qq.com/s/caXnseARUwLIXdsZ7BXOUw
+
+用于金融时序预测的神经网络：可改善移动平均线经典策略
+
+## 参考
 
 https://mp.weixin.qq.com/s/YbdiEHb8ld1pp1ehgBzTOQ
 
@@ -115,10 +183,6 @@ https://mp.weixin.qq.com/s/-b8FuEQlpEb5G0L0QAxVEA
 https://mp.weixin.qq.com/s/5H3wk93QoxHteR_HD2hWiA
 
 DeepMind提出架构搜索新方法：使用分层表示，时间短精度高
-
-https://mp.weixin.qq.com/s/tk7ghSXi2jz8SYbBeWR8jg
-
-神经网络模糊测试：将DNN应用于软件安全测试
 
 https://mp.weixin.qq.com/s/_7yx6IywJ1EOClZUcr0AsA
 
@@ -151,10 +215,6 @@ One Model To Learn Them All
 https://mp.weixin.qq.com/s/lSd6Gaf9RrmgZCd_EcQQOg
 
 Bengio高徒演讲：深度学习三板斧：网络架构、学习算法和时空层级
-
-https://mp.weixin.qq.com/s/qaxzSSDuuscwL5tt0QCQ0Q
-
-破解人类识别文字之谜：对图像中的字母进行无监督学习
 
 http://mp.weixin.qq.com/s/ddTNr-967IahTZ2X1LNSEQ
 
@@ -232,17 +292,9 @@ https://mp.weixin.qq.com/s/R_nd7_YWA7q1JzE0BP8JrQ
 
 Petuum新研究助力临床决策：使用深度学习实现自动ICD编码
 
-https://mp.weixin.qq.com/s/eMju77MVbKdJ_wEgWcR1nw
-
-Active Learning: 一个降低深度学习时间，空间，经济成本的解决方案
-
 https://mp.weixin.qq.com/s/BpU2num-p95OTKnG1tAp3w
 
 深度神经网络-随机三元化梯度下降和结构化稀疏
-
-https://mp.weixin.qq.com/s/_VC6PGdCjlhcsndpunIteg
-
-何恺明等人提出新型半监督实例分割方法：学习分割Every Thing
 
 https://mp.weixin.qq.com/s/NXA7ymIuk0DaRwhFf0OHqA
 
@@ -255,10 +307,6 @@ FAIR提出突触可塑算法：让神经网络学会记忆和遗忘
 https://mp.weixin.qq.com/s/gljfrNwNvrK7teJ-DYyNIw
 
 如何用深度学习处理结构化数据？
-
-https://mp.weixin.qq.com/s/JwRXBNmXBaQM2GK6BDRqMw
-
-Kaggle网站流量预测任务第一名解决方案：从模型到代码详解时序预测
 
 https://mp.weixin.qq.com/s/H5bnFRSxmwHSdNBPdbsh3w
 
@@ -304,10 +352,6 @@ http://mp.weixin.qq.com/s/rS4xCsytYGqBLMUzlyA12A
 
 构建多层感知器神经网络对数字图片进行文本识别
 
-https://mp.weixin.qq.com/s/zv264-dqDQYRkYmjX_QZpQ
-
-郑宇解读地理传感器时间序列预测问题
-
 https://mp.weixin.qq.com/s/cr0BJLkyN2kW35-w1pebGQ
 
 学习在黑暗中看世界（Learning to See in the Dark）
@@ -315,10 +359,6 @@ https://mp.weixin.qq.com/s/cr0BJLkyN2kW35-w1pebGQ
 https://mp.weixin.qq.com/s/zWoQCKbZNz2td3cZxEsqKQ
 
 腾讯优图提出SRN-DeblurNet：高效高质量去除复杂图像模糊
-
-https://mp.weixin.qq.com/s/uUMPUdG2TI10W5RumPaXkA
-
-DeepMind无监督表示学习重大突破：语音、图像、文本、强化学习全能冠军！
 
 https://mp.weixin.qq.com/s/ESX-V5oMk35NhP7MKu_d0A
 
@@ -331,10 +371,6 @@ https://mp.weixin.qq.com/s/2FKgCmQ8i58XamT_plrl1w
 https://mp.weixin.qq.com/s/HP8KLbo26W5UscCGavKDRw
 
 IBM Watson提出人机推理网络HuMaINs，结合人机两者优势
-
-https://mp.weixin.qq.com/s/IsLlzDWnUXe8LVp4Y1Jb_A
-
-35亿张图像！Facebook基于弱监督学习刷新ImageNet基准测试记录
 
 https://mp.weixin.qq.com/s/sbuqNhIVTDUe4Q6BxS5fWw
 
@@ -360,39 +396,7 @@ https://mp.weixin.qq.com/s/w-6z8B60cIHUF5tU-RoQ3w
 
 旷视科技提出统一感知解析网络UPerNet，优化场景理解
 
-https://mp.weixin.qq.com/s/52hm3Cq3TFRnTMfDppivSQ
-
-中山大学等提出HSE：基于层次语义嵌入模型的精细化物体分类
-
 https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
 
 北大：一种基于新闻特征抽取和循环神经网络的股票预测方法
-
-https://mp.weixin.qq.com/s/UboQNEywHSBAYc0740qmzQ
-
-让机器学会创造新的概念：DeepMind提出符号-概念关联网络SCAN
-
-https://mp.weixin.qq.com/s/AAmQymWdKQDeL8DQacEZ3A
-
-用深度学习解决Bongard问题
-
-https://mp.weixin.qq.com/s/210l9K94KMqtJtqbrZ-mgg
-
-打开黑箱重要一步，MIT提出TbD-net，弥合视觉推理模型的性能与可解释性鸿沟
-
-https://mp.weixin.qq.com/s/E5VpBt53VTjOxt8wE3SrLA
-
-工程师如何解决穿衣搭配烦恼？
-
-https://mp.weixin.qq.com/s/tzAp6PxAn3GszcttRzfz8Q
-
-CMU提出新型智能体定位方法：“主动神经定位器”
-
-https://mp.weixin.qq.com/s/_1rKAj-KOs4P8WnKzen64w
-
-传统方法已经Out了？OpenAI提出全新辩论模式训练AI
-
-https://zhuanlan.zhihu.com/p/36527644
-
-Learning with Noise: Enhance Distantly Supervised Relation Extraction with Dynamic Transition Matrix——一种对噪音数据显式建模的方法
 

@@ -208,6 +208,10 @@ https://mp.weixin.qq.com/s/OUFGRHa-uYKUg_giGmL6yQ
 
 机器人读懂人心的九大模型。一个动作识别的blog
 
+https://mp.weixin.qq.com/s/JkbM8Af8ApTO4fkxCUTOoA
+
+浅谈动作识别TSN, TRN, ECO
+
 # 深度目标跟踪
 
 https://zhuanlan.zhihu.com/p/22334661

@@ -454,6 +454,10 @@ https://mp.weixin.qq.com/s/QkjMY-qEqn2cGfYbFEmv5w
 
 计算机视觉开源工具中的瑞士军刀—Dlib最新高级特性教程
 
+https://mp.weixin.qq.com/s/Ds3tYNFHcITgOAAgdANgJA
+
+OpenCV深度学习人脸识别示例——看大佬如何秀恩爱
+
 # CCV
 
 CCV是一个C语言的CV库。

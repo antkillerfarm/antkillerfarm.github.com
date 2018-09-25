@@ -216,6 +216,10 @@ https://mp.weixin.qq.com/s/DjskKa-KxiCX-hLKEw75Tg
 
 Towards End-to-End Speech Recognition
 
+https://mp.weixin.qq.com/s/xW_KvR5y12_eyp3FvtmBwQ
+
+从概念到应用，腾讯视角深入“解剖”AI平台和语音技术
+
 # 语音合成
 
 语音合成（Speech synthesis），有时也叫做text-to-speech (TTS)。

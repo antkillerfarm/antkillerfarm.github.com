@@ -242,3 +242,11 @@ https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651009365&idx=4&sn=b8a0bc
 
 百度UNIT对话系统核心技术解析
 
+https://mp.weixin.qq.com/s/yC8uYwti9Meyt83xkmbmcg
+
+小哥哥，检索式chatbot了解一下？
+
+https://mp.weixin.qq.com/s/9JOH6iLd9MQOvzJjnr8P0g
+
+EMNLP 2018 基于自适应的多轮解码机制的神经机器翻译模型
+

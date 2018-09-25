@@ -271,7 +271,35 @@ https://mp.weixin.qq.com/s/0wJRlGS2QXpEL2XaU_Ke-g
 
 Python实现烟花特效
 
+https://mp.weixin.qq.com/s/5YWAgp8LKi5q_NDrNUtyGQ
+
+在GitHub上收获6519颗Star的Python面试题资料
+
 # 大数据平台参考资源
+
+https://mp.weixin.qq.com/s/IvGkPnYdifuAzrUV3MTyhA
+
+数据埋点太难！知乎的做法有何可借鉴之处？
+
+https://mp.weixin.qq.com/s/fV3OqXreZqaQ5neQaFIlOQ
+
+非易失性内存在阿里生产环境的首次应用：Tair NVM最佳实践总结
+
+https://mp.weixin.qq.com/s/39FG8FXADFC9UQuUJGTwbQ
+
+基于DAG的分布式任务调度平台：Maat
+
+https://mp.weixin.qq.com/s/qnjM4nMMGzO_gsnktQubSw
+
+携程度假起价引擎架构演变
+
+https://mp.weixin.qq.com/s/qmTJ6d0VtfqvIYJzRUMvsw
+
+互联网账户系统如何设计（上篇）
+
+https://mp.weixin.qq.com/s/NV5sYF15Q-016sfxRMEVmg
+
+浅谈高并发系统性能调优
 
 https://mp.weixin.qq.com/s/nqOvcKtxpqehWFO4XkXr5g
 
@@ -300,4 +328,3 @@ https://mp.weixin.qq.com/s/7kKhAYtkIuvlBnZlaYATnw
 https://mp.weixin.qq.com/s/4WCgzvTjOvNONrrZLc7yOQ
 
 比Hive快800倍！大数据实时分析领域黑马开源ClickHouse
-
