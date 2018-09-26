@@ -8,6 +8,14 @@ category: DL
 
 ## Batch Normalization（续）
 
+http://mlexplained.com/2018/01/10/an-intuitive-explanation-of-why-batch-normalization-really-works-normalization-in-deep-learning-part-1/
+
+An Intuitive Explanation of Why Batch Normalization Really Works
+
+http://mlexplained.com/2018/01/13/weight-normalization-and-layer-normalization-explained-normalization-in-deep-learning-part-2/
+
+Weight Normalization and Layer Normalization Explained
+
 https://mp.weixin.qq.com/s/KnmQTKneSimuOGqGSPy58w
 
 详解深度学习中的Normalization，不只是BN（1）
@@ -40,9 +48,9 @@ https://www.jianshu.com/p/35a3bf866c46
 
 在之前的描述中，我们一直强调过拟合的风险，然而实际上，欠拟合才是DL最大的敌人。
 
-首先，神经网络对于学习样本数量的要求非常高，基本比浅层模型多2～3个数量级，因此过拟合的风险并不太大。
+过拟合至少在训练集上表现出色，可以想象如果预测样本恰好和训练集样本近似的话，则模型是能够正确预测的。而欠拟合基本什么也做不了。
 
-其次，过拟合的危害也没有欠拟合那么高。比如下面的场景：
+比如下面的场景：
 
 1.对同一训练样本集$$T_1$$，进行两次训练，分别得到模型$$M_1,M_2$$。
 

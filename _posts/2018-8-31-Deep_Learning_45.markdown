@@ -268,6 +268,10 @@ https://mp.weixin.qq.com/s/3njCAKQsQ8UhL3gqDDHZGQ
 
 近期大热的AutoML领域，都有哪些值得读的论文？
 
+https://mp.weixin.qq.com/s/l6uzHwGSTY5xRSkPD_B2rw
+
+深度学习模型超参数搜索实用指南
+
 # GAN进阶（续）
 
 https://mp.weixin.qq.com/s/c84LMFnIhoDeolc1B4MIVA

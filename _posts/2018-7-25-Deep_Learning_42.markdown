@@ -104,6 +104,10 @@ https://mp.weixin.qq.com/s/yrygkZUwsCL-twTFvA--1w
 
 尺度不变网络提升人群计数性能
 
+https://mp.weixin.qq.com/s/K7JNqjuUfotTODtJU1W-YQ
+
+快速精准的人头检测，代码已开源
+
 # 人脸识别进阶
 
 https://mp.weixin.qq.com/s/YlrWHDPIPzN4dQO2vo4DjA

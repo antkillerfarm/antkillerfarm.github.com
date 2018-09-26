@@ -343,3 +343,7 @@ https://mp.weixin.qq.com/s/6MXLtUDi_idMYqbHARkbcg
 https://mp.weixin.qq.com/s/Np4xyvPrncd7MJ9q1WShBA
 
 Python视频深度学习：计算任意影片中所有演员出镜时间
+
+https://mp.weixin.qq.com/s/Nt4QLX_lbHhszb8fFlmOLA
+
+DeepVS：基于深度学习的视频显著性方法

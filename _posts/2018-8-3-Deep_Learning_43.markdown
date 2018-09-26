@@ -256,6 +256,10 @@ https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650748774&idx=4&sn=efb794
 
 这种两阶段深度着色模型，为黑白照披上了彩衣
 
+https://mp.weixin.qq.com/s/3lrCRiq5zuX9yWxiQRQE9A
+
+CartoonGAN不靠手绘，也能成为漫画达人
+
 # Graph NN
 
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw

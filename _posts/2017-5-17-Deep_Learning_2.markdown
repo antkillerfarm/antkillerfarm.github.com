@@ -183,7 +183,7 @@ Batch Normalization是Google提出的一种神经网络优化技巧。
 
 通常来说，越靠近输出层，由于该层网络已被充分训练，其权值越大，反之则越小。这实际上也是梯度消失的一种原因。
 
-更一般的，如果一层的权值显著异于相邻的层，从系统的角度出发，这一层也是不稳定的。Batch Normalization将**每一层**的权值归一化，从而改善了神经网络的性能。它的优点有：
+更一般的，如果一层的权值显著异于相邻的层，从系统的角度出发，这一层也是不稳定的。Normalization将**每一层**的权值归一化，从而改善了神经网络的性能。它的优点有：
 
 1.提高梯度在网络中的流动。Normalization能够使特征全部缩放到[0,1]，这样在反向传播时候的梯度都是在1左右，避免了梯度消失现象。
 
@@ -193,9 +193,13 @@ Batch Normalization是Google提出的一种神经网络优化技巧。
 
 类似的概念还有Weight Normalization和Layer Normalization。
 
-以下是它们的特点：
-
 ### Batch Normalization
+
+![](/images/img2/BN.jpg)
+
+从上图可以看出，**BN是对input tensor的每个通道进行mini-batch级别的Normalization。而LN则是对所有通道的input tensor进行Normalization**。
+
+BN的特点：
 
 对于batch size比较小的时候，效果非常不好，而batch size越大，那么效果则越好，因为其本质上是要通过mini-batch得到对整个数据集的无偏估计；
 
@@ -203,13 +207,9 @@ Batch Normalization是Google提出的一种神经网络优化技巧。
 
 在CNN上表现较好，而不适用于RNN甚至LSTM。
 
-### Weight Normalization
-
-计算简单，易于理解。
-
-相比于其他两种方法，其训练起来不太稳定，非常依赖于输入数据的分布。
-
 ### Layer Normalization
+
+LN的特点：
 
 不依赖于batch size的大小，即使对于batch size为1的在线学习，也可以完美适应；
 
@@ -217,7 +217,23 @@ Batch Normalization是Google提出的一种神经网络优化技巧。
 
 适用于RNN或LSTM，而在CNN上表现一般。
 
-![](/images/img2/BN.jpg)
+### Weight Normalization
+
+WN的公式如下：
+
+$$w=\frac{g}{\|v\|}v$$
+
+**WN将权重分为模和方向两个分量，并分别进行训练。**
+
+论文：
+
+《Weight Normalization: A Simple Reparameterization to Accelerate Training of Deep Neural Networks》
+
+WN的特点：
+
+计算简单，易于理解。
+
+相比于其他两种方法，其训练起来不太稳定，非常依赖于输入数据的分布。
 
 ### Cosine Normalization
 
@@ -254,10 +270,6 @@ Implementation of Batch Normalization Layer（中文blog）
 https://www.zhihu.com/question/38102762
 
 深度学习中 Batch Normalization为什么效果好？
-
-http://jiangqh.info/Batch-Normalization%E8%AF%A6%E8%A7%A3/
-
-Batch Normalization详解
 
 https://mp.weixin.qq.com/s/OAn8y_uJTgyrtS2ZCyudlg
 

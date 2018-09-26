@@ -312,6 +312,32 @@ https://www.zhihu.com/question/40763253
 
 如何在Word和PowerPoint中优雅地插入Latex公式？
 
+# 大数据平台参考资源
+
+https://mp.weixin.qq.com/s/lc9fWkEVt1kG5Mw3Xeuv3g
+
+Apache Beam实战指南：手把手教你玩转KafkaIO与Flink
+
+https://mp.weixin.qq.com/s/bTh8N45BLNQHSLUZAakkCA
+
+Oceanus：美团点评HTTP流量定制化路由的实践
+
+https://mp.weixin.qq.com/s/qhiX62dALXd3owYYP9KsEQ
+
+支持流式处理ACID事务！Flink团队开源新作Streaming Ledger
+
+https://mp.weixin.qq.com/s/VKsbBvKibLDc-wFvYn3nxg
+
+阿里如何实现秒级百万TPS？搜索离线大数据平台架构解读
+
+https://mp.weixin.qq.com/s/7kKhAYtkIuvlBnZlaYATnw
+
+全链路压测平台（Quake）在美团中的实践
+
+https://mp.weixin.qq.com/s/4WCgzvTjOvNONrrZLc7yOQ
+
+比Hive快800倍！大数据实时分析领域黑马开源ClickHouse
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/7dpYRLKpRn0MSa5bz_sBDg

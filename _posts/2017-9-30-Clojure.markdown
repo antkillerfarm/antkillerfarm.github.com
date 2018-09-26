@@ -141,7 +141,27 @@ https://www.douban.com/group/topic/27583755/
 
 # Python
 
-## 参考（续）
+## 参考
+
+https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA
+
+Python学习思维导图
+
+https://mp.weixin.qq.com/s/_OmRvwFmvuuOpBf7DQG8IA
+
+Python30个编程技巧
+
+https://mp.weixin.qq.com/s/-CaMHjsY580et8Hh_D2FSg
+
+简约而不简单的Django新手图文教程
+
+https://mp.weixin.qq.com/s/O5okcuVKuf339BZzhmxiew
+
+13个Python GUI库
+
+https://mp.weixin.qq.com/s/jHnkmpnOz1LApVCLJL-8Tw
+
+如何写出优雅又地道的Python代码？
 
 https://mp.weixin.qq.com/s/5xs1ivkrUAP_Rr9P-EMc5g
 
@@ -304,27 +324,3 @@ https://mp.weixin.qq.com/s/NV5sYF15Q-016sfxRMEVmg
 https://mp.weixin.qq.com/s/nqOvcKtxpqehWFO4XkXr5g
 
 为减少用户电话排队，阿里研发了智能客服调度系统
-
-https://mp.weixin.qq.com/s/lc9fWkEVt1kG5Mw3Xeuv3g
-
-Apache Beam实战指南：手把手教你玩转KafkaIO与Flink
-
-https://mp.weixin.qq.com/s/bTh8N45BLNQHSLUZAakkCA
-
-Oceanus：美团点评HTTP流量定制化路由的实践
-
-https://mp.weixin.qq.com/s/qhiX62dALXd3owYYP9KsEQ
-
-支持流式处理ACID事务！Flink团队开源新作Streaming Ledger
-
-https://mp.weixin.qq.com/s/VKsbBvKibLDc-wFvYn3nxg
-
-阿里如何实现秒级百万TPS？搜索离线大数据平台架构解读
-
-https://mp.weixin.qq.com/s/7kKhAYtkIuvlBnZlaYATnw
-
-全链路压测平台（Quake）在美团中的实践
-
-https://mp.weixin.qq.com/s/4WCgzvTjOvNONrrZLc7yOQ
-
-比Hive快800倍！大数据实时分析领域黑马开源ClickHouse

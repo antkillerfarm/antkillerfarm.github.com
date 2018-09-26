@@ -136,7 +136,7 @@ LDA模型的目标有两个：
 
 1. hierarchical Latent Dirichlet Allocation (hLDA)  (2003_NIPS_Hierarchical topic models and the nested Chinese restaurant process)
 
-2. hierarchical Dirichlet process (HDP)  (2006_NIPS_Hierarchical dirichlet processes)
+2. hierarchical Dirichlet process (HDP)  (2006_NIPS_Hierarchical dirichlet processes)/Nested Hierarchical Dirichlet Processes (nHDP)
 
 3. Indian Buffet Process Compound Dirichlet Process (ICD)  (2010_ICML_The IBP compound Dirichlet process and its application to focused topic modeling)
 

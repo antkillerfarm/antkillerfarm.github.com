@@ -380,15 +380,3 @@ https://mp.weixin.qq.com/s/Rf3NAYlNMrcVythVA-90cQ
 
 端到端对话模型新突破！Facebook发布大规模个性化对话数据库
 
-https://mp.weixin.qq.com/s/LC6bJOsJczTLolQ1Yx5cvg
-
-最全中华古诗词数据库:近14k唐宋古诗人, 55k首唐诗，60k宋诗
-
-https://mp.weixin.qq.com/s/yZ138cMv4203wJdIY_0sUA
-
-FAIR重磅发布大规模语料库XNLI：解决跨15种语言理解难题
-
-https://mp.weixin.qq.com/s/jOjiAAK1byUx8ic011f33w
-
-2200万室内场景数据集，包含语义、全景、灯光等十余种效果
-

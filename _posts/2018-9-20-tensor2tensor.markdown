@@ -52,7 +52,11 @@ training-parallel-nc-v13/news-commentary-v13.zh-en.zh
 
 这个过程比较漫长，大约1小时左右，期间CPU全满，而GPU全空，一度让我以为我的GPU相关配置不对。
 
-数据预处理主要由T2T中的Problem模块进行配置。
+数据预处理主要完成如下数据转换：
+
+token（文字）->id（词典中的index）
+
+它主要由T2T中的Problem模块进行配置。
 
 例如，英汉翻译的设置一般为：`--problem=translate_enzh_wmt32k`。
 
@@ -72,11 +76,17 @@ tensor2tensor/data_generators/text_encoder_build_subword.py
 
 除此之外，网上也有人使用Byte Pair Encoding(BPE)分词法进行分词。
 
-
-
-生成词向量：
-
 tensor2tensor/layers/common_layers.py：embedding
+
+导入词向量：
+
+transformer模型的input/output都是单词在词典中的index，需要通过查询词向量表，将其替换为词向量。
+
+tensor2tensor/layers/modalities.py：SymbolModality
+
+encoder导入：input_emb
+
+decoder导入：target_emb
 
 ## 模型
 
@@ -246,6 +256,10 @@ $$K(t)=\sum_{n=1}^\infty \kappa_{n} \frac{t^{n}}{n!} = \mu t + \sigma^2 \frac{t^
 
 ## Polyspectrum
 
+Polyspectrum一般翻译成高阶谱或者多谱。
+
+>吐槽一下，我最早看的一本书把Polyspectrum翻译成多谱，结果我以此为关键词搜索，基本一无所获。直到我发现它还有另一个中文名。。。
+
 
 
 ## 参考
@@ -257,6 +271,14 @@ https://www.zhihu.com/question/25344430
 https://www.zhihu.com/question/43469699
 
 信号的矩和高阶累积量的定义是什么？
+
+http://www.doc88.com/p-1127198771359.html
+
+高阶累积量与高阶谱读书笔记
+
+https://wenku.baidu.com/view/7c4931085727a5e9856a6139.html
+
+高阶谱分析
 
 # 张量分析
 

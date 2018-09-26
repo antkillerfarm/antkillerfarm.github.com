@@ -372,6 +372,10 @@ https://mp.weixin.qq.com/s/su2F2F3dtl6W-WNuQHNpJg
 
 不使用深度学习，进化算法也能玩Atari游戏！
 
+http://www.cnblogs.com/tsingke/p/6258967.html
+
+CMA-ES算法
+
 ## 深度哈希
 
 https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg

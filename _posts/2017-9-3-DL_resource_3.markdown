@@ -192,6 +192,10 @@ https://mp.weixin.qq.com/s/h0be7yRQMjLFi8EteTzuMQ
 
 腾讯AI在星际2完整对战中击败“作弊级”内建Bot
 
+https://mp.weixin.qq.com/s/BnS5KECLiUNGFd0EtTovTw
+
+南大AI单机训练一天，击败最高难度内置Bot
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293

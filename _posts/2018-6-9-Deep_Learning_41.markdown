@@ -395,3 +395,7 @@ https://zhuanlan.zhihu.com/p/41814142
 
 从源码解密AlphaGo Zero背后基本原理
 
+https://www.ifanr.com/630602
+
+AlphaGo的棋局，与人工智能有关，与人生无关
+
