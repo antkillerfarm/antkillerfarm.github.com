@@ -352,6 +352,10 @@ https://mp.weixin.qq.com/s/HNeInMIpho5pTDoK6dZ-ng
 
 一文详解达观数据知识图谱技术与应用——技术直播回顾
 
+https://mp.weixin.qq.com/s?__biz=MjM5MDI3MjA5MQ==&mid=2697267537&idx=1&sn=3011302613b90749d7ffe0cc3a805d1f
+
+知识图谱在旅游领域有哪些应用？携程度假团队这样回答
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/NbEki2ByMmA93DyoQF1yjA

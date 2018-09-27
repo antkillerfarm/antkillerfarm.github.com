@@ -128,6 +128,22 @@ https://gnu.org/software/octave/
 
 `sudo apt-get install octave`
 
+# 平稳离散时间随机过程（续）
+
+## 选择ARIMA的阶数
+
+如前所述，ARIMA(p,d,q)除了一些参数之外，还包括p，d，p这三个阶数的超参数。
+
+AIC信息准则即Akaike information criterion，是衡量统计模型拟合优良性(Goodness of fit)的一种标准，由于它为日本统计学家赤池弘次创立和发展的，因此又称赤池信息量准则。AIC方法主要使用了KL散度。
+
+MDL(minimum description length,最小描述长度) 原理是Rissane在研究通用编码时提出的。其基本原理是选择总描述长度最小的模型。
+
+参考：
+
+https://mp.weixin.qq.com/s/66lY17sOO83Q-xhvQi72dw
+
+周期性时间序列的预测
+
 # 功率谱
 
 随机过程（设时间序列为$$u(n)$$）二阶统计：
@@ -279,20 +295,4 @@ http://www.doc88.com/p-1127198771359.html
 https://wenku.baidu.com/view/7c4931085727a5e9856a6139.html
 
 高阶谱分析
-
-# 张量分析
-
-在同构的意义下，第零阶张量（r = 0）为标量（Scalar），第一阶张量（r = 1）为向量（Vector），第二阶张量（r = 2）则成为矩阵（Matrix）。
-
-《张量分析》，黄克智著。
-
->注：黄克智，1927年生，固体力学家。江西中正大学本科+清华硕士+莫斯科大学博士（因应召回国，放弃博士学位）。清华大学工程力学系教授、工程力学研究所所长，中国科学院院士。断裂力学领域权威。
-
-# 拓扑学
-
-《Topopogy Without Tears》，University of New South Wales的Sidney A. Morris著。
-
-该书的中文版：
-
-http://www.topologywithouttears.net/topbookchinese.pdf
 

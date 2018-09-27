@@ -444,11 +444,23 @@ https://mp.weixin.qq.com/s/m44zVWMvactsLPjKsFnlSg
 
 RAII惯用法：C++资源管理的利器
 
+https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126
+
+前端安全系列之一：如何防止XSS攻击？
+
+https://mp.weixin.qq.com/s?__biz=MzIyNzUwMjM2MA==&mid=2247485942&idx=1&sn=1597233c1527cac63a2c734ec0b14f02
+
+编程基础知识
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/
 
+Linux下通过Qemu学习X86 AT&T汇编语言
+
 http://www.tinylab.org/using-qemu-simulation-inserts-the-type-system-to-produce-the-whole-process/
+
+利用qemu模拟嵌入式系统制作全过程
 
 这两篇文章讲述如何使用qemu运行各种汇编程序和微内核
 
