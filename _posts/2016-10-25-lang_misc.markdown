@@ -338,6 +338,10 @@ https://mp.weixin.qq.com/s/4WCgzvTjOvNONrrZLc7yOQ
 
 比Hive快800倍！大数据实时分析领域黑马开源ClickHouse
 
+https://mp.weixin.qq.com/s/K2G1mUo_WOhDyAxGgcfqHA
+
+利用Mesos构建多任务调度系统
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/7dpYRLKpRn0MSa5bz_sBDg

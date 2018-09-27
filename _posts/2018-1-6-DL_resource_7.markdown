@@ -98,10 +98,6 @@ https://mp.weixin.qq.com/s/SPdkJTYU80bioNdZrBj4cw
 
 卷积优化-Cpython(Cuda)施工和分析
 
-https://mp.weixin.qq.com/s/M120ZRfLoT9abWZOmgj-TQ
-
-面部识别技术能用来识别鲸鱼？
-
 https://mp.weixin.qq.com/s/4JFzgFTvAvBs74V7AQUCrQ
 
 让照片走两步：骨骼框架辅助的人物动作生成模型

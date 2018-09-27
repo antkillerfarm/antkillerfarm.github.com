@@ -417,3 +417,8 @@ https://mp.weixin.qq.com/s/jOjiAAK1byUx8ic011f33w
 https://mp.weixin.qq.com/s/9k2aorOp_zc10JKf9F9Evw
 
 上海交大和厦门大学联合发布大规模驾驶策略学习数据集DBNet
+
+https://mp.weixin.qq.com/s/aw5o-1Bwc4hQUatehFFx2A
+
+南京大学发布WebCaricature漫画人脸识别数据集
+

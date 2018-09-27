@@ -343,9 +343,15 @@ https://code.visualstudio.com/
 
 `sudo apt install libgconf-2-4`
 
+## 2018.9
+
+VS Code也有作为IDE的用途。大概从2014年开始，就陆续有公司基于VS Code开发自己的商用IDE。早先还主要集中于前端开发领域，现在就连传统的半导体公司也开始转型VS Code了。Eclipse统治商用IDE的时代，行将结束。
+
 ## 细节
 
 ctrl+P 命令行
+
+View--> Toggle Word Wrap 自动换行
 
 ## 插件
 
@@ -357,38 +363,3 @@ https://blog.csdn.net/GossipHHH/article/details/78132398
 
 VsCode插件安装及推荐
 
-# IDE
-
-## Source Insight
-
-Shift+F8：高亮选中的字
-
-http://www.cnblogs.com/bluestorm/archive/2012/10/28/2743792.html
-
-Source Insight常用设置和快捷键大全
-
-## Eclipse
-
-### 分栏显示
-
-1.拖住一个文件不放，直到鼠标图案发生改变。
-
-2.如果需要左右显示两个文件，向左右移动鼠标，如果需要上下显示两个文件，上下移动。这里的移动需要移出编辑窗口范围。
-
-## VS
-
-### 分栏显示
-
-1.Window -> New Window
-
-2.Window -> New Vertical Tab Group
-
-### Visual Studio Tab转换为空格的设置
-
-打开“Tools --> Options --> Text Editor”，如果是编写C/C++程序，就打开“C/C++-->Tabs”，在这里，选中“Insert spaces”即可。
-
-## Other
-
-http://dcloud.io/index.html
-
-HBuilder，一个html编辑的IDE。

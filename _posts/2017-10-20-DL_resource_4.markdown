@@ -108,6 +108,14 @@ https://mp.weixin.qq.com/s/BCNrsuoThJt031jCnbAjAA
 
 腾讯广告算法大赛季军SML_21队伍解决方案
 
+https://mp.weixin.qq.com/s/esBjgFqR0H3JD_3Tu0qh3g
+
+一只初学者，如何登顶野生动物识别挑战赛？
+
+https://mp.weixin.qq.com/s/M120ZRfLoT9abWZOmgj-TQ
+
+面部识别技术能用来识别鲸鱼？
+
 ## 工具
 
 https://mp.weixin.qq.com/s/TT4whft1Tj1pCEPbnMH1cA

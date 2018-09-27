@@ -360,10 +360,6 @@ https://mp.weixin.qq.com/s/jQ6fEi_K2RSesJxZn_kujg
 
 外部排序
 
-https://mp.weixin.qq.com/s/TL87BY3DdP1bolc0Sxkahg
-
-gRPC客户端创建和调用原理解析
-
 https://mp.weixin.qq.com/s/agS2-wu6HGO__QfbIt7Esw
 
 数字签名是什么？
@@ -443,6 +439,10 @@ https://mp.weixin.qq.com/s/msv2NZ0aG96d3xQhX3HhNA
 https://mp.weixin.qq.com/s/6AfmiLRSUP819J43EwJBqA
 
 ORACLE ERP的前世今生
+
+https://mp.weixin.qq.com/s/m44zVWMvactsLPjKsFnlSg
+
+RAII惯用法：C++资源管理的利器
 
 ## 有用的blog
 

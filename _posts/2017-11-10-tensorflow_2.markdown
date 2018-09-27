@@ -125,6 +125,18 @@ http://www.cnblogs.com/xuchenCN/p/5888638.html
 
 tensorflow serving
 
+https://mp.weixin.qq.com/s/iqvpX6QuBEmF_UK9RMu9eQ
+
+TensorFlow Serving入门
+
+https://mp.weixin.qq.com/s/TL87BY3DdP1bolc0Sxkahg
+
+gRPC客户端创建和调用原理解析
+
+https://zhuanlan.zhihu.com/p/30628048
+
+远程通信协议：从CORBA到gRPC
+
 ## op的C++实现
 
 有的时候为了将Tensorflow的op移植到其他平台，需要找到相应op的cpu实现。比如space_to_batch这个op，它的实现在：

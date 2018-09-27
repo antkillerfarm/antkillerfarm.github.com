@@ -126,6 +126,10 @@ https://mp.weixin.qq.com/s/1yA-kgS_rL4o9I4OWeI4-A
 
 自动驾驶入门课程第⑧讲 — 规划（下）
 
+https://mp.weixin.qq.com/s/8hLVHuv635fyHRNftXJQ4w
+
+自动驾驶入门课程第⑨讲 — 控制（上）
+
 ## 术语
 
 LIDAR：LIght Detection And Ranging

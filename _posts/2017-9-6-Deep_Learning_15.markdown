@@ -136,6 +136,8 @@ Non-Maximum Suppression顾名思义就是抑制不是极大值的元素，搜索
 
 **Step 3**：从剩下的矩形框A、C、E中，选择概率最大的E，然后判断E与A、C的重叠度，重叠度大于一定的阈值，那么就扔掉；并标记E是我们保留下来的第二个矩形框。（**确定下一个领域，并抑制该领域内的非极大值**）
 
+原始的NMS又被称为greedy-NMS，后来学界又相继提出了Soft-NMS和Softer-NMS。
+
 参考：
 
 http://mp.weixin.qq.com/s/Cg9tHG1YgDCdI3NPYl5-vQ
@@ -145,6 +147,10 @@ http://mp.weixin.qq.com/s/Cg9tHG1YgDCdI3NPYl5-vQ
 https://mp.weixin.qq.com/s/Pd1zA-xZS_xEALfMJ3aHNw
 
 丧尸目标检测：和你分享Python非极大值抑制方法运行得飞快的秘诀
+
+https://mp.weixin.qq.com/s/SewmtFCVpsthQ4dWUGmEsA
+
+Softer-NMS:CMU&旷视最新论文提出定位更加精确的目标检测算法
 
 ## ground truth
 

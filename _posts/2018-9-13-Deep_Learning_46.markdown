@@ -66,6 +66,22 @@ https://mp.weixin.qq.com/s/h7HVyGbmtLmNVJp4p0rCRQ
 
 字符识别(OCR)相关工具/库/教材/论文等资源整理
 
+https://mp.weixin.qq.com/s/KFgC8zHWS7ysb9GfbkfLRA
+
+OCR技术简介
+
+https://mp.weixin.qq.com/s/0ysaJGNslckesv21o752FA
+
+图像OCR年度进展
+
+https://mp.weixin.qq.com/s/VIEsfc4qKAGsi-O9LD4mng
+
+深度学习在OCR中的应用
+
+https://blog.csdn.net/linolzhang/article/details/82780071
+
+OCR文字识别
+
 https://mp.weixin.qq.com/s/WmsHrTIMJhSt8MtFO7-yXA
 
 证件全文本OCR技术，了解一下
@@ -101,14 +117,6 @@ tensorflow LSTM+CTC/warpCTC使用详解
 https://mp.weixin.qq.com/s/k0dRu1wx49HTi_oJYJEGPw
 
 阿里提出IncepText：全新多向场景文本检测模块
-
-https://mp.weixin.qq.com/s/0ysaJGNslckesv21o752FA
-
-图像OCR年度进展
-
-https://mp.weixin.qq.com/s/VIEsfc4qKAGsi-O9LD4mng
-
-深度学习在OCR中的应用
 
 https://zhuanlan.zhihu.com/p/34757009
 
@@ -154,15 +162,31 @@ https://mp.weixin.qq.com/s/JIoTsadw4JBkr0e40RwVQQ
 
 这篇论文开源的车牌识别系统打败了目前最先进的商业软件
 
-https://blog.csdn.net/linolzhang/article/details/82780071
-
-OCR文字识别
-
 https://mp.weixin.qq.com/s/lVRIy6DdwfRxdoVW3qFiNg
 
 OCR如何读取皱巴巴的文件？深度学习在文档图像形变矫正的应用详解
 
 # 目标检测进阶
+
+## CornerNet
+
+https://mp.weixin.qq.com/s/e74-zFcMZzn67KaFXb_fdQ
+
+CornerNet目标检测开启预测“边界框”到预测“点对”的新思路
+
+https://zhuanlan.zhihu.com/p/41865617
+
+CornerNet：目标检测算法新思路
+
+https://mp.weixin.qq.com/s/e6B22xpue_xZwrXmIlZodw
+
+ECCV-2018最佼佼者CornerNet的目标检测算法
+
+https://mp.weixin.qq.com/s/9ldLaYKGkgq-MnJZw7CrDQ
+
+CornerNet为什么有别于其他目标检测领域的主流算法？
+
+## 参考
 
 https://mp.weixin.qq.com/s/LtXylKTKsHdjMPw9Q1HyXA
 
@@ -211,18 +235,6 @@ https://mp.weixin.qq.com/s/PpT-NmTVjRi0_SEq0lISXw
 https://mp.weixin.qq.com/s/tmp1HXU7cLerLr0DY9NluQ
 
 杂乱环境下的显著性物体： 将显著性物体检测推向新高度
-
-https://mp.weixin.qq.com/s/e74-zFcMZzn67KaFXb_fdQ
-
-CornerNet目标检测开启预测“边界框”到预测“点对”的新思路
-
-https://zhuanlan.zhihu.com/p/41865617
-
-CornerNet：目标检测算法新思路
-
-https://mp.weixin.qq.com/s/e6B22xpue_xZwrXmIlZodw
-
-ECCV-2018最佼佼者CornerNet的目标检测算法
 
 https://zhuanlan.zhihu.com/p/41897137
 
@@ -303,6 +315,30 @@ https://mp.weixin.qq.com/s/52hm3Cq3TFRnTMfDppivSQ
 中山大学等提出HSE：基于层次语义嵌入模型的精细化物体分类
 
 # 元学习
+
+人工智能的历史显示了明确的进展方向：
+
+第一代：**良好的老式人工智能**
+
+>手工预测   
+>什么都不学
+
+第二代：**浅学习**
+
+>手工功能   
+>学习预测
+
+第三代：**深度学习**
+
+>手工算法（优化器，目标，架构......）   
+>端到端地学习功能和预测
+
+第四代：**元学习**
+
+>无手工   
+>端到端学习算法和功能以及预测
+
+## 参考
 
 https://mp.weixin.qq.com/s/KKK3VEpwL90g6Aro8qtXxQ
 
