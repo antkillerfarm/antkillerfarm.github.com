@@ -260,6 +260,10 @@ https://mp.weixin.qq.com/s/3lrCRiq5zuX9yWxiQRQE9A
 
 CartoonGAN不靠手绘，也能成为漫画达人
 
+https://mp.weixin.qq.com/s/BWBrso7O1O3Rfxa4QWZH4g
+
+分分钟学会基于深度学习的图像真实风格迁移！
+
 # Graph NN
 
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw

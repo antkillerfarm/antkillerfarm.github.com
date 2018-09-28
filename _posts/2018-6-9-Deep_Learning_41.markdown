@@ -26,9 +26,9 @@ https://mp.weixin.qq.com/s/ThwsfHME_2csqTlKuG5heg
 
 综述论文：四大类深度迁移学习
 
-https://mp.weixin.qq.com/s/BWBrso7O1O3Rfxa4QWZH4g
+https://mp.weixin.qq.com/s/01WLhFsni1WRTYPgqoV0Ww
 
-分分钟学会基于深度学习的图像真实风格迁移！
+深度学习之迁移学习介绍与使用
 
 https://mp.weixin.qq.com/s/5DtTgc9bIrdXQkmuqRm8CA
 

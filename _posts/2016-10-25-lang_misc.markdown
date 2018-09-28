@@ -342,6 +342,10 @@ https://mp.weixin.qq.com/s/K2G1mUo_WOhDyAxGgcfqHA
 
 利用Mesos构建多任务调度系统
 
+https://mp.weixin.qq.com/s/5BeM4aBH9vMhU3i74qKvdg
+
+Uber开源Marmaray：基于Hadoop的通用数据摄取和分散框架
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/7dpYRLKpRn0MSa5bz_sBDg

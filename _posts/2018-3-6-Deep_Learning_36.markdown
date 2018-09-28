@@ -308,6 +308,10 @@ https://mp.weixin.qq.com/s/frUPjpCQGlZc7Dag_v7r3A
 
 2018年最全的推荐系统干货
 
+https://mp.weixin.qq.com/s/3NStfKyn3rGmLUrgk4b9lQ
+
+想了解推荐系统最新研究进展？请收好这16篇论文
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

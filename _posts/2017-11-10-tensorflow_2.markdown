@@ -40,6 +40,24 @@ https://mp.weixin.qq.com/s/3GfxnwzIeeQj1LVSYKnZjQ
 
 如何保存和恢复TensorFlow训练的模型？
 
+https://www.jianshu.com/p/243d4f0b656c
+
+TensorFlow自定义模型导出：将.ckpt格式转化为.pb格式
+
+## 模型文件的图操作
+
+基本操作：
+
+https://tensorflow.google.cn/api_docs/python/tf/Graph
+
+进阶操作：
+
+https://tensorflow.google.cn/api_guides/python/contrib.graph_editor
+
+示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/tensorflow/graph/hello_graph.py
+
 ## TFRecord
 
 TFRecord是TensorFlow官方定义的存放样本数据文件。
@@ -88,10 +106,6 @@ decoder = { tf.equal(image_ext, '.png'):  decode_png,
             tf.equal(image_ext, '.jpg'):  decode_jpg}
 image_tensor = tf.case(decoder, default = decode_png, exclusive = True)
 {% endhighlight %}
-
-## 权值保持不变
-
-迁移学习的时候，有的时候需要保持某几层的权值，在后续训练中不被改变。这时，可以在创建Variable时，令trainable=false。
 
 ## TFLite
 
@@ -186,6 +200,14 @@ tensorflow的程序中,在main函数下,都是使用tf.app.run()来启动。查�
 https://blog.csdn.net/lujiandong1/article/details/53262612
 
 tensorflow中的tf.app.run()
+
+----
+
+TF提供了一套专门的IO函数：tf.gfile。主要优点在于：对于写文件来说，open操作直到真的需要写的时候才执行。
+
+----
+
+迁移学习的时候，有的时候需要保持某几层的权值，在后续训练中不被改变。这时，可以在创建Variable时，令trainable=false。
 
 ## blog
 

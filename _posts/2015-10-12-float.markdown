@@ -298,6 +298,14 @@ https://mp.weixin.qq.com/s/cSu-P-aDSXH0CYLN2HNrxw
 
 深入理解Cache（上）
 
+https://mp.weixin.qq.com/s/rml_wqePIx8vOk2ZO9_GMA
+
+深入理解Cache（下）
+
+http://m.uczzd.cn/webview/news?aid=15020380163392206798
+
+你所不知道的经典科技发展史: 以前CPU是如何设计出来的
+
 # 3D芯片
 
 随着半导体工艺日益接近物理极限，2D芯片已经不能满足进化的需要，芯片的设计也迈向了立体发展的阶段。目前主流的3D芯片技术包括FinFET（1999）与FD-SOI（2000），他们都是胡正明团队的作品。
