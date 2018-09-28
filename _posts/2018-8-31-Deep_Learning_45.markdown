@@ -272,6 +272,10 @@ https://mp.weixin.qq.com/s/l6uzHwGSTY5xRSkPD_B2rw
 
 深度学习模型超参数搜索实用指南
 
+https://mp.weixin.qq.com/s/7dNB6V4gHdkN-N2td43NrA
+
+一种简单有效的网络结构搜索
+
 # GAN进阶（续）
 
 https://mp.weixin.qq.com/s/c84LMFnIhoDeolc1B4MIVA

@@ -272,6 +272,10 @@ https://mp.weixin.qq.com/s/IxVMMu_7UL5zFsDCcYfzYA
 
 AutoML自动模型压缩再升级，MIT韩松团队利用强化学习全面超越手工调参
 
+https://mp.weixin.qq.com/s/fU-AeaPz-lHlg0CBgqnpZQ
+
+轻量化神经网络综述
+
 # 语义分割进阶
 
 https://mp.weixin.qq.com/s/cANlqQAI-A2mC9vnd3imQA

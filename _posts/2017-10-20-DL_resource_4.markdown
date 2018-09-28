@@ -406,3 +406,7 @@ https://mp.weixin.qq.com/s/IheyYAC1yIigYOW-gtc5Eg
 
 Science重磅！用光速实现深度学习，跟GPU说再见
 
+https://mp.weixin.qq.com/s/ENYX87SMlgv30x08iYFQIw
+
+几乎零能耗零延迟！UCLA科学家发明光衍射神经网络，登上Science
+

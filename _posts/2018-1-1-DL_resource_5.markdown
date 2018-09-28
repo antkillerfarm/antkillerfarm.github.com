@@ -140,6 +140,10 @@ https://mp.weixin.qq.com/s/IsLlzDWnUXe8LVp4Y1Jb_A
 
 35亿张图像！Facebook基于弱监督学习刷新ImageNet基准测试记录
 
+https://mp.weixin.qq.com/s/TEk_i4kEjUqmAqF8LgTVjg
+
+FAIR提出用聚类方法结合卷积网络，实现无监督端到端图像分类
+
 ## 深度时间序列
 
 https://mp.weixin.qq.com/s/zv264-dqDQYRkYmjX_QZpQ

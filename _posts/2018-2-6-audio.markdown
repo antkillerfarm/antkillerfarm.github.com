@@ -260,9 +260,9 @@ https://mp.weixin.qq.com/s/yyoUoIUBUPV5zkeE88P7Iw
 
 # DL参考资源
 
-https://mp.weixin.qq.com/s/ENYX87SMlgv30x08iYFQIw
+https://mp.weixin.qq.com/s/TUhr31EleePcHHNNUAWQ4A
 
-几乎零能耗零延迟！UCLA科学家发明光衍射神经网络，登上Science
+Google Brain与牛津大学主持最新《计算机视觉前沿》报告
 
 https://mp.weixin.qq.com/s/DCoYcEpkH3t7WSpBBH_rLA
 
@@ -275,10 +275,6 @@ https://mp.weixin.qq.com/s/ZWUPaSeL4vGfoEOxI57umw
 https://mp.weixin.qq.com/s/DtxjX9RfRgehxLsJ7MFoNw
 
 谷歌大脑开源TensorFuzz，自动Debug神经网络！
-
-https://mp.weixin.qq.com/s/TEk_i4kEjUqmAqF8LgTVjg
-
-FAIR提出用聚类方法结合卷积网络，实现无监督端到端图像分类
 
 https://mp.weixin.qq.com/s/5vDSrWeUvlBuZgmX0R9pBQ
 
