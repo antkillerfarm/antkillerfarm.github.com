@@ -241,6 +241,18 @@ prints (a=1,b=2,c=3,d=4,e=5,f=6,g=7)
 #result: {‘a’: 1, ‘c’: 3, ‘b’: 2, ‘e’: 5, ‘d’: 4, ‘g’: 7, ‘f’: 6}
 {% endhighlight %}
 
+**分隔不同类型参数**：
+
+{% highlight python %}
+def mix(a,b,*,x,y):
+  """位置参数与关键字参数混合"""
+  return a,b,x,y
+
+print(mix(1,2,x=3,y=4))
+{% endhighlight %}
+
+星号前面的a和b是位置参数，星号后面的x和y是关键字参数，调用mix()函数并传入参数时，关键字参数一定要使用"变量名=值"的形式传入数据，如果同位置参数一样传入数据，就会引发一个TypeError异常
+
 ### 调用方法时
 
 {% highlight python %}
@@ -315,100 +327,114 @@ https://www.ibm.com/developerworks/cn/linux/l-cn-pythondebugger/index.html
 
 Python代码调试技巧
 
-## python调用GTK函数的一般规则
+## yield
 
-众所周知，GTK库是用C语言编写的，其相关的文档提供的也是C函数的接口，python接口的文档相对较少，获得也不太容易。因此有必要掌握一下这方面基本的命名规则。（这里只讲方法，对深层次的调用原理不做探究。）
+yield就是return返回一个值，并且记住这个返回的位置，下次迭代就从这个位置后(下一行)开始。
 
-1）类初始化函数
+参考：
 
-C:`GtkWidget * gtk_button_new (void);`
+https://www.jianshu.com/p/d09778f4e055
 
-python:`button = Gtk.Button()`
+彻底理解Python中的yield
 
-这里除了把C函数式的写法，替换成python的类的写法之外，并无其他差异。
+## with
 
-2）普通类成员函数
-
-C:`void gtk_container_add (GtkContainer *container, GtkWidget *widget);`
-
-python:`button.add(image)`
-
-可以看出，C函数的第一个表示self类指针的参数被省略掉了。
-
-3）回调函数
-
-这里以按钮的click事件回调为例：
-
-C:`void user_function (GtkButton *button, gpointer user_data)`
-
-python:
-
-`button.connect("clicked", self.playToggled)`
-
-`def playToggled(self, w):`
-
-这里的情况要复杂的多。首先在事件回调注册的时候，由于我们并没有给user_data赋值，因此照理说playToggled函数，只有button这一个参数。但实际传递给playToggled函数的有两个参数，self是一个用于占位的参数，w对应button，没有东西对应user_data。
-
-4）用于输出的参数
-
-C:`void gst_message_parse_error (GstMessage *message, GError **gerror, gchar **debug);`
-
-python:`err, debug = message.parse_error()`
-
-这个例子中的gerror和debug都是用于输出的参数。如果只想得到其一，还可用以下方法:
-
-`debug = message.parse_error()[2]`
-
-5）枚举类型
-
-C:
-
-{% highlight c %}
-enum GstSeekFlags
-{
-  GST_SEEK_FLAG_FLUSH,
-  ...
-}
-{% endhighlight %}
-
-python:`Gst.SeekFlags.FLUSH`
-
-6）宏常量
-
-C:`#define GST_CLOCK_TIME_NONE ((GstClockTime) -1)`
-
-python:`Gst.CLOCK_TIME_NONE`
-
-7）类型转换
-
-大多数情况下，类型转换自动完成，并无什么问题。这里只讨论特殊的情况。
-
-C:
-
-{% highlight c %}
-gst_element_seek (pipeline, 1.0, GST_FORMAT_TIME, GST_SEEK_FLAG_FLUSH,
-                         GST_SEEK_TYPE_SET, time_nanoseconds,
-                         GST_SEEK_TYPE_NONE, GST_CLOCK_TIME_NONE))
-{% endhighlight %}
-
-python:
+Python的with语句允许我们非常方便地使用资源，而不必担心资源没有关闭。例如：
 
 {% highlight python %}
-self.player.seek(1.0, Gst.Format.TIME, Gst.SeekFlags.FLUSH, Gst.SeekType.SET,\
-                 time_nanoseconds, Gst.SeekType.NONE, Gst.CLOCK_TIME_NONE)
+with open('/path/to/file', 'r') as f:
+    f.read()
 {% endhighlight %}
 
-这里首先按照一般的方法，将C代码转化成python代码。但是运行之后，产生如下错误：
+任何对象，只要正确实现了上下文管理，就可以用于with语句。
 
-`OverflowError: long too big to convert`
+实现上下文管理是通过__enter__和__exit__这两个方法实现的：
 
-究其原因，gst_element_seek的最后一个参数是uint64类型的。但python原生并不支持该类型，而是将之转换成int类型（实际上是int64类型），这样的话，GST_CLOCK_TIME_NONE的值显然超出了int64所能表示的范围。
+{% highlight python %}
+class Query(object):
 
-解决的办法是使用ctypes库，将
+    def __init__(self, name):
+        self.name = name
 
-`Gst.CLOCK_TIME_NONE`
+    def __enter__(self):
+        print('Begin')
+        return self
 
-改为
+    def __exit__(self, exc_type, exc_value, traceback):
+        if exc_type:
+            print('Error')
+        else:
+            print('End')
 
-`c_long(Gst.CLOCK_TIME_NONE).value`
+    def query(self):
+        print('Query info about %s...' % self.name)
+{% endhighlight %}
+
+编写__enter__和__exit__仍然很繁琐，因此Python的标准库contextlib提供了更简单的写法：
+
+{% highlight python %}
+from contextlib import contextmanager
+
+@contextmanager
+def tag(name):
+    print("<%s>" % name)
+    yield
+    print("</%s>" % name)
+
+with tag("h1"):
+    print("hello")
+    print("world")
+{% endhighlight %}
+
+上述代码执行结果为：
+
+{% highlight text %}
+<h1>
+hello
+world
+</h1>
+{% endhighlight %}
+
+with语句首先执行yield之前的语句，因此打印出<h1>；yield调用会执行with语句内部的所有语句，因此打印出hello和world；最后执行yield之后的语句，打印出</h1>。
+
+参考：
+
+https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001478651770626de401ff1c0d94f379774cabd842222ff000
+
+contextlib
+
+## `__init__.py`的作用
+
+`__init__.py`文件的作用是将文件夹变为一个Python模块,Python 中的每个模块的包中，都有`__init__.py`文件。
+
+示例：
+
+{% highlight python %}
+# package
+# __init__.py
+import re
+import urllib
+import sys
+import os
+
+# a.py
+import package 
+print(package.re, package.urllib, package.sys, package.os)
+{% endhighlight %}
+
+`__init__.py`中还有一个重要的变量，`__all__`,它用来将模块全部导入。
+
+{% highlight python %}
+# __init__.py
+__all__ = ['os', 'sys', 're', 'urllib']
+
+# a.py
+from package import *
+{% endhighlight %}
+
+参见：
+
+http://www.cnblogs.com/Lands-ljk/p/5880483.html
+
+Python `__init__.py`作用详解
 

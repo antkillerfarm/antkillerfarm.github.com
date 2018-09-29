@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Machine Learning之Java篇, Matlab, 数据描述语言, 数字成像
+title:  Machine Learning之Java篇, Matlab, 数据描述语言
 category: AI 
 ---
 
@@ -287,6 +287,26 @@ https://mp.weixin.qq.com/s/D1bjGRCFH6Ag9_xIfQ34SA
 
 Google Protocol Buffers浅析
 
+### proto3
+
+Protocol Buffers本身也有若干版本，且互不兼容。目前用的比较多的是proto2和proto3。
+
+值得注意的是，proto3生成的python文件，仍然叫xxxx_pb2.py。
+
+proto3最大的改进在于支持如下形式的proto文件的嵌套：
+
+`import "tensorflow/core/framework/node_def.proto";`
+
+参考：
+
+http://www.cnblogs.com/ghj1976/p/4565846.html
+
+proto3笔记
+
+https://blog.csdn.net/menghaocheng/article/details/80176763
+
+Python3-如何使用protobuf 3
+
 ## HDF5
 
 HDF是用于存储和分发科学数据的一种自我描述、多对象文件格式。HDF是由美国国家超级计算应用中心（NCSA）创建的，以满足不同群体的科学家在不同工程项目领域之需要。
@@ -335,125 +355,81 @@ http://www.cnblogs.com/wingyip/p/5185593.html
 
 FlatBuffers初探
 
-# 数字成像
+# NLP参考资源
 
-https://mp.weixin.qq.com/s/od9uDZdRU4QaBKPHb0tLag
+https://mp.weixin.qq.com/s/_SfY-JZsUEKReSoI6qHg9w
 
-cmos sensor基础
+TA-NMT：利用大语种语料，提升小语种神经机器翻译能力
 
-https://mp.weixin.qq.com/s/lVS3CgZGItUkWG-OtolbSA
+https://mp.weixin.qq.com/s/6_FHq8IrkAW_Y5FSYcJ0fw
 
-数字成像书籍推荐与资料分享
+CMU与谷歌大脑联合出品：62页PPT带你理解SQuAD大赛冠军--QANet
 
-https://mp.weixin.qq.com/s/1IHHo4sV79sXdtXNzKNhMA
+https://mp.weixin.qq.com/s/uL7J5cSU3P7QsFczvT1fTA
 
-计算摄影--google相机的王者之道
+基于深度学习的文本分类6大算法-原理、结构、论文、源码打包分享
 
-https://mp.weixin.qq.com/s/T4XULnykHANEetmDIhZdaw
+https://mp.weixin.qq.com/s/uWMGJmiEfahRql1sn1B0hA
 
-mobile camera sensor技术方向选择的经验与教训
+通过全新学习和推断机制提升seq2seq模型的语法改错性能
 
-https://mp.weixin.qq.com/s/EcAAc_ypajEKXUQbOoYAMA
+https://mp.weixin.qq.com/s/_O4YqFK2xkFuB4nTbcu1cw
 
-如何选择IR filter
+哈佛NLP组论文解读：基于隐变量的注意力模型
 
-https://mp.weixin.qq.com/s/5rNpp2cYZhcOKZCiy4LkMQ
+https://mp.weixin.qq.com/s/6BIspcIQrn7k3VQ9NP63Ng
 
-SAR成像原理及图像鉴赏
+DeepMind提出空间语言集成模型SLIM，有效编码自然语言的空间关系
 
-https://mp.weixin.qq.com/s/typXBdisUI-d_viVInx9XQ
+https://mp.weixin.qq.com/s/eehpqW2H3wWCOa6r8jbEvQ
 
-解析DXO图像质量评价体系
+ACL 2018 鲁棒、无偏的NLP训练方法
 
-https://mp.weixin.qq.com/s/t-Mzx0IEdZG7_TmMpT_cBA
+https://mp.weixin.qq.com/s/ffuiRE0qbglhVz__Z6FD7A
 
-小谈CMOS Sensor设计之FSI和BSI
+这里可能是对机器智能中的文本情感计算最全面的概括了
 
-https://mp.weixin.qq.com/s/gyuKlDwlIqaZmC3w-r8oqg
+https://mp.weixin.qq.com/s/S6qSU6CGUMsqYaIPCEVhxA
 
-手机相机如何排名
+剖析CNN句子分类任务
 
-https://mp.weixin.qq.com/s/o_XsmqLSPhvuC0iiK7xHag
+https://mp.weixin.qq.com/s/e6YXItElVa5iaY8Txi8wzA
 
-结构光（1）基本介绍
+NAACL2018tutorial深度学习在智能对话系统中应用
 
-https://mp.weixin.qq.com/s/cDrVpqsY7f2HZCJa4X8Iww
+https://mp.weixin.qq.com/s/29vqbjnTkHsq2Fv9ZyMOVQ
 
-Google Pixel 2/2XL视频稳定技术探究
+COLING 2018 基于目标依赖财经文档表示学习的累积超额收益预测
 
-https://mp.weixin.qq.com/s/7E9QDSM095KyYwPs-wDznA
+https://mp.weixin.qq.com/s/nTLxvrxnKRmHl8ZDWxI42Q
 
-成像相关颜色测量仪器简介
+结合通用和专用NMT的优势，CMU为NMT引入“语境参数生成器”
 
-https://mp.weixin.qq.com/s/DH3mZgh4YbnceaFGs03kOQ
+https://mp.weixin.qq.com/s/emuKFxxHoRl3M8Lg3oA9Jw
 
-曹汛：计算摄像学研究
+2018 NLPCC Chinese Grammatical Error Correction论文小结
 
-https://mp.weixin.qq.com/s/f2BIrZ8if7_rX__J9hMHog
+https://mp.weixin.qq.com/s/2-Uzlp4PBcDC6V0jW35KaQ
 
-广色域----iphone X/8 camera的色彩进化
+NLG ≠ 机器写作
 
-http://mp.weixin.qq.com/s/MWQDwMoRc0c1ofkENzn3Ew
+https://mp.weixin.qq.com/s/rn-yv510ff5IKq0cL5bypQ
 
-结构光，TOF，双目视觉的异同
+新加坡科技设计大学杨杰：Recent Advances in Sequence Labeling
 
-https://mp.weixin.qq.com/s/VjzXYgkzAGloczaaPXni2A
+https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651009365&idx=4&sn=b8a0bcf9c17bee15a23a4585291788d3
 
-PDAF进化史
+百度UNIT对话系统核心技术解析
 
-https://mp.weixin.qq.com/s/7es1wtJXatJR2eHScrk2_w
+https://mp.weixin.qq.com/s/yC8uYwti9Meyt83xkmbmcg
 
-深度相机大盘点（1）
+小哥哥，检索式chatbot了解一下？
 
-https://mp.weixin.qq.com/s/m7q6jHbdnb7fw4lKIDfVWw
+https://mp.weixin.qq.com/s/9JOH6iLd9MQOvzJjnr8P0g
 
-camera接口之MIPI联盟浅谈
+EMNLP 2018 基于自适应的多轮解码机制的神经机器翻译模型
 
-https://mp.weixin.qq.com/s/DbDrDhbQAhXOsfxQ8UJVZg
+https://mp.weixin.qq.com/s/hbanc8seKkbqv-WfJRFw7Q
 
-三星S9凝时摄影背后的sensor技术
-
-https://mp.weixin.qq.com/s/gOikxUxWpqdDRr6_KT2jxQ
-
-图像处理，计算机视觉与machine learning的区别与联系
-
-https://mp.weixin.qq.com/s/7fvVmmpPSldwa3TZ3dVb2g
-
-3D LUT--色彩校正的利器
-
-https://mp.weixin.qq.com/s/sXC263Lq25tKp2AK2Tsb-A
-
-Omnivision HDR sensor简介
-
-https://mp.weixin.qq.com/s/oeMqE0MzXyGeABGekY9eiQ
-
-眼擎科技CEO朱继志：如何设计自动驾驶的视觉成像系统
-
-https://blog.csdn.net/weixin_38285131/article/details/80457068
-
-光场相机重聚焦原理介绍及代码解析
-
-https://mp.weixin.qq.com/s/eyIeLaBZ0f_EsxglsUuH8A
-
-深度学习自动构图研究报告
-
-https://mp.weixin.qq.com/s/k2JLF_aM3j68GjEByCZF-g
-
-模拟/数字增益对图像噪声的影响
-
-https://mp.weixin.qq.com/s/QmEQuEk2B_fAleewTuNClg
-
-3D成像技术和CMOS传感器的发展方向简析
-
-https://mp.weixin.qq.com/s/R7wnyHT6M-KF3ZMz0bPrVg
-
-这台相机没镜头！美国教授新发明，一块玻璃可成像，拍照给计算机看
-
-https://mp.weixin.qq.com/s/j970Qp8Cz2fpbImujkS2Xg
-
-自动驾驶应用中的LED flicker问题
-
-https://mp.weixin.qq.com/s/ofoh7xH9MB0ifORi-ZQbcA
-
-苹果iphone Xs/Xr camera有哪些改进
+自然语言处理(NLP)前沿进展报告
 

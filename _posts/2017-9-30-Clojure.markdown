@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Clojure, Groovy, Lisp, Javascript在客户端的使用
+title:  Clojure, Groovy, Lisp, Javascript在客户端的使用, 数字成像
 category: language 
 ---
 
@@ -139,161 +139,127 @@ https://www.douban.com/group/topic/27583755/
 
 2012年以后，以CEF（Chromium Embedded Framework）和XULRunner为代表的浏览器派，开始逐渐崭露头角。从此，开发桌面应用程序，不再是Javascript的禁区。桌面应用UI和网页前端开始呈现融合的局面。
 
-# Python
+# 数字成像
 
-## 参考
+https://mp.weixin.qq.com/s/od9uDZdRU4QaBKPHb0tLag
 
-https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA
+cmos sensor基础
 
-Python学习思维导图
+https://mp.weixin.qq.com/s/lVS3CgZGItUkWG-OtolbSA
 
-https://mp.weixin.qq.com/s/_OmRvwFmvuuOpBf7DQG8IA
+数字成像书籍推荐与资料分享
 
-Python30个编程技巧
+https://mp.weixin.qq.com/s/1IHHo4sV79sXdtXNzKNhMA
 
-https://mp.weixin.qq.com/s/-CaMHjsY580et8Hh_D2FSg
+计算摄影--google相机的王者之道
 
-简约而不简单的Django新手图文教程
+https://mp.weixin.qq.com/s/T4XULnykHANEetmDIhZdaw
 
-https://mp.weixin.qq.com/s/O5okcuVKuf339BZzhmxiew
+mobile camera sensor技术方向选择的经验与教训
 
-13个Python GUI库
+https://mp.weixin.qq.com/s/EcAAc_ypajEKXUQbOoYAMA
 
-https://mp.weixin.qq.com/s/jHnkmpnOz1LApVCLJL-8Tw
+如何选择IR filter
 
-如何写出优雅又地道的Python代码？
+https://mp.weixin.qq.com/s/5rNpp2cYZhcOKZCiy4LkMQ
 
-https://mp.weixin.qq.com/s/5xs1ivkrUAP_Rr9P-EMc5g
+SAR成像原理及图像鉴赏
 
-代码优化指南：人生苦短，我用Python。这篇blog主要介绍了如何追踪Python脚本的CPU使用情况。
+https://mp.weixin.qq.com/s/typXBdisUI-d_viVInx9XQ
 
-https://mp.weixin.qq.com/s/xCKC3cz7jUvrwl4uvMNKTA
+解析DXO图像质量评价体系
 
-20行Python代码教你批量将PDF转为Word
+https://mp.weixin.qq.com/s/t-Mzx0IEdZG7_TmMpT_cBA
 
-https://mp.weixin.qq.com/s/HGH2e_0ocHv2VWsjOje9BQ
+小谈CMOS Sensor设计之FSI和BSI
 
-程序员必知的Python陷阱与缺陷列表
+https://mp.weixin.qq.com/s/gyuKlDwlIqaZmC3w-r8oqg
 
-http://blog.csdn.net/linda1000/article/details/8315892
+手机相机如何排名
 
-单引号、双引号和三双引号的区别
+https://mp.weixin.qq.com/s/o_XsmqLSPhvuC0iiK7xHag
 
-https://mp.weixin.qq.com/s/czqO4Lo1Jt9zqg2UKNlLYg
+结构光（1）基本介绍
 
-手把手教你用Python创建微信聊天机器人
+https://mp.weixin.qq.com/s/cDrVpqsY7f2HZCJa4X8Iww
 
-https://mp.weixin.qq.com/s/wIXCIMzZmh75SV-qJIKbCw
+Google Pixel 2/2XL视频稳定技术探究
 
-Python程序员最常犯的10个错误，你中招了吗？
+https://mp.weixin.qq.com/s/7E9QDSM095KyYwPs-wDznA
 
-https://mp.weixin.qq.com/s/W1j4G_QQqlzDYru231dZFA
+成像相关颜色测量仪器简介
 
-Python：编写条件分支代码的技巧
+https://mp.weixin.qq.com/s/DH3mZgh4YbnceaFGs03kOQ
 
-http://www.cnblogs.com/Python666/p/7506546.html
+曹汛：计算摄像学研究
 
-Python单例模式
+https://mp.weixin.qq.com/s/f2BIrZ8if7_rX__J9hMHog
 
-https://mp.weixin.qq.com/s/ST7TQ5Wkn_owv5bpTiTKVA
+广色域----iphone X/8 camera的色彩进化
 
-2018年最好用的5个python网站开发框架
+http://mp.weixin.qq.com/s/MWQDwMoRc0c1ofkENzn3Ew
 
-https://mp.weixin.qq.com/s/3nr8uHnRoSgs-Zu6QxGiqw
+结构光，TOF，双目视觉的异同
 
-Python实现数据库一键导出为Excel表格！大大的增加了工作效率！
+https://mp.weixin.qq.com/s/VjzXYgkzAGloczaaPXni2A
 
-https://mp.weixin.qq.com/s/dmJI2GlzgUJgYllfVOPt4g
+PDAF进化史
 
-两句话轻松掌握Python最难知识点
+https://mp.weixin.qq.com/s/7es1wtJXatJR2eHScrk2_w
 
-https://mp.weixin.qq.com/s/PkzD1ig_D5AIUTkO5zH8pQ
+深度相机大盘点（1）
 
-Python字节码介绍
+https://mp.weixin.qq.com/s/m7q6jHbdnb7fw4lKIDfVWw
 
-https://mp.weixin.qq.com/s/_ZvF6jK5Jo4rFGwHvEoAig
+camera接口之MIPI联盟浅谈
 
-一文读懂Python装饰器由来
+https://mp.weixin.qq.com/s/DbDrDhbQAhXOsfxQ8UJVZg
 
-https://mp.weixin.qq.com/s/RdnAQPAn9E8qDvtnCEgcKw
+三星S9凝时摄影背后的sensor技术
 
-Tkinter可视化窗口
+https://mp.weixin.qq.com/s/gOikxUxWpqdDRr6_KT2jxQ
 
-https://mp.weixin.qq.com/s/_fi4fpfN8Whe7_ZpkPL0tA
+图像处理，计算机视觉与machine learning的区别与联系
 
-怎么给Python写C扩展？
+https://mp.weixin.qq.com/s/7fvVmmpPSldwa3TZ3dVb2g
 
-https://mp.weixin.qq.com/s/-erFsz8NvLZ5mOIXyDosFg
+3D LUT--色彩校正的利器
 
-使用PyInstaller将python转成可执行文件exe笔记
+https://mp.weixin.qq.com/s/sXC263Lq25tKp2AK2Tsb-A
 
-https://mp.weixin.qq.com/s/b19SLduKoiOIeE5CA3ZOjg
+Omnivision HDR sensor简介
 
-Python标准库之LRU缓存实现学习
+https://mp.weixin.qq.com/s/oeMqE0MzXyGeABGekY9eiQ
 
-https://mp.weixin.qq.com/s/0jjJrclscaA5LkdhHUNkUg
+眼擎科技CEO朱继志：如何设计自动驾驶的视觉成像系统
 
-Python的进阶：copy()与deepcopy()区别
+https://blog.csdn.net/weixin_38285131/article/details/80457068
 
-https://mp.weixin.qq.com/s/VPCUd5op6Vd-b0LbFEMSYQ
+光场相机重聚焦原理介绍及代码解析
 
-秒懂Python编程中的if __name__ == 'main' 的作用和原理
+https://mp.weixin.qq.com/s/eyIeLaBZ0f_EsxglsUuH8A
 
-https://mp.weixin.qq.com/s/FtlAkInyXgvUxDnSCikTIw
+深度学习自动构图研究报告
 
-全面深入理解Python面向对象编程
+https://mp.weixin.qq.com/s/k2JLF_aM3j68GjEByCZF-g
 
-https://mp.weixin.qq.com/s/_PtdgGElw0mvr_rRm5xrCg
+模拟/数字增益对图像噪声的影响
 
-Python性能优化的20条招数
+https://mp.weixin.qq.com/s/QmEQuEk2B_fAleewTuNClg
 
-https://mp.weixin.qq.com/s/0Rpbuo7LCRo1SnbE8NcH4Q
+3D成像技术和CMOS传感器的发展方向简析
 
-快速学习Python的全套14张思维导图
+https://mp.weixin.qq.com/s/R7wnyHT6M-KF3ZMz0bPrVg
 
-https://mp.weixin.qq.com/s/ODA74xgoS8X1HFxp4BfshQ
+这台相机没镜头！美国教授新发明，一块玻璃可成像，拍照给计算机看
 
-如何将Python自然语言处理速度提升100倍：用spaCy/Cython加速NLP
+https://mp.weixin.qq.com/s/j970Qp8Cz2fpbImujkS2Xg
 
-https://mp.weixin.qq.com/s/Cujl2nxITCuZL7B72uKVrQ
+自动驾驶应用中的LED flicker问题
 
-为什么Python这么慢？
+https://mp.weixin.qq.com/s/ofoh7xH9MB0ifORi-ZQbcA
 
-https://mp.weixin.qq.com/s/a3YTmQMfpnviHnidXrhYtg
-
-这17个骚操作你都Ok吗
-
-https://zhuanlan.zhihu.com/p/41293278
-
-把python翻译成C++
-
-https://mp.weixin.qq.com/s/KCiR6ZE1EpYVfySaCG097A
-
-上半年最常见的Python面试题
-
-https://mp.weixin.qq.com/s/0dw2LHsIKFv8B_JaIMoekg
-
-python 字符编码处理总结
-
-https://mp.weixin.qq.com/s/fTs_r7DLbLWoos4uRM3KYA
-
-10个Python常见面试题，这些弄不明白不要说学过Python！
-
-https://mp.weixin.qq.com/s/zIHJsyankFEf_ig4Xnb0Uw
-
-工具推荐！我是如何使用Python脚本分析CPU使用情况的？
-
-https://mp.weixin.qq.com/s/v-N5jUTVFBb-wV0a_RAg5A
-
-Python实现代码雨效果
-
-https://mp.weixin.qq.com/s/0wJRlGS2QXpEL2XaU_Ke-g
-
-Python实现烟花特效
-
-https://mp.weixin.qq.com/s/5YWAgp8LKi5q_NDrNUtyGQ
-
-在GitHub上收获6519颗Star的Python面试题资料
+苹果iphone Xs/Xr camera有哪些改进
 
 # 大数据平台参考资源
 
@@ -324,3 +290,37 @@ https://mp.weixin.qq.com/s/NV5sYF15Q-016sfxRMEVmg
 https://mp.weixin.qq.com/s/nqOvcKtxpqehWFO4XkXr5g
 
 为减少用户电话排队，阿里研发了智能客服调度系统
+
+# NLP参考资源
+
+https://mp.weixin.qq.com/s/Boake8McJdWfoTRLFwxQRA
+
+国防科大登顶SQuAD 2.0排行榜，机器阅读也要“不知为不知”
+
+https://mp.weixin.qq.com/s/9hEEh4HpVHk-GD5gi9MZSw
+
+“天猫精灵”如何为你写诗？人机共创的秘密在这儿
+
+https://mp.weixin.qq.com/s/pq2m4A31c9QQwka1j7XJDQ
+
+116页PPT了解FrameNet最新进展
+
+https://mp.weixin.qq.com/s/Vy7OxAojvgndgGkvmFrBKw
+
+61页slides理解句法分析过程
+
+https://mp.weixin.qq.com/s/icGEBkHP_xeOIdL8vM0K2A
+
+面向任务型对话中基于对话状态表示的序列到序列学习
+
+https://mp.weixin.qq.com/s/ejq-XHS_g_P6mVDv5jMqEA
+
+Facebook全新无监督机器翻译法，BLUE测试提升超过10分
+
+https://mp.weixin.qq.com/s/EdrK-IT3rlVaw8wCcBLSOw
+
+如何玩转自然语言理解和深度学习实践？
+
+https://mp.weixin.qq.com/s/pXmYJA6-1vtHTwTNanLovQ
+
+Encoder-Decoder自动生成对联，要试试么？

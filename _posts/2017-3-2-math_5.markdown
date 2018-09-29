@@ -182,6 +182,10 @@ https://mp.weixin.qq.com/s/7NrB0UtmELXD3UNO3C6jGA
 
 我就不信看完这篇你还搞不懂信息熵
 
+https://mp.weixin.qq.com/s/_s8kxlzcL5Nt2ILUIfAuNQ
+
+不要把所有的鸡蛋放在一个篮子里 -- 谈谈最大熵模型
+
 # 概率分布（2）
 
 上一篇《概率分布（1）》写的意犹未尽，这里继续写。本篇主要关注$$\chi^2$$分布、t分布和F分布，也就是统计学的三大祖师爷各自的看家本领。

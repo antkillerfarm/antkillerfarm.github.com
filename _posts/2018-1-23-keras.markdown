@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Keras, OpenAI Gym, 推荐系统的工程细节
+title:  Keras, 推荐系统的工程细节
 category: AI 
 ---
 
@@ -39,6 +39,28 @@ https://mp.weixin.qq.com/s/2VoTmFJshvIq2Wc0Ko0iaA
 https://github.com/Ahmkel/Keras-Project-Template
 
 本项目是一个基于Keras库的项目模板，模板能让你更容易地构建和训练深度学习模型，并支持Checkpoints和TensorBoard。
+
+## 模型文件处理
+
+Keras的模型文件以HDF5的格式保存：
+
+`model.save('my_model.h5')`
+
+参考：
+
+https://morvanzhou.github.io/tutorials/machine-learning/keras/3-1-save/
+
+Keras：Save & reload 保存提取
+
+## h5 -> pb
+
+可以使用如下工具：
+
+https://github.com/amir-abdi/keras_to_tensorflow
+
+方法：
+
+`python3 keras_to_tensorflow.py -input_model_file model.h5`
 
 ## 实战GAN
 
@@ -99,10 +121,6 @@ Keras+OpenAI强化学习实践：深度Q网络
 http://mp.weixin.qq.com/s/kvQlzafLAn_8YgBmib3P0g
 
 手把手教你在Amazon EC2上安装Keras
-
-http://www.jianshu.com/p/20585e3b6d02
-
-Keras TensorFlow教程：如何从零开发一个复杂深度学习模型
 
 http://mp.weixin.qq.com/s/sQKhopzS4EOcYwjrM8E7xQ
 
@@ -283,46 +301,6 @@ DeepMind重磅：神经算术逻辑单元，Keras实现
 https://mp.weixin.qq.com/s/VmHckiVzz6oAvuHgyWkeUg
 
 使用Keras实现多输出分类：用单个模型同时执行两个独立分类任务
-
-# OpenAI Gym
-
-Openai gym是一个用于开发和比较强化学习（reinforcement learning，RL）算法的工具包，与其他的数值计算库兼容，如tensorflow或者theano库。现在主要支持的是python语言，以后将支持其他语言。
-
-官网：
-
-https://gym.openai.com/
-
-{% highlight bash %}
-sudo apt install libffi-dev swig
-git clone https://github.com/openai/gym 
-cd gym
-pip install -e . # minimal install
-pip install -e .[all] # all install
-{% endhighlight %}
-
-这里选择minimal install就可以了，all install需要安装MuJoCo，而后者是收费软件。
-
-参考：
-
-http://tech.163.com/16/0510/09/BMMOPSCR00094OE0.html
-
-马斯克的AI野心——OpenAI Gym系统深度解析
-
-https://mp.weixin.qq.com/s/KK1gwDW2EyptZOiuFjyAlw
-
-OpenAI发布强化学习环境Gym Retro：支持千种游戏
-
-https://blog.csdn.net/jinzhuojun/article/details/77144590
-
-常用增强学习实验环境 I (MuJoCo, OpenAI Gym, rllab, DeepMind Lab, TORCS, PySC2)
-
-https://blog.csdn.net/jinzhuojun/article/details/78508203
-
-常用增强学习实验环境 II (ViZDoom, Roboschool, TensorFlow Agents, ELF, Coach等)
-
-https://mp.weixin.qq.com/s/0oVG7zMi08dzMQrk43T3mw
-
-像训练Dota2一样训练真实机器人？Gibson Environment环境了解一下
 
 # 推荐系统的工程细节
 

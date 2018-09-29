@@ -100,6 +100,10 @@ http://blog.csdn.net/mao_xiao_feng/article/details/78002811
 
 tf.nn.separable_conv2d如何实现深度可分卷积?
 
+https://blog.csdn.net/tintinetmilou/article/details/81607721
+
+Depthwise卷积与Pointwise卷积
+
 ## 感受野
 
 Receptive Field本来是神经科学领域的概念，后来才被推广到DL（尤其是CNN）领域。

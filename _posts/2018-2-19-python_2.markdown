@@ -6,141 +6,17 @@ category: language
 
 # Python
 
-## Python 2 to Python 3
+## 字符串格式化
 
-https://www.linuxzen.com/qian-yi-dao-python-3.html
+目前python的字符串格式化，有两种style：Old Style和New Style。两者的区别详见：
 
-迁移到Python 3
+https://pyformat.info/
 
-https://www.zhihu.com/question/19698598
+这里仅给出几个简单示例：
 
-Python 2和Python 3有哪些主要区别？
+Old Style：`'%s %s' % ('one', 'two')`
 
-https://mp.weixin.qq.com/s/Q3cqLuOZDSMOdAjVrCDrtQ
-
-在Python 2.7即将停止支持时，我们为你准备了一份3.x迁移指南
-
-## six
-
-six是一个专门用来兼容 Python 2 和 Python 3 的库。它解决了诸如 urllib 的部分方法不兼容， str 和 bytes 类型不兼容等“知名”问题。
-
-代码：
-
-https://bitbucket.org/gutworth/six
-
-文档：
-
-https://bitbucket.org/gutworth/six
-
-## yield
-
-yield就是return返回一个值，并且记住这个返回的位置，下次迭代就从这个位置后(下一行)开始。
-
-参考：
-
-https://www.jianshu.com/p/d09778f4e055
-
-彻底理解Python中的yield
-
-## with
-
-Python的with语句允许我们非常方便地使用资源，而不必担心资源没有关闭。例如：
-
-{% highlight python %}
-with open('/path/to/file', 'r') as f:
-    f.read()
-{% endhighlight %}
-
-任何对象，只要正确实现了上下文管理，就可以用于with语句。
-
-实现上下文管理是通过__enter__和__exit__这两个方法实现的：
-
-{% highlight python %}
-class Query(object):
-
-    def __init__(self, name):
-        self.name = name
-
-    def __enter__(self):
-        print('Begin')
-        return self
-
-    def __exit__(self, exc_type, exc_value, traceback):
-        if exc_type:
-            print('Error')
-        else:
-            print('End')
-
-    def query(self):
-        print('Query info about %s...' % self.name)
-{% endhighlight %}
-
-编写__enter__和__exit__仍然很繁琐，因此Python的标准库contextlib提供了更简单的写法：
-
-{% highlight python %}
-from contextlib import contextmanager
-
-@contextmanager
-def tag(name):
-    print("<%s>" % name)
-    yield
-    print("</%s>" % name)
-
-with tag("h1"):
-    print("hello")
-    print("world")
-{% endhighlight %}
-
-上述代码执行结果为：
-
-{% highlight text %}
-<h1>
-hello
-world
-</h1>
-{% endhighlight %}
-
-with语句首先执行yield之前的语句，因此打印出<h1>；yield调用会执行with语句内部的所有语句，因此打印出hello和world；最后执行yield之后的语句，打印出</h1>。
-
-参考：
-
-https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001478651770626de401ff1c0d94f379774cabd842222ff000
-
-contextlib
-
-## tqdm
-
-tqdm是一个快速，可扩展的进度条。
-
-代码：
-
-https://github.com/tqdm/tqdm
-
-示例：
-
-{% highlight python %}
-from tqdm import tqdm
-for i in tqdm(range(9)):
-    ...
-{% endhighlight %}
-
-效果：
-
-`76%|████████████████████            | 7641/10000 [00:34<00:10, 222.22 it/s]`
-
-其实还有一个更简单的办法：
-
-`print("\r" + "xxx", end="")`：这样的话会先把console里面当前的行清除掉、再输出xxx。
-
-## Captcha
-
-Captcha是一个Python验证码库，能够生成音频和图片验证码。
-
-代码：
-
-https://github.com/lepture/captcha
-
-这个库可用于生成大量有标签的验证码，是DL入门的必备工具。
+New Style：`'{} {}'.format('one', 'two')`
 
 ## 特殊语法：filter、map、reduce、lambda
 
@@ -183,53 +59,6 @@ https://github.com/lepture/captcha
 http://www.cnblogs.com/longdouhzt/archive/2012/05/19/2508844.html
 
 Python特殊语法：filter、map、reduce、lambda
-
-## 字符串格式化
-
-目前python的字符串格式化，有两种style：Old Style和New Style。两者的区别详见：
-
-https://pyformat.info/
-
-这里仅给出几个简单示例：
-
-Old Style：`'%s %s' % ('one', 'two')`
-
-New Style：`'{} {}'.format('one', 'two')`
-
-## `__init__.py`的作用
-
-`__init__.py`文件的作用是将文件夹变为一个Python模块,Python 中的每个模块的包中，都有`__init__.py`文件。
-
-示例：
-
-{% highlight python %}
-# package
-# __init__.py
-import re
-import urllib
-import sys
-import os
-
-# a.py
-import package 
-print(package.re, package.urllib, package.sys, package.os)
-{% endhighlight %}
-
-`__init__.py`中还有一个重要的变量，`__all__`,它用来将模块全部导入。
-
-{% highlight python %}
-# __init__.py
-__all__ = ['os', 'sys', 're', 'urllib']
-
-# a.py
-from package import *
-{% endhighlight %}
-
-参见：
-
-http://www.cnblogs.com/Lands-ljk/p/5880483.html
-
-Python `__init__.py`作用详解
 
 ## defaultdict()和namedtuple()
 
@@ -284,6 +113,56 @@ https://mp.weixin.qq.com/s/1QjJqFfJNNych9b6ae5VUg
 https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/00143186781871161bc8d6497004764b398401a401d4cce000
 
 使用@property
+
+## @classmethod和@staticmethod
+
+{% highlight python %}
+class A(object):
+    def foo(self, x):
+        print("executing foo(%s,%s)" % (self, x))
+        print('self:', self)
+    @classmethod
+    def class_foo(cls, x):
+        print("executing class_foo(%s,%s)" % (cls, x))
+        print('cls:', cls)
+    @staticmethod
+    def static_foo(x):
+        print("executing static_foo(%s)" % x)
+{% endhighlight %}
+
+@classmethod类似于C++中的static，无须实例化就可以调用。@staticmethod则是普通成员函数的简写。python一般用cls表示类，而用self表示类的实例。当然，这只是编程规范的约束，而非编译器约束，使用其他名字也是可以的。
+
+参考：
+
+https://www.cnblogs.com/elie/p/5876210.html
+
+python中@classmethod @staticmethod区别
+
+## Python 2 to Python 3
+
+https://www.linuxzen.com/qian-yi-dao-python-3.html
+
+迁移到Python 3
+
+https://www.zhihu.com/question/19698598
+
+Python 2和Python 3有哪些主要区别？
+
+https://mp.weixin.qq.com/s/Q3cqLuOZDSMOdAjVrCDrtQ
+
+在Python 2.7即将停止支持时，我们为你准备了一份3.x迁移指南
+
+## six
+
+six是一个专门用来兼容 Python 2 和 Python 3 的库。它解决了诸如 urllib 的部分方法不兼容， str 和 bytes 类型不兼容等“知名”问题。
+
+代码：
+
+https://bitbucket.org/gutworth/six
+
+文档：
+
+https://bitbucket.org/gutworth/six
 
 ## range & xrange
 
@@ -344,6 +223,16 @@ https://mp.weixin.qq.com/s/3o_T7Tyrstur6jkj0gexMA
 
 BeautifulSoup的使用
 
+## pickle
+
+pickle提供了一个简单的持久化功能。可以将对象以文件（后缀名一般为*.pkl）的形式存放在磁盘上。
+
+参考：
+
+https://blog.csdn.net/sinat_29552923/article/details/70833455
+
+Python pickle模块学习
+
 ## Sqlite
 
 Ubuntu下的安装方法是：
@@ -388,52 +277,110 @@ urllib2.install_opener(l_opener)
 usock = urllib2.urlopen('http://www.sohu.com')
 {% endhighlight %}
 
-## JPype
+## python调用GTK函数的一般规则
 
-JPype是一个能够让python代码方便地调用Java代码的工具。官网：
+众所周知，GTK库是用C语言编写的，其相关的文档提供的也是C函数的接口，python接口的文档相对较少，获得也不太容易。因此有必要掌握一下这方面基本的命名规则。（这里只讲方法，对深层次的调用原理不做探究。）
 
-https://sourceforge.net/projects/jpype/
+1）类初始化函数
 
-参考：
+C:`GtkWidget * gtk_button_new (void);`
 
-http://blog.csdn.net/niuyisheng/article/details/9002926
+python:`button = Gtk.Button()`
 
-JPype：实现在python中调用JAVA
+这里除了把C函数式的写法，替换成python的类的写法之外，并无其他差异。
 
-http://www.cnblogs.com/yu-zhang/p/3817024.html
+2）普通类成员函数
 
-python调用java程序--jpype
+C:`void gtk_container_add (GtkContainer *container, GtkWidget *widget);`
 
-## Celery
+python:`button.add(image)`
 
-Celery是一个专注于实时处理和任务调度的分布式任务队列，可用于执行定时任务。
+可以看出，C函数的第一个表示self类指针的参数被省略掉了。
 
-参考：
+3）回调函数
 
-https://zhuanlan.zhihu.com/p/22304455
+这里以按钮的click事件回调为例：
 
-使用Celery
+C:`void user_function (GtkButton *button, gpointer user_data)`
 
-## Gunicorn
+python:
 
-Gunicorn是一个高效的Python WSGI Server，地位相当于Java中的Tomcat。
+`button.connect("clicked", self.playToggled)`
 
-官网：
+`def playToggled(self, w):`
 
-http://gunicorn.org/
+这里的情况要复杂的多。首先在事件回调注册的时候，由于我们并没有给user_data赋值，因此照理说playToggled函数，只有button这一个参数。但实际传递给playToggled函数的有两个参数，self是一个用于占位的参数，w对应button，没有东西对应user_data。
 
-参考：
+4）用于输出的参数
 
-http://www.cnblogs.com/ArtsCrafts/p/gunicorn.html
+C:`void gst_message_parse_error (GstMessage *message, GError **gerror, gchar **debug);`
 
-Gunicorn快速入门
+python:`err, debug = message.parse_error()`
 
-## pickle
+这个例子中的gerror和debug都是用于输出的参数。如果只想得到其一，还可用以下方法:
 
-pickle提供了一个简单的持久化功能。可以将对象以文件（后缀名一般为*.pkl）的形式存放在磁盘上。
+`debug = message.parse_error()[2]`
 
-参考：
+5）枚举类型
 
-https://blog.csdn.net/sinat_29552923/article/details/70833455
+C:
 
-Python pickle模块学习
+{% highlight c %}
+enum GstSeekFlags
+{
+  GST_SEEK_FLAG_FLUSH,
+  ...
+}
+{% endhighlight %}
+
+python:`Gst.SeekFlags.FLUSH`
+
+6）宏常量
+
+C:`#define GST_CLOCK_TIME_NONE ((GstClockTime) -1)`
+
+python:`Gst.CLOCK_TIME_NONE`
+
+7）类型转换
+
+大多数情况下，类型转换自动完成，并无什么问题。这里只讨论特殊的情况。
+
+C:
+
+{% highlight c %}
+gst_element_seek (pipeline, 1.0, GST_FORMAT_TIME, GST_SEEK_FLAG_FLUSH,
+                         GST_SEEK_TYPE_SET, time_nanoseconds,
+                         GST_SEEK_TYPE_NONE, GST_CLOCK_TIME_NONE))
+{% endhighlight %}
+
+python:
+
+{% highlight python %}
+self.player.seek(1.0, Gst.Format.TIME, Gst.SeekFlags.FLUSH, Gst.SeekType.SET,\
+                 time_nanoseconds, Gst.SeekType.NONE, Gst.CLOCK_TIME_NONE)
+{% endhighlight %}
+
+这里首先按照一般的方法，将C代码转化成python代码。但是运行之后，产生如下错误：
+
+`OverflowError: long too big to convert`
+
+究其原因，gst_element_seek的最后一个参数是uint64类型的。但python原生并不支持该类型，而是将之转换成int类型（实际上是int64类型），这样的话，GST_CLOCK_TIME_NONE的值显然超出了int64所能表示的范围。
+
+解决的办法是使用ctypes库，将
+
+`Gst.CLOCK_TIME_NONE`
+
+改为
+
+`c_long(Gst.CLOCK_TIME_NONE).value`
+
+## Captcha
+
+Captcha是一个Python验证码库，能够生成音频和图片验证码。
+
+代码：
+
+https://github.com/lepture/captcha
+
+这个库可用于生成大量有标签的验证码，是DL入门的必备工具。
+

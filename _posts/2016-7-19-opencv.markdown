@@ -62,6 +62,82 @@ https://github.com/antkillerfarm/antkillerfarm_rubbish/tree/master/opencv/1
 
 这里有个简单示例，可用于验证安装的正确性。支持CMake和makefile两种方式。
 
+## 论文
+
+《Moving Gradients: A Path-Based Method for Plausible Image Interpolation》：视频帧插值算法
+
+## 使用细节
+
+### saturate_cast
+
+saturate_cast宏会对结果进行转换，以确保它在有效范围之内。
+
+### 硬件加速
+
+OpenCV中的运算，除了软件实现之外，还有若干种硬件加速，包括OpenCL、CUDA和IPPICV。
+
+Intel针对自身的硬件加速，推出了IPP（Integrated Performance Primitives）软件包，但这个包是收费的。从OpenCV 3.0开始，Intel将IPP的一个子集提取出来，免费供OpenCV项目使用。这个子集，俗称“IPPICV”。
+
+### 神经网络
+
+OpenCV提供了对于神经网络的支持。然而由于DL框架的专业性，OpenCV提供的支持更多的局限于模型的推断（也就是加载已经训练好的模型），而不是训练。
+
+官方文档：
+
+https://docs.opencv.org/3.4.0/d6/d0f/group__dnn.html
+
+参考：
+
+https://zhuanlan.zhihu.com/p/28323601
+
+鱼和熊掌兼得，DNN加入OpenCV全家桶
+
+## Halcon
+
+HALCON是德国MVtec公司开发的一套完善的标准的机器视觉（machine vision）算法包。
+
+官网：
+
+https://www.mvtec.com/products/halcon/
+
+它和OpenCV的差异在于：
+
+1.halcon侧重工业视觉比如检测、测量等，而opencv则要广泛些。
+
+2.halcon是商业软件，看不到源代码；而opencv则是open free的。
+
+3.如果你是搞算法的，并且项目周期长，公司不愿意购买商业视觉软件的，可以考虑Opencv,；如果你的项目周期短，公司可以承受商业软件的成本，选择Halcon会是比较明智的选择。
+
+参考：
+
+https://blog.csdn.net/taily_duan/article/category/2623893
+
+一个Halcon的专栏
+
+## CCV
+
+CCV是一个C语言的CV库。
+
+官网：
+
+http://libccv.org/
+
+代码：
+
+https://github.com/liuliu/ccv
+
+## VLFeat
+
+VLFeat也是一个C语言的CV库。
+
+官网：
+
+http://www.vlfeat.org/
+
+代码：
+
+https://github.com/vlfeat/vlfeat
+
 ## blog
 
 https://github.com/1zlab/opencv-tutorial
@@ -135,58 +211,6 @@ https://blog.csdn.net/liyuanbhu/
 https://blog.csdn.net/taily_duan/article/category/6156573
 
 一个CV的专栏
-
-## 论文
-
-《Moving Gradients: A Path-Based Method for Plausible Image Interpolation》：视频帧插值算法
-
-## 使用细节
-
-### saturate_cast
-
-saturate_cast宏会对结果进行转换，以确保它在有效范围之内。
-
-### 硬件加速
-
-OpenCV中的运算，除了软件实现之外，还有若干种硬件加速，包括OpenCL、CUDA和IPPICV。
-
-Intel针对自身的硬件加速，推出了IPP（Integrated Performance Primitives）软件包，但这个包是收费的。从OpenCV 3.0开始，Intel将IPP的一个子集提取出来，免费供OpenCV项目使用。这个子集，俗称“IPPICV”。
-
-### 神经网络
-
-OpenCV提供了对于神经网络的支持。然而由于DL框架的专业性，OpenCV提供的支持更多的局限于模型的推断（也就是加载已经训练好的模型），而不是训练。
-
-官方文档：
-
-https://docs.opencv.org/3.4.0/d6/d0f/group__dnn.html
-
-参考：
-
-https://zhuanlan.zhihu.com/p/28323601
-
-鱼和熊掌兼得，DNN加入OpenCV全家桶
-
-## Halcon
-
-HALCON是德国MVtec公司开发的一套完善的标准的机器视觉（machine vision）算法包。
-
-官网：
-
-https://www.mvtec.com/products/halcon/
-
-它和OpenCV的差异在于：
-
-1.halcon侧重工业视觉比如检测、测量等，而opencv则要广泛些。
-
-2.halcon是商业软件，看不到源代码；而opencv则是open free的。
-
-3.如果你是搞算法的，并且项目周期长，公司不愿意购买商业视觉软件的，可以考虑Opencv,；如果你的项目周期短，公司可以承受商业软件的成本，选择Halcon会是比较明智的选择。
-
-参考：
-
-https://blog.csdn.net/taily_duan/article/category/2623893
-
-一个Halcon的专栏
 
 ## 参考
 
@@ -458,27 +482,7 @@ https://mp.weixin.qq.com/s/Ds3tYNFHcITgOAAgdANgJA
 
 OpenCV深度学习人脸识别示例——看大佬如何秀恩爱
 
-# CCV
+https://mp.weixin.qq.com/s/v8-4vs2V6R8VljY0k1PzhA
 
-CCV是一个C语言的CV库。
-
-官网：
-
-http://libccv.org/
-
-代码：
-
-https://github.com/liuliu/ccv
-
-# VLFeat
-
-VLFeat也是一个C语言的CV库。
-
-官网：
-
-http://www.vlfeat.org/
-
-代码：
-
-https://github.com/vlfeat/vlfeat
+OpenCV4.0 快速QR二维码检测测试示例
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Kaldi（二）
+title:  Kaldi（二）, OpenAI Gym
 category: AI 
 ---
 
@@ -209,6 +209,46 @@ https://mp.weixin.qq.com/s/xBbYHMQhxkRQ-dy-0gHvaw
 
 如何用kaldi参加京东金融对话语音识别大赛
 
+# OpenAI Gym
+
+Openai gym是一个用于开发和比较强化学习（reinforcement learning，RL）算法的工具包，与其他的数值计算库兼容，如tensorflow或者theano库。现在主要支持的是python语言，以后将支持其他语言。
+
+官网：
+
+https://gym.openai.com/
+
+{% highlight bash %}
+sudo apt install libffi-dev swig
+git clone https://github.com/openai/gym 
+cd gym
+pip install -e . # minimal install
+pip install -e .[all] # all install
+{% endhighlight %}
+
+这里选择minimal install就可以了，all install需要安装MuJoCo，而后者是收费软件。
+
+参考：
+
+http://tech.163.com/16/0510/09/BMMOPSCR00094OE0.html
+
+马斯克的AI野心——OpenAI Gym系统深度解析
+
+https://mp.weixin.qq.com/s/KK1gwDW2EyptZOiuFjyAlw
+
+OpenAI发布强化学习环境Gym Retro：支持千种游戏
+
+https://blog.csdn.net/jinzhuojun/article/details/77144590
+
+常用增强学习实验环境 I (MuJoCo, OpenAI Gym, rllab, DeepMind Lab, TORCS, PySC2)
+
+https://blog.csdn.net/jinzhuojun/article/details/78508203
+
+常用增强学习实验环境 II (ViZDoom, Roboschool, TensorFlow Agents, ELF, Coach等)
+
+https://mp.weixin.qq.com/s/0oVG7zMi08dzMQrk43T3mw
+
+像训练Dota2一样训练真实机器人？Gibson Environment环境了解一下
+
 # Machine Learning之Python篇
 
 ## 参考（续）
@@ -278,30 +318,4 @@ https://www.zhihu.com/question/27339934
 ----
 
 2019.9.11 唐家三少妻子去世。
-
-----
-
-早期，磁带和硬盘驱动器的面密度相似。但由于的市场规模和硬盘销售收入的增加，为更大规模的研发工作提供了资金，这使得他们的制造商能够更积极地扩大存储密度。因此，大容量硬盘驱动器的当前面密度约为最新磁带驱动器的100倍。
-
-相比之下，磁带存储设备目前的区域密度远低于超顺磁极限。 因此，磁带的摩尔定律可以持续十年或更长时间，而不会遇到基础物理学方面的障碍。
-
-参考：
-
-https://mp.weixin.qq.com/s/Fzu5YmWYxEohDJjmcGGjhQ
-
-为什么说，数据存储的未来属于磁带
-
-----
-
-https://mp.weixin.qq.com/s/gF3Hv07zzLUQqGQzdYpzQw
-
-丢人丢大了！日本人给中国抗日神剧编了本书，正满世界传播！
-
-----
-
-Veni, vidi, vici （I came; I saw; I conquered） --- By Gaius Julius Caesar
-
-2018年8月14日，意大利热那亚A10高速公路上的莫兰迪公路桥发生垮塌，数十辆车随着垮塌的桥段坠下，砸向桥下的河流、铁轨与建筑物。事发后，意大利当局派出近千人展开搜救行动。最终确定这起事故造成43人死亡，成为西方工程建筑史上不可抹去的惨痛一笔。
-
->Riccardo Morandi，1902～1989，意大利桥梁著名设计师。老司机翻船啊。。。
 
