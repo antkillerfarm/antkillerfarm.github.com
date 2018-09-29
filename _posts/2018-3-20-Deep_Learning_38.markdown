@@ -248,6 +248,10 @@ https://mp.weixin.qq.com/s/oZDDP59o-1qwfz8prK3nJQ
 
 伯克利最新研究：如何用目标图像进行机器视觉强化学习？
 
+https://zhuanlan.zhihu.com/p/41467058
+
+Policy Optimization with Demonstrations
+
 # 问答系统
 
 GA-Reader

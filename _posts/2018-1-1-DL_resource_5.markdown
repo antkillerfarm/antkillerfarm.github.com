@@ -6,32 +6,6 @@ category: resource
 
 # DL参考资源
 
-## 深度ISP
-
-https://mp.weixin.qq.com/s/wA85XFQXeypuoqFnmN2P4g
-
-降噪的新时代
-
-https://mp.weixin.qq.com/s/919VEvennHEG3iXKkMZoQQ
-
-不止是去噪---从去噪看AI ISP的趋势
-
-https://mp.weixin.qq.com/s/1HA6XKnWpqVd8k7IIfzB7w
-
-利用卷积自编码器对图片进行降噪
-
-https://zhuanlan.zhihu.com/p/39512000
-
-Noise2Noise：图像降噪，无需干净样本
-
-https://mp.weixin.qq.com/s/_tvOQPvybqmvLF19kHcbFg
-
-北大开源ECCV2018深度去雨算法：RESCAN
-
-https://mp.weixin.qq.com/s/Wdxkvlz4nLbJS_gWqHwMjw
-
-无需额外硬件，全卷积网络让机器学习学会夜视能力
-
 ## 行业
 
 李开复的这篇文章不可不读：
@@ -81,68 +55,6 @@ https://mp.weixin.qq.com/s/8QP5X9Hxi_6qyfxP4O0Gwg
 https://mp.weixin.qq.com/s/bE9BZQ6wCICvrgomdySDuw
 
 周志华组提出可做表征学习的多层梯度提升决策树
-
-## 无监督/半监督深度学习
-
-https://mp.weixin.qq.com/s/kbqTHIOzAj1aERl4tm-kVA
-
-2017上半年无监督特征学习研究成果汇总
-
-https://mp.weixin.qq.com/s/aCWAU2RXk9fTzfFqOyjqUw
-
-能自主学习的人工突触，为无监督学习开辟新的路径
-
-https://mp.weixin.qq.com/s/9kMz-eNRwC51Fi0-7BfKzA
-
-Active Learning: 一个降低深度学习时间，空间，经济成本的解决方案
-
-https://mp.weixin.qq.com/s/ZvTm9omnIRqPXcLFbZtoeg
-
-深度学习的关键：无监督深度学习简介
-
-https://mp.weixin.qq.com/s/GHjmiB6F2W3Zo8gVllTyyQ
-
-重现“世界模型”实验，无监督方式快速训练
-
-https://mp.weixin.qq.com/s/3_VtdZNKBwNtMEMf2xc7qw
-
-CVPR智慧城市挑战赛：无监督交通异常检测，冠军团队技术分享
-
-https://mp.weixin.qq.com/s/3aAaM1DWsnCWEEbP7dOZEg
-
-伯克利等提出无监督特征学习新方法，代码已开源
-
-https://mp.weixin.qq.com/s/ZDPPWH570Vc6e1irwP1b1Q
-
-精细识别现实世界图像：李飞飞团队提出半监督适应性模型
-
-https://mp.weixin.qq.com/s/X1Alcl7rVfTtZGZ40iXjXw
-
-Spotlight 论文：非参数化方法实现的极端无监督特征学习
-
-https://mp.weixin.qq.com/s/kxEfoSjCF8n2jxlDfMaNDA
-
-半监督学习在图像分类上的基本工作方式
-
-https://mp.weixin.qq.com/s/uUMPUdG2TI10W5RumPaXkA
-
-DeepMind无监督表示学习重大突破：语音、图像、文本、强化学习全能冠军！
-
-https://mp.weixin.qq.com/s/_VC6PGdCjlhcsndpunIteg
-
-何恺明等人提出新型半监督实例分割方法：学习分割Every Thing
-
-https://mp.weixin.qq.com/s/qaxzSSDuuscwL5tt0QCQ0Q
-
-破解人类识别文字之谜：对图像中的字母进行无监督学习
-
-https://mp.weixin.qq.com/s/IsLlzDWnUXe8LVp4Y1Jb_A
-
-35亿张图像！Facebook基于弱监督学习刷新ImageNet基准测试记录
-
-https://mp.weixin.qq.com/s/TEk_i4kEjUqmAqF8LgTVjg
-
-FAIR提出用聚类方法结合卷积网络，实现无监督端到端图像分类
 
 ## 深度时间序列
 
