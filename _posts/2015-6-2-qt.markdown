@@ -326,10 +326,6 @@ Actor模型原理
 
 # DL参考资源
 
-https://mp.weixin.qq.com/s/wni3F9lKuO4OT32BVe0QDQ
-
-谷歌发大招：搜索全面AI化，不用关键词就能轻松“撩书”
-
 https://mp.weixin.qq.com/s/o2A9yo6lIWTphf3jLviyEg
 
 用狗的数据训练AI，华盛顿大学研发模拟狗行为的AI系统

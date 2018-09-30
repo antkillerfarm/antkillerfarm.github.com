@@ -276,6 +276,10 @@ https://mp.weixin.qq.com/s/7dNB6V4gHdkN-N2td43NrA
 
 一种简单有效的网络结构搜索
 
+https://mp.weixin.qq.com/s/5H3wk93QoxHteR_HD2hWiA
+
+DeepMind提出架构搜索新方法：使用分层表示，时间短精度高
+
 # GAN进阶（续）
 
 https://mp.weixin.qq.com/s/c84LMFnIhoDeolc1B4MIVA
@@ -345,4 +349,8 @@ https://mp.weixin.qq.com/s/BEuA5icaQwRJGsJJLnAFVg
 https://zhuanlan.zhihu.com/p/41114883
 
 手机照片脑补成超大画幅，这个GAN想象力惊人
+
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650749368&idx=3&sn=fc20d9e6682c74227282df3133cea06c
+
+基于IR-transformer、IRGAN模型，解读搜狗语义匹配技术
 

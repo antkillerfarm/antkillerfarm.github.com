@@ -126,6 +126,10 @@ http://www.csdn.net/article/2015-06-05/2824880
 
 深入浅出LSTM神经网络
 
+https://mp.weixin.qq.com/s/y2kV4ye2zr1HYvZd3APeWA
+
+难以置信！LSTM和GRU的解析从未如此清晰
+
 https://blog.csdn.net/zhangxb35/article/details/70060295
 
 RNN, LSTM, GRU公式总结

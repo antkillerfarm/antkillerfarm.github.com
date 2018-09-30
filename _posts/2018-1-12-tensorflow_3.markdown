@@ -6,6 +6,34 @@ category: AI
 
 # TensorFlow
 
+https://mp.weixin.qq.com/s/dHkmDvFVUGmt4Ch-gv3s1g
+
+一步一步带你用TensorFlow玩转LSTM
+
+https://mp.weixin.qq.com/s/Bx5Djj-RE0jPJ7LjyQ7GPg
+
+基于gym和tensorflow的强化学习算法实现
+
+https://mp.weixin.qq.com/s/3URLEdhB8hs0XXekKbvsnw
+
+使用TensorFlow在卷积神经网络上实现L2约束的softmax损失函数
+
+https://mp.weixin.qq.com/s/dgLJrn3omUKMqmqTIEcoyg
+
+Tensorflow实现DDPG
+
+https://mp.weixin.qq.com/s/FdPrRQr0LukcWh7B703MlQ
+
+利用tf.gradients在TensorFlow中实现梯度下降
+
+https://mp.weixin.qq.com/s/a68brFJthczgwiFoUBh30A
+
+TensorFlow数据集和估算器介绍
+
+https://mp.weixin.qq.com/s/eSczqqyzh4PZomJL4saxug
+
+出门问问：使用 TensorFlow Lite 在嵌入式端部署热词检测模型
+
 https://github.com/indiejoseph/cnn-text-classification-tf-chinese
 
 CNN for Chinese Text Classification in Tensorflow
@@ -385,28 +413,4 @@ https://mp.weixin.qq.com/s/aMarI-nyIvFqhtpJWQrNhQ
 https://mp.weixin.qq.com/s/ntHkMIef1o2-FF-AJf_bZQ
 
 三分钟训练眼球追踪术，AI就知道你在盯着哪个妹子——TensorFlow.js代码
-
-https://mp.weixin.qq.com/s/7rTmEBfh613SrNnTQvfSjw
-
-懒人福利：不写代码调优深度模型，谷歌开源的“What-If”了解一下
-
-https://mp.weixin.qq.com/s/eX3LWYiSH-KObH_7F_3QCA
-
-TensorFlow 1.11.0发布，一键多GPU
-
-https://mp.weixin.qq.com/s/316VVXLQfeIsKNk4ld-VRw
-
-TensorFlow语义分割套件开源了ECCV18旷视科技BiSeNet实时分割算法
-
-https://mp.weixin.qq.com/s/XI1J4ardEWKP4UQ4IXZGTQ
-
-TensorFlow Hub,给您带来全新的Web体验
-
-https://mp.weixin.qq.com/s?__biz=MzU1OTMyNDcxMQ==&mid=2247484836&idx=1&sn=0bc47c662ea64aa833df9fb9c4b1d706
-
-TensorFlow模型优化工具包正式推出
-
-https://mp.weixin.qq.com/s/cV-5W4YWC9f9wsoNX5fIXA
-
-使用TensorFlow Probability对金融模型中的误差进行介绍性分析
 

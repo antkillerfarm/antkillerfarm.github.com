@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十七）——无监督/半监督深度学习, 深度ISP, 深度哈希
+title:  深度学习（四十七）——无监督/半监督深度学习, 深度ISP, 深度哈希, 信息检索, 语音合成
 category: DL 
 ---
 
@@ -130,3 +130,170 @@ https://mp.weixin.qq.com/s/3Z2Zc8zTq2uiPyw7ZuuZfw
 
 解密美图大规模多媒体数据检索技术DeepHash
 
+# 信息检索
+
+Information Retrieval是用户进行信息查询和获取的主要方式，是查找信息的方法和手段。狭义的信息检索仅指信息查询（Information Search）。即用户根据需要，采用一定的方法，借助检索工具，从信息集合中找出所需要信息的查找过程。广义的信息检索是信息按一定的方式进行加工、整理、组织并存储起来，再根据信息用户特定的需要将相关信息准确的查找出来的过程。
+
+这方面的DL应用可参见以下的综述文章：
+
+《MatchZoo: A Toolkit for Deep Text Matching》
+
+## ARC-I & ARC-II
+
+《Convolutional neural network architectures for matching natural language sentences》
+
+## DSSM
+
+《Learning deep structured semantic models for web search using clickthrough data》
+
+## CDSSM
+
+《Learning semantic representations using convolutional neural networks for web search》
+
+## MV-LSTM
+
+《A deep architecture for semantic matching with multiple positional sentence representations》
+
+## CNTN
+
+《Convolutional Neural Tensor Network Architecture for Community-Based Question Answering》
+
+## DRMM
+
+《A deep relevance matching model for ad-hoc retrieval》
+
+## MatchPyramid
+
+《Text Matching as Image Recognition》
+
+## Match-SRNN
+
+《Match-SRNN: Modeling the Recursive Matching Structure with Spatial RNN》
+
+## K-NRM
+
+《End-to-End Neural Ad-hoc Ranking with Kernel Pooling》
+
+## 参考
+
+https://mp.weixin.qq.com/s/aZsj1FQnzHOr-YBcy_ljpw
+
+DNN在搜索场景中的应用
+
+https://mp.weixin.qq.com/s/1jgdI-Pt0PtN3oAs0Wh4XA
+
+阿里提出电商搜索全局排序方法，淘宝无线主搜GMV提升5%
+
+https://mp.weixin.qq.com/s/9Fcj5lO-JPfFVnRSSM_56w
+
+深度学习在美团搜索广告排序的应用实践
+
+https://mp.weixin.qq.com/s/wni3F9lKuO4OT32BVe0QDQ
+
+谷歌发大招：搜索全面AI化，不用关键词就能轻松“撩书”
+
+https://mp.weixin.qq.com/s/TrWwp-DBTrKqIT_Pfy_o5w
+
+阿里妈妈首次公开新一代智能广告检索模型，重新定义传统搜索框架
+
+https://mp.weixin.qq.com/s/fZv9FgbdQ1bWPoNdl9sF1A
+
+“宝石迷阵”与信息检索
+
+https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247488366&idx=1&sn=01baaf8b6c6a2c727bb9e0e2101f803b
+
+电商搜索算法技术的演进
+
+# 语音合成
+
+语音合成（Speech synthesis），有时也叫做text-to-speech (TTS)。
+
+## 教程
+
+http://web.stanford.edu/~jurafsky/slp3/ed3book.pdf
+
+《语音与语言处理》第三版，NLP和语音合成方面的专著
+
+## 开源项目
+
+### Festival
+
+Festival是CMU的Rob Clark和Alan Black发起的项目。
+
+官网：
+
+http://www.cstr.ed.ac.uk/projects/festival/
+
+### eSpeak NG
+
+官网：
+
+https://github.com/espeak-ng/espeak-ng/
+
+### gnuspeech
+
+官网：
+
+https://www.gnu.org/software/gnuspeech/
+
+### 其他
+
+其他的开源项目还有Gnopernicus、Orca、FreeTTS和Automatik Text Reader，但是这些项目目前基本处于不更新的状态了。
+
+## 参考
+
+https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw
+
+SampleRNN语音合成模型
+
+https://mp.weixin.qq.com/s/xAO7mX64miTXE8E2vZ5q_w
+
+Facebook开源TTS神经网络VoiceLoop：基于室外声音的语音合成
+
+https://mp.weixin.qq.com/s/CVBSvQwnDqT-IVCZV7idog
+
+极限元语音算法专家刘斌：基于深度学习的语音生成问题
+
+https://mp.weixin.qq.com/s/TTPpOOxSLbCgOmAsI9TLiw
+
+百度发布Deep Voice 3：全卷积注意力机制TTS系统
+
+https://mp.weixin.qq.com/s/zWmJ3uXnFtXaI2BotoadHA
+
+从技术到产品，苹果Siri深度学习语音合成技术揭秘
+
+https://mp.weixin.qq.com/s/6xxXOx59lDZx0kUPb_ftBA
+
+漫谈语音合成之Char2Wav模型
+
+https://mp.weixin.qq.com/s/8e4bkyTJIxHZ1y95GshA0Q
+
+开源的语音合成系统WORLD介绍以及使用方法
+
+https://mp.weixin.qq.com/s/JSnyE2k7jqd5GR1lHA6WUg
+
+阿里巴巴Oral论文：用于语音合成的深度前馈序列记忆网络
+
+https://mp.weixin.qq.com/s/H77iom38lTR0KzeFXrdWew
+
+DeepMind与谷歌大脑联手推出WaveRNN，移动端合成高保真音频媲美WaveNet
+
+https://mp.weixin.qq.com/s/p_VjFwwDCu1i_ovUljaoVw
+
+阿里巴巴语音交互智能团队：基于线性网络的语音合成说话人自适应
+
+https://mp.weixin.qq.com/s/imotc0RfPsvA9h5-1nouMA
+
+端到端语音合成及其优化实践(上))
+
+https://mp.weixin.qq.com/s/NlOH0wmToJvDudIDC-aM1g
+
+端到端语音合成及其优化实践(下)
+
+https://mp.weixin.qq.com/s/HLe4DUZWWfdorcgYOj9gzw
+
+语音合成领域的首个完全端到端模型，百度提出并行音频波形生成模型ClariNet
+
+https://zhuanlan.zhihu.com/p/45702794
+
+微信是不是可以来一个文字转语音功能了？

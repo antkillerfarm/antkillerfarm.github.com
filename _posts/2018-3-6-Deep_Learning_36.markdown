@@ -224,10 +224,6 @@ https://mp.weixin.qq.com/s/FvuWZPNKcnimAGzsfgVdBQ
 
 阿里妈妈公开全新CVR预估模型
 
-https://mp.weixin.qq.com/s/8sI7StMcg7Emm98i93hNsQ
-
-解析阿里妈妈如何将深度学习应用在广告、推荐及搜索业务
-
 https://mp.weixin.qq.com/s/Ya8RZ3TouAapU_xuvMjjMQ
 
 深度协同过滤：用神经网络取代内积建模
@@ -240,21 +236,9 @@ https://mp.weixin.qq.com/s/HS2zcnA1YSRU8-DrodJ6Qw
 
 淘宝用强化学习优化商品搜索后，总收入能提高2%
 
-https://mp.weixin.qq.com/s/9Fcj5lO-JPfFVnRSSM_56w
-
-深度学习在美团搜索广告排序的应用实践
-
 https://mp.weixin.qq.com/s/QZeyEN2DDM_etEki7uodMg
 
 一个神奇的特征选择轮子----MLFeatureSelection
-
-https://mp.weixin.qq.com/s/aZsj1FQnzHOr-YBcy_ljpw
-
-DNN在搜索场景中的应用
-
-https://mp.weixin.qq.com/s/1jgdI-Pt0PtN3oAs0Wh4XA
-
-阿里提出电商搜索全局排序方法，淘宝无线主搜GMV提升5%
 
 https://mp.weixin.qq.com/s/8MQ1G-JWGAw5Ev1Ws3V_ig
 

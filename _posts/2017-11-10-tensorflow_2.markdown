@@ -46,17 +46,21 @@ TensorFlow自定义模型导出：将.ckpt格式转化为.pb格式
 
 ## 模型文件的图操作
 
-基本操作：
+基本操作一般基于tf.Graph：
 
 https://tensorflow.google.cn/api_docs/python/tf/Graph
 
-进阶操作：
+复杂一点的进阶操作可参见：
 
 https://tensorflow.google.cn/api_guides/python/contrib.graph_editor
 
 示例：
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/tensorflow/graph/hello_graph.py
+
+除了运算类op之外，TF还有辅助类的op，例如tf.shape和tf.Print。下面的示例展示了如何在Graph中插入tf.shape和tf.Print结点，从而导出中间的计算结果：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/tensorflow/graph/insert_print_node.py
 
 ## TFRecord
 
@@ -405,30 +409,3 @@ https://mp.weixin.qq.com/s/pSE2V8wD3_KHMI71kLTXng
 
 如何基于TensorFlow使用LSTM和CNN实现时序分类任务
 
-https://mp.weixin.qq.com/s/dHkmDvFVUGmt4Ch-gv3s1g
-
-一步一步带你用TensorFlow玩转LSTM
-
-https://mp.weixin.qq.com/s/Bx5Djj-RE0jPJ7LjyQ7GPg
-
-基于gym和tensorflow的强化学习算法实现
-
-https://mp.weixin.qq.com/s/3URLEdhB8hs0XXekKbvsnw
-
-使用TensorFlow在卷积神经网络上实现L2约束的softmax损失函数
-
-https://mp.weixin.qq.com/s/dgLJrn3omUKMqmqTIEcoyg
-
-Tensorflow实现DDPG
-
-https://mp.weixin.qq.com/s/FdPrRQr0LukcWh7B703MlQ
-
-利用tf.gradients在TensorFlow中实现梯度下降
-
-https://mp.weixin.qq.com/s/a68brFJthczgwiFoUBh30A
-
-TensorFlow数据集和估算器介绍
-
-https://mp.weixin.qq.com/s/eSczqqyzh4PZomJL4saxug
-
-出门问问：使用 TensorFlow Lite 在嵌入式端部署热词检测模型

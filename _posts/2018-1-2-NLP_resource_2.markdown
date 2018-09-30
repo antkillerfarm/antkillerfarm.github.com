@@ -326,10 +326,6 @@ https://mp.weixin.qq.com/s/ouNxUvWC_mxap6P5z6_dFA
 
 教聊天机器人进行多轮对话
 
-https://mp.weixin.qq.com/s/fZv9FgbdQ1bWPoNdl9sF1A
-
-“宝石迷阵”与信息检索
-
 http://www.jianshu.com/p/0273c377c34e
 
 机器学习算法在文本分类中的应用综述
@@ -404,4 +400,4 @@ http://mp.weixin.qq.com/s/XPlyWdfZbOR5z25Ly-bUGQ
 
 https://github.com/facebookresearch/fairseq
 
-facebook的一个开源的翻译类深度学习项目。
+facebook的一个开源的翻译类深度学习项目

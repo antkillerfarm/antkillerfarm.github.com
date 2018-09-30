@@ -76,6 +76,22 @@ $$K(t)=\sum_{n=1}^\infty \kappa_{n} \frac{t^{n}}{n!} = \mu t + \sigma^2 \frac{t^
 
 这里的$$\kappa_{n}$$就是Cumulants了。
 
+Cumulants有如下性质：
+
+$$cum(\lambda_1x_1,\dots,\lambda_kx_k)=\sum_{i=1}^k\lambda_i cum(x_1,\dots,x_k)\tag{1}$$
+
+其中，$$\lambda_i$$为常数。
+
+$$cum(x_1,\dots,x_k)=cum(x_{i_1},\dots,x_{i_k})\tag{2}$$
+
+其中，$$(i_1,\dots,i_k)$$为$$(1,\dots,k)$$的任意一种排列。
+
+$$cum(x_0+y_0,z_1,\dots,z_k)=cum(x_0,z_1,\dots,z_k) + cum(y_0,z_1,\dots,z_k)\tag{3}$$
+
+$$cum(\alpha+z_1,\dots,z_k)=cum(z_1,\dots,z_k)\tag{4}$$
+
+
+
 ## Polyspectrum
 
 Polyspectrum一般翻译成高阶谱或者多谱。

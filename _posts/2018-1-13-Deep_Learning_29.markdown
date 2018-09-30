@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十九）——语音识别, 语音合成, CTC
+title:  深度学习（二十九）——语音识别, CTC
 category: DL 
 ---
 
@@ -219,92 +219,6 @@ Towards End-to-End Speech Recognition
 https://mp.weixin.qq.com/s/xW_KvR5y12_eyp3FvtmBwQ
 
 从概念到应用，腾讯视角深入“解剖”AI平台和语音技术
-
-# 语音合成
-
-语音合成（Speech synthesis），有时也叫做text-to-speech (TTS)。
-
-## 教程
-
-http://web.stanford.edu/~jurafsky/slp3/ed3book.pdf
-
-《语音与语言处理》第三版，NLP和语音合成方面的专著
-
-## 开源项目
-
-### Festival
-
-Festival是CMU的Rob Clark和Alan Black发起的项目。
-
-官网：
-
-http://www.cstr.ed.ac.uk/projects/festival/
-
-### eSpeak NG
-
-官网：
-
-https://github.com/espeak-ng/espeak-ng/
-
-### gnuspeech
-
-官网：
-
-https://www.gnu.org/software/gnuspeech/
-
-### 其他
-
-其他的开源项目还有Gnopernicus、Orca、FreeTTS和Automatik Text Reader，但是这些项目目前基本处于不更新的状态了。
-
-## 参考
-
-https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw
-
-SampleRNN语音合成模型
-
-https://mp.weixin.qq.com/s/xAO7mX64miTXE8E2vZ5q_w
-
-Facebook开源TTS神经网络VoiceLoop：基于室外声音的语音合成
-
-https://mp.weixin.qq.com/s/CVBSvQwnDqT-IVCZV7idog
-
-极限元语音算法专家刘斌：基于深度学习的语音生成问题
-
-https://mp.weixin.qq.com/s/TTPpOOxSLbCgOmAsI9TLiw
-
-百度发布Deep Voice 3：全卷积注意力机制TTS系统
-
-https://mp.weixin.qq.com/s/zWmJ3uXnFtXaI2BotoadHA
-
-从技术到产品，苹果Siri深度学习语音合成技术揭秘
-
-https://mp.weixin.qq.com/s/6xxXOx59lDZx0kUPb_ftBA
-
-漫谈语音合成之Char2Wav模型
-
-https://mp.weixin.qq.com/s/8e4bkyTJIxHZ1y95GshA0Q
-
-开源的语音合成系统WORLD介绍以及使用方法
-
-https://mp.weixin.qq.com/s/JSnyE2k7jqd5GR1lHA6WUg
-
-阿里巴巴Oral论文：用于语音合成的深度前馈序列记忆网络
-
-https://mp.weixin.qq.com/s/H77iom38lTR0KzeFXrdWew
-
-DeepMind与谷歌大脑联手推出WaveRNN，移动端合成高保真音频媲美WaveNet
-
-https://mp.weixin.qq.com/s/p_VjFwwDCu1i_ovUljaoVw
-
-阿里巴巴语音交互智能团队：基于线性网络的语音合成说话人自适应
-
-https://mp.weixin.qq.com/s/imotc0RfPsvA9h5-1nouMA
-
-端到端语音合成及其优化实践
-
-https://mp.weixin.qq.com/s/HLe4DUZWWfdorcgYOj9gzw
-
-语音合成领域的首个完全端到端模型，百度提出并行音频波形生成模型ClariNet
 
 # CTC
 

@@ -196,10 +196,6 @@ https://mp.weixin.qq.com/s/FxrLxSp1Cd7w9i6xVqLJEw
 
 Tree-CNN：一招解决深度学习中的“灾难性遗忘”
 
-https://mp.weixin.qq.com/s/TrWwp-DBTrKqIT_Pfy_o5w
-
-阿里妈妈首次公开新一代智能广告检索模型，重新定义传统搜索框架
-
 https://mp.weixin.qq.com/s/sdCwCwyVaVcRzxE4BI21jA
 
 当，程序员突然想画画，AI+机器人就该登场了
