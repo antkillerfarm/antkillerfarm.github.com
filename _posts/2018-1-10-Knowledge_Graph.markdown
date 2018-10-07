@@ -356,6 +356,10 @@ https://mp.weixin.qq.com/s?__biz=MjM5MDI3MjA5MQ==&mid=2697267537&idx=1&sn=301130
 
 知识图谱在旅游领域有哪些应用？携程度假团队这样回答
 
+https://mp.weixin.qq.com/s/Og5pgNaGIz5gTL_58DvTDw
+
+抛开炒作看知识图谱，为什么现在才爆发？
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/NbEki2ByMmA93DyoQF1yjA

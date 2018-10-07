@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenCV
+title:  OpenCV（一）
 category: AI 
 ---
 
@@ -478,11 +478,7 @@ https://mp.weixin.qq.com/s/QkjMY-qEqn2cGfYbFEmv5w
 
 计算机视觉开源工具中的瑞士军刀—Dlib最新高级特性教程
 
-https://mp.weixin.qq.com/s/Ds3tYNFHcITgOAAgdANgJA
+https://mp.weixin.qq.com/s/uDg0ho3jHsomfSUDTXTe7Q
 
-OpenCV深度学习人脸识别示例——看大佬如何秀恩爱
-
-https://mp.weixin.qq.com/s/v8-4vs2V6R8VljY0k1PzhA
-
-OpenCV4.0 快速QR二维码检测测试示例
+OpenCV4.0 Mask RCNN 实例分割示例 C++/Python实现
 

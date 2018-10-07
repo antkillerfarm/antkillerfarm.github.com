@@ -196,6 +196,10 @@ https://mp.weixin.qq.com/s/BnS5KECLiUNGFd0EtTovTw
 
 南大AI单机训练一天，击败最高难度内置Bot
 
+https://mp.weixin.qq.com/s/e4lK3UoQq-8j1YIWKALBLg
+
+嵌入技术在Dota2人工智能战队OpenAI Five中的应用
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293

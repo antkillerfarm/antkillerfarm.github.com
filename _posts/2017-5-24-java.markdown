@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Java（二）, 孩子的编程语言, Javascript（二）, Scala, perl, Kotlin, 数据库, Lua
+title:  Java（二）, 孩子的编程语言, Javascript（二）, Scala, perl, 数据库
 category: language 
 ---
 
@@ -316,26 +316,6 @@ perl的语法和C差别不算太大，好多语法大致上从关键字也可以
 
 perl的包管理器叫做cpan。这实际上也是该工具网站的名字。
 
-# Kotlin
-
-Kotlin是一门编程语言，由JetBrains公司开发，与Java 100%互通。
-
-官网：
-
-http://kotlinlang.org/
-
-官网文档：
-
-http://kotlinlang.org/docs/reference/android-overview.html
-
-国内中文文档：
-
-https://huanglizhuo.gitbooks.io/kotlin-in-chinese/content/
-
-国内中文文档2：
-
-http://www.liying-cn.net/kotlin/docs/reference/
-
 # 数据库
 
 ## Sqlite
@@ -436,18 +416,7 @@ https://mp.weixin.qq.com/s/pZnAcjFlBM2I4Hyctd6MHw
 
 图数据库真的比关系数据库更先进吗？
 
-# Lua
+https://mp.weixin.qq.com/s/O3A5gVewRQ11Z8RdPcs-9w
 
-Lua的包管理工具叫做LuaRocks。官网：
+一文看懂Pinterest如何构建时间序列数据库系统Goku
 
-https://luarocks.org/
-
-参考：
-
-https://mp.weixin.qq.com/s/nwhSDxz1Pu2JCU_IeMR9ww
-
-Lua程序逆向之Luac文件格式分析
-
-http://lua-users.org/wiki/GraphicalUserInterfaceToolkits
-
-Lua的GUI工具列表

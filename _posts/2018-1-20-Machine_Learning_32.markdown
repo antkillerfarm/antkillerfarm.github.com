@@ -96,6 +96,18 @@ t-SNE的不足主要有四个:
 
 >训练太慢。有很多基于树的算法在t-sne上做一些改进。
 
+## FastTSNE
+
+该工具包提供了两种快速实现tSNE的方法：
+
+Barnes-hut tsne：源于Multicore tSNE，适用于小规模数据集，时间复杂度为O(nlogn)。
+
+Fit-SNE：源于Fit-SNE的C++实现方法，适用于样本量在10,000以上的大规模数据集，时间复杂度为O(n)。
+
+代码：
+
+https://github.com/pavlin-policar/fastTSNE
+
 ## 参考
 
 https://www.zhihu.com/question/52022955
@@ -180,24 +192,3 @@ $$\alpha_m = \frac{1}{2}\ln\left(\frac{\sum_{y_i = k_m(x_i)} w_i^{(m)}}{\sum_{y_
 
 $$\alpha_m = \frac{1}{2}\ln\left( \frac{1 - \epsilon_m}{\epsilon_m}\right)$$
 
-参考：
-
-https://mp.weixin.qq.com/s/G06VDc6iTwmNGsH4IfSeJQ
-
-Adaboost从原理到实现
-
-https://mp.weixin.qq.com/s/PZ-1fkNvdJmv_8zLbvoW1g
-
-Adaboost算法原理小结
-
-https://mp.weixin.qq.com/s/KoOUgwXLOfJfOjWhbFX52Q
-
-如果Boosting你懂，那Adaboost你懂么？
-
-https://mp.weixin.qq.com/s/Joz2FpGgBY0tC8lpoFz8Mw
-
-AdaBoost元算法如何提高分类性能——机器学习实战
-
-https://mp.weixin.qq.com/s/MLEVUKse5usmKIWJF-yfOQ
-
-通俗易懂讲解自适应提升算法AdaBoost

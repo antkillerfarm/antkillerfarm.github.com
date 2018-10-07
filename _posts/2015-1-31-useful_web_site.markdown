@@ -452,6 +452,10 @@ https://mp.weixin.qq.com/s?__biz=MzIyNzUwMjM2MA==&mid=2247485942&idx=1&sn=159723
 
 编程基础知识
 
+https://mp.weixin.qq.com/s/Coz81Zidz_LaSYkcErJsOQ
+
+NAND Flash与NOR Flash究竟有何不同
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

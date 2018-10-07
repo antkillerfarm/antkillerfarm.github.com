@@ -132,6 +132,10 @@ https://mp.weixin.qq.com/s/bE9BZQ6wCICvrgomdySDuw
 
 ## 深度时间序列
 
+https://mp.weixin.qq.com/s/cChJO6YrE_XAgeInS7J1Vw
+
+130页序列推荐系统教程重磅发布
+
 https://mp.weixin.qq.com/s/zv264-dqDQYRkYmjX_QZpQ
 
 郑宇解读地理传感器时间序列预测问题

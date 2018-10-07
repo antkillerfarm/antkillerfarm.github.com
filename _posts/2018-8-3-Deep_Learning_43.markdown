@@ -268,6 +268,10 @@ https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247505181&idx=1&sn=2e817e
 
 惊！史上最佳GAN现身，超真实AI假照片，行家们都沸腾了
 
+https://mp.weixin.qq.com/s/MPdGF2-cJbNcvaEx-2BnFg
+
+把2D公路变成3D飞车游戏，MIT、清华打破图像编辑的次元壁
+
 # Graph NN
 
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
@@ -349,6 +353,10 @@ https://mp.weixin.qq.com/s/aeQyZ8cpz81cK8Dg-84mjA
 https://mp.weixin.qq.com/s/_0quf0IRe8mn4dnsBwf6Aw
 
 基于路径的实体图关系抽取模型
+
+https://mp.weixin.qq.com/s/jCgbBldpw4TGHUvN9WkJZg
+
+在对抗中学习网络结构——87页PPT带你学习Graph中的GAN
 
 # 数据增强
 

@@ -1,8 +1,32 @@
 ---
 layout: post
-title:  机器学习（三十三）——机器学习的算法体系&相关术语表, simhash, 模仿学习, 三门问题, ACBM算法, 高斯过程回归
+title:  机器学习（三十三）——机器学习的算法体系&相关术语表, simhash, ACBM算法, 高斯过程回归
 category: ML 
 ---
+
+# Adaboost（续）
+
+参考：
+
+https://mp.weixin.qq.com/s/G06VDc6iTwmNGsH4IfSeJQ
+
+Adaboost从原理到实现
+
+https://mp.weixin.qq.com/s/PZ-1fkNvdJmv_8zLbvoW1g
+
+Adaboost算法原理小结
+
+https://mp.weixin.qq.com/s/KoOUgwXLOfJfOjWhbFX52Q
+
+如果Boosting你懂，那Adaboost你懂么？
+
+https://mp.weixin.qq.com/s/Joz2FpGgBY0tC8lpoFz8Mw
+
+AdaBoost元算法如何提高分类性能——机器学习实战
+
+https://mp.weixin.qq.com/s/MLEVUKse5usmKIWJF-yfOQ
+
+通俗易懂讲解自适应提升算法AdaBoost
 
 # 机器学习的算法体系&相关术语表
 
@@ -163,38 +187,6 @@ https://mp.weixin.qq.com/s/vwhetMpQllczILptBNcoWg
 
 基于快速GeoHash，如何实现海量商品与商圈的高效匹配？
 
-# 模仿学习
-
-https://zhuanlan.zhihu.com/p/27935902
-
-机器人学习Robot Learning之模仿学习Imitation Learning的发展
-
-https://zhuanlan.zhihu.com/p/25688750
-
-模仿学习（Imitation Learning）完全介绍
-
-https://mp.weixin.qq.com/s/naq73D27vsCOUBperKto8A
-
-从监督式到DAgger，综述论文描绘模仿学习全貌
-
-https://mp.weixin.qq.com/s/LNNqp2KsEAljG26hY43mUw
-
-ICML2018 模仿学习教程
-
-# 三门问题
-
-https://www.zhihu.com/question/26709273/
-
-蒙提霍尔问题（又称三门问题、山羊汽车问题）的正解是什么？
-
-https://zhuanlan.zhihu.com/p/21461266
-
-数学杂谈——“三门问题”：Monty Hall Problem
-
-https://zhuanlan.zhihu.com/p/23338174
-
-蒙提霍尔问题/三门问题（Monty Hall problem）
-
 # ACBM算法
 
 ACBM算法是在AC（Aho-Corasick）自动机（UNIX上的fgrep命令使用的就是AC算法）的基础之上，引入了BM（Boyer-Moore）算法的多模扩展，实现的高效的多模匹配。和AC自动机不同的是，ACBM算法不需要扫描目标文本串中的每一个字符，可以利用本次匹配不成功的信息，跳过尽可能多的字符，实现高效匹配。
@@ -273,4 +265,3 @@ https://mp.weixin.qq.com/s/VzN02XW3yN2peqTD6q-4Cg
 https://zhuanlan.zhihu.com/gpml2016
 
 高斯世界下的Machine Learning
-

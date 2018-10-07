@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十七）——KNN, Optimizer进阶, 聚类算法, 特征工程
+title:  机器学习（三十七）——KNN, Optimizer进阶, 聚类算法, 特征工程, 模仿学习, 三门问题
 category: ML 
 ---
 
@@ -257,3 +257,36 @@ https://mp.weixin.qq.com/s/tOcyfK68jW7Tr-PGCvdXMA
 https://mp.weixin.qq.com/s/c9iHdgtErVd_iitwny7_zw
 
 Kaggle前1%参赛者经验：特征工程为何如此重要？
+
+# 模仿学习
+
+https://zhuanlan.zhihu.com/p/27935902
+
+机器人学习Robot Learning之模仿学习Imitation Learning的发展
+
+https://zhuanlan.zhihu.com/p/25688750
+
+模仿学习（Imitation Learning）完全介绍
+
+https://mp.weixin.qq.com/s/naq73D27vsCOUBperKto8A
+
+从监督式到DAgger，综述论文描绘模仿学习全貌
+
+https://mp.weixin.qq.com/s/LNNqp2KsEAljG26hY43mUw
+
+ICML2018 模仿学习教程
+
+# 三门问题
+
+https://www.zhihu.com/question/26709273/
+
+蒙提霍尔问题（又称三门问题、山羊汽车问题）的正解是什么？
+
+https://zhuanlan.zhihu.com/p/21461266
+
+数学杂谈——“三门问题”：Monty Hall Problem
+
+https://zhuanlan.zhihu.com/p/23338174
+
+蒙提霍尔问题/三门问题（Monty Hall problem）
+

@@ -142,6 +142,24 @@ Byte Pair Encoding(BPE)本来是一种数据压缩算法，后来被用于分词
 
 https://github.com/rsennrich/subword-nmt
 
+## 模型导读
+
+SGNS/cBoW、FastText、ELMo等（从词向量引出）
+
+DSSM、DecAtt、ESIM等（从问答&匹配引出）
+
+HAN、DPCNN等（从分类引出）
+
+BiDAF、DrQA、QANet等（从MRC引出）
+
+CoVe、InferSent等（从迁移引出）
+
+MM、N-shortest等（从分词引出）
+
+Bi-LSTM-CRF等（从NER引出）
+
+LDA等主题模型（从文本表示引出）
+
 # Storm
 
 Storm是一个大数据领域的实时计算框架。

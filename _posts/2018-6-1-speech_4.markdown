@@ -148,6 +148,12 @@ $$\mathbf{STFT}\{x(t)\}(\tau,\omega) \equiv X(\tau, \omega) = \int_{-\infty}^{\i
 
 上式是STFT（Short-time Fourier transform）的定义。和FT相比，STFT将FT中的被积函数$$x(t)$$，换成了$$x(t) w(t-\tau)$$。其中，w(t)是窗函数（Window function），因此STFT又叫做加窗傅立叶变换。
 
+参考：
+
+https://mp.weixin.qq.com/s/TsO-tope0m4sHfVmZ0_Hog
+
+STFT极简版
+
 ## Spectrogram
 
 DTW是一种时域方法，作为信号处理自然少不了频域方法。这里我们先来了解一个叫声谱图的东西。

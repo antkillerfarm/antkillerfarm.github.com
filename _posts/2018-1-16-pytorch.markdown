@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Pytorch, PaddlePaddle, MXNet, NN中间语言
+title:  Pytorch, PaddlePaddle, MXNet
 category: AI 
 ---
 
@@ -234,6 +234,10 @@ https://mp.weixin.qq.com/s/zPv-3fMy1rZwAwPqjs7oAA
 
 Pytorch图像分类从模型自定义到测试
 
+https://mp.weixin.qq.com/s/kEC-5huq6cFjd1iPjSuK-g
+
+5行代码秀碾压，比Keras还好用的fastai来了，尝鲜PyTorch 1.0必备伴侣
+
 # PaddlePaddle
 
 https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q
@@ -358,76 +362,3 @@ https://mp.weixin.qq.com/s/hRH7hVsaQBqf0vhD_BqBgg
 
 五大深度学习框架三类神经网络全面测评
 
-# NN中间语言
-
-## 概述
-
-随着目前DL框架越来越多，如何在框架之间对模型进行相互转换，就成为了工业界的一个大问题。
-
-https://github.com/ysh329/deep-learning-model-convertor
-
-这个网页包含了各种深度框架之间的模型相互转换的工具的列表。从中可以看出ONNX和MMdnn算是目前比较有用的转换工具了。
-
-这类many-to-many工具从实现原理上，主要是将各种模型转换成中间语言（IR，intermediate representation），然后再变换成目标语言。
-
-## NNEF
-
-Neural Network Exchange Format是Khronos制定的用于交换NN模型数据的数据格式标准。
-
-官网：
-
-https://www.khronos.org/nnef
-
-## ONNX
-
-和NNEF竞争的标准还有微软和Facebook联合推出的Open Neural Network Exchange。
-
-官网：
-
-https://github.com/onnx
-
-参考：
-
-https://mp.weixin.qq.com/s/etSrI8Z3-NWbrqNWIbfzjw
-
-微软Facebook联手发布AI生态系统
-
-## NNVM
-
-陈天奇等推出的NNVM也是一个类似的中间表示。官网：
-
-https://github.com/dmlc/nnvm
-
-参考：
-
-https://mp.weixin.qq.com/s/qkvX0rmEe0yQ-BhCmWAXSQ
-
-李沐：AWS开源端到端AI框架编译器NNVM
-
-## Android NN
-
-https://developer.android.com/ndk/guides/neuralnetworks/index.html
-
-这是Android NDK中的NN相关的接口文档
-
-https://developer.arm.com/products/software/mali-drivers/android-nnapi
-
-这是ARM对于Android NN的一个实现。
-
-## MMdnn
-
-MMdnn是微软推出的工具集，也是目前功能最强的工具集。
-
-官网：
-
-https://github.com/Microsoft/MMdnn
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/32711259
-
-从NNVM和ONNX看AI芯片的基础运算算子
-
-https://mp.weixin.qq.com/s/jjT0x99ht8xtfWmzL-0R1A
-
-深度学习的IR“之争”

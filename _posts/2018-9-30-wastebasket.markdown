@@ -320,6 +320,10 @@ https://mp.weixin.qq.com/s/1JSxjkKEUlWOzXCQPTve3A
 
 贝叶斯线性回归简介
 
+https://mp.weixin.qq.com/s/NTK-u4aVrTTmvi-4ZBa8RQ
+
+数十亿用户的Facebook如何进行贝叶斯系统调优？
+
 ## 金融模型
 
 Capital asset pricing model

@@ -108,6 +108,10 @@ https://mp.weixin.qq.com/s/2xOrSyyWSbp8rBVbFoNrxQ
 
 Wasserstein is all you need：构建无监督表示的统一框架
 
+https://mp.weixin.qq.com/s/NXDJ4uCpdX-YcWiKAsjJLQ
+
+传说中的推土机距离基础，最优传输理论了解一下
+
 # LSA
 
 ## 基本原理

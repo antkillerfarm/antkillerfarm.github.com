@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  小众语言集中营, Julia, Github显示数学公式
+title:  小众语言集中营, Julia, Lua, Kotlin, Github显示数学公式
 category: language 
 ---
 
@@ -167,6 +167,42 @@ Go语言HTTP/2探险之旅
 https://mp.weixin.qq.com/s/_d_-qg-mY3QLSxfACsNBJw
 
 Golang之不可重入函数实现
+
+# Lua
+
+Lua的包管理工具叫做LuaRocks。官网：
+
+https://luarocks.org/
+
+参考：
+
+https://mp.weixin.qq.com/s/nwhSDxz1Pu2JCU_IeMR9ww
+
+Lua程序逆向之Luac文件格式分析
+
+http://lua-users.org/wiki/GraphicalUserInterfaceToolkits
+
+Lua的GUI工具列表
+
+# Kotlin
+
+Kotlin是一门编程语言，由JetBrains公司开发，与Java 100%互通。
+
+官网：
+
+http://kotlinlang.org/
+
+官网文档：
+
+http://kotlinlang.org/docs/reference/android-overview.html
+
+国内中文文档：
+
+https://huanglizhuo.gitbooks.io/kotlin-in-chinese/content/
+
+国内中文文档2：
+
+http://www.liying-cn.net/kotlin/docs/reference/
 
 # Github显示数学公式
 
@@ -353,4 +389,12 @@ https://mp.weixin.qq.com/s/emJGtx-LAWarlpUnRf-0-w
 https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247491876&idx=1&sn=e431c2291f4c985777be4d9b7bdfefa6
 
 正经炼丹师如何完美安排国庆长假？假期专属论文清单
+
+https://mp.weixin.qq.com/s/aPBPzBEGoiXF0-uMO_BCFQ
+
+iCAN：以人为中心的“人-物”交互检测网络
+
+https://mp.weixin.qq.com/s/fJMae88M8GEQi80DfbCKjQ
+
+从“局部连接”回到“全连接”的神经网络
 

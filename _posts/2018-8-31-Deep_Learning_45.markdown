@@ -354,3 +354,7 @@ https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650749368&idx=3&sn=fc20d9
 
 基于IR-transformer、IRGAN模型，解读搜狗语义匹配技术
 
+https://mp.weixin.qq.com/s/bKve_tZi9usz4oX0T3S15A
+
+悉尼大学陶大程：遗传对抗生成网络有效解决GAN两大痛点
+

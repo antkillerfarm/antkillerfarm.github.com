@@ -94,6 +94,10 @@ https://mp.weixin.qq.com/s/5BeM4aBH9vMhU3i74qKvdg
 
 Uber开源Marmaray：基于Hadoop的通用数据摄取和分散框架
 
+https://mp.weixin.qq.com/s/G26lg2xTClbuszYY7h0Dkw
+
+腾讯内容平台系统的架构实践
+
 # 知名数据集
 
 https://mp.weixin.qq.com/s/LC6bJOsJczTLolQ1Yx5cvg
@@ -115,4 +119,8 @@ https://mp.weixin.qq.com/s/9k2aorOp_zc10JKf9F9Evw
 https://mp.weixin.qq.com/s/aw5o-1Bwc4hQUatehFFx2A
 
 南京大学发布WebCaricature漫画人脸识别数据集
+
+https://mp.weixin.qq.com/s/isUT--guYrsIWRXApcutrg
+
+耶鲁大学11名学生标注完成大规模复杂跨域Text-to-SQL数据集Spider
 

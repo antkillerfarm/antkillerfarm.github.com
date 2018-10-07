@@ -296,6 +296,10 @@ https://mp.weixin.qq.com/s/3NStfKyn3rGmLUrgk4b9lQ
 
 想了解推荐系统最新研究进展？请收好这16篇论文
 
+https://mp.weixin.qq.com/s/7I8k3sKZfaGr8vj1WHbS7g
+
+99页推荐系统情感分析教程发布
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

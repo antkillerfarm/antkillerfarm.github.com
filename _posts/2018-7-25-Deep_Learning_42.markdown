@@ -108,6 +108,10 @@ https://mp.weixin.qq.com/s/K7JNqjuUfotTODtJU1W-YQ
 
 快速精准的人头检测，代码已开源
 
+https://mp.weixin.qq.com/s/DZmAWpptAVIqA_7L24ldHg
+
+行人重识别 PCB-RPP，SGGNN
+
 # 人脸识别进阶
 
 https://mp.weixin.qq.com/s/YlrWHDPIPzN4dQO2vo4DjA
@@ -318,6 +322,10 @@ https://mp.weixin.qq.com/s?__biz=MzU4MjQ3MDkwNA==&mid=2247486721&idx=1&sn=f0e5b2
 
 人脸识别中的活体检测算法综述
 
+https://mp.weixin.qq.com/s/4xYAhNys6svltEb4cQUrXw
+
+Bi-box行人检测：‘行人遮挡’为几何？
+
 # AI前沿
 
 人工智能前沿7大热点：
@@ -341,6 +349,10 @@ https://mp.weixin.qq.com/s?__biz=MzU4MjQ3MDkwNA==&mid=2247486721&idx=1&sn=f0e5b2
 https://mp.weixin.qq.com/s/QtO-4ARpAQf0kXfALqMKSQ
 
 DeepMind-深度学习: AI革命及其前沿进展
+
+https://mp.weixin.qq.com/s/sji2HVli-Y7am37YjTbq3w
+
+谷歌Jeff Dean 64页 PPT 讲述《用深度学习解决挑战性问题》
 
 # Spatial Transformer Networks
 

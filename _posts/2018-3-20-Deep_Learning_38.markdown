@@ -252,6 +252,18 @@ https://zhuanlan.zhihu.com/p/41467058
 
 Policy Optimization with Demonstrations
 
+https://openreview.net/pdf?id=rJzoujRct7
+
+深度学习之斗地主
+
+https://mp.weixin.qq.com/s/00zHwpw2xWP2fR9sDHE2Xw
+
+BAIR讲述如何利用深度强化学习控制灵活手
+
+https://mp.weixin.qq.com/s/V7RESEm4xzhW8tXEjKjn1Q
+
+层次强化学习、记忆与预测模型
+
 # 问答系统
 
 GA-Reader

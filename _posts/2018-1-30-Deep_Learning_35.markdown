@@ -88,6 +88,10 @@ https://blog.csdn.net/sinat_26917383/article/details/79704097
 
 ## 参考
 
+https://mp.weixin.qq.com/s/4oA-x2sofqR3GBEHlmeQrg
+
+人体姿态估计资源大列表
+
 https://mp.weixin.qq.com/s/6pNZ8Crs4Lel2C0TlFAc4Q
 
 真能“穿墙识人”，MIT人体姿态估计系统创历史最高精度！

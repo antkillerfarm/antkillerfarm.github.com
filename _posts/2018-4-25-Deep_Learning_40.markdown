@@ -276,6 +276,10 @@ https://mp.weixin.qq.com/s/fU-AeaPz-lHlg0CBgqnpZQ
 
 轻量化神经网络综述
 
+https://mp.weixin.qq.com/s/BMsvhXytSy2nWIsGOSOSBQ
+
+自动生成高效DNN，适用于边缘设备的生成合成工具FermiNets
+
 # 语义分割进阶
 
 https://mp.weixin.qq.com/s/cANlqQAI-A2mC9vnd3imQA
@@ -353,4 +357,8 @@ https://mp.weixin.qq.com/s/01D9wYK92i4PjjGcwFTxOw
 https://mp.weixin.qq.com/s/sjD36kUDQ5iCmIKpR8_rlA
 
 双重注意力网络：中科院自动化所提出新的自然场景图像分割框架
+
+https://mp.weixin.qq.com/s/Sn3N8IxHtgp53Y0VLIPJCQ
+
+17毫秒每帧！实时语义分割与深度估计
 
