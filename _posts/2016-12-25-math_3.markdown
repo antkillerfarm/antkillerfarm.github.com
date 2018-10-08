@@ -100,9 +100,11 @@ https://mp.weixin.qq.com/s/svNVryWhiGxWFBz0s0dX5g
 
 ### 均匀分布
 
-通过线性同余发生器可以生成伪随机数，且该随机数满足均匀分布。
+通过线性同余生成器可以生成伪随机数，且该随机数满足均匀分布。
 
 $$x_n=ax_{n-1}\quad \mathrm{modulo} \quad m$$
+
+这里的a和m通常都是大质数。
 
 ### 正态分布
 

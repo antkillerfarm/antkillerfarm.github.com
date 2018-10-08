@@ -360,6 +360,10 @@ https://mp.weixin.qq.com/s/Og5pgNaGIz5gTL_58DvTDw
 
 抛开炒作看知识图谱，为什么现在才爆发？
 
+https://zhuanlan.zhihu.com/p/46235742
+
+基于强化学习的知识图谱问答
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/NbEki2ByMmA93DyoQF1yjA
