@@ -394,3 +394,7 @@ https://mp.weixin.qq.com/s/yiAC6SddIFFo3bR351b_0Q
 
 Embodied Question Answering
 
+https://mp.weixin.qq.com/s/L227SZXQPinNOkKJjwr58w
+
+85页《基于神经方法的人机对话系统》，微软+谷歌出品
+

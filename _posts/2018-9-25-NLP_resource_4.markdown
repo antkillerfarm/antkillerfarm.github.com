@@ -210,3 +210,11 @@ https://mp.weixin.qq.com/s/qW-0zGvMi4qjT_KtGat4mQ
 
 TreeGAN：为序列生成任务构建有句法意识的GAN
 
+https://mp.weixin.qq.com/s/9Q9i1GyB0vqxGpdlOgKL0w
+
+不会写作文？试试这个文本模板生成系统呗
+
+https://zhuanlan.zhihu.com/p/46206946
+
+全局语义语境能改善神经语言模型吗？
+

@@ -98,6 +98,26 @@ https://mp.weixin.qq.com/s/h7sLwVXb_UI8jvJU-oe3Cg
 
 Google AI提出“透明注意力”机制，实现更深层NMT模型
 
+https://mp.weixin.qq.com/s/1LYz5SH5rVnPPJ0tZvRQAA
+
+从各种注意力机制窥探深度学习在NLP中的神威
+
+https://zhuanlan.zhihu.com/p/32928645
+
+计算机视觉中的注意力机制
+
+https://zhuanlan.zhihu.com/p/33078323
+
+数字串识别：基于位置的硬性注意力机制
+
+https://zhuanlan.zhihu.com/p/32971586
+
+图像描述：基于项的注意力机制
+
+https://zhuanlan.zhihu.com/p/33158614
+
+图像识别：基于位置的柔性注意力机制
+
 # 多任务学习
 
 https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA

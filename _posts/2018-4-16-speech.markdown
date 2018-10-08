@@ -151,6 +151,10 @@ https://zhuanlan.zhihu.com/codingmath
 
 一个语音识别的blog
 
+https://blog.csdn.net/jojozhangju
+
+一个Kaldi+声源定位的blog
+
 ## 项目
 
 https://en.wikipedia.org/wiki/List_of_speech_recognition_software

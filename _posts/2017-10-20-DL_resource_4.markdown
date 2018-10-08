@@ -322,6 +322,10 @@ https://mp.weixin.qq.com/s/n8wbUgmV873fZw5MI43ljg
 
 简化数据获取！Uber开源深度学习分布训练库Petastorm
 
+https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247505558&idx=5&sn=bc37e5021c598630795e513876feef8b
+
+微软又开源了一个机器学习框架，这次是核心产品的机器学习引擎infer.NET
+
 # 光神经网络
 
 https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ

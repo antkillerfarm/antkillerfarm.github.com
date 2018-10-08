@@ -132,6 +132,10 @@ https://mp.weixin.qq.com/s/Kmq2tG5XQUO9k1pD3YW2oA
 
 从文本处理到自动驾驶：机器学习最常用的50大免费数据集
 
+https://mp.weixin.qq.com/s?__biz=MzA3NDIyMjM1NA==&mid=2649030010&idx=1&sn=76e0123bf24064c4cb1eb7acacac86fd
+
+深度学习从“数据集”开始
+
 http://www.csdn.net/article/2014-06-06/2820111-100-Interesting-Data-Sets-for-Statistics/1
 
 100+诡异的数据集

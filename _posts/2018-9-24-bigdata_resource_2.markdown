@@ -98,6 +98,10 @@ https://mp.weixin.qq.com/s/G26lg2xTClbuszYY7h0Dkw
 
 腾讯内容平台系统的架构实践
 
+https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247493243&idx=1&sn=db32057f4b6450a66844ca4e3aaa46da
+
+大数据凉了？No，流式计算浪潮才刚刚开始！
+
 # 知名数据集
 
 https://mp.weixin.qq.com/s/LC6bJOsJczTLolQ1Yx5cvg

@@ -280,6 +280,10 @@ https://mp.weixin.qq.com/s/zeruKQOye_QNWgluVIN0BA
 
 从R-CNN到RFBNet，目标检测架构5年演进全盘点
 
+https://mp.weixin.qq.com/s/sCGNUI-mUSYxD69uBDQNoQ
+
+基于深度学习的目标检测算法综述：算法改进
+
 # 细粒度分类
 
 https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw
@@ -394,7 +398,7 @@ BAIR展示新型模仿学习，学会像人那样执行任务
 
 https://zhuanlan.zhihu.com/p/41223529
 
-最前沿: Meta RL论文解读
+最前沿:Meta RL论文解读
 
 https://zhuanlan.zhihu.com/p/40600485
 
@@ -411,4 +415,8 @@ https://zhuanlan.zhihu.com/p/45845001
 https://zhuanlan.zhihu.com/p/46059552
 
 Meta Learning单排小教学
+
+https://zhuanlan.zhihu.com/p/46131981
+
+最前沿：Meta Learning在少样本文本翻译上的应用
 
