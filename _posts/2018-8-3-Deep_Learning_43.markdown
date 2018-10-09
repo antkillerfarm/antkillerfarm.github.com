@@ -184,10 +184,6 @@ https://mp.weixin.qq.com/s/djkjAfUO_DefTP2drzY_iQ
 
 在《绝地求生》中玩《堡垒之夜》！ 深度学习帮你转换画风
 
-https://mp.weixin.qq.com/s/cTlXMxcpzc7_5NVsTm1jcA
-
-学习一帧，为整段黑白视频上色：谷歌提出自监督视觉追踪模型
-
 https://mp.weixin.qq.com/s/X8osUSPROJqGVTvw0gieDQ
 
 T2T：利用StackGAN和ProGAN从文本生成人脸

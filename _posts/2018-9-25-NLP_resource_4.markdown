@@ -218,3 +218,7 @@ https://zhuanlan.zhihu.com/p/46206946
 
 全局语义语境能改善神经语言模型吗？
 
+https://mp.weixin.qq.com/s/2Ksovh6BDnFxs6Y2lOv6ww
+
+联合学习离散句法结构和连续词表征的无监督方法
+

@@ -4,7 +4,7 @@ title:  Android研究
 category: technology 
 ---
 
-## 1.JNI
+# JNI
 
 (1)Java call Native C
 
@@ -48,7 +48,7 @@ Android由于提供的是Java接口，所以这里最常见的情况是
 
 使用javah生成的.h文件中，函数的声明在Java中声明的参数之前，还有两个参数JNIEnv和jobject。env是调用Java方法的接口，它的功能非常多。jobject传入的是调用Native C的那个Java对象实例的引用。jobject指针不能在多个线程中共享. 就是说,不能直接在保存一个线程中的jobject指针到全局变量中,然后在另外一个线程中使用它.幸运的是,可以用`gs_object=env->NewGlobalRef(obj);`来将传入的obj保存到gs_object中，从而其他线程可以使用这个gs_object来操纵那个java对象了。
 
-## 2.在Android上编译C程序
+# 在Android上编译C程序
 
 (1)风临左岸在这方面颇有建树，以下是他的blog：
 
@@ -90,7 +90,7 @@ http://source.android.com/source/download.html
 
 http://www.j2medev.com/android/native/200901/20090119222445.html
 
-## 3.Android JNI
+# Android JNI
 
 正统的做法可以参照以下网页：
 
@@ -104,47 +104,7 @@ http://www.j2medev.com/android/native/200901/20090119222617.html
 
 这里需要指出一点，普通的JNI调用使用System.loadLibrary加载动态库，而Android平台要使用System.load加载动态库。这就是很多人套用PC上的语法，但却在Android上失败的原因。
 
-## 4.关于一个语法现象
-{% highlight java %}
-    AlertDialog dialog = new AlertDialog.Builder(SmartGuider.this)
-           .setTitle("设置错误")
-           .setMessage("GPS功能未开启，请先开启GPS后再使用本程序！\n\n点击Ok进入系统设置页面，点击Cancel退出程序。")
-           .create();
-{% endhighlight %}
-
-在apidemo中，有很多类似于这样的语句。刚阅读到的时候，先是觉得是不是语法有误，怎么能在一条语句中，调用两个成员函数。接着一想，这是人家出的demo，怎么可能犯这种低级错误，一处也就罢了，总不可能到处都出这种错吧。
-
-于是就考虑是不是Java的新语法，毕竟Java这种语言从1.0到1.7，已经有8个版本了，像@Override和模板之类的特性都是后来添加进去的。但查了半天也没查到出处。
-
-于是去Android SDK中查看相关类的方法，才发现了奥妙。
-
-{% highlight java %}
-AlertDialog create()
-AlertDialog.Builder setTitle(CharSequence title)
-AlertDialog.Builder setMessage(CharSequence message)
-{% endhighlight %}
-
-由于setTitle和setMessage返回的都是AlertDialog.Builder类型的引用（多半就是this），从而使得这样连写的语法得以实现。如果把create放到setTitle或setMessage之前，显然就会出错了。因此这根本就不是什么新语法，而只是一种技巧而已。
-
-在C语言中，其实也有类似的情况，例如
-
-`char *strcpy(char *strDestination,const char *strSource);`
-
-为什么不写成
-
-`void strcpy(char *strDestination,const char *strSource);`
-
-或者
-
-`char *strcpy(const char *strSource);`
-
-呢？
-
-不采用第一种，是因为这样做可以使用诸如`strlen(strcpy(...))`之类的便捷写法。
-
-不采用第二种，当然是和内存分配有关了，这里就不多说了。
-
-## 5.Activity生命周期初探
+# Activity生命周期初探
 
 Android SDK上关于Activity生命周期的图，无疑是权威的，但相关文档中并没有Android手机功能键对Activity生命周期所造成的改变的内容。
 
@@ -174,11 +134,11 @@ onPause->onStop->onDestroy
 
 onPause
 
-## 6.添加新的View
+# 添加新的View
 
 利用向导生成的代码中只有一个View，相应的UI布局文件在res/layout/main.xml，找了半天也没找到如何快捷的添加View，于是只好自己手动添加相关的xml文件，好在eclipse可以定制添加的xml文件的模板，于是把main.xml复制一下，做成模板，以后添加就方便了。
 
-## 7.编译Froyo（部分转贴）
+# 编译Froyo（部分转贴）
 
 ****
 说点题外话，这个Blog本来打算完全写些自己的原创内容，对于转贴只给链接，但链接这东西，有利有弊。常常过上几个月，原来的链接就不好使了。所以只好有选择的粘贴一些了。
@@ -232,7 +192,7 @@ Java HotSpot(TM) Client VM (build 1.5.0_22-b03, mixed mode, sharing)
 
 make一切顺利，之后在out/host/linux-x86/bin下找到emulator，但却无法执行，提示缺少AVD device，使用`export ANDROID_PRODUCT_OUT=~/android/out/target/product/generic`解决之。
 
-## 8.JDK 1.6 + eclipse 3.6.2 + ADT 10.0.1
+# JDK 1.6 + eclipse 3.6.2 + ADT 10.0.1
 
 今天捡起许久不曾弄过的Android应用开发，重新来过。
 
@@ -261,3 +221,40 @@ Google eclipse Plugin - http://dl.google.com/eclipse/plugin/3.6
 2)下载WTP包，WTP就够了，不需要WTP-SDK。
 
 3)下载ADT 10.0.1。
+
+# 调用计算器
+
+如果是调用系统自带的计算器，在网上搜了一下，可以使用如下代码：
+
+{% highlight java %}
+Intent mIntent = new Intent();
+mIntent.setClassName("com.android.calculator2",
+     "com.android.calculator2.Calculator");
+startActivity(mIntent);
+{% endhighlight %}
+
+从代码的内容来看，主要是使用Intent启动系统计算器的Activity。但是这个代码在我目前的环境下，却在运行时出现了以下错误：
+
+android.content.ActivityNotFoundException: Unable to find explicit activity class {com.android.calculator2/com.android.calculator2.Calculator};
+
+很显然系统计算器的Activity的名字不对，那么正确的名字是什么呢？
+
+手动打开系统计算器，这时可以在系统log中看到“com.android.calculator2.CalculatorActivity”的字样频繁出现，显然这个才是正确的Activity的名字。
+
+在三星的手机上，计算器的Activity是“com.sec.android.app.popupcalculator.Calculator”。
+
+同样的方法，我们可以找到浏览器的Activity是“com.android.browser.BrowserActivity”。
+
+# 各种特效的代码
+
+http://www.23code.com/
+
+这个网站是各种特效的搜集站。
+
+https://github.com/maarek/android-wheel.git
+
+电表或水表那样的表盘式选择器控件。
+
+https://github.com/jgilfelt/android-viewbadger.git
+
+按钮或者View的角标控件。

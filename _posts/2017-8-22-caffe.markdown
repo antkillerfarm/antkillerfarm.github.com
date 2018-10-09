@@ -376,6 +376,14 @@ https://mp.weixin.qq.com/s/aavlfxII5PW_RrsF6nS99g
 
 模-数转换(A/D)技术
 
+https://mp.weixin.qq.com/s/Coz81Zidz_LaSYkcErJsOQ
+
+NAND Flash与NOR Flash究竟有何不同
+
+https://blog.csdn.net/richard_liujh/article/details/49615395
+
+光学心率测量原理
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/LqjEQN7pHTL47ToDh4WgZg

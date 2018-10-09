@@ -106,7 +106,7 @@ https://www.wilddog.com/
 
 一个物联网后端云平台。
 
->一声叹息啊！野狗的产品算是不错的，但是商业模式不赚钱，终究撑不住了。
+>一声叹息啊！野狗的产品算是不错的，但是商业模式不赚钱，终究撑不住了。2018.3
 
 http://www.hello2025.com/
 
@@ -452,9 +452,9 @@ https://mp.weixin.qq.com/s?__biz=MzIyNzUwMjM2MA==&mid=2247485942&idx=1&sn=159723
 
 编程基础知识
 
-https://mp.weixin.qq.com/s/Coz81Zidz_LaSYkcErJsOQ
+https://mp.weixin.qq.com/s/52JFdyaLwZq7nWiZq6z6qA
 
-NAND Flash与NOR Flash究竟有何不同
+二叉堆是什么鬼？
 
 ## 有用的blog
 

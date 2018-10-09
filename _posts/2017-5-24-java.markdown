@@ -1,8 +1,70 @@
 ---
 layout: post
-title:  Java（二）, 孩子的编程语言, Javascript（二）, Scala, perl, 数据库
+title:  Java（二）, 孩子的编程语言, Javascript（二）, Scala, perl
 category: language 
 ---
+
+# Java的注释型配置
+
+Spring等框架中，有很多配置项是以注释（annotation）的形式出现在代码中，这也成为Java代码中很有特色的一点。
+
+早期的Java代码中，虽然已经开始使用注释，然而这时的注释并不参与自身程序的运行，而主要是为第三方程序提供帮助，比如最著名的Java Doc。
+
+从Java 1.5之后，JDK开始提供相关的注释接口。参见：
+
+http://www.open-open.com/lib/view/open1353144218545.html
+
+全面解析Java注解 
+
+还有一个叫做ADP4J用于简化处理注释。参见：
+
+http://www.open-open.com/lib/view/open1369278937654.html
+
+基于Java注释注入配置属性：ADP4J
+
+参考：
+
+http://www.cnblogs.com/peida/archive/2013/04/24/3036689.html
+
+深入理解Java：注解（Annotation）自定义注解入门
+
+# main函数
+
+和一般的C/C++程序只有一个main函数不同，Java允许每个类都有自己的main函数。只要在程序执行时，指定使用某个类的main函数即可，这个类被称作“主类”。
+
+这种设计方式对调试程序、模块测试很有帮助。我们可以设定某个小模块中的类为主类，来单独测试该模块，而不必将整个系统运行起来。
+
+# static block
+
+{% highlight java %}
+class A  
+{  
+    ...
+    static  
+    {  
+        System.out.println("static block executed.");  
+    }
+    ...
+}
+{% endhighlight %}
+
+这样的结构被称为static block，它会在类被加载的时候执行且仅会被执行一次，相当于是特殊的构造函数。
+
+参见：
+
+http://www.cnblogs.com/icejoywoo/archive/2011/05/09/2041449.html
+
+# POJO
+
+POJO（Plain Ordinary Java Object）：简单的Java对象。
+
+这个名词被创造出来，用以和JavaBean做一个区分。后者通常是被容器所创建，还要实现Serializable接口用于实现Bean的持久性。
+
+# IntelliJ IDEA
+
+Alt+Enter：自动import
+
+双编辑窗口：在代码的标签上右键->Split Horizontally
 
 # Java各集合类的比较 
 
@@ -316,107 +378,45 @@ perl的语法和C差别不算太大，好多语法大致上从关键字也可以
 
 perl的包管理器叫做cpan。这实际上也是该工具网站的名字。
 
-# 数据库
+# DL参考资源
 
-## Sqlite
+https://mp.weixin.qq.com/s/b7QSUeHb2fYTKk3e3V00uA
 
-《Inside Sqlite》是最好的参考书，目前已经有人把它翻译成中文，可以在CSDN上找到。
+担心面部识别泄露隐私？多伦多大学图像“隐私过滤器”了解一下
 
-《SQLite Optimization FAQ》另一篇很好的文章。
+https://mp.weixin.qq.com/s/0q5nWOm5JVrpZVAeufmLPw
 
-http://web.utk.edu/~jplyon/sqlite/SQLite_optimization_FAQ.html
+卷积神经网络十五问：CNN与生物视觉系统的研究探索
 
-关于编译和使用的问题，写的最好的是以下两篇：
+https://mp.weixin.qq.com/s/gmNVS0_yc-c7VaB9r-w9bQ
 
-http://www.99inf.net/SoftwareDev/VC/39396.htm
+为什么我的CNN石乐志？我只是平移了一下图像而已
 
-http://www.cnblogs.com/giszhang/archive/2008/10/09/1307509.html
+https://mp.weixin.qq.com/s/KRttAyx7YW1vkmzo1w1fAg
 
-VC2005 + SQLite 3.6.3 编译、测试开发手记
+教机器遗忘或许比学习更重要：让AI健忘的三种方式
 
-## 参考
+https://mp.weixin.qq.com/s/0jPuPBDokan6B_OltKp9mw
 
-https://blog.csdn.net/zhengzhb/article/details/8590390
+德国本届世界杯胜算最大？帕绍大学基于ELO评级预测
 
-SQL查找删除重复行
+https://mp.weixin.qq.com/s/Sb_kPgtwyQFWloDT3707TA
 
-https://mp.weixin.qq.com/s/09BlPee0-kP-At2aDyDbMw
+深度学习了40万个表情，一大波AI表情包来了
 
-中国数据库40年历史：隐秘的江湖与恩怨
+https://mp.weixin.qq.com/s/dJXl5tI-WKB3O28sgJmbkw
 
-https://mp.weixin.qq.com/s/4lZ7My6cs4-VJQ1qGhQxZg
+机器也能感知时间，AI系统可预测5分钟内的未来！
 
-AliSQL X-Cluste：基于X-Paxos的高性能强一致MySQL数据库
+https://mp.weixin.qq.com/s/xS8EsNtSdHiFgg_HnuJJWg
 
-https://mp.weixin.qq.com/s/tPzBlQGxGq1WEnXz5ggpxg
+照片有灵异鬼影？伯克利陈启峰培育高能FCN“除灵师”
 
-sysbench在美团点评中的应用
+https://mp.weixin.qq.com/s/keWrgmCfJrnswDDKEL52Cg
 
-https://mp.weixin.qq.com/s/lJfIkLQaZnN4e9DxX163SA
+数据少，就享受不到深度学习的红利了么？总是有办法的！
 
-一款可能解放DBA的分布式数据库RadonDB的体验之旅
+https://mp.weixin.qq.com/s/YTHM0Ue2iWVyYhOp6UTr1g
 
-http://mp.weixin.qq.com/s/idz6b2rls97W4Iw6J-ubng
-
-美团点评SQL优化工具SQLAdvisor开源
-
-https://mp.weixin.qq.com/s/jCFjhkwQpj1_P-seQurPqQ
-
-SQL解析在美团点评中的应用
-
-https://mp.weixin.qq.com/s/RME5b3plT97nYfUaCl9ePw
-
-关于缓存和数据库强一致的可行方案
-
-https://mp.weixin.qq.com/s/Al0yvkv0FUPjEBtcxS6Fmg
-
-传统数据仓库和云数据仓库的区别
-
-https://mp.weixin.qq.com/s/GXGSDxukbIAM5W-YSX0pDg
-
-美团点评数据库高可用架构的演进与设想
-
-https://mp.weixin.qq.com/s/crluKkEdvfZlHyF_gQm1ZA
-
-漫谈推荐系统及数据库技术
-
-https://mp.weixin.qq.com/s/CwUW-Ntb4qphrqha24P-Og
-
-漫谈推荐系统及数据库技术（二）——分布式数据库技术
-
-https://mp.weixin.qq.com/s/1pXMCcO6NR1SMBzsyES-cw
-
-分布式数据库又支持关系数据模型了？
-
-https://mp.weixin.qq.com/s/yQSMSLBYg4iauu8yeUfvjw
-
-深度解读！时序数据库HiTSDB：分布式流式聚合引擎
-
-https://mp.weixin.qq.com/s/WQh-Ro03e9F1Yrhk0tTZ0A
-
-图解SQL的JOIN
-
-https://mp.weixin.qq.com/s/NbV76hDZXKzvark4JEoyMA
-
-我是如何用2个Unix命令给SQL提速的
-
-https://mp.weixin.qq.com/s/gQAA2-YuvTHrL2IP8Bco6w
-
-缓存与数据库的数据一致性方案介绍
-
-https://mp.weixin.qq.com/s/m76PFxbcY6_-XyeU7uu4Jg
-
-数据库的最简单实现
-
-https://mp.weixin.qq.com/s/rZuGW9Fe0TA3dNEY7dh_Jg
-
-TimescaleDB比拼InfluxDB：如何选择合适的时序数据库？
-
-https://mp.weixin.qq.com/s/pZnAcjFlBM2I4Hyctd6MHw
-
-图数据库真的比关系数据库更先进吗？
-
-https://mp.weixin.qq.com/s/O3A5gVewRQ11Z8RdPcs-9w
-
-一文看懂Pinterest如何构建时间序列数据库系统Goku
+图像识别泛化能力人机对比：CNN比人类还差得远
 

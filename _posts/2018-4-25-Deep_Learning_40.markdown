@@ -298,14 +298,6 @@ https://mp.weixin.qq.com/s/V4_euZRcyyxeimXAA_waAg
 
 贾佳亚：最有效的COCO物体分割算法
 
-https://mp.weixin.qq.com/s/Amr34SdrPZho1GQpFS7WBA
-
-见微知著：语义分割中的弱监督学习
-
-https://mp.weixin.qq.com/s/zOWA1oKbopZJuYIAYYlKTA
-
-港中文-商汤联合论文：自监督语义分割的混合与匹配调节
-
 https://mp.weixin.qq.com/s/M1Oo4ST2aspgZF8UeSUDww
 
 如何妙笔勾檀妆：像素级语义理解
@@ -362,3 +354,6 @@ https://mp.weixin.qq.com/s/Sn3N8IxHtgp53Y0VLIPJCQ
 
 17毫秒每帧！实时语义分割与深度估计
 
+https://mp.weixin.qq.com/s/iNz82GUULxDndBIiGSArmQ
+
+新开源！实时语义分割算法Light-Weight RefineNet

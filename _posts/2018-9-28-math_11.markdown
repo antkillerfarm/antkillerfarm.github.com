@@ -1,64 +1,10 @@
 ---
 layout: post
-title:  数学狂想曲（十一）——高阶统计
+title:  数学狂想曲（十一）——高阶统计, 数学杂谈
 category: math 
 ---
 
-# 功率谱（续）
-
->Erik Ivar Fredholm，1866～1927，瑞典数学家。Uppsala University博士（1898）+Stockholm University教授。不知道是不是瑞典的保险业比较发达，他和Cramér居然都当过兼职的精算师。。。瑞典皇家科学院院士。
-
->Uppsala University是瑞典，也是北欧最古老的大学，始建于1477年。
-
-功率谱密度的估计方法主要包括参数法和非参数法两大类。
-
-参数法包括：
-
-1.模型辨识法。基本就是上面提到的ARIMA或者其变种。
-
-2.最小方差无失真响应法（MVDR）。
-
-3.特征分解法。将相关矩阵R分解为两个子空间：信号子空间和噪声子空间。
-
-非参数法包括：
-
-1.周期图法。
-
-2.多窗口法。
-
-一般来说，随机过程的功率谱包含两个分量：确定性分量和连续分量。前者是增量过程$$\mathrm{d}Z(\omega)$$的一阶矩，后者是$$\mathrm{d}Z(\omega)$$的二阶中心矩。
-
-参数法一般在知道相关物理规律时使用，它具有较高的精确度。而非参数法由于只依赖增量过程的一阶矩和二阶中心矩，因此适用范围更广泛，即使不知道系统的物理规律也可以使用。（有些类似万能拟合的GMM）
-
-参考：
-
-https://www.zhihu.com/question/29520851
-
-功率谱密度如何理解？
-
-# 高阶统计
-
-上面讨论的基本都是一阶和二阶统计量，实际上我们还可以使用更高阶的统计量。使用高阶统计量的学科，一般被称为高阶统计学（higher-order statistics）。
-
-## Moment
-
-Moment（矩）的定义为：
-
-$$\mu_n = \int_{-\infty}^\infty (x - c)^n\,f(x)\,\mathrm{d}x$$
-
-其中，当c=0时，被称作Raw Moment。当c为均值时，被称作Central Moment。如果用$$\mu_n/\sigma^n$$替换$$\mu_n$$，就是所谓的Normalised Moment了。
-
-1阶Raw Moment，常称为Mean。2阶Central Moment，常称为Variance。3阶Normalised Moment，常称为Skewness。4阶Normalised Moment，常称为kurtosis。
-
-## Cumulants
-
-Cumulants（累积量）的思想最早是Thorvald Thiele提出的，后来被Ronald Fisher和John Wishart发扬光大。
-
->Thorvald Nicolai Thiele，1838～1910，丹麦天文学家。哥本哈根大学博士。哥本哈根天文台台长（1978～1907）。曾研究过三体问题。被Ronald Fisher誉为“最伟大的统计学家”。
-
->John Wishart，1898～1956，苏格兰数学家和农业统计学家。Edinburgh University本科+Cambridge University硕士+University College London博士。导师是Karl Pearson，和Ronald Fisher也有过合作。Royal Society of Edinburgh会员。Cambridge University统计实验室首任主任。
-
->苏格兰人的自我意识真是强，足球有自己的协会，就连皇家学会也有自己的。
+# 高阶统计（续）
 
 在介绍Cumulants之前，我们首先看一下Moment-generating function：
 
@@ -130,3 +76,44 @@ https://wenku.baidu.com/view/136b666c561252d380eb6e8c.html
 
 高阶统计量的定义与性质
 
+# 数学杂谈
+
+有一次正在做穿过欧洲的旅行，他与一个陌生人聊天，他很谦虚的自我介绍：“我是Daniel Bernoullis。”
+
+那个人当时就怒了，说：“我还是Issac Newton（牛顿）呢。”
+
+Daniel从此之后在很多的场合深情的回忆起这一次经历把他当作他曾经听过的最衷心的赞扬。
+
+----
+
+Klein和Poincare都在研究自守函数什么的，对于2维的情况，Poincare把自己的结果用Fuchs的名字来命名，因为这个人的东西他曾经看过，并且有很大的影响，Klein感到特别的不爽，他也得到了这样的结果。然而，Fuchs本人对此却一无所知，如此冠名，他自然觉得很不妥。
+
+后来，他和Poincare分别做3维的情况，无奈自己不是Poincare那样的天才，用功过度，体力不支，身体都垮了，从此结束了自己创造性的数学生涯。Poincare自己也不在乎这个东西，于是把3维自己得到的群命名为Klein群。
+
+----
+
+高斯给出了正十七边形可以尺规作图的理论可能性，然而他并不会做。第一个真正的正十七边形尺规作图法直到1825年才由约翰尼斯·厄钦格（Johannes Erchinger）给出。现在比较通行的做法是1893年Herbert William Richmond给出的。距离高斯给出证明（1801年），差不多过了100年。
+
+----
+
+https://mp.weixin.qq.com/s/zozViMoimcL6nJvyBnTQtQ
+
+八岁小孩眼里的欧拉公式
+
+这里讲的是拓扑学中的欧拉公式：V−E+R=2，然而成年人的世界里没有Easy这个词，V−E+R会不会等于其他数呢？于是就有了Euler characteristic。
+
+----
+
+《素数之恋》这本书不错，黎曼猜想的最佳科普读本。
+
+Sir Michael Francis Atiyah，1929年生，英国籍黎巴嫩裔数学家。剑桥大学博士（1955），英国皇家学会会长（1990～1995），获得过Fields Medal(1966)和Abel Prize(2004)。
+
+Atiyah的高中在埃及读的（1941～1945），当时欧洲很多人为了躲避战乱，逃到了那里。
+
+----
+
+有种素数叫做“工业级素数（Industrial-grade primes）”，定义是没有经过严格数学证明、但是通过了“可能素数判定法”（比如米勒-拉宾判定法）的整数。用这种方法判定大整数是否是素数不是完全准确，但速度非常快，而且不会漏掉任何素数。RSA加密法所需的大素数生成方式就很明显了：随机生成大整数，如果判断这个数可能是素数，再用精确但速度慢的素数判定法来判断这个数是否真的是素数。
+
+https://www.zhihu.com/question/54779059
+
+RSA生成公私钥时质数是怎么选的？

@@ -300,6 +300,10 @@ https://mp.weixin.qq.com/s/7I8k3sKZfaGr8vj1WHbS7g
 
 99页推荐系统情感分析教程发布
 
+https://mp.weixin.qq.com/s/5ryEfgQnX-JXCvhwzKSCjA
+
+点击率预估界的“神算子”是如何炼成的？
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

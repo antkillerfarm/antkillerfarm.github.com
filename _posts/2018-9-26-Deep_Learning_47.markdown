@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  深度学习（四十七）——无监督/半监督深度学习, 深度ISP, 深度哈希, 信息检索, 语音合成
+title:  深度学习（四十七）——无监督/半监督/自监督深度学习, 深度ISP, 深度哈希, 信息检索, 语音合成
 category: DL 
 ---
 
-# 无监督/半监督深度学习
+# 无监督/半监督/自监督深度学习
 
 https://mp.weixin.qq.com/s/kbqTHIOzAj1aERl4tm-kVA
 
@@ -66,6 +66,34 @@ https://mp.weixin.qq.com/s/TEk_i4kEjUqmAqF8LgTVjg
 
 FAIR提出用聚类方法结合卷积网络，实现无监督端到端图像分类
 
+https://mp.weixin.qq.com/s/dSncg1pDHpIFOT4mXrFntA
+
+Yan Lecun自监督学习：机器能像人一样学习吗？ 110页PPT
+
+https://mp.weixin.qq.com/s/W4zwKqkVQN4v-IKzGrkudg
+
+通过传递不变性实现自监督视觉表征学习
+
+https://zhuanlan.zhihu.com/p/30265894
+
+自监督学习近期进展
+
+https://mp.weixin.qq.com/s/cTlXMxcpzc7_5NVsTm1jcA
+
+学习一帧，为整段黑白视频上色：谷歌提出自监督视觉追踪模型
+
+https://mp.weixin.qq.com/s/Amr34SdrPZho1GQpFS7WBA
+
+见微知著：语义分割中的弱监督学习
+
+https://mp.weixin.qq.com/s/zOWA1oKbopZJuYIAYYlKTA
+
+港中文-商汤联合论文：自监督语义分割的混合与匹配调节
+
+https://mp.weixin.qq.com/s/5xlSoC5sgzsAwMYMSFCjnw
+
+TextTopicNet:CMU开源无标注高精度自监督模型
+
 # 深度ISP
 
 https://mp.weixin.qq.com/s/wA85XFQXeypuoqFnmN2P4g
@@ -91,6 +119,10 @@ https://mp.weixin.qq.com/s/_tvOQPvybqmvLF19kHcbFg
 https://mp.weixin.qq.com/s/Wdxkvlz4nLbJS_gWqHwMjw
 
 无需额外硬件，全卷积网络让机器学习学会夜视能力
+
+https://mp.weixin.qq.com/s/iH7gbRn4opLsWgKWoVFpBA
+
+腾讯优图&港科大提出较大前景运动下的深度高动态范围成像
 
 # 深度哈希
 

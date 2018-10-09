@@ -141,6 +141,22 @@ https://www.douban.com/group/topic/27583755/
 
 # 数字成像
 
+## 结构光
+
+http://mp.weixin.qq.com/s/MWQDwMoRc0c1ofkENzn3Ew
+
+结构光，TOF，双目视觉的异同
+
+https://mp.weixin.qq.com/s/o_XsmqLSPhvuC0iiK7xHag
+
+结构光（1）基本介绍
+
+https://mp.weixin.qq.com/s?__biz=MzU3ODU0Nzk5MA==&mid=2247483804&idx=1&sn=9e37b8cbd9c47f108c1153e3165fffa3
+
+小米结构光VS iPhone 结构光（一）
+
+## 参考
+
 https://mp.weixin.qq.com/s/od9uDZdRU4QaBKPHb0tLag
 
 cmos sensor基础
@@ -177,10 +193,6 @@ https://mp.weixin.qq.com/s/gyuKlDwlIqaZmC3w-r8oqg
 
 手机相机如何排名
 
-https://mp.weixin.qq.com/s/o_XsmqLSPhvuC0iiK7xHag
-
-结构光（1）基本介绍
-
 https://mp.weixin.qq.com/s/cDrVpqsY7f2HZCJa4X8Iww
 
 Google Pixel 2/2XL视频稳定技术探究
@@ -196,10 +208,6 @@ https://mp.weixin.qq.com/s/DH3mZgh4YbnceaFGs03kOQ
 https://mp.weixin.qq.com/s/f2BIrZ8if7_rX__J9hMHog
 
 广色域----iphone X/8 camera的色彩进化
-
-http://mp.weixin.qq.com/s/MWQDwMoRc0c1ofkENzn3Ew
-
-结构光，TOF，双目视觉的异同
 
 https://mp.weixin.qq.com/s/VjzXYgkzAGloczaaPXni2A
 

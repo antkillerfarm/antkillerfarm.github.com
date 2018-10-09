@@ -4,7 +4,7 @@ title:  Android Studio, Java（一）
 category: language 
 ---
 
-## Android Studio配置
+# Android Studio配置
 
 又是两年不曾摸过Android的开发了，一切又需要从头开始。这次卷土重来，windows已经不是我首选的平台了，因此以下的内容都是在Ubuntu 14.04下完成的。PS：除了网银、游戏、公司的工作，我现在已经基本不在windows下玩了。
 
@@ -26,7 +26,7 @@ category: language
 
 3)mac：~/.gradle/wrapper/dists/gradle-1.6-bin/72srdo3a5eb3bic159kar72vok
 
-## 关于自动更新
+# 关于自动更新
 
 Android Studio有增量自动更新功能，虽然不是每次出新版本都要升级，但是其升级系统只支持若干个小版本之间的跳变升级。一但超出这个范围，就需要手动下载离线包来升级了。
 
@@ -64,40 +64,54 @@ https://dl.google.com/android/studio/patches/AI-130.737825-132.843336-patch-win.
 
 IntelliJ IDEA安装更新包的方法与Android Studio一致，但需要添加log4j.jar到classpath。
 
-## 完整安装包
+# 完整安装包
 
 https://dl.google.com/dl/android/studio/ide-zips/2.1.2.0/android-studio-ide-143.2915827-linux.zip
 
-## Eclipse导出至Android Studio
+# Eclipse导出至Android Studio
 
 将之前开发的旧工程导入Android Studio，出现 INSTALL_PARSE_FAILED_MANIFEST_MALFORMED的问题，这个是由于AndroidManifest.xml文件内容有问题导致的。最常见的原因是activity所在的包的名字里有大写字母，但奇怪的是activity本身有大写字母却是无所谓的。
 
-## 调用计算器
-
-如果是调用系统自带的计算器，在网上搜了一下，可以使用如下代码：
+# 关于一个语法现象
 
 {% highlight java %}
-Intent mIntent = new Intent();
-mIntent.setClassName("com.android.calculator2",
-     "com.android.calculator2.Calculator");
-startActivity(mIntent);
+    AlertDialog dialog = new AlertDialog.Builder(SmartGuider.this)
+           .setTitle("设置错误")
+           .setMessage("GPS功能未开启，请先开启GPS后再使用本程序！\n\n点击Ok进入系统设置页面，点击Cancel退出程序。")
+           .create();
 {% endhighlight %}
 
-从代码的内容来看，主要是使用Intent启动系统计算器的Activity。但是这个代码在我目前的环境下，却在运行时出现了以下错误：
+在apidemo中，有很多类似于这样的语句。刚阅读到的时候，先是觉得是不是语法有误，怎么能在一条语句中，调用两个成员函数。接着一想，这是人家出的demo，怎么可能犯这种低级错误，一处也就罢了，总不可能到处都出这种错吧。
 
-android.content.ActivityNotFoundException: Unable to find explicit activity class {com.android.calculator2/com.android.calculator2.Calculator};
+于是就考虑是不是Java的新语法，毕竟Java这种语言从1.0到1.7，已经有8个版本了，像@Override和模板之类的特性都是后来添加进去的。但查了半天也没查到出处。
 
-很显然系统计算器的Activity的名字不对，那么正确的名字是什么呢？
+于是去Android SDK中查看相关类的方法，才发现了奥妙。
 
-手动打开系统计算器，这时可以在系统log中看到“com.android.calculator2.CalculatorActivity”的字样频繁出现，显然这个才是正确的Activity的名字。
+{% highlight java %}
+AlertDialog create()
+AlertDialog.Builder setTitle(CharSequence title)
+AlertDialog.Builder setMessage(CharSequence message)
+{% endhighlight %}
 
-在三星的手机上，计算器的Activity是“com.sec.android.app.popupcalculator.Calculator”。
+由于setTitle和setMessage返回的都是AlertDialog.Builder类型的引用（多半就是this），从而使得这样连写的语法得以实现。如果把create放到setTitle或setMessage之前，显然就会出错了。因此这根本就不是什么新语法，而只是一种技巧而已。
 
-同样的方法，我们可以找到浏览器的Activity是“com.android.browser.BrowserActivity”。
+在C语言中，其实也有类似的情况，例如
 
-## 有用的类
+`char *strcpy(char *strDestination,const char *strSource);`
 
-android.media.MediaPlayer 播放多媒体文件
+为什么不写成
+
+`void strcpy(char *strDestination,const char *strSource);`
+
+或者
+
+`char *strcpy(const char *strSource);`
+
+呢？
+
+不采用第一种，是因为这样做可以使用诸如`strlen(strcpy(...))`之类的便捷写法。
+
+不采用第二种，当然是和内存分配有关了，这里就不多说了。
 
 # 手势问题
 
@@ -124,22 +138,14 @@ Android作为一个手机OS，从API Level 1开始就提供了手势相关的类
 ## 2--getReadableDatabase函数。
 
 刚看到这个函数还以为是打开一个只读的数据库对象，其实不然，需要注意一下。
-   
-# 各种特效的代码
 
-1.http://www.23code.com/
+# Android上的PC模拟器
 
-这个网站是各种特效的搜集站。
+Exagear、Winulator等，可以用来玩PC老游戏。
 
-2.https://github.com/maarek/android-wheel.git
+# 有用的类
 
-电表或水表那样的表盘式选择器控件。
-
-3.https://github.com/jgilfelt/android-viewbadger.git
-
-按钮或者View的角标控件。
-
-http://blog.csdn.net/zbunix/article/details/8460422
+android.media.MediaPlayer 播放多媒体文件
 
 # 下载AOSP源代码
 
@@ -221,9 +227,43 @@ https://android-git.linaro.org/git/
 
 推荐使用中科大的源，作为清华的替代品。
 
-# Android上的PC模拟器
+# Retrofit
 
-Exagear、Winulator等，可以用来玩PC老游戏。
+Retrofit是一套RESTful架构的Android(Java)客户端实现，基于注解，提供JSON to POJO(Plain Ordinary Java Object,简单Java对象)，POJO to JSON，网络请求(POST，GET,PUT，DELETE等)封装。
+
+官网：
+
+http://square.github.io/retrofit/
+
+参考：
+
+www.cnblogs.com/xinye/p/4375936.html
+
+Retrofit
+
+# OkHttp
+
+OkHttp和Retrofit一样，也是square的作品，它提供了一个比HttpURLConnection更友好强大的HTTP/HTTP2 API。
+
+官网：
+
+http://square.github.io/okhttp/
+
+参考：
+
+http://www.cnblogs.com/ct2011/p/4001708.html
+
+OkHttp使用介绍
+
+# ButterKnife
+
+这个开源库可以让我们从大量的findViewById()和setonclicktListener()中解放出来。这里用到了Java的annotation语法。
+
+参考：
+
+http://www.cnblogs.com/flyme/p/4517560.html
+
+推荐一个Android开发懒人库--ButterKnife
 
 # Java
 
@@ -270,56 +310,4 @@ Java的GUI框架，大致有：
 `cd /usr/lib/jvm`
 
 `sudo ln -s java-7-oracle default-java`
-
-## Java的注释型配置
-
-Spring等框架中，有很多配置项是以注释的形式出现在代码中，这也成为Java代码中很有特色的一点。
-
-早期的Java代码中，虽然已经开始使用注释，然而这时的注释并不参与自身程序的运行，而主要是为第三方程序提供帮助，比如最著名的Java Doc。
-
-从Java 1.5之后，JDK开始提供相关的注释接口。参见：
-
-http://www.open-open.com/lib/view/open1353144218545.html
-
-还有一个叫做ADP4J用于简化处理注释。参见：
-
-http://www.open-open.com/lib/view/open1369278937654.html
-
-## main函数
-
-和一般的C/C++程序只有一个main函数不同，Java允许每个类都有自己的main函数。只要在程序执行时，指定使用某个类的main函数即可，这个类被称作“主类”。
-
-这种设计方式对调试程序、模块测试很有帮助。我们可以设定某个小模块中的类为主类，来单独测试该模块，而不必将整个系统运行起来。
-
-## static block
-
-{% highlight java %}
-class A  
-{  
-    ...
-    static  
-    {  
-        System.out.println("static block executed.");  
-    }
-    ...
-}
-{% endhighlight %}
-
-这样的结构被称为static block，它会在类被加载的时候执行且仅会被执行一次，相当于是特殊的构造函数。
-
-参见：
-
-http://www.cnblogs.com/icejoywoo/archive/2011/05/09/2041449.html
-
-## POJO
-
-POJO（Plain Ordinary Java Object）：简单的Java对象。
-
-这个名词被创造出来，用以和JavaBean做一个区分。后者通常是被容器所创建，还要实现Serializable接口用于实现Bean的持久性。
-
-## IntelliJ IDEA
-
-Alt+Enter：自动import
-
-双编辑窗口：在代码的标签上右键->Split Horizontally
 

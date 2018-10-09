@@ -347,3 +347,8 @@ Python视频深度学习：计算任意影片中所有演员出镜时间
 https://mp.weixin.qq.com/s/Nt4QLX_lbHhszb8fFlmOLA
 
 DeepVS：基于深度学习的视频显著性方法
+
+https://mp.weixin.qq.com/s/NgsSQS6opjOsusTIr9Vx-w
+
+腾讯AI Lab、MIT等机构提出TVNet：可端到端学习视频的运动表征
+

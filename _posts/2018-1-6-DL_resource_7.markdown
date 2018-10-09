@@ -106,10 +106,6 @@ https://mp.weixin.qq.com/s/_dDLbPwpgoOdLc83_JQEuA
 
 CVPR现场会议合集及CCCV内容跟踪
 
-https://mp.weixin.qq.com/s/W4zwKqkVQN4v-IKzGrkudg
-
-通过传递不变性实现自监督视觉表征学习
-
 http://mp.weixin.qq.com/s/SNfSY4CKhX1RDWd4itPx2Q
 
 马里兰大学论文：训练深度神经网络中的一致性难题
@@ -262,10 +258,6 @@ https://mp.weixin.qq.com/s/HN-kAtltn7hkuUlpzmDDFA
 
 TensorFlow Lattice：先前知识推动灵活性提升
 
-https://zhuanlan.zhihu.com/p/30265894
-
-自监督学习近期进展
-
 https://mp.weixin.qq.com/s/gaNSQ_8JGqX4a3lGuf-9fA
 
 如何让电脑成为看图说话的高手？
@@ -366,6 +358,18 @@ https://mp.weixin.qq.com/s/ulLh_JfLa9Os3ZFFAWVETA
 
 谷歌大脑最新研究：高斯过程“超越”随机梯度下降！
 
-https://mp.weixin.qq.com/s/iH7gbRn4opLsWgKWoVFpBA
+https://mp.weixin.qq.com/s/w8l8T1zx0uGF92dC2PVB6g
 
-腾讯优图&港科大提出较大前景运动下的深度高动态范围成像
+Yann LeCun说是时候放弃概率论了，因果关系才是理解世界的基石
+
+https://mp.weixin.qq.com/s/_gKE_nHsCYD0sYXC9jhvLA
+
+超越Softmax瓶颈：一种高秩RNN语言模型
+
+https://mp.weixin.qq.com/s/3bAn-ev14lO9uxQzE0Tk0Q
+
+如何使用深度学习去除人物图像背景
+
+https://mp.weixin.qq.com/s/MnK2LTWR9qEKiiz3OMsSMQ
+
+深度学习漂亮的图像软分割一览

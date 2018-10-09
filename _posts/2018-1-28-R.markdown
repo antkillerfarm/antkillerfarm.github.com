@@ -377,6 +377,10 @@ https://mp.weixin.qq.com/s/57j-YxA4ODMy0RybI8n7uQ
 
 教你在R中使用Keras和TensorFlow构建深度学习模型
 
+https://mp.weixin.qq.com/s/ceq4vn1GcGGw-Q26dAy2hw
+
+别迷失在森林里...
+
 # DL参考资源
 
 https://zhuanlan.zhihu.com/p/36520673
@@ -419,17 +423,9 @@ https://zhuanlan.zhihu.com/p/35305264
 
 一文看懂深度学习中的VQA(视觉问答)技术
 
-https://mp.weixin.qq.com/s/SwJs0OUzBlhiIOyFHFBK_g
-
-一文看懂JeffDean等提出的ENAS到底好在哪？
-
 https://mp.weixin.qq.com/s/eAv0vTBwnGEUDA9PyhlDnA
 
 FAIR等机构联合提出IntPhys：你的智能系统的物理知识，比得上婴儿吗？
-
-https://mp.weixin.qq.com/s/NgsSQS6opjOsusTIr9Vx-w
-
-腾讯AI Lab、MIT等机构提出TVNet：可端到端学习视频的运动表征
 
 https://mp.weixin.qq.com/s/1rtONnhwEc3Osf9gP5fBCQ
 

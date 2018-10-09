@@ -346,6 +346,10 @@ patch -R B C #B还原为A
 
 # bash
 
+手册：
+
+https://www.gnu.org/software/bash/manual/bash.pdf
+
 ## 空格和TAB的细节
 
 在大多数编程语言中，空格和TAB都不是有意义的字符，有没有或者有多少都无所谓。但Linux Shell不是这样的，尽管它看起来并没有如python那样的对缩进的强制语言规定。

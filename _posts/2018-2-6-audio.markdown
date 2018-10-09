@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  音频常识, 区块链
+title:  音频常识, 区块链, 数据库（二）
 category: technology 
 ---
 
@@ -258,6 +258,48 @@ https://mp.weixin.qq.com/s/yyoUoIUBUPV5zkeE88P7Iw
 
 至于比特大陆的AI芯片，似乎对标的是NVIDIA的云服务领域。不是我小看比特大陆，AI芯片这东西光有钱，没有时间积累，是做不好的。
 
+# 数据库
+
+https://mp.weixin.qq.com/s/CwUW-Ntb4qphrqha24P-Og
+
+漫谈推荐系统及数据库技术（二）——分布式数据库技术
+
+https://mp.weixin.qq.com/s/1pXMCcO6NR1SMBzsyES-cw
+
+分布式数据库又支持关系数据模型了？
+
+https://mp.weixin.qq.com/s/yQSMSLBYg4iauu8yeUfvjw
+
+深度解读！时序数据库HiTSDB：分布式流式聚合引擎
+
+https://mp.weixin.qq.com/s/WQh-Ro03e9F1Yrhk0tTZ0A
+
+图解SQL的JOIN
+
+https://mp.weixin.qq.com/s/NbV76hDZXKzvark4JEoyMA
+
+我是如何用2个Unix命令给SQL提速的
+
+https://mp.weixin.qq.com/s/gQAA2-YuvTHrL2IP8Bco6w
+
+缓存与数据库的数据一致性方案介绍
+
+https://mp.weixin.qq.com/s/m76PFxbcY6_-XyeU7uu4Jg
+
+数据库的最简单实现
+
+https://mp.weixin.qq.com/s/rZuGW9Fe0TA3dNEY7dh_Jg
+
+TimescaleDB比拼InfluxDB：如何选择合适的时序数据库？
+
+https://mp.weixin.qq.com/s/pZnAcjFlBM2I4Hyctd6MHw
+
+图数据库真的比关系数据库更先进吗？
+
+https://mp.weixin.qq.com/s/O3A5gVewRQ11Z8RdPcs-9w
+
+一文看懂Pinterest如何构建时间序列数据库系统Goku
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/TUhr31EleePcHHNNUAWQ4A
@@ -283,39 +325,3 @@ https://mp.weixin.qq.com/s/5vDSrWeUvlBuZgmX0R9pBQ
 https://mp.weixin.qq.com/s/t0lGL66YIJwIvI4emNfN7Q
 
 UC Berkeley新研究：通过深度学习建模注意点采样阵列
-
-https://mp.weixin.qq.com/s/w8l8T1zx0uGF92dC2PVB6g
-
-Yann LeCun说是时候放弃概率论了，因果关系才是理解世界的基石
-
-https://mp.weixin.qq.com/s/_gKE_nHsCYD0sYXC9jhvLA
-
-超越Softmax瓶颈：一种高秩RNN语言模型
-
-https://mp.weixin.qq.com/s/3bAn-ev14lO9uxQzE0Tk0Q
-
-如何使用深度学习去除人物图像背景
-
-https://mp.weixin.qq.com/s/MnK2LTWR9qEKiiz3OMsSMQ
-
-深度学习漂亮的图像软分割一览
-
-https://mp.weixin.qq.com/s/5xlSoC5sgzsAwMYMSFCjnw
-
-TextTopicNet:CMU开源无标注高精度自监督模型
-
-https://mp.weixin.qq.com/s/lrl4si8Aeh7Pl76leBSmeA
-
-Nature论文解读：用于改善加权生物网络信噪比的网络增强方法
-
-https://mp.weixin.qq.com/s/0AOOiyWQqpGIdG4-9UmF8Q
-
-DeepMind提出视觉问题回答新模型，CLEVR准确率达98.8％
-
-https://mp.weixin.qq.com/s/8dVronQoeZLJI2g49AljLg
-
-技术讲解概率机器学习——深度学习革命之后AI道路
-
-https://mp.weixin.qq.com/s/LU5-zrWof5HmgqiIx6aNsg
-
-用神经网络来判定量子纠缠？这里有一篇简单易懂的方法解读

@@ -398,3 +398,18 @@ https://mp.weixin.qq.com/s/fJMae88M8GEQi80DfbCKjQ
 
 从“局部连接”回到“全连接”的神经网络
 
+https://mp.weixin.qq.com/s/lrl4si8Aeh7Pl76leBSmeA
+
+Nature论文解读：用于改善加权生物网络信噪比的网络增强方法
+
+https://mp.weixin.qq.com/s/0AOOiyWQqpGIdG4-9UmF8Q
+
+DeepMind提出视觉问题回答新模型，CLEVR准确率达98.8％
+
+https://mp.weixin.qq.com/s/8dVronQoeZLJI2g49AljLg
+
+技术讲解概率机器学习——深度学习革命之后AI道路
+
+https://mp.weixin.qq.com/s/LU5-zrWof5HmgqiIx6aNsg
+
+用神经网络来判定量子纠缠？这里有一篇简单易懂的方法解读

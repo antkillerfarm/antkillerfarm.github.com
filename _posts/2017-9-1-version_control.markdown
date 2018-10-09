@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  版本管理工具的前世今生, Kannel, awk&sed&grep, Win10历险记, 运维工具集
+title:  版本管理工具的前世今生, Kannel, awk&sed&grep, Win10历险记, 运维工具集, 数据库（一）
 category: technology 
 ---
 
@@ -209,45 +209,67 @@ http://baojie.org/blog/2014/06/23/python-text-extraction/
 
 对于同时支持HTTPS和HTTP的资源，引用的时候要把引用资源的URL里的协议头去掉，例如：//www.example.com/scirpt.js，这样相当于相对路径，即浏览器会自动根据当前是HTTPS还是HTTP来给资源URL补上协议头的，可以达到无缝切换。
 
-# DL参考资源
+# 数据库
 
-https://mp.weixin.qq.com/s/b7QSUeHb2fYTKk3e3V00uA
+## Sqlite
 
-担心面部识别泄露隐私？多伦多大学图像“隐私过滤器”了解一下
+《Inside Sqlite》是最好的参考书，目前已经有人把它翻译成中文，可以在CSDN上找到。
 
-https://mp.weixin.qq.com/s/0q5nWOm5JVrpZVAeufmLPw
+《SQLite Optimization FAQ》另一篇很好的文章。
 
-卷积神经网络十五问：CNN与生物视觉系统的研究探索
+http://web.utk.edu/~jplyon/sqlite/SQLite_optimization_FAQ.html
 
-https://mp.weixin.qq.com/s/gmNVS0_yc-c7VaB9r-w9bQ
+关于编译和使用的问题，写的最好的是以下两篇：
 
-为什么我的CNN石乐志？我只是平移了一下图像而已
+http://www.99inf.net/SoftwareDev/VC/39396.htm
 
-https://mp.weixin.qq.com/s/KRttAyx7YW1vkmzo1w1fAg
+http://www.cnblogs.com/giszhang/archive/2008/10/09/1307509.html
 
-教机器遗忘或许比学习更重要：让AI健忘的三种方式
+VC2005 + SQLite 3.6.3 编译、测试开发手记
 
-https://mp.weixin.qq.com/s/0jPuPBDokan6B_OltKp9mw
+## 参考
 
-德国本届世界杯胜算最大？帕绍大学基于ELO评级预测
+https://blog.csdn.net/zhengzhb/article/details/8590390
 
-https://mp.weixin.qq.com/s/Sb_kPgtwyQFWloDT3707TA
+SQL查找删除重复行
 
-深度学习了40万个表情，一大波AI表情包来了
+https://mp.weixin.qq.com/s/09BlPee0-kP-At2aDyDbMw
 
-https://mp.weixin.qq.com/s/dJXl5tI-WKB3O28sgJmbkw
+中国数据库40年历史：隐秘的江湖与恩怨
 
-机器也能感知时间，AI系统可预测5分钟内的未来！
+https://mp.weixin.qq.com/s/4lZ7My6cs4-VJQ1qGhQxZg
 
-https://mp.weixin.qq.com/s/xS8EsNtSdHiFgg_HnuJJWg
+AliSQL X-Cluste：基于X-Paxos的高性能强一致MySQL数据库
 
-照片有灵异鬼影？伯克利陈启峰培育高能FCN“除灵师”
+https://mp.weixin.qq.com/s/tPzBlQGxGq1WEnXz5ggpxg
 
-https://mp.weixin.qq.com/s/keWrgmCfJrnswDDKEL52Cg
+sysbench在美团点评中的应用
 
-数据少，就享受不到深度学习的红利了么？总是有办法的！
+https://mp.weixin.qq.com/s/lJfIkLQaZnN4e9DxX163SA
 
-https://mp.weixin.qq.com/s/YTHM0Ue2iWVyYhOp6UTr1g
+一款可能解放DBA的分布式数据库RadonDB的体验之旅
 
-图像识别泛化能力人机对比：CNN比人类还差得远
+http://mp.weixin.qq.com/s/idz6b2rls97W4Iw6J-ubng
+
+美团点评SQL优化工具SQLAdvisor开源
+
+https://mp.weixin.qq.com/s/jCFjhkwQpj1_P-seQurPqQ
+
+SQL解析在美团点评中的应用
+
+https://mp.weixin.qq.com/s/RME5b3plT97nYfUaCl9ePw
+
+关于缓存和数据库强一致的可行方案
+
+https://mp.weixin.qq.com/s/Al0yvkv0FUPjEBtcxS6Fmg
+
+传统数据仓库和云数据仓库的区别
+
+https://mp.weixin.qq.com/s/GXGSDxukbIAM5W-YSX0pDg
+
+美团点评数据库高可用架构的演进与设想
+
+https://mp.weixin.qq.com/s/crluKkEdvfZlHyF_gQm1ZA
+
+漫谈推荐系统及数据库技术
 

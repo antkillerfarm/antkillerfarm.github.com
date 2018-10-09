@@ -216,6 +216,10 @@ https://www.zhihu.com/question/67477086
 
 如何评价Google最新的论文NASNet？
 
+https://mp.weixin.qq.com/s/SwJs0OUzBlhiIOyFHFBK_g
+
+一文看懂JeffDean等提出的ENAS到底好在哪？
+
 https://mp.weixin.qq.com/s/MkXBtGq4xt5YOh1-uhMBbg
 
 循环神经网络自动生成程序：谷歌大脑提出“优先级队列训练”
