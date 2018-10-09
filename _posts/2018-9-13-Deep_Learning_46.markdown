@@ -284,6 +284,10 @@ https://mp.weixin.qq.com/s/sCGNUI-mUSYxD69uBDQNoQ
 
 基于深度学习的目标检测算法综述：算法改进
 
+https://mp.weixin.qq.com/s/XdH54ImSfgadCoISmVyyVg
+
+基于单目摄像头的物体检测
+
 # 细粒度分类
 
 https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw
@@ -420,3 +424,10 @@ https://zhuanlan.zhihu.com/p/46131981
 
 最前沿：Meta Learning在少样本文本翻译上的应用
 
+https://zhuanlan.zhihu.com/p/46339823
+
+谈谈无监督Meta Learning的研究
+
+https://zhuanlan.zhihu.com/p/46340382
+
+ICLR19最新论文解读之Meta Domain Adaptation

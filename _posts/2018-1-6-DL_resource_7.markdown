@@ -373,3 +373,11 @@ https://mp.weixin.qq.com/s/3bAn-ev14lO9uxQzE0Tk0Q
 https://mp.weixin.qq.com/s/MnK2LTWR9qEKiiz3OMsSMQ
 
 深度学习漂亮的图像软分割一览
+
+https://mp.weixin.qq.com/s/53-Xz0oznkaFdEPSbXCOng
+
+想理解神经算术逻辑单元吗？
+
+https://mp.weixin.qq.com/s/ZcP7PV4KfYw6VWlCDJ0nlQ
+
+来自研究员的读书笔记：基于数据驱动的三维几何解码器

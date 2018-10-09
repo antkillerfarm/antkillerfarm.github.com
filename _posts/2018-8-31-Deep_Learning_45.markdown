@@ -304,6 +304,10 @@ https://mp.weixin.qq.com/s/5H3wk93QoxHteR_HD2hWiA
 
 DeepMind提出架构搜索新方法：使用分层表示，时间短精度高
 
+https://zhuanlan.zhihu.com/p/46350372
+
+语义分割领域开山之作：Google提出用神经网络搜索实现语义分割
+
 # GAN进阶（续）
 
 https://mp.weixin.qq.com/s/c84LMFnIhoDeolc1B4MIVA
