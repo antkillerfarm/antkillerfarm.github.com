@@ -72,6 +72,10 @@ https://zhuanlan.zhihu.com/p/42726550
 
 为什么要对参数设先验(Prior)
 
+https://mp.weixin.qq.com/s/6_BSs7SK2HWq0-7RgNeuzA
+
+理解生成模型与判别模型
+
 ## 高斯分布的向量形式
 
 高斯分布的向量形式$$N(\mu,\Sigma)$$的概率密度函数为：

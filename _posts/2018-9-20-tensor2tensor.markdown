@@ -253,3 +253,8 @@ https://mp.weixin.qq.com/s/cV-5W4YWC9f9wsoNX5fIXA
 https://mp.weixin.qq.com/s/NMRwXqwr4VFbMUPgI8Uccg
 
 使用 Google Cloud 上的 tf.Transform 对 TensorFlow 管道模式进行预处理
+
+https://mp.weixin.qq.com/s/UKt1cFLcRYZQTJiZRiajwQ
+
+TensorFlow Servering C/S通信约束
+
