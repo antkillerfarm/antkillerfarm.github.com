@@ -112,6 +112,10 @@ https://mp.weixin.qq.com/s/NXDJ4uCpdX-YcWiKAsjJLQ
 
 传说中的推土机距离基础，最优传输理论了解一下
 
+https://mp.weixin.qq.com/s/5sNXmQbINIWMGjX5TYAPYw
+
+最优传输理论你理解了，传说中的推土机距离重新了解一下
+
 # LSA
 
 ## 基本原理

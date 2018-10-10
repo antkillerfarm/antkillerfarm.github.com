@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十五）——Attention进阶, 多任务学习, AutoDL
+title:  深度学习（四十五）——Attention进阶, AutoDL
 category: DL 
 ---
 
@@ -45,10 +45,6 @@ https://zhuanlan.zhihu.com/p/25928551
 http://blog.csdn.net/leo_xu06/article/details/53491400
 
 视觉注意力的循环神经网络模型
-
-https://mp.weixin.qq.com/s/0yb-YRGe-q4-vpKpuE4D_w
-
-多种注意力机制互补完成VQA（视觉问答）
 
 https://mp.weixin.qq.com/s/l4HN0_VzaiO-DwtNp9cLVA
 
@@ -117,56 +113,6 @@ https://zhuanlan.zhihu.com/p/32971586
 https://zhuanlan.zhihu.com/p/33158614
 
 图像识别：基于位置的柔性注意力机制
-
-# 多任务学习
-
-https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA
-
-多任务学习-Multitask Learning概述
-
-https://mp.weixin.qq.com/s/A-CVKTz_moaFzTYywSt2gg
-
-张宇 杨强：多任务学习概述
-
-https://mp.weixin.qq.com/s/ZlCI02UdRuFBc-uKqIPE_w
-
-深度学习多任务学习综述
-
-https://mp.weixin.qq.com/s/QXOy2jo4RhCZrD5bSVzBOQ
-
-共享相关任务表征，一文读懂深度神经网络多任务学习
-
-https://mp.weixin.qq.com/s/mm9bXXTEzd8DwyYlMgGMZg
-
-NLP多任务学习：一种层次增长的神经网络结构
-
-https://mp.weixin.qq.com/s/X6FwTgr282hbqgOz3oBX-w
-
-多任务学习概述论文：从定义和方法到应用和原理分析
-
-https://blog.csdn.net/CoderPai/article/details/80080455
-
-多任务学习与深度学习
-
-https://blog.csdn.net/CoderPai/article/details/80087188
-
-利用TensorFlow一步一步构建一个多任务学习模型
-
-https://mp.weixin.qq.com/s/fcFb6WkJVP8TYpoxkQgiWQ
-
-CMU提出“十字绣网络”，自动决定多任务学习的最佳共享层
-
-https://mp.weixin.qq.com/s/i7WAFjQHK1NGVACR8x3v0A
-
-自然语言十项全能：转化为问答的多任务学习
-
-https://mp.weixin.qq.com/s/NpO1UP_mzyaeqW26xLY1Xg
-
-CVPR 2018最佳论文作者亲笔解读：研究视觉任务关联性的Taskonomy
-
-https://mp.weixin.qq.com/s/DUSa3SW1AgvJ0szL030NHQ
-
-一个AI玩57个游戏，DeepMind离真正“万能”的AGI不远了！
 
 # AutoDL
 
@@ -386,3 +332,6 @@ https://mp.weixin.qq.com/s/bKve_tZi9usz4oX0T3S15A
 
 悉尼大学陶大程：遗传对抗生成网络有效解决GAN两大痛点
 
+https://mp.weixin.qq.com/s/UO0pNLcwYN5tE5x_4azVJA
+
+LSGAN：最小二乘生成对抗网络

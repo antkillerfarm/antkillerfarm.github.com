@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十七）——KNN, Optimizer进阶, 聚类算法, 特征工程, 模仿学习, 三门问题
+title:  机器学习（三十七）——KNN, Optimizer进阶, 聚类算法, 特征工程, 模仿学习, 三门问题, 推荐系统进阶（2）
 category: ML 
 ---
 
@@ -289,4 +289,26 @@ https://zhuanlan.zhihu.com/p/21461266
 https://zhuanlan.zhihu.com/p/23338174
 
 蒙提霍尔问题/三门问题（Monty Hall problem）
+
+# 推荐系统进阶
+
+https://mp.weixin.qq.com/s/qmkMJJkMqumbtynM4cLatw
+
+计算广告CTR预估系列
+
+https://zhuanlan.zhihu.com/p/38117606
+
+早期购买行为的分析和预测建模
+
+https://mp.weixin.qq.com/s/nQAqEZW_TJSsbVp-kVcKGA
+
+简谈马尔可夫模型在个性化推荐中的应用
+
+https://mp.weixin.qq.com/s/Zalby_gZsxzrmBq6ZePsiQ
+
+短视频如何做到千人千面？FM+GBM排序模型深度解析
+
+https://mp.weixin.qq.com/s/hkXyqe6tDdgNuLgk3e90JQ
+
+如何发现品牌潜客？目标人群优选算法模型及实践解析
 

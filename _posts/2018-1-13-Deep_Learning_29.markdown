@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十九）——语音识别, CTC
+title:  深度学习（二十九）——多任务学习, 语音识别, CTC
 category: DL 
 ---
 
@@ -37,6 +37,56 @@ https://mp.weixin.qq.com/s/qReN6z8s45870HSMCMNatw
 http://blog.csdn.net/shuzfan/article/details/77964370
 
 不规则卷积神经网络
+
+# 多任务学习
+
+https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA
+
+多任务学习-Multitask Learning概述
+
+https://mp.weixin.qq.com/s/A-CVKTz_moaFzTYywSt2gg
+
+张宇 杨强：多任务学习概述
+
+https://mp.weixin.qq.com/s/ZlCI02UdRuFBc-uKqIPE_w
+
+深度学习多任务学习综述
+
+https://mp.weixin.qq.com/s/QXOy2jo4RhCZrD5bSVzBOQ
+
+共享相关任务表征，一文读懂深度神经网络多任务学习
+
+https://mp.weixin.qq.com/s/mm9bXXTEzd8DwyYlMgGMZg
+
+NLP多任务学习：一种层次增长的神经网络结构
+
+https://mp.weixin.qq.com/s/X6FwTgr282hbqgOz3oBX-w
+
+多任务学习概述论文：从定义和方法到应用和原理分析
+
+https://blog.csdn.net/CoderPai/article/details/80080455
+
+多任务学习与深度学习
+
+https://blog.csdn.net/CoderPai/article/details/80087188
+
+利用TensorFlow一步一步构建一个多任务学习模型
+
+https://mp.weixin.qq.com/s/fcFb6WkJVP8TYpoxkQgiWQ
+
+CMU提出“十字绣网络”，自动决定多任务学习的最佳共享层
+
+https://mp.weixin.qq.com/s/i7WAFjQHK1NGVACR8x3v0A
+
+自然语言十项全能：转化为问答的多任务学习
+
+https://mp.weixin.qq.com/s/NpO1UP_mzyaeqW26xLY1Xg
+
+CVPR 2018最佳论文作者亲笔解读：研究视觉任务关联性的Taskonomy
+
+https://mp.weixin.qq.com/s/DUSa3SW1AgvJ0szL030NHQ
+
+一个AI玩57个游戏，DeepMind离真正“万能”的AGI不远了！
 
 # 语音识别
 

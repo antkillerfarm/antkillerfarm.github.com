@@ -229,4 +229,3 @@ EMNLP 2018 基于自适应的多轮解码机制的神经机器翻译模型
 https://mp.weixin.qq.com/s/tts6UzF-ziyNp0s31Qiqtg
 
 达观数据：如何用深度学习做好长文本分类与法律文书智能化处理
-

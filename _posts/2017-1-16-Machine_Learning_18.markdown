@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（十八）——推荐系统进阶
+title:  机器学习（十八）——推荐系统进阶（1）
 category: ML 
 ---
 
@@ -277,4 +277,3 @@ CKE
 https://mp.weixin.qq.com/s/bu9rSno_WmHHisE3lzYnqg
 
 ConvMF
-

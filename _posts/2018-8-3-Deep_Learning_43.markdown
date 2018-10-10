@@ -268,6 +268,10 @@ https://mp.weixin.qq.com/s/MPdGF2-cJbNcvaEx-2BnFg
 
 把2D公路变成3D飞车游戏，MIT、清华打破图像编辑的次元壁
 
+https://mp.weixin.qq.com/s/h6sktVd1ywCCncUb9iwyFQ
+
+中科院自动化所：高清真实图像生成领域及GAN研究在人脸识别领域的进展
+
 # Graph NN
 
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw

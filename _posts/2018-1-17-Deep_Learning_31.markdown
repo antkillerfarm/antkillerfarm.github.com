@@ -160,7 +160,7 @@ http://nlp.csai.tsinghua.edu.cn/~zm/
 
 Image Caption Generation的目标是：给定一张图片，让计算机用一句话来描述这张图片。
 
-当然，它也有反操作：Generating Videos from Captions。
+当然，它也有反操作：Generating Image/Videos from Captions。
 
 参考：
 
@@ -227,6 +227,26 @@ Facobook开源视觉问答VQA框架：Pythia
 https://mp.weixin.qq.com/s/sc3ROchBFK9pAb-FCKNwLg
 
 你说我导！微软玩转标题描述生成视频
+
+https://zhuanlan.zhihu.com/p/35305264
+
+一文看懂深度学习中的VQA(视觉问答)技术
+
+https://mp.weixin.qq.com/s/shBHKh2emSIL5uWV7po8cw
+
+梅涛：“看图说话”
+
+https://mp.weixin.qq.com/s/BQy3qpmQqeQquhf92hwcvQ
+
+2017 VQA Challenge第一名技术报告
+
+https://mp.weixin.qq.com/s/0yb-YRGe-q4-vpKpuE4D_w
+
+多种注意力机制互补完成VQA（视觉问答）
+
+https://mp.weixin.qq.com/s/YBaELQlBHOZTGEqc2WI9NQ
+
+MIT等提出NS-VQA：结合深度学习与符号推理的视觉问答
 
 # Multi-agent
 

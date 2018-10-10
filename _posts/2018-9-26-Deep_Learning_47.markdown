@@ -240,12 +240,6 @@ https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247488366&idx=1&sn=01baaf
 
 语音合成（Speech synthesis），有时也叫做text-to-speech (TTS)。
 
-## 教程
-
-http://web.stanford.edu/~jurafsky/slp3/ed3book.pdf
-
-《语音与语言处理》第三版，NLP和语音合成方面的专著
-
 ## 开源项目
 
 ### Festival
@@ -271,6 +265,26 @@ https://www.gnu.org/software/gnuspeech/
 ### 其他
 
 其他的开源项目还有Gnopernicus、Orca、FreeTTS和Automatik Text Reader，但是这些项目目前基本处于不更新的状态了。
+
+## WaveRNN
+
+论文：
+
+《Efficient Neural Audio Synthesis》
+
+非官方代码：
+
+https://github.com/fatchord/WaveRNN
+
+参考：
+
+https://mp.weixin.qq.com/s/H77iom38lTR0KzeFXrdWew
+
+DeepMind与谷歌大脑联手推出WaveRNN，移动端合成高保真音频媲美WaveNet
+
+https://www.monthly-hack.com/entry/2018/02/26/211248
+
+这是个日文blog，有两张图不错。
 
 ## 参考
 
@@ -305,10 +319,6 @@ https://mp.weixin.qq.com/s/8e4bkyTJIxHZ1y95GshA0Q
 https://mp.weixin.qq.com/s/JSnyE2k7jqd5GR1lHA6WUg
 
 阿里巴巴Oral论文：用于语音合成的深度前馈序列记忆网络
-
-https://mp.weixin.qq.com/s/H77iom38lTR0KzeFXrdWew
-
-DeepMind与谷歌大脑联手推出WaveRNN，移动端合成高保真音频媲美WaveNet
 
 https://mp.weixin.qq.com/s/p_VjFwwDCu1i_ovUljaoVw
 

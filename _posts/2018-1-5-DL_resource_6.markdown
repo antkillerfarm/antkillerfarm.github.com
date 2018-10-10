@@ -160,15 +160,7 @@ https://mp.weixin.qq.com/s/53zse9GD9W25Vx6FCt2Bmw
 
 https://mp.weixin.qq.com/s/diecjVsTkFhulTwET9N4WA
 
-DeepMind 研究科学家深度生成模型报告，视频+PPT一文全揽最新前沿进展
-
-https://mp.weixin.qq.com/s/shBHKh2emSIL5uWV7po8cw
-
-梅涛：“看图说话”
-
-https://mp.weixin.qq.com/s/BQy3qpmQqeQquhf92hwcvQ
-
-2017 VQA Challenge第一名技术报告
+DeepMind研究科学家深度生成模型报告，视频+PPT一文全揽最新前沿进展
 
 https://mp.weixin.qq.com/s/1Gdx-U3DRZtSJoFyCLnD0w
 

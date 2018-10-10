@@ -216,6 +216,10 @@ https://mp.weixin.qq.com/s/JkbM8Af8ApTO4fkxCUTOoA
 
 浅谈动作识别TSN, TRN, ECO
 
+https://mp.weixin.qq.com/s/DCTxmHg9aX3BqCAckv_S0g
+
+不再需要动作捕捉，伯克利推出“看视频学杂技”的AI智能体
+
 # 深度目标跟踪
 
 https://zhuanlan.zhihu.com/p/22334661

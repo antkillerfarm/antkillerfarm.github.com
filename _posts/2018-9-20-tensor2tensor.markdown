@@ -220,6 +220,10 @@ https://blog.csdn.net/Young_Gy/article/details/75194914
 
 无人驾驶之车道线检测简易版
 
+https://mp.weixin.qq.com/s/pdaMAzlZioWsRoC_VdVNYA
+
+OpenCV手部关键点检测（手势识别）
+
 # TensorFlow
 
 https://mp.weixin.qq.com/s/7rTmEBfh613SrNnTQvfSjw

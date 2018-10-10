@@ -419,10 +419,6 @@ https://mp.weixin.qq.com/s/SB5ZSD_YGPvC6hPTZXiB4A
 
 让机器“一叶知秋”：弱监督视觉语义分割
 
-https://zhuanlan.zhihu.com/p/35305264
-
-一文看懂深度学习中的VQA(视觉问答)技术
-
 https://mp.weixin.qq.com/s/eAv0vTBwnGEUDA9PyhlDnA
 
 FAIR等机构联合提出IntPhys：你的智能系统的物理知识，比得上婴儿吗？
