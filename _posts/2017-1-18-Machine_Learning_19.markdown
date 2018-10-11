@@ -1,32 +1,86 @@
 ---
 layout: post
-title:  机器学习（十九）——决策树, 关联规则挖掘
+title:  机器学习（十九）——决策树
 category: ML 
 ---
 
-# 推荐系统进阶
+# 隐式狄利克雷划分（续）
 
-## 其他（续）
+## 如何确定LDA的topic个数
 
-https://mp.weixin.qq.com/s/opJtn5mPVjnfRwr5UZ4aJg
+这个问题上，业界最常用的指标包括Perplexity，MPI-score等。简单的说就是Perplexity越小，且topic个数越少越好。
 
-FTRL原理与工程实践
+从模型的角度解决主题个数的话，可以在LDA的基础上融入嵌套中餐馆过程(nested Chinese Restaurant Process)，印度自助餐厅过程(Indian Buffet Process)等。因此就诞生了这样一些主题模型：
 
-http://www.cnblogs.com/EE-NovRain/p/3810737.html
+1. hierarchical Latent Dirichlet Allocation (hLDA)  (2003_NIPS_Hierarchical topic models and the nested Chinese restaurant process)
 
-各大公司广泛使用的在线学习算法FTRL详解
+2. hierarchical Dirichlet process (HDP)  (2006_NIPS_Hierarchical dirichlet processes)/Nested Hierarchical Dirichlet Processes (nHDP)
 
-https://mp.weixin.qq.com/s/q9FU19Hpw2eWLLhsY5lYJQ
+3. Indian Buffet Process Compound Dirichlet Process (ICD)  (2010_ICML_The IBP compound Dirichlet process and its application to focused topic modeling)
 
-parameter-free contextual bandits
+4. Non-parametric Topic Over Time (npTOT)  (2013_SDM_A nonparametric mixture model for topic modeling over time)
 
-https://mp.weixin.qq.com/s/T-yCjebTzc_t6D4o5gyQLQ
+5. collapsed Gibbs Samplingalgorithm for the Dirichlet Multinomial Mixture Model (GSDMM)  (2014_SIGKDD_A Dirichlet Multinomial Mixture Model-based Approach for Short Text Clustering)
 
-Collaborative Metric Learning
+这些主题模型都被叫做非参数主题模型(Non-parametric Topic Model)，最初可追溯到David M. Blei于2003年提出hLDA那篇文章(2003_NIPS_Hierarchical topic models and the nested Chinese restaurant process)。非参数主题模型是基于贝叶斯概率的与参数无关的主题模型。这里的参数无关主要是指模型本身可以“**随着观测数据的增长而相应调整**”，即主题模型的主题个数能够随着文档数目的变化而相应调整，无需事先人为指定。
 
-https://mp.weixin.qq.com/s/9xxLU51eqhc6C81jzHQijQ
+参考：
 
-简述推荐系统中的矩阵分解
+https://www.zhihu.com/question/32286630
+
+怎么确定LDA的topic个数？
+
+http://blog.csdn.net/luo123n/article/details/48902815
+
+Perplexity详解
+
+## LDA漫游指南
+
+除了rickjin的《LDA数学八卦》之外，马晨写的《LDA漫游指南》也是这方面的中文新作。
+
+该书的数学推导部分主要沿用rickjin的内容，但加入了Blei提出的变分贝叶斯方法。此外，还对LDA的代码实现、并行计算和大数据处理进行了深入的讨论。
+
+## 参考
+
+http://www.arbylon.net/publications/text-est.pdf
+
+《Parameter estimation for text analysis》，Gregor Heinrich著
+
+http://www.inference.phy.cam.ac.uk/itprnn/book.pdf
+
+《Information Theory, Inference, and Learning Algorithms》，David J.C. MacKay著
+
+关于MCMC和Gibbs Sampling的更多的内容，可参考《Neural Networks and Learning Machines》，Simon Haykin著。该书有中文版。
+
+>注：Sir David John Cameron MacKay，1967～2016，加州理工学院博士，导师John Hopfield，剑桥大学教授。英国能源与气候变化部首席科学顾问，英国皇家学会会员。在机器学习领域和可持续能源领域有重大贡献。
+
+>Simon Haykin，英国伯明翰大学博士，加拿大McMaster University教授。初为雷达和信号处理专家。自适应信号处理领域的权威。80年代中后期，转而从事神经计算方面的工作。加拿大皇家学会会员。
+
+http://www.cs.cmu.edu/~epxing/Class/10708-14/lectures/lecture17-MCMC.pdf
+
+http://max.book118.com/html/2015/0513/16864294.shtm
+
+基于LDA分析的词聚类算法
+
+http://www.doc88.com/p-9159009103987.html
+
+基于LDA的博客分类算法
+
+http://blog.csdn.net/sinat_26917383/article/details/52095013
+
+基于LDA的Topic Model变形+一些NLP开源项目
+
+https://mp.weixin.qq.com/s/74lXwDg9H_dyOubfXVn2Bw
+
+一文详解LDA主题模型
+
+https://mp.weixin.qq.com/s/_bAiiJqPjPPMzJ0hiuCkOg
+
+通过Python实现马尔科夫链蒙特卡罗方法的入门级应用
+
+https://mp.weixin.qq.com/s/BJaRUnpcPe8iybSz14gabw
+
+一文读懂如何用LSA、PSLA、LDA和lda2vec进行主题建模
 
 # 决策树
 
@@ -249,54 +303,4 @@ Bagging与随机森林算法原理小结
 https://mp.weixin.qq.com/s/gKQw8saCgSW6JkyocHvKqg
 
 关于决策树的那些事
-
-# 关联规则挖掘
-
-## 基本概念
-
-关联规则挖掘（Association rule mining）是机器学习的一个子领域。它最早的案例就是以下的**尿布和啤酒**的故事：
-
->沃尔玛曾今对数据仓库中一年多的原始交易数据进行了详细的分析，发现与尿布一起被购买最多的商品竟然是啤酒。   
->借助数据仓库和关联规则，发现了这个隐藏在背后的事实：**美国妇女经常会嘱咐丈夫下班后为孩子买尿布，而30%~40%的丈夫在买完尿布之后又要顺便购买自己爱喝的啤酒。**   
->根据这个发现，沃尔玛调整了货架的位置，把尿布和啤酒放在一起销售，大大增加了销量。
-
-这里借用一个引例来介绍关联规则挖掘的基本概念。
-
-| 交易号TID | 顾客购买的商品 | 交易号TID | 顾客购买的商品 |
-|:--:|:--|:--:|:--|
-| T1 | bread, cream, milk, tea | T6 | bread, tea |
-| T2 | bread, cream, milk | T7 | beer, milk, tea |
-| T3 | cake, milk | T8 | bread, tea |
-| T4 | milk, tea | T9 | bread, cream, milk, tea |
-| T5 | bread, cake, milk | T10 | bread, milk, tea |
-
-**定义一**：设$$I=\{i_1,i_2,\dots,i_m\}$$，是m个不同的项目的集合，每个$$i_k$$称为一个**项目**。项目的集合I称为**项集**。其元素的个数称为项集的长度，长度为k的项集称为k-项集。引例中每个商品就是一个项目，项集为$$I=\{bread, beer, cake,cream, milk, tea\}$$，I的长度为6。
-
-**定义二**：每笔**交易T**是项集I的一个子集。对应每一个交易有一个唯一标识交易号，记作TID。交易全体构成了**交易数据库D**，$$\mid D\mid$$等于D中交易的个数。引例中包含10笔交易，因此$$\mid D\mid=10$$。
-
-**定义三**：对于项集X，设定$$count(X\subseteq T)$$为交易集D中包含X的交易的数量，则项集X的**支持度**为：
-
-$$support(X)=\frac{count(X\subseteq T)}{\mid D\mid }$$
-
-引例中$$X=\{bread, milk\}$$出现在T1，T2，T5，T9和T10中，所以支持度为0.5。
-
-**定义四**：**最小支持度**是项集的最小支持阀值，记为$$SUP_{min}$$，代表了用户关心的关联规则的最低重要性。支持度不小于$$SUP_{min}$$的项集称为频繁集，长度为k的频繁集称为k-频繁集。如果设定$$SUP_{min}$$为0.3，引例中$$\{bread, milk\}$$的支持度是0.5，所以是2-频繁集。
-
-**定义五**：**关联规则**是一个蕴含式：
-
-$$R：X\Rightarrow Y$$
-
-其中$$X\subset I$$，$$Y\subset I$$，并且$$X\cap Y=\varnothing$$。表示项集X在某一交易中出现，则导致Y以某一概率也会出现。用户关心的关联规则，可以用两个标准来衡量：支持度和可信度。
-
-**定义六**：关联规则R的**支持度**是交易集同时包含X和Y的交易数与$$\mid D\mid$$之比。即：
-
-$$support(X\Rightarrow Y)=\frac{count(X\cap Y)}{\mid D\mid }$$
-
-支持度反映了X、Y同时出现的概率。关联规则的支持度等于频繁集的支持度。
-
-**定义七**：对于关联规则R，**可信度**是指包含X和Y的交易数与包含X的交易数之比。即：
-
-$$confidence(X\Rightarrow Y)=\frac{support(X\Rightarrow Y)}{support(X)}$$
-
-可信度反映了如果交易中包含X，则交易包含Y的概率。一般来说，只有支持度和可信度较高的关联规则才是用户感兴趣的。
 

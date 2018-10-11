@@ -1,8 +1,141 @@
 ---
 layout: post
-title:  机器学习（十三）——机器学习中的矩阵方法（2）QR分解, 特征值和奇异值
+title:  机器学习（十三）——机器学习中的矩阵方法（1）LU分解, QR分解
 category: ML 
 ---
+
+# 机器学习中的矩阵方法（续）
+
+还有另外一本书《Liner Algebra Done Right》，也值得推荐。这本书从定义矩阵算子，而不是通过行列式，来解释各种线性代数原理，提供了一种独特的视角。因为算子是有明确的几何或物理意义的，而行列式则不然。
+
+>作者：Sheldon Jay Axler，1949年生，美国数学家。普林斯顿大学本科，UCB博士，MIT博士后，San Francisco State University教授。美国的数学系基本就是本科和博士，很少有硕士。因为数学，尤其是理论数学，需要高度的抽象思维能力，半调子的硕士，既不好找工作，也不好搞科研。
+
+《Linear Algebra Done Wrong》，这是布朗大学的Sergei Treil教授的著作，不知道书名是否有恶搞前书的意味...
+
+该书电子版：
+
+https://www.math.brown.edu/~treil/papers/LADW/LADW.html
+
+## 三角矩阵的求逆问题
+
+$$\begin{bmatrix}
+l_{11} & 0 & 0 \\
+l_{21} & l_{22} & 0 \\
+l_{31} & l_{32} & l_{33} \\  
+\end{bmatrix}
+\begin{bmatrix}
+u_{11} & u_{12} & u_{13} \\
+0 & u_{22} & u_{23} \\
+0 & 0 & u_{33} \\  
+\end{bmatrix}
+$$
+
+以3阶方阵为例，上面左边的矩阵被称为下三角矩阵（lower triangular matrix），而右边的矩阵被称为上三角矩阵（upper triangular matrix）。
+
+对于矩阵求逆问题来说，下三角矩阵是一类比较简单的矩阵，求逆难度仅高于对角阵。
+
+下三角矩阵的逆矩阵也是下三角矩阵，因此：
+
+$$AA^{-1}=\begin{bmatrix}
+a_{11} & 0 & \dots & 0 \\
+a_{21} & a_{22} & \dots & 0 \\
+\dots & \dots & \dots & \dots \\
+a_{n1} & a_{n2} & \dots & a_{nn} \\  
+\end{bmatrix}
+\begin{bmatrix}
+b_{11} & 0 & \dots & 0 \\
+b_{21} & b_{22} & \dots & 0 \\
+\dots & \dots & \dots & \dots \\
+b_{n1} & b_{n2} & \dots & b_{nn} \\  
+\end{bmatrix}
+=\begin{bmatrix}
+1 & 0 & \dots & 0 \\
+0 & 1 & \dots & 0 \\
+\dots & \dots & \dots & \dots \\
+0 & 0 & \dots & 1 \\  
+\end{bmatrix}
+$$
+
+由矩阵乘法定义，可得：
+
+$$c_{ij}=\sum_{k=j}^ia_{ik}b_{kj}$$
+
+由$$c_{ij}=1,i=j$$，可得：$$b_{ii}=\frac{1}{a_{ii}}$$
+
+由$$c_{ij}=0,i\neq j$$，可得：
+
+$$c_{ij}=\sum_{k=j}^{i-1}a_{ik}b_{kj}+a_{ii}b_{ij}=0$$
+
+因此：
+
+$$b_{ij}=-\frac{1}{a_{ii}}\sum_{k=j}^{i-1}a_{ik}b_{kj}=-b_{ii}\sum_{k=j}^{i-1}a_{ik}b_{kj}$$
+
+上三角矩阵求逆，可通过转置转换成下三角矩阵求逆。这里会用到以下性质:
+
+$$(A^T)^{-1}=(A^{-1})^T$$
+
+## LU分解
+
+LU分解可将矩阵A分解为$$A=LU$$，其中L是下三角矩阵，U是上三角矩阵。
+
+LU分解的用途很多，其中之一是求逆：
+
+$$A^{-1}=(LU)^{-1}=U^{-1}L^{-1}$$
+
+LU分解有若干种算法，常见的包括Doolittle、Cholesky、Crout算法。
+
+>注：Myrick Hascall Doolittlee，1830~1913。
+
+>Andr´e-Louis Cholesky，1875~1918，法国数学家、工程师、军官。死于一战战场。Cholesky分解法又称平方根法，是当A为实对称正定矩阵时，LU三角分解法的变形。
+
+>Prescott Durand Crout，1907~1984，美国数学家，22岁获MIT博士。
+
+这里只介绍一下Doolittle算法。
+
+$$A=\begin{bmatrix}
+a_{11} & a_{12} & \dots & a_{1n} \\
+a_{21} & a_{22} & \dots & a_{2n} \\
+\dots & \dots & \dots & \dots \\
+a_{n1} & a_{n2} & \dots & a_{nn} \\  
+\end{bmatrix}=LU=
+\begin{bmatrix}
+1 & 0 & \dots & 0 \\
+l_{21} & 1 & \dots & 0 \\
+\dots & \dots & \dots & \dots \\
+l_{n1} & l_{n2} & \dots & 1 \\  
+\end{bmatrix}
+\begin{bmatrix}
+u_{11} & u_{12} & \dots & u_{1n} \\
+0 & u_{22} & \dots & u_{2n} \\
+\dots & \dots & \dots & \dots \\
+0 & 0 & \dots & u_{nn} \\  
+\end{bmatrix}
+$$
+
+由矩阵乘法定义，可知：
+
+$$a_{1j}=u_{1j},j=1,2,\dots,n$$
+
+$$a_{ij}=\begin{cases}
+\sum_{t=1}^jl_{it}u_{tj}, & j<i \\
+\sum_{t=1}^{i-1}l_{it}u_{tj}+u_{ij}, & j\ge i \\
+\end{cases}$$
+
+因此：
+
+>$$u_{1j}=a_{1j},j=1,2,\dots,n$$（U的第1行）   
+>$$l_{j1}=a_{j1}/u_{11},j=1,2,\dots,n$$（L的第1列）   
+>For $$i=2,3,\dots,n$$ do   
+>>$$u_{ii}=a_{ii}-\sum_{t=1}^{i-1}l_{it}u_{tj}$$   
+>>$$u_{ij}=a_{ij}-\sum_{t=1}^{i-1}l_{it}u_{tj}$$,for $$j=i+1,\dots,n$$（U的第i行）   
+>>$$l_{ji}=\frac{a_{ji}-\sum_{t=1}^{i-1}l_{jt}u_{ti}}{u_{ii}}$$,for $$j=i+1,\dots,n$$（L的第i列）   
+>
+>End   
+>$$u_{nn}=a_{nn}-\sum_{t=1}^{n-1}l_{nt}u_{tn}$$
+
+参见：
+
+http://www3.nd.edu/~zxu2/acms40390F11/Alg-LU-Crout.pdf
 
 ## QR分解
 
@@ -152,89 +285,3 @@ $$\lim_{k\to\infty}A_k=\begin{bmatrix}
 
 QR算法于1961年，由John G.F. Francis和Vera Nikolaevna Kublanovskaya发现。
 
->注：John G.F. Francis，1934年生，英国计算机科学家，剑桥大学肄业生。   
->2000年，QR算法被IEEE计算机学会评为20世纪的top 10算法之一。然而直到那时，计算机界的数学家们竟然都没有见过Francis本尊，连这位大神是活着还是死了都不知道，仿佛他在发表完这篇惊世之作后就消失了一般。   
->2007年，学界的两位大牛：Gene Howard Golub（SVD算法发明人之一，后文会提到。）和Frank Detlev Uhlig（1972年获加州理工学院博士，Auburn University数学系教授），经过不懈努力和人肉搜索终于联系上了他。   
->他一点都不知道自己N年前的研究被引用膜拜了无数次，得知自己的QR算法是二十世纪最NB的十大算法还有点小吃惊。这位神秘大牛竟然连TeX和Matlab都不知道。现在这位大牛73岁了，活到老学到老，还在远程教育大学Open University里补修当年没有修到的学位。   
->2015年，University of Sussex授予他荣誉博士学位。   
->相关内容参见：   
->http://www.netlib.org/na-digest-html/07/v07n34.html
-
->Vera Nikolaevna Kublanovskaya，1920~2012，苏联数学家，女。终身供职于苏联科学院列宁格勒斯塔克罗夫数学研究所。52岁才拿到博士学位。
-
-需要指出的是，QR算法可求出矩阵的所有特征值，如果只求某一个特征值的话，还有其他一些更快的算法。详见：
-
-https://en.wikipedia.org/wiki/Eigenvalue_algorithm
-
-## 矩阵的奇异值
-
-在进一步讨论之前，我们首先介绍一下矩阵特征值的几何意义。
-
-首先，矩阵是对线性变换的表示，确定了定义域空间V与目标空间W的两组基，就可以很自然地得到该线性变换的矩阵表示。
-
-线性空间变换的几何含义如下图所示：
-
-![](/images/article/svd_2.png)
-
-图中的坐标轴，就是线性空间的**基**。
-
-线性变换主要有三种几何效果：**旋转、缩放、投影**。
-
-其中，旋转和缩放不改变向量的维数。矩阵特征值运算，实际上就是将向量V旋转缩放到一个正交基W上。因为V和W等维，所以要求矩阵必须是方阵。
-
-正交化过程，代表旋转变换，又被称为**等距同构**。（旋转变换，可以理解为向量的正向旋转，也可以理解为坐标轴的反向旋转，这里理解为后者，会容易一些。）**特征值代表缩放变换的缩放因子。**
-
-而对于一般矩阵而言，我们还需要进行投影变换，将n维向量V映射为m维向量W。那么投影变换选择什么矩阵呢？
-
-我们知道，对于复数z，可写成：
-
-$$z=\left(\frac{z}{\mid z\mid }\right)\mid z\mid =\left(\frac{z}{\mid z\mid }\right)\sqrt{\overline z z}$$
-
-其中$$\overline z$$是z的共轭复数。也就是说，一个复数可以表示为一个单位向量乘以一个模。
-
-类似的，我们定义共轭矩阵$$M^*_{ij}=\overline{M_{ji}}$$，这实际上就是矩阵M转置之后，再将每个元素值设为它的共轭复数。因此：
-
-$$M^*=(\overline M)^T=\overline{M^T}$$
-
-仿照着复数的写法，矩阵M可以表示为：$$M=S\sqrt{M^*M}$$
-
-这里的S表示等距同构。（单位向量相当于给模一个旋转变换，也就是等距同构。）由于$$\sqrt{M^*M}$$是正定对称方阵，因此它实际上也是能够被正交化的。所以对于一般矩阵来说，我们总能够找到两个正交基，并在这两个基之间进行投影变换。
-
->注意：我们刚才是用与复数类比的方式，得到投影变换矩阵$$\sqrt{M^*M}$$。但是类比不能代替严格的数学证明。幸运的是，上述结论已经被严格证明了。
-
-我们将矩阵$$\sqrt{M^*M}$$的特征值，称作奇异值（Singular value）。可以看出，如果M是对称方阵的话，则M的奇异值等于M的特征值的绝对值。
-
-参见：
-
-https://www.zhihu.com/question/22237507/answer/53804902
-
-奇异值的物理意义是什么？
-
-http://www.ams.org/samplings/feature-column/fcarc-svd
-
-We Recommend a Singular Value Decomposition
-
-## 奇异值分解
-
-奇异值分解（Singular value decomposition，SVD）定理：
-
-设$$M\in R^{m\times n}$$，则必存在正交矩阵$$U=[u_1,\dots,u_m]\in R^{m\times m}$$和$$V=[v_1,\dots,v_n]\in R^{n\times n}$$使得：
-
-$$U^TMV=\begin{bmatrix}
-\Sigma_r & 0 \\
-0 & 0 
-\end{bmatrix}$$
-
-其中，$$\Sigma_r=diag(\sigma_1,\dots,\sigma_r),\sigma_1\ge \dots\ge \sigma_r>0$$。
-
-当M为复矩阵时，将U、V改为酉矩阵（unitary matrix）即可。（吐槽一下，酉矩阵这个翻译真的好烂，和天干地支半毛钱关系都没有。）
-
-奇异值分解也可写为另一种形式：
-
-$$M=U\Sigma V^*$$
-
-其几何意义如下图所示：
-
-![](/images/article/Singular-Value-Decomposition.png)
-
-虽然，我们可以通过计算矩阵$$\sqrt{M^*M}$$的特征值的方法，计算奇异值，然而这个方法的计算量十分巨大。1965年，Gene Howard Golub和William Morton Kahan发明了目前较为通用的算法。但该方法比较复杂，这里不作介绍。

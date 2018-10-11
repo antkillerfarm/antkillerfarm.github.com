@@ -1,10 +1,94 @@
 ---
 layout: post
-title:  机器学习（十一）——因子分析
+title:  机器学习（十一）——因子分析（1）
 category: ML 
 ---
 
-## 重新审视混合高斯模型（续）
+## EM算法的一般形式（续）
+
+参考：
+
+https://mp.weixin.qq.com/s/NbM4sY93kaG5qshzgZzZIQ
+
+EM算法的九层境界：​Hinton和Jordan理解的EM算法
+
+https://mp.weixin.qq.com/s/FSID_FLMVxrKEj_padg_bQ
+
+EM算法是炼金术吗？
+
+https://mp.weixin.qq.com/s/9G_7Ax9cPcQcYVqEfc-pyw
+
+从基础知识到实际应用，一文了解“机器学习非凸优化技术”
+
+https://mp.weixin.qq.com/s/JSnPTVRgXO3aih5srU1eZQ
+
+EM算法原理总结
+
+## 重新审视混合高斯模型
+
+下面给出混合高斯模型各参数的推导过程。
+
+E-Step很简单：
+
+$$w_j^{(i)}=Q_i(z^{(i)}=j)=p(z^{(i)}=j\mid x^{(i)};\phi,\mu,\Sigma)$$
+
+在M-Step中，我们将各个变量和分布的概率密度函数代入，可得：
+
+$$\begin{align}
+&\sum_{i=1}^m\sum_{z^{(i)}}Q_i(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}
+\\&=\sum_{i=1}^m\sum_{j=1}^kQ_i(z^{(i)}=j)\log\frac{p(x^{(i)}\mid z^{(i)}=j;\mu,\Sigma)p(z^{(i)}=j;\phi)}{Q_i(z^{(i)}=j)}
+\\&=\sum_{i=1}^m\sum_{j=1}^kw_j^{(i)}\log\frac{\frac{1}{(2\pi)^{n/2}\lvert\Sigma_j\rvert^{1/2}}\exp\left(-\frac{1}{2}(x^{(i)}-\mu_j)^T\Sigma_j^{-1}(x^{(i)}-\mu_j)\right)\cdot \phi_j}{w_j^{(i)}}
+\end{align}$$
+
+对$$\mu_l$$求导，可得：
+
+$$\begin{align}
+&\nabla_{\mu_l}\sum_{i=1}^m\sum_{j=1}^kw_j^{(i)}\log\frac{\frac{1}{(2\pi)^{n/2}\lvert\Sigma_j\rvert^{1/2}}\exp\left(-\frac{1}{2}(x^{(i)}-\mu_j)^T\Sigma_j^{-1}(x^{(i)}-\mu_j)\right)\cdot \phi_j}{w_j^{(i)}}
+\\&=-\nabla_{\mu_l}\sum_{i=1}^m\sum_{j=1}^kw_j^{(i)}\frac{1}{2}(x^{(i)}-\mu_j)^T\Sigma_j^{-1}(x^{(i)}-\mu_j)
+\\&=\frac{1}{2}\sum_{i=1}^mw_l^{(i)}\nabla_{\mu_l}(2\mu_l^T\Sigma_l^{-1}x^{(i)}-\mu_l^T\Sigma_l^{-1}\mu_l)=\sum_{i=1}^mw_l^{(i)}(\Sigma_l^{-1}x^{(i)}-\Sigma_l^{-1}\mu_l)\tag{4}
+\end{align}$$
+
+这里对最后一步的推导，做一个说明。为了便于以下的讨论，我们引入符号“tr”，该符号表示矩阵的主对角线元素之和，也被叫做矩阵的“迹”（Trace）。按照通常的写法，在不至于误会的情况下，tr后面的括号会被省略。
+
+tr的其他性质还包括：
+
+$$\operatorname{tr}\,a=a,a\in R\tag{5.1}$$
+
+$$\operatorname{tr}(A + B) = \operatorname{tr}(A) + \operatorname{tr}(B)\tag{5.2}$$
+
+$$\operatorname{tr}(cA) = c \operatorname{tr}(A)\tag{5.3}$$
+
+$$\operatorname{tr}(A) = \operatorname{tr}(A^{\mathrm T})\tag{5.4}$$
+
+$$\operatorname{tr}(AB) = \operatorname{tr}(BA)\tag{5.5}$$
+
+$$\operatorname{tr}(ABCD) = \operatorname{tr}(BCDA) = \operatorname{tr}(CDAB) = \operatorname{tr}(DABC)\tag{5.6}$$
+
+$$\nabla_A\operatorname{tr}(AB)=B^T\tag{5.7}$$
+
+$$\nabla_{A^T}f(A)=(\nabla_Af(A))^T\tag{5.8}$$
+
+$$\nabla_A\operatorname{tr}(ABA^TC)=CAB+C^TAB^T\tag{5.9}$$
+
+$$\nabla_{A^T}\operatorname{tr}(ABA^TC)=B^TA^TC^T+BA^TC\tag{5.10}$$
+
+$$\nabla_A\mid A\mid =\mid A\mid (A^{-1})^T\tag{5.11}$$
+
+因为$$\mu_l^T\Sigma_l^{-1}\mu_l$$是实数，由公式5.1可得：
+
+$$\nabla_{\mu_l}\mu_l^T\Sigma_l^{-1}\mu_l=\nabla_{\mu_l}\operatorname{tr}(\mu_l^T\Sigma_l^{-1}\mu_l)$$
+
+由公式5.10可得：
+
+$$\nabla_{\mu_l}\operatorname{tr}(\mu_l^T\Sigma_l^{-1}\mu_l)=(\Sigma_l^{-1})^T(\mu_l^T)^TI^T+\Sigma_l^{-1}(\mu_l^T)^TI=(\Sigma_l^{-1})^T\mu_l+\Sigma_l^{-1}\mu_l$$
+
+因为$$\Sigma_l^{-1}$$是对称矩阵，因此，综上可得：
+
+$$\nabla_{\mu_l}\mu_l^T\Sigma_l^{-1}\mu_l=2\Sigma_l^{-1}\mu_l\tag{5.12}$$
+
+回到正题，令公式4等于0，可得：
+
+$$\mu_j:=\frac{\sum_{i=1}^mw_j^{(i)}x^{(i)}}{\sum_{i=1}^mw_j^{(i)}}$$
 
 同样的，对$$\phi_j$$求导，可得：
 
@@ -163,92 +247,3 @@ $$\Sigma^{-1}=\begin{bmatrix} \Sigma_{11} & \Sigma_{12} \\ \Sigma_{21} & \Sigma_
 
 $$\Sigma_{1\mid 2}=V_{11}^{-1}=\Sigma_{11}-\Sigma_{12}\Sigma_{22}^{-1}\Sigma_{21}\tag{2}$$
 
-## 因子分析的例子
-
-下面通过一个简单例子，来引出因子分析背后的思想。
-
-假设我们有m=5个2维的样本点$$x^{i}$$，如下：
-
-![](/images/article/factor_analysis.png)
-
-按照因子分析模型，样本点的生成过程如下：
-
-![](/images/article/factor_analysis_1.png)
-
-1.我们首先认为在1维空间（这里k=1），存在着按正态分布生成的m个点$$z^{(i)}$$，即：
-
-$$z^{(i)}\sim N(0,I)$$
-
-这里的I是单位矩阵。
-
-![](/images/article/factor_analysis_2.png)
-
-2.使用变换矩阵$$\Lambda\in R^{n\times k}$$，将$$z^{(i)}$$映射到n维空间中，即$$\Lambda z^{(i)}$$。
-
-![](/images/article/factor_analysis_3.png)
-
-3.使用n维向量$$\mu$$，将$$\Lambda z^{(i)}$$移动到样本的中心点$$\mu$$，即$$\mu+\Lambda z^{(i)}$$
-
-![](/images/article/factor_analysis_4.png)
-
-4.样本点不可能这么规则，在模型上会有一定偏差，因此我们需要将上步生成的点做一些扰动（误差）。这里添加一个n维的扰动向量$$\epsilon \sim N(0,\Psi)$$。
-
-综上可得:
-
-$$x^{(i)}=\mu+\Lambda z^{(i)}+\epsilon$$
-
-$$x \mid z\sim N(\mu+\Lambda z,\Psi)$$
-
-由以上的直观分析，我们知道了因子分析其实就是认为：高维样本点实际上是由低维样本点经过高斯分布、线性变换、误差扰动生成的，因此高维数据可以使用低维来表示。
-
-## 线性回归的概率模型
-
-在进一步讨论因子分析模型之前，我们首先讨论一下，和它类似的线性回归的概率模型。
-
-从概率的角度看，线性回归中的$$y^{(i)}$$可以看作是预测函数$$h_\theta(x)$$加上扰动后的结果。即：
-
-$$y^{(i)}=\theta^Tx^{(i)}+\epsilon^{(i)},\epsilon^{(i)}\sim N(0,\sigma^2)$$
-
-$$p(\epsilon^{(i)})=\frac{1}{\sqrt{2\pi}\sigma}\exp\left(-\frac{(\epsilon^{(i)})^2}{2\sigma^2}\right)$$
-
-$$p(y^{(i)}\mid x^{(i)};\theta)=\frac{1}{\sqrt{2\pi}\sigma}\exp\left(-\frac{(y^{(i)}-\theta^Tx^{(i)})^2}{2\sigma^2}\right)$$
-
-$$\begin{align}
-\ell(\theta)&=\log\prod_{i=1}^m\frac{1}{\sqrt{2\pi}\sigma}\exp\left(-\frac{(y^{(i)}-\theta^Tx^{(i)})^2}{2\sigma^2}\right)=\sum_{i=1}^m\log\frac{1}{\sqrt{2\pi}\sigma}\exp\left(-\frac{(y^{(i)}-\theta^Tx^{(i)})^2}{2\sigma^2}\right)
-\\&=m\log\frac{1}{\sqrt{2\pi}\sigma}-\frac{1}{\sigma^2}\cdot\frac{1}{2}\sum_{i=1}^m\left(y^{(i)}-\theta^Tx^{(i)}\right)^2
-\end{align}$$
-
-从上式可以看出采用极大似然估计和采用代价函数$$J(\theta)$$的效果是一样的。其中：
-
-$$J(\theta)=\frac{1}{2}\sum_{i=1}^m\left(y^{(i)}-\theta^Tx^{(i)}\right)^2$$
-
-## 因子分析模型
-
-假设z和x的联合分布为：
-
-$$\begin{bmatrix} z \\ x \end{bmatrix}\sim N(\mu_{zx},\Sigma)$$
-
-我们的任务就是求出$$\mu_{zx}$$和$$\Sigma$$。
-
-因为：
-
-$$E[x]=E[\mu+\Lambda z+\epsilon]=\mu+\Lambda E[z]+E[\epsilon]=\mu$$
-
-所以：
-
-$$\mu_{zx}=\begin{bmatrix} \vec{0} \\ \mu \end{bmatrix}$$
-
-因为：
-
-$$\Sigma=\begin{bmatrix} \Sigma_{zz} & \Sigma_{zx} \\ \Sigma_{xz} & \Sigma_{xx} \end{bmatrix}$$
-
-所以我们只要分别计算这四个值即可。
-
-因为$$z\sim N(0,I)$$，所以$$\Sigma_{zz}=I$$。
-
-$$\begin{align}
-\Sigma_{zx}&=E[(z-E[z])(x-E[x])^T]=E[(z-0)(\mu+\Lambda z+\epsilon-\mu)^T]=E[z(\Lambda z+\epsilon)^T]
-\\&=E[z(\Lambda z)^T+z\epsilon^T]=E[zz^T\Lambda^T+z\epsilon^T]=E[zz^T]\Lambda^T+E[z\epsilon^T]
-\end{align}$$
-
-因为z和$$\epsilon$$是相互独立的随机变量，因此$$E[z\epsilon^T]=E[z]E[\epsilon^T]=0$$。

@@ -1,10 +1,98 @@
 ---
 layout: post
-title:  机器学习（十二）——机器学习中的矩阵方法（1）LU分解
+title:  机器学习（十二）——因子分析（2）
 category: ML 
 ---
 
-## 因子分析模型（续）
+## 因子分析的例子
+
+下面通过一个简单例子，来引出因子分析背后的思想。
+
+假设我们有m=5个2维的样本点$$x^{i}$$，如下：
+
+![](/images/article/factor_analysis.png)
+
+按照因子分析模型，样本点的生成过程如下：
+
+![](/images/article/factor_analysis_1.png)
+
+1.我们首先认为在1维空间（这里k=1），存在着按正态分布生成的m个点$$z^{(i)}$$，即：
+
+$$z^{(i)}\sim N(0,I)$$
+
+这里的I是单位矩阵。
+
+![](/images/article/factor_analysis_2.png)
+
+2.使用变换矩阵$$\Lambda\in R^{n\times k}$$，将$$z^{(i)}$$映射到n维空间中，即$$\Lambda z^{(i)}$$。
+
+![](/images/article/factor_analysis_3.png)
+
+3.使用n维向量$$\mu$$，将$$\Lambda z^{(i)}$$移动到样本的中心点$$\mu$$，即$$\mu+\Lambda z^{(i)}$$
+
+![](/images/article/factor_analysis_4.png)
+
+4.样本点不可能这么规则，在模型上会有一定偏差，因此我们需要将上步生成的点做一些扰动（误差）。这里添加一个n维的扰动向量$$\epsilon \sim N(0,\Psi)$$。
+
+综上可得:
+
+$$x^{(i)}=\mu+\Lambda z^{(i)}+\epsilon$$
+
+$$x \mid z\sim N(\mu+\Lambda z,\Psi)$$
+
+由以上的直观分析，我们知道了因子分析其实就是认为：高维样本点实际上是由低维样本点经过高斯分布、线性变换、误差扰动生成的，因此高维数据可以使用低维来表示。
+
+## 线性回归的概率模型
+
+在进一步讨论因子分析模型之前，我们首先讨论一下，和它类似的线性回归的概率模型。
+
+从概率的角度看，线性回归中的$$y^{(i)}$$可以看作是预测函数$$h_\theta(x)$$加上扰动后的结果。即：
+
+$$y^{(i)}=\theta^Tx^{(i)}+\epsilon^{(i)},\epsilon^{(i)}\sim N(0,\sigma^2)$$
+
+$$p(\epsilon^{(i)})=\frac{1}{\sqrt{2\pi}\sigma}\exp\left(-\frac{(\epsilon^{(i)})^2}{2\sigma^2}\right)$$
+
+$$p(y^{(i)}\mid x^{(i)};\theta)=\frac{1}{\sqrt{2\pi}\sigma}\exp\left(-\frac{(y^{(i)}-\theta^Tx^{(i)})^2}{2\sigma^2}\right)$$
+
+$$\begin{align}
+\ell(\theta)&=\log\prod_{i=1}^m\frac{1}{\sqrt{2\pi}\sigma}\exp\left(-\frac{(y^{(i)}-\theta^Tx^{(i)})^2}{2\sigma^2}\right)=\sum_{i=1}^m\log\frac{1}{\sqrt{2\pi}\sigma}\exp\left(-\frac{(y^{(i)}-\theta^Tx^{(i)})^2}{2\sigma^2}\right)
+\\&=m\log\frac{1}{\sqrt{2\pi}\sigma}-\frac{1}{\sigma^2}\cdot\frac{1}{2}\sum_{i=1}^m\left(y^{(i)}-\theta^Tx^{(i)}\right)^2
+\end{align}$$
+
+从上式可以看出采用极大似然估计和采用代价函数$$J(\theta)$$的效果是一样的。其中：
+
+$$J(\theta)=\frac{1}{2}\sum_{i=1}^m\left(y^{(i)}-\theta^Tx^{(i)}\right)^2$$
+
+## 因子分析模型
+
+假设z和x的联合分布为：
+
+$$\begin{bmatrix} z \\ x \end{bmatrix}\sim N(\mu_{zx},\Sigma)$$
+
+我们的任务就是求出$$\mu_{zx}$$和$$\Sigma$$。
+
+因为：
+
+$$E[x]=E[\mu+\Lambda z+\epsilon]=\mu+\Lambda E[z]+E[\epsilon]=\mu$$
+
+所以：
+
+$$\mu_{zx}=\begin{bmatrix} \vec{0} \\ \mu \end{bmatrix}$$
+
+因为：
+
+$$\Sigma=\begin{bmatrix} \Sigma_{zz} & \Sigma_{zx} \\ \Sigma_{xz} & \Sigma_{xx} \end{bmatrix}$$
+
+所以我们只要分别计算这四个值即可。
+
+因为$$z\sim N(0,I)$$，所以$$\Sigma_{zz}=I$$。
+
+$$\begin{align}
+\Sigma_{zx}&=E[(z-E[z])(x-E[x])^T]=E[(z-0)(\mu+\Lambda z+\epsilon-\mu)^T]=E[z(\Lambda z+\epsilon)^T]
+\\&=E[z(\Lambda z)^T+z\epsilon^T]=E[zz^T\Lambda^T+z\epsilon^T]=E[zz^T]\Lambda^T+E[z\epsilon^T]
+\end{align}$$
+
+因为z和$$\epsilon$$是相互独立的随机变量，因此$$E[z\epsilon^T]=E[z]E[\epsilon^T]=0$$。
 
 又因为$$E[zz^T]=Cov(z)=I$$，所以$$\Sigma_{zx}=\Lambda^T$$。
 
@@ -155,135 +243,4 @@ http://www.cnblogs.com/daniel-D/p/3204508.html
 这是daniel-D写的中文笔记。
 
 这一部分的内容属于数值计算领域，涉及的概念虽然不复杂，但提出一个高效算法，仍然不是件容易的事情。
-
-还有另外一本书《Liner Algebra Done Right》，也值得推荐。这本书从定义矩阵算子，而不是通过行列式，来解释各种线性代数原理，提供了一种独特的视角。因为算子是有明确的几何或物理意义的，而行列式则不然。
-
->作者：Sheldon Jay Axler，1949年生，美国数学家。普林斯顿大学本科，UCB博士，MIT博士后，San Francisco State University教授。美国的数学系基本就是本科和博士，很少有硕士。因为数学，尤其是理论数学，需要高度的抽象思维能力，半调子的硕士，既不好找工作，也不好搞科研。
-
-《Linear Algebra Done Wrong》，这是布朗大学的Sergei Treil教授的著作，不知道书名是否有恶搞前书的意味...
-
-该书电子版：
-
-https://www.math.brown.edu/~treil/papers/LADW/LADW.html
-
-## 三角矩阵的求逆问题
-
-$$\begin{bmatrix}
-l_{11} & 0 & 0 \\
-l_{21} & l_{22} & 0 \\
-l_{31} & l_{32} & l_{33} \\  
-\end{bmatrix}
-\begin{bmatrix}
-u_{11} & u_{12} & u_{13} \\
-0 & u_{22} & u_{23} \\
-0 & 0 & u_{33} \\  
-\end{bmatrix}
-$$
-
-以3阶方阵为例，上面左边的矩阵被称为下三角矩阵（lower triangular matrix），而右边的矩阵被称为上三角矩阵（upper triangular matrix）。
-
-对于矩阵求逆问题来说，下三角矩阵是一类比较简单的矩阵，求逆难度仅高于对角阵。
-
-下三角矩阵的逆矩阵也是下三角矩阵，因此：
-
-$$AA^{-1}=\begin{bmatrix}
-a_{11} & 0 & \dots & 0 \\
-a_{21} & a_{22} & \dots & 0 \\
-\dots & \dots & \dots & \dots \\
-a_{n1} & a_{n2} & \dots & a_{nn} \\  
-\end{bmatrix}
-\begin{bmatrix}
-b_{11} & 0 & \dots & 0 \\
-b_{21} & b_{22} & \dots & 0 \\
-\dots & \dots & \dots & \dots \\
-b_{n1} & b_{n2} & \dots & b_{nn} \\  
-\end{bmatrix}
-=\begin{bmatrix}
-1 & 0 & \dots & 0 \\
-0 & 1 & \dots & 0 \\
-\dots & \dots & \dots & \dots \\
-0 & 0 & \dots & 1 \\  
-\end{bmatrix}
-$$
-
-由矩阵乘法定义，可得：
-
-$$c_{ij}=\sum_{k=j}^ia_{ik}b_{kj}$$
-
-由$$c_{ij}=1,i=j$$，可得：$$b_{ii}=\frac{1}{a_{ii}}$$
-
-由$$c_{ij}=0,i\neq j$$，可得：
-
-$$c_{ij}=\sum_{k=j}^{i-1}a_{ik}b_{kj}+a_{ii}b_{ij}=0$$
-
-因此：
-
-$$b_{ij}=-\frac{1}{a_{ii}}\sum_{k=j}^{i-1}a_{ik}b_{kj}=-b_{ii}\sum_{k=j}^{i-1}a_{ik}b_{kj}$$
-
-上三角矩阵求逆，可通过转置转换成下三角矩阵求逆。这里会用到以下性质:
-
-$$(A^T)^{-1}=(A^{-1})^T$$
-
-## LU分解
-
-LU分解可将矩阵A分解为$$A=LU$$，其中L是下三角矩阵，U是上三角矩阵。
-
-LU分解的用途很多，其中之一是求逆：
-
-$$A^{-1}=(LU)^{-1}=U^{-1}L^{-1}$$
-
-LU分解有若干种算法，常见的包括Doolittle、Cholesky、Crout算法。
-
->注：Myrick Hascall Doolittlee，1830~1913。
-
->Andr´e-Louis Cholesky，1875~1918，法国数学家、工程师、军官。死于一战战场。Cholesky分解法又称平方根法，是当A为实对称正定矩阵时，LU三角分解法的变形。
-
->Prescott Durand Crout，1907~1984，美国数学家，22岁获MIT博士。
-
-这里只介绍一下Doolittle算法。
-
-$$A=\begin{bmatrix}
-a_{11} & a_{12} & \dots & a_{1n} \\
-a_{21} & a_{22} & \dots & a_{2n} \\
-\dots & \dots & \dots & \dots \\
-a_{n1} & a_{n2} & \dots & a_{nn} \\  
-\end{bmatrix}=LU=
-\begin{bmatrix}
-1 & 0 & \dots & 0 \\
-l_{21} & 1 & \dots & 0 \\
-\dots & \dots & \dots & \dots \\
-l_{n1} & l_{n2} & \dots & 1 \\  
-\end{bmatrix}
-\begin{bmatrix}
-u_{11} & u_{12} & \dots & u_{1n} \\
-0 & u_{22} & \dots & u_{2n} \\
-\dots & \dots & \dots & \dots \\
-0 & 0 & \dots & u_{nn} \\  
-\end{bmatrix}
-$$
-
-由矩阵乘法定义，可知：
-
-$$a_{1j}=u_{1j},j=1,2,\dots,n$$
-
-$$a_{ij}=\begin{cases}
-\sum_{t=1}^jl_{it}u_{tj}, & j<i \\
-\sum_{t=1}^{i-1}l_{it}u_{tj}+u_{ij}, & j\ge i \\
-\end{cases}$$
-
-因此：
-
->$$u_{1j}=a_{1j},j=1,2,\dots,n$$（U的第1行）   
->$$l_{j1}=a_{j1}/u_{11},j=1,2,\dots,n$$（L的第1列）   
->For $$i=2,3,\dots,n$$ do   
->>$$u_{ii}=a_{ii}-\sum_{t=1}^{i-1}l_{it}u_{tj}$$   
->>$$u_{ij}=a_{ij}-\sum_{t=1}^{i-1}l_{it}u_{tj}$$,for $$j=i+1,\dots,n$$（U的第i行）   
->>$$l_{ji}=\frac{a_{ji}-\sum_{t=1}^{i-1}l_{jt}u_{ti}}{u_{ii}}$$,for $$j=i+1,\dots,n$$（L的第i列）   
->
->End   
->$$u_{nn}=a_{nn}-\sum_{t=1}^{n-1}l_{nt}u_{tn}$$
-
-参见：
-
-http://www3.nd.edu/~zxu2/acms40390F11/Alg-LU-Crout.pdf
 

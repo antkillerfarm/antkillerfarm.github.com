@@ -102,6 +102,10 @@ https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247493243&idx=1&sn=db3205
 
 大数据凉了？No，流式计算浪潮才刚刚开始！
 
+https://mp.weixin.qq.com/s/qeMhUNDXoYkx06mHnIEUCA
+
+一文带你了解携程第四代全链路测试系统
+
 # 知名数据集
 
 https://mp.weixin.qq.com/s/LC6bJOsJczTLolQ1Yx5cvg

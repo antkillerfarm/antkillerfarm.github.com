@@ -136,7 +136,11 @@ https://mp.weixin.qq.com/s/gRFq44pnhRScO9p3M15Gfw
 
 https://mp.weixin.qq.com/s/7P6iMcZUNNVAefrUz-dAsQ
 
-MIT谷歌伯克利三强联手 ，AI创造超现实主义3D运动雕塑
+MIT谷歌伯克利三强联手，AI创造超现实主义3D运动雕塑
+
+https://mp.weixin.qq.com/s/bmtZ_-NaRtFitoJumukQSw
+
+通过端到端几何推理发现潜在3D关键点
 
 # CNN进阶
 

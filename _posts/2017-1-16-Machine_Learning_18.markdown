@@ -1,8 +1,96 @@
 ---
 layout: post
-title:  机器学习（十八）——推荐系统进阶（1）
+title:  机器学习（十八）——隐式狄利克雷划分
 category: ML 
 ---
+
+## ICA算法（续）
+
+因为：
+
+$$\begin{align}
+(\log g'(s))'&=(\log [g(s)(1-g(s))])'=(\log g(s))'+(\log (1-g(s)))'
+\\&=\frac{g'(s)}{g(s)}+\frac{(1-g(s))'}{(1-g(s))}=\frac{g(s)(1-g(s))}{g(s)}-\frac{g(s)(1-g(s))}{(1-g(s))}
+\\&=1-2g(s)
+\end{align}$$
+
+又因为《机器学习（十）》的公式5.11，可得公式3的导数为：
+
+$$\nabla_W\ell(W)=\begin{bmatrix}
+1-2g(w_1^Tx^{(i)}) \\
+1-2g(w_2^Tx^{(i)}) \\
+\vdots \\
+1-2g(w_n^Tx^{(i)})
+\end{bmatrix}x^{(i)^T}+(W^T)^{-1}$$
+
+最后，用通常的随机梯度上升算法，求得$$\ell(W)$$的最大值即可。
+
+>注意：我们计算最大似然估计时,假设了$$x^{(i)}$$和$$x^{(j)}$$之间是独立的，然而对于语音信号或者其他具有时间连续依赖特性(比如温度)上，这个假设不能成立。但是在数据足够多时，假设独立对效果影响不大。
+
+# 隐式狄利克雷划分
+
+Latent Dirichlet Allocation，简称LDA。注意不要和Linear Discriminant Analysis搞混了。
+
+这方面的文章，首推rickjin（靳志辉）写的《LDA数学八卦》一文。全文篇幅长达55页，我实在没有能力写的比他更好，因此这里就做一个摘要好了。
+
+>注：靳志辉，北京大学计算机系计算语言所硕士，日本东京大学情报理工学院统计自然语言处理方向博士。2008年加入腾讯，主要工作内容涉及统计自然语言处理和大规模并行机器学习工具的研发工作。目前为腾讯社交与效果广告部质量研发中心总监，主要负责腾讯用户数据挖掘、精准广告定向、广告语义特征挖掘、广告转化率预估等工作。   
+>他写的另一篇文章《正态分布的前世今生》，也是统计界著名的科普文，非常值得一看。
+
+## 马氏链及其平稳分布
+
+Markov chain的定义如下：
+
+$$P(X_{t+1}=x\mid X_t, X_{t-1}, \cdots) =P(X_{t+1}=x\mid X_t)$$
+
+即状态转移的概率只依赖于前一个状态的随机过程。
+
+>注：上面是1阶Markov过程的定义。类似的还可以定义n阶Markov过程，即状态转移的概率只依赖于前n个状态的随机过程。
+
+>Andrey(Andrei) Andreyevich Markov，1856~1922，俄国数学家。圣彼得堡大学博士，导师Pafnuty Chebyshev。最早研究随机过程的数学家之一。圣彼得堡学派的第二代领军人物，俄罗斯科学院院士。   
+>虽然现在将随机过程（stochastic process）划为数理统计科学的一部分，然而在19世纪末期，相关的研究者在学术界分属两个不同的团体。其中最典型的就是英国的剑桥学派（Pearson、Fisher等）和俄国的圣彼得堡学派（Chebyshev、Markov等）。因此将Markov称为统计学家是非常错误的观点。
+
+一些非周期的马氏链，经过若干次的状态转移之后，其状态概率会收敛到一个特定的数值，即平稳分布（stationary distribution）。
+
+如各参考文献所示，这里一般会举社会学上的人口分层问题，引出马氏链的极限和平稳分布的概念。这里要特别注意马氏链收敛定理以及它的具体含义。
+
+**细致平稳条件**：如果非周期马氏链的转移矩阵P和分布$$\pi(x)$$满足
+
+$$\pi(i)P_{ij} = \pi(j)P_{ji} \quad\quad \text{for all} \quad i,j$$
+
+则$$\pi(x)$$是马氏链的平稳分布，上式被称为细致平稳条件(detailed balance condition)。
+
+满足细致平稳条件的马氏链，其后续状态都是平稳分布状态，不会再改变。
+
+>注:细致平稳条件，比平稳分布的条件要强，因此它是平稳分布的充分条件，而非必要条件。
+
+参考：
+
+http://blog.csdn.net/lanchunhui/article/details/50451620
+
+重温马尔科夫随机过程
+
+http://blog.csdn.net/pipisorry/article/details/46618991
+
+马尔科夫模型
+
+## MCMC
+
+对于给定的概率分布$$p(x)$$，我们希望能有便捷的方式生成它对应的样本。由于马氏链能收敛到平稳分布，于是一个很的漂亮想法是：如果我们能构造一个转移矩阵为P的马氏链，使得该马氏链的平稳分布恰好是$$p(x)$$，那么我们从任何一个初始状态$$x_0$$出发沿着马氏链转移，得到一个转移序列$$x_0, x_1, x_2, \cdots x_n, x_{n+1}\cdots$$，如果马氏链在第n步已经收敛了，于是我们就得到了$$\pi(x)$$的样本$$x_n, x_{n+1}\cdots$$。
+
+Markov Chain Monte Carlo算法的核心是引入一个参数$$\alpha(i,j)$$使得一个普通的马氏链，变成一个满足细致平稳条件的马氏链。即：
+
+$$p(i) \underbrace{q(i,j)\alpha(i,j)}_{Q'(i,j)} 
+= p(j) \underbrace{q(j,i)\alpha(j,i)}_{Q'(j,i)}  \quad$$
+
+以上即为Metropolis算法。
+
+>注：Nicholas Constantine Metropolis，1915~1999，希腊裔美籍物理学家。芝加哥大学博士，反复供职于Los Alamos和芝加哥大学。（其实也就这俩地方，只不过这边干几年到那边去，那边教几年书再回这边来，这么进进出出好几个来回而已）“曼哈顿计划”的主要科学家之一，战后主持MANIAC计算机的研制。
+
+$$\alpha$$的大小，决定了马氏链的收敛速度。$$\alpha$$越大，收敛越快。因此又有Metropolis–Hastings算法，其关键公式为：
+
+$$\alpha(i,j) = \min\left\{\frac{p(j)q(j,i)}{p(i)q(i,j)},1\right\}$$
+
+>注：Wilfred Keith Hastings，1930~2016，美国统计学家，多伦多大学博士，维多利亚大学教授。
 
 ## Gibbs Sampling
 
@@ -128,152 +216,3 @@ LDA模型的目标有两个：
 
 这一步实际上是一个**分类**的过程。可见，LDA不仅可用于聚类，也可用于分类，是一种无监督的学习算法。
 
-## 如何确定LDA的topic个数
-
-这个问题上，业界最常用的指标包括Perplexity，MPI-score等。简单的说就是Perplexity越小，且topic个数越少越好。
-
-从模型的角度解决主题个数的话，可以在LDA的基础上融入嵌套中餐馆过程(nested Chinese Restaurant Process)，印度自助餐厅过程(Indian Buffet Process)等。因此就诞生了这样一些主题模型：
-
-1. hierarchical Latent Dirichlet Allocation (hLDA)  (2003_NIPS_Hierarchical topic models and the nested Chinese restaurant process)
-
-2. hierarchical Dirichlet process (HDP)  (2006_NIPS_Hierarchical dirichlet processes)/Nested Hierarchical Dirichlet Processes (nHDP)
-
-3. Indian Buffet Process Compound Dirichlet Process (ICD)  (2010_ICML_The IBP compound Dirichlet process and its application to focused topic modeling)
-
-4. Non-parametric Topic Over Time (npTOT)  (2013_SDM_A nonparametric mixture model for topic modeling over time)
-
-5. collapsed Gibbs Samplingalgorithm for the Dirichlet Multinomial Mixture Model (GSDMM)  (2014_SIGKDD_A Dirichlet Multinomial Mixture Model-based Approach for Short Text Clustering)
-
-这些主题模型都被叫做非参数主题模型(Non-parametric Topic Model)，最初可追溯到David M. Blei于2003年提出hLDA那篇文章(2003_NIPS_Hierarchical topic models and the nested Chinese restaurant process)。非参数主题模型是基于贝叶斯概率的与参数无关的主题模型。这里的参数无关主要是指模型本身可以“**随着观测数据的增长而相应调整**”，即主题模型的主题个数能够随着文档数目的变化而相应调整，无需事先人为指定。
-
-参考：
-
-https://www.zhihu.com/question/32286630
-
-怎么确定LDA的topic个数？
-
-http://blog.csdn.net/luo123n/article/details/48902815
-
-Perplexity详解
-
-## LDA漫游指南
-
-除了rickjin的《LDA数学八卦》之外，马晨写的《LDA漫游指南》也是这方面的中文新作。
-
-该书的数学推导部分主要沿用rickjin的内容，但加入了Blei提出的变分贝叶斯方法。此外，还对LDA的代码实现、并行计算和大数据处理进行了深入的讨论。
-
-## 参考
-
-http://www.arbylon.net/publications/text-est.pdf
-
-《Parameter estimation for text analysis》，Gregor Heinrich著
-
-http://www.inference.phy.cam.ac.uk/itprnn/book.pdf
-
-《Information Theory, Inference, and Learning Algorithms》，David J.C. MacKay著
-
-关于MCMC和Gibbs Sampling的更多的内容，可参考《Neural Networks and Learning Machines》，Simon Haykin著。该书有中文版。
-
->注：Sir David John Cameron MacKay，1967～2016，加州理工学院博士，导师John Hopfield，剑桥大学教授。英国能源与气候变化部首席科学顾问，英国皇家学会会员。在机器学习领域和可持续能源领域有重大贡献。
-
->Simon Haykin，英国伯明翰大学博士，加拿大McMaster University教授。初为雷达和信号处理专家。自适应信号处理领域的权威。80年代中后期，转而从事神经计算方面的工作。加拿大皇家学会会员。
-
-http://www.cs.cmu.edu/~epxing/Class/10708-14/lectures/lecture17-MCMC.pdf
-
-http://max.book118.com/html/2015/0513/16864294.shtm
-
-基于LDA分析的词聚类算法
-
-http://www.doc88.com/p-9159009103987.html
-
-基于LDA的博客分类算法
-
-http://blog.csdn.net/sinat_26917383/article/details/52095013
-
-基于LDA的Topic Model变形+一些NLP开源项目
-
-https://mp.weixin.qq.com/s/74lXwDg9H_dyOubfXVn2Bw
-
-一文详解LDA主题模型
-
-https://mp.weixin.qq.com/s/_bAiiJqPjPPMzJ0hiuCkOg
-
-通过Python实现马尔科夫链蒙特卡罗方法的入门级应用
-
-https://mp.weixin.qq.com/s/BJaRUnpcPe8iybSz14gabw
-
-一文读懂如何用LSA、PSLA、LDA和lda2vec进行主题建模
-
-# 推荐系统进阶
-
-除了《机器学习（十三～十五）》提及的ALS和PCA之外，相关的算法还包括：
-
-## FM：Factorization Machines
-
-Factorization Machines是Steffen Rendle于2010年提出的算法。
-
->注：Steffen Rendle，弗赖堡大学博士，现为Google研究员。libFM的作者，被誉为推荐系统的新星。
-
-FM算法实际上是一大类与矩阵分解有关的算法的广义模型。
-
-参考文献1是Rendle本人的论文，其中有章节证明了SVD++、PITF、FPMC等算法，都是FM算法的特例。《机器学习（十四）》中提到的ALS算法，也是FM的特例。
-
-参考文献2是国人写的中文说明，相对浅显一些。
-
-参考：
-
-https://www.ismll.uni-hildesheim.de/pub/pdfs/Rendle2010FM.pdf
-
-http://blog.csdn.net/itplus/article/details/40534885
-
-Factorization Machines 学习笔记（一）预测任务
-
-https://tech.meituan.com/deep-understanding-of-ffm-principles-and-practices.html
-
-深入FFM原理与实践
-
-https://github.com/aksnzhy/xlearn
-
-这是一个集成了FM和FFM等算法的库
-
-## PITF
-
-配对互动张量分解（Pairwise Interaction Tensor Factorization）算法，也是最早由Rendle引入推荐系统领域的。
-
-论文：
-
-http://www.wsdm-conference.org/2010/proceedings/docs/p81.pdf
-
-## 其他
-
-https://mp.weixin.qq.com/s/7yjA3_oCI5nSH4tv04BIhQ
-
-HFT
-
-https://mp.weixin.qq.com/s/gHKOArFzUM9Zn8hEsA-1wQ
-
-FISM
-
-https://mp.weixin.qq.com/s/VymwTuKq86JP2PL4v8LyyQ
-
-POI by Friends
-
-https://mp.weixin.qq.com/s/LnV-Oq3pCCeMk9RRhha-Aw
-
-GLSLIM
-
-https://mp.weixin.qq.com/s/xnJq-aBAZW22tP7RQylKLw
-
-iCD
-
-https://mp.weixin.qq.com/s/-IPwfrBz1dtYDupuGv4IjQ
-
-Ensemble
-
-https://mp.weixin.qq.com/s/SC8kNYvexetmDuxfQvwSDw
-
-CKE
-
-https://mp.weixin.qq.com/s/bu9rSno_WmHHisE3lzYnqg
-
-ConvMF

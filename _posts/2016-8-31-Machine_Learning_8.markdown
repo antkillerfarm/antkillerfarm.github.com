@@ -4,7 +4,47 @@ title:  机器学习（八）——规则化和模型选择
 category: ML 
 ---
 
-## $$\mathcal{H}$$为无限集的情况（续）
+## $$\mathcal{H}$$为有限集的情况（续）
+
+如果我们定义$$h^*=\arg\min_{h\in \mathcal{H}}\varepsilon(h)$$，则根据一致收敛性质$$\lvert\varepsilon(h_i)-\hat\varepsilon(h_i)\rvert\le \gamma$$可得：
+
+$$\varepsilon(\hat h)\le \hat\varepsilon(\hat h)+\gamma$$
+
+因为$$\hat h$$已经是$$\hat \varepsilon(h)$$中最小的一个，因此$$\hat\varepsilon(\hat h)\le \hat\varepsilon(h)$$对所有都是成立的，其中当然包括$$h^*$$，即$$\hat\varepsilon(\hat h)\le \hat\varepsilon(h^*)$$。因此，上式可改为：
+
+$$\varepsilon(\hat h)\le \hat\varepsilon(h^*)+\gamma$$
+
+根据一致收敛性质，我们还可以得出$$ \hat\varepsilon(h^*)\le \varepsilon(h^*)+\gamma$$，因此，上式继续变形为：
+
+$$\varepsilon(\hat h)\le \varepsilon(h^*)+2\gamma$$
+
+这个公式表明，作为ERM结果的$$\hat h$$，比最好的h，至多只差$$2\gamma$$。
+
+我们将之前的结果合到一起，可得如下定理：
+
+令$$\lvert\mathcal{H}\rvert=k$$，并固定$$m,\delta$$的取值，且一致收敛的概率至少为$$1-\delta$$，则：
+
+$$\varepsilon(\hat h)\le \left(\min_{h\in \mathcal{H}}\varepsilon(h)\right)+2\sqrt{\frac{1}{2m}\log\frac{2k}{\delta}}$$
+
+假设我们需要从预测函数类$$\mathcal{H}$$切换到一个更大的预测函数类$$\mathcal{H'}\supseteq\mathcal{H}$$，则上面公式的第一项只会变得更小，也就是说偏差会变小，但由于k的增加，第二项会变大，也就是方差会变大。
+
+同理，可得以下针对m的定理：
+
+令$$\lvert\mathcal{H}\rvert=k$$，并固定$$\delta,\gamma$$的取值，为了保证$$\varepsilon(\hat h)\le \left(\min_{h\in \mathcal{H}}\varepsilon(h)\right)+2\gamma$$的概率至少为$$1-\delta$$，则：
+
+$$m\ge \frac{1}{2\gamma^2}\log\frac{2k}{\delta}=O\left(\frac{1}{\gamma^2}\log\frac{k}{\delta}\right)$$
+
+## $$\mathcal{H}$$为无限集的情况
+
+某些预测函数的参数是实数，它实际上包含了无穷多个数。针对这样的情况，我们可以参照IEEE浮点数的规则，进行离散采样。
+
+IEEE浮点数由64bit的二进制数构成，因此d个实数参数组成的$$\mathcal{H}$$，可组成$$k=2^{64d}$$个不同的预测函数，因此：
+
+$$m\ge O\left(\frac{1}{\gamma^2}\log\frac{2^{64d}}{\delta}\right)=O\left(\frac{d}{\gamma^2}\log\frac{1}{\delta}\right)=O_{\gamma,\delta}(d)$$
+
+这里的下标$$\gamma,\delta$$表示一些依赖于它们的常量。从上式可以看出需要的训练样本的数量和预测模型的参数个数成线性关系。
+
+以上就是和ERM相关的算法的理论知识，至于其他非ERM算法理论仍在研究之中。
 
 下面是$$\mathcal{H}$$参数化的问题。一个线性分类器可以写为：
 
@@ -153,58 +193,3 @@ $$MI(x_i,y)=KL(p(x_i,y)\|p(x_i)p(y))$$
 过滤特征选择方法的算法复杂度为$$O(n)$$。
 
 最后一个问题，选择多少个特征合适呢？按照$$S(i)$$从高到低的顺序，依次选择1到n个特征进行交叉验证，直到效果达到预期为止。
-
-## 交叉验证与融合
-
-前面提到的交叉验证的过程，一般如下图所示：
-
-![](/images/img2/Cross_validation.png)
-
-模型融合能大幅提升准确率，是打比赛的“杀器”。把交叉验证训练的n个模型直接求一下平均，就是最简单的模型融合方案。
-
-![](/images/img2/Cross_validation_2.png)
-
-假如有m种不同的模型，每种模型做n划分交叉验证，可以得到mn个不同的模型，通过一个新模型来融合这mn个模型。
-
-![](/images/img2/Cross_validation_3.png)
-
-## 贝叶斯统计和规则化ML
-
-前面提到最大似然（maximum likelihood）估计方法的公式如下：
-
-$$\theta_{ML}=\arg\max_\theta\prod_{i=1}^mp(y^{(i)}\mid x^{(i)};\theta)$$
-
-从频率统计（frequentist statistic）学派的观点来看，这里的$$\theta$$是一个未知的常数，我们的任务就是求出这个常数。然而从贝叶斯学派的观点来看，$$\theta$$是一个未知的随机变量。
-
-也就是说似然函数，对于前者来说，是这样的：$$\prod_{i=1}^mp(y^{(i)}\mid x^{(i)};\theta)$$；但对于后者来说，却是这样的：$$\prod_{i=1}^mp(y^{(i)}\mid x^{(i)},\theta)$$
-
-我们首先假定$$\theta$$的分布为$$p(\theta)$$，这种假定由于没有事实根据，通常被称作先验分布（prior distribution）。
-
-我们针对训练集$$S=\{(x^{(i)},y^{(i)})\}_{i=1}^m$$，训练得到预测函数。并按照如下公式计算后验分布（posterior distribution）：
-
-$$p(\theta\mid S)=\frac{p(S\mid\theta)p(\theta)}{p(S)}\tag{1}$$
-
-由全概率公式可得：
-
-$$p(S)=p(S\mid\theta_1)p(\theta_1)+\dots+p(S\mid\theta_n)p(\theta_n)$$
-
-上式的$$\theta_i$$表示$$\theta$$的各个取值区间，然而由于$$\theta$$是连续随机变量，根据微积分原理可得：
-
-$$p(S)=\int_\theta p(S\mid\theta)p(\theta)\mathrm{d}\theta\tag{2}$$
-
-将公式2代入公式1可得：
-
-$$p(\theta\mid S)=\frac{p(S\mid\theta)p(\theta)}{\int_\theta p(S\mid\theta)p(\theta)\mathrm{d}\theta}=\frac{\left(\prod_{i=1}^mp(y^{(i)}\mid x^{(i)},\theta)\right)p(\theta)}{\int_\theta\left(\prod_{i=1}^mp(y^{(i)}\mid x^{(i)},\theta)\right)p(\theta)\mathrm{d}\theta}$$
-
-当我们针对新的样本x进行预测时，和上面的推导类似，可得：
-
-$$p(y\mid x,S)=\int_\theta p(y\mid x,\theta,S)p(\theta\mid S)\mathrm{d}\theta$$
-
-因为预测样本集和训练样本集的分布是独立的，因此上式又可写为：
-
-$$p(y\mid x,S)=\int_\theta p(y\mid x,\theta)p(\theta\mid S)\mathrm{d}\theta$$
-
-这个公式又被称作后验预测分布（Posterior predictive distribution）。
-
-$$p(\theta\mid S)$$可由前面的公式得到。
-

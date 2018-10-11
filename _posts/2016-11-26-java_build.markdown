@@ -271,3 +271,9 @@ Github：
 
 https://github.com/hprose
 
+# DL参考资源
+
+https://mp.weixin.qq.com/s/-xZxNJPQyEQyBOue6_77yw
+
+用浅度学习训练深度网络：避开端到端深度学习难题
+

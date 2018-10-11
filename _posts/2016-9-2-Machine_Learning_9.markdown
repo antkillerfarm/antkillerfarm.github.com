@@ -4,7 +4,59 @@ title:  机器学习（九）——在线学习, K-Means算法
 category: ML 
 ---
 
-## 贝叶斯统计和规则化ML（续）
+## 交叉验证与融合
+
+前面提到的交叉验证的过程，一般如下图所示：
+
+![](/images/img2/Cross_validation.png)
+
+模型融合能大幅提升准确率，是打比赛的“杀器”。把交叉验证训练的n个模型直接求一下平均，就是最简单的模型融合方案。
+
+![](/images/img2/Cross_validation_2.png)
+
+假如有m种不同的模型，每种模型做n划分交叉验证，可以得到mn个不同的模型，通过一个新模型来融合这mn个模型。
+
+![](/images/img2/Cross_validation_3.png)
+
+## 贝叶斯统计和规则化ML
+
+前面提到最大似然（maximum likelihood）估计方法的公式如下：
+
+$$\theta_{ML}=\arg\max_\theta\prod_{i=1}^mp(y^{(i)}\mid x^{(i)};\theta)$$
+
+从频率统计（frequentist statistic）学派的观点来看，这里的$$\theta$$是一个未知的常数，我们的任务就是求出这个常数。然而从贝叶斯学派的观点来看，$$\theta$$是一个未知的随机变量。
+
+也就是说似然函数，对于前者来说，是这样的：$$\prod_{i=1}^mp(y^{(i)}\mid x^{(i)};\theta)$$；但对于后者来说，却是这样的：$$\prod_{i=1}^mp(y^{(i)}\mid x^{(i)},\theta)$$
+
+我们首先假定$$\theta$$的分布为$$p(\theta)$$，这种假定由于没有事实根据，通常被称作先验分布（prior distribution）。
+
+我们针对训练集$$S=\{(x^{(i)},y^{(i)})\}_{i=1}^m$$，训练得到预测函数。并按照如下公式计算后验分布（posterior distribution）：
+
+$$p(\theta\mid S)=\frac{p(S\mid\theta)p(\theta)}{p(S)}\tag{1}$$
+
+由全概率公式可得：
+
+$$p(S)=p(S\mid\theta_1)p(\theta_1)+\dots+p(S\mid\theta_n)p(\theta_n)$$
+
+上式的$$\theta_i$$表示$$\theta$$的各个取值区间，然而由于$$\theta$$是连续随机变量，根据微积分原理可得：
+
+$$p(S)=\int_\theta p(S\mid\theta)p(\theta)\mathrm{d}\theta\tag{2}$$
+
+将公式2代入公式1可得：
+
+$$p(\theta\mid S)=\frac{p(S\mid\theta)p(\theta)}{\int_\theta p(S\mid\theta)p(\theta)\mathrm{d}\theta}=\frac{\left(\prod_{i=1}^mp(y^{(i)}\mid x^{(i)},\theta)\right)p(\theta)}{\int_\theta\left(\prod_{i=1}^mp(y^{(i)}\mid x^{(i)},\theta)\right)p(\theta)\mathrm{d}\theta}$$
+
+当我们针对新的样本x进行预测时，和上面的推导类似，可得：
+
+$$p(y\mid x,S)=\int_\theta p(y\mid x,\theta,S)p(\theta\mid S)\mathrm{d}\theta$$
+
+因为预测样本集和训练样本集的分布是独立的，因此上式又可写为：
+
+$$p(y\mid x,S)=\int_\theta p(y\mid x,\theta)p(\theta\mid S)\mathrm{d}\theta$$
+
+这个公式又被称作后验预测分布（Posterior predictive distribution）。
+
+$$p(\theta\mid S)$$可由前面的公式得到。
 
 假若我们要求期望值的话，那么套用求期望的公式即可：
 
@@ -190,52 +242,4 @@ Bisecting K-Means算法
 https://mp.weixin.qq.com/s/oAvNzxENTfaxUkSRypCo1g
 
 K-Means算法的10个有趣用例
-
-## 聚类结果的评价
-
-可考虑用以下几个指标来评价聚类效果：
-
-1.聚类中心之间的距离。距离值大，通常可考虑分为不同类。
-
-2.聚类域中的样本数目。样本数目少且聚类中心距离远，可考虑是否为噪声。
-
-3.聚类域内样本的距离方差。方差过大的样本可考虑是否属于这一类。
-
-# 高斯混合模型和EM算法
-
-本篇讨论使用期望最大化算法（Expectation-Maximization）进行密度估计（density estimation）。
-
-从上面的讨论可以形象的看出，聚类问题实际就是在数据集上，找出一个个数据密度较高的“圆圈”。我们可以反过来思考这个问题：如果我们已知圆圈的圆心和半径，那么也可以根据圆心、半径以及样本分布模型，来随机生成这些数据。显然，这和前一种做法在效果上是等效的。
-
-首先我们假设样本数据满足联合概率分布
-
-$$p(x^{(i)},z^{(i)})=p(x^{(i)}\mid z^{(i)})p(z^{(i)})\tag{5}$$
-
-其中，$$z^{(i)}\sim Multinomial(\phi)$$（这里的$$\phi_j=p(z^{(i)}=j)$$，因此$$\phi_j\ge 0,\sum_{j=1}^k\phi_j=1$$），$$z^{(i)}$$的值为k个聚类之一。
-
-假定$$x^{(i)}\mid z^{(i)}=j\sim \mathcal{N}(\mu_j,\Sigma_j)$$，则该模型被称为高斯混合模型（mixture of Gaussians model）。
-
-整个模型简单描述为对于每个样例$$x^{(i)}$$，我们先从k个类别中按多项分布抽取一个$$z^{(i)}$$，然后根据$$z^{(i)}$$所对应的k个多值高斯分布中的一个生成样例$$x^{(i)}$$。注意的是这里的$$z^{(i)}$$是隐含的随机变量（latent random variables）。
-
-![](/images/article/EM.png)
-
-因此，由全概率公式可得：
-
-$$p(x^{(i)};\phi,\mu,\Sigma)=\sum_{z^{(i)}=1}^kp(x^{(i)}\mid z^{(i)};\mu,\Sigma)p(z^{(i)};\phi)\tag{6}$$
-
-该模型的对数化似然函数为：
-
-$$\ell(\phi,\mu,\Sigma)=\sum_{i=1}^m\log p(x^{(i)};\phi,\mu,\Sigma)=\sum_{i=1}^m\log \sum_{z^{(i)}=1}^kp(x^{(i)}\mid z^{(i)};\mu,\Sigma)p(z^{(i)};\phi)$$
-
-这个式子的最大值不能通过求导数为0的方法解决的，因为它不是close form。（多项分布的概率密度函数包含阶乘运算，不满足close form的定义。）
-
-为了简化问题，我们假设已经知道每个样例的$$z^{(i)}$$值。这实际上就转化成《机器学习（二）》所提到的GDA模型。和之前模型的区别在于，$$z^{(i)}$$是多项分布，而且每个聚类的$$\Sigma$$都不相同，但结论是类似的。
-
-这里的直接推导非常复杂，可参考以下文章：
-
-http://www.cse.psu.edu/~rtc12/CSE586/lectures/EMLectureFeb3.pdf
-
-上面这篇文章比较直观，比Andrew讲义的Problem Set详细的多。然而Andrew这样写是有原因的，在后面的章节，借助Jensen不等式，Andrew给出一个更简单且一般化的推导过程。
-
-接下来的问题就是：$$z^{(i)}$$的值我们是不知道的，该怎么办呢？
 

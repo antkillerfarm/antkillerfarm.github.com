@@ -4,7 +4,53 @@ title:  机器学习（十）——高斯混合模型和EM算法
 category: ML 
 ---
 
-# 高斯混合模型和EM算法（续）
+## 聚类结果的评价
+
+可考虑用以下几个指标来评价聚类效果：
+
+1.聚类中心之间的距离。距离值大，通常可考虑分为不同类。
+
+2.聚类域中的样本数目。样本数目少且聚类中心距离远，可考虑是否为噪声。
+
+3.聚类域内样本的距离方差。方差过大的样本可考虑是否属于这一类。
+
+# 高斯混合模型和EM算法
+
+本篇讨论使用期望最大化算法（Expectation-Maximization）进行密度估计（density estimation）。
+
+从上面的讨论可以形象的看出，聚类问题实际就是在数据集上，找出一个个数据密度较高的“圆圈”。我们可以反过来思考这个问题：如果我们已知圆圈的圆心和半径，那么也可以根据圆心、半径以及样本分布模型，来随机生成这些数据。显然，这和前一种做法在效果上是等效的。
+
+首先我们假设样本数据满足联合概率分布
+
+$$p(x^{(i)},z^{(i)})=p(x^{(i)}\mid z^{(i)})p(z^{(i)})\tag{5}$$
+
+其中，$$z^{(i)}\sim Multinomial(\phi)$$（这里的$$\phi_j=p(z^{(i)}=j)$$，因此$$\phi_j\ge 0,\sum_{j=1}^k\phi_j=1$$），$$z^{(i)}$$的值为k个聚类之一。
+
+假定$$x^{(i)}\mid z^{(i)}=j\sim \mathcal{N}(\mu_j,\Sigma_j)$$，则该模型被称为高斯混合模型（mixture of Gaussians model）。
+
+整个模型简单描述为对于每个样例$$x^{(i)}$$，我们先从k个类别中按多项分布抽取一个$$z^{(i)}$$，然后根据$$z^{(i)}$$所对应的k个多值高斯分布中的一个生成样例$$x^{(i)}$$。注意的是这里的$$z^{(i)}$$是隐含的随机变量（latent random variables）。
+
+![](/images/article/EM.png)
+
+因此，由全概率公式可得：
+
+$$p(x^{(i)};\phi,\mu,\Sigma)=\sum_{z^{(i)}=1}^kp(x^{(i)}\mid z^{(i)};\mu,\Sigma)p(z^{(i)};\phi)\tag{6}$$
+
+该模型的对数化似然函数为：
+
+$$\ell(\phi,\mu,\Sigma)=\sum_{i=1}^m\log p(x^{(i)};\phi,\mu,\Sigma)=\sum_{i=1}^m\log \sum_{z^{(i)}=1}^kp(x^{(i)}\mid z^{(i)};\mu,\Sigma)p(z^{(i)};\phi)$$
+
+这个式子的最大值不能通过求导数为0的方法解决的，因为它不是close form。（多项分布的概率密度函数包含阶乘运算，不满足close form的定义。）
+
+为了简化问题，我们假设已经知道每个样例的$$z^{(i)}$$值。这实际上就转化成《机器学习（二）》所提到的GDA模型。和之前模型的区别在于，$$z^{(i)}$$是多项分布，而且每个聚类的$$\Sigma$$都不相同，但结论是类似的。
+
+这里的直接推导非常复杂，可参考以下文章：
+
+http://www.cse.psu.edu/~rtc12/CSE586/lectures/EMLectureFeb3.pdf
+
+上面这篇文章比较直观，比Andrew讲义的Problem Set详细的多。然而Andrew这样写是有原因的，在后面的章节，借助Jensen不等式，Andrew给出一个更简单且一般化的推导过程。
+
+接下来的问题就是：$$z^{(i)}$$的值我们是不知道的，该怎么办呢？
 
 EM算法的思路是：
 
@@ -199,88 +245,4 @@ $$\sum_i\sum_{z^{(i)}}Q_i^{(t)}(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\theta^{(t+1
 $$J(Q,\theta)=\sum_i\sum_{z^{(i)}}Q_i(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}$$
 
 则EM算法可以看作是J函数的坐标上升法。E-Step固定$$\theta$$，优化Q；M-Step固定Q，优化$$\theta$$。
-
-参考：
-
-https://mp.weixin.qq.com/s/NbM4sY93kaG5qshzgZzZIQ
-
-EM算法的九层境界：​Hinton和Jordan理解的EM算法
-
-https://mp.weixin.qq.com/s/FSID_FLMVxrKEj_padg_bQ
-
-EM算法是炼金术吗？
-
-https://mp.weixin.qq.com/s/9G_7Ax9cPcQcYVqEfc-pyw
-
-从基础知识到实际应用，一文了解“机器学习非凸优化技术”
-
-https://mp.weixin.qq.com/s/JSnPTVRgXO3aih5srU1eZQ
-
-EM算法原理总结
-
-## 重新审视混合高斯模型
-
-下面给出混合高斯模型各参数的推导过程。
-
-E-Step很简单：
-
-$$w_j^{(i)}=Q_i(z^{(i)}=j)=p(z^{(i)}=j\mid x^{(i)};\phi,\mu,\Sigma)$$
-
-在M-Step中，我们将各个变量和分布的概率密度函数代入，可得：
-
-$$\begin{align}
-&\sum_{i=1}^m\sum_{z^{(i)}}Q_i(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}
-\\&=\sum_{i=1}^m\sum_{j=1}^kQ_i(z^{(i)}=j)\log\frac{p(x^{(i)}\mid z^{(i)}=j;\mu,\Sigma)p(z^{(i)}=j;\phi)}{Q_i(z^{(i)}=j)}
-\\&=\sum_{i=1}^m\sum_{j=1}^kw_j^{(i)}\log\frac{\frac{1}{(2\pi)^{n/2}\lvert\Sigma_j\rvert^{1/2}}\exp\left(-\frac{1}{2}(x^{(i)}-\mu_j)^T\Sigma_j^{-1}(x^{(i)}-\mu_j)\right)\cdot \phi_j}{w_j^{(i)}}
-\end{align}$$
-
-对$$\mu_l$$求导，可得：
-
-$$\begin{align}
-&\nabla_{\mu_l}\sum_{i=1}^m\sum_{j=1}^kw_j^{(i)}\log\frac{\frac{1}{(2\pi)^{n/2}\lvert\Sigma_j\rvert^{1/2}}\exp\left(-\frac{1}{2}(x^{(i)}-\mu_j)^T\Sigma_j^{-1}(x^{(i)}-\mu_j)\right)\cdot \phi_j}{w_j^{(i)}}
-\\&=-\nabla_{\mu_l}\sum_{i=1}^m\sum_{j=1}^kw_j^{(i)}\frac{1}{2}(x^{(i)}-\mu_j)^T\Sigma_j^{-1}(x^{(i)}-\mu_j)
-\\&=\frac{1}{2}\sum_{i=1}^mw_l^{(i)}\nabla_{\mu_l}(2\mu_l^T\Sigma_l^{-1}x^{(i)}-\mu_l^T\Sigma_l^{-1}\mu_l)=\sum_{i=1}^mw_l^{(i)}(\Sigma_l^{-1}x^{(i)}-\Sigma_l^{-1}\mu_l)\tag{4}
-\end{align}$$
-
-这里对最后一步的推导，做一个说明。为了便于以下的讨论，我们引入符号“tr”，该符号表示矩阵的主对角线元素之和，也被叫做矩阵的“迹”（Trace）。按照通常的写法，在不至于误会的情况下，tr后面的括号会被省略。
-
-tr的其他性质还包括：
-
-$$\operatorname{tr}\,a=a,a\in R\tag{5.1}$$
-
-$$\operatorname{tr}(A + B) = \operatorname{tr}(A) + \operatorname{tr}(B)\tag{5.2}$$
-
-$$\operatorname{tr}(cA) = c \operatorname{tr}(A)\tag{5.3}$$
-
-$$\operatorname{tr}(A) = \operatorname{tr}(A^{\mathrm T})\tag{5.4}$$
-
-$$\operatorname{tr}(AB) = \operatorname{tr}(BA)\tag{5.5}$$
-
-$$\operatorname{tr}(ABCD) = \operatorname{tr}(BCDA) = \operatorname{tr}(CDAB) = \operatorname{tr}(DABC)\tag{5.6}$$
-
-$$\nabla_A\operatorname{tr}(AB)=B^T\tag{5.7}$$
-
-$$\nabla_{A^T}f(A)=(\nabla_Af(A))^T\tag{5.8}$$
-
-$$\nabla_A\operatorname{tr}(ABA^TC)=CAB+C^TAB^T\tag{5.9}$$
-
-$$\nabla_{A^T}\operatorname{tr}(ABA^TC)=B^TA^TC^T+BA^TC\tag{5.10}$$
-
-$$\nabla_A\mid A\mid =\mid A\mid (A^{-1})^T\tag{5.11}$$
-
-因为$$\mu_l^T\Sigma_l^{-1}\mu_l$$是实数，由公式5.1可得：
-
-$$\nabla_{\mu_l}\mu_l^T\Sigma_l^{-1}\mu_l=\nabla_{\mu_l}\operatorname{tr}(\mu_l^T\Sigma_l^{-1}\mu_l)$$
-
-由公式5.10可得：
-
-$$\nabla_{\mu_l}\operatorname{tr}(\mu_l^T\Sigma_l^{-1}\mu_l)=(\Sigma_l^{-1})^T(\mu_l^T)^TI^T+\Sigma_l^{-1}(\mu_l^T)^TI=(\Sigma_l^{-1})^T\mu_l+\Sigma_l^{-1}\mu_l$$
-
-因为$$\Sigma_l^{-1}$$是对称矩阵，因此，综上可得：
-
-$$\nabla_{\mu_l}\mu_l^T\Sigma_l^{-1}\mu_l=2\Sigma_l^{-1}\mu_l\tag{5.12}$$
-
-回到正题，令公式4等于0，可得：
-
-$$\mu_j:=\frac{\sum_{i=1}^mw_j^{(i)}x^{(i)}}{\sum_{i=1}^mw_j^{(i)}}$$
 

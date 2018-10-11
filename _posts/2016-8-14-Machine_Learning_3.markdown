@@ -225,19 +225,3 @@ https://mp.weixin.qq.com/s/KNV0KfWktmsPUtQ93a7cDQ
 
 这个男人嫁还是不嫁？懂点朴素贝叶斯(Naive Bayes)原理让你更幸福
 
-## 拉普拉斯平滑
-
-对于样本集中未出现的单词，在其首次出现时，由于先验概率$$p(x_i\mid y=1)=0,p(x_i\mid y=0)=0$$，这时公式1会出现$$\frac{0}{0}$$的情况。
-
-为了避免这种情况，我们假定先验概率至少为1次，也就是
-
-$$\phi_j=p(y=j)=\frac{\sum_{i=1}^m1\{y^{(i)}=j\}+1}{m+k}$$
-
-这种方法叫做拉普拉斯平滑（Laplace Smoothing）。注意这里$$\phi$$的定义和上面略有不同，上面的公式中，y是二值分布，而这里是多值分布（值为k）。为了满足概率和为1的条件，分母上需要加k。
-
-参考：
-
-https://mp.weixin.qq.com/s/_wuE3-7nWyz7VDWdDPJSeQ
-
-一文理解朴素贝叶斯分类的拉普拉斯平滑
-

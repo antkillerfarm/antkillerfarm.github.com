@@ -120,6 +120,10 @@ https://mp.weixin.qq.com/s/7RU3Nzy5qkTL8-2LOjg9qg
 
 从基础到实现：集成学习综合教程
 
+https://mp.weixin.qq.com/s/Pkc8KyDZ53ZGO5lNLVjoBg
+
+一份完备的集成学习手册！
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。

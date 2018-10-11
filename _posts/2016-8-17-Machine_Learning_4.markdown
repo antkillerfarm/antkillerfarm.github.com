@@ -4,6 +4,22 @@ title:  机器学习（四）——SVM（1）
 category: ML 
 ---
 
+## 拉普拉斯平滑
+
+对于样本集中未出现的单词，在其首次出现时，由于先验概率$$p(x_i\mid y=1)=0,p(x_i\mid y=0)=0$$，这时公式1会出现$$\frac{0}{0}$$的情况。
+
+为了避免这种情况，我们假定先验概率至少为1次，也就是
+
+$$\phi_j=p(y=j)=\frac{\sum_{i=1}^m1\{y^{(i)}=j\}+1}{m+k}$$
+
+这种方法叫做拉普拉斯平滑（Laplace Smoothing）。注意这里$$\phi$$的定义和上面略有不同，上面的公式中，y是二值分布，而这里是多值分布（值为k）。为了满足概率和为1的条件，分母上需要加k。
+
+参考：
+
+https://mp.weixin.qq.com/s/_wuE3-7nWyz7VDWdDPJSeQ
+
+一文理解朴素贝叶斯分类的拉普拉斯平滑
+
 ## 文本分类的事件模型
 
 文本分类的事件模型有两类：
@@ -207,28 +223,4 @@ https://mp.weixin.qq.com/s/PELnlB5vMV0gGJbL6BzoIA
 $$g_i(w)=-y^{(i)}(w^Tx^{(i)}+b)+1\le 0$$
 
 由KKT对偶互补条件可知，如果$$\alpha_i>0$$，则$$g_i(w)=0$$。
-
-![](/images/article/SVM_3.png)
-
-上图中的实线表示最大边距的分割超平面。由之前对于边距的几何意义的讨论可知，只有离该分界线最近的几个点（即图中的所示的两个x点和一个o点）才会取得约束条件的极值，即$$g_i(w)=0$$。也只有这几个点的$$\alpha_i>0$$，其余点的$$\alpha_i=0$$。这样的点被称作支持向量（support vectors）。显然支持向量的数量是远远小于样本集的数量的。
-
-为我们的问题构建拉格朗日函数如下：
-
-$$\mathcal{L}(w,b,\alpha)=\frac{1}{2}\|w\|^2-\sum_{i=1}^m\alpha_i[y^{(i)}(w^Tx^{(i)}+b)-1] \tag{2}$$
-
-为了求解
-
-$$\theta_\mathcal{D}(\alpha)=\underset{w,b}{\operatorname{min}}\mathcal{L}(w,b,\alpha)$$
-
-可得：
-
-$$\nabla_w\mathcal{L}(w,b,\alpha)=w-\sum_{i=1}^m\alpha_iy^{(i)}x^{(i)}=0$$
-
-即
-
-$$w=\sum_{i=1}^m\alpha_iy^{(i)}x^{(i)} \tag{3}$$
-
-对b求导可得：
-
-$$\frac{\partial}{\partial b}\mathcal{L}(w,b,\alpha)=\sum_{i=1}^m\alpha_iy^{(i)}=0 \tag{4}$$
 

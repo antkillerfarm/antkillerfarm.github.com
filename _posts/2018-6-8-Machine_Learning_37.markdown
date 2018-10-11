@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十七）——KNN, Optimizer进阶, 聚类算法, 特征工程, 模仿学习, 三门问题, 推荐系统进阶（2）
+title:  机器学习（三十七）——KNN, Optimizer进阶, 推荐系统进阶
 category: ML 
 ---
 
@@ -190,107 +190,99 @@ https://zhuanlan.zhihu.com/p/45298186
 
 Matrix Factorization方法证明总结
 
-# 聚类算法
-
-https://mp.weixin.qq.com/s/xGPiaXTnQad3RcMwIELP4w
-
-流式聚类算法
-
-https://wenku.baidu.com/view/4169e77f27284b73f2425047.html
-
-层次聚类
-
-https://mp.weixin.qq.com/s/uSHLJKB0knVcCY759Ul25w
-
-什么是聚类和降维？
-
-https://mp.weixin.qq.com/s/ORLOOhufrInyPdS6fbywOw
-
-深入浅出——基于密度的聚类方法
-
-https://mp.weixin.qq.com/s/Vi4Yb8TOJydj9yL078iNHw
-
-BIRCH层次聚类详解
-
-https://mp.weixin.qq.com/s/dIsq3RKAU_K6vS0-MPKbzA
-
-BIRCH聚类算法原理
-
-https://mp.weixin.qq.com/s/_5A3DuVyN6aE9n5OEc19kA
-
-数据科学家必须了解的六大聚类算法：带你发现数据之美
-
-https://mp.weixin.qq.com/s/pDiZt4ydWw-4cYeE4gpjiw
-
-数据科学家需要了解的5大聚类算法
-
-https://www.zhihu.com/question/34554321
-
-用于数据挖掘的聚类算法有哪些，各有何优势？
-
-https://mp.weixin.qq.com/s/7zV370J7nv5wSWxdYa5Plg
-
-DBSCAN聚类算法原理介绍，以及代码实现
-
-https://mp.weixin.qq.com/s/8dB2OQCoZ7_kSxExm32WSA
-
-于剑：聚类理论与算法选讲
-
-https://mp.weixin.qq.com/s/1SOQZ3fsiYtT4emt4jvMxQ
-
-深入浅出聚类算法
-
-# 特征工程
-
-https://mp.weixin.qq.com/s/ibiElLIgrT3wYx3tDYMMTw
-
-理解特征工程
-
-https://mp.weixin.qq.com/s/3Ce8uMf_Kyt-hEZUYfdh3g
-
-特征工程之特征选择
-
-https://mp.weixin.qq.com/s/tOcyfK68jW7Tr-PGCvdXMA
-
-特征工程最后一个要点:特征预处理
-
-https://mp.weixin.qq.com/s/c9iHdgtErVd_iitwny7_zw
-
-Kaggle前1%参赛者经验：特征工程为何如此重要？
-
-# 模仿学习
-
-https://zhuanlan.zhihu.com/p/27935902
-
-机器人学习Robot Learning之模仿学习Imitation Learning的发展
-
-https://zhuanlan.zhihu.com/p/25688750
-
-模仿学习（Imitation Learning）完全介绍
-
-https://mp.weixin.qq.com/s/naq73D27vsCOUBperKto8A
-
-从监督式到DAgger，综述论文描绘模仿学习全貌
-
-https://mp.weixin.qq.com/s/LNNqp2KsEAljG26hY43mUw
-
-ICML2018 模仿学习教程
-
-# 三门问题
-
-https://www.zhihu.com/question/26709273/
-
-蒙提霍尔问题（又称三门问题、山羊汽车问题）的正解是什么？
-
-https://zhuanlan.zhihu.com/p/21461266
-
-数学杂谈——“三门问题”：Monty Hall Problem
-
-https://zhuanlan.zhihu.com/p/23338174
-
-蒙提霍尔问题/三门问题（Monty Hall problem）
-
 # 推荐系统进阶
+
+除了《机器学习（十五～十六）》提及的ALS和PCA之外，相关的算法还包括：
+
+## FM：Factorization Machines
+
+Factorization Machines是Steffen Rendle于2010年提出的算法。
+
+>注：Steffen Rendle，弗赖堡大学博士，现为Google研究员。libFM的作者，被誉为推荐系统的新星。
+
+FM算法实际上是一大类与矩阵分解有关的算法的广义模型。
+
+参考文献1是Rendle本人的论文，其中有章节证明了SVD++、PITF、FPMC等算法，都是FM算法的特例。《机器学习（十四）》中提到的ALS算法，也是FM的特例。
+
+参考文献2是国人写的中文说明，相对浅显一些。
+
+参考：
+
+https://www.ismll.uni-hildesheim.de/pub/pdfs/Rendle2010FM.pdf
+
+http://blog.csdn.net/itplus/article/details/40534885
+
+Factorization Machines 学习笔记（一）预测任务
+
+https://tech.meituan.com/deep-understanding-of-ffm-principles-and-practices.html
+
+深入FFM原理与实践
+
+https://github.com/aksnzhy/xlearn
+
+这是一个集成了FM和FFM等算法的库
+
+## PITF
+
+配对互动张量分解（Pairwise Interaction Tensor Factorization）算法，也是最早由Rendle引入推荐系统领域的。
+
+论文：
+
+http://www.wsdm-conference.org/2010/proceedings/docs/p81.pdf
+
+## 其他
+
+https://mp.weixin.qq.com/s/7yjA3_oCI5nSH4tv04BIhQ
+
+HFT
+
+https://mp.weixin.qq.com/s/gHKOArFzUM9Zn8hEsA-1wQ
+
+FISM
+
+https://mp.weixin.qq.com/s/VymwTuKq86JP2PL4v8LyyQ
+
+POI by Friends
+
+https://mp.weixin.qq.com/s/LnV-Oq3pCCeMk9RRhha-Aw
+
+GLSLIM
+
+https://mp.weixin.qq.com/s/xnJq-aBAZW22tP7RQylKLw
+
+iCD
+
+https://mp.weixin.qq.com/s/-IPwfrBz1dtYDupuGv4IjQ
+
+Ensemble
+
+https://mp.weixin.qq.com/s/SC8kNYvexetmDuxfQvwSDw
+
+CKE
+
+https://mp.weixin.qq.com/s/bu9rSno_WmHHisE3lzYnqg
+
+ConvMF
+
+https://mp.weixin.qq.com/s/opJtn5mPVjnfRwr5UZ4aJg
+
+FTRL原理与工程实践
+
+http://www.cnblogs.com/EE-NovRain/p/3810737.html
+
+各大公司广泛使用的在线学习算法FTRL详解
+
+https://mp.weixin.qq.com/s/q9FU19Hpw2eWLLhsY5lYJQ
+
+parameter-free contextual bandits
+
+https://mp.weixin.qq.com/s/T-yCjebTzc_t6D4o5gyQLQ
+
+Collaborative Metric Learning
+
+https://mp.weixin.qq.com/s/9xxLU51eqhc6C81jzHQijQ
+
+简述推荐系统中的矩阵分解
 
 https://mp.weixin.qq.com/s/qmkMJJkMqumbtynM4cLatw
 

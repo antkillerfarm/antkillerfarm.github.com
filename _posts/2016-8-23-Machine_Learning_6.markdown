@@ -4,6 +4,44 @@ title:  机器学习（六）——SVM（3）
 category: ML 
 ---
 
+## 规则化和不可分情况处理（续）
+
+模型修改后，拉格朗日公式修改如下：
+
+$$\mathcal{L}(w,b,\xi,\alpha,r)=\frac{1}{2}w^Tw+C\sum_{i=1}^m\xi_i-\sum_{i=1}^m\alpha_i[y^{(i)}(w^Tx^{(i)}+b)-1+\xi_i]-\sum_{i=1}^mr_i\xi_i$$
+
+其对偶优化问题为：
+
+$$\begin{align}
+&\operatorname{max}_\alpha & & W(\alpha)=\sum_{i=1}^m\alpha_i-\frac{1}{2}\sum_{i,j=1}^my^{(i)}y^{(j)}\alpha_i\alpha_j\langle x^{(i)},x^{(j)}\rangle\\
+&\operatorname{s.t.}& & 0\le\alpha_i\le C,i=1,\dots,m\\
+& & & \sum_{i=1}^m\alpha_iy^{(i)}=0
+\end{align}$$
+
+此时，我们发现没有了参数$$\xi_i$$，与之前模型唯一不同在于$$\alpha_i$$多了$$\alpha_i\le C$$的限制条件。需要注意的是，b的求值公式发生了改变，这将在SMO算法里面介绍。
+
+## 坐标上升法
+
+$$\begin{align}
+&\operatorname{max}_\alpha & & W(\alpha_1,\dots,\alpha_m)
+\end{align}$$
+
+对于上面这个优化问题，除了之前介绍的梯度下降法和牛顿法之外，还有坐标上升法(Coordinate ascent)。其过程为：
+
+>Loop until convergence:{   
+>>for i=1 to m, {   
+>>>$$\alpha_i:=\arg\max_{\hat\alpha_i}W(\alpha_1,\dots,\alpha_{i-1},\hat\alpha_i,\alpha_{i+1},\dots,\alpha_m)$$   
+>>
+>>}   
+>
+>}
+
+最里面语句的意思是固定除$$\alpha_i$$之外的所有$$\alpha_j(j\neq i)$$,这时W可看作只是关于$$\alpha_i$$的函数，那么直接对$$\alpha_i$$求导优化即可。这里我们进行最大化求导的顺序是从1到m,可以通过更改优化顺序来使W能够更快地增加并收敛。如果W在内循环中能够很快地达到最优,那么坐标上升法会是一个很高效的求极值方法。
+
+![](/images/article/SVM_7.png)
+
+图中的直线表示迭代优化的路径，可以看到每一步前进路线都是平行于坐标轴的，因为每一步只优化一个变量。
+
 ## 序列最小优化方法
 
 序列最小优化方法（Sequential Minimal Optimization，SMO）算法由Microsoft Research的John C. Platt在1998年提出，并成为最快的二次规划优化算法，特别针对SVM和数据稀疏时性能更优。关于SMO最好的资料就是他本人写的《Sequential Minimal Optimization A Fast Algorithm for Training Support Vector Machines》。
@@ -177,51 +215,4 @@ $$f_2=y^{(2)}(b-E_2)+s\alpha_1K_{12}+\alpha_2K_{22}$$
 由《机器学习（五）》中的公式5可得：
 
 $$W_L=L_1f_1+Lf_2-\frac{1}{2}L_1^2K_{11}-\frac{1}{2}L^2K_{22}-sLL_1K_{12}$$
-
-$$\alpha_2^{new}=H$$的情况，同理可得：
-
-$$\alpha_1^{new}=H_1=\alpha_1+s(\alpha_2-H)$$
-
-$$W_H=H_1f_1+Hf_2-\frac{1}{2}H_1^2K_{11}-\frac{1}{2}H^2K_{22}-sHH_1K_{12}$$
-
-根据$$W_H$$和$$W_L$$哪个是极值，可以反过来确定$$\alpha_2^{new}=L$$，还是$$\alpha_2^{new}=H$$。
-
-至此，迭代关系式除了b的推导式以外，都已经推出。
-
-由公式8可得：
-
-$$u_1^{new}-b^{new}-y^{(1)}\alpha_1^{new}K_{11}-y^{(2)}\alpha_2^{new}K_{12}=u_1-b-y^{(1)}\alpha_1K_{11}-y^{(2)}\alpha_2K_{12}$$
-
-迭代的目的是使预测更为准确，因此设置$$u_1^{new}=y^{(1)}$$是很直观的做法，因此：
-
-$$\begin{align}
--b^{new}&=u_1-u_1^{new}+y^{(1)}(\alpha_1^{new}-\alpha_1)K_{11}+y^{(2)}(\alpha_2^{new}-\alpha_2)K_{12}
-\\&=(u_1-y^{(1)})+y^{(1)}(\alpha_1^{new}-\alpha_1)K_{11}+y^{(2)}(\alpha_2^{new}-\alpha_2)K_{12}
-\\&=E_1+y^{(1)}(\alpha_1^{new}-\alpha_1)K_{11}+y^{(2)}(\alpha_2^{new}-\alpha_2)K_{12}
-\end{align}$$
-
-上式是根据$$u_1$$得到的$$b^{new}$$，我们将之记作$$b_1$$。
-
-同理，可得：
-
-$$-b_2=E_2+y^{(1)}(\alpha_1^{new}-\alpha_1)K_{12}+y^{(2)}(\alpha_2^{new}-\alpha_2)K_{22}$$
-
-如果$$\alpha_1^{new}$$在边界内，则$$b^{new}=b_1$$；如果$$\alpha_2^{new}$$在边界内，则$$b^{new}=b_2$$。
-
-如果$$\alpha_1^{new}$$和$$\alpha_2^{new}$$都在边界内，则$$b^{new}=b_1=b_2$$。
-
-如果$$\alpha_1^{new}$$和$$\alpha_2^{new}$$都在边界上，则$$b_1$$和$$b_2$$之间的任意值都满足KKT条件，一般取$$b^{new}=\frac{b_1+b_2}{2}$$。
-
-## SMO算法在线性SVM时的简化
-
-由《机器学习（四）》一节的公式3，可得：
-
-$$w^{new}-y^{(1)}\alpha_1^{new}x^{(1)}-y^{(2)}\alpha_2^{new}x^{(2)}=w-y^{(1)}\alpha_1x^{(1)}-y^{(2)}\alpha_2x^{(2)}$$
-
-$$w^{new}=w+y^{(1)}(\alpha_1^{new}-\alpha_1)x^{(1)}+y^{(2)}(\alpha_2^{new}-\alpha_2)x^{(2)}$$
-
-需要注意的是，虽然我们在之前的讨论中，使用$$K_{ij}$$代替$$\langle x^{(i)},x^{(j)}\rangle$$进行扩展，然而两者只有在线性的情况下，才是等价的，即$$\phi(x)=x$$。
-
-K函数最大的作用不在于计算线性SVM，而在于计算非线性的SVM。
-
 
