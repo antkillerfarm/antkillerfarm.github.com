@@ -277,6 +277,10 @@ https://mp.weixin.qq.com/s/l0AL89M0xPbWMFj6U7yYZw
 
 消息中间件选型分析：从Kafka与RabbitMQ的对比看全局
 
+https://mp.weixin.qq.com/s/oKBUb2IbG_h1xDhL42TbuQ
+
+360开源又一力作——KafkaBridge：让操作kafka更简单！
+
 # Flutter
 
 Flutter是Google用以帮助开发者在Ios和Android两个平台开发高质量原生应用的全新移动UI框架。Beta1版本于2018年2月27日在2018世界移动大会上公布。

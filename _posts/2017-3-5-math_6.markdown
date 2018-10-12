@@ -66,6 +66,12 @@ $$\frac{\hat b-b}{\hat \sigma}\sqrt{S_{xx}}\sim t(n-2)$$
 
 >Wilson Allen Wallis，1912～1998，美国经济学家。先后就读于明尼苏达大学和芝加哥大学，但是没有博士学位。罗彻斯特大学校长。从艾森豪威尔到里根的历届共和党总统的顾问。Milton Friedman的至交。其父Wilson Dallam Wallis为美国人类学家，明尼苏达大学教授。
 
+参考：
+
+https://mp.weixin.qq.com/s/xd2Xw093Wp7O7yQLZHSL4Q
+
+一文学会统计学中的显著性概念
+
 ## KS检验
 
 Kolmogorov–Smirnov test用于对样本是否属于某种分布进行假设检验。

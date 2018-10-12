@@ -314,6 +314,10 @@ https://mp.weixin.qq.com/s/-XFbY7p8vjJV71Ar5G_5OA
 
 最有趣的机器学习可视化图集
 
+https://mp.weixin.qq.com/s/E-HBQs1-nzP1shC7Gge-7A
+
+“看透”神经网络
+
 ## 贝叶斯线性回归
 
 https://mp.weixin.qq.com/s/szTmHY-Yvn7N3s_GzTDiEA

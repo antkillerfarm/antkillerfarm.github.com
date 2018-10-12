@@ -286,6 +286,10 @@ https://www.monthly-hack.com/entry/2018/02/26/211248
 
 这是个日文blog，有两张图不错。
 
+https://www.jianshu.com/p/b3019f2773ed
+
+语音合成text-to-speech WaveRNN
+
 ## 参考
 
 https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw

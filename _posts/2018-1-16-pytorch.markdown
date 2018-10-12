@@ -50,6 +50,12 @@ Pytorch的安装方法在官网首页就可查到，非常方便。
 
 `pip3 install torchvision`
 
+参考：
+
+https://zhuanlan.zhihu.com/p/44068797
+
+Windows装TensorFlow+MXNet+PyTorch
+
 ## 项目
 
 https://github.com/CSAILVision/semantic-segmentation-pytorch

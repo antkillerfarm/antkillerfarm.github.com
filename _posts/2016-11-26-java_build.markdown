@@ -271,9 +271,13 @@ Github：
 
 https://github.com/hprose
 
-# DL参考资源
+# DL参考资源+
 
 https://mp.weixin.qq.com/s/-xZxNJPQyEQyBOue6_77yw
 
 用浅度学习训练深度网络：避开端到端深度学习难题
+
+https://mp.weixin.qq.com/s/9yfTO2jHz69-k1MsUGIM0Q
+
+双目立体放大！谷歌刚刚开源的这篇论文可能会成为手机双摄的新玩法
 

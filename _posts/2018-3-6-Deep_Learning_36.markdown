@@ -304,6 +304,10 @@ https://mp.weixin.qq.com/s/5ryEfgQnX-JXCvhwzKSCjA
 
 点击率预估界的“神算子”是如何炼成的？
 
+https://mp.weixin.qq.com/s/npZg46MK5MZ7h9cqvrAYiQ
+
+机器如何猜你所想？阿里小蜜预测平台揭秘
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

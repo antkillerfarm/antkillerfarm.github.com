@@ -220,6 +220,10 @@ https://mp.weixin.qq.com/s/DCTxmHg9aX3BqCAckv_S0g
 
 不再需要动作捕捉，伯克利推出“看视频学杂技”的AI智能体
 
+https://mp.weixin.qq.com/s/sZskFg2KbUbt88O0MaEM_g
+
+检测与识别人与目标之间的互动
+
 # 深度目标跟踪
 
 https://zhuanlan.zhihu.com/p/22334661

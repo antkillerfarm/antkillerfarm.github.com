@@ -184,6 +184,10 @@ https://mp.weixin.qq.com/s/iOdh1iIP0GIYe4gRDE0z-g
 
 漫谈概率PCA和变分自编码器
 
+https://mp.weixin.qq.com/s/pBnKNRc56HhBWvrYaZjGdw
+
+稳定、表征丰富的球面变分自编码器
+
 # RBM & DBN & Deep Autoencoder
 
 ## RBM

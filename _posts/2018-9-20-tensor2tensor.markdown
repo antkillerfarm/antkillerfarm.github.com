@@ -258,3 +258,6 @@ https://mp.weixin.qq.com/s/UKt1cFLcRYZQTJiZRiajwQ
 
 TensorFlow Servering C/S通信约束
 
+https://mp.weixin.qq.com/s/DpqI4AfjiygCh8dqq_Kgmw
+
+基于TensorFlow Serving的深度学习在线预估
