@@ -280,6 +280,10 @@ https://mp.weixin.qq.com/s/kEC-5huq6cFjd1iPjSuK-g
 
 5行代码秀碾压，比Keras还好用的fastai来了，尝鲜PyTorch 1.0必备伴侣
 
+https://zhuanlan.zhihu.com/p/46636027
+
+1张图学会PyTorch+TensorFlow+MXNet+TF Eager
+
 # PaddlePaddle
 
 https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q

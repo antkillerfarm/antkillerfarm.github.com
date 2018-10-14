@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十八）——PageRank算法
+title:  机器学习（三十八）——PageRank算法, 社交网络
 category: ML 
 ---
 
@@ -153,3 +153,48 @@ http://www.docin.com/p-630952720.html
 https://mp.weixin.qq.com/s/J9OmqFzQK-GS95FjgAJkTw
 
 浅析PageRank算法
+
+# 社交网络
+
+## 信息传播模型
+
+### 感染模型
+
+SI、SIR等模型。
+
+https://www.cnblogs.com/scikit-learn/p/6937326.html
+
+基本的传染病模型：SI、SIS、SIR及其Python代码实现
+
+https://blog.csdn.net/robin_Xu_shuai/article/details/73699207
+
+SI疾病传播模型实现
+
+### 影响力模型
+
+IC、LT等模型。
+
+https://blog.csdn.net/asialee_bird/article/details/79673418
+
+社交网络影响力最大化
+
+http://cjc.ict.ac.cn/online/onlinepaper/wzj-201672182158.pdf
+
+基于社交内容的潜在影响力传播模型
+
+## 链接预测
+
+Link Prediction是指如何通过已知的网络节点以及网络结构等信息预测网络中尚未产生连边的两个节点之间产生链接的可能性。这种预测既包含了对未知链接（exist yet unknown links）的预测也包含了对未来链接（future links）的预测。该问题的研究在理论和应用两个方面都具有重要的意义和价值。
+
+http://www.docin.com/p-810499317.html
+
+社交网络中的链接预测研究
+
+## 社区发现
+
+社区发现（Community Detection）算法用来发现网络中的社区结构，也可以视为一种广义的聚类算法。
+
+https://blog.csdn.net/itplus/article/details/9286905
+
+Community Detection算法
+

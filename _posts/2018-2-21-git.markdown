@@ -372,6 +372,10 @@ https://mp.weixin.qq.com/s?__biz=MzIxODM4MjA5MA==&mid=2247487342&idx=2&sn=e709ff
 
 一文读懂网络爬虫！
 
+https://mp.weixin.qq.com/s/LkEfbW5oscOXyPmb5iqcGA
+
+Python爬取并分析拉勾网招聘数据
+
 # ZeroMQ
 
 ZeroMQ是个在Socket之上，而在MQ之下的网络通信库。正如名称所言，它实际上并不是一个完整的MQ，而仅仅只有MQ的一些子功能罢了。
@@ -413,28 +417,4 @@ AI距离匹敌人类大脑还有多远？人工神经网络和生物神经网络
 http://mp.weixin.qq.com/s/UKu9T5zS1Z2dfNB1YsYGkQ
 
 NEAT学习：教机器自我编程
-
-http://mp.weixin.qq.com/s/vhBOrR6uTL2vGXnYC8BS1w
-
-Windows版深度学习软件安装指南
-
-https://mp.weixin.qq.com/s/ViQqeER1NXtJOtnLg76TWg
-
-关于远程监督，我们来推荐几篇值得读的论文
-
-https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
-
-谷歌提出多图像抠图算法，并弥补水印技术的一致性漏洞
-
-https://mp.weixin.qq.com/s/zTB59Fg_JFg9ZZPRlq9txA
-
-不使用残差连接，ICML新研究靠初始化训练上万层标准CNN
-
-https://mp.weixin.qq.com/s/9KOXSic-DellLuaVFjbKeA
-
-价值传播网络，在更复杂的动态环境中进行规划的方法
-
-https://mp.weixin.qq.com/s/i6VEYjbac4QP3s51meN1VA
-
-Hinton向量学院推出神经ODE：超越ResNet 4大性能优势
 

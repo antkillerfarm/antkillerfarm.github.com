@@ -310,6 +310,10 @@ https://mp.weixin.qq.com/s/s5eDSQF6mFt2F9_nVtYemQ
 
 PaaS将吞噬云计算？Kubernetes的市场冲击波
 
+https://mp.weixin.qq.com/s/19xreKtNlllfFx43eUGhuQ
+
+如何使用Kubernetes轻松部署深度学习模型
+
 # Actor model
 
 https://elbarco.cn/2017/01/21/introduction-to-actor-model/

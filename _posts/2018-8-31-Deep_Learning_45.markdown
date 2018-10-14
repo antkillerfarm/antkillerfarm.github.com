@@ -335,3 +335,12 @@ https://mp.weixin.qq.com/s/bKve_tZi9usz4oX0T3S15A
 https://mp.weixin.qq.com/s/UO0pNLcwYN5tE5x_4azVJA
 
 LSGAN：最小二乘生成对抗网络
+
+https://zhuanlan.zhihu.com/p/46629127
+
+生成对抗网络-GAN---一个好老师的重要性
+
+https://mp.weixin.qq.com/s/Sp0EYvaq-1u0mtnrrmFNCQ
+
+为什么说GANs是一个绝妙的艺术创作工具？
+

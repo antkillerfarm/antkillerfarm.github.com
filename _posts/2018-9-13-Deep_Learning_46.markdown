@@ -288,6 +288,10 @@ https://mp.weixin.qq.com/s/XdH54ImSfgadCoISmVyyVg
 
 基于单目摄像头的物体检测
 
+https://mp.weixin.qq.com/s/yswy7VwEapQJ9M5n_Uo93w
+
+目标检测最新进展总结与展望
+
 # 细粒度分类
 
 https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw

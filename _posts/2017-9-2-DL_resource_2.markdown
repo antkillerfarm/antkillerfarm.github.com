@@ -244,6 +244,10 @@ https://mp.weixin.qq.com/s/0IAdT2cP_OIGwwXmMaCFfw
 
 如何利用深度学习诊断心脏病？
 
+https://mp.weixin.qq.com/s/YgH6iiKPZ-FCflikAqAakw
+
+点内科技、华东医院及上海交大合著论文：3D深度学习在CT影像预测早期肿瘤浸润方面超过影像专家
+
 ## 面试
 
 https://www.zhihu.com/question/41233373

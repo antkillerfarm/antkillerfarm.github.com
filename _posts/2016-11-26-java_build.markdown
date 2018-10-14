@@ -273,6 +273,30 @@ https://github.com/hprose
 
 # DL参考资源+
 
+http://mp.weixin.qq.com/s/vhBOrR6uTL2vGXnYC8BS1w
+
+Windows版深度学习软件安装指南
+
+https://mp.weixin.qq.com/s/ViQqeER1NXtJOtnLg76TWg
+
+关于远程监督，我们来推荐几篇值得读的论文
+
+https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
+
+谷歌提出多图像抠图算法，并弥补水印技术的一致性漏洞
+
+https://mp.weixin.qq.com/s/zTB59Fg_JFg9ZZPRlq9txA
+
+不使用残差连接，ICML新研究靠初始化训练上万层标准CNN
+
+https://mp.weixin.qq.com/s/9KOXSic-DellLuaVFjbKeA
+
+价值传播网络，在更复杂的动态环境中进行规划的方法
+
+https://mp.weixin.qq.com/s/i6VEYjbac4QP3s51meN1VA
+
+Hinton向量学院推出神经ODE：超越ResNet 4大性能优势
+
 https://mp.weixin.qq.com/s/-xZxNJPQyEQyBOue6_77yw
 
 用浅度学习训练深度网络：避开端到端深度学习难题
@@ -280,4 +304,16 @@ https://mp.weixin.qq.com/s/-xZxNJPQyEQyBOue6_77yw
 https://mp.weixin.qq.com/s/9yfTO2jHz69-k1MsUGIM0Q
 
 双目立体放大！谷歌刚刚开源的这篇论文可能会成为手机双摄的新玩法
+
+https://mp.weixin.qq.com/s/ugK5U6A2tqYkJwWfNWPuKg
+
+计算机视觉深度学习中的几何结构与不确定性
+
+https://mp.weixin.qq.com/s/XESTrLMERQPR9eXcFA56gg
+
+神经符号系统：让机器善解人意
+
+https://mp.weixin.qq.com/s/vTtKUagiFD55mcQIeGDxQw
+
+图像鉴黄做得好，健康上网少烦恼
 

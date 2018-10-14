@@ -272,6 +272,10 @@ https://mp.weixin.qq.com/s/zDcbrZeK4tlO0jA3-s_lYg
 
 雷达方面的术语
 
+https://mp.weixin.qq.com/s/UICCBoUQr7Nl_THQ5NZcwA
+
+雷达系统导论第一讲：Introduntion
+
 https://mp.weixin.qq.com/s/vmQKK9cEbBRIvd2uOzmC1w
 
 AN/TPS-78固态雷达系列

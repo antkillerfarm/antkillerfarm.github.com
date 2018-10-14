@@ -315,7 +315,7 @@ https://github.com/hankcs/HanLP/
 
 1.中文处理能力。NLTK和OpenNLP对中文支持非常差，这里不光是中文分词的问题，有些NLP算法需要一定的语言模型数据，但浏览NLTK官方的模型库，基本找不到中文模型数据。
 
-2.jieba、IK之类的功能太单一，多数局限在中文分词方面领域。gensim、THUCTC专注于NLP的某一方面，也不是通用工具。
+2.jieba、IK之类的功能太单一，多数局限在中文分词领域。gensim、THUCTC专注于NLP的某一方面，也不是通用工具。
 
 3.NLPIR和Stanford CoreNLP算是功能最强的工具包了。前者的问题在于收费不开源，后者的问题在于缺少中文文档。FudanNLP的相关文档较少，文档友好度不如HanLP。
 

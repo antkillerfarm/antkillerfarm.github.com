@@ -178,6 +178,10 @@ https://mp.weixin.qq.com/s/g8U2C9bi75mE5OqWLPkgQw
 
 自动化学习框架（AutoML）的性能比较
 
+https://mp.weixin.qq.com/s/DkZGkI-CnEHfhXTDyp2nHQ
+
+超参数搜索不够高效？这几大策略了解一下
+
 # Optimizer
 
 在《机器学习（一）》中，我们已经指出梯度下降是解决凸优化问题的一般方法。而如何更有效率的梯度下降，就是本节中Optimizer的责任了。

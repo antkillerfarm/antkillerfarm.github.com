@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十七）——无监督/半监督/自监督深度学习, 深度ISP, 深度哈希, 信息检索, 语音合成
+title:  深度学习（四十七）——无监督/半监督/自监督深度学习, 深度哈希, 信息检索, 语音合成, Transformer
 category: DL 
 ---
 
@@ -94,35 +94,9 @@ https://mp.weixin.qq.com/s/5xlSoC5sgzsAwMYMSFCjnw
 
 TextTopicNet:CMU开源无标注高精度自监督模型
 
-# 深度ISP
+https://mp.weixin.qq.com/s/343DfjOvkaozuxNK89V3zQ
 
-https://mp.weixin.qq.com/s/wA85XFQXeypuoqFnmN2P4g
-
-降噪的新时代
-
-https://mp.weixin.qq.com/s/919VEvennHEG3iXKkMZoQQ
-
-不止是去噪---从去噪看AI ISP的趋势
-
-https://mp.weixin.qq.com/s/1HA6XKnWpqVd8k7IIfzB7w
-
-利用卷积自编码器对图片进行降噪
-
-https://zhuanlan.zhihu.com/p/39512000
-
-Noise2Noise：图像降噪，无需干净样本
-
-https://mp.weixin.qq.com/s/_tvOQPvybqmvLF19kHcbFg
-
-北大开源ECCV2018深度去雨算法：RESCAN
-
-https://mp.weixin.qq.com/s/Wdxkvlz4nLbJS_gWqHwMjw
-
-无需额外硬件，全卷积网络让机器学习学会夜视能力
-
-https://mp.weixin.qq.com/s/iH7gbRn4opLsWgKWoVFpBA
-
-腾讯优图&港科大提出较大前景运动下的深度高动态范围成像
+前景目标检测的无监督学习
 
 # 深度哈希
 
@@ -343,3 +317,62 @@ https://mp.weixin.qq.com/s/HLe4DUZWWfdorcgYOj9gzw
 https://zhuanlan.zhihu.com/p/45702794
 
 微信是不是可以来一个文字转语音功能了？
+
+# Transformer
+
+Attention的介绍到此为止，但《Attention is All You Need》的传奇继续，该文不仅提出了两种Attention模块，而且还提出了如下图所示的Transformer模型。该模型主要用于NMT领域，由于Attention不依赖上一刻的数据，同时精度也不弱于LSTM，因此有很好并行计算特性，在工业界得到了广泛应用。阿里巴巴和搜狗目前的NMT方案都是基于Transformer模型的。
+
+![](/images/img2/Transformer.png)
+
+$$FFN(x) = \max(0,xW_1 + b_1)W_2 + b_2$$
+
+代码：
+
+https://github.com/Kyubyong/transformer
+
+参考：
+
+http://jalammar.github.io/illustrated-transformer/
+
+The Illustrated Transformer
+
+http://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/
+
+Visualizing A Neural Machine Translation Model (Mechanics of Seq2seq Models With Attention)
+
+https://zhuanlan.zhihu.com/p/39034683
+
+Attention is all you need模型笔记
+
+https://zhuanlan.zhihu.com/p/40920384
+
+真正的完全图解Seq2Seq Attention模型
+
+https://mp.weixin.qq.com/s/HquT_mKm7x_rbDGz4Voqpw
+
+阿里巴巴最新实践：TVM+TensorFlow提高神经机器翻译性能
+
+https://mp.weixin.qq.com/s/S_xhaDrOaPe38ZvDLWl4dg
+
+从技术到产品，搜狗为我们解读了神经机器翻译的现状
+
+https://mp.weixin.qq.com/s/vzjKU_0qhapWKOYZ4Rnj-Q
+
+谷歌的机器翻译模型Transformer，现在可以用来做任何事了
+
+https://mp.weixin.qq.com/s/lgGDTCF3qg84njv2IeHC9A
+
+大规模集成Transformer模型，阿里达摩院如何打造WMT 2018机器翻译获胜系统
+
+https://mp.weixin.qq.com/s/_UC2jlOfb34tfB_tsEXjMg
+
+谷歌全新神经网络架构Transformer：基于自注意力机制，擅长自然语言理解
+
+https://mp.weixin.qq.com/s/w3IKoygTLDsAxk1MB5JrGg
+
+详细讲解Transformer新型神经网络在机器翻译中的应用
+
+https://mp.weixin.qq.com/s/Fao3i99kZ1a6aa3UhAYKhA
+
+全面超越人类！Google称霸SQuAD，BERT横扫11大NLP测试
+

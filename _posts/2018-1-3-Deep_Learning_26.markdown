@@ -4,38 +4,6 @@ title:  深度学习（二十六）——VAE
 category: DL 
 ---
 
-# Attention
-
-## 参考（续）
-
-https://mp.weixin.qq.com/s/FtI94xY6a8TEvFCHfjMnmA
-
-小组讨论谷歌机器翻译Attention is All You Need
-
-https://mp.weixin.qq.com/s/SqIMkiP1IZMGWzwZWGOI7w
-
-谈谈神经网络的注意机制和使用方法
-
-https://mp.weixin.qq.com/s/EMCZHuvk5dOV_Rz00GkJMA
-
-近年火爆的Attention模型，它的套路这里都有！
-
-https://zhuanlan.zhihu.com/p/27464080
-
-从《Convolutional Sequence to Sequence Learning》到《Attention Is All You Need》
-
-http://www.cnblogs.com/robert-dlut/p/8638283.html
-
-自然语言处理中的自注意力机制！
-
-https://mp.weixin.qq.com/s/sAYOXEjAdA91x3nliHNX8w
-
-Attention模型方法综述
-
-https://mp.weixin.qq.com/s/MZ8qSQzXqZQPQa97BKitHA
-
-深入理解注意力机制
-
 # VAE
 
 变分自编码器（Variational Auto-Encoder，VAE）是Autoencoder的一种扩展。

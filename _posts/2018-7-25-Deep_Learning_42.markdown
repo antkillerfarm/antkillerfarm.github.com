@@ -354,6 +354,10 @@ https://mp.weixin.qq.com/s/sji2HVli-Y7am37YjTbq3w
 
 谷歌Jeff Dean 64页 PPT 讲述《用深度学习解决挑战性问题》
 
+https://mp.weixin.qq.com/s/AQrgvjFPXUpqfqQQgOFN9A
+
+36页最新深度学习综述论文：算法、技术、应用，181篇参考文献
+
 # Spatial Transformer Networks
 
 论文：
