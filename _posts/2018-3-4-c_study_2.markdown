@@ -312,3 +312,6 @@ https://mp.weixin.qq.com/s/5YWAgp8LKi5q_NDrNUtyGQ
 
 在GitHub上收获6519颗Star的Python面试题资料
 
+https://mp.weixin.qq.com/s/toh59s2-UlqiZfkE5ThxZw
+
+谈一谈python中的魔法变量*args和**kwargs

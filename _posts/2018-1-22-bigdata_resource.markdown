@@ -178,18 +178,6 @@ https://mp.weixin.qq.com/s/QjKQcFnbMxBBxFgIQ_f5lw
 
 流处理引擎的不同语义处理：严格一次未必严格一致
 
-https://mp.weixin.qq.com/s/NvD-NSR-aE8HTADR2LSSjA
-
-基于Flink流处理的动态实时超大规模用户行为分析
-
-https://mp.weixin.qq.com/s/B9zo0zThARAi11hRuJ-AqA
-
-开源实时数据处理系统Pulsar：一套搞定Kafka+Flink+DB
-
-https://mp.weixin.qq.com/s/UFzFuHFqsXl6ynKyYoOnRA
-
-容错和高性能如何兼得: Flink创始人谈流计算核心架构演化和现状
-
 https://mp.weixin.qq.com/s/p5NxvhpfYmoKMVnbAK6-zA
 
 如何降低90%Java垃圾回收时间？以阿里HBase的GC优化实践为例

@@ -62,17 +62,9 @@ https://mp.weixin.qq.com/s/nqOvcKtxpqehWFO4XkXr5g
 
 为减少用户电话排队，阿里研发了智能客服调度系统
 
-https://mp.weixin.qq.com/s/lc9fWkEVt1kG5Mw3Xeuv3g
-
-Apache Beam实战指南：手把手教你玩转KafkaIO与Flink
-
 https://mp.weixin.qq.com/s/bTh8N45BLNQHSLUZAakkCA
 
 Oceanus：美团点评HTTP流量定制化路由的实践
-
-https://mp.weixin.qq.com/s/qhiX62dALXd3owYYP9KsEQ
-
-支持流式处理ACID事务！Flink团队开源新作Streaming Ledger
 
 https://mp.weixin.qq.com/s/VKsbBvKibLDc-wFvYn3nxg
 
@@ -233,3 +225,21 @@ https://mp.weixin.qq.com/s/V3PLx3kP9zOcR1CZZI8Yqw
 https://zhuanlan.zhihu.com/p/33079632
 
 视觉SLAM专用术语的一句话介绍
+
+# AI Chip
+
+https://mp.weixin.qq.com/s/_8lbTU0GFEXQr_4pdQ6XPw
+
+同步SGD等现有分布式训练方式将过时，Yoshua Bengio谈迈向硬件友好的深度学习
+
+https://mp.weixin.qq.com/s/acAbNP_ERnKlL3_9v_mwow
+
+FPGA：AI ASIC的必经之路？
+
+https://mp.weixin.qq.com/s/5MyuZf_TBm2NV47CRAz5Dw
+
+2017图灵奖得主：通用芯片每年仅提升3%，神经专用架构才是未来
+
+https://mp.weixin.qq.com/s/S1fVrSfAM_UJh06Q43s8vA
+
+网络芯片架构的新改变

@@ -270,6 +270,10 @@ https://mp.weixin.qq.com/s/xW_KvR5y12_eyp3FvtmBwQ
 
 从概念到应用，腾讯视角深入“解剖”AI平台和语音技术
 
+https://mp.weixin.qq.com/s/2DaBsFnRzqkf9PgvY3tWqw
+
+谷歌神经网络人声分离技术再突破！词错率低至23.4%
+
 # CTC
 
 ## 概述

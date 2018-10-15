@@ -166,6 +166,10 @@ https://mp.weixin.qq.com/s/lVRIy6DdwfRxdoVW3qFiNg
 
 OCR如何读取皱巴巴的文件？深度学习在文档图像形变矫正的应用详解
 
+https://mp.weixin.qq.com/s/-KdR3buxFOrPE-w-IMLQ9A
+
+最强开源OCR！印刷体古籍文字识别超越著名商业软件ABBYY
+
 # 目标检测进阶
 
 ## CornerNet

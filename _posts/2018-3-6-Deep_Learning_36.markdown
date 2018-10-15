@@ -308,6 +308,10 @@ https://mp.weixin.qq.com/s/npZg46MK5MZ7h9cqvrAYiQ
 
 机器如何猜你所想？阿里小蜜预测平台揭秘
 
+https://zhuanlan.zhihu.com/p/46755166
+
+利用评论文本交互提升推荐系统
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

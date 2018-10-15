@@ -326,6 +326,10 @@ https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247505558&idx=5&sn=bc37e5
 
 微软又开源了一个机器学习框架，这次是核心产品的机器学习引擎infer.NET
 
+https://mp.weixin.qq.com/s/ad8iysdj9JeYxC8TcpoJLg
+
+基于网页的图像标注工具——imglab
+
 # 光神经网络
 
 https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ

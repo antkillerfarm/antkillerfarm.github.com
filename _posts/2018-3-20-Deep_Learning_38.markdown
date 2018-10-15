@@ -264,6 +264,10 @@ https://mp.weixin.qq.com/s/V7RESEm4xzhW8tXEjKjn1Q
 
 层次强化学习、记忆与预测模型
 
+https://mp.weixin.qq.com/s/aNskPERmekw9yQVb7A3GPQ
+
+Google大脑最新研究成果：使用强化学习实现动态系统的韧性计算
+
 # 问答系统
 
 GA-Reader
