@@ -155,6 +155,32 @@ https://mp.weixin.qq.com/s?__biz=MzU3ODU0Nzk5MA==&mid=2247483804&idx=1&sn=9e37b8
 
 小米结构光VS iPhone 结构光（一）
 
+## 解析力
+
+https://zhuanlan.zhihu.com/p/20726167
+
+解析力（1）MTF SFR
+
+https://zhuanlan.zhihu.com/p/20726175
+
+解析力（2）空间采样和奈奎斯特
+
+https://blog.csdn.net/jaych/article/details/50889664
+
+SFR算法详解1
+
+https://blog.csdn.net/jaych/article/details/50700576
+
+SFR算法详解2
+
+https://blog.csdn.net/jaych/article/details/51030939
+
+SFR算法详解3
+
+https://blog.csdn.net/jaych/article/details/51031064
+
+SFR算法详解4
+
 ## 参考
 
 https://mp.weixin.qq.com/s/od9uDZdRU4QaBKPHb0tLag
@@ -272,4 +298,3 @@ https://mp.weixin.qq.com/s/ofoh7xH9MB0ifORi-ZQbcA
 https://mp.weixin.qq.com/s/24ipxnkh6TNiqRrakgw6ew
 
 Google Pixel3拍照为什么那么牛？
-

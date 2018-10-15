@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十一）——图像超分辨率算法, SRCNN, DRCN
+title:  深度学习（二十一）——图像超分辨率, SRCNN, DRCN
 category: DL 
 ---
 
@@ -66,7 +66,7 @@ http://blog.csdn.net/u014380165/article/details/75676216
 
 DPN（Dual Path Network）算法详解
 
-# 图像超分辨率算法
+# 图像超分辨率
 
 ![](/images/img2/Super_Resolution.png)
 
@@ -127,34 +127,6 @@ https://zhuanlan.zhihu.com/p/25201511
 https://mp.weixin.qq.com/s/uK0L5RV0bB2Jnr5WCZasfw
 
 深度学习在单图像超分辨率上的应用：SRCNN、Perceptual loss、SRResNet
-
-https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
-
-NTIRE2017夺冠论文：用于单一图像超分辨率的增强型深度残差网络
-
-https://www.zhihu.com/question/25401250
-
-如何通过多帧影像进行超分辨率重构？
-
-https://www.zhihu.com/question/38637977
-
-超分辨率重建还有什么可以研究的吗？
-
-https://zhuanlan.zhihu.com/p/25912465
-
-胎儿MRI高分辨率重建技术：现状与趋势
-
-https://mp.weixin.qq.com/s/i-im1sy6MNWP1Fmi5oWMZg
-
-华为推出新型HiSR：移动端的超分辨率算法
-
-https://mp.weixin.qq.com/s/h4Xzt-aS1_-5zjTB0ypTLg
-
-普通视频转高清：10个基于深度学习的超分辨率神经网络
-
-https://mp.weixin.qq.com/s/WmqagSGRy98USgnz21W3Pg
-
-WDSR
 
 # SRCNN
 

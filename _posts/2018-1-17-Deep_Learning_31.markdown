@@ -314,3 +314,36 @@ https://mp.weixin.qq.com/s/e4hriDvTRLkg-mIifVWayw
 
 如何解决深度学习中的多体问题
 
+# 图像超分辨率进阶
+
+https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
+
+NTIRE2017夺冠论文：用于单一图像超分辨率的增强型深度残差网络
+
+https://www.zhihu.com/question/25401250
+
+如何通过多帧影像进行超分辨率重构？
+
+https://www.zhihu.com/question/38637977
+
+超分辨率重建还有什么可以研究的吗？
+
+https://zhuanlan.zhihu.com/p/25912465
+
+胎儿MRI高分辨率重建技术：现状与趋势
+
+https://mp.weixin.qq.com/s/i-im1sy6MNWP1Fmi5oWMZg
+
+华为推出新型HiSR：移动端的超分辨率算法
+
+https://mp.weixin.qq.com/s/h4Xzt-aS1_-5zjTB0ypTLg
+
+普通视频转高清：10个基于深度学习的超分辨率神经网络
+
+https://mp.weixin.qq.com/s/WmqagSGRy98USgnz21W3Pg
+
+WDSR
+
+https://mp.weixin.qq.com/s/AxHTaT-G5_Y6Iw_3aIIxCg
+
+超分辨率技术如何发展？这6篇ECCV 18论文带你一次尽览

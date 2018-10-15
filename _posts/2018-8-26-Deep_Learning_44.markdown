@@ -142,6 +142,10 @@ https://mp.weixin.qq.com/s/bmtZ_-NaRtFitoJumukQSw
 
 通过端到端几何推理发现潜在3D关键点
 
+https://mp.weixin.qq.com/s/tTdKqRZqBFxFFiZaDD9AJw
+
+三维深度学习中的目标分类与语义分割
+
 # CNN进阶
 
 https://mp.weixin.qq.com/s/gwH9s1ggMTj2dJkad9wUuw

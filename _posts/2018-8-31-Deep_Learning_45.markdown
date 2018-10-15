@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十五）——Attention进阶, AutoDL
+title:  深度学习（四十五）——Attention进阶, AutoDL, 数据增强
 category: DL 
 ---
 
@@ -254,31 +254,53 @@ https://zhuanlan.zhihu.com/p/46350372
 
 语义分割领域开山之作：Google提出用神经网络搜索实现语义分割
 
+# 数据增强
+
+https://mp.weixin.qq.com/s/GqPfvWwH1T0XFwiZ86cW8A
+
+SamplePairing：针对图像处理领域的高效数据增强方式
+
+https://mp.weixin.qq.com/s/cQtXvOjSXFc4YKn7ANBc_w
+
+谷歌大脑提出自动数据增强方法AutoAugment：可迁移至不同数据集
+
+https://mp.weixin.qq.com/s/ojFo7-gUh73iK3uImFS2-Q
+
+一文道尽主流开源框架中的数据增强
+
+https://mp.weixin.qq.com/s/xJhWu-1FyhIWbFBC5oHMkw
+
+一文道尽深度学习中的数据增强方法（上）
+
+https://mp.weixin.qq.com/s/OctAGrcBB0a6TOGWMmVKUw
+
+深度学习中的数据增强（下）
+
+https://mp.weixin.qq.com/s/lMU6_ywQqneyunqEV6uDiA
+
+如何改善你的训练数据集？
+
+https://mp.weixin.qq.com/s/ooX9Hj5ejO6po6Ghb4zOug
+
+一文解读合成数据在机器学习技术下的表现
+
+https://zhuanlan.zhihu.com/p/33485388
+
+mixup与paring samples ，ICLR2018投稿论文的数据增广两种方式
+
+https://mp.weixin.qq.com/s/_7xFBLPGT0VRTJ22toHJ3g
+
+深度学习中常用的图像数据增强方法
+
+https://mp.weixin.qq.com/s/sXV9epWguGbJEZYo4yNp5Q
+
+如何正确使用样本扩充改进目标检测性能
+
+https://zhuanlan.zhihu.com/p/46833956
+
+图像数据增强之弹性形变（Elastic Distortions）
+
 # GAN进阶（续）
-
-https://mp.weixin.qq.com/s/c84LMFnIhoDeolc1B4MIVA
-
-AI以假乱真怎么办？TequilaGAN教你轻松辨真伪
-
-https://mp.weixin.qq.com/s/fgL6FtjeF-EgG5jjAGDR7A
-
-GANimation让图片秒变GIF表情包，秒杀StarGAN
-
-https://mp.weixin.qq.com/s/NPUJ89nddF1WHfFv2nn-Hg
-
-GANs有嘻哈：一次学完10个GANs明星模型
-
-https://mp.weixin.qq.com/s/yShYrMFKox30jXajXXQPGw
-
-如何让GAN生成更高质量图像？斯坦福大学给你答案
-
-https://mp.weixin.qq.com/s/qiLFQowjH67XECXBlppUDg
-
-对抗深度学习:鱼(模型准确性)与熊掌(模型鲁棒性)能否兼得？
-
-https://mp.weixin.qq.com/s/1SpHGtjkSfDEFCZuudCm0Q
-
-基于GAN和VAE的跨模态图像生成
 
 https://mp.weixin.qq.com/s/02amaVnLFxeLDBsjG-iN1Q
 
@@ -343,4 +365,3 @@ https://zhuanlan.zhihu.com/p/46629127
 https://mp.weixin.qq.com/s/Sp0EYvaq-1u0mtnrrmFNCQ
 
 为什么说GANs是一个绝妙的艺术创作工具？
-

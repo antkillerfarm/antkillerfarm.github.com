@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十三）——图像检索, 图像变换, Graph NN, 数据增强
+title:  深度学习（四十三）——图像检索, 图像变换, Graph NN
 category: DL 
 ---
 
@@ -358,45 +358,29 @@ https://mp.weixin.qq.com/s/jCgbBldpw4TGHUvN9WkJZg
 
 在对抗中学习网络结构——87页PPT带你学习Graph中的GAN
 
-# 数据增强
+# GAN进阶（续）
 
-https://mp.weixin.qq.com/s/GqPfvWwH1T0XFwiZ86cW8A
+https://mp.weixin.qq.com/s/c84LMFnIhoDeolc1B4MIVA
 
-SamplePairing：针对图像处理领域的高效数据增强方式
+AI以假乱真怎么办？TequilaGAN教你轻松辨真伪
 
-https://mp.weixin.qq.com/s/cQtXvOjSXFc4YKn7ANBc_w
+https://mp.weixin.qq.com/s/fgL6FtjeF-EgG5jjAGDR7A
 
-谷歌大脑提出自动数据增强方法AutoAugment：可迁移至不同数据集
+GANimation让图片秒变GIF表情包，秒杀StarGAN
 
-https://mp.weixin.qq.com/s/ojFo7-gUh73iK3uImFS2-Q
+https://mp.weixin.qq.com/s/NPUJ89nddF1WHfFv2nn-Hg
 
-一文道尽主流开源框架中的数据增强
+GANs有嘻哈：一次学完10个GANs明星模型
 
-https://mp.weixin.qq.com/s/xJhWu-1FyhIWbFBC5oHMkw
+https://mp.weixin.qq.com/s/yShYrMFKox30jXajXXQPGw
 
-一文道尽深度学习中的数据增强方法（上）
+如何让GAN生成更高质量图像？斯坦福大学给你答案
 
-https://mp.weixin.qq.com/s/OctAGrcBB0a6TOGWMmVKUw
+https://mp.weixin.qq.com/s/qiLFQowjH67XECXBlppUDg
 
-深度学习中的数据增强（下）
+对抗深度学习:鱼(模型准确性)与熊掌(模型鲁棒性)能否兼得？
 
-https://mp.weixin.qq.com/s/lMU6_ywQqneyunqEV6uDiA
+https://mp.weixin.qq.com/s/1SpHGtjkSfDEFCZuudCm0Q
 
-如何改善你的训练数据集？
-
-https://mp.weixin.qq.com/s/ooX9Hj5ejO6po6Ghb4zOug
-
-一文解读合成数据在机器学习技术下的表现
-
-https://zhuanlan.zhihu.com/p/33485388
-
-mixup与paring samples ，ICLR2018投稿论文的数据增广两种方式
-
-https://mp.weixin.qq.com/s/_7xFBLPGT0VRTJ22toHJ3g
-
-深度学习中常用的图像数据增强方法
-
-https://mp.weixin.qq.com/s/sXV9epWguGbJEZYo4yNp5Q
-
-如何正确使用样本扩充改进目标检测性能
+基于GAN和VAE的跨模态图像生成
 
