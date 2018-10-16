@@ -302,6 +302,10 @@ https://mp.weixin.qq.com/s/VmHckiVzz6oAvuHgyWkeUg
 
 使用Keras实现多输出分类：用单个模型同时执行两个独立分类任务
 
+https://mp.weixin.qq.com/s/kHX6GQ_HT2L58f49afWijA
+
+手把手教你用keras--CNN网络识别cifar10
+
 # 推荐系统的工程细节
 
 推荐系统不仅是算法，还包括若干工程细节。这些细节虽然不算复杂，够不上算法的层面，然而对产品的成败，却有举足轻重的作用。

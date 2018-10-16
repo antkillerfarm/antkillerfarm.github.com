@@ -90,10 +90,6 @@ https://mp.weixin.qq.com/s/c-flgHKAlCfdZCIrMXAzxg
 
 即时配送的ETA问题之亿级样本特征构造实践
 
-https://mp.weixin.qq.com/s/_MRPiqt_cR96KQ2lfJVdoA
-
-xlearn:大规模稀疏数据的机器学习库
-
 https://mp.weixin.qq.com/s/VsQpp1iDDM5mM2PyIiyyBg
 
 结合Logistic回归构建最大熵马尔科夫模型

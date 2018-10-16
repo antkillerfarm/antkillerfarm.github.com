@@ -228,6 +228,10 @@ https://mp.weixin.qq.com/s/rImpez9hv-yzFR0EWVFiig
 
 OpenCV寻找复杂背景下物体的轮廓
 
+https://mp.weixin.qq.com/s/L7fRMpaCqgdY9bIAnJy4kg
+
+Adrian小哥教程：如何使用Tesseract和OpenCV执行OCR和文本识别
+
 # TensorFlow
 
 https://mp.weixin.qq.com/s/7rTmEBfh613SrNnTQvfSjw

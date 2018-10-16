@@ -330,6 +330,10 @@ https://mp.weixin.qq.com/s/ad8iysdj9JeYxC8TcpoJLg
 
 基于网页的图像标注工具——imglab
 
+https://mp.weixin.qq.com/s/_MRPiqt_cR96KQ2lfJVdoA
+
+xlearn:大规模稀疏数据的机器学习库
+
 # 光神经网络
 
 https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ
@@ -348,3 +352,32 @@ https://mp.weixin.qq.com/s/ENYX87SMlgv30x08iYFQIw
 
 几乎零能耗零延迟！UCLA科学家发明光衍射神经网络，登上Science
 
+## gcForest
+
+http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw
+
+周志华教授gcForest（多粒度级联森林）算法预测股指期货涨跌
+
+https://mp.weixin.qq.com/s/GU9-rH0gFan620Jhc1HTDg
+
+周志华提出的gcForest能否取代深度神经网络？
+
+https://mp.weixin.qq.com/s/dEmox_pi6KGXwFoevbv14Q
+
+周志华：首个基于森林的自编码器，性能优于DNN
+
+http://mp.weixin.qq.com/s/IfEgSOIkIPA-YtC9NQW1ng
+
+非神经网络的深度模型gcForest
+
+https://mp.weixin.qq.com/s/N80l9PZQposbIOKXbv8ayw
+
+周志华：最新实验表明gcForest已经是最好的非深度神经网络方法
+
+https://mp.weixin.qq.com/s/8QP5X9Hxi_6qyfxP4O0Gwg
+
+周志华团队和蚂蚁金服合作：用分布式深度森林算法检测套现欺诈
+
+https://mp.weixin.qq.com/s/bE9BZQ6wCICvrgomdySDuw
+
+周志华组提出可做表征学习的多层梯度提升决策树

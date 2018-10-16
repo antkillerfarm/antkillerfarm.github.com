@@ -180,10 +180,6 @@ https://zhuanlan.zhihu.com/p/27971065
 
 关于多正则匹配
 
-http://blog.csdn.net/u013709270/article/details/53470428
-
-跳跃表的原理及实现
-
 https://mp.weixin.qq.com/s/WZyuTtEfaTFLnCfvhOrp7g
 
 虚拟化原理和分类
@@ -340,10 +336,6 @@ https://mp.weixin.qq.com/s/M5syxE9Ln4UDLThPh5iuJg
 
 各种字符串Hash函数比较
 
-![](/images/img2/DS.jpg)
-
-![](/images/img2/sort.jpg)
-
 https://mp.weixin.qq.com/s/UehY3iXtcoBwMJkdcEi--A
 
 没有了这个规则，自然界再也不可能发现美丽的分形(递归算法的历史)
@@ -351,14 +343,6 @@ https://mp.weixin.qq.com/s/UehY3iXtcoBwMJkdcEi--A
 https://mp.weixin.qq.com/s/nqI08Iyn7yunuR1aVSuq_Q
 
 用户增长怎么做—以Uber和摩拜的经验为实例。技术营销的典范之作。
-
-https://mp.weixin.qq.com/s/xttZJVR0r5vssOJ19sBHGQ
-
-快速排序算法
-
-https://mp.weixin.qq.com/s/jQ6fEi_K2RSesJxZn_kujg
-
-外部排序
 
 https://mp.weixin.qq.com/s/agS2-wu6HGO__QfbIt7Esw
 
@@ -428,14 +412,6 @@ https://www.cnblogs.com/linianhui/category/929878.html
 
 一个认证授权方面的专栏
 
-https://mp.weixin.qq.com/s/yNn57Uw_-itzZXCSEAzrJw
-
-一起搞定面试中的二叉树（一）
-
-https://mp.weixin.qq.com/s/msv2NZ0aG96d3xQhX3HhNA
-
-一起搞定面试中的二叉树（二）
-
 https://mp.weixin.qq.com/s/6AfmiLRSUP819J43EwJBqA
 
 ORACLE ERP的前世今生
@@ -452,9 +428,39 @@ https://mp.weixin.qq.com/s?__biz=MzIyNzUwMjM2MA==&mid=2247485942&idx=1&sn=159723
 
 编程基础知识
 
+## 数据结构
+
 https://mp.weixin.qq.com/s/52JFdyaLwZq7nWiZq6z6qA
 
 二叉堆是什么鬼？
+
+https://mp.weixin.qq.com/s/4V1E2L14c3k-5i0c-JyTVQ
+
+如何在10亿数中找出前1000大的数
+
+https://mp.weixin.qq.com/s/yNn57Uw_-itzZXCSEAzrJw
+
+一起搞定面试中的二叉树（一）
+
+https://mp.weixin.qq.com/s/msv2NZ0aG96d3xQhX3HhNA
+
+一起搞定面试中的二叉树（二）
+
+https://mp.weixin.qq.com/s/xttZJVR0r5vssOJ19sBHGQ
+
+快速排序算法
+
+https://mp.weixin.qq.com/s/jQ6fEi_K2RSesJxZn_kujg
+
+外部排序
+
+![](/images/img2/DS.jpg)
+
+![](/images/img2/sort.jpg)
+
+http://blog.csdn.net/u013709270/article/details/53470428
+
+跳跃表的原理及实现
 
 ## 有用的blog
 

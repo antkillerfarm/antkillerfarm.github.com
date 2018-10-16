@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NLP（二）, Storm, MXNet
+title:  NLP（二）, Storm, Flink, MXNet
 category: AI 
 ---
 

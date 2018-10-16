@@ -228,6 +228,46 @@ https://zhuanlan.zhihu.com/p/33079632
 
 # AI Chip
 
+https://mp.weixin.qq.com/s/PDe8O5zskxD_mycwH0_3lg
+
+AI是如何影响计算机内存系统的？
+
+https://blog.csdn.net/lien0906/article/details/78863118
+
+深度学习中GPU和显存分析
+
+https://zhuanlan.zhihu.com/p/33990592
+
+HBM火了，它到底是什么？
+
+https://zhuanlan.zhihu.com/p/34164501
+
+HBM技术之显卡应用
+
+http://eyeriss.mit.edu/
+
+Eyeriss是MIT设计的一款NN加速器。
+
+https://zhuanlan.zhihu.com/p/37520172
+
+一窥ARM的AI处理器
+
+https://mp.weixin.qq.com/s/QPuOmv7-agrcgnchgs3Hkg
+
+清华大学提出AI计算芯片的存储优化新方法
+
+https://mp.weixin.qq.com/s/eyzzeYOKdah-9WGUrhbAkg
+
+非冯诺依曼新架构：IBM100万忆阻器大规模神经网络加速AI
+
+https://mp.weixin.qq.com/s/1oDVo7eGMGYODRd00OxpIw
+
+陈天奇团队推出开源AI芯片栈VTA，降低芯片设计门槛
+
+https://mp.weixin.qq.com/s/oOYGa4Mti6KpkpI4TtpitQ
+
+地平线杨铭：从无形视觉到有形芯片
+
 https://mp.weixin.qq.com/s/_8lbTU0GFEXQr_4pdQ6XPw
 
 同步SGD等现有分布式训练方式将过时，Yoshua Bengio谈迈向硬件友好的深度学习

@@ -200,6 +200,14 @@ https://mp.weixin.qq.com/s/ooYg7-pI9axo8Z_vUwMGzg
 
 离散优化求解器大搜罗
 
+https://mp.weixin.qq.com/s/_uGNwcvsIpzQyH6fI_HIPw
+
+MOSEK，一个专注而卓越的优化求解器（一）
+
+https://mp.weixin.qq.com/s/q0x9pXz7p7OciWqBOIV5JQ
+
+XPROG: 简单实用的鲁棒优化(RO, DRO)编程语言
+
 # CPU
 
 https://zhuanlan.zhihu.com/p/29743431
@@ -309,25 +317,3 @@ http://m.uczzd.cn/webview/news?aid=15020380163392206798
 https://mp.weixin.qq.com/s/Lnolh9y0rf86wOGa-F1xmw
 
 计算机的诞生史
-
-# 3D芯片
-
-随着半导体工艺日益接近物理极限，2D芯片已经不能满足进化的需要，芯片的设计也迈向了立体发展的阶段。目前主流的3D芯片技术包括FinFET（1999）与FD-SOI（2000），他们都是胡正明团队的作品。
-
->胡正明，1947年生。台湾大学本科（1968）+UCB硕博（1970，1973）。台积电首席科学家，MIT教授。美国工程院院士，中科院外籍院士。
-
-参考：
-
-http://www.sohu.com/a/108777952_467791
-
-多少年了，终于明白了FinFET与FD-SOI制程
-
-# 浸润式微影
-
-缩短波长的方法除了增加频率之外，其实还有更换介质。
-
-参考：
-
-https://mp.weixin.qq.com/s/NZGNrO_LxNc6qrIdofOIfQ
-
-假如没有他，就没有今天的台积电
