@@ -125,6 +125,20 @@ https://www.jianshu.com/p/fa204a54a956
 
 生成TFLite模型文件
 
+## Broadcast
+
+Broadcast是一种填充元素以使操作数的形状相匹配的操作。例如，对一个[3,2]的张量和一个[3,1]的张量相加在TF中是合法的，TF会使用默认的规则将[3,1]的张量填充为[3,2]的张量，从而使操作能够执行下去。
+
+参考：
+
+https://www.cnblogs.com/yangmang/p/7125458.html
+
+numpy数组广播
+
+https://blog.csdn.net/LoseInVain/article/details/78763303
+
+TensorFlow中的广播Broadcast机制
+
 ## TensorFlow Serving
 
 TensorFlow Serving是一个用于机器学习模型serving的高性能开源库。它可以将训练好的机器学习模型部署到线上，使用gRPC作为接口接受外部调用。更加让人眼前一亮的是，它支持模型热更新与自动模型版本管理。
@@ -388,24 +402,3 @@ https://mp.weixin.qq.com/s/CqOo7Fu6t5-yJiYhzo03oQ
 https://mp.weixin.qq.com/s/VlvQmrS7Qi2qq6fTBXKTYw
 
 从零开始用TensorFlow搭建卷积神经网络
-
-https://mp.weixin.qq.com/s/hETnA81WlkMG3rftAHg9bw
-
-PyTorch和TensorFlow哪家强：九项对比读懂各自长项短板
-
-https://mp.weixin.qq.com/s/7R-Gvegnta9XBwIaSPBL_Q
-
-基于Tensorflow的验证码识别
-
-https://mp.weixin.qq.com/s/Es_5KUnkDzMwf_8WD8aW3g
-
-GitHub万星：适用于初学者的TensorFlow代码资源集
-
-https://mp.weixin.qq.com/s/3QgtemxxsQmuNQVEdpiMwA
-
-如何做准确率达98%的交通标志识别系统？
-
-https://mp.weixin.qq.com/s/pSE2V8wD3_KHMI71kLTXng
-
-如何基于TensorFlow使用LSTM和CNN实现时序分类任务
-

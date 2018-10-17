@@ -106,6 +106,10 @@ http://www.sohu.com/a/108777952_467791
 
 多少年了，终于明白了FinFET与FD-SOI制程
 
+https://mp.weixin.qq.com/s/NJBx8ndkBBedC81f3-DKOA
+
+5nm以后的晶体管选择
+
 # 浸润式微影
 
 缩短波长的方法除了增加频率之外，其实还有更换介质。

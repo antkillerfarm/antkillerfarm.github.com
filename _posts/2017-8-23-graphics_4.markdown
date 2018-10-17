@@ -88,6 +88,10 @@ http://blog.csdn.net/tianwaifeimao/article/details/17678669
 
 基于LSD的直线提取算法
 
+https://mp.weixin.qq.com/s/WV78mvRn-cYm11cL4l2ScA
+
+开源、快速、高精度的椭圆检测—你值得拥有！
+
 # HOG
 
 Histogram of oriented gradients是一种用于物体检测的算子。

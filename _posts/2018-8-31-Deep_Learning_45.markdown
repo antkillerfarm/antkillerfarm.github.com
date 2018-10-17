@@ -144,6 +144,12 @@ https://mp.weixin.qq.com/s/L1nkhc4I6VX2s6S5Tiv0Zw
 
 小白也能搭建深度模型，百度EasyDL的背后你知多少
 
+## 书籍
+
+https://mp.weixin.qq.com/s/wTwjbripELzqdCjs64Dzzw
+
+告别调参，AutoML新书发布
+
 ## 参考
 
 https://mp.weixin.qq.com/s/Ia-8qFLAyY65Nai5PGAw0w

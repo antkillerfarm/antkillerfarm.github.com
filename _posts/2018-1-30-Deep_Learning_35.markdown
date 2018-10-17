@@ -224,6 +224,10 @@ https://mp.weixin.qq.com/s/sZskFg2KbUbt88O0MaEM_g
 
 检测与识别人与目标之间的互动
 
+https://mp.weixin.qq.com/s?__biz=MzI5MDUyMDIxNA==&mid=2247486245&idx=1&sn=619f782d1758ee9daebd38637c0faa7f
+
+行为识别论文笔记之多纤维网络
+
 # 深度目标跟踪
 
 https://zhuanlan.zhihu.com/p/22334661

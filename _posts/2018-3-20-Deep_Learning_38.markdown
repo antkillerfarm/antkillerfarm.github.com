@@ -100,6 +100,10 @@ https://mp.weixin.qq.com/s/AelAD57G4GOh7qm-_rvYsg
 
 伯克利提出DeepMimic：使用强化学习练就18般武艺
 
+https://mp.weixin.qq.com/s/0AM4eASolsPZ7GtPYVBqDQ
+
+伯克利今年大热的DeepMimic开源了~
+
 https://zhuanlan.zhihu.com/p/35567591
 
 强化学习在关系抽取、QA场景的应用

@@ -318,6 +318,10 @@ https://mp.weixin.qq.com/s/E-HBQs1-nzP1shC7Gge-7A
 
 “看透”神经网络
 
+https://mp.weixin.qq.com/s/Uowbo19wNkjT-9eAIjS8jQ
+
+过来，我这里有个“混淆矩阵”跟你谈一谈
+
 ## 贝叶斯线性回归
 
 https://mp.weixin.qq.com/s/szTmHY-Yvn7N3s_GzTDiEA

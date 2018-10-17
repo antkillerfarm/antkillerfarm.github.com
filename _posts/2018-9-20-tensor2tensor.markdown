@@ -232,7 +232,31 @@ https://mp.weixin.qq.com/s/L7fRMpaCqgdY9bIAnJy4kg
 
 Adrian小哥教程：如何使用Tesseract和OpenCV执行OCR和文本识别
 
+https://mp.weixin.qq.com/s/0jeM3r4pvX2hAtNq8O1i-A
+
+OpenCV轮廓层次分析实现欧拉数计算
+
 # TensorFlow
+
+https://mp.weixin.qq.com/s/kYOwUWlTP4T0IYKDWDbCsg
+
+tensorflow object detection API训练公开数据集Oxford-IIIT Pets Dataset
+
+https://mp.weixin.qq.com/s/8uDsaZjsiKXGea6M-w-RvA
+
+tensorflow object detection API使用之GPU训练实现宠物识别
+
+https://mp.weixin.qq.com/s/8I5Nvw4t2jT1NR9vIYT5XA
+
+深入理解TensorFlow中的tf.metrics算子
+
+https://mp.weixin.qq.com/s/aMarI-nyIvFqhtpJWQrNhQ
+
+谷歌推强化学习新框架“多巴胺“，基于TensorFlow，已开源
+
+https://mp.weixin.qq.com/s/ntHkMIef1o2-FF-AJf_bZQ
+
+三分钟训练眼球追踪术，AI就知道你在盯着哪个妹子——TensorFlow.js代码
 
 https://mp.weixin.qq.com/s/7rTmEBfh613SrNnTQvfSjw
 
@@ -269,3 +293,7 @@ TensorFlow Servering C/S通信约束
 https://mp.weixin.qq.com/s/DpqI4AfjiygCh8dqq_Kgmw
 
 基于TensorFlow Serving的深度学习在线预估
+
+https://mp.weixin.qq.com/s/XcqVtFBY5rIn0FgPEx0eTg
+
+工业领域中的 AI：BHGE 通过使用 TensorFlow 概率编程工具包开发的基于物理的概率深度学习

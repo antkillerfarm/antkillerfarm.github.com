@@ -334,6 +334,10 @@ https://mp.weixin.qq.com/s/_MRPiqt_cR96KQ2lfJVdoA
 
 xlearn:大规模稀疏数据的机器学习库
 
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750181&idx=2&sn=227bdb9e5166f0b44b478b41a77bbcd5
+
+一个基于PyTorch的目标检测工具箱，商汤联合港中文开源mmdetection
+
 # 光神经网络
 
 https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ

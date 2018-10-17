@@ -6,6 +6,26 @@ category: AI
 
 # TensorFlow
 
+https://mp.weixin.qq.com/s/hETnA81WlkMG3rftAHg9bw
+
+PyTorch和TensorFlow哪家强：九项对比读懂各自长项短板
+
+https://mp.weixin.qq.com/s/7R-Gvegnta9XBwIaSPBL_Q
+
+基于Tensorflow的验证码识别
+
+https://mp.weixin.qq.com/s/Es_5KUnkDzMwf_8WD8aW3g
+
+GitHub万星：适用于初学者的TensorFlow代码资源集
+
+https://mp.weixin.qq.com/s/3QgtemxxsQmuNQVEdpiMwA
+
+如何做准确率达98%的交通标志识别系统？
+
+https://mp.weixin.qq.com/s/pSE2V8wD3_KHMI71kLTXng
+
+如何基于TensorFlow使用LSTM和CNN实现时序分类任务
+
 https://mp.weixin.qq.com/s/dHkmDvFVUGmt4Ch-gv3s1g
 
 一步一步带你用TensorFlow玩转LSTM
@@ -393,24 +413,3 @@ https://mp.weixin.qq.com/s/atQHJ5U2pJpSG6PguN7J4Q
 https://mp.weixin.qq.com/s/rQ9eZosHOoDOXg9tAg4t6A
 
 tensorflow Object Detection API使用预训练模型mask r-cnn实现对象检测
-
-https://mp.weixin.qq.com/s/kYOwUWlTP4T0IYKDWDbCsg
-
-tensorflow object detection API训练公开数据集Oxford-IIIT Pets Dataset
-
-https://mp.weixin.qq.com/s/8uDsaZjsiKXGea6M-w-RvA
-
-tensorflow object detection API使用之GPU训练实现宠物识别
-
-https://mp.weixin.qq.com/s/8I5Nvw4t2jT1NR9vIYT5XA
-
-深入理解TensorFlow中的tf.metrics算子
-
-https://mp.weixin.qq.com/s/aMarI-nyIvFqhtpJWQrNhQ
-
-谷歌推强化学习新框架“多巴胺“，基于TensorFlow，已开源
-
-https://mp.weixin.qq.com/s/ntHkMIef1o2-FF-AJf_bZQ
-
-三分钟训练眼球追踪术，AI就知道你在盯着哪个妹子——TensorFlow.js代码
-

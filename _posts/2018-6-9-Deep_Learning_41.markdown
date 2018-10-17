@@ -30,6 +30,10 @@ https://mp.weixin.qq.com/s/01WLhFsni1WRTYPgqoV0Ww
 
 深度学习之迁移学习介绍与使用
 
+https://mp.weixin.qq.com/s/7cvErbQRnTAKjTz67dNRDw
+
+Python迁移学习实战书籍和代码《Hands-On Transfer Learning with Python》
+
 https://mp.weixin.qq.com/s/5DtTgc9bIrdXQkmuqRm8CA
 
 谷歌大脑迁移学习：减少调参，直接在数据集中学习最佳图像架构

@@ -254,6 +254,10 @@ https://mp.weixin.qq.com/s/c9iHdgtErVd_iitwny7_zw
 
 Kaggle前1%参赛者经验：特征工程为何如此重要？
 
+https://mp.weixin.qq.com/s/xbPJD0uoRB-T1x09AUYdzg
+
+基于Python的自动特征工程——教你如何自动创建机器学习特征
+
 # 模仿学习
 
 https://zhuanlan.zhihu.com/p/27935902

@@ -120,6 +120,10 @@ https://mp.weixin.qq.com/s/3HoR-PVuwcJFGWEw3X2Y8w
 
 Nodejs探秘：深入理解单线程实现高并发原理
 
+https://mp.weixin.qq.com/s/PkwL5ExoMroYP7kLZYf-MA
+
+如何在Docker容器中调试Node.js应用？
+
 ## NPM
 
 npm是node.js的软件包管理工具。它的官网是：

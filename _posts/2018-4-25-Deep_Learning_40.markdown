@@ -280,6 +280,10 @@ https://mp.weixin.qq.com/s/BMsvhXytSy2nWIsGOSOSBQ
 
 自动生成高效DNN，适用于边缘设备的生成合成工具FermiNets
 
+https://mp.weixin.qq.com/s/_JlaxwEYqdTTuS4hNSQTTw
+
+这么Deep且又轻量的Network，实时目标检测
+
 # 语义分割进阶
 
 https://mp.weixin.qq.com/s/cANlqQAI-A2mC9vnd3imQA

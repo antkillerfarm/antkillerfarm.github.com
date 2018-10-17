@@ -372,6 +372,10 @@ https://mp.weixin.qq.com/s/iW0k80TUPuWDE9xwHvX91g
 
 为什么你需要Raven：全球首个真正分布式深度学习训练协议
 
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750181&idx=1&sn=156dac3c5646143fc2577972f1506836
+
+GPU捉襟见肘还想训练大批量模型？谁说不可以
+
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
