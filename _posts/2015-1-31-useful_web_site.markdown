@@ -428,6 +428,10 @@ https://mp.weixin.qq.com/s?__biz=MzIyNzUwMjM2MA==&mid=2247485942&idx=1&sn=159723
 
 编程基础知识
 
+https://mp.weixin.qq.com/s?__biz=MzIyNzUwMjM2MA==&mid=2247486006&idx=1&sn=d4978396fa18e5dfce69a51ac7748898
+
+网络编程基础知识
+
 ## 数据结构
 
 https://mp.weixin.qq.com/s/52JFdyaLwZq7nWiZq6z6qA
@@ -453,6 +457,10 @@ https://mp.weixin.qq.com/s/xttZJVR0r5vssOJ19sBHGQ
 https://mp.weixin.qq.com/s/jQ6fEi_K2RSesJxZn_kujg
 
 外部排序
+
+https://mp.weixin.qq.com/s/QAAfjSeZtfd3PSN3wAP8RQ
+
+什么是外部排序？
 
 ![](/images/img2/DS.jpg)
 

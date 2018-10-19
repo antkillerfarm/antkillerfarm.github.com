@@ -186,6 +186,10 @@ https://mp.weixin.qq.com/s/NY1y0N6XedmMEvfsEFcTjQ
 
 机器学习中的目标函数总结
 
+https://mp.weixin.qq.com/s/8KM7wUg_lnFBd0fIoczTHQ
+
+用收缩损失(Shrinkage Loss)进行深度回归跟踪
+
 # 聚类算法
 
 https://mp.weixin.qq.com/s/xGPiaXTnQad3RcMwIELP4w

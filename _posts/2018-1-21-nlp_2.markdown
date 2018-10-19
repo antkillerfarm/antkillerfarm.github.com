@@ -286,6 +286,10 @@ https://mp.weixin.qq.com/s/AoSDPDKbTbjH9rviioK-5Q
 
 阿里巴巴为什么选择Apache Flink？
 
+https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651749037&idx=1&sn=4a448647b3dae50779bc9ec0e9c10275
+
+美团点评基于Flink的实时数仓建设实践
+
 # MXNet
 
 https://mp.weixin.qq.com/s/lVja7woyFWpmr9sH0CitAA

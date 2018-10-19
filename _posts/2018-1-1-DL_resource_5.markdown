@@ -100,6 +100,10 @@ https://mp.weixin.qq.com/s/yAC6VTOl3jAxjUT0QbTVrw
 
 为什么要在边缘设备部署机器学习？
 
+https://mp.weixin.qq.com/s/YnOFJIf-l6CxSWdxIJn1FA
+
+与一年一届的CVPR相比，两年一届的ICCV、ECCV有什么不同？
+
 ## 深度时间序列
 
 https://mp.weixin.qq.com/s/cChJO6YrE_XAgeInS7J1Vw

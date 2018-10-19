@@ -417,3 +417,7 @@ https://mp.weixin.qq.com/s/-dGXe4RuU4w8DN8ffCMiFg
 https://mp.weixin.qq.com/s/YDIoVf20kybu8JEUY3GZWg
 
 Lattice Planner规划算法
+
+https://mp.weixin.qq.com/s/5TyL9bkKe-XMKLl-QbtaZg
+
+西电智能学子斩获ECCV2018无人机挑战赛冠军—算法分享

@@ -362,6 +362,10 @@ https://mp.weixin.qq.com/s/xTZbfiLYHB64AJJRcw04qQ
 
 知识图和神经网络：如何有效读取图节点属性
 
+https://mp.weixin.qq.com/s/9fFjVSiMg-LwddXfNJuKuw
+
+DeepMind开源图网络库，一种结合图和神经网络的新方法
+
 # GAN进阶（续）
 
 https://mp.weixin.qq.com/s/c84LMFnIhoDeolc1B4MIVA

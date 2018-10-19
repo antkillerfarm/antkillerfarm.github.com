@@ -236,6 +236,10 @@ https://mp.weixin.qq.com/s/0jeM3r4pvX2hAtNq8O1i-A
 
 OpenCV轮廓层次分析实现欧拉数计算
 
+https://mp.weixin.qq.com/s/SkAR1RwtMMpQPBldRTr3Ag
+
+OpenCV金字塔图像分辨率重建与融合
+
 # TensorFlow
 
 https://mp.weixin.qq.com/s/kYOwUWlTP4T0IYKDWDbCsg

@@ -300,3 +300,19 @@ https://mp.weixin.qq.com/s/j_nU7QB_nArHQj36PL3h9w
 https://mp.weixin.qq.com/s/hE-2GLo1SNdIMY858_HuaQ
 
 化秋毫为波澜:运动放大算法
+
+https://mp.weixin.qq.com/s/y0SAI0f3w42z-nnoorFoEQ
+
+共享空间学习共有特征的异源图像匹配
+
+https://mp.weixin.qq.com/s/GYe1psxy1KMCbV7f3K8f4Q
+
+神经规则引擎：让符号规则学会变通
+
+https://mp.weixin.qq.com/s/M7w7tMVd23YToIW7DypYjA
+
+用DL实现Bug自动归类：微软研究院提出DBRNN-A
+
+https://mp.weixin.qq.com/s/KX85CCpYrXFOvdTU5Q4Frg
+
+阿里巴巴论文提出针对影视作品的语音情感识别信息融合框架

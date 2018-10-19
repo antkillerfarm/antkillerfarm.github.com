@@ -296,6 +296,10 @@ https://mp.weixin.qq.com/s/yswy7VwEapQJ9M5n_Uo93w
 
 目标检测最新进展总结与展望
 
+https://mp.weixin.qq.com/s/s1qmCA8djEEanwCxeLSV2Q
+
+63页【深度CNN-目标检测】综述
+
 # 细粒度分类
 
 https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw

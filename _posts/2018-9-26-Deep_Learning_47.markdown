@@ -320,7 +320,7 @@ https://zhuanlan.zhihu.com/p/45702794
 
 # Transformer
 
-Attention的介绍到此为止，但《Attention is All You Need》的传奇继续，该文不仅提出了两种Attention模块，而且还提出了如下图所示的Transformer模型。该模型主要用于NMT领域，由于Attention不依赖上一刻的数据，同时精度也不弱于LSTM，因此有很好并行计算特性，在工业界得到了广泛应用。阿里巴巴和搜狗目前的NMT方案都是基于Transformer模型的。
+之前的文章已经介绍了Attention和《Attention is All You Need》。但实际上，《Attention is All You Need》不仅提出了两种Attention模块，而且还提出了如下图所示的Transformer模型。该模型主要用于NMT领域，由于Attention不依赖上一刻的数据，同时精度也不弱于LSTM，因此有很好并行计算特性，在工业界得到了广泛应用。阿里巴巴和搜狗目前的NMT方案都是基于Transformer模型的。
 
 ![](/images/img2/Transformer.png)
 
@@ -376,3 +376,6 @@ https://mp.weixin.qq.com/s/Fao3i99kZ1a6aa3UhAYKhA
 
 全面超越人类！Google称霸SQuAD，BERT横扫11大NLP测试
 
+https://mp.weixin.qq.com/s/INDOBcpg5p7vtPBChAIjAA
+
+最强预训练模型BERT的Pytorch实现

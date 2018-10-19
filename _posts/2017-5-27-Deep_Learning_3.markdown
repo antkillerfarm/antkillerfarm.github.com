@@ -238,9 +238,13 @@ http://blog.csdn.net/Fate_fjh/article/details/52882134
 
 卷积神经网络系列blog
 
+https://zhuanlan.zhihu.com/p/47184529
+
+卷积神经网络（CNN）详解
+
 http://mp.weixin.qq.com/s/YRwGwelyA3VOYZ4XGAjUBw
 
-CNN 感受野首次可视化：深入解读及计算指南
+CNN感受野首次可视化：深入解读及计算指南
 
 https://mp.weixin.qq.com/s/EJyG3Y4EHTGMm_Q1mY4RvA
 

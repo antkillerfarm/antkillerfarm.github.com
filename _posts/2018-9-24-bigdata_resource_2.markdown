@@ -124,6 +124,10 @@ https://mp.weixin.qq.com/s/isUT--guYrsIWRXApcutrg
 
 耶鲁大学11名学生标注完成大规模复杂跨域Text-to-SQL数据集Spider
 
+https://mp.weixin.qq.com/s/deJ6dChES_WhYH8T05ruag
+
+腾讯AI实验室宣布开源多标签图像数据集ML-Images
+
 # SLAM
 
 ## blog

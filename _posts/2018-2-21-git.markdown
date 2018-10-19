@@ -376,6 +376,10 @@ https://mp.weixin.qq.com/s/LkEfbW5oscOXyPmb5iqcGA
 
 Python爬取并分析拉勾网招聘数据
 
+https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247493477&idx=4&sn=b5906ee7b5af7bd414b5223549a30e64
+
+五十种最好用的开源爬虫软件
+
 # ZeroMQ
 
 ZeroMQ是个在Socket之上，而在MQ之下的网络通信库。正如名称所言，它实际上并不是一个完整的MQ，而仅仅只有MQ的一些子功能罢了。

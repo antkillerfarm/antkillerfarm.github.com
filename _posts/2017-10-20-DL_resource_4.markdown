@@ -338,6 +338,10 @@ https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750181&idx=2&sn=227bdb
 
 一个基于PyTorch的目标检测工具箱，商汤联合港中文开源mmdetection
 
+https://mp.weixin.qq.com/s/GTjNToprM2OO7uzSRQXkHw
+
+DeepMind开源强化学习库TRFL，关键算法可编写RL智能体
+
 # 光神经网络
 
 https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ

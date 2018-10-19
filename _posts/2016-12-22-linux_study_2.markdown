@@ -390,6 +390,27 @@ exit用于整个shell脚本的退出。
 
 `$$`: 当前shell的PID。
 
+## shell如何把多行内容输出到一个文件
+
+一行一行echo重定向显然是个笨办法，这里可以使用Here Documents语法。
+
+例子：
+
+{% highlight bash %}
+(
+cat<<EOF
+line 1
+line 2
+EOF
+)>a.txt
+{% endhighlight %}
+
+参考：
+
+https://linux.die.net/abs-guide/here-docs.html
+
+Here Documents
+
 ## 参考
 
 https://blog.csdn.net/iot_flower/article/details/69055590
@@ -445,12 +466,3 @@ https://mp.weixin.qq.com/s/iAMYqJjlMWAvFq4Hddh4ig
 https://mp.weixin.qq.com/s/ZIDiFrN3qQV4u-m9Wr3wiA
 
 斯坦福完全可解释深度神经网络：你需要用决策树搞点事
-
-https://mp.weixin.qq.com/s/M7w7tMVd23YToIW7DypYjA
-
-用DL实现Bug自动归类：微软研究院提出DBRNN-A
-
-https://mp.weixin.qq.com/s/KX85CCpYrXFOvdTU5Q4Frg
-
-阿里巴巴论文提出针对影视作品的语音情感识别信息融合框架
-

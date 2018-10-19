@@ -272,6 +272,14 @@ https://mp.weixin.qq.com/s/aNskPERmekw9yQVb7A3GPQ
 
 Google大脑最新研究成果：使用强化学习实现动态系统的韧性计算
 
+https://mp.weixin.qq.com/s/pJkCOCl6o70le1WsE9p3pg
+
+在全景视频中预测头部运动：一种深度强化学习方法
+
+https://mp.weixin.qq.com/s/fodjmmh_jJMh4hD3m2OrLg
+
+凭借幻想的目标进行视觉强化学习
+
 # 问答系统
 
 GA-Reader

@@ -284,6 +284,10 @@ https://mp.weixin.qq.com/s/_JlaxwEYqdTTuS4hNSQTTw
 
 这么Deep且又轻量的Network，实时目标检测
 
+https://mp.weixin.qq.com/s/d6HFVbbHwkxPGdnbyVuMyQ
+
+密歇根州立大学提出NestDNN：动态分配多任务资源的移动端深度学习框架
+
 # 语义分割进阶
 
 https://mp.weixin.qq.com/s/cANlqQAI-A2mC9vnd3imQA
