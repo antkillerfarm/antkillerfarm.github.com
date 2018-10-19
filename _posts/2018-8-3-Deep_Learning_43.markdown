@@ -358,6 +358,10 @@ https://mp.weixin.qq.com/s/jCgbBldpw4TGHUvN9WkJZg
 
 在对抗中学习网络结构——87页PPT带你学习Graph中的GAN
 
+https://mp.weixin.qq.com/s/xTZbfiLYHB64AJJRcw04qQ
+
+知识图和神经网络：如何有效读取图节点属性
+
 # GAN进阶（续）
 
 https://mp.weixin.qq.com/s/c84LMFnIhoDeolc1B4MIVA

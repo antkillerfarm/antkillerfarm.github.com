@@ -297,3 +297,6 @@ https://mp.weixin.qq.com/s/j_nU7QB_nArHQj36PL3h9w
 
 李宏扬：二阶信息在图像分类中的应用
 
+https://mp.weixin.qq.com/s/hE-2GLo1SNdIMY858_HuaQ
+
+化秋毫为波澜:运动放大算法
