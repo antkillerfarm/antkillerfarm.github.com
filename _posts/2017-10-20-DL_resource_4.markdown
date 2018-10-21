@@ -342,6 +342,18 @@ https://mp.weixin.qq.com/s/GTjNToprM2OO7uzSRQXkHw
 
 DeepMind开源强化学习库TRFL，关键算法可编写RL智能体
 
+https://mp.weixin.qq.com/s/PLFxehTAXcehzIrIMRfVpA
+
+强化学习的基石：DeepMind开源框架TRFL
+
+https://mp.weixin.qq.com/s/mmvfSxjtJgx5q6Gm_3xQQw
+
+英特尔重磅开源OpenVINO
+
+https://mp.weixin.qq.com/s/c5rvWfIjujw6TNszDzPMdw
+
+DeepMind开源图深度学习(GraphDL)工具包，基于Tensorflow和Sonnet
+
 # 光神经网络
 
 https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ

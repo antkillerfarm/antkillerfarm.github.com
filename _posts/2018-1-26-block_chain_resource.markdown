@@ -272,9 +272,9 @@ https://mp.weixin.qq.com/s/zDcbrZeK4tlO0jA3-s_lYg
 
 雷达方面的术语
 
-https://mp.weixin.qq.com/s/UICCBoUQr7Nl_THQ5NZcwA
+https://www.ll.mit.edu/outreach/introduction-radar-systems
 
-雷达系统导论第一讲：Introduntion
+MIT：Introduction to Radar Systems
 
 https://mp.weixin.qq.com/s/vmQKK9cEbBRIvd2uOzmC1w
 

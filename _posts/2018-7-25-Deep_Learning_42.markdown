@@ -326,6 +326,10 @@ https://mp.weixin.qq.com/s/4xYAhNys6svltEb4cQUrXw
 
 Bi-box行人检测：‘行人遮挡’为几何？
 
+https://mp.weixin.qq.com/s/IfZ5gTZrSFqQP2cpcIxAeQ
+
+清华&商汤开源CVPR2018超高精度人脸对齐算法LAB
+
 # AI前沿
 
 人工智能前沿7大热点：

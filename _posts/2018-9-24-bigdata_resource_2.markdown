@@ -128,6 +128,10 @@ https://mp.weixin.qq.com/s/deJ6dChES_WhYH8T05ruag
 
 腾讯AI实验室宣布开源多标签图像数据集ML-Images
 
+https://mp.weixin.qq.com/s/WkDTGxWtgUMjpIoO4LkLRg
+
+腾讯AI Lab开源800万中文词的NLP数据集
+
 # SLAM
 
 ## blog

@@ -273,6 +273,22 @@ https://github.com/hprose
 
 # DL参考资源+
 
+https://mp.weixin.qq.com/s/LqjEQN7pHTL47ToDh4WgZg
+
+CVPR 2018，盘点我心中的创意 TOP10
+
+https://mp.weixin.qq.com/s/R3T2CveNbjZszoJ1iL_3bw
+
+带引导的进化策略：摆脱随机搜索中维数爆炸的魔咒
+
+https://mp.weixin.qq.com/s/NXyrqkwqMHFsWJZE7D_SMA
+
+线性模型可解释一定比DNN高？UCSD科学家：大错特错！
+
+https://mp.weixin.qq.com/s/ivtMohnpgJGmbQJdo_xr9w
+
+UCL等三强联手提出完全可微自适应神经树：神经网络与决策树完美结合
+
 https://mp.weixin.qq.com/s/9yfTO2jHz69-k1MsUGIM0Q
 
 双目立体放大！谷歌刚刚开源的这篇论文可能会成为手机双摄的新玩法

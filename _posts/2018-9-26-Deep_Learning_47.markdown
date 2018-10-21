@@ -379,3 +379,8 @@ https://mp.weixin.qq.com/s/Fao3i99kZ1a6aa3UhAYKhA
 https://mp.weixin.qq.com/s/INDOBcpg5p7vtPBChAIjAA
 
 最强预训练模型BERT的Pytorch实现
+
+https://mp.weixin.qq.com/s/SZMYj4rMneR3OWST007H-Q
+
+解读谷歌最强NLP模型BERT：模型、数据和训练
+

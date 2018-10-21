@@ -248,6 +248,10 @@ https://mp.weixin.qq.com/s/YgH6iiKPZ-FCflikAqAakw
 
 点内科技、华东医院及上海交大合著论文：3D深度学习在CT影像预测早期肿瘤浸润方面超过影像专家
 
+https://mp.weixin.qq.com/s/q8iljb3GPgmdJUeF9kMvlA
+
+AI进军新药发现研究？这99页slides了解一下
+
 ## 面试
 
 https://www.zhihu.com/question/41233373

@@ -170,6 +170,14 @@ https://zhuanlan.zhihu.com/p/44755895
 
 "Social Rank":节点重要度在网络表示学习中的影响
 
+https://mp.weixin.qq.com/s/2GPPC1LfpKLj80EJq7rcDA
+
+如何帮助大家找工作？领英利用深度表征学习提升人才搜索和推荐系统
+
+https://mp.weixin.qq.com/s/I2Gh3f_8cmfeOt0uEGj8hA
+
+FAIR动态元嵌入:动态选择词嵌入模型
+
 # NN的量化计算
 
 ## 概述

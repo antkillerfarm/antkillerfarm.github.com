@@ -240,6 +240,10 @@ https://mp.weixin.qq.com/s/1SOQZ3fsiYtT4emt4jvMxQ
 
 深入浅出聚类算法
 
+https://mp.weixin.qq.com/s/GlwJhvdzxaRbRE2DhMpBSg
+
+基于动态局部搜索的免疫自动聚类算法
+
 # 特征工程
 
 https://mp.weixin.qq.com/s/ibiElLIgrT3wYx3tDYMMTw

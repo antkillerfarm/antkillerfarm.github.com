@@ -210,6 +210,10 @@ https://mp.weixin.qq.com/s/COIYp4Ao9fBPnaUZvhCxkg
 
 表情包的画质是如何越传越差甚至还变绿的？
 
+https://mp.weixin.qq.com/s/nbA86PutvWWcA7t89XWhfA
+
+三体问题
+
 ## LSM (Log Structured Merge)
 
 十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。
@@ -335,6 +339,10 @@ https://mp.weixin.qq.com/s/1JSxjkKEUlWOzXCQPTve3A
 https://mp.weixin.qq.com/s/NTK-u4aVrTTmvi-4ZBa8RQ
 
 数十亿用户的Facebook如何进行贝叶斯系统调优？
+
+https://mp.weixin.qq.com/s/g24mcZjQ25sQJx9mqE_XSA
+
+怎样判断漂亮女孩是不是单身的？美国海军在汪洋大海里搜索丢失的氢弹、失踪的核潜艇都用过这种方法。
 
 ## 金融模型
 
