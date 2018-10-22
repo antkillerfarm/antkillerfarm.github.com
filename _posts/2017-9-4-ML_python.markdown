@@ -338,7 +338,13 @@ Jupyter是iPython的后继项目，它不仅支持python语言，还支持其他
 
 https://jupyter.org/
 
+安装：
+
 `pip install jupyter`
+
+运行：
+
+`jupyter notebook`
 
 参见：
 
@@ -349,6 +355,14 @@ Jupyter项目的前世今生
 https://mp.weixin.qq.com/s/aJRVh7BWOMq4KCoBMtLGGw
 
 快速学习Jupyter Notebook
+
+https://blog.csdn.net/u011493486/article/details/55001477
+
+Jupyter中显示matplotlib的图片
+
+https://www.cnblogs.com/nxld/p/6566380.html
+
+Jupyter Notebook快速入门
 
 ## TuShare
 

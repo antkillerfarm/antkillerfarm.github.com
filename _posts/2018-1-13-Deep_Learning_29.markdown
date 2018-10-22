@@ -38,6 +38,10 @@ http://blog.csdn.net/shuzfan/article/details/77964370
 
 不规则卷积神经网络
 
+https://mp.weixin.qq.com/s/rXr_XBc2Psh3NSA0pj4ptQ
+
+常建龙：深度卷积网络中的卷积算子研究进展
+
 # 多任务学习
 
 https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA

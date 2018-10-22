@@ -312,6 +312,10 @@ https://zhuanlan.zhihu.com/p/46755166
 
 利用评论文本交互提升推荐系统
 
+https://zhuanlan.zhihu.com/p/47393033
+
+基于知识的新闻推荐
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

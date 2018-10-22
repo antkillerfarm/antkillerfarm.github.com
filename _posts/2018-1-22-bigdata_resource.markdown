@@ -194,14 +194,6 @@ https://mp.weixin.qq.com/s/5pyKKD80jyXvn-brxBKV4g
 
 中国民生银行天眼日志平台架构演进的平凡之路
 
-https://mp.weixin.qq.com/s/O8pj4pChyw8PK-G_4A3DWg
-
-发布订阅消息系统Apache Pulsar简介
-
-https://mp.weixin.qq.com/s/ToJJTBWJXlpj3LkDj5YYvw
-
-为什么要选择Apache Pulsar
-
 https://mp.weixin.qq.com/s/3oQ2yYGNuEz1cuEo4xLZzA
 
 如何解决大规模机器学习的三大痛点？
@@ -425,3 +417,19 @@ https://mp.weixin.qq.com/s/NwjYJde9_TC4PXMPpYw1Gw
 https://mp.weixin.qq.com/s/Kv1Qq4118I2itYwPYyQUoA
 
 Spark Streaming 实时计算在甜橙金融监控系统中的应用及优化
+
+https://mp.weixin.qq.com/s/syM4ReAWpZ5d4KI87ogpiQ
+
+从单一架构到分布式交易架构，网易严选的成功实践
+
+https://mp.weixin.qq.com/s/qh88sawJUZedv3X0LIRsAQ
+
+ESearch：58集团基于C++语言自主研发的搜索内核
+
+http://www.cnblogs.com/rjzheng/p/8994962.html
+
+分布式之消息队列复习精讲
+
+https://mp.weixin.qq.com/s/Mcg5rj3QrgVj3wyY4xttnQ
+
+关于商业部署机器学习，这有一篇详尽指南

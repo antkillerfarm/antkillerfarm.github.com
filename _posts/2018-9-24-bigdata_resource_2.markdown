@@ -6,22 +6,6 @@ category: resource
 
 # 大数据平台参考资源
 
-https://mp.weixin.qq.com/s/syM4ReAWpZ5d4KI87ogpiQ
-
-从单一架构到分布式交易架构，网易严选的成功实践
-
-https://mp.weixin.qq.com/s/qh88sawJUZedv3X0LIRsAQ
-
-ESearch：58集团基于C++语言自主研发的搜索内核
-
-http://www.cnblogs.com/rjzheng/p/8994962.html
-
-分布式之消息队列复习精讲
-
-https://mp.weixin.qq.com/s/Mcg5rj3QrgVj3wyY4xttnQ
-
-关于商业部署机器学习，这有一篇详尽指南
-
 https://mp.weixin.qq.com/s/d7xMT1jrkwT_csC1kugw4w
 
 360数据处理平台的架构演进及优化实践
@@ -291,3 +275,4 @@ https://mp.weixin.qq.com/s/5MyuZf_TBm2NV47CRAz5Dw
 https://mp.weixin.qq.com/s/S1fVrSfAM_UJh06Q43s8vA
 
 网络芯片架构的新改变
+

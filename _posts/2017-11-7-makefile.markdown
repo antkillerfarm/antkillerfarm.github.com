@@ -176,6 +176,10 @@ http://www.cnblogs.com/Jack47/p/bazel-faq.html
 
 Google软件构建工具Bazel FAQ
 
+https://zhuanlan.zhihu.com/p/47397799
+
+bazel项目添加automake/autoconf项目解决办法
+
 # Other
 
 ## blade

@@ -362,6 +362,10 @@ https://mp.weixin.qq.com/s/zlo59TVpSq5w6zTwJLjbXg
 
 视觉多目标跟踪算法综述（上）
 
+https://mp.weixin.qq.com/s/XwMXrsmSnImgD1vNSVErLg
+
+深度多目标跟踪算法综述
+
 # Mask R-CNN
 
 Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的NN。它是何恺明2017年的新作。
