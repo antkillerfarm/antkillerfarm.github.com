@@ -96,6 +96,10 @@ https://mp.weixin.qq.com/s/zhkaenFdnB5KgaEYb-XDEQ
 
 从基础概念到实现，小白如何快速入门PyTorch
 
+https://mp.weixin.qq.com/s/AMZFvmzo4pQ1m7QeaRpAdA
+
+PyTorch资源列表：450个NLP/CV/SP、论文实现、教程、示例
+
 https://github.com/jinfagang/pytorch_name_net
 
 PyTorch人工智能自动取名

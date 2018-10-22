@@ -155,6 +155,12 @@ c) Undiscounted, average reward MDP
 
 扩展MDP的Bellman equation都不是线性方程，没有解析解，只有迭代解。相关解法主要使用了概念图模型，这里不再详述。
 
+参考：
+
+https://mp.weixin.qq.com/s/G8zmooqhSKqcLv1u7uM0bw
+
+AlphaGo等智能体是如何炼成的？你需要懂得马尔科夫链
+
 # 动态规划
 
 Dynamic programming(DP)用于解决那些可分解为**重复子问题（overlapping subproblems）**并具有**最优子结构（optimal substructure）**的问题。这里的programming和编程并无任何关系。
@@ -240,4 +246,3 @@ $$q_*(s,a)=\max_{\pi}q_{\pi}(s,a)$$
 RL领域的DP算法的主要思想是：利用value function构建搜索Good Policy的方法。这里用$$v_*(s)$$或$$q_*(s, a)$$表示最优的value function。
 
 RL DP主要包括以下算法：（为了抓住问题的本质，这里仅列出各算法最关键的Bellman equation，至于流程参照Q-learning算法即可。）
-

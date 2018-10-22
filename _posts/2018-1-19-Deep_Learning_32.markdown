@@ -178,6 +178,10 @@ https://mp.weixin.qq.com/s/I2Gh3f_8cmfeOt0uEGj8hA
 
 FAIR动态元嵌入:动态选择词嵌入模型
 
+https://mp.weixin.qq.com/s/5ko0-W5giZ7wBCLUmkQeKA
+
+神经网络词嵌入：如何将《战争与和平》表示成一个向量？
+
 # NN的量化计算
 
 ## 概述

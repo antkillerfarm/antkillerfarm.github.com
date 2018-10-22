@@ -443,3 +443,7 @@ https://zhuanlan.zhihu.com/p/46339823
 https://zhuanlan.zhihu.com/p/46340382
 
 ICLR19最新论文解读之Meta Domain Adaptation
+
+https://mp.weixin.qq.com/s/RBMGI20AI92ZcWSlYczqAA
+
+伯克利、OpenAI等提出基于模型的元策略优化强化学习

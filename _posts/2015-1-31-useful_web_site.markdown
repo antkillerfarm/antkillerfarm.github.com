@@ -328,6 +328,10 @@ https://mp.weixin.qq.com/s/tguC-WOleKRWLfTmGdJlQg
 
 Linux文件系统的实现
 
+https://mp.weixin.qq.com/s/hTD9HEIbSx69wJhA_dv9Qg
+
+Linux写时拷贝技术(copy-on-write)
+
 https://mp.weixin.qq.com/s/eEuNPtTaPwJ7hSghgeU32g
 
 Android Hook技术防范漫谈
@@ -432,43 +436,9 @@ https://mp.weixin.qq.com/s?__biz=MzIyNzUwMjM2MA==&mid=2247486006&idx=1&sn=d49783
 
 网络编程基础知识
 
-## 数据结构
+https://mp.weixin.qq.com/s/EPWRwOBT8_616R5RWbdaTQ
 
-https://mp.weixin.qq.com/s/52JFdyaLwZq7nWiZq6z6qA
-
-二叉堆是什么鬼？
-
-https://mp.weixin.qq.com/s/4V1E2L14c3k-5i0c-JyTVQ
-
-如何在10亿数中找出前1000大的数
-
-https://mp.weixin.qq.com/s/yNn57Uw_-itzZXCSEAzrJw
-
-一起搞定面试中的二叉树（一）
-
-https://mp.weixin.qq.com/s/msv2NZ0aG96d3xQhX3HhNA
-
-一起搞定面试中的二叉树（二）
-
-https://mp.weixin.qq.com/s/xttZJVR0r5vssOJ19sBHGQ
-
-快速排序算法
-
-https://mp.weixin.qq.com/s/jQ6fEi_K2RSesJxZn_kujg
-
-外部排序
-
-https://mp.weixin.qq.com/s/QAAfjSeZtfd3PSN3wAP8RQ
-
-什么是外部排序？
-
-![](/images/img2/DS.jpg)
-
-![](/images/img2/sort.jpg)
-
-http://blog.csdn.net/u013709270/article/details/53470428
-
-跳跃表的原理及实现
+一家公司到底有多少种管理系统？——从包罗万象到术业专攻
 
 ## 有用的blog
 

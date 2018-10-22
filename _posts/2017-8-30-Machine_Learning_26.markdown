@@ -233,5 +233,3 @@ $$NewEstimate \leftarrow OldEstimate + StepSize [Target - OldEstimate]$$
 $$Q_{n+1}=Q_n+\alpha[R_n-Q_n]$$
 
 详细内容参见《数学狂想曲（四）》的“软件滤波算法”一节的“一阶滞后滤波法”和“加权递推平均滤波法”。
-
-

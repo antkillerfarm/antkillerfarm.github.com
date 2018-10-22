@@ -315,3 +315,7 @@ https://mp.weixin.qq.com/s/5YWAgp8LKi5q_NDrNUtyGQ
 https://mp.weixin.qq.com/s/toh59s2-UlqiZfkE5ThxZw
 
 谈一谈python中的魔法变量*args和**kwargs
+
+https://mp.weixin.qq.com/s/8y7IIQWxXx3bCD8cK8Z3XQ
+
+这17个骚操作你都Ok吗

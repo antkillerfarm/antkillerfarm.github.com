@@ -288,6 +288,10 @@ https://mp.weixin.qq.com/s/d6HFVbbHwkxPGdnbyVuMyQ
 
 密歇根州立大学提出NestDNN：动态分配多任务资源的移动端深度学习框架
 
+https://mp.weixin.qq.com/s/lUTusig94Htf7_4Z3X1fTQ
+
+清华&伯克利ICLR论文：重新思考6大剪枝方法
+
 # 语义分割进阶
 
 https://mp.weixin.qq.com/s/cANlqQAI-A2mC9vnd3imQA
