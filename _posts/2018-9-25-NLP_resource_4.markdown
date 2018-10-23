@@ -233,3 +233,7 @@ https://mp.weixin.qq.com/s/tts6UzF-ziyNp0s31Qiqtg
 https://mp.weixin.qq.com/s/A-PKyZcXwOz-2lL-hBmjsA
 
 自然语言处理中的语言模型预训练方法
+
+https://mp.weixin.qq.com/s/ROnEtP4ferK-rB8DAJNRNg
+
+短文本分类，腾讯AI Lab联合港中文提出主题记忆网络 

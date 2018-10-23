@@ -254,6 +254,10 @@ AI进军新药发现研究？这99页slides了解一下
 
 ## 面试
 
+https://mp.weixin.qq.com/s/U5hlr69m_9Znwjkj3Yl4Hg
+
+《深度学习500问》一份超全深度学习资料，面试必备！
+
 https://www.zhihu.com/question/41233373
 
 如果你是面试官，你怎么去判断一个面试者的深度学习水平？

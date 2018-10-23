@@ -280,6 +280,10 @@ https://mp.weixin.qq.com/s/fodjmmh_jJMh4hD3m2OrLg
 
 凭借幻想的目标进行视觉强化学习
 
+https://mp.weixin.qq.com/s/6HVSh7_9Akmf6OE8PGNy6Q
+
+怎样让AI完成人类搞不定的任务？OpenAI提出迭代扩增法给AI设目标
+
 # 问答系统
 
 GA-Reader

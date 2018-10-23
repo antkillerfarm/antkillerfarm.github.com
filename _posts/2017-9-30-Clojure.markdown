@@ -298,3 +298,29 @@ https://mp.weixin.qq.com/s/ofoh7xH9MB0ifORi-ZQbcA
 https://mp.weixin.qq.com/s/24ipxnkh6TNiqRrakgw6ew
 
 Google Pixel3拍照为什么那么牛？
+
+# DL参考资源+
+
+https://mp.weixin.qq.com/s/ViQqeER1NXtJOtnLg76TWg
+
+关于远程监督，我们来推荐几篇值得读的论文
+
+https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
+
+谷歌提出多图像抠图算法，并弥补水印技术的一致性漏洞
+
+https://mp.weixin.qq.com/s/zTB59Fg_JFg9ZZPRlq9txA
+
+不使用残差连接，ICML新研究靠初始化训练上万层标准CNN
+
+https://mp.weixin.qq.com/s/9KOXSic-DellLuaVFjbKeA
+
+价值传播网络，在更复杂的动态环境中进行规划的方法
+
+https://mp.weixin.qq.com/s/i6VEYjbac4QP3s51meN1VA
+
+Hinton向量学院推出神经ODE：超越ResNet 4大性能优势
+
+https://mp.weixin.qq.com/s/-xZxNJPQyEQyBOue6_77yw
+
+用浅度学习训练深度网络：避开端到端深度学习难题

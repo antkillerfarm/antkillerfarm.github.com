@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  AI Chip
+title:  AI Chip（一）
 category: resource 
 ---
 

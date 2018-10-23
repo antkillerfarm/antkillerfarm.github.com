@@ -140,6 +140,10 @@ http://www.csdn.net/article/2014-06-06/2820111-100-Interesting-Data-Sets-for-Sta
 
 100+诡异的数据集
 
+https://mp.weixin.qq.com/s/NjJRSim8DLvKoI01PMkNfw
+
+机器学习高质量数据集大合辑
+
 http://www.sogou.com/labs/
 
 搜狗实验室的网站可以下载很多NLP和图片识别方面的数据
@@ -367,20 +371,3 @@ https://mp.weixin.qq.com/s/dsLVogBtYjYeMULWp4QrhA
 https://zhuanlan.zhihu.com/p/40984645
 
 打通推荐系统与知识图谱: 第一个公开的大规模链接数据集合
-
-https://mp.weixin.qq.com/s/h4FUBI6w1IPQssebR1eSXw
-
-这是一份非常全面的开源数据集，你，真的不想要吗？
-
-https://mp.weixin.qq.com/s/7xFlELcm325Q6wEB5Pyphg
-
-让AI学会刨根问底和放飞自我，斯坦福最新问答数据集CoQA
-
-https://mp.weixin.qq.com/s/-NQa2VeuskDx5XN9WMCmPQ
-
-腾讯开源业内最大多标签图像数据集，附ResNet-101模型
-
-https://mp.weixin.qq.com/s/Rf3NAYlNMrcVythVA-90cQ
-
-端到端对话模型新突破！Facebook发布大规模个性化对话数据库
-

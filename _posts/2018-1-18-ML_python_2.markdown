@@ -4,7 +4,7 @@ title:  Machine Learning之Python篇（二）
 category: AI 
 ---
 
-# Machine Learning之Python篇（续）
+# Machine Learning之Python篇
 
 ## 参考
 

@@ -371,3 +371,7 @@ https://zhuanlan.zhihu.com/p/46629127
 https://mp.weixin.qq.com/s/Sp0EYvaq-1u0mtnrrmFNCQ
 
 为什么说GANs是一个绝妙的艺术创作工具？
+
+https://mp.weixin.qq.com/s/uHEAtuY1_KZdUAdDAwFi_A
+
+以为GAN只能“炮制假图”？它还有这7种另类用途

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  大数据平台参考资源（二）, 知名数据集（二）, SLAM
+title:  大数据平台参考资源（二）, 知名数据集（二）, SLAM, AI Chip（二）
 category: resource 
 ---
 
@@ -82,7 +82,27 @@ https://mp.weixin.qq.com/s/qeMhUNDXoYkx06mHnIEUCA
 
 一文带你了解携程第四代全链路测试系统
 
+https://mp.weixin.qq.com/s/sUWy60vL-pEt5fE5PGGrww
+
+数据中心日均CPU利用率45%？！阿里规模化混部技术揭秘
+
 # 知名数据集
+
+https://mp.weixin.qq.com/s/h4FUBI6w1IPQssebR1eSXw
+
+这是一份非常全面的开源数据集，你，真的不想要吗？
+
+https://mp.weixin.qq.com/s/7xFlELcm325Q6wEB5Pyphg
+
+让AI学会刨根问底和放飞自我，斯坦福最新问答数据集CoQA
+
+https://mp.weixin.qq.com/s/-NQa2VeuskDx5XN9WMCmPQ
+
+腾讯开源业内最大多标签图像数据集，附ResNet-101模型
+
+https://mp.weixin.qq.com/s/Rf3NAYlNMrcVythVA-90cQ
+
+端到端对话模型新突破！Facebook发布大规模个性化对话数据库
 
 https://mp.weixin.qq.com/s/LC6bJOsJczTLolQ1Yx5cvg
 

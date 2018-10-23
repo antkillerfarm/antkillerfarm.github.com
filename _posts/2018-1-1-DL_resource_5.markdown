@@ -6,6 +6,36 @@ category: resource
 
 # DL参考资源
 
+## gcForest
+
+http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw
+
+周志华教授gcForest（多粒度级联森林）算法预测股指期货涨跌
+
+https://mp.weixin.qq.com/s/GU9-rH0gFan620Jhc1HTDg
+
+周志华提出的gcForest能否取代深度神经网络？
+
+https://mp.weixin.qq.com/s/dEmox_pi6KGXwFoevbv14Q
+
+周志华：首个基于森林的自编码器，性能优于DNN
+
+http://mp.weixin.qq.com/s/IfEgSOIkIPA-YtC9NQW1ng
+
+非神经网络的深度模型gcForest
+
+https://mp.weixin.qq.com/s/N80l9PZQposbIOKXbv8ayw
+
+周志华：最新实验表明gcForest已经是最好的非深度神经网络方法
+
+https://mp.weixin.qq.com/s/8QP5X9Hxi_6qyfxP4O0Gwg
+
+周志华团队和蚂蚁金服合作：用分布式深度森林算法检测套现欺诈
+
+https://mp.weixin.qq.com/s/bE9BZQ6wCICvrgomdySDuw
+
+周志华组提出可做表征学习的多层梯度提升决策树
+
 ## AI与安全
 
 https://mp.weixin.qq.com/s/jBE4gP3O0qVJ50G49Q_xmQ
@@ -367,27 +397,3 @@ https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
 http://mp.weixin.qq.com/s/vhBOrR6uTL2vGXnYC8BS1w
 
 Windows版深度学习软件安装指南
-
-https://mp.weixin.qq.com/s/ViQqeER1NXtJOtnLg76TWg
-
-关于远程监督，我们来推荐几篇值得读的论文
-
-https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
-
-谷歌提出多图像抠图算法，并弥补水印技术的一致性漏洞
-
-https://mp.weixin.qq.com/s/zTB59Fg_JFg9ZZPRlq9txA
-
-不使用残差连接，ICML新研究靠初始化训练上万层标准CNN
-
-https://mp.weixin.qq.com/s/9KOXSic-DellLuaVFjbKeA
-
-价值传播网络，在更复杂的动态环境中进行规划的方法
-
-https://mp.weixin.qq.com/s/i6VEYjbac4QP3s51meN1VA
-
-Hinton向量学院推出神经ODE：超越ResNet 4大性能优势
-
-https://mp.weixin.qq.com/s/-xZxNJPQyEQyBOue6_77yw
-
-用浅度学习训练深度网络：避开端到端深度学习难题

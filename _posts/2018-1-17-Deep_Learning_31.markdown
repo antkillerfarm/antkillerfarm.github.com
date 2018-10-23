@@ -172,6 +172,10 @@ http://geek.csdn.net/news/detail/98776
 
 李理：从Image Caption Generation理解深度学习（part II）
 
+https://mp.weixin.qq.com/s/i4zL-bPaPXUlwpKZzlRtcg
+
+Image Captioning36页最新综述
+
 https://zhuanlan.zhihu.com/p/30893160
 
 CVPR2017 Image Caption有关论文总结
