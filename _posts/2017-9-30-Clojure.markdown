@@ -324,3 +324,7 @@ Hinton向量学院推出神经ODE：超越ResNet 4大性能优势
 https://mp.weixin.qq.com/s/-xZxNJPQyEQyBOue6_77yw
 
 用浅度学习训练深度网络：避开端到端深度学习难题
+
+https://mp.weixin.qq.com/s/DwaSF76uvqFKkybaTUpl3w
+
+空间序列递归神经网络用于高光谱图像分类

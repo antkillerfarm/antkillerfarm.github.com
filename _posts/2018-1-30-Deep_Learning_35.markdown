@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十五）——姿态/行为检测, 深度目标跟踪, Mask R-CNN, DNC
+title:  深度学习（三十五）——姿态/行为检测, 深度目标跟踪, Mask R-CNN
 category: DL 
 ---
 
@@ -228,6 +228,10 @@ https://mp.weixin.qq.com/s?__biz=MzI5MDUyMDIxNA==&mid=2247486245&idx=1&sn=619f78
 
 行为识别论文笔记之多纤维网络
 
+https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247500351&idx=2&sn=aaaecdca274c6322fb06c7ee0e2696a2
+
+157页基于相似度的动作捕捉数据处理教程
+
 # 深度目标跟踪
 
 https://zhuanlan.zhihu.com/p/22334661
@@ -447,30 +451,4 @@ https://mp.weixin.qq.com/s/48eIhnBdYzgEiV_wESHsJA
 https://mp.weixin.qq.com/s/G_2tuZlaxX5w-2c1DO8FwQ
 
 利用边缘监督信息加速Mask R-CNN实例分割训练
-
-# LSM
-
-liquid state machine (LSM)
-
-http://www.docin.com/p-390935406.html
-
-基于液体状态机的脑运动神经系统的建模研究
-
-# DNC
-
-https://zhuanlan.zhihu.com/p/27773709
-
-浅析至强RNN可微分神经计算机(DNC)
-
-https://zhuanlan.zhihu.com/p/27964341
-
-浅析至强RNN可微分神经计算机(DNC)-2
-
-https://zhuanlan.zhihu.com/p/28209628
-
-DNC-3滚动分类的模式识别
-
-https://zhuanlan.zhihu.com/p/28433712
-
-DNC4广义线性回归
 

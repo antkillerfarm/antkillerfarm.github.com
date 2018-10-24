@@ -252,6 +252,10 @@ https://mp.weixin.qq.com/s/q8iljb3GPgmdJUeF9kMvlA
 
 AI进军新药发现研究？这99页slides了解一下
 
+https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247500351&idx=1&sn=f7280dd8e62a535cd3b8e82fd20e2eda
+
+128页多媒体计算在医学领域的重要性教程
+
 ## 面试
 
 https://mp.weixin.qq.com/s/U5hlr69m_9Znwjkj3Yl4Hg

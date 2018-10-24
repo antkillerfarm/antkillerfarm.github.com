@@ -308,4 +308,8 @@ https://mp.weixin.qq.com/s/DpqI4AfjiygCh8dqq_Kgmw
 
 https://mp.weixin.qq.com/s/XcqVtFBY5rIn0FgPEx0eTg
 
-工业领域中的 AI：BHGE 通过使用 TensorFlow 概率编程工具包开发的基于物理的概率深度学习
+工业领域中的AI：BHGE通过使用TensorFlow概率编程工具包开发的基于物理的概率深度学习
+
+https://mp.weixin.qq.com/s?__biz=MzU1OTMyNDcxMQ==&mid=2247484969&idx=1&sn=29d04fbb56a4464b08407eb87d26325e
+
+基于源代码为Raspberry Pi设备构建TensorFlow
