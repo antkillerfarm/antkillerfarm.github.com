@@ -237,3 +237,12 @@ https://mp.weixin.qq.com/s/A-PKyZcXwOz-2lL-hBmjsA
 https://mp.weixin.qq.com/s/ROnEtP4ferK-rB8DAJNRNg
 
 短文本分类，腾讯AI Lab联合港中文提出主题记忆网络 
+
+https://mp.weixin.qq.com/s/gZ4N18jvM_0oUvOaKBBxfQ
+
+你已经是个成熟的表格了，该学会自然语言处理了
+
+https://mp.weixin.qq.com/s/EIlDzd-Fnzo_iCS3SJw3JQ
+
+基于神经网络的文本生成前沿综述
+

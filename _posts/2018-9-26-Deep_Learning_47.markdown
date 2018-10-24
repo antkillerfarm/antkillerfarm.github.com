@@ -384,3 +384,7 @@ https://mp.weixin.qq.com/s/SZMYj4rMneR3OWST007H-Q
 
 解读谷歌最强NLP模型BERT：模型、数据和训练
 
+https://mp.weixin.qq.com/s/I315hYPrxV0YYryqsUysXw
+
+NLP的游戏规则从此改写？从word2vec, ELMo到BERT
+

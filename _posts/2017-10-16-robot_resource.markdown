@@ -421,3 +421,7 @@ Lattice Planner规划算法
 https://mp.weixin.qq.com/s/5TyL9bkKe-XMKLl-QbtaZg
 
 西电智能学子斩获ECCV2018无人机挑战赛冠军—算法分享
+
+https://mp.weixin.qq.com/s/1SxwYqcxB8zIavr11cIGWg
+
+机器学习及深度学习在自动驾驶中的应用

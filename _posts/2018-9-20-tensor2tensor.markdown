@@ -240,6 +240,14 @@ https://mp.weixin.qq.com/s/SkAR1RwtMMpQPBldRTr3Ag
 
 OpenCV金字塔图像分辨率重建与融合
 
+https://mp.weixin.qq.com/s/RU2jskHewLvMigwCHIWyGw
+
+多目标追踪器：用OpenCV实现多目标追踪
+
+https://mp.weixin.qq.com/s/TWzUTHXOzlLre4egBIkM_w
+
+OpenCV vs Dlib人脸检测比较分析
+
 # TensorFlow
 
 https://mp.weixin.qq.com/s/kYOwUWlTP4T0IYKDWDbCsg

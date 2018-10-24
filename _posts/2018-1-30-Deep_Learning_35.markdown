@@ -298,6 +298,10 @@ https://mp.weixin.qq.com/s/Nd5XLnncXRawu4V8TOzHxg
 
 视觉物体跟踪新进展：让跟踪器读懂目标语义信息
 
+https://zhuanlan.zhihu.com/p/46669238
+
+VOT2018：SiamNet大崛起
+
 ## FlowNet
 
 论文：

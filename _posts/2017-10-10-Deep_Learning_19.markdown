@@ -104,6 +104,10 @@ https://www.zhihu.com/question/56688854
 
 卷积神经网络里输入图像大小何时是固定，何时是任意？
 
+https://mp.weixin.qq.com/s/AXfyMeFnCENIMc2qS8hNtA
+
+10分钟看懂全卷积神经网络（FCN）：语义分割深度模型先驱
+
 # SegNet
 
 SegNet是Vijay Badrinarayanan于2015年提出的。
