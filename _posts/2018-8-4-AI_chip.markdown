@@ -94,6 +94,10 @@ https://mp.weixin.qq.com/s/IaCWZXQI8mYLJQXwDoNQcQ
 
 自动驾驶芯片：GPU的现在和ASIC的未来
 
+https://mp.weixin.qq.com/s/KjQ5BTGd92Y0Mqzk1A5JYg
+
+老兵戴辉讲述海思视频监控芯片从0到1的血泪史！如何一步步成为行业霸主的
+
 # 3D芯片
 
 随着半导体工艺日益接近物理极限，2D芯片已经不能满足进化的需要，芯片的设计也迈向了立体发展的阶段。目前主流的3D芯片技术包括FinFET（1999）与FD-SOI（2000），他们都是胡正明团队的作品。

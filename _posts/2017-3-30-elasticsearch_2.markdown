@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Elasticsearch（二）, scrapy, Flume & Kafka, Flutter, 数据结构
+title:  Elasticsearch（二）, scrapy, Flume & Kafka, Flutter, 数据结构 & 普通CS算法
 category: AI 
 ---
 
@@ -311,7 +311,7 @@ https://mp.weixin.qq.com/s/l6xvmnLE6HfRtw6upo6yUA
 
 高效开发与高性能并存的UI框架——携程Flutter实践
 
-# 数据结构
+# 数据结构 & 普通CS算法
 
 https://mp.weixin.qq.com/s/52JFdyaLwZq7nWiZq6z6qA
 
@@ -348,3 +348,7 @@ https://mp.weixin.qq.com/s/QAAfjSeZtfd3PSN3wAP8RQ
 http://blog.csdn.net/u013709270/article/details/53470428
 
 跳跃表的原理及实现
+
+https://mp.weixin.qq.com/s/t7Q0slX3q8Qlhg8F8pXrZQ
+
+如何找到字符串中的最长回文子串？

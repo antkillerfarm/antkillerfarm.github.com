@@ -110,6 +110,10 @@ https://zhuanlan.zhihu.com/p/45695815
 
 华为新论文：将行人重识别准确率从88变到0
 
+https://mp.weixin.qq.com/s/Um6U-hjZ8I-awDinHXaQLg
+
+三维对抗样本的生成方法MeshAdv，成功欺骗真实场景中的分类器和目标检测器
+
 ## 行业
 
 李开复的这篇文章不可不读：

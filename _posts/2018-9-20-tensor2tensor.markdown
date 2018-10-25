@@ -248,6 +248,14 @@ https://mp.weixin.qq.com/s/TWzUTHXOzlLre4egBIkM_w
 
 OpenCV vs Dlib人脸检测比较分析
 
+https://mp.weixin.qq.com/s/hNrhpghzR0negxFggu0PCQ
+
+OpenCV中KLT光流跟踪原理详解与代码演示
+
+https://mp.weixin.qq.com/s/14p7nDxAknWLVl95Qs2Bjw
+
+从人脸检测到语义分割，OpenCV预训练模型库
+
 # TensorFlow
 
 https://mp.weixin.qq.com/s/kYOwUWlTP4T0IYKDWDbCsg

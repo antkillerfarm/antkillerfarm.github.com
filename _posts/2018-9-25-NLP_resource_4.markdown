@@ -246,3 +246,6 @@ https://mp.weixin.qq.com/s/EIlDzd-Fnzo_iCS3SJw3JQ
 
 基于神经网络的文本生成前沿综述
 
+https://mp.weixin.qq.com/s/Srpv04X2vaIr2da4xbEMdg
+
+从对话生成和文本风格转化看文本生成技术

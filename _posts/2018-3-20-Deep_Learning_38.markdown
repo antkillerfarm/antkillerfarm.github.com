@@ -284,6 +284,10 @@ https://mp.weixin.qq.com/s/6HVSh7_9Akmf6OE8PGNy6Q
 
 怎样让AI完成人类搞不定的任务？OpenAI提出迭代扩增法给AI设目标
 
+https://mp.weixin.qq.com/s/JpZimrHALjuc-H9WF8sPZg
+
+智能体只想看电视？谷歌新型好奇心方法让智能体离开电视继续探索
+
 # 问答系统
 
 GA-Reader
