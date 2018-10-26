@@ -172,6 +172,10 @@ https://mp.weixin.qq.com/s/CkLgTO9w7PctjwsE6VQ8nA
 
 南科大翁文康：“量子霸权”的基础概念和可行方案
 
+https://mp.weixin.qq.com/s/egpZl9witWLiP17KSjq2jg
+
+姚期智院士亲自讲授，一文读懂量子计算
+
 ## AI医疗
 
 https://github.com/albarqouni/Deep-Learning-for-Medical-Applications

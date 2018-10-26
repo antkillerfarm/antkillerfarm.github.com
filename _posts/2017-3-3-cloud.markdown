@@ -14,12 +14,6 @@ category: AI
 
 >作者：Eric Brewer是University of California, Berkeley的计算机科学教授，在Google担任基础设施方面的VP。他的研究兴趣包括云计算、可伸缩的服务器、传感器网络，还有适合发展中地区应用的技术。他还帮助建立了美国联邦政府的门户网站USA.gov。Brewer从MIT获得电子工程和计算机科学的博士学位。他是National Academy of Engineering的院士。
 
-参考：
-
-https://mp.weixin.qq.com/s/rmOlQwAiXUbmZ130Ekh1Mg
-
-CAP理论—最通俗易懂的解释
-
 ## GFS
 
 《The Google File System》（2003）

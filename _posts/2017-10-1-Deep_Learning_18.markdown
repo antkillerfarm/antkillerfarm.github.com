@@ -104,6 +104,10 @@ https://mp.weixin.qq.com/s/r2mfq0UkljKce8_dYrCNEw
 
 YOLOv2原理与实现
 
+https://zhuanlan.zhihu.com/p/47575929
+
+YOLOv2/YOLO9000深入理解
+
 # YOLOv3
 
 https://zhuanlan.zhihu.com/p/34945787

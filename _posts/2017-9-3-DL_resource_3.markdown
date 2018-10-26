@@ -218,6 +218,10 @@ http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-t
 
 神经网络的分布式训练
 
+https://mp.weixin.qq.com/s/nvuflLfOolidDDXJVe2DZA
+
+美团深度学习系统的工程实践
+
 https://mp.weixin.qq.com/s/IE6blClvhYlq3-QAGHo5ww
 
 TensorFlow分布式计算机制解读：以数据并行为重

@@ -316,6 +316,10 @@ https://zhuanlan.zhihu.com/p/47393033
 
 基于知识的新闻推荐
 
+https://mp.weixin.qq.com/s/jHKgKnl-SbZltl76Ln_Fgg
+
+AutoML详解及其在推荐系统中的应用、优缺点
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

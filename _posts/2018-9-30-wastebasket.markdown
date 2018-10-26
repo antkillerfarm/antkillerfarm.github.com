@@ -214,6 +214,10 @@ https://mp.weixin.qq.com/s/nbA86PutvWWcA7t89XWhfA
 
 三体问题
 
+https://mp.weixin.qq.com/s/EJj7gonRv2607QnYTZWKqQ
+
+笛卡尔！！你……你……你这样泡妞真的好吗？！
+
 ## LSM (Log Structured Merge)
 
 十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。
@@ -329,6 +333,10 @@ https://mp.weixin.qq.com/s/Uowbo19wNkjT-9eAIjS8jQ
 https://mp.weixin.qq.com/s/Ys8lnwLyvToumnS2NhAAHg
 
 如何洞悉城市人群移动规律？DataV海量轨迹可视化实践解析
+
+https://mp.weixin.qq.com/s/ndzLKJC2Tvg2gKrr6jUNTw
+
+原来可视化能做得这么酷炫！Uber开源地理空间工具包kepler.gl
 
 ## 贝叶斯线性回归
 

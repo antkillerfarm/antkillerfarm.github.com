@@ -431,7 +431,11 @@ shift：解决shell编程中的入参问题
 
 https://mp.weixin.qq.com/s/T_XwLS6CIrkXbgXJVIo2Jw
 
-一文了解十大 Linux 命令行工具！
+一文了解十大Linux命令行工具！
+
+https://mp.weixin.qq.com/s/euTQJy0HFVQotAY-KI2OzA
+
+10个实战及面试常用Shell脚本编写
 
 # SWIG
 

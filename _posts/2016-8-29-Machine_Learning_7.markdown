@@ -217,6 +217,10 @@ https://mp.weixin.qq.com/s/nRaM87Wao4XdHwltV1nh-A
 
 思考VC维与PAC：如何理解深度神经网络中的泛化理论？
 
+https://mp.weixin.qq.com/s/ty-V1JOzx24lLB8C0zHpaw
+
+机器学习碎碎念：霍夫丁不等式
+
 ## $$\mathcal{H}$$为有限集的情况
 
 根据之前的讨论，我们做如下定义：
