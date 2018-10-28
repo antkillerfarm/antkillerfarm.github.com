@@ -286,6 +286,10 @@ https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651749037&idx=1&sn=4a4486
 
 美团点评基于Flink的实时数仓建设实践
 
+https://mp.weixin.qq.com/s/Jkd-FykUEKZZeVizRoTeJQ
+
+一文读懂Apache Flink技术
+
 # Pulsar
 
 https://mp.weixin.qq.com/s/O8pj4pChyw8PK-G_4A3DWg

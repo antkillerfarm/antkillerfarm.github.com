@@ -92,6 +92,10 @@ https://mp.weixin.qq.com/s/DUSa3SW1AgvJ0szL030NHQ
 
 一个AI玩57个游戏，DeepMind离真正“万能”的AGI不远了！
 
+https://mp.weixin.qq.com/s/P81I5vl99mV-4StNHmd_6A
+
+作为多目标优化的多任务学习：寻找帕累托最优解
+
 # 语音识别
 
 ## end-to-end

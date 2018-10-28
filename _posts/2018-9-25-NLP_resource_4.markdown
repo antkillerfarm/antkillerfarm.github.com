@@ -249,3 +249,8 @@ https://mp.weixin.qq.com/s/EIlDzd-Fnzo_iCS3SJw3JQ
 https://mp.weixin.qq.com/s/Srpv04X2vaIr2da4xbEMdg
 
 从对话生成和文本风格转化看文本生成技术
+
+https://mp.weixin.qq.com/s?__biz=MzA5NzY0MDg1NA==&mid=2706956202&idx=1&sn=b82ff09ce3d5230a348a727cf03202ba
+
+中文文本分类：你需要了解的10项关键内容
+

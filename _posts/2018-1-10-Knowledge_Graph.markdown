@@ -364,35 +364,11 @@ https://zhuanlan.zhihu.com/p/46235742
 
 基于强化学习的知识图谱问答
 
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750713&idx=3&sn=cb51e094fe07e9ac25273e99cd7b8de3
+
+ISWC 2018概览：知识图谱与机器学习
+
 # ML参考资源
-
-https://mp.weixin.qq.com/s/NbEki2ByMmA93DyoQF1yjA
-
-运满满如何将机器学习应用于车货匹配和公路干线价格预测？
-
-https://mp.weixin.qq.com/s/R7Qud_x6DGqbHAOl7OMruQ
-
-一文带你入门算法分发！
-
-https://mp.weixin.qq.com/s/s2XpGne0sAqnuN-u6g5k1A
-
-资金流因子全面测试兼正交化方法详解
-
-https://mp.weixin.qq.com/s/oblwg01BUIJjVhBeHa9HQQ
-
-程序员分析了50万条拼多多商品数据，告诉你到底是消费升级还是降级！
-
-https://mp.weixin.qq.com/s/4HVkEnk6_hONWJYdi8L53g
-
-闲聊结构化预测（structured learning）
-
-https://mp.weixin.qq.com/s/GP_t_fhklpVNhC6J6i0YbA
-
-再聊聊自然语言处理中的结构化预测问题
-
-https://mp.weixin.qq.com/s/_AHqFqf1zFNtBifayiTfXQ
-
-你应具备这3大统计学常识&大数据思维
 
 https://mp.weixin.qq.com/s/Z1ixoRmUDl17CF4k7JS4zg
 

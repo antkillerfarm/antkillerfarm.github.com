@@ -366,29 +366,3 @@ https://mp.weixin.qq.com/s/9fFjVSiMg-LwddXfNJuKuw
 
 DeepMind开源图网络库，一种结合图和神经网络的新方法
 
-# GAN进阶（续）
-
-https://mp.weixin.qq.com/s/c84LMFnIhoDeolc1B4MIVA
-
-AI以假乱真怎么办？TequilaGAN教你轻松辨真伪
-
-https://mp.weixin.qq.com/s/fgL6FtjeF-EgG5jjAGDR7A
-
-GANimation让图片秒变GIF表情包，秒杀StarGAN
-
-https://mp.weixin.qq.com/s/NPUJ89nddF1WHfFv2nn-Hg
-
-GANs有嘻哈：一次学完10个GANs明星模型
-
-https://mp.weixin.qq.com/s/yShYrMFKox30jXajXXQPGw
-
-如何让GAN生成更高质量图像？斯坦福大学给你答案
-
-https://mp.weixin.qq.com/s/qiLFQowjH67XECXBlppUDg
-
-对抗深度学习:鱼(模型准确性)与熊掌(模型鲁棒性)能否兼得？
-
-https://mp.weixin.qq.com/s/1SpHGtjkSfDEFCZuudCm0Q
-
-基于GAN和VAE的跨模态图像生成
-

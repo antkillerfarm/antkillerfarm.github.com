@@ -266,6 +266,10 @@ https://mp.weixin.qq.com/s/xbPJD0uoRB-T1x09AUYdzg
 
 基于Python的自动特征工程——教你如何自动创建机器学习特征
 
+https://mp.weixin.qq.com/s?__biz=MjM5MTQzNzU2NA==&mid=2651664000&idx=1&sn=ae6dda80df6d6278ae33b7bf7fbadcd2
+
+深度特征合成：自动化特征工程的运作机制
+
 # 模仿学习
 
 https://zhuanlan.zhihu.com/p/27935902

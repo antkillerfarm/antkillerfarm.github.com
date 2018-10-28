@@ -136,6 +136,10 @@ https://mp.weixin.qq.com/s/WkDTGxWtgUMjpIoO4LkLRg
 
 腾讯AI Lab开源800万中文词的NLP数据集
 
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750713&idx=5&sn=678eef1122d35c048a5fca8f22fa12c9
+
+CIFAR-10+ImageNet=？CINIC-10！
+
 # SLAM
 
 ## blog

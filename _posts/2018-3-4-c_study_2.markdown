@@ -319,3 +319,18 @@ https://mp.weixin.qq.com/s/toh59s2-UlqiZfkE5ThxZw
 https://mp.weixin.qq.com/s/8y7IIQWxXx3bCD8cK8Z3XQ
 
 这17个骚操作你都Ok吗
+
+# DL参考资源+
+
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750713&idx=1&sn=c24923e28907f90754967da424891831
+
+Diss所有深度生成模型，DeepMind说它们真的不知道到底不知道什么
+
+https://mp.weixin.qq.com/s/dpJRequ5eilPKBT-wqA6YQ
+
+厉害了！AI成功伪装人类贡献GitHub修复补丁
+
+https://mp.weixin.qq.com/s/fqHropcxoP0AfQu2m1-wYQ
+
+王克欣 : 详解记忆增强神经网络
+

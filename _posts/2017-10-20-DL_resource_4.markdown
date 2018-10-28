@@ -120,6 +120,10 @@ https://mp.weixin.qq.com/s/3g6PB5shkY8WM4aDMH-RjA
 
 Kaggle竞赛“找盐”冠军：价值5万美元的第一名方案出炉
 
+https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652029536&idx=5&sn=96977b00be7f1a8d1845ad5e7d81b3d0
+
+用神经网络识别歌曲流派
+
 ## 工具
 
 https://mp.weixin.qq.com/s/TT4whft1Tj1pCEPbnMH1cA

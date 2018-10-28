@@ -90,6 +90,10 @@ https://mp.weixin.qq.com/s/7WnlNvxk0KKVPYqvSi7fKA
 
 40页 PPT，BMM夏令营《强化学习简明教程》
 
+https://mp.weixin.qq.com/s/VelM7ndXfevXKfPno-T9jQ
+
+微软亚研130PPT教程：强化学习简介
+
 ## 论文
 
 《A Brief Survey of Deep Reinforcement Learning》
