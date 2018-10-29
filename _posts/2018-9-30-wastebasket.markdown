@@ -400,3 +400,28 @@ Gephi是一个针对图和网络的可视化工具。
 
 https://gephi.org/
 
+# 莫比乌斯反演
+
+http://blog.csdn.net/acdreamers/article/details/8542292
+
+莫比乌斯反演
+
+http://blog.csdn.net/litble/article/details/72804050
+
+初涉莫比乌斯反演
+
+http://blog.csdn.net/u013632138/article/details/52250567
+
+莫比乌斯反演讲解
+
+http://blog.csdn.net/Ripped/article/details/70263965
+
+莫比乌斯反演详解
+
+http://blog.csdn.net/hzj1054689699/article/details/51659994
+
+莫比乌斯反演入门
+
+http://blog.csdn.net/outer_form/article/details/50588307
+
+莫比乌斯反演定理证明

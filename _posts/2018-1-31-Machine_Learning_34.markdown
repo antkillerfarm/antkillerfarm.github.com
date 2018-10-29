@@ -228,6 +228,14 @@ https://mp.weixin.qq.com/s?__biz=MzIxODM4MjA5MA==&mid=2247487342&idx=3&sn=1981a6
 
 异常检测的阈值，你怎么选？给你整理好了...
 
+https://mp.weixin.qq.com/s/ReQpT9KT6_tE8vXM-F_Ejw
+
+从“马蜂窝事件”看，投资人如何避免数据尽职调查背后的交易风险？新时代数据造假特征及应对方法
+
+https://www.zhihu.com/question/30508773
+
+反欺诈(Fraud Detection)中所用到的机器学习模型有哪些？
+
 # 自适应滤波器
 
 《自适应滤波器原理（Adaptive Filter Theory）》，Simon Haykin著。
@@ -292,28 +300,3 @@ http://www.doc88.com/p-7082821463697.html
 
 改进的热传导和物质扩散混合推荐算法
 
-# 莫比乌斯反演
-
-http://blog.csdn.net/acdreamers/article/details/8542292
-
-莫比乌斯反演
-
-http://blog.csdn.net/litble/article/details/72804050
-
-初涉莫比乌斯反演
-
-http://blog.csdn.net/u013632138/article/details/52250567
-
-莫比乌斯反演讲解
-
-http://blog.csdn.net/Ripped/article/details/70263965
-
-莫比乌斯反演详解
-
-http://blog.csdn.net/hzj1054689699/article/details/51659994
-
-莫比乌斯反演入门
-
-http://blog.csdn.net/outer_form/article/details/50588307
-
-莫比乌斯反演定理证明

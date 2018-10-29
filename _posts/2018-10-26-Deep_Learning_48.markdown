@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十八）——语义分割进阶, GAN进阶（二）, 问答系统
+title:  深度学习（四十八）——语义分割进阶, GAN进阶（2）, 问答系统
 category: DL 
 ---
 

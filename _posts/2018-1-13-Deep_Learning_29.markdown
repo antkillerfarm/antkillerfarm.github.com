@@ -278,6 +278,10 @@ https://mp.weixin.qq.com/s/2DaBsFnRzqkf9PgvY3tWqw
 
 谷歌神经网络人声分离技术再突破！词错率低至23.4%
 
+https://mp.weixin.qq.com/s/V1W_M-lIJKdyGtuQyBbUPA
+
+词错率2.97%：云从科技刷新语音识别世界纪录
+
 # CTC
 
 ## 概述

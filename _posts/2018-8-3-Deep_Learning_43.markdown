@@ -272,6 +272,10 @@ https://mp.weixin.qq.com/s/h6sktVd1ywCCncUb9iwyFQ
 
 中科院自动化所：高清真实图像生成领域及GAN研究在人脸识别领域的进展
 
+https://mp.weixin.qq.com/s/9LvP3AH1PJhjrokTGg3blA
+
+心中无码：这是一个能自动脑补漫画空缺部分的AI项目
+
 # Graph NN
 
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw

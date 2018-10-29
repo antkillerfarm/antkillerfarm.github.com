@@ -110,7 +110,11 @@ https://mp.weixin.qq.com/s/K7JNqjuUfotTODtJU1W-YQ
 
 https://mp.weixin.qq.com/s/DZmAWpptAVIqA_7L24ldHg
 
-行人重识别 PCB-RPP，SGGNN
+行人重识别PCB-RPP，SGGNN
+
+https://mp.weixin.qq.com/s/e_n-BsPkrPd4MsyvlMVeYg
+
+行人重识别告别辅助姿势信息，商汤、中科大提出姿势无关的特征提取GAN
 
 # 人脸识别进阶
 

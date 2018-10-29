@@ -300,3 +300,11 @@ https://mp.weixin.qq.com/s/S1fVrSfAM_UJh06Q43s8vA
 
 网络芯片架构的新改变
 
+https://mp.weixin.qq.com/s/3d7CEQ0iQzwnJ_tE7eB9Yg
+
+边缘计算芯片格局分析
+
+https://zhuanlan.zhihu.com/p/47904879
+
+AI芯片在5G中的机会
+

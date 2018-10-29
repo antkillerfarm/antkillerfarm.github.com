@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十九）——GAN进阶（一）
+title:  深度学习（三十九）——GAN进阶（1）
 category: DL 
 ---
 
