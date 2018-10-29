@@ -152,6 +152,10 @@ https://mp.weixin.qq.com/s/SewmtFCVpsthQ4dWUGmEsA
 
 Softer-NMS:CMU&旷视最新论文提出定位更加精确的目标检测算法
 
+https://mp.weixin.qq.com/s/ro0lG3uMUPYNZA9rM3I_YQ
+
+目标检测算法中检测框合并策略技术综述
+
 ## ground truth
 
 在有监督学习中，数据是有标注的，以(x,t)的形式出现，其中x是输入数据，t是标注。正确的t标注是ground truth，错误的标记则不是。（也有人将所有标注数据都叫做ground truth）

@@ -282,6 +282,10 @@ https://mp.weixin.qq.com/s/V1W_M-lIJKdyGtuQyBbUPA
 
 词错率2.97%：云从科技刷新语音识别世界纪录
 
+https://mp.weixin.qq.com/s/eK8UxqMsUhDzJ-Ev7azS9w
+
+田正坤：Seq2Seq模型在语音识别中的应用
+
 # CTC
 
 ## 概述
