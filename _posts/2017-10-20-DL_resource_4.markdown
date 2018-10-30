@@ -366,6 +366,10 @@ https://mp.weixin.qq.com/s/jKIo1SnrbLyPpFhgX--7mg
 
 谷歌推出“流体标注”AI辅助工具，图像标注速度提升3倍！
 
+https://mp.weixin.qq.com/s/30cxIX9aKIpELC8H4_k8Gg
+
+比TFLite快2倍！FB开源移动深度学习优化库QNNPACK
+
 # 光神经网络
 
 https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ
@@ -383,4 +387,3 @@ Science重磅！用光速实现深度学习，跟GPU说再见
 https://mp.weixin.qq.com/s/ENYX87SMlgv30x08iYFQIw
 
 几乎零能耗零延迟！UCLA科学家发明光衍射神经网络，登上Science
-

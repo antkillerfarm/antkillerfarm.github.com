@@ -118,10 +118,6 @@ https://mp.weixin.qq.com/s/7E8o1TnvmAvZgB7_AWCunQ
 
 2018值得尝试的无参数全局优化新算法
 
-https://mp.weixin.qq.com/s/hK6BJGAPyg_RqqilCcf2NA
-
-全局自动优化：C++机器学习库dlib引入自动调参算法
-
 https://mp.weixin.qq.com/s/T-v9OTcJa5OQ71QmYrFtbg
 
 斯坦福大学提出SGD动量自调节器YellowFin

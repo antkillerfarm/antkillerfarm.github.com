@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  音频常识, 区块链, 数据库（二）
+title:  音频常识, 区块链
 category: technology 
 ---
 
@@ -258,70 +258,3 @@ https://mp.weixin.qq.com/s/yyoUoIUBUPV5zkeE88P7Iw
 
 至于比特大陆的AI芯片，似乎对标的是NVIDIA的云服务领域。不是我小看比特大陆，AI芯片这东西光有钱，没有时间积累，是做不好的。
 
-# 数据库
-
-https://mp.weixin.qq.com/s/CwUW-Ntb4qphrqha24P-Og
-
-漫谈推荐系统及数据库技术（二）——分布式数据库技术
-
-https://mp.weixin.qq.com/s/1pXMCcO6NR1SMBzsyES-cw
-
-分布式数据库又支持关系数据模型了？
-
-https://mp.weixin.qq.com/s/yQSMSLBYg4iauu8yeUfvjw
-
-深度解读！时序数据库HiTSDB：分布式流式聚合引擎
-
-https://mp.weixin.qq.com/s/WQh-Ro03e9F1Yrhk0tTZ0A
-
-图解SQL的JOIN
-
-https://mp.weixin.qq.com/s/NbV76hDZXKzvark4JEoyMA
-
-我是如何用2个Unix命令给SQL提速的
-
-https://mp.weixin.qq.com/s/gQAA2-YuvTHrL2IP8Bco6w
-
-缓存与数据库的数据一致性方案介绍
-
-https://mp.weixin.qq.com/s/m76PFxbcY6_-XyeU7uu4Jg
-
-数据库的最简单实现
-
-https://mp.weixin.qq.com/s/rZuGW9Fe0TA3dNEY7dh_Jg
-
-TimescaleDB比拼InfluxDB：如何选择合适的时序数据库？
-
-https://mp.weixin.qq.com/s/pZnAcjFlBM2I4Hyctd6MHw
-
-图数据库真的比关系数据库更先进吗？
-
-https://mp.weixin.qq.com/s/O3A5gVewRQ11Z8RdPcs-9w
-
-一文看懂Pinterest如何构建时间序列数据库系统Goku
-
-# DL参考资源
-
-https://mp.weixin.qq.com/s/TUhr31EleePcHHNNUAWQ4A
-
-Google Brain与牛津大学主持最新《计算机视觉前沿》报告
-
-https://mp.weixin.qq.com/s/DCoYcEpkH3t7WSpBBH_rLA
-
-诺基亚首席科学家范力欣：用模糊逻辑实现可解释的深度神经网络
-
-https://mp.weixin.qq.com/s/ZWUPaSeL4vGfoEOxI57umw
-
-为卷积模型执行加入循环和远程反馈，更完整地拟合生物视觉
-
-https://mp.weixin.qq.com/s/DtxjX9RfRgehxLsJ7MFoNw
-
-谷歌大脑开源TensorFuzz，自动Debug神经网络！
-
-https://mp.weixin.qq.com/s/5vDSrWeUvlBuZgmX0R9pBQ
-
-斯坦福“黑盒学习”研究：使用神经变分推理的无向图模型，可替代“采样”
-
-https://mp.weixin.qq.com/s/t0lGL66YIJwIvI4emNfN7Q
-
-UC Berkeley新研究：通过深度学习建模注意点采样阵列

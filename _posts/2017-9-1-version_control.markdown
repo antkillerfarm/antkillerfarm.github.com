@@ -227,49 +227,17 @@ http://www.cnblogs.com/giszhang/archive/2008/10/09/1307509.html
 
 VC2005 + SQLite 3.6.3 编译、测试开发手记
 
-## 参考
+## OLTP与OLAP
 
-https://blog.csdn.net/zhengzhb/article/details/8590390
+数据处理大致可以分成两大类：联机事务处理OLTP（on-line transaction processing）、联机分析处理OLAP（On-Line Analytical Processing）。OLTP是传统的关系型数据库的主要应用，主要是基本的、日常的事务处理，例如银行交易。OLAP是数据仓库系统的主要应用，支持复杂的分析操作，侧重决策支持，并且提供直观易懂的查询结果。
 
-SQL查找删除重复行
+参考：
 
-https://mp.weixin.qq.com/s/09BlPee0-kP-At2aDyDbMw
+https://blog.csdn.net/zhangzheng0413/article/details/8271322
 
-中国数据库40年历史：隐秘的江湖与恩怨
+OLAP、OLTP的介绍和比较
 
-https://mp.weixin.qq.com/s/4lZ7My6cs4-VJQ1qGhQxZg
+https://mp.weixin.qq.com/s/80iF3secK_K7uSuuYfUDEw
 
-AliSQL X-Cluste：基于X-Paxos的高性能强一致MySQL数据库
-
-https://mp.weixin.qq.com/s/tPzBlQGxGq1WEnXz5ggpxg
-
-sysbench在美团点评中的应用
-
-https://mp.weixin.qq.com/s/lJfIkLQaZnN4e9DxX163SA
-
-一款可能解放DBA的分布式数据库RadonDB的体验之旅
-
-http://mp.weixin.qq.com/s/idz6b2rls97W4Iw6J-ubng
-
-美团点评SQL优化工具SQLAdvisor开源
-
-https://mp.weixin.qq.com/s/jCFjhkwQpj1_P-seQurPqQ
-
-SQL解析在美团点评中的应用
-
-https://mp.weixin.qq.com/s/RME5b3plT97nYfUaCl9ePw
-
-关于缓存和数据库强一致的可行方案
-
-https://mp.weixin.qq.com/s/Al0yvkv0FUPjEBtcxS6Fmg
-
-传统数据仓库和云数据仓库的区别
-
-https://mp.weixin.qq.com/s/GXGSDxukbIAM5W-YSX0pDg
-
-美团点评数据库高可用架构的演进与设想
-
-https://mp.weixin.qq.com/s/crluKkEdvfZlHyF_gQm1ZA
-
-漫谈推荐系统及数据库技术
+分布式数据库TiDB是如何结合OLTP和OLAP的？
 

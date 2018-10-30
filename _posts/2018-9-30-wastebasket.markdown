@@ -50,10 +50,6 @@ http://blog.csdn.net/luo123n/article/details/48574123
 
 PMI（Pointwise Mutual Information）
 
-http://www.cnblogs.com/6DAN_HUST/archive/2010/11/11/1874681.html
-
-运筹学——线性规划及单纯形法求解
-
 https://mp.weixin.qq.com/s/7usiElPtYAt1DCBIv5BZ2Q
 
 多项式插值算法与回归算法
@@ -271,6 +267,20 @@ http://blog.csdn.net/deepfuture/article/details/5065284
 http://www.cnblogs.com/Firefly727/articles/1856328.html
 
 元胞自动机
+
+## 线性规划
+
+http://www.cnblogs.com/6DAN_HUST/archive/2010/11/11/1874681.html
+
+运筹学——线性规划及单纯形法求解
+
+https://mp.weixin.qq.com/s/2qOjE0B6x9xuyoBw94NqQA
+
+线性规划基础
+
+https://mp.weixin.qq.com/s/zV6zi79c1Q2dfCaywuK6Pw
+
+内点法六十年再回首
 
 ## 可视化
 

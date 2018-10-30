@@ -391,4 +391,3 @@ NLP的游戏规则从此改写？从word2vec, ELMo到BERT
 https://mp.weixin.qq.com/s/8uZ2SJtzZhzQhoPY7XO9uw
 
 详细解读谷歌新模型BERT为什么嗨翻AI圈
-

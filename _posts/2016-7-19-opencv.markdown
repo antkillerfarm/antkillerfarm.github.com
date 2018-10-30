@@ -330,14 +330,6 @@ https://mp.weixin.qq.com/s/mTcAkYBNY0uqLI9Q_5Iu1Q
 
 OpenCV中神经网络介绍与使用
 
-https://mp.weixin.qq.com/s/bY5UIKPPvDE1XBC1LyoqPg
-
-教你快速使用OpenCV/Python/dlib进行眨眼检测识别！
-
-https://mp.weixin.qq.com/s/cgxTJ6X5ya6PDIfeJ9_z6Q
-
-基于OpenCV与Dlib的行人计数开源实现
-
 https://mp.weixin.qq.com/s/kWaD-UQdiDd1SU9Mo43ihg
 
 OpenCV从零基础---检测及分割图像的目标区域
@@ -473,10 +465,6 @@ OpenCV十字激光中心与端点识别
 https://mp.weixin.qq.com/s/N4mRrQ4180qM2tuq5smK8w
 
 如何识别出轮廓准确的长和宽
-
-https://mp.weixin.qq.com/s/QkjMY-qEqn2cGfYbFEmv5w
-
-计算机视觉开源工具中的瑞士军刀—Dlib最新高级特性教程
 
 https://mp.weixin.qq.com/s/uDg0ho3jHsomfSUDTXTe7Q
 

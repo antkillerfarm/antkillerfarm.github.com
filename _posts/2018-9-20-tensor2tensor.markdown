@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Tensor2Tensor, NN中间语言, OpenCV（二）, TensorFlow（四）
+title:  Tensor2Tensor, NN中间语言, OpenCV（二）, Dlib, TensorFlow（四）
 category: AI 
 ---
 
@@ -244,10 +244,6 @@ https://mp.weixin.qq.com/s/RU2jskHewLvMigwCHIWyGw
 
 多目标追踪器：用OpenCV实现多目标追踪
 
-https://mp.weixin.qq.com/s/TWzUTHXOzlLre4egBIkM_w
-
-OpenCV vs Dlib人脸检测比较分析
-
 https://mp.weixin.qq.com/s/hNrhpghzR0negxFggu0PCQ
 
 OpenCV中KLT光流跟踪原理详解与代码演示
@@ -255,6 +251,48 @@ OpenCV中KLT光流跟踪原理详解与代码演示
 https://mp.weixin.qq.com/s/14p7nDxAknWLVl95Qs2Bjw
 
 从人脸检测到语义分割，OpenCV预训练模型库
+
+https://mp.weixin.qq.com/s/MRRljFBH1T1STvTm0CT4Qw
+
+OpenCV深度神经网络实现人体姿态评估
+
+# Dlib
+
+Dlib是一个C++写的机器学习库。
+
+官网：
+
+http://dlib.net/
+
+代码：
+
+https://github.com/davisking/dlib
+
+参考：
+
+https://mp.weixin.qq.com/s/QkjMY-qEqn2cGfYbFEmv5w
+
+计算机视觉开源工具中的瑞士军刀—Dlib最新高级特性教程
+
+https://mp.weixin.qq.com/s/TWzUTHXOzlLre4egBIkM_w
+
+OpenCV vs Dlib人脸检测比较分析
+
+https://mp.weixin.qq.com/s/bY5UIKPPvDE1XBC1LyoqPg
+
+教你快速使用OpenCV/Python/dlib进行眨眼检测识别！
+
+https://mp.weixin.qq.com/s/cgxTJ6X5ya6PDIfeJ9_z6Q
+
+基于OpenCV与Dlib的行人计数开源实现
+
+https://mp.weixin.qq.com/s/JOd9_80pZKzz77Ay5kvUeQ
+
+PyImageSearch新出教程：Dlib多目标跟踪
+
+https://mp.weixin.qq.com/s/hK6BJGAPyg_RqqilCcf2NA
+
+全局自动优化：C++机器学习库dlib引入自动调参算法
 
 # TensorFlow
 
