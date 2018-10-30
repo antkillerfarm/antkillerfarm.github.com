@@ -10,6 +10,10 @@ https://mp.weixin.qq.com/s/4eyxX_EfrImGXnYmTRUFHw
 
 自然语言处理(NLP)入门指南
 
+https://mp.weixin.qq.com/s/hHAYh52cw8u104OeqJNBNg
+
+一文看懂NLP神经网络发展历史中最重要的8个里程碑！
+
 https://mp.weixin.qq.com/s/PebcTkIanjwh915IVn-oDA
 
 八大步骤解决90%的NLP问题
