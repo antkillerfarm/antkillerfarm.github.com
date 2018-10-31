@@ -150,7 +150,7 @@ https://github.com/keithito/tacotron
 
 Griffin-Lim Algorithm（GLA）的论文：
 
-《Signal  Estimation  from  Modified  Short-Time Fourier  Transform》
+《Signal Estimation from Modified Short-Time Fourier Transform》
 
 参考：
 
@@ -208,11 +208,23 @@ https://github.com/buriburisuri/speech-to-text-wavenet
 
 这个Tensorflow实现，利用WaveNet实现了语音识别。
 
+除了RNN之外，CNN也经常被用于分析时间序列。为了表明序列之间的因果关系，人们通常采用一种叫做Causal Convolution的结构来进行数据采样。
+
 ![](/images/img2/WaveNet_2.png)
+
+上图是Causal Convolution的结构图。从中可以很明显的看出它的局限性：
+
+1.感受野较小。
+
+2.为了增大感受野，需要添加更多的层，从而导致计算复杂和训练困难。
 
 ![](/images/img2/WaveNet.gif)
 
+针对Causal Convolution的不足，WaveNet采用了Dilated Convolution的方式进行采样。具体的步骤如上图所示。
+
 ![](/images/img2/WaveNet.png)
+
+上图是WaveNet用于语音识别时的网络结构图。
 
 参考：
 
@@ -256,7 +268,11 @@ WaveRNN是WaveNet的升级版。
 
 https://github.com/fatchord/WaveRNN
 
+WaveRNN没有沿用Dilated Convolution，而是采用了另外一种方式加速RNN运算。
+
 ![](/images/img2/WaveRNN.png)
+
+上图是WaveRNN的网络结构图。它将生成16bit采样点的任务，分解为生成高8bit和低8bit两个子任务。前者也叫
 
 参考：
 
