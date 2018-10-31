@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十八）——深度强化学习（2）
+title:  深度学习（三十八）——深度强化学习（2）, Transformer
 category: DL 
 ---
 
@@ -291,4 +291,58 @@ https://mp.weixin.qq.com/s/JpZimrHALjuc-H9WF8sPZg
 https://mp.weixin.qq.com/s/dic_ssebe32L30pAUxlP6w
 
 谷歌AI-强化学习中的好奇和拖延
+
+# Transformer
+
+之前的文章已经介绍了Attention和《Attention is All You Need》。但实际上，《Attention is All You Need》不仅提出了两种Attention模块，而且还提出了如下图所示的Transformer模型。该模型主要用于NMT领域，由于Attention不依赖上一刻的数据，同时精度也不弱于LSTM，因此有很好并行计算特性，在工业界得到了广泛应用。阿里巴巴和搜狗目前的NMT方案都是基于Transformer模型的。
+
+![](/images/img2/Transformer.png)
+
+$$FFN(x) = \max(0,xW_1 + b_1)W_2 + b_2$$
+
+代码：
+
+https://github.com/Kyubyong/transformer
+
+参考：
+
+http://jalammar.github.io/illustrated-transformer/
+
+The Illustrated Transformer
+
+http://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/
+
+Visualizing A Neural Machine Translation Model (Mechanics of Seq2seq Models With Attention)
+
+https://zhuanlan.zhihu.com/p/39034683
+
+Attention is all you need模型笔记
+
+https://zhuanlan.zhihu.com/p/40920384
+
+真正的完全图解Seq2Seq Attention模型
+
+https://mp.weixin.qq.com/s/HquT_mKm7x_rbDGz4Voqpw
+
+阿里巴巴最新实践：TVM+TensorFlow提高神经机器翻译性能
+
+https://mp.weixin.qq.com/s/S_xhaDrOaPe38ZvDLWl4dg
+
+从技术到产品，搜狗为我们解读了神经机器翻译的现状
+
+https://mp.weixin.qq.com/s/vzjKU_0qhapWKOYZ4Rnj-Q
+
+谷歌的机器翻译模型Transformer，现在可以用来做任何事了
+
+https://mp.weixin.qq.com/s/lgGDTCF3qg84njv2IeHC9A
+
+大规模集成Transformer模型，阿里达摩院如何打造WMT 2018机器翻译获胜系统
+
+https://mp.weixin.qq.com/s/_UC2jlOfb34tfB_tsEXjMg
+
+谷歌全新神经网络架构Transformer：基于自注意力机制，擅长自然语言理解
+
+https://mp.weixin.qq.com/s/w3IKoygTLDsAxk1MB5JrGg
+
+详细讲解Transformer新型神经网络在机器翻译中的应用
 

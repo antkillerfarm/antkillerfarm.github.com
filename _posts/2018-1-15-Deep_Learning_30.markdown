@@ -1,20 +1,12 @@
 ---
 layout: post
-title:  深度学习（三十）——Deep Speech, WaveNet, 自动求导, 多模态学习
+title:  深度学习（三十）——Deep Speech, 信息检索
 category: DL 
 ---
 
 # CTC
 
 ## 算法推导（续）
-
-CTC对齐有一些显著的特性：
-
-首先，X和Y之间允许的对齐是单调的。如果我们前进到下一个输入，我们可以保持相应的输出相同或前进到下一个输入。
-
-第二个属性是X到Y的对齐是多对一的。一个或多个输入元素可以对齐到一个输出元素，但反过来不成立。
-
-这意味着第三个属性：Y的长度不能大于X的长度。
 
 ![](/images/img2/full_collapse_from_audio.png)
 
@@ -253,54 +245,6 @@ https://github.com/ShankHarinath/DeepSpeech2-Keras
 
 论文附录中，如何利用集群进行分布式训练，是本文的干货，这里不再赘述。
 
-# WaveNet
-
-WaveNet是DeepMind 2016年的作品，主要用于语音合成，也可用于语音识别。
-
-DeepMind在WaveNet方面，按照时间顺序有3篇论文：
-
-《WAVENET: A GENERATIVE MODEL FOR RAW AUDIO》
-
-《Neural Machine Translation in Linear Time》
-
-《Parallel WaveNet: Fast High-Fidelity Speech Synthesis》
-
-代码：
-
-https://github.com/ibab/tensorflow-wavenet
-
-一个Tensorflow实现
-
-https://github.com/buriburisuri/speech-to-text-wavenet
-
-这个Tensorflow实现，利用WaveNet实现了语音识别。
-
-![](/images/img2/WaveNet.png)
-
-![](/images/img2/WaveNet.gif)
-
-参考：
-
-https://www.leiphone.com/news/201609/ErWGa8fs7yR1zn2L.html
-
-DeepMind发布最新原始音频波形深度生成模型WaveNet，将为TTS带来无数可能
-
-https://zhuanlan.zhihu.com/p/27064536
-
-用Wavenet做中文语音识别
-
-https://mp.weixin.qq.com/s/-NTQG7_-GqGQWrRhiGgAQQ
-
-详述DeepMind wavenet原理及其TensorFlow实现
-
-http://mp.weixin.qq.com/s/0Xg_acbGG3pTIgsRQKJjrQ
-
-历经一年，DeepMind WaveNet语音合成技术正式产品化
-
-https://mp.weixin.qq.com/s/u1UnAuGllcWn8Ik5wDPY6w
-
-可视化语音分析：深度对比Wavenet、t-SNE和PCA等算法
-
 # EESEN
 
 论文：
@@ -317,43 +261,77 @@ https://github.com/srvk/eesen
 
 eesen是基于Tensorflow开发的，苗博士之前还有个用Theano开发的叫PDNN的库。
 
-# 自动求导
+# 信息检索
 
-https://mp.weixin.qq.com/s/7Z2tDhSle-9MOslYEUpq6g
+Information Retrieval是用户进行信息查询和获取的主要方式，是查找信息的方法和手段。狭义的信息检索仅指信息查询（Information Search）。即用户根据需要，采用一定的方法，借助检索工具，从信息集合中找出所需要信息的查找过程。广义的信息检索是信息按一定的方式进行加工、整理、组织并存储起来，再根据信息用户特定的需要将相关信息准确的查找出来的过程。
 
-从概念到实践，我们该如何构建自动微分库
+这方面的DL应用可参见以下的综述文章：
 
-https://mp.weixin.qq.com/s/bigKoR3IX_Jvo-re9UjqUA
+《MatchZoo: A Toolkit for Deep Text Matching》
 
-机器学习之——自动求导
+## ARC-I & ARC-II
 
-https://www.jianshu.com/p/4c2032c685dc
+《Convolutional neural network architectures for matching natural language sentences》
 
-自动求导框架综述
+## DSSM
 
-https://mp.weixin.qq.com/s/xXwbV46-kTobAMRwfKyk_w
+《Learning deep structured semantic models for web search using clickthrough data》
 
-自动求导--Deep Learning框架必备技术二三事
+## CDSSM
 
-# 多模态学习
+《Learning semantic representations using convolutional neural networks for web search》
 
-https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw
+## MV-LSTM
 
-多模态学习研究进展综述
+《A deep architecture for semantic matching with multiple positional sentence representations》
 
-https://mp.weixin.qq.com/s/vpBPkjuCebSWh5qPLYHCkw
+## CNTN
 
-上海交大提出多模态框架“EmotionMeter”，更精准地识别人类情绪
+《Convolutional Neural Tensor Network Architecture for Community-Based Question Answering》
 
-https://mp.weixin.qq.com/s/BBg04rDtiqU-XrWortufNA
+## DRMM
 
-康奈尔&英伟达提出多模态无监督图像转换新方法
+《A deep relevance matching model for ad-hoc retrieval》
 
-http://mp.weixin.qq.com/s/khOINUyrNV3TFfgNRheH0A
+## MatchPyramid
 
-卷积神经网络压缩、多模态的语义分析研究
+《Text Matching as Image Recognition》
 
-https://mp.weixin.qq.com/s/ywU4L659iRcmIgmV6RtbXA
+## Match-SRNN
 
-DeepMind新研究连接听与看，实现“听声辨位”的多模态学习
+《Match-SRNN: Modeling the Recursive Matching Structure with Spatial RNN》
+
+## K-NRM
+
+《End-to-End Neural Ad-hoc Ranking with Kernel Pooling》
+
+## 参考
+
+https://mp.weixin.qq.com/s/aZsj1FQnzHOr-YBcy_ljpw
+
+DNN在搜索场景中的应用
+
+https://mp.weixin.qq.com/s/1jgdI-Pt0PtN3oAs0Wh4XA
+
+阿里提出电商搜索全局排序方法，淘宝无线主搜GMV提升5%
+
+https://mp.weixin.qq.com/s/9Fcj5lO-JPfFVnRSSM_56w
+
+深度学习在美团搜索广告排序的应用实践
+
+https://mp.weixin.qq.com/s/wni3F9lKuO4OT32BVe0QDQ
+
+谷歌发大招：搜索全面AI化，不用关键词就能轻松“撩书”
+
+https://mp.weixin.qq.com/s/TrWwp-DBTrKqIT_Pfy_o5w
+
+阿里妈妈首次公开新一代智能广告检索模型，重新定义传统搜索框架
+
+https://mp.weixin.qq.com/s/fZv9FgbdQ1bWPoNdl9sF1A
+
+“宝石迷阵”与信息检索
+
+https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247488366&idx=1&sn=01baaf8b6c6a2c727bb9e0e2101f803b
+
+电商搜索算法技术的演进
 

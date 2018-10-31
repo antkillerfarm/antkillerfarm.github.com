@@ -256,6 +256,10 @@ https://mp.weixin.qq.com/s/MRRljFBH1T1STvTm0CT4Qw
 
 OpenCV深度神经网络实现人体姿态评估
 
+https://mp.weixin.qq.com/s/g1m3I9U9Walj9FxbYJng9A
+
+万圣节教你用OpenCV Remix一张n合1脸
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。

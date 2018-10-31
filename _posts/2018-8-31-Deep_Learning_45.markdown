@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十五）——Attention进阶, AutoDL, 数据增强
+title:  深度学习（四十五）——Attention进阶, AutoDL, 数据增强, 自动求导, 多模态学习
 category: DL 
 ---
 
@@ -143,6 +143,10 @@ https://mp.weixin.qq.com/s/GFjYzxf6IdKPvkij8-i_Dg
 https://mp.weixin.qq.com/s/L1nkhc4I6VX2s6S5Tiv0Zw
 
 小白也能搭建深度模型，百度EasyDL的背后你知多少
+
+https://mp.weixin.qq.com/s/HiD-OqAz67cwwchjSyIjWA
+
+AutoML又一利器来了，谷歌宣布开源AdaNet
 
 ## 书籍
 
@@ -306,3 +310,42 @@ https://zhuanlan.zhihu.com/p/46833956
 
 图像数据增强之弹性形变（Elastic Distortions）
 
+# 自动求导
+
+https://mp.weixin.qq.com/s/7Z2tDhSle-9MOslYEUpq6g
+
+从概念到实践，我们该如何构建自动微分库
+
+https://mp.weixin.qq.com/s/bigKoR3IX_Jvo-re9UjqUA
+
+机器学习之——自动求导
+
+https://www.jianshu.com/p/4c2032c685dc
+
+自动求导框架综述
+
+https://mp.weixin.qq.com/s/xXwbV46-kTobAMRwfKyk_w
+
+自动求导--Deep Learning框架必备技术二三事
+
+# 多模态学习
+
+https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw
+
+多模态学习研究进展综述
+
+https://mp.weixin.qq.com/s/vpBPkjuCebSWh5qPLYHCkw
+
+上海交大提出多模态框架“EmotionMeter”，更精准地识别人类情绪
+
+https://mp.weixin.qq.com/s/BBg04rDtiqU-XrWortufNA
+
+康奈尔&英伟达提出多模态无监督图像转换新方法
+
+http://mp.weixin.qq.com/s/khOINUyrNV3TFfgNRheH0A
+
+卷积神经网络压缩、多模态的语义分析研究
+
+https://mp.weixin.qq.com/s/ywU4L659iRcmIgmV6RtbXA
+
+DeepMind新研究连接听与看，实现“听声辨位”的多模态学习

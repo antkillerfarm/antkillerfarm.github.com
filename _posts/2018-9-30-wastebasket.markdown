@@ -282,6 +282,10 @@ https://mp.weixin.qq.com/s/zV6zi79c1Q2dfCaywuK6Pw
 
 内点法六十年再回首
 
+https://mp.weixin.qq.com/s/aryMyP0r6vov0pUvkoFYng
+
+过去，现在和未来：运筹学为航空业保驾护航
+
 ## 可视化
 
 ![](/images/img2/data_visual.png)

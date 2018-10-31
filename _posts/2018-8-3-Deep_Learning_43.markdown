@@ -370,3 +370,6 @@ https://mp.weixin.qq.com/s/9fFjVSiMg-LwddXfNJuKuw
 
 DeepMind开源图网络库，一种结合图和神经网络的新方法
 
+https://mp.weixin.qq.com/s/5DmpgPN4t3p3H53Xu7_-3A
+
+北大、微软亚洲研究院：高效的大规模图神经网络计算

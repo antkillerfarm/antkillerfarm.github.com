@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十七）——无监督/半监督/自监督深度学习, 深度哈希, 信息检索, 语音合成, Transformer
+title:  深度学习（四十七）——无监督/半监督/自监督深度学习, 语音合成, BERT
 category: DL 
 ---
 
@@ -98,118 +98,6 @@ https://mp.weixin.qq.com/s/343DfjOvkaozuxNK89V3zQ
 
 前景目标检测的无监督学习
 
-# 深度哈希
-
-https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg
-
-深度离散哈希算法，可用于图像检索！
-
-https://mp.weixin.qq.com/s/XUYJub0559wwQ9H1wA_SAg
-
-机器学习时代的哈希算法，将如何更高效地索引数据
-
-https://mp.weixin.qq.com/s/YVIvdMznb3oatIXqD5a5_A
-
-陈天奇等人提出AutoTVM：让AI来编译优化AI系统底层算子
-
-https://mp.weixin.qq.com/s/vFBlFAQLvDZP7IvwKoaPhA
-
-无问西东，只问哈希
-
-https://mp.weixin.qq.com/s/XAxuLg2i3q5_uKDo1wU_rA
-
-从哈希到卷积神经网络：高精度&低功耗
-
-https://mp.weixin.qq.com/s/i8iQtCC7ahXLY1a1wOacsA
-
-Science：最新发现哈希可能是大脑的通用计算原理
-
-https://mp.weixin.qq.com/s/ZOVWXNym5yHoo-MmpxXo0A
-
-自监督对抗哈希SSAH：当前最佳的跨模态检索框架
-
-https://mp.weixin.qq.com/s/VldzlYg5AfDRho8bsROL_g
-
-HashGAN:基于注意力机制的深度对抗哈希模型提升跨模态检索效果
-
-https://mp.weixin.qq.com/s/3Z2Zc8zTq2uiPyw7ZuuZfw
-
-解密美图大规模多媒体数据检索技术DeepHash
-
-# 信息检索
-
-Information Retrieval是用户进行信息查询和获取的主要方式，是查找信息的方法和手段。狭义的信息检索仅指信息查询（Information Search）。即用户根据需要，采用一定的方法，借助检索工具，从信息集合中找出所需要信息的查找过程。广义的信息检索是信息按一定的方式进行加工、整理、组织并存储起来，再根据信息用户特定的需要将相关信息准确的查找出来的过程。
-
-这方面的DL应用可参见以下的综述文章：
-
-《MatchZoo: A Toolkit for Deep Text Matching》
-
-## ARC-I & ARC-II
-
-《Convolutional neural network architectures for matching natural language sentences》
-
-## DSSM
-
-《Learning deep structured semantic models for web search using clickthrough data》
-
-## CDSSM
-
-《Learning semantic representations using convolutional neural networks for web search》
-
-## MV-LSTM
-
-《A deep architecture for semantic matching with multiple positional sentence representations》
-
-## CNTN
-
-《Convolutional Neural Tensor Network Architecture for Community-Based Question Answering》
-
-## DRMM
-
-《A deep relevance matching model for ad-hoc retrieval》
-
-## MatchPyramid
-
-《Text Matching as Image Recognition》
-
-## Match-SRNN
-
-《Match-SRNN: Modeling the Recursive Matching Structure with Spatial RNN》
-
-## K-NRM
-
-《End-to-End Neural Ad-hoc Ranking with Kernel Pooling》
-
-## 参考
-
-https://mp.weixin.qq.com/s/aZsj1FQnzHOr-YBcy_ljpw
-
-DNN在搜索场景中的应用
-
-https://mp.weixin.qq.com/s/1jgdI-Pt0PtN3oAs0Wh4XA
-
-阿里提出电商搜索全局排序方法，淘宝无线主搜GMV提升5%
-
-https://mp.weixin.qq.com/s/9Fcj5lO-JPfFVnRSSM_56w
-
-深度学习在美团搜索广告排序的应用实践
-
-https://mp.weixin.qq.com/s/wni3F9lKuO4OT32BVe0QDQ
-
-谷歌发大招：搜索全面AI化，不用关键词就能轻松“撩书”
-
-https://mp.weixin.qq.com/s/TrWwp-DBTrKqIT_Pfy_o5w
-
-阿里妈妈首次公开新一代智能广告检索模型，重新定义传统搜索框架
-
-https://mp.weixin.qq.com/s/fZv9FgbdQ1bWPoNdl9sF1A
-
-“宝石迷阵”与信息检索
-
-https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247488366&idx=1&sn=01baaf8b6c6a2c727bb9e0e2101f803b
-
-电商搜索算法技术的演进
-
 # 语音合成
 
 语音合成（Speech synthesis），有时也叫做text-to-speech (TTS)。
@@ -240,7 +128,125 @@ https://www.gnu.org/software/gnuspeech/
 
 其他的开源项目还有Gnopernicus、Orca、FreeTTS和Automatik Text Reader，但是这些项目目前基本处于不更新的状态了。
 
+## Tacotron
+
+Tacotron是DeepMind提出的TTS模型。
+
+论文：
+
+《Tacotron: A Fully End-to-End Text-To-Speech Synthesis Model》
+
+代码：
+
+https://github.com/keithito/tacotron
+
+![](/images/img2/Tacotron.png)
+
+![](/images/img2/Tacotron_2.png)
+
+图中的Griffin-Lim reconstruction所使用的算法，是由Daniel W. Griffin和Jae S. Lim于1984年提出的。当然了，这是一种传统的信号处理算法，一般作为新的DL替代品的baseline使用。
+
+>Jae S. Lim，1950年生，韩裔美国人。MIT本硕博（1978）。MIT教授，IEEE Fellow。信号处理领域专家。
+
+Griffin-Lim Algorithm（GLA）的论文：
+
+《Signal  Estimation  from  Modified  Short-Time Fourier  Transform》
+
+参考：
+
+https://mp.weixin.qq.com/s/MJE2JRYU7KakNKmHkD42CA
+
+谷歌发布TTS新系统Tacotron 2：直接从文本生成类人语音
+
+https://mp.weixin.qq.com/s/uh-Gh8BSxBi-jjG6-d7-UQ
+
+Tacotron一种端到端的Text-to-Speech合成模型
+
+https://www.jiqizhixin.com/articles/2017-03-31-5
+
+谷歌全端到端语音合成系统Tacotron：直接从字符合成语音
+
+## Tacotron-2
+
+Tacotron2是Tacotron的升级版，也是DeepMind提出的。
+
+论文：
+
+《Natural TTS synthesis by conditioning Wavenet on MEL spectogram predictions》
+
+代码：
+
+https://github.com/Rayhane-mamah/Tacotron-2
+
+![](/images/img2/Tacotron_3.png)
+
+上图是Tacotron-2的体系结构图。除了标明Tacotron-2的网络结构之外，还给出了后续处理的pipeline：
+
+1.Tacotron-2模型负责将Text转换为Mel Spectrum。
+
+2.WaveNet模型负责将Mel Spectrum转换成wave pcm data。
+
+## WaveNet
+
+WaveNet是DeepMind 2016年的作品，主要用于语音合成，也可用于语音识别。
+
+DeepMind在WaveNet方面，按照时间顺序有3篇论文：
+
+《WaveNet: A Generative Model For Raw Audio》
+
+《Neural Machine Translation in Linear Time》
+
+《Parallel WaveNet: Fast High-Fidelity Speech Synthesis》
+
+代码：
+
+https://github.com/ibab/tensorflow-wavenet
+
+一个Tensorflow实现
+
+https://github.com/buriburisuri/speech-to-text-wavenet
+
+这个Tensorflow实现，利用WaveNet实现了语音识别。
+
+![](/images/img2/WaveNet_2.png)
+
+![](/images/img2/WaveNet.gif)
+
+![](/images/img2/WaveNet.png)
+
+参考：
+
+https://www.leiphone.com/news/201609/ErWGa8fs7yR1zn2L.html
+
+DeepMind发布最新原始音频波形深度生成模型WaveNet，将为TTS带来无数可能
+
+https://zhuanlan.zhihu.com/p/27064536
+
+用Wavenet做中文语音识别
+
+https://mp.weixin.qq.com/s/-NTQG7_-GqGQWrRhiGgAQQ
+
+详述DeepMind wavenet原理及其TensorFlow实现
+
+http://mp.weixin.qq.com/s/0Xg_acbGG3pTIgsRQKJjrQ
+
+历经一年，DeepMind WaveNet语音合成技术正式产品化
+
+https://mp.weixin.qq.com/s/u1UnAuGllcWn8Ik5wDPY6w
+
+可视化语音分析：深度对比Wavenet、t-SNE和PCA等算法
+
+https://blog.csdn.net/Kuo_Jun_Lin/article/details/80602776
+
+TCN_时间卷积网络_原理与优势
+
+https://blog.csdn.net/tonygsw/article/details/81280364
+
+因果卷积（causal）与扩展卷积（dilated）
+
 ## WaveRNN
+
+WaveRNN是WaveNet的升级版。
 
 论文：
 
@@ -249,6 +255,8 @@ https://www.gnu.org/software/gnuspeech/
 非官方代码：
 
 https://github.com/fatchord/WaveRNN
+
+![](/images/img2/WaveRNN.png)
 
 参考：
 
@@ -263,6 +271,10 @@ https://www.monthly-hack.com/entry/2018/02/26/211248
 https://www.jianshu.com/p/b3019f2773ed
 
 语音合成text-to-speech WaveRNN
+
+http://slides.com/smerity/reading-group-efficient-neural-audio-synthesis#/
+
+Efficient Neural Audio Synthesis
 
 ## 参考
 
@@ -318,59 +330,7 @@ https://zhuanlan.zhihu.com/p/45702794
 
 微信是不是可以来一个文字转语音功能了？
 
-# Transformer
-
-之前的文章已经介绍了Attention和《Attention is All You Need》。但实际上，《Attention is All You Need》不仅提出了两种Attention模块，而且还提出了如下图所示的Transformer模型。该模型主要用于NMT领域，由于Attention不依赖上一刻的数据，同时精度也不弱于LSTM，因此有很好并行计算特性，在工业界得到了广泛应用。阿里巴巴和搜狗目前的NMT方案都是基于Transformer模型的。
-
-![](/images/img2/Transformer.png)
-
-$$FFN(x) = \max(0,xW_1 + b_1)W_2 + b_2$$
-
-代码：
-
-https://github.com/Kyubyong/transformer
-
-参考：
-
-http://jalammar.github.io/illustrated-transformer/
-
-The Illustrated Transformer
-
-http://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/
-
-Visualizing A Neural Machine Translation Model (Mechanics of Seq2seq Models With Attention)
-
-https://zhuanlan.zhihu.com/p/39034683
-
-Attention is all you need模型笔记
-
-https://zhuanlan.zhihu.com/p/40920384
-
-真正的完全图解Seq2Seq Attention模型
-
-https://mp.weixin.qq.com/s/HquT_mKm7x_rbDGz4Voqpw
-
-阿里巴巴最新实践：TVM+TensorFlow提高神经机器翻译性能
-
-https://mp.weixin.qq.com/s/S_xhaDrOaPe38ZvDLWl4dg
-
-从技术到产品，搜狗为我们解读了神经机器翻译的现状
-
-https://mp.weixin.qq.com/s/vzjKU_0qhapWKOYZ4Rnj-Q
-
-谷歌的机器翻译模型Transformer，现在可以用来做任何事了
-
-https://mp.weixin.qq.com/s/lgGDTCF3qg84njv2IeHC9A
-
-大规模集成Transformer模型，阿里达摩院如何打造WMT 2018机器翻译获胜系统
-
-https://mp.weixin.qq.com/s/_UC2jlOfb34tfB_tsEXjMg
-
-谷歌全新神经网络架构Transformer：基于自注意力机制，擅长自然语言理解
-
-https://mp.weixin.qq.com/s/w3IKoygTLDsAxk1MB5JrGg
-
-详细讲解Transformer新型神经网络在机器翻译中的应用
+# BERT
 
 https://mp.weixin.qq.com/s/Fao3i99kZ1a6aa3UhAYKhA
 
@@ -391,3 +351,7 @@ NLP的游戏规则从此改写？从word2vec, ELMo到BERT
 https://mp.weixin.qq.com/s/8uZ2SJtzZhzQhoPY7XO9uw
 
 详细解读谷歌新模型BERT为什么嗨翻AI圈
+
+https://mp.weixin.qq.com/s/CofeiL4fImq98UeuJ4hWTg
+
+预训练BERT，官方代码发布前他们是这样用TensorFlow解决的

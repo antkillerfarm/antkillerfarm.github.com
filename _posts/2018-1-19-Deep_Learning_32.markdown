@@ -182,6 +182,10 @@ https://mp.weixin.qq.com/s/5ko0-W5giZ7wBCLUmkQeKA
 
 神经网络词嵌入：如何将《战争与和平》表示成一个向量？
 
+https://mp.weixin.qq.com/s/4gqpdTxt7Lip-hfuuUweAw
+
+词嵌入获得的信息远比我们想象中的要多得多
+
 # NN的量化计算
 
 ## 概述

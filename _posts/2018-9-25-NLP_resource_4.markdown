@@ -257,3 +257,8 @@ https://mp.weixin.qq.com/s?__biz=MzA5NzY0MDg1NA==&mid=2706956202&idx=1&sn=b82ff0
 https://zhuanlan.zhihu.com/p/47949269
 
 开放域下的对话系统
+
+https://mp.weixin.qq.com/s/1WtJEqhxCtBKVRs_-EevjA
+
+基于排序思想的弱监督关系抽取选种与降噪算法
+

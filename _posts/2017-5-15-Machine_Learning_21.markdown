@@ -270,6 +270,10 @@ https://mp.weixin.qq.com/s?__biz=MjM5MTQzNzU2NA==&mid=2651664000&idx=1&sn=ae6dda
 
 深度特征合成：自动化特征工程的运作机制
 
+https://mp.weixin.qq.com/s/R1MhoCfnd5drvg2CGLVsPw
+
+哪种特征分析法适合你的任务？Ian Goodfellow提出显著性映射的可用性测试
+
 # 模仿学习
 
 https://zhuanlan.zhihu.com/p/27935902

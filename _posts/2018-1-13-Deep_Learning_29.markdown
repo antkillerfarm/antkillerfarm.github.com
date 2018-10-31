@@ -108,30 +108,6 @@ https://mp.weixin.qq.com/s/P81I5vl99mV-4StNHmd_6A
 | 对齐 | 单调，硬 | 单调，硬 | 不单调，软 |
 | 解码所需步数 | 输入长度 | 输入长度+输出长度 | 输出长度 |
 
-## Tacotron
-
-论文：
-
-《Tacotron: A Fully End-to-End Text-To-Speech Synthesis Model》
-
-![](/images/img2/Tacotron.png)
-
-![](/images/img2/Tacotron_2.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/MJE2JRYU7KakNKmHkD42CA
-
-谷歌发布TTS新系统Tacotron 2：直接从文本生成类人语音
-
-https://mp.weixin.qq.com/s/uh-Gh8BSxBi-jjG6-d7-UQ
-
-Tacotron一种端到端的Text-to-Speech合成模型
-
-https://www.jiqizhixin.com/articles/2017-03-31-5
-
-谷歌全端到端语音合成系统Tacotron：直接从字符合成语音
-
 ## 参考
 
 https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=400189223&idx=1&sn=1cb32bee42de626443ebadbf065ec79c
@@ -349,3 +325,10 @@ CTC允许的对齐是与输入的长度相同。 在合并重复并移除ε标�
 
 如果Y在同一行中有两个相同的字符，那么一个有效的对齐必须在它们之间有一个$$\epsilon$$。有了这个规则，我们就可以区分“hello”和“helo”了。
 
+CTC对齐有一些显著的特性：
+
+首先，X和Y之间允许的对齐是单调的。如果我们前进到下一个输入，我们可以保持相应的输出相同或前进到下一个输入。
+
+第二个属性是X到Y的对齐是多对一的。一个或多个输入元素可以对齐到一个输出元素，但反过来不成立。
+
+这意味着第三个属性：Y的长度不能大于X的长度。

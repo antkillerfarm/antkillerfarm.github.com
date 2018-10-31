@@ -140,6 +140,10 @@ https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750713&idx=5&sn=678eef
 
 CIFAR-10+ImageNet=？CINIC-10！
 
+https://mp.weixin.qq.com/s/vTnc55KAiGaFfktHPZctbw
+
+捡漏！用谷歌图片搜索自制深度学习数据集
+
 # SLAM
 
 ## blog
@@ -241,6 +245,26 @@ https://mp.weixin.qq.com/s/V3PLx3kP9zOcR1CZZI8Yqw
 https://zhuanlan.zhihu.com/p/33079632
 
 视觉SLAM专用术语的一句话介绍
+
+https://blog.csdn.net/chentravelling/article/details/53558096
+
+世界坐标系、相机坐标系、图像坐标系、像素坐标系之间的转换
+
+# 张正友标定算法
+
+”张正友标定”是指张正友1998年提出的单平面棋盘格的摄像机标定方法。该方法介于传统标定法和自标定法之间，但克服了传统标定法需要的高精度标定物的缺点，而仅需使用一个打印出来的棋盘格就可以。同时也相对于自标定而言，提高了精度，便于操作。因此张氏标定法被广泛应用于计算机视觉方面。
+
+>张正友，1965年生。浙江大学本科（1985）+法国南锡（Nancy）大学硕士（1987）+法国巴黎第十一大学博士（1990）。现任微软研究院视觉技术组高级研究员。ACM Fellow，IEEE Fellow。
+
+参考：
+
+https://blog.csdn.net/u010128736/article/details/52860364
+
+张正友标定算法原理详解
+
+https://blog.csdn.net/weixin_36340947/article/details/78246174
+
+张正友标定算法原理详解
 
 # AI Chip
 
