@@ -286,6 +286,10 @@ https://mp.weixin.qq.com/s/aryMyP0r6vov0pUvkoFYng
 
 过去，现在和未来：运筹学为航空业保驾护航
 
+https://mp.weixin.qq.com/s?__biz=MzUxMTYwMzI0OQ==&mid=2247486937&idx=1&sn=6be69679390f59516ee5f077adb8ccfa
+
+运筹优化的剖析与应用
+
 ## 可视化
 
 ![](/images/img2/data_visual.png)
