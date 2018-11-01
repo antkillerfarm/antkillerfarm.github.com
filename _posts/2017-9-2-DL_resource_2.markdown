@@ -260,6 +260,10 @@ https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247500351&idx=1&sn=f7280d
 
 128页多媒体计算在医学领域的重要性教程
 
+https://mp.weixin.qq.com/s/MSjtlwC2L3yAmQc_VBBPiQ
+
+同济大学综述论文：基于深度生成模型的药物研发
+
 ## 面试
 
 https://mp.weixin.qq.com/s/U5hlr69m_9Znwjkj3Yl4Hg

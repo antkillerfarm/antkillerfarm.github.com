@@ -20,6 +20,10 @@ https://mp.weixin.qq.com/s/aB8PnQuPmhftS18fUrumNg
 
 零基础如何快速搭建一个推荐系统？这篇blog是某牛课程的广告贴，然而从课程目录中，我们还是能够知道一个推荐系统的大致知识点。
 
+https://mp.weixin.qq.com/s/2RRzZcoy4L92n3VZH0o07w
+
+无偏见排序学习：理论与实践135页PPT教程
+
 ## 算法
 
 深度推荐系统的算法包括：

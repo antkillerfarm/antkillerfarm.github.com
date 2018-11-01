@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十五）——Attention进阶, AutoDL, 数据增强, 自动求导, 多模态学习
+title:  深度学习（四十五）——Attention进阶, AutoDL, 多模态学习, BERT
 category: DL 
 ---
 
@@ -264,70 +264,6 @@ https://zhuanlan.zhihu.com/p/46350372
 
 语义分割领域开山之作：Google提出用神经网络搜索实现语义分割
 
-# 数据增强
-
-https://mp.weixin.qq.com/s/GqPfvWwH1T0XFwiZ86cW8A
-
-SamplePairing：针对图像处理领域的高效数据增强方式
-
-https://mp.weixin.qq.com/s/cQtXvOjSXFc4YKn7ANBc_w
-
-谷歌大脑提出自动数据增强方法AutoAugment：可迁移至不同数据集
-
-https://mp.weixin.qq.com/s/ojFo7-gUh73iK3uImFS2-Q
-
-一文道尽主流开源框架中的数据增强
-
-https://mp.weixin.qq.com/s/xJhWu-1FyhIWbFBC5oHMkw
-
-一文道尽深度学习中的数据增强方法（上）
-
-https://mp.weixin.qq.com/s/OctAGrcBB0a6TOGWMmVKUw
-
-深度学习中的数据增强（下）
-
-https://mp.weixin.qq.com/s/lMU6_ywQqneyunqEV6uDiA
-
-如何改善你的训练数据集？
-
-https://mp.weixin.qq.com/s/ooX9Hj5ejO6po6Ghb4zOug
-
-一文解读合成数据在机器学习技术下的表现
-
-https://zhuanlan.zhihu.com/p/33485388
-
-mixup与paring samples ，ICLR2018投稿论文的数据增广两种方式
-
-https://mp.weixin.qq.com/s/_7xFBLPGT0VRTJ22toHJ3g
-
-深度学习中常用的图像数据增强方法
-
-https://mp.weixin.qq.com/s/sXV9epWguGbJEZYo4yNp5Q
-
-如何正确使用样本扩充改进目标检测性能
-
-https://zhuanlan.zhihu.com/p/46833956
-
-图像数据增强之弹性形变（Elastic Distortions）
-
-# 自动求导
-
-https://mp.weixin.qq.com/s/7Z2tDhSle-9MOslYEUpq6g
-
-从概念到实践，我们该如何构建自动微分库
-
-https://mp.weixin.qq.com/s/bigKoR3IX_Jvo-re9UjqUA
-
-机器学习之——自动求导
-
-https://www.jianshu.com/p/4c2032c685dc
-
-自动求导框架综述
-
-https://mp.weixin.qq.com/s/xXwbV46-kTobAMRwfKyk_w
-
-自动求导--Deep Learning框架必备技术二三事
-
 # 多模态学习
 
 https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw
@@ -349,3 +285,47 @@ http://mp.weixin.qq.com/s/khOINUyrNV3TFfgNRheH0A
 https://mp.weixin.qq.com/s/ywU4L659iRcmIgmV6RtbXA
 
 DeepMind新研究连接听与看，实现“听声辨位”的多模态学习
+
+# BERT
+
+论文：
+
+《BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding》
+
+代码：
+
+https://github.com/google-research/bert
+
+参考：
+
+https://www.zhihu.com/question/298203515
+
+如何评价BERT模型？
+
+https://mp.weixin.qq.com/s/Fao3i99kZ1a6aa3UhAYKhA
+
+全面超越人类！Google称霸SQuAD，BERT横扫11大NLP测试
+
+https://mp.weixin.qq.com/s/INDOBcpg5p7vtPBChAIjAA
+
+最强预训练模型BERT的Pytorch实现
+
+https://mp.weixin.qq.com/s/SZMYj4rMneR3OWST007H-Q
+
+解读谷歌最强NLP模型BERT：模型、数据和训练
+
+https://mp.weixin.qq.com/s/I315hYPrxV0YYryqsUysXw
+
+NLP的游戏规则从此改写？从word2vec, ELMo到BERT
+
+https://mp.weixin.qq.com/s/8uZ2SJtzZhzQhoPY7XO9uw
+
+详细解读谷歌新模型BERT为什么嗨翻AI圈
+
+https://mp.weixin.qq.com/s/CofeiL4fImq98UeuJ4hWTg
+
+预训练BERT，官方代码发布前他们是这样用TensorFlow解决的
+
+https://mp.weixin.qq.com/s/vFdm-UHns7Nhbmdoiu6jWg
+
+谷歌终于开源BERT代码：3亿参数量，机器之心全面解读

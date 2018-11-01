@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十九）——多任务学习, 语音识别, CTC
+title:  深度学习（二十九）——Normalization进阶, CTC
 category: DL 
 ---
 
@@ -42,225 +42,87 @@ https://mp.weixin.qq.com/s/rXr_XBc2Psh3NSA0pj4ptQ
 
 常建龙：深度卷积网络中的卷积算子研究进展
 
-# 多任务学习
+# Normalization进阶
 
-https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA
+类似的概念还有Weight Normalization和Layer Normalization。
 
-多任务学习-Multitask Learning概述
+### Batch Normalization
 
-https://mp.weixin.qq.com/s/A-CVKTz_moaFzTYywSt2gg
+![](/images/img2/BN.jpg)
 
-张宇 杨强：多任务学习概述
+从上图可以看出，**BN是对input tensor的每个通道进行mini-batch级别的Normalization。而LN则是对所有通道的input tensor进行Normalization**。
 
-https://mp.weixin.qq.com/s/ZlCI02UdRuFBc-uKqIPE_w
+BN的特点：
 
-深度学习多任务学习综述
+对于batch size比较小的时候，效果非常不好，而batch size越大，那么效果则越好，因为其本质上是要通过mini-batch得到对整个数据集的无偏估计；
 
-https://mp.weixin.qq.com/s/QXOy2jo4RhCZrD5bSVzBOQ
+在训练阶段和推理阶段的计算过程是不一样的；
 
-共享相关任务表征，一文读懂深度神经网络多任务学习
+在CNN上表现较好，而不适用于RNN甚至LSTM。
 
-https://mp.weixin.qq.com/s/mm9bXXTEzd8DwyYlMgGMZg
+### Layer Normalization
 
-NLP多任务学习：一种层次增长的神经网络结构
+LN的特点：
 
-https://mp.weixin.qq.com/s/X6FwTgr282hbqgOz3oBX-w
+不依赖于batch size的大小，即使对于batch size为1的在线学习，也可以完美适应；
 
-多任务学习概述论文：从定义和方法到应用和原理分析
+训练阶段和推理阶段的计算过程完全一样。
 
-https://blog.csdn.net/CoderPai/article/details/80080455
+适用于RNN或LSTM，而在CNN上表现一般。
 
-多任务学习与深度学习
+### Weight Normalization
 
-https://blog.csdn.net/CoderPai/article/details/80087188
+WN的公式如下：
 
-利用TensorFlow一步一步构建一个多任务学习模型
+$$w=\frac{g}{\|v\|}v$$
 
-https://mp.weixin.qq.com/s/fcFb6WkJVP8TYpoxkQgiWQ
+**WN将权重分为模和方向两个分量，并分别进行训练。**
 
-CMU提出“十字绣网络”，自动决定多任务学习的最佳共享层
+论文：
 
-https://mp.weixin.qq.com/s/i7WAFjQHK1NGVACR8x3v0A
+《Weight Normalization: A Simple Reparameterization to Accelerate Training of Deep Neural Networks》
 
-自然语言十项全能：转化为问答的多任务学习
+WN的特点：
 
-https://mp.weixin.qq.com/s/NpO1UP_mzyaeqW26xLY1Xg
+计算简单，易于理解。
 
-CVPR 2018最佳论文作者亲笔解读：研究视觉任务关联性的Taskonomy
+相比于其他两种方法，其训练起来不太稳定，非常依赖于输入数据的分布。
 
-https://mp.weixin.qq.com/s/DUSa3SW1AgvJ0szL030NHQ
+### Cosine Normalization
 
-一个AI玩57个游戏，DeepMind离真正“万能”的AGI不远了！
+Normalization还能怎么做？
 
-https://mp.weixin.qq.com/s/P81I5vl99mV-4StNHmd_6A
+我们再来看看神经元的经典变换$$f_w(x)=w\cdot x$$。
 
-作为多目标优化的多任务学习：寻找帕累托最优解
+对输入数据x的变换已经做过了，横着来是LN，纵着来是BN。
 
-# 语音识别
+对模型参数w的变换也已经做过了，就是WN。
 
-## end-to-end
+好像没啥可做的了。然而天才的研究员们盯上了中间的那个点，对，就是$$\cdot$$。
 
-《exploring neural transducers for end-to-end speech recognition》
+$$f_w(x)=\cos \theta=\frac{w\cdot x}{\|w\|\cdot\|x\|}$$
 
-|  | CTC | Transducer | Attention |
-|:--:|:--:|:--:|:--:|:--:|
-| 输出语言模型 | 无 | 有 | 有 |
-| 对齐 | 单调，硬 | 单调，硬 | 不单调，软 |
-| 解码所需步数 | 输入长度 | 输入长度+输出长度 | 输出长度 |
+参考：
 
-## 参考
+https://mp.weixin.qq.com/s/EBRYlCoj9rwf0NQY0B4nhQ
 
-https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=400189223&idx=1&sn=1cb32bee42de626443ebadbf065ec79c
+Layer Normalization原理及其TensorFlow实现
 
-百度贾磊：汉语语音识别技术重大突破：LSTM+CTC详解
+http://mlexplained.com/2018/01/10/an-intuitive-explanation-of-why-batch-normalization-really-works-normalization-in-deep-learning-part-1/
 
-https://www.zhihu.com/question/46829056
+An Intuitive Explanation of Why Batch Normalization Really Works
 
-语音识别领域的最新进展目前是什么样的水准？
+http://mlexplained.com/2018/01/13/weight-normalization-and-layer-normalization-explained-normalization-in-deep-learning-part-2/
 
-https://www.zhihu.com/question/29168274
+Weight Normalization and Layer Normalization Explained
 
-语音识别中，如何理解HMM是一个生成模型，而DNN是一个判别模型呢？
+https://mp.weixin.qq.com/s/KnmQTKneSimuOGqGSPy58w
 
-https://zhuanlan.zhihu.com/p/24979135
+详解深度学习中的Normalization，不只是BN（1）
 
-从声学模型算法总结2016年语音识别的重大进步
+https://mp.weixin.qq.com/s/nSQvjBRMaBeoOjdHbyrbuw
 
-https://mp.weixin.qq.com/s/zEqgDh6_fnDgXEI8MC9cmg
-
-端对端的深度卷积神经网络在语音识别中的应用
-
-https://mp.weixin.qq.com/s/pimQBFd5uxrZk4dSgUsblg
-
-苹果机器学习期刊“Siri三部曲”之一：通过跨带宽和跨语言初始化提升神经网络声学模型
-
-https://mp.weixin.qq.com/s/u1R7NUg_kgI_mpjIFrO02A
-
-探索Siri背后的技术：将逆文本标准化（ITN）转化为标签问题
-
-https://mp.weixin.qq.com/s/2xpwLVHT8qU68uoV7Uj2cw
-
-小米的语音识别系统是如何搭建的
-
-https://mp.weixin.qq.com/s/cYBMy4TIhcutvrAt0y70Ow
-
-腾讯AI Lab副主任俞栋：过去两年基于深度学习的声学模型进展
-
-https://mp.weixin.qq.com/s/cvSz5Pxe3z54Tl5z3WTbQA
-
-手把手教你在音频分类DCASE2017比赛中夺冠
-
-https://blog.csdn.net/ffmpeg4976/article/details/52347845
-
-语音识别系统及科大讯飞最新实践
-
-http://mp.weixin.qq.com/s/0WNJq4OLZlZETKPf1Ewq7w
-
-浅谈语音测试方案
-
-https://mp.weixin.qq.com/s/b0bOf1bZ2p0yWMzhp66HhA
-
-A flight (to Boston) to Denver-基于转移的顺滑技术研究
-
-https://mp.weixin.qq.com/s/0AvV268s3TZ0z8WwtJv6sw
-
-一文概览语音识别中尚未解决的问题
-
-https://mp.weixin.qq.com/s/T96S0b7Lp9YWR4cRcMQr6A
-
-一文概览基于深度学习的监督语音分离
-
-http://mp.weixin.qq.com/s/xRA9Xh-FTrhbIg0wLnfzhA
-
-温正棋谈语音质检方案：从关键词检索到情感识别
-
-https://mp.weixin.qq.com/s/XUHS4o2G-iGuV9uuOmfBdQ
-
-为什么在说话人识别技术中，PLDA面对神经网络依然坚挺？
-
-https://mp.weixin.qq.com/s/XP4NVYMmKj9RLsgonP3ooQ
-
-无需进行滤波后处理，利用循环推断算法实现歌唱语音分离
-
-https://mp.weixin.qq.com/s/GZI4uvCR3QzZDNddpBX2OQ
-
-深度学习也解决不掉语音识别问题
-
-https://mp.weixin.qq.com/s/E8brCI73IWY3P47IYPxSkg
-
-谷歌发布全新端到端语音识别系统：词错率降至5.6%
-
-http://www.cnblogs.com/qcloud1001/p/7941158.html
-
-详解卷积神经网络（CNN）在语音识别中的应用
-
-https://mp.weixin.qq.com/s/grqKRvv4dwKU26zT1qhq2g
-
-Facebook开源语音识别工具包wav2letter
-
-https://mp.weixin.qq.com/s/OeCiH4n-Y3kigI3ynMyZSg
-
-有趣的研究奥巴马Net：从文本合成真实的唇语口型
-
-https://mp.weixin.qq.com/s/mRmbrUJ2MgeDxbZn_0UiIQ
-
-2017年深度学习总结：文本和语音应用
-
-https://mp.weixin.qq.com/s/xR172RUG3JO59_2cJj_U2A
-
-显著超越流行长短时记忆网络，阿里提出DFSMN语音识别声学模型
-
-https://mp.weixin.qq.com/s/9QrahPP1gDM3eMNgx91spA
-
-深度学习也能实现“鸡尾酒会效应”：谷歌提出新型音频-视觉语音分离模型
-
-https://wenku.baidu.com/view/942891aba98271fe910ef9e3.html
-
-基于深度学习的语音识别
-
-https://mp.weixin.qq.com/s/HSdhkazt1j5phMTLRMjFlQ
-
-深度对抗声学模型训练框架
-
-https://mp.weixin.qq.com/s/bgIJMRZ64En3xMk3IGK-Vw
-
-如何基于迁移学习快速识别出讲话的人是谁？
-
-https://mp.weixin.qq.com/s/jHB5pRsisvh-ZB8uY1oRTA
-
-基于TensorFlow，人声识别如何在端上实现？
-
-https://mp.weixin.qq.com/s/I2XU9u28S6LFoTY4kizoqw
-
-清华大学郑方：语音技术与身份信息的隐私保护
-
-https://mp.weixin.qq.com/s/i7ugVM0mGqohThLW6NjNoQ
-
-阿里开源自研语音识别模型DFSMN，准确率高达96.04%
-
-https://mp.weixin.qq.com/s/o5UAnIOuDsjBWjsKg8wYCg
-
-陶建华：深度神经网络与语音
-
-https://mp.weixin.qq.com/s/DjskKa-KxiCX-hLKEw75Tg
-
-Towards End-to-End Speech Recognition
-
-https://mp.weixin.qq.com/s/xW_KvR5y12_eyp3FvtmBwQ
-
-从概念到应用，腾讯视角深入“解剖”AI平台和语音技术
-
-https://mp.weixin.qq.com/s/2DaBsFnRzqkf9PgvY3tWqw
-
-谷歌神经网络人声分离技术再突破！词错率低至23.4%
-
-https://mp.weixin.qq.com/s/V1W_M-lIJKdyGtuQyBbUPA
-
-词错率2.97%：云从科技刷新语音识别世界纪录
-
-https://mp.weixin.qq.com/s/eK8UxqMsUhDzJ-Ev7azS9w
-
-田正坤：Seq2Seq模型在语音识别中的应用
+详解深度学习中的Normalization，不只是BN（2）
 
 # CTC
 
@@ -332,3 +194,77 @@ CTC对齐有一些显著的特性：
 第二个属性是X到Y的对齐是多对一的。一个或多个输入元素可以对齐到一个输出元素，但反过来不成立。
 
 这意味着第三个属性：Y的长度不能大于X的长度。
+
+![](/images/img2/full_collapse_from_audio.png)
+
+上图是CTC对齐的一般步骤：
+
+1.输入序列（如音频的频谱图）导入一个RNN模型。
+
+2.RNN给出每个time step所对应的音节的概率$$p_t(a \mid X)$$。上图中音节的颜色越深，其概率p越高。
+
+3.计算各种时序组合的概率，给出整个序列的概率。
+
+4.合并重复并移除空白之后，得到最终的Y。
+
+严格的说，一对(X,Y)的CTC目标函数是：
+
+$$p(Y\mid X)=\sum_{A\in A_{X,Y}}\prod_{t=1}^Tp_t(a_t\mid X)$$
+
+这里的模型通常使用一个RNN来估计每个time step的概率，但是也可以自由使用任何学习算法，在给定一个固定尺寸输入片段的情况下产生一个输出类别的分布。
+
+在实际训练中，针对训练集$$\mathcal{D}$$，一般采用最小化log-likelihood的方式计算CTC loss：
+
+$$\sum_{(X,Y)\in \mathcal{D}}-\log p(Y\mid X)$$
+
+采用穷举法计算上述目标函数，计算量是非常巨大的。我们可以使用动态规划算法更快的计算loss。关键点是，如果两个对齐在同一步已经达到了相同的输出，可以合并它们。如下图所示：
+
+![](/images/img2/CTC_3.png)
+
+这里如果把音节匹配换成掷骰子的例子，就可以看出这实际上和《机器学习（二十二）》中HMM所解决的第二个问题是类似的，而HMM的前向计算正是一种动态规划算法。动态规划算法可参见《机器学习（二十七）》。
+
+下面我们来介绍一下具体的计算方法。
+
+首先使用$$\epsilon$$分隔Y中的符号，就得到了序列Z：
+
+$$Z=[\epsilon,y_1,\epsilon,y_2,\dots,\epsilon,y_U,\epsilon]$$
+
+用$$\alpha_{s,t}$$表示子序列$$Z_{1:s}$$在t步之后的CTC值。显然，我们需要计算的目标$$P(Y\mid X)$$和最后一步的$$\alpha$$有关，但只有计算出了上一步的$$\alpha$$，我们才能计算当前的$$\alpha$$。
+
+![](/images/img2/CTC_4.png)
+
+不同于掷骰子过程中，骰子的每种状态都有可能出现的情况，语音由于具有连续性，因此有些情况实际上是不可能的。比如上图的$$x_1$$就不大可能是后三个符号。
+
+所以，可能的情况实际上只有两种：
+
+### Case 1
+
+![](/images/img2/CTC_6.png)
+
+上图表示的是语音在两个相同token之间切换的情况。（这种情况也就是上面提到的hello例子中，语音在两个l之间过渡的情况。）
+
+在这种情况下，$$\alpha$$的计算公式如下：
+
+$$\alpha_{s,t}=(\alpha_{s-1,t-1}+\alpha_{s,t-1})\cdot p_t(Z_s \mid X)$$
+
+### Case 2
+
+![](/images/img2/CTC_7.png)
+
+上图表示的是语音在两个不同token之间切换的情况。
+
+在这种情况下，$$\alpha$$的计算公式如下：
+
+$$\alpha_{s,t}=(\alpha_{s-2,t-1}+\alpha_{s-1,t-1}+\alpha_{s,t-1})\cdot p_t(Z_s \mid X)$$
+
+## 推断计算
+
+我们首先看看CTC的正向推断（Inference）是如何计算的。
+
+在前面的章节我们已经指出，由于对齐有很多种可能的情况，采用穷举法是不现实的。
+
+另一个比较容易想到的方法是：每步只采用最大可能的token。这种启发式算法，实际上就是A*算法。
+
+A*算法计算速度快，但不一定能找到最优解。
+
+一般采用改良的Beam Search算法，在准确率和计算量上取得一个trade off。

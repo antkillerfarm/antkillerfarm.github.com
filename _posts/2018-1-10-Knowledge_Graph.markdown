@@ -368,6 +368,10 @@ https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750713&idx=3&sn=cb51e0
 
 ISWC 2018概览：知识图谱与机器学习
 
+https://mp.weixin.qq.com/s/0irBgfodvba5znu96caZuQ
+
+当知识图谱遇上文本智能处理，会擦出怎样的火花？
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/Z1ixoRmUDl17CF4k7JS4zg

@@ -4,29 +4,7 @@ title:  深度学习（三）——Neural Network Zoo, CNN
 category: DL 
 ---
 
-# 深度学习常用术语解释
-
-## Batch Normalization（续）
-
-http://mlexplained.com/2018/01/10/an-intuitive-explanation-of-why-batch-normalization-really-works-normalization-in-deep-learning-part-1/
-
-An Intuitive Explanation of Why Batch Normalization Really Works
-
-http://mlexplained.com/2018/01/13/weight-normalization-and-layer-normalization-explained-normalization-in-deep-learning-part-2/
-
-Weight Normalization and Layer Normalization Explained
-
-https://mp.weixin.qq.com/s/KnmQTKneSimuOGqGSPy58w
-
-详解深度学习中的Normalization，不只是BN（1）
-
-https://mp.weixin.qq.com/s/nSQvjBRMaBeoOjdHbyrbuw
-
-详解深度学习中的Normalization，不只是BN（2）
-
-https://www.jianshu.com/p/35a3bf866c46
-
-浅析数据标准化和归一化，优化机器学习算法输出结果
+# 深度学习常用术语解释（续）
 
 ## 鞍点
 

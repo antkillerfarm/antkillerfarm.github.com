@@ -292,6 +292,10 @@ https://mp.weixin.qq.com/s/dic_ssebe32L30pAUxlP6w
 
 谷歌AI-强化学习中的好奇和拖延
 
+https://mp.weixin.qq.com/s/tieGV_tDWkVVW2YFes4AqA
+
+学习何时做分类决策，深度好奇提出强化学习模型Jumper
+
 # Transformer
 
 之前的文章已经介绍了Attention和《Attention is All You Need》。但实际上，《Attention is All You Need》不仅提出了两种Attention模块，而且还提出了如下图所示的Transformer模型。该模型主要用于NMT领域，由于Attention不依赖上一刻的数据，同时精度也不弱于LSTM，因此有很好并行计算特性，在工业界得到了广泛应用。阿里巴巴和搜狗目前的NMT方案都是基于Transformer模型的。

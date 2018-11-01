@@ -96,6 +96,10 @@ http://blog.csdn.net/shuzfan/article/details/51383809
 
 神经网络压缩：Deep Compression
 
+https://mp.weixin.qq.com/s/2NOFyu_twx1EciDeDPBLKw
+
+深度神经网络加速与压缩
+
 https://zhuanlan.zhihu.com/p/24894102
 
 《Distilling the Knowledge in a Neural Network》阅读笔记

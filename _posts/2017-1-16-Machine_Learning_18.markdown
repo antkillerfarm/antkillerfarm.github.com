@@ -92,6 +92,14 @@ $$\alpha(i,j) = \min\left\{\frac{p(j)q(j,i)}{p(i)q(i,j)},1\right\}$$
 
 >注：Wilfred Keith Hastings，1930~2016，美国统计学家，多伦多大学博士，维多利亚大学教授。
 
+除了MCMC之外，常用的采样方法还有Hamiltonian Monte Carlo（HMC）。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/32315762
+
+如何简单地理解“哈密尔顿蒙特卡洛 (HMC)”？
+
 ## Gibbs Sampling
 
 这个算法虽然以Gibbs命名，但却是Geman兄弟于1984年研究Gibbs random field时，发现的算法。

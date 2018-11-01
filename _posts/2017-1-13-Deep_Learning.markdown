@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（一）——MP神经元模型, BP算法
+title:  深度学习（一）——前言, MP神经元模型, BP算法
 category: DL 
 ---
 
@@ -84,6 +84,8 @@ https://mp.weixin.qq.com/s/w_LKb-xOdyBsQBRGmHo6zw
 深度学习综述：Hinton、Yann LeCun和Bengio经典重读
 
 ![](/images/img2/AI.jpg)
+
+上图是李开复提出了AI替代人工的象限图。非创意和非关怀类的职业会逐渐被AI所取代。
 
 # MP神经元模型
 
@@ -252,22 +254,3 @@ https://mp.weixin.qq.com/s/Dygdn0Xzpx40-zUQadiiHg
 https://mp.weixin.qq.com/s/auNRIPYEwRlROFXug41Ang
 
 简单初始化，训练10000层CNN
-
-# BP算法的缺点
-
-虽然传统的BP算法，理论上可以支持任意深度的神经网络。然而实际使用中，却很少能支持3层以上的神经网络。
-
-![](/images/article/sigmoid.png)
-
-如上图所示，sigmoid函数不是线性的，一个小的输出值的改变，对应了比较大的输入值改变。换句话说，就是输出值的梯度较大，而输入值的梯度较小。而梯度在基于梯度下降的优化问题中，是至关重要的。
-
-随着层数的增多，反向传递的残差梯度会越来越小，这样的现象，被称作**梯度消失**（Vanishing Gradient）。它导致的结果是，虽然靠近输出端的神经网络已经训练好了，但输入端的神经网络仍处于随机状态。也就是说，靠近输入端的神经网络，有和没有都是一样的效果，完全体现不了深度神经网络的优越性。
-
-和梯度消失相反的概念是**梯度爆炸**（Vanishing Explode），也就是神经网络无法收敛。
-
-参考：
-
-https://mp.weixin.qq.com/s/w7EbDI9MQBZF67XM-cV1eQ
-
-一文了解神经网络中的梯度爆炸
-

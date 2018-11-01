@@ -4,6 +4,24 @@ title:  深度学习（二）——神经元激活函数, Dropout, 深度学习�
 category: DL 
 ---
 
+# BP算法的缺点
+
+虽然传统的BP算法，理论上可以支持任意深度的神经网络。然而实际使用中，却很少能支持3层以上的神经网络。
+
+![](/images/article/sigmoid.png)
+
+如上图所示，sigmoid函数不是线性的，一个小的输出值的改变，对应了比较大的输入值改变。换句话说，就是输出值的梯度较大，而输入值的梯度较小。而梯度在基于梯度下降的优化问题中，是至关重要的。
+
+随着层数的增多，反向传递的残差梯度会越来越小，这样的现象，被称作**梯度消失**（Vanishing Gradient）。它导致的结果是，虽然靠近输出端的神经网络已经训练好了，但输入端的神经网络仍处于随机状态。也就是说，靠近输入端的神经网络，有和没有都是一样的效果，完全体现不了深度神经网络的优越性。
+
+和梯度消失相反的概念是**梯度爆炸**（Vanishing Explode），也就是神经网络无法收敛。
+
+参考：
+
+https://mp.weixin.qq.com/s/w7EbDI9MQBZF67XM-cV1eQ
+
+一文了解神经网络中的梯度爆炸
+
 # 神经元激活函数
 
 ## tanh函数
@@ -114,6 +132,10 @@ https://mp.weixin.qq.com/s/yvwAPmclvgtytfhmETM_mg
 
 Hinton提出的经典防过拟合方法Dropout，只是SDR的特例
 
+https://mp.weixin.qq.com/s/QT7X_ubXS13X5E_5KdbNNQ
+
+谷歌大脑提出DropBlock卷积正则化方法，显著改进CNN精度
+
 ## Dropout预测阶段
 
 经Dropout处理过的模型，在预测阶段不再Dropout，而是打开所有的神经元。这样的效果类似于集成学习，即若干个弱分类器，集成为一个强分类器。
@@ -191,63 +213,6 @@ Batch Normalization是Google提出的一种神经网络优化技巧。
 
 3.减少模型训练对初始化的依赖。
 
-类似的概念还有Weight Normalization和Layer Normalization。
-
-### Batch Normalization
-
-![](/images/img2/BN.jpg)
-
-从上图可以看出，**BN是对input tensor的每个通道进行mini-batch级别的Normalization。而LN则是对所有通道的input tensor进行Normalization**。
-
-BN的特点：
-
-对于batch size比较小的时候，效果非常不好，而batch size越大，那么效果则越好，因为其本质上是要通过mini-batch得到对整个数据集的无偏估计；
-
-在训练阶段和推理阶段的计算过程是不一样的；
-
-在CNN上表现较好，而不适用于RNN甚至LSTM。
-
-### Layer Normalization
-
-LN的特点：
-
-不依赖于batch size的大小，即使对于batch size为1的在线学习，也可以完美适应；
-
-训练阶段和推理阶段的计算过程完全一样。
-
-适用于RNN或LSTM，而在CNN上表现一般。
-
-### Weight Normalization
-
-WN的公式如下：
-
-$$w=\frac{g}{\|v\|}v$$
-
-**WN将权重分为模和方向两个分量，并分别进行训练。**
-
-论文：
-
-《Weight Normalization: A Simple Reparameterization to Accelerate Training of Deep Neural Networks》
-
-WN的特点：
-
-计算简单，易于理解。
-
-相比于其他两种方法，其训练起来不太稳定，非常依赖于输入数据的分布。
-
-### Cosine Normalization
-
-Normalization还能怎么做？
-
-我们再来看看神经元的经典变换$$f_w(x)=w\cdot x$$。
-
-对输入数据x的变换已经做过了，横着来是LN，纵着来是BN。
-
-对模型参数w的变换也已经做过了，就是WN。
-
-好像没啥可做的了。然而天才的研究员们盯上了中间的那个点，对，就是$$\cdot$$。
-
-$$f_w(x)=\cos \theta=\frac{w\cdot x}{\|w\|\cdot\|x\|}$$
 
 参考：
 
@@ -275,10 +240,6 @@ https://mp.weixin.qq.com/s/OAn8y_uJTgyrtS2ZCyudlg
 
 Batch Normalization原理及其TensorFlow实现
 
-https://mp.weixin.qq.com/s/EBRYlCoj9rwf0NQY0B4nhQ
-
-Layer Normalization原理及其TensorFlow实现
-
 http://blog.csdn.net/u013709270/article/details/70949304
 
 深度神经网络训练的必知技巧
@@ -287,3 +248,6 @@ https://mp.weixin.qq.com/s/Oy2GIZLbQxmXMCLzMapWHQ
 
 Batch Normalization的分析与展望
 
+https://www.jianshu.com/p/35a3bf866c46
+
+浅析数据标准化和归一化，优化机器学习算法输出结果

@@ -1,86 +1,12 @@
 ---
 layout: post
-title:  深度学习（三十）——Deep Speech, 信息检索
+title:  深度学习（三十）——Deep Speech, 多任务学习, 数据增强, 自动求导, 信息检索
 category: DL 
 ---
 
 # CTC
 
-## 算法推导（续）
-
-![](/images/img2/full_collapse_from_audio.png)
-
-上图是CTC对齐的一般步骤：
-
-1.输入序列（如音频的频谱图）导入一个RNN模型。
-
-2.RNN给出每个time step所对应的音节的概率$$p_t(a \mid X)$$。上图中音节的颜色越深，其概率p越高。
-
-3.计算各种时序组合的概率，给出整个序列的概率。
-
-4.合并重复并移除空白之后，得到最终的Y。
-
-严格的说，一对(X,Y)的CTC目标函数是：
-
-$$p(Y\mid X)=\sum_{A\in A_{X,Y}}\prod_{t=1}^Tp_t(a_t\mid X)$$
-
-这里的模型通常使用一个RNN来估计每个time step的概率，但是也可以自由使用任何学习算法，在给定一个固定尺寸输入片段的情况下产生一个输出类别的分布。
-
-在实际训练中，针对训练集$$\mathcal{D}$$，一般采用最小化log-likelihood的方式计算CTC loss：
-
-$$\sum_{(X,Y)\in \mathcal{D}}-\log p(Y\mid X)$$
-
-采用穷举法计算上述目标函数，计算量是非常巨大的。我们可以使用动态规划算法更快的计算loss。关键点是，如果两个对齐在同一步已经达到了相同的输出，可以合并它们。如下图所示：
-
-![](/images/img2/CTC_3.png)
-
-这里如果把音节匹配换成掷骰子的例子，就可以看出这实际上和《机器学习（二十二）》中HMM所解决的第二个问题是类似的，而HMM的前向计算正是一种动态规划算法。动态规划算法可参见《机器学习（二十七）》。
-
-下面我们来介绍一下具体的计算方法。
-
-首先使用$$\epsilon$$分隔Y中的符号，就得到了序列Z：
-
-$$Z=[\epsilon,y_1,\epsilon,y_2,\dots,\epsilon,y_U,\epsilon]$$
-
-用$$\alpha_{s,t}$$表示子序列$$Z_{1:s}$$在t步之后的CTC值。显然，我们需要计算的目标$$P(Y\mid X)$$和最后一步的$$\alpha$$有关，但只有计算出了上一步的$$\alpha$$，我们才能计算当前的$$\alpha$$。
-
-![](/images/img2/CTC_4.png)
-
-不同于掷骰子过程中，骰子的每种状态都有可能出现的情况，语音由于具有连续性，因此有些情况实际上是不可能的。比如上图的$$x_1$$就不大可能是后三个符号。
-
-所以，可能的情况实际上只有两种：
-
-### Case 1
-
-![](/images/img2/CTC_6.png)
-
-上图表示的是语音在两个相同token之间切换的情况。（这种情况也就是上面提到的hello例子中，语音在两个l之间过渡的情况。）
-
-在这种情况下，$$\alpha$$的计算公式如下：
-
-$$\alpha_{s,t}=(\alpha_{s-1,t-1}+\alpha_{s,t-1})\cdot p_t(Z_s \mid X)$$
-
-### Case 2
-
-![](/images/img2/CTC_7.png)
-
-上图表示的是语音在两个不同token之间切换的情况。
-
-在这种情况下，$$\alpha$$的计算公式如下：
-
-$$\alpha_{s,t}=(\alpha_{s-2,t-1}+\alpha_{s-1,t-1}+\alpha_{s,t-1})\cdot p_t(Z_s \mid X)$$
-
-## 推断计算
-
-我们首先看看CTC的正向推断（Inference）是如何计算的。
-
-在前面的章节我们已经指出，由于对齐有很多种可能的情况，采用穷举法是不现实的。
-
-另一个比较容易想到的方法是：每步只采用最大可能的token。这种启发式算法，实际上就是A*算法。
-
-A*算法计算速度快，但不一定能找到最优解。
-
-一般采用改良的Beam Search算法，在准确率和计算量上取得一个trade off。
+## 推断计算（续）
 
 ![](/images/img2/CTC_5.png)
 
@@ -260,6 +186,124 @@ https://github.com/ShankHarinath/DeepSpeech2-Keras
 https://github.com/srvk/eesen
 
 eesen是基于Tensorflow开发的，苗博士之前还有个用Theano开发的叫PDNN的库。
+
+# 多任务学习
+
+https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA
+
+多任务学习-Multitask Learning概述
+
+https://mp.weixin.qq.com/s/A-CVKTz_moaFzTYywSt2gg
+
+张宇 杨强：多任务学习概述
+
+https://mp.weixin.qq.com/s/ZlCI02UdRuFBc-uKqIPE_w
+
+深度学习多任务学习综述
+
+https://mp.weixin.qq.com/s/QXOy2jo4RhCZrD5bSVzBOQ
+
+共享相关任务表征，一文读懂深度神经网络多任务学习
+
+https://mp.weixin.qq.com/s/mm9bXXTEzd8DwyYlMgGMZg
+
+NLP多任务学习：一种层次增长的神经网络结构
+
+https://mp.weixin.qq.com/s/X6FwTgr282hbqgOz3oBX-w
+
+多任务学习概述论文：从定义和方法到应用和原理分析
+
+https://blog.csdn.net/CoderPai/article/details/80080455
+
+多任务学习与深度学习
+
+https://blog.csdn.net/CoderPai/article/details/80087188
+
+利用TensorFlow一步一步构建一个多任务学习模型
+
+https://mp.weixin.qq.com/s/fcFb6WkJVP8TYpoxkQgiWQ
+
+CMU提出“十字绣网络”，自动决定多任务学习的最佳共享层
+
+https://mp.weixin.qq.com/s/i7WAFjQHK1NGVACR8x3v0A
+
+自然语言十项全能：转化为问答的多任务学习
+
+https://mp.weixin.qq.com/s/NpO1UP_mzyaeqW26xLY1Xg
+
+CVPR 2018最佳论文作者亲笔解读：研究视觉任务关联性的Taskonomy
+
+https://mp.weixin.qq.com/s/DUSa3SW1AgvJ0szL030NHQ
+
+一个AI玩57个游戏，DeepMind离真正“万能”的AGI不远了！
+
+https://mp.weixin.qq.com/s/P81I5vl99mV-4StNHmd_6A
+
+作为多目标优化的多任务学习：寻找帕累托最优解
+
+# 数据增强
+
+https://mp.weixin.qq.com/s/GqPfvWwH1T0XFwiZ86cW8A
+
+SamplePairing：针对图像处理领域的高效数据增强方式
+
+https://mp.weixin.qq.com/s/cQtXvOjSXFc4YKn7ANBc_w
+
+谷歌大脑提出自动数据增强方法AutoAugment：可迁移至不同数据集
+
+https://mp.weixin.qq.com/s/ojFo7-gUh73iK3uImFS2-Q
+
+一文道尽主流开源框架中的数据增强
+
+https://mp.weixin.qq.com/s/xJhWu-1FyhIWbFBC5oHMkw
+
+一文道尽深度学习中的数据增强方法（上）
+
+https://mp.weixin.qq.com/s/OctAGrcBB0a6TOGWMmVKUw
+
+深度学习中的数据增强（下）
+
+https://mp.weixin.qq.com/s/lMU6_ywQqneyunqEV6uDiA
+
+如何改善你的训练数据集？
+
+https://mp.weixin.qq.com/s/ooX9Hj5ejO6po6Ghb4zOug
+
+一文解读合成数据在机器学习技术下的表现
+
+https://zhuanlan.zhihu.com/p/33485388
+
+mixup与paring samples ，ICLR2018投稿论文的数据增广两种方式
+
+https://mp.weixin.qq.com/s/_7xFBLPGT0VRTJ22toHJ3g
+
+深度学习中常用的图像数据增强方法
+
+https://mp.weixin.qq.com/s/sXV9epWguGbJEZYo4yNp5Q
+
+如何正确使用样本扩充改进目标检测性能
+
+https://zhuanlan.zhihu.com/p/46833956
+
+图像数据增强之弹性形变（Elastic Distortions）
+
+# 自动求导
+
+https://mp.weixin.qq.com/s/7Z2tDhSle-9MOslYEUpq6g
+
+从概念到实践，我们该如何构建自动微分库
+
+https://mp.weixin.qq.com/s/bigKoR3IX_Jvo-re9UjqUA
+
+机器学习之——自动求导
+
+https://www.jianshu.com/p/4c2032c685dc
+
+自动求导框架综述
+
+https://mp.weixin.qq.com/s/xXwbV46-kTobAMRwfKyk_w
+
+自动求导--Deep Learning框架必备技术二三事
 
 # 信息检索
 

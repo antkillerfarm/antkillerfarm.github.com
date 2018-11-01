@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十七）——无监督/半监督/自监督深度学习, 语音合成, BERT
+title:  深度学习（四十七）——无监督/半监督/自监督深度学习, 语音合成
 category: DL 
 ---
 
@@ -272,7 +272,19 @@ WaveRNN没有沿用Dilated Convolution，而是采用了另外一种方式加速
 
 ![](/images/img2/WaveRNN.png)
 
-上图是WaveRNN的网络结构图。它将生成16bit采样点的任务，分解为生成高8bit和低8bit两个子任务。前者也叫
+上图是WaveRNN的网络结构图。它将生成16bit采样点的任务，分解为生成高8bit和低8bit两个子任务。（这两者在论文中被称作coarse parts和fine parts。）这样最终生成样本的softmax层的大小就由$$2^{16}$$变成了$$2\times 2^8$$了。
+
+这篇论文的另一个重要贡献是提出了Subscale WaveRNN。它的流程如下图所示：
+
+![](/images/img2/WaveRNN_2.png)
+
+1.将原始序列重组为B组（B表示Batch Size，这里为8）。上图中的序号表示在原始序列中的序号。
+
+2.作者发现直接分组并行生成，虽然简单，但效果不好。其原因在于只用到了过去的序列数据，而缺少对整个序列信息的把握。但直接采用全局信息，又不是RNN的做法。为此论文提出了提前量的概念，即上图中的F。
+
+3.我们可以将B组数据看作B个赛道。第1行首先发车（生成数据），当第1行生成了F个数据之后，第2行开始发车。依此类推。显然，只要赛道足够长，则在大多数时间中，都是B个赛车同时再跑。这样就达到了并行运算的效果。如上图中的三个白色方格就是同时生成的。
+
+4.数据生成好之后，再重新组合回去，得到最终的结果序列。
 
 参考：
 
@@ -346,28 +358,6 @@ https://zhuanlan.zhihu.com/p/45702794
 
 微信是不是可以来一个文字转语音功能了？
 
-# BERT
+https://mp.weixin.qq.com/s/DB2C-a_xEyoczuNSG9Bt7w
 
-https://mp.weixin.qq.com/s/Fao3i99kZ1a6aa3UhAYKhA
-
-全面超越人类！Google称霸SQuAD，BERT横扫11大NLP测试
-
-https://mp.weixin.qq.com/s/INDOBcpg5p7vtPBChAIjAA
-
-最强预训练模型BERT的Pytorch实现
-
-https://mp.weixin.qq.com/s/SZMYj4rMneR3OWST007H-Q
-
-解读谷歌最强NLP模型BERT：模型、数据和训练
-
-https://mp.weixin.qq.com/s/I315hYPrxV0YYryqsUysXw
-
-NLP的游戏规则从此改写？从word2vec, ELMo到BERT
-
-https://mp.weixin.qq.com/s/8uZ2SJtzZhzQhoPY7XO9uw
-
-详细解读谷歌新模型BERT为什么嗨翻AI圈
-
-https://mp.weixin.qq.com/s/CofeiL4fImq98UeuJ4hWTg
-
-预训练BERT，官方代码发布前他们是这样用TensorFlow解决的
+基于深度前馈序列记忆网络，如何将语音合成速度提升四倍？

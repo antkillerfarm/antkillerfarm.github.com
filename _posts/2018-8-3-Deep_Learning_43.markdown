@@ -64,6 +64,18 @@ https://mp.weixin.qq.com/s/X96oI-duHwyCFAR79inlig
 
 ## 参考
 
+https://zhuanlan.zhihu.com/p/26746283
+
+图像风格迁移(Neural Style)简史
+
+https://blog.csdn.net/red_stone1/article/details/79055467
+
+人脸识别与神经风格迁移
+
+https://blog.csdn.net/cicibabe/article/details/70885715
+
+卷积神经网络图像风格转移
+
 https://blog.csdn.net/u011534057/article/details/78935202
 
 风格迁移学习笔记(1):Multimodal Transfer: A Hierarchical Deep Convolutional Neural Network for Fast
