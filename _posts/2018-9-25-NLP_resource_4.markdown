@@ -262,3 +262,6 @@ https://mp.weixin.qq.com/s/1WtJEqhxCtBKVRs_-EevjA
 
 基于排序思想的弱监督关系抽取选种与降噪算法
 
+https://mp.weixin.qq.com/s/37qri3eFwF3kOWZxGUISzw
+
+你可能不再需要Attention：这是一个贼简单的神经机器翻译架构

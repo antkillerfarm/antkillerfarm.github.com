@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十六）——OCR, 目标检测进阶, 细粒度分类, 元学习
+title:  深度学习（四十六）——OCR, 目标检测进阶, 元学习
 category: DL 
 ---
 
@@ -192,6 +192,10 @@ CornerNet为什么有别于其他目标检测领域的主流算法？
 
 ## 参考
 
+https://mp.weixin.qq.com/s/dcrBQ-t3tLOTouEyofOBxg
+
+间谍卫星：利用卷积神经网络对卫星影像进行多尺度目标检测
+
 https://mp.weixin.qq.com/s/LtXylKTKsHdjMPw9Q1HyXA
 
 优于MobileNet、YOLOv2：移动设备上的实时目标检测系统Pelee
@@ -299,40 +303,6 @@ https://mp.weixin.qq.com/s/yswy7VwEapQJ9M5n_Uo93w
 https://mp.weixin.qq.com/s/s1qmCA8djEEanwCxeLSV2Q
 
 63页【深度CNN-目标检测】综述
-
-# 细粒度分类
-
-https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw
-
-分段映射：帮助利用少量样本习得新类别细粒度分类器
-
-https://mp.weixin.qq.com/s/zeN7rjmAnvh_7BbTmScrZw
-
-细粒度分类你懂吗？——fine-gained image classification
-
-https://mp.weixin.qq.com/s/LtWMGRBk2sbPDjeC9PmJ7g
-
-弱监督学习下的商品识别：CVPR 2018细粒度识别挑战赛获胜方案简介
-
-https://mp.weixin.qq.com/s/hcoAL1AHm_HtderWU8fSBw
-
-大连理工大学在CVPR18大规模精细粒度物种识别竞赛中获得冠军
-
-https://mp.weixin.qq.com/s/31r9FjuJn9yxrZMnfozkMQ
-
-全卷积注意网络的细粒度识别
-
-https://zhuanlan.zhihu.com/p/24738319
-
-“见微知著”——细粒度图像分析进展综述
-
-https://zhuanlan.zhihu.com/p/42067661
-
-CVPR Look Closer to See Better
-
-https://mp.weixin.qq.com/s/52hm3Cq3TFRnTMfDppivSQ
-
-中山大学等提出HSE：基于层次语义嵌入模型的精细化物体分类
 
 # 元学习
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（七）——DRN, Bi-directional RNN, seq2seq, DMN
+title:  深度学习（七）——DRN, Bi-directional RNN, seq2seq
 category: DL 
 ---
 
@@ -257,19 +257,9 @@ https://mp.weixin.qq.com/s/riIC6ybvqAJx9mzb-AQIOw
 
 Facebook AI发布新版本FairSeq序列到序列(Seq2Seq)学习工具，可生成故事与快速推断
 
-# DMN
+https://mp.weixin.qq.com/s/DIqjVxF_kACkivzez4_Hog
 
-Question answering是自然语言处理领域的一个复杂问题。它需要对文本的理解力和推理能力。大部分NLP问题都可以转化为一个QA问题。Dynamic Memory Networks可以用来处理QA问题。DMN的输入包含事实输入，问题输入，经过内部处理形成片段记忆，最终产生问题的答案。
-
-DMN可进行端到端的训练，并在多种任务上取得了state-of-the-art的效果：包括QA（Facebook 的 bAbI 数据集），情感分析文本分类（Stanford Sentiment Treebank）和词性标注（WSJ-PTB）。
-
-![](/images/article/DMN.png)
-
-参考：
-
-http://blog.csdn.net/javafreely/article/details/71994247
-
-动态记忆网络
+编码器-解码器网络：神经翻译模型详解
 
 # CNN进化史
 

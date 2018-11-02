@@ -172,6 +172,10 @@ https://www.zhihu.com/question/34223049
 
 从近两年的CVPR会议来看，目标检测的研究方向是怎么样的？
 
+https://mp.weixin.qq.com/s/R2IIuGrPG5H2nQHw1kdaBQ
+
+基于深度学习的目标检测算法综述：常见问题及解决方案
+
 https://zhuanlan.zhihu.com/p/21533724
 
 对话CVPR2016：目标检测新进展
@@ -259,10 +263,6 @@ https://mp.weixin.qq.com/s/6rSeJOqbKyrDj3FpS8J5eg
 https://mp.weixin.qq.com/s/JjsAnB_OxKS1Af9XAtw5sA
 
 一文带你读懂深度学习框架下的目标检测
-
-https://mp.weixin.qq.com/s/dcrBQ-t3tLOTouEyofOBxg
-
-间谍卫星：利用卷积神经网络对卫星影像进行多尺度目标检测
 
 https://mp.weixin.qq.com/s/66yXsRIeZdHfoZkJkci24w
 
