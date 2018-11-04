@@ -265,3 +265,8 @@ https://mp.weixin.qq.com/s/1WtJEqhxCtBKVRs_-EevjA
 https://mp.weixin.qq.com/s/37qri3eFwF3kOWZxGUISzw
 
 你可能不再需要Attention：这是一个贼简单的神经机器翻译架构
+
+https://mp.weixin.qq.com/s/Vg7CvR36_igLQbKAXU3Vrw
+
+254 页《为NLP研究写出好代码》教程
+

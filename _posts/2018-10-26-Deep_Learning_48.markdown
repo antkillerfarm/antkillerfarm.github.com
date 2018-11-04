@@ -218,6 +218,10 @@ https://mp.weixin.qq.com/s/8aL7COItG7lS4q5-3IZCmQ
 
 定制人脸图像没那么难！使用TL-GAN模型轻松变脸
 
+https://mp.weixin.qq.com/s/9t0GvQW-cmakM0E9dWxBcg
+
+旧照片着色修复神器！自注意力GAN效果惊艳
+
 # 问答系统
 
 GA-Reader

@@ -216,6 +216,10 @@ https://mp.weixin.qq.com/s/e4Bi4LRY8SCZcXTq4Zd3OQ
 
 最完整的检测模型评估指标mAP计算指南
 
+https://mp.weixin.qq.com/s/5kzWL6rCKZGX1xfQ71-gfQ
+
+详解对象检测网络性能评价指标mAP计算
+
 ## 总结
 
 ![](/images/article/rcnn_p_2.png)

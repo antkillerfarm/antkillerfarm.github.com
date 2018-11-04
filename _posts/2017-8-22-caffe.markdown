@@ -388,6 +388,10 @@ http://mp.weixin.qq.com/mp/homepage?__biz=MzUyMTA2OTM1MA==&hid=4&sn=192b1f4e4997
 
 一个OLED方面的公众号
 
+https://zhuanlan.zhihu.com/p/48343011
+
+芯片中的数学——均衡器EQ和它在高速外部总线中的应用
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/ZhVTROAdo49GLT09xr6GWg

@@ -117,3 +117,19 @@ Atiyah的高中在埃及读的（1941～1945），当时欧洲很多人为了躲
 https://www.zhihu.com/question/54779059
 
 RSA生成公私钥时质数是怎么选的？
+
+# 张量分析
+
+在同构的意义下，第零阶张量（r = 0）为标量（Scalar），第一阶张量（r = 1）为向量（Vector），第二阶张量（r = 2）则成为矩阵（Matrix）。
+
+《张量分析》，黄克智著。
+
+>注：黄克智，1927年生，固体力学家。江西中正大学本科+清华硕士+莫斯科大学博士（因应召回国，放弃博士学位）。清华大学工程力学系教授、工程力学研究所所长，中国科学院院士。断裂力学领域权威。
+
+# 拓扑学
+
+《Topopogy Without Tears》，University of New South Wales的Sidney A. Morris著。
+
+该书的中文版：
+
+http://www.topologywithouttears.net/topbookchinese.pdf

@@ -386,3 +386,11 @@ https://mp.weixin.qq.com/s/GP_t_fhklpVNhC6J6i0YbA
 https://mp.weixin.qq.com/s/_AHqFqf1zFNtBifayiTfXQ
 
 你应具备这3大统计学常识&大数据思维
+
+https://mp.weixin.qq.com/s/G6-XbqCO5iuwGDen-r6aWg
+
+唐宏:基于概率主题模型的高分辨率遥感图像非监督语义分割
+
+https://mp.weixin.qq.com/s/21LVssq2ynMgp_x1lwSC9w
+
+基于稀疏自表示与模糊双C均值聚类的SAR图像分割

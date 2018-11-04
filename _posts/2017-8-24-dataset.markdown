@@ -156,6 +156,10 @@ http://blog.csdn.net/wangkr111/article/details/44514097
 
 肤色检测&人脸检测数据集等链接大集合
 
+https://mp.weixin.qq.com/s/aPlNov77l-3hBRePbIEOrg
+
+一文道尽“人脸数据集”
+
 https://mp.weixin.qq.com/s/tewjGzfAVCKcG1dlURxyeg
 
 MIT发布的10大自然语言处理数据集和语料库
@@ -172,13 +176,13 @@ http://www.cvpapers.com/datasets.html
 
 常见的cvpr研究的数据库下载链接
 
-http://universaldependencies.org/
-
-一个依存语法方面的标注数据集。这类数据也叫做treebank数据，原因是依存语法生成的结果是一棵语法树。
-
 https://zhuanlan.zhihu.com/p/25138563
 
 各领域公开数据集下载
+
+https://mp.weixin.qq.com/s/h4FUBI6w1IPQssebR1eSXw
+
+这是一份非常全面的开源数据集，你，真的不想要吗？
 
 https://mp.weixin.qq.com/s/Kxnvv1i0nvkg0vUDBlx6MA
 
@@ -211,14 +215,6 @@ https://mp.weixin.qq.com/s/BCgVMYe011O-Jse4ZFBbxg
 https://mp.weixin.qq.com/s/37cUxUzcSZ_OgfuN_yTmlA
 
 阅读理解与问答数据集
-
-http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201703/t20170310_1471429.html
-
-国家统计局：最新县及县以上行政区划代码
-
-https://github.com/wecatch/china_regions
-
-最全最新中国省，市，地区json及sql数据
 
 https://mp.weixin.qq.com/s/484E_ycxQVwKOD6Lcpy-GQ
 

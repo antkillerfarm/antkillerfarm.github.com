@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  大数据平台参考资源（二）, 知名数据集（二）, SLAM, AI Chip（二）, 数据库（二）
+title:  大数据平台参考资源（二）, 知名数据集（二）, SLAM, 数据库（二）
 category: resource 
 ---
 
@@ -88,9 +88,17 @@ https://mp.weixin.qq.com/s/sUWy60vL-pEt5fE5PGGrww
 
 # 知名数据集
 
-https://mp.weixin.qq.com/s/h4FUBI6w1IPQssebR1eSXw
+http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201703/t20170310_1471429.html
 
-这是一份非常全面的开源数据集，你，真的不想要吗？
+国家统计局：最新县及县以上行政区划代码
+
+https://github.com/wecatch/china_regions
+
+最全最新中国省，市，地区json及sql数据
+
+http://universaldependencies.org/
+
+一个依存语法方面的标注数据集。这类数据也叫做treebank数据，原因是依存语法生成的结果是一棵语法树。
 
 https://mp.weixin.qq.com/s/7xFlELcm325Q6wEB5Pyphg
 
@@ -265,72 +273,6 @@ https://blog.csdn.net/u010128736/article/details/52860364
 https://blog.csdn.net/weixin_36340947/article/details/78246174
 
 张正友标定算法原理详解
-
-# AI Chip
-
-https://mp.weixin.qq.com/s/PDe8O5zskxD_mycwH0_3lg
-
-AI是如何影响计算机内存系统的？
-
-https://blog.csdn.net/lien0906/article/details/78863118
-
-深度学习中GPU和显存分析
-
-https://zhuanlan.zhihu.com/p/33990592
-
-HBM火了，它到底是什么？
-
-https://zhuanlan.zhihu.com/p/34164501
-
-HBM技术之显卡应用
-
-http://eyeriss.mit.edu/
-
-Eyeriss是MIT设计的一款NN加速器。
-
-https://zhuanlan.zhihu.com/p/37520172
-
-一窥ARM的AI处理器
-
-https://mp.weixin.qq.com/s/QPuOmv7-agrcgnchgs3Hkg
-
-清华大学提出AI计算芯片的存储优化新方法
-
-https://mp.weixin.qq.com/s/eyzzeYOKdah-9WGUrhbAkg
-
-非冯诺依曼新架构：IBM100万忆阻器大规模神经网络加速AI
-
-https://mp.weixin.qq.com/s/1oDVo7eGMGYODRd00OxpIw
-
-陈天奇团队推出开源AI芯片栈VTA，降低芯片设计门槛
-
-https://mp.weixin.qq.com/s/oOYGa4Mti6KpkpI4TtpitQ
-
-地平线杨铭：从无形视觉到有形芯片
-
-https://mp.weixin.qq.com/s/_8lbTU0GFEXQr_4pdQ6XPw
-
-同步SGD等现有分布式训练方式将过时，Yoshua Bengio谈迈向硬件友好的深度学习
-
-https://mp.weixin.qq.com/s/acAbNP_ERnKlL3_9v_mwow
-
-FPGA：AI ASIC的必经之路？
-
-https://mp.weixin.qq.com/s/5MyuZf_TBm2NV47CRAz5Dw
-
-2017图灵奖得主：通用芯片每年仅提升3%，神经专用架构才是未来
-
-https://mp.weixin.qq.com/s/S1fVrSfAM_UJh06Q43s8vA
-
-网络芯片架构的新改变
-
-https://mp.weixin.qq.com/s/3d7CEQ0iQzwnJ_tE7eB9Yg
-
-边缘计算芯片格局分析
-
-https://zhuanlan.zhihu.com/p/47904879
-
-AI芯片在5G中的机会
 
 # 数据库
 

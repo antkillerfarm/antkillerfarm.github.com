@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  语音识别（七）——声纹识别
+title:  语音识别（七）——声纹识别, AI Chip（二）
 category: speech 
 ---
 
@@ -208,19 +208,68 @@ https://zhuanlan.zhihu.com/p/40329331
 
 谈谈语音识别与人声的物理原理，以及真声假声头声混声等概念
 
-# 张量分析
+# AI Chip
 
-在同构的意义下，第零阶张量（r = 0）为标量（Scalar），第一阶张量（r = 1）为向量（Vector），第二阶张量（r = 2）则成为矩阵（Matrix）。
+https://mp.weixin.qq.com/s/PDe8O5zskxD_mycwH0_3lg
 
-《张量分析》，黄克智著。
+AI是如何影响计算机内存系统的？
 
->注：黄克智，1927年生，固体力学家。江西中正大学本科+清华硕士+莫斯科大学博士（因应召回国，放弃博士学位）。清华大学工程力学系教授、工程力学研究所所长，中国科学院院士。断裂力学领域权威。
+https://blog.csdn.net/lien0906/article/details/78863118
 
-# 拓扑学
+深度学习中GPU和显存分析
 
-《Topopogy Without Tears》，University of New South Wales的Sidney A. Morris著。
+https://zhuanlan.zhihu.com/p/33990592
 
-该书的中文版：
+HBM火了，它到底是什么？
 
-http://www.topologywithouttears.net/topbookchinese.pdf
+https://zhuanlan.zhihu.com/p/34164501
 
+HBM技术之显卡应用
+
+http://eyeriss.mit.edu/
+
+Eyeriss是MIT设计的一款NN加速器。
+
+https://zhuanlan.zhihu.com/p/37520172
+
+一窥ARM的AI处理器
+
+https://mp.weixin.qq.com/s/QPuOmv7-agrcgnchgs3Hkg
+
+清华大学提出AI计算芯片的存储优化新方法
+
+https://mp.weixin.qq.com/s/eyzzeYOKdah-9WGUrhbAkg
+
+非冯诺依曼新架构：IBM100万忆阻器大规模神经网络加速AI
+
+https://mp.weixin.qq.com/s/1oDVo7eGMGYODRd00OxpIw
+
+陈天奇团队推出开源AI芯片栈VTA，降低芯片设计门槛
+
+https://mp.weixin.qq.com/s/oOYGa4Mti6KpkpI4TtpitQ
+
+地平线杨铭：从无形视觉到有形芯片
+
+https://mp.weixin.qq.com/s/_8lbTU0GFEXQr_4pdQ6XPw
+
+同步SGD等现有分布式训练方式将过时，Yoshua Bengio谈迈向硬件友好的深度学习
+
+https://mp.weixin.qq.com/s/acAbNP_ERnKlL3_9v_mwow
+
+FPGA：AI ASIC的必经之路？
+
+https://mp.weixin.qq.com/s/5MyuZf_TBm2NV47CRAz5Dw
+
+2017图灵奖得主：通用芯片每年仅提升3%，神经专用架构才是未来
+
+https://mp.weixin.qq.com/s/S1fVrSfAM_UJh06Q43s8vA
+
+网络芯片架构的新改变
+
+https://mp.weixin.qq.com/s/3d7CEQ0iQzwnJ_tE7eB9Yg
+
+边缘计算芯片格局分析
+
+https://zhuanlan.zhihu.com/p/47904879
+
+AI芯片在5G中的机会
