@@ -298,6 +298,10 @@ https://mp.weixin.qq.com/s/hK6BJGAPyg_RqqilCcf2NA
 
 全局自动优化：C++机器学习库dlib引入自动调参算法
 
+https://zhuanlan.zhihu.com/p/45827914
+
+Github开源人脸识别项目face_recognition
+
 # TensorFlow
 
 https://mp.weixin.qq.com/s/kYOwUWlTP4T0IYKDWDbCsg

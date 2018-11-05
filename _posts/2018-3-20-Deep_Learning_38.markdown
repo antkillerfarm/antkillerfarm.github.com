@@ -296,6 +296,14 @@ https://mp.weixin.qq.com/s/tieGV_tDWkVVW2YFes4AqA
 
 学习何时做分类决策，深度好奇提出强化学习模型Jumper
 
+https://mp.weixin.qq.com/s/GUyZ0U5_JlXCI-5mO796SA
+
+超越DQN和A3C：深度强化学习领域近期新进展概览
+
+https://mp.weixin.qq.com/s/THgo4YzhUN2PUkyI5sSnpw
+
+开源啦：连DeepMind也捉急的游戏，OpenAI给你攻破第一关的高分算法
+
 # Transformer
 
 之前的文章已经介绍了Attention和《Attention is All You Need》。但实际上，《Attention is All You Need》不仅提出了两种Attention模块，而且还提出了如下图所示的Transformer模型。该模型主要用于NMT领域，由于Attention不依赖上一刻的数据，同时精度也不弱于LSTM，因此有很好并行计算特性，在工业界得到了广泛应用。阿里巴巴和搜狗目前的NMT方案都是基于Transformer模型的。
@@ -349,4 +357,8 @@ https://mp.weixin.qq.com/s/_UC2jlOfb34tfB_tsEXjMg
 https://mp.weixin.qq.com/s/w3IKoygTLDsAxk1MB5JrGg
 
 详细讲解Transformer新型神经网络在机器翻译中的应用
+
+https://mp.weixin.qq.com/s/HzzDG8PpDlyilQjr2PH6PA
+
+Transformer注解及PyTorch实现（上）
 

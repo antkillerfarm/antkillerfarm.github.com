@@ -322,6 +322,30 @@ https://mp.weixin.qq.com/s/8y7IIQWxXx3bCD8cK8Z3XQ
 
 # DL参考资源+
 
+https://mp.weixin.qq.com/s/fqpZ8EHgiNupXumvTMSecw
+
+北大团队研发“车脸”识别系统，不看车牌看外观特征实现精确识别
+
+https://mp.weixin.qq.com/s/ws1R-VPyJY6J18OttBDYog
+
+超少量数据训练神经网络：IEEE论文提出径向变换实现图像增强
+
+https://mp.weixin.qq.com/s/eyl0NMa1p_RmQIwnweuBgw
+
+10张图盘点计算机视觉、语音和文本理解里程碑
+
+https://mp.weixin.qq.com/s/IMx9lcMVAyB9hy_77DaJ3Q
+
+孙剑：计算力增加10000倍，算法如何设计
+
+https://mp.weixin.qq.com/s/-b8FuEQlpEb5G0L0QAxVEA
+
+如何使用深度学习为照片自动生成文本描述
+
+https://mp.weixin.qq.com/s/_7yx6IywJ1EOClZUcr0AsA
+
+PNAS：绘制情绪图谱，人类内心的表情包其实很丰富
+
 https://mp.weixin.qq.com/s/TUhr31EleePcHHNNUAWQ4A
 
 Google Brain与牛津大学主持最新《计算机视觉前沿》报告
@@ -385,4 +409,3 @@ https://mp.weixin.qq.com/s/LK8PBCC_uJoe_Rc4V940sQ
 https://mp.weixin.qq.com/s/LV8tmeDGkfmFFyQqJwY25g
 
 基于超像素的多局部区域的卷积神经网络用于全色图和多光谱图像分类
-

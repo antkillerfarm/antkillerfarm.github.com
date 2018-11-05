@@ -40,25 +40,17 @@ LSTM的主要运算量集中在$$W[h_{t-1},x_t]$$上，这里实际上可以用$
 
 由于时间序列通常具有惯性，因此$$\Delta h_{t-1}$$一般包含了大量的0，这对于某些具有跳0功能的硬件来说，是非常有利的。
 
-## IndRNN
+## Convolutional LSTM Network
 
-https://mp.weixin.qq.com/s/cAqpclkkeVrTiifz07HC1g
+论文：
 
-新型循环神经网络IndRNN：可构建更长更深的RNN
-
-https://mp.weixin.qq.com/s/7-K-nZTijoYCaprRNYXxFg
-
-新型RNN：将层内神经元相互独立以提高长程记忆
+《Convolutional LSTM Network: A Machine Learning Approach for Precipitation Nowcasting》
 
 ## 参考
 
 https://mp.weixin.qq.com/s/4IHzOAvNhHG9c8GP0zXVkQ
 
 Simple Recurrent Unit For Sentence Classification
-
-https://mp.weixin.qq.com/s/h3fF6Zvr1rSzSMpqdu8B0A
-
-电子科大提出BT-RNN：替代全连接操作而大幅度提升LSTM效率
 
 https://mp.weixin.qq.com/s/fCzHbOi7aJ8-W9GzctUFNg
 
@@ -88,65 +80,13 @@ https://mp.weixin.qq.com/s/h-MYTNTLy7ToPPEZ2JVHpw
 
 阿里巴巴论文提出Advanced LSTM：关于更优时间依赖性刻画在情感识别方面的应用
 
-https://mp.weixin.qq.com/s/SeR_zNZTu4t7kqB6ltNrmQ
-
-从循环到卷积，探索序列建模的奥秘
-
-https://mp.weixin.qq.com/s/_q69BV1r46S9X5wnLuFPSw
-
-关于序列建模，是时候抛弃RNN和LSTM了
-
 https://mp.weixin.qq.com/s/pv3gQfCayGmsmGKLbMIFpA
 
 神奇！只有遗忘门的LSTM性能优于标准LSTM
 
-https://mp.weixin.qq.com/s/mIuAn4G9l3AKFAswpbaQdA
-
-时间卷积网络（TCN）将取代RNN成为NLP预测领域王者
-
-https://mp.weixin.qq.com/s/m5GRNp6qDfVfC0mkQ4m4Yw
-
-神经语言模型如何利用上下文信息：长距离上下文的词序并不重要
-
-https://mp.weixin.qq.com/s/kuoUnt2Vhz9NhfnNqMFAhQ
-
-DeepMind提出关系RNN：构建关系推理模块，强化学习利器
-
 https://mp.weixin.qq.com/s/8BPZ_M8EGk3KxkSleYWSNw
 
 训练可解释、可压缩、高准确率的LSTM
-
-https://mp.weixin.qq.com/s/wfOzCxe3L2t11VguYLGC9Q
-
-上海交大搞出SRNN，比普通RNN也就快135倍
-
-https://mp.weixin.qq.com/s/f0sv7c-H5o5L_wy2sUonUQ
-
-CNN取代RNN？当序列建模不再需要循环网络
-
-https://mp.weixin.qq.com/s/OgN4rVDKH5WABIaRY7CHog
-
-如何让RNN神经元拥有基础通用的注意力能力
-
-https://mp.weixin.qq.com/s/KBLCrupGIuPa5nVrxcS5WQ
-
-新研究将GRU简化成单门架构，或更适用于语音识别
-
-https://mp.weixin.qq.com/s/kQozftKd_n_kYIF7KKCc8g
-
-短视频那么多，快手如何利用GRU实现各种炫酷的语音应用
-
-https://mp.weixin.qq.com/s/xwuM2Vj8G7UyuEyzTyO13A
-
-将CNN与RNN组合使用，天才还是错乱？
-
-https://mp.weixin.qq.com/s/c7XkzjLH1n5EtqdQik618g
-
-Dropout在RNN中的应用综述
-
-https://mp.weixin.qq.com/s/K6LK47_GCTeZJPAW0-Xp4Q
-
-多伦多大学提出可逆RNN：内存大降，性能不减！
 
 # L2 Normalization
 

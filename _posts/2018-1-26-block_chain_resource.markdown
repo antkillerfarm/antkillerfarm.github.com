@@ -439,3 +439,12 @@ GPS传统信号与新信号的产生
 https://mp.weixin.qq.com/s/y1nTTjsW31ck6r-Cqp_XFw
 
 基于变分混合Wishart学习的极化SAR图像分类
+
+https://mp.weixin.qq.com/s/nThxbRnAGo-QkFgrm3BtIQ
+
+一种半监督张量局部线性嵌入的极化SAR特征提取方法
+
+https://mp.weixin.qq.com/s/5rNpp2cYZhcOKZCiy4LkMQ
+
+SAR成像原理及图像鉴赏
+

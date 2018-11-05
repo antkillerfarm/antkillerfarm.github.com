@@ -156,35 +156,25 @@ https://mp.weixin.qq.com/s/caXnseARUwLIXdsZ7BXOUw
 
 用于金融时序预测的神经网络：可改善移动平均线经典策略
 
+## 连续学习
+
+https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
+
+终身机器学习: 一种持续学习的范式
+
+https://mp.weixin.qq.com/s/SBppyDBWqQUariiHbpaq1w
+
+实时深度学习的推理加速和连续学习
+
+https://mp.weixin.qq.com/s/83HufWMDnuXIOCCfgqeDJw
+
+为什么说持续学习才是AI的关键
+
+https://mp.weixin.qq.com/s/kmEFjzFIbNq0_qdjc1Wm_w
+
+DeepMind新智能体架构Unicorn：持续学习能力胜过多个基准智能体
+
 ## 参考
-
-https://mp.weixin.qq.com/s/YbdiEHb8ld1pp1ehgBzTOQ
-
-将未来信息作为正则项，Twin Networks加强RNN对长期依赖的建模能力
-
-https://mp.weixin.qq.com/s/fqpZ8EHgiNupXumvTMSecw
-
-北大团队研发“车脸”识别系统，不看车牌看外观特征实现精确识别
-
-https://mp.weixin.qq.com/s/ws1R-VPyJY6J18OttBDYog
-
-超少量数据训练神经网络：IEEE论文提出径向变换实现图像增强
-
-https://mp.weixin.qq.com/s/eyl0NMa1p_RmQIwnweuBgw
-
-10张图盘点计算机视觉、语音和文本理解里程碑
-
-https://mp.weixin.qq.com/s/IMx9lcMVAyB9hy_77DaJ3Q
-
-孙剑：计算力增加10000倍，算法如何设计
-
-https://mp.weixin.qq.com/s/-b8FuEQlpEb5G0L0QAxVEA
-
-如何使用深度学习为照片自动生成文本描述
-
-https://mp.weixin.qq.com/s/_7yx6IywJ1EOClZUcr0AsA
-
-PNAS：绘制情绪图谱，人类内心的表情包其实很丰富
 
 https://mp.weixin.qq.com/s/Nyb9qTYn5_XFhQPa8KZojw
 

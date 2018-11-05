@@ -44,7 +44,7 @@ https://mp.weixin.qq.com/s/rXr_XBc2Psh3NSA0pj4ptQ
 
 # Normalization进阶
 
-类似的概念还有Weight Normalization和Layer Normalization。
+和Batch Normalization类似的概念还有Weight Normalization和Layer Normalization。
 
 ### Batch Normalization
 
@@ -183,7 +183,7 @@ $$Y^*=\mathop{\text{argmax}}_{Y} p(Y \mid X)$$
 
 为了解决这些问题，CTC为一组允许的输出引入了一个新的标记。这个新的标记有时被称为空白标记。我们在这里将其称为$$\epsilon$$，$$\epsilon$$标记不对应任何东西，可以从输出中移除。
 
-CTC允许的对齐是与输入的长度相同。 在合并重复并移除ε标记后，我们允许任何映射到Y的对齐方式。
+CTC允许的对齐是与输入的长度相同。 在合并重复并移除$$\epsilon$$标记后，我们允许任何映射到Y的对齐方式。
 
 如果Y在同一行中有两个相同的字符，那么一个有效的对齐必须在它们之间有一个$$\epsilon$$。有了这个规则，我们就可以区分“hello”和“helo”了。
 

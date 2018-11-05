@@ -317,3 +317,7 @@ http://m.uczzd.cn/webview/news?aid=15020380163392206798
 https://mp.weixin.qq.com/s/Lnolh9y0rf86wOGa-F1xmw
 
 计算机的诞生史
+
+https://zhuanlan.zhihu.com/p/48593932
+
+CPU底部的小块是干什么用的？为什么CPU这么多电源引脚？
