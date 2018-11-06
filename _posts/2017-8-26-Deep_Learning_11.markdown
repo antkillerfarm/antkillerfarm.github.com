@@ -30,6 +30,10 @@ https://mp.weixin.qq.com/s/tceLrEalafgL8R44DZYP9g
 
 旷视科技提出新型轻量架构ShuffleNet V2：从理论复杂度到实用设计准则
 
+https://mp.weixin.qq.com/s/Yhvuog6NZOlVWEZURyqWxA
+
+ShuffleNetV2：轻量级CNN网络中的桂冠
+
 ## Separable convolution
 
 前面介绍的都是正方形的卷积核，实际上长条形的卷积核也是很常用的。比如可分离卷积。

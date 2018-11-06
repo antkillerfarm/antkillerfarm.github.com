@@ -376,6 +376,10 @@ https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651749250&idx=1&sn=6f3822
 
 美团大脑：知识图谱的建模方法及其应用
 
+https://mp.weixin.qq.com/s/bRZLHO4CJabaPMqYLW-_1g
+
+从零到一学习知识图谱的技术与应用
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/Z1ixoRmUDl17CF4k7JS4zg

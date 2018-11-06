@@ -227,6 +227,8 @@ https://en.wikipedia.org/wiki/Cross_entropy
 
 http://www.voidcn.com/blog/rtygbwwwerr/article/p-5047519.html
 
+交叉熵（Cross-Entropy）
+
 二值化过程实际上就是从分布$$R=\{r_1,r_2,\dots,r_L\}$$到分布$$Q=\{q_A,q_B\}$$的过程。
 
 因此

@@ -182,6 +182,10 @@ https://mp.weixin.qq.com/s/DkZGkI-CnEHfhXTDyp2nHQ
 
 超参数搜索不够高效？这几大策略了解一下
 
+https://zhuanlan.zhihu.com/p/48642938
+
+分享一篇比较全面的AutoML综述
+
 # Optimizer
 
 在《机器学习（一）》中，我们已经指出梯度下降是解决凸优化问题的一般方法。而如何更有效率的梯度下降，就是本节中Optimizer的责任了。
@@ -295,26 +299,4 @@ $$\theta_{t+1} = \theta_{t} - \dfrac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \hat{m}_
 http://cs229.stanford.edu/proj2015/054_report.pdf
 
 ncorporating Nesterov Momentum into Adam
-
-## 参考
-
-http://sebastianruder.com/optimizing-gradient-descent/
-
-An overview of gradient descent optimization algorithms
-
-https://mp.weixin.qq.com/s/k_d02G2V4yd6HdGfw2mf1Q
-
-从修正Adam到理解泛化：概览2017年深度学习优化算法的最新研究进展
-
-https://mp.weixin.qq.com/s/cOCCapYrmrS_DyPkj_XRlg
-
-常见的几种最优化方法
-
-https://morvanzhou.github.io/tutorials/machine-learning/ML-intro/3-06-speed-up-learning/
-
-加速神经网络训练
-
-http://www.cnblogs.com/neopenx/p/4768388.html
-
-自适应学习率调整：AdaDelta
 

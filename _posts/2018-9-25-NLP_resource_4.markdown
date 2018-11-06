@@ -270,3 +270,6 @@ https://mp.weixin.qq.com/s/Vg7CvR36_igLQbKAXU3Vrw
 
 254 页《为NLP研究写出好代码》教程
 
+https://mp.weixin.qq.com/s/Q0jxUiFFbrEMhy5Sv8979A
+
+详解文本分类之多通道CNN的理论与实践

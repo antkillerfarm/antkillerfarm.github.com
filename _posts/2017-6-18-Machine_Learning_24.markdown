@@ -4,9 +4,29 @@ title:  机器学习（二十四）——单分类SVM&多分类SVM, 时间序列
 category: ML 
 ---
 
-# Optimizer
+# Optimizer（续）
 
-## 参考（续）
+## 参考
+
+http://sebastianruder.com/optimizing-gradient-descent/
+
+An overview of gradient descent optimization algorithms
+
+https://mp.weixin.qq.com/s/k_d02G2V4yd6HdGfw2mf1Q
+
+从修正Adam到理解泛化：概览2017年深度学习优化算法的最新研究进展
+
+https://mp.weixin.qq.com/s/cOCCapYrmrS_DyPkj_XRlg
+
+常见的几种最优化方法
+
+https://morvanzhou.github.io/tutorials/machine-learning/ML-intro/3-06-speed-up-learning/
+
+加速神经网络训练
+
+http://www.cnblogs.com/neopenx/p/4768388.html
+
+自适应学习率调整：AdaDelta
 
 https://mp.weixin.qq.com/s/VoBK-l_ieSg2UupC2ix2pA
 
@@ -278,33 +298,3 @@ I模型有什么用呢？我们观察一下I(1)：
 $$(1-L) X_t = X_t - X_{t-1} = \Delta X$$
 
 有的时候，虽然I(0)不是平稳序列，但I(1)是平稳序列，这时我们称该序列是**1阶平稳序列**。n阶的情况，可依此类推。
-
-### ARIMA模型
-
-ARIMA模型可以看作是两个随机过程的组合。
-
-首先是非平稳过程：
-
-$$Y_t = (1-L)^d X_t$$
-
-接着是一个广义平稳过程：
-
-$$\left( 1 - \sum_{i=1}^p \phi_i L^i \right) Y_t = \left( 1 + \sum_{i=1}^q \theta_i L^i \right) \varepsilon_t$$
-
-最后得到ARIMA模型的公式：
-
-$$\left( 1 - \sum_{i=1}^p \phi_i L^i\right)
-(1-L)^d X_t = \delta + \left( 1 + \sum_{i=1}^q \theta_i L^i \right) \varepsilon_t$$
-
-上式也被记作**ARIMA(p,d,q)**。从上式可以看出，ARIMA模型实际上就是利用I模型，将时间序列转化为平稳序列之后的ARMA模型。
-
->注：上面的内容只是对ARIMA模型给出一个简单的定义。实际的假设检验、参数估计的步骤，还是比较复杂的，完全可以写本书来说。
-
-## 其它
-
-除了ARIMA系列模型之外，ARCH系列模型也用的比较多：
-
-autoregressive conditional heteroskedasticity, ARCH
-
-generalized autoregressive conditional heteroskedasticity, GARCH
-

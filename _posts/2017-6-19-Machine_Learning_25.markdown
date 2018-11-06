@@ -6,6 +6,35 @@ category: ML
 
 # 时间序列分析（续）
 
+### ARIMA模型
+
+ARIMA模型可以看作是两个随机过程的组合。
+
+首先是非平稳过程：
+
+$$Y_t = (1-L)^d X_t$$
+
+接着是一个广义平稳过程：
+
+$$\left( 1 - \sum_{i=1}^p \phi_i L^i \right) Y_t = \left( 1 + \sum_{i=1}^q \theta_i L^i \right) \varepsilon_t$$
+
+最后得到ARIMA模型的公式：
+
+$$\left( 1 - \sum_{i=1}^p \phi_i L^i\right)
+(1-L)^d X_t = \delta + \left( 1 + \sum_{i=1}^q \theta_i L^i \right) \varepsilon_t$$
+
+上式也被记作**ARIMA(p,d,q)**。从上式可以看出，ARIMA模型实际上就是利用I模型，将时间序列转化为平稳序列之后的ARMA模型。
+
+>注：上面的内容只是对ARIMA模型给出一个简单的定义。实际的假设检验、参数估计的步骤，还是比较复杂的，完全可以写本书来说。
+
+## 其它
+
+除了ARIMA系列模型之外，ARCH系列模型也用的比较多：
+
+autoregressive conditional heteroskedasticity, ARCH
+
+generalized autoregressive conditional heteroskedasticity, GARCH
+
 ## 参考
 
 https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average

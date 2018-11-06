@@ -288,3 +288,7 @@ https://mp.weixin.qq.com/s/84Rk5CP2uLaCBIifL465VQ
 https://mp.weixin.qq.com/s/O9QDUNXftZeEohxiW6LtZw
 
 朴素贝叶斯详解及中文舆情分析
+
+https://mp.weixin.qq.com/s/xYNCKy36n8CoaGzABlI5Wg
+
+从零开始用python搭建推荐引擎

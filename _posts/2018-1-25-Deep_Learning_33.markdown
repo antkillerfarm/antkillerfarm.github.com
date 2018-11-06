@@ -233,6 +233,10 @@ https://zhuanlan.zhihu.com/p/42864711
 
 胶囊网络到底是什么东东？
 
+https://github.com/freefuiiismyname/capsule-mrc
+
+基于capsule的观点型阅读理解模型
+
 # 手势识别
 
 https://zhuanlan.zhihu.com/p/26630215
