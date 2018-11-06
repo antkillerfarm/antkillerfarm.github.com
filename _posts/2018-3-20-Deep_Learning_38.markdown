@@ -304,6 +304,10 @@ https://mp.weixin.qq.com/s/THgo4YzhUN2PUkyI5sSnpw
 
 开源啦：连DeepMind也捉急的游戏，OpenAI给你攻破第一关的高分算法
 
+https://mp.weixin.qq.com/s/loH6M0_U1DVrod0Drkl4eg
+
+深度强化学习教机器人自己穿衣服！
+
 # Transformer
 
 之前的文章已经介绍了Attention和《Attention is All You Need》。但实际上，《Attention is All You Need》不仅提出了两种Attention模块，而且还提出了如下图所示的Transformer模型。该模型主要用于NMT领域，由于Attention不依赖上一刻的数据，同时精度也不弱于LSTM，因此有很好并行计算特性，在工业界得到了广泛应用。阿里巴巴和搜狗目前的NMT方案都是基于Transformer模型的。
@@ -362,3 +366,6 @@ https://mp.weixin.qq.com/s/HzzDG8PpDlyilQjr2PH6PA
 
 Transformer注解及PyTorch实现（上）
 
+https://mp.weixin.qq.com/s/YDaSv5oHLEtyJrp4Y5e64A
+
+Transformer注解及PyTorch实现（下）

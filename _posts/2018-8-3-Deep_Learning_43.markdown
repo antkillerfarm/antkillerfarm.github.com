@@ -76,6 +76,10 @@ https://blog.csdn.net/cicibabe/article/details/70885715
 
 卷积神经网络图像风格转移
 
+https://blog.csdn.net/stdcoutzyx/article/details/53771471
+
+图像风格转换(Image style transfer)
+
 https://blog.csdn.net/u011534057/article/details/78935202
 
 风格迁移学习笔记(1):Multimodal Transfer: A Hierarchical Deep Convolutional Neural Network for Fast

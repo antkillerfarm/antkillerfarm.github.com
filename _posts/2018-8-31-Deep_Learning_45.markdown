@@ -330,6 +330,10 @@ https://mp.weixin.qq.com/s/vFdm-UHns7Nhbmdoiu6jWg
 
 谷歌终于开源BERT代码：3亿参数量，机器之心全面解读
 
+https://mp.weixin.qq.com/s/dV4RkxZOC9o2BxNi0GljKQ
+
+谷歌最强NLP模型BERT官方中文版来了！多语言模型支持100种语言
+
 # DMN
 
 Question answering是自然语言处理领域的一个复杂问题。它需要对文本的理解力和推理能力。大部分NLP问题都可以转化为一个QA问题。Dynamic Memory Networks可以用来处理QA问题。DMN的输入包含事实输入，问题输入，经过内部处理形成片段记忆，最终产生问题的答案。

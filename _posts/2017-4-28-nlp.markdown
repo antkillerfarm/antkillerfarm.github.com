@@ -78,6 +78,14 @@ https://mp.weixin.qq.com/s/mekBRtHcXqbMJiN1CgbgQg
 
 聊天机器人是如何工作的：基于深度学习的对话系统教程 152页PPT
 
+https://mp.weixin.qq.com/s/wQEahUTHvqDNndv8Spkolw
+
+清华刘洋与邓力合著338页新书《Deep Learning in Natural Language Processing》
+
+https://mp.weixin.qq.com/s/ZL6T-8M-KfA5wSHcao_PDw
+
+152页基于深度学习的聊天机器人全面总结
+
 ## 书籍
 
 http://ccl.pku.edu.cn/alcourse/nlp/LectureNotes/Natural%20Language%20Processing%20with%20Python.pdf

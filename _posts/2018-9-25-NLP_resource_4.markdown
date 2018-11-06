@@ -268,8 +268,12 @@ https://mp.weixin.qq.com/s/37qri3eFwF3kOWZxGUISzw
 
 https://mp.weixin.qq.com/s/Vg7CvR36_igLQbKAXU3Vrw
 
-254 页《为NLP研究写出好代码》教程
+254页《为NLP研究写出好代码》教程
 
 https://mp.weixin.qq.com/s/Q0jxUiFFbrEMhy5Sv8979A
 
 详解文本分类之多通道CNN的理论与实践
+
+https://mp.weixin.qq.com/s/yA_dvLZ7adBd6Xw2MufhWw
+
+程序翻译新突破：UC伯克利提出树到树的程序翻译神经网络

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十九）——语音识别, 细粒度分类, RNN进阶
+title:  深度学习（四十九）——语音识别, 细粒度分类, AlphaGo
 category: DL 
 ---
 
@@ -204,80 +204,176 @@ https://mp.weixin.qq.com/s/52hm3Cq3TFRnTMfDppivSQ
 
 中山大学等提出HSE：基于层次语义嵌入模型的精细化物体分类
 
-# RNN进阶
+# AlphaGo
 
-## IndRNN
+樊麾讲解AlphaGo与李世石的五番棋：
 
-https://mp.weixin.qq.com/s/cAqpclkkeVrTiifz07HC1g
+https://deepmind.com/research/alphago/alphago-games-simplified-chinese/
 
-新型循环神经网络IndRNN：可构建更长更深的RNN
+论文：
 
-https://mp.weixin.qq.com/s/7-K-nZTijoYCaprRNYXxFg
+《Mastering the game of Go with deep neural networks and tree search》
 
-新型RNN：将层内神经元相互独立以提高长程记忆
+## Leela Zero
+
+Leela Zero是比利时人Gian-Carlo Pascutto开源的围棋AI。它的算法与AlphaGo Zero相同。而训练采用GTP协议，集合全球算力，进行分布式训练。
+
+官网：
+
+http://zero.sjeng.org/
+
+代码：
+
+https://github.com/gcp/leela-zero
+
+>十多年前，当我还是一个中二青年的时候，就幻想有朝一日能够拿围棋世界冠军。当然，就算再中二，我自己也明白靠实力那是不可能的，当时做梦的法宝是制造一个AI，然后碾压一下所谓的国手。   
+>按照当时人们的预计(2000年前后)，这个AI在2030年之前，都不可能造出来，然而，最终的结果实际上只花了一半左右的时间。   
+>再之后，随着AI围棋的平民化，我的中二梦终于也有人将之付诸实现了：   
+>https://mp.weixin.qq.com/s/npt2zZrKwPnNdY-hsa2RjQ   
+>AI再乱围棋圈：“食言之战”柯洁落败；首例素人作弊引风波
+
+这次作弊风波所使用的AI就是Leela Zero，可见目前（2018.5）它的棋力已经超过了顶尖棋手。
+
+## ELF OpenGo
+
+ELF OpenGo是Facebook开源的围棋AI，它是FB的AI游戏框架ELF的一部分。
+
+官网：
+
+https://github.com/pytorch/ELF
+
+## PhoenixGo
+
+PhoenixGo是腾讯微信团队的AlphaGo Zero复刻版。
+
+官网：
+
+https://github.com/Tencent/PhoenixGo
+
+参考：
+
+https://mp.weixin.qq.com/s/tJDmxsuS1QigYS75ZIdzRA
+
+微信团队开源围棋AI技术PhoenixGo，复现AlphaGo Zero论文
 
 ## 参考
 
-https://mp.weixin.qq.com/s/SeR_zNZTu4t7kqB6ltNrmQ
+https://mp.weixin.qq.com/s/Sfv-jzQAkN0PsZOGZUQhkQ
 
-从循环到卷积，探索序列建模的奥秘
+AlphaGo Zero横空出世，DeepMind Nature论文解密不使用人类知识掌握围棋
 
-https://mp.weixin.qq.com/s/_q69BV1r46S9X5wnLuFPSw
+https://mp.weixin.qq.com/s/oAxouYX7-wDC5okbu--Wuw
 
-关于序列建模，是时候抛弃RNN和LSTM了
+Nature重磅：人工智能从0到1, 无师自通完爆阿法狗100-0
 
-https://mp.weixin.qq.com/s/mIuAn4G9l3AKFAswpbaQdA
+https://zhuanlan.zhihu.com/p/30262872
 
-时间卷积网络（TCN）将取代RNN成为NLP预测领域王者
+关于AlphaGo Zero
 
-https://mp.weixin.qq.com/s/m5GRNp6qDfVfC0mkQ4m4Yw
+https://zhuanlan.zhihu.com/p/30263585
 
-神经语言模型如何利用上下文信息：长距离上下文的词序并不重要
+DeepMind新一代围棋程序AlphaGo Zero再次登上Nature
 
-https://mp.weixin.qq.com/s/kuoUnt2Vhz9NhfnNqMFAhQ
+https://www.zhihu.com/question/66861459
 
-DeepMind提出关系RNN：构建关系推理模块，强化学习利器
+如何评价DeepMind发表在Nature上的AlphaGo Zero？
 
-https://mp.weixin.qq.com/s/wfOzCxe3L2t11VguYLGC9Q
+http://www.alphago-games.com/
 
-上海交大搞出SRNN，比普通RNN也就快135倍
+AlphaGo的棋谱
 
-https://mp.weixin.qq.com/s/f0sv7c-H5o5L_wy2sUonUQ
+https://deepmind.com/blog/alphago-zero-learning-scratch/
 
-CNN取代RNN？当序列建模不再需要循环网络
+AlphaGo Zero官方声明
 
-https://mp.weixin.qq.com/s/h3fF6Zvr1rSzSMpqdu8B0A
+https://zhuanlan.zhihu.com/mathNote
 
-电子科大提出BT-RNN：替代全连接操作而大幅度提升LSTM效率
+某牛的专栏，主要讲自制AlphaGo
 
-https://mp.weixin.qq.com/s/OgN4rVDKH5WABIaRY7CHog
+https://mp.weixin.qq.com/s/DC9QqHdWT0xFnowEBuJDbw
 
-如何让RNN神经元拥有基础通用的注意力能力
+自动化所解读“深度强化学习”：从AlphaGo到AlphaGoZero
 
-https://mp.weixin.qq.com/s/KBLCrupGIuPa5nVrxcS5WQ
+https://mp.weixin.qq.com/s/uZtaxRwROCqYmL2k6Muxaw
 
-新研究将GRU简化成单门架构，或更适用于语音识别
+从阿尔法狗元(AlphaGo Zero)的诞生看终极算法的可能性
 
-https://mp.weixin.qq.com/s/kQozftKd_n_kYIF7KKCc8g
+https://mp.weixin.qq.com/s/i5OmLu8aNbypiTUmP4teeQ
 
-短视频那么多，快手如何利用GRU实现各种炫酷的语音应用
+刘遥行：深入浅出看懂AlphaGo Zero
 
-https://mp.weixin.qq.com/s/xwuM2Vj8G7UyuEyzTyO13A
+https://mp.weixin.qq.com/s/aBrwbB_DOGTen-6XL7LGFQ
 
-将CNN与RNN组合使用，天才还是错乱？
+邓侃：白话蒙特卡洛树搜索和ResNet
 
-https://mp.weixin.qq.com/s/c7XkzjLH1n5EtqdQik618g
+https://mp.weixin.qq.com/s/nbTkr0PImlXUSYl91HD91Q
 
-Dropout在RNN中的应用综述
+AlphaGo背后的力量：蒙特卡洛树搜索入门指南
 
-https://mp.weixin.qq.com/s/K6LK47_GCTeZJPAW0-Xp4Q
+https://mp.weixin.qq.com/s/-tH7DQo1cK9gA0bcpBJSDA
 
-多伦多大学提出可逆RNN：内存大降，性能不减！
+AlphaGo Zero：笔记与伪代码
 
-https://mp.weixin.qq.com/s/lvaWx7J4HFTvYxy7-B9vYg
+https://mp.weixin.qq.com/s/CJuVoOf7idUChFIn7dH0Lg
 
-周志华等提出RNN可解释性方法，看看RNN内部都干了些什么
+围棋中的数学原理
 
-https://mp.weixin.qq.com/s/YbdiEHb8ld1pp1ehgBzTOQ
+https://mp.weixin.qq.com/s/d46qNFaftt4wxpV4sZnG-w
 
-将未来信息作为正则项，Twin Networks加强RNN对长期依赖的建模能力
+一张图看懂AlphaGo Zero
+
+https://zhuanlan.zhihu.com/p/31749249
+
+比AlphaGo Zero更强的AlphaZero问世，8小时解决一切棋类！
+
+https://mp.weixin.qq.com/s/L7bZMkqyncwEt6D5tK1OdQ
+
+AlphaZero炼成最强通用棋类AI，DeepMind强化学习算法8小时完爆人类棋类游戏
+
+https://mp.weixin.qq.com/s/tFdnxqV5a5xZrFtB6E0AiQ
+
+新AlphaZero出世称霸棋界，8小时搞定一切棋类！自对弈通用强化学习无师自通！
+
+https://mp.weixin.qq.com/s/qYWsFBKNCKCGUmizX_1sVg
+
+AlphaGo 教学工具终于上线了！
+
+https://mp.weixin.qq.com/s/JxbIeDk8_wnYu_ewUHp29g
+
+深度学习与围棋实战书籍《Deep Learning and the Game of Go》
+
+https://mp.weixin.qq.com/s/gsRnbknytz2FY2dWgdWEYg
+
+精通国际象棋的AI研究员：AlphaZero真的是一次突破吗？
+
+https://mp.weixin.qq.com/s/Przl4ivbNuOFmz4pcYTrpQ
+
+浅述：从Minimax到AlphaZero，完全信息博弈之路（1）
+
+https://zhuanlan.zhihu.com/p/32089487
+
+AlphaZero实战：从零学下五子棋
+
+http://mp.weixin.qq.com/s/72riTTC3w0q9oF5H-51kXA
+
+手把手教你搭建AlphaZero（使用Python和Keras）
+
+https://mp.weixin.qq.com/s/Qw2tT7H1PwDvPgOYy8YUsQ
+
+AlphaGo Zero代码迟迟不开源，TF等不及自己推了一个
+
+https://mp.weixin.qq.com/s/Vq-osjgNXJQu5avGkxQdsw
+
+手把手：AlphaGo有啥了不起，我也能教你做一个
+
+https://mp.weixin.qq.com/s/ajajJ9yJZsOy4Vc0ULBxXg
+
+国际象棋版AlphaZero出来了诶，还开源了Keras实现
+
+https://zhuanlan.zhihu.com/p/41814142
+
+从源码解密AlphaGo Zero背后基本原理
+
+https://www.ifanr.com/630602
+
+AlphaGo的棋局，与人工智能有关，与人生无关

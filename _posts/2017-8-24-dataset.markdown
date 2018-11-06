@@ -184,9 +184,13 @@ https://mp.weixin.qq.com/s/h4FUBI6w1IPQssebR1eSXw
 
 这是一份非常全面的开源数据集，你，真的不想要吗？
 
-https://mp.weixin.qq.com/s/Kxnvv1i0nvkg0vUDBlx6MA
+https://mp.weixin.qq.com/s/qh4evahPVjvZlzqan7RIKg
 
-向机器学习偏见开战：谷歌展示全球涂鸦数据集分析结果
+囊括欧亚非大陆多种语言的25个平行语料库数据集
+
+https://mp.weixin.qq.com/s/_A71fTgwSyaW5XTAySIGOA
+
+最强数据集集合：50个最佳机器学习公共数据集
 
 https://mp.weixin.qq.com/s/SKZhcd3QpoVMubTkD14iWw
 

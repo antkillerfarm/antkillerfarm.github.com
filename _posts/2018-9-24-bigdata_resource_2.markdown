@@ -88,6 +88,10 @@ https://mp.weixin.qq.com/s/sUWy60vL-pEt5fE5PGGrww
 
 # 知名数据集
 
+https://mp.weixin.qq.com/s/Kxnvv1i0nvkg0vUDBlx6MA
+
+向机器学习偏见开战：谷歌展示全球涂鸦数据集分析结果
+
 http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201703/t20170310_1471429.html
 
 国家统计局：最新县及县以上行政区划代码
@@ -151,6 +155,10 @@ CIFAR-10+ImageNet=？CINIC-10！
 https://mp.weixin.qq.com/s/vTnc55KAiGaFfktHPZctbw
 
 捡漏！用谷歌图片搜索自制深度学习数据集
+
+https://zhuanlan.zhihu.com/p/39737327
+
+想训练动作识别模型？这里有六个数据源供你参考
 
 # SLAM
 
