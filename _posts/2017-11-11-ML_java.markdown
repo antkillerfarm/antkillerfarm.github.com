@@ -355,3 +355,28 @@ http://www.cnblogs.com/wingyip/p/5185593.html
 
 FlatBuffers初探
 
+# DL参考资源+
+
+https://mp.weixin.qq.com/s/LU5-zrWof5HmgqiIx6aNsg
+
+用神经网络来判定量子纠缠？这里有一篇简单易懂的方法解读
+
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750713&idx=1&sn=c24923e28907f90754967da424891831
+
+Diss所有深度生成模型，DeepMind说它们真的不知道到底不知道什么
+
+https://mp.weixin.qq.com/s/dpJRequ5eilPKBT-wqA6YQ
+
+厉害了！AI成功伪装人类贡献GitHub修复补丁
+
+https://mp.weixin.qq.com/s/fqHropcxoP0AfQu2m1-wYQ
+
+王克欣 : 详解记忆增强神经网络
+
+https://mp.weixin.qq.com/s/LK8PBCC_uJoe_Rc4V940sQ
+
+小心你发的图：机器视觉推断你的家庭成员
+
+https://mp.weixin.qq.com/s/LV8tmeDGkfmFFyQqJwY25g
+
+基于超像素的多局部区域的卷积神经网络用于全色图和多光谱图像分类

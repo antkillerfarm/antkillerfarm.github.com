@@ -6,6 +6,41 @@ category: language
 
 # Python
 
+## `__init__.py`的作用
+
+`__init__.py`文件的作用是将文件夹变为一个Python模块,Python中的每个模块的包中，都有`__init__.py`文件。
+
+示例：
+
+{% highlight python %}
+# package
+# __init__.py
+import re
+import urllib
+import sys
+import os
+
+# a.py
+import package 
+print(package.re, package.urllib, package.sys, package.os)
+{% endhighlight %}
+
+`__init__.py`中还有一个重要的变量，`__all__`,它用来将模块全部导入。
+
+{% highlight python %}
+# __init__.py
+__all__ = ['os', 'sys', 're', 'urllib']
+
+# a.py
+from package import *
+{% endhighlight %}
+
+参见：
+
+http://www.cnblogs.com/Lands-ljk/p/5880483.html
+
+Python `__init__.py`作用详解
+
 ## 字符串格式化
 
 目前python的字符串格式化，有两种style：Old Style和New Style。两者的区别详见：
@@ -254,28 +289,6 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/pysqlite
 https://mp.weixin.qq.com/s/HcmOmwWQFBIOZs8p3nr7CQ
 
 让Python更加充分的使用Sqlite3
-
-## 如何通过需认证的代理获取HTTP网页
-
-Python内置的urllib和urllib2模块都可用于获取HTTP网页，但使用范围是不同的。urllib只支持HTTP 0.9和HTTP 1.0，所以如果只是使用代理可以使用urllib.FancyURLopener类，如果该代理还需要认证的话urllib就不行了。因为代理认证是HTTP 1.1中引入的。
-
-这时可以考虑使用urllib2模块。代码如下：
-
-{% highlight python %}
-import urllib2
-l_proxy_info = {
-'user' : 'user',
-'pass' : 'pass',
-'host' : 'host',
-'port' : 3128
-}
-
-l_proxy_support = urllib2.ProxyHandler({"http" : "http://%(user)s:%(pass)s@%(host)s:%(port)d" % l_proxy_info})
-l_opener = urllib2.build_opener(l_proxy_support, urllib2.HTTPHandler)
-
-urllib2.install_opener(l_opener)
-usock = urllib2.urlopen('http://www.sohu.com')
-{% endhighlight %}
 
 ## python调用GTK函数的一般规则
 

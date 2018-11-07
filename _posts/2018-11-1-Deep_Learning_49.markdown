@@ -170,6 +170,10 @@ https://mp.weixin.qq.com/s/eK8UxqMsUhDzJ-Ev7azS9w
 
 田正坤：Seq2Seq模型在语音识别中的应用
 
+https://zhuanlan.zhihu.com/p/48729548
+
+端到端的语音识别（ASR）错词率降低到至3.4%左右
+
 # 细粒度分类
 
 https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw

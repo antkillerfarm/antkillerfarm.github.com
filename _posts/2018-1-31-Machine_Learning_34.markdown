@@ -150,6 +150,10 @@ http://blog.csdn.net/zhoubl668/article/details/7787690
 
 标注偏置问题(Label Bias Problem)和HMM、MEMM、CRF模型比较
 
+http://tripleday.cn/2016/07/14/hmm-memm-crf/
+
+HMM、MEMM和CRF的学习总结
+
 # CRF
 
 条件随机场(Conditional Random Field)由Lafferty等人于2001年提出，结合了最大熵模型和隐马尔可夫模型的特点，是一种无向图模型，近年来在分词、词性标注和命名实体识别等序列标注任务中取得了很好的效果。

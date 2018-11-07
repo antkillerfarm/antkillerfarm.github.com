@@ -70,6 +70,12 @@ linux:
 
 `pip list`
 
+离线下载pip包进行安装：
+
+下载：`pip install <package> --download /tmp/offline_packages`
+
+安装：`pip install --no-index --find-links="/tmp/tranferred_packages" <package>`
+
 ## IDE
 
 官方自带的IDLE，以现代IDE的观点来看，只是个精致的小玩具而已。
@@ -406,39 +412,3 @@ with语句首先执行yield之前的语句，因此打印出<h1>；yield调用�
 https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001478651770626de401ff1c0d94f379774cabd842222ff000
 
 contextlib
-
-## `__init__.py`的作用
-
-`__init__.py`文件的作用是将文件夹变为一个Python模块,Python 中的每个模块的包中，都有`__init__.py`文件。
-
-示例：
-
-{% highlight python %}
-# package
-# __init__.py
-import re
-import urllib
-import sys
-import os
-
-# a.py
-import package 
-print(package.re, package.urllib, package.sys, package.os)
-{% endhighlight %}
-
-`__init__.py`中还有一个重要的变量，`__all__`,它用来将模块全部导入。
-
-{% highlight python %}
-# __init__.py
-__all__ = ['os', 'sys', 're', 'urllib']
-
-# a.py
-from package import *
-{% endhighlight %}
-
-参见：
-
-http://www.cnblogs.com/Lands-ljk/p/5880483.html
-
-Python `__init__.py`作用详解
-

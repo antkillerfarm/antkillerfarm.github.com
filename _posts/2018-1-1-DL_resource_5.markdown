@@ -114,6 +114,10 @@ https://mp.weixin.qq.com/s/Um6U-hjZ8I-awDinHXaQLg
 
 三维对抗样本的生成方法MeshAdv，成功欺骗真实场景中的分类器和目标检测器
 
+https://mp.weixin.qq.com/s/tWKGLntwXyePZcJsZ30K3A
+
+神经网络太好骗？清华团队如何做到打NIPS攻防赛得3冠军的
+
 ## 行业
 
 李开复的这篇文章不可不读：
