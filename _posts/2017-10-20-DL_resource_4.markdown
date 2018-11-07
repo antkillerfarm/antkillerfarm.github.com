@@ -374,20 +374,7 @@ https://mp.weixin.qq.com/s/30cxIX9aKIpELC8H4_k8Gg
 
 比TFLite快2倍！FB开源移动深度学习优化库QNNPACK
 
-# 光神经网络
+https://mp.weixin.qq.com/s/qT8EhRuVn83OFpy94Ywqiw
 
-https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ
+HiddenLayer：可视化PyTorch、TensorFlow神经网络图的轻量级工具！
 
-3D打印的深度神经网络，光速执行AI运算
-
-https://mp.weixin.qq.com/s/5zt8UIpNBcgNZpwHHJj68Q
-
-光学CNN层替换传统CNN层，超省电
-
-https://mp.weixin.qq.com/s/IheyYAC1yIigYOW-gtc5Eg
-
-Science重磅！用光速实现深度学习，跟GPU说再见
-
-https://mp.weixin.qq.com/s/ENYX87SMlgv30x08iYFQIw
-
-几乎零能耗零延迟！UCLA科学家发明光衍射神经网络，登上Science

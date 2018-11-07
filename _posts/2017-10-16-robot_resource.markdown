@@ -429,3 +429,7 @@ https://mp.weixin.qq.com/s/5TyL9bkKe-XMKLl-QbtaZg
 https://mp.weixin.qq.com/s/1SxwYqcxB8zIavr11cIGWg
 
 机器学习及深度学习在自动驾驶中的应用
+
+https://mp.weixin.qq.com/s/2gk1xF3lh2ioIGQeY_ZsHQ
+
+highD：德国提出从空中角度测量车辆数据的新方法

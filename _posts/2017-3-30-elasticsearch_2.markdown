@@ -394,3 +394,8 @@ https://mp.weixin.qq.com/s/G6-XbqCO5iuwGDen-r6aWg
 https://mp.weixin.qq.com/s/21LVssq2ynMgp_x1lwSC9w
 
 基于稀疏自表示与模糊双C均值聚类的SAR图像分割
+
+https://mp.weixin.qq.com/s/Oi1yJty_guzTUbRGZ5MuEw
+
+使用高斯过程的因果推理：GP CaKe 的基本思路
+

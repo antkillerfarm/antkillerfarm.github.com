@@ -380,3 +380,23 @@ https://mp.weixin.qq.com/s/LK8PBCC_uJoe_Rc4V940sQ
 https://mp.weixin.qq.com/s/LV8tmeDGkfmFFyQqJwY25g
 
 基于超像素的多局部区域的卷积神经网络用于全色图和多光谱图像分类
+
+https://mp.weixin.qq.com/s?__biz=MzI3MTM5ODA0Nw==&mid=2247484058&idx=1&sn=0dfe92a0991294afba2514b137217a66
+
+朱松纯：浅谈人工智能：现状、任务、构架与统一
+
+https://mp.weixin.qq.com/s/_w4IIRY6LwqehpDlEXt90A
+
+牛津大学提出神经网络新训练法：用低秩结构增强网络压缩和对抗稳健性
+
+https://mp.weixin.qq.com/s/w-6z8B60cIHUF5tU-RoQ3w
+
+旷视科技提出统一感知解析网络UPerNet，优化场景理解
+
+https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
+
+北大：一种基于新闻特征抽取和循环神经网络的股票预测方法
+
+http://mp.weixin.qq.com/s/vhBOrR6uTL2vGXnYC8BS1w
+
+Windows版深度学习软件安装指南

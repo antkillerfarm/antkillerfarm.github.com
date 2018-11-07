@@ -277,3 +277,7 @@ https://mp.weixin.qq.com/s/Q0jxUiFFbrEMhy5Sv8979A
 https://mp.weixin.qq.com/s/yA_dvLZ7adBd6Xw2MufhWw
 
 程序翻译新突破：UC伯克利提出树到树的程序翻译神经网络
+
+https://mp.weixin.qq.com/s/dXU-HMi8LIjVTwzfMqOzuQ
+
+自然语言中的深度隐变量模型
