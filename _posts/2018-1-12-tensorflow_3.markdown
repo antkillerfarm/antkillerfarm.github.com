@@ -6,6 +6,58 @@ category: AI
 
 # TensorFlow
 
+https://mp.weixin.qq.com/s/JSZwQkyxSSwfBWKJ578j3A
+
+TensorFlow最好的入门文章
+
+https://mp.weixin.qq.com/s/jMPVl3CWvL7MSzq5F12YxQ
+
+维度、广播操作与可视化：如何高效使用TensorFlow
+
+https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
+
+简易浣熊识别器是如何实现的
+
+https://mp.weixin.qq.com/s/YOyOR8fdaEKcydAywcc-HA
+
+如何使用TensorFlow API构建视频物体识别系统
+
+https://mp.weixin.qq.com/s/gnDTOLWuPZiCVzspTk_zCQ
+
+TensorFlow轻度入门
+
+https://mp.weixin.qq.com/s/MYBTWL3X_OhLZL6C4rISzw
+
+TensorFlow训练线性回归
+
+http://www.jianshu.com/p/d443aab9bcb1
+
+在TensorFlow上使用LSTM进行情感分析
+
+https://mp.weixin.qq.com/s/gW_KX6eF9XEsSUO1UzJ3WQ
+
+基于LSTM的情感分析
+
+https://mp.weixin.qq.com/s/5QYlh6gV9IqdQfraK4DC8w
+
+10种深度学习算法的TensorFlow实现
+
+https://zhuanlan.zhihu.com/p/28475975
+
+如何优雅地用TensorFlow预测时间序列：TFTS库详细教程
+
+https://mp.weixin.qq.com/s/zZCEOdNQsPovn_i-C57Z9g
+
+如何使用最流行框架Tensorflow进行时间序列分析？
+
+https://mp.weixin.qq.com/s/CqOo7Fu6t5-yJiYhzo03oQ
+
+利用TensorFlow和神经网络来处理文本分类问题
+
+https://mp.weixin.qq.com/s/VlvQmrS7Qi2qq6fTBXKTYw
+
+从零开始用TensorFlow搭建卷积神经网络
+
 https://mp.weixin.qq.com/s/hETnA81WlkMG3rftAHg9bw
 
 PyTorch和TensorFlow哪家强：九项对比读懂各自长项短板
@@ -138,21 +190,9 @@ https://mp.weixin.qq.com/s/xJaoqHLVFmouaspjaLjoSg
 
 TFX：基于TensorFlow可大规模扩展的机器学习平台
 
-https://mp.weixin.qq.com/s/Yp2zE85VCx8q67YXvuw5qw
-
-TensorFlow引入了动态图机制Eager Execution
-
 https://zhuanlan.zhihu.com/p/30751039
 
 TensorFlow全新的数据读取方式：Dataset API入门教程
-
-https://github.com/ZhuanZhiCode/TensorFlow-Eager-Execution-Examples
-
-Eager Execution的代码示例
-
-https://mp.weixin.qq.com/s/By_GKPtY6xr8MwkWA6frzA
-
-TensorFlow的动态图工具Eager怎么用？这是一篇极简教程
 
 https://mp.weixin.qq.com/s/8Hrq_z8s_5ms6Q_6OOaU-g
 
@@ -302,7 +342,7 @@ https://mp.weixin.qq.com/s/mjUnrPBPBuY6XKXkUymX-w
 
 实例介绍TensorFlow的输入流水线
 
-http://www.holmesconan.me/2018/04/cifar10-vgg.html
+http://www.holmesconan.me/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2018/04/03/cifar10-vgg.html
 
 CIFAR-10 Estimator之Vgg模型
 
@@ -330,13 +370,7 @@ https://mp.weixin.qq.com/s/lLaSXG1VF9Rys2GNzFP7pw
 
 轻松使用多种预训练卷积网络抽取图像特征
 
-https://mp.weixin.qq.com/s/Lvd4NfLg0Lzivb4BingV7w
 
-Tensorflow Eager Execution入门指南
-
-https://mp.weixin.qq.com/s/q6bJfCV5kU8BzvWjOXkCDg
-
-简单粗暴TensorFlow Eager教程
 
 https://mp.weixin.qq.com/s/OVWbxBNc4i0_5jgy06xS1A
 
@@ -393,23 +427,3 @@ Docker Compose+GPU+TensorFlow所产生的奇妙火花
 https://mp.weixin.qq.com/s/sOggiB57D-ekWOsbL6TY_A
 
 TensorFlow中那些鲜为人知却又极其实用的知识
-
-https://mp.weixin.qq.com/s/SDVQSn1aVDXk_RPGuVcQgQ
-
-TensorFlow深度自动编码器入门实践
-
-https://mp.weixin.qq.com/s/mZ79KAuSIJLtBEXvKwUi-w
-
-如何利用TensorFlow.js部署简单的AI版“你画我猜”图像识别应用
-
-https://mp.weixin.qq.com/s/zz8XCykJ6jxbE5J4YwAkEA
-
-一招教你使用tf.keras和eager execution解决复杂问题
-
-https://mp.weixin.qq.com/s/atQHJ5U2pJpSG6PguN7J4Q
-
-如何保持运动小车上的旗杆屹立不倒？TensorFlow利用A3C算法训练智能体玩CartPole游戏
-
-https://mp.weixin.qq.com/s/rQ9eZosHOoDOXg9tAg4t6A
-
-tensorflow Object Detection API使用预训练模型mask r-cnn实现对象检测

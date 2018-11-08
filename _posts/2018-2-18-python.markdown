@@ -16,6 +16,10 @@ https://perso.limsi.fr/pointal/_media/python:cours:mementopython3-english.pdf
 
 python语言的一个速查表
 
+## REPL
+
+Read–Eval–Print Loop算的上是脚本语言的标配了，python也不例外。
+
 ## PyPI
 
 PyPI是一个Python语言的软件库管理软件，它的官网是：

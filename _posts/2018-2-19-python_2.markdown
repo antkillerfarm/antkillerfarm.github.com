@@ -41,6 +41,14 @@ http://www.cnblogs.com/Lands-ljk/p/5880483.html
 
 Python `__init__.py`作用详解
 
+## Slice
+
+`L[3:10:2]`
+
+第一个数表示切片开始的位置，第二个数表示切片到哪里结束，第三个数表示切片间隔数。
+
+可以用负数做切片。负数用在从序列尾开始计算的位置。如果切片间隔数为负数，则表示倒序切片。
+
 ## 字符串格式化
 
 目前python的字符串格式化，有两种style：Old Style和New Style。两者的区别详见：
@@ -396,4 +404,3 @@ Captcha是一个Python验证码库，能够生成音频和图片验证码。
 https://github.com/lepture/captcha
 
 这个库可用于生成大量有标签的验证码，是DL入门的必备工具。
-

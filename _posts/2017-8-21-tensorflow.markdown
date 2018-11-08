@@ -232,7 +232,7 @@ Tensorflow对计算图的简化，不仅在于使用默认的Graph。还在于�
 
 http://www.algorithmdog.com/dynamic-tensorflow
 
-动态图计算：Tensorflow 第一次清晰地在设计理念上领先
+动态图计算：Tensorflow第一次清晰地在设计理念上领先
 
 https://zhuanlan.zhihu.com/p/23932714
 
@@ -357,24 +357,4 @@ TensorFlow学习_01_安装_基本操作_可视化结构、过程_Mnist
 https://blog.csdn.net/sinat_33761963/article/details/62433234
 
 Tensorflow的可视化工具Tensorboard的初步使用
-
-## 模型文件
-
-tensorflow model包含2个文件：
-
-a）Meta graph:
-
-使用protocol buffer来保存整个tensorflow graph.例如所有的variables, operations, collections等等。这个文件使用.meta后缀。
-
-b) Checkpoint file:
-
-二进制文件包含所有的weights,biases,gradients和其他variables的值。这个文件使用.ckpt后缀，有2个文件：
-
-mymodel.data-00000-of-00001
-
-mymodel.index
-
-.data文件用于保存训练好的variables，以供未来的推断之用。
-
-tensorflow还有一个叫checkpoint的文件，用来简单保存最近一次的checkpoint记录。
 

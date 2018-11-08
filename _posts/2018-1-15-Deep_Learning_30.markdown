@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十）——Deep Speech, 多任务学习, 数据增强, 自动求导, 信息检索
+title:  深度学习（三十）——Deep Speech, 自动求导, 信息检索
 category: DL 
 ---
 
@@ -187,107 +187,74 @@ https://github.com/srvk/eesen
 
 eesen是基于Tensorflow开发的，苗博士之前还有个用Theano开发的叫PDNN的库。
 
-# 多任务学习
-
-https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA
-
-多任务学习-Multitask Learning概述
-
-https://mp.weixin.qq.com/s/A-CVKTz_moaFzTYywSt2gg
-
-张宇 杨强：多任务学习概述
-
-https://mp.weixin.qq.com/s/ZlCI02UdRuFBc-uKqIPE_w
-
-深度学习多任务学习综述
-
-https://mp.weixin.qq.com/s/QXOy2jo4RhCZrD5bSVzBOQ
-
-共享相关任务表征，一文读懂深度神经网络多任务学习
-
-https://mp.weixin.qq.com/s/mm9bXXTEzd8DwyYlMgGMZg
-
-NLP多任务学习：一种层次增长的神经网络结构
-
-https://mp.weixin.qq.com/s/X6FwTgr282hbqgOz3oBX-w
-
-多任务学习概述论文：从定义和方法到应用和原理分析
-
-https://blog.csdn.net/CoderPai/article/details/80080455
-
-多任务学习与深度学习
-
-https://blog.csdn.net/CoderPai/article/details/80087188
-
-利用TensorFlow一步一步构建一个多任务学习模型
-
-https://mp.weixin.qq.com/s/fcFb6WkJVP8TYpoxkQgiWQ
-
-CMU提出“十字绣网络”，自动决定多任务学习的最佳共享层
-
-https://mp.weixin.qq.com/s/i7WAFjQHK1NGVACR8x3v0A
-
-自然语言十项全能：转化为问答的多任务学习
-
-https://mp.weixin.qq.com/s/NpO1UP_mzyaeqW26xLY1Xg
-
-CVPR 2018最佳论文作者亲笔解读：研究视觉任务关联性的Taskonomy
-
-https://mp.weixin.qq.com/s/DUSa3SW1AgvJ0szL030NHQ
-
-一个AI玩57个游戏，DeepMind离真正“万能”的AGI不远了！
-
-https://mp.weixin.qq.com/s/P81I5vl99mV-4StNHmd_6A
-
-作为多目标优化的多任务学习：寻找帕累托最优解
-
-# 数据增强
-
-https://mp.weixin.qq.com/s/GqPfvWwH1T0XFwiZ86cW8A
-
-SamplePairing：针对图像处理领域的高效数据增强方式
-
-https://mp.weixin.qq.com/s/cQtXvOjSXFc4YKn7ANBc_w
-
-谷歌大脑提出自动数据增强方法AutoAugment：可迁移至不同数据集
-
-https://mp.weixin.qq.com/s/ojFo7-gUh73iK3uImFS2-Q
-
-一文道尽主流开源框架中的数据增强
-
-https://mp.weixin.qq.com/s/xJhWu-1FyhIWbFBC5oHMkw
-
-一文道尽深度学习中的数据增强方法（上）
-
-https://mp.weixin.qq.com/s/OctAGrcBB0a6TOGWMmVKUw
-
-深度学习中的数据增强（下）
-
-https://mp.weixin.qq.com/s/lMU6_ywQqneyunqEV6uDiA
-
-如何改善你的训练数据集？
-
-https://mp.weixin.qq.com/s/ooX9Hj5ejO6po6Ghb4zOug
-
-一文解读合成数据在机器学习技术下的表现
-
-https://zhuanlan.zhihu.com/p/33485388
-
-mixup与paring samples ，ICLR2018投稿论文的数据增广两种方式
-
-https://mp.weixin.qq.com/s/_7xFBLPGT0VRTJ22toHJ3g
-
-深度学习中常用的图像数据增强方法
-
-https://mp.weixin.qq.com/s/sXV9epWguGbJEZYo4yNp5Q
-
-如何正确使用样本扩充改进目标检测性能
-
-https://zhuanlan.zhihu.com/p/46833956
-
-图像数据增强之弹性形变（Elastic Distortions）
-
 # 自动求导
+
+DL发展到现在，其基本运算单元早就不止CNN、RNN之类的简单模块了。针对新运算层出不穷的现状，各大DL框架基本都实现了自动求导的功能。
+
+论文：
+
+《Automatic Differentiation in Machine Learning: a Survey》
+
+## Numerical differentiation
+
+数值微分最大的特点就是很直观，好计算，它直接利用了导数定义：
+
+$$f'(x)=\lim_{h\to 0}{f(x+h)-f(x)\over h}$$
+
+不过这里有一个很大的问题：h怎么选择？选大了，误差会很大；选小了，不小心就陷进了浮点数的精度极限里，造成舍入误差。
+
+第二个问题是对于参数比较多时，对深度学习模型来说，上面的计算是不够高效的，因为每计算一个参数的导数，你都需要重新计算$$f(x+h)$$。
+
+因此，这种方法并不常用，而主要用于做梯度检查（Gradient check），你可以用这种不高效但简单的方法去检查其他方法得到的梯度是否正确。
+
+## Symbolic differentiation
+
+符号微分的主要步骤如下：
+
+1.需要预置基本运算单元的求导公式。
+
+2.遍历计算图，得到运算表达式。
+
+3.根据导数的代入法则和四则运算法则，求出复杂运算的求导公式。
+
+这种方法没有误差，是目前的主流，但遍历比较费时间。
+
+## Automatic differentiation
+
+除此之外，常用的自动求导技术，还有Automatic differentiation。（请注意这里的AD是一个很狭义的概念。）
+
+类比复数的概念：
+
+$$x = a + bi \quad (i^2 = -1)$$
+
+我们定义Dual number：
+
+$$x \mapsto x = x + \dot{x} d \quad (d^2=0)$$
+
+定义Dual number的运算法则：
+
+$$(x + \dot{x}d) + ( y + \dot{y}d) = x + y + (\dot{x} + \dot{y})d$$
+
+$$(x + \dot{x}d) ( y + \dot{y}d) = xy + \dot{x}yd + x\dot{y}d  +  \dot{x}\dot{y}d^2 = xy + (\dot{x}y+ x\dot{y})d$$
+
+$$-(x + \dot{x}d) = - x - \dot{x}d$$
+
+$$\frac{1}{x + \dot{x}d} = \frac{1}{x} - \frac{\dot{x}}{x^2}d$$
+
+dual number有很多非常不错的性质。以下面的指数运算多项式为例：
+
+$$f(x) = p_0 + p_1x + p_2x^2 + ... + p_nx^n$$
+
+用$$x + \dot{x}d$$替换x，则有：
+
+$$f(x + \dot{x}d) =   p_0 + p_1(x + \dot{x}d) + ... +  p_n(x + \dot{x}d)^n \\ 
+= p_0 + p_1x + p_2x^2 + ... + p_nx^n + \\ 
+p_1\dot{x}d + 2p_2x\dot{x}d + ... + np_{n-1}x\dot{x}d\\ 
+= f(x) + f'(x)\dot{x}d$$
+
+可以看出d的系数就是$$f'(x)$$。
+
+## 参考
 
 https://mp.weixin.qq.com/s/7Z2tDhSle-9MOslYEUpq6g
 

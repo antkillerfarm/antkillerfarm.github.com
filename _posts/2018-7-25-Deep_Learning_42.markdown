@@ -334,6 +334,10 @@ https://mp.weixin.qq.com/s/IfZ5gTZrSFqQP2cpcIxAeQ
 
 清华&商汤开源CVPR2018超高精度人脸对齐算法LAB
 
+https://mp.weixin.qq.com/s/R1hdkPTdFCo7JvOKNcEzJg
+
+DeepMind&VGG提出基于集合的人脸识别算法GhostVLAD,精度远超IJB-B数据集state-of-the-art
+
 # AI前沿
 
 人工智能前沿7大热点：
