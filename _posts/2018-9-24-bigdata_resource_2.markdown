@@ -86,6 +86,10 @@ https://mp.weixin.qq.com/s/sUWy60vL-pEt5fE5PGGrww
 
 数据中心日均CPU利用率45%？！阿里规模化混部技术揭秘
 
+https://mp.weixin.qq.com/s/LXcWMwxgk3SXDI1cI_Kg8w
+
+携程数据库高可用和容灾架构演进
+
 # 知名数据集
 
 https://mp.weixin.qq.com/s/Kxnvv1i0nvkg0vUDBlx6MA

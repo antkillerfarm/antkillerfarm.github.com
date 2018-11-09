@@ -88,6 +88,10 @@ https://m.w.wj23.xyz/
 
 维基百科的mirror
 
+https://mp.weixin.qq.com/s/t5ZIR0sUnBj94QS0t9EPcA
+
+这几个网站藏着一代人的科技童年……
+
 ## Other
 
 http://www.alsrobot.cn/

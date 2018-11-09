@@ -312,6 +312,10 @@ https://mp.weixin.qq.com/s/VqPPQnH22Y-XeojNEZn3YQ
 
 CoRL 2018最佳系统论文：如此鸡贼的机器手，确定不是人在控制？
 
+https://mp.weixin.qq.com/s/781fVvKr4yuq4q2GI1Y1gA
+
+从Zero到Hero，OpenAI重磅发布深度强化学习资源
+
 # Transformer
 
 之前的文章已经介绍了Attention和《Attention is All You Need》。但实际上，《Attention is All You Need》不仅提出了两种Attention模块，而且还提出了如下图所示的Transformer模型。该模型主要用于NMT领域，由于Attention不依赖上一刻的数据，同时精度也不弱于LSTM，因此有很好并行计算特性，在工业界得到了广泛应用。阿里巴巴和搜狗目前的NMT方案都是基于Transformer模型的。

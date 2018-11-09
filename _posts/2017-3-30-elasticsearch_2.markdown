@@ -357,6 +357,12 @@ https://www.cnblogs.com/tuding/p/7335853.html
 
 双调排序Bitonic Sort，适合并行计算的排序算法
 
+https://mp.weixin.qq.com/s/fP36LYFjAqqfP3rbYxAJlA
+
+优秀的排序算法如何成就了伟大的机器学习技术
+
+![](/images/img2/sort.gif)
+
 # ML参考资源+
 
 https://mp.weixin.qq.com/s/NbEki2ByMmA93DyoQF1yjA
