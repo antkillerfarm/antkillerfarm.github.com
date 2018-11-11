@@ -405,3 +405,6 @@ https://mp.weixin.qq.com/s/Oi1yJty_guzTUbRGZ5MuEw
 
 使用高斯过程的因果推理：GP CaKe 的基本思路
 
+https://mp.weixin.qq.com/s/vLvjo8Cso_bYEuW-AFoyiA
+
+南大周志华等人提出无组织恶意攻击检测算法UMA

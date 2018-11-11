@@ -381,3 +381,7 @@ https://zhuanlan.zhihu.com/p/41814142
 https://www.ifanr.com/630602
 
 AlphaGo的棋局，与人工智能有关，与人生无关
+
+https://mp.weixin.qq.com/s/J0w6kzzdKTbsaiZitbQdoA
+
+达观数据：一文详解AlphaGo原理

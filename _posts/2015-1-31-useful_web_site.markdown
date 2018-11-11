@@ -92,6 +92,10 @@ https://mp.weixin.qq.com/s/t5ZIR0sUnBj94QS0t9EPcA
 
 这几个网站藏着一代人的科技童年……
 
+https://www.photopea.com/
+
+一个在线版本的Photoshop替代品
+
 ## Other
 
 http://www.alsrobot.cn/

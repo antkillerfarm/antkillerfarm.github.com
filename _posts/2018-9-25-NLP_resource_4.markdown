@@ -285,3 +285,8 @@ https://mp.weixin.qq.com/s/yA_dvLZ7adBd6Xw2MufhWw
 https://mp.weixin.qq.com/s/dXU-HMi8LIjVTwzfMqOzuQ
 
 自然语言中的深度隐变量模型
+
+https://mp.weixin.qq.com/s/4qHgIcq9YJTj1iGh7kLB4w
+
+用神经推理来帮助命名实体识别
+

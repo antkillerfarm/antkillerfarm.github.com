@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十五）——姿态/行为检测, 深度目标跟踪
+title:  深度学习（三十五）——姿态/行为检测, 深度目标跟踪, VAE进阶
 category: DL 
 ---
 
@@ -378,3 +378,40 @@ https://mp.weixin.qq.com/s/XwMXrsmSnImgD1vNSVErLg
 
 深度多目标跟踪算法综述
 
+# VAE进阶
+
+https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw
+
+变分U-Net，可按条件独立变换目标的外观和形状
+
+https://mp.weixin.qq.com/s/ZlLuhu08m_RnD-h86df8sA
+
+清华大学提出SA-VAE框架，通过单样本/少样本学习生成任意风格的汉字
+
+https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
+
+面向无监督任务：DeepMind提出神经离散表示学习生成模型VQ-VAE
+
+https://mp.weixin.qq.com/s/51Xu7osdVa-fCV-IZbHdCA
+
+Wasserstein自编码器
+
+https://mp.weixin.qq.com/s/0HK026K6jru10VscvT2rOQ
+
+哈佛大学提出变分注意力：用VAE重建注意力机制
+
+https://mp.weixin.qq.com/s/790wbFnxkNbNRampiV-0MQ
+
+谷歌大脑提出对抗正则化方法，显著改善自编码器的泛化和表征学习能力
+
+https://mp.weixin.qq.com/s/iOdh1iIP0GIYe4gRDE0z-g
+
+漫谈概率PCA和变分自编码器
+
+https://mp.weixin.qq.com/s/pBnKNRc56HhBWvrYaZjGdw
+
+稳定、表征丰富的球面变分自编码器
+
+https://mp.weixin.qq.com/s/QOdQKdLolR-YTihzaA81yw
+
+黄怀波 ：自省变分自编码器理论及其在图像生成上的应用

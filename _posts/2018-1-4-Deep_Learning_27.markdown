@@ -114,6 +114,16 @@ https://kexue.fm/archives/5383
 
 变分自编码器：这样做为什么能成？
 
+## VAE vs GAN
+
+VAE是直接计算生成图片和原始图片的均方误差而不是像GAN那样去对抗来学习，这就使得生成的图片会有点模糊。但是VAE的收敛性要优于GAN。因此又有GAN hybrids：一方面可以提高VAE的采样质量和改善表示学习，另一方面也可以提高GAN的稳定性和丰富度。
+
+参考：
+
+https://mp.weixin.qq.com/s/d_P-4uQx0kC2w6J69OZIAw
+
+Deepmind研究科学家最新演讲：VAEs and GANs
+
 ## 参考
 
 https://mp.weixin.qq.com/s/TqZnlXLKHhZn3U29PlqetA
@@ -136,21 +146,9 @@ https://zhuanlan.zhihu.com/p/27549418
 
 花式解释AutoEncoder与VAE
 
-https://mp.weixin.qq.com/s/ZlLuhu08m_RnD-h86df8sA
-
-清华大学提出SA-VAE框架，通过单样本/少样本学习生成任意风格的汉字
-
-https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
-
-面向无监督任务：DeepMind提出神经离散表示学习生成模型VQ-VAE
-
 https://mp.weixin.qq.com/s/TJDGZvAvT7KamR_WN-oYYw
 
 如何使用变分自编码器VAE生成动漫人物形象
-
-https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw
-
-变分U-Net，可按条件独立变换目标的外观和形状
 
 https://mp.weixin.qq.com/s/1q36Cb4Fy4Mg7DcrAcJv3A
 
@@ -163,30 +161,6 @@ https://mp.weixin.qq.com/s/zJf-dWsMe5WELgDz7TlivA
 https://mp.weixin.qq.com/s/fzadP8NwPTxuhEB0O4GU8g
 
 漫谈生成模型，从AE到CVAE-GAN
-
-https://mp.weixin.qq.com/s/d_P-4uQx0kC2w6J69OZIAw
-
-Deepmind研究科学家最新演讲：VAEs and GANs
-
-https://mp.weixin.qq.com/s/51Xu7osdVa-fCV-IZbHdCA
-
-Wasserstein自编码器
-
-https://mp.weixin.qq.com/s/0HK026K6jru10VscvT2rOQ
-
-哈佛大学提出变分注意力：用VAE重建注意力机制
-
-https://mp.weixin.qq.com/s/790wbFnxkNbNRampiV-0MQ
-
-谷歌大脑提出对抗正则化方法，显著改善自编码器的泛化和表征学习能力
-
-https://mp.weixin.qq.com/s/iOdh1iIP0GIYe4gRDE0z-g
-
-漫谈概率PCA和变分自编码器
-
-https://mp.weixin.qq.com/s/pBnKNRc56HhBWvrYaZjGdw
-
-稳定、表征丰富的球面变分自编码器
 
 # RBM & DBN & Deep Autoencoder
 

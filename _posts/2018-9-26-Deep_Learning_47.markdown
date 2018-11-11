@@ -361,3 +361,7 @@ https://zhuanlan.zhihu.com/p/45702794
 https://mp.weixin.qq.com/s/DB2C-a_xEyoczuNSG9Bt7w
 
 基于深度前馈序列记忆网络，如何将语音合成速度提升四倍？
+
+https://mp.weixin.qq.com/s/t1ht3weG63Sj59n-MW-Prw
+
+语音合成论文和英伟达撞车，韩国小哥紧急放出全部草稿代码和样本

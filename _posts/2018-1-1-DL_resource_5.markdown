@@ -118,6 +118,10 @@ https://mp.weixin.qq.com/s/tWKGLntwXyePZcJsZ30K3A
 
 神经网络太好骗？清华团队如何做到打NIPS攻防赛得3冠军的
 
+https://mp.weixin.qq.com/s/g1IHOd4S-uKcl3DX131zFg
+
+“穿墙透视”黑魔法来了！只需WiFi和智能手机就可实现
+
 ## 行业
 
 李开复的这篇文章不可不读：
