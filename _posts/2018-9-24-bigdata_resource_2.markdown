@@ -92,9 +92,93 @@ https://mp.weixin.qq.com/s/LXcWMwxgk3SXDI1cI_Kg8w
 
 # 知名数据集
 
-https://mp.weixin.qq.com/s/Kxnvv1i0nvkg0vUDBlx6MA
+## 人脸/行为
 
-向机器学习偏见开战：谷歌展示全球涂鸦数据集分析结果
+http://blog.csdn.net/wangkr111/article/details/44514097
+
+肤色检测&人脸检测数据集等链接大集合
+
+https://mp.weixin.qq.com/s/aPlNov77l-3hBRePbIEOrg
+
+一文道尽“人脸数据集”
+
+https://mp.weixin.qq.com/s/BCgVMYe011O-Jse4ZFBbxg
+
+谷歌发布人类动作识别数据集AVA，精确标注多人动作
+
+https://mp.weixin.qq.com/s/vp--aYbPKi8yDSiS5MPMLA
+
+MIT与Facebook提出SLAC：用于动作分类和定位的稀疏标记数据集
+
+http://mmlab.ie.cuhk.edu.hk/projects/WIDERFace/
+
+WIDER FACE: A Face Detection Benchmark
+
+http://mmlab.ie.cuhk.edu.hk/archive/CNN_FacePoint.htm
+
+人脸关键点检测的训练数据集
+
+https://zhuanlan.zhihu.com/p/39737327
+
+想训练动作识别模型？这里有六个数据源供你参考
+
+## 推荐系统
+
+http://www.zanmel.com/2015/12/14/10-great-datasets-on-movies/
+
+最知名的电影数据集。
+
+https://mp.weixin.qq.com/s/hrI0ILAs4Nko_JkqegaANA
+
+LibRec精选：推荐系统9个必备数据集
+
+https://mp.weixin.qq.com/s/U96j-8_8yo_KGEu9ufWBGg
+
+亚马逊Kindle电子书和纸质图书销售排行数据
+
+https://zhuanlan.zhihu.com/p/40785841
+
+6个推荐系统开放公共数据集整理分享
+
+## 无人驾驶
+
+http://www.cvlibs.net/datasets/kitti/
+
+KITTI Vision Benchmark Suite：一个自动驾驶方面的数据库。包括GPS、雷达、摄像头等数据。
+
+https://github.com/MarvinTeichmann/KittiSeg
+
+一个KITTI数据集上的道路图像语义分割模型。
+
+https://mp.weixin.qq.com/s/y_Q1umHaC0NEuj2TlKoKZQ
+
+百度Apollo推出大规模自动驾驶数据集，将于CVPR发起挑战赛
+
+https://mp.weixin.qq.com/s/nDX4oSV-_zs5TMl3Q8eP3A
+
+伯克利发布BDD100K：目前最大规模开放驾驶视频数据集
+
+https://mp.weixin.qq.com/s/gKZt903-hrlcEK-O5k-pTw
+
+本田公布104小时驾驶行为数据集：时间不长但胜在全面
+
+https://mp.weixin.qq.com/s/9k2aorOp_zc10JKf9F9Evw
+
+上海交大和厦门大学联合发布大规模驾驶策略学习数据集DBNet
+
+## Other
+
+https://mp.weixin.qq.com/s/VCJoBf2ECdvyRLU7atciYA
+
+浙江大学和帝国理工大学发布的交通速度预测数据集
+
+https://mp.weixin.qq.com/s/dsLVogBtYjYeMULWp4QrhA
+
+一网打尽成语歇后语，GitHub新华字典数据库
+
+https://zhuanlan.zhihu.com/p/40984645
+
+打通推荐系统与知识图谱: 第一个公开的大规模链接数据集合
 
 http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201703/t20170310_1471429.html
 
@@ -103,66 +187,6 @@ http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201703/t20170310_1471429.html
 https://github.com/wecatch/china_regions
 
 最全最新中国省，市，地区json及sql数据
-
-http://universaldependencies.org/
-
-一个依存语法方面的标注数据集。这类数据也叫做treebank数据，原因是依存语法生成的结果是一棵语法树。
-
-https://mp.weixin.qq.com/s/7xFlELcm325Q6wEB5Pyphg
-
-让AI学会刨根问底和放飞自我，斯坦福最新问答数据集CoQA
-
-https://mp.weixin.qq.com/s/-NQa2VeuskDx5XN9WMCmPQ
-
-腾讯开源业内最大多标签图像数据集，附ResNet-101模型
-
-https://mp.weixin.qq.com/s/Rf3NAYlNMrcVythVA-90cQ
-
-端到端对话模型新突破！Facebook发布大规模个性化对话数据库
-
-https://mp.weixin.qq.com/s/LC6bJOsJczTLolQ1Yx5cvg
-
-最全中华古诗词数据库:近14k唐宋古诗人, 55k首唐诗，60k宋诗
-
-https://mp.weixin.qq.com/s/yZ138cMv4203wJdIY_0sUA
-
-FAIR重磅发布大规模语料库XNLI：解决跨15种语言理解难题
-
-https://mp.weixin.qq.com/s/jOjiAAK1byUx8ic011f33w
-
-2200万室内场景数据集，包含语义、全景、灯光等十余种效果
-
-https://mp.weixin.qq.com/s/9k2aorOp_zc10JKf9F9Evw
-
-上海交大和厦门大学联合发布大规模驾驶策略学习数据集DBNet
-
-https://mp.weixin.qq.com/s/aw5o-1Bwc4hQUatehFFx2A
-
-南京大学发布WebCaricature漫画人脸识别数据集
-
-https://mp.weixin.qq.com/s/isUT--guYrsIWRXApcutrg
-
-耶鲁大学11名学生标注完成大规模复杂跨域Text-to-SQL数据集Spider
-
-https://mp.weixin.qq.com/s/deJ6dChES_WhYH8T05ruag
-
-腾讯AI实验室宣布开源多标签图像数据集ML-Images
-
-https://mp.weixin.qq.com/s/WkDTGxWtgUMjpIoO4LkLRg
-
-腾讯AI Lab开源800万中文词的NLP数据集
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750713&idx=5&sn=678eef1122d35c048a5fca8f22fa12c9
-
-CIFAR-10+ImageNet=？CINIC-10！
-
-https://mp.weixin.qq.com/s/vTnc55KAiGaFfktHPZctbw
-
-捡漏！用谷歌图片搜索自制深度学习数据集
-
-https://zhuanlan.zhihu.com/p/39737327
-
-想训练动作识别模型？这里有六个数据源供你参考
 
 # SLAM
 

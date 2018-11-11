@@ -365,3 +365,7 @@ https://mp.weixin.qq.com/s/DB2C-a_xEyoczuNSG9Bt7w
 https://mp.weixin.qq.com/s/t1ht3weG63Sj59n-MW-Prw
 
 语音合成论文和英伟达撞车，韩国小哥紧急放出全部草稿代码和样本
+
+https://mp.weixin.qq.com/s/1glxeUx-4DCWRjJQMW7IiQ
+
+语音合成论文与韩国小哥“撞车”后续：英伟达“赶紧”把代码开源了

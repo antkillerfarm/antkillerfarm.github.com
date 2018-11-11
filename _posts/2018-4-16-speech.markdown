@@ -293,6 +293,10 @@ http://cn-mirror.openslr.org/18/
 
 单独的thchs30数据集
 
+http://blog.csdn.net/sut_wj/article/details/70662181
+
+THCHS-30：一个免费的中文语料库
+
 http://cn-mirror.openslr.org/33/
 
 AISHELL数据库是THCHS-30之后，目前中文语音数据开源最大的数据库。

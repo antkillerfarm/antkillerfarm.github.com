@@ -404,3 +404,7 @@ Windows版深度学习软件安装指南
 https://mp.weixin.qq.com/s/FwqKYNpIuB6cUAVjSey7mw
 
 Yoshua Bengio首次中国演讲：深度学习通往人类水平AI的挑战
+
+https://mp.weixin.qq.com/s/RS39wqZDf6gEhOY6gcOVSA
+
+74页教程融合逻辑推理和深度学习

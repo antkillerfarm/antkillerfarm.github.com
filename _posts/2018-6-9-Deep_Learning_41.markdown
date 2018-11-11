@@ -233,6 +233,10 @@ https://mp.weixin.qq.com/s/Z6RyhsZfn3Fs-gfpS0_7HQ
 
 预训练模型迁移学习
 
+https://mp.weixin.qq.com/s/EWMXDH7Bx0aQaFsGkZaIbA
+
+OpenAI概念学习新模型：学会概念仅需5次示范，实现跨领域概念迁移
+
 # RNN进阶
 
 ## IndRNN

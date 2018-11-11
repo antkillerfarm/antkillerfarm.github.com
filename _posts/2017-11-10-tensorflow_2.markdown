@@ -143,6 +143,18 @@ https://www.jianshu.com/p/fa204a54a956
 
 生成TFLite模型文件
 
+https://mp.weixin.qq.com/s/eSczqqyzh4PZomJL4saxug
+
+出门问问：使用TensorFlow Lite在嵌入式端部署热词检测模型
+
+https://mp.weixin.qq.com/s/U_Pew90j9swIqti3oKEIQg
+
+玩转TensorFlow Lite：有道云笔记实操案例分享
+
+https://mp.weixin.qq.com/s/lNP9WdzSWE4FjB_-Sjc2aA
+
+TensorFlow Lite for Android初探
+
 ## Broadcast
 
 Broadcast是一种填充元素以使操作数的形状相匹配的操作。例如，对一个[3,2]的张量和一个[3,1]的张量相加在TF中是合法的，TF会使用默认的规则将[3,1]的张量填充为[3,2]的张量，从而使操作能够执行下去。

@@ -102,10 +102,6 @@ https://mp.weixin.qq.com/s/a68brFJthczgwiFoUBh30A
 
 TensorFlow数据集和估算器介绍
 
-https://mp.weixin.qq.com/s/eSczqqyzh4PZomJL4saxug
-
-出门问问：使用 TensorFlow Lite 在嵌入式端部署热词检测模型
-
 https://github.com/indiejoseph/cnn-text-classification-tf-chinese
 
 CNN for Chinese Text Classification in Tensorflow
@@ -370,15 +366,9 @@ https://mp.weixin.qq.com/s/lLaSXG1VF9Rys2GNzFP7pw
 
 轻松使用多种预训练卷积网络抽取图像特征
 
-
-
 https://mp.weixin.qq.com/s/OVWbxBNc4i0_5jgy06xS1A
 
 基于Tensorflow Estimators的文本分类
-
-https://mp.weixin.qq.com/s/U_Pew90j9swIqti3oKEIQg
-
-玩转TensorFlow Lite：有道云笔记实操案例分享
 
 https://mp.weixin.qq.com/s/c_2_9gvOynHaVW6pi4qQjQ
 

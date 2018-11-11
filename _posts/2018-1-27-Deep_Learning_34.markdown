@@ -116,6 +116,22 @@ https://zhuanlan.zhihu.com/intelligentunit
 
 一个DL+RL的专栏
 
+## 概述
+
+![](/images/img2/RL_intro.png)
+
+上图是深度强化学习的脉络图，参考文献中还有该领域的关键论文列表。
+
+参考：
+
+https://mp.weixin.qq.com/s/781fVvKr4yuq4q2GI1Y1gA
+
+从Zero到Hero，OpenAI重磅发布深度强化学习资源
+
+https://mp.weixin.qq.com/s/t5dvg5OaNgBNz1eF6Ok3SQ
+
+深度强化学习关键论文列表
+
 ## Deep Q-learning Network
 
 Deep Q-learning Network是DL在RL领域的开山之作。它的思想主要来自于Deepmind的两篇论文：
