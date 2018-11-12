@@ -20,6 +20,10 @@ PRML的python实现：
 
 https://github.com//ctgk/PRML
 
+PRML的matlab实现：
+
+https://github.com/PRML/PRMLT
+
 ## 参考
 
 http://ufldl.stanford.edu/wiki/index.php/Main_Page
@@ -345,6 +349,14 @@ https://mp.weixin.qq.com/s/35vcaVsFPRTEWQ1ZP9y51Q
 https://mp.weixin.qq.com/s/1MzoBW3e_crV1n-MMWjATg
 
 308页教程介绍最新几何对象映射技术，functional maps
+
+http://data8.org/
+
+UCB的数据科学基础课程：The Foundations of Data Science
+
+http://www.ds100.org/
+
+UCB的数据科学高级课程：Principles and Techniques of Data Science
 
 # Apollo
 

@@ -324,6 +324,10 @@ https://mp.weixin.qq.com/s/jHKgKnl-SbZltl76Ln_Fgg
 
 AutoML详解及其在推荐系统中的应用、优缺点
 
+https://mp.weixin.qq.com/s/0FdosHMzKiYL8XCx_XEPFA
+
+双十一疯狂剁手，你知道阿里是如何跟踪用户兴趣演化的吗？
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

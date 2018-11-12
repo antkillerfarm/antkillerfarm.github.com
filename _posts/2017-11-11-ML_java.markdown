@@ -371,7 +371,7 @@ https://mp.weixin.qq.com/s/dpJRequ5eilPKBT-wqA6YQ
 
 https://mp.weixin.qq.com/s/fqHropcxoP0AfQu2m1-wYQ
 
-王克欣 : 详解记忆增强神经网络
+王克欣:详解记忆增强神经网络
 
 https://mp.weixin.qq.com/s/LK8PBCC_uJoe_Rc4V940sQ
 
@@ -405,6 +405,10 @@ https://mp.weixin.qq.com/s/FwqKYNpIuB6cUAVjSey7mw
 
 Yoshua Bengio首次中国演讲：深度学习通往人类水平AI的挑战
 
-https://mp.weixin.qq.com/s/RS39wqZDf6gEhOY6gcOVSA
+https://mp.weixin.qq.com/s/PhgIy4UaBLh_pOO8OH2c4g
 
-74页教程融合逻辑推理和深度学习
+复杂GUI也能搞定！西安交通大学提出前端设计图自动转代码新方法
+
+https://mp.weixin.qq.com/s/pINZlL7NEGSWbfb03b0dJA
+
+Edward2.2，一种可以用TPU大规模训练的概率编程

@@ -6,6 +6,54 @@ category: resource
 
 # DL参考资源
 
+https://mp.weixin.qq.com/s/k61NHqe-mwN-27jHdNVlWw
+
+几何深度学习（Geometric Deep Learning）讲解
+
+https://www.jiqizhixin.com/articles/2017-07-27-2
+
+CVPR 2017李飞飞总结8年ImageNet历史，宣布挑战赛最终归于Kaggle
+
+https://mp.weixin.qq.com/s/DQcRqWALLuPpNabCv83Vcg
+
+自动机器学习，神经网络自主编程
+
+https://mp.weixin.qq.com/s/fY4vF0aPexwFi2Fu4grdzg
+
+大规模视觉理解竞赛WebVision冠军分享
+
+https://mp.weixin.qq.com/s/HlqzSdhj3Q3nX4Zl63PM0A
+
+商汤科技23篇论文横扫CVPR
+
+https://mp.weixin.qq.com/s/4dlWdPOCbYedu02aLAQ04Q
+
+MIT“创世纪”机器学习新系统，自动生成补丁修复Bug
+
+https://mp.weixin.qq.com/s/cr0BJLkyN2kW35-w1pebGQ
+
+学习在黑暗中看世界（Learning to See in the Dark）
+
+https://mp.weixin.qq.com/s/ESX-V5oMk35NhP7MKu_d0A
+
+美剧《硅谷》深度学习APP获艾美奖提名：使用TensorFlow和GPU开发
+
+https://mp.weixin.qq.com/s/2FKgCmQ8i58XamT_plrl1w
+
+深度神经网络为什么不易过拟合？傅立叶分析发现固有频谱偏差
+
+https://mp.weixin.qq.com/s/sbuqNhIVTDUe4Q6BxS5fWw
+
+盘点金融领域里常用的深度学习模型
+
+https://mp.weixin.qq.com/s/R6vZU_gBaODsh1XtsjTpFA
+
+MIT与FAIR提出“mixup”：利用数据和标签的随机线性插值提高神经网络的健壮性
+
+https://mp.weixin.qq.com/s/xZbsxAqo0mVUb-LyH6fU1g
+
+Yann LeCun：大脑如何高效率学习？
+
 https://mp.weixin.qq.com/s/UboQNEywHSBAYc0740qmzQ
 
 让机器学会创造新的概念：DeepMind提出符号-概念关联网络SCAN
@@ -13,10 +61,6 @@ https://mp.weixin.qq.com/s/UboQNEywHSBAYc0740qmzQ
 https://mp.weixin.qq.com/s/AAmQymWdKQDeL8DQacEZ3A
 
 用深度学习解决Bongard问题
-
-https://mp.weixin.qq.com/s/210l9K94KMqtJtqbrZ-mgg
-
-打开黑箱重要一步，MIT提出TbD-net，弥合视觉推理模型的性能与可解释性鸿沟
 
 https://mp.weixin.qq.com/s/E5VpBt53VTjOxt8wE3SrLA
 
@@ -45,10 +89,6 @@ https://mp.weixin.qq.com/s/2FDVt1-U6f0gicCVtZh4cA
 http://mp.weixin.qq.com/s/eXY0jVdWMg3B_CQ514ngsA
 
 深度学习各方面应用
-
-http://mp.weixin.qq.com/s/oBy_Xl7FSBUd46H9E8yUbA
-
-AI博士五星指南：入行自评，选大公司还是初创企业
 
 https://mp.weixin.qq.com/s/8a4hTHJ1F-dUiUI12COJkA
 
@@ -90,10 +130,6 @@ https://mp.weixin.qq.com/s/xVG72Q0zQrEqY7oRxES8Ug
 
 如何对机器学习代码进行单元测试？
 
-https://mp.weixin.qq.com/s/MpuUdZi8CWcu0b-ij-bHjA
-
-Jeff Dean出品：用机器学习索引替代B-Trees，3倍性能提升，10-100倍空间缩小
-
 https://mp.weixin.qq.com/s/aJdNoBrt438yj8arLSNHwg
 
 谷歌用ML模型替代数据库组件，或彻底改变数据系统开发
@@ -102,10 +138,6 @@ https://mp.weixin.qq.com/s/EA5FgDeFI_w-kSfMpf5Yxw
 
 神经网络视觉分类算法的意外弱点
 
-https://mp.weixin.qq.com/s/7NpJJn4k5oGPOB04S9Jyqw
-
-DeepMind新论文，关联推理为什么是智能最重要的特征
-
 https://mp.weixin.qq.com/s/V6JQuACFbDWBl-iYkDnRig
 
 自动修复Bug正确率达78.3%，北大、微软等提出ACS技术
@@ -113,10 +145,6 @@ https://mp.weixin.qq.com/s/V6JQuACFbDWBl-iYkDnRig
 https://mp.weixin.qq.com/s/QSo4wtXg8k0Uwks7_VBycw
 
 我从吴恩达深度学习课程中学到的21个心得：加拿大银行首席分析师“学霸”笔记分享
-
-https://mp.weixin.qq.com/s/BFJD8i_yg1Y6fxZS5or-rw
-
-Bengio最新论文提出GibbsNet：深度图模型中的迭代性对抗推断
 
 https://mp.weixin.qq.com/s/Pn3YLetgcf3-xoTvBcvDUQ
 
@@ -137,10 +165,6 @@ https://mp.weixin.qq.com/s/PhaDqX3OT-mqyFHohDMfdA
 https://mp.weixin.qq.com/s/0qyJtD124O5pRJ1UYEV0qg
 
 为给定任务自动生成神经网络：MIT提出RNN架构生成新方法
-
-https://mp.weixin.qq.com/s/eEQhwV1cA4nEgEBcOKDenA
-
-将逆向课程生成用于强化学习：伯克利新研究让智能体掌握全新任务
 
 https://mp.weixin.qq.com/s/Rd_U0gnusWqBRprLKIJaWQ
 
@@ -206,10 +230,6 @@ https://mp.weixin.qq.com/s/vCIpaFUTYggzN9YWs14atw
 
 让遥感图像活起来：遥感图像描述生成的模型与数据集探索
 
-https://mp.weixin.qq.com/s/exUYS2v5VyRaMdFylWlobw
-
-用循环神经网络进行文件无损压缩：斯坦福大学提出DeepZip
-
 https://mp.weixin.qq.com/s/DwY0oGu-G30Szs-ArI5WaQ
 
 程明明：面向弱监督的图像理解
@@ -266,10 +286,6 @@ https://mp.weixin.qq.com/s/gfuO7CwfFiNC-iqDquDKQQ
 
 五个案例，三大心得——带你进阶深度学习的实践应用之路
 
-http://mp.weixin.qq.com/s/6I0Z_yY7UT_7qOKOWcd7Mw
-
-李飞飞发表研究新成果：视觉推理的推断和执行程序！
-
 http://mp.weixin.qq.com/s/XH1dXWSPiQMAHYR0_-xylA
 
 精选深度学习在文本、视觉、语音等领域的论文集
@@ -294,10 +310,6 @@ http://mp.weixin.qq.com/s/D2Nw3oKF2DYgMZysmi_ysg
 
 通过Crowd Layer，利用众包标注数据集进行深度学习
 
-http://mp.weixin.qq.com/s/9mtgdNynv92FC2dA8-5KJA
-
-VAE和Adam发明人博士论文：变分推理和深度学习
-
 https://mp.weixin.qq.com/s/giwq3IZs6KSILSyXDn90pA
 
 破解AI大脑黑盒迈出新一步！谷歌现在更懂机器，还开源了研究工具
@@ -314,14 +326,6 @@ https://mp.weixin.qq.com/s/PC5KXU0zmE1eg2k_S9_pQg
 
 增加深度，加速神经网络优化？这是一份反直觉的实验结果
 
-https://mp.weixin.qq.com/s/sbV5SL6fAGad5KlBoqUKFQ
-
-斯坦福大学教授Christopher Manning提出全可微神经网络架构MAC：可用于机器推理
-
-https://mp.weixin.qq.com/s/uztYEW_azetOkOGiZcbCuw
-
-JeffDean又用深度学习搞事情：这次要颠覆整个计算机系统结构设计。这篇blog介绍了如何用DL方法提高内存访问的命中率。
-
 https://mp.weixin.qq.com/s/1oDM6HvHKPBT6rKTSzUfVA
 
 手把手：教你如何用深度学习模型预测加密货币价格
@@ -333,10 +337,6 @@ https://zhuanlan.zhihu.com/p/34437681
 https://mp.weixin.qq.com/s/Ng3tyXqiO499dhNDX5561g
 
 扔掉代码表！用RNN“破解”摩斯电码
-
-https://mp.weixin.qq.com/s/1wqguIqDS4FNsS67Yj77Qw
-
-牛津大学&Emotech首次严谨评估语义分割模型对对抗攻击的鲁棒性
 
 https://mp.weixin.qq.com/s/v8I8kBnjcctGjCv7nAscrg
 

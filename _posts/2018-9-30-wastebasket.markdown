@@ -356,6 +356,10 @@ https://mp.weixin.qq.com/s/ndzLKJC2Tvg2gKrr6jUNTw
 
 原来可视化能做得这么酷炫！Uber开源地理空间工具包kepler.gl
 
+http://echarts.baidu.com/echarts2/doc/example.html
+
+各种大数据展示用的图表
+
 ## 贝叶斯线性回归
 
 https://mp.weixin.qq.com/s/szTmHY-Yvn7N3s_GzTDiEA

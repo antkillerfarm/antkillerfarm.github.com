@@ -415,3 +415,7 @@ https://mp.weixin.qq.com/s/pBnKNRc56HhBWvrYaZjGdw
 https://mp.weixin.qq.com/s/QOdQKdLolR-YTihzaA81yw
 
 黄怀波 ：自省变分自编码器理论及其在图像生成上的应用
+
+https://mp.weixin.qq.com/s/FqY9I02blg3S8_K50B7czQ
+
+UC伯克利提出小批量MH测试：令MCMC方法在自编码器中更强劲

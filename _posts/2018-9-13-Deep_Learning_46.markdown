@@ -170,6 +170,10 @@ https://mp.weixin.qq.com/s/-KdR3buxFOrPE-w-IMLQ9A
 
 最强开源OCR！印刷体古籍文字识别超越著名商业软件ABBYY
 
+http://mp.weixin.qq.com/s/rS4xCsytYGqBLMUzlyA12A
+
+构建多层感知器神经网络对数字图片进行文本识别
+
 # 目标检测进阶
 
 ## CornerNet
@@ -243,10 +247,6 @@ https://mp.weixin.qq.com/s/PpT-NmTVjRi0_SEq0lISXw
 https://mp.weixin.qq.com/s/tmp1HXU7cLerLr0DY9NluQ
 
 杂乱环境下的显著性物体： 将显著性物体检测推向新高度
-
-https://zhuanlan.zhihu.com/p/41897137
-
-物体检测中的结构推理网络
 
 https://mp.weixin.qq.com/s/OqlZ2TRGbHURYW00440lgQ
 

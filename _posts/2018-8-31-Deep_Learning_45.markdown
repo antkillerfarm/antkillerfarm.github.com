@@ -264,6 +264,10 @@ https://zhuanlan.zhihu.com/p/46350372
 
 语义分割领域开山之作：Google提出用神经网络搜索实现语义分割
 
+https://mp.weixin.qq.com/s/VZVaWmCit5Ey7ZboeMbK7g
+
+AutoML、AutoKeras......这四个“Auto”的自动机器学习方法你分得清吗？
+
 # 多模态学习
 
 https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw
@@ -347,3 +351,4 @@ DMN可进行端到端的训练，并在多种任务上取得了state-of-the-art�
 http://blog.csdn.net/javafreely/article/details/71994247
 
 动态记忆网络
+

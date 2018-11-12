@@ -208,6 +208,10 @@ https://mp.weixin.qq.com/s/52hm3Cq3TFRnTMfDppivSQ
 
 中山大学等提出HSE：基于层次语义嵌入模型的精细化物体分类
 
+https://zhuanlan.zhihu.com/p/48192930
+
+Object-Part Attention Model for FGVC
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：

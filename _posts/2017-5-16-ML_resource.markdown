@@ -66,9 +66,9 @@ https://mp.weixin.qq.com/s/WozN8-FdASaku0UKT9EQ3A
 
 机器学习实用指南
 
-http://echarts.baidu.com/echarts2/doc/example.html
+https://mp.weixin.qq.com/s/ejdrNCY6ZdAqwT-_EjC8rQ
 
-各种大数据展示用的图表。
+近千人点赞！哈佛博士放出超多资源，机器学习课程教程小抄全都有
 
 https://mp.weixin.qq.com/s/BZTCNehoioM9ie8WoL7sUg
 
@@ -285,10 +285,6 @@ https://mp.weixin.qq.com/s/9cnXRCOmFwNnll-H0ts-FQ
 https://mp.weixin.qq.com/s/V0FBq2gbqyop8HwgLoPJXw
 
 “表”解机器学习
-
-https://mp.weixin.qq.com/s/FqY9I02blg3S8_K50B7czQ
-
-UC伯克利提出小批量MH测试：令MCMC方法在自编码器中更强劲
 
 https://mp.weixin.qq.com/s?__biz=MzU3NTE1OTE0Ng==&mid=2247483709&idx=1&sn=6e1a81918a437806d749144397f751ee
 

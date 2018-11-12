@@ -298,7 +298,9 @@ http://tflearn.org/
 
 5.TensorLayer。这个的封装粒度介于TensorFlow-Slim和TFLearn之间。
 
-http://tensorlayer.readthedocs.io/en/latest/user/tutorial.html
+https://tensorlayer.readthedocs.io/en/stable/user/tutorials.html
+
+这个Tutorials的内容比较多，除了常见的CNN、RNN之外，还有RL和DAE的内容。
 
 6.Pretty Tensor。来自google的TensorFlow封装。
 
@@ -357,4 +359,3 @@ TensorFlow学习_01_安装_基本操作_可视化结构、过程_Mnist
 https://blog.csdn.net/sinat_33761963/article/details/62433234
 
 Tensorflow的可视化工具Tensorboard的初步使用
-

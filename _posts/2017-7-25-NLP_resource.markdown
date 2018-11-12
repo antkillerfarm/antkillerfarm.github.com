@@ -62,10 +62,6 @@ https://mp.weixin.qq.com/s/nydByhX-sYROK2-OkUWA2g
 
 基于深度学习的自然语言处理
 
-https://mp.weixin.qq.com/s/NcUHJ89DPVdB7cJttsh-xw
-
-基于神经网络的知识推理
-
 https://mp.weixin.qq.com/s/fRw4DBX_Gl5CD0kvuiS5ag
 
 最新人机对话系统简略综述
@@ -105,6 +101,26 @@ https://mp.weixin.qq.com/s/VPs6OB81K1H7_TMV9xLUVQ
 https://mp.weixin.qq.com/s/RSWF5XxH3B1eQvY_DlEwew
 
 深度学习、机器学习与NLP的前世今生
+
+https://mp.weixin.qq.com/s/lPaMJHVAS7hiQu4fuQCSAw
+
+60页刘挺教授《中文信息处理前沿技术进展》报告下载
+
+https://mp.weixin.qq.com/s/pq2m4A31c9QQwka1j7XJDQ
+
+116页PPT了解FrameNet最新进展
+
+https://mp.weixin.qq.com/s/Vy7OxAojvgndgGkvmFrBKw
+
+61页slides理解句法分析过程
+
+https://mp.weixin.qq.com/s/Vg7CvR36_igLQbKAXU3Vrw
+
+254页《为NLP研究写出好代码》教程
+
+https://mp.weixin.qq.com/s/aasfNHP-qTALvkCvq0-mrg
+
+Yandex：基于GitHub的超全NLP视频、PPT、作业
 
 https://www.msra.cn/zh-cn/news/features/ruihua-song-20161226
 

@@ -128,6 +128,10 @@ https://mp.weixin.qq.com/s/uK0L5RV0bB2Jnr5WCZasfw
 
 深度学习在单图像超分辨率上的应用：SRCNN、Perceptual loss、SRResNet
 
+https://mp.weixin.qq.com/s/zWoQCKbZNz2td3cZxEsqKQ
+
+腾讯优图提出SRN-DeblurNet：高效高质量去除复杂图像模糊
+
 # SRCNN
 
 SRCNN（Super-Resolution CNN）是汤晓鸥小组的Chao Dong的作品。

@@ -90,14 +90,6 @@ https://mp.weixin.qq.com/s/9hEEh4HpVHk-GD5gi9MZSw
 
 “天猫精灵”如何为你写诗？人机共创的秘密在这儿
 
-https://mp.weixin.qq.com/s/pq2m4A31c9QQwka1j7XJDQ
-
-116页PPT了解FrameNet最新进展
-
-https://mp.weixin.qq.com/s/Vy7OxAojvgndgGkvmFrBKw
-
-61页slides理解句法分析过程
-
 https://mp.weixin.qq.com/s/icGEBkHP_xeOIdL8vM0K2A
 
 面向任务型对话中基于对话状态表示的序列到序列学习
@@ -265,10 +257,6 @@ https://mp.weixin.qq.com/s/1WtJEqhxCtBKVRs_-EevjA
 https://mp.weixin.qq.com/s/37qri3eFwF3kOWZxGUISzw
 
 你可能不再需要Attention：这是一个贼简单的神经机器翻译架构
-
-https://mp.weixin.qq.com/s/Vg7CvR36_igLQbKAXU3Vrw
-
-254页《为NLP研究写出好代码》教程
 
 https://mp.weixin.qq.com/s/Q0jxUiFFbrEMhy5Sv8979A
 

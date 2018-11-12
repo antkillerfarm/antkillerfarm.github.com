@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  区块链参考资源, 图像渲染, 雷达
+title:  区块链参考资源, 图像渲染, 雷达 & 信号处理
 category: resource 
 ---
 
@@ -266,7 +266,7 @@ https://www.cnblogs.com/mengdd/p/3237991.html
 
 图形学理论知识BRDF双向反射分布函数（Bidirectional Reflectance Distribution Function）
 
-# 雷达
+# 雷达 & 信号处理
 
 https://mp.weixin.qq.com/s/zDcbrZeK4tlO0jA3-s_lYg
 
@@ -448,3 +448,6 @@ https://mp.weixin.qq.com/s/5rNpp2cYZhcOKZCiy4LkMQ
 
 SAR成像原理及图像鉴赏
 
+https://mp.weixin.qq.com/s/i84yW8L7qGVpPtwpaJhhgw
+
+深入浅出聊抖动（Jitter）

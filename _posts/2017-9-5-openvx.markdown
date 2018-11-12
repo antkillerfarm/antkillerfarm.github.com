@@ -373,4 +373,3 @@ RDMA网卡（Remote Direct Memory Access，这是一种硬件的网络技术，�
 https://mp.weixin.qq.com/s/_xcE8RUs0m4gwk3kxpe9jA
 
 基于HTM/RDMA的可扩展内存事务处理系统
-

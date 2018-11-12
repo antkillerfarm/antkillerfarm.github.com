@@ -86,7 +86,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tenso
 
 1.LSTM由3层减为1层。
 
-2.使用CTC loss。（参见《深度学习（二十五）》）
+2.使用CTC loss。（参见《深度学习（二十九）》）
 
 在识别验证码的例子中，假如有两幅图，分别是123和4567，那么Label就是：
 
@@ -253,26 +253,6 @@ http://spandh.dcs.shef.ac.uk/chime_challenge/chime2016/
 
 CHiMe – Computational Hearing in Multisource Environments-国际多通道语音分离和识别大赛
 
-# Jetty
-
-Jetty是一个Java Servlet容器。官网：
-
-https://www.eclipse.org/jetty/
-
-它与Tomcat的差异在于：
-
-1.Jetty是Eclipse基金会的项目，而Tomcat是Apache基金会的项目。
-
-2.Jetty是轻量级的Web Server，系统开销小，而Tomcat是重量级的Web Server，功能更强大。
-
-3.启动方式不同。Jetty一般是嵌入Java程序中，在程序启动之后，再启动Jetty。而Tomcat是首先启动自己作为后台服务，然后再加载功能性的应用。
-
-参考：
-
-https://github.com/jasonish/jetty-springmvc-jsp-template
-
-一个Jetty+Spring MVC+JSP的demo。
-
 # 图数据库
 
 ## Neo4j
@@ -337,3 +317,22 @@ https://mp.weixin.qq.com/s/BzQBy6AoMXXpjsdGyXh1zA
 
 揭秘RedisGraph: Redis内嵌高性能内存图数据库
 
+# Jetty
+
+Jetty是一个Java Servlet容器。官网：
+
+https://www.eclipse.org/jetty/
+
+它与Tomcat的差异在于：
+
+1.Jetty是Eclipse基金会的项目，而Tomcat是Apache基金会的项目。
+
+2.Jetty是轻量级的Web Server，系统开销小，而Tomcat是重量级的Web Server，功能更强大。
+
+3.启动方式不同。Jetty一般是嵌入Java程序中，在程序启动之后，再启动Jetty。而Tomcat是首先启动自己作为后台服务，然后再加载功能性的应用。
+
+参考：
+
+https://github.com/jasonish/jetty-springmvc-jsp-template
+
+一个Jetty+Spring MVC+JSP的demo。

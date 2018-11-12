@@ -120,6 +120,10 @@ https://mp.weixin.qq.com/s/K17wlC3tueNBfHkYBUFcQg
 
 基于深度学习的HEVC复杂度优化。这是篇视频压缩的blog。
 
+https://mp.weixin.qq.com/s/exUYS2v5VyRaMdFylWlobw
+
+用循环神经网络进行文件无损压缩：斯坦福大学提出DeepZip
+
 # SVDF
 
 SVDF是UCB和Google Speech Group的作品，主要用于简化Speech模型的计算量。

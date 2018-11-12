@@ -188,6 +188,10 @@ https://mp.weixin.qq.com/s/COnDB9EveANOBmCksCqoYg
 
 微软内部研究数据集正式对外开放，覆盖NLP、CV等9个领域
 
+https://mp.weixin.qq.com/s/4jhtCUtv_szfMvyDCWKvoQ
+
+最强数据集50个最佳机器学习公共数据，可以帮你验证idea！
+
 ## NLP
 
 https://mp.weixin.qq.com/s/tewjGzfAVCKcG1dlURxyeg
@@ -269,6 +273,10 @@ https://mp.weixin.qq.com/s/LC6bJOsJczTLolQ1Yx5cvg
 https://mp.weixin.qq.com/s/yZ138cMv4203wJdIY_0sUA
 
 FAIR重磅发布大规模语料库XNLI：解决跨15种语言理解难题
+
+https://mp.weixin.qq.com/s/RduLMsu599YRSsxd-mjX2A
+
+最新任务型对话数据集大全
 
 ## CV
 
@@ -355,4 +363,8 @@ https://mp.weixin.qq.com/s/vTnc55KAiGaFfktHPZctbw
 https://mp.weixin.qq.com/s/-NQa2VeuskDx5XN9WMCmPQ
 
 腾讯开源业内最大多标签图像数据集，附ResNet-101模型
+
+https://mp.weixin.qq.com/s/8nPfU72WocrDxToG6v5tIA
+
+计算摄影学数据集汇总（一）
 

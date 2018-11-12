@@ -124,6 +124,10 @@ https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652029536&idx=5&sn=96977b
 
 用神经网络识别歌曲流派
 
+https://mp.weixin.qq.com/s/I2Mi-ppwRztSCJNUDgVXcg
+
+全球数据竞赛Top解决方案开源整理与汇总
+
 ## 工具
 
 https://mp.weixin.qq.com/s/TT4whft1Tj1pCEPbnMH1cA

@@ -346,3 +346,11 @@ https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247488366&idx=1&sn=01baaf
 
 电商搜索算法技术的演进
 
+https://mp.weixin.qq.com/s/MpuUdZi8CWcu0b-ij-bHjA
+
+Jeff Dean出品：用机器学习索引替代B-Trees，3倍性能提升，10-100倍空间缩小
+
+https://mp.weixin.qq.com/s/uztYEW_azetOkOGiZcbCuw
+
+JeffDean又用深度学习搞事情：这次要颠覆整个计算机系统结构设计。这篇blog介绍了如何用DL方法提高内存访问的命中率。
+

@@ -402,10 +402,6 @@ https://mp.weixin.qq.com/s/o0hjJH6P-8pICS43VFVjIA
 
 Tomaso Poggio深度学习理论：深度网络“过拟合缺失”的本质
 
-https://mp.weixin.qq.com/s/ouHPvm4vQKga5sZfG_CHBw
-
-DeepMind用深度学习模仿大脑推理，预测编码智能推进一大步！
-
 https://mp.weixin.qq.com/s/494I6XHrk9fB2DvhiMM9iQ
 
 第四范式联合港科大提出样本自适应在线卷积稀疏编码

@@ -292,6 +292,10 @@ https://mp.weixin.qq.com/s/9LvP3AH1PJhjrokTGg3blA
 
 心中无码：这是一个能自动脑补漫画空缺部分的AI项目
 
+https://mp.weixin.qq.com/s/cBTnX1lNHJhCMDX926aujA
+
+想怎么GAN就怎么GAN，一键拯救发际线
+
 # Graph NN
 
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
@@ -389,3 +393,12 @@ DeepMind开源图网络库，一种结合图和神经网络的新方法
 https://mp.weixin.qq.com/s/5DmpgPN4t3p3H53Xu7_-3A
 
 北大、微软亚洲研究院：高效的大规模图神经网络计算
+
+https://mp.weixin.qq.com/s/BFJD8i_yg1Y6fxZS5or-rw
+
+Bengio最新论文提出GibbsNet：深度图模型中的迭代性对抗推断
+
+https://zhuanlan.zhihu.com/p/48834333
+
+GCN in 2018：2018年顶会论文中的图卷积神经网络的理论与应用
+

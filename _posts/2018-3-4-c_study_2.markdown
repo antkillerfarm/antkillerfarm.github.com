@@ -384,10 +384,6 @@ https://mp.weixin.qq.com/s/DtxjX9RfRgehxLsJ7MFoNw
 
 谷歌大脑开源TensorFuzz，自动Debug神经网络！
 
-https://mp.weixin.qq.com/s/5vDSrWeUvlBuZgmX0R9pBQ
-
-斯坦福“黑盒学习”研究：使用神经变分推理的无向图模型，可替代“采样”
-
 https://mp.weixin.qq.com/s/t0lGL66YIJwIvI4emNfN7Q
 
 UC Berkeley新研究：通过深度学习建模注意点采样阵列

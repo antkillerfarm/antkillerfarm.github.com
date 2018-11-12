@@ -287,6 +287,10 @@ TF提供了一套专门的IO函数：tf.gfile。主要优点在于：对于写�
 
 迁移学习的时候，有的时候需要保持某几层的权值，在后续训练中不被改变。这时，可以在创建Variable时，令trainable=false。
 
+----
+
+sparse_softmax_cross_entropy_with_logits和softmax_cross_entropy_with_logits的区别在于：后者的label是一个one hot的tensor，而前者label直接用对应分类的index表示就行了。
+
 ## blog
 
 http://www.jianshu.com/u/eaec1fc422e9
@@ -394,19 +398,3 @@ https://mp.weixin.qq.com/s/68vaQRqUo8u09iheKzFVEw
 https://mp.weixin.qq.com/s/7er3wNV_IhxhFDOIwNMpww
 
 深度强化学习入门：用TensorFlow构建你的第一个游戏AI
-
-https://mp.weixin.qq.com/s/TZMOO_LFCxk297lKNQfvGQ
-
-TensorFlow从基础到实战：一步步教你创建交通标志分类神经网络
-
-https://mp.weixin.qq.com/s/HUUwtyjRllg-5olqYHK4XA
-
-基于TensorFlow的开源项目FaceRank
-
-https://mp.weixin.qq.com/s/N2OP1uX7JjfIJQ_B4NHKpw
-
-横向对比三大分布式机器学习平台：Spark、PMLS、TensorFlow
-
-https://github.com/jinfagang/rl_atari_pytorch
-
-ReinforcementLearning Learn Play Atari Using DDPG and LSTM.

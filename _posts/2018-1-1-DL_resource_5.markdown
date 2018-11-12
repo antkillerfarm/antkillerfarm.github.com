@@ -146,6 +146,10 @@ https://mp.weixin.qq.com/s/YnOFJIf-l6CxSWdxIJn1FA
 
 与一年一届的CVPR相比，两年一届的ICCV、ECCV有什么不同？
 
+http://mp.weixin.qq.com/s/oBy_Xl7FSBUd46H9E8yUbA
+
+AI博士五星指南：入行自评，选大公司还是初创企业
+
 ## 深度时间序列
 
 https://mp.weixin.qq.com/s/cChJO6YrE_XAgeInS7J1Vw
@@ -200,6 +204,53 @@ https://mp.weixin.qq.com/s/ENYX87SMlgv30x08iYFQIw
 
 几乎零能耗零延迟！UCLA科学家发明光衍射神经网络，登上Science
 
+
+# 深度推理
+
+https://mp.weixin.qq.com/s/RS39wqZDf6gEhOY6gcOVSA
+
+74页教程融合逻辑推理和深度学习
+
+https://mp.weixin.qq.com/s/NcUHJ89DPVdB7cJttsh-xw
+
+基于神经网络的知识推理
+
+https://mp.weixin.qq.com/s/ouHPvm4vQKga5sZfG_CHBw
+
+DeepMind用深度学习模仿大脑推理，预测编码智能推进一大步！
+
+https://zhuanlan.zhihu.com/p/28654835
+
+视觉推理（Visual Reasoning），神经网络也可以有逻辑
+
+https://mp.weixin.qq.com/s/HP8KLbo26W5UscCGavKDRw
+
+IBM Watson提出人机推理网络HuMaINs，结合人机两者优势
+
+https://mp.weixin.qq.com/s/210l9K94KMqtJtqbrZ-mgg
+
+打开黑箱重要一步，MIT提出TbD-net，弥合视觉推理模型的性能与可解释性鸿沟
+
+https://mp.weixin.qq.com/s/7NpJJn4k5oGPOB04S9Jyqw
+
+DeepMind新论文，关联推理为什么是智能最重要的特征
+
+http://mp.weixin.qq.com/s/6I0Z_yY7UT_7qOKOWcd7Mw
+
+李飞飞发表研究新成果：视觉推理的推断和执行程序！
+
+http://mp.weixin.qq.com/s/9mtgdNynv92FC2dA8-5KJA
+
+VAE和Adam发明人博士论文：变分推理和深度学习
+
+https://mp.weixin.qq.com/s/sbV5SL6fAGad5KlBoqUKFQ
+
+斯坦福大学教授Christopher Manning提出全可微神经网络架构MAC：可用于机器推理
+
+https://mp.weixin.qq.com/s/5vDSrWeUvlBuZgmX0R9pBQ
+
+斯坦福“黑盒学习”研究：使用神经变分推理的无向图模型，可替代“采样”
+
 ## 参考
 
 https://mp.weixin.qq.com/s/Nyb9qTYn5_XFhQPa8KZojw
@@ -237,10 +288,6 @@ http://mp.weixin.qq.com/s/ddTNr-967IahTZ2X1LNSEQ
 https://mp.weixin.qq.com/s/r6Dnv3v6TYwTsAQJTDR0Mg
 
 熬过深宫十几载，深度学习上位这五年
-
-https://zhuanlan.zhihu.com/p/28654835
-
-视觉推理（Visual Reasoning），神经网络也可以有逻辑
 
 https://mp.weixin.qq.com/s/ty8RyPREo_EA7O8vA2pQuQ
 
@@ -333,68 +380,3 @@ https://mp.weixin.qq.com/s/AZyqxZf6CbZJoT3qOpHDCQ
 https://mp.weixin.qq.com/s/z-_CxTQup-g6cAvVDwS-kQ
 
 谷歌开源DeepVariant，之前的经典检测基因变异法将被颠覆
-
-https://mp.weixin.qq.com/s/k61NHqe-mwN-27jHdNVlWw
-
-几何深度学习（Geometric Deep Learning）讲解
-
-https://www.jiqizhixin.com/articles/2017-07-27-2
-
-CVPR 2017李飞飞总结8年ImageNet历史，宣布挑战赛最终归于Kaggle
-
-https://mp.weixin.qq.com/s/DQcRqWALLuPpNabCv83Vcg
-
-自动机器学习，神经网络自主编程
-
-https://mp.weixin.qq.com/s/fY4vF0aPexwFi2Fu4grdzg
-
-大规模视觉理解竞赛WebVision冠军分享
-
-https://mp.weixin.qq.com/s/cO1VlYGwdRBAbPs7IgvcAA
-
-超越传统强化学习的价值分布方法
-
-https://mp.weixin.qq.com/s/HlqzSdhj3Q3nX4Zl63PM0A
-
-商汤科技23篇论文横扫CVPR
-
-https://mp.weixin.qq.com/s/4dlWdPOCbYedu02aLAQ04Q
-
-MIT“创世纪”机器学习新系统，自动生成补丁修复Bug
-
-http://mp.weixin.qq.com/s/rS4xCsytYGqBLMUzlyA12A
-
-构建多层感知器神经网络对数字图片进行文本识别
-
-https://mp.weixin.qq.com/s/cr0BJLkyN2kW35-w1pebGQ
-
-学习在黑暗中看世界（Learning to See in the Dark）
-
-https://mp.weixin.qq.com/s/zWoQCKbZNz2td3cZxEsqKQ
-
-腾讯优图提出SRN-DeblurNet：高效高质量去除复杂图像模糊
-
-https://mp.weixin.qq.com/s/ESX-V5oMk35NhP7MKu_d0A
-
-美剧《硅谷》深度学习APP获艾美奖提名：使用TensorFlow和GPU开发
-
-https://mp.weixin.qq.com/s/2FKgCmQ8i58XamT_plrl1w
-
-深度神经网络为什么不易过拟合？傅立叶分析发现固有频谱偏差
-
-https://mp.weixin.qq.com/s/HP8KLbo26W5UscCGavKDRw
-
-IBM Watson提出人机推理网络HuMaINs，结合人机两者优势
-
-https://mp.weixin.qq.com/s/sbuqNhIVTDUe4Q6BxS5fWw
-
-盘点金融领域里常用的深度学习模型
-
-https://mp.weixin.qq.com/s/R6vZU_gBaODsh1XtsjTpFA
-
-MIT与FAIR提出“mixup”：利用数据和标签的随机线性插值提高神经网络的健壮性
-
-https://mp.weixin.qq.com/s/xZbsxAqo0mVUb-LyH6fU1g
-
-Yann LeCun：大脑如何高效率学习？
-

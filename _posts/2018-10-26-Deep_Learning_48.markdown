@@ -112,6 +112,18 @@ https://mp.weixin.qq.com/s/iNz82GUULxDndBIiGSArmQ
 
 新开源！实时语义分割算法Light-Weight RefineNet
 
+https://mp.weixin.qq.com/s/1wqguIqDS4FNsS67Yj77Qw
+
+牛津大学&Emotech首次严谨评估语义分割模型对对抗攻击的鲁棒性
+
+https://zhuanlan.zhihu.com/p/48198502
+
+Non-local Neural Networks论文笔记
+
+https://mp.weixin.qq.com/s/EzfvKzs8Ue8i9x9TFgZ-CQ
+
+爱奇艺蒙版AI：弹幕穿人过，爱豆心中坐
+
 # GAN进阶
 
 https://mp.weixin.qq.com/s/c84LMFnIhoDeolc1B4MIVA

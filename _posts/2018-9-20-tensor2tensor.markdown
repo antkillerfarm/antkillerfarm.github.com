@@ -212,6 +212,10 @@ https://mp.weixin.qq.com/s/v8-4vs2V6R8VljY0k1PzhA
 
 OpenCV4.0 快速QR二维码检测测试示例
 
+https://mp.weixin.qq.com/s/GMt66ZIO5AiF1B2B8nDVKw
+
+开源、高质量QR码多语言生成库
+
 https://mp.weixin.qq.com/s/Q52nxDKWQieygmUt2tG-BA
 
 OpenCV图像处理之基于积分图实现NCC快速相似度匹配
@@ -383,3 +387,19 @@ https://mp.weixin.qq.com/s/XcqVtFBY5rIn0FgPEx0eTg
 https://mp.weixin.qq.com/s?__biz=MzU1OTMyNDcxMQ==&mid=2247484969&idx=1&sn=29d04fbb56a4464b08407eb87d26325e
 
 基于源代码为Raspberry Pi设备构建TensorFlow
+
+https://mp.weixin.qq.com/s/TZMOO_LFCxk297lKNQfvGQ
+
+TensorFlow从基础到实战：一步步教你创建交通标志分类神经网络
+
+https://mp.weixin.qq.com/s/HUUwtyjRllg-5olqYHK4XA
+
+基于TensorFlow的开源项目FaceRank
+
+https://mp.weixin.qq.com/s/N2OP1uX7JjfIJQ_B4NHKpw
+
+横向对比三大分布式机器学习平台：Spark、PMLS、TensorFlow
+
+https://github.com/jinfagang/rl_atari_pytorch
+
+ReinforcementLearning Learn Play Atari Using DDPG and LSTM.
