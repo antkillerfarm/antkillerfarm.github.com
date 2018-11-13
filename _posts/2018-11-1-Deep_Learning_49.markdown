@@ -16,6 +16,24 @@ category: DL
 | 对齐 | 单调，硬 | 单调，硬 | 不单调，软 |
 | 解码所需步数 | 输入长度 | 输入长度+输出长度 | 输出长度 |
 
+## 声纹识别
+
+https://mp.weixin.qq.com/s/XUHS4o2G-iGuV9uuOmfBdQ
+
+为什么在说话人识别技术中，PLDA面对神经网络依然坚挺？
+
+https://mp.weixin.qq.com/s/bgIJMRZ64En3xMk3IGK-Vw
+
+如何基于迁移学习快速识别出讲话的人是谁？
+
+https://mp.weixin.qq.com/s/I2XU9u28S6LFoTY4kizoqw
+
+清华大学郑方：语音技术与身份信息的隐私保护
+
+https://mp.weixin.qq.com/s/YOupCjU06JhRCZNCbMvAgQ
+
+Google开源新AI模型，语音区分准确率92%创新高
+
 ## 参考
 
 https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=400189223&idx=1&sn=1cb32bee42de626443ebadbf065ec79c
@@ -82,10 +100,6 @@ http://mp.weixin.qq.com/s/xRA9Xh-FTrhbIg0wLnfzhA
 
 温正棋谈语音质检方案：从关键词检索到情感识别
 
-https://mp.weixin.qq.com/s/XUHS4o2G-iGuV9uuOmfBdQ
-
-为什么在说话人识别技术中，PLDA面对神经网络依然坚挺？
-
 https://mp.weixin.qq.com/s/XP4NVYMmKj9RLsgonP3ooQ
 
 无需进行滤波后处理，利用循环推断算法实现歌唱语音分离
@@ -130,17 +144,9 @@ https://mp.weixin.qq.com/s/HSdhkazt1j5phMTLRMjFlQ
 
 深度对抗声学模型训练框架
 
-https://mp.weixin.qq.com/s/bgIJMRZ64En3xMk3IGK-Vw
-
-如何基于迁移学习快速识别出讲话的人是谁？
-
 https://mp.weixin.qq.com/s/jHB5pRsisvh-ZB8uY1oRTA
 
 基于TensorFlow，人声识别如何在端上实现？
-
-https://mp.weixin.qq.com/s/I2XU9u28S6LFoTY4kizoqw
-
-清华大学郑方：语音技术与身份信息的隐私保护
 
 https://mp.weixin.qq.com/s/i7ugVM0mGqohThLW6NjNoQ
 

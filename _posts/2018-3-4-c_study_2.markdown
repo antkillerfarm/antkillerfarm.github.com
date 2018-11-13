@@ -94,6 +94,16 @@ HBuilder，一个html编辑的IDE。
 
 # Python
 
+## Captcha
+
+Captcha是一个Python验证码库，能够生成音频和图片验证码。
+
+代码：
+
+https://github.com/lepture/captcha
+
+这个库可用于生成大量有标签的验证码，是DL入门的必备工具。
+
 ## 如何通过需认证的代理获取HTTP网页
 
 Python内置的urllib和urllib2模块都可用于获取HTTP网页，但使用范围是不同的。urllib只支持HTTP 0.9和HTTP 1.0，所以如果只是使用代理可以使用urllib.FancyURLopener类，如果该代理还需要认证的话urllib就不行了。因为代理认证是HTTP 1.1中引入的。
@@ -403,4 +413,3 @@ DeepMind提出视觉问题回答新模型，CLEVR准确率达98.8％
 https://mp.weixin.qq.com/s/8dVronQoeZLJI2g49AljLg
 
 技术讲解概率机器学习——深度学习革命之后AI道路
-

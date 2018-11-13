@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器人/无人驾驶参考资源
+title:  机器人/无人驾驶参考资源（一）
 category: resource 
 ---
 
@@ -421,15 +421,3 @@ https://mp.weixin.qq.com/s/-dGXe4RuU4w8DN8ffCMiFg
 https://mp.weixin.qq.com/s/YDIoVf20kybu8JEUY3GZWg
 
 Lattice Planner规划算法
-
-https://mp.weixin.qq.com/s/5TyL9bkKe-XMKLl-QbtaZg
-
-西电智能学子斩获ECCV2018无人机挑战赛冠军—算法分享
-
-https://mp.weixin.qq.com/s/1SxwYqcxB8zIavr11cIGWg
-
-机器学习及深度学习在自动驾驶中的应用
-
-https://mp.weixin.qq.com/s/2gk1xF3lh2ioIGQeY_ZsHQ
-
-highD：德国提出从空中角度测量车辆数据的新方法

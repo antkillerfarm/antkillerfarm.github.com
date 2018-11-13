@@ -238,6 +238,10 @@ https://mp.weixin.qq.com/s/ZNNgEB9rFjAE8SdfMo9NLA
 
 盘点30个2017年最炙手可热的GitHub机器学习开源项目
 
+https://mp.weixin.qq.com/s/cWCVmPQUclW3OnAps9H5Bw
+
+2018年最火爆的30个机器学习项目汇总！
+
 https://mp.weixin.qq.com/s/jEBzH1TpJBK1Tc3gfnbmTQ
 
 ICCV 13大不可错过的有趣项目

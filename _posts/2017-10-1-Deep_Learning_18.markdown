@@ -108,24 +108,6 @@ https://zhuanlan.zhihu.com/p/47575929
 
 YOLOv2/YOLO9000深入理解
 
-# YOLOv3
-
-https://zhuanlan.zhihu.com/p/34945787
-
-YOLOv3：An Incremental Improvement全文翻译
-
-https://mp.weixin.qq.com/s/UWuCiV6dBk9Z0XusEBS6-g
-
-物体检测经典模型YOLO新升级，就看一眼，速度提升3倍！
-
-https://mp.weixin.qq.com/s/BF7mj-_D303cLiD5e6oy6w
-
-期待已久的—YOLO V3
-
-https://mp.weixin.qq.com/s/-Ixqxx6QGJDTM4g50y6LyA
-
-进击的YOLOv3，目标检测网络的巅峰之作
-
 # 其它目标检测网络
 
 ## A-Fast-RCNN

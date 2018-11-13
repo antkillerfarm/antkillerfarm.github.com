@@ -223,7 +223,23 @@ http://www.cnblogs.com/zhangjing0502/archive/2012/05/16/2503880.html
 
 Python的range和xrange
 
-## 时间、日期数据的格式处理。
+## enumerate
+
+普通Iterator：
+
+{% highlight python %}
+for item in enumerate(list):
+    print(item)
+{% endhighlight %}
+
+带index的Iterator：
+
+{% highlight python %}
+for index, item in enumerate(list):
+    print(index, item)
+{% endhighlight %}
+
+## 时间、日期数据的格式处理
 
 时间数据上的格式处理，主要指strftime和strptime函数。其中前者可将时间数据转换成指定格式的字符串，而后者则将字符串转换成时间数据。
 
@@ -394,13 +410,3 @@ self.player.seek(1.0, Gst.Format.TIME, Gst.SeekFlags.FLUSH, Gst.SeekType.SET,\
 改为
 
 `c_long(Gst.CLOCK_TIME_NONE).value`
-
-## Captcha
-
-Captcha是一个Python验证码库，能够生成音频和图片验证码。
-
-代码：
-
-https://github.com/lepture/captcha
-
-这个库可用于生成大量有标签的验证码，是DL入门的必备工具。

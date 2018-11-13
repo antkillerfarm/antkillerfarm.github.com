@@ -124,6 +124,10 @@ https://mp.weixin.qq.com/s/EzfvKzs8Ue8i9x9TFgZ-CQ
 
 爱奇艺蒙版AI：弹幕穿人过，爱豆心中坐
 
+https://mp.weixin.qq.com/s/19uMhoNXEygLRTYT2PbsYQ
+
+图像分割技术介绍
+
 # GAN进阶
 
 https://mp.weixin.qq.com/s/c84LMFnIhoDeolc1B4MIVA

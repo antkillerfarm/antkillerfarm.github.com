@@ -382,3 +382,6 @@ https://mp.weixin.qq.com/s/qT8EhRuVn83OFpy94Ywqiw
 
 HiddenLayer：可视化PyTorch、TensorFlow神经网络图的轻量级工具！
 
+https://mp.weixin.qq.com/s/Tm6fTjXG_7BVc70GROPdag
+
+TensorSpace：超酷炫3D神经网络可视化框架

@@ -328,6 +328,10 @@ https://mp.weixin.qq.com/s/0FdosHMzKiYL8XCx_XEPFA
 
 双十一疯狂剁手，你知道阿里是如何跟踪用户兴趣演化的吗？
 
+https://zhuanlan.zhihu.com/p/49410727
+
+利用分类学数据来增强序列推荐的能力
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

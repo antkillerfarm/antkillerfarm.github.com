@@ -124,6 +124,10 @@ https://mp.weixin.qq.com/s/nSQvjBRMaBeoOjdHbyrbuw
 
 详解深度学习中的Normalization，不只是BN（2）
 
+https://mp.weixin.qq.com/s/Z119_EpLKDz1TiLXGbygJQ
+
+MIT新研究参透批归一化原理
+
 # CTC
 
 ## 概述

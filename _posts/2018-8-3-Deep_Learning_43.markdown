@@ -1,50 +1,8 @@
 ---
 layout: post
-title:  深度学习（四十三）——图像检索, 图像变换, Graph NN
+title:  深度学习（四十三）——图像变换, Graph NN
 category: DL 
 ---
-
-# 图像检索
-
-## 传统方法
-
-https://mp.weixin.qq.com/s/sM78DCOK3fuG2JrP2QaSZA
-
-SIFT与CNN的碰撞：万字长文回顾图像检索任务十年探索历程（上）
-
-https://mp.weixin.qq.com/s/yzVMDEpwbXVS0y-CwWSBEA
-
-SIFT与CNN的碰撞：万字长文回顾图像检索任务十年探索历程（下）
-
-https://mp.weixin.qq.com/s/Sda94q-40goiZGSYGgm_Yw
-
-基于内容的图像检索技术综述-传统经典方法
-
-https://mp.weixin.qq.com/s/ED-zovVT_vHId4mYXdEo5w
-
-高效大规模图像搜索开源实现
-
-## DL方法
-
-https://zhuanlan.zhihu.com/p/36479489
-
-图像检索：因缘际会与前瞻
-
-https://mp.weixin.qq.com/s/aRndRlVnY5ZRBFnNbVNecg
-
-李飞飞CS231n项目：这两位工程师想用神经网络帮你还原买家秀
-
-https://mp.weixin.qq.com/s/zHSDFR_Nd4LfvIaq9kSrww
-
-BMVC2018图像检索论文—使用区域注意力网络改进R-MAC方法
-
-https://mp.weixin.qq.com/s/FJCZvc8pl-CwFhyiCD6E-g
-
-Pinterest视觉搜索工程师孙彦：视觉搜索不是“鸡肋”
-
-https://mp.weixin.qq.com/s/QgYtfvsLGcfqLA98mp19tg
-
-KDD2018阿里巴巴论文揭示自家大规模视觉搜索算法
 
 # 图像变换
 
@@ -63,6 +21,10 @@ https://mp.weixin.qq.com/s/X96oI-duHwyCFAR79inlig
 真实到可怕！英伟达MIT造出马良的神笔
 
 ## 参考
+
+https://mp.weixin.qq.com/s/YbRo7TJ3j4dloSmKX40uAA
+
+Image-to-Image的论文汇总
 
 https://zhuanlan.zhihu.com/p/26746283
 
@@ -279,6 +241,10 @@ https://mp.weixin.qq.com/s/BWBrso7O1O3Rfxa4QWZH4g
 https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247505181&idx=1&sn=2e817ec2ae918fd85c0ebcf85e810997
 
 惊！史上最佳GAN现身，超真实AI假照片，行家们都沸腾了
+
+https://mp.weixin.qq.com/s/b3EVdPGY2jxliwdbbB1kcQ
+
+“史上最强GAN图像生成器”BigGAN的demo出了！
 
 https://mp.weixin.qq.com/s/MPdGF2-cJbNcvaEx-2BnFg
 
