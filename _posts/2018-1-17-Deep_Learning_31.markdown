@@ -1,8 +1,28 @@
 ---
 layout: post
-title:  深度学习（三十一）——依存分析, Image Caption Generation, Multi-agent
+title:  深度学习（三十一）——依存分析, Image Caption Generation, Multi-agent, 图像超分辨率进阶
 category: DL 
 ---
+
+# NLP历史
+
+![](/images/img2/text.jpg)
+
+![](/images/img2/NLP_history.png)
+
+第一代技术（1950s）：符号主义，用计算机的符号操作来模拟人的认知过程。
+
+第二代技术（1970s）：语法规则，依赖于专家人工制定的语法规则和本体设计（ontological design）。
+
+第三代技术（1990s）：统计学习，即让计算机阅读大量文章。
+
+第四代技术（2010s）：深度学习，用一个复杂的模型像人脑神经网络一样运作。
+
+参考：
+
+https://mp.weixin.qq.com/s/1cdg635KcPTV6mFdwPo2OQ
+
+达观数据：文字的起源与文本挖掘的前世今生
 
 # 依存分析
 
@@ -351,3 +371,7 @@ WDSR
 https://mp.weixin.qq.com/s/AxHTaT-G5_Y6Iw_3aIIxCg
 
 超分辨率技术如何发展？这6篇ECCV 18论文带你一次尽览
+
+https://mp.weixin.qq.com/s/zWoQCKbZNz2td3cZxEsqKQ
+
+腾讯优图提出SRN-DeblurNet：高效高质量去除复杂图像模糊

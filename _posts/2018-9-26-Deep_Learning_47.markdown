@@ -10,6 +10,10 @@ https://mp.weixin.qq.com/s/kbqTHIOzAj1aERl4tm-kVA
 
 2017上半年无监督特征学习研究成果汇总
 
+https://mp.weixin.qq.com/s/J50L6hESBROfT8IIAnofQQ
+
+Yan LeCun109页最新报告：图嵌入, 内容理解，自监督学习
+
 https://mp.weixin.qq.com/s/aCWAU2RXk9fTzfFqOyjqUw
 
 能自主学习的人工突触，为无监督学习开辟新的路径

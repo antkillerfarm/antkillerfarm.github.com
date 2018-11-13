@@ -338,6 +338,10 @@ https://mp.weixin.qq.com/s/R1hdkPTdFCo7JvOKNcEzJg
 
 DeepMind&VGG提出基于集合的人脸识别算法GhostVLAD,精度远超IJB-B数据集state-of-the-art
 
+https://mp.weixin.qq.com/s/CH46uvOshGss7O2bbxFoWQ
+
+曹杰：Rotating is Believing
+
 # AI前沿
 
 人工智能前沿7大热点：

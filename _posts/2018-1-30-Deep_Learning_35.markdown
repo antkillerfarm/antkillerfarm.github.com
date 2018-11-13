@@ -419,3 +419,7 @@ https://mp.weixin.qq.com/s/QOdQKdLolR-YTihzaA81yw
 https://mp.weixin.qq.com/s/FqY9I02blg3S8_K50B7czQ
 
 UC伯克利提出小批量MH测试：令MCMC方法在自编码器中更强劲
+
+https://zhuanlan.zhihu.com/p/48985202
+
+谈谈变分自编码器背后的数学知识
