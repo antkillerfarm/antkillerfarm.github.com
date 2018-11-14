@@ -267,6 +267,32 @@ https://mp.weixin.qq.com/s/zz8XCykJ6jxbE5J4YwAkEA
 
 一招教你使用tf.keras和eager execution解决复杂问题
 
+## Estimator
+
+![](/images/img2/tensorflow_programming_environment.png)
+
+Estimator是一个非常高级的API，其抽象等级甚至在Keras之上。
+
+Estimator主要包括以下部分：
+
+1.初始化。定义网络结构。
+
+2.train。
+
+3.evaluate。
+
+4.predict。
+
+TensorFlow已经包含了一些预置的Estimator。例如：BoostedTreesClassifier、DNNClassifier、LinearClassifier等。具体可参见：
+
+https://tensorflow.google.cn/api_docs/python/tf/estimator
+
+参考：
+
+https://mp.weixin.qq.com/s/a68brFJthczgwiFoUBh30A
+
+TensorFlow数据集和估算器介绍
+
 ## 细节
 
 执行`session.run(out)`，会在终端打印out的值，但执行`res = session.run(out)`则不会。
@@ -370,31 +396,3 @@ TensorFlow初学者必须了解的55个经典案例
 http://mp.weixin.qq.com/s/JZ1ceGQDmQUaNW5wl6biLA
 
 TensorFlow实现流行机器学习算法教程汇集
-
-https://mp.weixin.qq.com/s/bjxJyOitynRtCoW0FX1gXw
-
-一文带你入门Tensorflow
-
-https://mp.weixin.qq.com/s/zmTqWNXlYcDyZb_dmEo_5Q
-
-TensorFlow/PyTorch/Sklearn实现的五十种机器学习模型
-
-https://mp.weixin.qq.com/s/O5vvGKHWkJQWzeiL7A_S_g
-
-TensorFlow简单介绍
-
-https://mp.weixin.qq.com/s/OmVAnkHV2aI4D4pMKyVjCQ
-
-基于TensorFlow理解三大降维技术：PCA、t-SNE和自编码器
-
-https://mp.weixin.qq.com/s/5wy6yqaW_9pMBhgw8qDdOQ
-
-基于TensorFlow打造强化学习API
-
-https://mp.weixin.qq.com/s/68vaQRqUo8u09iheKzFVEw
-
-玩转TensorFlow深度学习
-
-https://mp.weixin.qq.com/s/7er3wNV_IhxhFDOIwNMpww
-
-深度强化学习入门：用TensorFlow构建你的第一个游戏AI

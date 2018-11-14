@@ -174,6 +174,10 @@ http://mp.weixin.qq.com/s/rS4xCsytYGqBLMUzlyA12A
 
 构建多层感知器神经网络对数字图片进行文本识别
 
+https://mp.weixin.qq.com/s/qTnFQK0CkvdJfZaKj2wUtQ
+
+海康威视联合提出注意力聚焦网络FAN：提升场景文本识别精确度
+
 # 目标检测进阶
 
 ## CornerNet

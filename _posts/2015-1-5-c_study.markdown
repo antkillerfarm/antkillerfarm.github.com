@@ -370,3 +370,5 @@ cout<<dec<<i<<endl; //输出十进制数
 详见：
 
 http://blog.chinaunix.net/uid-7426920-id-2627743.html
+
+ANSI和K&R两种函数定义风格

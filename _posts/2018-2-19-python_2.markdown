@@ -103,6 +103,10 @@ http://www.cnblogs.com/longdouhzt/archive/2012/05/19/2508844.html
 
 Python特殊语法：filter、map、reduce、lambda
 
+https://www.zhihu.com/question/20125256
+
+Lambda表达式有何用处？如何使用？
+
 ## defaultdict()和namedtuple()
 
 defaultdict()和namedtuple()是collections模块里面2个很实用的扩展类型。

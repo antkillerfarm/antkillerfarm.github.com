@@ -122,6 +122,26 @@ https://mp.weixin.qq.com/s/g1IHOd4S-uKcl3DX131zFg
 
 “穿墙透视”黑魔法来了！只需WiFi和智能手机就可实现
 
+https://mp.weixin.qq.com/s/x6KM7iruojEWkWPgXpIAuA
+
+这一次，MIT的科学家让谷歌AI把步枪误认成直升机
+
+https://mp.weixin.qq.com/s/OjpIeAdPTeOpYa5T0h992A
+
+只需修改一个像素，让神经网络连猫都认不出
+
+https://mp.weixin.qq.com/s/Jmlia3v5P8UzG-MEuIMULQ
+
+对抗攻击的12种攻击方法和15种防御方法
+
+https://mp.weixin.qq.com/s/Jhi9TWQqhJIyG7cakgo2Xg
+
+修改一个像素，就能让神经网络识别图像出错
+
+https://mp.weixin.qq.com/s/uI5gUGtiR8VDXreU4YEZYA
+
+MILA提出防御增强型网络：简单修改已有网络即可提升防攻击能力
+
 ## 行业
 
 李开复的这篇文章不可不读：
@@ -168,25 +188,53 @@ https://mp.weixin.qq.com/s/caXnseARUwLIXdsZ7BXOUw
 
 用于金融时序预测的神经网络：可改善移动平均线经典策略
 
-## 连续学习
+http://mp.weixin.qq.com/s/9fJT0dMLvYQdfMVvSEiG4A
 
-https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
+深度学习的时间序列模型评价
 
-终身机器学习: 一种持续学习的范式
+https://mp.weixin.qq.com/s/1Gdx-U3DRZtSJoFyCLnD0w
 
-https://mp.weixin.qq.com/s/SBppyDBWqQUariiHbpaq1w
+深度学习之Sequence Learning
 
-实时深度学习的推理加速和连续学习
+## 面试
 
-https://mp.weixin.qq.com/s/83HufWMDnuXIOCCfgqeDJw
+https://mp.weixin.qq.com/s/U5hlr69m_9Znwjkj3Yl4Hg
 
-为什么说持续学习才是AI的关键
+《深度学习500问》一份超全深度学习资料，面试必备！
 
-https://mp.weixin.qq.com/s/kmEFjzFIbNq0_qdjc1Wm_w
+https://www.zhihu.com/question/41233373
 
-DeepMind新智能体架构Unicorn：持续学习能力胜过多个基准智能体
+如果你是面试官，你怎么去判断一个面试者的深度学习水平？
 
-# 光神经网络
+https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
+
+20万、50万、100万的算法工程师，到底有什么区别？
+
+https://www.zhihu.com/question/56676679/answer/151505274
+
+机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
+
+https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
+
+面试官是如何看出你机器学习水平的？
+
+https://mp.weixin.qq.com/s?__biz=MzI3NTA0MzM1OQ==&mid=2651615534&idx=1&sn=00ecd7dc1d8472c070e720a1b63f04c4
+
+我如何考察面试者的机器学习水平
+
+https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
+
+谷歌等巨头机器学习面试题：从逻辑回归到智力测验
+
+https://mp.weixin.qq.com/s/9ivDZXpPpLE3fuPgpNUyJA
+
+超全数据科学与机器学习面试指南
+
+https://mp.weixin.qq.com/s/qmdfLlTfQzT0QVq_SzEPUw
+
+机器学习和深度学习中值得弄清楚的一些问题
+
+## 光神经网络
 
 https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ
 
@@ -204,58 +252,29 @@ https://mp.weixin.qq.com/s/ENYX87SMlgv30x08iYFQIw
 
 几乎零能耗零延迟！UCLA科学家发明光衍射神经网络，登上Science
 
+## AI与UI
 
-# 深度推理
+https://mp.weixin.qq.com/s/bGbslnuG80S6gPwD4FHuMg
 
-https://mp.weixin.qq.com/s/RS39wqZDf6gEhOY6gcOVSA
+深度学习助力前端开发：自动生成GUI图代码
 
-74页教程融合逻辑推理和深度学习
+https://mp.weixin.qq.com/s/PhgIy4UaBLh_pOO8OH2c4g
 
-https://mp.weixin.qq.com/s/NcUHJ89DPVdB7cJttsh-xw
+复杂GUI也能搞定！西安交通大学提出前端设计图自动转代码新方法
 
-基于神经网络的知识推理
+https://mp.weixin.qq.com/s/4b4TPkIRPJ3VBkCOA6kbxw
 
-https://mp.weixin.qq.com/s/ouHPvm4vQKga5sZfG_CHBw
+前端慌不慌？用深度学习自动生成HTML代码
 
-DeepMind用深度学习模仿大脑推理，预测编码智能推进一大步！
+https://mp.weixin.qq.com/s/tjnpIYJGmrTLGUsdtBI2Vw
 
-https://zhuanlan.zhihu.com/p/28654835
+AI设计师“鹿班”核心技术公开：如何1秒设计8000张海报？
 
-视觉推理（Visual Reasoning），神经网络也可以有逻辑
+https://mp.weixin.qq.com/s/lEaq8NylJG4bUY2YupZh0g
 
-https://mp.weixin.qq.com/s/HP8KLbo26W5UscCGavKDRw
-
-IBM Watson提出人机推理网络HuMaINs，结合人机两者优势
-
-https://mp.weixin.qq.com/s/210l9K94KMqtJtqbrZ-mgg
-
-打开黑箱重要一步，MIT提出TbD-net，弥合视觉推理模型的性能与可解释性鸿沟
-
-https://mp.weixin.qq.com/s/7NpJJn4k5oGPOB04S9Jyqw
-
-DeepMind新论文，关联推理为什么是智能最重要的特征
-
-http://mp.weixin.qq.com/s/6I0Z_yY7UT_7qOKOWcd7Mw
-
-李飞飞发表研究新成果：视觉推理的推断和执行程序！
-
-http://mp.weixin.qq.com/s/9mtgdNynv92FC2dA8-5KJA
-
-VAE和Adam发明人博士论文：变分推理和深度学习
-
-https://mp.weixin.qq.com/s/sbV5SL6fAGad5KlBoqUKFQ
-
-斯坦福大学教授Christopher Manning提出全可微神经网络架构MAC：可用于机器推理
-
-https://mp.weixin.qq.com/s/5vDSrWeUvlBuZgmX0R9pBQ
-
-斯坦福“黑盒学习”研究：使用神经变分推理的无向图模型，可替代“采样”
+5秒钟内将手绘网站线框图转换为可用的HTML网站
 
 ## 参考
-
-https://mp.weixin.qq.com/s/Nyb9qTYn5_XFhQPa8KZojw
-
-最新Apache Spark平台的NLP库,助你轻松搞定自然语言处理任务
 
 https://mp.weixin.qq.com/s/8xSqmBbaFZ-oww4w-dOmeg
 
@@ -273,10 +292,6 @@ https://mp.weixin.qq.com/s/VAEH_241IAuEH5S6H6ep5w
 
 UC伯克利提出新型视觉描述系统，物体描述无需大量样本
 
-https://mp.weixin.qq.com/s/cyX_FzHF-6df9_AMUDu1aQ
-
-One Model To Learn Them All
-
 https://mp.weixin.qq.com/s/lSd6Gaf9RrmgZCd_EcQQOg
 
 Bengio高徒演讲：深度学习三板斧：网络架构、学习算法和时空层级
@@ -288,10 +303,6 @@ http://mp.weixin.qq.com/s/ddTNr-967IahTZ2X1LNSEQ
 https://mp.weixin.qq.com/s/r6Dnv3v6TYwTsAQJTDR0Mg
 
 熬过深宫十几载，深度学习上位这五年
-
-https://mp.weixin.qq.com/s/ty8RyPREo_EA7O8vA2pQuQ
-
-AI编曲震撼人心，RNN生成流行音乐
 
 https://mp.weixin.qq.com/s/calUA-Ddq-mq4uHrExtfBQ
 
@@ -312,10 +323,6 @@ https://mp.weixin.qq.com/s/tXr9NhVfBSvI5pduziIECQ
 https://mp.weixin.qq.com/s/LQ3tn4Zxg5obDD_oyEugKQ
 
 为数据集自动生成神经网络：普林斯顿大学提出NeST
-
-https://mp.weixin.qq.com/s/98lkCQT4rKME6PavCI0Mkg
-
-Bengio研究组最新论文：图谱注意力网络GAT，以图谱做输入做深度学习
 
 https://mp.weixin.qq.com/s/LUAcYoxoYBcDzTqi5bVJTQ
 
@@ -369,14 +376,6 @@ https://mp.weixin.qq.com/s/gljfrNwNvrK7teJ-DYyNIw
 
 如何用深度学习处理结构化数据？
 
-https://mp.weixin.qq.com/s/H5bnFRSxmwHSdNBPdbsh3w
-
-Petuum新研究助力临床决策：使用深度学习预测出院用药
-
 https://mp.weixin.qq.com/s/AZyqxZf6CbZJoT3qOpHDCQ
 
 深度学习也可以取悦女友
-
-https://mp.weixin.qq.com/s/z-_CxTQup-g6cAvVDwS-kQ
-
-谷歌开源DeepVariant，之前的经典检测基因变异法将被颠覆

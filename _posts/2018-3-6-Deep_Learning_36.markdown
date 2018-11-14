@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十六）——深度推荐系统, Recursive NN, Spiking Neuron Networks, DNC
+title:  深度学习（三十六）——深度推荐系统, Recursive NN, Spiking Neuron Networks
 category: DL 
 ---
 
@@ -332,6 +332,10 @@ https://zhuanlan.zhihu.com/p/49410727
 
 利用分类学数据来增强序列推荐的能力
 
+https://mp.weixin.qq.com/s/jdRu-cishwV8qBmGLTFJCA
+
+美团“猜你喜欢”深度学习排序模型实践
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512
@@ -376,28 +380,3 @@ https://mp.weixin.qq.com/s/cb6JBlb11xW0Xw0RWI4vFA
 
 浙大&川大提出脉冲版ResNet：继承ResNet优势，实现当前最佳
 
-# LSM
-
-liquid state machine (LSM)
-
-http://www.docin.com/p-390935406.html
-
-基于液体状态机的脑运动神经系统的建模研究
-
-# DNC
-
-https://zhuanlan.zhihu.com/p/27773709
-
-浅析至强RNN可微分神经计算机(DNC)
-
-https://zhuanlan.zhihu.com/p/27964341
-
-浅析至强RNN可微分神经计算机(DNC)-2
-
-https://zhuanlan.zhihu.com/p/28209628
-
-DNC-3滚动分类的模式识别
-
-https://zhuanlan.zhihu.com/p/28433712
-
-DNC4广义线性回归

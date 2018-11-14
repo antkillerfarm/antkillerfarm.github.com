@@ -8,6 +8,22 @@ category: resource
 
 ## 教程（续）
 
+https://mp.weixin.qq.com/s/_afSKRdag06VmGjM7VibBQ
+
+计算机视觉必读：目标跟踪、网络压缩、图像分类、人脸识别等
+
+https://mp.weixin.qq.com/s/sK4kZ8Sto8_t1F0XSg4jvg
+
+计算机视觉领域最全汇总
+
+https://mp.weixin.qq.com/s/47S-iGFzZtXcSIgIC4w0FA
+
+从入门到高阶，读懂机器学习需要哪些数学知识
+
+https://mp.weixin.qq.com/s/qpqqeSaRwQyBJlo3P25q6g
+
+如何从零开始构建深度学习项目？这里有一份详细的教程
+
 https://mp.weixin.qq.com/s/AEyr7FNeIHprprs9k7HE9w
 
 这些神经网络调参细节，你都了解了吗
@@ -46,25 +62,13 @@ http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww
 
 MIT最新算法，双向传播比BP快25倍
 
-https://mp.weixin.qq.com/s/TGuEvNXw_9S5-9a3KyDvvw
-
-基于图卷积网络的图深度学习
-
 https://mp.weixin.qq.com/s/FLrnRF8UQg6vLn-sndSpiw
 
 代替支持向量机，南大周志华组提出多类最优边界分配机mcODM
 
-http://mp.weixin.qq.com/s/9fJT0dMLvYQdfMVvSEiG4A
-
-深度学习的时间序列模型评价
-
 https://mp.weixin.qq.com/s/xbimfckVD0Ol0T1n0-_ktA
 
 从浅层模型到深度模型：概览机器学习优化算法
-
-https://mp.weixin.qq.com/s/Lp2pq95woQ5-E3RemdRnyw
-
-动态层归一化（Dynamic Layer Normalization）
 
 https://mp.weixin.qq.com/s/09uzm9LJxJwLL-bEoayJbg
 
@@ -86,10 +90,6 @@ https://mp.weixin.qq.com/s/ye4QvDfKPGyX0eK3Mti1Kw
 
 从反向传播到迁移学习，盘点人工智能从业者必备的10个深度学习方法
 
-https://mp.weixin.qq.com/s/WCRYppBLdl_M4etUChnfgw
-
-PyMC3和Theano代码构建贝叶斯深度网络
-
 https://mp.weixin.qq.com/s/2gBoVr_072DLJ_MMHPHNLQ
 
 这8种神经网络结构，你掌握了几个？
@@ -97,10 +97,6 @@ https://mp.weixin.qq.com/s/2gBoVr_072DLJ_MMHPHNLQ
 https://mp.weixin.qq.com/s/SeNIQQL_MqjFG4ek_wJoIg
 
 必须了解的8种神经网络架构
-
-https://blog.csdn.net/stdcoutzyx/article/details/50926174
-
-二值神经网络（Binary Neural Network，BNN）
 
 ## 量子计算
 
@@ -268,43 +264,13 @@ https://mp.weixin.qq.com/s/bHaXO2G-3B_KnyVGc-2hEg
 
 新开源计算机视觉技术用于新生儿胎龄估计
 
-## 面试
+https://mp.weixin.qq.com/s/H5bnFRSxmwHSdNBPdbsh3w
 
-https://mp.weixin.qq.com/s/U5hlr69m_9Znwjkj3Yl4Hg
+Petuum新研究助力临床决策：使用深度学习预测出院用药
 
-《深度学习500问》一份超全深度学习资料，面试必备！
+https://mp.weixin.qq.com/s/z-_CxTQup-g6cAvVDwS-kQ
 
-https://www.zhihu.com/question/41233373
-
-如果你是面试官，你怎么去判断一个面试者的深度学习水平？
-
-https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
-
-20万、50万、100万的算法工程师，到底有什么区别？
-
-https://www.zhihu.com/question/56676679/answer/151505274
-
-机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
-
-https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
-
-面试官是如何看出你机器学习水平的？
-
-https://mp.weixin.qq.com/s?__biz=MzI3NTA0MzM1OQ==&mid=2651615534&idx=1&sn=00ecd7dc1d8472c070e720a1b63f04c4
-
-我如何考察面试者的机器学习水平
-
-https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
-
-谷歌等巨头机器学习面试题：从逻辑回归到智力测验
-
-https://mp.weixin.qq.com/s/9ivDZXpPpLE3fuPgpNUyJA
-
-超全数据科学与机器学习面试指南
-
-https://mp.weixin.qq.com/s/qmdfLlTfQzT0QVq_SzEPUw
-
-机器学习和深度学习中值得弄清楚的一些问题
+谷歌开源DeepVariant，之前的经典检测基因变异法将被颠覆
 
 ## 遗传算法 & 进化算法
 
@@ -404,3 +370,20 @@ http://www.cnblogs.com/tsingke/p/6258967.html
 
 CMA-ES算法
 
+## 连续学习
+
+https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
+
+终身机器学习: 一种持续学习的范式
+
+https://mp.weixin.qq.com/s/SBppyDBWqQUariiHbpaq1w
+
+实时深度学习的推理加速和连续学习
+
+https://mp.weixin.qq.com/s/83HufWMDnuXIOCCfgqeDJw
+
+为什么说持续学习才是AI的关键
+
+https://mp.weixin.qq.com/s/kmEFjzFIbNq0_qdjc1Wm_w
+
+DeepMind新智能体架构Unicorn：持续学习能力胜过多个基准智能体

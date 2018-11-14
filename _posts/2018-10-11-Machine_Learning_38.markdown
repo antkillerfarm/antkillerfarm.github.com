@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十八）——PageRank算法, 社交网络
+title:  机器学习（三十八）——PageRank算法, 社交网络, 特征工程
 category: ML 
 ---
 
@@ -198,3 +198,32 @@ https://blog.csdn.net/itplus/article/details/9286905
 
 Community Detection算法
 
+# 特征工程
+
+https://mp.weixin.qq.com/s/ibiElLIgrT3wYx3tDYMMTw
+
+理解特征工程
+
+https://mp.weixin.qq.com/s/3Ce8uMf_Kyt-hEZUYfdh3g
+
+特征工程之特征选择
+
+https://mp.weixin.qq.com/s/tOcyfK68jW7Tr-PGCvdXMA
+
+特征工程最后一个要点:特征预处理
+
+https://mp.weixin.qq.com/s/c9iHdgtErVd_iitwny7_zw
+
+Kaggle前1%参赛者经验：特征工程为何如此重要？
+
+https://mp.weixin.qq.com/s/xbPJD0uoRB-T1x09AUYdzg
+
+基于Python的自动特征工程——教你如何自动创建机器学习特征
+
+https://mp.weixin.qq.com/s?__biz=MjM5MTQzNzU2NA==&mid=2651664000&idx=1&sn=ae6dda80df6d6278ae33b7bf7fbadcd2
+
+深度特征合成：自动化特征工程的运作机制
+
+https://mp.weixin.qq.com/s/R1MhoCfnd5drvg2CGLVsPw
+
+哪种特征分析法适合你的任务？Ian Goodfellow提出显著性映射的可用性测试

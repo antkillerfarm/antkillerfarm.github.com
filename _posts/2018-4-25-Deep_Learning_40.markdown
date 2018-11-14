@@ -349,3 +349,11 @@ https://mp.weixin.qq.com/s/DUSa3SW1AgvJ0szL030NHQ
 https://mp.weixin.qq.com/s/P81I5vl99mV-4StNHmd_6A
 
 作为多目标优化的多任务学习：寻找帕累托最优解
+
+https://mp.weixin.qq.com/s/cyX_FzHF-6df9_AMUDu1aQ
+
+One Model To Learn Them All
+
+https://mp.weixin.qq.com/s/oY2yGrTmIpr3H2qvzYKInA
+
+谷歌一个模型解决所有问题《One Model to Learn Them All》论文深度解读

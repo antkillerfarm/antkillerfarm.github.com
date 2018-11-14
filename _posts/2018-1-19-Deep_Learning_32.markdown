@@ -322,6 +322,14 @@ https://mp.weixin.qq.com/s/RsZCTqCKwpnjATUFC8da7g
 
 嵌入式深度学习之神经网络二值化（3）
 
+https://blog.csdn.net/stdcoutzyx/article/details/50926174
+
+二值神经网络（Binary Neural Network，BNN）
+
+https://mp.weixin.qq.com/s/lVja7woyFWpmr9sH0CitAA
+
+BMXNet：基于MXNet的开源二值神经网络实现
+
 https://mp.weixin.qq.com/s/tbRj5Wd69n9gvSzW4oKStg
 
 异或神经网络
@@ -372,3 +380,6 @@ https://github.com/bayesgroup/deepbayes-2018
 
 Seminars DeepBayes Summer School 2018
 
+https://mp.weixin.qq.com/s/WCRYppBLdl_M4etUChnfgw
+
+PyMC3和Theano代码构建贝叶斯深度网络

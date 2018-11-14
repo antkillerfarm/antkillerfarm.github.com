@@ -128,6 +128,10 @@ https://mp.weixin.qq.com/s/Z119_EpLKDz1TiLXGbygJQ
 
 MIT新研究参透批归一化原理
 
+https://mp.weixin.qq.com/s/Lp2pq95woQ5-E3RemdRnyw
+
+动态层归一化（Dynamic Layer Normalization）
+
 # CTC
 
 ## 概述

@@ -467,19 +467,3 @@ https://mp.weixin.qq.com/s/XD0eyKiBgsqmcucIsW20uw
 https://mp.weixin.qq.com/s/wJh1-9uhXX3u4CO8hdOHCg
 
 专访MIT教授Tomaso Poggio：表达、优化与泛化——数学视角里的深度学习
-
-https://mp.weixin.qq.com/s/_afSKRdag06VmGjM7VibBQ
-
-计算机视觉必读：目标跟踪、网络压缩、图像分类、人脸识别等
-
-https://mp.weixin.qq.com/s/sK4kZ8Sto8_t1F0XSg4jvg
-
-计算机视觉领域最全汇总
-
-https://mp.weixin.qq.com/s/47S-iGFzZtXcSIgIC4w0FA
-
-从入门到高阶，读懂机器学习需要哪些数学知识
-
-https://mp.weixin.qq.com/s/qpqqeSaRwQyBJlo3P25q6g
-
-如何从零开始构建深度学习项目？这里有一份详细的教程

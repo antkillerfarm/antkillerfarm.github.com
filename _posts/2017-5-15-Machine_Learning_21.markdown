@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十一）——Loss function详解, 聚类算法, 特征工程, 模仿学习, 三门问题, 机器学习分类器性能指标
+title:  机器学习（二十一）——Loss function详解, Beam Search, 三门问题, 机器学习分类器性能指标
 category: ML 
 ---
 
@@ -190,107 +190,55 @@ https://mp.weixin.qq.com/s/8KM7wUg_lnFBd0fIoczTHQ
 
 用收缩损失(Shrinkage Loss)进行深度回归跟踪
 
-# 聚类算法
+# Beam Search
 
-https://mp.weixin.qq.com/s/xGPiaXTnQad3RcMwIELP4w
+## 概述
 
-流式聚类算法
+Beam Search（集束搜索）是一种启发式图搜索算法，通常用在图的解空间比较大的情况下，为了减少搜索所占用的空间和时间，在每一步深度扩展的时候，剪掉一些质量比较差的结点，保留下一些质量较高的结点。保留下来的结点个数一般叫做Beam Width。
 
-https://wenku.baidu.com/view/4169e77f27284b73f2425047.html
+这样减少了空间消耗，并提高了时间效率，但缺点就是有可能存在潜在的最佳方案被丢弃，因此Beam Search算法是不完全的，一般用于解空间较大的系统中。
 
-层次聚类
+![](/images/article/beam_search.png)
 
-https://mp.weixin.qq.com/s/uSHLJKB0knVcCY759Ul25w
+上图是一个Beam Width为2的Beam Search的剪枝示意图。每一层只保留2个最优的分支，其余分支都被剪掉了。
 
-什么是聚类和降维？
+显然，Beam Width越大，找到最优解的概率越大，相应的计算复杂度也越大。因此，设置合适的Beam Width是一个工程中需要trade off的事情。
 
-https://mp.weixin.qq.com/s/ORLOOhufrInyPdS6fbywOw
+当Beam Width为1时，也就是著名的A*算法了。
 
-深入浅出——基于密度的聚类方法
+Beam Search主要用于机器翻译、语音识别等系统。这类系统虽然从理论来说，也就是个多分类系统，然而由于分类数等于词汇数，简单的套用softmax之类的多分类方案，明显是计算量过于巨大了。
 
-https://mp.weixin.qq.com/s/Vi4Yb8TOJydj9yL078iNHw
+PS：中文验证码识别估计也可以采用该技术。
 
-BIRCH层次聚类详解
+## Beam Search与Viterbi算法
 
-https://mp.weixin.qq.com/s/dIsq3RKAU_K6vS0-MPKbzA
+Beam Search与Viterbi算法虽然都是解空间的剪枝算法，但它们的思路是不同的。
 
-BIRCH聚类算法原理
+Beam Search是对状态迁移的路径进行剪枝，而Viterbi算法是合并不同路径到达同一状态的概率值，用最大值作为对该状态的充分估计值，从而在后续计算中，忽略历史信息（这种以偏概全也就是所谓的Markov性），以达到剪枝的目的。
 
-https://mp.weixin.qq.com/s/_5A3DuVyN6aE9n5OEc19kA
+从状态转移图的角度来说，Beam Search是空间剪枝，而Viterbi算法是时间剪枝。
 
-数据科学家必须了解的六大聚类算法：带你发现数据之美
+## 参考
 
-https://mp.weixin.qq.com/s/pDiZt4ydWw-4cYeE4gpjiw
+http://people.csail.mit.edu/srush/optbeam.pdf
 
-数据科学家需要了解的5大聚类算法
+Optimal Beam Search for Machine Translation
 
-https://www.zhihu.com/question/34554321
+http://www.cnblogs.com/xxey/p/4277181.html
 
-用于数据挖掘的聚类算法有哪些，各有何优势？
+Beam Search（集束搜索/束搜索）
 
-https://mp.weixin.qq.com/s/7zV370J7nv5wSWxdYa5Plg
+http://blog.csdn.net/girlhpp/article/details/19400731
 
-DBSCAN聚类算法原理介绍，以及代码实现
+束搜索算法（Andrew Jungwirth 初稿）BEAM Search
 
-https://mp.weixin.qq.com/s/8dB2OQCoZ7_kSxExm32WSA
+http://hongbomin.com/2017/06/23/beam-search/
 
-于剑：聚类理论与算法选讲
+Beam Search算法及其应用
 
-https://mp.weixin.qq.com/s/1SOQZ3fsiYtT4emt4jvMxQ
+https://mp.weixin.qq.com/s/GTtjjBgCDdLRwPrUqfwlVA
 
-深入浅出聚类算法
-
-https://mp.weixin.qq.com/s/GlwJhvdzxaRbRE2DhMpBSg
-
-基于动态局部搜索的免疫自动聚类算法
-
-# 特征工程
-
-https://mp.weixin.qq.com/s/ibiElLIgrT3wYx3tDYMMTw
-
-理解特征工程
-
-https://mp.weixin.qq.com/s/3Ce8uMf_Kyt-hEZUYfdh3g
-
-特征工程之特征选择
-
-https://mp.weixin.qq.com/s/tOcyfK68jW7Tr-PGCvdXMA
-
-特征工程最后一个要点:特征预处理
-
-https://mp.weixin.qq.com/s/c9iHdgtErVd_iitwny7_zw
-
-Kaggle前1%参赛者经验：特征工程为何如此重要？
-
-https://mp.weixin.qq.com/s/xbPJD0uoRB-T1x09AUYdzg
-
-基于Python的自动特征工程——教你如何自动创建机器学习特征
-
-https://mp.weixin.qq.com/s?__biz=MjM5MTQzNzU2NA==&mid=2651664000&idx=1&sn=ae6dda80df6d6278ae33b7bf7fbadcd2
-
-深度特征合成：自动化特征工程的运作机制
-
-https://mp.weixin.qq.com/s/R1MhoCfnd5drvg2CGLVsPw
-
-哪种特征分析法适合你的任务？Ian Goodfellow提出显著性映射的可用性测试
-
-# 模仿学习
-
-https://zhuanlan.zhihu.com/p/27935902
-
-机器人学习Robot Learning之模仿学习Imitation Learning的发展
-
-https://zhuanlan.zhihu.com/p/25688750
-
-模仿学习（Imitation Learning）完全介绍
-
-https://mp.weixin.qq.com/s/naq73D27vsCOUBperKto8A
-
-从监督式到DAgger，综述论文描绘模仿学习全貌
-
-https://mp.weixin.qq.com/s/LNNqp2KsEAljG26hY43mUw
-
-ICML2018 模仿学习教程
+如何使用贪婪搜索和束搜索解码算法进行自然语言处理
 
 # 三门问题
 

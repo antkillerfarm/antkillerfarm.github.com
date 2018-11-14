@@ -14,10 +14,6 @@ https://www.jiqizhixin.com/articles/2017-07-27-2
 
 CVPR 2017李飞飞总结8年ImageNet历史，宣布挑战赛最终归于Kaggle
 
-https://mp.weixin.qq.com/s/DQcRqWALLuPpNabCv83Vcg
-
-自动机器学习，神经网络自主编程
-
 https://mp.weixin.qq.com/s/fY4vF0aPexwFi2Fu4grdzg
 
 大规模视觉理解竞赛WebVision冠军分享
@@ -170,10 +166,6 @@ https://mp.weixin.qq.com/s/Rd_U0gnusWqBRprLKIJaWQ
 
 Xavier Amastsin：2017机器学习和人工智能年终综述
 
-https://mp.weixin.qq.com/s/x6KM7iruojEWkWPgXpIAuA
-
-这一次，MIT的科学家让谷歌AI把步枪误认成直升机
-
 https://mp.weixin.qq.com/s/jdM0w4hRgkWmul9Bcp2oCw
 
 揭秘CVPR2017 WebVision图片分类竞赛冠军背后的技术
@@ -185,10 +177,6 @@ https://mp.weixin.qq.com/s/53zse9GD9W25Vx6FCt2Bmw
 https://mp.weixin.qq.com/s/diecjVsTkFhulTwET9N4WA
 
 DeepMind研究科学家深度生成模型报告，视频+PPT一文全揽最新前沿进展
-
-https://mp.weixin.qq.com/s/1Gdx-U3DRZtSJoFyCLnD0w
-
-深度学习之Sequence Learning
 
 http://www.jianshu.com/p/f9ca56d6407d
 
@@ -229,10 +217,6 @@ AI与深度学习重点回顾：Denny Britz眼中的2017
 https://mp.weixin.qq.com/s/vCIpaFUTYggzN9YWs14atw
 
 让遥感图像活起来：遥感图像描述生成的模型与数据集探索
-
-https://mp.weixin.qq.com/s/DwY0oGu-G30Szs-ArI5WaQ
-
-程明明：面向弱监督的图像理解
 
 https://mp.weixin.qq.com/s/5VHPc99NsFkz1Vl5iU8qkg
 
@@ -289,10 +273,6 @@ https://mp.weixin.qq.com/s/gfuO7CwfFiNC-iqDquDKQQ
 http://mp.weixin.qq.com/s/XH1dXWSPiQMAHYR0_-xylA
 
 精选深度学习在文本、视觉、语音等领域的论文集
-
-https://mp.weixin.qq.com/s/bGbslnuG80S6gPwD4FHuMg
-
-深度学习助力前端开发：自动生成GUI图代码
 
 https://mp.weixin.qq.com/s/Wa2om6y27aFCB9kGRwZqBA
 

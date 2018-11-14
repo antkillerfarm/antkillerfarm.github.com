@@ -360,6 +360,10 @@ http://echarts.baidu.com/echarts2/doc/example.html
 
 各种大数据展示用的图表
 
+https://mp.weixin.qq.com/s/94IGjVPXZ0FeCILQN33eBQ
+
+遇见大数据可视化：不要错过这么漂亮的数据可视化案例！
+
 ## 贝叶斯线性回归
 
 https://mp.weixin.qq.com/s/szTmHY-Yvn7N3s_GzTDiEA

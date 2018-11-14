@@ -102,6 +102,10 @@ https://mp.weixin.qq.com/s/343DfjOvkaozuxNK89V3zQ
 
 前景目标检测的无监督学习
 
+https://mp.weixin.qq.com/s/DwY0oGu-G30Szs-ArI5WaQ
+
+程明明：面向弱监督的图像理解
+
 # 语音合成
 
 语音合成（Speech synthesis），有时也叫做text-to-speech (TTS)。

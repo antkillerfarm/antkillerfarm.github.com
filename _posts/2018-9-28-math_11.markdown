@@ -159,3 +159,29 @@ https://zhuanlan.zhihu.com/p/24326554
 https://zhuanlan.zhihu.com/p/20794653
 
 历史上第一篇关于JEEP的长篇报道都说了什么——非军迷退下
+
+# TensorFlow
+
+https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
+
+简易浣熊识别器是如何实现的
+
+http://www.jianshu.com/p/d443aab9bcb1
+
+在TensorFlow上使用LSTM进行情感分析
+
+https://mp.weixin.qq.com/s/gW_KX6eF9XEsSUO1UzJ3WQ
+
+基于LSTM的情感分析
+
+https://mp.weixin.qq.com/s/MT1YaMm4KBWsIZeHehahgw
+
+TensorFlow重大升级：自动将Python代码转为TF Graph，大幅简化动态图处理！
+
+https://mp.weixin.qq.com/s/zeZs48XbYJGhvOoIysZ8QA
+
+Docker Compose+GPU+TensorFlow所产生的奇妙火花
+
+https://mp.weixin.qq.com/s/sOggiB57D-ekWOsbL6TY_A
+
+TensorFlow中那些鲜为人知却又极其实用的知识

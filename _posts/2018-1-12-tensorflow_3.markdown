@@ -6,17 +6,53 @@ category: AI
 
 # TensorFlow
 
+https://mp.weixin.qq.com/s/bjxJyOitynRtCoW0FX1gXw
+
+一文带你入门Tensorflow
+
+https://mp.weixin.qq.com/s/zmTqWNXlYcDyZb_dmEo_5Q
+
+TensorFlow/PyTorch/Sklearn实现的五十种机器学习模型
+
+https://mp.weixin.qq.com/s/O5vvGKHWkJQWzeiL7A_S_g
+
+TensorFlow简单介绍
+
 https://mp.weixin.qq.com/s/JSZwQkyxSSwfBWKJ578j3A
 
 TensorFlow最好的入门文章
+
+https://mp.weixin.qq.com/s/5wy6yqaW_9pMBhgw8qDdOQ
+
+基于TensorFlow打造强化学习API
+
+https://mp.weixin.qq.com/s/68vaQRqUo8u09iheKzFVEw
+
+玩转TensorFlow深度学习
+
+https://mp.weixin.qq.com/s/7er3wNV_IhxhFDOIwNMpww
+
+深度强化学习入门：用TensorFlow构建你的第一个游戏AI
+
+https://mp.weixin.qq.com/s/Es_5KUnkDzMwf_8WD8aW3g
+
+GitHub万星：适用于初学者的TensorFlow代码资源集
+
+https://mp.weixin.qq.com/s/GaK_iSTBl7B4LTdaOtiR_Q
+
+香港科技大学TensorFlow课件分享
+
+https://mp.weixin.qq.com/s/RR3EEI8vm05EZSd7dGU__A
+
+史上最全的Tensorflow学习资源汇总，速藏！
 
 https://mp.weixin.qq.com/s/jMPVl3CWvL7MSzq5F12YxQ
 
 维度、广播操作与可视化：如何高效使用TensorFlow
 
-https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
+https://mp.weixin.qq.com/s/OmVAnkHV2aI4D4pMKyVjCQ
 
-简易浣熊识别器是如何实现的
+基于TensorFlow理解三大降维技术：PCA、t-SNE和自编码器
 
 https://mp.weixin.qq.com/s/YOyOR8fdaEKcydAywcc-HA
 
@@ -29,14 +65,6 @@ TensorFlow轻度入门
 https://mp.weixin.qq.com/s/MYBTWL3X_OhLZL6C4rISzw
 
 TensorFlow训练线性回归
-
-http://www.jianshu.com/p/d443aab9bcb1
-
-在TensorFlow上使用LSTM进行情感分析
-
-https://mp.weixin.qq.com/s/gW_KX6eF9XEsSUO1UzJ3WQ
-
-基于LSTM的情感分析
 
 https://mp.weixin.qq.com/s/5QYlh6gV9IqdQfraK4DC8w
 
@@ -66,10 +94,6 @@ https://mp.weixin.qq.com/s/7R-Gvegnta9XBwIaSPBL_Q
 
 基于Tensorflow的验证码识别
 
-https://mp.weixin.qq.com/s/Es_5KUnkDzMwf_8WD8aW3g
-
-GitHub万星：适用于初学者的TensorFlow代码资源集
-
 https://mp.weixin.qq.com/s/3QgtemxxsQmuNQVEdpiMwA
 
 如何做准确率达98%的交通标志识别系统？
@@ -98,10 +122,6 @@ https://mp.weixin.qq.com/s/FdPrRQr0LukcWh7B703MlQ
 
 利用tf.gradients在TensorFlow中实现梯度下降
 
-https://mp.weixin.qq.com/s/a68brFJthczgwiFoUBh30A
-
-TensorFlow数据集和估算器介绍
-
 https://github.com/indiejoseph/cnn-text-classification-tf-chinese
 
 CNN for Chinese Text Classification in Tensorflow
@@ -125,10 +145,6 @@ http://mp.weixin.qq.com/s/ioaS7RQ6bsJs4_X0G4ZHyQ
 http://mp.weixin.qq.com/s/hpv6bzr-5VZet-UCHOCQLQ
 
 谷歌TFX：基于TensorFlow可大规模扩展的机器学习平台
-
-https://mp.weixin.qq.com/s/GaK_iSTBl7B4LTdaOtiR_Q
-
-香港科技大学TensorFlow课件分享
 
 https://mp.weixin.qq.com/s/cPWXAI2TBv3_ssnWDFoQ4w
 
@@ -181,10 +197,6 @@ https://mp.weixin.qq.com/s/Off0pgaRNyik2nvjHaQQkw
 https://mp.weixin.qq.com/s/rMYjsIgFNvv47F4YZjY8SA
 
 如何在K8S上玩转TensorFlow？
-
-https://mp.weixin.qq.com/s/xJaoqHLVFmouaspjaLjoSg
-
-TFX：基于TensorFlow可大规模扩展的机器学习平台
 
 https://zhuanlan.zhihu.com/p/30751039
 
@@ -354,10 +366,6 @@ https://mp.weixin.qq.com/s/F965Zu_PgA-1ZUGIQ0nIEQ
 
 TensorFlow协同过滤推荐实战
 
-https://mp.weixin.qq.com/s/RR3EEI8vm05EZSd7dGU__A
-
-史上最全的Tensorflow学习资源汇总，速藏！
-
 http://gitbook.cn/books/593d71ba4686067a2200aec6/index.html
 
 用TensorFlow实现智能机器人的原理及如何实现一个对话机器人
@@ -406,14 +414,3 @@ https://mp.weixin.qq.com/s/23FoaaA3Z_3kf03BmepFPg
 
 如何将模型部署到安卓移动端，这里有一份简单教程
 
-https://mp.weixin.qq.com/s/MT1YaMm4KBWsIZeHehahgw
-
-TensorFlow重大升级：自动将Python代码转为TF Graph，大幅简化动态图处理！
-
-https://mp.weixin.qq.com/s/zeZs48XbYJGhvOoIysZ8QA
-
-Docker Compose+GPU+TensorFlow所产生的奇妙火花
-
-https://mp.weixin.qq.com/s/sOggiB57D-ekWOsbL6TY_A
-
-TensorFlow中那些鲜为人知却又极其实用的知识

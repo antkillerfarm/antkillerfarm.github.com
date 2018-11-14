@@ -380,6 +380,14 @@ https://mp.weixin.qq.com/s/bRZLHO4CJabaPMqYLW-_1g
 
 从零到一学习知识图谱的技术与应用
 
+https://mp.weixin.qq.com/s/98lkCQT4rKME6PavCI0Mkg
+
+Bengio研究组最新论文：图谱注意力网络GAT，以图谱做输入做深度学习
+
+https://mp.weixin.qq.com/s/Yg-ggqTg5HlcvrH9BKC0YA
+
+最新知识图谱论文清单
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/Z1ixoRmUDl17CF4k7JS4zg
@@ -413,23 +421,3 @@ https://mp.weixin.qq.com/s/lJQprqGShGys3vfhYSxDWg
 https://mp.weixin.qq.com/s/lpNTdnfp2FnJ97EivhUv2g
 
 12种降维方法终极指南
-
-https://mp.weixin.qq.com/s/Sez56UaCAt3Aspn7OTFj_Q
-
-让AI来一场“简单”的黄金点游戏
-
-https://mp.weixin.qq.com/s?__biz=MzUyMjE2MTE0Mw==&mid=2247486970&idx=2&sn=6878205053d13467f66055a3314eeba1
-
-如何利用高效的搜索算法来搜索网络的拓扑结构
-
-https://mp.weixin.qq.com/s/1dOFsRCuTbm6UI1Pd5MNjw
-
-快速扩展随机树路径规划算法
-
-https://mp.weixin.qq.com/s/C50IBm8EgrE13MOPMgPseQ
-
-基于背景和潜在异常字典构造的高光谱图像异常目标检测
-
-https://mp.weixin.qq.com/s/doi26r9AVIMbpkZ01wsCZA
-
-北京大学何洋波博士《因果推断和因果图模型》机器学习报告

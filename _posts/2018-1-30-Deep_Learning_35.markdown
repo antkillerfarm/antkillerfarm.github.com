@@ -236,6 +236,10 @@ https://mp.weixin.qq.com/s?__biz=MzI5MDUyMDIxNA==&mid=2247486245&idx=1&sn=619f78
 
 行为识别论文笔记之多纤维网络
 
+https://mp.weixin.qq.com/s/XisuT68H_r_SvVg0HVnWJw
+
+海康威视Oral论文：分层式共现网络，实现更好的动作识别和检测
+
 # 深度目标跟踪
 
 https://zhuanlan.zhihu.com/p/22334661

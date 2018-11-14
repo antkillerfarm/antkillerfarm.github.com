@@ -180,14 +180,6 @@ https://mp.weixin.qq.com/s/PF6-txnq3SV258EfNVufSw
 
 深度学习与XGBoost在小数据集上的测评
 
-https://mp.weixin.qq.com/s/XisuT68H_r_SvVg0HVnWJw
-
-海康威视Oral论文：分层式共现网络，实现更好的动作识别和检测
-
-https://mp.weixin.qq.com/s/uI5gUGtiR8VDXreU4YEZYA
-
-MILA提出防御增强型网络：简单修改已有网络即可提升防攻击能力
-
 https://mp.weixin.qq.com/s/jpfvRbmTgFVQczHzKekmLw
 
 北邮夺冠CVPR 2018 DeepGlobe比赛，他们是这样做卫星图像识别的
@@ -211,4 +203,3 @@ https://mp.weixin.qq.com/s/dhE-psddToT18oLV9vVNPQ
 https://mp.weixin.qq.com/s/64sT64srUywV27zQMKNOTg
 
 神经网络碰上高斯过程，DeepMind连发两篇论文开启深度学习新方向
-

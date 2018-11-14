@@ -6,6 +6,10 @@ category: resource
 
 # DL参考资源
 
+https://mp.weixin.qq.com/s/iZ3MpyypVw-wYKAd2gBwwA
+
+IBM推出DeepTriage，利用深度学习实现Bug自动分类
+
 https://mp.weixin.qq.com/s/NdwbnEMEVfiX6YGepK9PBA
 
 追根溯源！一图看尽深度学习架构谱系
@@ -26,33 +30,13 @@ https://mp.weixin.qq.com/s/UfmyH4BBWwErakrOoselQA
 
 随机计算图：在随机结点中执行反向传播的新方法
 
-https://mp.weixin.qq.com/s/kLXJsHbBnRIFC3NLChPhzA
-
-如何高效进行大规模分类？港中文联合商汤提出新方法
-
 https://mp.weixin.qq.com/s/epMbn9QmvMWfefPdkWwYYw
 
 神经网络决策过程可视化：AI眼中马云、马化腾、李彦宏谁最有吸引力？
 
-https://mp.weixin.qq.com/s/4b4TPkIRPJ3VBkCOA6kbxw
-
-前端慌不慌？用深度学习自动生成HTML代码
-
-https://mp.weixin.qq.com/s/iZ3MpyypVw-wYKAd2gBwwA
-
-IBM推出DeepTriage，利用深度学习实现Bug自动分类
-
-https://mp.weixin.qq.com/s/oY2yGrTmIpr3H2qvzYKInA
-
-谷歌一个模型解决所有问题《One Model to Learn Them All》论文深度解读
-
 https://mp.weixin.qq.com/s/pdv-T69rz4jO47CMf-CUhg
 
 “信息瓶颈”理论揭示深度学习本质
-
-https://mp.weixin.qq.com/s/qTnFQK0CkvdJfZaKj2wUtQ
-
-海康威视联合提出注意力聚焦网络FAN：提升场景文本识别精确度
 
 https://mp.weixin.qq.com/s/iXmjuBh2zzno7-D9ClYbSA
 
@@ -85,10 +69,6 @@ DeepMind于Nature子刊发文提出非对称博弈的降维方法
 https://mp.weixin.qq.com/s/fwgKilh9Q7Wseano3lOG0g
 
 谷歌提出机器对话Self-Play框架M2M，提高自动化程度
-
-https://mp.weixin.qq.com/s/Yh8Zj7Jhliy7a9h6mW8FxQ
-
-解读谷歌NASNet：一个大规模图像识别架构!
 
 https://mp.weixin.qq.com/s/sCxyk8WEb8W2-mq-tTQs6A
 
@@ -202,10 +182,6 @@ https://mp.weixin.qq.com/s/p2AbJ8Kv9DoB_SdMHISKBQ
 
 腾讯AI Lab现场陈述论文：训练L1稀疏模型的象限性消极下降算法
 
-https://mp.weixin.qq.com/s/OjpIeAdPTeOpYa5T0h992A
-
-只需修改一个像素，让神经网络连猫都认不出
-
 https://mp.weixin.qq.com/s/DS_l4ucLzOifJMuM1EXqXQ
 
 美国东北大学提出MoNet，使用紧密池化缓解特征高维问题
@@ -242,10 +218,6 @@ https://mp.weixin.qq.com/s/bZX-edBIFp3gBbYC6GJ4Fg
 
 OpenAI提出HER算法，AI系统学会从错误中学习
 
-https://mp.weixin.qq.com/s/Jmlia3v5P8UzG-MEuIMULQ
-
-对抗攻击的12种攻击方法和15种防御方法
-
 https://mp.weixin.qq.com/s/YpU4rXJ9XGJza9mXeV0NSg
 
 从背景介绍到未来挑战，一文综述移动和无线网络深度学习研究
@@ -258,17 +230,9 @@ https://mp.weixin.qq.com/s/HN-kAtltn7hkuUlpzmDDFA
 
 TensorFlow Lattice：先前知识推动灵活性提升
 
-https://mp.weixin.qq.com/s/gaNSQ_8JGqX4a3lGuf-9fA
-
-如何让电脑成为看图说话的高手？
-
 https://mp.weixin.qq.com/s/lhGM_wpnEQDWh95n4jQZBQ
 
 何晖光：基于视觉信息编解码的深度学习类脑机制研究
-
-https://mp.weixin.qq.com/s/Jhi9TWQqhJIyG7cakgo2Xg
-
-修改一个像素，就能让神经网络识别图像出错
 
 https://mp.weixin.qq.com/s/jwdYAeCGleKRRiInY85bLw
 
@@ -329,10 +293,6 @@ https://mp.weixin.qq.com/s/WXVZkqCGlj6ym5YrSZS3Vg
 https://mp.weixin.qq.com/s/54twfwVlM7UQbrFvOAQ2_w
 
 fine-gained image classification
-
-https://mp.weixin.qq.com/s/tjnpIYJGmrTLGUsdtBI2Vw
-
-AI设计师“鹿班”核心技术公开：如何1秒设计8000张海报？
 
 https://mp.weixin.qq.com/s/Ob1ngUEmRgSybcAD5zg0QQ
 

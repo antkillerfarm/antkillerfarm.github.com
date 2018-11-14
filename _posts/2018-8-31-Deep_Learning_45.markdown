@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十五）——Attention进阶, AutoDL, 多模态学习, BERT, DMN, YOLOv3
+title:  深度学习（四十五）——Attention进阶, AutoDL, 多模态学习, BERT, DMN
 category: DL 
 ---
 
@@ -144,9 +144,15 @@ https://mp.weixin.qq.com/s/L1nkhc4I6VX2s6S5Tiv0Zw
 
 小白也能搭建深度模型，百度EasyDL的背后你知多少
 
+![](/images/img2/AdaNet.gif)
+
 https://mp.weixin.qq.com/s/HiD-OqAz67cwwchjSyIjWA
 
 AutoML又一利器来了，谷歌宣布开源AdaNet
+
+https://mp.weixin.qq.com/s/o3WqVIxlsukt3_JcY-10LA
+
+AdaNet简介：快速灵活的 AutoML，提供学习保证
 
 ## 书籍
 
@@ -171,6 +177,10 @@ http://blog.csdn.net/u014380165/article/details/78525500
 https://www.zhihu.com/question/67477086
 
 如何评价Google最新的论文NASNet？
+
+https://mp.weixin.qq.com/s/Yh8Zj7Jhliy7a9h6mW8FxQ
+
+解读谷歌NASNet：一个大规模图像识别架构!
 
 https://mp.weixin.qq.com/s/SwJs0OUzBlhiIOyFHFBK_g
 
@@ -268,6 +278,14 @@ https://mp.weixin.qq.com/s/VZVaWmCit5Ey7ZboeMbK7g
 
 AutoML、AutoKeras......这四个“Auto”的自动机器学习方法你分得清吗？
 
+https://mp.weixin.qq.com/s/DQcRqWALLuPpNabCv83Vcg
+
+自动机器学习，神经网络自主编程
+
+https://mp.weixin.qq.com/s?__biz=MzUyMjE2MTE0Mw==&mid=2247486970&idx=2&sn=6878205053d13467f66055a3314eeba1
+
+如何利用高效的搜索算法来搜索网络的拓扑结构
+
 # 多模态学习
 
 https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw
@@ -352,32 +370,3 @@ http://blog.csdn.net/javafreely/article/details/71994247
 
 动态记忆网络
 
-# YOLOv3
-
-https://zhuanlan.zhihu.com/p/34945787
-
-YOLOv3：An Incremental Improvement全文翻译
-
-https://mp.weixin.qq.com/s/UWuCiV6dBk9Z0XusEBS6-g
-
-物体检测经典模型YOLO新升级，就看一眼，速度提升3倍！
-
-https://mp.weixin.qq.com/s/BF7mj-_D303cLiD5e6oy6w
-
-期待已久的—YOLO V3
-
-https://mp.weixin.qq.com/s/-Ixqxx6QGJDTM4g50y6LyA
-
-进击的YOLOv3，目标检测网络的巅峰之作
-
-https://zhuanlan.zhihu.com/p/46691043
-
-YOLO v1深入理解
-
-https://zhuanlan.zhihu.com/p/47575929
-
-YOLOv2 / YOLO9000深入理解
-
-https://zhuanlan.zhihu.com/p/49556105
-
-YOLO v3深入理解

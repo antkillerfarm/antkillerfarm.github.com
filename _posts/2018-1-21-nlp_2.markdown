@@ -310,10 +310,6 @@ https://mp.weixin.qq.com/s/v4A--nGiDTt58pZyIzepeg
 
 # MXNet
 
-https://mp.weixin.qq.com/s/lVja7woyFWpmr9sH0CitAA
-
-BMXNet：基于MXNet的开源二值神经网络实现
-
 https://mp.weixin.qq.com/s/50uGupiwU2UVuVeMm_bTag
 
 李沐介绍MXNet新接口Gluon：高效支持命令式与符号式编程

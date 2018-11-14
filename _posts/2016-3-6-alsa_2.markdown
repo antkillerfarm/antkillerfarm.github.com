@@ -288,6 +288,8 @@ new_pad_type = new_pad.query_caps(None).to_string()
 
 # Blog维护日志
 
+2018.11.14 DL专栏文章达到50篇。
+
 2018.8.1 在知名公众号上看到自己的文章。里程碑啊！
 
 2018.7.26 近来blog相关的事情比较多。

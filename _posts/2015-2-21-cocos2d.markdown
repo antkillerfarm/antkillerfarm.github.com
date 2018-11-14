@@ -285,10 +285,6 @@ Director::drawScene
 
 # DL参考资源
 
-https://mp.weixin.qq.com/s/jdRu-cishwV8qBmGLTFJCA
-
-美团“猜你喜欢”深度学习排序模型实践
-
 https://mp.weixin.qq.com/s/QFYZwbrTJuN-JiMJ5NQxWg
 
 AI学会了视觉推理，“脑补”看不清的物体
@@ -309,10 +305,6 @@ https://mp.weixin.qq.com/s/fJUQXnVwTlfOC37Go0lLUg
 
 携程图像智能化建设之路
 
-https://mp.weixin.qq.com/s/lEaq8NylJG4bUY2YupZh0g
-
-5秒钟内将手绘网站线框图转换为可用的HTML网站
-
 https://mp.weixin.qq.com/s/gPI6Vq6smDn8IiKhGe61bA
 
 用深度学习DIY自动化监控系统
@@ -324,10 +316,6 @@ https://mp.weixin.qq.com/s/JkYFx4tN2x8y5tYPyonE9g
 https://mp.weixin.qq.com/s/OCSe_o6bJjOYNEpYaOQ_Cg
 
 最大化互信息来学习深度表示，Bengio等提出Deep INFOMAX
-
-https://mp.weixin.qq.com/s/2If152RIpW7w_0HkF8j4Lw
-
-Deep Unrolling：深度网络与传统模型之间的桥梁
 
 https://mp.weixin.qq.com/s/VvU8OfXKJiyEKaujWfCrWw
 

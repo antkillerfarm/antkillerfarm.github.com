@@ -365,6 +365,22 @@ https://mp.weixin.qq.com/s/fP36LYFjAqqfP3rbYxAJlA
 
 # ML参考资源+
 
+https://mp.weixin.qq.com/s/Sez56UaCAt3Aspn7OTFj_Q
+
+让AI来一场“简单”的黄金点游戏
+
+https://mp.weixin.qq.com/s/1dOFsRCuTbm6UI1Pd5MNjw
+
+快速扩展随机树路径规划算法
+
+https://mp.weixin.qq.com/s/C50IBm8EgrE13MOPMgPseQ
+
+基于背景和潜在异常字典构造的高光谱图像异常目标检测
+
+https://mp.weixin.qq.com/s/doi26r9AVIMbpkZ01wsCZA
+
+北京大学何洋波博士《因果推断和因果图模型》机器学习报告
+
 https://mp.weixin.qq.com/s/NbEki2ByMmA93DyoQF1yjA
 
 运满满如何将机器学习应用于车货匹配和公路干线价格预测？

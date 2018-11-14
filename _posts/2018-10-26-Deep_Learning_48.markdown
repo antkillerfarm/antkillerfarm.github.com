@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十八）——语义分割进阶, GAN进阶（2）, 问答系统, 深度哈希
+title:  深度学习（四十八）——语义分割进阶, 问答系统, 深度哈希
 category: DL 
 ---
 
@@ -128,115 +128,9 @@ https://mp.weixin.qq.com/s/19uMhoNXEygLRTYT2PbsYQ
 
 图像分割技术介绍
 
-# GAN进阶
+https://mp.weixin.qq.com/s/-wwDenAWRGCvJmprxsl15Q
 
-https://mp.weixin.qq.com/s/c84LMFnIhoDeolc1B4MIVA
-
-AI以假乱真怎么办？TequilaGAN教你轻松辨真伪
-
-https://mp.weixin.qq.com/s/fgL6FtjeF-EgG5jjAGDR7A
-
-GANimation让图片秒变GIF表情包，秒杀StarGAN
-
-https://mp.weixin.qq.com/s/NPUJ89nddF1WHfFv2nn-Hg
-
-GANs有嘻哈：一次学完10个GANs明星模型
-
-https://mp.weixin.qq.com/s/yShYrMFKox30jXajXXQPGw
-
-如何让GAN生成更高质量图像？斯坦福大学给你答案
-
-https://mp.weixin.qq.com/s/qiLFQowjH67XECXBlppUDg
-
-对抗深度学习:鱼(模型准确性)与熊掌(模型鲁棒性)能否兼得？
-
-https://mp.weixin.qq.com/s/1SpHGtjkSfDEFCZuudCm0Q
-
-基于GAN和VAE的跨模态图像生成
-
-https://mp.weixin.qq.com/s/02amaVnLFxeLDBsjG-iN1Q
-
-UBC&腾讯AI Lab提出首个模块化GAN架构，搞定任意图像PS组合
-
-https://mp.weixin.qq.com/s/pf0fNSoNDaI9bZvohRX28A
-
-不再使用人眼评估，你训练的GAN还OK吗？ 
-
-https://mp.weixin.qq.com/s/KeXXi5kwvWAfArv13f6VPg
-
-给Cycle-GAN加上时间约束，CMU等提出新型视频转换方法Recycle-GAN
-
-https://mp.weixin.qq.com/s/IzVTkH7fEiS4gAUIyA_IrA
-
-谷歌GAN 实验室来了！迄今最强可视化工具，在浏览器运行GAN
-
-https://mp.weixin.qq.com/s/1jBpz55pPgM8oxlUZLSWXA
-
-ICML2018对抗生成网络论文评述
-
-https://mp.weixin.qq.com/s/uQpmP7pJ8wnEgyJrvvHgwg
-
-基于解剖结构的面部表情生成
-
-https://mp.weixin.qq.com/s/cLCtxS1frJYvC5tLsQAWrQ
-
-用神经网络生成音乐
-
-https://mp.weixin.qq.com/s?__biz=MzIwOTc2MTUyMg==&mid=2247485368&idx=1&sn=1da8bd2490fa2fe16dbe25aea79dcd63
-
-交互式GAN Lab让生成对抗网络轻松实现可视化！
-
-https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247491630&idx=1&sn=394ffec2969cff23f63022526684f259
-
-杜伦大学提出GANomaly：无需负例样本实现异常检测
-
-https://mp.weixin.qq.com/s/BEuA5icaQwRJGsJJLnAFVg
-
-用机器学习生成图片：GAN的局限性以及如何GAN的更爽
-
-https://zhuanlan.zhihu.com/p/41114883
-
-手机照片脑补成超大画幅，这个GAN想象力惊人
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650749368&idx=3&sn=fc20d9e6682c74227282df3133cea06c
-
-基于IR-transformer、IRGAN模型，解读搜狗语义匹配技术
-
-https://mp.weixin.qq.com/s/bKve_tZi9usz4oX0T3S15A
-
-悉尼大学陶大程：遗传对抗生成网络有效解决GAN两大痛点
-
-https://mp.weixin.qq.com/s/UO0pNLcwYN5tE5x_4azVJA
-
-LSGAN：最小二乘生成对抗网络
-
-https://zhuanlan.zhihu.com/p/46629127
-
-生成对抗网络-GAN---一个好老师的重要性
-
-https://mp.weixin.qq.com/s/Sp0EYvaq-1u0mtnrrmFNCQ
-
-为什么说GANs是一个绝妙的艺术创作工具？
-
-https://mp.weixin.qq.com/s/uHEAtuY1_KZdUAdDAwFi_A
-
-以为GAN只能“炮制假图”？它还有这7种另类用途
-
-https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247492415&idx=1&sn=a359e72ee99555f7a2fb4e21b2ad51db
-
-InfoGAN：一种无监督生成方法
-
-https://mp.weixin.qq.com/s/Yf5quOXmzJAy0GnJnvam5g
-
-台湾学者研发新型二元神经元GAN！有望用于AI作曲
-
-https://mp.weixin.qq.com/s/8aL7COItG7lS4q5-3IZCmQ
-
-定制人脸图像没那么难！使用TL-GAN模型轻松变脸
-
-https://mp.weixin.qq.com/s/9t0GvQW-cmakM0E9dWxBcg
-
-旧照片着色修复神器！自注意力GAN效果惊艳
+基于多特征地图和深度学习的实时交通场景分割
 
 # 问答系统
 

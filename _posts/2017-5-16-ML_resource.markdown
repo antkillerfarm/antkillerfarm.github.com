@@ -154,6 +154,54 @@ https://mp.weixin.qq.com/s/Fa7P3v969JRr6OOAyrGptA
 
 数据驱动决策的13种思维
 
+https://mp.weixin.qq.com/s/YI0yRgxgNE1CVY-lBwjR9g
+
+177页鲁棒机器学习教程
+
+http://mp.weixin.qq.com/s/xP4lnLXwGlYE_RmJfRwJ4w
+
+关于如何解释机器学习的一些方法
+
+http://mp.weixin.qq.com/s?__biz=MzU0NTAyNTQ1OQ==&mid=2247484026&idx=2&sn=bc58406f81c61400a2f314369bbaf324
+
+值得一看——机器学习中容易犯下的错
+
+https://mp.weixin.qq.com/s/Roum90M-FIhIcuh2mh9gWg
+
+全解机器学习3大分类6大算法的优势和劣势！
+
+http://kexue.fm/archives/4638/
+
+训练集、验证集和测试集的意义
+
+https://mp.weixin.qq.com/s/y5TCYmnJ3ssA8AI9voaRqw
+
+机器学习新手工程师常犯的6大错误
+
+https://mp.weixin.qq.com/s/4O1_9ly5DxpdjzQ2Nilcpw
+
+关于机器学习算法你必须了解的几点内容！
+
+https://mp.weixin.qq.com/s/g1PWYFvxyoEZ8uX_GBwKSQ
+
+学会数据分析背后的挖掘思维，分析就完成了一半!
+
+https://mp.weixin.qq.com/s/BHR_W-B9w6evWFs9PYB8zw
+
+机器学习方法体系汇总
+
+https://mp.weixin.qq.com/s/3fsV-9pYlLk6wvFa0mJ8pg
+
+如何解释机器学习模型和结果？
+
+https://mp.weixin.qq.com/s/XX0hBHKUgyK6v3iy-wkTmw
+
+机器学习各类算法比较
+
+https://mp.weixin.qq.com/s/8oAOzImyZj5idLDt4z9WNA
+
+机器学习算法再比较
+
 http://wenku.baidu.com/view/44a63fd2b14e852458fb577f.html
 
 kriging插值
@@ -174,21 +222,9 @@ http://mp.weixin.qq.com/s/v0z-s72juBF6Wwb9tc_Z_g
 
 深入理解空间搜索算法
 
-http://mp.weixin.qq.com/s/xP4lnLXwGlYE_RmJfRwJ4w
-
-关于如何解释机器学习的一些方法
-
-http://mp.weixin.qq.com/s?__biz=MzU0NTAyNTQ1OQ==&mid=2247484026&idx=2&sn=bc58406f81c61400a2f314369bbaf324
-
-值得一看——机器学习中容易犯下的错
-
 http://bindog.github.io/blog/2015/08/20/microsoft-malware-classification
 
 利用机器学习进行恶意代码分类
-
-https://mp.weixin.qq.com/s/3fsV-9pYlLk6wvFa0mJ8pg
-
-如何解释机器学习模型和结果？
 
 https://mp.weixin.qq.com/s/f6zi_FlygorqUIQFgWKMfA
 
@@ -225,14 +261,6 @@ http://www.aixchina.net/Article/178589
 https://zhuanlan.zhihu.com/p/25509178
 
 解析微信朋友圈的lookalike算法
-
-https://mp.weixin.qq.com/s/XX0hBHKUgyK6v3iy-wkTmw
-
-机器学习各类算法比较
-
-https://mp.weixin.qq.com/s/8oAOzImyZj5idLDt4z9WNA
-
-机器学习算法再比较
 
 https://mp.weixin.qq.com/s/ghJohTkCuHPub-iD8UphKw
 
@@ -294,21 +322,9 @@ https://mp.weixin.qq.com/s/wTwx0JULdBc3cqxPhig8UA
 
 感知机更新算法正确性的直观理解
 
-https://mp.weixin.qq.com/s/4O1_9ly5DxpdjzQ2Nilcpw
-
-关于机器学习算法你必须了解的几点内容！
-
 https://mp.weixin.qq.com/s/h8qkDt7fmFzVxQcKkwqRzQ
 
 滴滴KDD2017论文：基于组合优化的出租车分单模型
-
-https://mp.weixin.qq.com/s/g1PWYFvxyoEZ8uX_GBwKSQ
-
-学会数据分析背后的挖掘思维，分析就完成了一半!
-
-https://mp.weixin.qq.com/s/BHR_W-B9w6evWFs9PYB8zw
-
-机器学习方法体系汇总
 
 https://mp.weixin.qq.com/s/7ADqKKTdm_Rdwhnj3v3ecw
 
@@ -358,10 +374,6 @@ http://mp.weixin.qq.com/s/AlBWioRkf88dw69C4SAZ8w
 
 谷歌：无需学编程，用手机摄像头和浏览器即可机器学习
 
-https://mp.weixin.qq.com/s/Roum90M-FIhIcuh2mh9gWg
-
-全解机器学习3大分类6大算法的优势和劣势！
-
 https://mp.weixin.qq.com/s/Cpurb5jLNbdw-RNaewCgJQ
 
 适合入门的8个趣味机器学习项目
@@ -369,14 +381,6 @@ https://mp.weixin.qq.com/s/Cpurb5jLNbdw-RNaewCgJQ
 https://mp.weixin.qq.com/s/4LrG5gQXzD5M0fD4p-TZiA
 
 大数据分析苏轼，你没看错，这些都是小学生完成的
-
-http://kexue.fm/archives/4638/
-
-训练集、验证集和测试集的意义
-
-https://mp.weixin.qq.com/s/y5TCYmnJ3ssA8AI9voaRqw
-
-机器学习新手工程师常犯的6大错误
 
 https://mp.weixin.qq.com/s/izOnp5SQGBKXG9qy1sA2mA
 
@@ -421,10 +425,6 @@ https://mp.weixin.qq.com/s/7N6eDoEV8oEwUpP-zK1RpQ
 http://www.jianshu.com/p/af7e063ac9b3
 
 机器学习在金融比赛中的应用
-
-https://mp.weixin.qq.com/s/94IGjVPXZ0FeCILQN33eBQ
-
-遇见大数据可视化：不要错过这么漂亮的数据可视化案例！
 
 https://www.zhihu.com/question/28810567
 

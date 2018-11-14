@@ -368,3 +368,7 @@ https://zhuanlan.zhihu.com/p/48834333
 
 GCN in 2018：2018年顶会论文中的图卷积神经网络的理论与应用
 
+https://mp.weixin.qq.com/s/TGuEvNXw_9S5-9a3KyDvvw
+
+基于图卷积网络的图深度学习
+
