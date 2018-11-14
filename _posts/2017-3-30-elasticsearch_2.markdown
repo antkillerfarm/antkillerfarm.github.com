@@ -419,8 +419,12 @@ https://mp.weixin.qq.com/s/21LVssq2ynMgp_x1lwSC9w
 
 https://mp.weixin.qq.com/s/Oi1yJty_guzTUbRGZ5MuEw
 
-使用高斯过程的因果推理：GP CaKe 的基本思路
+使用高斯过程的因果推理：GP CaKe的基本思路
 
 https://mp.weixin.qq.com/s/vLvjo8Cso_bYEuW-AFoyiA
 
 南大周志华等人提出无组织恶意攻击检测算法UMA
+
+https://mp.weixin.qq.com/s/l4W7qmKJ4Pc-rlF-KvhrPA
+
+机器学习在信用评分卡中的应用
