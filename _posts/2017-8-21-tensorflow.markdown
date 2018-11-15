@@ -144,6 +144,10 @@ cudnn官网的链接目前已无法下载。但其实只是换了个地址而已
 
 https://developer.nvidia.com/rdp/cudnn-download
 
+***2018.11更新：***
+
+GPU编译已经没有太大意义了，只需`pip install tensorflow-gpu`即可。但需要注意的是，TF版本需要匹配对应的CUDA版本，否则安装过程不会有错误，但是运行时就会出问题。
+
 参考：
 
 http://www.jianshu.com/p/b1faa10c9238

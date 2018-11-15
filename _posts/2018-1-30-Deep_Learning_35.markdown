@@ -240,6 +240,10 @@ https://mp.weixin.qq.com/s/XisuT68H_r_SvVg0HVnWJw
 
 海康威视Oral论文：分层式共现网络，实现更好的动作识别和检测
 
+https://mp.weixin.qq.com/s/H-v1PCdaIaI0vrzrvxRpdg
+
+电子科大提出“姿态蒸馏”算法-实现快速人体姿态估计
+
 # 深度目标跟踪
 
 https://zhuanlan.zhihu.com/p/22334661

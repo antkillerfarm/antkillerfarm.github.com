@@ -24,6 +24,14 @@ https://github.com/Jeongseungwoo/Singing-Voice-Separation
 
 Tensorflow版本的实现
 
+https://github.com/f90/Wave-U-Net
+
+另一个Tensorflow版本的实现。这哥们还有个使用Semi-supervised adversarial学习分离人声的项目（他也是该项目论文的一作）：
+
+https://github.com/f90/AdversarialAudioSeparation
+
+![](/images/img2/wave_u_net.png)
+
 这种用途的U-NET和原始U-NET的区别在于：
 
 1.输入和输出是音频数据的时序频谱图，从某种意义上来说，其实就是一张二维图片。
@@ -33,6 +41,24 @@ Tensorflow版本的实现
 3.由于最终结果不再是像素级的分类问题，因此Loss采用了absolute difference。
 
 从上面的论述可以看出，该论文主要是用到了语义分割网络中**输入和输出的尺寸等大**这个特点，算是一种很灵巧的构思了。
+
+这方面的数据集主要有：
+
+***CCMixter：***
+
+https://members.loria.fr/ALiutkus/kam/
+
+这个数据集的每个文件夹下有3个wav文件：
+
+source-01.wav：纯音乐。
+
+source-02.wav：人声。
+
+mix.wav：混合后的声音。
+
+***MUSDB18：***
+
+https://sigsep.github.io/datasets/musdb.html
 
 ## 参考
 

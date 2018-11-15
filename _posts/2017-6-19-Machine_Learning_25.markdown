@@ -97,6 +97,10 @@ https://mp.weixin.qq.com/s/p8oN4xh-FHnay2eTsk6Gng
 
 基于高阶模糊认知图与小波变换的时间序列预测
 
+https://mp.weixin.qq.com/s/DGGuAYsoa6DPD6FBf2Hc4g
+
+时间序列分析之理论篇
+
 # Tri-training
 
 ## 半监督学习
