@@ -222,10 +222,6 @@ https://mp.weixin.qq.com/s/cmBlGiu-ATHAorYCoQhMBg
 
 RNN-LSTM的Keras实现：以预测比特币和以太坊价格为例
 
-https://mp.weixin.qq.com/s/5Omfj-fYRDt9j2VZH1XXkQ
-
-如何用Keras打造出“风格迁移”的AI艺术作品
-
 https://mp.weixin.qq.com/s/_B_WaHJyH-JPS2izq_DuFg
 
 如何使用LSTM在Keras中快速实现情感分析任务

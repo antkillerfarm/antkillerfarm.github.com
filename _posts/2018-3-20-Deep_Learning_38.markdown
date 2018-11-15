@@ -320,3 +320,7 @@ https://mp.weixin.qq.com/s/cO1VlYGwdRBAbPs7IgvcAA
 
 超越传统强化学习的价值分布方法
 
+https://mp.weixin.qq.com/s/oyWyb58l4ztqIEyrk0g01A
+
+强化学习在美团“猜你喜欢”的实践
+

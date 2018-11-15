@@ -262,6 +262,18 @@ https://mp.weixin.qq.com/s/cBTnX1lNHJhCMDX926aujA
 
 想怎么GAN就怎么GAN，一键拯救发际线
 
+https://mp.weixin.qq.com/s/l3hQCQWh5NgihzTs2A049w
+
+风格迁移原理及tensorflow实现
+
+https://mp.weixin.qq.com/s/5Omfj-fYRDt9j2VZH1XXkQ
+
+如何用Keras打造出“风格迁移”的AI艺术作品
+
+https://mp.weixin.qq.com/s/4q-9QsXD04mD-f2ke7ql8A
+
+tensorflow风格迁移网络训练与使用
+
 # Graph NN
 
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
