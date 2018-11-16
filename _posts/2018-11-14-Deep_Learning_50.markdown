@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（五十）——GAN进阶（2）, 图像超分辨率进阶, 深度推理, DNC, YOLOv3, Transformer
+title:  深度学习（五十）——GAN进阶（2）, 图像超分辨率进阶, 深度推理, DNC, Transformer
 category: DL 
 ---
 
@@ -223,36 +223,6 @@ DNC-3滚动分类的模式识别
 https://zhuanlan.zhihu.com/p/28433712
 
 DNC4广义线性回归
-
-# YOLOv3
-
-https://zhuanlan.zhihu.com/p/34945787
-
-YOLOv3：An Incremental Improvement全文翻译
-
-https://mp.weixin.qq.com/s/UWuCiV6dBk9Z0XusEBS6-g
-
-物体检测经典模型YOLO新升级，就看一眼，速度提升3倍！
-
-https://mp.weixin.qq.com/s/BF7mj-_D303cLiD5e6oy6w
-
-期待已久的—YOLO V3
-
-https://mp.weixin.qq.com/s/-Ixqxx6QGJDTM4g50y6LyA
-
-进击的YOLOv3，目标检测网络的巅峰之作
-
-https://zhuanlan.zhihu.com/p/46691043
-
-YOLO v1深入理解
-
-https://zhuanlan.zhihu.com/p/47575929
-
-YOLOv2 / YOLO9000深入理解
-
-https://zhuanlan.zhihu.com/p/49556105
-
-YOLO v3深入理解
 
 # Transformer
 

@@ -226,6 +226,14 @@ https://www.zhihu.com/question/29520851
 
 功率谱密度如何理解？
 
+https://mp.weixin.qq.com/s/i84yW8L7qGVpPtwpaJhhgw
+
+深入浅出聊抖动（Jitter）
+
+https://mp.weixin.qq.com/s/XZHh7O-aiTA4Z-jnz20HgA
+
+功率谱密度
+
 # 高阶统计
 
 上面讨论的基本都是一阶和二阶统计量，实际上我们还可以使用更高阶的统计量。使用高阶统计量的学科，一般被称为高阶统计学（higher-order statistics）。

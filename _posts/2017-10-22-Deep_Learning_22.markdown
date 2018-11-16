@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十二）——VDSR, ESPCN, FSRCNN, VESPCN, SRGAN, DemosaicNet, MemNet, RDN
+title:  深度学习（二十二）——VDSR, ESPCN, FSRCNN, VESPCN, SRGAN, DemosaicNet, MemNet
 category: DL 
 ---
 
@@ -246,34 +246,4 @@ https://github.com/tyshiwo/MemNet
 https://mp.weixin.qq.com/s/KxQ-GRnEYEdmS2H-DHIHOg
 
 南京理工大学ICCV 2017论文：图像超分辨率模型MemNet
-
-# RDN
-
-Residual Dense Network是美国东北大学的张宇伦的作品。
-
->Yulun Zhang，西安电子科技大学本科（2013年）+清华硕士（2017年），现为博士一年级。   
->个人主页：   
->http://yulunzhang.com/
-
-论文：
-
-《Residual Dense Network for Image Super-Resolution》
-
-![](/images/img2/RDN.png)
-
-该论文在比较Residual block和Dense block的基础之上，提出了Residual dense block。
-
-![](/images/img2/RDN_2.png)
-
-![](/images/img2/RDN_3.png)
-
-中规中矩的论文吧，熟悉Residual block和Dense block的人应该能秒懂，不多说了。
-
-这类基本结构的SR应用除了MemNet和RDN之外，还有更早的SRResnet和SRDensenet，光听名字估计就知道是怎么回事了，灌水利器啊！
-
-参考：
-
-https://mp.weixin.qq.com/s/_r3MKxMTIR856ezEozFOGA
-
-残差密集网络：利用所有分层特征的图像超分辨率网络
 

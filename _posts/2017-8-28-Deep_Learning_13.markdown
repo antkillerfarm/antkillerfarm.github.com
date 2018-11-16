@@ -6,6 +6,30 @@ category: DL
 
 # Winograd（续）
 
+## 多项式的CRT
+
+CRT亦可改为如下等效形式：
+
+$$c=\left(\sum_{i=0}^kc_iN_iM_i\right)\mod{M}$$
+
+其中$$m_i$$两两互质，$$c_i=R_{m_i}[c],M=\prod_{i=0}^km_i,M_i=M/m_i$$，$$N_i,n_i$$是方程$$N_i M_i + n_i m_i = GCD ( M_i , m_i ) = 1$$的解。
+
+显然这里的$$N_i,n_i$$可以使用Extended Euclidean algorithm求解。
+
+例如：
+
+$$m_0 = 3 , M_0 = 20 , ( − 1 ) 20 + 7 ( 3 ) = 1$$
+
+$$m_1 = 4 , M_1 = 15 , ( − 1 ) 15 + ( 4 ) 4 = 1$$
+
+$$m_2 = 5 , M_2 = 12 , ( − 2 ) 12 + ( 5 ) 5 = 1$$
+
+稍加扩展，可得到多项式版本的CRT：
+
+$$c(p)=\left(\sum_{i=0}^kc^{(i)}(p)N^{(i)}(p)M^{(i)}(p)\right)\mod{M(p)}\tag{3}$$
+
+其中$$m^{(i)}(p)$$两两互质，$$c^{(i)}(p)=R_{m^{(i)}}[c(p)],M(p)=\prod_{i=0}^km^{(i)}(p),M^{(i)}(p)=M(p)/m^{(i)}(p)$$，$$N^{(i)}(p)$$是方程$$N^{(i)}(p) M^{(i)}(p) + n^{(i)}(p) m^{(i)}(p) = GCD ( M^{(i)}(p) , m^{(i)}(p)) = 1$$的解。
+
 ## Winograd algorithm
 
 下面以一个2x3的卷积为例，介绍一下Winograd algorithm的做法。
@@ -259,36 +283,3 @@ $$\hat x^{(k)} = \frac{x^{(k)} - E[x^{(k)}]}{\sqrt{Var[x^{(k)}]}}$$
 $$y^{(k)}=\gamma^{(k)}\hat x^{(k)}+\beta^{(k)}$$
 
 这里的$$\gamma^{(k)},\beta^{(k)}$$是待学习的参数。
-
-BN的主要思想是用同一batch的样本分布来近似整体的样本分布。显然，batch size越大，这种近似也就越准确。
-
-用$$\mathcal{B}=\{x_{1,\dots,m}\}$$表示batch，则BN的计算过程如下：
-
-**Step 1**.计算mini-batch mean。
-
-$$\mu_\mathcal{B}\leftarrow \frac{1}{m}\sum_{i=1}^mx_i$$
-
-**Step 2**.计算mini-batch variance。
-
-$$\sigma_\mathcal{B}^2\leftarrow \frac{1}{m}\sum_{i=1}^m(x_i-\mu_\mathcal{B})^2$$
-
-**Step 3**.normalize。
-
-$$\hat x_i\leftarrow \frac{x_i-\mu_\mathcal{B}}{\sqrt{\sigma_\mathcal{B}^2+\epsilon}}$$
-
-这里的$$\epsilon$$是为了数值的稳定性而添加的常数。
-
-**Step 4**.scale and shift。
-
-$$y_i=\gamma\hat x_i+\beta\equiv BN_{\gamma,\beta}(x_i)$$
-
-在实际使用中，BN计算和卷积计算一样，都被当作神经网络的其中一层。即：
-
-$$z=g(Wu+b)\rightarrow z=g(BN(Wu+b))=g(BN(Wu))$$
-
-从另一个角度来看，BN的均值、方差操作，相当于去除一阶和二阶信息，而只保留网络的高阶信息，即非线性部分。因此，上式最后一步中b被忽略，也就不难理解了。
-
-BN的误差反向算法相对复杂，这里不再赘述。
-
-在inference阶段，BN网络忽略Step 1和Step 2，只计算后两步。其中,$$\beta,\gamma$$由之前的训练得到。$$\mu,\sigma$$原则上要求使用全体样本的均值和方差，但样本量过大的情况下，也可使用训练时的若干个mini batch的均值和方差的FIR滤波值。
-

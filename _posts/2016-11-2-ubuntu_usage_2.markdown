@@ -297,7 +297,7 @@ https://www.xmind.net/
 
 `sudo apt update`
 
-`sudo apt-get install google-chrome-stable`
+`sudo apt install google-chrome-stable`
 
 `google-chrome-stable`
 

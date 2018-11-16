@@ -26,30 +26,6 @@ https://mp.weixin.qq.com/s/YbRo7TJ3j4dloSmKX40uAA
 
 Image-to-Image的论文汇总
 
-https://zhuanlan.zhihu.com/p/26746283
-
-图像风格迁移(Neural Style)简史
-
-https://blog.csdn.net/red_stone1/article/details/79055467
-
-人脸识别与神经风格迁移
-
-https://blog.csdn.net/cicibabe/article/details/70885715
-
-卷积神经网络图像风格转移
-
-https://blog.csdn.net/stdcoutzyx/article/details/53771471
-
-图像风格转换(Image style transfer)
-
-https://blog.csdn.net/u011534057/article/details/78935202
-
-风格迁移学习笔记(1):Multimodal Transfer: A Hierarchical Deep Convolutional Neural Network for Fast
-
-https://blog.csdn.net/u011534057/article/details/78935230
-
-风格迁移学习笔记(2):Universal Style Transfer via Feature Transforms
-
 https://mp.weixin.qq.com/s/88tBoAVziGEFXIGfvZZp8g
 
 深度学习图像处理项目集锦：生成可爱的动漫头像，骡子变斑马等入选
@@ -261,18 +237,6 @@ https://mp.weixin.qq.com/s/9LvP3AH1PJhjrokTGg3blA
 https://mp.weixin.qq.com/s/cBTnX1lNHJhCMDX926aujA
 
 想怎么GAN就怎么GAN，一键拯救发际线
-
-https://mp.weixin.qq.com/s/l3hQCQWh5NgihzTs2A049w
-
-风格迁移原理及tensorflow实现
-
-https://mp.weixin.qq.com/s/5Omfj-fYRDt9j2VZH1XXkQ
-
-如何用Keras打造出“风格迁移”的AI艺术作品
-
-https://mp.weixin.qq.com/s/4q-9QsXD04mD-f2ke7ql8A
-
-tensorflow风格迁移网络训练与使用
 
 # Graph NN
 

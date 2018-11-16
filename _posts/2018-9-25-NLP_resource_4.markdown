@@ -278,3 +278,6 @@ https://mp.weixin.qq.com/s/4qHgIcq9YJTj1iGh7kLB4w
 
 用神经推理来帮助命名实体识别
 
+https://mp.weixin.qq.com/s/kef7F8hlkavvVpD1gQt8hA
+
+几千条文本库也能做机器学习！NLP小数据集训练指南

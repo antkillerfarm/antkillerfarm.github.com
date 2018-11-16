@@ -1,8 +1,38 @@
 ---
 layout: post
-title:  深度学习（二十三）——ShuffleSeg, Fast Image Processing, SVDF, LCNN, LSTM进阶
+title:  深度学习（二十三）——RDN, ShuffleSeg, Fast Image Processing, SVDF, LCNN, LSTM进阶
 category: DL 
 ---
+
+# RDN
+
+Residual Dense Network是美国东北大学的张宇伦的作品。
+
+>Yulun Zhang，西安电子科技大学本科（2013年）+清华硕士（2017年），现为博士一年级。   
+>个人主页：   
+>http://yulunzhang.com/
+
+论文：
+
+《Residual Dense Network for Image Super-Resolution》
+
+![](/images/img2/RDN.png)
+
+该论文在比较Residual block和Dense block的基础之上，提出了Residual dense block。
+
+![](/images/img2/RDN_2.png)
+
+![](/images/img2/RDN_3.png)
+
+中规中矩的论文吧，熟悉Residual block和Dense block的人应该能秒懂，不多说了。
+
+这类基本结构的SR应用除了MemNet和RDN之外，还有更早的SRResnet和SRDensenet，光听名字估计就知道是怎么回事了，灌水利器啊！
+
+参考：
+
+https://mp.weixin.qq.com/s/_r3MKxMTIR856ezEozFOGA
+
+残差密集网络：利用所有分层特征的图像超分辨率网络
 
 # ShuffleSeg
 
@@ -83,46 +113,6 @@ $$\mathcal{l(K,B)}=\sum_i\frac{1}{N_i}\|\hat f (I_i;\mathcal{K,B})-f(I_i)\|^2$$
 http://mmlab.science.unitn.it/RAISE/
 
 RAISE数据集包含了8156张高分辨率原始照片，由3台不同的相机拍摄，并给出了相机的型号和参数。
-
-# TNG
-
-Tiny Network Graphics是图鸭科技推出一种基于深度学习的图片压缩技术。由于商业因素，这里没有论文，技术细节也不详，但是下图应该还是有些用的。
-
-![](/images/img2/TNG.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/WYsxFX4LyM562bZD8rO95w
-
-图鸭发布图片压缩TNG，节省55%带宽
-
-https://mp.weixin.qq.com/s/meK8UBnVHzA9YspQ2RFp6Q
-
-体积减半画质翻倍，他用TensorFlow实现了这个图像极度压缩模型
-
-https://mp.weixin.qq.com/s/_5tyt7pU0gIXbkmTOVEtDw
-
-嫌图片太大？！卷积神经网络轻松实现无损压缩到20%！
-
-https://mp.weixin.qq.com/s/a4oU8UK_hLMrKXNRQizAag
-
-图鸭科技获CVPR 2018图像压缩挑战赛单项冠军，技术解读端到端图像压缩框架
-
-https://mp.weixin.qq.com/s/VDyPjzXdwMGEsoXQmhrp9g
-
-图鸭科技斩获CVPR图像压缩挑战赛冠军，TNGcnn4p技术全解读
-
-https://mp.weixin.qq.com/s/B7reSwa9sCZqbkYVM5-VOA
-
-图像压缩哪家强？请看这份超详细对比
-
-https://mp.weixin.qq.com/s/K17wlC3tueNBfHkYBUFcQg
-
-基于深度学习的HEVC复杂度优化。这是篇视频压缩的blog。
-
-https://mp.weixin.qq.com/s/exUYS2v5VyRaMdFylWlobw
-
-用循环神经网络进行文件无损压缩：斯坦福大学提出DeepZip
 
 # SVDF
 

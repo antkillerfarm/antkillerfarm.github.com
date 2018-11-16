@@ -1,74 +1,10 @@
 ---
 layout: post
-title:  深度学习（三十七）——人脸检测/识别
+title:  深度学习（三十七）——人脸检测/识别（2）
 category: DL 
 ---
 
 # 人脸检测/识别
-
-## Cascade CNN
-
-论文：
-
-《A Convolutional Neural Network Cascade for Face Detection》
-
-![](/images/img2/CascadeCNN.jpg)
-
-这篇可以说是对经典的Viola-Jones方法的深度卷积网络实现，可以明显看出是3阶级联（12-net、24-net、48-net）。
-
-前2阶的网络都非常简单，只有第3阶才比较复杂。这不是重点，重点是我们要从上图中学习多尺度特征组合。
-
-以第2阶段的24-net为例，首先把上一阶段剩下的窗口resize为24*24大小，然后送入网络，得到全连接层的特征。同时，将之前12-net的全连接层特征取出与之拼接在一起。最后对组合后的特征进行softmax分类。
-
-除了分类网络之外，Cascade CNN还包含了3个修正bounding box的CNN网络，分别叫做12-calibration-net，24-calibration-net和48-calibration-net。他们的结构与12-net等类似。
-
-网络结构方面也就这样了，该论文最牛之处在于给出了这类级联网络的训练方法。
-
-![](/images/img2/CascadeCNN_2.jpg)
-
-1、按照一般的方法组织正负样本训练第一阶段的12-net和12-calibration-net网络；
-
-2、 利用上述的1层网络在AFLW数据集上作人脸检测，在保证99%的召回率的基础上确定判别阈值T1。
-
-3、将在AFLW上判为人脸的非人脸窗口作为负样本，将所有真实人脸作为正样本，训练第二阶段的24-net和24-calibration-net网络；
-
-4、重复2和3，完成最后阶段的训练。
-
-参考：
-
-http://blog.csdn.net/shuzfan/article/details/50358809
-
-人脸检测——CascadeCNN
-
-## MTCNN
-
-论文：
-
-《Joint Face Detection and Alignment using Multi-task Cascaded Convolutional Networks》
-
-![](/images/img2/MTCNN.png)
-
-上面是该方法的流程图，可以看出也是三阶级联，和CascadeCNN很像。
-
-stage1: 在构建图像金字塔的基础上，利用fully convolutional network来进行检测，同时利用boundingbox regression和NMS来进行修正。
-
-stage2: 将通过stage1的所有窗口输入作进一步判断，同时也要做boundingbox regression和NMS。
-
-stage3: 和stage2相似，只不过增加了更强的约束：5个人脸关键点（landmark）。
-
-参考：
-
-http://blog.csdn.net/qq_14845119/article/details/52680940
-
-MTCNN（Multi-task convolutional neural networks）人脸对齐
-
-http://blog.csdn.net/shuzfan/article/details/52668935
-
-人脸检测——MTCNN
-
-https://mp.weixin.qq.com/s/IrZEQ69RNUdcs0Fl8fHmmQ
-
-如何应用MTCNN和FaceNet模型实现人脸检测及识别
 
 ## 人脸识别
 

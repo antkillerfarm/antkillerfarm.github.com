@@ -448,10 +448,6 @@ https://mp.weixin.qq.com/s/5rNpp2cYZhcOKZCiy4LkMQ
 
 SAR成像原理及图像鉴赏
 
-https://mp.weixin.qq.com/s/i84yW8L7qGVpPtwpaJhhgw
-
-深入浅出聊抖动（Jitter）
-
 https://mp.weixin.qq.com/s/Y4SE6WxEQdWFLZnn83SK_g
 
 自适应天线及其自由度
