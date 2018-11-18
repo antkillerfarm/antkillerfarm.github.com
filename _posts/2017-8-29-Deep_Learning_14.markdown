@@ -156,7 +156,11 @@ Softmax和交叉熵的深度解析和Python实现
 
 ## 早期方法
 
-图像风格迁移这个领域，在2015年之前，连个合适的名字都没有，因为每个风格的算法都是各管各的，互相之间并没有太多的共同之处。比如油画风格迁移，里面用到了7种不同的步骤来描述和迁移油画的特征。又比如头像风格迁移里用到了三个步骤来把一种头像摄影风格迁移到另一种上。以上十个步骤里没一个重样的，可以看出图像风格处理的研究在2015年之前基本都是各自为战，捣鼓出来的算法也没引起什么注意。
+图像风格迁移这个领域，在2015年之前，连个合适的名字都没有，因为每个风格的算法都是各管各的，互相之间并没有太多的共同之处。
+
+比如油画风格迁移，里面用到了7种不同的步骤来描述和迁移油画的特征。又比如头像风格迁移里用到了三个步骤来把一种头像摄影风格迁移到另一种上。以上十个步骤里没一个重样的。
+
+可以看出这时的图像风格处理的研究，基本都是各自为战，捣鼓出来的算法也没引起什么注意。
 
 ![](/images/img2/style_transfer_3.jpg)
 
@@ -166,76 +170,61 @@ Softmax和交叉熵的深度解析和Python实现
 
 早期纹理生成的主要思想：**纹理可以用图像局部特征的统计模型来描述。**然而手工建模毕竟耗时耗力。。。
 
+## CNN的纹理特征
+
+在进行神经风格迁移之前，我们先来从可视化的角度看一下卷积神经网络每一层到底是什么样子？它们各自学习了哪些东西。
+
+遍历所有训练样本，找出让该层激活函数输出最大的9块图像区域；然后再找出该层的其它单元（不同的滤波器通道）激活函数输出最大的9块图像区域；最后共找9次，得到$$9 \times 9$$的图像如下所示，其中每个$$3 \times 3$$区域表示一个运算单元。
+
+![](/images/img2/style_transfer_2.png)
+
+可以看出随着层数的增加，CNN捕捉的区域更大，特征更加复杂，从边缘到纹理再到具体物体。
+
 ## DL方法
 
-这个领域的突破性进展出自2015年德国University of Tuebingen的Leon A. Gatys的两篇论文：
+受到上述事实的启发，2015年德国University of Tuebingen的Leon A. Gatys写了如下两篇论文：
 
 《Texture Synthesis Using Convolutional Neural Networks》
 
 《A Neural Algorithm of Artistic Style》
 
+![](/images/img2/style_transfer.png)
 
+在第一篇论文中，Gatys使用Gramian matrix从各层CNN中提取纹理信息，于是就有了一个不用手工建模就能生成纹理的方法。
 
-## 参考
+Gramian matrix（由Jørgen Pedersen Gram提出）中的元素定义如下：
 
-https://zhuanlan.zhihu.com/p/26746283
+$$G_{ij}=\langle v_i, v_j \rangle$$
 
-图像风格迁移(Neural Style)简史
+这里的$$v_i$$表示向量，$$G_{ij}$$是向量的内积。可以看出Gramian matrix是一个半正定的对称矩阵。
 
-https://blog.csdn.net/red_stone1/article/details/79055467
+在第二篇论文中，Gatys更进一步指出：**纹理能够描述一个图像的风格。**
 
-人脸识别与神经风格迁移
+既然第一篇论文解决了从图片B中提取纹理的任务，那么还有一个关键点就是：**如何只提取图片内容而不包括图片风格?**
 
-https://blog.csdn.net/cicibabe/article/details/70885715
+## Cost Function
 
-卷积神经网络图像风格转移
+神经风格迁移生成图片G的cost function由两部分组成：C与G的相似程度和S与G的相似程度。
 
-https://blog.csdn.net/stdcoutzyx/article/details/53771471
+$$J(G)=\alpha \cdot J_{content}(C,G)+\beta \cdot J_{style}(S,G)$$
 
-图像风格转换(Image style transfer)
+其中，$$\alpha, \beta$$是超参数，用来调整$$J_{content}(C,G)$$与$$J_{style}(S,G)$$的相对比重。
 
-https://blog.csdn.net/u011534057/article/details/78935202
+神经风格迁移的基本算法流程是：首先令G为随机像素点，然后使用梯度下降算法，不断修正G的所有像素点，使得J(G)不断减小，从而使G逐渐有C的内容和G的风格，如下图所示：
 
-风格迁移学习笔记(1):Multimodal Transfer: A Hierarchical Deep Convolutional Neural Network for Fast
+![](/images/img2/style_transfer_3.png)
 
-https://blog.csdn.net/u011534057/article/details/78935230
+我们先来看J(G)的第一部分$$J_{content}(C,G)$$，它表示内容图片C与生成图片G之间的相似度。
 
-风格迁移学习笔记(2):Universal Style Transfer via Feature Transforms
+使用的CNN网络是之前预训练好的模型，例如Alex-Net。C，S，G共用相同模型和参数。首先，需要选择合适的层数l来计算$$J_{content}(C,G)$$。
 
-https://mp.weixin.qq.com/s/l3hQCQWh5NgihzTs2A049w
+如前所述，CNN的每个隐藏层分别提取原始图片的不同深度特征，由简单到复杂。如果l太小，则G与C在像素上会非常接近，没有迁移效果；如果l太深，则G上某个区域将直接会出现C中的物体。因此，l既不能太浅也不能太深，一般选择网络中间层。
 
-风格迁移原理及tensorflow实现
+若C和G在l层的激活函数输出$$a^{[l](C)}$$与$$a^{[l](G)}$$，则相应的$$J_{content}(C,G)$$的表达式为：
 
-https://mp.weixin.qq.com/s/5Omfj-fYRDt9j2VZH1XXkQ
+$$J_{content}(C,G)=\frac12||a^{[l](C)}-a^{[l](G)}||^2$$
 
-如何用Keras打造出“风格迁移”的AI艺术作品
+接下来，我们定义图片的风格矩阵（style matrix）为：
 
-https://mp.weixin.qq.com/s/4q-9QsXD04mD-f2ke7ql8A
+$$G_{kk'}^{[l]}=\sum_{i=1}^{n_H^{[l]}}\sum_{j=1}^{n_W^{[l]}}a_{ijk}^{[l]}a_{ijk'}^{[l]}$$
 
-tensorflow风格迁移网络训练与使用
-
-https://blog.csdn.net/hungryof/article/details/53981959
-
-谈谈图像的Style Transfer（一）
-
-https://blog.csdn.net/Hungryof/article/details/71512406
-
-谈谈图像的style transfer（二）
-
-# fast style transfer
-
-代码：
-
-https://github.com/OlavHN/fast-neural-style
-
-https://github.com/lengstrom/fast-style-transfer/
-
-参考：
-
-https://blog.csdn.net/Hungryof/article/details/61195783
-
-超越fast style transfer----任意风格图和内容图0.1秒出结果
-
-https://zhuanlan.zhihu.com/p/35798776
-
-快速风格迁移（fast-style-transfer）

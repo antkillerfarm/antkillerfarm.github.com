@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十二）——词向量进阶, NN的量化计算, 深度贝叶斯学习
+title:  深度学习（三十二）——词向量进阶, NN的量化计算
 category: DL 
 ---
 
@@ -186,6 +186,10 @@ https://mp.weixin.qq.com/s/4gqpdTxt7Lip-hfuuUweAw
 
 词嵌入获得的信息远比我们想象中的要多得多
 
+https://mp.weixin.qq.com/s/-hh9iRIZtxh8Q-ZU_oCekA
+
+网络嵌入之STNE model
+
 # NN的量化计算
 
 ## 概述
@@ -346,40 +350,3 @@ https://mp.weixin.qq.com/s/XzLJzfvpP93cDYplf6-LXA
 
 港科腾讯等提出Bi-Real net：超XNOR-net 10%的ImageNet分类精度
 
-# 深度贝叶斯学习
-
-https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og
-
-贝叶斯学习与未来人工智能
-
-https://mp.weixin.qq.com/s/Zd4rFU7Lebr4zmzxThNyVw
-
-详解珠算：清华大学开源的贝叶斯深度学习库
-
-https://mp.weixin.qq.com/s/RpaOrngeXTKycLb3iCygZw
-
-利用贝叶斯神经网络进行随机动力系统中的学习与策略搜索
-
-https://mp.weixin.qq.com/s/lKm_ypn5I7tSjoQHceJ0jQ
-
-概率编程：使用贝叶斯神经网络预测金融市场价格
-
-https://mp.weixin.qq.com/s/cDqxmRVQCIqdM5oiUh82YQ
-
-Yee Whye Teh：《贝叶斯深度学习与深度贝叶斯学习》
-
-https://mp.weixin.qq.com/s/Zk2YG-IJNhJxTBU8THSM-g
-
-让DL可解释？这一份66页贝叶斯深度学习教程告诉你
-
-https://mp.weixin.qq.com/s/-izo9VUdxN33pwVFGV_tjw
-
-299页PPT带你回顾深度贝叶斯学习最新发展脉络
-
-https://github.com/bayesgroup/deepbayes-2018
-
-Seminars DeepBayes Summer School 2018
-
-https://mp.weixin.qq.com/s/WCRYppBLdl_M4etUChnfgw
-
-PyMC3和Theano代码构建贝叶斯深度网络

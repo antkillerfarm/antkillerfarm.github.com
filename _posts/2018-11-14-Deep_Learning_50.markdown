@@ -114,6 +114,10 @@ https://mp.weixin.qq.com/s/9t0GvQW-cmakM0E9dWxBcg
 
 旧照片着色修复神器！自注意力GAN效果惊艳
 
+https://mp.weixin.qq.com/s/cUFQ6EADa39h2eFoa_Dh0A
+
+最高76%破解成功率！GAN已经能造出“万能指纹”，你的手机还安全吗？
+
 # 图像超分辨率进阶
 
 https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg

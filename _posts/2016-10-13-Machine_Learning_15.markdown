@@ -132,6 +132,10 @@ https://mp.weixin.qq.com/s/FtWA1rff13e7_FM0lJKCVg
 
 Petuum提出新型正则化方法：非重叠促进型变量选择
 
+https://zhuanlan.zhihu.com/p/50142573
+
+L1正则化引起稀疏解的多种解释
+
 # 协同过滤的ALS算法
 
 ## 协同过滤概述

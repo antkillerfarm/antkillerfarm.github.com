@@ -1,8 +1,80 @@
 ---
 layout: post
-title:  深度目标检测（三）——YOLOv3, 目标检测进阶
+title:  深度目标检测（三）——Fast R-CNN, YOLOv3, 目标检测进阶
 category: Deep Object Detection 
 ---
+
+# Fast R-CNN
+
+Fast R-CNN是Ross Girshick于2015年祭出的又一大招。
+
+论文：
+
+《Fast R-CNN》
+
+代码：
+
+https://github.com/rbgirshick/fast-rcnn
+
+![](/images/article/fast_rcnn_p_2.png)
+
+上图是Fast R-CNN的结构图。从该图可以看出Fast R-CNN和SPPnet的主要差异在于：
+
+1.使用ROI（Region of interest） Pooling，替换SPP。
+
+2.去掉了SVM分类。
+
+以下将对这两个方面，做一个简述。
+
+## ROI Pooling
+
+SPP将图像pooling成多个固定尺度，而RoI只将图像pooling到单个固定的尺度。（虽然多尺度学习能提高一点点mAP，不过计算量成倍的增加。）
+
+普通pooling操作中，pooling区域的大小一旦选定，就不再变化。
+
+而ROI Pooling中，为了将ROI区域pooling到单个固定的目标尺度，我们需要根据ROI区域和目标尺度的大小，动态计算pooling区域的大小。
+
+ROI Pooling有两个输入：feature map和ROI区域。Pooling方式一般为Max Pooling。Pooling的kernel形状可以不为正方形。
+
+## Bounding-box Regression
+
+从Fast R-CNN的结构图可以看出，与一般的CNN不同，它在FC之后，实际上有两个输出层：第一个是针对每个ROI区域的分类概率预测（上图中的Linear+softmax），第二个则是针对每个ROI区域坐标的偏移优化（上图中的Linear）。
+
+然后，这两个输出层（即两个Task）再合并为一个multi-task，并定义统一的loss。
+
+![](/images/article/fast_rcnn_multi_task.png)
+
+由于两个Task的信息互为补充，使得分类预测任务的softmax准确率大为提升，SVM也就没有存在的必要了。
+
+上图中提到的smooth L1 Loss可参见：
+
+http://pages.cs.wisc.edu/~gfung/GeneralL1/L1_approx_bounds.pdf
+
+Fast Optimization Methods for L1 Regularization: A Comparative Study and Two New Approaches Suplemental Material
+
+## 全连接层提速
+
+Fast R-CNN的论文中还提到了全连接层提速的概念。这个概念本身和Fast R-CNN倒没有多大关系。因此，完全可以将之推广到其他场合。
+
+![](/images/article/fc_svd.png)
+
+它的主要思路是，在两个大的FC层（假设尺寸为u、v）之间，利用SVD算法加入一个小的FC层（假设尺寸为t），从而减少了计算量。
+
+$$u\times v\to u\times t+t\times v$$
+
+## 总结
+
+![](/images/article/fast_rcnn_p.png)
+
+参考：
+
+https://zhuanlan.zhihu.com/p/24780395
+
+Fast R-CNN
+
+http://blog.csdn.net/shenxiaolu1984/article/details/51036677
+
+Fast RCNN算法详解
 
 # YOLOv3
 
@@ -37,6 +109,10 @@ YOLO v3深入理解
 https://mp.weixin.qq.com/s/xNaXPwI1mQsJ2Y7TT07u3g
 
 YOLO-LITE:专门面向CPU的实时目标检测
+
+https://zhuanlan.zhihu.com/p/50170492
+
+重磅！YOLO-LITE来了
 
 # 目标检测进阶
 

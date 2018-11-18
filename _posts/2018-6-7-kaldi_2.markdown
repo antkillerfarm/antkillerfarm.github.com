@@ -292,3 +292,21 @@ https://mp.weixin.qq.com/s/O9QDUNXftZeEohxiW6LtZw
 https://mp.weixin.qq.com/s/xYNCKy36n8CoaGzABlI5Wg
 
 从零开始用python搭建推荐引擎
+
+# DL参考资源+
+
+https://mp.weixin.qq.com/s/oltHCTombWE2WP_zbbOr3A
+
+Deep Learning之训练过程中出现NaN问题
+
+http://mp.weixin.qq.com/s/sIIoGilZgQHn4jDiYzEelw
+
+大咖解读Bengio笔记——邓侃：用深度学习模型，解构并重构人类思维
+
+http://mp.weixin.qq.com/s/Ybq6hSTPpyYQSNGJg1tgeQ
+
+AI距离匹敌人类大脑还有多远？人工神经网络和生物神经网络最详细对比
+
+http://mp.weixin.qq.com/s/UKu9T5zS1Z2dfNB1YsYGkQ
+
+NEAT学习：教机器自我编程

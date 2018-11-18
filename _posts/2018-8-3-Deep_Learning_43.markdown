@@ -238,6 +238,10 @@ https://mp.weixin.qq.com/s/cBTnX1lNHJhCMDX926aujA
 
 想怎么GAN就怎么GAN，一键拯救发际线
 
+https://mp.weixin.qq.com/s/HinUtoYNq_e8HYBqPKozsQ
+
+GAN：艺术家眼里生成作品的创作利器
+
 # Graph NN
 
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
@@ -347,4 +351,3 @@ GCN in 2018：2018年顶会论文中的图卷积神经网络的理论与应用
 https://mp.weixin.qq.com/s/TGuEvNXw_9S5-9a3KyDvvw
 
 基于图卷积网络的图深度学习
-

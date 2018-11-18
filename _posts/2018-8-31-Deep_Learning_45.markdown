@@ -286,6 +286,10 @@ https://mp.weixin.qq.com/s?__biz=MzUyMjE2MTE0Mw==&mid=2247486970&idx=2&sn=687820
 
 如何利用高效的搜索算法来搜索网络的拓扑结构
 
+https://mp.weixin.qq.com/s/Y8i25dZmj41dr8nz2WyNbQ
+
+搜索一次就够了：中科院&图森提出通过稀疏优化进行一次神经架构搜索
+
 # 多模态学习
 
 https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw

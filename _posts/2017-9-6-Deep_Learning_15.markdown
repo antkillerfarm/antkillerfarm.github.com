@@ -1,9 +1,74 @@
 ---
 layout: post
-title:  深度学习（十五）——深度图像压缩, 人脸检测/识别（1）, SPPNet
+title:  深度学习（十五）——深度图像压缩, 人脸检测/识别（1）, 深度贝叶斯学习
 category: DL 
 ---
 
+# Style Transfer（续）
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/26746283
+
+图像风格迁移(Neural Style)简史
+
+https://blog.csdn.net/red_stone1/article/details/79055467
+
+人脸识别与神经风格迁移
+
+https://blog.csdn.net/cicibabe/article/details/70885715
+
+卷积神经网络图像风格转移
+
+https://blog.csdn.net/stdcoutzyx/article/details/53771471
+
+图像风格转换(Image style transfer)
+
+https://blog.csdn.net/u011534057/article/details/78935202
+
+风格迁移学习笔记(1):Multimodal Transfer: A Hierarchical Deep Convolutional Neural Network for Fast
+
+https://blog.csdn.net/u011534057/article/details/78935230
+
+风格迁移学习笔记(2):Universal Style Transfer via Feature Transforms
+
+https://mp.weixin.qq.com/s/l3hQCQWh5NgihzTs2A049w
+
+风格迁移原理及tensorflow实现
+
+https://mp.weixin.qq.com/s/5Omfj-fYRDt9j2VZH1XXkQ
+
+如何用Keras打造出“风格迁移”的AI艺术作品
+
+https://mp.weixin.qq.com/s/4q-9QsXD04mD-f2ke7ql8A
+
+tensorflow风格迁移网络训练与使用
+
+https://blog.csdn.net/hungryof/article/details/53981959
+
+谈谈图像的Style Transfer（一）
+
+https://blog.csdn.net/Hungryof/article/details/71512406
+
+谈谈图像的style transfer（二）
+
+# fast style transfer
+
+代码：
+
+https://github.com/OlavHN/fast-neural-style
+
+https://github.com/lengstrom/fast-style-transfer/
+
+参考：
+
+https://blog.csdn.net/Hungryof/article/details/61195783
+
+超越fast style transfer----任意风格图和内容图0.1秒出结果
+
+https://zhuanlan.zhihu.com/p/35798776
+
+快速风格迁移（fast-style-transfer）
 
 # 深度图像压缩
 
@@ -111,35 +176,41 @@ https://mp.weixin.qq.com/s/IrZEQ69RNUdcs0Fl8fHmmQ
 
 如何应用MTCNN和FaceNet模型实现人脸检测及识别
 
-# SPPNet
+# 深度贝叶斯学习
 
-SPPNet是何恺明2014年的作品。
+https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og
 
-论文：
+贝叶斯学习与未来人工智能
 
-《Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition》
+https://mp.weixin.qq.com/s/Zd4rFU7Lebr4zmzxThNyVw
 
-在RCNN算法中，一张图片会有1~2k个候选框，每一个都要单独输入CNN做卷积等操作很费时。而且这些候选框可能很多都是重合的，重复的CNN操作从信息论的角度，也是相当冗余的。
+详解珠算：清华大学开源的贝叶斯深度学习库
 
-![](/images/article/rcnn_vs_spp.png)
+https://mp.weixin.qq.com/s/RpaOrngeXTKycLb3iCygZw
 
-SPPNet的核心思想如上图所示：在feature map上提取ROI特征，这样就只需要在整幅图像上做一次卷积。
+利用贝叶斯神经网络进行随机动力系统中的学习与策略搜索
 
-这个想法说起来简单，但落到实地，还有如下问题需要解决：
+https://mp.weixin.qq.com/s/lKm_ypn5I7tSjoQHceJ0jQ
 
-**Problem 1**：原始图像的ROI如何映射到特征图（一系列卷积层的最后输出）。
+概率编程：使用贝叶斯神经网络预测金融市场价格
 
-这里的计算比较复杂，要点在于：选择原始图像ROI的左上角和右下角，将之映射到feature map上的两个对应点，从而得到feature map上的ROI。
+https://mp.weixin.qq.com/s/cDqxmRVQCIqdM5oiUh82YQ
 
-![](/images/article/roi_original_to_feature.png)
+Yee Whye Teh：《贝叶斯深度学习与深度贝叶斯学习》
 
-参见：
+https://mp.weixin.qq.com/s/Zk2YG-IJNhJxTBU8THSM-g
 
-https://zhuanlan.zhihu.com/p/24780433
+让DL可解释？这一份66页贝叶斯深度学习教程告诉你
 
-原始图片中的ROI如何映射到到feature map?
+https://mp.weixin.qq.com/s/-izo9VUdxN33pwVFGV_tjw
 
-http://www.cnblogs.com/objectDetect/p/5947169.html
+299页PPT带你回顾深度贝叶斯学习最新发展脉络
 
-卷积神经网络物体检测之感受野大小计算
+https://github.com/bayesgroup/deepbayes-2018
+
+Seminars DeepBayes Summer School 2018
+
+https://mp.weixin.qq.com/s/WCRYppBLdl_M4etUChnfgw
+
+PyMC3和Theano代码构建贝叶斯深度网络
 

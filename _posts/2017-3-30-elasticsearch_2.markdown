@@ -432,3 +432,7 @@ https://mp.weixin.qq.com/s/vLvjo8Cso_bYEuW-AFoyiA
 https://mp.weixin.qq.com/s/l4W7qmKJ4Pc-rlF-KvhrPA
 
 机器学习在信用评分卡中的应用
+
+https://mp.weixin.qq.com/s/O3SIexXUeWM1svdI_ygrDg
+
+非精确图匹配方法综述

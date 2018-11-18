@@ -164,6 +164,10 @@ https://mp.weixin.qq.com/s/eY2XJipUIKHIlrYVOhiMRQ
 
 什么是自注意力机制？
 
+https://mp.weixin.qq.com/s/azce34Q3N4hnhIlE3NVTVw
+
+注意力机制(Attention)最新综述论文及相关源码
+
 http://geek.csdn.net/news/detail/50558
 
 深度学习和自然语言处理中的attention和memory机制

@@ -92,6 +92,24 @@ https://mp.weixin.qq.com/s/LXcWMwxgk3SXDI1cI_Kg8w
 
 # 知名数据集
 
+## CV（续）
+
+https://mp.weixin.qq.com/s/0b0g-IwJVsiKKTY_TLRmZA
+
+1460万个目标检测边界框：谷歌开源Open Images V4数据集
+
+https://blog.csdn.net/fuwenyan/article/details/79224753
+
+服装分类检索识别数据集
+
+https://blog.csdn.net/fuwenyan/article/details/78203803
+
+DeepFashion: 服装公开数据集概述
+
+https://mp.weixin.qq.com/s/YzuMtFUE3aw7rRplVzAKmQ
+
+短视频识别，都有那些行业标准？
+
 ## 人脸/行为
 
 http://blog.csdn.net/wangkr111/article/details/44514097

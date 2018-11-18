@@ -148,6 +148,12 @@ $$m=O_{\gamma,\delta}(d)$$
 
 可以看出无论前向搜索，还是后向搜索，其算法复杂度都是$$O(n^2)$$。
 
+参考：
+
+https://mp.weixin.qq.com/s/lbku7wQK1k8nuC2QqIJrug
+
+基于非负谱学习和稀疏回归的双图特征选择算法
+
 ## KL散度
 
 KL散度（Kullback–Leibler divergence）是两个随机分布间距离的度量。其定义如下：

@@ -236,36 +236,6 @@ https://mp.weixin.qq.com/s/Xxi50rDBjrqG-7MIloZMDw
 
 浅谈区块链技术与阿里云的探索实践
 
-# 图像渲染
-
-http://blog.csdn.net/pizi0475/article/details/6650851
-
-全局光照模型与Rendering Equation
-
-https://www.zhihu.com/question/29863225
-
-Ray Tracing，Ray Casting，Path Tracing，Ray Marching 的区别？
-
-https://www.jianshu.com/p/4ec47871973c
-
-Path Tracing介绍
-
-https://mp.weixin.qq.com/s/h-vgHkzLjh9AAa6Z0lZqlg
-
-基于物理渲染(PBR)的车漆技术
-
-https://zhuanlan.zhihu.com/p/32095589
-
-在《硬影像》与罗登老师/导演聊渲染技术
-
-https://blog.csdn.net/jaccen2012/article/details/80328043
-
-跨平台渲染引擎简介
-
-https://www.cnblogs.com/mengdd/p/3237991.html
-
-图形学理论知识BRDF双向反射分布函数（Bidirectional Reflectance Distribution Function）
-
 # 雷达 & 信号处理
 
 https://mp.weixin.qq.com/s/zDcbrZeK4tlO0jA3-s_lYg
@@ -451,3 +421,7 @@ SAR成像原理及图像鉴赏
 https://mp.weixin.qq.com/s/Y4SE6WxEQdWFLZnn83SK_g
 
 自适应天线及其自由度
+
+https://mp.weixin.qq.com/s/JJWnNsYls9lDJFyTKz0jew
+
+干货！差分信号之剖析与探讨

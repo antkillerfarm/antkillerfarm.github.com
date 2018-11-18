@@ -371,15 +371,3 @@ https://mp.weixin.qq.com/s/-NQa2VeuskDx5XN9WMCmPQ
 https://mp.weixin.qq.com/s/8nPfU72WocrDxToG6v5tIA
 
 计算摄影学数据集汇总（一）
-
-https://mp.weixin.qq.com/s/0b0g-IwJVsiKKTY_TLRmZA
-
-1460万个目标检测边界框：谷歌开源Open Images V4数据集
-
-https://blog.csdn.net/fuwenyan/article/details/79224753
-
-服装分类检索识别数据集
-
-https://blog.csdn.net/fuwenyan/article/details/78203803
-
-DeepFashion: 服装公开数据集概述
