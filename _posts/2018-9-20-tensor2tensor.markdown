@@ -384,10 +384,6 @@ https://mp.weixin.qq.com/s/XcqVtFBY5rIn0FgPEx0eTg
 
 工业领域中的AI：BHGE通过使用TensorFlow概率编程工具包开发的基于物理的概率深度学习
 
-https://mp.weixin.qq.com/s?__biz=MzU1OTMyNDcxMQ==&mid=2247484969&idx=1&sn=29d04fbb56a4464b08407eb87d26325e
-
-基于源代码为Raspberry Pi设备构建TensorFlow
-
 https://mp.weixin.qq.com/s/TZMOO_LFCxk297lKNQfvGQ
 
 TensorFlow从基础到实战：一步步教你创建交通标志分类神经网络

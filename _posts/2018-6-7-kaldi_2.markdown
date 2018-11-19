@@ -310,3 +310,11 @@ AI距离匹敌人类大脑还有多远？人工神经网络和生物神经网络
 http://mp.weixin.qq.com/s/UKu9T5zS1Z2dfNB1YsYGkQ
 
 NEAT学习：教机器自我编程
+
+https://mp.weixin.qq.com/s/KX85CCpYrXFOvdTU5Q4Frg
+
+阿里巴巴论文提出针对影视作品的语音情感识别信息融合框架
+
+https://mp.weixin.qq.com/s/XnCBiTqFVDh_4oBZdUoxew
+
+Bengio等提出稀疏注意力回溯：长期依赖关系建模的更一般化机制

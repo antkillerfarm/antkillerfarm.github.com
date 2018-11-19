@@ -392,32 +392,28 @@ https://blog.csdn.net/w174504744/article/details/73187697
 
 ZeroMQ
 
-# 图像渲染
+# TensorFlow
 
-http://blog.csdn.net/pizi0475/article/details/6650851
+https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
 
-全局光照模型与Rendering Equation
+简易浣熊识别器是如何实现的
 
-https://www.zhihu.com/question/29863225
+http://www.jianshu.com/p/d443aab9bcb1
 
-Ray Tracing，Ray Casting，Path Tracing，Ray Marching 的区别？
+在TensorFlow上使用LSTM进行情感分析
 
-https://www.jianshu.com/p/4ec47871973c
+https://mp.weixin.qq.com/s/gW_KX6eF9XEsSUO1UzJ3WQ
 
-Path Tracing介绍
+基于LSTM的情感分析
 
-https://mp.weixin.qq.com/s/h-vgHkzLjh9AAa6Z0lZqlg
+https://mp.weixin.qq.com/s/MT1YaMm4KBWsIZeHehahgw
 
-基于物理渲染(PBR)的车漆技术
+TensorFlow重大升级：自动将Python代码转为TF Graph，大幅简化动态图处理！
 
-https://zhuanlan.zhihu.com/p/32095589
+https://mp.weixin.qq.com/s/zeZs48XbYJGhvOoIysZ8QA
 
-在《硬影像》与罗登老师/导演聊渲染技术
+Docker Compose+GPU+TensorFlow所产生的奇妙火花
 
-https://blog.csdn.net/jaccen2012/article/details/80328043
+https://mp.weixin.qq.com/s/sOggiB57D-ekWOsbL6TY_A
 
-跨平台渲染引擎简介
-
-https://www.cnblogs.com/mengdd/p/3237991.html
-
-图形学理论知识BRDF双向反射分布函数（Bidirectional Reflectance Distribution Function）
+TensorFlow中那些鲜为人知却又极其实用的知识

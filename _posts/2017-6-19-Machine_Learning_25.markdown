@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十五）——Tri-training, 聚类算法, 模仿学习, 强化学习
+title:  机器学习（二十五）——Tri-training, 聚类算法, 压缩感知, 元胞自动机, 线性规划
 category: ML 
 ---
 
@@ -241,59 +241,60 @@ https://mp.weixin.qq.com/s/GlwJhvdzxaRbRE2DhMpBSg
 
 基于动态局部搜索的免疫自动聚类算法
 
-# 模仿学习
+# 压缩感知
 
-https://zhuanlan.zhihu.com/p/27935902
+http://blog.csdn.net/abcjennifer/article/details/7721834
 
-机器人学习Robot Learning之模仿学习Imitation Learning的发展
+初识压缩感知Compressive Sensing
 
-https://zhuanlan.zhihu.com/p/25688750
+http://blog.csdn.net/abcjennifer/article/details/7724360
 
-模仿学习（Imitation Learning）完全介绍
+中国压缩传感资源（China Compressive Sensing Resources）
 
-https://mp.weixin.qq.com/s/naq73D27vsCOUBperKto8A
+http://blog.csdn.net/xiahouzuoxin/article/details/38820925
 
-从监督式到DAgger，综述论文描绘模仿学习全貌
+白话压缩感知（含Matlab代码）
 
-https://mp.weixin.qq.com/s/LNNqp2KsEAljG26hY43mUw
+http://blog.csdn.net/abcjennifer/article/details/7748833
 
-ICML2018 模仿学习教程
+压缩感知进阶——有关稀疏矩阵
 
-# 强化学习
+# 元胞自动机
 
-## 监督学习的局限
+http://www.doc88.com/p-8939046003005.html
 
-举个例子，如果我们想让机器学会开车，一个很直接的想法是观察人类行为，并且模仿人类，在相应观测下做出人类所做行为。这种方法也叫作模仿学习（Imitation Learning）。
+元胞自动机理论及其在计算机仿真模拟中的应用
 
-将这个想法实现起来也很简单，只需要收集该任务的一些观测（路面的画面），以及每个观测人类会做出的反应（转动方向盘），然后像监督学习一样训练一个神经网络，以观测为输入，人类行为为标签，其中行为是离散时是分类任务，连续时是回归任务。
+http://blog.csdn.net/chl033/article/details/5367861
 
-然而这简单的监督学习理论上并不可行，一个直观的原因是由于现实的随机性或者复杂性，使得机器所采用的动作和人类的动作有偏差或者动作所产生的结果有偏差，这样在有偏差的下一状态，机器还会做出有偏差的动作，使得之后状态的偏差积累，导致机器遇到监督学习时没有碰到过的状态，那机器就完全不知道该怎么做了，也就是如下图所示：
+元胞自动机与相关理论和方法
 
-![](/images/img2/RL.png)
+http://blog.csdn.net/deepfuture/article/details/5065284
 
-即使我们可以使用一些算法来改善模仿学习的效果，但模仿学习始终有如下问题：
+元胞自动机
 
-1.需要人类提供的大量数据（尤其是深度学习，需要大量样本）。
+http://www.cnblogs.com/Firefly727/articles/1856328.html
 
-2.人类对一些任务也做的不太好，对于一些复杂任务，人类能做出的动作有限。
+元胞自动机
 
-3.我们希望机器能自动学习，即能不断地在错误中自我完善，而不需要人类的指导。
+# 线性规划
 
-## 概述
+http://www.cnblogs.com/6DAN_HUST/archive/2010/11/11/1874681.html
 
-强化学习是一个多学科交叉的领域。它的主要组成以及和其他学科的关系如下图所示：
+运筹学——线性规划及单纯形法求解
 
-![](/images/article/RL_2.png)
+https://mp.weixin.qq.com/s/2qOjE0B6x9xuyoBw94NqQA
 
-![](/images/article/RL.png)
+线性规划基础
 
-上图是Reinforcement Learning和其他类型算法的关系图。
+https://mp.weixin.qq.com/s/zV6zi79c1Q2dfCaywuK6Pw
 
-![](/images/img2/RL_2.png)
+内点法六十年再回首
 
-不像监督学习，对于每一个样本，都有一个确定的标签与之对应，而强化学习没有标签，只有一个时间延迟的奖励，而且游戏中我们往往牺牲当前的奖励来获取将来更大的奖励。这就是**信用分配问题（Credit Assignment Problem）**，即当前的动作要为将来获得更多的奖励负责。
+https://mp.weixin.qq.com/s/aryMyP0r6vov0pUvkoFYng
 
-而且在我们找到一个策略，让游戏获得不错的奖励时，我们是选择继续坚持当前的策略，还是探索新的策略以求更多的奖励？这就是**探索与开发（Explore-exploit Dilemma）**的问题。
+过去，现在和未来：运筹学为航空业保驾护航
 
-因此，**强化学习某种意义上可看做具有延迟标记信息的监督学习**。
+https://mp.weixin.qq.com/s?__biz=MzUxMTYwMzI0OQ==&mid=2247486937&idx=1&sn=6be69679390f59516ee5f077adb8ccfa
 
+运筹优化的剖析与应用

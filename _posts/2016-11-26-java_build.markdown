@@ -329,10 +329,3 @@ https://mp.weixin.qq.com/s/M7w7tMVd23YToIW7DypYjA
 
 用DL实现Bug自动归类：微软研究院提出DBRNN-A
 
-https://mp.weixin.qq.com/s/KX85CCpYrXFOvdTU5Q4Frg
-
-阿里巴巴论文提出针对影视作品的语音情感识别信息融合框架
-
-https://mp.weixin.qq.com/s/XnCBiTqFVDh_4oBZdUoxew
-
-Bengio等提出稀疏注意力回溯：长期依赖关系建模的更一般化机制

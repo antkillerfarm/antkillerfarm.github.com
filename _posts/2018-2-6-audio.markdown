@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  音频常识, 区块链
+title:  音频常识, 区块链, 通信协议
 category: technology 
 ---
 
@@ -258,3 +258,48 @@ https://mp.weixin.qq.com/s/yyoUoIUBUPV5zkeE88P7Iw
 
 至于比特大陆的AI芯片，似乎对标的是NVIDIA的云服务领域。不是我小看比特大陆，AI芯片这东西光有钱，没有时间积累，是做不好的。
 
+# 通信协议
+
+https://mp.weixin.qq.com/s/_bWOYpZNjA4p7ZWM1J_4mw
+
+通信协议之序列化
+
+https://mp.weixin.qq.com/s/C68icGtwh3IzuUbANaRXEg
+
+也许，这样理解HTTPS更容易
+
+https://mp.weixin.qq.com/s/ewI7sHDFj1AHaNAtBDM8uA
+
+HTTPS到底加密了什么？
+
+https://mp.weixin.qq.com/s/CP_Egs4LUx7I8BXSqrS_dQ
+
+互联网协议入门（一）
+
+https://mp.weixin.qq.com/s/zU1Mw3yaNmk4D5pP9vxxaw
+
+TCP三次握手和SYN攻击
+
+https://mp.weixin.qq.com/s/3VqdjEK4QkER4Q05JgfjhQ
+
+详解TCP之滑动窗口
+
+https://mp.weixin.qq.com/s/yH3PzGEFopbpA-jw4MythQ
+
+TCP三次握手原理，你真的理解吗？
+
+https://mp.weixin.qq.com/s/DDk5YZv9Q7CaqdiKvQxZGQ
+
+从理论到实践，全方位认识DNS（理论篇）
+
+https://mp.weixin.qq.com/s/rZU35kVTXs5ebf7k6lnheQ
+
+从理论到实践，全方位认识DNS（实践篇）
+
+https://mp.weixin.qq.com/s/iN8NQd8SuWL4gCWhRbY6tg
+
+图解基于HTTPS的DNS
+
+https://mp.weixin.qq.com/s/oydBIAEqAswppme6ku70fQ
+
+https加密那点事

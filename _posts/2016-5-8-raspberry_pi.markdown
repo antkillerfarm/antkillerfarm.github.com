@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Raspberry Pi, UPNP（二）, 通信协议
+title:  Raspberry Pi, UPNP（二）
 category: technology 
 ---
 
@@ -211,6 +211,22 @@ https://mp.weixin.qq.com/s/YeoBILcLy2LNzDAnxygKAg
 
 如何手动养成一只“咖啡女仆”？
 
+https://mp.weixin.qq.com/s/CLwGEVgkGk7Zm7Acp8NAmg
+
+树莓派上利用Tensorflow实现小车的自动驾驶
+
+https://mp.weixin.qq.com/s/1wxA7jnCgmXt5j9DXxH1UA
+
+超有趣！手把手教你使用树莓派实现实时人脸检测
+
+https://mp.weixin.qq.com/s/tW54lcv9aRz9xXC9V-DsWw
+
+Keras+树莓派，130行代码找到圣诞老人
+
+https://mp.weixin.qq.com/s?__biz=MzU1OTMyNDcxMQ==&mid=2247484969&idx=1&sn=29d04fbb56a4464b08407eb87d26325e
+
+基于源代码为Raspberry Pi设备构建TensorFlow
+
 # UPNP（二）
 
 ## upnp-inspector
@@ -247,48 +263,3 @@ https://sourceforge.net/projects/libmcupnp/
 
 https://wiki.gnome.org/Projects/GUPnP
 
-# 通信协议
-
-https://mp.weixin.qq.com/s/_bWOYpZNjA4p7ZWM1J_4mw
-
-通信协议之序列化
-
-https://mp.weixin.qq.com/s/C68icGtwh3IzuUbANaRXEg
-
-也许，这样理解HTTPS更容易
-
-https://mp.weixin.qq.com/s/ewI7sHDFj1AHaNAtBDM8uA
-
-HTTPS到底加密了什么？
-
-https://mp.weixin.qq.com/s/CP_Egs4LUx7I8BXSqrS_dQ
-
-互联网协议入门（一）
-
-https://mp.weixin.qq.com/s/zU1Mw3yaNmk4D5pP9vxxaw
-
-TCP三次握手和SYN攻击
-
-https://mp.weixin.qq.com/s/3VqdjEK4QkER4Q05JgfjhQ
-
-详解TCP之滑动窗口
-
-https://mp.weixin.qq.com/s/yH3PzGEFopbpA-jw4MythQ
-
-TCP三次握手原理，你真的理解吗？
-
-https://mp.weixin.qq.com/s/DDk5YZv9Q7CaqdiKvQxZGQ
-
-从理论到实践，全方位认识DNS（理论篇）
-
-https://mp.weixin.qq.com/s/rZU35kVTXs5ebf7k6lnheQ
-
-从理论到实践，全方位认识DNS（实践篇）
-
-https://mp.weixin.qq.com/s/iN8NQd8SuWL4gCWhRbY6tg
-
-图解基于HTTPS的DNS
-
-https://mp.weixin.qq.com/s/oydBIAEqAswppme6ku70fQ
-
-https加密那点事

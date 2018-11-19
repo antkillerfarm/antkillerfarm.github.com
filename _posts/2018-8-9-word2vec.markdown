@@ -336,21 +336,3 @@ https://www.eclipse.org/jetty/
 https://github.com/jasonish/jetty-springmvc-jsp-template
 
 一个Jetty+Spring MVC+JSP的demo。
-
-# 机器人/无人驾驶参考资源
-
-https://mp.weixin.qq.com/s/5TyL9bkKe-XMKLl-QbtaZg
-
-西电智能学子斩获ECCV2018无人机挑战赛冠军—算法分享
-
-https://mp.weixin.qq.com/s/1SxwYqcxB8zIavr11cIGWg
-
-机器学习及深度学习在自动驾驶中的应用
-
-https://mp.weixin.qq.com/s/2gk1xF3lh2ioIGQeY_ZsHQ
-
-highD：德国提出从空中角度测量车辆数据的新方法
-
-https://mp.weixin.qq.com/s/f25RbCRoWT9Ft6m_G3lyvQ
-
-全美225万公里道路没标识？揭开无人车的极端行驶秘籍

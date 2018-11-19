@@ -174,10 +174,6 @@ https://mp.weixin.qq.com/s/I7IUFRVucnJLbGaTqGIXXw
 
 如何使用Keras集成多个卷积网络并实现共同预测
 
-https://mp.weixin.qq.com/s/tW54lcv9aRz9xXC9V-DsWw
-
-Keras+树莓派，130行代码找到圣诞老人
-
 https://mp.weixin.qq.com/s/2jPk3jg7AoNilErAZOaTOQ
 
 输验证码输到崩溃？教你15分钟黑掉全球最流行的验证码插件

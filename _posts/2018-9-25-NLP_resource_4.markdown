@@ -281,3 +281,7 @@ https://mp.weixin.qq.com/s/4qHgIcq9YJTj1iGh7kLB4w
 https://mp.weixin.qq.com/s/kef7F8hlkavvVpD1gQt8hA
 
 几千条文本库也能做机器学习！NLP小数据集训练指南
+
+https://mp.weixin.qq.com/s/jFfGU8yHsNAfDxYnbLPk3Q
+
+基于文本蕴含识别的答案验证技术研究

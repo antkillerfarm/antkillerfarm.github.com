@@ -338,10 +338,6 @@ https://mp.weixin.qq.com/s/u2i1wkxrhVO5J1zV5HlANw
 
 手把手教你实现图像边缘检测！
 
-https://mp.weixin.qq.com/s/1wxA7jnCgmXt5j9DXxH1UA
-
-超有趣！手把手教你使用树莓派实现实时人脸检测
-
 https://mp.weixin.qq.com/s/6J6Rke_zTznSLLQ3IdHzgA
 
 手把手教你搭建目标检测器-附代码

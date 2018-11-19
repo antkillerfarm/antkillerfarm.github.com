@@ -310,3 +310,7 @@ https://mp.weixin.qq.com/s/i4HdS-lCrsv9YR39Hja8ow
 
 深度人脸表情识别技术综述，没有比这更全的了
 
+https://mp.weixin.qq.com/s/JY9WXneps-_tYmYhJAFlTg
+
+人脸识别/人证比对《DocFace+: ID Document to Selfie Matching》论文解读
+

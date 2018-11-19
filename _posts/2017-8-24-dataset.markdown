@@ -282,6 +282,10 @@ https://github.com/fighting41love/funNLP
 
 40个中文NLP词库
 
+https://mp.weixin.qq.com/s/KK7jCN5yN_TOrnNQWLuUNg
+
+CMU多语种语音数据集：700多种语言的语音/文本对齐语料
+
 ## CV
 
 http://www.cvpapers.com/datasets.html

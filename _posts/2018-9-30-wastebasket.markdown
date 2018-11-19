@@ -214,6 +214,18 @@ https://mp.weixin.qq.com/s/EJj7gonRv2607QnYTZWKqQ
 
 笛卡尔！！你……你……你这样泡妞真的好吗？！
 
+http://web.stanford.edu/~tonyfeng/notes
+
+某牛的数学笔记
+
+https://zhuanlan.zhihu.com/p/50206917
+
+数学笔记（Chapter 1-3. 代数和几何的基础）
+
+https://zhuanlan.zhihu.com/p/50311527
+
+数学笔记（Chapter 4-5. 代数几何和分析的基础）
+
 ## LSM (Log Structured Merge)
 
 十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。
@@ -231,64 +243,6 @@ https://mp.weixin.qq.com/s/CmYg22NObamkNOqGjKg0-w
 Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。
 
 >László Bélády，1928年生，匈牙利计算机科学家。Technical University of Budapest本硕。IBM研究员。
-
-## 压缩感知
-
-http://blog.csdn.net/abcjennifer/article/details/7721834
-
-初识压缩感知Compressive Sensing
-
-http://blog.csdn.net/abcjennifer/article/details/7724360
-
-中国压缩传感资源（China Compressive Sensing Resources）
-
-http://blog.csdn.net/xiahouzuoxin/article/details/38820925
-
-白话压缩感知（含Matlab代码）
-
-http://blog.csdn.net/abcjennifer/article/details/7748833
-
-压缩感知进阶——有关稀疏矩阵
-
-## 元胞自动机
-
-http://www.doc88.com/p-8939046003005.html
-
-元胞自动机理论及其在计算机仿真模拟中的应用
-
-http://blog.csdn.net/chl033/article/details/5367861
-
-元胞自动机与相关理论和方法
-
-http://blog.csdn.net/deepfuture/article/details/5065284
-
-元胞自动机
-
-http://www.cnblogs.com/Firefly727/articles/1856328.html
-
-元胞自动机
-
-## 线性规划
-
-http://www.cnblogs.com/6DAN_HUST/archive/2010/11/11/1874681.html
-
-运筹学——线性规划及单纯形法求解
-
-https://mp.weixin.qq.com/s/2qOjE0B6x9xuyoBw94NqQA
-
-线性规划基础
-
-https://mp.weixin.qq.com/s/zV6zi79c1Q2dfCaywuK6Pw
-
-内点法六十年再回首
-
-https://mp.weixin.qq.com/s/aryMyP0r6vov0pUvkoFYng
-
-过去，现在和未来：运筹学为航空业保驾护航
-
-https://mp.weixin.qq.com/s?__biz=MzUxMTYwMzI0OQ==&mid=2247486937&idx=1&sn=6be69679390f59516ee5f077adb8ccfa
-
-运筹优化的剖析与应用
 
 ## 可视化
 

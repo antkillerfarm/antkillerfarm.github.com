@@ -8,7 +8,7 @@ category: resource
 
 由于已经有了强化学习系列blog和资源，因此本资源中不再包含强化学习的内容。但毫无疑问，强化学习才是这方面的主角。
 
-此外，SLAM、Apollo系列也有单独的资源，这里不再列出。
+此外，SLAM、Apollo、传感器系列也有单独的资源，这里不再列出。
 
 ## 行业
 
@@ -214,58 +214,6 @@ https://blog.csdn.net/Shawn_Zhangguang/article/details/78737686
 
 ArUco--一个微型现实增强库的介绍及视觉应用
 
-## 传感器
-
-这里主要讨论自动驾驶方面的传感器，但也包括了一些非自动驾驶类的传感器知识。
-
-https://mp.weixin.qq.com/s/Ee18sjKXNGMowKwqLB0jVg
-
-给自动驾驶一双"通天眼"——环境感知器篇
-
-https://mp.weixin.qq.com/s/dusPUCjKUzhfmTRhzXte-A
-
-新的图像传感器给汽车装上眼睛
-
-https://mp.weixin.qq.com/s/4HNaS8Dpi9pcPzE_nN-BvA
-
-全球12家顶级激光雷达公司解读：谁有机会撼动Velodyne
-
-https://mp.weixin.qq.com/s/Ef6aWgs9xkHaAwTX4rxjKA
-
-用激光雷达感知世界
-
-https://mp.weixin.qq.com/s/45xNWa_32DAsKdlfYY_QfA
-
-Uber自动驾驶撞死行人视频公布：无人车环境感知解决方案该如何优化？
-
-https://mp.weixin.qq.com/s/VBpOwGrTPs0nlmTyXvqDwA
-
-为什么只用摄像头和光学雷达是不够的：我们能从Uber的自动驾驶车致死事件中学到什么
-
-https://mp.weixin.qq.com/s/WiS-iJHA1zoIyb1cvKiuZQ
-
-自动驾驶传感器“一哥之争”，这事儿你怎么看？
-
-https://mp.weixin.qq.com/s/WWm1tkCXVJgdlVbsXCTYIg
-
-自动驾驶汽车硬件系统概述
-
-https://mp.weixin.qq.com/s/C77q2LEA-lMEabtsO30LxQ
-
-自动驾驶需要几个camera
-
-https://mp.weixin.qq.com/s/2-PB-5tTNeGPLPHQBdRwBA
-
-40张动态图详解全部传感器工作原理
-
-https://mp.weixin.qq.com/s/oCEeIM_DhmQ67zT_KLVb7Q
-
-Face ID与3D传感技术科普
-
-https://blog.csdn.net/carson2005/article/details/72972414
-
-光纤陀螺简介
-
 ## 参考
 
 https://rsu.data61.csiro.au/people/jalvarez/research_bbdd.php
@@ -425,3 +373,19 @@ https://mp.weixin.qq.com/s/-dGXe4RuU4w8DN8ffCMiFg
 https://mp.weixin.qq.com/s/YDIoVf20kybu8JEUY3GZWg
 
 Lattice Planner规划算法
+
+https://mp.weixin.qq.com/s/5TyL9bkKe-XMKLl-QbtaZg
+
+西电智能学子斩获ECCV2018无人机挑战赛冠军—算法分享
+
+https://mp.weixin.qq.com/s/1SxwYqcxB8zIavr11cIGWg
+
+机器学习及深度学习在自动驾驶中的应用
+
+https://mp.weixin.qq.com/s/2gk1xF3lh2ioIGQeY_ZsHQ
+
+highD：德国提出从空中角度测量车辆数据的新方法
+
+https://mp.weixin.qq.com/s/f25RbCRoWT9Ft6m_G3lyvQ
+
+全美225万公里道路没标识？揭开无人车的极端行驶秘籍
