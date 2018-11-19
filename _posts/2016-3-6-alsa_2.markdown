@@ -315,12 +315,3 @@ https://blog.csdn.net/jaccen2012/article/details/80328043
 https://www.cnblogs.com/mengdd/p/3237991.html
 
 图形学理论知识BRDF双向反射分布函数（Bidirectional Reflectance Distribution Function）
-
-https://blog.csdn.net/Trent1985
-
-一个滤镜/美颜方面的blog
-
-https://www.zhihu.com/question/29594460
-
-新海诚风格的画面是手绘的还是Photoshop就可以达到的？后期过程是怎样的？
-

@@ -14,7 +14,46 @@ Gatys的方法虽然是里程碑式的进步，但仍然有如下缺点：
 
 2.需要根据风格的不同，调整不同的超参数。换句话说，就是一个Style Transfer的模型就只能用于转换一种Style，通用型不强。
 
+因此，之后的研究主要集中在对这两方面的改进上。针对前者的改进可称作fast style transfer，而后者可称作Universal Style Transfer。
 
+此外，不是所有的style transfer都是DL方法，很多新特效往往还是用传统的滤镜实现的，比如最近比较火的“新海诚风格”。
+
+参考：
+
+https://blog.csdn.net/Trent1985
+
+一个滤镜/美颜方面的blog
+
+https://www.zhihu.com/question/29594460
+
+新海诚风格的画面是手绘的还是Photoshop就可以达到的？后期过程是怎样的？
+
+## fast style transfer
+
+论文：
+
+《Texture Networks: Feed-forward Synthesis of Textures and Stylized Images》
+
+《Perceptual Losses for Real-Time Style Transfer and Super-Resolution》
+
+代码：
+
+https://github.com/OlavHN/fast-neural-style
+
+https://github.com/lengstrom/fast-style-transfer/
+
+
+
+
+参考：
+
+https://blog.csdn.net/Hungryof/article/details/61195783
+
+超越fast style transfer----任意风格图和内容图0.1秒出结果
+
+https://zhuanlan.zhihu.com/p/35798776
+
+快速风格迁移（fast-style-transfer）
 
 ## 参考
 
@@ -61,24 +100,6 @@ https://blog.csdn.net/hungryof/article/details/53981959
 https://blog.csdn.net/Hungryof/article/details/71512406
 
 谈谈图像的style transfer（二）
-
-# fast style transfer
-
-代码：
-
-https://github.com/OlavHN/fast-neural-style
-
-https://github.com/lengstrom/fast-style-transfer/
-
-参考：
-
-https://blog.csdn.net/Hungryof/article/details/61195783
-
-超越fast style transfer----任意风格图和内容图0.1秒出结果
-
-https://zhuanlan.zhihu.com/p/35798776
-
-快速风格迁移（fast-style-transfer）
 
 # 深度图像压缩
 

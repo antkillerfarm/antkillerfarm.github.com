@@ -285,3 +285,7 @@ https://mp.weixin.qq.com/s/kef7F8hlkavvVpD1gQt8hA
 https://mp.weixin.qq.com/s/jFfGU8yHsNAfDxYnbLPk3Q
 
 基于文本蕴含识别的答案验证技术研究
+
+https://mp.weixin.qq.com/s/jBjs5OKZEcfpoYesz6Pk3w
+
+杨振：低资源神经机器翻译
