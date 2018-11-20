@@ -148,6 +148,10 @@ https://mp.weixin.qq.com/s/tTdKqRZqBFxFFiZaDD9AJw
 
 # CNN进阶
 
+http://mp.weixin.qq.com/s/ddTNr-967IahTZ2X1LNSEQ
+
+盘点影响计算机视觉Top100论文：从ResNet到AlexNet
+
 https://mp.weixin.qq.com/s/gwH9s1ggMTj2dJkad9wUuw
 
 从VGG到NASNet，一文概览图像分类网络

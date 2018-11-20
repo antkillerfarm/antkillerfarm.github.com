@@ -357,3 +357,7 @@ One Model To Learn Them All
 https://mp.weixin.qq.com/s/oY2yGrTmIpr3H2qvzYKInA
 
 谷歌一个模型解决所有问题《One Model to Learn Them All》论文深度解读
+
+https://mp.weixin.qq.com/s/VMHyEOn8uyRYt39QXVWUww
+
+西湖大学张岳：自然语言处理中的多任务联合学习（384页PPT）

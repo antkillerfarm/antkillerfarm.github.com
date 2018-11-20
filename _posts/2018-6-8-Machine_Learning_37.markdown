@@ -186,6 +186,10 @@ https://zhuanlan.zhihu.com/p/45298186
 
 Matrix Factorization方法证明总结
 
+https://mp.weixin.qq.com/s/0z4mt8iVk5gLRDwbhznV2g
+
+如何理解深度学习的优化？通过分析梯度下降的轨迹
+
 # 推荐系统进阶
 
 除了《机器学习（十五～十六）》提及的ALS和PCA之外，相关的算法还包括：

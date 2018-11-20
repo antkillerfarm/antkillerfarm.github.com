@@ -327,3 +327,8 @@ https://mp.weixin.qq.com/s/oyWyb58l4ztqIEyrk0g01A
 https://zhuanlan.zhihu.com/p/48186354
 
 robot浅谈
+
+https://mp.weixin.qq.com/s/f-rmdWq3kJUJGhuPwU8JtQ
+
+深度策略梯度算法是真正的策略梯度算法吗？
+

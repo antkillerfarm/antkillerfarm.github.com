@@ -345,9 +345,15 @@ https://mp.weixin.qq.com/s/QAAfjSeZtfd3PSN3wAP8RQ
 
 什么是外部排序？
 
-![](/images/img2/DS.jpg)
+![](/images/img2/DS.png)
 
-![](/images/img2/sort.jpg)
+![](/images/img2/sort.png)
+
+上面两个图的原始地址：
+
+http://bigocheatsheet.com/
+
+该网站还提供了其他关于算法复杂度的资料。
 
 http://blog.csdn.net/u013709270/article/details/53470428
 
@@ -367,7 +373,17 @@ https://mp.weixin.qq.com/s/fP36LYFjAqqfP3rbYxAJlA
 
 ![](/images/img2/sort.gif)
 
-# ML参考资源+
+https://mp.weixin.qq.com/s/FAp10hI05qLLZi5BypondA
+
+除了冒泡排序，你知道Python内建的排序算法吗？
+
+这篇blog其实和Python关系不大，它主要讲述了Timsort排序算法。
+
+>Tim Peters，美国软件工程师。他于2002年在python上实现了Timsort排序算法。该算法后来被诸如Java、Android、GNU Octave等所采用。
+
+早期最好的排序算法是QuickSort，比如C语言库自带的qsort函数，就使用的是该算法。然而它对于倒序数组这种最坏情况的复杂度居然是$$O(n^2)$$。
+
+# ML参考资源
 
 https://mp.weixin.qq.com/s/Sez56UaCAt3Aspn7OTFj_Q
 
@@ -393,46 +409,3 @@ https://mp.weixin.qq.com/s/R7Qud_x6DGqbHAOl7OMruQ
 
 一文带你入门算法分发！
 
-https://mp.weixin.qq.com/s/s2XpGne0sAqnuN-u6g5k1A
-
-资金流因子全面测试兼正交化方法详解
-
-https://mp.weixin.qq.com/s/oblwg01BUIJjVhBeHa9HQQ
-
-程序员分析了50万条拼多多商品数据，告诉你到底是消费升级还是降级！
-
-https://mp.weixin.qq.com/s/4HVkEnk6_hONWJYdi8L53g
-
-闲聊结构化预测（structured learning）
-
-https://mp.weixin.qq.com/s/GP_t_fhklpVNhC6J6i0YbA
-
-再聊聊自然语言处理中的结构化预测问题
-
-https://mp.weixin.qq.com/s/_AHqFqf1zFNtBifayiTfXQ
-
-你应具备这3大统计学常识&大数据思维
-
-https://mp.weixin.qq.com/s/G6-XbqCO5iuwGDen-r6aWg
-
-唐宏:基于概率主题模型的高分辨率遥感图像非监督语义分割
-
-https://mp.weixin.qq.com/s/21LVssq2ynMgp_x1lwSC9w
-
-基于稀疏自表示与模糊双C均值聚类的SAR图像分割
-
-https://mp.weixin.qq.com/s/Oi1yJty_guzTUbRGZ5MuEw
-
-使用高斯过程的因果推理：GP CaKe的基本思路
-
-https://mp.weixin.qq.com/s/vLvjo8Cso_bYEuW-AFoyiA
-
-南大周志华等人提出无组织恶意攻击检测算法UMA
-
-https://mp.weixin.qq.com/s/l4W7qmKJ4Pc-rlF-KvhrPA
-
-机器学习在信用评分卡中的应用
-
-https://mp.weixin.qq.com/s/O3SIexXUeWM1svdI_ygrDg
-
-非精确图匹配方法综述

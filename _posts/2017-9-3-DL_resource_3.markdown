@@ -200,6 +200,22 @@ https://mp.weixin.qq.com/s/e4lK3UoQq-8j1YIWKALBLg
 
 嵌入技术在Dota2人工智能战队OpenAI Five中的应用
 
+https://mp.weixin.qq.com/s/I9gfoCxEYW5lSIy5QGyt6w
+
+2018星际AI大赛（2018.11）冠军诞生！一个个机器学习算法，都输给不会学习的韩国bot
+
+https://github.com/TeamSAIDA/SAIDA
+
+2018.11冠军SAIDA的github
+
+https://github.com/TorchCraft/TorchCraft
+
+2018.11亚军CherryPi的github
+
+https://github.com/bmnielsen/Locutus/
+
+2018.8冠军Locutus的github
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293
@@ -363,27 +379,3 @@ Jeff Dean与David Patterson：不思考体系结构的深度学习研究者不�
 https://mp.weixin.qq.com/s/6zLrWJ4nE0bHFlVe5dMxHw
 
 分布式深度学习新进展：让“分布式”和“深度学习”真正深度融合
-
-https://mp.weixin.qq.com/s/hjC-WTMIpbWWpmXoLBfD2g
-
-腾讯大规模分布式机器学习系统无量是如何进行技术选型的？
-
-https://mp.weixin.qq.com/s/mg-d1W5i9rzaLMNrvq0tSQ
-
-32分钟训练神经机器翻译，速度提升45倍
-
-https://mp.weixin.qq.com/s/iW0k80TUPuWDE9xwHvX91g
-
-为什么你需要Raven：全球首个真正分布式深度学习训练协议
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750181&idx=1&sn=156dac3c5646143fc2577972f1506836
-
-GPU捉襟见肘还想训练大批量模型？谁说不可以
-
-https://mp.weixin.qq.com/s/UbZtUL6Iveb4S3nTU0liGw
-
-深度神经网络的分布式训练概述：常用方法和技巧全面总结
-
-https://mp.weixin.qq.com/s/kLXJsHbBnRIFC3NLChPhzA
-
-如何高效进行大规模分类？港中文联合商汤提出新方法

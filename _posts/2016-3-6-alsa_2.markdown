@@ -315,3 +315,45 @@ https://blog.csdn.net/jaccen2012/article/details/80328043
 https://www.cnblogs.com/mengdd/p/3237991.html
 
 图形学理论知识BRDF双向反射分布函数（Bidirectional Reflectance Distribution Function）
+
+# DL参考资源+
+
+https://mp.weixin.qq.com/s/8xSqmBbaFZ-oww4w-dOmeg
+
+吴恩达对话Hinton、Bengio、Goodfellow
+
+https://zhuanlan.zhihu.com/p/28444154
+
+Seeta看AI：从大数据驱动到X数据驱动
+
+https://zhuanlan.zhihu.com/p/28445169
+
+毕彦超：物体识别与物体知识表征的认知神经基础
+
+https://mp.weixin.qq.com/s/VAEH_241IAuEH5S6H6ep5w
+
+UC伯克利提出新型视觉描述系统，物体描述无需大量样本
+
+https://mp.weixin.qq.com/s/lSd6Gaf9RrmgZCd_EcQQOg
+
+Bengio高徒演讲：深度学习三板斧：网络架构、学习算法和时空层级
+
+https://mp.weixin.qq.com/s/r6Dnv3v6TYwTsAQJTDR0Mg
+
+熬过深宫十几载，深度学习上位这五年
+
+https://mp.weixin.qq.com/s/calUA-Ddq-mq4uHrExtfBQ
+
+实习生通关秘籍：我在谷歌大脑开挂的一年
+
+https://mp.weixin.qq.com/s/jMeTSr1t2Uc-qibNom4AZg
+
+LeCun提出错误编码网络，可在不确定环境中执行时间预测
+
+https://mp.weixin.qq.com/s/LQ3tn4Zxg5obDD_oyEugKQ
+
+为数据集自动生成神经网络：普林斯顿大学提出NeST
+
+https://mp.weixin.qq.com/s/LUAcYoxoYBcDzTqi5bVJTQ
+
+非局部神经网络，打造未来神经网络基本组件

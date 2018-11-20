@@ -6,6 +6,32 @@ category: resource
 
 # DL参考资源
 
+## 并行 & 框架（续）
+
+https://mp.weixin.qq.com/s/hjC-WTMIpbWWpmXoLBfD2g
+
+腾讯大规模分布式机器学习系统无量是如何进行技术选型的？
+
+https://mp.weixin.qq.com/s/mg-d1W5i9rzaLMNrvq0tSQ
+
+32分钟训练神经机器翻译，速度提升45倍
+
+https://mp.weixin.qq.com/s/iW0k80TUPuWDE9xwHvX91g
+
+为什么你需要Raven：全球首个真正分布式深度学习训练协议
+
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750181&idx=1&sn=156dac3c5646143fc2577972f1506836
+
+GPU捉襟见肘还想训练大批量模型？谁说不可以
+
+https://mp.weixin.qq.com/s/UbZtUL6Iveb4S3nTU0liGw
+
+深度神经网络的分布式训练概述：常用方法和技巧全面总结
+
+https://mp.weixin.qq.com/s/kLXJsHbBnRIFC3NLChPhzA
+
+如何高效进行大规模分类？港中文联合商汤提出新方法
+
 ## 实战
 
 http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg
@@ -345,47 +371,3 @@ https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247505558&idx=5&sn=bc37e5
 https://mp.weixin.qq.com/s/ad8iysdj9JeYxC8TcpoJLg
 
 基于网页的图像标注工具——imglab
-
-https://mp.weixin.qq.com/s/_MRPiqt_cR96KQ2lfJVdoA
-
-xlearn:大规模稀疏数据的机器学习库
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750181&idx=2&sn=227bdb9e5166f0b44b478b41a77bbcd5
-
-一个基于PyTorch的目标检测工具箱，商汤联合港中文开源mmdetection
-
-https://mp.weixin.qq.com/s/GTjNToprM2OO7uzSRQXkHw
-
-DeepMind开源强化学习库TRFL，关键算法可编写RL智能体
-
-https://mp.weixin.qq.com/s/PLFxehTAXcehzIrIMRfVpA
-
-强化学习的基石：DeepMind开源框架TRFL
-
-https://mp.weixin.qq.com/s/mmvfSxjtJgx5q6Gm_3xQQw
-
-英特尔重磅开源OpenVINO
-
-https://mp.weixin.qq.com/s/c5rvWfIjujw6TNszDzPMdw
-
-DeepMind开源图深度学习(GraphDL)工具包，基于Tensorflow和Sonnet
-
-https://mp.weixin.qq.com/s/jKIo1SnrbLyPpFhgX--7mg
-
-谷歌推出“流体标注”AI辅助工具，图像标注速度提升3倍！
-
-https://mp.weixin.qq.com/s/30cxIX9aKIpELC8H4_k8Gg
-
-比TFLite快2倍！FB开源移动深度学习优化库QNNPACK
-
-https://mp.weixin.qq.com/s/qT8EhRuVn83OFpy94Ywqiw
-
-HiddenLayer：可视化PyTorch、TensorFlow神经网络图的轻量级工具！
-
-https://mp.weixin.qq.com/s/Tm6fTjXG_7BVc70GROPdag
-
-TensorSpace：超酷炫3D神经网络可视化框架
-
-https://mp.weixin.qq.com/s/Nyb9qTYn5_XFhQPa8KZojw
-
-最新Apache Spark平台的NLP库,助你轻松搞定自然语言处理任务

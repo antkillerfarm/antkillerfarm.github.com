@@ -6,6 +6,52 @@ category: resource
 
 # DL参考资源
 
+## 工具（续）
+
+https://mp.weixin.qq.com/s/_MRPiqt_cR96KQ2lfJVdoA
+
+xlearn:大规模稀疏数据的机器学习库
+
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750181&idx=2&sn=227bdb9e5166f0b44b478b41a77bbcd5
+
+一个基于PyTorch的目标检测工具箱，商汤联合港中文开源mmdetection
+
+https://mp.weixin.qq.com/s/GTjNToprM2OO7uzSRQXkHw
+
+DeepMind开源强化学习库TRFL，关键算法可编写RL智能体
+
+https://mp.weixin.qq.com/s/PLFxehTAXcehzIrIMRfVpA
+
+强化学习的基石：DeepMind开源框架TRFL
+
+https://mp.weixin.qq.com/s/mmvfSxjtJgx5q6Gm_3xQQw
+
+英特尔重磅开源OpenVINO
+
+https://mp.weixin.qq.com/s/c5rvWfIjujw6TNszDzPMdw
+
+DeepMind开源图深度学习(GraphDL)工具包，基于Tensorflow和Sonnet
+
+https://mp.weixin.qq.com/s/jKIo1SnrbLyPpFhgX--7mg
+
+谷歌推出“流体标注”AI辅助工具，图像标注速度提升3倍！
+
+https://mp.weixin.qq.com/s/30cxIX9aKIpELC8H4_k8Gg
+
+比TFLite快2倍！FB开源移动深度学习优化库QNNPACK
+
+https://mp.weixin.qq.com/s/qT8EhRuVn83OFpy94Ywqiw
+
+HiddenLayer：可视化PyTorch、TensorFlow神经网络图的轻量级工具！
+
+https://mp.weixin.qq.com/s/Tm6fTjXG_7BVc70GROPdag
+
+TensorSpace：超酷炫3D神经网络可视化框架
+
+https://mp.weixin.qq.com/s/Nyb9qTYn5_XFhQPa8KZojw
+
+最新Apache Spark平台的NLP库,助你轻松搞定自然语言处理任务
+
 ## gcForest
 
 http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw
@@ -142,6 +188,14 @@ https://mp.weixin.qq.com/s/uI5gUGtiR8VDXreU4YEZYA
 
 MILA提出防御增强型网络：简单修改已有网络即可提升防攻击能力
 
+https://mp.weixin.qq.com/s/Ffaotx83qRJS1s-bbMt1UA
+
+一点微小的扰动，就可能导致深度神经网络做出错误判断
+
+https://mp.weixin.qq.com/s/tXr9NhVfBSvI5pduziIECQ
+
+基于深度学习的二进制恶意样本检测
+
 ## 行业
 
 李开复的这篇文章不可不读：
@@ -275,58 +329,6 @@ https://mp.weixin.qq.com/s/lEaq8NylJG4bUY2YupZh0g
 5秒钟内将手绘网站线框图转换为可用的HTML网站
 
 ## 参考
-
-https://mp.weixin.qq.com/s/8xSqmBbaFZ-oww4w-dOmeg
-
-吴恩达对话Hinton、Bengio、Goodfellow
-
-https://zhuanlan.zhihu.com/p/28444154
-
-Seeta看AI：从大数据驱动到X数据驱动
-
-https://zhuanlan.zhihu.com/p/28445169
-
-毕彦超：物体识别与物体知识表征的认知神经基础
-
-https://mp.weixin.qq.com/s/VAEH_241IAuEH5S6H6ep5w
-
-UC伯克利提出新型视觉描述系统，物体描述无需大量样本
-
-https://mp.weixin.qq.com/s/lSd6Gaf9RrmgZCd_EcQQOg
-
-Bengio高徒演讲：深度学习三板斧：网络架构、学习算法和时空层级
-
-http://mp.weixin.qq.com/s/ddTNr-967IahTZ2X1LNSEQ
-
-盘点影响计算机视觉Top100论文：从ResNet到AlexNet
-
-https://mp.weixin.qq.com/s/r6Dnv3v6TYwTsAQJTDR0Mg
-
-熬过深宫十几载，深度学习上位这五年
-
-https://mp.weixin.qq.com/s/calUA-Ddq-mq4uHrExtfBQ
-
-实习生通关秘籍：我在谷歌大脑开挂的一年
-
-https://mp.weixin.qq.com/s/Ffaotx83qRJS1s-bbMt1UA
-
-一点微小的扰动，就可能导致深度神经网络做出错误判断
-
-https://mp.weixin.qq.com/s/jMeTSr1t2Uc-qibNom4AZg
-
-LeCun提出错误编码网络，可在不确定环境中执行时间预测
-
-https://mp.weixin.qq.com/s/tXr9NhVfBSvI5pduziIECQ
-
-基于深度学习的二进制恶意样本检测
-
-https://mp.weixin.qq.com/s/LQ3tn4Zxg5obDD_oyEugKQ
-
-为数据集自动生成神经网络：普林斯顿大学提出NeST
-
-https://mp.weixin.qq.com/s/LUAcYoxoYBcDzTqi5bVJTQ
-
-非局部神经网络，打造未来神经网络基本组件
 
 https://mp.weixin.qq.com/s/Ji3dTs0lMjLLR5Oxbsr3Vg
 

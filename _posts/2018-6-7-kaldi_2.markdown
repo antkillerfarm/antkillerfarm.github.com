@@ -293,7 +293,11 @@ https://mp.weixin.qq.com/s/xYNCKy36n8CoaGzABlI5Wg
 
 从零开始用python搭建推荐引擎
 
-# DL参考资源+
+https://mp.weixin.qq.com/s/vAn_rnUt036-3jy7ZahF8w
+
+文本挖掘，带你看金庸笔下不一样的恩怨情仇
+
+# DL参考资源
 
 https://mp.weixin.qq.com/s/oltHCTombWE2WP_zbbOr3A
 
