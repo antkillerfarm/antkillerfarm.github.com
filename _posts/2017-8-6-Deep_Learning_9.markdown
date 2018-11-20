@@ -6,7 +6,57 @@ category: DL
 
 # CNN进化史
 
-## 参考（续）
+## 总结（续）
+
+第五步的相似度（或距离测度）的计算方法存在一定的争议。我认为特征提取的过程已经通过损失函数暗含了距离测度的计算，所以深度特征提取与深度测度学习有一定的等价性。但也有不少学者在研究特征之间距离测度的学习，乃至于省略掉特征提取，直接学习输入两张人脸图片时的距离测度。
+
+总体来说，深度学习的引入体现了端到端、数据驱动的思想：**尽可能少地对流程进行干预、尽可能少地做人为假设。**
+
+## 参考
+
+http://mp.weixin.qq.com/s/ZKMi4gRfDRcTxzKlTQb-Mw
+
+计算机视觉识别简史：从AlexNet、ResNet到Mask RCNN
+
+http://mp.weixin.qq.com/s/kbHzA3h-CfTRcnkViY37MQ
+
+详解CNN五大经典模型:Lenet，Alexnet，Googlenet，VGG，DRL
+
+https://zhuanlan.zhihu.com/p/22094600
+
+Deep Learning回顾之LeNet、AlexNet、GoogLeNet、VGG、ResNet
+
+https://mp.weixin.qq.com/s/28GtBOuAZkHs7JLRVLlSyg
+
+深度卷积神经网络演化历史及结构改进脉络
+
+http://www.leiphone.com/news/201609/303vE8MIwFC7E3DB.html
+
+Google最新开源Inception-ResNet-v2，借助残差网络进一步提升图像分类水准
+
+https://mp.weixin.qq.com/s/x3bSu9ecl3dldCbvS1rT1g
+
+站在巨人的肩膀上，深度学习的9篇开山之作
+
+http://mp.weixin.qq.com/s/2TUw_2d36uFAiJTkvaaqpA
+
+解读Keras在ImageNet中的应用：详解5种主要的图像识别模型
+
+https://zhuanlan.zhihu.com/p/27642620
+
+YJango的卷积神经网络——介绍
+
+https://www.zybuluo.com/coolwyj/note/202469
+
+ImageNet Classification with Deep Convolutional Neural Networks
+
+http://simtalk.cn/2016/09/20/AlexNet/
+
+AlexNet简介
+
+http://simtalk.cn/2016/09/12/CNNs/
+
+CNN简介
 
 https://mp.weixin.qq.com/s/I94gGXXW_eE5hSHIBOsJFQ
 
@@ -195,90 +245,3 @@ $$G(X,\theta)$$希望它生成的样本越接近真实样本越好，因此这�
 $$\begin{aligned}\theta =& \mathop{\arg\min}_{\theta} L_2\\ 
 =&\mathop{\arg\min}_{\theta} \frac{1}{B}\sum_{i=1}^B\left[D\Big(G(x_i,\theta),\Theta\Big)\right]\end{aligned}$$
 
-## Lipschitz约束
-
-稍微思考一下，我们就发现，问题还没完。我们目前还没有对D做约束，不难发现，无约束的话Loss基本上会直接跑到负无穷去了～
-
-最简单的方案就是采用Lipschitz约束：
-
-$$\| D(y,\theta) - D(y' , \theta) \| \leq C \|y-y'\|$$
-
-也可写作：
-
-$$\left\| \frac{\partial D(y,\Theta)}{\partial y}\right\| \leq C$$
-
-## WGAN
-
-KL散度和JS散度由于不是距离，数学特性并不够好。因此，Martín Arjovsky于2017年1月，提出了Wasserstein GAN。
-
-其中的一项改进就是使用Wasserstein距离替代KL散度和JS散度。Wasserstein距离的定义参看《机器学习（二十）》。
-
-WGAN极大程度的改善了GAN训练困难的问题，成为当前GAN研究的主流。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/25071913
-
-令人拍案叫绝的Wasserstein GAN
-
-## 参考
-
-https://mp.weixin.qq.com/s/xa3F3kCprE6DEQclas4umg
-
-GAN的数学原理
-
-http://www.jianshu.com/p/e2d2d7cbbe49
-
-50行代码实现GAN
-
-https://mp.weixin.qq.com/s/pgWysIGObceGVrxs85kyew
-
-白话生成对抗网络GAN，50行代码玩转GAN模型！
-
-https://mp.weixin.qq.com/s/YnOF9CCUFvtaiTY8HXYOuw
-
-深入浅出：GAN原理与应用入门介绍
-
-http://blog.csdn.net/u011534057/article/category/6396518
-
-GAN系列blog
-
-https://mp.weixin.qq.com/s/f93aCYrxlBFhRn0bgPDiTg
-
-微软剑桥研究院153页最新GAN教程
-
-https://mp.weixin.qq.com/s/4CypEZscTfmUzOk-p_rZog
-
-生成对抗网络初学入门：一文读懂GAN的基本原理
-
-http://mp.weixin.qq.com/s/bzwG0QxnP2drqS4RwcZlBg
-
-微软详解：到底什么是生成式对抗网络GAN？
-
-https://mp.weixin.qq.com/s/GobKiuxgZv0-ufSRBpTcIA
-
-Ian Goodfellow ICCV2017演讲：解读GAN的原理与应用
-
-https://mp.weixin.qq.com/s/NDZPPA-0FhqSzRndQOhNEw
-
-Google GAN之父Ian Goodfellow 最新演讲：生成对抗网络介绍
-
-https://mp.weixin.qq.com/s/TIgRVbnZYtrGUCDNLcL1uw
-
-GAN的入门与实践
-
-https://mp.weixin.qq.com/s/er-VG1P8iNIcQew2gXZqGw
-
-一文读懂生成对抗网络
-
-https://mp.weixin.qq.com/s/BNWPTPl_vowAlQUQ7__wvQ
-
-有三说GANs
-
-https://mp.weixin.qq.com/s/QacQCrjh3KmrQSMp-G_rEg
-
-贝叶斯生成对抗网络
-
-https://zhuanlan.zhihu.com/p/24897387
-
-GAN的基本原理、应用和走向

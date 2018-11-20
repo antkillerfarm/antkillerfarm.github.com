@@ -1,12 +1,98 @@
 ---
 layout: post
-title:  深度学习（十）——fine-tuning, 李飞飞, 花式卷积
+title:  深度学习（十）——fine-tuning, 花式卷积
 category: DL 
 ---
 
 # GAN
 
-## 参考（续）
+## Lipschitz约束
+
+稍微思考一下，我们就发现，问题还没完。我们目前还没有对D做约束，不难发现，无约束的话Loss基本上会直接跑到负无穷去了～
+
+最简单的方案就是采用Lipschitz约束：
+
+$$\| D(y,\theta) - D(y' , \theta) \| \leq C \|y-y'\|$$
+
+也可写作：
+
+$$\left\| \frac{\partial D(y,\Theta)}{\partial y}\right\| \leq C$$
+
+## WGAN
+
+KL散度和JS散度由于不是距离，数学特性并不够好。因此，Martín Arjovsky于2017年1月，提出了Wasserstein GAN。
+
+其中的一项改进就是使用Wasserstein距离替代KL散度和JS散度。Wasserstein距离的定义参看《机器学习（二十）》。
+
+WGAN极大程度的改善了GAN训练困难的问题，成为当前GAN研究的主流。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/25071913
+
+令人拍案叫绝的Wasserstein GAN
+
+## 参考
+
+https://mp.weixin.qq.com/s/xa3F3kCprE6DEQclas4umg
+
+GAN的数学原理
+
+http://www.jianshu.com/p/e2d2d7cbbe49
+
+50行代码实现GAN
+
+https://mp.weixin.qq.com/s/pgWysIGObceGVrxs85kyew
+
+白话生成对抗网络GAN，50行代码玩转GAN模型！
+
+https://mp.weixin.qq.com/s/YnOF9CCUFvtaiTY8HXYOuw
+
+深入浅出：GAN原理与应用入门介绍
+
+http://blog.csdn.net/u011534057/article/category/6396518
+
+GAN系列blog
+
+https://mp.weixin.qq.com/s/f93aCYrxlBFhRn0bgPDiTg
+
+微软剑桥研究院153页最新GAN教程
+
+https://mp.weixin.qq.com/s/4CypEZscTfmUzOk-p_rZog
+
+生成对抗网络初学入门：一文读懂GAN的基本原理
+
+http://mp.weixin.qq.com/s/bzwG0QxnP2drqS4RwcZlBg
+
+微软详解：到底什么是生成式对抗网络GAN？
+
+https://mp.weixin.qq.com/s/GobKiuxgZv0-ufSRBpTcIA
+
+Ian Goodfellow ICCV2017演讲：解读GAN的原理与应用
+
+https://mp.weixin.qq.com/s/NDZPPA-0FhqSzRndQOhNEw
+
+Google GAN之父Ian Goodfellow 最新演讲：生成对抗网络介绍
+
+https://mp.weixin.qq.com/s/TIgRVbnZYtrGUCDNLcL1uw
+
+GAN的入门与实践
+
+https://mp.weixin.qq.com/s/er-VG1P8iNIcQew2gXZqGw
+
+一文读懂生成对抗网络
+
+https://mp.weixin.qq.com/s/BNWPTPl_vowAlQUQ7__wvQ
+
+有三说GANs
+
+https://mp.weixin.qq.com/s/QacQCrjh3KmrQSMp-G_rEg
+
+贝叶斯生成对抗网络
+
+https://zhuanlan.zhihu.com/p/24897387
+
+GAN的基本原理、应用和走向
 
 https://mp.weixin.qq.com/s/YUMIL-f019vKpQ84mKS-8g
 
@@ -154,66 +240,6 @@ https://zhuanlan.zhihu.com/p/37341493
 
 基于Pre-trained模型加速模型学习的6点建议
 
-# 李飞飞
-
-## AI大佬
-
-李飞飞是吴恩达之后的华裔AI新大佬。巧合的是，他们都是斯坦福AP+AI lab的主任，只不过吴是李的前任而已。
-
-**李飞飞（Fei-Fei Li）**，1976年生，成都人，16岁移民美国。普林斯顿大学本科（1995～1999）+加州理工学院博士（2001～2005）。先后执教于UIUC、普林斯顿、斯坦福等学校。
-
-个人主页：
-
-http://vision.stanford.edu/feifeili/
-
-她的老公Silvio Savarese，也是斯坦福的AP。
-
-## 大佬的门徒
-
-比如可爱的妹子**Serena Yeung**。这个妹子是斯坦福的本硕博。出身不详，但从姓名的英文拼法来看，应该是美国土生的华裔。Yeung是杨、阳、羊等姓的传统英文拼法，但显然不是大陆推行的拼音拼法。（可以对比的是Fei-Fei Li和Bruce Lee，对于同一个姓的不同拼法。）
-
-个人主页：
-
-http://ai.stanford.edu/~syyeung/
-
-还有当红的“辣子鸡”：**Andrej Karpathy**，多伦多大学本科（2009）+英属不列颠哥伦比亚大学硕士（2011）+斯坦福博士（2015）。现任特斯拉AI总监。
-
-吐槽一下：英属不列颠哥伦比亚大学其实是加拿大的一所大学。
-
-个人主页：
-
-http://cs.stanford.edu/people/karpathy/
-
-Andrej Karpathy建了一个检索arxiv的网站，主要搜集了近3年来的ML/DL领域的论文。网址：
-
-http://www.arxiv-sanity.com/
-
-**李佳（Jia Li）**，李飞飞的开山大弟子，追随她从UIUC、普林斯顿到斯坦福。目前又追随其到Google。大约是知道自己的名字是个大路货，她的笔名叫做Li-Jia Li。
-
-个人主页：
-
-http://vision.stanford.edu/lijiali/
-
-## 学神
-
-应该说李飞飞和吴恩达都是万里挑一的超卓人物，但是和学神还是有所差距。下面是两个80后的华裔学神，他们都已经是正教授了：
-
-**尹希**，1983年生，哈佛大学物理系教授。
-
-**张锋**，1982年生，MIT教授，生物学家。
-
-这两个人都是有机会挑战诺奖的人，而李和吴暂时还没有这个可能性。
-
-## 网红
-
-这里收录了一些非李飞飞门下的AI网红。
-
-**Zachary Chase Lipton**，1985年生，哥伦比亚大学本科+UCSD博士，CMU的AP。他的另一身份——Jazz歌手，可比他的学术成就知名多了。
-
-个人主页：
-
-http://zacklipton.com/
-
 # 花式卷积
 
 在DL中，卷积实际上是一大类计算的总称。除了原始的卷积、反卷积（Deconvolution）之外，还有各种各样的花式卷积。
@@ -282,13 +308,8 @@ Paper笔记：Dilated Residual Networks
 
 《ShuffleNet: An Extremely Efficient Convolutional Neural Network for Mobile Devices》
 
-无论是在Inception、DenseNet或者ShuffleNet里面，我们对所有通道产生的特征都是不分权重直接结合的，那为什么要认为所有通道的特征对模型的作用就是相等的呢？这是一个好问题，于是，ImageNet2017冠军SEnet就出来了。
-
-论文：
-
-《Squeeze-and-Excitation Networks》
-
 ![](/images/img2/ShuffleNet_2.png)
 
 上图是ShuffleNet的Unit结构图，DWConv表示depthwise convolution，GConv表示pointwise group convolution。a是普通的Deep Residual Unit，b的进化用以提高精度，c的进一步进化用以减少计算量。
 
+无论是在Inception、DenseNet或者ShuffleNet里面，我们对所有通道产生的特征都是不分权重直接结合的，那为什么要认为所有通道的特征对模型的作用就是相等的呢？这是一个好问题，于是，ImageNet2017冠军SEnet就出来了。

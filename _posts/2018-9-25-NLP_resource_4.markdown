@@ -289,3 +289,7 @@ https://mp.weixin.qq.com/s/jFfGU8yHsNAfDxYnbLPk3Q
 https://mp.weixin.qq.com/s/jBjs5OKZEcfpoYesz6Pk3w
 
 杨振：低资源神经机器翻译
+
+https://zhuanlan.zhihu.com/p/50349824
+
+利用词向量和WordNet识别和解释隐喻词

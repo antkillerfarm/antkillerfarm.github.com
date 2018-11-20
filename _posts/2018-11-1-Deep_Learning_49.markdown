@@ -218,6 +218,10 @@ https://zhuanlan.zhihu.com/p/48192930
 
 Object-Part Attention Model for FGVC
 
+https://mp.weixin.qq.com/s/slmod5rW4qRhxGnbNN2J8g
+
+双线性汇合(bilinear pooling)在细粒度图像分析及其他领域的进展综述
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：

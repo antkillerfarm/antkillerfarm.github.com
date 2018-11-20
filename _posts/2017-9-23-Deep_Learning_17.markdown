@@ -28,6 +28,10 @@ YOLO的caffe版本有很多（当然都是非官方的），这里推荐：
 
 https://github.com/yeahkun/caffe-yolo
 
+有个叫做darkflow的项目，可以用于将darknet模型转换成tensorflow模型：
+
+https://github.com/thtrieu/darkflow
+
 ## 概述
 
 从R-CNN到Fast R-CNN一直采用的思路是proposal+分类（proposal提供位置信息，分类提供类别信息），这也被称作two-stage cascade。

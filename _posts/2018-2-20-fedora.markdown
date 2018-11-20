@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Fedora, CentOS, Blog维护日志
+title:  Fedora, CentOS, Blog维护日志, 数据库（二）
 category: linux 
 ---
 
@@ -187,28 +187,90 @@ Install TightVNC Server in RHEL/CentOS and Fedora to Access Remote Desktops
 
 2014.12.23 围观大徐的blog有感，特在github上安家落户，废弃了原来的搜狐blog。
 
-# 世说新语
+# 数据库
 
-## 2018.11（续）
+## 参考
 
-今天，浏览Stanford数学系的网站，然后发现了这个：
+https://blog.csdn.net/zhengzhb/article/details/8590390
 
-Robin Li and Melissa Ma Science Library
+SQL查找删除重复行
 
-没错，就是百度的那位大佬。
+https://mp.weixin.qq.com/s/09BlPee0-kP-At2aDyDbMw
 
-----
+中国数据库40年历史：隐秘的江湖与恩怨
 
-该诉状指出，王永铭在离职前，用公司配发的电脑下载免费软体CCleaner，将相关使用纪录都清除，然后再将电脑还给公司。
+https://mp.weixin.qq.com/s/4lZ7My6cs4-VJQ1qGhQxZg
 
-但他可能没想到，这个软体，可能没有他想像的那么好用。
+AliSQL X-Cluste：基于X-Paxos的高性能强一致MySQL数据库
 
-事实上，事后美光还是还原出他在离职前几个月使用电脑的多数动作，包括从公司下载多笔机密档案到随身碟，以及离职前的4月23日当天，他在Google输入一连串查询“如何清除电脑使用纪录”，以及安装CCleaner整个过程，都还原出来，并成为日后起诉他的罪证。
+https://mp.weixin.qq.com/s/tPzBlQGxGq1WEnXz5ggpxg
 
-国内顶尖的数位鉴识专家、鉴真数位总经理黄敬博解释，CCleaner虽宣称可清除浏览纪录、暂存档，但没做进一步覆写动作，只要受过专业训练的人员，都能用特殊工具复原被消除的电脑档案，“只要没有覆写，资料都有机会救回来”。
+sysbench在美团点评中的应用
 
-----
+https://mp.weixin.qq.com/s/lJfIkLQaZnN4e9DxX163SA
 
-https://www.zhihu.com/question/301975676
+一款可能解放DBA的分布式数据库RadonDB的体验之旅
 
-北美印第安部落真的会收养白人小孩并培养为战士吗？
+http://mp.weixin.qq.com/s/idz6b2rls97W4Iw6J-ubng
+
+美团点评SQL优化工具SQLAdvisor开源
+
+https://mp.weixin.qq.com/s/jCFjhkwQpj1_P-seQurPqQ
+
+SQL解析在美团点评中的应用
+
+https://mp.weixin.qq.com/s/RME5b3plT97nYfUaCl9ePw
+
+关于缓存和数据库强一致的可行方案
+
+https://mp.weixin.qq.com/s/Al0yvkv0FUPjEBtcxS6Fmg
+
+传统数据仓库和云数据仓库的区别
+
+https://mp.weixin.qq.com/s/GXGSDxukbIAM5W-YSX0pDg
+
+美团点评数据库高可用架构的演进与设想
+
+https://mp.weixin.qq.com/s/crluKkEdvfZlHyF_gQm1ZA
+
+漫谈推荐系统及数据库技术
+
+https://mp.weixin.qq.com/s/CwUW-Ntb4qphrqha24P-Og
+
+漫谈推荐系统及数据库技术（二）——分布式数据库技术
+
+https://mp.weixin.qq.com/s/1pXMCcO6NR1SMBzsyES-cw
+
+分布式数据库又支持关系数据模型了？
+
+https://mp.weixin.qq.com/s/yQSMSLBYg4iauu8yeUfvjw
+
+深度解读！时序数据库HiTSDB：分布式流式聚合引擎
+
+https://mp.weixin.qq.com/s/WQh-Ro03e9F1Yrhk0tTZ0A
+
+图解SQL的JOIN
+
+https://mp.weixin.qq.com/s/NbV76hDZXKzvark4JEoyMA
+
+我是如何用2个Unix命令给SQL提速的
+
+https://mp.weixin.qq.com/s/gQAA2-YuvTHrL2IP8Bco6w
+
+缓存与数据库的数据一致性方案介绍
+
+https://mp.weixin.qq.com/s/m76PFxbcY6_-XyeU7uu4Jg
+
+数据库的最简单实现
+
+https://mp.weixin.qq.com/s/rZuGW9Fe0TA3dNEY7dh_Jg
+
+TimescaleDB比拼InfluxDB：如何选择合适的时序数据库？
+
+https://mp.weixin.qq.com/s/pZnAcjFlBM2I4Hyctd6MHw
+
+图数据库真的比关系数据库更先进吗？
+
+https://mp.weixin.qq.com/s/O3A5gVewRQ11Z8RdPcs-9w
+
+一文看懂Pinterest如何构建时间序列数据库系统Goku

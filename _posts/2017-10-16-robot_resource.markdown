@@ -92,6 +92,10 @@ https://mp.weixin.qq.com/s/T7wI4cjKbciYC3ZNxKfReA
 
 143页 MIT自动驾驶算法地图推理教程
 
+http://abcinstitute.baidu.com/pages/index.html#/specialInfo?specialId=4008
+
+百度的自动驾驶课程
+
 ## 自动驾驶入门课程
 
 https://mp.weixin.qq.com/s/yO_Lc5Fo-8fBC9PwVCQBqA

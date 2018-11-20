@@ -4,7 +4,29 @@ title:  深度学习（十五）——深度图像压缩, 人脸检测/识别（
 category: DL 
 ---
 
-# Style Transfer（续）
+# Style Transfer
+
+## Cost Function（续）
+
+若C和G在l层的激活函数输出$$a^{[l](C)}$$与$$a^{[l](G)}$$，则相应的$$J_{content}(C,G)$$的表达式为：
+
+$$J_{content}(C,G)=\frac12||a^{[l](C)}-a^{[l](G)}||^2$$
+
+接下来，我们定义图片的风格矩阵（style matrix）为：
+
+$$G_{kk'}^{[l]}=\sum_{i=1}^{n_H^{[l]}}\sum_{j=1}^{n_W^{[l]}}a_{ijk}^{[l]}a_{ijk'}^{[l]}$$
+
+风格矩阵$$G_{kk'}^{[l]}$$计算第l层隐藏层不同通道对应的所有激活函数输出和。若两个通道之间相似性高，则对应的$$G_{kk'}^{[l]}$$较大。从数学的角度来说，这里的风格矩阵实际上就是两个tensor的**互相关矩阵**。
+
+Gram矩阵描述的是全局特征的自相关，如果输出图与风格图的这种自相关相近，那么差不多是我们所理解的”风格”。当然，其实也可以用很多其他的统计信息进行描绘风格。比如有用直方图的, 甚至还可以直接简化成”均值+方差”的。
+
+风格矩阵$$G_{kk'}^{[l][S]}$$表征了风格图片S第l层隐藏层的“风格”。相应地，生成图片G也有$$G_{kk'}^{[l][G]}$$。那么，$$G_{kk'}^{[l][S]}$$与$$G_{kk'}^{[l][G]}$$越相近，则表示G的风格越接近S。这样，我们就可以定义出$$J^{[l]}_{style}(S,G)$$的表达式：
+
+$$J^{[l]}_{style}(S,G)=\frac{1}{(2n_H^{[l]}n_W^{[l]}n_C^{[l]})}\sum_{k=1}^{n_C^{[l]}}\sum_{k'=1}^{n_C^{[l]}}||G_{kk'}^{[l][S]}-G_{kk'}^{[l][G]}||^2$$
+
+为了提取的“风格”更多，也可以使用多层隐藏层，然后相加，表达式为：
+
+$$J_{style}(S,G)=\sum_l\lambda^{[l]}\cdot J^{[l]}_{style}(S,G)$$
 
 ## 缺点
 
@@ -206,6 +228,10 @@ http://blog.csdn.net/shuzfan/article/details/52668935
 https://mp.weixin.qq.com/s/IrZEQ69RNUdcs0Fl8fHmmQ
 
 如何应用MTCNN和FaceNet模型实现人脸检测及识别
+
+https://mp.weixin.qq.com/s/NfqFj5iCIkbRD34Eu2Lb5g
+
+MTCNN实时人脸检测网络详解与代码演示
 
 # 深度贝叶斯学习
 

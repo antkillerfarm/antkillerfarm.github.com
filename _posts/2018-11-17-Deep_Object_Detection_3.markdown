@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（三）——Fast R-CNN, YOLOv3, 目标检测进阶
+title:  深度目标检测（三）——Fast R-CNN, Faster R-CNN
 category: Deep Object Detection 
 ---
 
@@ -76,170 +76,153 @@ http://blog.csdn.net/shenxiaolu1984/article/details/51036677
 
 Fast RCNN算法详解
 
-# YOLOv3
+# Faster R-CNN
 
-https://zhuanlan.zhihu.com/p/34945787
+Faster-RCNN是任少卿2016年在MSRA提出的新算法。Ross Girshick和何恺明也是论文的作者之一。
 
-YOLOv3：An Incremental Improvement全文翻译
+>注：任少卿，中科大本科（2011年）+博士（2016年）。Momenta联合创始人+技术总监。   
+>个人主页：   
+>http://shaoqingren.com/
 
-https://mp.weixin.qq.com/s/UWuCiV6dBk9Z0XusEBS6-g
+论文：
 
-物体检测经典模型YOLO新升级，就看一眼，速度提升3倍！
+《Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks》
 
-https://mp.weixin.qq.com/s/BF7mj-_D303cLiD5e6oy6w
+代码：
 
-期待已久的—YOLO V3
+https://github.com/ShaoqingRen/faster_rcnn
 
-https://mp.weixin.qq.com/s/-Ixqxx6QGJDTM4g50y6LyA
+https://github.com/rbgirshick/py-faster-rcnn
 
-进击的YOLOv3，目标检测网络的巅峰之作
+![](/images/article/faster_rcnn_p_2.png)
 
-https://zhuanlan.zhihu.com/p/46691043
+上图是Faster R-CNN的结构图。
 
-YOLO v1深入理解
+Fast R-CNN尽管已经很优秀了，然而还有一个最大的问题在于：proposal阶段没有整合到CNN中。
 
-https://zhuanlan.zhihu.com/p/47575929
+这个问题带来了两个不良影响：
 
-YOLOv2 / YOLO9000深入理解
+1.非end-to-end模型导致程序流程比较复杂。
 
-https://zhuanlan.zhihu.com/p/49556105
+2.随着后续CNN步骤的简化，生成2k个候选bbox的Selective Search算法成为了整个计算过程的性能瓶颈。（无法利用GPU）
 
-YOLO v3深入理解
+## Region Proposal Networks
 
-https://mp.weixin.qq.com/s/xNaXPwI1mQsJ2Y7TT07u3g
+Faster R-CNN最重要的改进就是使用区域生成网络（Region Proposal Networks）替换Selective Search。因此，faster RCNN也可以简单地看做是“**RPN+fast RCNN**”。
 
-YOLO-LITE:专门面向CPU的实时目标检测
+![](/images/article/rpn.png)
 
-https://zhuanlan.zhihu.com/p/50170492
+上图是RPN的结构图。和SPPNet的ROI映射做法类似，RPN直接在feature map，而不是原图像上，生成区域。
 
-重磅！YOLO-LITE来了
+由于Faster R-CNN最后会对bbox位置进行精调，因此这里生成区域的时候，只要大致准确即可。
 
-# 目标检测进阶
+![](/images/article/rpn_feature_map.png)
 
-## CornerNet
+由于CNN所生成的feature map的尺寸，通常小于原图像。因此将feature map的点映射回原图像，就变成了上图所示的稀疏网点。这些网点也被称为原图感受野的中心点。
 
-https://mp.weixin.qq.com/s/e74-zFcMZzn67KaFXb_fdQ
+把网点当成基准点，然后围绕这个基准点选取k个不同scale、aspect ratio的anchor。论文中用了3个scale（三种面积$$\left\{ 128^2, 256^2, 521^2  \right\}$$，如上图的红绿蓝三色所示），3个aspect ratio（{1:1,1:2,2:1}，如上图的同色方框所示）。
 
-CornerNet目标检测开启预测“边界框”到预测“点对”的新思路
+![](/images/article/Anchors.png)
 
-https://zhuanlan.zhihu.com/p/41865617
+anchor的后处理如上图所示。
 
-CornerNet：目标检测算法新思路
+![](/images/article/Anchor_Pyramid.png)
 
-https://mp.weixin.qq.com/s/e6B22xpue_xZwrXmIlZodw
+上图展示了Image/Feature Pyramid、Filter Pyramid和Anchor Pyramid的区别。
 
-ECCV-2018最佼佼者CornerNet的目标检测算法
+## 定义损失函数
 
-https://mp.weixin.qq.com/s/9ldLaYKGkgq-MnJZw7CrDQ
+![](/images/article/faster_rcnn_p_3.png)
 
-CornerNet为什么有别于其他目标检测领域的主流算法？
+对于每个anchor，首先在后面接上一个二分类softmax（上图左边的Softmax），有2个score输出用以表示其是一个物体的概率与不是一个物体的概率 ($$p_i$$)。这个概率也可以理解为前景与后景，或者物体和背景的概率。
 
-## 参考
+然后再接上一个bounding box的regressor输出代表这个anchor的4个坐标位置（$$t_i$$），因此RPN的总体Loss函数可以定义为 ：
 
-https://mp.weixin.qq.com/s/dcrBQ-t3tLOTouEyofOBxg
+$$L(\{p_i\},\{t_i\})=\frac{1}{N_{cls}}\sum_iL_{cls}(p_i,p_i^*)+\lambda \frac{1}{N_{reg}}\sum_ip_i^*L_{reg}(t_i,t_i^*)$$
 
-间谍卫星：利用卷积神经网络对卫星影像进行多尺度目标检测
+该公式的含义和计算都比较复杂，这里不做过多解释，而仅对检测框的坐标位置（$$t_i$$）的计算步骤做一个简要的概述。
 
-https://mp.weixin.qq.com/s/LtXylKTKsHdjMPw9Q1HyXA
+1.生成anchor坐标。这里由于是按照固定的规则生成的，因此可以预先生成。它的值与图片内容无关，而仅与图片大小相关。
 
-优于MobileNet、YOLOv2：移动设备上的实时目标检测系统Pelee
+2.bounding box修正。如果把anchor坐标看作A，那么bounding box修正就是$$\Delta A$$。
 
-https://mp.weixin.qq.com/s/Gq3bflJq59Tx-nDCvbweNA
+3.im_info修正。对于一副任意大小PxQ图像，传入Faster RCNN前首先reshape到固定MxN，im_info=[W, H, scale_W, scale_H]则保存了此次缩放的所有信息。
 
-无需预训练分类器，清华&旷视提出专用于目标检测的骨干网络DetNet
+上图中，二分类softmax前后各添加了一个reshape layer，是什么原因呢？
 
-https://mp.weixin.qq.com/s/u3eXhoFvo7vZujc0XoQQWQ
+这与caffe的实现的有关。bg/fg anchors的矩阵，其在caffe blob中的存储形式为[batch size, 2x9, H, W]。这里的2代表二分类，9是anchor的个数。因为这里的softmax只分两类，所以在进行计算之前需要将blob变为[batch size, 2, 9xH, W]。之后再reshape回复原状。
 
-旷视研究院解读Light-Head R-CNN：平衡精准度和速度
+## RPN和Fast R-CNN协同训练
 
-https://mp.weixin.qq.com/s/6cUP9vvfcuv8rIEnGnAFiA
+我们知道，如果是分别训练两种不同任务的网络模型，即使它们的结构、参数完全一致，但各自的卷积层内的卷积核也会向着不同的方向改变，导致无法共享网络权重，论文作者提出了几种可能的方式。
 
-NCSU&阿里巴巴论文：可解释的R-CNN
+### Alternating training
 
-https://mp.weixin.qq.com/s/1vOdOMyByBacSBMVrscq5Q
+此方法其实就是一个不断迭代的训练过程，既然分别训练RPN和Fast-RCNN可能让网络朝不同的方向收敛：
 
-黄畅：基于DenesBox的目标检测在自动驾驶中的应用
+a)那么我们可以先独立训练RPN，然后用这个RPN的网络权重对Fast-RCNN网络进行初始化并且用之前RPN输出proposal作为此时Fast-RCNN的输入训练Fast R-CNN。
 
-https://mp.weixin.qq.com/s/-PeXMU_gkcT5YnMcLoaKag
+b) 用Fast R-CNN的网络参数去初始化RPN。之后不断迭代这个过程，即循环训练RPN、Fast-RCNN。
 
-CVPR清华大学研究，高效视觉目标检测框架RON
+![](/images/article/alternating_training.png)
 
-https://mp.weixin.qq.com/s/AupXIoVmhcOBrX1z1vgdtw
+### Approximate joint training or Non-approximate training
 
-弱监督实现精确目标检测，上交大提出协同学习框架
+这两种方式，不再是串行训练RPN和Fast-RCNN，而是尝试把二者融入到一个网络内训练。融合方式和上面的Faster R-CNN结构图类似。细节不再赘述。
 
-https://mp.weixin.qq.com/s/Lt00ASVSb_fDDJdtCO0-tQ
+### 4-Step Alternating Training
 
-物体检测中的结构推理网络
+这是作者发布的源代码中采用的方法。
 
-https://mp.weixin.qq.com/s/f0Ynln-27z5A6LXt8j5qKQ
+第一步：用ImageNet模型初始化，独立训练一个RPN网络；
 
-据说以后在探头下面用帽子挡脸没用了：SymmNet遮挡物检测的对称卷积神经网络
+第二步：仍然用ImageNet模型初始化，但是使用上一步RPN网络产生的proposal作为输入，训练一个Fast-RCNN网络，至此，两个网络每一层的参数完全不共享；
 
-https://mp.weixin.qq.com/s/cEg6HmS651riJVAtHdPafg
+第三步：使用第二步的Fast-RCNN网络参数初始化一个新的RPN网络，但是把RPN、Fast-RCNN共享的那些卷积层的learning rate设置为0，也就是不更新，仅仅更新RPN特有的那些网络层，重新训练，此时，两个网络已经共享了所有公共的卷积层；
 
-基于域适应弱监督学习的目标检测
+第四步：仍然固定共享的那些网络层，把Fast-RCNN特有的网络层也加入进来，形成一个unified network，继续训练，fine tune Fast-RCNN特有的网络层，此时，该网络已经实现我们设想的目标，即网络内部预测proposal并实现检测的功能。
 
-https://mp.weixin.qq.com/s/PpT-NmTVjRi0_SEq0lISXw
+![](/images/article/4_Step_Alternating_Training.png)
 
-旷视科技Oral论文解读：IoU-Net让目标检测用上定位置信度
+## 总结
 
-https://mp.weixin.qq.com/s/tmp1HXU7cLerLr0DY9NluQ
+![](/images/article/faster_rcnn_p.png)
 
-杂乱环境下的显著性物体： 将显著性物体检测推向新高度
+参考：
 
-https://mp.weixin.qq.com/s/OqlZ2TRGbHURYW00440lgQ
+https://zhuanlan.zhihu.com/p/24916624
 
-微软亚洲研究院与北京大学共同提出用于物体检测的可学习区域特征提取模块
+Faster R-CNN
 
-https://mp.weixin.qq.com/s/5I9uzGCNFD93L1mzakTl0Q
+http://blog.csdn.net/shenxiaolu1984/article/details/51152614
 
-目标检测网络学习总结（RCNN-->YOLO V3）
+Faster RCNN算法详解
 
-https://mp.weixin.qq.com/s/ZQqcsJenqkXtH1czOe5WnA
+https://mp.weixin.qq.com/s/VKQufVUQ3TP5m7_2vOxnEQ
 
-阿里巴巴提出Auto-Context R-CNN算法，刷出Faster RCNN目标检测新高度
+通过Faster R-CNN实现当前最佳的目标计数
 
-https://mp.weixin.qq.com/s/aLYQepnr_BjS27Fb-zoZ_g
+http://blog.csdn.net/zy1034092330/article/details/62044941
 
-迈向完全可学习的物体检测器：可学习区域特征提取方法
+Faster RCNN详解
 
-https://zhuanlan.zhihu.com/p/43655912
+https://zhuanlan.zhihu.com/p/31426458
 
-“别挡我，我要C位出道！”谈谈深度学习目标检测中的遮挡问题
+一文读懂Faster RCNN
 
-https://mp.weixin.qq.com/s/VtlSVF4d9LwPJhDEYSbgTg
+https://mp.weixin.qq.com/s/IZ9Q3fDJVawiEbD6x9WRLg
 
-无监督难分样本挖掘改进目标检测
+Object Detection系列（三）Fast R-CNN
 
-https://mp.weixin.qq.com/s/h_ENriEXr7WI_XR_DtxpMQ
+https://mp.weixin.qq.com/s/M_i38L2brq69BYzmaPeJ9w
 
-这样可以更精确的目标检测——超网络
+像玩乐高一样拆解Faster R-CNN：详解目标检测的实现过程
 
-https://mp.weixin.qq.com/s?__biz=MzI5MDUyMDIxNA==&mid=2247486104&idx=1&sn=5580a4680f3190adb98638471e9b5982
+https://mp.weixin.qq.com/s/oTo12fgl1p5D7yzdfWIT8Q
 
-百度视觉团队斩获 ECCV Google AI 目标检测竞赛冠军，获奖方案全解读
+使用Faster R-CNN、ResNet诊断皮肤病，深度学习再次超越人类专家
 
-https://mp.weixin.qq.com/s/nL9l7hvG3RG7G7LzCzzvug
+https://mp.weixin.qq.com/s/5OkPWPLRyf07mZwLRSZ3Fw
 
-旷视科技2018 COCO负责人俞刚：如何构建检测与分割的冠军系统
+机器视觉目标检测补习贴之R-CNN系列—R-CNN,Fast R-CNN,Faster R-CNN
 
-https://mp.weixin.qq.com/s/zeruKQOye_QNWgluVIN0BA
-
-从R-CNN到RFBNet，目标检测架构5年演进全盘点
-
-https://mp.weixin.qq.com/s/sCGNUI-mUSYxD69uBDQNoQ
-
-基于深度学习的目标检测算法综述：算法改进
-
-https://mp.weixin.qq.com/s/XdH54ImSfgadCoISmVyyVg
-
-基于单目摄像头的物体检测
-
-https://mp.weixin.qq.com/s/yswy7VwEapQJ9M5n_Uo93w
-
-目标检测最新进展总结与展望
-
-https://mp.weixin.qq.com/s/s1qmCA8djEEanwCxeLSV2Q
-
-63页《深度CNN-目标检测》综述

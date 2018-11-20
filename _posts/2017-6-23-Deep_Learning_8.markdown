@@ -4,7 +4,37 @@ title:  深度学习（八）——CNN进化史
 category: DL 
 ---
 
-# CNN进化史（续）
+# CNN进化史
+
+## AlexNet（续）
+
+AlexNet的caffe模板：
+
+https://github.com/BVLC/caffe/blob/master/models/bvlc_alexnet/deploy.prototxt
+
+其中的LRN（Local Response Normalization）层也是当年的遗迹，被后来的实践证明，对于最终效果和运算量没有太大帮助，因此也就慢慢废弃了。
+
+虽然，LeNet-5是CNN的开山之作（它不是最早的CNN，但却是奠定了现代CNN理论基础的模型），但是毕竟年代久远，和现代实用的CNN相比，结构实在过于原始。
+
+AlexNet作为第一个现代意义上的CNN，它的意义主要包括：
+
+1.Data Augmentation。包括水平翻转、随机裁剪、平移变换、颜色、光照变换等。
+
+2.Dropout。
+
+3.ReLU激活函数。
+
+4.多GPU并行计算。
+
+5.当然最应该感谢的是李飞飞团队搞出来的标注数据集合ImageNet。
+
+>注：ILSVRC（Large Scale Visual Recognition Challenge）大赛，在2016年以前，一直是CV界的顶级赛事。但随着技术的成熟，目前的科研重点已经从物体识别转移到了物体理解领域。2017年将是该赛事的最后一届。WebVision有望接替该赛事，成为下一个目标。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/22538465
+
+运用CNN对ImageNet进行图像分类
 
 ## VGG
 
@@ -216,52 +246,3 @@ http://blog.csdn.net/whiteinblue/article/details/43312059
 
 在未来，或许检测和识别也可能合二为一。现在的检测是对一个通用的人脸的检测，未来或许可以实现检测和识别全部端到端完成：只有特定的某个人脸出现，才会触发检测框出现。
 
-第五步的相似度（或距离测度）的计算方法存在一定的争议。我认为特征提取的过程已经通过损失函数暗含了距离测度的计算，所以深度特征提取与深度测度学习有一定的等价性。但也有不少学者在研究特征之间距离测度的学习，乃至于省略掉特征提取，直接学习输入两张人脸图片时的距离测度。
-
-总体来说，深度学习的引入体现了端到端、数据驱动的思想：**尽可能少地对流程进行干预、尽可能少地做人为假设。**
-
-## 参考
-
-http://mp.weixin.qq.com/s/ZKMi4gRfDRcTxzKlTQb-Mw
-
-计算机视觉识别简史：从AlexNet、ResNet到Mask RCNN
-
-http://mp.weixin.qq.com/s/kbHzA3h-CfTRcnkViY37MQ
-
-详解CNN五大经典模型:Lenet，Alexnet，Googlenet，VGG，DRL
-
-https://zhuanlan.zhihu.com/p/22094600
-
-Deep Learning回顾之LeNet、AlexNet、GoogLeNet、VGG、ResNet
-
-https://mp.weixin.qq.com/s/28GtBOuAZkHs7JLRVLlSyg
-
-深度卷积神经网络演化历史及结构改进脉络
-
-http://www.leiphone.com/news/201609/303vE8MIwFC7E3DB.html
-
-Google最新开源Inception-ResNet-v2，借助残差网络进一步提升图像分类水准
-
-https://mp.weixin.qq.com/s/x3bSu9ecl3dldCbvS1rT1g
-
-站在巨人的肩膀上，深度学习的9篇开山之作
-
-http://mp.weixin.qq.com/s/2TUw_2d36uFAiJTkvaaqpA
-
-解读Keras在ImageNet中的应用：详解5种主要的图像识别模型
-
-https://zhuanlan.zhihu.com/p/27642620
-
-YJango的卷积神经网络——介绍
-
-https://www.zybuluo.com/coolwyj/note/202469
-
-ImageNet Classification with Deep Convolutional Neural Networks
-
-http://simtalk.cn/2016/09/20/AlexNet/
-
-AlexNet简介
-
-http://simtalk.cn/2016/09/12/CNNs/
-
-CNN简介

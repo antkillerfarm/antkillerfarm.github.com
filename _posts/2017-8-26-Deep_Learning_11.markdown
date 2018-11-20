@@ -8,6 +8,16 @@ category: DL
 
 ## 分组卷积（续）
 
+论文：
+
+《Squeeze-and-Excitation Networks》
+
+代码：
+
+https://github.com/hujie-frank/SENet
+
+![](/images/img2/SENet.png)
+
 参考：
 
 https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg
@@ -278,36 +288,3 @@ $$(x^2+2x+2)(3x+2)=3x^3+\color{red}{(2\times 3+1\times 2)}x^2+10x+4$$
 $$(f * g)[n]=\sum_{m=-M}^M f[n-m]g[m]$$
 
 >注：这里的Convolution和DL领域的Convolution的定义略有不同，后者实际上是数学上的Cross-correlation运算，但稍加变化，就可以变为前者。
-
-由多项式乘法的规则和Convolution定义可得：（这里以2x2的Convolution为例）
-
-令$$h(p)=h_0+h_1p,x(p)=x_0+x_1p,s(p)=h(p)x(p)=s_0+s_1p+s_2p^2$$，则$$s(p)$$的系数$$s_i$$正好为i点的卷积值$$Conv_i(h,x)$$。
-
-上述事实用矩阵可表示为：
-
-$$\begin{bmatrix}
-s_0 \\ s_1 \\ s_2 \\
-\end{bmatrix}=
-\begin{bmatrix}
-h_0 & 0 \\
-h_1 & h_0 \\
-0 & h_1 \\
-\end{bmatrix}\cdot
-\begin{bmatrix}
-x_0 \\ x_1 \\
-\end{bmatrix}$$
-
-向量卷积与多项式乘法的这个性质，在数值计算领域应用的比较广泛。Matlab中多项式的乘法计算，实际上就是计算一个卷积。
-
-如果令p=10，则多项式乘法就变成了大整数乘法，因此卷积运算在大整数乘法中，也有很重要的地位。
-
-参见：
-
-http://www.cnblogs.com/larch18/p/4569495.html
-
-向量卷积与多项式乘法
-
-http://blog.sina.com.cn/s/blog_455c7a6001010t3h.html
-
-卷积和与多项式乘法的关系
-

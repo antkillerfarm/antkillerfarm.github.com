@@ -1,10 +1,39 @@
 ---
 layout: post
-title:  深度学习（十三）——花式池化, Batch Normalization
+title:  深度学习（十三）——花式池化
 category: DL 
 ---
 
 # Winograd（续）
+
+## 多项式的Euclidean division和GCD
+
+我们可以仿照整数Euclidean division定义多项式的Euclidean division，如下面的竖式所示：
+
+$$\begin{array}{r}
+ x^2 + {\color{White}1}x + 3\\
+ x-3\overline{) x^3 - 2x^2 + 0x - 4}\\
+ \underline{x^3 - 3x^2 \color{White}{ + 0x - 4}}\\
+ +x^2 + 0x \color{White}{ - 4}\\
+ \underline{+x^2 - 3x \color{White}{ - 4}}\\
+ +3x - 4\\
+ \underline{+3x - 9}\\
+ +5
+\end{array}$$
+
+上式也可写为横式：
+
+$${x^3 - 2x^2 - 4} = (x-3)\,\underbrace{(x^2 + x + 3)}_{q(x)}  +\underbrace{5}_{r(x)}$$
+
+其中的$$r(x)$$即为余数。
+
+同样的可以定义多项式的GCD：
+
+$$x^2 + 7x + 6 = (x + 1)(x + 6)$$
+
+$$x^2 − 5x − 6 = (x + 1)(x − 6)$$
+
+则两多项式的GCD为$$(x + 1)$$。
 
 ## 多项式的CRT
 
@@ -140,6 +169,10 @@ http://blog.csdn.net/xxinliu/article/details/7438429
 
 Cooley-Tukey算法 （蝶形算法）
 
+https://www.zhihu.com/question/264307400
+
+为什么很少人用FFT加速CNN卷积层的运算？
+
 ## 参考
 
 https://colfaxresearch.com/falcon-library/
@@ -259,27 +292,3 @@ http://mp.weixin.qq.com/s/XzOri12hwyOCdI1TgGQV3w
 http://blog.csdn.net/liuchonge/article/details/67638232
 
 CNN与句子分类之动态池化方法DCNN--模型介绍篇
-
-# Batch Normalization
-
-在《深度学习（二）》中，我们已经简单的介绍了Batch Normalization的基本概念。这里主要讲述一下它的实现细节。
-
-我们知道在神经网络训练开始前，都要对输入数据做一个归一化处理，那么具体为什么需要归一化呢？归一化后有什么好处呢？
-
-原因在于神经网络学习过程本质就是为了学习数据分布，一旦训练数据与测试数据的分布不同，那么网络的泛化能力也大大降低；另外一方面，一旦每批训练数据的分布各不相同(batch梯度下降)，那么网络就要在每次迭代都去学习适应不同的分布，这样将会大大降低网络的训练速度，这也正是为什么我们需要对数据都要做一个归一化预处理的原因。
-
-对输入数据归一化，早就是一种基本操作了。然而这样只对神经网络的输入层有效。更好的办法是对每一层都进行归一化。
-
-然而简单的归一化，会破坏神经网络的特征。（归一化是线性操作，但神经网络本身是非线性的，不具备线性不变性。）因此，如何归一化，实际上是个很有技巧的事情。
-
-首先，我们回顾一下归一化的一般做法：
-
-$$\hat x^{(k)} = \frac{x^{(k)} - E[x^{(k)}]}{\sqrt{Var[x^{(k)}]}}$$
-
-其中，$$x = (x^{(0)},x^{(1)},…x^{(d)})$$表示d维的输入向量。
-
-接着，定义归一化变换函数：
-
-$$y^{(k)}=\gamma^{(k)}\hat x^{(k)}+\beta^{(k)}$$
-
-这里的$$\gamma^{(k)},\beta^{(k)}$$是待学习的参数。

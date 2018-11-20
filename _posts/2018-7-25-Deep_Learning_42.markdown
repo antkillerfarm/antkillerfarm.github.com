@@ -16,6 +16,10 @@ https://zhuanlan.zhihu.com/p/26168232
 
 行人重识别：从哈利波特地图说起
 
+https://zhuanlan.zhihu.com/p/50387521
+
+从零开始行人重识别
+
 https://mp.weixin.qq.com/s/_NDw7pFmDB07mliHTA6VYQ
 
 旷视行人再识别（ReID）突破

@@ -4,7 +4,41 @@ title:  深度学习（十二）——Winograd（2）
 category: DL 
 ---
 
-# Winograd（续）
+# Winograd
+
+## 向量卷积与多项式乘法（续）
+
+由多项式乘法的规则和Convolution定义可得：（这里以2x2的Convolution为例）
+
+令$$h(p)=h_0+h_1p,x(p)=x_0+x_1p,s(p)=h(p)x(p)=s_0+s_1p+s_2p^2$$，则$$s(p)$$的系数$$s_i$$正好为i点的卷积值$$Conv_i(h,x)$$。
+
+上述事实用矩阵可表示为：
+
+$$\begin{bmatrix}
+s_0 \\ s_1 \\ s_2 \\
+\end{bmatrix}=
+\begin{bmatrix}
+h_0 & 0 \\
+h_1 & h_0 \\
+0 & h_1 \\
+\end{bmatrix}\cdot
+\begin{bmatrix}
+x_0 \\ x_1 \\
+\end{bmatrix}$$
+
+向量卷积与多项式乘法的这个性质，在数值计算领域应用的比较广泛。Matlab中多项式的乘法计算，实际上就是计算一个卷积。
+
+如果令p=10，则多项式乘法就变成了大整数乘法，因此卷积运算在大整数乘法中，也有很重要的地位。
+
+参见：
+
+http://www.cnblogs.com/larch18/p/4569495.html
+
+向量卷积与多项式乘法
+
+http://blog.sina.com.cn/s/blog_455c7a6001010t3h.html
+
+卷积和与多项式乘法的关系
 
 ## Cook-Toom algorithm
 
@@ -249,33 +283,3 @@ CRT虽然只是初等数论的基本定理，但应用范围很广，Lagrange in
 在中国古代，CRT问题又被称为“韩信点兵”问题。
 
 >韩信带1500名兵士打仗，战死约四五百人，站3人一排，多出2人；站5人一排，多出4人；站7人一排，多出6人。韩信很快说出人数：1049。
-
-## 多项式的Euclidean division和GCD
-
-我们可以仿照整数Euclidean division定义多项式的Euclidean division，如下面的竖式所示：
-
-$$\begin{array}{r}
- x^2 + {\color{White}1}x + 3\\
- x-3\overline{) x^3 - 2x^2 + 0x - 4}\\
- \underline{x^3 - 3x^2 \color{White}{ + 0x - 4}}\\
- +x^2 + 0x \color{White}{ - 4}\\
- \underline{+x^2 - 3x \color{White}{ - 4}}\\
- +3x - 4\\
- \underline{+3x - 9}\\
- +5
-\end{array}$$
-
-上式也可写为横式：
-
-$${x^3 - 2x^2 - 4} = (x-3)\,\underbrace{(x^2 + x + 3)}_{q(x)}  +\underbrace{5}_{r(x)}$$
-
-其中的$$r(x)$$即为余数。
-
-同样的可以定义多项式的GCD：
-
-$$x^2 + 7x + 6 = (x + 1)(x + 6)$$
-
-$$x^2 − 5x − 6 = (x + 1)(x − 6)$$
-
-则两多项式的GCD为$$(x + 1)$$。
-

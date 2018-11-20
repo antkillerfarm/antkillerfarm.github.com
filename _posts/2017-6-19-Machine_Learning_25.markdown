@@ -298,3 +298,11 @@ https://mp.weixin.qq.com/s/aryMyP0r6vov0pUvkoFYng
 https://mp.weixin.qq.com/s?__biz=MzUxMTYwMzI0OQ==&mid=2247486937&idx=1&sn=6be69679390f59516ee5f077adb8ccfa
 
 运筹优化的剖析与应用
+
+# 金融模型
+
+Capital asset pricing model
+
+Fama–French three-factor model
+
+Carhart four-factor model

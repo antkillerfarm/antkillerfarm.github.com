@@ -4,7 +4,31 @@ title:  深度学习（七）——DRN, Bi-directional RNN, seq2seq
 category: DL 
 ---
 
-# 神经元激活函数进阶（续）
+# 神经元激活函数进阶
+
+## Swish（续）
+
+而我们在训练模型时，一般采用的初始化参数是均匀初始化或者正态分布初始化，不管是哪种初始化，其均值一般都是0，也就是说，初始化的参数有一半处于ReLu的饱和区域，这使得刚开始时就有一半的参数没有利用上。
+
+特别是由于诸如BN之类的策略，输出都自动近似满足均值为0的正态分布，因此这些情况都有一半的参数位于ReLu的饱和区。
+
+相比之下，Swish好一点，因为它在负半轴也有一定的不饱和区，所以参数的利用率更大。
+
+苏剑林据此提出了自己的激活函数：
+
+$$\max(x, x\cdot e^{-\mid x\mid })$$
+
+该函数的图像如上图的蓝色曲线所示。
+
+参考：
+
+https://mp.weixin.qq.com/s/JticD0itOWH7Aq7ye1yzvg
+
+谷歌大脑提出新型激活函数Swish惹争议：可直接替换并优于ReLU？
+
+http://kexue.fm/archives/4647/
+
+浅谈神经网络中激活函数的设计
 
 ## 其他激活函数
 
@@ -322,32 +346,4 @@ https://mp.weixin.qq.com/s/FzCrOiFuutqSQSp4VcydoQ
 换个视角：
 
 ![](/images/article/AlexNet_2.png)
-
-AlexNet的caffe模板：
-
-https://github.com/BVLC/caffe/blob/master/models/bvlc_alexnet/deploy.prototxt
-
-其中的LRN（Local Response Normalization）层也是当年的遗迹，被后来的实践证明，对于最终效果和运算量没有太大帮助，因此也就慢慢废弃了。
-
-虽然，LeNet-5是CNN的开山之作（它不是最早的CNN，但却是奠定了现代CNN理论基础的模型），但是毕竟年代久远，和现代实用的CNN相比，结构实在过于原始。
-
-AlexNet作为第一个现代意义上的CNN，它的意义主要包括：
-
-1.Data Augmentation。包括水平翻转、随机裁剪、平移变换、颜色、光照变换等。
-
-2.Dropout。
-
-3.ReLU激活函数。
-
-4.多GPU并行计算。
-
-5.当然最应该感谢的是李飞飞团队搞出来的标注数据集合ImageNet。
-
->注：ILSVRC（Large Scale Visual Recognition Challenge）大赛，在2016年以前，一直是CV界的顶级赛事。但随着技术的成熟，目前的科研重点已经从物体识别转移到了物体理解领域。2017年将是该赛事的最后一届。WebVision有望接替该赛事，成为下一个目标。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/22538465
-
-运用CNN对ImageNet进行图像分类
 

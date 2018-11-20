@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  大数据平台参考资源（二）, 知名数据集（二）, SLAM, 数据库（二）
+title:  大数据平台参考资源（二）, 知名数据集（二）, SLAM
 category: resource 
 ---
 
@@ -89,6 +89,10 @@ https://mp.weixin.qq.com/s/sUWy60vL-pEt5fE5PGGrww
 https://mp.weixin.qq.com/s/LXcWMwxgk3SXDI1cI_Kg8w
 
 携程数据库高可用和容灾架构演进
+
+https://mp.weixin.qq.com/s/Y4MtwJsbGWx3XqajGV3ZpA
+
+每日生产万亿消息数据入库，腾讯如何突破大数据分析架构瓶颈
 
 # 知名数据集
 
@@ -340,90 +344,3 @@ https://blog.csdn.net/weixin_36340947/article/details/78246174
 
 张正友标定算法原理详解
 
-# 数据库
-
-## 参考
-
-https://blog.csdn.net/zhengzhb/article/details/8590390
-
-SQL查找删除重复行
-
-https://mp.weixin.qq.com/s/09BlPee0-kP-At2aDyDbMw
-
-中国数据库40年历史：隐秘的江湖与恩怨
-
-https://mp.weixin.qq.com/s/4lZ7My6cs4-VJQ1qGhQxZg
-
-AliSQL X-Cluste：基于X-Paxos的高性能强一致MySQL数据库
-
-https://mp.weixin.qq.com/s/tPzBlQGxGq1WEnXz5ggpxg
-
-sysbench在美团点评中的应用
-
-https://mp.weixin.qq.com/s/lJfIkLQaZnN4e9DxX163SA
-
-一款可能解放DBA的分布式数据库RadonDB的体验之旅
-
-http://mp.weixin.qq.com/s/idz6b2rls97W4Iw6J-ubng
-
-美团点评SQL优化工具SQLAdvisor开源
-
-https://mp.weixin.qq.com/s/jCFjhkwQpj1_P-seQurPqQ
-
-SQL解析在美团点评中的应用
-
-https://mp.weixin.qq.com/s/RME5b3plT97nYfUaCl9ePw
-
-关于缓存和数据库强一致的可行方案
-
-https://mp.weixin.qq.com/s/Al0yvkv0FUPjEBtcxS6Fmg
-
-传统数据仓库和云数据仓库的区别
-
-https://mp.weixin.qq.com/s/GXGSDxukbIAM5W-YSX0pDg
-
-美团点评数据库高可用架构的演进与设想
-
-https://mp.weixin.qq.com/s/crluKkEdvfZlHyF_gQm1ZA
-
-漫谈推荐系统及数据库技术
-
-https://mp.weixin.qq.com/s/CwUW-Ntb4qphrqha24P-Og
-
-漫谈推荐系统及数据库技术（二）——分布式数据库技术
-
-https://mp.weixin.qq.com/s/1pXMCcO6NR1SMBzsyES-cw
-
-分布式数据库又支持关系数据模型了？
-
-https://mp.weixin.qq.com/s/yQSMSLBYg4iauu8yeUfvjw
-
-深度解读！时序数据库HiTSDB：分布式流式聚合引擎
-
-https://mp.weixin.qq.com/s/WQh-Ro03e9F1Yrhk0tTZ0A
-
-图解SQL的JOIN
-
-https://mp.weixin.qq.com/s/NbV76hDZXKzvark4JEoyMA
-
-我是如何用2个Unix命令给SQL提速的
-
-https://mp.weixin.qq.com/s/gQAA2-YuvTHrL2IP8Bco6w
-
-缓存与数据库的数据一致性方案介绍
-
-https://mp.weixin.qq.com/s/m76PFxbcY6_-XyeU7uu4Jg
-
-数据库的最简单实现
-
-https://mp.weixin.qq.com/s/rZuGW9Fe0TA3dNEY7dh_Jg
-
-TimescaleDB比拼InfluxDB：如何选择合适的时序数据库？
-
-https://mp.weixin.qq.com/s/pZnAcjFlBM2I4Hyctd6MHw
-
-图数据库真的比关系数据库更先进吗？
-
-https://mp.weixin.qq.com/s/O3A5gVewRQ11Z8RdPcs-9w
-
-一文看懂Pinterest如何构建时间序列数据库系统Goku

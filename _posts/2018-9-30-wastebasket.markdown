@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  垃圾筐
+title:  垃圾筐, Apollo
 category: resource 
 ---
 
@@ -318,14 +318,6 @@ https://mp.weixin.qq.com/s/94IGjVPXZ0FeCILQN33eBQ
 
 遇见大数据可视化：不要错过这么漂亮的数据可视化案例！
 
-## 金融模型
-
-Capital asset pricing model
-
-Fama–French three-factor model
-
-Carhart four-factor model
-
 ## howmuch.net
 
 howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：
@@ -344,28 +336,100 @@ Gephi是一个针对图和网络的可视化工具。
 
 https://gephi.org/
 
-# 莫比乌斯反演
+# Apollo
 
-http://blog.csdn.net/acdreamers/article/details/8542292
+Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。
 
-莫比乌斯反演
+官网：
 
-http://blog.csdn.net/litble/article/details/72804050
+http://apollo.auto/
 
-初涉莫比乌斯反演
+代码：
 
-http://blog.csdn.net/u013632138/article/details/52250567
+https://github.com/ApolloAuto/apollo
 
-莫比乌斯反演讲解
+参考：
 
-http://blog.csdn.net/Ripped/article/details/70263965
+https://github.com/TeamStuQ/skill-map/blob/master/data/map-Apollo.md
 
-莫比乌斯反演详解
+Apollo自动驾驶工程师技能图谱
 
-http://blog.csdn.net/hzj1054689699/article/details/51659994
+http://mp.weixin.qq.com/s/baXCaD1EdHKCJbCIh2HDeA
 
-莫比乌斯反演入门
+Apollo高精地图技术与应用
 
-http://blog.csdn.net/outer_form/article/details/50588307
+https://mp.weixin.qq.com/s/qtoHF4Mnj_aeGBJbkjJUMA
 
-莫比乌斯反演定理证明
+Apollo小度车载系统
+
+https://mp.weixin.qq.com/s/rWhnazEC35U7nsVpsxhFEg
+
+Apollo 2.0 软硬件框架初探（一）
+
+https://mp.weixin.qq.com/s/GccST3xJ1QRIVM7cFgsn3A
+
+Apollo 2.0 软硬件框架初探（二）
+
+https://mp.weixin.qq.com/s/UHQXF2Ju8erw9thm0Jjt2A
+
+Apollo 2.0框架及源码分析(三)
+
+https://mp.weixin.qq.com/s/3i8mJn4OPjt-KV1fp8bZQQ
+
+Apollo Planning模块源代码分析（上）
+
+https://mp.weixin.qq.com/s/DfdMDOQMncTau-9zGq9CYw
+
+Apollo Planning模块源代码分析（下）
+
+https://mp.weixin.qq.com/s/bH6khM8gO3JE4YT9i8hSlQ
+
+Apollo 2.0自动驾驶平台技术解析与应用
+
+https://mp.weixin.qq.com/s/EgsdlDhd8lIXU3bnTYJh0w
+
+Apollo高精地图解析
+
+https://mp.weixin.qq.com/s/027QogNXtW2NPIDVcGQGzw
+
+Apollo“云+端”研发迭代新模式实战
+
+https://mp.weixin.qq.com/s/Pjfhs-03HxFeyeKo1BmAPw
+
+Apollo小度车载系统打造更舒心的出行
+
+https://mp.weixin.qq.com/s/j4faPastB3nFmgH_nhVW6g
+
+Apollo仿真平台如何Hold住99.9999%的复杂场景？
+
+https://mp.weixin.qq.com/s/PFCCRBGWmaTQkeyOlG1qng
+
+Apollo 2.0多传感器融合定位模块
+
+https://mp.weixin.qq.com/s/KEdXmwUGHysy_LZAfdkmlw
+
+Apollo的分布式可扩展计算平台探索
+
+https://mp.weixin.qq.com/s/MfTsH9mowuWFA54z7vs5fA
+
+Apollo Control模块源码解析
+
+https://mp.weixin.qq.com/s/bIjnm74cJcHP8Zab4kt5zA
+
+Apollo 2.5实时相对地图的分享
+
+https://mp.weixin.qq.com/s/hU8__GPgxaCStSgv4FyLIw
+
+无人驾驶行业及Apollo的Overview
+
+https://mp.weixin.qq.com/s/48DcWP1kAoze0Lv8jHY3Ow
+
+Apollo 2.5预测系统介绍
+
+https://mp.weixin.qq.com/s/7ftd941pycD7h_R10cDecg
+
+Apollo 2.5自动驾驶规划控制
+
+https://mp.weixin.qq.com/s/y_mOKpgLEvDjoO-UdMBcyw
+
+Apollo AdaperManager和Routing模块源代码分析

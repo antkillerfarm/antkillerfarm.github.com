@@ -1,156 +1,66 @@
 ---
 layout: post
-title:  深度学习（十六）——Faster R-CNN
+title:  深度学习（十六）——李飞飞
 category: DL 
 ---
 
-# Faster R-CNN
+# 李飞飞
 
-Faster-RCNN是任少卿2016年在MSRA提出的新算法。Ross Girshick和何恺明也是论文的作者之一。
+## AI大佬
 
->注：任少卿，中科大本科（2011年）+博士（2016年）。Momenta联合创始人+技术总监。   
->个人主页：   
->http://shaoqingren.com/
+李飞飞是吴恩达之后的华裔AI新大佬。巧合的是，他们都是斯坦福AP+AI lab的主任，只不过吴是李的前任而已。
 
-论文：
+**李飞飞（Fei-Fei Li）**，1976年生，成都人，16岁移民美国。普林斯顿大学本科（1995～1999）+加州理工学院博士（2001～2005）。先后执教于UIUC、普林斯顿、斯坦福等学校。
 
-《Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks》
+个人主页：
 
-代码：
+http://vision.stanford.edu/feifeili/
 
-https://github.com/ShaoqingRen/faster_rcnn
+她的老公Silvio Savarese，也是斯坦福的AP。
 
-https://github.com/rbgirshick/py-faster-rcnn
+## 大佬的门徒
 
-![](/images/article/faster_rcnn_p_2.png)
+比如可爱的妹子**Serena Yeung**。这个妹子是斯坦福的本硕博。出身不详，但从姓名的英文拼法来看，应该是美国土生的华裔。Yeung是杨、阳、羊等姓的传统英文拼法，但显然不是大陆推行的拼音拼法。（可以对比的是Fei-Fei Li和Bruce Lee，对于同一个姓的不同拼法。）
 
-上图是Faster R-CNN的结构图。
+个人主页：
 
-Fast R-CNN尽管已经很优秀了，然而还有一个最大的问题在于：proposal阶段没有整合到CNN中。
+http://ai.stanford.edu/~syyeung/
 
-这个问题带来了两个不良影响：
+还有当红的“辣子鸡”：**Andrej Karpathy**，多伦多大学本科（2009）+英属不列颠哥伦比亚大学硕士（2011）+斯坦福博士（2015）。现任特斯拉AI总监。
 
-1.非end-to-end模型导致程序流程比较复杂。
+吐槽一下：英属不列颠哥伦比亚大学其实是加拿大的一所大学。
 
-2.随着后续CNN步骤的简化，生成2k个候选bbox的Selective Search算法成为了整个计算过程的性能瓶颈。（无法利用GPU）
+个人主页：
 
-## Region Proposal Networks
+http://cs.stanford.edu/people/karpathy/
 
-Faster R-CNN最重要的改进就是使用区域生成网络（Region Proposal Networks）替换Selective Search。因此，faster RCNN也可以简单地看做是“**RPN+fast RCNN**”。
+Andrej Karpathy建了一个检索arxiv的网站，主要搜集了近3年来的ML/DL领域的论文。网址：
 
-![](/images/article/rpn.png)
+http://www.arxiv-sanity.com/
 
-上图是RPN的结构图。和SPPNet的ROI映射做法类似，RPN直接在feature map，而不是原图像上，生成区域。
+**李佳（Jia Li）**，李飞飞的开山大弟子，追随她从UIUC、普林斯顿到斯坦福。目前又追随其到Google。大约是知道自己的名字是个大路货，她的笔名叫做Li-Jia Li。
 
-由于Faster R-CNN最后会对bbox位置进行精调，因此这里生成区域的时候，只要大致准确即可。
+个人主页：
 
-![](/images/article/rpn_feature_map.png)
+http://vision.stanford.edu/lijiali/
 
-由于CNN所生成的feature map的尺寸，通常小于原图像。因此将feature map的点映射回原图像，就变成了上图所示的稀疏网点。这些网点也被称为原图感受野的中心点。
+## 学神
 
-把网点当成基准点，然后围绕这个基准点选取k个不同scale、aspect ratio的anchor。论文中用了3个scale（三种面积$$\left\{ 128^2, 256^2, 521^2  \right\}$$，如上图的红绿蓝三色所示），3个aspect ratio（{1:1,1:2,2:1}，如上图的同色方框所示）。
+应该说李飞飞和吴恩达都是万里挑一的超卓人物，但是和学神还是有所差距。下面是两个80后的华裔学神，他们都已经是正教授了：
 
-![](/images/article/Anchors.png)
+**尹希**，1983年生，哈佛大学物理系教授。
 
-anchor的后处理如上图所示。
+**张锋**，1982年生，MIT教授，生物学家。
 
-![](/images/article/Anchor_Pyramid.png)
+这两个人都是有机会挑战诺奖的人，而李和吴暂时还没有这个可能性。
 
-上图展示了Image/Feature Pyramid、Filter Pyramid和Anchor Pyramid的区别。
+## 网红
 
-## 定义损失函数
+这里收录了一些非李飞飞门下的AI网红。
 
-![](/images/article/faster_rcnn_p_3.png)
+**Zachary Chase Lipton**，1985年生，哥伦比亚大学本科+UCSD博士，CMU的AP。他的另一身份——Jazz歌手，可比他的学术成就知名多了。
 
-对于每个anchor，首先在后面接上一个二分类softmax（上图左边的Softmax），有2个score输出用以表示其是一个物体的概率与不是一个物体的概率 ($$p_i$$)。这个概率也可以理解为前景与后景，或者物体和背景的概率。
+个人主页：
 
-然后再接上一个bounding box的regressor输出代表这个anchor的4个坐标位置（$$t_i$$），因此RPN的总体Loss函数可以定义为 ：
-
-$$L(\{p_i\},\{t_i\})=\frac{1}{N_{cls}}\sum_iL_{cls}(p_i,p_i^*)+\lambda \frac{1}{N_{reg}}\sum_ip_i^*L_{reg}(t_i,t_i^*)$$
-
-该公式的含义和计算都比较复杂，这里不做过多解释，而仅对检测框的坐标位置（$$t_i$$）的计算步骤做一个简要的概述。
-
-1.生成anchor坐标。这里由于是按照固定的规则生成的，因此可以预先生成。它的值与图片内容无关，而仅与图片大小相关。
-
-2.bounding box修正。如果把anchor坐标看作A，那么bounding box修正就是$$\Delta A$$。
-
-3.im_info修正。对于一副任意大小PxQ图像，传入Faster RCNN前首先reshape到固定MxN，im_info=[W, H, scale_W, scale_H]则保存了此次缩放的所有信息。
-
-上图中，二分类softmax前后各添加了一个reshape layer，是什么原因呢？
-
-这与caffe的实现的有关。bg/fg anchors的矩阵，其在caffe blob中的存储形式为[batch size, 2x9, H, W]。这里的2代表二分类，9是anchor的个数。因为这里的softmax只分两类，所以在进行计算之前需要将blob变为[batch size, 2, 9xH, W]。之后再reshape回复原状。
-
-## RPN和Fast R-CNN协同训练
-
-我们知道，如果是分别训练两种不同任务的网络模型，即使它们的结构、参数完全一致，但各自的卷积层内的卷积核也会向着不同的方向改变，导致无法共享网络权重，论文作者提出了几种可能的方式。
-
-### Alternating training
-
-此方法其实就是一个不断迭代的训练过程，既然分别训练RPN和Fast-RCNN可能让网络朝不同的方向收敛：
-
-a)那么我们可以先独立训练RPN，然后用这个RPN的网络权重对Fast-RCNN网络进行初始化并且用之前RPN输出proposal作为此时Fast-RCNN的输入训练Fast R-CNN。
-
-b) 用Fast R-CNN的网络参数去初始化RPN。之后不断迭代这个过程，即循环训练RPN、Fast-RCNN。
-
-![](/images/article/alternating_training.png)
-
-### Approximate joint training or Non-approximate training
-
-这两种方式，不再是串行训练RPN和Fast-RCNN，而是尝试把二者融入到一个网络内训练。融合方式和上面的Faster R-CNN结构图类似。细节不再赘述。
-
-### 4-Step Alternating Training
-
-这是作者发布的源代码中采用的方法。
-
-第一步：用ImageNet模型初始化，独立训练一个RPN网络；
-
-第二步：仍然用ImageNet模型初始化，但是使用上一步RPN网络产生的proposal作为输入，训练一个Fast-RCNN网络，至此，两个网络每一层的参数完全不共享；
-
-第三步：使用第二步的Fast-RCNN网络参数初始化一个新的RPN网络，但是把RPN、Fast-RCNN共享的那些卷积层的learning rate设置为0，也就是不更新，仅仅更新RPN特有的那些网络层，重新训练，此时，两个网络已经共享了所有公共的卷积层；
-
-第四步：仍然固定共享的那些网络层，把Fast-RCNN特有的网络层也加入进来，形成一个unified network，继续训练，fine tune Fast-RCNN特有的网络层，此时，该网络已经实现我们设想的目标，即网络内部预测proposal并实现检测的功能。
-
-![](/images/article/4_Step_Alternating_Training.png)
-
-## 总结
-
-![](/images/article/faster_rcnn_p.png)
-
-参考：
-
-https://zhuanlan.zhihu.com/p/24916624
-
-Faster R-CNN
-
-http://blog.csdn.net/shenxiaolu1984/article/details/51152614
-
-Faster RCNN算法详解
-
-https://mp.weixin.qq.com/s/VKQufVUQ3TP5m7_2vOxnEQ
-
-通过Faster R-CNN实现当前最佳的目标计数
-
-http://blog.csdn.net/zy1034092330/article/details/62044941
-
-Faster RCNN详解
-
-https://zhuanlan.zhihu.com/p/31426458
-
-一文读懂Faster RCNN
-
-https://mp.weixin.qq.com/s/IZ9Q3fDJVawiEbD6x9WRLg
-
-Object Detection系列（三）Fast R-CNN
-
-https://mp.weixin.qq.com/s/M_i38L2brq69BYzmaPeJ9w
-
-像玩乐高一样拆解Faster R-CNN：详解目标检测的实现过程
-
-https://mp.weixin.qq.com/s/oTo12fgl1p5D7yzdfWIT8Q
-
-使用Faster R-CNN、ResNet诊断皮肤病，深度学习再次超越人类专家
-
-https://mp.weixin.qq.com/s/5OkPWPLRyf07mZwLRSZ3Fw
-
-机器视觉目标检测补习贴之R-CNN系列—R-CNN,Fast R-CNN,Faster R-CNN
+http://zacklipton.com/
 
