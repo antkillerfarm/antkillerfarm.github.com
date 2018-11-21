@@ -123,6 +123,10 @@ https://blog.csdn.net/Hungryof/article/details/71512406
 
 谈谈图像的style transfer（二）
 
+https://mp.weixin.qq.com/s/8Fz6Q-6VgJsAko0K7HDsow
+
+一个模型搞定所有风格转换，直接在浏览器实现（demo+代码）
+
 # 深度图像压缩
 
 Tiny Network Graphics是图鸭科技推出一种基于深度学习的图片压缩技术。由于商业因素，这里没有论文，技术细节也不详，但是下图应该还是有些用的。

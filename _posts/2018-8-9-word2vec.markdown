@@ -183,7 +183,7 @@ http://www.cnblogs.com/daleloogn/p/4510137.html
 
 ## Ooura
 
-Takuya Ooura是东京大学的教授，他写了一套数值计算的软件叫做Ooura，其中包含了FFT的实现。这也是aubio默认的FFT实现。
+Takuya Ooura是东京大学的教授，他写了一套数值计算的软件叫做Ooura，其中包含了FFT的实现。这也是aubio默认的FFT实现。缺点是只支持2的整数次方的FFT采样。
 
 代码：
 

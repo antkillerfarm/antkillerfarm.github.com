@@ -238,10 +238,6 @@ https://mp.weixin.qq.com/s/YRsVi09u3W0aQMdsR5KY4Q
 
 腾讯AI Lab提出Face R-FCN与Face CNN，刷新人脸检测与识别两大测评记录
 
-https://mp.weixin.qq.com/s/A1pbiU5PA9Owe69lGX9afw
-
-活体识别告诉你为什么照片无法破解人脸系统
-
 https://mp.weixin.qq.com/s/zyMIRGig-m732rvraPKxwA
 
 单样本学习：使用孪生神经网络进行人脸识别
@@ -325,10 +321,6 @@ https://mp.weixin.qq.com/s/qpP6AzLdgtH6NnIUl4JNpQ
 https://mp.weixin.qq.com/s/J4_snLK7DoV5oN7GP5M_Ww
 
 新思路！商汤开源利用无标注数据大幅提高精度的人脸识别算法
-
-https://mp.weixin.qq.com/s?__biz=MzU4MjQ3MDkwNA==&mid=2247486721&idx=1&sn=f0e5b2b0165e391c0d5adc4ce253f2f6
-
-人脸识别中的活体检测算法综述
 
 https://mp.weixin.qq.com/s/4xYAhNys6svltEb4cQUrXw
 

@@ -200,6 +200,20 @@ https://www.openu.ac.il/home/hassner/projects/cnn_agegender/
 
 Age and Gender Classification using Convolutional Neural Networks
 
+## 活体检测
+
+https://mp.weixin.qq.com/s/zOnmKSnQctnyx7pKXX-tpQ
+
+活体检测新文解读：利用多帧人脸来预测更精确的深度
+
+https://mp.weixin.qq.com/s?__biz=MzU4MjQ3MDkwNA==&mid=2247486721&idx=1&sn=f0e5b2b0165e391c0d5adc4ce253f2f6
+
+人脸识别中的活体检测算法综述
+
+https://mp.weixin.qq.com/s/A1pbiU5PA9Owe69lGX9afw
+
+活体识别告诉你为什么照片无法破解人脸系统
+
 ## DeepFace
 
 《DeepFace: Closing the Gap to Human-Level Performance in Face Verification》

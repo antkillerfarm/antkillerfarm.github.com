@@ -236,6 +236,10 @@ https://zhuanlan.zhihu.com/p/37341493
 
 基于Pre-trained模型加速模型学习的6点建议
 
+https://mp.weixin.qq.com/s/54HQU3B4cSdRb1Z4srSfJg
+
+如何为新类别重新训练一个图像分类器
+
 # 花式卷积
 
 在DL中，卷积实际上是一大类计算的总称。除了原始的卷积、反卷积（Deconvolution）之外，还有各种各样的花式卷积。

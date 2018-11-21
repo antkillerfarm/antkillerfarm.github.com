@@ -111,6 +111,10 @@ http://courses.cs.tamu.edu/rgutier/cpsc689_s07/
 
 CPSC 689-604: Special topics in Speech and Face Recognition
 
+https://mp.weixin.qq.com/s/oaOkla9gnUKr2C6PSjE2BA
+
+语音识别中的End-to-End模型教程（附178页PDF全文下载）
+
 ## blog
 
 http://www.cnblogs.com/welen/

@@ -304,3 +304,6 @@ https://mp.weixin.qq.com/s/hkXyqe6tDdgNuLgk3e90JQ
 
 如何发现品牌潜客？目标人群优选算法模型及实践解析
 
+https://mp.weixin.qq.com/s/jCXfu6AHFWnQL118r38Zpw
+
+全球顶级算法赛事Top5选手，跟你聊聊推荐系统领域的“战斗机”
