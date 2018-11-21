@@ -6,6 +6,10 @@ category: DL
 
 # GAN进阶
 
+https://mp.weixin.qq.com/s/QacQCrjh3KmrQSMp-G_rEg
+
+贝叶斯生成对抗网络
+
 https://mp.weixin.qq.com/s/c84LMFnIhoDeolc1B4MIVA
 
 AI以假乱真怎么办？TequilaGAN教你轻松辨真伪

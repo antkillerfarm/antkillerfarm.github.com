@@ -178,6 +178,10 @@ https://mp.weixin.qq.com/s/qTnFQK0CkvdJfZaKj2wUtQ
 
 海康威视联合提出注意力聚焦网络FAN：提升场景文本识别精确度
 
+https://zhuanlan.zhihu.com/p/50521715
+
+云从科技在自然场景OCR任务取得技术突破
+
 # 元学习
 
 人工智能的历史显示了明确的进展方向：

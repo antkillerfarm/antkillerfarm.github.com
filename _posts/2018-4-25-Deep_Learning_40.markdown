@@ -296,6 +296,10 @@ https://mp.weixin.qq.com/s/lUTusig94Htf7_4Z3X1fTQ
 
 清华&伯克利ICLR论文：重新思考6大剪枝方法
 
+https://mp.weixin.qq.com/s/g3y9mRhkFtzSuSMAornnDQ
+
+韩松博士论文：面向深度学习的高效方法与硬件 
+
 # 多任务学习
 
 https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA

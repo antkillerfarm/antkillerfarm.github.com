@@ -246,7 +246,7 @@ https://zhuanlan.zhihu.com/p/32796998
 
 ## 矿机江湖
 
-2018.9
+### 2018.9
 
 https://mp.weixin.qq.com/s/yyoUoIUBUPV5zkeE88P7Iw
 
@@ -257,6 +257,12 @@ https://mp.weixin.qq.com/s/yyoUoIUBUPV5zkeE88P7Iw
 只是比特币这东西价格起起落落，2018年第一季度，比特大陆豪赚20亿美元，利润甚至超过了近年风头甚高的NVIDIA，岂料第二季度，形势急转直下，坊间甚至有比特大陆亏损6、7亿美元的传闻。
 
 至于比特大陆的AI芯片，似乎对标的是NVIDIA的云服务领域。不是我小看比特大陆，AI芯片这东西光有钱，没有时间积累，是做不好的。
+
+### 2018.11
+
+http://finance.sina.com.cn/blockchain/roll/2018-11-16/doc-ihnvukff8764739.shtml
+
+算力之战：告诉你吴忌寒是怎么赢的 CSW是怎么输的
 
 # 通信协议
 
@@ -307,4 +313,3 @@ https加密那点事
 https://mp.weixin.qq.com/s/Lee4DRNCQuGCTTAsSYR8ng
 
 高性能网络编程之accept建立连接
-

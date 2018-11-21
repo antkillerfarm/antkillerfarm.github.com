@@ -218,6 +218,10 @@ https://mp.weixin.qq.com/s/GgwehPL4r-Y1pEd2k60Y_Q
 
 一文看懂蓝牙Mesh技术
 
+https://mp.weixin.qq.com/s/Mvq9UNEnHoUbmxocb-rqmQ
+
+LPWAN、LoRa、LoRaWAN的区别与联系
+
 # 各种智能家居通信技术比较
 
 <table>

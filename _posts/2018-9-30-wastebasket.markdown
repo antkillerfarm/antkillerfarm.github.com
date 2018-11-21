@@ -226,6 +226,10 @@ https://zhuanlan.zhihu.com/p/50311527
 
 数学笔记（Chapter 4-5. 代数几何和分析的基础）
 
+https://zhuanlan.zhihu.com/p/50524005
+
+数学笔记（Chapter 6. L-函数，第1课）
+
 ## LSM (Log Structured Merge)
 
 十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。

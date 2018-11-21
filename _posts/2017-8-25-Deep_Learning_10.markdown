@@ -86,10 +86,6 @@ https://mp.weixin.qq.com/s/BNWPTPl_vowAlQUQ7__wvQ
 
 有三说GANs
 
-https://mp.weixin.qq.com/s/QacQCrjh3KmrQSMp-G_rEg
-
-贝叶斯生成对抗网络
-
 https://zhuanlan.zhihu.com/p/24897387
 
 GAN的基本原理、应用和走向
@@ -312,4 +308,20 @@ Paper笔记：Dilated Residual Networks
 
 上图是ShuffleNet的Unit结构图，DWConv表示depthwise convolution，GConv表示pointwise group convolution。a是普通的Deep Residual Unit，b的进化用以提高精度，c的进一步进化用以减少计算量。
 
-无论是在Inception、DenseNet或者ShuffleNet里面，我们对所有通道产生的特征都是不分权重直接结合的，那为什么要认为所有通道的特征对模型的作用就是相等的呢？这是一个好问题，于是，ImageNet2017冠军SEnet就出来了。
+参考：
+
+https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg
+
+旷视科技提出新型卷积网络ShuffleNet，专为移动端设计
+
+https://mp.weixin.qq.com/s/0MvCnm46pgeMGEw-EdNv_w
+
+CNN模型之ShuffleNet
+
+https://mp.weixin.qq.com/s/tceLrEalafgL8R44DZYP9g
+
+旷视科技提出新型轻量架构ShuffleNet V2：从理论复杂度到实用设计准则
+
+https://mp.weixin.qq.com/s/Yhvuog6NZOlVWEZURyqWxA
+
+ShuffleNetV2：轻量级CNN网络中的桂冠

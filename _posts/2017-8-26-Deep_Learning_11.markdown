@@ -1,48 +1,10 @@
 ---
 layout: post
-title:  深度学习（十一）——Winograd（1）
+title:  深度学习（十一）——深度贝叶斯学习, Winograd（1）
 category: DL 
 ---
 
-# 花式卷积
-
-## 分组卷积（续）
-
-论文：
-
-《Squeeze-and-Excitation Networks》
-
-代码：
-
-https://github.com/hujie-frank/SENet
-
-![](/images/img2/SENet.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg
-
-旷视科技提出新型卷积网络ShuffleNet，专为移动端设计
-
-https://mp.weixin.qq.com/s/0MvCnm46pgeMGEw-EdNv_w
-
-CNN模型之ShuffleNet
-
-https://mp.weixin.qq.com/s/tLqsWWhzUU6TkDbhnxxZow
-
-Momenta详解ImageNet 2017夺冠架构SENet
-
-http://blog.csdn.net/u014380165/article/details/78006626
-
-SENet（Squeeze-and-Excitation Networks）算法笔记
-
-https://mp.weixin.qq.com/s/tceLrEalafgL8R44DZYP9g
-
-旷视科技提出新型轻量架构ShuffleNet V2：从理论复杂度到实用设计准则
-
-https://mp.weixin.qq.com/s/Yhvuog6NZOlVWEZURyqWxA
-
-ShuffleNetV2：轻量级CNN网络中的桂冠
+# 花式卷积（续）
 
 ## Separable convolution
 
@@ -177,6 +139,44 @@ Implementing convolution as a matrix multiplication（中文blog）
 https://mp.weixin.qq.com/s/ybI8kJPRn7sH-hJbc5uqnw
 
 CMU研究者探索新卷积方法：在实验中可媲美基准CNN
+
+# 深度贝叶斯学习
+
+https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og
+
+贝叶斯学习与未来人工智能
+
+https://mp.weixin.qq.com/s/Zd4rFU7Lebr4zmzxThNyVw
+
+详解珠算：清华大学开源的贝叶斯深度学习库
+
+https://mp.weixin.qq.com/s/RpaOrngeXTKycLb3iCygZw
+
+利用贝叶斯神经网络进行随机动力系统中的学习与策略搜索
+
+https://mp.weixin.qq.com/s/lKm_ypn5I7tSjoQHceJ0jQ
+
+概率编程：使用贝叶斯神经网络预测金融市场价格
+
+https://mp.weixin.qq.com/s/cDqxmRVQCIqdM5oiUh82YQ
+
+Yee Whye Teh：《贝叶斯深度学习与深度贝叶斯学习》
+
+https://mp.weixin.qq.com/s/Zk2YG-IJNhJxTBU8THSM-g
+
+让DL可解释？这一份66页贝叶斯深度学习教程告诉你
+
+https://mp.weixin.qq.com/s/-izo9VUdxN33pwVFGV_tjw
+
+299页PPT带你回顾深度贝叶斯学习最新发展脉络
+
+https://github.com/bayesgroup/deepbayes-2018
+
+Seminars DeepBayes Summer School 2018
+
+https://mp.weixin.qq.com/s/WCRYppBLdl_M4etUChnfgw
+
+PyMC3和Theano代码构建贝叶斯深度网络
 
 # Winograd
 

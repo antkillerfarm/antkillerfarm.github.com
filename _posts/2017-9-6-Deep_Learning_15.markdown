@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十五）——深度图像压缩, 人脸检测/识别（1）, 深度贝叶斯学习
+title:  深度学习（十五）——深度图像压缩, 人脸检测/识别（1）, SENet
 category: DL 
 ---
 
@@ -233,41 +233,56 @@ https://mp.weixin.qq.com/s/NfqFj5iCIkbRD34Eu2Lb5g
 
 MTCNN实时人脸检测网络详解与代码演示
 
-# 深度贝叶斯学习
+# SENet
 
-https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og
+无论是在Inception、DenseNet或者ShuffleNet里面，我们对所有通道产生的特征都是不分权重直接结合的，那为什么要认为所有通道的特征对模型的作用就是相等的呢？这是一个好问题，于是，ImageNet2017冠军SEnet就出来了。
 
-贝叶斯学习与未来人工智能
+论文：
 
-https://mp.weixin.qq.com/s/Zd4rFU7Lebr4zmzxThNyVw
+《Squeeze-and-Excitation Networks》
 
-详解珠算：清华大学开源的贝叶斯深度学习库
+代码：
 
-https://mp.weixin.qq.com/s/RpaOrngeXTKycLb3iCygZw
+https://github.com/hujie-frank/SENet
 
-利用贝叶斯神经网络进行随机动力系统中的学习与策略搜索
+Sequeeze-and-Excitation(SE) block并不是一个完整的网络结构，而是一个子结构，可以嵌到其他分类或检测模型中。
 
-https://mp.weixin.qq.com/s/lKm_ypn5I7tSjoQHceJ0jQ
+![](/images/img2/SENet.png)
 
-概率编程：使用贝叶斯神经网络预测金融市场价格
+上图就是SE block的示意图。其步骤如下：
 
-https://mp.weixin.qq.com/s/cDqxmRVQCIqdM5oiUh82YQ
+1.转换操作$$F_{tr}$$。这一步就是普通的卷积操作，将输入tensor的shape由$$W'\times H'\times C'$$变为$$W\times H\times C$$。
 
-Yee Whye Teh：《贝叶斯深度学习与深度贝叶斯学习》
+2.Squeeze操作。
 
-https://mp.weixin.qq.com/s/Zk2YG-IJNhJxTBU8THSM-g
+$$z_c = F_{sq}(u_c) = \frac{1}{H\times W}\sum_{i=1}^H \sum_{j=1}^W u_c(i,j)$$
 
-让DL可解释？这一份66页贝叶斯深度学习教程告诉你
+这实际上就是一个global average pooling。
 
-https://mp.weixin.qq.com/s/-izo9VUdxN33pwVFGV_tjw
+3.Excitation操作。
 
-299页PPT带你回顾深度贝叶斯学习最新发展脉络
+$$s=F_{ex}(z,W) = \sigma(g(z,W)) = \sigma(W_2 \sigma(W_1 z))$$
 
-https://github.com/bayesgroup/deepbayes-2018
+其中，$$W_1$$的维度是$$C/r \times C$$，这个r是一个缩放参数，在文中取的是16，这个参数的目的是为了减少channel个数从而降低计算量。
 
-Seminars DeepBayes Summer School 2018
+$$W_2$$的维度是$$C \times C/r$$，这样s的维度就恢复到$$1 \times 1 \times C$$，正好和z一致。
 
-https://mp.weixin.qq.com/s/WCRYppBLdl_M4etUChnfgw
+4.channel-wise multiplication。
 
-PyMC3和Theano代码构建贝叶斯深度网络
+$$\tilde{x_c} = F_{scale}(u_c, s_c)=s_c \cdot u_c$$
 
+![](/images/img2/SENet_2.png)
+
+![](/images/img2/SENet_3.png)
+
+上面两图演示了如何将SE block嵌入网络的办法。
+
+参考：
+
+https://mp.weixin.qq.com/s/tLqsWWhzUU6TkDbhnxxZow
+
+Momenta详解ImageNet 2017夺冠架构SENet
+
+http://blog.csdn.net/u014380165/article/details/78006626
+
+SENet（Squeeze-and-Excitation Networks）算法笔记

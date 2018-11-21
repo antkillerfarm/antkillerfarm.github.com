@@ -232,6 +232,10 @@ https://blog.csdn.net/zhangjunhit
 
 一个DL+CV的blog
 
+https://blog.csdn.net/u014380165
+
+一个DL+CV的blog
+
 ## 项目集锦
 
 https://mp.weixin.qq.com/s/ZNNgEB9rFjAE8SdfMo9NLA
