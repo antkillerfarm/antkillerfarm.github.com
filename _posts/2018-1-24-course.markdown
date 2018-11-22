@@ -361,3 +361,17 @@ UCB的数据科学基础课程：The Foundations of Data Science
 http://www.ds100.org/
 
 UCB的数据科学高级课程：Principles and Techniques of Data Science
+
+# TensorFlow+
+
+https://mp.weixin.qq.com/s/MT1YaMm4KBWsIZeHehahgw
+
+TensorFlow重大升级：自动将Python代码转为TF Graph，大幅简化动态图处理！
+
+https://mp.weixin.qq.com/s/zeZs48XbYJGhvOoIysZ8QA
+
+Docker Compose+GPU+TensorFlow所产生的奇妙火花
+
+https://mp.weixin.qq.com/s/sOggiB57D-ekWOsbL6TY_A
+
+TensorFlow中那些鲜为人知却又极其实用的知识

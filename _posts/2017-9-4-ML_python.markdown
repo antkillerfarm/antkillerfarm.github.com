@@ -400,6 +400,14 @@ https://mp.weixin.qq.com/s/5peMiGXNnviAjMP76tV3pw
 
 Python高性能计算库——Numba
 
+## Autograd
+
+一个基于numpy的自动求导库。它是由Harvard Intelligent Probabilistic Systems Group开发的。
+
+官网：
+
+https://github.com/HIPS/autograd
+
 ## Face Recognition
 
 这是一个人脸识别的软件包。
@@ -485,28 +493,6 @@ https://seaborn.pydata.org
 https://mp.weixin.qq.com/s/hPbTZHR2iDH4t1eQghNvUQ
 
 数据可视化详解+代码演练
-
-## mlpy
-
-mlpy是一个开源的ML库。只是它最近的一次更新，已经是2012年的事情了。
-
-官网：
-
-http://mlpy.sourceforge.net
-
-## Pyecharts
-
-pyecharts是一个用于生成Echarts图表的类库。Echarts是百度开源的一个数据可视化JS库。
-
-官网：
-
-http://pyecharts.org/
-
-参考：
-
-https://mp.weixin.qq.com/s/3T594c4DzuRmPW5A4zu8Dg
-
-Pyecharts：极其强大的Python数据可视化模块
 
 ## ImageAI
 

@@ -114,6 +114,10 @@ https://mp.weixin.qq.com/s/YzuMtFUE3aw7rRplVzAKmQ
 
 短视频识别，都有那些行业标准？
 
+https://mp.weixin.qq.com/s/iR7SPg_3AStJh5wzkEpoAg
+
+这个“多模态视频人物数据集”里，藏了杨幂、吴亦凡和鹿晗
+
 ## 人脸/行为
 
 http://blog.csdn.net/wangkr111/article/details/44514097

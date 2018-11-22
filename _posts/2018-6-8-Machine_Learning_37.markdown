@@ -190,6 +190,10 @@ https://mp.weixin.qq.com/s/0z4mt8iVk5gLRDwbhznV2g
 
 如何理解深度学习的优化？通过分析梯度下降的轨迹
 
+https://mp.weixin.qq.com/s/5MI1J16sEkr4UR4rSrw1wA
+
+Michael Jordan新研究：采样可以比优化更快地收敛
+
 # 推荐系统进阶
 
 除了《机器学习（十五～十六）》提及的ALS和PCA之外，相关的算法还包括：

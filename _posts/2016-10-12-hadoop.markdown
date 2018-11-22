@@ -165,6 +165,12 @@ jps是Java提供的虚拟机进程查看工具。
 
 http://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html
 
+## 参考
+
+https://mp.weixin.qq.com/s/Koz2xOnmVgKFeCr2Xqe9VQ
+
+YARN，母系社会的运行架构
+
 # Hbase
 
 官网：
@@ -310,40 +316,16 @@ https://blog.csdn.net/odailidong/article/details/41794403
 
 Hbase万亿级存储性能优化总结
 
-# Restful
+# TensorFlow
 
-相比于WebService，Restful是一种简单的多的编程风格。
+https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
 
-比如我们使用搜索引擎的时候，输入的地址：
+简易浣熊识别器是如何实现的
 
-`https://www.bing.com/search?q=java+restful`
+http://www.jianshu.com/p/d443aab9bcb1
 
-就是一个典型的Restful请求。
+在TensorFlow上使用LSTM进行情感分析
 
-有关Restful风格的内容参见：
+https://mp.weixin.qq.com/s/gW_KX6eF9XEsSUO1UzJ3WQ
 
-https://segmentfault.com/a/1190000006735330
-
-Restful应用分析
-
-http://www.drdobbs.com/web-development/restful-web-services-a-tutorial/240169069
-
-RESTful Web Services: A Tutorial
-
-http://www.ibm.com/developerworks/library/ws-restful/index.html
-
-RESTful Web services: The basics
-
-还是那句老话，讨论一个通讯格式或协议，不讨论交互报文的都不是好文章，或者至少不是一个入门的好文章。
-
-常见的Web框架如Spring、Struts都提供了对Restful的支持。
-
-专门负责Restful的框架还有Jersey。其官网：
-
-https://jersey.java.net/
-
-示例：
-
-https://github.com/feuyeux/jax-rs2-guide-II
-
-
+基于LSTM的情感分析

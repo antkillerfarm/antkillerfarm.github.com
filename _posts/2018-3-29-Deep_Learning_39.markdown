@@ -132,14 +132,6 @@ http://blog.csdn.net/v_JULY_v/article/details/52683959
 
 没GPU也能玩梵高作画：Ubuntu tensorflow CPU版
 
-https://github.com/cysmith/neural-style-tf
-
-TensorFlow (Python API) implementation of Neural Style.这个项目实现了两张图片的画风融合，非常牛。
-
-https://github.com/jinfagang/pytorch_style_transfer
-
-这个和上面的一样，不过是用pytorch实现的。
-
 http://mp.weixin.qq.com/s/zNmJuevHaagKbyGFdKTwoQ
 
 tensorflow实现基于深度学习的图像补全

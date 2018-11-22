@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Git, 爬虫, ZeroMQ
+title:  Git, 爬虫, ZeroMQ, Restful
 category: technology 
 ---
 
@@ -392,28 +392,38 @@ https://blog.csdn.net/w174504744/article/details/73187697
 
 ZeroMQ
 
-# TensorFlow
+# Restful
 
-https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
+相比于WebService，Restful是一种简单的多的编程风格。
 
-简易浣熊识别器是如何实现的
+比如我们使用搜索引擎的时候，输入的地址：
 
-http://www.jianshu.com/p/d443aab9bcb1
+`https://www.bing.com/search?q=java+restful`
 
-在TensorFlow上使用LSTM进行情感分析
+就是一个典型的Restful请求。
 
-https://mp.weixin.qq.com/s/gW_KX6eF9XEsSUO1UzJ3WQ
+有关Restful风格的内容参见：
 
-基于LSTM的情感分析
+https://segmentfault.com/a/1190000006735330
 
-https://mp.weixin.qq.com/s/MT1YaMm4KBWsIZeHehahgw
+Restful应用分析
 
-TensorFlow重大升级：自动将Python代码转为TF Graph，大幅简化动态图处理！
+http://www.drdobbs.com/web-development/restful-web-services-a-tutorial/240169069
 
-https://mp.weixin.qq.com/s/zeZs48XbYJGhvOoIysZ8QA
+RESTful Web Services: A Tutorial
 
-Docker Compose+GPU+TensorFlow所产生的奇妙火花
+http://www.ibm.com/developerworks/library/ws-restful/index.html
 
-https://mp.weixin.qq.com/s/sOggiB57D-ekWOsbL6TY_A
+RESTful Web services: The basics
 
-TensorFlow中那些鲜为人知却又极其实用的知识
+还是那句老话，讨论一个通讯格式或协议，不讨论交互报文的都不是好文章，或者至少不是一个入门的好文章。
+
+常见的Web框架如Spring、Struts都提供了对Restful的支持。
+
+专门负责Restful的框架还有Jersey。其官网：
+
+https://jersey.java.net/
+
+示例：
+
+https://github.com/feuyeux/jax-rs2-guide-II

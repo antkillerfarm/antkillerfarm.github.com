@@ -16,13 +16,13 @@ a）Meta graph:
 
 b) Checkpoint file:
 
-二进制文件包含所有的weights,biases,gradients和其他variables的值。这个文件使用.ckpt后缀，有2个文件：
+有2个文件：
 
 mymodel.data-00000-of-00001
 
 mymodel.index
 
-.data文件用于保存训练好的variables，以供未来的推断之用。
+.data文件包含所有的weights,biases,gradients和其他variables的值。
 
 tensorflow还有一个叫checkpoint的文件，用来简单保存最近一次的checkpoint记录。
 
@@ -58,9 +58,19 @@ https://mp.weixin.qq.com/s/3GfxnwzIeeQj1LVSYKnZjQ
 
 如何保存和恢复TensorFlow训练的模型？
 
+## .pb文件
+
+TensorFlow常用的模型保存格式还有.pb格式。这种格式下，模型和权重被整合为一个.pb文件，便于模型的发布和部署。相对应的，这种格式对于train就不太友好了。
+
+参考：
+
 https://www.jianshu.com/p/243d4f0b656c
 
 TensorFlow自定义模型导出：将.ckpt格式转化为.pb格式
+
+https://www.jianshu.com/p/c9fd5c01715e
+
+TensorFlow模型保存与恢复
 
 ## 模型文件的图操作
 

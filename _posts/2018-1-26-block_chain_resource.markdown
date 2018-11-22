@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  区块链参考资源, 图像渲染, 雷达 & 信号处理
+title:  区块链参考资源, 雷达 & 信号处理
 category: resource 
 ---
 

@@ -399,3 +399,7 @@ https://mp.weixin.qq.com/s/l4W7qmKJ4Pc-rlF-KvhrPA
 https://mp.weixin.qq.com/s/O3SIexXUeWM1svdI_ygrDg
 
 非精确图匹配方法综述
+
+https://mp.weixin.qq.com/s/vOZust2RceSVoYPH6nauJw
+
+机器学习模型该如何选择和评估？希望这个小册子能帮到你！

@@ -210,6 +210,14 @@ https://mp.weixin.qq.com/s/5vDSrWeUvlBuZgmX0R9pBQ
 
 斯坦福“黑盒学习”研究：使用神经变分推理的无向图模型，可替代“采样”
 
+https://mp.weixin.qq.com/s/XESTrLMERQPR9eXcFA56gg
+
+神经符号系统：让机器善解人意
+
+https://mp.weixin.qq.com/s/GYe1psxy1KMCbV7f3K8f4Q
+
+神经规则引擎：让符号规则学会变通
+
 # LSM
 
 liquid state machine (LSM)
@@ -297,3 +305,7 @@ Transformer注解及PyTorch实现（上）
 https://mp.weixin.qq.com/s/YDaSv5oHLEtyJrp4Y5e64A
 
 Transformer注解及PyTorch实现（下）
+
+https://mp.weixin.qq.com/s/j0KRAOf8Sd0_tTlRadnw9Q
+
+利用篇章信息提升机器翻译质量

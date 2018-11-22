@@ -6,6 +6,42 @@ category: AI
 
 # Machine Learning之Python篇
 
+## Pyecharts
+
+pyecharts是一个用于生成Echarts图表的类库。Echarts是百度开源的一个数据可视化JS库。
+
+官网：
+
+http://pyecharts.org/
+
+参考：
+
+https://mp.weixin.qq.com/s/3T594c4DzuRmPW5A4zu8Dg
+
+Pyecharts：极其强大的Python数据可视化模块
+
+## mlpy
+
+mlpy是一个开源的ML库。只是它最近的一次更新，已经是2012年的事情了。
+
+官网：
+
+http://mlpy.sourceforge.net
+
+## JAX
+
+一款由谷歌团队打造（非官方发布），用于从纯Python和Numpy机器学习程序中生成高性能加速器（accelerator）代码，且特定于域的跟踪JIT编译器。
+
+代码：
+
+https://github.com/google/jax
+
+参考：
+
+https://mp.weixin.qq.com/s/IMMdbF33ZHEz7N_XwgIhHA
+
+试试谷歌这个新工具：说不定比TensorFlow还好用！
+
 ## 参考
 
 https://mp.weixin.qq.com/s/S7gnAdekPFcyd4ni1m9phg
@@ -403,15 +439,3 @@ https://mp.weixin.qq.com/s/8H8GrAe7wMaLGWKjKUVp2Q
 https://mp.weixin.qq.com/s/dARWbR1ghho0yX02lNA-gw
 
 Python绘制histogram直方图
-
-https://mp.weixin.qq.com/s/-s5K8gl4Xdjh_1xgTn9PZg
-
-维基百科中的数据科学：手把手教你用Python读懂全球最大百科全书
-
-https://mp.weixin.qq.com/s/LiilfmvA5YUaY3QUQD6odA
-
-如何用Python将数据预处理速度提升2至6倍？
-
-https://mp.weixin.qq.com/s/QZT1SLCVFXBE-1FNNhWk0g
-
-利用AllenNLP，百行Python代码训练情感分类器

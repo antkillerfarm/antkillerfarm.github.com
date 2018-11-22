@@ -1,8 +1,62 @@
 ---
 layout: post
-title:  深度学习（十六）——李飞飞
+title:  深度学习（十六）——SENet, 李飞飞, 深度ISP
 category: DL 
 ---
+
+# SENet
+
+无论是在Inception、DenseNet或者ShuffleNet里面，我们对所有通道产生的特征都是不分权重直接结合的，那为什么要认为所有通道的特征对模型的作用就是相等的呢？这是一个好问题，于是，ImageNet2017冠军SEnet就出来了。
+
+论文：
+
+《Squeeze-and-Excitation Networks》
+
+代码：
+
+https://github.com/hujie-frank/SENet
+
+Sequeeze-and-Excitation(SE) block并不是一个完整的网络结构，而是一个子结构，可以嵌到其他分类或检测模型中。
+
+![](/images/img2/SENet.png)
+
+上图就是SE block的示意图。其步骤如下：
+
+1.转换操作$$F_{tr}$$。这一步就是普通的卷积操作，将输入tensor的shape由$$W'\times H'\times C'$$变为$$W\times H\times C$$。
+
+2.Squeeze操作。
+
+$$z_c = F_{sq}(u_c) = \frac{1}{H\times W}\sum_{i=1}^H \sum_{j=1}^W u_c(i,j)$$
+
+这实际上就是一个global average pooling。
+
+3.Excitation操作。
+
+$$s=F_{ex}(z,W) = \sigma(g(z,W)) = \sigma(W_2 \sigma(W_1 z))$$
+
+其中，$$W_1$$的维度是$$C/r \times C$$，这个r是一个缩放参数，在文中取的是16，这个参数的目的是为了减少channel个数从而降低计算量。
+
+$$W_2$$的维度是$$C \times C/r$$，这样s的维度就恢复到$$1 \times 1 \times C$$，正好和z一致。
+
+4.channel-wise multiplication。
+
+$$\tilde{x_c} = F_{scale}(u_c, s_c)=s_c \cdot u_c$$
+
+![](/images/img2/SENet_2.png)
+
+![](/images/img2/SENet_3.png)
+
+上面两图演示了如何将SE block嵌入网络的办法。
+
+参考：
+
+https://mp.weixin.qq.com/s/tLqsWWhzUU6TkDbhnxxZow
+
+Momenta详解ImageNet 2017夺冠架构SENet
+
+http://blog.csdn.net/u014380165/article/details/78006626
+
+SENet（Squeeze-and-Excitation Networks）算法笔记
 
 # 李飞飞
 
@@ -64,3 +118,40 @@ http://vision.stanford.edu/lijiali/
 
 http://zacklipton.com/
 
+# 深度ISP
+
+https://mp.weixin.qq.com/s/wA85XFQXeypuoqFnmN2P4g
+
+降噪的新时代
+
+https://mp.weixin.qq.com/s/919VEvennHEG3iXKkMZoQQ
+
+不止是去噪---从去噪看AI ISP的趋势
+
+https://mp.weixin.qq.com/s/1HA6XKnWpqVd8k7IIfzB7w
+
+利用卷积自编码器对图片进行降噪
+
+https://zhuanlan.zhihu.com/p/39512000
+
+Noise2Noise：图像降噪，无需干净样本
+
+https://mp.weixin.qq.com/s/_tvOQPvybqmvLF19kHcbFg
+
+北大开源ECCV2018深度去雨算法：RESCAN
+
+https://mp.weixin.qq.com/s/Wdxkvlz4nLbJS_gWqHwMjw
+
+无需额外硬件，全卷积网络让机器学习学会夜视能力
+
+https://mp.weixin.qq.com/s/iH7gbRn4opLsWgKWoVFpBA
+
+腾讯优图&港科大提出较大前景运动下的深度高动态范围成像
+
+https://mp.weixin.qq.com/s/WXVZkqCGlj6ym5YrSZS3Vg
+
+谷歌普林斯顿提出首个端到端立体双目系统深度学习方案
+
+https://mp.weixin.qq.com/s/9yfTO2jHz69-k1MsUGIM0Q
+
+双目立体放大！谷歌刚刚开源的这篇论文可能会成为手机双摄的新玩法

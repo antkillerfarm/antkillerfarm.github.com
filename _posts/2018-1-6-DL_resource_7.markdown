@@ -286,10 +286,6 @@ https://mp.weixin.qq.com/s/ora66weNks8tHlFTKJrKSA
 
 谷歌AI自动重构3D大脑，最高精度绘制神经元
 
-https://mp.weixin.qq.com/s/WXVZkqCGlj6ym5YrSZS3Vg
-
-谷歌普林斯顿提出首个端到端立体双目系统深度学习方案
-
 https://mp.weixin.qq.com/s/54twfwVlM7UQbrFvOAQ2_w
 
 fine-gained image classification

@@ -308,6 +308,10 @@ https://mp.weixin.qq.com/s/v4A--nGiDTt58pZyIzepeg
 
 比拼Kafka，大数据分析新秀Pulsar到底好在哪
 
+https://mp.weixin.qq.com/s/x4GW5zvjD5Fyc-NrXDqpmA
+
+Kafka不够好，智联招聘基于Pulsar打造企业级事件中心
+
 # MXNet
 
 https://mp.weixin.qq.com/s/50uGupiwU2UVuVeMm_bTag

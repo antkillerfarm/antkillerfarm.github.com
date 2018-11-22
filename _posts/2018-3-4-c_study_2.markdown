@@ -94,6 +94,48 @@ HBuilder，一个html编辑的IDE。
 
 # Python
 
+## zip
+
+Python的zip函数和数据压缩的zip算法没有任何关系。
+
+它的典型用法如下：
+
+{% highlight python %}
+>>> name=['song','ping','python']
+>>> age=[26,26,27]
+>>> zip(name,age)
+[('song', 26), ('ping', 26), ('python', 27)]
+>>> for n,a in zip(name,age):
+...   print n,a
+{% endhighlight %}
+
+zip函数属于Python的Built-in Functions，类似的函数还有：
+
+https://docs.python.org/3.6/library/functions.html
+
+参考：
+
+http://www.cnblogs.com/frydsh/archive/2012/07/10/2585370.html
+
+Python的zip函数
+
+## signal
+
+signal包用于处理系统消息。
+
+代码示例：
+
+{% highlight python %}
+import signal
+
+def handler(signum, frame):
+    print 'Signal handler called with signal', signum
+    raise IOError("Couldn't open device!")
+
+# Set the signal handler and a 5-second alarm
+signal.signal(signal.SIGALRM, handler)
+{% endhighlight %}
+
 ## Captcha
 
 Captcha是一个Python验证码库，能够生成音频和图片验证码。
@@ -356,23 +398,11 @@ https://mp.weixin.qq.com/s/rE5OEFwwFxJNb_Omwmqvzw
 
 符合语言习惯的Python优雅编程技巧
 
+https://blog.csdn.net/longerzone/article/details/17889969
+
+Python下调用Linux的Shell命令
+
 # DL参考资源
-
-https://mp.weixin.qq.com/s/fqpZ8EHgiNupXumvTMSecw
-
-北大团队研发“车脸”识别系统，不看车牌看外观特征实现精确识别
-
-https://mp.weixin.qq.com/s/ws1R-VPyJY6J18OttBDYog
-
-超少量数据训练神经网络：IEEE论文提出径向变换实现图像增强
-
-https://mp.weixin.qq.com/s/eyl0NMa1p_RmQIwnweuBgw
-
-10张图盘点计算机视觉、语音和文本理解里程碑
-
-https://mp.weixin.qq.com/s/IMx9lcMVAyB9hy_77DaJ3Q
-
-孙剑：计算力增加10000倍，算法如何设计
 
 https://mp.weixin.qq.com/s/-b8FuEQlpEb5G0L0QAxVEA
 
@@ -405,15 +435,3 @@ UC Berkeley新研究：通过深度学习建模注意点采样阵列
 https://mp.weixin.qq.com/s/fJMae88M8GEQi80DfbCKjQ
 
 从“局部连接”回到“全连接”的神经网络
-
-https://mp.weixin.qq.com/s/lrl4si8Aeh7Pl76leBSmeA
-
-Nature论文解读：用于改善加权生物网络信噪比的网络增强方法
-
-https://mp.weixin.qq.com/s/0AOOiyWQqpGIdG4-9UmF8Q
-
-DeepMind提出视觉问题回答新模型，CLEVR准确率达98.8％
-
-https://mp.weixin.qq.com/s/8dVronQoeZLJI2g49AljLg
-
-技术讲解概率机器学习——深度学习革命之后AI道路

@@ -183,7 +183,11 @@ uber在德语中，表示above或over。uber-jar实际上就是将程序的依�
 
 ### 搭建Maven私服
 
-Artifactory可用于搭建团队内部的Maven私服。官网：
+#### Artifactory
+
+Artifactory可用于搭建团队内部的Maven私服。其企业版还支持Pypi、npm等多种仓库。
+
+官网：
 
 https://www.jfrog.com/open-source/
 
@@ -192,6 +196,16 @@ https://www.jfrog.com/open-source/
 参考：
 
 http://blog.csdn.net/calvinxiu/article/details/1713323
+
+真正的maven私服搭建器--Artifactory
+
+#### Nexus Repository Manager
+
+这是另一个Maven私服，也支持多种仓库。
+
+官网：
+
+https://www.sonatype.com
 
 ## Gradle
 
@@ -289,17 +303,9 @@ https://mp.weixin.qq.com/s/ivtMohnpgJGmbQJdo_xr9w
 
 UCL等三强联手提出完全可微自适应神经树：神经网络与决策树完美结合
 
-https://mp.weixin.qq.com/s/9yfTO2jHz69-k1MsUGIM0Q
-
-双目立体放大！谷歌刚刚开源的这篇论文可能会成为手机双摄的新玩法
-
 https://mp.weixin.qq.com/s/ugK5U6A2tqYkJwWfNWPuKg
 
 计算机视觉深度学习中的几何结构与不确定性
-
-https://mp.weixin.qq.com/s/XESTrLMERQPR9eXcFA56gg
-
-神经符号系统：让机器善解人意
 
 https://mp.weixin.qq.com/s/vTtKUagiFD55mcQIeGDxQw
 
@@ -321,11 +327,6 @@ https://mp.weixin.qq.com/s/y0SAI0f3w42z-nnoorFoEQ
 
 共享空间学习共有特征的异源图像匹配
 
-https://mp.weixin.qq.com/s/GYe1psxy1KMCbV7f3K8f4Q
-
-神经规则引擎：让符号规则学会变通
-
 https://mp.weixin.qq.com/s/M7w7tMVd23YToIW7DypYjA
 
 用DL实现Bug自动归类：微软研究院提出DBRNN-A
-

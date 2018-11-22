@@ -8,6 +8,34 @@ category: DL
 
 ## 参考
 
+https://mp.weixin.qq.com/s/SqU74jYBrjtp9L-bnBuboA
+
+教你完美实现深度强化学习算法DQN
+
+https://zhuanlan.zhihu.com/p/31579144
+
+让我们从零开始做一个机械手臂(强化学习)
+
+https://mp.weixin.qq.com/s/FiR_GRYqJYpJRO-2p44-Cg
+
+伯克利强化学习新研究：机器人只用几分钟随机数据就能学会轨迹跟踪
+
+https://mp.weixin.qq.com/s/u49cuDV21ITs1aV9tJR85g
+
+Pieter Abbeel：《深度学习在机器人中的应用》
+
+https://mp.weixin.qq.com/s/_dHjZQ_7_7H34PHhV_lC3w
+
+全新强化学习算法详解，看贝叶斯神经网络如何进行策略搜索
+
+https://mp.weixin.qq.com/s/RH4ifA46njdC7fyRI9kVMg
+
+深度Q网络与视觉格斗类游戏
+
+https://mp.weixin.qq.com/s/K-z_dX2-NepkEHbr45QlvQ
+
+微软研究院开源项目TextWorld：可用于强化学习训练的文本游戏
+
 https://mp.weixin.qq.com/s/K2DW_ntSWrlySpxgorF9dA
 
 Python强化学习实战，Anaconda公司的高级数据科学家讲解
@@ -331,4 +359,3 @@ robot浅谈
 https://mp.weixin.qq.com/s/f-rmdWq3kJUJGhuPwU8JtQ
 
 深度策略梯度算法是真正的策略梯度算法吗？
-

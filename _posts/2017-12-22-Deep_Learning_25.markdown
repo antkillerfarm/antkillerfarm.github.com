@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十五）——Attention（2）, 深度ISP
+title:  深度学习（二十五）——Attention（2）
 category: DL 
 ---
 
@@ -232,32 +232,3 @@ https://mp.weixin.qq.com/s/MZ8qSQzXqZQPQa97BKitHA
 
 深入理解注意力机制
 
-# 深度ISP
-
-https://mp.weixin.qq.com/s/wA85XFQXeypuoqFnmN2P4g
-
-降噪的新时代
-
-https://mp.weixin.qq.com/s/919VEvennHEG3iXKkMZoQQ
-
-不止是去噪---从去噪看AI ISP的趋势
-
-https://mp.weixin.qq.com/s/1HA6XKnWpqVd8k7IIfzB7w
-
-利用卷积自编码器对图片进行降噪
-
-https://zhuanlan.zhihu.com/p/39512000
-
-Noise2Noise：图像降噪，无需干净样本
-
-https://mp.weixin.qq.com/s/_tvOQPvybqmvLF19kHcbFg
-
-北大开源ECCV2018深度去雨算法：RESCAN
-
-https://mp.weixin.qq.com/s/Wdxkvlz4nLbJS_gWqHwMjw
-
-无需额外硬件，全卷积网络让机器学习学会夜视能力
-
-https://mp.weixin.qq.com/s/iH7gbRn4opLsWgKWoVFpBA
-
-腾讯优图&港科大提出较大前景运动下的深度高动态范围成像

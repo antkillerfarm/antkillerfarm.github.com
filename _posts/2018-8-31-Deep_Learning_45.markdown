@@ -364,6 +364,10 @@ https://mp.weixin.qq.com/s/fz-bQMAi5bs2_bvRhf3ERg
 
 从Word Embedding到Bert模型—自然语言处理中的预训练技术发展史
 
+https://mp.weixin.qq.com/s/pD4it8vQ-aE474uSMQG0YQ
+
+两行代码玩转 Google BERT句向量词向量
+
 # DMN
 
 Question answering是自然语言处理领域的一个复杂问题。它需要对文本的理解力和推理能力。大部分NLP问题都可以转化为一个QA问题。Dynamic Memory Networks可以用来处理QA问题。DMN的输入包含事实输入，问题输入，经过内部处理形成片段记忆，最终产生问题的答案。

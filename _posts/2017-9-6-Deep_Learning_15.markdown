@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十五）——深度图像压缩, 人脸检测/识别（1）, SENet
+title:  深度学习（十五）——深度图像压缩, 人脸检测/识别（1）
 category: DL 
 ---
 
@@ -50,13 +50,31 @@ https://www.zhihu.com/question/29594460
 
 新海诚风格的画面是手绘的还是Photoshop就可以达到的？后期过程是怎样的？
 
-## fast style transfer
+## Texture Networks: Feed-forward Synthesis of Textures and Stylized Images
 
-论文：
+这篇论文属于fast style transfer类的改进。它是Skolkovo Institute of Science and Technology & Yandex的Dmitry Ulyanov的作品。
 
-《Texture Networks: Feed-forward Synthesis of Textures and Stylized Images》
+Dmitry Ulyanov的个人主页：
 
-《Perceptual Losses for Real-Time Style Transfer and Super-Resolution》
+https://dmitryulyanov.github.io
+
+>Skolkovo位于莫斯科郊外，相当于俄国的硅谷。
+
+代码：
+
+https://github.com/DmitryUlyanov/texture_nets
+
+![](/images/img2/Texture_Networks.png)
+
+
+
+## Perceptual Losses for Real-Time Style Transfer and Super-Resolution
+
+这篇论文是李飞飞组的Justin Johnson的作品。
+
+Justin Johnson的个人主页：
+
+https://cs.stanford.edu/people/jcjohns/
 
 代码：
 
@@ -64,7 +82,7 @@ https://github.com/OlavHN/fast-neural-style
 
 https://github.com/lengstrom/fast-style-transfer/
 
-
+![](/images/img2/RTST.png)
 
 
 参考：
@@ -126,6 +144,14 @@ https://blog.csdn.net/Hungryof/article/details/71512406
 https://mp.weixin.qq.com/s/8Fz6Q-6VgJsAko0K7HDsow
 
 一个模型搞定所有风格转换，直接在浏览器实现（demo+代码）
+
+https://github.com/cysmith/neural-style-tf
+
+TensorFlow (Python API) implementation of Neural Style.这个项目实现了两张图片的画风融合，非常牛。
+
+https://github.com/jinfagang/pytorch_style_transfer
+
+这个和上面的一样，不过是用pytorch实现的。
 
 # 深度图像压缩
 
@@ -237,56 +263,3 @@ https://mp.weixin.qq.com/s/NfqFj5iCIkbRD34Eu2Lb5g
 
 MTCNN实时人脸检测网络详解与代码演示
 
-# SENet
-
-无论是在Inception、DenseNet或者ShuffleNet里面，我们对所有通道产生的特征都是不分权重直接结合的，那为什么要认为所有通道的特征对模型的作用就是相等的呢？这是一个好问题，于是，ImageNet2017冠军SEnet就出来了。
-
-论文：
-
-《Squeeze-and-Excitation Networks》
-
-代码：
-
-https://github.com/hujie-frank/SENet
-
-Sequeeze-and-Excitation(SE) block并不是一个完整的网络结构，而是一个子结构，可以嵌到其他分类或检测模型中。
-
-![](/images/img2/SENet.png)
-
-上图就是SE block的示意图。其步骤如下：
-
-1.转换操作$$F_{tr}$$。这一步就是普通的卷积操作，将输入tensor的shape由$$W'\times H'\times C'$$变为$$W\times H\times C$$。
-
-2.Squeeze操作。
-
-$$z_c = F_{sq}(u_c) = \frac{1}{H\times W}\sum_{i=1}^H \sum_{j=1}^W u_c(i,j)$$
-
-这实际上就是一个global average pooling。
-
-3.Excitation操作。
-
-$$s=F_{ex}(z,W) = \sigma(g(z,W)) = \sigma(W_2 \sigma(W_1 z))$$
-
-其中，$$W_1$$的维度是$$C/r \times C$$，这个r是一个缩放参数，在文中取的是16，这个参数的目的是为了减少channel个数从而降低计算量。
-
-$$W_2$$的维度是$$C \times C/r$$，这样s的维度就恢复到$$1 \times 1 \times C$$，正好和z一致。
-
-4.channel-wise multiplication。
-
-$$\tilde{x_c} = F_{scale}(u_c, s_c)=s_c \cdot u_c$$
-
-![](/images/img2/SENet_2.png)
-
-![](/images/img2/SENet_3.png)
-
-上面两图演示了如何将SE block嵌入网络的办法。
-
-参考：
-
-https://mp.weixin.qq.com/s/tLqsWWhzUU6TkDbhnxxZow
-
-Momenta详解ImageNet 2017夺冠架构SENet
-
-http://blog.csdn.net/u014380165/article/details/78006626
-
-SENet（Squeeze-and-Excitation Networks）算法笔记

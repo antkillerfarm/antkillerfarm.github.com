@@ -253,6 +253,18 @@ https://mp.weixin.qq.com/s/0oVG7zMi08dzMQrk43T3mw
 
 ## 参考（续）
 
+https://mp.weixin.qq.com/s/-s5K8gl4Xdjh_1xgTn9PZg
+
+维基百科中的数据科学：手把手教你用Python读懂全球最大百科全书
+
+https://mp.weixin.qq.com/s/LiilfmvA5YUaY3QUQD6odA
+
+如何用Python将数据预处理速度提升2至6倍？
+
+https://mp.weixin.qq.com/s/QZT1SLCVFXBE-1FNNhWk0g
+
+利用AllenNLP，百行Python代码训练情感分类器
+
 https://mp.weixin.qq.com/s/4s7lDKlQjV1mUoVv558Y7Q
 
 面向云数据库，超低延迟文件系统PolarFS诞生了
@@ -297,28 +309,3 @@ https://mp.weixin.qq.com/s/vAn_rnUt036-3jy7ZahF8w
 
 文本挖掘，带你看金庸笔下不一样的恩怨情仇
 
-# DL参考资源
-
-https://mp.weixin.qq.com/s/oltHCTombWE2WP_zbbOr3A
-
-Deep Learning之训练过程中出现NaN问题
-
-http://mp.weixin.qq.com/s/sIIoGilZgQHn4jDiYzEelw
-
-大咖解读Bengio笔记——邓侃：用深度学习模型，解构并重构人类思维
-
-http://mp.weixin.qq.com/s/Ybq6hSTPpyYQSNGJg1tgeQ
-
-AI距离匹敌人类大脑还有多远？人工神经网络和生物神经网络最详细对比
-
-http://mp.weixin.qq.com/s/UKu9T5zS1Z2dfNB1YsYGkQ
-
-NEAT学习：教机器自我编程
-
-https://mp.weixin.qq.com/s/KX85CCpYrXFOvdTU5Q4Frg
-
-阿里巴巴论文提出针对影视作品的语音情感识别信息融合框架
-
-https://mp.weixin.qq.com/s/XnCBiTqFVDh_4oBZdUoxew
-
-Bengio等提出稀疏注意力回溯：长期依赖关系建模的更一般化机制
