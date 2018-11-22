@@ -300,10 +300,6 @@ https://niessner.github.io/Matterport/
 
 全球最大的3D数据集公开了！标记好的10800张全景图
 
-https://mp.weixin.qq.com/s/M3s3z3YnEBvUxpDVGFVKHw
-
-斯坦福吴恩达团队公布最大医学影像数据集
-
 https://mp.weixin.qq.com/s/q2lsD4MSqQG-LqRmVjEHeg
 
 图像配对数据集TTL：展现人类和机器判断图像相似性的差异
@@ -331,10 +327,6 @@ Facebook，MIT等发布大规模卫星图像理解数据挑战赛DeepGlobe 2018
 https://mp.weixin.qq.com/s/WPESySGMv_ehSt6oNUkVGg
 
 视频语义显著实例分割数据集SESIV
-
-https://mp.weixin.qq.com/s/AW5PGDXCTPMf8hwsPxOfjg
-
-NIHCC发布迄今世界最大的CT医学影像数据集
 
 https://mp.weixin.qq.com/s/fR8-zODLNp24nlR5dJ85Nw
 

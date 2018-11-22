@@ -192,6 +192,20 @@ https://mp.weixin.qq.com/s/9k2aorOp_zc10JKf9F9Evw
 
 上海交大和厦门大学联合发布大规模驾驶策略学习数据集DBNet
 
+## 医疗
+
+https://mp.weixin.qq.com/s/849fLGndmaRvz_oWt6HWtg
+
+一文道尽医学图像数据集与竞赛
+
+https://mp.weixin.qq.com/s/AW5PGDXCTPMf8hwsPxOfjg
+
+NIHCC发布迄今世界最大的CT医学影像数据集
+
+https://mp.weixin.qq.com/s/M3s3z3YnEBvUxpDVGFVKHw
+
+斯坦福吴恩达团队公布最大医学影像数据集
+
 ## Other
 
 https://mp.weixin.qq.com/s/VCJoBf2ECdvyRLU7atciYA

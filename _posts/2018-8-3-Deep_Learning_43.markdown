@@ -20,6 +20,16 @@ https://mp.weixin.qq.com/s/X96oI-duHwyCFAR79inlig
 
 真实到可怕！英伟达MIT造出马良的神笔
 
+## 图像修复
+
+https://mp.weixin.qq.com/s/33VKfq-jFHfn9GBQzFYq0Q
+
+震撼！英伟达用深度学习做图像修复，毫无ps痕迹
+
+https://zhuanlan.zhihu.com/p/50620348
+
+基于内容感知生成模型的图像修复，论文翻译、解读
+
 ## 参考
 
 https://mp.weixin.qq.com/s/YbRo7TJ3j4dloSmKX40uAA
@@ -149,10 +159,6 @@ https://mp.weixin.qq.com/s/moDVf7h8Q2S1SL0IuxXQtQ
 https://mp.weixin.qq.com/s/4UH-XWyIxYHq_ErRfkzzsQ
 
 与神经网络相比，你对P图一无所知
-
-https://mp.weixin.qq.com/s/33VKfq-jFHfn9GBQzFYq0Q
-
-震撼！英伟达用深度学习做图像修复，毫无ps痕迹
 
 https://mp.weixin.qq.com/s/FTfpjo-qT_PK4cbR5j0ulw
 
