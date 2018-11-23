@@ -6,22 +6,6 @@ category: ML
 
 # 机器学习分类器性能指标（续）
 
-ROC（Receiver operating characteristic）曲线的纵轴是真正例率（True Positive Rate，TPR），横轴是假正例率（False Positive Rate，FPR）。其定义如下：
-
-$$TPR=\frac{TP}{TP+FN},FPR=\frac{FP}{TN+FP}$$
-
-ROC曲线下方的面积被称为AUC（Area Under ROC Curve）。
-
-![](/images/article/ROC.gif)
-
-更多内容参见下图：
-
-![](/images/article/sensitivity_and_specificity.png)
-
-原图地址：
-
-https://en.wikipedia.org/wiki/Sensitivity_and_specificity
-
 除此之外，还有F-measure：
 
 ![](/images/article/P_R_F.gif)
@@ -65,6 +49,10 @@ https://mp.weixin.qq.com/s/zvxB6VqrSOosgGSViCmjEQ
 https://mp.weixin.qq.com/s/2HKx36bIBZAqvzdXfcSfqA
 
 我们常听说的置信区间与置信度到底是什么？
+
+https://mp.weixin.qq.com/s/Uowbo19wNkjT-9eAIjS8jQ
+
+过来，我这里有个“混淆矩阵”跟你谈一谈
 
 # Earth mover's distance
 

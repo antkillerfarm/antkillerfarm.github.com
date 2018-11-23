@@ -237,6 +237,10 @@ https://github.com/freefuiiismyname/capsule-mrc
 
 基于capsule的观点型阅读理解模型
 
+https://mp.weixin.qq.com/s/cskdgsysD7R_FKChAKmlDg
+
+利用Capsule重构过程，Hinton等人实现对抗样本的自动检测
+
 # 手势识别
 
 https://zhuanlan.zhihu.com/p/26630215

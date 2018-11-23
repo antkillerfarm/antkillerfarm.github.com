@@ -206,10 +206,6 @@ https://mp.weixin.qq.com/s/8Hrq_z8s_5ms6Q_6OOaU-g
 
 如何使用TensorFlow和自编码器模型生成手写数字
 
-https://mp.weixin.qq.com/s/vbBNYzKq6AnsDTy8lFsKAw
-
-TensorFlow RNN深度学习BiLSTM+CRF实现sequence labeling序列标注
-
 https://mp.weixin.qq.com/s/knw7yuUxHe-qeCLfj20onw
 
 Bayesian GAN的TensorFlow实现

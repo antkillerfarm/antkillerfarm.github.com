@@ -66,6 +66,14 @@ linux:
 
 `pip install -i  https://pypi.tuna.tsinghua.edu.cn/simple  <package name>`
 
+其他源还有：
+
+https://mirrors.aliyun.com/pypi/simple/
+
+https://pypi.mirrors.ustc.edu.cn/simple/
+
+http://pypi.douban.com/simple/
+
 指定版本：
 
 `pip install -v pycrypto==2.3`

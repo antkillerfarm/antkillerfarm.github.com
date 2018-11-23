@@ -8,6 +8,18 @@ category: DL
 
 ## 参考（续）
 
+https://mp.weixin.qq.com/s/-Am9Z4_SsOc-fZA_54Qg3A
+
+深度理解RNN：时间序列数据的首选神经网络！
+
+https://mp.weixin.qq.com/s/ztIrt4_xIPrmCwS1fCn_dA
+
+“魔性”的循环神经网络
+
+https://mp.weixin.qq.com/s/tIXJNkT9gIjGYZz7dekiNw
+
+手把手教你写一个RNN
+
 https://mp.weixin.qq.com/s/BqVicouktsZu8xLVR-XnFg
 
 完全图解RNN、RNN变体、Seq2Seq、Attention机制

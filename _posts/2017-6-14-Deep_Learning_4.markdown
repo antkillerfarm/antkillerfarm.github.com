@@ -48,6 +48,20 @@ http://ufldl.stanford.edu/wiki/index.php/Stacked_Autoencoders
 
 Stacked Autoencoders
 
+## Deep AE
+
+一层的AE有时可能不能很好的进行数据降维，这个时候就可以使用如下所示的Deep AE：
+
+![](/images/img2/Deep_AE.jpg)
+
+Deep AE可用于异常检测：根据正常数据训练出来的Autoencoder，能够将正常样本重建还原，但是却无法将异于正常分布的数据点较好地还原，导致还原误差较大。
+
+参考：
+
+http://sofasofa.io/tutorials/anomaly_detection/
+
+利用Autoencoder进行无监督异常检测
+
 ## 参考
 
 http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/
@@ -269,16 +283,3 @@ Tomas Mikolov论文简评：从Word2Vec到FastText
 https://mp.weixin.qq.com/s/v1-mLhmbp5MoRR824tdPDw
 
 玩转词向量：用fastText预训练向量做个智能小程序
-
-## RNNLM
-
-RNNLM是Mikolov早期提出的文本分类的工具。（其实就是他的博士毕业论文）
-
-官网：
-
-http://rnnlm.org/
-
-yandex后来又提出了一个加速版本的RNNLM：
-
-https://github.com/yandex/faster-rnnlm
-

@@ -1,10 +1,22 @@
 ---
 layout: post
-title:  深度学习（四十一）——迁移学习, RNN进阶, Mask R-CNN
+title:  深度学习（四十一）——迁移学习, Mask R-CNN
 category: DL 
 ---
 
 # 迁移学习
+
+## Rethinking ImageNet Pre-training
+
+何恺明，RBG，Piotr Dollár的新作表明：ImageNet Pre-training不能提升最终精度，但可以加快收敛速度。
+
+参考：
+
+https://mp.weixin.qq.com/s/Ut_of4Xb8c0beACShKOWlQ
+
+何恺明“终结”ImageNet预训练时代：从0开始训练神经网络，效果比肩COCO冠军
+
+## 参考
 
 >龙明盛，清华本科（2008）+博士（2016），迁移学习的最早提出者之一。清华大学副教授，博导。   
 >个人主页：   
@@ -236,88 +248,6 @@ https://mp.weixin.qq.com/s/Z6RyhsZfn3Fs-gfpS0_7HQ
 https://mp.weixin.qq.com/s/EWMXDH7Bx0aQaFsGkZaIbA
 
 OpenAI概念学习新模型：学会概念仅需5次示范，实现跨领域概念迁移
-
-# RNN进阶
-
-## IndRNN
-
-https://mp.weixin.qq.com/s/cAqpclkkeVrTiifz07HC1g
-
-新型循环神经网络IndRNN：可构建更长更深的RNN
-
-https://mp.weixin.qq.com/s/7-K-nZTijoYCaprRNYXxFg
-
-新型RNN：将层内神经元相互独立以提高长程记忆
-
-## 参考
-
-https://mp.weixin.qq.com/s/SeR_zNZTu4t7kqB6ltNrmQ
-
-从循环到卷积，探索序列建模的奥秘
-
-https://mp.weixin.qq.com/s/_q69BV1r46S9X5wnLuFPSw
-
-关于序列建模，是时候抛弃RNN和LSTM了
-
-https://mp.weixin.qq.com/s/mIuAn4G9l3AKFAswpbaQdA
-
-时间卷积网络（TCN）将取代RNN成为NLP预测领域王者
-
-https://mp.weixin.qq.com/s/m5GRNp6qDfVfC0mkQ4m4Yw
-
-神经语言模型如何利用上下文信息：长距离上下文的词序并不重要
-
-https://mp.weixin.qq.com/s/kuoUnt2Vhz9NhfnNqMFAhQ
-
-DeepMind提出关系RNN：构建关系推理模块，强化学习利器
-
-https://mp.weixin.qq.com/s/wfOzCxe3L2t11VguYLGC9Q
-
-上海交大搞出SRNN，比普通RNN也就快135倍
-
-https://mp.weixin.qq.com/s/f0sv7c-H5o5L_wy2sUonUQ
-
-CNN取代RNN？当序列建模不再需要循环网络
-
-https://mp.weixin.qq.com/s/h3fF6Zvr1rSzSMpqdu8B0A
-
-电子科大提出BT-RNN：替代全连接操作而大幅度提升LSTM效率
-
-https://mp.weixin.qq.com/s/OgN4rVDKH5WABIaRY7CHog
-
-如何让RNN神经元拥有基础通用的注意力能力
-
-https://mp.weixin.qq.com/s/KBLCrupGIuPa5nVrxcS5WQ
-
-新研究将GRU简化成单门架构，或更适用于语音识别
-
-https://mp.weixin.qq.com/s/kQozftKd_n_kYIF7KKCc8g
-
-短视频那么多，快手如何利用GRU实现各种炫酷的语音应用
-
-https://mp.weixin.qq.com/s/xwuM2Vj8G7UyuEyzTyO13A
-
-将CNN与RNN组合使用，天才还是错乱？
-
-https://mp.weixin.qq.com/s/c7XkzjLH1n5EtqdQik618g
-
-Dropout在RNN中的应用综述
-
-https://mp.weixin.qq.com/s/K6LK47_GCTeZJPAW0-Xp4Q
-
-多伦多大学提出可逆RNN：内存大降，性能不减！
-
-https://mp.weixin.qq.com/s/lvaWx7J4HFTvYxy7-B9vYg
-
-周志华等提出RNN可解释性方法，看看RNN内部都干了些什么
-
-https://mp.weixin.qq.com/s/YbdiEHb8ld1pp1ehgBzTOQ
-
-将未来信息作为正则项，Twin Networks加强RNN对长期依赖的建模能力
-
-https://mp.weixin.qq.com/s/ty8RyPREo_EA7O8vA2pQuQ
-
-AI编曲震撼人心，RNN生成流行音乐
 
 # Mask R-CNN
 

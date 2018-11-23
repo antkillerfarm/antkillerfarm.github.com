@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Kaldi（二）, OpenAI Gym
+title:  Kaldi（二）, OpenAI
 category: AI 
 ---
 
@@ -209,7 +209,27 @@ https://mp.weixin.qq.com/s/xBbYHMQhxkRQ-dy-0gHvaw
 
 如何用kaldi参加京东金融对话语音识别大赛
 
-# OpenAI Gym
+# OpenAI
+
+OpenAI，由诸多硅谷大亨（Elon Musk等）联合建立的人工智能非营利组织。
+
+官网：
+
+https://openai.com/
+
+github：
+
+https://github.com/openai
+
+## Baselines
+
+若干经典RL算法的实现，包括A2C、DQN等。
+
+代码：
+
+https://github.com/openai/baselines
+
+## Gym
 
 Openai gym是一个用于开发和比较强化学习（reinforcement learning，RL）算法的工具包，与其他的数值计算库兼容，如tensorflow或者theano库。现在主要支持的是python语言，以后将支持其他语言。
 
@@ -248,6 +268,20 @@ https://blog.csdn.net/jinzhuojun/article/details/78508203
 https://mp.weixin.qq.com/s/0oVG7zMi08dzMQrk43T3mw
 
 像训练Dota2一样训练真实机器人？Gibson Environment环境了解一下
+
+## RND
+
+OpenAI最近开发了RND（ Random Network Distillation），一种基于预测的强化学习算法，用于鼓励强化学习代理通过好奇心来探索他们所处环境。在游戏任务Montezuma's Revenge上首次超过人类的平均表现。
+
+blog：
+
+https://blog.openai.com/reinforcement-learning-with-prediction-based-rewards/
+
+Reinforcement Learning with Prediction-Based Rewards
+
+代码：
+
+https://github.com/openai/random-network-distillation
 
 # Machine Learning之Python篇
 
@@ -308,4 +342,3 @@ https://mp.weixin.qq.com/s/xYNCKy36n8CoaGzABlI5Wg
 https://mp.weixin.qq.com/s/vAn_rnUt036-3jy7ZahF8w
 
 文本挖掘，带你看金庸笔下不一样的恩怨情仇
-

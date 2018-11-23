@@ -456,6 +456,10 @@ http://pythonware.com/products/pil/
 
 `sudo apt install python-imaging`
 
+或
+
+`pip install pillow`
+
 文档：
 
 http://www.effbot.org/imagingbook/pil-index.htm

@@ -302,10 +302,6 @@ https://mp.weixin.qq.com/s/E-HBQs1-nzP1shC7Gge-7A
 
 “看透”神经网络
 
-https://mp.weixin.qq.com/s/Uowbo19wNkjT-9eAIjS8jQ
-
-过来，我这里有个“混淆矩阵”跟你谈一谈
-
 https://mp.weixin.qq.com/s/Ys8lnwLyvToumnS2NhAAHg
 
 如何洞悉城市人群移动规律？DataV海量轨迹可视化实践解析

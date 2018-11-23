@@ -328,6 +328,10 @@ https://mp.weixin.qq.com/s/lEaq8NylJG4bUY2YupZh0g
 
 5秒钟内将手绘网站线框图转换为可用的HTML网站
 
+https://mp.weixin.qq.com/s/FuHDkcCDib5oc_XPDNnytQ
+
+阿里AI设计师一秒出图，小撒连连惊呼，真相是...
+
 ## 参考
 
 https://mp.weixin.qq.com/s/Ji3dTs0lMjLLR5Oxbsr3Vg

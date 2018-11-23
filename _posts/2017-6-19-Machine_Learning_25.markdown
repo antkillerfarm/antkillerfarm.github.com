@@ -101,6 +101,10 @@ https://mp.weixin.qq.com/s/DGGuAYsoa6DPD6FBf2Hc4g
 
 时间序列分析之理论篇
 
+https://zhuanlan.zhihu.com/p/50698719
+
+两篇关于时间序列的论文
+
 # Tri-training
 
 ## 半监督学习

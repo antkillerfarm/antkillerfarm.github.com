@@ -388,6 +388,10 @@ https://mp.weixin.qq.com/s/Yg-ggqTg5HlcvrH9BKC0YA
 
 最新知识图谱论文清单
 
+https://mp.weixin.qq.com/s/z82UmAuumlrwVlFCwBeqOQ
+
+美团餐饮娱乐知识图谱——美团大脑揭秘
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/Z1ixoRmUDl17CF4k7JS4zg

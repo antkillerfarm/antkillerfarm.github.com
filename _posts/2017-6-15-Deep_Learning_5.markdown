@@ -6,6 +6,18 @@ category: DL
 
 # 词向量（续）
 
+## RNNLM
+
+RNNLM是Mikolov早期提出的文本分类的工具。（其实就是他的博士毕业论文）
+
+官网：
+
+http://rnnlm.org/
+
+yandex后来又提出了一个加速版本的RNNLM：
+
+https://github.com/yandex/faster-rnnlm
+
 ## Item2Vec
 
 本质上，word2vec模型是在word-context的co-occurrence矩阵基础上建立起来的。因此，任何基于co-occurrence矩阵的算法模型，都可以套用word2vec算法的思路加以改进。
@@ -281,17 +293,4 @@ https://mp.weixin.qq.com/s/vHQ1WbADHAISXCGxOqnP2A
 https://mp.weixin.qq.com/s/0V9DeG39is_BxAYX0Yomww
 
 为何循环神经网络在众多机器学习方法中脱颖而出？
-
-https://mp.weixin.qq.com/s/-Am9Z4_SsOc-fZA_54Qg3A
-
-深度理解RNN：时间序列数据的首选神经网络！
-
-https://mp.weixin.qq.com/s/ztIrt4_xIPrmCwS1fCn_dA
-
-“魔性”的循环神经网络
-
-https://mp.weixin.qq.com/s/tIXJNkT9gIjGYZz7dekiNw
-
-手把手教你写一个RNN
-
 

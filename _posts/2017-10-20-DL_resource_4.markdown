@@ -154,6 +154,10 @@ https://mp.weixin.qq.com/s/I2Mi-ppwRztSCJNUDgVXcg
 
 全球数据竞赛Top解决方案开源整理与汇总
 
+https://mp.weixin.qq.com/s/uha9bmmLfSPbRtKeuSqNiw
+
+浙江移动—利用TensorFlow实现通讯运维智能化
+
 ## 工具
 
 https://mp.weixin.qq.com/s/TT4whft1Tj1pCEPbnMH1cA

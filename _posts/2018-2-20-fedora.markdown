@@ -274,3 +274,7 @@ https://mp.weixin.qq.com/s/pZnAcjFlBM2I4Hyctd6MHw
 https://mp.weixin.qq.com/s/O3A5gVewRQ11Z8RdPcs-9w
 
 一文看懂Pinterest如何构建时间序列数据库系统Goku
+
+https://mp.weixin.qq.com/s/2hJzdILGgLwcw8mkCY1uLw
+
+当我们输入一条SQL查询语句时，发生了什么？

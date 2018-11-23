@@ -154,6 +154,10 @@ http://tripleday.cn/2016/07/14/hmm-memm-crf/
 
 HMM、MEMM和CRF的学习总结
 
+https://zhuanlan.zhihu.com/p/33397147
+
+概率图模型体系：HMM、MEMM、CRF
+
 # CRF
 
 条件随机场(Conditional Random Field)由Lafferty等人于2001年提出，结合了最大熵模型和隐马尔可夫模型的特点，是一种无向图模型，近年来在分词、词性标注和命名实体识别等序列标注任务中取得了很好的效果。
@@ -194,51 +198,21 @@ https://blog.csdn.net/liuyuemaicha/article/details/73147548
 
 从PGM到HMM再到CRF
 
-# 异常点检测
+## BiLSTM+CRF
 
-http://chuansong.me/n/377440751130
+![](/images/img2/BiLSTM_CRF.jpg)
 
-异常点检测算法（一）
+https://mp.weixin.qq.com/s/vbBNYzKq6AnsDTy8lFsKAw
 
-http://jiangshuxia.9.blog.163.com/blog/static/3487586020083662621887/
+TensorFlow RNN深度学习BiLSTM+CRF实现sequence labeling序列标注
 
-异常(Outlier)检测算法综述
+https://www.jianshu.com/p/97cb3b6db573
 
-http://www.cnblogs.com/fengfenggirl/p/iForest.html
+BiLSTM模型中CRF层的运行原理-1
 
-异常检测算法--Isolation Forest
+https://www.jianshu.com/p/7c83478eeb56
 
-https://mp.weixin.qq.com/s/xsuLIMPJVCThBGMRlz09Hg
-
-Isolation Forest算法原理详解
-
-http://www.bigdata8.top/front/article/466
-
-异常值检测-滑动均值实现智能告警
-
-https://mp.weixin.qq.com/s/ujG6Fr161kZh3S-lEiTJUg
-
-异常检测（Anomaly Detection）
-
-https://mp.weixin.qq.com/s/_Sds7O1wonVARKkb7qscww
-
-腾讯：机器学习构建通用的数据异常检测平台
-
-https://mp.weixin.qq.com/s/UcMPIf6ZRAhPjn79H2n1ig
-
-异常点检测算法小结
-
-https://mp.weixin.qq.com/s?__biz=MzIxODM4MjA5MA==&mid=2247487342&idx=3&sn=1981a6caec4591a19043d7a6176d359f
-
-异常检测的阈值，你怎么选？给你整理好了...
-
-https://mp.weixin.qq.com/s/ReQpT9KT6_tE8vXM-F_Ejw
-
-从“马蜂窝事件”看，投资人如何避免数据尽职调查背后的交易风险？新时代数据造假特征及应对方法
-
-https://www.zhihu.com/question/30508773
-
-反欺诈(Fraud Detection)中所用到的机器学习模型有哪些？
+BiLSTM模型中CRF层的运行原理-2
 
 # 自适应滤波器
 
