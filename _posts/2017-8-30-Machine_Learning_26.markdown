@@ -1,203 +1,202 @@
 ---
 layout: post
-title:  机器学习（二十六）——贝叶斯线性回归, 强连通分量算法, 异常点检测, Beam Search, K-摇臂赌博机
+title:  机器学习（二十六）——Latent Dirichlet Allocation
 category: ML 
 ---
 
-# 贝叶斯线性回归
+# Latent Dirichlet Allocation
 
-https://mp.weixin.qq.com/s/szTmHY-Yvn7N3s_GzTDiEA
+Latent Dirichlet Allocation，简称LDA。注意不要和Linear Discriminant Analysis搞混了。
 
-解开贝叶斯黑暗魔法：通俗理解贝叶斯线性回归
+这方面的文章，首推rickjin（靳志辉）写的《LDA数学八卦》一文。全文篇幅长达55页，我实在没有能力写的比他更好，因此这里就做一个摘要好了。
 
-https://mp.weixin.qq.com/s/1JSxjkKEUlWOzXCQPTve3A
+>注：靳志辉，北京大学计算机系计算语言所硕士，日本东京大学情报理工学院统计自然语言处理方向博士。2008年加入腾讯，主要工作内容涉及统计自然语言处理和大规模并行机器学习工具的研发工作。目前为腾讯社交与效果广告部质量研发中心总监，主要负责腾讯用户数据挖掘、精准广告定向、广告语义特征挖掘、广告转化率预估等工作。   
+>他写的另一篇文章《正态分布的前世今生》，也是统计界著名的科普文，非常值得一看。
 
-贝叶斯线性回归简介
+## 马氏链及其平稳分布
 
-https://mp.weixin.qq.com/s/NTK-u4aVrTTmvi-4ZBa8RQ
+Markov chain的定义如下：
 
-数十亿用户的Facebook如何进行贝叶斯系统调优？
+$$P(X_{t+1}=x\mid X_t, X_{t-1}, \cdots) =P(X_{t+1}=x\mid X_t)$$
 
-https://mp.weixin.qq.com/s/g24mcZjQ25sQJx9mqE_XSA
+即状态转移的概率只依赖于前一个状态的随机过程。
 
-怎样判断漂亮女孩是不是单身的？美国海军在汪洋大海里搜索丢失的氢弹、失踪的核潜艇都用过这种方法。
+>注：上面是1阶Markov过程的定义。类似的还可以定义n阶Markov过程，即状态转移的概率只依赖于前n个状态的随机过程。
 
-# 强连通分量算法
+>Andrey(Andrei) Andreyevich Markov，1856~1922，俄国数学家。圣彼得堡大学博士，导师Pafnuty Chebyshev。最早研究随机过程的数学家之一。圣彼得堡学派的第二代领军人物，俄罗斯科学院院士。   
+>虽然现在将随机过程（stochastic process）划为数理统计科学的一部分，然而在19世纪末期，相关的研究者在学术界分属两个不同的团体。其中最典型的就是英国的剑桥学派（Pearson、Fisher等）和俄国的圣彼得堡学派（Chebyshev、Markov等）。因此将Markov称为统计学家是非常错误的观点。
 
-http://ishare.iask.sina.com.cn/f/34626295.html
+一些非周期的马氏链，经过若干次的状态转移之后，其状态概率会收敛到一个特定的数值，即平稳分布（stationary distribution）。
 
-矩阵不可约的充要条件
+如各参考文献所示，这里一般会举社会学上的人口分层问题，引出马氏链的极限和平稳分布的概念。这里要特别注意马氏链收敛定理以及它的具体含义。
 
-http://www.cnblogs.com/saltless/archive/2010/11/08/1871430.html
+**细致平稳条件**：如果非周期马氏链的转移矩阵P和分布$$\pi(x)$$满足
 
-求强连通分量的Tarjan算法
+$$\pi(i)P_{ij} = \pi(j)P_{ji} \quad\quad \text{for all} \quad i,j$$
 
-http://blog.csdn.net/dm_vincent/article/details/8554244
+则$$\pi(x)$$是马氏链的平稳分布，上式被称为细致平稳条件(detailed balance condition)。
 
-求解强连通分量算法之---Kosaraju算法
+满足细致平稳条件的马氏链，其后续状态都是平稳分布状态，不会再改变。
 
-http://www.cnblogs.com/luweiseu/archive/2012/07/14/2591370.html
+>注:细致平稳条件，比平稳分布的条件要强，因此它是平稳分布的充分条件，而非必要条件。
 
-强连通分支算法--Kosaraju算法、Tarjan算法和Gabow算法
+参考：
 
-# 异常点检测
+http://blog.csdn.net/lanchunhui/article/details/50451620
 
-http://chuansong.me/n/377440751130
+重温马尔科夫随机过程
 
-异常点检测算法（一）
+http://blog.csdn.net/pipisorry/article/details/46618991
 
-http://jiangshuxia.9.blog.163.com/blog/static/3487586020083662621887/
+马尔科夫模型
 
-异常(Outlier)检测算法综述
+## MCMC
 
-http://www.cnblogs.com/fengfenggirl/p/iForest.html
+对于给定的概率分布$$p(x)$$，我们希望能有便捷的方式生成它对应的样本。由于马氏链能收敛到平稳分布，于是一个很的漂亮想法是：如果我们能构造一个转移矩阵为P的马氏链，使得该马氏链的平稳分布恰好是$$p(x)$$，那么我们从任何一个初始状态$$x_0$$出发沿着马氏链转移，得到一个转移序列$$x_0, x_1, x_2, \cdots x_n, x_{n+1}\cdots$$，如果马氏链在第n步已经收敛了，于是我们就得到了$$\pi(x)$$的样本$$x_n, x_{n+1}\cdots$$。
 
-异常检测算法--Isolation Forest
+Markov Chain Monte Carlo算法的核心是引入一个参数$$\alpha(i,j)$$使得一个普通的马氏链，变成一个满足细致平稳条件的马氏链。即：
 
-https://mp.weixin.qq.com/s/xsuLIMPJVCThBGMRlz09Hg
+$$p(i) \underbrace{q(i,j)\alpha(i,j)}_{Q'(i,j)} 
+= p(j) \underbrace{q(j,i)\alpha(j,i)}_{Q'(j,i)}  \quad$$
 
-Isolation Forest算法原理详解
+以上即为Metropolis算法。
 
-http://www.bigdata8.top/front/article/466
+>注：Nicholas Constantine Metropolis，1915~1999，希腊裔美籍物理学家。芝加哥大学博士，反复供职于Los Alamos和芝加哥大学。（其实也就这俩地方，只不过这边干几年到那边去，那边教几年书再回这边来，这么进进出出好几个来回而已）“曼哈顿计划”的主要科学家之一，战后主持MANIAC计算机的研制。
 
-异常值检测-滑动均值实现智能告警
+$$\alpha$$的大小，决定了马氏链的收敛速度。$$\alpha$$越大，收敛越快。因此又有Metropolis–Hastings算法，其关键公式为：
 
-https://mp.weixin.qq.com/s/ujG6Fr161kZh3S-lEiTJUg
+$$\alpha(i,j) = \min\left\{\frac{p(j)q(j,i)}{p(i)q(i,j)},1\right\}$$
 
-异常检测（Anomaly Detection）
+>注：Wilfred Keith Hastings，1930~2016，美国统计学家，多伦多大学博士，维多利亚大学教授。
 
-https://mp.weixin.qq.com/s/_Sds7O1wonVARKkb7qscww
+除了MCMC之外，常用的采样方法还有Hamiltonian Monte Carlo（HMC）。
 
-腾讯：机器学习构建通用的数据异常检测平台
+参考：
 
-https://mp.weixin.qq.com/s/UcMPIf6ZRAhPjn79H2n1ig
+https://zhuanlan.zhihu.com/p/32315762
 
-异常点检测算法小结
+如何简单地理解“哈密尔顿蒙特卡洛 (HMC)”？
 
-https://mp.weixin.qq.com/s?__biz=MzIxODM4MjA5MA==&mid=2247487342&idx=3&sn=1981a6caec4591a19043d7a6176d359f
+## Gibbs Sampling
 
-异常检测的阈值，你怎么选？给你整理好了...
+这个算法虽然以Gibbs命名，但却是Geman兄弟于1984年研究Gibbs random field时，发现的算法。
 
-https://mp.weixin.qq.com/s/ReQpT9KT6_tE8vXM-F_Ejw
+>注：Josiah Willard Gibbs，1839~1903，美国科学家。他在物理、化学和数学方面都有重大理论贡献。耶鲁大学博士和教授。统计力学的创始人。
 
-从“马蜂窝事件”看，投资人如何避免数据尽职调查背后的交易风险？新时代数据造假特征及应对方法
+>Donald Jay Geman，1943年生，美国数学家。美国西北大学博士，布朗大学教授。随机森林算法的早期研究者之一。
 
-https://www.zhihu.com/question/30508773
+>Stuart Alan Geman，1949年生，美国数学家。MIT博士，约翰霍普金斯大学教授。美国科学院院士。最早将Markov random field（MRF）应用于机器视觉和机器学习。
 
-反欺诈(Fraud Detection)中所用到的机器学习模型有哪些？
+因为高维空间中，沿坐标轴方向上的两点之间的转移，满足细致平稳条件。因此，Gibbs Sampling的核心就是沿坐标轴循环迭代采样，该算法收敛之后的采样点即符合指定概率分布。
 
-# Beam Search
+这里需要特别指出的是，Gibbs Sampling比Metropolis–Hastings算法高效的原因在于：Gibbs Sampling每次沿坐标轴的转移是必然会被接受的，即$$\alpha=1$$。
 
-## 概述
+## Unigram Model
 
-Beam Search（集束搜索）是一种启发式图搜索算法，通常用在图的解空间比较大的情况下，为了减少搜索所占用的空间和时间，在每一步深度扩展的时候，剪掉一些质量比较差的结点，保留下一些质量较高的结点。保留下来的结点个数一般叫做Beam Width。
+假设我们的词典中一共有V个词$$v_1,v_2,\cdots v_V$$，那么最简单的Unigram Model是定义一个V面的骰子，每抛一次骰子，抛出的面就对应产生一个词。
 
-这样减少了空间消耗，并提高了时间效率，但缺点就是有可能存在潜在的最佳方案被丢弃，因此Beam Search算法是不完全的，一般用于解空间较大的系统中。
+频率学派的Unigram Model如下图：
 
-![](/images/article/beam_search.png)
+![](/images/article/unigram-model.jpg)
 
-上图是一个Beam Width为2的Beam Search的剪枝示意图。每一层只保留2个最优的分支，其余分支都被剪掉了。
+贝叶斯学派的Unigram Model如下图：
 
-显然，Beam Width越大，找到最优解的概率越大，相应的计算复杂度也越大。因此，设置合适的Beam Width是一个工程中需要trade off的事情。
+![](/images/article/dirichlet-multinomial-unigram.jpg)
 
-当Beam Width为1时，也就是著名的A*算法了。
+这里使用Dirichlet分布的原因在于，数据采用多项分布，而Dirichlet分布正好是多项分布的共轭先验分布。
 
-Beam Search主要用于机器翻译、语音识别等系统。这类系统虽然从理论来说，也就是个多分类系统，然而由于分类数等于词汇数，简单的套用softmax之类的多分类方案，明显是计算量过于巨大了。
+$$Dir(\overrightarrow{p}\mid \overrightarrow{\alpha})+MultCount(\overrightarrow{n})=Dir(\overrightarrow{p}\mid \overrightarrow{\alpha}+\overrightarrow{n})$$
 
-PS：中文验证码识别估计也可以采用该技术。
+和wiki上对Dirichlet分布的pdf函数的描述（参见《数学狂想曲（二）》中的公式1）不同，rickjin在这里采用了如下定义：
 
-## Beam Search与Viterbi算法
+$$Dir(\overrightarrow{p}\mid \overrightarrow{\alpha})= 
+\frac{1}{\Delta(\overrightarrow{\alpha})} \prod_{k=1}^V p_k^{\alpha_k -1}， 
+\quad \overrightarrow{\alpha}=(\alpha_1, \cdots, \alpha_V)$$
 
-Beam Search与Viterbi算法虽然都是解空间的剪枝算法，但它们的思路是不同的。
+其中：
 
-Beam Search是对状态迁移的路径进行剪枝，而Viterbi算法是合并不同路径到达同一状态的概率值，用最大值作为对该状态的充分估计值，从而在后续计算中，忽略历史信息（这种以偏概全也就是所谓的Markov性），以达到剪枝的目的。
+$$\Delta(\overrightarrow{\alpha}) = 
+\int \prod_{k=1}^V p_k^{\alpha_k -1} d\overrightarrow{p}$$
 
-从状态转移图的角度来说，Beam Search是空间剪枝，而Viterbi算法是时间剪枝。
+可以看出两种描述中的$$\mathrm{B}(\boldsymbol\alpha)$$和$$\Delta(\overrightarrow{\alpha})$$是等价的。
 
-## 参考
+下面我们来证明这个结论，即：
 
-http://people.csail.mit.edu/srush/optbeam.pdf
+$$\mathrm{B}(\boldsymbol\alpha)=\int \prod_{k=1}^V p_k^{\alpha_k -1} d\overrightarrow{p}\tag{1}$$
 
-Optimal Beam Search for Machine Translation
+**证明**：这里为了简化问题，令V=3。则根据《数学狂想曲（二）》中的公式1可得：
 
-http://www.cnblogs.com/xxey/p/4277181.html
+$$Dir(\overrightarrow{p}\mid \overrightarrow{\alpha})= 
+\frac{1}{\mathrm{B}(\alpha_1,\alpha_2,\alpha_3)}  p_1^{\alpha_1 -1}p_2^{\alpha_2 -1}p_3^{\alpha_3 -1}$$
 
-Beam Search（集束搜索/束搜索）
+对该pdf进行积分：
 
-http://blog.csdn.net/girlhpp/article/details/19400731
+$$\iiint\frac{1}{\mathrm{B}(\alpha_1,\alpha_2,\alpha_3)}p_1^{\alpha_1 -1}p_2^{\alpha_2 -1}p_3^{\alpha_3 -1}\mathrm{d}p_1\mathrm{d}p_2\mathrm{d}p_3=\frac{1}{\mathrm{B}(\alpha_1,\alpha_2,\alpha_3)}\int p_1^{\alpha_1 -1}p_2^{\alpha_2 -1}p_3^{\alpha_3 -1}\mathrm{d}\overrightarrow{p}$$
 
-束搜索算法（Andrew Jungwirth 初稿）BEAM Search
+由pdf的定义可知，上面的积分值为1。
 
-http://hongbomin.com/2017/06/23/beam-search/
+因此：
 
-Beam Search算法及其应用
+$$\mathrm{B}(\alpha_1,\alpha_2,\alpha_3)=\int p_1^{\alpha_1 -1}p_2^{\alpha_2 -1}p_3^{\alpha_3 -1}\mathrm{d}\overrightarrow{p}$$
 
-https://mp.weixin.qq.com/s/GTtjjBgCDdLRwPrUqfwlVA
+证毕。
 
-如何使用贪婪搜索和束搜索解码算法进行自然语言处理
+从上面的证明过程，可以看出公式1并不是恒等式，而是在Dirichlet分布下才成立的等式。这也是共轭先验分布能够简化计算的地方。
 
-# K-摇臂赌博机
+## PLSA
 
-![](/images/article/Multi-Armed_Bandit.jpg)
+Probabilistic Latent Semantic Analysis是Thomas Hofmann于1999年在UCB读博期间提出的算法。
 
-k-armed Bandit（也叫Multi-Armed Bandit）是赌场里的一种赌具。它有K个摇臂，投币后摇动摇臂，会有一定的概率吐出硬币。每个摇臂的吐币概率和数量有所不同。（有的机器只有1个摇臂，但可通过按钮设置不同的方案。）赌徒的目标是通过一定的策略获得最多的奖励（硬币）。
+原文：
 
-尽管在有的赌场中，每个摇臂的吐币概率和数量是已知的，但在本问题中，**吐币概率和数量都是未知的。**
+https://dslpitt.org/uai/papers/99/p289-hofmann.pdf
 
-由于每次摇臂都是独立事件，因此k-armed Bandit问题的另一个约束是：**最大化单步奖励**，即不考虑未来的奖励。
+示意图：
 
-此外，k-armed Bandit亦不可能无限进行下去，其**尝试总数是一定的**（即投币数是一定的）。这也是该问题的一个隐含约束。
+![](/images/article/plsa-doc-topic-word.jpg)
 
-这里显然有两个最简单的策略：
+PLSA将生成文档的过程，分为两个步骤：
 
-**exploration-only**：将所有尝试机会平均分配给每个摇臂。这种策略可以很好的估计每个摇臂的奖励，然而却会失去很多选择最优摇臂的机会。
+1.生成文档的主题。（doc->topic）
 
-**exploitation-only**：只按下目前最优的摇臂。这种策略下有可能选不到最优的摇臂。
+2.根据主题生成相关的词.（topic->word）
 
-显然，欲奖励最大，需要在exploration和exploitation之间达成较好的折中。
+第m篇文档$$d_m$$中的每个词的生成概率为：
 
-## $$\epsilon$$-贪心算法
+$$p(w\mid d_m) = \sum_{z=1}^K p(w\mid z)p(z\mid d_m) = \sum_{z=1}^K \varphi_{zw} \theta_{mz}$$
 
-$$\epsilon$$-greedy基于概率对exploration和exploitation进行折中，即：**以$$\epsilon$$进行exploration，而以$$1-\epsilon$$进行exploitation。**
+## LDA
 
-若摇臂奖励的不确定性较大，即概率分布较宽时，需要较大的$$\epsilon$$值，反之则小。
+利用贝叶斯学派的观点改造PLSA，可得：
 
-另外，开始时由各种信息较少，$$\epsilon$$需要设置的大一些，随着探索的深入，各摇臂的奖励基本弄清楚之后，$$\epsilon$$就可以小一些了。因此通常令$$\epsilon=1/\sqrt{t}$$。
+![](/images/article/lda-dice.jpg)
 
-当$$\epsilon=0$$时，该算法也被称为greedy算法，也就是之前提到的exploitation-only策略。
+LDA生成模型包含两个过程：
 
-必须指出的是，k-armed Bandit只是真实问题的一个极度简化模型：它只有action和reward，没有input或sequentiality，也没有state。
+1.生成第m篇文档中的所有词对应的topics。
 
-## Softmax算法
+$$\overrightarrow{\alpha}\xrightarrow[Dirichlet]{} \overrightarrow{\theta}_m \xrightarrow[Multinomial]{} \overrightarrow{z}_{m}$$
 
-Softmax算法和$$\epsilon$$-贪心算法类似，其公式为：
+2.K个由topics生成words的独立过程。
 
-$$P(k)=\frac{e^{\frac{Q(k)}{\tau}}}{\sum_{i=1}^{K}e^{\frac{Q(i)}{\tau}}}$$
+$$\overrightarrow{\beta} \xrightarrow[Dirichlet]{} \overrightarrow{\varphi}_k \xrightarrow[Multinomial]{} \overrightarrow{w}_{(k)}$$
 
-这实际上是一个Boltzmann分布的公式，其中$$\tau$$表示温度，$$\tau \to 0$$表示优先利用，$$\tau \to \infty$$表示优先探索。
+因此，总共就是$$M+K$$个Dirichlet-Multinomial共轭结构。
 
-## 求均值的小技巧
+LDA的Gibbs Sampling图示：
 
-在k-armed Bandit问题中，一般用reward的均值来近似它的数学期望值。由于action是个序列，因此相应的算法一般是个不断迭代的过程，或者也可以说是一个增量（incremental）过程。
+![](/images/article/gibbs-path-search.jpg)
 
-在增量过程中，保存所有的reward值来计算均值显然是个笨办法。这里常用的办法是：
+LDA模型的目标有两个：
 
-$$Q_{n+1}=Q_n+\frac{1}{n}[R_n-Q_n]$$
+**训练模型**：估计模型中的参数：$$\overrightarrow{\varphi}_1, \cdots, \overrightarrow{\varphi}_K$$和$$\overrightarrow{\theta}_1, \cdots, \overrightarrow{\theta}_M$$。
 
-不光reward值可以这样更新，其他均值也可采用这个方法：
+由于参数$$\overrightarrow{\theta}_m$$是和训练语料中的每篇文档相关的，对于我们理解新的文档并无用处，所以工程上最终存储LDA模型时，一般没有必要保留。
 
-$$NewEstimate \leftarrow OldEstimate + StepSize [Target - OldEstimate]$$
+这一步实际上是一个**聚类**的过程。
 
-## 非平稳问题
+**使用模型**：对于新来的一篇文档$$doc_{new}$$，我们能够计算这篇文档的topic分布$$\overrightarrow{\theta}_{new}$$。
 
-在之前的假设中，我们认为每个摇臂的吐币概率和数量是不随时间变化的，这样的问题被称为Stationary Problem。
+从最终给出的算法可以看出，虽然LDA用到了MCMC和Gibbs Sampling算法，但最终目的并不是生成符合相应分布的随机数，而是求出模型参数$$\overrightarrow{\varphi}$$的值，并用于预测。
 
-如果每个摇臂的吐币概率和数量随时间**缓慢变化**的话，则称之为Non-stationary Problem。
-
->注：快速变化的系统，不光RL无能，其他方法估计也没什么好效果。所以系统保持一定的惯性，对于研究问题是很重要的。
-
-这时一般采用如下公式滤波：
-
-$$Q_{n+1}=Q_n+\alpha[R_n-Q_n]$$
-
-详细内容参见《数学狂想曲（四）》的“软件滤波算法”一节的“一阶滞后滤波法”和“加权递推平均滤波法”。
+这一步实际上是一个**分类**的过程。可见，LDA不仅可用于聚类，也可用于分类，是一种无监督的学习算法。

@@ -136,6 +136,10 @@ https://mp.weixin.qq.com/s/QT7X_ubXS13X5E_5KdbNNQ
 
 谷歌大脑提出DropBlock卷积正则化方法，显著改进CNN精度
 
+https://mp.weixin.qq.com/s/0Go146A5dU0-RESQAaAHzQ
+
+Dropout可能要换了，Hinton等研究者提出神似剪枝的Targeted Dropout
+
 ## Dropout预测阶段
 
 经Dropout处理过的模型，在预测阶段不再Dropout，而是打开所有的神经元。这样的效果类似于集成学习，即若干个弱分类器，集成为一个强分类器。

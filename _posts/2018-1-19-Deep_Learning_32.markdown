@@ -190,6 +190,10 @@ https://mp.weixin.qq.com/s/-hh9iRIZtxh8Q-ZU_oCekA
 
 网络嵌入之STNE model
 
+https://mp.weixin.qq.com/s/iLaGGJXLwgI7qzcgkySlSQ
+
+工程实践也能拿KDD最佳论文？解读Embeddings at Airbnb
+
 # NN的量化计算
 
 ## 概述
@@ -349,4 +353,3 @@ https://mp.weixin.qq.com/s/7dzQhgblEm-kzRnpddweSw
 https://mp.weixin.qq.com/s/XzLJzfvpP93cDYplf6-LXA
 
 港科腾讯等提出Bi-Real net：超XNOR-net 10%的ImageNet分类精度
-

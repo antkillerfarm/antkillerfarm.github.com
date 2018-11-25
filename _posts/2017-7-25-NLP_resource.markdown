@@ -122,6 +122,10 @@ https://mp.weixin.qq.com/s/aasfNHP-qTALvkCvq0-mrg
 
 Yandex：基于GitHub的超全NLP视频、PPT、作业
 
+https://mp.weixin.qq.com/s/zgmpxfpn2OkPflZRpfrD7A
+
+基于深度学习的文本生成 附217页PPT下载
+
 https://www.msra.cn/zh-cn/news/features/ruihua-song-20161226
 
 宋睿华：好玩的文本生成
@@ -405,19 +409,3 @@ https://mp.weixin.qq.com/s/TjFzJVOowfceHwJNUItcxQ
 https://mp.weixin.qq.com/s/r9WRkmApBaHvlCQ5F5ypjg
 
 神奇的神经机器翻译：从发展脉络到未来前景
-
-https://mp.weixin.qq.com/s/rLFm2J6Bao6H5Qj9Fw0wUg
-
-百度陈翔：基于机器学习的搜索语义理解技术！
-
-https://mp.weixin.qq.com/s/BWg77FZ2IugBhO_HWHpfHw
-
-深度学习在自然语言处理中的应用综述
-
-https://mp.weixin.qq.com/s/9HeLayEDTUCy_ACJUV8fYA
-
-中文分词调研：任何声称在PKU上拿到97%以上所谓“准确率”的说法，可信度都不高！
-
-http://mp.weixin.qq.com/s/fn9WKu0_aH2-lx6VvxC_RA
-
-生成式关键短语识别

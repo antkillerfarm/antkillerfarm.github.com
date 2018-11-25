@@ -252,6 +252,10 @@ https://mp.weixin.qq.com/s/Cyy4FgVZyVN-4KvG-9pHMA
 
 品质超高！超火的漫画线稿上色AI最新版来了
 
+https://mp.weixin.qq.com/s/lp769k6wsyh-991ACf5upw
+
+计算机也会ps图片：TL-GAN
+
 # Graph NN
 
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw

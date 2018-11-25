@@ -208,10 +208,6 @@ https://mp.weixin.qq.com/s/Ds3tYNFHcITgOAAgdANgJA
 
 OpenCV深度学习人脸识别示例——看大佬如何秀恩爱
 
-https://mp.weixin.qq.com/s/v8-4vs2V6R8VljY0k1PzhA
-
-OpenCV4.0 快速QR二维码检测测试示例
-
 https://mp.weixin.qq.com/s/GMt66ZIO5AiF1B2B8nDVKw
 
 开源、高质量QR码多语言生成库

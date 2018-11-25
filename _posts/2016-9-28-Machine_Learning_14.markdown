@@ -193,7 +193,7 @@ Minkowski distance的定义：
 
 $$d(x,y)=\sqrt[\lambda]{\sum_{i=1}^{n}\mid x_i-y_i\mid^{\lambda}}$$
 
-显然，当$$\lambda=2$$时，该距离为欧氏距离。当$$\lambda=1$$时，也被称为CityBlock Distance或Manhattan Distance（曼哈顿距离）。
+>Hermann Minkowski（1864-1909），德国数学家，哥廷根大学数学教授，爱因斯坦的老师。
 
 这里的$$\lambda$$就是范数。
 
@@ -204,6 +204,10 @@ $$\|x\|_1=\mid x_1\mid +\dots+\mid x_n\mid $$
 $$\|x\|_2=\sqrt{x_1^2+\dots+x_n^2}$$
 
 $$\|x\|_\infty=max(\mid x_1\mid ,\dots,\mid x_n\mid )$$
+
+显然，当$$\lambda=2$$时，该距离为欧氏距离。当$$\lambda=1$$时，也被称为CityBlock Distance或Manhattan Distance（曼哈顿距离，以纽约曼哈顿地区的街道形状得名）。当$$\lambda=\infty$$时，叫做Chebyshev distance。
+
+>Pafnuty Lvovich Chebyshev，1821～1894，俄罗斯数学家，莫斯科大学博士，圣彼得堡大学教授。俄罗斯数学的奠基人，他创建的圣彼得堡学派，是20世纪俄罗斯最主要的数学流派。
 
 这里不做解释的给出如下示意图：
 
@@ -237,40 +241,3 @@ $$\begin{bmatrix} 401 & -201 \\-800 & 401 \end{bmatrix}\begin{bmatrix} x_1 \\ x_
 
 则得到一个截然不同的解：$$x_1=40000,x_2=79800$$。
 
-当解集x对A和b的系数高度敏感，那么这样的方程组就是病态的 (ill-conditioned/ill-posed)。
-
-从上例的情况来看，矩阵的行向量$$\begin{bmatrix} 400 & -201\end{bmatrix}$$和$$\begin{bmatrix} -800 & 401\end{bmatrix}$$实际上是过于线性相关了，从而导致矩阵已经接近奇异矩阵（near singular matrix）。
-
-病态矩阵实际上就是奇异矩阵和近奇异矩阵的另一个说法。
-
-参见：
-
-http://www.cnblogs.com/daniel-D/p/3219802.html
-
-病态矩阵与条件数
-
-## 矩阵的条件数
-
-我们首先假设向量b受到扰动，导致解集x产生偏差，即：
-
-$$A(x+\Delta x)=b+\Delta b$$
-
-也就是：
-
-$$A\Delta x=\Delta b$$
-
-因此，由矩阵相容性可得：
-
-$$\|\Delta x\|\le \|A^{-1}\|\cdot\|\Delta b\|$$
-
-同时，由于：
-
-$$\|A\|\cdot\|x\|\ge\|b\|$$
-
-所以：
-
-$$\frac{\|\Delta x\|}{\|A\|\cdot\|x\|}\le \frac{\|A^{-1}\|\cdot\|\Delta b\|}{\|b\|}$$
-
-即：
-
-$$\frac{\|\Delta x\|}{\|x\|}\le \frac{\|A\|\cdot\|A^{-1}\|\cdot\|\Delta b\|}{\|b\|}$$

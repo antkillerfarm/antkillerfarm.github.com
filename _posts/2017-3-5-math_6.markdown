@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（六）——自相关&互相关&卷积, 闵可夫斯基距离, 马氏距离
+title:  数学狂想曲（六）——自相关&互相关&卷积, 马氏距离
 category: math 
 ---
 
@@ -147,16 +147,6 @@ $$\mathcal{F}\{f * g\} = k\cdot \mathcal{F}\{f\}\cdot \mathcal{F}\{g\}$$
 
 除此之外，还有利用**向量张量积运算**的**相关矩阵**。同样的，也有自相关矩阵和互相关矩阵。
 
-# 闵可夫斯基距离
-
->Hermann Minkowski（1864-1909），德国数学家，哥廷根大学数学教授，爱因斯坦的老师。
-
-Minkowski distance的定义：
-
-$$d(x,y)=\sqrt[\lambda]{\sum_{i=1}^{n}\mid x_i-y_i\mid^{\lambda}}$$
-
-显然，当$$\lambda=2$$时，该距离为欧氏距离。当$$\lambda=1$$时，也被称为CityBlock Distance或Manhattan Distance（曼哈顿距离）。
-
 # 马氏距离
 
 Mahalanobis Distance是印度现代统计学之父Prasanta Chandra Mahalanobis于1936年提出的概念。
@@ -199,4 +189,3 @@ $$d_M(x,y)=\sqrt{(\frac{x_1-y_1}{s_1})^2+\dots+(\frac{x_p-y_p}{s_p})^2}=\sqrt{(x
 马氏距离的特点还包括：
 
 1）马氏距离的计算是建立在总体样本的基础上的，这一点可以从上述协方差矩阵的解释中可以得出，也就是说，如果拿同样的两个样本，放入两个不同的总体中，最后计算得出的两个样本间的马氏距离通常是不相同的，除非这两个总体的协方差矩阵碰巧相同；
-

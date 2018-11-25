@@ -181,6 +181,16 @@ https://blog.csdn.net/jaych/article/details/51031064
 
 SFR算法详解4
 
+## 双目成像
+
+https://zhuanlan.zhihu.com/p/50801189
+
+OpenCV双目稠密匹配BM算法源代码详细解析
+
+https://www.jianshu.com/p/cbe50ede70aa
+
+半全局块匹配（Semi-Global Block Matching）算法
+
 ## 参考
 
 https://mp.weixin.qq.com/s/od9uDZdRU4QaBKPHb0tLag

@@ -194,6 +194,10 @@ https://mp.weixin.qq.com/s/5MI1J16sEkr4UR4rSrw1wA
 
 Michael Jordan新研究：采样可以比优化更快地收敛
 
+https://mp.weixin.qq.com/s/g8GLF0rf3IPAjRb9wZaS4w
+
+神经网络的奥秘之优化器的妙用
+
 # 推荐系统进阶
 
 除了《机器学习（十五～十六）》提及的ALS和PCA之外，相关的算法还包括：

@@ -1,10 +1,48 @@
 ---
 layout: post
-title:  机器学习（十五）——协同过滤的ALS算法
+title:  机器学习（十五）——协同过滤的ALS算法（1）
 category: ML 
 ---
 
-## 矩阵的条件数（续）
+## 病态矩阵（续）
+
+当解集x对A和b的系数高度敏感，那么这样的方程组就是病态的 (ill-conditioned/ill-posed)。
+
+从上例的情况来看，矩阵的行向量$$\begin{bmatrix} 400 & -201\end{bmatrix}$$和$$\begin{bmatrix} -800 & 401\end{bmatrix}$$实际上是过于线性相关了，从而导致矩阵已经接近奇异矩阵（near singular matrix）。
+
+病态矩阵实际上就是奇异矩阵和近奇异矩阵的另一个说法。
+
+参见：
+
+http://www.cnblogs.com/daniel-D/p/3219802.html
+
+病态矩阵与条件数
+
+## 矩阵的条件数
+
+我们首先假设向量b受到扰动，导致解集x产生偏差，即：
+
+$$A(x+\Delta x)=b+\Delta b$$
+
+也就是：
+
+$$A\Delta x=\Delta b$$
+
+因此，由矩阵相容性可得：
+
+$$\|\Delta x\|\le \|A^{-1}\|\cdot\|\Delta b\|$$
+
+同时，由于：
+
+$$\|A\|\cdot\|x\|\ge\|b\|$$
+
+所以：
+
+$$\frac{\|\Delta x\|}{\|A\|\cdot\|x\|}\le \frac{\|A^{-1}\|\cdot\|\Delta b\|}{\|b\|}$$
+
+即：
+
+$$\frac{\|\Delta x\|}{\|x\|}\le \frac{\|A\|\cdot\|A^{-1}\|\cdot\|\Delta b\|}{\|b\|}$$
 
 我们定义矩阵的条件数$$K(A)=\|A\|\cdot\|A^{-1}\|$$，则上式可写为：
 
@@ -277,20 +315,3 @@ https://mp.weixin.qq.com/s/RjpH7XD5SCMkrSdcmG394g
 </table>
 
 如上表所示，$$X_i$$和$$Y_i$$是原始的变量值，$$x_i$$和$$y_i$$是rank之后的值，$$d_i=x_i-y_i$$。
-
-当$$X_i$$和$$Y_i$$没有重复值的时候，也可用如下公式计算相关系数：
-
-$$r_s = {1- \frac {6 \sum d_i^2}{n(n^2 - 1)}}$$
-
->注：Charles Spearman，1863～1945，英国心理学家。这个人的经历比较独特，20岁从军，15年之后退役。然后，进入德国莱比锡大学读博，中间又被军队征召，参加了第二次布尔战争，因此，直到1906年才拿到博士学位。伦敦大学学院心理学教授。   
->尽管他的学历和教职，都是心理学方面的。但他最大的贡献，却是在统计学领域。他也是因为在统计学方面的成就，得以当选皇家学会会员。   
->话说那个时代的统计学大牛，除了Fisher之外，基本都是副业比主业强。只有Fisher，主业方面也是那么牛逼，不服不行啊。
-
-![](/images/article/spearman.png)
-
-由上图可见，Pearson系数关注的是两个变量之间的线性相关度，而Spearman系数可以应用到非线性或者难以量化的领域。
-
-参见：
-
-https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient
-

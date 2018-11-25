@@ -222,6 +222,14 @@ https://mp.weixin.qq.com/s/zZNJKUYlmKKSuSRCM1sgeg
 
 OpenCV二维码检测与定位
 
+https://mp.weixin.qq.com/s/v8-4vs2V6R8VljY0k1PzhA
+
+OpenCV4.0 快速QR二维码检测测试示例
+
+https://mp.weixin.qq.com/s/LKltnkxxoMHMiqx2Rpi77w
+
+基于OpenCV Python实现二维码检测与识别
+
 https://mp.weixin.qq.com/s/R2kGr7NHorfnpHV9OD18Qw
 
 基于OpenCV的摄像头圆心计算

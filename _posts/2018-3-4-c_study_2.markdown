@@ -140,11 +140,31 @@ signal.signal(signal.SIGALRM, handler)
 
 Captcha是一个Python验证码库，能够生成音频和图片验证码。
 
+>CAPTCHA是Completely Automated Public Turing Test to Tell Computers and Humans Apart (全自动区分计算机和人类的图灵测试)的简称. CAPTCHA的目的是区分计算机和人类的一种程序算法，是一种区分用户是计算机和人的计算程序，这种程序必须能生成并评价人类能很容易通过但计算机却通不过的测试。
+
 代码：
 
 https://github.com/lepture/captcha
 
 这个库可用于生成大量有标签的验证码，是DL入门的必备工具。
+
+参考：
+
+https://mp.weixin.qq.com/s/m4rNUFV4VGUBI7aWv5fgbw
+
+中文项目：快速识别验证码，CNN也能为爬虫保驾护航
+
+其他类似项目还包括：
+
+| 语言 | 名称 | 网址 |
+|:--:|:--:|:--:|
+| Java | JCaptcha | http://jcaptcha.sourceforge.net/ |
+| Java | SimpleCaptcha | http://simplecaptcha.sourceforge.net/ |
+| Java | kcaptcha | http://captcha.ru/en/kcaptcha/ |
+| Java | patchca | https://github.com/pusuo/patchca |
+| Java | SkewPassImage | http://skewpassim.sourceforge.net/ |
+| Java | Internet Captcha | http://www.icaptcha.com/ |
+| Java | Cage | http://akiraly.github.io/cage/ |
 
 ## 如何通过需认证的代理获取HTTP网页
 
@@ -401,37 +421,3 @@ https://mp.weixin.qq.com/s/rE5OEFwwFxJNb_Omwmqvzw
 https://blog.csdn.net/longerzone/article/details/17889969
 
 Python下调用Linux的Shell命令
-
-# DL参考资源
-
-https://mp.weixin.qq.com/s/-b8FuEQlpEb5G0L0QAxVEA
-
-如何使用深度学习为照片自动生成文本描述
-
-https://mp.weixin.qq.com/s/_7yx6IywJ1EOClZUcr0AsA
-
-PNAS：绘制情绪图谱，人类内心的表情包其实很丰富
-
-https://mp.weixin.qq.com/s/TUhr31EleePcHHNNUAWQ4A
-
-Google Brain与牛津大学主持最新《计算机视觉前沿》报告
-
-https://mp.weixin.qq.com/s/DCoYcEpkH3t7WSpBBH_rLA
-
-诺基亚首席科学家范力欣：用模糊逻辑实现可解释的深度神经网络
-
-https://mp.weixin.qq.com/s/ZWUPaSeL4vGfoEOxI57umw
-
-为卷积模型执行加入循环和远程反馈，更完整地拟合生物视觉
-
-https://mp.weixin.qq.com/s/DtxjX9RfRgehxLsJ7MFoNw
-
-谷歌大脑开源TensorFuzz，自动Debug神经网络！
-
-https://mp.weixin.qq.com/s/t0lGL66YIJwIvI4emNfN7Q
-
-UC Berkeley新研究：通过深度学习建模注意点采样阵列
-
-https://mp.weixin.qq.com/s/fJMae88M8GEQi80DfbCKjQ
-
-从“局部连接”回到“全连接”的神经网络

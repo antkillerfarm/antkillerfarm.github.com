@@ -38,7 +38,7 @@ https://developers.google.cn/machine-learning/crash-course/
 
 API官方中文版：
 
-http://tensorflow.google.cn/
+http://tensorflow.google.cn/?hl=zh-cn
 
 另一个API中文版：
 

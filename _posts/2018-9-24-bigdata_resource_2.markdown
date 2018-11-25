@@ -192,6 +192,10 @@ https://mp.weixin.qq.com/s/9k2aorOp_zc10JKf9F9Evw
 
 上海交大和厦门大学联合发布大规模驾驶策略学习数据集DBNet
 
+https://mp.weixin.qq.com/s/4A68qHXEA7VHe8RrKv7Wbg
+
+自动驾驶都有什么测试基准？
+
 ## 医疗
 
 https://mp.weixin.qq.com/s/849fLGndmaRvz_oWt6HWtg

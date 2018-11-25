@@ -276,6 +276,10 @@ https://mp.weixin.qq.com/s/gaNSQ_8JGqX4a3lGuf-9fA
 
 如何让电脑成为看图说话的高手？
 
+https://mp.weixin.qq.com/s/-b8FuEQlpEb5G0L0QAxVEA
+
+如何使用深度学习为照片自动生成文本描述
+
 # Multi-agent
 
 https://zhuanlan.zhihu.com/p/39037444

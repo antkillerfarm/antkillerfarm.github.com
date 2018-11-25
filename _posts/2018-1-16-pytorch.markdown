@@ -403,3 +403,7 @@ https://mp.weixin.qq.com/s/O3SIexXUeWM1svdI_ygrDg
 https://mp.weixin.qq.com/s/vOZust2RceSVoYPH6nauJw
 
 机器学习模型该如何选择和评估？希望这个小册子能帮到你！
+
+https://mp.weixin.qq.com/s/eW3fGJAQQMS12EmmeqZsYQ
+
+如何打开黑盒子模型？41页最新机器学习可解释模型综述论文

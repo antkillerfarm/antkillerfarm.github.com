@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（十一）——高阶统计, 数学杂谈
+title:  数学狂想曲（十一）——高阶统计, 勾股定理, 数学杂谈
 category: math 
 ---
 
@@ -75,6 +75,14 @@ https://wenku.baidu.com/view/7c4931085727a5e9856a6139.html
 https://wenku.baidu.com/view/136b666c561252d380eb6e8c.html
 
 高阶统计量的定义与性质
+
+# 勾股定理
+
+勾股定理在西方被称为Pythagorean theorem。它的命题本身并不复杂，也就是初中几何的内容，但是内涵非常丰富。即使大学数学也未必能穷尽其中的奥妙。这里仅罗列一二。
+
+>Pythagoras of Samos，约570 BC～约495 BC，古希腊哲学家。那时候的哲学家比现在牛多了，通常都是兼通数门学科的宗师级人物。
+
+使用勾股定理定义的距离，也就是通常的Euclidean Distance。
 
 # 数学杂谈
 

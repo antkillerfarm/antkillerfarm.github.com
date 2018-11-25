@@ -146,6 +146,10 @@ https://mp.weixin.qq.com/s/tTdKqRZqBFxFFiZaDD9AJw
 
 三维深度学习中的目标分类与语义分割
 
+https://mp.weixin.qq.com/s/k-IIEMtaSQ1gsRvjNTtlUA
+
+3D实时换脸又有新进展！中科院博士生提出改进版本，每张图推理只需0.27毫秒
+
 # CNN进阶
 
 http://mp.weixin.qq.com/s/ddTNr-967IahTZ2X1LNSEQ

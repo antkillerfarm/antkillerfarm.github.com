@@ -293,3 +293,23 @@ https://mp.weixin.qq.com/s/jBjs5OKZEcfpoYesz6Pk3w
 https://zhuanlan.zhihu.com/p/50349824
 
 利用词向量和WordNet识别和解释隐喻词
+
+https://mp.weixin.qq.com/s/rLFm2J6Bao6H5Qj9Fw0wUg
+
+百度陈翔：基于机器学习的搜索语义理解技术！
+
+https://mp.weixin.qq.com/s/BWg77FZ2IugBhO_HWHpfHw
+
+深度学习在自然语言处理中的应用综述
+
+https://mp.weixin.qq.com/s/9HeLayEDTUCy_ACJUV8fYA
+
+中文分词调研：任何声称在PKU上拿到97%以上所谓“准确率”的说法，可信度都不高！
+
+http://mp.weixin.qq.com/s/fn9WKu0_aH2-lx6VvxC_RA
+
+生成式关键短语识别
+
+https://mp.weixin.qq.com/s/Naj1u0LZwvQhOe6Iay0nFA
+
+常识用于回答生成式多跳问题

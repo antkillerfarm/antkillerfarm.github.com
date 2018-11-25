@@ -360,10 +360,6 @@ https://zhuanlan.zhihu.com/p/33956771
 
 # 硬件
 
-https://mp.weixin.qq.com/s/NwptdxWiN4SadjUQafA5rw
-
-高端MEMS固体波动陀螺的发展与应用
-
 https://mp.weixin.qq.com/s/ZexnsNmqsD2yq-7YNASohw
 
 数模转换器的基本原理及DAC类型简介
@@ -380,10 +376,6 @@ https://mp.weixin.qq.com/s/Coz81Zidz_LaSYkcErJsOQ
 
 NAND Flash与NOR Flash究竟有何不同
 
-https://blog.csdn.net/richard_liujh/article/details/49615395
-
-光学心率测量原理
-
 http://mp.weixin.qq.com/mp/homepage?__biz=MzUyMTA2OTM1MA==&hid=4&sn=192b1f4e49979e13c7df491725415d06&scene=18
 
 一个OLED方面的公众号
@@ -391,6 +383,14 @@ http://mp.weixin.qq.com/mp/homepage?__biz=MzUyMTA2OTM1MA==&hid=4&sn=192b1f4e4997
 https://zhuanlan.zhihu.com/p/48343011
 
 芯片中的数学——均衡器EQ和它在高速外部总线中的应用
+
+https://mp.weixin.qq.com/s/oCBSGVtGSwq9c59rcVc2-A
+
+无线接收器的百年创新及架构发展史
+
+https://mp.weixin.qq.com/s/KPmkphlJFv5dScLlhAigEw
+
+新型存储器技术盘点
 
 # DL参考资源
 

@@ -196,6 +196,10 @@ https://mp.weixin.qq.com/s/tXr9NhVfBSvI5pduziIECQ
 
 基于深度学习的二进制恶意样本检测
 
+https://mp.weixin.qq.com/s/x8ykOA9CeX3FCz0WCeySng
+
+AI生成假指纹以假乱真，你的指纹识别还安全吗？
+
 ## 行业
 
 李开复的这篇文章不可不读：

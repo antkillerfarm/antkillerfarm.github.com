@@ -1,119 +1,86 @@
 ---
 layout: post
-title:  机器学习（二十七）——Q-learning, 动态规划
+title:  机器学习（二十七）——动态规划
 category: ML 
 ---
 
-# K-摇臂赌博机（续）
+# Latent Dirichlet Allocation（续）
 
-## Gradient-Bandit算法
+## 如何确定LDA的topic个数
 
-Gradient-Bandit算法的定义如下：
+这个问题上，业界最常用的指标包括Perplexity，MPI-score等。简单的说就是Perplexity越小，且topic个数越少越好。
 
-$$Pr\{A_t=a\}=\frac{e^{H_t(a)}}{\sum_{b=1}^ke^{H_t(b)}}=\pi_t(a)$$
+从模型的角度解决主题个数的话，可以在LDA的基础上融入嵌套中餐馆过程(nested Chinese Restaurant Process)，印度自助餐厅过程(Indian Buffet Process)等。因此就诞生了这样一些主题模型：
 
-$$H_{t+1}(a)=H_t(a)+\alpha(R_t-\overline R_t)(1\{A_t=a\}-\pi_t(a))$$
+1. hierarchical Latent Dirichlet Allocation (hLDA)  (2003_NIPS_Hierarchical topic models and the nested Chinese restaurant process)
 
-$$\overline R_t=\frac{1}{t}\sum_{i=1}^tR_i$$
+2. hierarchical Dirichlet process (HDP)  (2006_NIPS_Hierarchical dirichlet processes)/Nested Hierarchical Dirichlet Processes (nHDP)
 
-其中，$$H_t(a)$$被称作策略偏好（preference）。这实际上是一个Softmax算法的变种。
+3. Indian Buffet Process Compound Dirichlet Process (ICD)  (2010_ICML_The IBP compound Dirichlet process and its application to focused topic modeling)
 
-## 多步强化学习
+4. Non-parametric Topic Over Time (npTOT)  (2013_SDM_A nonparametric mixture model for topic modeling over time)
 
-对于多步强化学习任务，虽然可以将其中的每一步看作一个k-armed Bandit问题，然而由于这种方法忽视了决策过程之间的联系，存在很多局限，因此不如MDP相关的算法。
+5. collapsed Gibbs Samplingalgorithm for the Dirichlet Multinomial Mixture Model (GSDMM)  (2014_SIGKDD_A Dirichlet Multinomial Mixture Model-based Approach for Short Text Clustering)
 
-## 参考
-
-http://www.xfyun.cn/share/?p=2606
-
-Bandit算法与推荐系统
-
-https://mp.weixin.qq.com/s/9dXqXmRkINjwJYB4csjU5A
-
-强化学习初探-从多臂老虎机问题说起
-
-# Q-learning
-
-Q-learning是强化学习中很重要的算法，也是最早被引入DL领域的强化学习算法，对它的研究催生了Deep Q-learning Networks。
-
-下面用一个例子来讲述Q-learning算法。
-
-![](/images/article/q_learning.gif)
-
-上图中有5个房间，编号为0～4，将户外定义为编号5，房间之间通过门相连，则房间的联通关系可抽象为下图：
-
-![](/images/article/q_learning_1.gif)
-
-这里我们将每个房间称为一个**state**，将agent从一个房间到另一个房间称为一个**action**。
-
-开始时，我们将agent放置在任意房间中，并设定目标——走到户外（即房间5），则上图可变为：
-
-![](/images/article/q_learning_2.gif)
-
-这里的每条边上的数值就是reward值。Q-Learning的目标就是达到reward值最大的state。因此当agent到达户外之后，它就停留在那里了，这样的目标被称作**吸收目标**。
-
-如果以state为行，action为列，则上图又可转化为如下的reward矩阵：
-
-![](/images/article/r_matrix.gif)
-
-其中，-1表示两个state之间没有action。
-
-类似的，我们可以构建一个和R同阶的矩阵Q，来表示Q-Learning算法学到的知识。
-
-开始时，agent对外界一无所知，所以Q可以初始化为零矩阵。
-
-Q-Learning算法的**transition rule**为：
-
-$$Q(s,a)=R(s,a)+\gamma \max(Q(\tilde s,\tilde a))\tag{1}$$
-
-其中，(s,a)表示当前的state和action，$$(\tilde s,\tilde a)$$表示下一个state和action，$$0 \le \gamma < 1$$为学习参数。这个公式也被称作**Bellman equation**。
-
->Richard Ernest Bellman，1920～1984，美国应用数学家、控制论学家、数理生物学家。布鲁克林学院本科+威斯康星大学麦迪逊分校硕士+普林斯顿博士。二战期间曾在Los Alamos研究理论物理，后任职于美国智库RAND Corporation，南加州大学教授。美国艺术科学院院士，美国科学院院士。   
->Bellman–Ford算法的发明人之一。以他命名的奖项有Richard E. Bellman Control Heritage Award和Bellman Prize in Mathematical Biosciences。
-
-在无监督的情况下，agent不断从一个状态转至另一状态进行探索，直到到达目标。我们将agent的每一次探索（从任意初始状态开始，经历若干action，直到到达目标状态的过程）称为一个**episode**。
-
-Q-Learning算法的计算步骤如下：
-
->**Step 1**：给定参数$$\gamma$$和reward矩阵R。   
->**Step 2**：初始化Q=0。   
->**Step 3**：For each episode:
->>3.1 随机选择一个初始状态s。   
->>3.2 若未达到目标状态，则：
->>>(1)在当前s的所有action中，随机选择一个行为a。   
->>>(2)利用a，得到下一个状态$$\tilde s$$。   
->>>(3)利用公式1，计算$$Q(s,a)$$。   
->>>(4)令$$s=\tilde s$$。
-
-由马尔可夫过程的性质（参见《机器学习（十六、二十）》）可知，Q矩阵最终会趋于一个极限，如下所示：
-
-![](/images/article/q_matrix5.gif)
-
-上面的矩阵可用下图表示：
-
-![](/images/article/map5.gif)
-
-显然，沿着Q值最大的边走，就是这个探索问题的最佳答案。（如上图红线所示）即：
-
-$$\pi (s)=\arg \max_a(Q(s,a))$$
+这些主题模型都被叫做非参数主题模型(Non-parametric Topic Model)，最初可追溯到David M. Blei于2003年提出hLDA那篇文章(2003_NIPS_Hierarchical topic models and the nested Chinese restaurant process)。非参数主题模型是基于贝叶斯概率的与参数无关的主题模型。这里的参数无关主要是指模型本身可以“**随着观测数据的增长而相应调整**”，即主题模型的主题个数能够随着文档数目的变化而相应调整，无需事先人为指定。
 
 参考：
 
-http://blog.csdn.net/itplus/article/details/9361915
+https://www.zhihu.com/question/32286630
 
-一个Q-learning算法的简明教程
+怎么确定LDA的topic个数？
 
-http://blog.csdn.net/young_gy/article/details/73485518
+http://blog.csdn.net/luo123n/article/details/48902815
 
-强化学习之Q-learning简介
+Perplexity详解
 
-https://mp.weixin.qq.com/s/34E1tEQMZuaxvZA66_HRwA
+## LDA漫游指南
 
-通过Q-learning深入理解强化学习
+除了rickjin的《LDA数学八卦》之外，马晨写的《LDA漫游指南》也是这方面的中文新作。
 
-https://mp.weixin.qq.com/s/kmk3mKASZPixA8VS9sipcA
+该书的数学推导部分主要沿用rickjin的内容，但加入了Blei提出的变分贝叶斯方法。此外，还对LDA的代码实现、并行计算和大数据处理进行了深入的讨论。
 
-走近流行强化学习算法：最优Q-Learning
+## 参考
+
+http://www.arbylon.net/publications/text-est.pdf
+
+《Parameter estimation for text analysis》，Gregor Heinrich著
+
+http://www.inference.phy.cam.ac.uk/itprnn/book.pdf
+
+《Information Theory, Inference, and Learning Algorithms》，David J.C. MacKay著
+
+关于MCMC和Gibbs Sampling的更多的内容，可参考《Neural Networks and Learning Machines》，Simon Haykin著。该书有中文版。
+
+>注：Sir David John Cameron MacKay，1967～2016，加州理工学院博士，导师John Hopfield，剑桥大学教授。英国能源与气候变化部首席科学顾问，英国皇家学会会员。在机器学习领域和可持续能源领域有重大贡献。
+
+>Simon Haykin，英国伯明翰大学博士，加拿大McMaster University教授。初为雷达和信号处理专家。自适应信号处理领域的权威。80年代中后期，转而从事神经计算方面的工作。加拿大皇家学会会员。
+
+http://www.cs.cmu.edu/~epxing/Class/10708-14/lectures/lecture17-MCMC.pdf
+
+http://max.book118.com/html/2015/0513/16864294.shtm
+
+基于LDA分析的词聚类算法
+
+http://www.doc88.com/p-9159009103987.html
+
+基于LDA的博客分类算法
+
+http://blog.csdn.net/sinat_26917383/article/details/52095013
+
+基于LDA的Topic Model变形+一些NLP开源项目
+
+https://mp.weixin.qq.com/s/74lXwDg9H_dyOubfXVn2Bw
+
+一文详解LDA主题模型
+
+https://mp.weixin.qq.com/s/_bAiiJqPjPPMzJ0hiuCkOg
+
+通过Python实现马尔科夫链蒙特卡罗方法的入门级应用
+
+https://mp.weixin.qq.com/s/BJaRUnpcPe8iybSz14gabw
+
+一文读懂如何用LSA、PSLA、LDA和lda2vec进行主题建模
 
 # Markov Decision Process
 
