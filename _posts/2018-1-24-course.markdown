@@ -376,6 +376,10 @@ https://mp.weixin.qq.com/s/sOggiB57D-ekWOsbL6TY_A
 
 TensorFlow中那些鲜为人知却又极其实用的知识
 
+https://mp.weixin.qq.com/s/XHKrkNf2bWLF7r7gzdU24w
+
+Quick, Draw!涂鸦分类递归神经网络
+
 # Machine Learning之Python篇+
 
 https://mp.weixin.qq.com/s/8NI-NayCg_gZmJ6-1FZ_DA

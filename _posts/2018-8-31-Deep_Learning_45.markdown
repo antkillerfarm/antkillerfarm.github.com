@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十五）——Attention进阶, AutoDL, 多模态学习, BERT, DMN
+title:  深度学习（四十五）——Attention进阶, AutoDL, 多模态学习, BERT
 category: DL 
 ---
 
@@ -322,6 +322,14 @@ DeepMind新研究连接听与看，实现“听声辨位”的多模态学习
 
 https://github.com/google-research/bert
 
+BERT算的上是Google暴力美学的新作了。如果用家用显卡GTX 1080Ti的话，大概需要几个月的训练时间。幸好Google已经提供了预训练的模型：
+
+https://github.com/google-research/bert/blob/master/multilingual.md
+
+这里有一个使用预训练模型的参考代码：
+
+https://github.com/macanv/BERT-BiLSMT-CRF-NER
+
 参考：
 
 https://www.zhihu.com/question/298203515
@@ -366,19 +374,8 @@ https://mp.weixin.qq.com/s/fz-bQMAi5bs2_bvRhf3ERg
 
 https://mp.weixin.qq.com/s/pD4it8vQ-aE474uSMQG0YQ
 
-两行代码玩转 Google BERT句向量词向量
+两行代码玩转Google BERT句向量词向量
 
-# DMN
+https://mp.weixin.qq.com/s/osmUZxAAX3x-oTHYJbzemA
 
-Question answering是自然语言处理领域的一个复杂问题。它需要对文本的理解力和推理能力。大部分NLP问题都可以转化为一个QA问题。Dynamic Memory Networks可以用来处理QA问题。DMN的输入包含事实输入，问题输入，经过内部处理形成片段记忆，最终产生问题的答案。
-
-DMN可进行端到端的训练，并在多种任务上取得了state-of-the-art的效果：包括QA（Facebook 的 bAbI 数据集），情感分析文本分类（Stanford Sentiment Treebank）和词性标注（WSJ-PTB）。
-
-![](/images/article/DMN.png)
-
-参考：
-
-http://blog.csdn.net/javafreely/article/details/71994247
-
-动态记忆网络
-
+谷歌BERT模型fine-tune终极实践教程
