@@ -313,3 +313,7 @@ http://mp.weixin.qq.com/s/fn9WKu0_aH2-lx6VvxC_RA
 https://mp.weixin.qq.com/s/Naj1u0LZwvQhOe6Iay0nFA
 
 常识用于回答生成式多跳问题
+
+https://mp.weixin.qq.com/s/fkBkSakTtuGPhi3mK563mg
+
+结合贪心搜索和蒙特卡洛随机游走的面向DBpedia的实体链接方法

@@ -1,10 +1,56 @@
 ---
 layout: post
-title:  NLP（二）, Storm, Flink, Pulsar, MXNet
+title:  NLP（二）, Storm, Flink, Pulsar
 category: AI 
 ---
 
 # NLP
+
+## NLPchina
+
+NLPchina(中国自然语言处理开源组织)旗下有许多好用的工具。
+
+官网：
+
+http://www.nlpcn.org/
+
+Github：
+
+https://github.com/NLPchina
+
+### Ansj
+
+Ansj是一个NLPchina旗下的开源的Java中文分词工具，基于中科院的ictclas中文分词算法，比其他常用的开源分词工具（如mmseg4j）的分词准确率更高。
+
+https://github.com/NLPchina/ansj_seg
+
+### Word2VEC_java
+
+word2vec java版本的一个实现。
+
+https://github.com/NLPchina/Word2VEC_java
+
+doc2vec java版本的一个实现，基于Word2VEC_java。
+
+https://github.com/yao8839836/doc2vec_java
+
+### ansj_fast_lda
+
+LDA算法的Java包。
+
+https://github.com/NLPchina/ansj_fast_lda
+
+### nlp-lang
+
+这个项目是一个基本包.封装了大多数nlp项目中常用工具
+
+https://github.com/NLPchina/nlp-lang
+
+## 词性标注
+
+http://jacoxu.com/ictpos3-0%E6%B1%89%E8%AF%AD%E8%AF%8D%E6%80%A7%E6%A0%87%E8%AE%B0%E9%9B%86/
+
+ICTPOS3.0汉语词性标记集
 
 ## Word Hashing
 
@@ -311,61 +357,3 @@ https://mp.weixin.qq.com/s/v4A--nGiDTt58pZyIzepeg
 https://mp.weixin.qq.com/s/x4GW5zvjD5Fyc-NrXDqpmA
 
 Kafka不够好，智联招聘基于Pulsar打造企业级事件中心
-
-# MXNet
-
-https://mp.weixin.qq.com/s/50uGupiwU2UVuVeMm_bTag
-
-李沐介绍MXNet新接口Gluon：高效支持命令式与符号式编程
-
-https://mp.weixin.qq.com/s/VRmhAluhKWxyPbStmMoWtg
-
-一张速查表实现Apache MXNet深度学习框架五大特征的开发利用
-
-http://zh.gluon.ai/index.html
-
-李沐：《动手学深度学习》（使用Gluon）
-
-https://zhuanlan.zhihu.com/p/30966663
-
-用Gluon炼丹体验
-
-https://mp.weixin.qq.com/s/B8TYVG5WjDJ4NX-wirS2Fg
-
-Alex Smola：深度学习触手可及，架构Gluon高中生就能用
-
-https://mp.weixin.qq.com/s/wdDYUOLpi0l2mRirQhHjPQ
-
-Apache MXNet助力数字营销，检测社交网络照片中的商标品牌
-
-http://mp.weixin.qq.com/s/Z5X7Vamuw1BwtienhOrSvQ
-
-解构TensorFlow, 学习MXNet--新一代深度学习系统的核心思想
-
-https://mp.weixin.qq.com/s/_PAzff6V9UgwLCos05B4rg
-
-十分钟从PyTorch转MXNet
-
-https://mp.weixin.qq.com/s/2ulMPGEHYkOqWhT2XY449w
-
-TensorFlow、MXNet、PaddlePaddle三个开源库对比
-
-https://mp.weixin.qq.com/s/-BlBm3ZTZ32ijORJux7rTA
-
-DMLC团队发布GluonCV和GluonNLP：两种简单易用的DL工具箱
-
-https://mp.weixin.qq.com/s/Vb-7hGw7UOx4jP3lwW3Leg
-
-从VGG到ResNet，你想要的MXNet预训练模型轻松学
-
-https://mp.weixin.qq.com/s/CgxrvNfyu35SMvWBAt-5kg
-
-MXNet开放支持Keras，高效实现CNN与RNN的分布式训练
-
-https://mp.weixin.qq.com/s/qLax1Jb0OOfFOU68wn_2PA
-
-从三大神经网络，测试对比TensorFlow、MXNet、CNTK、Theano四个框架
-
-https://mp.weixin.qq.com/s/hRH7hVsaQBqf0vhD_BqBgg
-
-五大深度学习框架三类神经网络全面测评

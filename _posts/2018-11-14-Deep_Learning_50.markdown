@@ -126,6 +126,10 @@ https://mp.weixin.qq.com/s/_tABIMkWX8L5xQFmvPI7rw
 
 有效稳定对抗模型训练过程，伯克利提出变分判别器瓶颈
 
+https://zhuanlan.zhihu.com/p/50790727
+
+SeqGAN: Sequence GAN with Policy Gradient
+
 # 图像超分辨率进阶
 
 https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg

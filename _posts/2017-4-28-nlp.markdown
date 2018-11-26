@@ -349,6 +349,26 @@ Allen AI实验室由微软联合创始人Paul G. Allen投资创立。
 
 http://allenai.org/
 
+## FlashText
+
+在NLP任务中，清理文本数据通常需要替换句子中的关键词或从句子中提取关键词。通常，这样的操作可以用正则表达式来完成，但是如果要搜索的词汇量过大，操作就会变得麻烦。Python 中基于FlashText算法的FlashText模块，为这种情况提供了一个合适的替代方案。
+
+官网：
+
+https://flashtext.readthedocs.io/en/latest/
+
+论文：
+
+《Replace or Retrieve Keywords In Documents at Scale》
+
+## fuzzywuzzy
+
+fuzzywuzzy可以很容易地实现诸如字符串比较比率、token比率等操作。对于匹配不同数据库中的记录也很方便。
+
+代码：
+
+https://github.com/seatgeek/fuzzywuzzy
+
 ### 其他
 
 https://github.com/mozillazg/python-pinyin
@@ -430,50 +450,3 @@ OpenCC：一个中文简繁转换的工具
 https://mp.weixin.qq.com/s/-3A4eNAPa6DP-bX4x4HfQA
 
 横向对比4大NLP Python工具包，总有一款适合你！
-
-## NLPchina
-
-NLPchina(中国自然语言处理开源组织)旗下有许多好用的工具。
-
-官网：
-
-http://www.nlpcn.org/
-
-Github：
-
-https://github.com/NLPchina
-
-### Ansj
-
-Ansj是一个NLPchina旗下的开源的Java中文分词工具，基于中科院的ictclas中文分词算法，比其他常用的开源分词工具（如mmseg4j）的分词准确率更高。
-
-https://github.com/NLPchina/ansj_seg
-
-### Word2VEC_java
-
-word2vec java版本的一个实现。
-
-https://github.com/NLPchina/Word2VEC_java
-
-doc2vec java版本的一个实现，基于Word2VEC_java。
-
-https://github.com/yao8839836/doc2vec_java
-
-### ansj_fast_lda
-
-LDA算法的Java包。
-
-https://github.com/NLPchina/ansj_fast_lda
-
-### nlp-lang
-
-这个项目是一个基本包.封装了大多数nlp项目中常用工具
-
-https://github.com/NLPchina/nlp-lang
-
-## 词性标注
-
-http://jacoxu.com/ictpos3-0%E6%B1%89%E8%AF%AD%E8%AF%8D%E6%80%A7%E6%A0%87%E8%AE%B0%E9%9B%86/
-
-ICTPOS3.0汉语词性标记集
-

@@ -375,3 +375,21 @@ Docker Compose+GPU+TensorFlow所产生的奇妙火花
 https://mp.weixin.qq.com/s/sOggiB57D-ekWOsbL6TY_A
 
 TensorFlow中那些鲜为人知却又极其实用的知识
+
+# Machine Learning之Python篇+
+
+https://mp.weixin.qq.com/s/8NI-NayCg_gZmJ6-1FZ_DA
+
+一个Python特征选择工具，助力实现高效机器学习
+
+https://mp.weixin.qq.com/s/8XDXgIm-Zcb3dL-2h9eSjA
+
+用Python构建NLP Pipeline，从思路到具体代码，这篇文章一次性都讲到了
+
+https://mp.weixin.qq.com/s/8H8GrAe7wMaLGWKjKUVp2Q
+
+用文本分类模型轻松搞定复杂语义分析
+
+https://mp.weixin.qq.com/s/dARWbR1ghho0yX02lNA-gw
+
+Python绘制histogram直方图

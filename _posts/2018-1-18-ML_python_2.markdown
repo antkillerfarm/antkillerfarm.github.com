@@ -42,6 +42,14 @@ https://mp.weixin.qq.com/s/IMMdbF33ZHEz7N_XwgIhHA
 
 试试谷歌这个新工具：说不定比TensorFlow还好用！
 
+## PyFlux
+
+PyFlux是Python中为处理时间序列问题而创建的开源库。该库有一系列极好的时间序列模型，包括但不限于ARIMA、GARCH和VAR模型。
+
+官网：
+
+https://pyflux.readthedocs.io/en/latest/index.html
+
 ## 参考
 
 https://mp.weixin.qq.com/s/S7gnAdekPFcyd4ni1m9phg
@@ -423,19 +431,3 @@ https://mp.weixin.qq.com/s/440osIoULBRDOHq7Bk8awA
 https://mp.weixin.qq.com/s/tJwgNXKVwoJby-WkeMeBqQ
 
 40行Python代码实现“旅行者困境“演化过程
-
-https://mp.weixin.qq.com/s/8NI-NayCg_gZmJ6-1FZ_DA
-
-一个Python特征选择工具，助力实现高效机器学习
-
-https://mp.weixin.qq.com/s/8XDXgIm-Zcb3dL-2h9eSjA
-
-用Python构建NLP Pipeline，从思路到具体代码，这篇文章一次性都讲到了
-
-https://mp.weixin.qq.com/s/8H8GrAe7wMaLGWKjKUVp2Q
-
-用文本分类模型轻松搞定复杂语义分析
-
-https://mp.weixin.qq.com/s/dARWbR1ghho0yX02lNA-gw
-
-Python绘制histogram直方图

@@ -38,10 +38,6 @@ https://mp.weixin.qq.com/s/zQJve_w5OoM6u-WcSWArdQ
 
 FPN (Feature Pyramid Network)
 
-http://www.cnblogs.com/pinard/p/6221564.html
-
-谱聚类（spectral clustering）原理总结
-
 https://mp.weixin.qq.com/s/NlJ4-b5SjIjPGgvLUuSxFw
 
 孩子，有时候并不是生活欺骗了你，而是你可能还不懂概率统计……
@@ -229,6 +225,10 @@ https://zhuanlan.zhihu.com/p/50311527
 https://zhuanlan.zhihu.com/p/50524005
 
 数学笔记（Chapter 6. L-函数，第1课）
+
+https://mp.weixin.qq.com/s/eq4MllJta5NmaLARPpvang
+
+公交车总迟到？你大概掉进了“等待时间悖论
 
 ## LSM (Log Structured Merge)
 

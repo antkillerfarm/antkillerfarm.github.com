@@ -245,6 +245,10 @@ https://mp.weixin.qq.com/s/GlwJhvdzxaRbRE2DhMpBSg
 
 基于动态局部搜索的免疫自动聚类算法
 
+http://www.cnblogs.com/pinard/p/6221564.html
+
+谱聚类（spectral clustering）原理总结
+
 # 压缩感知
 
 http://blog.csdn.net/abcjennifer/article/details/7721834
