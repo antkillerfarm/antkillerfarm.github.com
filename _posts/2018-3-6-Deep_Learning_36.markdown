@@ -336,6 +336,10 @@ https://mp.weixin.qq.com/s/jdRu-cishwV8qBmGLTFJCA
 
 美团“猜你喜欢”深度学习排序模型实践
 
+https://mp.weixin.qq.com/s/u7GJstj5E_7y1rwkUbpAXg
+
+推荐系统的可解释性浅谈
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

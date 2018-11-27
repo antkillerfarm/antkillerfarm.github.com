@@ -82,7 +82,13 @@ https://wenku.baidu.com/view/136b666c561252d380eb6e8c.html
 
 >Pythagoras of Samos，约570 BC～约495 BC，古希腊哲学家。那时候的哲学家比现在牛多了，通常都是兼通数门学科的宗师级人物。
 
-使用勾股定理定义的距离，也就是通常的Euclidean Distance。
+使用勾股定理定义的距离，也就是通常的Euclidean Distance。之所以用Euclid命名是因为：**勾股定理实际上和Euclid几何的平行公理是等价的。**
+
+Euclidean Distance => 最小二乘法 => 正态分布
+
+所以GMM隐含使用了Euclidean Distance。
+
+
 
 # 数学杂谈
 

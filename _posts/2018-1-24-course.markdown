@@ -362,6 +362,18 @@ http://www.ds100.org/
 
 UCB的数据科学高级课程：Principles and Techniques of Data Science
 
+https://aws.amazon.com/cn/training/learning-paths/machine-learning/
+
+亚马逊内部机器学习课程
+
+https://mp.weixin.qq.com/s/mGM5nJJrWpSISWqXdlIDFg
+
+计算机视觉入门教程系列—125页带你回顾CV发展脉络
+
+https://mp.weixin.qq.com/s/o50c2cMjUSmR8Ea6v925_w
+
+食物图像分析——55页PPT带你学习食物图像分析相关研究进展
+
 # TensorFlow+
 
 https://mp.weixin.qq.com/s/MT1YaMm4KBWsIZeHehahgw

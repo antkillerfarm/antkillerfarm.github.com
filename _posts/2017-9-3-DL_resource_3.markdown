@@ -220,6 +220,10 @@ https://mp.weixin.qq.com/s/yAYF2i-Pr84RliKrJyPaUA
 
 伯克利星际争霸II AI“撞车”腾讯，作者：我们不一样
 
+https://mp.weixin.qq.com/s/uC8gi4kN_muRTwRL0RCZjQ
+
+要玩转这个星际争霸II开源AI，你只需要i5+GTX1050
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293

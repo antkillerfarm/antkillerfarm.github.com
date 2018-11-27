@@ -222,6 +222,10 @@ https://mp.weixin.qq.com/s/GYe1psxy1KMCbV7f3K8f4Q
 
 神经规则引擎：让符号规则学会变通
 
+https://mp.weixin.qq.com/s/-qc2MENppQmdClaIKV6Lww
+
+深度推理学习中的图网络与关系表征
+
 # LSM
 
 liquid state machine (LSM)

@@ -392,6 +392,10 @@ https://mp.weixin.qq.com/s/z82UmAuumlrwVlFCwBeqOQ
 
 美团餐饮娱乐知识图谱——美团大脑揭秘
 
+https://zhuanlan.zhihu.com/p/51000072
+
+基于知识图谱路径推理的可解释推荐
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/Z1ixoRmUDl17CF4k7JS4zg

@@ -336,3 +336,11 @@ https://mp.weixin.qq.com/s/IMx9lcMVAyB9hy_77DaJ3Q
 https://mp.weixin.qq.com/s/_lUXuhXob_4XYPBpdvX40A
 
 北大新成果！首次成功地将CNN解码器用于代码生成
+
+https://mp.weixin.qq.com/s/VOEJOWyh9j_XyJMliKpkkw
+
+扇贝:应用TensorFlow实现深度知识追踪
+
+https://mp.weixin.qq.com/s/9k2-U0MbY56eETBF7FRMmw
+
+深度学习碰上古文献，西南大学提出基于CNN的古彝文识别方法
