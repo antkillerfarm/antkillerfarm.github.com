@@ -26,10 +26,6 @@ https://mp.weixin.qq.com/s/4dlWdPOCbYedu02aLAQ04Q
 
 MIT“创世纪”机器学习新系统，自动生成补丁修复Bug
 
-https://mp.weixin.qq.com/s/cr0BJLkyN2kW35-w1pebGQ
-
-学习在黑暗中看世界（Learning to See in the Dark）
-
 https://mp.weixin.qq.com/s/ESX-V5oMk35NhP7MKu_d0A
 
 美剧《硅谷》深度学习APP获艾美奖提名：使用TensorFlow和GPU开发

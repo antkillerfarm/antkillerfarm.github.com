@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十八）——语义分割进阶, 问答系统, 深度哈希, 多任务学习
+title:  深度学习（四十八）——语义分割进阶, 问答系统, 多任务学习
 category: DL 
 ---
 
@@ -59,6 +59,26 @@ mix.wav：混合后的声音。
 ***MUSDB18：***
 
 https://sigsep.github.io/datasets/musdb.html
+
+类似这样用法的还有：
+
+《Learning to See in the Dark》
+
+代码：
+
+https://github.com/cchen156/Learning-to-See-in-the-Dark
+
+![](/images/img2/SID.png)
+
+如上图所示，该文的目标是使用神经网络替换传统的相机ISP过程。由于输入和输出的尺寸等大，照例又到了U-NET出场的时间。
+
+为了实现这一目标，作者收集了一个新的原始图像数据集，在弱光条件下快速曝光。同时，每个微光图像都有相应的长曝光、高质量的参考图像。
+
+参考：
+
+https://mp.weixin.qq.com/s/cr0BJLkyN2kW35-w1pebGQ
+
+学习在黑暗中看世界（Learning to See in the Dark）
 
 ## 参考
 
@@ -291,44 +311,6 @@ Embodied Question Answering
 https://mp.weixin.qq.com/s/L227SZXQPinNOkKJjwr58w
 
 85页《基于神经方法的人机对话系统》，微软+谷歌出品
-
-# 深度哈希
-
-https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg
-
-深度离散哈希算法，可用于图像检索！
-
-https://mp.weixin.qq.com/s/XUYJub0559wwQ9H1wA_SAg
-
-机器学习时代的哈希算法，将如何更高效地索引数据
-
-https://mp.weixin.qq.com/s/YVIvdMznb3oatIXqD5a5_A
-
-陈天奇等人提出AutoTVM：让AI来编译优化AI系统底层算子
-
-https://mp.weixin.qq.com/s/vFBlFAQLvDZP7IvwKoaPhA
-
-无问西东，只问哈希
-
-https://mp.weixin.qq.com/s/XAxuLg2i3q5_uKDo1wU_rA
-
-从哈希到卷积神经网络：高精度&低功耗
-
-https://mp.weixin.qq.com/s/i8iQtCC7ahXLY1a1wOacsA
-
-Science：最新发现哈希可能是大脑的通用计算原理
-
-https://mp.weixin.qq.com/s/ZOVWXNym5yHoo-MmpxXo0A
-
-自监督对抗哈希SSAH：当前最佳的跨模态检索框架
-
-https://mp.weixin.qq.com/s/VldzlYg5AfDRho8bsROL_g
-
-HashGAN:基于注意力机制的深度对抗哈希模型提升跨模态检索效果
-
-https://mp.weixin.qq.com/s/3Z2Zc8zTq2uiPyw7ZuuZfw
-
-解密美图大规模多媒体数据检索技术DeepHash
 
 # 多任务学习
 

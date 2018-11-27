@@ -280,6 +280,10 @@ https://mp.weixin.qq.com/s/-b8FuEQlpEb5G0L0QAxVEA
 
 如何使用深度学习为照片自动生成文本描述
 
+https://zhuanlan.zhihu.com/p/50784504
+
+《Reconstruction Network for Video Captioning》阅读笔记
+
 # Multi-agent
 
 https://zhuanlan.zhihu.com/p/39037444
