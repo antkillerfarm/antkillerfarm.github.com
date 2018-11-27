@@ -4,6 +4,88 @@ title:  深度目标检测（四）——YOLOv3, 目标检测进阶
 category: Deep Object Detection 
 ---
 
+# YOLO
+
+## 概述（续）
+
+![](/images/article/yolo.png)
+
+上图是YOLO的大致流程：
+
+**Step 1**：Resize成448x448，图片分割得到7x7网格(cell)。
+
+**Step 2**：CNN提取特征和预测：卷积部分负责提特征。全连接部分负责预测。
+
+a) 7x7x2=98个bounding box(bbox) 的坐标$$x_{center},y_{center},w,h$$和是否有物体的confidence。
+
+b) 7x7=49个cell所属20个物体分类的概率。
+
+![](/images/article/yolo_2.png)
+
+![](/images/article/yolo_3.png)
+
+上图是YOLO的网络结构图，它采用经过修改的GoogLeNet作为base CNN。
+
+从表面看，YOLO的输出只有一个，似乎比Faster RCNN两个输出少一个，然而这个输出本身，实际上要复杂的多。
+
+YOLO的输出是一个7x7x30的tensor，其中7x7对应图片分割的7x7网格。30表明每个网格对应一个30维的向量。
+
+![](/images/article/yolo_4.png)
+
+上图是这个30维向量的编码方式：2个bbox+confidence是5x2=10维，20个物体分类的概率占其余20维。
+
+总结一下，输出tersor的维度是：$$S\times S \times (B \times 5 + C)$$
+
+这里的confidence代表了所预测的box中含有object的置信度和这个box预测的有多准两重信息：
+
+$$\text{confidence} = \text{Pr}(Object) ∗ \text{IOU}_{pred}^{truth}$$
+
+在loss函数设计方面，简单的把结果堆在一起，然后认为它们的重要程度都一样，这显然是不合理的，每个loss项之前的参数$$\lambda$$就是用来设定权重的。
+
+**Step 3**：过滤bbox（通过NMS）。
+
+![](/images/article/yolo_5.png)
+
+上图是Test阶段的NMS的过程示意图。
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/24916786
+
+图解YOLO
+
+https://mp.weixin.qq.com/s/n51XtGAsaDDAatXYychXrg
+
+YOLO比R-CNN快1000倍，比Fast R-CNN快100倍的实时对象检测！
+
+http://blog.csdn.net/tangwei2014/article/details/50915317
+
+论文阅读笔记：You Only Look Once: Unified, Real-Time Object Detection
+
+https://mp.weixin.qq.com/s/Wqj6EM33p-rjPIHnFKtmCw
+
+计算机是怎样快速看懂图片的：比R-CNN快1000倍的YOLO算法
+
+http://lanbing510.info/2017/08/28/YOLO-SSD.html
+
+目标检测之YOLO，SSD
+
+http://www.yeahkun.com/2016/09/06/object-detection-you-only-look-once-caffe-shi-xian/
+
+Object detection: You Look Only Once(YOLO)
+
+http://blog.csdn.net/zy1034092330/article/details/72807924
+
+YOLO
+
+https://mp.weixin.qq.com/s/c9yagjJIe-m07twPvIoPJA
+
+YOLO算法的原理与实现
+
+https://mp.weixin.qq.com/s/JKyX5cdvknIRoF341Au7Ew
+
+单级式目标检测方法概述：YOLO与SSD
+
 # YOLOv3
 
 https://zhuanlan.zhihu.com/p/34945787
