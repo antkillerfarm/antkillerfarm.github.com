@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  大数据平台参考资源（二）, 知名数据集（二）, SLAM
+title:  大数据平台参考资源（二）, 知名数据集（二）
 category: resource 
 ---
 

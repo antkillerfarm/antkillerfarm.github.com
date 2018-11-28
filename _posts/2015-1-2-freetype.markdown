@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  FreeType, FFmpeg, SDL, 图像处理软件, Mac OS X, Objective-C, OA办公软件
+title:  FreeType, FFmpeg, SDL, 图像处理软件, Mac OS X, Objective-C
 category: technology 
 ---
 
@@ -188,6 +188,20 @@ ImageMagick调整图片尺寸的命令示例：
 
 `convert src.jpg -resize 50% des.jpg`
 
+ImageMagick将PDF转换为PNG的示例：
+
+`convert -density 300 input.pdf -quality 95 output.png`
+
+转换指定页（比如第一页）：
+
+`convert -density 300 input.pdf[0] -quality 95 output.png`
+
+为了转换PDF还需要修改配置文件/etc/ImageMagick-6/policy.xml:
+
+`<!-- <policy domain="path" rights="none" pattern="@*" /> -->`
+
+`<policy domain="coder" rights="read|write" pattern="PDF" />`
+
 # Mac OS X
 
 最近对iOS开发产生了兴趣，于是准备在PC上搭建一个iOS的开发环境。
@@ -221,25 +235,3 @@ PC上搭建Objective-C（以下简称OC）开发环境，主要借助GNUstep开�
 2.设置环境变量。
 
 `GNUSTEP_MAKEFILES=/usr/share/GNUstep/Makefiles`
-
-# OA办公软件
-
-2016.6
-
-工作9年，先后服务于4家公司，OA软件也算见识了一些。
-
-第一家公司，用了一套作坊OA。说它作坊，是因为这是老板的一个朋友的作坊做出来的东西。代码极度差劲，以至于我这样的网站外行，都能改出不少问题来。
-
-第二家公司是外企，用他们国外的OA系统。除了文字是英语之外，其他的中规中矩。
-
-第三家公司，用的是用友致远OA系统。也是中规中矩，语言换成了中文，好用了一些。
-
-第四家公司，使用企明岛的OA平台。上手感觉很惊艳，UI甩开之前的产品一条街。
-
-详细了解之后，才知道：
-
-1.yammer是OA 2.0的鼻祖。
-
-2.国内的同类产品还有：明道，纷享，伙伴，企明岛，tita，UU社区，云之家等。
-
-
