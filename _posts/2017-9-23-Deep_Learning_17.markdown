@@ -1,8 +1,150 @@
 ---
 layout: post
-title:  深度学习（十七）——SSD
+title:  深度学习（十七）——深度目标跟踪, SSD
 category: DL 
 ---
+
+# 深度目标跟踪
+
+https://zhuanlan.zhihu.com/p/22334661
+
+深度学习在目标跟踪中的应用
+
+https://mp.weixin.qq.com/s/3R8zaFUKFTvp0uE8lY44WA
+
+首个应用残差学习的深度目标跟踪算法
+
+https://zhuanlan.zhihu.com/p/27293523
+
+目标跟踪领域进展报告
+
+https://zhuanlan.zhihu.com/p/27335895
+
+CVPR 2017目标跟踪相关论文
+
+https://www.zhihu.com/question/59623472
+
+基于深度学习的目标跟踪算法是否可能做到实时？
+
+http://acsweb.ucsd.edu/~yuw176/report/vehicle.pdf
+
+Monocular Vehicle Detection and Tracking
+
+https://mp.weixin.qq.com/s/x7LoIN7mOJcZDY70GB_rLg
+
+VOT Challenge 2017亚军北邮团队技术分享
+
+https://zhuanlan.zhihu.com/p/32489557
+
+深度学习的快速目标跟踪
+
+https://zhuanlan.zhihu.com/p/26654891
+
+EBT：Proposal与Tracking不得不说的秘密
+
+https://mp.weixin.qq.com/s/Pp3vnD2DMDYuiatI8drJrw
+
+PTAV：实时高精度目标追踪框架
+
+https://mp.weixin.qq.com/s/NCtgHHpiG473gixu1tZeJA
+
+哈工大提出STRCF：克服遮挡和大幅形变的实时视觉追踪算法
+
+https://mp.weixin.qq.com/s/2RNLG4KU81z7thk3CLwD9Q
+
+商汤科技 & 中科院自动化所：视觉跟踪之端到端的光流相关滤波
+
+https://zhuanlan.zhihu.com/p/36463844
+
+目标跟踪新高度ECO+：解除深度特征被封印的力量
+
+https://zhuanlan.zhihu.com/p/37897158
+
+SiameseRPN阅读笔记
+
+https://zhuanlan.zhihu.com/p/39614034
+
+基于孪生区域推荐网络的高性能单目标跟踪
+
+https://mp.weixin.qq.com/s/tr1oWpaRZair9zG5CHWvbg
+
+视觉目标跟踪之DaSiamRPN
+
+https://mp.weixin.qq.com/s/Nd5XLnncXRawu4V8TOzHxg
+
+视觉物体跟踪新进展：让跟踪器读懂目标语义信息
+
+https://zhuanlan.zhihu.com/p/46669238
+
+VOT2018：SiamNet大崛起
+
+## FlowNet
+
+论文：
+
+《FlowNet: Learning Optical Flow with Convolutional Networks》
+
+参考：
+
+http://www.cnblogs.com/zhang-yd/p/6511475.html
+
+FlowNet
+
+http://blog.csdn.net/hysteric314/article/details/50529804
+
+神经光流网络——用卷积网络实现光流预测
+
+http://geek.csdn.net/news/detail/129128
+
+卷积神经网络（CNN）在无人驾驶中的应用
+
+https://zhuanlan.zhihu.com/p/32663227
+
+重新认识two stream的光流算法
+
+http://blog.csdn.net/bea_tree/article/details/67049373
+
+几分钟走进神奇的光流：FlowNet 2.0: Evolution of Optical Flow Estimation with Deep Networks
+
+## SpyNet
+
+论文：
+
+《Optical Flow Estimation using a Spatial Pyramid Network》
+
+代码：
+
+https://github.com/anuragranj/spynet
+
+参考：
+
+http://www.cnblogs.com/wangxiaocvpr/p/7058617.html
+
+论文笔记之：Optical Flow Estimation using a Spatial Pyramid Network
+
+## 多目标追踪
+
+Multiple Object Tracking
+
+https://zhuanlan.zhihu.com/p/34730368
+
+多目标追踪
+
+https://zhuanlan.zhihu.com/p/36462982
+
+多目标追踪算法：条件随机场算法
+
+https://mp.weixin.qq.com/s/Lmvx_KurxG3nfmvhXAD_tQ
+
+一种轻量级在线多目标车辆跟踪方法
+
+https://mp.weixin.qq.com/s/zlo59TVpSq5w6zTwJLjbXg
+
+视觉多目标跟踪算法综述（上）
+
+https://mp.weixin.qq.com/s/XwMXrsmSnImgD1vNSVErLg
+
+深度多目标跟踪算法综述
 
 # SSD
 

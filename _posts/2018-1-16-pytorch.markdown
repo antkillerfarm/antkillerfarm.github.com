@@ -354,27 +354,21 @@ https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247492226&idx=1&sn=eafb23
 
 PyraNet：基于特征金字塔网络的人体姿态估计
 
-# ML参考资源+
+# X-Deep Learning
 
-https://mp.weixin.qq.com/s/s2XpGne0sAqnuN-u6g5k1A
+TensorFlow、MXNet、PyTorch等框架大都是面向图像、语音等领域的稠密数据设计，对广告、推荐等场景的高维稀疏数据上的深度学习计算考虑不足。
 
-资金流因子全面测试兼正交化方法详解
+为此，阿里妈妈启动了XDL框架的研发，希望能够在复用已有开源框架对稠密数据的计算能力基础上，重点打造面向工业级应用的分布式规模能力。
 
-https://mp.weixin.qq.com/s/oblwg01BUIJjVhBeHa9HQQ
+![](/images/img2/XDL.png)
 
-程序员分析了50万条拼多多商品数据，告诉你到底是消费升级还是降级！
+参考：
 
-https://mp.weixin.qq.com/s/4HVkEnk6_hONWJYdi8L53g
+https://mp.weixin.qq.com/s/kdCk_twY_czQo58y3x_yyA
 
-闲聊结构化预测（structured learning）
+阿里深度学习框架开源了！无缝对接TensorFlow、PyTorch
 
-https://mp.weixin.qq.com/s/GP_t_fhklpVNhC6J6i0YbA
-
-再聊聊自然语言处理中的结构化预测问题
-
-https://mp.weixin.qq.com/s/_AHqFqf1zFNtBifayiTfXQ
-
-你应具备这3大统计学常识&大数据思维
+# ML参考资源
 
 https://mp.weixin.qq.com/s/G6-XbqCO5iuwGDen-r6aWg
 

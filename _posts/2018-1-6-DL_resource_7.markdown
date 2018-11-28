@@ -345,3 +345,31 @@ Deep Unrolling：深度网络与传统模型之间的桥梁
 https://mp.weixin.qq.com/s/YOeAondK_pjefmVWb5EoOw
 
 如何选出最“美”图片展示给你？携程做了基于深度学习的图像美感评分系统
+
+https://mp.weixin.qq.com/s/_7yx6IywJ1EOClZUcr0AsA
+
+PNAS：绘制情绪图谱，人类内心的表情包其实很丰富
+
+https://mp.weixin.qq.com/s/TUhr31EleePcHHNNUAWQ4A
+
+Google Brain与牛津大学主持最新《计算机视觉前沿》报告
+
+https://mp.weixin.qq.com/s/DCoYcEpkH3t7WSpBBH_rLA
+
+诺基亚首席科学家范力欣：用模糊逻辑实现可解释的深度神经网络
+
+https://mp.weixin.qq.com/s/ZWUPaSeL4vGfoEOxI57umw
+
+为卷积模型执行加入循环和远程反馈，更完整地拟合生物视觉
+
+https://mp.weixin.qq.com/s/DtxjX9RfRgehxLsJ7MFoNw
+
+谷歌大脑开源TensorFuzz，自动Debug神经网络！
+
+https://mp.weixin.qq.com/s/t0lGL66YIJwIvI4emNfN7Q
+
+UC Berkeley新研究：通过深度学习建模注意点采样阵列
+
+https://mp.weixin.qq.com/s/fJMae88M8GEQi80DfbCKjQ
+
+从“局部连接”回到“全连接”的神经网络

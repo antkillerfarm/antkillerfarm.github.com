@@ -62,6 +62,10 @@ http://sofasofa.io/tutorials/anomaly_detection/
 
 利用Autoencoder进行无监督异常检测
 
+https://zhuanlan.zhihu.com/p/51053142
+
+基于自编码器的时间序列异常检测算法
+
 ## 参考
 
 http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/

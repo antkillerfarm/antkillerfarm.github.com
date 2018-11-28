@@ -256,6 +256,10 @@ https://mp.weixin.qq.com/s/lp769k6wsyh-991ACf5upw
 
 计算机也会ps图片：TL-GAN
 
+https://mp.weixin.qq.com/s/OmSb1dl9smyZt_uASOcofQ
+
+人人都是画家：朱俊彦&周博磊等人的GAN画笔帮你开启艺术生涯
+
 # Graph NN
 
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw

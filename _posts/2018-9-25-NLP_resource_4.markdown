@@ -317,3 +317,7 @@ https://mp.weixin.qq.com/s/Naj1u0LZwvQhOe6Iay0nFA
 https://mp.weixin.qq.com/s/fkBkSakTtuGPhi3mK563mg
 
 结合贪心搜索和蒙特卡洛随机游走的面向DBpedia的实体链接方法
+
+https://mp.weixin.qq.com/s/KG_X-wFPgWupb0FOWL9LIw
+
+三种提升多语言翻译模型的高效策略

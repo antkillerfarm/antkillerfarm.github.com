@@ -54,6 +54,14 @@ https://web.stanford.edu/class/cs230/syllabus.html
 
 CS230: Deep Learning。吴恩达2018年开的新课
 
+https://stanford.edu/~shervine/teaching/cs-230.html
+
+CS230的Cheatsheet
+
+https://github.com/afshinea/stanford-cs-230-deep-learning
+
+CS230的Cheatsheet的PDF版本
+
 http://www.cc.gatech.edu/~lsong/teaching/
 
 佐治亚理工学院宋乐副教授的课件库。
@@ -391,6 +399,10 @@ TensorFlow中那些鲜为人知却又极其实用的知识
 https://mp.weixin.qq.com/s/XHKrkNf2bWLF7r7gzdU24w
 
 Quick, Draw!涂鸦分类递归神经网络
+
+https://mp.weixin.qq.com/s/QQednlKYl6t3aO0xCzgGmA
+
+带你轻松使用TensorFlow创建大型线性模型
 
 # Machine Learning之Python篇+
 

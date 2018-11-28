@@ -279,35 +279,29 @@ https://mp.weixin.qq.com/s/2hJzdILGgLwcw8mkCY1uLw
 
 当我们输入一条SQL查询语句时，发生了什么？
 
+# ML参考资源+
+
+https://mp.weixin.qq.com/s/s2XpGne0sAqnuN-u6g5k1A
+
+资金流因子全面测试兼正交化方法详解
+
+https://mp.weixin.qq.com/s/oblwg01BUIJjVhBeHa9HQQ
+
+程序员分析了50万条拼多多商品数据，告诉你到底是消费升级还是降级！
+
+https://mp.weixin.qq.com/s/4HVkEnk6_hONWJYdi8L53g
+
+闲聊结构化预测（structured learning）
+
+https://mp.weixin.qq.com/s/GP_t_fhklpVNhC6J6i0YbA
+
+再聊聊自然语言处理中的结构化预测问题
+
+https://mp.weixin.qq.com/s/_AHqFqf1zFNtBifayiTfXQ
+
+你应具备这3大统计学常识&大数据思维
+
 # DL参考资源+
-
-https://mp.weixin.qq.com/s/_7yx6IywJ1EOClZUcr0AsA
-
-PNAS：绘制情绪图谱，人类内心的表情包其实很丰富
-
-https://mp.weixin.qq.com/s/TUhr31EleePcHHNNUAWQ4A
-
-Google Brain与牛津大学主持最新《计算机视觉前沿》报告
-
-https://mp.weixin.qq.com/s/DCoYcEpkH3t7WSpBBH_rLA
-
-诺基亚首席科学家范力欣：用模糊逻辑实现可解释的深度神经网络
-
-https://mp.weixin.qq.com/s/ZWUPaSeL4vGfoEOxI57umw
-
-为卷积模型执行加入循环和远程反馈，更完整地拟合生物视觉
-
-https://mp.weixin.qq.com/s/DtxjX9RfRgehxLsJ7MFoNw
-
-谷歌大脑开源TensorFuzz，自动Debug神经网络！
-
-https://mp.weixin.qq.com/s/t0lGL66YIJwIvI4emNfN7Q
-
-UC Berkeley新研究：通过深度学习建模注意点采样阵列
-
-https://mp.weixin.qq.com/s/fJMae88M8GEQi80DfbCKjQ
-
-从“局部连接”回到“全连接”的神经网络
 
 https://mp.weixin.qq.com/s/KX85CCpYrXFOvdTU5Q4Frg
 
