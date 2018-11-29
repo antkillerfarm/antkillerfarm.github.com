@@ -98,6 +98,10 @@ https://sites.ualberta.ca/~szepesva/RLBook.html
 
 《Algorithms for Reinforcement Learning》
 
+https://mp.weixin.qq.com/s/tZjIdNSLvIVzho-IlCvm6A
+
+93页随机近似与强化学习教程分享
+
 ## 论文
 
 《A Brief Survey of Deep Reinforcement Learning》

@@ -1,12 +1,28 @@
 ---
 layout: post
-title:  深度学习（十五）——深度图像压缩, 人脸检测/识别（1）
+title:  深度学习（十五）——Style Transfer, 深度图像压缩, 人脸检测/识别（1）
 category: DL 
 ---
 
-# Style Transfer
+# Style Transfer（续）
 
-## Cost Function（续）
+## Cost Function
+
+神经风格迁移生成图片G的cost function由两部分组成：C与G的相似程度和S与G的相似程度。
+
+$$J(G)=\alpha \cdot J_{content}(C,G)+\beta \cdot J_{style}(S,G)$$
+
+其中，$$\alpha, \beta$$是超参数，用来调整$$J_{content}(C,G)$$与$$J_{style}(S,G)$$的相对比重。
+
+神经风格迁移的基本算法流程是：首先令G为随机像素点，然后使用梯度下降算法，不断修正G的所有像素点，使得J(G)不断减小，从而使G逐渐有C的内容和G的风格，如下图所示：
+
+![](/images/img2/style_transfer_3.png)
+
+我们先来看J(G)的第一部分$$J_{content}(C,G)$$，它表示内容图片C与生成图片G之间的相似度。
+
+使用的CNN网络是之前预训练好的模型，例如Alex-Net。C，S，G共用相同模型和参数。首先，需要选择合适的层数l来计算$$J_{content}(C,G)$$。
+
+如前所述，CNN的每个隐藏层分别提取原始图片的不同深度特征，由简单到复杂。如果l太小，则G与C在像素上会非常接近，没有迁移效果；如果l太深，则G上某个区域将直接会出现C中的物体。因此，l既不能太浅也不能太深，一般选择网络中间层。
 
 若C和G在l层的激活函数输出$$a^{[l](C)}$$与$$a^{[l](G)}$$，则相应的$$J_{content}(C,G)$$的表达式为：
 

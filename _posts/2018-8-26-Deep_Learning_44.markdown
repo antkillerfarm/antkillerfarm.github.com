@@ -368,3 +368,6 @@ https://mp.weixin.qq.com/s/NgsSQS6opjOsusTIr9Vx-w
 
 腾讯AI Lab、MIT等机构提出TVNet：可端到端学习视频的运动表征
 
+https://mp.weixin.qq.com/s/26OZ5sLK3floF8I1SNIKuA
+
+时空建模新文解读：用于高效视频理解的TSM 

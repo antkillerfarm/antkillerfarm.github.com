@@ -260,6 +260,10 @@ https://mp.weixin.qq.com/s/g1m3I9U9Walj9FxbYJng9A
 
 万圣节教你用OpenCV Remix一张n合1脸
 
+https://mp.weixin.qq.com/s/LkDcohFvQab4LY7B1Xg0Mw
+
+简析缝隙检测算法新思路
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。

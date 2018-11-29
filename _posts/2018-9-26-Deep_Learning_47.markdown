@@ -106,6 +106,10 @@ https://mp.weixin.qq.com/s/DwY0oGu-G30Szs-ArI5WaQ
 
 程明明：面向弱监督的图像理解
 
+https://mp.weixin.qq.com/s/LFOljv-Hr6JqyI6TQ2X4sw
+
+半监督学习也能自动化？南大和第四范式提出Auto-SSL
+
 # 语音合成
 
 语音合成（Speech synthesis），有时也叫做text-to-speech (TTS)。

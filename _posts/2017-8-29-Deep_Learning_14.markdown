@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  深度学习（十四）——Batch Normalization, Instance Normalization, IBN-Net, Softmax详解, Style Transfer
+title:  深度学习（十四）——Normalization进阶（1）, MobileNet, Softmax详解
 category: DL 
 ---
 
-# Batch Normalization
+# Normalization进阶
+
+## Batch Normalization
 
 在《深度学习（二）》中，我们已经简单的介绍了Batch Normalization的基本概念。这里主要讲述一下它的实现细节。
 
@@ -60,7 +62,7 @@ BN的误差反向算法相对复杂，这里不再赘述。
 
 在inference阶段，BN网络忽略Step 1和Step 2，只计算后两步。其中,$$\beta,\gamma$$由之前的训练得到。$$\mu,\sigma$$原则上要求使用全体样本的均值和方差，但样本量过大的情况下，也可使用训练时的若干个mini batch的均值和方差的FIR滤波值。
 
-# Instance Normalization
+## Instance Normalization
 
 Instance Normalization主要用于CV领域。
 
@@ -86,7 +88,7 @@ http://www.jianshu.com/p/d77b6273b990
 
 论文中文版
 
-# IBN-Net
+## IBN-Net
 
 IBN-Net是汤晓鸥小组的新作（2018.7）。
 
@@ -109,6 +111,70 @@ https://mp.weixin.qq.com/s/LVL90n4--WPgFLMQ-Gnf6g
 https://mp.weixin.qq.com/s/6hNpgffEnUTkNAfrPgKHkA
 
 IBN-Net：打开Domain Generalization的新方式
+
+## Group Normalization
+
+论文：
+
+《Group Normalization》
+
+![](/images/img2/Group_Normalization.png)
+
+参考：
+
+https://mp.weixin.qq.com/s/H2GmqloNumttFlaSArjgUg
+
+FAIR何恺明等人提出组归一化：替代批归一化，不受批量大小限制
+
+https://mp.weixin.qq.com/s/44RvXEYYc5lebsHs_ooswg
+
+全面解读Group Normalization
+
+# ESN
+
+Echo State Network
+
+https://blog.csdn.net/zwqhehe/article/details/77025035
+
+回声状态网络(ESN)原理详解
+
+# MobileNet
+
+论文：
+
+《MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications》
+
+代码：
+
+https://github.com/Zehaos/MobileNet
+
+![](/images/article/dwl_pwl.png)
+
+参考：
+
+https://mp.weixin.qq.com/s/f3bmtbCY5BfA4v3movwLVg
+
+向手机端神经网络进发：MobileNet压缩指南
+
+https://mp.weixin.qq.com/s/mcK8M6pnHiZZRAkYVdaYGQ
+
+MobileNet在手机端上的速度评测：iPhone 8 Plus竟不如iPhone 7 Plus
+
+https://mp.weixin.qq.com/s/2XqBeq3N4mvu05S1Jo2UwA
+
+CNN模型之MobileNet
+
+https://mp.weixin.qq.com/s/fdgaDoYm2sfjqO2esv7jyA
+
+Google论文解读：轻量化卷积神经网络MobileNetV2
+
+https://mp.weixin.qq.com/s/7vFxmvRZuM2DqSYN7C88SA
+
+谷歌发布MobileNetV2：可做语义分割的下一代移动端计算机视觉架构
+
+https://mp.weixin.qq.com/s/lu0GHCpWCmogkmHRKnJ8zQ
+
+浅析两代MobileNet
 
 # Softmax详解
 
@@ -228,20 +294,3 @@ $$G_{ij}=\langle v_i, v_j \rangle$$
 
 既然第一篇论文解决了从图片B中提取纹理的任务，那么还有一个关键点就是：**如何只提取图片内容而不包括图片风格?**
 
-## Cost Function
-
-神经风格迁移生成图片G的cost function由两部分组成：C与G的相似程度和S与G的相似程度。
-
-$$J(G)=\alpha \cdot J_{content}(C,G)+\beta \cdot J_{style}(S,G)$$
-
-其中，$$\alpha, \beta$$是超参数，用来调整$$J_{content}(C,G)$$与$$J_{style}(S,G)$$的相对比重。
-
-神经风格迁移的基本算法流程是：首先令G为随机像素点，然后使用梯度下降算法，不断修正G的所有像素点，使得J(G)不断减小，从而使G逐渐有C的内容和G的风格，如下图所示：
-
-![](/images/img2/style_transfer_3.png)
-
-我们先来看J(G)的第一部分$$J_{content}(C,G)$$，它表示内容图片C与生成图片G之间的相似度。
-
-使用的CNN网络是之前预训练好的模型，例如Alex-Net。C，S，G共用相同模型和参数。首先，需要选择合适的层数l来计算$$J_{content}(C,G)$$。
-
-如前所述，CNN的每个隐藏层分别提取原始图片的不同深度特征，由简单到复杂。如果l太小，则G与C在像素上会非常接近，没有迁移效果；如果l太深，则G上某个区域将直接会出现C中的物体。因此，l既不能太浅也不能太深，一般选择网络中间层。

@@ -86,6 +86,24 @@ https://blog.csdn.net/sinat_26917383/article/details/79704097
 
 关键点定位：四款人体姿势关键点估计论文笔记
 
+## 步态识别
+
+https://mp.weixin.qq.com/s/g6032xTGEtvbsfwXboMJ4A
+
+大阪大学副校长Yasushi Yagi：步态分析
+
+http://mp.weixin.qq.com/s/Y-PvMz_Vz8nBGRZo9dwUCA
+
+中科院步态识别技术：不看脸50米内在人群中认出你！
+
+https://mp.weixin.qq.com/s/3Pe5wJ0VomzwKMF84OqcMg
+
+步态识别的深度学习综述
+
+https://mp.weixin.qq.com/s/afX8Y84nTS20q4Y36uOWqQ
+
+复旦提出GaitSet算法，步态识别的重大突破！
+
 ## 参考
 
 https://mp.weixin.qq.com/s/4oA-x2sofqR3GBEHlmeQrg
@@ -136,14 +154,6 @@ https://mp.weixin.qq.com/s/uxawHWsVXMNOTLNthAL0vg
 
 时空图卷积网络：港中文提出基于动态骨骼的行为识别新方案
 
-https://mp.weixin.qq.com/s/g6032xTGEtvbsfwXboMJ4A
-
-大阪大学副校长Yasushi Yagi：步态分析
-
-http://mp.weixin.qq.com/s/Y-PvMz_Vz8nBGRZo9dwUCA
-
-中科院步态识别技术：不看脸50米内在人群中认出你！
-
 https://mp.weixin.qq.com/s/0KaSWHi8r9kSXxlwswIY5g
 
 乔宇：深度模型让机器理解场景
@@ -151,10 +161,6 @@ https://mp.weixin.qq.com/s/0KaSWHi8r9kSXxlwswIY5g
 https://mp.weixin.qq.com/s/CSSN0K_9CYm5MnplUqU5xg
 
 乔宇: 面向复杂行为理解的深度学习模型及应用
-
-https://mp.weixin.qq.com/s/3Pe5wJ0VomzwKMF84OqcMg
-
-步态识别的深度学习综述
 
 https://mp.weixin.qq.com/s/ZRS58dqdfeNczVNufoUXgQ
 

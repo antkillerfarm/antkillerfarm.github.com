@@ -336,6 +336,10 @@ https://mp.weixin.qq.com/s/Jkd-FykUEKZZeVizRoTeJQ
 
 一文读懂Apache Flink技术
 
+https://mp.weixin.qq.com/s/rsJlZEP_oVG3NiFRyeS8gw
+
+Apache Flink干货合集打包好了，速来下载
+
 # Pulsar
 
 https://mp.weixin.qq.com/s/O8pj4pChyw8PK-G_4A3DWg

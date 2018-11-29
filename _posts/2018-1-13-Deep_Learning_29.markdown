@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十九）——Normalization进阶, CTC
+title:  深度学习（二十九）——Normalization进阶（2）, CTC
 category: DL 
 ---
 

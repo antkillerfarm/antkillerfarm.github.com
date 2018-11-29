@@ -130,6 +130,10 @@ https://zhuanlan.zhihu.com/p/50790727
 
 SeqGAN: Sequence GAN with Policy Gradient
 
+https://mp.weixin.qq.com/s/bH5yYbwq6NGQJ84xUDhoxg
+
+生成对抗网络在图像翻译上的应用
+
 # 图像超分辨率进阶
 
 https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg

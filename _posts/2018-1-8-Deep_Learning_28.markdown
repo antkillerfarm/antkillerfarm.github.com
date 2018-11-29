@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十八）——SOM, Group Normalization, MobileNet, 花式卷积进阶
+title:  深度学习（二十八）——SOM, 花式卷积进阶
 category: DL 
 ---
 
@@ -182,70 +182,6 @@ http://www.ai-junkie.com/ann/som/som1.html
 
 Kohonen's Self Organizing Feature Maps
 
-# ESN
-
-Echo State Network
-
-https://blog.csdn.net/zwqhehe/article/details/77025035
-
-回声状态网络(ESN)原理详解
-
-# Group Normalization
-
-论文：
-
-《Group Normalization》
-
-![](/images/img2/Group_Normalization.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/H2GmqloNumttFlaSArjgUg
-
-FAIR何恺明等人提出组归一化：替代批归一化，不受批量大小限制
-
-https://mp.weixin.qq.com/s/44RvXEYYc5lebsHs_ooswg
-
-全面解读Group Normalization
-
-# MobileNet
-
-论文：
-
-《MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications》
-
-代码：
-
-https://github.com/Zehaos/MobileNet
-
-![](/images/article/dwl_pwl.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/f3bmtbCY5BfA4v3movwLVg
-
-向手机端神经网络进发：MobileNet压缩指南
-
-https://mp.weixin.qq.com/s/mcK8M6pnHiZZRAkYVdaYGQ
-
-MobileNet在手机端上的速度评测：iPhone 8 Plus竟不如iPhone 7 Plus
-
-https://mp.weixin.qq.com/s/2XqBeq3N4mvu05S1Jo2UwA
-
-CNN模型之MobileNet
-
-https://mp.weixin.qq.com/s/fdgaDoYm2sfjqO2esv7jyA
-
-Google论文解读：轻量化卷积神经网络MobileNetV2
-
-https://mp.weixin.qq.com/s/7vFxmvRZuM2DqSYN7C88SA
-
-谷歌发布MobileNetV2：可做语义分割的下一代移动端计算机视觉架构
-
-https://mp.weixin.qq.com/s/lu0GHCpWCmogkmHRKnJ8zQ
-
-浅析两代MobileNet
-
 # 花式卷积进阶
 
 ## 可变形卷积核
@@ -289,6 +225,10 @@ Deformable Convolution Networks
 https://mp.weixin.qq.com/s/aLvlLi97JTd_cCfCZfraIg
 
 “不正经”的卷积神经网络
+
+https://mp.weixin.qq.com/s/gsoVFiG3tKhHAU7OCGfLPg
+
+如何评价MSRA视觉组最新提出的Deformable ConvNets V2？
 
 ## 3D卷积
 
