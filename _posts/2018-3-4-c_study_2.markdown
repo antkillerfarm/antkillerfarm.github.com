@@ -262,6 +262,10 @@ https://mp.weixin.qq.com/s/_OmRvwFmvuuOpBf7DQG8IA
 
 Python30个编程技巧
 
+https://github.com/leisurelicht/wtfpython-cn
+
+《What the f*ck Python!》中文版
+
 https://mp.weixin.qq.com/s/-CaMHjsY580et8Hh_D2FSg
 
 简约而不简单的Django新手图文教程

@@ -299,28 +299,6 @@ https://mp.weixin.qq.com/s/2hJzdILGgLwcw8mkCY1uLw
 
 当我们输入一条SQL查询语句时，发生了什么？
 
-# ML参考资源+
-
-https://mp.weixin.qq.com/s/s2XpGne0sAqnuN-u6g5k1A
-
-资金流因子全面测试兼正交化方法详解
-
-https://mp.weixin.qq.com/s/oblwg01BUIJjVhBeHa9HQQ
-
-程序员分析了50万条拼多多商品数据，告诉你到底是消费升级还是降级！
-
-https://mp.weixin.qq.com/s/4HVkEnk6_hONWJYdi8L53g
-
-闲聊结构化预测（structured learning）
-
-https://mp.weixin.qq.com/s/GP_t_fhklpVNhC6J6i0YbA
-
-再聊聊自然语言处理中的结构化预测问题
-
-https://mp.weixin.qq.com/s/_AHqFqf1zFNtBifayiTfXQ
-
-你应具备这3大统计学常识&大数据思维
-
 # DL参考资源+
 
 https://mp.weixin.qq.com/s/KX85CCpYrXFOvdTU5Q4Frg
@@ -358,3 +336,19 @@ https://mp.weixin.qq.com/s/VOEJOWyh9j_XyJMliKpkkw
 https://mp.weixin.qq.com/s/9k2-U0MbY56eETBF7FRMmw
 
 深度学习碰上古文献，西南大学提出基于CNN的古彝文识别方法
+
+https://mp.weixin.qq.com/s/9KOXSic-DellLuaVFjbKeA
+
+价值传播网络，在更复杂的动态环境中进行规划的方法
+
+https://mp.weixin.qq.com/s/i6VEYjbac4QP3s51meN1VA
+
+Hinton向量学院推出神经ODE：超越ResNet 4大性能优势
+
+https://mp.weixin.qq.com/s/-xZxNJPQyEQyBOue6_77yw
+
+用浅度学习训练深度网络：避开端到端深度学习难题
+
+https://mp.weixin.qq.com/s/DwaSF76uvqFKkybaTUpl3w
+
+空间序列递归神经网络用于高光谱图像分类

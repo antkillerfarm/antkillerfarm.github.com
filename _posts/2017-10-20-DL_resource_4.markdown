@@ -32,6 +32,10 @@ https://mp.weixin.qq.com/s/kLXJsHbBnRIFC3NLChPhzA
 
 如何高效进行大规模分类？港中文联合商汤提出新方法
 
+https://mp.weixin.qq.com/s/miD1eQNLhf6G_IZL4wwuEg
+
+Google：数据并行对神经网络训练用时的影响
+
 ## 实战
 
 http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg

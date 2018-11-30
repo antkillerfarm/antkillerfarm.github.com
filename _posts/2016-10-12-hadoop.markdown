@@ -315,17 +315,3 @@ https://mp.weixin.qq.com/s/BICJgyv2Y8r0j5Jjw6weRw
 https://blog.csdn.net/odailidong/article/details/41794403
 
 Hbase万亿级存储性能优化总结
-
-# TensorFlow
-
-https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
-
-简易浣熊识别器是如何实现的
-
-http://www.jianshu.com/p/d443aab9bcb1
-
-在TensorFlow上使用LSTM进行情感分析
-
-https://mp.weixin.qq.com/s/gW_KX6eF9XEsSUO1UzJ3WQ
-
-基于LSTM的情感分析

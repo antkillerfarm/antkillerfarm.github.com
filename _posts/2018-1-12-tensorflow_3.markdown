@@ -6,6 +6,42 @@ category: AI
 
 # TensorFlow
 
+https://mp.weixin.qq.com/s/t1QFIOq-VBNOrSm0zW-PlQ
+
+深度学习TensorFlow实现集合
+
+https://mp.weixin.qq.com/s/IzijD8Sh3G2WsCz7aaxyhg
+
+TensorFlow深度学习概述
+
+https://github.com/yahoo/TensorFlowOnSpark
+
+TensorFlow On Spark
+
+https://silencezjl.coding.me/2017/05/01/%E5%81%B7%E4%B8%80%E6%B3%A2%E8%B5%84%E6%BA%90/
+
+各种TensorFlow资源
+
+https://mp.weixin.qq.com/s/haj9lS59yWtk-C75EtGIcw
+
+深度学习工程模板：简化加载数据、构建网络、训练模型和预测样本的流程
+
+https://github.com/zsdev2015/machine_learning
+
+某国内小牛写的中文入门demo，注释非常详细
+
+https://morvanzhou.github.io/tutorials/
+
+一个以python语言教学的ML、DL教程，比较通俗易懂。
+
+https://mp.weixin.qq.com/s/gJBDXf_5ViPR9dNm3eH2Hg
+
+TensorFlow初学者必须了解的55个经典案例
+
+http://mp.weixin.qq.com/s/JZ1ceGQDmQUaNW5wl6biLA
+
+TensorFlow实现流行机器学习算法教程汇集
+
 https://mp.weixin.qq.com/s/bjxJyOitynRtCoW0FX1gXw
 
 一文带你入门Tensorflow
@@ -389,20 +425,3 @@ https://mp.weixin.qq.com/s/IuD1oxeiFBq8kqh_zRLb0Q
 https://mp.weixin.qq.com/s/kS92vYyeHLc38RGc_4CZbg
 
 如何应用TFGAN快速实践生成对抗网络？
-
-https://mp.weixin.qq.com/s/KZhL477ApHgQfmM2xFrYJw
-
-Tensorlang：基于TensorFlow的可微编程语言
-
-https://mp.weixin.qq.com/s/_9NJ6QLQArUAD1DKb0KRfA
-
-如何使用TensorFlow mobile部署模型到移动设备
-
-https://mp.weixin.qq.com/s/e_TzQxFLAonLMyYAhte6Cg
-
-face-api.js：在浏览器中进行人脸识别的JavaScript接口
-
-https://mp.weixin.qq.com/s/23FoaaA3Z_3kf03BmepFPg
-
-如何将模型部署到安卓移动端，这里有一份简单教程
-

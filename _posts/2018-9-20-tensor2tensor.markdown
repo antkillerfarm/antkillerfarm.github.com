@@ -162,6 +162,10 @@ https://mp.weixin.qq.com/s/etSrI8Z3-NWbrqNWIbfzjw
 
 微软Facebook联手发布AI生态系统
 
+https://mp.weixin.qq.com/s/D5rQ6r3s54PR_esAAu5rhQ
+
+开源一年多的模型交换格式ONNX，已经一统框架江湖了？
+
 ## NNVM
 
 陈天奇等推出的NNVM也是一个类似的中间表示。官网：

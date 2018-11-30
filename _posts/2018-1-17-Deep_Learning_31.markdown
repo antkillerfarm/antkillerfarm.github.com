@@ -284,6 +284,10 @@ https://zhuanlan.zhihu.com/p/50784504
 
 《Reconstruction Network for Video Captioning》阅读笔记
 
+https://mp.weixin.qq.com/s/tEzZ770T1NpYLAxUK-MwIg
+
+综述：Image Caption 任务之语句多样性
+
 # Multi-agent
 
 https://zhuanlan.zhihu.com/p/39037444

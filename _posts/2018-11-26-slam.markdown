@@ -195,3 +195,107 @@ https://mp.weixin.qq.com/s/qLax1Jb0OOfFOU68wn_2PA
 https://mp.weixin.qq.com/s/hRH7hVsaQBqf0vhD_BqBgg
 
 五大深度学习框架三类神经网络全面测评
+
+# ML参考资源+
+
+https://mp.weixin.qq.com/s/Z1ixoRmUDl17CF4k7JS4zg
+
+浅谈物流网络中的选址规划问题
+
+https://mp.weixin.qq.com/s/voumCoLRPJO2eHFUVGm0PA
+
+理解Scikit-Learn中分类性能度量指标
+
+https://mp.weixin.qq.com/s/JW62V3wBguSPSAkyWKAEpQ
+
+一个数据分析师眼中的数据预测与监控
+
+https://mp.weixin.qq.com/s/Xk1myDvYQxvKKyQ7RKqcyw
+
+机器学习可重复性最佳实践
+
+https://mp.weixin.qq.com/s/tnkS6xtuv29A_TGlPUAxlQ
+
+我猜，每个程序员对着电梯都想过调度算法吧！
+
+https://mp.weixin.qq.com/s/0m5DuJzh92aYUgdiQ3PfIg
+
+数据竞赛大杀器之模型融合(stacking & blending)
+
+https://mp.weixin.qq.com/s/lJQprqGShGys3vfhYSxDWg
+
+机器学习在股票交易中难点分析
+
+https://mp.weixin.qq.com/s/lpNTdnfp2FnJ97EivhUv2g
+
+12种降维方法终极指南
+
+https://mp.weixin.qq.com/s/s2XpGne0sAqnuN-u6g5k1A
+
+资金流因子全面测试兼正交化方法详解
+
+https://mp.weixin.qq.com/s/oblwg01BUIJjVhBeHa9HQQ
+
+程序员分析了50万条拼多多商品数据，告诉你到底是消费升级还是降级！
+
+https://mp.weixin.qq.com/s/4HVkEnk6_hONWJYdi8L53g
+
+闲聊结构化预测（structured learning）
+
+https://mp.weixin.qq.com/s/GP_t_fhklpVNhC6J6i0YbA
+
+再聊聊自然语言处理中的结构化预测问题
+
+https://mp.weixin.qq.com/s/_AHqFqf1zFNtBifayiTfXQ
+
+你应具备这3大统计学常识&大数据思维
+
+# TensorFlow
+
+https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
+
+简易浣熊识别器是如何实现的
+
+http://www.jianshu.com/p/d443aab9bcb1
+
+在TensorFlow上使用LSTM进行情感分析
+
+https://mp.weixin.qq.com/s/gW_KX6eF9XEsSUO1UzJ3WQ
+
+基于LSTM的情感分析
+
+https://mp.weixin.qq.com/s/KZhL477ApHgQfmM2xFrYJw
+
+Tensorlang：基于TensorFlow的可微编程语言
+
+https://mp.weixin.qq.com/s/_9NJ6QLQArUAD1DKb0KRfA
+
+如何使用TensorFlow mobile部署模型到移动设备
+
+https://mp.weixin.qq.com/s/e_TzQxFLAonLMyYAhte6Cg
+
+face-api.js：在浏览器中进行人脸识别的JavaScript接口
+
+https://mp.weixin.qq.com/s/23FoaaA3Z_3kf03BmepFPg
+
+如何将模型部署到安卓移动端，这里有一份简单教程
+
+https://mp.weixin.qq.com/s/MT1YaMm4KBWsIZeHehahgw
+
+TensorFlow重大升级：自动将Python代码转为TF Graph，大幅简化动态图处理！
+
+https://mp.weixin.qq.com/s/zeZs48XbYJGhvOoIysZ8QA
+
+Docker Compose+GPU+TensorFlow所产生的奇妙火花
+
+https://mp.weixin.qq.com/s/sOggiB57D-ekWOsbL6TY_A
+
+TensorFlow中那些鲜为人知却又极其实用的知识
+
+https://mp.weixin.qq.com/s/XHKrkNf2bWLF7r7gzdU24w
+
+Quick, Draw!涂鸦分类递归神经网络
+
+https://mp.weixin.qq.com/s/QQednlKYl6t3aO0xCzgGmA
+
+带你轻松使用TensorFlow创建大型线性模型

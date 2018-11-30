@@ -321,3 +321,7 @@ https://mp.weixin.qq.com/s/Lnolh9y0rf86wOGa-F1xmw
 https://zhuanlan.zhihu.com/p/48593932
 
 CPU底部的小块是干什么用的？为什么CPU这么多电源引脚？
+
+https://zhuanlan.zhihu.com/p/51145563
+
+TDP是CPU的功耗吗？TDP是固定不变的吗？

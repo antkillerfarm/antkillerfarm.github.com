@@ -180,6 +180,10 @@ https://zhuanlan.zhihu.com/p/48729548
 
 端到端的语音识别（ASR）错词率降低到至3.4%左右
 
+https://mp.weixin.qq.com/s/5vhiS2RG_mFeQHzYxmyeww
+
+Google开源AI闹市辨音92%创新高？别急！论文+GitHub助你一臂之力！
+
 # 细粒度分类
 
 https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw

@@ -359,3 +359,11 @@ robot浅谈
 https://mp.weixin.qq.com/s/f-rmdWq3kJUJGhuPwU8JtQ
 
 深度策略梯度算法是真正的策略梯度算法吗？
+
+https://zhuanlan.zhihu.com/p/51202503
+
+强化学习在视觉上的应用（RL for computer Vision）
+
+https://mp.weixin.qq.com/s/iBWjobr9srhB3MTiE_Wwmg
+
+史上最强Atari游戏通关算法：蒙特祖玛获分超过200万！

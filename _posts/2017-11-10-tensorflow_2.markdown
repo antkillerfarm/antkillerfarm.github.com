@@ -6,6 +6,30 @@ category: AI
 
 # TensorFlow
 
+## 可视化神经网络结构
+
+TensorBoard是一个http服务，用以监控TensorFlow的执行。
+
+`writer = tf.summary.FileWriter("logs/", sess.graph)`
+
+然后
+
+`tensorboard --logdir='logs/'`
+
+启动之后，用浏览器打开`http://localhost:6006`即可。
+
+TensorBoard会将同类结点Group，但Group之后，有时反而不易观察具体的结构。
+
+参考：
+
+http://blog.csdn.net/u013082989/article/details/53510625
+
+TensorFlow学习_01_安装_基本操作_可视化结构、过程_Mnist
+
+https://blog.csdn.net/sinat_33761963/article/details/62433234
+
+Tensorflow的可视化工具Tensorboard的初步使用
+
 ## 模型文件
 
 tensorflow model包含2个文件：
@@ -368,41 +392,3 @@ Caffe被Caffe 2替代，但使用的广泛度仍超过后者。
 Theano被同样基于计算图的TensorFlow淘汰。2017年9月停止更新。
 
 Torch相对变动最小，它被PyTorch替代。这更可以看作是python对于lua的胜利。
-
-# TensorFlow参考
-
-https://mp.weixin.qq.com/s/t1QFIOq-VBNOrSm0zW-PlQ
-
-深度学习TensorFlow实现集合
-
-https://mp.weixin.qq.com/s/IzijD8Sh3G2WsCz7aaxyhg
-
-TensorFlow深度学习概述
-
-https://github.com/yahoo/TensorFlowOnSpark
-
-TensorFlow On Spark
-
-https://silencezjl.coding.me/2017/05/01/%E5%81%B7%E4%B8%80%E6%B3%A2%E8%B5%84%E6%BA%90/
-
-各种TensorFlow资源
-
-https://mp.weixin.qq.com/s/haj9lS59yWtk-C75EtGIcw
-
-深度学习工程模板：简化加载数据、构建网络、训练模型和预测样本的流程
-
-https://github.com/zsdev2015/machine_learning
-
-某国内小牛写的中文入门demo，注释非常详细
-
-https://morvanzhou.github.io/tutorials/
-
-一个以python语言教学的ML、DL教程，比较通俗易懂。
-
-https://mp.weixin.qq.com/s/gJBDXf_5ViPR9dNm3eH2Hg
-
-TensorFlow初学者必须了解的55个经典案例
-
-http://mp.weixin.qq.com/s/JZ1ceGQDmQUaNW5wl6biLA
-
-TensorFlow实现流行机器学习算法教程汇集

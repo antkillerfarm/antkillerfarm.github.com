@@ -396,36 +396,7 @@ https://zhuanlan.zhihu.com/p/51000072
 
 基于知识图谱路径推理的可解释推荐
 
-# ML参考资源
+https://mp.weixin.qq.com/s/qj5sFIqCUkW38XQ6hRao1w
 
-https://mp.weixin.qq.com/s/Z1ixoRmUDl17CF4k7JS4zg
+KG Embedding with Iterative Guidance from Soft Rules
 
-浅谈物流网络中的选址规划问题
-
-https://mp.weixin.qq.com/s/voumCoLRPJO2eHFUVGm0PA
-
-理解Scikit-Learn中分类性能度量指标
-
-https://mp.weixin.qq.com/s/JW62V3wBguSPSAkyWKAEpQ
-
-一个数据分析师眼中的数据预测与监控
-
-https://mp.weixin.qq.com/s/Xk1myDvYQxvKKyQ7RKqcyw
-
-机器学习可重复性最佳实践
-
-https://mp.weixin.qq.com/s/tnkS6xtuv29A_TGlPUAxlQ
-
-我猜，每个程序员对着电梯都想过调度算法吧！
-
-https://mp.weixin.qq.com/s/0m5DuJzh92aYUgdiQ3PfIg
-
-数据竞赛大杀器之模型融合(stacking & blending)
-
-https://mp.weixin.qq.com/s/lJQprqGShGys3vfhYSxDWg
-
-机器学习在股票交易中难点分析
-
-https://mp.weixin.qq.com/s/lpNTdnfp2FnJ97EivhUv2g
-
-12种降维方法终极指南

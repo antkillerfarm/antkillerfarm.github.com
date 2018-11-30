@@ -371,3 +371,7 @@ https://mp.weixin.qq.com/s/NgsSQS6opjOsusTIr9Vx-w
 https://mp.weixin.qq.com/s/26OZ5sLK3floF8I1SNIKuA
 
 时空建模新文解读：用于高效视频理解的TSM 
+
+https://mp.weixin.qq.com/s/TzNqZNEPBewR7neU7Or9nQ
+
+更侧重工业的应用：PRCV2018美图短视频实时分类挑战赛冠军技术方案

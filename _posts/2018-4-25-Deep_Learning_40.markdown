@@ -304,3 +304,10 @@ https://mp.weixin.qq.com/s/aH1zQ7we8OE59-O9n4IXhw
 
 应对未来物联网大潮：如何在内存有限的情况下部署深度学习？
 
+https://mp.weixin.qq.com/s/IfvXrsUq8-cBDC4_3O5v_w
+
+Facebook新研究优化硬件浮点运算，强化AI模型运行速率
+
+https://mp.weixin.qq.com/s/nEMvoiqImd0RxrskIH7c9A
+
+仅17 KB、一万个权重的微型风格迁移网络！

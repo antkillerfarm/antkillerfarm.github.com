@@ -146,6 +146,10 @@ https://mp.weixin.qq.com/s/XwMXrsmSnImgD1vNSVErLg
 
 深度多目标跟踪算法综述
 
+https://mp.weixin.qq.com/s/KLTSUqprwfFBVeVIP7HJRw
+
+视频中的多目标跟踪
+
 # SSD
 
 SSD是Wei Liu于2016年提出的算法。

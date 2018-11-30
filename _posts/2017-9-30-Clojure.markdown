@@ -313,6 +313,10 @@ https://mp.weixin.qq.com/s/Kp1CLCz0eG38r1HplQ02Ew
 
 即将兴起的汽车内视相机
 
+https://mp.weixin.qq.com/s/jmvcuiRu82zVC2kq91uS0g
+
+谷歌AI用“深度”学习来虚化背景，单摄手机可用，Jeff Dean表示优秀
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/ViQqeER1NXtJOtnLg76TWg
@@ -326,19 +330,3 @@ https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
 https://mp.weixin.qq.com/s/zTB59Fg_JFg9ZZPRlq9txA
 
 不使用残差连接，ICML新研究靠初始化训练上万层标准CNN
-
-https://mp.weixin.qq.com/s/9KOXSic-DellLuaVFjbKeA
-
-价值传播网络，在更复杂的动态环境中进行规划的方法
-
-https://mp.weixin.qq.com/s/i6VEYjbac4QP3s51meN1VA
-
-Hinton向量学院推出神经ODE：超越ResNet 4大性能优势
-
-https://mp.weixin.qq.com/s/-xZxNJPQyEQyBOue6_77yw
-
-用浅度学习训练深度网络：避开端到端深度学习难题
-
-https://mp.weixin.qq.com/s/DwaSF76uvqFKkybaTUpl3w
-
-空间序列递归神经网络用于高光谱图像分类

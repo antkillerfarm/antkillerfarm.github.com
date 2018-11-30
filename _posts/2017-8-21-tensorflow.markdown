@@ -346,24 +346,3 @@ tf-slim-mnist例子中mnist数据不是原始格式的，而是经过了`dataset
 
 该示例执行时也没有控制台的输出信息，一度让我觉得很不方便。后来才发现，原来可以用TensorBoard查看log文件夹。
 
-## 可视化神经网络结构
-
-TensorBoard是一个http服务，用以监控TensorFlow的执行。
-
-`writer = tf.summary.FileWriter("logs/", sess.graph)`
-
-然后
-
-`tensorboard --logdir='logs/'`
-
-启动之后，用浏览器打开`http://localhost:6006`即可。
-
-参考：
-
-http://blog.csdn.net/u013082989/article/details/53510625
-
-TensorFlow学习_01_安装_基本操作_可视化结构、过程_Mnist
-
-https://blog.csdn.net/sinat_33761963/article/details/62433234
-
-Tensorflow的可视化工具Tensorboard的初步使用

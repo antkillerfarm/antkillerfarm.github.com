@@ -120,31 +120,11 @@ https://mp.weixin.qq.com/s/e_n-BsPkrPd4MsyvlMVeYg
 
 行人重识别告别辅助姿势信息，商汤、中科大提出姿势无关的特征提取GAN
 
+https://mp.weixin.qq.com/s/l8ExvxOERUngHBqtep-ZWw
+
+人群计数（Crowd Counting）研究综述
+
 # 人脸识别进阶
-
-https://mp.weixin.qq.com/s/YlrWHDPIPzN4dQO2vo4DjA
-
-人脸颜值研究综述
-
-https://mp.weixin.qq.com/s/d3aaN4vGAtMfLqOpU9oC6w
-
-香港中文大学助理教授吕健勤：面向人脸分析的深度学习方法
-
-https://mp.weixin.qq.com/s/wcKUURsYiEYVzn7qTMVPag
-
-格灵深瞳：人脸识别最新进展以及工业级大规模人脸识别实践探讨
-
-https://mp.weixin.qq.com/s/Cy5gxHl_Z4v7BX0k8SDNSQ
-
-AI人像美妆算法初识
-
-https://mp.weixin.qq.com/s/Ht8kFTgIWASusfSUQqoaJA
-
-人脸表情识别研究
-
-https://mp.weixin.qq.com/s/qUFjfsDtTQfAEjBCuoWHew
-
-人脸脸型分类研究现状
 
 https://mp.weixin.qq.com/s/5vx1FGgSOhF71FwHeUwaAQ
 
