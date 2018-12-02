@@ -52,6 +52,10 @@ https://mp.weixin.qq.com/s/Nyb9qTYn5_XFhQPa8KZojw
 
 最新Apache Spark平台的NLP库,助你轻松搞定自然语言处理任务
 
+https://mp.weixin.qq.com/s/CRuBdhZwTk79z46sZsHmIQ
+
+IBM、哈佛共同研发：Seq2Seq模型可视化工具
+
 ## gcForest
 
 http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw

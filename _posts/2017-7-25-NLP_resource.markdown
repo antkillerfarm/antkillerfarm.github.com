@@ -126,6 +126,10 @@ https://mp.weixin.qq.com/s/zgmpxfpn2OkPflZRpfrD7A
 
 基于深度学习的文本生成 附217页PPT下载
 
+https://mp.weixin.qq.com/s/RVg2_abeeYVDlvDRkzPpPQ
+
+常见近30种NLP任务的练手项目
+
 https://www.msra.cn/zh-cn/news/features/ruihua-song-20161226
 
 宋睿华：好玩的文本生成
@@ -397,15 +401,3 @@ http://mp.weixin.qq.com/s/Or6oDt0aZFlnlMr8EBr-xQ
 https://mp.weixin.qq.com/s/i4u4Ty8kC0zzUpmRqj8g7A
 
 473个模型试验告诉你文本分类中的最好编码方式
-
-https://mp.weixin.qq.com/s/-gnzRjLerqIyLPLBkZNmcA
-
-深度学习在NLP中的运用？从分词、词性到机器翻译、对话系统
-
-https://mp.weixin.qq.com/s/TjFzJVOowfceHwJNUItcxQ
-
-从语言学到深度学习NLP，一文概述自然语言处理
-
-https://mp.weixin.qq.com/s/r9WRkmApBaHvlCQ5F5ypjg
-
-神奇的神经机器翻译：从发展脉络到未来前景

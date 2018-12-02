@@ -293,6 +293,10 @@ https://mp.weixin.qq.com/s/tNi5LJmotuXSoHbZhNgPcw
 
 GitHub已完全弃用jQuery，问题是为什么？
 
+https://mp.weixin.qq.com/s/WHh9v3icCc90PwiLyv0Hng
+
+为什么Facebook的API以一个循环作为开头？
+
 # Scala
 
 官网：
@@ -399,24 +403,3 @@ https://mp.weixin.qq.com/s/KRttAyx7YW1vkmzo1w1fAg
 https://mp.weixin.qq.com/s/0jPuPBDokan6B_OltKp9mw
 
 德国本届世界杯胜算最大？帕绍大学基于ELO评级预测
-
-https://mp.weixin.qq.com/s/Sb_kPgtwyQFWloDT3707TA
-
-深度学习了40万个表情，一大波AI表情包来了
-
-https://mp.weixin.qq.com/s/dJXl5tI-WKB3O28sgJmbkw
-
-机器也能感知时间，AI系统可预测5分钟内的未来！
-
-https://mp.weixin.qq.com/s/xS8EsNtSdHiFgg_HnuJJWg
-
-照片有灵异鬼影？伯克利陈启峰培育高能FCN“除灵师”
-
-https://mp.weixin.qq.com/s/keWrgmCfJrnswDDKEL52Cg
-
-数据少，就享受不到深度学习的红利了么？总是有办法的！
-
-https://mp.weixin.qq.com/s/YTHM0Ue2iWVyYhOp6UTr1g
-
-图像识别泛化能力人机对比：CNN比人类还差得远
-

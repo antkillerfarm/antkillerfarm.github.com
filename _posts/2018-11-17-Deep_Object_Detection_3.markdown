@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（三）——Fast R-CNN, Faster R-CNN, YOLO
+title:  深度目标检测（三）——Fast R-CNN, Faster R-CNN
 category: Deep Object Detection 
 ---
 

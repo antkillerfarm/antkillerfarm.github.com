@@ -321,3 +321,15 @@ https://mp.weixin.qq.com/s/fkBkSakTtuGPhi3mK563mg
 https://mp.weixin.qq.com/s/KG_X-wFPgWupb0FOWL9LIw
 
 三种提升多语言翻译模型的高效策略
+
+https://mp.weixin.qq.com/s/-gnzRjLerqIyLPLBkZNmcA
+
+深度学习在NLP中的运用？从分词、词性到机器翻译、对话系统
+
+https://mp.weixin.qq.com/s/TjFzJVOowfceHwJNUItcxQ
+
+从语言学到深度学习NLP，一文概述自然语言处理
+
+https://mp.weixin.qq.com/s/r9WRkmApBaHvlCQ5F5ypjg
+
+神奇的神经机器翻译：从发展脉络到未来前景

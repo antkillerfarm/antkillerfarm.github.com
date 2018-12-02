@@ -84,6 +84,10 @@ https://mp.weixin.qq.com/s/_cOuhToH8KvZldNfraumSQ
 
 什么促使了候选目标的有效检测？
 
+https://mp.weixin.qq.com/s/c4eh4y8CNRAEllBbnP2Zhg
+
+对象定位和检测
+
 https://mp.weixin.qq.com/s/LAy1LKGj5HOh_e9jPgvfQw
 
 视觉目标检测和识别之过去，现在及可能

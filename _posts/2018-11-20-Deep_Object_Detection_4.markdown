@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（四）——YOLOv3, 目标检测进阶
+title:  深度目标检测（四）——YOLO, SSD
 category: Deep Object Detection 
 ---
 
@@ -86,170 +86,146 @@ https://mp.weixin.qq.com/s/JKyX5cdvknIRoF341Au7Ew
 
 单级式目标检测方法概述：YOLO与SSD
 
-# YOLOv3
+# SSD
 
-https://zhuanlan.zhihu.com/p/34945787
+SSD是Wei Liu于2016年提出的算法。
 
-YOLOv3：An Incremental Improvement全文翻译
+论文：
 
-https://mp.weixin.qq.com/s/UWuCiV6dBk9Z0XusEBS6-g
+《SSD: Single Shot MultiBox Detector》
 
-物体检测经典模型YOLO新升级，就看一眼，速度提升3倍！
+代码：
 
-https://mp.weixin.qq.com/s/BF7mj-_D303cLiD5e6oy6w
+https://github.com/weiliu89/caffe
 
-期待已久的—YOLO V3
+>Wei Liu，南京大学本科（2009）+北卡罗莱娜大学博士（在读）。   
+>个人主页：   
+>http://www.cs.unc.edu/~wliu/
 
-https://mp.weixin.qq.com/s/-Ixqxx6QGJDTM4g50y6LyA
+## 网络结构
 
-进击的YOLOv3，目标检测网络的巅峰之作
+YOLO有一些缺陷：每个网格只预测一个物体，容易造成漏检；对于物体的尺度相对比较敏感，对于尺度变化较大的物体泛化能力较差。
 
-https://zhuanlan.zhihu.com/p/46691043
+针对YOLO中的这些不足，SSD在这两方面都有所改进，同时兼顾了mAP和实时性的要求。其思路就是Faster R-CNN+YOLO，利用YOLO的思路和Faster R-CNN的anchor box的思想。
 
-YOLO v1深入理解
+![](/images/article/ssd.png)
 
-https://zhuanlan.zhihu.com/p/47575929
+上图是SSD的网络结构图。其特点为：
 
-YOLOv2 / YOLO9000深入理解
+1.采用VGG16的基础网络结构，使用前面的前5层。
 
-https://zhuanlan.zhihu.com/p/49556105
+2.使用Dilated convolution将fc6和fc7层转化成两个卷积层。
 
-YOLO v3深入理解
+3.再额外增加了3个卷积层，和一个average pool层。不同层次的feature map分别用于default box的偏移以及不同类别得分的预测。
 
-https://mp.weixin.qq.com/s/xNaXPwI1mQsJ2Y7TT07u3g
+4.通过NMS得到最终的检测结果。
 
-YOLO-LITE:专门面向CPU的实时目标检测
+这些增加的卷积层的feature map的大小变化比较大，允许能够检测出不同尺度下的物体：在低层的feature map，感受野比较小，高层的感受野比较大，在不同的feature map进行卷积，可以达到多尺度的目的。
 
-https://zhuanlan.zhihu.com/p/50170492
+![](/images/article/ssd_2.png)
 
-重磅！YOLO-LITE来了
+上图是从另一个角度观察SSD，可以看出SSD可检出8372个default box（也叫做prior box）。这里沿用Faster R-CNN的Anchor方法生成default box。
 
-# 目标检测进阶
+![](/images/article/ssd_3.png)
 
-## CornerNet
+和YOLO一样，卷积层的每个点都是一个vector，含义也和YOLO类似，只是分类的时候，多了一个背景的类别，所以就成了20+1类。
 
-https://mp.weixin.qq.com/s/e74-zFcMZzn67KaFXb_fdQ
+在YOLO中，由于每个格子只有1个default box，所以对于一个格子中包含两个物体的情况是无能为力的。SSD的Anchor方法略微改善了这方面的性能，但对于超过Anchor数量的情况，仍然无能为力。因此，这两者对于小目标的检测，没有RCNN系列算法的效果好。
 
-CornerNet目标检测开启预测“边界框”到预测“点对”的新思路
+## 训练策略
 
-https://zhuanlan.zhihu.com/p/41865617
+监督学习训练的关键点：如何把标注信息(ground true box,ground true category)映射到（default box上）？
 
-CornerNet：目标检测算法新思路
+### 正负样本
 
-https://mp.weixin.qq.com/s/e6B22xpue_xZwrXmIlZodw
+与ground truth box的IOU大于0.5的default box，被定为该ground truth box的正样本，其它的default box则为负样本。
 
-ECCV-2018最佼佼者CornerNet的目标检测算法
+而一般的MultiBox算法中，只有IOU最大的default box才是正样本。
 
-https://mp.weixin.qq.com/s/9ldLaYKGkgq-MnJZw7CrDQ
+显然，在SSD中，一个ground truth box可能对应多个default box。
 
-CornerNet为什么有别于其他目标检测领域的主流算法？
+![](/images/article/ssd.jpg)
+
+例如上图，有两个default box与猫匹配，一个default box与狗匹配。
+
+### Hard Negative Mining
+
+Hard Negative Mining是机器学习领域的一个常用技巧。
+
+对于正负样本数量不均衡的数据集（这里假设负样本数量远大于正样本数量），通常的做法有：
+
+**1.增加正样本的数量。**这个过程通常叫做数据增强（Data Augmentation）。例如对图片进行旋转、位移得到新的正样本。
+
+**2.减少负样本的数量。**这里实际上是一个筛选有价值的负样本的过程。Hard Negative Mining就属于这类方法，它认为负样本的分数越高，越有价值。
+
+具体到图像分类任务就是：那些不包含该物体但分值却很高的样本。通俗的讲，就是那些容易被混淆的负样本。
+
+**3.修改正负判定门限，以匹配正负样本比例。**例如，提高IOU门限。
+
+**4.异常点检测。**
+
+在SSD中，用于预测的feature map上的每个点都对应有6个不同的default box，绝大部分的default box都是负样本，导致了正负样本不平衡。
+
+在训练过程中，采用了Hard Negative Mining的策略（根据confidence loss对所有的box进行排序，使正负例的比例保持在1:3）来平衡正负样本的比率。
+
+参考：
+
+https://mp.weixin.qq.com/s/D0JaJaHeNX4kljSTxTsAAw
+
+一文概览卷积神经网络中的类别不均衡问题
+
+## Caffe实现的细节问题
+
+![](/images/article/ssd_4.png)
+
+上图是SSD末端的caffe结构图。我们注意到在flatten之前有个permute的操作。这个实际上还是和caffe blob的格式有关。
+
+只有flatten的效果：[B, CxHxW]
+
+permute+flatten的效果：[B, HxWxC]
+
+C在最后，意味着同一个点的不同通道的信息挨着放在一起，从而保证了信息的局部空间性保持不变。
+
+显然，这里如果是TensorFlow的tensor结构的话，permute就没有存在的必要了。
 
 ## 参考
 
-https://mp.weixin.qq.com/s/dcrBQ-t3tLOTouEyofOBxg
+http://www.jianshu.com/p/ebebfcd274e6
 
-间谍卫星：利用卷积神经网络对卫星影像进行多尺度目标检测
+Caffe-SSD训练自己的数据集教程
 
-https://mp.weixin.qq.com/s/LtXylKTKsHdjMPw9Q1HyXA
+https://zhuanlan.zhihu.com/p/24954433
 
-优于MobileNet、YOLOv2：移动设备上的实时目标检测系统Pelee
+SSD
 
-https://mp.weixin.qq.com/s/Gq3bflJq59Tx-nDCvbweNA
+http://blog.csdn.net/zy1034092330/article/details/72862030
 
-无需预训练分类器，清华&旷视提出专用于目标检测的骨干网络DetNet
+SSD详解
 
-https://mp.weixin.qq.com/s/u3eXhoFvo7vZujc0XoQQWQ
+http://blog.csdn.net/jesse_mx/article/details/74011886
 
-旷视研究院解读Light-Head R-CNN：平衡精准度和速度
+SSD模型fine-tune和网络架构
 
-https://mp.weixin.qq.com/s/6cUP9vvfcuv8rIEnGnAFiA
+http://blog.csdn.net/u010167269/article/details/52563573
 
-NCSU&阿里巴巴论文：可解释的R-CNN
+SSD论文阅读
 
-https://mp.weixin.qq.com/s/1vOdOMyByBacSBMVrscq5Q
+http://blog.csdn.net/zijin0802034/article/details/53288773
 
-黄畅：基于DenesBox的目标检测在自动驾驶中的应用
+另一个SSD论文阅读
 
-https://mp.weixin.qq.com/s/-PeXMU_gkcT5YnMcLoaKag
+http://www.lai18.com/content/24600342.html
 
-CVPR清华大学研究，高效视觉目标检测框架RON
+还是一个SSD论文阅读
 
-https://mp.weixin.qq.com/s/AupXIoVmhcOBrX1z1vgdtw
+https://www.zhihu.com/question/49455386
 
-弱监督实现精确目标检测，上交大提出协同学习框架
+为什么SSD(Single Shot MultiBox Detector)对小目标的检测效果不好？
 
-https://mp.weixin.qq.com/s/Lt00ASVSb_fDDJdtCO0-tQ
+https://mp.weixin.qq.com/s/hGRZzNzflbed2w4XosC40w
 
-物体检测中的结构推理网络
+使用SSD进行目标检测
 
-https://mp.weixin.qq.com/s/f0Ynln-27z5A6LXt8j5qKQ
+https://mp.weixin.qq.com/s/vfC1FPi8sjatFh2HMjTEXQ
 
-据说以后在探头下面用帽子挡脸没用了：SymmNet遮挡物检测的对称卷积神经网络
-
-https://mp.weixin.qq.com/s/cEg6HmS651riJVAtHdPafg
-
-基于域适应弱监督学习的目标检测
-
-https://mp.weixin.qq.com/s/PpT-NmTVjRi0_SEq0lISXw
-
-旷视科技Oral论文解读：IoU-Net让目标检测用上定位置信度
-
-https://mp.weixin.qq.com/s/tmp1HXU7cLerLr0DY9NluQ
-
-杂乱环境下的显著性物体： 将显著性物体检测推向新高度
-
-https://mp.weixin.qq.com/s/OqlZ2TRGbHURYW00440lgQ
-
-微软亚洲研究院与北京大学共同提出用于物体检测的可学习区域特征提取模块
-
-https://mp.weixin.qq.com/s/5I9uzGCNFD93L1mzakTl0Q
-
-目标检测网络学习总结（RCNN-->YOLO V3）
-
-https://mp.weixin.qq.com/s/ZQqcsJenqkXtH1czOe5WnA
-
-阿里巴巴提出Auto-Context R-CNN算法，刷出Faster RCNN目标检测新高度
-
-https://mp.weixin.qq.com/s/aLYQepnr_BjS27Fb-zoZ_g
-
-迈向完全可学习的物体检测器：可学习区域特征提取方法
-
-https://zhuanlan.zhihu.com/p/43655912
-
-“别挡我，我要C位出道！”谈谈深度学习目标检测中的遮挡问题
-
-https://mp.weixin.qq.com/s/VtlSVF4d9LwPJhDEYSbgTg
-
-无监督难分样本挖掘改进目标检测
-
-https://mp.weixin.qq.com/s/h_ENriEXr7WI_XR_DtxpMQ
-
-这样可以更精确的目标检测——超网络
-
-https://mp.weixin.qq.com/s?__biz=MzI5MDUyMDIxNA==&mid=2247486104&idx=1&sn=5580a4680f3190adb98638471e9b5982
-
-百度视觉团队斩获 ECCV Google AI 目标检测竞赛冠军，获奖方案全解读
-
-https://mp.weixin.qq.com/s/nL9l7hvG3RG7G7LzCzzvug
-
-旷视科技2018 COCO负责人俞刚：如何构建检测与分割的冠军系统
-
-https://mp.weixin.qq.com/s/zeruKQOye_QNWgluVIN0BA
-
-从R-CNN到RFBNet，目标检测架构5年演进全盘点
-
-https://mp.weixin.qq.com/s/sCGNUI-mUSYxD69uBDQNoQ
-
-基于深度学习的目标检测算法综述：算法改进
-
-https://mp.weixin.qq.com/s/XdH54ImSfgadCoISmVyyVg
-
-基于单目摄像头的物体检测
-
-https://mp.weixin.qq.com/s/yswy7VwEapQJ9M5n_Uo93w
-
-目标检测最新进展总结与展望
-
-https://mp.weixin.qq.com/s/s1qmCA8djEEanwCxeLSV2Q
-
-63页《深度CNN-目标检测》综述
+目标检测算法之SSD

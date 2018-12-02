@@ -286,6 +286,10 @@ https://mp.weixin.qq.com/s/KK7jCN5yN_TOrnNQWLuUNg
 
 CMU多语种语音数据集：700多种语言的语音/文本对齐语料
 
+https://mp.weixin.qq.com/s/xzHMzQ4uVBJaUR8b_KNptA
+
+你说“神马”？非正式汉语数据集资源上线，帮你训练网络语言处理
+
 ## CV
 
 http://www.cvpapers.com/datasets.html

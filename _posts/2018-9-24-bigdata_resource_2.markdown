@@ -122,6 +122,10 @@ https://mp.weixin.qq.com/s/DhuZJae-Dp4MnCIfc3SAgw
 
 阿里如何将“高峰前扩容、高峰后缩容”的梦想照进现实？
 
+https://mp.weixin.qq.com/s/NLumRBw5Zqqf08fBJLeTsw
+
+新任务&数据集：视觉常识推理(VCR)
+
 ## 人脸/行为
 
 http://blog.csdn.net/wangkr111/article/details/44514097

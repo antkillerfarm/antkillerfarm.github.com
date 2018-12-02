@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十七）——深度目标跟踪, SSD
+title:  深度学习（十七）——深度目标跟踪, 无监督/半监督/自监督深度学习, 细粒度分类
 category: DL 
 ---
 
@@ -150,149 +150,153 @@ https://mp.weixin.qq.com/s/KLTSUqprwfFBVeVIP7HJRw
 
 视频中的多目标跟踪
 
-# SSD
+# 无监督/半监督/自监督深度学习
 
-SSD是Wei Liu于2016年提出的算法。
+https://mp.weixin.qq.com/s/kbqTHIOzAj1aERl4tm-kVA
 
-论文：
+2017上半年无监督特征学习研究成果汇总
 
-《SSD: Single Shot MultiBox Detector》
+https://mp.weixin.qq.com/s/J50L6hESBROfT8IIAnofQQ
 
-代码：
+Yan LeCun109页最新报告：图嵌入, 内容理解，自监督学习
 
-https://github.com/weiliu89/caffe
+https://mp.weixin.qq.com/s/aCWAU2RXk9fTzfFqOyjqUw
 
->Wei Liu，南京大学本科（2009）+北卡罗莱娜大学博士（在读）。   
->个人主页：   
->http://www.cs.unc.edu/~wliu/
+能自主学习的人工突触，为无监督学习开辟新的路径
 
-## 网络结构
+https://mp.weixin.qq.com/s/9kMz-eNRwC51Fi0-7BfKzA
 
-YOLO有一些缺陷：每个网格只预测一个物体，容易造成漏检；对于物体的尺度相对比较敏感，对于尺度变化较大的物体泛化能力较差。
+Active Learning: 一个降低深度学习时间，空间，经济成本的解决方案
 
-针对YOLO中的这些不足，SSD在这两方面都有所改进，同时兼顾了mAP和实时性的要求。其思路就是Faster R-CNN+YOLO，利用YOLO的思路和Faster R-CNN的anchor box的思想。
+https://mp.weixin.qq.com/s/ZvTm9omnIRqPXcLFbZtoeg
 
-![](/images/article/ssd.png)
+深度学习的关键：无监督深度学习简介
 
-上图是SSD的网络结构图。其特点为：
+https://mp.weixin.qq.com/s/GHjmiB6F2W3Zo8gVllTyyQ
 
-1.采用VGG16的基础网络结构，使用前面的前5层。
+重现“世界模型”实验，无监督方式快速训练
 
-2.使用Dilated convolution将fc6和fc7层转化成两个卷积层。
+https://mp.weixin.qq.com/s/3_VtdZNKBwNtMEMf2xc7qw
 
-3.再额外增加了3个卷积层，和一个average pool层。不同层次的feature map分别用于default box的偏移以及不同类别得分的预测。
+CVPR智慧城市挑战赛：无监督交通异常检测，冠军团队技术分享
 
-4.通过NMS得到最终的检测结果。
+https://mp.weixin.qq.com/s/3aAaM1DWsnCWEEbP7dOZEg
 
-这些增加的卷积层的feature map的大小变化比较大，允许能够检测出不同尺度下的物体：在低层的feature map，感受野比较小，高层的感受野比较大，在不同的feature map进行卷积，可以达到多尺度的目的。
+伯克利等提出无监督特征学习新方法，代码已开源
 
-![](/images/article/ssd_2.png)
+https://mp.weixin.qq.com/s/ZDPPWH570Vc6e1irwP1b1Q
 
-上图是从另一个角度观察SSD，可以看出SSD可检出8372个default box（也叫做prior box）。这里沿用Faster R-CNN的Anchor方法生成default box。
+精细识别现实世界图像：李飞飞团队提出半监督适应性模型
 
-![](/images/article/ssd_3.png)
+https://mp.weixin.qq.com/s/X1Alcl7rVfTtZGZ40iXjXw
 
-和YOLO一样，卷积层的每个点都是一个vector，含义也和YOLO类似，只是分类的时候，多了一个背景的类别，所以就成了20+1类。
+Spotlight 论文：非参数化方法实现的极端无监督特征学习
 
-在YOLO中，由于每个格子只有1个default box，所以对于一个格子中包含两个物体的情况是无能为力的。SSD的Anchor方法略微改善了这方面的性能，但对于超过Anchor数量的情况，仍然无能为力。因此，这两者对于小目标的检测，没有RCNN系列算法的效果好。
+https://mp.weixin.qq.com/s/kxEfoSjCF8n2jxlDfMaNDA
 
-## 训练策略
+半监督学习在图像分类上的基本工作方式
 
-监督学习训练的关键点：如何把标注信息(ground true box,ground true category)映射到（default box上）？
+https://mp.weixin.qq.com/s/uUMPUdG2TI10W5RumPaXkA
 
-### 正负样本
+DeepMind无监督表示学习重大突破：语音、图像、文本、强化学习全能冠军！
 
-与ground truth box的IOU大于0.5的default box，被定为该ground truth box的正样本，其它的default box则为负样本。
+https://mp.weixin.qq.com/s/_VC6PGdCjlhcsndpunIteg
 
-而一般的MultiBox算法中，只有IOU最大的default box才是正样本。
+何恺明等人提出新型半监督实例分割方法：学习分割Every Thing
 
-显然，在SSD中，一个ground truth box可能对应多个default box。
+https://mp.weixin.qq.com/s/qaxzSSDuuscwL5tt0QCQ0Q
 
-![](/images/article/ssd.jpg)
+破解人类识别文字之谜：对图像中的字母进行无监督学习
 
-例如上图，有两个default box与猫匹配，一个default box与狗匹配。
+https://mp.weixin.qq.com/s/IsLlzDWnUXe8LVp4Y1Jb_A
 
-### Hard Negative Mining
+35亿张图像！Facebook基于弱监督学习刷新ImageNet基准测试记录
 
-Hard Negative Mining是机器学习领域的一个常用技巧。
+https://mp.weixin.qq.com/s/TEk_i4kEjUqmAqF8LgTVjg
 
-对于正负样本数量不均衡的数据集（这里假设负样本数量远大于正样本数量），通常的做法有：
+FAIR提出用聚类方法结合卷积网络，实现无监督端到端图像分类
 
-**1.增加正样本的数量。**这个过程通常叫做数据增强（Data Augmentation）。例如对图片进行旋转、位移得到新的正样本。
+https://mp.weixin.qq.com/s/dSncg1pDHpIFOT4mXrFntA
 
-**2.减少负样本的数量。**这里实际上是一个筛选有价值的负样本的过程。Hard Negative Mining就属于这类方法，它认为负样本的分数越高，越有价值。
+Yan Lecun自监督学习：机器能像人一样学习吗？ 110页PPT
 
-具体到图像分类任务就是：那些不包含该物体但分值却很高的样本。通俗的讲，就是那些容易被混淆的负样本。
+https://mp.weixin.qq.com/s/W4zwKqkVQN4v-IKzGrkudg
 
-**3.修改正负判定门限，以匹配正负样本比例。**例如，提高IOU门限。
+通过传递不变性实现自监督视觉表征学习
 
-**4.异常点检测。**
+https://zhuanlan.zhihu.com/p/30265894
 
-在SSD中，用于预测的feature map上的每个点都对应有6个不同的default box，绝大部分的default box都是负样本，导致了正负样本不平衡。
+自监督学习近期进展
 
-在训练过程中，采用了Hard Negative Mining的策略（根据confidence loss对所有的box进行排序，使正负例的比例保持在1:3）来平衡正负样本的比率。
+https://mp.weixin.qq.com/s/cTlXMxcpzc7_5NVsTm1jcA
 
-参考：
+学习一帧，为整段黑白视频上色：谷歌提出自监督视觉追踪模型
 
-https://mp.weixin.qq.com/s/D0JaJaHeNX4kljSTxTsAAw
+https://mp.weixin.qq.com/s/Amr34SdrPZho1GQpFS7WBA
 
-一文概览卷积神经网络中的类别不均衡问题
+见微知著：语义分割中的弱监督学习
 
-## Caffe实现的细节问题
+https://mp.weixin.qq.com/s/zOWA1oKbopZJuYIAYYlKTA
 
-![](/images/article/ssd_4.png)
+港中文-商汤联合论文：自监督语义分割的混合与匹配调节
 
-上图是SSD末端的caffe结构图。我们注意到在flatten之前有个permute的操作。这个实际上还是和caffe blob的格式有关。
+https://mp.weixin.qq.com/s/5xlSoC5sgzsAwMYMSFCjnw
 
-只有flatten的效果：[B, CxHxW]
+TextTopicNet:CMU开源无标注高精度自监督模型
 
-permute+flatten的效果：[B, HxWxC]
+https://mp.weixin.qq.com/s/343DfjOvkaozuxNK89V3zQ
 
-C在最后，意味着同一个点的不同通道的信息挨着放在一起，从而保证了信息的局部空间性保持不变。
+前景目标检测的无监督学习
 
-显然，这里如果是TensorFlow的tensor结构的话，permute就没有存在的必要了。
+https://mp.weixin.qq.com/s/DwY0oGu-G30Szs-ArI5WaQ
 
-## 参考
+程明明：面向弱监督的图像理解
 
-http://www.jianshu.com/p/ebebfcd274e6
+https://mp.weixin.qq.com/s/LFOljv-Hr6JqyI6TQ2X4sw
 
-Caffe-SSD训练自己的数据集教程
+半监督学习也能自动化？南大和第四范式提出Auto-SSL
 
-https://zhuanlan.zhihu.com/p/24954433
+# 细粒度分类
 
-SSD
+https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw
 
-http://blog.csdn.net/zy1034092330/article/details/72862030
+分段映射：帮助利用少量样本习得新类别细粒度分类器
 
-SSD详解
+https://mp.weixin.qq.com/s/zeN7rjmAnvh_7BbTmScrZw
 
-http://blog.csdn.net/jesse_mx/article/details/74011886
+细粒度分类你懂吗？——fine-gained image classification
 
-SSD模型fine-tune和网络架构
+https://mp.weixin.qq.com/s/LtWMGRBk2sbPDjeC9PmJ7g
 
-http://blog.csdn.net/u010167269/article/details/52563573
+弱监督学习下的商品识别：CVPR 2018细粒度识别挑战赛获胜方案简介
 
-SSD论文阅读
+https://mp.weixin.qq.com/s/hcoAL1AHm_HtderWU8fSBw
 
-http://blog.csdn.net/zijin0802034/article/details/53288773
+大连理工大学在CVPR18大规模精细粒度物种识别竞赛中获得冠军
 
-另一个SSD论文阅读
+https://mp.weixin.qq.com/s/31r9FjuJn9yxrZMnfozkMQ
 
-http://www.lai18.com/content/24600342.html
+全卷积注意网络的细粒度识别
 
-还是一个SSD论文阅读
+https://zhuanlan.zhihu.com/p/24738319
 
-https://www.zhihu.com/question/49455386
+“见微知著”——细粒度图像分析进展综述
 
-为什么SSD(Single Shot MultiBox Detector)对小目标的检测效果不好？
+https://zhuanlan.zhihu.com/p/42067661
 
-https://mp.weixin.qq.com/s/hGRZzNzflbed2w4XosC40w
+CVPR Look Closer to See Better
 
-使用SSD进行目标检测
+https://mp.weixin.qq.com/s/52hm3Cq3TFRnTMfDppivSQ
 
-https://mp.weixin.qq.com/s/vfC1FPi8sjatFh2HMjTEXQ
+中山大学等提出HSE：基于层次语义嵌入模型的精细化物体分类
 
-目标检测算法之SSD
+https://zhuanlan.zhihu.com/p/48192930
+
+Object-Part Attention Model for FGVC
+
+https://mp.weixin.qq.com/s/slmod5rW4qRhxGnbNN2J8g
+
+双线性汇合(bilinear pooling)在细粒度图像分析及其他领域的进展综述
 
 # YOLOv2
 

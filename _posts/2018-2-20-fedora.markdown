@@ -299,7 +299,11 @@ https://mp.weixin.qq.com/s/2hJzdILGgLwcw8mkCY1uLw
 
 当我们输入一条SQL查询语句时，发生了什么？
 
-# DL参考资源+
+https://mp.weixin.qq.com/s/5Qcbz6dT20Sa_OvRfbNXNw
+
+如何给新来的师妹解释什么是数据库的脏读、不可重复读和幻读
+
+# DL参考资源
 
 https://mp.weixin.qq.com/s/KX85CCpYrXFOvdTU5Q4Frg
 
@@ -352,3 +356,11 @@ https://mp.weixin.qq.com/s/-xZxNJPQyEQyBOue6_77yw
 https://mp.weixin.qq.com/s/DwaSF76uvqFKkybaTUpl3w
 
 空间序列递归神经网络用于高光谱图像分类
+
+https://mp.weixin.qq.com/s/7zFcWAmtpW2S_PVYru_lxg
+
+眼见未必为实--漫谈图像隐写术
+
+https://mp.weixin.qq.com/s/h9e3QMSmsrE4NUXExwNsGg
+
+一文看尽深度学习这半年

@@ -272,6 +272,10 @@ https://mp.weixin.qq.com/s/z-_CxTQup-g6cAvVDwS-kQ
 
 谷歌开源DeepVariant，之前的经典检测基因变异法将被颠覆
 
+https://mp.weixin.qq.com/s/ojlhC7vGB1r6scKipm0BjA
+
+小样本如何进行深度学习？西北工夏勇教授这一份54页《医学影像小数据深度学习》PPT为你讲解
+
 ## 遗传算法 & 进化算法
 
 http://blog.csdn.net/u010945683/article/details/40987331

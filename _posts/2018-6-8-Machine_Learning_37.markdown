@@ -198,6 +198,10 @@ https://mp.weixin.qq.com/s/g8GLF0rf3IPAjRb9wZaS4w
 
 神经网络的奥秘之优化器的妙用
 
+https://mp.weixin.qq.com/s/i-fE4aISTJ0584aIHJ8R0Q
+
+二阶优化！训练ImageNet仅需35个Epoch
+
 # 推荐系统进阶
 
 除了《机器学习（十五～十六）》提及的ALS和PCA之外，相关的算法还包括：
