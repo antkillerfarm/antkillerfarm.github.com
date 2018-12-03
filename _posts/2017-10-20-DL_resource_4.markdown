@@ -162,220 +162,234 @@ https://mp.weixin.qq.com/s/uha9bmmLfSPbRtKeuSqNiw
 
 浙江移动—利用TensorFlow实现通讯运维智能化
 
-## 工具
+## AI与安全
 
-https://mp.weixin.qq.com/s/TT4whft1Tj1pCEPbnMH1cA
+https://mp.weixin.qq.com/s/jBE4gP3O0qVJ50G49Q_xmQ
 
-清华大学发布OpenNE：用于网络嵌入的开源工具包
+对抗样本攻防战，清华大学TSAIL团队再获CAAD攻防赛第一
 
-https://mp.weixin.qq.com/s/r01vfSKb4VpFXVyokb54Bg
+https://mp.weixin.qq.com/s/w84gLswUFkl4NJSMv0RnIA
 
-MIT开放图像标注工具LabelMe源代码：助力机器视觉的发展
+OpenAI详细解析：攻击者是如何使用“对抗样本”攻击机器学习的！
 
-https://mp.weixin.qq.com/s/30dK7nGJOWIaa1j9QElrYA
+https://mp.weixin.qq.com/s/u7HxMuJxQG91qFbvS_8csA
 
-详解帝国理工集成工具TensorLayer：控制深度学习开发复杂度
+L2正则化和对抗鲁棒性的关系
 
-https://mp.weixin.qq.com/s/m_2LE2QN_8_a1hti6G0Cow
+https://mp.weixin.qq.com/s/mbjVliHWT9tt7h998FU9Tg
 
-Netflix开源稀疏数据专用神经网络库：Vectorflow
+L2正则化视角下的对抗样本
 
-https://mp.weixin.qq.com/s/bMfJ1Ez6bOBjHLquuZFnmQ
+https://mp.weixin.qq.com/s/5OMT6BvqkUgtshow_tLkNw
 
-Uber与斯坦福大学开源深度概率编程语言Pyro：基于PyTorch
+精准防御对抗性攻击，清华大学提出对抗正则化训练方法DeepDefense
 
-https://mp.weixin.qq.com/s/ImtSR6VwYalN6gTgjVJOsQ
+https://mp.weixin.qq.com/s/hBPsCUCQjT6cIKjjrHyQYg
 
-十五分钟完成Regex五天任务：FlashText，语料库数据快速清理利器
+继图像识别后，图像标注系统也被对抗样本攻陷!
 
-https://mp.weixin.qq.com/s/IKxweABi4IEyXjKNw9BJgA
+https://mp.weixin.qq.com/s/c8-lS2TyuQ1lE2sDrW626A
 
-正则表达式太慢？这里有一个提速100倍的方案：FlashText
+神奇的面包机！谷歌造出对抗样本的实体版
 
-https://mp.weixin.qq.com/s/dsxyQLHcOsNIlNAIf8FQfw
+https://mp.weixin.qq.com/s/FNQSLPHQSHSkDipREE702A
 
-Facebook开源相似性搜索类库Faiss，超越已知最快算法8.5倍
+利用分布鲁棒优化方法应对对抗样本干扰
 
-https://mp.weixin.qq.com/s/3r8c63BOiiYfts9KLkXovw
+https://mp.weixin.qq.com/s/T--R4c0QfyPS2vrGdyUlOw
 
-谷歌发布自然语言框架语义解析器SLING
+UIUC学者构建欺骗检测器的对抗样本！
 
-https://mp.weixin.qq.com/s/jTXoCaXEhPPVNcJiyjtN5Q
+https://mp.weixin.qq.com/s/fMtuJbWG_d9zyCZ0oYyX_w
 
-谷歌宣布对外开放聊天机器人数据分析平台Chatbase
+经得住考验的“假图片”：用TensorFlow为神经网络生成对抗样本
 
-https://mp.weixin.qq.com/s/MhLissrrNw5fJP6I7cxFNA
+https://mp.weixin.qq.com/s/dWIhQVPNi9SlzuhMiatEVQ
 
-360推出XLearning：可支持多种机器学习，深度学习框架调度系统！
+几张贴纸就让神经网络看不懂道路标志，伯克利为真实环境生成对抗样本
 
-https://mp.weixin.qq.com/s/ZFtUOtb8mxa11zBHYbza9A
+https://mp.weixin.qq.com/s/yfuMacLnj9q-9gpXCUfZhg
 
-动态神经网络工具包Dynet
+PSU提出深度k-最近邻算法：解决深度学习应用的安全漏洞
 
-https://mp.weixin.qq.com/s/KKy0EBVwrdAgqeG07H9vjg
+https://mp.weixin.qq.com/s/oUpoqnUUhMR_zlQqrvdLTw
 
-中科院发布：深度文本匹配开源工具（MatchZoo）
+一文读懂如何用深度学习实现网络安全
 
-https://mp.weixin.qq.com/s/CetbsnDNQiyaV7grWGgJCg
+https://mp.weixin.qq.com/s/bWHaBTaKkjtJec3taFugeQ
 
-谷歌发布机器学习工具库Kubeflow：可提供最佳OSS解决方案
+向人类免疫系统学习，AI如何做到挽救30亿美元的网络犯罪损失？
 
-https://mp.weixin.qq.com/s/3n6HrpIqSbOKZ-ysTcOTWA
+https://mp.weixin.qq.com/s/KNXD-MpVHQRXYvJKTqn6WA
 
-GitHub新项目Deepo：一键安装11项深度学习框架与环境（基于docker）
+完善强化学习安全性：UC Berkeley提出约束型策略优化新算法
 
-https://mp.weixin.qq.com/s/VsJh1Er02lIGZap4QUy6eA
+https://mp.weixin.qq.com/s/AL48Gp4NbGWPrz9I0eBOXA
 
-PyTorch实现的神经网络翻译框架——机器翻译工具包nmtpytorch
+“房间里的大象“：让目标检测器一脸懵逼
 
-https://mp.weixin.qq.com/s/VBmKPBxWtknWMjLCWcoGjA
+https://mp.weixin.qq.com/s/tk7ghSXi2jz8SYbBeWR8jg
 
-如何用Docker成为更高效的数据科学家？
+神经网络模糊测试：将DNN应用于软件安全测试
 
-https://mp.weixin.qq.com/s/DxNtgyuNzNqpbZ_9k8uflQ
+https://zhuanlan.zhihu.com/p/45695815
 
-谷歌开源机器学习可视化工具Facets：从全新角度观察数据
+华为新论文：将行人重识别准确率从88变到0
 
-https://mp.weixin.qq.com/s/wFfKcwLu6fmnIn-r_QL7Lw
+https://mp.weixin.qq.com/s/Um6U-hjZ8I-awDinHXaQLg
 
-完全云端运行：使用谷歌CoLaboratory训练神经网络
+三维对抗样本的生成方法MeshAdv，成功欺骗真实场景中的分类器和目标检测器
 
-https://mp.weixin.qq.com/s/-3Gmmk28anznxtg1TWrluw
+https://mp.weixin.qq.com/s/tWKGLntwXyePZcJsZ30K3A
 
-Parris：机器学习算法自动化训练工具
+神经网络太好骗？清华团队如何做到打NIPS攻防赛得3冠军的
 
-https://mp.weixin.qq.com/s/5ScRIl2MHNGaUyIEJJKnKw
+https://mp.weixin.qq.com/s/g1IHOd4S-uKcl3DX131zFg
 
-DeepMind开源强化学习研究环境Control Suite
+“穿墙透视”黑魔法来了！只需WiFi和智能手机就可实现
 
-https://mp.weixin.qq.com/s/ven_4JbWYFswIkGyhjTcww
+https://mp.weixin.qq.com/s/x6KM7iruojEWkWPgXpIAuA
 
-Prophet：教你如何用加法模型探索时间序列数据
+这一次，MIT的科学家让谷歌AI把步枪误认成直升机
 
-https://mp.weixin.qq.com/s/9-svsjeSFyUeM8IYphSsgw
+https://mp.weixin.qq.com/s/OjpIeAdPTeOpYa5T0h992A
 
-Darkon：可更好理解深度学习模型的开源工具包
+只需修改一个像素，让神经网络连猫都认不出
 
-https://mp.weixin.qq.com/s/JW4QXHzuCkYNV6Y_k3bsFw
+https://mp.weixin.qq.com/s/Jmlia3v5P8UzG-MEuIMULQ
 
-整合全部顶尖目标检测算法：FAIR开源Detectron
+对抗攻击的12种攻击方法和15种防御方法
 
-https://mp.weixin.qq.com/s/kL1bhjdTc1wyYEL4KJqDpg
+https://mp.weixin.qq.com/s/Jhi9TWQqhJIyG7cakgo2Xg
 
-Detectron精读系列之一：学习率的调节和踩坑
+修改一个像素，就能让神经网络识别图像出错
 
-http://mp.weixin.qq.com/s/TByhSlSbVU5oHqLTLIJgwA
+https://mp.weixin.qq.com/s/uI5gUGtiR8VDXreU4YEZYA
 
-NiftyNet：开源的卷积神经网络和医疗影像分析平台
+MILA提出防御增强型网络：简单修改已有网络即可提升防攻击能力
 
-https://mp.weixin.qq.com/s/TvKUa4DSzPb0ASubGadwEA
+https://mp.weixin.qq.com/s/Ffaotx83qRJS1s-bbMt1UA
 
-上交大推出Texygen：文本生成模型的基准测试平台
+一点微小的扰动，就可能导致深度神经网络做出错误判断
 
-https://mp.weixin.qq.com/s/EfqE3wbPRDffQKXTG4tdkQ
+https://mp.weixin.qq.com/s/tXr9NhVfBSvI5pduziIECQ
 
-用好这几款炼丹利器，调参从此得心应手
+基于深度学习的二进制恶意样本检测
 
-https://mp.weixin.qq.com/s/2GEcD5kzqBtpPdXkhxksNw
+https://mp.weixin.qq.com/s/x8ykOA9CeX3FCz0WCeySng
 
-Facebook发布Tensor Comprehensions：自动编译高性能机器学习核心的C++库 
+AI生成假指纹以假乱真，你的指纹识别还安全吗？
 
-https://mp.weixin.qq.com/s/Rutl-aVbxTu39J0vWHbz-w
+## 行业
 
-Keras作者力推开源框架Lore：15分钟搞定深度学习模型从配置到部署
+李开复的这篇文章不可不读：
 
-https://mp.weixin.qq.com/s/TZQcN8rYSc2tH8C1UvyF4g
+https://mp.weixin.qq.com/s/OLIO4UIZUuzjX5oQbn3Tug
 
-从预处理到部署：如何使用Lore快速构建机器学习模型
+拥抱人工智能的中国：现状和展望（上）
 
-https://mp.weixin.qq.com/s/7g81BnGAD5DpS_1pDxA6QQ
+https://mp.weixin.qq.com/s/KbKlgRAfjP_39WdXh7gOLg
 
-Uber开源神经进化算法开发的交互式可视化工具VINE
+拥抱人工智能的中国：现状和展望（下）
 
-https://mp.weixin.qq.com/s/b6wIxn1faieAR2ioU-UxTQ
+https://mp.weixin.qq.com/s/hoo34-eMcYV7hV6LFbJqcg
 
-IBM全新机器学习库SnapML：训练提速46倍，40亿样本仅需91.5秒
+10分钟带你读完人工智能的三生三世
 
-https://mp.weixin.qq.com/s/SUz2aqz9VM3xnvKUL80y1w
+https://mp.weixin.qq.com/s/yAC6VTOl3jAxjUT0QbTVrw
 
-IBM、哈佛联合提出Seq2Seq-Vis：机器翻译模型的可视化调试工具
+为什么要在边缘设备部署机器学习？
 
-https://mp.weixin.qq.com/s/FXWhnmelkjkrSBo-zVpBLw
+https://mp.weixin.qq.com/s/YnOFJIf-l6CxSWdxIJn1FA
 
-可视化工具Yellowbrick：超参与行为的可视化带来更优秀的实现
+与一年一届的CVPR相比，两年一届的ICCV、ECCV有什么不同？
 
-https://mp.weixin.qq.com/s/f3pRA_lyT5jfzWimy6CleA
+http://mp.weixin.qq.com/s/oBy_Xl7FSBUd46H9E8yUbA
 
-TensorEditor：一个小白都能快速玩转的神经网络搭建工具
+AI博士五星指南：入行自评，选大公司还是初创企业
 
-https://mp.weixin.qq.com/s/PD13jQ_00QJ-VOUM8Zm21g
+## 面试
 
-深度学习图像标注工具汇总
+https://mp.weixin.qq.com/s/U5hlr69m_9Znwjkj3Yl4Hg
 
-https://mp.weixin.qq.com/s/KxeIeVzyhfFCRfqxF4mduA
+《深度学习500问》一份超全深度学习资料，面试必备！
 
-当深度学习遇见大数据：一文概览BDL学习框架
+https://www.zhihu.com/question/41233373
 
-https://mp.weixin.qq.com/s/K7m7IGwD2Y_ffP9OvMFPMA
+如果你是面试官，你怎么去判断一个面试者的深度学习水平？
 
-TensorFlow推出新工具Seedbank：即刻使用的预训练模型库
+https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
 
-https://mp.weixin.qq.com/s/4mZjdFL68V_OXKCkZ72KrQ
+20万、50万、100万的算法工程师，到底有什么区别？
 
-谷歌BigQuery ML正式上岗，只会用SQL也能玩转机器学习！
+https://www.zhihu.com/question/56676679/answer/151505274
 
-https://mp.weixin.qq.com/s/XSOhG9JGLIhdASAJKHi9mg
+机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
 
-国产开源项目也能用SQL解决机器学习问题！与谷歌BigQuery ML有何不同？
+https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
 
-https://mp.weixin.qq.com/s/q4Q8uInrFT9IPN0gF928kA
+面试官是如何看出你机器学习水平的？
 
-日立开源语义分割数据集标注工具Semantic Segmentation Editor
+https://mp.weixin.qq.com/s?__biz=MzI3NTA0MzM1OQ==&mid=2651615534&idx=1&sn=00ecd7dc1d8472c070e720a1b63f04c4
 
-https://mp.weixin.qq.com/s/PxYG7VxpCw0G3r_PpxVuoQ
+我如何考察面试者的机器学习水平
 
-Kaggle放大招：简单几步实现海量数据分析及可视化
+https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
 
-https://mp.weixin.qq.com/s/Bcxeq1BVDyw1Jc3G4MNR4g
+谷歌等巨头机器学习面试题：从逻辑回归到智力测验
 
-斯坦福开源Weld：高效实现数据分析的端到端优化
+https://mp.weixin.qq.com/s/9ivDZXpPpLE3fuPgpNUyJA
 
-https://mp.weixin.qq.com/s/Jv0yDTrXhBbuzzTupBmw5A
+超全数据科学与机器学习面试指南
 
-OpenCV开发团队开源计算机视觉标注工具CVAT
+https://mp.weixin.qq.com/s/qmdfLlTfQzT0QVq_SzEPUw
 
-https://mp.weixin.qq.com/s/lgzi1l-fhwvwAsjHvn9wYg
+机器学习和深度学习中值得弄清楚的一些问题
 
-开源Featuretools：机器学习开发提速10倍！
+## 光神经网络
 
-https://mp.weixin.qq.com/s/tgUguHC56FjgBdUGyg8yRg
+https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ
 
-Oracle开源GraphPipe：几行代码让你在TensorFlow部署PyTorch模型
+3D打印的深度神经网络，光速执行AI运算
 
-https://mp.weixin.qq.com/s/e8BUqCvnfHaLFQMSO1lVkw
+https://mp.weixin.qq.com/s/5zt8UIpNBcgNZpwHHJj68Q
 
-腾讯AI Lab提出自动化模型压缩框架PocketFlow：将深度学习装进口袋
+光学CNN层替换传统CNN层，超省电
 
-https://mp.weixin.qq.com/s/Tm3jrPmaQhP0Wqri8uVo8A
+https://mp.weixin.qq.com/s/IheyYAC1yIigYOW-gtc5Eg
 
-腾讯AI Lab开源模型压缩与加速框架PocketFlow
+Science重磅！用光速实现深度学习，跟GPU说再见
 
-https://mp.weixin.qq.com/s/eRDdspv7T-Kvm4Zue4RZnA
+https://mp.weixin.qq.com/s/ENYX87SMlgv30x08iYFQIw
 
-领英开源TonY：构建在Hadoop YARN上的TensorFlow框架
+几乎零能耗零延迟！UCLA科学家发明光衍射神经网络，登上Science
 
-https://mp.weixin.qq.com/s/--EnBghI4yHNf9WAToKdOw
+## AI与UI
 
-Petuum&CMU开源Texar：一个模块化、多功能、可扩展的文本生成工具包
+https://mp.weixin.qq.com/s/bGbslnuG80S6gPwD4FHuMg
 
-https://mp.weixin.qq.com/s/n8wbUgmV873fZw5MI43ljg
+深度学习助力前端开发：自动生成GUI图代码
 
-简化数据获取！Uber开源深度学习分布训练库Petastorm
+https://mp.weixin.qq.com/s/PhgIy4UaBLh_pOO8OH2c4g
 
-https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247505558&idx=5&sn=bc37e5021c598630795e513876feef8b
+复杂GUI也能搞定！西安交通大学提出前端设计图自动转代码新方法
 
-微软又开源了一个机器学习框架，这次是核心产品的机器学习引擎infer.NET
+https://mp.weixin.qq.com/s/4b4TPkIRPJ3VBkCOA6kbxw
 
-https://mp.weixin.qq.com/s/ad8iysdj9JeYxC8TcpoJLg
+前端慌不慌？用深度学习自动生成HTML代码
 
-基于网页的图像标注工具——imglab
+https://mp.weixin.qq.com/s/tjnpIYJGmrTLGUsdtBI2Vw
+
+AI设计师“鹿班”核心技术公开：如何1秒设计8000张海报？
+
+https://mp.weixin.qq.com/s/lEaq8NylJG4bUY2YupZh0g
+
+5秒钟内将手绘网站线框图转换为可用的HTML网站
+
+https://mp.weixin.qq.com/s/FuHDkcCDib5oc_XPDNnytQ
+
+阿里AI设计师一秒出图，小撒连连惊呼，真相是...
+
+https://mp.weixin.qq.com/s/empXVsgqe6OljVa1Hduigw
+
+前端开发者的福音：根据UI设计图自动生成GUI骨架代码

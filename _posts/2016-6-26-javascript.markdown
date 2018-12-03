@@ -124,6 +124,10 @@ https://mp.weixin.qq.com/s/PkwL5ExoMroYP7kLZYf-MA
 
 如何在Docker容器中调试Node.js应用？
 
+https://mp.weixin.qq.com/s/kX23axjtgPRb64jb1HQLOQ
+
+苏宁的Node.js实践：不低于Java的渲染性能、安全稳定迭代快
+
 ## NPM
 
 npm是node.js的软件包管理工具。它的官网是：
@@ -214,9 +218,15 @@ Electron与NW.js差异主要是：
 
 http://molunerfinn.com/Electron-vs-nwjs/
 
+Electron vs nwjs
+
 http://www.yhz.me/blog/Packaging-Electron-win32.html
 
+Electron打包成windows桌面程序
+
 https://github.com/electron/electron/blob/master/docs/development/atom-shell-vs-node-webkit.md
+
+Technical Differences Between Electron and NW.js (formerly node-webkit)
 
 ## CEF
 
@@ -315,14 +325,3 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/hello
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/hello/super_button3.html
 
 这里还解决了Step2的一个Bug。在Step2中，每点击一次按钮，就会添加一次AnimationEnd事件处理函数，但是新添加的函数并不会覆盖原来的事件处理函数。而是在原来的事件处理函数之后，执行新添加的事件处理函数。利用console.log可以很容易的确认这一点。
-
-因此，AnimationEnd事件处理函数仅需要在开始时，添加一次即可。
-
-Step3还添加了fadeOutLeft动画，为了在两种动画之间切换，引入了全局变量flag，作为状态变量。
-
-由于JS事件处理函数，不能传递参数。因此，也就不能很方便的将动画开始播放时的flag值传递过去，留待动画结束时使用。所以，flag值只有在所有动画都结束之后，才能改变。
-
-这里通过添加引用计数的方法，来判定所有动画是否都已结束。不用担心引用计数的临界问题，因为JS是单线程执行的。
-
-此外，还要注意display和opacity的差异，前者如果不显示了，就会彻底消失，而后者不显示时，仍然还会占据它原来所在的位置。
-

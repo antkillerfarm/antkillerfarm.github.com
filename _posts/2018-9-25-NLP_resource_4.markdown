@@ -333,3 +333,7 @@ https://mp.weixin.qq.com/s/TjFzJVOowfceHwJNUItcxQ
 https://mp.weixin.qq.com/s/r9WRkmApBaHvlCQ5F5ypjg
 
 神奇的神经机器翻译：从发展脉络到未来前景
+
+https://mp.weixin.qq.com/s/2zFOjOuDKo--wTvu5rVWNw
+
+基于局内去噪和迁移学习的关系抽取

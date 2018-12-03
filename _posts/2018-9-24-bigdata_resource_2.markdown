@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  大数据平台参考资源（二）, 知名数据集（二）
+title:  大数据平台参考资源（二）, 知名数据集（二）, 有用的网址集合（二）
 category: resource 
 ---
 
@@ -93,6 +93,10 @@ https://mp.weixin.qq.com/s/LXcWMwxgk3SXDI1cI_Kg8w
 https://mp.weixin.qq.com/s/Y4MtwJsbGWx3XqajGV3ZpA
 
 每日生产万亿消息数据入库，腾讯如何突破大数据分析架构瓶颈
+
+https://mp.weixin.qq.com/s/DIaBHRoJs7z1ZOOpF5p9qQ
+
+跨境物流链路怎么做？菜鸟工程师打造了全球通关“神器”
 
 # 知名数据集
 
@@ -240,3 +244,20 @@ https://github.com/wecatch/china_regions
 
 最全最新中国省，市，地区json及sql数据
 
+# 有用的网址集合
+
+https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126
+
+前端安全系列之一：如何防止XSS攻击？
+
+https://mp.weixin.qq.com/s?__biz=MzIyNzUwMjM2MA==&mid=2247485942&idx=1&sn=1597233c1527cac63a2c734ec0b14f02
+
+编程基础知识
+
+https://mp.weixin.qq.com/s?__biz=MzIyNzUwMjM2MA==&mid=2247486006&idx=1&sn=d4978396fa18e5dfce69a51ac7748898
+
+网络编程基础知识
+
+https://mp.weixin.qq.com/s/EPWRwOBT8_616R5RWbdaTQ
+
+一家公司到底有多少种管理系统？——从包罗万象到术业专攻

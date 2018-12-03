@@ -182,6 +182,10 @@ https://zhuanlan.zhihu.com/p/50521715
 
 云从科技在自然场景OCR任务取得技术突破
 
+https://zhuanlan.zhihu.com/p/51397423
+
+SPCNet
+
 # 元学习
 
 人工智能的历史显示了明确的进展方向：

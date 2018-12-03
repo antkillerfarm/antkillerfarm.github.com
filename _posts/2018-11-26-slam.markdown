@@ -300,7 +300,7 @@ https://mp.weixin.qq.com/s/QQednlKYl6t3aO0xCzgGmA
 
 带你轻松使用TensorFlow创建大型线性模型
 
-# DL参考资源
+# DL参考资源+
 
 https://mp.weixin.qq.com/s/Sb_kPgtwyQFWloDT3707TA
 

@@ -14,7 +14,7 @@ Spring等框架中，有很多配置项是以注释（annotation）的形式出�
 
 http://www.open-open.com/lib/view/open1353144218545.html
 
-全面解析Java注解 
+全面解析Java注解
 
 还有一个叫做ADP4J用于简化处理注释。参见：
 
@@ -228,7 +228,17 @@ https://www.kodugamelab.com/
 
 # Javascript
 
-## CSS动画（续）
+### Step3:延迟动画（续）
+
+因此，AnimationEnd事件处理函数仅需要在开始时，添加一次即可。
+
+Step3还添加了fadeOutLeft动画，为了在两种动画之间切换，引入了全局变量flag，作为状态变量。
+
+由于JS事件处理函数，不能传递参数。因此，也就不能很方便的将动画开始播放时的flag值传递过去，留待动画结束时使用。所以，flag值只有在所有动画都结束之后，才能改变。
+
+这里通过添加引用计数的方法，来判定所有动画是否都已结束。不用担心引用计数的临界问题，因为JS是单线程执行的。
+
+此外，还要注意display和opacity的差异，前者如果不显示了，就会彻底消失，而后者不显示时，仍然还会占据它原来所在的位置。
 
 ### JS细节
 
@@ -381,25 +391,3 @@ perl的语法和C差别不算太大，好多语法大致上从关键字也可以
 `%name`：哈希数组name。
 
 perl的包管理器叫做cpan。这实际上也是该工具网站的名字。
-
-# DL参考资源
-
-https://mp.weixin.qq.com/s/b7QSUeHb2fYTKk3e3V00uA
-
-担心面部识别泄露隐私？多伦多大学图像“隐私过滤器”了解一下
-
-https://mp.weixin.qq.com/s/0q5nWOm5JVrpZVAeufmLPw
-
-卷积神经网络十五问：CNN与生物视觉系统的研究探索
-
-https://mp.weixin.qq.com/s/gmNVS0_yc-c7VaB9r-w9bQ
-
-为什么我的CNN石乐志？我只是平移了一下图像而已
-
-https://mp.weixin.qq.com/s/KRttAyx7YW1vkmzo1w1fAg
-
-教机器遗忘或许比学习更重要：让AI健忘的三种方式
-
-https://mp.weixin.qq.com/s/0jPuPBDokan6B_OltKp9mw
-
-德国本届世界杯胜算最大？帕绍大学基于ELO评级预测

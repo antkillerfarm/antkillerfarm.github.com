@@ -268,6 +268,14 @@ https://mp.weixin.qq.com/s/LkDcohFvQab4LY7B1Xg0Mw
 
 简析缝隙检测算法新思路
 
+https://mp.weixin.qq.com/s/GnZRurbPNdouTKu3JG7drQ
+
+深度学习美颜系列---AI美颜磨皮算法
+
+https://mp.weixin.qq.com/s/-Vde_zdmLaF-2F4IRJQuBw
+
+一文道尽传统图像降噪方法
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。

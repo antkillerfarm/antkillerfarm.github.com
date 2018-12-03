@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  有用的网址集合
+title:  有用的网址集合（一）
 category: resource 
 ---
 
@@ -49,6 +49,10 @@ http://academic.research.microsoft.com/
 http://cn.arxiv.org/
 
 最著名的论文网站arxiv.org的中国镜像网站。arxiv.org中的论文都有编号。比如1608.06993v4，1608表示这是2016年8月的文章，v4表示这是第4版。
+
+https://github.com/CyC2018/CS-Notes
+
+一个在校生编写的CS方面的note。star超过42k。
 
 ## 工具软件及其官网
 
@@ -432,22 +436,6 @@ https://mp.weixin.qq.com/s/m44zVWMvactsLPjKsFnlSg
 
 RAII惯用法：C++资源管理的利器
 
-https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126
-
-前端安全系列之一：如何防止XSS攻击？
-
-https://mp.weixin.qq.com/s?__biz=MzIyNzUwMjM2MA==&mid=2247485942&idx=1&sn=1597233c1527cac63a2c734ec0b14f02
-
-编程基础知识
-
-https://mp.weixin.qq.com/s?__biz=MzIyNzUwMjM2MA==&mid=2247486006&idx=1&sn=d4978396fa18e5dfce69a51ac7748898
-
-网络编程基础知识
-
-https://mp.weixin.qq.com/s/EPWRwOBT8_616R5RWbdaTQ
-
-一家公司到底有多少种管理系统？——从包罗万象到术业专攻
-
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/
@@ -469,4 +457,3 @@ ftp://mirrors.ustc.edu.cn/gnu/
 GNOME
 
 http://ftp.gnome.org/pub/GNOME/sources/
-
