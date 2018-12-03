@@ -102,6 +102,10 @@ https://mp.weixin.qq.com/s/tZjIdNSLvIVzho-IlCvm6A
 
 93页随机近似与强化学习教程分享
 
+https://mp.weixin.qq.com/s/o1wLREqtIZpzH2NxLl9M7A
+
+深度强化学习简介
+
 ## 论文
 
 《A Brief Survey of Deep Reinforcement Learning》

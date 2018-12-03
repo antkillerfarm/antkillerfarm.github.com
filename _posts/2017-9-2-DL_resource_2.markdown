@@ -276,6 +276,10 @@ https://mp.weixin.qq.com/s/ojlhC7vGB1r6scKipm0BjA
 
 小样本如何进行深度学习？西北工夏勇教授这一份54页《医学影像小数据深度学习》PPT为你讲解
 
+https://mp.weixin.qq.com/s/xi_iIr6NdC3QOpjypx3pGg
+
+AlphaGo之后，DeepMind重磅推出AlphaFold：基因序列预测蛋白质结构
+
 ## 遗传算法 & 进化算法
 
 http://blog.csdn.net/u010945683/article/details/40987331

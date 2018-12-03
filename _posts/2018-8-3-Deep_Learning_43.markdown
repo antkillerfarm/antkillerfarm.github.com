@@ -228,6 +228,10 @@ https://mp.weixin.qq.com/s/b3EVdPGY2jxliwdbbB1kcQ
 
 “史上最强GAN图像生成器”BigGAN的demo出了！
 
+https://mp.weixin.qq.com/s/kSyXd5dgdEcqupDeouhObQ
+
+BigGAN论文解读
+
 https://mp.weixin.qq.com/s/MPdGF2-cJbNcvaEx-2BnFg
 
 把2D公路变成3D飞车游戏，MIT、清华打破图像编辑的次元壁

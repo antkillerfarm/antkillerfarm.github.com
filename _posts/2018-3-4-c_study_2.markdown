@@ -425,3 +425,7 @@ https://mp.weixin.qq.com/s/rE5OEFwwFxJNb_Omwmqvzw
 https://blog.csdn.net/longerzone/article/details/17889969
 
 Python下调用Linux的Shell命令
+
+https://mp.weixin.qq.com/s/fBz__E2Xu4GC7w1Uqx5NAA
+
+手把手教你如何用Python从PDF文件中导出数据

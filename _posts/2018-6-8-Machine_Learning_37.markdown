@@ -202,6 +202,10 @@ https://mp.weixin.qq.com/s/i-fE4aISTJ0584aIHJ8R0Q
 
 二阶优化！训练ImageNet仅需35个Epoch
 
+https://mp.weixin.qq.com/s/LY1-F5hEyM40DrvobYRexA
+
+腾讯AI Lab&北大提出基于随机路径积分的差分估计子非凸优化方法
+
 # 推荐系统进阶
 
 除了《机器学习（十五～十六）》提及的ALS和PCA之外，相关的算法还包括：

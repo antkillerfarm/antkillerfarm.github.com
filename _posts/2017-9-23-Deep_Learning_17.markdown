@@ -256,6 +256,10 @@ https://mp.weixin.qq.com/s/LFOljv-Hr6JqyI6TQ2X4sw
 
 半监督学习也能自动化？南大和第四范式提出Auto-SSL
 
+https://mp.weixin.qq.com/s/83xAXrc_H_OExW3vii08hA
+
+谷歌提出新方法：基于单目视频的无监督深度学习结构化
+
 # 细粒度分类
 
 https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw

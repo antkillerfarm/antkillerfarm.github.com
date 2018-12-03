@@ -14,10 +14,6 @@ https://mp.weixin.qq.com/s/IzijD8Sh3G2WsCz7aaxyhg
 
 TensorFlow深度学习概述
 
-https://github.com/yahoo/TensorFlowOnSpark
-
-TensorFlow On Spark
-
 https://silencezjl.coding.me/2017/05/01/%E5%81%B7%E4%B8%80%E6%B3%A2%E8%B5%84%E6%BA%90/
 
 各种TensorFlow资源
@@ -58,17 +54,9 @@ https://mp.weixin.qq.com/s/JSZwQkyxSSwfBWKJ578j3A
 
 TensorFlow最好的入门文章
 
-https://mp.weixin.qq.com/s/5wy6yqaW_9pMBhgw8qDdOQ
-
-基于TensorFlow打造强化学习API
-
 https://mp.weixin.qq.com/s/68vaQRqUo8u09iheKzFVEw
 
 玩转TensorFlow深度学习
-
-https://mp.weixin.qq.com/s/7er3wNV_IhxhFDOIwNMpww
-
-深度强化学习入门：用TensorFlow构建你的第一个游戏AI
 
 https://mp.weixin.qq.com/s/Es_5KUnkDzMwf_8WD8aW3g
 
@@ -82,6 +70,26 @@ https://mp.weixin.qq.com/s/RR3EEI8vm05EZSd7dGU__A
 
 史上最全的Tensorflow学习资源汇总，速藏！
 
+https://mp.weixin.qq.com/s/w4uo9Uodmud4FhqxRNanUw
+
+TensorFlow 指南：GPU的使用
+
+https://mp.weixin.qq.com/s/gnDTOLWuPZiCVzspTk_zCQ
+
+TensorFlow轻度入门
+
+https://mp.weixin.qq.com/s/5wy6yqaW_9pMBhgw8qDdOQ
+
+基于TensorFlow打造强化学习API
+
+https://github.com/yahoo/TensorFlowOnSpark
+
+TensorFlow On Spark
+
+https://mp.weixin.qq.com/s/7er3wNV_IhxhFDOIwNMpww
+
+深度强化学习入门：用TensorFlow构建你的第一个游戏AI
+
 https://mp.weixin.qq.com/s/jMPVl3CWvL7MSzq5F12YxQ
 
 维度、广播操作与可视化：如何高效使用TensorFlow
@@ -93,10 +101,6 @@ https://mp.weixin.qq.com/s/OmVAnkHV2aI4D4pMKyVjCQ
 https://mp.weixin.qq.com/s/YOyOR8fdaEKcydAywcc-HA
 
 如何使用TensorFlow API构建视频物体识别系统
-
-https://mp.weixin.qq.com/s/gnDTOLWuPZiCVzspTk_zCQ
-
-TensorFlow轻度入门
 
 https://mp.weixin.qq.com/s/MYBTWL3X_OhLZL6C4rISzw
 
