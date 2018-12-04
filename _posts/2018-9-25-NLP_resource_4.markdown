@@ -337,3 +337,7 @@ https://mp.weixin.qq.com/s/r9WRkmApBaHvlCQ5F5ypjg
 https://mp.weixin.qq.com/s/2zFOjOuDKo--wTvu5rVWNw
 
 基于局内去噪和迁移学习的关系抽取
+
+https://mp.weixin.qq.com/s/cFKZxtlAAABWn8CgXJz4kA
+
+多内容实体和关系联合抽取的对抗训练

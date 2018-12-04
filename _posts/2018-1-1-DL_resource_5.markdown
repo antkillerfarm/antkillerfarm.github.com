@@ -195,3 +195,15 @@ https://mp.weixin.qq.com/s/KRttAyx7YW1vkmzo1w1fAg
 https://mp.weixin.qq.com/s/0jPuPBDokan6B_OltKp9mw
 
 德国本届世界杯胜算最大？帕绍大学基于ELO评级预测
+
+https://mp.weixin.qq.com/s/o2A9yo6lIWTphf3jLviyEg
+
+用狗的数据训练AI，华盛顿大学研发模拟狗行为的AI系统
+
+https://mp.weixin.qq.com/s/KTBC1VBj7V7pjQ9JVCn7fQ
+
+新加坡国立大学论文：利用互补几何模型改善运动分割
+
+https://mp.weixin.qq.com/s/19U2Rhwgj5NoB0esKyxSyA
+
+神经网络告诉我，谁是世界上最“美”的人？
