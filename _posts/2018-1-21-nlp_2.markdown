@@ -358,6 +358,10 @@ https://mp.weixin.qq.com/s/vVwBEzPyXAX1ObZ6IU8XeQ
 
 Flink如何取代JStorm，成为字节跳动流处理唯一标准？
 
+https://mp.weixin.qq.com/s/zeIcY_JknIo9-hR7UTxvrA
+
+从Storm到Flink：大数据处理的开源系统及编程模型
+
 # Pulsar
 
 https://mp.weixin.qq.com/s/O8pj4pChyw8PK-G_4A3DWg

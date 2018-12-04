@@ -106,6 +106,10 @@ Anaconda多环境多版本python配置指导
 
 `source venv/bin/activate`
 
+退出：
+
+`deactivate`
+
 ## NumPy
 
 NumPy是python语言所有数学计算库的基础。它主要提供了矩阵运算的功能。

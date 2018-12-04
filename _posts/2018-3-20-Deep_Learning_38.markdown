@@ -367,3 +367,7 @@ https://zhuanlan.zhihu.com/p/51202503
 https://mp.weixin.qq.com/s/iBWjobr9srhB3MTiE_Wwmg
 
 史上最强Atari游戏通关算法：蒙特祖玛获分超过200万！
+
+https://mp.weixin.qq.com/s/S2eGPTON3XmfN830m4vaaA
+
+腾讯AI Lab：可自适应于不同环境和任务的强化学习方法

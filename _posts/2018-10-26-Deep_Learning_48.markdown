@@ -377,3 +377,7 @@ https://mp.weixin.qq.com/s/oY2yGrTmIpr3H2qvzYKInA
 https://mp.weixin.qq.com/s/VMHyEOn8uyRYt39QXVWUww
 
 西湖大学张岳：自然语言处理中的多任务联合学习（384页PPT）
+
+https://mp.weixin.qq.com/s/5zo-2WB9v2hOvKAC7ZhKuQ
+
+基于学习的多任务框架L2MT，为多任务问题选择最优模型

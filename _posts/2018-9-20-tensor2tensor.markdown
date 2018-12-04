@@ -411,3 +411,7 @@ https://mp.weixin.qq.com/s/N2OP1uX7JjfIJQ_B4NHKpw
 https://github.com/jinfagang/rl_atari_pytorch
 
 ReinforcementLearning Learn Play Atari Using DDPG and LSTM.
+
+https://mp.weixin.qq.com/s/bJigyEv6iNDp799KlHsclg
+
+TensorFlow 不仅用于机器学习，还能模拟偏微分方程（水滴特效）

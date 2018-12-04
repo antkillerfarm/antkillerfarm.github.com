@@ -174,6 +174,10 @@ https://mp.weixin.qq.com/s/nHEyJLU18AE-SatW9HKeOw
 
 Word2Vec——深度学习的一小步，自然语言处理的一大步
 
+https://www.zhihu.com/question/290088641/answer/543419468
+
+CNN文本分类中是否可以使用字向量代替词向量？
+
 # RNN
 
 ## RNN的基本结构
