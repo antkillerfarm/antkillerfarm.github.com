@@ -215,3 +215,15 @@ AI距离匹敌人类大脑还有多远？人工神经网络和生物神经网络
 http://mp.weixin.qq.com/s/UKu9T5zS1Z2dfNB1YsYGkQ
 
 NEAT学习：教机器自我编程
+
+https://mp.weixin.qq.com/s/o2A9yo6lIWTphf3jLviyEg
+
+用狗的数据训练AI，华盛顿大学研发模拟狗行为的AI系统
+
+https://mp.weixin.qq.com/s/KTBC1VBj7V7pjQ9JVCn7fQ
+
+新加坡国立大学论文：利用互补几何模型改善运动分割
+
+https://mp.weixin.qq.com/s/19U2Rhwgj5NoB0esKyxSyA
+
+神经网络告诉我，谁是世界上最“美”的人？

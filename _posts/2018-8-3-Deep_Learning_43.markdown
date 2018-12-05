@@ -264,6 +264,10 @@ https://mp.weixin.qq.com/s/OmSb1dl9smyZt_uASOcofQ
 
 人人都是画家：朱俊彦&周博磊等人的GAN画笔帮你开启艺术生涯
 
+https://mp.weixin.qq.com/s/7xGtUHfk_FNpDTksLxKaHw
+
+杨超越的声音+高晓松的脸~如此酸爽的技术，你值得拥有！
+
 # Graph NN
 
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
@@ -377,4 +381,3 @@ https://mp.weixin.qq.com/s/TGuEvNXw_9S5-9a3KyDvvw
 https://mp.weixin.qq.com/s/zg3yW7e4UKIs9-m6WmcbvA
 
 GraphWave：一种全新的无监督网络嵌入方法
-

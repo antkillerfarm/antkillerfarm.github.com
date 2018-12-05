@@ -346,3 +346,6 @@ https://mp.weixin.qq.com/s/UZbt1E6QntwtWWvJfTL3eQ
 
 车万翔：任务型对话系统研究进展
 
+https://mp.weixin.qq.com/s/cFKZxtlAAABWn8CgXJz4kA
+
+多内容实体和关系联合抽取的对抗训练
