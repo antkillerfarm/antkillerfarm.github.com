@@ -344,6 +344,10 @@ https://mp.weixin.qq.com/s/3j367YCViJtY9iB386p8jA
 
 简洁易用可扩展，一个基于深度学习的CTR模型包
 
+https://mp.weixin.qq.com/s/hxwyVCjK40urSTUZoDsQig
+
+Deep Neural Network for YouTube Recommendations
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

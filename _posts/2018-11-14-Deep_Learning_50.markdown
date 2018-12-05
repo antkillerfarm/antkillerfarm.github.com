@@ -286,6 +286,10 @@ https://zhuanlan.zhihu.com/p/40920384
 
 真正的完全图解Seq2Seq Attention模型
 
+https://mp.weixin.qq.com/s/RLxWevVWHXgX-UcoxDS70w
+
+细讲《Attention Is All You Need》
+
 https://mp.weixin.qq.com/s/HquT_mKm7x_rbDGz4Voqpw
 
 阿里巴巴最新实践：TVM+TensorFlow提高神经机器翻译性能

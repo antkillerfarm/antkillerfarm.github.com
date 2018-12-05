@@ -311,3 +311,7 @@ Facebook新研究优化硬件浮点运算，强化AI模型运行速率
 https://mp.weixin.qq.com/s/nEMvoiqImd0RxrskIH7c9A
 
 仅17 KB、一万个权重的微型风格迁移网络！
+
+https://mp.weixin.qq.com/s/pc8fJx5StxnX9it2AVU5NA
+
+基于手机系统的实时目标检测

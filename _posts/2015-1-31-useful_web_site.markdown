@@ -436,6 +436,10 @@ https://mp.weixin.qq.com/s/m44zVWMvactsLPjKsFnlSg
 
 RAII惯用法：C++资源管理的利器
 
+https://mp.weixin.qq.com/s/rPZsFyJkoYjqwxjcMnivOQ
+
+微信小程序开发
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

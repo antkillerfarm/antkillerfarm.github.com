@@ -278,6 +278,10 @@ https://mp.weixin.qq.com/s/Z_QVN7OCLqeyMrwK3Sc7qA
 
 AI芯片和传统芯片的区别
 
+https://mp.weixin.qq.com/s/mMiAGH2Yz42xes7jicyygA
+
+“超级芯片”或在十年内诞生，摩尔定律再续一命！（自旋电子逻辑器件“MESO器件”）
+
 # 传感器
 
 这里主要讨论自动驾驶方面的传感器，但也包括了一些非自动驾驶类的传感器知识。
@@ -351,21 +355,3 @@ https://mp.weixin.qq.com/s/NrNojDc9gEU3F_GybKA67Q
 https://mp.weixin.qq.com/s/2TKkoWZcYVVvlEKvA6iNyA
 
 近年值得关注的新兴MEMS和传感器技术
-
-# DL参考资源
-
-https://mp.weixin.qq.com/s/oltHCTombWE2WP_zbbOr3A
-
-Deep Learning之训练过程中出现NaN问题
-
-http://mp.weixin.qq.com/s/sIIoGilZgQHn4jDiYzEelw
-
-大咖解读Bengio笔记——邓侃：用深度学习模型，解构并重构人类思维
-
-http://mp.weixin.qq.com/s/Ybq6hSTPpyYQSNGJg1tgeQ
-
-AI距离匹敌人类大脑还有多远？人工神经网络和生物神经网络最详细对比
-
-http://mp.weixin.qq.com/s/UKu9T5zS1Z2dfNB1YsYGkQ
-
-NEAT学习：教机器自我编程

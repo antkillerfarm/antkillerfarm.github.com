@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（四）——YOLO, SSD
+title:  深度目标检测（四）——YOLO, SSD, YOLOv2
 category: Deep Object Detection 
 ---
 
@@ -229,3 +229,45 @@ https://mp.weixin.qq.com/s/hGRZzNzflbed2w4XosC40w
 https://mp.weixin.qq.com/s/vfC1FPi8sjatFh2HMjTEXQ
 
 目标检测算法之SSD
+
+# YOLOv2
+
+面对SSD的攻势，pjreddie不甘示弱，于2016年12月提出了YOLOv2（又名YOLO9000）。YOLOv2对YOLO做了较多改进，实际上更像是SSD的升级版。
+
+论文：
+
+《YOLO9000: Better, Faster, Stronger》
+
+实际上，论文的内容也正如标题所言，主要分为Better, Faster, Stronger三个部分。
+
+## Better
+
+### batch normalization
+
+YOLOv2网络通过在每一个卷积层后添加batch normalization，极大的改善了收敛速度同时减少了对其它regularization方法的依赖（舍弃了dropout优化后依然没有过拟合），使得mAP获得了2%的提升。
+
+### High Resolution Classifier
+
+所有state-of-the-art的检测方法基本上都会使用ImageNet预训练过的模型（classifier）来提取特征，例如AlexNet输入图片会被resize到不足256x256，这导致分辨率不够高，给检测带来困难。所以YOLO(v1)先以分辨率224x224训练分类网络，然后需要增加分辨率到448x448，这样做不仅切换为检测算法也改变了分辨率。所以作者想能不能在预训练的时候就把分辨率提高了，训练的时候只是由分类算法切换为检测算法。
+
+YOLOv2首先修改预训练分类网络的分辨率为448x448，在ImageNet数据集上训练10轮（10 epochs）。这个过程让网络有足够的时间调整filter去适应高分辨率的输入。然后fine tune为检测网络。mAP获得了4%的提升。
+
+### Convolutional With Anchor Boxes
+
+借鉴SSD的经验，使用Anchor方法替代全连接+reshape。
+
+相应的，YOLOv2对于输出向量的编码方式进行了改进，如下图所示：
+
+![](/images/article/yolov2.png)
+
+其主要思路是：将对类别的预测放到anchor box中。
+
+同时，由于分辨率的提高，cell的数量由7x7改为13x13。这样一来就有13x13x9=1521个boxes了。因此，YOLOv2比YOLO在检测小物体方面有一定的优势。
+
+### Dimension Clusters
+
+使用anchor时，作者发现Faster-RCNN中anchor boxes的个数和宽高维度往往是手动精选的先验框（hand-picked priors)，设想能否一开始就选择了更好的、更有代表性的先验boxes维度，那么网络就应该更容易学到准确的预测位置。
+
+解决办法就是统计学习中的K-means聚类方法，通过对数据集中的ground true box做聚类，找到ground true box的统计规律。以聚类个数k为anchor boxs个数，以k个聚类中心box的宽高维度为anchor box的维度。
+
+作者做了对比实验，5种boxes的Avg IOU(61.0)就和Faster R-CNN的9种Avg IOU(60.9)相当。 说明K-means方法的生成的boxes更具有代表性，使得检测任务更好学习。

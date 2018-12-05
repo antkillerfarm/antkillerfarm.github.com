@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十六）——SENet, 李飞飞, 深度ISP, RNN进阶
+title:  深度学习（十六）——SENet, 李飞飞, 深度ISP, RNN进阶, CNN进阶
 category: DL 
 ---
 
@@ -237,3 +237,97 @@ https://mp.weixin.qq.com/s/YbdiEHb8ld1pp1ehgBzTOQ
 https://mp.weixin.qq.com/s/ty8RyPREo_EA7O8vA2pQuQ
 
 AI编曲震撼人心，RNN生成流行音乐
+
+# CNN进阶
+
+http://mp.weixin.qq.com/s/ddTNr-967IahTZ2X1LNSEQ
+
+盘点影响计算机视觉Top100论文：从ResNet到AlexNet
+
+https://mp.weixin.qq.com/s/gwH9s1ggMTj2dJkad9wUuw
+
+从VGG到NASNet，一文概览图像分类网络
+
+https://mp.weixin.qq.com/s/hIAIbpqItS09KDOSFxaeqg
+
+从Inception v1到Inception-ResNet，一文概览Inception家族的“奋斗史”
+
+https://mp.weixin.qq.com/s/r143qYj8bziu_N-27RWRRw
+
+机器学习5年大跃进，可能是个错觉
+
+https://mp.weixin.qq.com/s/pollD4LN_GHJckzJAjwPqg
+
+侧抑制”卷积神经网络，了解一下？
+
+https://mp.weixin.qq.com/s/gil2K-JKzfRqdzc-abnh6A
+
+王井东：深度融合——一种神经网络结构设计模式
+
+https://mp.weixin.qq.com/s/7l0J5LIAawlkCIrUEGG9aA
+
+卷积神经网络“失陷”，CoordConv来填坑
+
+https://mp.weixin.qq.com/s/4GPLeJiQoDfBZJzF4QmuAg
+
+Excel再现人脸识别：CNN用于计算机视觉任务不再神秘
+
+https://mp.weixin.qq.com/s/30_AwwHS0eqfmYwTvRQ85Q
+
+pooling去哪儿了？
+
+https://mp.weixin.qq.com/s/yTkAhje3A0dRSyTobjsm2A
+
+Pervasive Attention：用于序列到序列预测的2D卷积神经网络
+
+https://zhuanlan.zhihu.com/p/31595192
+
+Deep Image Prior：深度卷积网络先天就理解自然图像
+
+https://mp.weixin.qq.com/s/TelGG-uVQyxwQjiDGE1pqA
+
+特征金字塔网络FPN
+
+https://mp.weixin.qq.com/s/6KC1vhKcyqQ0eZEXJyPqVA
+
+密集连接卷积网络
+
+https://mp.weixin.qq.com/s/vUK2NneOs8OR0vcJEZNbrA
+
+田渊栋等人论文：何时卷积滤波器容易学习？
+
+https://mp.weixin.qq.com/s/PiQB2AvhtDceMJxYN8O8jA
+
+通用卷积神经网络交错组卷积
+
+https://mp.weixin.qq.com/s/2w_Bwqx9C9KwenK480sVMQ
+
+如何可视化卷积网络分类图像时关注的焦点
+
+https://mp.weixin.qq.com/s/yQG0983RjQHIkt9oBlkDqQ
+
+瞎谈CNN：通过优化求解输入图像
+
+http://mp.weixin.qq.com/s/5ozeLeF6IyKTOqAxYEdaog
+
+山东大学提出PointCNN：让CNN更好地处理不规则和无序的点云数据
+
+https://zhuanlan.zhihu.com/p/33445638
+
+传统不死：在CNN中学习和构建空间传播模块
+
+https://mp.weixin.qq.com/s/mtocyqpybSEpwekS20xgmQ
+
+使用CNN生成图像先验，实现更广泛场景的盲图像去模糊
+
+https://mp.weixin.qq.com/s/Uc0VFMmYoOFvH0c7IExKIg
+
+何恺明团队计算机视觉最新进展：从特征金字塔网络、Mask R-CNN到学习分割一切
+
+https://mp.weixin.qq.com/s/W2DqCjmF3oyPLKeETAO5XA
+
+CNN实现“读脑术”，成功解码人脑视觉活动，准确率超50%
+
+https://mp.weixin.qq.com/s/t9ZHW8fkWtnvpM7ynJOTDw
+
+从语义上理解卷积核行为，UCLA朱松纯等人使用决策树量化解释CNN

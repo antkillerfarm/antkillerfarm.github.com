@@ -152,6 +152,10 @@ https://mp.weixin.qq.com/s/KLTSUqprwfFBVeVIP7HJRw
 
 # 无监督/半监督/自监督深度学习
 
+https://mp.weixin.qq.com/s/L4GQF0eE7MjLPrb8UygCww
+
+无监督深度学习全景教程（193页PDF）
+
 https://mp.weixin.qq.com/s/kbqTHIOzAj1aERl4tm-kVA
 
 2017上半年无监督特征学习研究成果汇总
@@ -301,38 +305,3 @@ Object-Part Attention Model for FGVC
 https://mp.weixin.qq.com/s/slmod5rW4qRhxGnbNN2J8g
 
 双线性汇合(bilinear pooling)在细粒度图像分析及其他领域的进展综述
-
-# YOLOv2
-
-面对SSD的攻势，pjreddie不甘示弱，于2016年12月提出了YOLOv2（又名YOLO9000）。YOLOv2对YOLO做了较多改进，实际上更像是SSD的升级版。
-
-论文：
-
-《YOLO9000: Better, Faster, Stronger》
-
-实际上，论文的内容也正如标题所言，主要分为Better, Faster, Stronger三个部分。
-
-## Better
-
-### batch normalization
-
-YOLOv2网络通过在每一个卷积层后添加batch normalization，极大的改善了收敛速度同时减少了对其它regularization方法的依赖（舍弃了dropout优化后依然没有过拟合），使得mAP获得了2%的提升。
-
-### High Resolution Classifier
-
-所有state-of-the-art的检测方法基本上都会使用ImageNet预训练过的模型（classifier）来提取特征，例如AlexNet输入图片会被resize到不足256x256，这导致分辨率不够高，给检测带来困难。所以YOLO(v1)先以分辨率224x224训练分类网络，然后需要增加分辨率到448x448，这样做不仅切换为检测算法也改变了分辨率。所以作者想能不能在预训练的时候就把分辨率提高了，训练的时候只是由分类算法切换为检测算法。
-
-YOLOv2首先修改预训练分类网络的分辨率为448x448，在ImageNet数据集上训练10轮（10 epochs）。这个过程让网络有足够的时间调整filter去适应高分辨率的输入。然后fine tune为检测网络。mAP获得了4%的提升。
-
-### Convolutional With Anchor Boxes
-
-借鉴SSD的经验，使用Anchor方法替代全连接+reshape。
-
-相应的，YOLOv2对于输出向量的编码方式进行了改进，如下图所示：
-
-![](/images/article/yolov2.png)
-
-其主要思路是：将对类别的预测放到anchor box中。
-
-同时，由于分辨率的提高，cell的数量由7x7改为13x13。这样一来就有13x13x9=1521个boxes了。因此，YOLOv2比YOLO在检测小物体方面有一定的优势。
-

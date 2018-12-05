@@ -337,3 +337,12 @@ https://mp.weixin.qq.com/s/r9WRkmApBaHvlCQ5F5ypjg
 https://mp.weixin.qq.com/s/2zFOjOuDKo--wTvu5rVWNw
 
 基于局内去噪和迁移学习的关系抽取
+
+https://mp.weixin.qq.com/s/eI-u_RsabtuyRajDYnnZDg
+
+基于深度强化学习的远程监督关系抽取
+
+https://mp.weixin.qq.com/s/UZbt1E6QntwtWWvJfTL3eQ
+
+车万翔：任务型对话系统研究进展
+

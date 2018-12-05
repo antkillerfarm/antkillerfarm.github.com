@@ -195,3 +195,23 @@ https://mp.weixin.qq.com/s/KRttAyx7YW1vkmzo1w1fAg
 https://mp.weixin.qq.com/s/0jPuPBDokan6B_OltKp9mw
 
 德国本届世界杯胜算最大？帕绍大学基于ELO评级预测
+
+https://mp.weixin.qq.com/s/f-5PunkCITf5zM3r2gluYQ
+
+BP不用算梯度，这样的线性反向传播也能Work！
+
+https://mp.weixin.qq.com/s/oltHCTombWE2WP_zbbOr3A
+
+Deep Learning之训练过程中出现NaN问题
+
+http://mp.weixin.qq.com/s/sIIoGilZgQHn4jDiYzEelw
+
+大咖解读Bengio笔记——邓侃：用深度学习模型，解构并重构人类思维
+
+http://mp.weixin.qq.com/s/Ybq6hSTPpyYQSNGJg1tgeQ
+
+AI距离匹敌人类大脑还有多远？人工神经网络和生物神经网络最详细对比
+
+http://mp.weixin.qq.com/s/UKu9T5zS1Z2dfNB1YsYGkQ
+
+NEAT学习：教机器自我编程
