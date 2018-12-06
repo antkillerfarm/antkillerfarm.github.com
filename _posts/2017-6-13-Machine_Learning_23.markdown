@@ -186,6 +186,10 @@ https://zhuanlan.zhihu.com/p/48642938
 
 分享一篇比较全面的AutoML综述
 
+https://mp.weixin.qq.com/s/zE8N5snKK2EoM9WgAhI-_g
+
+NeurIPS 2018 AutoML Phase1 冠军队伍 DeepSmart 团队解决方案分享
+
 # Optimizer
 
 在《机器学习（一）》中，我们已经指出梯度下降是解决凸优化问题的一般方法。而如何更有效率的梯度下降，就是本节中Optimizer的责任了。

@@ -317,3 +317,7 @@ https://mp.weixin.qq.com/s/Lee4DRNCQuGCTTAsSYR8ng
 https://mp.weixin.qq.com/s/PAuijOCx8TLCsyU_RGs11w
 
 从TCP协议的原理来谈谈rst复位攻击
+
+https://mp.weixin.qq.com/s/W_JjnDuinmLrahIpPY8h-g
+
+tcp服务端一直sleep，客户端发送数据问题总结

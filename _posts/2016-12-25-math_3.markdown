@@ -1,12 +1,39 @@
 ---
 layout: post
-title:  数学狂想曲（三）——统计杂谈, PID算法
+title:  数学狂想曲（三）——统计杂谈, 双曲函数和悬链线
 category: math 
 ---
 
 # 概率分布（1）
 
 ## 贝塔分布和共轭先验分布（续）
+
+下面来讲一下Beta分布的推导，并引出共轭先验分布的概念。
+
+设一事件A的概率$$p(A)=\theta$$，为了估计$$\theta$$的值，作了n次独立观察，其中事件A出现的次数为X。显然X服从二项分布$$X\sim B(n,\theta)$$。
+
+因此：
+
+$$p(X=x\mid \theta)= \binom{n}{x}\theta^{x}(1-\theta)^{n-x}$$
+
+利用贝叶斯公式，我们首先需要确定先验概率$$p(\theta)$$。在未得到其余信息前，我们只能认为$$\theta$$在(0,1)上均匀分布（即$$\theta\sim Uniform(0,1)$$），这是一种不失偏颇的先验估计。
+
+则联合概率分布为：
+
+$$p(x,\theta)=p(x\mid \theta)p(\theta)$$
+
+边缘概率分布：
+
+$$\begin{align}p(x)&=\int_{0}^{1}p(x,\theta)d\theta=\int_{0}^{1}\binom{n}{x}\theta^{x}(1-\theta)^{n-x}d\theta\\
+&=\binom{n}{x}B(x+1,n-x+1)=\binom{n}{x}\frac{\Gamma(x+1)\Gamma(n-x+1)}{\Gamma(n+2)}\end{align}$$
+
+综合以上，可得$$\theta$$的后验分布:
+
+$$p(\theta\mid x)=\frac{p(x,\theta)}{p(x)}=\frac{\theta^{(x+1)-1}(1-\theta)^{(n-x+1)-1}}{B(x+1,n-x+1)}$$
+
+因此：$$\theta \mid x\sim Beta(x+1,n-x+1)$$
+
+考虑到$$Uniform(0,1)=Beta(1,1)$$，因此在这个例子中，先验分布和后验分布，实际上是同一类型的分布。这种情况被称为共轭先验分布。
 
 上述过程的形式化描述为：
 
@@ -198,89 +225,24 @@ https://mp.weixin.qq.com/s/eIiFLW5pShrCnK5mZalLSw
 
 贝叶斯统计数据如何说服我去健身房
 
-# PID算法
+# 双曲函数和悬链线
 
-PID算法是自动控制领域最基础应用也最广泛的算法。它是三个单词proportional（P，比例）、integral（I，积分）和differential（D，微分）的缩写。
+悬链线 (Catenary) 是一种曲线，因其与两端固定的绳子在均匀引力作用下下垂相似而得名。适当选择坐标系后，悬链线的方程是一个双曲余弦函数。
 
-PID算法的流程如下图所示：
+悬链线背后的故事和推导，百度百科已经比较详细了，不再赘述。参见：
 
-| 图1 |
-|:--:|
-| ![](/images/article/PID.png) |
+http://baike.baidu.com/view/45656.htm
 
-以下我们以水箱水龙头为例，解释一下PID算法的各个要素。
+然而对于实际工程中的悬索结构，由于悬索自身的重量较其所提拉的跨度结构要轻得多，在力学简单计算中可以忽略，结构受力模式成为在水平长度范围内的均布荷载。这种荷载模式与拱结构相同，因此可以推导出在该荷载模式下的悬垂线为一抛物线，线型与拱结构相同，但内力为拉力。
 
-**场景1**：假设我们面对的系统是一个简单的水箱的液位，要从空箱开始注水直到达到某个高度，而你能控制的变量是注水龙头的开关大小。
+在工程中完全按照悬链线进行设计的结构，恐怕只有高压输电线了。由于不承担任何自重以外的附加荷载，输电线的数学曲线会与悬链线完全一致。
 
-图1中的$$r(t)$$表示期待的设定值，在这个场景中，就是水箱的液位。$$y(t)$$表示当前的液位。$$e(t)=r(t)-y(t)$$表示误差值。
+双曲函数的性质，参见：
 
-针对这个场景，我们可以设计如下算法：
+https://zhuanlan.zhihu.com/p/20042215
 
-水箱液位离预定高度远的时候开关开大点，离的近的时候开关就开小点，随着液位逐步接近预定高度逐渐关掉水龙头。用数学表示就是：
+可能是最好的讲解双曲函数的文章
 
-$$u(t) = K_\text{p} e(t)\tag{1}$$
+![](/images/article/trigonometric.jpg)
 
-上式中的$$u(t)$$表示需要控制的量，在这里就是水龙头的开合度。$$K_\text{p}$$被称为比例系数。
-
-**场景2**：假设这个水箱不仅仅是装水的容器了，还需要持续稳定的给用户供水。
-
-以下用c表示给用户供水的量($$c\ge 0$$)。显然如果使用公式1，则系统稳定时，$$u(t)-c=0$$，即$$K_\text{p} e(t)=c$$。
-
-由于c和$$K_\text{p}$$都不为0，因此$$e(t)$$也不为0，这就导致始终无法加注到指定水位。这种稳态误差被称为静差。
-
-为了平衡c，我们修改算法为：
-
-$$u(t) = K_\text{p} e(t) + K_\text{i} \int_0^t e(\tau) \,d\tau\tag{2}$$
-
-$$K_\text{i}$$被称为积分系数。积分环节的意义就相当于你增加了一个水龙头，这个水龙头的开关规则是水位比预定高度低就一直往大了拧，比预定高度高就往小了拧。如果漏水速度不变，那么总有一天这个水龙头出水的速度恰好跟漏水的速度相等了，系统就和第一小节的那个一样了。那时，静差就没有了。这就是所谓的积分环节可以消除系统静差。
-
-**场景3**：假设用户的用水量是变化的，即$$c(t)$$。
-
-这时，如果仍采用公式2，则由于$$c(t)$$的变化，导致$$e(t)$$不恒为0。为了减小$$c(t)$$的变化，对$$e(t)$$的影响，我们继续修改算法：
-
-$$u(t) = K_\text{p} e(t) + K_\text{i} \int_0^t e(\tau) \,d\tau + K_\text{d} \frac{de(t)}{dt}\tag{3}$$
-
-$$K_\text{d}$$被称为微分系数。由于$$c(t)$$的变化不可能事先得知，因此，微分环节只能减小$$c(t)$$的变化所造成的影响，而不能消除。
-
-公式3在Laplace域可写做：
-
-$$L(s) = K_\text{p} + K_\text{i}/s + K_\text{d} s\tag{4}$$
-
-从公式4可以看出，PID controller的数学原理和锁相环（Phase-locked loop）非常类似，它们实际上都是Feedback Control系统。
-
-![](/images/article/PLL.png)
-
-参考：
-
-https://en.wikipedia.org/wiki/PID_controller
-
-《Feedback Control of Dynamic Systems》，Gene F. Franklin，J David Powell，Abbas Emami-Naeini著。
-
->注：Gene F. Franklin，1927~2012，美国控制论学家。哥伦比亚大学博士，斯坦福大学教授。
-
->J David Powell，美国航空航天学家。斯坦福大学博士和教授。
-
->Abbas Emami-Naeini，斯坦福大学博士和讲师，SC Solutions公司总监。
-
-https://www.zhihu.com/question/23088613/answer/23942834
-
-如何通俗地解释 PID 参数整定？
-
-http://blog.163.com/suyanqiang0613@126/blog/static/1100531332012111475650867/
-
-PID算法原理
-
-## 串级PID控制
-
-实际使用中，为了改善PID控制的效果，一般还会用到串级PID控制。
-
-参考：
-
-https://blog.csdn.net/qq_25005909/article/details/77941243
-
-串级PID控制四轴飞行状态-分析
-
-https://blog.csdn.net/nemol1990/article/details/45131603
-
-四轴PID讲解
-
+![](/images/article/hyperbolic.jpg)

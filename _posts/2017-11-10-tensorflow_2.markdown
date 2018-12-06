@@ -211,6 +211,12 @@ TensorFlow Serving是一个用于机器学习模型serving的高性能开源库�
 
 https://github.com/tensorflow/serving
 
+TensorFlow Serving实际上是TensorFlow Extended (TFX)的一部分：
+
+https://tensorflow.google.cn/tfx
+
+TFX还包括了Data Validation、Transform和Model Analysis等方面的功能。
+
 参考：
 
 https://zhuanlan.zhihu.com/p/23361413
@@ -232,6 +238,10 @@ gRPC客户端创建和调用原理解析
 https://zhuanlan.zhihu.com/p/30628048
 
 远程通信协议：从CORBA到gRPC
+
+https://mp.weixin.qq.com/s/b569est_LpcxsoTNWXcfog
+
+TensorFlow Extended帮你快速落地项目
 
 ## op的C++实现
 

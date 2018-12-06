@@ -80,6 +80,24 @@ https://blog.csdn.net/tintinetmilou/article/details/81607721
 
 Depthwise卷积与Pointwise卷积
 
+## Deconvolution & Image Resize
+
+Deconvolution提供了比普通的Image Resize更丰富的上采样方式。因此，常规的Image Resize操作，实际上都可用Deconvolution来做。这在某些拥有NN硬件加速的设备上是很有用的。
+
+参考：
+
+https://cv-tricks.com/image-segmentation/transpose-convolution-in-tensorflow/
+
+Image Segmentation using deconvolution layer in Tensorflow
+
+https://zhuanlan.zhihu.com/p/32414293
+
+双线性插值的两种实现方法
+
+http://warmspringwinds.github.io/tensorflow/tf-slim/2016/11/22/upsampling-and-image-segmentation-with-tensorflow-and-tf-slim/
+
+Upsampling and Image Segmentation with Tensorflow and TF-Slim
+
 ## 感受野
 
 Receptive Field本来是神经科学领域的概念，后来才被推广到DL（尤其是CNN）领域。

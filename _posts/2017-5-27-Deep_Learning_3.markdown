@@ -186,6 +186,12 @@ https://www.zhihu.com/question/28385679
 
 反向：$$\Delta X = \Delta Y * rot_{180}(K)$$
 
+卷积的反向传播，有时也被称为反卷积（Deconvolution）。
+
+![](/images/article/dcign.png)
+
+上图是Deep convolutional inverse graphics networks的结构图。DCIGN实际上是一个正向CNN连上一个反向CNN，以实现图片合成的目的。其原理可参考《深度学习（四）》中的Autoencoder。
+
 参见：
 
 http://www.cnblogs.com/pinard/p/6494810.html
@@ -199,12 +205,6 @@ CNN误差反传时旋转卷积核的简明分析
 https://mp.weixin.qq.com/s/dnElNURJ6xfWHJVf_yeT8w
 
 理解多层CNN中转置卷积的反向传播
-
-卷积的反向传播，有时也被称为反卷积。
-
-![](/images/article/dcign.png)
-
-上图是Deep convolutional inverse graphics networks的结构图。DCIGN实际上是一个正向CNN连上一个反向CNN，以实现图片合成的目的。其原理可参考《深度学习（三）》中的Autoencoder。
 
 ## 参考
 
@@ -303,4 +303,3 @@ https://mp.weixin.qq.com/s/VcjivPhJuCk7NPQ1FNQULw
 https://mp.weixin.qq.com/s/zvPNuP_LT7pWIgoxzfeUWw
 
 综述卷积神经网络：从基础技术到研究前景
-

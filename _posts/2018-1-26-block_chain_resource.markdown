@@ -236,6 +236,10 @@ https://mp.weixin.qq.com/s/Xxi50rDBjrqG-7MIloZMDw
 
 浅谈区块链技术与阿里云的探索实践
 
+https://blog.csdn.net/blockchain_lemon/article/details/84801413
+
+一文读懂11个主流共识算法, 彻底搞懂PoS,PoW,dPoW,PBFT,dBFT这些究竟是什么鬼...
+
 # 雷达 & 信号处理
 
 https://mp.weixin.qq.com/s/zDcbrZeK4tlO0jA3-s_lYg
@@ -245,6 +249,10 @@ https://mp.weixin.qq.com/s/zDcbrZeK4tlO0jA3-s_lYg
 https://www.ll.mit.edu/outreach/introduction-radar-systems
 
 MIT：Introduction to Radar Systems
+
+http://www.dspguide.com/pdfbook.htm
+
+《The Scientist and Engineer's Guide to Digital Signal Processing》
 
 https://mp.weixin.qq.com/s/vmQKK9cEbBRIvd2uOzmC1w
 
@@ -429,4 +437,3 @@ https://mp.weixin.qq.com/s/JJWnNsYls9lDJFyTKz0jew
 https://mp.weixin.qq.com/s/jl4DLZ5xwnW5_OsuLxXSUA
 
 《雷达基础知识》专题一：距离
-

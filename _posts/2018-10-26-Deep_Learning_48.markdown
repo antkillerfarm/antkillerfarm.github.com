@@ -178,6 +178,10 @@ https://mp.weixin.qq.com/s/-wwDenAWRGCvJmprxsl15Q
 
 基于多特征地图和深度学习的实时交通场景分割
 
+https://mp.weixin.qq.com/s/ygWCfLnakHIwLVk7hRAKNg
+
+全景分割任务介绍及其最新进展
+
 # 问答系统
 
 GA-Reader
