@@ -397,3 +397,7 @@ highD：德国提出从空中角度测量车辆数据的新方法
 https://mp.weixin.qq.com/s/f25RbCRoWT9Ft6m_G3lyvQ
 
 全美225万公里道路没标识？揭开无人车的极端行驶秘籍
+
+https://mp.weixin.qq.com/s/f44TkWXklGONCuXnIuTbXg
+
+无人驾驶汽车系统入门：基于VoxelNet的激光雷达点云车辆检测及ROS实现
