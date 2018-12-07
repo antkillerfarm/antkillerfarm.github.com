@@ -361,3 +361,7 @@ AlphaGo的棋局，与人工智能有关，与人生无关
 https://mp.weixin.qq.com/s/J0w6kzzdKTbsaiZitbQdoA
 
 达观数据：一文详解AlphaGo原理
+
+https://mp.weixin.qq.com/s/BBQ54HHrFiqxXkC-EI6ELw
+
+Science封面：AlphaZero达成终极进化体，史上最强棋类AI降临！

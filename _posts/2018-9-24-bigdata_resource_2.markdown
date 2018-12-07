@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  大数据平台参考资源（二）, 知名数据集（二）, 有用的网址集合（二）
+title:  大数据平台参考资源（二）, 知名数据集（二）, TensorFlow（四）
 category: resource 
 ---
 
@@ -244,20 +244,128 @@ https://github.com/wecatch/china_regions
 
 最全最新中国省，市，地区json及sql数据
 
-# 有用的网址集合
+# TensorFlow
 
-https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126
+https://mp.weixin.qq.com/s/OVWbxBNc4i0_5jgy06xS1A
 
-前端安全系列之一：如何防止XSS攻击？
+基于Tensorflow Estimators的文本分类
 
-https://mp.weixin.qq.com/s?__biz=MzIyNzUwMjM2MA==&mid=2247485942&idx=1&sn=1597233c1527cac63a2c734ec0b14f02
+https://mp.weixin.qq.com/s/c_2_9gvOynHaVW6pi4qQjQ
 
-编程基础知识
+用TensorFlow让机器人唱首歌给你听
 
-https://mp.weixin.qq.com/s?__biz=MzIyNzUwMjM2MA==&mid=2247486006&idx=1&sn=d4978396fa18e5dfce69a51ac7748898
+https://mp.weixin.qq.com/s/NPuYanaUnaX4mYbaNbNNSQ
 
-网络编程基础知识
+概率编程工具：TensorFlow Probability官方简介
 
-https://mp.weixin.qq.com/s/EPWRwOBT8_616R5RWbdaTQ
+https://mp.weixin.qq.com/s/hn-LqyREkusxP2TOWfTJ6g
 
-一家公司到底有多少种管理系统？——从包罗万象到术业专攻
+使用TensorFlow官方Java API调用TensorFlow模型
+
+https://mp.weixin.qq.com/s/IuD1oxeiFBq8kqh_zRLb0Q
+
+一步实现从TF到TF Lite，谷歌提出定制on-device模型框架
+
+https://mp.weixin.qq.com/s/kS92vYyeHLc38RGc_4CZbg
+
+如何应用TFGAN快速实践生成对抗网络？
+
+https://mp.weixin.qq.com/s/SDVQSn1aVDXk_RPGuVcQgQ
+
+TensorFlow深度自动编码器入门实践
+
+https://mp.weixin.qq.com/s/mZ79KAuSIJLtBEXvKwUi-w
+
+如何利用TensorFlow.js部署简单的AI版“你画我猜”图像识别应用
+
+https://mp.weixin.qq.com/s/atQHJ5U2pJpSG6PguN7J4Q
+
+如何保持运动小车上的旗杆屹立不倒？TensorFlow利用A3C算法训练智能体玩CartPole游戏
+
+https://mp.weixin.qq.com/s/rQ9eZosHOoDOXg9tAg4t6A
+
+tensorflow Object Detection API使用预训练模型mask r-cnn实现对象检测
+
+https://mp.weixin.qq.com/s/kYOwUWlTP4T0IYKDWDbCsg
+
+tensorflow object detection API训练公开数据集Oxford-IIIT Pets Dataset
+
+https://mp.weixin.qq.com/s/8uDsaZjsiKXGea6M-w-RvA
+
+tensorflow object detection API使用之GPU训练实现宠物识别
+
+https://mp.weixin.qq.com/s/8I5Nvw4t2jT1NR9vIYT5XA
+
+深入理解TensorFlow中的tf.metrics算子
+
+https://mp.weixin.qq.com/s/aMarI-nyIvFqhtpJWQrNhQ
+
+谷歌推强化学习新框架“多巴胺“，基于TensorFlow，已开源
+
+https://mp.weixin.qq.com/s/ntHkMIef1o2-FF-AJf_bZQ
+
+三分钟训练眼球追踪术，AI就知道你在盯着哪个妹子——TensorFlow.js代码
+
+https://mp.weixin.qq.com/s/7rTmEBfh613SrNnTQvfSjw
+
+懒人福利：不写代码调优深度模型，谷歌开源的“What-If”了解一下
+
+https://mp.weixin.qq.com/s/eX3LWYiSH-KObH_7F_3QCA
+
+TensorFlow 1.11.0发布，一键多GPU
+
+https://mp.weixin.qq.com/s/316VVXLQfeIsKNk4ld-VRw
+
+TensorFlow语义分割套件开源了ECCV18旷视科技BiSeNet实时分割算法
+
+https://mp.weixin.qq.com/s/XI1J4ardEWKP4UQ4IXZGTQ
+
+TensorFlow Hub,给您带来全新的Web体验
+
+https://mp.weixin.qq.com/s?__biz=MzU1OTMyNDcxMQ==&mid=2247484836&idx=1&sn=0bc47c662ea64aa833df9fb9c4b1d706
+
+TensorFlow模型优化工具包正式推出
+
+https://mp.weixin.qq.com/s/cV-5W4YWC9f9wsoNX5fIXA
+
+使用TensorFlow Probability对金融模型中的误差进行介绍性分析
+
+https://mp.weixin.qq.com/s/NMRwXqwr4VFbMUPgI8Uccg
+
+使用 Google Cloud 上的 tf.Transform 对 TensorFlow 管道模式进行预处理
+
+https://mp.weixin.qq.com/s/UKt1cFLcRYZQTJiZRiajwQ
+
+TensorFlow Servering C/S通信约束
+
+https://mp.weixin.qq.com/s/DpqI4AfjiygCh8dqq_Kgmw
+
+基于TensorFlow Serving的深度学习在线预估
+
+https://mp.weixin.qq.com/s/XcqVtFBY5rIn0FgPEx0eTg
+
+工业领域中的AI：BHGE通过使用TensorFlow概率编程工具包开发的基于物理的概率深度学习
+
+https://mp.weixin.qq.com/s/TZMOO_LFCxk297lKNQfvGQ
+
+TensorFlow从基础到实战：一步步教你创建交通标志分类神经网络
+
+https://mp.weixin.qq.com/s/HUUwtyjRllg-5olqYHK4XA
+
+基于TensorFlow的开源项目FaceRank
+
+https://mp.weixin.qq.com/s/N2OP1uX7JjfIJQ_B4NHKpw
+
+横向对比三大分布式机器学习平台：Spark、PMLS、TensorFlow
+
+https://github.com/jinfagang/rl_atari_pytorch
+
+ReinforcementLearning Learn Play Atari Using DDPG and LSTM.
+
+https://mp.weixin.qq.com/s/bJigyEv6iNDp799KlHsclg
+
+TensorFlow 不仅用于机器学习，还能模拟偏微分方程（水滴特效）
+
+https://mp.weixin.qq.com/s/dmNEzrWNX3YWmocjpORpig
+
+谷歌开源TF-Ranking可扩展库，支持多种排序学习

@@ -252,7 +252,7 @@ https://mp.weixin.qq.com/s/54HQU3B4cSdRb1Z4srSfJg
 
 数学上的反卷积主要作为卷积的逆运算，相当于**信号的重建**，或者解微分方程。因此，它的难度远远大于卷积运算，常见的有Wiener deconvolution、Richardson–Lucy deconvolution等。
 
-CNN的反卷积就简单多了，它只是误差的反向算法而已。因此，也有人用back convolution, transpose convolution这样更精确的说法，来描述CNN的误差反向算法。
+CNN的反卷积就简单多了，它只是误差的反向算法而已。因此，也有人用back convolution, transpose convolution, Fractionally Strided Convolution这样更精确的说法，来描述CNN的误差反向算法。
 
 ## Dilated convolution
 

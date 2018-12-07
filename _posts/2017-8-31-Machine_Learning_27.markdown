@@ -82,52 +82,6 @@ https://mp.weixin.qq.com/s/BJaRUnpcPe8iybSz14gabw
 
 一文读懂如何用LSA、PSLA、LDA和lda2vec进行主题建模
 
-# Markov Decision Process
-
-上边Q-Learning的例子中，由于action能够唯一确定状态的变换，因此又被称为**Markov Reward Process**：
-
-$$<\mathcal{S},\mathcal{P},\mathcal{R},\gamma>$$
-
-这个四元组依次代表：states、state transition probability matrix、reward function、discount factor。
-
-实际中，执行特定的动作并不一定能得到特定的状态。
-
-![](/images/article/Markov_Decision_Process.png)
-
-比如上图中，在状态$$S_0$$，执行$$a_0$$，只有0.5的机会，会到达$$S_2$$。这也就是之前提到过的MDP。
-
-标准MDP中的Bellman equation可改为如下形式：
-
-$$v = \mathcal{R} + \gamma \mathcal{P}v$$
-
-其中,$$\mathcal{P},\mathcal{R}$$均为已知。
-
-这里的Bellman equation是线性方程，它的直接解法如下：
-
-$$(I-\gamma \mathcal{P})v = \mathcal{R}$$
-
-$$v = (I-\gamma \mathcal{P})^{-1}\mathcal{R}$$
-
-然而这个方法的复杂度是$$O(n^3)$$（n是状态的个数），这对于大的MDP来说，并不好用。这种情况下，常用的解法有：Dynamic programming（动态规划）、Monte-Carlo evaluation和Temporal-Difference learning。
-
-由于MDP对于RL任务进行了Markov假设，这属于一种建模行为，因此它也被归为一种model-based learning的算法。
-
-MDP的扩展主要包括：
-
-a) Observation部分可见的情况下，agent state $$\neq$$ environment state，这时一般叫做partially observable Markov decision process(POMDP)。
-
-b) Infinite and continuous MDP
-
-c) Undiscounted, average reward MDP
-
-扩展MDP的Bellman equation都不是线性方程，没有解析解，只有迭代解。相关解法主要使用了概念图模型，这里不再详述。
-
-参考：
-
-https://mp.weixin.qq.com/s/G8zmooqhSKqcLv1u7uM0bw
-
-AlphaGo等智能体是如何炼成的？你需要懂得马尔科夫链
-
 # 动态规划
 
 Dynamic programming(DP)用于解决那些可分解为**重复子问题（overlapping subproblems）**并具有**最优子结构（optimal substructure）**的问题。这里的programming和编程并无任何关系。

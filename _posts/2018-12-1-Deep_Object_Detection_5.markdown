@@ -297,3 +297,7 @@ https://mp.weixin.qq.com/s/yswy7VwEapQJ9M5n_Uo93w
 https://mp.weixin.qq.com/s/s1qmCA8djEEanwCxeLSV2Q
 
 63页《深度CNN-目标检测》综述
+
+https://mp.weixin.qq.com/s/XoKdsQKyaI3LsDxF7uyKuQ
+
+聊聊目标检测中的多尺度检测（Multi-Scale），从 YOLO到FPN，SNIPER，SSD 填坑贴和极大极小目标识别

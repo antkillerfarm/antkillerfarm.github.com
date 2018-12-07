@@ -338,10 +338,6 @@ https://mp.weixin.qq.com/s/_-z2d1GE_3FElzAwPyJZ8A
 
 十大流行AI框架和库的优缺点比较
 
-https://mp.weixin.qq.com/s/7nugWFKtD-C6cpwm2TyvdQ
-
-手把手教你如何部署深度学习模型
-
 https://mp.weixin.qq.com/s/Ctl65r4iZNEOBxiiX2I2eQ
 
 Momenta王晋玮：让深度学习更高效运行的两个视角

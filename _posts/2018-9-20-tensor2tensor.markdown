@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Tensor2Tensor, NN中间语言, OpenCV（二）, Dlib, TensorFlow（四）
+title:  Tensor2Tensor, NN中间语言, OpenCV（二）, Dlib, 有用的网址集合（二）
 category: AI 
 ---
 
@@ -318,100 +318,20 @@ https://zhuanlan.zhihu.com/p/45827914
 
 Github开源人脸识别项目face_recognition
 
-# TensorFlow
+# 有用的网址集合
 
-https://mp.weixin.qq.com/s/SDVQSn1aVDXk_RPGuVcQgQ
+https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126
 
-TensorFlow深度自动编码器入门实践
+前端安全系列之一：如何防止XSS攻击？
 
-https://mp.weixin.qq.com/s/mZ79KAuSIJLtBEXvKwUi-w
+https://mp.weixin.qq.com/s?__biz=MzIyNzUwMjM2MA==&mid=2247485942&idx=1&sn=1597233c1527cac63a2c734ec0b14f02
 
-如何利用TensorFlow.js部署简单的AI版“你画我猜”图像识别应用
+编程基础知识
 
-https://mp.weixin.qq.com/s/atQHJ5U2pJpSG6PguN7J4Q
+https://mp.weixin.qq.com/s?__biz=MzIyNzUwMjM2MA==&mid=2247486006&idx=1&sn=d4978396fa18e5dfce69a51ac7748898
 
-如何保持运动小车上的旗杆屹立不倒？TensorFlow利用A3C算法训练智能体玩CartPole游戏
+网络编程基础知识
 
-https://mp.weixin.qq.com/s/rQ9eZosHOoDOXg9tAg4t6A
+https://mp.weixin.qq.com/s/EPWRwOBT8_616R5RWbdaTQ
 
-tensorflow Object Detection API使用预训练模型mask r-cnn实现对象检测
-
-https://mp.weixin.qq.com/s/kYOwUWlTP4T0IYKDWDbCsg
-
-tensorflow object detection API训练公开数据集Oxford-IIIT Pets Dataset
-
-https://mp.weixin.qq.com/s/8uDsaZjsiKXGea6M-w-RvA
-
-tensorflow object detection API使用之GPU训练实现宠物识别
-
-https://mp.weixin.qq.com/s/8I5Nvw4t2jT1NR9vIYT5XA
-
-深入理解TensorFlow中的tf.metrics算子
-
-https://mp.weixin.qq.com/s/aMarI-nyIvFqhtpJWQrNhQ
-
-谷歌推强化学习新框架“多巴胺“，基于TensorFlow，已开源
-
-https://mp.weixin.qq.com/s/ntHkMIef1o2-FF-AJf_bZQ
-
-三分钟训练眼球追踪术，AI就知道你在盯着哪个妹子——TensorFlow.js代码
-
-https://mp.weixin.qq.com/s/7rTmEBfh613SrNnTQvfSjw
-
-懒人福利：不写代码调优深度模型，谷歌开源的“What-If”了解一下
-
-https://mp.weixin.qq.com/s/eX3LWYiSH-KObH_7F_3QCA
-
-TensorFlow 1.11.0发布，一键多GPU
-
-https://mp.weixin.qq.com/s/316VVXLQfeIsKNk4ld-VRw
-
-TensorFlow语义分割套件开源了ECCV18旷视科技BiSeNet实时分割算法
-
-https://mp.weixin.qq.com/s/XI1J4ardEWKP4UQ4IXZGTQ
-
-TensorFlow Hub,给您带来全新的Web体验
-
-https://mp.weixin.qq.com/s?__biz=MzU1OTMyNDcxMQ==&mid=2247484836&idx=1&sn=0bc47c662ea64aa833df9fb9c4b1d706
-
-TensorFlow模型优化工具包正式推出
-
-https://mp.weixin.qq.com/s/cV-5W4YWC9f9wsoNX5fIXA
-
-使用TensorFlow Probability对金融模型中的误差进行介绍性分析
-
-https://mp.weixin.qq.com/s/NMRwXqwr4VFbMUPgI8Uccg
-
-使用 Google Cloud 上的 tf.Transform 对 TensorFlow 管道模式进行预处理
-
-https://mp.weixin.qq.com/s/UKt1cFLcRYZQTJiZRiajwQ
-
-TensorFlow Servering C/S通信约束
-
-https://mp.weixin.qq.com/s/DpqI4AfjiygCh8dqq_Kgmw
-
-基于TensorFlow Serving的深度学习在线预估
-
-https://mp.weixin.qq.com/s/XcqVtFBY5rIn0FgPEx0eTg
-
-工业领域中的AI：BHGE通过使用TensorFlow概率编程工具包开发的基于物理的概率深度学习
-
-https://mp.weixin.qq.com/s/TZMOO_LFCxk297lKNQfvGQ
-
-TensorFlow从基础到实战：一步步教你创建交通标志分类神经网络
-
-https://mp.weixin.qq.com/s/HUUwtyjRllg-5olqYHK4XA
-
-基于TensorFlow的开源项目FaceRank
-
-https://mp.weixin.qq.com/s/N2OP1uX7JjfIJQ_B4NHKpw
-
-横向对比三大分布式机器学习平台：Spark、PMLS、TensorFlow
-
-https://github.com/jinfagang/rl_atari_pytorch
-
-ReinforcementLearning Learn Play Atari Using DDPG and LSTM.
-
-https://mp.weixin.qq.com/s/bJigyEv6iNDp799KlHsclg
-
-TensorFlow 不仅用于机器学习，还能模拟偏微分方程（水滴特效）
+一家公司到底有多少种管理系统？——从包罗万象到术业专攻
