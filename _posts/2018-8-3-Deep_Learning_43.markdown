@@ -381,3 +381,7 @@ https://mp.weixin.qq.com/s/TGuEvNXw_9S5-9a3KyDvvw
 https://mp.weixin.qq.com/s/zg3yW7e4UKIs9-m6WmcbvA
 
 GraphWave：一种全新的无监督网络嵌入方法
+
+https://mp.weixin.qq.com/s/rGC8O2Pyq8WL8D8ATMbH0Q
+
+NYU、AWS联合推出：全新图神经网络框架DGL正式发布

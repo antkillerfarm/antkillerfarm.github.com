@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十六）——OCR, 元学习, 深度哈希
+title:  深度学习（四十六）——OCR, 元学习, 深度哈希, BERT
 category: DL 
 ---
 
@@ -337,3 +337,75 @@ HashGAN:基于注意力机制的深度对抗哈希模型提升跨模态检索效
 https://mp.weixin.qq.com/s/3Z2Zc8zTq2uiPyw7ZuuZfw
 
 解密美图大规模多媒体数据检索技术DeepHash
+
+# BERT
+
+论文：
+
+《BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding》
+
+代码：
+
+https://github.com/google-research/bert
+
+BERT算的上是Google暴力美学的新作了。如果用家用显卡GTX 1080Ti的话，大概需要几个月的训练时间。幸好Google已经提供了预训练的模型：
+
+https://github.com/google-research/bert/blob/master/multilingual.md
+
+这里有一个使用预训练模型的参考代码：
+
+https://github.com/macanv/BERT-BiLSMT-CRF-NER
+
+参考：
+
+https://www.zhihu.com/question/298203515
+
+如何评价BERT模型？
+
+https://mp.weixin.qq.com/s/Fao3i99kZ1a6aa3UhAYKhA
+
+全面超越人类！Google称霸SQuAD，BERT横扫11大NLP测试
+
+https://mp.weixin.qq.com/s/INDOBcpg5p7vtPBChAIjAA
+
+最强预训练模型BERT的Pytorch实现
+
+https://mp.weixin.qq.com/s/SZMYj4rMneR3OWST007H-Q
+
+解读谷歌最强NLP模型BERT：模型、数据和训练
+
+https://mp.weixin.qq.com/s/I315hYPrxV0YYryqsUysXw
+
+NLP的游戏规则从此改写？从word2vec, ELMo到BERT
+
+https://mp.weixin.qq.com/s/8uZ2SJtzZhzQhoPY7XO9uw
+
+详细解读谷歌新模型BERT为什么嗨翻AI圈
+
+https://mp.weixin.qq.com/s/CofeiL4fImq98UeuJ4hWTg
+
+预训练BERT，官方代码发布前他们是这样用TensorFlow解决的
+
+https://mp.weixin.qq.com/s/vFdm-UHns7Nhbmdoiu6jWg
+
+谷歌终于开源BERT代码：3亿参数量，机器之心全面解读
+
+https://mp.weixin.qq.com/s/dV4RkxZOC9o2BxNi0GljKQ
+
+谷歌最强NLP模型BERT官方中文版来了！多语言模型支持100种语言
+
+https://mp.weixin.qq.com/s/fz-bQMAi5bs2_bvRhf3ERg
+
+从Word Embedding到Bert模型—自然语言处理中的预训练技术发展史
+
+https://mp.weixin.qq.com/s/pD4it8vQ-aE474uSMQG0YQ
+
+两行代码玩转Google BERT句向量词向量
+
+https://mp.weixin.qq.com/s/osmUZxAAX3x-oTHYJbzemA
+
+谷歌BERT模型fine-tune终极实践教程
+
+https://mp.weixin.qq.com/s/XmeDjHSFI0UsQmKeOgwnyA
+
+小数据福音！BERT在极小数据下带来显著提升的开源实现

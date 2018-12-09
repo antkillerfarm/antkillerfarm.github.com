@@ -318,6 +318,10 @@ https://mp.weixin.qq.com/s/94IGjVPXZ0FeCILQN33eBQ
 
 遇见大数据可视化：不要错过这么漂亮的数据可视化案例！
 
+https://mp.weixin.qq.com/s/7M_xbmDQIlSEB1TKN3fbQw
+
+4种更快更简单实现Python数据可视化的方法
+
 ## howmuch.net
 
 howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：
