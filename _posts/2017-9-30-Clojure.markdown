@@ -317,16 +317,6 @@ https://mp.weixin.qq.com/s/jmvcuiRu82zVC2kq91uS0g
 
 谷歌AI用“深度”学习来虚化背景，单摄手机可用，Jeff Dean表示优秀
 
-# DL参考资源
+https://mp.weixin.qq.com/s/tg1Rjl-8t93IVIh1PHTuWg
 
-https://mp.weixin.qq.com/s/ViQqeER1NXtJOtnLg76TWg
-
-关于远程监督，我们来推荐几篇值得读的论文
-
-https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
-
-谷歌提出多图像抠图算法，并弥补水印技术的一致性漏洞
-
-https://mp.weixin.qq.com/s/zTB59Fg_JFg9ZZPRlq9txA
-
-不使用残差连接，ICML新研究靠初始化训练上万层标准CNN
+什么是‘log灰’

@@ -285,6 +285,10 @@ https://mp.weixin.qq.com/s/DIqjVxF_kACkivzez4_Hog
 
 编码器-解码器网络：神经翻译模型详解
 
+https://mp.weixin.qq.com/s/Alg4rOXNvb4GA8N4Joy-Jg
+
+Seq2seq强化，Pointer Network简介
+
 # CNN进化史
 
 ## 计算机视觉

@@ -227,3 +227,15 @@ https://mp.weixin.qq.com/s/KTBC1VBj7V7pjQ9JVCn7fQ
 https://mp.weixin.qq.com/s/19U2Rhwgj5NoB0esKyxSyA
 
 神经网络告诉我，谁是世界上最“美”的人？
+
+https://mp.weixin.qq.com/s/ViQqeER1NXtJOtnLg76TWg
+
+关于远程监督，我们来推荐几篇值得读的论文
+
+https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
+
+谷歌提出多图像抠图算法，并弥补水印技术的一致性漏洞
+
+https://mp.weixin.qq.com/s/zTB59Fg_JFg9ZZPRlq9txA
+
+不使用残差连接，ICML新研究靠初始化训练上万层标准CNN

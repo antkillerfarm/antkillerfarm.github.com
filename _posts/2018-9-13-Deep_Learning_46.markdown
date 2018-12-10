@@ -300,6 +300,10 @@ https://mp.weixin.qq.com/s/RBMGI20AI92ZcWSlYczqAA
 
 伯克利、OpenAI等提出基于模型的元策略优化强化学习
 
+https://mp.weixin.qq.com/s/p0dcov84pZqsU7XP30bexQ
+
+Meta-Learning 元学习：学会快速学习
+
 # 深度哈希
 
 https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg

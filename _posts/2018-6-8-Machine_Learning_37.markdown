@@ -206,6 +206,10 @@ https://mp.weixin.qq.com/s/LY1-F5hEyM40DrvobYRexA
 
 腾讯AI Lab&北大提出基于随机路径积分的差分估计子非凸优化方法
 
+https://mp.weixin.qq.com/s/5KyODpSjkdYJ9q-itQDsAA
+
+自Adam出现以来，深度学习优化器发生了什么变化？
+
 # 推荐系统进阶
 
 除了《机器学习（十五～十六）》提及的ALS和PCA之外，相关的算法还包括：

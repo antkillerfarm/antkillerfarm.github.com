@@ -385,3 +385,7 @@ GraphWave：一种全新的无监督网络嵌入方法
 https://mp.weixin.qq.com/s/rGC8O2Pyq8WL8D8ATMbH0Q
 
 NYU、AWS联合推出：全新图神经网络框架DGL正式发布
+
+https://mp.weixin.qq.com/s/mamet6l_lA7fhoYkysZ7PQ
+
+华为联合LSE提出KONG：有序近邻图的核函数
