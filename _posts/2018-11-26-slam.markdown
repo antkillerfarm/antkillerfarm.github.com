@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  SLAM, MXNet
+title:  SLAM, MXNet, 传感器
 category: resource 
 ---
 
@@ -196,6 +196,80 @@ https://mp.weixin.qq.com/s/hRH7hVsaQBqf0vhD_BqBgg
 
 五大深度学习框架三类神经网络全面测评
 
+# 传感器
+
+这里主要讨论自动驾驶方面的传感器，但也包括了一些非自动驾驶类的传感器知识。
+
+https://mp.weixin.qq.com/s/Ee18sjKXNGMowKwqLB0jVg
+
+给自动驾驶一双"通天眼"——环境感知器篇
+
+https://mp.weixin.qq.com/s/dusPUCjKUzhfmTRhzXte-A
+
+新的图像传感器给汽车装上眼睛
+
+https://mp.weixin.qq.com/s/4HNaS8Dpi9pcPzE_nN-BvA
+
+全球12家顶级激光雷达公司解读：谁有机会撼动Velodyne
+
+https://mp.weixin.qq.com/s/Ef6aWgs9xkHaAwTX4rxjKA
+
+用激光雷达感知世界
+
+https://mp.weixin.qq.com/s/45xNWa_32DAsKdlfYY_QfA
+
+Uber自动驾驶撞死行人视频公布：无人车环境感知解决方案该如何优化？
+
+https://mp.weixin.qq.com/s/VBpOwGrTPs0nlmTyXvqDwA
+
+为什么只用摄像头和光学雷达是不够的：我们能从Uber的自动驾驶车致死事件中学到什么
+
+https://mp.weixin.qq.com/s/WiS-iJHA1zoIyb1cvKiuZQ
+
+自动驾驶传感器“一哥之争”，这事儿你怎么看？
+
+https://mp.weixin.qq.com/s/WWm1tkCXVJgdlVbsXCTYIg
+
+自动驾驶汽车硬件系统概述
+
+https://mp.weixin.qq.com/s/C77q2LEA-lMEabtsO30LxQ
+
+自动驾驶需要几个camera
+
+https://mp.weixin.qq.com/s/2-PB-5tTNeGPLPHQBdRwBA
+
+40张动态图详解全部传感器工作原理
+
+https://mp.weixin.qq.com/s/oCEeIM_DhmQ67zT_KLVb7Q
+
+Face ID与3D传感技术科普
+
+https://blog.csdn.net/carson2005/article/details/72972414
+
+光纤陀螺简介
+
+https://mp.weixin.qq.com/s/ZRakGZWXlQaUgtMfe2c2aw
+
+不要轻易碰我，不然我就知道你有多软了
+
+>鲍哲南，女，1970年生，芝加哥大学博士（1995）。现为Stanford教授，美国工程院院士。
+
+https://mp.weixin.qq.com/s/NwptdxWiN4SadjUQafA5rw
+
+高端MEMS固体波动陀螺的发展与应用
+
+https://blog.csdn.net/richard_liujh/article/details/49615395
+
+光学心率测量原理
+
+https://mp.weixin.qq.com/s/NrNojDc9gEU3F_GybKA67Q
+
+三大屏下指纹技术方案对比
+
+https://mp.weixin.qq.com/s/2TKkoWZcYVVvlEKvA6iNyA
+
+近年值得关注的新兴MEMS和传感器技术
+
 # ML参考资源+
 
 https://mp.weixin.qq.com/s/Z1ixoRmUDl17CF4k7JS4zg
@@ -250,7 +324,7 @@ https://mp.weixin.qq.com/s/_AHqFqf1zFNtBifayiTfXQ
 
 你应具备这3大统计学常识&大数据思维
 
-# TensorFlow
+# TensorFlow+
 
 https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
 
@@ -299,25 +373,3 @@ Quick, Draw!涂鸦分类递归神经网络
 https://mp.weixin.qq.com/s/QQednlKYl6t3aO0xCzgGmA
 
 带你轻松使用TensorFlow创建大型线性模型
-
-# DL参考资源+
-
-https://mp.weixin.qq.com/s/Sb_kPgtwyQFWloDT3707TA
-
-深度学习了40万个表情，一大波AI表情包来了
-
-https://mp.weixin.qq.com/s/dJXl5tI-WKB3O28sgJmbkw
-
-机器也能感知时间，AI系统可预测5分钟内的未来！
-
-https://mp.weixin.qq.com/s/xS8EsNtSdHiFgg_HnuJJWg
-
-照片有灵异鬼影？伯克利陈启峰培育高能FCN“除灵师”
-
-https://mp.weixin.qq.com/s/keWrgmCfJrnswDDKEL52Cg
-
-数据少，就享受不到深度学习的红利了么？总是有办法的！
-
-https://mp.weixin.qq.com/s/YTHM0Ue2iWVyYhOp6UTr1g
-
-图像识别泛化能力人机对比：CNN比人类还差得远

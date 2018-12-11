@@ -212,21 +212,3 @@ Viola-Jones框架主要有三个要点：
 
 下面我们分别描述一下这几个要点。
 
-## Integral image
-
-Integral image一种计算差分数据的快速方法。
-
-![](/images/img2/integral_image_a.png)
-
-上图左侧是图像的像素值，右侧是相应的积分图。
-
-![](/images/img2/integral_image_b.png)
-
-由$$46 – 22 – 20 + 10 = 14$$，我们可以很快计算出左侧蓝色区域的像素值之和。
-
-参考：
-
-http://www.mathworks.com/help/vision/ref/integralimage.html
-
-Integral image
-

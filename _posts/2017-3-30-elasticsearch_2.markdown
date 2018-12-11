@@ -285,6 +285,10 @@ https://mp.weixin.qq.com/s/P6K1tXuBZHaaizwGVo-22A
 
 Kafka的API那么多，到底该怎么选？
 
+https://mp.weixin.qq.com/s/XvWxaoob_PYpcOt8XpK7mw
+
+杠上Spark、Flink？Kafka为何转型流数据平台
+
 # Flutter
 
 Flutter是Google用以帮助开发者在Ios和Android两个平台开发高质量原生应用的全新移动UI框架。Beta1版本于2018年2月27日在2018世界移动大会上公布。

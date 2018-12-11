@@ -1,8 +1,100 @@
 ---
 layout: post
-title:  图像处理理论（四）——Schmid滤波, 霍夫变换, HOG, Haar, SIFT
+title:  图像处理理论（四）——Schmid滤波, HOG, Haar, SIFT
 category: graphics 
 ---
+
+# Gabor滤波（续）
+
+## Gabor滤波的效果
+
+参考文献3，给出了Gabor滤波的效果图，如下所示：
+
+![](/images/article/gabor.png)
+
+**图1**
+
+从效果来看，该滤波可获得美术上的浮雕效果。但实际上，大多数的边缘检测算法都可得到类似效果，这并不是Gabor滤波的主流用法。
+
+以下对参考文献3做一个补充说明：
+
+1.Gabor滤波是复数域的，这点和之前提到的滤波算法有很大的不同。因此，Gabor滤波计算核的方法有3种：复数、实部和虚部。参考文献3采用的是实部法。1987年，J.P. Jones和L.A. Palmer发现Gabor变换所采用的核（Kernels）的实部与哺乳动物视觉皮层简单细胞2D感受野剖面（Profile）非常相似。
+
+2.实部计算的结果有正有负。参考文献3给出的归一化算法，很有通用性，摘录如下：
+
+$$G(x,y)=\frac{(f(x,y)-min(F))*D}{max(F)-min(F)}$$
+
+其中，F为源图像所有像素的集合，D为总的灰度级数。
+
+## Gabor滤波采样方式与图像压缩
+
+Gabor滤波和之前的滤波算法的另一大差异是：Gabor滤波核不是一个，而是由若干不同参数组合而成的一组核，其中的每一个参数组合被称为一个采样点。
+
+从Gabor filter的计算公式亦可看出，组成采样点的参数，既有时空域参数，也有频域参数。这些采样点在时空域和频域中如何分布，才能达到最终效果呢？
+
+由于Gabor filter不是正交基，因此针对采样点分布提出了**Tight Frame**的概念。参考文献1给出了满足Tight Frame要求的采样点分布方式（简称采样方式）的条件。这里的推导非常复杂，但从概念上可以类比信号处理中的奈奎斯特采样定理。
+
+Tight Frame有个重要特性：
+
+如果采样方式满足Tight Frame条件，且$$图像集B=Gabor(图像A),图像C=Gabor^{-1}(图像集B)$$，那么$$图像A\approx 图像C$$。其中的$$Gabor$$和$$Gabor^{-1}$$分别表示Gabor变换及其逆变换。
+
+参考文献2给出了采用上述方法对Lena图进行压缩并还原的例子。这也是Gabor滤波在图像处理领域的早期典型应用。
+
+## Gabor滤波与模式识别
+
+![](/images/article/gabor2.png)
+
+**图2**
+
+2000年以后，科学界对Gabor滤波的研究，主要集中在模式识别方面。比如图2就是参考文献4中给出的人脸识别方面的Gabor滤波效果图。其中，左边是原图，而右边是40组不同参数的Gabor滤波器所得到的滤波效果图。
+
+>注：1幅原图变成40幅滤波效果图的过程，在数学上是个**升维**过程。在后处理阶段为了处理的方便，往往会进行数据**降维**，如参考文献5所示。
+
+从中还可以看出，虽然图1显示出一定的艺术处理效果，但大多数情况下，Gabor滤波所得的图像是如图2所示的极度扭曲而无明显意义的图片。Gabor滤波的真正用途，并不是给人看，而是给机器看。
+
+从上面的讨论可知，Gabor滤波是一种带通滤波，使用不同的时空域或频域参数，可以过滤出不同的时空域或频域特征。这些特征正是模式识别所需要的。
+
+![](/images/article/gabor3.png)
+
+**图3**
+
+图3是参考文献4给出的一种Gabor滤波器的使用场景图，从中可以看出Gabor滤波效果图是如何应用到人脸识别技术中的。
+
+必须指出的是：**Gabor滤波效果图的后处理方法有很多种，而图3仅是其中一种而已。**
+
+## 参考
+
+1.1996年IEEE论文：《Image Representation Using 2D Gabor Wavelets》
+
+>作者：Tai Sing Lee，哈佛大学博士，卡内基梅隆大学教授。
+
+2.1988年IEEE论文：《Complete Discrete 2-D Gabor Transforms by Neural Networks for Image Analysis and Compression》
+
+>作者：JohnG. Daugman，哈佛大学博士，剑桥大学教授。
+
+3.http://blog.csdn.net/xiaowei_cqu/article/details/24745945
+
+Gabor滤波器
+
+4.《Face recognition using Ada-Boosted Gabor features》
+
+>作者：Peng Yang，Shiguang Shan，Wen Gao，Stan Z. Li，Dong Zhang，中科院计算所和微软亚洲研究院的几个小牛。
+
+>高文，1956年生，哈尔滨工业大学博士（1988）+东京大学博士（1991）。中科院计算所所长，中国工程院院士。
+
+>山世光，1975年生，哈尔滨工业大学本硕（1997，1999）+中科院博士（2004）。中科视拓CEO。
+
+5.http://www.cnblogs.com/Jack-Lee/p/3649114.html
+
+基于OpenCV的Gabor变换及特征提取
+
+https://mp.weixin.qq.com/s/RS0Zw6iLFQBUlpOdkuoFbg
+
+从傅立叶变换到Gabor滤波器
+
+https://mp.weixin.qq.com/s/UDJAYB79KaPB0pgnnCIPTw
+
+不确定性原理的前世今生
 
 # Schmid滤波
 
@@ -23,74 +115,6 @@ $$F(r,\sigma,\tau)=\frac{1}{Z}\cos\left(\frac{2\pi\tau r}{\sigma}\right)e^{-\fra
 2010年IEEE论文：《Constructing models for content-based image retrieval》
 
 >作者：Cordelia Schmid，女，卡尔斯鲁厄理工学院博士。现在INRIA（法国国家信息与自动化研究所）从事研究工作。
-
-# 霍夫变换
-
-Hough Transform最早是Paul V.C. Hough于1962年在一篇专利中提出的。1972年，Richard O. Duda和Peter E. Hart对其进行了扩展，并发表论文《Use of the Hough Transformation to Detect Lines and Curves in Pictures》。但是直到1981年，Dana H. Ballard发表《Generalizing the Hough transform to detect arbitrary shapes》之后，它才被人广泛使用。
-
->注：Paul V.C. Hough，生平不详。只知道是个物理学家，曾在Brookhaven National Laboratory工作过。
-
->Richard O. Duda，MIT博士，圣何塞州立大学教授。曾供职于SRI International。
-
->Peter E. Hart，斯坦福大学博士。SRI International研究员。
-
->Dana Harry Ballard，1946年生，UCI博士，德克萨斯大学教授。
-
-![](/images/article/R_theta_line.gif)
-
-如上图所示，一条直线的解析方程在x-y坐标系下是：
-
-$$y=mx+b$$
-
-而在极坐标系下则为：
-
-$$r= x\cos\theta + y\sin\theta$$
-
-上式中包含两个参数$$r,\theta$$，由$$r-\theta$$组成的平面又被称作parameter space或Hough space。
-
-对于一个给定点$$(x_0,y_0)$$我们在$$r-\theta$$平面绘出所有通过它的直线, 将得到一条正弦曲线。如下图所示：
-
-![](/images/article/hough.jpg)
-
-对于同一直线上的三点$$(x_0,y_0),(x_1,y_1),(x_2,y_2)$$，它们在$$r-\theta$$平面上的三条正弦曲线交于一点$$(r,\theta)$$，而这一点正好是该直线在极坐标系下的解析方程的参数值。如下图所示：
-
-![](/images/article/hough_2.jpg)
-
-可以想像，如果该直线上的点更多一些，那么在$$r-\theta$$平面上就有更多的正弦曲线交于一点，最终情况将如下图所示：
-
-![](/images/article/Hough-example-result-en.png)
-
-由此，我们可以总结Hough Transform的一般过程：
-
-1.首先对图片进行边缘化处理。
-
-2.将边缘上的点映射到parameter space中。
-
-3.追踪图像中每个点对应曲线间的交点. 如果交于一点的曲线的数量超过了阈值, 那么可以认为这个交点所代表的参数对在原图像中为一条直线。
-
-上面说的是霍夫线变换，类似的还有霍夫圆变换。只不过圆的参数有三个，即：
-
-$$(x_{center},y_{center},r)$$
-
-高维parameter space的积分，由于运算量比较大，因此又有霍夫梯度法之类的改进算法。
-
-参考：
-
-http://www.cs.jhu.edu/~misha/Fall04/GHT1.pdf
-
-Hough Transform
-
-http://blog.csdn.net/poem_qianmo/article/details/26977557
-
-OpenCV霍夫变换：霍夫线变换，霍夫圆变换合辑
-
-http://blog.csdn.net/tianwaifeimao/article/details/17678669
-
-基于LSD的直线提取算法
-
-https://mp.weixin.qq.com/s/WV78mvRn-cYm11cL4l2ScA
-
-开源、快速、高精度的椭圆检测—你值得拥有！
 
 # HOG
 
@@ -183,68 +207,3 @@ http://www.cnblogs.com/ronny/p/3886013.html
 1.对图像的分析不受图像的灰度水平和对比度变化的影响，即满足灰度不变性和对比度不变性。这主要体现了物体的**光照变化**。
 
 2.对图像的分析和图像的位置、大小、角度以及仿射变换无关，即满足平移不变性、尺度不变性、欧几里德不变性以及仿射不变性。这主要体现了物体的**空间位置变化**。
-
-## DOG & LOG
-
-DOG（Difference of Gaussians）和LOG（Laplacian of Gaussian）是尺度空间常用的两种算子。
-
-DOG的定义如下：
-
-$$\Gamma_{\sigma_1,\sigma_2}(x) = I*\frac{1}{\sigma_1\sqrt{2\pi}} \, e^{-(x^2)/(2\sigma^2_1)}-I*\frac{1}{\sigma_2\sqrt{2\pi}} \, e^{-(x^2)/(2\sigma_2^2)}$$
-
-DOG实际上就是两个不同方差的Gaussian核做差。它最典型的用法就是《图像处理理论（二）》中提到的**高斯差分金字塔**。
-
-LOG的计算分2步：
-
-1.计算Gaussian核和图像的卷积$$G(x,y)*f(x,y)$$。
-
-其中：
-
-$$G(x,y) = \frac{1}{2\pi \sigma^2} \exp \left(-\frac{x^2 + y^2}{2 \sigma^2}\right)$$
-
-2.对第1步的结果应用Laplace算子。
-
-Laplace算子的定义为：
-
-$$\Delta f = \nabla^2 f = \nabla \cdot \nabla f$$
-
-其中：
-
-$$\nabla = \left ( \frac{\partial}{\partial x_1} , \ldots , \frac{\partial}{\partial x_n} \right )$$
-
-因为：
-
-$$\Delta[G(x,y)*f(x,y)] = [\Delta G(x,y)]*f(x,y)$$
-
-一般将$$[\Delta G(x,y)]$$，称为LOG算子。
-
-![](/images/article/dog_vs_log.jpg)
-
-从上图可以看出两者的函数图像是非常相似的。
-
-参见：
-
-http://blog.csdn.net/kezunhai/article/details/11579785
-
-高斯拉普拉斯算子（Laplace of Gaussian）
-
-## 构建DOG金字塔
-
-《图像处理理论（二）》中提到的DOG金字塔只用了一个5*5的Gaussian核。如果使用多种Gaussian核，就可得到如下所示的DOG金字塔。
-
-![](/images/article/dog_pyramid.jpg)
-
-上图中，尺度相同，Gaussian核不同的图片被分为一组（Octave）。
-
-## 空间极值点检测
-
-关键点是由DOG空间的局部极值点组成的，关键点的初步探查是通过同一组内各DoG相邻两层图像之间比较完成的。
-
-为了寻找DoG函数的极值点，每一个像素点要和它所有的相邻点比较，看其是否比它的图像域和尺度域的相邻点大或者小。
-
-![](/images/article/dog_pyramid_2.jpg)
-
-如上图所示，中间的检测点要与同尺度的8个相邻点和上下相邻尺度对应的9×2个点共26个点比较，以确保在尺度空间和二维图像空间都检测到极值点。
-
-当然这样产生的极值点并不全都是稳定的特征点，因为某些极值点响应较弱，而且DOG算子会产生较强的边缘响应，因此需要剔除不稳定的边缘响应点。
-

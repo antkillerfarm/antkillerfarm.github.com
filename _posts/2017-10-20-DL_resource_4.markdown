@@ -162,6 +162,10 @@ https://mp.weixin.qq.com/s/uha9bmmLfSPbRtKeuSqNiw
 
 浙江移动—利用TensorFlow实现通讯运维智能化
 
+https://mp.weixin.qq.com/s/44-CKvdWm-4IZP0heGllsw
+
+Kaggle新手银牌：Airbus Ship Detection卫星图像分割检测
+
 ## AI与安全
 
 https://mp.weixin.qq.com/s/jBE4gP3O0qVJ50G49Q_xmQ

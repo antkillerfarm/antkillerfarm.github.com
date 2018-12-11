@@ -6,7 +6,7 @@ category: AI
 
 # TensorFlow
 
-## 可视化神经网络结构
+## TensorBoard
 
 TensorBoard是一个http服务，用以监控TensorFlow的执行。
 
@@ -29,6 +29,10 @@ TensorFlow学习_01_安装_基本操作_可视化结构、过程_Mnist
 https://blog.csdn.net/sinat_33761963/article/details/62433234
 
 Tensorflow的可视化工具Tensorboard的初步使用
+
+https://mp.weixin.qq.com/s/Zaz9hmTuUbd-hCx-zHhBgg
+
+TensorBoard：可视化学习
 
 ## 模型文件
 

@@ -289,3 +289,7 @@ https://mp.weixin.qq.com/s/26OZ5sLK3floF8I1SNIKuA
 https://mp.weixin.qq.com/s/TzNqZNEPBewR7neU7Or9nQ
 
 更侧重工业的应用：PRCV2018美图短视频实时分类挑战赛冠军技术方案
+
+https://mp.weixin.qq.com/s/lBu1q5Pyw9dZIxSYXUp2pw
+
+视频语义分割介绍

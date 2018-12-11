@@ -1,10 +1,121 @@
 ---
 layout: post
-title:  图像处理理论（三）——双边滤波, Steerable滤波, Gabor滤波
+title:  图像处理理论（三）——图像金字塔, 双边滤波, Steerable滤波, Gabor滤波
 category: graphics 
 ---
 
-# 图像金字塔（续）
+# 边缘检测（续）
+
+# 边界闭合
+
+如果像素$$(s,t)$$在像素$$(x,y)$$的领域，且满足以下条件：
+
+$$\mid G(s,t)-G(x,y)\mid \le 幅度阀值T$$
+
+$$\mid \theta(s,t)-\theta(x,y)\mid \le 角度阀值A$$
+
+则可将像素$$(s,t)$$和像素$$(x,y)$$连接起来。
+
+# canny算法
+
+Canny边缘检测算子是John F.Canny于1986年开发出来的一个多级边缘检测算法。
+
+>John F. Canny，1958年生，澳大利亚计算机科学家。MIT博士，UCB教授。
+
+1.应用高斯滤波来平滑图像，目的是去除噪声。
+
+2.找寻图像的强度梯度（intensity gradients)
+
+3.应用非最大抑制（non-maximum suppression）技术来消除边误检（本来不是但检测出来是）。
+
+4.应用双阈值的方法来决定可能的（潜在的）边界。
+
+5.利用滞后技术来跟踪边界。
+
+1、2的基本原理，上面已经讨论过了，这里不再赘述。
+
+## 非最大抑制
+
+![](/images/article/non-maximum.png)
+
+图中的数字代表了像素点的梯度强度，箭头方向代表了梯度方向。以第二排第三个像素点为例，由于梯度方向向上，则将这一点的强度（7）与其上下两个像素点的强度（5和4）比较，由于这一点强度最大，则保留。
+
+## 双阈值（Double Thresholding）
+
+设定一个阈值上界和阈值下界，图像中的像素点如果大于阈值上界，则认为必然是边界（称为强边界，strong edge），小于阈值下界则认为必然不是边界，两者之间的，被认为是候选项（称为弱边界，weak edge）。
+
+## 滞后的边界跟踪
+
+和强边界相连的弱边界认为是边界，其他的弱边界则被抑制。
+
+参考：
+
+http://www.cse.iitd.ernet.in/~pkalra/csl783/canny.pdf
+
+# 距离变换
+
+距离变换(distance transform)是一种将二值图像灰度化的变换。
+
+方法：
+
+首先对图像进行二值化处理（这里的二值化通常是边缘检测后的结果），然后给每个像素赋值为离它最近的边界像素点与其的距离（Manhattan距离或欧氏距离），以得到distance metric(距离矩阵)，那么离边界越远的点越亮。
+
+效果图：
+
+![](/images/article/distance_trans.png)
+
+这种效果通常叫做羽化效果。
+
+常用的距离公式有：
+
+$$\rho(r)=\frac{r^2}{2}$$
+
+$$\rho(r)=r$$
+
+$$\rho(r)=2\left(\sqrt{1+\frac{r^2}{2}}-1\right)$$
+
+$$\rho(r)=C^2\left(\frac{r}{C}-log\left(1+\frac{r}{C}\right)\right),C=1.3998$$
+
+$$\rho(r)=\frac{C^2}{2}\left[1-\exp\left(-\left(\frac{r}{C}\right)^2\right)\right],C=2.9846$$
+
+# 锐化
+
+锐化是与模糊相反的图像操作，它的主要思想是增大图像色彩（或灰度）的对比度，简单的说就是：让亮的更亮，让暗的更暗。因此，锐化操作和边缘检测有很大的共同点，常用的锐化算法有梯度锐化和拉普拉斯锐化。
+
+## 梯度锐化
+
+$$g=\begin{cases}
+f+C,  & G>T \\
+f, & G\le T \\
+\end{cases}$$
+
+当像素$$(x,y)$$的梯度G大于阀值T时，在旧的像素值f上加上常数C，否则，保持原值。
+
+## 拉普拉斯锐化
+
+$$g=f+\nabla^2f$$
+
+其中$$\nabla^2f$$表示f的二阶导数。
+
+# 图像金字塔
+
+一幅图像的金字塔是一系列以金字塔形状排列的分辨率逐步降低，且来源于同一张原始图的图像集合。
+
+![](/images/article/image_pyramid.png)
+
+图像金字塔在机器视觉和图像压缩领域使用的比较多，比如OpenGL中的纹理处理。
+
+图像金字塔有两种基本操作：
+
+1.对图像向上采样：PyrUp——图像尺寸加倍。
+
+2.对图像向下采样：PyrDown——图像尺寸减半。
+
+这两种操作由于是针对图像尺寸而言的，因此，其方向和上图所示的金字塔的方向**相反**。
+
+## 高斯金字塔
+
+高斯金字塔是通过高斯平滑和亚采样获得一些列下采样图像，也就是说第K层高斯金字塔通过平滑、亚采样就可以获得K+1层高斯图像，高斯金字塔包含了一系列低通滤波器，其截至频率从上一层到下一层是以因子2逐渐增加，所以高斯金字塔可以跨越很大的频率范围。
 
 ## 拉普拉斯金字塔
 
@@ -149,94 +260,3 @@ $$g(x,y;\lambda,\theta,\psi,\sigma,\gamma)=\exp\left(-\frac{x'^2+\gamma^2y'^2}{2
 此外，还有对数Gabor函数：
 
 $$G(f)=\exp\left(\frac{-(log(f/f_0))^2}{2(log(\sigma/f_0))^2}\right)$$
-
-## Gabor滤波的效果
-
-参考文献3，给出了Gabor滤波的效果图，如下所示：
-
-![](/images/article/gabor.png)
-
-**图1**
-
-从效果来看，该滤波可获得美术上的浮雕效果。但实际上，大多数的边缘检测算法都可得到类似效果，这并不是Gabor滤波的主流用法。
-
-以下对参考文献3做一个补充说明：
-
-1.Gabor滤波是复数域的，这点和之前提到的滤波算法有很大的不同。因此，Gabor滤波计算核的方法有3种：复数、实部和虚部。参考文献3采用的是实部法。1987年，J.P. Jones和L.A. Palmer发现Gabor变换所采用的核（Kernels）的实部与哺乳动物视觉皮层简单细胞2D感受野剖面（Profile）非常相似。
-
-2.实部计算的结果有正有负。参考文献3给出的归一化算法，很有通用性，摘录如下：
-
-$$G(x,y)=\frac{(f(x,y)-min(F))*D}{max(F)-min(F)}$$
-
-其中，F为源图像所有像素的集合，D为总的灰度级数。
-
-## Gabor滤波采样方式与图像压缩
-
-Gabor滤波和之前的滤波算法的另一大差异是：Gabor滤波核不是一个，而是由若干不同参数组合而成的一组核，其中的每一个参数组合被称为一个采样点。
-
-从Gabor filter的计算公式亦可看出，组成采样点的参数，既有时空域参数，也有频域参数。这些采样点在时空域和频域中如何分布，才能达到最终效果呢？
-
-由于Gabor filter不是正交基，因此针对采样点分布提出了**Tight Frame**的概念。参考文献1给出了满足Tight Frame要求的采样点分布方式（简称采样方式）的条件。这里的推导非常复杂，但从概念上可以类比信号处理中的奈奎斯特采样定理。
-
-Tight Frame有个重要特性：
-
-如果采样方式满足Tight Frame条件，且$$图像集B=Gabor(图像A),图像C=Gabor^{-1}(图像集B)$$，那么$$图像A\approx 图像C$$。其中的$$Gabor$$和$$Gabor^{-1}$$分别表示Gabor变换及其逆变换。
-
-参考文献2给出了采用上述方法对Lena图进行压缩并还原的例子。这也是Gabor滤波在图像处理领域的早期典型应用。
-
-## Gabor滤波与模式识别
-
-![](/images/article/gabor2.png)
-
-**图2**
-
-2000年以后，科学界对Gabor滤波的研究，主要集中在模式识别方面。比如图2就是参考文献4中给出的人脸识别方面的Gabor滤波效果图。其中，左边是原图，而右边是40组不同参数的Gabor滤波器所得到的滤波效果图。
-
->注：1幅原图变成40幅滤波效果图的过程，在数学上是个**升维**过程。在后处理阶段为了处理的方便，往往会进行数据**降维**，如参考文献5所示。
-
-从中还可以看出，虽然图1显示出一定的艺术处理效果，但大多数情况下，Gabor滤波所得的图像是如图2所示的极度扭曲而无明显意义的图片。Gabor滤波的真正用途，并不是给人看，而是给机器看。
-
-从上面的讨论可知，Gabor滤波是一种带通滤波，使用不同的时空域或频域参数，可以过滤出不同的时空域或频域特征。这些特征正是模式识别所需要的。
-
-![](/images/article/gabor3.png)
-
-**图3**
-
-图3是参考文献4给出的一种Gabor滤波器的使用场景图，从中可以看出Gabor滤波效果图是如何应用到人脸识别技术中的。
-
-必须指出的是：**Gabor滤波效果图的后处理方法有很多种，而图3仅是其中一种而已。**
-
-## 参考
-
-1.1996年IEEE论文：《Image Representation Using 2D Gabor Wavelets》
-
->作者：Tai Sing Lee，哈佛大学博士，卡内基梅隆大学教授。
-
-2.1988年IEEE论文：《Complete Discrete 2-D Gabor Transforms by Neural Networks for Image Analysis and Compression》
-
->作者：JohnG. Daugman，哈佛大学博士，剑桥大学教授。
-
-3.http://blog.csdn.net/xiaowei_cqu/article/details/24745945
-
-Gabor滤波器
-
-4.《Face recognition using Ada-Boosted Gabor features》
-
->作者：Peng Yang，Shiguang Shan，Wen Gao，Stan Z. Li，Dong Zhang，中科院计算所和微软亚洲研究院的几个小牛。
-
->高文，1956年生，哈尔滨工业大学博士（1988）+东京大学博士（1991）。中科院计算所所长，中国工程院院士。
-
->山世光，1975年生，哈尔滨工业大学本硕（1997，1999）+中科院博士（2004）。中科视拓CEO。
-
-5.http://www.cnblogs.com/Jack-Lee/p/3649114.html
-
-基于OpenCV的Gabor变换及特征提取
-
-https://mp.weixin.qq.com/s/RS0Zw6iLFQBUlpOdkuoFbg
-
-从傅立叶变换到Gabor滤波器
-
-https://mp.weixin.qq.com/s/UDJAYB79KaPB0pgnnCIPTw
-
-不确定性原理的前世今生
-

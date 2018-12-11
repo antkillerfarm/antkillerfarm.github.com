@@ -1,10 +1,42 @@
 ---
 layout: post
-title:  图像处理理论（九）——Camshift, Optical flow, Particle filter, 从BOW到SPM
+title:  图像处理理论（九）——Camshift, Harris
 category: graphics 
 ---
 
-# Meanshift（续）
+# Meanshift
+
+## Meanshift与目标跟踪（续）
+
+优点：
+
+（1）算法计算量不大，在目标区域已知的情况下完全可以做到实时跟踪；
+
+（2）采用核函数直方图模型，对边缘遮挡、目标旋转、变形和背景运动不敏感。
+
+缺点：
+
+（1）缺乏必要的模板更新；
+
+（2）跟踪过程中由于窗口宽度大小保持不变，当目标尺度有所变化时，跟踪就会失败；
+
+（3）当目标速度较快时，跟踪效果不好；
+
+（4）直方图特征在目标颜色特征描述方面略显匮乏，缺少空间信息；
+
+参考：
+
+https://blog.csdn.net/li_dongxuan/article/details/70667170
+
+目标跟踪：Meanshift, Camshift
+
+http://www.cnblogs.com/cfantaisie/archive/2011/06/10/2077190.html
+
+meanshift目标跟踪算法总结
+
+https://blog.csdn.net/jinshengtao/article/details/30258833
+
+基于MeanShift的目标跟踪算法及实现
 
 ## Meanshift与图像分割
 
@@ -58,203 +90,134 @@ https://wenku.baidu.com/view/59596ac42cc58bd63186bd37.html
 
 Camshift算法原理
 
-# Optical flow
+# Harris
 
-## 基本概念
+## 角点
 
-从本质上说，**光流就是你在这个运动着的世界里感觉到的明显的视觉运动**。例如，当你坐在火车上，然后往窗外看。你可以看到树、地面、建筑等等，他们都在往后退。这个运动就是光流。
+角点是图像很重要的特征,对图像图形的理解和分析有很重要的作用。角点在保留图像图形重要特征的同时,可以有效地减少信息的数据量,使其信息的含量很高,有效地提高了计算的速度,有利于图像的可靠匹配,使得实时处理成为可能。角点在三维场景重建运动估计，目标跟踪、目标识别、图像配准与匹配等计算机视觉领域起着非常重要的作用。
 
-一些比较远的目标，例如云、山，它们移动很慢，感觉就像静止一样。但一些离得比较近的物体，例如建筑和树，就比较快的往后退，然后离我们的距离越近，它们往后退的速度越快。**可以通过不同目标的光流运动速度判断它们与我们的距离。**
+下面有两幅不同视角的图像，通过找出对应的角点进行匹配。
 
-光流除了提供远近外，还可以提供**角度信息**。与咱们的眼睛正对着的方向成90度方向运动的物体速度要比其他角度的快。
+![](/images/img2/corner_matching.png)
 
-以上是光流的一个直观的定义和特性，下面谈一下它的严谨的研究性定义。
+我们可以直观的概括下角点所具有的特征：
 
-光流的概念是Gibson在1950年首先提出来的。**它是空间运动物体在观察成像平面上的像素运动的瞬时速度，是利用图像序列中像素在时间域上的变化以及相邻帧之间的相关性来找到上一帧跟当前帧之间存在的对应关系，从而计算出相邻帧之间物体的运动信息的一种方法。**一般而言，光流是由于场景中前景目标本身的移动、相机的运动，或者两者的共同运动所产生的。
+>轮廓之间的交点；
 
-当人的眼睛观察运动物体时，物体的景象在人眼的视网膜上形成一系列连续变化的图像，这一系列连续变化的信息不断“流过”视网膜（即图像平面），好像一种光的“流”，故称之为光流（optical flow）。光流表达了图像的变化，由于它包含了目标运动的信息，因此可被观察者用来确定目标的运动情况。
+>对于同一场景，即使视角发生变化，通常具备稳定性质的特征；
 
-研究光流场的目的就是为了从图片序列中近似得到不能直接得到的运动场。**运动场（motion field），其实就是物体在三维真实世界中的运动；光流场，是运动场在二维图像平面上（人的眼睛或者摄像头）的投影。**
+>该点附近区域的像素点无论在梯度方向上还是其梯度幅值上有着较大变化；
 
-## 光流约束方程
+角点匹配（corner matching）是指寻找两幅图像之间的特征像素点的对应关系，从而确定两幅图像的位置关系。
 
-1981年，Horn和Schunck创造性地将二维速度场与灰度相联系，引入光流约束方程，得到光流计算的基本算法。人们基于不同的理论基础提出各种光流计算方法，算法性能各有不同。Barron等人对多种光流计算技术进行了总结，按照理论基础与数学方法的区别把它们分成四种：基于梯度的方法、基于匹配的方法、基于能量的方法、基于相位的方法。近年来神经动力学方法也颇受学者重视。
+角点匹配可以分为以下四个步骤：
 
-这里以最常见的**亮度恒定（brightness consistancy）假设**，介绍一下该假设下的光流约束方程的推导方法。
+**提取检测子**：在两张待匹配的图像中寻找那些最容易识别的像素点(角点)，比如纹理丰富的物体边缘点等。
 
-令$$I(x,y,t)$$表示t时刻的像素点$$(x,y))$$的灰度值，则根据亮度恒定假设，我们有：
+**提取描述子**：对于检测出的角点，用一些数学上的特征对其进行描述，如梯度直方图，局部随机二值特征等。检测子和描述子的常用提取方法有:sift, harris, surf, fast, agast, brisk, freak, brisk,orb等。
 
-$$I(x,y,t) = I(x + \Delta x, y + \Delta y, t + \Delta t)$$
+**匹配**：通过各个角点的描述子来判断它们在两张图像中的对应关系。常用方法如flann。
 
-亮度恒定假设在现实中当然并不一定成立，但却是比较合理和自然的。只要$$\Delta t$$足够小，就基本能满足该假设。
+**去外点**：去除错误匹配的外点，保留正确的内点。常用方法有Ransac, GTM。
 
-我们对上式右侧进行一阶Taylor展开，可得：
+这里我们只介绍最常用的Harris算子。
 
-$$I(x + \Delta x, y + \Delta y, t + \Delta t) \approx I(x,y,t) + \frac{\partial I}{\partial x}\Delta x + \frac{\partial I}{\partial y}\Delta y + \frac{\partial I}{\partial t}\Delta t$$
+## Harris Corner Detector
 
-根据亮度恒定假设可得：
+Harris Corner Detector是Chris Harris和Mike Stephens于1988年提出的算子。
 
-$$\frac{\partial I}{\partial x}\Delta x + \frac{\partial I}{\partial y}\Delta y + \frac{\partial I}{\partial t}\Delta t = 0$$
+论文：
 
-上式即为亮度恒定假设的**光流约束方程**。由于这个方程有两个未知数，所以没有唯一解。为了得到唯一解，就必须新增约束或假设，因此也就有了如下不同的算法。
+《A Combined Corner and Edge Detector》
 
-| 名称 | 约束或假设 |
-|:--:|:--:|
-| Lukas-Kanade | 亮度恒定假设+局部光流恒定 |
-| Farneback | 梯度恒定假设+局部光流恒定 |
-| Horn-Schunck | 亮度恒定假设+光流场平滑 |
-| Brox | 亮度恒定假设+梯度恒定假设+光流场平滑 |
+![](/images/img2/Harris.png)
+
+如上图所示。人眼对角点的识别通常是在一个局部的小区域或小窗口完成的。如果在各个方向上移动这个特征的小窗口，窗口内区域的灰度发生了较大的变化，那么就认为在窗口内遇到了角点。如果这个特定的窗口在图像各个方向上移动时，窗口内图像的灰度没有发生变化，那么窗口内就不存在角点；如果窗口在某一个方向移动时，窗口内图像的灰度发生了较大的变化，而在另一些方向上没有发生变化，那么，窗口内的图像可能就是一条直线的线段。
+
+对于图像$$I(x,y)$$，当在点(x,y)处平移$$(\Delta x,\Delta y)$$后的自相似性，可以通过自相关函数给出：
+
+$$c(x,y;\Delta x,\Delta y) = \sum_{(u,v)\in W(x,y)}w(u,v)(I(u,v) – I(u+\Delta x,v+\Delta y))^2$$
+
+其中，$$W(x,y)$$是以点(x,y)为中心的窗口，$$w(u,v)$$为加权函数，它既可是常数，也可以是高斯加权函数。
+
+![](/images/img2/harris_window.png)
+
+根据泰勒展开，对图像$$I(x,y)$$在平移$$(\Delta x,\Delta y)$$后进行一阶近似：
+
+$$I(u+\Delta x,v+\Delta y) = I(u,v)+I_x(u,v)\Delta x+I_y(u,v)\Delta y+O(\Delta x^2,\Delta y^2)\approx I(u,v)+I_x(u,v)\Delta x+I_y(u,v)\Delta y$$
+
+其中，$$I_x,I_y$$是图像$$I(x,y)$$的偏导数，则自相关函数可简化为：
+
+$$c(x,y;\Delta x,\Delta y)\approx \sum_w (I_x(u,v)\Delta x+I_y(u,v)\Delta y)^2=[\Delta x,\Delta y]M(x,y)\begin{bmatrix}\Delta x \\ \Delta y\end{bmatrix}$$
+
+其中：
+
+$$M(x,y)=\sum_w \begin{bmatrix}I_x(x,y)^2&I_x(x,y)I_y(x,y) \\ I_x(x,y)I_y(x,y)&I_y(x,y)^2\end{bmatrix} = \begin{bmatrix}\sum_w I_x(x,y)^2&\sum_w I_x(x,y)I_y(x,y) \\\sum_w I_x(x,y)I_y(x,y)&\sum_w I_y(x,y)^2\end{bmatrix}=\begin{bmatrix}A&C\\C&B\end{bmatrix}$$
+
+即：
+
+$$c(x,y;\Delta x,\Delta y)\approx A\Delta x^2+2C\Delta x\Delta y+B\Delta y^2$$
+
+其中：
+
+$$A=\sum_w I_x^2, B=\sum_w I_y^2,C=\sum_w I_x I_y$$
+
+二次项函数本质上就是一个椭圆函数。椭圆的扁率和尺寸是由M(x,y)的特征值$$\lambda_1, \lambda_2$$决定的，轴向是由M(x,y)的特征矢量决定的，如下图所示，椭圆方程为：
+
+$$[\Delta x,\Delta y]M(x,y)\begin{bmatrix}\Delta x \\ \Delta y\end{bmatrix} = 1$$
+
+![](/images/img2/harris_2.png)
+
+椭圆函数特征值与图像中的角点、直线（边缘）和平面之间的关系如下图所示。共可分为三种情况：
+
+**图像中的直线**。一个特征值大，另一个特征值小，$$\lambda_1\gg \lambda_2$$或$$\lambda_2\gg \lambda_1$$。自相关函数值在某一方向上大，在其他方向上小。
+
+**图像中的平面**。两个特征值都小，且近似相等；自相关函数数值在各个方向上都小。
+
+**图像中的角点**。两个特征值都大，且近似相等，自相关函数在所有方向都增大。
+
+![](/images/img2/harris_3.png)
+
+根据二次项函数特征值的计算公式，我们可以求M(x,y)矩阵的特征值。但是Harris给出的角点差别方法并不需要计算具体的特征值，而是计算一个角点响应值R来判断角点。R的计算公式为：
+
+$$R=det \boldsymbol{M} - \alpha(trace\boldsymbol{M})^2$$
+
+式中，$$det\boldsymbol{M}$$为矩阵$$\boldsymbol{M}=\begin{bmatrix}A&B\\B&C\end{bmatrix}$$的行列式；$$trace\boldsymbol{M}$$为矩阵M的直迹；$$\alpha$$为经验常数，取值范围为0.04~0.06。事实上，特征是隐含在$$det\boldsymbol{M}$$和$$trace\boldsymbol{M}$$中，因为，
+
+$$det\boldsymbol{M} = \lambda_1\lambda_2=AC-B^2$$
+
+$$trace\boldsymbol{M}=\lambda_2+\lambda_2=A+C$$
+
+## Harris角点的性质
+
+**增大$$\alpha$$的值，将减小角点响应值R，降低角点检测的灵性，减少被检测角点的数量；减小$$\alpha$$值，将增大角点响应值R，增加角点检测的灵敏性，增加被检测角点的数量**。
+
+**Harris角点检测算子对亮度和对比度的变化不敏感**。这是因为在进行Harris角点检测时，使用了微分算子对图像进行微分运算，而微分运算对图像密度的拉升或收缩和对亮度的抬高或下降不敏感。换言之，对亮度和对比度的仿射变换并不改变Harris响应的极值点出现的位置。
+
+Harris角点检测算子使用的是角点附近的区域灰度二阶矩矩阵。而二阶矩矩阵可以表示成一个椭圆，椭圆的长短轴正是二阶矩矩阵特征值平方根的倒数。当特征椭圆转动时，特征值并不发生变化，所以判断角点响应值R也不发生变化，由此说明**Harris角点检测算子具有旋转不变性**。
+
+**Harris角点检测算子不具有尺度不变性**。如下图所示，当右图被缩小时，在检测窗口尺寸不变的前提下，在窗口内所包含图像的内容是完全不同的。左侧的图像可能被检测为边缘或曲线，而右侧的图像则可能被检测为一个角点。
+
+![](/images/img2/harris_4.png)
+
+为了解决尺度不变性问题，可以使用多尺度Harris角点算法，将Harris角点检测算子与高斯尺度空间表示相结合，使其具有尺度不变性：
+
+$$\boldsymbol{M}=\mu(x,\sigma_I,\sigma_D)=\sigma_D^2g(\sigma_I)\otimes\begin{bmatrix}L_x^2(x,\sigma_D)&L_xL_y(x,\sigma_D)\\L_xL_y(x,\sigma_D)&L_y^2(x,\sigma_D)\end{bmatrix}$$
 
 ## 参考
 
-http://blog.csdn.net/zouxy09/article/details/8683859
+http://blog.csdn.net/lwzkiller/article/details/54633670
 
-光流Optical Flow介绍与OpenCV实现
+Harris角点检测原理详解
 
-http://www.cnblogs.com/walccott/p/4956858.html
+http://www.cnblogs.com/ronny/p/4009425.html
 
-Horn-Schunck光流法
+Harris角点
 
-http://blog.csdn.net/u014568921/article/details/46638557
+https://blog.csdn.net/davebobo/article/details/52598850
 
-目标跟踪之Lukas-Kanade光流法
+检测并匹配兴趣点
 
-http://www.cnblogs.com/gnuhpc/archive/2012/12/04/2802124.html
+https://blog.csdn.net/songzitea/article/details/17969375
 
-Lucas–Kanade光流算法
-
-http://www.cnblogs.com/dzyBK/p/5096860.html
-
-光流算法：Brox算法
-
-http://www.cnblogs.com/quarryman/p/optical_flow.html
-
-图像分析之光流之经典
-
-https://zhuanlan.zhihu.com/p/31726032
-
-走进光流的世界
-
-# Particle filter
-
-
-
-
-参考：
-
-http://www.cvvision.cn/6002.html
-
-基于粒子滤波器的目标跟踪算法及实现
-
-http://www.cnblogs.com/zjb0823/p/3806333.html
-
-运动目标跟踪算法综述
-
-https://wenku.baidu.com/view/6554ba7402768e9951e73864.html
-
-基于粒子滤波的视频目标追踪
-
-http://www.cnblogs.com/feisky/archive/2009/11/10/1600086.html
-
-粒子滤波概述
-
-http://www.cnblogs.com/yangyangcv/archive/2010/05/23/1742263.html
-
-基于粒子滤波的物体跟踪
-
-https://www.zhihu.com/question/25371476
-
-怎样从实际场景上理解粒子滤波（Particle Filter）？
-
-http://freemind.pluskid.org/machine-learning/hmm-kalman-particle-filtering
-
-漫谈HMM：Kalman/Particle Filtering
-
-https://zhuanlan.zhihu.com/p/26783371
-
-视频跟踪算法之粒子滤波
-
-# TLD
-
-http://blog.csdn.net/zouxy09/article/details/7893011
-
-TLD（Tracking-Learning-Detection）学习与源码理解系列文章
-
-http://blog.csdn.net/carson2005/article/details/7647500
-
-比微软kinect更强的视频跟踪算法--TLD跟踪算法介绍
-
-http://www.cnblogs.com/lxy2017/p/3927456.html
-
-TLD（Tracking-Learning-Detection）一种目标跟踪算法
-
-# 从BOW到SPM
-
-## BOW
-
-Bag-of-words模型是信息检索领域常用的文档表示方法。在信息检索中，BOW模型假定对于一个文档，忽略它的单词顺序和语法、句法等要素，将其仅仅看作是若干个词汇的集合，文档中每个单词的出现都是独立的，不依赖于其它单词是否出现。
-
-为了表示一幅图像，我们可以将图像看作文档，即若干个“视觉词汇”的集合，同样的，视觉词汇相互之间没有顺序。
-
-![](/images/article/cv_bow.jpg)
-
-由于图像中的词汇不像文本文档中的那样是现成的，我们需要首先从图像中提取出相互独立的视觉词汇，这通常需要经过三个步骤：
-
-（1）特征检测。
-
-（2）特征表示。
-
-（3）单词本的生成。
-
-而SIFT算法是提取图像中局部不变特征的应用最广泛的算法，因此我们可以用SIFT算法从图像中提取不变特征点，作为视觉词汇，并构造单词表，用单词表中的单词表示一幅图像。
-
-参考：
-
-http://blog.csdn.net/v_JULY_v/article/details/6555899
-
-SIFT算法的应用--目标识别之Bag-of-words模型
-
-https://zhuanlan.zhihu.com/p/25999669
-
-BOW算法，被CNN打爆之前的王者
-
-## SPM
-
-http://blog.csdn.net/chlele0105/article/details/16972695
-
-SPM:Spatial Pyramid Matching for Recognizing Natural Scene Categories空间金字塔匹配
-
-http://blog.csdn.net/jwh_bupt/article/details/9625469
-
-Spatial Pyramid Matching 小结
-
-# ILSVRC 2010考古
-
-ILSVRC 2010的冠军是NEC和UIUC的联合队伍。这也是DL于2012年大放光彩之前比较杰出的成果。虽然现在它通常作为反面教材，出现在与DL的对比场景中，然而不可否认的是，它仍然是一个算法的杰作。
-
->林元庆，清华大学硕士+宾夕法尼亚大学博士（2008年）。原百度研究院院长。
-
-![](/images/article/ILSVRC_2010.png)
-
-上图是NEC算法的基本流程图。这里不打算描述整个算法，而仅对其中涉及的术语做一个解释。
-
-# 模板匹配
-
-https://blog.csdn.net/liyuanbhu/article/details/49837661
-
-OpenCV 学习笔记（模板匹配）
-
-https://blog.csdn.net/xxboy61/article/details/38319757
-
-OpenCV实现之模板匹配(Template Matching)
-
-# CG/CV参考资源
-
-https://zhuanlan.zhihu.com/p/31921046
-
-深度相机的主流技术方案一览Structure Light，ToF，Stereo Dual
-
-https://zhuanlan.zhihu.com/p/32752535
-
-立体匹配成像算法BM，SGBM，GC，SAD一览
-
+角点匹配方法

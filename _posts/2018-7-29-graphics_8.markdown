@@ -6,6 +6,24 @@ category: graphics
 
 # Viola-Jones（续）
 
+## Integral image
+
+Integral image一种计算差分数据的快速方法。
+
+![](/images/img2/integral_image_a.png)
+
+上图左侧是图像的像素值，右侧是相应的积分图。
+
+![](/images/img2/integral_image_b.png)
+
+由$$46 – 22 – 20 + 10 = 14$$，我们可以很快计算出左侧蓝色区域的像素值之和。
+
+参考：
+
+http://www.mathworks.com/help/vision/ref/integralimage.html
+
+Integral image
+
 ## Cascade分类器
 
 Cascade分类器，简单来说，就是先将几个通过Adaboost方法得到的强分类器进行排序，排序原则是简单的放在前边。因为通常来说人脸只占一小部分，所以可以很放心地在前几层分类器就拒绝掉大部分非人脸区域。只要前一级拒绝了，就不在进入下一级分类器，这可以大大提高速度。其本质是一颗退化决策树。
@@ -248,34 +266,3 @@ opencv直方图反向投影
 然后，使用统计得到的概率直方图，将**全图**转换为反向投影图，并应用Meanshift算法。由于前后两帧中目标通常不会隔的太远，原目标中心可能仍在目标范围内。因此，目标中心会向反向投影图中概率大的地方移动，从而达到了目标跟踪的效果。
 
 总结：用meanshift进行跟踪最重要的一点是输入图像的把握，也就是要让它的迭代能越来越迭代到目标上。这种图像也不一定就是反向投影图，只要是一幅反映当前图像中每个像素点含有目标概率的图就可以了。反向投影图恰好就是这样的一幅图而已。
-
-优点：
-
-（1）算法计算量不大，在目标区域已知的情况下完全可以做到实时跟踪；
-
-（2）采用核函数直方图模型，对边缘遮挡、目标旋转、变形和背景运动不敏感。
-
-缺点：
-
-（1）缺乏必要的模板更新；
-
-（2）跟踪过程中由于窗口宽度大小保持不变，当目标尺度有所变化时，跟踪就会失败；
-
-（3）当目标速度较快时，跟踪效果不好；
-
-（4）直方图特征在目标颜色特征描述方面略显匮乏，缺少空间信息；
-
-参考：
-
-https://blog.csdn.net/li_dongxuan/article/details/70667170
-
-目标跟踪：Meanshift, Camshift
-
-http://www.cnblogs.com/cfantaisie/archive/2011/06/10/2077190.html
-
-meanshift目标跟踪算法总结
-
-https://blog.csdn.net/jinshengtao/article/details/30258833
-
-基于MeanShift的目标跟踪算法及实现
-

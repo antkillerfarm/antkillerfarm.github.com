@@ -130,6 +130,10 @@ https://mp.weixin.qq.com/s/RVg2_abeeYVDlvDRkzPpPQ
 
 常见近30种NLP任务的练手项目
 
+https://mp.weixin.qq.com/s/Rd3-ypRYiJObi-e2JDeOjQ
+
+深度长文：NLP的巨人肩膀（上）
+
 https://www.msra.cn/zh-cn/news/features/ruihua-song-20161226
 
 宋睿华：好玩的文本生成

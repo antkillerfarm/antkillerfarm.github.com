@@ -256,7 +256,7 @@ https://blog.csdn.net/quhediegooo/article/details/56834417
 
 Voice Detection包括两个方面：
 
-1.Beginning-Point Detection。也叫做Voice Activity Detection（VAD）。有些类似于唤醒检测，但并不局限于设备的开机时刻。
+1.Beginning-Point Detection。也叫做Voice Activity Detection（VAD）或者Acoustic event detection (AED)。有些类似于唤醒检测，但并不局限于设备的开机时刻。
 
 2.End-Point Detection。
 
@@ -283,10 +283,4 @@ VAD综述
 英语一般包含43个音素，因此Tri-phone共有$$43^3\approx 80K$$种不同组合。
 
 但是这些组合的概率是众寡悬殊的，有些组合很常见，而有些组合很罕见。因此我们需要合并相似的发音组合。这通常采用CART决策树来进行聚类。这样做还可以减少状态数量，提高计算效率。
-
-## 发音词典
-
-Pronunciation Dict用于将文本转换成对应的发音。比较常用的有CMU的发音词典，用于美国英语，包含了100K的单词。用法参见《LSTM Speech Recognition实战》。
-
-然而，无论多大的词典都会有遇到Unknown Words的情况。一般可根据现有发音构建统计模型，来预测发音。这也是符合人们的认知规律的：人遇到一个陌生的新词，也会根据过往的经验，来预测词的发音。通常这样做，会有70%～85%的准确率。
 

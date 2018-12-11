@@ -6,6 +6,70 @@ category: graphics
 
 # SIFT（续）
 
+## DOG & LOG
+
+DOG（Difference of Gaussians）和LOG（Laplacian of Gaussian）是尺度空间常用的两种算子。
+
+DOG的定义如下：
+
+$$\Gamma_{\sigma_1,\sigma_2}(x) = I*\frac{1}{\sigma_1\sqrt{2\pi}} \, e^{-(x^2)/(2\sigma^2_1)}-I*\frac{1}{\sigma_2\sqrt{2\pi}} \, e^{-(x^2)/(2\sigma_2^2)}$$
+
+DOG实际上就是两个不同方差的Gaussian核做差。它最典型的用法就是《图像处理理论（二）》中提到的**高斯差分金字塔**。
+
+LOG的计算分2步：
+
+1.计算Gaussian核和图像的卷积$$G(x,y)*f(x,y)$$。
+
+其中：
+
+$$G(x,y) = \frac{1}{2\pi \sigma^2} \exp \left(-\frac{x^2 + y^2}{2 \sigma^2}\right)$$
+
+2.对第1步的结果应用Laplace算子。
+
+Laplace算子的定义为：
+
+$$\Delta f = \nabla^2 f = \nabla \cdot \nabla f$$
+
+其中：
+
+$$\nabla = \left ( \frac{\partial}{\partial x_1} , \ldots , \frac{\partial}{\partial x_n} \right )$$
+
+因为：
+
+$$\Delta[G(x,y)*f(x,y)] = [\Delta G(x,y)]*f(x,y)$$
+
+一般将$$[\Delta G(x,y)]$$，称为LOG算子。
+
+![](/images/article/dog_vs_log.jpg)
+
+从上图可以看出两者的函数图像是非常相似的。
+
+参见：
+
+http://blog.csdn.net/kezunhai/article/details/11579785
+
+高斯拉普拉斯算子（Laplace of Gaussian）
+
+## 构建DOG金字塔
+
+《图像处理理论（三）》中提到的DOG金字塔只用了一个5*5的Gaussian核。如果使用多种Gaussian核，就可得到如下所示的DOG金字塔。
+
+![](/images/article/dog_pyramid.jpg)
+
+上图中，尺度相同，Gaussian核不同的图片被分为一组（Octave）。
+
+## 空间极值点检测
+
+关键点是由DOG空间的局部极值点组成的，关键点的初步探查是通过同一组内各DoG相邻两层图像之间比较完成的。
+
+为了寻找DoG函数的极值点，每一个像素点要和它所有的相邻点比较，看其是否比它的图像域和尺度域的相邻点大或者小。
+
+![](/images/article/dog_pyramid_2.jpg)
+
+如上图所示，中间的检测点要与同尺度的8个相邻点和上下相邻尺度对应的9×2个点共26个点比较，以确保在尺度空间和二维图像空间都检测到极值点。
+
+当然这样产生的极值点并不全都是稳定的特征点，因为某些极值点响应较弱，而且DOG算子会产生较强的边缘响应，因此需要剔除不稳定的边缘响应点。
+
 ## 关键点
 
 ![](/images/article/extreme_point.jpg)
@@ -153,109 +217,3 @@ Demosaic的算法一般如下图所示：
 Demosaic处理后的图片才是真正的彩色图片，如下图所示：
 
 ![](/images/img2/ISP_4.png)
-
-## AWB(Auto White Balance) & Color Correction
-
-白平衡的基本原理是在任意环境下，把白色物体还原成白色物体，也就是通过找到图像中的白块，然后调整R/G/B的比例。
-
-AWB算法通常包括的步骤如下：
-
-(1)色温统计：根据图像统计出色温；
-
-(2)计算通道增益：计算出R和B通道的增益；
-
-(3)进行偏色的矫正：根据给出的增益，算出偏色图像的矫正。
-
-由于色温这个东西并不好测量，学界提出的各种模型也各有其局限，因此业界通常采用如下的简易算法实现AWB：
-
-$$K=\frac{R_{aver}+G_{aver}+B_{aver}}{3}$$
-
-$$K_r=K/R_{aver}$$
-
-$$K_g=K/G_{aver}$$
-
-$$K_b=K/B_{aver}$$
-
-$$R_{new}=R*K_r$$
-
-$$G_{new}=G*K_g$$
-
-$$B_{new}=B*K_b$$
-
-由于人类眼睛可见光的频谱响应度和半导体传感器频谱响应度之间存在差别，还有透镜等的影响，得到的RGB值颜色会存在偏差，因此必须对颜色进行校正。
-
-经过AWB和Color Correction后的效果如下所示：
-
-![](/images/img2/ISP_5.png)
-
-## Gamma Correction
-
-人眼对外界光源的感光值与输入光强不是呈线性关系的，而是呈指数型关系的。在低照度下，人眼更容易分辨出亮度的变化，随着照度的增加，人眼不易分辨出亮度的变化。而摄像机感光与输入光强呈线性关系。如下图所示：
-
-![](/images/img2/gamma.png)
-
-为方便人眼辨识图像，需要将摄像机采集的图像进行gamma校正。修正后的效果如下：
-
-![](/images/img2/ISP_6.png)
-
-参考：
-
-http://blog.163.com/hong.lg0518@126/blog/static/18907460200972711556304/
-
-伽马校正（Gamma Correction）
-
-http://www.cnblogs.com/pzxbc/archive/2011/12/26/2302572.html
-
-Gamma矫正(Gamma correction)
-
-http://blog.csdn.net/lichengyu/article/details/8457425
-
-Gamma校正及其OpenCV实现
-
-## Denoise & Sharpness
-
-Denoise是指去除噪声，一般使用低通滤波器即可。
-
-Sharpness是对图像边缘进行锐化。
-
-Denoise & Sharpness或者后续更复杂的处理，都属于图像增强的范畴了。这里功能的多少主要取决于ISP的性能，并不是每个ISP都有。
-
-## 分辨率
-
-720p->1080p->4K->8K
-
-这里稍微注意一下就会发现，2K到哪里去了？
-
-其实，1080p就是2K。早先的称呼中，数字表示的是垂直分辨率，也就是矩形的宽。比如1080p实际上是1920x1080。但后来的称呼大约是为了体现数量，改为了水平分辨率，也就是矩形的长。
-
-参考：
-
-www.cnetnews.com.cn/2016/0128/3072316.shtml
-
-揭秘电视分辨率：1080p、2K、UHD、4K、8K，它们都是什么鬼？
-
-## 总结
-
-上面提到的主要是普通相机的ISP，但从目前的趋势来看，由于汽车自动驾驶技术的目标逐渐趋于全自动驾驶，以人的视觉友好性为目的的图像色彩重建变得多余，而以计算机视觉友好性为目的的图像质量需求将会进一步增加。
-
-## 参考
-
-http://www.cnblogs.com/agllero/p/4489689.html
-
-Image Signal Processor
-
-http://blog.csdn.net/yapingmcu/article/details/9215747
-
-camera isp（Image Signal Processor）
-
-http://blog.csdn.net/weijory/article/details/53306545
-
-ISP算法概述
-
-http://www.cnblogs.com/whw19818/
-
-一个ISP的blog
-
-https://github.com/codeauroraforum/gtec-demo-framework/tree/master/DemoApps/OpenVX/SoftISP
-
-一个基于OpenVX的ISP软实现。

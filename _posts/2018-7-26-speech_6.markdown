@@ -4,6 +4,14 @@ title:  语音识别（六）——语言模型进阶, GMM-HMM, WFST
 category: speech 
 ---
 
+# 声学模型进阶（续）
+
+## 发音词典
+
+Pronunciation Dict用于将文本转换成对应的发音。比较常用的有CMU的发音词典，用于美国英语，包含了100K的单词。用法参见《LSTM Speech Recognition实战》。
+
+然而，无论多大的词典都会有遇到Unknown Words的情况。一般可根据现有发音构建统计模型，来预测发音。这也是符合人们的认知规律的：人遇到一个陌生的新词，也会根据过往的经验，来预测词的发音。通常这样做，会有70%～85%的准确率。
+
 # 语言模型进阶
 
 ## 语言理论
@@ -283,32 +291,3 @@ $$[T_1\circ T_2](x,y)=\bigoplus_z [T_1](x,z)\bigotimes [T_2](z,y)$$
 （3）如果$$q_1$$到$$r_1$$的边$$t_1$$的输出等于$$q_2$$到$$r_2$$的边$$t_2$$的输入，那么$$(q_1,q_2)$$和$$(r_1,r_2)$$应该有一条边，如果是tripical半环，则该边权重是以上两边权重之和。
 
 当$$T_1$$的输出包含$$\epsilon$$，$$T_2$$的输入包含$$\epsilon$$的时候，会导致产生大量多余的边，使得最终结果不正确。这时需要去除$$\epsilon$$-path。细节略。
-
-## Intersection
-
-![](/images/img2/intersection.png)
-
-Intersection运算的形式化描述为：
-
-$$[A_1\cap A_2](x)=[A_1](x)\otimes[A_2](x)$$
-
-Intersection是求两个WFST的公共部分，并把相应的权重相加。
-
-## Difference
-
-![](/images/img2/difference.png)
-
-Difference运算的形式化描述为：
-
-$$[A_1 - A_2](x)=[A_1\cap \overline{A_2}](x)$$
-
-Difference大约是简单操作中最不好懂的了，我足足看了2个小时才看明白。
-
-Difference的字面意思是：从A中去掉B。
-
-比如上图中的A可以接受4个序列：ab,ad,cb,cd。但是ab,cd出现在B中，因此A-B就只有ad和cb了。可以看出，这里的B，其权重是无关紧要的，因此该操作要求B必须是无权重的FST。
-
-Difference的示例也可以很复杂，比如下图就不那么容易看懂了。这也是卡了我2个小时的元凶。
-
-![](/images/img2/difference_2.png)
-

@@ -253,6 +253,10 @@ https://mp.weixin.qq.com/s/EWMXDH7Bx0aQaFsGkZaIbA
 
 OpenAI概念学习新模型：学会概念仅需5次示范，实现跨领域概念迁移
 
+https://mp.weixin.qq.com/s/83oOI0oJ_QN-o1LZ439UVQ
+
+自然语言处理中的深度迁移学习——文本预训练
+
 # Mask R-CNN
 
 Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的NN。它是何恺明2017年的新作。

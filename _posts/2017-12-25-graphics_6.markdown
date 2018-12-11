@@ -1,8 +1,116 @@
 ---
 layout: post
-title:  图像处理理论（六）——颜色空间, Harris, Eigenface
+title:  图像处理理论（六）——颜色空间, 霍夫变换, Eigenface
 category: graphics 
 ---
+
+# ISP（续）
+
+## AWB(Auto White Balance) & Color Correction
+
+白平衡的基本原理是在任意环境下，把白色物体还原成白色物体，也就是通过找到图像中的白块，然后调整R/G/B的比例。
+
+AWB算法通常包括的步骤如下：
+
+(1)色温统计：根据图像统计出色温；
+
+(2)计算通道增益：计算出R和B通道的增益；
+
+(3)进行偏色的矫正：根据给出的增益，算出偏色图像的矫正。
+
+由于色温这个东西并不好测量，学界提出的各种模型也各有其局限，因此业界通常采用如下的简易算法实现AWB：
+
+$$K=\frac{R_{aver}+G_{aver}+B_{aver}}{3}$$
+
+$$K_r=K/R_{aver}$$
+
+$$K_g=K/G_{aver}$$
+
+$$K_b=K/B_{aver}$$
+
+$$R_{new}=R*K_r$$
+
+$$G_{new}=G*K_g$$
+
+$$B_{new}=B*K_b$$
+
+由于人类眼睛可见光的频谱响应度和半导体传感器频谱响应度之间存在差别，还有透镜等的影响，得到的RGB值颜色会存在偏差，因此必须对颜色进行校正。
+
+经过AWB和Color Correction后的效果如下所示：
+
+![](/images/img2/ISP_5.png)
+
+## Gamma Correction
+
+人眼对外界光源的感光值与输入光强不是呈线性关系的，而是呈指数型关系的。在低照度下，人眼更容易分辨出亮度的变化，随着照度的增加，人眼不易分辨出亮度的变化。而摄像机感光与输入光强呈线性关系。如下图所示：
+
+![](/images/img2/gamma.png)
+
+为方便人眼辨识图像，需要将摄像机采集的图像进行gamma校正。修正后的效果如下：
+
+![](/images/img2/ISP_6.png)
+
+参考：
+
+http://blog.163.com/hong.lg0518@126/blog/static/18907460200972711556304/
+
+伽马校正（Gamma Correction）
+
+http://www.cnblogs.com/pzxbc/archive/2011/12/26/2302572.html
+
+Gamma矫正(Gamma correction)
+
+http://blog.csdn.net/lichengyu/article/details/8457425
+
+Gamma校正及其OpenCV实现
+
+## Denoise & Sharpness
+
+Denoise是指去除噪声，一般使用低通滤波器即可。
+
+Sharpness是对图像边缘进行锐化。
+
+Denoise & Sharpness或者后续更复杂的处理，都属于图像增强的范畴了。这里功能的多少主要取决于ISP的性能，并不是每个ISP都有。
+
+## 分辨率
+
+720p->1080p->4K->8K
+
+这里稍微注意一下就会发现，2K到哪里去了？
+
+其实，1080p就是2K。早先的称呼中，数字表示的是垂直分辨率，也就是矩形的宽。比如1080p实际上是1920x1080。但后来的称呼大约是为了体现数量，改为了水平分辨率，也就是矩形的长。
+
+参考：
+
+www.cnetnews.com.cn/2016/0128/3072316.shtml
+
+揭秘电视分辨率：1080p、2K、UHD、4K、8K，它们都是什么鬼？
+
+## 总结
+
+上面提到的主要是普通相机的ISP，但从目前的趋势来看，由于汽车自动驾驶技术的目标逐渐趋于全自动驾驶，以人的视觉友好性为目的的图像色彩重建变得多余，而以计算机视觉友好性为目的的图像质量需求将会进一步增加。
+
+## 参考
+
+http://www.cnblogs.com/agllero/p/4489689.html
+
+Image Signal Processor
+
+http://blog.csdn.net/yapingmcu/article/details/9215747
+
+camera isp（Image Signal Processor）
+
+http://blog.csdn.net/weijory/article/details/53306545
+
+ISP算法概述
+
+http://www.cnblogs.com/whw19818/
+
+一个ISP的blog
+
+https://github.com/codeauroraforum/gtec-demo-framework/tree/master/DemoApps/OpenVX/SoftISP
+
+一个基于OpenVX的ISP软实现。
 
 # 颜色空间
 
@@ -26,137 +134,73 @@ HSL为Hue, Saturation, Lightness（亮度）。
 
 类似的还有Munsell Color System，即HCV：Hue, Chroma（色度）, Value。
 
-# Harris
+# 霍夫变换
 
-## 角点
+Hough Transform最早是Paul V.C. Hough于1962年在一篇专利中提出的。1972年，Richard O. Duda和Peter E. Hart对其进行了扩展，并发表论文《Use of the Hough Transformation to Detect Lines and Curves in Pictures》。但是直到1981年，Dana H. Ballard发表《Generalizing the Hough transform to detect arbitrary shapes》之后，它才被人广泛使用。
 
-角点是图像很重要的特征,对图像图形的理解和分析有很重要的作用。角点在保留图像图形重要特征的同时,可以有效地减少信息的数据量,使其信息的含量很高,有效地提高了计算的速度,有利于图像的可靠匹配,使得实时处理成为可能。角点在三维场景重建运动估计，目标跟踪、目标识别、图像配准与匹配等计算机视觉领域起着非常重要的作用。
+>注：Paul V.C. Hough，生平不详。只知道是个物理学家，曾在Brookhaven National Laboratory工作过。
 
-下面有两幅不同视角的图像，通过找出对应的角点进行匹配。
+>Richard O. Duda，MIT博士，圣何塞州立大学教授。曾供职于SRI International。
 
-![](/images/img2/corner_matching.png)
+>Peter E. Hart，斯坦福大学博士。SRI International研究员。
 
-我们可以直观的概括下角点所具有的特征：
+>Dana Harry Ballard，1946年生，UCI博士，德克萨斯大学教授。
 
->轮廓之间的交点；
+![](/images/article/R_theta_line.gif)
 
->对于同一场景，即使视角发生变化，通常具备稳定性质的特征；
+如上图所示，一条直线的解析方程在x-y坐标系下是：
 
->该点附近区域的像素点无论在梯度方向上还是其梯度幅值上有着较大变化；
+$$y=mx+b$$
 
-角点匹配（corner matching）是指寻找两幅图像之间的特征像素点的对应关系，从而确定两幅图像的位置关系。
+而在极坐标系下则为：
 
-角点匹配可以分为以下四个步骤：
+$$r= x\cos\theta + y\sin\theta$$
 
-**提取检测子**：在两张待匹配的图像中寻找那些最容易识别的像素点(角点)，比如纹理丰富的物体边缘点等。
+上式中包含两个参数$$r,\theta$$，由$$r-\theta$$组成的平面又被称作parameter space或Hough space。
 
-**提取描述子**：对于检测出的角点，用一些数学上的特征对其进行描述，如梯度直方图，局部随机二值特征等。检测子和描述子的常用提取方法有:sift, harris, surf, fast, agast, brisk, freak, brisk,orb等。
+对于一个给定点$$(x_0,y_0)$$我们在$$r-\theta$$平面绘出所有通过它的直线, 将得到一条正弦曲线。如下图所示：
 
-**匹配**：通过各个角点的描述子来判断它们在两张图像中的对应关系。常用方法如flann。
+![](/images/article/hough.jpg)
 
-**去外点**：去除错误匹配的外点，保留正确的内点。常用方法有Ransac, GTM。
+对于同一直线上的三点$$(x_0,y_0),(x_1,y_1),(x_2,y_2)$$，它们在$$r-\theta$$平面上的三条正弦曲线交于一点$$(r,\theta)$$，而这一点正好是该直线在极坐标系下的解析方程的参数值。如下图所示：
 
-这里我们只介绍最常用的Harris算子。
+![](/images/article/hough_2.jpg)
 
-## Harris Corner Detector
+可以想像，如果该直线上的点更多一些，那么在$$r-\theta$$平面上就有更多的正弦曲线交于一点，最终情况将如下图所示：
 
-Harris Corner Detector是Chris Harris和Mike Stephens于1988年提出的算子。
+![](/images/article/Hough-example-result-en.png)
 
-论文：
+由此，我们可以总结Hough Transform的一般过程：
 
-《A Combined Corner and Edge Detector》
+1.首先对图片进行边缘化处理。
 
-![](/images/img2/Harris.png)
+2.将边缘上的点映射到parameter space中。
 
-如上图所示。人眼对角点的识别通常是在一个局部的小区域或小窗口完成的。如果在各个方向上移动这个特征的小窗口，窗口内区域的灰度发生了较大的变化，那么就认为在窗口内遇到了角点。如果这个特定的窗口在图像各个方向上移动时，窗口内图像的灰度没有发生变化，那么窗口内就不存在角点；如果窗口在某一个方向移动时，窗口内图像的灰度发生了较大的变化，而在另一些方向上没有发生变化，那么，窗口内的图像可能就是一条直线的线段。
+3.追踪图像中每个点对应曲线间的交点. 如果交于一点的曲线的数量超过了阈值, 那么可以认为这个交点所代表的参数对在原图像中为一条直线。
 
-对于图像$$I(x,y)$$，当在点(x,y)处平移$$(\Delta x,\Delta y)$$后的自相似性，可以通过自相关函数给出：
+上面说的是霍夫线变换，类似的还有霍夫圆变换。只不过圆的参数有三个，即：
 
-$$c(x,y;\Delta x,\Delta y) = \sum_{(u,v)\in W(x,y)}w(u,v)(I(u,v) – I(u+\Delta x,v+\Delta y))^2$$
+$$(x_{center},y_{center},r)$$
 
-其中，$$W(x,y)$$是以点(x,y)为中心的窗口，$$w(u,v)$$为加权函数，它既可是常数，也可以是高斯加权函数。
+高维parameter space的积分，由于运算量比较大，因此又有霍夫梯度法之类的改进算法。
 
-![](/images/img2/harris_window.png)
+参考：
 
-根据泰勒展开，对图像$$I(x,y)$$在平移$$(\Delta x,\Delta y)$$后进行一阶近似：
+http://www.cs.jhu.edu/~misha/Fall04/GHT1.pdf
 
-$$I(u+\Delta x,v+\Delta y) = I(u,v)+I_x(u,v)\Delta x+I_y(u,v)\Delta y+O(\Delta x^2,\Delta y^2)\approx I(u,v)+I_x(u,v)\Delta x+I_y(u,v)\Delta y$$
+Hough Transform
 
-其中，$$I_x,I_y$$是图像$$I(x,y)$$的偏导数，则自相关函数可简化为：
+http://blog.csdn.net/poem_qianmo/article/details/26977557
 
-$$c(x,y;\Delta x,\Delta y)\approx \sum_w (I_x(u,v)\Delta x+I_y(u,v)\Delta y)^2=[\Delta x,\Delta y]M(x,y)\begin{bmatrix}\Delta x \\ \Delta y\end{bmatrix}$$
+OpenCV霍夫变换：霍夫线变换，霍夫圆变换合辑
 
-其中：
+http://blog.csdn.net/tianwaifeimao/article/details/17678669
 
-$$M(x,y)=\sum_w \begin{bmatrix}I_x(x,y)^2&I_x(x,y)I_y(x,y) \\ I_x(x,y)I_y(x,y)&I_y(x,y)^2\end{bmatrix} = \begin{bmatrix}\sum_w I_x(x,y)^2&\sum_w I_x(x,y)I_y(x,y) \\\sum_w I_x(x,y)I_y(x,y)&\sum_w I_y(x,y)^2\end{bmatrix}=\begin{bmatrix}A&C\\C&B\end{bmatrix}$$
+基于LSD的直线提取算法
 
-即：
+https://mp.weixin.qq.com/s/WV78mvRn-cYm11cL4l2ScA
 
-$$c(x,y;\Delta x,\Delta y)\approx A\Delta x^2+2C\Delta x\Delta y+B\Delta y^2$$
-
-其中：
-
-$$A=\sum_w I_x^2, B=\sum_w I_y^2,C=\sum_w I_x I_y$$
-
-二次项函数本质上就是一个椭圆函数。椭圆的扁率和尺寸是由M(x,y)的特征值$$\lambda_1, \lambda_2$$决定的，轴向是由M(x,y)的特征矢量决定的，如下图所示，椭圆方程为：
-
-$$[\Delta x,\Delta y]M(x,y)\begin{bmatrix}\Delta x \\ \Delta y\end{bmatrix} = 1$$
-
-![](/images/img2/harris_2.png)
-
-椭圆函数特征值与图像中的角点、直线（边缘）和平面之间的关系如下图所示。共可分为三种情况：
-
-**图像中的直线**。一个特征值大，另一个特征值小，$$\lambda_1\gg \lambda_2$$或$$\lambda_2\gg \lambda_1$$。自相关函数值在某一方向上大，在其他方向上小。
-
-**图像中的平面**。两个特征值都小，且近似相等；自相关函数数值在各个方向上都小。
-
-**图像中的角点**。两个特征值都大，且近似相等，自相关函数在所有方向都增大。
-
-![](/images/img2/harris_3.png)
-
-根据二次项函数特征值的计算公式，我们可以求M(x,y)矩阵的特征值。但是Harris给出的角点差别方法并不需要计算具体的特征值，而是计算一个角点响应值R来判断角点。R的计算公式为：
-
-$$R=det \boldsymbol{M} - \alpha(trace\boldsymbol{M})^2$$
-
-式中，$$det\boldsymbol{M}$$为矩阵$$\boldsymbol{M}=\begin{bmatrix}A&B\\B&C\end{bmatrix}$$的行列式；$$trace\boldsymbol{M}$$为矩阵M的直迹；$$\alpha$$为经验常数，取值范围为0.04~0.06。事实上，特征是隐含在$$det\boldsymbol{M}$$和$$trace\boldsymbol{M}$$中，因为，
-
-$$det\boldsymbol{M} = \lambda_1\lambda_2=AC-B^2$$
-
-$$trace\boldsymbol{M}=\lambda_2+\lambda_2=A+C$$
-
-## Harris角点的性质
-
-**增大$$\alpha$$的值，将减小角点响应值R，降低角点检测的灵性，减少被检测角点的数量；减小$$\alpha$$值，将增大角点响应值R，增加角点检测的灵敏性，增加被检测角点的数量**。
-
-**Harris角点检测算子对亮度和对比度的变化不敏感**。这是因为在进行Harris角点检测时，使用了微分算子对图像进行微分运算，而微分运算对图像密度的拉升或收缩和对亮度的抬高或下降不敏感。换言之，对亮度和对比度的仿射变换并不改变Harris响应的极值点出现的位置。
-
-Harris角点检测算子使用的是角点附近的区域灰度二阶矩矩阵。而二阶矩矩阵可以表示成一个椭圆，椭圆的长短轴正是二阶矩矩阵特征值平方根的倒数。当特征椭圆转动时，特征值并不发生变化，所以判断角点响应值R也不发生变化，由此说明**Harris角点检测算子具有旋转不变性**。
-
-**Harris角点检测算子不具有尺度不变性**。如下图所示，当右图被缩小时，在检测窗口尺寸不变的前提下，在窗口内所包含图像的内容是完全不同的。左侧的图像可能被检测为边缘或曲线，而右侧的图像则可能被检测为一个角点。
-
-![](/images/img2/harris_4.png)
-
-为了解决尺度不变性问题，可以使用多尺度Harris角点算法，将Harris角点检测算子与高斯尺度空间表示相结合，使其具有尺度不变性：
-
-$$\boldsymbol{M}=\mu(x,\sigma_I,\sigma_D)=\sigma_D^2g(\sigma_I)\otimes\begin{bmatrix}L_x^2(x,\sigma_D)&L_xL_y(x,\sigma_D)\\L_xL_y(x,\sigma_D)&L_y^2(x,\sigma_D)\end{bmatrix}$$
-
-## 参考
-
-http://blog.csdn.net/lwzkiller/article/details/54633670
-
-Harris角点检测原理详解
-
-http://www.cnblogs.com/ronny/p/4009425.html
-
-Harris角点
-
-https://blog.csdn.net/davebobo/article/details/52598850
-
-检测并匹配兴趣点
-
-https://blog.csdn.net/songzitea/article/details/17969375
-
-角点匹配方法
+开源、快速、高精度的椭圆检测—你值得拥有！
 
 # Eigenface
 
@@ -225,4 +269,3 @@ $$e_r=\|\Omega-\Omega^l\|$$
 这里的距离可以是欧氏距离，但作者指出使用马式距离效果更佳。
 
 综上，**Eigenface实际上就是PCA在人脸识别上的应用。**
-

@@ -1,0 +1,376 @@
+---
+layout: post
+title:  Python（三）
+category: language 
+---
+
+# Python
+
+## zip
+
+Python的zip函数和数据压缩的zip算法没有任何关系。
+
+它的典型用法如下：
+
+{% highlight python %}
+>>> name=['song','ping','python']
+>>> age=[26,26,27]
+>>> zip(name,age)
+[('song', 26), ('ping', 26), ('python', 27)]
+>>> for n,a in zip(name,age):
+...   print n,a
+{% endhighlight %}
+
+zip函数属于Python的Built-in Functions，类似的函数还有：
+
+https://docs.python.org/3.6/library/functions.html
+
+参考：
+
+http://www.cnblogs.com/frydsh/archive/2012/07/10/2585370.html
+
+Python的zip函数
+
+## signal
+
+signal包用于处理系统消息。
+
+代码示例：
+
+{% highlight python %}
+import signal
+
+def handler(signum, frame):
+    print 'Signal handler called with signal', signum
+    raise IOError("Couldn't open device!")
+
+# Set the signal handler and a 5-second alarm
+signal.signal(signal.SIGALRM, handler)
+{% endhighlight %}
+
+## Captcha
+
+Captcha是一个Python验证码库，能够生成音频和图片验证码。
+
+>CAPTCHA是Completely Automated Public Turing Test to Tell Computers and Humans Apart (全自动区分计算机和人类的图灵测试)的简称. CAPTCHA的目的是区分计算机和人类的一种程序算法，是一种区分用户是计算机和人的计算程序，这种程序必须能生成并评价人类能很容易通过但计算机却通不过的测试。
+
+代码：
+
+https://github.com/lepture/captcha
+
+这个库可用于生成大量有标签的验证码，是DL入门的必备工具。
+
+参考：
+
+https://mp.weixin.qq.com/s/m4rNUFV4VGUBI7aWv5fgbw
+
+中文项目：快速识别验证码，CNN也能为爬虫保驾护航
+
+其他类似项目还包括：
+
+| 语言 | 名称 | 网址 |
+|:--:|:--:|:--:|
+| Java | JCaptcha | http://jcaptcha.sourceforge.net/ |
+| Java | SimpleCaptcha | http://simplecaptcha.sourceforge.net/ |
+| Java | kcaptcha | http://captcha.ru/en/kcaptcha/ |
+| Java | patchca | https://github.com/pusuo/patchca |
+| Java | SkewPassImage | http://skewpassim.sourceforge.net/ |
+| Java | Internet Captcha | http://www.icaptcha.com/ |
+| Java | Cage | http://akiraly.github.io/cage/ |
+
+## 如何通过需认证的代理获取HTTP网页
+
+Python内置的urllib和urllib2模块都可用于获取HTTP网页，但使用范围是不同的。urllib只支持HTTP 0.9和HTTP 1.0，所以如果只是使用代理可以使用urllib.FancyURLopener类，如果该代理还需要认证的话urllib就不行了。因为代理认证是HTTP 1.1中引入的。
+
+这时可以考虑使用urllib2模块。代码如下：
+
+{% highlight python %}
+import urllib2
+l_proxy_info = {
+'user' : 'user',
+'pass' : 'pass',
+'host' : 'host',
+'port' : 3128
+}
+
+l_proxy_support = urllib2.ProxyHandler({"http" : "http://%(user)s:%(pass)s@%(host)s:%(port)d" % l_proxy_info})
+l_opener = urllib2.build_opener(l_proxy_support, urllib2.HTTPHandler)
+
+urllib2.install_opener(l_opener)
+usock = urllib2.urlopen('http://www.sohu.com')
+{% endhighlight %}
+
+## tqdm
+
+tqdm是一个快速，可扩展的进度条。
+
+代码：
+
+https://github.com/tqdm/tqdm
+
+示例：
+
+{% highlight python %}
+from tqdm import tqdm
+for i in tqdm(range(9)):
+    ...
+{% endhighlight %}
+
+效果：
+
+`76%|████████████████████            | 7641/10000 [00:34<00:10, 222.22 it/s]`
+
+其实还有一个更简单的办法：
+
+`print("\r" + "xxx", end="")`：这样的话会先把console里面当前的行清除掉、再输出xxx。
+
+## JPype
+
+JPype是一个能够让python代码方便地调用Java代码的工具。官网：
+
+https://sourceforge.net/projects/jpype/
+
+参考：
+
+http://blog.csdn.net/niuyisheng/article/details/9002926
+
+JPype：实现在python中调用JAVA
+
+http://www.cnblogs.com/yu-zhang/p/3817024.html
+
+python调用java程序--jpype
+
+## Celery
+
+Celery是一个专注于实时处理和任务调度的分布式任务队列，可用于执行定时任务。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/22304455
+
+使用Celery
+
+## Gunicorn
+
+Gunicorn是一个高效的Python WSGI Server，地位相当于Java中的Tomcat。
+
+官网：
+
+http://gunicorn.org/
+
+参考：
+
+http://www.cnblogs.com/ArtsCrafts/p/gunicorn.html
+
+Gunicorn快速入门
+
+## 并行计算
+
+python异步并发模块concurrent.futures，主要用来实现多线程和多进程的异步并发。
+
+代码示例：
+
+{% highlight python %}
+from concurrent import futures
+
+def test(num):
+    import time
+    return time.ctime(),num
+
+with futures.ThreadPoolExecutor(max_workers=1) as executor:
+    future = executor.submit(test,1)
+    print future.result()
+
+>>>
+('Tue Jan 17 15:23:10 2017', 1)
+{% endhighlight %}
+
+如果是多进程的话，可使用ProcessPoolExecutor。由于python是解释语言的关系，多线程设计基本就是残废状态，因此，通常情况下，**不要使用多线程，请使用多进程**
+
+参考：
+
+http://lovesoo.org/analysis-of-asynchronous-concurrent-python-module-concurrent-futures.html
+
+python异步并发模块concurrent.futures简析
+
+https://mp.weixin.qq.com/s/QIfxxY6z7y77RDE_8gDEIg
+
+并行运算Process Pools
+
+## 参考
+
+https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA
+
+Python学习思维导图
+
+https://mp.weixin.qq.com/s/_OmRvwFmvuuOpBf7DQG8IA
+
+Python30个编程技巧
+
+https://github.com/leisurelicht/wtfpython-cn
+
+《What the f*ck Python!》中文版
+
+https://mp.weixin.qq.com/s/-CaMHjsY580et8Hh_D2FSg
+
+简约而不简单的Django新手图文教程
+
+https://mp.weixin.qq.com/s/O5okcuVKuf339BZzhmxiew
+
+13个Python GUI库
+
+https://mp.weixin.qq.com/s/jHnkmpnOz1LApVCLJL-8Tw
+
+如何写出优雅又地道的Python代码？
+
+https://mp.weixin.qq.com/s/5xs1ivkrUAP_Rr9P-EMc5g
+
+代码优化指南：人生苦短，我用Python。这篇blog主要介绍了如何追踪Python脚本的CPU使用情况。
+
+https://mp.weixin.qq.com/s/xCKC3cz7jUvrwl4uvMNKTA
+
+20行Python代码教你批量将PDF转为Word
+
+https://mp.weixin.qq.com/s/HGH2e_0ocHv2VWsjOje9BQ
+
+程序员必知的Python陷阱与缺陷列表
+
+http://blog.csdn.net/linda1000/article/details/8315892
+
+单引号、双引号和三双引号的区别
+
+https://mp.weixin.qq.com/s/czqO4Lo1Jt9zqg2UKNlLYg
+
+手把手教你用Python创建微信聊天机器人
+
+https://mp.weixin.qq.com/s/wIXCIMzZmh75SV-qJIKbCw
+
+Python程序员最常犯的10个错误，你中招了吗？
+
+https://mp.weixin.qq.com/s/W1j4G_QQqlzDYru231dZFA
+
+Python：编写条件分支代码的技巧
+
+http://www.cnblogs.com/Python666/p/7506546.html
+
+Python单例模式
+
+https://mp.weixin.qq.com/s/ST7TQ5Wkn_owv5bpTiTKVA
+
+2018年最好用的5个python网站开发框架
+
+https://mp.weixin.qq.com/s/3nr8uHnRoSgs-Zu6QxGiqw
+
+Python实现数据库一键导出为Excel表格！大大的增加了工作效率！
+
+https://mp.weixin.qq.com/s/dmJI2GlzgUJgYllfVOPt4g
+
+两句话轻松掌握Python最难知识点
+
+https://mp.weixin.qq.com/s/PkzD1ig_D5AIUTkO5zH8pQ
+
+Python字节码介绍
+
+https://mp.weixin.qq.com/s/_ZvF6jK5Jo4rFGwHvEoAig
+
+一文读懂Python装饰器由来
+
+https://mp.weixin.qq.com/s/RdnAQPAn9E8qDvtnCEgcKw
+
+Tkinter可视化窗口
+
+https://mp.weixin.qq.com/s/_fi4fpfN8Whe7_ZpkPL0tA
+
+怎么给Python写C扩展？
+
+https://mp.weixin.qq.com/s/-erFsz8NvLZ5mOIXyDosFg
+
+使用PyInstaller将python转成可执行文件exe笔记
+
+https://mp.weixin.qq.com/s/b19SLduKoiOIeE5CA3ZOjg
+
+Python标准库之LRU缓存实现学习
+
+https://mp.weixin.qq.com/s/0jjJrclscaA5LkdhHUNkUg
+
+Python的进阶：copy()与deepcopy()区别
+
+https://mp.weixin.qq.com/s/VPCUd5op6Vd-b0LbFEMSYQ
+
+秒懂Python编程中的if __name__ == 'main' 的作用和原理
+
+https://mp.weixin.qq.com/s/FtlAkInyXgvUxDnSCikTIw
+
+全面深入理解Python面向对象编程
+
+https://mp.weixin.qq.com/s/_PtdgGElw0mvr_rRm5xrCg
+
+Python性能优化的20条招数
+
+https://mp.weixin.qq.com/s/0Rpbuo7LCRo1SnbE8NcH4Q
+
+快速学习Python的全套14张思维导图
+
+https://mp.weixin.qq.com/s/ODA74xgoS8X1HFxp4BfshQ
+
+如何将Python自然语言处理速度提升100倍：用spaCy/Cython加速NLP
+
+https://mp.weixin.qq.com/s/Cujl2nxITCuZL7B72uKVrQ
+
+为什么Python这么慢？
+
+https://mp.weixin.qq.com/s/a3YTmQMfpnviHnidXrhYtg
+
+这17个骚操作你都Ok吗
+
+https://zhuanlan.zhihu.com/p/41293278
+
+把python翻译成C++
+
+https://mp.weixin.qq.com/s/KCiR6ZE1EpYVfySaCG097A
+
+上半年最常见的Python面试题
+
+https://mp.weixin.qq.com/s/0dw2LHsIKFv8B_JaIMoekg
+
+python 字符编码处理总结
+
+https://mp.weixin.qq.com/s/fTs_r7DLbLWoos4uRM3KYA
+
+10个Python常见面试题，这些弄不明白不要说学过Python！
+
+https://mp.weixin.qq.com/s/zIHJsyankFEf_ig4Xnb0Uw
+
+工具推荐！我是如何使用Python脚本分析CPU使用情况的？
+
+https://mp.weixin.qq.com/s/v-N5jUTVFBb-wV0a_RAg5A
+
+Python实现代码雨效果
+
+https://mp.weixin.qq.com/s/0wJRlGS2QXpEL2XaU_Ke-g
+
+Python实现烟花特效
+
+https://mp.weixin.qq.com/s/5YWAgp8LKi5q_NDrNUtyGQ
+
+在GitHub上收获6519颗Star的Python面试题资料
+
+https://mp.weixin.qq.com/s/toh59s2-UlqiZfkE5ThxZw
+
+谈一谈python中的魔法变量*args和**kwargs
+
+https://mp.weixin.qq.com/s/8y7IIQWxXx3bCD8cK8Z3XQ
+
+这17个骚操作你都Ok吗
+
+https://mp.weixin.qq.com/s/rE5OEFwwFxJNb_Omwmqvzw
+
+符合语言习惯的Python优雅编程技巧
+
+https://blog.csdn.net/longerzone/article/details/17889969
+
+Python下调用Linux的Shell命令
+
+https://mp.weixin.qq.com/s/fBz__E2Xu4GC7w1Uqx5NAA
+
+手把手教你如何用Python从PDF文件中导出数据

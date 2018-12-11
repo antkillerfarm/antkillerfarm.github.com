@@ -262,6 +262,10 @@ https://zhuanlan.zhihu.com/p/41659502
 
 论文笔记——基于的视频行为识别/动作识别算法笔记(三)
 
+https://mp.weixin.qq.com/s/icVtxzKrJgizaJlG31pMdQ
+
+中科院计算所、浙大等提出首个全自动3D模型变形传播法，无需配对训练数据
+
 # VAE进阶
 
 https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw

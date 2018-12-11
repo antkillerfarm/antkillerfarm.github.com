@@ -176,6 +176,10 @@ https://mp.weixin.qq.com/s/lu0GHCpWCmogkmHRKnJ8zQ
 
 浅析两代MobileNet
 
+https://mp.weixin.qq.com/s/T6S1_cFXPEuhRAkJo2m8Ig
+
+轻量级CNN网络之MobileNetv2
+
 # Softmax详解
 
 首先给出Softmax function的定义:

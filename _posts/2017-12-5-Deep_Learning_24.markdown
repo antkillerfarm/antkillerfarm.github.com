@@ -1,10 +1,16 @@
 ---
 layout: post
-title:  深度学习（二十四）——L2 Normalization, 数据增强, Attention（1）
+title:  深度学习（二十四）——L2 Normalization, Attention（1）
 category: DL 
 ---
 
 # LSTM进阶（续）
+
+## 《On the compression of recurrent neural networks with an application to lvcsr acoustic modeling for embedded speech recognition》
+
+![](/images/img2/RNN_SVD.png)
+
+这是另一篇RNN模型压缩的论文。上图中的a是原始RNN，而b是对$$W_h^l$$使用了SVD之后的RNN。
 
 ## 《Video Summarization with Long Short-term Memory》
 
@@ -34,7 +40,7 @@ https://sites.google.com/site/vsummsite/
 
 需要翻墙。
 
-## LSTM加速技巧
+## LSTM运算加速技巧
 
 LSTM的主要运算量集中在$$W[h_{t-1},x_t]$$上，这里实际上可以用$$W[(h_{t-2}+\Delta h_{t-1}),x_t]$$代替。
 
@@ -113,52 +119,6 @@ D_{xyz}=C_{xyz} \cdot S_{z}
 $$
 
 一般来说，求出C被称作L2 Normalization，而求出D被称作L2 Scale Normalization，S被称为Scale。
-
-# 数据增强
-
-https://mp.weixin.qq.com/s/GqPfvWwH1T0XFwiZ86cW8A
-
-SamplePairing：针对图像处理领域的高效数据增强方式
-
-https://mp.weixin.qq.com/s/cQtXvOjSXFc4YKn7ANBc_w
-
-谷歌大脑提出自动数据增强方法AutoAugment：可迁移至不同数据集
-
-https://mp.weixin.qq.com/s/ojFo7-gUh73iK3uImFS2-Q
-
-一文道尽主流开源框架中的数据增强
-
-https://mp.weixin.qq.com/s/xJhWu-1FyhIWbFBC5oHMkw
-
-一文道尽深度学习中的数据增强方法（上）
-
-https://mp.weixin.qq.com/s/OctAGrcBB0a6TOGWMmVKUw
-
-深度学习中的数据增强（下）
-
-https://mp.weixin.qq.com/s/lMU6_ywQqneyunqEV6uDiA
-
-如何改善你的训练数据集？
-
-https://mp.weixin.qq.com/s/ooX9Hj5ejO6po6Ghb4zOug
-
-一文解读合成数据在机器学习技术下的表现
-
-https://zhuanlan.zhihu.com/p/33485388
-
-mixup与paring samples ，ICLR2018投稿论文的数据增广两种方式
-
-https://mp.weixin.qq.com/s/_7xFBLPGT0VRTJ22toHJ3g
-
-深度学习中常用的图像数据增强方法
-
-https://mp.weixin.qq.com/s/sXV9epWguGbJEZYo4yNp5Q
-
-如何正确使用样本扩充改进目标检测性能
-
-https://zhuanlan.zhihu.com/p/46833956
-
-图像数据增强之弹性形变（Elastic Distortions）
 
 # Attention
 
