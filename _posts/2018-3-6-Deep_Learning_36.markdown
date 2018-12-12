@@ -351,3 +351,7 @@ Deep Neural Network for YouTube Recommendations
 https://mp.weixin.qq.com/s/fiUcm143ieCe3KkcJ0V5LQ
 
 京东如何在仓储库存部署时保证“啤酒尿裤”的高效履约？
+
+https://mp.weixin.qq.com/s/n9j9QuMe3fIPQFQKk5Tgjw
+
+Airbnb: 深度学习在搜索排序业务中的探索与演进（一）

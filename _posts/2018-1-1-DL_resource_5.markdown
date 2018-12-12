@@ -239,3 +239,15 @@ https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
 https://mp.weixin.qq.com/s/zTB59Fg_JFg9ZZPRlq9txA
 
 不使用残差连接，ICML新研究靠初始化训练上万层标准CNN
+
+https://mp.weixin.qq.com/s/ecP1Ze_6VK1g7yxV666V2w
+
+基于自然语言命令的自动图频编辑系统
+
+https://mp.weixin.qq.com/s/eAv0vTBwnGEUDA9PyhlDnA
+
+FAIR等机构联合提出IntPhys：你的智能系统的物理知识，比得上婴儿吗？
+
+https://mp.weixin.qq.com/s/1rtONnhwEc3Osf9gP5fBCQ
+
+李飞飞CVPR最新论文“文本转图”效果优化可多一步：物体关系描述

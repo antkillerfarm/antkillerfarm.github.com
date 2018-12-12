@@ -403,3 +403,7 @@ KG Embedding with Iterative Guidance from Soft Rules
 https://mp.weixin.qq.com/s/PrugbfsWIt0LWGJRw_9i1Q
 
 基于知识库的类型实体和关系的联合抽取
+
+https://mp.weixin.qq.com/s/_pNDalO6D8kGiCBYi1jnIA
+
+对于知识图谱嵌入表示的几何形状理解

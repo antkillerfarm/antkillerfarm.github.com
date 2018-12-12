@@ -291,6 +291,14 @@ blogdown：
 
 https://github.com/rstudio/blogdown
 
+## Renjin
+
+Renjin是一个基于JVM的R语言实现。
+
+官网：
+
+http://www.renjin.org/
+
 ## 参考
 
 http://blog.csdn.net/yepeng2007fei/article/details/77677625
@@ -422,11 +430,3 @@ https://mp.weixin.qq.com/s/C1PydJQJjZtf0mHIIDcFvg
 https://mp.weixin.qq.com/s/SB5ZSD_YGPvC6hPTZXiB4A
 
 让机器“一叶知秋”：弱监督视觉语义分割
-
-https://mp.weixin.qq.com/s/eAv0vTBwnGEUDA9PyhlDnA
-
-FAIR等机构联合提出IntPhys：你的智能系统的物理知识，比得上婴儿吗？
-
-https://mp.weixin.qq.com/s/1rtONnhwEc3Osf9gP5fBCQ
-
-李飞飞CVPR最新论文“文本转图”效果优化可多一步：物体关系描述

@@ -158,6 +158,14 @@ FBank与MFCC对比：
 
 4.DNN/CNN可以更好的利用这些相关性，使用fbank特征可以更多地降低WER。
 
+![](/images/img2/LFBE.png)
+
+FBank有时也叫做log of filter bank energy（LFBE）。
+
+论文：
+
+《Bandwidth extension of narrowband speech in log spectra domain using neural network》
+
 参考：
 
 http://blog.csdn.net/wxb1553725576/article/details/78048546
@@ -283,4 +291,3 @@ VAD综述
 英语一般包含43个音素，因此Tri-phone共有$$43^3\approx 80K$$种不同组合。
 
 但是这些组合的概率是众寡悬殊的，有些组合很常见，而有些组合很罕见。因此我们需要合并相似的发音组合。这通常采用CART决策树来进行聚类。这样做还可以减少状态数量，提高计算效率。
-

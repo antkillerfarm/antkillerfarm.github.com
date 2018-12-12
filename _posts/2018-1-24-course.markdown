@@ -403,3 +403,7 @@ https://mp.weixin.qq.com/s/8H8GrAe7wMaLGWKjKUVp2Q
 https://mp.weixin.qq.com/s/dARWbR1ghho0yX02lNA-gw
 
 Python绘制histogram直方图
+
+https://mp.weixin.qq.com/s/ss9UlDU9lYokS-EDrPnOxQ
+
+如何在Python中使用LightFM构建可扩展的电子商务推荐系统？

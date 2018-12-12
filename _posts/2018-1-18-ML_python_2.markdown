@@ -42,6 +42,10 @@ https://mp.weixin.qq.com/s/IMMdbF33ZHEz7N_XwgIhHA
 
 试试谷歌这个新工具：说不定比TensorFlow还好用！
 
+https://mp.weixin.qq.com/s/tZ3yWQ9--l9e81UqoUoWIQ
+
+要替代TensorFlow？谷歌开源机器学习库JAX
+
 ## PyFlux
 
 PyFlux是Python中为处理时间序列问题而创建的开源库。该库有一系列极好的时间序列模型，包括但不限于ARIMA、GARCH和VAR模型。
