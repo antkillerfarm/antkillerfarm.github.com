@@ -355,3 +355,7 @@ https://mp.weixin.qq.com/s/fiUcm143ieCe3KkcJ0V5LQ
 https://mp.weixin.qq.com/s/n9j9QuMe3fIPQFQKk5Tgjw
 
 Airbnb: 深度学习在搜索排序业务中的探索与演进（一）
+
+https://mp.weixin.qq.com/s/ejQW9EI48kJ4pvIlh7H3Dw
+
+Airbnb: 深度学习在搜索排序业务中的探索与演进（二）

@@ -315,3 +315,7 @@ https://mp.weixin.qq.com/s/nEMvoiqImd0RxrskIH7c9A
 https://mp.weixin.qq.com/s/pc8fJx5StxnX9it2AVU5NA
 
 基于手机系统的实时目标检测
+
+https://mp.weixin.qq.com/s/6wzmyhIvUVeAN4Xjfhb1Yw
+
+论文解读：Channel pruning for Accelerating Very Deep Neural Networks

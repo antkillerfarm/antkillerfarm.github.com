@@ -293,3 +293,7 @@ https://mp.weixin.qq.com/s/TzNqZNEPBewR7neU7Or9nQ
 https://mp.weixin.qq.com/s/lBu1q5Pyw9dZIxSYXUp2pw
 
 视频语义分割介绍
+
+https://mp.weixin.qq.com/s/RqSlnz286UvldmcqJ2adPQ
+
+快慢结合效果好：FAIR何恺明等人提出视频识别SlowFast网络
