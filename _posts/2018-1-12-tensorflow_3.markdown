@@ -4,7 +4,21 @@ title:  TensorFlow（三）
 category: AI 
 ---
 
-# 我的TensorFlow实践（续）
+# 我的TensorFlow实践
+
+## MNIST+Softmax
+
+代码：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_mnist.py
+
+## MNIST+CNN
+
+代码：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_cnn.py
+
+第一个例子中，我对CPU的计算能力还没有切肤之痛，但在这里使用CPU差不多要花半个小时时间。。。
 
 ## 框架怀古（2017.9）
 
@@ -403,23 +417,3 @@ https://mp.weixin.qq.com/s/mjUnrPBPBuY6XKXkUymX-w
 http://www.holmesconan.me/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2018/04/03/cifar10-vgg.html
 
 CIFAR-10 Estimator之Vgg模型
-
-https://mp.weixin.qq.com/s/BfwTOtLnwnMsS3-PQQBHSg
-
-使用TensorFlow训练WDL模型性能问题定位与调优
-
-https://mp.weixin.qq.com/s/kw3BYTXdyhnIyVZrnQuPew
-
-基于深度学习和迁移学习的识花实践
-
-https://mp.weixin.qq.com/s/F965Zu_PgA-1ZUGIQ0nIEQ
-
-TensorFlow协同过滤推荐实战
-
-http://gitbook.cn/books/593d71ba4686067a2200aec6/index.html
-
-用TensorFlow实现智能机器人的原理及如何实现一个对话机器人
-
-https://mp.weixin.qq.com/s/lLaSXG1VF9Rys2GNzFP7pw
-
-轻松使用多种预训练卷积网络抽取图像特征

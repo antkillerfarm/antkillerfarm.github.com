@@ -373,3 +373,23 @@ Quick, Draw!涂鸦分类递归神经网络
 https://mp.weixin.qq.com/s/QQednlKYl6t3aO0xCzgGmA
 
 带你轻松使用TensorFlow创建大型线性模型
+
+https://mp.weixin.qq.com/s/BfwTOtLnwnMsS3-PQQBHSg
+
+使用TensorFlow训练WDL模型性能问题定位与调优
+
+https://mp.weixin.qq.com/s/kw3BYTXdyhnIyVZrnQuPew
+
+基于深度学习和迁移学习的识花实践
+
+https://mp.weixin.qq.com/s/F965Zu_PgA-1ZUGIQ0nIEQ
+
+TensorFlow协同过滤推荐实战
+
+http://gitbook.cn/books/593d71ba4686067a2200aec6/index.html
+
+用TensorFlow实现智能机器人的原理及如何实现一个对话机器人
+
+https://mp.weixin.qq.com/s/lLaSXG1VF9Rys2GNzFP7pw
+
+轻松使用多种预训练卷积网络抽取图像特征

@@ -136,7 +136,7 @@ https://mp.weixin.qq.com/s/781fVvKr4yuq4q2GI1Y1gA
 
 从Zero到Hero，OpenAI重磅发布深度强化学习资源
 
-https://mp.weixin.qq.com/s/t5dvg5OaNgBNz1eF6Ok3SQ
+https://spinningup.openai.com/en/latest/spinningup/keypapers.html
 
 深度强化学习关键论文列表
 
@@ -371,4 +371,3 @@ https://mp.weixin.qq.com/s/3WI3QgfHXcrCPbvmHWOEkg
 https://mp.weixin.qq.com/s/IvR0O6dpz2GJCG7UQb5kUQ
 
 清华大学冯珺：基于强化学习的关系抽取和文本分类
-

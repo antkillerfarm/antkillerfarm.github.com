@@ -353,6 +353,24 @@ https://mp.weixin.qq.com/s/a68brFJthczgwiFoUBh30A
 
 TensorFlow数据集和估算器介绍
 
+## TensorFlow Probability
+
+TensorFlow Probability是一个概率编程工具包。
+
+官网：
+
+https://tensorflow.google.cn/probability/
+
+参考：
+
+https://mp.weixin.qq.com/s/NPuYanaUnaX4mYbaNbNNSQ
+
+概率编程工具：TensorFlow Probability官方简介
+
+https://mp.weixin.qq.com/s/cV-5W4YWC9f9wsoNX5fIXA
+
+使用TensorFlow Probability对金融模型中的误差进行介绍性分析
+
 ## 细节
 
 执行`session.run(out)`，会在终端打印out的值，但执行`res = session.run(out)`则不会。
@@ -386,19 +404,3 @@ http://www.jianshu.com/u/eaec1fc422e9
 http://blog.csdn.net/u012436149
 
 一个TensorFlow+PyTorch的blog
-
-# 我的TensorFlow实践
-
-## MNIST+Softmax
-
-代码：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_mnist.py
-
-## MNIST+CNN
-
-代码：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_cnn.py
-
-第一个例子中，我对CPU的计算能力还没有切肤之痛，但在这里使用CPU差不多要花半个小时时间。。。

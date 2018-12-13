@@ -254,10 +254,6 @@ https://mp.weixin.qq.com/s/c_2_9gvOynHaVW6pi4qQjQ
 
 用TensorFlow让机器人唱首歌给你听
 
-https://mp.weixin.qq.com/s/NPuYanaUnaX4mYbaNbNNSQ
-
-概率编程工具：TensorFlow Probability官方简介
-
 https://mp.weixin.qq.com/s/hn-LqyREkusxP2TOWfTJ6g
 
 使用TensorFlow官方Java API调用TensorFlow模型
@@ -325,10 +321,6 @@ TensorFlow Hub,给您带来全新的Web体验
 https://mp.weixin.qq.com/s?__biz=MzU1OTMyNDcxMQ==&mid=2247484836&idx=1&sn=0bc47c662ea64aa833df9fb9c4b1d706
 
 TensorFlow模型优化工具包正式推出
-
-https://mp.weixin.qq.com/s/cV-5W4YWC9f9wsoNX5fIXA
-
-使用TensorFlow Probability对金融模型中的误差进行介绍性分析
 
 https://mp.weixin.qq.com/s/NMRwXqwr4VFbMUPgI8Uccg
 

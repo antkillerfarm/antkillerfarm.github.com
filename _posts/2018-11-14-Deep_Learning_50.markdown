@@ -134,6 +134,10 @@ https://mp.weixin.qq.com/s/bH5yYbwq6NGQJ84xUDhoxg
 
 生成对抗网络在图像翻译上的应用
 
+https://mp.weixin.qq.com/s/3Gsmrl4HbcnXpje0nyAq2w
+
+中国西北大学和北京大学的研究结果是否将终结CAPTCHA验证码时代？
+
 # 图像超分辨率进阶
 
 https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
