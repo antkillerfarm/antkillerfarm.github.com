@@ -1,10 +1,34 @@
 ---
 layout: post
-title:  机器学习（二十四）——单分类SVM&多分类SVM, 时间序列分析
+title:  机器学习（二十四）——单分类SVM&多分类SVM
 category: ML 
 ---
 
 # Optimizer（续）
+
+## Adam
+
+Adaptive Moment Estimation借用了卡尔曼滤波的思想，对$$g_t,g_t^2$$进行滤波：
+
+$$m_t = \beta_1 m_{t-1} + (1 - \beta_1) g_t$$
+
+$$v_t = \beta_2 v_{t-1} + (1 - \beta_2) g_t^2$$
+
+估计：
+
+$$\hat{m}_t = \dfrac{m_t}{1 - \beta^t_1}$$
+
+$$\hat{v}_t = \dfrac{v_t}{1 - \beta^t_2}$$
+
+更新：
+
+$$\theta_{t+1} = \theta_{t} - \dfrac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \hat{m}_t$$
+
+## Nadam
+
+http://cs229.stanford.edu/proj2015/054_report.pdf
+
+ncorporating Nesterov Momentum into Adam
 
 ## 参考
 
@@ -220,81 +244,3 @@ $$C_k=C*W_k$$
 https://blog.csdn.net/giskun/article/details/49329095
 
 SVM的概率输出（Platt scaling）
-
-# 时间序列分析
-
-## 书籍和教程
-
-http://www.stat.berkeley.edu/~bartlett/courses/153-fall2010/
-
-berkeley的时间序列分析课程
-
-http://people.duke.edu/%7Ernau/411home.htm
-
-回归和时间序列分析
-
-《应用时间序列分析》，王燕著。
-
-## 概述
-
-时间序列，就是按时间顺序排列的，随时间变化的数据序列。
-
-生活中各领域各行业太多时间序列的数据了，销售额，顾客数，访问量，股价，油价，GDP，气温...
-
-随机过程的特征有均值、方差、协方差等。
-
-如果随机过程的特征随着时间变化，则此过程是非平稳的；相反，如果随机过程的特征不随时间而变化，就称此过程是平稳的。
-
-下图所示，左边非稳定，右边稳定。
-
-![](/images/article/time_series.png)
-
-非平稳时间序列分析时，若导致非平稳的原因是确定的，可以用的方法主要有趋势拟合模型、季节调整模型、移动平均、指数平滑等方法。
-
-若导致非平稳的原因是随机的，方法主要有ARIMA及自回归条件异方差模型等。
-
-## ARIMA
-
-ARIMA模型全称为差分自回归移动平均模型(Autoregressive Integrated Moving Average Model,简记ARIMA)，也叫求和自回归移动平均模型，是由George Edward Pelham Box和Gwilym Meirion Jenkins于70年代初提出的一著名时间序列预测方法，所以又称为box-jenkins模型、博克思-詹金斯法。
-
->注：Gwilym Meirion Jenkins，1932～1982，英国统计学家。伦敦大学学院博士，兰卡斯特大学教授。
-
-同《数学狂想曲（三）》中的PID算法一样，ARIMA模型实际上是三个简单模型的组合。
-
-### AR模型
-
-$$X_t = c + \sum_{i=1}^p \varphi_i X_{t-i}+ \varepsilon_t$$
-
-其中，p为阶数，$$\varepsilon_t$$为白噪声。上式又记作**AR(p)**。显然，AR模型是一个系统状态模型。
-
-### MA模型
-
-$$X_t = \mu + \varepsilon_t + \sum_{i=1}^q \theta_i \varepsilon_{t-i}$$
-
-上式记作**MA(q)**，其中q和$$\varepsilon_t$$的含义与上同。MA模型是一个噪声模型。
-
-### ARMA模型
-
-AR模型和MA模型合起来，就是ARMA模型：
-
-$$X_t = c + \varepsilon_t +  \sum_{i=1}^p \varphi_i X_{t-i} + \sum_{i=1}^q \theta_i \varepsilon_{t-i}$$
-
-同理，上式也被记作**ARMA(p,q)**。
-
-### Lag operator
-
-在继续下面的描述之前，我们先来定义一下Lag operator--L。
-
-$$L X_t = X_{t-1} \; \text{or} \; X_t = L X_{t+1}$$
-
-### I模型
-
-$$(1-L)^d X_t$$
-
-上式中d为阶数，因此上式也记作**I(d)**。显然$$I(0)=X_t$$。
-
-I模型有什么用呢？我们观察一下I(1)：
-
-$$(1-L) X_t = X_t - X_{t-1} = \Delta X$$
-
-有的时候，虽然I(0)不是平稳序列，但I(1)是平稳序列，这时我们称该序列是**1阶平稳序列**。n阶的情况，可依此类推。

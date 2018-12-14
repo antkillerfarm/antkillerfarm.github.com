@@ -319,3 +319,7 @@ https://mp.weixin.qq.com/s/pc8fJx5StxnX9it2AVU5NA
 https://mp.weixin.qq.com/s/6wzmyhIvUVeAN4Xjfhb1Yw
 
 论文解读：Channel pruning for Accelerating Very Deep Neural Networks
+
+https://mp.weixin.qq.com/s/-X7NYTzOzljzOaQL7_jOkw
+
+惊呆了！速度高达15000fps的人脸检测算法！

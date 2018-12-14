@@ -1,10 +1,20 @@
 ---
 layout: post
-title:  数学狂想曲（十一）——高阶统计, 勾股定理, PID算法, 数学杂谈
+title:  数学狂想曲（十一）——高阶统计, 勾股定理, PID算法
 category: math 
 ---
 
 # 高阶统计（续）
+
+## Cumulants
+
+Cumulants（累积量）的思想最早是Thorvald Thiele提出的，后来被Ronald Fisher和John Wishart发扬光大。
+
+>Thorvald Nicolai Thiele，1838～1910，丹麦天文学家。哥本哈根大学博士。哥本哈根天文台台长（1978～1907）。曾研究过三体问题。被Ronald Fisher誉为“最伟大的统计学家”。
+
+>John Wishart，1898～1956，苏格兰数学家和农业统计学家。Edinburgh University本科+Cambridge University硕士+University College London博士。导师是Karl Pearson，和Ronald Fisher也有过合作。Royal Society of Edinburgh会员。Cambridge University统计实验室首任主任。
+
+>苏格兰人的自我意识真是强，足球有自己的协会，就连皇家学会也有自己的。
 
 在介绍Cumulants之前，我们首先看一下Moment-generating function：
 
@@ -175,87 +185,3 @@ https://blog.csdn.net/qq_25005909/article/details/77941243
 https://blog.csdn.net/nemol1990/article/details/45131603
 
 四轴PID讲解
-
-# 数学杂谈
-
-有一次正在做穿过欧洲的旅行，他与一个陌生人聊天，他很谦虚的自我介绍：“我是Daniel Bernoullis。”
-
-那个人当时就怒了，说：“我还是Issac Newton（牛顿）呢。”
-
-Daniel从此之后在很多的场合深情的回忆起这一次经历把他当作他曾经听过的最衷心的赞扬。
-
-----
-
-Klein和Poincare都在研究自守函数什么的，对于2维的情况，Poincare把自己的结果用Fuchs的名字来命名，因为这个人的东西他曾经看过，并且有很大的影响，Klein感到特别的不爽，他也得到了这样的结果。然而，Fuchs本人对此却一无所知，如此冠名，他自然觉得很不妥。
-
-后来，他和Poincare分别做3维的情况，无奈自己不是Poincare那样的天才，用功过度，体力不支，身体都垮了，从此结束了自己创造性的数学生涯。Poincare自己也不在乎这个东西，于是把3维自己得到的群命名为Klein群。
-
-----
-
-高斯给出了正十七边形可以尺规作图的理论可能性，然而他并不会做。第一个真正的正十七边形尺规作图法直到1825年才由约翰尼斯·厄钦格（Johannes Erchinger）给出。现在比较通行的做法是1893年Herbert William Richmond给出的。距离高斯给出证明（1801年），差不多过了100年。
-
-----
-
-https://mp.weixin.qq.com/s/zozViMoimcL6nJvyBnTQtQ
-
-八岁小孩眼里的欧拉公式
-
-这里讲的是拓扑学中的欧拉公式：V−E+R=2，然而成年人的世界里没有Easy这个词，V−E+R会不会等于其他数呢？于是就有了Euler characteristic。
-
-----
-
-《素数之恋》这本书不错，黎曼猜想的最佳科普读本。
-
-Sir Michael Francis Atiyah，1929年生，英国籍黎巴嫩裔数学家。剑桥大学博士（1955），英国皇家学会会长（1990～1995），获得过Fields Medal(1966)和Abel Prize(2004)。
-
-Atiyah的高中在埃及读的（1941～1945），当时欧洲很多人为了躲避战乱，逃到了那里。
-
-----
-
-有种素数叫做“工业级素数（Industrial-grade primes）”，定义是没有经过严格数学证明、但是通过了“可能素数判定法”（比如米勒-拉宾判定法）的整数。用这种方法判定大整数是否是素数不是完全准确，但速度非常快，而且不会漏掉任何素数。RSA加密法所需的大素数生成方式就很明显了：随机生成大整数，如果判断这个数可能是素数，再用精确但速度慢的素数判定法来判断这个数是否真的是素数。
-
-https://www.zhihu.com/question/54779059
-
-RSA生成公私钥时质数是怎么选的？
-
-# 张量分析
-
-在同构的意义下，第零阶张量（r = 0）为标量（Scalar），第一阶张量（r = 1）为向量（Vector），第二阶张量（r = 2）则成为矩阵（Matrix）。
-
-《张量分析》，黄克智著。
-
->注：黄克智，1927年生，固体力学家。江西中正大学本科+清华硕士+莫斯科大学博士（因应召回国，放弃博士学位）。清华大学工程力学系教授、工程力学研究所所长，中国科学院院士。断裂力学领域权威。
-
-# 拓扑学
-
-《Topopogy Without Tears》，University of New South Wales的Sidney A. Morris著。
-
-该书的中文版：
-
-http://www.topologywithouttears.net/topbookchinese.pdf
-
-# 莫比乌斯反演
-
-http://blog.csdn.net/acdreamers/article/details/8542292
-
-莫比乌斯反演
-
-http://blog.csdn.net/litble/article/details/72804050
-
-初涉莫比乌斯反演
-
-http://blog.csdn.net/u013632138/article/details/52250567
-
-莫比乌斯反演讲解
-
-http://blog.csdn.net/Ripped/article/details/70263965
-
-莫比乌斯反演详解
-
-http://blog.csdn.net/hzj1054689699/article/details/51659994
-
-莫比乌斯反演入门
-
-http://blog.csdn.net/outer_form/article/details/50588307
-
-莫比乌斯反演定理证明

@@ -407,3 +407,23 @@ Python绘制histogram直方图
 https://mp.weixin.qq.com/s/ss9UlDU9lYokS-EDrPnOxQ
 
 如何在Python中使用LightFM构建可扩展的电子商务推荐系统？
+
+https://mp.weixin.qq.com/s/wIaDAewwOBMPRDr28DqGoQ
+
+Feature Tools：可自动构造机器学习特征的Python库
+
+https://mp.weixin.qq.com/s/zfAVXJJmvHgi3JkM_ryDVA
+
+Python高效数据分析的8个技巧
+
+https://mp.weixin.qq.com/s/EL1lST59dVibr6vIbqkdzw
+
+如何用200行Python代码换张脸
+
+https://mp.weixin.qq.com/s/440osIoULBRDOHq7Bk8awA
+
+一文带你了解Python集合与基本的集合运算
+
+https://mp.weixin.qq.com/s/tJwgNXKVwoJby-WkeMeBqQ
+
+40行Python代码实现“旅行者困境“演化过程

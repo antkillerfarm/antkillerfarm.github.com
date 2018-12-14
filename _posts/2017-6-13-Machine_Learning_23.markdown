@@ -190,6 +190,10 @@ https://mp.weixin.qq.com/s/zE8N5snKK2EoM9WgAhI-_g
 
 NeurIPS 2018 AutoML Phase1 冠军队伍 DeepSmart 团队解决方案分享
 
+https://mp.weixin.qq.com/s/z6CaHP7I4WkJAu-eAJPwAg
+
+自动机器学习计算量大！这种多保真度优化技术是走向应用的关键
+
 # Optimizer
 
 在《机器学习（一）》中，我们已经指出梯度下降是解决凸优化问题的一般方法。而如何更有效率的梯度下降，就是本节中Optimizer的责任了。
@@ -279,28 +283,3 @@ $$RMS[g]_{t}=\sqrt{E[g^{2}]_{t}+\epsilon }$$
 $$\Delta \theta_t = - \dfrac{RMS[\Delta \theta]_{t-1}}{RMS[g]_{t}} g_{t}$$
 
 也就是说，Adadelta不仅考虑了梯度的平方和，也考虑了更新量的平方和。
-
-## Adam
-
-Adaptive Moment Estimation借用了卡尔曼滤波的思想，对$$g_t,g_t^2$$进行滤波：
-
-$$m_t = \beta_1 m_{t-1} + (1 - \beta_1) g_t$$
-
-$$v_t = \beta_2 v_{t-1} + (1 - \beta_2) g_t^2$$
-
-估计：
-
-$$\hat{m}_t = \dfrac{m_t}{1 - \beta^t_1}$$
-
-$$\hat{v}_t = \dfrac{v_t}{1 - \beta^t_2}$$
-
-更新：
-
-$$\theta_{t+1} = \theta_{t} - \dfrac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \hat{m}_t$$
-
-## Nadam
-
-http://cs229.stanford.edu/proj2015/054_report.pdf
-
-ncorporating Nesterov Momentum into Adam
-

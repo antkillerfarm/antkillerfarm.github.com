@@ -390,6 +390,10 @@ https://buptldy.github.io/2016/03/31/2016-03-31-Skimage%20hog/
 
 Compute the HOG descriptor by skimage
 
+https://mp.weixin.qq.com/s/WL8jfxB-xukP_MkN2aMb0w
+
+OpenCV，PIL，Skimage你pick谁
+
 ## Numba
 
 NumPy的一个高速版本，能完成前者大部分的功能。
@@ -487,26 +491,3 @@ http://vispy.org/
 https://mp.weixin.qq.com/s/yduK_XKQ-qhiYTNl-YZMFg
 
 利用Python实现卷积神经网络的可视化
-
-## Seaborn
-
-Seaborn是另一个非常棒的Matplotlib的威力加强版，专注于统计绘图，并可无缝对接Pandas库。
-
-官网：
-
-https://seaborn.pydata.org
-
-参考：
-
-https://mp.weixin.qq.com/s/hPbTZHR2iDH4t1eQghNvUQ
-
-数据可视化详解+代码演练
-
-## ImageAI
-
-ImageAI是一个CV方面的库，集成了大量的DL模型，其目标是使用数十行代码完成一个CV任务。
-
-代码：
-
-https://github.com/OlafenwaMoses/ImageAI
-

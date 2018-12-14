@@ -407,3 +407,7 @@ https://mp.weixin.qq.com/s/PrugbfsWIt0LWGJRw_9i1Q
 https://mp.weixin.qq.com/s/_pNDalO6D8kGiCBYi1jnIA
 
 对于知识图谱嵌入表示的几何形状理解
+
+https://mp.weixin.qq.com/s/ZM0qZrqyk0QPBXYbkHAA8A
+
+基于多模态关联数据嵌入的知识库补全

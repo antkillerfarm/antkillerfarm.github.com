@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（十八）——独立成分分析, 贝叶斯线性回归, 强连通分量算法, 异常点检测, Beam Search
+title:  机器学习（十八）——独立成分分析, 时间序列分析, 贝叶斯线性回归, 强连通分量算法, 异常点检测
 category: ML 
 ---
 
@@ -69,6 +69,183 @@ $$\nabla_W\ell(W)=\begin{bmatrix}
 最后，用通常的随机梯度上升算法，求得$$\ell(W)$$的最大值即可。
 
 >注意：我们计算最大似然估计时,假设了$$x^{(i)}$$和$$x^{(j)}$$之间是独立的，然而对于语音信号或者其他具有时间连续依赖特性(比如温度)上，这个假设不能成立。但是在数据足够多时，假设独立对效果影响不大。
+
+# 时间序列分析
+
+## 书籍和教程
+
+http://www.stat.berkeley.edu/~bartlett/courses/153-fall2010/
+
+berkeley的时间序列分析课程
+
+http://people.duke.edu/%7Ernau/411home.htm
+
+回归和时间序列分析
+
+《应用时间序列分析》，王燕著。
+
+## 概述
+
+时间序列，就是按时间顺序排列的，随时间变化的数据序列。
+
+生活中各领域各行业太多时间序列的数据了，销售额，顾客数，访问量，股价，油价，GDP，气温...
+
+随机过程的特征有均值、方差、协方差等。
+
+如果随机过程的特征随着时间变化，则此过程是非平稳的；相反，如果随机过程的特征不随时间而变化，就称此过程是平稳的。
+
+下图所示，左边非稳定，右边稳定。
+
+![](/images/article/time_series.png)
+
+非平稳时间序列分析时，若导致非平稳的原因是确定的，可以用的方法主要有趋势拟合模型、季节调整模型、移动平均、指数平滑等方法。
+
+若导致非平稳的原因是随机的，方法主要有ARIMA及自回归条件异方差模型等。
+
+## ARIMA
+
+ARIMA模型全称为差分自回归移动平均模型(Autoregressive Integrated Moving Average Model,简记ARIMA)，也叫求和自回归移动平均模型，是由George Edward Pelham Box和Gwilym Meirion Jenkins于70年代初提出的一著名时间序列预测方法，所以又称为box-jenkins模型、博克思-詹金斯法。
+
+>注：Gwilym Meirion Jenkins，1932～1982，英国统计学家。伦敦大学学院博士，兰卡斯特大学教授。
+
+同《数学狂想曲（三）》中的PID算法一样，ARIMA模型实际上是三个简单模型的组合。
+
+### AR模型
+
+$$X_t = c + \sum_{i=1}^p \varphi_i X_{t-i}+ \varepsilon_t$$
+
+其中，p为阶数，$$\varepsilon_t$$为白噪声。上式又记作**AR(p)**。显然，AR模型是一个系统状态模型。
+
+### MA模型
+
+$$X_t = \mu + \varepsilon_t + \sum_{i=1}^q \theta_i \varepsilon_{t-i}$$
+
+上式记作**MA(q)**，其中q和$$\varepsilon_t$$的含义与上同。MA模型是一个噪声模型。
+
+### ARMA模型
+
+AR模型和MA模型合起来，就是ARMA模型：
+
+$$X_t = c + \varepsilon_t +  \sum_{i=1}^p \varphi_i X_{t-i} + \sum_{i=1}^q \theta_i \varepsilon_{t-i}$$
+
+同理，上式也被记作**ARMA(p,q)**。
+
+### Lag operator
+
+在继续下面的描述之前，我们先来定义一下Lag operator--L。
+
+$$L X_t = X_{t-1} \; \text{or} \; X_t = L X_{t+1}$$
+
+### I模型
+
+$$(1-L)^d X_t$$
+
+上式中d为阶数，因此上式也记作**I(d)**。显然$$I(0)=X_t$$。
+
+I模型有什么用呢？我们观察一下I(1)：
+
+$$(1-L) X_t = X_t - X_{t-1} = \Delta X$$
+
+有的时候，虽然I(0)不是平稳序列，但I(1)是平稳序列，这时我们称该序列是**1阶平稳序列**。n阶的情况，可依此类推。
+
+### ARIMA模型
+
+ARIMA模型可以看作是两个随机过程的组合。
+
+首先是非平稳过程：
+
+$$Y_t = (1-L)^d X_t$$
+
+接着是一个广义平稳过程：
+
+$$\left( 1 - \sum_{i=1}^p \phi_i L^i \right) Y_t = \left( 1 + \sum_{i=1}^q \theta_i L^i \right) \varepsilon_t$$
+
+最后得到ARIMA模型的公式：
+
+$$\left( 1 - \sum_{i=1}^p \phi_i L^i\right)
+(1-L)^d X_t = \delta + \left( 1 + \sum_{i=1}^q \theta_i L^i \right) \varepsilon_t$$
+
+上式也被记作**ARIMA(p,d,q)**。从上式可以看出，ARIMA模型实际上就是利用I模型，将时间序列转化为平稳序列之后的ARMA模型。
+
+>注：上面的内容只是对ARIMA模型给出一个简单的定义。实际的假设检验、参数估计的步骤，还是比较复杂的，完全可以写本书来说。
+
+## 其它
+
+除了ARIMA系列模型之外，ARCH系列模型也用的比较多：
+
+autoregressive conditional heteroskedasticity, ARCH
+
+generalized autoregressive conditional heteroskedasticity, GARCH
+
+## 参考
+
+https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average
+
+https://en.wikipedia.org/wiki/Autoregressive%E2%80%93moving-average_model
+
+https://zhuanlan.zhihu.com/p/23534595
+
+时间序列分析：结合ARMA的卡尔曼滤波算法（该文的参考文献中有不少好文）
+
+http://blog.csdn.net/aliceyangxi1987/article/details/71079522
+
+用ARIMA模型做需求预测
+
+http://blog.csdn.net/kicilove/article/details/78315335
+
+时间序列初级理论篇
+
+https://mp.weixin.qq.com/s/K-XGuaWTcF6BDPJagaJDPQ
+
+时序数据与事件的关联分析
+
+https://mp.weixin.qq.com/s/JR-GIXwHF45OysoE0qvwzw
+
+时间序列异常检测机制的研究
+
+https://mp.weixin.qq.com/s/2hpQ_7Ih58d1RKYb1oW_Sg
+
+时间序列简介（一）
+
+https://mp.weixin.qq.com/s/05WAZcklXnL_hFPLZW9t7Q
+
+时间序列模型之相空间重构模型
+
+https://zhuanlan.zhihu.com/p/34407471
+
+如何理解时间序列？—从Riemann积分和Lebesgue积分谈起
+
+https://zhuanlan.zhihu.com/p/35093835
+
+时间序列的自回归模型—从线性代数的角度来看
+
+https://mp.weixin.qq.com/s/lmJk-iIzxxPmnZa6D8i_nw
+
+一文简述如何使用嵌套交叉验证方法处理时序数据
+
+https://zhuanlan.zhihu.com/p/39105270
+
+时间序列的表示与信息提取
+
+https://mp.weixin.qq.com/s/iah8PvIC0oZngSaNHw7gJw
+
+从上帝视角看透时间序列和数据挖掘
+
+https://zhuanlan.zhihu.com/p/38130622
+
+时间序列的相似性
+
+https://mp.weixin.qq.com/s/p8oN4xh-FHnay2eTsk6Gng
+
+基于高阶模糊认知图与小波变换的时间序列预测
+
+https://mp.weixin.qq.com/s/DGGuAYsoa6DPD6FBf2Hc4g
+
+时间序列分析之理论篇
+
+https://zhuanlan.zhihu.com/p/50698719
+
+两篇关于时间序列的论文
 
 # 贝叶斯线性回归
 
@@ -151,53 +328,3 @@ https://mp.weixin.qq.com/s/ReQpT9KT6_tE8vXM-F_Ejw
 https://www.zhihu.com/question/30508773
 
 反欺诈(Fraud Detection)中所用到的机器学习模型有哪些？
-
-# Beam Search
-
-## 概述
-
-Beam Search（集束搜索）是一种启发式图搜索算法，通常用在图的解空间比较大的情况下，为了减少搜索所占用的空间和时间，在每一步深度扩展的时候，剪掉一些质量比较差的结点，保留下一些质量较高的结点。保留下来的结点个数一般叫做Beam Width。
-
-这样减少了空间消耗，并提高了时间效率，但缺点就是有可能存在潜在的最佳方案被丢弃，因此Beam Search算法是不完全的，一般用于解空间较大的系统中。
-
-![](/images/article/beam_search.png)
-
-上图是一个Beam Width为2的Beam Search的剪枝示意图。每一层只保留2个最优的分支，其余分支都被剪掉了。
-
-显然，Beam Width越大，找到最优解的概率越大，相应的计算复杂度也越大。因此，设置合适的Beam Width是一个工程中需要trade off的事情。
-
-当Beam Width为1时，也就是著名的A*算法了。
-
-Beam Search主要用于机器翻译、语音识别等系统。这类系统虽然从理论来说，也就是个多分类系统，然而由于分类数等于词汇数，简单的套用softmax之类的多分类方案，明显是计算量过于巨大了。
-
-PS：中文验证码识别估计也可以采用该技术。
-
-## Beam Search与Viterbi算法
-
-Beam Search与Viterbi算法虽然都是解空间的剪枝算法，但它们的思路是不同的。
-
-Beam Search是对状态迁移的路径进行剪枝，而Viterbi算法是合并不同路径到达同一状态的概率值，用最大值作为对该状态的充分估计值，从而在后续计算中，忽略历史信息（这种以偏概全也就是所谓的Markov性），以达到剪枝的目的。
-
-从状态转移图的角度来说，Beam Search是空间剪枝，而Viterbi算法是时间剪枝。
-
-## 参考
-
-http://people.csail.mit.edu/srush/optbeam.pdf
-
-Optimal Beam Search for Machine Translation
-
-http://www.cnblogs.com/xxey/p/4277181.html
-
-Beam Search（集束搜索/束搜索）
-
-http://blog.csdn.net/girlhpp/article/details/19400731
-
-束搜索算法（Andrew Jungwirth 初稿）BEAM Search
-
-http://hongbomin.com/2017/06/23/beam-search/
-
-Beam Search算法及其应用
-
-https://mp.weixin.qq.com/s/GTtjjBgCDdLRwPrUqfwlVA
-
-如何使用贪婪搜索和束搜索解码算法进行自然语言处理

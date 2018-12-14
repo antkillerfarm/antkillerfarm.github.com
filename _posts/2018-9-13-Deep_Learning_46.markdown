@@ -413,3 +413,7 @@ https://mp.weixin.qq.com/s/osmUZxAAX3x-oTHYJbzemA
 https://mp.weixin.qq.com/s/XmeDjHSFI0UsQmKeOgwnyA
 
 小数据福音！BERT在极小数据下带来显著提升的开源实现
+
+https://mp.weixin.qq.com/s/HXYDO5PM8UIoXgEPGe8p-w
+
+图解当前最强语言模型BERT：NLP是如何攻克迁移学习的？

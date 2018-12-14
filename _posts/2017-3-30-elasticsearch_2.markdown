@@ -191,6 +191,10 @@ https://mp.weixin.qq.com/s/Wzrt7H9gDIUQn7KEc0qZHQ
 
 在Python中使用Elasticsearch
 
+https://mp.weixin.qq.com/s/K44-L0rclaIM40hma55pPQ
+
+滴滴Elasticsearch多集群架构实践
+
 # scrapy
 
 scrapy是一个Python写的网页抓取分析工具。网页抓取分析的学名叫做“Web scraping”，可在wiki上获得更多的相关信息。
@@ -288,6 +292,10 @@ Kafka的API那么多，到底该怎么选？
 https://mp.weixin.qq.com/s/XvWxaoob_PYpcOt8XpK7mw
 
 杠上Spark、Flink？Kafka为何转型流数据平台
+
+https://mp.weixin.qq.com/s/2kU9QhLP-njpToPckyfK5A
+
+伯克利RISE Lab开源Confluo：吞吐量比Kafka高4到10倍
 
 # Flutter
 

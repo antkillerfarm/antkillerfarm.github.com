@@ -4,7 +4,27 @@ title:  数学狂想曲（十）——复变函数, 平稳离散时间随机过�
 category: math 
 ---
 
-# 熵（续）
+# 熵
+
+## 统计热力学定义（续）
+
+根据热力学第三定律，使用绝对零度作为原点，则：
+
+$$S=K\ln \Omega$$
+
+上式就是Boltzmann's entropy formula。这里隐含的另一个假设是：分子随机运动没有偏好性，即**各状态的概率相等**。
+
+如果状态概率不等的话，则：
+
+$$S = K \cdot E[\ln \Omega] = K \sum \Omega_i \ln \Omega_i$$
+
+上式被称作Gibbs entropy。
+
+参考：
+
+https://wenku.baidu.com/view/a90518a37c1cfad6185fa746.html
+
+热力学中的熵
 
 ## 信息熵
 
@@ -247,13 +267,3 @@ $$\mu_n = \int_{-\infty}^\infty (x - c)^n\,f(x)\,\mathrm{d}x$$
 其中，当c=0时，被称作Raw Moment。当c为均值时，被称作Central Moment。如果用$$\mu_n/\sigma^n$$替换$$\mu_n$$，就是所谓的Normalised Moment了。
 
 1阶Raw Moment，常称为Mean。2阶Central Moment，常称为Variance。3阶Normalised Moment，常称为Skewness。4阶Normalised Moment，常称为kurtosis。
-
-## Cumulants
-
-Cumulants（累积量）的思想最早是Thorvald Thiele提出的，后来被Ronald Fisher和John Wishart发扬光大。
-
->Thorvald Nicolai Thiele，1838～1910，丹麦天文学家。哥本哈根大学博士。哥本哈根天文台台长（1978～1907）。曾研究过三体问题。被Ronald Fisher誉为“最伟大的统计学家”。
-
->John Wishart，1898～1956，苏格兰数学家和农业统计学家。Edinburgh University本科+Cambridge University硕士+University College London博士。导师是Karl Pearson，和Ronald Fisher也有过合作。Royal Society of Edinburgh会员。Cambridge University统计实验室首任主任。
-
->苏格兰人的自我意识真是强，足球有自己的协会，就连皇家学会也有自己的。

@@ -152,6 +152,10 @@ https://mp.weixin.qq.com/s/KLTSUqprwfFBVeVIP7HJRw
 
 # 无监督/半监督/自监督深度学习
 
+自监督学习是一种特殊目的的无监督学习。不同于传统的AutoEncoder等方法，仅仅以重构输入为目的，而是希望通过surrogate task学习到和高层语义信息相关联的特征。
+
+## 参考
+
 https://mp.weixin.qq.com/s/L4GQF0eE7MjLPrb8UygCww
 
 无监督深度学习全景教程（193页PDF）
@@ -263,6 +267,10 @@ https://mp.weixin.qq.com/s/LFOljv-Hr6JqyI6TQ2X4sw
 https://mp.weixin.qq.com/s/83xAXrc_H_OExW3vii08hA
 
 谷歌提出新方法：基于单目视频的无监督深度学习结构化
+
+https://mp.weixin.qq.com/s/gr0_p4WFToTrDfy47h-p0A
+
+基于自监督学习的视听觉信息同一性判断
 
 # 细粒度分类
 

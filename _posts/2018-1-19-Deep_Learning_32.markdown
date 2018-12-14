@@ -342,6 +342,10 @@ https://mp.weixin.qq.com/s/lVja7woyFWpmr9sH0CitAA
 
 BMXNet：基于MXNet的开源二值神经网络实现
 
+https://mp.weixin.qq.com/s/naDk0mmxd08dNl9LawLUnw
+
+不使用先验知识与复杂训练策略，从头训练二值神经网络！
+
 https://mp.weixin.qq.com/s/tbRj5Wd69n9gvSzW4oKStg
 
 异或神经网络

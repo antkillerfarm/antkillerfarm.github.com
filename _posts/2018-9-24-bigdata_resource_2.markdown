@@ -98,6 +98,10 @@ https://mp.weixin.qq.com/s/DIaBHRoJs7z1ZOOpF5p9qQ
 
 跨境物流链路怎么做？菜鸟工程师打造了全球通关“神器”
 
+https://mp.weixin.qq.com/s/8N2EBRar495vxDHsUtpskw
+
+机器学习在美团配送系统的实践：用技术还原真实世界
+
 # 知名数据集
 
 ## CV（续）

@@ -6,6 +6,22 @@ category: language
 
 # Python
 
+## python调用GTK函数的一般规则（续）
+
+这里首先按照一般的方法，将C代码转化成python代码。但是运行之后，产生如下错误：
+
+`OverflowError: long too big to convert`
+
+究其原因，gst_element_seek的最后一个参数是uint64类型的。但python原生并不支持该类型，而是将之转换成int类型（实际上是int64类型），这样的话，GST_CLOCK_TIME_NONE的值显然超出了int64所能表示的范围。
+
+解决的办法是使用ctypes库，将
+
+`Gst.CLOCK_TIME_NONE`
+
+改为
+
+`c_long(Gst.CLOCK_TIME_NONE).value`
+
 ## zip
 
 Python的zip函数和数据压缩的zip算法没有任何关系。
