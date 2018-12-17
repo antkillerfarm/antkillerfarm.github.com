@@ -448,6 +448,10 @@ https://mp.weixin.qq.com/s/0QnH0F8JZQBsECoJeGqpsg
 
 虚拟现实与增强现实的前沿技术PPT
 
+https://mp.weixin.qq.com/s/yIJT9D1YXa4rhf-RMBVPLw
+
+1G到5G之争：一部30年惊心动魄的移动通信史
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

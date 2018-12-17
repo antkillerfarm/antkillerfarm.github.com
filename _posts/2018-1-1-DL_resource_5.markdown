@@ -6,6 +6,42 @@ category: resource
 
 # DL参考资源
 
+## 光神经网络
+
+https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ
+
+3D打印的深度神经网络，光速执行AI运算
+
+https://mp.weixin.qq.com/s/5zt8UIpNBcgNZpwHHJj68Q
+
+光学CNN层替换传统CNN层，超省电
+
+https://mp.weixin.qq.com/s/IheyYAC1yIigYOW-gtc5Eg
+
+Science重磅！用光速实现深度学习，跟GPU说再见
+
+https://mp.weixin.qq.com/s/ENYX87SMlgv30x08iYFQIw
+
+几乎零能耗零延迟！UCLA科学家发明光衍射神经网络，登上Science
+
+## 连续学习
+
+https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
+
+终身机器学习: 一种持续学习的范式
+
+https://mp.weixin.qq.com/s/SBppyDBWqQUariiHbpaq1w
+
+实时深度学习的推理加速和连续学习
+
+https://mp.weixin.qq.com/s/83HufWMDnuXIOCCfgqeDJw
+
+为什么说持续学习才是AI的关键
+
+https://mp.weixin.qq.com/s/kmEFjzFIbNq0_qdjc1Wm_w
+
+DeepMind新智能体架构Unicorn：持续学习能力胜过多个基准智能体
+
 ## gcForest
 
 http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw

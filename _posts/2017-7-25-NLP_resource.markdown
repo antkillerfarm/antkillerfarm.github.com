@@ -134,6 +134,14 @@ https://mp.weixin.qq.com/s/Rd3-ypRYiJObi-e2JDeOjQ
 
 深度长文：NLP的巨人肩膀（上）
 
+https://mp.weixin.qq.com/s/7imMQ3GkD52xP7N4fqNPog
+
+NLP的巨人肩膀（下）：从CoVe到BERT
+
+https://mp.weixin.qq.com/s/kdbaMyDLC5YaOMqTAOyLAg
+
+斯坦福陈丹琦博士论文：神经网络阅读理解与更多（附156页pdf）
+
 https://www.msra.cn/zh-cn/news/features/ruihua-song-20161226
 
 宋睿华：好玩的文本生成

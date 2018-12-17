@@ -32,9 +32,9 @@ https://mp.weixin.qq.com/s/kLXJsHbBnRIFC3NLChPhzA
 
 如何高效进行大规模分类？港中文联合商汤提出新方法
 
-https://mp.weixin.qq.com/s/miD1eQNLhf6G_IZL4wwuEg
+https://mp.weixin.qq.com/s/F10UaaoxGPOE4pc59LBCRw
 
-Google：数据并行对神经网络训练用时的影响
+数据并行化对神经网络训练有何影响？谷歌大脑进行了实证研究
 
 ## 实战
 
@@ -288,6 +288,10 @@ https://mp.weixin.qq.com/s/x8ykOA9CeX3FCz0WCeySng
 
 AI生成假指纹以假乱真，你的指纹识别还安全吗？
 
+https://mp.weixin.qq.com/s/EeAvDpPpfxDO4WFIrvCMpA
+
+深入浅出对抗性机器学习（AML）
+
 ## 行业
 
 李开复的这篇文章不可不读：
@@ -353,24 +357,6 @@ https://mp.weixin.qq.com/s/9ivDZXpPpLE3fuPgpNUyJA
 https://mp.weixin.qq.com/s/qmdfLlTfQzT0QVq_SzEPUw
 
 机器学习和深度学习中值得弄清楚的一些问题
-
-## 光神经网络
-
-https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ
-
-3D打印的深度神经网络，光速执行AI运算
-
-https://mp.weixin.qq.com/s/5zt8UIpNBcgNZpwHHJj68Q
-
-光学CNN层替换传统CNN层，超省电
-
-https://mp.weixin.qq.com/s/IheyYAC1yIigYOW-gtc5Eg
-
-Science重磅！用光速实现深度学习，跟GPU说再见
-
-https://mp.weixin.qq.com/s/ENYX87SMlgv30x08iYFQIw
-
-几乎零能耗零延迟！UCLA科学家发明光衍射神经网络，登上Science
 
 ## AI与UI
 

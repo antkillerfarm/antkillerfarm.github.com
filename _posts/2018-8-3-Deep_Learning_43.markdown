@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十三）——图像变换, Graph NN
+title:  深度学习（四十三）——图像变换, Recursive NN, Spiking Neuron Networks, 模型压缩与加速（2）
 category: DL 
 ---
 
@@ -268,124 +268,74 @@ https://mp.weixin.qq.com/s/7xGtUHfk_FNpDTksLxKaHw
 
 杨超越的声音+高晓松的脸~如此酸爽的技术，你值得拥有！
 
-# Graph NN
+https://mp.weixin.qq.com/s/y9h6xkK9Keq4UrdpGJS-4Q
 
-https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
+这些假脸实在太逼真了！英伟达造出新一代GAN，生成壁纸级高清大图毫无破绽
 
-Bengio等人提出图注意网络架构GAT，可处理复杂结构图
+# Recursive NN
 
-https://zhuanlan.zhihu.com/p/34232818
+http://blog.csdn.net/qq_26609915/article/details/52119512
 
-《Graph Attention Networks》阅读笔记
+递归神经网络（recursive NN）结合自编码（Autoencode）实现句子建模
 
-https://zhuanlan.zhihu.com/p/28170197
+http://blog.csdn.net/mengmengz07/article/details/51348554
 
-《Gated Graph Sequence Neural Networks》阅读笔记
+recursive neural network梳理
 
-https://mp.weixin.qq.com/s/Pm1HiEQOBnbo_GQ_v6Y_zw
+# Spiking Neuron Networks
 
-腾讯提出自适应图卷积神经网络，接受不同图结构和规模的数据
+除了基于BP算法的NN之外，Spiking Neuron Networks也是一大类NN。Spiking NN和人脑结构更相似，功耗也更小，但是相关训练和数据量化的算法尚不成熟，属于潜力股。
 
-https://mp.weixin.qq.com/s/bMpugd2Lp35VPr8fQAPzsg
+![](/images/img2/BrainChip_Fig2.gif)
 
-一文概览图卷积网络基本结构和最新进展
+参考：
 
-https://zhuanlan.zhihu.com/p/31067515
+https://homepages.cwi.nl/~sbohte/publication/paugam_moisy_bohte_SNNChapter.pdf
 
-《Semi-Supervised Classification with Graph Convolutional Networks》阅读笔记
+Computing with Spiking Neuron Networks
 
-https://mp.weixin.qq.com/s/6viSk0Ts_7eTfYrWYi_HDQ
+https://mp.weixin.qq.com/s/6dpKSaLFVo-ge4gtbG8GQg
 
-基于图结构的实体和关系联合抽取模型简介
+简述脉冲神经网络SNN：下一代神经网络
 
-https://mp.weixin.qq.com/s/w5ldyp00CqkX8Kp-8Aw0nQ
+https://mp.weixin.qq.com/s/0n50YO1jIv_mxqe0EeS6kw
 
-图深度学习(GraphDL)，下一个人工智能算法热点？一文了解最新GDL相关文章
+综述AI未来：神经科学启发的类脑计算
 
-https://mp.weixin.qq.com/s/Jt6CjMqNFEXWoL5pkLeVyw
+https://mp.weixin.qq.com/s/5KA7jtlRmnXxijGQhU1k4A
 
-洛桑理工：Graph上的深度学习报告
+DeepMind哈萨比斯狂推的神经科学，入门需要看什么书？
 
-https://zhuanlan.zhihu.com/p/36117802
+https://mp.weixin.qq.com/s/TWdeHVCgEf54STvdA1QUPg
 
-《Learn to Represent Programs with Graphs》阅读笔记。这篇论文讲述了DL在程序代码纠错方面的应用。
+DeepMind哈萨比斯长文：伟大的AI离不开神经科学
 
-https://zhuanlan.zhihu.com/p/37278426
+https://mp.weixin.qq.com/s/8ibcyvyBLYArAMhQElqRzg
 
-Graph2Seq: Graph to Sequence Learning with Attention-based Neural Networks
+Cell研究揭示生物神经元强大新特性，是时候设计更复杂的神经网络了！
 
-https://mp.weixin.qq.com/s/iQYVyo2PHuGbEsYgdIf_oQ
+https://mp.weixin.qq.com/s/cb6JBlb11xW0Xw0RWI4vFA
 
-DeepMind等机构提出“图网络”：面向关系推理
+浙大&川大提出脉冲版ResNet：继承ResNet优势，实现当前最佳
 
-https://mp.weixin.qq.com/s/TAccHagxXQ82lfE91Y6xWg
+# 模型压缩与加速
 
-CNN已老，GNN来了：重磅论文讲述深度学习的因果推理
+https://mp.weixin.qq.com/s/nEMvoiqImd0RxrskIH7c9A
 
-https://mp.weixin.qq.com/s/UONtTJJgDawRPWtatAVKkg
+仅17 KB、一万个权重的微型风格迁移网络！
 
-如何利用高效的搜索算法来搜索网络的拓扑结构
+https://mp.weixin.qq.com/s/pc8fJx5StxnX9it2AVU5NA
 
-https://mp.weixin.qq.com/s/lt9lZbulkW0C8A_xi6hodQ
+基于手机系统的实时目标检测
 
-浅析图卷积神经网络
+https://mp.weixin.qq.com/s/6wzmyhIvUVeAN4Xjfhb1Yw
 
-https://mp.weixin.qq.com/s/SGCtwYWfnxjcpMJeeH1b4w
+论文解读：Channel pruning for Accelerating Very Deep Neural Networks
 
-图神经网络+池化模块，斯坦福等提出层级图表征学习
+https://mp.weixin.qq.com/s/-X7NYTzOzljzOaQL7_jOkw
 
-https://mp.weixin.qq.com/s/DOau_vTbwCauQ8mrHkGu9Q
+惊呆了！速度高达15000fps的人脸检测算法！
 
-首个面向Facebook、arXiv网络图类的对抗攻击研究
+https://mp.weixin.qq.com/s/6eyEMW9dVBR5cZrHxn8iqA
 
-https://mp.weixin.qq.com/s/XSug_qOqq_QaphkiRlGkIg
-
-图卷积GCN前沿方法介绍
-
-https://mp.weixin.qq.com/s/aeQyZ8cpz81cK8Dg-84mjA
-
-网络表征学习综述
-
-https://mp.weixin.qq.com/s/_0quf0IRe8mn4dnsBwf6Aw
-
-基于路径的实体图关系抽取模型
-
-https://mp.weixin.qq.com/s/jCgbBldpw4TGHUvN9WkJZg
-
-在对抗中学习网络结构——87页PPT带你学习Graph中的GAN
-
-https://mp.weixin.qq.com/s/xTZbfiLYHB64AJJRcw04qQ
-
-知识图和神经网络：如何有效读取图节点属性
-
-https://mp.weixin.qq.com/s/9fFjVSiMg-LwddXfNJuKuw
-
-DeepMind开源图网络库，一种结合图和神经网络的新方法
-
-https://mp.weixin.qq.com/s/5DmpgPN4t3p3H53Xu7_-3A
-
-北大、微软亚洲研究院：高效的大规模图神经网络计算
-
-https://mp.weixin.qq.com/s/BFJD8i_yg1Y6fxZS5or-rw
-
-Bengio最新论文提出GibbsNet：深度图模型中的迭代性对抗推断
-
-https://zhuanlan.zhihu.com/p/48834333
-
-GCN in 2018：2018年顶会论文中的图卷积神经网络的理论与应用
-
-https://mp.weixin.qq.com/s/TGuEvNXw_9S5-9a3KyDvvw
-
-基于图卷积网络的图深度学习
-
-https://mp.weixin.qq.com/s/zg3yW7e4UKIs9-m6WmcbvA
-
-GraphWave：一种全新的无监督网络嵌入方法
-
-https://mp.weixin.qq.com/s/rGC8O2Pyq8WL8D8ATMbH0Q
-
-NYU、AWS联合推出：全新图神经网络框架DGL正式发布
-
-https://mp.weixin.qq.com/s/mamet6l_lA7fhoYkysZ7PQ
-
-华为联合LSE提出KONG：有序近邻图的核函数
+腾讯AI Lab详解3大热点：模型压缩、自动机器学习及最优化算法

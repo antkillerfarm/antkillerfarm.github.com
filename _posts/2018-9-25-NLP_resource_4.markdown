@@ -349,3 +349,12 @@ https://mp.weixin.qq.com/s/UZbt1E6QntwtWWvJfTL3eQ
 https://mp.weixin.qq.com/s/cFKZxtlAAABWn8CgXJz4kA
 
 多内容实体和关系联合抽取的对抗训练
+
+https://mp.weixin.qq.com/s/nGb-8M4S1a_4Yz9Lzjvzew
+
+基于Universal Schema与Memory Network的知识+文本问答
+
+https://mp.weixin.qq.com/s/Pm3wB4VRuoBR-XLjW_jpfQ
+
+反讽识别综述
+

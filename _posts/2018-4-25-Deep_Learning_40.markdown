@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十）——模型压缩与加速
+title:  深度学习（四十）——模型压缩与加速（1）
 category: DL 
 ---
 
@@ -85,6 +85,28 @@ https://mp.weixin.qq.com/s/OCG1TiHl2dsuS24uacQ-MA
 2.使用修改后的weights进行re-train。训练好之后，重复第1、2步。
 
 3.反复多次之后，进入最终prune阶段。修改src/network.c:update_network，令其不更新0权值。
+
+此外，权值稀疏化也和网络结构有关。比如分类网络，由于输入图片是高维数据，而分类结果是低维数据，因此在稀疏化处理的时候，**越靠近输出结果的Layer，其稀疏化程度就可以越高。**而最初的几层，即使只加少量稀疏化，也会导致精度的大幅下降，这时往往就不做或者少做稀疏化处理了。
+
+除了训练后的权值稀疏化之外，权值稀疏化训练也是一种方法。
+
+论文：
+
+《FLOPs as a Direct Optimization Objective for Learning Sparse Neural Networks》
+
+这篇论文，将计算量也就是FLOPs作为Loss function设计的一部分，由于稀疏化的权值没有运算量，因此，采用这种Loss训练出的网络，天生就是稀疏化的。
+
+## AutoML
+
+由于模型压缩，本质上是一个精益求精的优化问题，因此采用AutoML技术对于各个超参数进行优化，就成为了一件很有必要的事情。
+
+这里主要的问题在于超参数数量众多，导致状态空间过大。
+
+论文：
+
+《AMC: AutoML for Model Compression and Acceleration on Mobile Devices》
+
+这是韩松组的何宜晖的作品。该论文采用深度强化学习的DDPG网络来优化目标网络，从而大大减少了需要搜索的状态空间。
 
 ## 参考
 
@@ -307,19 +329,3 @@ https://mp.weixin.qq.com/s/aH1zQ7we8OE59-O9n4IXhw
 https://mp.weixin.qq.com/s/IfvXrsUq8-cBDC4_3O5v_w
 
 Facebook新研究优化硬件浮点运算，强化AI模型运行速率
-
-https://mp.weixin.qq.com/s/nEMvoiqImd0RxrskIH7c9A
-
-仅17 KB、一万个权重的微型风格迁移网络！
-
-https://mp.weixin.qq.com/s/pc8fJx5StxnX9it2AVU5NA
-
-基于手机系统的实时目标检测
-
-https://mp.weixin.qq.com/s/6wzmyhIvUVeAN4Xjfhb1Yw
-
-论文解读：Channel pruning for Accelerating Very Deep Neural Networks
-
-https://mp.weixin.qq.com/s/-X7NYTzOzljzOaQL7_jOkw
-
-惊呆了！速度高达15000fps的人脸检测算法！

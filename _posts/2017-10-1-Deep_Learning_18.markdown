@@ -1,54 +1,8 @@
 ---
 layout: post
-title:  深度学习（十八）——Recursive NN, Spiking Neuron Networks, 数据增强, 语义分割
+title:  深度学习（十八）——数据增强, Graph NN, 语义分割
 category: DL 
 ---
-
-# Recursive NN
-
-http://blog.csdn.net/qq_26609915/article/details/52119512
-
-递归神经网络（recursive NN）结合自编码（Autoencode）实现句子建模
-
-http://blog.csdn.net/mengmengz07/article/details/51348554
-
-recursive neural network梳理
-
-# Spiking Neuron Networks
-
-除了基于BP算法的NN之外，Spiking Neuron Networks也是一大类NN。Spiking NN和人脑结构更相似，功耗也更小，但是相关训练和数据量化的算法尚不成熟，属于潜力股。
-
-![](/images/img2/BrainChip_Fig2.gif)
-
-参考：
-
-https://homepages.cwi.nl/~sbohte/publication/paugam_moisy_bohte_SNNChapter.pdf
-
-Computing with Spiking Neuron Networks
-
-https://mp.weixin.qq.com/s/6dpKSaLFVo-ge4gtbG8GQg
-
-简述脉冲神经网络SNN：下一代神经网络
-
-https://mp.weixin.qq.com/s/0n50YO1jIv_mxqe0EeS6kw
-
-综述AI未来：神经科学启发的类脑计算
-
-https://mp.weixin.qq.com/s/5KA7jtlRmnXxijGQhU1k4A
-
-DeepMind哈萨比斯狂推的神经科学，入门需要看什么书？
-
-https://mp.weixin.qq.com/s/TWdeHVCgEf54STvdA1QUPg
-
-DeepMind哈萨比斯长文：伟大的AI离不开神经科学
-
-https://mp.weixin.qq.com/s/8ibcyvyBLYArAMhQElqRzg
-
-Cell研究揭示生物神经元强大新特性，是时候设计更复杂的神经网络了！
-
-https://mp.weixin.qq.com/s/cb6JBlb11xW0Xw0RWI4vFA
-
-浙大&川大提出脉冲版ResNet：继承ResNet优势，实现当前最佳
 
 # 数据增强
 
@@ -95,6 +49,128 @@ https://mp.weixin.qq.com/s/sXV9epWguGbJEZYo4yNp5Q
 https://zhuanlan.zhihu.com/p/46833956
 
 图像数据增强之弹性形变（Elastic Distortions）
+
+# Graph NN
+
+https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
+
+Bengio等人提出图注意网络架构GAT，可处理复杂结构图
+
+https://zhuanlan.zhihu.com/p/34232818
+
+《Graph Attention Networks》阅读笔记
+
+https://zhuanlan.zhihu.com/p/28170197
+
+《Gated Graph Sequence Neural Networks》阅读笔记
+
+https://mp.weixin.qq.com/s/Pm1HiEQOBnbo_GQ_v6Y_zw
+
+腾讯提出自适应图卷积神经网络，接受不同图结构和规模的数据
+
+https://mp.weixin.qq.com/s/bMpugd2Lp35VPr8fQAPzsg
+
+一文概览图卷积网络基本结构和最新进展
+
+https://zhuanlan.zhihu.com/p/31067515
+
+《Semi-Supervised Classification with Graph Convolutional Networks》阅读笔记
+
+https://mp.weixin.qq.com/s/6viSk0Ts_7eTfYrWYi_HDQ
+
+基于图结构的实体和关系联合抽取模型简介
+
+https://mp.weixin.qq.com/s/w5ldyp00CqkX8Kp-8Aw0nQ
+
+图深度学习(GraphDL)，下一个人工智能算法热点？一文了解最新GDL相关文章
+
+https://mp.weixin.qq.com/s/Jt6CjMqNFEXWoL5pkLeVyw
+
+洛桑理工：Graph上的深度学习报告
+
+https://zhuanlan.zhihu.com/p/36117802
+
+《Learn to Represent Programs with Graphs》阅读笔记。这篇论文讲述了DL在程序代码纠错方面的应用。
+
+https://zhuanlan.zhihu.com/p/37278426
+
+Graph2Seq: Graph to Sequence Learning with Attention-based Neural Networks
+
+https://mp.weixin.qq.com/s/iQYVyo2PHuGbEsYgdIf_oQ
+
+DeepMind等机构提出“图网络”：面向关系推理
+
+https://mp.weixin.qq.com/s/TAccHagxXQ82lfE91Y6xWg
+
+CNN已老，GNN来了：重磅论文讲述深度学习的因果推理
+
+https://mp.weixin.qq.com/s/UONtTJJgDawRPWtatAVKkg
+
+如何利用高效的搜索算法来搜索网络的拓扑结构
+
+https://mp.weixin.qq.com/s/lt9lZbulkW0C8A_xi6hodQ
+
+浅析图卷积神经网络
+
+https://mp.weixin.qq.com/s/SGCtwYWfnxjcpMJeeH1b4w
+
+图神经网络+池化模块，斯坦福等提出层级图表征学习
+
+https://mp.weixin.qq.com/s/DOau_vTbwCauQ8mrHkGu9Q
+
+首个面向Facebook、arXiv网络图类的对抗攻击研究
+
+https://mp.weixin.qq.com/s/XSug_qOqq_QaphkiRlGkIg
+
+图卷积GCN前沿方法介绍
+
+https://mp.weixin.qq.com/s/aeQyZ8cpz81cK8Dg-84mjA
+
+网络表征学习综述
+
+https://mp.weixin.qq.com/s/_0quf0IRe8mn4dnsBwf6Aw
+
+基于路径的实体图关系抽取模型
+
+https://mp.weixin.qq.com/s/jCgbBldpw4TGHUvN9WkJZg
+
+在对抗中学习网络结构——87页PPT带你学习Graph中的GAN
+
+https://mp.weixin.qq.com/s/xTZbfiLYHB64AJJRcw04qQ
+
+知识图和神经网络：如何有效读取图节点属性
+
+https://mp.weixin.qq.com/s/9fFjVSiMg-LwddXfNJuKuw
+
+DeepMind开源图网络库，一种结合图和神经网络的新方法
+
+https://mp.weixin.qq.com/s/5DmpgPN4t3p3H53Xu7_-3A
+
+北大、微软亚洲研究院：高效的大规模图神经网络计算
+
+https://mp.weixin.qq.com/s/BFJD8i_yg1Y6fxZS5or-rw
+
+Bengio最新论文提出GibbsNet：深度图模型中的迭代性对抗推断
+
+https://zhuanlan.zhihu.com/p/48834333
+
+GCN in 2018：2018年顶会论文中的图卷积神经网络的理论与应用
+
+https://mp.weixin.qq.com/s/TGuEvNXw_9S5-9a3KyDvvw
+
+基于图卷积网络的图深度学习
+
+https://mp.weixin.qq.com/s/zg3yW7e4UKIs9-m6WmcbvA
+
+GraphWave：一种全新的无监督网络嵌入方法
+
+https://mp.weixin.qq.com/s/rGC8O2Pyq8WL8D8ATMbH0Q
+
+NYU、AWS联合推出：全新图神经网络框架DGL正式发布
+
+https://mp.weixin.qq.com/s/mamet6l_lA7fhoYkysZ7PQ
+
+华为联合LSE提出KONG：有序近邻图的核函数
 
 # 语义分割
 

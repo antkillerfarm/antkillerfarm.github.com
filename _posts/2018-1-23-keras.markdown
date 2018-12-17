@@ -302,6 +302,14 @@ https://mp.weixin.qq.com/s/7tQOZcLmHYaztGGpZ-vt2Q
 
 Keras和TensorFlow之争何时休？
 
+https://mp.weixin.qq.com/s/caVN0570nzNXdXXYfxSNzA
+
+五个很厉害的CNN架构
+
+https://mp.weixin.qq.com/s/zznSbNqXBflecK7eHHT4Tg
+
+基于迁移学习实现花卉图像分类
+
 # 推荐系统的工程细节
 
 推荐系统不仅是算法，还包括若干工程细节。这些细节虽然不算复杂，够不上算法的层面，然而对产品的成败，却有举足轻重的作用。

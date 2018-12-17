@@ -411,3 +411,7 @@ https://mp.weixin.qq.com/s/_pNDalO6D8kGiCBYi1jnIA
 https://mp.weixin.qq.com/s/ZM0qZrqyk0QPBXYbkHAA8A
 
 基于多模态关联数据嵌入的知识库补全
+
+https://mp.weixin.qq.com/s/NxTTIWVPJi6yXuXr1qAmKw
+
+复旦数据院副院长阳德青：知识图谱在个性化推荐系统中的应用

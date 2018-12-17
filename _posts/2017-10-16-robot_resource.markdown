@@ -401,3 +401,7 @@ https://mp.weixin.qq.com/s/f25RbCRoWT9Ft6m_G3lyvQ
 https://mp.weixin.qq.com/s/f44TkWXklGONCuXnIuTbXg
 
 无人驾驶汽车系统入门：基于VoxelNet的激光雷达点云车辆检测及ROS实现
+
+https://mp.weixin.qq.com/s/8jZKgSeRw7k0F9JOigFJcw
+
+自动驾驶之——CAN总线简介

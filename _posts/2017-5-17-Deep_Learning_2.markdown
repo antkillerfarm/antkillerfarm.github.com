@@ -217,7 +217,6 @@ Batch Normalization是Google提出的一种神经网络优化技巧。
 
 3.减少模型训练对初始化的依赖。
 
-
 参考：
 
 http://blog.csdn.net/malefactor/article/details/51476961

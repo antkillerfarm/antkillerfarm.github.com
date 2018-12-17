@@ -210,6 +210,10 @@ https://mp.weixin.qq.com/s/5KyODpSjkdYJ9q-itQDsAA
 
 自Adam出现以来，深度学习优化器发生了什么变化？
 
+https://mp.weixin.qq.com/s/3FSZOlA2sGQwiPj77ShTIQ
+
+最优化算法鸟视解读
+
 # 推荐系统进阶
 
 除了《机器学习（十五～十六）》提及的ALS和PCA之外，相关的算法还包括：

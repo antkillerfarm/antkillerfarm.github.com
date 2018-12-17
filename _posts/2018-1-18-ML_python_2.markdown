@@ -76,6 +76,14 @@ PyFlux是Python中为处理时间序列问题而创建的开源库。该库有�
 
 https://pyflux.readthedocs.io/en/latest/index.html
 
+## ImagePy
+
+ImagePy是国人写的一个图像处理工具。
+
+官网：
+
+https://github.com/Image-Py/imagepy
+
 ## 参考
 
 https://mp.weixin.qq.com/s/S7gnAdekPFcyd4ni1m9phg

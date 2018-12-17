@@ -120,6 +120,32 @@ http://zacklipton.com/
 
 # 深度ISP
 
+## 数据集
+
+### HDR+
+
+HDR+是一个使用连拍摄影生成更好的图像的数据集。
+
+官网：
+
+http://hdrplusdata.org
+
+参考：
+
+https://zhuanlan.zhihu.com/p/34391353
+
+机器感知Google推出HDR+连拍摄影数据集
+
+### HDRNet
+
+HDRNet是一个Image Enhancement方面的数据集。
+
+官网：
+
+https://groups.csail.mit.edu/graphics/hdrnet/
+
+## 参考
+
 https://mp.weixin.qq.com/s/wA85XFQXeypuoqFnmN2P4g
 
 降噪的新时代

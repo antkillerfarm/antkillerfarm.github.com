@@ -20,7 +20,7 @@ Iris是一种叫做鸢尾的植物。Iris flower Data Set是Ronald Fisher在1936
 
 下图是该数据集的LDA图示。
 
-![](/images/article/Iris_dataset_scatterplot.svg)
+![](/images/article/Iris_dataset_scatterplot.png)
 
 这个数据集并没有专门的网站，但实际上大多数ML软件都自带该数据集，比如R、sklearn等。
 

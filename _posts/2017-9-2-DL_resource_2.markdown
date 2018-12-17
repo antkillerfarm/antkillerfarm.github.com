@@ -56,6 +56,10 @@ https://mp.weixin.qq.com/s/yMq-m2uGS705Jyxm_oVUng
 
 称霸Kaggle的十大深度学习技巧
 
+https://mp.weixin.qq.com/s/d85UM4BjiARk42WUj4Xo4w
+
+16篇论文、70多页PPT帮你优化深度学习模型
+
 ## 算法
 
 http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww
@@ -284,6 +288,10 @@ https://mp.weixin.qq.com/s/ggZZpBPap398yQ1asHD7aQ
 
 深度重建：基于深度学习的图像重建
 
+https://mp.weixin.qq.com/s/uIMJybw4fSxeCPeBTGTA-g
+
+借鉴传染病学原理探索医学图像CNN可解释性
+
 ## 遗传算法 & 进化算法
 
 http://blog.csdn.net/u010945683/article/details/40987331
@@ -381,21 +389,3 @@ https://mp.weixin.qq.com/s/su2F2F3dtl6W-WNuQHNpJg
 http://www.cnblogs.com/tsingke/p/6258967.html
 
 CMA-ES算法
-
-## 连续学习
-
-https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
-
-终身机器学习: 一种持续学习的范式
-
-https://mp.weixin.qq.com/s/SBppyDBWqQUariiHbpaq1w
-
-实时深度学习的推理加速和连续学习
-
-https://mp.weixin.qq.com/s/83HufWMDnuXIOCCfgqeDJw
-
-为什么说持续学习才是AI的关键
-
-https://mp.weixin.qq.com/s/kmEFjzFIbNq0_qdjc1Wm_w
-
-DeepMind新智能体架构Unicorn：持续学习能力胜过多个基准智能体

@@ -106,6 +106,10 @@ https://mp.weixin.qq.com/s/o1wLREqtIZpzH2NxLl9M7A
 
 深度强化学习简介
 
+https://mp.weixin.qq.com/s/Y9DfxQJ-w23QXxKV0z26ag
+
+MIT科学家Dimitri P. Bertsekas最新2019出版《强化学习与最优控制》
+
 ## 论文
 
 《A Brief Survey of Deep Reinforcement Learning》
