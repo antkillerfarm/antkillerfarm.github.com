@@ -114,7 +114,7 @@ Dropout是神经网络中解决过拟合问题的一种常见方法。
 
 2.因为dropout程序导致两个神经元不一定每次都在一个dropout网络中出现。这会迫使网络去学习更加鲁棒的特征。换句话说，假如我们的神经网络是在做出某种预测，它不应该对一些特定的线索片段太过敏感，即使丢失特定的线索，它也应该可以从众多其它线索中学习一些共同的模式（鲁棒性）。
 
-除了Dropout之外，还有**DropConnect**。两者原理上类似，后者只隐藏神经元之间的连接。
+除了Dropout之外，还有**DropConnect**。两者原理上类似，后者只隐藏神经元之间的连接。DropConnect也被称作Weight dropout。
 
 总的来说，Dropout类似于机器学习中的L1、L2规则化等增加稀疏性的算法，也类似于随机森林、模拟退火之类的增加随机性的算法。
 
@@ -238,19 +238,3 @@ Implementation of Batch Normalization Layer（中文blog）
 https://www.zhihu.com/question/38102762
 
 深度学习中 Batch Normalization为什么效果好？
-
-https://mp.weixin.qq.com/s/OAn8y_uJTgyrtS2ZCyudlg
-
-Batch Normalization原理及其TensorFlow实现
-
-http://blog.csdn.net/u013709270/article/details/70949304
-
-深度神经网络训练的必知技巧
-
-https://mp.weixin.qq.com/s/Oy2GIZLbQxmXMCLzMapWHQ
-
-Batch Normalization的分析与展望
-
-https://www.jianshu.com/p/35a3bf866c46
-
-浅析数据标准化和归一化，优化机器学习算法输出结果

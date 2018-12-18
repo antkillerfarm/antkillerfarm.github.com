@@ -4,7 +4,25 @@ title:  深度学习（三）——Neural Network Zoo, CNN
 category: DL 
 ---
 
-# 深度学习常用术语解释（续）
+# 深度学习常用术语解释
+
+## Batch Normalization（续）
+
+https://mp.weixin.qq.com/s/OAn8y_uJTgyrtS2ZCyudlg
+
+Batch Normalization原理及其TensorFlow实现
+
+http://blog.csdn.net/u013709270/article/details/70949304
+
+深度神经网络训练的必知技巧
+
+https://mp.weixin.qq.com/s/Oy2GIZLbQxmXMCLzMapWHQ
+
+Batch Normalization的分析与展望
+
+https://www.jianshu.com/p/35a3bf866c46
+
+浅析数据标准化和归一化，优化机器学习算法输出结果
 
 ## 鞍点
 
