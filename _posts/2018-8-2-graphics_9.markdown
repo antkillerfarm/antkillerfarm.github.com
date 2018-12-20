@@ -38,6 +38,10 @@ https://blog.csdn.net/jinshengtao/article/details/30258833
 
 基于MeanShift的目标跟踪算法及实现
 
+https://mp.weixin.qq.com/s/Wa64-PjRAgZU_j5EmRQiPg
+
+OpenCV中MeanShift算法视频移动对象分析
+
 ## Meanshift与图像分割
 
 除此之外，mean shift还可以用于图像分割。

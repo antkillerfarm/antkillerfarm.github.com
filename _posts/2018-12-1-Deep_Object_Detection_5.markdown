@@ -300,4 +300,8 @@ https://mp.weixin.qq.com/s/s1qmCA8djEEanwCxeLSV2Q
 
 https://mp.weixin.qq.com/s/XoKdsQKyaI3LsDxF7uyKuQ
 
-聊聊目标检测中的多尺度检测（Multi-Scale），从 YOLO到FPN，SNIPER，SSD 填坑贴和极大极小目标识别
+聊聊目标检测中的多尺度检测（Multi-Scale），从YOLO到FPN，SNIPER，SSD填坑贴和极大极小目标识别
+
+https://mp.weixin.qq.com/s/JN1N-IqIL4tAh4rIkZcxpg
+
+Grid R-CNN解读：商汤最新目标检测算法

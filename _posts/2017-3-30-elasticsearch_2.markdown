@@ -395,6 +395,10 @@ https://mp.weixin.qq.com/s/FAp10hI05qLLZi5BypondA
 
 早期最好的排序算法是QuickSort，比如C语言库自带的qsort函数，就使用的是该算法。然而它对于倒序数组这种最坏情况的复杂度居然是$$O(n^2)$$。
 
+https://mp.weixin.qq.com/s/d9yNsUVFg9UZN62xuOdxow
+
+为什么MySQL数据库要用B+树存储索引？
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/Sez56UaCAt3Aspn7OTFj_Q

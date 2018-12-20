@@ -292,6 +292,10 @@ https://mp.weixin.qq.com/s/uIMJybw4fSxeCPeBTGTA-g
 
 借鉴传染病学原理探索医学图像CNN可解释性
 
+https://mp.weixin.qq.com/s/oNcGYuGwkllINZhvrL6uvQ
+
+体素科技：2018年，算法驱动下的医学影像分析进展
+
 ## 遗传算法 & 进化算法
 
 http://blog.csdn.net/u010945683/article/details/40987331

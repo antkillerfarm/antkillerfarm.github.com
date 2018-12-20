@@ -264,6 +264,10 @@ https://mp.weixin.qq.com/s/ty8RyPREo_EA7O8vA2pQuQ
 
 AI编曲震撼人心，RNN生成流行音乐
 
+https://mp.weixin.qq.com/s/vIL-bKHZK-6eXZYWxrc9vw
+
+这种有序神经元，像你熟知的循环神经网络吗？
+
 # CNN进阶
 
 http://mp.weixin.qq.com/s/ddTNr-967IahTZ2X1LNSEQ

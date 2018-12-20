@@ -168,6 +168,10 @@ https://mp.weixin.qq.com/s/J50L6hESBROfT8IIAnofQQ
 
 Yan LeCun109页最新报告：图嵌入, 内容理解，自监督学习
 
+https://mp.weixin.qq.com/s/s440gdbUhLP41rLPjfgsmQ
+
+Yann Lecun自监督学习指南（附114页Slides全文下载）
+
 https://mp.weixin.qq.com/s/aCWAU2RXk9fTzfFqOyjqUw
 
 能自主学习的人工突触，为无监督学习开辟新的路径

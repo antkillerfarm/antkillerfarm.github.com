@@ -358,3 +358,10 @@ https://mp.weixin.qq.com/s/Pm3wB4VRuoBR-XLjW_jpfQ
 
 反讽识别综述
 
+https://mp.weixin.qq.com/s/LFmZMcunhJ-9ey9_igrTZA
+
+行业智能客服构建探索
+
+https://mp.weixin.qq.com/s/whWaseYWcurOLp-V8gCBvQ
+
+基于不同颗粒度语言联合训练的表示学习

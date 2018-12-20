@@ -134,6 +134,14 @@ http://blog.csdn.net/zhongshaoyy/article/details/53582048
 
 蒸馏神经网络
 
+https://nervanasystems.github.io/distiller/index.html
+
+Intel AI Lab推出的Distiller是一个关于模型压缩、量化的工具包。这里是它的文档，总结了业界主要使用的各种方法。
+
+https://mp.weixin.qq.com/s/A5ka8evElmcuHdowof7kww
+
+Intel发布神经网络压缩库Distiller：快速利用前沿算法压缩PyTorch模型
+
 https://www.zhihu.com/question/50519680
 
 如何理解soft target这一做法？
@@ -309,23 +317,3 @@ https://mp.weixin.qq.com/s/BMsvhXytSy2nWIsGOSOSBQ
 https://mp.weixin.qq.com/s/_JlaxwEYqdTTuS4hNSQTTw
 
 这么Deep且又轻量的Network，实时目标检测
-
-https://mp.weixin.qq.com/s/d6HFVbbHwkxPGdnbyVuMyQ
-
-密歇根州立大学提出NestDNN：动态分配多任务资源的移动端深度学习框架
-
-https://mp.weixin.qq.com/s/lUTusig94Htf7_4Z3X1fTQ
-
-清华&伯克利ICLR论文：重新思考6大剪枝方法
-
-https://mp.weixin.qq.com/s/g3y9mRhkFtzSuSMAornnDQ
-
-韩松博士论文：面向深度学习的高效方法与硬件 
-
-https://mp.weixin.qq.com/s/aH1zQ7we8OE59-O9n4IXhw
-
-应对未来物联网大潮：如何在内存有限的情况下部署深度学习？
-
-https://mp.weixin.qq.com/s/IfvXrsUq8-cBDC4_3O5v_w
-
-Facebook新研究优化硬件浮点运算，强化AI模型运行速率

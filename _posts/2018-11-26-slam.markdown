@@ -324,6 +324,10 @@ https://mp.weixin.qq.com/s/_AHqFqf1zFNtBifayiTfXQ
 
 你应具备这3大统计学常识&大数据思维
 
+https://mp.weixin.qq.com/s/me5opXSju1KZIrzscmBK0g
+
+节约亿级成本！Sigma:阿里的在线调度优化
+
 # TensorFlow+
 
 https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg

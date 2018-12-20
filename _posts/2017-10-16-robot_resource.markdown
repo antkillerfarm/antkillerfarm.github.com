@@ -405,3 +405,11 @@ https://mp.weixin.qq.com/s/f44TkWXklGONCuXnIuTbXg
 https://mp.weixin.qq.com/s/8jZKgSeRw7k0F9JOigFJcw
 
 自动驾驶之——CAN总线简介
+
+https://mp.weixin.qq.com/s/F8aLNue_qDlMyTAznBLC7g
+
+GPS/IMU/DMI组合导航方法研究
+
+https://mp.weixin.qq.com/s/TvRcJws7NKt-twHUyPlJvw
+
+LiDAR技术介绍

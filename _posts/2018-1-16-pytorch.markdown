@@ -256,10 +256,6 @@ https://mp.weixin.qq.com/s/KNaFelqk9UO6JYjbPTQohA
 
 显存不足？PyTorch显存使用分析与优化
 
-https://mp.weixin.qq.com/s/A5ka8evElmcuHdowof7kww
-
-Intel发布神经网络压缩库Distiller：快速利用前沿算法压缩PyTorch模型
-
 https://mp.weixin.qq.com/s/7p26q8Mu3IlK39DG7u41ZA
 
 PyTorch之迁移学习实战

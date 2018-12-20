@@ -335,7 +335,3 @@ https://mp.weixin.qq.com/s/YTHM0Ue2iWVyYhOp6UTr1g
 https://mp.weixin.qq.com/s/_Wc-u2PAyM-BibO_EJx9oQ
 
 如何用循环关系网络机智地解决数独类关系推理任务？
-
-https://mp.weixin.qq.com/s/nD9LsuPaJyd2fhuJXnqRRw
-
-深度判别和共享特征学习的图像分类

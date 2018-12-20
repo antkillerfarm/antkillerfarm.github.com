@@ -70,6 +70,8 @@ https://github.com/pandeydivesh15/AVSR-Deep-Speech
 
 https://github.com/sdhayalk/TensorFlow_Speech_Recognition_Challenge
 
+这里用到的数据集也就是著名的Speech Commands Datasets。
+
 ## 复现结果
 
 这里只实验了最简单的那个模型，遗憾的是该代码并不能直接使用，需要相应的预处理：
@@ -252,6 +254,10 @@ The intriguing blank label in CTC
 http://spandh.dcs.shef.ac.uk/chime_challenge/chime2016/
 
 CHiMe – Computational Hearing in Multisource Environments-国际多通道语音分离和识别大赛
+
+https://mp.weixin.qq.com/s/_hVHettrQLNZRTrO7Qh8qg
+
+简单的音频识别
 
 # 图数据库
 

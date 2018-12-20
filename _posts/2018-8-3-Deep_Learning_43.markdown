@@ -272,6 +272,10 @@ https://mp.weixin.qq.com/s/y9h6xkK9Keq4UrdpGJS-4Q
 
 这些假脸实在太逼真了！英伟达造出新一代GAN，生成壁纸级高清大图毫无破绽
 
+https://mp.weixin.qq.com/s/-3e5xhbz01FerZp8DcRV5g
+
+谷歌小姐姐搞出魔法画板：你随便画，补不齐算AI输
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512
@@ -339,3 +343,27 @@ https://mp.weixin.qq.com/s/-X7NYTzOzljzOaQL7_jOkw
 https://mp.weixin.qq.com/s/6eyEMW9dVBR5cZrHxn8iqA
 
 腾讯AI Lab详解3大热点：模型压缩、自动机器学习及最优化算法
+
+https://xmfbit.github.io/2018/02/24/paper-ssl-dnn/
+
+论文-Learning Structured Sparsity in Deep Neural Networks
+
+https://mp.weixin.qq.com/s/d6HFVbbHwkxPGdnbyVuMyQ
+
+密歇根州立大学提出NestDNN：动态分配多任务资源的移动端深度学习框架
+
+https://mp.weixin.qq.com/s/lUTusig94Htf7_4Z3X1fTQ
+
+清华&伯克利ICLR论文：重新思考6大剪枝方法
+
+https://mp.weixin.qq.com/s/g3y9mRhkFtzSuSMAornnDQ
+
+韩松博士论文：面向深度学习的高效方法与硬件
+
+https://mp.weixin.qq.com/s/aH1zQ7we8OE59-O9n4IXhw
+
+应对未来物联网大潮：如何在内存有限的情况下部署深度学习？
+
+https://mp.weixin.qq.com/s/IfvXrsUq8-cBDC4_3O5v_w
+
+Facebook新研究优化硬件浮点运算，强化AI模型运行速率

@@ -266,6 +266,10 @@ https://mp.weixin.qq.com/s/icVtxzKrJgizaJlG31pMdQ
 
 中科院计算所、浙大等提出首个全自动3D模型变形传播法，无需配对训练数据
 
+https://mp.weixin.qq.com/s/pfD-gib_7kwZAYR02eVuLg
+
+视频理解S3D，I3D-GCN，SlowFastNet，LFB
+
 # VAE进阶
 
 https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw
@@ -311,3 +315,7 @@ UC伯克利提出小批量MH测试：令MCMC方法在自编码器中更强劲
 https://zhuanlan.zhihu.com/p/48985202
 
 谈谈变分自编码器背后的数学知识
+
+https://mp.weixin.qq.com/s/fYR2dS3wCMMVk3s9O4nqUw
+
+自编码表示学习 25页最新进展综述，90篇参考文献
