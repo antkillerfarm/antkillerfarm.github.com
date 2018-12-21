@@ -272,29 +272,22 @@ Softmax和交叉熵的深度解析和Python实现
 
 可以看出随着层数的增加，CNN捕捉的区域更大，特征更加复杂，从边缘到纹理再到具体物体。
 
-## DL方法
+## Deep Visualization
 
-受到上述事实的启发，2015年德国University of Tuebingen的Leon A. Gatys写了如下两篇论文：
+上述的CNN可视化的方法一般被称作Deep Visualization。
 
-《Texture Synthesis Using Convolutional Neural Networks》
+论文：
 
-《A Neural Algorithm of Artistic Style》
+《Understanding Neural Networks Through Deep Visualization》
 
-代码：
+这篇论文是Deep Visualization的经典之作。它提出了如下公式：
 
-https://github.com/jcjohnson/neural-style
+$$V(F_i^l)=\mathop{\arg\max}_{X}A_i^l(X), X \leftarrow X + \eta\frac{\partial A_i^l(X)}{\partial X}$$
 
-![](/images/img2/style_transfer.png)
+X初始化为一张噪声图片，然后按照上述公式，优化得到激活函数输出最大的X。
 
-在第一篇论文中，Gatys使用Gramian matrix从各层CNN中提取纹理信息，于是就有了一个不用手工建模就能生成纹理的方法。
+Deep Visualization除了用于提取纹理之外，还可用于模型压缩。
 
-Gramian matrix（由Jørgen Pedersen Gram提出）中的元素定义如下：
+论文：
 
-$$G_{ij}=\langle v_i, v_j \rangle$$
-
-这里的$$v_i$$表示向量，$$G_{ij}$$是向量的内积。可以看出Gramian matrix是一个半正定的对称矩阵。
-
-在第二篇论文中，Gatys更进一步指出：**纹理能够描述一个图像的风格。**
-
-既然第一篇论文解决了从图片B中提取纹理的任务，那么还有一个关键点就是：**如何只提取图片内容而不包括图片风格?**
-
+《Demystifying Neural Network Filter Pruning》

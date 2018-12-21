@@ -194,6 +194,10 @@ https://mp.weixin.qq.com/s/z6CaHP7I4WkJAu-eAJPwAg
 
 自动机器学习计算量大！这种多保真度优化技术是走向应用的关键
 
+https://mp.weixin.qq.com/s/JPAZTdvcxY3sgWukbn3ScQ
+
+AutoML在推荐系统中的应用
+
 # Optimizer
 
 在《机器学习（一）》中，我们已经指出梯度下降是解决凸优化问题的一般方法。而如何更有效率的梯度下降，就是本节中Optimizer的责任了。

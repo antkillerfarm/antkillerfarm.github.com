@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（七）——DRN, Bi-directional RNN, seq2seq
+title:  深度学习（七）——Deep Residual Network, Bi-directional RNN, seq2seq
 category: DL 
 ---
 

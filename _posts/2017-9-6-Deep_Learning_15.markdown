@@ -1,10 +1,36 @@
 ---
 layout: post
-title:  深度学习（十五）——Style Transfer, 深度图像压缩, 人脸检测/识别（1）
+title:  深度学习（十五）——Style Transfer, 人脸检测/识别（1）
 category: DL 
 ---
 
 # Style Transfer（续）
+
+## DL方法
+
+受到上述事实的启发，2015年德国University of Tuebingen的Leon A. Gatys写了如下两篇论文：
+
+《Texture Synthesis Using Convolutional Neural Networks》
+
+《A Neural Algorithm of Artistic Style》
+
+代码：
+
+https://github.com/jcjohnson/neural-style
+
+![](/images/img2/style_transfer.png)
+
+在第一篇论文中，Gatys使用Gramian matrix从各层CNN中提取纹理信息，于是就有了一个不用手工建模就能生成纹理的方法。
+
+Gramian matrix（由Jørgen Pedersen Gram提出）中的元素定义如下：
+
+$$G_{ij}=\langle v_i, v_j \rangle$$
+
+这里的$$v_i$$表示向量，$$G_{ij}$$是向量的内积。可以看出Gramian matrix是一个半正定的对称矩阵。
+
+在第二篇论文中，Gatys更进一步指出：**纹理能够描述一个图像的风格。**
+
+既然第一篇论文解决了从图片B中提取纹理的任务，那么还有一个关键点就是：**如何只提取图片内容而不包括图片风格?**
 
 ## Cost Function
 
@@ -169,46 +195,6 @@ https://github.com/jinfagang/pytorch_style_transfer
 
 这个和上面的一样，不过是用pytorch实现的。
 
-# 深度图像压缩
-
-Tiny Network Graphics是图鸭科技推出一种基于深度学习的图片压缩技术。由于商业因素，这里没有论文，技术细节也不详，但是下图应该还是有些用的。
-
-![](/images/img2/TNG.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/WYsxFX4LyM562bZD8rO95w
-
-图鸭发布图片压缩TNG，节省55%带宽
-
-https://mp.weixin.qq.com/s/meK8UBnVHzA9YspQ2RFp6Q
-
-体积减半画质翻倍，他用TensorFlow实现了这个图像极度压缩模型
-
-https://mp.weixin.qq.com/s/_5tyt7pU0gIXbkmTOVEtDw
-
-嫌图片太大？！卷积神经网络轻松实现无损压缩到20%！
-
-https://mp.weixin.qq.com/s/a4oU8UK_hLMrKXNRQizAag
-
-图鸭科技获CVPR 2018图像压缩挑战赛单项冠军，技术解读端到端图像压缩框架
-
-https://mp.weixin.qq.com/s/VDyPjzXdwMGEsoXQmhrp9g
-
-图鸭科技斩获CVPR图像压缩挑战赛冠军，TNGcnn4p技术全解读
-
-https://mp.weixin.qq.com/s/B7reSwa9sCZqbkYVM5-VOA
-
-图像压缩哪家强？请看这份超详细对比
-
-https://mp.weixin.qq.com/s/K17wlC3tueNBfHkYBUFcQg
-
-基于深度学习的HEVC复杂度优化。这是篇视频压缩的blog。
-
-https://mp.weixin.qq.com/s/exUYS2v5VyRaMdFylWlobw
-
-用循环神经网络进行文件无损压缩：斯坦福大学提出DeepZip
-
 # 人脸检测/识别
 
 ## Cascade CNN
@@ -278,4 +264,3 @@ https://mp.weixin.qq.com/s/IrZEQ69RNUdcs0Fl8fHmmQ
 https://mp.weixin.qq.com/s/NfqFj5iCIkbRD34Eu2Lb5g
 
 MTCNN实时人脸检测网络详解与代码演示
-

@@ -420,3 +420,6 @@ https://mp.weixin.qq.com/s/d4cEHHo6OhlWEIXTFIdTuA
 
 知识图谱相关实体搜索
 
+https://mp.weixin.qq.com/s/7LFkOzkD1-PsNNAr5DAETg
+
+TechKG：一个面向中文学术领域的大型知识图谱

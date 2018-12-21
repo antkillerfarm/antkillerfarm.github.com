@@ -114,6 +114,10 @@ https://zhuanlan.zhihu.com/p/33158614
 
 图像识别：基于位置的柔性注意力机制
 
+https://mp.weixin.qq.com/s/tVKEJ9rqlMaZ9bx6ngIelw
+
+自注意力机制在计算机视觉中的应用
+
 # AutoDL
 
 DL领域目前存在的主要问题之一是：如何设计网络结构和调整超参数。目前的做法，通常依赖于作者的直觉，属于典型的拍脑袋想点子。

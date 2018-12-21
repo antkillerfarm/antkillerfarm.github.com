@@ -368,6 +368,10 @@ https://www.cnblogs.com/nxld/p/6566380.html
 
 Jupyter Notebook快速入门
 
+https://mp.weixin.qq.com/s/u-e66SgesPjmpKEihHHr8g
+
+Jupyter Notebook超实用的5个插件，值得一试！
+
 ## TuShare
 
 TuShare是一个免费、开源的python财经数据接口包。主要实现对股票等金融数据从数据采集、清洗加工 到 数据存储的过程，能够为金融分析人员提供快速、整洁、和多样的便于分析的数据，为他们在数据获取方面极大地减轻工作量，使他们更加专注于策略和模型的研究与实现上。

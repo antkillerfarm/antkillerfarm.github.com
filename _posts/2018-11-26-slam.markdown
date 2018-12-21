@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  SLAM, MXNet, 传感器
+title:  SLAM, 传感器, 有用的网址集合（二）
 category: resource 
 ---
 
@@ -137,64 +137,6 @@ https://blog.csdn.net/u010128736/article/details/52860364
 https://blog.csdn.net/weixin_36340947/article/details/78246174
 
 张正友标定算法原理详解
-
-# MXNet
-
-https://mp.weixin.qq.com/s/50uGupiwU2UVuVeMm_bTag
-
-李沐介绍MXNet新接口Gluon：高效支持命令式与符号式编程
-
-https://mp.weixin.qq.com/s/VRmhAluhKWxyPbStmMoWtg
-
-一张速查表实现Apache MXNet深度学习框架五大特征的开发利用
-
-http://zh.gluon.ai/index.html
-
-李沐：《动手学深度学习》（使用Gluon）
-
-https://zhuanlan.zhihu.com/p/30966663
-
-用Gluon炼丹体验
-
-https://mp.weixin.qq.com/s/B8TYVG5WjDJ4NX-wirS2Fg
-
-Alex Smola：深度学习触手可及，架构Gluon高中生就能用
-
-https://mp.weixin.qq.com/s/wdDYUOLpi0l2mRirQhHjPQ
-
-Apache MXNet助力数字营销，检测社交网络照片中的商标品牌
-
-http://mp.weixin.qq.com/s/Z5X7Vamuw1BwtienhOrSvQ
-
-解构TensorFlow, 学习MXNet--新一代深度学习系统的核心思想
-
-https://mp.weixin.qq.com/s/_PAzff6V9UgwLCos05B4rg
-
-十分钟从PyTorch转MXNet
-
-https://mp.weixin.qq.com/s/2ulMPGEHYkOqWhT2XY449w
-
-TensorFlow、MXNet、PaddlePaddle三个开源库对比
-
-https://mp.weixin.qq.com/s/-BlBm3ZTZ32ijORJux7rTA
-
-DMLC团队发布GluonCV和GluonNLP：两种简单易用的DL工具箱
-
-https://mp.weixin.qq.com/s/Vb-7hGw7UOx4jP3lwW3Leg
-
-从VGG到ResNet，你想要的MXNet预训练模型轻松学
-
-https://mp.weixin.qq.com/s/CgxrvNfyu35SMvWBAt-5kg
-
-MXNet开放支持Keras，高效实现CNN与RNN的分布式训练
-
-https://mp.weixin.qq.com/s/qLax1Jb0OOfFOU68wn_2PA
-
-从三大神经网络，测试对比TensorFlow、MXNet、CNTK、Theano四个框架
-
-https://mp.weixin.qq.com/s/hRH7hVsaQBqf0vhD_BqBgg
-
-五大深度学习框架三类神经网络全面测评
 
 # 传感器
 
@@ -401,3 +343,25 @@ https://mp.weixin.qq.com/s/lLaSXG1VF9Rys2GNzFP7pw
 https://mp.weixin.qq.com/s/tVqp1Tht1P-0EQazJizQaA
 
 利用人口普查收入数据集预测收入
+
+https://mp.weixin.qq.com/s/3WleFm9S_wMIPTz_WfjKQw
+
+TensorFlow支持Unicode，中文NLP终于省心了
+
+# 有用的网址集合
+
+https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126
+
+前端安全系列之一：如何防止XSS攻击？
+
+https://mp.weixin.qq.com/s?__biz=MzIyNzUwMjM2MA==&mid=2247485942&idx=1&sn=1597233c1527cac63a2c734ec0b14f02
+
+编程基础知识
+
+https://mp.weixin.qq.com/s?__biz=MzIyNzUwMjM2MA==&mid=2247486006&idx=1&sn=d4978396fa18e5dfce69a51ac7748898
+
+网络编程基础知识
+
+https://mp.weixin.qq.com/s/EPWRwOBT8_616R5RWbdaTQ
+
+一家公司到底有多少种管理系统？——从包罗万象到术业专攻

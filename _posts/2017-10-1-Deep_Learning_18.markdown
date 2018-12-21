@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十八）——数据增强, Graph NN, 语义分割
+title:  深度学习（十八）——数据增强, Graph NN, Regularization, 语义分割
 category: DL 
 ---
 
@@ -171,6 +171,16 @@ NYU、AWS联合推出：全新图神经网络框架DGL正式发布
 https://mp.weixin.qq.com/s/mamet6l_lA7fhoYkysZ7PQ
 
 华为联合LSE提出KONG：有序近邻图的核函数
+
+# Regularization
+
+DL中的Regularization除了常见的$$l_1$$-norm、$$l_2$$-norm和squared $$l_2$$-norm之外，还有Group Regularization。它的定义如下：
+
+$$loss(W;x;y) = loss_D(W;x;y) + \lambda_R R(W) + \lambda_g \sum_{l=1}^{L} R_g(W_l^{(G)})$$
+
+$$R_g(w^{(g)}) = \sum_{g=1}^{G} \lVert w^{(g)} \rVert_g = \sum_{g=1}^{G} \sum_{i=1}^{|w^{(g)}|} {(w_i^{(g)})}^2$$
+
+Group Regularization也叫做Block Regularization或Structured Regularization。
 
 # 语义分割
 
