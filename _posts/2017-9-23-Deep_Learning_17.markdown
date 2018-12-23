@@ -276,6 +276,10 @@ https://mp.weixin.qq.com/s/gr0_p4WFToTrDfy47h-p0A
 
 基于自监督学习的视听觉信息同一性判断
 
+https://mp.weixin.qq.com/s/Dqz97_U5pw_4d9KFblJfLg
+
+基于自编码器的表征学习：如何攻克半监督和无监督学习？
+
 # 细粒度分类
 
 https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw

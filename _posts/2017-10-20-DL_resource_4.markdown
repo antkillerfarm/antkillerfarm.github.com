@@ -36,6 +36,10 @@ https://mp.weixin.qq.com/s/F10UaaoxGPOE4pc59LBCRw
 
 数据并行化对神经网络训练有何影响？谷歌大脑进行了实证研究
 
+https://mp.weixin.qq.com/s/UF7DDenUQJ3bL83IHxOkIw
+
+分布式优化算法及其在多智能体系统与机器学习中的应用
+
 ## 实战
 
 http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg

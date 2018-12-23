@@ -184,6 +184,14 @@ https://mp.weixin.qq.com/s/5vhiS2RG_mFeQHzYxmyeww
 
 Google开源AI闹市辨音92%创新高？别急！论文+GitHub助你一臂之力！
 
+https://mp.weixin.qq.com/s/RskIVlCnZnetn33H7GWeBQ
+
+端到端语音识别时代
+
+https://mp.weixin.qq.com/s/Zw-6eTeDt2hsY_uOTtfTDA
+
+最强CNN语音识别算法开源了：词错率5%，训练超快，Facebook出品
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：
@@ -365,3 +373,7 @@ https://mp.weixin.qq.com/s/J0w6kzzdKTbsaiZitbQdoA
 https://mp.weixin.qq.com/s/BBQ54HHrFiqxXkC-EI6ELw
 
 Science封面：AlphaZero达成终极进化体，史上最强棋类AI降临！
+
+https://mp.weixin.qq.com/s/Pgw_xaCNl_kCPCg8NFzUBQ
+
+人类没法下了！DeepMind贝叶斯优化调参AlphaGo，自弈胜率大涨16.5%

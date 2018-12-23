@@ -170,6 +170,6 @@ https://mp.weixin.qq.com/s/_dHjZQ_7_7H34PHhV_lC3w
 
 全新强化学习算法详解，看贝叶斯神经网络如何进行策略搜索
 
-https://mp.weixin.qq.com/s/RH4ifA46njdC7fyRI9kVMg
+https://mp.weixin.qq.com/s/YCPXkFzYdC1gMfnprZsVXg
 
-深度Q网络与视觉格斗类游戏
+如何让机器人多技能？通过最大熵强化学习

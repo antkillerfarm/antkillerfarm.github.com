@@ -224,6 +224,10 @@ https://mp.weixin.qq.com/s/uC8gi4kN_muRTwRL0RCZjQ
 
 要玩转这个星际争霸II开源AI，你只需要i5+GTX1050
 
+https://mp.weixin.qq.com/s/Q3WWqEnUaIvnLwoFHY5lfQ
+
+腾讯王者荣耀AI论文首次曝光：五AI王者局开黑与人类战队打成平手
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293

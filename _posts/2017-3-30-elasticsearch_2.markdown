@@ -195,6 +195,10 @@ https://mp.weixin.qq.com/s/K44-L0rclaIM40hma55pPQ
 
 滴滴Elasticsearch多集群架构实践
 
+https://mp.weixin.qq.com/s/1hRB3ylkJbcjUe4l-bpCsA
+
+Elaticsearch在蚂蚁金服的实践经验
+
 # scrapy
 
 scrapy是一个Python写的网页抓取分析工具。网页抓取分析的学名叫做“Web scraping”，可在wiki上获得更多的相关信息。

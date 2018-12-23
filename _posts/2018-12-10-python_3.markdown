@@ -213,6 +213,20 @@ https://mp.weixin.qq.com/s/QIfxxY6z7y77RDE_8gDEIg
 
 并行运算Process Pools
 
+## Cython
+
+https://mp.weixin.qq.com/s/ODA74xgoS8X1HFxp4BfshQ
+
+如何将Python自然语言处理速度提升100倍：用spaCy/Cython加速NLP
+
+https://mp.weixin.qq.com/s/1Iyhsp5-2DyTfOb0JzqLZg
+
+比Python快100倍，利用spaCy和Cython实现高速NLP项目
+
+https://mp.weixin.qq.com/s/l-zmvQvmosw81G1wFCIDbQ
+
+用Cython造个轮子
+
 ## 参考
 
 https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA
@@ -326,10 +340,6 @@ Python性能优化的20条招数
 https://mp.weixin.qq.com/s/0Rpbuo7LCRo1SnbE8NcH4Q
 
 快速学习Python的全套14张思维导图
-
-https://mp.weixin.qq.com/s/ODA74xgoS8X1HFxp4BfshQ
-
-如何将Python自然语言处理速度提升100倍：用spaCy/Cython加速NLP
 
 https://mp.weixin.qq.com/s/Cujl2nxITCuZL7B72uKVrQ
 

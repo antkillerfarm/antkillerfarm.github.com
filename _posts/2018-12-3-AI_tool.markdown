@@ -273,3 +273,7 @@ IBM、哈佛共同研发：Seq2Seq模型可视化工具
 https://mp.weixin.qq.com/s/VC8PoYGnrXcktP7RT10LGQ
 
 Facebook开源NLP建模框架PyText，从论文到产品部署只需数天
+
+https://mp.weixin.qq.com/s/BCuMYOOC-lu-cMn71vakkQ
+
+拯救万千学子于水深火热之中！Facebook开源无梯度优化工具

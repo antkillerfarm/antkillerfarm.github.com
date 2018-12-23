@@ -220,6 +220,10 @@ https://mp.weixin.qq.com/s/Vdt5h8APAFoeVxFYKlywpg
 
 用DeepMind的DQN解数学题，准确率提升15%
 
+https://mp.weixin.qq.com/s/RH4ifA46njdC7fyRI9kVMg
+
+深度Q网络与视觉格斗类游戏
+
 # reward modeling
 
 ![](/images/img2/reward_modeling.jpg)

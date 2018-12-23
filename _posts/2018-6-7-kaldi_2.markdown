@@ -317,10 +317,6 @@ https://mp.weixin.qq.com/s/dwxTla5iiYKvELrpbWf1yQ
 
 8个Python高效数据分析的技巧
 
-https://mp.weixin.qq.com/s/1Iyhsp5-2DyTfOb0JzqLZg
-
-比Python快100倍，利用spaCy和Cython实现高速NLP项目
-
 https://mp.weixin.qq.com/s/TYiqZvY25qxHcmEXRpqO5Q
 
 如何用Python做自动化特征工程

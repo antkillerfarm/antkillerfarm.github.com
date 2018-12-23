@@ -413,3 +413,7 @@ GPS/IMU/DMI组合导航方法研究
 https://mp.weixin.qq.com/s/TvRcJws7NKt-twHUyPlJvw
 
 LiDAR技术介绍
+
+https://mp.weixin.qq.com/s/ArreA2g24n-jqU7vfIE_rA
+
+自动驾驶核心技术之——路径规划

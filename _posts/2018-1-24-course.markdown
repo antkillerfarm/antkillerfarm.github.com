@@ -386,6 +386,10 @@ https://mp.weixin.qq.com/s/pMOePInkrfx6o6PNJKlhZA
 
 深度学习如何用于计算机图形学？这一份八个主题700页PPT《图形深度学习》为你讲解
 
+https://mp.weixin.qq.com/s/_wLhjznuzHb2ENYmK6_I1g
+
+这一份217页斯坦福大学统计学习理论笔记，Percy Liang带你搞清楚难懂的理论基础
+
 # Machine Learning之Python篇+
 
 https://mp.weixin.qq.com/s/8NI-NayCg_gZmJ6-1FZ_DA

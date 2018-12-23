@@ -172,6 +172,14 @@ https://mp.weixin.qq.com/s/mamet6l_lA7fhoYkysZ7PQ
 
 华为联合LSE提出KONG：有序近邻图的核函数
 
+https://mp.weixin.qq.com/s/WW-URKk-fNct9sC4bJ22eg
+
+深度学习时代的图模型，清华发文综述图网络
+
+https://mp.weixin.qq.com/s/Rr6SC-se_0q8dfEz0oUwlA
+
+清华大学孙茂松课题组:《图神经网络: 方法与应用》综述论文
+
 # Regularization
 
 DL中的Regularization除了常见的$$l_1$$-norm、$$l_2$$-norm和squared $$l_2$$-norm之外，还有Group Regularization。它的定义如下：

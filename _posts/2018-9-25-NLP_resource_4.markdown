@@ -365,3 +365,7 @@ https://mp.weixin.qq.com/s/LFmZMcunhJ-9ey9_igrTZA
 https://mp.weixin.qq.com/s/whWaseYWcurOLp-V8gCBvQ
 
 基于不同颗粒度语言联合训练的表示学习
+
+https://mp.weixin.qq.com/s/5F6h2F8L-OdFJxBY2QrWJg
+
+不只有BERT！盘点2018年NLP令人激动的10大想法

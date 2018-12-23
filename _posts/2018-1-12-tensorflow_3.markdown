@@ -104,11 +104,15 @@ https://mp.weixin.qq.com/s/RR3EEI8vm05EZSd7dGU__A
 
 https://mp.weixin.qq.com/s/w4uo9Uodmud4FhqxRNanUw
 
-TensorFlow 指南：GPU的使用
+TensorFlow指南：GPU的使用
 
 https://mp.weixin.qq.com/s/gnDTOLWuPZiCVzspTk_zCQ
 
 TensorFlow轻度入门
+
+https://mp.weixin.qq.com/s/sbJdU7qMMyrSRuybTh7bKg
+
+开源中文书《TensorFlow内核剖析》，335页pdf
 
 https://mp.weixin.qq.com/s/5wy6yqaW_9pMBhgw8qDdOQ
 
