@@ -42,16 +42,6 @@ http://www.cnblogs.com/hrlnw/archive/2013/10/23/3374707.html
 
 Viola Jones Face Detector
 
-# ORB
-
-ORB（Oriented FAST and Rotated BRIEF）特征，从它的名字中可以看出它是对FAST特征点与BREIF特征描述子的一种结合与改进，这个算法是由Ethan Rublee,Vincent Rabaud,Kurt Konolige以及Gary R.Bradski在2011年一篇名为“ORB：An Efficient Alternative to SIFT or SURF”的文章中提出。
-
-参考：
-
-http://www.cnblogs.com/ronny/p/4083537.html
-
-ORB特征点检测
-
 # 目标跟踪
 
 ## 概述

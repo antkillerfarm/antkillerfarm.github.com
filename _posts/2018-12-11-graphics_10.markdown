@@ -134,6 +134,20 @@ http://www.cnblogs.com/lxy2017/p/3927456.html
 
 TLD（Tracking-Learning-Detection）一种目标跟踪算法
 
+# ORB
+
+ORB（Oriented FAST and Rotated BRIEF）特征，从它的名字中可以看出它是对FAST特征点与BREIF特征描述子的一种结合与改进，这个算法是由Ethan Rublee,Vincent Rabaud,Kurt Konolige以及Gary R.Bradski在2011年一篇名为“ORB：An Efficient Alternative to SIFT or SURF”的文章中提出。
+
+参考：
+
+http://www.cnblogs.com/ronny/p/4083537.html
+
+ORB特征点检测
+
+https://zhuanlan.zhihu.com/p/52140541
+
+传统计算机视觉中图像特征匹配方法的原理介绍（SIFT和ORB）
+
 # 从BOW到SPM
 
 ## BOW

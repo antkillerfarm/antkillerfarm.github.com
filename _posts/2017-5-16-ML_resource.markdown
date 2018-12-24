@@ -445,3 +445,7 @@ https://mp.weixin.qq.com/s/bdZ5e8CaiPuI8TpLNRrFUQ
 https://mp.weixin.qq.com/s/jiZw-x6EMhUIySIObm5XjA
 
 大数据近似最近邻搜索哈希方法综述（下）
+
+https://mp.weixin.qq.com/s/jeQawOIomUAjIp7GhuBk3A
+
+一致性哈希算法及其在分布式系统中的应用

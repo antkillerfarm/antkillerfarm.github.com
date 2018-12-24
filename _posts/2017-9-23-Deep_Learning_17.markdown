@@ -280,6 +280,10 @@ https://mp.weixin.qq.com/s/Dqz97_U5pw_4d9KFblJfLg
 
 基于自编码器的表征学习：如何攻克半监督和无监督学习？
 
+https://mp.weixin.qq.com/s/LaIvAuBHYGNMug3NZ1pLhQ
+
+半监督深度学习小结：类协同训练和一致性正则化
+
 # 细粒度分类
 
 https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw

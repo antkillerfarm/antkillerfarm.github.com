@@ -323,27 +323,3 @@ https://mp.weixin.qq.com/s/dJXl5tI-WKB3O28sgJmbkw
 https://mp.weixin.qq.com/s/xS8EsNtSdHiFgg_HnuJJWg
 
 照片有灵异鬼影？伯克利陈启峰培育高能FCN“除灵师”
-
-https://mp.weixin.qq.com/s/keWrgmCfJrnswDDKEL52Cg
-
-数据少，就享受不到深度学习的红利了么？总是有办法的！
-
-https://mp.weixin.qq.com/s/YTHM0Ue2iWVyYhOp6UTr1g
-
-图像识别泛化能力人机对比：CNN比人类还差得远
-
-https://mp.weixin.qq.com/s/_Wc-u2PAyM-BibO_EJx9oQ
-
-如何用循环关系网络机智地解决数独类关系推理任务？
-
-https://mp.weixin.qq.com/s/36pE2m5p-pnGa72YpYn-Rg
-
-“实践出真知”：如何打造一流的视觉AI技术
-
-https://mp.weixin.qq.com/s/ZEIsyV-0aTvYn6K8GyANPA
-
-硬核NeruIPS 2018最佳论文，一个神经了的常微分方程
-
-https://mp.weixin.qq.com/s/yWnksItYdxQ9Nhj3xWkcMw
-
-凭“颜值”拒稿，误判率仅0.4%？这篇计算机视觉论文让AI学界炸了锅

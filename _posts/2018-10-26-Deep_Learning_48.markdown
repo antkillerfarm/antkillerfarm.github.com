@@ -24,6 +24,10 @@ https://github.com/Jeongseungwoo/Singing-Voice-Separation
 
 Tensorflow版本的实现
 
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/Singing-Voice-Separation
+
+Jeongseungwoo的版本一次加载了全部的数据集到内存中，对PC的要求较高（估计起码要32GB内存才能跑），这是我修改后的版本。用户可以根据自己PC的性能，调整batch size。
+
 https://github.com/f90/Wave-U-Net
 
 另一个Tensorflow版本的实现。这哥们还有个使用Semi-supervised adversarial学习分离人声的项目（他也是该项目论文的一作）：

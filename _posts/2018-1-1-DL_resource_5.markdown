@@ -98,6 +98,44 @@ https://mp.weixin.qq.com/s/1Gdx-U3DRZtSJoFyCLnD0w
 
 深度学习之Sequence Learning
 
+## 深度学习大讲堂
+
+https://zhuanlan.zhihu.com/p/36520673
+
+让机器“观色”：真实世界的表情识别
+
+https://mp.weixin.qq.com/s/d4N-Xz0NImb5khLup5DmpQ
+
+让机器“察言作画”：从语言到视觉
+
+https://mp.weixin.qq.com/s/zBNJzajap4Lwb5o_W2A-jw
+
+让机器“析毫剖厘”：图像理解与编辑
+
+https://mp.weixin.qq.com/s/_WOzunt9_I-tDZ1NaCguyA
+
+让机器“答问如流”：从视觉到语言
+
+https://mp.weixin.qq.com/s/rKHA2H4msHSInVn7A-fqHg
+
+让机器“看山是山”：脑启发的视觉计算
+
+https://mp.weixin.qq.com/s/MHaweyu4zegUrrgu6gm_LQ
+
+让机器“删繁就简”：深度神经网络加速与压缩
+
+https://mp.weixin.qq.com/s/_HxhOp1E7cRD03RXqx97Vg
+
+让机器“提纲挈领”：视觉系统的紧凑性初探
+
+https://mp.weixin.qq.com/s/C1PydJQJjZtf0mHIIDcFvg
+
+让机器“解疑释惑”：视觉世界中的结构化理解
+
+https://mp.weixin.qq.com/s/SB5ZSD_YGPvC6hPTZXiB4A
+
+让机器“一叶知秋”：弱监督视觉语义分割
+
 ## 参考
 
 https://mp.weixin.qq.com/s/Ji3dTs0lMjLLR5Oxbsr3Vg
@@ -287,3 +325,27 @@ FAIR等机构联合提出IntPhys：你的智能系统的物理知识，比得上
 https://mp.weixin.qq.com/s/1rtONnhwEc3Osf9gP5fBCQ
 
 李飞飞CVPR最新论文“文本转图”效果优化可多一步：物体关系描述
+
+https://mp.weixin.qq.com/s/keWrgmCfJrnswDDKEL52Cg
+
+数据少，就享受不到深度学习的红利了么？总是有办法的！
+
+https://mp.weixin.qq.com/s/YTHM0Ue2iWVyYhOp6UTr1g
+
+图像识别泛化能力人机对比：CNN比人类还差得远
+
+https://mp.weixin.qq.com/s/_Wc-u2PAyM-BibO_EJx9oQ
+
+如何用循环关系网络机智地解决数独类关系推理任务？
+
+https://mp.weixin.qq.com/s/36pE2m5p-pnGa72YpYn-Rg
+
+“实践出真知”：如何打造一流的视觉AI技术
+
+https://mp.weixin.qq.com/s/ZEIsyV-0aTvYn6K8GyANPA
+
+硬核NeruIPS 2018最佳论文，一个神经了的常微分方程
+
+https://mp.weixin.qq.com/s/yWnksItYdxQ9Nhj3xWkcMw
+
+凭“颜值”拒稿，误判率仅0.4%？这篇计算机视觉论文让AI学界炸了锅
