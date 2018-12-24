@@ -270,6 +270,18 @@ https://mp.weixin.qq.com/s/me5opXSju1KZIrzscmBK0g
 
 节约亿级成本！Sigma:阿里的在线调度优化
 
+https://mp.weixin.qq.com/s/bdZ5e8CaiPuI8TpLNRrFUQ
+
+大数据近似最近邻搜索哈希方法综述（上）
+
+https://mp.weixin.qq.com/s/jiZw-x6EMhUIySIObm5XjA
+
+大数据近似最近邻搜索哈希方法综述（下）
+
+https://mp.weixin.qq.com/s/jeQawOIomUAjIp7GhuBk3A
+
+一致性哈希算法及其在分布式系统中的应用
+
 # TensorFlow+
 
 https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg

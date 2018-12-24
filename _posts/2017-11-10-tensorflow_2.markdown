@@ -371,6 +371,10 @@ https://mp.weixin.qq.com/s/cV-5W4YWC9f9wsoNX5fIXA
 
 使用TensorFlow Probability对金融模型中的误差进行介绍性分析
 
+https://mp.weixin.qq.com/s/cxC3SarlBBPTwIxQZ4AG_g
+
+快速上手TensorFlow Probability内置概率编程教材
+
 ## 细节
 
 执行`session.run(out)`，会在终端打印out的值，但执行`res = session.run(out)`则不会。

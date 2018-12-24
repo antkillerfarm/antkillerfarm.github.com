@@ -186,6 +186,10 @@ https://mp.weixin.qq.com/s/ygWCfLnakHIwLVk7hRAKNg
 
 全景分割任务介绍及其最新进展
 
+https://mp.weixin.qq.com/s/ZN9ZYPTcgVP2c9mCx9Ox3g
+
+全景分割这一年，端到端之路
+
 # 问答系统
 
 GA-Reader

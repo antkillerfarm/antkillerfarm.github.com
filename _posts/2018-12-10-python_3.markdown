@@ -227,6 +227,20 @@ https://mp.weixin.qq.com/s/l-zmvQvmosw81G1wFCIDbQ
 
 用Cython造个轮子
 
+## PDF
+
+https://mp.weixin.qq.com/s/fBz__E2Xu4GC7w1Uqx5NAA
+
+手把手教你如何用Python从PDF文件中导出数据
+
+https://mp.weixin.qq.com/s/xCKC3cz7jUvrwl4uvMNKTA
+
+20行Python代码教你批量将PDF转为Word
+
+https://mp.weixin.qq.com/s/IznKbG3cEF6uxP0Fe_0oaQ
+
+印度小哥“神剑”：PDF提取表格so easy！
+
 ## 参考
 
 https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA
@@ -256,10 +270,6 @@ https://mp.weixin.qq.com/s/jHnkmpnOz1LApVCLJL-8Tw
 https://mp.weixin.qq.com/s/5xs1ivkrUAP_Rr9P-EMc5g
 
 代码优化指南：人生苦短，我用Python。这篇blog主要介绍了如何追踪Python脚本的CPU使用情况。
-
-https://mp.weixin.qq.com/s/xCKC3cz7jUvrwl4uvMNKTA
-
-20行Python代码教你批量将PDF转为Word
 
 https://mp.weixin.qq.com/s/HGH2e_0ocHv2VWsjOje9BQ
 
@@ -396,7 +406,3 @@ https://mp.weixin.qq.com/s/rE5OEFwwFxJNb_Omwmqvzw
 https://blog.csdn.net/longerzone/article/details/17889969
 
 Python下调用Linux的Shell命令
-
-https://mp.weixin.qq.com/s/fBz__E2Xu4GC7w1Uqx5NAA
-
-手把手教你如何用Python从PDF文件中导出数据
