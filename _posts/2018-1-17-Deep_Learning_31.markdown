@@ -288,6 +288,10 @@ https://mp.weixin.qq.com/s/tEzZ770T1NpYLAxUK-MwIg
 
 综述：Image Caption 任务之语句多样性
 
+https://zhuanlan.zhihu.com/p/53220566
+
+《Adaptive Co-Attention Network for NER in Tweet》阅读笔记
+
 # Multi-agent
 
 https://zhuanlan.zhihu.com/p/39037444

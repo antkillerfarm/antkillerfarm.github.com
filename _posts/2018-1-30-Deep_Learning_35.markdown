@@ -319,3 +319,7 @@ https://zhuanlan.zhihu.com/p/48985202
 https://mp.weixin.qq.com/s/fYR2dS3wCMMVk3s9O4nqUw
 
 自编码表示学习 25页最新进展综述，90篇参考文献
+
+https://zhuanlan.zhihu.com/p/52974147
+
+VAE 的细节：$$p(x \mid z)$$的噪音，与$$p(z \mid x)$$的编码坍塌

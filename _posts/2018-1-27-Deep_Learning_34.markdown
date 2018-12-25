@@ -173,3 +173,7 @@ https://mp.weixin.qq.com/s/_dHjZQ_7_7H34PHhV_lC3w
 https://mp.weixin.qq.com/s/YCPXkFzYdC1gMfnprZsVXg
 
 如何让机器人多技能？通过最大熵强化学习
+
+https://mp.weixin.qq.com/s/dbtdNsT3nvLt4UKsrNsn_Q
+
+量化深度强化学习算法的泛化能力
