@@ -138,6 +138,10 @@ https://mp.weixin.qq.com/s/3Gsmrl4HbcnXpje0nyAq2w
 
 中国西北大学和北京大学的研究结果是否将终结CAPTCHA验证码时代？
 
+https://zhuanlan.zhihu.com/p/53260242
+
+抛开复杂证明，我们从直觉上理解W-GAN为啥这么好训
+
 # 图像超分辨率进阶
 
 https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
