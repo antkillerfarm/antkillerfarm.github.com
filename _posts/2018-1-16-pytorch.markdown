@@ -284,6 +284,14 @@ https://zhuanlan.zhihu.com/p/46636027
 
 1张图学会PyTorch+TensorFlow+MXNet+TF Eager
 
+https://mp.weixin.qq.com/s/yS9PAw926Y7AsGRW0eHG0Q
+
+基于PyTorch的GAN框架TorchGAN：用架构级API轻松定制GAN项目
+
+https://github.com/CVBox/PyTorchCV
+
+一个基于pytorch的CV框架
+
 # PaddlePaddle
 
 https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q

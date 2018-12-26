@@ -125,3 +125,7 @@ Grid R-CNN解读：商汤最新目标检测算法
 https://mp.weixin.qq.com/s/baPfFVi7deEsCAFu3ColoQ
 
 CVPR2018目标检测算法总览
+
+https://mp.weixin.qq.com/s/t5p1xGKVnwd7wbiOzucFqQ
+
+基于深度学习的目标检测算法剖析与实现

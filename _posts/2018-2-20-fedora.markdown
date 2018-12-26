@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Fedora, CentOS, Blog维护日志, OA办公软件, 数据库（二）
+title:  Fedora, CentOS, Blog维护日志, OA办公软件, diff&patch, 数据库（二）
 category: linux 
 ---
 
@@ -206,6 +206,34 @@ Install TightVNC Server in RHEL/CentOS and Fedora to Access Remote Desktops
 1.yammer是OA 2.0的鼻祖。
 
 2.国内的同类产品还有：明道，纷享，伙伴，企明岛，tita，UU社区，云之家等。
+
+# diff&patch
+
+diff/patch这对工具在数学上来说，diff是对2个集合求差，patch是求和。
+
+{% highlight bash %}
+diff -uNr A B > C #生成A和B的diff文件C,-uNr为最常用的选项
+patch A C #给A打上diff文件得到B
+patch -R B C #B还原为A
+{% endhighlight %}
+
+# 批量patch
+
+## 给目录应用patch。
+
+`patch -p1 <1.patch`
+
+这种情况适合1.patch中包含对多个文件的修改时。
+
+## 批量应用patch
+
+有的时候，patch不是一个patch文件，而是一个目录中的若干个patch文件。这时可用如下办法：
+
+`find . -name "*.patch">1.txt`
+
+`sort 1.txt | xargs cat >2.patch`
+
+`patch -p1 <2.patch`
 
 # 数据库
 

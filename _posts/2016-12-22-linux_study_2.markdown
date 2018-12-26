@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  linux学习心得（二）, diff&patch, bash, SWIG
+title:  linux学习心得（二）, bash, SWIG
 category: linux 
 ---
 
@@ -310,39 +310,51 @@ http://mazhuang.org/2016/12/14/rtfsc-with-opengrok/
 
 搭建大型源码阅读环境——使用 OpenGrok
 
-# 参考
+# Linux参考资源
 
 https://www.zhihu.com/question/270348678/answer/460715569
 
 生产力应用大汇总
 
-# diff&patch
+https://mp.weixin.qq.com/s/QsgoONKwI7ds8Hnx2Wer6A
 
-diff/patch这对工具在数学上来说，diff是对2个集合求差，patch是求和。
+Linux从程序到进程
 
-{% highlight bash %}
-diff -uNr A B > C #生成A和B的diff文件C,-uNr为最常用的选项
-patch A C #给A打上diff文件得到B
-patch -R B C #B还原为A
-{% endhighlight %}
+https://mp.weixin.qq.com/s/tguC-WOleKRWLfTmGdJlQg
 
-# 批量patch
+Linux文件系统的实现
 
-## 给目录应用patch。
+https://mp.weixin.qq.com/s/hTD9HEIbSx69wJhA_dv9Qg
 
-`patch -p1 <1.patch`
+Linux写时拷贝技术(copy-on-write)
 
-这种情况适合1.patch中包含对多个文件的修改时。
+https://mp.weixin.qq.com/s/1JiXL1f3SSjsBojlJSNOpQ
 
-## 批量应用patch
+Linux的启动流程
 
-有的时候，patch不是一个patch文件，而是一个目录中的若干个patch文件。这时可用如下办法：
+https://mp.weixin.qq.com/s/ZfprFQjVANuCE2N693gZBQ
 
-`find . -name "*.patch">1.txt`
+用户空间和内核空间
 
-`sort 1.txt | xargs cat >2.patch`
+https://mp.weixin.qq.com/s/mTOzcdjaak-z6ypL9MR2Lw
 
-`patch -p1 <2.patch`
+小白科普：悲观锁和乐观锁
+
+https://mp.weixin.qq.com/s/6MRi_UEcMybKn4YXi6qWng
+
+操作系统中锁的实现原理
+
+https://mp.weixin.qq.com/s/4tAxQ0auQfv5x7Dh3B-85g
+
+Linux内存管理
+
+https://mp.weixin.qq.com/s/w6t-_uZejmhWCVcPQgmFOg
+
+进程与线程的一个简单解释
+
+https://mp.weixin.qq.com/s/WZyuTtEfaTFLnCfvhOrp7g
+
+虚拟化原理和分类
 
 # bash
 
@@ -444,29 +456,3 @@ Simplified Wrapper and Interface Generator可以为C/C++的库生成其他高级
 官网：
 
 http://swig.org/
-
-# DL参考资源
-
-https://mp.weixin.qq.com/s/bgP_xMfi3hXayscf9D5JIg
-
-谷歌提出Sim2Real：让机器人像人类一样观察世界
-
-https://mp.weixin.qq.com/s/aqfwn0kiXbZwVDVhHXBAXQ
-
-谷歌大脑研究员玩转汉字RNN：神经网络生成新华字典
-
-https://mp.weixin.qq.com/s/GxWOuIf25JQnQoCstVyGLQ
-
-李飞飞团队提出OpenTag模型：减少人工标注，自动提取产品属性值
-
-https://mp.weixin.qq.com/s/HaTNeqblwp2mALznK2nvMA
-
-用脑电波控制智能假肢：如何利用深度学习技术进行EGG数据分类
-
-https://mp.weixin.qq.com/s/iAMYqJjlMWAvFq4Hddh4ig
-
-从0上手Kaggle图像分类挑战：冠军解决方案详解
-
-https://mp.weixin.qq.com/s/ZIDiFrN3qQV4u-m9Wr3wiA
-
-斯坦福完全可解释深度神经网络：你需要用决策树搞点事

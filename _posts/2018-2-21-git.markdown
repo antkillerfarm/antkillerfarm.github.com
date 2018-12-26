@@ -6,6 +6,12 @@ category: technology
 
 # Git
 
+## 教程
+
+https://learngitbranching.js.org
+
+这个网站提供了一个可视化的交互式git教程。非常不错。
+
 ## git常用命令
 
 0.在linux下有个叫做gitk的Git GUI工具。

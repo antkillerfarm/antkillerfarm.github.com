@@ -192,10 +192,6 @@ https://zhuanlan.zhihu.com/p/27971065
 
 关于多正则匹配
 
-https://mp.weixin.qq.com/s/WZyuTtEfaTFLnCfvhOrp7g
-
-虚拟化原理和分类
-
 https://mp.weixin.qq.com/s/Y7qZlJdJ8fav5BXFGwdSOQ
 
 Graph Analysis and Its Application
@@ -280,18 +276,6 @@ http://www.cnblogs.com/xybaby/p/7867735.html
 
 关于负载均衡的一切：总结与思考
 
-https://mp.weixin.qq.com/s/6MRi_UEcMybKn4YXi6qWng
-
-操作系统中锁的实现原理
-
-https://mp.weixin.qq.com/s/4tAxQ0auQfv5x7Dh3B-85g
-
-Linux内存管理
-
-https://mp.weixin.qq.com/s/w6t-_uZejmhWCVcPQgmFOg
-
-进程与线程的一个简单解释
-
 http://blog.csdn.net/wurenhai/article/details/37659335
 
 微服务(Microservices)
@@ -303,14 +287,6 @@ https://mp.weixin.qq.com/s/yPl746zhMFdMVtJaPUoAxg
 https://mp.weixin.qq.com/s/bUrTDj1atJSZvFeWA8H-SA
 
 正向代理和反向代理
-
-https://mp.weixin.qq.com/s/mTOzcdjaak-z6ypL9MR2Lw
-
-小白科普：悲观锁和乐观锁
-
-https://mp.weixin.qq.com/s/ZfprFQjVANuCE2N693gZBQ
-
-用户空间和内核空间
 
 https://mp.weixin.qq.com/s/z5zMETSMUGoTiZYMooKZ-g
 
@@ -331,18 +307,6 @@ https://zhuanlan.zhihu.com/p/31189198
 https://mp.weixin.qq.com/s/Nn7Yl6UzRpWnSleKUss8Sw
 
 阿里巴巴正式开源自研动态非侵入AOP解决方案：JVM-Sandbox
-
-https://mp.weixin.qq.com/s/QsgoONKwI7ds8Hnx2Wer6A
-
-Linux从程序到进程
-
-https://mp.weixin.qq.com/s/tguC-WOleKRWLfTmGdJlQg
-
-Linux文件系统的实现
-
-https://mp.weixin.qq.com/s/hTD9HEIbSx69wJhA_dv9Qg
-
-Linux写时拷贝技术(copy-on-write)
 
 https://mp.weixin.qq.com/s/eEuNPtTaPwJ7hSghgeU32g
 
@@ -451,6 +415,22 @@ https://mp.weixin.qq.com/s/0QnH0F8JZQBsECoJeGqpsg
 https://mp.weixin.qq.com/s/yIJT9D1YXa4rhf-RMBVPLw
 
 1G到5G之争：一部30年惊心动魄的移动通信史
+
+https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126
+
+前端安全系列之一：如何防止XSS攻击？
+
+https://mp.weixin.qq.com/s?__biz=MzIyNzUwMjM2MA==&mid=2247485942&idx=1&sn=1597233c1527cac63a2c734ec0b14f02
+
+编程基础知识
+
+https://mp.weixin.qq.com/s?__biz=MzIyNzUwMjM2MA==&mid=2247486006&idx=1&sn=d4978396fa18e5dfce69a51ac7748898
+
+网络编程基础知识
+
+https://mp.weixin.qq.com/s/EPWRwOBT8_616R5RWbdaTQ
+
+一家公司到底有多少种管理系统？——从包罗万象到术业专攻
 
 ## 有用的blog
 

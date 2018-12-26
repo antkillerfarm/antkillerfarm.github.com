@@ -124,6 +124,14 @@ https://mp.weixin.qq.com/s/l8ExvxOERUngHBqtep-ZWw
 
 人群计数（Crowd Counting）研究综述
 
+https://zhuanlan.zhihu.com/p/51511683
+
+Graph Reid系列结合谱聚类做特征变换
+
+https://zhuanlan.zhihu.com/p/47073533
+
+结合时空的Re-ID系列：ECCV2018 TAUDL
+
 # 人脸识别进阶
 
 https://mp.weixin.qq.com/s/5vx1FGgSOhF71FwHeUwaAQ

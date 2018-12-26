@@ -24,6 +24,12 @@ DPM(2007)->RCNN(2014)->Fast RCNN->Faster RCNN
 
 ![](/images/article/rcnn_4.jpg)
 
+![](/images/img2/deep_learning_object_detection_history.png)
+
+https://github.com/hoya012/deep_learning_object_detection
+
+这个网页提供了相关的论文/模型的列表。
+
 参考：
 
 http://blog.csdn.net/ttransposition/article/details/12966521

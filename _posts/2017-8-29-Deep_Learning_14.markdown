@@ -280,7 +280,13 @@ Softmax和交叉熵的深度解析和Python实现
 
 《Understanding Neural Networks Through Deep Visualization》
 
-这篇论文是Deep Visualization的经典之作。它提出了如下公式：
+这篇论文是Deep Visualization的经典之作。作者是Jason Yosinski。
+
+>Jason Yosinski，Caltech本科+Cornell博士。现为Uber AI Labs的科学家。   
+>个人主页：   
+>http://yosinski.com/
+
+该文提出了如下公式：
 
 $$V(F_i^l)=\mathop{\arg\max}_{X}A_i^l(X), X \leftarrow X + \eta\frac{\partial A_i^l(X)}{\partial X}$$
 
@@ -291,3 +297,21 @@ Deep Visualization除了用于提取纹理之外，还可用于模型压缩。
 论文：
 
 《Demystifying Neural Network Filter Pruning》
+
+https://github.com/yosinski/deep-visualization-toolbox
+
+这是作者Jason Yosinski提供的Deep Visualization的工具的代码。
+
+https://github.com/Sunghyo/revacnn
+
+这是另一个CNN可视化工具
+
+参考：
+
+https://zhuanlan.zhihu.com/p/24833574
+
+Deep Visualization:可视化并理解CNN
+
+http://www.cnblogs.com/jesse123/p/7101649.html
+
+Tool-Deep Visualization

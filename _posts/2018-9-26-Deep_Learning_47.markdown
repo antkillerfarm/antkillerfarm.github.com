@@ -72,6 +72,10 @@ https://www.jiqizhixin.com/articles/2017-03-31-5
 
 谷歌全端到端语音合成系统Tacotron：直接从字符合成语音
 
+https://mp.weixin.qq.com/s/Jzu2CLAiDjVFW5qICrE9Hw
+
+基于Tacotron模型的语音合成实践
+
 ## Tacotron-2
 
 Tacotron2是Tacotron的升级版，也是DeepMind提出的。
