@@ -65,6 +65,20 @@ Makefile文件的第180行：
 
 `LIBRARIES += glog gflags protobuf boost_system boost_filesystem m hdf5_serial_hl hdf5_serial`
 
+## pycaffe
+
+编译：
+
+`make pycaffe`
+
+安装：
+
+`export PYTHONPATH=/path/to/caffe/python:$PYTHONPATH`
+
+测试：
+
+`import caffe`
+
 ## 运行方式
 
 Caffe有两种运行方式：
@@ -393,14 +407,6 @@ https://mp.weixin.qq.com/s/KPmkphlJFv5dScLlhAigEw
 新型存储器技术盘点
 
 # DL参考资源
-
-https://mp.weixin.qq.com/s/ZhVTROAdo49GLT09xr6GWg
-
-美团如何基于深度学习实现图像的智能审核？
-
-https://mp.weixin.qq.com/s/o0hjJH6P-8pICS43VFVjIA
-
-Tomaso Poggio深度学习理论：深度网络“过拟合缺失”的本质
 
 https://mp.weixin.qq.com/s/494I6XHrk9fB2DvhiMM9iQ
 

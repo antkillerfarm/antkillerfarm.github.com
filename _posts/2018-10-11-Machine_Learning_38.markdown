@@ -154,6 +154,10 @@ https://mp.weixin.qq.com/s/J9OmqFzQK-GS95FjgAJkTw
 
 浅析PageRank算法
 
+https://mp.weixin.qq.com/s/fGaEYvo3WYKdzA3r8l6O3g
+
+基于TextRank算法的文本摘要
+
 # 社交网络
 
 ## 信息传播模型

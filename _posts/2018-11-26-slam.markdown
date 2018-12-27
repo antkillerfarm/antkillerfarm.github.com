@@ -286,6 +286,10 @@ https://mp.weixin.qq.com/s/jeQawOIomUAjIp7GhuBk3A
 
 一致性哈希算法及其在分布式系统中的应用
 
+https://mp.weixin.qq.com/s/WIx-yzbvgwSaKrRMIbgY2w
+
+无边无际的虚拟城市来了！能走能飞的Demo，一火再火的“波函数坍缩”开源算法
+
 # TensorFlow+
 
 https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
@@ -363,6 +367,10 @@ https://mp.weixin.qq.com/s/tVqp1Tht1P-0EQazJizQaA
 https://mp.weixin.qq.com/s/3WleFm9S_wMIPTz_WfjKQw
 
 TensorFlow支持Unicode，中文NLP终于省心了
+
+https://mp.weixin.qq.com/s/jFEOokxfJ1Kw-P3wvw3EAg
+
+带你了解，不规则张量！
 
 # 知名AI公司技术主页
 

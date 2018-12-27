@@ -353,6 +353,10 @@ https://mp.weixin.qq.com/s/a68brFJthczgwiFoUBh30A
 
 TensorFlow数据集和估算器介绍
 
+https://mp.weixin.qq.com/s/zpEVU1E5DfElAnFqHCqHOw
+
+训练效率低？GPU利用率上不去？快来看看别人家的tricks吧～
+
 ## TensorFlow Probability
 
 TensorFlow Probability是一个概率编程工具包。

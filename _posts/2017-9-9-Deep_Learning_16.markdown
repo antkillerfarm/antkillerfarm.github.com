@@ -268,6 +268,10 @@ https://mp.weixin.qq.com/s/vIL-bKHZK-6eXZYWxrc9vw
 
 这种有序神经元，像你熟知的循环神经网络吗？
 
+https://mp.weixin.qq.com/s/GGK9T0DeyIdD5ahHy5uvfg
+
+LightRNN：存储和计算高效的RNN
+
 # CNN进阶
 
 http://mp.weixin.qq.com/s/ddTNr-967IahTZ2X1LNSEQ

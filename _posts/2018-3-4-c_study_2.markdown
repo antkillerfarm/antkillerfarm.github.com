@@ -92,3 +92,24 @@ http://dcloud.io/index.html
 
 HBuilder，一个html编辑的IDE。
 
+# Python
+
+https://mp.weixin.qq.com/s/5YWAgp8LKi5q_NDrNUtyGQ
+
+在GitHub上收获6519颗Star的Python面试题资料
+
+https://mp.weixin.qq.com/s/toh59s2-UlqiZfkE5ThxZw
+
+谈一谈python中的魔法变量*args和**kwargs
+
+https://mp.weixin.qq.com/s/8y7IIQWxXx3bCD8cK8Z3XQ
+
+这17个骚操作你都Ok吗
+
+https://mp.weixin.qq.com/s/rE5OEFwwFxJNb_Omwmqvzw
+
+符合语言习惯的Python优雅编程技巧
+
+https://blog.csdn.net/longerzone/article/details/17889969
+
+Python下调用Linux的Shell命令

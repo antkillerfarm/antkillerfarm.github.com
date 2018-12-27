@@ -30,9 +30,9 @@ https://www.zhihu.com/question/32286630
 
 怎么确定LDA的topic个数？
 
-http://blog.csdn.net/luo123n/article/details/48902815
+http://blog.sina.com.cn/s/blog_4c9dc2a10102vua9.html
 
-Perplexity详解
+Perplexity（困惑度）详解
 
 ## LDA漫游指南
 

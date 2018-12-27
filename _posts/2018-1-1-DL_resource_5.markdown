@@ -373,3 +373,11 @@ https://mp.weixin.qq.com/s/iAMYqJjlMWAvFq4Hddh4ig
 https://mp.weixin.qq.com/s/ZIDiFrN3qQV4u-m9Wr3wiA
 
 斯坦福完全可解释深度神经网络：你需要用决策树搞点事
+
+https://mp.weixin.qq.com/s/ZhVTROAdo49GLT09xr6GWg
+
+美团如何基于深度学习实现图像的智能审核？
+
+https://mp.weixin.qq.com/s/o0hjJH6P-8pICS43VFVjIA
+
+Tomaso Poggio深度学习理论：深度网络“过拟合缺失”的本质

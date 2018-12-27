@@ -64,7 +64,7 @@ linux:
 
 更换源：
 
-`pip install -i  https://pypi.tuna.tsinghua.edu.cn/simple  <package name>`
+`pip install -i https://pypi.tuna.tsinghua.edu.cn/simple <package name>`
 
 其他源还有：
 
@@ -407,20 +407,3 @@ with tag("h1"):
     print("hello")
     print("world")
 {% endhighlight %}
-
-上述代码执行结果为：
-
-{% highlight text %}
-<h1>
-hello
-world
-</h1>
-{% endhighlight %}
-
-with语句首先执行yield之前的语句，因此打印出<h1>；yield调用会执行with语句内部的所有语句，因此打印出hello和world；最后执行yield之后的语句，打印出</h1>。
-
-参考：
-
-https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001478651770626de401ff1c0d94f379774cabd842222ff000
-
-contextlib

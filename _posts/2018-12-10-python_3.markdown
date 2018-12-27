@@ -8,6 +8,55 @@ category: language
 
 ## python调用GTK函数的一般规则（续）
 
+4）用于输出的参数
+
+C:`void gst_message_parse_error (GstMessage *message, GError **gerror, gchar **debug);`
+
+python:`err, debug = message.parse_error()`
+
+这个例子中的gerror和debug都是用于输出的参数。如果只想得到其一，还可用以下方法:
+
+`debug = message.parse_error()[2]`
+
+5）枚举类型
+
+C:
+
+{% highlight c %}
+enum GstSeekFlags
+{
+  GST_SEEK_FLAG_FLUSH,
+  ...
+}
+{% endhighlight %}
+
+python:`Gst.SeekFlags.FLUSH`
+
+6）宏常量
+
+C:`#define GST_CLOCK_TIME_NONE ((GstClockTime) -1)`
+
+python:`Gst.CLOCK_TIME_NONE`
+
+7）类型转换
+
+大多数情况下，类型转换自动完成，并无什么问题。这里只讨论特殊的情况。
+
+C:
+
+{% highlight c %}
+gst_element_seek (pipeline, 1.0, GST_FORMAT_TIME, GST_SEEK_FLAG_FLUSH,
+                         GST_SEEK_TYPE_SET, time_nanoseconds,
+                         GST_SEEK_TYPE_NONE, GST_CLOCK_TIME_NONE))
+{% endhighlight %}
+
+python:
+
+{% highlight python %}
+self.player.seek(1.0, Gst.Format.TIME, Gst.SeekFlags.FLUSH, Gst.SeekType.SET,\
+                 time_nanoseconds, Gst.SeekType.NONE, Gst.CLOCK_TIME_NONE)
+{% endhighlight %}
+
 这里首先按照一般的方法，将C代码转化成python代码。但是运行之后，产生如下错误：
 
 `OverflowError: long too big to convert`
@@ -386,23 +435,3 @@ Python实现代码雨效果
 https://mp.weixin.qq.com/s/0wJRlGS2QXpEL2XaU_Ke-g
 
 Python实现烟花特效
-
-https://mp.weixin.qq.com/s/5YWAgp8LKi5q_NDrNUtyGQ
-
-在GitHub上收获6519颗Star的Python面试题资料
-
-https://mp.weixin.qq.com/s/toh59s2-UlqiZfkE5ThxZw
-
-谈一谈python中的魔法变量*args和**kwargs
-
-https://mp.weixin.qq.com/s/8y7IIQWxXx3bCD8cK8Z3XQ
-
-这17个骚操作你都Ok吗
-
-https://mp.weixin.qq.com/s/rE5OEFwwFxJNb_Omwmqvzw
-
-符合语言习惯的Python优雅编程技巧
-
-https://blog.csdn.net/longerzone/article/details/17889969
-
-Python下调用Linux的Shell命令

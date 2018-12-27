@@ -6,6 +6,25 @@ category: language
 
 # Python
 
+## with（续）
+
+上述代码执行结果为：
+
+{% highlight text %}
+<h1>
+hello
+world
+</h1>
+{% endhighlight %}
+
+with语句首先执行yield之前的语句，因此打印出<h1>；yield调用会执行with语句内部的所有语句，因此打印出hello和world；最后执行yield之后的语句，打印出</h1>。
+
+参考：
+
+https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001478651770626de401ff1c0d94f379774cabd842222ff000
+
+contextlib
+
 ## `__init__.py`的作用
 
 `__init__.py`文件的作用是将文件夹变为一个Python模块,Python中的每个模块的包中，都有`__init__.py`文件。
@@ -199,6 +218,32 @@ https://mp.weixin.qq.com/s/Q3cqLuOZDSMOdAjVrCDrtQ
 
 在Python 2.7即将停止支持时，我们为你准备了一份3.x迁移指南
 
+文件print：
+
+{% highlight python %}
+Python2: print >>sys.stderr, "fatal error"
+Python3: print("fatal error", file=sys.stderr)
+{% endhighlight %}
+
+dict切片：
+
+{% highlight python %}
+Python2: 
+self._layers = net.blobs.keys()
+self._layers = self._layers[1:] # TypeError: 'dict_keys' object is not subscriptable
+
+Python3:
+self._layers = list(net.blobs.keys())
+self._layers = self._layers[1:]
+{% endhighlight %}
+
+检查某对象是否为字符串或Unicode对象：
+
+{% highlight python %}
+Python2: isinstance(anobj, basestring)
+Python3: isinstance(anobj, str)
+{% endhighlight %}
+
 ## six
 
 six是一个专门用来兼容 Python 2 和 Python 3 的库。它解决了诸如 urllib 的部分方法不兼容， str 和 bytes 类型不兼容等“知名”问题。
@@ -355,52 +400,3 @@ python:
 `def playToggled(self, w):`
 
 这里的情况要复杂的多。首先在事件回调注册的时候，由于我们并没有给user_data赋值，因此照理说playToggled函数，只有button这一个参数。但实际传递给playToggled函数的有两个参数，self是一个用于占位的参数，w对应button，没有东西对应user_data。
-
-4）用于输出的参数
-
-C:`void gst_message_parse_error (GstMessage *message, GError **gerror, gchar **debug);`
-
-python:`err, debug = message.parse_error()`
-
-这个例子中的gerror和debug都是用于输出的参数。如果只想得到其一，还可用以下方法:
-
-`debug = message.parse_error()[2]`
-
-5）枚举类型
-
-C:
-
-{% highlight c %}
-enum GstSeekFlags
-{
-  GST_SEEK_FLAG_FLUSH,
-  ...
-}
-{% endhighlight %}
-
-python:`Gst.SeekFlags.FLUSH`
-
-6）宏常量
-
-C:`#define GST_CLOCK_TIME_NONE ((GstClockTime) -1)`
-
-python:`Gst.CLOCK_TIME_NONE`
-
-7）类型转换
-
-大多数情况下，类型转换自动完成，并无什么问题。这里只讨论特殊的情况。
-
-C:
-
-{% highlight c %}
-gst_element_seek (pipeline, 1.0, GST_FORMAT_TIME, GST_SEEK_FLAG_FLUSH,
-                         GST_SEEK_TYPE_SET, time_nanoseconds,
-                         GST_SEEK_TYPE_NONE, GST_CLOCK_TIME_NONE))
-{% endhighlight %}
-
-python:
-
-{% highlight python %}
-self.player.seek(1.0, Gst.Format.TIME, Gst.SeekFlags.FLUSH, Gst.SeekType.SET,\
-                 time_nanoseconds, Gst.SeekType.NONE, Gst.CLOCK_TIME_NONE)
-{% endhighlight %}
