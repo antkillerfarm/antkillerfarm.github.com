@@ -372,6 +372,10 @@ https://mp.weixin.qq.com/s/jFEOokxfJ1Kw-P3wvw3EAg
 
 带你了解，不规则张量！
 
+https://mp.weixin.qq.com/s/tMtx4PZbpo5IrnhzLz8Lzw
+
+AutoGraph：图的简易控制流程
+
 # 知名AI公司技术主页
 
 http://uber.ai/

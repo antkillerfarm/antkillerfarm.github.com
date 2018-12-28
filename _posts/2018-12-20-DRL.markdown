@@ -142,6 +142,60 @@ https://spinningup.openai.com/en/latest/spinningup/keypapers.html
 
 深度强化学习关键论文列表
 
+## 参考
+
+https://www.nervanasys.com/demystifying-deep-reinforcement-learning/
+
+深度强化学习揭秘
+
+https://zhuanlan.zhihu.com/p/24446336
+
+深度强化学习Deep Reinforcement Learning学习整理
+
+https://mp.weixin.qq.com/s/K82PlSZ5TDWHJzlEJrjGlg
+
+深度学习与强化学习
+
+http://mp.weixin.qq.com/s/lLPRwInF5qaw7ewYHOpPyw
+
+深度强化学习资料
+
+http://lamda.nju.edu.cn/yangjw/project/drlintro.html
+
+深度强化学习初探
+
+https://zhuanlan.zhihu.com/p/21498750
+
+深度强化学习导引
+
+https://mp.weixin.qq.com/s/RnUWHa6QzgJbE_XqLeAQmg
+
+深度强化学习，决策与控制
+
+https://mp.weixin.qq.com/s/SckTPgEw7KWmfKXWriNIRg
+
+浅谈强化学习的方法及学习路线
+
+https://mp.weixin.qq.com/s/-JHHOQPB6pKVuge64NkMuQ
+
+DeepMind主攻的深度强化学习3大核心算法及7大挑战
+
+https://simoninithomas.github.io/Deep_reinforcement_learning_Course/
+
+老外写的简易深度强化学习入门
+
+https://mp.weixin.qq.com/s/2SOHQElaYbplse3QqG9tYw
+
+强化学习介绍
+
+https://mp.weixin.qq.com/s/R30quVGK0TgjerLpiIK9eg
+
+从算法到训练，综述强化学习实现技巧与调试经验
+
+https://www.zhihu.com/question/49230922
+
+强化学习（reinforcement learning)有什么好的开源项目、网站、文章推荐一下？
+
 # Deep Q-learning Network
 
 Deep Q-learning Network是DL在RL领域的开山之作。它的思想主要来自于Deepmind的两篇论文：
@@ -223,6 +277,10 @@ https://mp.weixin.qq.com/s/Vdt5h8APAFoeVxFYKlywpg
 https://mp.weixin.qq.com/s/RH4ifA46njdC7fyRI9kVMg
 
 深度Q网络与视觉格斗类游戏
+
+https://mp.weixin.qq.com/s/uymKtR_7IgMpfXcekfkCDg
+
+从强化学习基本概念到Q学习的实现，打造自己的迷宫智能体
 
 # reward modeling
 

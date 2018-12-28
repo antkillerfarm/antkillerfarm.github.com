@@ -1,50 +1,112 @@
 ---
 layout: post
-title:  深度学习（三十四）——深度强化学习（1）
+title:  深度学习（三十四）——信息检索, 深度强化学习（1）
 category: DL 
 ---
 
+# 信息检索
+
+Information Retrieval是用户进行信息查询和获取的主要方式，是查找信息的方法和手段。狭义的信息检索仅指信息查询（Information Search）。即用户根据需要，采用一定的方法，借助检索工具，从信息集合中找出所需要信息的查找过程。广义的信息检索是信息按一定的方式进行加工、整理、组织并存储起来，再根据信息用户特定的需要将相关信息准确的查找出来的过程。
+
+这方面的DL应用可参见以下的综述文章：
+
+《MatchZoo: A Toolkit for Deep Text Matching》
+
+## ARC-I & ARC-II
+
+《Convolutional neural network architectures for matching natural language sentences》
+
+## DSSM
+
+《Learning deep structured semantic models for web search using clickthrough data》
+
+## CDSSM
+
+《Learning semantic representations using convolutional neural networks for web search》
+
+## MV-LSTM
+
+《A deep architecture for semantic matching with multiple positional sentence representations》
+
+## CNTN
+
+《Convolutional Neural Tensor Network Architecture for Community-Based Question Answering》
+
+## DRMM
+
+《A deep relevance matching model for ad-hoc retrieval》
+
+## MatchPyramid
+
+《Text Matching as Image Recognition》
+
+## Match-SRNN
+
+《Match-SRNN: Modeling the Recursive Matching Structure with Spatial RNN》
+
+## K-NRM
+
+《End-to-End Neural Ad-hoc Ranking with Kernel Pooling》
+
+## 参考
+
+https://mp.weixin.qq.com/s/aZsj1FQnzHOr-YBcy_ljpw
+
+DNN在搜索场景中的应用
+
+https://mp.weixin.qq.com/s/1jgdI-Pt0PtN3oAs0Wh4XA
+
+阿里提出电商搜索全局排序方法，淘宝无线主搜GMV提升5%
+
+https://mp.weixin.qq.com/s/9Fcj5lO-JPfFVnRSSM_56w
+
+深度学习在美团搜索广告排序的应用实践
+
+https://mp.weixin.qq.com/s/wni3F9lKuO4OT32BVe0QDQ
+
+谷歌发大招：搜索全面AI化，不用关键词就能轻松“撩书”
+
+https://mp.weixin.qq.com/s/TrWwp-DBTrKqIT_Pfy_o5w
+
+阿里妈妈首次公开新一代智能广告检索模型，重新定义传统搜索框架
+
+https://mp.weixin.qq.com/s/fZv9FgbdQ1bWPoNdl9sF1A
+
+“宝石迷阵”与信息检索
+
+https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247488366&idx=1&sn=01baaf8b6c6a2c727bb9e0e2101f803b
+
+电商搜索算法技术的演进
+
+https://mp.weixin.qq.com/s/MpuUdZi8CWcu0b-ij-bHjA
+
+Jeff Dean出品：用机器学习索引替代B-Trees，3倍性能提升，10-100倍空间缩小
+
+https://mp.weixin.qq.com/s/uztYEW_azetOkOGiZcbCuw
+
+JeffDean又用深度学习搞事情：这次要颠覆整个计算机系统结构设计。这篇blog介绍了如何用DL方法提高内存访问的命中率。
+
+https://zhuanlan.zhihu.com/p/37020639
+
+读论文系列：CVPR2018 SSAH
+
+https://mp.weixin.qq.com/s/TdnstQaBcLaXg8BvuR7oYA
+
+基于素描图的细粒度图像检索
+
 # 深度强化学习
-
-https://www.nervanasys.com/demystifying-deep-reinforcement-learning/
-
-深度强化学习揭秘
-
-https://zhuanlan.zhihu.com/p/24446336
-
-深度强化学习Deep Reinforcement Learning学习整理
 
 https://mp.weixin.qq.com/s/7BsXPQ8wC6_fHulU63ZQiQ
 
 当强化学习遇见泛函分析
 
-https://mp.weixin.qq.com/s/K82PlSZ5TDWHJzlEJrjGlg
-
-深度学习与强化学习
-
 https://mp.weixin.qq.com/s/6n5HawyR4AgH8Dq0gJMw2g
 
 强化学习的基本概念与代码实现
 
-http://mp.weixin.qq.com/s/lLPRwInF5qaw7ewYHOpPyw
-
-深度强化学习资料
-
 https://zhuanlan.zhihu.com/p/27699682
 
 荐译一篇通俗易懂的策略梯度（Policy Gradient）方法讲解
-
-http://lamda.nju.edu.cn/yangjw/project/drlintro.html
-
-深度强化学习初探
-
-https://zhuanlan.zhihu.com/p/21498750
-
-深度强化学习导引
-
-https://mp.weixin.qq.com/s/RnUWHa6QzgJbE_XqLeAQmg
-
-深度强化学习，决策与控制
 
 https://mp.weixin.qq.com/s/RLEuaiRdq6AbTSUcYQ5O3A
 
@@ -62,29 +124,9 @@ https://zhuanlan.zhihu.com/p/29019246
 
 基于策略的增强学习
 
-https://mp.weixin.qq.com/s/SckTPgEw7KWmfKXWriNIRg
-
-浅谈强化学习的方法及学习路线
-
-https://mp.weixin.qq.com/s/-JHHOQPB6pKVuge64NkMuQ
-
-DeepMind主攻的深度强化学习3大核心算法及7大挑战
-
 https://mp.weixin.qq.com/s/OY56lJ_NFf5vVAgKfKyx2A
 
 利用强化学习自动搜索最优化方法
-
-https://simoninithomas.github.io/Deep_reinforcement_learning_Course/
-
-老外写的简易深度强化学习入门
-
-https://mp.weixin.qq.com/s/2SOHQElaYbplse3QqG9tYw
-
-强化学习介绍
-
-https://mp.weixin.qq.com/s/R30quVGK0TgjerLpiIK9eg
-
-从算法到训练，综述强化学习实现技巧与调试经验
 
 https://mp.weixin.qq.com/s/uDFsWebfLmka-zZX3Y_8kg
 
@@ -93,10 +135,6 @@ https://mp.weixin.qq.com/s/uDFsWebfLmka-zZX3Y_8kg
 https://mp.weixin.qq.com/s/nYOOwVoijl1p4V0A7yaI3w
 
 机遇与挑战：用强化学习自动搜索优化算法
-
-https://mp.weixin.qq.com/s/uymKtR_7IgMpfXcekfkCDg
-
-从强化学习基本概念到Q学习的实现，打造自己的迷宫智能体
 
 http://mp.weixin.qq.com/s/TBVVdX3erOpXNjXmhLmxOw
 
@@ -121,10 +159,6 @@ https://zhuanlan.zhihu.com/p/36322095
 https://mp.weixin.qq.com/s/xr-2cNoSYpCftLI3dV6zEw
 
 如何使用深度强化学习帮助自动驾驶汽车通过交叉路口？
-
-https://www.zhihu.com/question/49230922
-
-强化学习（reinforcement learning)有什么好的开源项目、网站、文章推荐一下？
 
 https://mp.weixin.qq.com/s/R_pfTXDMaLHmiCaSV2t_YA
 

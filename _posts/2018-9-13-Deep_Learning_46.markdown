@@ -302,7 +302,11 @@ https://mp.weixin.qq.com/s/RBMGI20AI92ZcWSlYczqAA
 
 https://mp.weixin.qq.com/s/p0dcov84pZqsU7XP30bexQ
 
-Meta-Learning 元学习：学会快速学习
+Meta-Learning元学习：学会快速学习
+
+https://mp.weixin.qq.com/s/wl8j7dLu3OxPV7MNaO2-7Q
+
+《基于梯度的元学习》199页伯克利博士论文带你回顾元学习最新发展脉络
 
 # 深度哈希
 

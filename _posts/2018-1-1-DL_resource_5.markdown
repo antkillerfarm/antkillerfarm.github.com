@@ -6,23 +6,35 @@ category: resource
 
 # DL参考资源
 
-## 光神经网络
+## AI与UI
 
-https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ
+https://mp.weixin.qq.com/s/bGbslnuG80S6gPwD4FHuMg
 
-3D打印的深度神经网络，光速执行AI运算
+深度学习助力前端开发：自动生成GUI图代码
 
-https://mp.weixin.qq.com/s/5zt8UIpNBcgNZpwHHJj68Q
+https://mp.weixin.qq.com/s/PhgIy4UaBLh_pOO8OH2c4g
 
-光学CNN层替换传统CNN层，超省电
+复杂GUI也能搞定！西安交通大学提出前端设计图自动转代码新方法
 
-https://mp.weixin.qq.com/s/IheyYAC1yIigYOW-gtc5Eg
+https://mp.weixin.qq.com/s/4b4TPkIRPJ3VBkCOA6kbxw
 
-Science重磅！用光速实现深度学习，跟GPU说再见
+前端慌不慌？用深度学习自动生成HTML代码
 
-https://mp.weixin.qq.com/s/ENYX87SMlgv30x08iYFQIw
+https://mp.weixin.qq.com/s/tjnpIYJGmrTLGUsdtBI2Vw
 
-几乎零能耗零延迟！UCLA科学家发明光衍射神经网络，登上Science
+AI设计师“鹿班”核心技术公开：如何1秒设计8000张海报？
+
+https://mp.weixin.qq.com/s/lEaq8NylJG4bUY2YupZh0g
+
+5秒钟内将手绘网站线框图转换为可用的HTML网站
+
+https://mp.weixin.qq.com/s/FuHDkcCDib5oc_XPDNnytQ
+
+阿里AI设计师一秒出图，小撒连连惊呼，真相是...
+
+https://mp.weixin.qq.com/s/empXVsgqe6OljVa1Hduigw
+
+前端开发者的福音：根据UI设计图自动生成GUI骨架代码
 
 ## 连续学习
 
@@ -362,22 +374,3 @@ https://mp.weixin.qq.com/s/GxWOuIf25JQnQoCstVyGLQ
 
 李飞飞团队提出OpenTag模型：减少人工标注，自动提取产品属性值
 
-https://mp.weixin.qq.com/s/HaTNeqblwp2mALznK2nvMA
-
-用脑电波控制智能假肢：如何利用深度学习技术进行EGG数据分类
-
-https://mp.weixin.qq.com/s/iAMYqJjlMWAvFq4Hddh4ig
-
-从0上手Kaggle图像分类挑战：冠军解决方案详解
-
-https://mp.weixin.qq.com/s/ZIDiFrN3qQV4u-m9Wr3wiA
-
-斯坦福完全可解释深度神经网络：你需要用决策树搞点事
-
-https://mp.weixin.qq.com/s/ZhVTROAdo49GLT09xr6GWg
-
-美团如何基于深度学习实现图像的智能审核？
-
-https://mp.weixin.qq.com/s/o0hjJH6P-8pICS43VFVjIA
-
-Tomaso Poggio深度学习理论：深度网络“过拟合缺失”的本质

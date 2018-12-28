@@ -323,3 +323,27 @@ https://mp.weixin.qq.com/s/dJXl5tI-WKB3O28sgJmbkw
 https://mp.weixin.qq.com/s/xS8EsNtSdHiFgg_HnuJJWg
 
 照片有灵异鬼影？伯克利陈启峰培育高能FCN“除灵师”
+
+https://mp.weixin.qq.com/s/HaTNeqblwp2mALznK2nvMA
+
+用脑电波控制智能假肢：如何利用深度学习技术进行EGG数据分类
+
+https://mp.weixin.qq.com/s/iAMYqJjlMWAvFq4Hddh4ig
+
+从0上手Kaggle图像分类挑战：冠军解决方案详解
+
+https://mp.weixin.qq.com/s/ZIDiFrN3qQV4u-m9Wr3wiA
+
+斯坦福完全可解释深度神经网络：你需要用决策树搞点事
+
+https://mp.weixin.qq.com/s/ZhVTROAdo49GLT09xr6GWg
+
+美团如何基于深度学习实现图像的智能审核？
+
+https://mp.weixin.qq.com/s/o0hjJH6P-8pICS43VFVjIA
+
+Tomaso Poggio深度学习理论：深度网络“过拟合缺失”的本质
+
+https://mp.weixin.qq.com/s/wmSxk0z-14PXd5JslAdp2A
+
+Numerical Coordinate Regression=高斯热图 VS 坐标回归

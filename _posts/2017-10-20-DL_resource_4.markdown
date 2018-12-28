@@ -40,6 +40,10 @@ https://mp.weixin.qq.com/s/UF7DDenUQJ3bL83IHxOkIw
 
 分布式优化算法及其在多智能体系统与机器学习中的应用
 
+https://mp.weixin.qq.com/s/6h9MeBs89hTtWsYSZ4pZ5g
+
+蚂蚁金服核心技术：百亿特征实时推荐算法揭秘
+
 ## 实战
 
 http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg
@@ -362,32 +366,20 @@ https://mp.weixin.qq.com/s/qmdfLlTfQzT0QVq_SzEPUw
 
 机器学习和深度学习中值得弄清楚的一些问题
 
-## AI与UI
+## 光神经网络
 
-https://mp.weixin.qq.com/s/bGbslnuG80S6gPwD4FHuMg
+https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ
 
-深度学习助力前端开发：自动生成GUI图代码
+3D打印的深度神经网络，光速执行AI运算
 
-https://mp.weixin.qq.com/s/PhgIy4UaBLh_pOO8OH2c4g
+https://mp.weixin.qq.com/s/5zt8UIpNBcgNZpwHHJj68Q
 
-复杂GUI也能搞定！西安交通大学提出前端设计图自动转代码新方法
+光学CNN层替换传统CNN层，超省电
 
-https://mp.weixin.qq.com/s/4b4TPkIRPJ3VBkCOA6kbxw
+https://mp.weixin.qq.com/s/IheyYAC1yIigYOW-gtc5Eg
 
-前端慌不慌？用深度学习自动生成HTML代码
+Science重磅！用光速实现深度学习，跟GPU说再见
 
-https://mp.weixin.qq.com/s/tjnpIYJGmrTLGUsdtBI2Vw
+https://mp.weixin.qq.com/s/ENYX87SMlgv30x08iYFQIw
 
-AI设计师“鹿班”核心技术公开：如何1秒设计8000张海报？
-
-https://mp.weixin.qq.com/s/lEaq8NylJG4bUY2YupZh0g
-
-5秒钟内将手绘网站线框图转换为可用的HTML网站
-
-https://mp.weixin.qq.com/s/FuHDkcCDib5oc_XPDNnytQ
-
-阿里AI设计师一秒出图，小撒连连惊呼，真相是...
-
-https://mp.weixin.qq.com/s/empXVsgqe6OljVa1Hduigw
-
-前端开发者的福音：根据UI设计图自动生成GUI骨架代码
+几乎零能耗零延迟！UCLA科学家发明光衍射神经网络，登上Science

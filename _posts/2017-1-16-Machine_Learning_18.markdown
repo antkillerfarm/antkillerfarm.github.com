@@ -247,6 +247,10 @@ https://zhuanlan.zhihu.com/p/50698719
 
 两篇关于时间序列的论文
 
+https://mp.weixin.qq.com/s/iKM6zMSm1F2icjy79F9Hcg
+
+季节性的分析才不简单，小心不要在随机数据中也分析出季节性
+
 # 贝叶斯线性回归
 
 https://mp.weixin.qq.com/s/szTmHY-Yvn7N3s_GzTDiEA
