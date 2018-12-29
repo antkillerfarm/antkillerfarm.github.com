@@ -4,7 +4,31 @@ title:  深度学习（十五）——Style Transfer, 人脸检测/识别（1）
 category: DL 
 ---
 
-# Style Transfer（续）
+# Style Transfer
+
+## Deep Visualization（续）
+
+https://github.com/yosinski/deep-visualization-toolbox
+
+这是作者Jason Yosinski提供的Deep Visualization的工具的代码。
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/deep-visualization-toolbox
+
+原始版本是基于python 2编写的，这是我修改的python 3版本
+
+https://github.com/Sunghyo/revacnn
+
+这是另一个CNN可视化工具
+
+参考：
+
+https://zhuanlan.zhihu.com/p/24833574
+
+Deep Visualization:可视化并理解CNN
+
+http://www.cnblogs.com/jesse123/p/7101649.html
+
+Tool-Deep Visualization
 
 ## DL方法
 

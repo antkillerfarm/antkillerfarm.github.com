@@ -184,6 +184,10 @@ https://mp.weixin.qq.com/s/OnRB44tliuTFcjlmuRG3Xw
 
 图神经网络“理论在哪里“？
 
+https://mp.weixin.qq.com/s/bsNDI9YxFdaB2Q5aRz9ECw
+
+图卷积神经网络的变种与挑战
+
 # Regularization
 
 DL中的Regularization除了常见的$$l_1$$-norm、$$l_2$$-norm和squared $$l_2$$-norm之外，还有Group Regularization。它的定义如下：

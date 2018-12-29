@@ -210,6 +210,18 @@ http://yaml.org/
 
 这个网站很有特色，它本身就是一个YAML文件。
 
+YAML的python语言解析库主要有PyYAML和ruamel.yaml。前者貌似已经不再维护，所以目前主要使用后者。
+
+ruamel.yaml官网：
+
+https://yaml.readthedocs.io/en/latest/
+
+参考：
+
+https://zhuanlan.zhihu.com/p/33477002
+
+读写yaml文件
+
 ## Protocol Buffers
 
 Protocol Buffers是Google公司开发的一种数据描述语言。它的官网为：
@@ -404,19 +416,3 @@ Windows版深度学习软件安装指南
 https://mp.weixin.qq.com/s/FwqKYNpIuB6cUAVjSey7mw
 
 Yoshua Bengio首次中国演讲：深度学习通往人类水平AI的挑战
-
-https://mp.weixin.qq.com/s/pINZlL7NEGSWbfb03b0dJA
-
-Edward2.2，一种可以用TPU大规模训练的概率编程
-
-https://mp.weixin.qq.com/s/Y_qX16JaenbPtLiEiRhHpw
-
-隐私和机器学习：两个意想不到的盟友？一文了解差分隐私
-
-https://mp.weixin.qq.com/s/X-AmDqzIYD5l1AMuojhd4g
-
-类人化标注：多样性和独特性图像标注
-
-https://mp.weixin.qq.com/s/qos7VRFP7uYZ6Qt83KiPhw
-
-用机器学习构建O(N)复杂度的排序算法，可在GPU和TPU上加速计算

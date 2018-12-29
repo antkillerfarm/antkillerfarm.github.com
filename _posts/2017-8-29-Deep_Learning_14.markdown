@@ -297,21 +297,3 @@ Deep Visualization除了用于提取纹理之外，还可用于模型压缩。
 论文：
 
 《Demystifying Neural Network Filter Pruning》
-
-https://github.com/yosinski/deep-visualization-toolbox
-
-这是作者Jason Yosinski提供的Deep Visualization的工具的代码。
-
-https://github.com/Sunghyo/revacnn
-
-这是另一个CNN可视化工具
-
-参考：
-
-https://zhuanlan.zhihu.com/p/24833574
-
-Deep Visualization:可视化并理解CNN
-
-http://www.cnblogs.com/jesse123/p/7101649.html
-
-Tool-Deep Visualization

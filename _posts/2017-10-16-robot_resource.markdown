@@ -417,7 +417,3 @@ LiDAR技术介绍
 https://mp.weixin.qq.com/s/ArreA2g24n-jqU7vfIE_rA
 
 自动驾驶核心技术之——路径规划
-
-https://www.zhihu.com/question/305705783
-
-工厂里的自动化搬运是如何实现准确定位精准送达的？

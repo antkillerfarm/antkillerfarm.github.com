@@ -60,6 +60,10 @@ https://mp.weixin.qq.com/s/NukVEGgbqVx0S-LlBNrb-Q
 
 以前你可能一直用错“K均值聚类”？
 
+https://mp.weixin.qq.com/s/ewXRcTrolJxxN549vMQcfg
+
+一文搞懂K近邻算法(KNN)，附带多个实现案例
+
 # Optimizer进阶
 
 ## AdaSecant

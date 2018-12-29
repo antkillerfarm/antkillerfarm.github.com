@@ -182,6 +182,10 @@ https://mp.weixin.qq.com/s/9yfTO2jHz69-k1MsUGIM0Q
 
 双目立体放大！谷歌刚刚开源的这篇论文可能会成为手机双摄的新玩法
 
+https://mp.weixin.qq.com/s/z87Wp3yutq1l5bYfJS2YIA
+
+谷歌新研究用深度学习合成运动模糊效果，手抖也能拍出摄影师级照片
+
 # RNN进阶
 
 ## IndRNN

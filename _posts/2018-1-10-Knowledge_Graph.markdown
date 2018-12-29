@@ -415,11 +415,3 @@ https://mp.weixin.qq.com/s/ZM0qZrqyk0QPBXYbkHAA8A
 https://mp.weixin.qq.com/s/NxTTIWVPJi6yXuXr1qAmKw
 
 复旦数据院副院长阳德青：知识图谱在个性化推荐系统中的应用
-
-https://mp.weixin.qq.com/s/d4cEHHo6OhlWEIXTFIdTuA
-
-知识图谱相关实体搜索
-
-https://mp.weixin.qq.com/s/7LFkOzkD1-PsNNAr5DAETg
-
-TechKG：一个面向中文学术领域的大型知识图谱

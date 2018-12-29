@@ -186,6 +186,10 @@ https://zhuanlan.zhihu.com/p/51397423
 
 SPCNet
 
+https://mp.weixin.qq.com/s/9f158VM_FoNVuODNER-BUw
+
+端到端的弯曲文本检测与识别
+
 # 元学习
 
 人工智能的历史显示了明确的进展方向：

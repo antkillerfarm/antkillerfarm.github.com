@@ -270,6 +270,10 @@ https://mp.weixin.qq.com/s/pfD-gib_7kwZAYR02eVuLg
 
 视频理解S3D，I3D-GCN，SlowFastNet，LFB
 
+https://mp.weixin.qq.com/s/qgtlGltVRumQjSZayZiMDQ
+
+干掉高速摄像头！神经网络生成极慢视频，突破人类肉眼极限
+
 # VAE进阶
 
 https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw
