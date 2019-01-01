@@ -4,17 +4,9 @@ title:  机器学习（三十二）——t-SNE, Adaboost
 category: ML 
 ---
 
-# t-SNE（续）
+# t-SNE
 
-## SNE
-
-在介绍t-SNE之前，我们首先介绍一下SNE（Stochastic Neighbor Embedding）的原理。
-
-假设我们有数据集X，它共有N个数据点。每一个数据点$$x_i$$的维度为D，我们希望降低为d维。在一般用于可视化的条件下，d的取值为 2，即在平面上表示出所有数据。
-
-SNE将数据点间的欧几里德距离转化为条件概率来表征相似性：
-
-$$p_{j\mid i}=\frac{\exp(-\|x_i-x_j\|^2/2\sigma^2)}{\sum_{k\neq i}\exp(-\|x_i-x_k\|^2/2\sigma^2)}$$
+## SNE（续）
 
 如果以数据点在$$x_i$$为中心的高斯分布所占的概率密度为标准选择近邻，那么$$p_{j\mid i}$$就代表$$x_i$$将选择$$x_j$$作为它的近邻。对于相近的数据点，条件概率$$p_{j\mid i}$$是相对较高的，然而对于分离的数据点，$$p_{j\mid i}$$几乎是无穷小量（若高斯分布的方差$$\sigma_i$$选择合理）。
 
@@ -141,6 +133,10 @@ https://mp.weixin.qq.com/s/cnzQ7XepftDOZXslCf1MUA
 https://mp.weixin.qq.com/s/lbpe2NO1m8S38wpnp47BEg
 
 通过可视化隐藏表示，更好地理解神经网络
+
+https://mp.weixin.qq.com/s/F08aOjKsVdRInN6GPNJ7cA
+
+t-SNE：最好的降维方法之一
 
 # Adaboost
 

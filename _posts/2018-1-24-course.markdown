@@ -390,7 +390,11 @@ https://mp.weixin.qq.com/s/_wLhjznuzHb2ENYmK6_I1g
 
 这一份217页斯坦福大学统计学习理论笔记，Percy Liang带你搞清楚难懂的理论基础
 
-# Machine Learning之Python篇+
+https://seeing-theory.brown.edu/
+
+一本好玩的可视化统计概率入门书
+
+# Machine Learning之Python篇
 
 https://mp.weixin.qq.com/s/8NI-NayCg_gZmJ6-1FZ_DA
 
@@ -411,23 +415,3 @@ Python绘制histogram直方图
 https://mp.weixin.qq.com/s/ss9UlDU9lYokS-EDrPnOxQ
 
 如何在Python中使用LightFM构建可扩展的电子商务推荐系统？
-
-https://mp.weixin.qq.com/s/wIaDAewwOBMPRDr28DqGoQ
-
-Feature Tools：可自动构造机器学习特征的Python库
-
-https://mp.weixin.qq.com/s/zfAVXJJmvHgi3JkM_ryDVA
-
-Python高效数据分析的8个技巧
-
-https://mp.weixin.qq.com/s/EL1lST59dVibr6vIbqkdzw
-
-如何用200行Python代码换张脸
-
-https://mp.weixin.qq.com/s/440osIoULBRDOHq7Bk8awA
-
-一文带你了解Python集合与基本的集合运算
-
-https://mp.weixin.qq.com/s/tJwgNXKVwoJby-WkeMeBqQ
-
-40行Python代码实现“旅行者困境“演化过程

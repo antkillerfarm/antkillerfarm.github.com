@@ -461,15 +461,3 @@ App基于手机壳颜色换肤？先尝试一下用KMeans来提取图像中的�
 https://mp.weixin.qq.com/s/40SXxtks9yGbYHEikQPjrg
 
 用OpenCV实现八种不同的目标跟踪算法
-
-https://www.jianshu.com/p/53982e81d781
-
-OpenCV十字激光中心与端点识别
-
-https://mp.weixin.qq.com/s/N4mRrQ4180qM2tuq5smK8w
-
-如何识别出轮廓准确的长和宽
-
-https://mp.weixin.qq.com/s/uDg0ho3jHsomfSUDTXTe7Q
-
-OpenCV4.0 Mask RCNN 实例分割示例 C++/Python实现

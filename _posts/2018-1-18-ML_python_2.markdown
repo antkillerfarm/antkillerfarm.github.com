@@ -6,6 +6,32 @@ category: AI
 
 # Machine Learning之Python篇
 
+## PIL
+
+PIL：Python Imaging Library，已经是Python平台事实上的图像处理标准库了。PIL功能非常强大，但API却非常简单易用。
+
+官网：
+
+http://pythonware.com/products/pil/
+
+安装：
+
+`sudo apt install python-imaging`
+
+或
+
+`pip install pillow`
+
+文档：
+
+http://www.effbot.org/imagingbook/pil-index.htm
+
+参考：
+
+https://mp.weixin.qq.com/s/lJYzxehwo3K2APB2l_WeTA
+
+用Python做图像处理（1）
+
 ## Seaborn
 
 Seaborn是另一个非常棒的Matplotlib的威力加强版，专注于统计绘图，并可无缝对接Pandas库。
@@ -413,31 +439,3 @@ Python实现文字转语音功能
 https://mp.weixin.qq.com/s/D_e8lxO3cx-dshEQ_zhfzQ
 
 如何利用散点图矩阵进行数据可视化
-
-https://mp.weixin.qq.com/s/wlUH5aavqHDXOvBTnxvAdg
-
-详解中文维基百科数据处理流程及脚本代码
-
-https://mp.weixin.qq.com/s/Y0fcVw6KUfoM8UWvk8VoPg
-
-Scikit-learn玩得很熟了？这些功能你都知道吗？
-
-https://mp.weixin.qq.com/s/c7Sry6FaGv3ZgkKLekxc2g
-
-用Python画中国地图
-
-https://mp.weixin.qq.com/s/iN-hXd6iGkFC8bxAjwxHNw
-
-一文简述多种无监督聚类算法的Python实现
-
-https://mp.weixin.qq.com/s/rDg0mPA715zHmwpDMC_83Q
-
-用Python写一个抖音漂亮小姐姐发掘器。使用腾讯人脸API
-
-https://mp.weixin.qq.com/s/4PyXz2p00Lf783bEUg_N2Q
-
-距离产生美？k近邻算法python实现
-
-https://mp.weixin.qq.com/s/E0INxsn_p-MBNA-wg-2nbQs
-
-无监督学习—聚类、层次聚类、t-SNE，DBSCAN

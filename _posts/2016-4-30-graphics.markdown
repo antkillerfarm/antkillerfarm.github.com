@@ -20,7 +20,17 @@ category: graphics
 
 >Roger Boyle，利兹大学教授。
 
+《Computer Vision: Principles, Algorithms, Applications, Learning》
+
+>Roy Davies，英国伦敦大学皇家霍洛威学院机器视觉荣誉教授。
+
 近年来，由于深度学习的崛起，传统CV算法基本都已经过时了。这个blog系列主要对传统算法进行有针对性的讲述，也包括一些传统CV和DL CV共有的概念的讲解。
+
+参考：
+
+https://mp.weixin.qq.com/s/rOgI5Vmj5i43RI1iHdSVXg
+
+866页《计算机视觉：原理，算法，应用，学习》最新第五版-附下载
 
 # 历史
 

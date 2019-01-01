@@ -218,6 +218,22 @@ https://mp.weixin.qq.com/s/2TKkoWZcYVVvlEKvA6iNyA
 
 # ML参考资源+
 
+https://mp.weixin.qq.com/s/l4W7qmKJ4Pc-rlF-KvhrPA
+
+机器学习在信用评分卡中的应用
+
+https://mp.weixin.qq.com/s/O3SIexXUeWM1svdI_ygrDg
+
+非精确图匹配方法综述
+
+https://mp.weixin.qq.com/s/vOZust2RceSVoYPH6nauJw
+
+机器学习模型该如何选择和评估？希望这个小册子能帮到你！
+
+https://mp.weixin.qq.com/s/eW3fGJAQQMS12EmmeqZsYQ
+
+如何打开黑盒子模型？41页最新机器学习可解释模型综述论文
+
 https://mp.weixin.qq.com/s/Z1ixoRmUDl17CF4k7JS4zg
 
 浅谈物流网络中的选址规划问题

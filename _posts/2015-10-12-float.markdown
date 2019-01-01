@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  浮点运算和代码优化, 并行计算, Optimizer软件, CPU
+title:  浮点运算和代码优化, 并行计算, Optimizer软件, 微服务
 category: AI 
 ---
 
@@ -212,124 +212,100 @@ https://mp.weixin.qq.com/s/wJAt-RqmsoyECLGgdlH6RA
 
 基于数据的分布式鲁棒优化算法及其应用
 
-# CPU
+# 微服务
 
-https://zhuanlan.zhihu.com/p/29743431
+![](/images/img2/FaaS.png)
 
-CPU制造的那些事之一：i7和i5其实是孪生兄弟！？
+http://blog.csdn.net/wurenhai/article/details/37659335
 
-https://zhuanlan.zhihu.com/p/29767262
+微服务(Microservices)
 
-CPU制造的那些事之二：Die的大小和良品率
+https://mp.weixin.qq.com/s/yPl746zhMFdMVtJaPUoAxg
 
-https://zhuanlan.zhihu.com/p/31848803
+微服务并非Spring Cloud独角戏，Service Mesh未来大有可为
 
-为什么CPU越来越多地采用硅脂而不是焊锡散热？
+https://mp.weixin.qq.com/s/tLG7ZP2IyYweCR0ctpwk_Q
 
-https://zhuanlan.zhihu.com/p/27624654
+日调度5万亿次 腾讯云微服务架构体系TSF深度解读
 
-CPU风扇停转后会发生什么？CPU凭什么烧不坏
+https://mp.weixin.qq.com/s/bsuveX-E6E2fKZ24mj03nQ
 
-https://zhuanlan.zhihu.com/p/30409360
+微服务架构技术栈选型手册
 
-为什么CPU的频率止步于4G?我们触到频率天花板了吗？
+https://mp.weixin.qq.com/s/HK9_GfLe1Q215YouTsezvQ
 
-https://zhuanlan.zhihu.com/p/33145828
+一张图了解微服务架构核心知识点
 
-什么是Speculative Execution？为什么要有它？
+https://mp.weixin.qq.com/s/j0kiWTlrntzvthUJlxZBsA
 
-http://mp.weixin.qq.com/s/sshhUppVPP6qM7LH1V3nSQ
+数据转换：从单体式应用到微服务的低风险演变
 
-四位计算机的原理及其实现
+https://mp.weixin.qq.com/s/bUtu2nTs0bybnTvk-iLt6Q
 
-https://zhuanlan.zhihu.com/p/33579054
+GTS来了！阿里微服务架构下的分布式事务解决方案
 
-Reset重启后发生了什么？它和关机后再开机有什么区别？
+# Machine Learning之Python篇+
 
-https://zhuanlan.zhihu.com/p/34003929
+https://mp.weixin.qq.com/s/wlUH5aavqHDXOvBTnxvAdg
 
-调试程序时，设置断点的原理是什么？
+详解中文维基百科数据处理流程及脚本代码
 
->Visual Studio有个有趣的特性是debug编译后，会把0xcc（INT 3）填入代码的空隙，这样一旦程序越界就会被VS捕捉而容易发现错误。而0xCCCC在中国的GBK编码是“烫”。有中国程序员翻看内存到代码段会发现很多"烫烫烫"，不明所以，以为发生了什么神奇的事情。
+https://mp.weixin.qq.com/s/Y0fcVw6KUfoM8UWvk8VoPg
 
-https://zhuanlan.zhihu.com/p/34091597
+Scikit-learn玩得很熟了？这些功能你都知道吗？
 
-ARM攒机指南-网络篇
+https://mp.weixin.qq.com/s/c7Sry6FaGv3ZgkKLekxc2g
 
-https://zhuanlan.zhihu.com/p/34223088
+用Python画中国地图
 
-如何进入BIOS？
+https://mp.weixin.qq.com/s/iN-hXd6iGkFC8bxAjwxHNw
 
-https://zhuanlan.zhihu.com/p/34858149
+一文简述多种无监督聚类算法的Python实现
 
-128G的固态硬盘为什么有的标120G，有的标100G？固态硬盘容量背后的秘密
+https://mp.weixin.qq.com/s/rDg0mPA715zHmwpDMC_83Q
 
-https://zhuanlan.zhihu.com/p/30565679
+用Python写一个抖音漂亮小姐姐发掘器。使用腾讯人脸API
 
-人工智能技术热潮中，是否存在破解苹果A11处理器的可能？
+https://mp.weixin.qq.com/s/4PyXz2p00Lf783bEUg_N2Q
 
-https://mp.weixin.qq.com/s/UWpp2r0_yDxNyJk-cldVyA
+距离产生美？k近邻算法python实现
 
-处理器高危漏洞无人幸免？树莓派：我们不受影响
+https://mp.weixin.qq.com/s/E0INxsn_p-MBNA-wg-2nbQs
 
->最近的Meltdown和Spectre漏洞被炒的沸沸扬扬，然而能用python语言讲述复杂的CPU计算原理，这是该文的一大创见。
+无监督学习—聚类、层次聚类、t-SNE，DBSCAN
 
-https://mp.weixin.qq.com/s/v_BsfSFp-LwiCOFKaMIS_g
+https://mp.weixin.qq.com/s/EL1lST59dVibr6vIbqkdzw
 
-后摩尔时代，如何给你的CPU减负？
+如何用200行Python代码换张脸
 
-https://mp.weixin.qq.com/s/-2kGkJzjay2WJzIpMs2Adw
+https://mp.weixin.qq.com/s/440osIoULBRDOHq7Bk8awA
 
-IEEE盘点27款震撼世界的芯片
+一文带你了解Python集合与基本的集合运算
 
-https://mp.weixin.qq.com/s/KhY-PPdvZ26Uy8xEgi70DA
+https://mp.weixin.qq.com/s/tJwgNXKVwoJby-WkeMeBqQ
 
-纪念晶体管诞生71周年——改变世界30款芯片大阅兵！
+40行Python代码实现“旅行者困境“演化过程
 
-https://mp.weixin.qq.com/s/gpfMOW7gzVa2HhYOlDy2nQ
+https://mp.weixin.qq.com/s/xYNCKy36n8CoaGzABlI5Wg
 
-从Intel和ARM争霸战，看看做芯片有多难
+从零开始用python搭建推荐引擎
 
-https://zhuanlan.zhihu.com/p/38847308
+https://mp.weixin.qq.com/s/vAn_rnUt036-3jy7ZahF8w
 
-为什么硬盘转速是5400或者7200这么奇怪的数字？7200转的硬盘一定比5400快吗？
+文本挖掘，带你看金庸笔下不一样的恩怨情仇
 
-https://zhuanlan.zhihu.com/p/40601422
+https://mp.weixin.qq.com/s/84Rk5CP2uLaCBIifL465VQ
 
-双通道、四通道内存对游戏重要吗？
+从统计到概率，入门者都能用Python试验的机器学习基础
 
-https://www.zhihu.com/question/288500826/answer/470917953
+https://mp.weixin.qq.com/s/O9QDUNXftZeEohxiW6LtZw
 
-Windows等操作系统是如何做到复制几G文件不出错的？
+朴素贝叶斯详解及中文舆情分析
 
-https://mp.weixin.qq.com/s/7QKbyJ-Xa2dgHIkwBWJ4eA
+https://mp.weixin.qq.com/s/wIaDAewwOBMPRDr28DqGoQ
 
-关于芯片，这篇说得最详细！
+Feature Tools：可自动构造机器学习特征的Python库
 
-https://zhuanlan.zhihu.com/p/43768401
+https://mp.weixin.qq.com/s/zfAVXJJmvHgi3JkM_ryDVA
 
-如何像搭积木一样构建CPU？Intel和AMD都是怎么做的？
-
-https://mp.weixin.qq.com/s/cSu-P-aDSXH0CYLN2HNrxw
-
-深入理解Cache（上）
-
-https://mp.weixin.qq.com/s/rml_wqePIx8vOk2ZO9_GMA
-
-深入理解Cache（下）
-
-http://m.uczzd.cn/webview/news?aid=15020380163392206798
-
-你所不知道的经典科技发展史: 以前CPU是如何设计出来的
-
-https://mp.weixin.qq.com/s/Lnolh9y0rf86wOGa-F1xmw
-
-计算机的诞生史
-
-https://zhuanlan.zhihu.com/p/48593932
-
-CPU底部的小块是干什么用的？为什么CPU这么多电源引脚？
-
-https://zhuanlan.zhihu.com/p/51145563
-
-TDP是CPU的功耗吗？TDP是固定不变的吗？
+Python高效数据分析的8个技巧

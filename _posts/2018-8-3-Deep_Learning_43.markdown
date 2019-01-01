@@ -276,6 +276,10 @@ https://mp.weixin.qq.com/s/-3e5xhbz01FerZp8DcRV5g
 
 谷歌小姐姐搞出魔法画板：你随便画，补不齐算AI输
 
+https://mp.weixin.qq.com/s/M9r8m--Sd9kHxZrOEHbY7A
+
+视频直接变漫画！GAN又有了新玩法
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

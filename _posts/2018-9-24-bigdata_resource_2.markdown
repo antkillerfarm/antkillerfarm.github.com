@@ -106,6 +106,22 @@ https://mp.weixin.qq.com/s/8N2EBRar495vxDHsUtpskw
 
 ## CV（续）
 
+https://mp.weixin.qq.com/s/Kxnvv1i0nvkg0vUDBlx6MA
+
+向机器学习偏见开战：谷歌展示全球涂鸦数据集分析结果
+
+https://mp.weixin.qq.com/s/vTnc55KAiGaFfktHPZctbw
+
+捡漏！用谷歌图片搜索自制深度学习数据集
+
+https://mp.weixin.qq.com/s/-NQa2VeuskDx5XN9WMCmPQ
+
+腾讯开源业内最大多标签图像数据集，附ResNet-101模型
+
+https://mp.weixin.qq.com/s/8nPfU72WocrDxToG6v5tIA
+
+计算摄影学数据集汇总（一）
+
 https://mp.weixin.qq.com/s/0b0g-IwJVsiKKTY_TLRmZA
 
 1460万个目标检测边界框：谷歌开源Open Images V4数据集

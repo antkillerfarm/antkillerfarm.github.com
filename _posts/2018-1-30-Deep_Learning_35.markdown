@@ -106,7 +106,7 @@ https://mp.weixin.qq.com/s/afX8Y84nTS20q4Y36uOWqQ
 
 ## 参考
 
-https://mp.weixin.qq.com/s/4oA-x2sofqR3GBEHlmeQrg
+https://github.com/cbsudux/awesome-human-pose-estimation
 
 人体姿态估计资源大列表
 

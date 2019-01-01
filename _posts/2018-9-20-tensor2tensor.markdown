@@ -208,6 +208,22 @@ https://mp.weixin.qq.com/s/jjT0x99ht8xtfWmzL-0R1A
 
 # OpenCV
 
+https://www.jianshu.com/p/53982e81d781
+
+OpenCV十字激光中心与端点识别
+
+https://mp.weixin.qq.com/s/N4mRrQ4180qM2tuq5smK8w
+
+如何识别出轮廓准确的长和宽
+
+https://mp.weixin.qq.com/s/uDg0ho3jHsomfSUDTXTe7Q
+
+OpenCV4.0 Mask RCNN 实例分割示例 C++/Python实现
+
+https://mp.weixin.qq.com/s/tzfC3DpkPvEEEtbiGVoCSA
+
+OpenCV多目标跟踪与视频分析
+
 https://mp.weixin.qq.com/s/Ds3tYNFHcITgOAAgdANgJA
 
 OpenCV深度学习人脸识别示例——看大佬如何秀恩爱

@@ -389,19 +389,3 @@ https://mp.weixin.qq.com/s/Oi1yJty_guzTUbRGZ5MuEw
 https://mp.weixin.qq.com/s/vLvjo8Cso_bYEuW-AFoyiA
 
 南大周志华等人提出无组织恶意攻击检测算法UMA
-
-https://mp.weixin.qq.com/s/l4W7qmKJ4Pc-rlF-KvhrPA
-
-机器学习在信用评分卡中的应用
-
-https://mp.weixin.qq.com/s/O3SIexXUeWM1svdI_ygrDg
-
-非精确图匹配方法综述
-
-https://mp.weixin.qq.com/s/vOZust2RceSVoYPH6nauJw
-
-机器学习模型该如何选择和评估？希望这个小册子能帮到你！
-
-https://mp.weixin.qq.com/s/eW3fGJAQQMS12EmmeqZsYQ
-
-如何打开黑盒子模型？41页最新机器学习可解释模型综述论文

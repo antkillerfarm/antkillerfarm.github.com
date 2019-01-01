@@ -250,14 +250,6 @@ https://mp.weixin.qq.com/s/Me3hrYmyiongCD2ZZT9Ltg
 
 流量运营数据产品最佳实践——美团旅行流量罗盘
 
-https://mp.weixin.qq.com/s/tLG7ZP2IyYweCR0ctpwk_Q
-
-日调度5万亿次 腾讯云微服务架构体系TSF深度解读
-
-https://mp.weixin.qq.com/s/bsuveX-E6E2fKZ24mj03nQ
-
-微服务架构技术栈选型手册
-
 https://mp.weixin.qq.com/s/lccktISXLLfKzT_ZuNTdpg
 
 阿里数据中心大幅降低成本的核心技术：混部技术
@@ -265,10 +257,6 @@ https://mp.weixin.qq.com/s/lccktISXLLfKzT_ZuNTdpg
 https://mp.weixin.qq.com/s/Zo1iBzAY1dBAa2pRTf-BbA
 
 如何使用Keras、Redis、Flask和Apache把深度学习模型部署到生产环境
-
-https://mp.weixin.qq.com/s/HK9_GfLe1Q215YouTsezvQ
-
-一张图了解微服务架构核心知识点
 
 https://mp.weixin.qq.com/s/uxsmwT-nvTga7tWiMLrrvw
 
@@ -298,17 +286,9 @@ http://www.cnblogs.com/zhangweizhong/category/879056.html
 
 如何打造一个小而精的电商网站架构
 
-https://mp.weixin.qq.com/s/bUtu2nTs0bybnTvk-iLt6Q
-
-GTS来了！阿里微服务架构下的分布式事务解决方案
-
 https://mp.weixin.qq.com/s/ow-6rQYGlvX316h63aCGVg
 
 百度正式开源其Raft一致性算法实现braft
-
-https://mp.weixin.qq.com/s/j0kiWTlrntzvthUJlxZBsA
-
-数据转换：从单体式应用到微服务的低风险演变
 
 https://mp.weixin.qq.com/s/zlPZr1hsyUN3lUo9WzIDbg
 

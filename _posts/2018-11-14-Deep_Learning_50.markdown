@@ -146,6 +146,10 @@ https://mp.weixin.qq.com/s/FJA8Tctq_p4Mj-KgNn_OGg
 
 为什么让GAN一家独大？Facebook提出非对抗式生成方法GLANN
 
+https://mp.weixin.qq.com/s/xr9fDv9DFkwi2ImV4RZAHg
+
+换个角度看GAN：另一种损失函数
+
 # 图像超分辨率进阶
 
 https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg

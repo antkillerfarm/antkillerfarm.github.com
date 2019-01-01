@@ -276,14 +276,6 @@ http://www.cnblogs.com/xybaby/p/7867735.html
 
 关于负载均衡的一切：总结与思考
 
-http://blog.csdn.net/wurenhai/article/details/37659335
-
-微服务(Microservices)
-
-https://mp.weixin.qq.com/s/yPl746zhMFdMVtJaPUoAxg
-
-微服务并非Spring Cloud独角戏，Service Mesh未来大有可为
-
 https://mp.weixin.qq.com/s/bUrTDj1atJSZvFeWA8H-SA
 
 正向代理和反向代理

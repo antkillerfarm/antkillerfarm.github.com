@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十一）——数据不平衡问题, Linear Discriminant Analysis
+title:  机器学习（三十一）——Linear Discriminant Analysis
 category: ML 
 ---
 
@@ -16,59 +16,9 @@ category: ML
 
 上表中$$x\xleftarrow{\alpha}y\equiv x\leftarrow x+\alpha(y-x)$$。
 
-# 数据不平衡问题
-
-https://mp.weixin.qq.com/s/e0jXXCIhbaZz7xaCZl-YmA
-
-如何处理不均衡数据？
-
-https://mp.weixin.qq.com/s/2j_6hdq-MhybO_B0S7DRCA
-
-如何解决机器学习中数据不平衡问题
-
-https://mp.weixin.qq.com/s/gEq7opXLukWD5MVhw_buGA
-
-七招教你处理非平衡数据
-
-http://blog.csdn.net/u013709270/article/details/72967462
-
-机器学习中的数据不平衡解决方案大全
-
-https://mlr-org.github.io/mlr-tutorial/devel/html/over_and_undersampling/index.html
-
-Imbalanced Classification Problems
-
-https://mp.weixin.qq.com/s/QEHAV_rW25E0b0N7POr6tw
-
-关于处理样本不平衡问题的Trick整理
-
-https://mp.weixin.qq.com/s/5csfnBWZ2MQsnWZnNj9b8w
-
-机器学习中样本比例不平衡的处理方法
-
-https://mp.weixin.qq.com/s/ZL6UWrBB7qr8jp2QRA1MAQ
-
-方法总结：教你处理机器学习中不平衡类问题
-
-https://mp.weixin.qq.com/s/V5d3kbpXBf4883TQ_sq37A
-
-遇到有这六大缺陷的数据集该怎么办？这有一份数据处理急救包
-
-https://mp.weixin.qq.com/s/zLgD8DjnW1DfeqL_xITisQ
-
-教你如何用python解决非平衡数据建模
-
-https://mp.weixin.qq.com/s/ElOFb0Ln4qyG1x38NRFyag
-
-如何处理数据不均衡问题
-
-https://mp.weixin.qq.com/s/DxkHjArbr5XRdEGVNjJAKA
-
-在深度学习中处理不均衡数据集
-
 # Linear Discriminant Analysis
 
-在《机器学习（十七）》中，我们已经讨论了一个LDA，这里我们来看看另一个LDA。
+在《机器学习（二十六）》中，我们已经讨论了一个LDA，这里我们来看看另一个LDA。
 
 Linear Discriminant Analysis是Ronald Fisher于1936年提出的方法，因此又叫做Fisher's linear discriminant。正如之前在《知名数据集》中提到的，Iris flower Data Set也是出自该论文。
 
@@ -252,3 +202,13 @@ t-SNE(t-distributed stochastic neighbor embedding)是用于降维的一种机器
 9.拉普拉斯特征图（非线性）
 
 PCA的相关内容参见《机器学习（十六）》。
+
+## SNE
+
+在介绍t-SNE之前，我们首先介绍一下SNE（Stochastic Neighbor Embedding）的原理。
+
+假设我们有数据集X，它共有N个数据点。每一个数据点$$x_i$$的维度为D，我们希望降低为d维。在一般用于可视化的条件下，d的取值为 2，即在平面上表示出所有数据。
+
+SNE将数据点间的欧几里德距离转化为条件概率来表征相似性：
+
+$$p_{j\mid i}=\frac{\exp(-\|x_i-x_j\|^2/2\sigma^2)}{\sum_{k\neq i}\exp(-\|x_i-x_k\|^2/2\sigma^2)}$$

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十六）——OCR, 元学习, 深度哈希, BERT
+title:  深度学习（四十六）——OCR, 元学习, BERT
 category: DL 
 ---
 
@@ -312,43 +312,9 @@ https://mp.weixin.qq.com/s/wl8j7dLu3OxPV7MNaO2-7Q
 
 《基于梯度的元学习》199页伯克利博士论文带你回顾元学习最新发展脉络
 
-# 深度哈希
+https://mp.weixin.qq.com/s/ftiGPBhAx5iqlW_Ltg1yhg
 
-https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg
-
-深度离散哈希算法，可用于图像检索！
-
-https://mp.weixin.qq.com/s/XUYJub0559wwQ9H1wA_SAg
-
-机器学习时代的哈希算法，将如何更高效地索引数据
-
-https://mp.weixin.qq.com/s/YVIvdMznb3oatIXqD5a5_A
-
-陈天奇等人提出AutoTVM：让AI来编译优化AI系统底层算子
-
-https://mp.weixin.qq.com/s/vFBlFAQLvDZP7IvwKoaPhA
-
-无问西东，只问哈希
-
-https://mp.weixin.qq.com/s/XAxuLg2i3q5_uKDo1wU_rA
-
-从哈希到卷积神经网络：高精度&低功耗
-
-https://mp.weixin.qq.com/s/i8iQtCC7ahXLY1a1wOacsA
-
-Science：最新发现哈希可能是大脑的通用计算原理
-
-https://mp.weixin.qq.com/s/ZOVWXNym5yHoo-MmpxXo0A
-
-自监督对抗哈希SSAH：当前最佳的跨模态检索框架
-
-https://mp.weixin.qq.com/s/VldzlYg5AfDRho8bsROL_g
-
-HashGAN:基于注意力机制的深度对抗哈希模型提升跨模态检索效果
-
-https://mp.weixin.qq.com/s/3Z2Zc8zTq2uiPyw7ZuuZfw
-
-解密美图大规模多媒体数据检索技术DeepHash
+《元监督视觉学习》132页伯克利博士论文带你回顾元监督视觉应用最新发展脉络
 
 # BERT
 
@@ -389,6 +355,10 @@ https://mp.weixin.qq.com/s/SZMYj4rMneR3OWST007H-Q
 https://mp.weixin.qq.com/s/I315hYPrxV0YYryqsUysXw
 
 NLP的游戏规则从此改写？从word2vec, ELMo到BERT
+
+https://mp.weixin.qq.com/s/VL09dIQE6kAUzj5-CRFoXA
+
+ELMo的朋友圈：预训练语言模型真的一枝独秀吗？
 
 https://mp.weixin.qq.com/s/8uZ2SJtzZhzQhoPY7XO9uw
 

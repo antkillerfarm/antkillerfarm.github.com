@@ -320,19 +320,3 @@ https://mp.weixin.qq.com/s/dwxTla5iiYKvELrpbWf1yQ
 https://mp.weixin.qq.com/s/TYiqZvY25qxHcmEXRpqO5Q
 
 如何用Python做自动化特征工程
-
-https://mp.weixin.qq.com/s/84Rk5CP2uLaCBIifL465VQ
-
-从统计到概率，入门者都能用Python试验的机器学习基础
-
-https://mp.weixin.qq.com/s/O9QDUNXftZeEohxiW6LtZw
-
-朴素贝叶斯详解及中文舆情分析
-
-https://mp.weixin.qq.com/s/xYNCKy36n8CoaGzABlI5Wg
-
-从零开始用python搭建推荐引擎
-
-https://mp.weixin.qq.com/s/vAn_rnUt036-3jy7ZahF8w
-
-文本挖掘，带你看金庸笔下不一样的恩怨情仇

@@ -254,6 +254,10 @@ https://mp.weixin.qq.com/s/3VgFKiUOFvtWmqg1BO9xGw
 
 matplotlib--python的数据可视化
 
+https://mp.weixin.qq.com/s/LuXyUBkaJUfg4WteFxStrg
+
+Matplotlib可视化最有价值的50个图表
+
 ## Pandas
 
 Pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。
@@ -459,32 +463,6 @@ https://github.com/google/tangent
 https://mp.weixin.qq.com/s/CExdIdtUxZi4c2B39xdYJA
 
 谷歌开源Tangent
-
-## PIL
-
-PIL：Python Imaging Library，已经是Python平台事实上的图像处理标准库了。PIL功能非常强大，但API却非常简单易用。
-
-官网：
-
-http://pythonware.com/products/pil/
-
-安装：
-
-`sudo apt install python-imaging`
-
-或
-
-`pip install pillow`
-
-文档：
-
-http://www.effbot.org/imagingbook/pil-index.htm
-
-参考：
-
-https://mp.weixin.qq.com/s/lJYzxehwo3K2APB2l_WeTA
-
-用Python做图像处理（1）
 
 ## VisPy
 

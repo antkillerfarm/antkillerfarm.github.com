@@ -52,6 +52,10 @@ https://zhuanlan.zhihu.com/p/46833956
 
 # Graph NN
 
+https://github.com/thunlp/GNNPapers
+
+相关论文列表
+
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
 
 Bengio等人提出图注意网络架构GAT，可处理复杂结构图
@@ -187,6 +191,10 @@ https://mp.weixin.qq.com/s/OnRB44tliuTFcjlmuRG3Xw
 https://mp.weixin.qq.com/s/bsNDI9YxFdaB2Q5aRz9ECw
 
 图卷积神经网络的变种与挑战
+
+https://mp.weixin.qq.com/s/Uy2ekBiwkI2sIo637b-16g
+
+北大、微软提出NGra：高效大规模图神经网络计算
 
 # Regularization
 
