@@ -102,10 +102,6 @@ https://mp.weixin.qq.com/s/Ez9zn6HN4tX_QFpGDWs_rA
 
 30行JavaScript代码，教你分分钟创建神经网络
 
-https://zhuanlan.zhihu.com/p/26078299
-
-使用深度学习来破解captcha验证码
-
 https://mp.weixin.qq.com/s/dY5r_KJVkpipluo7ji9H6w
 
 如何用“摄像头秒解数独”

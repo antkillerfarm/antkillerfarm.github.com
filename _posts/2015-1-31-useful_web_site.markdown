@@ -424,6 +424,10 @@ https://mp.weixin.qq.com/s/EPWRwOBT8_616R5RWbdaTQ
 
 一家公司到底有多少种管理系统？——从包罗万象到术业专攻
 
+https://fwupd.org/
+
+Linux Vendor Firmware Service。这个网站提供Linux平台的各种BIOS或者外设的固件更新。
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

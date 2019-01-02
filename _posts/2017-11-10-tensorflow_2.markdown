@@ -167,6 +167,15 @@ decoder = { tf.equal(image_ext, '.png'):  decode_png,
 image_tensor = tf.case(decoder, default = decode_png, exclusive = True)
 {% endhighlight %}
 
+## 内存布局
+
+Tensorflow和Caffe的内存布局存在较大差异，这是两者模型转换时，最常遇到的问题。一般认为，Caffe的内存布局对硬件加速更友好一些（局部数据在内存中摆放在一起）。
+
+|  | Tensorflow | Caffe |
+|:--:|:--:|:--:|
+| Tensor | NHWC | NCHW |
+| Weight | HWIO | OIHW |
+
 ## TFLite
 
 Tensorflow源代码中自带的toco工具，可用于生成一个可供TensorFlow Lite框架使用的tflite文件。
@@ -390,25 +399,3 @@ tensorflow的程序中,在main函数下,都是使用tf.app.run()来启动。查�
 https://blog.csdn.net/lujiandong1/article/details/53262612
 
 tensorflow中的tf.app.run()
-
-----
-
-TF提供了一套专门的IO函数：tf.gfile。主要优点在于：对于写文件来说，open操作直到真的需要写的时候才执行。
-
-----
-
-迁移学习的时候，有的时候需要保持某几层的权值，在后续训练中不被改变。这时，可以在创建Variable时，令trainable=false。
-
-----
-
-sparse_softmax_cross_entropy_with_logits和softmax_cross_entropy_with_logits的区别在于：后者的label是一个one hot的tensor，而前者label直接用对应分类的index表示就行了。
-
-## blog
-
-http://www.jianshu.com/u/eaec1fc422e9
-
-一个TF的blog
-
-http://blog.csdn.net/u012436149
-
-一个TensorFlow+PyTorch的blog

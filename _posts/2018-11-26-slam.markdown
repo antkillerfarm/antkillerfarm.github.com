@@ -306,92 +306,6 @@ https://mp.weixin.qq.com/s/WIx-yzbvgwSaKrRMIbgY2w
 
 无边无际的虚拟城市来了！能走能飞的Demo，一火再火的“波函数坍缩”开源算法
 
-# TensorFlow+
-
-https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
-
-简易浣熊识别器是如何实现的
-
-http://www.jianshu.com/p/d443aab9bcb1
-
-在TensorFlow上使用LSTM进行情感分析
-
-https://mp.weixin.qq.com/s/gW_KX6eF9XEsSUO1UzJ3WQ
-
-基于LSTM的情感分析
-
-https://mp.weixin.qq.com/s/KZhL477ApHgQfmM2xFrYJw
-
-Tensorlang：基于TensorFlow的可微编程语言
-
-https://mp.weixin.qq.com/s/_9NJ6QLQArUAD1DKb0KRfA
-
-如何使用TensorFlow mobile部署模型到移动设备
-
-https://mp.weixin.qq.com/s/e_TzQxFLAonLMyYAhte6Cg
-
-face-api.js：在浏览器中进行人脸识别的JavaScript接口
-
-https://mp.weixin.qq.com/s/23FoaaA3Z_3kf03BmepFPg
-
-如何将模型部署到安卓移动端，这里有一份简单教程
-
-https://mp.weixin.qq.com/s/MT1YaMm4KBWsIZeHehahgw
-
-TensorFlow重大升级：自动将Python代码转为TF Graph，大幅简化动态图处理！
-
-https://mp.weixin.qq.com/s/zeZs48XbYJGhvOoIysZ8QA
-
-Docker Compose+GPU+TensorFlow所产生的奇妙火花
-
-https://mp.weixin.qq.com/s/sOggiB57D-ekWOsbL6TY_A
-
-TensorFlow中那些鲜为人知却又极其实用的知识
-
-https://mp.weixin.qq.com/s/XHKrkNf2bWLF7r7gzdU24w
-
-Quick, Draw!涂鸦分类递归神经网络
-
-https://mp.weixin.qq.com/s/QQednlKYl6t3aO0xCzgGmA
-
-带你轻松使用TensorFlow创建大型线性模型
-
-https://mp.weixin.qq.com/s/BfwTOtLnwnMsS3-PQQBHSg
-
-使用TensorFlow训练WDL模型性能问题定位与调优
-
-https://mp.weixin.qq.com/s/kw3BYTXdyhnIyVZrnQuPew
-
-基于深度学习和迁移学习的识花实践
-
-https://mp.weixin.qq.com/s/F965Zu_PgA-1ZUGIQ0nIEQ
-
-TensorFlow协同过滤推荐实战
-
-http://gitbook.cn/books/593d71ba4686067a2200aec6/index.html
-
-用TensorFlow实现智能机器人的原理及如何实现一个对话机器人
-
-https://mp.weixin.qq.com/s/lLaSXG1VF9Rys2GNzFP7pw
-
-轻松使用多种预训练卷积网络抽取图像特征
-
-https://mp.weixin.qq.com/s/tVqp1Tht1P-0EQazJizQaA
-
-利用人口普查收入数据集预测收入
-
-https://mp.weixin.qq.com/s/3WleFm9S_wMIPTz_WfjKQw
-
-TensorFlow支持Unicode，中文NLP终于省心了
-
-https://mp.weixin.qq.com/s/jFEOokxfJ1Kw-P3wvw3EAg
-
-带你了解，不规则张量！
-
-https://mp.weixin.qq.com/s/tMtx4PZbpo5IrnhzLz8Lzw
-
-AutoGraph：图的简易控制流程
-
 # 知名AI公司技术主页
 
 http://uber.ai/
@@ -401,4 +315,3 @@ Uber AI Labs
 https://deepmind.com/research/
 
 Deepmind
-

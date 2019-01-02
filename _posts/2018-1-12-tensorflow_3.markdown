@@ -4,6 +4,30 @@ title:  TensorFlow（三）
 category: AI 
 ---
 
+# TensorFlow
+
+## 细节（续）
+
+TF提供了一套专门的IO函数：tf.gfile。主要优点在于：对于写文件来说，open操作直到真的需要写的时候才执行。
+
+----
+
+迁移学习的时候，有的时候需要保持某几层的权值，在后续训练中不被改变。这时，可以在创建Variable时，令trainable=false。
+
+----
+
+sparse_softmax_cross_entropy_with_logits和softmax_cross_entropy_with_logits的区别在于：后者的label是一个one hot的tensor，而前者label直接用对应分类的index表示就行了。
+
+## blog
+
+http://www.jianshu.com/u/eaec1fc422e9
+
+一个TF的blog
+
+http://blog.csdn.net/u012436149
+
+一个TensorFlow+PyTorch的blog
+
 # 我的TensorFlow实践
 
 ## MNIST+Softmax
@@ -389,35 +413,3 @@ https://mp.weixin.qq.com/s/nnjyR4XGVZQ1zXCIPzTNlg
 https://mp.weixin.qq.com/s/iMgesGmdb7Jq4muCxb-nFA
 
 Tensorflow实战：Discuz验证码识别
-
-https://mp.weixin.qq.com/s/6cFvh0OgouY_Lg7awxv_3g
-
-快速开启你的第一个项目：TensorFlow项目架构模板
-
-https://mp.weixin.qq.com/s/HshYcb98QyW0rR_svFpfUg
-
-如何在TensorFlow中高效使用数据集
-
-https://mp.weixin.qq.com/s/rSt6omyXe57WkBVXwp2AJg
-
-数据载入过慢？这里有一份TensorFlow加速指南
-
-http://blog.csdn.net/songrotek/article/details/50951537
-
-用Tensorflow基于Deep Q Learning DQN 玩Flappy Bird
-
-https://mp.weixin.qq.com/s/ffW21oBKTDOc4sB8POhcnw
-
-聊一聊TensorFlow的数据导入机制
-
-https://mp.weixin.qq.com/s/nwymOr03cqm0ifpoBjL9Eg
-
-TensorFlow变量保存和恢复
-
-https://mp.weixin.qq.com/s/mjUnrPBPBuY6XKXkUymX-w
-
-实例介绍TensorFlow的输入流水线
-
-http://www.holmesconan.me/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2018/04/03/cifar10-vgg.html
-
-CIFAR-10 Estimator之Vgg模型

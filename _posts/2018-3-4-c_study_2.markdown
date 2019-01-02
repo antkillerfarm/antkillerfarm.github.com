@@ -219,6 +219,14 @@ https://mp.weixin.qq.com/s/m4rNUFV4VGUBI7aWv5fgbw
 
 中文项目：快速识别验证码，CNN也能为爬虫保驾护航
 
+https://zhuanlan.zhihu.com/p/26078299
+
+使用深度学习来破解captcha验证码
+
+https://mp.weixin.qq.com/s/NsaMcgufLYO3i6eG1WO_VA
+
+我不是机器人：谷歌最新版验证码系统ReCaptcha破解已开源
+
 其他类似项目还包括：
 
 | 语言 | 名称 | 网址 |

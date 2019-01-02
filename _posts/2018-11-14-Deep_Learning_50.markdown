@@ -150,6 +150,10 @@ https://mp.weixin.qq.com/s/xr9fDv9DFkwi2ImV4RZAHg
 
 换个角度看GAN：另一种损失函数
 
+https://mp.weixin.qq.com/s/U1rrPfJDLgXHRj__XwrMZw
+
+只有条件GAN才能稳定训练？对抗+自监督的无监督方法了解一下
+
 # 图像超分辨率进阶
 
 https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg

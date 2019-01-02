@@ -108,6 +108,14 @@ https://mp.weixin.qq.com/s/Y9DfxQJ-w23QXxKV0z26ag
 
 MIT科学家Dimitri P. Bertsekas最新2019出版《强化学习与最优控制》
 
+https://mp.weixin.qq.com/s/2cEd_FGmj-WVfm4KrQfMMg
+
+《深度学习与机器人学》大牛Pieter Abbeel 105页PPT下载
+
+https://mp.weixin.qq.com/s/u49cuDV21ITs1aV9tJR85g
+
+Pieter Abbeel：《深度学习在机器人中的应用》
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》
