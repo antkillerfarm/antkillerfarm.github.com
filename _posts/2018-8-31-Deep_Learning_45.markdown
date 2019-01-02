@@ -118,6 +118,10 @@ https://mp.weixin.qq.com/s/tVKEJ9rqlMaZ9bx6ngIelw
 
 自注意力机制在计算机视觉中的应用
 
+https://mp.weixin.qq.com/s/6q2q9OVhOYjk4ZrhLvAdkA
+
+Non-local Neural Networks及自注意力机制思考
+
 # AutoDL
 
 DL领域目前存在的主要问题之一是：如何设计网络结构和调整超参数。目前的做法，通常依赖于作者的直觉，属于典型的拍脑袋想点子。

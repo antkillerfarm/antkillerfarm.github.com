@@ -240,3 +240,7 @@ https://github.com/freefuiiismyname/capsule-mrc
 https://mp.weixin.qq.com/s/cskdgsysD7R_FKChAKmlDg
 
 利用Capsule重构过程，Hinton等人实现对抗样本的自动检测
+
+https://mp.weixin.qq.com/s/7fBXMvT4eyZrKhPKQTAIZQ
+
+你听说过胶囊网络吗？
