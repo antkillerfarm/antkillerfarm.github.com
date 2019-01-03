@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/eq4MllJta5NmaLARPpvang
 
 公交车总迟到？你大概掉进了“等待时间悖论
 
+http://www.moe.gov.cn/s78/A16/A16_ztzl/ztzl_kxnt/kxnt_sgxz/201512/t20151218_225337.html
+
+10000个科学难题数学卷
+
 ## LSM (Log Structured Merge)
 
 十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。

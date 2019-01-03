@@ -320,7 +320,7 @@ https://github.com/ZhuanZhiCode/TensorFlow-Eager-Execution-Examples
 
 Eager Execution的代码示例
 
-https://mp.weixin.qq.com/s/By_GKPtY6xr8MwkWA6frzA
+https://github.com/madalinabuzau/tensorflow-eager-tutorials
 
 TensorFlow的动态图工具Eager怎么用？这是一篇极简教程
 
@@ -328,7 +328,7 @@ https://mp.weixin.qq.com/s/Lvd4NfLg0Lzivb4BingV7w
 
 Tensorflow Eager Execution入门指南
 
-https://mp.weixin.qq.com/s/q6bJfCV5kU8BzvWjOXkCDg
+https://github.com/snowkylin/TensorFlow-cn
 
 简单粗暴TensorFlow Eager教程
 

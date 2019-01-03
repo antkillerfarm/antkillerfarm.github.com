@@ -296,6 +296,10 @@ https://mp.weixin.qq.com/s/EeAvDpPpfxDO4WFIrvCMpA
 
 深入浅出对抗性机器学习（AML）
 
+https://zhuanlan.zhihu.com/p/53908224
+
+如何辨别哪些是人工智能生成的虚假图像？
+
 ## 行业
 
 李开复的这篇文章不可不读：
