@@ -345,6 +345,36 @@ Python pickle模块学习
 
 dill是pickle的威力加强版。
 
+除了提供pickle的功能之外，还可浏览对象的源代码。
+
+示例：
+
+`dill.source.getsource(func)`
+
+## eval
+
+eval函数用来执行一个字符串表达式，并返回表达式的值。
+
+示例：
+
+`eval('pow(2,2)')`
+
+粗看起来，eval函数在上面的例子中有些多此一举。然而如果字符串来自外部的话，就完全不同了。我们完全可以在任何地方嵌入python脚本。然后，只需要在用到的时候，找到并加载该字符串即可。
+
+## NetworkX
+
+NetworkX是一个用Python语言开发的图论与复杂网络建模工具，内置了常用的图与复杂网络分析算法，可以方便的进行复杂网络数据分析、仿真建模等工作。
+
+官网：
+
+https://networkx.github.io/
+
+参考：
+
+https://www.cnblogs.com/kaituorensheng/p/5423131.html
+
+python复杂网络分析库NetworkX
+
 ## Sqlite
 
 Ubuntu下的安装方法是：
@@ -366,37 +396,3 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/pysqlite
 https://mp.weixin.qq.com/s/HcmOmwWQFBIOZs8p3nr7CQ
 
 让Python更加充分的使用Sqlite3
-
-## python调用GTK函数的一般规则
-
-众所周知，GTK库是用C语言编写的，其相关的文档提供的也是C函数的接口，python接口的文档相对较少，获得也不太容易。因此有必要掌握一下这方面基本的命名规则。（这里只讲方法，对深层次的调用原理不做探究。）
-
-1）类初始化函数
-
-C:`GtkWidget * gtk_button_new (void);`
-
-python:`button = Gtk.Button()`
-
-这里除了把C函数式的写法，替换成python的类的写法之外，并无其他差异。
-
-2）普通类成员函数
-
-C:`void gtk_container_add (GtkContainer *container, GtkWidget *widget);`
-
-python:`button.add(image)`
-
-可以看出，C函数的第一个表示self类指针的参数被省略掉了。
-
-3）回调函数
-
-这里以按钮的click事件回调为例：
-
-C:`void user_function (GtkButton *button, gpointer user_data)`
-
-python:
-
-`button.connect("clicked", self.playToggled)`
-
-`def playToggled(self, w):`
-
-这里的情况要复杂的多。首先在事件回调注册的时候，由于我们并没有给user_data赋值，因此照理说playToggled函数，只有button这一个参数。但实际传递给playToggled函数的有两个参数，self是一个用于占位的参数，w对应button，没有东西对应user_data。

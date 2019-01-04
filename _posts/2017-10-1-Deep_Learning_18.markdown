@@ -196,6 +196,10 @@ https://mp.weixin.qq.com/s/Uy2ekBiwkI2sIo637b-16g
 
 北大、微软提出NGra：高效大规模图神经网络计算
 
+https://mp.weixin.qq.com/s/kcXp-uWcmIsAVfa63mor4g
+
+图卷积网络介绍及进展
+
 # Regularization
 
 DL中的Regularization除了常见的$$l_1$$-norm、$$l_2$$-norm和squared $$l_2$$-norm之外，还有Group Regularization。它的定义如下：

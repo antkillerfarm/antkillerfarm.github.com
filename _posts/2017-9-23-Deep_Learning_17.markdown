@@ -284,6 +284,10 @@ https://mp.weixin.qq.com/s/LaIvAuBHYGNMug3NZ1pLhQ
 
 半监督深度学习小结：类协同训练和一致性正则化
 
+https://mp.weixin.qq.com/s/aBDgV7u93MAv2MogZKBmvw
+
+Google提出Grasp2Vec模型：利用自监督方法学习物体表示
+
 # 细粒度分类
 
 https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw

@@ -84,32 +84,6 @@ https://mp.weixin.qq.com/s/bE9BZQ6wCICvrgomdySDuw
 
 周志华组提出可做表征学习的多层梯度提升决策树
 
-## 深度时间序列
-
-https://mp.weixin.qq.com/s/cChJO6YrE_XAgeInS7J1Vw
-
-130页序列推荐系统教程重磅发布
-
-https://mp.weixin.qq.com/s/zv264-dqDQYRkYmjX_QZpQ
-
-郑宇解读地理传感器时间序列预测问题
-
-https://mp.weixin.qq.com/s/JwRXBNmXBaQM2GK6BDRqMw
-
-Kaggle网站流量预测任务第一名解决方案：从模型到代码详解时序预测
-
-https://mp.weixin.qq.com/s/caXnseARUwLIXdsZ7BXOUw
-
-用于金融时序预测的神经网络：可改善移动平均线经典策略
-
-http://mp.weixin.qq.com/s/9fJT0dMLvYQdfMVvSEiG4A
-
-深度学习的时间序列模型评价
-
-https://mp.weixin.qq.com/s/1Gdx-U3DRZtSJoFyCLnD0w
-
-深度学习之Sequence Learning
-
 ## 深度学习大讲堂
 
 https://zhuanlan.zhihu.com/p/36520673
@@ -374,3 +348,6 @@ https://mp.weixin.qq.com/s/GxWOuIf25JQnQoCstVyGLQ
 
 李飞飞团队提出OpenTag模型：减少人工标注，自动提取产品属性值
 
+https://mp.weixin.qq.com/s/qof4GEPQYb9rO3Do_oL7BQ
+
+如果给猫披上象皮，神经网络将作何判断？

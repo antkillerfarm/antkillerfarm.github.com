@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十四）——词向量进阶
+title:  深度学习（三十四）——词向量进阶, 深度时间序列
 category: DL 
 ---
 
@@ -201,3 +201,37 @@ https://mp.weixin.qq.com/s/iLaGGJXLwgI7qzcgkySlSQ
 https://mp.weixin.qq.com/s/sY9ILRTUCmupmJyJ3RX6-w
 
 57页清华大学孙茂松组《知识表示学习》综述论文
+
+https://mp.weixin.qq.com/s/KjDwumX8FViKC4FNWdml_w
+
+如何给词嵌入模型选择最优维度
+
+# 深度时间序列
+
+https://mp.weixin.qq.com/s/cChJO6YrE_XAgeInS7J1Vw
+
+130页序列推荐系统教程重磅发布
+
+https://mp.weixin.qq.com/s/zv264-dqDQYRkYmjX_QZpQ
+
+郑宇解读地理传感器时间序列预测问题
+
+https://mp.weixin.qq.com/s/JwRXBNmXBaQM2GK6BDRqMw
+
+Kaggle网站流量预测任务第一名解决方案：从模型到代码详解时序预测
+
+https://mp.weixin.qq.com/s/caXnseARUwLIXdsZ7BXOUw
+
+用于金融时序预测的神经网络：可改善移动平均线经典策略
+
+http://mp.weixin.qq.com/s/9fJT0dMLvYQdfMVvSEiG4A
+
+深度学习的时间序列模型评价
+
+https://mp.weixin.qq.com/s/1Gdx-U3DRZtSJoFyCLnD0w
+
+深度学习之Sequence Learning
+
+https://mp.weixin.qq.com/s/SWKWI7BADnX43e-sCBxRPg
+
+神经网络在算法交易上的应用系列——简单时序预测

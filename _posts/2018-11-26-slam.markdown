@@ -310,6 +310,22 @@ https://mp.weixin.qq.com/s/WIx-yzbvgwSaKrRMIbgY2w
 
 无边无际的虚拟城市来了！能走能飞的Demo，一火再火的“波函数坍缩”开源算法
 
+https://mp.weixin.qq.com/s/NbEki2ByMmA93DyoQF1yjA
+
+运满满如何将机器学习应用于车货匹配和公路干线价格预测？
+
+https://mp.weixin.qq.com/s/R7Qud_x6DGqbHAOl7OMruQ
+
+一文带你入门算法分发！
+
+https://mp.weixin.qq.com/s/doi26r9AVIMbpkZ01wsCZA
+
+北京大学何洋波博士《因果推断和因果图模型》机器学习报告
+
+https://mp.weixin.qq.com/s/L1ZY_qXPMXpStIgtUp7AKQ
+
+为机器学习插上因果推理的翅膀：这是一本系统的因果推理开源书
+
 # 知名AI公司技术主页
 
 http://uber.ai/

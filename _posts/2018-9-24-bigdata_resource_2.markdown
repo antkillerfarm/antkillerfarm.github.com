@@ -102,6 +102,10 @@ https://mp.weixin.qq.com/s/8N2EBRar495vxDHsUtpskw
 
 机器学习在美团配送系统的实践：用技术还原真实世界
 
+https://mp.weixin.qq.com/s/4h7JDItBFhWkEex6eeaJTg
+
+为什么你需要开源分布式流存储Pravega？
+
 # 知名数据集
 
 ## CV（续）
@@ -179,6 +183,10 @@ http://mmlab.ie.cuhk.edu.hk/archive/CNN_FacePoint.htm
 https://zhuanlan.zhihu.com/p/39737327
 
 想训练动作识别模型？这里有六个数据源供你参考
+
+https://mp.weixin.qq.com/s/3QD3KI4IwBQlnPPDpPBb2A
+
+更大的行人重识别测试集 Market-1501+500k
 
 ## 推荐系统
 

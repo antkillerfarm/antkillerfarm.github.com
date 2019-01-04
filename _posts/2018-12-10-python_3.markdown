@@ -6,6 +6,67 @@ category: language
 
 # Python
 
+## 并行计算
+
+python异步并发模块concurrent.futures，主要用来实现多线程和多进程的异步并发。
+
+代码示例：
+
+{% highlight python %}
+from concurrent import futures
+
+def test(num):
+    import time
+    return time.ctime(),num
+
+with futures.ThreadPoolExecutor(max_workers=1) as executor:
+    future = executor.submit(test,1)
+    print future.result()
+
+>>>
+('Tue Jan 17 15:23:10 2017', 1)
+{% endhighlight %}
+
+如果是多进程的话，可使用ProcessPoolExecutor。由于python是解释语言的关系，多线程设计基本就是残废状态，因此，通常情况下，**不要使用多线程，请使用多进程**
+
+参考：
+
+http://lovesoo.org/analysis-of-asynchronous-concurrent-python-module-concurrent-futures.html
+
+python异步并发模块concurrent.futures简析
+
+https://mp.weixin.qq.com/s/QIfxxY6z7y77RDE_8gDEIg
+
+并行运算Process Pools
+
+## Cython
+
+https://mp.weixin.qq.com/s/ODA74xgoS8X1HFxp4BfshQ
+
+如何将Python自然语言处理速度提升100倍：用spaCy/Cython加速NLP
+
+https://mp.weixin.qq.com/s/1Iyhsp5-2DyTfOb0JzqLZg
+
+比Python快100倍，利用spaCy和Cython实现高速NLP项目
+
+https://mp.weixin.qq.com/s/l-zmvQvmosw81G1wFCIDbQ
+
+用Cython造个轮子
+
+## PDF
+
+https://mp.weixin.qq.com/s/fBz__E2Xu4GC7w1Uqx5NAA
+
+手把手教你如何用Python从PDF文件中导出数据
+
+https://mp.weixin.qq.com/s/xCKC3cz7jUvrwl4uvMNKTA
+
+20行Python代码教你批量将PDF转为Word
+
+https://mp.weixin.qq.com/s/IznKbG3cEF6uxP0Fe_0oaQ
+
+印度小哥“神剑”：PDF提取表格so easy！
+
 ## 参考
 
 https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA

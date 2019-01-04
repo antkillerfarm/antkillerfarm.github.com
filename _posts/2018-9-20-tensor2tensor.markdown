@@ -288,9 +288,17 @@ https://mp.weixin.qq.com/s/GnZRurbPNdouTKu3JG7drQ
 
 深度学习美颜系列---AI美颜磨皮算法
 
+https://mp.weixin.qq.com/s/aqcKtBmvSPjLHg_8E8NkYw
+
+深度学习AI美颜系列--人像动态贴纸算法实现
+
 https://mp.weixin.qq.com/s/-Vde_zdmLaF-2F4IRJQuBw
 
 一文道尽传统图像降噪方法
+
+https://mp.weixin.qq.com/s/mkRjgQ8XY4L73ovVjF55EQ
+
+OpenCV矩形检测
 
 # Dlib
 
