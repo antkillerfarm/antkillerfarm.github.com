@@ -300,6 +300,14 @@ https://mp.weixin.qq.com/s/mkRjgQ8XY4L73ovVjF55EQ
 
 OpenCV矩形检测
 
+https://mp.weixin.qq.com/s/YZeCNjlVKTU6lOVrmYLDCQ
+
+tensorflow模型导出与OpenCV DNN中使用
+
+https://mp.weixin.qq.com/s/WKrABkU-bNOOfqUna7j4Ng
+
+树莓派扑克牌检测与识别-基于Python-OpenCV
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。

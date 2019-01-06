@@ -274,6 +274,10 @@ https://mp.weixin.qq.com/s/qgtlGltVRumQjSZayZiMDQ
 
 干掉高速摄像头！神经网络生成极慢视频，突破人类肉眼极限
 
+https://mp.weixin.qq.com/s/ZaxG9YvknO6JT3zArN5G1w
+
+2D/3D联合卷积模块MiCT：全面提升行为识别的性能和效率
+
 # VAE进阶
 
 https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw

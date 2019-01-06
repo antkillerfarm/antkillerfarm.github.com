@@ -44,6 +44,10 @@ https://mp.weixin.qq.com/s/6h9MeBs89hTtWsYSZ4pZ5g
 
 蚂蚁金服核心技术：百亿特征实时推荐算法揭秘
 
+https://mp.weixin.qq.com/s/xV5cLbCPb7Nh6i4i7DxJIQ
+
+没人告诉你的大规模部署AI高效流程！
+
 ## 实战
 
 http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg

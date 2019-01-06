@@ -28,6 +28,16 @@ http://blog.csdn.net/u012436149
 
 一个TensorFlow+PyTorch的blog
 
+## Hama
+
+TensorFlow实际上是Google开发的第二代DL框架。在它之前，Google内部还有一个叫做DistBelief的框架。这个框架没有开源，但是有论文发表。因此，就有了一个叫做Apache Hama的项目，作为它的开源实现。
+
+官网：
+
+https://hama.apache.org/
+
+这个项目采用了一种叫做Bulk Synchronous Parallel的并行计算模型。
+
 # 我的TensorFlow实践
 
 ## MNIST+Softmax
@@ -401,15 +411,3 @@ https://mp.weixin.qq.com/s/W1KP213Ngj-BNEyx-_nVyw
 https://mp.weixin.qq.com/s/2COA8aRQBpxaihKnlLkXZQ
 
 快速上手图像识别：用TensorFlow API实现图像分类实例
-
-https://mp.weixin.qq.com/s/zY7rGh-kA-36VEo9DiaKbg
-
-TensorFlow进行简单的图像处理
-
-https://mp.weixin.qq.com/s/nnjyR4XGVZQ1zXCIPzTNlg
-
-基于TensorFlow的变分自编码器实现
-
-https://mp.weixin.qq.com/s/iMgesGmdb7Jq4muCxb-nFA
-
-Tensorflow实战：Discuz验证码识别

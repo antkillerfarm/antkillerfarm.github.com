@@ -30,6 +30,10 @@ https://zhuanlan.zhihu.com/p/50620348
 
 基于内容感知生成模型的图像修复，论文翻译、解读
 
+https://mp.weixin.qq.com/s/1vswG1chkXRJAPnpeUmWLA
+
+为了修复打码女神脸，他们提出二阶段生成对抗网络EdgeConnect
+
 ## 参考
 
 https://mp.weixin.qq.com/s/YbRo7TJ3j4dloSmKX40uAA

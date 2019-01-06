@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（十二）——数学杂谈
+title:  数学狂想曲（十二）——数学杂谈, 通信协议
 category: math 
 ---
 
@@ -88,39 +88,65 @@ http://blog.csdn.net/outer_form/article/details/50588307
 
 莫比乌斯反演定理证明
 
+# 通信协议
+
+https://mp.weixin.qq.com/s/_bWOYpZNjA4p7ZWM1J_4mw
+
+通信协议之序列化
+
+https://mp.weixin.qq.com/s/C68icGtwh3IzuUbANaRXEg
+
+也许，这样理解HTTPS更容易
+
+https://mp.weixin.qq.com/s/ewI7sHDFj1AHaNAtBDM8uA
+
+HTTPS到底加密了什么？
+
+https://mp.weixin.qq.com/s/CP_Egs4LUx7I8BXSqrS_dQ
+
+互联网协议入门（一）
+
+https://mp.weixin.qq.com/s/zU1Mw3yaNmk4D5pP9vxxaw
+
+TCP三次握手和SYN攻击
+
+https://mp.weixin.qq.com/s/3VqdjEK4QkER4Q05JgfjhQ
+
+详解TCP之滑动窗口
+
+https://mp.weixin.qq.com/s/yH3PzGEFopbpA-jw4MythQ
+
+TCP三次握手原理，你真的理解吗？
+
+https://mp.weixin.qq.com/s/DDk5YZv9Q7CaqdiKvQxZGQ
+
+从理论到实践，全方位认识DNS（理论篇）
+
+https://mp.weixin.qq.com/s/rZU35kVTXs5ebf7k6lnheQ
+
+从理论到实践，全方位认识DNS（实践篇）
+
+https://mp.weixin.qq.com/s/iN8NQd8SuWL4gCWhRbY6tg
+
+图解基于HTTPS的DNS
+
+https://mp.weixin.qq.com/s/oydBIAEqAswppme6ku70fQ
+
+https加密那点事
+
+https://mp.weixin.qq.com/s/Lee4DRNCQuGCTTAsSYR8ng
+
+高性能网络编程之accept建立连接
+
+https://mp.weixin.qq.com/s/PAuijOCx8TLCsyU_RGs11w
+
+从TCP协议的原理来谈谈rst复位攻击
+
+https://mp.weixin.qq.com/s/W_JjnDuinmLrahIpPY8h-g
+
+tcp服务端一直sleep，客户端发送数据问题总结
+
 # TensorFlow+
-
-https://mp.weixin.qq.com/s/6cFvh0OgouY_Lg7awxv_3g
-
-快速开启你的第一个项目：TensorFlow项目架构模板
-
-https://mp.weixin.qq.com/s/HshYcb98QyW0rR_svFpfUg
-
-如何在TensorFlow中高效使用数据集
-
-https://mp.weixin.qq.com/s/rSt6omyXe57WkBVXwp2AJg
-
-数据载入过慢？这里有一份TensorFlow加速指南
-
-http://blog.csdn.net/songrotek/article/details/50951537
-
-用Tensorflow基于Deep Q Learning DQN 玩Flappy Bird
-
-https://mp.weixin.qq.com/s/ffW21oBKTDOc4sB8POhcnw
-
-聊一聊TensorFlow的数据导入机制
-
-https://mp.weixin.qq.com/s/nwymOr03cqm0ifpoBjL9Eg
-
-TensorFlow变量保存和恢复
-
-https://mp.weixin.qq.com/s/mjUnrPBPBuY6XKXkUymX-w
-
-实例介绍TensorFlow的输入流水线
-
-http://www.holmesconan.me/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2018/04/03/cifar10-vgg.html
-
-CIFAR-10 Estimator之Vgg模型
 
 https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
 
@@ -205,3 +231,15 @@ https://mp.weixin.qq.com/s/jFEOokxfJ1Kw-P3wvw3EAg
 https://mp.weixin.qq.com/s/tMtx4PZbpo5IrnhzLz8Lzw
 
 AutoGraph：图的简易控制流程
+
+https://mp.weixin.qq.com/s/zY7rGh-kA-36VEo9DiaKbg
+
+TensorFlow进行简单的图像处理
+
+https://mp.weixin.qq.com/s/nnjyR4XGVZQ1zXCIPzTNlg
+
+基于TensorFlow的变分自编码器实现
+
+https://mp.weixin.qq.com/s/iMgesGmdb7Jq4muCxb-nFA
+
+Tensorflow实战：Discuz验证码识别

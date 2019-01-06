@@ -309,3 +309,23 @@ Feature Tools：可自动构造机器学习特征的Python库
 https://mp.weixin.qq.com/s/zfAVXJJmvHgi3JkM_ryDVA
 
 Python高效数据分析的8个技巧
+
+https://mp.weixin.qq.com/s/Ke3K3i8paNlweciJepiuwQ
+
+复旦中文文本分类过程
+
+https://mp.weixin.qq.com/s/q61G4WldzCCLO7Fzujb_LA
+
+图像去噪
+
+https://mp.weixin.qq.com/s/Ij9L-swxx6gmaEH4YQb0tQ
+
+如何用Python检测视频真伪？
+
+https://mp.weixin.qq.com/s/5YHyM7gILvCItScvYYoANQ
+
+Python实现文字转语音功能
+
+https://mp.weixin.qq.com/s/D_e8lxO3cx-dshEQ_zhfzQ
+
+如何利用散点图矩阵进行数据可视化

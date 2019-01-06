@@ -116,6 +116,14 @@ https://mp.weixin.qq.com/s/u49cuDV21ITs1aV9tJR85g
 
 Pieter Abbeel：《深度学习在机器人中的应用》
 
+https://github.com/enggen/DeepMind-Advanced-Deep-Learning-and-Reinforcement-Learning
+
+DeepMind与UCL合作推出的深度学习与强化学习进阶课程
+
+https://mp.weixin.qq.com/s/CnL1uIWef2AjIr_AwL7t-w
+
+DeepMind研究员Tor2019著作《赌博机算法》，555页带你学习专治选择困难症技术
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》
