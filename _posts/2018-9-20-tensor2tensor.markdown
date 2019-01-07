@@ -308,6 +308,10 @@ https://mp.weixin.qq.com/s/WKrABkU-bNOOfqUna7j4Ng
 
 树莓派扑克牌检测与识别-基于Python-OpenCV
 
+https://mp.weixin.qq.com/s/g-ZOPK1l-eFopfEoaIRaiQ
+
+OpenCV SIFT特征算法详解与使用
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。

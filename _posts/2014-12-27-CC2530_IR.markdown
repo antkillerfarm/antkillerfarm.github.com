@@ -244,6 +244,10 @@ https://mp.weixin.qq.com/s/J7C70ASC6GZJqmqut0Z6Ag
 
 双数组Trie树(DoubleArrayTrie)Java实现
 
+https://mp.weixin.qq.com/s/nMmrVPvjaPOLgxKNjMzetw
+
+动画+解析，轻松理解“Trie树”
+
 # Parquet
 
 Parquet是Twitter开源的一种供Hadoop使用的列式存储格式。

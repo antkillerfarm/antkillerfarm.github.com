@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  垃圾筐, Apollo
+title:  垃圾筐
 category: resource 
 ---
 
@@ -234,6 +234,14 @@ http://www.moe.gov.cn/s78/A16/A16_ztzl/ztzl_kxnt/kxnt_sgxz/201512/t20151218_2253
 
 10000个科学难题数学卷
 
+https://www.zhihu.com/question/303562583/answer/564059120
+
+水星为什么没有卫星？这个答案同样可以解释——为什么卫星没有卫星？
+
+![](/images/img2/earth_moon.jpg)
+
+上图是地球和月亮之间的引力场图，以及5个**拉格朗日点**。
+
 ## LSM (Log Structured Merge)
 
 十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。
@@ -352,100 +360,3 @@ Processing是一个在可视化领域用的比较多的sketchbook，类似于Log
 
 https://processing.org
 
-# Apollo
-
-Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。
-
-官网：
-
-http://apollo.auto/
-
-代码：
-
-https://github.com/ApolloAuto/apollo
-
-参考：
-
-https://github.com/TeamStuQ/skill-map/blob/master/data/map-Apollo.md
-
-Apollo自动驾驶工程师技能图谱
-
-http://mp.weixin.qq.com/s/baXCaD1EdHKCJbCIh2HDeA
-
-Apollo高精地图技术与应用
-
-https://mp.weixin.qq.com/s/qtoHF4Mnj_aeGBJbkjJUMA
-
-Apollo小度车载系统
-
-https://mp.weixin.qq.com/s/rWhnazEC35U7nsVpsxhFEg
-
-Apollo 2.0 软硬件框架初探（一）
-
-https://mp.weixin.qq.com/s/GccST3xJ1QRIVM7cFgsn3A
-
-Apollo 2.0 软硬件框架初探（二）
-
-https://mp.weixin.qq.com/s/UHQXF2Ju8erw9thm0Jjt2A
-
-Apollo 2.0框架及源码分析(三)
-
-https://mp.weixin.qq.com/s/3i8mJn4OPjt-KV1fp8bZQQ
-
-Apollo Planning模块源代码分析（上）
-
-https://mp.weixin.qq.com/s/DfdMDOQMncTau-9zGq9CYw
-
-Apollo Planning模块源代码分析（下）
-
-https://mp.weixin.qq.com/s/bH6khM8gO3JE4YT9i8hSlQ
-
-Apollo 2.0自动驾驶平台技术解析与应用
-
-https://mp.weixin.qq.com/s/EgsdlDhd8lIXU3bnTYJh0w
-
-Apollo高精地图解析
-
-https://mp.weixin.qq.com/s/027QogNXtW2NPIDVcGQGzw
-
-Apollo“云+端”研发迭代新模式实战
-
-https://mp.weixin.qq.com/s/Pjfhs-03HxFeyeKo1BmAPw
-
-Apollo小度车载系统打造更舒心的出行
-
-https://mp.weixin.qq.com/s/j4faPastB3nFmgH_nhVW6g
-
-Apollo仿真平台如何Hold住99.9999%的复杂场景？
-
-https://mp.weixin.qq.com/s/PFCCRBGWmaTQkeyOlG1qng
-
-Apollo 2.0多传感器融合定位模块
-
-https://mp.weixin.qq.com/s/KEdXmwUGHysy_LZAfdkmlw
-
-Apollo的分布式可扩展计算平台探索
-
-https://mp.weixin.qq.com/s/MfTsH9mowuWFA54z7vs5fA
-
-Apollo Control模块源码解析
-
-https://mp.weixin.qq.com/s/bIjnm74cJcHP8Zab4kt5zA
-
-Apollo 2.5实时相对地图的分享
-
-https://mp.weixin.qq.com/s/hU8__GPgxaCStSgv4FyLIw
-
-无人驾驶行业及Apollo的Overview
-
-https://mp.weixin.qq.com/s/48DcWP1kAoze0Lv8jHY3Ow
-
-Apollo 2.5预测系统介绍
-
-https://mp.weixin.qq.com/s/7ftd941pycD7h_R10cDecg
-
-Apollo 2.5自动驾驶规划控制
-
-https://mp.weixin.qq.com/s/y_mOKpgLEvDjoO-UdMBcyw
-
-Apollo AdaperManager和Routing模块源代码分析
