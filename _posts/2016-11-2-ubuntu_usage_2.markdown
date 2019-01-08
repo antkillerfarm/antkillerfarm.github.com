@@ -205,7 +205,7 @@ Linux下的远程桌面软件主要有RealVNC和rdesktop。前者支持VNC协议
 
 https://sourceforge.net/projects/xming/
 
-Xming安装运行之后，还需要对putty进行设置，Connection->SSH->X11->Enable X11 forwarding。
+Xming安装运行之后，还需要对putty进行设置，Connection->SSH->X11->Enable X11 forwarding，X display location: localhost:0。
 
 # 安装工具
 
@@ -217,8 +217,8 @@ Xming安装运行之后，还需要对putty进行设置，Connection->SSH->X11->
 
 sdkman(The Software Development Kit Manager), 中文名为:软件开发工具管理器．这个工具的主要用途是用来解决在类unix操作系统(如mac, linux等)中多种版本开发工具的切换, 安装和卸载的工作．对于windows系统的用户可以使用Powershell CLI来体验．
 
-例如: 项目A使用Jdk7中某些特性在后续版本中被移除（尽管这是不好的设计），项目B使用Jdk8,我们在切换开发这两个项目的时候，需要不断的切换系统中的JAVA_PATH,这样很不方便，如果存在很多个类似的版本依赖问题，就会给工作带来很多不必要的麻烦． 
-　　 
+例如: 项目A使用Jdk7中某些特性在后续版本中被移除（尽管这是不好的设计），项目B使用Jdk8,我们在切换开发这两个项目的时候，需要不断的切换系统中的JAVA_PATH,这样很不方便，如果存在很多个类似的版本依赖问题，就会给工作带来很多不必要的麻烦。
+
 sdkman这个工具就可以很好的解决这类问题，它的工作原理是自己维护多个版本，当用户需要指定版本时，sdkman会查询自己所管理的多版本软件中对应的版本号，并将它所在的路径设置到系统PATH.
 
 官网：
@@ -272,12 +272,6 @@ Ubuntu Make前身是Ubuntu Developer Tools Center。可在Ubuntu平台上快速�
 `sudo apt install ubuntu-make`
 
 `umake ide eclipse`
-
-## Conda
-
-Conda 是一个开源的软件包管理系统和环境管理系统，用于安装多个版本的软件包及其依赖关系，并在它们之间轻松切换。它是目前最流行的Python环境管理工具。
-
-https://conda.io/docs/
 
 # Putty
 
@@ -368,4 +362,3 @@ http://www.ubuntuthemes.org/
 LibreOffice：6.0
 
 Emacs：25.2
-

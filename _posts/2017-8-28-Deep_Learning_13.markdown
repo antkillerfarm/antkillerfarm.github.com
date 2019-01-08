@@ -195,6 +195,10 @@ https://mp.weixin.qq.com/s/jCPHXVI_utwnxaHqvW5nyA
 
 商汤联合提出基于FPGA的快速Winograd算法：实现FPGA之上最优的CNN表现与能耗
 
+https://www.leiphone.com/news/201804/SpmfJVa3al3uBDh2.html
+
+斯坦福ICLR 2018录用论文：高效稀疏Winograd卷积神经网络
+
 # 花式池化
 
 池化和卷积一样，都是信号采样的一种方式。

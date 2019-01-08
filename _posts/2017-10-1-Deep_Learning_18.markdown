@@ -200,6 +200,14 @@ https://mp.weixin.qq.com/s/kcXp-uWcmIsAVfa63mor4g
 
 图卷积网络介绍及进展
 
+https://mp.weixin.qq.com/s/eelcT5x_kWC0dDt0_Ph4qg
+
+清华朱文武组一文综述GraphDL五类模型
+
+https://mp.weixin.qq.com/s/0rs8Wur7Iv6jSpFz5C-KNg
+
+来自IEEE Fellow的GNN综述
+
 # Regularization
 
 DL中的Regularization除了常见的$$l_1$$-norm、$$l_2$$-norm和squared $$l_2$$-norm之外，还有Group Regularization。它的定义如下：

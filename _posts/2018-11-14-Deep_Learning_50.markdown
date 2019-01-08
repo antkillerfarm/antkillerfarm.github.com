@@ -154,6 +154,10 @@ https://mp.weixin.qq.com/s/U1rrPfJDLgXHRj__XwrMZw
 
 只有条件GAN才能稳定训练？对抗+自监督的无监督方法了解一下
 
+https://mp.weixin.qq.com/s/xHKQlFFkBQLBg2GdZuGPSw
+
+提升GAN训练的技巧汇总
+
 # 图像超分辨率进阶
 
 https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg

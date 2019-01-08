@@ -132,6 +132,14 @@ https://zhuanlan.zhihu.com/p/47073533
 
 结合时空的Re-ID系列：ECCV2018 TAUDL
 
+https://mp.weixin.qq.com/s/eKHL0F3tnjEHY10d5PqkMg
+
+最新Video-based ReID论文核心解读
+
+https://mp.weixin.qq.com/s/iotqiyRrH4kwWmBvYi-tMQ
+
+中科院&地平线开源state-of-the-art行人重识别算法EANet:增强跨域行人重识别中的部件对齐
+
 # 人脸识别进阶
 
 https://mp.weixin.qq.com/s/5vx1FGgSOhF71FwHeUwaAQ

@@ -50,6 +50,14 @@ https://github.com/HuberTRoy/leetCode
 
 Python实现各种基础算法
 
+## Conda
+
+Conda是一个开源的软件包管理系统和环境管理系统，用于安装多个版本的软件包及其依赖关系，并在它们之间轻松切换。它是目前最流行的Python环境管理工具。
+
+官网：
+
+https://conda.io/docs/
+
 ## Anaconda
 
 Anaconda是一个科学计算方面的python发行版，下面提到的所有工具都可以通过Anaconda一站式安装。

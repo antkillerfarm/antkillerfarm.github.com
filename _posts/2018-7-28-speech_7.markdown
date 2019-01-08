@@ -332,6 +332,10 @@ https://mp.weixin.qq.com/s/mc11Ozbf7-DpDagmy553OA
 
 基于多点预瞄最优控制的智能车辆路径跟踪
 
+https://mp.weixin.qq.com/s/pMnbVWDDVgIdFpzkfSUd5Q
+
+时延MPC自主车辆协同控制算法与仿真
+
 # 知识图谱参考资源
 
 https://mp.weixin.qq.com/s/d4cEHHo6OhlWEIXTFIdTuA

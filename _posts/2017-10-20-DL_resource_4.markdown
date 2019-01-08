@@ -178,6 +178,10 @@ https://mp.weixin.qq.com/s/QU3jM4evzMDFJlRmIXMi-Q
 
 如何用Python和循环神经网络预测严重交通拥堵？
 
+https://mp.weixin.qq.com/s/4VUVu4z-_Cg2tUz-QD_wOA
+
+线下场景的客流数字化探索与应用
+
 ## AI与安全
 
 https://mp.weixin.qq.com/s/jBE4gP3O0qVJ50G49Q_xmQ
