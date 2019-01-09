@@ -124,6 +124,10 @@ https://mp.weixin.qq.com/s/CnL1uIWef2AjIr_AwL7t-w
 
 DeepMind研究员Tor2019著作《赌博机算法》，555页带你学习专治选择困难症技术
 
+https://zhuanlan.zhihu.com/c_168521441
+
+在线学习(MAB)与强化学习(RL)
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》

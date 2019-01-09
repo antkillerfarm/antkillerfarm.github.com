@@ -239,3 +239,7 @@ https://mp.weixin.qq.com/s/SWKWI7BADnX43e-sCBxRPg
 https://mp.weixin.qq.com/s/PS1SqSWckuHuyZP6d5ZUFw
 
 “深度学习”信号处理和时序分析的最后选择？
+
+https://zhuanlan.zhihu.com/p/54471673
+
+基于前馈神经网络的时间序列异常检测算法
