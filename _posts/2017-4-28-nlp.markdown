@@ -213,6 +213,12 @@ THUCTC(THU Chinese Text Classification)是由清华大学自然语言处理实�
 
 http://thuctc.thunlp.org/
 
+### pkuseg
+
+pkuseg是由北京大学语言计算与机器学习研究组研制推出的一套全新的中文分词工具包。
+
+https://github.com/lancopku/PKUSeg-python
+
 ### gensim
 
 gensim是Python语言的计算文本相似度的程序包。
@@ -243,7 +249,7 @@ https://mp.weixin.qq.com/s/doaJJa04U_aiRgvfiUh9Eg
 
 15分钟入门NLP神器—Gensim
 
-## SpaCy
+### SpaCy
 
 SpaCy是新出来的一个NLP库，对DL的支持较好，可无缝衔接TensorFlow, PyTorch, scikit-learn, Gensim等库。
 
@@ -335,7 +341,7 @@ https://github.com/hankcs/HanLP/
 
 >注：不要以为中文有分词问题，就比别的语言复杂，英文还有词根问题呢。。。每种语言都不简单。
 
-## AllenNLP
+### AllenNLP
 
 AllenNLP是Allen AI实验室的作品，采用深度学习技术，基于PyTorch开发。
 
@@ -349,7 +355,7 @@ Allen AI实验室由微软联合创始人Paul G. Allen投资创立。
 
 http://allenai.org/
 
-## FlashText
+### FlashText
 
 在NLP任务中，清理文本数据通常需要替换句子中的关键词或从句子中提取关键词。通常，这样的操作可以用正则表达式来完成，但是如果要搜索的词汇量过大，操作就会变得麻烦。Python 中基于FlashText算法的FlashText模块，为这种情况提供了一个合适的替代方案。
 
@@ -361,7 +367,7 @@ https://flashtext.readthedocs.io/en/latest/
 
 《Replace or Retrieve Keywords In Documents at Scale》
 
-## fuzzywuzzy
+### fuzzywuzzy
 
 fuzzywuzzy可以很容易地实现诸如字符串比较比率、token比率等操作。对于匹配不同数据库中的记录也很方便。
 
@@ -369,84 +375,50 @@ fuzzywuzzy可以很容易地实现诸如字符串比较比率、token比率等�
 
 https://github.com/seatgeek/fuzzywuzzy
 
-### 其他
+## NLPchina
 
-https://github.com/mozillazg/python-pinyin
+NLPchina(中国自然语言处理开源组织)旗下有许多好用的工具。
 
-python版的汉字转拼音软件
+官网：
 
-https://github.com/ysc/word
+http://www.nlpcn.org/
 
-Java分布式中文分词组件-word分词
+Github：
 
-http://jena.apache.org/
+https://github.com/NLPchina
 
-jena是一个语义网络、知识图谱相关的软件。
+### Ansj
 
-http://www.statmt.org/moses/
+Ansj是一个NLPchina旗下的开源的Java中文分词工具，基于中科院的ictclas中文分词算法，比其他常用的开源分词工具（如mmseg4j）的分词准确率更高。
 
-moses是一个基于统计的机器翻译工具。
+https://github.com/NLPchina/ansj_seg
 
-http://drools.org/
+### Word2VEC_java
 
-一个规则引擎软件。
+word2vec java版本的一个实现。
 
-https://mp.weixin.qq.com/s/0buG6HEFSrD7MPfKqVCzzg
+https://github.com/NLPchina/Word2VEC_java
 
-构想：中文文本标注工具（附开源文本标注工具列表）。
+doc2vec java版本的一个实现，基于Word2VEC_java。
 
-https://mp.weixin.qq.com/s/kMQ7q4EyBQUH1DEEhQWdCQ
+https://github.com/yao8839836/doc2vec_java
 
-Familia：开源的中文主题模型应用工具包。
+### ansj_fast_lda
 
-https://allegrograph.com/
+LDA算法的Java包。
 
-一个现代、高性能、持久的图数据库。
+https://github.com/NLPchina/ansj_fast_lda
 
-http://blog.csdn.net/sinat_25551085/article/details/62896902
+### nlp-lang
 
-AllegroGraph
+这个项目是一个基本包.封装了大多数nlp项目中常用工具
 
-https://mp.weixin.qq.com/s/a2KyT929A0fn_bTFld62Cg
+https://github.com/NLPchina/nlp-lang
 
-英文智能问答之OpenEphyra
+## protege
 
-https://github.com/rockyzhengwu/FoolNLTK
+protege软件是斯坦福大学医学院生物信息研究中心基于Java语言开发的本体编辑和知识获取软件，或者说是本体开发工具，也是基于知识的编辑器。这个软件主要用于语义网中本体的构建，是语义网中本体构建的核心开发工具。
 
-FoolNLTK：一个便捷的中文处理工具包（字向量+双向LSTM+CRF）
+官网：
 
-https://mp.weixin.qq.com/s/jjlXGaGSJO3KeJv9adLi2Q
-
-Synonyms：一个开源的中文近义词工具包
-
-https://mp.weixin.qq.com/s/JBu5ozGYkgBJHUyQCne0YQ
-
-中文文本标注工具Chinese-Annotator
-
-https://mp.weixin.qq.com/s/XZ8um7JG5IWpsDPXEHVVuw
-
-十个经典Chatbot框架
-
-https://github.com/RasaHQ/rasa_core
-
-一个对话引擎
-
-https://mp.weixin.qq.com/s/TtvsPYinL8t8PJxaj2L-2g
-
-机器人意图识别和词槽抽取RasaNLU解析
-
-https://mp.weixin.qq.com/s/hVjgEKD6WDct8SEAHaUCTQ
-
-DeepPavlov：一个训练对话系统和聊天机器人的开源库
-
-http://www.simsimi.com/
-
-SimSimi是一款来自韩国的聊天机器人应用，以吉祥物“小鸡鸡”自居。
-
-https://github.com/BYVoid/OpenCC
-
-OpenCC：一个中文简繁转换的工具
-
-https://mp.weixin.qq.com/s/-3A4eNAPa6DP-bX4x4HfQA
-
-横向对比4大NLP Python工具包，总有一款适合你！
+https://protege.stanford.edu/products.php

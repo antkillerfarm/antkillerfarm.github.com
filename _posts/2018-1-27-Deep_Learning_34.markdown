@@ -235,3 +235,7 @@ https://mp.weixin.qq.com/s/1Gdx-U3DRZtSJoFyCLnD0w
 https://mp.weixin.qq.com/s/SWKWI7BADnX43e-sCBxRPg
 
 神经网络在算法交易上的应用系列——简单时序预测
+
+https://mp.weixin.qq.com/s/PS1SqSWckuHuyZP6d5ZUFw
+
+“深度学习”信号处理和时序分析的最后选择？

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（六）——目标检测进阶
+title:  深度目标检测（六）——目标检测进阶, Flink
 category: Deep Object Detection 
 ---
 
@@ -138,8 +138,73 @@ https://zhuanlan.zhihu.com/p/54334986
 
 TridentNet：处理目标检测中尺度变化新思路
 
+# Flink
+
+Flink是一个流计算引擎。
+
+官网：
+
+https://flink.apache.org
+
+参考：
+
+https://mp.weixin.qq.com/s/WNcs0P5baLclZFBmEH3CCA
+
+Spark比拼Flink：下一代大数据计算引擎之争，谁主沉浮？
+
+https://mp.weixin.qq.com/s/_DLKTRI_IytYkPlMZ3eDCQ
+
+流计算框架Flink与Storm的性能对比
+
+https://mp.weixin.qq.com/s/NvD-NSR-aE8HTADR2LSSjA
+
+基于Flink流处理的动态实时超大规模用户行为分析
+
+https://mp.weixin.qq.com/s/UFzFuHFqsXl6ynKyYoOnRA
+
+容错和高性能如何兼得: Flink创始人谈流计算核心架构演化和现状
+
+https://mp.weixin.qq.com/s/lc9fWkEVt1kG5Mw3Xeuv3g
+
+Apache Beam实战指南：手把手教你玩转KafkaIO与Flink
+
+https://mp.weixin.qq.com/s/qhiX62dALXd3owYYP9KsEQ
+
+支持流式处理ACID事务！Flink团队开源新作Streaming Ledger
+
+https://mp.weixin.qq.com/s/AoSDPDKbTbjH9rviioK-5Q
+
+阿里巴巴为什么选择Apache Flink？
+
+https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651749037&idx=1&sn=4a448647b3dae50779bc9ec0e9c10275
+
+美团点评基于Flink的实时数仓建设实践
+
+https://mp.weixin.qq.com/s/Jkd-FykUEKZZeVizRoTeJQ
+
+一文读懂Apache Flink技术
+
+https://mp.weixin.qq.com/s/rsJlZEP_oVG3NiFRyeS8gw
+
+Apache Flink干货合集打包好了，速来下载
+
+https://mp.weixin.qq.com/s/vVwBEzPyXAX1ObZ6IU8XeQ
+
+Flink如何取代JStorm，成为字节跳动流处理唯一标准？
+
+https://mp.weixin.qq.com/s/zeIcY_JknIo9-hR7UTxvrA
+
+从Storm到Flink：大数据处理的开源系统及编程模型
+
 # 世说新语+
 
 # 2019.1（续）
 
 古典猪瘟于1810年最早爆发于美国，是新大陆出现的猪类病毒性疾病。其在1820年代传入欧洲，相继在法国、德国爆发，一路传到了欧亚大陆的东端。虽然此后一百年，人类开发出了针对这种猪瘟的血清，但古典猪瘟仍然没有被完全消灭，至今仍时有患病猪出现。
+
+----
+
+https://www.chongqing.cn.emb-japan.go.jp/itpr_zh/00_000376.html
+
+重庆轻轨诞生物语
+

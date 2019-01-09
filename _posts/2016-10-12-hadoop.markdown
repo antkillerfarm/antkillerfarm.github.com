@@ -171,6 +171,10 @@ https://mp.weixin.qq.com/s/Koz2xOnmVgKFeCr2Xqe9VQ
 
 YARN，母系社会的运行架构
 
+https://mp.weixin.qq.com/s/goXmXMc8JyAgU_GKyWXDzw
+
+白话Hadoop架构原理
+
 # Hbase
 
 官网：

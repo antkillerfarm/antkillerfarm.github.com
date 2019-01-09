@@ -98,32 +98,6 @@ https://mp.weixin.qq.com/s/KjQ5BTGd92Y0Mqzk1A5JYg
 
 老兵戴辉讲述海思视频监控芯片从0到1的血泪史！如何一步步成为行业霸主的
 
-# 3D芯片
-
-随着半导体工艺日益接近物理极限，2D芯片已经不能满足进化的需要，芯片的设计也迈向了立体发展的阶段。目前主流的3D芯片技术包括FinFET（1999）与FD-SOI（2000），他们都是胡正明团队的作品。
-
->胡正明，1947年生。台湾大学本科（1968）+UCB硕博（1970，1973）。台积电首席科学家，MIT教授。美国工程院院士，中科院外籍院士。
-
-参考：
-
-http://www.sohu.com/a/108777952_467791
-
-多少年了，终于明白了FinFET与FD-SOI制程
-
-https://mp.weixin.qq.com/s/NJBx8ndkBBedC81f3-DKOA
-
-5nm以后的晶体管选择
-
-# 浸润式微影
-
-缩短波长的方法除了增加频率之外，其实还有更换介质。
-
-参考：
-
-https://mp.weixin.qq.com/s/NZGNrO_LxNc6qrIdofOIfQ
-
-假如没有他，就没有今天的台积电
-
 ## 参考
 
 https://cloud.tencent.com/community/article/244743
@@ -325,3 +299,19 @@ https://zhuanlan.zhihu.com/p/35103140
 https://mp.weixin.qq.com/s/DnurlGgd5q4Fwjxy3YnIrQ
 
 当数据库遇见FPGA：X-DB异构计算如何实现百万级TPS？
+
+https://mp.weixin.qq.com/s/PDe8O5zskxD_mycwH0_3lg
+
+AI是如何影响计算机内存系统的？
+
+https://blog.csdn.net/lien0906/article/details/78863118
+
+深度学习中GPU和显存分析
+
+https://zhuanlan.zhihu.com/p/33990592
+
+HBM火了，它到底是什么？
+
+https://zhuanlan.zhihu.com/p/34164501
+
+HBM技术之显卡应用

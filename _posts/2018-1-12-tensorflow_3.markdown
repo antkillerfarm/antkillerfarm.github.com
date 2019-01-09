@@ -18,6 +18,14 @@ TF提供了一套专门的IO函数：tf.gfile。主要优点在于：对于写�
 
 sparse_softmax_cross_entropy_with_logits和softmax_cross_entropy_with_logits的区别在于：后者的label是一个one hot的tensor，而前者label直接用对应分类的index表示就行了。
 
+----
+
+CNN中的padding：
+
+"SAME" = with zero padding。
+
+"VALID" = without padding。
+
 ## blog
 
 http://www.jianshu.com/u/eaec1fc422e9
@@ -399,15 +407,3 @@ https://mp.weixin.qq.com/s/g2xMUmhxUTuQugR2PWUJtw
 https://mp.weixin.qq.com/s/n4nEtyRc5G44kj3zmHpd5g
 
 TensorFlow实战——图像分类神经网络模型
-
-https://mp.weixin.qq.com/s/4aJUGBpPG_6Oc5EqOmM0Iw
-
-作为TensorFlow的底层语言，你会用C++构建深度神经网络吗？
-
-https://mp.weixin.qq.com/s/W1KP213Ngj-BNEyx-_nVyw
-
-利用TensorFlow实现卷积自编码器
-
-https://mp.weixin.qq.com/s/2COA8aRQBpxaihKnlLkXZQ
-
-快速上手图像识别：用TensorFlow API实现图像分类实例

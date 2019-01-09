@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十二）——信息检索, NN的量化计算, 手势识别
+title:  深度学习（三十二）——信息检索, NN Quantization
 category: DL 
 ---
 
@@ -98,11 +98,11 @@ https://mp.weixin.qq.com/s/N3JBHlqneG9dI0I26M3wHQ
 
 如何做好大规模视觉搜索？eBay基于实践总结出了7条建议
 
-# NN的量化计算
+# NN Quantization
 
 ## 概述
 
-NN的INT8计算是近来NN计算优化的方向之一。相比于传统的浮点计算，整数计算无疑速度更快，而NN由于自身特性，对单点计算的精确度要求不高，且损失的精度还可以通过retrain的方式恢复大部分，因此通常的科学计算的硬件（没错就是指的GPU）并不太适合NN运算，尤其是NN Inference。
+NN的量化计算是近来NN计算优化的方向之一。相比于传统的浮点计算，整数计算无疑速度更快，而NN由于自身特性，对单点计算的精确度要求不高，且损失的精度还可以通过retrain的方式恢复大部分，因此通常的科学计算的硬件（没错就是指的GPU）并不太适合NN运算，尤其是NN Inference。
 
 >传统的GPU并不适合NN运算，因此Nvidia也好，还是其他GPU厂商也好，通常都在GPU中又集成了NN加速的硬件，因此虽然商品名还是叫做GPU，但是工作原理已经有别于传统的GPU了。
 
@@ -111,6 +111,26 @@ NN的INT8计算是近来NN计算优化的方向之一。相比于传统的浮点
 https://china.xilinx.com/support/documentation/white_papers/c_wp486-deep-learning-int8.pdf
 
 利用Xilinx器件的INT8优化开展深度学习
+
+## Distiller
+
+https://nervanasystems.github.io/distiller/index.html
+
+Intel AI Lab推出的Distiller是一个关于模型压缩、量化的工具包。这里是它的文档，总结了业界主要使用的各种方法。
+
+## Conservative vs. Aggressive
+
+Quantization主要分为两大类：
+
+1."Conservative" Quantization。这里主要指不低于INT8精度的量化。
+
+实践表明，由于NN训练时采用的凸优化算法，其最终结果一般仅是局部最优。因此，即便是两次训练（数据集、模型完全相同，样本训练顺序、参数初始值随机）之间的差异，通常也远大于FP64的精度。所以，一般而言，FP32对于模型训练已经完全够用了。
+
+FP16相对于FP32，通常会有不到1%的精度损失。即使是不re-train的INT8，通常也只有3%～15%的精度损失。因此这类量化被归为"Conservative" Quantization。其特点是完全采用FP32的参数进行量化，或者在此基础上进行re-train。
+
+1."Aggressive" Quantization。这里指的是INT4或更低精度的量化。
+
+这种量化由于过于激进，re-train也没啥大用，因此必须从头训练。而且由于INT4表达能力有限，模型结构也要进行一定的修改，比如增加每一层的filter的数量。
 
 ## INT量化
 
@@ -183,6 +203,8 @@ Saturate Quantization的做法是：将超出上限或下限的值，设置为�
 2.tensor中各分量的值域范围最好相近。这个的原理和第1条一致。比如YOLO的结果中，同时包含分类和bbox，而且分类的值域范围远大于bbox，导致量化效果不佳。
 
 3.最好不要使用ReluN这样的激活函数，死的神经元太多。神经元一旦“死亡”，相应的权值就不再更新，而这些值往往不在正常范围内。
+
+4.对于sigmoid、tanh这样的S形函数，其输入在$$\mid x \mid > \sigma$$范围的值，最终的结果都在sigmoid、tanh的上下限附近。因此，可以直接将这些x值量化为$$\sigma$$。这里的$$\sigma$$的取值，对于sigmoid来说是6，而对于tanh来说是3。
 
 ## NN硬件的指标术语
 
@@ -269,37 +291,3 @@ https://mp.weixin.qq.com/s/7dzQhgblEm-kzRnpddweSw
 https://mp.weixin.qq.com/s/XzLJzfvpP93cDYplf6-LXA
 
 港科腾讯等提出Bi-Real net：超XNOR-net 10%的ImageNet分类精度
-
-# 手势识别
-
-https://zhuanlan.zhihu.com/p/26630215
-
-浅谈手势识别在直播中的运用
-
-https://zhuanlan.zhihu.com/p/30561160
-
-2017-最全手势识别/跟踪相关资源大列表分享
-
-http://www.sohu.com/a/203306961_465975
-
-浙江大学CSPS最佳论文：使用卷积神经网络的多普勒雷达手势识别
-
-https://www.zhihu.com/question/20131478
-
-我打算只根据手的形状来识别手势。用哪种机器学习算法比较好？
-
-https://www.leiphone.com/news/201502/QM7LdSN874dWXFLo.html
-
-带你了解世界最先进的手势识别技术
-
-https://mp.weixin.qq.com/s/DbvH6jM1VV47xKylbW-pug
-
-掌纹识别近十年进展综述
-
-https://mp.weixin.qq.com/s/mnPh8w3VuG9apprOkugbLA
-
-中科大提出新型连续手语识别框架LS-HAN，帮助“听”懂听障人士
-
-https://mp.weixin.qq.com/s/pUciYFjOKL3ea91fLCy0Yw
-
-基于OpenCV与tensorflow实现实时手势识别

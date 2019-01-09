@@ -243,3 +243,15 @@ https://mp.weixin.qq.com/s/nnjyR4XGVZQ1zXCIPzTNlg
 https://mp.weixin.qq.com/s/iMgesGmdb7Jq4muCxb-nFA
 
 Tensorflow实战：Discuz验证码识别
+
+https://mp.weixin.qq.com/s/4aJUGBpPG_6Oc5EqOmM0Iw
+
+作为TensorFlow的底层语言，你会用C++构建深度神经网络吗？
+
+https://mp.weixin.qq.com/s/W1KP213Ngj-BNEyx-_nVyw
+
+利用TensorFlow实现卷积自编码器
+
+https://mp.weixin.qq.com/s/2COA8aRQBpxaihKnlLkXZQ
+
+快速上手图像识别：用TensorFlow API实现图像分类实例

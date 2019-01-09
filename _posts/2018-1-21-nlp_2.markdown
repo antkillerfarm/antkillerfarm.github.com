@@ -1,72 +1,10 @@
 ---
 layout: post
-title:  NLP（二）, Storm, Flink, Pulsar
+title:  NLP（二）, Storm, Pulsar
 category: AI 
 ---
 
 # NLP
-
-## NLPchina
-
-NLPchina(中国自然语言处理开源组织)旗下有许多好用的工具。
-
-官网：
-
-http://www.nlpcn.org/
-
-Github：
-
-https://github.com/NLPchina
-
-### Ansj
-
-Ansj是一个NLPchina旗下的开源的Java中文分词工具，基于中科院的ictclas中文分词算法，比其他常用的开源分词工具（如mmseg4j）的分词准确率更高。
-
-https://github.com/NLPchina/ansj_seg
-
-### Word2VEC_java
-
-word2vec java版本的一个实现。
-
-https://github.com/NLPchina/Word2VEC_java
-
-doc2vec java版本的一个实现，基于Word2VEC_java。
-
-https://github.com/yao8839836/doc2vec_java
-
-### ansj_fast_lda
-
-LDA算法的Java包。
-
-https://github.com/NLPchina/ansj_fast_lda
-
-### nlp-lang
-
-这个项目是一个基本包.封装了大多数nlp项目中常用工具
-
-https://github.com/NLPchina/nlp-lang
-
-## 词性标注
-
-http://jacoxu.com/ictpos3-0%E6%B1%89%E8%AF%AD%E8%AF%8D%E6%80%A7%E6%A0%87%E8%AE%B0%E9%9B%86/
-
-ICTPOS3.0汉语词性标记集
-
-## Word Hashing
-
-Word Hashing是非常重要的一个trick，以英文单词来说，比如good，他可以写成`#good#`，然后按tri-grams来进行分解为`#go goo ood od#`，再将这个tri-grams灌入到bag-of-word中，这种方式可以非常有效的解决vocabulary太大的问题(因为在真实的web search中vocabulary就是异常的大)，另外也不会出现oov问题，因此英文单词才26个，3个字母的组合都是有限的，很容易枚举光。
-
-那么问题就来了，这样两个不同的单词会不会产出相同的tri-grams，paper里面做了统计，说了这个冲突的概率非常的低，500K个word可以降到30k维，冲突的概率为0.0044%。
-
-但是在中文场景下，这个Word Hashing估计没有这么有效了。
-
-## protege
-
-protege软件是斯坦福大学医学院生物信息研究中心基于Java语言开发的本体编辑和知识获取软件，或者说是本体开发工具，也是基于知识的编辑器。这个软件主要用于语义网中本体的构建，是语义网中本体构建的核心开发工具。
-
-官网：
-
-https://protege.stanford.edu/products.php
 
 ## Opendial
 
@@ -115,6 +53,102 @@ https://github.com/NervanaSystems/nlp-architect
 https://mp.weixin.qq.com/s/mKEFOTWyfF86ee8P-d2jJg
 
 英特尔推出自然语言处理开源库，代号“NLP Architect”
+
+## 其他工具
+
+https://github.com/mozillazg/python-pinyin
+
+python版的汉字转拼音软件
+
+https://github.com/ysc/word
+
+Java分布式中文分词组件-word分词
+
+http://jena.apache.org/
+
+jena是一个语义网络、知识图谱相关的软件。
+
+http://www.statmt.org/moses/
+
+moses是一个基于统计的机器翻译工具。
+
+http://drools.org/
+
+一个规则引擎软件。
+
+https://mp.weixin.qq.com/s/0buG6HEFSrD7MPfKqVCzzg
+
+构想：中文文本标注工具（附开源文本标注工具列表）。
+
+https://mp.weixin.qq.com/s/kMQ7q4EyBQUH1DEEhQWdCQ
+
+Familia：开源的中文主题模型应用工具包。
+
+https://allegrograph.com/
+
+一个现代、高性能、持久的图数据库。
+
+http://blog.csdn.net/sinat_25551085/article/details/62896902
+
+AllegroGraph
+
+https://mp.weixin.qq.com/s/a2KyT929A0fn_bTFld62Cg
+
+英文智能问答之OpenEphyra
+
+https://github.com/rockyzhengwu/FoolNLTK
+
+FoolNLTK：一个便捷的中文处理工具包（字向量+双向LSTM+CRF）
+
+https://mp.weixin.qq.com/s/jjlXGaGSJO3KeJv9adLi2Q
+
+Synonyms：一个开源的中文近义词工具包
+
+https://mp.weixin.qq.com/s/JBu5ozGYkgBJHUyQCne0YQ
+
+中文文本标注工具Chinese-Annotator
+
+https://mp.weixin.qq.com/s/XZ8um7JG5IWpsDPXEHVVuw
+
+十个经典Chatbot框架
+
+https://github.com/RasaHQ/rasa_core
+
+一个对话引擎
+
+https://mp.weixin.qq.com/s/TtvsPYinL8t8PJxaj2L-2g
+
+机器人意图识别和词槽抽取RasaNLU解析
+
+https://mp.weixin.qq.com/s/hVjgEKD6WDct8SEAHaUCTQ
+
+DeepPavlov：一个训练对话系统和聊天机器人的开源库
+
+http://www.simsimi.com/
+
+SimSimi是一款来自韩国的聊天机器人应用，以吉祥物“小鸡鸡”自居。
+
+https://github.com/BYVoid/OpenCC
+
+OpenCC：一个中文简繁转换的工具
+
+https://mp.weixin.qq.com/s/-3A4eNAPa6DP-bX4x4HfQA
+
+横向对比4大NLP Python工具包，总有一款适合你！
+
+## 词性标注
+
+http://jacoxu.com/ictpos3-0%E6%B1%89%E8%AF%AD%E8%AF%8D%E6%80%A7%E6%A0%87%E8%AE%B0%E9%9B%86/
+
+ICTPOS3.0汉语词性标记集
+
+## Word Hashing
+
+Word Hashing是非常重要的一个trick，以英文单词来说，比如good，他可以写成`#good#`，然后按tri-grams来进行分解为`#go goo ood od#`，再将这个tri-grams灌入到bag-of-word中，这种方式可以非常有效的解决vocabulary太大的问题(因为在真实的web search中vocabulary就是异常的大)，另外也不会出现oov问题，因此英文单词才26个，3个字母的组合都是有限的，很容易枚举光。
+
+那么问题就来了，这样两个不同的单词会不会产出相同的tri-grams，paper里面做了统计，说了这个冲突的概率非常的低，500K个word可以降到30k维，冲突的概率为0.0044%。
+
+但是在中文场景下，这个Word Hashing估计没有这么有效了。
 
 ## 自然语言理解
 
@@ -303,64 +337,6 @@ Nimbus的作用是将运行的jar分发到各Node去执行。
 官网：
 
 http://jstorm.io/
-
-# Flink
-
-Flink是一个流计算引擎。
-
-官网：
-
-https://flink.apache.org
-
-参考：
-
-https://mp.weixin.qq.com/s/WNcs0P5baLclZFBmEH3CCA
-
-Spark比拼Flink：下一代大数据计算引擎之争，谁主沉浮？
-
-https://mp.weixin.qq.com/s/_DLKTRI_IytYkPlMZ3eDCQ
-
-流计算框架Flink与Storm的性能对比
-
-https://mp.weixin.qq.com/s/NvD-NSR-aE8HTADR2LSSjA
-
-基于Flink流处理的动态实时超大规模用户行为分析
-
-https://mp.weixin.qq.com/s/UFzFuHFqsXl6ynKyYoOnRA
-
-容错和高性能如何兼得: Flink创始人谈流计算核心架构演化和现状
-
-https://mp.weixin.qq.com/s/lc9fWkEVt1kG5Mw3Xeuv3g
-
-Apache Beam实战指南：手把手教你玩转KafkaIO与Flink
-
-https://mp.weixin.qq.com/s/qhiX62dALXd3owYYP9KsEQ
-
-支持流式处理ACID事务！Flink团队开源新作Streaming Ledger
-
-https://mp.weixin.qq.com/s/AoSDPDKbTbjH9rviioK-5Q
-
-阿里巴巴为什么选择Apache Flink？
-
-https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651749037&idx=1&sn=4a448647b3dae50779bc9ec0e9c10275
-
-美团点评基于Flink的实时数仓建设实践
-
-https://mp.weixin.qq.com/s/Jkd-FykUEKZZeVizRoTeJQ
-
-一文读懂Apache Flink技术
-
-https://mp.weixin.qq.com/s/rsJlZEP_oVG3NiFRyeS8gw
-
-Apache Flink干货合集打包好了，速来下载
-
-https://mp.weixin.qq.com/s/vVwBEzPyXAX1ObZ6IU8XeQ
-
-Flink如何取代JStorm，成为字节跳动流处理唯一标准？
-
-https://mp.weixin.qq.com/s/zeIcY_JknIo9-hR7UTxvrA
-
-从Storm到Flink：大数据处理的开源系统及编程模型
 
 # Pulsar
 
