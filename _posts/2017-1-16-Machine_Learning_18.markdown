@@ -1,8 +1,20 @@
 ---
 layout: post
-title:  机器学习（十八）——独立成分分析, 时间序列分析, 贝叶斯线性回归, 强连通分量算法, 异常点检测
+title:  机器学习（十八）——独立成分分析, 时间序列分析, 异常点检测
 category: ML 
 ---
+
+# 独立成分分析（续）
+
+## 密度函数和线性变换
+
+在讨论ICA的具体算法之前，我们先来回顾一下概率和线性代数里的知识。
+
+假设我们的随机变量s有概率密度（probability density）函数$$p_s(s)$$。为了简单，我们再假设s是实数，还有一个随机变量$$x=As$$，A和x都是实数。令$$p_x$$是x的概率密度，那么怎么求$$p_x$$呢？
+
+令$$W=A^{-1}$$，则$$s=Wx$$。然而$$p_x(x)\neq p_s(Wx)$$。
+
+这里以均匀分布（Uniform）为例讨论一下。令$$s\sim \text{Uniform}[0,1]$$，则$$p_s(s)=1$$。令$$A=2$$，则$$W=0.5$$，$$x=2s\sim \text{Uniform}[0,2]$$，因此$$p_x(x)=p_s(Wx)\lvert W \rvert$$。
 
 ## 累积分布函数
 
@@ -250,42 +262,6 @@ https://zhuanlan.zhihu.com/p/50698719
 https://mp.weixin.qq.com/s/iKM6zMSm1F2icjy79F9Hcg
 
 季节性的分析才不简单，小心不要在随机数据中也分析出季节性
-
-# 贝叶斯线性回归
-
-https://mp.weixin.qq.com/s/szTmHY-Yvn7N3s_GzTDiEA
-
-解开贝叶斯黑暗魔法：通俗理解贝叶斯线性回归
-
-https://mp.weixin.qq.com/s/1JSxjkKEUlWOzXCQPTve3A
-
-贝叶斯线性回归简介
-
-https://mp.weixin.qq.com/s/NTK-u4aVrTTmvi-4ZBa8RQ
-
-数十亿用户的Facebook如何进行贝叶斯系统调优？
-
-https://mp.weixin.qq.com/s/g24mcZjQ25sQJx9mqE_XSA
-
-怎样判断漂亮女孩是不是单身的？美国海军在汪洋大海里搜索丢失的氢弹、失踪的核潜艇都用过这种方法。
-
-# 强连通分量算法
-
-http://ishare.iask.sina.com.cn/f/34626295.html
-
-矩阵不可约的充要条件
-
-http://www.cnblogs.com/saltless/archive/2010/11/08/1871430.html
-
-求强连通分量的Tarjan算法
-
-http://blog.csdn.net/dm_vincent/article/details/8554244
-
-求解强连通分量算法之---Kosaraju算法
-
-http://www.cnblogs.com/luweiseu/archive/2012/07/14/2591370.html
-
-强连通分支算法--Kosaraju算法、Tarjan算法和Gabow算法
 
 # 异常点检测
 

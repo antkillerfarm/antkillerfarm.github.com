@@ -164,6 +164,20 @@ $$X_{n\times m}\approx U_{n\times k}Y_{k\times m}$$
 
 两者虽然都是降维算法，但特征选择是在原有的n个特征中选择k个特征，而PCA是重建k个新的特征。
 
+## Other
+
+常见的降维算法还有：
+
+https://www.cnblogs.com/lochan/p/6627511.html
+
+数据降维之多维缩放MDS（Multiple Dimensional Scaling）
+
+PCA还可用于升维：
+
+https://www.cnblogs.com/lochan/p/7011831.html
+
+核化主成分分析（Kernel PCA）应用及调参
+
 ## 参考
 
 https://mp.weixin.qq.com/s/tJ_FbL2nFQfkvKqpQJ8kmg
@@ -225,13 +239,3 @@ ICA的不确定性(ICA ambiguities)包括以下几种情形：
 $$E[xx^T]=E[A'ss^T(A')^T]=E[ARss^T(AR)^T]=ARR^TA^T=AA^T$$
 
 可见，无论是A还是A'，观测值x都是一个$$\mathcal{N}(0,AA^T)$$的正态分布，也就是说A的值无法确定，那么W和s也就无法求出了。
-
-## 密度函数和线性变换
-
-在讨论ICA的具体算法之前，我们先来回顾一下概率和线性代数里的知识。
-
-假设我们的随机变量s有概率密度（probability density）函数$$p_s(s)$$。为了简单，我们再假设s是实数，还有一个随机变量$$x=As$$，A和x都是实数。令$$p_x$$是x的概率密度，那么怎么求$$p_x$$呢？
-
-令$$W=A^{-1}$$，则$$s=Wx$$。然而$$p_x(x)\neq p_s(Wx)$$。
-
-这里以均匀分布（Uniform）为例讨论一下。令$$s\sim \text{Uniform}[0,1]$$，则$$p_s(s)=1$$。令$$A=2$$，则$$W=0.5$$，$$x=2s\sim \text{Uniform}[0,2]$$，因此$$p_x(x)=p_s(Wx)\lvert W \rvert$$。

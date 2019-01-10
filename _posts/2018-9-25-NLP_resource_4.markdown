@@ -373,3 +373,7 @@ https://mp.weixin.qq.com/s/5F6h2F8L-OdFJxBY2QrWJg
 https://mp.weixin.qq.com/s/wBsh9dmMPks04X2pDB8Ang
 
 沈向洋等重磅论文：公开微软小冰系统设计，迄今最详细！
+
+https://mp.weixin.qq.com/s/-zDMPfR1wWSV9A7HDzJlZA
+
+事件抽取及推理(上)

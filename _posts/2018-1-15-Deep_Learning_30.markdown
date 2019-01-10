@@ -254,6 +254,16 @@ p_1\dot{x}d + 2p_2x\dot{x}d + ... + np_{n-1}x\dot{x}d\\
 
 可以看出d的系数就是$$f'(x)$$。
 
+## 不可导函数的求导
+
+不可导函数的求导，一般采用泰勒展开的方式。典型的算法有PGD（Proximal Gradient Descent）。
+
+参考：
+
+https://blog.csdn.net/bingecuilab/article/details/50628634
+
+Proximal Gradient Descent for L1 Regularization
+
 ## 参考
 
 https://mp.weixin.qq.com/s/7Z2tDhSle-9MOslYEUpq6g

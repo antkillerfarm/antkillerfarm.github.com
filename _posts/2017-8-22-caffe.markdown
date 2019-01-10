@@ -396,7 +396,7 @@ http://mp.weixin.qq.com/mp/homepage?__biz=MzUyMTA2OTM1MA==&hid=4&sn=192b1f4e4997
 
 https://zhuanlan.zhihu.com/p/48343011
 
-芯片中的数学——均衡器EQ和它在高速外部总线中的应用
+芯片中的数学——均衡器EQ和它在高速外部总线中的应用。这个blog主要介绍了眼图的概念。
 
 https://mp.weixin.qq.com/s/oCBSGVtGSwq9c59rcVc2-A
 
@@ -406,16 +406,6 @@ https://mp.weixin.qq.com/s/KPmkphlJFv5dScLlhAigEw
 
 新型存储器技术盘点
 
-# DL参考资源
+https://zhuanlan.zhihu.com/p/54517790
 
-https://mp.weixin.qq.com/s/494I6XHrk9fB2DvhiMM9iQ
-
-第四范式联合港科大提出样本自适应在线卷积稀疏编码
-
-https://mp.weixin.qq.com/s/p8u2aTJL2gfPIXLsLfoJyg
-
-谷歌大脑提出MAPO：用于程序合成的策略优化方法
-
-https://mp.weixin.qq.com/s/zC5iGXVn7xH8TYBXtkntzA
-
-让计算机一眼认出“猫”：哈佛提出新高维数据分析法
+内存条应该怎么插？为什么要从远端插起？不遵循为啥还可以work？有啥副作用？

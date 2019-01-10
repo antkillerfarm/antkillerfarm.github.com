@@ -218,3 +218,6 @@ https://zhuanlan.zhihu.com/p/32752535
 
 立体匹配成像算法BM，SGBM，GC，SAD一览
 
+https://mp.weixin.qq.com/s/cVTfk0xK6F_gHRnoHYUxSw
+
+计算机视觉基本原理介绍—RANSAC
