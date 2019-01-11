@@ -190,6 +190,10 @@ https://mp.weixin.qq.com/s/ZN9ZYPTcgVP2c9mCx9Ox3g
 
 全景分割这一年，端到端之路
 
+https://mp.weixin.qq.com/s/x95XWQW2euTEcUW5vkIEoA
+
+何恺明组又出神作！最新论文提出全景分割新方法
+
 # 问答系统
 
 GA-Reader

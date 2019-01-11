@@ -231,6 +231,10 @@ https://mp.weixin.qq.com/s/7sS-r6jIF4GAhZicBfFGDA
 
 通过代码原理教你搞懂SGD随机梯度下降、BGD、MBGD
 
+https://zhuanlan.zhihu.com/p/32923584
+
+Tensorflow中learning rate decay的奇技淫巧
+
 ## 正规方程组算法
 
 正规方程组（Normal Equations）算法，是传统的以解方程的方式求最小值的方法。
@@ -275,4 +279,3 @@ $$L(x)=\sum_{j=0}^ky_jl_j(x),l_j(x)=\prod_{0\le m\le k\atop m\neq j}\frac{x-x_m}
 $$N(x)=\sum_{j=0}^ka_jn_j(x),n_j(x)=\prod_{i=0}^{j-1}(x-x_i),a_j=[y_0,\dots,y_j]$$
 
 此外还有分段插值法，即将整个定义域分为若干区间，在区间内部进行线性插值或多项式插值。
-

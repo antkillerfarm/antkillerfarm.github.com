@@ -140,6 +140,10 @@ https://mp.weixin.qq.com/s/iotqiyRrH4kwWmBvYi-tMQ
 
 中科院&地平线开源state-of-the-art行人重识别算法EANet:增强跨域行人重识别中的部件对齐
 
+https://zhuanlan.zhihu.com/p/54576174
+
+行人重识别新任务：训练只需一张标注图片
+
 # 人脸识别进阶
 
 https://mp.weixin.qq.com/s/5vx1FGgSOhF71FwHeUwaAQ

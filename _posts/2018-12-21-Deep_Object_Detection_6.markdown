@@ -241,3 +241,7 @@ https://www.chongqing.cn.emb-japan.go.jp/itpr_zh/00_000376.html
 https://www.zhihu.com/question/57701136
 
 北大的戴威，为何输给了三本的胡玮炜？
+
+----
+
+![](/images/img2/bio_PhD.jpg)

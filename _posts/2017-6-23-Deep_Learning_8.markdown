@@ -98,6 +98,10 @@ http://www.cnblogs.com/Allen-rg/p/5833919.html
 
 GoogLeNet学习心得
 
+https://mp.weixin.qq.com/s/WTvJjiF8fkXWKW7rI9Uvug
+
+全面解析Inception Score原理及其局限性
+
 ## SqueezeNet
 
 GoogleNet之后，最有名的CNN模型当属何恺明的Deep Residual Network。DRN在《深度学习（六）》中已有提及，这里不再赘述。

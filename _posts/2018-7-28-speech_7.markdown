@@ -320,6 +320,10 @@ https://mp.weixin.qq.com/s/pMnbVWDDVgIdFpzkfSUd5Q
 
 时延MPC自主车辆协同控制算法与仿真
 
+https://mp.weixin.qq.com/s/VUsVB2mo8WMs0MoYNIhhqA
+
+深度学习应用于复杂系统控制
+
 # 知识图谱参考资源
 
 https://mp.weixin.qq.com/s/d4cEHHo6OhlWEIXTFIdTuA

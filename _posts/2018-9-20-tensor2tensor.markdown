@@ -312,6 +312,10 @@ https://mp.weixin.qq.com/s/g-ZOPK1l-eFopfEoaIRaiQ
 
 OpenCV SIFT特征算法详解与使用
 
+https://mp.weixin.qq.com/s/9345Y-Ag-2AWPur-NAdiEw
+
+HOG特征详解与行人检测
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。

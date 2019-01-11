@@ -106,6 +106,10 @@ https://mp.weixin.qq.com/s/4h7JDItBFhWkEex6eeaJTg
 
 为什么你需要开源分布式流存储Pravega？
 
+https://mp.weixin.qq.com/s/ViPvoQpFx2AC0UOqLtUqjA
+
+Submarine在 Apache Hadoop 中运行深度学习框架
+
 # 知名数据集
 
 ## CV（续）

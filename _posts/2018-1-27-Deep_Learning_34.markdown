@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十四）——词向量进阶, 深度时间序列
+title:  深度学习（三十四）——词向量进阶, 深度时间序列, 图像超分辨率进阶
 category: DL 
 ---
 
@@ -243,3 +243,45 @@ https://mp.weixin.qq.com/s/PS1SqSWckuHuyZP6d5ZUFw
 https://zhuanlan.zhihu.com/p/54471673
 
 基于前馈神经网络的时间序列异常检测算法
+
+# 图像超分辨率进阶
+
+https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
+
+NTIRE2017夺冠论文：用于单一图像超分辨率的增强型深度残差网络
+
+https://www.zhihu.com/question/25401250
+
+如何通过多帧影像进行超分辨率重构？
+
+https://www.zhihu.com/question/38637977
+
+超分辨率重建还有什么可以研究的吗？
+
+https://zhuanlan.zhihu.com/p/25912465
+
+胎儿MRI高分辨率重建技术：现状与趋势
+
+https://mp.weixin.qq.com/s/i-im1sy6MNWP1Fmi5oWMZg
+
+华为推出新型HiSR：移动端的超分辨率算法
+
+https://mp.weixin.qq.com/s/h4Xzt-aS1_-5zjTB0ypTLg
+
+普通视频转高清：10个基于深度学习的超分辨率神经网络
+
+https://mp.weixin.qq.com/s/WmqagSGRy98USgnz21W3Pg
+
+WDSR
+
+https://mp.weixin.qq.com/s/AxHTaT-G5_Y6Iw_3aIIxCg
+
+超分辨率技术如何发展？这6篇ECCV 18论文带你一次尽览
+
+https://mp.weixin.qq.com/s/zWoQCKbZNz2td3cZxEsqKQ
+
+腾讯优图提出SRN-DeblurNet：高效高质量去除复杂图像模糊
+
+https://mp.weixin.qq.com/s/eJkkbGBYxWlngkT5gjjW7g
+
+效果惊人：上古卷轴III等经典游戏也能使用超分辨率GAN重制了

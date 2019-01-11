@@ -158,6 +158,14 @@ https://mp.weixin.qq.com/s/ZTUXQVnXfcRVZOoMziTLJQ
 
 AI做不了“真”3D图像？试试Google的新生成模型
 
+https://mp.weixin.qq.com/s/z7m1bj-zip5lqeeC4MHbxg
+
+SkeletonNet：完整的人体三维位姿重建方法
+
+https://mp.weixin.qq.com/s/adSbAAV7POblqE_jaOGZhg
+
+深度学习新应用：在PyTorch中用单个2D图像创建3D模型
+
 # 视频目标分割
 
 视频目标分割任务和语义分割有两个基本区别：

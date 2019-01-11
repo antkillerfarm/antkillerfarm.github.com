@@ -216,6 +216,10 @@ ruamel.yaml官网：
 
 https://yaml.readthedocs.io/en/latest/
 
+这里谈一下我司在这方面的实践。我司有个项目最初脱胎于Caffe，因此，配置文件沿用了Protocol Buffers格式。然而PB格式在发布时，还需要相应的proto文件配套，才能解析。此外，PB文件是二进制，不便修改。因此，我们很快就改用json了。
+
+用了两年之后，发现json对于客户的修改，还是不够友好。因此又换用了YAML。
+
 参考：
 
 https://zhuanlan.zhihu.com/p/33477002
@@ -396,23 +400,3 @@ https://mp.weixin.qq.com/s/LV8tmeDGkfmFFyQqJwY25g
 https://mp.weixin.qq.com/s?__biz=MzI3MTM5ODA0Nw==&mid=2247484058&idx=1&sn=0dfe92a0991294afba2514b137217a66
 
 朱松纯：浅谈人工智能：现状、任务、构架与统一
-
-https://mp.weixin.qq.com/s/_w4IIRY6LwqehpDlEXt90A
-
-牛津大学提出神经网络新训练法：用低秩结构增强网络压缩和对抗稳健性
-
-https://mp.weixin.qq.com/s/w-6z8B60cIHUF5tU-RoQ3w
-
-旷视科技提出统一感知解析网络UPerNet，优化场景理解
-
-https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
-
-北大：一种基于新闻特征抽取和循环神经网络的股票预测方法
-
-http://mp.weixin.qq.com/s/vhBOrR6uTL2vGXnYC8BS1w
-
-Windows版深度学习软件安装指南
-
-https://mp.weixin.qq.com/s/FwqKYNpIuB6cUAVjSey7mw
-
-Yoshua Bengio首次中国演讲：深度学习通往人类水平AI的挑战

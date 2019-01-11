@@ -288,6 +288,10 @@ https://mp.weixin.qq.com/s/CbdERPAHhmLB2hVVl2Dgkg
 
 裤子换裙子，就问你GAN的这波操作秀不秀
 
+https://mp.weixin.qq.com/s/Ug0jyloNkeL6uuCqv9K0SA
+
+图像/人脸补全问题的前世今生
+
 # 模型压缩与加速
 
 https://mp.weixin.qq.com/s/nEMvoiqImd0RxrskIH7c9A

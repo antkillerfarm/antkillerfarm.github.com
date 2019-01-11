@@ -367,3 +367,11 @@ https://mp.weixin.qq.com/s/p8u2aTJL2gfPIXLsLfoJyg
 https://mp.weixin.qq.com/s/zC5iGXVn7xH8TYBXtkntzA
 
 让计算机一眼认出“猫”：哈佛提出新高维数据分析法
+
+http://mp.weixin.qq.com/s/vhBOrR6uTL2vGXnYC8BS1w
+
+Windows版深度学习软件安装指南
+
+https://mp.weixin.qq.com/s/FwqKYNpIuB6cUAVjSey7mw
+
+Yoshua Bengio首次中国演讲：深度学习通往人类水平AI的挑战
