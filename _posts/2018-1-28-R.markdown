@@ -396,3 +396,7 @@ https://mp.weixin.qq.com/s/STmSnyl4vaz3WS-kJ8aUmQ
 https://mp.weixin.qq.com/s/qOZq30ua2q_avgRLZie-VQ
 
 R语言实战之模型部署
+
+https://mp.weixin.qq.com/s/G-6ZcMIba-fLKRN0hgQFWg
+
+面向数据科学和AI的开发库推荐：Python、R各7个

@@ -6,7 +6,49 @@ category: DL
 
 # 神经元激活函数进阶
 
-## Swish（续）
+## Maxout（续）
+
+更多的情况参见下图：
+
+![](/images/article/maxout_2.png)
+
+从Maxout Networks的角度来看，ReLU和DropOut实际上是非常类似的。
+
+参考：
+
+http://blog.csdn.net/hjimce/article/details/50414467
+
+Maxout网络学习
+
+## GLU
+
+Gated Linear Unit是由facebook提出的：
+
+$$(\boldsymbol{W}_1\boldsymbol{x}+\boldsymbol{b}_1)\otimes \sigma(\boldsymbol{W}_2\boldsymbol{x}+\boldsymbol{b}_2)$$
+
+![](/images/img2/GLU.png)
+
+上图右侧是一个Linear Unit，左侧的$$\sigma$$相当于一个Gate，故名。
+
+论文：
+
+《Language Modeling with Gated Convolutional Networks》
+
+GLU一般用在NLP领域，它和CNN结合，也就是所谓的GCNN了。
+
+## Swish
+
+Swish是Google大脑团队提出的一个新的激活函数：
+
+$$\text{swish}(x)=x\cdot\sigma(x)=\frac{x}{1+e^{-x}}$$
+
+它的图像如下图中的橙色曲线所示：
+
+![](/images/article/swish.png)
+
+Swish可以看作是GLU的特例（Swish的两组参数相同）。
+
+Swish在原点附近不是饱和的，只有负半轴远离原点区域才是饱和的，而ReLu在原点附近也有一半的空间是饱和的。
 
 而我们在训练模型时，一般采用的初始化参数是均匀初始化或者正态分布初始化，不管是哪种初始化，其均值一般都是0，也就是说，初始化的参数有一半处于ReLu的饱和区域，这使得刚开始时就有一半的参数没有利用上。
 
@@ -288,66 +330,3 @@ https://mp.weixin.qq.com/s/DIqjVxF_kACkivzez4_Hog
 https://mp.weixin.qq.com/s/Alg4rOXNvb4GA8N4Joy-Jg
 
 Seq2seq强化，Pointer Network简介
-
-# CNN进化史
-
-## 计算机视觉
-
-![](/images/article/computer_vision.jpg)
-
-6大关键技术：
-
-![](/images/article/computer_vision_2.jpg)
-
-**图像分类**：根据图像的主要内容进行分类。数据集：MNIST, CIFAR, ImageNet
-
-**物体定位**：预测包含主要物体的图像区域，以便识别区域中的物体。数据集：ImageNet
-
-**物体识别**：定位并分类图像中出现的所有物体。这一过程通常包括：划出区域然后对其中的物体进行分类。数据集：PASCAL, COCO
-
-**语义分割**：把图像中的每一个像素分到其所属物体类别，在样例中如人类、绵羊和草地。数据集：PASCAL, COCO
-
-**实例分割**：把图像中的每一个像素分到其所属物体实例。数据集：PASCAL, COCO
-
-**关键点检测**：检测物体上一组预定义关键点的位置，例如人体上或者人脸上的关键点。数据集：COCO
-
-参考：
-
-https://mp.weixin.qq.com/s/nK__d-PV6DY5mDfA_UgDmQ
-
-全解：目标检测，图像分类、分割、生成……
-
-https://mp.weixin.qq.com/s/Go8AQay7tgykXLRtfHGLmg
-
-改变你对世界看法的五大计算机视觉技术！
-
-## CNN简史
-
-![](/images/article/computer_vision_3.jpg)
-
-![](/images/article/CNN_3.png)
-
-完整版本参见：
-
-https://github.com/Nikasa1889/HistoryObjectRecognition/blob/master/HistoryOfObjectRecognition.pdf
-
-参考：
-
-https://mp.weixin.qq.com/s/K68CpueI4e4y7o1uZ28KMQ
-
-从神经科学到计算机视觉：人类与计算机视觉五十年回顾
-
-https://mp.weixin.qq.com/s/FzCrOiFuutqSQSp4VcydoQ
-
-计算机视觉简介：历史、现状和发展趋势
-
-## AlexNet
-
-2012年，ILSVRC比赛冠军的model——Alexnet（以第一作者Alex命名）的结构图如下：
-
-![](/images/article/AlexNet.png)
-
-换个视角：
-
-![](/images/article/AlexNet_2.png)
-

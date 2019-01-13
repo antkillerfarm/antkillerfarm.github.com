@@ -261,29 +261,3 @@ FastText的论文其实有两篇：
 《Enriching Word Vectors with Subword Information》
 
 这篇是根据词根改进词向量的论文。因此，有的blog说，使用FastText生成词向量，实际上就是指的这篇文章。
-
-参考：
-
-http://www.algorithmdog.com/fast-fasttext
-
-超快的 fastText
-
-https://mp.weixin.qq.com/s/tXgF7rQdZm3IFAluMU5ywg
-
-fastText之源码分析
-
-https://mp.weixin.qq.com/s/S4RGicXwZqis6vQFpB31qQ
-
-Bag of Tricks for Efficient Text Classification
-
-https://mp.weixin.qq.com/s/eq1I92rjIAWEpYw-1fEHeQ
-
-从Facebook AI Research开源fastText谈起文本分类：词向量模性、深度表征和全连接
-
-https://mp.weixin.qq.com/s/aq_kWkwgwtz5qFo0lNEEqg
-
-Tomas Mikolov论文简评：从Word2Vec到FastText
-
-https://mp.weixin.qq.com/s/v1-mLhmbp5MoRR824tdPDw
-
-玩转词向量：用fastText预训练向量做个智能小程序

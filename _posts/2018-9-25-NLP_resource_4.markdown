@@ -381,3 +381,7 @@ https://mp.weixin.qq.com/s/-zDMPfR1wWSV9A7HDzJlZA
 https://mp.weixin.qq.com/s/4Q8n7i2WKRChJqzHAKcwbw
 
 如何到top5%？NLP文本分类和情感分析竞赛总结
+
+https://mp.weixin.qq.com/s/mWOhh9rJru_YDwQEB34GNg
+
+深度学习在金融文本情感分类中的应用

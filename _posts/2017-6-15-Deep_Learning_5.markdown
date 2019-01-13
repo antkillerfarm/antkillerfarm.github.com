@@ -4,7 +4,35 @@ title:  深度学习（五）——RNN
 category: DL 
 ---
 
-# 词向量（续）
+# 词向量
+
+## FastText（续）
+
+参考：
+
+http://www.algorithmdog.com/fast-fasttext
+
+超快的 fastText
+
+https://mp.weixin.qq.com/s/tXgF7rQdZm3IFAluMU5ywg
+
+fastText之源码分析
+
+https://mp.weixin.qq.com/s/S4RGicXwZqis6vQFpB31qQ
+
+Bag of Tricks for Efficient Text Classification
+
+https://mp.weixin.qq.com/s/eq1I92rjIAWEpYw-1fEHeQ
+
+从Facebook AI Research开源fastText谈起文本分类：词向量模性、深度表征和全连接
+
+https://mp.weixin.qq.com/s/aq_kWkwgwtz5qFo0lNEEqg
+
+Tomas Mikolov论文简评：从Word2Vec到FastText
+
+https://mp.weixin.qq.com/s/v1-mLhmbp5MoRR824tdPDw
+
+玩转词向量：用fastText预训练向量做个智能小程序
 
 ## RNNLM
 
@@ -39,6 +67,10 @@ https://mp.weixin.qq.com/s/vpxCP1Uw23y9XNTRUhY79w
 https://www.sohu.com/a/215535516_99992181
 
 有这好事？神经网络模型Word2vec竟能根据个人喜好推荐音乐
+
+https://mp.weixin.qq.com/s/Ta2Im4WCWq5eQ8SF-mNpuQ
+
+万物皆Embedding，从经典的word2vec到深度学习基本操作item2vec
 
 ## word2vec/doc2vec的缺点
 
@@ -255,46 +287,3 @@ y_t &= \sigma_y(W_{y} h_t + b_y)
 \end{align}$$
 
 Elman RNN的记忆来自于隐层单元，而Jordan RNN的记忆来自于输出层单元。
-
-## 参考
-
-http://blog.csdn.net/aws3217150/article/details/50768453
-
-递归神经网络(RNN)简介
-
-http://blog.csdn.net/heyongluoyao8/article/details/48636251
-
-循环神经网络(RNN, Recurrent Neural Networks)介绍
-
-https://mp.weixin.qq.com/s/pq8-u05ww0JgTEgU-0P-Lw
-
-一文搞懂RNN（循环神经网络）基础篇
-
-http://mp.weixin.qq.com/s?__biz=MzIzODExMDE5MA==&mid=2694182661&idx=1&sn=ddfb3f301f5021571992824b21ddcafe
-
-循环神经网络
-
-http://www.wildml.com/2015/10/recurrent-neural-networks-tutorial-part-3-backpropagation-through-time-and-vanishing-gradients/
-
-Backpropagation Through Time算法
-
-https://baijia.baidu.com/s?old_id=560025
-
-Tomas Mikolov详解RNN与机器智能的实现
-
-https://sanwen8.cn/p/3f8sRTh.html
-
-为什么RNN需要做正交初始化？
-
-http://blog.csdn.net/shenxiaolu1984/article/details/71508892
-
-RNN的梯度消失/爆炸与正交初始化
-
-https://mp.weixin.qq.com/s/vHQ1WbADHAISXCGxOqnP2A
-
-看大牛如何复盘递归神经网络！
-
-https://mp.weixin.qq.com/s/0V9DeG39is_BxAYX0Yomww
-
-为何循环神经网络在众多机器学习方法中脱颖而出？
-

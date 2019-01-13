@@ -34,6 +34,12 @@ Selective Search的效果类似下图：
 
 $$IOU(A,B)=\frac{A \cap B}{A \cup B}$$
 
+参考：
+
+https://mp.weixin.qq.com/s/dlP3bZoSdm3w3YSDD8DPVg
+
+Selective Search算法与演示
+
 ## 非极大值抑制（NMS）
 
 RCNN会从一张图片中找出n个可能是物体的矩形框，然后为每个矩形框为做类别分类概率（如上图所示）。我们需要判别哪些矩形框是没用的。

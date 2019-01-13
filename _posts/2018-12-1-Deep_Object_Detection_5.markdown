@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（五）——YOLOv3, 其它目标检测网络
+title:  深度目标检测（五）——YOLOv3, One-stage vs. Two-stage, 其它目标检测网络
 category: Deep Object Detection 
 ---
 
@@ -141,6 +141,24 @@ https://zhuanlan.zhihu.com/p/50170492
 https://zhuanlan.zhihu.com/p/52928205
 
 重磅！MobileNet-YOLOv3来了
+
+# One-stage vs. Two-stage
+
+虽然我们在概述一节已经提到了One-stage和Two-stage的概念。但鉴于这个概念的重要性，在介绍完主要的目标检测网络之后，很有必要再次总结一下。
+
+![](/images/img2/One_stage.png)
+
+![](/images/img2/Two_stage.png)
+
+上两图是One-stage和Two-stage的网络结构图。
+
+One-stage一步搞定分类和bbox问题。
+
+而Two-stage则分为两步：
+
+1.根据区域是foreground，还是background，生成bbox。
+
+2.对bbox进行分类和细调。
 
 # 其它目标检测网络
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十六）——SENet, 李飞飞, 深度ISP, RNN进阶, CNN进阶
+title:  深度学习（十六）——SENet, 李飞飞, fine-tuning, 深度ISP, RNN进阶
 category: DL 
 ---
 
@@ -118,6 +118,52 @@ http://vision.stanford.edu/lijiali/
 
 http://zacklipton.com/
 
+# fine-tuning
+
+fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
+
+举个例子，假设今天老板给你一个新的数据集，让你做一下图片分类，这个数据集是关于Flowers的。问题是，数据集中flower的类别很少，数据集中的数据也不多，你发现从零训练开始训练CNN的效果很差，很容易过拟合。怎么办呢，于是你想到了使用Transfer Learning，用别人已经训练好的Imagenet的模型来做。
+
+由于ImageNet数以百万计带标签的训练集数据，使得如CaffeNet之类的预训练的模型具有非常强大的泛化能力，这些预训练的模型的中间层包含非常多一般性的视觉元素，我们只需要对他的后几层进行微调，再应用到我们的数据上，通常就可以得到非常好的结果。最重要的是，**在目标任务上达到很高performance所需要的数据的量相对很少**。
+
+虽然从理论角度尚无法完全解释fine-tuning的原理，但是还是可以给出一些直观的解释。我们知道，CNN越靠近输入端，其抽取的图像特征越原始。比如最初的一层通常只能抽取一些线条之类的元素。越上层，其特征越抽象。
+
+而现实的图像无论多么复杂，总是由简单特征拼凑而成的。因此，无论最终的分类结果差异如何巨大，其底层的图像特征却几乎一致。
+
+![](/images/article/trans_learn.png)
+
+fine-tuning也是图像目标检测、语义分割的基础。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/22624331
+
+fine-tuning:利用已有模型训练其他数据集
+
+http://www.cnblogs.com/louyihang-loves-baiyan/p/5038758.html
+
+Caffe fine-tuning微调网络
+
+http://blog.csdn.net/sinat_26917383/article/details/54999868
+
+caffe中fine-tuning模型三重天（函数详解、框架简述）+微调技巧
+
+http://yongyuan.name/blog/layer-selection-and-finetune-for-cbir.html
+
+图像检索：layer选择与fine-tuning性能提升验证
+
+h1ttps://www.zhihu.com/question/49534423
+
+迁移学习与fine-tuning有什么区别？
+
+https://zhuanlan.zhihu.com/p/37341493
+
+基于Pre-trained模型加速模型学习的6点建议
+
+https://mp.weixin.qq.com/s/54HQU3B4cSdRb1Z4srSfJg
+
+如何为新类别重新训练一个图像分类器
+
 # 深度ISP
 
 ## 数据集
@@ -200,6 +246,14 @@ https://mp.weixin.qq.com/s/7-K-nZTijoYCaprRNYXxFg
 
 ## 参考
 
+https://mp.weixin.qq.com/s/0TLaC8ACXAFEK5aMNK9O-Q
+
+简单循环单元SRU：像CNN一样快速训练RNN
+
+https://zhuanlan.zhihu.com/p/27104240
+
+CW-RNN收益率时间序列回归
+
 https://mp.weixin.qq.com/s/SeR_zNZTu4t7kqB6ltNrmQ
 
 从循环到卷积，探索序列建模的奥秘
@@ -275,97 +329,3 @@ https://mp.weixin.qq.com/s/vIL-bKHZK-6eXZYWxrc9vw
 https://mp.weixin.qq.com/s/GGK9T0DeyIdD5ahHy5uvfg
 
 LightRNN：存储和计算高效的RNN
-
-# CNN进阶
-
-http://mp.weixin.qq.com/s/ddTNr-967IahTZ2X1LNSEQ
-
-盘点影响计算机视觉Top100论文：从ResNet到AlexNet
-
-https://mp.weixin.qq.com/s/gwH9s1ggMTj2dJkad9wUuw
-
-从VGG到NASNet，一文概览图像分类网络
-
-https://mp.weixin.qq.com/s/hIAIbpqItS09KDOSFxaeqg
-
-从Inception v1到Inception-ResNet，一文概览Inception家族的“奋斗史”
-
-https://mp.weixin.qq.com/s/r143qYj8bziu_N-27RWRRw
-
-机器学习5年大跃进，可能是个错觉
-
-https://mp.weixin.qq.com/s/pollD4LN_GHJckzJAjwPqg
-
-侧抑制”卷积神经网络，了解一下？
-
-https://mp.weixin.qq.com/s/gil2K-JKzfRqdzc-abnh6A
-
-王井东：深度融合——一种神经网络结构设计模式
-
-https://mp.weixin.qq.com/s/7l0J5LIAawlkCIrUEGG9aA
-
-卷积神经网络“失陷”，CoordConv来填坑
-
-https://mp.weixin.qq.com/s/4GPLeJiQoDfBZJzF4QmuAg
-
-Excel再现人脸识别：CNN用于计算机视觉任务不再神秘
-
-https://mp.weixin.qq.com/s/30_AwwHS0eqfmYwTvRQ85Q
-
-pooling去哪儿了？
-
-https://mp.weixin.qq.com/s/yTkAhje3A0dRSyTobjsm2A
-
-Pervasive Attention：用于序列到序列预测的2D卷积神经网络
-
-https://zhuanlan.zhihu.com/p/31595192
-
-Deep Image Prior：深度卷积网络先天就理解自然图像
-
-https://mp.weixin.qq.com/s/TelGG-uVQyxwQjiDGE1pqA
-
-特征金字塔网络FPN
-
-https://mp.weixin.qq.com/s/6KC1vhKcyqQ0eZEXJyPqVA
-
-密集连接卷积网络
-
-https://mp.weixin.qq.com/s/vUK2NneOs8OR0vcJEZNbrA
-
-田渊栋等人论文：何时卷积滤波器容易学习？
-
-https://mp.weixin.qq.com/s/PiQB2AvhtDceMJxYN8O8jA
-
-通用卷积神经网络交错组卷积
-
-https://mp.weixin.qq.com/s/2w_Bwqx9C9KwenK480sVMQ
-
-如何可视化卷积网络分类图像时关注的焦点
-
-https://mp.weixin.qq.com/s/yQG0983RjQHIkt9oBlkDqQ
-
-瞎谈CNN：通过优化求解输入图像
-
-http://mp.weixin.qq.com/s/5ozeLeF6IyKTOqAxYEdaog
-
-山东大学提出PointCNN：让CNN更好地处理不规则和无序的点云数据
-
-https://zhuanlan.zhihu.com/p/33445638
-
-传统不死：在CNN中学习和构建空间传播模块
-
-https://mp.weixin.qq.com/s/mtocyqpybSEpwekS20xgmQ
-
-使用CNN生成图像先验，实现更广泛场景的盲图像去模糊
-
-https://mp.weixin.qq.com/s/Uc0VFMmYoOFvH0c7IExKIg
-
-何恺明团队计算机视觉最新进展：从特征金字塔网络、Mask R-CNN到学习分割一切
-
-https://mp.weixin.qq.com/s/W2DqCjmF3oyPLKeETAO5XA
-
-CNN实现“读脑术”，成功解码人脑视觉活动，准确率超50%
-
-https://mp.weixin.qq.com/s/t9ZHW8fkWtnvpM7ynJOTDw
-
-从语义上理解卷积核行为，UCLA朱松纯等人使用决策树量化解释CNN

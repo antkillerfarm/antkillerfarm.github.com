@@ -158,6 +158,10 @@ https://mp.weixin.qq.com/s/NLumRBw5Zqqf08fBJLeTsw
 
 新任务&数据集：视觉常识推理(VCR)
 
+https://mp.weixin.qq.com/s/uqFy-1_JM9P2WKU5YOmwmA
+
+一个22万张NSFW图片的鉴黄数据集？我有个大胆的想法……
+
 ## 人脸/行为
 
 http://blog.csdn.net/wangkr111/article/details/44514097

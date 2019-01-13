@@ -138,6 +138,10 @@ https://zhuanlan.zhihu.com/p/54334986
 
 TridentNet：处理目标检测中尺度变化新思路
 
+https://mp.weixin.qq.com/s/S6sz5dPgGNcJvrIAZ3ZjGg
+
+基于深度学习的通用物体检测算法对比探索
+
 # Flink
 
 Flink是一个流计算引擎。

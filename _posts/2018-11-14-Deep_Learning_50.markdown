@@ -158,6 +158,14 @@ https://mp.weixin.qq.com/s/xHKQlFFkBQLBg2GdZuGPSw
 
 提升GAN训练的技巧汇总
 
+https://mp.weixin.qq.com/s/8Vt3p8iXFq9rI-ph1Syt-Q
+
+Uber提出基于Metropolis-Hastings算法的GAN改进思想
+
+https://mp.weixin.qq.com/s/kobEEizpP2v5Yy-8stiGgg
+
+让画面更逼真！这个强化超分辨率GAN让老游戏迎来第二春
+
 # 深度推理
 
 https://mp.weixin.qq.com/s/RS39wqZDf6gEhOY6gcOVSA
