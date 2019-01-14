@@ -248,6 +248,10 @@ https://mp.weixin.qq.com/s/g9upS70qFOCFBMm-T5nI1A
 
 利用深度学习最新前沿预测股价走势
 
+https://mp.weixin.qq.com/s/otwmDtiDfVVID65RQgT4Uw
+
+教你如何鉴别那些用深度学习预测股价的花哨模型？
+
 # 图像超分辨率进阶
 
 https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg

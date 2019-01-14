@@ -302,6 +302,10 @@ https://mp.weixin.qq.com/s/45QCGUXJ2VM96PNj-LEFxg
 
 麻省理工HAN Lab提出ProxylessNAS自动为目标任务和硬件定制高效CNN结构
 
+https://mp.weixin.qq.com/s/xbkFUfJbaw_h_bCZj3pdAQ
+
+李飞飞等人提出Auto-DeepLab：自动搜索图像语义分割架构
+
 # 多模态学习
 
 https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw

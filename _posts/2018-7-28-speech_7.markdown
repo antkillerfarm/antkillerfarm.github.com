@@ -341,3 +341,7 @@ https://mp.weixin.qq.com/s/QNTJngwEDtxufEpIGTngCw
 https://mp.weixin.qq.com/s/0bTmzKiC7WDbLRcxfAAGqw
 
 提取计数量词丰富知识库
+
+https://mp.weixin.qq.com/s/9MToVjepCZuTgXz967ugjg
+
+如何自动地向知识图谱中添加属性？

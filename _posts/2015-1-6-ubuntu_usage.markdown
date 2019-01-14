@@ -321,5 +321,3 @@ Ubuntu下面关于TFTP的程序，有三套：
 安装命令：
 
 `sudo apt-get install tftp-hpa tftpd-hpa`
-
-
