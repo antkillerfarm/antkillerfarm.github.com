@@ -192,6 +192,10 @@ https://mp.weixin.qq.com/s/Zw-6eTeDt2hsY_uOTtfTDA
 
 最强CNN语音识别算法开源了：词错率5%，训练超快，Facebook出品
 
+https://mp.weixin.qq.com/s/G5foGMWw4p3iP-8U-uvLQg
+
+语音识别的前沿论文，看我们推荐的这4篇
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：

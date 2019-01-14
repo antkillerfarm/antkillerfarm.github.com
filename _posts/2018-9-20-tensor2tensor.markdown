@@ -316,6 +316,10 @@ https://mp.weixin.qq.com/s/9345Y-Ag-2AWPur-NAdiEw
 
 HOG特征详解与行人检测
 
+https://mp.weixin.qq.com/s/0Me2LSvQyDWddp_dUIBHwA
+
+OpenCV场景文字检测
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。

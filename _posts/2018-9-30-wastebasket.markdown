@@ -334,6 +334,14 @@ https://mp.weixin.qq.com/s/7M_xbmDQIlSEB1TKN3fbQw
 
 4种更快更简单实现Python数据可视化的方法
 
+https://mp.weixin.qq.com/s/wsa-HxJRCzhBF8E6yrLCQg
+
+如何用Python画一个中国地图？
+
+https://mp.weixin.qq.com/s/c7Sry6FaGv3ZgkKLekxc2g
+
+用Python画中国地图（下）
+
 ## howmuch.net
 
 howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：

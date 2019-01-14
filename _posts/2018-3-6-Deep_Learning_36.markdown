@@ -72,6 +72,10 @@ https://www.librec.net/
 
 ## 参考
 
+https://zhuanlan.zhihu.com/learningdeep
+
+一个深度推荐的专栏
+
 https://mp.weixin.qq.com/s/GMHjXa2r_1SG3HsA-bcIOQ
 
 从FM推演各深度CTR预估模型

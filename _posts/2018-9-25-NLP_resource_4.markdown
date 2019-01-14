@@ -378,6 +378,10 @@ https://mp.weixin.qq.com/s/-zDMPfR1wWSV9A7HDzJlZA
 
 事件抽取及推理(上)
 
+https://mp.weixin.qq.com/s/GtO3Zf87BTbBQqHAtgAmlA
+
+事件抽取及推理(下)
+
 https://mp.weixin.qq.com/s/4Q8n7i2WKRChJqzHAKcwbw
 
 如何到top5%？NLP文本分类和情感分析竞赛总结

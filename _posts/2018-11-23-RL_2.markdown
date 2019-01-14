@@ -215,6 +215,12 @@ https://mp.weixin.qq.com/s/G8zmooqhSKqcLv1u7uM0bw
 
 AlphaGo等智能体是如何炼成的？你需要懂得马尔科夫链
 
+# A2C
+
+https://zhuanlan.zhihu.com/p/51652845
+
+强化学习这都学不会的话，咳咳，你过来下！
+
 # 模仿学习
 
 https://zhuanlan.zhihu.com/p/27935902

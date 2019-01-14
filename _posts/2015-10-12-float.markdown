@@ -254,10 +254,6 @@ https://mp.weixin.qq.com/s/Y0fcVw6KUfoM8UWvk8VoPg
 
 Scikit-learn玩得很熟了？这些功能你都知道吗？
 
-https://mp.weixin.qq.com/s/c7Sry6FaGv3ZgkKLekxc2g
-
-用Python画中国地图
-
 https://mp.weixin.qq.com/s/iN-hXd6iGkFC8bxAjwxHNw
 
 一文简述多种无监督聚类算法的Python实现
