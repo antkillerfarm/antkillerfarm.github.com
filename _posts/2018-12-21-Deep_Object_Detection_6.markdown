@@ -259,3 +259,17 @@ https://www.zhihu.com/question/57701136
 https://www.zhihu.com/question/26946942
 
 天然铀的放射性类型是什么？近距离接触对人有危害吗？
+
+----
+
+https://www.zhihu.com/question/40030083
+
+太阳在变成红巨星之前（逐渐变热，外围膨胀到地球轨道），人类有什么办法回避，并生存下来？
+
+https://en.wikipedia.org/wiki/Dyson_sphere
+
+https://en.wikipedia.org/wiki/Kardashev_scale
+
+![](/images/img2/Kardashev.png)
+
+![](/images/img2/Sundeath.gif)

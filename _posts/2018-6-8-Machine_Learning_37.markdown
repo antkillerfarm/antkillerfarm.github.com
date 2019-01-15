@@ -222,6 +222,10 @@ https://mp.weixin.qq.com/s/4hSar7SuCjLkZUjuIfu1Lg
 
 如何选择最适合你的学习率变更策略
 
+https://zhuanlan.zhihu.com/p/32923584
+
+Tensorflow中learning rate decay的奇技淫巧
+
 https://mp.weixin.qq.com/s/qk3cw05ZdlYEKDGRG0fnLg
 
 距离几何优化问题--从美国计算机教授追回被抢车辆谈起

@@ -164,6 +164,38 @@ http://www.cnblogs.com/hhh5460/p/5129032.html
 
 numpy数据类型dtype转换
 
+### 运算符重载
+
+运算符重载，本来是python语言提供的功能。但通常来说，还是数值计算领域用的比较多，所以就写在这里了。
+
+C++的运算符重载，使用运算符作为函数名。而python则使用内置函数名，作为运算符重载的函数名。例如，`__lt__`函数对应`<`运算符。
+
+>从设计上，我是比较支持python这种方式的。毕竟运算符都有特定含义，突然变成函数名，还是挺别扭的。
+
+numpy的运算符重载还是挺方便的。
+
+示例：
+
+`a[a<0.5]=0`
+
+上面的示例，可将a中小于0.5的值都设置为0。其中，`a<0.5`实际上返回的是一个bool型的tensor。
+
+python的运算符重载不仅于`+-*/><`，还包括索引之类的操作。例如`__getitem__`和`__setitem__`分别对应了`X[key]`的读写操作。
+
+参考：
+
+https://blog.csdn.net/goodlixueyong/article/details/52589979
+
+浅析Python运算符重载
+
+### 特色函数
+
+nan_to_num：将NaN替换为0，将infinity替换为最大值。
+
+histogram：直方图。
+
+percentile：百分位数。用途举例：提取数组中最小的30%的数。
+
 ### 参考
 
 https://mp.weixin.qq.com/s/FVI3zEp4it-fd99-3MU9vA
@@ -413,75 +445,3 @@ Compute the HOG descriptor by skimage
 https://mp.weixin.qq.com/s/WL8jfxB-xukP_MkN2aMb0w
 
 OpenCV，PIL，Skimage你pick谁
-
-## Numba
-
-NumPy的一个高速版本，能完成前者大部分的功能。
-
-官网：
-
-http://numba.pydata.org/
-
-参考：
-
-https://mp.weixin.qq.com/s/5peMiGXNnviAjMP76tV3pw
-
-Python高性能计算库——Numba
-
-## Autograd
-
-一个基于numpy的自动求导库。它是由Harvard Intelligent Probabilistic Systems Group开发的。
-
-官网：
-
-https://github.com/HIPS/autograd
-
-## Face Recognition
-
-这是一个人脸识别的软件包。
-
-代码：
-
-https://github.com/ageitgey/face_recognition
-
-参考：
-
-https://mp.weixin.qq.com/s/QcMsSsZY7TcNQ3G57p8eyQ
-
-3行Python代码完成人脸识别
-
-## Luminoth
-
-Luminoth是一个开源的计算机视觉工具包，目前支持目标探测和图像分类，但以后会有更多的扩展。该工具包在TensorFlow和Sonnet上用Python搭建而成。
-
-代码：
-
-https://github.com/tryolabs/luminoth
-
-## Tangent
-
-Tangent是一个用于自动微分的源到源Python库。
-
-官网：
-
-https://github.com/google/tangent
-
-参考：
-
-https://mp.weixin.qq.com/s/CExdIdtUxZi4c2B39xdYJA
-
-谷歌开源Tangent
-
-## VisPy
-
-VisPy可以算的上是Matplotlib的威力加强版，它添加了对GPU、3D和大数据的支持。
-
-官网：
-
-http://vispy.org/
-
-参考：
-
-https://mp.weixin.qq.com/s/yduK_XKQ-qhiYTNl-YZMFg
-
-利用Python实现卷积神经网络的可视化

@@ -231,10 +231,6 @@ https://mp.weixin.qq.com/s/7sS-r6jIF4GAhZicBfFGDA
 
 通过代码原理教你搞懂SGD随机梯度下降、BGD、MBGD
 
-https://zhuanlan.zhihu.com/p/32923584
-
-Tensorflow中learning rate decay的奇技淫巧
-
 ## 正规方程组算法
 
 正规方程组（Normal Equations）算法，是传统的以解方程的方式求最小值的方法。

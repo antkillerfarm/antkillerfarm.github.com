@@ -244,7 +244,7 @@ https://mp.weixin.qq.com/s/bUtu2nTs0bybnTvk-iLt6Q
 
 GTS来了！阿里微服务架构下的分布式事务解决方案
 
-# Machine Learning之Python篇+
+# Machine Learning之Python篇
 
 https://mp.weixin.qq.com/s/wlUH5aavqHDXOvBTnxvAdg
 
