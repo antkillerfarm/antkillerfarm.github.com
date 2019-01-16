@@ -234,6 +234,10 @@ https://mp.weixin.qq.com/s/YLhECwwig9f21zk1-PNiTw
 
 25篇车辆检测与分类DL文章读懂自动驾驶
 
+https://mp.weixin.qq.com/s/KTC0j9Bt4L-diQ2M_HAqxg
+
+自动驾驶最新综述论文
+
 https://mp.weixin.qq.com/s/vKkjYdf6Ast7wWcW9oIEuA
 
 88美元的自动驾驶“自制原子弹”，最著名黑客详解panda系统

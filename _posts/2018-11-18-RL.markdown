@@ -202,6 +202,10 @@ https://mp.weixin.qq.com/s/wMwqDfIAdDyeeE_ZnBh0zg
 
 强化学习：Policy-based方法Part2
 
+https://zhuanlan.zhihu.com/p/54985200
+
+用有趣的文字，教你强化学习入门知识（上）
+
 # K-摇臂赌博机
 
 ![](/images/article/Multi-Armed_Bandit.jpg)

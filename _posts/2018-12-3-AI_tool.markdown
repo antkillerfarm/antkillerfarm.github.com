@@ -286,6 +286,10 @@ https://mp.weixin.qq.com/s/Gg5wIyMl5XqG7ju4DPJ5fg
 
 简单易用NLP框架Flair发布新版本
 
+https://aifiddle.io/
+
+网页版深度学习模型编辑器，搭建运行样样都行，还能3D可视化
+
 # DL参考资源+
 
 https://mp.weixin.qq.com/s/Sb_kPgtwyQFWloDT3707TA

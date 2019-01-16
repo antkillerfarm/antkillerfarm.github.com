@@ -196,6 +196,10 @@ https://mp.weixin.qq.com/s/G5foGMWw4p3iP-8U-uvLQg
 
 语音识别的前沿论文，看我们推荐的这4篇
 
+https://mp.weixin.qq.com/s/fbOJJeU9h6FfsV9QFFv2gg
+
+重磅公开！阿里语音识别模型端核心技术，让你“听”见未来
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：

@@ -238,3 +238,6 @@ https://mp.weixin.qq.com/s/pL1Wvd3oBRVtqG9I4O4oDg
 
 DeepLab V3
 
+https://zhuanlan.zhihu.com/p/54911894
+
+语义分割之DeepLabv2

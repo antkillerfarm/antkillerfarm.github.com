@@ -128,6 +128,10 @@ https://mp.weixin.qq.com/s/kX23axjtgPRb64jb1HQLOQ
 
 苏宁的Node.js实践：不低于Java的渲染性能、安全稳定迭代快
 
+https://mp.weixin.qq.com/s/mCOHF2MMIOD4QZJzyfi7Vw
+
+携程机票Node.js开发实践
+
 ## NPM
 
 npm是node.js的软件包管理工具。它的官网是：

@@ -292,6 +292,10 @@ https://mp.weixin.qq.com/s/Ug0jyloNkeL6uuCqv9K0SA
 
 图像/人脸补全问题的前世今生
 
+https://mp.weixin.qq.com/s/xdFxQfgj61pgB-aCq31rLA
+
+旷视等提出GIF2Video：首个深度学习GIF质量提升方法
+
 # 模型压缩与加速
 
 https://mp.weixin.qq.com/s/nEMvoiqImd0RxrskIH7c9A

@@ -234,14 +234,6 @@ http://www.moe.gov.cn/s78/A16/A16_ztzl/ztzl_kxnt/kxnt_sgxz/201512/t20151218_2253
 
 10000个科学难题数学卷
 
-https://www.zhihu.com/question/303562583/answer/564059120
-
-水星为什么没有卫星？这个答案同样可以解释——为什么卫星没有卫星？
-
-![](/images/img2/earth_moon.jpg)
-
-上图是地球和月亮之间的引力场图，以及5个**拉格朗日点**。
-
 ## LSM (Log Structured Merge)
 
 十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。
@@ -325,6 +317,10 @@ https://mp.weixin.qq.com/s/ndzLKJC2Tvg2gKrr6jUNTw
 http://echarts.baidu.com/echarts2/doc/example.html
 
 各种大数据展示用的图表
+
+https://mp.weixin.qq.com/s/8J-uDw0qwDbj21UkQch2KA
+
+跨平台Canvas绘图引擎背后的黑科技
 
 https://mp.weixin.qq.com/s/94IGjVPXZ0FeCILQN33eBQ
 

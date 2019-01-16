@@ -198,6 +198,10 @@ https://zhuanlan.zhihu.com/p/54510782
 
 DANet论文笔记
 
+https://mp.weixin.qq.com/s/94XHMHejqKmkFVA0Vzfrsw
+
+有关语义分割的奇技淫巧有哪些？
+
 # 问答系统
 
 GA-Reader

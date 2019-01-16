@@ -86,6 +86,10 @@ https://www.zhihu.com/question/63581984
 
 如何评价Kaiming的Focal Loss for Dense Object Detection？
 
+https://mp.weixin.qq.com/s/Uf1lWtxOpKYCDLmCDlnVAQ
+
+把Cross Entropy梯度分布拉‘平’，就能轻松超越Focal Loss
+
 ## OHEM
 
 论文：

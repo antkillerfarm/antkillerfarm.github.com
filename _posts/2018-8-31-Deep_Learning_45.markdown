@@ -162,6 +162,10 @@ https://mp.weixin.qq.com/s/o3WqVIxlsukt3_JcY-10LA
 
 AdaNet简介：快速灵活的 AutoML，提供学习保证
 
+https://mp.weixin.qq.com/s/rllQLPPYxxLCK9-dgOjLDg
+
+另一种可微架构搜索：商汤提出在反传中学习架构参数的SNAS
+
 ## 书籍
 
 https://mp.weixin.qq.com/s/wTwjbripELzqdCjs64Dzzw

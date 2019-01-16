@@ -262,6 +262,18 @@ https://www.zhihu.com/question/26946942
 
 ----
 
+https://www.zhihu.com/question/303562583/answer/564059120
+
+水星为什么没有卫星？这个答案同样可以解释——为什么卫星没有卫星？
+
+![](/images/img2/earth_moon.jpg)
+
+上图是地球和月亮之间的引力场图，以及5个**拉格朗日点**。
+
+木星的轨道上存在两个与木星运行轨道及速率一致两群小行星，统称为特洛伊群，其中运行在木星“前方”的为“希腊群”，运行在木星“后方”的为“纯特洛伊群”。
+
+----
+
 https://www.zhihu.com/question/40030083
 
 太阳在变成红巨星之前（逐渐变热，外围膨胀到地球轨道），人类有什么办法回避，并生存下来？
@@ -273,3 +285,11 @@ https://en.wikipedia.org/wiki/Kardashev_scale
 ![](/images/img2/Kardashev.png)
 
 ![](/images/img2/Sundeath.gif)
+
+----
+
+![](/images/img2/Galilean_moon_Laplace_resonance.gif)
+
+https://en.wikipedia.org/wiki/Titius–Bode_law
+
+https://en.wikipedia.org/wiki/Orbital_resonance

@@ -324,6 +324,10 @@ https://mp.weixin.qq.com/s/s_s-MtrEwRNyllV_9qpAQA
 
 放弃幻想，全面拥抱Transformer：NLP三大特征抽取器（CNN/RNN/TF）比较
 
+https://mp.weixin.qq.com/s/NtWMcwUGg591meuGubWY1g
+
+CMU和谷歌联手放出XL号Transformer！提速1800倍
+
 # DMN
 
 Question answering是自然语言处理领域的一个复杂问题。它需要对文本的理解力和推理能力。大部分NLP问题都可以转化为一个QA问题。Dynamic Memory Networks可以用来处理QA问题。DMN的输入包含事实输入，问题输入，经过内部处理形成片段记忆，最终产生问题的答案。
