@@ -389,3 +389,7 @@ https://mp.weixin.qq.com/s/4Q8n7i2WKRChJqzHAKcwbw
 https://mp.weixin.qq.com/s/mWOhh9rJru_YDwQEB34GNg
 
 深度学习在金融文本情感分类中的应用
+
+https://mp.weixin.qq.com/s/tvfCW7Lwkug9ILKpJuMnUA
+
+上下文敏感的改写式回复生成模型

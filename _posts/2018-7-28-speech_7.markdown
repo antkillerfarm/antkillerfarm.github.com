@@ -304,6 +304,14 @@ https://mp.weixin.qq.com/s/K1EIKe6U7rmlYAeZkP5O1w
 
 一种新的智能车辆精确定位方法——路面车道线编码
 
+https://blog.csdn.net/Young_Gy/article/details/75194914
+
+无人驾驶之车道线检测简易版
+
+https://mp.weixin.qq.com/s/M-J_WaV6AstRwZISPYQ-NA
+
+再识图像之高级车道线检测
+
 https://mp.weixin.qq.com/s/7kuMFIhJmjvVSRrmeAUE7w
 
 120页高清汽车构造图解，太NB了！每个人都该看看
@@ -345,3 +353,7 @@ https://mp.weixin.qq.com/s/0bTmzKiC7WDbLRcxfAAGqw
 https://mp.weixin.qq.com/s/9MToVjepCZuTgXz967ugjg
 
 如何自动地向知识图谱中添加属性？
+
+https://mp.weixin.qq.com/s/a3mGbLMfTxYuMcraW0JWdQ
+
+知识图谱最新论文清单，高阶炼丹师为你逐一解读

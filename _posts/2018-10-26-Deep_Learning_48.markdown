@@ -192,7 +192,7 @@ https://mp.weixin.qq.com/s/ZN9ZYPTcgVP2c9mCx9Ox3g
 
 https://mp.weixin.qq.com/s/x95XWQW2euTEcUW5vkIEoA
 
-何恺明组又出神作！最新论文提出全景分割新方法
+何恺明组又出神作！最新论文提出全景分割新方法（Panoptic FPN）
 
 https://zhuanlan.zhihu.com/p/54510782
 

@@ -226,6 +226,20 @@ DeepFace先进行了两次全卷积＋一次池化，提取了低层次的边缘
 
 后接了3个Local-Conv层，这里是用Local-Conv的原因是，人脸在不同的区域存在不同的特征（眼睛／鼻子／嘴的分布位置相对固定），当不存在全局的局部特征分布时，Local-Conv更适合特征的提取。
 
+## 人脸关键点
+
+https://zhuanlan.zhihu.com/p/42968117
+
+人脸关键点检测综述
+
+https://mp.weixin.qq.com/s/CvdeV5xgUF0kStJQdRst0w
+
+从传统方法到深度学习，人脸关键点检测方法综述
+
+https://mp.weixin.qq.com/s/ZrnAqDJCLtMy_qTQ2RZT0A
+
+级联MobileNet-V2实现人脸关键点检测
+
 ## 参考
 
 https://mp.weixin.qq.com/s/eZ78biXN-mVw3s9Ky_LBZg
@@ -308,10 +322,6 @@ https://mp.weixin.qq.com/s/1g9PXc_3nhKMf1_-E_cVAA
 
 图像识别的原理、过程、应用前景，精华篇！
 
-https://mp.weixin.qq.com/s/CvdeV5xgUF0kStJQdRst0w
-
-从传统方法到深度学习，人脸关键点检测方法综述
-
 https://zhuanlan.zhihu.com/p/34404607
 
 人脸识别的LOSS（上）
@@ -319,10 +329,6 @@ https://zhuanlan.zhihu.com/p/34404607
 https://zhuanlan.zhihu.com/p/34436551
 
 人脸识别的LOSS（下）
-
-https://mp.weixin.qq.com/s/ZrnAqDJCLtMy_qTQ2RZT0A
-
-级联MobileNet-V2实现人脸关键点检测
 
 https://mp.weixin.qq.com/s/i4HdS-lCrsv9YR39Hja8ow
 

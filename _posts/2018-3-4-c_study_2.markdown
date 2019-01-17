@@ -94,6 +94,28 @@ HBuilder，一个html编辑的IDE。
 
 # Python
 
+## Sqlite
+
+Ubuntu下的安装方法是：
+
+`sudo apt-get install sqlite`
+
+Python自带了pysqlite包，用于调用sqlite。
+
+pysqlite的helloworld程序可参见：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/pysqlite-helloworld.py
+
+可以使用sqlite_bro软件包，查看sqlite数据库。安装方法：
+
+`sudo pip install sqlite_bro`
+
+参考：
+
+https://mp.weixin.qq.com/s/HcmOmwWQFBIOZs8p3nr7CQ
+
+让Python更加充分的使用Sqlite3
+
 ## python调用GTK函数的一般规则
 
 众所周知，GTK库是用C语言编写的，其相关的文档提供的也是C函数的接口，python接口的文档相对较少，获得也不太容易。因此有必要掌握一下这方面基本的命名规则。（这里只讲方法，对深层次的调用原理不做探究。）

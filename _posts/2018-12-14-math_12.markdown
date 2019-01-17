@@ -146,6 +146,10 @@ https://mp.weixin.qq.com/s/W_JjnDuinmLrahIpPY8h-g
 
 tcp服务端一直sleep，客户端发送数据问题总结
 
+https://mp.weixin.qq.com/s/IcpaoCU6WXYRTqOuC4AmKQ
+
+用信鸽来解释HTTPS
+
 # TensorFlow+
 
 https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg

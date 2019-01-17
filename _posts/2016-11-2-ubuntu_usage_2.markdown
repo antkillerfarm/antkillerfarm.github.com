@@ -185,6 +185,8 @@ eta：estimated time of arrival
 
 w/o：without
 
+N.B.:nota bene 注意,留心
+
 # 远程桌面
 
 Linux下的远程桌面软件主要有RealVNC和rdesktop。前者支持VNC协议，而后者支持MS RDP协议，可连接Windows系统。

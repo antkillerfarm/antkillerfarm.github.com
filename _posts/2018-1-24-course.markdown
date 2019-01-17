@@ -394,6 +394,10 @@ https://seeing-theory.brown.edu/
 
 一本好玩的可视化统计概率入门书
 
+https://inst.eecs.berkeley.edu/~cs188/fa18/
+
+UCB CS188: Introduction to Artificial Intelligence
+
 # Machine Learning之Python篇
 
 https://mp.weixin.qq.com/s/8NI-NayCg_gZmJ6-1FZ_DA

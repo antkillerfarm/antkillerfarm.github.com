@@ -50,6 +50,10 @@ Information Retrieval是用户进行信息查询和获取的主要方式，是�
 
 ## 参考
 
+https://github.com/harpribot/awesome-information-retrieval
+
+信息检索优质资源汇总
+
 https://mp.weixin.qq.com/s/aZsj1FQnzHOr-YBcy_ljpw
 
 DNN在搜索场景中的应用

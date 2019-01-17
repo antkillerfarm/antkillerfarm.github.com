@@ -276,6 +276,10 @@ API参考：
 
 http://matplotlib.org/1.5.3/api/index.html
 
+示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/plot/matplotlib_helloworld.py
+
 参考：
 
 https://mp.weixin.qq.com/s/mpj1QpWpnGm8117p3cEWZw

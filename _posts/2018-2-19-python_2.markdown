@@ -204,6 +204,41 @@ https://www.cnblogs.com/elie/p/5876210.html
 
 python中@classmethod @staticmethod区别
 
+## class的另类用法
+
+由于python是动态脚本语言，它的class的用法也非常灵活。你甚至无须事先定义类的成员变量，而只需要运行时添加即可。
+
+示例：
+
+{% highlight python %}
+class A():
+    pass
+
+a=A()
+a.name = "Job"
+a.age = 10
+{% endhighlight %}
+
+## del
+
+由于python都是引用，而python有GC机制，所以，del语句作用在变量上，而不是数据对象上。
+
+{% highlight python %}
+if __name__=='__main__':
+    a=1       # 对象 1 被 变量a引用，对象1的引用计数器为1
+    b=a       # 对象1 被变量b引用，对象1的引用计数器加1
+    c=a       #1对象1 被变量c引用，对象1的引用计数器加1
+    del a     #删除变量a，解除a对1的引用
+    del b     #删除变量b，解除b对1的引用
+    print(c)  #最终变量c仍然引用1
+{% endhighlight %}
+
+参考：
+
+https://blog.csdn.net/love1code/article/details/47276683
+
+python中del的用法
+
 ## Python 2 to Python 3
 
 https://www.linuxzen.com/qian-yi-dao-python-3.html
@@ -374,25 +409,3 @@ https://networkx.github.io/
 https://www.cnblogs.com/kaituorensheng/p/5423131.html
 
 python复杂网络分析库NetworkX
-
-## Sqlite
-
-Ubuntu下的安装方法是：
-
-`sudo apt-get install sqlite`
-
-Python自带了pysqlite包，用于调用sqlite。
-
-pysqlite的helloworld程序可参见：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/pysqlite-helloworld.py
-
-可以使用sqlite_bro软件包，查看sqlite数据库。安装方法：
-
-`sudo pip install sqlite_bro`
-
-参考：
-
-https://mp.weixin.qq.com/s/HcmOmwWQFBIOZs8p3nr7CQ
-
-让Python更加充分的使用Sqlite3

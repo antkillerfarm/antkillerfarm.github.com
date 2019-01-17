@@ -26,6 +26,14 @@ CNN中的padding：
 
 "VALID" = without padding。
 
+----
+
+op的自定义实现可使用`tf.py_func`。
+
+----
+
+tf.dtypes.cast: 类型转换
+
 ## blog
 
 http://www.jianshu.com/u/eaec1fc422e9
