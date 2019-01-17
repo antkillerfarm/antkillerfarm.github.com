@@ -357,3 +357,7 @@ https://mp.weixin.qq.com/s/9MToVjepCZuTgXz967ugjg
 https://mp.weixin.qq.com/s/a3mGbLMfTxYuMcraW0JWdQ
 
 知识图谱最新论文清单，高阶炼丹师为你逐一解读
+
+https://mp.weixin.qq.com/s/p6SDazuTjgG1ERl5ku2-VQ
+
+如何构建多快好省的“知识图谱即服务”？

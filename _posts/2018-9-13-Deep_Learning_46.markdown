@@ -190,6 +190,10 @@ https://mp.weixin.qq.com/s/9f158VM_FoNVuODNER-BUw
 
 端到端的弯曲文本检测与识别
 
+https://mp.weixin.qq.com/s/J5DGF3JRZxk1-fAQSQNvkQ
+
+MORAN文本识别算法开源，刷新多个OCR数据集state-of-the-art
+
 # 元学习
 
 人工智能的历史显示了明确的进展方向：

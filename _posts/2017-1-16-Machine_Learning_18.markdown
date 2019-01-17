@@ -263,6 +263,10 @@ https://mp.weixin.qq.com/s/iKM6zMSm1F2icjy79F9Hcg
 
 季节性的分析才不简单，小心不要在随机数据中也分析出季节性
 
+https://zhuanlan.zhihu.com/p/55129654
+
+时间序列的单调性
+
 # 异常检测
 
 http://chuansong.me/n/377440751130

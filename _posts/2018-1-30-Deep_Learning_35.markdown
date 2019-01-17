@@ -282,6 +282,10 @@ https://mp.weixin.qq.com/s/XVF1fvSM1vN5ywPz3rClCg
 
 基于人体骨架的行为识别
 
+https://mp.weixin.qq.com/s/dwSWcu4tcLE2Z1BOYL4QRA
+
+6D目标姿态估计，李飞飞夫妇等提出DenseFusion
+
 # VAE进阶
 
 https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw

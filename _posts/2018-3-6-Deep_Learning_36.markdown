@@ -371,3 +371,7 @@ https://mp.weixin.qq.com/s/2Th2PO4rC-r4LOU46uYDjg
 https://mp.weixin.qq.com/s/A7Qg1gd66aksA6npJl3dNQ
 
 深度学习在搜索业务中的探索与实践
+
+https://mp.weixin.qq.com/s/wjgoH6-eJQDL1KUQD3aQUQ
+
+大众点评搜索基于知识图谱的深度学习排序实践
