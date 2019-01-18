@@ -8,6 +8,32 @@ category: resource
 
 ## 并行 & 框架（续）
 
+https://mp.weixin.qq.com/s/wIdTDHEPffWqHA3_XWBLyw
+
+没错，纯SQL查询语句可以实现神经网络。
+
+>SQL跑神经网络固然没有太大意义，然而分布式数据库已经有数十年的历史，对于设计分布式深度学习框架亦有重大的启发意义。
+
+https://zhuanlan.zhihu.com/p/33351291
+
+基于忆阻器（ReRAM），Computing-in-Memory的DLA
+
+https://mp.weixin.qq.com/s/eTwSo3GnxSnK-BwwZeWmKA
+
+Jeff Dean等提出自动化分层模型，优化CPU、GPU等异构环境，性能提升超60%
+
+https://mp.weixin.qq.com/s/q0VENBNgolpeWmDapF5q_g
+
+在有池化层、1步幅的CNN上减少冗余计算，一种广泛适用的架构转换方法
+
+https://mp.weixin.qq.com/s/sn8fMAbJbeT6JUbCpBpN6A
+
+Jeff Dean与David Patterson：不思考体系结构的深度学习研究者不是好工程师
+
+https://mp.weixin.qq.com/s/6zLrWJ4nE0bHFlVe5dMxHw
+
+分布式深度学习新进展：让“分布式”和“深度学习”真正深度融合
+
 https://mp.weixin.qq.com/s/hjC-WTMIpbWWpmXoLBfD2g
 
 腾讯大规模分布式机器学习系统无量是如何进行技术选型的？
@@ -335,44 +361,6 @@ https://mp.weixin.qq.com/s/YnOFJIf-l6CxSWdxIJn1FA
 http://mp.weixin.qq.com/s/oBy_Xl7FSBUd46H9E8yUbA
 
 AI博士五星指南：入行自评，选大公司还是初创企业
-
-## 面试
-
-https://mp.weixin.qq.com/s/U5hlr69m_9Znwjkj3Yl4Hg
-
-《深度学习500问》一份超全深度学习资料，面试必备！
-
-https://www.zhihu.com/question/41233373
-
-如果你是面试官，你怎么去判断一个面试者的深度学习水平？
-
-https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
-
-20万、50万、100万的算法工程师，到底有什么区别？
-
-https://www.zhihu.com/question/56676679/answer/151505274
-
-机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
-
-https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
-
-面试官是如何看出你机器学习水平的？
-
-https://mp.weixin.qq.com/s?__biz=MzI3NTA0MzM1OQ==&mid=2651615534&idx=1&sn=00ecd7dc1d8472c070e720a1b63f04c4
-
-我如何考察面试者的机器学习水平
-
-https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
-
-谷歌等巨头机器学习面试题：从逻辑回归到智力测验
-
-https://mp.weixin.qq.com/s/9ivDZXpPpLE3fuPgpNUyJA
-
-超全数据科学与机器学习面试指南
-
-https://mp.weixin.qq.com/s/qmdfLlTfQzT0QVq_SzEPUw
-
-机器学习和深度学习中值得弄清楚的一些问题
 
 ## 光神经网络
 

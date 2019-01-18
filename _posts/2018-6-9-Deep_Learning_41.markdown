@@ -261,6 +261,10 @@ https://mp.weixin.qq.com/s/83oOI0oJ_QN-o1LZ439UVQ
 
 自然语言处理中的深度迁移学习——文本预训练
 
+https://mp.weixin.qq.com/s/MAlH3EYAg88IROsV1klKlA
+
+结构化数据的迁移学习：嫁接学习
+
 # Mask R-CNN
 
 Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的NN。它是何恺明2017年的新作。

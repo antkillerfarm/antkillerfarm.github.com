@@ -110,6 +110,12 @@ StackEdit是一个在线的markdown编辑工具，被CSDN等网站所使用。
 
 https://stackedit.io/
 
+## 参考
+
+https://mp.weixin.qq.com/s/CHca0V7LR4NhomtLIPhc4w
+
+如何用Markdown做幻灯？
+
 # Google Code
 
 2013.12
@@ -263,30 +269,3 @@ BBR是个什么鬼？-2 外皮后的真相
 https://mp.weixin.qq.com/s/NWNMfykpJQ-LD9oV1X6zTw
 
 基于bbr拥塞控制的云盘提速实践
-
-# QUIC
-
-Quic全称quick udp internet connection，“快速 UDP 互联网连接”，是由google提出的使用udp进行多路并发传输的协议。
-
-Quic相比现在广泛应用的 http2+tcp+tls 协议有如下优势：
-
-1.减少了TCP三次握手及TLS握手时间。
-
-2.改进的拥塞控制。
-
-3.避免队头阻塞的多路复用。
-
-4.连接迁移。
-
-5.前向冗余纠错。
-
-参考：
-
-https://mp.weixin.qq.com/s/vpz6bp3PT1IDzZervyOfqw
-
-QUIC协议原理分析
-
-https://mp.weixin.qq.com/s/_RAXrlGPeN_3D6dhJFf6Qg
-
-让互联网更快的协议，QUIC在腾讯的实践及性能优化
-

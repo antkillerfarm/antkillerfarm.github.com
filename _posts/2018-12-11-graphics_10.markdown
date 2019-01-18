@@ -221,3 +221,11 @@ https://zhuanlan.zhihu.com/p/32752535
 https://mp.weixin.qq.com/s/cVTfk0xK6F_gHRnoHYUxSw
 
 计算机视觉基本原理介绍—RANSAC
+
+https://blog.csdn.net/wanghanthu/article/details/52777512
+
+Tracking算法：Discriminative Correlation Filter (DCF)
+
+https://blog.csdn.net/wanghanthu/article/details/53375393
+
+Kernelized Correlation Filters (KCF) Tracking算法

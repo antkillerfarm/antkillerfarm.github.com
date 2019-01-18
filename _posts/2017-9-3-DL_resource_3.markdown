@@ -6,6 +6,32 @@ category: resource
 
 # DL参考资源
 
+## 遗传算法 & 进化算法（续）
+
+https://mp.weixin.qq.com/s/GdY4UAdF5ufiTpl0GsTbpQ
+
+数据+进化算法=数据驱动的进化优化？进化算法 PK 数学优化
+
+https://mp.weixin.qq.com/s/iAmkb2EdYofJU1AoBw2HyA
+
+多目标优化详解
+
+https://mp.weixin.qq.com/s/MCKkngSzzsABxyiGAFA1lg
+
+进化计算在深度学习中的应用
+
+https://mp.weixin.qq.com/s/G8Xj_G9rxI4SinX0VZ35WA
+
+用人工蜂群算法求解k-分区聚类问题
+
+https://mp.weixin.qq.com/s/su2F2F3dtl6W-WNuQHNpJg
+
+不使用深度学习，进化算法也能玩Atari游戏！
+
+http://www.cnblogs.com/tsingke/p/6258967.html
+
+CMA-ES算法
+
 ## AI与游戏
 
 https://zhuanlan.zhihu.com/p/22604627
@@ -361,29 +387,3 @@ Jeff Dean等提出动态控制流编程模型，大规模机器学习性能提�
 https://mp.weixin.qq.com/s/fx0Pfu0MOPjSkzi5mL6U_A
 
 清华&斯坦福提出深度梯度压缩DGC，大幅降低分布式训练网络带宽需求
-
-https://mp.weixin.qq.com/s/wIdTDHEPffWqHA3_XWBLyw
-
-没错，纯SQL查询语句可以实现神经网络。
-
->SQL跑神经网络固然没有太大意义，然而分布式数据库已经有数十年的历史，对于设计分布式深度学习框架亦有重大的启发意义。
-
-https://zhuanlan.zhihu.com/p/33351291
-
-基于忆阻器（ReRAM），Computing-in-Memory的DLA
-
-https://mp.weixin.qq.com/s/eTwSo3GnxSnK-BwwZeWmKA
-
-Jeff Dean等提出自动化分层模型，优化CPU、GPU等异构环境，性能提升超60%
-
-https://mp.weixin.qq.com/s/q0VENBNgolpeWmDapF5q_g
-
-在有池化层、1步幅的CNN上减少冗余计算，一种广泛适用的架构转换方法
-
-https://mp.weixin.qq.com/s/sn8fMAbJbeT6JUbCpBpN6A
-
-Jeff Dean与David Patterson：不思考体系结构的深度学习研究者不是好工程师
-
-https://mp.weixin.qq.com/s/6zLrWJ4nE0bHFlVe5dMxHw
-
-分布式深度学习新进展：让“分布式”和“深度学习”真正深度融合

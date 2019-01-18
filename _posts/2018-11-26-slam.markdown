@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  SLAM, 传感器, 有用的网址集合（二）
+title:  SLAM, 传感器
 category: resource 
 ---
 
@@ -11,6 +11,10 @@ category: resource
 http://www.cnblogs.com/gaoxiang12/
 
 一个SLAM方面的blog。作者半闲居士，目前在德国慕尼黑工业大学留学，清华本科。
+
+https://vision.in.tum.de/research/vslam
+
+这是慕尼黑工业大学的相关网页。提供了很多SLAM方面的教程和工具，例如LSD-SLAM。
 
 https://blog.csdn.net/heyijia0327
 

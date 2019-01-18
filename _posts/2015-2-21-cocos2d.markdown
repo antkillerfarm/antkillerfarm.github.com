@@ -283,6 +283,32 @@ DisplayLinkDirector::mainLoop
 
 Director::drawScene
 
+# QUIC
+
+Quic全称quick udp internet connection，“快速 UDP 互联网连接”，是由google提出的使用udp进行多路并发传输的协议。
+
+Quic相比现在广泛应用的 http2+tcp+tls 协议有如下优势：
+
+1.减少了TCP三次握手及TLS握手时间。
+
+2.改进的拥塞控制。
+
+3.避免队头阻塞的多路复用。
+
+4.连接迁移。
+
+5.前向冗余纠错。
+
+参考：
+
+https://mp.weixin.qq.com/s/vpz6bp3PT1IDzZervyOfqw
+
+QUIC协议原理分析
+
+https://mp.weixin.qq.com/s/_RAXrlGPeN_3D6dhJFf6Qg
+
+让互联网更快的协议，QUIC在腾讯的实践及性能优化
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/QFYZwbrTJuN-JiMJ5NQxWg
@@ -304,27 +330,3 @@ https://mp.weixin.qq.com/s/hjRRmCK4QBJ6UTABAR-cig
 https://mp.weixin.qq.com/s/fJUQXnVwTlfOC37Go0lLUg
 
 携程图像智能化建设之路
-
-https://mp.weixin.qq.com/s/gPI6Vq6smDn8IiKhGe61bA
-
-用深度学习DIY自动化监控系统
-
-https://mp.weixin.qq.com/s/JkYFx4tN2x8y5tYPyonE9g
-
-建模任务相关注视点转移，实现第一人称视频注视点的准确估计
-
-https://mp.weixin.qq.com/s/OCSe_o6bJjOYNEpYaOQ_Cg
-
-最大化互信息来学习深度表示，Bengio等提出Deep INFOMAX
-
-https://mp.weixin.qq.com/s/VvU8OfXKJiyEKaujWfCrWw
-
-上海交通大学ECCV 2018四篇入选论文解读
-
-https://mp.weixin.qq.com/s/_IkE5NPYjpT2QGVo9mfWvA
-
-MIT&谷歌视频运动放大让计算机辅助人眼“明察秋毫” 
-
-https://mp.weixin.qq.com/s/yOuK39WdkfvyV36c1_SOnQ
-
-社会媒体数据挖掘与信息传播预测

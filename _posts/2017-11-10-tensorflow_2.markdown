@@ -392,6 +392,8 @@ https://mp.weixin.qq.com/s/cxC3SarlBBPTwIxQZ4AG_g
 
 执行`session.run(out)`，会在终端打印out的值，但执行`res = session.run(out)`则不会。
 
+此外，`session.run`可以接受list作为参数。返回值也是一个list，分别对应输入list的每个元素的计算结果。
+
 ----
 
 tensorflow的程序中,在main函数下,都是使用tf.app.run()来启动。查看源码可知,该函数是用来处理flag解析，然后执行main函数。

@@ -182,6 +182,12 @@ https://mp.weixin.qq.com/s/egpZl9witWLiP17KSjq2jg
 
 ## AI医疗
 
+![](/images/img2/AI_healthcare.png)
+
+![](/images/img2/AI_healthcare_2.png)
+
+![](/images/img2/AI_healthcare_3.png)
+
 https://github.com/albarqouni/Deep-Learning-for-Medical-Applications
 
 基于深度学习的医疗影像论文汇总
@@ -300,6 +306,10 @@ https://mp.weixin.qq.com/s/oNcGYuGwkllINZhvrL6uvQ
 
 体素科技：2018年，算法驱动下的医学影像分析进展
 
+https://mp.weixin.qq.com/s/c1j60gOWh99z-BXWs9qAwQ
+
+Jeff Dean等发文《Nature Medicine》，综述深度学习在医疗领域的应用
+
 ## 遗传算法 & 进化算法
 
 http://blog.csdn.net/u010945683/article/details/40987331
@@ -373,27 +383,3 @@ https://mp.weixin.qq.com/s/iIj1kymBgwH8sUgLyuWiSQ
 https://mp.weixin.qq.com/s/Jc5f4iX9uoOo5igQ79P77w
 
 多目标进化算法在混合可再生能源系统的应用
-
-https://mp.weixin.qq.com/s/GdY4UAdF5ufiTpl0GsTbpQ
-
-数据+进化算法=数据驱动的进化优化？进化算法 PK 数学优化
-
-https://mp.weixin.qq.com/s/iAmkb2EdYofJU1AoBw2HyA
-
-多目标优化详解
-
-https://mp.weixin.qq.com/s/MCKkngSzzsABxyiGAFA1lg
-
-进化计算在深度学习中的应用
-
-https://mp.weixin.qq.com/s/G8Xj_G9rxI4SinX0VZ35WA
-
-用人工蜂群算法求解k-分区聚类问题
-
-https://mp.weixin.qq.com/s/su2F2F3dtl6W-WNuQHNpJg
-
-不使用深度学习，进化算法也能玩Atari游戏！
-
-http://www.cnblogs.com/tsingke/p/6258967.html
-
-CMA-ES算法

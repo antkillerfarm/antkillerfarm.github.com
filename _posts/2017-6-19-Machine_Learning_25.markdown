@@ -213,3 +213,89 @@ Capital asset pricing model
 Fama–French three-factor model
 
 Carhart four-factor model
+
+# DL参考资源+
+
+https://mp.weixin.qq.com/s/gPI6Vq6smDn8IiKhGe61bA
+
+用深度学习DIY自动化监控系统
+
+https://mp.weixin.qq.com/s/JkYFx4tN2x8y5tYPyonE9g
+
+建模任务相关注视点转移，实现第一人称视频注视点的准确估计
+
+https://mp.weixin.qq.com/s/OCSe_o6bJjOYNEpYaOQ_Cg
+
+最大化互信息来学习深度表示，Bengio等提出Deep INFOMAX
+
+https://mp.weixin.qq.com/s/VvU8OfXKJiyEKaujWfCrWw
+
+上海交通大学ECCV 2018四篇入选论文解读
+
+https://mp.weixin.qq.com/s/_IkE5NPYjpT2QGVo9mfWvA
+
+MIT&谷歌视频运动放大让计算机辅助人眼“明察秋毫” 
+
+https://mp.weixin.qq.com/s/yOuK39WdkfvyV36c1_SOnQ
+
+社会媒体数据挖掘与信息传播预测
+
+https://mp.weixin.qq.com/s/jMeTSr1t2Uc-qibNom4AZg
+
+LeCun提出错误编码网络，可在不确定环境中执行时间预测
+
+https://mp.weixin.qq.com/s/LQ3tn4Zxg5obDD_oyEugKQ
+
+为数据集自动生成神经网络：普林斯顿大学提出NeST
+
+https://mp.weixin.qq.com/s/LUAcYoxoYBcDzTqi5bVJTQ
+
+非局部神经网络，打造未来神经网络基本组件
+
+https://mp.weixin.qq.com/s/lrl4si8Aeh7Pl76leBSmeA
+
+Nature论文解读：用于改善加权生物网络信噪比的网络增强方法
+
+https://mp.weixin.qq.com/s/0AOOiyWQqpGIdG4-9UmF8Q
+
+DeepMind提出视觉问题回答新模型，CLEVR准确率达98.8％
+
+https://mp.weixin.qq.com/s/8dVronQoeZLJI2g49AljLg
+
+技术讲解概率机器学习——深度学习革命之后AI道路
+
+https://mp.weixin.qq.com/s/qof4GEPQYb9rO3Do_oL7BQ
+
+如果给猫披上象皮，神经网络将作何判断？
+
+https://mp.weixin.qq.com/s/l1Bc5l5cr3y9jQbh-bEQeQ
+
+Deep Learning of Graph Matching论文解读
+
+https://mp.weixin.qq.com/s/494I6XHrk9fB2DvhiMM9iQ
+
+第四范式联合港科大提出样本自适应在线卷积稀疏编码
+
+https://mp.weixin.qq.com/s/p8u2aTJL2gfPIXLsLfoJyg
+
+谷歌大脑提出MAPO：用于程序合成的策略优化方法
+
+https://mp.weixin.qq.com/s/zC5iGXVn7xH8TYBXtkntzA
+
+让计算机一眼认出“猫”：哈佛提出新高维数据分析法
+
+http://mp.weixin.qq.com/s/vhBOrR6uTL2vGXnYC8BS1w
+
+Windows版深度学习软件安装指南
+
+https://mp.weixin.qq.com/s/FwqKYNpIuB6cUAVjSey7mw
+
+Yoshua Bengio首次中国演讲：深度学习通往人类水平AI的挑战
+
+https://mp.weixin.qq.com/s/aqfwn0kiXbZwVDVhHXBAXQ
+
+谷歌大脑研究员玩转汉字RNN：神经网络生成新华字典
+
+https://mp.weixin.qq.com/s/GxWOuIf25JQnQoCstVyGLQ
+
+李飞飞团队提出OpenTag模型：减少人工标注，自动提取产品属性值

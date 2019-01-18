@@ -428,6 +428,10 @@ https://fwupd.org/
 
 Linux Vendor Firmware Service。这个网站提供Linux平台的各种BIOS或者外设的固件更新。
 
+https://mp.weixin.qq.com/s/SO1ZLSPaRkk8WwUl9u-JPA
+
+仅需这一篇，吃透“负载均衡”妥妥的
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

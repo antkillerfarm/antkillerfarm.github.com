@@ -120,30 +120,6 @@ https://github.com/xukai871105/contiki_cc2530_iar/
 
 这是该牛人将Contiki移植到IAR下的源代码。
 
-## CoAP & MQTT
-
-CoAP（Constrained Application Protocol）协议，是IETF针对物联网提出的应用层协议。
-
-参考：
-
-http://blog.csdn.net/xukai871105/article/details/17734163
-
-MQTT（MQ Telemetry Transport）是一个轻量级的machine-to-machine通信协议。适合于低带宽、不可靠连接、CPU内存资源紧张的嵌入式设备，它有可能成为物联网的重要协议。
-
-官网：
-
-http://mqtt.org/
-
-参考：
-
-https://mp.weixin.qq.com/s/i1WziUgG9TcLvvX1-2Nizw
-
-初识MQTT协议
-
-https://mp.weixin.qq.com/s/ZaBkqlmWboOT7SEpQOln_Q
-
-MQTT协议之连接
-
 ## 无人机通信
 
 无人机通信一般采用微波通信，微波是一种无线电波，它传送的距离一般可达几十公里。频段一般是902－928MHZ，常见有MDSEL805， 一般都选用可靠的跳频数字电台来实现无线遥控。

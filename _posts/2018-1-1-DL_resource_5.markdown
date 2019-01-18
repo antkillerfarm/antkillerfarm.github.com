@@ -6,6 +6,44 @@ category: resource
 
 # DL参考资源
 
+## 面试
+
+https://mp.weixin.qq.com/s/U5hlr69m_9Znwjkj3Yl4Hg
+
+《深度学习500问》一份超全深度学习资料，面试必备！
+
+https://www.zhihu.com/question/41233373
+
+如果你是面试官，你怎么去判断一个面试者的深度学习水平？
+
+https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
+
+20万、50万、100万的算法工程师，到底有什么区别？
+
+https://www.zhihu.com/question/56676679/answer/151505274
+
+机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
+
+https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
+
+面试官是如何看出你机器学习水平的？
+
+https://mp.weixin.qq.com/s?__biz=MzI3NTA0MzM1OQ==&mid=2651615534&idx=1&sn=00ecd7dc1d8472c070e720a1b63f04c4
+
+我如何考察面试者的机器学习水平
+
+https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
+
+谷歌等巨头机器学习面试题：从逻辑回归到智力测验
+
+https://mp.weixin.qq.com/s/9ivDZXpPpLE3fuPgpNUyJA
+
+超全数据科学与机器学习面试指南
+
+https://mp.weixin.qq.com/s/qmdfLlTfQzT0QVq_SzEPUw
+
+机器学习和深度学习中值得弄清楚的一些问题
+
 ## AI与UI
 
 https://mp.weixin.qq.com/s/bGbslnuG80S6gPwD4FHuMg
@@ -339,39 +377,3 @@ https://mp.weixin.qq.com/s/yWnksItYdxQ9Nhj3xWkcMw
 https://mp.weixin.qq.com/s/bgP_xMfi3hXayscf9D5JIg
 
 谷歌提出Sim2Real：让机器人像人类一样观察世界
-
-https://mp.weixin.qq.com/s/aqfwn0kiXbZwVDVhHXBAXQ
-
-谷歌大脑研究员玩转汉字RNN：神经网络生成新华字典
-
-https://mp.weixin.qq.com/s/GxWOuIf25JQnQoCstVyGLQ
-
-李飞飞团队提出OpenTag模型：减少人工标注，自动提取产品属性值
-
-https://mp.weixin.qq.com/s/qof4GEPQYb9rO3Do_oL7BQ
-
-如果给猫披上象皮，神经网络将作何判断？
-
-https://mp.weixin.qq.com/s/l1Bc5l5cr3y9jQbh-bEQeQ
-
-Deep Learning of Graph Matching论文解读
-
-https://mp.weixin.qq.com/s/494I6XHrk9fB2DvhiMM9iQ
-
-第四范式联合港科大提出样本自适应在线卷积稀疏编码
-
-https://mp.weixin.qq.com/s/p8u2aTJL2gfPIXLsLfoJyg
-
-谷歌大脑提出MAPO：用于程序合成的策略优化方法
-
-https://mp.weixin.qq.com/s/zC5iGXVn7xH8TYBXtkntzA
-
-让计算机一眼认出“猫”：哈佛提出新高维数据分析法
-
-http://mp.weixin.qq.com/s/vhBOrR6uTL2vGXnYC8BS1w
-
-Windows版深度学习软件安装指南
-
-https://mp.weixin.qq.com/s/FwqKYNpIuB6cUAVjSey7mw
-
-Yoshua Bengio首次中国演讲：深度学习通往人类水平AI的挑战

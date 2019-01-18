@@ -180,7 +180,7 @@ https://mp.weixin.qq.com/s/qkvX0rmEe0yQ-BhCmWAXSQ
 
 ## Android NN
 
-https://developer.android.com/ndk/guides/neuralnetworks/index.html
+https://developer.android.google.cn/ndk/reference/group/neural-networks
 
 这是Android NDK中的NN相关的接口文档
 

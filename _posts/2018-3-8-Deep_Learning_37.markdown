@@ -176,6 +176,10 @@ CFAN
 
 ## Siamese network
 
+https://blog.csdn.net/shenziheng1/article/details/81213668
+
+Siamese Network（原理篇）
+
 https://www.jianshu.com/p/92d7f6eaacf5
 
 Siamese network孪生神经网络--一个简单神奇的结构

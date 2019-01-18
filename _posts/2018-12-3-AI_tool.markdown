@@ -290,7 +290,11 @@ https://aifiddle.io/
 
 网页版深度学习模型编辑器，搭建运行样样都行，还能3D可视化
 
-# DL参考资源+
+https://mp.weixin.qq.com/s/8rvpdh8mTclYQ_RjwG5-Nw
+
+阿里开源大规模分布式图学习框架：专为Graph嵌入，无缝对接TF/PyTorch
+
+# DL参考资源
 
 https://mp.weixin.qq.com/s/Sb_kPgtwyQFWloDT3707TA
 

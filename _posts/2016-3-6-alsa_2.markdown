@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ALSA（二）, GStreamer（三）, WebSocket, 图像渲染
+title:  ALSA（二）, GStreamer（三）, WebSocket, 图像渲染, CoAP & MQTT
 category: technology 
 ---
 
@@ -165,33 +165,6 @@ Z表示Codec设备的从机地址。
 
 这种情况用两个独立的card来解决就可以了。
 
-# WebSocket
-
-在浏览器中通过http仅能实现单向的通信。AJAX通过轮询方式，达到全双工通信，但效率不高。
-
-面对这种状况，HTML5定义了WebSocket协议（基于TCP），能更好的节省服务器资源和带宽并达到实时通讯。
-
-浏览器请求
-
-{% highlight text %}
-GET /webfin/websocket/ HTTP/1.1
-　　Host: localhost
-　　Upgrade: websocket
-　Connection: Upgrade
-　　Sec-WebSocket-Key: xqBt3ImNzJbYqRINxEFlkg==
-　　Origin: http://www.sohu.com
-　　Sec-WebSocket-Version: 13
-{% endhighlight %}
-
-服务器回应
-
-{% highlight text %}
-HTTP/1.1 101 Switching Protocols
-　　Upgrade: websocket
-　　Connection: Upgrade
-　　Sec-WebSocket-Accept: K7DJLdLooIwIG/MOpvWFB3y3FE8=
-{% endhighlight %}
-
 # GStreamer编程（续）
 
 以下是教程的一些细节的学习心得。
@@ -286,6 +259,33 @@ new_pad_type = new_pad.query_caps(None).to_string()
 
 从这里也可以看出，gst_parse_launch会自动处理媒体流的格式匹配问题，而使用普通函数的时候，必须自己编程处理格式匹配的问题。
 
+# WebSocket
+
+在浏览器中通过http仅能实现单向的通信。AJAX通过轮询方式，达到全双工通信，但效率不高。
+
+面对这种状况，HTML5定义了WebSocket协议（基于TCP），能更好的节省服务器资源和带宽并达到实时通讯。
+
+浏览器请求
+
+{% highlight text %}
+GET /webfin/websocket/ HTTP/1.1
+　　Host: localhost
+　　Upgrade: websocket
+　Connection: Upgrade
+　　Sec-WebSocket-Key: xqBt3ImNzJbYqRINxEFlkg==
+　　Origin: http://www.sohu.com
+　　Sec-WebSocket-Version: 13
+{% endhighlight %}
+
+服务器回应
+
+{% highlight text %}
+HTTP/1.1 101 Switching Protocols
+　　Upgrade: websocket
+　　Connection: Upgrade
+　　Sec-WebSocket-Accept: K7DJLdLooIwIG/MOpvWFB3y3FE8=
+{% endhighlight %}
+
 # 图像渲染
 
 http://blog.csdn.net/pizi0475/article/details/6650851
@@ -316,6 +316,32 @@ https://www.cnblogs.com/mengdd/p/3237991.html
 
 图形学理论知识BRDF双向反射分布函数（Bidirectional Reflectance Distribution Function）
 
+# CoAP & MQTT
+
+CoAP（Constrained Application Protocol）协议，是IETF针对物联网提出的应用层协议。
+
+参考：
+
+http://blog.csdn.net/xukai871105/article/details/17734163
+
+CoAP协议学习——CoAP基础
+
+MQTT（MQ Telemetry Transport）是一个轻量级的machine-to-machine通信协议。适合于低带宽、不可靠连接、CPU内存资源紧张的嵌入式设备，它有可能成为物联网的重要协议。
+
+官网：
+
+http://mqtt.org/
+
+参考：
+
+https://mp.weixin.qq.com/s/i1WziUgG9TcLvvX1-2Nizw
+
+初识MQTT协议
+
+https://mp.weixin.qq.com/s/ZaBkqlmWboOT7SEpQOln_Q
+
+MQTT协议之连接
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/8xSqmBbaFZ-oww4w-dOmeg
@@ -345,27 +371,3 @@ https://mp.weixin.qq.com/s/r6Dnv3v6TYwTsAQJTDR0Mg
 https://mp.weixin.qq.com/s/calUA-Ddq-mq4uHrExtfBQ
 
 实习生通关秘籍：我在谷歌大脑开挂的一年
-
-https://mp.weixin.qq.com/s/jMeTSr1t2Uc-qibNom4AZg
-
-LeCun提出错误编码网络，可在不确定环境中执行时间预测
-
-https://mp.weixin.qq.com/s/LQ3tn4Zxg5obDD_oyEugKQ
-
-为数据集自动生成神经网络：普林斯顿大学提出NeST
-
-https://mp.weixin.qq.com/s/LUAcYoxoYBcDzTqi5bVJTQ
-
-非局部神经网络，打造未来神经网络基本组件
-
-https://mp.weixin.qq.com/s/lrl4si8Aeh7Pl76leBSmeA
-
-Nature论文解读：用于改善加权生物网络信噪比的网络增强方法
-
-https://mp.weixin.qq.com/s/0AOOiyWQqpGIdG4-9UmF8Q
-
-DeepMind提出视觉问题回答新模型，CLEVR准确率达98.8％
-
-https://mp.weixin.qq.com/s/8dVronQoeZLJI2g49AljLg
-
-技术讲解概率机器学习——深度学习革命之后AI道路
