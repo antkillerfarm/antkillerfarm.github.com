@@ -299,3 +299,19 @@ https://mp.weixin.qq.com/s/aqfwn0kiXbZwVDVhHXBAXQ
 https://mp.weixin.qq.com/s/GxWOuIf25JQnQoCstVyGLQ
 
 李飞飞团队提出OpenTag模型：减少人工标注，自动提取产品属性值
+
+https://mp.weixin.qq.com/s/qos7VRFP7uYZ6Qt83KiPhw
+
+用机器学习构建O(N)复杂度的排序算法，可在GPU和TPU上加速计算
+
+https://mp.weixin.qq.com/s/_w4IIRY6LwqehpDlEXt90A
+
+牛津大学提出神经网络新训练法：用低秩结构增强网络压缩和对抗稳健性
+
+https://mp.weixin.qq.com/s/w-6z8B60cIHUF5tU-RoQ3w
+
+旷视科技提出统一感知解析网络UPerNet，优化场景理解
+
+https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
+
+北大：一种基于新闻特征抽取和循环神经网络的股票预测方法

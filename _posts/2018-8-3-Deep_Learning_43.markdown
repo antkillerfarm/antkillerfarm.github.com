@@ -345,3 +345,7 @@ Facebook新研究优化硬件浮点运算，强化AI模型运行速率
 https://mp.weixin.qq.com/s/Jsxiha_BFtWVLvO4HMwJ3Q
 
 工业界第一手实战经验：深度学习高效网络结构设计
+
+https://mp.weixin.qq.com/s/uXbLb5ITHOU0dZRSWNobVg
+
+算力限制场景下的目标检测实战浅谈

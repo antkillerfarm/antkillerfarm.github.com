@@ -294,6 +294,14 @@ https://mp.weixin.qq.com/s/8rvpdh8mTclYQ_RjwG5-Nw
 
 阿里开源大规模分布式图学习框架：专为Graph嵌入，无缝对接TF/PyTorch
 
+https://mp.weixin.qq.com/s/ew7vmvskp_q4aM7cJM-CXg
+
+夺魁NeurIPS 2018强化学习大赛，百度正式发布RL模型库和算法框架PARL
+
+https://mp.weixin.qq.com/s/FRgUbvE8xzxrMZ_AtCheMQ
+
+南京航空航天大学开源ALiPy：用于主动学习的Python工具包
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/Sb_kPgtwyQFWloDT3707TA
@@ -347,19 +355,3 @@ https://mp.weixin.qq.com/s/Y_qX16JaenbPtLiEiRhHpw
 https://mp.weixin.qq.com/s/X-AmDqzIYD5l1AMuojhd4g
 
 类人化标注：多样性和独特性图像标注
-
-https://mp.weixin.qq.com/s/qos7VRFP7uYZ6Qt83KiPhw
-
-用机器学习构建O(N)复杂度的排序算法，可在GPU和TPU上加速计算
-
-https://mp.weixin.qq.com/s/_w4IIRY6LwqehpDlEXt90A
-
-牛津大学提出神经网络新训练法：用低秩结构增强网络压缩和对抗稳健性
-
-https://mp.weixin.qq.com/s/w-6z8B60cIHUF5tU-RoQ3w
-
-旷视科技提出统一感知解析网络UPerNet，优化场景理解
-
-https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
-
-北大：一种基于新闻特征抽取和循环神经网络的股票预测方法

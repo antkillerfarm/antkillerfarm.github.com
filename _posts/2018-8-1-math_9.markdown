@@ -81,6 +81,16 @@ Bézier curve的数学公式比较复杂，但是实际的绘制方法却很简�
 
 可见Bézier curve具有良好的数值稳定性，可产生类似皮筋的图像效应，是拟合**光滑曲线**的利器，因此被广泛应用于CAD/CAM领域。
 
+Bézier curve也可用于超参数的search。
+
+设$$f(X)=Y$$，其中X为超参数，Y为结果。则search的步骤如下：
+
+1.为了得到特定的Y值，可以用Bézier curve插值得到相应的X值。
+
+2.计算新的Y，将这个(X,Y)作为新的插值点，生成新的Bézier curve。
+
+3.重复1，2步，直到收敛。
+
 # 熵
 
 在《数学狂想曲（四）》的“玻尔兹曼分布”一节，我们提到了Shannon entropy的公式。然而，这个公式是如何推导出来的呢？
@@ -224,8 +234,3 @@ $$\begin{cases}
 \Omega_1\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_1} = \frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega}\Omega \\
 \Omega_2\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_2} = \frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega}\Omega \\
 \end{cases}$$
-
-$$\Omega_1\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_1} =\Omega_2\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_2}=\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega}\Omega = K$$
-
-$$\mathrm{d}f(\Omega)=K\frac{\mathrm{d}\Omega}{\Omega}\Rightarrow f(\Omega) = K\ln \Omega + C$$
-

@@ -403,3 +403,7 @@ https://mp.weixin.qq.com/s/HXYDO5PM8UIoXgEPGe8p-w
 https://mp.weixin.qq.com/s/zz3j9HEuzw5e92MQXxSQsA
 
 遗珠之作？谷歌Quoc Le这篇NLP预训练模型论文值得一看
+
+https://mp.weixin.qq.com/s/k_33UK1RkMyHn6TSudU6Kg
+
+详解谷歌最强NLP模型BERT

@@ -8,6 +8,10 @@ category: math
 
 ## 统计热力学定义（续）
 
+$$\Omega_1\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_1} =\Omega_2\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_2}=\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega}\Omega = K$$
+
+$$\mathrm{d}f(\Omega)=K\frac{\mathrm{d}\Omega}{\Omega}\Rightarrow f(\Omega) = K\ln \Omega + C$$
+
 根据热力学第三定律，使用绝对零度作为原点，则：
 
 $$S=K\ln \Omega$$

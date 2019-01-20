@@ -361,3 +361,7 @@ https://mp.weixin.qq.com/s/a3mGbLMfTxYuMcraW0JWdQ
 https://mp.weixin.qq.com/s/p6SDazuTjgG1ERl5ku2-VQ
 
 如何构建多快好省的“知识图谱即服务”？
+
+https://mp.weixin.qq.com/s/fVABfj2W8JpDH2p8hWm8wA
+
+区分概念和实例的知识图谱嵌入方法

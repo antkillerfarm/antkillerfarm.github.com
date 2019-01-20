@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  深度学习（三十二）——信息检索, NN Quantization
+title:  深度学习（三十二）——深度信息检索, NN Quantization
 category: DL 
 ---
 
-# 信息检索
+# 深度信息检索
 
 Information Retrieval是用户进行信息查询和获取的主要方式，是查找信息的方法和手段。狭义的信息检索仅指信息查询（Information Search）。即用户根据需要，采用一定的方法，借助检索工具，从信息集合中找出所需要信息的查找过程。广义的信息检索是信息按一定的方式进行加工、整理、组织并存储起来，再根据信息用户特定的需要将相关信息准确的查找出来的过程。
 
@@ -101,6 +101,10 @@ https://mp.weixin.qq.com/s/TdnstQaBcLaXg8BvuR7oYA
 https://mp.weixin.qq.com/s/N3JBHlqneG9dI0I26M3wHQ
 
 如何做好大规模视觉搜索？eBay基于实践总结出了7条建议
+
+https://mp.weixin.qq.com/s/8Twe3e3WKCY9pTiNtnW2sg
+
+重磅！谷歌等推出基于机器学习的数据库SageDB
 
 # NN Quantization
 

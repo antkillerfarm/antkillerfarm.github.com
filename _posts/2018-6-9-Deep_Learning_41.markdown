@@ -265,6 +265,10 @@ https://mp.weixin.qq.com/s/MAlH3EYAg88IROsV1klKlA
 
 结构化数据的迁移学习：嫁接学习
 
+https://mp.weixin.qq.com/s/C1qTuJ-kJxI5o_yEMpiUAA
+
+ICLR2019少样本学习新思路：利用转导(Transductive)和标签传播
+
 # Mask R-CNN
 
 Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的NN。它是何恺明2017年的新作。

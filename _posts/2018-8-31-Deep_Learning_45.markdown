@@ -331,3 +331,7 @@ http://mp.weixin.qq.com/s/khOINUyrNV3TFfgNRheH0A
 https://mp.weixin.qq.com/s/ywU4L659iRcmIgmV6RtbXA
 
 DeepMind新研究连接听与看，实现“听声辨位”的多模态学习
+
+https://mp.weixin.qq.com/s/1qhcyTXttgKWlw-Oy556Tw
+
+TPAMI2019最新《多模态机器学习综述》

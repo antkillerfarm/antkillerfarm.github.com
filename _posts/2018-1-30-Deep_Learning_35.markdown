@@ -286,6 +286,10 @@ https://mp.weixin.qq.com/s/dwSWcu4tcLE2Z1BOYL4QRA
 
 6D目标姿态估计，李飞飞夫妇等提出DenseFusion
 
+https://mp.weixin.qq.com/s/s_5Al8O9_9FBdiqUix1Jhw
+
+COCO 2018 Keypoint冠军算法解读
+
 # VAE进阶
 
 https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw

@@ -185,6 +185,10 @@ https://mp.weixin.qq.com/s/YPdIfrCQrWGYqtREIl3OaA
 
 SRGAN With WGAN：让超分辨率算法训练更稳定
 
+https://mp.weixin.qq.com/s/zw72I9FTiKq3ZA4gcd5K3A
+
+ESRGAN：基于GAN的增强超分辨率方法
+
 # DemosaicNet
 
 DemosaicNet是MIT CSAIL的在读博士生Michaël Gharbi的作品。
