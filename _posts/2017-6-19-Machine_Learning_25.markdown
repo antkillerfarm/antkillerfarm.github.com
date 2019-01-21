@@ -315,3 +315,11 @@ https://mp.weixin.qq.com/s/w-6z8B60cIHUF5tU-RoQ3w
 https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
 
 北大：一种基于新闻特征抽取和循环神经网络的股票预测方法
+
+https://mp.weixin.qq.com/s/_QPzoFyhCxnIxDWKzzsvAQ
+
+智能交通大数据最新论文综述
+
+https://mp.weixin.qq.com/s/eYTDwSqgj-r7yV7w9tY_MA
+
+融合质量不理想数据

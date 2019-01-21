@@ -260,6 +260,10 @@ https://mp.weixin.qq.com/s/2COA8aRQBpxaihKnlLkXZQ
 
 快速上手图像识别：用TensorFlow API实现图像分类实例
 
+https://mp.weixin.qq.com/s/rVSC1AXj9YECjUrl5PkSGw
+
+详解深度强化学习展现TensorFlow 2.0新特性
+
 # Machine Learning之Python篇+
 
 https://mp.weixin.qq.com/s/lfkTryraR22INdPzR0sidg

@@ -198,6 +198,10 @@ https://mp.weixin.qq.com/s/4jhtCUtv_szfMvyDCWKvoQ
 
 最强数据集50个最佳机器学习公共数据，可以帮你验证idea！
 
+https://mp.weixin.qq.com/s/e_mVkS-mZdKwHiGvrNeaMQ
+
+8种寻找机器学习数据集的方法
+
 ## NLP
 
 https://mp.weixin.qq.com/s/tewjGzfAVCKcG1dlURxyeg

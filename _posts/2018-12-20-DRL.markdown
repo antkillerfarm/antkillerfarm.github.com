@@ -216,6 +216,28 @@ https://www.zhihu.com/question/49230922
 
 强化学习（reinforcement learning)有什么好的开源项目、网站、文章推荐一下？
 
+# DRL和Robotics
+
+虽然，DRL似乎生来就是为了Robotics，然而现实中的无人系统，目前基本还是使用传统的控制方法。
+
+例如：
+
+https://www.zhihu.com/question/50050401
+
+如何看待百度无人车， 三千多个场景，一万多个if？
+
+不止国内，就连业界标杆Boston Dynamics也是这样：
+
+https://www.zhihu.com/question/29871410
+
+波士顿动力Boston Dynamics的大狗Big Dog用的了哪些控制、估计等算法？
+
+直到最近才终于有了改观：
+
+https://mp.weixin.qq.com/s/xSODAGf3QcJ3A9oq6xP11A
+
+真的超越了波士顿动力！深度强化学习打造的ANYmal登上Science子刊
+
 # Deep Q-learning Network
 
 Deep Q-learning Network是DL在RL领域的开山之作。它的思想主要来自于Deepmind的两篇论文：

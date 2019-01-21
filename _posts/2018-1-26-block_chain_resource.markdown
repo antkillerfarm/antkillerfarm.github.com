@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  区块链参考资源, 雷达 & 信号处理
+title:  区块链参考资源, 传感器
 category: resource 
 ---
 
@@ -240,200 +240,160 @@ https://blog.csdn.net/blockchain_lemon/article/details/84801413
 
 一文读懂11个主流共识算法, 彻底搞懂PoS,PoW,dPoW,PBFT,dBFT这些究竟是什么鬼...
 
-# 雷达 & 信号处理
+https://mp.weixin.qq.com/s/cxzI5oFBAUdtV6akre678w
 
-https://mp.weixin.qq.com/s/zDcbrZeK4tlO0jA3-s_lYg
+当区块链与人工智能相遇，会有怎样火花？这篇23页《Blockchain for AI》综述论文告诉你
 
-雷达方面的术语
+# 传感器
 
-https://www.ll.mit.edu/outreach/introduction-radar-systems
+这里主要讨论自动驾驶方面的传感器，但也包括了一些非自动驾驶类的传感器知识。
 
-MIT：Introduction to Radar Systems
+https://mp.weixin.qq.com/s/Ee18sjKXNGMowKwqLB0jVg
 
-http://www.dspguide.com/pdfbook.htm
+给自动驾驶一双"通天眼"——环境感知器篇
 
-《The Scientist and Engineer's Guide to Digital Signal Processing》
+https://mp.weixin.qq.com/s/dusPUCjKUzhfmTRhzXte-A
 
-https://mp.weixin.qq.com/s/vmQKK9cEbBRIvd2uOzmC1w
+新的图像传感器给汽车装上眼睛
 
-AN/TPS-78固态雷达系列
+https://mp.weixin.qq.com/s/4HNaS8Dpi9pcPzE_nN-BvA
 
-https://mp.weixin.qq.com/s/UdKVffV42v0GnV6i8xMWOg
+全球12家顶级激光雷达公司解读：谁有机会撼动Velodyne
 
-PESA/AESA：无源/有源电子扫描阵列天线及其辐射方向图
+https://mp.weixin.qq.com/s/Ef6aWgs9xkHaAwTX4rxjKA
 
-https://mp.weixin.qq.com/s/udl4hQQXY4FQDPLsWERhkg
+用激光雷达感知世界
 
-史上最全最详细无线通信频率分配表
+https://mp.weixin.qq.com/s/45xNWa_32DAsKdlfYY_QfA
 
-https://mp.weixin.qq.com/s/ZPAE1CwhfD0PNT1MJ8erIw
+Uber自动驾驶撞死行人视频公布：无人车环境感知解决方案该如何优化？
 
-一种用于汽车防撞雷达的波束赋形阵列天线
+https://mp.weixin.qq.com/s/VBpOwGrTPs0nlmTyXvqDwA
 
-https://mp.weixin.qq.com/s/77BgUiwjQ8ryGNRjMCiBoQ
+为什么只用摄像头和光学雷达是不够的：我们能从Uber的自动驾驶车致死事件中学到什么
 
-“雷达电子战”常用公式
+https://mp.weixin.qq.com/s/WiS-iJHA1zoIyb1cvKiuZQ
 
-https://mp.weixin.qq.com/s/H4mdQIz1iRzC5LV6dwA55Q
+自动驾驶传感器“一哥之争”，这事儿你怎么看？
 
-雷达发射机和接收机
+https://mp.weixin.qq.com/s/WWm1tkCXVJgdlVbsXCTYIg
 
-https://mp.weixin.qq.com/s/UuiRP0vvNmk8gkPLqrvxQw
+自动驾驶汽车硬件系统概述
 
-参数估计和目标跟踪
+https://mp.weixin.qq.com/s/C77q2LEA-lMEabtsO30LxQ
 
-https://mp.weixin.qq.com/s/pl2tcjFeJdpKv2Z7QzZpDw
+自动驾驶需要几个camera
 
-电子扫描阵列天线（ESA）
+https://mp.weixin.qq.com/s/2-PB-5tTNeGPLPHQBdRwBA
 
-https://mp.weixin.qq.com/s/683EzxZXLNxbkajtDs0Qpg
+40张动态图详解全部传感器工作原理
 
-多普勒效应及其成因
+https://mp.weixin.qq.com/s/oCEeIM_DhmQ67zT_KLVb7Q
 
-https://mp.weixin.qq.com/s/t6jGgiB1gG_LsD3dE6o27w
+Face ID与3D传感技术科普
 
-多普勒滤波器组的基本知识
+https://blog.csdn.net/carson2005/article/details/72972414
 
-https://mp.weixin.qq.com/s/ZKNuj3QRUj45vo3MHiHlYg
+光纤陀螺简介
 
-合成孔径雷达系统
+https://mp.weixin.qq.com/s/ZRakGZWXlQaUgtMfe2c2aw
 
-https://mp.weixin.qq.com/s/0GXku08Bwzortc52JEobKA
+不要轻易碰我，不然我就知道你有多软了
 
-这10多种电子干扰技术，你都知道吗？
+>鲍哲南，女，1970年生，芝加哥大学博士（1995）。现为Stanford教授，美国工程院院士。
 
-https://mp.weixin.qq.com/s/B8IslH8QYWR1ZxdsBgxeoA
+https://mp.weixin.qq.com/s/NwptdxWiN4SadjUQafA5rw
 
-MIMO雷达基础理解
+高端MEMS固体波动陀螺的发展与应用
 
-https://mp.weixin.qq.com/s/_VK-PCRQLM8x5w7xufe7ww
+https://blog.csdn.net/richard_liujh/article/details/49615395
 
-DRFM数字射频存储技术
+光学心率测量原理
 
-https://mp.weixin.qq.com/s/ftD1yRed4wvdetcMy90aYg
+https://mp.weixin.qq.com/s/NrNojDc9gEU3F_GybKA67Q
 
-调频连续波雷达(FMCW)测距/测速原理
+三大屏下指纹技术方案对比
 
-https://mp.weixin.qq.com/s/YI1axNbO46dzLVPX0VSwyw
+https://mp.weixin.qq.com/s/2TKkoWZcYVVvlEKvA6iNyA
 
-杂波抑制和多普勒滤波
+近年值得关注的新兴MEMS和传感器技术
 
-https://mp.weixin.qq.com/s/7RQ6WGnbca5Sn87GUSQJdQ
+https://mp.weixin.qq.com/s/mlwDZ1DUDbHIn4hQvkumAw
 
-认知MIMO雷达的波束形成技术
+自动驾驶感知神器——激光雷达概述
 
-https://mp.weixin.qq.com/s/HIqnzT0X1zcVMv0YWUAZUg
+# ML参考资源
 
-雷达波形和脉冲压缩
+https://mp.weixin.qq.com/s/l4W7qmKJ4Pc-rlF-KvhrPA
 
-https://mp.weixin.qq.com/s/7_eozJQ-8CX3I9Idb7ey6g
+机器学习在信用评分卡中的应用
 
-无源定位的基本概念与体制
+https://mp.weixin.qq.com/s/O3SIexXUeWM1svdI_ygrDg
 
-https://mp.weixin.qq.com/s/_BgcUItHCufMBlPijuNAGw
+非精确图匹配方法综述
 
-雷达系统和数字信号处理
+https://mp.weixin.qq.com/s/vOZust2RceSVoYPH6nauJw
 
-https://mp.weixin.qq.com/s/BFjC2Pop8K9gXqT06N8kVA
+机器学习模型该如何选择和评估？希望这个小册子能帮到你！
 
-天波超视距雷达(OTH)基本概念
+https://mp.weixin.qq.com/s/eW3fGJAQQMS12EmmeqZsYQ
 
-https://mp.weixin.qq.com/s/CdaaLk1YBuqN7HSkMWT2KA
+如何打开黑盒子模型？41页最新机器学习可解释模型综述论文
 
-二次雷达基础，它与一次雷达区别在哪？
+https://mp.weixin.qq.com/s/Z1ixoRmUDl17CF4k7JS4zg
 
-https://mp.weixin.qq.com/s/-AomJP4Ag4ra9wvhD8Tf8Q
+浅谈物流网络中的选址规划问题
 
-天线的基础知识
+https://mp.weixin.qq.com/s/voumCoLRPJO2eHFUVGm0PA
 
-https://mp.weixin.qq.com/s/whCTTVxf-zsdjJjx5X01Rg
+理解Scikit-Learn中分类性能度量指标
 
-有源相控阵雷达系统
+https://mp.weixin.qq.com/s/JW62V3wBguSPSAkyWKAEpQ
 
-https://mp.weixin.qq.com/s/qGV9vxZHRreYVxj2zGjoIg
+一个数据分析师眼中的数据预测与监控
 
-合成孔径雷达自动目标识别
+https://mp.weixin.qq.com/s/Xk1myDvYQxvKKyQ7RKqcyw
 
-https://mp.weixin.qq.com/s/CJDh0jIUMj8LsihGSBV8kw
+机器学习可重复性最佳实践
 
-天线增益与有效辐射功率的理解！
+https://mp.weixin.qq.com/s/tnkS6xtuv29A_TGlPUAxlQ
 
-https://mp.weixin.qq.com/s/JKs0xpFllpWre9c-iJR41Q
+我猜，每个程序员对着电梯都想过调度算法吧！
 
-现代舰载雷达系统，有源相控阵的子系统分析
+https://mp.weixin.qq.com/s/0m5DuJzh92aYUgdiQ3PfIg
 
-https://mp.weixin.qq.com/s/qEZaUgIdpb9LabAwPpw7jg
+数据竞赛大杀器之模型融合(stacking & blending)
 
-雷达自适应波束形成：基于FPGA的QRD+WBS算法
+https://mp.weixin.qq.com/s/lJQprqGShGys3vfhYSxDWg
 
-https://mp.weixin.qq.com/s/hj9Nh6Ckc0072B2GL5YIHA
+机器学习在股票交易中难点分析
 
-数字化的重要理论：带通采样定理
+https://mp.weixin.qq.com/s/lpNTdnfp2FnJ97EivhUv2g
 
-https://mp.weixin.qq.com/s/fEkZwnyaK4TM-_1UWdfhXw
+12种降维方法终极指南
 
-雷达方程
+https://mp.weixin.qq.com/s/s2XpGne0sAqnuN-u6g5k1A
 
-https://mp.weixin.qq.com/s/4q0LujqRyR-5VuirwbZhSw
+资金流因子全面测试兼正交化方法详解
 
-便携式雷达的天线设计
+https://mp.weixin.qq.com/s/oblwg01BUIJjVhBeHa9HQQ
 
-https://mp.weixin.qq.com/s/n4oBKVma8-oY9sLLUG3aAg
+程序员分析了50万条拼多多商品数据，告诉你到底是消费升级还是降级！
 
-详细分析非聚焦SAR成像的基础与局限
+https://mp.weixin.qq.com/s/4HVkEnk6_hONWJYdi8L53g
 
-https://mp.weixin.qq.com/s/uxNUKcbJIsYW3y0nucDvAg
+闲聊结构化预测（structured learning）
 
-聚焦SAR雷达处理与实现
+https://mp.weixin.qq.com/s/GP_t_fhklpVNhC6J6i0YbA
 
-https://mp.weixin.qq.com/s/xTsFbkKERi_mNl-o6ue3VA
+再聊聊自然语言处理中的结构化预测问题
 
-SAR运动补偿，自动聚焦以及图像解译
+# 知名AI公司技术主页
 
-https://mp.weixin.qq.com/s/ARqiy_zPghf2aKL7PewegQ
+http://uber.ai/
 
-雷达的主要战术指标、分类与对抗
+Uber AI Labs
 
-https://mp.weixin.qq.com/s/FYDYV0wVxX-h9makD0JEEA
+https://deepmind.com/research/
 
-将基于深度学习的检测和识别算法应用到SAR图像智能解译
-
-https://mp.weixin.qq.com/s/cnSiJb7j2OvVCiWh9VbKJg
-
-灵感来自雷达技术的CPA技术--技术解读2018诺奖
-
-https://mp.weixin.qq.com/s/cwdmd8XRotns8cNfuXLRXA
-
-SAR处理基础
-
-https://mp.weixin.qq.com/s/h1rXE_yA0FiW6nqTHrlGNQ
-
-基于多层字典对学习和稀疏自编码的极化SAR图像分类
-
-https://mp.weixin.qq.com/s/sZ5EpnfYjhdCjzLW-49HFg
-
-GPS传统信号与新信号的产生
-
-https://mp.weixin.qq.com/s/y1nTTjsW31ck6r-Cqp_XFw
-
-基于变分混合Wishart学习的极化SAR图像分类
-
-https://mp.weixin.qq.com/s/nThxbRnAGo-QkFgrm3BtIQ
-
-一种半监督张量局部线性嵌入的极化SAR特征提取方法
-
-https://mp.weixin.qq.com/s/5rNpp2cYZhcOKZCiy4LkMQ
-
-SAR成像原理及图像鉴赏
-
-https://mp.weixin.qq.com/s/Y4SE6WxEQdWFLZnn83SK_g
-
-自适应天线及其自由度
-
-https://mp.weixin.qq.com/s/JJWnNsYls9lDJFyTKz0jew
-
-干货！差分信号之剖析与探讨
-
-https://mp.weixin.qq.com/s/jl4DLZ5xwnW5_OsuLxXSUA
-
-《雷达基础知识》专题一：距离
+Deepmind

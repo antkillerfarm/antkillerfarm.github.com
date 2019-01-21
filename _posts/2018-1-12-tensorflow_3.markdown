@@ -34,6 +34,10 @@ op的自定义实现可使用`tf.py_func`。
 
 tf.dtypes.cast: 类型转换
 
+----
+
+由源代码可以知道`optimizer.minimize`实际上包含了两个步骤，即`compute_gradients`和`apply_gradients`，前者用于计算梯度，后者用于使用计算得到的梯度来更新对应的variable。
+
 ## blog
 
 http://www.jianshu.com/u/eaec1fc422e9

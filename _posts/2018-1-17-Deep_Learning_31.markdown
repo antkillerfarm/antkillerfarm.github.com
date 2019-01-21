@@ -292,6 +292,10 @@ https://zhuanlan.zhihu.com/p/53220566
 
 《Adaptive Co-Attention Network for NER in Tweet》阅读笔记
 
+https://mp.weixin.qq.com/s/sQoqt-7EqZmy5gvIWTtMKQ
+
+更有智慧的眼睛：图像描述（Image Caption）&视觉问答（VQA）综述（上）
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

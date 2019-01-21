@@ -302,6 +302,10 @@ https://mp.weixin.qq.com/s/FRgUbvE8xzxrMZ_AtCheMQ
 
 南京航空航天大学开源ALiPy：用于主动学习的Python工具包
 
+https://mp.weixin.qq.com/s/pVrLcSk02_IJo65YO0kCow
+
+Python推荐系统框架：RecQ
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/Sb_kPgtwyQFWloDT3707TA

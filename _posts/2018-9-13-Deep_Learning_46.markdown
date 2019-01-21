@@ -407,3 +407,7 @@ https://mp.weixin.qq.com/s/zz3j9HEuzw5e92MQXxSQsA
 https://mp.weixin.qq.com/s/k_33UK1RkMyHn6TSudU6Kg
 
 详解谷歌最强NLP模型BERT
+
+https://mp.weixin.qq.com/s/IN4YfoZnlBozwEFdhSvLZg
+
+用可视化解构BERT，我们从上亿参数中提取出了6种直观模式

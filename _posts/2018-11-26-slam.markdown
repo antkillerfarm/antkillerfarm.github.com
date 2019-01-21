@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  SLAM, 传感器
+title:  SLAM, 雷达 & 信号处理
 category: resource 
 ---
 
@@ -150,149 +150,205 @@ https://blog.csdn.net/weixin_36340947/article/details/78246174
 
 张正友标定算法原理详解
 
-# 传感器
+# 雷达 & 信号处理
 
-这里主要讨论自动驾驶方面的传感器，但也包括了一些非自动驾驶类的传感器知识。
+https://mp.weixin.qq.com/s/zDcbrZeK4tlO0jA3-s_lYg
 
-https://mp.weixin.qq.com/s/Ee18sjKXNGMowKwqLB0jVg
+雷达方面的术语
 
-给自动驾驶一双"通天眼"——环境感知器篇
+https://www.ll.mit.edu/outreach/introduction-radar-systems
 
-https://mp.weixin.qq.com/s/dusPUCjKUzhfmTRhzXte-A
+MIT：Introduction to Radar Systems
 
-新的图像传感器给汽车装上眼睛
+http://www.dspguide.com/pdfbook.htm
 
-https://mp.weixin.qq.com/s/4HNaS8Dpi9pcPzE_nN-BvA
+《The Scientist and Engineer's Guide to Digital Signal Processing》
 
-全球12家顶级激光雷达公司解读：谁有机会撼动Velodyne
+https://mp.weixin.qq.com/s/vmQKK9cEbBRIvd2uOzmC1w
 
-https://mp.weixin.qq.com/s/Ef6aWgs9xkHaAwTX4rxjKA
+AN/TPS-78固态雷达系列
 
-用激光雷达感知世界
+https://mp.weixin.qq.com/s/UdKVffV42v0GnV6i8xMWOg
 
-https://mp.weixin.qq.com/s/45xNWa_32DAsKdlfYY_QfA
+PESA/AESA：无源/有源电子扫描阵列天线及其辐射方向图
 
-Uber自动驾驶撞死行人视频公布：无人车环境感知解决方案该如何优化？
+https://mp.weixin.qq.com/s/udl4hQQXY4FQDPLsWERhkg
 
-https://mp.weixin.qq.com/s/VBpOwGrTPs0nlmTyXvqDwA
+史上最全最详细无线通信频率分配表
 
-为什么只用摄像头和光学雷达是不够的：我们能从Uber的自动驾驶车致死事件中学到什么
+https://mp.weixin.qq.com/s/ZPAE1CwhfD0PNT1MJ8erIw
 
-https://mp.weixin.qq.com/s/WiS-iJHA1zoIyb1cvKiuZQ
+一种用于汽车防撞雷达的波束赋形阵列天线
 
-自动驾驶传感器“一哥之争”，这事儿你怎么看？
+https://mp.weixin.qq.com/s/77BgUiwjQ8ryGNRjMCiBoQ
 
-https://mp.weixin.qq.com/s/WWm1tkCXVJgdlVbsXCTYIg
+“雷达电子战”常用公式
 
-自动驾驶汽车硬件系统概述
+https://mp.weixin.qq.com/s/H4mdQIz1iRzC5LV6dwA55Q
 
-https://mp.weixin.qq.com/s/C77q2LEA-lMEabtsO30LxQ
+雷达发射机和接收机
 
-自动驾驶需要几个camera
+https://mp.weixin.qq.com/s/UuiRP0vvNmk8gkPLqrvxQw
 
-https://mp.weixin.qq.com/s/2-PB-5tTNeGPLPHQBdRwBA
+参数估计和目标跟踪
 
-40张动态图详解全部传感器工作原理
+https://mp.weixin.qq.com/s/pl2tcjFeJdpKv2Z7QzZpDw
 
-https://mp.weixin.qq.com/s/oCEeIM_DhmQ67zT_KLVb7Q
+电子扫描阵列天线（ESA）
 
-Face ID与3D传感技术科普
+https://mp.weixin.qq.com/s/683EzxZXLNxbkajtDs0Qpg
 
-https://blog.csdn.net/carson2005/article/details/72972414
+多普勒效应及其成因
 
-光纤陀螺简介
+https://mp.weixin.qq.com/s/t6jGgiB1gG_LsD3dE6o27w
 
-https://mp.weixin.qq.com/s/ZRakGZWXlQaUgtMfe2c2aw
+多普勒滤波器组的基本知识
 
-不要轻易碰我，不然我就知道你有多软了
+https://mp.weixin.qq.com/s/ZKNuj3QRUj45vo3MHiHlYg
 
->鲍哲南，女，1970年生，芝加哥大学博士（1995）。现为Stanford教授，美国工程院院士。
+合成孔径雷达系统
 
-https://mp.weixin.qq.com/s/NwptdxWiN4SadjUQafA5rw
+https://mp.weixin.qq.com/s/0GXku08Bwzortc52JEobKA
 
-高端MEMS固体波动陀螺的发展与应用
+这10多种电子干扰技术，你都知道吗？
 
-https://blog.csdn.net/richard_liujh/article/details/49615395
+https://mp.weixin.qq.com/s/B8IslH8QYWR1ZxdsBgxeoA
 
-光学心率测量原理
+MIMO雷达基础理解
 
-https://mp.weixin.qq.com/s/NrNojDc9gEU3F_GybKA67Q
+https://mp.weixin.qq.com/s/_VK-PCRQLM8x5w7xufe7ww
 
-三大屏下指纹技术方案对比
+DRFM数字射频存储技术
 
-https://mp.weixin.qq.com/s/2TKkoWZcYVVvlEKvA6iNyA
+https://mp.weixin.qq.com/s/ftD1yRed4wvdetcMy90aYg
 
-近年值得关注的新兴MEMS和传感器技术
+调频连续波雷达(FMCW)测距/测速原理
 
-https://mp.weixin.qq.com/s/mlwDZ1DUDbHIn4hQvkumAw
+https://mp.weixin.qq.com/s/YI1axNbO46dzLVPX0VSwyw
 
-自动驾驶感知神器——激光雷达概述
+杂波抑制和多普勒滤波
+
+https://mp.weixin.qq.com/s/7RQ6WGnbca5Sn87GUSQJdQ
+
+认知MIMO雷达的波束形成技术
+
+https://mp.weixin.qq.com/s/HIqnzT0X1zcVMv0YWUAZUg
+
+雷达波形和脉冲压缩
+
+https://mp.weixin.qq.com/s/7_eozJQ-8CX3I9Idb7ey6g
+
+无源定位的基本概念与体制
+
+https://mp.weixin.qq.com/s/_BgcUItHCufMBlPijuNAGw
+
+雷达系统和数字信号处理
+
+https://mp.weixin.qq.com/s/BFjC2Pop8K9gXqT06N8kVA
+
+天波超视距雷达(OTH)基本概念
+
+https://mp.weixin.qq.com/s/CdaaLk1YBuqN7HSkMWT2KA
+
+二次雷达基础，它与一次雷达区别在哪？
+
+https://mp.weixin.qq.com/s/-AomJP4Ag4ra9wvhD8Tf8Q
+
+天线的基础知识
+
+https://mp.weixin.qq.com/s/whCTTVxf-zsdjJjx5X01Rg
+
+有源相控阵雷达系统
+
+https://mp.weixin.qq.com/s/qGV9vxZHRreYVxj2zGjoIg
+
+合成孔径雷达自动目标识别
+
+https://mp.weixin.qq.com/s/CJDh0jIUMj8LsihGSBV8kw
+
+天线增益与有效辐射功率的理解！
+
+https://mp.weixin.qq.com/s/JKs0xpFllpWre9c-iJR41Q
+
+现代舰载雷达系统，有源相控阵的子系统分析
+
+https://mp.weixin.qq.com/s/qEZaUgIdpb9LabAwPpw7jg
+
+雷达自适应波束形成：基于FPGA的QRD+WBS算法
+
+https://mp.weixin.qq.com/s/hj9Nh6Ckc0072B2GL5YIHA
+
+数字化的重要理论：带通采样定理
+
+https://mp.weixin.qq.com/s/fEkZwnyaK4TM-_1UWdfhXw
+
+雷达方程
+
+https://mp.weixin.qq.com/s/4q0LujqRyR-5VuirwbZhSw
+
+便携式雷达的天线设计
+
+https://mp.weixin.qq.com/s/n4oBKVma8-oY9sLLUG3aAg
+
+详细分析非聚焦SAR成像的基础与局限
+
+https://mp.weixin.qq.com/s/uxNUKcbJIsYW3y0nucDvAg
+
+聚焦SAR雷达处理与实现
+
+https://mp.weixin.qq.com/s/xTsFbkKERi_mNl-o6ue3VA
+
+SAR运动补偿，自动聚焦以及图像解译
+
+https://mp.weixin.qq.com/s/ARqiy_zPghf2aKL7PewegQ
+
+雷达的主要战术指标、分类与对抗
+
+https://mp.weixin.qq.com/s/FYDYV0wVxX-h9makD0JEEA
+
+将基于深度学习的检测和识别算法应用到SAR图像智能解译
+
+https://mp.weixin.qq.com/s/cnSiJb7j2OvVCiWh9VbKJg
+
+灵感来自雷达技术的CPA技术--技术解读2018诺奖
+
+https://mp.weixin.qq.com/s/cwdmd8XRotns8cNfuXLRXA
+
+SAR处理基础
+
+https://mp.weixin.qq.com/s/h1rXE_yA0FiW6nqTHrlGNQ
+
+基于多层字典对学习和稀疏自编码的极化SAR图像分类
+
+https://mp.weixin.qq.com/s/sZ5EpnfYjhdCjzLW-49HFg
+
+GPS传统信号与新信号的产生
+
+https://mp.weixin.qq.com/s/y1nTTjsW31ck6r-Cqp_XFw
+
+基于变分混合Wishart学习的极化SAR图像分类
+
+https://mp.weixin.qq.com/s/nThxbRnAGo-QkFgrm3BtIQ
+
+一种半监督张量局部线性嵌入的极化SAR特征提取方法
+
+https://mp.weixin.qq.com/s/5rNpp2cYZhcOKZCiy4LkMQ
+
+SAR成像原理及图像鉴赏
+
+https://mp.weixin.qq.com/s/Y4SE6WxEQdWFLZnn83SK_g
+
+自适应天线及其自由度
+
+https://mp.weixin.qq.com/s/JJWnNsYls9lDJFyTKz0jew
+
+干货！差分信号之剖析与探讨
+
+https://mp.weixin.qq.com/s/jl4DLZ5xwnW5_OsuLxXSUA
+
+《雷达基础知识》专题一：距离
 
 # ML参考资源+
-
-https://mp.weixin.qq.com/s/l4W7qmKJ4Pc-rlF-KvhrPA
-
-机器学习在信用评分卡中的应用
-
-https://mp.weixin.qq.com/s/O3SIexXUeWM1svdI_ygrDg
-
-非精确图匹配方法综述
-
-https://mp.weixin.qq.com/s/vOZust2RceSVoYPH6nauJw
-
-机器学习模型该如何选择和评估？希望这个小册子能帮到你！
-
-https://mp.weixin.qq.com/s/eW3fGJAQQMS12EmmeqZsYQ
-
-如何打开黑盒子模型？41页最新机器学习可解释模型综述论文
-
-https://mp.weixin.qq.com/s/Z1ixoRmUDl17CF4k7JS4zg
-
-浅谈物流网络中的选址规划问题
-
-https://mp.weixin.qq.com/s/voumCoLRPJO2eHFUVGm0PA
-
-理解Scikit-Learn中分类性能度量指标
-
-https://mp.weixin.qq.com/s/JW62V3wBguSPSAkyWKAEpQ
-
-一个数据分析师眼中的数据预测与监控
-
-https://mp.weixin.qq.com/s/Xk1myDvYQxvKKyQ7RKqcyw
-
-机器学习可重复性最佳实践
-
-https://mp.weixin.qq.com/s/tnkS6xtuv29A_TGlPUAxlQ
-
-我猜，每个程序员对着电梯都想过调度算法吧！
-
-https://mp.weixin.qq.com/s/0m5DuJzh92aYUgdiQ3PfIg
-
-数据竞赛大杀器之模型融合(stacking & blending)
-
-https://mp.weixin.qq.com/s/lJQprqGShGys3vfhYSxDWg
-
-机器学习在股票交易中难点分析
-
-https://mp.weixin.qq.com/s/lpNTdnfp2FnJ97EivhUv2g
-
-12种降维方法终极指南
-
-https://mp.weixin.qq.com/s/s2XpGne0sAqnuN-u6g5k1A
-
-资金流因子全面测试兼正交化方法详解
-
-https://mp.weixin.qq.com/s/oblwg01BUIJjVhBeHa9HQQ
-
-程序员分析了50万条拼多多商品数据，告诉你到底是消费升级还是降级！
-
-https://mp.weixin.qq.com/s/4HVkEnk6_hONWJYdi8L53g
-
-闲聊结构化预测（structured learning）
-
-https://mp.weixin.qq.com/s/GP_t_fhklpVNhC6J6i0YbA
-
-再聊聊自然语言处理中的结构化预测问题
 
 https://mp.weixin.qq.com/s/_AHqFqf1zFNtBifayiTfXQ
 
@@ -341,13 +397,3 @@ https://mp.weixin.qq.com/s/rVXCjEilRC4sgluIg0q6TA
 https://mp.weixin.qq.com/s/HYZWANuSrt4DcO_monHRvA
 
 一位数据科学PhD眼中的算法交易
-
-# 知名AI公司技术主页
-
-http://uber.ai/
-
-Uber AI Labs
-
-https://deepmind.com/research/
-
-Deepmind

@@ -114,7 +114,7 @@ https://en.wikipedia.org/wiki/Regularization_(mathematics)
 
 $$L_1$$ regularization又被称为Lasso（least absolute shrinkage and selection operator） regression。
 
-从贝叶斯统计的角度来看，规则化相当于增加了一个先验分布，比如$$L_2$$ regularization对应的贝叶斯先验分布是正态分布。
+从贝叶斯统计的角度来看，规则化相当于增加了一个先验分布，比如$$L_2$$ regularization对应的贝叶斯先验分布是Gaussian distribution，而$$L_1$$ regularization对应的贝叶斯先验分布是Laplace distribution。
 
 除此之外，还有混合使用规则化的情况，比如：
 
