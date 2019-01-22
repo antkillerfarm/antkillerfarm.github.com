@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Clojure, Groovy, Lisp, Javascript在客户端的使用, 数字成像
+title:  Clojure, Groovy, Lisp, Javascript在客户端的使用, perl, 数字成像
 category: language 
 ---
 
@@ -138,6 +138,24 @@ https://www.douban.com/group/topic/27583755/
 然而，由于低层实现的限制，这些UI配置文件语法各异，虽然有设计器来简化设计难度，但注定不能做的太复杂。因此，功能上无论如何都无法与网页相比，更不必说和HTML 5相比了。
 
 2012年以后，以CEF（Chromium Embedded Framework）和XULRunner为代表的浏览器派，开始逐渐崭露头角。从此，开发桌面应用程序，不再是Javascript的禁区。桌面应用UI和网页前端开始呈现融合的局面。
+
+# perl
+
+中文教程：
+
+http://www.runoob.com/perl/perl-tutorial.html
+
+perl的语法和C差别不算太大，好多语法大致上从关键字也可以猜出来。这里仅对一些符号做个简短的说明。
+
+`$name`：变量name。
+
+`@name`：数组name。
+
+`&name`：函数name。这种情况下，name的定义在使用之后。如果name的定义在使用之前，`&`可省略。
+
+`%name`：哈希数组name。
+
+perl的包管理器叫做cpan。这实际上也是该工具网站的名字。
 
 # 数字成像
 
@@ -304,35 +322,3 @@ https://mp.weixin.qq.com/s/R7wnyHT6M-KF3ZMz0bPrVg
 https://mp.weixin.qq.com/s/j970Qp8Cz2fpbImujkS2Xg
 
 自动驾驶应用中的LED flicker问题
-
-https://mp.weixin.qq.com/s/ofoh7xH9MB0ifORi-ZQbcA
-
-苹果iphone Xs/Xr camera有哪些改进
-
-https://mp.weixin.qq.com/s/24ipxnkh6TNiqRrakgw6ew
-
-Google Pixel3拍照为什么那么牛？
-
-https://mp.weixin.qq.com/s/cxsdBLnguAFJcFP65_cC0A
-
-3D摄像头产业链解析
-
-https://mp.weixin.qq.com/s/Kp1CLCz0eG38r1HplQ02Ew
-
-即将兴起的汽车内视相机
-
-https://mp.weixin.qq.com/s/jmvcuiRu82zVC2kq91uS0g
-
-谷歌AI用“深度”学习来虚化背景，单摄手机可用，Jeff Dean表示优秀
-
-https://mp.weixin.qq.com/s/tg1Rjl-8t93IVIh1PHTuWg
-
-什么是‘log灰’
-
-https://mp.weixin.qq.com/s/al1rP_LQLe1xIGuwK2Gr2A
-
-AI camera时代对成像带来了哪些影响
-
-https://mp.weixin.qq.com/s/YW3anc5S9_BDrXiyVro5fQ
-
-从光学成像到计算光学成像

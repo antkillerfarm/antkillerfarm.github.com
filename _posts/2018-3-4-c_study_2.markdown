@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  C/C++编程心得（二）, IDE, Python（三）
+title:  C/C++编程心得（二）, VS Code, Python（三）
 category: language 
 ---
 
@@ -56,41 +56,45 @@ https://stackoverflow.com/questions/27475977/c-undefined-reference-to-sqrt-even-
 
 C - undefined reference to “sqrt” even with '-lm'
 
-# IDE
+# VS Code
 
-## Source Insight
+VS Code（Visual Studio Code）是由微软研发的一款免费、开源的跨平台文本（代码）编辑器。（首发于2015年）从文件来看应该是基于nodejs所做，据说脱胎于Atom。
 
-Shift+F8：高亮选中的字
+目前我已经用VS Code替换了Source Insight。后者这么多年了，版本才4.0，而且由于收费的缘故，绝大多数人还是使用3.5版本，那可是我2009年刚接触时就有的版本。
 
-http://www.cnblogs.com/bluestorm/archive/2012/10/28/2743792.html
+官网：
 
-Source Insight常用设置和快捷键大全
+https://code.visualstudio.com/
 
-## Eclipse
+安装：
 
-### 分栏显示
+`umake ide visual-studio-code`
 
-1.拖住一个文件不放，直到鼠标图案发生改变。
+在Ubuntu 18.04中，umake安装方法没有处理好依赖，需要：
 
-2.如果需要左右显示两个文件，向左右移动鼠标，如果需要上下显示两个文件，上下移动。这里的移动需要移出编辑窗口范围。
+`sudo apt install libgconf-2-4`
 
-## VS
+## 2018.9
 
-### 分栏显示
+VS Code也有作为IDE的用途。大概从2014年开始，就陆续有公司基于VS Code开发自己的商用IDE。早先还主要集中于前端开发领域，现在就连传统的半导体公司也开始转型VS Code了。Eclipse统治商用IDE的时代，行将结束。
 
-1.Window -> New Window
+## 细节
 
-2.Window -> New Vertical Tab Group
+ctrl+P 命令行
 
-### Visual Studio Tab转换为空格的设置
+View--> Toggle Word Wrap 自动换行
 
-打开“Tools --> Options --> Text Editor”，如果是编写C/C++程序，就打开“C/C++-->Tabs”，在这里，选中“Insert spaces”即可。
+`"editor.rulers": []`：在一定数量的等宽字符后显示垂直标尺。输入多个值，显示多个标尺。
 
-## Other
+## 插件
 
-http://dcloud.io/index.html
+filesize：在底部状态栏显示当前文件大小，点击后还可以看到详细创建、修改时间
 
-HBuilder，一个html编辑的IDE。
+## 参考
+
+https://blog.csdn.net/GossipHHH/article/details/78132398
+
+VsCode插件安装及推荐
 
 # Python
 
@@ -354,27 +358,3 @@ JPype：实现在python中调用JAVA
 http://www.cnblogs.com/yu-zhang/p/3817024.html
 
 python调用java程序--jpype
-
-## Celery
-
-Celery是一个专注于实时处理和任务调度的分布式任务队列，可用于执行定时任务。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/22304455
-
-使用Celery
-
-## Gunicorn
-
-Gunicorn是一个高效的Python WSGI Server，地位相当于Java中的Tomcat。
-
-官网：
-
-http://gunicorn.org/
-
-参考：
-
-http://www.cnblogs.com/ArtsCrafts/p/gunicorn.html
-
-Gunicorn快速入门

@@ -148,6 +148,10 @@ http://blog.csdn.net/malefactor/article/details/50550211
 
 自然语言处理中的Attention Model
 
+https://mp.weixin.qq.com/s/ZBaBtnQR7e39jZsY_JOqfw
+
+自然语言处理中注意力机制综述
+
 https://yq.aliyun.com/articles/65356
 
 图文结合详解深度学习Memory & Attention

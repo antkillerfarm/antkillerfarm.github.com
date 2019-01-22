@@ -6,6 +6,30 @@ category: language
 
 # Python
 
+## Celery
+
+Celery是一个专注于实时处理和任务调度的分布式任务队列，可用于执行定时任务。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/22304455
+
+使用Celery
+
+## Gunicorn
+
+Gunicorn是一个高效的Python WSGI Server，地位相当于Java中的Tomcat。
+
+官网：
+
+http://gunicorn.org/
+
+参考：
+
+http://www.cnblogs.com/ArtsCrafts/p/gunicorn.html
+
+Gunicorn快速入门
+
 ## 并行计算
 
 python异步并发模块concurrent.futures，主要用来实现多线程和多进程的异步并发。

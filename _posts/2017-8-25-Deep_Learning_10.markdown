@@ -251,11 +251,53 @@ https://mp.weixin.qq.com/s/A66WeHH77IOCv61RHiDE0w
 
 首先需要明确一点，CNN中的卷积和反卷积，实际上和数学意义上的卷积、反卷积是有差异的。
 
-数学上的卷积主要用于傅立叶变换，在计算的过程中，有一个时域上的反向操作，并不是简单的向量内积运算。在信号处理领域，卷积主要用作**信号的采样**。
+数学上的**卷积**主要用于傅立叶变换，在计算的过程中，有一个时域上的反向操作，并不是简单的向量内积运算。在信号处理领域，卷积主要用作**信号的采样**。
 
-数学上的反卷积主要作为卷积的逆运算，相当于**信号的重建**，或者解微分方程。因此，它的难度远远大于卷积运算，常见的有Wiener deconvolution、Richardson–Lucy deconvolution等。
+数学上的**反卷积**主要作为卷积的逆运算，相当于**信号的重建**，或者解微分方程。因此，它的难度远远大于卷积运算，常见的有Wiener deconvolution、Richardson–Lucy deconvolution等。
 
 CNN的反卷积就简单多了，它只是误差的反向算法而已。因此，也有人用back convolution, transpose convolution, Fractionally Strided Convolution这样更精确的说法，来描述CNN的误差反向算法。
+
+## Deconvolution
+
+在《深度学习（三）》中，我们已经给出了Deconvolution的推导公式，但是并不直观。这里补充说明一下。
+
+![](/images/article/no_padding_strides_transposed.gif)
+
+上图是transpose convolution的操作。或者也可以看下图：
+
+![](/images/img2/deconv.png)
+
+上面的图主要是直观理解。实际计算中，除了使用GEMM之外，更常见的方法不是input padding，而是采用下图的办法：
+
+![](/images/img2/deconv.jpg)
+
+这个方法的步骤如下：
+
+1.kernel padding。把[2, 2, Input, Output]的kernel，pad成[1, 1, Input, Output x 4]。
+
+2.正常的conv运算，得到[W， H， Output x 4]大小的output tensor。
+
+3.使用depth_to_space操作，将output tensor的大小变为[W x 2， H x 2， Output]。
+
+显然，kernel padding只用算一次，且可预计算，因此计算效率上比input padding高得多。
+
+## Deconvolution & Image Resize
+
+Deconvolution提供了比普通的Image Resize更丰富的上采样方式。因此，常规的Image Resize操作，实际上都可用Deconvolution来做。这在某些拥有NN硬件加速的设备上是很有用的。
+
+参考：
+
+https://cv-tricks.com/image-segmentation/transpose-convolution-in-tensorflow/
+
+Image Segmentation using deconvolution layer in Tensorflow
+
+https://zhuanlan.zhihu.com/p/32414293
+
+双线性插值的两种实现方法
+
+http://warmspringwinds.github.io/tensorflow/tf-slim/2016/11/22/upsampling-and-image-segmentation-with-tensorflow-and-tf-slim/
+
+Upsampling and Image Segmentation with Tensorflow and TF-Slim
 
 ## Dilated convolution
 
@@ -263,9 +305,7 @@ CNN的反卷积就简单多了，它只是误差的反向算法而已。因此�
 
 上图是Dilated convolution的操作。又叫做多孔卷积(atrous convolution)。
 
-![](/images/article/no_padding_strides_transposed.gif)
-
-上图是transpose convolution的操作。它和Dilated convolution的差别在于，前者是图像上有洞，而后者是kernel上有洞。
+可以看出，它和Deconvolution的差别在于，前者是kernel上有洞，而后者是Input上有洞。
 
 和池化相比，Dilated convolution实际上也是一种下采样，只不过采样的位置是固定的，因而能够更好的保持空间结构信息。
 
@@ -287,48 +327,10 @@ https://github.com/fyu/drn
 >个人主页：   
 >http://www.yf.io/
 
-在实际计算中，可以采用space_to_batch和batch_to_space操作，将之转换为普通卷积。
+和Deconvolution类似，Dilated convolution也可以采用space_to_batch和batch_to_space操作，将之转换为普通卷积。
 
 参考：
 
 https://zhuanlan.zhihu.com/p/28822428
 
 Paper笔记：Dilated Residual Networks
-
-## 分组卷积
-
-![](/images/article/AlexNet.png)
-
-分组卷积最早在AlexNet中出现，由于当时的硬件资源有限，训练AlexNet时卷积操作不能全部放在同一个GPU处理，因此作者把feature maps分给2个GPU分别进行处理，最后把2个GPU的结果进行融合。
-
-在AlexNet的Group Convolution当中，特征的通道被平均分到不同组里面，最后再通过两个全连接层来融合特征，这样一来，就只能在最后时刻才融合不同组之间的特征，对模型的泛化性是相当不利的。
-
-为了解决这个问题，ShuffleNet在每一次层叠这种Group conv层前，都进行一次channel shuffle，shuffle过的通道被分配到不同组当中。进行完一次group conv之后，再一次channel shuffle，然后分到下一层组卷积当中，以此循环。
-
-![](/images/img2/ShuffleNet.png)
-
-论文：
-
-《ShuffleNet: An Extremely Efficient Convolutional Neural Network for Mobile Devices》
-
-![](/images/img2/ShuffleNet_2.png)
-
-上图是ShuffleNet的Unit结构图，DWConv表示depthwise convolution，GConv表示pointwise group convolution。a是普通的Deep Residual Unit，b的进化用以提高精度，c的进一步进化用以减少计算量。
-
-参考：
-
-https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg
-
-旷视科技提出新型卷积网络ShuffleNet，专为移动端设计
-
-https://mp.weixin.qq.com/s/0MvCnm46pgeMGEw-EdNv_w
-
-CNN模型之ShuffleNet
-
-https://mp.weixin.qq.com/s/tceLrEalafgL8R44DZYP9g
-
-旷视科技提出新型轻量架构ShuffleNet V2：从理论复杂度到实用设计准则
-
-https://mp.weixin.qq.com/s/Yhvuog6NZOlVWEZURyqWxA
-
-ShuffleNetV2：轻量级CNN网络中的桂冠

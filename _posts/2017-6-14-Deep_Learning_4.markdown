@@ -4,6 +4,38 @@ title:  深度学习（四）——Autoencoder, 词向量
 category: DL 
 ---
 
+# CNN
+
+## 参考（续）
+
+https://mp.weixin.qq.com/s/D6ok6dQqyx6cCJKc2M8YpA
+
+从AlexNet剖析-卷积网络CNN的一般结构
+
+https://mp.weixin.qq.com/s/XZeZX8zTtNom0az_ralp4A
+
+ImageNet冠军带你入门计算机视觉：卷积神经网络
+
+https://mp.weixin.qq.com/s/t8jg_bpEcQiJmgIqKarefQ
+
+卷积神经网络CNN学习笔记
+
+https://mp.weixin.qq.com/s/buRuerMHkRMSSVlvmlDdtw
+
+人人都能读懂卷积神经网络：Convolutional Networks for everyone
+
+https://mp.weixin.qq.com/s/3pIybS_GsuN6XobP_4bLrg
+
+深度学习以及卷积基础
+
+https://mp.weixin.qq.com/s/VcjivPhJuCk7NPQ1FNQULw
+
+一文让你入门CNN
+
+https://mp.weixin.qq.com/s/zvPNuP_LT7pWIgoxzfeUWw
+
+综述卷积神经网络：从基础技术到研究前景
+
 # Autoencoder
 
 ## Basic AE
@@ -241,23 +273,3 @@ Paragraph Vector可以和Word Vector一起生成，也可以单独生成，也�
 https://www.zhihu.com/question/33952003
 
 如何通过词向量技术来计算2个文档的相似度?
-
-## FastText
-
-Word2Vec作者Mikolov加盟Facebook之后，提出了文本分类新作FastText。
-
-FastText模型架构和Word2Vec中的CBOW模型很类似。不同之处在于，FastText预测标签，而CBOW模型预测中间词。
-
-Github：
-
-https://github.com/facebookresearch/fastText
-
-FastText的论文其实有两篇：
-
-《Bag of Tricks for Efficient Text Classification》
-
-这篇就是上述文本分类的论文。
-
-《Enriching Word Vectors with Subword Information》
-
-这篇是根据词根改进词向量的论文。因此，有的blog说，使用FastText生成词向量，实际上就是指的这篇文章。

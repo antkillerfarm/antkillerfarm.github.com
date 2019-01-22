@@ -4,7 +4,20 @@ title:  深度学习（六）——LSTM, 神经元激活函数进阶
 category: DL 
 ---
 
-# RNN（续）
+# RNN
+
+## RNN的历史（续）
+
+>美国的创立者，一般被翻译为Founding Fathers of the United States。此外还有一个更响亮的称号76ers。没错，NBA那支球队的名字就是这么来的。
+
+除了Elman RNN之外，还有Jordan RNN。（没错，吴恩达的导师的作品）
+
+$$\begin{align}
+h_t &= \sigma_h(W_{h} x_t + U_{h} y_{t-1} + b_h) \\
+y_t &= \sigma_y(W_{y} h_t + b_y)
+\end{align}$$
+
+Elman RNN的记忆来自于隐层单元，而Jordan RNN的记忆来自于输出层单元。
 
 ## 参考
 
@@ -305,17 +318,3 @@ $$f(x) = \begin{cases}
 x & \mbox{if } x \geq 0 \\ 
 a(e^x-1) & \mbox{otherwise}
 \end{cases}$$
-
-## Maxout
-
-Maxout Networks是Ian J. Goodfellow于2013年提出的一大类激活函数。
-
-![](/images/article/maxout.png)
-
-上图是Maxout Networks的结构图。传统的激活函数一般是这样的形式：$$\sigma(Wx+b)$$
-
-Maxout Networks将$$Wx+b$$这部分运算，分成k个组。每组的w和b都不相同。然后对每组计算结果$$z_{ij}$$取最大值。
-
-从这个意义来说，ReLU可以看做是Maxout的特殊情况，即：
-
-$$y=\max(W_1x+b_1,W_2x+b_2)=\max(0,Wx+b)$$

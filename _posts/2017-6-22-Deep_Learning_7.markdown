@@ -4,9 +4,21 @@ title:  深度学习（七）——Deep Residual Network, Bi-directional RNN, se
 category: DL 
 ---
 
-# 神经元激活函数进阶
+# 神经元激活函数进阶（续）
 
-## Maxout（续）
+## Maxout
+
+Maxout Networks是Ian J. Goodfellow于2013年提出的一大类激活函数。
+
+![](/images/article/maxout.png)
+
+上图是Maxout Networks的结构图。传统的激活函数一般是这样的形式：$$\sigma(Wx+b)$$
+
+Maxout Networks将$$Wx+b$$这部分运算，分成k个组。每组的w和b都不相同。然后对每组计算结果$$z_{ij}$$取最大值。
+
+从这个意义来说，ReLU可以看做是Maxout的特殊情况，即：
+
+$$y=\max(W_1x+b_1,W_2x+b_2)=\max(0,Wx+b)$$
 
 更多的情况参见下图：
 

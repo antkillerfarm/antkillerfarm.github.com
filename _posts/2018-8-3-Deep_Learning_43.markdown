@@ -296,6 +296,10 @@ https://mp.weixin.qq.com/s/xdFxQfgj61pgB-aCq31rLA
 
 旷视等提出GIF2Video：首个深度学习GIF质量提升方法
 
+https://mp.weixin.qq.com/s/gTD5H_Vy2b-7fuvAYxVsnQ
+
+基于GAN和CNN的图像盲去噪
+
 # 模型压缩与加速
 
 https://mp.weixin.qq.com/s/nEMvoiqImd0RxrskIH7c9A

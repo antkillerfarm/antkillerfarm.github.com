@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Java（二）, 孩子的编程语言, Javascript（二）, Scala, perl
+title:  Java（二）, 孩子的编程语言, Javascript（二）, Scala
 category: language 
 ---
 
@@ -212,7 +212,7 @@ http://www.cs.berkeley.edu/~bh/logo.html
 
 ## NetLogo
 
-NetLogo是继承了Logo语言的一款编程开发平台,但它又改进了Logo语言只能控制单一个体的不足,它可以在建模中控制成千上万的个体,因此,NetL0go建模能很好地模拟微观个体的行为和宏观模式的涌现及其两者之间的联系。
+NetLogo是继承了Logo语言的一款编程开发平台,但它又改进了Logo语言只能控制单一个体的不足,它可以在建模中控制成千上万的个体,因此,NetLogo建模能很好地模拟微观个体的行为和宏观模式的涌现及其两者之间的联系。
 
 官网：
 
@@ -225,6 +225,14 @@ Kodu是微软推出的面向儿童的可视化编程语言，可以让孩子自�
 官网：
 
 https://www.kodugamelab.com/
+
+## turtle
+
+turtle是python对于LOGO语言图形库的实现。大概是出于照顾初学者，尤其是孩子的考虑，turtle库无须安装，已经内置到python的标准库中了。
+
+文档：
+
+https://docs.python.org/3/library/turtle.html
 
 # Javascript
 
@@ -377,21 +385,3 @@ http://www.scalafx.org/
 sbt支持：
 
 `libraryDependencies += "org.scalafx" %% "scalafx" % "8.0.92-R10"`
-
-# perl
-
-中文教程：
-
-http://www.runoob.com/perl/perl-tutorial.html
-
-perl的语法和C差别不算太大，好多语法大致上从关键字也可以猜出来。这里仅对一些符号做个简短的说明。
-
-`$name`：变量name。
-
-`@name`：数组name。
-
-`&name`：函数name。这种情况下，name的定义在使用之后。如果name的定义在使用之前，`&`可省略。
-
-`%name`：哈希数组name。
-
-perl的包管理器叫做cpan。这实际上也是该工具网站的名字。

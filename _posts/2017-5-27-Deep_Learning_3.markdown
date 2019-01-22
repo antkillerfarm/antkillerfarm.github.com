@@ -178,11 +178,13 @@ $$g(i,j)=\sum_{c,k,l}f(i+k,j+l)h(k,l)$$
 
 2.即使是LeNet-5的MNIST示例中，实际上也是有多通道卷积的，只不过不在第一个卷积层而已。
 
-3.多通道卷积除了二维空间信息的卷积之外，还包括了**通道间信息**的卷积。这也是CNN中1*1卷积的意义之一。
+3.多通道卷积除了二维空间信息的卷积之外，还包括了**通道间信息**的卷积。这也是CNN中1x1卷积的意义之一。
 
 多通道卷积操作最终可以转化为矩阵运算，如下图所示：
 
 ![](/images/article/conv.jpg)
+
+这种将卷积运算变为矩阵乘法运算的方法，一般被称为GEMM（General Matrix Multiply）。因为卷积变为矩阵这一步运算在Caffe中是用im2col函数实现的，因此，也有使用im2col来指代这类方法的。
 
 参见：
 
@@ -194,11 +196,21 @@ https://www.zhihu.com/question/28385679
 
 在Caffe中如何计算卷积？
 
+https://buptldy.github.io/2016/10/01/2016-10-01-im2col/
+
+Implementing convolution as a matrix multiplication（中文blog）
+
 ## CNN的反向传播算法
 
 由于卷积和池化两层，不是一般的神经网络结构。因此CNN的反向传播算法实际上也是很有技巧的。
 
-相关推导见参考文献，这里只给出卷积层的结论：
+上面提到卷积操作可以转换为矩阵运算：$$y=Cx$$
+
+其对应的梯度反向传播公式为：
+
+$$\frac{\partial Loss}{\partial x} = \frac{\partial y^T}{\partial x}\cdot \frac{\partial Loss}{\partial y} = C^T \cdot \frac{\partial Loss}{\partial y}$$
+
+因此：
 
 正向：$$Y=X*K$$
 
@@ -223,6 +235,10 @@ CNN误差反传时旋转卷积核的简明分析
 https://mp.weixin.qq.com/s/dnElNURJ6xfWHJVf_yeT8w
 
 理解多层CNN中转置卷积的反向传播
+
+https://www.jianshu.com/p/f0674e48894c
+
+Tensorflow反卷积（DeConv）实现原理
 
 ## 参考
 
@@ -293,31 +309,3 @@ https://mp.weixin.qq.com/s/x-H6h4sRqTrZlOXKStnhPw
 https://mp.weixin.qq.com/s/qIdjHqurqvdahEd0dXYIqA
 
 徒手实现CNN：综述论文详解卷积网络的数学本质
-
-https://mp.weixin.qq.com/s/D6ok6dQqyx6cCJKc2M8YpA
-
-从AlexNet剖析-卷积网络CNN的一般结构
-
-https://mp.weixin.qq.com/s/XZeZX8zTtNom0az_ralp4A
-
-ImageNet冠军带你入门计算机视觉：卷积神经网络
-
-https://mp.weixin.qq.com/s/t8jg_bpEcQiJmgIqKarefQ
-
-卷积神经网络CNN学习笔记
-
-https://mp.weixin.qq.com/s/buRuerMHkRMSSVlvmlDdtw
-
-人人都能读懂卷积神经网络：Convolutional Networks for everyone
-
-https://mp.weixin.qq.com/s/3pIybS_GsuN6XobP_4bLrg
-
-深度学习以及卷积基础
-
-https://mp.weixin.qq.com/s/VcjivPhJuCk7NPQ1FNQULw
-
-一文让你入门CNN
-
-https://mp.weixin.qq.com/s/zvPNuP_LT7pWIgoxzfeUWw
-
-综述卷积神经网络：从基础技术到研究前景
