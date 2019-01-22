@@ -146,6 +146,10 @@ https://zhuanlan.zhihu.com/p/41767489
 
 概率机器人——扩展卡尔曼滤波、无迹卡尔曼滤波
 
+https://mp.weixin.qq.com/s/J27fVvYMRdoAgQtfXsywxg
+
+OpenCV卡尔曼滤波介绍与代码演示
+
 # 推荐算法中的常用排序算法
 
 ## Pointwise方法

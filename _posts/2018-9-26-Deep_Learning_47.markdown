@@ -357,3 +357,7 @@ Seminars DeepBayes Summer School 2018
 https://mp.weixin.qq.com/s/WCRYppBLdl_M4etUChnfgw
 
 PyMC3和Theano代码构建贝叶斯深度网络
+
+https://mp.weixin.qq.com/s/7mwJpQFWWXJ3dvTAwDFI7Q
+
+贝叶斯卷积神经网络：架起深度学习与统计学的桥梁

@@ -144,6 +144,10 @@ https://zhuanlan.zhihu.com/p/54576174
 
 行人重识别新任务：训练只需一张标注图片
 
+https://zhuanlan.zhihu.com/p/55320029
+
+行人跨模态重识别：双向限制的排序损失
+
 # 人脸识别进阶
 
 https://mp.weixin.qq.com/s/5vx1FGgSOhF71FwHeUwaAQ
