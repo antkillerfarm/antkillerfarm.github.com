@@ -90,6 +90,10 @@ https://mp.weixin.qq.com/s/Uf1lWtxOpKYCDLmCDlnVAQ
 
 把Cross Entropy梯度分布拉‘平’，就能轻松超越Focal Loss
 
+https://mp.weixin.qq.com/s/7Jg-YvS3nvcPJ-zYhK96EA
+
+分享神经网络中设计loss function的一些技巧
+
 ## OHEM
 
 论文：
@@ -249,6 +253,10 @@ https://mp.weixin.qq.com/s/ZrnAqDJCLtMy_qTQ2RZT0A
 级联MobileNet-V2实现人脸关键点检测
 
 ## 参考
+
+https://github.com/ChanChiChoi/awesome-Face_Recognition
+
+不止面部识别，一切关于人脸AI的资源都能在这里下载
 
 https://mp.weixin.qq.com/s/eZ78biXN-mVw3s9Ky_LBZg
 

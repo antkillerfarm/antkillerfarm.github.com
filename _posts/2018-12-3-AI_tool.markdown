@@ -306,6 +306,10 @@ https://mp.weixin.qq.com/s/pVrLcSk02_IJo65YO0kCow
 
 Python推荐系统框架：RecQ
 
+https://mp.weixin.qq.com/s/NJujC9QQtNF27IonW5lI6Q
+
+Facebook开源增强版LASER库，包含93种语言工具包
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/Sb_kPgtwyQFWloDT3707TA

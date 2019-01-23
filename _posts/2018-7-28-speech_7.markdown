@@ -332,6 +332,10 @@ https://mp.weixin.qq.com/s/VUsVB2mo8WMs0MoYNIhhqA
 
 深度学习应用于复杂系统控制
 
+https://mp.weixin.qq.com/s/g8MQyq9GFcUzP-W7fbNYRw
+
+四维图新：高精度地图构建的实时物体检测和分割
+
 # 知识图谱参考资源
 
 https://mp.weixin.qq.com/s/d4cEHHo6OhlWEIXTFIdTuA

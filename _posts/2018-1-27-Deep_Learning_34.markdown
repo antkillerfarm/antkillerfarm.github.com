@@ -198,6 +198,10 @@ https://mp.weixin.qq.com/s/iLaGGJXLwgI7qzcgkySlSQ
 
 工程实践也能拿KDD最佳论文？解读Embeddings at Airbnb
 
+https://mp.weixin.qq.com/s/oJUzrZP_cxhiarq0w9Yqpg
+
+从KDD 2018最佳论文看Airbnb实时搜索排序中的Embedding技巧
+
 https://mp.weixin.qq.com/s/sY9ILRTUCmupmJyJ3RX6-w
 
 57页清华大学孙茂松组《知识表示学习》综述论文

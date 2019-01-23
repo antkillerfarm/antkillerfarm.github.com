@@ -128,6 +128,10 @@ https://zhuanlan.zhihu.com/c_168521441
 
 在线学习(MAB)与强化学习(RL)
 
+https://github.com/p-christ/Deep-Reinforcement-Learning-Algorithms-with-PyTorch
+
+PyTorch实现多种深度强化学习算法
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》

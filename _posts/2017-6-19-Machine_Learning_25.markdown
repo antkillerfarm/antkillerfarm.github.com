@@ -323,3 +323,7 @@ https://mp.weixin.qq.com/s/_QPzoFyhCxnIxDWKzzsvAQ
 https://mp.weixin.qq.com/s/eYTDwSqgj-r7yV7w9tY_MA
 
 融合质量不理想数据
+
+https://mp.weixin.qq.com/s/tduZoZecbOM0gC9Ugerbwg
+
+用AI设计微波集成电路，清华大学等提出深度强化学习方法RINN
