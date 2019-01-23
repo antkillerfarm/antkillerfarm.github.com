@@ -236,13 +236,21 @@ https://mp.weixin.qq.com/s/gsoVFiG3tKhHAU7OCGfLPg
 
 ![](/images/article/conv_3d.png)
 
-如上图所示，3D卷积的kernel不再是2D的，而是3D的。
+![](/images/img2/conv3d.gif)
+
+如上两图所示，3D卷积的kernel不再是2D的，而是3D的。
+
+它和多通道卷积的区别在于：
+
+多通道卷积不同的通道上的卷积核的参数是不同的，而3D卷积则由于卷积核本身是3D的，所以这个由于“深度”造成的看似不同通道上用的就是同一个卷积
 
 论文：
 
 《A two-stage 3D Unet framework for multi-class segmentation on full resolution image》
 
 ![](/images/img2/UNet-3D.jpg)
+
+上图是一个用于CT图像的语义分割网络。其结构仿照UNet，故被称作UNet-3D。
 
 处理大型高分辨率3D数据时的一个常见问题是，由于计算设备的存储容量有限，输入深度CNN的体积必须进行裁剪（crop）或降采样（downsample）。这些操作会导致输入数据 batches 中分辨率的降低和类不平衡的增加，从而降低分割算法的性能。
 
@@ -262,3 +270,6 @@ https://zhuanlan.zhihu.com/p/31841353
 
 3D CNN阅读笔记
 
+https://mp.weixin.qq.com/s/tcuyp4SK_9zXZKZtUu8h9Q
+
+从2D卷积到3D卷积，都有什么不一样

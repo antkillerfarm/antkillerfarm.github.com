@@ -166,6 +166,10 @@ https://mp.weixin.qq.com/s/rllQLPPYxxLCK9-dgOjLDg
 
 另一种可微架构搜索：商汤提出在反传中学习架构参数的SNAS
 
+https://mp.weixin.qq.com/s/AV8fD5Vf6uzhLeW9nfMASg
+
+一文详解随机神经网络结构搜索(SNAS)
+
 ## 书籍
 
 https://mp.weixin.qq.com/s/wTwjbripELzqdCjs64Dzzw

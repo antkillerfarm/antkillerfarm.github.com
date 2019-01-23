@@ -368,6 +368,10 @@ https://mp.weixin.qq.com/s/2Th2PO4rC-r4LOU46uYDjg
 
 重读Youtube深度学习推荐系统论文，字字珠玑，惊为神文
 
+https://mp.weixin.qq.com/s/mcf3Aoub6VbNwtA-Izsdbg
+
+YouTube深度学习推荐系统的十大工程问题
+
 https://mp.weixin.qq.com/s/A7Qg1gd66aksA6npJl3dNQ
 
 深度学习在搜索业务中的探索与实践

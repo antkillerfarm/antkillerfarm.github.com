@@ -399,6 +399,10 @@ https://mp.weixin.qq.com/s/gzE46SzANLaYaXdLVEBRaA
 
 专家揭秘“低功耗芯片设计”真相
 
+https://mp.weixin.qq.com/s/pFBhnjtXi8uNMGjYFeSfow
+
+芯片行业都难在哪儿？这篇说得最详细！
+
 ## 3D芯片
 
 随着半导体工艺日益接近物理极限，2D芯片已经不能满足进化的需要，芯片的设计也迈向了立体发展的阶段。目前主流的3D芯片技术包括FinFET（1999）与FD-SOI（2000），他们都是胡正明团队的作品。
@@ -419,8 +423,10 @@ https://mp.weixin.qq.com/s/NJBx8ndkBBedC81f3-DKOA
 
 缩短波长的方法除了增加频率之外，其实还有更换介质。
 
+![](/images/img2/ASML.jpg)
+
 参考：
 
 https://mp.weixin.qq.com/s/NZGNrO_LxNc6qrIdofOIfQ
 
-假如没有他，就没有今天的台积电
+假如没有他（林本坚），就没有今天的台积电
