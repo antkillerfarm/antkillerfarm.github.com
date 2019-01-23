@@ -148,6 +148,10 @@ https://zhuanlan.zhihu.com/p/52274204
 
 AAAI2019 Spatial-Temporal Person Re-identification
 
+https://zhuanlan.zhihu.com/p/55320029
+
+行人跨模态重识别：双向限制的排序损失
+
 # 人脸识别进阶
 
 https://mp.weixin.qq.com/s/5vx1FGgSOhF71FwHeUwaAQ

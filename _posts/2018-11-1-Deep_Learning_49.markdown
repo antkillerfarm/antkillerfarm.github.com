@@ -200,6 +200,10 @@ https://mp.weixin.qq.com/s/fbOJJeU9h6FfsV9QFFv2gg
 
 重磅公开！阿里语音识别模型端核心技术，让你“听”见未来
 
+https://mp.weixin.qq.com/s/wbEjaZK5YXIuvlqNWN-0bA
+
+中科院自动化所徐波研究员团队：鸡尾酒会问题与相关听觉模型的研究现状与展望
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：

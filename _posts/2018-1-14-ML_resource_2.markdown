@@ -14,6 +14,10 @@ https://mp.weixin.qq.com/s/YrCC8CmP6UKuCmSdF2K_3g
 
 数据挖掘中的数据清洗方法大全
 
+https://mp.weixin.qq.com/s/FHdo2DTapoTryA-hOM-y_w
+
+还在为数据清洗抓狂？这里有一个简单实用的清洗代码集
+
 https://zhuanlan.zhihu.com/p/24709748
 
 矩阵求导术（上）
@@ -405,19 +409,3 @@ https://mp.weixin.qq.com/s/o6VZDRuYs8LhGm0JSI_c3w
 https://mp.weixin.qq.com/s/fCpbownZuD1FCiDxqkD-sA
 
 操龙兵：非独立同分布学习
-
-https://zhuanlan.zhihu.com/p/40214106
-
-流形学习概述
-
-https://mp.weixin.qq.com/s/Uw02CapdvpaMKbjry1Q_Cg
-
-爱犯错的智能体：谈谈黎曼流形与视觉距离错觉问题
-
-https://mp.weixin.qq.com/s/oGSk9Hsu6lbthJjLHF59Hg
-
-摩拜&京东联合利用智能单车数据挖掘违章停车
-
-https://mp.weixin.qq.com/s/iyd0ade-ZcXCxLoZ8_vWPQ
-
-应用于鲁棒主成分分析的双线性因子矩阵范数最小化
