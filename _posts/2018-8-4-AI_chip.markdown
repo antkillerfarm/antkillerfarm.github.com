@@ -315,3 +315,7 @@ HBM火了，它到底是什么？
 https://zhuanlan.zhihu.com/p/34164501
 
 HBM技术之显卡应用
+
+https://mp.weixin.qq.com/s/H_KnHQ6AzCNFqmW8uDj1rA
+
+基于FPGA的深度学习加速器综述：挑战与机遇

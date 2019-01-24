@@ -258,6 +258,10 @@ https://mp.weixin.qq.com/s/M3s3z3YnEBvUxpDVGFVKHw
 
 斯坦福吴恩达团队公布最大医学影像数据集
 
+https://mp.weixin.qq.com/s/9TFLE3R7ct0HzaAwOCfkbw
+
+斯坦福联合MIT，发布两类巨大量级X光胸片数据集
+
 ## Other
 
 https://mp.weixin.qq.com/s/VCJoBf2ECdvyRLU7atciYA

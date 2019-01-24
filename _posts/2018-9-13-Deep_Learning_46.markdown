@@ -415,3 +415,7 @@ https://mp.weixin.qq.com/s/k_33UK1RkMyHn6TSudU6Kg
 https://mp.weixin.qq.com/s/IN4YfoZnlBozwEFdhSvLZg
 
 用可视化解构BERT，我们从上亿参数中提取出了6种直观模式
+
+https://mp.weixin.qq.com/s/nIT3GIU0dUIYyGChxsiOWw
+
+Google BERT应用之《红楼梦》对话人物提取

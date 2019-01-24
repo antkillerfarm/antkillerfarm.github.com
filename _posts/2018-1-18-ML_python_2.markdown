@@ -455,3 +455,7 @@ Python数据处理实战——使用Scikit-Learn进行多类文本分类
 https://mp.weixin.qq.com/s/WdYa7Q-yA-s_EO59YkYbqw
 
 7个基本机器学习算法Python实现
+
+https://mp.weixin.qq.com/s/EqLzNzzMcwq5SEyBoTsuug
+
+11种NLP文本预处理Python代码，简洁实用

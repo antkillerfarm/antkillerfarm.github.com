@@ -42,10 +42,6 @@ https://mp.weixin.qq.com/s/iXmjuBh2zzno7-D9ClYbSA
 
 讲解DeepMind论文：AI在复杂环境中学习运动
 
-https://mp.weixin.qq.com/s/QYG0l1fk35C1evM2FSHgsw
-
-多轮对话之对话管理：Dialog Management
-
 https://mp.weixin.qq.com/s/glwjwXNNoMYBmhgwEcpUeg
 
 十倍模型计算时间仅增20%：OpenAI开源梯度替换插件

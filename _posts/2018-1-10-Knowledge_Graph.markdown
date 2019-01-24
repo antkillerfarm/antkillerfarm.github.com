@@ -415,3 +415,7 @@ https://mp.weixin.qq.com/s/ZM0qZrqyk0QPBXYbkHAA8A
 https://mp.weixin.qq.com/s/NxTTIWVPJi6yXuXr1qAmKw
 
 复旦数据院副院长阳德青：知识图谱在个性化推荐系统中的应用
+
+https://mp.weixin.qq.com/s/pwgYl6U3-w2sS-tAqn1hjg
+
+北京大学计算机所邹磊教授研究组开源面向 RDF 知识图谱的自然语言问答系统 gAnswer

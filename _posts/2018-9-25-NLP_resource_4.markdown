@@ -397,3 +397,11 @@ https://mp.weixin.qq.com/s/tvfCW7Lwkug9ILKpJuMnUA
 https://mp.weixin.qq.com/s/6IO-pAP6Jcct5W-tReaLtw
 
 基于深度强化学习的远程监督数据集的降噪
+
+https://mp.weixin.qq.com/s/QYG0l1fk35C1evM2FSHgsw
+
+多轮对话之对话管理：Dialog Management
+
+https://mp.weixin.qq.com/s/hhWRhBeRCmxjr9Lh8aE_Ww
+
+如何用20万条客服咨询消息“喂”出定制化聊天机器人

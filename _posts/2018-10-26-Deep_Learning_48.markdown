@@ -206,6 +206,10 @@ https://zhuanlan.zhihu.com/p/55193930
 
 Attention U-Net论文笔记
 
+https://zhuanlan.zhihu.com/p/55263898
+
+语义分割江湖的那些事儿——从旷视说起
+
 # 问答系统
 
 GA-Reader

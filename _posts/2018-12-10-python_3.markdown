@@ -419,6 +419,10 @@ https://mp.weixin.qq.com/s/NJBx8ndkBBedC81f3-DKOA
 
 5nm以后的晶体管选择
 
+https://mp.weixin.qq.com/s/RtSmbwguM7dbsXkWqAPuCQ
+
+英特尔3D封装技术深度解读
+
 ## 浸润式微影
 
 缩短波长的方法除了增加频率之外，其实还有更换介质。
@@ -430,3 +434,9 @@ https://mp.weixin.qq.com/s/NJBx8ndkBBedC81f3-DKOA
 https://mp.weixin.qq.com/s/NZGNrO_LxNc6qrIdofOIfQ
 
 假如没有他（林本坚），就没有今天的台积电
+
+## 业界
+
+https://mp.weixin.qq.com/s/YdoIVBpn1dFUEzDEF5pYJw
+
+被迫离开工作近20年的公司，半导体老兵上演逆袭。林孝平，一个小儿麻痹患者。

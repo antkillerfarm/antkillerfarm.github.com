@@ -330,3 +330,7 @@ https://mp.weixin.qq.com/s/2hJzdILGgLwcw8mkCY1uLw
 https://mp.weixin.qq.com/s/5Qcbz6dT20Sa_OvRfbNXNw
 
 如何给新来的师妹解释什么是数据库的脏读、不可重复读和幻读
+
+https://mp.weixin.qq.com/s/1zarqgOh9-3chlBsB4TsuA
+
+物联网时代数据数据库如何选型？
