@@ -316,6 +316,10 @@ https://mp.weixin.qq.com/s/0Me2LSvQyDWddp_dUIBHwA
 
 OpenCV场景文字检测
 
+https://mp.weixin.qq.com/s/AChTxTaTWiaK32sgHD4HiQ
+
+OpenCV调用Faster-RCNN对象检测网络
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。

@@ -198,6 +198,10 @@ https://mp.weixin.qq.com/s/cLB2CPjLVJAuDVVmHRKHEA
 
 弯曲文字检测之SPCNet
 
+https://mp.weixin.qq.com/s/_znXs8pkfgmWsb26HIfhLQ
+
+复杂环境文字识别技术研究及应用进展
+
 # 元学习
 
 人工智能的历史显示了明确的进展方向：

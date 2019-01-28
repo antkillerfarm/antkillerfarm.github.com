@@ -162,6 +162,10 @@ https://mp.weixin.qq.com/s/uqFy-1_JM9P2WKU5YOmwmA
 
 一个22万张NSFW图片的鉴黄数据集？我有个大胆的想法……
 
+https://zhuanlan.zhihu.com/p/55627416
+
+旷视RPC大型商品数据集发布！
+
 ## 人脸/行为
 
 http://blog.csdn.net/wangkr111/article/details/44514097

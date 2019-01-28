@@ -361,3 +361,7 @@ PyMC3和Theano代码构建贝叶斯深度网络
 https://mp.weixin.qq.com/s/7mwJpQFWWXJ3dvTAwDFI7Q
 
 贝叶斯卷积神经网络：架起深度学习与统计学的桥梁
+
+https://mp.weixin.qq.com/s/2LkpuchuHs82Sxs5rD8bWA
+
+《深度贝叶斯与序列学习》，279页PPT带你知晓深度贝叶斯序列模型在NLP最新进展

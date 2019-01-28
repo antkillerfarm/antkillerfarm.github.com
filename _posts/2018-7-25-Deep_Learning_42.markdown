@@ -152,6 +152,10 @@ https://zhuanlan.zhihu.com/p/55320029
 
 行人跨模态重识别：双向限制的排序损失
 
+https://zhuanlan.zhihu.com/p/55787893
+
+亚马逊提出：用于人群计数的尺度感知注意力网络
+
 # 人脸识别进阶
 
 https://mp.weixin.qq.com/s/5vx1FGgSOhF71FwHeUwaAQ

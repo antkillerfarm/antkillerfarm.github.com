@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十三）——花式池化
+title:  深度学习（十三）——花式池化, AlphaStar
 category: DL 
 ---
 
@@ -296,3 +296,25 @@ http://mp.weixin.qq.com/s/XzOri12hwyOCdI1TgGQV3w
 http://blog.csdn.net/liuchonge/article/details/67638232
 
 CNN与句子分类之动态池化方法DCNN--模型介绍篇
+
+# AlphaStar
+
+https://mp.weixin.qq.com/s/_Y0bCjTu9UrHfnen15htqQ
+
+AlphaStar称霸星际争霸2！AI史诗级胜利，DeepMind再度碾压人类
+
+https://mp.weixin.qq.com/s/axr5VFbHQmYo0shW9ilBaQ
+
+DeepMind回应一切：AlphaStar两百年相当于人类多长时间？
+
+https://www.zhihu.com/question/310011363
+
+如何评价DeepMind在北京时间19年1月25日2点的《星际争霸 2》项目演示？
+
+https://mp.weixin.qq.com/s/k0l2uoik-Z9aA9zax7AoZg
+
+中科院自动化所深度解析：Deepmind AlphaStar如何战胜人类职业玩家
+
+https://zhuanlan.zhihu.com/p/55781614
+
+AlphaStar背后的机器学习原理

@@ -327,3 +327,7 @@ https://mp.weixin.qq.com/s/eYTDwSqgj-r7yV7w9tY_MA
 https://mp.weixin.qq.com/s/tduZoZecbOM0gC9Ugerbwg
 
 用AI设计微波集成电路，清华大学等提出深度强化学习方法RINN
+
+https://mp.weixin.qq.com/s/zcuTY9oWKhAQ8z0rx4nY4A
+
+让TA说你想听的—基于音/视频特征解离的讲述者人脸生成

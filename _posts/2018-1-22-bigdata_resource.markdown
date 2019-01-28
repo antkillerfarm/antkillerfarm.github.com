@@ -413,3 +413,7 @@ http://www.cnblogs.com/rjzheng/p/8994962.html
 https://mp.weixin.qq.com/s/Mcg5rj3QrgVj3wyY4xttnQ
 
 关于商业部署机器学习，这有一篇详尽指南
+
+https://mp.weixin.qq.com/s/TFGRcHV6EgeLB45OEJPRXw
+
+来了！阿里开源分布式事务解决方案Fescar

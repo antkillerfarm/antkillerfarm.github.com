@@ -369,3 +369,7 @@ https://mp.weixin.qq.com/s/p6SDazuTjgG1ERl5ku2-VQ
 https://mp.weixin.qq.com/s/fVABfj2W8JpDH2p8hWm8wA
 
 区分概念和实例的知识图谱嵌入方法
+
+https://mp.weixin.qq.com/s/gxNxROI8o3EEhguKx8Hrfg
+
+AMUSE: 基于RDF数据的多语言问答语义解析方法

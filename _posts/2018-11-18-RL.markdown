@@ -206,6 +206,10 @@ https://zhuanlan.zhihu.com/p/54985200
 
 用有趣的文字，教你强化学习入门知识（上）
 
+https://zhuanlan.zhihu.com/p/55671989
+
+用有趣的文字，教你强化学习入门知识（下）
+
 # K-摇臂赌博机
 
 ![](/images/article/Multi-Armed_Bandit.jpg)

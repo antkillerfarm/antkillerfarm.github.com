@@ -132,6 +132,10 @@ https://github.com/p-christ/Deep-Reinforcement-Learning-Algorithms-with-PyTorch
 
 PyTorch实现多种深度强化学习算法
 
+https://mp.weixin.qq.com/s/UrwP9t-Ox4M9QImKDUDcsA
+
+140页《深度强化学习入门》发布
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》
@@ -327,6 +331,10 @@ https://mp.weixin.qq.com/s/RH4ifA46njdC7fyRI9kVMg
 https://mp.weixin.qq.com/s/uymKtR_7IgMpfXcekfkCDg
 
 从强化学习基本概念到Q学习的实现，打造自己的迷宫智能体
+
+https://mp.weixin.qq.com/s/9ZvaZQ1yumhr75okBxNyeA
+
+优化强化学习Q-learning算法进行股市交易
 
 # reward modeling
 

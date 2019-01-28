@@ -290,6 +290,10 @@ https://mp.weixin.qq.com/s/s_5Al8O9_9FBdiqUix1Jhw
 
 COCO 2018 Keypoint冠军算法解读
 
+https://mp.weixin.qq.com/s/kzuRWnEUZOFxAza0o4uXog
+
+中山大学新突破：自监督学习实现精准3D人体姿态估计
+
 # VAE进阶
 
 https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw

@@ -304,6 +304,10 @@ https://mp.weixin.qq.com/s/v4XjU2UGe1ikVj8d70gTSw
 
 基于知识图谱的问答系统入门—NLPCC2016KBQA数据集
 
+https://mp.weixin.qq.com/s/a1XhQKOfxTCD9wVddQG8gw
+
+Google发布新的问答语料库，专攻篇章级的NLU问题
+
 ## CV
 
 http://www.cvpapers.com/datasets.html

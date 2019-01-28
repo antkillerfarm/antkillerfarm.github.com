@@ -130,6 +130,10 @@ http://www.cnblogs.com/pinard/p/6437495.html
 
 深度神经网络（DNN）损失函数和激活函数的选择
 
+https://mp.weixin.qq.com/s/VSRtjIH1tvAVhGAByEH0bg
+
+21种NLP任务激活函数大比拼：你一定猜不到谁赢了
+
 # Deep Residual Network
 
 无论采用何种方法，可训练的神经网络的层数都不可能无限深。有的时候，即使没有梯度消失，也存在训练退化（即深层网络的效果还不如浅层网络）的问题。

@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/qk3cw05ZdlYEKDGRG0fnLg
 
 距离几何优化问题--从美国计算机教授追回被抢车辆谈起
 
+https://mp.weixin.qq.com/s/rHkfb1pZhtzVjzYiTRB4WA
+
+交替方向乘子法（ADMM）的基本原理
+
 # 推荐系统进阶
 
 除了《机器学习（十五～十六）》提及的ALS和PCA之外，相关的算法还包括：

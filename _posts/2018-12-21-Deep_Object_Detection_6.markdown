@@ -142,6 +142,10 @@ https://mp.weixin.qq.com/s/S6sz5dPgGNcJvrIAZ3ZjGg
 
 基于深度学习的通用物体检测算法对比探索
 
+https://mp.weixin.qq.com/s/oF3MAkl1UikRkOhrj3equw
+
+深度学习的目标检测算法是如何解决尺度问题的？
+
 # Flink
 
 Flink是一个流计算引擎。

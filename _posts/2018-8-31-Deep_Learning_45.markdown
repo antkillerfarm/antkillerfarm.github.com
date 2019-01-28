@@ -122,6 +122,14 @@ https://mp.weixin.qq.com/s/6q2q9OVhOYjk4ZrhLvAdkA
 
 Non-local Neural Networks及自注意力机制思考
 
+https://mp.weixin.qq.com/s/-gAISWjSiG6ccPuOPAEg3A
+
+五张动图，看清神经机器翻译里的Attention！
+
+https://mp.weixin.qq.com/s/Qs6tm50YvzHaJv2rh60WMw
+
+撩一发深度文本分类之RNN via Attention
+
 # AutoDL
 
 DL领域目前存在的主要问题之一是：如何设计网络结构和调整超参数。目前的做法，通常依赖于作者的直觉，属于典型的拍脑袋想点子。
@@ -313,6 +321,10 @@ https://mp.weixin.qq.com/s/45QCGUXJ2VM96PNj-LEFxg
 https://mp.weixin.qq.com/s/xbkFUfJbaw_h_bCZj3pdAQ
 
 李飞飞等人提出Auto-DeepLab：自动搜索图像语义分割架构
+
+https://mp.weixin.qq.com/s/B0Qld2Xi8kaoe3hf8TN7rA
+
+华中科大提出EAT-NAS方法：显著提升大规模神经模型搜索速度
 
 # 多模态学习
 

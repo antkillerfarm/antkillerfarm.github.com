@@ -166,6 +166,10 @@ https://mp.weixin.qq.com/s/adSbAAV7POblqE_jaOGZhg
 
 深度学习新应用：在PyTorch中用单个2D图像创建3D模型
 
+https://mp.weixin.qq.com/s/ihrExTygb-Pnnh4o4tAYnQ
+
+基于单目视觉的三维重建算法综述
+
 # 视频目标分割
 
 视频目标分割任务和语义分割有两个基本区别：
@@ -309,6 +313,10 @@ https://mp.weixin.qq.com/s/RqSlnz286UvldmcqJ2adPQ
 https://mp.weixin.qq.com/s/qtRV9Sb54o8TnDEhLlB69Q
 
 基于视频的目标检测的发展
+
+https://mp.weixin.qq.com/s/MzVPesFK0vJ1UuQPPSSN2w
+
+百度、MIT等提出StNet：局部+全局的视频时空联合建模
 
 # 手势识别
 

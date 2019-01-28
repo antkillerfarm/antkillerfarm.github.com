@@ -405,3 +405,11 @@ https://mp.weixin.qq.com/s/QYG0l1fk35C1evM2FSHgsw
 https://mp.weixin.qq.com/s/hhWRhBeRCmxjr9Lh8aE_Ww
 
 如何用20万条客服咨询消息“喂”出定制化聊天机器人
+
+https://mp.weixin.qq.com/s/FJtMDoNksSZLYdoEzixJTQ
+
+AI Challenger 2018：细粒度用户评论情感分类冠军思路总结
+
+https://mp.weixin.qq.com/s/rCBdY4AcSupppEbZhRQW6Q
+
+一文看懂深度文本分类之DPCNN原理与代码

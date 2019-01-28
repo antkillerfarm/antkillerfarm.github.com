@@ -391,3 +391,11 @@ CNN实现“读脑术”，成功解码人脑视觉活动，准确率超50%
 https://mp.weixin.qq.com/s/t9ZHW8fkWtnvpM7ynJOTDw
 
 从语义上理解卷积核行为，UCLA朱松纯等人使用决策树量化解释CNN
+
+https://mp.weixin.qq.com/s/Fhge-Idk_adBjUuzaAtzyQ
+
+7大类深度CNN架构创新综述
+
+https://mp.weixin.qq.com/s/f1uOimoA3a37e1BK1l1rvw
+
+从群等变卷积网络到球面卷积网络

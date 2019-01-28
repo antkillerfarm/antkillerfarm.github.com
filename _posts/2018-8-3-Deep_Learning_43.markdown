@@ -353,3 +353,7 @@ https://mp.weixin.qq.com/s/Jsxiha_BFtWVLvO4HMwJ3Q
 https://mp.weixin.qq.com/s/uXbLb5ITHOU0dZRSWNobVg
 
 算力限制场景下的目标检测实战浅谈
+
+https://mp.weixin.qq.com/s/DoeoPGnS88HQmxagKJWLlg
+
+小米开源FALSR算法：快速精确轻量级的超分辨率模型
