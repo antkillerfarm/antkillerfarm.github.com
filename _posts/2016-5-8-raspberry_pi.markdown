@@ -26,7 +26,13 @@ https://www.arduino.cc/
 
 而Raspberry Pi的定位是一个廉价的PC。其计算能力和目前的智能手机相当，但操作系统却和普通的桌面系统类似，因此，普通的PC应用可以很方便的移植过来。
 
-Raspberry Pi官方OS是Raspbian，这是一个基于Debian的Linux发行版。除此之外，还有几个Ubuntu定制版。甚至微软也为此专门推出了Windows 10 IOT，其地址为：
+Raspberry Pi官方OS是Raspbian，这是一个基于Debian的Linux发行版。
+
+除此之外，还有几个Ubuntu定制版：
+
+http://ubuntu-mate.org/raspberry-pi/
+
+甚至微软也为此专门推出了Windows 10 IOT，其地址为：
 
 https://developer.microsoft.com/en-us/windows/iot
 

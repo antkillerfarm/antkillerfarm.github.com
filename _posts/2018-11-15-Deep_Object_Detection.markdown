@@ -178,10 +178,6 @@ https://mp.weixin.qq.com/s/ZrZtGBxVOZmexDMw_S_Orw
 
 TensorFlow深度学习目标检测模型及源码架构解析
 
-https://mp.weixin.qq.com/s/HPzQST8cq5lBhU3wnz7-cg
-
-R-FCN每秒30帧实时检测3000类物体，马里兰大学Larry Davis组最新目标检测工作
-
 https://mp.weixin.qq.com/s/A9F3UsITUaNvR69roHa0mg
 
 结合单阶段和两阶段目标检测的优势：基于单次精化神经网络的目标检测方法

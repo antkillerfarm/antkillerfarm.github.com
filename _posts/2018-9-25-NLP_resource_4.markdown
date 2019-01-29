@@ -413,3 +413,7 @@ AI Challenger 2018：细粒度用户评论情感分类冠军思路总结
 https://mp.weixin.qq.com/s/rCBdY4AcSupppEbZhRQW6Q
 
 一文看懂深度文本分类之DPCNN原理与代码
+
+https://mp.weixin.qq.com/s/AqzdRoXthrUFUOqSNwgfqQ
+
+新的一年，想发有关对话系统的paper？快关注时下最大热点：智能化与个性化

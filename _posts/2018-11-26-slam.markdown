@@ -413,3 +413,7 @@ https://mp.weixin.qq.com/s/oGSk9Hsu6lbthJjLHF59Hg
 https://mp.weixin.qq.com/s/iyd0ade-ZcXCxLoZ8_vWPQ
 
 应用于鲁棒主成分分析的双线性因子矩阵范数最小化
+
+https://mp.weixin.qq.com/s/rDdpQDogQR1E6TMkG4j1sA
+
+80页PPT解读量化开发与实盘

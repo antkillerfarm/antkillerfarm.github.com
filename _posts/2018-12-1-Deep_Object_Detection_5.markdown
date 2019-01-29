@@ -186,6 +186,14 @@ https://blog.csdn.net/App_12062011/article/details/79737363
 
 R-FCN
 
+https://mp.weixin.qq.com/s/HPzQST8cq5lBhU3wnz7-cg
+
+R-FCN每秒30帧实时检测3000类物体，马里兰大学Larry Davis组最新目标检测工作
+
+https://mp.weixin.qq.com/s/AddHG_I00uaDov0le4vdvA
+
+R-FCN和FPN
+
 ## G-CNN
 
 G-CNN是MaryLand大学的工作，论文主要的思路也是消除region proposal，和YOLO，SSD不同，G-CNN的工作借鉴了迭代的想法，把边框检测等价于找到初始边框到最终目标的一个路径。但是使用one-step regression不能处理这个非线性的过程，所以作者采用迭代的方法逐步接近最终的目标。

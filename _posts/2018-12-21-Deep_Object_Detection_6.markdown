@@ -146,6 +146,10 @@ https://mp.weixin.qq.com/s/oF3MAkl1UikRkOhrj3equw
 
 深度学习的目标检测算法是如何解决尺度问题的？
 
+https://mp.weixin.qq.com/s/oxStDMh90jB7_EY4vqja2w
+
+目标检测论文阅读：DetNet
+
 # Flink
 
 Flink是一个流计算引擎。

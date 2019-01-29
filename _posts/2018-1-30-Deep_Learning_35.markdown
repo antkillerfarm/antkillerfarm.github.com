@@ -294,6 +294,10 @@ https://mp.weixin.qq.com/s/kzuRWnEUZOFxAza0o4uXog
 
 中山大学新突破：自监督学习实现精准3D人体姿态估计
 
+https://mp.weixin.qq.com/s/vGyoJwlZdUS31WQEHmnBKA
+
+基于姿态的人物视频生成
+
 # VAE进阶
 
 https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw

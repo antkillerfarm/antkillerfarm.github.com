@@ -300,6 +300,10 @@ https://mp.weixin.qq.com/s/gTD5H_Vy2b-7fuvAYxVsnQ
 
 基于GAN和CNN的图像盲去噪
 
+https://mp.weixin.qq.com/s/MePEEuwH-e5c2hwiEXo2wg
+
+去噪、去水印、超分辨率，这款不用学习的神经网络无所不能
+
 # 模型压缩与加速
 
 https://mp.weixin.qq.com/s/nEMvoiqImd0RxrskIH7c9A

@@ -208,6 +208,10 @@ https://mp.weixin.qq.com/s/0rs8Wur7Iv6jSpFz5C-KNg
 
 来自IEEE Fellow的GNN综述
 
+https://mp.weixin.qq.com/s/I8pGqpKnRJp9HRglHfMZCw
+
+手把手教你用DGL框架进行批量图分类
+
 # Regularization
 
 DL中的Regularization除了常见的$$l_1$$-norm、$$l_2$$-norm和squared $$l_2$$-norm之外，还有Group Regularization。它的定义如下：
