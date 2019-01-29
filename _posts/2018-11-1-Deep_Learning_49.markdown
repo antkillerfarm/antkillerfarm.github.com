@@ -204,6 +204,10 @@ https://mp.weixin.qq.com/s/wbEjaZK5YXIuvlqNWN-0bA
 
 中科院自动化所徐波研究员团队：鸡尾酒会问题与相关听觉模型的研究现状与展望
 
+https://mp.weixin.qq.com/s/aUf8i3o7px2KcjI-3jFykg
+
+使用RNN-Transducer进行语音识别建模
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：

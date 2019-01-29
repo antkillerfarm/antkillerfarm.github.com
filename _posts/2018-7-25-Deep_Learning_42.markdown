@@ -354,6 +354,10 @@ https://mp.weixin.qq.com/s/unoSZVPQrjMjjxSbnp1IBQ
 
 FaceBoxes—官方开源CPU实时高精度人脸检测器
 
+https://zhuanlan.zhihu.com/p/55983565
+
+中科院和京东AI研究院提出：改进SRN人脸检测算法，目前业界最强！
+
 # Spatial Transformer Networks
 
 论文：

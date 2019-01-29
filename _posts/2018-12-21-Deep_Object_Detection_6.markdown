@@ -150,6 +150,10 @@ https://mp.weixin.qq.com/s/oxStDMh90jB7_EY4vqja2w
 
 目标检测论文阅读：DetNet
 
+https://zhuanlan.zhihu.com/p/55972055
+
+SimpleDet: 一套简单通用的目标检测与物体识别框架
+
 # Flink
 
 Flink是一个流计算引擎。
