@@ -278,10 +278,6 @@ https://www.zhihu.com/question/47736315
 
 通俗的解释欧拉角，之后为何要引入四元数？
 
-https://mp.weixin.qq.com/s/SD1pkTNHG7TGKrwVbFaMZg
-
-中科慧眼崔峰：下一代双目视觉产品预警距离将达到80米
-
 https://zhuanlan.zhihu.com/p/25822544
 
 MATLAB R2017a: 自动驾驶工具箱

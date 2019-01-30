@@ -213,6 +213,14 @@ https://www.jianshu.com/p/cbe50ede70aa
 
 半全局块匹配（Semi-Global Block Matching）算法
 
+https://mp.weixin.qq.com/s/SD1pkTNHG7TGKrwVbFaMZg
+
+中科慧眼崔峰：下一代双目视觉产品预警距离将达到80米
+
+https://mp.weixin.qq.com/s/mYijtRNvkSeVxk0sWkORSw
+
+双目视觉简介
+
 ## 参考
 
 https://mp.weixin.qq.com/s/od9uDZdRU4QaBKPHb0tLag

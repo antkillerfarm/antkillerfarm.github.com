@@ -18,11 +18,17 @@ category: DL
 
 第四代技术（2010s）：深度学习，用一个复杂的模型像人脑神经网络一样运作。
 
+![](/images/img2/Han.jpg)
+
 参考：
 
 https://mp.weixin.qq.com/s/1cdg635KcPTV6mFdwPo2OQ
 
 达观数据：文字的起源与文本挖掘的前世今生
+
+https://mp.weixin.qq.com/s/krW1eUFu7iz9YyYFGbFVeQ
+
+香侬科技提出中文字型的深度学习模型Glyce，横扫13项中文NLP记录
 
 # 依存分析
 

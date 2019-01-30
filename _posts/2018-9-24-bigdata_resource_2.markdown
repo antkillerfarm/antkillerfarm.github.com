@@ -166,6 +166,10 @@ https://zhuanlan.zhihu.com/p/55627416
 
 旷视RPC大型商品数据集发布！
 
+https://mp.weixin.qq.com/s/DtVa_tL5OfC2i-hbFZKY5Q
+
+视觉推理任务中的ImageNet：斯坦福GQA数据集重磅发布
+
 ## 人脸/行为
 
 http://blog.csdn.net/wangkr111/article/details/44514097
