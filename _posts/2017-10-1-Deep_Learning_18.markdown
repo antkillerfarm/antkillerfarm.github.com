@@ -56,6 +56,10 @@ https://github.com/thunlp/GNNPapers
 
 相关论文列表
 
+https://mp.weixin.qq.com/s/xc_TnMLs3o2LQ8eM4naZDw
+
+AAAI2019 Tutorial《图表示学习》, 180页PPT带你从入门到精通
+
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
 
 Bengio等人提出图注意网络架构GAT，可处理复杂结构图
@@ -211,6 +215,30 @@ https://mp.weixin.qq.com/s/0rs8Wur7Iv6jSpFz5C-KNg
 https://mp.weixin.qq.com/s/I8pGqpKnRJp9HRglHfMZCw
 
 手把手教你用DGL框架进行批量图分类
+
+https://mp.weixin.qq.com/s/diIzbc0tpCW4xhbIQu8mCw
+
+阿里凑单算法首次公开！基于Graph Embedding的打包购商品挖掘系统解析
+
+https://mp.weixin.qq.com/s/chiHw5gKnJyTJTQeF6gViw
+
+在向量空间中启用网络分析和推理，清华大学崔鹏博士最新分享
+
+https://mp.weixin.qq.com/s/oKwxWbCkH-xqYSJIBdb92A
+
+2018超网络节点表示学习
+
+https://mp.weixin.qq.com/s/kQlxLDHLI6xxFzwJVjFj7w
+
+GraRep: 基于全局结构信息的图结点表示学习
+
+https://mp.weixin.qq.com/s/WQlSghxG89JCroNZSmop8w
+
+朱军：关于图的表达学习
+
+https://mp.weixin.qq.com/s/WMpcamrHjUDnYwqyISdooA
+
+斯坦福Jure Leskovec图表示学习：无监督和有监督方法
 
 # Regularization
 

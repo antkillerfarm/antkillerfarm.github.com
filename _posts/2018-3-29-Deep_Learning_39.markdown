@@ -42,7 +42,11 @@ https://mp.weixin.qq.com/s/IjlIT-3FVY7IfYzNDtkkgg
 
 https://mp.weixin.qq.com/s/Y4Ags-yupq__gQZmparhsg
 
-COLING 2018 ⽤对抗增强的端到端模型⽣成合理且多样的故事结尾
+COLING 2018⽤对抗增强的端到端模型⽣成合理且多样的故事结尾
+
+https://mp.weixin.qq.com/s/QRmy8f88eJcdp1xCxCI8bg
+
+历数GAN的5大基本结构
 
 ## GAN的理论解释
 
@@ -359,4 +363,3 @@ https://mp.weixin.qq.com/s/DSHuCNQWKN3pLozZ8i16hQ
 https://mp.weixin.qq.com/s/5S6TsyT6dwXP3cTE_KQleg
 
 把酱油瓶放进菜篮子：UC Berkeley提出高度逼真的物体组合网络Compositional GAN
-

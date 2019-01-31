@@ -64,6 +64,10 @@ https://mp.weixin.qq.com/s/8qR7Ew3oLzOZV2hV1QjMAA
 
 最新49页《深度学习异常检测综述》论文，带你全面了解深度学习异常检测方法
 
+https://mp.weixin.qq.com/s/2qvLk4gqSrI2dslD4d9V5g
+
+超详细深度学习debug指南，国外小哥手把手教你如何调试模型
+
 ## 算法
 
 http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww
@@ -315,6 +319,10 @@ Jeff Dean等发文《Nature Medicine》，综述深度学习在医疗领域的�
 http://blog.csdn.net/u010945683/article/details/40987331
 
 遗传算法详解
+
+https://mp.weixin.qq.com/s/PqvcYexM8WFD0c2m8jv7Ew
+
+遗传算法介绍
 
 https://mp.weixin.qq.com/s/v1tLGUJ4My-tVWziSURHzA
 

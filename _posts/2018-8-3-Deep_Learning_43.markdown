@@ -361,3 +361,7 @@ https://mp.weixin.qq.com/s/uXbLb5ITHOU0dZRSWNobVg
 https://mp.weixin.qq.com/s/DoeoPGnS88HQmxagKJWLlg
 
 小米开源FALSR算法：快速精确轻量级的超分辨率模型
+
+https://mp.weixin.qq.com/s/wT39oUWfrQK-dg7hGXRynQ
+
+实时单人姿态估计，在自己手机上就能实现

@@ -74,25 +74,9 @@ https://mp.weixin.qq.com/s/gI82_PHc94OAsZQBk6DwQw
 
 一次搞定多种语言：Facebook展示全新多语言嵌入系统
 
-https://mp.weixin.qq.com/s/diIzbc0tpCW4xhbIQu8mCw
-
-阿里凑单算法首次公开！基于Graph Embedding的打包购商品挖掘系统解析
-
 https://mp.weixin.qq.com/s/8uyIuO_A0NwusyJV-bKRug
 
 个性化序列推荐：卷积序列嵌入方法
-
-https://mp.weixin.qq.com/s/chiHw5gKnJyTJTQeF6gViw
-
-在向量空间中启用网络分析和推理，清华大学崔鹏博士最新分享
-
-https://mp.weixin.qq.com/s/oKwxWbCkH-xqYSJIBdb92A
-
-2018超网络节点表示学习
-
-https://mp.weixin.qq.com/s/kQlxLDHLI6xxFzwJVjFj7w
-
-GraRep: 基于全局结构信息的图结点表示学习
 
 https://mp.weixin.qq.com/s/vrdprH_8J80J3VHQqA-bKg
 
@@ -138,10 +122,6 @@ https://mp.weixin.qq.com/s/BHA-tFCQjvhf1Tj53SBEaw
 
 基线系统需要受到更多关注：基于词向量的简单模型
 
-https://mp.weixin.qq.com/s/WQlSghxG89JCroNZSmop8w
-
-朱军：关于图的表达学习
-
 https://mp.weixin.qq.com/s/x_4k1ICo0GUFJzo4jRSoIQ
 
 中文词向量论文综述（一）
@@ -149,10 +129,6 @@ https://mp.weixin.qq.com/s/x_4k1ICo0GUFJzo4jRSoIQ
 https://mp.weixin.qq.com/s/79kTL79JIpB-YxbjSoQ-Xw
 
 复旦大学黄萱菁教授带你了解自然语言理解中的表示学习
-
-https://mp.weixin.qq.com/s/WMpcamrHjUDnYwqyISdooA
-
-斯坦福Jure Leskovec图表示学习：无监督和有监督方法
 
 https://mp.weixin.qq.com/s/0QyLIvH1McooGLc19hIAHA
 

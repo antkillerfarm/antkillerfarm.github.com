@@ -296,6 +296,10 @@ https://zhuanlan.zhihu.com/p/21609472
 
 DQN从入门到放弃7 连续控制DQN算法-NAF
 
+https://zhuanlan.zhihu.com/p/56023723
+
+通过Q-learning深入理解强化学习（上）
+
 https://zhuanlan.zhihu.com/p/21434933
 
 DQN实战篇 从零开始安装Ubuntu, Cuda, Cudnn, Tensorflow, OpenAI Gym
