@@ -305,3 +305,15 @@ https://en.wikipedia.org/wiki/Kardashev_scale
 https://en.wikipedia.org/wiki/Titius–Bode_law
 
 https://en.wikipedia.org/wiki/Orbital_resonance
+
+----
+
+国外的ai和国内的差距？
+
+有github的话，半年；没有github的话，十年。
+
+----
+
+https://www.zhihu.com/question/60253584
+
+有哪些科幻作品中设定的事件发生时间已经过去了？

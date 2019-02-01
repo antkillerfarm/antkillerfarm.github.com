@@ -74,6 +74,10 @@ https://mp.weixin.qq.com/s/xV5cLbCPb7Nh6i4i7DxJIQ
 
 没人告诉你的大规模部署AI高效流程！
 
+https://mp.weixin.qq.com/s/8R7YhcZ_Dt0oFIF3bQovxw
+
+为了提升DL模型性能，阿里工程师打造了流式编程框架
+
 ## 实战
 
 http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg

@@ -336,6 +336,14 @@ https://mp.weixin.qq.com/s/g8MQyq9GFcUzP-W7fbNYRw
 
 四维图新：高精度地图构建的实时物体检测和分割
 
+https://mp.weixin.qq.com/s/Gn1FCcWLyXMviWBUP6SLGQ
+
+迭代学习控制算法在自动驾驶车辆轨迹跟踪中的应用
+
+https://mp.weixin.qq.com/s/F2Vyx3LXKcz2C2J5KHGVLg
+
+基于深度学习的多模态情绪识别与疲劳驾驶检测
+
 # 知识图谱参考资源
 
 https://mp.weixin.qq.com/s/d4cEHHo6OhlWEIXTFIdTuA

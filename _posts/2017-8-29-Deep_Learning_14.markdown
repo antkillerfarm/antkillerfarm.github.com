@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十四）——Normalization进阶（1）, MobileNet, Softmax详解
+title:  深度学习（十四）——Normalization进阶（1）, MobileNet, Softmax详解, 李飞飞, fine-tuning
 category: DL 
 ---
 
@@ -236,64 +236,68 @@ https://mp.weixin.qq.com/s/vhvXsSsEHPVjJGqtCOOwLw
 
 Softmax和交叉熵的深度解析和Python实现
 
-# Style Transfer
+# 李飞飞
 
-![](/images/img2/style_transfer_2.jpg)
+## AI大佬
 
-上图是Style Transfer问题的效果图：**将图片B的风格迁移到另一张图片A上。**
+李飞飞是吴恩达之后的华裔AI新大佬。巧合的是，他们都是斯坦福AP+AI lab的主任，只不过吴是李的前任而已。
 
-![](/images/img2/style_transfer.jpg)
+**李飞飞（Fei-Fei Li）**，1976年生，成都人，16岁移民美国。普林斯顿大学本科（1995～1999）+加州理工学院博士（2001～2005）。先后执教于UIUC、普林斯顿、斯坦福等学校。
 
-上图是图像风格迁移的科技树。
+个人主页：
 
-## 早期方法
+http://vision.stanford.edu/feifeili/
 
-图像风格迁移这个领域，在2015年之前，连个合适的名字都没有，因为每个风格的算法都是各管各的，互相之间并没有太多的共同之处。
+她的老公Silvio Savarese，也是斯坦福的AP。
 
-比如油画风格迁移，里面用到了7种不同的步骤来描述和迁移油画的特征。又比如头像风格迁移里用到了三个步骤来把一种头像摄影风格迁移到另一种上。以上十个步骤里没一个重样的。
+## 大佬的门徒
 
-可以看出这时的图像风格处理的研究，基本都是各自为战，捣鼓出来的算法也没引起什么注意。
+比如可爱的妹子**Serena Yeung**。这个妹子是斯坦福的本硕博。出身不详，但从姓名的英文拼法来看，应该是美国土生的华裔。Yeung是杨、阳、羊等姓的传统英文拼法，但显然不是大陆推行的拼音拼法。（可以对比的是Fei-Fei Li和Bruce Lee，对于同一个姓的不同拼法。）
 
-![](/images/img2/style_transfer_3.jpg)
+个人主页：
 
-上图是一个油画风格迁移的pipe line。
+http://ai.stanford.edu/~syyeung/
 
-和风格迁移相关的另一个领域——纹理生成，这时虽然已经有了一些成果，但是通用性也比较差。
+还有当红的“辣子鸡”：**Andrej Karpathy**，多伦多大学本科（2009）+英属不列颠哥伦比亚大学硕士（2011）+斯坦福博士（2015）。现任特斯拉AI总监。
 
-早期纹理生成的主要思想：**纹理可以用图像局部特征的统计模型来描述。**然而手工建模毕竟耗时耗力。。。
+吐槽一下：英属不列颠哥伦比亚大学其实是加拿大的一所大学。
 
-## CNN的纹理特征
+个人主页：
 
-在进行神经风格迁移之前，我们先来从可视化的角度看一下卷积神经网络每一层到底是什么样子？它们各自学习了哪些东西。
+http://cs.stanford.edu/people/karpathy/
 
-遍历所有训练样本，找出让该层激活函数输出最大的9块图像区域；然后再找出该层的其它单元（不同的滤波器通道）激活函数输出最大的9块图像区域；最后共找9次，得到$$9 \times 9$$的图像如下所示，其中每个$$3 \times 3$$区域表示一个运算单元。
+Andrej Karpathy建了一个检索arxiv的网站，主要搜集了近3年来的ML/DL领域的论文。网址：
 
-![](/images/img2/style_transfer_2.png)
+http://www.arxiv-sanity.com/
 
-可以看出随着层数的增加，CNN捕捉的区域更大，特征更加复杂，从边缘到纹理再到具体物体。
+**李佳（Jia Li）**，李飞飞的开山大弟子，追随她从UIUC、普林斯顿到斯坦福。目前又追随其到Google。大约是知道自己的名字是个大路货，她的笔名叫做Li-Jia Li。
 
-## Deep Visualization
+个人主页：
 
-上述的CNN可视化的方法一般被称作Deep Visualization。
+http://vision.stanford.edu/lijiali/
 
-论文：
+## 学神
 
-《Understanding Neural Networks Through Deep Visualization》
+应该说李飞飞和吴恩达都是万里挑一的超卓人物，但是和学神还是有所差距。下面是两个80后的华裔学神，他们都已经是正教授了：
 
-这篇论文是Deep Visualization的经典之作。作者是Jason Yosinski。
+**尹希**，1983年生，哈佛大学物理系教授。
 
->Jason Yosinski，Caltech本科+Cornell博士。现为Uber AI Labs的科学家。   
->个人主页：   
->http://yosinski.com/
+**张锋**，1982年生，MIT教授，生物学家。
 
-该文提出了如下公式：
+这两个人都是有机会挑战诺奖的人，而李和吴暂时还没有这个可能性。
 
-$$V(F_i^l)=\mathop{\arg\max}_{X}A_i^l(X), X \leftarrow X + \eta\frac{\partial A_i^l(X)}{\partial X}$$
+## 网红
 
-X初始化为一张噪声图片，然后按照上述公式，优化得到激活函数输出最大的X。
+这里收录了一些非李飞飞门下的AI网红。
 
-Deep Visualization除了用于提取纹理之外，还可用于模型压缩。
+**Zachary Chase Lipton**，1985年生，哥伦比亚大学本科+UCSD博士，CMU的AP。他的另一身份——Jazz歌手，可比他的学术成就知名多了。
 
-论文：
+个人主页：
 
-《Demystifying Neural Network Filter Pruning》
+http://zacklipton.com/
+
+# fine-tuning
+
+fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
+
+举个例子，假设今天老板给你一个新的数据集，让你做一下图片分类，这个数据集是关于Flowers的。问题是，数据集中flower的类别很少，数据集中的数据也不多，你发现从零训练开始训练CNN的效果很差，很容易过拟合。怎么办呢，于是你想到了使用Transfer Learning，用别人已经训练好的Imagenet的模型来做。

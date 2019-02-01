@@ -1,8 +1,183 @@
 ---
 layout: post
-title:  深度学习（十六）——SENet, 李飞飞, fine-tuning, 深度ISP, RNN进阶
+title:  深度学习（十六）——Style Transfer（2）, 人脸检测/识别（1）, SENet, 深度ISP
 category: DL 
 ---
+
+# Style Transfer（续）
+
+## Texture Networks: Feed-forward Synthesis of Textures and Stylized Images
+
+这篇论文属于fast style transfer类的改进。它是Skolkovo Institute of Science and Technology & Yandex的Dmitry Ulyanov的作品。
+
+Dmitry Ulyanov的个人主页：
+
+https://dmitryulyanov.github.io
+
+>Skolkovo位于莫斯科郊外，相当于俄国的硅谷。
+
+代码：
+
+https://github.com/DmitryUlyanov/texture_nets
+
+![](/images/img2/Texture_Networks.png)
+
+
+
+## Perceptual Losses for Real-Time Style Transfer and Super-Resolution
+
+这篇论文是李飞飞组的Justin Johnson的作品。
+
+Justin Johnson的个人主页：
+
+https://cs.stanford.edu/people/jcjohns/
+
+代码：
+
+https://github.com/OlavHN/fast-neural-style
+
+https://github.com/lengstrom/fast-style-transfer/
+
+![](/images/img2/RTST.png)
+
+
+参考：
+
+https://blog.csdn.net/Hungryof/article/details/61195783
+
+超越fast style transfer----任意风格图和内容图0.1秒出结果
+
+https://zhuanlan.zhihu.com/p/35798776
+
+快速风格迁移（fast-style-transfer）
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/26746283
+
+图像风格迁移(Neural Style)简史
+
+https://blog.csdn.net/red_stone1/article/details/79055467
+
+人脸识别与神经风格迁移
+
+https://blog.csdn.net/cicibabe/article/details/70885715
+
+卷积神经网络图像风格转移
+
+https://blog.csdn.net/stdcoutzyx/article/details/53771471
+
+图像风格转换(Image style transfer)
+
+https://blog.csdn.net/u011534057/article/details/78935202
+
+风格迁移学习笔记(1):Multimodal Transfer: A Hierarchical Deep Convolutional Neural Network for Fast
+
+https://blog.csdn.net/u011534057/article/details/78935230
+
+风格迁移学习笔记(2):Universal Style Transfer via Feature Transforms
+
+https://mp.weixin.qq.com/s/l3hQCQWh5NgihzTs2A049w
+
+风格迁移原理及tensorflow实现
+
+https://mp.weixin.qq.com/s/5Omfj-fYRDt9j2VZH1XXkQ
+
+如何用Keras打造出“风格迁移”的AI艺术作品
+
+https://mp.weixin.qq.com/s/4q-9QsXD04mD-f2ke7ql8A
+
+tensorflow风格迁移网络训练与使用
+
+https://blog.csdn.net/hungryof/article/details/53981959
+
+谈谈图像的Style Transfer（一）
+
+https://blog.csdn.net/Hungryof/article/details/71512406
+
+谈谈图像的style transfer（二）
+
+https://mp.weixin.qq.com/s/8Fz6Q-6VgJsAko0K7HDsow
+
+一个模型搞定所有风格转换，直接在浏览器实现（demo+代码）
+
+https://github.com/cysmith/neural-style-tf
+
+TensorFlow (Python API) implementation of Neural Style.这个项目实现了两张图片的画风融合，非常牛。
+
+https://github.com/jinfagang/pytorch_style_transfer
+
+这个和上面的一样，不过是用pytorch实现的。
+
+# 人脸检测/识别
+
+## Cascade CNN
+
+论文：
+
+《A Convolutional Neural Network Cascade for Face Detection》
+
+![](/images/img2/CascadeCNN.jpg)
+
+这篇可以说是对经典的Viola-Jones方法的深度卷积网络实现，可以明显看出是3阶级联（12-net、24-net、48-net）。
+
+前2阶的网络都非常简单，只有第3阶才比较复杂。这不是重点，重点是我们要从上图中学习多尺度特征组合。
+
+以第2阶段的24-net为例，首先把上一阶段剩下的窗口resize为24*24大小，然后送入网络，得到全连接层的特征。同时，将之前12-net的全连接层特征取出与之拼接在一起。最后对组合后的特征进行softmax分类。
+
+除了分类网络之外，Cascade CNN还包含了3个修正bounding box的CNN网络，分别叫做12-calibration-net，24-calibration-net和48-calibration-net。他们的结构与12-net等类似。
+
+网络结构方面也就这样了，该论文最牛之处在于给出了这类级联网络的训练方法。
+
+![](/images/img2/CascadeCNN_2.jpg)
+
+1、按照一般的方法组织正负样本训练第一阶段的12-net和12-calibration-net网络；
+
+2、 利用上述的1层网络在AFLW数据集上作人脸检测，在保证99%的召回率的基础上确定判别阈值T1。
+
+3、将在AFLW上判为人脸的非人脸窗口作为负样本，将所有真实人脸作为正样本，训练第二阶段的24-net和24-calibration-net网络；
+
+4、重复2和3，完成最后阶段的训练。
+
+参考：
+
+http://blog.csdn.net/shuzfan/article/details/50358809
+
+人脸检测——CascadeCNN
+
+## MTCNN
+
+论文：
+
+《Joint Face Detection and Alignment using Multi-task Cascaded Convolutional Networks》
+
+![](/images/img2/MTCNN.png)
+
+上面是该方法的流程图，可以看出也是三阶级联，和CascadeCNN很像。
+
+stage1: 在构建图像金字塔的基础上，利用fully convolutional network来进行检测，同时利用boundingbox regression和NMS来进行修正。
+
+stage2: 将通过stage1的所有窗口输入作进一步判断，同时也要做boundingbox regression和NMS。
+
+stage3: 和stage2相似，只不过增加了更强的约束：5个人脸关键点（landmark）。
+
+参考：
+
+http://blog.csdn.net/qq_14845119/article/details/52680940
+
+MTCNN（Multi-task convolutional neural networks）人脸对齐
+
+http://blog.csdn.net/shuzfan/article/details/52668935
+
+人脸检测——MTCNN
+
+https://mp.weixin.qq.com/s/IrZEQ69RNUdcs0Fl8fHmmQ
+
+如何应用MTCNN和FaceNet模型实现人脸检测及识别
+
+https://mp.weixin.qq.com/s/NfqFj5iCIkbRD34Eu2Lb5g
+
+MTCNN实时人脸检测网络详解与代码演示
 
 # SENet
 
@@ -57,112 +232,6 @@ Momenta详解ImageNet 2017夺冠架构SENet
 http://blog.csdn.net/u014380165/article/details/78006626
 
 SENet（Squeeze-and-Excitation Networks）算法笔记
-
-# 李飞飞
-
-## AI大佬
-
-李飞飞是吴恩达之后的华裔AI新大佬。巧合的是，他们都是斯坦福AP+AI lab的主任，只不过吴是李的前任而已。
-
-**李飞飞（Fei-Fei Li）**，1976年生，成都人，16岁移民美国。普林斯顿大学本科（1995～1999）+加州理工学院博士（2001～2005）。先后执教于UIUC、普林斯顿、斯坦福等学校。
-
-个人主页：
-
-http://vision.stanford.edu/feifeili/
-
-她的老公Silvio Savarese，也是斯坦福的AP。
-
-## 大佬的门徒
-
-比如可爱的妹子**Serena Yeung**。这个妹子是斯坦福的本硕博。出身不详，但从姓名的英文拼法来看，应该是美国土生的华裔。Yeung是杨、阳、羊等姓的传统英文拼法，但显然不是大陆推行的拼音拼法。（可以对比的是Fei-Fei Li和Bruce Lee，对于同一个姓的不同拼法。）
-
-个人主页：
-
-http://ai.stanford.edu/~syyeung/
-
-还有当红的“辣子鸡”：**Andrej Karpathy**，多伦多大学本科（2009）+英属不列颠哥伦比亚大学硕士（2011）+斯坦福博士（2015）。现任特斯拉AI总监。
-
-吐槽一下：英属不列颠哥伦比亚大学其实是加拿大的一所大学。
-
-个人主页：
-
-http://cs.stanford.edu/people/karpathy/
-
-Andrej Karpathy建了一个检索arxiv的网站，主要搜集了近3年来的ML/DL领域的论文。网址：
-
-http://www.arxiv-sanity.com/
-
-**李佳（Jia Li）**，李飞飞的开山大弟子，追随她从UIUC、普林斯顿到斯坦福。目前又追随其到Google。大约是知道自己的名字是个大路货，她的笔名叫做Li-Jia Li。
-
-个人主页：
-
-http://vision.stanford.edu/lijiali/
-
-## 学神
-
-应该说李飞飞和吴恩达都是万里挑一的超卓人物，但是和学神还是有所差距。下面是两个80后的华裔学神，他们都已经是正教授了：
-
-**尹希**，1983年生，哈佛大学物理系教授。
-
-**张锋**，1982年生，MIT教授，生物学家。
-
-这两个人都是有机会挑战诺奖的人，而李和吴暂时还没有这个可能性。
-
-## 网红
-
-这里收录了一些非李飞飞门下的AI网红。
-
-**Zachary Chase Lipton**，1985年生，哥伦比亚大学本科+UCSD博士，CMU的AP。他的另一身份——Jazz歌手，可比他的学术成就知名多了。
-
-个人主页：
-
-http://zacklipton.com/
-
-# fine-tuning
-
-fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
-
-举个例子，假设今天老板给你一个新的数据集，让你做一下图片分类，这个数据集是关于Flowers的。问题是，数据集中flower的类别很少，数据集中的数据也不多，你发现从零训练开始训练CNN的效果很差，很容易过拟合。怎么办呢，于是你想到了使用Transfer Learning，用别人已经训练好的Imagenet的模型来做。
-
-由于ImageNet数以百万计带标签的训练集数据，使得如CaffeNet之类的预训练的模型具有非常强大的泛化能力，这些预训练的模型的中间层包含非常多一般性的视觉元素，我们只需要对他的后几层进行微调，再应用到我们的数据上，通常就可以得到非常好的结果。最重要的是，**在目标任务上达到很高performance所需要的数据的量相对很少**。
-
-虽然从理论角度尚无法完全解释fine-tuning的原理，但是还是可以给出一些直观的解释。我们知道，CNN越靠近输入端，其抽取的图像特征越原始。比如最初的一层通常只能抽取一些线条之类的元素。越上层，其特征越抽象。
-
-而现实的图像无论多么复杂，总是由简单特征拼凑而成的。因此，无论最终的分类结果差异如何巨大，其底层的图像特征却几乎一致。
-
-![](/images/article/trans_learn.png)
-
-fine-tuning也是图像目标检测、语义分割的基础。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/22624331
-
-fine-tuning:利用已有模型训练其他数据集
-
-http://www.cnblogs.com/louyihang-loves-baiyan/p/5038758.html
-
-Caffe fine-tuning微调网络
-
-http://blog.csdn.net/sinat_26917383/article/details/54999868
-
-caffe中fine-tuning模型三重天（函数详解、框架简述）+微调技巧
-
-http://yongyuan.name/blog/layer-selection-and-finetune-for-cbir.html
-
-图像检索：layer选择与fine-tuning性能提升验证
-
-h1ttps://www.zhihu.com/question/49534423
-
-迁移学习与fine-tuning有什么区别？
-
-https://zhuanlan.zhihu.com/p/37341493
-
-基于Pre-trained模型加速模型学习的6点建议
-
-https://mp.weixin.qq.com/s/54HQU3B4cSdRb1Z4srSfJg
-
-如何为新类别重新训练一个图像分类器
 
 # 深度ISP
 
@@ -231,101 +300,3 @@ https://mp.weixin.qq.com/s/9yfTO2jHz69-k1MsUGIM0Q
 https://mp.weixin.qq.com/s/z87Wp3yutq1l5bYfJS2YIA
 
 谷歌新研究用深度学习合成运动模糊效果，手抖也能拍出摄影师级照片
-
-# RNN进阶
-
-## IndRNN
-
-https://mp.weixin.qq.com/s/cAqpclkkeVrTiifz07HC1g
-
-新型循环神经网络IndRNN：可构建更长更深的RNN
-
-https://mp.weixin.qq.com/s/7-K-nZTijoYCaprRNYXxFg
-
-新型RNN：将层内神经元相互独立以提高长程记忆
-
-## 参考
-
-https://mp.weixin.qq.com/s/0TLaC8ACXAFEK5aMNK9O-Q
-
-简单循环单元SRU：像CNN一样快速训练RNN
-
-https://zhuanlan.zhihu.com/p/27104240
-
-CW-RNN收益率时间序列回归
-
-https://mp.weixin.qq.com/s/SeR_zNZTu4t7kqB6ltNrmQ
-
-从循环到卷积，探索序列建模的奥秘
-
-https://mp.weixin.qq.com/s/_q69BV1r46S9X5wnLuFPSw
-
-关于序列建模，是时候抛弃RNN和LSTM了
-
-https://mp.weixin.qq.com/s/mIuAn4G9l3AKFAswpbaQdA
-
-时间卷积网络（TCN）将取代RNN成为NLP预测领域王者
-
-https://mp.weixin.qq.com/s/m5GRNp6qDfVfC0mkQ4m4Yw
-
-神经语言模型如何利用上下文信息：长距离上下文的词序并不重要
-
-https://mp.weixin.qq.com/s/kuoUnt2Vhz9NhfnNqMFAhQ
-
-DeepMind提出关系RNN：构建关系推理模块，强化学习利器
-
-https://mp.weixin.qq.com/s/wfOzCxe3L2t11VguYLGC9Q
-
-上海交大搞出SRNN，比普通RNN也就快135倍
-
-https://mp.weixin.qq.com/s/f0sv7c-H5o5L_wy2sUonUQ
-
-CNN取代RNN？当序列建模不再需要循环网络
-
-https://mp.weixin.qq.com/s/h3fF6Zvr1rSzSMpqdu8B0A
-
-电子科大提出BT-RNN：替代全连接操作而大幅度提升LSTM效率
-
-https://mp.weixin.qq.com/s/OgN4rVDKH5WABIaRY7CHog
-
-如何让RNN神经元拥有基础通用的注意力能力
-
-https://mp.weixin.qq.com/s/KBLCrupGIuPa5nVrxcS5WQ
-
-新研究将GRU简化成单门架构，或更适用于语音识别
-
-https://mp.weixin.qq.com/s/kQozftKd_n_kYIF7KKCc8g
-
-短视频那么多，快手如何利用GRU实现各种炫酷的语音应用
-
-https://mp.weixin.qq.com/s/xwuM2Vj8G7UyuEyzTyO13A
-
-将CNN与RNN组合使用，天才还是错乱？
-
-https://mp.weixin.qq.com/s/c7XkzjLH1n5EtqdQik618g
-
-Dropout在RNN中的应用综述
-
-https://mp.weixin.qq.com/s/K6LK47_GCTeZJPAW0-Xp4Q
-
-多伦多大学提出可逆RNN：内存大降，性能不减！
-
-https://mp.weixin.qq.com/s/lvaWx7J4HFTvYxy7-B9vYg
-
-周志华等提出RNN可解释性方法，看看RNN内部都干了些什么
-
-https://mp.weixin.qq.com/s/YbdiEHb8ld1pp1ehgBzTOQ
-
-将未来信息作为正则项，Twin Networks加强RNN对长期依赖的建模能力
-
-https://mp.weixin.qq.com/s/ty8RyPREo_EA7O8vA2pQuQ
-
-AI编曲震撼人心，RNN生成流行音乐
-
-https://mp.weixin.qq.com/s/vIL-bKHZK-6eXZYWxrc9vw
-
-这种有序神经元，像你熟知的循环神经网络吗？
-
-https://mp.weixin.qq.com/s/GGK9T0DeyIdD5ahHy5uvfg
-
-LightRNN：存储和计算高效的RNN

@@ -331,3 +331,7 @@ https://mp.weixin.qq.com/s/tduZoZecbOM0gC9Ugerbwg
 https://mp.weixin.qq.com/s/zcuTY9oWKhAQ8z0rx4nY4A
 
 让TA说你想听的—基于音/视频特征解离的讲述者人脸生成
+
+https://mp.weixin.qq.com/s/gjVLbH_S0t7jcjCYhpsTgw
+
+基于深度学习的人脑视觉神经信息编解码研究进展及挑战

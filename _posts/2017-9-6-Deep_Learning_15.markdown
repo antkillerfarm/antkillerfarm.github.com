@@ -1,12 +1,122 @@
 ---
 layout: post
-title:  深度学习（十五）——Style Transfer, 人脸检测/识别（1）
+title:  深度学习（十五）——Style Transfer（1）
 category: DL 
 ---
 
+# fine-tuning（续）
+
+由于ImageNet数以百万计带标签的训练集数据，使得如CaffeNet之类的预训练的模型具有非常强大的泛化能力，这些预训练的模型的中间层包含非常多一般性的视觉元素，我们只需要对他的后几层进行微调，再应用到我们的数据上，通常就可以得到非常好的结果。最重要的是，**在目标任务上达到很高performance所需要的数据的量相对很少**。
+
+虽然从理论角度尚无法完全解释fine-tuning的原理，但是还是可以给出一些直观的解释。我们知道，CNN越靠近输入端，其抽取的图像特征越原始。比如最初的一层通常只能抽取一些线条之类的元素。越上层，其特征越抽象。
+
+而现实的图像无论多么复杂，总是由简单特征拼凑而成的。因此，无论最终的分类结果差异如何巨大，其底层的图像特征却几乎一致。
+
+![](/images/article/trans_learn.png)
+
+fine-tuning也是图像目标检测、语义分割的基础。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/22624331
+
+fine-tuning:利用已有模型训练其他数据集
+
+http://www.cnblogs.com/louyihang-loves-baiyan/p/5038758.html
+
+Caffe fine-tuning微调网络
+
+http://blog.csdn.net/sinat_26917383/article/details/54999868
+
+caffe中fine-tuning模型三重天（函数详解、框架简述）+微调技巧
+
+http://yongyuan.name/blog/layer-selection-and-finetune-for-cbir.html
+
+图像检索：layer选择与fine-tuning性能提升验证
+
+h1ttps://www.zhihu.com/question/49534423
+
+迁移学习与fine-tuning有什么区别？
+
+https://zhuanlan.zhihu.com/p/37341493
+
+基于Pre-trained模型加速模型学习的6点建议
+
+https://mp.weixin.qq.com/s/54HQU3B4cSdRb1Z4srSfJg
+
+如何为新类别重新训练一个图像分类器
+
 # Style Transfer
 
-## Deep Visualization（续）
+![](/images/img2/style_transfer_2.jpg)
+
+上图是Style Transfer问题的效果图：**将图片B的风格迁移到另一张图片A上。**
+
+![](/images/img2/style_transfer.jpg)
+
+上图是图像风格迁移所涉及的科技树。
+
+在继续讨论之前，我们有必要指出Style Transfer和其他传统的有监督学习的CV问题之间的差异。
+
+1.风格这种抽象的概念，该如何定义？艺术领域的很多东西，通常都是很难量化的。如果要采用有监督学习的方法的话，怎么获得学习的标签呢？
+
+2.就算解决了第1个问题，如何生成一批同一风格的图片也是一个大问题。画家可是稀缺资源啊。
+
+因此，Style Transfer问题的关键点就在于：如何利用仅有的1张风格图片，将其风格迁移到其他图片上。
+
+## 早期方法
+
+图像风格迁移这个领域，在2015年之前，连个合适的名字都没有，因为每个风格的算法都是各管各的，互相之间并没有太多的共同之处。
+
+比如油画风格迁移，里面用到了7种不同的步骤来描述和迁移油画的特征。又比如头像风格迁移里用到了三个步骤来把一种头像摄影风格迁移到另一种上。以上十个步骤里没一个重样的。
+
+可以看出这时的图像风格处理的研究，基本都是各自为战，捣鼓出来的算法也没引起什么注意。
+
+![](/images/img2/style_transfer_3.jpg)
+
+上图是一个油画风格迁移的pipe line。
+
+在实践过程中，人们又发现**图像的纹理可以在一定程度上代表图像的风格**。下文如无特指，纹理/风格均为同义词。
+
+这又引入了和风格迁移相关的另一个领域——纹理生成。这个时期，该领域虽然已经有了一些成果，但是通用性也比较差。
+
+早期纹理生成的主要思想：**纹理可以用图像局部特征的统计模型来描述。**然而手工建模毕竟耗时耗力。。。
+
+## CNN的纹理特征
+
+在进行神经风格迁移之前，我们先来从可视化的角度看一下卷积神经网络每一层到底是什么样子？它们各自学习了哪些东西。
+
+遍历所有训练样本，找出让该层激活函数输出最大的9块图像区域；然后再找出该层的其它单元（不同的滤波器通道）激活函数输出最大的9块图像区域；最后共找9次，得到$$9 \times 9$$的图像如下所示，其中每个$$3 \times 3$$区域表示一个运算单元。
+
+![](/images/img2/style_transfer_2.png)
+
+可以看出随着层数的增加，CNN捕捉的区域更大，特征更加复杂，从边缘到纹理再到具体物体。
+
+## Deep Visualization
+
+上述的CNN可视化的方法一般被称作Deep Visualization。
+
+论文：
+
+《Understanding Neural Networks Through Deep Visualization》
+
+这篇论文是Deep Visualization的经典之作。作者是Jason Yosinski。
+
+>Jason Yosinski，Caltech本科+Cornell博士。现为Uber AI Labs的科学家。   
+>个人主页：   
+>http://yosinski.com/
+
+该文提出了如下公式：
+
+$$V(F_i^l)=\mathop{\arg\max}_{X}A_i^l(X), X \leftarrow X + \eta\frac{\partial A_i^l(X)}{\partial X}$$
+
+X初始化为一张噪声图片，然后按照上述公式，优化得到激活函数输出最大的X。
+
+Deep Visualization除了用于提取纹理之外，还可用于模型压缩。
+
+论文：
+
+《Demystifying Neural Network Filter Pruning》
 
 https://github.com/yosinski/deep-visualization-toolbox
 
@@ -30,6 +140,10 @@ http://www.cnblogs.com/jesse123/p/7101649.html
 
 Tool-Deep Visualization
 
+https://mp.weixin.qq.com/s/dflEAOELK0f19y4KuVd_dQ
+
+40行Python代码，实现卷积特征可视化
+
 ## DL方法
 
 受到上述事实的启发，2015年德国University of Tuebingen的Leon A. Gatys写了如下两篇论文：
@@ -41,8 +155,6 @@ Tool-Deep Visualization
 代码：
 
 https://github.com/jcjohnson/neural-style
-
-![](/images/img2/style_transfer.png)
 
 在第一篇论文中，Gatys使用Gramian matrix从各层CNN中提取纹理信息，于是就有了一个不用手工建模就能生成纹理的方法。
 
@@ -64,13 +176,21 @@ $$J(G)=\alpha \cdot J_{content}(C,G)+\beta \cdot J_{style}(S,G)$$
 
 其中，$$\alpha, \beta$$是超参数，用来调整$$J_{content}(C,G)$$与$$J_{style}(S,G)$$的相对比重。
 
-神经风格迁移的基本算法流程是：首先令G为随机像素点，然后使用梯度下降算法，不断修正G的所有像素点，使得J(G)不断减小，从而使G逐渐有C的内容和G的风格，如下图所示：
+神经风格迁移的基本算法流程是：首先令G为随机像素点，然后使用梯度下降算法，不断修正G的所有像素点，使得J(G)不断减小，从而使G逐渐有C的内容和S的风格，如下图所示：
 
 ![](/images/img2/style_transfer_3.png)
 
+换句话来说就是：**每次迭代只更新图片G，而不更新网络的参数。**
+
 我们先来看J(G)的第一部分$$J_{content}(C,G)$$，它表示内容图片C与生成图片G之间的相似度。
 
-使用的CNN网络是之前预训练好的模型，例如Alex-Net。C，S，G共用相同模型和参数。首先，需要选择合适的层数l来计算$$J_{content}(C,G)$$。
+使用的CNN网络是之前预训练好的模型，例如Alex-Net。**C，S，G共用相同模型和参数。**
+
+![](/images/img2/style_transfer.png)
+
+>这是原始论文的插图，其符号表示和本文有所差异。其中的A、F、P各层的output，都是使用Alex-Net生成的。
+
+首先，需要选择合适的层数l来计算$$J_{content}(C,G)$$。
 
 如前所述，CNN的每个隐藏层分别提取原始图片的不同深度特征，由简单到复杂。如果l太小，则G与C在像素上会非常接近，没有迁移效果；如果l太深，则G上某个区域将直接会出现C中的物体。因此，l既不能太浅也不能太深，一般选择网络中间层。
 
@@ -82,7 +202,7 @@ $$J_{content}(C,G)=\frac12||a^{[l](C)}-a^{[l](G)}||^2$$
 
 $$G_{kk'}^{[l]}=\sum_{i=1}^{n_H^{[l]}}\sum_{j=1}^{n_W^{[l]}}a_{ijk}^{[l]}a_{ijk'}^{[l]}$$
 
-风格矩阵$$G_{kk'}^{[l]}$$计算第l层隐藏层不同通道对应的所有激活函数输出和。若两个通道之间相似性高，则对应的$$G_{kk'}^{[l]}$$较大。从数学的角度来说，这里的风格矩阵实际上就是两个tensor的**互相关矩阵**。
+风格矩阵$$G_{kk'}^{[l]}$$计算第l层隐藏层不同通道对应的所有激活函数输出和。若两个通道之间相似性高，则对应的$$G_{kk'}^{[l]}$$较大。从数学的角度来说，这里的风格矩阵实际上就是两个tensor的**互相关矩阵**，也就是上面提到的Gram矩阵。
 
 Gram矩阵描述的是全局特征的自相关，如果输出图与风格图的这种自相关相近，那么差不多是我们所理解的”风格”。当然，其实也可以用很多其他的统计信息进行描绘风格。比如有用直方图的, 甚至还可以直接简化成”均值+方差”的。
 
@@ -115,176 +235,3 @@ https://blog.csdn.net/Trent1985
 https://www.zhihu.com/question/29594460
 
 新海诚风格的画面是手绘的还是Photoshop就可以达到的？后期过程是怎样的？
-
-## Texture Networks: Feed-forward Synthesis of Textures and Stylized Images
-
-这篇论文属于fast style transfer类的改进。它是Skolkovo Institute of Science and Technology & Yandex的Dmitry Ulyanov的作品。
-
-Dmitry Ulyanov的个人主页：
-
-https://dmitryulyanov.github.io
-
->Skolkovo位于莫斯科郊外，相当于俄国的硅谷。
-
-代码：
-
-https://github.com/DmitryUlyanov/texture_nets
-
-![](/images/img2/Texture_Networks.png)
-
-
-
-## Perceptual Losses for Real-Time Style Transfer and Super-Resolution
-
-这篇论文是李飞飞组的Justin Johnson的作品。
-
-Justin Johnson的个人主页：
-
-https://cs.stanford.edu/people/jcjohns/
-
-代码：
-
-https://github.com/OlavHN/fast-neural-style
-
-https://github.com/lengstrom/fast-style-transfer/
-
-![](/images/img2/RTST.png)
-
-
-参考：
-
-https://blog.csdn.net/Hungryof/article/details/61195783
-
-超越fast style transfer----任意风格图和内容图0.1秒出结果
-
-https://zhuanlan.zhihu.com/p/35798776
-
-快速风格迁移（fast-style-transfer）
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/26746283
-
-图像风格迁移(Neural Style)简史
-
-https://blog.csdn.net/red_stone1/article/details/79055467
-
-人脸识别与神经风格迁移
-
-https://blog.csdn.net/cicibabe/article/details/70885715
-
-卷积神经网络图像风格转移
-
-https://blog.csdn.net/stdcoutzyx/article/details/53771471
-
-图像风格转换(Image style transfer)
-
-https://blog.csdn.net/u011534057/article/details/78935202
-
-风格迁移学习笔记(1):Multimodal Transfer: A Hierarchical Deep Convolutional Neural Network for Fast
-
-https://blog.csdn.net/u011534057/article/details/78935230
-
-风格迁移学习笔记(2):Universal Style Transfer via Feature Transforms
-
-https://mp.weixin.qq.com/s/l3hQCQWh5NgihzTs2A049w
-
-风格迁移原理及tensorflow实现
-
-https://mp.weixin.qq.com/s/5Omfj-fYRDt9j2VZH1XXkQ
-
-如何用Keras打造出“风格迁移”的AI艺术作品
-
-https://mp.weixin.qq.com/s/4q-9QsXD04mD-f2ke7ql8A
-
-tensorflow风格迁移网络训练与使用
-
-https://blog.csdn.net/hungryof/article/details/53981959
-
-谈谈图像的Style Transfer（一）
-
-https://blog.csdn.net/Hungryof/article/details/71512406
-
-谈谈图像的style transfer（二）
-
-https://mp.weixin.qq.com/s/8Fz6Q-6VgJsAko0K7HDsow
-
-一个模型搞定所有风格转换，直接在浏览器实现（demo+代码）
-
-https://github.com/cysmith/neural-style-tf
-
-TensorFlow (Python API) implementation of Neural Style.这个项目实现了两张图片的画风融合，非常牛。
-
-https://github.com/jinfagang/pytorch_style_transfer
-
-这个和上面的一样，不过是用pytorch实现的。
-
-# 人脸检测/识别
-
-## Cascade CNN
-
-论文：
-
-《A Convolutional Neural Network Cascade for Face Detection》
-
-![](/images/img2/CascadeCNN.jpg)
-
-这篇可以说是对经典的Viola-Jones方法的深度卷积网络实现，可以明显看出是3阶级联（12-net、24-net、48-net）。
-
-前2阶的网络都非常简单，只有第3阶才比较复杂。这不是重点，重点是我们要从上图中学习多尺度特征组合。
-
-以第2阶段的24-net为例，首先把上一阶段剩下的窗口resize为24*24大小，然后送入网络，得到全连接层的特征。同时，将之前12-net的全连接层特征取出与之拼接在一起。最后对组合后的特征进行softmax分类。
-
-除了分类网络之外，Cascade CNN还包含了3个修正bounding box的CNN网络，分别叫做12-calibration-net，24-calibration-net和48-calibration-net。他们的结构与12-net等类似。
-
-网络结构方面也就这样了，该论文最牛之处在于给出了这类级联网络的训练方法。
-
-![](/images/img2/CascadeCNN_2.jpg)
-
-1、按照一般的方法组织正负样本训练第一阶段的12-net和12-calibration-net网络；
-
-2、 利用上述的1层网络在AFLW数据集上作人脸检测，在保证99%的召回率的基础上确定判别阈值T1。
-
-3、将在AFLW上判为人脸的非人脸窗口作为负样本，将所有真实人脸作为正样本，训练第二阶段的24-net和24-calibration-net网络；
-
-4、重复2和3，完成最后阶段的训练。
-
-参考：
-
-http://blog.csdn.net/shuzfan/article/details/50358809
-
-人脸检测——CascadeCNN
-
-## MTCNN
-
-论文：
-
-《Joint Face Detection and Alignment using Multi-task Cascaded Convolutional Networks》
-
-![](/images/img2/MTCNN.png)
-
-上面是该方法的流程图，可以看出也是三阶级联，和CascadeCNN很像。
-
-stage1: 在构建图像金字塔的基础上，利用fully convolutional network来进行检测，同时利用boundingbox regression和NMS来进行修正。
-
-stage2: 将通过stage1的所有窗口输入作进一步判断，同时也要做boundingbox regression和NMS。
-
-stage3: 和stage2相似，只不过增加了更强的约束：5个人脸关键点（landmark）。
-
-参考：
-
-http://blog.csdn.net/qq_14845119/article/details/52680940
-
-MTCNN（Multi-task convolutional neural networks）人脸对齐
-
-http://blog.csdn.net/shuzfan/article/details/52668935
-
-人脸检测——MTCNN
-
-https://mp.weixin.qq.com/s/IrZEQ69RNUdcs0Fl8fHmmQ
-
-如何应用MTCNN和FaceNet模型实现人脸检测及识别
-
-https://mp.weixin.qq.com/s/NfqFj5iCIkbRD34Eu2Lb5g
-
-MTCNN实时人脸检测网络详解与代码演示

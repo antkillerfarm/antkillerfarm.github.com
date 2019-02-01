@@ -366,9 +366,25 @@ https://mp.weixin.qq.com/s/zpEVU1E5DfElAnFqHCqHOw
 
 训练效率低？GPU利用率上不去？快来看看别人家的tricks吧～
 
+## tf.data
+
+tf.data提供了一套构建灵活高效的输入流水线的API。
+
+![](/images/img2/datasets_without_pipelining.png)
+
+![](/images/img2/datasets_with_pipelining.png)
+
+上面两幅图中，第一幅图是没有使用流水线的情况，而第二幅图则是使用流水线的情况。
+
+参考：
+
 https://mp.weixin.qq.com/s/dfXTV4PFgC1Wbti42Zf4wQ
 
 tf.data API，让你轻松处理数据
+
+https://mp.weixin.qq.com/s/mjUnrPBPBuY6XKXkUymX-w
+
+实例介绍TensorFlow的输入流水线
 
 ## TensorFlow Probability
 
