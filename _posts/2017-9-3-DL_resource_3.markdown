@@ -32,6 +32,10 @@ http://www.cnblogs.com/tsingke/p/6258967.html
 
 CMA-ES算法
 
+https://mp.weixin.qq.com/s/vuzx4LPLH2Gk4L9TXlNJqg
+
+遗传算法实例应用之管网拓扑结构优化
+
 ## AI与游戏
 
 https://zhuanlan.zhihu.com/p/22604627

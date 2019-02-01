@@ -393,3 +393,7 @@ Science封面：AlphaZero达成终极进化体，史上最强棋类AI降临！
 https://mp.weixin.qq.com/s/Pgw_xaCNl_kCPCg8NFzUBQ
 
 人类没法下了！DeepMind贝叶斯优化调参AlphaGo，自弈胜率大涨16.5%
+
+https://mp.weixin.qq.com/s/eE3oL6c5zHmTglHE-dgBvg
+
+详解AlphaGo到AlphaGo Zero！
