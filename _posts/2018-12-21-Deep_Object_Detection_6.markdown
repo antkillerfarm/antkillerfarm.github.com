@@ -154,6 +154,10 @@ https://zhuanlan.zhihu.com/p/55972055
 
 SimpleDet: 一套简单通用的目标检测与物体识别框架
 
+https://mp.weixin.qq.com/s/Sl958JkcJjy-HW9_c-SH4g
+
+Guided Anchoring: 物体检测器也能自己学Anchor
+
 # Flink
 
 Flink是一个流计算引擎。

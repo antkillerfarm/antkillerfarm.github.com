@@ -387,3 +387,7 @@ https://mp.weixin.qq.com/s/Dmkc7X-GgRrdNVQXz6Mwgg
 https://mp.weixin.qq.com/s/-EDxUwAKdXnmUKeLJTiAUw
 
 解构阿里深度兴趣网络（DIN）：如何将注意力机制引入推荐系统？
+
+https://mp.weixin.qq.com/s/lnCe_3ssP6IEOHEX-N4vyg
+
+达观数据于敬：个性化推荐系统实践应用

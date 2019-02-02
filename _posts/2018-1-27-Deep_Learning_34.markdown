@@ -375,3 +375,7 @@ https://mp.weixin.qq.com/s/Fhge-Idk_adBjUuzaAtzyQ
 https://mp.weixin.qq.com/s/f1uOimoA3a37e1BK1l1rvw
 
 从群等变卷积网络到球面卷积网络
+
+https://mp.weixin.qq.com/s/DG4ofF78fIgiIMiJaxuIVA
+
+AAAI 2019 论文解读：卷积神经网络继续进步
