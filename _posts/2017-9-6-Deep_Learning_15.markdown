@@ -156,6 +156,12 @@ https://mp.weixin.qq.com/s/dflEAOELK0f19y4KuVd_dQ
 
 https://github.com/jcjohnson/neural-style
 
+torch版本
+
+https://github.com/anishathalye/neural-style
+
+tensorflow版本
+
 在第一篇论文中，Gatys使用Gramian matrix从各层CNN中提取纹理信息，于是就有了一个不用手工建模就能生成纹理的方法。
 
 Gramian matrix（由Jørgen Pedersen Gram提出）中的元素定义如下：
@@ -186,10 +192,6 @@ $$J(G)=\alpha \cdot J_{content}(C,G)+\beta \cdot J_{style}(S,G)$$
 
 使用的CNN网络是之前预训练好的模型，例如Alex-Net。**C，S，G共用相同模型和参数。**
 
-![](/images/img2/style_transfer.png)
-
->这是原始论文的插图，其符号表示和本文有所差异。其中的A、F、P各层的output，都是使用Alex-Net生成的。
-
 首先，需要选择合适的层数l来计算$$J_{content}(C,G)$$。
 
 如前所述，CNN的每个隐藏层分别提取原始图片的不同深度特征，由简单到复杂。如果l太小，则G与C在像素上会非常接近，没有迁移效果；如果l太深，则G上某个区域将直接会出现C中的物体。因此，l既不能太浅也不能太深，一般选择网络中间层。
@@ -214,6 +216,16 @@ $$J^{[l]}_{style}(S,G)=\frac{1}{(2n_H^{[l]}n_W^{[l]}n_C^{[l]})}\sum_{k=1}^{n_C^{
 
 $$J_{style}(S,G)=\sum_l\lambda^{[l]}\cdot J^{[l]}_{style}(S,G)$$
 
+## 实现细节
+
+![](/images/img2/style_transfer.png)
+
+这是原始论文的插图，其符号表示和本文有所差异。其中的A、F、P各层的output，都是使用预训练好的Alex-Net生成的。
+
+可以看出A和P，在整个迭代过程中，只需要进行一次Alex-Net的前向计算，因此可以事先计算好。
+
+为了在迭代过程中，不修改Alex-Net的权重，而只修改F，我们可以使用`tf.constant`来创建Alex-Net的各个参数，进而建立Alex-Net。这样在backward的时候，梯度就只会修正到`tf.Variable`，也就是F上。
+
 ## 缺点
 
 Gatys的方法虽然是里程碑式的进步，但仍然有如下缺点：
@@ -223,15 +235,3 @@ Gatys的方法虽然是里程碑式的进步，但仍然有如下缺点：
 2.需要根据风格的不同，调整不同的超参数。换句话说，就是一个Style Transfer的模型就只能用于转换一种Style，通用型不强。
 
 因此，之后的研究主要集中在对这两方面的改进上。针对前者的改进可称作fast style transfer，而后者可称作Universal Style Transfer。
-
-此外，**不是所有的style transfer都是DL方法，很多新特效往往还是用传统的滤镜实现的**。比如最近比较火的“新海诚风格”。
-
-参考：
-
-https://blog.csdn.net/Trent1985
-
-一个滤镜/美颜方面的blog
-
-https://www.zhihu.com/question/29594460
-
-新海诚风格的画面是手绘的还是Photoshop就可以达到的？后期过程是怎样的？

@@ -48,6 +48,8 @@ tf.dtypes.cast: 类型转换
 
 4.`apply_gradients`。
 
+通常来说，如果一个计算图中没有optimizer，则一般只包含forward运算，而没有backward运算。
+
 ## blog
 
 http://www.jianshu.com/u/eaec1fc422e9

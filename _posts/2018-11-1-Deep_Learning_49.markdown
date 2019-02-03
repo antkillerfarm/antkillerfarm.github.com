@@ -208,6 +208,10 @@ https://mp.weixin.qq.com/s/aUf8i3o7px2KcjI-3jFykg
 
 使用RNN-Transducer进行语音识别建模
 
+https://mp.weixin.qq.com/s/c-lQETCPQTztZjV4TYTsZA
+
+语音关键词检测方法综述
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：

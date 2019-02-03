@@ -4,7 +4,21 @@ title:  深度学习（十六）——Style Transfer（2）, 人脸检测/识别
 category: DL 
 ---
 
-# Style Transfer（续）
+# Style Transfer
+
+## 缺点（续）
+
+此外，**不是所有的style transfer都是DL方法，很多新特效往往还是用传统的滤镜实现的**。比如最近比较火的“新海诚风格”。
+
+参考：
+
+https://blog.csdn.net/Trent1985
+
+一个滤镜/美颜方面的blog
+
+https://www.zhihu.com/question/29594460
+
+新海诚风格的画面是手绘的还是Photoshop就可以达到的？后期过程是怎样的？
 
 ## Texture Networks: Feed-forward Synthesis of Textures and Stylized Images
 
@@ -22,7 +36,19 @@ https://github.com/DmitryUlyanov/texture_nets
 
 ![](/images/img2/Texture_Networks.png)
 
+上图是该论文提出的网络结构，其中包括了两个部分：
 
+1.descriptor network（以下简称D网络）。这部分的使用方法和Gatys方法基本一致：风格图片过一下预训练好的Alex-Net来生成纹理特征P。
+
+2.论文的主要创新点在于generator network（以下简称G网络）。
+
+1）假设有一批图片A，通过G网络得到了风格图片G(A)。
+
+2）G(a)和a做比较得到content loss，G(A)和P做比较得到style loss。
+
+3）迭代优化上述两个loss，得到训练好的G网络。
+
+4）Inference时，直接将图片a输入G网络，就得到了风格变换后的图片G(a)。
 
 ## Perceptual Losses for Real-Time Style Transfer and Super-Resolution
 
@@ -40,6 +66,7 @@ https://github.com/lengstrom/fast-style-transfer/
 
 ![](/images/img2/RTST.png)
 
+可以看出该论文的方法和Texture Networks基本一致，差别仅在于generator network和descriptor network的结构，略有不同而已。这里不再赘述。
 
 参考：
 
@@ -50,6 +77,16 @@ https://blog.csdn.net/Hungryof/article/details/61195783
 https://zhuanlan.zhihu.com/p/35798776
 
 快速风格迁移（fast-style-transfer）
+
+## 其他
+
+原版的neural style是用Gram矩阵来进行匹配风格，但是也有用其他的。例如：
+
+MRF loss（ombining markov random fields and convolutional neural networks for image synthesis.）
+
+Adversarial loss(C. Li and M. Wand. Precomputed real-time texture synthesis with markovian generative adversarial networks. In ECCV,2016)
+
+梯度直方图（P. Wilmot, E. Risser, and C. Barnes. Stable and controllable neural texture synthesis and style transfer using histogram losses. arXiv preprint arXiv:1701.08893 , 2017）
 
 ## 参考
 
