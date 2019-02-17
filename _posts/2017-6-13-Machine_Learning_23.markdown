@@ -198,6 +198,10 @@ https://mp.weixin.qq.com/s/JPAZTdvcxY3sgWukbn3ScQ
 
 AutoML在推荐系统中的应用
 
+https://mp.weixin.qq.com/s/95FH-_L5smx7WoNnfucWVg
+
+为什么说自动化特征工程将改变机器学习的方式
+
 # Optimizer
 
 在《机器学习（一）》中，我们已经指出梯度下降是解决凸优化问题的一般方法。而如何更有效率的梯度下降，就是本节中Optimizer的责任了。

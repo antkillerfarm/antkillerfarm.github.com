@@ -334,10 +334,6 @@ https://mp.weixin.qq.com/s/JoYmVC_9bw3NHK6WXggAcA
 
 通用句子语义编码器，谷歌在语义文本相似性上的探索
 
-https://mp.weixin.qq.com/s/c6ZhSk4r3pvnjHsvpwkkSw
-
-用图卷积网络(GCN)来做语义角色标注
-
 https://mp.weixin.qq.com/s/I50ceRiZZfVGDx8UzoobwA
 
 微软提出新型通用神经机器翻译方法，挑战低资源语言翻译问题

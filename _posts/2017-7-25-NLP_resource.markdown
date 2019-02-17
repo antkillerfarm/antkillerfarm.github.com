@@ -82,6 +82,10 @@ https://mp.weixin.qq.com/s/5ftsfNSAb7pAizVA5m-xXw
 
 2017年回顾：NLP、深度学习与大数据
 
+https://mp.weixin.qq.com/s/ClJ24ooVO1Em6pp81YaSdQ
+
+一步步教你构建NLP pipeline
+
 https://mp.weixin.qq.com/s/BcUB3bXrPJF0WQetWs7Law
 
 用深度学习解决自然语言处理中的7大问题，文本分类、语言建模、机器翻译等

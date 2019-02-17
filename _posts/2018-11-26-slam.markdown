@@ -382,14 +382,6 @@ https://mp.weixin.qq.com/s/R7Qud_x6DGqbHAOl7OMruQ
 
 一文带你入门算法分发！
 
-https://mp.weixin.qq.com/s/doi26r9AVIMbpkZ01wsCZA
-
-北京大学何洋波博士《因果推断和因果图模型》机器学习报告
-
-https://mp.weixin.qq.com/s/L1ZY_qXPMXpStIgtUp7AKQ
-
-为机器学习插上因果推理的翅膀：这是一本系统的因果推理开源书
-
 https://mp.weixin.qq.com/s/rVXCjEilRC4sgluIg0q6TA
 
 一文尽览近似最近邻搜索中的哈希与量化方法
@@ -417,3 +409,15 @@ https://mp.weixin.qq.com/s/iyd0ade-ZcXCxLoZ8_vWPQ
 https://mp.weixin.qq.com/s/rDdpQDogQR1E6TMkG4j1sA
 
 80页PPT解读量化开发与实盘
+
+https://mp.weixin.qq.com/s/X7aGCeUkLuuFbHrnK2TiMg
+
+啥是有限元？
+
+https://mp.weixin.qq.com/s/mZlJw3gKhc988n5JpN135g
+
+如何解决春运中的铁路列车调度问题
+
+https://mp.weixin.qq.com/s/yJom9cqh64YNqMbAzsgwOA
+
+浅谈变分不等式与凸优化

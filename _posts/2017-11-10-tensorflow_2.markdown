@@ -306,6 +306,10 @@ https://mp.weixin.qq.com/s/NO_XY-JmTpIkoC-fpkZ-qg
 
 在浏览器上也能训练神经网络？TensorFlow.js带你玩游戏~
 
+https://mp.weixin.qq.com/s/vjpMr3TsF3Lui8Q0IstQxw
+
+浏览器上跑：TensorFlow发布实时人物分割模型，秒速25帧，24个部位
+
 ## Eager Execution
 
 TensorFlow的Eager Execution可立即评估操作，无需构建图：操作会返回具体的值，而不是构建以后再运行的计算图。这也就是所谓的动态图计算的概念。
@@ -407,17 +411,3 @@ https://mp.weixin.qq.com/s/cV-5W4YWC9f9wsoNX5fIXA
 https://mp.weixin.qq.com/s/cxC3SarlBBPTwIxQZ4AG_g
 
 快速上手TensorFlow Probability内置概率编程教材
-
-## 细节
-
-执行`session.run(out)`，会在终端打印out的值，但执行`res = session.run(out)`则不会。
-
-此外，`session.run`可以接受list作为参数。返回值也是一个list，分别对应输入list的每个元素的计算结果。
-
-----
-
-tensorflow的程序中,在main函数下,都是使用tf.app.run()来启动。查看源码可知,该函数是用来处理flag解析，然后执行main函数。
-
-https://blog.csdn.net/lujiandong1/article/details/53262612
-
-tensorflow中的tf.app.run()

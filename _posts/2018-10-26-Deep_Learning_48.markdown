@@ -210,6 +210,18 @@ https://zhuanlan.zhihu.com/p/55263898
 
 语义分割江湖的那些事儿——从旷视说起
 
+https://mp.weixin.qq.com/s/x6MJqCz3Yvcbc9onEO8OMQ
+
+语义分割：context relation
+
+https://mp.weixin.qq.com/s/eLU-YNvV_QGc8HDK15P7Og
+
+Fast-OCNet:更快更好的OCNet
+
+https://zhuanlan.zhihu.com/p/56887843
+
+MIT和Google等提出：新全景分割算法DeeperLab
+
 # 问答系统
 
 GA-Reader

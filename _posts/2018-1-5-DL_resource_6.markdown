@@ -353,3 +353,15 @@ https://mp.weixin.qq.com/s/aBDx_602GZXA36awEyjb-A
 https://mp.weixin.qq.com/s/xRLXCPF92vT7Gs-NLs2RGA
 
 谷歌、百度等搜索巨头应该从果蝇身上学习什么？专访解读果蝇算法
+
+https://mp.weixin.qq.com/s/g7sVzfJ38WJdzvevTsA5rg
+
+过往Net，皆为调参？一篇BagNet论文引发学界震动
+
+https://mp.weixin.qq.com/s/eS0OzK3Vxo0koGiLHP83ag
+
+实际上，CNN图像分类策略简单到出人意料！
+
+https://mp.weixin.qq.com/s/ew9oKF92M_t6vcSWxyFL3w
+
+无参考图像质量评价研究进展综述

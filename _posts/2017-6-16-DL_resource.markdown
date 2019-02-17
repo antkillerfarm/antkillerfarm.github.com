@@ -236,6 +236,10 @@ https://blog.csdn.net/u014380165
 
 一个DL+CV的blog
 
+https://zhuanlan.zhihu.com/zr9558
+
+数学博士张戎的blog
+
 ## 项目集锦
 
 https://mp.weixin.qq.com/s/ZNNgEB9rFjAE8SdfMo9NLA
@@ -245,6 +249,10 @@ https://mp.weixin.qq.com/s/ZNNgEB9rFjAE8SdfMo9NLA
 https://mp.weixin.qq.com/s/cWCVmPQUclW3OnAps9H5Bw
 
 2018年最火爆的30个机器学习项目汇总！
+
+https://mp.weixin.qq.com/s/SRKBLw5bckvUaDizrn88Iw
+
+2019年度机器学习49个顶级开源工程汇总
 
 https://mp.weixin.qq.com/s/jEBzH1TpJBK1Tc3gfnbmTQ
 

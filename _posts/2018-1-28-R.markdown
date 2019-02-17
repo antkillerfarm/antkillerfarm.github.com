@@ -337,6 +337,10 @@ http://blog.csdn.net/qazplm12_3/article/details/76474682
 
 R学习-火山图
 
+https://mp.weixin.qq.com/s/28bSe9pQY9r2fa8Dg3SL2g
+
+中了数据可视化的毒：BBC如何使用R语言绘制数据图表？
+
 https://www.rstudio.com/resources/cheatsheets/
 
 RStudio Cheat Sheets。各种小抄，不局限于R本身。
@@ -400,3 +404,37 @@ R语言实战之模型部署
 https://mp.weixin.qq.com/s/G-6ZcMIba-fLKRN0hgQFWg
 
 面向数据科学和AI的开发库推荐：Python、R各7个
+
+# NLP参考资源+
+
+https://mp.weixin.qq.com/s/QYG0l1fk35C1evM2FSHgsw
+
+多轮对话之对话管理：Dialog Management
+
+https://mp.weixin.qq.com/s/hhWRhBeRCmxjr9Lh8aE_Ww
+
+如何用20万条客服咨询消息“喂”出定制化聊天机器人
+
+https://mp.weixin.qq.com/s/FJtMDoNksSZLYdoEzixJTQ
+
+AI Challenger 2018：细粒度用户评论情感分类冠军思路总结
+
+https://mp.weixin.qq.com/s/rCBdY4AcSupppEbZhRQW6Q
+
+一文看懂深度文本分类之DPCNN原理与代码
+
+https://mp.weixin.qq.com/s/AqzdRoXthrUFUOqSNwgfqQ
+
+新的一年，想发有关对话系统的paper？快关注时下最大热点：智能化与个性化
+
+https://mp.weixin.qq.com/s/wxRsTkAIXSZfmJGXcWLdOA
+
+2019年了,中文分词到底该怎么做?中文分词十年方法大盘点
+
+https://mp.weixin.qq.com/s/-YmB6QSQ01EsHfXB40MMcQ
+
+Generative QA: Learning to Answer the Whole Question
+
+https://mp.weixin.qq.com/s/MJMPpiY_FQqwIv8qXTp4TQ
+
+CMU开源NLP生成句子评估工具，帮你快速分析模型产出

@@ -271,7 +271,39 @@ https://zhuanlan.zhihu.com/p/55903495
 
 时间序列的聚类
 
+https://mp.weixin.qq.com/s/avLWHXj2JkjXOomCipj8kA
+
+使用希尔伯特-黄变换（HHT）进行时间序列分析
+
+https://mp.weixin.qq.com/s/2teyejpbpM6x5UCiYL8s-Q
+
+关于时间序列你需要了解的一切
+
+https://mp.weixin.qq.com/s/FRSe1mJTvk9U66ta-r9iCQ
+
+手把手教你用Python玩转时序数据，从采样、预测到聚类
+
+https://mp.weixin.qq.com/s/Q82YzANWDMkKWm5k2XmPkA
+
+严谨解决5种机器学习算法在预测股价的应用
+
+https://mp.weixin.qq.com/s/PMsAjk7WbGRu2n3s6Q8prQ
+
+Facebook时间序列预测算法Prophet的研究
+
 # 异常检测
+
+1.基于聚类算法的异常检测。
+
+2.基于孤立森林算法的异常检测。
+
+3.基于支持向量机算法的异常检测。
+
+4.基于高斯分布的异常检测。
+
+5.基于马尔可夫链的异常检测。
+
+参考：
 
 http://chuansong.me/n/377440751130
 
@@ -316,3 +348,11 @@ https://mp.weixin.qq.com/s/ReQpT9KT6_tE8vXM-F_Ejw
 https://www.zhihu.com/question/30508773
 
 反欺诈(Fraud Detection)中所用到的机器学习模型有哪些？
+
+https://mp.weixin.qq.com/s/jB5o4a6O4rrhMYD0GhKclw
+
+基于机器学习算法的时间序列价格异常检测
+
+https://mp.weixin.qq.com/s/PKX13Fv5fWmgX5IHLYgjmQ
+
+基于无监督学习的期权定价异常检测

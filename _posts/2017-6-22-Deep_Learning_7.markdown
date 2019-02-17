@@ -209,6 +209,10 @@ https://mp.weixin.qq.com/s/-SmmtqHWJjq2A4pu5KqYfQ
 
 resnet中的残差连接，你确定真的看懂了？
 
+https://mp.weixin.qq.com/s/AyJ_ZtNFTjkWVH3_Kw7wJg
+
+ResNet架构可逆！多大等提出性能优越的可逆残差网络
+
 # Bi-directional RNN
 
 众所周知，RNN在处理长距离依赖关系时会出现问题。LSTM虽然改进了一些，但也只能缓解问题，而不能解决该问题。

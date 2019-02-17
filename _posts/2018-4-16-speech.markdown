@@ -177,6 +177,10 @@ https://zhuanlan.zhihu.com/p/23177950
 
 kaldi-ctc: CTC End-to-End ASR
 
+https://mp.weixin.qq.com/s/VkKFQ0fOOHJw0p7Z4EDugQ
+
+绝佳的ASR学习方案：这是一套开源的中文语音识别系统
+
 ## HTK
 
 Hidden Markov Model Toolkit是Cambridge University开发的语音识别的工具包。它是GMM-HMM时代最为流行的语音识别工具，但近来流行度不如Kaldi。

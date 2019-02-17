@@ -54,6 +54,10 @@ https://github.com/harpribot/awesome-information-retrieval
 
 信息检索优质资源汇总
 
+https://mp.weixin.qq.com/s/5ba3EM6e9R-i3UpzUhm49w
+
+神经信息检索导论，微软研究员129页最新书册
+
 https://mp.weixin.qq.com/s/aZsj1FQnzHOr-YBcy_ljpw
 
 DNN在搜索场景中的应用

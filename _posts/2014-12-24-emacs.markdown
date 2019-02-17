@@ -327,6 +327,10 @@ https://mp.weixin.qq.com/s/5694PDHy9BeoL8qy31MaxQ
 
 # IDE
 
+http://pypl.github.io/IDE.html
+
+这个网站提供了常用IDE的流行排名
+
 ## Source Insight
 
 Shift+F8：高亮选中的字

@@ -130,6 +130,10 @@ https://zhuanlan.zhihu.com/p/34730368
 
 多目标追踪
 
+https://mp.weixin.qq.com/s/5Kcbnme7151Ln6KiTyVaBw
+
+多目标追踪资源列表
+
 https://zhuanlan.zhihu.com/p/36462982
 
 多目标追踪算法：条件随机场算法
@@ -291,6 +295,10 @@ https://mp.weixin.qq.com/s/LaIvAuBHYGNMug3NZ1pLhQ
 https://mp.weixin.qq.com/s/aBDgV7u93MAv2MogZKBmvw
 
 Google提出Grasp2Vec模型：利用自监督方法学习物体表示
+
+https://mp.weixin.qq.com/s/YfDZMEkOnxp0_ei2Oam-YQ
+
+基于弱监督的视频时序动作检测的介绍
 
 # 细粒度分类
 

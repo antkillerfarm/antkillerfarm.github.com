@@ -72,6 +72,10 @@ https://mp.weixin.qq.com/s/Jx0o17CwlIVcRV22PXk4wQ
 
 看穿机器学习的黑箱（III）
 
+https://mp.weixin.qq.com/s/ecqPzcSa75U9n4BcvnNJ_Q
+
+GAN模式崩溃的理论解释
+
 ## GAN的评估指标
 
 尽管可用的GAN模型非常多，但对它们的评估仍然主要是定性评估，通常需要借助人工检验生成图像的视觉保真度来进行。此类评估非常耗时，且主观性较强、具备一定误导性。鉴于定性评估的内在缺陷，恰当的定量评估指标对于GAN的发展和更好模型的设计至关重要。
@@ -363,3 +367,7 @@ https://mp.weixin.qq.com/s/DSHuCNQWKN3pLozZ8i16hQ
 https://mp.weixin.qq.com/s/5S6TsyT6dwXP3cTE_KQleg
 
 把酱油瓶放进菜篮子：UC Berkeley提出高度逼真的物体组合网络Compositional GAN
+
+https://mp.weixin.qq.com/s/IE5h6AiAYhA1nBvsFiGUHA
+
+GAN最新进展：8大技巧提高稳定性

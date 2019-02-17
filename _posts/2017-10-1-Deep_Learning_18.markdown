@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十八）——数据增强, Graph NN, Regularization, 语义分割
+title:  深度学习（十八）——数据增强, Graph NN, 语义分割
 category: DL 
 ---
 
@@ -240,15 +240,29 @@ https://mp.weixin.qq.com/s/WMpcamrHjUDnYwqyISdooA
 
 斯坦福Jure Leskovec图表示学习：无监督和有监督方法
 
-# Regularization
+https://mp.weixin.qq.com/s/mTCrTPzyeogwRHfgitfK6Q
 
-DL中的Regularization除了常见的$$l_1$$-norm、$$l_2$$-norm和squared $$l_2$$-norm之外，还有Group Regularization。它的定义如下：
+为什么说图网络是AI的未来？
 
-$$loss(W;x;y) = loss_D(W;x;y) + \lambda_R R(W) + \lambda_g \sum_{l=1}^{L} R_g(W_l^{(G)})$$
+https://mp.weixin.qq.com/s/cdbHoR_E_mpIdcvmNGWfDA
 
-$$R_g(w^{(g)}) = \sum_{g=1}^{G} \lVert w^{(g)} \rVert_g = \sum_{g=1}^{G} \sum_{i=1}^{|w^{(g)}|} {(w_i^{(g)})}^2$$
+掌握图神经网络GNN基本，看这篇文章就够了
 
-Group Regularization也叫做Block Regularization或Structured Regularization。
+https://mp.weixin.qq.com/s/043sK8IDmdTYDpbCfPLIxw
+
+图神经网络综述：方法及应用
+
+https://mp.weixin.qq.com/s/c6ZhSk4r3pvnjHsvpwkkSw
+
+用图卷积网络(GCN)来做语义角色标注
+
+https://mp.weixin.qq.com/s/B8rJRlnwGJKUSI17Ot66Xw
+
+从CNN到GCN的联系与区别——GCN从入门到精（fang）通（qi）
+
+https://mp.weixin.qq.com/s/DUv5c6ce-dgLOBAE4ChiQg
+
+图神经网络为何如此强大？看完这份斯坦福31页PPT就懂了！
 
 # 语义分割
 

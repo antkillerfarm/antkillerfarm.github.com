@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十五）——姿态/行为检测, VAE进阶
+title:  深度学习（三十五）——姿态/行为检测, VAE进阶, Regularization
 category: DL 
 ---
 
@@ -85,6 +85,10 @@ Dense Pose
 https://blog.csdn.net/sinat_26917383/article/details/79704097
 
 关键点定位：四款人体姿势关键点估计论文笔记
+
+https://mp.weixin.qq.com/s/-A87-z5inWBsF1-5UYagTA
+
+Facebook实时人体姿态估计：Dense Pose及其应用展望
 
 ## 步态识别
 
@@ -298,6 +302,18 @@ https://mp.weixin.qq.com/s/vGyoJwlZdUS31WQEHmnBKA
 
 基于姿态的人物视频生成
 
+https://mp.weixin.qq.com/s/HBc_GUF7TgwbPX1XgdimvQ
+
+轨迹卷积网络TrajectoryNet
+
+https://mp.weixin.qq.com/s/gnbzfaH79Idmw-r0G6TRHg
+
+预见未来！李飞飞等提出端到端系统Next预测未来路径与活动
+
+https://mp.weixin.qq.com/s/5EDChIqLdF3bqIm9WStV8Q
+
+行为识别（action recognition）目前的难点在哪？
+
 # VAE进阶
 
 https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw
@@ -351,3 +367,13 @@ https://mp.weixin.qq.com/s/fYR2dS3wCMMVk3s9O4nqUw
 https://zhuanlan.zhihu.com/p/52974147
 
 VAE 的细节：$$p(x \mid z)$$的噪音，与$$p(z \mid x)$$的编码坍塌
+
+# Regularization
+
+DL中的Regularization除了常见的$$l_1$$-norm、$$l_2$$-norm和squared $$l_2$$-norm之外，还有Group Regularization。它的定义如下：
+
+$$loss(W;x;y) = loss_D(W;x;y) + \lambda_R R(W) + \lambda_g \sum_{l=1}^{L} R_g(W_l^{(G)})$$
+
+$$R_g(w^{(g)}) = \sum_{g=1}^{G} \lVert w^{(g)} \rVert_g = \sum_{g=1}^{G} \sum_{i=1}^{|w^{(g)}|} {(w_i^{(g)})}^2$$
+
+Group Regularization也叫做Block Regularization或Structured Regularization。

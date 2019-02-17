@@ -318,6 +318,10 @@ https://mp.weixin.qq.com/s/MzVPesFK0vJ1UuQPPSSN2w
 
 百度、MIT等提出StNet：局部+全局的视频时空联合建模
 
+https://mp.weixin.qq.com/s/UeQc3orm2ooZ5zlvrSLzOw
+
+视频内容理解在Hulu的应用与实践
+
 # 手势识别
 
 https://zhuanlan.zhihu.com/p/26630215

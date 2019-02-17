@@ -116,6 +116,10 @@ https://mp.weixin.qq.com/s/OCG1TiHl2dsuS24uacQ-MA
 
 ## 参考
 
+https://mp.weixin.qq.com/s/yp5gExPzpDiXaGk9oXEMVA
+
+最新综述：模型压缩与加速
+
 https://zhuanlan.zhihu.com/p/24337627
 
 深度压缩之蒸馏模型
@@ -134,7 +138,7 @@ https://zhuanlan.zhihu.com/p/24894102
 
 https://luofanghao.github.io/2016/07/20/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0%20%E3%80%8ADistilling%20the%20Knowledge%20in%20a%20Neural%20Network%E3%80%8B/
 
-论文笔记 《Distilling the Knowledge in a Neural Network》
+论文笔记《Distilling the Knowledge in a Neural Network》
 
 http://blog.csdn.net/zhongshaoyy/article/details/53582048
 
@@ -319,3 +323,7 @@ https://mp.weixin.qq.com/s/BMsvhXytSy2nWIsGOSOSBQ
 https://mp.weixin.qq.com/s/_JlaxwEYqdTTuS4hNSQTTw
 
 这么Deep且又轻量的Network，实时目标检测
+
+https://mp.weixin.qq.com/s/mFuxCl0Mzv5hmDFewWZkrw
+
+FAIR&MIT提出知识蒸馏新方法：数据集蒸馏

@@ -324,6 +324,10 @@ https://mp.weixin.qq.com/s/5XyjyDeX7vvQo_UFmrLzZw
 
 OpenCV Grabcut对象分割
 
+https://mp.weixin.qq.com/s/5bsdeBby92-iDrZVoajUog
+
+利用OpenCV抠图技术实现影视中“隐身”特效
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。

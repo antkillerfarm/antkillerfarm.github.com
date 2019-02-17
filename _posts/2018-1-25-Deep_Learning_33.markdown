@@ -244,3 +244,7 @@ https://mp.weixin.qq.com/s/cskdgsysD7R_FKChAKmlDg
 https://mp.weixin.qq.com/s/7fBXMvT4eyZrKhPKQTAIZQ
 
 你听说过胶囊网络吗？
+
+https://mp.weixin.qq.com/s/F9SGZPZj6gup_nOVuDel6A
+
+与胶囊网络异曲同工：Bengio等提出四元数循环神经网络

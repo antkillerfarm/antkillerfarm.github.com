@@ -222,6 +222,14 @@ https://deepmind.com/research/alphago/alphago-games-simplified-chinese/
 
 《Mastering the game of Go with deep neural networks and tree search》
 
+## DarkForest
+
+DarkForest是田渊栋2015年11月的作品，虽然棋力和稍后的AlphaGo相去甚远，但毕竟也算是用到了RL和DNN了。
+
+代码：
+
+https://github.com/facebookresearch/darkforestGo
+
 ## Leela Zero
 
 Leela Zero是比利时人Gian-Carlo Pascutto开源的围棋AI。它的算法与AlphaGo Zero相同。而训练采用GTP协议，集合全球算力，进行分布式训练。
@@ -249,6 +257,12 @@ ELF OpenGo是Facebook开源的围棋AI，它是FB的AI游戏框架ELF的一部�
 官网：
 
 https://github.com/pytorch/ELF
+
+参考：
+
+https://mp.weixin.qq.com/s/lOAx3suLIS-pEWyi8xZl6Q
+
+“全民体验”AlphaZero：FAIR田渊栋首次开源超级围棋AI
 
 ## PhoenixGo
 
@@ -381,23 +395,3 @@ https://mp.weixin.qq.com/s/ajajJ9yJZsOy4Vc0ULBxXg
 https://zhuanlan.zhihu.com/p/41814142
 
 从源码解密AlphaGo Zero背后基本原理
-
-https://www.ifanr.com/630602
-
-AlphaGo的棋局，与人工智能有关，与人生无关
-
-https://mp.weixin.qq.com/s/J0w6kzzdKTbsaiZitbQdoA
-
-达观数据：一文详解AlphaGo原理
-
-https://mp.weixin.qq.com/s/BBQ54HHrFiqxXkC-EI6ELw
-
-Science封面：AlphaZero达成终极进化体，史上最强棋类AI降临！
-
-https://mp.weixin.qq.com/s/Pgw_xaCNl_kCPCg8NFzUBQ
-
-人类没法下了！DeepMind贝叶斯优化调参AlphaGo，自弈胜率大涨16.5%
-
-https://mp.weixin.qq.com/s/eE3oL6c5zHmTglHE-dgBvg
-
-详解AlphaGo到AlphaGo Zero！

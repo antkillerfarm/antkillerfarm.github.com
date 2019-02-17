@@ -142,6 +142,10 @@ https://zhuanlan.zhihu.com/p/40413223
 
 卡尔曼滤波器实现详解
 
+https://mp.weixin.qq.com/s/kBGhHCxq6idOOSGoLX5Kaw
+
+手把手教你写卡尔曼滤波器
+
 https://zhuanlan.zhihu.com/p/41767489
 
 概率机器人——扩展卡尔曼滤波、无迹卡尔曼滤波

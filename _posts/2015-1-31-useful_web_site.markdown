@@ -432,6 +432,10 @@ https://mp.weixin.qq.com/s/SO1ZLSPaRkk8WwUl9u-JPA
 
 仅需这一篇，吃透“负载均衡”妥妥的
 
+https://mp.weixin.qq.com/s/oN-drJHFU34XanBzOKzrUQ
+
+有史以来最强的5G入门科普！
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

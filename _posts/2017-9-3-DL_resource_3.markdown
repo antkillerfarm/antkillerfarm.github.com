@@ -258,6 +258,10 @@ https://mp.weixin.qq.com/s/Q3WWqEnUaIvnLwoFHY5lfQ
 
 腾讯王者荣耀AI论文首次曝光：五AI王者局开黑与人类战队打成平手
 
+https://mp.weixin.qq.com/s/wyn-V4-DcjjOKziith3pXw
+
+开源星际争霸2多智能体挑战smac
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293

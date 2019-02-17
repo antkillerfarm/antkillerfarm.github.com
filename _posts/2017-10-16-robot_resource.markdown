@@ -238,9 +238,17 @@ https://mp.weixin.qq.com/s/KTC0j9Bt4L-diQ2M_HAqxg
 
 自动驾驶最新综述论文
 
-https://mp.weixin.qq.com/s/vKkjYdf6Ast7wWcW9oIEuA
+https://mp.weixin.qq.com/s/qyZS6ufN6f4dQRdG9diP0A
 
-88美元的自动驾驶“自制原子弹”，最著名黑客详解panda系统
+自动驾驶传感器，感知，地图定位和规划控制发展现状及热点研究
+
+https://mp.weixin.qq.com/s/9Oghiqbuz4sUFisylTEzng
+
+雷洪钧：汽车自动驾驶技术与实例的研究（上）
+
+https://mp.weixin.qq.com/s/7gBl3ckqk7gQJ0FGMmv_jg
+
+雷洪钧：汽车自动驾驶技术与实例的研究（下）
 
 https://mp.weixin.qq.com/s/pPPq3b1yj92RaGgIpTAhqQ
 
@@ -405,6 +413,10 @@ https://mp.weixin.qq.com/s/f44TkWXklGONCuXnIuTbXg
 https://mp.weixin.qq.com/s/8jZKgSeRw7k0F9JOigFJcw
 
 自动驾驶之——CAN总线简介
+
+https://mp.weixin.qq.com/s/U-Nzj3NM3acjkprVuyComg
+
+汽车CAN总线技术详解
 
 https://mp.weixin.qq.com/s/F8aLNue_qDlMyTAznBLC7g
 

@@ -308,6 +308,10 @@ https://mp.weixin.qq.com/s/a1XhQKOfxTCD9wVddQG8gw
 
 Google发布新的问答语料库，专攻篇章级的NLU问题
 
+https://mp.weixin.qq.com/s/5NWqq3iRnTB_FJAfopBEeg
+
+NLP Chinese Corpus项目：大规模中文自然语言处理语料
+
 ## CV
 
 http://www.cvpapers.com/datasets.html

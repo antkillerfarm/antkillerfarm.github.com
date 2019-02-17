@@ -108,7 +108,11 @@ https://mp.weixin.qq.com/s/4h7JDItBFhWkEex6eeaJTg
 
 https://mp.weixin.qq.com/s/ViPvoQpFx2AC0UOqLtUqjA
 
-Submarine在 Apache Hadoop 中运行深度学习框架
+Submarine在Apache Hadoop中运行深度学习框架
+
+https://mp.weixin.qq.com/s/vgiUeUzChFzIudzNDoM1Nw
+
+搭建入门级高频交易系统
 
 # 知名数据集
 
@@ -162,6 +166,10 @@ https://mp.weixin.qq.com/s/uqFy-1_JM9P2WKU5YOmwmA
 
 一个22万张NSFW图片的鉴黄数据集？我有个大胆的想法……
 
+https://mp.weixin.qq.com/s/QEq8fHY2HCOuCXUWXwOpyA
+
+情人节：一本正经地为单身狗推荐这个158万张图像的鉴黄数据集
+
 https://zhuanlan.zhihu.com/p/55627416
 
 旷视RPC大型商品数据集发布！
@@ -169,6 +177,14 @@ https://zhuanlan.zhihu.com/p/55627416
 https://mp.weixin.qq.com/s/DtVa_tL5OfC2i-hbFZKY5Q
 
 视觉推理任务中的ImageNet：斯坦福GQA数据集重磅发布
+
+https://mp.weixin.qq.com/s/byEa0rnfBU3WP0KzOMZBVw
+
+你也能用英伟达GAN造脸了：官方实现有了，高清数据集也开源了
+
+https://mp.weixin.qq.com/s/OU3onjVeOnqo_ORIJtQdMQ
+
+DeepFashion2数据集：87.3万对买家秀-卖家秀图像+海量标注
 
 ## 人脸/行为
 
@@ -212,7 +228,11 @@ http://www.zanmel.com/2015/12/14/10-great-datasets-on-movies/
 
 https://mp.weixin.qq.com/s/hrI0ILAs4Nko_JkqegaANA
 
-LibRec精选：推荐系统9个必备数据集
+推荐系统9个必备数据集
+
+https://mp.weixin.qq.com/s/DxVhQx4b9GP6IoXOpGESDQ
+
+推荐系统的常用数据集
 
 https://mp.weixin.qq.com/s/U96j-8_8yo_KGEu9ufWBGg
 
@@ -385,27 +405,3 @@ https://mp.weixin.qq.com/s/DpqI4AfjiygCh8dqq_Kgmw
 https://mp.weixin.qq.com/s/XcqVtFBY5rIn0FgPEx0eTg
 
 工业领域中的AI：BHGE通过使用TensorFlow概率编程工具包开发的基于物理的概率深度学习
-
-https://mp.weixin.qq.com/s/TZMOO_LFCxk297lKNQfvGQ
-
-TensorFlow从基础到实战：一步步教你创建交通标志分类神经网络
-
-https://mp.weixin.qq.com/s/HUUwtyjRllg-5olqYHK4XA
-
-基于TensorFlow的开源项目FaceRank
-
-https://mp.weixin.qq.com/s/N2OP1uX7JjfIJQ_B4NHKpw
-
-横向对比三大分布式机器学习平台：Spark、PMLS、TensorFlow
-
-https://github.com/jinfagang/rl_atari_pytorch
-
-ReinforcementLearning Learn Play Atari Using DDPG and LSTM.
-
-https://mp.weixin.qq.com/s/bJigyEv6iNDp799KlHsclg
-
-TensorFlow 不仅用于机器学习，还能模拟偏微分方程（水滴特效）
-
-https://mp.weixin.qq.com/s/dmNEzrWNX3YWmocjpORpig
-
-谷歌开源TF-Ranking可扩展库，支持多种排序学习

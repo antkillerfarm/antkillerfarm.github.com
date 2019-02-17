@@ -246,3 +246,43 @@ https://zhuanlan.zhihu.com/p/20042215
 ![](/images/article/trigonometric.jpg)
 
 ![](/images/article/hyperbolic.jpg)
+
+# CPU+
+
+## 3D芯片
+
+随着半导体工艺日益接近物理极限，2D芯片已经不能满足进化的需要，芯片的设计也迈向了立体发展的阶段。目前主流的3D芯片技术包括FinFET（1999）与FD-SOI（2000），他们都是胡正明团队的作品。
+
+>胡正明，1947年生。台湾大学本科（1968）+UCB硕博（1970，1973）。台积电首席科学家，MIT教授。美国工程院院士，中科院外籍院士。
+
+参考：
+
+http://www.sohu.com/a/108777952_467791
+
+多少年了，终于明白了FinFET与FD-SOI制程
+
+https://mp.weixin.qq.com/s/NJBx8ndkBBedC81f3-DKOA
+
+5nm以后的晶体管选择
+
+https://mp.weixin.qq.com/s/RtSmbwguM7dbsXkWqAPuCQ
+
+英特尔3D封装技术深度解读
+
+## 浸润式微影
+
+缩短波长的方法除了增加频率之外，其实还有更换介质。
+
+![](/images/img2/ASML.jpg)
+
+参考：
+
+https://mp.weixin.qq.com/s/NZGNrO_LxNc6qrIdofOIfQ
+
+假如没有他（林本坚），就没有今天的台积电
+
+## 业界
+
+https://mp.weixin.qq.com/s/YdoIVBpn1dFUEzDEF5pYJw
+
+被迫离开工作近20年的公司，半导体老兵上演逆袭。林孝平，一个小儿麻痹患者。

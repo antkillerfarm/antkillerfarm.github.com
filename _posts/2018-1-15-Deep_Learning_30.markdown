@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十）——Deep Speech, 自动求导, 深度哈希
+title:  深度学习（三十）——Deep Speech, 自动求导, 元学习
 category: DL 
 ---
 
@@ -282,40 +282,108 @@ https://mp.weixin.qq.com/s/xXwbV46-kTobAMRwfKyk_w
 
 自动求导--Deep Learning框架必备技术二三事
 
-# 深度哈希
+# 元学习
 
-https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg
+人工智能的历史显示了明确的进展方向：
 
-深度离散哈希算法，可用于图像检索！
+第一代：**良好的老式人工智能**
 
-https://mp.weixin.qq.com/s/XUYJub0559wwQ9H1wA_SAg
+>手工预测   
+>什么都不学
 
-机器学习时代的哈希算法，将如何更高效地索引数据
+第二代：**浅学习**
 
-https://mp.weixin.qq.com/s/YVIvdMznb3oatIXqD5a5_A
+>手工功能   
+>学习预测
 
-陈天奇等人提出AutoTVM：让AI来编译优化AI系统底层算子
+第三代：**深度学习**
 
-https://mp.weixin.qq.com/s/vFBlFAQLvDZP7IvwKoaPhA
+>手工算法（优化器，目标，架构......）   
+>端到端地学习功能和预测
 
-无问西东，只问哈希
+第四代：**元学习**
 
-https://mp.weixin.qq.com/s/XAxuLg2i3q5_uKDo1wU_rA
+>无手工   
+>端到端学习算法和功能以及预测
 
-从哈希到卷积神经网络：高精度&低功耗
+## 参考
 
-https://mp.weixin.qq.com/s/i8iQtCC7ahXLY1a1wOacsA
+https://mp.weixin.qq.com/s/KKK3VEpwL90g6Aro8qtXxQ
 
-Science：最新发现哈希可能是大脑的通用计算原理
+学习如何学习的算法：简述元学习研究方向现状
 
-https://mp.weixin.qq.com/s/ZOVWXNym5yHoo-MmpxXo0A
+https://mp.weixin.qq.com/s/KtO3OTZ-bZ6m0ZSI6jTyjw
 
-自监督对抗哈希SSAH：当前最佳的跨模态检索框架
+OpenAI提出Reptile：可扩展的元学习算法
 
-https://mp.weixin.qq.com/s/VldzlYg5AfDRho8bsROL_g
+https://mp.weixin.qq.com/s/T4GiL9vW7ALOzWloE_QQBA
 
-HashGAN:基于注意力机制的深度对抗哈希模型提升跨模态检索效果
+OpenAI开发可拓展元学习算法Reptile，能快速学习
 
-https://mp.weixin.qq.com/s/3Z2Zc8zTq2uiPyw7ZuuZfw
+https://mp.weixin.qq.com/s/MWcoGsQJg1GBbSqzyPD9uQ
 
-解密美图大规模多媒体数据检索技术DeepHash
+基于梯度的元学习算法，可高效适应非平稳环境
+
+https://zhuanlan.zhihu.com/p/35695477
+
+基于Meta Learning在动态竞争环境中实现策略自适应
+
+https://mp.weixin.qq.com/s/AhadWUjtgsFmb8uTylTvqg
+
+OpenAI提出新型元学习方法EPG，调整损失函数实现新任务上的快速训练
+
+https://mp.weixin.qq.com/s/dmRdp2oMn0vGukclJSVZDg
+
+Uber AI论文：利用反向传播训练可塑神经网络，生物启发的元学习范式
+
+https://mp.weixin.qq.com/s/Cc4EHc6ei-PtZWhewM10xw
+
+学习如何学习的算法：简述元学习研究方向现状
+
+https://mp.weixin.qq.com/s/4f6-gXovdrYk7240TrUwJg
+
+谷歌大脑：基于元学习的无监督学习更新规则
+
+https://mp.weixin.qq.com/s/cAbMB-DB9vu2ua8t5J28ww
+
+从零开始，了解元学习
+
+https://mp.weixin.qq.com/s/Q36vpS1HF2IfeCsFLh656A
+
+基于元强化学习的神经科学新理论
+
+https://mp.weixin.qq.com/s/XtzvHOk7CdXRBy02kUmgsg
+
+近期爆火的Meta Learning，遗传算法与深度学习的火花，再不了解你就out了
+
+https://mp.weixin.qq.com/s/KvgYyuyICueNQPo_S27fEA
+
+BAIR展示新型模仿学习，学会像人那样执行任务
+
+https://zhuanlan.zhihu.com/p/41223529
+
+最前沿:Meta RL论文解读
+
+https://zhuanlan.zhihu.com/p/40600485
+
+最前沿：Meta Learning前沿进展扫描
+
+https://zhuanlan.zhihu.com/p/28639662
+
+百家争鸣的Meta Learning/Learning to learn
+
+https://zhuanlan.zhihu.com/p/45845001
+
+最前沿：用模仿学习来学习增强学习
+
+https://zhuanlan.zhihu.com/p/46059552
+
+Meta Learning单排小教学
+
+https://zhuanlan.zhihu.com/p/46131981
+
+最前沿：Meta Learning在少样本文本翻译上的应用
+
+https://zhuanlan.zhihu.com/p/46339823
+
+谈谈无监督Meta Learning的研究

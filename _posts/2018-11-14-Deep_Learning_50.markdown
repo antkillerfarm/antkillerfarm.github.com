@@ -166,6 +166,14 @@ https://mp.weixin.qq.com/s/kobEEizpP2v5Yy-8stiGgg
 
 让画面更逼真！这个强化超分辨率GAN让老游戏迎来第二春
 
+https://mp.weixin.qq.com/s/tWaKMFZ4dQX7kZlT3tiDAQ
+
+详解GAN的谱归一化（Spectral Normalization）
+
+https://mp.weixin.qq.com/s/I7mpy5P7LFFkop618ANLtA
+
+这份攻略帮你“稳住”反复无常的 GAN
+
 # 深度推理
 
 https://mp.weixin.qq.com/s/RS39wqZDf6gEhOY6gcOVSA

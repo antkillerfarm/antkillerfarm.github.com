@@ -212,6 +212,14 @@ https://mp.weixin.qq.com/s/4VUVu4z-_Cg2tUz-QD_wOA
 
 线下场景的客流数字化探索与应用
 
+https://mp.weixin.qq.com/s/2Mh68gfbG_5gKnoICuRmeA
+
+Byte Cup 2018国际机器学习竞赛夺冠记
+
+https://mp.weixin.qq.com/s/DD-BOtPbGCXvxfFxL-qOgg
+
+Kaggle Quora Insincere Question Classification Rank 13方案分享
+
 ## AI与安全
 
 https://mp.weixin.qq.com/s/jBE4gP3O0qVJ50G49Q_xmQ

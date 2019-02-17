@@ -206,6 +206,10 @@ https://mp.weixin.qq.com/s/PzPRKZa1C5IlEUASWt71cA
 
 从朴素贝叶斯到维特比算法：详解隐马尔科夫模型
 
+https://mp.weixin.qq.com/s/aIpRx-etMkh7jwL2lFNa4w
+
+理解隐马尔可夫模型
+
 ## Viterbi算法
 
 Viterbi算法是求解最大似然状态路径的常用算法，被广泛应用于通信（CDMA技术的理论基础之一）和NLP领域。

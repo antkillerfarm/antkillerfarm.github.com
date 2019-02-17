@@ -62,6 +62,10 @@ https://gehaocool.github.io/2018/03/20/Angular-Margin-%E5%9C%A8%E4%BA%BA%E8%84%B
 
 Angular Margin在人脸识别中的应用
 
+https://mp.weixin.qq.com/s/SqaR_7gwJpUNPM7g4IHaYw
+
+深度人脸识别中不同损失函数的性能对比
+
 ## Coupled Cluster Loss
 
 论文：
@@ -289,6 +293,10 @@ http://www.leiphone.com/news/201608/MPXlWtGaJLPYL7NB.html
 https://zhuanlan.zhihu.com/p/22591740
 
 从事人脸识别研究必读的N篇文章
+
+https://mp.weixin.qq.com/s/HteNoL3hkjNgUTbGguMflQ
+
+人脸识别技术全面总结：从传统方法到深度学习
 
 https://mp.weixin.qq.com/s/7cZTbTBttEvN6NvOarSFgw
 

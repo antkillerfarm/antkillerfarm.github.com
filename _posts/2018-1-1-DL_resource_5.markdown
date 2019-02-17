@@ -44,6 +44,10 @@ https://mp.weixin.qq.com/s/qmdfLlTfQzT0QVq_SzEPUw
 
 机器学习和深度学习中值得弄清楚的一些问题
 
+https://mp.weixin.qq.com/s/JgSTOiWZ30mIR_uiXyU2PQ
+
+硅谷高级工程师告诉你：算法工程师必须要知道的面试技能雷达图
+
 ## AI与UI
 
 https://mp.weixin.qq.com/s/bGbslnuG80S6gPwD4FHuMg

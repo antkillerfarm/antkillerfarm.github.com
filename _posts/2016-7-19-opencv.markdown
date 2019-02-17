@@ -222,10 +222,6 @@ https://blog.csdn.net/taily_duan/article/category/6156573
 
 ## 参考
 
-https://github.com/liuruoze/EasyPR
-
-一个开源的中文车牌识别系统。
-
 https://mp.weixin.qq.com/s/zZNJKUYlmKKSuSRCM1sgeg
 
 OpenCV二维码检测与定位

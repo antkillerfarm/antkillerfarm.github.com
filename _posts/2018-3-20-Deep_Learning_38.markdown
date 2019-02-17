@@ -102,6 +102,40 @@ https://mp.weixin.qq.com/s/S2eGPTON3XmfN830m4vaaA
 
 腾讯AI Lab：可自适应于不同环境和任务的强化学习方法
 
+https://mp.weixin.qq.com/s/FtHJCXniVne2TGKfgCeS9w
+
+Pieter Abbeel：深度强化学习加速方法
+
+https://mp.weixin.qq.com/s/Rvc5fXnbDPMJftp13xF4hg
+
+强化学习应用金融投资组合优化
+
+https://mp.weixin.qq.com/s/dlOFM7LuOF2npDP_EaITvg
+
+效率提高50倍！谷歌提出从图像中学习世界的强化学习新方法（PlaNet）
+
+# AlphaGo+
+
+https://www.ifanr.com/630602
+
+AlphaGo的棋局，与人工智能有关，与人生无关
+
+https://mp.weixin.qq.com/s/J0w6kzzdKTbsaiZitbQdoA
+
+达观数据：一文详解AlphaGo原理
+
+https://mp.weixin.qq.com/s/BBQ54HHrFiqxXkC-EI6ELw
+
+Science封面：AlphaZero达成终极进化体，史上最强棋类AI降临！
+
+https://mp.weixin.qq.com/s/Pgw_xaCNl_kCPCg8NFzUBQ
+
+人类没法下了！DeepMind贝叶斯优化调参AlphaGo，自弈胜率大涨16.5%
+
+https://mp.weixin.qq.com/s/eE3oL6c5zHmTglHE-dgBvg
+
+详解AlphaGo到AlphaGo Zero！
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。
@@ -269,6 +303,10 @@ https://mp.weixin.qq.com/s/VMHyEOn8uyRYt39QXVWUww
 https://mp.weixin.qq.com/s/5zo-2WB9v2hOvKAC7ZhKuQ
 
 基于学习的多任务框架L2MT，为多任务问题选择最优模型
+
+https://mp.weixin.qq.com/s/MPhKUosKZbLtVjJ1XYGXYA
+
+如何利用深度学习模型实现多任务学习？这里有三点经验
 
 # RNN进阶
 

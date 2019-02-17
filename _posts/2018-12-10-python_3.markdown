@@ -403,40 +403,22 @@ https://mp.weixin.qq.com/s/pFBhnjtXi8uNMGjYFeSfow
 
 芯片行业都难在哪儿？这篇说得最详细！
 
-## 3D芯片
+https://mp.weixin.qq.com/s/-cudXRIo0t4gNpEqVJ7vKw
 
-随着半导体工艺日益接近物理极限，2D芯片已经不能满足进化的需要，芯片的设计也迈向了立体发展的阶段。目前主流的3D芯片技术包括FinFET（1999）与FD-SOI（2000），他们都是胡正明团队的作品。
+芯片光刻的流程详解
 
->胡正明，1947年生。台湾大学本科（1968）+UCB硕博（1970，1973）。台积电首席科学家，MIT教授。美国工程院院士，中科院外籍院士。
+https://mp.weixin.qq.com/s/V2AY7VcUEFCMAdMPJ54ZiA
 
-参考：
+一文看懂光刻机
 
-http://www.sohu.com/a/108777952_467791
+https://mp.weixin.qq.com/s/WBab6k4mIkZNzpvbgSbpVQ
 
-多少年了，终于明白了FinFET与FD-SOI制程
+一文看懂SiP封装技术
 
-https://mp.weixin.qq.com/s/NJBx8ndkBBedC81f3-DKOA
+https://mp.weixin.qq.com/s/nDWJS4rfWsqeVgJQbAYQ6w
 
-5nm以后的晶体管选择
+一文看懂IGBT
 
-https://mp.weixin.qq.com/s/RtSmbwguM7dbsXkWqAPuCQ
+https://zhuanlan.zhihu.com/p/56864499
 
-英特尔3D封装技术深度解读
-
-## 浸润式微影
-
-缩短波长的方法除了增加频率之外，其实还有更换介质。
-
-![](/images/img2/ASML.jpg)
-
-参考：
-
-https://mp.weixin.qq.com/s/NZGNrO_LxNc6qrIdofOIfQ
-
-假如没有他（林本坚），就没有今天的台积电
-
-## 业界
-
-https://mp.weixin.qq.com/s/YdoIVBpn1dFUEzDEF5pYJw
-
-被迫离开工作近20年的公司，半导体老兵上演逆袭。林孝平，一个小儿麻痹患者。
+CPU是怎么调节输入电压的？为什么要这么做？

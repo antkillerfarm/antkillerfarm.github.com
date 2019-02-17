@@ -86,6 +86,10 @@ https://mp.weixin.qq.com/s/ZL6T-8M-KfA5wSHcao_PDw
 
 152页基于深度学习的聊天机器人全面总结
 
+https://mp.weixin.qq.com/s/HcGDwZWhuL-vmF19aerJyw
+
+Jacob Eisenstein《自然语言处理》最新经典教材免费分享
+
 ## 书籍
 
 http://ccl.pku.edu.cn/alcourse/nlp/LectureNotes/Natural%20Language%20Processing%20with%20Python.pdf
@@ -206,6 +210,12 @@ https://sergey-tihon.github.io/Stanford.NLP.NET/
 后者的官网：
 
 http://www.ikvm.net/
+
+最近（2019.1），StanfordNLP推出了一个python版本的库：
+
+https://github.com/stanfordnlp/stanfordnlp
+
+看来在AI领域，Java是越来越不行了。2年前，好多AI库沿袭了大数据开发的语言习惯，使用了Java语言。然而，Google的tensorflow的出现，硬是将生态扭到了python语言一边。正如若干年前，Google在Android开发中引入Java一样，当时的业界基本都是C++的天下。
 
 ### THUCTC
 

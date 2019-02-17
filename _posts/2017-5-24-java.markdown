@@ -154,6 +154,10 @@ http://blog.csdn.net/u014717036/article/details/52234679
 
 Java语言中的协变和逆变
 
+https://mp.weixin.qq.com/s/h3MB8p0sEA7VnrMXFq9NBA
+
+Java魔法类：Unsafe应用解析
+
 # 孩子的编程语言
 
 ## 概述

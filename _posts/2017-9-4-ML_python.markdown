@@ -352,6 +352,10 @@ https://mp.weixin.qq.com/s/CAddyz0qQt8SY56VOtcpJA
 
 AI开发最大升级：Pandas与Scikit-Learn合并，新工作流程更简单强大！
 
+https://mp.weixin.qq.com/s/MB7vGecugtemvACK5DRNQg
+
+搞定Python中的“功夫熊猫”，做最高效的数据科学家
+
 ## mysql
 
 http://www.runoob.com/python/python-mysql.html

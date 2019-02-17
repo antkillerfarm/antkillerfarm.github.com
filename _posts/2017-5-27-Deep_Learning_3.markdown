@@ -26,7 +26,7 @@ https://www.jianshu.com/p/35a3bf866c46
 
 ## 鞍点
 
-鞍点（Saddle point）在微分方程中，沿着某一方向是稳定的，另一条方向是不稳定的奇点，叫做鞍点。在泛函中，既不是极大值点也不是极小值点的临界点，叫做鞍点。在矩阵中，一个数在所在行中是最大值，在所在列中是最小值，则被称为鞍点。在物理上要广泛一些，指在一个方向是极大值，另一个方向是极小值的点。
+在微分方程中，沿着某一方向是稳定的，而另一方向是不稳定的奇点，叫做鞍点（Saddle point）。在泛函中，既不是极大值点也不是极小值点的临界点，叫做鞍点。在矩阵中，一个数在所在行中是最大值，而在所在列中是最小值，则被称为鞍点。在物理上要广泛一些，指在一个方向是极大值，另一个方向是极小值的点。
 
 ![](/images/article/Saddle_point.png)
 
@@ -81,6 +81,12 @@ http://www.asimovinstitute.org/neural-network-zoo/
 上图的原地址为：
 
 http://www.asimovinstitute.org/neural-network-zoo-prequel-cells-layers/
+
+参考：
+
+https://mp.weixin.qq.com/s/ysnLwvbSD4fcL5LK7wSnyA
+
+MIT高赞深度学习教程：一文看懂CNN、RNN等7种范例
 
 # CNN
 

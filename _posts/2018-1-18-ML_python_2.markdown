@@ -170,6 +170,10 @@ https://mp.weixin.qq.com/s/3T594c4DzuRmPW5A4zu8Dg
 
 Pyecharts：极其强大的Python数据可视化模块
 
+https://mp.weixin.qq.com/s/20cxuC_tAVmofA7lvquEMQ
+
+Python可视化神器——pyecharts的超详细使用指南！
+
 ## mlpy
 
 mlpy是一个开源的ML库。只是它最近的一次更新，已经是2012年的事情了。

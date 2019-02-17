@@ -236,3 +236,10 @@ https://mp.weixin.qq.com/s/MZ8qSQzXqZQPQa97BKitHA
 
 深入理解注意力机制
 
+https://mp.weixin.qq.com/s/s8sKoTzqyf-_-N0TSLnPow
+
+不用看数学公式！图解谷歌神经机器翻译核心部分：注意力机制
+
+https://mp.weixin.qq.com/s/TM5poGwSGi5C9szO13GYxg
+
+一文解读NLP中的注意力机制

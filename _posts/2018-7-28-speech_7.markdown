@@ -344,40 +344,18 @@ https://mp.weixin.qq.com/s/F2Vyx3LXKcz2C2J5KHGVLg
 
 基于深度学习的多模态情绪识别与疲劳驾驶检测
 
-# 知识图谱参考资源
+https://mp.weixin.qq.com/s/i793SOBdI4GyrfG_5kb3lg
 
-https://mp.weixin.qq.com/s/d4cEHHo6OhlWEIXTFIdTuA
+鲁汶大学提出可端到端学习的车道线检测算法
 
-知识图谱相关实体搜索
+https://mp.weixin.qq.com/s/Uq2Acgo8eSD321AzdiPeJw
 
-https://mp.weixin.qq.com/s/7LFkOzkD1-PsNNAr5DAETg
+用霍夫变换&SCNN码一个车道追踪器
 
-TechKG：一个面向中文学术领域的大型知识图谱
+https://mp.weixin.qq.com/s/bSf1BGcKdFcIcfm7CxH4-w
 
-https://mp.weixin.qq.com/s/QNTJngwEDtxufEpIGTngCw
+不用GPS和地图，世界上最大的“蚂蚁”机器人诞生了
 
-事理图谱，下一代知识图谱
+https://mp.weixin.qq.com/s/vKkjYdf6Ast7wWcW9oIEuA
 
-https://mp.weixin.qq.com/s/0bTmzKiC7WDbLRcxfAAGqw
-
-提取计数量词丰富知识库
-
-https://mp.weixin.qq.com/s/9MToVjepCZuTgXz967ugjg
-
-如何自动地向知识图谱中添加属性？
-
-https://mp.weixin.qq.com/s/a3mGbLMfTxYuMcraW0JWdQ
-
-知识图谱最新论文清单，高阶炼丹师为你逐一解读
-
-https://mp.weixin.qq.com/s/p6SDazuTjgG1ERl5ku2-VQ
-
-如何构建多快好省的“知识图谱即服务”？
-
-https://mp.weixin.qq.com/s/fVABfj2W8JpDH2p8hWm8wA
-
-区分概念和实例的知识图谱嵌入方法
-
-https://mp.weixin.qq.com/s/gxNxROI8o3EEhguKx8Hrfg
-
-AMUSE: 基于RDF数据的多语言问答语义解析方法
+88美元的自动驾驶“自制原子弹”，最著名黑客详解panda系统

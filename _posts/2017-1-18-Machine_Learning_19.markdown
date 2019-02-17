@@ -68,6 +68,10 @@ http://blog.csdn.net/guolindonggld/article/details/56966200
 
 机器翻译评价指标之BLEU
 
+https://mp.weixin.qq.com/s/niVOM-lnzI2-Tgxn8Qterw
+
+NLP中评价文本输出都有哪些方法？为什么要小心使用BLEU？
+
 http://blog.csdn.net/han_xiaoyang/article/details/10118517
 
 机器翻译评估标准介绍和计算方法

@@ -102,6 +102,10 @@ https://zhuanlan.zhihu.com/p/32928645
 
 计算机视觉中的注意力机制
 
+https://zhuanlan.zhihu.com/p/56501461
+
+计算机视觉中的注意力机制
+
 https://zhuanlan.zhihu.com/p/33078323
 
 数字串识别：基于位置的硬性注意力机制
@@ -129,6 +133,14 @@ https://mp.weixin.qq.com/s/-gAISWjSiG6ccPuOPAEg3A
 https://mp.weixin.qq.com/s/Qs6tm50YvzHaJv2rh60WMw
 
 撩一发深度文本分类之RNN via Attention
+
+https://mp.weixin.qq.com/s/MMIZGHTKM5FrvNE6ucQRYQ
+
+33页最新《自然语言处理中神经注意力机制综述》论文
+
+https://mp.weixin.qq.com/s/Q0Ft5bWTuiZUIQSTk7X6ZQ
+
+图解神经机器翻译中的注意力机制
 
 # AutoDL
 
@@ -168,7 +180,11 @@ AutoML又一利器来了，谷歌宣布开源AdaNet
 
 https://mp.weixin.qq.com/s/o3WqVIxlsukt3_JcY-10LA
 
-AdaNet简介：快速灵活的 AutoML，提供学习保证
+AdaNet简介：快速灵活的AutoML，提供学习保证
+
+https://mp.weixin.qq.com/s/2ehni5O__XnPaLjBRmAiIQ
+
+利用AdaNet将多个TensorFlow Hub模块组合成一个集成网络
 
 https://mp.weixin.qq.com/s/rllQLPPYxxLCK9-dgOjLDg
 
@@ -351,3 +367,7 @@ DeepMind新研究连接听与看，实现“听声辨位”的多模态学习
 https://mp.weixin.qq.com/s/1qhcyTXttgKWlw-Oy556Tw
 
 TPAMI2019最新《多模态机器学习综述》
+
+https://mp.weixin.qq.com/s/BczgUuh2FIvP5MG9xh87wQ
+
+多模态多任务学习新论文

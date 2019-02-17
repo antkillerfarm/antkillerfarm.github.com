@@ -6,7 +6,21 @@ category: AI
 
 # TensorFlow
 
-## 细节（续）
+## 细节
+
+执行`session.run(out)`，会在终端打印out的值，但执行`res = session.run(out)`则不会。
+
+此外，`session.run`可以接受list作为参数。返回值也是一个list，分别对应输入list的每个元素的计算结果。
+
+----
+
+tensorflow的程序中,在main函数下,都是使用tf.app.run()来启动。查看源码可知,该函数是用来处理flag解析，然后执行main函数。
+
+https://blog.csdn.net/lujiandong1/article/details/53262612
+
+tensorflow中的tf.app.run()
+
+----
 
 TF提供了一套专门的IO函数：tf.gfile。主要优点在于：对于写文件来说，open操作直到真的需要写的时候才执行。
 
@@ -407,27 +421,3 @@ https://mp.weixin.qq.com/s/QU5NjksCEswjHnkY7WXWXQ
 https://mp.weixin.qq.com/s/pBR4wMITrigbSVAvn0d6vQ
 
 利用TensorFlow实现上下文的Chat-bots
-
-https://mp.weixin.qq.com/s/ww0nd07DaK4eVcexqebn3g
-
-基于TensorFlow卷积神经网络的短期股票预测
-
-https://mp.weixin.qq.com/s/n_zU7Rg7v6PwjZWEF88fNA
-
-如何使用TensorFlow实现音频分类任务
-
-https://mp.weixin.qq.com/s/UbBJYOmWtUXPFliRMyzDrg
-
-最新TensorFlow专业深度学习实战书籍和代码《Pro Deep Learning with TensorFlow》
-
-https://mp.weixin.qq.com/s/skl5w2cJaO3mYtr656lb9Q
-
-见人识面，TensorFlow实现人脸性别/年龄识别
-
-https://mp.weixin.qq.com/s/g2xMUmhxUTuQugR2PWUJtw
-
-组成TensorFlow核心的六篇论文
-
-https://mp.weixin.qq.com/s/n4nEtyRc5G44kj3zmHpd5g
-
-TensorFlow实战——图像分类神经网络模型

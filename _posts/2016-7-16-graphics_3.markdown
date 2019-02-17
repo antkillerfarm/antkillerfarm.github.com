@@ -137,6 +137,12 @@ $$L_i=G_i-PyrUp(G_{i+1})=G_i-Up(G_{i+1})\otimes H_{5\times 5}$$
 
 >注：严格来说，这样的金字塔应该叫做高斯差分金字塔，只不过高斯差分恰好是拉普拉斯算子的近似解，故名。
 
+参考：
+
+https://mp.weixin.qq.com/s/d17B0KaevV1LJDNgxgPLhg
+
+深度优化局部拉普拉斯金字塔滤波器
+
 ## Steerable金字塔
 
 将拉普拉斯金字塔中的高斯滤波函数，换成Steerable滤波函数即可。

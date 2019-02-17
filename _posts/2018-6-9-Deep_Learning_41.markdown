@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十一）——迁移学习, Mask R-CNN
+title:  深度学习（四十一）——迁移学习, Mask R-CNN, 深度推荐系统进阶
 category: DL 
 ---
 
@@ -273,6 +273,10 @@ https://zhuanlan.zhihu.com/p/53359505
 
 基于label迁移知识
 
+https://mp.weixin.qq.com/s/sVukyFF18IEjUOnoj09eUQ
+
+39页《迁移学习自然语言生成》
+
 # Mask R-CNN
 
 Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的NN。它是何恺明2017年的新作。
@@ -354,3 +358,17 @@ https://mp.weixin.qq.com/s/G_2tuZlaxX5w-2c1DO8FwQ
 https://mp.weixin.qq.com/s/Ug4ZEQWVF5UjhqWw4Kwb8A
 
 Mask R-CNN抢车位，快人一步！
+
+# 深度推荐系统进阶
+
+https://mp.weixin.qq.com/s/CYW-WMl94FT2-fqsxShNDw
+
+读者喜欢看什么文章？腾讯微信融合时间过程与内容特征寻找答案
+
+https://mp.weixin.qq.com/s/4k106lCBns-iEg3gy5mcbg
+
+WSDM 2019教程—李航、何向南等，深度学习匹配在搜索和推荐中的应用
+
+https://mp.weixin.qq.com/s/SYFShtmBIgEW8_cEYec0kw
+
+清华张敏教授：个性化推荐研究进展（可解释性、鲁棒性和公平性）

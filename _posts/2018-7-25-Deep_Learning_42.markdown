@@ -358,6 +358,18 @@ https://zhuanlan.zhihu.com/p/55983565
 
 中科院和京东AI研究院提出：改进SRN人脸检测算法，目前业界最强！
 
+https://mp.weixin.qq.com/s/KY11jsedOa0HHIhET83V3g
+
+目前最强性能的人脸检测算法Improved SRN
+
+https://mp.weixin.qq.com/s/Chw_gLxQHdfe0hFJGMk-3A
+
+日本东北大学改进单阶段人脸检测—兼具速度与精度优势
+
+https://mp.weixin.qq.com/s/E9Esoe4VHvMdJNTbxF-sXA
+
+ShapeNet:超实时人脸特征点检测与形状拟合开源库
+
 # Spatial Transformer Networks
 
 论文：

@@ -318,3 +318,11 @@ https://mp.weixin.qq.com/s/k0l2uoik-Z9aA9zax7AoZg
 https://zhuanlan.zhihu.com/p/55781614
 
 AlphaStar背后的机器学习原理
+httphttps://zhuanlan.zhihu.com/p/56043646管饭s://zhuanlan.zhihu.com/p/56043646
+https://zhuanlan.zhihu.com/p/56043646
+
+AlphaStar之IMPALA
+
+https://mp.weixin.qq.com/s/XljE82cJZfFOgf2KrXWSKA
+
+DeepMind首个战胜星际2职业玩家的AI为何无敌？新视角揭秘AI里程碑

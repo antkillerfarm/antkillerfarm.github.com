@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十六）——OCR, 元学习, BERT
+title:  深度学习（四十六）——OCR, 深度哈希, BERT
 category: DL 
 ---
 
@@ -31,6 +31,16 @@ linux下可以使用tesseract作为OCR工具。安装方法：
 使用方法：
 
 `tesseract ./111.png 1 -l chi_sim+eng`
+
+## 车牌识别
+
+https://github.com/liuruoze/EasyPR
+
+一个开源的中文车牌识别系统。
+
+https://blog.csdn.net/Relocy/article/details/78629441
+
+HyperLPR：一个基于深度学习的支持多种车牌的中文开源车牌识别框架
 
 ## CRNN
 
@@ -202,111 +212,15 @@ https://mp.weixin.qq.com/s/_znXs8pkfgmWsb26HIfhLQ
 
 复杂环境文字识别技术研究及应用进展
 
-# 元学习
+https://mp.weixin.qq.com/s/lV2yjhvnRLDfNbZXOSjofg
 
-人工智能的历史显示了明确的进展方向：
+ctpn：图像文字检测方法
 
-第一代：**良好的老式人工智能**
+https://mp.weixin.qq.com/s/JA6ey6N3Zho92L6jh_bRkg
 
->手工预测   
->什么都不学
+EAST场景文字检测模型使用
 
-第二代：**浅学习**
-
->手工功能   
->学习预测
-
-第三代：**深度学习**
-
->手工算法（优化器，目标，架构......）   
->端到端地学习功能和预测
-
-第四代：**元学习**
-
->无手工   
->端到端学习算法和功能以及预测
-
-## 参考
-
-https://mp.weixin.qq.com/s/KKK3VEpwL90g6Aro8qtXxQ
-
-学习如何学习的算法：简述元学习研究方向现状
-
-https://mp.weixin.qq.com/s/KtO3OTZ-bZ6m0ZSI6jTyjw
-
-OpenAI提出Reptile：可扩展的元学习算法
-
-https://mp.weixin.qq.com/s/T4GiL9vW7ALOzWloE_QQBA
-
-OpenAI开发可拓展元学习算法Reptile，能快速学习
-
-https://mp.weixin.qq.com/s/MWcoGsQJg1GBbSqzyPD9uQ
-
-基于梯度的元学习算法，可高效适应非平稳环境
-
-https://zhuanlan.zhihu.com/p/35695477
-
-基于Meta Learning在动态竞争环境中实现策略自适应
-
-https://mp.weixin.qq.com/s/AhadWUjtgsFmb8uTylTvqg
-
-OpenAI提出新型元学习方法EPG，调整损失函数实现新任务上的快速训练
-
-https://mp.weixin.qq.com/s/dmRdp2oMn0vGukclJSVZDg
-
-Uber AI论文：利用反向传播训练可塑神经网络，生物启发的元学习范式
-
-https://mp.weixin.qq.com/s/Cc4EHc6ei-PtZWhewM10xw
-
-学习如何学习的算法：简述元学习研究方向现状
-
-https://mp.weixin.qq.com/s/4f6-gXovdrYk7240TrUwJg
-
-谷歌大脑：基于元学习的无监督学习更新规则
-
-https://mp.weixin.qq.com/s/cAbMB-DB9vu2ua8t5J28ww
-
-从零开始，了解元学习
-
-https://mp.weixin.qq.com/s/Q36vpS1HF2IfeCsFLh656A
-
-基于元强化学习的神经科学新理论
-
-https://mp.weixin.qq.com/s/XtzvHOk7CdXRBy02kUmgsg
-
-近期爆火的Meta Learning，遗传算法与深度学习的火花，再不了解你就out了
-
-https://mp.weixin.qq.com/s/KvgYyuyICueNQPo_S27fEA
-
-BAIR展示新型模仿学习，学会像人那样执行任务
-
-https://zhuanlan.zhihu.com/p/41223529
-
-最前沿:Meta RL论文解读
-
-https://zhuanlan.zhihu.com/p/40600485
-
-最前沿：Meta Learning前沿进展扫描
-
-https://zhuanlan.zhihu.com/p/28639662
-
-百家争鸣的Meta Learning/Learning to learn
-
-https://zhuanlan.zhihu.com/p/45845001
-
-最前沿：用模仿学习来学习增强学习
-
-https://zhuanlan.zhihu.com/p/46059552
-
-Meta Learning单排小教学
-
-https://zhuanlan.zhihu.com/p/46131981
-
-最前沿：Meta Learning在少样本文本翻译上的应用
-
-https://zhuanlan.zhihu.com/p/46339823
-
-谈谈无监督Meta Learning的研究
+# 元学习+
 
 https://zhuanlan.zhihu.com/p/46340382
 
@@ -327,6 +241,48 @@ https://mp.weixin.qq.com/s/wl8j7dLu3OxPV7MNaO2-7Q
 https://mp.weixin.qq.com/s/ftiGPBhAx5iqlW_Ltg1yhg
 
 《元监督视觉学习》132页伯克利博士论文带你回顾元监督视觉应用最新发展脉络
+
+https://mp.weixin.qq.com/s/K7sLM-LMcF6-gQrV1ddrDw
+
+让智能体主动交互，DeepMind提出用元强化学习实现因果推理
+
+# 深度哈希
+
+https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg
+
+深度离散哈希算法，可用于图像检索！
+
+https://mp.weixin.qq.com/s/XUYJub0559wwQ9H1wA_SAg
+
+机器学习时代的哈希算法，将如何更高效地索引数据
+
+https://mp.weixin.qq.com/s/YVIvdMznb3oatIXqD5a5_A
+
+陈天奇等人提出AutoTVM：让AI来编译优化AI系统底层算子
+
+https://mp.weixin.qq.com/s/vFBlFAQLvDZP7IvwKoaPhA
+
+无问西东，只问哈希
+
+https://mp.weixin.qq.com/s/XAxuLg2i3q5_uKDo1wU_rA
+
+从哈希到卷积神经网络：高精度&低功耗
+
+https://mp.weixin.qq.com/s/i8iQtCC7ahXLY1a1wOacsA
+
+Science：最新发现哈希可能是大脑的通用计算原理
+
+https://mp.weixin.qq.com/s/ZOVWXNym5yHoo-MmpxXo0A
+
+自监督对抗哈希SSAH：当前最佳的跨模态检索框架
+
+https://mp.weixin.qq.com/s/VldzlYg5AfDRho8bsROL_g
+
+HashGAN:基于注意力机制的深度对抗哈希模型提升跨模态检索效果
+
+https://mp.weixin.qq.com/s/3Z2Zc8zTq2uiPyw7ZuuZfw
+
+解密美图大规模多媒体数据检索技术DeepHash
 
 # BERT
 
@@ -423,3 +379,35 @@ https://mp.weixin.qq.com/s/IN4YfoZnlBozwEFdhSvLZg
 https://mp.weixin.qq.com/s/nIT3GIU0dUIYyGChxsiOWw
 
 Google BERT应用之《红楼梦》对话人物提取
+
+https://mp.weixin.qq.com/s/dcp_ANYijRmicMYX7OpJmA
+
+如何用最强模型BERT做NLP迁移学习？
+
+https://mp.weixin.qq.com/s/DR4SkgOfUT7KYiaXm5NynQ
+
+跨语言版BERT：Facebook提出跨语言预训练模型XLM
+
+https://mp.weixin.qq.com/s/epjjHmlmMFhWtRO_cCUITA
+
+用BERT进行多标签文本分类
+
+https://mp.weixin.qq.com/s/Wk6gvOS_Qnud6ib1esMFXA
+
+加入Transformer-XL，这个PyTorch包能调用各种NLP预训练模型
+
+https://mp.weixin.qq.com/s/E7FLbXYvE9irSpJ9Cdx5tg
+
+GLUE排行榜上全面超越BERT的模型近日公布了！
+
+https://mp.weixin.qq.com/s/GqqU3Ixht1BzMnQeRYQEqQ
+
+谷歌NLP深度学习模型BERT特征的可解释性表现怎么样？
+
+https://mp.weixin.qq.com/s/ZitIqX-9MNk6L1mAC_AwBQ
+
+OpenAI发布参数量高达15亿的通用语言模型GPT-2
+
+https://mp.weixin.qq.com/s/7u_W4LTYqQBmz3geux5QNQ
+
+对标Bert？刷屏的GPT 2.0意味着什么

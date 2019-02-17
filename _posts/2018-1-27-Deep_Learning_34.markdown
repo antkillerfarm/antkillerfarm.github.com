@@ -186,6 +186,10 @@ https://mp.weixin.qq.com/s/KjDwumX8FViKC4FNWdml_w
 
 如何给词嵌入模型选择最优维度
 
+https://mp.weixin.qq.com/s/nAWiNAgA_Ste8rzcqaH8YA
+
+情感分析词嵌入预处理细粒度实验综述
+
 # 深度时间序列
 
 https://mp.weixin.qq.com/s/cChJO6YrE_XAgeInS7J1Vw
@@ -273,6 +277,10 @@ https://mp.weixin.qq.com/s/zWoQCKbZNz2td3cZxEsqKQ
 https://mp.weixin.qq.com/s/eJkkbGBYxWlngkT5gjjW7g
 
 效果惊人：上古卷轴III等经典游戏也能使用超分辨率GAN重制了
+
+https://mp.weixin.qq.com/s/M8gCrQDtjT1lszsxV2QQKg
+
+FSRNet：端到端深度可训练人脸超分辨网络
 
 # CNN进阶
 

@@ -265,3 +265,7 @@ https://mp.weixin.qq.com/s/VzN02XW3yN2peqTD6q-4Cg
 https://zhuanlan.zhihu.com/gpml2016
 
 高斯世界下的Machine Learning
+
+https://mp.weixin.qq.com/s/FJAgpbBgRA2Zk3BuiEwjdw
+
+看得见的高斯过程：这是一份直观的入门解读

@@ -34,6 +34,10 @@ https://mp.weixin.qq.com/s/1vswG1chkXRJAPnpeUmWLA
 
 为了修复打码女神脸，他们提出二阶段生成对抗网络EdgeConnect
 
+https://mp.weixin.qq.com/s/FnLm2bF-1uipBTsPS-q7zA
+
+Deep Image Prior——图像恢复入门
+
 ## 参考
 
 https://mp.weixin.qq.com/s/YbRo7TJ3j4dloSmKX40uAA
@@ -71,6 +75,10 @@ https://zhuanlan.zhihu.com/p/34042498
 https://mp.weixin.qq.com/s/gvPTNtrd5Du9Oablp3jZYw
 
 如何使用DeepFake实现视频换脸
+
+https://mp.weixin.qq.com/s/Lzv3wQR2DOrw5AmyCXWvsw
+
+拯救北京卫视！如何用Deepfakes把“吴秀波”的脸换掉
 
 https://mp.weixin.qq.com/s/BTzV7ulweqFQokdQ-AX2Rg
 
@@ -276,6 +284,10 @@ https://mp.weixin.qq.com/s/y9h6xkK9Keq4UrdpGJS-4Q
 
 这些假脸实在太逼真了！英伟达造出新一代GAN，生成壁纸级高清大图毫无破绽
 
+https://mp.weixin.qq.com/s/V4PN0L42iisRxQ6y4Hc8fw
+
+英伟达“AI假脸王”开源：新一代GAN攻破几乎所有人脸识别系统
+
 https://mp.weixin.qq.com/s/-3e5xhbz01FerZp8DcRV5g
 
 谷歌小姐姐搞出魔法画板：你随便画，补不齐算AI输
@@ -303,6 +315,10 @@ https://mp.weixin.qq.com/s/gTD5H_Vy2b-7fuvAYxVsnQ
 https://mp.weixin.qq.com/s/MePEEuwH-e5c2hwiEXo2wg
 
 去噪、去水印、超分辨率，这款不用学习的神经网络无所不能
+
+https://mp.weixin.qq.com/s/Pmr2yPZ3Mi32W5JuJCco_A
+
+用英伟达StyleGAN生成老婆吧，他生成了一百多只明日香
 
 # 模型压缩与加速
 

@@ -114,9 +114,9 @@ http://blog.huajh7.com/2013/03/06/variational-bayes/
 
 变分贝叶斯算法理解与推导
 
-https://www.zhihu.com/question/267166775
+https://mp.weixin.qq.com/s/np9OuEMQNtKMC7P1KPzTmg
 
-真空中有两个位置固定的引力源(恒星)，一个质量较小的小球(行星)有哪些典型的稳定绕转方式?
+通往物理学世界的地图
 
 http://www.matrix67.com/blog/archives/6750
 
@@ -202,10 +202,6 @@ https://mp.weixin.qq.com/s/COIYp4Ao9fBPnaUZvhCxkg
 
 表情包的画质是如何越传越差甚至还变绿的？
 
-https://mp.weixin.qq.com/s/nbA86PutvWWcA7t89XWhfA
-
-三体问题
-
 https://mp.weixin.qq.com/s/EJj7gonRv2607QnYTZWKqQ
 
 笛卡尔！！你……你……你这样泡妞真的好吗？！
@@ -228,7 +224,7 @@ https://zhuanlan.zhihu.com/p/50524005
 
 https://mp.weixin.qq.com/s/eq4MllJta5NmaLARPpvang
 
-公交车总迟到？你大概掉进了“等待时间悖论
+公交车总迟到？你大概掉进了“等待时间悖论”
 
 http://www.moe.gov.cn/s78/A16/A16_ztzl/ztzl_kxnt/kxnt_sgxz/201512/t20151218_225337.html
 
@@ -337,6 +333,10 @@ https://mp.weixin.qq.com/s/wsa-HxJRCzhBF8E6yrLCQg
 https://mp.weixin.qq.com/s/c7Sry6FaGv3ZgkKLekxc2g
 
 用Python画中国地图（下）
+
+https://mp.weixin.qq.com/s/torRtPSVRnULRTbv4dB1sA
+
+大规模地理数据可视化入门：Deck.gl和H3
 
 ## howmuch.net
 

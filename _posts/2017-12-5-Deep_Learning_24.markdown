@@ -102,6 +102,10 @@ https://mp.weixin.qq.com/s/zMCBQ2D21HoDcDgDolmGMA
 
 上海交大：基于近似随机Dropout的LSTM训练加速
 
+https://mp.weixin.qq.com/s/wPYd2jLUPzlPwIZkb_wSbA
+
+深度递归LSTM-LRP非线性时变多因子模型
+
 # L2 Normalization
 
 L2 Normalization本身并不复杂，然而多数资料都只提到1维的L2 Normalization的计算公式：
