@@ -220,6 +220,10 @@ https://www.openu.ac.il/home/hassner/projects/cnn_agegender/
 
 Age and Gender Classification using Convolutional Neural Networks
 
+https://mp.weixin.qq.com/s/0hVPateb108B1KpVpYXK0A
+
+人工智能：长相越“娘”颜值越高
+
 ## 活体检测
 
 https://mp.weixin.qq.com/s/zOnmKSnQctnyx7pKXX-tpQ

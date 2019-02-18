@@ -302,7 +302,21 @@ https://github.com/google-research/bert/blob/master/multilingual.md
 
 https://github.com/macanv/BERT-BiLSMT-CRF-NER
 
-参考：
+## GPT 2.0
+
+https://mp.weixin.qq.com/s/E7FLbXYvE9irSpJ9Cdx5tg
+
+GLUE排行榜上全面超越BERT的模型近日公布了
+
+https://mp.weixin.qq.com/s/ZitIqX-9MNk6L1mAC_AwBQ
+
+OpenAI发布参数量高达15亿的通用语言模型GPT-2
+
+https://mp.weixin.qq.com/s/7u_W4LTYqQBmz3geux5QNQ
+
+对标Bert？刷屏的GPT 2.0意味着什么
+
+## 参考
 
 https://www.zhihu.com/question/298203515
 
@@ -394,20 +408,12 @@ https://mp.weixin.qq.com/s/epjjHmlmMFhWtRO_cCUITA
 
 https://mp.weixin.qq.com/s/Wk6gvOS_Qnud6ib1esMFXA
 
-加入Transformer-XL，这个PyTorch包能调用各种NLP预训练模型
-
-https://mp.weixin.qq.com/s/E7FLbXYvE9irSpJ9Cdx5tg
-
-GLUE排行榜上全面超越BERT的模型近日公布了！
+加入Transformer-XL，这个PyTorch包能调用各种NLP预训练模型！
 
 https://mp.weixin.qq.com/s/GqqU3Ixht1BzMnQeRYQEqQ
 
 谷歌NLP深度学习模型BERT特征的可解释性表现怎么样？
 
-https://mp.weixin.qq.com/s/ZitIqX-9MNk6L1mAC_AwBQ
+https://mp.weixin.qq.com/s/2f91Ksj19rk_emoFpEmPfA
 
-OpenAI发布参数量高达15亿的通用语言模型GPT-2
-
-https://mp.weixin.qq.com/s/7u_W4LTYqQBmz3geux5QNQ
-
-对标Bert？刷屏的GPT 2.0意味着什么
+从BERT看大规模数据的无监督利用

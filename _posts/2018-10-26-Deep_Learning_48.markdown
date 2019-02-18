@@ -222,6 +222,10 @@ https://zhuanlan.zhihu.com/p/56887843
 
 MIT和Google等提出：新全景分割算法DeeperLab
 
+https://mp.weixin.qq.com/s/zHZO1pmY8PCoI9vkDOaUgw
+
+CCNet--于"阡陌交通"处超越恺明Non-local
+
 # 问答系统
 
 GA-Reader

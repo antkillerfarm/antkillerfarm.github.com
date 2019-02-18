@@ -337,3 +337,7 @@ https://mp.weixin.qq.com/s/9yfTO2jHz69-k1MsUGIM0Q
 https://mp.weixin.qq.com/s/z87Wp3yutq1l5bYfJS2YIA
 
 谷歌新研究用深度学习合成运动模糊效果，手抖也能拍出摄影师级照片
+
+https://mp.weixin.qq.com/s/B5XNmFlSnjEh2xAXB42pHQ
+
+超十亿样本炼就的CNN助力图像质量增强，Adobe推出新功能“增强细节”

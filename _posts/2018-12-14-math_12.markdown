@@ -365,3 +365,7 @@ https://mp.weixin.qq.com/s/6x5Wmpy4Im0x3Ddua9rvFw
 https://mp.weixin.qq.com/s/wD1BwpcVbzAJQqiWr1JueQ
 
 用Scikit-Learn构建K-近邻算法，分类MNIST数据集
+
+https://mp.weixin.qq.com/s/fb9LyEdMsfUBR6ctc1gdXA
+
+Python模拟太阳-地球-月亮运动模型
