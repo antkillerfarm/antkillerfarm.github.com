@@ -271,7 +271,15 @@ ICLR2019少样本学习新思路：利用转导(Transductive)和标签传播
 
 https://zhuanlan.zhihu.com/p/53359505
 
-基于label迁移知识
+Deep Domain Adaptation论文集(一)：基于label迁移知识
+
+https://zhuanlan.zhihu.com/p/55758680
+
+Deep Domain Adaptation论文集(二)：基于统计差异
+
+https://zhuanlan.zhihu.com/p/56076381
+
+Deep Domain Adaptation论文集(三)：基于深度网络结构差异&几何差异
 
 https://mp.weixin.qq.com/s/sVukyFF18IEjUOnoj09eUQ
 
@@ -372,3 +380,7 @@ WSDM 2019教程—李航、何向南等，深度学习匹配在搜索和推荐�
 https://mp.weixin.qq.com/s/SYFShtmBIgEW8_cEYec0kw
 
 清华张敏教授：个性化推荐研究进展（可解释性、鲁棒性和公平性）
+
+https://zhuanlan.zhihu.com/p/57056588
+
+一图胜千言: 解读阿里的Deep Image CTR Model

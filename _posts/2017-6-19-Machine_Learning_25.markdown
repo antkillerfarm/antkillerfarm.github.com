@@ -335,3 +335,7 @@ https://mp.weixin.qq.com/s/zcuTY9oWKhAQ8z0rx4nY4A
 https://mp.weixin.qq.com/s/gjVLbH_S0t7jcjCYhpsTgw
 
 基于深度学习的人脑视觉神经信息编解码研究进展及挑战
+
+https://mp.weixin.qq.com/s/XNKEOlJrTVH2zsu8pdY4gA
+
+从三大案例，看如何用CV模型解决非视觉问题

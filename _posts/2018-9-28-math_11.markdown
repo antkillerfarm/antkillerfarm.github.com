@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（十一）——高阶统计, 勾股定理, PID算法
+title:  数学狂想曲（十一）——高阶统计, 勾股定理, PID算法, 医药
 category: math 
 ---
 
@@ -185,3 +185,39 @@ https://blog.csdn.net/qq_25005909/article/details/77941243
 https://blog.csdn.net/nemol1990/article/details/45131603
 
 四轴PID讲解
+
+# 医药
+
+头孢菌素化合物最初是于1948年，由意大利科学家Giuseppe Brotzu从萨丁岛排水沟中的顶头孢提炼出来。他发现这些顶头孢分泌出一些物质，可以有效抵抗引致伤寒的伤寒杆菌。
+
+>Giuseppe Brotzu，1895～1976，意大利药理学家和政治家。University of Cagliari教授。当过President of Sardinia和Mayor of Cagliari。
+
+----
+
+顾方舟，我国著名医学科学家、病毒学专家，中国医学科学院原院长，北京协和医学院原校长，北京协和医学院一级教授。**“糖丸”之父。**
+
+https://www.thepaper.cn/newsDetail_forward_2811224
+
+病毒学家顾方舟：一生只为一件事
+
+----
+
+https://new.qq.com/omn/20190202/20190202B124CL.html
+
+布洛芬发现者Stewart Adams去世，是他拯救了百亿人的头痛牙痛姨妈痛
+
+----
+
+https://zhuanlan.zhihu.com/p/23294144
+
+“有机合成之父”陪跑131次诺贝尔奖，他将科学做成了艺术
+
+>Robert Burns Woodward，1917～1979，美国化学家。MIT博士（1937年），哈佛大学教授。诺贝尔化学奖获得者（1965年）。合成了维生素B12。
+
+----
+
+https://mp.weixin.qq.com/s/j3zWCsGzWXIwM4a7n-lOjw
+
+“疟疾治愈癌症”持续发酵，放弃正规治疗之前，你必须知道这些！
+
+>William Bradley Coley，1862～1936，美国外科医生。Yale本科+Harvard医学院医学学位。癌症免疫疗法之父。

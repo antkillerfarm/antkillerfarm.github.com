@@ -402,6 +402,10 @@ https://inst.eecs.berkeley.edu/~cs188/fa18/
 
 UCB CS188: Introduction to Artificial Intelligence
 
+https://sites.google.com/view/berkeley-cs294-158-sp19/home
+
+UCB CS294-158: Deep Unsupervised Learning
+
 # Machine Learning之Python篇
 
 https://mp.weixin.qq.com/s/8NI-NayCg_gZmJ6-1FZ_DA

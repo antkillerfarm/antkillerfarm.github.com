@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 高考, 流浪地球, 医药
+title: 高考, 流浪地球
 category: essay 
 ---
 
@@ -40,6 +40,36 @@ category: essay
 
 最近，电影《流浪地球》大火，我也因此看了很多天文方面的帖子，特把这些帖子归纳如下。
 
+## 轨道学
+
+最有名的当然是三体问题了。
+
+https://mp.weixin.qq.com/s/nbA86PutvWWcA7t89XWhfA
+
+三体问题
+
+https://mp.weixin.qq.com/s/aa41t7GoMl2im5uJuhc_KQ
+
+双体：有两颗恒星的星系是怎样的？
+
+https://mp.weixin.qq.com/s/L72Iwf7EZ5LbbBPRGQibdA
+
+双体：拥有两个太阳的家园
+
+https://mp.weixin.qq.com/s/HoCibMd3YurC1TeFIYm4jA
+
+双体：非环双星中的双体文明
+
+https://mp.weixin.qq.com/s/gjE_gqg14sGF8dFxNfeeWA
+
+双体：环双星系统中的地球
+
+https://www.zhihu.com/question/267166775
+
+真空中有两个位置固定的引力源(恒星)，一个质量较小的小球(行星)有哪些典型的稳定绕转方式?
+
+----
+
 https://www.zhihu.com/question/303562583/answer/564059120
 
 水星为什么没有卫星？这个答案同样可以解释——为什么卫星没有卫星？
@@ -50,7 +80,35 @@ https://www.zhihu.com/question/303562583/answer/564059120
 
 木星的轨道上存在两个与木星运行轨道及速率一致两群小行星，统称为特洛伊群，其中运行在木星“前方”的为“希腊群”，运行在木星“后方”的为“纯特洛伊群”。
 
-----
+![](/images/img2/InnerSolarSystem-en.png)
+
+上图中橙色的部分是Hilda asteroid，它实际上是一群更有意思的小行星。它们与木星间形成2:3的轨道共振。希尔达小行星的远日点可能是L3、L4、L5这三个拉格朗日点。当其连续绕太阳旋转三圈，会相继通过这三个点。
+
+![](/images/img2/Hildas01.jpg)
+
+上图是Hilda asteroid的分布图。其中左图还叠加了其他小行星群（主要是希腊群和特洛伊群）。
+
+由开普勒定律可知，公转周期越短，公转半径越小。所以可以利用这点的将Hilda asteroid从中区分开来。
+
+从上图还可以看出Hilda asteroid的公转轨道被木星引力挤压成了等边三角形。
+
+轨道共振现象还有木星和它的几个卫星：
+
+![](/images/img2/Galilean_moon_Laplace_resonance.gif)
+
+https://en.wikipedia.org/wiki/Titius–Bode_law
+
+https://en.wikipedia.org/wiki/Orbital_resonance
+
+当然，也不是所有的共振都能稳定存在，不能稳定存在的共振区也有，比如木星的Kirkwood Gaps。这个共振区的小行星都被木星清除了。
+
+参见：
+
+https://www.zhihu.com/question/47287395/answer/106715405
+
+金星每八年的运行轨迹真的是五角形吗？
+
+## 天体物理
 
 https://www.zhihu.com/question/40030083
 
@@ -70,21 +128,7 @@ https://www.atnf.csiro.au/outreach/education/senior/astrophysics/stellarevolutio
 
 The Hertzsprung-Russell Diagram
 
-----
-
-Space Engine是一款免费太空模拟程序，由俄罗斯天文学家和程序员Vladimir Romanyuk开发。有了它，你可以随意穿梭于浩瀚星尘之间，也可以驾驶一艘宇宙飞船，登陆到程序中的任何天体，尽情享受美丽的异星风情与震撼的天文奇观。
-
-官网：
-
-http://spaceengine.org/
-
-----
-
-https://mp.weixin.qq.com/s/nbA86PutvWWcA7t89XWhfA
-
-三体问题
-
-----
+## 流浪地球
 
 https://mp.weixin.qq.com/s/O8tAEBMmZ29N1fr7BGW_UQ
 
@@ -97,6 +141,10 @@ https://www.zhihu.com/question/311007231
 https://mp.weixin.qq.com/s/S_zfa_vv1wBPXU2klopMvA
 
 理科生终于哭了！《流浪地球》竟隐藏了这么多高考考点，是魔鬼吗？
+
+https://mp.weixin.qq.com/s/kt2uw6GGn1HJoJ9q2XWlLQ
+
+氧气太少、爆炸不给力，吴京白死了（及《流浪地球》其他20多处硬伤）
 
 ----
 
@@ -114,61 +162,55 @@ https://mp.weixin.qq.com/s/kFKphYDOKGDtCH7YnM_uiQ
 
 《流浪地球》不科学？刘慈欣的答案在这里
 
-----
-
-![](/images/img2/Galilean_moon_Laplace_resonance.gif)
-
-https://en.wikipedia.org/wiki/Titius–Bode_law
-
-https://en.wikipedia.org/wiki/Orbital_resonance
-
-----
-
-https://www.zhihu.com/question/267166775
-
-真空中有两个位置固定的引力源(恒星)，一个质量较小的小球(行星)有哪些典型的稳定绕转方式?
-
-----
+## 天文学史
 
 https://www.zhihu.com/question/312142122
 
 如何评价NASA宣布机遇号火星车永久失联？
 
-# 医药
+https://mp.weixin.qq.com/s/cllhuj8m3RmG_JE7QrG4Uw
 
-头孢菌素化合物最初是于1948年，由意大利科学家Giuseppe Brotzu从萨丁岛排水沟中的顶头孢提炼出来。他发现这些顶头孢分泌出一些物质，可以有效抵抗引致伤寒的伤寒杆菌。
+生的伟大，死的光荣——致敬卡西尼号土星探测器
 
->Giuseppe Brotzu，1895～1976，意大利药理学家和政治家。University of Cagliari教授。当过President of Sardinia和Mayor of Cagliari。
+https://mp.weixin.qq.com/s/ros-kBOIgTgQF2SaGc99qQ
+
+哈佛名镜的前世今生
+
+https://mp.weixin.qq.com/s/aY4gFbK_aKWcgwvr0Rk5gQ
+
+“波多黎各，波多黎各，世界最大射电望远镜，倒闭了”——让我们阻止这成为事实
+
+https://mp.weixin.qq.com/s/DKMs8sZtE_JzWaxr8o-DWA
+
+你好，冥王星
+
+https://mp.weixin.qq.com/s/sv6McqKzoqJ3snUeDvFfwg
+
+这地儿跟中国一个时区，你却从来没听说过？这个blog介绍了西澳大学和它的天文学成就。
+
+https://mp.weixin.qq.com/s/EZWl8UwhiAkIXWkWE0abUQ
+
+半个世纪的角逐：二战后的国际脉冲星搜寻竞赛
+
+https://mp.weixin.qq.com/s/tmSL5NIyjBpivtbGpbdKqQ
+
+威廉·赫歇尔：我一个德国音乐家，怎么就跑到英国当了天文学家？
+
+## 天文软件
+
+Space Engine是一款免费太空模拟程序，由俄罗斯天文学家和程序员Vladimir Romanyuk开发。有了它，你可以随意穿梭于浩瀚星尘之间，也可以驾驶一艘宇宙飞船，登陆到程序中的任何天体，尽情享受美丽的异星风情与震撼的天文奇观。
+
+官网：
+
+http://spaceengine.org/
 
 ----
 
-顾方舟，我国著名医学科学家、病毒学专家，中国医学科学院原院长，北京协和医学院原校长，北京协和医学院一级教授。**“糖丸”之父。**
+Stellarium是一款免费开源的软件，它使用OpenGL图形接口对星空进行实时渲染。软件可以真实地表现通过肉眼、双筒望远镜和小型天文望远镜所看到的天空。
 
-https://www.thepaper.cn/newsDetail_forward_2811224
+官网：
 
-病毒学家顾方舟：一生只为一件事
-
-----
-
-https://new.qq.com/omn/20190202/20190202B124CL.html
-
-布洛芬发现者Stewart Adams去世，是他拯救了百亿人的头痛牙痛姨妈痛
-
-----
-
-https://zhuanlan.zhihu.com/p/23294144
-
-“有机合成之父”陪跑131次诺贝尔奖，他将科学做成了艺术
-
->Robert Burns Woodward，1917～1979，美国化学家。MIT博士（1937年），哈佛大学教授。诺贝尔化学奖获得者（1965年）。合成了维生素B12。
-
-----
-
-https://mp.weixin.qq.com/s/j3zWCsGzWXIwM4a7n-lOjw
-
-“疟疾治愈癌症”持续发酵，放弃正规治疗之前，你必须知道这些！
-
->William Bradley Coley，1862～1936，美国外科医生。Yale本科+Harvard医学院医学学位。癌症免疫疗法之父。
+http://stellarium.org/
 
 # 世说新语
 
@@ -223,49 +265,3 @@ https://zhuanlan.zhihu.com/p/51947438
 ----
 
 ![](/images/img2/qing.jpg)
-
-----
-
-从前代王（后来汉文帝）想去当皇帝，却又害怕成为功臣集团的傀儡；宋昌对他说了：您不用有这种担忧；现在中央政府有您的侄子（朱虚侯、东牟侯）握有权柄，地方上有您的叔伯、兄弟、侄子们（齐王、楚王、淮南王、琅琊王等人）控制着广阔的地方；周勃、陈平等人哪有可能控制您呢？
-
-----
-
-防守部队的日子更不好过，因为，政府不能给他们发放津贴。一名曼斯菲尔德军队的上校，竟然将他驻守的城堡卖给了敌人，用换回来的钱发给士兵工资。后来，曼斯菲尔德还肯定了这位上校的做法，又重新给他安排了一个指挥职位。
-
-----
-
-https://mp.weixin.qq.com/s/8r0Lu0mDQ_FtgIw-oF042A
-
-富二代、两次诺贝尔奖，他是剑桥大学地下室里走出来的“基因组学之父”
-
-----
-
-https://mp.weixin.qq.com/s/cHPdmOJvvQde6DGlWBcHvw
-
-伊拉克化学博士身陷IS占领区，导师为督促其完成论文，派雇佣兵将其救出
-
-----
-
-青千：指中组部千人计划中的青年千人计划；
-
-青拔：指中组部万人计划中的青年拔尖人才；
-
-青长：指教育部长江学者奖励计划中的青年长江学者；
-
-优青：指国家自然科学基金委设立的优秀青年科学基金项目。
-
-----
-
-https://mp.weixin.qq.com/s/AUJRb7dap0neW6TZlUZa1A
-
-女版“乔布斯”覆灭记！硅谷美女CEO被曝百亿美元大骗局
-
-----
-
-![](/images/img2/tenure.jpg)
-
-----
-
-https://zhuanlan.zhihu.com/p/53237519
-
-一文读懂印尼海啸的真正原因

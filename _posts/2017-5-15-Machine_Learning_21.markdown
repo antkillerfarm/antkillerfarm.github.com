@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十一）——Loss function详解, 三门问题, 社区发现, 机器学习分类器性能指标
+title:  机器学习（二十一）——Loss function详解, Stacking, 三门问题, 社区发现, 机器学习分类器性能指标
 category: ML 
 ---
 
@@ -189,6 +189,16 @@ https://mp.weixin.qq.com/s/NY1y0N6XedmMEvfsEFcTjQ
 https://mp.weixin.qq.com/s/8KM7wUg_lnFBd0fIoczTHQ
 
 用收缩损失(Shrinkage Loss)进行深度回归跟踪
+
+# Stacking
+
+模型融合的方法除了Bagging和Boosting，还有Stacking。
+
+参考：
+
+https://mp.weixin.qq.com/s/lYj-GVNSDp26czRXbf0iNw
+
+如果你会模型融合！那么，我要和你做朋友！！
 
 # 三门问题
 

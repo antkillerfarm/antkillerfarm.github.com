@@ -114,6 +114,14 @@ https://mp.weixin.qq.com/s/dlOFM7LuOF2npDP_EaITvg
 
 效率提高50倍！谷歌提出从图像中学习世界的强化学习新方法（PlaNet）
 
+https://mp.weixin.qq.com/s/Maoy2feVWj5hpn4Ysh_47A
+
+你追踪，我逃跑：一种用于主动视觉跟踪的对抗博弈机制
+
+https://mp.weixin.qq.com/s/4w3wIyy4H0UGeqOGhNcIbA
+
+强化学习落地！京东等发布综述《深度强化学习在搜索，推荐和在线广告中的应用》
+
 # AlphaGo+
 
 https://www.ifanr.com/630602

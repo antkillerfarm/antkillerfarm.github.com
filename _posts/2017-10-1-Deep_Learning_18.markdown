@@ -264,6 +264,10 @@ https://mp.weixin.qq.com/s/DUv5c6ce-dgLOBAE4ChiQg
 
 图神经网络为何如此强大？看完这份斯坦福31页PPT就懂了！
 
+https://mp.weixin.qq.com/s/2SaBiMJzhSRw1G0giL9TAw
+
+深入理解图注意力机制
+
 # 语义分割
 
 Semantic segmentation是图像理解的基石性技术，在自动驾驶系统（具体为街景识别与理解）、无人机应用（着陆点判断）以及穿戴式设备应用中举足轻重。

@@ -190,6 +190,10 @@ https://mp.weixin.qq.com/s/nAWiNAgA_Ste8rzcqaH8YA
 
 情感分析词嵌入预处理细粒度实验综述
 
+https://mp.weixin.qq.com/s/caG7kwZfo2qpvLDbrvfpng
+
+AAAI 2019教程—361页PPT带你回顾最新词句Embedding技术和应用
+
 # 深度时间序列
 
 https://mp.weixin.qq.com/s/cChJO6YrE_XAgeInS7J1Vw
@@ -235,6 +239,10 @@ https://mp.weixin.qq.com/s/g9upS70qFOCFBMm-T5nI1A
 https://mp.weixin.qq.com/s/otwmDtiDfVVID65RQgT4Uw
 
 教你如何鉴别那些用深度学习预测股价的花哨模型？
+
+https://mp.weixin.qq.com/s/Ux7XjLHzlaGFtM1uSMu2gQ
+
+神经网络在算法交易上的应用系列——时序预测+回测
 
 # 图像超分辨率进阶
 

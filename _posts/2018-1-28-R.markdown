@@ -405,7 +405,7 @@ https://mp.weixin.qq.com/s/G-6ZcMIba-fLKRN0hgQFWg
 
 面向数据科学和AI的开发库推荐：Python、R各7个
 
-# NLP参考资源+
+# NLP参考资源
 
 https://mp.weixin.qq.com/s/QYG0l1fk35C1evM2FSHgsw
 
@@ -430,11 +430,3 @@ https://mp.weixin.qq.com/s/AqzdRoXthrUFUOqSNwgfqQ
 https://mp.weixin.qq.com/s/wxRsTkAIXSZfmJGXcWLdOA
 
 2019年了,中文分词到底该怎么做?中文分词十年方法大盘点
-
-https://mp.weixin.qq.com/s/-YmB6QSQ01EsHfXB40MMcQ
-
-Generative QA: Learning to Answer the Whole Question
-
-https://mp.weixin.qq.com/s/MJMPpiY_FQqwIv8qXTp4TQ
-
-CMU开源NLP生成句子评估工具，帮你快速分析模型产出

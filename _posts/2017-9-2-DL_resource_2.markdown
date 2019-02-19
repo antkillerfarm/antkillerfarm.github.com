@@ -314,6 +314,14 @@ https://mp.weixin.qq.com/s/c1j60gOWh99z-BXWs9qAwQ
 
 Jeff Dean等发文《Nature Medicine》，综述深度学习在医疗领域的应用
 
+https://mp.weixin.qq.com/s/bwcEzq8v72dgak6IUunagw
+
+医学图像分析最新综述：走向深度
+
+https://mp.weixin.qq.com/s/hZp6W4nVuUxe_91nhDi6lw
+
+使用Nucleus与TensorFlow进行DNA测序纠错
+
 ## 遗传算法 & 进化算法
 
 http://blog.csdn.net/u010945683/article/details/40987331
