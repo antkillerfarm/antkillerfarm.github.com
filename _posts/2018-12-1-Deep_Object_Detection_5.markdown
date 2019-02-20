@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（五）——YOLOv3, One-stage vs. Two-stage, 其它目标检测网络
+title:  深度目标检测（五）——YOLOv3, One-stage vs. Two-stage, 其它目标检测网络, 点云
 category: Deep Object Detection 
 ---
 
@@ -228,9 +228,75 @@ https://mp.weixin.qq.com/s/ZhfnZ4IwOnTQlqeB6Ilr3A
 
 CornerNet: Detecting Objects as Paired Keypoints解读
 
-# 世说新语+
+# 点云
+
+https://mp.weixin.qq.com/s/f44TkWXklGONCuXnIuTbXg
+
+无人驾驶汽车系统入门：基于VoxelNet的激光雷达点云车辆检测及ROS实现
+
+https://mp.weixin.qq.com/s/_lK-DPldCYGcicV7O0njfg
+
+上海交大卢策吾团队开源PointSIFT刷新点云语义分割记录
+
+https://zhuanlan.zhihu.com/p/41287237
+
+点云感知CVPR 2018论文总结
+
+https://mp.weixin.qq.com/s/fPj4wMtiFX55c_UjNsQnBg
+
+PointCNN全面刷新测试记录：山东大学提出通用点云卷积框架
+
+http://mp.weixin.qq.com/s/5ozeLeF6IyKTOqAxYEdaog
+
+山东大学提出PointCNN：让CNN更好地处理不规则和无序的点云数据
+
+https://mp.weixin.qq.com/s/QHxuYWb39BktuTomiwG2rg
+
+点云配准国内外研究现状
+
+# 世说新语
 
 ## 2019.1（续）
+
+如果去过创新区或工业园区，就会逐渐了解到这些园区是否会带来真正的创新。很多时候，这些项目只是为有利可图的房地产交易或其他目的提供资金。
+
+----
+
+维谢格拉德集团或称维谢格拉德集团4国是由中欧的匈牙利、波兰、捷克、斯洛伐克四国组成的一个跨国组织。
+
+----
+
+https://www.fmprc.gov.cn/ce/cepl/chn/hwly/t754262.htm
+
+伟大的国王卡齐米日三世
+
+----
+
+https://mp.weixin.qq.com/s/iCbxGPZNOO-o0GT23BHeAw
+
+博士后x求职记
+
+----
+
+古典猪瘟于1810年最早爆发于美国，是新大陆出现的猪类病毒性疾病。其在1820年代传入欧洲，相继在法国、德国爆发，一路传到了欧亚大陆的东端。虽然此后一百年，人类开发出了针对这种猪瘟的血清，但古典猪瘟仍然没有被完全消灭，至今仍时有患病猪出现。
+
+----
+
+https://www.chongqing.cn.emb-japan.go.jp/itpr_zh/00_000376.html
+
+重庆轻轨诞生物语
+
+----
+
+https://www.zhihu.com/question/57701136
+
+北大的戴威，为何输给了三本的胡玮炜？
+
+----
+
+![](/images/img2/bio_PhD.jpg)
+
+----
 
 ![](/images/img2/U.jpg)
 
@@ -239,41 +305,3 @@ CornerNet: Detecting Objects as Paired Keypoints解读
 https://www.zhihu.com/question/26946942
 
 天然铀的放射性类型是什么？近距离接触对人有危害吗？
-
-## 2019.2
-
-国外的ai和国内的差距？
-
-有github的话，半年；没有github的话，十年。
-
-----
-
-https://www.zhihu.com/question/60253584
-
-有哪些科幻作品中设定的事件发生时间已经过去了？
-
-----
-
-https://mp.weixin.qq.com/s/jHswcZDCjBH6qp46W8Vc4g
-
-漫画：为什么新疆永远不包邮？
-
-----
-
-![](/images/img2/l_hires.jpg)
-
-原图地址：
-
-http://www.lenna.org/full/l_hires.jpg
-
-----
-
-https://mp.weixin.qq.com/s/-CF69Soq9Bdw-Wsffyv9Hw
-
-这40个冷知识，据说只有1%的人知道……颠覆你的认知！
-
-----
-
-http://inews.ifeng.com/51320479/news.shtml
-
-丈夫不能满足她，她在家阁楼养了个小鲜肉，这一养，就是10年...

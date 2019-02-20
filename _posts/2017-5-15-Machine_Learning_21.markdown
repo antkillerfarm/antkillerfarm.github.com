@@ -267,7 +267,9 @@ $$P=\frac{TP}{TP+FP},R=\frac{TP}{TP+FN}$$
 >注意：   
 >1.测试样本的**排序**过程非常重要。不然P-R曲线的峰值可能出现在图形的中部。   
 >2.虽然P-R曲线总体上是个下降曲线，但不是严格的单调下降曲线。在局部，会由于TP样本的增多，使P值升高。   
->3.有的评测为了使P-R曲线成为单调下降曲线，对原始定义进行了细微修改：$$P(r_0)=\max (P(r\mid r \ge r_0))$$
+>3.有的评测为了使P-R曲线成为单调下降曲线，对原始定义进行了细微修改（如下图所示）：$$P(r_0)=\max (P(r\mid r \ge r_0))$$
+
+![](/images/img2/AP.jpg)
 
 ROC（Receiver operating characteristic）曲线的纵轴是真正例率（True Positive Rate，TPR），横轴是假正例率（False Positive Rate，FPR）。其定义如下：
 

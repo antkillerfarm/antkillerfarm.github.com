@@ -98,6 +98,10 @@ https://mp.weixin.qq.com/s/7Jg-YvS3nvcPJ-zYhK96EA
 
 分享神经网络中设计loss function的一些技巧
 
+https://mp.weixin.qq.com/s/cYcztl8N9JF-XXp9xLJIxg
+
+一文道尽softmax loss及其变种
+
 ## OHEM
 
 论文：
@@ -215,6 +219,10 @@ https://github.com/sfzhang15/SFD
 S3FD: Single Shot Scale-invariant Face Detector
 
 ## 人脸年龄识别
+
+https://mp.weixin.qq.com/s/-n1R_wtNND8UNeKE-lssUQ
+
+年龄估计技术综述
 
 https://www.openu.ac.il/home/hassner/projects/cnn_agegender/
 

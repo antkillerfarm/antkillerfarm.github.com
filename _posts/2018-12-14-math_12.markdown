@@ -312,7 +312,27 @@ https://mp.weixin.qq.com/s/n4nEtyRc5G44kj3zmHpd5g
 
 TensorFlow实战——图像分类神经网络模型
 
-# Machine Learning之Python篇+
+https://mp.weixin.qq.com/s?__biz=MzU1OTMyNDcxMQ==&mid=2247484836&idx=1&sn=0bc47c662ea64aa833df9fb9c4b1d706
+
+TensorFlow模型优化工具包正式推出
+
+https://mp.weixin.qq.com/s/NMRwXqwr4VFbMUPgI8Uccg
+
+使用Google Cloud上的tf.Transform对TensorFlow管道模式进行预处理
+
+https://mp.weixin.qq.com/s/UKt1cFLcRYZQTJiZRiajwQ
+
+TensorFlow Servering C/S通信约束
+
+https://mp.weixin.qq.com/s/DpqI4AfjiygCh8dqq_Kgmw
+
+基于TensorFlow Serving的深度学习在线预估
+
+https://mp.weixin.qq.com/s/XcqVtFBY5rIn0FgPEx0eTg
+
+工业领域中的AI：BHGE通过使用TensorFlow概率编程工具包开发的基于物理的概率深度学习
+
+# Machine Learning之Python篇
 
 https://mp.weixin.qq.com/s/lfkTryraR22INdPzR0sidg
 
@@ -341,31 +361,3 @@ https://mp.weixin.qq.com/s/U4ttnC9VRO39Ic5stG9pBQ
 https://mp.weixin.qq.com/s/8idFi0W7eJx9XDti48B9WQ
 
 Python自动生成表情包
-
-https://mp.weixin.qq.com/s/NJed2PbqBU8utLq8HQxctQ
-
-一个Python自动提取内容摘要的实践
-
-https://mp.weixin.qq.com/s/yBmpdtYJ0B5iq00dKvIprw
-
-一文教你构建图书推荐系统
-
-https://mp.weixin.qq.com/s/9kHXBJAXsvEi58WwqrjvBg
-
-Python代码和贝叶斯理论告诉你，谁是最好的棒球选手
-
-https://mp.weixin.qq.com/s/NIOLuK8-ctvncglmpIOEhQ
-
-用Python入门不明觉厉的马尔可夫链蒙特卡罗
-
-https://mp.weixin.qq.com/s/6x5Wmpy4Im0x3Ddua9rvFw
-
-用python怎样识别验证码？传统方法，非DL
-
-https://mp.weixin.qq.com/s/wD1BwpcVbzAJQqiWr1JueQ
-
-用Scikit-Learn构建K-近邻算法，分类MNIST数据集
-
-https://mp.weixin.qq.com/s/fb9LyEdMsfUBR6ctc1gdXA
-
-Python模拟太阳-地球-月亮运动模型

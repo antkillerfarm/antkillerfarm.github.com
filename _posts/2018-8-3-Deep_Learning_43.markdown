@@ -320,6 +320,10 @@ https://mp.weixin.qq.com/s/Pmr2yPZ3Mi32W5JuJCco_A
 
 用英伟达StyleGAN生成老婆吧，他生成了一百多只明日香
 
+https://mp.weixin.qq.com/s/i3lNcbOblgVKUTBtwKIFwg
+
+AI秒造全球房源：StyleGAN快速生成假房子，连图说都配好了！
+
 # 模型压缩与加速
 
 https://mp.weixin.qq.com/s/nEMvoiqImd0RxrskIH7c9A

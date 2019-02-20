@@ -370,17 +370,9 @@ https://mp.weixin.qq.com/s/k3RbUz9txd09PpiLUEHVfA
 
 无人驾驶汽车系统入门：深度前馈网络，深度学习的正则化，交通信号识别
 
-https://mp.weixin.qq.com/s/_lK-DPldCYGcicV7O0njfg
-
-上海交大卢策吾团队开源PointSIFT刷新点云语义分割记录
-
 https://mp.weixin.qq.com/s/09NwPaWTDU5g6ZjSPxLgTw
 
 肖健雄：无人车量产的4大技术储备
-
-https://zhuanlan.zhihu.com/p/41287237
-
-点云感知CVPR 2018论文总结
 
 https://mp.weixin.qq.com/s/-dGXe4RuU4w8DN8ffCMiFg
 
@@ -405,10 +397,6 @@ highD：德国提出从空中角度测量车辆数据的新方法
 https://mp.weixin.qq.com/s/f25RbCRoWT9Ft6m_G3lyvQ
 
 全美225万公里道路没标识？揭开无人车的极端行驶秘籍
-
-https://mp.weixin.qq.com/s/f44TkWXklGONCuXnIuTbXg
-
-无人驾驶汽车系统入门：基于VoxelNet的激光雷达点云车辆检测及ROS实现
 
 https://mp.weixin.qq.com/s/8jZKgSeRw7k0F9JOigFJcw
 

@@ -216,6 +216,20 @@ ImagePy是国人写的一个图像处理工具。
 
 https://github.com/Image-Py/imagepy
 
+## imgaug
+
+imgaug是一个图像数据增强方面的库，可用于扩充机器学习训练时所用的图片数据集。
+
+官网：
+
+https://imgaug.readthedocs.io/en/latest/
+
+参考：
+
+https://www.cnblogs.com/vincentcheng/p/9186540.html
+
+Augmentor和imgaug——python图像数据增强库
+
 ## 参考
 
 https://mp.weixin.qq.com/s/S7gnAdekPFcyd4ni1m9phg
@@ -461,23 +475,3 @@ https://mp.weixin.qq.com/s/E0TsD57voXy9C8bIqFvt_g
 https://mp.weixin.qq.com/s/HGLBPA9Ob7-3DzSNuF39Mg
 
 用Python搭建机器学习模型预测黄金价格
-
-https://mp.weixin.qq.com/s/VmLphhs8rGabdNXtvllgdQ
-
-教你用Python实现简单监督学习算法
-
-https://mp.weixin.qq.com/s/TglQzG1iE0keEGLKZ-pGIg
-
-Python数据处理实战——使用Scikit-Learn进行多类文本分类
-
-https://mp.weixin.qq.com/s/WdYa7Q-yA-s_EO59YkYbqw
-
-7个基本机器学习算法Python实现
-
-https://mp.weixin.qq.com/s/EqLzNzzMcwq5SEyBoTsuug
-
-11种NLP文本预处理Python代码，简洁实用
-
-https://mp.weixin.qq.com/s/Ljo36772QTUDKuRrxIRmmw
-
-100多个Jupyter精选资源，有人整理在一个GitHub项目里！

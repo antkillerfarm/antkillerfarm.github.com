@@ -114,6 +114,10 @@ https://mp.weixin.qq.com/s/vgiUeUzChFzIudzNDoM1Nw
 
 搭建入门级高频交易系统
 
+https://mp.weixin.qq.com/s/HRwn7CvY6D6OsJzN9tWKQg
+
+独家揭秘！阿里大规模数据中心的性能分析
+
 # 知名数据集
 
 ## CV（续）
@@ -385,23 +389,3 @@ TensorFlow语义分割套件开源了ECCV18旷视科技BiSeNet实时分割算法
 https://mp.weixin.qq.com/s/XI1J4ardEWKP4UQ4IXZGTQ
 
 TensorFlow Hub,给您带来全新的Web体验
-
-https://mp.weixin.qq.com/s?__biz=MzU1OTMyNDcxMQ==&mid=2247484836&idx=1&sn=0bc47c662ea64aa833df9fb9c4b1d706
-
-TensorFlow模型优化工具包正式推出
-
-https://mp.weixin.qq.com/s/NMRwXqwr4VFbMUPgI8Uccg
-
-使用 Google Cloud 上的 tf.Transform 对 TensorFlow 管道模式进行预处理
-
-https://mp.weixin.qq.com/s/UKt1cFLcRYZQTJiZRiajwQ
-
-TensorFlow Servering C/S通信约束
-
-https://mp.weixin.qq.com/s/DpqI4AfjiygCh8dqq_Kgmw
-
-基于TensorFlow Serving的深度学习在线预估
-
-https://mp.weixin.qq.com/s/XcqVtFBY5rIn0FgPEx0eTg
-
-工业领域中的AI：BHGE通过使用TensorFlow概率编程工具包开发的基于物理的概率深度学习

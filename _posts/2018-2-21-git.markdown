@@ -131,6 +131,8 @@ Generating Your SSH Public Key
 
 15.`git blame`查看一行代码是谁改的。
 
+16.`HEAD`表示当前版本，`HEAD^^`表示当前版本之前的两个版本，如果回溯的版本较多也可以写作`HEAD~100`。
+
 ## 如何git超大版本库
 
 自从两次git完整的linux kernel，都因为网络问题，而中途失败之后，不甘心的我，继续在网上寻找答案。

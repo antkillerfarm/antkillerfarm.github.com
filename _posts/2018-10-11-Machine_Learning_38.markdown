@@ -231,3 +231,43 @@ https://mp.weixin.qq.com/s?__biz=MjM5MTQzNzU2NA==&mid=2651664000&idx=1&sn=ae6dda
 https://mp.weixin.qq.com/s/R1MhoCfnd5drvg2CGLVsPw
 
 哪种特征分析法适合你的任务？Ian Goodfellow提出显著性映射的可用性测试
+
+# 世说新语+
+
+## 2019.2
+
+国外的ai和国内的差距？
+
+有github的话，半年；没有github的话，十年。
+
+----
+
+https://www.zhihu.com/question/60253584
+
+有哪些科幻作品中设定的事件发生时间已经过去了？
+
+----
+
+https://mp.weixin.qq.com/s/jHswcZDCjBH6qp46W8Vc4g
+
+漫画：为什么新疆永远不包邮？
+
+----
+
+![](/images/img2/l_hires.jpg)
+
+原图地址：
+
+http://www.lenna.org/full/l_hires.jpg
+
+----
+
+https://mp.weixin.qq.com/s/-CF69Soq9Bdw-Wsffyv9Hw
+
+这40个冷知识，据说只有1%的人知道……颠覆你的认知！
+
+----
+
+http://inews.ifeng.com/51320479/news.shtml
+
+丈夫不能满足她，她在家阁楼养了个小鲜肉，这一养，就是10年...

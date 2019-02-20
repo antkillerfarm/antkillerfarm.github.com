@@ -318,6 +318,10 @@ https://mp.weixin.qq.com/s/ApP0zNuG5OP_-HzJC1v95Q
 
 谷歌发布开源Dopamine 2.0，让强化学习变得更灵活
 
+https://mp.weixin.qq.com/s/sXAntMlz3eg5RmYVSy0i4A
+
+一键免费自动AI抠图，效果连PS大哥也点赞！
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/Sb_kPgtwyQFWloDT3707TA

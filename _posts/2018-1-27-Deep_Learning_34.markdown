@@ -224,6 +224,14 @@ https://mp.weixin.qq.com/s/SWKWI7BADnX43e-sCBxRPg
 
 神经网络在算法交易上的应用系列——简单时序预测
 
+https://mp.weixin.qq.com/s/Ux7XjLHzlaGFtM1uSMu2gQ
+
+神经网络在算法交易上的应用系列——时序预测+回测
+
+https://mp.weixin.qq.com/s/fUqQo0m7nMLZO85YG-duRw
+
+神经网络在算法交易上的应用系列——多元时间序列
+
 https://mp.weixin.qq.com/s/PS1SqSWckuHuyZP6d5ZUFw
 
 “深度学习”信号处理和时序分析的最后选择？
@@ -239,10 +247,6 @@ https://mp.weixin.qq.com/s/g9upS70qFOCFBMm-T5nI1A
 https://mp.weixin.qq.com/s/otwmDtiDfVVID65RQgT4Uw
 
 教你如何鉴别那些用深度学习预测股价的花哨模型？
-
-https://mp.weixin.qq.com/s/Ux7XjLHzlaGFtM1uSMu2gQ
-
-神经网络在算法交易上的应用系列——时序预测+回测
 
 # 图像超分辨率进阶
 
@@ -359,10 +363,6 @@ https://mp.weixin.qq.com/s/2w_Bwqx9C9KwenK480sVMQ
 https://mp.weixin.qq.com/s/yQG0983RjQHIkt9oBlkDqQ
 
 瞎谈CNN：通过优化求解输入图像
-
-http://mp.weixin.qq.com/s/5ozeLeF6IyKTOqAxYEdaog
-
-山东大学提出PointCNN：让CNN更好地处理不规则和无序的点云数据
 
 https://zhuanlan.zhihu.com/p/33445638
 

@@ -156,6 +156,14 @@ https://mp.weixin.qq.com/s/5kzWL6rCKZGX1xfQ71-gfQ
 
 详解对象检测网络性能评价指标mAP计算
 
+https://zhuanlan.zhihu.com/p/55575423
+
+浅析经典目标检测评价指标--mmAP（一）
+
+https://zhuanlan.zhihu.com/p/56899189
+
+浅析经典目标检测评价指标--mmAP（二）
+
 ## 总结
 
 ![](/images/article/rcnn_p_2.png)
