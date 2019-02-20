@@ -94,6 +94,8 @@ https://mp.weixin.qq.com/s/Uf1lWtxOpKYCDLmCDlnVAQ
 
 把Cross Entropy梯度分布拉‘平’，就能轻松超越Focal Loss
 
+## Other Loss
+
 https://mp.weixin.qq.com/s/7Jg-YvS3nvcPJ-zYhK96EA
 
 分享神经网络中设计loss function的一些技巧
@@ -101,6 +103,18 @@ https://mp.weixin.qq.com/s/7Jg-YvS3nvcPJ-zYhK96EA
 https://mp.weixin.qq.com/s/cYcztl8N9JF-XXp9xLJIxg
 
 一文道尽softmax loss及其变种
+
+https://zhuanlan.zhihu.com/p/23340343
+
+Center Loss及其在人脸识别中的应用
+
+https://zhuanlan.zhihu.com/p/34404607
+
+人脸识别的LOSS（上）
+
+https://zhuanlan.zhihu.com/p/34436551
+
+人脸识别的LOSS（下）
 
 ## OHEM
 
@@ -232,6 +246,10 @@ https://mp.weixin.qq.com/s/0hVPateb108B1KpVpYXK0A
 
 人工智能：长相越“娘”颜值越高
 
+https://mp.weixin.qq.com/s/YlrWHDPIPzN4dQO2vo4DjA
+
+人脸颜值研究综述
+
 ## 活体检测
 
 https://mp.weixin.qq.com/s/zOnmKSnQctnyx7pKXX-tpQ
@@ -310,6 +328,10 @@ https://mp.weixin.qq.com/s/HteNoL3hkjNgUTbGguMflQ
 
 人脸识别技术全面总结：从传统方法到深度学习
 
+https://zhuanlan.zhihu.com/p/56619497
+
+人脸检测江湖的那些事儿——从旷视说起
+
 https://mp.weixin.qq.com/s/7cZTbTBttEvN6NvOarSFgw
 
 如何构建自定义人脸识别数据集
@@ -329,10 +351,6 @@ https://mp.weixin.qq.com/s/CLgyaAslE4hYHi62UhzeGw
 https://mp.weixin.qq.com/s/pUcVO8Fj-n9-pMwAzBvWuQ
 
 山世光：人脸识别领域的“激荡20年”
-
-https://zhuanlan.zhihu.com/p/23340343
-
-Center Loss及其在人脸识别中的应用
 
 https://mp.weixin.qq.com/s/Gqlo4wU0wtIcJDvQs2kTAw
 
@@ -358,14 +376,6 @@ https://mp.weixin.qq.com/s/1g9PXc_3nhKMf1_-E_cVAA
 
 图像识别的原理、过程、应用前景，精华篇！
 
-https://zhuanlan.zhihu.com/p/34404607
-
-人脸识别的LOSS（上）
-
-https://zhuanlan.zhihu.com/p/34436551
-
-人脸识别的LOSS（下）
-
 https://mp.weixin.qq.com/s/i4HdS-lCrsv9YR39Hja8ow
 
 深度人脸表情识别技术综述，没有比这更全的了
@@ -374,21 +384,9 @@ https://mp.weixin.qq.com/s/JY9WXneps-_tYmYhJAFlTg
 
 人脸识别/人证比对《DocFace+: ID Document to Selfie Matching》论文解读
 
-https://mp.weixin.qq.com/s/YlrWHDPIPzN4dQO2vo4DjA
-
-人脸颜值研究综述
-
 https://mp.weixin.qq.com/s/d3aaN4vGAtMfLqOpU9oC6w
 
 香港中文大学助理教授吕健勤：面向人脸分析的深度学习方法
-
-https://mp.weixin.qq.com/s/wcKUURsYiEYVzn7qTMVPag
-
-格灵深瞳：人脸识别最新进展以及工业级大规模人脸识别实践探讨
-
-https://mp.weixin.qq.com/s/Cy5gxHl_Z4v7BX0k8SDNSQ
-
-AI人像美妆算法初识
 
 https://mp.weixin.qq.com/s/Ht8kFTgIWASusfSUQqoaJA
 

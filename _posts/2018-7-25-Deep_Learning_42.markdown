@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十二）——行人重识别, 人脸识别进阶, Spatial Transformer Networks
+title:  深度学习（四十二）——行人重识别, 人脸识别进阶
 category: DL 
 ---
 
@@ -157,6 +157,14 @@ https://zhuanlan.zhihu.com/p/55787893
 亚马逊提出：用于人群计数的尺度感知注意力网络
 
 # 人脸识别进阶
+
+https://mp.weixin.qq.com/s/wcKUURsYiEYVzn7qTMVPag
+
+格灵深瞳：人脸识别最新进展以及工业级大规模人脸识别实践探讨
+
+https://mp.weixin.qq.com/s/Cy5gxHl_Z4v7BX0k8SDNSQ
+
+AI人像美妆算法初识
 
 https://mp.weixin.qq.com/s/5vx1FGgSOhF71FwHeUwaAQ
 
@@ -369,31 +377,3 @@ https://mp.weixin.qq.com/s/Chw_gLxQHdfe0hFJGMk-3A
 https://mp.weixin.qq.com/s/E9Esoe4VHvMdJNTbxF-sXA
 
 ShapeNet:超实时人脸特征点检测与形状拟合开源库
-
-# Spatial Transformer Networks
-
-论文：
-
-《Spatial Transformer Networks》
-
-参考：
-
-http://www.cnblogs.com/neopenx/p/4851806.html
-
-Spatial Transformer Networks(空间变换神经网络)
-
-http://blog.csdn.net/shaoxiaohu1/article/details/51809605
-
-论文笔记：Spatial Transformer Networks
-
-http://blog.csdn.net/shaoxiaohu1/article/details/51809605
-
-Spatial Transformer Networks
-
-https://mp.weixin.qq.com/s/ciqQMezcB-oM24X8eQqTNg
-
-花式玩耍Spatial Transformation Networks
-
-https://mp.weixin.qq.com/s/4VE2lZeFf05AyLp_s3nTFQ
-
-理解Spatial Transformer Networks

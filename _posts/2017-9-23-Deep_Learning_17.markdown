@@ -180,6 +180,10 @@ https://mp.weixin.qq.com/s/s440gdbUhLP41rLPjfgsmQ
 
 Yann Lecun自监督学习指南（附114页Slides全文下载）
 
+https://mp.weixin.qq.com/s/foP1xSa5G8oNtAv_pI6AqQ
+
+深度神经网络自监督视觉特征学习综述
+
 https://mp.weixin.qq.com/s/aCWAU2RXk9fTzfFqOyjqUw
 
 能自主学习的人工突触，为无监督学习开辟新的路径
