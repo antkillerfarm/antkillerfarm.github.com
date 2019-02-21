@@ -347,3 +347,7 @@ https://mp.weixin.qq.com/s/gjVLbH_S0t7jcjCYhpsTgw
 https://mp.weixin.qq.com/s/XNKEOlJrTVH2zsu8pdY4gA
 
 从三大案例，看如何用CV模型解决非视觉问题
+
+https://mp.weixin.qq.com/s/lcgnnXMUO8C3oLUPmxthjQ
+
+深度学习不再是炼丹术！谷歌给出首个神经网络训练理论证明

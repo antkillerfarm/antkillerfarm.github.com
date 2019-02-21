@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十八）——PageRank算法, 社交网络, 特征工程
+title:  机器学习（三十八）——PageRank算法, 社交网络, 特征工程, 数据清洗
 category: ML 
 ---
 
@@ -231,6 +231,20 @@ https://mp.weixin.qq.com/s?__biz=MjM5MTQzNzU2NA==&mid=2651664000&idx=1&sn=ae6dda
 https://mp.weixin.qq.com/s/R1MhoCfnd5drvg2CGLVsPw
 
 哪种特征分析法适合你的任务？Ian Goodfellow提出显著性映射的可用性测试
+
+# 数据清洗
+
+https://mp.weixin.qq.com/s/YrCC8CmP6UKuCmSdF2K_3g
+
+数据挖掘中的数据清洗方法大全
+
+https://mp.weixin.qq.com/s/FHdo2DTapoTryA-hOM-y_w
+
+还在为数据清洗抓狂？这里有一个简单实用的清洗代码集
+
+https://mp.weixin.qq.com/s/r7ngZOM9tO-_OSfvs2aDJw
+
+数据清洗&预处理入门完整指南
 
 # 世说新语+
 

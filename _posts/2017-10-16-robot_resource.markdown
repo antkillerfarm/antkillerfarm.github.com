@@ -186,6 +186,14 @@ https://github.com/raulmur/ORB_SLAM2
 
 Real-Time SLAM for Monocular, Stereo and RGB-D Cameras, with Loop Detection and Relocalization Capabilities
 
+## PythonRobotics
+
+PythonRobotics是一个机器人算法方面的代码示例库。
+
+官网：
+
+https://atsushisakai.github.io/PythonRobotics/
+
 ## OpenDRIVE
 
 OpenDRIVE是一种用于导航和自动驾驶的数据格式。

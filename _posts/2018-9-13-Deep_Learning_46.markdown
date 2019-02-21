@@ -417,3 +417,7 @@ https://mp.weixin.qq.com/s/GqqU3Ixht1BzMnQeRYQEqQ
 https://mp.weixin.qq.com/s/2f91Ksj19rk_emoFpEmPfA
 
 从BERT看大规模数据的无监督利用
+
+https://mp.weixin.qq.com/s/g6-NjoFMPpxjsh38X-wTFQ
+
+BERT，GPT-2这些顶尖工具到底该怎么用到我的模型里?

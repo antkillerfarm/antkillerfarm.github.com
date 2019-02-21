@@ -384,3 +384,7 @@ https://mp.weixin.qq.com/s/SYFShtmBIgEW8_cEYec0kw
 https://zhuanlan.zhihu.com/p/57056588
 
 一图胜千言: 解读阿里的Deep Image CTR Model
+
+https://mp.weixin.qq.com/s/98X2agJlZcCH6IdZqf9m0A
+
+深度学习在美团配送ETA预估中的探索与实践

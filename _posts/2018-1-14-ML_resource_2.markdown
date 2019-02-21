@@ -10,14 +10,6 @@ https://zhuanlan.zhihu.com/p/30383356
 
 掌握机器学习数学基础之信息论及其他
 
-https://mp.weixin.qq.com/s/YrCC8CmP6UKuCmSdF2K_3g
-
-数据挖掘中的数据清洗方法大全
-
-https://mp.weixin.qq.com/s/FHdo2DTapoTryA-hOM-y_w
-
-还在为数据清洗抓狂？这里有一个简单实用的清洗代码集
-
 https://zhuanlan.zhihu.com/p/24709748
 
 矩阵求导术（上）
