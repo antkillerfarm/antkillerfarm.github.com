@@ -268,6 +268,10 @@ https://mp.weixin.qq.com/s/2SaBiMJzhSRw1G0giL9TAw
 
 深入理解图注意力机制
 
+https://mp.weixin.qq.com/s/sg9O761F0KHAmCPOfMW_kQ
+
+图卷积网络到底怎么做，这是一份极简的Numpy实现
+
 # 语义分割
 
 Semantic segmentation是图像理解的基石性技术，在自动驾驶系统（具体为街景识别与理解）、无人机应用（着陆点判断）以及穿戴式设备应用中举足轻重。

@@ -271,3 +271,9 @@ https://mp.weixin.qq.com/s/-CF69Soq9Bdw-Wsffyv9Hw
 http://inews.ifeng.com/51320479/news.shtml
 
 丈夫不能满足她，她在家阁楼养了个小鲜肉，这一养，就是10年...
+
+----
+
+https://www.zhihu.com/question/53104504/answer/133590732
+
+日本对台湾的殖民统治给台湾造成了什么样的影响？

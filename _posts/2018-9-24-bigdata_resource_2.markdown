@@ -118,6 +118,10 @@ https://mp.weixin.qq.com/s/HRwn7CvY6D6OsJzN9tWKQg
 
 独家揭秘！阿里大规模数据中心的性能分析
 
+https://mp.weixin.qq.com/s/MOtlA8lT4XZ0nsldqe9xeQ
+
+微博深度学习平台如何支撑4亿用户愉快吃瓜？
+
 # 知名数据集
 
 ## CV（续）

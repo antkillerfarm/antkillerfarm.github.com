@@ -342,6 +342,10 @@ https://mp.weixin.qq.com/s/B0Qld2Xi8kaoe3hf8TN7rA
 
 华中科大提出EAT-NAS方法：显著提升大规模神经模型搜索速度
 
+https://mp.weixin.qq.com/s/RDMb8YD3K_E06RxAgwwOnw
+
+雷军强推：小米造最强超分辨率算法，现已开源
+
 # 多模态学习
 
 https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw

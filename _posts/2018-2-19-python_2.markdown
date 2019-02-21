@@ -344,6 +344,12 @@ otherStyleTime = time.strftime("%Y/%m/%d %H:%M:%S", timeArray)
 
 从上面的例子还可以看出，isocalendar可以完美的处理跨年问题。
 
+## argparse
+
+https://blog.csdn.net/It_way/article/details/44815141
+
+python 命令行参数解析 argparse简单分析
+
 ## 处理eml文件
 
 代码示例：

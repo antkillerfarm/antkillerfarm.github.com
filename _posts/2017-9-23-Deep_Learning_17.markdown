@@ -78,6 +78,10 @@ https://zhuanlan.zhihu.com/p/46669238
 
 VOT2018：SiamNet大崛起
 
+https://mp.weixin.qq.com/s/dB5u2No8eakLnrjto0kvyQ
+
+DaSiamRPN的升级版，视觉目标跟踪之SiamRPN++
+
 ## FlowNet
 
 论文：
