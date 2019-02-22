@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十四）——单分类SVM&多分类SVM, 贝叶斯线性回归, 强连通分量算法
+title:  机器学习（二十四）——单分类SVM&多分类SVM, 贝叶斯线性回归, 强连通分量算法, Stacking, 三门问题, 社区发现
 category: ML 
 ---
 
@@ -284,3 +284,61 @@ http://blog.csdn.net/dm_vincent/article/details/8554244
 http://www.cnblogs.com/luweiseu/archive/2012/07/14/2591370.html
 
 强连通分支算法--Kosaraju算法、Tarjan算法和Gabow算法
+
+# Stacking
+
+模型融合的方法除了Bagging和Boosting，还有Stacking。
+
+参考：
+
+https://mp.weixin.qq.com/s/lYj-GVNSDp26czRXbf0iNw
+
+如果你会模型融合！那么，我要和你做朋友！！
+
+# 三门问题
+
+https://www.zhihu.com/question/26709273/
+
+蒙提霍尔问题（又称三门问题、山羊汽车问题）的正解是什么？
+
+https://zhuanlan.zhihu.com/p/21461266
+
+数学杂谈——“三门问题”：Monty Hall Problem
+
+https://zhuanlan.zhihu.com/p/23338174
+
+蒙提霍尔问题/三门问题（Monty Hall problem）
+
+# 社区发现
+
+https://www.zhihu.com/question/29042018
+
+社区发现(Community detection)的经典方法有哪些？该领域最新的研究进展如何？
+
+https://blog.csdn.net/itplus/article/details/9286905
+
+Community Detection算法
+
+http://www.mapequation.org/index.html
+
+这是一个复杂网络方面的网站，提供了很多算法的代码。例如infomap
+
+https://www.cnblogs.com/nolonely/p/6262508.html
+
+社区发现算法总结（一）
+
+https://www.cnblogs.com/nolonely/p/6268150.html
+
+社区发现算法总结（二）
+
+https://sikasjc.github.io/2017/12/20/GN/
+
+GN算法--复杂网络中社区发现与Python实现
+
+https://www.cnblogs.com/LittleHann/p/9078909.html
+
+社区发现算法-Fast Unfolding（Louvian）算法初探
+
+http://blog.sina.com.cn/s/blog_617032070100er0r.html
+
+Infomap算法描述

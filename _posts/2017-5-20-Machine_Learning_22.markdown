@@ -1,10 +1,125 @@
 ---
 layout: post
-title:  机器学习（二十二）——EMD, LSA, HMM
+title:  机器学习（二十二）——机器学习分类器性能指标, HMM
 category: ML 
 ---
 
-# 机器学习分类器性能指标（续）
+# Loss function详解（续）
+
+## Other Loss
+
+https://mp.weixin.qq.com/s/7Jg-YvS3nvcPJ-zYhK96EA
+
+分享神经网络中设计loss function的一些技巧
+
+https://mp.weixin.qq.com/s/cYcztl8N9JF-XXp9xLJIxg
+
+一文道尽softmax loss及其变种
+
+https://mp.weixin.qq.com/s/MTeuRYutMiCmthEAObyAIg
+
+从最优化的角度看待Softmax损失函数
+
+https://zhuanlan.zhihu.com/p/23340343
+
+Center Loss及其在人脸识别中的应用
+
+https://zhuanlan.zhihu.com/p/34404607
+
+人脸识别的LOSS（上）
+
+https://zhuanlan.zhihu.com/p/34436551
+
+人脸识别的LOSS（下）
+
+https://mp.weixin.qq.com/s/kI22wSoyNT3QXXI8pVwbjA
+
+腾讯AI Lab提出新型损失函数LMCL：可显著增强人脸识别模型的判别能力
+
+https://mp.weixin.qq.com/s/8KM7wUg_lnFBd0fIoczTHQ
+
+用收缩损失(Shrinkage Loss)进行深度回归跟踪
+
+## 参考
+
+https://mp.weixin.qq.com/s/gw3hoDSaojVQUiD6YsMabA
+
+理解神经网络中的目标函数
+
+https://mp.weixin.qq.com/s/h-QbwEbaivvHjdhDhE4V1A
+
+如何为单变量模型选择最佳的回归函数
+
+https://mp.weixin.qq.com/s/qXZMo_RitSenmI7x0xGNsg
+
+中科院自动化所多媒体计算与图形学团队NIPS 2017论文提出平均Top-K损失函数，专注于解决复杂样本
+
+https://mp.weixin.qq.com/s/YOdmv88koSHx5AMMEQZGgg
+
+通俗聊聊损失函数中的均方误差以及平方误差
+
+https://blog.csdn.net/zhangxb35/article/details/72464152
+
+pytorch loss function总结
+
+https://mp.weixin.qq.com/s/Xbi5iOh3xoBIK5kVmqbKYA
+
+机器学习大牛是如何选择回归损失函数的？
+
+https://mp.weixin.qq.com/s/f29WSb_xZxY1S_MP3Yp0dg
+
+机器学习中常用的损失函数你知多少？
+
+https://mp.weixin.qq.com/s/AdpO4xxTi0G7YiTfjEz_ig
+
+机器学习必备的分类损失函数速查手册
+
+https://mp.weixin.qq.com/s/NY1y0N6XedmMEvfsEFcTjQ
+
+机器学习中的目标函数总结
+
+# 机器学习分类器性能指标
+
+很多学习器是为测试样本产生一个实值或概率预测，然后将这个预测值与一个分类阈值（threshold）进行比较，若大于阈值则分为正类，否则为反类。这个实值或概率预测结果的好坏，直接决定了学习器的泛化能力。实际上，根据这个实值或概率预测结果，我们可将测试样本进行**排序**，“最可能”是正例的排在最前面，“最不可能”是正例的排在最后面。这样，分类过程就相当于在这个排序中以某个“截断点”（cut point）将样本分为两部分，前一部分判作正例，后一部分则判作反例。
+
+在不同的应用任务中，我们可根据任务需求来采用不同的截断点，例如若我们更重视 “查准率”（precision），则可选择排序中靠前的位置进行截断，若更重视“查全率”（recall，也称召回率），则可选择靠后的位置进行截断。
+
+对于二分类问题，可将样例根据其真实类别与学习器预测类别的组合划分为真正例（true positive）、假正例（false positive）、真反例（true negative）和假反例（false negative）。
+
+查准率P和查全率R的定义如下：
+
+$$P=\frac{TP}{TP+FP},R=\frac{TP}{TP+FN}$$
+
+以P和R为坐标轴，所形成的曲线就是P-R曲线。曲线下方的面积一般称为AP（Average Precision）。
+
+![](/images/article/AP.png)
+
+>注意：   
+>1.测试样本的**排序**过程非常重要。不然P-R曲线的峰值可能出现在图形的中部。   
+>2.虽然P-R曲线总体上是个下降曲线，但不是严格的单调下降曲线。在局部，会由于TP样本的增多，使P值升高。   
+>3.有的评测为了使P-R曲线成为单调下降曲线，对原始定义进行了细微修改（如下图所示）：$$P(r_0)=\max (P(r\mid r \ge r_0))$$
+
+![](/images/img2/AP.jpg)
+
+ROC（Receiver operating characteristic）曲线的纵轴是真正例率（True Positive Rate，TPR），横轴是假正例率（False Positive Rate，FPR）。其定义如下：
+
+$$TPR=\frac{TP}{TP+FN},FPR=\frac{FP}{TN+FP}$$
+
+ROC曲线下方的面积被称为AUC（Area Under ROC Curve）。
+
+![](/images/article/ROC.gif)
+
+更多内容参见下图：
+
+![](/images/article/sensitivity_and_specificity.png)
+
+原图地址：
+
+https://en.wikipedia.org/wiki/Sensitivity_and_specificity
+
+从这张图表衍生出一种数据可视化方式——confusion matrix：
+
+![](/images/img2/confusion_matrix.jpg)
 
 除此之外，还有F-measure：
 
@@ -53,108 +168,6 @@ https://mp.weixin.qq.com/s/2HKx36bIBZAqvzdXfcSfqA
 https://mp.weixin.qq.com/s/Uowbo19wNkjT-9eAIjS8jQ
 
 过来，我这里有个“混淆矩阵”跟你谈一谈
-
-# Earth mover's distance
-
-推土机距离（EMD）是两个概率分布之间的距离度量的一种方式。如果将区间D的概率分布比作沙堆P，那么$$P_r$$和$$P_\theta$$之间的EMD距离，就是推土机将$$P_r$$改造为$$P_\theta$$所需要的工作量。
-
-![](/images/article/earth_move.png)
-
-EMD的计算公式为：
-
-$$EMD(P_r,P_\theta) = \frac{\sum_{i=1}^m \sum_{j=1}^n f_{i,j}d_{i,j}}{\sum_{i=1}^m \sum_{j=1}^n f_{i,j}}$$
-
-其中，f表示土方量，d表示运输距离。
-
-EMD可以是多维分布之间的距离。一维的EMD也被称为Match distance。
-
-EMD有时也称作Wasserstein距离。
-
->Leonid Vaseršteĭn，俄罗斯数学家，Moscow State University硕博，现居美国，Penn State University教授。Wasserstein是他名字的德文拼法，并为英文文献所沿用。他在去美国之前，曾在德国住过一段时间。
-
-在文本处理中，有一个和EMD类似的编辑距离（Edit distance），也叫做Levenshtein distance。它是指两个字串之间，由一个转成另一个所需的最少编辑操作次数。许可的编辑操作包括将一个字符替换成另一个字符，插入一个字符，删除一个字符。一般来说，编辑距离越小，两个串的相似度越大。
-
->注：严格来说，Edit distance是一系列字符串相似距离的统称。除了Levenshtein distance之外，还包括Hamming distance等。
-
->Vladimir Levenshtein，1935年生，俄罗斯数学家，毕业于莫斯科州立大学。2006年获得IEEE Richard W. Hamming Medal。
-
-参考：
-
-https://vincentherrmann.github.io/blog/wasserstein/
-
-Wasserstein GAN and the Kantorovich-Rubinstein Duality
-
-http://chaofan.io/archives/earth-movers-distance-%e6%8e%a8%e5%9c%9f%e6%9c%ba%e8%b7%9d%e7%a6%bb
-
-Earth Mover's Distance——推土机距离
-
-https://mp.weixin.qq.com/s/rvPLYa1NFg_LRvb8Y8-aCQ
-
-Wasserstein距离在生成模型中的应用
-
-https://mp.weixin.qq.com/s/2xOrSyyWSbp8rBVbFoNrxQ
-
-Wasserstein is all you need：构建无监督表示的统一框架
-
-https://mp.weixin.qq.com/s/NXDJ4uCpdX-YcWiKAsjJLQ
-
-传说中的推土机距离基础，最优传输理论了解一下
-
-https://mp.weixin.qq.com/s/5sNXmQbINIWMGjX5TYAPYw
-
-最优传输理论你理解了，传说中的推土机距离重新了解一下
-
-# LSA
-
-## 基本原理
-
-Latent Semantic Analysis（隐式语义分析），也叫Latent Semantic Indexing。它是PCA算法在NLP领域的一个应用。
-
-在TF-IDF模型中，所有词构成一个高维的语义空间，每个文档在这个空间中被映射为一个点，这种方法维数一般比较高而且每个词作为一维割裂了词与词之间的关系。
-
-为了解决这个问题，我们要把词和文档同等对待，构造一个维数不高的语义空间，每个词和每个文档都是被映射到这个空间中的一个点。
-
-LSA的思想就是说，我们考察的概率既包括文档的概率，也包括词的概率，以及他们的联合概率。
-
-为了加入语义方面的信息，我们设计一个假想的隐含类包括在文档和词之间，具体思路是这样的：
-
-1.选择一个文档的概率是$$p(d)$$
-
-2.找到一个隐含类的概率是$$p(z\mid d)$$
-
-3.生成一个词w的概率为$$p(w\mid z)$$
-
-## 实现方法
-
-![](/images/article/Topic_model_scheme.jpg)
-
-上图中，行表示单词，列表示文档，单元格的值表示单词在文档中的权重，一般可由TF-IDF生成。
-
-聪明的读者看到这里应该已经反应过来了，这不就是《机器学习（十四）》中提到的协同过滤的商品打分矩阵吗？
-
-没错！LSA的实现方法的确与之类似。多数的blog讲解LSA算法原理时，由于单词-文档矩阵较小，直接采用了矩阵的SVD分解，少数给出了EM算法实现，实际上就是ALS或其变种。
-
-参考：
-
-http://www.cnblogs.com/kemaswill/archive/2013/04/17/3022100.html
-
-Latent Semantic Analysis(LSA/LSI)算法简介
-
-http://blog.csdn.net/u013802188/article/details/40903471
-
-隐含语义索引（Latent Semantic Indexing）
-
-http://www.shareditor.com/blogshow/?blogId=90
-
-比TF-IDF更好的隐含语义索引模型是个什么鬼
-
-http://shiyanjun.cn/archives/548.html
-
-使用libsvm+tfidf实现文本分类
-
-https://mp.weixin.qq.com/s/iZOVUYKWP-fN8BwAuVwAUw
-
-TF-IDF不容小觑
 
 # HMM
 
@@ -239,4 +252,3 @@ https://www.zhihu.com/question/20136144
 https://mp.weixin.qq.com/s/xyWY3Z5PiHkCFzCP0noBvA
 
 一文读懂HMM模型和Viterbi算法
-

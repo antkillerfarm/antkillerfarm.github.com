@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十一）——Loss function详解, Stacking, 三门问题, 社区发现, 机器学习分类器性能指标
+title:  机器学习（二十一）——Loss function详解
 category: ML 
 ---
 
@@ -144,149 +144,148 @@ https://www.zhihu.com/question/28810567
 
 Extreme learning machine(ELM)到底怎么样，有没有做的前途？
 
-## 参考
+## Softmax详解
 
-https://mp.weixin.qq.com/s/gw3hoDSaojVQUiD6YsMabA
+首先给出Softmax function的定义:
 
-理解神经网络中的目标函数
+$$y_c=\zeta(\textbf{z})_c = \dfrac{e^{z_c}}{\sum_{d=1}^C{e^{z_d}}} \text{  for } c=1, \dots, C$$
 
-https://mp.weixin.qq.com/s/h-QbwEbaivvHjdhDhE4V1A
+从中可以很容易的发现，如果$$z_c$$的值过大，朴素的直接计算会上溢出或下溢出。
 
-如何为单变量模型选择最佳的回归函数
+解决办法：
 
-https://mp.weixin.qq.com/s/qXZMo_RitSenmI7x0xGNsg
+$$z_c\leftarrow z_c-a,a=\max\{z_1,\dots,z_C\}$$
 
-中科院自动化所多媒体计算与图形学团队NIPS 2017论文提出平均Top-K损失函数，专注于解决复杂样本
+证明：
 
-https://mp.weixin.qq.com/s/kI22wSoyNT3QXXI8pVwbjA
+$$\zeta(\textbf{z-a})_c = \dfrac{e^{z_c}\cdot e^{-a}}{\sum_{d=1}^C{e^{z_d}\cdot e^{-a}}} = \dfrac{e^{z_c}}{\sum_{d=1}^C{e^{z_d}}} = \zeta(\textbf{z})_c$$
 
-腾讯AI Lab提出新型损失函数LMCL：可显著增强人脸识别模型的判别能力
+Softmax的损失函数是cross entropy loss function：
 
-https://mp.weixin.qq.com/s/YOdmv88koSHx5AMMEQZGgg
+$$\xi(X, Y) = \sum_{i=1}^n \xi(\textbf{t}_i, \textbf{y}_i) = - \sum_{i=1}^n \sum_{i=c}^C t_{ic} \cdot \log(y_{ic})$$
 
-通俗聊聊损失函数中的均方误差以及平方误差
+Softmax的反向传播算法：
 
-https://blog.csdn.net/zhangxb35/article/details/72464152
-
-pytorch loss function总结
-
-https://mp.weixin.qq.com/s/Xbi5iOh3xoBIK5kVmqbKYA
-
-机器学习大牛是如何选择回归损失函数的？
-
-https://mp.weixin.qq.com/s/f29WSb_xZxY1S_MP3Yp0dg
-
-机器学习中常用的损失函数你知多少？
-
-https://mp.weixin.qq.com/s/AdpO4xxTi0G7YiTfjEz_ig
-
-机器学习必备的分类损失函数速查手册
-
-https://mp.weixin.qq.com/s/NY1y0N6XedmMEvfsEFcTjQ
-
-机器学习中的目标函数总结
-
-https://mp.weixin.qq.com/s/8KM7wUg_lnFBd0fIoczTHQ
-
-用收缩损失(Shrinkage Loss)进行深度回归跟踪
-
-# Stacking
-
-模型融合的方法除了Bagging和Boosting，还有Stacking。
+$$\begin{align}
+\dfrac{\partial\xi}{\partial z_i} &= - \sum_{j=1}^C \dfrac{\partial t_j \log(y_j)}{\partial z_i} \\
+&= - \sum_{j=1}^C t_j \dfrac{\partial \log(y_j)}{\partial z_i} \\
+&= - \sum_{j=1}^C t_j \dfrac{1}{y_j} \dfrac{\partial y_j}{\partial z_i} \\
+&= - \dfrac{t_i}{y_i} \dfrac{\partial y_i}{\partial z_i} - \sum_{j \neq i}^C \dfrac{t_j}{y_j} \dfrac{\partial y_j}{\partial z_i} \\
+&= - \dfrac{t_i}{y_i} y_i(1-y_i) - \sum_{j \neq i}^{C} \dfrac{t_j}{y_j}(-y_jy_j) \\
+&= -t_i + t_iy_i + \sum_{j \neq i}^{C} t_jy_i \\
+&= -t_i + \sum_{j=1}^C t_jy_i \\
+&= -t_i + y_i \sum_{j=1}^C t_j \\
+&= y_i - t_i
+\end{align}$$
 
 参考：
 
-https://mp.weixin.qq.com/s/lYj-GVNSDp26czRXbf0iNw
+https://mp.weixin.qq.com/s/2xYgaeLlmmUfxiHCbCa8dQ
 
-如果你会模型融合！那么，我要和你做朋友！！
+softmax函数计算时候为什么要减去一个最大值？
 
-# 三门问题
+http://shuokay.com/2016/07/20/softmax-loss/
 
-https://www.zhihu.com/question/26709273/
+Softmax输出及其反向传播推导
 
-蒙提霍尔问题（又称三门问题、山羊汽车问题）的正解是什么？
+https://mp.weixin.qq.com/s/HTIgKm8HuZZ_-lIQ3nIFhQ
 
-https://zhuanlan.zhihu.com/p/21461266
+浅入深出之大话SoftMax
 
-数学杂谈——“三门问题”：Monty Hall Problem
+https://mp.weixin.qq.com/s/XBK7T1P7z3rm3o-3BDNeOA
 
-https://zhuanlan.zhihu.com/p/23338174
+三分钟带你对Softmax划重点
 
-蒙提霍尔问题/三门问题（Monty Hall problem）
+https://mp.weixin.qq.com/s/vhvXsSsEHPVjJGqtCOOwLw
 
-# 社区发现
+Softmax和交叉熵的深度解析和Python实现
 
-https://www.zhihu.com/question/29042018
+## Softmax loss
 
-社区发现(Community detection)的经典方法有哪些？该领域最新的研究进展如何？
+通常我们使用的Softmax loss，实际上是由softmax和交叉熵(cross-entropy loss)loss组合而成，所以全称是softmax with cross-entropy loss。
 
-https://blog.csdn.net/itplus/article/details/9286905
+$$l(y,z)=-\sum_{k=0}^C y_k\log (f(z_k))$$
 
-Community Detection 算法
+$$f(z_k)=e^{z_k}/(\sum_j e^{z_j})$$
 
-http://www.mapequation.org/index.html
+原始的softmax loss非常优雅，简洁，被广泛用于分类问题。它的特点就是优化类间的距离非常棒，但是优化类内距离时比较弱。
 
-这是一个复杂网络方面的网站，提供了很多算法的代码。例如infomap
+## Weighted softmax loss
 
-https://www.cnblogs.com/nolonely/p/6262508.html
+$$l(y,z)=-\sum_{k=0}^C w_ky_k\log (f(z_k))$$
 
-社区发现算法总结（一）
+## Triplet Loss
 
-https://www.cnblogs.com/nolonely/p/6268150.html
+Triplet loss通常是在个体级别的细粒度识别上使用，传统的分类是花鸟狗的大类别的识别，但是有些需求是要精确到个体级别，比如精确到哪个人的人脸识别，所以triplet loss的最主要应用也就是face identification，person re-identification，vehicle re-identification的各种identification识别问题上。
 
-社区发现算法总结（二）
+当然你可以把每个人当做一个类别来进行分类训练，但是往往最后会造成softmax的维数远大于feature的维数。
 
-https://sikasjc.github.io/2017/12/20/GN/
+![](/images/img2/Triplet_Loss.png)
 
-GN算法--复杂网络中社区发现与Python实现
+如上图所示，triplet是一个三元组，这个三元组是这样构成的：从训练数据集中随机选一个样本，该样本称为Anchor，然后再随机选取一个和Anchor(记为$$x^a$$)属于同一类的样本和不同类的样本,这两个样本对应的称为Positive(记为$$x^p$$)和Negative(记为$$x^n$$)，由此构成一个（Anchor，Positive，Negative）三元组。
 
-https://www.cnblogs.com/LittleHann/p/9078909.html
+针对每个样本$$x_i$$，训练一个参数共享或者不共享的网络，得到三个元素的特征表达，分别记为：$$f(x_i^a), f(x_i^p), f(x_i^n)$$。
 
-社区发现算法-Fast Unfolding（Louvian）算法初探
+triplet loss的目的就是通过学习，让$$x^a$$和$$x^p$$特征表达之间的距离尽可能小，而$$x^a$$和$$x^n$$的特征表达之间的距离尽可能大。公式化的表示就是：
 
-http://blog.sina.com.cn/s/blog_617032070100er0r.html
+$$\|f(x_i^a)-f(x_i^p)\|_2^2 + \alpha < \|f(x_i^a)-f(x_i^n)\|_2^2$$
 
-Infomap算法描述
+其中，$$\alpha$$表示两个距离之间的间隔。因此，对应的目标函数也就很清楚了：
 
-# 机器学习分类器性能指标
+$$\sum_i^N\left[\|f(x_i^a)-f(x_i^p)\|_2^2 - \|f(x_i^a)-f(x_i^n)\|_2^2 + \alpha \right]_+$$
 
-很多学习器是为测试样本产生一个实值或概率预测，然后将这个预测值与一个分类阈值（threshold）进行比较，若大于阈值则分为正类，否则为反类。这个实值或概率预测结果的好坏，直接决定了学习器的泛化能力。实际上，根据这个实值或概率预测结果，我们可将测试样本进行**排序**，“最可能”是正例的排在最前面，“最不可能”是正例的排在最后面。这样，分类过程就相当于在这个排序中以某个“截断点”（cut point）将样本分为两部分，前一部分判作正例，后一部分则判作反例。
+这里距离用欧式距离度量，+表示[]内的值大于零的时候，取该值为损失，小于零的时候，损失为零。 
 
-在不同的应用任务中，我们可根据任务需求来采用不同的截断点，例如若我们更重视 “查准率”（precision），则可选择排序中靠前的位置进行截断，若更重视“查全率”（recall，也称召回率），则可选择靠后的位置进行截断。
+参考：
 
-对于二分类问题，可将样例根据其真实类别与学习器预测类别的组合划分为真正例（true positive）、假正例（false positive）、真反例（true negative）和假反例（false negative）。
+https://blog.csdn.net/u010167269/article/details/52027378
 
-查准率P和查全率R的定义如下：
+Triplet Loss、Coupled Cluster Loss探究
 
-$$P=\frac{TP}{TP+FP},R=\frac{TP}{TP+FN}$$
+https://blog.csdn.net/tangwei2014/article/details/46788025
 
-以P和R为坐标轴，所形成的曲线就是P-R曲线。曲线下方的面积一般称为AP（Average Precision）。
+triplet loss原理以及梯度推导
 
-![](/images/article/AP.png)
+https://www.zhihu.com/question/62486208
 
->注意：   
->1.测试样本的**排序**过程非常重要。不然P-R曲线的峰值可能出现在图形的中部。   
->2.虽然P-R曲线总体上是个下降曲线，但不是严格的单调下降曲线。在局部，会由于TP样本的增多，使P值升高。   
->3.有的评测为了使P-R曲线成为单调下降曲线，对原始定义进行了细微修改（如下图所示）：$$P(r_0)=\max (P(r\mid r \ge r_0))$$
+triplet loss在深度学习中主要应用在什么地方？有什么明显的优势？
 
-![](/images/img2/AP.jpg)
+https://mp.weixin.qq.com/s/XB9VsW3NRwHua6AdRL3n8w
 
-ROC（Receiver operating characteristic）曲线的纵轴是真正例率（True Positive Rate，TPR），横轴是假正例率（False Positive Rate，FPR）。其定义如下：
+Lossless Triplet Loss:一种高效的Siamese网络损失函数
 
-$$TPR=\frac{TP}{TP+FN},FPR=\frac{FP}{TN+FP}$$
+https://gehaocool.github.io/2018/03/20/Angular-Margin-%E5%9C%A8%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/
 
-ROC曲线下方的面积被称为AUC（Area Under ROC Curve）。
+Angular Margin在人脸识别中的应用
 
-![](/images/article/ROC.gif)
+https://mp.weixin.qq.com/s/SqaR_7gwJpUNPM7g4IHaYw
 
-更多内容参见下图：
+深度人脸识别中不同损失函数的性能对比
 
-![](/images/article/sensitivity_and_specificity.png)
+## Coupled Cluster Loss
 
-原图地址：
+论文：
 
-https://en.wikipedia.org/wiki/Sensitivity_and_specificity
+《Deep Relative Distance Learning: Tell the Difference Between Similar Vehicles》
 
-从这张图表衍生出一种数据可视化方式——confusion matrix：
 
-![](/images/img2/confusion_matrix.jpg)
+
+参考：
+
+https://blog.csdn.net/u010167269/article/details/51783446
+
+论文中文笔记
+
+## Focal Loss
+
+https://zhuanlan.zhihu.com/p/28442066
+
+何恺明团队提出Focal Loss，目标检测精度高达39.1AP，打破现有记录
+
+https://www.zhihu.com/question/63581984
+
+如何评价Kaiming的Focal Loss for Dense Object Detection？
+
+https://mp.weixin.qq.com/s/Uf1lWtxOpKYCDLmCDlnVAQ
+
+把Cross Entropy梯度分布拉‘平’，就能轻松超越Focal Loss

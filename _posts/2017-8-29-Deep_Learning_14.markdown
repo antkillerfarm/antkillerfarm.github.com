@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十四）——Normalization进阶（1）, MobileNet, Softmax详解, 李飞飞, fine-tuning
+title:  深度学习（十四）——Normalization进阶（1）, MobileNet, 李飞飞, fine-tuning
 category: DL 
 ---
 
@@ -179,62 +179,6 @@ https://mp.weixin.qq.com/s/lu0GHCpWCmogkmHRKnJ8zQ
 https://mp.weixin.qq.com/s/T6S1_cFXPEuhRAkJo2m8Ig
 
 轻量级CNN网络之MobileNetv2
-
-# Softmax详解
-
-首先给出Softmax function的定义:
-
-$$y_c=\zeta(\textbf{z})_c = \dfrac{e^{z_c}}{\sum_{d=1}^C{e^{z_d}}} \text{  for } c=1, \dots, C$$
-
-从中可以很容易的发现，如果$$z_c$$的值过大，朴素的直接计算会上溢出或下溢出。
-
-解决办法：
-
-$$z_c\leftarrow z_c-a,a=\max\{z_1,\dots,z_C\}$$
-
-证明：
-
-$$\zeta(\textbf{z-a})_c = \dfrac{e^{z_c}\cdot e^{-a}}{\sum_{d=1}^C{e^{z_d}\cdot e^{-a}}} = \dfrac{e^{z_c}}{\sum_{d=1}^C{e^{z_d}}} = \zeta(\textbf{z})_c$$
-
-Softmax的损失函数是cross entropy loss function：
-
-$$\xi(X, Y) = \sum_{i=1}^n \xi(\textbf{t}_i, \textbf{y}_i) = - \sum_{i=1}^n \sum_{i=c}^C t_{ic} \cdot \log(y_{ic})$$
-
-Softmax的反向传播算法：
-
-$$\begin{align}
-\dfrac{\partial\xi}{\partial z_i} &= - \sum_{j=1}^C \dfrac{\partial t_j \log(y_j)}{\partial z_i} \\
-&= - \sum_{j=1}^C t_j \dfrac{\partial \log(y_j)}{\partial z_i} \\
-&= - \sum_{j=1}^C t_j \dfrac{1}{y_j} \dfrac{\partial y_j}{\partial z_i} \\
-&= - \dfrac{t_i}{y_i} \dfrac{\partial y_i}{\partial z_i} - \sum_{j \neq i}^C \dfrac{t_j}{y_j} \dfrac{\partial y_j}{\partial z_i} \\
-&= - \dfrac{t_i}{y_i} y_i(1-y_i) - \sum_{j \neq i}^{C} \dfrac{t_j}{y_j}(-y_jy_j) \\
-&= -t_i + t_iy_i + \sum_{j \neq i}^{C} t_jy_i \\
-&= -t_i + \sum_{j=1}^C t_jy_i \\
-&= -t_i + y_i \sum_{j=1}^C t_j \\
-&= y_i - t_i
-\end{align}$$
-
-参考：
-
-https://mp.weixin.qq.com/s/2xYgaeLlmmUfxiHCbCa8dQ
-
-softmax函数计算时候为什么要减去一个最大值？
-
-http://shuokay.com/2016/07/20/softmax-loss/
-
-Softmax输出及其反向传播推导
-
-https://mp.weixin.qq.com/s/HTIgKm8HuZZ_-lIQ3nIFhQ
-
-浅入深出之大话SoftMax
-
-https://mp.weixin.qq.com/s/XBK7T1P7z3rm3o-3BDNeOA
-
-三分钟带你对Softmax划重点
-
-https://mp.weixin.qq.com/s/vhvXsSsEHPVjJGqtCOOwLw
-
-Softmax和交叉熵的深度解析和Python实现
 
 # 李飞飞
 

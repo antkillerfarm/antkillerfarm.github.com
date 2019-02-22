@@ -122,7 +122,7 @@ VGG、AlexNet都是常见的CNN base。
 
 ## 评价标准
 
-目标检测一般采用mAP（mean Average Precision）作为评价标准。AP的含义参见《机器学习（二十一）》。
+目标检测一般采用mAP（mean Average Precision）作为评价标准。AP的含义参见《机器学习（二十二）》。
 
 对于多分类任务来说，每个分类都有一个AP，将这些AP平均（或加权平均）之后，就得到了mAP。
 

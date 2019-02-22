@@ -30,6 +30,10 @@ https://mp.weixin.qq.com/s/YdON6Yzddq2f_QGbQsOY8w
 
 ## 参考
 
+https://mp.weixin.qq.com/s/1gBC-bp4Q4dPr0XMYPStXA
+
+万字长文带你看尽深度学习中的各种卷积网络
+
 https://mp.weixin.qq.com/s/qReN6z8s45870HSMCMNatw
 
 微软亚洲研究院：逐层集中Attention的卷积模型

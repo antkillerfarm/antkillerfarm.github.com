@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  强化学习（二）——K-摇臂赌博机, Q-learning, MDP, 模仿学习
+title:  强化学习（二）——K-摇臂赌博机, Q-learning, MDP, 动态规划
 category: RL 
 ---
 
@@ -215,56 +215,28 @@ https://mp.weixin.qq.com/s/G8zmooqhSKqcLv1u7uM0bw
 
 AlphaGo等智能体是如何炼成的？你需要懂得马尔科夫链
 
-# A2C
+# 动态规划
 
-https://zhuanlan.zhihu.com/p/51652845
+Dynamic programming(DP)用于解决那些可分解为**重复子问题（overlapping subproblems）**并具有**最优子结构（optimal substructure）**的问题。这里的programming和编程并无任何关系。
 
-强化学习这都学不会的话，咳咳，你过来下！
+上世纪40年代，Richard Bellman最早使用动态规划这一概念表述通过遍历寻找最优决策解问题的求解过程。1953年，Richard Bellman将动态规划赋予现代意义，该领域被IEEE纳入系统分析和工程中。
 
-# 模仿学习
+除了Bellman之外，苏联的Lev Pontryagin也做出了很大的贡献，他和Bellman被并称为Optimal control之父。
 
-https://zhuanlan.zhihu.com/p/27935902
+>Lev Semyonovich Pontryagin，1908~1988，苏联数学家。主要研究代数拓扑和微分拓扑。他14岁时，因为煤气爆炸事故成为盲人。苏联科学院院士，国际数学家联盟副主席。
 
-机器人学习Robot Learning之模仿学习Imitation Learning的发展
+## 最优子结构
 
-https://zhuanlan.zhihu.com/p/25688750
+最优子结构即可用来寻找整个问题最优解的子问题的最优解。举例来说，寻找图上某顶点到终点的最短路径，可先计算该顶点所有相邻顶点至终点的最短路径，然后以此来选择最佳整体路径，如下图所示：
 
-模仿学习（Imitation Learning）完全介绍
+![](/images/article/Shortest_path_optimal_substructure.png)
 
-https://mp.weixin.qq.com/s/naq73D27vsCOUBperKto8A
+一般而言，最优子结构通过如下三个步骤解决问题：
 
-从监督式到DAgger，综述论文描绘模仿学习全貌
+a) 将问题分解成较小的子问题；
 
-https://mp.weixin.qq.com/s/LNNqp2KsEAljG26hY43mUw
+b) 通过递归使用这三个步骤求出子问题的最优解；
 
-ICML2018 模仿学习教程
+c) 使用这些最优解构造初始问题的最优解。
 
-# 世说新语
-
-## 2018.12（续）
-
-![](/images/img2/tenure.jpg)
-
-----
-
-https://zhuanlan.zhihu.com/p/53237519
-
-一文读懂印尼海啸的真正原因
-
-----
-
-日本作为岛国具有大量从事渔业与港口运输业的工人，上世纪初，神户市工人之间形成了有秩序的组织，名叫“大岛组”，山口春吉就是其中一员。
-
-1915年，胸怀大志的山口春吉在大岛组内部与兄弟们搞起了小帮派，算他在内一共33人，起名“山口组”。
-
-https://mp.weixin.qq.com/s/P5Fg7jsnepAXooSelPxHeg
-
-日本黑帮沦为养老中心
-
-----
-
-屯门海战是发生在1521年（明正德16年）8月底至9月间，由广东海道副使汪鋐指挥的在屯门地区抗击佛朗机（中国古代指葡萄牙）人的战役。屯门海战是中国第一次抗击西方殖民主义者的战役，以明朝的获胜而告终。
-
-## 2019.1
-
-全日空58号班机空难（又称雫石空难）发生于1971年7月30日，一架全日空的波音727客机从北海道札幌千岁机场前往东京羽田机场时，与一架航空自卫队的F-86军刀战斗机于岩手县雫石町附近相撞。造成58号班机上162人全部罹难；自卫队战机上的机师于飞机坠毁前弹出机外生还。
+子问题的求解是通过不断划分为更小的子问题实现的，直至我们可以在常数时间内求解。

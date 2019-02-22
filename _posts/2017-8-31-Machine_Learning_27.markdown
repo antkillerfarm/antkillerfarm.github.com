@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十七）——数据不平衡问题, 因果推理, 动态规划
+title:  机器学习（二十七）——数据不平衡问题, 因果推理, EMD, LSA
 category: ML 
 ---
 
@@ -154,88 +154,104 @@ https://mp.weixin.qq.com/s/O4JAv4NWp7NL-CzmaB6GxQ
 
 因果关系到底存不存在：反事实和平行宇宙
 
-# 动态规划
+# Earth mover's distance
 
-Dynamic programming(DP)用于解决那些可分解为**重复子问题（overlapping subproblems）**并具有**最优子结构（optimal substructure）**的问题。这里的programming和编程并无任何关系。
+推土机距离（EMD）是两个概率分布之间的距离度量的一种方式。如果将区间D的概率分布比作沙堆P，那么$$P_r$$和$$P_\theta$$之间的EMD距离，就是推土机将$$P_r$$改造为$$P_\theta$$所需要的工作量。
 
-上世纪40年代，Richard Bellman最早使用动态规划这一概念表述通过遍历寻找最优决策解问题的求解过程。1953年，Richard Bellman将动态规划赋予现代意义，该领域被IEEE纳入系统分析和工程中。
+![](/images/article/earth_move.png)
 
-除了Bellman之外，苏联的Lev Pontryagin也做出了很大的贡献，他和Bellman被并称为Optimal control之父。
+EMD的计算公式为：
 
->Lev Semyonovich Pontryagin，1908~1988，苏联数学家。主要研究代数拓扑和微分拓扑。他14岁时，因为煤气爆炸事故成为盲人。苏联科学院院士，国际数学家联盟副主席。
+$$EMD(P_r,P_\theta) = \frac{\sum_{i=1}^m \sum_{j=1}^n f_{i,j}d_{i,j}}{\sum_{i=1}^m \sum_{j=1}^n f_{i,j}}$$
 
-## 最优子结构
+其中，f表示土方量，d表示运输距离。
 
-最优子结构即可用来寻找整个问题最优解的子问题的最优解。举例来说，寻找图上某顶点到终点的最短路径，可先计算该顶点所有相邻顶点至终点的最短路径，然后以此来选择最佳整体路径，如下图所示：
+EMD可以是多维分布之间的距离。一维的EMD也被称为Match distance。
 
-![](/images/article/Shortest_path_optimal_substructure.png)
+EMD有时也称作Wasserstein距离。
 
-一般而言，最优子结构通过如下三个步骤解决问题：
+>Leonid Vaseršteĭn，俄罗斯数学家，Moscow State University硕博，现居美国，Penn State University教授。Wasserstein是他名字的德文拼法，并为英文文献所沿用。他在去美国之前，曾在德国住过一段时间。
 
-a) 将问题分解成较小的子问题；
+在文本处理中，有一个和EMD类似的编辑距离（Edit distance），也叫做Levenshtein distance。它是指两个字串之间，由一个转成另一个所需的最少编辑操作次数。许可的编辑操作包括将一个字符替换成另一个字符，插入一个字符，删除一个字符。一般来说，编辑距离越小，两个串的相似度越大。
 
-b) 通过递归使用这三个步骤求出子问题的最优解；
+>注：严格来说，Edit distance是一系列字符串相似距离的统称。除了Levenshtein distance之外，还包括Hamming distance等。
 
-c) 使用这些最优解构造初始问题的最优解。
+>Vladimir Levenshtein，1935年生，俄罗斯数学家，毕业于莫斯科州立大学。2006年获得IEEE Richard W. Hamming Medal。
 
-子问题的求解是通过不断划分为更小的子问题实现的，直至我们可以在常数时间内求解。
+参考：
 
-## 重复子问题
+https://vincentherrmann.github.io/blog/wasserstein/
 
-![](/images/article/Fibonacci_dynamic_programming.png)
+Wasserstein GAN and the Kantorovich-Rubinstein Duality
 
-重复子问题是指通过相同的子问题可以解决不同的较大问题。例如，在Fibonacci序列中，F3 = F1 + F2和F4 = F2 + F3都包含计算F2。由于计算F5需要计算F3和F4，一个比较笨的计算F5的方法可能会重复计算F2两次甚至两次以上。
+http://chaofan.io/archives/earth-movers-distance-%e6%8e%a8%e5%9c%9f%e6%9c%ba%e8%b7%9d%e7%a6%bb
 
-为避免重复计算，可将已经得到的子问题的解保存起来，当我们要解决相同的子问题时，重用即可。该方法即所谓的**缓存（memoization）**。
+Earth Mover's Distance——推土机距离
 
-动态规划通常采用以下两种方式中的一种：
+https://mp.weixin.qq.com/s/rvPLYa1NFg_LRvb8Y8-aCQ
 
-**自顶向下**：将问题划分为若干子问题，求解这些子问题并保存结果以免重复计算。该方法将递归和缓存结合在一起。
+Wasserstein距离在生成模型中的应用
 
-**自下而上**：先行求解所有可能用到的子问题，然后用其构造更大问题的解。该方法在节省堆栈空间和减少函数调用数量上略有优势，但有时想找出给定问题的所有子问题并不那么直观。
+https://mp.weixin.qq.com/s/2xOrSyyWSbp8rBVbFoNrxQ
 
-需要注意的是：动态规划更多的看作是一种解决问题的方法论，而非具体的数值算法，因此，很多不同领域的算法都可看做是动态规划算法的实例。参考文献中，就列出了不少这样的算法。显然，动态规划是一种**迭代（Iteration）算法**。
+Wasserstein is all you need：构建无监督表示的统一框架
 
-由前文的描述可知，MDP正好具备overlapping subproblems和optimal substructure的特性，因此也可以通过DP求解。
+https://mp.weixin.qq.com/s/NXDJ4uCpdX-YcWiKAsjJLQ
 
-在继续下文之前，推荐一波资源：
+传说中的推土机距离基础，最优传输理论了解一下
 
->David Poole，加拿大不列颠哥伦比亚大学教授。加拿大AI协会终身成就奖（2013年）。   
->个人主页：   
->http://www.cs.ubc.ca/~poole/index.html
+https://mp.weixin.qq.com/s/5sNXmQbINIWMGjX5TYAPYw
 
-David Poole的主页上有很多好东西：
+最优传输理论你理解了，传说中的推土机距离重新了解一下
 
-http://www.cs.ubc.ca/~poole/demos/
+# LSA
 
-该网页上有一些RL方面的用java applet做的可视化demo。由于年代比较久远，这些demo无法在目前的浏览器上运行。所以，我对其做了一些改造，使之能够使用。相关代码参见：
+## 基本原理
 
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/RL
+Latent Semantic Analysis（隐式语义分析），也叫Latent Semantic Indexing。它是PCA算法在NLP领域的一个应用。
 
-David Poole还写了一本书《Artificial Intelligence: foundations of computational agents》，目前已经是第2版了。
+在TF-IDF模型中，所有词构成一个高维的语义空间，每个文档在这个空间中被映射为一个点，这种方法维数一般比较高而且每个词作为一维割裂了词与词之间的关系。
 
-其中的代码资源参见：
+为了解决这个问题，我们要把词和文档同等对待，构造一个维数不高的语义空间，每个词和每个文档都是被映射到这个空间中的一个点。
 
-http://artint.info/AIPython/
+LSA的思想就是说，我们考察的概率既包括文档的概率，也包括词的概率，以及他们的联合概率。
 
-从该书所用编程语言的变迁，亦可感受到Poole教授不断学习的脚步。要知道Poole教授刚进入学术界的时代（1985年前后），就连Java也还没被发明出来呢。
+为了加入语义方面的信息，我们设计一个假想的隐含类包括在文档和词之间，具体思路是这样的：
 
-http://uhaweb.hartford.edu/compsci/ccli/samplep.htm
+1.选择一个文档的概率是$$p(d)$$
 
-Hartford大学的这个网站也有些不错的资料，偏重RL、机器人、ML for Game等领域。
+2.找到一个隐含类的概率是$$p(z\mid d)$$
 
-## RL与DP
+3.生成一个词w的概率为$$p(w\mid z)$$
 
-在继续讲述之前，我们首先来明确几个概念：
+## 实现方法
 
-![](/images/img2/RL_3.png)
+![](/images/article/Topic_model_scheme.jpg)
 
-$$v_{\pi}$$和$$q_{\pi}$$的定义参见《机器学习（二十五）》。
+上图中，行表示单词，列表示文档，单元格的值表示单词在文档中的权重，一般可由TF-IDF生成。
 
-$$v_*(s)=\max_{\pi}v_{\pi}(s)$$
+聪明的读者看到这里应该已经反应过来了，这不就是《机器学习（十四）》中提到的协同过滤的商品打分矩阵吗？
 
-$$q_*(s,a)=\max_{\pi}q_{\pi}(s,a)$$
+没错！LSA的实现方法的确与之类似。多数的blog讲解LSA算法原理时，由于单词-文档矩阵较小，直接采用了矩阵的SVD分解，少数给出了EM算法实现，实际上就是ALS或其变种。
 
-RL领域的DP算法的主要思想是：利用value function构建搜索Good Policy的方法。这里用$$v_*(s)$$或$$q_*(s, a)$$表示最优的value function。
+参考：
 
-RL DP主要包括以下算法：（为了抓住问题的本质，这里仅列出各算法最关键的Bellman equation，至于流程参照Q-learning算法即可。）
+http://www.cnblogs.com/kemaswill/archive/2013/04/17/3022100.html
+
+Latent Semantic Analysis(LSA/LSI)算法简介
+
+http://blog.csdn.net/u013802188/article/details/40903471
+
+隐含语义索引（Latent Semantic Indexing）
+
+http://www.shareditor.com/blogshow/?blogId=90
+
+比TF-IDF更好的隐含语义索引模型是个什么鬼
+
+http://shiyanjun.cn/archives/548.html
+
+使用libsvm+tfidf实现文本分类
+
+https://mp.weixin.qq.com/s/iZOVUYKWP-fN8BwAuVwAUw
+
+TF-IDF不容小觑
