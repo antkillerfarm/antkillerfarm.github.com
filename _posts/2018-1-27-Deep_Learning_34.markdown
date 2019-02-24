@@ -278,6 +278,10 @@ https://mp.weixin.qq.com/s/WmqagSGRy98USgnz21W3Pg
 
 WDSR
 
+https://mp.weixin.qq.com/s/oNavFLOPskHNxWIyBbFzHw
+
+WDSR (NTIRE2018 超分辨率冠军)
+
 https://mp.weixin.qq.com/s/AxHTaT-G5_Y6Iw_3aIIxCg
 
 超分辨率技术如何发展？这6篇ECCV 18论文带你一次尽览
@@ -293,6 +297,10 @@ https://mp.weixin.qq.com/s/eJkkbGBYxWlngkT5gjjW7g
 https://mp.weixin.qq.com/s/M8gCrQDtjT1lszsxV2QQKg
 
 FSRNet：端到端深度可训练人脸超分辨网络
+
+https://mp.weixin.qq.com/s/fkHfzkHRFpEGc-L4uGlqcg
+
+从网络设计到实际应用，深度学习图像超分辨率综述
 
 # CNN进阶
 

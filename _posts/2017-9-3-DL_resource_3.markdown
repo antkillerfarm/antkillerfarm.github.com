@@ -262,6 +262,10 @@ https://mp.weixin.qq.com/s/wyn-V4-DcjjOKziith3pXw
 
 开源星际争霸2多智能体挑战smac
 
+https://mp.weixin.qq.com/s/WabOUqqK6RW8mTNR53esYQ
+
+DeepMind让AI组队踢足球学会“合作”，并开源训练环境
+
 ## 并行 & 框架
 
 https://zhuanlan.zhihu.com/p/26552293

@@ -222,7 +222,27 @@ Fama–French three-factor model
 
 Carhart four-factor model
 
-# DL参考资源+
+# DL参考资源
+
+https://mp.weixin.qq.com/s/wmSxk0z-14PXd5JslAdp2A
+
+Numerical Coordinate Regression=高斯热图 VS 坐标回归
+
+https://mp.weixin.qq.com/s/GneKO8VxWqBykVARlliEzA
+
+强强联合！数据和物理学“联手”构建神经网络模型PGNN
+
+https://mp.weixin.qq.com/s/pINZlL7NEGSWbfb03b0dJA
+
+Edward2.2，一种可以用TPU大规模训练的概率编程
+
+https://mp.weixin.qq.com/s/Y_qX16JaenbPtLiEiRhHpw
+
+隐私和机器学习：两个意想不到的盟友？一文了解差分隐私
+
+https://mp.weixin.qq.com/s/X-AmDqzIYD5l1AMuojhd4g
+
+类人化标注：多样性和独特性图像标注
 
 https://mp.weixin.qq.com/s/gPI6Vq6smDn8IiKhGe61bA
 
@@ -319,35 +339,3 @@ https://mp.weixin.qq.com/s/_w4IIRY6LwqehpDlEXt90A
 https://mp.weixin.qq.com/s/w-6z8B60cIHUF5tU-RoQ3w
 
 旷视科技提出统一感知解析网络UPerNet，优化场景理解
-
-https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
-
-北大：一种基于新闻特征抽取和循环神经网络的股票预测方法
-
-https://mp.weixin.qq.com/s/_QPzoFyhCxnIxDWKzzsvAQ
-
-智能交通大数据最新论文综述
-
-https://mp.weixin.qq.com/s/eYTDwSqgj-r7yV7w9tY_MA
-
-融合质量不理想数据
-
-https://mp.weixin.qq.com/s/tduZoZecbOM0gC9Ugerbwg
-
-用AI设计微波集成电路，清华大学等提出深度强化学习方法RINN
-
-https://mp.weixin.qq.com/s/zcuTY9oWKhAQ8z0rx4nY4A
-
-让TA说你想听的—基于音/视频特征解离的讲述者人脸生成
-
-https://mp.weixin.qq.com/s/gjVLbH_S0t7jcjCYhpsTgw
-
-基于深度学习的人脑视觉神经信息编解码研究进展及挑战
-
-https://mp.weixin.qq.com/s/XNKEOlJrTVH2zsu8pdY4gA
-
-从三大案例，看如何用CV模型解决非视觉问题
-
-https://mp.weixin.qq.com/s/lcgnnXMUO8C3oLUPmxthjQ
-
-深度学习不再是炼丹术！谷歌给出首个神经网络训练理论证明

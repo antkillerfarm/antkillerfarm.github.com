@@ -218,6 +218,10 @@ https://mp.weixin.qq.com/s/YxRPhTVu3zjVTzWn1290HQ
 
 第二代NumPy？阿里开源超大规模矩阵计算框架Mars
 
+https://mp.weixin.qq.com/s/0OSweIx9ibpp2bc5N61I4Q
+
+C++程序员也能用上NumPy了
+
 ## SciPy
 
 SciPy提供了一些更高阶的数学运算库，比如：积分、插值、信号处理、傅立叶变换、矩阵特征值、统计计算等。

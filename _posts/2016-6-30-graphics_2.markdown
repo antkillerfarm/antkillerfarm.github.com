@@ -48,6 +48,12 @@ http://blog.csdn.net/likezhaobin/article/details/6915755
 
 灰度图像阈值化分割常见方法总结及VC实现
 
+## 参考
+
+https://mp.weixin.qq.com/s/xCmagMDmcPRf3xAkOMT4rw
+
+视觉与图像：阈值分割
+
 # 方框滤波（Box Filter）
 
 $$g=f\otimes h,h=\alpha

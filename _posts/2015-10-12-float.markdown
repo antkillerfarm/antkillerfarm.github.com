@@ -246,84 +246,40 @@ https://mp.weixin.qq.com/s/bUtu2nTs0bybnTvk-iLt6Q
 
 GTS来了！阿里微服务架构下的分布式事务解决方案
 
-# Machine Learning之Python篇
+# DL参考资源+
 
-https://mp.weixin.qq.com/s/wlUH5aavqHDXOvBTnxvAdg
+https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
 
-详解中文维基百科数据处理流程及脚本代码
+北大：一种基于新闻特征抽取和循环神经网络的股票预测方法
 
-https://mp.weixin.qq.com/s/Y0fcVw6KUfoM8UWvk8VoPg
+https://mp.weixin.qq.com/s/_QPzoFyhCxnIxDWKzzsvAQ
 
-Scikit-learn玩得很熟了？这些功能你都知道吗？
+智能交通大数据最新论文综述
 
-https://mp.weixin.qq.com/s/iN-hXd6iGkFC8bxAjwxHNw
+https://mp.weixin.qq.com/s/eYTDwSqgj-r7yV7w9tY_MA
 
-一文简述多种无监督聚类算法的Python实现
+融合质量不理想数据
 
-https://mp.weixin.qq.com/s/rDg0mPA715zHmwpDMC_83Q
+https://mp.weixin.qq.com/s/tduZoZecbOM0gC9Ugerbwg
 
-用Python写一个抖音漂亮小姐姐发掘器。使用腾讯人脸API
+用AI设计微波集成电路，清华大学等提出深度强化学习方法RINN
 
-https://mp.weixin.qq.com/s/4PyXz2p00Lf783bEUg_N2Q
+https://mp.weixin.qq.com/s/zcuTY9oWKhAQ8z0rx4nY4A
 
-距离产生美？k近邻算法python实现
+让TA说你想听的—基于音/视频特征解离的讲述者人脸生成
 
-https://mp.weixin.qq.com/s/E0INxsn_p-MBNA-wg-2nbQs
+https://mp.weixin.qq.com/s/gjVLbH_S0t7jcjCYhpsTgw
 
-无监督学习—聚类、层次聚类、t-SNE，DBSCAN
+基于深度学习的人脑视觉神经信息编解码研究进展及挑战
 
-https://mp.weixin.qq.com/s/EL1lST59dVibr6vIbqkdzw
+https://mp.weixin.qq.com/s/XNKEOlJrTVH2zsu8pdY4gA
 
-如何用200行Python代码换张脸
+从三大案例，看如何用CV模型解决非视觉问题
 
-https://mp.weixin.qq.com/s/440osIoULBRDOHq7Bk8awA
+https://mp.weixin.qq.com/s/lcgnnXMUO8C3oLUPmxthjQ
 
-一文带你了解Python集合与基本的集合运算
+深度学习不再是炼丹术！谷歌给出首个神经网络训练理论证明
 
-https://mp.weixin.qq.com/s/tJwgNXKVwoJby-WkeMeBqQ
+https://mp.weixin.qq.com/s/fhpYkWiLGwSbpRsrwBcV9g
 
-40行Python代码实现“旅行者困境“演化过程
-
-https://mp.weixin.qq.com/s/xYNCKy36n8CoaGzABlI5Wg
-
-从零开始用python搭建推荐引擎
-
-https://mp.weixin.qq.com/s/vAn_rnUt036-3jy7ZahF8w
-
-文本挖掘，带你看金庸笔下不一样的恩怨情仇
-
-https://mp.weixin.qq.com/s/84Rk5CP2uLaCBIifL465VQ
-
-从统计到概率，入门者都能用Python试验的机器学习基础
-
-https://mp.weixin.qq.com/s/O9QDUNXftZeEohxiW6LtZw
-
-朴素贝叶斯详解及中文舆情分析
-
-https://mp.weixin.qq.com/s/wIaDAewwOBMPRDr28DqGoQ
-
-Feature Tools：可自动构造机器学习特征的Python库
-
-https://mp.weixin.qq.com/s/zfAVXJJmvHgi3JkM_ryDVA
-
-Python高效数据分析的8个技巧
-
-https://mp.weixin.qq.com/s/Ke3K3i8paNlweciJepiuwQ
-
-复旦中文文本分类过程
-
-https://mp.weixin.qq.com/s/q61G4WldzCCLO7Fzujb_LA
-
-图像去噪
-
-https://mp.weixin.qq.com/s/Ij9L-swxx6gmaEH4YQb0tQ
-
-如何用Python检测视频真伪？
-
-https://mp.weixin.qq.com/s/5YHyM7gILvCItScvYYoANQ
-
-Python实现文字转语音功能
-
-https://mp.weixin.qq.com/s/D_e8lxO3cx-dshEQ_zhfzQ
-
-如何利用散点图矩阵进行数据可视化
+多轴3D打印中的几何计算

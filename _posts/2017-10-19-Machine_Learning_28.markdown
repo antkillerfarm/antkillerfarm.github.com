@@ -1,8 +1,78 @@
 ---
 layout: post
-title:  机器学习（二十八）——Monte-Carlo
+title:  机器学习（二十八）——异常检测, Monte-Carlo
 category: ML 
 ---
+
+# 异常检测
+
+1.基于聚类算法的异常检测。
+
+2.基于孤立森林算法的异常检测。
+
+3.基于支持向量机算法的异常检测。
+
+4.基于高斯分布的异常检测。
+
+5.基于马尔可夫链的异常检测。
+
+参考：
+
+http://chuansong.me/n/377440751130
+
+异常点检测算法（一）
+
+http://jiangshuxia.9.blog.163.com/blog/static/3487586020083662621887/
+
+异常(Outlier)检测算法综述
+
+http://www.cnblogs.com/fengfenggirl/p/iForest.html
+
+异常检测算法--Isolation Forest
+
+https://mp.weixin.qq.com/s/xsuLIMPJVCThBGMRlz09Hg
+
+Isolation Forest算法原理详解
+
+http://www.bigdata8.top/front/article/466
+
+异常值检测-滑动均值实现智能告警
+
+https://mp.weixin.qq.com/s/ujG6Fr161kZh3S-lEiTJUg
+
+异常检测（Anomaly Detection）
+
+https://mp.weixin.qq.com/s/_Sds7O1wonVARKkb7qscww
+
+腾讯：机器学习构建通用的数据异常检测平台
+
+https://mp.weixin.qq.com/s/UcMPIf6ZRAhPjn79H2n1ig
+
+异常点检测算法小结
+
+https://mp.weixin.qq.com/s?__biz=MzIxODM4MjA5MA==&mid=2247487342&idx=3&sn=1981a6caec4591a19043d7a6176d359f
+
+异常检测的阈值，你怎么选？给你整理好了...
+
+https://mp.weixin.qq.com/s/ReQpT9KT6_tE8vXM-F_Ejw
+
+从“马蜂窝事件”看，投资人如何避免数据尽职调查背后的交易风险？新时代数据造假特征及应对方法
+
+https://www.zhihu.com/question/30508773
+
+反欺诈(Fraud Detection)中所用到的机器学习模型有哪些？
+
+https://mp.weixin.qq.com/s/jB5o4a6O4rrhMYD0GhKclw
+
+基于机器学习算法的时间序列价格异常检测
+
+https://mp.weixin.qq.com/s/PKX13Fv5fWmgX5IHLYgjmQ
+
+基于无监督学习的期权定价异常检测
+
+https://mp.weixin.qq.com/s/l1OKsahXHrFGr4YX441c9A
+
+时序数据异常检测工具/数据集大列表
 
 # Monte-Carlo
 

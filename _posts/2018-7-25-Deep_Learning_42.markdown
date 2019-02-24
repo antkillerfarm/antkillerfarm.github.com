@@ -158,62 +158,6 @@ https://zhuanlan.zhihu.com/p/55787893
 
 # 人脸识别进阶
 
-https://mp.weixin.qq.com/s/wcKUURsYiEYVzn7qTMVPag
-
-格灵深瞳：人脸识别最新进展以及工业级大规模人脸识别实践探讨
-
-https://mp.weixin.qq.com/s/Cy5gxHl_Z4v7BX0k8SDNSQ
-
-AI人像美妆算法初识
-
-https://mp.weixin.qq.com/s/5vx1FGgSOhF71FwHeUwaAQ
-
-清华&商汤开源CVPR2018超高精度人脸对齐算法LAB
-
-https://mp.weixin.qq.com/s/PW_fjdC0hzzwmeY3gUXPkw
-
-如何降低遮挡对人脸识别的影响
-
-https://mp.weixin.qq.com/s/UFOB2V12gQQ3mV-Kh9RTUw
-
-高精度人脸表情识别
-
-https://zhuanlan.zhihu.com/p/35968767
-
-格灵深瞳首席科学家张徳兵：如何进行上亿类的人脸识别？
-
-https://mp.weixin.qq.com/s/b-v_hDHJjUxMithBDr3TcQ
-
-实时旋转鲁棒人脸检测算法
-
-https://blog.csdn.net/xiamentingtao/article/details/50908190
-
-Facial Landmark Detection(人脸特征点检测)
-
-https://mp.weixin.qq.com/s/ZZmLbFzi843g0k3gTncQmA
-
-拿下人脸识别“世界杯”冠军！松下-NUS和美国东北大学实战分享
-
-https://mp.weixin.qq.com/s/DYCXef_09yFFNR0uHL2Q0Q
-
-基于Python的开源人脸识别库：离线识别率高达99.38%
-
-https://mp.weixin.qq.com/s/eOxd5XbeyVcRYyAAmPr20Q
-
-利用空间融合卷积神经网络通过面部关键点进行伪装人脸识别
-
-https://mp.weixin.qq.com/s/vAjWHpn5HP_lwSv49g71SA
-
-新型半参数变分自动编码器DeepCoder：可分层级编码人脸动作
-
-https://mp.weixin.qq.com/s/IS5iAPZeUrvvyWs29O8Ukg
-
-通过提取神经元知识实现人脸模型压缩
-
-https://mp.weixin.qq.com/s/DEJ0z2CahZIrhTE3VXNVvg
-
-基于注意力机制学习的人脸幻构
-
 https://mp.weixin.qq.com/s/-G94Mj-8972i2HtEcIZDpA
 
 人脸识别世界杯榜单出炉，微软百万名人识别竞赛冠军分享
@@ -377,3 +321,7 @@ https://mp.weixin.qq.com/s/Chw_gLxQHdfe0hFJGMk-3A
 https://mp.weixin.qq.com/s/E9Esoe4VHvMdJNTbxF-sXA
 
 ShapeNet:超实时人脸特征点检测与形状拟合开源库
+
+https://mp.weixin.qq.com/s/pmnb_WnncL12T1IZoso5DA
+
+DeepID

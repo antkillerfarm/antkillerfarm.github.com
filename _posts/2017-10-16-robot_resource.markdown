@@ -8,7 +8,7 @@ category: resource
 
 由于已经有了强化学习系列blog和资源，因此本资源中不再包含强化学习的内容。但毫无疑问，强化学习才是这方面的主角。
 
-此外，SLAM、Apollo、传感器系列也有单独的资源，这里不再列出。
+此外，SLAM、Apollo、传感器（主要是传感器的物理原理，不包括传感器数据的融合处理。）系列也有单独的资源，这里不再列出。
 
 ## 行业
 
@@ -226,6 +226,20 @@ https://blog.csdn.net/Shawn_Zhangguang/article/details/78737686
 
 ArUco--一个微型现实增强库的介绍及视觉应用
 
+## AUTOSAR
+
+AUTOSAR是AUTOmotive Open System Architecture（汽车开放系统架构）的首字母缩写，由汽车制造商，供应商以及工具开发商联合开发的一个开放的、标准化的软件架构。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/41602815
+
+AUTOSAR概述 & 基于AUTOSAR的时间同步
+
+https://zhuanlan.zhihu.com/p/57459276
+
+软件架构--基于AUTOSAR的多模块任务分配策略
+
 ## 参考
 
 https://rsu.data61.csiro.au/people/jalvarez/research_bbdd.php
@@ -261,6 +275,10 @@ https://mp.weixin.qq.com/s/7gBl3ckqk7gQJ0FGMmv_jg
 https://mp.weixin.qq.com/s/pPPq3b1yj92RaGgIpTAhqQ
 
 一文看透汽车无人驾驶技术、产品和市场
+
+https://zhuanlan.zhihu.com/p/41460767
+
+无人驾驶与视觉感知导读
 
 https://mp.weixin.qq.com/s/ZePNQ3l3uMMIlndk20sOVA
 
@@ -393,35 +411,3 @@ Lattice Planner规划算法
 https://mp.weixin.qq.com/s/5TyL9bkKe-XMKLl-QbtaZg
 
 西电智能学子斩获ECCV2018无人机挑战赛冠军—算法分享
-
-https://mp.weixin.qq.com/s/1SxwYqcxB8zIavr11cIGWg
-
-机器学习及深度学习在自动驾驶中的应用
-
-https://mp.weixin.qq.com/s/2gk1xF3lh2ioIGQeY_ZsHQ
-
-highD：德国提出从空中角度测量车辆数据的新方法
-
-https://mp.weixin.qq.com/s/f25RbCRoWT9Ft6m_G3lyvQ
-
-全美225万公里道路没标识？揭开无人车的极端行驶秘籍
-
-https://mp.weixin.qq.com/s/8jZKgSeRw7k0F9JOigFJcw
-
-自动驾驶之——CAN总线简介
-
-https://mp.weixin.qq.com/s/U-Nzj3NM3acjkprVuyComg
-
-汽车CAN总线技术详解
-
-https://mp.weixin.qq.com/s/F8aLNue_qDlMyTAznBLC7g
-
-GPS/IMU/DMI组合导航方法研究
-
-https://mp.weixin.qq.com/s/TvRcJws7NKt-twHUyPlJvw
-
-LiDAR技术介绍
-
-https://mp.weixin.qq.com/s/ArreA2g24n-jqU7vfIE_rA
-
-自动驾驶核心技术之——路径规划

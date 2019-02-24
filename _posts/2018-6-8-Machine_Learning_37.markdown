@@ -355,3 +355,7 @@ https://mp.weixin.qq.com/s/hkXyqe6tDdgNuLgk3e90JQ
 https://mp.weixin.qq.com/s/jCXfu6AHFWnQL118r38Zpw
 
 全球顶级算法赛事Top5选手，跟你聊聊推荐系统领域的“战斗机”
+
+https://mp.weixin.qq.com/s/RAQrW6Fchynbc1Rd9IcOJQ
+
+清华张敏教授: 个性化推荐的可解释性、鲁棒性和公平性

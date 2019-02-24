@@ -254,3 +254,7 @@ https://mp.weixin.qq.com/s/Dygdn0Xzpx40-zUQadiiHg
 https://mp.weixin.qq.com/s/auNRIPYEwRlROFXug41Ang
 
 简单初始化，训练10000层CNN
+
+https://mp.weixin.qq.com/s/iSJyOe81dnEuaKzOih6WNg
+
+什么是深度学习成功的开始？参数初始化

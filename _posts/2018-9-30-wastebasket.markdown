@@ -368,7 +368,7 @@ Processing是一个在可视化领域用的比较多的sketchbook，类似于Log
 
 https://processing.org
 
-# NLP参考资源
+# NLP参考资源+
 
 https://mp.weixin.qq.com/s/-YmB6QSQ01EsHfXB40MMcQ
 
@@ -381,3 +381,15 @@ CMU开源NLP生成句子评估工具，帮你快速分析模型产出
 https://mp.weixin.qq.com/s/Y99PgmD3ilHGhURWFL6rzg
 
 云从科技联手上海交大提出端到端统一语义角色标注
+
+https://mp.weixin.qq.com/s/wJry8N4FC9KVv_bVGuzXXw
+
+LinkedIn文本分析平台：主题挖掘的四大技术步骤
+
+http://mp.weixin.qq.com/s/Or6oDt0aZFlnlMr8EBr-xQ
+
+三角兽首席科学家王宝勋：热度之下的对话生成
+
+https://mp.weixin.qq.com/s/i4u4Ty8kC0zzUpmRqj8g7A
+
+473个模型试验告诉你文本分类中的最好编码方式

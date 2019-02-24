@@ -294,80 +294,60 @@ https://mp.weixin.qq.com/s/mMiAGH2Yz42xes7jicyygA
 
 “超级芯片”或在十年内诞生，摩尔定律再续一命！（自旋电子逻辑器件“MESO器件”）
 
-# 机器人/无人驾驶参考资源
+# 知识图谱参考资源
 
-https://www.zhihu.com/question/305705783
+https://mp.weixin.qq.com/s/d4cEHHo6OhlWEIXTFIdTuA
 
-工厂里的自动化搬运是如何实现准确定位精准送达的？
+知识图谱相关实体搜索
 
-https://mp.weixin.qq.com/s/K1EIKe6U7rmlYAeZkP5O1w
+https://mp.weixin.qq.com/s/7LFkOzkD1-PsNNAr5DAETg
 
-一种新的智能车辆精确定位方法——路面车道线编码
+TechKG：一个面向中文学术领域的大型知识图谱
 
-https://blog.csdn.net/Young_Gy/article/details/75194914
+https://mp.weixin.qq.com/s/QNTJngwEDtxufEpIGTngCw
 
-无人驾驶之车道线检测简易版
+事理图谱，下一代知识图谱
 
-https://mp.weixin.qq.com/s/M-J_WaV6AstRwZISPYQ-NA
+https://mp.weixin.qq.com/s/0bTmzKiC7WDbLRcxfAAGqw
 
-再识图像之高级车道线检测
+提取计数量词丰富知识库
 
-https://mp.weixin.qq.com/s/7kuMFIhJmjvVSRrmeAUE7w
+https://mp.weixin.qq.com/s/9MToVjepCZuTgXz967ugjg
 
-120页高清汽车构造图解，太NB了！每个人都该看看
+如何自动地向知识图谱中添加属性？
 
-https://mp.weixin.qq.com/s/EzaqSrhOCnu5i6CooHpZEA
+https://mp.weixin.qq.com/s/a3mGbLMfTxYuMcraW0JWdQ
 
-将预测问题简化为选择问题——Apollo车道预测详解
+知识图谱最新论文清单，高阶炼丹师为你逐一解读
 
-https://mp.weixin.qq.com/s/mc11Ozbf7-DpDagmy553OA
+https://mp.weixin.qq.com/s/p6SDazuTjgG1ERl5ku2-VQ
 
-基于多点预瞄最优控制的智能车辆路径跟踪
+如何构建多快好省的“知识图谱即服务”？
 
-https://mp.weixin.qq.com/s/pMnbVWDDVgIdFpzkfSUd5Q
+https://mp.weixin.qq.com/s/fVABfj2W8JpDH2p8hWm8wA
 
-时延MPC自主车辆协同控制算法与仿真
+区分概念和实例的知识图谱嵌入方法
 
-https://mp.weixin.qq.com/s/VUsVB2mo8WMs0MoYNIhhqA
+https://mp.weixin.qq.com/s/gxNxROI8o3EEhguKx8Hrfg
 
-深度学习应用于复杂系统控制
+AMUSE: 基于RDF数据的多语言问答语义解析方法
 
-https://mp.weixin.qq.com/s/g8MQyq9GFcUzP-W7fbNYRw
+https://mp.weixin.qq.com/s/sRy534XgBDSlK_pTu98KXA
 
-四维图新：高精度地图构建的实时物体检测和分割
+基于图注意力的常识对话生成
 
-https://mp.weixin.qq.com/s/Gn1FCcWLyXMviWBUP6SLGQ
+https://mp.weixin.qq.com/s/Lc5CJwuS4DpvYkZpzWDBUQ
 
-迭代学习控制算法在自动驾驶车辆轨迹跟踪中的应用
+对话清华NLP实验室刘知远：NLP搞事情少不了知识库与图神经网络
 
-https://mp.weixin.qq.com/s/F2Vyx3LXKcz2C2J5KHGVLg
+https://mp.weixin.qq.com/s/R-mY_23bqol1VfA1125xiw
 
-基于深度学习的多模态情绪识别与疲劳驾驶检测
+67亿美金搞个图，创建知识图谱的成本有多高你知道吗？
 
-https://mp.weixin.qq.com/s/i793SOBdI4GyrfG_5kb3lg
+https://mp.weixin.qq.com/s/Emlzfgoo99T9xAsTKJRQXg
 
-鲁汶大学提出可端到端学习的车道线检测算法
+一文看懂虚假新闻检测
 
-https://mp.weixin.qq.com/s/Uq2Acgo8eSD321AzdiPeJw
+https://mp.weixin.qq.com/s/vrBlBCeYsEhYoP0BYT85bQ
 
-用霍夫变换&SCNN码一个车道追踪器
-
-https://mp.weixin.qq.com/s/bSf1BGcKdFcIcfm7CxH4-w
-
-不用GPS和地图，世界上最大的“蚂蚁”机器人诞生了
-
-https://mp.weixin.qq.com/s/vKkjYdf6Ast7wWcW9oIEuA
-
-88美元的自动驾驶“自制原子弹”，最著名黑客详解panda系统
-
-https://mp.weixin.qq.com/s/SPUDLKgSw7wjGnnJk2swRw
-
-有触觉，懂策略，能交互！MIT开发出比你更灵活的搭积木大师，还发了Science子刊
-
-https://mp.weixin.qq.com/s/FmqMg-j-Mf2nguHbuCyXAA
-
-自动驾驶中的驾驶行为建模和预测方法
-
-https://mp.weixin.qq.com/s/qZwqp5x6yEXbMBHGzevm0g
-
-ACC自适应巡航控制系统介绍
+基于知识库的自然语言理解

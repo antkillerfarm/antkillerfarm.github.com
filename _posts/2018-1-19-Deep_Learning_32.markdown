@@ -110,6 +110,10 @@ https://mp.weixin.qq.com/s/8Twe3e3WKCY9pTiNtnW2sg
 
 重磅！谷歌等推出基于机器学习的数据库SageDB
 
+https://mp.weixin.qq.com/s/NJf5e25tvT_xKXLD7UY1AQ
+
+MySQL智能调度系统。这篇blog其实和MySQL关系不大，算是DL在负载均衡方面的应用吧。
+
 # NN Quantization
 
 ## 概述

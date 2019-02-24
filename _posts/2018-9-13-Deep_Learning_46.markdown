@@ -220,31 +220,9 @@ https://mp.weixin.qq.com/s/JA6ey6N3Zho92L6jh_bRkg
 
 EAST场景文字检测模型使用
 
-# 元学习+
+https://mp.weixin.qq.com/s/KzsphgzCtu9w8l3GHGUbXA
 
-https://zhuanlan.zhihu.com/p/46340382
-
-ICLR19最新论文解读之Meta Domain Adaptation
-
-https://mp.weixin.qq.com/s/RBMGI20AI92ZcWSlYczqAA
-
-伯克利、OpenAI等提出基于模型的元策略优化强化学习
-
-https://mp.weixin.qq.com/s/p0dcov84pZqsU7XP30bexQ
-
-Meta-Learning元学习：学会快速学习
-
-https://mp.weixin.qq.com/s/wl8j7dLu3OxPV7MNaO2-7Q
-
-《基于梯度的元学习》199页伯克利博士论文带你回顾元学习最新发展脉络
-
-https://mp.weixin.qq.com/s/ftiGPBhAx5iqlW_Ltg1yhg
-
-《元监督视觉学习》132页伯克利博士论文带你回顾元监督视觉应用最新发展脉络
-
-https://mp.weixin.qq.com/s/K7sLM-LMcF6-gQrV1ddrDw
-
-让智能体主动交互，DeepMind提出用元强化学习实现因果推理
+ctpn：图像文字检测方法
 
 # 深度哈希
 
@@ -421,3 +399,7 @@ https://mp.weixin.qq.com/s/2f91Ksj19rk_emoFpEmPfA
 https://mp.weixin.qq.com/s/g6-NjoFMPpxjsh38X-wTFQ
 
 BERT，GPT-2这些顶尖工具到底该怎么用到我的模型里?
+
+https://mp.weixin.qq.com/s/N6xBFZ82dkSGCbj6vC5nLQ
+
+上下文预训练模型最全整理：原理、应用、开源代码、数据分享

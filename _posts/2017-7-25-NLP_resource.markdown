@@ -82,6 +82,10 @@ https://mp.weixin.qq.com/s/5ftsfNSAb7pAizVA5m-xXw
 
 2017年回顾：NLP、深度学习与大数据
 
+https://mp.weixin.qq.com/s/nN_-M37IlZ96cF6uqKGjRg
+
+2018年自然语言取得不错的研究有哪些？
+
 https://mp.weixin.qq.com/s/ClJ24ooVO1Em6pp81YaSdQ
 
 一步步教你构建NLP pipeline
@@ -133,6 +137,10 @@ https://mp.weixin.qq.com/s/zgmpxfpn2OkPflZRpfrD7A
 https://mp.weixin.qq.com/s/RVg2_abeeYVDlvDRkzPpPQ
 
 常见近30种NLP任务的练手项目
+
+https://mp.weixin.qq.com/s/xlQOfAY0rAeXH6bntLMexQ
+
+优质中文NLP资源集合，做项目一定用得到！
 
 https://mp.weixin.qq.com/s/Rd3-ypRYiJObi-e2JDeOjQ
 
@@ -405,15 +413,3 @@ https://mp.weixin.qq.com/s/Ks9BVr6YC-naX2-iadI78w
 https://mp.weixin.qq.com/s/c7nXiFCI3urS0cbSUSsgYg
 
 哈工大刘挺教授：自然语言处理的十个发展趋势
-
-https://mp.weixin.qq.com/s/wJry8N4FC9KVv_bVGuzXXw
-
-LinkedIn文本分析平台：主题挖掘的四大技术步骤
-
-http://mp.weixin.qq.com/s/Or6oDt0aZFlnlMr8EBr-xQ
-
-三角兽首席科学家王宝勋：热度之下的对话生成
-
-https://mp.weixin.qq.com/s/i4u4Ty8kC0zzUpmRqj8g7A
-
-473个模型试验告诉你文本分类中的最好编码方式

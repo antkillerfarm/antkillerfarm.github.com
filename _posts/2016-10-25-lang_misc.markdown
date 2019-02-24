@@ -150,6 +150,10 @@ https://mp.weixin.qq.com/s/zZbK5VPlr43CleExwDoBxw
 
 如何在Julia编程中实现GPU加速
 
+https://mp.weixin.qq.com/s/G0u_mP7xBJ7mx4eerdiY_g
+
+为什么Julia比Python快？
+
 # Go
 
 https://mp.weixin.qq.com/s/ka5woeuvNxX3Y0Y4UMlruw
@@ -374,10 +378,6 @@ https://mp.weixin.qq.com/s/-4b3u02KiIt5i4Yzz-Ed3g
 
 从信息论的角度理解与可视化神经网络
 
-https://mp.weixin.qq.com/s/NJf5e25tvT_xKXLD7UY1AQ
-
-MySQL智能调度系统。这篇blog其实和MySQL关系不大，算是DL在负载均衡方面的应用吧。
-
 https://mp.weixin.qq.com/s/VdMYtZfH0yBNWMbiuGElOg
 
 商汤及联合实验室入选论文重点解读：ECCV 2018
@@ -397,4 +397,3 @@ https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247491876&idx=1&sn=e431c2
 https://mp.weixin.qq.com/s/aPBPzBEGoiXF0-uMO_BCFQ
 
 iCAN：以人为中心的“人-物”交互检测网络
-

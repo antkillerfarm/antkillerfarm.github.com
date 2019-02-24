@@ -271,7 +271,7 @@ https://mp.weixin.qq.com/s/0oVG7zMi08dzMQrk43T3mw
 
 ## RND
 
-OpenAI最近开发了RND（ Random Network Distillation），一种基于预测的强化学习算法，用于鼓励强化学习代理通过好奇心来探索他们所处环境。在游戏任务Montezuma's Revenge上首次超过人类的平均表现。
+OpenAI最近开发了RND（Random Network Distillation），一种基于预测的强化学习算法，用于鼓励强化学习代理通过好奇心来探索他们所处环境。在游戏任务Montezuma's Revenge上首次超过人类的平均表现。
 
 blog：
 
@@ -282,41 +282,3 @@ Reinforcement Learning with Prediction-Based Rewards
 代码：
 
 https://github.com/openai/random-network-distillation
-
-# Machine Learning之Python篇
-
-https://mp.weixin.qq.com/s/-s5K8gl4Xdjh_1xgTn9PZg
-
-维基百科中的数据科学：手把手教你用Python读懂全球最大百科全书
-
-https://mp.weixin.qq.com/s/LiilfmvA5YUaY3QUQD6odA
-
-如何用Python将数据预处理速度提升2至6倍？
-
-https://mp.weixin.qq.com/s/QZT1SLCVFXBE-1FNNhWk0g
-
-利用AllenNLP，百行Python代码训练情感分类器
-
-https://mp.weixin.qq.com/s/4s7lDKlQjV1mUoVv558Y7Q
-
-面向云数据库，超低延迟文件系统PolarFS诞生了
-
-https://mp.weixin.qq.com/s/VfmudolvWzQN4ghgnI2rZA
-
-机器学习中Python库的3个简单实践——你的图片将由你来创造
-
-https://mp.weixin.qq.com/s/goxciguoxcamTo2WyUd1Lg
-
-大吉大利，今晚如何用Python解锁“吃鸡”的正确姿势
-
-https://mp.weixin.qq.com/s/dQ75O2h1orGzKcaCSDWshQ
-
-自然语言处理是如何工作的？一步步教你构建NLP流水线
-
-https://mp.weixin.qq.com/s/dwxTla5iiYKvELrpbWf1yQ
-
-8个Python高效数据分析的技巧
-
-https://mp.weixin.qq.com/s/TYiqZvY25qxHcmEXRpqO5Q
-
-如何用Python做自动化特征工程
