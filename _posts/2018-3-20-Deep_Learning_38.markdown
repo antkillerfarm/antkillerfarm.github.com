@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十八）——深度强化学习, Apollo, 多任务学习, RNN进阶, 深度推荐系统进阶
+title:  深度学习（三十八）——Apollo, 多任务学习, RNN进阶, 深度推荐系统进阶
 category: DL 
 ---
 

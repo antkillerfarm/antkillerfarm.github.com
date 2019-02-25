@@ -154,6 +154,10 @@ https://zhuanlan.zhihu.com/intelligentunit
 
 一个DL+RL的专栏
 
+https://www.cnblogs.com/pinard/category/1254674.html
+
+一个DRL的专栏
+
 # 概述
 
 ![](/images/img2/RL_intro.png)
@@ -266,6 +270,12 @@ $$$$
 
 ![](/images/img2/DQN.jpg)
 
+上图引用自论文：
+
+《Deep Learning for Video Game Playing》
+
+该论文最早发表于2017年，但是作者每年都会更新论文的内容。
+
 参考：
 
 https://zhuanlan.zhihu.com/p/21262246
@@ -339,6 +349,10 @@ https://mp.weixin.qq.com/s/uymKtR_7IgMpfXcekfkCDg
 https://mp.weixin.qq.com/s/9ZvaZQ1yumhr75okBxNyeA
 
 优化强化学习Q-learning算法进行股市交易
+
+https://mp.weixin.qq.com/s/QkRdv0xMoqwaXsNAMAHR0A
+
+一图尽展视频游戏AI技术，DQN无愧众算法之鼻祖
 
 # reward modeling
 
