@@ -34,6 +34,10 @@ https://github.com/kmario23/deep-learning-drizzle/blob/master/README.md
 
 50+门《深度学习、强化学习、NLP、CV》课程超级大列表
 
+https://mp.weixin.qq.com/s/tsidF_I5-QfaKUlX6Smtsg
+
+这有300+门刚刚开课的编程计算机科学免费课程大集合
+
 http://ufldl.stanford.edu/wiki/index.php/Main_Page
 
 斯坦福的《Unsupervised Feature Learning and Deep Learning》教程，该网站本身就有中文翻译。

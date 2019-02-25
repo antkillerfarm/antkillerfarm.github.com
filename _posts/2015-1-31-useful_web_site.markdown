@@ -172,10 +172,6 @@ https://mp.weixin.qq.com/s/6gX1UFSykuzw358ARUzifw
 
 张溪梦：14年数据分析经历，我总结为这三点“道、术、器”
 
-https://mp.weixin.qq.com/s/YNMw8u7O6u7Bc4-mnrwRXg
-
-老听别人说加密算法，现在给你个机会深入了解下
-
 https://mp.weixin.qq.com/s/aumZu90B4gZQ4nKNY4PRxA
 
 Redux从设计到源码
@@ -244,10 +240,6 @@ http://mp.weixin.qq.com/s/aftxoxvzefZtzbGK3XrmuA
 
 李沐：博士这五年
 
-https://mp.weixin.qq.com/s/tsidF_I5-QfaKUlX6Smtsg
-
-这有300+门刚刚开课的编程计算机科学免费课程大集合
-
 http://chrome.360.cn/test/html5/index.html
 
 一个用于检测浏览器对html 5支持情况的网页
@@ -263,10 +255,6 @@ http://www.xuliangwei.com/xubusi/885.html
 https://www.floydhub.com
 
 一个提供深度模型训练和部署的云服务平台
-
-http://www.xfyun.cn/share/?p=2626
-
-开发者常犯的十大加密错误
 
 http://lucacardelli.name/
 
@@ -315,10 +303,6 @@ https://mp.weixin.qq.com/s/UehY3iXtcoBwMJkdcEi--A
 https://mp.weixin.qq.com/s/nqI08Iyn7yunuR1aVSuq_Q
 
 用户增长怎么做—以Uber和摩拜的经验为实例。技术营销的典范之作。
-
-https://mp.weixin.qq.com/s/agS2-wu6HGO__QfbIt7Esw
-
-数字签名是什么？
 
 https://mp.weixin.qq.com/s/bk22ljMgODKSfZxibic0rw
 
@@ -376,18 +360,6 @@ https://mp.weixin.qq.com/s/VgJSMN0mkfEerhWpWpEFbg
 
 一个42KB的文件，解压完其实是个4.5PB的“炸弹”
 
-http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
-
-理解OAuth 2.0
-
-https://www.cnblogs.com/linianhui/category/929878.html
-
-一个认证授权方面的专栏
-
-https://mp.weixin.qq.com/s/OLg_wocXJz7VGDabTtxdWQ
-
-Web登录很简单？开玩笑！
-
 https://mp.weixin.qq.com/s/6AfmiLRSUP819J43EwJBqA
 
 ORACLE ERP的前世今生
@@ -407,10 +379,6 @@ https://mp.weixin.qq.com/s/0QnH0F8JZQBsECoJeGqpsg
 https://mp.weixin.qq.com/s/yIJT9D1YXa4rhf-RMBVPLw
 
 1G到5G之争：一部30年惊心动魄的移动通信史
-
-https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126
-
-前端安全系列之一：如何防止XSS攻击？
 
 https://mp.weixin.qq.com/s?__biz=MzIyNzUwMjM2MA==&mid=2247485942&idx=1&sn=1597233c1527cac63a2c734ec0b14f02
 
@@ -435,6 +403,44 @@ https://mp.weixin.qq.com/s/SO1ZLSPaRkk8WwUl9u-JPA
 https://mp.weixin.qq.com/s/oN-drJHFU34XanBzOKzrUQ
 
 有史以来最强的5G入门科普！
+
+https://mp.weixin.qq.com/s/TlhhDjKlLYslif0RtpNotw
+
+世界三大电子展(CES、MWC、IFA)的前世今生
+
+https://mp.weixin.qq.com/s/yHSraIAYsjYWPaGXA3PijA
+
+一张图读懂非公平锁与公平锁
+
+## 安全
+
+https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126
+
+前端安全系列之一：如何防止XSS攻击？
+
+http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
+
+理解OAuth 2.0
+
+https://www.cnblogs.com/linianhui/category/929878.html
+
+一个认证授权方面的专栏
+
+https://mp.weixin.qq.com/s/OLg_wocXJz7VGDabTtxdWQ
+
+Web登录很简单？开玩笑！
+
+https://mp.weixin.qq.com/s/agS2-wu6HGO__QfbIt7Esw
+
+数字签名是什么？
+
+https://mp.weixin.qq.com/s/YNMw8u7O6u7Bc4-mnrwRXg
+
+老听别人说加密算法，现在给你个机会深入了解下
+
+http://www.xfyun.cn/share/?p=2626
+
+开发者常犯的十大加密错误
 
 ## 有用的blog
 

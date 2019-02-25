@@ -322,6 +322,10 @@ https://mp.weixin.qq.com/s/mlwDZ1DUDbHIn4hQvkumAw
 
 自动驾驶感知神器——激光雷达概述
 
+https://mp.weixin.qq.com/s/elSezCSBPnuEqOFmHACLVg
+
+24GHz雷达的应用案例
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/l4W7qmKJ4Pc-rlF-KvhrPA

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十八）——深度强化学习, Apollo, 多任务学习, RNN进阶
+title:  深度学习（三十八）——深度强化学习, Apollo, 多任务学习, RNN进阶, 深度推荐系统进阶
 category: DL 
 ---
 
@@ -273,3 +273,25 @@ https://mp.weixin.qq.com/s/vIL-bKHZK-6eXZYWxrc9vw
 https://mp.weixin.qq.com/s/GGK9T0DeyIdD5ahHy5uvfg
 
 LightRNN：存储和计算高效的RNN
+
+# 深度推荐系统进阶
+
+https://mp.weixin.qq.com/s/CYW-WMl94FT2-fqsxShNDw
+
+读者喜欢看什么文章？腾讯微信融合时间过程与内容特征寻找答案
+
+https://mp.weixin.qq.com/s/4k106lCBns-iEg3gy5mcbg
+
+WSDM 2019教程—李航、何向南等，深度学习匹配在搜索和推荐中的应用
+
+https://mp.weixin.qq.com/s/SYFShtmBIgEW8_cEYec0kw
+
+清华张敏教授：个性化推荐研究进展（可解释性、鲁棒性和公平性）
+
+https://zhuanlan.zhihu.com/p/57056588
+
+一图胜千言: 解读阿里的Deep Image CTR Model
+
+https://mp.weixin.qq.com/s/98X2agJlZcCH6IdZqf9m0A
+
+深度学习在美团配送ETA预估中的探索与实践

@@ -146,6 +146,12 @@ Hough Transform最早是Paul V.C. Hough于1962年在一篇专利中提出的。1
 
 >Dana Harry Ballard，1946年生，UCI博士，德克萨斯大学教授。
 
+这篇文章介绍了霍夫变换的发现史：
+
+https://mp.weixin.qq.com/s/YvC6HVHdAQ3GI6U69gBDYA
+
+霍夫变换是怎么发明的
+
 ![](/images/article/R_theta_line.gif)
 
 如上图所示，一条直线的解析方程在x-y坐标系下是：
@@ -239,6 +245,10 @@ https://mp.weixin.qq.com/s/YW3anc5S9_BDrXiyVro5fQ
 https://mp.weixin.qq.com/s/Fpy3_kljryrjEqoZz4IlNg
 
 电子后视镜（一）——相关标准汇总
+
+https://mp.weixin.qq.com/s/aUAD-SWJ6PEplrFRb5SHZg
+
+消除摩尔纹的光学方法
 
 # Eigenface
 

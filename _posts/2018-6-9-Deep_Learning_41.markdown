@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十一）——迁移学习, Mask R-CNN, 深度推荐系统进阶
+title:  深度学习（四十一）——迁移学习, Mask R-CNN
 category: DL 
 ---
 
@@ -281,6 +281,10 @@ https://zhuanlan.zhihu.com/p/56076381
 
 Deep Domain Adaptation论文集(三)：基于深度网络结构差异&几何差异
 
+https://zhuanlan.zhihu.com/p/57083034
+
+Deep Domain Adaptation论文集(四)：基于生成对抗网络GAN
+
 https://mp.weixin.qq.com/s/sVukyFF18IEjUOnoj09eUQ
 
 39页《迁移学习自然语言生成》
@@ -366,25 +370,3 @@ https://mp.weixin.qq.com/s/G_2tuZlaxX5w-2c1DO8FwQ
 https://mp.weixin.qq.com/s/Ug4ZEQWVF5UjhqWw4Kwb8A
 
 Mask R-CNN抢车位，快人一步！
-
-# 深度推荐系统进阶
-
-https://mp.weixin.qq.com/s/CYW-WMl94FT2-fqsxShNDw
-
-读者喜欢看什么文章？腾讯微信融合时间过程与内容特征寻找答案
-
-https://mp.weixin.qq.com/s/4k106lCBns-iEg3gy5mcbg
-
-WSDM 2019教程—李航、何向南等，深度学习匹配在搜索和推荐中的应用
-
-https://mp.weixin.qq.com/s/SYFShtmBIgEW8_cEYec0kw
-
-清华张敏教授：个性化推荐研究进展（可解释性、鲁棒性和公平性）
-
-https://zhuanlan.zhihu.com/p/57056588
-
-一图胜千言: 解读阿里的Deep Image CTR Model
-
-https://mp.weixin.qq.com/s/98X2agJlZcCH6IdZqf9m0A
-
-深度学习在美团配送ETA预估中的探索与实践
