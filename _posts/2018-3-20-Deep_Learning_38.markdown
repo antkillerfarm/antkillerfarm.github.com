@@ -102,6 +102,10 @@ https://mp.weixin.qq.com/s/y_mOKpgLEvDjoO-UdMBcyw
 
 Apollo AdaperManager和Routing模块源代码分析
 
+https://mp.weixin.qq.com/s/G3Plo1Ogcx3s6nz_rdeKtA
+
+Apollo控制算法之汽车动力学模型
+
 # 多任务学习
 
 https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA

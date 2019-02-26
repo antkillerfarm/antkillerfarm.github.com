@@ -264,10 +264,6 @@ http://www.cnblogs.com/xybaby/p/7867735.html
 
 关于负载均衡的一切：总结与思考
 
-https://mp.weixin.qq.com/s/bUrTDj1atJSZvFeWA8H-SA
-
-正向代理和反向代理
-
 https://mp.weixin.qq.com/s/z5zMETSMUGoTiZYMooKZ-g
 
 内核空间镜像攻击揭秘：ARM硬件特性，竟能开启安卓8终端的上帝模式？
@@ -376,10 +372,6 @@ https://mp.weixin.qq.com/s/0QnH0F8JZQBsECoJeGqpsg
 
 虚拟现实与增强现实的前沿技术PPT
 
-https://mp.weixin.qq.com/s/yIJT9D1YXa4rhf-RMBVPLw
-
-1G到5G之争：一部30年惊心动魄的移动通信史
-
 https://mp.weixin.qq.com/s?__biz=MzIyNzUwMjM2MA==&mid=2247485942&idx=1&sn=1597233c1527cac63a2c734ec0b14f02
 
 编程基础知识
@@ -400,10 +392,6 @@ https://mp.weixin.qq.com/s/SO1ZLSPaRkk8WwUl9u-JPA
 
 仅需这一篇，吃透“负载均衡”妥妥的
 
-https://mp.weixin.qq.com/s/oN-drJHFU34XanBzOKzrUQ
-
-有史以来最强的5G入门科普！
-
 https://mp.weixin.qq.com/s/TlhhDjKlLYslif0RtpNotw
 
 世界三大电子展(CES、MWC、IFA)的前世今生
@@ -412,35 +400,19 @@ https://mp.weixin.qq.com/s/yHSraIAYsjYWPaGXA3PijA
 
 一张图读懂非公平锁与公平锁
 
-## 安全
+## 5G
 
-https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126
+https://mp.weixin.qq.com/s/oN-drJHFU34XanBzOKzrUQ
 
-前端安全系列之一：如何防止XSS攻击？
+有史以来最强的5G入门科普！
 
-http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
+https://mp.weixin.qq.com/s/IYT7_bcWG0hTX7yI1_C_Ig
 
-理解OAuth 2.0
+5G将是一个彻底的失败通信技术
 
-https://www.cnblogs.com/linianhui/category/929878.html
+https://mp.weixin.qq.com/s/yIJT9D1YXa4rhf-RMBVPLw
 
-一个认证授权方面的专栏
-
-https://mp.weixin.qq.com/s/OLg_wocXJz7VGDabTtxdWQ
-
-Web登录很简单？开玩笑！
-
-https://mp.weixin.qq.com/s/agS2-wu6HGO__QfbIt7Esw
-
-数字签名是什么？
-
-https://mp.weixin.qq.com/s/YNMw8u7O6u7Bc4-mnrwRXg
-
-老听别人说加密算法，现在给你个机会深入了解下
-
-http://www.xfyun.cn/share/?p=2626
-
-开发者常犯的十大加密错误
+1G到5G之争：一部30年惊心动魄的移动通信史
 
 ## 有用的blog
 

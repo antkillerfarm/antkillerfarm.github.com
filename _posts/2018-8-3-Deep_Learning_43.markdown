@@ -327,3 +327,7 @@ https://mp.weixin.qq.com/s/Pmr2yPZ3Mi32W5JuJCco_A
 https://mp.weixin.qq.com/s/i3lNcbOblgVKUTBtwKIFwg
 
 AI秒造全球房源：StyleGAN快速生成假房子，连图说都配好了！
+
+https://mp.weixin.qq.com/s/4hKIh77UfsuJCSKwtvpq3Q
+
+最强GAN修图魔术师：美颜生发摘眼镜、草绘秒变真人脸

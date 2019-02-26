@@ -405,6 +405,10 @@ https://mp.weixin.qq.com/s/G-6ZcMIba-fLKRN0hgQFWg
 
 面向数据科学和AI的开发库推荐：Python、R各7个
 
+https://mp.weixin.qq.com/s/0jKN59DMo1HmCtw8ce-y7Q
+
+在R中估计GARCH参数存在问题
+
 # NLP参考资源
 
 https://mp.weixin.qq.com/s/QYG0l1fk35C1evM2FSHgsw

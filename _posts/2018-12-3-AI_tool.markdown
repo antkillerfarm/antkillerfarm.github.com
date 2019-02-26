@@ -326,6 +326,10 @@ https://github.com/danaugrs/huskarl
 
 基于TF2.0的深度强化学习平台：Huskarl
 
+https://mp.weixin.qq.com/s/QNk3vf8WWqSPNN-61W64zQ
+
+谷歌重磅开源NLP通用框架Lingvo
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/Sb_kPgtwyQFWloDT3707TA
