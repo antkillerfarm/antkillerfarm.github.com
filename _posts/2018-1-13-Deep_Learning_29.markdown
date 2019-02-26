@@ -361,3 +361,7 @@ https://mp.weixin.qq.com/s/sg9O761F0KHAmCPOfMW_kQ
 https://mp.weixin.qq.com/s/s6E2vV1KrQDI4SeAnkYTKw
 
 图神经网络将成AI下一拐点！MIT斯坦福一文综述GNN到底有多强
+
+https://mp.weixin.qq.com/s/6vhFfSh2mveBiZXB1oZb1Q
+
+图分类：结合胶囊网络Capsule和图卷积GCN
