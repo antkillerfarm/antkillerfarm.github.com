@@ -330,6 +330,10 @@ https://mp.weixin.qq.com/s/QNk3vf8WWqSPNN-61W64zQ
 
 谷歌重磅开源NLP通用框架Lingvo
 
+https://mp.weixin.qq.com/s/V8VoyMqVvjblH358ozcWEg
+
+face.evoLVe：高性能人脸识别开源库
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/Sb_kPgtwyQFWloDT3707TA

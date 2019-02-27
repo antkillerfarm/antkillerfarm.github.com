@@ -314,6 +314,10 @@ https://mp.weixin.qq.com/s/5EDChIqLdF3bqIm9WStV8Q
 
 行为识别（action recognition）目前的难点在哪？
 
+https://mp.weixin.qq.com/s/R9eG3FvvBcl-bGgJEF1uoA
+
+微软、中科大开源基于深度高分辨表示学习的姿态估计算法
+
 # VAE进阶
 
 https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw

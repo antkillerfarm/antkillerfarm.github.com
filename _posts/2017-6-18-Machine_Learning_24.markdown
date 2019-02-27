@@ -342,3 +342,7 @@ https://www.cnblogs.com/LittleHann/p/9078909.html
 http://blog.sina.com.cn/s/blog_617032070100er0r.html
 
 Infomap算法描述
+
+https://mp.weixin.qq.com/s/S0vUBFCfizjVe_L4SIrGqQ
+
+网络新闻真假难辨？机器学习来助你一臂之力

@@ -263,3 +263,17 @@ https://mp.weixin.qq.com/s/qLax1Jb0OOfFOU68wn_2PA
 https://mp.weixin.qq.com/s/hRH7hVsaQBqf0vhD_BqBgg
 
 五大深度学习框架三类神经网络全面测评
+
+# TensorFlow+
+
+https://mp.weixin.qq.com/s/DAV3TDI4JYr0sXqTGU6t2A
+
+分布式TensorFlow入坑指南：从实例到代码带你玩转多机器深度学习
+
+https://mp.weixin.qq.com/s/QU5NjksCEswjHnkY7WXWXQ
+
+分布式TensorFlow入门教程
+
+https://mp.weixin.qq.com/s/pBR4wMITrigbSVAvn0d6vQ
+
+利用TensorFlow实现上下文的Chat-bots

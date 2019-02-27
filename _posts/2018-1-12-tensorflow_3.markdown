@@ -150,6 +150,10 @@ http://mp.weixin.qq.com/s/JZ1ceGQDmQUaNW5wl6biLA
 
 TensorFlow实现流行机器学习算法教程汇集
 
+https://github.com/taki0112/Tensorflow-Cookbook
+
+1500+星标，简单易用TensorFlow代码集
+
 https://mp.weixin.qq.com/s/bjxJyOitynRtCoW0FX1gXw
 
 一文带你入门Tensorflow
@@ -401,23 +405,3 @@ https://mp.weixin.qq.com/s/kEowgNPVS1nAGBPbzkatlQ
 https://mp.weixin.qq.com/s/O_IN39FBVPeD5fRYBsPuZQ
 
 用TensorFlow开发问答系统
-
-http://brucedone.com/archives/1005
-
-Tensorflow破解验证码
-
-https://mp.weixin.qq.com/s/CjlEY_m6tp-NJ3B2MiAZRg
-
-基于TensorFlow的深度模型训练GPU显存优化
-
-https://mp.weixin.qq.com/s/DAV3TDI4JYr0sXqTGU6t2A
-
-分布式TensorFlow入坑指南：从实例到代码带你玩转多机器深度学习
-
-https://mp.weixin.qq.com/s/QU5NjksCEswjHnkY7WXWXQ
-
-分布式TensorFlow入门教程
-
-https://mp.weixin.qq.com/s/pBR4wMITrigbSVAvn0d6vQ
-
-利用TensorFlow实现上下文的Chat-bots

@@ -38,6 +38,8 @@ Sir Michael Francis Atiyah，1929年生，英国籍黎巴嫩裔数学家。剑�
 
 Atiyah的高中在埃及读的（1941～1945），当时欧洲很多人为了躲避战乱，逃到了那里。
 
+>2019.1.11 Atiyah去世。
+
 ----
 
 有种素数叫做“工业级素数（Industrial-grade primes）”，定义是没有经过严格数学证明、但是通过了“可能素数判定法”（比如米勒-拉宾判定法）的整数。用这种方法判定大整数是否是素数不是完全准确，但速度非常快，而且不会漏掉任何素数。RSA加密法所需的大素数生成方式就很明显了：随机生成大整数，如果判断这个数可能是素数，再用精确但速度慢的素数判定法来判断这个数是否真的是素数。
@@ -45,6 +47,12 @@ Atiyah的高中在埃及读的（1941～1945），当时欧洲很多人为了躲
 https://www.zhihu.com/question/54779059
 
 RSA生成公私钥时质数是怎么选的？
+
+----
+
+https://mp.weixin.qq.com/s/6hs0pqHqqg46wWL0rlgKJQ
+
+数学家轶闻录
 
 # 张量分析
 
@@ -158,7 +166,7 @@ https://mp.weixin.qq.com/s/YQfk9lqHbepG2om7mEGTSg
 
 如何给女朋友解释什么是反向代理？
 
-# TensorFlow+
+# TensorFlow
 
 https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
 
@@ -339,3 +347,11 @@ https://mp.weixin.qq.com/s/DpqI4AfjiygCh8dqq_Kgmw
 https://mp.weixin.qq.com/s/XcqVtFBY5rIn0FgPEx0eTg
 
 工业领域中的AI：BHGE通过使用TensorFlow概率编程工具包开发的基于物理的概率深度学习
+
+http://brucedone.com/archives/1005
+
+Tensorflow破解验证码
+
+https://mp.weixin.qq.com/s/CjlEY_m6tp-NJ3B2MiAZRg
+
+基于TensorFlow的深度模型训练GPU显存优化

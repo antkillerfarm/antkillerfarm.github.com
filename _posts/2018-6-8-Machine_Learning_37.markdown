@@ -238,6 +238,10 @@ https://mp.weixin.qq.com/s/E3Iq8YpIZRZOk7SP-cu1xQ
 
 如何找到全局最小值？先让局部极小值消失吧
 
+https://mp.weixin.qq.com/s/el1E-61YjLkhFd6AgFUc7w
+
+拳打Adam，脚踢SGD：北大提出全新优化算法AdaBound
+
 # 推荐系统进阶
 
 除了《机器学习（十五～十六）》提及的ALS和PCA之外，相关的算法还包括：

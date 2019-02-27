@@ -298,6 +298,10 @@ https://mp.weixin.qq.com/s/VysqrYVXG1JiNG86viQ6Xg
 
 学深度学习的你有GPU了吗
 
+https://zhuanlan.zhihu.com/p/57808378
+
+AI芯片0.5与2.0
+
 # 知识图谱参考资源
 
 https://mp.weixin.qq.com/s/d4cEHHo6OhlWEIXTFIdTuA
@@ -359,3 +363,7 @@ https://mp.weixin.qq.com/s/vrBlBCeYsEhYoP0BYT85bQ
 https://mp.weixin.qq.com/s/RQY6x3l3T582kHmsS1H0XQ
 
 基于知识库的自然语言理解 02
+
+https://mp.weixin.qq.com/s/xWditmvgZh_MTr1S8Da9hg
+
+基于知识库的自然语言理解 03

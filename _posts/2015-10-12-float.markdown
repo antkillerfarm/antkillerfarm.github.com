@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  浮点运算和代码优化, 并行计算, Optimizer软件, 微服务
+title:  浮点运算和代码优化, 并行计算, 稀疏矩阵的存储, Optimizer软件, 微服务
 category: AI 
 ---
 
@@ -185,6 +185,39 @@ GeForce产品专为互动游戏与消费类应用而设计。
 http://blog.csdn.net/augusdi/article/details/12833235
 
 这是一篇转帖的CUDA教程，原帖比较分散，不好看。
+
+# 稀疏矩阵的存储
+
+## Dictionary of keys (DOK)
+
+这种方法是最直观，也最容易想到的：将非零元素用`{(row, column): value}`的形式保存。
+
+## List of lists (LIL)
+
+一行数据就是一个list，这样每个数据只需要保存column index和value即可。
+
+## Coordinate list (COO)
+
+这个方法在DOK的基础上，给同一行的元素建立行索引，给同一列的元素建立列索引。显然DOK适用于硬盘存储，而LIL和COO更适合内存存储，因为后者更需要元素访问的便利性。
+
+## Compressed sparse row (CSR, CRS or Yale format)
+
+{% highlight python %}
+[0 0 0 0
+5 8 0 0
+0 0 3 0
+0 6 0 0]
+
+A  = [ 5 8 3 6 ]
+JA = [ 0 1 2 1 ]
+IA = [ 0 0 2 3 4 ]
+{% endhighlight %}
+
+其中，A是非零元素的value，JA是非零元素的column index。
+
+IA是每行的非零元素在A的offset（类似于文件操作中的游标）。比如第一行没有非零元素，因此第一行的offset为0，第二行也为0。但是第二行有两个非零元素，因此第三行的offset需要+2。依此类推。
+
+按照这个规则，可以看出A和JA中的元素个数相等，而IA的元素个数=行数+1。由于IA的最后一个元素必然和A中的元素个数相等（矩阵都遍历完了，offset当然到末尾了），因此有时也会把它省略。
 
 # Optimizer软件
 

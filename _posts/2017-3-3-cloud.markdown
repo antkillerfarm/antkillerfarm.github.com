@@ -289,6 +289,10 @@ OLAP、OLTP的介绍和比较
 
 这种存储方式又被称作Fortran contiguous array。
 
+上述描述也可用下图表示：
+
+![](/images/img2/Row_and_column_major_order.png)
+
 numpy对这两种方式都支持，而且还巧妙的利用了两者之间的差异，对运算进行了简化。
 
 `arr2 = arr.T`

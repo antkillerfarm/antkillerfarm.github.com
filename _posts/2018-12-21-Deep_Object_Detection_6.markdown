@@ -365,3 +365,7 @@ https://zhuanlan.zhihu.com/p/56236181
 https://mp.weixin.qq.com/s/5kJfhp3vi9uuSFaeONKfrA
 
 打破传统方法，MIT新芯片帮自动驾驶汽车穿越浓雾
+
+https://zhuanlan.zhihu.com/p/57781001
+
+自动驾驶系统的硬件平台讨论
