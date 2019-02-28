@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  版本管理工具的前世今生, Kannel, awk&sed&grep, Win10历险记, 运维工具集, 数据库（一）
+title:  版本管理工具的前世今生, Kannel, awk&sed&grep, Win10历险记, 运维工具集
 category: technology 
 ---
 
@@ -208,39 +208,3 @@ http://baojie.org/blog/2014/06/23/python-text-extraction/
 浏览器默认是不允许在HTTPS里面引用HTTP资源的，一般都会弹出提示框，用户确认后才会继续加载，用户体验非常差。
 
 对于同时支持HTTPS和HTTP的资源，引用的时候要把引用资源的URL里的协议头去掉，例如：//www.example.com/scirpt.js，这样相当于相对路径，即浏览器会自动根据当前是HTTPS还是HTTP来给资源URL补上协议头的，可以达到无缝切换。
-
-# 数据库
-
-## Sqlite
-
-《Inside Sqlite》是最好的参考书，目前已经有人把它翻译成中文，可以在CSDN上找到。
-
-《SQLite Optimization FAQ》另一篇很好的文章。
-
-http://web.utk.edu/~jplyon/sqlite/SQLite_optimization_FAQ.html
-
-关于编译和使用的问题，写的最好的是以下两篇：
-
-http://www.99inf.net/SoftwareDev/VC/39396.htm
-
-http://www.cnblogs.com/giszhang/archive/2008/10/09/1307509.html
-
-VC2005 + SQLite 3.6.3 编译、测试开发手记
-
-## OLTP与OLAP
-
-数据处理大致可以分成两大类：联机事务处理OLTP（on-line transaction processing）、联机分析处理OLAP（On-Line Analytical Processing）。OLTP是传统的关系型数据库的主要应用，主要是基本的、日常的事务处理，例如银行交易。OLAP是数据仓库系统的主要应用，支持复杂的分析操作，侧重决策支持，并且提供直观易懂的查询结果。
-
-参考：
-
-https://blog.csdn.net/zhangzheng0413/article/details/8271322
-
-OLAP、OLTP的介绍和比较
-
-https://mp.weixin.qq.com/s/80iF3secK_K7uSuuYfUDEw
-
-分布式数据库TiDB是如何结合OLTP和OLAP的？
-
-https://mp.weixin.qq.com/s/-OfYLqVPVioRP1kkIsCFsA
-
-小米大数据：借助Apache Kylin打造高效、易用的一站式OLAP解决方案

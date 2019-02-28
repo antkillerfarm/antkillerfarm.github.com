@@ -302,6 +302,10 @@ https://mp.weixin.qq.com/s/fkHfzkHRFpEGc-L4uGlqcg
 
 从网络设计到实际应用，深度学习图像超分辨率综述
 
+https://mp.weixin.qq.com/s/C9Ku4MvU2QuZ_GJcs8FelA
+
+基于深度学习的图像超分辨率最新进展与趋势
+
 # CNN进阶
 
 http://mp.weixin.qq.com/s/ddTNr-967IahTZ2X1LNSEQ

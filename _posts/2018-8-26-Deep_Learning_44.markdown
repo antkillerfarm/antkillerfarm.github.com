@@ -314,6 +314,10 @@ https://mp.weixin.qq.com/s/UeQc3orm2ooZ5zlvrSLzOw
 
 视频内容理解在Hulu的应用与实践
 
+https://mp.weixin.qq.com/s/syZObdxjPv6jq3B_mgP9Sw
+
+拒绝“不可描述”！爱奇艺短视频软色情识别技术解析
+
 # 手势识别
 
 https://zhuanlan.zhihu.com/p/26630215

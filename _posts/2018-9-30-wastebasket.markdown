@@ -413,3 +413,7 @@ Statistical language model统计语言模型
 https://mp.weixin.qq.com/s/vNzUngc-boG4QYmf_8lFfw
 
 自动为词汇推荐义原组合
+
+https://mp.weixin.qq.com/s/A-UDbDNS77wd8WTgYiYD8Q
+
+文本分类有哪些论文中很少提及却对性能有重要影响的tricks？

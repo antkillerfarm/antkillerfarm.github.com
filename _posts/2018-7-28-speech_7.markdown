@@ -236,6 +236,10 @@ https://zhuanlan.zhihu.com/p/40329331
 
 谈谈语音识别与人声的物理原理，以及真声假声头声混声等概念
 
+https://mp.weixin.qq.com/s/CjWNZf225OELIBoWRAbakg
+
+全面了解什么是语音交互
+
 # AI Chip
 
 http://eyeriss.mit.edu/

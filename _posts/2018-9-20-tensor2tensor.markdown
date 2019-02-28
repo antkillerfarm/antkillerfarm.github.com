@@ -277,3 +277,7 @@ https://mp.weixin.qq.com/s/QU5NjksCEswjHnkY7WXWXQ
 https://mp.weixin.qq.com/s/pBR4wMITrigbSVAvn0d6vQ
 
 利用TensorFlow实现上下文的Chat-bots
+
+https://mp.weixin.qq.com/s/BD-nJSZJLjBBq1n7HEHpKw
+
+将您的代码升级至TensorFlow 2.0

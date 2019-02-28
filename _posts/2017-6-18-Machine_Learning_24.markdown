@@ -267,6 +267,10 @@ https://mp.weixin.qq.com/s/g24mcZjQ25sQJx9mqE_XSA
 
 怎样判断漂亮女孩是不是单身的？美国海军在汪洋大海里搜索丢失的氢弹、失踪的核潜艇都用过这种方法。
 
+https://mp.weixin.qq.com/s/bjyO4AS1Sjo09qNMpqf6JA
+
+最新36页《贝叶斯非参学习综述》，机器学习内功修炼手册
+
 # 强连通分量算法
 
 http://ishare.iask.sina.com.cn/f/34626295.html

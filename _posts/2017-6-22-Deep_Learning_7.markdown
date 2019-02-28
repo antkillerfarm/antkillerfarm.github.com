@@ -350,3 +350,7 @@ https://mp.weixin.qq.com/s/DIqjVxF_kACkivzez4_Hog
 https://mp.weixin.qq.com/s/Alg4rOXNvb4GA8N4Joy-Jg
 
 Seq2seq强化，Pointer Network简介
+
+https://mp.weixin.qq.com/s/kdmmgVdWxz2nJPmjcprvqg
+
+机器学习中的编码器-解码器结构哲学

@@ -312,6 +312,10 @@ https://mp.weixin.qq.com/s/RiL-s50oOI--PZyIOd2E0g
 
 弱监督语义分割最新方法资源列表
 
+https://mp.weixin.qq.com/s/b6rH-eepKDSHLnixDVvKUQ
+
+新加坡南洋理工最新37页《零样本学习综述》论文
+
 # 细粒度分类
 
 https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw

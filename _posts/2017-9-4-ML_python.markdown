@@ -306,6 +306,10 @@ https://mp.weixin.qq.com/s/LuXyUBkaJUfg4WteFxStrg
 
 Matplotlib可视化最有价值的50个图表
 
+https://mp.weixin.qq.com/s/hlJFoh0jfduPswr7WrDikQ
+
+当年为什么不好好学“数据可视化”！
+
 ## Pandas
 
 Pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。

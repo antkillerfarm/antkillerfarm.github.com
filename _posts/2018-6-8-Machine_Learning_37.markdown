@@ -242,6 +242,10 @@ https://mp.weixin.qq.com/s/el1E-61YjLkhFd6AgFUc7w
 
 拳打Adam，脚踢SGD：北大提出全新优化算法AdaBound
 
+https://mp.weixin.qq.com/s/TfrJ-rep-TIg345SXursbw
+
+为了围剿SGD大家这些年想过的那十几招
+
 # 推荐系统进阶
 
 除了《机器学习（十五～十六）》提及的ALS和PCA之外，相关的算法还包括：
