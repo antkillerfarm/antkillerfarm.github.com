@@ -22,9 +22,15 @@ http://www.cnblogs.com/lillylin/
 
 这是一个OCR方面的blog。对白翔的论文，几乎都有阅读笔记。
 
+https://github.com/hwalsuklee/awesome-deep-text-detection-recognition
+
+Github：深度学习文本检测识别（OCR）精选资源汇总
+
 ## tesseract
 
-linux下可以使用tesseract作为OCR工具。安装方法：
+linux下可以使用tesseract作为OCR工具。当然这个工具目前使用的还是传统算法。
+
+安装方法：
 
 `sudo apt install tesseract-ocr libtesseract-dev`
 
@@ -36,7 +42,7 @@ linux下可以使用tesseract作为OCR工具。安装方法：
 
 https://github.com/liuruoze/EasyPR
 
-一个开源的中文车牌识别系统。
+一个开源的中文车牌识别系统。（使用传统算法）
 
 https://blog.csdn.net/Relocy/article/details/78629441
 
@@ -132,6 +138,10 @@ https://zhuanlan.zhihu.com/p/34757009
 
 场景文字检测—CTPN原理与实现
 
+https://mp.weixin.qq.com/s/lV2yjhvnRLDfNbZXOSjofg
+
+ctpn：图像文字检测方法
+
 https://mp.weixin.qq.com/s/h3VaKs0Pc44n-hXYNlkALA
 
 开源OCR文字识别软件Calamari
@@ -212,17 +222,9 @@ https://mp.weixin.qq.com/s/_znXs8pkfgmWsb26HIfhLQ
 
 复杂环境文字识别技术研究及应用进展
 
-https://mp.weixin.qq.com/s/lV2yjhvnRLDfNbZXOSjofg
-
-ctpn：图像文字检测方法
-
 https://mp.weixin.qq.com/s/JA6ey6N3Zho92L6jh_bRkg
 
 EAST场景文字检测模型使用
-
-https://mp.weixin.qq.com/s/KzsphgzCtu9w8l3GHGUbXA
-
-ctpn：图像文字检测方法
 
 # 深度哈希
 

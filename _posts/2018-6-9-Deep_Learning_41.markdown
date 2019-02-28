@@ -285,9 +285,17 @@ https://zhuanlan.zhihu.com/p/57083034
 
 Deep Domain Adaptation论文集(四)：基于生成对抗网络GAN
 
+https://zhuanlan.zhihu.com/p/57656210
+
+Deep Domain Adaptation论文集(五)：基于数据重构的迁移方法
+
 https://mp.weixin.qq.com/s/sVukyFF18IEjUOnoj09eUQ
 
 39页《迁移学习自然语言生成》
+
+https://mp.weixin.qq.com/s/0Zcrwi3WROzm19ApDZINMQ
+
+Ruder博士答辩41页PPT，面向自然语言处理的神经网络迁移学习
 
 # Mask R-CNN
 

@@ -316,3 +316,7 @@ https://mp.weixin.qq.com/s/lcgnnXMUO8C3oLUPmxthjQ
 https://mp.weixin.qq.com/s/fhpYkWiLGwSbpRsrwBcV9g
 
 多轴3D打印中的几何计算
+
+https://mp.weixin.qq.com/s/yXGuoBPmIeA3SteD_TliXg
+
+F-Principle：初探深度学习在计算数学的应用

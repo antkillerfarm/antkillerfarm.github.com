@@ -422,3 +422,7 @@ https://mp.weixin.qq.com/s/nDWJS4rfWsqeVgJQbAYQ6w
 https://zhuanlan.zhihu.com/p/56864499
 
 CPU是怎么调节输入电压的？为什么要这么做？
+
+https://zhuanlan.zhihu.com/p/57780996
+
+内存延迟：因与果

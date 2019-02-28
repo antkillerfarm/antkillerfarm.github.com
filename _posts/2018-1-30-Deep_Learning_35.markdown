@@ -274,6 +274,14 @@ https://mp.weixin.qq.com/s/pfD-gib_7kwZAYR02eVuLg
 
 视频理解S3D，I3D-GCN，SlowFastNet，LFB
 
+https://mp.weixin.qq.com/s/RqSlnz286UvldmcqJ2adPQ
+
+快慢结合效果好：FAIR何恺明等人提出视频识别SlowFast网络
+
+https://mp.weixin.qq.com/s/Blm5IWJvwhJs3D-IiZJslA
+
+快慢网络用于视频识别
+
 https://mp.weixin.qq.com/s/qgtlGltVRumQjSZayZiMDQ
 
 干掉高速摄像头！神经网络生成极慢视频，突破人类肉眼极限

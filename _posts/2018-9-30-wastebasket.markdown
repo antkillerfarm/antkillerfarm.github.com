@@ -393,3 +393,23 @@ http://mp.weixin.qq.com/s/Or6oDt0aZFlnlMr8EBr-xQ
 https://mp.weixin.qq.com/s/i4u4Ty8kC0zzUpmRqj8g7A
 
 473个模型试验告诉你文本分类中的最好编码方式
+
+https://mp.weixin.qq.com/s/2LYqppJnRRtlvsdrdu57Gg
+
+万字长文概述NLP中的深度学习技术
+
+https://mp.weixin.qq.com/s/-D-5p_7DfvR3D7cZjlUmUA
+
+TensorFlow 谷歌神经机器翻译:从零开始打造属于你的翻译系统
+
+https://mp.weixin.qq.com/s/JAWDiNUfU62n8lDRG8zzRw
+
+嘿，朋友，老夫掐指一算你就是“水军”
+
+http://blog.csdn.net/a635661820/article/details/43906731
+
+Statistical language model统计语言模型 
+
+https://mp.weixin.qq.com/s/vNzUngc-boG4QYmf_8lFfw
+
+自动为词汇推荐义原组合

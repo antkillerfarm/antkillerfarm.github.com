@@ -403,3 +403,7 @@ https://mp.weixin.qq.com/s/f1uOimoA3a37e1BK1l1rvw
 https://mp.weixin.qq.com/s/DG4ofF78fIgiIMiJaxuIVA
 
 AAAI 2019 论文解读：卷积神经网络继续进步
+
+https://mp.weixin.qq.com/s/1TK4h7UoeVas1S1NfNgRag
+
+为什么深度学习图像分类的输入多是224*224

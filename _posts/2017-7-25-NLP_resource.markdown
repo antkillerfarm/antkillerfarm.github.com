@@ -142,6 +142,10 @@ https://mp.weixin.qq.com/s/xlQOfAY0rAeXH6bntLMexQ
 
 优质中文NLP资源集合，做项目一定用得到！
 
+https://github.com/graykode/nlp-tutorial
+
+这个项目教你如何用百行代码搞定各类NLP模型
+
 https://mp.weixin.qq.com/s/Rd3-ypRYiJObi-e2JDeOjQ
 
 深度长文：NLP的巨人肩膀（上）
@@ -353,22 +357,6 @@ https://mp.weixin.qq.com/s/gyuq2ujb1tiAvAlXtZY4Eg
 https://mp.weixin.qq.com/s/sM72a52wz6eXSkcgnd4JJw
 
 人类与机器人，如何能像朋友一样愉快聊天？
-
-https://mp.weixin.qq.com/s/-D-5p_7DfvR3D7cZjlUmUA
-
-TensorFlow 谷歌神经机器翻译:从零开始打造属于你的翻译系统
-
-https://mp.weixin.qq.com/s/JAWDiNUfU62n8lDRG8zzRw
-
-嘿，朋友，老夫掐指一算你就是“水军”
-
-http://blog.csdn.net/a635661820/article/details/43906731
-
-Statistical language model统计语言模型 
-
-https://mp.weixin.qq.com/s/vNzUngc-boG4QYmf_8lFfw
-
-自动为词汇推荐义原组合
 
 https://mp.weixin.qq.com/s/IvbJ_d7z91BCcRVpJ9_jMA
 
