@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十五）——Tri-training, 聚类算法, 压缩感知, 元胞自动机, 线性规划
+title:  机器学习（二十五）——Tri-training, 聚类算法, 压缩感知, 元胞自动机, 线性规划, simhash
 category: ML 
 ---
 
@@ -222,6 +222,50 @@ Fama–French three-factor model
 
 Carhart four-factor model
 
+# simhash
+
+simhash是一种能计算文档相似度的hash算法。
+
+论文：
+
+《Detecting Near-Duplicates for Web Crawling》
+
+代码：
+
+https://github.com/yanyiwu/simhash
+
+类似的相似度Hash算法，还有用于图像搜索的aHash、pHash、dHash。
+
+参考：
+
+https://www.biaodianfu.com/simhash.html
+
+文本内容相似度计算方法：simhash
+
+http://www.cnblogs.com/chenwenbiao/archive/2011/09/12/2174139.html
+
+simhash算法的原理
+
+http://www.cnblogs.com/chenwenbiao/archive/2011/09/12/2174137.html
+
+simhash与Google的网页去重
+
+http://blog.jobbole.com/21928/
+
+Simhash算法原理和网页查重应用
+
+https://blog.csdn.net/luoweifu/article/details/8220992
+
+看起来像它——图像搜索其实也不难
+
+https://www.jianshu.com/p/193f0089b7a2
+
+相似图片检测：感知哈希算法之dHash的Python实现
+
+https://mp.weixin.qq.com/s/vwhetMpQllczILptBNcoWg
+
+基于快速GeoHash，如何实现海量商品与商圈的高效匹配？
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/wmSxk0z-14PXd5JslAdp2A
@@ -287,55 +331,3 @@ Nature论文解读：用于改善加权生物网络信噪比的网络增强方�
 https://mp.weixin.qq.com/s/0AOOiyWQqpGIdG4-9UmF8Q
 
 DeepMind提出视觉问题回答新模型，CLEVR准确率达98.8％
-
-https://mp.weixin.qq.com/s/8dVronQoeZLJI2g49AljLg
-
-技术讲解概率机器学习——深度学习革命之后AI道路
-
-https://mp.weixin.qq.com/s/qof4GEPQYb9rO3Do_oL7BQ
-
-如果给猫披上象皮，神经网络将作何判断？
-
-https://mp.weixin.qq.com/s/l1Bc5l5cr3y9jQbh-bEQeQ
-
-Deep Learning of Graph Matching论文解读
-
-https://mp.weixin.qq.com/s/494I6XHrk9fB2DvhiMM9iQ
-
-第四范式联合港科大提出样本自适应在线卷积稀疏编码
-
-https://mp.weixin.qq.com/s/p8u2aTJL2gfPIXLsLfoJyg
-
-谷歌大脑提出MAPO：用于程序合成的策略优化方法
-
-https://mp.weixin.qq.com/s/zC5iGXVn7xH8TYBXtkntzA
-
-让计算机一眼认出“猫”：哈佛提出新高维数据分析法
-
-http://mp.weixin.qq.com/s/vhBOrR6uTL2vGXnYC8BS1w
-
-Windows版深度学习软件安装指南
-
-https://mp.weixin.qq.com/s/FwqKYNpIuB6cUAVjSey7mw
-
-Yoshua Bengio首次中国演讲：深度学习通往人类水平AI的挑战
-
-https://mp.weixin.qq.com/s/aqfwn0kiXbZwVDVhHXBAXQ
-
-谷歌大脑研究员玩转汉字RNN：神经网络生成新华字典
-
-https://mp.weixin.qq.com/s/GxWOuIf25JQnQoCstVyGLQ
-
-李飞飞团队提出OpenTag模型：减少人工标注，自动提取产品属性值
-
-https://mp.weixin.qq.com/s/qos7VRFP7uYZ6Qt83KiPhw
-
-用机器学习构建O(N)复杂度的排序算法，可在GPU和TPU上加速计算
-
-https://mp.weixin.qq.com/s/_w4IIRY6LwqehpDlEXt90A
-
-牛津大学提出神经网络新训练法：用低秩结构增强网络压缩和对抗稳健性
-
-https://mp.weixin.qq.com/s/w-6z8B60cIHUF5tU-RoQ3w
-
-旷视科技提出统一感知解析网络UPerNet，优化场景理解

@@ -1,118 +1,8 @@
 ---
 layout: post
-title:  深度学习（三十二）——深度信息检索, NN Quantization
+title:  深度学习（三十二）——NN Quantization
 category: DL 
 ---
-
-# 深度信息检索
-
-Information Retrieval是用户进行信息查询和获取的主要方式，是查找信息的方法和手段。狭义的信息检索仅指信息查询（Information Search）。即用户根据需要，采用一定的方法，借助检索工具，从信息集合中找出所需要信息的查找过程。广义的信息检索是信息按一定的方式进行加工、整理、组织并存储起来，再根据信息用户特定的需要将相关信息准确的查找出来的过程。
-
-这方面的DL应用可参见以下的综述文章：
-
-《MatchZoo: A Toolkit for Deep Text Matching》
-
-## ARC-I & ARC-II
-
-《Convolutional neural network architectures for matching natural language sentences》
-
-## DSSM
-
-《Learning deep structured semantic models for web search using clickthrough data》
-
-## CDSSM
-
-《Learning semantic representations using convolutional neural networks for web search》
-
-## MV-LSTM
-
-《A deep architecture for semantic matching with multiple positional sentence representations》
-
-## CNTN
-
-《Convolutional Neural Tensor Network Architecture for Community-Based Question Answering》
-
-## DRMM
-
-《A deep relevance matching model for ad-hoc retrieval》
-
-## MatchPyramid
-
-《Text Matching as Image Recognition》
-
-## Match-SRNN
-
-《Match-SRNN: Modeling the Recursive Matching Structure with Spatial RNN》
-
-## K-NRM
-
-《End-to-End Neural Ad-hoc Ranking with Kernel Pooling》
-
-## 参考
-
-https://github.com/harpribot/awesome-information-retrieval
-
-信息检索优质资源汇总
-
-https://mp.weixin.qq.com/s/5ba3EM6e9R-i3UpzUhm49w
-
-神经信息检索导论，微软研究员129页最新书册
-
-https://mp.weixin.qq.com/s/aZsj1FQnzHOr-YBcy_ljpw
-
-DNN在搜索场景中的应用
-
-https://mp.weixin.qq.com/s/1jgdI-Pt0PtN3oAs0Wh4XA
-
-阿里提出电商搜索全局排序方法，淘宝无线主搜GMV提升5%
-
-https://mp.weixin.qq.com/s/9Fcj5lO-JPfFVnRSSM_56w
-
-深度学习在美团搜索广告排序的应用实践
-
-https://mp.weixin.qq.com/s/wni3F9lKuO4OT32BVe0QDQ
-
-谷歌发大招：搜索全面AI化，不用关键词就能轻松“撩书”
-
-https://mp.weixin.qq.com/s/TrWwp-DBTrKqIT_Pfy_o5w
-
-阿里妈妈首次公开新一代智能广告检索模型，重新定义传统搜索框架
-
-https://mp.weixin.qq.com/s/fZv9FgbdQ1bWPoNdl9sF1A
-
-“宝石迷阵”与信息检索
-
-https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247488366&idx=1&sn=01baaf8b6c6a2c727bb9e0e2101f803b
-
-电商搜索算法技术的演进
-
-https://mp.weixin.qq.com/s/MpuUdZi8CWcu0b-ij-bHjA
-
-Jeff Dean出品：用机器学习索引替代B-Trees，3倍性能提升，10-100倍空间缩小
-
-https://mp.weixin.qq.com/s/uztYEW_azetOkOGiZcbCuw
-
-JeffDean又用深度学习搞事情：这次要颠覆整个计算机系统结构设计。这篇blog介绍了如何用DL方法提高内存访问的命中率。
-
-https://zhuanlan.zhihu.com/p/37020639
-
-读论文系列：CVPR2018 SSAH
-
-https://mp.weixin.qq.com/s/TdnstQaBcLaXg8BvuR7oYA
-
-基于素描图的细粒度图像检索
-
-https://mp.weixin.qq.com/s/N3JBHlqneG9dI0I26M3wHQ
-
-如何做好大规模视觉搜索？eBay基于实践总结出了7条建议
-
-https://mp.weixin.qq.com/s/8Twe3e3WKCY9pTiNtnW2sg
-
-重磅！谷歌等推出基于机器学习的数据库SageDB
-
-https://mp.weixin.qq.com/s/NJf5e25tvT_xKXLD7UY1AQ
-
-MySQL智能调度系统。这篇blog其实和MySQL关系不大，算是DL在负载均衡方面的应用吧。
 
 # NN Quantization
 
@@ -193,6 +83,30 @@ FP16相对于FP32，通常会有不到1%的精度损失。即使是不re-train�
 UINT量化使用bias将数据搬移到均值为0的区间。
 
 这篇论文的另一个贡献在于：原先的INT8量化是针对已经训练好的模型。而现在还可以在训练的时候就进行量化——前向计算进行量化，而反向的误差修正不做量化。
+
+## bfloat16
+
+bfloat16是Google针对AI领域的特殊情况提出的浮点格式。目前已有Intel的AI processors和Google的TPU，提供对该格式的原生支持。
+
+![](/images/img2/bfloat16.jpg)
+
+上图比较了bfloat16和IEEE fp32/fp16的差异。可以看出bfloat16有如下特点：
+
+1.bfloat16可以直接截取float32的前16位得到，所以在float32和bfloat16之间进行转换时非常容易。
+
+2.bfloat16的Dynamic Range比float16大，不容易下溢。这点在training阶段更为重要，梯度一般都挺小的，一旦下溢变成0，就传递不了了。
+
+3.bfloat16既可以用于训练又可以用于推断。Amazon也证明Deep Speech模型使用BFloat的训练和推断的效果都足够好。Uint8在大部分情况下不能用于训练，只能用于推断。
+
+参考：
+
+https://www.zhihu.com/question/275682777
+
+如何评价Google在TensorFlow中引入的bfloat16数据类型？
+
+https://zhuanlan.zhihu.com/p/56114254
+
+PAI自动混合精度训练---TensorCore硬件加速单元在阿里PAI平台落地应用实践
 
 ## Saturate Quantization
 

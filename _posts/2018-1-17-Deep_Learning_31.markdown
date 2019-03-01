@@ -126,6 +126,10 @@ http://cs.stanford.edu/people/danqi/
 
 陈丹琦，清华本科（姚班）（2012）+斯坦福博士生。
 
+http://theory.stanford.edu/~yuhch123/
+
+陈丹琦的老公俞华程也是个学霸。而且从高中就和陈丹琦同校，直到博士毕业。
+
 https://homes.cs.washington.edu/~luheng/
 
 何律恒，上海交大本科（2010）+宾夕法尼亚大学硕士（2012）+华盛顿大学博士生。

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十八）——数据增强, 语义分割
+title:  深度学习（十八）——数据增强, 深度信息检索, 语义分割
 category: DL 
 ---
 
@@ -49,6 +49,116 @@ https://mp.weixin.qq.com/s/sXV9epWguGbJEZYo4yNp5Q
 https://zhuanlan.zhihu.com/p/46833956
 
 图像数据增强之弹性形变（Elastic Distortions）
+
+# 深度信息检索
+
+Information Retrieval是用户进行信息查询和获取的主要方式，是查找信息的方法和手段。狭义的信息检索仅指信息查询（Information Search）。即用户根据需要，采用一定的方法，借助检索工具，从信息集合中找出所需要信息的查找过程。广义的信息检索是信息按一定的方式进行加工、整理、组织并存储起来，再根据信息用户特定的需要将相关信息准确的查找出来的过程。
+
+这方面的DL应用可参见以下的综述文章：
+
+《MatchZoo: A Toolkit for Deep Text Matching》
+
+## ARC-I & ARC-II
+
+《Convolutional neural network architectures for matching natural language sentences》
+
+## DSSM
+
+《Learning deep structured semantic models for web search using clickthrough data》
+
+## CDSSM
+
+《Learning semantic representations using convolutional neural networks for web search》
+
+## MV-LSTM
+
+《A deep architecture for semantic matching with multiple positional sentence representations》
+
+## CNTN
+
+《Convolutional Neural Tensor Network Architecture for Community-Based Question Answering》
+
+## DRMM
+
+《A deep relevance matching model for ad-hoc retrieval》
+
+## MatchPyramid
+
+《Text Matching as Image Recognition》
+
+## Match-SRNN
+
+《Match-SRNN: Modeling the Recursive Matching Structure with Spatial RNN》
+
+## K-NRM
+
+《End-to-End Neural Ad-hoc Ranking with Kernel Pooling》
+
+## 参考
+
+https://github.com/harpribot/awesome-information-retrieval
+
+信息检索优质资源汇总
+
+https://mp.weixin.qq.com/s/5ba3EM6e9R-i3UpzUhm49w
+
+神经信息检索导论，微软研究员129页最新书册
+
+https://mp.weixin.qq.com/s/aZsj1FQnzHOr-YBcy_ljpw
+
+DNN在搜索场景中的应用
+
+https://mp.weixin.qq.com/s/1jgdI-Pt0PtN3oAs0Wh4XA
+
+阿里提出电商搜索全局排序方法，淘宝无线主搜GMV提升5%
+
+https://mp.weixin.qq.com/s/9Fcj5lO-JPfFVnRSSM_56w
+
+深度学习在美团搜索广告排序的应用实践
+
+https://mp.weixin.qq.com/s/wni3F9lKuO4OT32BVe0QDQ
+
+谷歌发大招：搜索全面AI化，不用关键词就能轻松“撩书”
+
+https://mp.weixin.qq.com/s/TrWwp-DBTrKqIT_Pfy_o5w
+
+阿里妈妈首次公开新一代智能广告检索模型，重新定义传统搜索框架
+
+https://mp.weixin.qq.com/s/fZv9FgbdQ1bWPoNdl9sF1A
+
+“宝石迷阵”与信息检索
+
+https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247488366&idx=1&sn=01baaf8b6c6a2c727bb9e0e2101f803b
+
+电商搜索算法技术的演进
+
+https://mp.weixin.qq.com/s/MpuUdZi8CWcu0b-ij-bHjA
+
+Jeff Dean出品：用机器学习索引替代B-Trees，3倍性能提升，10-100倍空间缩小
+
+https://mp.weixin.qq.com/s/uztYEW_azetOkOGiZcbCuw
+
+JeffDean又用深度学习搞事情：这次要颠覆整个计算机系统结构设计。这篇blog介绍了如何用DL方法提高内存访问的命中率。
+
+https://zhuanlan.zhihu.com/p/37020639
+
+读论文系列：CVPR2018 SSAH
+
+https://mp.weixin.qq.com/s/TdnstQaBcLaXg8BvuR7oYA
+
+基于素描图的细粒度图像检索
+
+https://mp.weixin.qq.com/s/N3JBHlqneG9dI0I26M3wHQ
+
+如何做好大规模视觉搜索？eBay基于实践总结出了7条建议
+
+https://mp.weixin.qq.com/s/8Twe3e3WKCY9pTiNtnW2sg
+
+重磅！谷歌等推出基于机器学习的数据库SageDB
+
+https://mp.weixin.qq.com/s/NJf5e25tvT_xKXLD7UY1AQ
+
+MySQL智能调度系统。这篇blog其实和MySQL关系不大，算是DL在负载均衡方面的应用吧。
 
 # 语义分割
 

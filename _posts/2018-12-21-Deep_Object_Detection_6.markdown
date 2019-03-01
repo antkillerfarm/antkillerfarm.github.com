@@ -174,6 +174,10 @@ https://mp.weixin.qq.com/s/flXzhQ-Ypf3fwTqLelLzOQ
 
 李沐等将目标检测绝对精度提升5%，不牺牲推理速度
 
+https://mp.weixin.qq.com/s/6QsyYtEVjavoLfU_lQF1pw
+
+目标检测新文：Generalized Intersection over Union
+
 # Flink
 
 Flink是一个流计算引擎。

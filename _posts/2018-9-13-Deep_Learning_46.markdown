@@ -76,6 +76,16 @@ https://www.cnblogs.com/lillylin/p/9315180.html
 
 论文阅读笔记
 
+## CTPN
+
+https://zhuanlan.zhihu.com/p/34757009
+
+场景文字检测—CTPN原理与实现
+
+https://mp.weixin.qq.com/s/lV2yjhvnRLDfNbZXOSjofg
+
+ctpn：图像文字检测方法
+
 ## 参考
 
 https://mp.weixin.qq.com/s/h7HVyGbmtLmNVJp4p0rCRQ
@@ -133,14 +143,6 @@ tensorflow LSTM+CTC/warpCTC使用详解
 https://mp.weixin.qq.com/s/k0dRu1wx49HTi_oJYJEGPw
 
 阿里提出IncepText：全新多向场景文本检测模块
-
-https://zhuanlan.zhihu.com/p/34757009
-
-场景文字检测—CTPN原理与实现
-
-https://mp.weixin.qq.com/s/lV2yjhvnRLDfNbZXOSjofg
-
-ctpn：图像文字检测方法
 
 https://mp.weixin.qq.com/s/h3VaKs0Pc44n-hXYNlkALA
 
@@ -225,6 +227,10 @@ https://mp.weixin.qq.com/s/_znXs8pkfgmWsb26HIfhLQ
 https://mp.weixin.qq.com/s/JA6ey6N3Zho92L6jh_bRkg
 
 EAST场景文字检测模型使用
+
+https://mp.weixin.qq.com/s/uMzx_U-wx94GRTQtM11d8Q
+
+OCR技术在携程业务中的应用
 
 # 深度哈希
 

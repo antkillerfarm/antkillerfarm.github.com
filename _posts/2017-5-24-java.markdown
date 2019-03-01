@@ -158,6 +158,10 @@ https://mp.weixin.qq.com/s/h3MB8p0sEA7VnrMXFq9NBA
 
 Java魔法类：Unsafe应用解析
 
+https://mp.weixin.qq.com/s/_hSaI5yMvPTWxvFgl-UItA
+
+Java动态追踪技术探究
+
 # 孩子的编程语言
 
 ## 概述

@@ -64,6 +64,14 @@ $$W=UI=\frac{U^2}{R}=I^2R$$
 
 >注：Marc-Antoine Parseval des Chênes，1755～1836，法国数学家。曾5次参选法国科学院院士，但都落选了。
 
+## Maxima
+
+微积分的数值解很多软件都能计算，但解析解就不行了。Maxima就是这样一款Computer Algebra System的软件。
+
+官网：
+
+http://maxima.sourceforge.net/
+
 # 欧拉公式
 
 由于欧拉大神的贡献很多，数学上以其命名的公式也有很多，而且知名度都不低。日常使用时，如果不以领域做区分，人们根本就不知道谈论的是哪个欧拉公式。

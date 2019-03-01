@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十三）——机器学习的算法体系&相关术语表, simhash, ACBM算法, 高斯过程回归
+title:  机器学习（三十三）——机器学习的算法体系&相关术语表, ACBM算法, 高斯过程回归
 category: ML 
 ---
 
@@ -27,6 +27,10 @@ AdaBoost元算法如何提高分类性能——机器学习实战
 https://mp.weixin.qq.com/s/MLEVUKse5usmKIWJF-yfOQ
 
 通俗易懂讲解自适应提升算法AdaBoost
+
+https://mp.weixin.qq.com/s/VuDAdeVsoZsTokh3n_wWFw
+
+一文详解机器学习中最好用的提升方法：Boosting与AdaBoost
 
 # 机器学习的算法体系&相关术语表
 
@@ -142,50 +146,6 @@ https://mp.weixin.qq.com/s/6KRNawRE1i8de3ctgv6aVg
 https://mp.weixin.qq.com/s/AtImcIBaRIJVXpOP2hruBQ
 
 Google发布机器学习术语表 (包括简体中文)
-
-# simhash
-
-simhash是一种能计算文档相似度的hash算法。
-
-论文：
-
-《Detecting Near-Duplicates for Web Crawling》
-
-代码：
-
-https://github.com/yanyiwu/simhash
-
-类似的相似度Hash算法，还有用于图像搜索的aHash、pHash、dHash。
-
-参考：
-
-https://www.biaodianfu.com/simhash.html
-
-文本内容相似度计算方法：simhash
-
-http://www.cnblogs.com/chenwenbiao/archive/2011/09/12/2174139.html
-
-simhash算法的原理
-
-http://www.cnblogs.com/chenwenbiao/archive/2011/09/12/2174137.html
-
-simhash与Google的网页去重
-
-http://blog.jobbole.com/21928/
-
-Simhash算法原理和网页查重应用
-
-https://blog.csdn.net/luoweifu/article/details/8220992
-
-看起来像它——图像搜索其实也不难
-
-https://www.jianshu.com/p/193f0089b7a2
-
-相似图片检测：感知哈希算法之dHash的Python实现
-
-https://mp.weixin.qq.com/s/vwhetMpQllczILptBNcoWg
-
-基于快速GeoHash，如何实现海量商品与商圈的高效匹配？
 
 # ACBM算法
 
