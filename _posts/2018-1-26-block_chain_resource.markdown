@@ -330,6 +330,14 @@ https://mp.weixin.qq.com/s/elSezCSBPnuEqOFmHACLVg
 
 24GHz雷达的应用案例
 
+https://mp.weixin.qq.com/s/SgUcLH3kfRVha661PLyMeg
+
+体声波(BAW)是什么？
+
+https://mp.weixin.qq.com/s/zX2Jy5a32AVnhOUeLgS_wA
+
+摄像头、雷达、激光雷达——自动驾驶几大传感器系统大揭秘
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/l4W7qmKJ4Pc-rlF-KvhrPA

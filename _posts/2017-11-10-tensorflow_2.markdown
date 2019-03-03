@@ -34,6 +34,10 @@ https://mp.weixin.qq.com/s/Zaz9hmTuUbd-hCx-zHhBgg
 
 TensorBoard：可视化学习
 
+https://mp.weixin.qq.com/s/Kc-DqiuG2kn0NlVxkcNa4w
+
+TensorBoard直方图信息中心
+
 ## 模型文件
 
 tensorflow model包含2个文件：

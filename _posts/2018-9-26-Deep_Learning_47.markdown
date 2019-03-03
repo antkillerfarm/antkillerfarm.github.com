@@ -280,6 +280,10 @@ https://mp.weixin.qq.com/s/1glxeUx-4DCWRjJQMW7IiQ
 
 语音合成论文与韩国小哥“撞车”后续：英伟达“赶紧”把代码开源了
 
+https://mp.weixin.qq.com/s/c1QSGia52ICTc25i-C91Rg
+
+GAN跨界合成高保真音乐，Jeff Dean听了都陶醉
+
 # 深度图像压缩
 
 Tiny Network Graphics是图鸭科技推出一种基于深度学习的图片压缩技术。由于商业因素，这里没有论文，技术细节也不详，但是下图应该还是有些用的。

@@ -172,9 +172,13 @@ https://mp.weixin.qq.com/s/tWaKMFZ4dQX7kZlT3tiDAQ
 
 https://mp.weixin.qq.com/s/I7mpy5P7LFFkop618ANLtA
 
-这份攻略帮你“稳住”反复无常的 GAN
+这份攻略帮你“稳住”反复无常的GAN
 
 # 深度推理
+
+https://mp.weixin.qq.com/s/rE96BprEO1ZatVOQeO-4YA
+
+因果推理学习算法资源大列表
 
 https://mp.weixin.qq.com/s/RS39wqZDf6gEhOY6gcOVSA
 
@@ -231,6 +235,10 @@ https://mp.weixin.qq.com/s/GYe1psxy1KMCbV7f3K8f4Q
 https://mp.weixin.qq.com/s/-qc2MENppQmdClaIKV6Lww
 
 深度推理学习中的图网络与关系表征
+
+https://mp.weixin.qq.com/s/_FHXhfZ7TEpBzVf5kB0BsA
+
+为思想“层次”建模，递归推理让AI更聪明
 
 # LSM
 
@@ -343,6 +351,10 @@ Facebook推出最新跨语言预训练模型，刷新多项跨语言任务记录
 https://mp.weixin.qq.com/s/C0p1U0-x6aRipvYJItn8-g
 
 Transformer在进化！谷歌大脑用架构搜索方法找到Evolved Transformer
+
+https://mp.weixin.qq.com/s/E7wygpWbSHoq6R7wlalFkA
+
+放弃幻想，全面拥抱Transformer！NLP三大特征抽取器（CNN/RNN/TF）比较
 
 # DMN
 

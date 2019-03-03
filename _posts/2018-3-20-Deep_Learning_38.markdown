@@ -180,6 +180,10 @@ https://mp.weixin.qq.com/s/MPhKUosKZbLtVjJ1XYGXYA
 
 如何利用深度学习模型实现多任务学习？这里有三点经验
 
+https://mp.weixin.qq.com/s/Oopgglg2G7TwnXeN2DtZhA
+
+多任务+注意力机制的学习
+
 # RNN进阶
 
 ## IndRNN

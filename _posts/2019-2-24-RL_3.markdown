@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  强化学习（三）——动态规划, 模仿学习
+title:  强化学习（三）——动态规划, Monte-Carlo
 category: RL 
 ---
 
@@ -164,26 +164,94 @@ https://mp.weixin.qq.com/s/fTQbatHpZFxxU6VGhJNVrg
 
 0-1背包问题的动态规划算法
 
-# A2C
+# Monte-Carlo
 
-https://zhuanlan.zhihu.com/p/51652845
+## 概率算法
 
-强化学习这都学不会的话，咳咳，你过来下！
+概率算法是和确定性算法相对的概念。概率算法的一个基本特征是对所求解问题的同一实例用同一概率算法求解两次，可能得到完全不同的效果。这两次求解问题所需的时间甚至所得到的结果，可能会有相当大的差别。
 
-# 模仿学习
+常见的概率算法主要有：数值概率算法，舍伍德（Sherwood）算法，蒙特卡罗（Monte Carlo）算法和拉斯维加斯（Las Vegas）算法。
 
-https://zhuanlan.zhihu.com/p/27935902
+在《数学狂想曲（三）》中我们已经提到了“统计模拟”的概念，这实际上就是数值概率算法的应用，它主要利用了大数定律与强大数定律。
 
-机器人学习Robot Learning之模仿学习Imitation Learning的发展
+这里有两个容易混淆的概念：**Monte Carlo method**和**Monte Carlo algorithm**。
 
-https://zhuanlan.zhihu.com/p/25688750
+Monte Carlo method这个概念的范围非常广，它实际上就是概率算法的别名。诸如用随机投针计算圆周率之类的算法，都可以看作是Monte Carlo method。
 
-模仿学习（Imitation Learning）完全介绍
+Monte Carlo algorithm就要狭义的多了，详情见下文。
 
-https://mp.weixin.qq.com/s/naq73D27vsCOUBperKto8A
+## 舍伍德（Sherwood）算法
 
-从监督式到DAgger，综述论文描绘模仿学习全貌
+设A是一个确定算法，$$f(x)$$是解某个实例x的执行时间，设n是一整数，$$X_n$$是大小为n的实例的集合.假定$$X_n$$中每一个实例是等可能出现的，则算法A解$$X_n$$中一个实例的平均执行时间是:
 
-https://mp.weixin.qq.com/s/LNNqp2KsEAljG26hY43mUw
+$$\overline{f(x)}=\sum_{x\in X_n}f(x)/n$$
 
-ICML2018 模仿学习教程
+假如存在一个实例$$x_0$$使得$$f(x_0)\gg \overline{f(x)}$$，比如快速排序在最坏情况下的复杂度$$O(n)\gg O(n\log n)$$。这时使用sherwood对原始算法进行改进是有价值的。
+
+Sherwood算法通过增加一个较小的额外开销从而使得算法的复杂度与具体实例x无关。例如，在快速排序中，我们是以第一个元素为基准开始排序时，为了避免这样的情况，可以用舍伍德算法解决，也就是使第一个基准元素是随机的。
+
+## 蒙特卡罗（Monte Carlo）算法
+
+举个例子，假如筐里有100个苹果，让我每次闭眼拿1个，挑出最大的。于是我随机拿1个，再随机拿1个跟它比，留下大的，再随机拿1个……我每拿一次，留下的苹果都至少不比上次的小。拿的次数越多，挑出的苹果就越大，但我除非拿100次，否则无法肯定挑出了最大的。这个挑苹果的算法，就属于蒙特卡罗算法——**尽量找好的，但不保证是最好的**。
+
+## 拉斯维加斯（Las Vegas）算法
+
+假如有一把锁，给我100把钥匙，只有1把是对的。于是我每次随机拿1把钥匙去试，打不开就再换1把。我试的次数越多，打开（最优解）的机会就越大，但在打开之前，那些错的钥匙都是没有用的。这个试钥匙的算法，就是拉斯维加斯算法——**尽量找最好的，但不保证能找到**。
+
+比如N皇后的排列问题，除了顺序枚举法之外，随机枚举也是一种策略。
+
+## Monte Carlo method与RL
+
+MDP的缺点在于model是已知的，但在实际应用中，更多的是Model未知（或部分未知）或者建模困难的情况，这种情况下就需要使用MC method来生成相应的Model。
+
+MC method在RL中主要有两种使用方式：
+
+model-free：完全不依赖Model。
+
+Simulated：简单的模拟，而不需要完整的Model。
+
+MC method用experience替代了MDP中的transitions/rewards（也可以说是用empirical mean替代了expected），但需要注意这些experience不能是重复采样的，而且它只适用于周期性的MDP。
+
+## Monte Carlo Policy Evaluation
+
+Monte Carlo Policy Evaluation的目标是对状态s进行估值。它的步骤是：
+
+>当s被访问到(visited)时:   
+>>增加计数：$$N(s)\leftarrow N(s) + 1$$   
+>>增加总奖励：$$S(s)\leftarrow S(s) + G_t$$   
+>>$$V(s) = S(s)/N(s)$$   
+>反复多次：$$N(s)\to \infty,V(s)\to v_{\pi}(s)$$
+
+根据Visit的策略不同，Monte Carlo Policy Evaluation又可分为：First-visit MC和Every-Visit MC。
+
+两者的差别在于：First-visit MC的每次探索，一旦抵达状态s，就结束了，Every-Visit MC到达状态s之后还可以继续探索。
+
+## Incremental Monte-Carlo Updates
+
+借用《机器学习（二十六）》中，求均值的小技巧，我们可以得到Incremental Mean。
+
+用Incremental Mean进行更新，被称作Incremental Monte-Carlo Updates：
+
+$$V(S_t)\leftarrow V(S_t)+\frac{1}{N(S_t)}(G_t-V(S_t))$$
+
+对于非平稳（non-stationary）问题，我们也可采用如下公式更新：
+
+$$V(S_t)\leftarrow V(S_t)+\alpha(G_t-V(S_t))$$
+
+## 参考
+
+https://mp.weixin.qq.com/s/F9VlxVV4nXELyKxdRo9RPA
+
+强化学习——蒙特卡洛
+
+https://www.zhihu.com/question/20254139
+
+蒙特卡罗算法是什么？
+
+http://www.cnblogs.com/2010Freeze/archive/2011/09/19/2181016.html
+
+概率算法-sherwood算法
+
+http://www.cnblogs.com/chinazhangjie/archive/2010/11/11/1874924.html
+
+概率算法

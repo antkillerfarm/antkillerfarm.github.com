@@ -1,0 +1,57 @@
+---
+layout: post
+title:  强化学习（四）——模仿学习
+category: RL 
+---
+
+# Monte-Carlo
+
+## 参考（续）
+
+https://mp.weixin.qq.com/s/wfCyii6bS-GxMZPg2TPaLA
+
+蒙特卡洛树搜索是什么？如何将其用于规划星际飞行？
+
+https://mp.weixin.qq.com/s/tqhPGG2Djl4gnd09RdHsUA
+
+一个彻底改变世界的思想
+
+https://mp.weixin.qq.com/s/vKVX-aJ7n7VVDXOpoTo1GQ
+
+通过Python实现马尔科夫链蒙特卡罗方法的入门级应用
+
+https://mp.weixin.qq.com/s/TMHaIRFdgJxG__1oqRq70Q
+
+蒙特卡罗树搜索之初学者指南
+
+https://mp.weixin.qq.com/s/HlDRI1s16k2k8RDh0GoXcw
+
+详解蒙特卡洛方法：这些数学你搞懂了吗？
+
+https://mp.weixin.qq.com/s/yGQSihfBDcXgqBnvvpQDog
+
+蒙特卡罗方法入门
+
+# A2C
+
+https://zhuanlan.zhihu.com/p/51652845
+
+强化学习这都学不会的话，咳咳，你过来下！
+
+# 模仿学习
+
+https://zhuanlan.zhihu.com/p/27935902
+
+机器人学习Robot Learning之模仿学习Imitation Learning的发展
+
+https://zhuanlan.zhihu.com/p/25688750
+
+模仿学习（Imitation Learning）完全介绍
+
+https://mp.weixin.qq.com/s/naq73D27vsCOUBperKto8A
+
+从监督式到DAgger，综述论文描绘模仿学习全貌
+
+https://mp.weixin.qq.com/s/LNNqp2KsEAljG26hY43mUw
+
+ICML2018 模仿学习教程

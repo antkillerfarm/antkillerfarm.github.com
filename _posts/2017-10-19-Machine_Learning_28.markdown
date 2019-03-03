@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十八）——异常检测, Monte-Carlo
+title:  机器学习（二十八）——异常检测, AutoML
 category: ML 
 ---
 
@@ -74,121 +74,147 @@ https://mp.weixin.qq.com/s/l1OKsahXHrFGr4YX441c9A
 
 时序数据异常检测工具/数据集大列表
 
-# Monte-Carlo
+# AutoML
 
-## 概率算法
+## 概述
 
-概率算法是和确定性算法相对的概念。概率算法的一个基本特征是对所求解问题的同一实例用同一概率算法求解两次，可能得到完全不同的效果。这两次求解问题所需的时间甚至所得到的结果，可能会有相当大的差别。
+尽管现在已经有许多成熟的ML算法，然而大多数ML任务仍依赖于专业人员的手工编程实现。
 
-常见的概率算法主要有：数值概率算法，舍伍德（Sherwood）算法，蒙特卡罗（Monte Carlo）算法和拉斯维加斯（Las Vegas）算法。
+然而但凡做过若干同类项目的人都明白，在算法选择和参数调优的过程中，有大量的套路可以遵循。
 
-在《数学狂想曲（三）》中我们已经提到了“统计模拟”的概念，这实际上就是数值概率算法的应用，它主要利用了大数定律与强大数定律。
+比如有人就总结出参加kaggle比赛的套路：
 
-这里有两个容易混淆的概念：**Monte Carlo method**和**Monte Carlo algorithm**。
+http://www.jianshu.com/p/63ef4b87e197
 
-Monte Carlo method这个概念的范围非常广，它实际上就是概率算法的别名。诸如用随机投针计算圆周率之类的算法，都可以看作是Monte Carlo method。
+一个框架解决几乎所有机器学习问题
 
-Monte Carlo algorithm就要狭义的多了，详情见下文。
+https://mlwave.com/kaggle-ensembling-guide/
 
-## 舍伍德（Sherwood）算法
+Kaggle Ensembling Guide
 
-设A是一个确定算法，$$f(x)$$是解某个实例x的执行时间，设n是一整数，$$X_n$$是大小为n的实例的集合.假定$$X_n$$中每一个实例是等可能出现的，则算法A解$$X_n$$中一个实例的平均执行时间是:
+既然是套路，那么就有将之自动化的可能，比如下面网页中，就有好几个AutoML的框架：
 
-$$\overline{f(x)}=\sum_{x\in X_n}f(x)/n$$
+https://mp.weixin.qq.com/s/QIR_l8OqvCQzXXXVY2WA1w
 
-假如存在一个实例$$x_0$$使得$$f(x_0)\gg \overline{f(x)}$$，比如快速排序在最坏情况下的复杂度$$O(n)\gg O(n\log n)$$。这时使用sherwood对原始算法进行改进是有价值的。
+十大你不可忽视的机器学习项目
 
-Sherwood算法通过增加一个较小的额外开销从而使得算法的复杂度与具体实例x无关。例如，在快速排序中，我们是以第一个元素为基准开始排序时，为了避免这样的情况，可以用舍伍德算法解决，也就是使第一个基准元素是随机的。
+下面给几个套路图：
 
-## 蒙特卡罗（Monte Carlo）算法
+![](/images/article/ML.png)
 
-举个例子，假如筐里有100个苹果，让我每次闭眼拿1个，挑出最大的。于是我随机拿1个，再随机拿1个跟它比，留下大的，再随机拿1个……我每拿一次，留下的苹果都至少不比上次的小。拿的次数越多，挑出的苹果就越大，但我除非拿100次，否则无法肯定挑出了最大的。这个挑苹果的算法，就属于蒙特卡罗算法——**尽量找好的，但不保证是最好的**。
+![](/images/article/AutoML.jpg)
 
-## 拉斯维加斯（Las Vegas）算法
+![](/images/img2/AutoNLP.png)
 
-假如有一把锁，给我100把钥匙，只有1把是对的。于是我每次随机拿1把钥匙去试，打不开就再换1把。我试的次数越多，打开（最优解）的机会就越大，但在打开之前，那些错的钥匙都是没有用的。这个试钥匙的算法，就是拉斯维加斯算法——**尽量找最好的，但不保证能找到**。
+## 超参数
 
-比如N皇后的排列问题，除了顺序枚举法之外，随机枚举也是一种策略。
+所谓hyper-parameters，就是机器学习模型里面的框架参数，比如聚类方法里面类的个数，或者话题模型里面话题的个数等等，都称为超参数。它们跟训练过程中学习的参数（权重）是不一样的，通常是手工设定，不断试错调整，或者对一系列穷举出来的参数组合一通枚举（叫做网格搜索）。
 
-## Monte Carlo method与RL
+AutoML很大程度上就是自动化寻找合适的hyper-parameters的方案或方法。
 
-MDP的缺点在于model是已知的，但在实际应用中，更多的是Model未知（或部分未知）或者建模困难的情况，这种情况下就需要使用MC method来生成相应的Model。
+参见：
 
-MC method在RL中主要有两种使用方式：
+http://blog.csdn.net/xiewenbo/article/details/51585054
 
-model-free：完全不依赖Model。
+什么是超参数
 
-Simulated：简单的模拟，而不需要完整的Model。
+http://www.cnblogs.com/fhsy9373/p/6993675.html
 
-MC method用experience替代了MDP中的transitions/rewards（也可以说是用empirical mean替代了expected），但需要注意这些experience不能是重复采样的，而且它只适用于周期性的MDP。
+如何选取一个神经网络中的超参数hyper-parameters
 
-## Monte Carlo Policy Evaluation
+https://mp.weixin.qq.com/s/Q7Xqb-GZXktFIM5yW8moPg
 
-Monte Carlo Policy Evaluation的目标是对状态s进行估值。它的步骤是：
-
->当s被访问到(visited)时:   
->>增加计数：$$N(s)\leftarrow N(s) + 1$$   
->>增加总奖励：$$S(s)\leftarrow S(s) + G_t$$   
->>$$V(s) = S(s)/N(s)$$   
->反复多次：$$N(s)\to \infty,V(s)\to v_{\pi}(s)$$
-
-根据Visit的策略不同，Monte Carlo Policy Evaluation又可分为：First-visit MC和Every-Visit MC。
-
-两者的差别在于：First-visit MC的每次探索，一旦抵达状态s，就结束了，Every-Visit MC到达状态s之后还可以继续探索。
-
-## Incremental Monte-Carlo Updates
-
-借用《机器学习（二十六）》中，求均值的小技巧，我们可以得到Incremental Mean。
-
-用Incremental Mean进行更新，被称作Incremental Monte-Carlo Updates：
-
-$$V(S_t)\leftarrow V(S_t)+\frac{1}{N(S_t)}(G_t-V(S_t))$$
-
-对于非平稳（non-stationary）问题，我们也可采用如下公式更新：
-
-$$V(S_t)\leftarrow V(S_t)+\alpha(G_t-V(S_t))$$
+机器学习中的超参数的选择与交叉验证
 
 ## 参考
 
-https://mp.weixin.qq.com/s/F9VlxVV4nXELyKxdRo9RPA
+https://mp.weixin.qq.com/s/-0--sZXjMvFKxxo87w4udg
 
-强化学习——蒙特卡洛
+自动机器学习工具全景图：精选22种框架，解放炼丹师
 
-https://www.zhihu.com/question/20254139
+http://blog.csdn.net/aliceyangxi1987/article/details/71079448
 
-蒙特卡罗算法是什么？
+一个框架解决几乎所有机器学习问题
 
-http://www.cnblogs.com/2010Freeze/archive/2011/09/19/2181016.html
+https://docs.microsoft.com/en-us/azure/machine-learning/machine-learning-algorithm-cheat-sheet
 
-概率算法-sherwood算法
+MS提供的ML算法选择指南
 
-http://www.cnblogs.com/chinazhangjie/archive/2010/11/11/1874924.html
+https://mp.weixin.qq.com/s/53AcAZcCKBZI-i1CORl0bQ
 
-概率算法
+分分钟带你杀入Kaggle Top 1%
 
-https://mp.weixin.qq.com/s/wfCyii6bS-GxMZPg2TPaLA
+https://mp.weixin.qq.com/s/NwVGkAcoDmyXKrYFUaK2Bw
 
-蒙特卡洛树搜索是什么？如何将其用于规划星际飞行？
+如何在机器学习竞赛中更胜一筹？
 
-https://mp.weixin.qq.com/s/tqhPGG2Djl4gnd09RdHsUA
+https://mp.weixin.qq.com/s/5v80Qz2nEfoAig0ft_HzaA
 
-一个彻底改变世界的思想
+Kaggle求生
 
-https://mp.weixin.qq.com/s/vKVX-aJ7n7VVDXOpoTo1GQ
+https://mp.weixin.qq.com/s/K3EVwRFBJufXK5QKSQsPbQ
 
-通过Python实现马尔科夫链蒙特卡罗方法的入门级应用
+这是一份为数据科学初学者准备的Kaggle竞赛指南
 
-https://mp.weixin.qq.com/s/TMHaIRFdgJxG__1oqRq70Q
+https://mp.weixin.qq.com/s/hf4IOAayS29i6GB9m4GHcA
 
-蒙特卡罗树搜索之初学者指南
+全自动机器学习：ML工程师屠龙利器
 
-https://mp.weixin.qq.com/s/HlDRI1s16k2k8RDh0GoXcw
+https://mp.weixin.qq.com/s/h2QQhoBfnEhU12RgatT3EA
 
-详解蒙特卡洛方法：这些数学你搞懂了吗？
+机器学习都能自动化了？
 
-https://mp.weixin.qq.com/s/yGQSihfBDcXgqBnvvpQDog
+https://mp.weixin.qq.com/s/-n-5Cp_hgkvdmsHGWEIpWw
 
-蒙特卡罗方法入门
+自动化机器学习第一步：使用Hyperopt自动选择超参数
+
+https://mp.weixin.qq.com/s/Nbwii7Di_h5Ewy5p5xzBdQ
+
+解决机器学习问题有通法
+
+http://automl.info/
+
+某牛的blog
+
+https://mp.weixin.qq.com/s/gXkD2PPNRhZGcXDxDXRAiQ
+
+由0到1走入Kaggle-入门指导
+
+https://mp.weixin.qq.com/s/2ZwhNN7kqigwRLqRnUOENw
+
+谷歌做了45万次不同类型的文本分类后，总结出一个通用的“模型选择算法”
+
+https://mp.weixin.qq.com/s/WQ-8OvF9-fRpRf5lgr5_iw
+
+一种简单有效的网络结构搜索
+
+https://mp.weixin.qq.com/s/g8U2C9bi75mE5OqWLPkgQw
+
+自动化学习框架（AutoML）的性能比较
+
+https://mp.weixin.qq.com/s/DkZGkI-CnEHfhXTDyp2nHQ
+
+超参数搜索不够高效？这几大策略了解一下
+
+https://zhuanlan.zhihu.com/p/48642938
+
+分享一篇比较全面的AutoML综述
+
+https://mp.weixin.qq.com/s/zE8N5snKK2EoM9WgAhI-_g
+
+NeurIPS 2018 AutoML Phase1 冠军队伍 DeepSmart 团队解决方案分享
+
+https://mp.weixin.qq.com/s/z6CaHP7I4WkJAu-eAJPwAg
+
+自动机器学习计算量大！这种多保真度优化技术是走向应用的关键
+
+https://mp.weixin.qq.com/s/JPAZTdvcxY3sgWukbn3ScQ
+
+AutoML在推荐系统中的应用
+
+https://mp.weixin.qq.com/s/95FH-_L5smx7WoNnfucWVg
+
+为什么说自动化特征工程将改变机器学习的方式
 
 # Temporal-Difference Learning
 

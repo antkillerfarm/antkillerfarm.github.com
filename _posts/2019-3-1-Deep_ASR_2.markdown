@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度语音识别（二）——参考资源
+title:  深度语音识别（二）——语音识别参考资源
 category: speech 
 ---
 
@@ -44,7 +44,7 @@ https://github.com/baidu-research/warp-ctc
 
 https://github.com/xmfbit/warpctc-caffe
 
-# 参考资源
+# 语音识别参考资源
 
 https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=400189223&idx=1&sn=1cb32bee42de626443ebadbf065ec79c
 

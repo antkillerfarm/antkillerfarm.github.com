@@ -1,10 +1,40 @@
 ---
 layout: post
-title:  机器学习（二十三）——AutoML, Optimizer
+title:  机器学习（二十三）——HMM, Optimizer
 category: ML 
 ---
 
 # HMM（续）
+
+## Viterbi算法
+
+Viterbi算法是求解最大似然状态路径的常用算法，被广泛应用于通信（CDMA技术的理论基础之一）和NLP领域。
+
+>注：Andrew James Viterbi，1935年生，意大利裔美国工程师、企业家，高通公司联合创始人。MIT本硕+南加州大学博士。viterbi算法和CDMA标准的主要发明人。
+
+![](/images/article/HMM_4.png)
+
+上图是一个HMM模型的概率图表示，其中{'Healthy','Fever'}是隐含状态，而{'normal','cold','dizzy'}是可见状态，边是各状态的转移概率。
+
+![](/images/article/Viterbi_animated_demo.gif)
+
+上图是Viterbi算法的动画图。简单来说就是：从开始状态之后每走一步，就记录下到达该状态的所有路径的概率最大值，然后以此最大值为基准继续向后推进。显然，如果这个最大值都不能使该状态成为最大似然状态路径上的结点的话，那些小于它的概率值（以及对应的路径）就更没有可能了。
+
+Viterbi算法只能求出最佳路径，对于N-best问题就需要进行扩展方可。
+
+参考：
+
+https://mp.weixin.qq.com/s/FQ520ojMmbFhNMoNCVTKug
+
+通俗理解维特比算法
+
+https://www.zhihu.com/question/20136144
+
+谁能通俗的讲解下viterbi算法？
+
+https://mp.weixin.qq.com/s/xyWY3Z5PiHkCFzCP0noBvA
+
+一文读懂HMM模型和Viterbi算法
 
 ## 前向算法
 
@@ -59,148 +89,6 @@ HMM的Baum-Welch算法和Viterbi算法公式推导细节
 http://blog.sina.com.cn/s/blog_8267db980102wq4l.html
 
 HMM识别新词
-
-# AutoML
-
-## 概述
-
-尽管现在已经有许多成熟的ML算法，然而大多数ML任务仍依赖于专业人员的手工编程实现。
-
-然而但凡做过若干同类项目的人都明白，在算法选择和参数调优的过程中，有大量的套路可以遵循。
-
-比如有人就总结出参加kaggle比赛的套路：
-
-http://www.jianshu.com/p/63ef4b87e197
-
-一个框架解决几乎所有机器学习问题
-
-https://mlwave.com/kaggle-ensembling-guide/
-
-Kaggle Ensembling Guide
-
-既然是套路，那么就有将之自动化的可能，比如下面网页中，就有好几个AutoML的框架：
-
-https://mp.weixin.qq.com/s/QIR_l8OqvCQzXXXVY2WA1w
-
-十大你不可忽视的机器学习项目
-
-下面给几个套路图：
-
-![](/images/article/ML.png)
-
-![](/images/article/AutoML.jpg)
-
-![](/images/img2/AutoNLP.png)
-
-## 超参数
-
-所谓hyper-parameters，就是机器学习模型里面的框架参数，比如聚类方法里面类的个数，或者话题模型里面话题的个数等等，都称为超参数。它们跟训练过程中学习的参数（权重）是不一样的，通常是手工设定，不断试错调整，或者对一系列穷举出来的参数组合一通枚举（叫做网格搜索）。
-
-AutoML很大程度上就是自动化寻找合适的hyper-parameters的方案或方法。
-
-参见：
-
-http://blog.csdn.net/xiewenbo/article/details/51585054
-
-什么是超参数
-
-http://www.cnblogs.com/fhsy9373/p/6993675.html
-
-如何选取一个神经网络中的超参数hyper-parameters
-
-https://mp.weixin.qq.com/s/Q7Xqb-GZXktFIM5yW8moPg
-
-机器学习中的超参数的选择与交叉验证
-
-## 参考
-
-https://mp.weixin.qq.com/s/-0--sZXjMvFKxxo87w4udg
-
-自动机器学习工具全景图：精选22种框架，解放炼丹师
-
-http://blog.csdn.net/aliceyangxi1987/article/details/71079448
-
-一个框架解决几乎所有机器学习问题
-
-https://docs.microsoft.com/en-us/azure/machine-learning/machine-learning-algorithm-cheat-sheet
-
-MS提供的ML算法选择指南
-
-https://mp.weixin.qq.com/s/53AcAZcCKBZI-i1CORl0bQ
-
-分分钟带你杀入Kaggle Top 1%
-
-https://mp.weixin.qq.com/s/NwVGkAcoDmyXKrYFUaK2Bw
-
-如何在机器学习竞赛中更胜一筹？
-
-https://mp.weixin.qq.com/s/5v80Qz2nEfoAig0ft_HzaA
-
-Kaggle求生
-
-https://mp.weixin.qq.com/s/K3EVwRFBJufXK5QKSQsPbQ
-
-这是一份为数据科学初学者准备的Kaggle竞赛指南
-
-https://mp.weixin.qq.com/s/hf4IOAayS29i6GB9m4GHcA
-
-全自动机器学习：ML工程师屠龙利器
-
-https://mp.weixin.qq.com/s/h2QQhoBfnEhU12RgatT3EA
-
-机器学习都能自动化了？
-
-https://mp.weixin.qq.com/s/-n-5Cp_hgkvdmsHGWEIpWw
-
-自动化机器学习第一步：使用Hyperopt自动选择超参数
-
-https://mp.weixin.qq.com/s/Nbwii7Di_h5Ewy5p5xzBdQ
-
-解决机器学习问题有通法
-
-http://automl.info/
-
-某牛的blog
-
-https://mp.weixin.qq.com/s/gXkD2PPNRhZGcXDxDXRAiQ
-
-由0到1走入Kaggle-入门指导
-
-https://mp.weixin.qq.com/s/2ZwhNN7kqigwRLqRnUOENw
-
-谷歌做了45万次不同类型的文本分类后，总结出一个通用的“模型选择算法”
-
-https://mp.weixin.qq.com/s/WQ-8OvF9-fRpRf5lgr5_iw
-
-一种简单有效的网络结构搜索
-
-https://mp.weixin.qq.com/s/g8U2C9bi75mE5OqWLPkgQw
-
-自动化学习框架（AutoML）的性能比较
-
-https://mp.weixin.qq.com/s/DkZGkI-CnEHfhXTDyp2nHQ
-
-超参数搜索不够高效？这几大策略了解一下
-
-https://zhuanlan.zhihu.com/p/48642938
-
-分享一篇比较全面的AutoML综述
-
-https://mp.weixin.qq.com/s/zE8N5snKK2EoM9WgAhI-_g
-
-NeurIPS 2018 AutoML Phase1 冠军队伍 DeepSmart 团队解决方案分享
-
-https://mp.weixin.qq.com/s/z6CaHP7I4WkJAu-eAJPwAg
-
-自动机器学习计算量大！这种多保真度优化技术是走向应用的关键
-
-https://mp.weixin.qq.com/s/JPAZTdvcxY3sgWukbn3ScQ
-
-AutoML在推荐系统中的应用
-
-https://mp.weixin.qq.com/s/95FH-_L5smx7WoNnfucWVg
-
-为什么说自动化特征工程将改变机器学习的方式
 
 # Optimizer
 

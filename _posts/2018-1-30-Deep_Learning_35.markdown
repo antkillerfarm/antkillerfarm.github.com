@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十五）——姿态/行为检测, VAE进阶, Regularization
+title:  深度学习（三十五）——姿态/行为检测, Regularization
 category: DL 
 ---
 
@@ -33,14 +33,6 @@ Tensorflow版本：
 https://github.com/ildoonet/tf-pose-estimation
 
 参考：
-
-https://mp.weixin.qq.com/s/-EU4jTElNll9MQomjuqFXA
-
-姿态估计相比Mask-RCNN提高8.2%，上海交大卢策吾团队开源AlphaPose
-
-https://mp.weixin.qq.com/s/HY9fRbiQrFARPMUsNANndA
-
-最高比Mask-RCNN快3倍！上交大实时姿态估计AlphaPose升级
 
 https://zhuanlan.zhihu.com/p/37526892
 
@@ -326,59 +318,17 @@ https://mp.weixin.qq.com/s/R9eG3FvvBcl-bGgJEF1uoA
 
 微软、中科大开源基于深度高分辨表示学习的姿态估计算法
 
-# VAE进阶
+https://mp.weixin.qq.com/s/-EU4jTElNll9MQomjuqFXA
 
-https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw
+姿态估计相比Mask-RCNN提高8.2%，上海交大卢策吾团队开源AlphaPose
 
-变分U-Net，可按条件独立变换目标的外观和形状
+https://mp.weixin.qq.com/s/HY9fRbiQrFARPMUsNANndA
 
-https://mp.weixin.qq.com/s/ZlLuhu08m_RnD-h86df8sA
+最高比Mask-RCNN快3倍！上交大实时姿态估计AlphaPose升级
 
-清华大学提出SA-VAE框架，通过单样本/少样本学习生成任意风格的汉字
+https://mp.weixin.qq.com/s/FEYl1sVOq7yRecdZRSiKpg
 
-https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
-
-面向无监督任务：DeepMind提出神经离散表示学习生成模型VQ-VAE
-
-https://mp.weixin.qq.com/s/51Xu7osdVa-fCV-IZbHdCA
-
-Wasserstein自编码器
-
-https://mp.weixin.qq.com/s/0HK026K6jru10VscvT2rOQ
-
-哈佛大学提出变分注意力：用VAE重建注意力机制
-
-https://mp.weixin.qq.com/s/790wbFnxkNbNRampiV-0MQ
-
-谷歌大脑提出对抗正则化方法，显著改善自编码器的泛化和表征学习能力
-
-https://mp.weixin.qq.com/s/iOdh1iIP0GIYe4gRDE0z-g
-
-漫谈概率PCA和变分自编码器
-
-https://mp.weixin.qq.com/s/pBnKNRc56HhBWvrYaZjGdw
-
-稳定、表征丰富的球面变分自编码器
-
-https://mp.weixin.qq.com/s/QOdQKdLolR-YTihzaA81yw
-
-黄怀波 ：自省变分自编码器理论及其在图像生成上的应用
-
-https://mp.weixin.qq.com/s/FqY9I02blg3S8_K50B7czQ
-
-UC伯克利提出小批量MH测试：令MCMC方法在自编码器中更强劲
-
-https://zhuanlan.zhihu.com/p/48985202
-
-谈谈变分自编码器背后的数学知识
-
-https://mp.weixin.qq.com/s/fYR2dS3wCMMVk3s9O4nqUw
-
-自编码表示学习 25页最新进展综述，90篇参考文献
-
-https://zhuanlan.zhihu.com/p/52974147
-
-VAE 的细节：$$p(x \mid z)$$的噪音，与$$p(z \mid x)$$的编码坍塌
+AlphaPose升级！上海交大卢策吾团队开源密集人群姿态估计代码
 
 # Regularization
 

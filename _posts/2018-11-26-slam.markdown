@@ -429,3 +429,7 @@ https://mp.weixin.qq.com/s/mZlJw3gKhc988n5JpN135g
 https://mp.weixin.qq.com/s/yJom9cqh64YNqMbAzsgwOA
 
 浅谈变分不等式与凸优化
+
+https://github.com/jphall663/awesome-machine-learning-interpretability
+
+最全的机器学习可解释性资料

@@ -334,6 +334,10 @@ https://mp.weixin.qq.com/s/V8VoyMqVvjblH358ozcWEg
 
 face.evoLVe：高性能人脸识别开源库
 
+https://mp.weixin.qq.com/s/BhTX4KQnLxUQLvPUfY3q6Q
+
+物理实验成本为零！南大LAMDA开源虚拟RL训练环境
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/Sb_kPgtwyQFWloDT3707TA

@@ -82,6 +82,10 @@ https://mp.weixin.qq.com/s/BJaRUnpcPe8iybSz14gabw
 
 一文读懂如何用LSA、PSLA、LDA和lda2vec进行主题建模
 
+https://zhuanlan.zhihu.com/p/57996219
+
+短文本主题模型
+
 # 数据不平衡问题
 
 https://mp.weixin.qq.com/s/e0jXXCIhbaZz7xaCZl-YmA

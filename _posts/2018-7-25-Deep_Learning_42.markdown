@@ -325,3 +325,7 @@ ShapeNet:超实时人脸特征点检测与形状拟合开源库
 https://mp.weixin.qq.com/s/pmnb_WnncL12T1IZoso5DA
 
 DeepID
+
+https://mp.weixin.qq.com/s/BV3xv8mH6K7dV1nik0X5aw
+
+PFLD：简单、快速、超高精度人脸特征点检测算法

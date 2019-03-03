@@ -178,6 +178,14 @@ https://mp.weixin.qq.com/s/6QsyYtEVjavoLfU_lQF1pw
 
 目标检测新文：Generalized Intersection over Union
 
+https://mp.weixin.qq.com/s/Xs3nThAcUOq62bO2p61YFA
+
+论文解读 Receptive Field Block Net for Accurate and Fast
+
+https://mp.weixin.qq.com/s/WAx3Zazx9Pq7Lb3vKa510w
+
+目标检测最新方向：推翻固有设置，不再一成不变Anchor
+
 # Flink
 
 Flink是一个流计算引擎。

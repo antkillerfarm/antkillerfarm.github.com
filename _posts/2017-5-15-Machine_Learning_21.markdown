@@ -212,6 +212,8 @@ $$f(z_k)=e^{z_k}/(\sum_j e^{z_j})$$
 
 ## Weighted softmax loss
 
+假如有一个二分类问题，两类的样本数目差距非常之大。比如图像任务中的边缘检测问题，它可以看作是一个逐像素的分类问题。此时两类的样本数目差距非常之大，明显边缘像素的重要性是比非边缘像素大的，此时可以针对性的对样本进行加权。
+
 $$l(y,z)=-\sum_{k=0}^C w_ky_k\log (f(z_k))$$
 
 ## Triplet Loss
@@ -220,13 +222,19 @@ Triplet loss通常是在个体级别的细粒度识别上使用，传统的分�
 
 当然你可以把每个人当做一个类别来进行分类训练，但是往往最后会造成softmax的维数远大于feature的维数。
 
+论文：
+
+《Deep feature learning with relative distance comparison for person re-identification》
+
 ![](/images/img2/Triplet_Loss.png)
 
 如上图所示，triplet是一个三元组，这个三元组是这样构成的：从训练数据集中随机选一个样本，该样本称为Anchor，然后再随机选取一个和Anchor(记为$$x^a$$)属于同一类的样本和不同类的样本,这两个样本对应的称为Positive(记为$$x^p$$)和Negative(记为$$x^n$$)，由此构成一个（Anchor，Positive，Negative）三元组。
 
 针对每个样本$$x_i$$，训练一个参数共享或者不共享的网络，得到三个元素的特征表达，分别记为：$$f(x_i^a), f(x_i^p), f(x_i^n)$$。
 
-triplet loss的目的就是通过学习，让$$x^a$$和$$x^p$$特征表达之间的距离尽可能小，而$$x^a$$和$$x^n$$的特征表达之间的距离尽可能大。公式化的表示就是：
+**triplet loss的目的就是通过学习（即上图中的Learning），让$$x^a$$和$$x^p$$特征表达之间的距离尽可能小，而$$x^a$$和$$x^n$$的特征表达之间的距离尽可能大。**
+
+它的公式化的表示就是：
 
 $$\|f(x_i^a)-f(x_i^p)\|_2^2 + \alpha < \|f(x_i^a)-f(x_i^n)\|_2^2$$
 
@@ -275,17 +283,3 @@ https://mp.weixin.qq.com/s/SqaR_7gwJpUNPM7g4IHaYw
 https://blog.csdn.net/u010167269/article/details/51783446
 
 论文中文笔记
-
-## Focal Loss
-
-https://zhuanlan.zhihu.com/p/28442066
-
-何恺明团队提出Focal Loss，目标检测精度高达39.1AP，打破现有记录
-
-https://www.zhihu.com/question/63581984
-
-如何评价Kaiming的Focal Loss for Dense Object Detection？
-
-https://mp.weixin.qq.com/s/Uf1lWtxOpKYCDLmCDlnVAQ
-
-把Cross Entropy梯度分布拉‘平’，就能轻松超越Focal Loss

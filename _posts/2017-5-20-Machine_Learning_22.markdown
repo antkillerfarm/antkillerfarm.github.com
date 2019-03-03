@@ -1,10 +1,24 @@
 ---
 layout: post
-title:  机器学习（二十二）——机器学习分类器性能指标, HMM
+title:  机器学习（二十二）——机器学习分类器性能指标
 category: ML 
 ---
 
 # Loss function详解（续）
+
+## Focal Loss
+
+https://zhuanlan.zhihu.com/p/28442066
+
+何恺明团队提出Focal Loss，目标检测精度高达39.1AP，打破现有记录
+
+https://www.zhihu.com/question/63581984
+
+如何评价Kaiming的Focal Loss for Dense Object Detection？
+
+https://mp.weixin.qq.com/s/Uf1lWtxOpKYCDLmCDlnVAQ
+
+把Cross Entropy梯度分布拉‘平’，就能轻松超越Focal Loss
 
 ## Other Loss
 
@@ -222,33 +236,3 @@ https://mp.weixin.qq.com/s/PzPRKZa1C5IlEUASWt71cA
 https://mp.weixin.qq.com/s/aIpRx-etMkh7jwL2lFNa4w
 
 理解隐马尔可夫模型
-
-## Viterbi算法
-
-Viterbi算法是求解最大似然状态路径的常用算法，被广泛应用于通信（CDMA技术的理论基础之一）和NLP领域。
-
->注：Andrew James Viterbi，1935年生，意大利裔美国工程师、企业家，高通公司联合创始人。MIT本硕+南加州大学博士。viterbi算法和CDMA标准的主要发明人。
-
-![](/images/article/HMM_4.png)
-
-上图是一个HMM模型的概率图表示，其中{'Healthy','Fever'}是隐含状态，而{'normal','cold','dizzy'}是可见状态，边是各状态的转移概率。
-
-![](/images/article/Viterbi_animated_demo.gif)
-
-上图是Viterbi算法的动画图。简单来说就是：从开始状态之后每走一步，就记录下到达该状态的所有路径的概率最大值，然后以此最大值为基准继续向后推进。显然，如果这个最大值都不能使该状态成为最大似然状态路径上的结点的话，那些小于它的概率值（以及对应的路径）就更没有可能了。
-
-Viterbi算法只能求出最佳路径，对于N-best问题就需要进行扩展方可。
-
-参考：
-
-https://mp.weixin.qq.com/s/FQ520ojMmbFhNMoNCVTKug
-
-通俗理解维特比算法
-
-https://www.zhihu.com/question/20136144
-
-谁能通俗的讲解下viterbi算法？
-
-https://mp.weixin.qq.com/s/xyWY3Z5PiHkCFzCP0noBvA
-
-一文读懂HMM模型和Viterbi算法
