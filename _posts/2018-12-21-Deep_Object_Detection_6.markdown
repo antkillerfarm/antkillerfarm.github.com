@@ -186,6 +186,10 @@ https://mp.weixin.qq.com/s/WAx3Zazx9Pq7Lb3vKa510w
 
 目标检测最新方向：推翻固有设置，不再一成不变Anchor
 
+https://mp.weixin.qq.com/s/-G47vOGx2iNQCarYRAiNPg
+
+基于区域分解集成的目标检测
+
 # Flink
 
 Flink是一个流计算引擎。
@@ -381,3 +385,7 @@ https://mp.weixin.qq.com/s/5kJfhp3vi9uuSFaeONKfrA
 https://zhuanlan.zhihu.com/p/57781001
 
 自动驾驶系统的硬件平台讨论
+
+https://mp.weixin.qq.com/s/ZUxkZXLC0tPkzptFKtudhw
+
+让机器人也能“问路”的视觉语言导航新方法

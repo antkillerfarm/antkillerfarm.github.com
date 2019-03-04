@@ -222,7 +222,7 @@ MS AI Lab。这里的很多项目都是开源的，但貌似用的是TF。看来
 
 https://mp.weixin.qq.com/s/azHvzRcvupdbw_cJ2BsKAw
 
-计算机视觉三大会议之——ECCV 2018 观看指南
+计算机视觉三大会议之——ECCV 2018观看指南
 
 https://eccv2018.org/program/workshops_tutorials/
 
@@ -459,23 +459,3 @@ https://mp.weixin.qq.com/s/l3AgM6U7EEq3fZrhY_8Zug
 https://mp.weixin.qq.com/s/n-vnekQfns6_a6f7InhMpA
 
 最优解的平坦度与鲁棒性，我们该如何度量模型的泛化能力
-
-https://mp.weixin.qq.com/s/J75ZdrNCSwBO1y9o84THQg
-
-综述论文：机器学习中的模型评价、模型选择与算法选择
-
-https://mp.weixin.qq.com/s/6Oo2w-AZEf09I_QNRV154w
-
-计算机视觉的修炼秘笈
-
-https://mp.weixin.qq.com/s/Q4pnGyOYqT8pE5X0S0Yg6A
-
-你可能不知道的7个深度学习实用技巧
-
-https://mp.weixin.qq.com/s/XD0eyKiBgsqmcucIsW20uw
-
-了解学习率及其如何提高深度学习的性能
-
-https://mp.weixin.qq.com/s/wJh1-9uhXX3u4CO8hdOHCg
-
-专访MIT教授Tomaso Poggio：表达、优化与泛化——数学视角里的深度学习

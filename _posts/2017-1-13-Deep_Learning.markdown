@@ -258,3 +258,7 @@ https://mp.weixin.qq.com/s/auNRIPYEwRlROFXug41Ang
 https://mp.weixin.qq.com/s/iSJyOe81dnEuaKzOih6WNg
 
 什么是深度学习成功的开始？参数初始化
+
+https://mp.weixin.qq.com/s/s4ew7LYgnC9Z3kVFsjcaXg
+
+不用批归一化也能训练万层ResNet，新型初始化方法Fixup了解一下

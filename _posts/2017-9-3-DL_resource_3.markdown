@@ -6,36 +6,6 @@ category: resource
 
 # DL参考资源
 
-## 遗传算法 & 进化算法（续）
-
-https://mp.weixin.qq.com/s/GdY4UAdF5ufiTpl0GsTbpQ
-
-数据+进化算法=数据驱动的进化优化？进化算法 PK 数学优化
-
-https://mp.weixin.qq.com/s/iAmkb2EdYofJU1AoBw2HyA
-
-多目标优化详解
-
-https://mp.weixin.qq.com/s/MCKkngSzzsABxyiGAFA1lg
-
-进化计算在深度学习中的应用
-
-https://mp.weixin.qq.com/s/G8Xj_G9rxI4SinX0VZ35WA
-
-用人工蜂群算法求解k-分区聚类问题
-
-https://mp.weixin.qq.com/s/su2F2F3dtl6W-WNuQHNpJg
-
-不使用深度学习，进化算法也能玩Atari游戏！
-
-http://www.cnblogs.com/tsingke/p/6258967.html
-
-CMA-ES算法
-
-https://mp.weixin.qq.com/s/vuzx4LPLH2Gk4L9TXlNJqg
-
-遗传算法实例应用之管网拓扑结构优化
-
 ## AI与游戏
 
 https://zhuanlan.zhihu.com/p/22604627
