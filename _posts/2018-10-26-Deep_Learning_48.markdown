@@ -226,6 +226,10 @@ https://mp.weixin.qq.com/s/zHZO1pmY8PCoI9vkDOaUgw
 
 CCNet--于"阡陌交通"处超越恺明的Non-local
 
+https://mp.weixin.qq.com/s/1tohID6SM3weS476XU5okw
+
+全景分割：Attention-guided Unified Network
+
 # 问答系统
 
 GA-Reader

@@ -94,6 +94,10 @@ https://zhuanlan.zhihu.com/p/26746283
 
 图像风格迁移(Neural Style)简史
 
+https://mp.weixin.qq.com/s/64H2dDcaTcKdKaOnwdsoEg
+
+基于深度学习的艺术风格化研究
+
 https://blog.csdn.net/red_stone1/article/details/79055467
 
 人脸识别与神经风格迁移
