@@ -6,6 +6,14 @@ category: AI
 
 # NLP
 
+## protege
+
+protege软件是斯坦福大学医学院生物信息研究中心基于Java语言开发的本体编辑和知识获取软件，或者说是本体开发工具，也是基于知识的编辑器。这个软件主要用于语义网中本体的构建，是语义网中本体构建的核心开发工具。
+
+官网：
+
+https://protege.stanford.edu/products.php
+
 ## Opendial
 
 Opendial是一个基于Java的对话系统。可用于开发聊天机器人。
@@ -139,6 +147,10 @@ https://mp.weixin.qq.com/s/-3A4eNAPa6DP-bX4x4HfQA
 https://mp.weixin.qq.com/s/WYSvJLILT5u82MtgtvQkyQ
 
 叫你一声“孙悟空”，敢答应么？（wukong-robot）
+
+https://mp.weixin.qq.com/s/5o2X-HKgLnp0zKOxxhHPEw
+
+DeepPavlov框架解析
 
 ## 词性标注
 

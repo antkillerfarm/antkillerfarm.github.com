@@ -296,3 +296,7 @@ http://mp.weixin.qq.com/s/XzOri12hwyOCdI1TgGQV3w
 http://blog.csdn.net/liuchonge/article/details/67638232
 
 CNN与句子分类之动态池化方法DCNN--模型介绍篇
+
+https://mp.weixin.qq.com/s/K1RBux3AfxVFT8_uezYHFA
+
+被Hinton，DeepMind和斯坦福嫌弃的池化，到底是什么？

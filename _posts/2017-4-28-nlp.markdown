@@ -365,6 +365,12 @@ Allen AI实验室由微软联合创始人Paul G. Allen投资创立。
 
 http://allenai.org/
 
+参考：
+
+https://mp.weixin.qq.com/s/QZT1SLCVFXBE-1FNNhWk0g
+
+利用AllenNLP，百行Python代码训练情感分类器
+
 ### FlashText
 
 在NLP任务中，清理文本数据通常需要替换句子中的关键词或从句子中提取关键词。通常，这样的操作可以用正则表达式来完成，但是如果要搜索的词汇量过大，操作就会变得麻烦。Python 中基于FlashText算法的FlashText模块，为这种情况提供了一个合适的替代方案。
@@ -424,11 +430,3 @@ https://github.com/NLPchina/ansj_fast_lda
 这个项目是一个基本包.封装了大多数nlp项目中常用工具
 
 https://github.com/NLPchina/nlp-lang
-
-## protege
-
-protege软件是斯坦福大学医学院生物信息研究中心基于Java语言开发的本体编辑和知识获取软件，或者说是本体开发工具，也是基于知识的编辑器。这个软件主要用于语义网中本体的构建，是语义网中本体构建的核心开发工具。
-
-官网：
-
-https://protege.stanford.edu/products.php

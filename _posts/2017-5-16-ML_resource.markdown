@@ -214,6 +214,10 @@ http://www.infoq.com/cn/articles/we-are-bringing-learning-to-rank-to-elasticsear
 
 在Elasticsearch中应用机器学习排序LTR
 
+https://mp.weixin.qq.com/s/IrpIMNxQ4frgBKl5pbsfdg
+
+达观数据：用好学习排序(LTR),资讯信息流推荐效果翻倍
+
 http://mp.weixin.qq.com/s/V-QCRXt5wAfSCiNT955W0A
 
 外卖订单量预测异常报警模型实践

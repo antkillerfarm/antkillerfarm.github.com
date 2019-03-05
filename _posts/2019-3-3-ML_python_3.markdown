@@ -94,10 +94,6 @@ https://mp.weixin.qq.com/s/LiilfmvA5YUaY3QUQD6odA
 
 如何用Python将数据预处理速度提升2至6倍？
 
-https://mp.weixin.qq.com/s/QZT1SLCVFXBE-1FNNhWk0g
-
-利用AllenNLP，百行Python代码训练情感分类器
-
 https://mp.weixin.qq.com/s/4s7lDKlQjV1mUoVv558Y7Q
 
 面向云数据库，超低延迟文件系统PolarFS诞生了

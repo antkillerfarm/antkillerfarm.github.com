@@ -76,6 +76,10 @@ https://mp.weixin.qq.com/s/ro0lG3uMUPYNZA9rM3I_YQ
 
 目标检测算法中检测框合并策略技术综述
 
+https://mp.weixin.qq.com/s/NPoB4_kpTIYAO34qZFRbQA
+
+对象检测网络中的NMS算法详解
+
 ## NMS的快速算法
 
 RCNN系列的NMS的一个经典取值是：从N=6000个排好序的矩形框中，选出M=300个独立的目标框。
