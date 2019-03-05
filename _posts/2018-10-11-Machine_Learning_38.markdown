@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十八）——PageRank算法, 社交网络, 特征工程, 数据清洗
+title:  机器学习（三十八）——PageRank算法, 社交网络, 特征工程, 数据清洗, 用户画像
 category: ML 
 ---
 
@@ -245,3 +245,21 @@ https://mp.weixin.qq.com/s/FHdo2DTapoTryA-hOM-y_w
 https://mp.weixin.qq.com/s/r7ngZOM9tO-_OSfvs2aDJw
 
 数据清洗&预处理入门完整指南
+
+# 用户画像
+
+https://mp.weixin.qq.com/s/TydTE50NzxMbGAigqv6BCw
+
+如何破解“千人千面”，深度解读用户画像
+
+https://mp.weixin.qq.com/s/bdAp_FExIK5IJH8WnD53Wg
+
+你真的懂用户画像吗？
+
+https://mp.weixin.qq.com/s/LN6ib-8b_SZHR9u_-OMwNg
+
+推荐系统眼中的你：内容画像与用户画像
+
+https://mp.weixin.qq.com/s/95Zklj8ovheQV3Gnc-2h-Q
+
+小米大数据总监司马云瑞详解小米用户画像的演进及应用解读

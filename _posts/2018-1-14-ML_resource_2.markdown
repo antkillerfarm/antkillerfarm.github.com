@@ -42,10 +42,6 @@ https://mp.weixin.qq.com/s/FyeY2-kOz2vwALfKFRwisQ
 
 人工智能在饿了么的应用实践
 
-https://mp.weixin.qq.com/s/LN6ib-8b_SZHR9u_-OMwNg
-
-推荐系统眼中的你：内容画像与用户画像
-
 https://zhuanlan.zhihu.com/p/30757128
 
 《羞羞的铁拳》好不好看 8万观众说了算 Part 1
@@ -65,10 +61,6 @@ https://mp.weixin.qq.com/s/DUz76rLOEL6iK1aytku7sQ
 https://mp.weixin.qq.com/s/seIwEHqoCoWk5JzXGpL3rQ
 
 用一座冠军奖杯的实力讲述资讯个性化推荐
-
-https://mp.weixin.qq.com/s/TydTE50NzxMbGAigqv6BCw
-
-如何破解“千人千面”，深度解读用户画像
 
 https://mp.weixin.qq.com/s/ycxigg0HbiOTRUBPAWk21Q
 
@@ -141,10 +133,6 @@ https://mp.weixin.qq.com/s/S5_7wQynrBR0yLtNRKC-kw
 https://mp.weixin.qq.com/s/ZbSdzHuKz1cR-qS0gAwOYg
 
 智能分析最佳实践——指标逻辑树
-
-https://mp.weixin.qq.com/s/95Zklj8ovheQV3Gnc-2h-Q
-
-小米大数据总监司马云瑞详解小米用户画像的演进及应用解读
 
 https://mp.weixin.qq.com/s/2Fu3s1Hy6ZW8Ex8yLPDnyQ
 
@@ -405,3 +393,23 @@ https://mp.weixin.qq.com/s/o6VZDRuYs8LhGm0JSI_c3w
 https://mp.weixin.qq.com/s/fCpbownZuD1FCiDxqkD-sA
 
 操龙兵：非独立同分布学习
+
+https://mp.weixin.qq.com/s/_AHqFqf1zFNtBifayiTfXQ
+
+你应具备这3大统计学常识&大数据思维
+
+https://mp.weixin.qq.com/s/me5opXSju1KZIrzscmBK0g
+
+节约亿级成本！Sigma:阿里的在线调度优化
+
+https://mp.weixin.qq.com/s/bdZ5e8CaiPuI8TpLNRrFUQ
+
+大数据近似最近邻搜索哈希方法综述（上）
+
+https://mp.weixin.qq.com/s/jiZw-x6EMhUIySIObm5XjA
+
+大数据近似最近邻搜索哈希方法综述（下）
+
+https://mp.weixin.qq.com/s/jeQawOIomUAjIp7GhuBk3A
+
+一致性哈希算法及其在分布式系统中的应用

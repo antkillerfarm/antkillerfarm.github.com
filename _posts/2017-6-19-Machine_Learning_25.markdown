@@ -214,6 +214,14 @@ https://mp.weixin.qq.com/s?__biz=MzUxMTYwMzI0OQ==&mid=2247486937&idx=1&sn=6be696
 
 运筹优化的剖析与应用
 
+https://mp.weixin.qq.com/s/Ofn-p8NnnO4kLYqTlL0bJg
+
+二次规划（QP）样条路径
+
+https://mp.weixin.qq.com/s/zqesjLOeWIkiq68tLVVmJQ
+
+混合整数规划模型在页岩气开采中的应用：EQT公司的案例
+
 # 金融模型
 
 Capital asset pricing model

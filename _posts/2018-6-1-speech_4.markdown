@@ -96,6 +96,10 @@ https://zhuanlan.zhihu.com/p/39450321
 
 时间序列的搜索
 
+https://blog.csdn.net/songbinxu/article/details/86660136
+
+基于DTW相似度的Affinity Propagation(AP)聚类
+
 # Spectrogram
 
 ## Window function

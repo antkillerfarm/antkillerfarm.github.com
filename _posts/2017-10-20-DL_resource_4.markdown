@@ -82,6 +82,10 @@ https://mp.weixin.qq.com/s/z6gXp-EeDID1ed8_DsUbOg
 
 90秒训练AlexNet！商汤刷新纪录
 
+https://mp.weixin.qq.com/s/HY2yPZ--Zm5_m3B70baWjQ
+
+谷歌开源效率怪兽GPipe，速度提升25倍，CIFAR-10精度达到99%
+
 ## 实战
 
 http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg
@@ -224,6 +228,14 @@ https://mp.weixin.qq.com/s/DD-BOtPbGCXvxfFxL-qOgg
 
 Kaggle Quora Insincere Question Classification Rank 13方案分享
 
+https://blog.csdn.net/songbinxu/article/details/79628443
+
+第一届腾讯社交广告高校算法大赛经验分享
+
+https://mp.weixin.qq.com/s/qf6FVJe_Kai_11_wImykqg
+
+达观杯文本智能处理挑战赛冠军解决方案
+
 ## AI与安全
 
 https://mp.weixin.qq.com/s/jBE4gP3O0qVJ50G49Q_xmQ
@@ -349,49 +361,3 @@ https://mp.weixin.qq.com/s/EeAvDpPpfxDO4WFIrvCMpA
 https://zhuanlan.zhihu.com/p/53908224
 
 如何辨别哪些是人工智能生成的虚假图像？
-
-## 行业
-
-李开复的这篇文章不可不读：
-
-https://mp.weixin.qq.com/s/OLIO4UIZUuzjX5oQbn3Tug
-
-拥抱人工智能的中国：现状和展望（上）
-
-https://mp.weixin.qq.com/s/KbKlgRAfjP_39WdXh7gOLg
-
-拥抱人工智能的中国：现状和展望（下）
-
-https://mp.weixin.qq.com/s/hoo34-eMcYV7hV6LFbJqcg
-
-10分钟带你读完人工智能的三生三世
-
-https://mp.weixin.qq.com/s/yAC6VTOl3jAxjUT0QbTVrw
-
-为什么要在边缘设备部署机器学习？
-
-https://mp.weixin.qq.com/s/YnOFJIf-l6CxSWdxIJn1FA
-
-与一年一届的CVPR相比，两年一届的ICCV、ECCV有什么不同？
-
-http://mp.weixin.qq.com/s/oBy_Xl7FSBUd46H9E8yUbA
-
-AI博士五星指南：入行自评，选大公司还是初创企业
-
-## 光神经网络
-
-https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ
-
-3D打印的深度神经网络，光速执行AI运算
-
-https://mp.weixin.qq.com/s/5zt8UIpNBcgNZpwHHJj68Q
-
-光学CNN层替换传统CNN层，超省电
-
-https://mp.weixin.qq.com/s/IheyYAC1yIigYOW-gtc5Eg
-
-Science重磅！用光速实现深度学习，跟GPU说再见
-
-https://mp.weixin.qq.com/s/ENYX87SMlgv30x08iYFQIw
-
-几乎零能耗零延迟！UCLA科学家发明光衍射神经网络，登上Science

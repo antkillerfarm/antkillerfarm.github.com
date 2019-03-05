@@ -411,3 +411,7 @@ BERT，GPT-2这些顶尖工具到底该怎么用到我的模型里?
 https://mp.weixin.qq.com/s/N6xBFZ82dkSGCbj6vC5nLQ
 
 上下文预训练模型最全整理：原理、应用、开源代码、数据分享
+
+https://mp.weixin.qq.com/s/-6XpuO7_ve_EdSPCMeWE7g
+
+Attention isn’t all you need！BERT的力量之源远不止注意力

@@ -400,6 +400,14 @@ https://mp.weixin.qq.com/s/yHSraIAYsjYWPaGXA3PijA
 
 一张图读懂非公平锁与公平锁
 
+https://zhuanlan.zhihu.com/frozengene
+
+一个编译器方面的专栏
+
+http://frozengene.github.io/
+
+一个LLVM方面的blog
+
 ## 5G
 
 https://mp.weixin.qq.com/s/oN-drJHFU34XanBzOKzrUQ

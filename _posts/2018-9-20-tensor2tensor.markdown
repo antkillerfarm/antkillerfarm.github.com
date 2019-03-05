@@ -140,6 +140,14 @@ https://github.com/ysh329/deep-learning-model-convertor
 
 这类many-to-many工具从实现原理上，主要是将各种模型转换成中间语言（IR，intermediate representation），然后再变换成目标语言。
 
+某网友的评价：
+
+Tensorflow Model / ONNX / Caffe Model / ... ---> DL IR (nGraph IR / *.IR) ---> LLVM IR ---> CPU JIT / GPU / ...
+
+如果把前面的Model看成一种语言或者DSL，就是DSL ---> DL IR ---> LLVM IR ---> Target ，然后你就在中间层疯狂的做优化，编译器优化开发也是这样做的。
+
+在LLVM IR出现以前，很多编译器都有几层的IR表示，比如 C++ ----> 1st IR ----> OPT ----> 2nd IR ----> .... -> Target，只是LLVM出来以后，LLVM IR做了统一，编译器变为了 C++ ----> LLVM IR ---> OPT ----> LLVM IR ----> Target
+
 ## NNEF
 
 Neural Network Exchange Format是Khronos制定的用于交换NN模型数据的数据格式标准。
@@ -196,6 +204,14 @@ MMdnn是微软推出的工具集，也是目前功能最强的工具集。
 
 https://github.com/Microsoft/MMdnn
 
+## nGraph
+
+nGraph是Intel推出的一款能兼容所有框架的深度神经网络（DNN）模型编译器，可用于多种硬件设备（其实主要还是Intel家的硬件）。
+
+官网：
+
+https://ngraph.nervanasys.com/docs/latest/
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/32711259
@@ -205,6 +221,18 @@ https://zhuanlan.zhihu.com/p/32711259
 https://mp.weixin.qq.com/s/jjT0x99ht8xtfWmzL-0R1A
 
 深度学习的IR“之争”
+
+https://www.zhihu.com/question/269332944
+
+如何评价英特尔开源的nGraph编译器？
+
+# CATIA
+
+CATIA是法国达索公司的产品开发旗舰解决方案。作为PLM协同解决方案的一个重要组成部分，它可以通过建模帮助制造厂商设计他们未来的产品，并支持从项目前阶段、具体的设计、分析、模拟、组装到维护在内的全部工业设计流程。CATIA是GPU在工业上的一个重要的应用案例。
+
+官网：
+
+https://www.3ds.com/products-services/catia/
 
 # MXNet
 

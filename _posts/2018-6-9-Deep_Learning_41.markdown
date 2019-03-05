@@ -382,3 +382,7 @@ Mask R-CNN抢车位，快人一步！
 https://zhuanlan.zhihu.com/p/47579399
 
 R-CNN、Fast/Faster/Mask R-CNN、FCN、RFCN 、SSD原理简析
+
+https://mp.weixin.qq.com/s/CsEHuGz_fAq8eWpHRq7d6g
+
+性能超越何恺明Mask R-CNN！华科硕士生开源图像分割新方法

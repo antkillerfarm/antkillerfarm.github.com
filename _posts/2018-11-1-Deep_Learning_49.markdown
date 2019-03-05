@@ -73,3 +73,11 @@ CNN能同时兼顾速度与准确度吗？CMU提出AdaScale
 https://mp.weixin.qq.com/s/pmel2k2J159zQi87ib3q8A
 
 如何让CNN高效地在移动端运行
+
+https://mp.weixin.qq.com/s/m-wQRm3VpfQkEOoUAxEdoA
+
+论文解读: Quantized Convolutional Neural Networks for Mobile Devices
+
+https://mp.weixin.qq.com/s/w7O2JxDH2ECqPn50sLfxpg
+
+不用重新训练，直接将现有模型转换为MobileNet

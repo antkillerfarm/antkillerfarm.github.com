@@ -150,6 +150,12 @@ Intel Math Kernel Library是一套经过高度优化和广泛线程化的数学�
 
 https://software.intel.com/zh-cn/mkl
 
+针对DNN加速，Intel推出了MKL-DNN库。
+
+官网：
+
+https://github.com/intel/mkl-dnn
+
 ## Neon
 
 Neon是个大路货的名字，在数值计算领域ARM和Intel都有叫Neon的硬件或技术。
@@ -343,14 +349,6 @@ CUDA编程入门极简教程
 https://mp.weixin.qq.com/s/-zdIWkuRZXhsLJmOZljOBw
 
 CUDA编程精品教材分享《基于GPU-多核-集群等并行化编程》
-
-# CATIA
-
-CATIA是法国达索公司的产品开发旗舰解决方案。作为PLM协同解决方案的一个重要组成部分，它可以通过建模帮助制造厂商设计他们未来的产品，并支持从项目前阶段、具体的设计、分析、模拟、组装到维护在内的全部工业设计流程。CATIA是GPU在工业上的一个重要的应用案例。
-
-官网：
-
-https://www.3ds.com/products-services/catia/
 
 # MLPerf
 
