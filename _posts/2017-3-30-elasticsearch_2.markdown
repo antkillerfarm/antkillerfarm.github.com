@@ -407,6 +407,10 @@ https://mp.weixin.qq.com/s/d9yNsUVFg9UZN62xuOdxow
 
 为什么MySQL数据库要用B+树存储索引？
 
+https://mp.weixin.qq.com/s/-_DqyBIG3aSDWIYtkD7xuA
+
+看动画轻松理解“递归“与“动态规划”
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/Sez56UaCAt3Aspn7OTFj_Q

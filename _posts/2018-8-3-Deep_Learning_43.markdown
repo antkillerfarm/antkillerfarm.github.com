@@ -331,3 +331,11 @@ AI秒造全球房源：StyleGAN快速生成假房子，连图说都配好了！
 https://mp.weixin.qq.com/s/4hKIh77UfsuJCSKwtvpq3Q
 
 最强GAN修图魔术师：美颜生发摘眼镜、草绘秒变真人脸
+
+https://mp.weixin.qq.com/s/-iPQBni4dWvdARAy9_T32g
+
+神还原女神照片！GAN为百年旧照上色
+
+https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
+
+谷歌提出多图像抠图算法，并弥补水印技术的一致性漏洞

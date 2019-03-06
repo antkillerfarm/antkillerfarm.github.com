@@ -386,3 +386,7 @@ R-CNN、Fast/Faster/Mask R-CNN、FCN、RFCN 、SSD原理简析
 https://mp.weixin.qq.com/s/CsEHuGz_fAq8eWpHRq7d6g
 
 性能超越何恺明Mask R-CNN！华科硕士生开源图像分割新方法
+
+https://mp.weixin.qq.com/s/xug0xKfc9RgJEUci1a_xog8
+
+实例分割的进阶三级跳：从 Mask R-CNN 到 Hybrid Task Cascade

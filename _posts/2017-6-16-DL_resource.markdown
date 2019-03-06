@@ -240,6 +240,10 @@ https://zhuanlan.zhihu.com/zr9558
 
 数学博士张戎的blog
 
+https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/content/
+
+某人写的AI心得
+
 ## 项目集锦
 
 https://mp.weixin.qq.com/s/ZNNgEB9rFjAE8SdfMo9NLA

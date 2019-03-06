@@ -81,3 +81,7 @@ https://mp.weixin.qq.com/s/m-wQRm3VpfQkEOoUAxEdoA
 https://mp.weixin.qq.com/s/w7O2JxDH2ECqPn50sLfxpg
 
 不用重新训练，直接将现有模型转换为MobileNet
+
+https://mp.weixin.qq.com/s/EW6jvf98ifBucVz74SfSIA
+
+文档扫描：深度神经网络在移动端的实践

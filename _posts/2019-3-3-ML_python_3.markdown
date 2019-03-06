@@ -6,6 +6,18 @@ category: AI
 
 # Machine Learning之Python篇
 
+https://mp.weixin.qq.com/s/M2YvR8s2Vh-zGRP42v6txg
+
+极简Python带你探索分类与回归的奥秘
+
+https://mp.weixin.qq.com/s/E0TsD57voXy9C8bIqFvt_g
+
+如何在Python中用scikit-learn生成测试数据集
+
+https://mp.weixin.qq.com/s/HGLBPA9Ob7-3DzSNuF39Mg
+
+用Python搭建机器学习模型预测黄金价格
+
 https://mp.weixin.qq.com/s/wlUH5aavqHDXOvBTnxvAdg
 
 详解中文维基百科数据处理流程及脚本代码

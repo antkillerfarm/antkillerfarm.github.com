@@ -90,6 +90,10 @@ https://mp.weixin.qq.com/s/jRfOzKO6OlQLokIzipbqUQ
 
 为什么使用自注意力机制？
 
+https://mp.weixin.qq.com/s/_3pA8FZwzegSpyz_cK63BQ
+
+Self-Attention GAN中的self-attention机制
+
 https://mp.weixin.qq.com/s/h7sLwVXb_UI8jvJU-oe3Cg
 
 Google AI提出“透明注意力”机制，实现更深层NMT模型

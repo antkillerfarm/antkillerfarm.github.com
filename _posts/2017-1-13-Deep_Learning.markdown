@@ -262,3 +262,7 @@ https://mp.weixin.qq.com/s/iSJyOe81dnEuaKzOih6WNg
 https://mp.weixin.qq.com/s/s4ew7LYgnC9Z3kVFsjcaXg
 
 不用批归一化也能训练万层ResNet，新型初始化方法Fixup了解一下
+
+https://mp.weixin.qq.com/s/zTB59Fg_JFg9ZZPRlq9txA
+
+不使用残差连接，ICML新研究靠初始化训练上万层标准CNN

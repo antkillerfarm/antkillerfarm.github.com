@@ -364,6 +364,10 @@ https://mp.weixin.qq.com/s/MB7vGecugtemvACK5DRNQg
 
 搞定Python中的“功夫熊猫”，做最高效的数据科学家
 
+https://mp.weixin.qq.com/s/Soy02eshzm2_A7-TzwoGIQ
+
+如何使用Pandas处理Large Data
+
 ## mysql
 
 http://www.runoob.com/python/python-mysql.html
@@ -443,21 +447,3 @@ TuShare是一个免费、开源的python财经数据接口包。主要实现对�
 官网：
 
 http://tushare.org/
-
-## skimage
-
-skimage相当于python版本的OpenCV。
-
-官网：
-
-http://scikit-image.org/
-
-参考：
-
-https://buptldy.github.io/2016/03/31/2016-03-31-Skimage%20hog/
-
-Compute the HOG descriptor by skimage
-
-https://mp.weixin.qq.com/s/WL8jfxB-xukP_MkN2aMb0w
-
-OpenCV，PIL，Skimage你pick谁

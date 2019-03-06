@@ -14,10 +14,6 @@ https://mp.weixin.qq.com/s/NdwbnEMEVfiX6YGepK9PBA
 
 追根溯源！一图看尽深度学习架构谱系
 
-https://mp.weixin.qq.com/s/_IOdMk8CJbZkeYO9CDDgZQ
-
-AI设计师“鲁班”进化史：每秒制作8000张双11海报，没有一张雷同！
-
 https://mp.weixin.qq.com/s/UsoLQbrwj6rpLUAV5kYkUA
 
 大数据和网络分析的可扩展算法
@@ -54,17 +50,9 @@ https://mp.weixin.qq.com/s/xCzS7sYMFmk5K4ClB1I2YQ
 
 Uber提出SBNet：利用激活的稀疏性加速卷积网络
 
-https://mp.weixin.qq.com/s/EW6jvf98ifBucVz74SfSIA
-
-文档扫描：深度神经网络在移动端的实践
-
 https://mp.weixin.qq.com/s/D9bRjYVJOMT0Jkh59XZ-Rg
 
 DeepMind于Nature子刊发文提出非对称博弈的降维方法
-
-https://mp.weixin.qq.com/s/fwgKilh9Q7Wseano3lOG0g
-
-谷歌提出机器对话Self-Play框架M2M，提高自动化程度
 
 https://mp.weixin.qq.com/s/sCxyk8WEb8W2-mq-tTQs6A
 
@@ -73,10 +61,6 @@ LeCun台大演讲
 https://mp.weixin.qq.com/s/SPdkJTYU80bioNdZrBj4cw
 
 卷积优化-Cpython(Cuda)施工和分析
-
-https://mp.weixin.qq.com/s/4JFzgFTvAvBs74V7AQUCrQ
-
-让照片走两步：骨骼框架辅助的人物动作生成模型
 
 https://mp.weixin.qq.com/s/_dDLbPwpgoOdLc83_JQEuA
 
@@ -358,10 +342,6 @@ https://mp.weixin.qq.com/s/ZWUPaSeL4vGfoEOxI57umw
 
 为卷积模型执行加入循环和远程反馈，更完整地拟合生物视觉
 
-https://mp.weixin.qq.com/s/DtxjX9RfRgehxLsJ7MFoNw
-
-谷歌大脑开源TensorFuzz，自动Debug神经网络！
-
 https://mp.weixin.qq.com/s/t0lGL66YIJwIvI4emNfN7Q
 
 UC Berkeley新研究：通过深度学习建模注意点采样阵列
@@ -369,3 +349,11 @@ UC Berkeley新研究：通过深度学习建模注意点采样阵列
 https://mp.weixin.qq.com/s/fJMae88M8GEQi80DfbCKjQ
 
 从“局部连接”回到“全连接”的神经网络
+
+https://mp.weixin.qq.com/s/Sb_kPgtwyQFWloDT3707TA
+
+深度学习了40万个表情，一大波AI表情包来了
+
+https://mp.weixin.qq.com/s/dJXl5tI-WKB3O28sgJmbkw
+
+机器也能感知时间，AI系统可预测5分钟内的未来！

@@ -329,3 +329,27 @@ https://mp.weixin.qq.com/s/ZUxkZXLC0tPkzptFKtudhw
 https://mp.weixin.qq.com/s/6OkLjK1bMbw6a3bvYn_DCQ
 
 深度学习在自动驾驶感知领域的应用
+
+https://zhuanlan.zhihu.com/p/57029694
+
+自动驾驶中单目摄像头检测输出3-D边界框的方法一览
+
+https://mp.weixin.qq.com/s/bgP_xMfi3hXayscf9D5JIg
+
+谷歌提出Sim2Real：让机器人像人类一样观察世界
+
+https://zhuanlan.zhihu.com/p/57028341
+
+自动驾驶系统的传感器标定方法
+
+# AI-1000问
+
+这个是“有三AI”微信公众号下的栏目，特辑录如下。
+
+https://mp.weixin.qq.com/s/5-3UxBVy080WhEWumv7BiA
+
+为什么LeNet5倒数第二个全连接层维度为84？
+
+https://mp.weixin.qq.com/s/Er3Poj8oxV5OKNlAlZwq_A
+
+为什么OpenCV读取的图像格式是BGR？

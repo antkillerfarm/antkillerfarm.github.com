@@ -330,6 +330,10 @@ https://mp.weixin.qq.com/s/FEYl1sVOq7yRecdZRSiKpg
 
 AlphaPose升级！上海交大卢策吾团队开源密集人群姿态估计代码
 
+https://mp.weixin.qq.com/s/4JFzgFTvAvBs74V7AQUCrQ
+
+让照片走两步：骨骼框架辅助的人物动作生成模型
+
 # Regularization
 
 DL中的Regularization除了常见的$$l_1$$-norm、$$l_2$$-norm和squared $$l_2$$-norm之外，还有Group Regularization。它的定义如下：

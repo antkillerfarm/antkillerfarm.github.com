@@ -48,36 +48,6 @@ https://mp.weixin.qq.com/s/JgSTOiWZ30mIR_uiXyU2PQ
 
 硅谷高级工程师告诉你：算法工程师必须要知道的面试技能雷达图
 
-## AI与UI
-
-https://mp.weixin.qq.com/s/bGbslnuG80S6gPwD4FHuMg
-
-深度学习助力前端开发：自动生成GUI图代码
-
-https://mp.weixin.qq.com/s/PhgIy4UaBLh_pOO8OH2c4g
-
-复杂GUI也能搞定！西安交通大学提出前端设计图自动转代码新方法
-
-https://mp.weixin.qq.com/s/4b4TPkIRPJ3VBkCOA6kbxw
-
-前端慌不慌？用深度学习自动生成HTML代码
-
-https://mp.weixin.qq.com/s/tjnpIYJGmrTLGUsdtBI2Vw
-
-AI设计师“鹿班”核心技术公开：如何1秒设计8000张海报？
-
-https://mp.weixin.qq.com/s/lEaq8NylJG4bUY2YupZh0g
-
-5秒钟内将手绘网站线框图转换为可用的HTML网站
-
-https://mp.weixin.qq.com/s/FuHDkcCDib5oc_XPDNnytQ
-
-阿里AI设计师一秒出图，小撒连连惊呼，真相是...
-
-https://mp.weixin.qq.com/s/empXVsgqe6OljVa1Hduigw
-
-前端开发者的福音：根据UI设计图自动生成GUI骨架代码
-
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
@@ -125,44 +95,6 @@ https://mp.weixin.qq.com/s/8QP5X9Hxi_6qyfxP4O0Gwg
 https://mp.weixin.qq.com/s/bE9BZQ6wCICvrgomdySDuw
 
 周志华组提出可做表征学习的多层梯度提升决策树
-
-## 深度学习大讲堂
-
-https://zhuanlan.zhihu.com/p/36520673
-
-让机器“观色”：真实世界的表情识别
-
-https://mp.weixin.qq.com/s/d4N-Xz0NImb5khLup5DmpQ
-
-让机器“察言作画”：从语言到视觉
-
-https://mp.weixin.qq.com/s/zBNJzajap4Lwb5o_W2A-jw
-
-让机器“析毫剖厘”：图像理解与编辑
-
-https://mp.weixin.qq.com/s/_WOzunt9_I-tDZ1NaCguyA
-
-让机器“答问如流”：从视觉到语言
-
-https://mp.weixin.qq.com/s/rKHA2H4msHSInVn7A-fqHg
-
-让机器“看山是山”：脑启发的视觉计算
-
-https://mp.weixin.qq.com/s/MHaweyu4zegUrrgu6gm_LQ
-
-让机器“删繁就简”：深度神经网络加速与压缩
-
-https://mp.weixin.qq.com/s/_HxhOp1E7cRD03RXqx97Vg
-
-让机器“提纲挈领”：视觉系统的紧凑性初探
-
-https://mp.weixin.qq.com/s/C1PydJQJjZtf0mHIIDcFvg
-
-让机器“解疑释惑”：视觉世界中的结构化理解
-
-https://mp.weixin.qq.com/s/SB5ZSD_YGPvC6hPTZXiB4A
-
-让机器“一叶知秋”：弱监督视觉语义分割
 
 ## 参考
 
@@ -334,14 +266,6 @@ https://mp.weixin.qq.com/s/ViQqeER1NXtJOtnLg76TWg
 
 关于远程监督，我们来推荐几篇值得读的论文
 
-https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
-
-谷歌提出多图像抠图算法，并弥补水印技术的一致性漏洞
-
-https://mp.weixin.qq.com/s/zTB59Fg_JFg9ZZPRlq9txA
-
-不使用残差连接，ICML新研究靠初始化训练上万层标准CNN
-
 https://mp.weixin.qq.com/s/ecP1Ze_6VK1g7yxV666V2w
 
 基于自然语言命令的自动图频编辑系统
@@ -378,6 +302,22 @@ https://mp.weixin.qq.com/s/yWnksItYdxQ9Nhj3xWkcMw
 
 凭“颜值”拒稿，误判率仅0.4%？这篇计算机视觉论文让AI学界炸了锅
 
-https://mp.weixin.qq.com/s/bgP_xMfi3hXayscf9D5JIg
+https://mp.weixin.qq.com/s/xS8EsNtSdHiFgg_HnuJJWg
 
-谷歌提出Sim2Real：让机器人像人类一样观察世界
+照片有灵异鬼影？伯克利陈启峰培育高能FCN“除灵师”
+
+https://mp.weixin.qq.com/s/HaTNeqblwp2mALznK2nvMA
+
+用脑电波控制智能假肢：如何利用深度学习技术进行EGG数据分类
+
+https://mp.weixin.qq.com/s/ZIDiFrN3qQV4u-m9Wr3wiA
+
+斯坦福完全可解释深度神经网络：你需要用决策树搞点事
+
+https://mp.weixin.qq.com/s/ZhVTROAdo49GLT09xr6GWg
+
+美团如何基于深度学习实现图像的智能审核？
+
+https://mp.weixin.qq.com/s/o0hjJH6P-8pICS43VFVjIA
+
+Tomaso Poggio深度学习理论：深度网络“过拟合缺失”的本质

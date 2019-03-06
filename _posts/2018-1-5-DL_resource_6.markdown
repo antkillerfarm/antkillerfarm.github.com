@@ -254,10 +254,6 @@ https://www.oreilly.com/learning/caption-this-with-tensorflow
 
 图片字幕生成
 
-https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/content/
-
-某人写的AI心得
-
 https://mp.weixin.qq.com/s/JAVzy8gy7k4EesBBHvEZLg
 
 亚马逊用机器学习自动调优数据库管理系统

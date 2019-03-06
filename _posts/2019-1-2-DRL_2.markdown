@@ -208,6 +208,10 @@ https://mp.weixin.qq.com/s/eE3oL6c5zHmTglHE-dgBvg
 
 详解AlphaGo到AlphaGo Zero！
 
+https://mp.weixin.qq.com/s/aAF0Gr7yEPkHRLASecJipw
+
+百度正用谷歌AlphaGo，解决一个比围棋更难的问题
+
 # AlphaStar
 
 https://mp.weixin.qq.com/s/_Y0bCjTu9UrHfnen15htqQ

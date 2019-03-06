@@ -236,6 +236,14 @@ https://mp.weixin.qq.com/s/qf6FVJe_Kai_11_wImykqg
 
 达观杯文本智能处理挑战赛冠军解决方案
 
+https://mp.weixin.qq.com/s/iAMYqJjlMWAvFq4Hddh4ig
+
+从0上手Kaggle图像分类挑战：冠军解决方案详解
+
+https://mp.weixin.qq.com/s/irXumGRVCP1PUHrCf17PFA
+
+识别座头鲸，Kaggle竞赛第一名解决方案解读
+
 ## AI与安全
 
 https://mp.weixin.qq.com/s/jBE4gP3O0qVJ50G49Q_xmQ

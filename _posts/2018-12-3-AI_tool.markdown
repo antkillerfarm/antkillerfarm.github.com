@@ -342,36 +342,14 @@ https://mp.weixin.qq.com/s/TRfXVO9-DYHCqP49nPWMtw
 
 OpenAI重磅发布Nueral MMO：一个CPU支撑大量智能体同时在线
 
-# DL参考资源
+https://mp.weixin.qq.com/s/s5o9LG7eZ-iTf89-DTANcA
 
-https://mp.weixin.qq.com/s/Sb_kPgtwyQFWloDT3707TA
+模型转代码：XGBoost等模型也能快速转纯C或Java代码
 
-深度学习了40万个表情，一大波AI表情包来了
+https://mp.weixin.qq.com/s/fwgKilh9Q7Wseano3lOG0g
 
-https://mp.weixin.qq.com/s/dJXl5tI-WKB3O28sgJmbkw
+谷歌提出机器对话Self-Play框架M2M，提高自动化程度
 
-机器也能感知时间，AI系统可预测5分钟内的未来！
+https://mp.weixin.qq.com/s/DtxjX9RfRgehxLsJ7MFoNw
 
-https://mp.weixin.qq.com/s/xS8EsNtSdHiFgg_HnuJJWg
-
-照片有灵异鬼影？伯克利陈启峰培育高能FCN“除灵师”
-
-https://mp.weixin.qq.com/s/HaTNeqblwp2mALznK2nvMA
-
-用脑电波控制智能假肢：如何利用深度学习技术进行EGG数据分类
-
-https://mp.weixin.qq.com/s/iAMYqJjlMWAvFq4Hddh4ig
-
-从0上手Kaggle图像分类挑战：冠军解决方案详解
-
-https://mp.weixin.qq.com/s/ZIDiFrN3qQV4u-m9Wr3wiA
-
-斯坦福完全可解释深度神经网络：你需要用决策树搞点事
-
-https://mp.weixin.qq.com/s/ZhVTROAdo49GLT09xr6GWg
-
-美团如何基于深度学习实现图像的智能审核？
-
-https://mp.weixin.qq.com/s/o0hjJH6P-8pICS43VFVjIA
-
-Tomaso Poggio深度学习理论：深度网络“过拟合缺失”的本质
+谷歌大脑开源TensorFuzz，自动Debug神经网络！
