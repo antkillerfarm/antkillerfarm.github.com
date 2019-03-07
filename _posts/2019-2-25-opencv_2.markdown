@@ -130,6 +130,10 @@ https://mp.weixin.qq.com/s/0bL1wSl5FcIS08MsDdR8hg
 
 这样的车牌检测你知道吗？
 
+https://mp.weixin.qq.com/s/OENpLzzTPilHJz7wvH9-Fw
+
+OpenCV4.0 灰度图像彩色化
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。

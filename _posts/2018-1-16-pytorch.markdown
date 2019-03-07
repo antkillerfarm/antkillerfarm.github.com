@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Pytorch, PaddlePaddle
+title:  Pytorch, PaddlePaddle, X-Deep Learning
 category: AI 
 ---
 
@@ -299,6 +299,10 @@ TorchSeg—基于PyTorch的快速模块化语义分割开源库
 https://mp.weixin.qq.com/s/TsR-jgO2c2-dbqnk1mEj8w
 
 想读读PyTorch底层代码？这份内核机制简介送给你
+
+https://mp.weixin.qq.com/s/Lzt3LbO6lBbOebNV1d2pLQ
+
+迁移学习不好懂？这里有一个PyTorch项目帮你理解
 
 # PaddlePaddle
 

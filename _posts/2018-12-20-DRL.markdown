@@ -136,6 +136,10 @@ https://mp.weixin.qq.com/s/UrwP9t-Ox4M9QImKDUDcsA
 
 140页《深度强化学习入门》发布
 
+https://simoninithomas.github.io/Deep_reinforcement_learning_Course/
+
+老外写的简易深度强化学习入门
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》
@@ -211,10 +215,6 @@ https://mp.weixin.qq.com/s/SckTPgEw7KWmfKXWriNIRg
 https://mp.weixin.qq.com/s/-JHHOQPB6pKVuge64NkMuQ
 
 DeepMind主攻的深度强化学习3大核心算法及7大挑战
-
-https://simoninithomas.github.io/Deep_reinforcement_learning_Course/
-
-老外写的简易深度强化学习入门
 
 https://mp.weixin.qq.com/s/2SOHQElaYbplse3QqG9tYw
 

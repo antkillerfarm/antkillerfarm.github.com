@@ -6,6 +6,16 @@ category: AI
 
 # TensorFlow
 
+## TensorFlow Federated
+
+TFF是一个开源框架，用于试验针对分散式数据的机器学习和其他计算。它采用的是一种名为联合学习(FL)的方法，许多参与的客户端能够训练共享的ML模型，同时将数据保存在本地。
+
+这个项目感觉上和Leela Zero有些相似。
+
+https://mp.weixin.qq.com/s/K2-i3U-BCOctetMkvuvVxg
+
+TensorFlow Federated发布
+
 ## 细节
 
 执行`session.run(out)`，会在终端打印out的值，但执行`res = session.run(out)`则不会。

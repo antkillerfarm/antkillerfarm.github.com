@@ -342,6 +342,10 @@ https://zhuanlan.zhihu.com/p/57028341
 
 自动驾驶系统的传感器标定方法
 
+https://mp.weixin.qq.com/s/qrvcvYzSwxSR1-tkvZLUaQ
+
+使用自动编码器从自然驾驶数据中估计测试场景的独特性
+
 # AI-1000问
 
 这个是“有三AI”微信公众号下的栏目，特辑录如下。

@@ -193,6 +193,10 @@ https://mp.weixin.qq.com/s/xXwbV46-kTobAMRwfKyk_w
 
 ## 参考
 
+https://mp.weixin.qq.com/s/Kv4gLKcXyGz7iHcetdrN0Q
+
+元学习（meta-learning）相关文献资源大列表
+
 https://mp.weixin.qq.com/s/KKK3VEpwL90g6Aro8qtXxQ
 
 学习如何学习的算法：简述元学习研究方向现状

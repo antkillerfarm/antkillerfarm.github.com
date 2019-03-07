@@ -278,6 +278,10 @@ https://github.com/aksnzhy/xlearn
 
 这是一个集成了FM和FFM等算法的库
 
+https://mp.weixin.qq.com/s/MEjhJycDwssvzXm7DaSp7Q
+
+推荐系统召回模型之全能的FM模型
+
 ## PITF
 
 配对互动张量分解（Pairwise Interaction Tensor Factorization）算法，也是最早由Rendle引入推荐系统领域的。

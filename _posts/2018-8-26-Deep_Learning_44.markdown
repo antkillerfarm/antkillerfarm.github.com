@@ -166,6 +166,10 @@ https://mp.weixin.qq.com/s/ihrExTygb-Pnnh4o4tAYnQ
 
 基于单目视觉的三维重建算法综述
 
+https://mp.weixin.qq.com/s/3JzwA2HAzoWtE_j2UhZCSw
+
+Stereo R-CNN 3D目标检测
+
 # 视频目标分割
 
 视频目标分割任务和语义分割有两个基本区别：

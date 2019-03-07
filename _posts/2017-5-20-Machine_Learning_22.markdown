@@ -54,6 +54,10 @@ https://mp.weixin.qq.com/s/8KM7wUg_lnFBd0fIoczTHQ
 
 用收缩损失(Shrinkage Loss)进行深度回归跟踪
 
+https://mp.weixin.qq.com/s/VNPX5BADo4EJkIp1yWGoag
+
+斯坦福学者提出GIoU，目标检测任务的新Loss
+
 ## 参考
 
 https://mp.weixin.qq.com/s/gw3hoDSaojVQUiD6YsMabA

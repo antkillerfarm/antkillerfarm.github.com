@@ -206,6 +206,10 @@ https://mp.weixin.qq.com/s/wTwjbripELzqdCjs64Dzzw
 
 ## 参考
 
+https://mp.weixin.qq.com/s/GO2ePhc64aKUEayF2o51Mg
+
+自动机器学习（auto machine learning）相关资源列表
+
 https://mp.weixin.qq.com/s/Ia-8qFLAyY65Nai5PGAw0w
 
 人人都能用的深度学习：当前三大自动化深度学习平台简介

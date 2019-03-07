@@ -230,6 +230,10 @@ http://www.moe.gov.cn/s78/A16/A16_ztzl/ztzl_kxnt/kxnt_sgxz/201512/t20151218_2253
 
 10000个科学难题数学卷
 
+https://mp.weixin.qq.com/s/imqoo3WWgdWtfah2HYYb6Q
+
+糟糕，我学了假的微积分！
+
 ## LSM (Log Structured Merge)
 
 十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。

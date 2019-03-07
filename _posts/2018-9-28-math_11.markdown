@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（十一）——高阶统计, 勾股定理, PID算法
+title:  数学狂想曲（十一）——高阶统计, 勾股定理, PID算法, 辛普森悖论
 category: math 
 ---
 
@@ -189,6 +189,18 @@ https://blog.csdn.net/qq_25005909/article/details/77941243
 https://blog.csdn.net/nemol1990/article/details/45131603
 
 四轴PID讲解
+
+# 辛普森悖论
+
+![](/images/img2/Simpson.png)
+
+如果分专业来看，你就会发现：在各个专业女生的录取率其实都是更高的。之所以会产生“总体录取率女生偏低”这一结果，是因为女生大部分都报考了那些本身就难以录取的学院，而男生则大部分报考了那些录取率本身就偏高的学院。
+
+参考：
+
+https://mp.weixin.qq.com/s/5jZ2dzLInLtUw7rWZF4mtg
+
+张忠元：渣男受女生欢迎？当心统计陷阱
 
 # 知识图谱参考资源
 

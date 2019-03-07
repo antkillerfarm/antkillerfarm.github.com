@@ -194,6 +194,10 @@ https://mp.weixin.qq.com/s/dYV446meJXtCQVFrLzWV8A
 
 目标检测中Anchor的认识及理解
 
+https://mp.weixin.qq.com/s/rlmgN0LbUfd2n9MI8OMT2w
+
+性能大幅度提升（速度&遮挡）:基于区域分解&集成的目标检测 
+
 # Flink
 
 Flink是一个流计算引擎。
