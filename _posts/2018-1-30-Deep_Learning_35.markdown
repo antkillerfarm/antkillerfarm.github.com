@@ -334,6 +334,10 @@ https://mp.weixin.qq.com/s/4JFzgFTvAvBs74V7AQUCrQ
 
 让照片走两步：骨骼框架辅助的人物动作生成模型
 
+https://mp.weixin.qq.com/s/0i9zeGrMFVr-ikbhPRTL7A
+
+人体姿态估计做到今天，还有哪些“硬核场景”、“性能瓶颈”、“新战场”上的难题？
+
 # Regularization
 
 DL中的Regularization除了常见的$$l_1$$-norm、$$l_2$$-norm和squared $$l_2$$-norm之外，还有Group Regularization。它的定义如下：

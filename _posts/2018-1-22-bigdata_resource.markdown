@@ -22,6 +22,10 @@ http://mp.weixin.qq.com/s/Bk5k6vRG4Rq4iCtmtYDEGQ
 
 Leaf——美团点评分布式ID生成系统
 
+https://mp.weixin.qq.com/s/6J7n3udEyQvUHRHwvALNYw
+
+Leaf：美团分布式ID生成服务开源
+
 https://mp.weixin.qq.com/s/_z0-90xbsCd4Pdi6UlEvnA
 
 分布式ID生成器

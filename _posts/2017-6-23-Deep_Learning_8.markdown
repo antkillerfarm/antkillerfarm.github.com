@@ -28,6 +28,10 @@ category: DL
 
 参考：
 
+https://github.com/weiaicunzai/awesome-image-classification
+
+GitHub：图像分类最全资料集锦
+
 https://mp.weixin.qq.com/s/nK__d-PV6DY5mDfA_UgDmQ
 
 全解：目标检测，图像分类、分割、生成……

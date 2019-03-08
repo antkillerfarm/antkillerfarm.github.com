@@ -415,3 +415,7 @@ https://mp.weixin.qq.com/s/N6xBFZ82dkSGCbj6vC5nLQ
 https://mp.weixin.qq.com/s/-6XpuO7_ve_EdSPCMeWE7g
 
 Attention isn’t all you need！BERT的力量之源远不止注意力
+
+https://mp.weixin.qq.com/s/Y2bs2QegRadSR7lbiFFnWg
+
+BERT一作Jacob Devlin斯坦福演讲PPT：BERT介绍与答疑

@@ -174,6 +174,10 @@ https://mp.weixin.qq.com/s/I7mpy5P7LFFkop618ANLtA
 
 这份攻略帮你“稳住”反复无常的GAN
 
+https://mp.weixin.qq.com/s/bPieF6CNvM4N1Njx6OHNwg
+
+谷歌大脑：像BigGAN那样生成高清大图不一定需要大量图像标签
+
 # 深度推理
 
 https://mp.weixin.qq.com/s/rE96BprEO1ZatVOQeO-4YA

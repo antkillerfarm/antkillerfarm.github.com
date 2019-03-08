@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Clojure, Groovy, Lisp, Javascript在客户端的使用, perl, 数字成像
+title:  Clojure, Groovy, Lisp, Javascript在客户端的使用, perl, Scala
 category: language 
 ---
 
@@ -157,180 +157,69 @@ perl的语法和C差别不算太大，好多语法大致上从关键字也可以
 
 perl的包管理器叫做cpan。这实际上也是该工具网站的名字。
 
-# 数字成像
+# Scala
 
-## 结构光
+官网：
 
-http://mp.weixin.qq.com/s/MWQDwMoRc0c1ofkENzn3Ew
+http://www.scala-lang.org/
 
-结构光，TOF，双目视觉的异同
+教程：
 
-https://mp.weixin.qq.com/s/o_XsmqLSPhvuC0iiK7xHag
+http://www.runoob.com/scala/scala-tutorial.html
 
-结构光（1）基本介绍
+## sbt
 
-https://mp.weixin.qq.com/s?__biz=MzU3ODU0Nzk5MA==&mid=2247483804&idx=1&sn=9e37b8cbd9c47f108c1153e3165fffa3
+sbt是scala的构建工具，其作用类似于Java的Ant和Maven。
 
-小米结构光VS iPhone 结构光（一）
+官网：
 
-https://zhuanlan.zhihu.com/p/54761392
+http://www.scala-sbt.org/
 
-结构光综述
+教程：
 
-## 解析力
+https://github.com/CSUG/real_world_scala/blob/master/02_sbt.markdown
 
-https://zhuanlan.zhihu.com/p/20726167
+### 安装
 
-解析力（1）MTF SFR
+{% highlight bash %}
+echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823
+sudo apt-get update
+sudo apt-get install sbt
+{% endhighlight %}
 
-https://zhuanlan.zhihu.com/p/20726175
+参见：
 
-解析力（2）空间采样和奈奎斯特
+http://www.scala-sbt.org/release/docs/Installing-sbt-on-Linux.html
 
-https://blog.csdn.net/jaych/article/details/50889664
+### 常用命令
 
-SFR算法详解1
+sbt有一个和scala类似的命令行交互界面，可以输入相关的命令。其中常用的有：
 
-https://blog.csdn.net/jaych/article/details/50700576
+* compile
 
-SFR算法详解2
+* package
 
-https://blog.csdn.net/jaych/article/details/51030939
+* run
 
-SFR算法详解3
+## GUI
 
-https://blog.csdn.net/jaych/article/details/51031064
+scala的GUI方案和Java完全一致，只要Java能用的GUI，scala都能用。这里仅以JavaFX为例讨论scala的GUI开发。
 
-SFR算法详解4
+方法一：采用一般的scala调用Java的方式。参见：
 
-## 双目成像
+http://alvinalexander.com/scala/scala-javafx-hello-world-example
 
-https://zhuanlan.zhihu.com/p/50801189
+正如上面网页指出的，这里的main函数实际上是有一定技巧在里面的，写起来并不简洁，而且代码风格更像是Java，而不是scala。
 
-OpenCV双目稠密匹配BM算法源代码详细解析
+方法二：ScalaFX
 
-https://www.jianshu.com/p/cbe50ede70aa
+ScalaFX是对JavaFX的封装，风格更接近于scala。
 
-半全局块匹配（Semi-Global Block Matching）算法
+官网：
 
-https://mp.weixin.qq.com/s/SD1pkTNHG7TGKrwVbFaMZg
+http://www.scalafx.org/
 
-中科慧眼崔峰：下一代双目视觉产品预警距离将达到80米
+sbt支持：
 
-https://mp.weixin.qq.com/s/mYijtRNvkSeVxk0sWkORSw
-
-双目视觉简介
-
-https://zhuanlan.zhihu.com/p/56236308
-
-基于双目视觉的自动驾驶技术
-
-## 参考
-
-https://mp.weixin.qq.com/s/od9uDZdRU4QaBKPHb0tLag
-
-cmos sensor基础
-
-https://mp.weixin.qq.com/s/lVS3CgZGItUkWG-OtolbSA
-
-数字成像书籍推荐与资料分享
-
-https://mp.weixin.qq.com/s/1IHHo4sV79sXdtXNzKNhMA
-
-计算摄影--google相机的王者之道
-
-https://mp.weixin.qq.com/s/T4XULnykHANEetmDIhZdaw
-
-mobile camera sensor技术方向选择的经验与教训
-
-https://mp.weixin.qq.com/s/EcAAc_ypajEKXUQbOoYAMA
-
-如何选择IR filter
-
-https://mp.weixin.qq.com/s/typXBdisUI-d_viVInx9XQ
-
-解析DXO图像质量评价体系
-
-https://mp.weixin.qq.com/s/t-Mzx0IEdZG7_TmMpT_cBA
-
-小谈CMOS Sensor设计之FSI和BSI
-
-https://mp.weixin.qq.com/s/gyuKlDwlIqaZmC3w-r8oqg
-
-手机相机如何排名
-
-https://mp.weixin.qq.com/s/cDrVpqsY7f2HZCJa4X8Iww
-
-Google Pixel 2/2XL视频稳定技术探究
-
-https://mp.weixin.qq.com/s/7E9QDSM095KyYwPs-wDznA
-
-成像相关颜色测量仪器简介
-
-https://mp.weixin.qq.com/s/DH3mZgh4YbnceaFGs03kOQ
-
-曹汛：计算摄像学研究
-
-https://mp.weixin.qq.com/s/f2BIrZ8if7_rX__J9hMHog
-
-广色域----iphone X/8 camera的色彩进化
-
-https://mp.weixin.qq.com/s/VjzXYgkzAGloczaaPXni2A
-
-PDAF进化史
-
-https://mp.weixin.qq.com/s/vg64EpcCVsk7gQAoEozSRQ
-
-PDAF进阶
-
-https://mp.weixin.qq.com/s/7es1wtJXatJR2eHScrk2_w
-
-深度相机大盘点（1）
-
-https://mp.weixin.qq.com/s/m7q6jHbdnb7fw4lKIDfVWw
-
-camera接口之MIPI联盟浅谈
-
-https://mp.weixin.qq.com/s/DbDrDhbQAhXOsfxQ8UJVZg
-
-三星S9凝时摄影背后的sensor技术
-
-https://mp.weixin.qq.com/s/gOikxUxWpqdDRr6_KT2jxQ
-
-图像处理，计算机视觉与machine learning的区别与联系
-
-https://mp.weixin.qq.com/s/7fvVmmpPSldwa3TZ3dVb2g
-
-3D LUT--色彩校正的利器
-
-https://mp.weixin.qq.com/s/sXC263Lq25tKp2AK2Tsb-A
-
-Omnivision HDR sensor简介
-
-https://mp.weixin.qq.com/s/oeMqE0MzXyGeABGekY9eiQ
-
-眼擎科技CEO朱继志：如何设计自动驾驶的视觉成像系统
-
-https://blog.csdn.net/weixin_38285131/article/details/80457068
-
-光场相机重聚焦原理介绍及代码解析
-
-https://mp.weixin.qq.com/s/eyIeLaBZ0f_EsxglsUuH8A
-
-深度学习自动构图研究报告
-
-https://mp.weixin.qq.com/s/k2JLF_aM3j68GjEByCZF-g
-
-模拟/数字增益对图像噪声的影响
-
-https://mp.weixin.qq.com/s/QmEQuEk2B_fAleewTuNClg
-
-3D成像技术和CMOS传感器的发展方向简析
-
-https://mp.weixin.qq.com/s/R7wnyHT6M-KF3ZMz0bPrVg
-
-这台相机没镜头！美国教授新发明，一块玻璃可成像，拍照给计算机看
-
-https://mp.weixin.qq.com/s/j970Qp8Cz2fpbImujkS2Xg
-
-自动驾驶应用中的LED flicker问题
+`libraryDependencies += "org.scalafx" %% "scalafx" % "8.0.92-R10"`

@@ -85,3 +85,7 @@ https://mp.weixin.qq.com/s/w7O2JxDH2ECqPn50sLfxpg
 https://mp.weixin.qq.com/s/EW6jvf98ifBucVz74SfSIA
 
 文档扫描：深度神经网络在移动端的实践
+
+https://mp.weixin.qq.com/s/FvR6loJ8KUxm7qwclestcQ
+
+专门为卷积神经网络设计的训练方法：RePr

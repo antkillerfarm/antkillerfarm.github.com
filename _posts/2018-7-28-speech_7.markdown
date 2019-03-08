@@ -242,6 +242,54 @@ https://mp.weixin.qq.com/s/CjWNZf225OELIBoWRAbakg
 
 # AI Chip
 
+https://mp.weixin.qq.com/s/uzeeZiaAFdA0C_zAcX756w
+
+深度学习架构之争
+
+https://mp.weixin.qq.com/s/VM-KiIJHA2gXLVu0WRIzwA
+
+王中风教授：如何满足不同应用场景下深度神经网络模型算力和能效需求
+
+https://mp.weixin.qq.com/s/f5mQkWxPYc77t2we1Y306Q
+
+深度学习引领AI芯片大战
+
+https://mp.weixin.qq.com/s/6ksL9p1Gmnrd2HahU3KniQ
+
+ARM攒机指南——AI篇：5大千万级设备市场技术拆解
+
+https://zhuanlan.zhihu.com/p/32953957
+
+浅析图像视频类AI芯片的灵活度
+
+https://mp.weixin.qq.com/s/cfqnLYZSxJhtsgtrydx02A
+
+语音及文本类AI芯片的需求分析
+
+https://mp.weixin.qq.com/s/31SBgTXfIcwkmIzujBLxOA
+
+深度学习引擎的终极形态是什么?
+
+https://zhuanlan.zhihu.com/p/35103140
+
+“传说中”的异步电路能否在AI芯片界异军突起？
+
+https://mp.weixin.qq.com/s/DnurlGgd5q4Fwjxy3YnIrQ
+
+当数据库遇见FPGA：X-DB异构计算如何实现百万级TPS？
+
+https://mp.weixin.qq.com/s/PDe8O5zskxD_mycwH0_3lg
+
+AI是如何影响计算机内存系统的？
+
+https://blog.csdn.net/lien0906/article/details/78863118
+
+深度学习中GPU和显存分析
+
+https://mp.weixin.qq.com/s/H_KnHQ6AzCNFqmW8uDj1rA
+
+基于FPGA的深度学习加速器综述：挑战与机遇
+
 http://eyeriss.mit.edu/
 
 Eyeriss是MIT设计的一款NN加速器。

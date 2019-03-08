@@ -297,6 +297,10 @@ https://mp.weixin.qq.com/s/0Zcrwi3WROzm19ApDZINMQ
 
 Ruder博士答辩41页PPT，面向自然语言处理的神经网络迁移学习
 
+https://zhuanlan.zhihu.com/p/58514431
+
+Domain Adaptation：不用深度网络，如何处理源域和目标域异构问题？
+
 # Mask R-CNN
 
 Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的NN。它是何恺明2017年的新作。

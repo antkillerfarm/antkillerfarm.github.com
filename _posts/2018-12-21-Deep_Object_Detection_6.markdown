@@ -196,7 +196,7 @@ https://mp.weixin.qq.com/s/dYV446meJXtCQVFrLzWV8A
 
 https://mp.weixin.qq.com/s/rlmgN0LbUfd2n9MI8OMT2w
 
-性能大幅度提升（速度&遮挡）:基于区域分解&集成的目标检测 
+性能大幅度提升（速度&遮挡）:基于区域分解&集成的目标检测
 
 # Flink
 
@@ -255,3 +255,7 @@ Flink如何取代JStorm，成为字节跳动流处理唯一标准？
 https://mp.weixin.qq.com/s/zeIcY_JknIo9-hR7UTxvrA
 
 从Storm到Flink：大数据处理的开源系统及编程模型
+
+https://mp.weixin.qq.com/s/ZkVK9S-BSoQTo09ALBI9aA
+
+从Storm到Flink，有赞五年实时计算效率提升实践

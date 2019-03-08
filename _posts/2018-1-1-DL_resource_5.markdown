@@ -96,6 +96,20 @@ https://mp.weixin.qq.com/s/bE9BZQ6wCICvrgomdySDuw
 
 周志华组提出可做表征学习的多层梯度提升决策树
 
+## 鉴黄
+
+https://mp.weixin.qq.com/s/vTtKUagiFD55mcQIeGDxQw
+
+图像鉴黄做得好，健康上网少烦恼
+
+https://zhuanlan.zhihu.com/p/33177237
+
+在Movidius计算棒上利用深度学习鉴黄
+
+http://tensorinfinity.com/paper_119.html
+
+图像内容鉴黄算法综述
+
 ## 参考
 
 https://mp.weixin.qq.com/s/Ji3dTs0lMjLLR5Oxbsr3Vg

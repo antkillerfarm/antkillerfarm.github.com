@@ -244,6 +244,14 @@ https://mp.weixin.qq.com/s/irXumGRVCP1PUHrCf17PFA
 
 识别座头鲸，Kaggle竞赛第一名解决方案解读
 
+https://mp.weixin.qq.com/s/jqICZ2nkv-1vF_XPCWRxiQ
+
+大规模机器学习在爱奇艺视频分析理解中的实践
+
+https://mp.weixin.qq.com/s/-n2Sujgg3vdQXJOrCgQRkw
+
+浅析搜狗AI主播背后的核心技术
+
 ## AI与安全
 
 https://mp.weixin.qq.com/s/jBE4gP3O0qVJ50G49Q_xmQ

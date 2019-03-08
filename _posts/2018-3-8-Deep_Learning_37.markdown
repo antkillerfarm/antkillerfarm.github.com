@@ -152,6 +152,10 @@ https://mp.weixin.qq.com/s/YlrWHDPIPzN4dQO2vo4DjA
 
 人脸颜值研究综述
 
+https://www.oukohou.wang/2019/01/30/face-aging_using_GAN/
+
+论文阅读-人脸老化：Generative Adversarial Style Transfer Networks for Face Aging
+
 ## 活体检测
 
 https://mp.weixin.qq.com/s/zOnmKSnQctnyx7pKXX-tpQ

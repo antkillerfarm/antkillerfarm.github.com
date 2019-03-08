@@ -96,6 +96,10 @@ https://blog.csdn.net/GossipHHH/article/details/78132398
 
 VsCode插件安装及推荐
 
+https://mp.weixin.qq.com/s/cw_Bww22sgPtOeNLKQ7HHA
+
+如何使用Visual Studio Code进行Java开发？
+
 # Python
 
 ## Sqlite

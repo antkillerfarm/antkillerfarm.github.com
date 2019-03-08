@@ -94,10 +94,6 @@ https://mp.weixin.qq.com/s/4LjWHFO0wTP7kqnKf2mdWw
 
 林倞：Beyond Supervised Deep Learning--后深度学习时代的挑战
 
-https://zhuanlan.zhihu.com/p/33177237
-
-在Movidius计算棒上利用深度学习鉴黄
-
 https://mp.weixin.qq.com/s/mvbyddpgxBFQSxC1zZZmFw
 
 如何通过距离度量学习解决Street-to-Shop问题

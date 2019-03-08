@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  Java（二）, 孩子的编程语言, Javascript（二）, Scala
+title:  Java（二）, 孩子的编程语言, Javascript（二）
 category: language 
 ---
 
-# Java的注释型配置
+# Java
+
+## Java的注释型配置
 
 Spring等框架中，有很多配置项是以注释（annotation）的形式出现在代码中，这也成为Java代码中很有特色的一点。
 
@@ -28,7 +30,7 @@ http://www.cnblogs.com/peida/archive/2013/04/24/3036689.html
 
 深入理解Java：注解（Annotation）自定义注解入门
 
-# main函数
+## main函数
 
 和一般的C/C++程序只有一个main函数不同，Java允许每个类都有自己的main函数。只要在程序执行时，指定使用某个类的main函数即可，这个类被称作“主类”。
 
@@ -54,19 +56,19 @@ class A
 
 http://www.cnblogs.com/icejoywoo/archive/2011/05/09/2041449.html
 
-# POJO
+## POJO
 
 POJO（Plain Ordinary Java Object）：简单的Java对象。
 
 这个名词被创造出来，用以和JavaBean做一个区分。后者通常是被容器所创建，还要实现Serializable接口用于实现Bean的持久性。
 
-# IntelliJ IDEA
+## IntelliJ IDEA
 
 Alt+Enter：自动import
 
 双编辑窗口：在代码的标签上右键->Split Horizontally
 
-# Java各集合类的比较 
+## Java各集合类的比较 
 
 <table>
 <tr>
@@ -112,7 +114,7 @@ Alt+Enter：自动import
 </tr>
 </table>
 
-# Log4j & SLF4J & Logback
+## Log4j & SLF4J & Logback
 
 Log4j是Apache的一个开源项目，通过使用Log4j，我们可以控制日志信息输送的目的地是控制台、文件、GUI组件，甚至是套接口服务器、NT的事件记录器、UNIX Syslog守护进程等；我们也可以控制每一条日志的输出格式；通过定义每一条日志信息的级别，我们能够更加细致地控制日志的生成过程。
 
@@ -130,7 +132,7 @@ http://logback.qos.ch
 
 http://wuyilun2.blog.163.com/blog/static/9853110201111595858365/
 
-# Save/Load序列化对象
+## Save/Load序列化对象
 
 代码：
 
@@ -144,7 +146,15 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/java/HanLP/Know
 
 3.不想序列化的成员使用transient关键字修饰。
 
-# 参考
+## Guava
+
+Guava: Google Core Libraries for Java。这个库提供了很多JDK没有包含的基础功能，非常不错。
+
+官网：
+
+https://github.com/google/guava/wiki
+
+## 参考
 
 https://mp.weixin.qq.com/s/t1Cx1n6irN1RWG8HQyHU2w
 
@@ -326,70 +336,3 @@ https://mp.weixin.qq.com/s/WHh9v3icCc90PwiLyv0Hng
 https://mp.weixin.qq.com/s/GQ2azFxcmXrY78rTAdxuVA
 
 JS/CSS体积减少了67%，我们是如何做到的？
-
-# Scala
-
-官网：
-
-http://www.scala-lang.org/
-
-教程：
-
-http://www.runoob.com/scala/scala-tutorial.html
-
-## sbt
-
-sbt是scala的构建工具，其作用类似于Java的Ant和Maven。
-
-官网：
-
-http://www.scala-sbt.org/
-
-教程：
-
-https://github.com/CSUG/real_world_scala/blob/master/02_sbt.markdown
-
-### 安装
-
-{% highlight bash %}
-echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823
-sudo apt-get update
-sudo apt-get install sbt
-{% endhighlight %}
-
-参见：
-
-http://www.scala-sbt.org/release/docs/Installing-sbt-on-Linux.html
-
-### 常用命令
-
-sbt有一个和scala类似的命令行交互界面，可以输入相关的命令。其中常用的有：
-
-* compile
-
-* package
-
-* run
-
-## GUI
-
-scala的GUI方案和Java完全一致，只要Java能用的GUI，scala都能用。这里仅以JavaFX为例讨论scala的GUI开发。
-
-方法一：采用一般的scala调用Java的方式。参见：
-
-http://alvinalexander.com/scala/scala-javafx-hello-world-example
-
-正如上面网页指出的，这里的main函数实际上是有一定技巧在里面的，写起来并不简洁，而且代码风格更像是Java，而不是scala。
-
-方法二：ScalaFX
-
-ScalaFX是对JavaFX的封装，风格更接近于scala。
-
-官网：
-
-http://www.scalafx.org/
-
-sbt支持：
-
-`libraryDependencies += "org.scalafx" %% "scalafx" % "8.0.92-R10"`

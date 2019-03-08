@@ -338,10 +338,7 @@ https://mp.weixin.qq.com/s/4w3wIyy4H0UGeqOGhNcIbA
 
 强化学习落地！京东等发布综述《深度强化学习在搜索，推荐和在线广告中的应用》
 
-https://zhuanlan.zhihu.com/p/52727881
-
-在线学习(MAB)与强化学习(RL)
-
 https://mp.weixin.qq.com/s/F_GsfAJRFJ_o8PETqUL35g
 
 谷歌大脑AI飞速解锁雅达利，训练不用两小时：预测能力“前所未有”
+

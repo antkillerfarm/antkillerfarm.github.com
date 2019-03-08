@@ -144,6 +144,10 @@ https://mp.weixin.qq.com/s/dflEAOELK0f19y4KuVd_dQ
 
 40行Python代码，实现卷积特征可视化
 
+https://mp.weixin.qq.com/s/fpVFpN5beJFyLW19WnBzvw
+
+揭开黑盒一角！谷歌联合OpenAI发布“神经元显微镜”，可视化神经网络运行机制 
+
 ## DL方法
 
 受到上述事实的启发，2015年德国University of Tuebingen的Leon A. Gatys写了如下两篇论文：

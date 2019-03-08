@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  AI Chip（一）
-category: resource 
+category: AI 
 ---
 
 # AI Chip
@@ -55,6 +55,84 @@ http://www.deephi.com/zh-cn/dnndk.html
 无耻的谈一下我司的Model Zoo。包含40+的模型，涵盖图像分类、目标检测、图像分割、人脸识别、超分辨率、OCR等。目前，主要往RNN、Attention方面发展。这里会遇到循环结构的问题，还没有做的太好。
 
 目前的AI Chip战争，入局的玩家基本都解决了芯片有无的问题。体系结构的红利也吃的差不多了，在未来几年不大可能再保持目前的算力增速。因此，未来争夺的焦点将转向软件方面。实际上，今年以来，已经有客户拿友商产品性能来压我们。然而也就是压一下而已，让他弃用他肯定不干。原因无他，我司80%的功能都已经自动化，没人会和好用过不去。
+
+# TPU
+
+​Tensor Processing Unit(TPU)是Google推出的AI芯片系列。目前已经有3个版本：
+
+TPU v1, deployed 2015, 92 teraops, inference only.
+
+TPU v2, cloud TPU 2017, pod 2018, 180 teraflops, 64 GB HBM, training and inference, generally available. 11.5 petaflops in a pod.
+
+TPU v3, cloud beta 2018, 420 teraflops, 128 GB HBM, training and inference, beta. >100 petaflops in a pod.
+
+论文：
+
+《In-Datacenter Performance Analysis of a Tensor Processing Unit​》
+
+## Coral Dev Board
+
+Coral Dev Board是Google于2019年3月推出的一款搭载TPU的嵌入式开发板。
+
+参考：
+
+http://linuxgizmos.com/google-launches-i-mx8m-dev-board-with-edge-tpu-ai-chip/
+
+Google launches i.MX8M dev board with Edge TPU AI chip
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/26882794
+
+Google深度揭秘TPU
+
+https://mp.weixin.qq.com/s/1X9xiZkmVPI-j-aipr-ocg
+
+AlphaGo Master最新架构和算法，谷歌云与TPU拆解
+
+https://mp.weixin.qq.com/s/Yo0uKd1Mzy4mmS4r0mxfVw
+
+有图有真相：深度拆解谷歌TPU3.0，新一代AI协同处理器
+
+https://mp.weixin.qq.com/s/kPrZ0PuevXEJjVB7RXs70g
+
+谷歌TPU率队，颠覆3350亿美元的半导体行业
+
+http://web.cecs.pdx.edu/~mperkows/temp/May22/0020.Matrix-multiplication-systolic.pdf
+
+矩阵乘法器原理
+
+https://zhuanlan.zhihu.com/p/26522315
+
+脉动阵列-因Google TPU获得新生
+
+https://mp.weixin.qq.com/s/wunqEHC6c-yUVXTl4yTG4w
+
+仅需1/5成本：TPU是如何超越GPU，成为深度学习首选处理器的
+
+## HBM
+
+HBM==High Bandwidth Memory是一款新型的CPU/GPU内存芯片（即 “RAM”），其实就是将很多个DDR芯片堆叠在一起后和GPU封装在一起，实现大容量，高位宽的DDR组合阵列。
+
+![](/images/img2/HBM.jpg)
+
+这是HBM的结构图。
+
+![](/images/img2/HBM_2.jpg)
+
+这是HBM和GDDR5的对比图。
+
+从上面两图可以看出，HBM的集成程度在die一级，介于PCB和chip之间。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/33990592
+
+HBM火了，它到底是什么？
+
+https://zhuanlan.zhihu.com/p/34164501
+
+HBM技术之显卡应用
 
 ## 行业信息
 
@@ -115,18 +193,6 @@ https://cloud.tencent.com/community/article/446425
 https://zhuanlan.zhihu.com/p/25382177
 
 AI芯片怎么降功耗？
-
-https://zhuanlan.zhihu.com/p/26882794
-
-Google深度揭秘TPU
-
-https://mp.weixin.qq.com/s/1X9xiZkmVPI-j-aipr-ocg
-
-AlphaGo Master最新架构和算法，谷歌云与TPU拆解
-
-https://mp.weixin.qq.com/s/Yo0uKd1Mzy4mmS4r0mxfVw
-
-有图有真相：深度拆解谷歌TPU3.0，新一代AI协同处理器
 
 https://mp.weixin.qq.com/s/8HIZRhb-KJOtPnQtQ3GQVg
 
@@ -200,14 +266,6 @@ https://mp.weixin.qq.com/s/K_dohaZbCISZlxe1Utu50w
 
 如何用FPGA加速卷积神经网络(CNN)？
 
-https://mp.weixin.qq.com/s/kPrZ0PuevXEJjVB7RXs70g
-
-谷歌TPU率队，颠覆3350亿美元的半导体行业
-
-http://web.cecs.pdx.edu/~mperkows/temp/May22/0020.Matrix-multiplication-systolic.pdf
-
-矩阵乘法器原理
-
 https://mp.weixin.qq.com/s/z68hk1yqg60QCjgTyzgG2w
 
 GPU深度学习的“加速神器”
@@ -244,14 +302,6 @@ https://mp.weixin.qq.com/s/s-fYxv4z5kkJUFueU2IR7w
 
 BP表达式与硬件架构：相似性构建更高效的计算单元
 
-https://zhuanlan.zhihu.com/p/26522315
-
-脉动阵列-因Google TPU获得新生
-
-https://mp.weixin.qq.com/s/wunqEHC6c-yUVXTl4yTG4w
-
-仅需1/5成本：TPU是如何超越GPU，成为深度学习首选处理器的
-
 https://zhuanlan.zhihu.com/p/31782874
 
 Graphcore AI芯片：更多分析
@@ -263,59 +313,3 @@ OpenAI发布“块稀疏”GPU内核：实现文本情感分析与图像生成�
 https://mp.weixin.qq.com/s/Qfbc2iQnXacOqOGIrpRQRw
 
 Tensor Core究竟有多快？全面对比英伟达Tesla V100/P100的RNN加速能力
-
-https://mp.weixin.qq.com/s/uzeeZiaAFdA0C_zAcX756w
-
-深度学习架构之争
-
-https://mp.weixin.qq.com/s/VM-KiIJHA2gXLVu0WRIzwA
-
-王中风教授：如何满足不同应用场景下深度神经网络模型算力和能效需求
-
-https://mp.weixin.qq.com/s/f5mQkWxPYc77t2we1Y306Q
-
-深度学习引领AI芯片大战
-
-https://mp.weixin.qq.com/s/6ksL9p1Gmnrd2HahU3KniQ
-
-ARM攒机指南——AI篇：5大千万级设备市场技术拆解
-
-https://zhuanlan.zhihu.com/p/32953957
-
-浅析图像视频类AI芯片的灵活度
-
-https://mp.weixin.qq.com/s/cfqnLYZSxJhtsgtrydx02A
-
-语音及文本类AI芯片的需求分析
-
-https://mp.weixin.qq.com/s/31SBgTXfIcwkmIzujBLxOA
-
-深度学习引擎的终极形态是什么?
-
-https://zhuanlan.zhihu.com/p/35103140
-
-“传说中”的异步电路能否在AI芯片界异军突起？
-
-https://mp.weixin.qq.com/s/DnurlGgd5q4Fwjxy3YnIrQ
-
-当数据库遇见FPGA：X-DB异构计算如何实现百万级TPS？
-
-https://mp.weixin.qq.com/s/PDe8O5zskxD_mycwH0_3lg
-
-AI是如何影响计算机内存系统的？
-
-https://blog.csdn.net/lien0906/article/details/78863118
-
-深度学习中GPU和显存分析
-
-https://zhuanlan.zhihu.com/p/33990592
-
-HBM火了，它到底是什么？
-
-https://zhuanlan.zhihu.com/p/34164501
-
-HBM技术之显卡应用
-
-https://mp.weixin.qq.com/s/H_KnHQ6AzCNFqmW8uDj1rA
-
-基于FPGA的深度学习加速器综述：挑战与机遇
