@@ -346,6 +346,10 @@ https://mp.weixin.qq.com/s/qrvcvYzSwxSR1-tkvZLUaQ
 
 使用自动编码器从自然驾驶数据中估计测试场景的独特性
 
+https://mp.weixin.qq.com/s/6Wj0Y4y30BVA75WrU4oZbQ
+
+SBNet: 提高自动驾驶系统的感知效率
+
 # AI-1000问
 
 这个是“有三AI”微信公众号下的栏目，特辑录如下。

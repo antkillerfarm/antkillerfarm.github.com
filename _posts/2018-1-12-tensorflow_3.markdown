@@ -12,9 +12,17 @@ TFF是一个开源框架，用于试验针对分散式数据的机器学习和�
 
 这个项目感觉上和Leela Zero有些相似。
 
+从原理上说，TFF主要使用了Federated Machine Learning技术。
+
+参考：
+
 https://mp.weixin.qq.com/s/K2-i3U-BCOctetMkvuvVxg
 
 TensorFlow Federated发布
+
+https://mp.weixin.qq.com/s/6QKyE3jIOwBK_2rcG-Vtiw
+
+联邦机器学习-概念与应用
 
 ## 细节
 
@@ -391,27 +399,3 @@ https://mp.weixin.qq.com/s/X7ISLRMy5cddpmO5mev4MA
 https://mp.weixin.qq.com/s/65HiEwCyzeA_d9flPBcpLQ
 
 谷歌正式发布TensorFlowLite，半监督跨平台快速训练ML模型
-
-http://www.jianshu.com/p/1da012a83b74
-
-利用TensorFlow实现排序和搜索算法
-
-https://mp.weixin.qq.com/s/oEqMjOTj8xpd3sg60ZUhqA
-
-TensorFlow的c++实践及各种坑
-
-https://mp.weixin.qq.com/s/-5RCRl9ztQ2dQmX00QvfvQ
-
-在Python和TensorFlow上构建Word2Vec词嵌入模型
-
-https://mp.weixin.qq.com/s/Nyjp0mZxcn04vLKjJXLSaw
-
-如何用TensorFlow在安卓设备上实现深度学习推断
-
-https://mp.weixin.qq.com/s/kEowgNPVS1nAGBPbzkatlQ
-
-如何构建高可读性和高可重用的TensorFlow模型
-
-https://mp.weixin.qq.com/s/O_IN39FBVPeD5fRYBsPuZQ
-
-用TensorFlow开发问答系统

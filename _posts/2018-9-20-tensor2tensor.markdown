@@ -309,3 +309,55 @@ https://mp.weixin.qq.com/s/pBR4wMITrigbSVAvn0d6vQ
 https://mp.weixin.qq.com/s/BD-nJSZJLjBBq1n7HEHpKw
 
 将您的代码升级至TensorFlow 2.0
+
+https://mp.weixin.qq.com/s/8I5Nvw4t2jT1NR9vIYT5XA
+
+深入理解TensorFlow中的tf.metrics算子
+
+https://mp.weixin.qq.com/s/aMarI-nyIvFqhtpJWQrNhQ
+
+谷歌推强化学习新框架“多巴胺“，基于TensorFlow，已开源
+
+https://mp.weixin.qq.com/s/ntHkMIef1o2-FF-AJf_bZQ
+
+三分钟训练眼球追踪术，AI就知道你在盯着哪个妹子——TensorFlow.js代码
+
+https://mp.weixin.qq.com/s/7rTmEBfh613SrNnTQvfSjw
+
+懒人福利：不写代码调优深度模型，谷歌开源的“What-If”了解一下
+
+https://mp.weixin.qq.com/s/eX3LWYiSH-KObH_7F_3QCA
+
+TensorFlow 1.11.0发布，一键多GPU
+
+https://mp.weixin.qq.com/s/316VVXLQfeIsKNk4ld-VRw
+
+TensorFlow语义分割套件开源了ECCV18旷视科技BiSeNet实时分割算法
+
+https://mp.weixin.qq.com/s/XI1J4ardEWKP4UQ4IXZGTQ
+
+TensorFlow Hub,给您带来全新的Web体验
+
+http://www.jianshu.com/p/1da012a83b74
+
+利用TensorFlow实现排序和搜索算法
+
+https://mp.weixin.qq.com/s/oEqMjOTj8xpd3sg60ZUhqA
+
+TensorFlow的c++实践及各种坑
+
+https://mp.weixin.qq.com/s/-5RCRl9ztQ2dQmX00QvfvQ
+
+在Python和TensorFlow上构建Word2Vec词嵌入模型
+
+https://mp.weixin.qq.com/s/Nyjp0mZxcn04vLKjJXLSaw
+
+如何用TensorFlow在安卓设备上实现深度学习推断
+
+https://mp.weixin.qq.com/s/kEowgNPVS1nAGBPbzkatlQ
+
+如何构建高可读性和高可重用的TensorFlow模型
+
+https://mp.weixin.qq.com/s/O_IN39FBVPeD5fRYBsPuZQ
+
+用TensorFlow开发问答系统

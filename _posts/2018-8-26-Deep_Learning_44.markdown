@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十四）——三维处理, 视频目标分割, 手势识别, Spatial Transformer Networks
+title:  深度学习（四十四）——三维处理, 视频目标分割, 手势识别
 category: DL 
 ---
 
@@ -322,6 +322,10 @@ https://mp.weixin.qq.com/s/syZObdxjPv6jq3B_mgP9Sw
 
 拒绝“不可描述”！爱奇艺短视频软色情识别技术解析
 
+https://mp.weixin.qq.com/s/8YpyfdhDypSZOP3dQegQdQ
+
+谷歌大脑提出基于流的视频预测模型，可产生高质量随机预测结果
+
 # 手势识别
 
 https://zhuanlan.zhihu.com/p/26630215
@@ -355,31 +359,3 @@ https://mp.weixin.qq.com/s/mnPh8w3VuG9apprOkugbLA
 https://mp.weixin.qq.com/s/pUciYFjOKL3ea91fLCy0Yw
 
 基于OpenCV与tensorflow实现实时手势识别
-
-# Spatial Transformer Networks
-
-论文：
-
-《Spatial Transformer Networks》
-
-参考：
-
-http://www.cnblogs.com/neopenx/p/4851806.html
-
-Spatial Transformer Networks(空间变换神经网络)
-
-http://blog.csdn.net/shaoxiaohu1/article/details/51809605
-
-论文笔记：Spatial Transformer Networks
-
-http://blog.csdn.net/shaoxiaohu1/article/details/51809605
-
-Spatial Transformer Networks
-
-https://mp.weixin.qq.com/s/ciqQMezcB-oM24X8eQqTNg
-
-花式玩耍Spatial Transformation Networks
-
-https://mp.weixin.qq.com/s/4VE2lZeFf05AyLp_s3nTFQ
-
-理解Spatial Transformer Networks

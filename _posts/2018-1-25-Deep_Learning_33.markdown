@@ -131,6 +131,18 @@ Capsule的可解释性有很大提升，下图是Hinton论文中给出的示例�
 
 ![](/images/img2/capsule_6.png)
 
+![](/images/img2/duck_rabbit.gif)
+
+上面这张图，画的是鸭子还是兔子？
+
+自从1892年首次出现在一本德国杂志上之后，这张图就一直持续引发争议。有些人只能看到一只兔子，有些人只能看到一只鸭子，有些人两个都能看出来。
+
+为了搞清楚这件事，供职于BuzzFeed的数据科学家Max Woolf设计了一个更复杂的实验，他干脆让这张图旋转起来，倒是要看看，谷歌AI什么表现。
+
+同一张图片，由于位置不同，AI就产生了不同的判断。也有很多人想到了更多。
+
+传统的卷积神经网络CNN架构中有个弊端，就是缺乏可用的空间信息。
+
 ## 参考
 
 https://www.zhihu.com/question/67287444
@@ -232,19 +244,3 @@ https://jhui.github.io/2017/11/14/Matrix-Capsules-with-EM-routing-Capsule-Networ
 https://zhuanlan.zhihu.com/p/42864711
 
 胶囊网络到底是什么东东？
-
-https://github.com/freefuiiismyname/capsule-mrc
-
-基于capsule的观点型阅读理解模型
-
-https://mp.weixin.qq.com/s/cskdgsysD7R_FKChAKmlDg
-
-利用Capsule重构过程，Hinton等人实现对抗样本的自动检测
-
-https://mp.weixin.qq.com/s/7fBXMvT4eyZrKhPKQTAIZQ
-
-你听说过胶囊网络吗？
-
-https://mp.weixin.qq.com/s/F9SGZPZj6gup_nOVuDel6A
-
-与胶囊网络异曲同工：Bengio等提出四元数循环神经网络

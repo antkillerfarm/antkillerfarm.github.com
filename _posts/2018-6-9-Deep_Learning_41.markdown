@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十一）——迁移学习, Mask R-CNN
+title:  深度学习（四十一）——迁移学习, 深度哈希, Spatial Transformer Networks
 category: DL 
 ---
 
@@ -301,96 +301,72 @@ https://zhuanlan.zhihu.com/p/58514431
 
 Domain Adaptation：不用深度网络，如何处理源域和目标域异构问题？
 
-# Mask R-CNN
+https://mp.weixin.qq.com/s/U45X5kKMw_E4vfHfVmWZTA
 
-Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的NN。它是何恺明2017年的新作。
+FSAF：来自CMU的Single-Shot目标检测算法
+
+# 深度哈希
+
+https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg
+
+深度离散哈希算法，可用于图像检索！
+
+https://mp.weixin.qq.com/s/XUYJub0559wwQ9H1wA_SAg
+
+机器学习时代的哈希算法，将如何更高效地索引数据
+
+https://mp.weixin.qq.com/s/YVIvdMznb3oatIXqD5a5_A
+
+陈天奇等人提出AutoTVM：让AI来编译优化AI系统底层算子
+
+https://mp.weixin.qq.com/s/vFBlFAQLvDZP7IvwKoaPhA
+
+无问西东，只问哈希
+
+https://mp.weixin.qq.com/s/XAxuLg2i3q5_uKDo1wU_rA
+
+从哈希到卷积神经网络：高精度&低功耗
+
+https://mp.weixin.qq.com/s/i8iQtCC7ahXLY1a1wOacsA
+
+Science：最新发现哈希可能是大脑的通用计算原理
+
+https://mp.weixin.qq.com/s/ZOVWXNym5yHoo-MmpxXo0A
+
+自监督对抗哈希SSAH：当前最佳的跨模态检索框架
+
+https://mp.weixin.qq.com/s/VldzlYg5AfDRho8bsROL_g
+
+HashGAN:基于注意力机制的深度对抗哈希模型提升跨模态检索效果
+
+https://mp.weixin.qq.com/s/3Z2Zc8zTq2uiPyw7ZuuZfw
+
+解密美图大规模多媒体数据检索技术DeepHash
+
+# Spatial Transformer Networks
 
 论文：
 
-《Mask R-CNN》
-
-只有非官方的代码：
-
-Caffe版本：
-
-https://github.com/jasjeetIM/Mask-RCNN
-
-TensorFlow版本：
-
-https://github.com/hillox/TFMaskRCNN
-
-MXNet版本：
-
-https://github.com/TuSimple/mx-maskrcnn
-
-Pytorch版本：
-
-https://github.com/wannabeOG/Mask-RCNN
-
-![](/images/img2/mask_rcnn.png)
+《Spatial Transformer Networks》
 
 参考：
 
-https://zhuanlan.zhihu.com/p/25954683
+http://www.cnblogs.com/neopenx/p/4851806.html
 
-Mask R-CNN个人理解
+Spatial Transformer Networks(空间变换神经网络)
 
-https://mp.weixin.qq.com/s/E0P2B798pukbtRarWooUkg
+http://blog.csdn.net/shaoxiaohu1/article/details/51809605
 
-Mask R-CNN的Keras/TensorFlow/Pytorch代码实现
+论文笔记：Spatial Transformer Networks
 
-https://zhuanlan.zhihu.com/p/30967656
+http://blog.csdn.net/shaoxiaohu1/article/details/51809605
 
-从R-CNN到Mask R-CNN
+Spatial Transformer Networks
 
-http://zh.gluon.ai/chapter_computer-vision/object-detection.html
+https://mp.weixin.qq.com/s/ciqQMezcB-oM24X8eQqTNg
 
-使用卷积神经网络的物体检测
+花式玩耍Spatial Transformation Networks
 
-https://mp.weixin.qq.com/s/4BRwMEr6rFYvkmKXM7rYLg
+https://mp.weixin.qq.com/s/4VE2lZeFf05AyLp_s3nTFQ
 
-效果惊艳！FAIR提出人体姿势估计新模型，升级版Mask-RCNN
-
-https://mp.weixin.qq.com/s/UXzhMkGIwqek4zHVNPgRbA
-
-Mask-RCNN论文解读
-
-https://mp.weixin.qq.com/s/_ohsx7kzgU-szP-K9_Yv1w
-
-优于Mask R-CNN，港中文&腾讯优图提出PANet实例分割框架
-
-https://mp.weixin.qq.com/s/uJpVqRpWWaK2cY8fYGlRag
-
-先理解Mask R-CNN的工作原理，然后构建颜色填充器应用
-
-https://mp.weixin.qq.com/s/x_9klKK_hIiFV1fGhxZIVA
-
-Mask R-CNN神应用：像英剧《黑镜》一样屏蔽人像
-
-https://mp.weixin.qq.com/s/V6m1xBS2vZQ6VRlAg5zOSA
-
-干掉照片中那些讨厌的家伙！Mask R-CNN助你一键“除”人！
-
-https://mp.weixin.qq.com/s/48eIhnBdYzgEiV_wESHsJA
-
-如何使用Mask RCNN模型进行图像实体分割？
-
-https://mp.weixin.qq.com/s/G_2tuZlaxX5w-2c1DO8FwQ
-
-利用边缘监督信息加速Mask R-CNN实例分割训练
-
-https://mp.weixin.qq.com/s/Ug4ZEQWVF5UjhqWw4Kwb8A
-
-Mask R-CNN抢车位，快人一步！
-
-https://zhuanlan.zhihu.com/p/47579399
-
-R-CNN、Fast/Faster/Mask R-CNN、FCN、RFCN 、SSD原理简析
-
-https://mp.weixin.qq.com/s/CsEHuGz_fAq8eWpHRq7d6g
-
-性能超越何恺明Mask R-CNN！华科硕士生开源图像分割新方法
-
-https://mp.weixin.qq.com/s/xug0xKfc9RgJEUci1a_xog8
-
-实例分割的进阶三级跳：从 Mask R-CNN 到 Hybrid Task Cascade
+理解Spatial Transformer Networks

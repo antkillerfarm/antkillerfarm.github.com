@@ -126,6 +126,22 @@ https://mp.weixin.qq.com/s/MOtlA8lT4XZ0nsldqe9xeQ
 
 ## CV（续）
 
+https://mp.weixin.qq.com/s/jOjiAAK1byUx8ic011f33w
+
+2200万室内场景数据集，包含语义、全景、灯光等十余种效果
+
+https://mp.weixin.qq.com/s/aw5o-1Bwc4hQUatehFFx2A
+
+南京大学发布WebCaricature漫画人脸识别数据集
+
+https://mp.weixin.qq.com/s/deJ6dChES_WhYH8T05ruag
+
+腾讯AI实验室宣布开源多标签图像数据集ML-Images
+
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750713&idx=5&sn=678eef1122d35c048a5fca8f22fa12c9
+
+CIFAR-10+ImageNet=？CINIC-10！
+
 https://mp.weixin.qq.com/s/Kxnvv1i0nvkg0vUDBlx6MA
 
 向机器学习偏见开战：谷歌展示全球涂鸦数据集分析结果
@@ -365,31 +381,3 @@ tensorflow object detection API训练公开数据集Oxford-IIIT Pets Dataset
 https://mp.weixin.qq.com/s/8uDsaZjsiKXGea6M-w-RvA
 
 tensorflow object detection API使用之GPU训练实现宠物识别
-
-https://mp.weixin.qq.com/s/8I5Nvw4t2jT1NR9vIYT5XA
-
-深入理解TensorFlow中的tf.metrics算子
-
-https://mp.weixin.qq.com/s/aMarI-nyIvFqhtpJWQrNhQ
-
-谷歌推强化学习新框架“多巴胺“，基于TensorFlow，已开源
-
-https://mp.weixin.qq.com/s/ntHkMIef1o2-FF-AJf_bZQ
-
-三分钟训练眼球追踪术，AI就知道你在盯着哪个妹子——TensorFlow.js代码
-
-https://mp.weixin.qq.com/s/7rTmEBfh613SrNnTQvfSjw
-
-懒人福利：不写代码调优深度模型，谷歌开源的“What-If”了解一下
-
-https://mp.weixin.qq.com/s/eX3LWYiSH-KObH_7F_3QCA
-
-TensorFlow 1.11.0发布，一键多GPU
-
-https://mp.weixin.qq.com/s/316VVXLQfeIsKNk4ld-VRw
-
-TensorFlow语义分割套件开源了ECCV18旷视科技BiSeNet实时分割算法
-
-https://mp.weixin.qq.com/s/XI1J4ardEWKP4UQ4IXZGTQ
-
-TensorFlow Hub,给您带来全新的Web体验

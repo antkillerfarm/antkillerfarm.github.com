@@ -212,6 +212,10 @@ https://github.com/candlewill/Dialog_Corpus/blob/master/README.md
 
 用于对话系统的中英文语料
 
+https://mp.weixin.qq.com/s/6T7hNPNtWtBSXyno4MQ3jQ
+
+中文公开聊天语料库
+
 https://mp.weixin.qq.com/s/qh4evahPVjvZlzqan7RIKg
 
 囊括欧亚非大陆多种语言的25个平行语料库数据集
@@ -361,19 +365,3 @@ https://mp.weixin.qq.com/s/fR8-zODLNp24nlR5dJ85Nw
 https://mp.weixin.qq.com/s/d-fIQwMxHXTJvFWQUKHAvw
 
 我用5000万组数据分析了“猜画小歌”
-
-https://mp.weixin.qq.com/s/jOjiAAK1byUx8ic011f33w
-
-2200万室内场景数据集，包含语义、全景、灯光等十余种效果
-
-https://mp.weixin.qq.com/s/aw5o-1Bwc4hQUatehFFx2A
-
-南京大学发布WebCaricature漫画人脸识别数据集
-
-https://mp.weixin.qq.com/s/deJ6dChES_WhYH8T05ruag
-
-腾讯AI实验室宣布开源多标签图像数据集ML-Images
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750713&idx=5&sn=678eef1122d35c048a5fca8f22fa12c9
-
-CIFAR-10+ImageNet=？CINIC-10！

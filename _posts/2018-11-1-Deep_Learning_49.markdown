@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十九）——模型压缩与加速（2）
+title:  深度学习（四十九）——模型压缩与加速（2）, Mask R-CNN
 category: DL 
 ---
 
@@ -89,3 +89,97 @@ https://mp.weixin.qq.com/s/EW6jvf98ifBucVz74SfSIA
 https://mp.weixin.qq.com/s/FvR6loJ8KUxm7qwclestcQ
 
 专门为卷积神经网络设计的训练方法：RePr
+
+# Mask R-CNN
+
+Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的NN。它是何恺明2017年的新作。
+
+论文：
+
+《Mask R-CNN》
+
+只有非官方的代码：
+
+Caffe版本：
+
+https://github.com/jasjeetIM/Mask-RCNN
+
+TensorFlow版本：
+
+https://github.com/hillox/TFMaskRCNN
+
+MXNet版本：
+
+https://github.com/TuSimple/mx-maskrcnn
+
+Pytorch版本：
+
+https://github.com/wannabeOG/Mask-RCNN
+
+![](/images/img2/mask_rcnn.png)
+
+参考：
+
+https://zhuanlan.zhihu.com/p/25954683
+
+Mask R-CNN个人理解
+
+https://mp.weixin.qq.com/s/E0P2B798pukbtRarWooUkg
+
+Mask R-CNN的Keras/TensorFlow/Pytorch代码实现
+
+https://zhuanlan.zhihu.com/p/30967656
+
+从R-CNN到Mask R-CNN
+
+http://zh.gluon.ai/chapter_computer-vision/object-detection.html
+
+使用卷积神经网络的物体检测
+
+https://mp.weixin.qq.com/s/4BRwMEr6rFYvkmKXM7rYLg
+
+效果惊艳！FAIR提出人体姿势估计新模型，升级版Mask-RCNN
+
+https://mp.weixin.qq.com/s/UXzhMkGIwqek4zHVNPgRbA
+
+Mask-RCNN论文解读
+
+https://mp.weixin.qq.com/s/_ohsx7kzgU-szP-K9_Yv1w
+
+优于Mask R-CNN，港中文&腾讯优图提出PANet实例分割框架
+
+https://mp.weixin.qq.com/s/uJpVqRpWWaK2cY8fYGlRag
+
+先理解Mask R-CNN的工作原理，然后构建颜色填充器应用
+
+https://mp.weixin.qq.com/s/x_9klKK_hIiFV1fGhxZIVA
+
+Mask R-CNN神应用：像英剧《黑镜》一样屏蔽人像
+
+https://mp.weixin.qq.com/s/V6m1xBS2vZQ6VRlAg5zOSA
+
+干掉照片中那些讨厌的家伙！Mask R-CNN助你一键“除”人！
+
+https://mp.weixin.qq.com/s/48eIhnBdYzgEiV_wESHsJA
+
+如何使用Mask RCNN模型进行图像实体分割？
+
+https://mp.weixin.qq.com/s/G_2tuZlaxX5w-2c1DO8FwQ
+
+利用边缘监督信息加速Mask R-CNN实例分割训练
+
+https://mp.weixin.qq.com/s/Ug4ZEQWVF5UjhqWw4Kwb8A
+
+Mask R-CNN抢车位，快人一步！
+
+https://zhuanlan.zhihu.com/p/47579399
+
+R-CNN、Fast/Faster/Mask R-CNN、FCN、RFCN 、SSD原理简析
+
+https://mp.weixin.qq.com/s/CsEHuGz_fAq8eWpHRq7d6g
+
+性能超越何恺明Mask R-CNN！华科硕士生开源图像分割新方法
+
+https://mp.weixin.qq.com/s/xug0xKfc9RgJEUci1a_xog8
+
+实例分割的进阶三级跳：从 Mask R-CNN 到 Hybrid Task Cascade
