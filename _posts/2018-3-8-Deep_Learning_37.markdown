@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十七）——人脸检测/识别（2）
+title:  深度学习（三十七）——人脸检测/识别（2）, 多模态学习
 category: DL 
 ---
 
@@ -357,3 +357,33 @@ https://mp.weixin.qq.com/s/IS5iAPZeUrvvyWs29O8Ukg
 https://mp.weixin.qq.com/s/DEJ0z2CahZIrhTE3VXNVvg
 
 基于注意力机制学习的人脸幻构
+
+# 多模态学习
+
+https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw
+
+多模态学习研究进展综述
+
+https://mp.weixin.qq.com/s/vpBPkjuCebSWh5qPLYHCkw
+
+上海交大提出多模态框架“EmotionMeter”，更精准地识别人类情绪
+
+https://mp.weixin.qq.com/s/BBg04rDtiqU-XrWortufNA
+
+康奈尔&英伟达提出多模态无监督图像转换新方法
+
+http://mp.weixin.qq.com/s/khOINUyrNV3TFfgNRheH0A
+
+卷积神经网络压缩、多模态的语义分析研究
+
+https://mp.weixin.qq.com/s/ywU4L659iRcmIgmV6RtbXA
+
+DeepMind新研究连接听与看，实现“听声辨位”的多模态学习
+
+https://mp.weixin.qq.com/s/1qhcyTXttgKWlw-Oy556Tw
+
+TPAMI2019最新《多模态机器学习综述》
+
+https://mp.weixin.qq.com/s/BczgUuh2FIvP5MG9xh87wQ
+
+多模态多任务学习新论文

@@ -156,6 +156,10 @@ https://zhuanlan.zhihu.com/p/55787893
 
 亚马逊提出：用于人群计数的尺度感知注意力网络
 
+https://mp.weixin.qq.com/s/U-ICoZQWatyJmkPcnXNRbA
+
+最新最简易的迁移学习方法，人员再识别新模型
+
 # 人脸识别进阶
 
 https://mp.weixin.qq.com/s/-G94Mj-8972i2HtEcIZDpA
@@ -329,6 +333,10 @@ DeepID
 https://mp.weixin.qq.com/s/BV3xv8mH6K7dV1nik0X5aw
 
 PFLD：简单、快速、超高精度人脸特征点检测算法
+
+https://mp.weixin.qq.com/s/kH3-WUX4rc2SaLJcGzVLcQ
+
+如何检测极小人脸？试试超分辨率
 
 # Capsule
 

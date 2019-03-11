@@ -304,6 +304,10 @@ https://mp.weixin.qq.com/s/Lzt3LbO6lBbOebNV1d2pLQ
 
 迁移学习不好懂？这里有一个PyTorch项目帮你理解
 
+https://mp.weixin.qq.com/s/5HOA9Pmb3fjsfTVnFMdBIA
+
+新的PyTorch图神经网络库，比前辈快14倍
+
 # PaddlePaddle
 
 https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q
@@ -383,21 +387,3 @@ TensorFlow、MXNet、PyTorch等框架大都是面向图像、语音等领域的�
 https://mp.weixin.qq.com/s/kdCk_twY_czQo58y3x_yyA
 
 阿里深度学习框架开源了！无缝对接TensorFlow、PyTorch
-
-# ML参考资源
-
-https://mp.weixin.qq.com/s/G6-XbqCO5iuwGDen-r6aWg
-
-唐宏:基于概率主题模型的高分辨率遥感图像非监督语义分割
-
-https://mp.weixin.qq.com/s/21LVssq2ynMgp_x1lwSC9w
-
-基于稀疏自表示与模糊双C均值聚类的SAR图像分割
-
-https://mp.weixin.qq.com/s/Oi1yJty_guzTUbRGZ5MuEw
-
-使用高斯过程的因果推理：GP CaKe的基本思路
-
-https://mp.weixin.qq.com/s/vLvjo8Cso_bYEuW-AFoyiA
-
-南大周志华等人提出无组织恶意攻击检测算法UMA

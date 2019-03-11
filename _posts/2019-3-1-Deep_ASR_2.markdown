@@ -221,3 +221,7 @@ https://mp.weixin.qq.com/s/aUf8i3o7px2KcjI-3jFykg
 https://mp.weixin.qq.com/s/c-lQETCPQTztZjV4TYTsZA
 
 语音关键词检测方法综述
+
+https://mp.weixin.qq.com/s/iLNuBSwWQ13sc4XfNzPuHw
+
+RNN已老，TCN崛起！李飞飞团队提出口语语音识别新方法

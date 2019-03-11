@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十五）——Attention进阶, AutoDL, 多模态学习
+title:  深度学习（四十五）——Attention进阶, AutoDL
 category: DL 
 ---
 
@@ -145,6 +145,10 @@ https://mp.weixin.qq.com/s/MMIZGHTKM5FrvNE6ucQRYQ
 https://mp.weixin.qq.com/s/Q0Ft5bWTuiZUIQSTk7X6ZQ
 
 图解神经机器翻译中的注意力机制
+
+https://mp.weixin.qq.com/s/D7GQ8DRzss9ppP6pyAs1qA
+
+从0到1再读注意力机制
 
 # AutoDL
 
@@ -357,33 +361,3 @@ https://mp.weixin.qq.com/s/RDMb8YD3K_E06RxAgwwOnw
 https://mp.weixin.qq.com/s/IHYuRjSZTE0wqJJwf3wGmw
 
 机器学习论文笔记—如何利用高效的搜索算法来搜索网络的拓扑结构
-
-# 多模态学习
-
-https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw
-
-多模态学习研究进展综述
-
-https://mp.weixin.qq.com/s/vpBPkjuCebSWh5qPLYHCkw
-
-上海交大提出多模态框架“EmotionMeter”，更精准地识别人类情绪
-
-https://mp.weixin.qq.com/s/BBg04rDtiqU-XrWortufNA
-
-康奈尔&英伟达提出多模态无监督图像转换新方法
-
-http://mp.weixin.qq.com/s/khOINUyrNV3TFfgNRheH0A
-
-卷积神经网络压缩、多模态的语义分析研究
-
-https://mp.weixin.qq.com/s/ywU4L659iRcmIgmV6RtbXA
-
-DeepMind新研究连接听与看，实现“听声辨位”的多模态学习
-
-https://mp.weixin.qq.com/s/1qhcyTXttgKWlw-Oy556Tw
-
-TPAMI2019最新《多模态机器学习综述》
-
-https://mp.weixin.qq.com/s/BczgUuh2FIvP5MG9xh87wQ
-
-多模态多任务学习新论文

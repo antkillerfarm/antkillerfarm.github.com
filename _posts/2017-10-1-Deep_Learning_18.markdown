@@ -160,6 +160,10 @@ https://mp.weixin.qq.com/s/NJf5e25tvT_xKXLD7UY1AQ
 
 MySQL智能调度系统。这篇blog其实和MySQL关系不大，算是DL在负载均衡方面的应用吧。
 
+https://mp.weixin.qq.com/s/fzdK4YPTUgiW0D0aeH7WlQ
+
+用于跨模态检索的综合距离保持自编码器
+
 # 语义分割
 
 Semantic segmentation是图像理解的基石性技术，在自动驾驶系统（具体为街景识别与理解）、无人机应用（着陆点判断）以及穿戴式设备应用中举足轻重。

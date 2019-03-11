@@ -311,23 +311,3 @@ https://mp.weixin.qq.com/s/OyEIcS5o6kWUu2UzuWZi3g
 https://mp.weixin.qq.com/s/mWfZ4jfuby4myGfi6TW3wQ
 
 从超参数到架构，一文简述模型优化策略
-
-https://mp.weixin.qq.com/s/IxVMMu_7UL5zFsDCcYfzYA
-
-AutoML自动模型压缩再升级，MIT韩松团队利用强化学习全面超越手工调参
-
-https://mp.weixin.qq.com/s/fU-AeaPz-lHlg0CBgqnpZQ
-
-轻量化神经网络综述
-
-https://mp.weixin.qq.com/s/BMsvhXytSy2nWIsGOSOSBQ
-
-自动生成高效DNN，适用于边缘设备的生成合成工具FermiNets
-
-https://mp.weixin.qq.com/s/_JlaxwEYqdTTuS4hNSQTTw
-
-这么Deep且又轻量的Network，实时目标检测
-
-https://mp.weixin.qq.com/s/mFuxCl0Mzv5hmDFewWZkrw
-
-FAIR&MIT提出知识蒸馏新方法：数据集蒸馏

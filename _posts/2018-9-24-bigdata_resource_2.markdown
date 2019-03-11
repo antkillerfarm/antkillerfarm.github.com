@@ -340,6 +340,10 @@ https://github.com/wecatch/china_regions
 
 最全最新中国省，市，地区json及sql数据
 
+https://mp.weixin.qq.com/s/h38VZnInkuOjkgcEmsTtMg
+
+让机器帮你做行测题，UCLA朱松纯团队提出关系和类比视觉推理数据集RAVEN
+
 # TensorFlow
 
 https://mp.weixin.qq.com/s/OVWbxBNc4i0_5jgy06xS1A

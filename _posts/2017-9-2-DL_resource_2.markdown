@@ -92,6 +92,10 @@ https://mp.weixin.qq.com/s/87QkA36gXuEJeORVkR_ndQ
 
 CMU Russ教授《如何融合领域知识到深度学习中》
 
+https://mp.weixin.qq.com/s/gLRKHedbVX_K2XJW2eNuhQ
+
+如何增加深度学习模型的泛化能力
+
 ## 算法
 
 http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww

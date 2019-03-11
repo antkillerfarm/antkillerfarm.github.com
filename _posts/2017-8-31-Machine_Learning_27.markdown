@@ -208,6 +208,10 @@ https://mp.weixin.qq.com/s/5sNXmQbINIWMGjX5TYAPYw
 
 最优传输理论你理解了，传说中的推土机距离重新了解一下
 
+https://mp.weixin.qq.com/s/iwZrWYbppwStJlXESUufZQ
+
+想要算一算Wasserstein距离？这里有一份PyTorch实战
+
 # LSA
 
 ## 基本原理

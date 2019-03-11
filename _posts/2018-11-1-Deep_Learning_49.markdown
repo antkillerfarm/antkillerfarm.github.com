@@ -6,9 +6,29 @@ category: DL
 
 # 模型压缩与加速
 
+https://mp.weixin.qq.com/s/_JlaxwEYqdTTuS4hNSQTTw
+
+这么Deep且又轻量的Network，实时目标检测
+
+https://mp.weixin.qq.com/s/mFuxCl0Mzv5hmDFewWZkrw
+
+FAIR&MIT提出知识蒸馏新方法：数据集蒸馏
+
+https://mp.weixin.qq.com/s/IxVMMu_7UL5zFsDCcYfzYA
+
+AutoML自动模型压缩再升级，MIT韩松团队利用强化学习全面超越手工调参
+
+https://mp.weixin.qq.com/s/fU-AeaPz-lHlg0CBgqnpZQ
+
+轻量化神经网络综述
+
+https://mp.weixin.qq.com/s/BMsvhXytSy2nWIsGOSOSBQ
+
+自动生成高效DNN，适用于边缘设备的生成合成工具FermiNets
+
 https://mp.weixin.qq.com/s/nEMvoiqImd0RxrskIH7c9A
 
-仅17 KB、一万个权重的微型风格迁移网络！
+仅17KB、一万个权重的微型风格迁移网络！
 
 https://mp.weixin.qq.com/s/pc8fJx5StxnX9it2AVU5NA
 
