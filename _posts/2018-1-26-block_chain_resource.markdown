@@ -342,6 +342,18 @@ https://mp.weixin.qq.com/s/FohJ81sPT_Zk7s1qLuP1-A
 
 动态视觉传感器（DVS）：高级自动驾驶的“超眼”
 
+https://mp.weixin.qq.com/s/ya-CHw572C2nnk8XraEMqQ
+
+功率半导体器件现状及未来
+
+https://mp.weixin.qq.com/s/0K595c2GdhPrdWBgpvU-Gw
+
+超声波雷达在汽车上的应用
+
+https://mp.weixin.qq.com/s/ecqeQdOo3xUV-PvL_T48eA
+
+一文读懂三角法和TOF激光雷达
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/l4W7qmKJ4Pc-rlF-KvhrPA
@@ -383,30 +395,6 @@ https://mp.weixin.qq.com/s/tnkS6xtuv29A_TGlPUAxlQ
 https://mp.weixin.qq.com/s/0m5DuJzh92aYUgdiQ3PfIg
 
 数据竞赛大杀器之模型融合(stacking & blending)
-
-https://mp.weixin.qq.com/s/lJQprqGShGys3vfhYSxDWg
-
-机器学习在股票交易中难点分析
-
-https://mp.weixin.qq.com/s/lpNTdnfp2FnJ97EivhUv2g
-
-12种降维方法终极指南
-
-https://mp.weixin.qq.com/s/s2XpGne0sAqnuN-u6g5k1A
-
-资金流因子全面测试兼正交化方法详解
-
-https://mp.weixin.qq.com/s/oblwg01BUIJjVhBeHa9HQQ
-
-程序员分析了50万条拼多多商品数据，告诉你到底是消费升级还是降级！
-
-https://mp.weixin.qq.com/s/4HVkEnk6_hONWJYdi8L53g
-
-闲聊结构化预测（structured learning）
-
-https://mp.weixin.qq.com/s/GP_t_fhklpVNhC6J6i0YbA
-
-再聊聊自然语言处理中的结构化预测问题
 
 # 知名AI公司技术主页
 

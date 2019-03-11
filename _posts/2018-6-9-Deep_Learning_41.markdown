@@ -289,6 +289,10 @@ https://zhuanlan.zhihu.com/p/57656210
 
 Deep Domain Adaptation论文集(五)：基于数据重构的迁移方法
 
+https://zhuanlan.zhihu.com/p/57930557
+
+Deep Domain Adaptation论文集(六)：源域与目标域特征空间不一致的处理方法
+
 https://mp.weixin.qq.com/s/sVukyFF18IEjUOnoj09eUQ
 
 39页《迁移学习自然语言生成》

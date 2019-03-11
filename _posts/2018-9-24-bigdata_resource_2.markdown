@@ -244,6 +244,10 @@ https://mp.weixin.qq.com/s/3QD3KI4IwBQlnPPDpPBb2A
 
 更大的行人重识别测试集 Market-1501+500k
 
+https://mp.weixin.qq.com/s/bYaAYkTj_0OxpDcWsToBWw
+
+业内最大规模！美图联合清华推出教程类行为数据集COIN
+
 ## 推荐系统
 
 http://www.zanmel.com/2015/12/14/10-great-datasets-on-movies/

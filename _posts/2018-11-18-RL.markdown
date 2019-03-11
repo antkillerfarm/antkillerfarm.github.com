@@ -148,6 +148,8 @@ $$q_{\pi}(s; a) = E_{\pi} [G_t \mid  S_t = s; A_t = a]$$
 
 ![](/images/article/RL_3.png)
 
+比如，Actor-Critic（演员-评判家）方法：agent既有价值函数、也有策略函数。两者相互结合解决问题。
+
 ## 参考
 
 https://mp.weixin.qq.com/s/f6sq8cSaU1cuzt7jhsK8Ig

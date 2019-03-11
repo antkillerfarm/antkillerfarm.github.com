@@ -223,3 +223,29 @@ http://www.scalafx.org/
 sbt支持：
 
 `libraryDependencies += "org.scalafx" %% "scalafx" % "8.0.92-R10"`
+
+# ML参考资源+
+
+https://mp.weixin.qq.com/s/lJQprqGShGys3vfhYSxDWg
+
+机器学习在股票交易中难点分析
+
+https://mp.weixin.qq.com/s/lpNTdnfp2FnJ97EivhUv2g
+
+12种降维方法终极指南
+
+https://mp.weixin.qq.com/s/s2XpGne0sAqnuN-u6g5k1A
+
+资金流因子全面测试兼正交化方法详解
+
+https://mp.weixin.qq.com/s/oblwg01BUIJjVhBeHa9HQQ
+
+程序员分析了50万条拼多多商品数据，告诉你到底是消费升级还是降级！
+
+https://mp.weixin.qq.com/s/4HVkEnk6_hONWJYdi8L53g
+
+闲聊结构化预测（structured learning）
+
+https://mp.weixin.qq.com/s/GP_t_fhklpVNhC6J6i0YbA
+
+再聊聊自然语言处理中的结构化预测问题

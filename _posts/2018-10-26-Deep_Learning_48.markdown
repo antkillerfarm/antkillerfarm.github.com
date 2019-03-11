@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/1tohID6SM3weS476XU5okw
 
 全景分割：Attention-guided Unified Network
 
+https://mp.weixin.qq.com/s/ilQzQ-5RyiOYzS0RRMihLg
+
+语义分割原理与CNN架构变迁
+
 # 问答系统
 
 GA-Reader

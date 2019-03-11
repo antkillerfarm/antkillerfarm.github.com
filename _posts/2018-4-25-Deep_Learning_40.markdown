@@ -120,6 +120,10 @@ https://mp.weixin.qq.com/s/yp5gExPzpDiXaGk9oXEMVA
 
 最新综述：模型压缩与加速
 
+https://zhuanlan.zhihu.com/p/58805980
+
+深度学习的模型加速与模型裁剪方法
+
 https://zhuanlan.zhihu.com/p/24337627
 
 深度压缩之蒸馏模型

@@ -30,6 +30,14 @@ https://mp.weixin.qq.com/s/BUwu6R83klL3E5tI7TEX9A
 
 一文带你看懂自动驾驶
 
+https://mp.weixin.qq.com/s/4PPiwJJWPi4qn5mBwX6wDw
+
+ADAS处理器、芯片主流企业及相应技术梳理
+
+https://mp.weixin.qq.com/s/y0HnpWRUBLyEyqzWfOhkCw
+
+博世集团百年启示录
+
 ## 课程
 
 http://selfdrivingcars.mit.edu/
@@ -145,6 +153,8 @@ LIDAR：LIght Detection And Ranging
 LDW：lane departure warning，车道偏离警告系统
 
 LKS：lane keeping system，车道保持系统
+
+LKA：Lane Keeping Assist，车道保持辅助
 
 LCA：lane centering assist
 

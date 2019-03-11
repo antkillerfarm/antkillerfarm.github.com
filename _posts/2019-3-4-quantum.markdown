@@ -350,6 +350,22 @@ https://mp.weixin.qq.com/s/6Wj0Y4y30BVA75WrU4oZbQ
 
 SBNet: 提高自动驾驶系统的感知效率
 
+https://mp.weixin.qq.com/s/kqIAXs7A1GuXPUwSMLw7ZQ
+
+LKA系列（一）：LKA系统简介
+
+https://mp.weixin.qq.com/s/LzHFxqfyw3JSrTObpCLmzQ
+
+LKA系列（二）：LKA控制原理
+
+https://mp.weixin.qq.com/s/XJVyoQTDljO8F6GVthsxKw
+
+汽车安全气囊结构原理
+
+https://mp.weixin.qq.com/s/Gqffn_1kgP34MwthcCKH0Q
+
+基于机动LSTM的周围车辆多模态轨迹预测
+
 # AI-1000问
 
 这个是“有三AI”微信公众号下的栏目，特辑录如下。

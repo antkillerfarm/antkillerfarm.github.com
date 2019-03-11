@@ -170,6 +170,10 @@ https://mp.weixin.qq.com/s/3JzwA2HAzoWtE_j2UhZCSw
 
 Stereo R-CNN 3D目标检测
 
+https://zhuanlan.zhihu.com/p/58734240
+
+3D Object Detection Overview - 2019
+
 # 视频目标分割
 
 视频目标分割任务和语义分割有两个基本区别：

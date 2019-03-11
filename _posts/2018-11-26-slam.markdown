@@ -372,7 +372,7 @@ https://mp.weixin.qq.com/s/jl4DLZ5xwnW5_OsuLxXSUA
 
 《雷达基础知识》专题一：距离
 
-# ML参考资源+
+# ML参考资源
 
 https://mp.weixin.qq.com/s/WIx-yzbvgwSaKrRMIbgY2w
 
@@ -417,6 +417,10 @@ https://mp.weixin.qq.com/s/rDdpQDogQR1E6TMkG4j1sA
 https://mp.weixin.qq.com/s/X7aGCeUkLuuFbHrnK2TiMg
 
 啥是有限元？
+
+https://mp.weixin.qq.com/s/hPjf7t5j-kBrrEIhNGo8jQ
+
+从区域到边界（边界元）
 
 https://mp.weixin.qq.com/s/mZlJw3gKhc988n5JpN135g
 
