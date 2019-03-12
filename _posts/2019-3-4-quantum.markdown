@@ -366,6 +366,10 @@ https://mp.weixin.qq.com/s/Gqffn_1kgP34MwthcCKH0Q
 
 基于机动LSTM的周围车辆多模态轨迹预测
 
+https://zhuanlan.zhihu.com/p/58980251
+
+基于摄像头的车道线检测方法一览
+
 # AI-1000问
 
 这个是“有三AI”微信公众号下的栏目，特辑录如下。

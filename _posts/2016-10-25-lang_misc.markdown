@@ -176,6 +176,10 @@ https://mp.weixin.qq.com/s/_d_-qg-mY3QLSxfACsNBJw
 
 Golang之不可重入函数实现
 
+https://mp.weixin.qq.com/s/3jmMexGYY4ww_urSZ36vVQ
+
+图解Go内存分配器
+
 # Lua
 
 Lua的包管理工具叫做LuaRocks。官网：

@@ -178,9 +178,13 @@ https://mp.weixin.qq.com/s/KjQ5BTGd92Y0Mqzk1A5JYg
 
 ## 参考
 
+https://zhuanlan.zhihu.com/p/58971347
+
+深度学习的芯片加速器
+
 https://cloud.tencent.com/community/article/244743
 
-深度学习的异构加速技术（一）：AI 需要一个多大的“心脏”？
+深度学习的异构加速技术（一）：AI需要一个多大的“心脏”？
 
 https://cloud.tencent.com/community/article/581797
 

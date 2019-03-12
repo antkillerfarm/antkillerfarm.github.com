@@ -132,7 +132,11 @@ https://mp.weixin.qq.com/s/0bL1wSl5FcIS08MsDdR8hg
 
 https://mp.weixin.qq.com/s/OENpLzzTPilHJz7wvH9-Fw
 
-OpenCV4.0 灰度图像彩色化
+OpenCV 4.0灰度图像彩色化
+
+https://mp.weixin.qq.com/s/-G6XW0vUlFsGFSyEBNnjQQ
+
+OpenCV实现年龄与性别预测
 
 # Dlib
 
