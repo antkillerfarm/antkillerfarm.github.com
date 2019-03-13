@@ -234,6 +234,10 @@ https://mp.weixin.qq.com/s/ilQzQ-5RyiOYzS0RRMihLg
 
 语义分割原理与CNN架构变迁
 
+https://zhuanlan.zhihu.com/p/59141570
+
+漫谈全景分割
+
 # 问答系统
 
 GA-Reader

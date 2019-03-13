@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十二）——VDSR, ESPCN, FSRCNN, VESPCN, SRGAN, DemosaicNet, MemNet
+title:  深度学习（二十二）——VDSR, ESPCN, FSRCNN, VESPCN, SRGAN, DemosaicNet
 category: DL 
 ---
 
@@ -187,9 +187,17 @@ https://mp.weixin.qq.com/s/YPdIfrCQrWGYqtREIl3OaA
 
 SRGAN With WGAN：让超分辨率算法训练更稳定
 
+https://mp.weixin.qq.com/s/x1teE6tKZpump_N2-u-jUg
+
+SRGAN-超分辨率图像复原
+
 https://mp.weixin.qq.com/s/zw72I9FTiKq3ZA4gcd5K3A
 
 ESRGAN：基于GAN的增强超分辨率方法
+
+https://mp.weixin.qq.com/s/47NVJGaB60S5Soeg5s7K7g
+
+ESRGAN-进击的超分辨率复原
 
 # DemosaicNet
 
@@ -226,30 +234,3 @@ DemosaicNet的设计借鉴了ResNet的Skip Connection的方案，只不过使用
 2.将出错的mine hard case，进行retrain，可以有效的提升模型的效果。
 
 ![](/images/img2/Demosaic_3.png)
-
-# MemNet
-
-MemNet是南京理工大学的作品。
-
-论文：
-
-《MemNet: A Persistent Memory Network for Image Restoration》
-
-代码：
-
-https://github.com/tyshiwo/MemNet
-
-![](/images/img2/MemNet.png)
-
-![](/images/img2/MemNet_2.png)
-
-![](/images/img2/MemNet_3.png)
-
-没啥好讲的，无非RNN和Resnet在原理上是等价的而已。结构上和DRCN几乎一样，不知道谁抄谁。。。
-
-参考：
-
-https://mp.weixin.qq.com/s/KxQ-GRnEYEdmS2H-DHIHOg
-
-南京理工大学ICCV 2017论文：图像超分辨率模型MemNet
-

@@ -38,6 +38,8 @@ https://mp.weixin.qq.com/s/y0HnpWRUBLyEyqzWfOhkCw
 
 博世集团百年启示录
 
+Never forget your humanity, and respect human dignity in your dealings with others.---Robert Bosch
+
 ## 课程
 
 http://selfdrivingcars.mit.edu/

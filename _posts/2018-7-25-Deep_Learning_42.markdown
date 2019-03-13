@@ -160,6 +160,10 @@ https://mp.weixin.qq.com/s/U-ICoZQWatyJmkPcnXNRbA
 
 最新最简易的迁移学习方法，人员再识别新模型
 
+https://mp.weixin.qq.com/s/ajpxP3b5nw2AC393uBypvA
+
+西工大开源拥挤人群数据集生成工具，大幅提升算法精度
+
 # 人脸识别进阶
 
 https://mp.weixin.qq.com/s/-G94Mj-8972i2HtEcIZDpA

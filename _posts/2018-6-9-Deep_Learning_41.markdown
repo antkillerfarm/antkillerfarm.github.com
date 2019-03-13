@@ -309,6 +309,10 @@ https://mp.weixin.qq.com/s/U45X5kKMw_E4vfHfVmWZTA
 
 FSAF：来自CMU的Single-Shot目标检测算法
 
+https://mp.weixin.qq.com/s/nIV7n8o7t2F3j0XFr9v-vg
+
+迁移自适应学习最新综述
+
 # 深度哈希
 
 https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg

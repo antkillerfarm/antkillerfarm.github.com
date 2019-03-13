@@ -382,6 +382,10 @@ https://zhuanlan.zhihu.com/p/59089908
 
 自动驾驶中的规划控制概述
 
+https://mp.weixin.qq.com/s/eOxle3q_QgejlX10kc30Rg
+
+Apollo无人车自定位技术入门
+
 # AI-1000问
 
 这个是“有三AI”微信公众号下的栏目，特辑录如下。
