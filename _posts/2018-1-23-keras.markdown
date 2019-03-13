@@ -110,6 +110,10 @@ https://kexue.fm/archives/5765
 
 让Keras更酷一些！Keras模型杂谈
 
+https://mp.weixin.qq.com/s/4Nz2e_vNYgq_y01JFneSfw
+
+“让Keras更酷一些！”：分层的学习率和自由的梯度
+
 https://mp.weixin.qq.com/s/H-oAETObn0SLUxK8--xudg
 
 Keras+OpenAI强化学习实践：行为-评判模型

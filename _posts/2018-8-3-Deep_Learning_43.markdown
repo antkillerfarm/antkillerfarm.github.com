@@ -339,3 +339,7 @@ https://mp.weixin.qq.com/s/-iPQBni4dWvdARAy9_T32g
 https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
 
 谷歌提出多图像抠图算法，并弥补水印技术的一致性漏洞
+
+https://mp.weixin.qq.com/s/zvEIUJpgrjSM9-TLSzr3sQ
+
+为什么说GAN很快就要替代现有摄影技术了？

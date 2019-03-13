@@ -72,6 +72,10 @@ https://mp.weixin.qq.com/s/xd2Xw093Wp7O7yQLZHSL4Q
 
 一文学会统计学中的显著性概念
 
+https://mp.weixin.qq.com/s/9-sWv5QDcNYSSYOfuEIcQg
+
+“假设”家族大起底！如何正确区分科学假设、统计假设和机器学习假设？
+
 ## KS检验
 
 Kolmogorov–Smirnov test用于对样本是否属于某种分布进行假设检验。

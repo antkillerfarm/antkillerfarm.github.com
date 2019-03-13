@@ -314,6 +314,10 @@ https://mp.weixin.qq.com/s/vjpMr3TsF3Lui8Q0IstQxw
 
 浏览器上跑：TensorFlow发布实时人物分割模型，秒速25帧，24个部位
 
+https://mp.weixin.qq.com/s/-BblgnvPLuqpYM8PZ7PQCQ
+
+三行代码实时追踪你的手，只要有浏览器就够了
+
 ## Eager Execution
 
 TensorFlow的Eager Execution可立即评估操作，无需构建图：操作会返回具体的值，而不是构建以后再运行的计算图。这也就是所谓的动态图计算的概念。
@@ -393,25 +397,3 @@ tf.data API，让你轻松处理数据
 https://mp.weixin.qq.com/s/mjUnrPBPBuY6XKXkUymX-w
 
 实例介绍TensorFlow的输入流水线
-
-## TensorFlow Probability
-
-TensorFlow Probability是一个概率编程工具包。
-
-官网：
-
-https://tensorflow.google.cn/probability/
-
-参考：
-
-https://mp.weixin.qq.com/s/NPuYanaUnaX4mYbaNbNNSQ
-
-概率编程工具：TensorFlow Probability官方简介
-
-https://mp.weixin.qq.com/s/cV-5W4YWC9f9wsoNX5fIXA
-
-使用TensorFlow Probability对金融模型中的误差进行介绍性分析
-
-https://mp.weixin.qq.com/s/cxC3SarlBBPTwIxQZ4AG_g
-
-快速上手TensorFlow Probability内置概率编程教材

@@ -345,3 +345,7 @@ https://mp.weixin.qq.com/s/F_GsfAJRFJ_o8PETqUL35g
 https://mp.weixin.qq.com/s/6wPtb9Qdhr9FiMk15xrUsQ
 
 强化跨模态匹配和自监督模仿学习
+
+https://mp.weixin.qq.com/s/lU3_ONAIGDUv_AVv2Xn14w
+
+仅需2小时学习，基于模型的强化学习方法可以在Atari上实现人类水平

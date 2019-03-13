@@ -6,6 +6,28 @@ category: AI
 
 # TensorFlow
 
+## TensorFlow Probability
+
+TensorFlow Probability是一个概率编程工具包。
+
+官网：
+
+https://tensorflow.google.cn/probability/
+
+参考：
+
+https://mp.weixin.qq.com/s/NPuYanaUnaX4mYbaNbNNSQ
+
+概率编程工具：TensorFlow Probability官方简介
+
+https://mp.weixin.qq.com/s/cV-5W4YWC9f9wsoNX5fIXA
+
+使用TensorFlow Probability对金融模型中的误差进行介绍性分析
+
+https://mp.weixin.qq.com/s/cxC3SarlBBPTwIxQZ4AG_g
+
+快速上手TensorFlow Probability内置概率编程教材
+
 ## TensorFlow Federated
 
 TFF是一个开源框架，用于试验针对分散式数据的机器学习和其他计算。它采用的是一种名为联合学习(FL)的方法，许多参与的客户端能够训练共享的ML模型，同时将数据保存在本地。
@@ -379,23 +401,3 @@ https://mp.weixin.qq.com/s/rMYjsIgFNvv47F4YZjY8SA
 https://zhuanlan.zhihu.com/p/30751039
 
 TensorFlow全新的数据读取方式：Dataset API入门教程
-
-https://mp.weixin.qq.com/s/8Hrq_z8s_5ms6Q_6OOaU-g
-
-如何使用TensorFlow和自编码器模型生成手写数字
-
-https://mp.weixin.qq.com/s/knw7yuUxHe-qeCLfj20onw
-
-Bayesian GAN的TensorFlow实现
-
-https://mp.weixin.qq.com/s/Sxui9CvdGocIxVG2FM4JtQ
-
-基于tensorflow使用CNN-RNN进行中文文本分类！
-
-https://mp.weixin.qq.com/s/X7ISLRMy5cddpmO5mev4MA
-
-自创数据集，使用TensorFlow预测股票入门
-
-https://mp.weixin.qq.com/s/65HiEwCyzeA_d9flPBcpLQ
-
-谷歌正式发布TensorFlowLite，半监督跨平台快速训练ML模型

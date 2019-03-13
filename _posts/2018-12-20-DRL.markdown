@@ -140,6 +140,10 @@ https://simoninithomas.github.io/Deep_reinforcement_learning_Course/
 
 老外写的简易深度强化学习入门
 
+https://mp.weixin.qq.com/s/nSfvhr096aTeOHxDHy0NeA
+
+434页《Python强化学习实用指南》
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》

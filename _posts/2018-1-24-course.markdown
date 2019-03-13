@@ -417,3 +417,7 @@ https://github.com/mbinary/USTC-CS-Courses-Resource
 https://mp.weixin.qq.com/s/iQpERylxzfQ0P51AQBj8bA
 
 概率论导论-哈佛和斯坦福大学合著630页新书
+
+https://people.csail.mit.edu/madry/6.883/
+
+6.883 Science of Deep Learning: Bridging Theory and Practice

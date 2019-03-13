@@ -292,7 +292,7 @@ https://mp.weixin.qq.com/s/hRH7hVsaQBqf0vhD_BqBgg
 
 五大深度学习框架三类神经网络全面测评
 
-# TensorFlow+
+# TensorFlow
 
 https://mp.weixin.qq.com/s/DAV3TDI4JYr0sXqTGU6t2A
 
@@ -361,3 +361,7 @@ https://mp.weixin.qq.com/s/kEowgNPVS1nAGBPbzkatlQ
 https://mp.weixin.qq.com/s/O_IN39FBVPeD5fRYBsPuZQ
 
 用TensorFlow开发问答系统
+
+https://mp.weixin.qq.com/s/8Hrq_z8s_5ms6Q_6OOaU-g
+
+如何使用TensorFlow和自编码器模型生成手写数字

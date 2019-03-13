@@ -252,6 +252,10 @@ https://mp.weixin.qq.com/s/-n2Sujgg3vdQXJOrCgQRkw
 
 浅析搜狗AI主播背后的核心技术
 
+https://mp.weixin.qq.com/s/jjQMnrGGTdui9uc7GGKpsg
+
+Kaggle座头鲸识别赛，TOP10团队的解决方案分享
+
 ## AI与安全
 
 https://mp.weixin.qq.com/s/jBE4gP3O0qVJ50G49Q_xmQ

@@ -266,3 +266,7 @@ https://mp.weixin.qq.com/s/s4ew7LYgnC9Z3kVFsjcaXg
 https://mp.weixin.qq.com/s/zTB59Fg_JFg9ZZPRlq9txA
 
 不使用残差连接，ICML新研究靠初始化训练上万层标准CNN
+
+https://mp.weixin.qq.com/s/_WCVvM6sPpsWD8NS8etEKA
+
+京东AI研究院提出 ScratchDet：随机初始化训练SSD目标检测器

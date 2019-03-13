@@ -370,6 +370,18 @@ https://zhuanlan.zhihu.com/p/58980251
 
 基于摄像头的车道线检测方法一览
 
+https://mp.weixin.qq.com/s/WbTtBjeUmBeS3OQgaFG4eA
+
+Apollo控制算法之LQR
+
+https://mp.weixin.qq.com/s/G3Plo1Ogcx3s6nz_rdeKtA
+
+Apollo控制算法之汽车动力学模型
+
+https://zhuanlan.zhihu.com/p/59089908
+
+自动驾驶中的规划控制概述
+
 # AI-1000问
 
 这个是“有三AI”微信公众号下的栏目，特辑录如下。

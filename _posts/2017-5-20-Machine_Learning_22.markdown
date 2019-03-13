@@ -58,6 +58,10 @@ https://mp.weixin.qq.com/s/VNPX5BADo4EJkIp1yWGoag
 
 斯坦福学者提出GIoU，目标检测任务的新Loss
 
+https://mp.weixin.qq.com/s/piYyhPbA6kAXuSE5yHfQ1g
+
+人脸识别损失函数综述
+
 ## 参考
 
 https://mp.weixin.qq.com/s/gw3hoDSaojVQUiD6YsMabA
