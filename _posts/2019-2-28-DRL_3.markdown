@@ -6,6 +6,26 @@ category: RL
 
 # 参考资源
 
+https://mp.weixin.qq.com/s/K2DW_ntSWrlySpxgorF9dA
+
+Python强化学习实战，Anaconda公司的高级数据科学家讲解
+
+https://zhuanlan.zhihu.com/p/32089849
+
+概要：NIPS 2017 Deep Learning for Robotics Keynote
+
+https://mp.weixin.qq.com/s/CCQOHRCAolsorm8FEPdjoQ
+
+什么时候强化学习未必好用？
+
+https://mp.weixin.qq.com/s/aVWHlwOmNIqOlu3025_RXQ
+
+DeepMind提出多任务强化学习新方法Distral
+
+https://mp.weixin.qq.com/s/gFHbLF-q91sddMAX1CRbEQ
+
+俞扬：“审时度势”的高效强化学习
+
 https://mp.weixin.qq.com/s/lstCIiNs_qA6k7GCYUBv2w
 
 阿尔伯塔大学提出新型多步强化学习方法，结合已有TD算法实现更好性能
@@ -342,10 +362,3 @@ https://mp.weixin.qq.com/s/F_GsfAJRFJ_o8PETqUL35g
 
 谷歌大脑AI飞速解锁雅达利，训练不用两小时：预测能力“前所未有”
 
-https://mp.weixin.qq.com/s/6wPtb9Qdhr9FiMk15xrUsQ
-
-强化跨模态匹配和自监督模仿学习
-
-https://mp.weixin.qq.com/s/lU3_ONAIGDUv_AVv2Xn14w
-
-仅需2小时学习，基于模型的强化学习方法可以在Atari上实现人类水平

@@ -55,3 +55,13 @@ https://mp.weixin.qq.com/s/naq73D27vsCOUBperKto8A
 https://mp.weixin.qq.com/s/LNNqp2KsEAljG26hY43mUw
 
 ICML2018 模仿学习教程
+
+# 深度强化参考资源
+
+https://mp.weixin.qq.com/s/6wPtb9Qdhr9FiMk15xrUsQ
+
+强化跨模态匹配和自监督模仿学习
+
+https://mp.weixin.qq.com/s/lU3_ONAIGDUv_AVv2Xn14w
+
+仅需2小时学习，基于模型的强化学习方法可以在Atari上实现人类水平

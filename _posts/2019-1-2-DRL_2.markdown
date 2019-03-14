@@ -4,6 +4,18 @@ title:  深度强化学习（二）——AlphaGo, AlphaStar, 参考资源（1）
 category: RL 
 ---
 
+# reward modeling
+
+![](/images/img2/reward_modeling.jpg)
+
+训练一个奖励模型，其中包含来自用户的反馈，从而捕捉他们的意图。与此同时，我们通过强化学习训练一个策略，使奖励模型的奖励最大化。换句话说，我们把学习做什么(奖励模型)和学习怎么做(策略)区分开来。
+
+参考：
+
+https://mp.weixin.qq.com/s/4yGQtHtMqWlaB7MAsr8T_g
+
+DeepMind重磅论文：通过奖励模型，让AI按照人类意图行事
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：
@@ -363,23 +375,3 @@ https://mp.weixin.qq.com/s/dbtdNsT3nvLt4UKsrNsn_Q
 https://mp.weixin.qq.com/s/K-z_dX2-NepkEHbr45QlvQ
 
 微软研究院开源项目TextWorld：可用于强化学习训练的文本游戏
-
-https://mp.weixin.qq.com/s/K2DW_ntSWrlySpxgorF9dA
-
-Python强化学习实战，Anaconda公司的高级数据科学家讲解
-
-https://zhuanlan.zhihu.com/p/32089849
-
-概要：NIPS 2017 Deep Learning for Robotics Keynote
-
-https://mp.weixin.qq.com/s/CCQOHRCAolsorm8FEPdjoQ
-
-什么时候强化学习未必好用？
-
-https://mp.weixin.qq.com/s/aVWHlwOmNIqOlu3025_RXQ
-
-DeepMind提出多任务强化学习新方法Distral
-
-https://mp.weixin.qq.com/s/gFHbLF-q91sddMAX1CRbEQ
-
-俞扬：“审时度势”的高效强化学习

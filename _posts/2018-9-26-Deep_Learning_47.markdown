@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十七）——深度图像压缩, 深度贝叶斯学习
+title:  深度学习（四十七）——深度图像压缩, 深度贝叶斯学习, Spiking Neuron Networks
 category: DL 
 ---
 
@@ -89,3 +89,43 @@ https://mp.weixin.qq.com/s/7mwJpQFWWXJ3dvTAwDFI7Q
 https://mp.weixin.qq.com/s/2LkpuchuHs82Sxs5rD8bWA
 
 《深度贝叶斯与序列学习》，279页PPT带你知晓深度贝叶斯序列模型在NLP最新进展
+
+# Spiking Neuron Networks
+
+除了基于BP算法的NN之外，Spiking Neuron Networks也是一大类NN。Spiking NN和人脑结构更相似，功耗也更小，但是相关训练和数据量化的算法尚不成熟，属于潜力股。
+
+![](/images/img2/BrainChip_Fig2.gif)
+
+参考：
+
+https://homepages.cwi.nl/~sbohte/publication/paugam_moisy_bohte_SNNChapter.pdf
+
+Computing with Spiking Neuron Networks
+
+https://mp.weixin.qq.com/s/6dpKSaLFVo-ge4gtbG8GQg
+
+简述脉冲神经网络SNN：下一代神经网络
+
+https://mp.weixin.qq.com/s/0n50YO1jIv_mxqe0EeS6kw
+
+综述AI未来：神经科学启发的类脑计算
+
+https://mp.weixin.qq.com/s/5KA7jtlRmnXxijGQhU1k4A
+
+DeepMind哈萨比斯狂推的神经科学，入门需要看什么书？
+
+https://mp.weixin.qq.com/s/TWdeHVCgEf54STvdA1QUPg
+
+DeepMind哈萨比斯长文：伟大的AI离不开神经科学
+
+https://mp.weixin.qq.com/s/8ibcyvyBLYArAMhQElqRzg
+
+Cell研究揭示生物神经元强大新特性，是时候设计更复杂的神经网络了！
+
+https://mp.weixin.qq.com/s/cb6JBlb11xW0Xw0RWI4vFA
+
+浙大&川大提出脉冲版ResNet：继承ResNet优势，实现当前最佳
+
+https://mp.weixin.qq.com/s/yaAuVpuhSGabOswKnv9q5Q
+
+脉冲神经网络与小样本学习

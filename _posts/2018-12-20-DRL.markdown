@@ -254,6 +254,20 @@ https://mp.weixin.qq.com/s/xSODAGf3QcJ3A9oq6xP11A
 
 真的超越了波士顿动力！深度强化学习打造的ANYmal登上Science子刊
 
+此外，还有一些论文：
+
+《Learning to Drive in a Day》
+
+参考：
+
+https://zhuanlan.zhihu.com/p/59197798
+
+那些个端到端的自动驾驶研发系统
+
+https://mp.weixin.qq.com/s/yU-6r-7l50y5msw8gUWnUQ
+
+美团技术部解析：无人车端到端驾驶模型概述
+
 # Deep Q-learning Network
 
 Deep Q-learning Network是DL在RL领域的开山之作。它的思想主要来自于Deepmind的两篇论文：
@@ -357,15 +371,3 @@ https://mp.weixin.qq.com/s/9ZvaZQ1yumhr75okBxNyeA
 https://mp.weixin.qq.com/s/QkRdv0xMoqwaXsNAMAHR0A
 
 一图尽展视频游戏AI技术，DQN无愧众算法之鼻祖
-
-# reward modeling
-
-![](/images/img2/reward_modeling.jpg)
-
-训练一个奖励模型，其中包含来自用户的反馈，从而捕捉他们的意图。与此同时，我们通过强化学习训练一个策略，使奖励模型的奖励最大化。换句话说，我们把学习做什么(奖励模型)和学习怎么做(策略)区分开来。
-
-参考：
-
-https://mp.weixin.qq.com/s/4yGQtHtMqWlaB7MAsr8T_g
-
-DeepMind重磅论文：通过奖励模型，让AI按照人类意图行事

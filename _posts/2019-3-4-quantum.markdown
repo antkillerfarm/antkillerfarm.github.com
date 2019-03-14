@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  量子计算, 机器人/无人驾驶参考资源（二）
+title:  量子计算, 遗传算法 & 进化算法, 机器人/无人驾驶参考资源（二）
 category: resource 
 ---
 
@@ -78,7 +78,7 @@ https://mp.weixin.qq.com/s/egpZl9witWLiP17KSjq2jg
 
 姚期智院士亲自讲授，一文读懂量子计算
 
-## 遗传算法 & 进化算法
+# 遗传算法 & 进化算法
 
 http://blog.csdn.net/u010945683/article/details/40987331
 

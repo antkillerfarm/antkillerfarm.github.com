@@ -268,9 +268,13 @@ https://mp.weixin.qq.com/s/YLhECwwig9f21zk1-PNiTw
 
 25篇车辆检测与分类DL文章读懂自动驾驶
 
-https://mp.weixin.qq.com/s/KTC0j9Bt4L-diQ2M_HAqxg
+https://mp.weixin.qq.com/s/cqzk7iHD8sJGLnIhkTgN3w
 
-自动驾驶最新综述论文
+一文读懂全球自动驾驶研究现状
+
+https://mp.weixin.qq.com/s/3lgOxQm07nFpxWauT8b2ow
+
+值得收藏，自动驾驶技术与实例最全解析！
 
 https://mp.weixin.qq.com/s/qyZS6ufN6f4dQRdG9diP0A
 

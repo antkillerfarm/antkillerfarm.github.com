@@ -354,6 +354,10 @@ https://mp.weixin.qq.com/s/ecqeQdOo3xUV-PvL_T48eA
 
 一文读懂三角法和TOF激光雷达
 
+https://mp.weixin.qq.com/s/j0-Lj8lOyDP0RArB7NzUNw
+
+特斯拉的整车传感器配置方案
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/l4W7qmKJ4Pc-rlF-KvhrPA
