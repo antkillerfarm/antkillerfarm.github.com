@@ -372,6 +372,10 @@ https://mp.weixin.qq.com/s/L227SZXQPinNOkKJjwr58w
 
 85页《基于神经方法的人机对话系统》，微软+谷歌出品
 
+https://mp.weixin.qq.com/s/_R9LUJhAb0eDCs14BJsoDA
+
+平安人寿资深算法工程师谢舒翼：智能问答系统探索与实践
+
 # AI前沿
 
 人工智能前沿7大热点：

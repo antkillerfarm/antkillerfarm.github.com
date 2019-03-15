@@ -357,3 +357,7 @@ AI芯片0.5与2.0
 https://mp.weixin.qq.com/s/XDwTI-gnnFMLjVBbOGKL9w
 
 清华大学团队研制高能效通用神经网络处理器芯片STICKER-T
+
+https://mp.weixin.qq.com/s/xbHP1RFn7F7BbimxgWaKqg
+
+Facebook把服务27亿人的AI硬件系统开源了

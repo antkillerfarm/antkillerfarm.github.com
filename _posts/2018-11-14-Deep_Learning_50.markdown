@@ -178,6 +178,10 @@ https://mp.weixin.qq.com/s/bPieF6CNvM4N1Njx6OHNwg
 
 谷歌大脑：像BigGAN那样生成高清大图不一定需要大量图像标签
 
+https://mp.weixin.qq.com/s/jByvPPrlN7zIOPXON4fZJw
+
+生成对抗网络也需要注意力机制
+
 # 深度推理
 
 https://mp.weixin.qq.com/s/rE96BprEO1ZatVOQeO-4YA

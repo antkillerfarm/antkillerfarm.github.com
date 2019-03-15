@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  Android研究
+title:  Android研究（一）
 category: technology 
 ---
 
-# JNI
+# Android研究
+
+## JNI
 
 (1)Java call Native C
 
@@ -48,7 +50,7 @@ Android由于提供的是Java接口，所以这里最常见的情况是
 
 使用javah生成的.h文件中，函数的声明在Java中声明的参数之前，还有两个参数JNIEnv和jobject。env是调用Java方法的接口，它的功能非常多。jobject传入的是调用Native C的那个Java对象实例的引用。jobject指针不能在多个线程中共享. 就是说,不能直接在保存一个线程中的jobject指针到全局变量中,然后在另外一个线程中使用它.幸运的是,可以用`gs_object=env->NewGlobalRef(obj);`来将传入的obj保存到gs_object中，从而其他线程可以使用这个gs_object来操纵那个java对象了。
 
-# 在Android上编译C程序
+## 在Android上编译C程序
 
 (1)风临左岸在这方面颇有建树，以下是他的blog：
 
@@ -90,7 +92,7 @@ http://source.android.com/source/download.html
 
 http://www.j2medev.com/android/native/200901/20090119222445.html
 
-# Android JNI
+## Android JNI
 
 正统的做法可以参照以下网页：
 
@@ -104,7 +106,7 @@ http://www.j2medev.com/android/native/200901/20090119222617.html
 
 这里需要指出一点，普通的JNI调用使用System.loadLibrary加载动态库，而Android平台要使用System.load加载动态库。这就是很多人套用PC上的语法，但却在Android上失败的原因。
 
-# Activity生命周期初探
+## Activity生命周期初探
 
 Android SDK上关于Activity生命周期的图，无疑是权威的，但相关文档中并没有Android手机功能键对Activity生命周期所造成的改变的内容。
 
@@ -134,11 +136,11 @@ onPause->onStop->onDestroy
 
 onPause
 
-# 添加新的View
+## 添加新的View
 
 利用向导生成的代码中只有一个View，相应的UI布局文件在res/layout/main.xml，找了半天也没找到如何快捷的添加View，于是只好自己手动添加相关的xml文件，好在eclipse可以定制添加的xml文件的模板，于是把main.xml复制一下，做成模板，以后添加就方便了。
 
-# 编译Froyo（部分转贴）
+## 编译Froyo（部分转贴）
 
 ****
 说点题外话，这个Blog本来打算完全写些自己的原创内容，对于转贴只给链接，但链接这东西，有利有弊。常常过上几个月，原来的链接就不好使了。所以只好有选择的粘贴一些了。
@@ -192,7 +194,7 @@ Java HotSpot(TM) Client VM (build 1.5.0_22-b03, mixed mode, sharing)
 
 make一切顺利，之后在out/host/linux-x86/bin下找到emulator，但却无法执行，提示缺少AVD device，使用`export ANDROID_PRODUCT_OUT=~/android/out/target/product/generic`解决之。
 
-# JDK 1.6 + eclipse 3.6.2 + ADT 10.0.1
+## JDK 1.6 + eclipse 3.6.2 + ADT 10.0.1
 
 今天捡起许久不曾弄过的Android应用开发，重新来过。
 
@@ -222,7 +224,7 @@ Google eclipse Plugin - http://dl.google.com/eclipse/plugin/3.6
 
 3)下载ADT 10.0.1。
 
-# 调用计算器
+## 调用计算器
 
 如果是调用系统自带的计算器，在网上搜了一下，可以使用如下代码：
 
@@ -245,7 +247,7 @@ android.content.ActivityNotFoundException: Unable to find explicit activity clas
 
 同样的方法，我们可以找到浏览器的Activity是“com.android.browser.BrowserActivity”。
 
-# 各种特效的代码
+## 各种特效的代码
 
 http://www.23code.com/
 

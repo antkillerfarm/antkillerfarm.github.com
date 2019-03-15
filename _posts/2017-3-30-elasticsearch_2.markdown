@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Elasticsearch（二）, scrapy, Flume & Kafka, Flutter, 数据结构 & 普通CS算法
+title:  Elasticsearch（二）, scrapy, Flume & Kafka, 数据结构 & 普通CS算法
 category: AI 
 ---
 
@@ -304,36 +304,6 @@ https://mp.weixin.qq.com/s/XvWxaoob_PYpcOt8XpK7mw
 https://mp.weixin.qq.com/s/2kU9QhLP-njpToPckyfK5A
 
 伯克利RISE Lab开源Confluo：吞吐量比Kafka高4到10倍
-
-# Flutter
-
-Flutter是Google用以帮助开发者在Ios和Android两个平台开发高质量原生应用的全新移动UI框架。Beta1版本于2018年2月27日在2018世界移动大会上公布。
-
-官网：
-
-https://flutter.io/
-
-参考：
-
-https://mp.weixin.qq.com/s/pU75twMDry4VUYtTHeV_IQ
-
-一文深入了解Flutter界面开发
-
-https://mp.weixin.qq.com/s/yPvaB7sLuJoGfsjj7x7wcg
-
-深入理解Flutter的编译原理与优化
-
-https://mp.weixin.qq.com/s/SWP7Nu9DEUhvAyvdIG-Ixw
-
-聊一聊Flutter Engine线程管理与Dart Isolate机制
-
-https://mp.weixin.qq.com/s/cJjKZCqc8UuzvEtxK1BJCw
-
-Flutter的原理及美团的实践
-
-https://mp.weixin.qq.com/s/l6xvmnLE6HfRtw6upo6yUA
-
-高效开发与高性能并存的UI框架——携程Flutter实践
 
 # 数据结构 & 普通CS算法
 

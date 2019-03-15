@@ -234,3 +234,37 @@ patch -R B C #B还原为A
 `sort 1.txt | xargs cat >2.patch`
 
 `patch -p1 <2.patch`
+
+# DL参考资源+
+
+https://mp.weixin.qq.com/s/w-6z8B60cIHUF5tU-RoQ3w
+
+旷视科技提出统一感知解析网络UPerNet，优化场景理解
+
+https://mp.weixin.qq.com/s/fhpYkWiLGwSbpRsrwBcV9g
+
+多轴3D打印中的几何计算
+
+https://mp.weixin.qq.com/s/yXGuoBPmIeA3SteD_TliXg
+
+F-Principle：初探深度学习在计算数学的应用
+
+https://mp.weixin.qq.com/s/tduZoZecbOM0gC9Ugerbwg
+
+用AI设计微波集成电路，清华大学等提出深度强化学习方法RINN
+
+https://mp.weixin.qq.com/s/zcuTY9oWKhAQ8z0rx4nY4A
+
+让TA说你想听的—基于音/视频特征解离的讲述者人脸生成
+
+https://mp.weixin.qq.com/s/gjVLbH_S0t7jcjCYhpsTgw
+
+基于深度学习的人脑视觉神经信息编解码研究进展及挑战
+
+https://mp.weixin.qq.com/s/XNKEOlJrTVH2zsu8pdY4gA
+
+从三大案例，看如何用CV模型解决非视觉问题
+
+https://mp.weixin.qq.com/s/lcgnnXMUO8C3oLUPmxthjQ
+
+深度学习不再是炼丹术！谷歌给出首个神经网络训练理论证明

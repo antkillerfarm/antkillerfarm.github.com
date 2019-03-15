@@ -374,6 +374,10 @@ https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247492226&idx=1&sn=eafb23
 
 PyraNet：基于特征金字塔网络的人体姿态估计
 
+https://mp.weixin.qq.com/s/QBI9C_2CKLTvR0SoDdF27g
+
+百度PaddlePaddle开源视频分类模型Attention Cluster
+
 # X-Deep Learning
 
 TensorFlow、MXNet、PyTorch等框架大都是面向图像、语音等领域的稠密数据设计，对广告、推荐等场景的高维稀疏数据上的深度学习计算考虑不足。

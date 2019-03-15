@@ -353,3 +353,7 @@ https://mp.weixin.qq.com/s/fwgKilh9Q7Wseano3lOG0g
 https://mp.weixin.qq.com/s/DtxjX9RfRgehxLsJ7MFoNw
 
 谷歌大脑开源TensorFuzz，自动Debug神经网络！
+
+https://mp.weixin.qq.com/s/Ec4ObV83Nhp39kpOHVoPNQ
+
+放弃手工标记数据，斯坦福大学开发弱监督编程范式Snorkel

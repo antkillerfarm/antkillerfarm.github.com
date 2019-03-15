@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数据库, Mysql
+title:  数据库, Mysql, Android研究（二）
 category: technology 
 ---
 
@@ -282,7 +282,53 @@ https://mp.weixin.qq.com/s/N7-8vtVUg3MRY2u_NYpAiA
 
 一份值得收藏的的MySQL规范
 
-# DL参考资源+
+# Android研究
+
+## Flutter
+
+Flutter是Google用以帮助开发者在Ios和Android两个平台开发高质量原生应用的全新移动UI框架。Beta1版本于2018年2月27日在2018世界移动大会上公布。
+
+官网：
+
+https://flutter.io/
+
+参考：
+
+https://mp.weixin.qq.com/s/pU75twMDry4VUYtTHeV_IQ
+
+一文深入了解Flutter界面开发
+
+https://mp.weixin.qq.com/s/yPvaB7sLuJoGfsjj7x7wcg
+
+深入理解Flutter的编译原理与优化
+
+https://mp.weixin.qq.com/s/SWP7Nu9DEUhvAyvdIG-Ixw
+
+聊一聊Flutter Engine线程管理与Dart Isolate机制
+
+https://mp.weixin.qq.com/s/cJjKZCqc8UuzvEtxK1BJCw
+
+Flutter的原理及美团的实践
+
+https://mp.weixin.qq.com/s/l6xvmnLE6HfRtw6upo6yUA
+
+高效开发与高性能并存的UI框架——携程Flutter实践
+
+## Litho
+
+Litho是Facebook推出的一套高效构建Android UI的声明式框架，主要目的是提升RecyclerView复杂列表的滑动性能和降低内存占用。
+
+官网：
+
+https://fblitho.com/
+
+参考：
+
+https://mp.weixin.qq.com/s/RS7O7prvkCvKyxkK3YQxtA
+
+Litho的使用及原理剖析
+
+# DL参考资源
 
 https://mp.weixin.qq.com/s/8dVronQoeZLJI2g49AljLg
 
@@ -331,35 +377,3 @@ https://mp.weixin.qq.com/s/qos7VRFP7uYZ6Qt83KiPhw
 https://mp.weixin.qq.com/s/_w4IIRY6LwqehpDlEXt90A
 
 牛津大学提出神经网络新训练法：用低秩结构增强网络压缩和对抗稳健性
-
-https://mp.weixin.qq.com/s/w-6z8B60cIHUF5tU-RoQ3w
-
-旷视科技提出统一感知解析网络UPerNet，优化场景理解
-
-https://mp.weixin.qq.com/s/fhpYkWiLGwSbpRsrwBcV9g
-
-多轴3D打印中的几何计算
-
-https://mp.weixin.qq.com/s/yXGuoBPmIeA3SteD_TliXg
-
-F-Principle：初探深度学习在计算数学的应用
-
-https://mp.weixin.qq.com/s/tduZoZecbOM0gC9Ugerbwg
-
-用AI设计微波集成电路，清华大学等提出深度强化学习方法RINN
-
-https://mp.weixin.qq.com/s/zcuTY9oWKhAQ8z0rx4nY4A
-
-让TA说你想听的—基于音/视频特征解离的讲述者人脸生成
-
-https://mp.weixin.qq.com/s/gjVLbH_S0t7jcjCYhpsTgw
-
-基于深度学习的人脑视觉神经信息编解码研究进展及挑战
-
-https://mp.weixin.qq.com/s/XNKEOlJrTVH2zsu8pdY4gA
-
-从三大案例，看如何用CV模型解决非视觉问题
-
-https://mp.weixin.qq.com/s/lcgnnXMUO8C3oLUPmxthjQ
-
-深度学习不再是炼丹术！谷歌给出首个神经网络训练理论证明

@@ -216,6 +216,10 @@ https://mp.weixin.qq.com/s/PELnlB5vMV0gGJbL6BzoIA
 
 原始-对偶算法的设计原理
 
+https://mp.weixin.qq.com/s/5655NgkxrbK3qtA4Ilxd4w
+
+为何引入对偶问题
+
 ## 支持向量
 
 针对最优边距分类问题，我们定义：
@@ -223,4 +227,3 @@ https://mp.weixin.qq.com/s/PELnlB5vMV0gGJbL6BzoIA
 $$g_i(w)=-y^{(i)}(w^Tx^{(i)}+b)+1\le 0$$
 
 由KKT对偶互补条件可知，如果$$\alpha_i>0$$，则$$g_i(w)=0$$。
-

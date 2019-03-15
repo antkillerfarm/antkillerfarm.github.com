@@ -6,6 +6,10 @@ category: DL
 
 # 三维处理
 
+https://github.com/timzhang642/3D-Machine-Learning
+
+3D机器学习资源汇总
+
 https://mp.weixin.qq.com/s/pMhNgAdnfN8wnPKV-aw3hg
 
 基于图像的三维建模参考资料
@@ -330,6 +334,10 @@ https://mp.weixin.qq.com/s/8YpyfdhDypSZOP3dQegQdQ
 
 谷歌大脑提出基于流的视频预测模型，可产生高质量随机预测结果
 
+https://mp.weixin.qq.com/s/-FF3tuEB2V8RlQCjQhu5Bg
+
+人大ML研究组提出新的视频测谎算法
+
 # 手势识别
 
 https://zhuanlan.zhihu.com/p/26630215
@@ -363,3 +371,4 @@ https://mp.weixin.qq.com/s/mnPh8w3VuG9apprOkugbLA
 https://mp.weixin.qq.com/s/pUciYFjOKL3ea91fLCy0Yw
 
 基于OpenCV与tensorflow实现实时手势识别
+

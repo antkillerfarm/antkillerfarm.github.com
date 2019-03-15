@@ -259,3 +259,7 @@ https://mp.weixin.qq.com/s/zeIcY_JknIo9-hR7UTxvrA
 https://mp.weixin.qq.com/s/ZkVK9S-BSoQTo09ALBI9aA
 
 从Storm到Flink，有赞五年实时计算效率提升实践
+
+https://mp.weixin.qq.com/s/hm_1A5Mu_6R0ygZPsspV8g
+
+开源的Blink和Spark3.0，谁将称霸大数据领域？

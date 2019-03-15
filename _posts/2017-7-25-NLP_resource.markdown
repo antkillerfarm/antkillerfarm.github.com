@@ -22,6 +22,10 @@ https://mp.weixin.qq.com/s/bcVGqVkQoVdo3fYUJJkpCQ
 
 NLP入门+实战必读：一文教会你最常见的10种自然语言处理技术
 
+https://mp.weixin.qq.com/s/h0qVaWySv7JmypYNv4OBMw
+
+香侬科技李纪为对初入NLP领域者的一些小建议
+
 https://mp.weixin.qq.com/s/J2b_7o5VuAUD3ze6CngWuA
 
 NLPprogress.com-随时跟进自然语言处理研究最新进展，34个NLP任务的数据、模型、论文与代码

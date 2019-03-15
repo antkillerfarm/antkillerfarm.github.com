@@ -124,6 +124,8 @@ HBM==High Bandwidth Memory是一款新型的CPU/GPU内存芯片（即 “RAM”�
 
 从上面两图可以看出，HBM的集成程度在die一级，介于PCB和chip之间。
 
+HBM带宽是传统内存（DRAM）的4.5倍，因此更适合处理AI应用程序所需的大量数据。这种性能的提升是如此之大，以至于许多客户更愿意支付专用内存所需的更高价格(每GB大约25美元，标准内存大约8美元)。
+
 参考：
 
 https://zhuanlan.zhihu.com/p/33990592

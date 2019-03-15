@@ -142,6 +142,10 @@ https://github.com/thunlp/GNNPapers
 
 相关论文列表
 
+https://mp.weixin.qq.com/s/SW6V-AxGq1z9Uq7qIJLj5A
+
+Github上热门图深度学习（GraphDL）源码与工业级框架
+
 https://mp.weixin.qq.com/s/xc_TnMLs3o2LQ8eM4naZDw
 
 AAAI2019 Tutorial《图表示学习》, 180页PPT带你从入门到精通

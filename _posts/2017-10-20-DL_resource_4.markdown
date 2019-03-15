@@ -86,6 +86,14 @@ https://mp.weixin.qq.com/s/HY2yPZ--Zm5_m3B70baWjQ
 
 谷歌开源效率怪兽GPipe，速度提升25倍，CIFAR-10精度达到99%
 
+https://mp.weixin.qq.com/s/HQW2bPyDY_3ecZWP6NYr-w
+
+大规模机器学习在LinkedIn预测模型中的应用实践
+
+https://mp.weixin.qq.com/s/i1PLA1xr3CefKx1EcVUVIg
+
+谷歌破世界纪录！圆周率计算到小数点后31.4万亿位
+
 ## 实战
 
 http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg

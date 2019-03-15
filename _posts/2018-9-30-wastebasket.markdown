@@ -234,6 +234,10 @@ https://mp.weixin.qq.com/s/imqoo3WWgdWtfah2HYYb6Q
 
 糟糕，我学了假的微积分！
 
+https://mp.weixin.qq.com/s/H_4vuzYcvnZwLZrAxIwgDg
+
+3.14特别纪念：π的第100000000000000···
+
 ## LSM (Log Structured Merge)
 
 十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。
@@ -421,3 +425,7 @@ https://mp.weixin.qq.com/s/vNzUngc-boG4QYmf_8lFfw
 https://mp.weixin.qq.com/s/A-UDbDNS77wd8WTgYiYD8Q
 
 文本分类有哪些论文中很少提及却对性能有重要影响的tricks？
+
+https://mp.weixin.qq.com/s/HWqFpDhvhGrJtNTSLsO3Eg
+
+大众点评信息流基于文本生成的创意优化实践

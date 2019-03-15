@@ -400,6 +400,10 @@ https://mp.weixin.qq.com/s/EGorUTYz09PYU3CdU_qwDA
 
 如何省时省力验证模型效果？达观数据在线分层实验平台给你支招
 
+https://mp.weixin.qq.com/s/S9AjPkYLzRQpg5evyaoleQ
+
+推荐系统的工程实现
+
 ## 术语
 
 GMV (Gross Merchandise Volume) 成交额
