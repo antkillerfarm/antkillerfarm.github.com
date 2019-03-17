@@ -404,6 +404,10 @@ https://mp.weixin.qq.com/s/S9AjPkYLzRQpg5evyaoleQ
 
 推荐系统的工程实现
 
+https://mp.weixin.qq.com/s/cjo5MYa-t9tWDCjwDpkOeg
+
+推荐系统评估
+
 ## 术语
 
 GMV (Gross Merchandise Volume) 成交额

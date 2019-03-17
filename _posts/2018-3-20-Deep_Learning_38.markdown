@@ -184,6 +184,10 @@ https://mp.weixin.qq.com/s/vMgHCQ03Gt5v6GdgW-pY9A
 
 一个神经网络实现4大图像任务，GitHub已开源
 
+https://zhuanlan.zhihu.com/p/59413549
+
+Multi-task Learning(Review)多任务学习概述
+
 # RNN进阶
 
 ## IndRNN

@@ -202,6 +202,10 @@ https://mp.weixin.qq.com/s/eZ78biXN-mVw3s9Ky_LBZg
 
 如何走近深度学习人脸识别？你需要这篇超长综述
 
+https://mp.weixin.qq.com/s/tum24mzS2cUiKW87a1weFA
+
+人脸识别全面总结：从传统方法到深度学习
+
 https://mp.weixin.qq.com/s/bFnuGu4xLJiRfANi0Rkduw
 
 人脸识别的前世今生：从人工特征的百花齐放到深度学习的一统江湖

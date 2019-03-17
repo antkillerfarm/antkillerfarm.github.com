@@ -186,6 +186,26 @@ https://mp.weixin.qq.com/s/vuzx4LPLH2Gk4L9TXlNJqg
 
 # 机器人/无人驾驶参考资源
 
+https://mp.weixin.qq.com/s/k3RbUz9txd09PpiLUEHVfA
+
+无人驾驶汽车系统入门：深度前馈网络，深度学习的正则化，交通信号识别
+
+https://mp.weixin.qq.com/s/09NwPaWTDU5g6ZjSPxLgTw
+
+肖健雄：无人车量产的4大技术储备
+
+https://mp.weixin.qq.com/s/-dGXe4RuU4w8DN8ffCMiFg
+
+让AI自动调参，才是百度无人车的进化方式：适应环境全靠自己
+
+https://mp.weixin.qq.com/s/YDIoVf20kybu8JEUY3GZWg
+
+Lattice Planner规划算法
+
+https://mp.weixin.qq.com/s/5TyL9bkKe-XMKLl-QbtaZg
+
+西电智能学子斩获ECCV2018无人机挑战赛冠军—算法分享
+
 https://mp.weixin.qq.com/s/1SxwYqcxB8zIavr11cIGWg
 
 机器学习及深度学习在自动驾驶中的应用
@@ -385,15 +405,3 @@ https://zhuanlan.zhihu.com/p/59089908
 https://mp.weixin.qq.com/s/eOxle3q_QgejlX10kc30Rg
 
 Apollo无人车自定位技术入门
-
-# AI-1000问
-
-这个是“有三AI”微信公众号下的栏目，特辑录如下。
-
-https://mp.weixin.qq.com/s/5-3UxBVy080WhEWumv7BiA
-
-为什么LeNet5倒数第二个全连接层维度为84？
-
-https://mp.weixin.qq.com/s/Er3Poj8oxV5OKNlAlZwq_A
-
-为什么OpenCV读取的图像格式是BGR？

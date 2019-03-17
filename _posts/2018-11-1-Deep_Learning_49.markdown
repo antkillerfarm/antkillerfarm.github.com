@@ -110,6 +110,10 @@ https://mp.weixin.qq.com/s/FvR6loJ8KUxm7qwclestcQ
 
 专门为卷积神经网络设计的训练方法：RePr
 
+https://mp.weixin.qq.com/s/MDgqSwVEClNqNpaWuGTEpg
+
+微软亚研院提出用于语义分割的结构化知识蒸馏
+
 # Mask R-CNN
 
 Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的NN。它是何恺明2017年的新作。
@@ -202,7 +206,7 @@ https://mp.weixin.qq.com/s/CsEHuGz_fAq8eWpHRq7d6g
 
 https://mp.weixin.qq.com/s/xug0xKfc9RgJEUci1a_xog8
 
-实例分割的进阶三级跳：从 Mask R-CNN 到 Hybrid Task Cascade
+实例分割的进阶三级跳：从Mask R-CNN到Hybrid Task Cascade
 
 # Fast Image Processing
 

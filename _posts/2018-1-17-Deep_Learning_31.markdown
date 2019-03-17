@@ -310,6 +310,10 @@ https://mp.weixin.qq.com/s/a0Xt_hkcW2OVlEzhQFWugg
 
 由浅及深，细致解读图像问答 VQA 2018 Challenge冠军模型Pythia
 
+https://mp.weixin.qq.com/s/3Y5f7JsxsmmuCjAX625h1Q
+
+MirrorGAN出世！浙大等提出文本-图像新框架
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

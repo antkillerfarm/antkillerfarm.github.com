@@ -40,6 +40,10 @@ https://mp.weixin.qq.com/s/y0HnpWRUBLyEyqzWfOhkCw
 
 Never forget your humanity, and respect human dignity in your dealings with others.---Robert Bosch
 
+https://mp.weixin.qq.com/s/xgxsmcMAqstzmhTJZFZIyw
+
+特斯拉重磅深度：T E S L A，T-S.E.X.Y
+
 ## 课程
 
 http://selfdrivingcars.mit.edu/
@@ -407,23 +411,3 @@ https://mp.weixin.qq.com/s/vFyifSgGLImUrTwcw9bPsg
 https://mp.weixin.qq.com/s/aXck7MLpHojuIkvVP1iHKg
 
 北航机器人研究所名誉所长王田苗：人工智能与机器人的发展趋势
-
-https://mp.weixin.qq.com/s/k3RbUz9txd09PpiLUEHVfA
-
-无人驾驶汽车系统入门：深度前馈网络，深度学习的正则化，交通信号识别
-
-https://mp.weixin.qq.com/s/09NwPaWTDU5g6ZjSPxLgTw
-
-肖健雄：无人车量产的4大技术储备
-
-https://mp.weixin.qq.com/s/-dGXe4RuU4w8DN8ffCMiFg
-
-让AI自动调参，才是百度无人车的进化方式：适应环境全靠自己
-
-https://mp.weixin.qq.com/s/YDIoVf20kybu8JEUY3GZWg
-
-Lattice Planner规划算法
-
-https://mp.weixin.qq.com/s/5TyL9bkKe-XMKLl-QbtaZg
-
-西电智能学子斩获ECCV2018无人机挑战赛冠军—算法分享

@@ -118,6 +118,12 @@ Fourier transform研究的是整个时间域和频率域的关系。但实际的
 
 https://en.wikipedia.org/wiki/Window_function
 
+参考：
+
+https://mp.weixin.qq.com/s/84f-HbQSvGPr2tD9EpdbVw
+
+典型窗函数分析，对LFM信号进行时域和频域加窗对比
+
 ## Hann window
 
 Hann window虽然是以Julius Ferdinand von Hann的名字命名，但却是Blackman和Tukey的作品。他们和同一实验室的Claude E. Shannon, Hendrik Wade Bode，合称为Information Age的四大先锋。

@@ -361,3 +361,7 @@ https://mp.weixin.qq.com/s/ro1VgHkPPYuGP0eO8TNg9g
 https://mp.weixin.qq.com/s/MqbVXlkLeAu9afVvQmmeVQ
 
 专门为卷积神经网络设计的训练方法：RePr
+
+https://mp.weixin.qq.com/s/-6rKyPIFR7dq7eVQw5PzmA
+
+用异构卷积训练深度CNN：提升效率而不损准确度

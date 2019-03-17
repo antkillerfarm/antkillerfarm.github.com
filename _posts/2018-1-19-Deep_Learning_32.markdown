@@ -279,3 +279,11 @@ https://mp.weixin.qq.com/s/fkHfzkHRFpEGc-L4uGlqcg
 https://mp.weixin.qq.com/s/C9Ku4MvU2QuZ_GJcs8FelA
 
 基于深度学习的图像超分辨率最新进展与趋势
+
+https://mp.weixin.qq.com/s/qNHbs2Bd4buVlu0j3Rtj0g
+
+Adobe提出新型超分辨率方法：用神经网络迁移参照图像纹理
+
+https://mp.weixin.qq.com/s/N-kAIK_qMowsFqEtWTqt4w
+
+图像超分辨率重建--工程应用

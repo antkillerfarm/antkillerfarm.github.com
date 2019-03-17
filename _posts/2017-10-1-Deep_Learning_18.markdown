@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十八）——数据增强, 深度信息检索, 语义分割
+title:  深度学习（十八）——数据增强, 深度信息检索, DMN, 语义分割
 category: DL 
 ---
 
@@ -163,6 +163,20 @@ MySQL智能调度系统。这篇blog其实和MySQL关系不大，算是DL在负�
 https://mp.weixin.qq.com/s/fzdK4YPTUgiW0D0aeH7WlQ
 
 用于跨模态检索的综合距离保持自编码器
+
+# DMN
+
+Question answering是自然语言处理领域的一个复杂问题。它需要对文本的理解力和推理能力。大部分NLP问题都可以转化为一个QA问题。Dynamic Memory Networks可以用来处理QA问题。DMN的输入包含事实输入，问题输入，经过内部处理形成片段记忆，最终产生问题的答案。
+
+DMN可进行端到端的训练，并在多种任务上取得了state-of-the-art的效果：包括QA（Facebook的bAbI数据集），情感分析文本分类（Stanford Sentiment Treebank）和词性标注（WSJ-PTB）。
+
+![](/images/article/DMN.png)
+
+参考：
+
+http://blog.csdn.net/javafreely/article/details/71994247
+
+动态记忆网络
 
 # 语义分割
 

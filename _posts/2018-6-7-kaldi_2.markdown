@@ -282,3 +282,15 @@ Reinforcement Learning with Prediction-Based Rewards
 代码：
 
 https://github.com/openai/random-network-distillation
+
+# AI-1000问
+
+这个是“有三AI”微信公众号下的栏目，特辑录如下。
+
+https://mp.weixin.qq.com/s/5-3UxBVy080WhEWumv7BiA
+
+为什么LeNet5倒数第二个全连接层维度为84？
+
+https://mp.weixin.qq.com/s/Er3Poj8oxV5OKNlAlZwq_A
+
+为什么OpenCV读取的图像格式是BGR？

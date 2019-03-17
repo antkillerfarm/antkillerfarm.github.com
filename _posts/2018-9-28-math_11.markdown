@@ -275,3 +275,7 @@ https://mp.weixin.qq.com/s/xWditmvgZh_MTr1S8Da9hg
 https://mp.weixin.qq.com/s/hBcsPcs1z9GyYK2RoJeCFg
 
 基于知识库的自然语言理解 04
+
+https://mp.weixin.qq.com/s/_ZdRYDG_ZOL2VPArbnV2TA
+
+TuckER：基于张量分解的知识图谱补全

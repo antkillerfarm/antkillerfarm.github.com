@@ -56,7 +56,13 @@ https://mp.weixin.qq.com/s/LNNqp2KsEAljG26hY43mUw
 
 ICML2018 模仿学习教程
 
-# 深度强化参考资源
+# 强化学习参考资源
+
+https://mp.weixin.qq.com/s/Fn1s9Ia8L1ckgn6iP24FhQ
+
+如何让神经网络具有好奇心
+
+# 深度强化学习参考资源
 
 https://mp.weixin.qq.com/s/6wPtb9Qdhr9FiMk15xrUsQ
 

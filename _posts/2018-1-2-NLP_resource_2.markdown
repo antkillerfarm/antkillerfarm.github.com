@@ -246,6 +246,10 @@ https://mp.weixin.qq.com/s/TbZPxISqi3fZLpWmDf3DmQ
 
 中文分词做不好，人机自然语言交互当然难以取得突破
 
+https://mp.weixin.qq.com/s/oF1-JCd7FvjKJvo6ipWV-w
+
+NLP分词的那些事儿
+
 https://mp.weixin.qq.com/s/6mE3qPL5ag1C6ZVUsQibdg
 
 LR如何在语言理解NLU中实现文本分类

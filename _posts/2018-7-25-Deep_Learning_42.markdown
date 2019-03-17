@@ -352,6 +352,10 @@ https://github.com/ShiqiYu/libfacedetection
 
 libfacedetection算法开源
 
+https://mp.weixin.qq.com/s/-VknGwKKY14cT-lZ7sC43A
+
+人脸识别--基于深度学习以人类为中心的图像理解
+
 # Capsule
 
 https://github.com/freefuiiismyname/capsule-mrc

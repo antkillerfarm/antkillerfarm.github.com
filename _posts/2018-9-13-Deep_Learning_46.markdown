@@ -385,3 +385,7 @@ BERT一作Jacob Devlin斯坦福演讲PPT：BERT介绍与答疑
 https://zhuanlan.zhihu.com/p/58425003
 
 从Word2Vec到Bert，聊聊词向量的前世今生（一）
+
+https://mp.weixin.qq.com/s/xoQhz6ljbsbzKRBJlTQQuQ
+
+百度提出ERNIE，多项中文NLP任务表现出色
