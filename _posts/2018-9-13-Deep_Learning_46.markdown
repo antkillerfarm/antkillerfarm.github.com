@@ -389,3 +389,11 @@ https://zhuanlan.zhihu.com/p/58425003
 https://mp.weixin.qq.com/s/xoQhz6ljbsbzKRBJlTQQuQ
 
 百度提出ERNIE，多项中文NLP任务表现出色
+
+https://mp.weixin.qq.com/s/SfMIKfF_B4agFCHN_U_mzQ
+
+BAM！利用知识蒸馏和多任务学习构建的通用语言模型
+
+https://mp.weixin.qq.com/s/6G5Mu7-1omGtQ_9Gt9lUBw
+
+基于预训练自然语言生成的文本摘要方法

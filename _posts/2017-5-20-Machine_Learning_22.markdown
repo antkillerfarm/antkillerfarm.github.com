@@ -191,6 +191,10 @@ https://mp.weixin.qq.com/s/Uowbo19wNkjT-9eAIjS8jQ
 
 过来，我这里有个“混淆矩阵”跟你谈一谈
 
+https://mp.weixin.qq.com/s/u-QTHFSA-8rwvL0KBVYXjQ
+
+深度学习模型评估，从图像分类到生成模型
+
 # HMM
 
 ![](/images/article/HMM.png)

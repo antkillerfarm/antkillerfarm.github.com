@@ -238,6 +238,10 @@ https://mp.weixin.qq.com/s/H_4vuzYcvnZwLZrAxIwgDg
 
 3.14特别纪念：π的第100000000000000···
 
+https://mp.weixin.qq.com/s/oEhG7AaY_TAljvhhK5YfNA
+
+拉东变换与医学CT技术
+
 ## LSM (Log Structured Merge)
 
 十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。
@@ -429,3 +433,7 @@ https://mp.weixin.qq.com/s/A-UDbDNS77wd8WTgYiYD8Q
 https://mp.weixin.qq.com/s/HWqFpDhvhGrJtNTSLsO3Eg
 
 大众点评信息流基于文本生成的创意优化实践
+
+https://mp.weixin.qq.com/s/dIQoNRtZcm2TL_XQldIhaA
+
+详解Transition-based Dependency parser基于转移的依存句法解析器

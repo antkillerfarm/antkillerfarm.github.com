@@ -256,6 +256,14 @@ https://zhuanlan.zhihu.com/p/57459276
 
 软件架构--基于AUTOSAR的多模块任务分配策略
 
+## openpilot
+
+openpilot是一个开源的自动驾驶（驾驶代理）。
+
+官网：
+
+https://github.com/commaai/openpilot
+
 ## 参考
 
 https://rsu.data61.csiro.au/people/jalvarez/research_bbdd.php

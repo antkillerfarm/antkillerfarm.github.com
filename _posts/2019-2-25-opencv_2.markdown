@@ -184,6 +184,10 @@ https://zhuanlan.zhihu.com/p/45827914
 
 Github开源人脸识别项目face_recognition
 
+https://mp.weixin.qq.com/s/2P7Rlcy-fIC_cwqrB4UQUw
+
+超越Dlib！81个特征点覆盖全脸，面部特征点检测更精准
+
 # 安全
 
 https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126

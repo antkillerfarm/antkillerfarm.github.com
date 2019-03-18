@@ -229,3 +229,7 @@ https://zhuanlan.zhihu.com/gpml2016
 https://mp.weixin.qq.com/s/FJAgpbBgRA2Zk3BuiEwjdw
 
 看得见的高斯过程：这是一份直观的入门解读
+
+https://zhuanlan.zhihu.com/p/58987388
+
+多元高斯分布完全解析

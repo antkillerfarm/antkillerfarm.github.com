@@ -365,27 +365,3 @@ https://mp.weixin.qq.com/s/Jmlia3v5P8UzG-MEuIMULQ
 https://mp.weixin.qq.com/s/Jhi9TWQqhJIyG7cakgo2Xg
 
 修改一个像素，就能让神经网络识别图像出错
-
-https://mp.weixin.qq.com/s/uI5gUGtiR8VDXreU4YEZYA
-
-MILA提出防御增强型网络：简单修改已有网络即可提升防攻击能力
-
-https://mp.weixin.qq.com/s/Ffaotx83qRJS1s-bbMt1UA
-
-一点微小的扰动，就可能导致深度神经网络做出错误判断
-
-https://mp.weixin.qq.com/s/tXr9NhVfBSvI5pduziIECQ
-
-基于深度学习的二进制恶意样本检测
-
-https://mp.weixin.qq.com/s/x8ykOA9CeX3FCz0WCeySng
-
-AI生成假指纹以假乱真，你的指纹识别还安全吗？
-
-https://mp.weixin.qq.com/s/EeAvDpPpfxDO4WFIrvCMpA
-
-深入浅出对抗性机器学习（AML）
-
-https://zhuanlan.zhihu.com/p/53908224
-
-如何辨别哪些是人工智能生成的虚假图像？

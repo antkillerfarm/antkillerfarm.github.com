@@ -71,3 +71,7 @@ https://mp.weixin.qq.com/s/6wPtb9Qdhr9FiMk15xrUsQ
 https://mp.weixin.qq.com/s/lU3_ONAIGDUv_AVv2Xn14w
 
 仅需2小时学习，基于模型的强化学习方法可以在Atari上实现人类水平
+
+https://mp.weixin.qq.com/s/TIWnnCmVZnFQNH9Fig5aTw
+
+DeepMind发布新奖励机制：让智能体不再“碰瓷”
