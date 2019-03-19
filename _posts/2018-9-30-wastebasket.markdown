@@ -380,7 +380,7 @@ Processing是一个在可视化领域用的比较多的sketchbook，类似于Log
 
 https://processing.org
 
-# NLP参考资源+
+# NLP参考资源
 
 https://mp.weixin.qq.com/s/-YmB6QSQ01EsHfXB40MMcQ
 
@@ -425,15 +425,3 @@ Statistical language model统计语言模型
 https://mp.weixin.qq.com/s/vNzUngc-boG4QYmf_8lFfw
 
 自动为词汇推荐义原组合
-
-https://mp.weixin.qq.com/s/A-UDbDNS77wd8WTgYiYD8Q
-
-文本分类有哪些论文中很少提及却对性能有重要影响的tricks？
-
-https://mp.weixin.qq.com/s/HWqFpDhvhGrJtNTSLsO3Eg
-
-大众点评信息流基于文本生成的创意优化实践
-
-https://mp.weixin.qq.com/s/dIQoNRtZcm2TL_XQldIhaA
-
-详解Transition-based Dependency parser基于转移的依存句法解析器

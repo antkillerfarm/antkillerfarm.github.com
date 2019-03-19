@@ -4,27 +4,9 @@ title:  深度学习（十一）——Winograd（1）
 category: DL 
 ---
 
-# 花式卷积（续）
+# 花式卷积
 
-## 分组卷积
-
-![](/images/article/AlexNet.png)
-
-分组卷积最早在AlexNet中出现，由于当时的硬件资源有限，训练AlexNet时卷积操作不能全部放在同一个GPU处理，因此作者把feature maps分给2个GPU分别进行处理，最后把2个GPU的结果进行融合。
-
-在AlexNet的Group Convolution当中，特征的通道被平均分到不同组里面，最后再通过两个全连接层来融合特征，这样一来，就只能在最后时刻才融合不同组之间的特征，对模型的泛化性是相当不利的。
-
-为了解决这个问题，ShuffleNet在每一次层叠这种Group conv层前，都进行一次channel shuffle，shuffle过的通道被分配到不同组当中。进行完一次group conv之后，再一次channel shuffle，然后分到下一层组卷积当中，以此循环。
-
-![](/images/img2/ShuffleNet.png)
-
-论文：
-
-《ShuffleNet: An Extremely Efficient Convolutional Neural Network for Mobile Devices》
-
-![](/images/img2/ShuffleNet_2.png)
-
-上图是ShuffleNet的Unit结构图，DWConv表示depthwise convolution，GConv表示pointwise group convolution。a是普通的Deep Residual Unit，b的进化用以提高精度，c的进一步进化用以减少计算量。
+## 分组卷积（续）
 
 参考：
 
@@ -125,6 +107,10 @@ Receptive Field本来是神经科学领域的概念，后来才被推广到DL（
 Receptive Field的大小实际上就是采样范围的大小，例如一个kernel为9x9，stride为1的普通卷积，其采样范围为13x13。（即kernel size+pad size, 9+4=13）
 
 其他卷积的情况，可以依此类推。
+
+对于多层神经网络的感受野，一般用Layer N上的一个点，在Input中的采样范围表示。所以层数越多，感受野越大。
+
+需要注意的是，感受野中心的点，由于几乎每层卷积计算都会被采样到，因此它们的采样率是大于边缘点的。换句话说，就是对结果有更大的影响。因此，这又引入了**有效感受野**的概念。从实践角度来看，有效感受野的半径通常为感受野半径的1/3～1/5。
 
 参考：
 

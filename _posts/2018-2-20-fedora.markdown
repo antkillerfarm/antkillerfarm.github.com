@@ -127,9 +127,11 @@ Install TightVNC Server in RHEL/CentOS and Fedora to Access Remote Desktops
 
 # Blog维护日志
 
+2019.3.19 添加GAN & VAE分类。
+
 2018.11.19 添加RL分类。
 
-2018.11.16 文章数达到250篇。一个分类达到50篇，可读性的问题就比较大了，修订也比较麻烦。特创建Deep object detection分类。由于文章较多，新分类的迁移将缓慢进行。
+2018.11.16 文章数达到250篇。一个分类达到50篇，可读性的问题就比较大了，修订也比较麻烦。特创建Deep object detection分类。由于文章较多，新分类的迁移将缓慢进行。可命名为v4.0。
 
 2018.11.14 DL专栏文章达到50篇。
 

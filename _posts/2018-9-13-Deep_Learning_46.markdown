@@ -397,3 +397,7 @@ BAM！利用知识蒸馏和多任务学习构建的通用语言模型
 https://mp.weixin.qq.com/s/6G5Mu7-1omGtQ_9Gt9lUBw
 
 基于预训练自然语言生成的文本摘要方法
+
+https://mp.weixin.qq.com/s/yysnPauB22YgprpOi1ZWSQ
+
+深入理解BERT Transformer ，不仅仅是注意力机制

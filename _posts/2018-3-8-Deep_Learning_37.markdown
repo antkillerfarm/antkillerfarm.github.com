@@ -156,6 +156,10 @@ https://www.oukohou.wang/2019/01/30/face-aging_using_GAN/
 
 论文阅读-人脸老化：Generative Adversarial Style Transfer Networks for Face Aging
 
+https://mp.weixin.qq.com/s/s2SFQgUOZLV-f6auqymVOg
+
+基于Caffe的年龄&性别识别
+
 ## 活体检测
 
 https://mp.weixin.qq.com/s/zOnmKSnQctnyx7pKXX-tpQ

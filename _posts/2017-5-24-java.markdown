@@ -336,3 +336,21 @@ https://mp.weixin.qq.com/s/WHh9v3icCc90PwiLyv0Hng
 https://mp.weixin.qq.com/s/GQ2azFxcmXrY78rTAdxuVA
 
 JS/CSS体积减少了67%，我们是如何做到的？
+
+# CPU+
+
+https://zhuanlan.zhihu.com/p/57780996
+
+内存延迟：因与果
+
+https://mp.weixin.qq.com/s/LreWWlXAQL-dqQBCk93soQ
+
+解读两大精简指令集：RISC-V和MIPS
+
+https://mp.weixin.qq.com/s/XcC18tulYdnwqlusg2QrxA
+
+嵌入式内存STT-MRAM趋势分析
+
+https://mp.weixin.qq.com/s/f_rk-NPKNzYpbHOr5bgluw
+
+一文了解半导体的过去、现在和未来

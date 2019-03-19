@@ -148,7 +148,11 @@ https://mp.weixin.qq.com/s/0lyDv9b-mpvSFYXqyngT-w
 
 https://mp.weixin.qq.com/s/PkFtZ0Iqf7PBGyE5a_IJ4Q
 
-YOLOv3的TensorFlow实现，GitHub完整源码解析
+YOLO v3的TensorFlow实现，GitHub完整源码解析
+
+https://mp.weixin.qq.com/s/Vuuca3A7luCyCQ-jBKMIcw
+
+YOLO v3目标检测的PyTorch实现，GitHub完整源码解析！
 
 # One-stage vs. Two-stage
 

@@ -32,11 +32,11 @@ Apollo小度车载系统
 
 https://mp.weixin.qq.com/s/rWhnazEC35U7nsVpsxhFEg
 
-Apollo 2.0 软硬件框架初探（一）
+Apollo 2.0软硬件框架初探（一）
 
 https://mp.weixin.qq.com/s/GccST3xJ1QRIVM7cFgsn3A
 
-Apollo 2.0 软硬件框架初探（二）
+Apollo 2.0软硬件框架初探（二）
 
 https://mp.weixin.qq.com/s/UHQXF2Ju8erw9thm0Jjt2A
 
@@ -101,6 +101,10 @@ Apollo 2.5自动驾驶规划控制
 https://mp.weixin.qq.com/s/y_mOKpgLEvDjoO-UdMBcyw
 
 Apollo AdaperManager和Routing模块源代码分析
+
+https://mp.weixin.qq.com/s/k5GNHhxEE6mIOnxXlCpKXg
+
+Apollo 3.5软件架构
 
 # 多任务学习
 

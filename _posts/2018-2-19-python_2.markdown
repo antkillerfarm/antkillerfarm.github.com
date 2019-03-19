@@ -88,6 +88,12 @@ Old Style：`'%s %s' % ('one', 'two')`
 
 New Style：`'{} {}'.format('one', 'two')`
 
+New Style还可以这样玩：
+
+`'{name} {age}'.format(name='John', age='two')`
+
+有了上述的placeholder之后，参数也未必再需要按出现的顺序给了。
+
 ## 特殊语法：filter、map、reduce、lambda
 
 **filter(function, sequence)**：对sequence中的item依次执行function(item)，将执行结果为True的item组成一个List/String/Tuple（取决于sequence的类型）返回。
@@ -233,9 +239,9 @@ a.age = 10
 
 {% highlight python %}
 if __name__=='__main__':
-    a=1       # 对象 1 被 变量a引用，对象1的引用计数器为1
-    b=a       # 对象1 被变量b引用，对象1的引用计数器加1
-    c=a       #1对象1 被变量c引用，对象1的引用计数器加1
+    a=1       #对象1被变量a引用，对象1的引用计数器为1
+    b=a       #对象1被变量b引用，对象1的引用计数器加1
+    c=a       #对象1被变量c引用，对象1的引用计数器加1
     del a     #删除变量a，解除a对1的引用
     del b     #删除变量b，解除b对1的引用
     print(c)  #最终变量c仍然引用1
@@ -409,17 +415,3 @@ eval函数用来执行一个字符串表达式，并返回表达式的值。
 `eval('pow(2,2)')`
 
 粗看起来，eval函数在上面的例子中有些多此一举。然而如果字符串来自外部的话，就完全不同了。我们完全可以在任何地方嵌入python脚本。然后，只需要在用到的时候，找到并加载该字符串即可。
-
-## NetworkX
-
-NetworkX是一个用Python语言开发的图论与复杂网络建模工具，内置了常用的图与复杂网络分析算法，可以方便的进行复杂网络数据分析、仿真建模等工作。
-
-官网：
-
-https://networkx.github.io/
-
-参考：
-
-https://www.cnblogs.com/kaituorensheng/p/5423131.html
-
-python复杂网络分析库NetworkX

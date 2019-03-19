@@ -247,7 +247,7 @@ https://zhuanlan.zhihu.com/p/20042215
 
 ![](/images/article/hyperbolic.jpg)
 
-# CPU+
+# CPU
 
 ## 3D芯片
 

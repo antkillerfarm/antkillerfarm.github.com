@@ -6,86 +6,6 @@ category: DL
 
 # GAN进阶
 
-## GAN的发展
-
-最早的GAN出现在2014年6月，但直到2015年底，也只有5个变种，发展并不迅速。
-
-2016年，GAN开始发力，年底时已有52个变种。2017年6月底，更达到142个变种。
-
-![](/images/article/GAN_structure.png)
-
-上图的源地址：
-
-https://github.com/hwalsuklee/tensorflow-generative-model-collections
-
-《Generating Reasonable and Diversified Story Ending Using Sequence to Sequence Model with Adversarial Training》，这篇论文提出的Seq2Seq+RL+GAN的组合模型，也算是让我开眼界了。
-
-![](/images/article/Seq2Seq_RL_GAN.png)
-
-参考：
-
-https://github.com/hindupuravinash/the-gan-zoo
-
-GAN的各种变种。
-
-https://zhuanlan.zhihu.com/p/34016536
-
-历史最全GAN网络及其各种变体整理
-
-https://mp.weixin.qq.com/s/rE_RYklz8G_Etg5Gstlhew
-
-十款神奇的GAN，总有一个适合你！
-
-https://mp.weixin.qq.com/s/IjlIT-3FVY7IfYzNDtkkgg
-
-谷歌大脑发布GAN全景图：看百家争鸣的生成对抗网络
-
-https://mp.weixin.qq.com/s/Y4Ags-yupq__gQZmparhsg
-
-COLING 2018⽤对抗增强的端到端模型⽣成合理且多样的故事结尾
-
-https://mp.weixin.qq.com/s/QRmy8f88eJcdp1xCxCI8bg
-
-历数GAN的5大基本结构
-
-## GAN的理论解释
-
-顾险峰教授对GAN提出了自己的理论解释。
-
->顾险峰，1989年考入清华大学计算机科学与技术系。1992年获得清华大学特等奖学金。后于美国哈佛大学获得计算机博士学位，师从国际著名微分几何大师丘成桐先生。目前为美国纽约州立大学石溪分校计算机系终身教授。
-
-参考：
-
-https://mp.weixin.qq.com/s/7O0AKIUVYK7HRyvdRbUVkg
-
-虚构的对抗，GAN with the wind
-
-https://mp.weixin.qq.com/s/trvMOTXNs7L6fSmTkZXwsA
-
-看穿机器学习（W-GAN模型）的黑箱
-
-https://mp.weixin.qq.com/s/thcxsBVttSIEzVNLQlAVCA
-
-看穿机器学习的黑箱（II）
-
-https://mp.weixin.qq.com/s/Jx0o17CwlIVcRV22PXk4wQ
-
-看穿机器学习的黑箱（III）
-
-https://mp.weixin.qq.com/s/ecqPzcSa75U9n4BcvnNJ_Q
-
-GAN模式崩溃的理论解释
-
-## GAN的评估指标
-
-尽管可用的GAN模型非常多，但对它们的评估仍然主要是定性评估，通常需要借助人工检验生成图像的视觉保真度来进行。此类评估非常耗时，且主观性较强、具备一定误导性。鉴于定性评估的内在缺陷，恰当的定量评估指标对于GAN的发展和更好模型的设计至关重要。
-
-参考：
-
-https://mp.weixin.qq.com/s/EPwsQ_005CYNlCK_82SYWQ
-
-六种GAN评估指标的综合评估实验，迈向定量评估GAN的重要一步
-
 ## 参考
 
 https://blog.csdn.net/liuxiao214/article/category/6940697
@@ -371,3 +291,55 @@ https://mp.weixin.qq.com/s/5S6TsyT6dwXP3cTE_KQleg
 https://mp.weixin.qq.com/s/IE5h6AiAYhA1nBvsFiGUHA
 
 GAN最新进展：8大技巧提高稳定性
+
+https://mp.weixin.qq.com/s/QacQCrjh3KmrQSMp-G_rEg
+
+贝叶斯生成对抗网络
+
+https://mp.weixin.qq.com/s/c84LMFnIhoDeolc1B4MIVA
+
+AI以假乱真怎么办？TequilaGAN教你轻松辨真伪
+
+https://mp.weixin.qq.com/s/fgL6FtjeF-EgG5jjAGDR7A
+
+GANimation让图片秒变GIF表情包，秒杀StarGAN
+
+https://mp.weixin.qq.com/s/NPUJ89nddF1WHfFv2nn-Hg
+
+GANs有嘻哈：一次学完10个GANs明星模型
+
+https://mp.weixin.qq.com/s/yShYrMFKox30jXajXXQPGw
+
+如何让GAN生成更高质量图像？斯坦福大学给你答案
+
+https://mp.weixin.qq.com/s/qiLFQowjH67XECXBlppUDg
+
+对抗深度学习:鱼(模型准确性)与熊掌(模型鲁棒性)能否兼得？
+
+https://mp.weixin.qq.com/s/1SpHGtjkSfDEFCZuudCm0Q
+
+基于GAN和VAE的跨模态图像生成
+
+https://mp.weixin.qq.com/s/02amaVnLFxeLDBsjG-iN1Q
+
+UBC&腾讯AI Lab提出首个模块化GAN架构，搞定任意图像PS组合
+
+https://mp.weixin.qq.com/s/pf0fNSoNDaI9bZvohRX28A
+
+不再使用人眼评估，你训练的GAN还OK吗？ 
+
+https://mp.weixin.qq.com/s/KeXXi5kwvWAfArv13f6VPg
+
+给Cycle-GAN加上时间约束，CMU等提出新型视频转换方法Recycle-GAN
+
+https://mp.weixin.qq.com/s/IzVTkH7fEiS4gAUIyA_IrA
+
+谷歌GAN 实验室来了！迄今最强可视化工具，在浏览器运行GAN
+
+https://mp.weixin.qq.com/s/1jBpz55pPgM8oxlUZLSWXA
+
+ICML2018对抗生成网络论文评述
+
+https://mp.weixin.qq.com/s/uQpmP7pJ8wnEgyJrvvHgwg
+
+基于解剖结构的面部表情生成

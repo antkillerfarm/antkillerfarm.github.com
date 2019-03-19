@@ -208,3 +208,17 @@ http://baojie.org/blog/2014/06/23/python-text-extraction/
 浏览器默认是不允许在HTTPS里面引用HTTP资源的，一般都会弹出提示框，用户确认后才会继续加载，用户体验非常差。
 
 对于同时支持HTTPS和HTTP的资源，引用的时候要把引用资源的URL里的协议头去掉，例如：//www.example.com/scirpt.js，这样相当于相对路径，即浏览器会自动根据当前是HTTPS还是HTTP来给资源URL补上协议头的，可以达到无缝切换。
+
+# NLP参考资源+
+
+https://mp.weixin.qq.com/s/A-UDbDNS77wd8WTgYiYD8Q
+
+文本分类有哪些论文中很少提及却对性能有重要影响的tricks？
+
+https://mp.weixin.qq.com/s/HWqFpDhvhGrJtNTSLsO3Eg
+
+大众点评信息流基于文本生成的创意优化实践
+
+https://mp.weixin.qq.com/s/dIQoNRtZcm2TL_XQldIhaA
+
+详解Transition-based Dependency parser基于转移的依存句法解析器

@@ -114,6 +114,10 @@ https://mp.weixin.qq.com/s/MDgqSwVEClNqNpaWuGTEpg
 
 微软亚研院提出用于语义分割的结构化知识蒸馏
 
+https://mp.weixin.qq.com/s/67GSnZnJySFrCESvmwhO9A
+
+论文解读Channel pruning for Accelerating Very Deep Neural Networks
+
 # Mask R-CNN
 
 Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的NN。它是何恺明2017年的新作。

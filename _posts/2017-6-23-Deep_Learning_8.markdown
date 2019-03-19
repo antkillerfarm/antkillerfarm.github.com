@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（八）——CNN进化史
+title:  深度学习（八）——CNN进化史（1）
 category: DL 
 ---
 
