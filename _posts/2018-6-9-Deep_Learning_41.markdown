@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十一）——迁移学习, 深度哈希, Spatial Transformer Networks
+title:  深度学习（四十一）——迁移学习, 深度哈希
 category: DL 
 ---
 
@@ -313,6 +313,10 @@ https://mp.weixin.qq.com/s/nIV7n8o7t2F3j0XFr9v-vg
 
 迁移自适应学习最新综述
 
+https://mp.weixin.qq.com/s/b6rH-eepKDSHLnixDVvKUQ
+
+新加坡南洋理工最新37页《零样本学习综述》论文
+
 # 深度哈希
 
 https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg
@@ -350,31 +354,3 @@ HashGAN:基于注意力机制的深度对抗哈希模型提升跨模态检索效
 https://mp.weixin.qq.com/s/3Z2Zc8zTq2uiPyw7ZuuZfw
 
 解密美图大规模多媒体数据检索技术DeepHash
-
-# Spatial Transformer Networks
-
-论文：
-
-《Spatial Transformer Networks》
-
-参考：
-
-http://www.cnblogs.com/neopenx/p/4851806.html
-
-Spatial Transformer Networks(空间变换神经网络)
-
-http://blog.csdn.net/shaoxiaohu1/article/details/51809605
-
-论文笔记：Spatial Transformer Networks
-
-http://blog.csdn.net/shaoxiaohu1/article/details/51809605
-
-Spatial Transformer Networks
-
-https://mp.weixin.qq.com/s/ciqQMezcB-oM24X8eQqTNg
-
-花式玩耍Spatial Transformation Networks
-
-https://mp.weixin.qq.com/s/4VE2lZeFf05AyLp_s3nTFQ
-
-理解Spatial Transformer Networks

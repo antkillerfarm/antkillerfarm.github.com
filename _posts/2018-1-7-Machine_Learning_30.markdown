@@ -4,30 +4,6 @@ title:  机器学习（三十）——Model-Free Control
 category: ML 
 ---
 
-# Temporal-Difference Learning
-
-### 反向认识TD($$\lambda$$)（续）
-
-特别的，E值并不需要等到完整的Episode结束才能计算出来，它可以每经过一个时刻就得到更新。E值存在饱和现象，有一个瞬时最高上限：
-
-$$E_\max=1/(1-\gamma\lambda)$$
-
-结合之前提到的TD error和ET，则更新公式可改为：
-
-$$V(S_t)\leftarrow V(S_t)+\alpha\delta_tE_t(s)$$
-
-如果$$\lambda=0$$，则只有当前状态得到更新，即$$E_t(s)=1(S_t=s)$$，这实际上就和之前提到TD(n=0)算法是一致的了。
-
->David Silver的课件在这里存在表示混乱的问题，在之前的章节中，TD(X)表示的是n=X，而下文中TD(X)有的时候指的是$$\lambda=X$$。这里借用python表示参数的语法，更准确的描述公式。
-
-如果$$\lambda=1$$，TD($$\lambda=1$$)粗略看与每次访问的MC算法等同；在线更新时，状态价值差每一步都会有积累；离线更新时，TD($$\lambda=1$$)等同于MC算法(即遍历整个Episode)。
-
-参考：
-
-https://mp.weixin.qq.com/s/X6bukOqZ2Eg7jZ6MydHwSg
-
-伯克利提出时序差分模型TDM：让深度强化学习更像人类
-
 # Model-Free Control
 
 ## 概述

@@ -4,7 +4,47 @@ title:  机器学习（五）——SVM（2）
 category: ML 
 ---
 
-## 支持向量（续）
+## KKT条件（续）
+
+其中的$$w^*,\alpha^*,\beta^*$$表示满足KKT条件的相应变量的取值。条件1也被称为KKT对偶互补条件（KKT dual complementarity condition）。显然这些$$w^*,\alpha^*,\beta^*$$既是原始问题的解，也是对偶问题的解。
+
+严格的说，KKT条件是非线性约束优化问题存在最优解的必要条件。这个问题的充分条件比较复杂，这里不做讨论。
+
+>注：Harold William Kuhn，1925～2014，美国数学家，普林斯顿大学教授。
+
+>Albert William Tucker，1905～1995，加拿大数学家，普林斯顿大学教授。
+
+>William Karush，1917～1997，美国数学家，加州州立大学北岭分校教授。（注意，California State University和University of California是不同的学校）
+
+参考：
+
+https://mp.weixin.qq.com/s/AKTGyHlbCj0P949K-LAv6A
+
+拉格朗日乘数法
+
+https://www.zhihu.com/question/64834116
+
+拉格朗日乘子法漏解的情况？
+
+https://mp.weixin.qq.com/s/UyNpJZ7k_q1qVdcNhrzDcQ
+
+直观详解：拉格朗日乘法和KKT条件
+
+https://mp.weixin.qq.com/s/PELnlB5vMV0gGJbL6BzoIA
+
+原始-对偶算法的设计原理
+
+https://mp.weixin.qq.com/s/5655NgkxrbK3qtA4Ilxd4w
+
+为何引入对偶问题
+
+## 支持向量
+
+针对最优边距分类问题，我们定义：
+
+$$g_i(w)=-y^{(i)}(w^Tx^{(i)}+b)+1\le 0$$
+
+由KKT对偶互补条件可知，如果$$\alpha_i>0$$，则$$g_i(w)=0$$。
 
 ![](/images/article/SVM_3.png)
 
@@ -188,26 +228,3 @@ k(x,x') &=& k_1(x,x')
 \end{eqnarray}$$
 
 其中$$c>0$$是一个常数，$$f(\cdot)$$是任意函数，$$q(\cdot)$$是一个系数非负的多项式，$$\phi(x)$$是一个从$$x$$到$$\mathbb{R}^M$$的函数，$$k_3(\cdot, \cdot)$$是$$\mathbb{R}^M$$中的一个有效的核，$$A$$是一个对称半正定矩阵，$$x_a, x_b$$是变量（未必不相交），且$$x = (x_a, x_b)$$。$$k_a,k_b$$是各自空间的有效的核函数。
-
-## 核函数的局限性
-
-目前来说，核函数的选择仍然是个未决问题，通常的做法是同时使用不同的核来计算，选择其中较优的结果，这实际上是集成学习的范畴了。
-
-## 规则化和不可分情况处理
-
-我们之前讨论的情况都是建立在样例线性可分的假设上，当样例线性不可分时，我们可以尝试使用核函数来将特征映射到高维，这样很可能就可分了。然而，映射后我们也不能100%保证可分。那怎么办呢，我们需要将模型进行调整，以保证在不可分的情况下，也能够尽可能地找出分隔超平面。
-
-![](/images/article/SVM_6.png)
-
-上面的右图中可以看到一个离群点（可能是噪声），它会造成超平面的移动，从而导致边距缩小，可见以前的模型对噪声非常敏感。再有甚者，如果离群点在另外一个类中，那么这时候就是线性不可分的了。
-
-这时候应该允许一些点游离并在模型中违背限制条件（函数间隔大于1）。我们设计得到新的模型如下（也称软间隔（Soft-margin））：
-
-$$\begin{align}
-&\operatorname{min}_{\gamma,w,b}& & \frac{1}{2}\|w\|^2+C\sum_{i=1}^m\xi_i\\
-&\operatorname{s.t.}& & y^{(i)}(w^Tx^{(i)}+b)\ge 1-\xi_i,i=1,\dots,m\\
-& & & \xi_i\ge 0,i=1,\dots,m
-\end{align}$$
-
-这里的C是离群点的权重，C越大表明离群点对目标函数影响越大，也就是越不希望看到离群点。我们看到，目标函数控制了离群点的数目和程度，使大部分样本点仍然遵守限制条件。
-

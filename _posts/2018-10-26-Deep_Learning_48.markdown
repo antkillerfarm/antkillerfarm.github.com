@@ -238,6 +238,10 @@ https://zhuanlan.zhihu.com/p/59141570
 
 漫谈全景分割
 
+https://mp.weixin.qq.com/s/fSaBskCxMkNwVXDtCI7ZZg
+
+Decoders对于语义分割的重要性
+
 # 问答系统
 
 GA-Reader

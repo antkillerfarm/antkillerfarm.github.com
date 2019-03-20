@@ -328,6 +328,12 @@ https://mp.weixin.qq.com/s/RS7O7prvkCvKyxkK3YQxtA
 
 Litho的使用及原理剖析
 
+## 参考
+
+https://mp.weixin.qq.com/s/twfpUMf9CfXcgwtFFkJ4Ig
+
+Android整体设计及背后意义
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/8dVronQoeZLJI2g49AljLg
@@ -369,11 +375,3 @@ https://mp.weixin.qq.com/s/aqfwn0kiXbZwVDVhHXBAXQ
 https://mp.weixin.qq.com/s/GxWOuIf25JQnQoCstVyGLQ
 
 李飞飞团队提出OpenTag模型：减少人工标注，自动提取产品属性值
-
-https://mp.weixin.qq.com/s/qos7VRFP7uYZ6Qt83KiPhw
-
-用机器学习构建O(N)复杂度的排序算法，可在GPU和TPU上加速计算
-
-https://mp.weixin.qq.com/s/_w4IIRY6LwqehpDlEXt90A
-
-牛津大学提出神经网络新训练法：用低秩结构增强网络压缩和对抗稳健性

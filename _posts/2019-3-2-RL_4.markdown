@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  强化学习（四）——模仿学习
+title:  强化学习（四）——Temporal-Difference Learning
 category: RL 
 ---
 
@@ -32,46 +32,148 @@ https://mp.weixin.qq.com/s/yGQSihfBDcXgqBnvvpQDog
 
 蒙特卡罗方法入门
 
-# A2C
+# Temporal-Difference Learning
 
-https://zhuanlan.zhihu.com/p/51652845
+## TD
 
-强化学习这都学不会的话，咳咳，你过来下！
+时序差分学习和蒙特卡洛学习一样，它也从Episode学习，不需要了解模型本身；但是它可以学习不完整的Episode，通过bootstrapping，猜测Episode的结果，同时持续更新这个猜测。
 
-# 模仿学习
+最简单的TD算法——TD(0)的更新公式如下：
 
-https://zhuanlan.zhihu.com/p/27935902
+$$V(S_t)\leftarrow V(S_t)+\alpha(R_{t+1}+\gamma V(S_{t+1})-V(S_t))$$
 
-机器人学习Robot Learning之模仿学习Imitation Learning的发展
+其中，$$R_{t+1}+\gamma V(S_{t+1})$$被称作TD target，而$$\delta_t=R_{t+1}+\gamma V(S_{t+1})-V(S_t)$$被称作TD error。
 
-https://zhuanlan.zhihu.com/p/25688750
+下面用驾车返家的例子直观解释蒙特卡洛策略评估和TD策略评估的差别。
 
-模仿学习（Imitation Learning）完全介绍
+想象一下你下班后开车回家，需要预估整个行程花费的时间。假如一个人在驾车回家的路上突然碰到险情：对面迎来一辆车感觉要和你相撞，严重的话他可能面临死亡威胁，但是最后双方都采取了措施没有实际发生碰撞。如果使用蒙特卡洛学习，路上发生的这一险情可能引发的负向奖励不会被考虑进去，不会影响总的预测耗时；但是在TD学习时，碰到这样的险情，这个人会立即更新这个状态的价值，随后会发现这比之前的状态要糟糕，会立即考虑决策降低速度赢得时间，也就是说你不必像蒙特卡洛学习那样直到他死亡后才更新状态价值，那种情况下也无法更新状态价值。
 
-https://mp.weixin.qq.com/s/naq73D27vsCOUBperKto8A
+TD算法相当于在整个返家的过程中（一个Episode），根据已经消耗的时间和预期还需要的时间来不断更新最终回家需要消耗的时间。
 
-从监督式到DAgger，综述论文描绘模仿学习全貌
+| 状态 | 已消耗时间 | 预计仍需耗时 | 预测总耗时 |
+|:--:|:--:|:--:|:--:|
+| 离开办公室 | 0 | 30 | 30 |
+| 取车，发现下雨 | 5 | 35 | 40 |
+| 离开高速公路 | 20 | 15 | 35 |
+| 被迫跟在卡车后面 | 30 | 10 | 40 |
+| 到达家所在街区 | 40 | 3 | 43 |
+| 到家 | 43 | 0 | 43 |
 
-https://mp.weixin.qq.com/s/LNNqp2KsEAljG26hY43mUw
+基于上表所示的数据，下图展示了蒙特卡洛学习和TD学习两种不同的学习策略来更新价值函数（各个状态的价值）。这里使用的是从某个状态预估的到家还需耗时来间接反映某状态的价值：某位置预估的到家时间越长，该位置价值越低，在优化决策时需要避免进入该状态。对于蒙特卡洛学习过程，驾驶员在路面上碰到各种情况时，他不会更新对于回家的预估时间，等他回到家得到了真实回家耗时后，他会重新估计在返家的路上着每一个主要节点状态到家的时间，在下一次返家的时候用新估计的时间来帮助决策。
 
-ICML2018 模仿学习教程
+而对于TD学习，在一开始离开办公室的时候你可能会预估总耗时30分钟，但是当你取到车发现下雨的时候，你会立刻想到原来的预计过于乐观，因为既往的经验告诉你下雨会延长你的返家总时间，此时你会更新目前的状态价值估计，从原来的30分钟提高到40分钟。同样当你驾车离开高速公路时，会一路根据当前的状态（位置、路况等）对应的预估返家剩余时间，直到返回家门得到实际的返家总耗时。这一过程中，你会根据状态的变化实时更新该状态的价值。
 
-# 强化学习参考资源
+![](/images/img2/TD.png)
 
-https://mp.weixin.qq.com/s/Fn1s9Ia8L1ckgn6iP24FhQ
+## TD vs. MC---1
 
-如何让神经网络具有好奇心
+通过这个例子，我们可以直观的了解到：
 
-# 深度强化学习参考资源
+1.TD在知道结果之前可以学习，MC必须等到最后结果才能学习；
 
-https://mp.weixin.qq.com/s/6wPtb9Qdhr9FiMk15xrUsQ
+2.TD可以在没有结果时学习，可以在持续进行的环境里学习。
 
-强化跨模态匹配和自监督模仿学习
+## TD vs. MC---2
 
-https://mp.weixin.qq.com/s/lU3_ONAIGDUv_AVv2Xn14w
+$$G_t = R_{t+1} + \gamma R_{t+2} + \dots + \gamma^{T−1}R_T$$是$$V_{\pi}(S_t)$$的无偏估计值。
 
-仅需2小时学习，基于模型的强化学习方法可以在Atari上实现人类水平
+True TD target：$$R_{t+1}+\gamma V_{\pi}(S_{t+1})$$，也是$$V_{\pi}(S_t)$$的无偏估计值。
 
-https://mp.weixin.qq.com/s/TIWnnCmVZnFQNH9Fig5aTw
+TD target：$$R_{t+1}+\gamma V(S_{t+1})$$，是$$V_{\pi}(S_t)$$的有偏估计值。
 
-DeepMind发布新奖励机制：让智能体不再“碰瓷”
+MC没有bias，但有着较高的Variance，且对初始值不敏感；
+
+TD低variance, 但有一定程度的bias，对初始值较敏感，通常比MC更高效；
+
+## TD vs. MC---3
+
+再来看如下示例：
+
+已现有两个状态(A和B)，MDP未知，衰减系数为1，有如下表所示8个完整Episode的经验及对应的即时奖励，其中除了第1个Episode有状态转移外，其余7个均只有一个状态。
+
+| Episode | 状态转移及奖励 |
+|:--:|:--:|
+| 1 | A:0,B:0 |
+| 2 | B:1 |
+| 3 | B:1 |
+| 4 | B:1 |
+| 5 | B:1 |
+| 6 | B:1 |
+| 7 | B:1 |
+| 8 | B:0 |
+
+问题：依据仅有的Episode，计算状态A，B的价值分别是多少，即V(A)=？， V(B)=？
+
+答案：V(B) = 6/8，V(A)根据不同算法结果不同，用MC算法结果为0，TD则得出6/8。
+
+解释：应用MC算法，由于需要完整的Episode,因此仅Episode1可以用来计算A的状态价值，很明显是0；同时B的价值是6/8。应用TD算法时，TD算法试图利用现有的Episode经验构建一个MDP（如下图），由于存在一个Episode使得状态A有后继状态B，因此状态A的价值是通过状态B的价值来计算的，同时经验表明A到B的转移概率是100%，且A状态的即时奖励是0，并且没有衰减，因此A的状态价值等于B的状态价值。
+
+MC算法试图收敛至一个能够最小化状态价值与实际收获的均方差的解决方案。TD算法则收敛至一个根据已有经验构建的最大可能的Markov模型的状态价值。
+
+通过比较可以看出，TD算法使用了MDP问题的Markov属性，在Markov环境下更有效；但是MC算法并不利用Markov属性，通常在非Markov环境下更有效。
+
+## DP & MC & TD
+
+Monte-Carlo, Temporal-Difference和Dynamic Programming都是计算状态价值的一种方法，区别在于，前两种是在不知道Model的情况下的常用方法，这其中又以MC方法需要一个完整的Episode来更新状态价值，TD则不需要完整的Episode；DP方法则是基于Model（知道模型的运作方式）的计算状态价值的方法，它通过计算一个状态S所有可能的转移状态S’及其转移概率以及对应的即时奖励来计算这个状态S的价值。
+
+关于是否Bootstrap：MC没有bootstrapping，只使用实际收获；DP和TD都有bootstrapping。
+
+关于是否用采样来计算: MC和TD都是应用样本来估计实际的价值函数；而DP则是利用模型直接计算得到实际价值函数，没有采样之说。
+
+![](/images/img2/DP_MC_TD.png)
+
+上图从两个维度解释了四种算法的差别，多了一个穷举法。这两个维度分别是：采样深度和广度。当使用单个采样，同时不走完整个Episode就是TD；当使用单个采样但走完整个Episode就是MC；当考虑全部样本可能性，但对每一个样本并不走完整个Episode时，就是DP；当既考虑所有Episode又把Episode从开始到终止遍历完，就变成了穷举法。
+
+需要提及的是：DP利用的是整个MDP问题的模型，也就是状态转移概率，虽然它并不实际利用样本，但是它利用了整个模型的规律，因此认为是Full Width的。
+
+## bootstrapping
+
+在前面的章节，我们一直提到bootstrapping这个名词，然而却没有解释它的含义，现在是时候了。
+
+统计学中，bootstrapping可以指依赖于重置随机抽样的一切试验。bootstrapping可以用于计算样本估计的准确性。对于一个采样，我们只能计算出某个统计量(例如均值)的一个取值，无法知道均值统计量的分布情况。但是通过自助法(自举法)我们可以模拟出均值统计量的近似分布。有了分布很多事情就可以做了（比如说有你推出的结果来进而推测实际总体的情况）。
+
+bootstrapping方法的实现很简单，假设抽取的样本大小为n:
+
+在原样本中有放回的抽样，抽取n次。每抽一次形成一个新的样本，重复操作，形成很多新样本，通过这些样本就可以计算出样本的一个分布。新样本的数量通常是1000-10000。如果计算成本很小，或者对精度要求比较高，就增加新样本的数量。
+
+优点：简单易于操作。
+
+缺点：bootstrapping的运用基于很多统计学假设，因此假设的成立与否会影响采样的准确性。
+
+**但是，这不是bootstrapping在RL中的含义！**
+
+Finally, we note one last special property of DP methods. All of them update estimates of the values
+of states based on estimates of the values of successor states. That is, they update estimates on the
+basis of other estimates. We call this general idea **bootstrapping**.
+
+上面这段是Sutton给bootstrapping的定义，其实也不是太好懂。那么bootstrapping到底是什么意思呢？
+
+$$V(S_t)\leftarrow V(S_t)+\alpha(R_{t+1}+\gamma V(S_{t+1})-V(S_t))$$
+
+上式是TD的更新公式，从中可以看出TD target：$$R_{t+1}+\gamma V(S_{t+1})$$中已经包含了V(s)，也就是说它是用其它V(s)更新当前V(s)。这种特性就是**bootstrapping**。
+
+$$V(S_t)\leftarrow V(S_t)+\alpha(G_t-V(S_t))$$
+
+而MC的target：$$G_t$$就和V(s)无关。
+
+参考：
+
+https://datascience.stackexchange.com/questions/26938/what-exactly-is-bootstrapping-in-reinforcement-learning
+
+What exactly is bootstrapping in reinforcement learning?
+
+## TD(n)
+
+先前所介绍的TD算法实际上都是TD(0)算法，括号内的数字0表示的是在当前状态下往前多看1步，要是往前多看2步更新状态价值会怎样？这就引入了n-step的概念。
+
+在当前状态往前行动n步，计算n步的return，同样TD target 也由2部分组成，已走的步数使用确定的即时reward，剩下的使用估计的状态价值替代。这就是TD(n)算法。
+
+显然，MC实际上就是TD($$n=\infty$$)。
+
+定义n-步收获：
+
+$$G_t^{(n)}=R_{t+1}+\gamma R_{t+2}+\dots+\gamma^{n-1}R_{t+n}+\gamma^nV(S_{t+n})$$
+
+TD(n)的更新公式：
+
+$$V(S_t)\leftarrow V(S_t)+\alpha(G_t^{(n)}-V(S_t))$$

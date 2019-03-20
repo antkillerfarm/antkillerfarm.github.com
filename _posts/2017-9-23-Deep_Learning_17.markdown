@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十七）——深度目标跟踪, 无监督/半监督/自监督深度学习, 细粒度分类
+title:  深度学习（十七）——深度目标跟踪, 无监督/半监督/自监督深度学习, 细粒度分类, Spatial Transformer Networks
 category: DL 
 ---
 
@@ -320,9 +320,9 @@ https://mp.weixin.qq.com/s/RiL-s50oOI--PZyIOd2E0g
 
 弱监督语义分割最新方法资源列表
 
-https://mp.weixin.qq.com/s/b6rH-eepKDSHLnixDVvKUQ
+https://mp.weixin.qq.com/s/USOWECXk_az4b6eTssfOBw
 
-新加坡南洋理工最新37页《零样本学习综述》论文
+基于弱监督深度学习的图像分割方法综述
 
 # 细粒度分类
 
@@ -369,3 +369,31 @@ https://mp.weixin.qq.com/s/slmod5rW4qRhxGnbNN2J8g
 https://mp.weixin.qq.com/s/JGQdHS_yqkOMrN_Z3jEb7A
 
 基于深度学习的细粒度图像分类综述
+
+# Spatial Transformer Networks
+
+论文：
+
+《Spatial Transformer Networks》
+
+参考：
+
+http://www.cnblogs.com/neopenx/p/4851806.html
+
+Spatial Transformer Networks(空间变换神经网络)
+
+http://blog.csdn.net/shaoxiaohu1/article/details/51809605
+
+论文笔记：Spatial Transformer Networks
+
+http://blog.csdn.net/shaoxiaohu1/article/details/51809605
+
+Spatial Transformer Networks
+
+https://mp.weixin.qq.com/s/ciqQMezcB-oM24X8eQqTNg
+
+花式玩耍Spatial Transformation Networks
+
+https://mp.weixin.qq.com/s/4VE2lZeFf05AyLp_s3nTFQ
+
+理解Spatial Transformer Networks

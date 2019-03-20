@@ -339,6 +339,34 @@ JS/CSS体积减少了67%，我们是如何做到的？
 
 # CPU+
 
+https://mp.weixin.qq.com/s/gzE46SzANLaYaXdLVEBRaA
+
+专家揭秘“低功耗芯片设计”真相
+
+https://mp.weixin.qq.com/s/pFBhnjtXi8uNMGjYFeSfow
+
+芯片行业都难在哪儿？这篇说得最详细！
+
+https://mp.weixin.qq.com/s/-cudXRIo0t4gNpEqVJ7vKw
+
+芯片光刻的流程详解
+
+https://mp.weixin.qq.com/s/V2AY7VcUEFCMAdMPJ54ZiA
+
+一文看懂光刻机
+
+https://mp.weixin.qq.com/s/WBab6k4mIkZNzpvbgSbpVQ
+
+一文看懂SiP封装技术
+
+https://mp.weixin.qq.com/s/nDWJS4rfWsqeVgJQbAYQ6w
+
+一文看懂IGBT
+
+https://zhuanlan.zhihu.com/p/56864499
+
+CPU是怎么调节输入电压的？为什么要这么做？
+
 https://zhuanlan.zhihu.com/p/57780996
 
 内存延迟：因与果

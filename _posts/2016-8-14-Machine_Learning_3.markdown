@@ -6,6 +6,17 @@ category: ML
 
 ## 广义线性模型（续）
 
+由公式4、5可得：
+
+$$\phi_i=\frac{e^{\eta_i}}{\sum_{j=1}^ke^{\eta_j}}=\frac{e^{\theta_i^Tx}}{\sum_{j=1}^ke^{\theta_j^Tx}}$$
+
+这种从$$\eta$$映射到$$\phi$$的函数，被称作softmax函数。
+
+>注：由于softmax函数给出的是分类结果的概率，因此对于某些分类结果中，所有类别概率都很低的情况，我们有理由认为遇到了未知的类别。softmax函数的这种概率可解释性，是它优于其他函数的地方。
+
+$$h_\theta(x)=E[T(y)\mid x;\theta]=\begin{bmatrix} \phi_1 \\ \phi_2 \\ \vdots \\ \phi_{k-1} \end{bmatrix}
+=\begin{bmatrix} \frac{\exp(\theta_1^Tx)}{\sum_{j=1}^k\exp(\theta_j^Tx)} \\ \frac{\exp(\theta_2^Tx)}{\sum_{j=1}^k\exp(\theta_j^Tx)} \\ \vdots \\ \frac{\exp(\theta_{k-1}^Tx)}{\sum_{j=1}^k\exp(\theta_j^Tx)} \end{bmatrix}$$
+
 最大似然估计对数函数：
 
 $$\ell(\theta)=\sum_{i=1}^m\log p(y^{(i)}\mid x^{(i)};\theta)=\sum_{i=1}^m\log\prod_{l=1}^k\left(\frac{\exp(\theta_{l}^Tx^{(i)})}{\sum_{j=1}^k\exp(\theta_j^Tx^{(i)})}\right)^{1\{y^{(i)}=l\}}$$
@@ -194,34 +205,3 @@ $$\begin{align}p(y=1\mid x)&=\frac{p(x\mid y=1)p(y=1)}{p(x\mid y=1)p(y=1)+p(x\mi
 $$\begin{align}p(x_1,\dots,x_{50000}\mid y)&=p(x_1\mid y)p(x_2\mid y,x_1)p(x_3\mid y,x_1,x_2)\cdots p(x_{50000}\mid y,x_1,\dots,x_{49999})(条件概率的乘法公式)
 \\&=p(x_1\mid y)p(x_2\mid y)p(x_3\mid y)\cdots p(x_{50000}\mid y)(NB假设)=\prod_{i=1}^np(x_i\mid y)
 \end{align}$$
-
-因此：
-
-$$\begin{align}p(y=1\mid x)&=\frac{p(x\mid y=1)p(y=1)}{p(x)}
-\\&=\frac{(\prod_{i=1}^np(x_i\mid y=1))p(y=1)}{(\prod_{i=1}^np(x_i\mid y=1))p(y=1)+(\prod_{i=1}^np(x_i\mid y=0))p(y=0)}\tag{1}
-\end{align}$$
-
-最大似然估计值为：
-
-$$\phi_{j\mid y=1}=p(x_j=1\mid y=1)=\frac{\sum_{i=1}^m1\{x_j^{(i)}=1\land y^{(i)}=1\}}{\sum_{i=1}^m1\{y^{(i)}=1\}}$$
-
-$$\phi_{j\mid y=0}=p(x_j=1\mid y=0)=\frac{\sum_{i=1}^m1\{x_j^{(i)}=1\land y^{(i)}=0\}}{\sum_{i=1}^m1\{y^{(i)}=0\}}$$
-
-$$\phi_y=p(y=1)=\frac{\sum_{i=1}^m1\{y^{(i)}=1\}}{m}$$
-
-NB算法还可以扩展到y有多个取值的情况。对于y为连续函数的情况，可以采用区间离散化操作，将之离散化为多个离散值。
-
-参考：
-
-https://mp.weixin.qq.com/s/e5Sa66HZly2N0sCqoYNSeA
-
-一文读懂贝叶斯分类算法
-
-https://mp.weixin.qq.com/s/xNZ0x3_o77C1KL1WTdYkfQ
-
-解读实践中最广泛应用的分类模型：朴素贝叶斯算法
-
-https://mp.weixin.qq.com/s/KNV0KfWktmsPUtQ93a7cDQ
-
-这个男人嫁还是不嫁？懂点朴素贝叶斯(Naive Bayes)原理让你更幸福
-

@@ -222,3 +222,7 @@ https://mp.weixin.qq.com/s/HWqFpDhvhGrJtNTSLsO3Eg
 https://mp.weixin.qq.com/s/dIQoNRtZcm2TL_XQldIhaA
 
 详解Transition-based Dependency parser基于转移的依存句法解析器
+
+https://mp.weixin.qq.com/s/LQU_HJ4q74lL5oCIk7w5RA
+
+达观数据：中文对比英文自然语言处理NLP的区别综述

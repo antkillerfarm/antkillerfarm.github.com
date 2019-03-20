@@ -4,6 +4,38 @@ title:  机器学习（四）——SVM（1）
 category: ML 
 ---
 
+## 朴素贝叶斯方法（续）
+
+因此：
+
+$$\begin{align}p(y=1\mid x)&=\frac{p(x\mid y=1)p(y=1)}{p(x)}
+\\&=\frac{(\prod_{i=1}^np(x_i\mid y=1))p(y=1)}{(\prod_{i=1}^np(x_i\mid y=1))p(y=1)+(\prod_{i=1}^np(x_i\mid y=0))p(y=0)}\tag{1}
+\end{align}$$
+
+最大似然估计值为：
+
+$$\phi_{j\mid y=1}=p(x_j=1\mid y=1)=\frac{\sum_{i=1}^m1\{x_j^{(i)}=1\land y^{(i)}=1\}}{\sum_{i=1}^m1\{y^{(i)}=1\}}$$
+
+$$\phi_{j\mid y=0}=p(x_j=1\mid y=0)=\frac{\sum_{i=1}^m1\{x_j^{(i)}=1\land y^{(i)}=0\}}{\sum_{i=1}^m1\{y^{(i)}=0\}}$$
+
+$$\phi_y=p(y=1)=\frac{\sum_{i=1}^m1\{y^{(i)}=1\}}{m}$$
+
+NB算法还可以扩展到y有多个取值的情况。对于y为连续函数的情况，可以采用区间离散化操作，将之离散化为多个离散值。
+
+参考：
+
+https://mp.weixin.qq.com/s/e5Sa66HZly2N0sCqoYNSeA
+
+一文读懂贝叶斯分类算法
+
+https://mp.weixin.qq.com/s/xNZ0x3_o77C1KL1WTdYkfQ
+
+解读实践中最广泛应用的分类模型：朴素贝叶斯算法
+
+https://mp.weixin.qq.com/s/KNV0KfWktmsPUtQ93a7cDQ
+
+这个男人嫁还是不嫁？懂点朴素贝叶斯(Naive Bayes)原理让你更幸福
+
 ## 拉普拉斯平滑
 
 对于样本集中未出现的单词，在其首次出现时，由于先验概率$$p(x_i\mid y=1)=0,p(x_i\mid y=0)=0$$，这时公式1会出现$$\frac{0}{0}$$的情况。
@@ -187,43 +219,3 @@ $$\begin{align}
 g_i(w^*)& \le 0,i=1,\dots,k & \\
 \alpha_i^* & \ge 0,i=1,\dots,k & \\
 \end{align}$$
-
-其中的$$w^*,\alpha^*,\beta^*$$表示满足KKT条件的相应变量的取值。条件1也被称为KKT对偶互补条件（KKT dual complementarity condition）。显然这些$$w^*,\alpha^*,\beta^*$$既是原始问题的解，也是对偶问题的解。
-
-严格的说，KKT条件是非线性约束优化问题存在最优解的必要条件。这个问题的充分条件比较复杂，这里不做讨论。
-
->注：Harold William Kuhn，1925～2014，美国数学家，普林斯顿大学教授。
-
->Albert William Tucker，1905～1995，加拿大数学家，普林斯顿大学教授。
-
->William Karush，1917～1997，美国数学家，加州州立大学北岭分校教授。（注意，California State University和University of California是不同的学校）
-
-参考：
-
-https://mp.weixin.qq.com/s/AKTGyHlbCj0P949K-LAv6A
-
-拉格朗日乘数法
-
-https://www.zhihu.com/question/64834116
-
-拉格朗日乘子法漏解的情况？
-
-https://mp.weixin.qq.com/s/UyNpJZ7k_q1qVdcNhrzDcQ
-
-直观详解：拉格朗日乘法和KKT条件
-
-https://mp.weixin.qq.com/s/PELnlB5vMV0gGJbL6BzoIA
-
-原始-对偶算法的设计原理
-
-https://mp.weixin.qq.com/s/5655NgkxrbK3qtA4Ilxd4w
-
-为何引入对偶问题
-
-## 支持向量
-
-针对最优边距分类问题，我们定义：
-
-$$g_i(w)=-y^{(i)}(w^Tx^{(i)}+b)+1\le 0$$
-
-由KKT对偶互补条件可知，如果$$\alpha_i>0$$，则$$g_i(w)=0$$。

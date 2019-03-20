@@ -8,6 +8,56 @@ category: ML
 
 ## 序列最小优化方法（续）
 
+$$\alpha_2\eta=\alpha_2^*\eta+y^{(2)}(E_1-E_2)$$
+
+$$\alpha_2^{new,unclipped}=\alpha_2+\frac{y^{(2)}(E_1-E_2)}{\eta}$$
+
+$$\alpha_2^{new,unclipped}$$是无约束的$$W(\alpha_2)$$问题的最优值。如果考虑约束条件则有：
+
+$$\alpha_2^{new}=\begin{cases}
+H, & if \ \alpha_2^{new,unclipped}>H \\
+\alpha_2^{new,unclipped}, & if \ L\le \alpha_2^{new,unclipped} \le H \\
+L, & if \ \alpha_2^{new,unclipped}<L \\
+\end{cases}$$
+
+其中，$$\alpha_2^{new}$$是更新值。
+
+由公式7可得：
+
+$$\alpha_1+s\alpha_2=\alpha_1^{new}+s\alpha_2^{new}$$
+
+$$\alpha_1^{new}=\alpha_1+s(\alpha_2-\alpha_2^{new})$$
+
+在特殊情况下，$$\eta$$可能不为正，如果核函数K不满足Mercer定理，那么目标函数可能变得非正定，$$\eta$$可能出现负值。即使K是有效的核函数，如果训练样本中出现相同的特征x，那么$$\eta$$仍有可能为0。SMO算法在$$\eta$$不为正值的情况下仍有效。
+
+当$$\eta\le 0$$时，W本身没有极值，极值出现在边界处，即$$\alpha_2^{new}=L$$或$$\alpha_2^{new}=H$$。我们需要对边界的W值进行检查。
+
+这里首先对$$\alpha_2^{new}=L$$的情况做一下讨论。
+
+$$\alpha_1^{new}=L_1=\alpha_1+s(\alpha_2-L)$$
+
+由公式8可得：
+
+$$\begin{align}
+L_1-y^{(1)}L_1v_1&=L_1\left[(y^{(1)})^2-y^{(1)}(u_i-b-y^{(1)}\alpha_1K_{11}-y^{(2)}\alpha_2K_{21})\right]
+\\&=L_1\left[y^{(1)}(y^{(1)}-u_i+b)+\alpha_1K_{11}+s\alpha_2K_{12}\right]
+\\&=L_1\left[y^{(1)}(b-E_1)+\alpha_1K_{11}+s\alpha_2K_{12}\right]=L_1f_1
+\end{align}$$
+
+即
+
+$$f_1=y^{(1)}(b-E_1)+\alpha_1K_{11}+s\alpha_2K_{12}$$
+
+同理：
+
+$$L-y^{(2)}Lv_2=Lf_2$$
+
+$$f_2=y^{(2)}(b-E_2)+s\alpha_1K_{12}+\alpha_2K_{22}$$
+
+由《机器学习（五）》中的公式5可得：
+
+$$W_L=L_1f_1+Lf_2-\frac{1}{2}L_1^2K_{11}-\frac{1}{2}L^2K_{22}-sLL_1K_{12}$$
+
 $$\alpha_2^{new}=H$$的情况，同理可得：
 
 $$\alpha_1^{new}=H_1=\alpha_1+s(\alpha_2-H)$$
@@ -206,63 +256,3 @@ ERM是一类基本的学习算法，也是本节关注的焦点。
 我们定义预测函数类（hypothesis class ）$$\mathcal{H}$$，用以表示解决某类学习问题的所有可能的分类器的集合。（实际上也就是参数$$\theta$$所有可能取值的集合。）则ERM算法可表示为：
 
 $$\hat h=\arg\min_{h\in \mathcal{H}}\hat\varepsilon(h)$$
-
-参考：
-
-http://www.jianshu.com/p/f1433317bf48
-
-你真的理解机器学习中偏差-方差之间的权衡吗？
-
-https://mp.weixin.qq.com/s/nRaM87Wao4XdHwltV1nh-A
-
-思考VC维与PAC：如何理解深度神经网络中的泛化理论？
-
-https://mp.weixin.qq.com/s/ty-V1JOzx24lLB8C0zHpaw
-
-机器学习碎碎念：霍夫丁不等式
-
-## $$\mathcal{H}$$为有限集的情况
-
-根据之前的讨论，我们做如下定义：
-
-$$Z=1\{h_i(x)\neq y\}$$
-
-$$Z_j=1\{h_i(x^{(j)})\neq y^{(j)}\}$$
-
-$$\hat\varepsilon(h_i)=\frac{1}{m}\sum_{j=1}^mZ_j$$
-
-其中，$$h_i\in \mathcal{H}$$。
-
-由Hoeffding不等式可知：
-
-$$P(\lvert\varepsilon(h_i)-\hat\varepsilon(h_i)\rvert>\gamma)\le 2\exp(-2\gamma^2m)$$
-
-这个公式表明：对于特定的$$h_i$$，在m很大的情况下，训练误差有很大的概率接近于泛化误差。
-
-如果我们用$$A_i$$表示事件$$\lvert\varepsilon(h_i)-\hat\varepsilon(h_i)\rvert>\gamma$$，则上式可改为$$P(A_i)\le 2\exp(-2\gamma^2m)$$。
-
-$$P(\exists h\in\mathcal{H}.\lvert\varepsilon(h_i)-\hat\varepsilon(h_i)\rvert>\gamma)=P(A_1\cup \dots\cup A_k)$$
-
-$$\le \sum_{i=1}^kP(A_i)\le \sum_{i=1}^k2\exp(-2\gamma^2m)=2k\exp(-2\gamma^2m)$$
-
-$$\begin{align}
-&1-P(\exists h\in\mathcal{H}.\lvert\varepsilon(h_i)-\hat\varepsilon(h_i)\rvert>\gamma)=P(\lnot\exists h\in\mathcal{H}.\lvert\varepsilon(h_i)-\hat\varepsilon(h_i)\rvert>\gamma)
-\\&=P(\forall h\in\mathcal{H}.\lvert\varepsilon(h_i)-\hat\varepsilon(h_i)\rvert\le\gamma)\ge 1-2k\exp(-2\gamma^2m)
-\end{align}$$
-
-上面的结果表明，对于所有的$$h\in \mathcal{H}$$，实际上也有一个收敛性质。这个性质被称为一致收敛（uniform convergence）。
-
-上式变形可得：
-
-$$m\ge \frac{1}{2\gamma^2}\log\frac{2k}{\delta}$$
-
-其中，$$\delta=2k\exp(-2\gamma^2m)$$。
-
-上式表明，在固定$$\gamma$$和$$\delta$$的情况下，至少需要多少训练样本，才能保证对于所有的$$h\in \mathcal{H}$$，$$P(\lvert\varepsilon(h_i)-\hat\varepsilon(h_i)\rvert\le \gamma)$$至少为$$1-\delta$$。
-
-这里的m也被称为算法的样本复杂度（sample complexity），它表征达到一定性能所需要的训练样本的数量。
-
-同样的，我们固定m和$$\delta$$，可得：
-
-$$\lvert\varepsilon(h)-\hat\varepsilon(h)\rvert\le \sqrt{\frac{1}{2m}\log\frac{2k}{\delta}}$$
-

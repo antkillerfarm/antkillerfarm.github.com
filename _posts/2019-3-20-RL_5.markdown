@@ -1,0 +1,132 @@
+---
+layout: post
+title:  强化学习（五）——模仿学习
+category: RL 
+---
+
+# Temporal-Difference Learning（续）
+
+## Large Random Walk
+
+既然存在n-步预测，那么n=？时效果最好呢，下面的例子试图回答这个问题：
+
+这个示例研究了使用多个不同步数预测联合不同步长(step-size，公式里的系数$$\alpha$$）时，分别在在线和离线状态时状态函数均方差的差别。所有研究使用了10个Episode。离线与在线的区别在于，离线是在经历所有10个Episode后进行状态价值更新；而在线则至多经历一个Episode就更新依次状态价值。
+
+![](/images/img2/LRW.png)
+
+结果如图表明，离线和在线之间曲线的形态差别不明显；从步数上来看，步数越长，越接近MC算法，均方差越大。对于这个大规模随机行走示例，在线计算比较好的步数是3-5步，离线计算比较好的是6-8步。但是不同的问题其对应的比较高效的步数不是一成不变的。因此选择多少步数作为一个较优的计算参数也是一个问题。
+
+## TD($$\lambda$$)
+
+一种简单的方法是计算Averaging n-Step Returns，例如：
+
+$$G=\frac{1}{2}G^{(2)}+\frac{1}{2}G^{(4)}$$
+
+有没有更有效的方法呢？这里我们引入了一个新的参数：$$\lambda$$。通过引入这个新的参数，可以做到在不增加计算复杂度的情况下综合考虑所有步数的预测。
+
+$$\lambda$$收获：
+
+$$G_t^{\lambda}=(1-\lambda)\sum_{n=1}^\infty\lambda^{n-1}G_t^{(n)}$$
+
+$$\lambda$$预测：
+
+$$V(S_t)\leftarrow V(S_t)+\alpha(G_t^{\lambda}-V(S_t))$$
+
+![](/images/img2/TD_2.png)
+
+这张图还是比较好理解，例如对于n=3的3-步收获，赋予其在收获中的权重如左侧阴影部分面积，对于终止状态的T-步收获，T以后的所有阴影部分面积。而所有节段面积之和为1。这种几何级数的设计也考虑了算法实现的计算方便性。
+
+TD($$\lambda$$)的设计使得Episode中，后一个状态的状态价值与之前所有状态的状态价值有关，同时也可以说成是一个状态价值参与决定了后续所有状态的状态价值。但是每个状态的价值对于后续状态价值的影响权重是不同的。我们可以从两个方向来理解TD($$\lambda$$)：
+
+### 前向认识TD($$\lambda$$)
+
+引入了$$\lambda$$之后，会发现要更新一个状态的状态价值，必须要走完整个Episode获得每一个状态的即时奖励以及最终状态获得的即时奖励。这和MC算法的要求一样，因此TD($$\lambda$$)算法有着和MC方法一样的劣势。λ取值区间为[0,1]，当$$\lambda$$=1时对应的就是MC算法。这个实际计算带来了不便。
+
+### 反向认识TD($$\lambda$$)
+
+TD($$\lambda$$)从另一方面提供了一个单步更新的机制，通过下面的示例来说明。
+
+![](/images/img2/TD_3.png)
+
+老鼠在连续接受了3次响铃和1次亮灯信号后遭到了电击，那么在分析遭电击的原因时，到底是响铃的因素较重要还是亮灯的因素更重要呢？
+
+这里有两种启发方法：
+
+**频率启发 Frequency heuristic**：将原因归因于出现频率最高的状态。
+
+**就近启发 Recency heuristic**：将原因归因于较近的几次状态。
+
+给每一个状态引入一个数值：效用追踪（Eligibility Traces, ET），来结合上述两种启发：
+
+$$
+E_0(s)=0\\
+E_t(s)=\gamma\lambda E_{t-1}(s)+1(S_t=s)
+$$
+
+![](/images/img2/TD_4.png)
+
+上图是$$E_t(s)$$函数的一个可能的曲线图。该图横坐标是时间，横坐标下有竖线的位置代表当前进入了状态s，纵坐标是效用追踪值E 。可以看出当某一状态连续出现，E值会在一定衰减的基础上有一个单位数值的提高，此时将增加该状态对于最终收获贡献的比重，因而在更新该状态价值的时候可以较多地考虑最终收获的影响。同时如果该状态距离最终状态较远，则其对最终收获的贡献越小。
+
+特别的，E值并不需要等到完整的Episode结束才能计算出来，它可以每经过一个时刻就得到更新。E值存在饱和现象，有一个瞬时最高上限：
+
+$$E_\max=1/(1-\gamma\lambda)$$
+
+结合之前提到的TD error和ET，则更新公式可改为：
+
+$$V(S_t)\leftarrow V(S_t)+\alpha\delta_tE_t(s)$$
+
+如果$$\lambda=0$$，则只有当前状态得到更新，即$$E_t(s)=1(S_t=s)$$，这实际上就和之前提到TD(n=0)算法是一致的了。
+
+>David Silver的课件在这里存在表示混乱的问题，在之前的章节中，TD(X)表示的是n=X，而下文中TD(X)有的时候指的是$$\lambda=X$$。这里借用python表示参数的语法，更准确的描述公式。
+
+如果$$\lambda=1$$，TD($$\lambda=1$$)粗略看与每次访问的MC算法等同；在线更新时，状态价值差每一步都会有积累；离线更新时，TD($$\lambda=1$$)等同于MC算法(即遍历整个Episode)。
+
+参考：
+
+https://mp.weixin.qq.com/s/X6bukOqZ2Eg7jZ6MydHwSg
+
+伯克利提出时序差分模型TDM：让深度强化学习更像人类
+
+# A2C
+
+https://zhuanlan.zhihu.com/p/51652845
+
+强化学习这都学不会的话，咳咳，你过来下！
+
+# 模仿学习
+
+https://zhuanlan.zhihu.com/p/27935902
+
+机器人学习Robot Learning之模仿学习Imitation Learning的发展
+
+https://zhuanlan.zhihu.com/p/25688750
+
+模仿学习（Imitation Learning）完全介绍
+
+https://mp.weixin.qq.com/s/naq73D27vsCOUBperKto8A
+
+从监督式到DAgger，综述论文描绘模仿学习全貌
+
+https://mp.weixin.qq.com/s/LNNqp2KsEAljG26hY43mUw
+
+ICML2018 模仿学习教程
+
+# 强化学习参考资源
+
+https://mp.weixin.qq.com/s/Fn1s9Ia8L1ckgn6iP24FhQ
+
+如何让神经网络具有好奇心
+
+# 深度强化学习参考资源
+
+https://mp.weixin.qq.com/s/6wPtb9Qdhr9FiMk15xrUsQ
+
+强化跨模态匹配和自监督模仿学习
+
+https://mp.weixin.qq.com/s/lU3_ONAIGDUv_AVv2Xn14w
+
+仅需2小时学习，基于模型的强化学习方法可以在Atari上实现人类水平
+
+https://mp.weixin.qq.com/s/TIWnnCmVZnFQNH9Fig5aTw
+
+DeepMind发布新奖励机制：让智能体不再“碰瓷”
