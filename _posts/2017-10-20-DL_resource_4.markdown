@@ -94,6 +94,10 @@ https://mp.weixin.qq.com/s/i1PLA1xr3CefKx1EcVUVIg
 
 谷歌破世界纪录！圆周率计算到小数点后31.4万亿位
 
+https://mp.weixin.qq.com/s/rX8L63-jDGJT6lCAj04I3Q
+
+独家解读！阿里重磅发布机器学习平台PAI 3.0
+
 ## 实战
 
 http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg

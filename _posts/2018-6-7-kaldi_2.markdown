@@ -297,6 +297,14 @@ https://mp.weixin.qq.com/s/Er3Poj8oxV5OKNlAlZwq_A
 
 # 机器人/无人驾驶参考资源+
 
+https://mp.weixin.qq.com/s/rWcPIWtqJubI_WUVMpuRdQ
+
+自动驾驶中的激光雷达目标检测
+
+https://mp.weixin.qq.com/s/Rt6Gem1kgWK2ACqiIGiDiw
+
+无人驾驶汽车路径规划概述
+
 https://zhuanlan.zhihu.com/p/59774288
 
 自动驾驶中基于传感器融合的道路分割
@@ -312,3 +320,7 @@ https://mp.weixin.qq.com/s/gT0P5hXry1Yfs_TbIma18A
 https://mp.weixin.qq.com/s/BRuT4YtU3D9c2GCeBkqv_w
 
 高精地图，比想象更重要
+
+https://mp.weixin.qq.com/s/BFNaEBa8KwvRBK_mSunXjw
+
+MPC与LQR比较

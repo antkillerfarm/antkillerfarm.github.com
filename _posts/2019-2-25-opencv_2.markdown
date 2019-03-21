@@ -398,6 +398,18 @@ https://mp.weixin.qq.com/s/j970Qp8Cz2fpbImujkS2Xg
 
 # TensorFlow+
 
+https://mp.weixin.qq.com/s/rQ9eZosHOoDOXg9tAg4t6A
+
+tensorflow Object Detection API使用预训练模型mask r-cnn实现对象检测
+
+https://mp.weixin.qq.com/s/kYOwUWlTP4T0IYKDWDbCsg
+
+tensorflow object detection API训练公开数据集Oxford-IIIT Pets Dataset
+
+https://mp.weixin.qq.com/s/8uDsaZjsiKXGea6M-w-RvA
+
+tensorflow object detection API使用之GPU训练实现宠物识别
+
 https://mp.weixin.qq.com/s/knw7yuUxHe-qeCLfj20onw
 
 Bayesian GAN的TensorFlow实现

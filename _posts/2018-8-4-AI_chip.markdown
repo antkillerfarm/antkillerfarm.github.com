@@ -56,7 +56,7 @@ http://www.deephi.com/zh-cn/dnndk.html
 
 目前的AI Chip战争，入局的玩家基本都解决了芯片有无的问题。体系结构的红利也吃的差不多了，在未来几年不大可能再保持目前的算力增速。因此，未来争夺的焦点将转向软件方面。实际上，今年以来，已经有客户拿友商产品性能来压我们。然而也就是压一下而已，让他弃用他肯定不干。原因无他，我司80%的功能都已经自动化，没人会和好用过不去。
 
-# TPU
+## TPU
 
 ​Tensor Processing Unit(TPU)是Google推出的AI芯片系列。目前已经有3个版本：
 
@@ -70,7 +70,7 @@ TPU v3, cloud beta 2018, 420 teraflops, 128 GB HBM, training and inference, beta
 
 《In-Datacenter Performance Analysis of a Tensor Processing Unit​》
 
-## Coral Dev Board
+### Coral Dev Board
 
 Coral Dev Board是Google于2019年3月推出的一款搭载TPU的嵌入式开发板。
 
@@ -80,7 +80,7 @@ http://linuxgizmos.com/google-launches-i-mx8m-dev-board-with-edge-tpu-ai-chip/
 
 Google launches i.MX8M dev board with Edge TPU AI chip
 
-## 参考
+### 参考
 
 https://zhuanlan.zhihu.com/p/26882794
 
@@ -109,6 +109,10 @@ https://zhuanlan.zhihu.com/p/26522315
 https://mp.weixin.qq.com/s/wunqEHC6c-yUVXTl4yTG4w
 
 仅需1/5成本：TPU是如何超越GPU，成为深度学习首选处理器的
+
+https://mp.weixin.qq.com/s/vncPcczTyqglndeZAgjWfw
+
+一文读懂：谷歌千元级Edge TPU为何如此之快？
 
 ## HBM
 
@@ -303,19 +307,3 @@ https://mp.weixin.qq.com/s/S1y4NEx4_Mgwf68S2pexqA
 https://mp.weixin.qq.com/s/gtgPYf939uYRzxAab_LZLQ
 
 谢源：计算存储一体化，在存储里做深度学习，架构创新实现下一代AI芯片
-
-https://mp.weixin.qq.com/s/s-fYxv4z5kkJUFueU2IR7w
-
-BP表达式与硬件架构：相似性构建更高效的计算单元
-
-https://zhuanlan.zhihu.com/p/31782874
-
-Graphcore AI芯片：更多分析
-
-https://mp.weixin.qq.com/s/O-NDsFs6AOwl43LyevXtzg
-
-OpenAI发布“块稀疏”GPU内核：实现文本情感分析与图像生成建模当前最优水平
-
-https://mp.weixin.qq.com/s/Qfbc2iQnXacOqOGIrpRQRw
-
-Tensor Core究竟有多快？全面对比英伟达Tesla V100/P100的RNN加速能力

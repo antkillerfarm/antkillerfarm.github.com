@@ -210,6 +210,10 @@ https://mp.weixin.qq.com/s/OU3onjVeOnqo_ORIJtQdMQ
 
 DeepFashion2数据集：87.3万对买家秀-卖家秀图像+海量标注
 
+https://mp.weixin.qq.com/s/l5wXZOiRj53ufckiRx0hIw
+
+从图像中检测和识别表格，北航&微软提出新型数据集TableBank
+
 ## 人脸/行为
 
 http://blog.csdn.net/wangkr111/article/details/44514097
@@ -377,15 +381,3 @@ https://mp.weixin.qq.com/s/mZ79KAuSIJLtBEXvKwUi-w
 https://mp.weixin.qq.com/s/atQHJ5U2pJpSG6PguN7J4Q
 
 如何保持运动小车上的旗杆屹立不倒？TensorFlow利用A3C算法训练智能体玩CartPole游戏
-
-https://mp.weixin.qq.com/s/rQ9eZosHOoDOXg9tAg4t6A
-
-tensorflow Object Detection API使用预训练模型mask r-cnn实现对象检测
-
-https://mp.weixin.qq.com/s/kYOwUWlTP4T0IYKDWDbCsg
-
-tensorflow object detection API训练公开数据集Oxford-IIIT Pets Dataset
-
-https://mp.weixin.qq.com/s/8uDsaZjsiKXGea6M-w-RvA
-
-tensorflow object detection API使用之GPU训练实现宠物识别

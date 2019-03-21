@@ -140,23 +140,25 @@ http://tensorinfinity.com/paper_119.html
 
 图像内容鉴黄算法综述
 
+## 光神经网络
+
+https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ
+
+3D打印的深度神经网络，光速执行AI运算
+
+https://mp.weixin.qq.com/s/5zt8UIpNBcgNZpwHHJj68Q
+
+光学CNN层替换传统CNN层，超省电
+
+https://mp.weixin.qq.com/s/IheyYAC1yIigYOW-gtc5Eg
+
+Science重磅！用光速实现深度学习，跟GPU说再见
+
+https://mp.weixin.qq.com/s/ENYX87SMlgv30x08iYFQIw
+
+几乎零能耗零延迟！UCLA科学家发明光衍射神经网络，登上Science
+
 ## 参考
-
-https://mp.weixin.qq.com/s/Ji3dTs0lMjLLR5Oxbsr3Vg
-
-何恺明等人最新论文提出非局部神经网络
-
-https://mp.weixin.qq.com/s/vH9vl15eQz5aarhgSLMh-A
-
-戳穿泡沫：对“信息瓶颈”理论的批判性分析
-
-https://mp.weixin.qq.com/s/LFAnmDec05JPojO3ncdJBw
-
-使用深度学习和树搜索进行从零开始的既快又慢的学习
-
-https://mp.weixin.qq.com/s/r-tl6ooNcQ_j4OFzV-5f3w
-
-计算机视觉这一年
 
 https://mp.weixin.qq.com/s/MoKzux6Z69dlpqcVTvQ9oQ
 

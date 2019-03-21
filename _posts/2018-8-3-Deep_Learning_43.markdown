@@ -343,3 +343,7 @@ https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
 https://mp.weixin.qq.com/s/zvEIUJpgrjSM9-TLSzr3sQ
 
 为什么说GAN很快就要替代现有摄影技术了？
+
+https://mp.weixin.qq.com/s/sTLDG0rmFZv20G5veNYS9g
+
+英伟达再出黑魔法GauGAN：凭借几根线条，草图秒变风景照

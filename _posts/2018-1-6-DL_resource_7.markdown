@@ -353,3 +353,19 @@ https://mp.weixin.qq.com/s/Sb_kPgtwyQFWloDT3707TA
 https://mp.weixin.qq.com/s/dJXl5tI-WKB3O28sgJmbkw
 
 机器也能感知时间，AI系统可预测5分钟内的未来！
+
+https://mp.weixin.qq.com/s/Ji3dTs0lMjLLR5Oxbsr3Vg
+
+何恺明等人最新论文提出非局部神经网络
+
+https://mp.weixin.qq.com/s/vH9vl15eQz5aarhgSLMh-A
+
+戳穿泡沫：对“信息瓶颈”理论的批判性分析
+
+https://mp.weixin.qq.com/s/LFAnmDec05JPojO3ncdJBw
+
+使用深度学习和树搜索进行从零开始的既快又慢的学习
+
+https://mp.weixin.qq.com/s/r-tl6ooNcQ_j4OFzV-5f3w
+
+计算机视觉这一年

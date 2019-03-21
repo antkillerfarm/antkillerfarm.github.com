@@ -334,6 +334,10 @@ https://mp.weixin.qq.com/s/WXVZkqCGlj6ym5YrSZS3Vg
 
 谷歌普林斯顿提出首个端到端立体双目系统深度学习方案
 
+https://mp.weixin.qq.com/s/NlYgA-A43q4C155kRdWPAQ
+
+论文复现：谷歌实时端到端双目系统深度学习网络stereonet
+
 https://mp.weixin.qq.com/s/9yfTO2jHz69-k1MsUGIM0Q
 
 双目立体放大！谷歌刚刚开源的这篇论文可能会成为手机双摄的新玩法

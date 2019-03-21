@@ -178,6 +178,10 @@ https://zhuanlan.zhihu.com/p/58734240
 
 3D Object Detection Overview - 2019
 
+https://mp.weixin.qq.com/s/l7RNfRB-KvxRHRKNYx1oeQ
+
+云从3D人体重建登顶三项榜单，一张照片就能生成3D形象
+
 # 视频目标分割
 
 视频目标分割任务和语义分割有两个基本区别：

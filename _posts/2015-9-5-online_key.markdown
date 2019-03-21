@@ -143,3 +143,21 @@ F表示相关的算法。只有符合F算法的P和U，才能通过程序的验�
     <td>MAXIM</td>
   </tr>
 </table>
+
+# AI Chip+
+
+https://mp.weixin.qq.com/s/s-fYxv4z5kkJUFueU2IR7w
+
+BP表达式与硬件架构：相似性构建更高效的计算单元
+
+https://zhuanlan.zhihu.com/p/31782874
+
+Graphcore AI芯片：更多分析
+
+https://mp.weixin.qq.com/s/O-NDsFs6AOwl43LyevXtzg
+
+OpenAI发布“块稀疏”GPU内核：实现文本情感分析与图像生成建模当前最优水平
+
+https://mp.weixin.qq.com/s/Qfbc2iQnXacOqOGIrpRQRw
+
+Tensor Core究竟有多快？全面对比英伟达Tesla V100/P100的RNN加速能力
