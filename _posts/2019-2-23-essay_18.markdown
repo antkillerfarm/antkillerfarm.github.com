@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 卢作孚
+title: 卢作孚, Falcon heavy, 朗道十卷
 category: essay 
 ---
 
@@ -31,6 +31,76 @@ category: essay
 卢先生的管理思想以“人”为核心，以“服务社会，便利人群，开发产业，富强国家”的民生精神为纲，以“爱人”、“育人”、“选人”、“用人”“留人”为目，在企业管理的各个领域均有超卓之处。这一点即使在现在，也很少有公司能做到哪怕一部分，BAT都差得远。
 
 “远学孔子，近学卢作孚”这虽是某书的广告词，但实不为过也。
+
+# Falcon heavy
+
+2018.2
+
+![](/images/img2/Falcon.jpg)
+
+![](/images/img2/Falcon_2.jpg)
+
+在太空动力学，霍曼转移轨道（或译为郝曼转移轨道，Hohmann transfer orbit）是一种变换太空船轨道的方法，途中只需两次引擎推进，相对地节省燃料。此种轨道操纵名称来自Walter Hohmann，他于1925年出版了相关著作。
+
+>Walter Hohmann，1880~1945，德国工程师，亚琛工业大学博士。轨道动力学（orbital dynamics）之父。
+
+![](/images/img2/Hohmann.gif)
+
+![](/images/img2/SpaceX.gif)
+
+![](/images/img2/SpaceX.png)
+
+![](/images/img2/rocket.jpg)
+
+![](/images/img2/Elon_Musk.jpg)
+
+https://www.zhihu.com/question/266793958
+
+如何看待SpaceX猎鹰重型火箭在美国时间2月6日发射并且回收成功？
+
+https://www.zhihu.com/question/21731308
+
+SpaceX 猎鹰火箭和中国的长征系列火箭，各有什么优劣势？
+
+https://mp.weixin.qq.com/s/d6Z0pF7SG3mEFAgUuwTPZQ
+
+马斯克的“神性思维模式”，简直太神奇了！
+
+https://www.zhihu.com/question/314292163
+
+如何评价SpaceX载人龙飞船成功首飞并与国际空间站对接？
+
+# 朗道十卷
+
+2017.11
+
+![](/images/article/Landau.png)
+
+Lev Davidovich Landau，1908-1968，苏联犹太人，号称世界上最后一个全能的物理学家。1962年获诺贝尔物理学奖。
+
+按照朗道原来的计划，这套教科书应为九卷：
+
+1.力学
+
+2.场论
+
+3.量子力学
+
+4.相对论性量子理论（量子电动力学）
+
+5.统计物理学
+
+6.流体力学
+
+7.弹性理论
+
+8.连续媒质电动力学
+
+9.物理动力学
+
+不幸，朗道本人因为车祸，第四和第九两卷不及完成。他的合作者栗弗席兹教授按照当年他的原意和大纲，和其他人一起完成了这套巨著，据说还增加了第十卷：
+
+10.统计物理学（2）
 
 # 世说新语+
 

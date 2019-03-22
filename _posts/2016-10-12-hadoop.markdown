@@ -306,16 +306,20 @@ http://blog.csdn.net/dhtx_wzgl/article/details/49423979
 
 HBase学习之二级索引
 
-## 参考
+## OpenTSDB
 
-https://mp.weixin.qq.com/s/ucQgmb1NkdyfAw6wDTyWYg
+OpenTSDB（Time Series Database）是一个基于HBase的存放时序数据的数据库。
 
-阿里HBase又放出了哪些大招？
+官网：
 
-https://mp.weixin.qq.com/s/BICJgyv2Y8r0j5Jjw6weRw
+http://opentsdb.net/
 
-大数据查询——HBase读写设计与实践
+DB这个词很有误导性，其实它并不是一个db，单独一个OpenTSDB无法存储任何数据，它只是一层数据读写的服务，更准确的说它只是建立在Hbase上的一层数据读写的服务。
 
-https://blog.csdn.net/odailidong/article/details/41794403
+HBase在使用上的一个难点就是如何根据业务的特点，设计键值和索引。OpenTSDB就是这方面的一个实践。
 
-Hbase万亿级存储性能优化总结
+参考：
+
+https://mp.weixin.qq.com/s/GApmeXGbjRTnhullArlkYg
+
+小米正用时序数据库，解决这个“硬核”问题

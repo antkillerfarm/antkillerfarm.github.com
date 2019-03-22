@@ -302,4 +302,3 @@ TARGET_CFLAGS:= -O0 $(TARGET0_CFLAGS) -ggdb3
 1.filter-out是make提供的过滤函数，可去除字符串A中包含的特定字符串B。
 
 2.定义TARGET0_CFLAGS的原因在于：make不支持变量的递归定义，需要中间变量暂存之。
-

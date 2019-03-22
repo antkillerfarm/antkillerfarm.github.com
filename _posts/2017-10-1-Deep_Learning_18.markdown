@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十八）——数据增强, 深度信息检索, DMN, 语义分割
+title:  深度学习（十八）——数据增强, 深度信息检索, DMN, 手势识别, 语义分割
 category: DL 
 ---
 
@@ -177,6 +177,40 @@ DMN可进行端到端的训练，并在多种任务上取得了state-of-the-art�
 http://blog.csdn.net/javafreely/article/details/71994247
 
 动态记忆网络
+
+# 手势识别
+
+https://zhuanlan.zhihu.com/p/26630215
+
+浅谈手势识别在直播中的运用
+
+https://zhuanlan.zhihu.com/p/30561160
+
+2017-最全手势识别/跟踪相关资源大列表分享
+
+http://www.sohu.com/a/203306961_465975
+
+浙江大学CSPS最佳论文：使用卷积神经网络的多普勒雷达手势识别
+
+https://www.zhihu.com/question/20131478
+
+我打算只根据手的形状来识别手势。用哪种机器学习算法比较好？
+
+https://www.leiphone.com/news/201502/QM7LdSN874dWXFLo.html
+
+带你了解世界最先进的手势识别技术
+
+https://mp.weixin.qq.com/s/DbvH6jM1VV47xKylbW-pug
+
+掌纹识别近十年进展综述
+
+https://mp.weixin.qq.com/s/mnPh8w3VuG9apprOkugbLA
+
+中科大提出新型连续手语识别框架LS-HAN，帮助“听”懂听障人士
+
+https://mp.weixin.qq.com/s/pUciYFjOKL3ea91fLCy0Yw
+
+基于OpenCV与tensorflow实现实时手势识别
 
 # 语义分割
 

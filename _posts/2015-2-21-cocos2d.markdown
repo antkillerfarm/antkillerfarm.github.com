@@ -309,24 +309,14 @@ https://mp.weixin.qq.com/s/_RAXrlGPeN_3D6dhJFf6Qg
 
 让互联网更快的协议，QUIC在腾讯的实践及性能优化
 
-# DL参考资源
+# OpenWrt配置篇（续）
 
-https://mp.weixin.qq.com/s/QFYZwbrTJuN-JiMJ5NQxWg
+## 扩展包
 
-AI学会了视觉推理，“脑补”看不清的物体
+大多数情况下，我们并不需要亲手编写OpenWrt模块，因为日常使用中的绝大部分功能，OpenWrt项目都提供了相应的扩展包。因此，如何寻找、安装扩展包，就成为一个经常性的问题。
 
-https://mp.weixin.qq.com/s/mPN3MXueeZImY2z0KBD6CA
+官方扩展包可以在代码根目录下的feeds.conf.default文件中找到。
 
-CMU&谷歌Spotlight论文：超越卷积的视觉推理框架
+从这里可以看出，OpenWrt项目早期的代码托管在openwrt.org下，而最近的开发已经迁移至github。因此，如果有的包在源代码中没有看到的话，可以到openwrt.org下碰碰运气。
 
-https://mp.weixin.qq.com/s/tKccNaGe5EqEEqpoItfn5Q
-
-我在谷歌大脑见习机器学习的一年：Node.js创始人的尝试笔记
-
-https://mp.weixin.qq.com/s/hjRRmCK4QBJ6UTABAR-cig
-
-神经网络quine：自我复制+解决辅助任务
-
-https://mp.weixin.qq.com/s/fJUQXnVwTlfOC37Go0lLUg
-
-携程图像智能化建设之路
+一个软件包可以生成独立的ipk安装文件（Modularizes），也可以直接打包进img中（Built-in）。这个生成选项在`make menuconfig`的选项菜单中，选择Y就是Built-in，选择M就是Modularizes。

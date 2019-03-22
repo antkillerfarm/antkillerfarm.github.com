@@ -324,3 +324,15 @@ https://mp.weixin.qq.com/s/BRuT4YtU3D9c2GCeBkqv_w
 https://mp.weixin.qq.com/s/BFNaEBa8KwvRBK_mSunXjw
 
 MPC与LQR比较
+
+https://mp.weixin.qq.com/s/8n_o83A-5AjG3YCPG4FOgA
+
+Apollo自动定位技术——三维几何变换和坐标系介绍
+
+https://mp.weixin.qq.com/s/1xNsKVw-OUr3Lmb3Ob33Ow
+
+自动驾驶研发模拟仿真系统的工作介绍
+
+https://zhuanlan.zhihu.com/p/59890550
+
+自动驾驶中的目标跟踪方法
