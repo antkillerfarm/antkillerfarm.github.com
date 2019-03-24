@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  知名数据集
+title:  知名数据集（一）
 category: resource 
 ---
 
@@ -201,6 +201,10 @@ https://mp.weixin.qq.com/s/4jhtCUtv_szfMvyDCWKvoQ
 https://mp.weixin.qq.com/s/e_mVkS-mZdKwHiGvrNeaMQ
 
 8种寻找机器学习数据集的方法
+
+https://mp.weixin.qq.com/s/o_MTEAdFHkJRFZP5JCeYMQ
+
+收藏：全网最大机器学习数据集，视觉、NLP、音频都在这了
 
 ## NLP
 

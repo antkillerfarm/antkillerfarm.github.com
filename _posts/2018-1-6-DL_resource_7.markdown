@@ -369,3 +369,7 @@ https://mp.weixin.qq.com/s/LFAnmDec05JPojO3ncdJBw
 https://mp.weixin.qq.com/s/r-tl6ooNcQ_j4OFzV-5f3w
 
 计算机视觉这一年
+
+https://mp.weixin.qq.com/s/OkSjIw54TNbRtKN0I2Ug1Q
+
+LeCun哈佛演讲：《机器怎样才能像人和动物一样学习》（135页PPT）

@@ -301,6 +301,10 @@ https://mp.weixin.qq.com/s/0Zcrwi3WROzm19ApDZINMQ
 
 Ruder博士答辩41页PPT，面向自然语言处理的神经网络迁移学习
 
+https://mp.weixin.qq.com/s/_t9pV93uaY8gpzHZ6XgiAw
+
+面向自然语言处理的神经网络迁移学习，NLP网红Ruder博士329页论文
+
 https://zhuanlan.zhihu.com/p/58514431
 
 Domain Adaptation：不用深度网络，如何处理源域和目标域异构问题？

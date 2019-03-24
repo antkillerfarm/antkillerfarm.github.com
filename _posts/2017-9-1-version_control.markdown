@@ -226,3 +226,11 @@ https://mp.weixin.qq.com/s/dIQoNRtZcm2TL_XQldIhaA
 https://mp.weixin.qq.com/s/LQU_HJ4q74lL5oCIk7w5RA
 
 达观数据：中文对比英文自然语言处理NLP的区别综述
+
+https://mp.weixin.qq.com/s/9NFkd-8tRUI6GaPefhEf-Q
+
+斯坦福新模型刷新纪录：自然语言理解GLUE排行榜最高分！
+
+https://mp.weixin.qq.com/s/dfobYDv-98W9NAmAbzwQKw
+
+字符级NLP优劣分析：在某些场景中比词向量更好用

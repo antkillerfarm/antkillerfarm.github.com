@@ -144,6 +144,28 @@ F表示相关的算法。只有符合F算法的P和U，才能通过程序的验�
   </tr>
 </table>
 
+# CPU
+
+## 3D芯片
+
+随着半导体工艺日益接近物理极限，2D芯片已经不能满足进化的需要，芯片的设计也迈向了立体发展的阶段。目前主流的3D芯片技术包括FinFET（1999）与FD-SOI（2000），他们都是胡正明团队的作品。
+
+>胡正明，1947年生。台湾大学本科（1968）+UCB硕博（1970，1973）。台积电首席科学家，MIT教授。美国工程院院士，中科院外籍院士。
+
+参考：
+
+http://www.sohu.com/a/108777952_467791
+
+多少年了，终于明白了FinFET与FD-SOI制程
+
+https://mp.weixin.qq.com/s/NJBx8ndkBBedC81f3-DKOA
+
+5nm以后的晶体管选择
+
+https://mp.weixin.qq.com/s/RtSmbwguM7dbsXkWqAPuCQ
+
+英特尔3D封装技术深度解读
+
 # AI Chip+
 
 https://mp.weixin.qq.com/s/s-fYxv4z5kkJUFueU2IR7w

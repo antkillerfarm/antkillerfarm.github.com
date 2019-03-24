@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十四）——单分类SVM&多分类SVM, 贝叶斯线性回归, 强连通分量算法, Stacking, 三门问题, 社区发现
+title:  机器学习（二十四）——单分类SVM&多分类SVM, 贝叶斯线性回归, Stacking, 三门问题, 社区发现
 category: ML 
 ---
 
@@ -270,24 +270,6 @@ https://mp.weixin.qq.com/s/g24mcZjQ25sQJx9mqE_XSA
 https://mp.weixin.qq.com/s/bjyO4AS1Sjo09qNMpqf6JA
 
 最新36页《贝叶斯非参学习综述》，机器学习内功修炼手册
-
-# 强连通分量算法
-
-http://ishare.iask.sina.com.cn/f/34626295.html
-
-矩阵不可约的充要条件
-
-http://www.cnblogs.com/saltless/archive/2010/11/08/1871430.html
-
-求强连通分量的Tarjan算法
-
-http://blog.csdn.net/dm_vincent/article/details/8554244
-
-求解强连通分量算法之---Kosaraju算法
-
-http://www.cnblogs.com/luweiseu/archive/2012/07/14/2591370.html
-
-强连通分支算法--Kosaraju算法、Tarjan算法和Gabow算法
 
 # Stacking
 

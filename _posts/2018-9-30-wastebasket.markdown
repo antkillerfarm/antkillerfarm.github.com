@@ -354,6 +354,10 @@ https://mp.weixin.qq.com/s/UwPCDA89GH5X-HubeJddnQ
 
 怎么画高大上的神经网络结构？试试这个！
 
+https://mp.weixin.qq.com/s/MMzvZA55Xb2sOA7rJiXiEw
+
+那些酷炫的深度学习网络图怎么画出来的？
+
 ## howmuch.net
 
 howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：

@@ -196,14 +196,6 @@ http://deeplearning.net/
 
 一个深度学习方面的资料网站。
 
-http://deeplearning.net/software/theano/
-
-Theano的主页。
-
-https://github.com/Theano/Theano
-
-Theano的代码地址。
-
 http://www.scratchapixel.com/
 
 一个学习图像处理的网站。
@@ -219,6 +211,10 @@ https://blog.csdn.net/liyuanbhu/
 https://blog.csdn.net/taily_duan/article/category/6156573
 
 一个CV的专栏
+
+https://mp.weixin.qq.com/s/jlgTGqxBpD-va2R2KT0E6Q
+
+同学，你要的OpenCV图像处理系列教程已安排
 
 ## 参考
 

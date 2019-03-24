@@ -257,3 +257,7 @@ http://mp.weixin.qq.com/s/5ozeLeF6IyKTOqAxYEdaog
 https://mp.weixin.qq.com/s/QHxuYWb39BktuTomiwG2rg
 
 点云配准国内外研究现状
+
+https://mp.weixin.qq.com/s/ki0F3zjbB_X84m9NsYYlow
+
+旷视Oral论文提出GeoNet：基于测地距离的点云分析深度网络

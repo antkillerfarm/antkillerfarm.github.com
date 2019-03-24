@@ -328,6 +328,10 @@ https://mp.weixin.qq.com/s/8oEdQOmSRrkIaTVQdhk2Dw
 
 无监督领域特定单图像去模糊
 
+https://mp.weixin.qq.com/s/FpIaa8XoJ9GsHxL-W1Cl5Q
+
+斯坦福AI实验室机器学习编程新范式：弱监督
+
 # 细粒度分类
 
 https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw

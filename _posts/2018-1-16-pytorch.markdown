@@ -378,6 +378,10 @@ https://mp.weixin.qq.com/s/QBI9C_2CKLTvR0SoDdF27g
 
 百度PaddlePaddle开源视频分类模型Attention Cluster
 
+https://mp.weixin.qq.com/s/e63adoVJ5M_LalMCbB6CIQ
+
+PARL源码走读：使用策略梯度算法求解迷宫寻宝问题
+
 # X-Deep Learning
 
 TensorFlow、MXNet、PyTorch等框架大都是面向图像、语音等领域的稠密数据设计，对广告、推荐等场景的高维稀疏数据上的深度学习计算考虑不足。

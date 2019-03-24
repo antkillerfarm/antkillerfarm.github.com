@@ -279,3 +279,7 @@ https://mp.weixin.qq.com/s/hBcsPcs1z9GyYK2RoJeCFg
 https://mp.weixin.qq.com/s/_ZdRYDG_ZOL2VPArbnV2TA
 
 TuckER：基于张量分解的知识图谱补全
+
+https://mp.weixin.qq.com/s/9VvEJu2XAS1joVGF-EUY2w
+
+5篇顶会论文带你了解知识图谱最新研究进展

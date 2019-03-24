@@ -325,6 +325,10 @@ https://mp.weixin.qq.com/s/5694PDHy9BeoL8qy31MaxQ
 
 如何用vim格式化代码
 
+https://mp.weixin.qq.com/s/QpJWyLY5AyrXGF-j7LYTGg
+
+1700页数学笔记火了！全程敲代码，速度飞快易搜索，硬核小哥教你上手LaTeX+Vim
+
 # IDE
 
 http://pypl.github.io/IDE.html

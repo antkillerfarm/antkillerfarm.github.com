@@ -1,68 +1,8 @@
 ---
 layout: post
-title:  机器学习（三十七）——KNN, Optimizer进阶, 推荐系统进阶
+title:  机器学习（三十七）——Optimizer进阶, 推荐系统进阶, 强连通分量算法
 category: ML 
 ---
-
-# KNN
-
-K最近邻(k-Nearest Neighbor，KNN)分类算法，是一个理论上比较成熟的方法，也是最简单的机器学习算法之一。
-
-该方法的思路是：如果一个样本在特征空间中的k个最相似(即特征空间中最邻近)的样本中的大多数属于某一个类别，则该样本也属于这个类别。
-
-KNN算法中，所选择的邻居都是已经正确分类的对象。该方法在定类决策上只依据最邻近的一个或者几个样本的类别来决定待分样本所属的类别。
-
-KNN方法虽然从原理上也依赖于极限定理，但在类别决策时，只与极少量的相邻样本有关。由于KNN方法主要靠周围有限的邻近的样本，而不是靠判别类域的方法来确定所属类别的，因此对于类域的交叉或重叠较多的待分样本集来说，KNN方法较其他方法更为适合。
-
-## 和K-means的区别
-
-虽然K-means和KNN都有计算点之间最近距离的步骤，然而两者的目的是不同的：K-means是聚类算法，而KNN是分类算法。
-
-一个常见的应用是：使用K-means对训练样本进行聚类，然后使用KNN对预测样本进行分类。
-
-## KNN在时间序列分析上的应用
-
-KNN虽然主要是个分类算法，但通过构建特殊的模型，亦可应用于其他领域。其中，KNN在时间序列分析上的应用，就是一个很有技巧性的事情。
-
-假设已知时间序列$$X:\{x_1,\dots,x_n\}$$，来预测$$x_{n+1}$$。
-
-首先，我们选取$$x_{n+1}$$之前的最近m个序列值，作为预测值的特征向量$$X_{m\{n+1\}}$$。这里的m一般根据时间序列的周期来选择，比如商场客流的周期一般为一周。
-
-$$X_{m\{n+1\}}$$和预测值$$x_{n+1}$$组成了扩展向量$$[X_{m\{n+1\}},x_{n+1}]$$。为了表明$$x_{n+1}$$是预测值的事实，上述向量又写作$$[X_{m\{n+1\}},y_{n+1}]$$。
-
-依此类推，对于X中的任意$$x_i$$，我们都可以构建扩展向量$$[X_{m\{i\}},y_{i}]$$。即我们假定，$$x_i$$的值由它之前的m个序列值唯一确定。显然，由于是已经发生了的事件，这里的$$y_{i}$$都是已知的。
-
-在X中，这样的m维特征向量共有$$n-m$$个。使用KNN算法，获得与$$X_{m\{n+1\}}$$最邻近的k个特征向量$$X_{m\{i\}}$$。然后根据这k个特征向量的时间和相似度，对k个$$y_{i}$$值进行加权平均，以获得最终的预测值$$y_{n+1}$$。
-
-参考：
-
-http://www.doc88.com/p-1416660147532.html
-
-KNN算法在股票预测中的应用
-
-https://zhuanlan.zhihu.com/p/29838009
-
-K近邻算法
-
-https://mp.weixin.qq.com/s?__biz=MzI4ODU5NjQ3OQ==&mid=2247483791&idx=1&sn=0fafce03d0c20a14020e193b9b5b64e6
-
-机器学习分类算法之k-近邻算法
-
-https://mp.weixin.qq.com/s/HYNHkk9KSxuWZEfmPXAJKA
-
-KNN简明教程
-
-https://mp.weixin.qq.com/s/7ohIh_dVfzNyt7TpBlCFYw
-
-机器学习算法KNN简介及实现
-
-https://mp.weixin.qq.com/s/NukVEGgbqVx0S-LlBNrb-Q
-
-以前你可能一直用错“K均值聚类”？
-
-https://mp.weixin.qq.com/s/ewXRcTrolJxxN549vMQcfg
-
-一文搞懂K近邻算法(KNN)，附带多个实现案例
 
 # Optimizer进阶
 
@@ -246,6 +186,14 @@ https://mp.weixin.qq.com/s/TfrJ-rep-TIg345SXursbw
 
 为了围剿SGD大家这些年想过的那十几招
 
+https://mp.weixin.qq.com/s/9laU3EW0B64rwVb7so1BEA
+
+机器学习中的最优化算法总结
+
+https://mp.weixin.qq.com/s/mylRodVvvzI3e0-9-fEzTw
+
+深度研究自然梯度优化，从入门到放弃
+
 # 推荐系统进阶
 
 除了《机器学习（十五～十六）》提及的ALS和PCA之外，相关的算法还包括：
@@ -371,3 +319,25 @@ https://mp.weixin.qq.com/s/jCXfu6AHFWnQL118r38Zpw
 https://mp.weixin.qq.com/s/RAQrW6Fchynbc1Rd9IcOJQ
 
 清华张敏教授: 个性化推荐的可解释性、鲁棒性和公平性
+
+https://mp.weixin.qq.com/s/rzCqz2HasT5zxBQjHy13Tw
+
+前深度学习时代CTR预估模型的演化之路：从LR到FFM
+
+# 强连通分量算法
+
+http://ishare.iask.sina.com.cn/f/34626295.html
+
+矩阵不可约的充要条件
+
+http://www.cnblogs.com/saltless/archive/2010/11/08/1871430.html
+
+求强连通分量的Tarjan算法
+
+http://blog.csdn.net/dm_vincent/article/details/8554244
+
+求解强连通分量算法之---Kosaraju算法
+
+http://www.cnblogs.com/luweiseu/archive/2012/07/14/2591370.html
+
+强连通分支算法--Kosaraju算法、Tarjan算法和Gabow算法

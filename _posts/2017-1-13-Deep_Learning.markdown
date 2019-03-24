@@ -269,4 +269,4 @@ https://mp.weixin.qq.com/s/zTB59Fg_JFg9ZZPRlq9txA
 
 https://mp.weixin.qq.com/s/_WCVvM6sPpsWD8NS8etEKA
 
-京东AI研究院提出 ScratchDet：随机初始化训练SSD目标检测器
+京东AI研究院提出ScratchDet：随机初始化训练SSD目标检测器

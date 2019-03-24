@@ -379,15 +379,3 @@ https://mp.weixin.qq.com/s/A7Qg1gd66aksA6npJl3dNQ
 https://mp.weixin.qq.com/s/wjgoH6-eJQDL1KUQD3aQUQ
 
 大众点评搜索基于知识图谱的深度学习排序实践
-
-https://mp.weixin.qq.com/s/Dmkc7X-GgRrdNVQXz6Mwgg
-
-镶嵌在互联网技术上的明珠：漫谈深度学习时代点击率预估技术进展
-
-https://mp.weixin.qq.com/s/-EDxUwAKdXnmUKeLJTiAUw
-
-解构阿里深度兴趣网络（DIN）：如何将注意力机制引入推荐系统？
-
-https://mp.weixin.qq.com/s/lnCe_3ssP6IEOHEX-N4vyg
-
-达观数据于敬：个性化推荐系统实践应用

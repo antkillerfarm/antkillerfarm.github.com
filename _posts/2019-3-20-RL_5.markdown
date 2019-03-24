@@ -117,6 +117,14 @@ https://mp.weixin.qq.com/s/Fn1s9Ia8L1ckgn6iP24FhQ
 
 如何让神经网络具有好奇心
 
+https://mp.weixin.qq.com/s/PBf-YrkhwhPYXuiOGyahxQ
+
+强化学习遭遇瓶颈！分层RL将成为突破的希望
+
+https://zhuanlan.zhihu.com/p/58815288
+
+强化学习之值函数学习
+
 # 深度强化学习参考资源
 
 https://mp.weixin.qq.com/s/6wPtb9Qdhr9FiMk15xrUsQ

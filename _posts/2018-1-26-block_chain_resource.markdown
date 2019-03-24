@@ -248,6 +248,10 @@ https://mp.weixin.qq.com/s/4lccUIoXrfWn_Za8xJXH-w
 
 基于tendermint实现Hyperledger Fabric的拜占庭容错排序
 
+https://mp.weixin.qq.com/s/TaHiX6uZiGt-K4Na1r7kcA
+
+社科院商法研究室赵磊：证券交易信用机制，从CSD到DLT
+
 # 传感器
 
 这里主要讨论自动驾驶方面的传感器，但也包括了一些非自动驾驶类的传感器知识。

@@ -292,6 +292,18 @@ LightRNN：存储和计算高效的RNN
 
 # 深度推荐系统进阶
 
+https://mp.weixin.qq.com/s/Dmkc7X-GgRrdNVQXz6Mwgg
+
+镶嵌在互联网技术上的明珠：漫谈深度学习时代点击率预估技术进展
+
+https://mp.weixin.qq.com/s/-EDxUwAKdXnmUKeLJTiAUw
+
+解构阿里深度兴趣网络（DIN）：如何将注意力机制引入推荐系统？
+
+https://mp.weixin.qq.com/s/lnCe_3ssP6IEOHEX-N4vyg
+
+达观数据于敬：个性化推荐系统实践应用
+
 https://mp.weixin.qq.com/s/CYW-WMl94FT2-fqsxShNDw
 
 读者喜欢看什么文章？腾讯微信融合时间过程与内容特征寻找答案
@@ -311,6 +323,10 @@ https://zhuanlan.zhihu.com/p/57056588
 https://mp.weixin.qq.com/s/98X2agJlZcCH6IdZqf9m0A
 
 深度学习在美团配送ETA预估中的探索与实践
+
+https://mp.weixin.qq.com/s/J0j9NwSNhxab6bXqBBzaUw
+
+进击的下一代推荐系统：多目标学习如何让知乎用户互动率提升100%？
 
 # Multi-agent
 

@@ -115,6 +115,10 @@ https://mp.weixin.qq.com/s/oaOkla9gnUKr2C6PSjE2BA
 
 语音识别中的End-to-End模型教程（附178页PDF全文下载）
 
+https://mp.weixin.qq.com/s/i7JaDoU2L7uRYsw8FTR3jA
+
+语音研究进阶指南
+
 ## blog
 
 http://www.cnblogs.com/welen/

@@ -214,6 +214,10 @@ https://mp.weixin.qq.com/s/p9XaI8PSG0o1NWlkmCIn7w
 
 深入理解one-stage目标检测算法（下篇）
 
+https://mp.weixin.qq.com/s/reNCLvOyJHkJZimnMpbIig
+
+目标检测算法优化技巧：Bag of Freebies for Training Object Detection
+
 # Flink
 
 Flink是一个流计算引擎。

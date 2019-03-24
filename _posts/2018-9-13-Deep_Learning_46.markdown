@@ -401,3 +401,7 @@ https://mp.weixin.qq.com/s/6G5Mu7-1omGtQ_9Gt9lUBw
 https://mp.weixin.qq.com/s/yysnPauB22YgprpOi1ZWSQ
 
 深入理解BERT Transformer，不仅仅是注意力机制
+
+https://mp.weixin.qq.com/s/kFABJJ3fBC48-4DXK8PERQ
+
+10大任务超越BERT，微软提出多任务深度神经网络MT-DNN
