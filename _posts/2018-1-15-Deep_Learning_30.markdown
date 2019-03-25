@@ -294,3 +294,7 @@ VAE 的细节：$$p(x \mid z)$$的噪音，与$$p(z \mid x)$$的编码坍塌
 https://mp.weixin.qq.com/s/uNjF6NxVRs_gAKAmxRpThQ
 
 华为美研所提出自动编码变换网络AET：用无监督逼近全监督效果
+
+https://zhuanlan.zhihu.com/p/60330303
+
+用于协同过滤的变分自编码器论文引介
