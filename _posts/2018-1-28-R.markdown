@@ -409,6 +409,10 @@ https://mp.weixin.qq.com/s/0jKN59DMo1HmCtw8ce-y7Q
 
 在R中估计GARCH参数存在问题
 
+https://mp.weixin.qq.com/s/SLmyeLOp3h0bkD08WJS_Rg
+
+如何用R绘制交互式社会网络图？
+
 # NLP参考资源
 
 https://mp.weixin.qq.com/s/QYG0l1fk35C1evM2FSHgsw
@@ -422,15 +426,3 @@ https://mp.weixin.qq.com/s/hhWRhBeRCmxjr9Lh8aE_Ww
 https://mp.weixin.qq.com/s/FJtMDoNksSZLYdoEzixJTQ
 
 AI Challenger 2018：细粒度用户评论情感分类冠军思路总结
-
-https://mp.weixin.qq.com/s/rCBdY4AcSupppEbZhRQW6Q
-
-一文看懂深度文本分类之DPCNN原理与代码
-
-https://mp.weixin.qq.com/s/AqzdRoXthrUFUOqSNwgfqQ
-
-新的一年，想发有关对话系统的paper？快关注时下最大热点：智能化与个性化
-
-https://mp.weixin.qq.com/s/wxRsTkAIXSZfmJGXcWLdOA
-
-2019年了,中文分词到底该怎么做?中文分词十年方法大盘点

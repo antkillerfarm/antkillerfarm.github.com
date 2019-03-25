@@ -350,15 +350,9 @@ https://mp.weixin.qq.com/s/-zdIWkuRZXhsLJmOZljOBw
 
 CUDA编程精品教材分享《基于GPU-多核-集群等并行化编程》
 
-# MLPerf
+https://mp.weixin.qq.com/s/bCb5VsH58JII886lpg9lvg
 
-MLPerf是谷歌、百度、斯坦福等联手打造的基准测量工具，用于测量机器学习软件与硬件的执行速度。
-
-它的到来代表着原本市场规模较为有限的AI性能比较方案正式踏上发展正轨。简而言之就是：以后各大公司发布的AI性能对比不能再王婆卖瓜自卖自夸了。
-
-官网：
-
-https://mlperf.org/
+如何在CUDA中为Transformer编写一个PyTorch自定义层
 
 # RDMA
 

@@ -274,6 +274,10 @@ http://blog.csdn.net/u014380165/article/details/78006626
 
 SENet（Squeeze-and-Excitation Networks）算法笔记
 
+https://mp.weixin.qq.com/s/ao7gOfMYDJDPsNMVV9-Dlg
+
+后ResNet时代：SENet与SKNet
+
 # 深度ISP
 
 ## 数据集

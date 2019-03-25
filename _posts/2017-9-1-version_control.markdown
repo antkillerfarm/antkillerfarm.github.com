@@ -211,6 +211,18 @@ http://baojie.org/blog/2014/06/23/python-text-extraction/
 
 # NLP参考资源+
 
+https://mp.weixin.qq.com/s/rCBdY4AcSupppEbZhRQW6Q
+
+一文看懂深度文本分类之DPCNN原理与代码
+
+https://mp.weixin.qq.com/s/AqzdRoXthrUFUOqSNwgfqQ
+
+新的一年，想发有关对话系统的paper？快关注时下最大热点：智能化与个性化
+
+https://mp.weixin.qq.com/s/wxRsTkAIXSZfmJGXcWLdOA
+
+2019年了,中文分词到底该怎么做?中文分词十年方法大盘点
+
 https://mp.weixin.qq.com/s/A-UDbDNS77wd8WTgYiYD8Q
 
 文本分类有哪些论文中很少提及却对性能有重要影响的tricks？

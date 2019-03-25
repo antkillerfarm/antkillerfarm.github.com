@@ -234,6 +234,16 @@ CATIA是法国达索公司的产品开发旗舰解决方案。作为PLM协同解
 
 https://www.3ds.com/products-services/catia/
 
+# MLPerf
+
+MLPerf是谷歌、百度、斯坦福等联手打造的基准测量工具，用于测量机器学习软件与硬件的执行速度。
+
+它的到来代表着原本市场规模较为有限的AI性能比较方案正式踏上发展正轨。简而言之就是：以后各大公司发布的AI性能对比不能再王婆卖瓜自卖自夸了。
+
+官网：
+
+https://mlperf.org/
+
 # MXNet
 
 https://mp.weixin.qq.com/s/50uGupiwU2UVuVeMm_bTag
@@ -353,15 +363,3 @@ https://mp.weixin.qq.com/s/-5RCRl9ztQ2dQmX00QvfvQ
 https://mp.weixin.qq.com/s/Nyjp0mZxcn04vLKjJXLSaw
 
 如何用TensorFlow在安卓设备上实现深度学习推断
-
-https://mp.weixin.qq.com/s/kEowgNPVS1nAGBPbzkatlQ
-
-如何构建高可读性和高可重用的TensorFlow模型
-
-https://mp.weixin.qq.com/s/O_IN39FBVPeD5fRYBsPuZQ
-
-用TensorFlow开发问答系统
-
-https://mp.weixin.qq.com/s/8Hrq_z8s_5ms6Q_6OOaU-g
-
-如何使用TensorFlow和自编码器模型生成手写数字

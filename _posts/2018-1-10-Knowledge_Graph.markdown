@@ -16,6 +16,10 @@ https://zhuanlan.zhihu.com/knowledgegraph
 
 知识图谱-给AI装个大脑
 
+https://github.com/shaoxiongji/awesome-knowledge-graph
+
+知识图谱论文与笔记
+
 ## 知识表示学习
 
 传统的知识图谱主要是基于规则学习构建的，然而规则不是数字，无法与ML/DL结合。因此，在word2vec之类的词向量化获得成功之后，如何对知识图谱进行向量化，就成为了学界的热点。这一向量化的过程，一般被称为知识表示学习。

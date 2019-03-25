@@ -138,6 +138,10 @@ https://blog.csdn.net/zwqhehe/article/details/77025035
 
 回声状态网络(ESN)原理详解
 
+https://mp.weixin.qq.com/s/tjawT2-bhPrit0Fd4knSgA
+
+基于回声状态网络预测股票价格
+
 # MobileNet
 
 论文：
