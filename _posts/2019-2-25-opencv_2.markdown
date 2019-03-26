@@ -16,7 +16,7 @@ https://mp.weixin.qq.com/s/N4mRrQ4180qM2tuq5smK8w
 
 https://mp.weixin.qq.com/s/uDg0ho3jHsomfSUDTXTe7Q
 
-OpenCV4.0 Mask RCNN 实例分割示例 C++/Python实现
+OpenCV 4.0 Mask RCNN 实例分割示例 C++/Python实现
 
 https://mp.weixin.qq.com/s/tzfC3DpkPvEEEtbiGVoCSA
 
@@ -145,6 +145,10 @@ OpenCV实现边缘模板匹配算法
 https://zhuanlan.zhihu.com/p/60155753
 
 基于图像处理的自动报靶算法商用化系统设计
+
+https://mp.weixin.qq.com/s/tITsD0XAZq25PSPX2G5k0Q
+
+OpenCV 4.0实现人脸识别
 
 # Dlib
 

@@ -229,3 +229,21 @@ Tracking算法：Discriminative Correlation Filter (DCF)
 https://blog.csdn.net/wanghanthu/article/details/53375393
 
 Kernelized Correlation Filters (KCF) Tracking算法
+
+# 机器人/无人驾驶参考资源+
+
+https://mp.weixin.qq.com/s/1xNsKVw-OUr3Lmb3Ob33Ow
+
+自动驾驶研发模拟仿真系统的工作介绍
+
+https://zhuanlan.zhihu.com/p/59890550
+
+自动驾驶中的目标跟踪方法
+
+https://mp.weixin.qq.com/s/vFyifSgGLImUrTwcw9bPsg
+
+自动驾驶感知训练指南：不许你歧视车道线，那也是路面的一部分
+
+https://mp.weixin.qq.com/s/aXck7MLpHojuIkvVP1iHKg
+
+北航机器人研究所名誉所长王田苗：人工智能与机器人的发展趋势

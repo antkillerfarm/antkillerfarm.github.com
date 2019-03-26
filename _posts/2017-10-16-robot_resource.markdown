@@ -44,6 +44,10 @@ https://mp.weixin.qq.com/s/xgxsmcMAqstzmhTJZFZIyw
 
 特斯拉重磅深度：T E S L A，T-S.E.X.Y
 
+https://mp.weixin.qq.com/s/uei9W13lOp_bbcobv4VvlQ
+
+一张版图带你摸清全球10大自动驾驶联盟布局
+
 ## 课程
 
 http://selfdrivingcars.mit.edu/
@@ -411,11 +415,3 @@ https://mp.weixin.qq.com/s/Ja6DxqadbFBIWUk44DjGqw
 https://mp.weixin.qq.com/s/mZbO-y4haBx-IodgEtdUBA
 
 LSTM之父最新力作：手把手教你训练一个有世界观的AI赛车手
-
-https://mp.weixin.qq.com/s/vFyifSgGLImUrTwcw9bPsg
-
-自动驾驶感知训练指南：不许你歧视车道线，那也是路面的一部分
-
-https://mp.weixin.qq.com/s/aXck7MLpHojuIkvVP1iHKg
-
-北航机器人研究所名誉所长王田苗：人工智能与机器人的发展趋势

@@ -209,7 +209,7 @@ http://baojie.org/blog/2014/06/23/python-text-extraction/
 
 对于同时支持HTTPS和HTTP的资源，引用的时候要把引用资源的URL里的协议头去掉，例如：//www.example.com/scirpt.js，这样相当于相对路径，即浏览器会自动根据当前是HTTPS还是HTTP来给资源URL补上协议头的，可以达到无缝切换。
 
-# NLP参考资源+
+# NLP参考资源
 
 https://mp.weixin.qq.com/s/rCBdY4AcSupppEbZhRQW6Q
 
@@ -242,7 +242,3 @@ https://mp.weixin.qq.com/s/LQU_HJ4q74lL5oCIk7w5RA
 https://mp.weixin.qq.com/s/9NFkd-8tRUI6GaPefhEf-Q
 
 斯坦福新模型刷新纪录：自然语言理解GLUE排行榜最高分！
-
-https://mp.weixin.qq.com/s/dfobYDv-98W9NAmAbzwQKw
-
-字符级NLP优劣分析：在某些场景中比词向量更好用

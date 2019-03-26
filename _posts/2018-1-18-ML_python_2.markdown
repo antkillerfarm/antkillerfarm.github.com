@@ -160,11 +160,21 @@ Plotly也是Matplotlib的威力加强版。
 
 https://plot.ly/python/
 
+它还有一个高级封装叫做Plotly Express。
+
+官网：
+
+https://www.plotly.express/
+
 参考：
 
 https://www.jianshu.com/p/57bad75139ca
 
 python plotly使用教程
+
+https://mp.weixin.qq.com/s/RkuLhwj_to_B01RJDQsGcA
+
+强烈推荐一款Python可视化神器！
 
 ## ImageAI
 
@@ -469,15 +479,3 @@ Python上的图模型与概率建模工具包：pomegranate
 https://mp.weixin.qq.com/s/2Gd-2BLZy7LdvOenbM2Fsg
 
 用hmmlearn学习隐马尔科夫模型HMM
-
-https://mp.weixin.qq.com/s/yY_-qJoza2xGRqrm40abkg
-
-每个Kaggle冠军的获胜法门：揭秘Python中的模型集成
-
-https://mp.weixin.qq.com/s/xN5mKrl--7CqgQjf3VKb0A
-
-10分钟教你看懂K线图交易策略
-
-https://mp.weixin.qq.com/s/oJdwwpV-7NOPXw0m0qmgfg
-
-如何在Python中快速进行语料库搜索：近似最近邻算法

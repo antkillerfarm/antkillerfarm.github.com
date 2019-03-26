@@ -322,19 +322,3 @@ http://www.petuum.com
 http://liweithu.com/petuum
 
 面向机器学习的分布式计算框架:Petuum
-
-# Hbase
-
-## 参考
-
-https://mp.weixin.qq.com/s/ucQgmb1NkdyfAw6wDTyWYg
-
-阿里HBase又放出了哪些大招？
-
-https://mp.weixin.qq.com/s/BICJgyv2Y8r0j5Jjw6weRw
-
-大数据查询——HBase读写设计与实践
-
-https://blog.csdn.net/odailidong/article/details/41794403
-
-Hbase万亿级存储性能优化总结

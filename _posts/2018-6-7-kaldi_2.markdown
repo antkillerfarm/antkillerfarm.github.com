@@ -295,7 +295,7 @@ https://mp.weixin.qq.com/s/Er3Poj8oxV5OKNlAlZwq_A
 
 为什么OpenCV读取的图像格式是BGR？
 
-# 机器人/无人驾驶参考资源+
+# 机器人/无人驾驶参考资源
 
 https://mp.weixin.qq.com/s/rWcPIWtqJubI_WUVMpuRdQ
 
@@ -328,11 +328,3 @@ MPC与LQR比较
 https://mp.weixin.qq.com/s/8n_o83A-5AjG3YCPG4FOgA
 
 Apollo自动定位技术——三维几何变换和坐标系介绍
-
-https://mp.weixin.qq.com/s/1xNsKVw-OUr3Lmb3Ob33Ow
-
-自动驾驶研发模拟仿真系统的工作介绍
-
-https://zhuanlan.zhihu.com/p/59890550
-
-自动驾驶中的目标跟踪方法

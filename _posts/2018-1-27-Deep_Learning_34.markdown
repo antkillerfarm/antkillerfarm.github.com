@@ -294,10 +294,6 @@ https://zhuanlan.zhihu.com/p/31595192
 
 Deep Image Prior：深度卷积网络先天就理解自然图像
 
-https://mp.weixin.qq.com/s/TelGG-uVQyxwQjiDGE1pqA
-
-特征金字塔网络FPN
-
 https://mp.weixin.qq.com/s/6KC1vhKcyqQ0eZEXJyPqVA
 
 密集连接卷积网络

@@ -182,6 +182,20 @@ http://blog.csdn.net/jesse_mx/article/details/72955981
 
 A-Fast-RCNN论文笔记
 
+## FPN
+
+FPN(Feature Pyramid Network)
+
+参考：
+
+https://mp.weixin.qq.com/s/mY_QHvKmJ0IH_Rpp2ic1ig
+
+目标检测FPN
+
+https://mp.weixin.qq.com/s/TelGG-uVQyxwQjiDGE1pqA
+
+特征金字塔网络FPN
+
 ## R-FCN
 
 FCN在目标检测领域的应用。

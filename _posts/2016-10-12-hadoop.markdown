@@ -8,6 +8,18 @@ category: AI
 
 最近（2016.4），参加公司组织的内部培训，对Hadoop有了一些认识，特记录如下。
 
+## IOE
+
+![](/images/img2/IOE.jpg)
+
+在Google开发GFS之前，业界主流的数据库方案是IOE，即：**IBM大型机+Oracle数据库+EMC存储设备**。
+
+这套方案的主要缺陷在于：
+
+1.服务上限有限。单个机器再强也有上限，对于PB级数据有时会力不从心。
+
+2.IOE方案是商用的专有方案，价格高昂。
+
 ## 概述
 
 Hadoop项目由Doug Cutting创建。Doug Cutting也是Lucene项目的创建者。
@@ -305,21 +317,3 @@ HBase在物理上是HDFS上的文件，因此它也是主从结构的。
 http://blog.csdn.net/dhtx_wzgl/article/details/49423979
 
 HBase学习之二级索引
-
-## OpenTSDB
-
-OpenTSDB（Time Series Database）是一个基于HBase的存放时序数据的数据库。
-
-官网：
-
-http://opentsdb.net/
-
-DB这个词很有误导性，其实它并不是一个db，单独一个OpenTSDB无法存储任何数据，它只是一层数据读写的服务，更准确的说它只是建立在Hbase上的一层数据读写的服务。
-
-HBase在使用上的一个难点就是如何根据业务的特点，设计键值和索引。OpenTSDB就是这方面的一个实践。
-
-参考：
-
-https://mp.weixin.qq.com/s/GApmeXGbjRTnhullArlkYg
-
-小米正用时序数据库，解决这个“硬核”问题

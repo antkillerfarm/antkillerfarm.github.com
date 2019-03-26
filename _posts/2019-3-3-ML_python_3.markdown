@@ -6,6 +6,18 @@ category: AI
 
 # Machine Learning之Python篇
 
+https://mp.weixin.qq.com/s/yY_-qJoza2xGRqrm40abkg
+
+每个Kaggle冠军的获胜法门：揭秘Python中的模型集成
+
+https://mp.weixin.qq.com/s/xN5mKrl--7CqgQjf3VKb0A
+
+10分钟教你看懂K线图交易策略
+
+https://mp.weixin.qq.com/s/oJdwwpV-7NOPXw0m0qmgfg
+
+如何在Python中快速进行语料库搜索：近似最近邻算法
+
 https://mp.weixin.qq.com/s/M2YvR8s2Vh-zGRP42v6txg
 
 极简Python带你探索分类与回归的奥秘
@@ -225,3 +237,51 @@ Python绘制histogram直方图
 https://mp.weixin.qq.com/s/ss9UlDU9lYokS-EDrPnOxQ
 
 如何在Python中使用LightFM构建可扩展的电子商务推荐系统？
+
+https://mp.weixin.qq.com/s/j07zF72UyDXpKNnvQli5NQ
+
+简单几步教你用Python生成词云图
+
+# Hbase
+
+## OpenTSDB
+
+OpenTSDB（Time Series Database）是一个基于HBase的存放时序数据的数据库。
+
+官网：
+
+http://opentsdb.net/
+
+DB这个词很有误导性，其实它并不是一个db，单独一个OpenTSDB无法存储任何数据，它只是一层数据读写的服务，更准确的说它只是建立在Hbase上的一层数据读写的服务。
+
+HBase在使用上的一个难点就是如何根据业务的特点，设计键值和索引。OpenTSDB就是这方面的一个实践。
+
+参考：
+
+https://mp.weixin.qq.com/s/GApmeXGbjRTnhullArlkYg
+
+小米正用时序数据库，解决这个“硬核”问题
+
+## 参考
+
+https://mp.weixin.qq.com/s/ucQgmb1NkdyfAw6wDTyWYg
+
+阿里HBase又放出了哪些大招？
+
+https://mp.weixin.qq.com/s/BICJgyv2Y8r0j5Jjw6weRw
+
+大数据查询——HBase读写设计与实践
+
+https://blog.csdn.net/odailidong/article/details/41794403
+
+Hbase万亿级存储性能优化总结
+
+# NLP参考资源+
+
+https://mp.weixin.qq.com/s/dfobYDv-98W9NAmAbzwQKw
+
+字符级NLP优劣分析：在某些场景中比词向量更好用
+
+https://mp.weixin.qq.com/s/NGpDrYilAeuH6pQji0ujaA
+
+文本摘要简述

@@ -162,9 +162,35 @@ https://mp.weixin.qq.com/s/NJBx8ndkBBedC81f3-DKOA
 
 5nm以后的晶体管选择
 
+## 封装
+
+### BGA & QFP
+
+BGA封装，就是那种引脚都在芯片背面的封装。QFP封装，即四侧引脚扁平封装。同样面积情况下，显然占据一个面的引脚数，要超过仅占据四个边的引脚数。
+
+### 参考
+
 https://mp.weixin.qq.com/s/RtSmbwguM7dbsXkWqAPuCQ
 
 英特尔3D封装技术深度解读
+
+https://zhuanlan.zhihu.com/p/54685671
+
+PCB板上的黑色的物体是什么？
+
+https://mp.weixin.qq.com/s/MQHZ-yLhZRIfOL9kN4XFKw
+
+一文看懂3D封装技术及发展趋势
+
+https://mp.weixin.qq.com/s/WBab6k4mIkZNzpvbgSbpVQ
+
+一文看懂SiP封装技术
+
+## 业界
+
+https://mp.weixin.qq.com/s/YdoIVBpn1dFUEzDEF5pYJw
+
+被迫离开工作近20年的公司，半导体老兵上演逆袭。林孝平，一个小儿麻痹患者。
 
 # AI Chip+
 

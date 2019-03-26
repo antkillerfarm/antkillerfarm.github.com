@@ -156,6 +156,10 @@ https://mp.weixin.qq.com/s/GlwJhvdzxaRbRE2DhMpBSg
 
 基于动态局部搜索的免疫自动聚类算法
 
+https://mp.weixin.qq.com/s/IS4eXECKx2u41VFtmTsBhA
+
+全面理解无监督学习基础知识
+
 # 压缩感知
 
 http://blog.csdn.net/abcjennifer/article/details/7721834
