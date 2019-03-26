@@ -397,3 +397,7 @@ tf.data API，让你轻松处理数据
 https://mp.weixin.qq.com/s/mjUnrPBPBuY6XKXkUymX-w
 
 实例介绍TensorFlow的输入流水线
+
+https://mp.weixin.qq.com/s/1ZlyVDJK6RWZ_1Ox7399IA
+
+用一行tf.data实现数据Shuffle、Batch划分、异步预加载等

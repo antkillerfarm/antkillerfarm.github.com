@@ -142,6 +142,10 @@ https://github.com/thunlp/GNNPapers
 
 相关论文列表
 
+https://github.com/nnzhan/Awesome-Graph-Neural-Networks
+
+图神经网络论文列表
+
 https://mp.weixin.qq.com/s/SW6V-AxGq1z9Uq7qIJLj5A
 
 Github上热门图深度学习（GraphDL）源码与工业级框架

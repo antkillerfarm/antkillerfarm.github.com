@@ -125,6 +125,10 @@ https://zhuanlan.zhihu.com/p/58815288
 
 强化学习之值函数学习
 
+https://mp.weixin.qq.com/s/8Cqknze_iosz6Z6cqnuK5w
+
+谷歌提出强化学习新算法SimPLe，模拟策略学习效率提高2倍
+
 # 深度强化学习参考资源
 
 https://mp.weixin.qq.com/s/6wPtb9Qdhr9FiMk15xrUsQ

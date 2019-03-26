@@ -377,3 +377,7 @@ https://mp.weixin.qq.com/s/F9SGZPZj6gup_nOVuDel6A
 https://mp.weixin.qq.com/s/4o9XHGwx5lYsJ7YfUNHSoQ
 
 百年老图难倒谷歌AI，网友：是鸭是兔？连我都不能确定
+
+https://mp.weixin.qq.com/s/dN1p7nuv6xtnIsSuY73CcA
+
+基于GNN，强于GNN：胶囊图神经网络的PyTorch实现

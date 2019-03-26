@@ -269,3 +269,7 @@ BBR是个什么鬼？-2 外皮后的真相
 https://mp.weixin.qq.com/s/NWNMfykpJQ-LD9oV1X6zTw
 
 基于bbr拥塞控制的云盘提速实践
+
+https://mp.weixin.qq.com/s/P3zAW3lxj8aowXtxXCOwqA
+
+Google BBR拥塞控制算法背后的数学解释
