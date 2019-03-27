@@ -346,3 +346,7 @@ https://mp.weixin.qq.com/s/-FF3tuEB2V8RlQCjQhu5Bg
 
 人大ML研究组提出新的视频测谎算法
 
+https://mp.weixin.qq.com/s/T-Rg9xLfdYmV8bJESK0h8g
+
+快速端到端嵌入学习用于视频中的目标分割
+

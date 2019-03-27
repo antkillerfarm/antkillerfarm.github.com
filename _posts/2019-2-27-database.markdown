@@ -138,6 +138,10 @@ https://mp.weixin.qq.com/s/1zarqgOh9-3chlBsB4TsuA
 
 物联网时代数据数据库如何选型？
 
+https://mp.weixin.qq.com/s/O94Q1Dxe8TnbCMv9d_hlOg
+
+Uber推出数据湖集成神器DBEvents，支持MySQL、Cassandra等
+
 # Mysql
 
 ## 安装

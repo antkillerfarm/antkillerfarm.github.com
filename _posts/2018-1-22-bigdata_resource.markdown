@@ -374,10 +374,6 @@ https://mp.weixin.qq.com/s/UYN4cxH4gT0WsFTrBKRKGA
 
 美团酒旅实时数据规则引擎应用实践
 
-https://mp.weixin.qq.com/s/6Nr7LF9VxYQ4NlLlk8bCVw
-
-不了解边缘计算，你可能就要被“边缘”了
-
 https://mp.weixin.qq.com/s/oYiQEMelkXHbT3ke2BmHOw
 
 如何逐步去构建一个大型网站系统

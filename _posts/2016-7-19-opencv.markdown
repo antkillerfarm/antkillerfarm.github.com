@@ -146,6 +146,18 @@ http://www.vlfeat.org/
 
 https://github.com/vlfeat/vlfeat
 
+该项目还有一个基于matlab的CNN库——MatConvNet。
+
+官网：
+
+http://www.vlfeat.org/matconvnet/
+
+参考：
+
+https://mp.weixin.qq.com/s/7hVCRHxllip70SpEJ5I6mQ
+
+MatConvnet图像分类从模型自定义到测试
+
 ## blog
 
 https://github.com/1zlab/opencv-tutorial
@@ -445,19 +457,3 @@ OpenCV Gabor滤波器实现纹理提取与缺陷分析
 https://mp.weixin.qq.com/s/DjyydSvYA8JWPqC1AsFuag
 
 OpenCV中如何获得物体的主要方向
-
-https://mp.weixin.qq.com/s/x_rHGOXJOnMnvDxk87gVrA
-
-如何根据一张照片判断出女孩住在几层楼？这是一篇图像测量方面的blog
-
-https://mp.weixin.qq.com/s/Sda94q-40goiZGSYGgm_Yw
-
-AI美发算法
-
-https://mp.weixin.qq.com/s/9VsCRYrKQHqx68xkJsPC5g
-
-App基于手机壳颜色换肤？先尝试一下用KMeans来提取图像中的主色
-
-https://mp.weixin.qq.com/s/40SXxtks9yGbYHEikQPjrg
-
-用OpenCV实现八种不同的目标跟踪算法

@@ -304,6 +304,10 @@ https://mp.weixin.qq.com/s/4A68qHXEA7VHe8RrKv7Wbg
 
 自动驾驶都有什么测试基准？
 
+https://mp.weixin.qq.com/s/Mt40v0fy3_eq6tkz6a8ndQ
+
+英伟达推出首个跨摄像头汽车跟踪数据集
+
 ## 医疗
 
 https://mp.weixin.qq.com/s/849fLGndmaRvz_oWt6HWtg

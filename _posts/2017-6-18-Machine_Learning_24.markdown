@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十四）——单分类SVM&多分类SVM, 贝叶斯线性回归, Stacking, 三门问题, 社区发现
+title:  机器学习（二十四）——单分类SVM&多分类SVM, 贝叶斯学习, Stacking, 三门问题, 社区发现
 category: ML 
 ---
 
@@ -249,7 +249,7 @@ https://blog.csdn.net/giskun/article/details/49329095
 
 SVM的概率输出（Platt scaling）
 
-# 贝叶斯线性回归
+# 贝叶斯学习
 
 https://mp.weixin.qq.com/s/szTmHY-Yvn7N3s_GzTDiEA
 
@@ -270,6 +270,10 @@ https://mp.weixin.qq.com/s/g24mcZjQ25sQJx9mqE_XSA
 https://mp.weixin.qq.com/s/bjyO4AS1Sjo09qNMpqf6JA
 
 最新36页《贝叶斯非参学习综述》，机器学习内功修炼手册
+
+https://mp.weixin.qq.com/s/x3AREJcDKvjo7vl6TS79OA
+
+贝叶斯推理实用入门
 
 # Stacking
 

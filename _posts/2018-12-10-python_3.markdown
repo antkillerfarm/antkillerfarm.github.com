@@ -301,6 +301,10 @@ https://mp.weixin.qq.com/s/EZh5PAUgXkIDzGbim6wqLQ
 
 用Python带你看白雪飘扬~
 
+https://mp.weixin.qq.com/s/SUyRNz_M7B6bcdV7-YxlZQ
+
+Python制作一款简易音乐播放器
+
 # CPU
 
 https://zhuanlan.zhihu.com/p/29743431

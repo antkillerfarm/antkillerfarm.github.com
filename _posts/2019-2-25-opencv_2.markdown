@@ -6,6 +6,22 @@ category: AI
 
 # OpenCV
 
+https://mp.weixin.qq.com/s/x_rHGOXJOnMnvDxk87gVrA
+
+如何根据一张照片判断出女孩住在几层楼？这是一篇图像测量方面的blog
+
+https://mp.weixin.qq.com/s/Sda94q-40goiZGSYGgm_Yw
+
+AI美发算法
+
+https://mp.weixin.qq.com/s/9VsCRYrKQHqx68xkJsPC5g
+
+App基于手机壳颜色换肤？先尝试一下用KMeans来提取图像中的主色
+
+https://mp.weixin.qq.com/s/40SXxtks9yGbYHEikQPjrg
+
+用OpenCV实现八种不同的目标跟踪算法
+
 https://www.jianshu.com/p/53982e81d781
 
 OpenCV十字激光中心与端点识别

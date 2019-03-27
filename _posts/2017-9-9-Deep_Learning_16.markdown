@@ -150,6 +150,10 @@ https://github.com/jinfagang/pytorch_style_transfer
 
 这个和上面的一样，不过是用pytorch实现的。
 
+https://mp.weixin.qq.com/s/g1hpuzH36j_rbYR23Mwx0w
+
+开源图像风格迁移，快看看大画家的潜力股
+
 # 人脸检测/识别
 
 ## Cascade CNN

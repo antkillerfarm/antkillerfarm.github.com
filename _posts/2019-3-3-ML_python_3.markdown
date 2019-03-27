@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Machine Learning之Python篇（三）
+title:  Machine Learning之Python篇（三）, 边缘计算
 category: AI 
 ---
 
@@ -241,6 +241,22 @@ https://mp.weixin.qq.com/s/ss9UlDU9lYokS-EDrPnOxQ
 https://mp.weixin.qq.com/s/j07zF72UyDXpKNnvQli5NQ
 
 简单几步教你用Python生成词云图
+
+# 边缘计算
+
+![](/images/img2/edge_computing.png)
+
+https://mp.weixin.qq.com/s/TXZh-bn9VhwGxJRNjzecRw
+
+重新认识“边缘计算”
+
+https://mp.weixin.qq.com/s/6Nr7LF9VxYQ4NlLlk8bCVw
+
+不了解边缘计算，你可能就要被“边缘”了
+
+https://mp.weixin.qq.com/s/3d7CEQ0iQzwnJ_tE7eB9Yg
+
+边缘计算芯片格局分析
 
 # Hbase
 

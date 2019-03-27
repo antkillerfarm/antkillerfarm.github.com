@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  在线激活流程研究, 芯片杂烩
+title:  在线激活流程研究, 芯片杂烩, Actor model
 category: technology 
 ---
 
@@ -143,6 +143,20 @@ F表示相关的算法。只有符合F算法的P和U，才能通过程序的验�
     <td>MAXIM</td>
   </tr>
 </table>
+
+# Actor model
+
+https://elbarco.cn/2017/01/21/introduction-to-actor-model/
+
+并发编程模型之Actor模型
+
+https://www.jianshu.com/p/449850aa8e82
+
+10分钟了解Actor模型
+
+https://www.cnblogs.com/MOBIN/p/7236893.html
+
+Actor模型原理
 
 # CPU
 

@@ -6,6 +6,12 @@ category: AI
 
 # AI Chip
 
+![](/images/img2/AI_Chips.png)
+
+https://basicmi.github.io/AI-Chip/
+
+A list of ICs and IPs for AI, Machine Learning and Deep Learning.
+
 ## NN计算的硬件设计
 
 NN计算问题的瓶颈主要包括两类：

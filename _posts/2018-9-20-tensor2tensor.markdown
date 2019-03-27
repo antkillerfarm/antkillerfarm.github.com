@@ -302,6 +302,10 @@ https://mp.weixin.qq.com/s/hRH7hVsaQBqf0vhD_BqBgg
 
 五大深度学习框架三类神经网络全面测评
 
+https://zhuanlan.zhihu.com/p/42345854
+
+如何基于gluon训练一个强有力的Reid Baseline
+
 # TensorFlow
 
 https://mp.weixin.qq.com/s/DAV3TDI4JYr0sXqTGU6t2A

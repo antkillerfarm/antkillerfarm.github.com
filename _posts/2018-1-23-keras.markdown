@@ -410,8 +410,21 @@ https://mp.weixin.qq.com/s/cjo5MYa-t9tWDCjwDpkOeg
 
 ## 术语
 
-GMV (Gross Merchandise Volume) 成交额
+GMV(Gross Merchandise Volume)成交额
 
 ![](/images/article/pv.jpg)
 
 CTR（Click-Through-Rate）即点击通过率，是互联网广告常用的术语，指网络广告（图片广告/文字广告/关键词广告/排名广告/视频广告等）的点击到达率，即该广告的实际点击次数除以广告的展现量。
+
+RTB（Real Time Bidding，实时竞价）
+
+eCPM（千次展示期望收入）
+
+CPM（Cost per mille）
+
+CPC（Cost per click）
+
+CPA（Cost per action）
+
+CPT（按展现时间收费）、CPL（按潜在线索收费）、CPS（按成功销售收费）
+
