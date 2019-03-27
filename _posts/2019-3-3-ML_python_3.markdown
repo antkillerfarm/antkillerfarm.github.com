@@ -294,6 +294,14 @@ Hbase万亿级存储性能优化总结
 
 # NLP参考资源+
 
+http://blog.csdn.net/a635661820/article/details/43906731
+
+Statistical language model统计语言模型 
+
+https://mp.weixin.qq.com/s/vNzUngc-boG4QYmf_8lFfw
+
+自动为词汇推荐义原组合
+
 https://mp.weixin.qq.com/s/dfobYDv-98W9NAmAbzwQKw
 
 字符级NLP优劣分析：在某些场景中比词向量更好用
@@ -301,3 +309,7 @@ https://mp.weixin.qq.com/s/dfobYDv-98W9NAmAbzwQKw
 https://mp.weixin.qq.com/s/NGpDrYilAeuH6pQji0ujaA
 
 文本摘要简述
+
+https://mp.weixin.qq.com/s/PPAIARqkYqaIYRD7SFOtBg
+
+基于分层强化学习的关系抽取

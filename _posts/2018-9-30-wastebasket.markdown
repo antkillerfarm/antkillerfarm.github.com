@@ -258,6 +258,10 @@ Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被
 
 >László Bélády，1928年生，匈牙利计算机科学家。Technical University of Budapest本硕。IBM研究员。
 
+https://mp.weixin.qq.com/s/AdmEd1FHxpZUwSGYy3qggg
+
+利用cpu缓存实现高性能程序
+
 ## 可视化
 
 ![](/images/img2/data_visual.png)
@@ -419,11 +423,3 @@ TensorFlow 谷歌神经机器翻译:从零开始打造属于你的翻译系统
 https://mp.weixin.qq.com/s/JAWDiNUfU62n8lDRG8zzRw
 
 嘿，朋友，老夫掐指一算你就是“水军”
-
-http://blog.csdn.net/a635661820/article/details/43906731
-
-Statistical language model统计语言模型 
-
-https://mp.weixin.qq.com/s/vNzUngc-boG4QYmf_8lFfw
-
-自动为词汇推荐义原组合
