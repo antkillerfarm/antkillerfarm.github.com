@@ -4,15 +4,9 @@ title:  深度学习（二）——神经元激活函数, Dropout, 深度学习�
 category: DL 
 ---
 
-# BP算法的缺点
+# BP算法
 
-虽然传统的BP算法，理论上可以支持任意深度的神经网络。然而实际使用中，却很少能支持3层以上的神经网络。
-
-![](/images/article/sigmoid.png)
-
-如上图所示，sigmoid函数不是线性的，一个小的输出值的改变，对应了比较大的输入值改变。换句话说，就是输出值的梯度较大，而输入值的梯度较小。而梯度在基于梯度下降的优化问题中，是至关重要的。
-
-随着层数的增多，反向传递的残差梯度会越来越小，这样的现象，被称作**梯度消失**（Vanishing Gradient）。它导致的结果是，虽然靠近输出端的神经网络已经训练好了，但输入端的神经网络仍处于随机状态。也就是说，靠近输入端的神经网络，有和没有都是一样的效果，完全体现不了深度神经网络的优越性。
+## BP算法的缺点（续）
 
 和梯度消失相反的概念是**梯度爆炸**（Vanishing Explode），也就是神经网络无法收敛。
 
@@ -21,6 +15,60 @@ category: DL
 https://mp.weixin.qq.com/s/w7EbDI9MQBZF67XM-cV1eQ
 
 一文了解神经网络中的梯度爆炸
+
+## 参考
+
+http://blog.csdn.net/xizero00/article/details/51013088
+
+Different Methods for Weight Initialization in Deep Learning
+
+https://mp.weixin.qq.com/s/xqWli1xnsGkqYDUjgvOnkQ
+
+反向传播神经网络极简入门
+
+https://mp.weixin.qq.com/s/PhxkfWH5bEbykMKGEtDScA
+
+为什么神经网络参数不能够全部初始化为全0？
+
+https://mp.weixin.qq.com/s/s-v7T0k2gy7ZRnrFCUpTYg
+
+通过方差分析详解最流行的Xavier权重初始化方法
+
+https://mp.weixin.qq.com/s/r1OJoLa_t8QwNcL4kfx5uQ
+
+神经网络参数随机初始化已经过时了
+
+https://mp.weixin.qq.com/s/mFA2PeO70o3HR6AQ74Lp3g
+
+深度学习最佳实践之权重初始化
+
+https://mp.weixin.qq.com/s/M1TswiDh-LkH9G7jCQ_UqA
+
+神经网络编程-前向传播和后向传播
+
+https://mp.weixin.qq.com/s/Dygdn0Xzpx40-zUQadiiHg
+
+通过梯度检验帮助实现反向传播
+
+https://mp.weixin.qq.com/s/auNRIPYEwRlROFXug41Ang
+
+简单初始化，训练10000层CNN
+
+https://mp.weixin.qq.com/s/iSJyOe81dnEuaKzOih6WNg
+
+什么是深度学习成功的开始？参数初始化
+
+https://mp.weixin.qq.com/s/s4ew7LYgnC9Z3kVFsjcaXg
+
+不用批归一化也能训练万层ResNet，新型初始化方法Fixup了解一下
+
+https://mp.weixin.qq.com/s/zTB59Fg_JFg9ZZPRlq9txA
+
+不使用残差连接，ICML新研究靠初始化训练上万层标准CNN
+
+https://mp.weixin.qq.com/s/_WCVvM6sPpsWD8NS8etEKA
+
+京东AI研究院提出ScratchDet：随机初始化训练SSD目标检测器
 
 # 神经元激活函数
 
@@ -216,25 +264,3 @@ Batch Normalization是Google提出的一种神经网络优化技巧。
 2.提升学习速率。归一化后的数据能够快速的达到收敛。
 
 3.减少模型训练对初始化的依赖。
-
-参考：
-
-http://blog.csdn.net/malefactor/article/details/51476961
-
-Batch Normalization导读
-
-http://www.cnblogs.com/neopenx/p/5211969.html
-
-从Bayesian角度浅析Batch Normalization
-
-http://blog.csdn.net/hjimce/article/details/50866313
-
-Batch Normalization学习笔记
-
-https://buptldy.github.io/2016/08/18/2016-08-18-Batch_Normalization/
-
-Implementation of Batch Normalization Layer（中文blog）
-
-https://www.zhihu.com/question/38102762
-
-深度学习中 Batch Normalization为什么效果好？

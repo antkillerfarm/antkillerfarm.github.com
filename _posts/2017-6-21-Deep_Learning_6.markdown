@@ -4,9 +4,30 @@ title:  深度学习（六）——LSTM, 神经元激活函数进阶
 category: DL 
 ---
 
-# RNN
+# RNN（续）
 
-## RNN的历史（续）
+## RNN的历史
+
+上面研究的RNN结构，又被称为Elman RNN。最早是Jeffrey Elman于1990年发明的。
+
+$$\begin{align}
+h_t &= \sigma_h(W_{h} x_t + U_{h} h_{t-1} + b_h) \\
+y_t &= \sigma_y(W_{y} h_t + b_y)
+\end{align}$$
+
+论文：
+
+《Finding Structure in Time》
+
+>Jeffrey Locke Elman，1948年生，Harvard College本科（1969年）+University of Texas博士（1977年）。University of California, San Diego教授，American Academy of Arts and Sciences院士（2015年）。 美国心理学会会员。  
+>个人主页：   
+>https://tatar.ucsd.edu/jeffelman/
+
+>Harvard College是Harvard University最古老的本部，目前一般提供本科教育。它和其他许多研究生院以及相关部门，共同组成了Harvard University。类似的还有Yale College和Yale University。
+
+>American Academy of Arts and Sciences建于1780年。当时，美国正在法国等国的协助下与英国作战，所以美国的创立者选择比照包括作家、人文学者、科学家、军事家、政治家在内的法兰西学术院，建立新大陆的学术院。   
+>后来，林肯总统比照英国皇家学会，于1863年创建了主要涵盖自然科学的National Academy of Sciences，United States。   
+>这两个学院是美国学术界最权威的组织。
 
 >美国的创立者，一般被翻译为Founding Fathers of the United States。此外还有一个更响亮的称号76ers。没错，NBA那支球队的名字就是这么来的。
 
@@ -290,31 +311,3 @@ https://mp.weixin.qq.com/s/d9XmDCahK6UBlYWhI0D5jQ
 https://mp.weixin.qq.com/s/PNe2aKVMYjV_Nd7qZwGuOw
 
 理解激活函数作用，看这篇文章就够了！
-
-## ReLU的缺点
-
-深度神经网络的训练问题，最早是2006年Hinton使用**分层无监督预训练**的方法解决的，然而该方法使用起来很不方便。
-
-而深度网络的**直接监督式训练**的最终突破，最主要的原因是采用了新型激活函数ReLU。
-
-但是ReLU并不完美。它在x<0时硬饱和，而当x>0时，导数为1。所以，ReLU能够在x>0时保持梯度不衰减，从而缓解梯度消失问题。但随着训练的推进，部分输入会落入硬饱和区，导致对应权重无法更新。这种现象被称为**神经元死亡**。
-
-ReLU还经常被“诟病”的另一个问题是输出具有**偏移现象**，即输出均值恒大于零。偏移现象和神经元死亡会共同影响网络的收敛性。实验表明，如果不采用Batch Normalization，即使用MSRA初始化30层以上的ReLU网络，最终也难以收敛。
-
-为了解决上述问题，人们提出了Leaky ReLU、PReLU、RReLU、ELU、Maxout等ReLU的变种。
-
-Leaky ReLU:
-
-$$f(x)  = \begin{cases}
-    x & \mbox{if } x > 0 \\
-    a x & \mbox{otherwise}
-\end{cases}$$
-
-这里的a是个常数，如果是个vector的话，那么就是PReLU了。
-
-ELU：
-
-$$f(x) = \begin{cases} 
-x & \mbox{if } x \geq 0 \\ 
-a(e^x-1) & \mbox{otherwise}
-\end{cases}$$

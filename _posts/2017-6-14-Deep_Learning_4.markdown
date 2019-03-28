@@ -8,6 +8,46 @@ category: DL
 
 ## 参考（续）
 
+https://mp.weixin.qq.com/s/nIbfiDXkqkpdLzQo2Gmc2Q
+
+利用卷积神经网络处理CIFAR图像分类
+
+https://mp.weixin.qq.com/s/5BMU7SRQeuDg68XDcOUBZw
+
+训练集样本不平衡问题对CNN的影响
+
+https://mp.weixin.qq.com/s/p-wZ_6ZQW-zXzDqmRenNow
+
+深度学习入门：几幅手稿讲解CNN
+
+https://mp.weixin.qq.com/s/xXf7hTfH-vx4YbzlZVQucA
+
+CNN入门再介绍
+
+https://mp.weixin.qq.com/s/Q4snAlAi8tPQAyGm0qUy4w
+
+CNN的全面解析
+
+https://mp.weixin.qq.com/s/Do6erhin3W4dK_-RTAyD6A
+
+卷积神经网络(CNN)概念解释
+
+http://www.qingruanit.net/blog/23930/note5837.html
+
+卷积神经网络（CNN）学习算法之----基于LeNet网络的中文验证码识别
+
+https://mp.weixin.qq.com/s/XiaAPd20YxbM0wDiSTAYMg
+
+深度学习之卷积神经网络(CNN)的模型结构
+
+https://mp.weixin.qq.com/s/x-H6h4sRqTrZlOXKStnhPw
+
+卷积神经网络背后的数学原理
+
+https://mp.weixin.qq.com/s/qIdjHqurqvdahEd0dXYIqA
+
+徒手实现CNN：综述论文详解卷积网络的数学本质
+
 https://mp.weixin.qq.com/s/D6ok6dQqyx6cCJKc2M8YpA
 
 从AlexNet剖析-卷积网络CNN的一般结构
@@ -249,27 +289,3 @@ Hierarchical Softmax一般基于Huffman编码构建。在本例中，我们首�
 除了word2vec之外，类似的Word Embedding方案还有SENNA、RNN-LM、Glove等。但影响力仍以word2vec最大。
 
 Skip-Gram Negative Sampling，又被简称为SGNS。
-
-## doc2vec
-
-我们知道，word是sentence的基本组成单位。一个最简单也是最直接得到sentence embedding的方法是将组成sentence的所有word的embedding向量全部加起来。
-
-显然，这种简单粗暴的方法会丢失很多信息。
-
-doc2vec是Mikolov在word2vec的基础上提出的一种生成句子向量的方法。
-
-论文：
-
-《Distributed Representations of Sentences and Documents》
-
-http://cs.stanford.edu/~quocle/paragraph_vector.pdf
-
-![](/images/article/doc2vec.png)
-
-上图是doc2vec的框架图，可以看出doc2vec的原理与word2vec基本一致，区别仅在于前者多出来一个Paragraph Vector参与CBOW或Skip-gram的训练。
-
-Paragraph Vector可以和Word Vector一起生成，也可以单独生成，也就是训练时，采用预训练的Word Vector，并只改变Paragraph Vector的值。
-
-https://www.zhihu.com/question/33952003
-
-如何通过词向量技术来计算2个文档的相似度?

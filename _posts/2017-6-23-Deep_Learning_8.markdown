@@ -4,6 +4,62 @@ title:  深度学习（八）——CNN进化史（1）
 category: DL 
 ---
 
+# seq2seq
+
+## 参考（续）
+
+https://mp.weixin.qq.com/s/8u3v9XzECkwcNn5Ay-kYQQ
+
+基于Depthwise Separable Convolutions的Seq2Seq模型_SliceNet原理解析
+
+https://mp.weixin.qq.com/s/H6eYxS7rXGDH_B8Znrxqsg
+
+seq2seq中的beam search算法过程
+
+https://mp.weixin.qq.com/s/U1yHIc5Zq0yKCezRm185VA
+
+Attentive Sequence to Sequence Networks
+
+https://mp.weixin.qq.com/s/cGXANj7BB2ktTdPAL4ZEWA
+
+图解神经网络机器翻译原理：LSTM、seq2seq到Zero-Shot
+
+https://mp.weixin.qq.com/s/jYUAKyTpm69J6Q34A06E-w
+
+百度提出冷聚变方法：使用语言模型训练Seq2Seq模型
+
+https://mp.weixin.qq.com/s/Fp6G1aI_utDd_kTbdHvEVQ
+
+完全基于卷积神经网络的seq2seq
+
+http://localhost:4500/theory/2017/06/21/Deep_Learning_6.html
+
+从2017年顶会论文看Attention Model
+
+https://mp.weixin.qq.com/s/Op_oYiNvaTXvsvAnl8Heew
+
+基于Self-attention的文本向量表示方法，悉尼科技大学和华盛顿大学最新工作
+
+https://mp.weixin.qq.com/s/fBrt4g_Kjmt1tGVZw5KgrQ
+
+从LSTM到Seq2Seq
+
+https://mp.weixin.qq.com/s/riIC6ybvqAJx9mzb-AQIOw
+
+Facebook AI发布新版本FairSeq序列到序列(Seq2Seq)学习工具，可生成故事与快速推断
+
+https://mp.weixin.qq.com/s/DIqjVxF_kACkivzez4_Hog
+
+编码器-解码器网络：神经翻译模型详解
+
+https://mp.weixin.qq.com/s/Alg4rOXNvb4GA8N4Joy-Jg
+
+Seq2seq强化，Pointer Network简介
+
+https://mp.weixin.qq.com/s/kdmmgVdWxz2nJPmjcprvqg
+
+机器学习中的编码器-解码器结构哲学
+
 # CNN进化史
 
 ## 计算机视觉
@@ -273,25 +329,3 @@ http://blog.csdn.net/u011534057/article/details/51274862
 http://blog.csdn.net/whiteinblue/article/details/43312059
 
 另一篇论文阅读笔记
-
-## 总结
-
-以下内容摘自中科视拓CEO山世光的演讲。
-
-以让小区里的巡逻机器人学会检测狗屎为例。
-
-在**前深度学习时代**，这个过程大概分三步：
-
-第一步，花几个月时间收集和标注几百或上千张图；
-
-第二步，观察并人为设计形状、颜色、纹理等特征；
-
-第三步，尝试各种分类器做测试，如果测试结果不好，返回第二步不断地迭代。
-
-人脸检测就是这样进行的，从上世纪八十年代开始做，大量研究者花了大概二十年时间，才得到了一个基本可用的模型，能较好地解决人脸检测的问题。而后在监控场景下做行人和车辆的检测，前后也花了大概十年的时间。就算基于这些经验，做出好用的狗屎检测器，至少还是需要一年左右的时间。
-
-在**深度学习时代**，开发一个狗屎检测器的流程被大大缩短了。尽管深度学习需要收集大量的数据并进行标注（用矩形把图中的狗屎位置框出来），但由于众包平台的繁荣，收集一万张左右的数据可能只需要两星期。
-
-接下来，我们只需要挑几个已经被证明有效的深度学习模型进行优化训练就可以了，训练优化大概需要一个星期，就算换几个模型再试试看。这样完成整个过程只需要一两个月而已。
-
-而在**后深度学习时代**，我们期待先花几分钟时间，在网上随便收集几张狗屎照片，交给机器去完成余下所有的模型选择与优化工作，或许最终只需要一、两星期解决这个问题。

@@ -4,7 +4,31 @@ title:  深度学习（五）——RNN
 category: DL 
 ---
 
-# 词向量
+# 词向量（续）
+
+## doc2vec
+
+我们知道，word是sentence的基本组成单位。一个最简单也是最直接得到sentence embedding的方法是将组成sentence的所有word的embedding向量全部加起来。
+
+显然，这种简单粗暴的方法会丢失很多信息。
+
+doc2vec是Mikolov在word2vec的基础上提出的一种生成句子向量的方法。
+
+论文：
+
+《Distributed Representations of Sentences and Documents》
+
+http://cs.stanford.edu/~quocle/paragraph_vector.pdf
+
+![](/images/article/doc2vec.png)
+
+上图是doc2vec的框架图，可以看出doc2vec的原理与word2vec基本一致，区别仅在于前者多出来一个Paragraph Vector参与CBOW或Skip-gram的训练。
+
+Paragraph Vector可以和Word Vector一起生成，也可以单独生成，也就是训练时，采用预训练的Word Vector，并只改变Paragraph Vector的值。
+
+https://www.zhihu.com/question/33952003
+
+如何通过词向量技术来计算2个文档的相似度?
 
 ## FastText
 
@@ -271,26 +295,3 @@ $$\left\|\prod_{k<i\le t} \frac{\partial h_{i}}{\partial h_{i-1}}\right\| \le \e
 比如，针对$$\eta > 1$$的情况，可以采用Gradient Clipping技术，通过设置梯度的上限，来避免Gradient Explode。
 
 还可使用正交初始化技术，在训练之初就将$$\eta$$调整到1附近。
-
-## RNN的历史
-
-上面研究的RNN结构，又被称为Elman RNN。最早是Jeffrey Elman于1990年发明的。
-
-$$\begin{align}
-h_t &= \sigma_h(W_{h} x_t + U_{h} h_{t-1} + b_h) \\
-y_t &= \sigma_y(W_{y} h_t + b_y)
-\end{align}$$
-
-论文：
-
-《Finding Structure in Time》
-
->Jeffrey Locke Elman，1948年生，Harvard College本科（1969年）+University of Texas博士（1977年）。University of California, San Diego教授，American Academy of Arts and Sciences院士（2015年）。 美国心理学会会员。  
->个人主页：   
->https://tatar.ucsd.edu/jeffelman/
-
->Harvard College是Harvard University最古老的本部，目前一般提供本科教育。它和其他许多研究生院以及相关部门，共同组成了Harvard University。类似的还有Yale College和Yale University。
-
->American Academy of Arts and Sciences建于1780年。当时，美国正在法国等国的协助下与英国作战，所以美国的创立者选择比照包括作家、人文学者、科学家、军事家、政治家在内的法兰西学术院，建立新大陆的学术院。   
->后来，林肯总统比照英国皇家学会，于1863年创建了主要涵盖自然科学的National Academy of Sciences，United States。   
->这两个学院是美国学术界最权威的组织。

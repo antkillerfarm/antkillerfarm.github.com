@@ -193,34 +193,3 @@ MongoDB新功能介绍-Change Streams
 Robomongo是一个开源的MongoDB的前端工具，基于Qt编写。官网：
 
 https://robomongo.org/
-
-# DL参考资源
-
-https://mp.weixin.qq.com/s/R72RzLi4AC4Su1EJ_W52aA
-
-Petuum提出深度生成模型统一的统计学框架
-
-https://mp.weixin.qq.com/s/FxrLxSp1Cd7w9i6xVqLJEw
-
-Tree-CNN：一招解决深度学习中的“灾难性遗忘”
-
-https://mp.weixin.qq.com/s/sdCwCwyVaVcRzxE4BI21jA
-
-当，程序员突然想画画，AI+机器人就该登场了
-
-https://mp.weixin.qq.com/s/fbsowjTuN7XfIgylsbXg9A
-
-360首席科学家颜水成：人工智能杂谈
-
-https://mp.weixin.qq.com/s/xTSLpFrBdKBgazCfjuLiwA
-
-Spotlight论文：解耦神经网络DCNet，性能优于标准CNN
-
-https://mp.weixin.qq.com/s/I1IJkNqNfT1TkB7NgchIYA
-
-基于多粒度监督的图像语义物体协同标注
-
-https://mp.weixin.qq.com/s/Cz_GzYrcofFJJUmcjonjfQ
-
-何恺明等新作：用35亿社交网络图片训练AI算法，吴恩达推荐
-

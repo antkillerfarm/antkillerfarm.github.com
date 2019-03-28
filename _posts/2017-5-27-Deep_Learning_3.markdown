@@ -8,6 +8,28 @@ category: DL
 
 ## Batch Normalization（续）
 
+参考：
+
+http://blog.csdn.net/malefactor/article/details/51476961
+
+Batch Normalization导读
+
+http://www.cnblogs.com/neopenx/p/5211969.html
+
+从Bayesian角度浅析Batch Normalization
+
+http://blog.csdn.net/hjimce/article/details/50866313
+
+Batch Normalization学习笔记
+
+https://buptldy.github.io/2016/08/18/2016-08-18-Batch_Normalization/
+
+Implementation of Batch Normalization Layer（中文blog）
+
+https://www.zhihu.com/question/38102762
+
+深度学习中 Batch Normalization为什么效果好？
+
 https://mp.weixin.qq.com/s/OAn8y_uJTgyrtS2ZCyudlg
 
 Batch Normalization原理及其TensorFlow实现
@@ -279,43 +301,3 @@ CNN入门手册（中）
 https://mp.weixin.qq.com/s/chsDjS39qcoHICUNbSdQHQ
 
 长文揭秘图像处理和卷积神经网络架构
-
-https://mp.weixin.qq.com/s/nIbfiDXkqkpdLzQo2Gmc2Q
-
-利用卷积神经网络处理CIFAR图像分类
-
-https://mp.weixin.qq.com/s/5BMU7SRQeuDg68XDcOUBZw
-
-训练集样本不平衡问题对CNN的影响
-
-https://mp.weixin.qq.com/s/p-wZ_6ZQW-zXzDqmRenNow
-
-深度学习入门：几幅手稿讲解CNN
-
-https://mp.weixin.qq.com/s/xXf7hTfH-vx4YbzlZVQucA
-
-CNN入门再介绍
-
-https://mp.weixin.qq.com/s/Q4snAlAi8tPQAyGm0qUy4w
-
-CNN的全面解析
-
-https://mp.weixin.qq.com/s/Do6erhin3W4dK_-RTAyD6A
-
-卷积神经网络(CNN)概念解释
-
-http://www.qingruanit.net/blog/23930/note5837.html
-
-卷积神经网络（CNN）学习算法之----基于LeNet网络的中文验证码识别
-
-https://mp.weixin.qq.com/s/XiaAPd20YxbM0wDiSTAYMg
-
-深度学习之卷积神经网络(CNN)的模型结构
-
-https://mp.weixin.qq.com/s/x-H6h4sRqTrZlOXKStnhPw
-
-卷积神经网络背后的数学原理
-
-https://mp.weixin.qq.com/s/qIdjHqurqvdahEd0dXYIqA
-
-徒手实现CNN：综述论文详解卷积网络的数学本质

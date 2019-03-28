@@ -75,6 +75,8 @@ Deep Learning圈子的主要人物：
 
 >一般将Geoffrey Hinton、Yann LeCun和Yoshua Bengio并称为深度学习的三大宗师。
 
+>2019.3.27 三巨头被共同授予2018年度图灵奖。
+
 ![](/images/article/author_network.png)
 
 上图是一个更大的DL牛人关系图。
@@ -193,6 +195,12 @@ $$\frac{\partial E_k}{\partial w_{hj}}=\frac{\partial E_k}{\partial \hat y_j^k}\
 
 ![](/images/article/chain_rule.png)
 
+值得注意的是残差梯度实际上包括两部分：$$\Delta x$$和$$\Delta w$$。如下图所示：
+
+![](/images/img2/BP.png)
+
+其中$$\Delta x$$和$$\Delta w$$分别是$$\Delta$$在x和w的偏导数方向上的分量。通常情况下，$$\Delta x$$用于向上层传递梯度，而$$\Delta w$$用于更新权值w。
+
 ## 随机初始化
 
 神经网络的参数的**随机初始化**的目的是使对称失效。否则的话，所有对称结点的权重都一致，也就无法区分并学习了。
@@ -217,56 +225,12 @@ $$\sqrt{\frac{2}{n_l}}$$
 
 其中，$$n_l=k_l^2d_{l-1}$$，$$k_l$$表示l层的filter的大小，$$d_{l-1}$$表示l-1层的filter的数量。
 
-参见：
+## BP算法的缺点
 
-http://blog.csdn.net/xizero00/article/details/51013088
+虽然传统的BP算法，理论上可以支持任意深度的神经网络。然而实际使用中，却很少能支持3层以上的神经网络。
 
-Different Methods for Weight Initialization in Deep Learning
+![](/images/article/sigmoid.png)
 
-https://mp.weixin.qq.com/s/xqWli1xnsGkqYDUjgvOnkQ
+如上图所示，sigmoid函数不是线性的，一个小的输出值的改变，对应了比较大的输入值改变。换句话说，就是输出值的梯度较大，而输入值的梯度较小。而梯度在基于梯度下降的优化问题中，是至关重要的。
 
-反向传播神经网络极简入门
-
-https://mp.weixin.qq.com/s/PhxkfWH5bEbykMKGEtDScA
-
-为什么神经网络参数不能够全部初始化为全0？
-
-https://mp.weixin.qq.com/s/s-v7T0k2gy7ZRnrFCUpTYg
-
-通过方差分析详解最流行的Xavier权重初始化方法
-
-https://mp.weixin.qq.com/s/r1OJoLa_t8QwNcL4kfx5uQ
-
-神经网络参数随机初始化已经过时了
-
-https://mp.weixin.qq.com/s/mFA2PeO70o3HR6AQ74Lp3g
-
-深度学习最佳实践之权重初始化
-
-https://mp.weixin.qq.com/s/M1TswiDh-LkH9G7jCQ_UqA
-
-神经网络编程-前向传播和后向传播
-
-https://mp.weixin.qq.com/s/Dygdn0Xzpx40-zUQadiiHg
-
-通过梯度检验帮助实现反向传播
-
-https://mp.weixin.qq.com/s/auNRIPYEwRlROFXug41Ang
-
-简单初始化，训练10000层CNN
-
-https://mp.weixin.qq.com/s/iSJyOe81dnEuaKzOih6WNg
-
-什么是深度学习成功的开始？参数初始化
-
-https://mp.weixin.qq.com/s/s4ew7LYgnC9Z3kVFsjcaXg
-
-不用批归一化也能训练万层ResNet，新型初始化方法Fixup了解一下
-
-https://mp.weixin.qq.com/s/zTB59Fg_JFg9ZZPRlq9txA
-
-不使用残差连接，ICML新研究靠初始化训练上万层标准CNN
-
-https://mp.weixin.qq.com/s/_WCVvM6sPpsWD8NS8etEKA
-
-京东AI研究院提出ScratchDet：随机初始化训练SSD目标检测器
+随着层数的增多，反向传递的残差梯度会越来越小，这样的现象，被称作**梯度消失**（Vanishing Gradient）。它导致的结果是，虽然靠近输出端的神经网络已经训练好了，但输入端的神经网络仍处于随机状态。也就是说，靠近输入端的神经网络，有和没有都是一样的效果，完全体现不了深度神经网络的优越性。

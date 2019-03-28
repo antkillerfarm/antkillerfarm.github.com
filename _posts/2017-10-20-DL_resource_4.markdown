@@ -6,98 +6,6 @@ category: resource
 
 # DL参考资源
 
-## 并行 & 框架（续）
-
-https://mp.weixin.qq.com/s/wIdTDHEPffWqHA3_XWBLyw
-
-没错，纯SQL查询语句可以实现神经网络。
-
->SQL跑神经网络固然没有太大意义，然而分布式数据库已经有数十年的历史，对于设计分布式深度学习框架亦有重大的启发意义。
-
-https://zhuanlan.zhihu.com/p/33351291
-
-基于忆阻器（ReRAM），Computing-in-Memory的DLA
-
-https://mp.weixin.qq.com/s/eTwSo3GnxSnK-BwwZeWmKA
-
-Jeff Dean等提出自动化分层模型，优化CPU、GPU等异构环境，性能提升超60%
-
-https://mp.weixin.qq.com/s/q0VENBNgolpeWmDapF5q_g
-
-在有池化层、1步幅的CNN上减少冗余计算，一种广泛适用的架构转换方法
-
-https://mp.weixin.qq.com/s/sn8fMAbJbeT6JUbCpBpN6A
-
-Jeff Dean与David Patterson：不思考体系结构的深度学习研究者不是好工程师
-
-https://mp.weixin.qq.com/s/6zLrWJ4nE0bHFlVe5dMxHw
-
-分布式深度学习新进展：让“分布式”和“深度学习”真正深度融合
-
-https://mp.weixin.qq.com/s/hjC-WTMIpbWWpmXoLBfD2g
-
-腾讯大规模分布式机器学习系统无量是如何进行技术选型的？
-
-https://mp.weixin.qq.com/s/mg-d1W5i9rzaLMNrvq0tSQ
-
-32分钟训练神经机器翻译，速度提升45倍
-
-https://mp.weixin.qq.com/s/iW0k80TUPuWDE9xwHvX91g
-
-为什么你需要Raven：全球首个真正分布式深度学习训练协议
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750181&idx=1&sn=156dac3c5646143fc2577972f1506836
-
-GPU捉襟见肘还想训练大批量模型？谁说不可以
-
-https://mp.weixin.qq.com/s/UbZtUL6Iveb4S3nTU0liGw
-
-深度神经网络的分布式训练概述：常用方法和技巧全面总结
-
-https://mp.weixin.qq.com/s/kLXJsHbBnRIFC3NLChPhzA
-
-如何高效进行大规模分类？港中文联合商汤提出新方法
-
-https://mp.weixin.qq.com/s/F10UaaoxGPOE4pc59LBCRw
-
-数据并行化对神经网络训练有何影响？谷歌大脑进行了实证研究
-
-https://mp.weixin.qq.com/s/UF7DDenUQJ3bL83IHxOkIw
-
-分布式优化算法及其在多智能体系统与机器学习中的应用
-
-https://mp.weixin.qq.com/s/6h9MeBs89hTtWsYSZ4pZ5g
-
-蚂蚁金服核心技术：百亿特征实时推荐算法揭秘
-
-https://mp.weixin.qq.com/s/xV5cLbCPb7Nh6i4i7DxJIQ
-
-没人告诉你的大规模部署AI高效流程！
-
-https://mp.weixin.qq.com/s/8R7YhcZ_Dt0oFIF3bQovxw
-
-为了提升DL模型性能，阿里工程师打造了流式编程框架
-
-https://mp.weixin.qq.com/s/z6gXp-EeDID1ed8_DsUbOg
-
-90秒训练AlexNet！商汤刷新纪录
-
-https://mp.weixin.qq.com/s/HY2yPZ--Zm5_m3B70baWjQ
-
-谷歌开源效率怪兽GPipe，速度提升25倍，CIFAR-10精度达到99%
-
-https://mp.weixin.qq.com/s/HQW2bPyDY_3ecZWP6NYr-w
-
-大规模机器学习在LinkedIn预测模型中的应用实践
-
-https://mp.weixin.qq.com/s/i1PLA1xr3CefKx1EcVUVIg
-
-谷歌破世界纪录！圆周率计算到小数点后31.4万亿位
-
-https://mp.weixin.qq.com/s/rX8L63-jDGJT6lCAj04I3Q
-
-独家解读！阿里重磅发布机器学习平台PAI 3.0
-
 ## 实战
 
 http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg
@@ -268,108 +176,216 @@ https://mp.weixin.qq.com/s/jjQMnrGGTdui9uc7GGKpsg
 
 Kaggle座头鲸识别赛，TOP10团队的解决方案分享
 
-## AI与安全
+https://mp.weixin.qq.com/s/jpfvRbmTgFVQczHzKekmLw
 
-https://mp.weixin.qq.com/s/jBE4gP3O0qVJ50G49Q_xmQ
+北邮夺冠CVPR 2018 DeepGlobe比赛，他们是这样做卫星图像识别的
 
-对抗样本攻防战，清华大学TSAIL团队再获CAAD攻防赛第一
+https://mp.weixin.qq.com/s/CGe1MAKRiLtaFFyVOkauhw
 
-https://mp.weixin.qq.com/s/w84gLswUFkl4NJSMv0RnIA
+16岁高中生夺冠Kaggle地标检索挑战赛！
 
-OpenAI详细解析：攻击者是如何使用“对抗样本”攻击机器学习的！
+## 连续学习
 
-https://mp.weixin.qq.com/s/u7HxMuJxQG91qFbvS_8csA
+https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
 
-L2正则化和对抗鲁棒性的关系
+终身机器学习: 一种持续学习的范式
 
-https://mp.weixin.qq.com/s/mbjVliHWT9tt7h998FU9Tg
+https://mp.weixin.qq.com/s/SBppyDBWqQUariiHbpaq1w
 
-L2正则化视角下的对抗样本
+实时深度学习的推理加速和连续学习
 
-https://mp.weixin.qq.com/s/5OMT6BvqkUgtshow_tLkNw
+https://mp.weixin.qq.com/s/83HufWMDnuXIOCCfgqeDJw
 
-精准防御对抗性攻击，清华大学提出对抗正则化训练方法DeepDefense
+为什么说持续学习才是AI的关键
 
-https://mp.weixin.qq.com/s/hBPsCUCQjT6cIKjjrHyQYg
+https://mp.weixin.qq.com/s/kmEFjzFIbNq0_qdjc1Wm_w
 
-继图像识别后，图像标注系统也被对抗样本攻陷!
+DeepMind新智能体架构Unicorn：持续学习能力胜过多个基准智能体
 
-https://mp.weixin.qq.com/s/c8-lS2TyuQ1lE2sDrW626A
+## 鉴黄
 
-神奇的面包机！谷歌造出对抗样本的实体版
+https://mp.weixin.qq.com/s/vTtKUagiFD55mcQIeGDxQw
 
-https://mp.weixin.qq.com/s/FNQSLPHQSHSkDipREE702A
+图像鉴黄做得好，健康上网少烦恼
 
-利用分布鲁棒优化方法应对对抗样本干扰
+https://zhuanlan.zhihu.com/p/33177237
 
-https://mp.weixin.qq.com/s/T--R4c0QfyPS2vrGdyUlOw
+在Movidius计算棒上利用深度学习鉴黄
 
-UIUC学者构建欺骗检测器的对抗样本！
+http://tensorinfinity.com/paper_119.html
 
-https://mp.weixin.qq.com/s/fMtuJbWG_d9zyCZ0oYyX_w
+图像内容鉴黄算法综述
 
-经得住考验的“假图片”：用TensorFlow为神经网络生成对抗样本
+## 面试
 
-https://mp.weixin.qq.com/s/dWIhQVPNi9SlzuhMiatEVQ
+https://mp.weixin.qq.com/s/U5hlr69m_9Znwjkj3Yl4Hg
 
-几张贴纸就让神经网络看不懂道路标志，伯克利为真实环境生成对抗样本
+《深度学习500问》一份超全深度学习资料，面试必备！
 
-https://mp.weixin.qq.com/s/yfuMacLnj9q-9gpXCUfZhg
+https://www.zhihu.com/question/41233373
 
-PSU提出深度k-最近邻算法：解决深度学习应用的安全漏洞
+如果你是面试官，你怎么去判断一个面试者的深度学习水平？
 
-https://mp.weixin.qq.com/s/oUpoqnUUhMR_zlQqrvdLTw
+https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
 
-一文读懂如何用深度学习实现网络安全
+20万、50万、100万的算法工程师，到底有什么区别？
 
-https://mp.weixin.qq.com/s/bWHaBTaKkjtJec3taFugeQ
+https://www.zhihu.com/question/56676679/answer/151505274
 
-向人类免疫系统学习，AI如何做到挽救30亿美元的网络犯罪损失？
+机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
 
-https://mp.weixin.qq.com/s/KNXD-MpVHQRXYvJKTqn6WA
+https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
 
-完善强化学习安全性：UC Berkeley提出约束型策略优化新算法
+面试官是如何看出你机器学习水平的？
 
-https://mp.weixin.qq.com/s/AL48Gp4NbGWPrz9I0eBOXA
+https://mp.weixin.qq.com/s?__biz=MzI3NTA0MzM1OQ==&mid=2651615534&idx=1&sn=00ecd7dc1d8472c070e720a1b63f04c4
 
-“房间里的大象“：让目标检测器一脸懵逼
+我如何考察面试者的机器学习水平
 
-https://mp.weixin.qq.com/s/tk7ghSXi2jz8SYbBeWR8jg
+https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
 
-神经网络模糊测试：将DNN应用于软件安全测试
+谷歌等巨头机器学习面试题：从逻辑回归到智力测验
 
-https://zhuanlan.zhihu.com/p/45695815
+https://mp.weixin.qq.com/s/9ivDZXpPpLE3fuPgpNUyJA
 
-华为新论文：将行人重识别准确率从88变到0
+超全数据科学与机器学习面试指南
 
-https://mp.weixin.qq.com/s/Um6U-hjZ8I-awDinHXaQLg
+https://mp.weixin.qq.com/s/qmdfLlTfQzT0QVq_SzEPUw
 
-三维对抗样本的生成方法MeshAdv，成功欺骗真实场景中的分类器和目标检测器
+机器学习和深度学习中值得弄清楚的一些问题
 
-https://mp.weixin.qq.com/s/tWKGLntwXyePZcJsZ30K3A
+https://mp.weixin.qq.com/s/JgSTOiWZ30mIR_uiXyU2PQ
 
-神经网络太好骗？清华团队如何做到打NIPS攻防赛得3冠军的
+硅谷高级工程师告诉你：算法工程师必须要知道的面试技能雷达图
 
-https://mp.weixin.qq.com/s/g1IHOd4S-uKcl3DX131zFg
+## gcForest
 
-“穿墙透视”黑魔法来了！只需WiFi和智能手机就可实现
+http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw
 
-https://mp.weixin.qq.com/s/x6KM7iruojEWkWPgXpIAuA
+周志华教授gcForest（多粒度级联森林）算法预测股指期货涨跌
 
-这一次，MIT的科学家让谷歌AI把步枪误认成直升机
+https://mp.weixin.qq.com/s/GU9-rH0gFan620Jhc1HTDg
 
-https://mp.weixin.qq.com/s/OjpIeAdPTeOpYa5T0h992A
+周志华提出的gcForest能否取代深度神经网络？
 
-只需修改一个像素，让神经网络连猫都认不出
+https://mp.weixin.qq.com/s/dEmox_pi6KGXwFoevbv14Q
 
-https://mp.weixin.qq.com/s/Jmlia3v5P8UzG-MEuIMULQ
+周志华：首个基于森林的自编码器，性能优于DNN
 
-对抗攻击的12种攻击方法和15种防御方法
+http://mp.weixin.qq.com/s/IfEgSOIkIPA-YtC9NQW1ng
 
-https://mp.weixin.qq.com/s/Jhi9TWQqhJIyG7cakgo2Xg
+非神经网络的深度模型gcForest
 
-修改一个像素，就能让神经网络识别图像出错
+https://mp.weixin.qq.com/s/N80l9PZQposbIOKXbv8ayw
 
-https://mp.weixin.qq.com/s/6AtZZ434HehQSf_YgbylTw
+周志华：最新实验表明gcForest已经是最好的非深度神经网络方法
 
-用100元的支票骗到100万：看看对抗性攻击是怎么为非作歹的
+https://mp.weixin.qq.com/s/8QP5X9Hxi_6qyfxP4O0Gwg
+
+周志华团队和蚂蚁金服合作：用分布式深度森林算法检测套现欺诈
+
+https://mp.weixin.qq.com/s/bE9BZQ6wCICvrgomdySDuw
+
+周志华组提出可做表征学习的多层梯度提升决策树
+
+## 参考
+
+https://mp.weixin.qq.com/s/MoKzux6Z69dlpqcVTvQ9oQ
+
+解释深度神经网络训练全过程：谷歌发布SVCCA
+
+https://mp.weixin.qq.com/s/DF5eSgJpFHfcMeW2EL6oZQ
+
+Hinton提出泛化更优的“软决策树”：可解释DNN具体决策
+
+https://mp.weixin.qq.com/s/X75H8YOysftwU4VSjlmLBQ
+
+谷歌大脑最新技术：将神经网络提炼成软决策树！
+
+https://mp.weixin.qq.com/s/R_nd7_YWA7q1JzE0BP8JrQ
+
+Petuum新研究助力临床决策：使用深度学习实现自动ICD编码
+
+https://mp.weixin.qq.com/s/BpU2num-p95OTKnG1tAp3w
+
+深度神经网络-随机三元化梯度下降和结构化稀疏
+
+https://mp.weixin.qq.com/s/NXA7ymIuk0DaRwhFf0OHqA
+
+MSRA研究员提出物体关系模块，实现首个完全端到端的物体检测系统
+
+https://mp.weixin.qq.com/s/rAq6Rn7pSaZ5IOexgLO-4w
+
+FAIR提出突触可塑算法：让神经网络学会记忆和遗忘
+
+https://mp.weixin.qq.com/s/gljfrNwNvrK7teJ-DYyNIw
+
+如何用深度学习处理结构化数据？
+
+https://mp.weixin.qq.com/s/AZyqxZf6CbZJoT3qOpHDCQ
+
+深度学习也可以取悦女友
+
+https://mp.weixin.qq.com/s/KX85CCpYrXFOvdTU5Q4Frg
+
+阿里巴巴论文提出针对影视作品的语音情感识别信息融合框架
+
+https://mp.weixin.qq.com/s/XnCBiTqFVDh_4oBZdUoxew
+
+Bengio等提出稀疏注意力回溯：长期依赖关系建模的更一般化机制
+
+https://mp.weixin.qq.com/s/2QuwBVaFCQjl81z38u6L-g
+
+一文看尽三种针对人工智能系统的攻击技术及防御策略
+
+https://mp.weixin.qq.com/s/5gsbviBZ9Wkns0NTwCfDFw
+
+孙剑：如何打造云、端、芯上的视觉计算
+
+https://mp.weixin.qq.com/s/7dIf0YbUJCwz-_X9yTYIsA
+
+一文读懂AI如何判断照片中人物的社交关系
+
+https://mp.weixin.qq.com/s/w-6z8B60cIHUF5tU-RoQ3w
+
+旷视科技提出统一感知解析网络UPerNet，优化场景理解
+
+https://mp.weixin.qq.com/s/8dVronQoeZLJI2g49AljLg
+
+技术讲解概率机器学习——深度学习革命之后AI道路
+
+https://mp.weixin.qq.com/s/qof4GEPQYb9rO3Do_oL7BQ
+
+如果给猫披上象皮，神经网络将作何判断？
+
+https://mp.weixin.qq.com/s/l1Bc5l5cr3y9jQbh-bEQeQ
+
+Deep Learning of Graph Matching论文解读
+
+https://mp.weixin.qq.com/s/494I6XHrk9fB2DvhiMM9iQ
+
+第四范式联合港科大提出样本自适应在线卷积稀疏编码
+
+https://mp.weixin.qq.com/s/p8u2aTJL2gfPIXLsLfoJyg
+
+谷歌大脑提出MAPO：用于程序合成的策略优化方法
+
+https://mp.weixin.qq.com/s/zC5iGXVn7xH8TYBXtkntzA
+
+让计算机一眼认出“猫”：哈佛提出新高维数据分析法
+
+http://mp.weixin.qq.com/s/vhBOrR6uTL2vGXnYC8BS1w
+
+Windows版深度学习软件安装指南
+
+https://mp.weixin.qq.com/s/FwqKYNpIuB6cUAVjSey7mw
+
+Yoshua Bengio首次中国演讲：深度学习通往人类水平AI的挑战
+
+https://mp.weixin.qq.com/s/aqfwn0kiXbZwVDVhHXBAXQ
+
+谷歌大脑研究员玩转汉字RNN：神经网络生成新华字典
+
+https://mp.weixin.qq.com/s/GxWOuIf25JQnQoCstVyGLQ
+
+李飞飞团队提出OpenTag模型：减少人工标注，自动提取产品属性值

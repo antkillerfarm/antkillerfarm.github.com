@@ -1,12 +1,32 @@
 ---
 layout: post
-title:  深度学习（九）——CNN进化史（2）
+title:  深度学习（九）——CNN进化史（2）, 并行 & 框架
 category: DL 
 ---
 
-# CNN进化史
+# CNN进化史（续）
 
-## 总结（续）
+## 总结
+
+以下内容摘自中科视拓CEO山世光的演讲。
+
+以让小区里的巡逻机器人学会检测狗屎为例。
+
+在**前深度学习时代**，这个过程大概分三步：
+
+第一步，花几个月时间收集和标注几百或上千张图；
+
+第二步，观察并人为设计形状、颜色、纹理等特征；
+
+第三步，尝试各种分类器做测试，如果测试结果不好，返回第二步不断地迭代。
+
+人脸检测就是这样进行的，从上世纪八十年代开始做，大量研究者花了大概二十年时间，才得到了一个基本可用的模型，能较好地解决人脸检测的问题。而后在监控场景下做行人和车辆的检测，前后也花了大概十年的时间。就算基于这些经验，做出好用的狗屎检测器，至少还是需要一年左右的时间。
+
+在**深度学习时代**，开发一个狗屎检测器的流程被大大缩短了。尽管深度学习需要收集大量的数据并进行标注（用矩形把图中的狗屎位置框出来），但由于众包平台的繁荣，收集一万张左右的数据可能只需要两星期。
+
+接下来，我们只需要挑几个已经被证明有效的深度学习模型进行优化训练就可以了，训练优化大概需要一个星期，就算换几个模型再试试看。这样完成整个过程只需要一两个月而已。
+
+而在**后深度学习时代**，我们期待先花几分钟时间，在网上随便收集几张狗屎照片，交给机器去完成余下所有的模型选择与优化工作，或许最终只需要一、两星期解决这个问题。
 
 前深度学习时代的人脸识别的标准流程：
 
@@ -105,3 +125,131 @@ LeCun亲授的深度学习入门课：从飞行器的发明到卷积神经网络
 https://mp.weixin.qq.com/s/z26bXb8eAelrwj6Tkvm_-A
 
 卷积神经网络常见架构AlexNet、ZFNet、VGGNet、GoogleNet和ResNet模型的理论与实践
+
+# 并行 & 框架
+
+## 论文
+
+《Demystifying Parallel and Distributed Deep Learning: An In-Depth Concurrency Analysis》
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/58806183
+
+深度学习的分布和并行处理系统
+
+https://zhuanlan.zhihu.com/p/26552293
+
+Dataflow架构和神经网络加速器
+
+https://zhuanlan.zhihu.com/p/28445511
+
+浅析深度学习框架设计中的关键技术
+
+https://mp.weixin.qq.com/s/B4aQp_0YvS0jyUHNLQ5rRA
+
+IBM发布新型分布式深度学习系统：结合软硬件实现当前最优性能
+
+http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks
+
+神经网络的分布式训练
+
+https://mp.weixin.qq.com/s/nvuflLfOolidDDXJVe2DZA
+
+美团深度学习系统的工程实践
+
+https://mp.weixin.qq.com/s/IE6blClvhYlq3-QAGHo5ww
+
+TensorFlow分布式计算机制解读：以数据并行为重
+
+https://mp.weixin.qq.com/s/7JGLm-hkCZBNDLA98qvWNA
+
+自动生成硬件优化内核：陈天奇等人发布深度学习编译器TVM
+
+https://mp.weixin.qq.com/s/4Ii3um3jqfm5yKKxZAFdmA
+
+继1小时训练ImageNet之后，大批量训练扩展到了3万2千个样本
+
+https://mp.weixin.qq.com/s/kOCftzSbHe2mvDmlRp-ihA
+
+Jeff Dean：AI对计算机系统设计的影响
+
+https://mp.weixin.qq.com/s/XjNPaL6PC9LHX1PEGn5UZg
+
+微软实时AI系统“脑波计划”有多牛？看完秒懂！
+
+https://mp.weixin.qq.com/s/OkqUulFYHQSdgAbf9Fi9LA
+
+CoCoA：大规模机器学习的分布式优化通用框架
+
+https://mp.weixin.qq.com/s/ToIDncp9dS_qk47PsdZm5A
+
+杜克大学：分布式深度学习训练算法TernGrad
+
+https://mp.weixin.qq.com/s/rhtrN2qDspGkpJYDAVSX7w
+
+UC Berkeley展示全新并行处理方法
+
+https://mp.weixin.qq.com/s/ASqpPSIgW_bcFPBfRYz7Xg
+
+哈佛大学提出在云、边缘与终端设备上的分布式深度神经网络DDNN
+
+http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
+
+《Large Scale Distributed Deep Networks》中译文
+
+https://mp.weixin.qq.com/s/X7XG51yohLnEZ_Jg6XK9oQ
+
+Caffe作者贾扬清教你怎样打造更加优秀的深度学习架构
+
+https://mp.weixin.qq.com/s/_mrYI7McMBUx0lEh4rNiYQ
+
+百度开源移动端深度学习框架MDL，手机部署CNN支持iOS GPU
+
+https://mp.weixin.qq.com/s/qOjGrR59Mf0Mzgh4bpDhrA
+
+详解Horovod：Uber开源的TensorFlow分布式深度学习框架
+
+https://mp.weixin.qq.com/s/ZCNSq5FC2REoVTKAK2mJQg
+
+分布式深度学习原理、算法详细介绍
+
+https://mp.weixin.qq.com/s/Ewiil56vMkzhO2xDWgo-Wg
+
+苹果发布Turi Create机器学习框架，5行代码开发图像识别
+
+https://mp.weixin.qq.com/s/jOVUPhrCBI9W9vPvD9eKYg
+
+UC Berkeley提出新型分布式框架Ray：实时动态学习的开端
+
+https://mp.weixin.qq.com/s/r951Iasr4dke6MPHsUO0TA
+
+开源DAWN，Stanford的又一力作
+
+https://mp.weixin.qq.com/s/2jrMDeMcb47zpPfFLEcnIA
+
+深度学习平台技术演进
+
+https://mp.weixin.qq.com/s/L4CMKS53pNyvhhqvQhja0g
+
+5种商业AI产品的技术架构设计
+
+https://mp.weixin.qq.com/s/IqjKdAlGYREqCR9XQB5N1A
+
+伯克利AI分布式框架Ray，兼容TensorFlow、PyTorch与MXNet
+
+https://mp.weixin.qq.com/s/aNX_8UDYI_0u-MwMTYeqdQ
+
+开发易、通用难，深度学习框架何时才能飞入寻常百姓家？
+
+https://mp.weixin.qq.com/s/UbAHB-uEIvqYZCB7xIAJTg
+
+机器学习新框架Propel：使用JavaScript做可微分编程
+
+https://mp.weixin.qq.com/s/_-z2d1GE_3FElzAwPyJZ8A
+
+十大流行AI框架和库的优缺点比较
+
+https://mp.weixin.qq.com/s/Ctl65r4iZNEOBxiiX2I2eQ
+
+Momenta王晋玮：让深度学习更高效运行的两个视角

@@ -236,140 +236,155 @@ https://mp.weixin.qq.com/s/WabOUqqK6RW8mTNR53esYQ
 
 DeepMind让AI组队踢足球学会“合作”，并开源训练环境
 
-## 并行 & 框架
+## AI与安全
 
-https://zhuanlan.zhihu.com/p/58806183
+https://mp.weixin.qq.com/s/jBE4gP3O0qVJ50G49Q_xmQ
 
-深度学习的分布和并行处理系统
+对抗样本攻防战，清华大学TSAIL团队再获CAAD攻防赛第一
 
-https://zhuanlan.zhihu.com/p/26552293
+https://mp.weixin.qq.com/s/w84gLswUFkl4NJSMv0RnIA
 
-Dataflow架构和神经网络加速器
+OpenAI详细解析：攻击者是如何使用“对抗样本”攻击机器学习的！
 
-https://zhuanlan.zhihu.com/p/28445511
+https://mp.weixin.qq.com/s/u7HxMuJxQG91qFbvS_8csA
 
-浅析深度学习框架设计中的关键技术
+L2正则化和对抗鲁棒性的关系
 
-https://mp.weixin.qq.com/s/B4aQp_0YvS0jyUHNLQ5rRA
+https://mp.weixin.qq.com/s/mbjVliHWT9tt7h998FU9Tg
 
-IBM发布新型分布式深度学习系统：结合软硬件实现当前最优性能
+L2正则化视角下的对抗样本
 
-http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks
+https://mp.weixin.qq.com/s/5OMT6BvqkUgtshow_tLkNw
 
-神经网络的分布式训练
+精准防御对抗性攻击，清华大学提出对抗正则化训练方法DeepDefense
 
-https://mp.weixin.qq.com/s/nvuflLfOolidDDXJVe2DZA
+https://mp.weixin.qq.com/s/hBPsCUCQjT6cIKjjrHyQYg
 
-美团深度学习系统的工程实践
+继图像识别后，图像标注系统也被对抗样本攻陷!
 
-https://mp.weixin.qq.com/s/IE6blClvhYlq3-QAGHo5ww
+https://mp.weixin.qq.com/s/c8-lS2TyuQ1lE2sDrW626A
 
-TensorFlow分布式计算机制解读：以数据并行为重
+神奇的面包机！谷歌造出对抗样本的实体版
 
-https://mp.weixin.qq.com/s/7JGLm-hkCZBNDLA98qvWNA
+https://mp.weixin.qq.com/s/FNQSLPHQSHSkDipREE702A
 
-自动生成硬件优化内核：陈天奇等人发布深度学习编译器TVM
+利用分布鲁棒优化方法应对对抗样本干扰
 
-https://mp.weixin.qq.com/s/4Ii3um3jqfm5yKKxZAFdmA
+https://mp.weixin.qq.com/s/T--R4c0QfyPS2vrGdyUlOw
 
-继1小时训练ImageNet之后，大批量训练扩展到了3万2千个样本
+UIUC学者构建欺骗检测器的对抗样本！
 
-https://mp.weixin.qq.com/s/kOCftzSbHe2mvDmlRp-ihA
+https://mp.weixin.qq.com/s/fMtuJbWG_d9zyCZ0oYyX_w
 
-Jeff Dean：AI对计算机系统设计的影响
+经得住考验的“假图片”：用TensorFlow为神经网络生成对抗样本
 
-https://mp.weixin.qq.com/s/XjNPaL6PC9LHX1PEGn5UZg
+https://mp.weixin.qq.com/s/dWIhQVPNi9SlzuhMiatEVQ
 
-微软实时AI系统“脑波计划”有多牛？看完秒懂！
+几张贴纸就让神经网络看不懂道路标志，伯克利为真实环境生成对抗样本
 
-https://mp.weixin.qq.com/s/OkqUulFYHQSdgAbf9Fi9LA
+https://mp.weixin.qq.com/s/yfuMacLnj9q-9gpXCUfZhg
 
-CoCoA：大规模机器学习的分布式优化通用框架
+PSU提出深度k-最近邻算法：解决深度学习应用的安全漏洞
 
-https://mp.weixin.qq.com/s/ToIDncp9dS_qk47PsdZm5A
+https://mp.weixin.qq.com/s/oUpoqnUUhMR_zlQqrvdLTw
 
-杜克大学：分布式深度学习训练算法TernGrad
+一文读懂如何用深度学习实现网络安全
 
-https://mp.weixin.qq.com/s/rhtrN2qDspGkpJYDAVSX7w
+https://mp.weixin.qq.com/s/bWHaBTaKkjtJec3taFugeQ
 
-UC Berkeley展示全新并行处理方法
+向人类免疫系统学习，AI如何做到挽救30亿美元的网络犯罪损失？
 
-https://mp.weixin.qq.com/s/ASqpPSIgW_bcFPBfRYz7Xg
+https://mp.weixin.qq.com/s/KNXD-MpVHQRXYvJKTqn6WA
 
-哈佛大学提出在云、边缘与终端设备上的分布式深度神经网络DDNN
+完善强化学习安全性：UC Berkeley提出约束型策略优化新算法
 
-http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
+https://mp.weixin.qq.com/s/AL48Gp4NbGWPrz9I0eBOXA
 
-《Large Scale Distributed Deep Networks》中译文
+“房间里的大象“：让目标检测器一脸懵逼
 
-https://mp.weixin.qq.com/s/X7XG51yohLnEZ_Jg6XK9oQ
+https://mp.weixin.qq.com/s/tk7ghSXi2jz8SYbBeWR8jg
 
-Caffe作者贾扬清教你怎样打造更加优秀的深度学习架构
+神经网络模糊测试：将DNN应用于软件安全测试
 
-https://mp.weixin.qq.com/s/_mrYI7McMBUx0lEh4rNiYQ
+https://zhuanlan.zhihu.com/p/45695815
 
-百度开源移动端深度学习框架MDL，手机部署CNN支持iOS GPU
+华为新论文：将行人重识别准确率从88变到0
 
-https://mp.weixin.qq.com/s/qOjGrR59Mf0Mzgh4bpDhrA
+https://mp.weixin.qq.com/s/Um6U-hjZ8I-awDinHXaQLg
 
-详解Horovod：Uber开源的TensorFlow分布式深度学习框架
+三维对抗样本的生成方法MeshAdv，成功欺骗真实场景中的分类器和目标检测器
 
-https://mp.weixin.qq.com/s/ZCNSq5FC2REoVTKAK2mJQg
+https://mp.weixin.qq.com/s/tWKGLntwXyePZcJsZ30K3A
 
-分布式深度学习原理、算法详细介绍
+神经网络太好骗？清华团队如何做到打NIPS攻防赛得3冠军的
 
-https://mp.weixin.qq.com/s/Ewiil56vMkzhO2xDWgo-Wg
+https://mp.weixin.qq.com/s/g1IHOd4S-uKcl3DX131zFg
 
-苹果发布Turi Create机器学习框架，5行代码开发图像识别
+“穿墙透视”黑魔法来了！只需WiFi和智能手机就可实现
 
-https://mp.weixin.qq.com/s/jOVUPhrCBI9W9vPvD9eKYg
+https://mp.weixin.qq.com/s/x6KM7iruojEWkWPgXpIAuA
 
-UC Berkeley提出新型分布式框架Ray：实时动态学习的开端
+这一次，MIT的科学家让谷歌AI把步枪误认成直升机
 
-https://mp.weixin.qq.com/s/r951Iasr4dke6MPHsUO0TA
+https://mp.weixin.qq.com/s/OjpIeAdPTeOpYa5T0h992A
 
-开源DAWN，Stanford的又一力作
+只需修改一个像素，让神经网络连猫都认不出
 
-https://mp.weixin.qq.com/s/2jrMDeMcb47zpPfFLEcnIA
+https://mp.weixin.qq.com/s/Jmlia3v5P8UzG-MEuIMULQ
 
-深度学习平台技术演进
+对抗攻击的12种攻击方法和15种防御方法
 
-https://mp.weixin.qq.com/s/L4CMKS53pNyvhhqvQhja0g
+https://mp.weixin.qq.com/s/Jhi9TWQqhJIyG7cakgo2Xg
 
-5种商业AI产品的技术架构设计
+修改一个像素，就能让神经网络识别图像出错
 
-https://mp.weixin.qq.com/s/IqjKdAlGYREqCR9XQB5N1A
+https://mp.weixin.qq.com/s/6AtZZ434HehQSf_YgbylTw
 
-伯克利AI分布式框架Ray，兼容TensorFlow、PyTorch与MXNet
+用100元的支票骗到100万：看看对抗性攻击是怎么为非作歹的
 
-https://mp.weixin.qq.com/s/aNX_8UDYI_0u-MwMTYeqdQ
+https://mp.weixin.qq.com/s/uI5gUGtiR8VDXreU4YEZYA
 
-开发易、通用难，深度学习框架何时才能飞入寻常百姓家？
+MILA提出防御增强型网络：简单修改已有网络即可提升防攻击能力
 
-https://mp.weixin.qq.com/s/UbAHB-uEIvqYZCB7xIAJTg
+https://mp.weixin.qq.com/s/Ffaotx83qRJS1s-bbMt1UA
 
-机器学习新框架Propel：使用JavaScript做可微分编程
+一点微小的扰动，就可能导致深度神经网络做出错误判断
 
-https://mp.weixin.qq.com/s/_-z2d1GE_3FElzAwPyJZ8A
+https://mp.weixin.qq.com/s/tXr9NhVfBSvI5pduziIECQ
 
-十大流行AI框架和库的优缺点比较
+基于深度学习的二进制恶意样本检测
 
-https://mp.weixin.qq.com/s/Ctl65r4iZNEOBxiiX2I2eQ
+https://mp.weixin.qq.com/s/x8ykOA9CeX3FCz0WCeySng
 
-Momenta王晋玮：让深度学习更高效运行的两个视角
+AI生成假指纹以假乱真，你的指纹识别还安全吗？
 
-https://mp.weixin.qq.com/s/irvBbPKENiZX9G_6wh5c-Q
+https://mp.weixin.qq.com/s/EeAvDpPpfxDO4WFIrvCMpA
 
-陈天奇等人提出TVM：深度学习自动优化代码生成器
+深入浅出对抗性机器学习（AML）
 
-https://mp.weixin.qq.com/s/28n8g_epHsYB0I9GVc_lww
+https://zhuanlan.zhihu.com/p/53908224
 
-陈天奇团队TVM重磅更新：直接在浏览器使用GPU
+如何辨别哪些是人工智能生成的虚假图像？
 
-https://mp.weixin.qq.com/s/UxN9ZRmKLN30s7uPqMpHPQ
+https://mp.weixin.qq.com/s/xZ0MWPdrnzk9cqOP-3wdkw
 
-Jeff Dean等提出动态控制流编程模型，大规模机器学习性能提升21%
+Pig变飞机？AI为什么这么蠢--Adversarial Attack
 
-https://mp.weixin.qq.com/s/fx0Pfu0MOPjSkzi5mL6U_A
+## 光神经网络
 
-清华&斯坦福提出深度梯度压缩DGC，大幅降低分布式训练网络带宽需求
+https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ
+
+3D打印的深度神经网络，光速执行AI运算
+
+https://mp.weixin.qq.com/s/5zt8UIpNBcgNZpwHHJj68Q
+
+光学CNN层替换传统CNN层，超省电
+
+https://mp.weixin.qq.com/s/IheyYAC1yIigYOW-gtc5Eg
+
+Science重磅！用光速实现深度学习，跟GPU说再见
+
+https://mp.weixin.qq.com/s/ENYX87SMlgv30x08iYFQIw
+
+几乎零能耗零延迟！UCLA科学家发明光衍射神经网络，登上Science
+

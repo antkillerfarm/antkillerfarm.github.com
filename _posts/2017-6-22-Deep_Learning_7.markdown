@@ -6,6 +6,34 @@ category: DL
 
 # 神经元激活函数进阶（续）
 
+## ReLU的缺点
+
+深度神经网络的训练问题，最早是2006年Hinton使用**分层无监督预训练**的方法解决的，然而该方法使用起来很不方便。
+
+而深度网络的**直接监督式训练**的最终突破，最主要的原因是采用了新型激活函数ReLU。
+
+但是ReLU并不完美。它在x<0时硬饱和，而当x>0时，导数为1。所以，ReLU能够在x>0时保持梯度不衰减，从而缓解梯度消失问题。但随着训练的推进，部分输入会落入硬饱和区，导致对应权重无法更新。这种现象被称为**神经元死亡**。
+
+ReLU还经常被“诟病”的另一个问题是输出具有**偏移现象**，即输出均值恒大于零。偏移现象和神经元死亡会共同影响网络的收敛性。实验表明，如果不采用Batch Normalization，即使用MSRA初始化30层以上的ReLU网络，最终也难以收敛。
+
+为了解决上述问题，人们提出了Leaky ReLU、PReLU、RReLU、ELU、Maxout等ReLU的变种。
+
+Leaky ReLU:
+
+$$f(x)  = \begin{cases}
+    x & \mbox{if } x > 0 \\
+    a x & \mbox{otherwise}
+\end{cases}$$
+
+这里的a是个常数，如果是个vector的话，那么就是PReLU了。
+
+ELU：
+
+$$f(x) = \begin{cases} 
+x & \mbox{if } x \geq 0 \\ 
+a(e^x-1) & \mbox{otherwise}
+\end{cases}$$
+
 ## Maxout
 
 Maxout Networks是Ian J. Goodfellow于2013年提出的一大类激活函数。
@@ -302,55 +330,3 @@ http://blog.csdn.net/young_gy/article/details/73412285
 http://karpathy.github.io/2015/05/21/rnn-effectiveness/
 
 The Unreasonable Effectiveness of Recurrent Neural Networks
-
-https://mp.weixin.qq.com/s/8u3v9XzECkwcNn5Ay-kYQQ
-
-基于Depthwise Separable Convolutions的Seq2Seq模型_SliceNet原理解析
-
-https://mp.weixin.qq.com/s/H6eYxS7rXGDH_B8Znrxqsg
-
-seq2seq中的beam search算法过程
-
-https://mp.weixin.qq.com/s/U1yHIc5Zq0yKCezRm185VA
-
-Attentive Sequence to Sequence Networks
-
-https://mp.weixin.qq.com/s/cGXANj7BB2ktTdPAL4ZEWA
-
-图解神经网络机器翻译原理：LSTM、seq2seq到Zero-Shot
-
-https://mp.weixin.qq.com/s/jYUAKyTpm69J6Q34A06E-w
-
-百度提出冷聚变方法：使用语言模型训练Seq2Seq模型
-
-https://mp.weixin.qq.com/s/Fp6G1aI_utDd_kTbdHvEVQ
-
-完全基于卷积神经网络的seq2seq
-
-http://localhost:4500/theory/2017/06/21/Deep_Learning_6.html
-
-从2017年顶会论文看Attention Model
-
-https://mp.weixin.qq.com/s/Op_oYiNvaTXvsvAnl8Heew
-
-基于Self-attention的文本向量表示方法，悉尼科技大学和华盛顿大学最新工作
-
-https://mp.weixin.qq.com/s/fBrt4g_Kjmt1tGVZw5KgrQ
-
-从LSTM到Seq2Seq
-
-https://mp.weixin.qq.com/s/riIC6ybvqAJx9mzb-AQIOw
-
-Facebook AI发布新版本FairSeq序列到序列(Seq2Seq)学习工具，可生成故事与快速推断
-
-https://mp.weixin.qq.com/s/DIqjVxF_kACkivzez4_Hog
-
-编码器-解码器网络：神经翻译模型详解
-
-https://mp.weixin.qq.com/s/Alg4rOXNvb4GA8N4Joy-Jg
-
-Seq2seq强化，Pointer Network简介
-
-https://mp.weixin.qq.com/s/kdmmgVdWxz2nJPmjcprvqg
-
-机器学习中的编码器-解码器结构哲学
