@@ -186,6 +186,22 @@ https://mp.weixin.qq.com/s/vuzx4LPLH2Gk4L9TXlNJqg
 
 # 机器人/无人驾驶参考资源
 
+https://mp.weixin.qq.com/s/E_EEowwxXw0-Dbxh9HSzjw
+
+没有地图也能导航：DeepMind展示全新AI导航技术
+
+https://mp.weixin.qq.com/s/PYqhSHzlyO5HqLvBaEqlwQ
+
+直接建模视觉智能体？让“小狗”动起来～
+
+https://mp.weixin.qq.com/s/Ja6DxqadbFBIWUk44DjGqw
+
+密集场景中自动驾驶车辆的仿真与导航
+
+https://mp.weixin.qq.com/s/mZbO-y4haBx-IodgEtdUBA
+
+LSTM之父最新力作：手把手教你训练一个有世界观的AI赛车手
+
 https://mp.weixin.qq.com/s/k3RbUz9txd09PpiLUEHVfA
 
 无人驾驶汽车系统入门：深度前馈网络，深度学习的正则化，交通信号识别
@@ -217,14 +233,6 @@ highD：德国提出从空中角度测量车辆数据的新方法
 https://mp.weixin.qq.com/s/f25RbCRoWT9Ft6m_G3lyvQ
 
 全美225万公里道路没标识？揭开无人车的极端行驶秘籍
-
-https://mp.weixin.qq.com/s/8jZKgSeRw7k0F9JOigFJcw
-
-自动驾驶之——CAN总线简介
-
-https://mp.weixin.qq.com/s/U-Nzj3NM3acjkprVuyComg
-
-汽车CAN总线技术详解
 
 https://mp.weixin.qq.com/s/F8aLNue_qDlMyTAznBLC7g
 
@@ -377,10 +385,6 @@ LKA系列（一）：LKA系统简介
 https://mp.weixin.qq.com/s/LzHFxqfyw3JSrTObpCLmzQ
 
 LKA系列（二）：LKA控制原理
-
-https://mp.weixin.qq.com/s/XJVyoQTDljO8F6GVthsxKw
-
-汽车安全气囊结构原理
 
 https://mp.weixin.qq.com/s/Gqffn_1kgP34MwthcCKH0Q
 

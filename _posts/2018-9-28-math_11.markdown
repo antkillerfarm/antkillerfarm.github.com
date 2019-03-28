@@ -204,6 +204,34 @@ https://mp.weixin.qq.com/s/5jZ2dzLInLtUw7rWZF4mtg
 
 # 知识图谱参考资源
 
+https://zhuanlan.zhihu.com/p/51000072
+
+基于知识图谱路径推理的可解释推荐
+
+https://mp.weixin.qq.com/s/qj5sFIqCUkW38XQ6hRao1w
+
+KG Embedding with Iterative Guidance from Soft Rules
+
+https://mp.weixin.qq.com/s/PrugbfsWIt0LWGJRw_9i1Q
+
+基于知识库的类型实体和关系的联合抽取
+
+https://mp.weixin.qq.com/s/_pNDalO6D8kGiCBYi1jnIA
+
+对于知识图谱嵌入表示的几何形状理解
+
+https://mp.weixin.qq.com/s/ZM0qZrqyk0QPBXYbkHAA8A
+
+基于多模态关联数据嵌入的知识库补全
+
+https://mp.weixin.qq.com/s/NxTTIWVPJi6yXuXr1qAmKw
+
+复旦数据院副院长阳德青：知识图谱在个性化推荐系统中的应用
+
+https://mp.weixin.qq.com/s/pwgYl6U3-w2sS-tAqn1hjg
+
+北京大学计算机所邹磊教授研究组开源面向RDF知识图谱的自然语言问答系统gAnswer
+
 https://mp.weixin.qq.com/s/d4cEHHo6OhlWEIXTFIdTuA
 
 知识图谱相关实体搜索
@@ -259,27 +287,3 @@ https://mp.weixin.qq.com/s/Emlzfgoo99T9xAsTKJRQXg
 https://mp.weixin.qq.com/s/aEhLCkEnImubZlwEP2ZHBQ
 
 从本体论开始说起，运营商关系图谱的构建及应用
-
-https://mp.weixin.qq.com/s/vrBlBCeYsEhYoP0BYT85bQ
-
-基于知识库的自然语言理解 01
-
-https://mp.weixin.qq.com/s/RQY6x3l3T582kHmsS1H0XQ
-
-基于知识库的自然语言理解 02
-
-https://mp.weixin.qq.com/s/xWditmvgZh_MTr1S8Da9hg
-
-基于知识库的自然语言理解 03
-
-https://mp.weixin.qq.com/s/hBcsPcs1z9GyYK2RoJeCFg
-
-基于知识库的自然语言理解 04
-
-https://mp.weixin.qq.com/s/_ZdRYDG_ZOL2VPArbnV2TA
-
-TuckER：基于张量分解的知识图谱补全
-
-https://mp.weixin.qq.com/s/9VvEJu2XAS1joVGF-EUY2w
-
-5篇顶会论文带你了解知识图谱最新研究进展

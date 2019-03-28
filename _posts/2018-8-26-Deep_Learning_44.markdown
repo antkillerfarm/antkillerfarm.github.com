@@ -186,6 +186,10 @@ https://mp.weixin.qq.com/s/GyE86DG7VqW0n4p0IP-lmQ
 
 R-MVSNet:一个高精度高效率的三维重建网络
 
+https://mp.weixin.qq.com/s/SnvXvijf5gBMNsnVW1-KMA
+
+一张照片获得3D人体信息，云从科技提出新型DenseBody框架
+
 # 视频目标分割
 
 视频目标分割任务和语义分割有两个基本区别：

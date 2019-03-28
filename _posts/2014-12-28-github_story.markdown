@@ -36,6 +36,8 @@ https://github.com/trending/python?since=monthly
 
 要点：将`tree/master`换成`trunk`。
 
+在搜索栏输入`stars:>10000`可以查看star最多的项目。
+
 ## 搭建本地GitHub Blog服务
 
 1.安装ruby

@@ -298,3 +298,7 @@ https://mp.weixin.qq.com/s/uNjF6NxVRs_gAKAmxRpThQ
 https://zhuanlan.zhihu.com/p/60330303
 
 用于协同过滤的变分自编码器论文引介
+
+https://mp.weixin.qq.com/s/CSx7dnqPjVDAvM6ena-FTw
+
+从俄罗斯方块到星际2，全都用得上：DeepMind无监督分割大法，为游戏而生

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十二）——行人重识别, 人脸识别进阶
+title:  深度学习（四十二）——行人重识别, 人脸检测/识别进阶
 category: DL 
 ---
 
@@ -174,7 +174,7 @@ https://mp.weixin.qq.com/s/BDgIf6foDGtCNc48JPqrcg
 
 行人重识别算法优化技巧：Bags of Tricks and A Strong Baseline
 
-# 人脸识别进阶
+# 人脸检测/识别进阶
 
 https://mp.weixin.qq.com/s/-G94Mj-8972i2HtEcIZDpA
 
@@ -359,3 +359,11 @@ libfacedetection算法开源
 https://mp.weixin.qq.com/s/-VknGwKKY14cT-lZ7sC43A
 
 人脸识别--基于深度学习以人类为中心的图像理解
+
+https://mp.weixin.qq.com/s/bAlaCWg4OEprpoZqQFQg1w
+
+百度提出PyramidBox人脸检测算法
+
+https://mp.weixin.qq.com/s/CYZvFb7kryE-8HV3teGRzA
+
+有效遮挡检测的鲁棒人脸识别

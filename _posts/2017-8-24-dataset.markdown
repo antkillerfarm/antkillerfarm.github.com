@@ -320,6 +320,10 @@ https://mp.weixin.qq.com/s/5NWqq3iRnTB_FJAfopBEeg
 
 NLP Chinese Corpus项目：大规模中文自然语言处理语料
 
+https://mp.weixin.qq.com/s/txlWG1yAFlSMMVNKYssMsw
+
+微软亚洲研究院开源表格数据集TableBank，数据量达41.7万
+
 ## CV
 
 http://www.cvpapers.com/datasets.html
@@ -353,19 +357,3 @@ Google开放最大目标检测数据集，还要为它举办AI挑战赛
 https://mp.weixin.qq.com/s/DsBoGT2Pl4tRwHX8REOqnw
 
 MURA：斯坦福ML团队开放的大型放射影像数据集与挑战赛
-
-https://mp.weixin.qq.com/s/_wQoiC6ogcLWSEUFUGHd5g
-
-Facebook，MIT等发布大规模卫星图像理解数据挑战赛DeepGlobe 2018
-
-https://mp.weixin.qq.com/s/WPESySGMv_ehSt6oNUkVGg
-
-视频语义显著实例分割数据集SESIV
-
-https://mp.weixin.qq.com/s/fR8-zODLNp24nlR5dJ85Nw
-
-3万患者11万图像14类病理：NIH公开大规模胸部X光数据集
-
-https://mp.weixin.qq.com/s/d-fIQwMxHXTJvFWQUKHAvw
-
-我用5000万组数据分析了“猜画小歌”

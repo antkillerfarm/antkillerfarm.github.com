@@ -186,9 +186,9 @@ PGI是由The Portland Group开发的并行计算库，但后者已于2013年被N
 
 https://www.pgroup.com/
 
-# HSA
+## HSA
 
-HSA (Heterogeneous System Architecture)是AMD推出的异构系统架构。
+HSA(Heterogeneous System Architecture)是AMD推出的异构系统架构。
 
 官网：
 
@@ -239,6 +239,24 @@ OpenBLAS需要gfortran参与编译：
 `sudo apt install gfortran`
 
 需要注意gcc的版本和gfortran的版本必须一致。例如，某台机器为了项目需要，没有使用ubuntu默认的gcc版本，这样即使安装了gfortran，也还是不行。最后，安装匹配的gfortran才解决了该问题。
+
+## Armadillo
+
+Armadillo是一个线性代数和科学计算的C++库。
+
+官网：
+
+http://arma.sourceforge.net/
+
+## ensmallen
+
+ensmallen是一个基于Armadillo的数学优化方面的C++库。
+
+官网：
+
+https://ensmallen.org/
+
+
 
 # NVIDIA
 

@@ -268,6 +268,50 @@ openpilot是一个开源的自动驾驶（驾驶代理）。
 
 https://github.com/commaai/openpilot
 
+## 电气&机械
+
+电气&机械虽然不是控制系统算法的一部分，但却是控制系统的物理基础。
+
+https://mp.weixin.qq.com/s/tSrb5wljrCvy3TgfbsyjOQ
+
+汽车电源为何抛弃12V选择48V？
+
+https://mp.weixin.qq.com/s/XJVyoQTDljO8F6GVthsxKw
+
+汽车安全气囊结构原理
+
+## CAN
+
+https://mp.weixin.qq.com/s/8jZKgSeRw7k0F9JOigFJcw
+
+自动驾驶之——CAN总线简介
+
+https://mp.weixin.qq.com/s/U-Nzj3NM3acjkprVuyComg
+
+汽车CAN总线技术详解
+
+https://mp.weixin.qq.com/s/yDQ4zQpo4BVrnnnV_J6dlg
+
+一文看懂四大汽车总线：LIN、CAN、FlexRay、MOST
+
+## 高精地图
+
+https://mp.weixin.qq.com/s/-HdpWQeMY6-sptxF9D4CcQ
+
+自动驾驶中的高精地图深度剖析
+
+https://mp.weixin.qq.com/s/rqDYpGj6dG0Zwn5C6kNApA
+
+群雄逐“图”，百度缘何备受关注？这是一篇关于高精地图的blog
+
+http://mp.weixin.qq.com/s/baXCaD1EdHKCJbCIh2HDeA
+
+Apollo高精地图技术与应用
+
+https://mp.weixin.qq.com/s/BRuT4YtU3D9c2GCeBkqv_w
+
+高精地图，比想象更重要
+
 ## 参考
 
 https://rsu.data61.csiro.au/people/jalvarez/research_bbdd.php
@@ -383,35 +427,3 @@ https://mp.weixin.qq.com/s/pOX84vc2JlYidkTZt73rcQ
 https://mp.weixin.qq.com/s/qEX2cRgce2Lknncsa67HSA
 
 无人车是怎样一步步学会开车的？
-
-https://mp.weixin.qq.com/s/uyPnuLFn2g39QomQ_HvtSw
-
-自动驾驶新思路：现实域到虚拟域统一的无监督方法
-
-https://mp.weixin.qq.com/s/rqDYpGj6dG0Zwn5C6kNApA
-
-群雄逐“图”，百度缘何备受关注？这是一篇关于高精地图的blog
-
-https://blog.csdn.net/qq_35723367/article/details/79721503
-
-四轴飞行器基本组成及其飞行原理详解
-
-https://zhuanlan.zhihu.com/p/35319354
-
-最前沿：视觉导航（Visual Navigation），让人惊讶的进展
-
-https://mp.weixin.qq.com/s/E_EEowwxXw0-Dbxh9HSzjw
-
-没有地图也能导航：DeepMind展示全新AI导航技术
-
-https://mp.weixin.qq.com/s/PYqhSHzlyO5HqLvBaEqlwQ
-
-直接建模视觉智能体？让“小狗”动起来～
-
-https://mp.weixin.qq.com/s/Ja6DxqadbFBIWUk44DjGqw
-
-密集场景中自动驾驶车辆的仿真与导航
-
-https://mp.weixin.qq.com/s/mZbO-y4haBx-IodgEtdUBA
-
-LSTM之父最新力作：手把手教你训练一个有世界观的AI赛车手

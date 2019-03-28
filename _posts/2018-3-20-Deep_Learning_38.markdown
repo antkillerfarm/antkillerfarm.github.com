@@ -22,10 +22,6 @@ https://github.com/TeamStuQ/skill-map/blob/master/data/map-Apollo.md
 
 Apollo自动驾驶工程师技能图谱
 
-http://mp.weixin.qq.com/s/baXCaD1EdHKCJbCIh2HDeA
-
-Apollo高精地图技术与应用
-
 https://mp.weixin.qq.com/s/qtoHF4Mnj_aeGBJbkjJUMA
 
 Apollo小度车载系统
@@ -191,6 +187,10 @@ https://mp.weixin.qq.com/s/vMgHCQ03Gt5v6GdgW-pY9A
 https://zhuanlan.zhihu.com/p/59413549
 
 Multi-task Learning(Review)多任务学习概述
+
+https://mp.weixin.qq.com/s/Zui8FFn1FDP_UoAGMH0L7Q
+
+知其然，知其所以然：基于多任务学习的可解释推荐系统
 
 # RNN进阶
 

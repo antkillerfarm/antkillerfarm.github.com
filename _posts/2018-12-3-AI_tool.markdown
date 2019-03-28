@@ -357,3 +357,15 @@ https://mp.weixin.qq.com/s/DtxjX9RfRgehxLsJ7MFoNw
 https://mp.weixin.qq.com/s/Ec4ObV83Nhp39kpOHVoPNQ
 
 放弃手工标记数据，斯坦福大学开发弱监督编程范式Snorkel
+
+https://mp.weixin.qq.com/s/W1J257ldk-aq5MGR62Gk2g
+
+这个图像超分辨率项目帮你“拍”出高清照片
+
+https://mp.weixin.qq.com/s/XdvkgjAgIVDCWapHMnyoqw
+
+现代大数据算法工具包-HyperLearn介绍（附53页算法讲解全文下载）
+
+https://mp.weixin.qq.com/s/wZQ57V0d0O_JylOcqAvfzQ
+
+Deepy———基于Numpy深度学习库，小巧优雅简单

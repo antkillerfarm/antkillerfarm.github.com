@@ -84,6 +84,30 @@ http://www.sohu.com/a/116866488_465975
 
 《Holographic Embeddings of Knowledge Graphs》
 
+## 知网
+
+知网（HowNet）最早由董振东和董强先生在20世纪90年代设计和构建，至今已有近30年历史。这也是最知名的中文知识图谱。
+
+>董振东，1937～2019，上海人。中文信息处理专家。2011年获得中国中文信息学会首届终身成就奖。
+
+官网：
+
+http://www.keenage.com/
+
+清华大学在此基础上开发了OpenHowNet：
+
+https://hownet.thunlp.org
+
+参考：
+
+https://mp.weixin.qq.com/s/ZSbNOBp8D_qOY0HydTdP8g
+
+清华大学刘知远：在深度学习时代用HowNet搞事情
+
+https://mp.weixin.qq.com/s/6uzW_NNtYUUT8-QRfRKZAg
+
+华人NLP最杰出HowNet成功融入DL模型
+
 ## 工具
 
 https://mp.weixin.qq.com/s/CsHgn82lQQDVhjDJvp01cg
@@ -93,6 +117,10 @@ https://mp.weixin.qq.com/s/CsHgn82lQQDVhjDJvp01cg
 http://openkg.cn/
 
 一个开放的中文知识图谱。
+
+https://xlore.org
+
+XLORE是融合中英文维基、法语维基和百度百科，对百科知识进行结构化和跨语言链接构建的多语言知识图谱，是中英文知识规模较平衡的大规模多语言知识图谱。
 
 ## 参考
 
@@ -200,14 +228,6 @@ http://www.k6k4.com/blog/show/aaazgq11o1478935786270
 
 知识图谱好文章整理
 
-https://mp.weixin.qq.com/s/ZSbNOBp8D_qOY0HydTdP8g
-
-清华大学刘知远：在深度学习时代用HowNet搞事情
-
-https://mp.weixin.qq.com/s/6uzW_NNtYUUT8-QRfRKZAg
-
-华人NLP最杰出HowNet成功融入DL模型
-
 https://mp.weixin.qq.com/s/eZhhVZlVG-uy-tdtDztOpg
 
 电子健康档案中未知药物不良反应的知识图预测及验证
@@ -251,10 +271,6 @@ https://mp.weixin.qq.com/s/SrhACueWelBAGU4sC2nBtg
 https://mp.weixin.qq.com/s/WU6PezrzTwQuXi7DE9Z0sg
 
 W3C之RDFa中文文档
-
-https://mp.weixin.qq.com/s/MYbH12y9u9nlgMVX2SiPog
-
-清华大学刘知远：在深度学习时代用HowNet搞事情
 
 https://mp.weixin.qq.com/s/86y2VP3gMTUnfbN2OK5BNw
 
@@ -387,39 +403,3 @@ https://mp.weixin.qq.com/s/bRZLHO4CJabaPMqYLW-_1g
 https://mp.weixin.qq.com/s/98lkCQT4rKME6PavCI0Mkg
 
 Bengio研究组最新论文：图谱注意力网络GAT，以图谱做输入做深度学习
-
-https://mp.weixin.qq.com/s/Yg-ggqTg5HlcvrH9BKC0YA
-
-最新知识图谱论文清单
-
-https://mp.weixin.qq.com/s/z82UmAuumlrwVlFCwBeqOQ
-
-美团餐饮娱乐知识图谱——美团大脑揭秘
-
-https://zhuanlan.zhihu.com/p/51000072
-
-基于知识图谱路径推理的可解释推荐
-
-https://mp.weixin.qq.com/s/qj5sFIqCUkW38XQ6hRao1w
-
-KG Embedding with Iterative Guidance from Soft Rules
-
-https://mp.weixin.qq.com/s/PrugbfsWIt0LWGJRw_9i1Q
-
-基于知识库的类型实体和关系的联合抽取
-
-https://mp.weixin.qq.com/s/_pNDalO6D8kGiCBYi1jnIA
-
-对于知识图谱嵌入表示的几何形状理解
-
-https://mp.weixin.qq.com/s/ZM0qZrqyk0QPBXYbkHAA8A
-
-基于多模态关联数据嵌入的知识库补全
-
-https://mp.weixin.qq.com/s/NxTTIWVPJi6yXuXr1qAmKw
-
-复旦数据院副院长阳德青：知识图谱在个性化推荐系统中的应用
-
-https://mp.weixin.qq.com/s/pwgYl6U3-w2sS-tAqn1hjg
-
-北京大学计算机所邹磊教授研究组开源面向 RDF 知识图谱的自然语言问答系统 gAnswer

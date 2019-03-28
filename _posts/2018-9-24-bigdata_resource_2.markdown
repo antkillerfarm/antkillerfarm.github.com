@@ -126,6 +126,22 @@ https://mp.weixin.qq.com/s/MOtlA8lT4XZ0nsldqe9xeQ
 
 ## CV（续）
 
+https://mp.weixin.qq.com/s/_wQoiC6ogcLWSEUFUGHd5g
+
+Facebook，MIT等发布大规模卫星图像理解数据挑战赛DeepGlobe 2018
+
+https://mp.weixin.qq.com/s/WPESySGMv_ehSt6oNUkVGg
+
+视频语义显著实例分割数据集SESIV
+
+https://mp.weixin.qq.com/s/fR8-zODLNp24nlR5dJ85Nw
+
+3万患者11万图像14类病理：NIH公开大规模胸部X光数据集
+
+https://mp.weixin.qq.com/s/d-fIQwMxHXTJvFWQUKHAvw
+
+我用5000万组数据分析了“猜画小歌”
+
 https://mp.weixin.qq.com/s/jOjiAAK1byUx8ic011f33w
 
 2200万室内场景数据集，包含语义、全景、灯光等十余种效果
@@ -373,15 +389,3 @@ https://mp.weixin.qq.com/s/IuD1oxeiFBq8kqh_zRLb0Q
 https://mp.weixin.qq.com/s/kS92vYyeHLc38RGc_4CZbg
 
 如何应用TFGAN快速实践生成对抗网络？
-
-https://mp.weixin.qq.com/s/SDVQSn1aVDXk_RPGuVcQgQ
-
-TensorFlow深度自动编码器入门实践
-
-https://mp.weixin.qq.com/s/mZ79KAuSIJLtBEXvKwUi-w
-
-如何利用TensorFlow.js部署简单的AI版“你画我猜”图像识别应用
-
-https://mp.weixin.qq.com/s/atQHJ5U2pJpSG6PguN7J4Q
-
-如何保持运动小车上的旗杆屹立不倒？TensorFlow利用A3C算法训练智能体玩CartPole游戏

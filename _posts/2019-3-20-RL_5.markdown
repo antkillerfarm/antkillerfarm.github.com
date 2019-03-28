@@ -111,6 +111,10 @@ https://mp.weixin.qq.com/s/LNNqp2KsEAljG26hY43mUw
 
 ICML2018 模仿学习教程
 
+https://mp.weixin.qq.com/s/f9vSgH1HQwGXBDb0UGHQyQ
+
+深度学习进阶之无人车行为克隆
+
 # 强化学习参考资源
 
 https://mp.weixin.qq.com/s/Fn1s9Ia8L1ckgn6iP24FhQ

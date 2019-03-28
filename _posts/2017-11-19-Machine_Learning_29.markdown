@@ -97,3 +97,21 @@ $$\sqrt{k}D\ge \|\theta^{(k+1)}\|\ge (\theta^{(k+1)})^Tu\ge k\gamma$$
 所以：
 
 $$k\le (D/\gamma)^2$$
+
+# TensorFlow+
+
+https://mp.weixin.qq.com/s/SDVQSn1aVDXk_RPGuVcQgQ
+
+TensorFlow深度自动编码器入门实践
+
+https://mp.weixin.qq.com/s/mZ79KAuSIJLtBEXvKwUi-w
+
+如何利用TensorFlow.js部署简单的AI版“你画我猜”图像识别应用
+
+https://mp.weixin.qq.com/s/atQHJ5U2pJpSG6PguN7J4Q
+
+如何保持运动小车上的旗杆屹立不倒？TensorFlow利用A3C算法训练智能体玩CartPole游戏
+
+https://mp.weixin.qq.com/s/yi-PNmMNMbwSi56aXo6ZSQ
+
+tensorflow对象检测框架训练VOC数据集常见的两个问题

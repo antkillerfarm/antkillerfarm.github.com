@@ -98,6 +98,10 @@ bfloat16是Google针对AI领域的特殊情况提出的浮点格式。目前已�
 
 3.bfloat16既可以用于训练又可以用于推断。Amazon也证明Deep Speech模型使用BFloat的训练和推断的效果都足够好。Uint8在大部分情况下不能用于训练，只能用于推断。
 
+论文：
+
+《Mixed Precision Training》
+
 参考：
 
 https://www.zhihu.com/question/275682777

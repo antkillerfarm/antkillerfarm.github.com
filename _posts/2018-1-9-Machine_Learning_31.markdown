@@ -171,6 +171,40 @@ https://mp.weixin.qq.com/s/AeLwfmM0N-b1dfxt3v4C-A
 
 教科书上的LDA为什么长这样？
 
+# 知识图谱参考资源+
+
+https://mp.weixin.qq.com/s/Yg-ggqTg5HlcvrH9BKC0YA
+
+最新知识图谱论文清单
+
+https://mp.weixin.qq.com/s/z82UmAuumlrwVlFCwBeqOQ
+
+美团餐饮娱乐知识图谱——美团大脑揭秘
+
+https://mp.weixin.qq.com/s/vrBlBCeYsEhYoP0BYT85bQ
+
+基于知识库的自然语言理解 01
+
+https://mp.weixin.qq.com/s/RQY6x3l3T582kHmsS1H0XQ
+
+基于知识库的自然语言理解 02
+
+https://mp.weixin.qq.com/s/xWditmvgZh_MTr1S8Da9hg
+
+基于知识库的自然语言理解 03
+
+https://mp.weixin.qq.com/s/hBcsPcs1z9GyYK2RoJeCFg
+
+基于知识库的自然语言理解 04
+
+https://mp.weixin.qq.com/s/_ZdRYDG_ZOL2VPArbnV2TA
+
+TuckER：基于张量分解的知识图谱补全
+
+https://mp.weixin.qq.com/s/9VvEJu2XAS1joVGF-EUY2w
+
+5篇顶会论文带你了解知识图谱最新研究进展
+
 # t-SNE
 
 ## 概述

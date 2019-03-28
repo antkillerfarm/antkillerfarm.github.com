@@ -120,6 +120,10 @@ https://mp.weixin.qq.com/s/yp5gExPzpDiXaGk9oXEMVA
 
 最新综述：模型压缩与加速
 
+https://github.com/memoiry/Awesome-model-compression-and-acceleration
+
+模型压缩与加速相关资源汇总
+
 https://zhuanlan.zhihu.com/p/58805980
 
 深度学习的模型加速与模型裁剪方法

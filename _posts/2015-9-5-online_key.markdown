@@ -176,6 +176,26 @@ https://mp.weixin.qq.com/s/NJBx8ndkBBedC81f3-DKOA
 
 5nm以后的晶体管选择
 
+## 浸润式微影
+
+缩短波长的方法除了增加频率之外，其实还有更换介质。
+
+![](/images/img2/ASML.jpg)
+
+参考：
+
+https://mp.weixin.qq.com/s/NZGNrO_LxNc6qrIdofOIfQ
+
+假如没有他（林本坚），就没有今天的台积电
+
+https://mp.weixin.qq.com/s/-cudXRIo0t4gNpEqVJ7vKw
+
+芯片光刻的流程详解
+
+https://mp.weixin.qq.com/s/V2AY7VcUEFCMAdMPJ54ZiA
+
+一文看懂光刻机
+
 ## 封装
 
 ### BGA & QFP
