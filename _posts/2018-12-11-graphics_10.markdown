@@ -259,3 +259,7 @@ https://blog.csdn.net/qq_35723367/article/details/79721503
 https://zhuanlan.zhihu.com/p/35319354
 
 最前沿：视觉导航（Visual Navigation），让人惊讶的进展
+
+https://mp.weixin.qq.com/s/enUyu6nJI5olRUQehmu6UA
+
+谷歌ChauffeurNet:训练能够鲁棒地驾驶实车的网络

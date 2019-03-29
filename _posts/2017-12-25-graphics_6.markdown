@@ -250,6 +250,10 @@ https://mp.weixin.qq.com/s/aUAD-SWJ6PEplrFRb5SHZg
 
 消除摩尔纹的光学方法
 
+https://mp.weixin.qq.com/s/m_EKOLjWjTyx4RBxsAAAGg
+
+4x4阵列摄/“深感”摄
+
 # Eigenface
 
 Eigenface是M. Turk和A. Pentland于1991年提出的人脸识别算法。

@@ -6,6 +6,86 @@ category: resource
 
 # NLP参考资源
 
+https://mp.weixin.qq.com/s/eCtqMIo3_UDxAR4fWzMjZQ
+
+站在锤子手机背后，小源科技用AI打造短信场景服务
+
+https://mp.weixin.qq.com/s/vgejlnsBlOKMMRt-M3-d-w
+
+深思考：实现人机多轮交互突破是攻克图灵测试的核心
+
+https://mp.weixin.qq.com/s/rqB2COCAKsr3qvVXnhLwMg
+
+数据到文本任务的近期相关工作介绍
+
+https://mp.weixin.qq.com/s/KWWbaE2em4fEBInPoWTq8A
+
+Python实现多种模型(Naive Bayes, SVM, CNN, LSTM, etc)用于推文情感分析
+
+https://mp.weixin.qq.com/s/V3w5Iu804O6PmnBjmwCbgw
+
+常用文本特征选择
+
+https://mp.weixin.qq.com/s/VOyJu8FBIK91MsumCBaMyg
+
+NLP领域的ImageNet时代到来：词嵌入“已死”，语言模型当立
+
+https://www.msra.cn/zh-cn/news/features/ruihua-song-20161226
+
+宋睿华：好玩的文本生成
+
+https://github.com/Gii16/TreeDrawer
+
+A small tool to draw a only-text tree as the result of stanford coreNLP
+
+http://www.cnblogs.com/CheeseZH/p/5768389.html
+
+依存句法分析与语义依存分析的区别
+
+https://mp.weixin.qq.com/s/JgQAMknL4x7nMONzZua7tg
+
+深度学习要多深，才能读懂人话？阿里小蜜前沿探索
+
+https://mp.weixin.qq.com/s/yN0lOmA0XmqIntqLgwn-TQ
+
+我们眼中的“关系抽取”
+
+http://www.jianshu.com/p/f45c3540c56e
+
+Chatbot架构
+
+https://mp.weixin.qq.com/s/6cTG9347dOLxiUs_-tdpnQ
+
+百度开源：语义匹配应用介绍和源代码
+
+https://mp.weixin.qq.com/s/zfgx2iViwFm-tzBGvgHVuw
+
+百度开源：语义表示应用介绍和源代码
+
+https://mp.weixin.qq.com/s/CxpyMUPnKFCTpw6WgG0kqg
+
+依存句法分析的任务以及形式化定义
+
+http://www.csdn.net/article/2015-02-05/2823865
+
+让机器搞懂100万种隐含语义，腾讯Peacock大规模主题模型首次全揭秘
+
+https://mp.weixin.qq.com/s/1TcIC2BFmswQAoC-86QBaw
+
+基于句法结构与语义信息核函数的搭配关系抽取
+
+https://mp.weixin.qq.com/s/NDsQzT4nktbw1fHLLFUhEQ
+
+KBQA: 基于开放域知识库上的QA系统
+
+http://www.jianshu.com/p/efe92bdb435d
+
+语言模型：Trigram模型的平滑估计
+
+https://mp.weixin.qq.com/s/t2eP09f7tLwhgLO9m1S-9Q
+
+阿里自然语言处理成果
+
 https://mp.weixin.qq.com/s/7yi67lPjseigeaqTD269mQ
 
 触类旁通，专业技能热度智能分析
@@ -34,29 +114,9 @@ https://mp.weixin.qq.com/s/wqJP64BuIT27Le6esZNdLg
 
 浅析深度学习在实体识别和关系抽取中的应用
 
-https://mp.weixin.qq.com/s/Xy_jaOex72pLe4wwieKeUg
-
-简单有效的多标准中文分词
-
-https://mp.weixin.qq.com/s/iYChUH4VQMjkKa697GMIBg
-
-一文搞懂现代情感分析方法
-
-https://mp.weixin.qq.com/s/PIpUx3VXhwTu8PTEK4JNNw
-
-如何为神经机器翻译配置编码器-解码器模型？
-
 https://mp.weixin.qq.com/s/w5A5rvJxqRSJYMeEMlFXsQ
 
 递归卷积神经网络在解析和实体识别中的应用
-
-https://mp.weixin.qq.com/s/VpWabo7_ekA7j_fw2ZuDdA
-
-白硕：人工智能的诗与远方，一文读懂NLP起源、流派和技术
-
-https://mp.weixin.qq.com/s/xGb1ZtTx_iMvGCzsHaOPig
-
-清华大学刘洋：基于深度学习的机器翻译
 
 https://mp.weixin.qq.com/s/apwceKm6BvAJ2962b1mnBg
 
@@ -66,25 +126,13 @@ https://mp.weixin.qq.com/s/SfFRXlekKkEapbjoSeKEog
 
 自然语言处理中N-Gram模型介绍
 
-https://mp.weixin.qq.com/s/AVPquGDa05q1yqz-AJpBGA
-
-如何为神经机器翻译任务配置编码-解码模型
-
 https://mp.weixin.qq.com/s/7UnUedr8tapwFeRnHVOkjA
 
 阿里巴巴人工智能机器阅读理解能力创新纪录
 
-https://mp.weixin.qq.com/s/wf4m4xxxJoEltWIglS-SSA
-
-无需双语语料库的无监督式机器翻译
-
 https://mp.weixin.qq.com/s/KVONdK44T8JKU5pFB5ydrQ
 
 SQuAD文本理解挑战赛十大模型解读
-
-https://mp.weixin.qq.com/s/U2r4qDLh4WZFgAIoF_SRPg
-
-金融客服AI新玩法：语言学运用、LSTM+DSSM算法、多模态情感交互
 
 https://mp.weixin.qq.com/s/Zrxi0AK0oimjKNr5kG_MMA
 
@@ -93,14 +141,6 @@ https://mp.weixin.qq.com/s/Zrxi0AK0oimjKNr5kG_MMA
 https://mp.weixin.qq.com/s/Y-_Y8PLBRLE3wn1CPRogsw
 
 重磅！一文彻底读懂智能对话系统！当前研究综述和未来趋势
-
-https://mp.weixin.qq.com/s/joZnfPtR3vv6LJPsRrY9Jw
-
-腾讯AI Lab涂兆鹏：如何提升神经网络翻译的忠实度
-
-https://mp.weixin.qq.com/s/MHxxBgfiQt1Fzkpco3Uoig
-
-情感分析中的深度学习
 
 https://mp.weixin.qq.com/s/FZOgJR5aKl4fV3xCX2zkwA
 
@@ -150,29 +190,9 @@ https://mp.weixin.qq.com/s/aJJFXwTorXJZqyu8T70ApA
 
 OpenAI的实体消歧新发现
 
-http://www.matrix67.com/blog/archives/4212
-
-漫话中文自动分词和语义识别（上）：中文分词算法
-
-https://github.com/brightmart/text_classification
-
-一个文本分类的代码库
-
-https://mp.weixin.qq.com/s/_upoBXADzTXEduYxr6ZxRQ
-
-非自回归神经机器翻译
-
 https://mp.weixin.qq.com/s/wLnWLNWyZdBUAPfQvg01yQ
 
 哈工大博士生周青宇：从编码器与解码器端改进生成式句子摘要
-
-https://mp.weixin.qq.com/s/d_uHHH3UCBFa77O1Gw6Bdw
-
-既然文字表你心，如何用深度学习读懂你的情？
-
-https://mp.weixin.qq.com/s/T1_mxvAJzTf-JtxEqsSUxA
-
-清华大学刘洋：基于深度学习的机器翻译
 
 https://mp.weixin.qq.com/s/go0TK5ml_LZkLTSxrQLvfA
 
@@ -197,10 +217,6 @@ https://mp.weixin.qq.com/s/CYgnTHpQi3FDXV6RwUzi-Q
 https://mp.weixin.qq.com/s/X1h6EfLVDAnDj2pKZUqyJA
 
 英文文本挖掘预处理流程
-
-https://mp.weixin.qq.com/s/tntgiltyHfbIBktgdL3peA
-
-15年研发经验博士手把手教学：从零开始搭建智能客服
 
 https://mp.weixin.qq.com/s/EmACAfXwJnkUh3jYNWA-Dg
 
@@ -250,10 +266,6 @@ https://mp.weixin.qq.com/s/tFL5x-7a9iyzxbSpNa0-4w
 
 当RNN神经网络遇上NER（命名实体识别）：双向LSTM，条件随机场（CRF），层叠Stack LSTM，字母嵌入
 
-https://mp.weixin.qq.com/s/pKT4g_bs6Ly1OWNxV5zXbw
-
-FAIR新一代无监督机器翻译：模型更简洁，性能更优
-
 https://mp.weixin.qq.com/s/HJDkNw_Fuu1QKEpyHY1Q-w
 
 语义分析的方法简述之文本基本处理
@@ -266,10 +278,6 @@ https://mp.weixin.qq.com/s/QFDHxI2Yuezc7ypZ5MURHw
 
 神经语义解析的结构化表示学习
 
-https://mp.weixin.qq.com/s/5VrZTMlNxbgZmaeOxBps_w
-
-Sentiment Analysis情感分析
-
 https://mp.weixin.qq.com/s/TUTAZe_Bw7SsPkja9i7Drg
 
 基于叙事事理图谱和可扩展图神经⽹络的脚本事件预测模型
@@ -277,10 +285,6 @@ https://mp.weixin.qq.com/s/TUTAZe_Bw7SsPkja9i7Drg
 https://mp.weixin.qq.com/s/Kj39qXVgaIN9BsxRNlXvvQ
 
 百度提出交互式语言学习新方法：让智能体具备单次概念学习能力
-
-https://mp.weixin.qq.com/s/N2Zw2WMuLtd3Pe8v3wbaAw
-
-如何用技术搞好英俄翻译？
 
 https://mp.weixin.qq.com/s/1bCw7m8YVLVA0g_jhw9HCg
 
@@ -301,10 +305,6 @@ https://mp.weixin.qq.com/s/12RA4Bd86SJS6Q4CAvOEWw
 https://mp.weixin.qq.com/s/PJQgrAzwefmFgSBF39_yIA
 
 Gmail新功能：结合BoW模型和RNN-LM，帮助用户快速写邮件
-
-https://mp.weixin.qq.com/s/5X5FZmhGM0XCFIjhlNiPLA
-
-北京大学提出新型分层式端到端模型，整合文本摘要和情感分类
 
 http://www.crownpku.com//2017/08/19/%E7%94%A8Bi-GRU%E5%92%8C%E5%AD%97%E5%90%91%E9%87%8F%E5%81%9A%E7%AB%AF%E5%88%B0%E7%AB%AF%E7%9A%84%E4%B8%AD%E6%96%87%E5%85%B3%E7%B3%BB%E6%8A%BD%E5%8F%96.html
 
@@ -334,17 +334,9 @@ https://mp.weixin.qq.com/s/JoYmVC_9bw3NHK6WXggAcA
 
 通用句子语义编码器，谷歌在语义文本相似性上的探索
 
-https://mp.weixin.qq.com/s/I50ceRiZZfVGDx8UzoobwA
-
-微软提出新型通用神经机器翻译方法，挑战低资源语言翻译问题
-
 https://mp.weixin.qq.com/s/odRDdSNNuTd5LnUf8rfRaw
 
 Google发布语义文本相似度研究新成果：通用语句编码器
-
-https://mp.weixin.qq.com/s/6x389FoDoWPgGdl8-pKzhw
-
-“博彩众长，自成一家”的神经机器翻译
 
 https://mp.weixin.qq.com/s/3aipKax9Md4nG8YGrGc4Tg
 
@@ -385,10 +377,6 @@ https://mp.weixin.qq.com/s/rA6oTLlFWmIvGUq_XPLOKQ
 https://mp.weixin.qq.com/s/C7GkZk7UWk_2XsVfn1J_lg
 
 ACL 2018使用知识蒸馏提高基于搜索的结构预测
-
-https://mp.weixin.qq.com/s/z2bdlhaala2ko55MYiyXNw
-
-CNN也能用于NLP任务，一文简述文本分类任务的7个模型
 
 https://mp.weixin.qq.com/s/foknrQWnBxc4b0bpkFKSdQ
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十八）——语义分割进阶, 问答系统, AI前沿
+title:  深度学习（四十八）——语义分割进阶, 问答系统
 category: DL 
 ---
 
@@ -380,38 +380,26 @@ https://mp.weixin.qq.com/s/_R9LUJhAb0eDCs14BJsoDA
 
 平安人寿资深算法工程师谢舒翼：智能问答系统探索与实践
 
-# AI前沿
+https://mp.weixin.qq.com/s/wH-YYzifsEqMCD_4n8B-Kw
 
-人工智能前沿7大热点：
+12张图看懂Gartner《智能客服机器人行业最佳实践》报告
 
-1.强化学习
+https://mp.weixin.qq.com/s/U2r4qDLh4WZFgAIoF_SRPg
 
-2.元学习
+金融客服AI新玩法：语言学运用、LSTM+DSSM算法、多模态情感交互
 
-3.模仿学习
+https://mp.weixin.qq.com/s/tntgiltyHfbIBktgdL3peA
 
-4.机器人
+15年研发经验博士手把手教学：从零开始搭建智能客服
 
-5.概念与抽象
+https://mp.weixin.qq.com/s/hhWRhBeRCmxjr9Lh8aE_Ww
 
-6.感知与意识
+如何用20万条客服咨询消息“喂”出定制化聊天机器人
 
-7.因果推理
+https://mp.weixin.qq.com/s/LFmZMcunhJ-9ey9_igrTZA
 
-参考：
+行业智能客服构建探索
 
-https://mp.weixin.qq.com/s/QtO-4ARpAQf0kXfALqMKSQ
+https://mp.weixin.qq.com/s/OHSqHNo7vjLGaTKyzjZjyg
 
-DeepMind-深度学习: AI革命及其前沿进展
-
-https://mp.weixin.qq.com/s/sji2HVli-Y7am37YjTbq3w
-
-谷歌Jeff Dean 64页 PPT 讲述《用深度学习解决挑战性问题》
-
-https://mp.weixin.qq.com/s/AQrgvjFPXUpqfqQQgOFN9A
-
-36页最新深度学习综述论文：算法、技术、应用，181篇参考文献
-
-https://mp.weixin.qq.com/s/cGKsZYxrVP7hVnv7Jli9Zg
-
-MIT课程全面解读2019深度学习最前沿
+基于智能客服的用户日志研究

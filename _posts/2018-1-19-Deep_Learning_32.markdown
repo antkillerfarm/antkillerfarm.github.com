@@ -291,3 +291,7 @@ Adobe提出新型超分辨率方法：用神经网络迁移参照图像纹理
 https://mp.weixin.qq.com/s/N-kAIK_qMowsFqEtWTqt4w
 
 图像超分辨率重建--工程应用
+
+https://mp.weixin.qq.com/s/JaPYUWvh7RBHVUYgKlTeHw
+
+旷视提出超分辨率新方法Meta-SR：单一模型实现任意缩放因子

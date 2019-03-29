@@ -85,6 +85,8 @@ $$\mathrm{B}(\boldsymbol\alpha) = \frac{\prod_{i=1}^K \Gamma(\alpha_i)}{\Gamma\l
 
 上面的图，实际上是个4维图，只不过用一个平面上的三角形代表实验结果的3维而已。这也是一种高维数据可视化的方法。
 
+多项分布有时也叫做Categorical Distribution。
+
 参考：
 
 http://cos.name/2013/01/lda-math-beta-dirichlet/
@@ -156,9 +158,9 @@ https://mp.weixin.qq.com/s?__biz=MzI1MTIzMzI2MA==&mid=2650561098&idx=1&sn=675375
 
 从上面的描述可以看出，统计模拟一般包括两步：
 
-1.生成均匀分布的随机数（Random generator）。例如：`numpy.random.rand`
+1.生成均匀分布的随机数（Random generator）。例如：`numpy.random.rand`或`tf.random.uniform`。
 
-2.通过采样（Draw samples）将分布变为特定分布。例如：`numpy.random.multinomial`
+2.通过采样（Draw samples）将分布变为特定分布。例如：`numpy.random.multinomial`或`tf.random.categorical`。
 
 ## 统计力学与组合优化
 

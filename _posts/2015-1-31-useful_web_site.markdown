@@ -422,6 +422,10 @@ https://mp.weixin.qq.com/s/yIJT9D1YXa4rhf-RMBVPLw
 
 1G到5G之争：一部30年惊心动魄的移动通信史
 
+https://mp.weixin.qq.com/s/1un50xpUf0JGIG03M93gZQ
+
+解析5G背后的核心技术：波束成形
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

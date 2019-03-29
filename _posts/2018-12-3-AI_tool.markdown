@@ -365,7 +365,3 @@ https://mp.weixin.qq.com/s/W1J257ldk-aq5MGR62Gk2g
 https://mp.weixin.qq.com/s/XdvkgjAgIVDCWapHMnyoqw
 
 现代大数据算法工具包-HyperLearn介绍（附53页算法讲解全文下载）
-
-https://mp.weixin.qq.com/s/wZQ57V0d0O_JylOcqAvfzQ
-
-Deepy———基于Numpy深度学习库，小巧优雅简单

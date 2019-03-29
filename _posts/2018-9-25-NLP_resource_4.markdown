@@ -6,17 +6,113 @@ category: resource
 
 # NLP参考资源
 
-https://mp.weixin.qq.com/s/_SfY-JZsUEKReSoI6qHg9w
+https://mp.weixin.qq.com/s/M_ZN0YuvegAnc2GXCZTt9Q
 
-TA-NMT：利用大语种语料，提升小语种神经机器翻译能力
+初学者指南：神经网络在自然语言处理中的应用
+
+https://mp.weixin.qq.com/s/ouNxUvWC_mxap6P5z6_dFA
+
+教聊天机器人进行多轮对话
+
+https://mp.weixin.qq.com/s/5DvSVL0CRJTymtXPDvS-0w
+
+基于主题信息的神经网络作文生成模型
+
+https://mp.weixin.qq.com/s/4Tj92Mmj2-zOHfk1Tk167w
+
+白翔：复杂开放场景中的文本理解
+
+https://mp.weixin.qq.com/s/5toWf90bJeSMGso6HaNTMQ
+
+腾讯提出用于文本匹配的多信道信息交叉模型，在真实任务中表现优异
+
+https://mp.weixin.qq.com/s/Z4Mv_L68QaG7KfGmA3pBwQ
+
+DeepMind论文解读：让机器更深入地理解文本
+
+https://mp.weixin.qq.com/s/F9ZV4jV3UiVuKVz1aqgv9w
+
+如何匹配两段文本的语义？
+
+https://mp.weixin.qq.com/s/0bOg1kvSR66-8rvFDqtLIQ
+
+用文本挖掘分析了5万首《全唐诗》，竟然发现这些秘密
+
+http://blog.csdn.net/xizero00/article/details/51182003
+
+论文阅读：End-To-End Memory Networks
+
+https://mp.weixin.qq.com/s/jYpaljuvNf4CdlRUAgAL1w
+
+Bi-LSTM+CRF在文本序列标注中的应用
+
+https://mp.weixin.qq.com/s/OwP16MNTpFTLkpi9wnda-Q
+
+挑战深度学习与自然语言处理的极限！
+
+http://www.wildml.com/2016/07/deep-learning-for-chatbots-2-retrieval-based-model-tensorflow/
+
+IMPLEMENTING A RETRIEVAL-BASED MODEL IN TENSORFLOW
+
+https://mp.weixin.qq.com/s/vGUizRVnosd7cgxha-pimw
+
+200行Python代码实现感知机词性标注器
+
+http://www.jianshu.com/p/43db6425ad33
+
+如何为聊天机器人设计数据通道
+
+https://mp.weixin.qq.com/s/L04yE6J8n-Z7Cl9yt6kphA
+
+约翰霍普金斯大学计算机科学系Jason Eisner教授总结了一系列的自然语言处理优秀教学资源
+
+http://www.jiqizhixin.com/article/2727
+
+ACL 2017中国研究论文解读：读懂中国自然语言处理前沿进展
+
+https://mp.weixin.qq.com/s/ssWi6XIebW8M6_JePG7RZg
+
+微软的NLP帝国
+
+https://github.com/lianwj/cnn-text-classification-tf
+
+Convolutional Neural Network for Text Classification in Tensorflow
+
+http://blog.csdn.net/skytree/article/details/43672627
+
+2013年7月做的一个自动应答机器人的架构
+
+https://mp.weixin.qq.com/s/mq0PdX6oB2kr_5FyoLA4ug
+
+机器人数学考了134分，要上清华北大NLP是最大难关
+
+https://mp.weixin.qq.com/s/uRR4Vh3PC8SFw-PD9FQLpw
+
+命名实体识别（NER）的二三事
+
+http://www.toutiao.com/a6236100205026328834/
+
+深度学习：推动NLP领域发展的新引擎
+
+http://dataunion.org/9331.html
+
+深度学习、自然语言处理和表征方法
+
+https://www.zhihu.com/question/46272554
+
+如何评价SyntaxNet
+
+https://mp.weixin.qq.com/s/-y2vth2OGx9rAsPvEknVTg
+
+神经网络结构在命名实体识别（NER）中的应用
+
+https://mp.weixin.qq.com/s/PxyazOPKV3eB-qat8hM9ZQ
+
+神经网络语义匹配技术
 
 https://mp.weixin.qq.com/s/6_FHq8IrkAW_Y5FSYcJ0fw
 
 CMU与谷歌大脑联合出品：62页PPT带你理解SQuAD大赛冠军--QANet
-
-https://mp.weixin.qq.com/s/uL7J5cSU3P7QsFczvT1fTA
-
-基于深度学习的文本分类6大算法-原理、结构、论文、源码打包分享
 
 https://mp.weixin.qq.com/s/uWMGJmiEfahRql1sn1B0hA
 
@@ -33,14 +129,6 @@ DeepMind提出空间语言集成模型SLIM，有效编码自然语言的空间�
 https://mp.weixin.qq.com/s/eehpqW2H3wWCOa6r8jbEvQ
 
 ACL 2018 鲁棒、无偏的NLP训练方法
-
-https://mp.weixin.qq.com/s/ffuiRE0qbglhVz__Z6FD7A
-
-这里可能是对机器智能中的文本情感计算最全面的概括了
-
-https://mp.weixin.qq.com/s/S6qSU6CGUMsqYaIPCEVhxA
-
-剖析CNN句子分类任务
 
 https://mp.weixin.qq.com/s/e6YXItElVa5iaY8Txi8wzA
 
@@ -74,10 +162,6 @@ https://mp.weixin.qq.com/s/yC8uYwti9Meyt83xkmbmcg
 
 小哥哥，检索式chatbot了解一下？
 
-https://mp.weixin.qq.com/s/9JOH6iLd9MQOvzJjnr8P0g
-
-EMNLP 2018 基于自适应的多轮解码机制的神经机器翻译模型
-
 https://mp.weixin.qq.com/s/hbanc8seKkbqv-WfJRFw7Q
 
 自然语言处理(NLP)前沿进展报告
@@ -93,10 +177,6 @@ https://mp.weixin.qq.com/s/9hEEh4HpVHk-GD5gi9MZSw
 https://mp.weixin.qq.com/s/icGEBkHP_xeOIdL8vM0K2A
 
 面向任务型对话中基于对话状态表示的序列到序列学习
-
-https://mp.weixin.qq.com/s/ejq-XHS_g_P6mVDv5jMqEA
-
-Facebook全新无监督机器翻译法，BLUE测试提升超过10分
 
 https://mp.weixin.qq.com/s/EdrK-IT3rlVaw8wCcBLSOw
 
@@ -134,14 +214,6 @@ https://zhuanlan.zhihu.com/p/40988001
 
 多轮对话状态管理（DST）--模型介绍篇
 
-https://mp.weixin.qq.com/s/Dsw-mEQlLFehwrXxEIdvAg
-
-哈工大秦兵：机器智能中的文本情感计算
-
-https://mp.weixin.qq.com/s/T5ybwhxZF2bN2hIPxELe4A
-
-监管机器翻译质量？且看阿里如何搭建翻译质量评估模型
-
 https://mp.weixin.qq.com/s/PrrEUHXrmBEnOegP5jqOJg
 
 你知道《圣经》中的主要角色有哪些吗？三种NLP工具将告诉你答案！
@@ -169,10 +241,6 @@ https://mp.weixin.qq.com/s/p8gEbamEbJBp_wzsy8_21A
 https://zhuanlan.zhihu.com/p/41944121
 
 NLP系列学习：意图识别
-
-https://mp.weixin.qq.com/s/ciKPaiqk59SrAomI5RsN6Q
-
-Facebook开源了两个无监督翻译模型，只用单语就能训练双语
 
 https://mp.weixin.qq.com/s/C-Oh0bmpEon1Oeq5M6Q1GQ
 
@@ -214,21 +282,9 @@ https://mp.weixin.qq.com/s/2Ksovh6BDnFxs6Y2lOv6ww
 
 联合学习离散句法结构和连续词表征的无监督方法
 
-https://mp.weixin.qq.com/s/9t8DjLI4-Xelm2qwl5sCFw
-
-EMNLP 2018 基于自适应的多轮解码机制的神经机器翻译模型
-
-https://mp.weixin.qq.com/s/tts6UzF-ziyNp0s31Qiqtg
-
-达观数据：如何用深度学习做好长文本分类与法律文书智能化处理
-
 https://mp.weixin.qq.com/s/A-PKyZcXwOz-2lL-hBmjsA
 
 自然语言处理中的语言模型预训练方法
-
-https://mp.weixin.qq.com/s/ROnEtP4ferK-rB8DAJNRNg
-
-短文本分类，腾讯AI Lab联合港中文提出主题记忆网络 
 
 https://mp.weixin.qq.com/s/gZ4N18jvM_0oUvOaKBBxfQ
 
@@ -242,10 +298,6 @@ https://mp.weixin.qq.com/s/Srpv04X2vaIr2da4xbEMdg
 
 从对话生成和文本风格转化看文本生成技术
 
-https://mp.weixin.qq.com/s?__biz=MzA5NzY0MDg1NA==&mid=2706956202&idx=1&sn=b82ff09ce3d5230a348a727cf03202ba
-
-中文文本分类：你需要了解的10项关键内容
-
 https://zhuanlan.zhihu.com/p/47949269
 
 开放域下的对话系统
@@ -253,22 +305,6 @@ https://zhuanlan.zhihu.com/p/47949269
 https://mp.weixin.qq.com/s/1WtJEqhxCtBKVRs_-EevjA
 
 基于排序思想的弱监督关系抽取选种与降噪算法
-
-https://mp.weixin.qq.com/s/37qri3eFwF3kOWZxGUISzw
-
-你可能不再需要Attention：这是一个贼简单的神经机器翻译架构
-
-https://mp.weixin.qq.com/s/Q0jxUiFFbrEMhy5Sv8979A
-
-详解文本分类之多通道CNN的理论与实践
-
-https://mp.weixin.qq.com/s/UMpVkbLmCBegkexHOU2UDg
-
-详解文本分类之DeepCNN的理论与实践
-
-https://mp.weixin.qq.com/s/yA_dvLZ7adBd6Xw2MufhWw
-
-程序翻译新突破：UC伯克利提出树到树的程序翻译神经网络
 
 https://mp.weixin.qq.com/s/dXU-HMi8LIjVTwzfMqOzuQ
 
@@ -286,10 +322,6 @@ https://mp.weixin.qq.com/s/jFfGU8yHsNAfDxYnbLPk3Q
 
 基于文本蕴含识别的答案验证技术研究
 
-https://mp.weixin.qq.com/s/jBjs5OKZEcfpoYesz6Pk3w
-
-杨振：低资源神经机器翻译
-
 https://zhuanlan.zhihu.com/p/50349824
 
 利用词向量和WordNet识别和解释隐喻词
@@ -302,10 +334,6 @@ https://mp.weixin.qq.com/s/BWg77FZ2IugBhO_HWHpfHw
 
 深度学习在自然语言处理中的应用综述
 
-https://mp.weixin.qq.com/s/9HeLayEDTUCy_ACJUV8fYA
-
-中文分词调研：任何声称在PKU上拿到97%以上所谓“准确率”的说法，可信度都不高！
-
 http://mp.weixin.qq.com/s/fn9WKu0_aH2-lx6VvxC_RA
 
 生成式关键短语识别
@@ -317,22 +345,6 @@ https://mp.weixin.qq.com/s/Naj1u0LZwvQhOe6Iay0nFA
 https://mp.weixin.qq.com/s/fkBkSakTtuGPhi3mK563mg
 
 结合贪心搜索和蒙特卡洛随机游走的面向DBpedia的实体链接方法
-
-https://mp.weixin.qq.com/s/KG_X-wFPgWupb0FOWL9LIw
-
-三种提升多语言翻译模型的高效策略
-
-https://mp.weixin.qq.com/s/-gnzRjLerqIyLPLBkZNmcA
-
-深度学习在NLP中的运用？从分词、词性到机器翻译、对话系统
-
-https://mp.weixin.qq.com/s/TjFzJVOowfceHwJNUItcxQ
-
-从语言学到深度学习NLP，一文概述自然语言处理
-
-https://mp.weixin.qq.com/s/r9WRkmApBaHvlCQ5F5ypjg
-
-神奇的神经机器翻译：从发展脉络到未来前景
 
 https://mp.weixin.qq.com/s/2zFOjOuDKo--wTvu5rVWNw
 
@@ -358,10 +370,6 @@ https://mp.weixin.qq.com/s/Pm3wB4VRuoBR-XLjW_jpfQ
 
 反讽识别综述
 
-https://mp.weixin.qq.com/s/LFmZMcunhJ-9ey9_igrTZA
-
-行业智能客服构建探索
-
 https://mp.weixin.qq.com/s/whWaseYWcurOLp-V8gCBvQ
 
 基于不同颗粒度语言联合训练的表示学习
@@ -382,14 +390,6 @@ https://mp.weixin.qq.com/s/GtO3Zf87BTbBQqHAtgAmlA
 
 事件抽取及推理(下)
 
-https://mp.weixin.qq.com/s/4Q8n7i2WKRChJqzHAKcwbw
-
-如何到top5%？NLP文本分类和情感分析竞赛总结
-
-https://mp.weixin.qq.com/s/mWOhh9rJru_YDwQEB34GNg
-
-深度学习在金融文本情感分类中的应用
-
 https://mp.weixin.qq.com/s/tvfCW7Lwkug9ILKpJuMnUA
 
 上下文敏感的改写式回复生成模型
@@ -397,3 +397,15 @@ https://mp.weixin.qq.com/s/tvfCW7Lwkug9ILKpJuMnUA
 https://mp.weixin.qq.com/s/6IO-pAP6Jcct5W-tReaLtw
 
 基于深度强化学习的远程监督数据集的降噪
+
+https://zhuanlan.zhihu.com/p/26461511
+
+关于WordNet，我的一些用法和思路
+
+http://mp.weixin.qq.com/s?__biz=MzI4MDYzNzg4Mw==&mid=2247483922&idx=1&sn=cffbaf797cc58e303a65a8a2ae370b86
+
+句法分析（syntactic parsing）在NLP领域的应用是怎样的？
+
+https://speechlab.sjtu.edu.cn/pages/sz128/homepage/year/10/27/survey-on-grammar-retrieval/
+
+论文调研：基于“规则、槽值”检索的口语语义理解

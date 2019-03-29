@@ -321,3 +321,7 @@ https://mp.weixin.qq.com/s/19xreKtNlllfFx43eUGhuQ
 https://mp.weixin.qq.com/s/4e9l-GP22T-myP54hJJjPA
 
 Kubernetes如何打赢容器之战？ 
+
+https://mp.weixin.qq.com/s/iTfHv8EFx4O4G1sNxsuMkg
+
+再见，Yarn！滴滴机器学习平台架构演进

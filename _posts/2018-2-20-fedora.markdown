@@ -127,6 +127,8 @@ Install TightVNC Server in RHEL/CentOS and Fedora to Access Remote Desktops
 
 # Blog维护日志
 
+3019.3.27 NLP参考资源已经积攒了很多，特进行细分类，使之更有条理。
+
 2019.3.19 添加GAN & VAE分类。
 
 2018.11.19 添加RL分类。
@@ -237,6 +239,24 @@ patch -R B C #B还原为A
 
 `patch -p1 <2.patch`
 
+# AI工具
+
+https://mp.weixin.qq.com/s/wZQ57V0d0O_JylOcqAvfzQ
+
+Deepy———基于Numpy深度学习库，小巧优雅简单
+
+https://mp.weixin.qq.com/s/HMLwjLlFXR4WM92_OnKHbA
+
+基于Apache MXNet，亚马逊NMT开源框架Sockeye论文介绍
+
+https://mp.weixin.qq.com/s/hkcVhyqiDW--F3QxucgEcA
+
+亚马逊开源神经机器翻译框架Sockeye：基于Apache MXNet的NMT平台
+
+http://www.sohu.com/a/163063280_633698
+
+无监督对话数据清洗利器：Data Purification Framework
+
 # DL参考资源+
 
 https://mp.weixin.qq.com/s/fhpYkWiLGwSbpRsrwBcV9g
@@ -278,3 +298,7 @@ https://mp.weixin.qq.com/s/_w4IIRY6LwqehpDlEXt90A
 https://mp.weixin.qq.com/s/ysRppHSD0zX1tv197ubzWg
 
 深度学习在计算机视觉领域的应用一览
+
+https://mp.weixin.qq.com/s/rK_RcVY9_3kA5MWD3jAyGg
+
+腾讯优图25篇CVPR 2019论文详解！涵盖视觉对抗学习、人脸检测等

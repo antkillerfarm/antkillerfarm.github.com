@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十三）——MemNet, RDN, ShuffleSeg, SVDF, LCNN, LSTM进阶
+title:  深度学习（二十三）——MemNet, RDN, ShuffleSeg, SVDF, LCNN, AI前沿, LSTM进阶
 category: DL 
 ---
 
@@ -155,6 +155,42 @@ $$S_{[i,:,:]}=X*D_{[i,:]}$$
 http://blog.csdn.net/feynman233/article/details/69785592
 
 LCNN论文阅读笔记
+
+# AI前沿
+
+人工智能前沿7大热点：
+
+1.强化学习
+
+2.元学习
+
+3.模仿学习
+
+4.机器人
+
+5.概念与抽象
+
+6.感知与意识
+
+7.因果推理
+
+参考：
+
+https://mp.weixin.qq.com/s/QtO-4ARpAQf0kXfALqMKSQ
+
+DeepMind-深度学习: AI革命及其前沿进展
+
+https://mp.weixin.qq.com/s/sji2HVli-Y7am37YjTbq3w
+
+谷歌Jeff Dean 64页 PPT 讲述《用深度学习解决挑战性问题》
+
+https://mp.weixin.qq.com/s/AQrgvjFPXUpqfqQQgOFN9A
+
+36页最新深度学习综述论文：算法、技术、应用，181篇参考文献
+
+https://mp.weixin.qq.com/s/cGKsZYxrVP7hVnv7Jli9Zg
+
+MIT课程全面解读2019深度学习最前沿
 
 # LSTM进阶
 
