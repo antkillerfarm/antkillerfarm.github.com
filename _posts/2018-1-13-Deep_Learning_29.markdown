@@ -373,3 +373,7 @@ https://mp.weixin.qq.com/s/s6E2vV1KrQDI4SeAnkYTKw
 https://mp.weixin.qq.com/s/6vhFfSh2mveBiZXB1oZb1Q
 
 图分类：结合胶囊网络Capsule和图卷积GCN
+
+https://mp.weixin.qq.com/s/aGP8pcsCmEdjdCWVjA82Jg
+
+近期必读的5篇CVPR 2019图卷积网络相关论文和代码

@@ -86,6 +86,70 @@ https://mp.weixin.qq.com/s/d_uHHH3UCBFa77O1Gw6Bdw
 
 既然文字表你心，如何用深度学习读懂你的情？
 
+## 命名实体识别
+
+https://mp.weixin.qq.com/s/LrrqGCNBncDr3ZacoIHHBg
+
+一文读懂命名实体识别
+
+https://mp.weixin.qq.com/s/PSs0H237ldauSZhlMlNHXA
+
+CMU邢波：基于双向语言模型的生物医学命名实体识别，无标签数据提升NER效果
+
+https://mp.weixin.qq.com/s/uRR4Vh3PC8SFw-PD9FQLpw
+
+命名实体识别（NER）的二三事
+
+https://mp.weixin.qq.com/s/-y2vth2OGx9rAsPvEknVTg
+
+神经网络结构在命名实体识别（NER）中的应用
+
+https://mp.weixin.qq.com/s/6xTdgOYHtnCSsH9QRGkcCw
+
+一文理解词性标注、依存分析和命名实体识别任务
+
+https://mp.weixin.qq.com/s/c1rSq8vY9fiXjV-WsxLVQw
+
+一文详解深度学习在命名实体识别(NER)中的应用
+
+https://mp.weixin.qq.com/s/4qHgIcq9YJTj1iGh7kLB4w
+
+用神经推理来帮助命名实体识别
+
+https://mp.weixin.qq.com/s/CYgnTHpQi3FDXV6RwUzi-Q
+
+神经网络结构在命名实体识别（NER）中的应用
+
+https://mp.weixin.qq.com/s/tFL5x-7a9iyzxbSpNa0-4w
+
+当RNN神经网络遇上NER（命名实体识别）：双向LSTM，条件随机场（CRF），层叠Stack LSTM，字母嵌入
+
+https://mp.weixin.qq.com/s/-SQETPUnV2hu5QRqYsXdmg
+
+利用跨语言知识改进稀缺资源语言命名实体识别
+
+https://mp.weixin.qq.com/s/o3rYqUDhre5KCcFzd_u8lQ
+
+命名实体识别从数据集到算法实现
+
+https://mp.weixin.qq.com/s/rA6oTLlFWmIvGUq_XPLOKQ
+
+利用Lattice LSTM的最优中文命名实体识别方法
+
+## 文本摘要
+
+https://mp.weixin.qq.com/s/jk1XgnuydrsTg3HvV0CVvw
+
+当深度学习遇见自动文本摘要
+
+https://mp.weixin.qq.com/s/NGpDrYilAeuH6pQji0ujaA
+
+文本摘要简述
+
+https://mp.weixin.qq.com/s/bcpjkuRtErSRfJPsAnAWWQ
+
+用深度学习做文本摘要
+
 ## 其他
 
 http://mp.weixin.qq.com/s/lmHWo9MUdv7ZMI7ARNmTSw
@@ -147,10 +211,6 @@ https://mp.weixin.qq.com/s/sM72a52wz6eXSkcgnd4JJw
 https://mp.weixin.qq.com/s/IvbJ_d7z91BCcRVpJ9_jMA
 
 如何用深度学习做自然语言处理？这里有份最佳实践清单
-
-https://mp.weixin.qq.com/s/jk1XgnuydrsTg3HvV0CVvw
-
-当深度学习遇见自动文本摘要
 
 https://mp.weixin.qq.com/s/DhiCkZd4TU4YIAm83e_vLg
 
@@ -351,59 +411,3 @@ https://mp.weixin.qq.com/s/mgeQXkEWu5JlZxyAM0yiaQ
 https://mp.weixin.qq.com/s/RlarTDziwkGGM_CUa40XAw
 
 机器之心线上分享：用于序列生成的推敲网络
-
-https://mp.weixin.qq.com/s/-qk__SLahfssHuYsGNhKSA
-
-阿里巴巴首次近万字公布人工智能对话交互技术
-
-https://mp.weixin.qq.com/s/bzjRlFfh7tz4OWVpGnNPwQ
-
-揭秘阿里小蜜：基于检索模型和生成模型相结合的聊天引擎
-
-https://mp.weixin.qq.com/s/4fYvp9XFyJP4fE9BYvYLBw
-
-百度AAAI 2018论文提出新型NMT模型，性能堪比深层模型
-
-https://mp.weixin.qq.com/s/kbF8WnaVWf6nOpzvbELpOw
-
-产品评论分析系统
-
-https://mp.weixin.qq.com/s/PSs0H237ldauSZhlMlNHXA
-
-CMU邢波：基于双向语言模型的生物医学命名实体识别，无标签数据提升NER效果
-
-https://mp.weixin.qq.com/s/2NLckUqFrCOwaIamwWFOqQ
-
-基于深度 AND-OR 语法网络的目标识别方法
-
-https://mp.weixin.qq.com/s/IVSoI6QM1uY3JLKMiha9vQ
-
-微软亚洲研究院论文解读：基于动态词表的对话生成研究
-
-https://mp.weixin.qq.com/s/C9UbA0482F8SvB27i-V_9Q
-
-微软亚洲研究院周明：自然语言对话引擎
-
-https://mp.weixin.qq.com/s/Ce3gOZSqkG8wZQ6X1CUE1Q
-
-如何从编码器和解码器两方面改进生成式句子摘要？
-
-https://mp.weixin.qq.com/s/MP0Px9ylUT0tpdz_hP5JBw
-
-在NLP中深度学习模型何时需要树形结构？
-
-https://zhuanlan.zhihu.com/p/32314500
-
-DL实战课程推荐-从0到1构建一个Chatbot系统
-
-https://mp.weixin.qq.com/s/GhJRebSXXq0ZFh3evAqLxw
-
-漫谈神经语言模型之中文输入法
-
-https://mp.weixin.qq.com/s/rF4zKCbj3Jh8dDR1239lpA
-
-基于双语主题模型的跨语言层次分类体系匹配
-
-https://mp.weixin.qq.com/s/gQ9dV-IPWHTOLbI6u0D67g
-
-可解释推荐系统：身怀绝技，一招击中用户心理

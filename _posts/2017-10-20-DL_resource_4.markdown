@@ -184,6 +184,10 @@ https://mp.weixin.qq.com/s/CGe1MAKRiLtaFFyVOkauhw
 
 16岁高中生夺冠Kaggle地标检索挑战赛！
 
+https://mp.weixin.qq.com/s/09C0N6f0rpN7QLvjgjEkWQ
+
+使用NLP和深度学习预测股价
+
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
@@ -288,6 +292,32 @@ https://mp.weixin.qq.com/s/bE9BZQ6wCICvrgomdySDuw
 
 周志华组提出可做表征学习的多层梯度提升决策树
 
+## CV
+
+https://mp.weixin.qq.com/s/gsHu7vNs9cm1tH2nz9mmMg
+
+推荐一个不错的边缘检测网络：HED
+
+https://mp.weixin.qq.com/s/fqpZ8EHgiNupXumvTMSecw
+
+北大团队研发“车脸”识别系统，不看车牌看外观特征实现精确识别
+
+https://mp.weixin.qq.com/s/7zFcWAmtpW2S_PVYru_lxg
+
+眼见未必为实--漫谈图像隐写术
+
+https://mp.weixin.qq.com/s/HlqzSdhj3Q3nX4Zl63PM0A
+
+商汤科技23篇论文横扫CVPR
+
+https://mp.weixin.qq.com/s/jdM0w4hRgkWmul9Bcp2oCw
+
+揭秘CVPR2017 WebVision图片分类竞赛冠军背后的技术
+
+https://mp.weixin.qq.com/s/5VHPc99NsFkz1Vl5iU8qkg
+
+详解如何用深度学习消除背景，实现抠图
+
 ## 参考
 
 https://mp.weixin.qq.com/s/MoKzux6Z69dlpqcVTvQ9oQ
@@ -373,19 +403,3 @@ https://mp.weixin.qq.com/s/p8u2aTJL2gfPIXLsLfoJyg
 https://mp.weixin.qq.com/s/zC5iGXVn7xH8TYBXtkntzA
 
 让计算机一眼认出“猫”：哈佛提出新高维数据分析法
-
-http://mp.weixin.qq.com/s/vhBOrR6uTL2vGXnYC8BS1w
-
-Windows版深度学习软件安装指南
-
-https://mp.weixin.qq.com/s/FwqKYNpIuB6cUAVjSey7mw
-
-Yoshua Bengio首次中国演讲：深度学习通往人类水平AI的挑战
-
-https://mp.weixin.qq.com/s/aqfwn0kiXbZwVDVhHXBAXQ
-
-谷歌大脑研究员玩转汉字RNN：神经网络生成新华字典
-
-https://mp.weixin.qq.com/s/GxWOuIf25JQnQoCstVyGLQ
-
-李飞飞团队提出OpenTag模型：减少人工标注，自动提取产品属性值

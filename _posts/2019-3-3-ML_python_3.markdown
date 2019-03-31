@@ -6,6 +6,18 @@ category: AI
 
 # Machine Learning之Python篇
 
+https://mp.weixin.qq.com/s/JwsG0XzIGr5jiQqrOTGFGQ
+
+8种用Python实现线性回归的方法，究竟哪个方法最高效？
+
+https://mp.weixin.qq.com/s/4j-DgtlxGKCx8SvLEBgjoA
+
+Python上的图模型与概率建模工具包：pomegranate
+
+https://mp.weixin.qq.com/s/2Gd-2BLZy7LdvOenbM2Fsg
+
+用hmmlearn学习隐马尔科夫模型HMM
+
 https://mp.weixin.qq.com/s/yY_-qJoza2xGRqrm40abkg
 
 每个Kaggle冠军的获胜法门：揭秘Python中的模型集成
@@ -294,6 +306,18 @@ Hbase万亿级存储性能优化总结
 
 # NLP参考资源+
 
+https://mp.weixin.qq.com/s/-qk__SLahfssHuYsGNhKSA
+
+阿里巴巴首次近万字公布人工智能对话交互技术
+
+https://mp.weixin.qq.com/s/bzjRlFfh7tz4OWVpGnNPwQ
+
+揭秘阿里小蜜：基于检索模型和生成模型相结合的聊天引擎
+
+https://mp.weixin.qq.com/s/4fYvp9XFyJP4fE9BYvYLBw
+
+百度AAAI 2018论文提出新型NMT模型，性能堪比深层模型
+
 http://blog.csdn.net/a635661820/article/details/43906731
 
 Statistical language model统计语言模型 
@@ -306,10 +330,10 @@ https://mp.weixin.qq.com/s/dfobYDv-98W9NAmAbzwQKw
 
 字符级NLP优劣分析：在某些场景中比词向量更好用
 
-https://mp.weixin.qq.com/s/NGpDrYilAeuH6pQji0ujaA
-
-文本摘要简述
-
 https://mp.weixin.qq.com/s/PPAIARqkYqaIYRD7SFOtBg
 
 基于分层强化学习的关系抽取
+
+https://mp.weixin.qq.com/s/r1uXn2jGsHZcZ8Nk7GnGFA
+
+语义表征的无监督对比学习：一个新理论框架

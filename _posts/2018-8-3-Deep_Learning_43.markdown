@@ -347,3 +347,7 @@ https://mp.weixin.qq.com/s/zvEIUJpgrjSM9-TLSzr3sQ
 https://mp.weixin.qq.com/s/sTLDG0rmFZv20G5veNYS9g
 
 英伟达再出黑魔法GauGAN：凭借几根线条，草图秒变风景照
+
+https://mp.weixin.qq.com/s/Qwe4LXnB5BitvRGm46dU2w
+
+人工智能是摄影的未来还是摄影技术的末日？

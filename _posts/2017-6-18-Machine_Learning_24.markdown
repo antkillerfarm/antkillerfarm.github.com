@@ -275,6 +275,10 @@ https://mp.weixin.qq.com/s/x3AREJcDKvjo7vl6TS79OA
 
 贝叶斯推理实用入门
 
+https://mp.weixin.qq.com/s/Tk2t3R_SUU6S9yvdjnwzDQ
+
+量化交易中的贝叶斯优化问题
+
 # Stacking
 
 模型融合的方法除了Bagging和Boosting，还有Stacking。

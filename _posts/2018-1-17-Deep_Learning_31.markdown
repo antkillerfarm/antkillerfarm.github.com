@@ -314,6 +314,10 @@ https://mp.weixin.qq.com/s/3Y5f7JsxsmmuCjAX625h1Q
 
 MirrorGAN出世！浙大等提出文本-图像新框架
 
+https://mp.weixin.qq.com/s/1rtONnhwEc3Osf9gP5fBCQ
+
+李飞飞CVPR最新论文“文本转图”效果优化可多一步：物体关系描述
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512
@@ -323,3 +327,7 @@ http://blog.csdn.net/qq_26609915/article/details/52119512
 http://blog.csdn.net/mengmengz07/article/details/51348554
 
 recursive neural network梳理
+
+https://mp.weixin.qq.com/s/DwaSF76uvqFKkybaTUpl3w
+
+空间序列递归神经网络用于高光谱图像分类

@@ -6,17 +6,21 @@ category: resource
 
 # DL参考资源
 
-https://mp.weixin.qq.com/s/fqpZ8EHgiNupXumvTMSecw
+http://mp.weixin.qq.com/s/vhBOrR6uTL2vGXnYC8BS1w
 
-北大团队研发“车脸”识别系统，不看车牌看外观特征实现精确识别
+Windows版深度学习软件安装指南
 
-https://mp.weixin.qq.com/s/ws1R-VPyJY6J18OttBDYog
+https://mp.weixin.qq.com/s/FwqKYNpIuB6cUAVjSey7mw
 
-超少量数据训练神经网络：IEEE论文提出径向变换实现图像增强
+Yoshua Bengio首次中国演讲：深度学习通往人类水平AI的挑战
 
-https://mp.weixin.qq.com/s/eyl0NMa1p_RmQIwnweuBgw
+https://mp.weixin.qq.com/s/aqfwn0kiXbZwVDVhHXBAXQ
 
-10张图盘点计算机视觉、语音和文本理解里程碑
+谷歌大脑研究员玩转汉字RNN：神经网络生成新华字典
+
+https://mp.weixin.qq.com/s/GxWOuIf25JQnQoCstVyGLQ
+
+李飞飞团队提出OpenTag模型：减少人工标注，自动提取产品属性值
 
 https://mp.weixin.qq.com/s/IMx9lcMVAyB9hy_77DaJ3Q
 
@@ -38,25 +42,9 @@ https://mp.weixin.qq.com/s/9KOXSic-DellLuaVFjbKeA
 
 价值传播网络，在更复杂的动态环境中进行规划的方法
 
-https://mp.weixin.qq.com/s/i6VEYjbac4QP3s51meN1VA
-
-Hinton向量学院推出神经ODE：超越ResNet 4大性能优势
-
 https://mp.weixin.qq.com/s/-xZxNJPQyEQyBOue6_77yw
 
 用浅度学习训练深度网络：避开端到端深度学习难题
-
-https://mp.weixin.qq.com/s/DwaSF76uvqFKkybaTUpl3w
-
-空间序列递归神经网络用于高光谱图像分类
-
-https://mp.weixin.qq.com/s/7zFcWAmtpW2S_PVYru_lxg
-
-眼见未必为实--漫谈图像隐写术
-
-https://mp.weixin.qq.com/s/h9e3QMSmsrE4NUXExwNsGg
-
-一文看尽深度学习这半年
 
 https://mp.weixin.qq.com/s/b7QSUeHb2fYTKk3e3V00uA
 
@@ -90,10 +78,6 @@ http://mp.weixin.qq.com/s/sIIoGilZgQHn4jDiYzEelw
 
 大咖解读Bengio笔记——邓侃：用深度学习模型，解构并重构人类思维
 
-http://mp.weixin.qq.com/s/Ybq6hSTPpyYQSNGJg1tgeQ
-
-AI距离匹敌人类大脑还有多远？人工神经网络和生物神经网络最详细对比
-
 http://mp.weixin.qq.com/s/UKu9T5zS1Z2dfNB1YsYGkQ
 
 NEAT学习：教机器自我编程
@@ -122,10 +106,6 @@ https://mp.weixin.qq.com/s/eAv0vTBwnGEUDA9PyhlDnA
 
 FAIR等机构联合提出IntPhys：你的智能系统的物理知识，比得上婴儿吗？
 
-https://mp.weixin.qq.com/s/1rtONnhwEc3Osf9gP5fBCQ
-
-李飞飞CVPR最新论文“文本转图”效果优化可多一步：物体关系描述
-
 https://mp.weixin.qq.com/s/keWrgmCfJrnswDDKEL52Cg
 
 数据少，就享受不到深度学习的红利了么？总是有办法的！
@@ -141,10 +121,6 @@ https://mp.weixin.qq.com/s/_Wc-u2PAyM-BibO_EJx9oQ
 https://mp.weixin.qq.com/s/36pE2m5p-pnGa72YpYn-Rg
 
 “实践出真知”：如何打造一流的视觉AI技术
-
-https://mp.weixin.qq.com/s/ZEIsyV-0aTvYn6K8GyANPA
-
-硬核NeruIPS 2018最佳论文，一个神经了的常微分方程
 
 https://mp.weixin.qq.com/s/yWnksItYdxQ9Nhj3xWkcMw
 
@@ -357,3 +333,4 @@ https://mp.weixin.qq.com/s/D_HNrlTS-uTA9GWPu7WJaQ
 https://mp.weixin.qq.com/s/qnZhKhpCw2RjLMjcZBRx3Q
 
 密集对象网络：通过机器人操作学习密集的视觉对象描述符
+

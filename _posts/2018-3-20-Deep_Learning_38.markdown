@@ -204,6 +204,24 @@ https://mp.weixin.qq.com/s/7-K-nZTijoYCaprRNYXxFg
 
 新型RNN：将层内神经元相互独立以提高长程记忆
 
+## ODE
+
+https://mp.weixin.qq.com/s/4CrPGKnR7RLN-2ROG5X4uw
+
+ODE网络：一场颠覆RNN的革命即将到来
+
+https://mp.weixin.qq.com/s/0vju0Q_DcIWwdEo9EEE3iQ
+
+NeurIPS18最佳论文NeuralODE，现在有了TensorFlow实现
+
+https://mp.weixin.qq.com/s/i6VEYjbac4QP3s51meN1VA
+
+Hinton向量学院推出神经ODE：超越ResNet 4大性能优势
+
+https://mp.weixin.qq.com/s/ZEIsyV-0aTvYn6K8GyANPA
+
+硬核NeruIPS 2018最佳论文，一个神经了的常微分方程
+
 ## 参考
 
 https://mp.weixin.qq.com/s/0TLaC8ACXAFEK5aMNK9O-Q

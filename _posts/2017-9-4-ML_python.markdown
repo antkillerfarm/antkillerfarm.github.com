@@ -316,6 +316,10 @@ https://mp.weixin.qq.com/s/hlJFoh0jfduPswr7WrDikQ
 
 当年为什么不好好学“数据可视化”！
 
+https://mp.weixin.qq.com/s/Oh2ma7UjQhklE6YBo0EQBA
+
+快速入门Matplotlib教程
+
 ## Pandas
 
 Pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。
@@ -445,11 +449,3 @@ Jupyter Notebook快速入门
 https://mp.weixin.qq.com/s/u-e66SgesPjmpKEihHHr8g
 
 Jupyter Notebook超实用的5个插件，值得一试！
-
-## TuShare
-
-TuShare是一个免费、开源的python财经数据接口包。主要实现对股票等金融数据从数据采集、清洗加工 到 数据存储的过程，能够为金融分析人员提供快速、整洁、和多样的便于分析的数据，为他们在数据获取方面极大地减轻工作量，使他们更加专注于策略和模型的研究与实现上。
-
-官网：
-
-http://tushare.org/

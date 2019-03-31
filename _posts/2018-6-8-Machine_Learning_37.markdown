@@ -328,6 +328,10 @@ https://mp.weixin.qq.com/s/iEMGS1tbNPYXYIM7pKkq4A
 
 达观数据：计算广告系统算法与架构综述
 
+https://mp.weixin.qq.com/s/pWcFuOecG-dZHZ365clDjg
+
+阿里妈妈新突破！深度树匹配如何扛住千万级推荐系统压力
+
 # 强连通分量算法
 
 http://ishare.iask.sina.com.cn/f/34626295.html

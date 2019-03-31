@@ -6,6 +6,22 @@ category: resource
 
 # NLP参考资源
 
+https://mp.weixin.qq.com/s/kbF8WnaVWf6nOpzvbELpOw
+
+产品评论分析系统
+
+https://mp.weixin.qq.com/s/2NLckUqFrCOwaIamwWFOqQ
+
+基于深度 AND-OR 语法网络的目标识别方法
+
+https://mp.weixin.qq.com/s/IVSoI6QM1uY3JLKMiha9vQ
+
+微软亚洲研究院论文解读：基于动态词表的对话生成研究
+
+https://mp.weixin.qq.com/s/C9UbA0482F8SvB27i-V_9Q
+
+微软亚洲研究院周明：自然语言对话引擎
+
 https://mp.weixin.qq.com/s/M_ZN0YuvegAnc2GXCZTt9Q
 
 初学者指南：神经网络在自然语言处理中的应用
@@ -86,10 +102,6 @@ https://mp.weixin.qq.com/s/mq0PdX6oB2kr_5FyoLA4ug
 
 机器人数学考了134分，要上清华北大NLP是最大难关
 
-https://mp.weixin.qq.com/s/uRR4Vh3PC8SFw-PD9FQLpw
-
-命名实体识别（NER）的二三事
-
 http://www.toutiao.com/a6236100205026328834/
 
 深度学习：推动NLP领域发展的新引擎
@@ -101,10 +113,6 @@ http://dataunion.org/9331.html
 https://www.zhihu.com/question/46272554
 
 如何评价SyntaxNet
-
-https://mp.weixin.qq.com/s/-y2vth2OGx9rAsPvEknVTg
-
-神经网络结构在命名实体识别（NER）中的应用
 
 https://mp.weixin.qq.com/s/PxyazOPKV3eB-qat8hM9ZQ
 
@@ -254,14 +262,6 @@ https://mp.weixin.qq.com/s/R-BuHOYFEadVe0yx5q92Dg
 
 文本表示简介
 
-https://mp.weixin.qq.com/s/6xTdgOYHtnCSsH9QRGkcCw
-
-一文理解词性标注、依存分析和命名实体识别任务
-
-https://mp.weixin.qq.com/s/c1rSq8vY9fiXjV-WsxLVQw
-
-一文详解深度学习在命名实体识别(NER)中的应用
-
 https://mp.weixin.qq.com/s/GFIxA9kEGNJ9rg96mRw0PQ
 
 自然语言语义代码搜索之路
@@ -309,10 +309,6 @@ https://mp.weixin.qq.com/s/1WtJEqhxCtBKVRs_-EevjA
 https://mp.weixin.qq.com/s/dXU-HMi8LIjVTwzfMqOzuQ
 
 自然语言中的深度隐变量模型
-
-https://mp.weixin.qq.com/s/4qHgIcq9YJTj1iGh7kLB4w
-
-用神经推理来帮助命名实体识别
 
 https://mp.weixin.qq.com/s/kef7F8hlkavvVpD1gQt8hA
 

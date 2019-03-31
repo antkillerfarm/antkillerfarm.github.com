@@ -122,6 +122,10 @@ https://mp.weixin.qq.com/s/Lkxc_9sbRY157sMWaD5c7g
 
 视频分割在移动端的算法进展综述
 
+https://mp.weixin.qq.com/s/F0ykoKv027ycinsAZZjbWQ
+
+ThunderNet：国防科大、旷视提出首个在ARM上实时运行的通用目标检测算法
+
 # Mask R-CNN
 
 Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的NN。它是何恺明2017年的新作。
@@ -215,6 +219,10 @@ https://mp.weixin.qq.com/s/CsEHuGz_fAq8eWpHRq7d6g
 https://mp.weixin.qq.com/s/xug0xKfc9RgJEUci1a_xog8
 
 实例分割的进阶三级跳：从Mask R-CNN到Hybrid Task Cascade
+
+https://mp.weixin.qq.com/s/7Z8unW7Gsu0cf1hAwvjAxw
+
+何恺明等人提TensorMask框架：比肩Mask R-CNN，4D张量预测新突破
 
 # Fast Image Processing
 

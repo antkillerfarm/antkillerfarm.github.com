@@ -146,7 +146,11 @@ https://mp.weixin.qq.com/s/dflEAOELK0f19y4KuVd_dQ
 
 https://mp.weixin.qq.com/s/fpVFpN5beJFyLW19WnBzvw
 
-揭开黑盒一角！谷歌联合OpenAI发布“神经元显微镜”，可视化神经网络运行机制 
+揭开黑盒一角！谷歌联合OpenAI发布“神经元显微镜”，可视化神经网络运行机制
+
+https://mp.weixin.qq.com/s/o-MFPt6LR_5XDpacqw754Q
+
+马里兰大学论文：可视化神经网络的损失函数
 
 ## DL方法
 
@@ -229,13 +233,3 @@ $$J_{style}(S,G)=\sum_l\lambda^{[l]}\cdot J^{[l]}_{style}(S,G)$$
 可以看出A和P，在整个迭代过程中，只需要进行一次Alex-Net的前向计算，因此可以事先计算好。
 
 为了在迭代过程中，不修改Alex-Net的权重，而只修改F，我们可以使用`tf.constant`来创建Alex-Net的各个参数，进而建立Alex-Net。这样在backward的时候，梯度就只会修正到`tf.Variable`，也就是F上。
-
-## 缺点
-
-Gatys的方法虽然是里程碑式的进步，但仍然有如下缺点：
-
-1.渲染速度缓慢。渲染一张图片需要从随机噪声开始，反复迭代若干次，才能得到最终的结果。
-
-2.需要根据风格的不同，调整不同的超参数。换句话说，就是一个Style Transfer的模型就只能用于转换一种Style，通用型不强。
-
-因此，之后的研究主要集中在对这两方面的改进上。针对前者的改进可称作fast style transfer，而后者可称作Universal Style Transfer。

@@ -96,6 +96,18 @@ https://mp.weixin.qq.com/s/gLRKHedbVX_K2XJW2eNuhQ
 
 如何增加深度学习模型的泛化能力
 
+https://mp.weixin.qq.com/s/eyl0NMa1p_RmQIwnweuBgw
+
+10张图盘点计算机视觉、语音和文本理解里程碑
+
+https://mp.weixin.qq.com/s/h9e3QMSmsrE4NUXExwNsGg
+
+一文看尽深度学习这半年
+
+http://mp.weixin.qq.com/s/Ybq6hSTPpyYQSNGJg1tgeQ
+
+AI距离匹敌人类大脑还有多远？人工神经网络和生物神经网络最详细对比
+
 ## 算法
 
 http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww

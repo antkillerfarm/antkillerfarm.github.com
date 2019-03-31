@@ -6,6 +6,30 @@ category: resource
 
 # NLP参考资源
 
+https://mp.weixin.qq.com/s/Ce3gOZSqkG8wZQ6X1CUE1Q
+
+如何从编码器和解码器两方面改进生成式句子摘要？
+
+https://mp.weixin.qq.com/s/MP0Px9ylUT0tpdz_hP5JBw
+
+在NLP中深度学习模型何时需要树形结构？
+
+https://zhuanlan.zhihu.com/p/32314500
+
+DL实战课程推荐-从0到1构建一个Chatbot系统
+
+https://mp.weixin.qq.com/s/GhJRebSXXq0ZFh3evAqLxw
+
+漫谈神经语言模型之中文输入法
+
+https://mp.weixin.qq.com/s/rF4zKCbj3Jh8dDR1239lpA
+
+基于双语主题模型的跨语言层次分类体系匹配
+
+https://mp.weixin.qq.com/s/gQ9dV-IPWHTOLbI6u0D67g
+
+可解释推荐系统：身怀绝技，一招击中用户心理
+
 https://mp.weixin.qq.com/s/eCtqMIo3_UDxAR4fWzMjZQ
 
 站在锤子手机背后，小源科技用AI打造短信场景服务
@@ -210,10 +234,6 @@ https://mp.weixin.qq.com/s/lHhmUR-DXMceJSxwIn7QGw
 
 探寻开放域对话生成中的隐式反馈
 
-https://mp.weixin.qq.com/s/CYgnTHpQi3FDXV6RwUzi-Q
-
-神经网络结构在命名实体识别（NER）中的应用
-
 https://mp.weixin.qq.com/s/X1h6EfLVDAnDj2pKZUqyJA
 
 英文文本挖掘预处理流程
@@ -261,10 +281,6 @@ Google工程师带你看遍聊天机器人的前世今生
 https://mp.weixin.qq.com/s/CQDYzRvFqJHPVXDu94pgLA
 
 思必驰和上交大提出口语语义理解新方法：基于对抗多任务学习的半监督训练
-
-https://mp.weixin.qq.com/s/tFL5x-7a9iyzxbSpNa0-4w
-
-当RNN神经网络遇上NER（命名实体识别）：双向LSTM，条件随机场（CRF），层叠Stack LSTM，字母嵌入
 
 https://mp.weixin.qq.com/s/HJDkNw_Fuu1QKEpyHY1Q-w
 
@@ -318,10 +334,6 @@ https://mp.weixin.qq.com/s/f8NoGxirMkTzwLERKon1Vw
 
 北京大学提出基于CNN的学术论文自动评分模型
 
-https://mp.weixin.qq.com/s/-SQETPUnV2hu5QRqYsXdmg
-
-利用跨语言知识改进稀缺资源语言命名实体识别
-
 https://mp.weixin.qq.com/s/ILn-XqAQ_DYCFsiRgqYBrQ
 
 微软亚洲研究院院长副院长周明：语言智能的进展
@@ -362,17 +374,9 @@ https://mp.weixin.qq.com/s/wHweI0_LYHaW7K8jEAY74g
 
 文综提分哪家强？上海交大找AI
 
-https://mp.weixin.qq.com/s/o3rYqUDhre5KCcFzd_u8lQ
-
-命名实体识别从数据集到算法实现
-
 https://mp.weixin.qq.com/s/yXs_bLSAIPcUOIrvJ9-0Sw
 
 ACM BCB 2018 CausalTriad: 从医学文本数据中推断出新的因果关系假设
-
-https://mp.weixin.qq.com/s/rA6oTLlFWmIvGUq_XPLOKQ
-
-利用Lattice LSTM的最优中文命名实体识别方法
 
 https://mp.weixin.qq.com/s/C7GkZk7UWk_2XsVfn1J_lg
 

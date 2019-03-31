@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/Ve_Gvp1Y0nIX4DV9_w0S3g
 
 半正定规划(SDP)的形象理解和基本原理
 
+https://mp.weixin.qq.com/s/wspfngdFNq-GeCTUJAse0A
+
+在单纯形法之前
+
 # 金融模型
 
 Capital asset pricing model

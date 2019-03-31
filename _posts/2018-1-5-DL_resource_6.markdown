@@ -18,10 +18,6 @@ https://mp.weixin.qq.com/s/fY4vF0aPexwFi2Fu4grdzg
 
 大规模视觉理解竞赛WebVision冠军分享
 
-https://mp.weixin.qq.com/s/HlqzSdhj3Q3nX4Zl63PM0A
-
-商汤科技23篇论文横扫CVPR
-
 https://mp.weixin.qq.com/s/4dlWdPOCbYedu02aLAQ04Q
 
 MIT“创世纪”机器学习新系统，自动生成补丁修复Bug
@@ -162,10 +158,6 @@ https://mp.weixin.qq.com/s/Rd_U0gnusWqBRprLKIJaWQ
 
 Xavier Amastsin：2017机器学习和人工智能年终综述
 
-https://mp.weixin.qq.com/s/jdM0w4hRgkWmul9Bcp2oCw
-
-揭秘CVPR2017 WebVision图片分类竞赛冠军背后的技术
-
 https://mp.weixin.qq.com/s/53zse9GD9W25Vx6FCt2Bmw
 
 基于深度学习的DGA恶意域名分类算法
@@ -214,10 +206,6 @@ https://mp.weixin.qq.com/s/vCIpaFUTYggzN9YWs14atw
 
 让遥感图像活起来：遥感图像描述生成的模型与数据集探索
 
-https://mp.weixin.qq.com/s/5VHPc99NsFkz1Vl5iU8qkg
-
-详解如何用深度学习消除背景，实现抠图
-
 https://mp.weixin.qq.com/s/-5zADACehIzB_XYuGn2DKg
 
 简化标注者工作：Google等学者提出基于智能对话的边界框标注方法
@@ -225,10 +213,6 @@ https://mp.weixin.qq.com/s/-5zADACehIzB_XYuGn2DKg
 https://mp.weixin.qq.com/s/8unG1Yo1kQJdgSMlKiqgbA
 
 逻辑回归和深度神经网络：哪个更适合你？
-
-https://mp.weixin.qq.com/s/o-MFPt6LR_5XDpacqw754Q
-
-马里兰大学论文：可视化神经网络的损失函数
 
 https://mp.weixin.qq.com/s/7hPMb250EBfKwcZesIBxBg
 

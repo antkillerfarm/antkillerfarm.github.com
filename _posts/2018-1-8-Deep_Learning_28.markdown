@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/gsoVFiG3tKhHAU7OCGfLPg
 
 如何评价MSRA视觉组最新提出的Deformable ConvNets V2？
 
+https://mp.weixin.qq.com/s/VmcxU7ZgNJbNUy-Feiz3ig
+
+目标检测：Deformable ConvNets v2算法笔记
+
 ## 3D卷积
 
 3D卷积一般用于视频（2D图像+1D时序）和医学影像（3D立体图像）的分析处理中。
