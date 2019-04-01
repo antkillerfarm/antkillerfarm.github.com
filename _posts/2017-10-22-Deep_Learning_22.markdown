@@ -223,6 +223,8 @@ https://github.com/mgharbi/demosaicnet
 
 由于并没有那么多图片的Bayer Array数据，因此通常的做法是使用HR图片经采样得到Bayer Array数据。
 
+>注意，如果训练数据有原始的Bayer Array的Raw data，那是最好的。降采样或者Raw data的RGB化，都有一定的高频信号的损失。
+
 DemosaicNet的设计借鉴了ResNet的Skip Connection的方案，只不过使用Concat代替了ResNet的Add操作而已。
 
 这里再额外补充两点：

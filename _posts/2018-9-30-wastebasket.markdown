@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  垃圾筐
+title:  垃圾筐, 可视化
 category: resource 
 ---
 
@@ -262,9 +262,21 @@ https://mp.weixin.qq.com/s/AdmEd1FHxpZUwSGYy3qggg
 
 利用cpu缓存实现高性能程序
 
-## 可视化
+# 可视化
 
 ![](/images/img2/data_visual.png)
+
+这里重点推荐下文：
+
+https://mp.weixin.qq.com/s/QUoW4eD93_DPQ7kP_6jaZg
+
+定义可视化！用30分钟读懂人类感知世界的39项研究
+
+这篇文章从人类感知的角度分析了各种可视化技术。其中的一个有意思的结论是：
+
+>3D图形虽然“炫目”和“性感”，却没有传达任何额外的信息，迫使读者“处理冗余和无关的线索”。
+
+参考：
 
 https://mp.weixin.qq.com/s/Ul6Qg2ylCgvDfJTQre4DWQ
 
@@ -411,10 +423,6 @@ http://mp.weixin.qq.com/s/Or6oDt0aZFlnlMr8EBr-xQ
 https://mp.weixin.qq.com/s/i4u4Ty8kC0zzUpmRqj8g7A
 
 473个模型试验告诉你文本分类中的最好编码方式
-
-https://mp.weixin.qq.com/s/2LYqppJnRRtlvsdrdu57Gg
-
-万字长文概述NLP中的深度学习技术
 
 https://mp.weixin.qq.com/s/-D-5p_7DfvR3D7cZjlUmUA
 

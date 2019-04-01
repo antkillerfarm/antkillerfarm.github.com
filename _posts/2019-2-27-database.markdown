@@ -40,6 +40,14 @@ https://mp.weixin.qq.com/s/-OfYLqVPVioRP1kkIsCFsA
 
 小米大数据：借助Apache Kylin打造高效、易用的一站式OLAP解决方案
 
+https://mp.weixin.qq.com/s/eVJmWwUdYqAIs1CF6UwgaQ
+
+Hulu在OLAP场景下数据缓存技术实战
+
+https://mp.weixin.qq.com/s/2VutJPwMLUW51o2P0P0QLw
+
+Sophon：Hulu智能OLAP缓存层技术实践
+
 ## 参考
 
 https://blog.csdn.net/zhengzhb/article/details/8590390

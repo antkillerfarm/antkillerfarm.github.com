@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十八）——PageRank算法, 社交网络, 特征工程, 数据清洗, 用户画像
+title:  机器学习（三十八）——PageRank算法, 社交网络, 特征工程, 数据清洗
 category: ML 
 ---
 
@@ -158,6 +158,10 @@ https://mp.weixin.qq.com/s/fGaEYvo3WYKdzA3r8l6O3g
 
 基于TextRank算法的文本摘要
 
+https://mp.weixin.qq.com/s/0ZNsP7sEfagZhjyaLZohSQ
+
+程序员拒绝单曲循环：曲子只有5分钟，也得不重样播放450多天
+
 # 社交网络
 
 ## 信息传播模型
@@ -202,6 +206,38 @@ https://blog.csdn.net/itplus/article/details/9286905
 
 Community Detection算法
 
+https://www.zhihu.com/question/29042018
+
+社区发现(Community detection)的经典方法有哪些？该领域最新的研究进展如何？
+
+http://www.mapequation.org/index.html
+
+这是一个复杂网络方面的网站，提供了很多算法的代码。例如infomap
+
+https://www.cnblogs.com/nolonely/p/6262508.html
+
+社区发现算法总结（一）
+
+https://www.cnblogs.com/nolonely/p/6268150.html
+
+社区发现算法总结（二）
+
+https://sikasjc.github.io/2017/12/20/GN/
+
+GN算法--复杂网络中社区发现与Python实现
+
+https://www.cnblogs.com/LittleHann/p/9078909.html
+
+社区发现算法-Fast Unfolding（Louvian）算法初探
+
+http://blog.sina.com.cn/s/blog_617032070100er0r.html
+
+Infomap算法描述
+
+https://mp.weixin.qq.com/s/S0vUBFCfizjVe_L4SIrGqQ
+
+网络新闻真假难辨？机器学习来助你一臂之力
+
 # 特征工程
 
 https://mp.weixin.qq.com/s/ibiElLIgrT3wYx3tDYMMTw
@@ -245,21 +281,3 @@ https://mp.weixin.qq.com/s/FHdo2DTapoTryA-hOM-y_w
 https://mp.weixin.qq.com/s/r7ngZOM9tO-_OSfvs2aDJw
 
 数据清洗&预处理入门完整指南
-
-# 用户画像
-
-https://mp.weixin.qq.com/s/TydTE50NzxMbGAigqv6BCw
-
-如何破解“千人千面”，深度解读用户画像
-
-https://mp.weixin.qq.com/s/bdAp_FExIK5IJH8WnD53Wg
-
-你真的懂用户画像吗？
-
-https://mp.weixin.qq.com/s/LN6ib-8b_SZHR9u_-OMwNg
-
-推荐系统眼中的你：内容画像与用户画像
-
-https://mp.weixin.qq.com/s/95Zklj8ovheQV3Gnc-2h-Q
-
-小米大数据总监司马云瑞详解小米用户画像的演进及应用解读

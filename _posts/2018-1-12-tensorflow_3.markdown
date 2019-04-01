@@ -6,6 +6,30 @@ category: AI
 
 # TensorFlow
 
+## tf.data
+
+tf.data提供了一套构建灵活高效的输入流水线的API。
+
+![](/images/img2/datasets_without_pipelining.png)
+
+![](/images/img2/datasets_with_pipelining.png)
+
+上面两幅图中，第一幅图是没有使用流水线的情况，而第二幅图则是使用流水线的情况。
+
+参考：
+
+https://mp.weixin.qq.com/s/dfXTV4PFgC1Wbti42Zf4wQ
+
+tf.data API，让你轻松处理数据
+
+https://mp.weixin.qq.com/s/mjUnrPBPBuY6XKXkUymX-w
+
+实例介绍TensorFlow的输入流水线
+
+https://mp.weixin.qq.com/s/1ZlyVDJK6RWZ_1Ox7399IA
+
+用一行tf.data实现数据Shuffle、Batch划分、异步预加载等
+
 ## TensorFlow Probability
 
 TensorFlow Probability是一个概率编程工具包。
@@ -377,27 +401,3 @@ Tensorflow卷积神经网络
 https://mp.weixin.qq.com/s/Cge_GY19aZ1AcMkhW93C1A
 
 TensorFlow中的那些高级API
-
-https://mp.weixin.qq.com/s/kJxXIN6D5TEEFSFhGJNIyw
-
-开源神经网络图片上色技术解析
-
-https://mp.weixin.qq.com/s/qXMRHxDDRa-_rJZMhXWB4w
-
-详解TensorFlow的新seq2seq模块及其用法
-
-https://mp.weixin.qq.com/s/YdcIDXadEnDsyfc6Iu1gGw
-
-手把手教你用TensorFlow训练模型
-
-https://mp.weixin.qq.com/s/Off0pgaRNyik2nvjHaQQkw
-
-在TensorFlow中对比两大生成模型：VAE与GAN
-
-https://mp.weixin.qq.com/s/rMYjsIgFNvv47F4YZjY8SA
-
-如何在K8S上玩转TensorFlow？
-
-https://zhuanlan.zhihu.com/p/30751039
-
-TensorFlow全新的数据读取方式：Dataset API入门教程

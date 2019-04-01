@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十四）——单分类SVM&多分类SVM, 贝叶斯学习, Stacking, 三门问题, 社区发现
+title:  机器学习（二十四）——单分类SVM&多分类SVM, 贝叶斯学习, Stacking, 三门问题, 用户画像
 category: ML 
 ---
 
@@ -303,40 +303,20 @@ https://zhuanlan.zhihu.com/p/23338174
 
 蒙提霍尔问题/三门问题（Monty Hall problem）
 
-# 社区发现
+# 用户画像
 
-https://www.zhihu.com/question/29042018
+https://mp.weixin.qq.com/s/TydTE50NzxMbGAigqv6BCw
 
-社区发现(Community detection)的经典方法有哪些？该领域最新的研究进展如何？
+如何破解“千人千面”，深度解读用户画像
 
-https://blog.csdn.net/itplus/article/details/9286905
+https://mp.weixin.qq.com/s/bdAp_FExIK5IJH8WnD53Wg
 
-Community Detection算法
+你真的懂用户画像吗？
 
-http://www.mapequation.org/index.html
+https://mp.weixin.qq.com/s/LN6ib-8b_SZHR9u_-OMwNg
 
-这是一个复杂网络方面的网站，提供了很多算法的代码。例如infomap
+推荐系统眼中的你：内容画像与用户画像
 
-https://www.cnblogs.com/nolonely/p/6262508.html
+https://mp.weixin.qq.com/s/95Zklj8ovheQV3Gnc-2h-Q
 
-社区发现算法总结（一）
-
-https://www.cnblogs.com/nolonely/p/6268150.html
-
-社区发现算法总结（二）
-
-https://sikasjc.github.io/2017/12/20/GN/
-
-GN算法--复杂网络中社区发现与Python实现
-
-https://www.cnblogs.com/LittleHann/p/9078909.html
-
-社区发现算法-Fast Unfolding（Louvian）算法初探
-
-http://blog.sina.com.cn/s/blog_617032070100er0r.html
-
-Infomap算法描述
-
-https://mp.weixin.qq.com/s/S0vUBFCfizjVe_L4SIrGqQ
-
-网络新闻真假难辨？机器学习来助你一臂之力
+小米大数据总监司马云瑞详解小米用户画像的演进及应用解读

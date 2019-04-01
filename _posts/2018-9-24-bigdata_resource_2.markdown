@@ -382,10 +382,6 @@ https://mp.weixin.qq.com/s/hn-LqyREkusxP2TOWfTJ6g
 
 使用TensorFlow官方Java API调用TensorFlow模型
 
-https://mp.weixin.qq.com/s/IuD1oxeiFBq8kqh_zRLb0Q
-
-一步实现从TF到TF Lite，谷歌提出定制on-device模型框架
-
 https://mp.weixin.qq.com/s/kS92vYyeHLc38RGc_4CZbg
 
 如何应用TFGAN快速实践生成对抗网络？

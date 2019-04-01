@@ -186,16 +186,6 @@ https://mp.weixin.qq.com/s/qkvX0rmEe0yQ-BhCmWAXSQ
 
 李沐：AWS开源端到端AI框架编译器NNVM
 
-## Android NN
-
-https://developer.android.google.cn/ndk/reference/group/neural-networks
-
-这是Android NDK中的NN相关的接口文档
-
-https://developer.arm.com/products/software/mali-drivers/android-nnapi
-
-这是ARM对于Android NN的一个实现。
-
 ## MMdnn
 
 MMdnn是微软推出的工具集，也是目前功能最强的工具集。

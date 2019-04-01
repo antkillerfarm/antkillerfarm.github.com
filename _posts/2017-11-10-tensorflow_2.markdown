@@ -206,6 +206,30 @@ https://mp.weixin.qq.com/s/lNP9WdzSWE4FjB_-Sjc2aA
 
 TensorFlow Lite for Android初探
 
+https://mp.weixin.qq.com/s/IuD1oxeiFBq8kqh_zRLb0Q
+
+一步实现从TF到TF Lite，谷歌提出定制on-device模型框架
+
+https://mp.weixin.qq.com/s/65HiEwCyzeA_d9flPBcpLQ
+
+谷歌正式发布TensorFlowLite，半监督跨平台快速训练ML模型
+
+## Android NN
+
+TFLite是Google的Tensorflow团队开发的移动DL框架，它可以在任意平台执行。而Android NN则是Google的Android团队针对Android平台开发的DL框架。
+
+团队的不同，决定了这两款产品并非完全兼容。一般来说，TFLite由于紧跟Tensorflow，其对新op的支持要更及时一些。但Android NN由于有Facebook等外部客户的需求推动，在个别情况下，也有相反的情况发生。
+
+参考：
+
+https://developer.android.google.cn/ndk/reference/group/neural-networks
+
+这是Android NDK中的NN相关的接口文档
+
+https://developer.arm.com/products/software/mali-drivers/android-nnapi
+
+这是ARM对于Android NN的一个实现。
+
 ## Broadcast
 
 Broadcast是一种填充元素以使操作数的形状相匹配的操作。例如，对一个[3,2]的张量和一个[3,1]的张量相加在TF中是合法的，TF会使用默认的规则将[3,1]的张量填充为[3,2]的张量，从而使操作能够执行下去。
@@ -377,27 +401,3 @@ TensorFlow数据集和估算器介绍
 https://mp.weixin.qq.com/s/zpEVU1E5DfElAnFqHCqHOw
 
 训练效率低？GPU利用率上不去？快来看看别人家的tricks吧～
-
-## tf.data
-
-tf.data提供了一套构建灵活高效的输入流水线的API。
-
-![](/images/img2/datasets_without_pipelining.png)
-
-![](/images/img2/datasets_with_pipelining.png)
-
-上面两幅图中，第一幅图是没有使用流水线的情况，而第二幅图则是使用流水线的情况。
-
-参考：
-
-https://mp.weixin.qq.com/s/dfXTV4PFgC1Wbti42Zf4wQ
-
-tf.data API，让你轻松处理数据
-
-https://mp.weixin.qq.com/s/mjUnrPBPBuY6XKXkUymX-w
-
-实例介绍TensorFlow的输入流水线
-
-https://mp.weixin.qq.com/s/1ZlyVDJK6RWZ_1Ox7399IA
-
-用一行tf.data实现数据Shuffle、Batch划分、异步预加载等

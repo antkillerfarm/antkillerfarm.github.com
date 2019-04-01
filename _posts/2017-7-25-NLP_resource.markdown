@@ -168,6 +168,10 @@ https://mp.weixin.qq.com/s/TjFzJVOowfceHwJNUItcxQ
 
 从语言学到深度学习NLP，一文概述自然语言处理
 
+https://mp.weixin.qq.com/s/2LYqppJnRRtlvsdrdu57Gg
+
+万字长文概述NLP中的深度学习技术
+
 ## 分词
 
 https://mp.weixin.qq.com/s/Xy_jaOex72pLe4wwieKeUg

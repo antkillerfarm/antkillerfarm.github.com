@@ -6,6 +6,8 @@ category: DL
 
 # 迁移学习
 
+![](/images/img2/small_data.png)
+
 ## Rethinking ImageNet Pre-training
 
 何恺明，RBG，Piotr Dollár的新作表明：ImageNet Pre-training不能提升最终精度，但可以加快收敛速度。
@@ -320,6 +322,14 @@ https://mp.weixin.qq.com/s/nIV7n8o7t2F3j0XFr9v-vg
 https://mp.weixin.qq.com/s/b6rH-eepKDSHLnixDVvKUQ
 
 新加坡南洋理工最新37页《零样本学习综述》论文
+
+https://mp.weixin.qq.com/s/mQU8GX4Yhkbs_bCuBJRllQ
+
+大数据时代小样本如何学习？看这篇最新《小样本学习方法综述》论文
+
+https://mp.weixin.qq.com/s/-73CC3JqnM7wxEqIWCejWQ
+
+小样本学习（Few-shot Learning）综述
 
 # 深度哈希
 

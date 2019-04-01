@@ -126,6 +126,10 @@ https://mp.weixin.qq.com/s/F0ykoKv027ycinsAZZjbWQ
 
 ThunderNet：国防科大、旷视提出首个在ARM上实时运行的通用目标检测算法
 
+https://mp.weixin.qq.com/s/ie2O5BPT-QxTRhK3S0Oa0Q
+
+剪枝需有的放矢，快手&罗切斯特大学提出基于能耗建模的模型压缩
+
 # Mask R-CNN
 
 Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的NN。它是何恺明2017年的新作。
