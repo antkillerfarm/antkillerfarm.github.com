@@ -244,6 +244,20 @@ http://www.xfyun.cn/share/?p=2626
 
 # 数字成像
 
+## CCD
+
+岩间和夫，1919～1982，东京帝国大学理学部地球物理学毕业。索尼前社长。最大的贡献在于推动CCD(电荷耦合元件)的研究，人称他为“CCD小子”。
+
+1970年：“完全回收在CCD上的投资，本世纪内都没有可能实现。”
+
+八年后，CCD终于开发成功。然而岩间并没有等到CCD的量产，就因肠癌去世。继任索尼社长的大贺典雄将一片CCD镶嵌在岩间和夫的墓碑上，来纪念他对索尼的贡献。
+
+参考：
+
+http://science.china.com.cn/2016-09/26/content_9058067.htm
+
+睹物思人--索尼历史档案馆的另类发现
+
 ## 结构光
 
 http://mp.weixin.qq.com/s/MWQDwMoRc0c1ofkENzn3Ew
@@ -441,23 +455,3 @@ https://mp.weixin.qq.com/s/8Hrq_z8s_5ms6Q_6OOaU-g
 https://mp.weixin.qq.com/s/rQ9eZosHOoDOXg9tAg4t6A
 
 tensorflow Object Detection API使用预训练模型mask r-cnn实现对象检测
-
-https://mp.weixin.qq.com/s/kYOwUWlTP4T0IYKDWDbCsg
-
-tensorflow object detection API训练公开数据集Oxford-IIIT Pets Dataset
-
-https://mp.weixin.qq.com/s/8uDsaZjsiKXGea6M-w-RvA
-
-tensorflow object detection API使用之GPU训练实现宠物识别
-
-https://mp.weixin.qq.com/s/knw7yuUxHe-qeCLfj20onw
-
-Bayesian GAN的TensorFlow实现
-
-https://mp.weixin.qq.com/s/Sxui9CvdGocIxVG2FM4JtQ
-
-基于tensorflow使用CNN-RNN进行中文文本分类！
-
-https://mp.weixin.qq.com/s/X7ISLRMy5cddpmO5mev4MA
-
-自创数据集，使用TensorFlow预测股票入门

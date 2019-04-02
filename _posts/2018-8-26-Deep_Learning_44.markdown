@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十四）——三维处理, 视频目标分割
+title:  深度学习（四十四）——三维处理, 视频处理
 category: DL 
 ---
 
@@ -190,7 +190,9 @@ https://mp.weixin.qq.com/s/SnvXvijf5gBMNsnVW1-KMA
 
 一张照片获得3D人体信息，云从科技提出新型DenseBody框架
 
-# 视频目标分割
+# 视频处理
+
+## 视频目标分割
 
 视频目标分割任务和语义分割有两个基本区别：
 
@@ -208,7 +210,7 @@ https://mp.weixin.qq.com/s/SnvXvijf5gBMNsnVW1-KMA
 
 半监督：在输入中（只）给出视频第一帧的正确分割掩膜，然后在之后的每一连续帧中分割标注的目标。
 
-参考：
+## 参考
 
 http://mp.weixin.qq.com/s/pGrzmq5aGoLb2uiJRYAXVw
 
@@ -353,4 +355,8 @@ https://mp.weixin.qq.com/s/-FF3tuEB2V8RlQCjQhu5Bg
 https://mp.weixin.qq.com/s/T-Rg9xLfdYmV8bJESK0h8g
 
 快速端到端嵌入学习用于视频中的目标分割
+
+https://mp.weixin.qq.com/s/pKSrokV_j8Repa-JMloUHg
+
+Google又发大招：高效实时实现视频目标检测
 

@@ -74,6 +74,10 @@ https://mp.weixin.qq.com/s/vGUizRVnosd7cgxha-pimw
 
 200行Python代码实现感知机词性标注器
 
+https://mp.weixin.qq.com/s/0kM72uF7qa5IiinEnLC5-A
+
+一起来看看词性标注
+
 http://www.jianshu.com/p/43db6425ad33
 
 如何为聊天机器人设计数据通道

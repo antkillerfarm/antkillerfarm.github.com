@@ -226,6 +226,36 @@ https://mp.weixin.qq.com/s/YdoIVBpn1dFUEzDEF5pYJw
 
 被迫离开工作近20年的公司，半导体老兵上演逆袭。林孝平，一个小儿麻痹患者。
 
+# 知识图谱参考资源
+
+https://mp.weixin.qq.com/s/fVABfj2W8JpDH2p8hWm8wA
+
+区分概念和实例的知识图谱嵌入方法
+
+https://mp.weixin.qq.com/s/gxNxROI8o3EEhguKx8Hrfg
+
+AMUSE: 基于RDF数据的多语言问答语义解析方法
+
+https://mp.weixin.qq.com/s/sRy534XgBDSlK_pTu98KXA
+
+基于图注意力的常识对话生成
+
+https://mp.weixin.qq.com/s/Lc5CJwuS4DpvYkZpzWDBUQ
+
+对话清华NLP实验室刘知远：NLP搞事情少不了知识库与图神经网络
+
+https://mp.weixin.qq.com/s/R-mY_23bqol1VfA1125xiw
+
+67亿美金搞个图，创建知识图谱的成本有多高你知道吗？
+
+https://mp.weixin.qq.com/s/Emlzfgoo99T9xAsTKJRQXg
+
+一文看懂虚假新闻检测
+
+https://mp.weixin.qq.com/s/aEhLCkEnImubZlwEP2ZHBQ
+
+从本体论开始说起，运营商关系图谱的构建及应用
+
 # AI Chip+
 
 https://mp.weixin.qq.com/s/s-fYxv4z5kkJUFueU2IR7w

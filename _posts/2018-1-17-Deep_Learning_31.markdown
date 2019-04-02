@@ -188,7 +188,7 @@ http://nlp.csai.tsinghua.edu.cn/~zm/
 
 # Image Caption Generation
 
-Image Caption Generation的目标是：给定一张图片，让计算机用一句话来描述这张图片。
+Image Caption Generation的目标是：给定一张图片，让计算机用一句话来描述这张图片。如果将这里的Image换成Video，那就是Video Caption Generation了。
 
 当然，它也有反操作：Generating Image/Videos from Captions。
 
@@ -317,6 +317,10 @@ MirrorGAN出世！浙大等提出文本-图像新框架
 https://mp.weixin.qq.com/s/1rtONnhwEc3Osf9gP5fBCQ
 
 李飞飞CVPR最新论文“文本转图”效果优化可多一步：物体关系描述
+
+https://mp.weixin.qq.com/s/9XiAJzC2_vmZturE9ELVLA
+
+多级语言与视觉集成用于文本-剪辑检索
 
 # Recursive NN
 

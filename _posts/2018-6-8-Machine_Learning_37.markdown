@@ -324,6 +324,10 @@ https://mp.weixin.qq.com/s/rzCqz2HasT5zxBQjHy13Tw
 
 前深度学习时代CTR预估模型的演化之路：从LR到FFM
 
+https://mp.weixin.qq.com/s/Sc6VR--Qzk1BpS638SpS9Q
+
+盘点前深度学习时代阿里、谷歌、Facebook的CTR预估模型
+
 https://mp.weixin.qq.com/s/iEMGS1tbNPYXYIM7pKkq4A
 
 达观数据：计算广告系统算法与架构综述

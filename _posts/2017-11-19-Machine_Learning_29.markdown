@@ -100,6 +100,26 @@ $$k\le (D/\gamma)^2$$
 
 # TensorFlow+
 
+https://mp.weixin.qq.com/s/kYOwUWlTP4T0IYKDWDbCsg
+
+tensorflow object detection API训练公开数据集Oxford-IIIT Pets Dataset
+
+https://mp.weixin.qq.com/s/8uDsaZjsiKXGea6M-w-RvA
+
+tensorflow object detection API使用之GPU训练实现宠物识别
+
+https://mp.weixin.qq.com/s/knw7yuUxHe-qeCLfj20onw
+
+Bayesian GAN的TensorFlow实现
+
+https://mp.weixin.qq.com/s/Sxui9CvdGocIxVG2FM4JtQ
+
+基于tensorflow使用CNN-RNN进行中文文本分类！
+
+https://mp.weixin.qq.com/s/X7ISLRMy5cddpmO5mev4MA
+
+自创数据集，使用TensorFlow预测股票入门
+
 https://mp.weixin.qq.com/s/kJxXIN6D5TEEFSFhGJNIyw
 
 开源神经网络图片上色技术解析
