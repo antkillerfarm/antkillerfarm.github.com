@@ -6,6 +6,36 @@ category: AI
 
 # TensorFlow
 
+## Estimator
+
+![](/images/img2/tensorflow_programming_environment.png)
+
+Estimator是一个非常高级的API，其抽象等级甚至在Keras之上。
+
+Estimator主要包括以下部分：
+
+1.初始化。定义网络结构。
+
+2.train。
+
+3.evaluate。
+
+4.predict。
+
+TensorFlow已经包含了一些预置的Estimator。例如：BoostedTreesClassifier、DNNClassifier、LinearClassifier等。具体可参见：
+
+https://tensorflow.google.cn/api_docs/python/tf/estimator
+
+参考：
+
+https://mp.weixin.qq.com/s/a68brFJthczgwiFoUBh30A
+
+TensorFlow数据集和估算器介绍
+
+https://mp.weixin.qq.com/s/zpEVU1E5DfElAnFqHCqHOw
+
+训练效率低？GPU利用率上不去？快来看看别人家的tricks吧～
+
 ## tf.data
 
 tf.data提供了一套构建灵活高效的输入流水线的API。
@@ -365,39 +395,3 @@ https://mp.weixin.qq.com/s/KohwsQQetwjfTj-PXvLjwA
 http://mp.weixin.qq.com/s/ioaS7RQ6bsJs4_X0G4ZHyQ
 
 如何优雅地用TensorFlow预测时间序列：TFTS库详细教程
-
-http://mp.weixin.qq.com/s/hpv6bzr-5VZet-UCHOCQLQ
-
-谷歌TFX：基于TensorFlow可大规模扩展的机器学习平台
-
-https://mp.weixin.qq.com/s/cPWXAI2TBv3_ssnWDFoQ4w
-
-TensorFlow sucks，有人吐槽TensorFlow晦涩难用
-
-https://mp.weixin.qq.com/s/_kr28kN0_1QFP8BR_wGo5w
-
-TensorFlow RNN入门
-
-https://mp.weixin.qq.com/s/WqE-FRl-Thys7tHUvFNlWQ
-
-盯住梅西：TensorFlow目标检测实战
-
-https://mp.weixin.qq.com/s/WfzlHtz0FFJMsPFwPoMqJg
-
-如何利用VGG-16等模型在CPU上测评各深度学习框架
-
-http://www.jianshu.com/p/4e16ae0aad25
-
-利用TensorFlow入门Word2Vec
-
-https://mp.weixin.qq.com/s/YJmMfBhQ3cLNUp_HHsXhGA
-
-手把手教你使用TensorFlow生成对抗样本
-
-https://mp.weixin.qq.com/s/pIESRzjsmqoO46P4x5Iqhw
-
-Tensorflow卷积神经网络
-
-https://mp.weixin.qq.com/s/Cge_GY19aZ1AcMkhW93C1A
-
-TensorFlow中的那些高级API

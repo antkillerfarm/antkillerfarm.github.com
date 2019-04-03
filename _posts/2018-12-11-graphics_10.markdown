@@ -148,6 +148,28 @@ https://zhuanlan.zhihu.com/p/52140541
 
 传统计算机视觉中图像特征匹配方法的原理介绍（SIFT和ORB）
 
+## 背景提取
+
+背景提取是在视频图像序列中提取出背景，背景就是场景中静止不动的景物。因为摄像机不动，因此图像中的每个像素点都有一个对应的背景值，在一段时间内，这个背景值是比较固定的。背景提取的目标就是根据视频图像序列，找出图像中每一点的背景值。
+
+参考：
+
+https://blog.csdn.net/ajianyingxiaoqinghan/article/details/72628402
+
+背景提取算法——帧间差分法、背景差分法、ViBe算法、ViBe+算法
+
+https://blog.csdn.net/tiandijun/article/details/50499708
+
+ViBe算法原理和代码解析
+
+http://www.cnblogs.com/dwdxdy/p/3527891.html
+
+背景建模——VIBE
+
+https://www.cnblogs.com/ywsoftware/p/4434074.html
+
+运动目标检测ViBe算法
+
 # 从BOW到SPM
 
 ## BOW
@@ -263,3 +285,7 @@ https://zhuanlan.zhihu.com/p/35319354
 https://mp.weixin.qq.com/s/enUyu6nJI5olRUQehmu6UA
 
 谷歌ChauffeurNet:训练能够鲁棒地驾驶实车的网络
+
+https://zhuanlan.zhihu.com/p/61153328
+
+自动驾驶系统中的交通信号检测和识别

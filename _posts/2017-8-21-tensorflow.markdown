@@ -226,7 +226,11 @@ with tf.Session(graph=g2) as sess2:
     print sess2.run(c2)
 {% endhighlight %}
 
-Tensorflow对计算图的简化，不仅在于使用默认的Graph。还在于可以只计算部分的Graph。以上面的softmax运算为例，如果`sess.run(add)`的话，后面的ReLU和softmax运算都不会被执行。
+Tensorflow对计算图的简化，不仅在于使用默认的Graph。还在于可以只计算部分的Graph。部分Graph，也被称作Sub Graph。
+
+以上面的softmax运算为例，如果`sess.run(add)`的话，后面的ReLU和softmax运算都不会被执行。
+
+反过来，如果只想执行ReLU和softmax的话，则可以`sess.run(softmax, feed_dict={add: add_tensor})`。也就是把Sub Graph的output作为`sess.run`的参数，而把input作为feed_dict的参数。
 
 虽然图计算是Tensorflow的主要使用方式，然而一般性的tensor计算（即非图计算），也是完全可行的。Tensorflow没有提供相关的API，直接使用numpy就可以了。
 
@@ -347,4 +351,3 @@ http://geek.csdn.net/news/detail/126133
 tf-slim-mnist例子中mnist数据不是原始格式的，而是经过了`datasets/download_and_convert_mnist.py`的转换。
 
 该示例执行时也没有控制台的输出信息，一度让我觉得很不方便。后来才发现，原来可以用TensorBoard查看log文件夹。
-

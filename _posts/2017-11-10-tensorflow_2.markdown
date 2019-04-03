@@ -18,7 +18,7 @@ TensorBoard是一个http服务，用以监控TensorFlow的执行。
 
 启动之后，用浏览器打开`http://localhost:6006`即可。
 
-TensorBoard会将同类结点Group，但Group之后，有时反而不易观察具体的结构。
+TensorBoard会将同类结点Group，但Group之后，有时反而不易观察具体的结构。这个时候最好Ungroup一下。
 
 参考：
 
@@ -93,6 +93,10 @@ https://mp.weixin.qq.com/s/3GfxnwzIeeQj1LVSYKnZjQ
 ## .pb文件
 
 TensorFlow常用的模型保存格式还有.pb格式。这种格式下，模型和权重被整合为一个.pb文件，便于模型的发布和部署。相对应的，这种格式对于train就不太友好了。
+
+以下的脚本可用于将.pb文件导入到tensorboard中：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/tensorflow/graph/pb_visualize.py
 
 参考：
 
@@ -371,33 +375,3 @@ https://github.com/snowkylin/TensorFlow-cn
 https://mp.weixin.qq.com/s/zz8XCykJ6jxbE5J4YwAkEA
 
 一招教你使用tf.keras和eager execution解决复杂问题
-
-## Estimator
-
-![](/images/img2/tensorflow_programming_environment.png)
-
-Estimator是一个非常高级的API，其抽象等级甚至在Keras之上。
-
-Estimator主要包括以下部分：
-
-1.初始化。定义网络结构。
-
-2.train。
-
-3.evaluate。
-
-4.predict。
-
-TensorFlow已经包含了一些预置的Estimator。例如：BoostedTreesClassifier、DNNClassifier、LinearClassifier等。具体可参见：
-
-https://tensorflow.google.cn/api_docs/python/tf/estimator
-
-参考：
-
-https://mp.weixin.qq.com/s/a68brFJthczgwiFoUBh30A
-
-TensorFlow数据集和估算器介绍
-
-https://mp.weixin.qq.com/s/zpEVU1E5DfElAnFqHCqHOw
-
-训练效率低？GPU利用率上不去？快来看看别人家的tricks吧～

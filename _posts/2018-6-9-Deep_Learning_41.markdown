@@ -334,3 +334,7 @@ https://mp.weixin.qq.com/s/-73CC3JqnM7wxEqIWCejWQ
 https://mp.weixin.qq.com/s/45CLHvP1cumzcwMV0myj_g
 
 微软-少标签样本构建高性能文本分类器
+
+https://zhuanlan.zhihu.com/p/60420771
+
+领域自适应：利用DIRT-T模型提高性能

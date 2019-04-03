@@ -6,6 +6,20 @@ category: ML
 
 # Loss function详解（续）
 
+## Coupled Cluster Loss
+
+论文：
+
+《Deep Relative Distance Learning: Tell the Difference Between Similar Vehicles》
+
+
+
+参考：
+
+https://blog.csdn.net/u010167269/article/details/51783446
+
+论文中文笔记
+
 ## Focal Loss
 
 https://zhuanlan.zhihu.com/p/28442066

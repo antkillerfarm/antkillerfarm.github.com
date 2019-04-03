@@ -242,7 +242,9 @@ $$\|f(x_i^a)-f(x_i^p)\|_2^2 + \alpha < \|f(x_i^a)-f(x_i^n)\|_2^2$$
 
 $$\sum_i^N\left[\|f(x_i^a)-f(x_i^p)\|_2^2 - \|f(x_i^a)-f(x_i^n)\|_2^2 + \alpha \right]_+$$
 
-这里距离用欧式距离度量，+表示[]内的值大于零的时候，取该值为损失，小于零的时候，损失为零。 
+这里距离用欧式距离度量，+表示[]内的值大于零的时候，取该值为损失，小于零的时候，损失为零。
+
+>需要注意的是Triplet Loss以及后面介绍的各种改进版softmax，其收敛速度不如softmax，因此，先用softmax训练几轮，再改用这些loss，也是常用的调参技巧。
 
 参考：
 
@@ -269,17 +271,3 @@ Angular Margin在人脸识别中的应用
 https://mp.weixin.qq.com/s/SqaR_7gwJpUNPM7g4IHaYw
 
 深度人脸识别中不同损失函数的性能对比
-
-## Coupled Cluster Loss
-
-论文：
-
-《Deep Relative Distance Learning: Tell the Difference Between Similar Vehicles》
-
-
-
-参考：
-
-https://blog.csdn.net/u010167269/article/details/51783446
-
-论文中文笔记

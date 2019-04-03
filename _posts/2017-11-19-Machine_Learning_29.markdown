@@ -100,6 +100,42 @@ $$k\le (D/\gamma)^2$$
 
 # TensorFlow+
 
+http://mp.weixin.qq.com/s/hpv6bzr-5VZet-UCHOCQLQ
+
+谷歌TFX：基于TensorFlow可大规模扩展的机器学习平台
+
+https://mp.weixin.qq.com/s/cPWXAI2TBv3_ssnWDFoQ4w
+
+TensorFlow sucks，有人吐槽TensorFlow晦涩难用
+
+https://mp.weixin.qq.com/s/_kr28kN0_1QFP8BR_wGo5w
+
+TensorFlow RNN入门
+
+https://mp.weixin.qq.com/s/WqE-FRl-Thys7tHUvFNlWQ
+
+盯住梅西：TensorFlow目标检测实战
+
+https://mp.weixin.qq.com/s/WfzlHtz0FFJMsPFwPoMqJg
+
+如何利用VGG-16等模型在CPU上测评各深度学习框架
+
+http://www.jianshu.com/p/4e16ae0aad25
+
+利用TensorFlow入门Word2Vec
+
+https://mp.weixin.qq.com/s/YJmMfBhQ3cLNUp_HHsXhGA
+
+手把手教你使用TensorFlow生成对抗样本
+
+https://mp.weixin.qq.com/s/pIESRzjsmqoO46P4x5Iqhw
+
+Tensorflow卷积神经网络
+
+https://mp.weixin.qq.com/s/Cge_GY19aZ1AcMkhW93C1A
+
+TensorFlow中的那些高级API
+
 https://mp.weixin.qq.com/s/kYOwUWlTP4T0IYKDWDbCsg
 
 tensorflow object detection API训练公开数据集Oxford-IIIT Pets Dataset
