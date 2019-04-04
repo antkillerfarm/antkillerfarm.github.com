@@ -305,6 +305,10 @@ https://mp.weixin.qq.com/s/SUyRNz_M7B6bcdV7-YxlZQ
 
 Python制作一款简易音乐播放器
 
+https://mp.weixin.qq.com/s/d2_MTvfbOFZmppej5UOwUw
+
+关于使用Python析构函数的正确姿势
+
 # CPU
 
 https://zhuanlan.zhihu.com/p/29743431

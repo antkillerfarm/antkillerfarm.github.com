@@ -138,6 +138,36 @@ https://mp.weixin.qq.com/s/Lp2pq95woQ5-E3RemdRnyw
 
 # Graph NN
 
+## DGL
+
+https://mp.weixin.qq.com/s/I8pGqpKnRJp9HRglHfMZCw
+
+手把手教你用DGL框架进行批量图分类
+
+https://mp.weixin.qq.com/s/rGC8O2Pyq8WL8D8ATMbH0Q
+
+NYU、AWS联合推出：全新图神经网络框架DGL正式发布
+
+## PyTorch Geometric
+
+https://mp.weixin.qq.com/s/5HOA9Pmb3fjsfTVnFMdBIA
+
+新的PyTorch图神经网络库，比前辈快14倍
+
+## PyTorch-BigGraph
+
+https://mp.weixin.qq.com/s/Ux3_baKdA_Fee-jmcs4Myg
+
+开源了！现在用PyTorch做超大规模图嵌入，上亿个节点也能快速完成
+
+## Graph Nets
+
+https://mp.weixin.qq.com/s/c5rvWfIjujw6TNszDzPMdw
+
+DeepMind开源图深度学习(GraphDL)工具包，基于Tensorflow和Sonnet
+
+## 参考
+
 https://github.com/thunlp/GNNPapers
 
 相关论文列表
@@ -266,10 +296,6 @@ https://mp.weixin.qq.com/s/zg3yW7e4UKIs9-m6WmcbvA
 
 GraphWave：一种全新的无监督网络嵌入方法
 
-https://mp.weixin.qq.com/s/rGC8O2Pyq8WL8D8ATMbH0Q
-
-NYU、AWS联合推出：全新图神经网络框架DGL正式发布
-
 https://mp.weixin.qq.com/s/mamet6l_lA7fhoYkysZ7PQ
 
 华为联合LSE提出KONG：有序近邻图的核函数
@@ -305,10 +331,6 @@ https://mp.weixin.qq.com/s/eelcT5x_kWC0dDt0_Ph4qg
 https://mp.weixin.qq.com/s/0rs8Wur7Iv6jSpFz5C-KNg
 
 来自IEEE Fellow的GNN综述
-
-https://mp.weixin.qq.com/s/I8pGqpKnRJp9HRglHfMZCw
-
-手把手教你用DGL框架进行批量图分类
 
 https://mp.weixin.qq.com/s/diIzbc0tpCW4xhbIQu8mCw
 

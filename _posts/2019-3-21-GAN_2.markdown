@@ -120,6 +120,10 @@ https://github.com/hwalsuklee/tensorflow-generative-model-collections
 
 参考：
 
+https://zhuanlan.zhihu.com/p/58812258
+
+GAN万字长文综述
+
 https://github.com/hindupuravinash/the-gan-zoo
 
 GAN的各种变种

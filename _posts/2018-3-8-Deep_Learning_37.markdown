@@ -136,7 +136,7 @@ S3FD: Single Shot Scale-invariant Face Detector
 
 ## 人脸年龄识别
 
-https://mp.weixin.qq.com/s/-n1R_wtNND8UNeKE-lssUQ
+https://zhuanlan.zhihu.com/p/53229759
 
 年龄估计技术综述
 
@@ -178,6 +178,10 @@ https://mp.weixin.qq.com/s/sPnoZyCkAhcCs_GtA79DrA
 
 单目可见光静默活体检测Binary or Auxiliary Supervision论文解读
 
+https://mp.weixin.qq.com/s/Vi2ypwO3uCD2lQZOwDFqTA
+
+基于rPPG的人脸活体检测综述
+
 ## DeepFace
 
 《DeepFace: Closing the Gap to Human-Level Performance in Face Verification》
@@ -199,6 +203,10 @@ https://mp.weixin.qq.com/s/CvdeV5xgUF0kStJQdRst0w
 https://mp.weixin.qq.com/s/ZrnAqDJCLtMy_qTQ2RZT0A
 
 级联MobileNet-V2实现人脸关键点检测
+
+https://mp.weixin.qq.com/s/ymeJPUPRAGb1FltskqBs-A
+
+人脸关键点检测汇总
 
 ## 参考
 

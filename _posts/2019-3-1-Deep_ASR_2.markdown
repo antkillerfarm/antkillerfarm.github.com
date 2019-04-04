@@ -226,6 +226,10 @@ https://github.com/buriburisuri/speech-to-text-wavenet
 
 这个Tensorflow实现，利用WaveNet实现了语音识别。
 
+https://github.com/usernaamee/keras-wavenet
+
+keras版本的实现
+
 除了RNN之外，CNN也经常被用于分析时间序列。为了表明序列之间的因果关系，人们通常采用一种叫做Causal Convolution的结构来进行数据采样。
 
 ![](/images/img2/WaveNet_2.png)
@@ -371,11 +375,3 @@ https://blog.csdn.net/ffmpeg4976/article/details/52347845
 http://mp.weixin.qq.com/s/0WNJq4OLZlZETKPf1Ewq7w
 
 浅谈语音测试方案
-
-https://mp.weixin.qq.com/s/b0bOf1bZ2p0yWMzhp66HhA
-
-A flight (to Boston) to Denver-基于转移的顺滑技术研究
-
-https://mp.weixin.qq.com/s/0AvV268s3TZ0z8WwtJv6sw
-
-一文概览语音识别中尚未解决的问题

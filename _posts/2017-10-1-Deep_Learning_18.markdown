@@ -240,6 +240,10 @@ Semantic segmentation是图像理解的基石性技术，在自动驾驶系统�
 
 参考：
 
+https://mp.weixin.qq.com/s/Nmr5oLe_MSLjYjWXUILiMw
+
+视觉分割任务：论文与评测基准列表汇总
+
 https://zhuanlan.zhihu.com/p/21824299
 
 从特斯拉到计算机视觉之“图像语义分割”

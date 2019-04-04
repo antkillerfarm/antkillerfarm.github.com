@@ -336,6 +336,10 @@ https://mp.weixin.qq.com/s/pWcFuOecG-dZHZ365clDjg
 
 阿里妈妈新突破！深度树匹配如何扛住千万级推荐系统压力
 
+https://mp.weixin.qq.com/s/R6-y-W0CGhlEUPXDkYdtJw
+
+Item-Based协同过滤算法
+
 # 强连通分量算法
 
 http://ishare.iask.sina.com.cn/f/34626295.html

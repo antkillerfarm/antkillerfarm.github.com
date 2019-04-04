@@ -337,3 +337,7 @@ https://mp.weixin.qq.com/s/PPAIARqkYqaIYRD7SFOtBg
 https://mp.weixin.qq.com/s/r1uXn2jGsHZcZ8Nk7GnGFA
 
 语义表征的无监督对比学习：一个新理论框架
+
+https://mp.weixin.qq.com/s/Xnea50Eisq9rzhGFa1iTFA
+
+DRr-Net：基于动态重读机制的句子语义匹配方法

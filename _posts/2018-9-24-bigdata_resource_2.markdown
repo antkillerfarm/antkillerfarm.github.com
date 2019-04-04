@@ -230,6 +230,14 @@ https://mp.weixin.qq.com/s/l5wXZOiRj53ufckiRx0hIw
 
 从图像中检测和识别表格，北航&微软提出新型数据集TableBank
 
+https://mp.weixin.qq.com/s/ze8SWIrUAPnOUsslxpv2Rg
+
+如何从900万张图片中对600类照片进行分类，附代码
+
+https://zhuanlan.zhihu.com/p/53151892
+
+航拍/无人机视频图像数据集
+
 ## 人脸/行为
 
 http://blog.csdn.net/wangkr111/article/details/44514097

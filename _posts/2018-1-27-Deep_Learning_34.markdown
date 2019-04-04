@@ -194,6 +194,10 @@ https://mp.weixin.qq.com/s/caG7kwZfo2qpvLDbrvfpng
 
 AAAI 2019教程—361页PPT带你回顾最新词句Embedding技术和应用
 
+https://mp.weixin.qq.com/s/B0HAl9T8yKGpH_PZbbw0Yg
+
+用于知识图中链接预测的嵌入方法SimplE
+
 # 深度时间序列
 
 https://mp.weixin.qq.com/s/cChJO6YrE_XAgeInS7J1Vw
@@ -365,3 +369,7 @@ https://mp.weixin.qq.com/s/-6rKyPIFR7dq7eVQw5PzmA
 https://mp.weixin.qq.com/s/PbUp3hi_9d6e3gHF05EP0A
 
 Decoupled Networks
+
+https://mp.weixin.qq.com/s/Z_nOIKpL3osfX3ylIsJ4rA
+
+最新高效卷积方式HetConv

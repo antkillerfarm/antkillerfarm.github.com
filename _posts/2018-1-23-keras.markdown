@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Keras, 推荐系统的工程细节
+title:  Keras
 category: AI 
 ---
 
@@ -22,7 +22,11 @@ https://keras.io/zh/
 
 代码：
 
-https://github.com/fchollet/keras/
+https://github.com/keras-team/keras
+
+示例：
+
+https://github.com/keras-team/keras/blob/master/examples/
 
 安装：
 
@@ -45,6 +49,8 @@ https://github.com/Ahmkel/Keras-Project-Template
 Keras的模型文件以HDF5的格式保存：
 
 `model.save('my_model.h5')`
+
+>这里的model可以是未训练，甚至是未初始化weight的。
 
 参考：
 
@@ -318,113 +324,66 @@ https://mp.weixin.qq.com/s/iDYhXUDlxeG_vOpxO5eIyQ
 
 用Keras实现图书推荐系统
 
-# 推荐系统的工程细节
+# AI工具
 
-推荐系统不仅是算法，还包括若干工程细节。这些细节虽然不算复杂，够不上算法的层面，然而对产品的成败，却有举足轻重的作用。
+https://mp.weixin.qq.com/s/wZQ57V0d0O_JylOcqAvfzQ
 
-## 一般架构
+Deepy———基于Numpy深度学习库，小巧优雅简单
 
-![](/images/article/suggest.png)
+https://mp.weixin.qq.com/s/HMLwjLlFXR4WM92_OnKHbA
 
-## 用户数据
+基于Apache MXNet，亚马逊NMT开源框架Sockeye论文介绍
 
-用户自然特征：性别，年龄，地域，教育水平，出生日期，职业，星座
+https://mp.weixin.qq.com/s/hkcVhyqiDW--F3QxucgEcA
 
-用户兴趣特征：兴趣爱好，使用网站，浏览/收藏内容，互动内容，品牌偏好，产品偏好
+亚马逊开源神经机器翻译框架Sockeye：基于Apache MXNet的NMT平台
 
-用户社会特征：婚姻状况，家庭情况，社交/信息渠道偏好
+http://www.sohu.com/a/163063280_633698
 
-用户消费特征：收入状况，购买力水平，已购商品，购买渠道偏好，最后购买时间，购买频次
+无监督对话数据清洗利器：Data Purification Framework
 
-## 评价推荐质量
+# DL参考资源+
 
-以今日头条类的新闻推荐为例，评估指标一般为：
+https://mp.weixin.qq.com/s/fhpYkWiLGwSbpRsrwBcV9g
 
-1.平均转化率（点击量/曝光量）
+多轴3D打印中的几何计算
 
-2.人均阅读篇数（点击PV/点击UV）
+https://mp.weixin.qq.com/s/yXGuoBPmIeA3SteD_TliXg
 
-3.平均阅读完成率
+F-Principle：初探深度学习在计算数学的应用
 
-4.人均阅读时长（这个会受文章长度影响）
+https://mp.weixin.qq.com/s/tduZoZecbOM0gC9Ugerbwg
 
-5.用户互动数据（评论、分享）
+用AI设计微波集成电路，清华大学等提出深度强化学习方法RINN
 
-对评估指标的选取一般遵循以下原则：
+https://mp.weixin.qq.com/s/zcuTY9oWKhAQ8z0rx4nY4A
 
-1.用户满意度。
+让TA说你想听的—基于音/视频特征解离的讲述者人脸生成
 
-2.预测准确度。
+https://mp.weixin.qq.com/s/gjVLbH_S0t7jcjCYhpsTgw
 
-3.覆盖率。
+基于深度学习的人脑视觉神经信息编解码研究进展及挑战
 
-4.多样性。
+https://mp.weixin.qq.com/s/XNKEOlJrTVH2zsu8pdY4gA
 
-5.新颖性。
+从三大案例，看如何用CV模型解决非视觉问题
 
-6.惊喜度。
+https://mp.weixin.qq.com/s/lcgnnXMUO8C3oLUPmxthjQ
 
-7.信任度。
+深度学习不再是炼丹术！谷歌给出首个神经网络训练理论证明
 
-8.实时性
+https://mp.weixin.qq.com/s/qos7VRFP7uYZ6Qt83KiPhw
 
-9.鲁棒性
+用机器学习构建O(N)复杂度的排序算法，可在GPU和TPU上加速计算
 
-测试方法一般包括：
+https://mp.weixin.qq.com/s/_w4IIRY6LwqehpDlEXt90A
 
-A/B测试、双盲交叉验证
+牛津大学提出神经网络新训练法：用低秩结构增强网络压缩和对抗稳健性
 
-需要思考的问题
+https://mp.weixin.qq.com/s/ysRppHSD0zX1tv197ubzWg
 
-1.新用户/新商品的冷启动问题。
+深度学习在计算机视觉领域的应用一览
 
-2.马太效应问题。这在推荐算法中也叫做banana problem。原因是在美国这边的超市，几乎所有人都爱买banana，因为最便宜，也好吃也健康。所以过多的数据量可能会导致一个超市推荐算法疯狂推荐Banana给所有人。
+https://mp.weixin.qq.com/s/rK_RcVY9_3kA5MWD3jAyGg
 
-PS：NLP领域的TF-IDF算法可有效防止马太效应问题。
-
-参考：
-
-https://www.zhihu.com/question/26990692
-
-类似今日头条这样的个性化推荐网站怎么评价推荐质量的优劣？
-
-https://www.zhihu.com/question/19660417
-
-为什么那么多牛人成天在研究讨论算法，系统自动推荐的东西还是不能令人满意呢？
-
-https://mp.weixin.qq.com/s/fB3AFUiS4nFmqXpSnOpf4w
-
-如何选择上班路线最省时间？从A/B测试数学原理说起
-
-https://mp.weixin.qq.com/s/EGorUTYz09PYU3CdU_qwDA
-
-如何省时省力验证模型效果？达观数据在线分层实验平台给你支招
-
-https://mp.weixin.qq.com/s/S9AjPkYLzRQpg5evyaoleQ
-
-推荐系统的工程实现
-
-https://mp.weixin.qq.com/s/cjo5MYa-t9tWDCjwDpkOeg
-
-推荐系统评估
-
-## 术语
-
-GMV(Gross Merchandise Volume)成交额
-
-![](/images/article/pv.jpg)
-
-CTR（Click-Through-Rate）即点击通过率，是互联网广告常用的术语，指网络广告（图片广告/文字广告/关键词广告/排名广告/视频广告等）的点击到达率，即该广告的实际点击次数除以广告的展现量。
-
-RTB（Real Time Bidding，实时竞价）
-
-eCPM（千次展示期望收入）
-
-CPM（Cost per mille）
-
-CPC（Cost per click）
-
-CPA（Cost per action）
-
-CPT（按展现时间收费）、CPL（按潜在线索收费）、CPS（按成功销售收费）
-
+腾讯优图25篇CVPR 2019论文详解！涵盖视觉对抗学习、人脸检测等

@@ -238,14 +238,6 @@ https://mp.weixin.qq.com/s/PLFxehTAXcehzIrIMRfVpA
 
 强化学习的基石：DeepMind开源框架TRFL
 
-https://mp.weixin.qq.com/s/mmvfSxjtJgx5q6Gm_3xQQw
-
-英特尔重磅开源OpenVINO
-
-https://mp.weixin.qq.com/s/c5rvWfIjujw6TNszDzPMdw
-
-DeepMind开源图深度学习(GraphDL)工具包，基于Tensorflow和Sonnet
-
 https://mp.weixin.qq.com/s/jKIo1SnrbLyPpFhgX--7mg
 
 谷歌推出“流体标注”AI辅助工具，图像标注速度提升3倍！

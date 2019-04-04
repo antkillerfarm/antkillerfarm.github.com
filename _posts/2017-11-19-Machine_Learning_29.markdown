@@ -200,15 +200,25 @@ tensorflow对象检测框架训练VOC数据集常见的两个问题
 
 ## 2019.3（续）
 
-主流发达国家教职体系，PI（Principal Investigator）制：助理教授（Assistant Professor，AP）->副教授（Associate Professor）->教授（Full Professor->讲席教授（Chair Professor）
+2019.3.10 埃塞俄比亚航空空难。
 
-----
+https://mp.weixin.qq.com/s/80-AxQLDLYnI_H3BjQ7FUg
 
-载旗航空公司指被政府指定独占国际航线的权利、在机身涂有国旗标志的航空公司。
+737Max空难频发，问题出在传感器及印度人编写的软件上?
 
-----
+https://mp.weixin.qq.com/s/NS4mh9UnYIt7d8Bv-W3kbg
 
-黄志千，1914～1965，飞机设计师。上海交通大学机械系航空专业（1937），沈阳飞机设计研究所总设计师。1965年5月20日，黄志千赴西欧考察，途经开罗上空因飞机失事不幸罹难。
+坠毁的波音737 Max：一部人类无法控制的机器
+
+https://mp.weixin.qq.com/s/MqWP4kVZsNd--ayqYtkEqg
+
+血淋淋的BUG：波音在软件开发上错在哪里？
+
+Ada语言最早是针对嵌入式和实时系统设计的，属于80年代的编程语言，也是美国军方的专用计算机语言。但之后并没有被普及，甚至可以说Ada在“平民层”的推广很糟糕。那么我们就产生了一个疑问，外包企业中，如何搜集到合适数量的精通 Ada 的程序员呢？
+
+https://mp.weixin.qq.com/s/BF-S6XhBLEVFnM0tTglupQ
+
+波音737max客机坠毁给现代自动驾驶带来哪些启示？
 
 ----
 
@@ -284,3 +294,6 @@ https://996.icu/
 
 ## 2019.4
 
+https://mp.weixin.qq.com/s/XAUGateD00MJvxTjwBI_3w
+
+颠覆认知！看完这些图，你的世界观还好吗？

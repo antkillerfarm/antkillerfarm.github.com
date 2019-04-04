@@ -56,6 +56,8 @@ class A
 
 http://www.cnblogs.com/icejoywoo/archive/2011/05/09/2041449.html
 
+从Java的Hello,World!说到Static Block
+
 ## POJO
 
 POJO（Plain Ordinary Java Object）：简单的Java对象。
