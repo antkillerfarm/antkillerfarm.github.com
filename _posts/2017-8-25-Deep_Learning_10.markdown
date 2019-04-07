@@ -204,6 +204,10 @@ https://zhuanlan.zhihu.com/p/28822428
 
 Paper笔记：Dilated Residual Networks
 
+https://mp.weixin.qq.com/s/1lMlSMS5xKc8k0QMAou45g
+
+重新思考扩张卷积！中科院&深睿提出新型上采样模块JPU
+
 ## 分组卷积
 
 ![](/images/article/AlexNet.png)

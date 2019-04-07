@@ -315,3 +315,7 @@ https://mp.weixin.qq.com/s/OyEIcS5o6kWUu2UzuWZi3g
 https://mp.weixin.qq.com/s/mWfZ4jfuby4myGfi6TW3wQ
 
 从超参数到架构，一文简述模型优化策略
+
+https://mp.weixin.qq.com/s/8NDOf_8qxMMpcuXIZGJCGg
+
+Google又发大招：高效实时实现视频目标检测

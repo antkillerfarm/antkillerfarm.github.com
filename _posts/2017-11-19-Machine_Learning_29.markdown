@@ -297,3 +297,14 @@ https://996.icu/
 https://mp.weixin.qq.com/s/XAUGateD00MJvxTjwBI_3w
 
 颠覆认知！看完这些图，你的世界观还好吗？
+
+----
+
+中国有一座无人敢提及的城市，没有名称，只有一个代号叫404（中国核城）
+
+----
+
+https://zhuanlan.zhihu.com/p/60677789
+
+全市皆坟土，西安文物局也很绝望啊（西安地铁）
+

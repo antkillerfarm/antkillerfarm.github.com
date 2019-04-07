@@ -38,6 +38,14 @@ https://mp.weixin.qq.com/s/FnLm2bF-1uipBTsPS-q7zA
 
 Deep Image Prior——图像恢复入门
 
+https://mp.weixin.qq.com/s/mtocyqpybSEpwekS20xgmQ
+
+使用CNN生成图像先验，实现更广泛场景的盲图像去模糊
+
+https://mp.weixin.qq.com/s/qD6_ygJjnV5rbppzy0WEmg
+
+比无所不能的DIP更强大的图像恢复方法：DeepRED
+
 ## 参考
 
 https://mp.weixin.qq.com/s/YbRo7TJ3j4dloSmKX40uAA

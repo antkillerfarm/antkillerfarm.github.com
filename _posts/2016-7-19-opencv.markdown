@@ -172,6 +172,10 @@ https://mp.weixin.qq.com/s/nfi-E4IY61ivWL6jiATDHg
 
 OpenVINO视觉加速库使用二
 
+https://mp.weixin.qq.com/s/X0_-NB4iY8KlQQqWhhD6OA
+
+OpenVINO视觉加速库使用三
+
 ## blog
 
 https://github.com/1zlab/opencv-tutorial

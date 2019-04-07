@@ -189,6 +189,28 @@ autoregressive conditional heteroskedasticity, ARCH
 
 generalized autoregressive conditional heteroskedasticity, GARCH
 
+## Prophet
+
+Prophet是FaceBook提出的时间序列算法。同时，也是该算法的工具包的名字。
+
+官网：
+
+https://facebook.github.io/prophet/
+
+参考：
+
+https://mp.weixin.qq.com/s/ven_4JbWYFswIkGyhjTcww
+
+Prophet：教你如何用加法模型探索时间序列数据
+
+https://mp.weixin.qq.com/s/PMsAjk7WbGRu2n3s6Q8prQ
+
+Facebook时间序列预测算法Prophet的研究
+
+https://mp.weixin.qq.com/s/bf_CHcoZMjqP6Is4ebD58g
+
+使用Prophet预测股价并进行多策略交易
+
 ## 参考
 
 https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average
@@ -286,7 +308,3 @@ https://mp.weixin.qq.com/s/FRSe1mJTvk9U66ta-r9iCQ
 https://mp.weixin.qq.com/s/Q82YzANWDMkKWm5k2XmPkA
 
 严谨解决5种机器学习算法在预测股价的应用
-
-https://mp.weixin.qq.com/s/PMsAjk7WbGRu2n3s6Q8prQ
-
-Facebook时间序列预测算法Prophet的研究

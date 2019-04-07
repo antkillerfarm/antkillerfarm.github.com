@@ -287,3 +287,11 @@ MIT本科学神重启基于能量的生成模型，新框架堪比GAN
 https://mp.weixin.qq.com/s/eSvrnUCnz74O3txrPq7RlA
 
 Google用更少标签生成图像，还提出一个用于训练评估GAN的库
+
+https://mp.weixin.qq.com/s/CwB7IDaCZBzcQV8IBsYQDw
+
+最新《生成式对抗网络GAN进展》论文
+
+https://mp.weixin.qq.com/s/-SVtuZGOn6Wk9kwe50JJqw
+
+《GAN实战：生成对抗网络深度学习》牛津大学Jakub著作

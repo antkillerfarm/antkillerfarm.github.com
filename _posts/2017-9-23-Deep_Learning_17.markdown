@@ -378,6 +378,10 @@ https://mp.weixin.qq.com/s/JGQdHS_yqkOMrN_Z3jEb7A
 
 基于深度学习的细粒度图像分类综述
 
+https://mp.weixin.qq.com/s/L-1gkElxsMtT369fgJl86Q
+
+旷视南京研究院魏秀参：细粒度图像分析综述
+
 # Spatial Transformer Networks
 
 论文：

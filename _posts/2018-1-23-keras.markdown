@@ -342,6 +342,10 @@ http://www.sohu.com/a/163063280_633698
 
 无监督对话数据清洗利器：Data Purification Framework
 
+https://mp.weixin.qq.com/s/l0pzq54uDdYctSj7R3QNWw
+
+AmpliGraph：知识图谱表示学习工具包
+
 # DL参考资源+
 
 https://mp.weixin.qq.com/s/fhpYkWiLGwSbpRsrwBcV9g

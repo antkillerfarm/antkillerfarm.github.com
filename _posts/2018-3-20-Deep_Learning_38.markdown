@@ -411,3 +411,7 @@ https://mp.weixin.qq.com/s/xxB1lsiQxSfaHPKwZUI9bw
 https://mp.weixin.qq.com/s/e4hriDvTRLkg-mIifVWayw
 
 如何解决深度学习中的多体问题
+
+https://zhuanlan.zhihu.com/p/61060358
+
+Paper survey: Multi-Agent Reinforcement Learning

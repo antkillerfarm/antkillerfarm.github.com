@@ -322,10 +322,6 @@ https://zhuanlan.zhihu.com/p/33445638
 
 传统不死：在CNN中学习和构建空间传播模块
 
-https://mp.weixin.qq.com/s/mtocyqpybSEpwekS20xgmQ
-
-使用CNN生成图像先验，实现更广泛场景的盲图像去模糊
-
 https://mp.weixin.qq.com/s/Uc0VFMmYoOFvH0c7IExKIg
 
 何恺明团队计算机视觉最新进展：从特征金字塔网络、Mask R-CNN到学习分割一切
@@ -373,3 +369,7 @@ Decoupled Networks
 https://mp.weixin.qq.com/s/Z_nOIKpL3osfX3ylIsJ4rA
 
 最新高效卷积方式HetConv
+
+https://mp.weixin.qq.com/s/Siy096-tkXZuv9Jsi4__ug
+
+超越ResNet：南开提出Res2Net，不增计算负载，性能全面升级！

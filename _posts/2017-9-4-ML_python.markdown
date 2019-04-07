@@ -378,6 +378,10 @@ https://mp.weixin.qq.com/s/Soy02eshzm2_A7-TzwoGIQ
 
 如何使用Pandas处理Large Data
 
+https://mp.weixin.qq.com/s/2-Ayzmzo8tydDLoKpz1Ezw
+
+如何用一行代码在多CPU环境下高效并行Pandas
+
 ## mysql
 
 http://www.runoob.com/python/python-mysql.html

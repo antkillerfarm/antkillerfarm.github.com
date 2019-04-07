@@ -292,6 +292,10 @@ https://mp.weixin.qq.com/s/T5ef2rELB3z3vHbVmqgkaw
 
 基于深度学习的生物信息学应用及展望
 
+https://mp.weixin.qq.com/s/kIuUe0Rzcpdm7Sowpe7Tjw
+
+医疗机器学习综述，谷歌Jeff Dean等最新论文
+
 ## 行业
 
 李开复的这篇文章不可不读：

@@ -295,6 +295,10 @@ https://mp.weixin.qq.com/s/Er3Poj8oxV5OKNlAlZwq_A
 
 为什么OpenCV读取的图像格式是BGR？
 
+https://mp.weixin.qq.com/s/gmXgZZdxU2Qqv6X7HFqhdg
+
+为什么CNN中的卷积核半径都是奇数？
+
 # 机器人/无人驾驶参考资源
 
 https://mp.weixin.qq.com/s/uyPnuLFn2g39QomQ_HvtSw

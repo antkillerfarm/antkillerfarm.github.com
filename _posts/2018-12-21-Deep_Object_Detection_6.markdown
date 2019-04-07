@@ -218,6 +218,14 @@ https://mp.weixin.qq.com/s/reNCLvOyJHkJZimnMpbIig
 
 目标检测算法优化技巧：Bag of Freebies for Training Object Detection
 
+https://mp.weixin.qq.com/s/psXJNlEawZlQ-ZdktDpjOw
+
+目标检测小tricks之样本不均衡处理
+
+https://mp.weixin.qq.com/s/Pl8HABuVN27CZv-lvGROTw
+
+基于深度学习的目标检测算法近5年发展历史
+
 # Flink
 
 Flink是一个流计算引擎。

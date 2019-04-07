@@ -205,6 +205,10 @@ https://mp.weixin.qq.com/s/9VvEJu2XAS1joVGF-EUY2w
 
 5篇顶会论文带你了解知识图谱最新研究进展
 
+https://mp.weixin.qq.com/s/i3zIj0H_xs2f9xYmSdZ0NA
+
+面向知识图谱补全的共享嵌入神经网络模型
+
 # t-SNE
 
 ## 概述

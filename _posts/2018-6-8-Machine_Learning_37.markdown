@@ -340,6 +340,10 @@ https://mp.weixin.qq.com/s/R6-y-W0CGhlEUPXDkYdtJw
 
 Item-Based协同过滤算法
 
+https://mp.weixin.qq.com/s/ll2Nx7_1Sg7XfuiH-OQnWA
+
+推荐系统如何冷启动？
+
 # 强连通分量算法
 
 http://ishare.iask.sina.com.cn/f/34626295.html

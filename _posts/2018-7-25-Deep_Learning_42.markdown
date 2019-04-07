@@ -367,3 +367,7 @@ https://mp.weixin.qq.com/s/bAlaCWg4OEprpoZqQFQg1w
 https://mp.weixin.qq.com/s/CYZvFb7kryE-8HV3teGRzA
 
 有效遮挡检测的鲁棒人脸识别
+
+https://mp.weixin.qq.com/s/XTIl505glmfCItuiwuPLwg
+
+人脸聚类——Linkage Based Face Clustering via GCN

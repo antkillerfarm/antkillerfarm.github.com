@@ -140,6 +140,10 @@ http://blog.csdn.net/fate_fjh/article/details/53467948
 
 SegNet
 
+https://mp.weixin.qq.com/s/YwmHiQ0vyFAx_dhjsmOlAQ
+
+编解码结构SegNet
+
 # DeconvNet
 
 DeconvNet是韩国的Hyeonwoo Noh于2015年提出的。

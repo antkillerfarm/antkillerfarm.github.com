@@ -166,6 +166,12 @@ https://mp.weixin.qq.com/s/c5rvWfIjujw6TNszDzPMdw
 
 DeepMind开源图深度学习(GraphDL)工具包，基于Tensorflow和Sonnet
 
+## Other Framework
+
+https://mp.weixin.qq.com/s/POMluy69sphGZ_AlDnJ0og
+
+阿里重磅发布大规模图神经网络平台AliGraph，技术架构和算法独家解读
+
 ## 参考
 
 https://github.com/thunlp/GNNPapers
@@ -387,15 +393,3 @@ https://mp.weixin.qq.com/s/2SaBiMJzhSRw1G0giL9TAw
 https://mp.weixin.qq.com/s/sg9O761F0KHAmCPOfMW_kQ
 
 图卷积网络到底怎么做，这是一份极简的Numpy实现
-
-https://mp.weixin.qq.com/s/s6E2vV1KrQDI4SeAnkYTKw
-
-图神经网络将成AI下一拐点！MIT斯坦福一文综述GNN到底有多强
-
-https://mp.weixin.qq.com/s/6vhFfSh2mveBiZXB1oZb1Q
-
-图分类：结合胶囊网络Capsule和图卷积GCN
-
-https://mp.weixin.qq.com/s/aGP8pcsCmEdjdCWVjA82Jg
-
-近期必读的5篇CVPR 2019图卷积网络相关论文和代码

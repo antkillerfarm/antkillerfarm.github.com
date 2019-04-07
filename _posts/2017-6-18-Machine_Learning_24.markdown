@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十四）——单分类SVM&多分类SVM, 贝叶斯学习, Stacking, 三门问题, 用户画像
+title:  机器学习（二十四）——单分类SVM&多分类SVM, Stacking, 三门问题, 用户画像
 category: ML 
 ---
 
@@ -248,36 +248,6 @@ $$C_k=C*W_k$$
 https://blog.csdn.net/giskun/article/details/49329095
 
 SVM的概率输出（Platt scaling）
-
-# 贝叶斯学习
-
-https://mp.weixin.qq.com/s/szTmHY-Yvn7N3s_GzTDiEA
-
-解开贝叶斯黑暗魔法：通俗理解贝叶斯线性回归
-
-https://mp.weixin.qq.com/s/1JSxjkKEUlWOzXCQPTve3A
-
-贝叶斯线性回归简介
-
-https://mp.weixin.qq.com/s/NTK-u4aVrTTmvi-4ZBa8RQ
-
-数十亿用户的Facebook如何进行贝叶斯系统调优？
-
-https://mp.weixin.qq.com/s/g24mcZjQ25sQJx9mqE_XSA
-
-怎样判断漂亮女孩是不是单身的？美国海军在汪洋大海里搜索丢失的氢弹、失踪的核潜艇都用过这种方法。
-
-https://mp.weixin.qq.com/s/bjyO4AS1Sjo09qNMpqf6JA
-
-最新36页《贝叶斯非参学习综述》，机器学习内功修炼手册
-
-https://mp.weixin.qq.com/s/x3AREJcDKvjo7vl6TS79OA
-
-贝叶斯推理实用入门
-
-https://mp.weixin.qq.com/s/Tk2t3R_SUU6S9yvdjnwzDQ
-
-量化交易中的贝叶斯优化问题
 
 # Stacking
 

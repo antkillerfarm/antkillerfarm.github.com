@@ -140,6 +140,10 @@ http://www.cnblogs.com/iloveai/p/word2vec.html
 
 word2vec前世今生
 
+https://mp.weixin.qq.com/s/NMngfR7EWk-pa6c4_FY9Yw
+
+图解Word2vec，读这一篇就够了
+
 http://www.cnblogs.com/maybe2030/p/5427148.html
 
 文本深度表示模型——word2vec&doc2vec词向量模型

@@ -166,6 +166,10 @@ https://mp.weixin.qq.com/s/tITsD0XAZq25PSPX2G5k0Q
 
 OpenCV 4.0实现人脸识别
 
+https://mp.weixin.qq.com/s/jNa4JTefasFDWoGJDBL6-Q
+
+PyQt编写GUI界面
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。

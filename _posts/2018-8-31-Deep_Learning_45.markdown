@@ -365,3 +365,7 @@ https://mp.weixin.qq.com/s/IHYuRjSZTE0wqJJwf3wGmw
 https://mp.weixin.qq.com/s/4hHoRDKqPT25ltU7nyaRAQ
 
 旷视提出One-Shot模型搜索框架的新变体
+
+https://mp.weixin.qq.com/s/5kynyTPod0AUIYhL5kIDbA
+
+何恺明等人新作：效果超ResNet，利用NAS方法设计随机连接网络

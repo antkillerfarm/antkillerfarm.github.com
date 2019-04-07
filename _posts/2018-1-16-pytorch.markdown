@@ -66,6 +66,16 @@ https://github.com/PetrochukM/PyTorch-NLP
 
 支持快速成型的深度学习NLP工具包
 
+## fastai
+
+fastai和Pytorch的关系，类似于Keras和Tensorflow。
+
+参考：
+
+https://mp.weixin.qq.com/s/kEC-5huq6cFjd1iPjSuK-g
+
+5行代码秀碾压，比Keras还好用的fastai来了，尝鲜PyTorch 1.0必备伴侣
+
 ## 细节
 
 ### op的C++实现
@@ -275,10 +285,6 @@ https://mp.weixin.qq.com/s/RBclQdtaA8prvSoUUdhrEQ
 https://mp.weixin.qq.com/s/zPv-3fMy1rZwAwPqjs7oAA
 
 Pytorch图像分类从模型自定义到测试
-
-https://mp.weixin.qq.com/s/kEC-5huq6cFjd1iPjSuK-g
-
-5行代码秀碾压，比Keras还好用的fastai来了，尝鲜PyTorch 1.0必备伴侣
 
 https://zhuanlan.zhihu.com/p/46636027
 

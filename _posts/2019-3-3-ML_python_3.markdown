@@ -341,3 +341,7 @@ https://mp.weixin.qq.com/s/r1uXn2jGsHZcZ8Nk7GnGFA
 https://mp.weixin.qq.com/s/Xnea50Eisq9rzhGFa1iTFA
 
 DRr-Net：基于动态重读机制的句子语义匹配方法
+
+https://mp.weixin.qq.com/s/M_UE4yI-ZDXhGtWXprGYjA
+
+自然语言处理常识推理综述论文

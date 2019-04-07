@@ -254,6 +254,10 @@ https://mp.weixin.qq.com/s/m_EKOLjWjTyx4RBxsAAAGg
 
 4x4阵列摄/“深感”摄
 
+https://mp.weixin.qq.com/s/dX_thGA2V_-AMjDGTUgWrg
+
+计算摄影技术：身怀绝技的扫地僧
+
 # Eigenface
 
 Eigenface是M. Turk和A. Pentland于1991年提出的人脸识别算法。
