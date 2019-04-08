@@ -308,6 +308,10 @@ https://mp.weixin.qq.com/s/D68YzjYvpc2epGWFBP6rIQ
 
 谷歌实习生新算法提速惊人！BERT训练从三天三夜，缩短到一个小时
 
+https://mp.weixin.qq.com/s/iDGofh_ycWJzfqQriPEXGQ
+
+如何用Python和BERT做中文文本二元分类？
+
 # 深度ISP
 
 ## 数据集

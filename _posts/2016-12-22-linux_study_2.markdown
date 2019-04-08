@@ -448,11 +448,3 @@ https://mp.weixin.qq.com/s/T_XwLS6CIrkXbgXJVIo2Jw
 https://mp.weixin.qq.com/s/euTQJy0HFVQotAY-KI2OzA
 
 10个实战及面试常用Shell脚本编写
-
-# SWIG
-
-Simplified Wrapper and Interface Generator可以为C/C++的库生成其他高级脚本语言的Wrapper。
-
-官网：
-
-http://swig.org/

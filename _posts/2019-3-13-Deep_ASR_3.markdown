@@ -142,6 +142,10 @@ https://mp.weixin.qq.com/s/BDPYtq_6i54Itvz3MnnDSw
 
 谷歌手机输入法可以离线语音识别了！模型精度远超经典CTC
 
+https://zhuanlan.zhihu.com/p/61600497
+
+GE2E Speaker Verification论文复现
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw

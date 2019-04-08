@@ -334,3 +334,26 @@ https://mp.weixin.qq.com/s/qnZhKhpCw2RjLMjcZBRx3Q
 
 密集对象网络：通过机器人操作学习密集的视觉对象描述符
 
+https://mp.weixin.qq.com/s/XNKEOlJrTVH2zsu8pdY4gA
+
+从三大案例，看如何用CV模型解决非视觉问题
+
+https://mp.weixin.qq.com/s/lcgnnXMUO8C3oLUPmxthjQ
+
+深度学习不再是炼丹术！谷歌给出首个神经网络训练理论证明
+
+https://mp.weixin.qq.com/s/qos7VRFP7uYZ6Qt83KiPhw
+
+用机器学习构建O(N)复杂度的排序算法，可在GPU和TPU上加速计算
+
+https://mp.weixin.qq.com/s/_w4IIRY6LwqehpDlEXt90A
+
+牛津大学提出神经网络新训练法：用低秩结构增强网络压缩和对抗稳健性
+
+https://mp.weixin.qq.com/s/ysRppHSD0zX1tv197ubzWg
+
+深度学习在计算机视觉领域的应用一览
+
+https://mp.weixin.qq.com/s/rK_RcVY9_3kA5MWD3jAyGg
+
+腾讯优图25篇CVPR 2019论文详解！涵盖视觉对抗学习、人脸检测等

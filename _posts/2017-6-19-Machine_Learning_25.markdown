@@ -166,6 +166,10 @@ https://mp.weixin.qq.com/s/P9bxQobyEvMHY8umGkAz8Q
 
 # 压缩感知
 
+https://blog.csdn.net/jbb0523
+
+一个压缩感知+贝叶斯网络方面的blog
+
 http://blog.csdn.net/abcjennifer/article/details/7721834
 
 初识压缩感知Compressive Sensing

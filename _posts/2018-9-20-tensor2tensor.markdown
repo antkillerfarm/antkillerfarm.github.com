@@ -234,6 +234,14 @@ MLPerf是谷歌、百度、斯坦福等联手打造的基准测量工具，用�
 
 https://mlperf.org/
 
+# SNPE
+
+Snapdragon Neural Processing Engine SDK是Qualcomm推出的NN加速包。
+
+官网：
+
+https://developer.qualcomm.com/software/qualcomm-neural-processing-sdk
+
 # MXNet
 
 https://mp.weixin.qq.com/s/50uGupiwU2UVuVeMm_bTag

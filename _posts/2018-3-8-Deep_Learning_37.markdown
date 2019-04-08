@@ -206,7 +206,11 @@ https://mp.weixin.qq.com/s/ZrnAqDJCLtMy_qTQ2RZT0A
 
 https://mp.weixin.qq.com/s/ymeJPUPRAGb1FltskqBs-A
 
-人脸关键点检测汇总
+人脸关键点检测汇总（上）
+
+https://mp.weixin.qq.com/s/N6y-RDx7VszgCVhSiwP8jA
+
+人脸关键点检测汇总（下）
 
 ## 参考
 

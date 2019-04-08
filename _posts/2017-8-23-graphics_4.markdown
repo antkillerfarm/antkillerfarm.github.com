@@ -96,6 +96,10 @@ https://mp.weixin.qq.com/s/UDJAYB79KaPB0pgnnCIPTw
 
 不确定性原理的前世今生
 
+https://blog.csdn.net/jbb0523/article/details/42028587
+
+从傅里叶(Fourier)变换到伽柏(Gabor)变换再到小波(Wavelet)变换
+
 # Schmid滤波
 
 Schmid滤波器是一种类Gabor滤波器。其计算公式为：

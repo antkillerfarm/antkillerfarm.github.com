@@ -209,6 +209,10 @@ https://mp.weixin.qq.com/s/i3zIj0H_xs2f9xYmSdZ0NA
 
 面向知识图谱补全的共享嵌入神经网络模型
 
+https://mp.weixin.qq.com/s/_OQnwh2iSr5rQWAvoNgOmg
+
+迈向电商认知智能时代的基石：阿里电商认知图谱揭秘
+
 # t-SNE
 
 ## 概述
