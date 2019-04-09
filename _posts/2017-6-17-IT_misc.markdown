@@ -137,3 +137,53 @@ https://mp.weixin.qq.com/s/MYA6l9V4BYIZO8Jgtds6GA
 http://www.cnblogs.com/fnng/archive/2012/12/15/2819367.html
 
 图形脚本语言sikuli
+
+# TensorFlow
+
+https://mp.weixin.qq.com/s/aWez5FYXXnRnDbb0zcXFXQ
+
+如何在TensorFlow中训练提升树模型
+
+https://mp.weixin.qq.com/s/kEowgNPVS1nAGBPbzkatlQ
+
+如何构建高可读性和高可重用的TensorFlow模型
+
+https://mp.weixin.qq.com/s/O_IN39FBVPeD5fRYBsPuZQ
+
+用TensorFlow开发问答系统
+
+https://mp.weixin.qq.com/s/8Hrq_z8s_5ms6Q_6OOaU-g
+
+如何使用TensorFlow和自编码器模型生成手写数字
+
+https://mp.weixin.qq.com/s/rQ9eZosHOoDOXg9tAg4t6A
+
+tensorflow Object Detection API使用预训练模型mask r-cnn实现对象检测
+
+http://mp.weixin.qq.com/s/hpv6bzr-5VZet-UCHOCQLQ
+
+谷歌TFX：基于TensorFlow可大规模扩展的机器学习平台
+
+https://mp.weixin.qq.com/s/cPWXAI2TBv3_ssnWDFoQ4w
+
+TensorFlow sucks，有人吐槽TensorFlow晦涩难用
+
+https://mp.weixin.qq.com/s/_kr28kN0_1QFP8BR_wGo5w
+
+TensorFlow RNN入门
+
+https://mp.weixin.qq.com/s/WqE-FRl-Thys7tHUvFNlWQ
+
+盯住梅西：TensorFlow目标检测实战
+
+https://mp.weixin.qq.com/s/WfzlHtz0FFJMsPFwPoMqJg
+
+如何利用VGG-16等模型在CPU上测评各深度学习框架
+
+http://www.jianshu.com/p/4e16ae0aad25
+
+利用TensorFlow入门Word2Vec
+
+https://mp.weixin.qq.com/s/YJmMfBhQ3cLNUp_HHsXhGA
+
+手把手教你使用TensorFlow生成对抗样本

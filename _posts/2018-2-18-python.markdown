@@ -235,7 +235,7 @@ Python主要有三种数据类型：字典（Key/Value对）、列表（变长�
 
 6.`__xxx__`：系统内置变量。
 
-## python中的星号（ * ）
+## python中的星号（*）
 
 ### 运算时
 
@@ -245,7 +245,23 @@ Python主要有三种数据类型：字典（Key/Value对）、列表（变长�
 
 ### 定义方法时
 
-**一个星号**：收集其余位置的参数放到一个元组中。例子：
+python的参数分为两类：**位置参数**和**关键字参数**。
+
+例子：
+
+`def func(x,y,z=10)`
+
+上例中，x和y是位置参数，它们没有默认值，是必选项。
+
+z是关键字参数，它有默认值，可以不传。
+
+传参也有两种方式：
+
+`value`：这种方式下，传参顺序必须要和定义的顺序一致。
+
+`key=value`：这种方式下，传参顺序可以和定义顺序不同。
+
+**一个星号**：收集位置参数放到一个元组中。例子：
 
 {% highlight python %}
 def prints(*arg):
@@ -254,7 +270,7 @@ prints (1,2,3,4,5,6,7)
 #result: (1,2,3,4,5,6,7) 
 {% endhighlight %}
 
-**两个星号**：收集其余带有key的参数，并将其放到一个字典中。例子：
+**两个星号**：收集关键字参数，并将其放到一个字典中。例子：
 
 {% highlight python %}
 def prints(**arg):
@@ -390,20 +406,4 @@ class Query(object):
 
     def query(self):
         print('Query info about %s...' % self.name)
-{% endhighlight %}
-
-编写__enter__和__exit__仍然很繁琐，因此Python的标准库contextlib提供了更简单的写法：
-
-{% highlight python %}
-from contextlib import contextmanager
-
-@contextmanager
-def tag(name):
-    print("<%s>" % name)
-    yield
-    print("</%s>" % name)
-
-with tag("h1"):
-    print("hello")
-    print("world")
 {% endhighlight %}

@@ -220,9 +220,11 @@ https://mp.weixin.qq.com/s/65HiEwCyzeA_d9flPBcpLQ
 
 ## Android NN
 
-TFLite是Google的Tensorflow团队开发的移动DL框架，它可以在任意平台执行。而Android NN则是Google的Android团队针对Android平台开发的DL框架。
+TFLite是Google的Tensorflow团队开发的移动DL框架，它可以在任意系统（非android，甚至非linux）执行。而Android NN则是Google的Android团队针对Android平台开发的DL框架。
 
 团队的不同，决定了这两款产品并非完全兼容。一般来说，TFLite由于紧跟Tensorflow，其对新op的支持要更及时一些。但Android NN由于有Facebook等外部客户的需求推动，在个别情况下，也有相反的情况发生。
+
+![](/images/img2/MLIR.png)
 
 参考：
 
@@ -233,6 +235,10 @@ https://developer.android.google.cn/ndk/reference/group/neural-networks
 https://developer.arm.com/products/software/mali-drivers/android-nnapi
 
 这是ARM对于Android NN的一个实现。
+
+https://mp.weixin.qq.com/s/fal6vz9gaZMbR41QMGE3AQ
+
+MLIR发布：全新的中介码与编译器框架
 
 ## Broadcast
 

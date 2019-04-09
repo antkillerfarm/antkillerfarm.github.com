@@ -345,3 +345,15 @@ DRr-Net：基于动态重读机制的句子语义匹配方法
 https://mp.weixin.qq.com/s/M_UE4yI-ZDXhGtWXprGYjA
 
 自然语言处理常识推理综述论文
+
+https://mp.weixin.qq.com/s/_2P7Ru990cUNzOpfPcDyvg
+
+斯坦福NLP组最新报告：自然语言处理中的学习挑战
+
+https://mp.weixin.qq.com/s/kYCb4Fc4_Gh4eIlJbFDwJA
+
+自然语言处理中的语言模型预训练方法
+
+https://mp.weixin.qq.com/s/r-mndw2BKHdVq-jKLinYZQ
+
+别说还不懂依存句法分析

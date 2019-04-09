@@ -344,6 +344,10 @@ https://mp.weixin.qq.com/s/ll2Nx7_1Sg7XfuiH-OQnWA
 
 推荐系统如何冷启动？
 
+https://mp.weixin.qq.com/s/C5cokipqnSsgg53chbi3oA
+
+我是怎么走上推荐系统这条（不归）路的……
+
 # 强连通分量算法
 
 http://ishare.iask.sina.com.cn/f/34626295.html

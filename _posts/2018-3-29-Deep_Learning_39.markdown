@@ -295,3 +295,7 @@ https://mp.weixin.qq.com/s/CwB7IDaCZBzcQV8IBsYQDw
 https://mp.weixin.qq.com/s/-SVtuZGOn6Wk9kwe50JJqw
 
 《GAN实战：生成对抗网络深度学习》牛津大学Jakub著作
+
+https://mp.weixin.qq.com/s/QqQ0SoF-kFTQRLxo4Tzm2g
+
+反思基于能量的生成式模型：中山大学研究者从粒子演化角度改进经典的FRAME

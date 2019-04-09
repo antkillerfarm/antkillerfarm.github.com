@@ -294,6 +294,10 @@ https://mp.weixin.qq.com/s/N7-8vtVUg3MRY2u_NYpAiA
 
 一份值得收藏的的MySQL规范
 
+https://mp.weixin.qq.com/s/YX1XqKVfPS9DpMi_gTFNiA
+
+1000行MySQL学习笔记
+
 # Android研究
 
 ## Flutter
@@ -345,25 +349,3 @@ Litho的使用及原理剖析
 https://mp.weixin.qq.com/s/twfpUMf9CfXcgwtFFkJ4Ig
 
 Android整体设计及背后意义
-
-# 机器人/无人驾驶参考资源+
-
-https://zhuanlan.zhihu.com/p/35319354
-
-最前沿：视觉导航（Visual Navigation），让人惊讶的进展
-
-https://mp.weixin.qq.com/s/enUyu6nJI5olRUQehmu6UA
-
-谷歌ChauffeurNet:训练能够鲁棒地驾驶实车的网络
-
-https://zhuanlan.zhihu.com/p/61153328
-
-自动驾驶系统中的交通信号检测和识别
-
-https://mp.weixin.qq.com/s/uy16CGG01o3BfYB7Qtvzcg
-
-详细解读斯坦福大学最新成果——自动驾驶的神经网络模型
-
-https://mp.weixin.qq.com/s/NH09Pvh8vKtOGrS6Lwq3Tw
-
-自动驾驶中行为预测的一些根本问题和最新方法

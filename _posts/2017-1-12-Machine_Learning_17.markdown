@@ -172,6 +172,10 @@ https://www.cnblogs.com/lochan/p/6627511.html
 
 数据降维之多维缩放MDS（Multiple Dimensional Scaling）
 
+https://mp.weixin.qq.com/s/cfeILnMsWlMC_T6lcSEW7A
+
+图像降维之MDS特征抽取方法
+
 PCA还可用于升维：
 
 https://www.cnblogs.com/lochan/p/7011831.html

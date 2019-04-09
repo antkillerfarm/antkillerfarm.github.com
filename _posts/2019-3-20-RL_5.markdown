@@ -150,3 +150,11 @@ DeepMind发布新奖励机制：让智能体不再“碰瓷”
 https://mp.weixin.qq.com/s/w0_g5FlC6vx2MRAhADPq2g
 
 深度强化学习在智能对话上的应用
+
+https://mp.weixin.qq.com/s/4SZ1NN5hUUcO_dSe4Bv0NQ
+
+利用鲁棒控制实现深度强化学习驾驶策略的迁移
+
+https://mp.weixin.qq.com/s/rwqtw5b2Nap5UPU9DWBXqg
+
+强化学习与文本生成

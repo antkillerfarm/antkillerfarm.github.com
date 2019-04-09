@@ -298,37 +298,3 @@ https://mp.weixin.qq.com/s/Er3Poj8oxV5OKNlAlZwq_A
 https://mp.weixin.qq.com/s/gmXgZZdxU2Qqv6X7HFqhdg
 
 为什么CNN中的卷积核半径都是奇数？
-
-# 机器人/无人驾驶参考资源
-
-https://mp.weixin.qq.com/s/uyPnuLFn2g39QomQ_HvtSw
-
-自动驾驶新思路：现实域到虚拟域统一的无监督方法
-
-https://mp.weixin.qq.com/s/rWcPIWtqJubI_WUVMpuRdQ
-
-自动驾驶中的激光雷达目标检测
-
-https://mp.weixin.qq.com/s/Rt6Gem1kgWK2ACqiIGiDiw
-
-无人驾驶汽车路径规划概述
-
-https://zhuanlan.zhihu.com/p/59774288
-
-自动驾驶中基于传感器融合的道路分割
-
-https://mp.weixin.qq.com/s/Lj7Rluq_BF53fXr5dMUPNQ
-
-自动驾驶中的激光雷达目标检测
-
-https://mp.weixin.qq.com/s/gT0P5hXry1Yfs_TbIma18A
-
-基于1R1V的L2级ADAS功能（一）：TJA&ICA系统简介
-
-https://mp.weixin.qq.com/s/BFNaEBa8KwvRBK_mSunXjw
-
-MPC与LQR比较
-
-https://mp.weixin.qq.com/s/8n_o83A-5AjG3YCPG4FOgA
-
-Apollo自动定位技术——三维几何变换和坐标系介绍

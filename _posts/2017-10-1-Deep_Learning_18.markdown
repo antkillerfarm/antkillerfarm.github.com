@@ -58,6 +58,10 @@ https://mp.weixin.qq.com/s/ws1R-VPyJY6J18OttBDYog
 
 超少量数据训练神经网络：IEEE论文提出径向变换实现图像增强
 
+https://mp.weixin.qq.com/s/g4022Rc1RNvr3IOC_bWuaQ
+
+深度学习中的数据增强方法都有哪些？
+
 # 深度信息检索
 
 Information Retrieval是用户进行信息查询和获取的主要方式，是查找信息的方法和手段。狭义的信息检索仅指信息查询（Information Search）。即用户根据需要，采用一定的方法，借助检索工具，从信息集合中找出所需要信息的查找过程。广义的信息检索是信息按一定的方式进行加工、整理、组织并存储起来，再根据信息用户特定的需要将相关信息准确的查找出来的过程。

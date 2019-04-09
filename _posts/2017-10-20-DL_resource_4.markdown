@@ -318,6 +318,10 @@ https://mp.weixin.qq.com/s/5VHPc99NsFkz1Vl5iU8qkg
 
 详解如何用深度学习消除背景，实现抠图
 
+https://mp.weixin.qq.com/s/SN1Fc48sa4NZzm_K16kUnw
+
+通过空间上下文特征进行阴影检测
+
 ## 参考
 
 https://mp.weixin.qq.com/s/MoKzux6Z69dlpqcVTvQ9oQ

@@ -102,6 +102,16 @@ https://mp.weixin.qq.com/s/cw_Bww22sgPtOeNLKQ7HHA
 
 # Python
 
+## eval
+
+eval函数用来执行一个字符串表达式，并返回表达式的值。
+
+示例：
+
+`eval('pow(2,2)')`
+
+粗看起来，eval函数在上面的例子中有些多此一举。然而如果字符串来自外部的话，就完全不同了。我们完全可以在任何地方嵌入python脚本。然后，只需要在用到的时候，找到并加载该字符串即可。
+
 ## Sqlite
 
 Ubuntu下的安装方法是：
@@ -300,28 +310,6 @@ https://mp.weixin.qq.com/s/NsaMcgufLYO3i6eG1WO_VA
 | Java | SkewPassImage | http://skewpassim.sourceforge.net/ |
 | Java | Internet Captcha | http://www.icaptcha.com/ |
 | Java | Cage | http://akiraly.github.io/cage/ |
-
-## 如何通过需认证的代理获取HTTP网页
-
-Python内置的urllib和urllib2模块都可用于获取HTTP网页，但使用范围是不同的。urllib只支持HTTP 0.9和HTTP 1.0，所以如果只是使用代理可以使用urllib.FancyURLopener类，如果该代理还需要认证的话urllib就不行了。因为代理认证是HTTP 1.1中引入的。
-
-这时可以考虑使用urllib2模块。代码如下：
-
-{% highlight python %}
-import urllib2
-l_proxy_info = {
-'user' : 'user',
-'pass' : 'pass',
-'host' : 'host',
-'port' : 3128
-}
-
-l_proxy_support = urllib2.ProxyHandler({"http" : "http://%(user)s:%(pass)s@%(host)s:%(port)d" % l_proxy_info})
-l_opener = urllib2.build_opener(l_proxy_support, urllib2.HTTPHandler)
-
-urllib2.install_opener(l_opener)
-usock = urllib2.urlopen('http://www.sohu.com')
-{% endhighlight %}
 
 ## tqdm
 

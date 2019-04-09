@@ -205,7 +205,17 @@ $$\|x\|_2=\sqrt{x_1^2+\dots+x_n^2}$$
 
 $$\|x\|_\infty=max(\mid x_1\mid ,\dots,\mid x_n\mid )$$
 
-显然，当$$\lambda=2$$时，该距离为欧氏距离。当$$\lambda=1$$时，也被称为CityBlock Distance或Manhattan Distance（曼哈顿距离，以纽约曼哈顿地区的街道形状得名）。当$$\lambda=\infty$$时，叫做Chebyshev distance。
+显然，当$$\lambda=2$$时，该距离为Euclid Distance。
+
+![](/images/img2/Euclid.png)
+
+当$$\lambda=1$$时，也被称为CityBlock Distance或Manhattan Distance（曼哈顿距离，以纽约曼哈顿地区的街道形状得名）。
+
+![](/images/img2/Manhattan.png)
+
+当$$\lambda=\infty$$时，叫做Chebyshev distance。
+
+![](/images/img2/Chebyshev.png)
 
 >Pafnuty Lvovich Chebyshev，1821～1894，俄罗斯数学家，莫斯科大学博士，圣彼得堡大学教授。俄罗斯数学的奠基人，他创建的圣彼得堡学派，是20世纪俄罗斯最主要的数学流派。
 

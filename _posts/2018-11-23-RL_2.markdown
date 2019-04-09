@@ -173,6 +173,10 @@ https://mp.weixin.qq.com/s/o-IzYt62qaUhcTY33E0Ylg
 
 基于强化学习Q-Learning模型构建算法交易策略
 
+https://mp.weixin.qq.com/s/ePssT5BDb9KebCTehn0ugw
+
+5分钟读懂强化学习之Q-learning
+
 # Markov Decision Process
 
 上边Q-Learning的例子中，由于action能够唯一确定状态的变换，因此又被称为**Markov Reward Process**：

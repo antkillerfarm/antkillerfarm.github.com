@@ -6,6 +6,26 @@ category: AI
 
 # OpenCV
 
+https://mp.weixin.qq.com/s/2aN9V8VlmugoSRk_AesOzw
+
+图形图像算法中必须要了解的设计模式(3)
+
+https://mp.weixin.qq.com/s/vgOkHsxKaFcgWDCBpY7kng
+
+如何用OpenCV、Python和深度学习实现面部识别？
+
+https://mp.weixin.qq.com/s/Dmk4EWidsWpz31JYAx7mbQ
+
+使用OpenCV与sklearn实现基于词袋模型(Bag of Word)的图像分类预测与搜索
+
+https://mp.weixin.qq.com/s/hClNIg2LZSeeCpLfBS1BoQ
+
+OpenCV Gabor滤波器实现纹理提取与缺陷分析
+
+https://mp.weixin.qq.com/s/DjyydSvYA8JWPqC1AsFuag
+
+OpenCV中如何获得物体的主要方向
+
 https://mp.weixin.qq.com/s/x_rHGOXJOnMnvDxk87gVrA
 
 如何根据一张照片判断出女孩住在几层楼？这是一篇图像测量方面的blog
@@ -437,25 +457,3 @@ https://mp.weixin.qq.com/s/R7wnyHT6M-KF3ZMz0bPrVg
 https://mp.weixin.qq.com/s/j970Qp8Cz2fpbImujkS2Xg
 
 自动驾驶应用中的LED flicker问题
-
-# TensorFlow
-
-https://mp.weixin.qq.com/s/aWez5FYXXnRnDbb0zcXFXQ
-
-如何在TensorFlow中训练提升树模型
-
-https://mp.weixin.qq.com/s/kEowgNPVS1nAGBPbzkatlQ
-
-如何构建高可读性和高可重用的TensorFlow模型
-
-https://mp.weixin.qq.com/s/O_IN39FBVPeD5fRYBsPuZQ
-
-用TensorFlow开发问答系统
-
-https://mp.weixin.qq.com/s/8Hrq_z8s_5ms6Q_6OOaU-g
-
-如何使用TensorFlow和自编码器模型生成手写数字
-
-https://mp.weixin.qq.com/s/rQ9eZosHOoDOXg9tAg4t6A
-
-tensorflow Object Detection API使用预训练模型mask r-cnn实现对象检测

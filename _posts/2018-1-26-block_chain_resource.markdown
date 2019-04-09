@@ -362,6 +362,10 @@ https://mp.weixin.qq.com/s/j0-Lj8lOyDP0RArB7NzUNw
 
 特斯拉的整车传感器配置方案
 
+https://mp.weixin.qq.com/s/hVhutvHeXsZOvJZfG1xaFw
+
+自动驾驶车载激光雷达技术现状分析
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/l4W7qmKJ4Pc-rlF-KvhrPA

@@ -176,6 +176,10 @@ https://mp.weixin.qq.com/s/X0_-NB4iY8KlQQqWhhD6OA
 
 OpenVINO视觉加速库使用三
 
+https://mp.weixin.qq.com/s/BNfmU0sumvK4yoaffejeWQ
+
+OpenVINO视觉加速库使用四
+
 ## blog
 
 https://github.com/1zlab/opencv-tutorial
@@ -455,23 +459,3 @@ https://mp.weixin.qq.com/s/5j-WNi4vafLDeyKqfVER0g
 https://mp.weixin.qq.com/s/909FlTC_ROtlziJekcRJ9Q
 
 图形图像算法中必须要了解的设计模式(2)
-
-https://mp.weixin.qq.com/s/2aN9V8VlmugoSRk_AesOzw
-
-图形图像算法中必须要了解的设计模式(3)
-
-https://mp.weixin.qq.com/s/vgOkHsxKaFcgWDCBpY7kng
-
-如何用OpenCV、Python和深度学习实现面部识别？
-
-https://mp.weixin.qq.com/s/Dmk4EWidsWpz31JYAx7mbQ
-
-使用OpenCV与sklearn实现基于词袋模型(Bag of Word)的图像分类预测与搜索
-
-https://mp.weixin.qq.com/s/hClNIg2LZSeeCpLfBS1BoQ
-
-OpenCV Gabor滤波器实现纹理提取与缺陷分析
-
-https://mp.weixin.qq.com/s/DjyydSvYA8JWPqC1AsFuag
-
-OpenCV中如何获得物体的主要方向

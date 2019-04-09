@@ -225,6 +225,12 @@ $$\sqrt{\frac{2}{n_l}}$$
 
 其中，$$n_l=k_l^2d_{l-1}$$，$$k_l$$表示l层的filter的大小，$$d_{l-1}$$表示l-1层的filter的数量。
 
+参考：
+
+https://pouannes.github.io/blog/initialization/
+
+How to initialize deep neural networks? Xavier and Kaiming initialization
+
 ## BP算法的缺点
 
 虽然传统的BP算法，理论上可以支持任意深度的神经网络。然而实际使用中，却很少能支持3层以上的神经网络。

@@ -150,6 +150,10 @@ https://mp.weixin.qq.com/s/D7GQ8DRzss9ppP6pyAs1qA
 
 从0到1再读注意力机制
 
+https://mp.weixin.qq.com/s/K_VRt0B9-Xw7YJndmb4WZg
+
+Attention！注意力机制模型最新综述
+
 # AutoDL
 
 DL领域目前存在的主要问题之一是：如何设计网络结构和调整超参数。目前的做法，通常依赖于作者的直觉，属于典型的拍脑袋想点子。

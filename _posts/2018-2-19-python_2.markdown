@@ -8,6 +8,22 @@ category: language
 
 ## with（续）
 
+编写__enter__和__exit__仍然很繁琐，因此Python的标准库contextlib提供了更简单的写法：
+
+{% highlight python %}
+from contextlib import contextmanager
+
+@contextmanager
+def tag(name):
+    print("<%s>" % name)
+    yield
+    print("</%s>" % name)
+
+with tag("h1"):
+    print("hello")
+    print("world")
+{% endhighlight %}
+
 上述代码执行结果为：
 
 {% highlight text %}
@@ -204,6 +220,10 @@ https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c
 
 使用@property
 
+https://mp.weixin.qq.com/s/qMT46hjOQeXsjVpZPqLRVA
+
+一文读懂Python装饰器
+
 ## @classmethod和@staticmethod
 
 {% highlight python %}
@@ -393,13 +413,3 @@ dill是pickle的威力加强版。
 示例：
 
 `dill.source.getsource(func)`
-
-## eval
-
-eval函数用来执行一个字符串表达式，并返回表达式的值。
-
-示例：
-
-`eval('pow(2,2)')`
-
-粗看起来，eval函数在上面的例子中有些多此一举。然而如果字符串来自外部的话，就完全不同了。我们完全可以在任何地方嵌入python脚本。然后，只需要在用到的时候，找到并加载该字符串即可。

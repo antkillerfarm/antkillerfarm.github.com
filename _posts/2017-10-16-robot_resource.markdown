@@ -312,6 +312,24 @@ https://mp.weixin.qq.com/s/BRuT4YtU3D9c2GCeBkqv_w
 
 高精地图，比想象更重要
 
+## 路径规划
+
+https://mp.weixin.qq.com/s/Rt6Gem1kgWK2ACqiIGiDiw
+
+无人驾驶汽车路径规划概述
+
+https://mp.weixin.qq.com/s/U3qlIsSLJ6E1eNzQ-ZZ6zQ
+
+世界冠军之路：菜鸟车辆路径规划求解引擎研发历程
+
+https://mp.weixin.qq.com/s/ArreA2g24n-jqU7vfIE_rA
+
+自动驾驶核心技术之——路径规划
+
+https://mp.weixin.qq.com/s/1dOFsRCuTbm6UI1Pd5MNjw
+
+快速扩展随机树路径规划算法
+
 ## 参考
 
 https://rsu.data61.csiro.au/people/jalvarez/research_bbdd.php
@@ -411,19 +429,3 @@ https://mp.weixin.qq.com/s/booAFydlBvH-SAAVtByt7w
 https://mp.weixin.qq.com/s/j_rkmJ09QxhtzFH_Xa1Evw
 
 陈小平：机器人灵巧性可解决不确定性问题
-
-https://mp.weixin.qq.com/s/DhA9V5IlNAaa4qpWHVQCPA
-
-一个机器学者的故事：机器人工程师学习计划
-
-https://mp.weixin.qq.com/s/QkWCcr86yX_M-T_rT_fwBQ
-
-电影中不可舍弃的数学体系。本文介绍了四元数等空间变换的数学概念
-
-https://mp.weixin.qq.com/s/pOX84vc2JlYidkTZt73rcQ
-
-英特尔&丰田联合开源城市驾驶模拟器CARLA
-
-https://mp.weixin.qq.com/s/qEX2cRgce2Lknncsa67HSA
-
-无人车是怎样一步步学会开车的？
