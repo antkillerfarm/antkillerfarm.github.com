@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 埃塞俄比亚航空空难
+title: 埃塞俄比亚航空空难, 黑洞照片
 category: essay 
 ---
 
@@ -45,6 +45,24 @@ https://mp.weixin.qq.com/s/S2AcIMk2ABrCx9iTmdp_FQ
 ----
 
 黄志千，1914～1965，飞机设计师。上海交通大学机械系航空专业（1937），沈阳飞机设计研究所总设计师。1965年5月20日，黄志千赴西欧考察，途经开罗上空因飞机失事不幸罹难。
+
+# 黑洞照片
+
+![](/images/img2/BH-illumin1.jpg)
+
+![](/images/img2/BH-illumin2.jpg)
+
+![](/images/img2/BH-illumin3.jpg)
+
+![](/images/img2/BH-illumin4.jpg)
+
+https://www.zhihu.com/question/319589547
+
+如何评价人类的第一张黑洞照片？
+
+https://blogs.futura-sciences.com/e-luminet/tag/black-hole/
+
+一个关于Black Hole Imaging的系列blog
 
 # 世说新语+
 
