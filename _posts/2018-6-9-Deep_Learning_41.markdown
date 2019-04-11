@@ -338,3 +338,7 @@ https://mp.weixin.qq.com/s/45CLHvP1cumzcwMV0myj_g
 https://zhuanlan.zhihu.com/p/60420771
 
 领域自适应：利用DIRT-T模型提高性能
+
+https://mp.weixin.qq.com/s/Kw5v9nKP0FbVDH8aO7LtcA
+
+里昂大学Ying LU博士学位论文：图像分类中的迁移学习

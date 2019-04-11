@@ -332,6 +332,10 @@ https://mp.weixin.qq.com/s/FpIaa8XoJ9GsHxL-W1Cl5Q
 
 斯坦福AI实验室机器学习编程新范式：弱监督
 
+https://mp.weixin.qq.com/s/ys9iiiBL3iL2SJL247AMlA
+
+多伦多大学&NVIDIA最新成果：图像标注速度提升10倍！
+
 # 细粒度分类
 
 https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw

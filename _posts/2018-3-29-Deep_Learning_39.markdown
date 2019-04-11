@@ -299,3 +299,11 @@ https://mp.weixin.qq.com/s/-SVtuZGOn6Wk9kwe50JJqw
 https://mp.weixin.qq.com/s/QqQ0SoF-kFTQRLxo4Tzm2g
 
 反思基于能量的生成式模型：中山大学研究者从粒子演化角度改进经典的FRAME
+
+https://mp.weixin.qq.com/s/ExsDftIvi8VUdvxfka-1ow
+
+南大和中大“合体”拯救手残党：基于GAN的PI-REC重构网络，“老婆”画作有救了
+
+https://mp.weixin.qq.com/s/RhYVCO0jNlY97ptIUvRRQQ
+
+带你读论文：生成对抗网络GAN论文TOP 10

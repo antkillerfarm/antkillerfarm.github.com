@@ -155,6 +155,10 @@ FFT是加速卷积运算的一种常用方法。但由于其原理，当卷积�
 
 此外，FFT是复数运算，如果没有特殊硬件，而用实数计算的话，还是比较费劲的。
 
+![](/images/img2/Integer_multiplication_FFT.png)
+
+说句题外话，上图是FFT进行整数乘法的示例图。对于超大整数，2维的FFT也是远远不够的。例如2019年2月，David Harvey和Van Der Hoeven就使用了1729维的FFT，计算了两个10亿位的超大整数的乘法。
+
 参见：
 
 http://www.cnblogs.com/jianyingzhou/p/4303578.html

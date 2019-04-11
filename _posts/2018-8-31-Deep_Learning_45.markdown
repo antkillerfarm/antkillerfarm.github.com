@@ -373,3 +373,7 @@ https://mp.weixin.qq.com/s/4hHoRDKqPT25ltU7nyaRAQ
 https://mp.weixin.qq.com/s/5kynyTPod0AUIYhL5kIDbA
 
 何恺明等人新作：效果超ResNet，利用NAS方法设计随机连接网络
+
+https://mp.weixin.qq.com/s/Jw2kzCf2uFibhIpREnjO_A
+
+图解高效神经网络结构搜索（ENAS）

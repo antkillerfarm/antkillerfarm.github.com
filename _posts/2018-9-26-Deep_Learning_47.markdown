@@ -304,6 +304,10 @@ https://mp.weixin.qq.com/s/kFABJJ3fBC48-4DXK8PERQ
 
 10大任务超越BERT，微软提出多任务深度神经网络MT-DNN
 
+https://mp.weixin.qq.com/s/jlGfxkT_o9sgFlUuR_x5Tw
+
+微软开源用于学习通用语言嵌入的MT-DNN模型
+
 https://mp.weixin.qq.com/s/D68YzjYvpc2epGWFBP6rIQ
 
 谷歌实习生新算法提速惊人！BERT训练从三天三夜，缩短到一个小时

@@ -375,3 +375,7 @@ https://mp.weixin.qq.com/s/CYZvFb7kryE-8HV3teGRzA
 https://mp.weixin.qq.com/s/XTIl505glmfCItuiwuPLwg
 
 人脸聚类——Linkage Based Face Clustering via GCN
+
+https://mp.weixin.qq.com/s/CR4Nf_RklcXA45mswPv8Zw
+
+腾讯优图开源人脸检测算法DSFD，刷新两项数据集纪录

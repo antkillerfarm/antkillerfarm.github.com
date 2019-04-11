@@ -56,6 +56,10 @@ http://wiki.opencv.org.cn/
 
 国人办的OpenCV中文网。
 
+https://mp.weixin.qq.com/s/PXHcwJyDkPC7Xrjt0r8bIw
+
+412页的《Machine Learning for OpenCV》
+
 ## 示例
 
 https://github.com/antkillerfarm/antkillerfarm_rubbish/tree/master/opencv/1

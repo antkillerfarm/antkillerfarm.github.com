@@ -226,6 +226,10 @@ https://mp.weixin.qq.com/s/Pl8HABuVN27CZv-lvGROTw
 
 基于深度学习的目标检测算法近5年发展历史
 
+https://mp.weixin.qq.com/s/DoN-vha1H-2lHhbFOaVS8w
+
+FoveaBox：目标检测新纪元，无Anchor时代来临！
+
 # Flink
 
 Flink是一个流计算引擎。

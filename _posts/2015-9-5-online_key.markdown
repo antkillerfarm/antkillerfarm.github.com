@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  在线激活流程研究, 芯片杂烩, Actor model
+title:  在线激活流程研究, 芯片杂烩, Actor model, bash
 category: technology 
 ---
 
@@ -158,7 +158,100 @@ https://www.cnblogs.com/MOBIN/p/7236893.html
 
 Actor模型原理
 
-# 知识图谱参考资源
+# bash
+
+手册：
+
+https://www.gnu.org/software/bash/manual/bash.pdf
+
+## 空格和TAB的细节
+
+在大多数编程语言中，空格和TAB都不是有意义的字符，有没有或者有多少都无所谓。但Linux Shell不是这样的，尽管它看起来并没有如python那样的对缩进的强制语言规定。
+
+以下是它在使用空格和TAB时的一些细节：
+
+1.makefile文件中，规则定义部分的shell脚本命令需要使用TAB开头，使用空格会出错。
+
+2.if命令的格式：
+
+{% highlight bash %}
+if [ "$yn" == "Y" ] || [ "$yn" == "y" ]; then
+	echo "OK, continue"
+fi
+{% endhighlight %}
+
+注意一下上面脚本中的表达式[]之间的部分。其中所使用的空格不可省略，否则会出错。bash在处理[]表达式的时候，实际上调用了`/usr/bin/[`命令。如果把`[`当作特殊名称的普通命令的话，就会发现这里的空格用法实际上并不奇怪。
+
+## 查看当前使用的shell
+
+实时查看：
+
+`ps |  grep $$  |  awk '{print $4}'`
+
+非实时查看：
+
+`echo $SHELL`
+
+## return和exit的区别
+
+return用于函数的返回，它只能用在函数中。
+
+exit用于整个shell脚本的退出。
+
+## 预定义变量
+
+`$?`: 上条命令的返回值
+
+`$$`: 当前shell的PID。
+
+## shell如何把多行内容输出到一个文件
+
+一行一行echo重定向显然是个笨办法，这里可以使用Here Documents语法。
+
+例子：
+
+{% highlight bash %}
+(
+cat<<EOF
+line 1
+line 2
+EOF
+)>a.txt
+{% endhighlight %}
+
+参考：
+
+https://linux.die.net/abs-guide/here-docs.html
+
+Here Documents
+
+## 参考
+
+https://blog.csdn.net/iot_flower/article/details/69055590
+
+shell脚本第一行：#!/bin/bash的含义
+
+https://mp.weixin.qq.com/s/ZaIX8jv9LMWmrHQb4ew-dQ
+
+写好shell脚本的13个技巧
+
+http://www.ywnds.com/?p=12325
+
+Shell版俄罗斯方块
+
+https://mp.weixin.qq.com/s/SBVEo53irSZfI40sBFZXWQ
+
+shift：解决shell编程中的入参问题
+
+https://mp.weixin.qq.com/s/T_XwLS6CIrkXbgXJVIo2Jw
+
+一文了解十大Linux命令行工具！
+
+https://mp.weixin.qq.com/s/euTQJy0HFVQotAY-KI2OzA
+
+10个实战及面试常用Shell脚本编写
+
+# 知识图谱参考资源+
 
 https://mp.weixin.qq.com/s/fVABfj2W8JpDH2p8hWm8wA
 
@@ -188,20 +281,6 @@ https://mp.weixin.qq.com/s/aEhLCkEnImubZlwEP2ZHBQ
 
 从本体论开始说起，运营商关系图谱的构建及应用
 
-# AI Chip+
+https://mp.weixin.qq.com/s/QynPdrMIxlI3WzPco0EMyQ
 
-https://mp.weixin.qq.com/s/s-fYxv4z5kkJUFueU2IR7w
-
-BP表达式与硬件架构：相似性构建更高效的计算单元
-
-https://zhuanlan.zhihu.com/p/31782874
-
-Graphcore AI芯片：更多分析
-
-https://mp.weixin.qq.com/s/O-NDsFs6AOwl43LyevXtzg
-
-OpenAI发布“块稀疏”GPU内核：实现文本情感分析与图像生成建模当前最优水平
-
-https://mp.weixin.qq.com/s/Qfbc2iQnXacOqOGIrpRQRw
-
-Tensor Core究竟有多快？全面对比英伟达Tesla V100/P100的RNN加速能力
+RippleNet：基于知识图谱的用户偏好传播

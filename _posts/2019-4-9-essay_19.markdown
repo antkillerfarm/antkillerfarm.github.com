@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 埃塞俄比亚航空空难, 黑洞照片
+title: 埃塞俄比亚航空空难, 黑洞成像
 category: essay 
 ---
 
@@ -46,9 +46,9 @@ https://mp.weixin.qq.com/s/S2AcIMk2ABrCx9iTmdp_FQ
 
 黄志千，1914～1965，飞机设计师。上海交通大学机械系航空专业（1937），沈阳飞机设计研究所总设计师。1965年5月20日，黄志千赴西欧考察，途经开罗上空因飞机失事不幸罹难。
 
-# 黑洞照片
+# 黑洞成像
 
-![](/images/img2/BH-illumin1.jpg)
+![](/images/img2/BH-illum1.jpg)
 
 ![](/images/img2/BH-illumin2.jpg)
 
@@ -63,6 +63,36 @@ https://www.zhihu.com/question/319589547
 https://blogs.futura-sciences.com/e-luminet/tag/black-hole/
 
 一个关于Black Hole Imaging的系列blog
+
+https://mp.weixin.qq.com/s/GTHiZZ0ox8GsYKseYfDiRw
+
+科学界大事要来，世界首张黑洞照片即将公布！
+
+## Katie Bouman
+
+![](/images/img2/Katie_Bouman.png)
+
+个人主页：
+
+https://people.csail.mit.edu/klbouman/
+
+![](/images/img2/Margaret_Hamilton.jpg)
+
+>Margaret Hamilton，
+
+参考：
+
+https://mp.weixin.qq.com/s/sIPKApVO-2OYlMKuSl1ZKg
+
+黑洞成像背后的算法
+
+https://mp.weixin.qq.com/s/xPAJ00EImF4mnv79aeVltg
+
+浅析黑洞成像背后的稀疏重构算法原理
+
+https://mp.weixin.qq.com/s/Jmm-dJ84IYhaVFv9OW1WoQ
+
+人类首张黑洞照片幕后英雄：29岁女算法工程师
 
 # 世说新语+
 
@@ -135,3 +165,11 @@ https://mp.weixin.qq.com/s/XAUGateD00MJvxTjwBI_3w
 https://zhuanlan.zhihu.com/p/60677789
 
 全市皆坟土，西安文物局也很绝望啊（西安地铁）
+
+----
+
+结束燕山化工的参观后，红旗汽车走在下山途中，刹车失灵，最终直接撞在树上。齐奥塞斯库是现代历史上手段毒辣的狠角色，却不得不感慨自己是在用生命访华。
+
+https://mp.weixin.qq.com/s/yqNhE02CD_-LZwIwIFqohg
+
+中国造车记

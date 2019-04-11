@@ -190,6 +190,10 @@ https://mp.weixin.qq.com/s/jNa4JTefasFDWoGJDBL6-Q
 
 PyQt编写GUI界面
 
+https://mp.weixin.qq.com/s/lelQq4y-LIog3kNAS0kBVw
+
+向“假脸”说 No：用OpenCV搭建活体检测器
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。

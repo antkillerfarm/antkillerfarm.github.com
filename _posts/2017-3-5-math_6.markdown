@@ -151,6 +151,14 @@ $$\mathcal{F}\{f * g\} = k\cdot \mathcal{F}\{f\}\cdot \mathcal{F}\{g\}$$
 
 除此之外，还有利用**向量张量积运算**的**相关矩阵**。同样的，也有自相关矩阵和互相关矩阵。
 
+4.**循环卷积（Circular convolution）**。
+
+![](/images/img2/Circular_convolution.png)
+
+https://mp.weixin.qq.com/s/R0LTEEYY1jCbSS-f6KlIzw
+
+有限长序列的线性卷积和圆周卷积
+
 # 马氏距离
 
 Mahalanobis Distance是印度现代统计学之父Prasanta Chandra Mahalanobis于1936年提出的概念。

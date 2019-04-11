@@ -190,6 +190,14 @@ https://mp.weixin.qq.com/s/SnvXvijf5gBMNsnVW1-KMA
 
 一张照片获得3D人体信息，云从科技提出新型DenseBody框架
 
+https://mp.weixin.qq.com/s/UthnL7fqEIEGvzcaXmFHKQ
+
+基于骨架表达的单张图片三维物体重建方法
+
+https://mp.weixin.qq.com/s/h8tk28IEuqB7g1e-vsyN5g
+
+2DASL：目前最好的开源人脸3D重建与密集对齐算法
+
 # 视频处理
 
 ## 视频目标分割

@@ -171,7 +171,7 @@ https://mp.weixin.qq.com/s/AeLwfmM0N-b1dfxt3v4C-A
 
 教科书上的LDA为什么长这样？
 
-# 知识图谱参考资源+
+# 知识图谱参考资源
 
 https://mp.weixin.qq.com/s/Yg-ggqTg5HlcvrH9BKC0YA
 

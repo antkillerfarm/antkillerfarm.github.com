@@ -130,6 +130,14 @@ https://mp.weixin.qq.com/s/ie2O5BPT-QxTRhK3S0Oa0Q
 
 剪枝需有的放矢，快手&罗切斯特大学提出基于能耗建模的模型压缩
 
+https://mp.weixin.qq.com/s/NsvjADgQZrYkUGNN6fzXVg
+
+驭势科技推出“东风网络”：如何找到速度-精度的最优解？
+
+https://mp.weixin.qq.com/s/HzgRHtVwdmW6_m7OJwK-ew
+
+SysML 2019论文解读：Accurate and Efficient 2-Bit Quantized Neural Netowrks
+
 # Mask R-CNN
 
 Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的NN。它是何恺明2017年的新作。
@@ -303,3 +311,7 @@ https://mp.weixin.qq.com/s/aGP8pcsCmEdjdCWVjA82Jg
 https://mp.weixin.qq.com/s/CpDZEqo14X_lCBh6i7feIA
 
 图卷积神经网络(GCN)文本分类详述
+
+https://mp.weixin.qq.com/s/XApSbi-Pg-AeYGkPN3fldg
+
+旷视研究院提出ML-GCN：基于图卷积网络的多标签图像识别模型

@@ -1,10 +1,59 @@
 ---
 layout: post
-title:  linux学习心得（二）, bash, SWIG
+title:  linux学习心得（二）
 category: linux 
 ---
 
-# 查看内存使用情况（续）
+# 文件锁
+
+Linux系统上的文件锁主要分为协同锁(advisory lock)和强制锁(mandatory lock)。前者是应用层锁，实现方式与信号量相似。后者是内核层锁。
+
+fcntl和flock都可以用于创建文件锁。
+
+文件锁、命名管道和消息队列的示例代码：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/pipe/
+
+# 主线程存续的编程技巧
+
+有的多线程程序，其主要功能实现在其他线程中。主线程只是负责创建这些功能线程，一旦创建完成，自己的使命也就结束了。
+
+如果需要让主线程在初始化之后，仍然存在，而不是退出的话，可以使用以下技巧：
+
+{% highlight c %}
+sigset_t sigs_to_catch;
+sigemptyset(&sigs_to_catch);
+sigaddset(&sigs_to_catch, SIGINT);
+sigwait(&sigs_to_catch, &sig);
+{% endhighlight %}
+
+这种方法显然比`while (1);`这样的忙等待，有效率的多。
+
+# 查看内存使用情况
+
+## top命令
+
+top命令可在进程这一级查看内存、运行时间、CPU等的使用情况。并可根据不同属性对结果排序：
+
+P：按%CPU使用率排序
+
+T：按TIME+排序
+
+M：按%MEM排序
+
+注：运行top命令之后，输入相应字符即可切换排序。
+
+除此之外，还有个升级版本的命令htop。
+
+参考：
+
+https://mp.weixin.qq.com/s/8892B95aQZHw4fZhi8iO5A
+
+Linux中load average意义
+
+https://mp.weixin.qq.com/s/FV13ma9LxI1gsgi9ovU4Mw
+
+30个实例详解TOP命令
 
 ## free命令
 
@@ -356,95 +405,20 @@ https://mp.weixin.qq.com/s/WZyuTtEfaTFLnCfvhOrp7g
 
 虚拟化原理和分类
 
-# bash
+# AI Chip+
 
-手册：
+https://mp.weixin.qq.com/s/s-fYxv4z5kkJUFueU2IR7w
 
-https://www.gnu.org/software/bash/manual/bash.pdf
+BP表达式与硬件架构：相似性构建更高效的计算单元
 
-## 空格和TAB的细节
+https://zhuanlan.zhihu.com/p/31782874
 
-在大多数编程语言中，空格和TAB都不是有意义的字符，有没有或者有多少都无所谓。但Linux Shell不是这样的，尽管它看起来并没有如python那样的对缩进的强制语言规定。
+Graphcore AI芯片：更多分析
 
-以下是它在使用空格和TAB时的一些细节：
+https://mp.weixin.qq.com/s/O-NDsFs6AOwl43LyevXtzg
 
-1.makefile文件中，规则定义部分的shell脚本命令需要使用TAB开头，使用空格会出错。
+OpenAI发布“块稀疏”GPU内核：实现文本情感分析与图像生成建模当前最优水平
 
-2.if命令的格式：
+https://mp.weixin.qq.com/s/Qfbc2iQnXacOqOGIrpRQRw
 
-{% highlight bash %}
-if [ "$yn" == "Y" ] || [ "$yn" == "y" ]; then
-	echo "OK, continue"
-fi
-{% endhighlight %}
-
-注意一下上面脚本中的表达式[]之间的部分。其中所使用的空格不可省略，否则会出错。bash在处理[]表达式的时候，实际上调用了`/usr/bin/[`命令。如果把`[`当作特殊名称的普通命令的话，就会发现这里的空格用法实际上并不奇怪。
-
-## 查看当前使用的shell
-
-实时查看：
-
-`ps |  grep $$  |  awk '{print $4}'`
-
-非实时查看：
-
-`echo $SHELL`
-
-## return和exit的区别
-
-return用于函数的返回，它只能用在函数中。
-
-exit用于整个shell脚本的退出。
-
-## 预定义变量
-
-`$?`: 上条命令的返回值
-
-`$$`: 当前shell的PID。
-
-## shell如何把多行内容输出到一个文件
-
-一行一行echo重定向显然是个笨办法，这里可以使用Here Documents语法。
-
-例子：
-
-{% highlight bash %}
-(
-cat<<EOF
-line 1
-line 2
-EOF
-)>a.txt
-{% endhighlight %}
-
-参考：
-
-https://linux.die.net/abs-guide/here-docs.html
-
-Here Documents
-
-## 参考
-
-https://blog.csdn.net/iot_flower/article/details/69055590
-
-shell脚本第一行：#!/bin/bash的含义
-
-https://mp.weixin.qq.com/s/ZaIX8jv9LMWmrHQb4ew-dQ
-
-写好shell脚本的13个技巧
-
-http://www.ywnds.com/?p=12325
-
-Shell版俄罗斯方块
-
-https://mp.weixin.qq.com/s/SBVEo53irSZfI40sBFZXWQ
-
-shift：解决shell编程中的入参问题
-
-https://mp.weixin.qq.com/s/T_XwLS6CIrkXbgXJVIo2Jw
-
-一文了解十大Linux命令行工具！
-
-https://mp.weixin.qq.com/s/euTQJy0HFVQotAY-KI2OzA
-
-10个实战及面试常用Shell脚本编写
+Tensor Core究竟有多快？全面对比英伟达Tesla V100/P100的RNN加速能力

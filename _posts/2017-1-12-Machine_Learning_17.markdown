@@ -176,6 +176,10 @@ https://mp.weixin.qq.com/s/cfeILnMsWlMC_T6lcSEW7A
 
 图像降维之MDS特征抽取方法
 
+https://mp.weixin.qq.com/s/C-tZRvHKcpO5jQArZi_GQA
+
+数据降维算法-从PCA到LargeVis
+
 PCA还可用于升维：
 
 https://www.cnblogs.com/lochan/p/7011831.html

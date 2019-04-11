@@ -86,6 +86,10 @@ https://mp.weixin.qq.com/s/T0TsS8YwyCbCjt4J-xonOw
 
 使用TensorFlow Probability Layers的变分自编码器
 
+https://mp.weixin.qq.com/s/6l-NS0NbYK44JS0jnRl82w
+
+使用TensorFlow Probability的概率层执行回归
+
 ## TensorFlow Federated
 
 TFF是一个开源框架，用于试验针对分散式数据的机器学习和其他计算。它采用的是一种名为联合学习(FL)的方法，许多参与的客户端能够训练共享的ML模型，同时将数据保存在本地。

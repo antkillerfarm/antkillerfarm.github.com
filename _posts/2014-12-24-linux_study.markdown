@@ -160,6 +160,8 @@ https://wiki.archlinux.org/index.php/Pacman/Rosetta
 
 http://www.cnblogs.com/Anker/p/3265058.html
 
+select、poll、epoll之间的区别总结
+
 ## select函数
 
 {% highlight c %}
@@ -189,7 +191,15 @@ int FD_ISSET(int fd, fd_set *fdset);  //检查集合中指定的文件描述符�
 
 （3）根本不等待：检查描述字后立即返回，这称为轮询。为此，该参数必须指向一个timeval结构，而且其中的定时器值必须为0。
 
+缺点：
+
+1.单个进程通过轮询的方式监控所有的文件句柄，当文件句柄越多，处理的效率越低，为了保证效率，文件句柄也就设置了上限。
+
+2.重复初始化：每次监控都重复将fdset从用户空间拷贝到内核空间，然后又从内核空间拷贝到用户空间，这个过程重复比较耗费系统资源。
+
 ## poll函数
+
+poll技术与select技术本质上是没有区别的，只是文件句柄的存储结构变更了，变成了链表，所以没有了文件句柄的上限，但是其他缺点依旧存在。
 
 {% highlight c %}
 int poll ( struct pollfd * fds, unsigned int nfds, int timeout);
@@ -204,22 +214,30 @@ short revents;       /* 实际发生了的事件 */
 事件包括：
 
 {% highlight text %}
-POLLIN 　　　　　　　　有数据可读。
-POLLRDNORM 　　　　  有普通数据可读。
-POLLRDBAND　　　　　 有优先数据可读。
-POLLPRI　　　　　　　　 有紧迫数据可读。
-POLLOUT　　　　　　      写数据不会导致阻塞。
-POLLWRNORM　　　　　  写普通数据不会导致阻塞。
-POLLWRBAND　　　　　   写优先数据不会导致阻塞。
-POLLMSGSIGPOLL 　　　　消息可用。
-POLLER　　   指定的文件描述符发生错误。
-POLLHUP　　 指定的文件描述符挂起事件。
-POLLNVAL　　指定的文件描述符非法。
+POLLIN 有数据可读。
+POLLRDNORM 有普通数据可读。
+POLLRDBAND 有优先数据可读。
+POLLPRI 有紧迫数据可读。
+POLLOUT 写数据不会导致阻塞。
+POLLWRNORM 写普通数据不会导致阻塞。
+POLLWRBAND 写优先数据不会导致阻塞。
+POLLMSGSIGPOLL 消息可用。
+POLLER 指定的文件描述符发生错误。
+POLLHUP 指定的文件描述符挂起事件。
+POLLNVAL 指定的文件描述符非法。
 {% endhighlight %}
 
 ## epoll接口
 
+epoll技术提供了epoll_ctl函数，在用epoll_ctl函数进行事件注册的时候，会将文件句柄都复制到内核中，所以不用每次都复制一遍，当有新的文件句柄时采用的也是增量往内核拷贝，确保了每个文件句柄只会被拷贝一次。它只将链表中的就绪文件句柄从内核空间拷贝到用户空间，这样一来就不用遍历每个文件句柄，而只处理状态发生变更的。
+
 http://www.cnblogs.com/Anker/archive/2013/08/17/3263780.html
+
+IO多路复用之epoll总结
+
+https://mp.weixin.qq.com/s/2RhYd8b38pa_vAx_7DpQhQ
+
+Tornado原理浅析及应用场景探讨
 
 # 启动脚本
 
@@ -296,54 +314,3 @@ mkfifo：创建命名管道。
 remove：删除文件（包括命名管道）。
 
 access：可查询文件是否存在及其相关权限。
-
-# 文件锁
-
-Linux系统上的文件锁主要分为协同锁(advisory lock)和强制锁(mandatory lock)。前者是应用层锁，实现方式与信号量相似。后者是内核层锁。
-
-fcntl和flock都可以用于创建文件锁。
-
-文件锁、命名管道和消息队列的示例代码：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/pipe/
-
-# 主线程存续的编程技巧
-
-有的多线程程序，其主要功能实现在其他线程中。主线程只是负责创建这些功能线程，一旦创建完成，自己的使命也就结束了。
-
-如果需要让主线程在初始化之后，仍然存在，而不是退出的话，可以使用以下技巧：
-
-{% highlight c %}
-sigset_t sigs_to_catch;
-sigemptyset(&sigs_to_catch);
-sigaddset(&sigs_to_catch, SIGINT);
-sigwait(&sigs_to_catch, &sig);
-{% endhighlight %}
-
-这种方法显然比`while (1);`这样的忙等待，有效率的多。
-
-# 查看内存使用情况
-
-## top命令
-
-top命令可在进程这一级查看内存、运行时间、CPU等的使用情况。并可根据不同属性对结果排序：
-
-P：按%CPU使用率排序
-
-T：按TIME+排序
-
-M：按%MEM排序
-
-注：运行top命令之后，输入相应字符即可切换排序。
-
-除此之外，还有个升级版本的命令htop。
-
-参考：
-
-https://mp.weixin.qq.com/s/8892B95aQZHw4fZhi8iO5A
-
-Linux中load average意义
-
-https://mp.weixin.qq.com/s/FV13ma9LxI1gsgi9ovU4Mw
-
-30个实例详解TOP命令

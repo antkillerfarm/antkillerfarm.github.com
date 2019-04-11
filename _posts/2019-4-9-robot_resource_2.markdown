@@ -313,3 +313,7 @@ https://mp.weixin.qq.com/s/uy16CGG01o3BfYB7Qtvzcg
 https://mp.weixin.qq.com/s/NH09Pvh8vKtOGrS6Lwq3Tw
 
 自动驾驶中行为预测的一些根本问题和最新方法
+
+https://mp.weixin.qq.com/s/UAPbNq_KNWCFd7p8U8HnYQ
+
+模型预测控制（MPC)
