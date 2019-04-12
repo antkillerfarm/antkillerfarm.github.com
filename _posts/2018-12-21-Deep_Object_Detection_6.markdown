@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/DoN-vha1H-2lHhbFOaVS8w
 
 FoveaBox：目标检测新纪元，无Anchor时代来临！
 
+https://zhuanlan.zhihu.com/p/62198865
+
+最新的Anchor-Free目标检测模型FCOS，现已开源！
+
 # Flink
 
 Flink是一个流计算引擎。

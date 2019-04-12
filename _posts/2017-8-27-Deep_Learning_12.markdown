@@ -12,7 +12,7 @@ category: DL
 
 令$$h(p)=h_0+h_1p,x(p)=x_0+x_1p,s(p)=h(p)x(p)=s_0+s_1p+s_2p^2$$，则$$s(p)$$的系数$$s_i$$正好为i点的卷积值$$Conv_i(h,x)$$。
 
-上述事实用矩阵可表示为：
+上述事实的矩阵表示为：
 
 $$\begin{bmatrix}
 s_0 \\ s_1 \\ s_2 \\

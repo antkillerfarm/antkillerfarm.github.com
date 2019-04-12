@@ -212,6 +212,10 @@ https://mp.weixin.qq.com/s/N6y-RDx7VszgCVhSiwP8jA
 
 人脸关键点检测汇总（下）
 
+https://mp.weixin.qq.com/s/D435jGsGPkCH5j-p8Zoksg
+
+遮挡、光照等因素的人脸关键点检测
+
 ## 参考
 
 https://github.com/ChanChiChoi/awesome-Face_Recognition

@@ -184,16 +184,15 @@ http://yanglei.me/gen_proto/
 
 Caffe中用于数据操作和交换的数据结构。简单来说，就是一个4维数组，格式如下表所示：
 
-| 名称 | 格式 | 
-|:--:|:--:|
-| Caffe | number,channel,height,width |
-| TensorFlow | number,height,width,channel |
-| OpenVX | width,height,channel,number |
-| OpenCV | height,width,channel |
+| Name | tensor format | channel order | format |
+|:--:|:--:|:--:|:--:|
+| Caffe | number,channel,height,width | BGR | BBBGGGRRR |
+| TensorFlow | number,height,width,channel | RGB | RGBRGBRGB |
+| Darknet | number,channel,height,width | RGB | RRRGGGBBB |
+| OpenVX | width,height,channel,number |  |  |
+| OpenCV | height,width,channel |  |  |
 
->注1：在API层面，Caffe和OpenVX顺序完全相反，但是由于OpenVX是列优先存储，因此在内存存储方面，两者的格式正好完全一致。详见下面的“多维数组的行优先和列优先”一节。
-
->注2：OpenCV的图片通道是BGR或BGRA格式的。
+>注：在API层面，Caffe和OpenVX顺序完全相反，但是由于OpenVX是列优先存储，因此在内存存储方面，两者的格式正好完全一致。详见《多维数组的行优先和列优先》一节。
 
 ### lr_mult
 
