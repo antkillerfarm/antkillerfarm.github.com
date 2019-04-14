@@ -280,6 +280,8 @@ http://www.cnblogs.com/EE-NovRain/p/3810737.html
 
 各大公司广泛使用的在线学习算法FTRL详解
 
+## 参考
+
 https://mp.weixin.qq.com/s/q9FU19Hpw2eWLLhsY5lYJQ
 
 parameter-free contextual bandits
@@ -347,6 +349,10 @@ https://mp.weixin.qq.com/s/ll2Nx7_1Sg7XfuiH-OQnWA
 https://mp.weixin.qq.com/s/C5cokipqnSsgg53chbi3oA
 
 我是怎么走上推荐系统这条（不归）路的……
+
+https://mp.weixin.qq.com/s/RA6Elm6C4gnlg0wIOnvlug
+
+一步步构建推荐系统
 
 # 强连通分量算法
 

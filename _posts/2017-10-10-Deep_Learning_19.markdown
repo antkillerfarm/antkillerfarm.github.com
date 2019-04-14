@@ -245,3 +245,7 @@ DeepLab V3
 https://zhuanlan.zhihu.com/p/54911894
 
 语义分割之DeepLabv2
+
+https://mp.weixin.qq.com/s/bFe4F1QGIWm-yCAx9YvWDQ
+
+人人必须要知道的语义分割模型：DeepLabv3+

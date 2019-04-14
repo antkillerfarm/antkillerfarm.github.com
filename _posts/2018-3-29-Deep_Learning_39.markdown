@@ -307,3 +307,11 @@ https://mp.weixin.qq.com/s/ExsDftIvi8VUdvxfka-1ow
 https://mp.weixin.qq.com/s/RhYVCO0jNlY97ptIUvRRQQ
 
 带你读论文：生成对抗网络GAN论文TOP 10
+
+https://mp.weixin.qq.com/s/ErmGAsSHvCOxCn97yZ4WJQ
+
+关于GAN的灵魂七问
+
+https://mp.weixin.qq.com/s/Q0IUGbVcIYJMdidSVcFzFw
+
+GAN的五个神奇应用场景

@@ -164,6 +164,8 @@ MatConvnet图像分类从模型自定义到测试
 
 ## OpenVINO
 
+OpenVINO是英特尔推出一套基于深度学习的计算机视觉加速优化框架，支持其它机器学习平台模型的压缩优化、加速计算等功能。
+
 https://mp.weixin.qq.com/s/mmvfSxjtJgx5q6Gm_3xQQw
 
 英特尔重磅开源OpenVINO
@@ -183,6 +185,10 @@ OpenVINO视觉加速库使用三
 https://mp.weixin.qq.com/s/BNfmU0sumvK4yoaffejeWQ
 
 OpenVINO视觉加速库使用四
+
+https://mp.weixin.qq.com/s/xPox6kgy37E4c8U3UmyZ1A
+
+OpenVINO视觉加速库使用五
 
 ## blog
 

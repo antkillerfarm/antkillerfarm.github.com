@@ -368,3 +368,6 @@ https://mp.weixin.qq.com/s/pKSrokV_j8Repa-JMloUHg
 
 Google又发大招：高效实时实现视频目标检测
 
+https://mp.weixin.qq.com/s/ySAfdII8291hvTxUBtE5qA
+
+详解爱奇艺ZoomAI视频增强技术的应用

@@ -34,6 +34,10 @@ https://mp.weixin.qq.com/s/MLe_MtQE27rZTncaQeU4cg
 
 论频谱中负频率成分的物理意义
 
+https://mp.weixin.qq.com/s/TEtZbh0NHSemgWQlrgo2Vw
+
+傅里叶变换还能这么玩
+
 # DFT
 
 FT针对的是连续信号，但数字信号处理只能处理离散数据，于是就有了Discrete-time Fourier transform（DTFT）：

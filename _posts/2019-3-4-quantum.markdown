@@ -183,3 +183,7 @@ CMA-ES算法
 https://mp.weixin.qq.com/s/vuzx4LPLH2Gk4L9TXlNJqg
 
 遗传算法实例应用之管网拓扑结构优化
+
+https://mp.weixin.qq.com/s/nFOaWGqBQtbvPJF7BGCBIA
+
+当机器学习遇上进化算法

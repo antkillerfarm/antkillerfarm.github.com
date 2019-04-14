@@ -188,6 +188,10 @@ https://mp.weixin.qq.com/s/09C0N6f0rpN7QLvjgjEkWQ
 
 使用NLP和深度学习预测股价
 
+https://mp.weixin.qq.com/s/_4QG0dWhh784lF0n1wymcw
+
+数据竞赛Top解决方案开源整理
+
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
@@ -322,6 +326,10 @@ https://mp.weixin.qq.com/s/SN1Fc48sa4NZzm_K16kUnw
 
 通过空间上下文特征进行阴影检测
 
+https://mp.weixin.qq.com/s/oOru4Dn2uyVuHVOLDxvsBg
+
+最新的图像质量评价
+
 ## 参考
 
 https://mp.weixin.qq.com/s/MoKzux6Z69dlpqcVTvQ9oQ
@@ -395,15 +403,3 @@ https://mp.weixin.qq.com/s/qof4GEPQYb9rO3Do_oL7BQ
 https://mp.weixin.qq.com/s/l1Bc5l5cr3y9jQbh-bEQeQ
 
 Deep Learning of Graph Matching论文解读
-
-https://mp.weixin.qq.com/s/494I6XHrk9fB2DvhiMM9iQ
-
-第四范式联合港科大提出样本自适应在线卷积稀疏编码
-
-https://mp.weixin.qq.com/s/p8u2aTJL2gfPIXLsLfoJyg
-
-谷歌大脑提出MAPO：用于程序合成的策略优化方法
-
-https://mp.weixin.qq.com/s/zC5iGXVn7xH8TYBXtkntzA
-
-让计算机一眼认出“猫”：哈佛提出新高维数据分析法

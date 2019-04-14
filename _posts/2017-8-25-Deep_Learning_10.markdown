@@ -112,6 +112,10 @@ https://mp.weixin.qq.com/s/rX8L63-jDGJT6lCAj04I3Q
 
 独家解读！阿里重磅发布机器学习平台PAI 3.0
 
+https://mp.weixin.qq.com/s/Ye2GVTFIrX3SbU1-4cDLoQ
+
+你天天叫的外卖，你知道这里面深度学习的水有多深吗
+
 # 花式卷积
 
 在DL中，卷积实际上是一大类计算的总称。除了原始的卷积、反卷积（Deconvolution）之外，还有各种各样的花式卷积。
@@ -207,6 +211,10 @@ Paper笔记：Dilated Residual Networks
 https://mp.weixin.qq.com/s/1lMlSMS5xKc8k0QMAou45g
 
 重新思考扩张卷积！中科院&深睿提出新型上采样模块JPU
+
+https://mp.weixin.qq.com/s/NjFdu6iP3Sn9GbDhrbpisQ
+
+感受野与分辨率的控制术—空洞卷积
 
 ## 分组卷积
 

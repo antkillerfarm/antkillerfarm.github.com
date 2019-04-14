@@ -269,6 +269,10 @@ https://mp.weixin.qq.com/s/0oVG7zMi08dzMQrk43T3mw
 
 像训练Dota2一样训练真实机器人？Gibson Environment环境了解一下
 
+https://mp.weixin.qq.com/s/_A0q8DFAsIclaofVgZfjMA
+
+定制股票交易OpenAI Gym强化学习环境
+
 ## RND
 
 OpenAI最近开发了RND（Random Network Distillation），一种基于预测的强化学习算法，用于鼓励强化学习代理通过好奇心来探索他们所处环境。在游戏任务Montezuma's Revenge上首次超过人类的平均表现。

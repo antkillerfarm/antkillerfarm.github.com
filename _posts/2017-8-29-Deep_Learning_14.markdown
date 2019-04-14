@@ -130,6 +130,12 @@ https://mp.weixin.qq.com/s/44RvXEYYc5lebsHs_ooswg
 
 全面解读Group Normalization
 
+## 参考
+
+https://mp.weixin.qq.com/s/KYGqSOftm8FWDXk_C13iCQ
+
+Conditional Batch Normalization详解
+
 # ESN
 
 Echo State Network

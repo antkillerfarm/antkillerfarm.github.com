@@ -158,3 +158,11 @@ https://mp.weixin.qq.com/s/4SZ1NN5hUUcO_dSe4Bv0NQ
 https://mp.weixin.qq.com/s/rwqtw5b2Nap5UPU9DWBXqg
 
 强化学习与文本生成
+
+https://mp.weixin.qq.com/s/VPCtsv2Q73qVcNAa4Xufag
+
+从虚拟到现实，北大等提出基于强化学习的端到端主动目标跟踪方法
+
+https://mp.weixin.qq.com/s/6Sj2QIELQvI28Rpp7A39Fg
+
+如何通过结构化智能体完成物理构造任务？

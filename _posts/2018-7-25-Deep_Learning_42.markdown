@@ -178,6 +178,10 @@ https://mp.weixin.qq.com/s/FEJDrCvXcnhl5y7KR8EXKw
 
 行人检测新思路：高级语义特征检测取得精度新突破
 
+https://mp.weixin.qq.com/s/BYAmDulUKJLE-rb-Kh8Xmg
+
+CSP行人检测：无锚点框的检测新思路
+
 # 人脸检测/识别进阶
 
 https://mp.weixin.qq.com/s/-G94Mj-8972i2HtEcIZDpA

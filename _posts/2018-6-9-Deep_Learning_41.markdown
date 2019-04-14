@@ -342,3 +342,7 @@ https://zhuanlan.zhihu.com/p/60420771
 https://mp.weixin.qq.com/s/Kw5v9nKP0FbVDH8aO7LtcA
 
 里昂大学Ying LU博士学位论文：图像分类中的迁移学习
+
+https://mp.weixin.qq.com/s/TUwhd7ruF-156GDmInpA7w
+
+《小样本学习(Few-shot learning)》最新41页综述论文，来自港科大和第四范式

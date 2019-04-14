@@ -415,3 +415,7 @@ TPAMI2019最新《多模态机器学习综述》
 https://mp.weixin.qq.com/s/BczgUuh2FIvP5MG9xh87wQ
 
 多模态多任务学习新论文
+
+https://mp.weixin.qq.com/s/ipj8qpYRiYbIeXn2PZb1SQ
+
+5G时代下多模态理解做不到位注定要掉队

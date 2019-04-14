@@ -160,6 +160,10 @@ https://mp.weixin.qq.com/s/Ux3_baKdA_Fee-jmcs4Myg
 
 开源了！现在用PyTorch做超大规模图嵌入，上亿个节点也能快速完成
 
+https://mp.weixin.qq.com/s/OUjMmxio9OCyuN0mJW-fdg
+
+完爆旧系统！Facebook开源图神经网络库PBG，无需GPU搞定数十亿节点图嵌入
+
 ## Graph Nets
 
 https://mp.weixin.qq.com/s/c5rvWfIjujw6TNszDzPMdw

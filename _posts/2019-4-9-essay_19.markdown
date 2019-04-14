@@ -108,6 +108,14 @@ Katherine Louise Bouman，1990年生，University of Michigan本科（2011）+MI
 
 上图是Katie和装有黑洞成像数据的半吨重硬盘的合影。
 
+论文：
+
+《Computational Imaging for VLBI Image Reconstruction》
+
+代码：
+
+https://github.com/achael/eht-imaging
+
 个人主页：
 
 https://people.csail.mit.edu/klbouman/
@@ -131,6 +139,14 @@ https://mp.weixin.qq.com/s/xPAJ00EImF4mnv79aeVltg
 https://mp.weixin.qq.com/s/Jmm-dJ84IYhaVFv9OW1WoQ
 
 人类首张黑洞照片幕后英雄：29岁女算法工程师
+
+https://mp.weixin.qq.com/s/dAAjBL3P0FAZQqvWT5CoVw
+
+心酸科研路：3年前CVPR论文，仅被引用11次，如今成就黑洞照片！
+
+https://mp.weixin.qq.com/s/BoF3-GGCFSr7MhVjJ1Erbg
+
+反转？MIT女博士遭质疑：代码贡献太少，黑洞照片功臣另有其人
 
 ## 视觉中国
 
