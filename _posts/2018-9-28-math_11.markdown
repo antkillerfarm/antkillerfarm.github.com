@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（十一）——高阶统计, 勾股定理, PID算法, 辛普森悖论, 抛物线
+title:  数学狂想曲（十一）——高阶统计, 勾股定理, PID算法, 辛普森悖论, 抛物线, Lie Groups
 category: math 
 ---
 
@@ -210,6 +210,20 @@ https://mp.weixin.qq.com/s/5jZ2dzLInLtUw7rWZF4mtg
 
 那么抛物线呢？实际上抛物线是椭圆和双曲线的临界状态，它的另一个焦点在无穷远的地方。对于绕恒星的抛物线轨道来说，取的是那个通常说的焦点位置作为恒星位置；对于地面上的斜抛运动来说，取的是无穷远处的那个焦点位置作为恒星位置。
 
+# Lie Groups
+
+《State estimation for Robotics: A Matrix Lie Group Approach》
+
+>Marius Sophus Lie，1842～1899，挪威数学家。University of Christiania博士（1871），University of Leipzig教授。当时德国的大学，一个系只有一个教授，所以这里的教授相当于现在的系主任或者院长。Lie接的是Felix Klein的班，后者跑到University of Göttingen当教授去了。
+
+## Sophus
+
+Sophus是一个C++写的Lie Groups的库。显然，它得名自Marius Sophus Lie。
+
+代码：
+
+https://github.com/strasdat/Sophus
+
 # 知识图谱参考资源
 
 https://zhuanlan.zhihu.com/p/51000072
@@ -243,27 +257,3 @@ https://mp.weixin.qq.com/s/pwgYl6U3-w2sS-tAqn1hjg
 https://mp.weixin.qq.com/s/d4cEHHo6OhlWEIXTFIdTuA
 
 知识图谱相关实体搜索
-
-https://mp.weixin.qq.com/s/7LFkOzkD1-PsNNAr5DAETg
-
-TechKG：一个面向中文学术领域的大型知识图谱
-
-https://mp.weixin.qq.com/s/QNTJngwEDtxufEpIGTngCw
-
-事理图谱，下一代知识图谱
-
-https://mp.weixin.qq.com/s/0bTmzKiC7WDbLRcxfAAGqw
-
-提取计数量词丰富知识库
-
-https://mp.weixin.qq.com/s/9MToVjepCZuTgXz967ugjg
-
-如何自动地向知识图谱中添加属性？
-
-https://mp.weixin.qq.com/s/a3mGbLMfTxYuMcraW0JWdQ
-
-知识图谱最新论文清单，高阶炼丹师为你逐一解读
-
-https://mp.weixin.qq.com/s/p6SDazuTjgG1ERl5ku2-VQ
-
-如何构建多快好省的“知识图谱即服务”？

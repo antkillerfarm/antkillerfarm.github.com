@@ -349,3 +349,17 @@ Litho的使用及原理剖析
 https://mp.weixin.qq.com/s/twfpUMf9CfXcgwtFFkJ4Ig
 
 Android整体设计及背后意义
+
+# 知识图谱参考资源+
+
+https://mp.weixin.qq.com/s/7LFkOzkD1-PsNNAr5DAETg
+
+TechKG：一个面向中文学术领域的大型知识图谱
+
+https://mp.weixin.qq.com/s/QNTJngwEDtxufEpIGTngCw
+
+事理图谱，下一代知识图谱
+
+https://mp.weixin.qq.com/s/0bTmzKiC7WDbLRcxfAAGqw
+
+提取计数量词丰富知识库

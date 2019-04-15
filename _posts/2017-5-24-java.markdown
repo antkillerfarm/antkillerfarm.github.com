@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Java（二）, 孩子的编程语言, Javascript（二）
+title:  Java（二）, 孩子的编程语言, Javascript（二）, 安全
 category: language 
 ---
 
@@ -338,3 +338,33 @@ https://mp.weixin.qq.com/s/WHh9v3icCc90PwiLyv0Hng
 https://mp.weixin.qq.com/s/GQ2azFxcmXrY78rTAdxuVA
 
 JS/CSS体积减少了67%，我们是如何做到的？
+
+# 安全
+
+https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126
+
+前端安全系列之一：如何防止XSS攻击？
+
+http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
+
+理解OAuth 2.0
+
+https://www.cnblogs.com/linianhui/category/929878.html
+
+一个认证授权方面的专栏
+
+https://mp.weixin.qq.com/s/OLg_wocXJz7VGDabTtxdWQ
+
+Web登录很简单？开玩笑！
+
+https://mp.weixin.qq.com/s/agS2-wu6HGO__QfbIt7Esw
+
+数字签名是什么？
+
+https://mp.weixin.qq.com/s/YNMw8u7O6u7Bc4-mnrwRXg
+
+老听别人说加密算法，现在给你个机会深入了解下
+
+http://www.xfyun.cn/share/?p=2626
+
+开发者常犯的十大加密错误

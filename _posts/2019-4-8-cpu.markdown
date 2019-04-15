@@ -72,6 +72,10 @@ https://mp.weixin.qq.com/s/YdoIVBpn1dFUEzDEF5pYJw
 
 被迫离开工作近20年的公司，半导体老兵上演逆袭。林孝平，一个小儿麻痹患者。
 
+https://mp.weixin.qq.com/s/hIWvLLKWksNlO2eaVKcbAA
+
+那个延续摩尔定律的人的传奇人生。Mark Bohr，UIUC硕士（1978），美国工程院院士。
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/29743431
@@ -246,6 +250,10 @@ https://mp.weixin.qq.com/s/9y5HFTQr2QP12iR858BFtg
 
 图解intel芯片生产全过程！
 
+https://zhuanlan.zhihu.com/p/62234511
+
+DDR3 vs DDR4? 为什么说内存是个很傻的设备？DDR5在哪里？
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。
@@ -343,3 +351,49 @@ Apollo AdaperManager和Routing模块源代码分析
 https://mp.weixin.qq.com/s/k5GNHhxEE6mIOnxXlCpKXg
 
 Apollo 3.5软件架构
+
+# AI Chip+
+
+https://mp.weixin.qq.com/s/BD-HAILp3TPvBFlIy6QC4w
+
+一文看懂机器视觉芯片
+
+https://mp.weixin.qq.com/s/PMnNay4CRgVghA4fU9oLqg
+
+牛津大学研发类脑光子芯片，运算速度超人脑1000倍
+
+https://mp.weixin.qq.com/s/HeoVktVtvOK4VgocyxuCXg
+
+摩尔定律已死？GPU会取代CPU的位置吗？
+
+https://mp.weixin.qq.com/s/e333KjLavEvvpNIL3u1Y4Q
+
+NovuMind异构智能核心技术引领智联网
+
+https://mp.weixin.qq.com/s/fSSyOs4-NXbPTbDjpfJBNQ
+
+Google IPU：互联网巨头纷纷进军芯片行业是为何？
+
+https://mp.weixin.qq.com/s/S1y4NEx4_Mgwf68S2pexqA
+
+拿着锤子找钉子，数字芯片领导者比特大陆进军人工智能
+
+https://mp.weixin.qq.com/s/gtgPYf939uYRzxAab_LZLQ
+
+谢源：计算存储一体化，在存储里做深度学习，架构创新实现下一代AI芯片
+
+https://mp.weixin.qq.com/s/s-fYxv4z5kkJUFueU2IR7w
+
+BP表达式与硬件架构：相似性构建更高效的计算单元
+
+https://zhuanlan.zhihu.com/p/31782874
+
+Graphcore AI芯片：更多分析
+
+https://mp.weixin.qq.com/s/O-NDsFs6AOwl43LyevXtzg
+
+OpenAI发布“块稀疏”GPU内核：实现文本情感分析与图像生成建模当前最优水平
+
+https://mp.weixin.qq.com/s/Qfbc2iQnXacOqOGIrpRQRw
+
+Tensor Core究竟有多快？全面对比英伟达Tesla V100/P100的RNN加速能力

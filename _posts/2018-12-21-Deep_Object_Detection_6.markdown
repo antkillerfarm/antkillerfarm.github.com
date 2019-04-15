@@ -226,13 +226,9 @@ https://mp.weixin.qq.com/s/Pl8HABuVN27CZv-lvGROTw
 
 基于深度学习的目标检测算法近5年发展历史
 
-https://mp.weixin.qq.com/s/DoN-vha1H-2lHhbFOaVS8w
+https://mp.weixin.qq.com/s/apLEAMshqd3O8nU8Q0Wycg
 
-FoveaBox：目标检测新纪元，无Anchor时代来临！
-
-https://zhuanlan.zhihu.com/p/62198865
-
-最新的Anchor-Free目标检测模型FCOS，现已开源！
+李祥泰：Context modeling in semantic segmentation
 
 # Flink
 

@@ -251,7 +251,19 @@ https://mp.weixin.qq.com/s/euTQJy0HFVQotAY-KI2OzA
 
 10个实战及面试常用Shell脚本编写
 
-# 知识图谱参考资源+
+# 知识图谱参考资源
+
+https://mp.weixin.qq.com/s/9MToVjepCZuTgXz967ugjg
+
+如何自动地向知识图谱中添加属性？
+
+https://mp.weixin.qq.com/s/a3mGbLMfTxYuMcraW0JWdQ
+
+知识图谱最新论文清单，高阶炼丹师为你逐一解读
+
+https://mp.weixin.qq.com/s/p6SDazuTjgG1ERl5ku2-VQ
+
+如何构建多快好省的“知识图谱即服务”？
 
 https://mp.weixin.qq.com/s/fVABfj2W8JpDH2p8hWm8wA
 

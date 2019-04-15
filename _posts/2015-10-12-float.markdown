@@ -231,6 +231,8 @@ IA是每行的非零元素在A的offset（类似于文件操作中的游标）�
 
 # Optimizer软件
 
+## 统计类
+
 在前ML时代，工业界已经有不少Optimizer软件用于求解凸优化问题，这些软件从原理上基本都属于传统统计学的范畴。
 
 比较知名的Optimizer软件有：CPlex, Gurobi, Mosek, cvx, LINGO。
@@ -256,6 +258,14 @@ XPROG: 简单实用的鲁棒优化(RO, DRO)编程语言
 https://mp.weixin.qq.com/s/wJAt-RqmsoyECLGgdlH6RA
 
 基于数据的分布式鲁棒优化算法及其应用
+
+## Ceres Solver
+
+Ceres Solver是一个非线性优化库。和上面提到的那些软件不同，Ceres Solver主要应用于工程界。Gauss最早使用最小二乘法估计谷神星（Ceres）的位置，故名。
+
+官网：
+
+http://ceres-solver.org/
 
 # 微服务
 
@@ -288,17 +298,3 @@ https://mp.weixin.qq.com/s/j0kiWTlrntzvthUJlxZBsA
 https://mp.weixin.qq.com/s/bUtu2nTs0bybnTvk-iLt6Q
 
 GTS来了！阿里微服务架构下的分布式事务解决方案
-
-# DL参考资源
-
-https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
-
-北大：一种基于新闻特征抽取和循环神经网络的股票预测方法
-
-https://mp.weixin.qq.com/s/_QPzoFyhCxnIxDWKzzsvAQ
-
-智能交通大数据最新论文综述
-
-https://mp.weixin.qq.com/s/eYTDwSqgj-r7yV7w9tY_MA
-
-融合质量不理想数据

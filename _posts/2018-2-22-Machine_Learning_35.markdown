@@ -102,10 +102,6 @@ https://blog.csdn.net/HJ199404182515/article/details/52504150
 | Unscented Kalman filters | Nonlinear Gaussian |
 | Particle filter | Nonlinear Non-Gaussian |
 
-《State estimation for Robotics: A Matrix Lie Group Approach》
-
->Marius Sophus Lie，1842～1899，挪威数学家。University of Christiania博士（1871），University of Leipzig教授。当时德国的大学，一个系只有一个教授，所以这里的教授相当于现在的系主任或者院长。Lie接的是Felix Klein的班，后者跑到University of Göttingen当教授去了。
-
 unscented transformation
 
 ![](/images/img2/UKF.png)

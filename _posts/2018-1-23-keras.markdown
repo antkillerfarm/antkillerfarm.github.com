@@ -348,6 +348,18 @@ AmpliGraph：知识图谱表示学习工具包
 
 # DL参考资源+
 
+https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
+
+北大：一种基于新闻特征抽取和循环神经网络的股票预测方法
+
+https://mp.weixin.qq.com/s/_QPzoFyhCxnIxDWKzzsvAQ
+
+智能交通大数据最新论文综述
+
+https://mp.weixin.qq.com/s/eYTDwSqgj-r7yV7w9tY_MA
+
+融合质量不理想数据
+
 https://mp.weixin.qq.com/s/fhpYkWiLGwSbpRsrwBcV9g
 
 多轴3D打印中的几何计算

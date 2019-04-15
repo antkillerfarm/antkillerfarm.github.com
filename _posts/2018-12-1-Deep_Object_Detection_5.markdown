@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（五）——YOLOv3, One-stage vs. Two-stage, 其它目标检测网络, 点云
+title:  深度目标检测（五）——YOLOv3, One-stage vs. Two-stage, Anchor-Free, 其它目标检测网络, 点云
 category: Deep Object Detection 
 ---
 
@@ -172,6 +172,20 @@ One-stage一步搞定分类和bbox问题。
 
 2.对bbox进行分类和细调。
 
+# Anchor-Free
+
+https://mp.weixin.qq.com/s/DoN-vha1H-2lHhbFOaVS8w
+
+FoveaBox：目标检测新纪元，无Anchor时代来临！
+
+https://zhuanlan.zhihu.com/p/62198865
+
+最新的Anchor-Free目标检测模型FCOS，现已开源！
+
+https://mp.weixin.qq.com/s/N93TrVnUuvAgfcoHXevTHw
+
+FCOS: 最新的one-stage逐像素目标检测算法
+
 # 其它目标检测网络
 
 ## A-Fast-RCNN
@@ -247,6 +261,16 @@ https://mp.weixin.qq.com/s/ZhfnZ4IwOnTQlqeB6Ilr3A
 CornerNet: Detecting Objects as Paired Keypoints解读
 
 # 点云
+
+## PCL
+
+The Point Cloud Library是一个点云处理的库。
+
+官网：
+
+http://www.pointclouds.org/
+
+## 参考
 
 https://mp.weixin.qq.com/s/f44TkWXklGONCuXnIuTbXg
 

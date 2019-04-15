@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenCV（二）, Dlib, 安全, 数字成像
+title:  OpenCV（二）, Dlib, 数字成像
 category: AI 
 ---
 
@@ -240,36 +240,6 @@ https://mp.weixin.qq.com/s/2P7Rlcy-fIC_cwqrB4UQUw
 
 超越Dlib！81个特征点覆盖全脸，面部特征点检测更精准
 
-# 安全
-
-https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126
-
-前端安全系列之一：如何防止XSS攻击？
-
-http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
-
-理解OAuth 2.0
-
-https://www.cnblogs.com/linianhui/category/929878.html
-
-一个认证授权方面的专栏
-
-https://mp.weixin.qq.com/s/OLg_wocXJz7VGDabTtxdWQ
-
-Web登录很简单？开玩笑！
-
-https://mp.weixin.qq.com/s/agS2-wu6HGO__QfbIt7Esw
-
-数字签名是什么？
-
-https://mp.weixin.qq.com/s/YNMw8u7O6u7Bc4-mnrwRXg
-
-老听别人说加密算法，现在给你个机会深入了解下
-
-http://www.xfyun.cn/share/?p=2626
-
-开发者常犯的十大加密错误
-
 # 数字成像
 
 ## CCD
@@ -279,6 +249,8 @@ http://www.xfyun.cn/share/?p=2626
 1970年：“完全回收在CCD上的投资，本世纪内都没有可能实现。”
 
 八年后，CCD终于开发成功。然而岩间并没有等到CCD的量产，就因肠癌去世。继任索尼社长的大贺典雄将一片CCD镶嵌在岩间和夫的墓碑上，来纪念他对索尼的贡献。
+
+![](/images/img2/CMOS.png)
 
 参考：
 
