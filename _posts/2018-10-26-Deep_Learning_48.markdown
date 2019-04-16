@@ -249,3 +249,7 @@ https://mp.weixin.qq.com/s/eackv0HypWm3mTW9OAHv8g
 https://mp.weixin.qq.com/s/-FmBrHJ6IGVIiT5PwNhczw
 
 那些一键抠图的软件是怎么做到的？这些语义分割方法了解一下
+
+https://zhuanlan.zhihu.com/p/62652145
+
+加州大学提出：实时实例分割算法YOLACT，可达33 FPS/30mAP！现已开源！

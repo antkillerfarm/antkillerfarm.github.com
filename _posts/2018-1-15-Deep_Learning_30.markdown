@@ -239,7 +239,7 @@ https://mp.weixin.qq.com/s/8sBXlnXiZNsPRwFsgJVRQQ
 
 https://mp.weixin.qq.com/s/x7uk7jBNvnM7Tgk9lFKy3Q
 
-元学习(Meta-Learning) 综述及五篇顶会论文推荐
+元学习(Meta-Learning)综述及五篇顶会论文推荐
 
 # VAE进阶
 

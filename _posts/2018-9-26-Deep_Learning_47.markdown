@@ -316,6 +316,10 @@ https://mp.weixin.qq.com/s/iDGofh_ycWJzfqQriPEXGQ
 
 如何用Python和BERT做中文文本二元分类？
 
+https://zhuanlan.zhihu.com/p/62308732
+
+浅谈Bert：语言理解中的预训练编码器
+
 # 深度ISP
 
 ## 数据集
