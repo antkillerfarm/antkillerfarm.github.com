@@ -346,3 +346,7 @@ https://mp.weixin.qq.com/s/Kw5v9nKP0FbVDH8aO7LtcA
 https://mp.weixin.qq.com/s/TUwhd7ruF-156GDmInpA7w
 
 《小样本学习(Few-shot learning)》最新41页综述论文，来自港科大和第四范式
+
+https://mp.weixin.qq.com/s/duJK5y9ZeFkYsFkAg4E2Jw
+
+IBM-小样本学习（Few-shot Learning）State of the art方法及论文讲解

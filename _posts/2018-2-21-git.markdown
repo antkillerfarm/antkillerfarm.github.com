@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Git, 爬虫, ZeroMQ, Restful
+title:  Git, 爬虫, ZeroMQ
 category: technology 
 ---
 
@@ -388,6 +388,10 @@ https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247493477&idx=4&sn=b5906e
 
 五十种最好用的开源爬虫软件
 
+https://mp.weixin.qq.com/s/G2oo6HMHnQtHPqsoSxUHqQ
+
+权力的游戏收官，我用Python致敬这场血雨腥风
+
 # ZeroMQ
 
 ZeroMQ是个在Socket之上，而在MQ之下的网络通信库。正如名称所言，它实际上并不是一个完整的MQ，而仅仅只有MQ的一些子功能罢了。
@@ -400,38 +404,16 @@ https://blog.csdn.net/w174504744/article/details/73187697
 
 ZeroMQ
 
-# Restful
+# 知识图谱参考资源+
 
-相比于WebService，Restful是一种简单的多的编程风格。
+https://mp.weixin.qq.com/s/7LFkOzkD1-PsNNAr5DAETg
 
-比如我们使用搜索引擎的时候，输入的地址：
+TechKG：一个面向中文学术领域的大型知识图谱
 
-`https://www.bing.com/search?q=java+restful`
+https://mp.weixin.qq.com/s/QNTJngwEDtxufEpIGTngCw
 
-就是一个典型的Restful请求。
+事理图谱，下一代知识图谱
 
-有关Restful风格的内容参见：
+https://mp.weixin.qq.com/s/0bTmzKiC7WDbLRcxfAAGqw
 
-https://segmentfault.com/a/1190000006735330
-
-Restful应用分析
-
-http://www.drdobbs.com/web-development/restful-web-services-a-tutorial/240169069
-
-RESTful Web Services: A Tutorial
-
-http://www.ibm.com/developerworks/library/ws-restful/index.html
-
-RESTful Web services: The basics
-
-还是那句老话，讨论一个通讯格式或协议，不讨论交互报文的都不是好文章，或者至少不是一个入门的好文章。
-
-常见的Web框架如Spring、Struts都提供了对Restful的支持。
-
-专门负责Restful的框架还有Jersey。其官网：
-
-https://jersey.java.net/
-
-示例：
-
-https://github.com/feuyeux/jax-rs2-guide-II
+提取计数量词丰富知识库

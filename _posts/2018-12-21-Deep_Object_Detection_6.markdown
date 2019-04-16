@@ -230,6 +230,14 @@ https://mp.weixin.qq.com/s/apLEAMshqd3O8nU8Q0Wycg
 
 李祥泰：Context modeling in semantic segmentation
 
+https://mp.weixin.qq.com/s/svqygu4nFkW4ci7dYMnKsw
+
+小目标检测的数据增广秘籍
+
+https://mp.weixin.qq.com/s/bzgMWR2kzAI9NeXEY92GmA
+
+目标检测任务的优化策略tricks
+
 # Flink
 
 Flink是一个流计算引擎。

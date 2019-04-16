@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数据库, Mysql, Android研究（二）
+title:  数据库, Mysql, Android研究（二）, Restful
 category: technology 
 ---
 
@@ -350,16 +350,39 @@ https://mp.weixin.qq.com/s/twfpUMf9CfXcgwtFFkJ4Ig
 
 Android整体设计及背后意义
 
-# 知识图谱参考资源+
+# Restful
 
-https://mp.weixin.qq.com/s/7LFkOzkD1-PsNNAr5DAETg
+相比于WebService，Restful是一种简单的多的编程风格。
 
-TechKG：一个面向中文学术领域的大型知识图谱
+比如我们使用搜索引擎的时候，输入的地址：
 
-https://mp.weixin.qq.com/s/QNTJngwEDtxufEpIGTngCw
+`https://www.bing.com/search?q=java+restful`
 
-事理图谱，下一代知识图谱
+就是一个典型的Restful请求。
 
-https://mp.weixin.qq.com/s/0bTmzKiC7WDbLRcxfAAGqw
+有关Restful风格的内容参见：
 
-提取计数量词丰富知识库
+https://segmentfault.com/a/1190000006735330
+
+Restful应用分析
+
+http://www.drdobbs.com/web-development/restful-web-services-a-tutorial/240169069
+
+RESTful Web Services: A Tutorial
+
+http://www.ibm.com/developerworks/library/ws-restful/index.html
+
+RESTful Web services: The basics
+
+还是那句老话，讨论一个通讯格式或协议，不讨论交互报文的都不是好文章，或者至少不是一个入门的好文章。
+
+常见的Web框架如Spring、Struts都提供了对Restful的支持。
+
+专门负责Restful的框架还有Jersey。其官网：
+
+https://jersey.java.net/
+
+示例：
+
+https://github.com/feuyeux/jax-rs2-guide-II
+
