@@ -240,6 +240,10 @@ https://mp.weixin.qq.com/s/oEhG7AaY_TAljvhhK5YfNA
 
 拉东变换与医学CT技术
 
+https://mp.weixin.qq.com/s/9ZmyidQ888PiT7jbr7Zusg
+
+物理学家辞掉NASA工作玩折纸，竟被请回实验室“折卫星”（折纸几何学）
+
 ## LSM (Log Structured Merge)
 
 十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。
@@ -419,15 +423,3 @@ LinkedIn文本分析平台：主题挖掘的四大技术步骤
 http://mp.weixin.qq.com/s/Or6oDt0aZFlnlMr8EBr-xQ
 
 三角兽首席科学家王宝勋：热度之下的对话生成
-
-https://mp.weixin.qq.com/s/i4u4Ty8kC0zzUpmRqj8g7A
-
-473个模型试验告诉你文本分类中的最好编码方式
-
-https://mp.weixin.qq.com/s/-D-5p_7DfvR3D7cZjlUmUA
-
-TensorFlow 谷歌神经机器翻译:从零开始打造属于你的翻译系统
-
-https://mp.weixin.qq.com/s/JAWDiNUfU62n8lDRG8zzRw
-
-嘿，朋友，老夫掐指一算你就是“水军”

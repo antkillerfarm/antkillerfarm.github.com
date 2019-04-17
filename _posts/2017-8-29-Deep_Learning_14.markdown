@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十四）——Normalization进阶（1）, MobileNet, 李飞飞, fine-tuning
+title:  深度学习（十四）——Normalization进阶（1）, MobileNet, 李飞飞
 category: DL 
 ---
 
@@ -36,31 +36,33 @@ BN的主要思想是用同一batch的样本分布来近似整体的样本分布�
 
 **Step 1**.计算mini-batch mean。
 
-$$\mu_\mathcal{B}\leftarrow \frac{1}{m}\sum_{i=1}^mx_i$$
+$$\mu_\mathcal{B}\leftarrow \frac{1}{m}\sum_{i=1}^mx_i\tag{1}$$
 
 **Step 2**.计算mini-batch variance。
 
-$$\sigma_\mathcal{B}^2\leftarrow \frac{1}{m}\sum_{i=1}^m(x_i-\mu_\mathcal{B})^2$$
+$$\sigma_\mathcal{B}^2\leftarrow \frac{1}{m}\sum_{i=1}^m(x_i-\mu_\mathcal{B})^2\tag{2}$$
 
 **Step 3**.normalize。
 
-$$\hat x_i\leftarrow \frac{x_i-\mu_\mathcal{B}}{\sqrt{\sigma_\mathcal{B}^2+\epsilon}}$$
+$$\hat x_i\leftarrow \frac{x_i-\mu_\mathcal{B}}{\sqrt{\sigma_\mathcal{B}^2+\epsilon}}\tag{3}$$
 
 这里的$$\epsilon$$是为了数值的稳定性而添加的常数。
 
 **Step 4**.scale and shift。
 
-$$y_i=\gamma\hat x_i+\beta\equiv BN_{\gamma,\beta}(x_i)$$
+$$y_i=\gamma\hat x_i+\beta\equiv BN_{\gamma,\beta}(x_i)\tag{4}$$
 
 在实际使用中，BN计算和卷积计算一样，都被当作神经网络的其中一层。即：
 
-$$z=g(Wu+b)\rightarrow z=g(BN(Wu+b))=g(BN(Wu))$$
+$$z=g(Wx+b)\rightarrow z=g(BN(Wx+b))=g(BN(Wx))\tag{5}$$
 
 从另一个角度来看，BN的均值、方差操作，相当于去除一阶和二阶信息，而只保留网络的高阶信息，即非线性部分。因此，上式最后一步中b被忽略，也就不难理解了。
 
 BN的误差反向算法相对复杂，这里不再赘述。
 
-在inference阶段，BN网络忽略Step 1和Step 2，只计算后两步。其中,$$\beta,\gamma$$由之前的训练得到。$$\mu,\sigma$$原则上要求使用全体样本的均值和方差，但样本量过大的情况下，也可使用训练时的若干个mini batch的均值和方差的FIR滤波值。
+在inference阶段，BN网络忽略Step 1和Step 2，只计算后两步。其中,$$\beta,\gamma$$由之前的训练得到。而$$\mu,\sigma$$原则上要求使用全体样本的均值和方差，但样本量过大的情况下，也可使用训练时的若干个mini batch的均值和方差的FIR滤波值。
+
+由公式5可以看出，BN不是针对x（输入的），而是针对Wx+b的。而W每个channel都不同，因此在`batch*channel*height*width`这么大的一层中，对总共`batch*height*width`个像素点统计得到一个均值和一个标准差，共得到channel组参数。
 
 ## Instance Normalization
 

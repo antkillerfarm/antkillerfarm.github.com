@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十五）——Style Transfer（1）
+title:  深度学习（十五）——fine-tuning, Style Transfer（1）
 category: DL 
 ---
 

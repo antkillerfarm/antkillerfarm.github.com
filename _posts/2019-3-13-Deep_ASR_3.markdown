@@ -146,6 +146,10 @@ https://zhuanlan.zhihu.com/p/61600497
 
 GE2E Speaker Verification论文复现
 
+https://mp.weixin.qq.com/s/n11gkdXiUf618IAxvFx_RA
+
+不识字也能翻译：谷歌AI直接用音频翻音频，不用先转文本
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw

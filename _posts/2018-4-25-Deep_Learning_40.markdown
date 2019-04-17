@@ -128,6 +128,10 @@ https://zhuanlan.zhihu.com/p/58805980
 
 深度学习的模型加速与模型裁剪方法
 
+https://mp.weixin.qq.com/s/pAEoVs8xu0SY9tfBqOJHHA
+
+Google DeepMind最新报告—深度神经网络压缩进展
+
 https://zhuanlan.zhihu.com/p/24337627
 
 深度压缩之蒸馏模型

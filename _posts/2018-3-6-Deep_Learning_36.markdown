@@ -364,6 +364,10 @@ https://mp.weixin.qq.com/s/ejQW9EI48kJ4pvIlh7H3Dw
 
 Airbnb: 深度学习在搜索排序业务中的探索与演进（二）
 
+https://zhuanlan.zhihu.com/p/57234648
+
+深入解读Airbnb推荐算法
+
 https://mp.weixin.qq.com/s/2Th2PO4rC-r4LOU46uYDjg
 
 重读Youtube深度学习推荐系统论文，字字珠玑，惊为神文

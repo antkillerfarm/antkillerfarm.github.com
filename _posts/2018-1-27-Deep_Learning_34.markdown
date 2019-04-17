@@ -373,3 +373,7 @@ https://mp.weixin.qq.com/s/Z_nOIKpL3osfX3ylIsJ4rA
 https://mp.weixin.qq.com/s/Siy096-tkXZuv9Jsi4__ug
 
 超越ResNet：南开提出Res2Net，不增计算负载，性能全面升级！
+
+https://mp.weixin.qq.com/s/NthR9-iE2jqgufnBtToOHA
+
+CNN更新换代！性能提升算力减半，还即插即用（OctConv）

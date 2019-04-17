@@ -306,6 +306,18 @@ Hbase万亿级存储性能优化总结
 
 # NLP参考资源+
 
+https://mp.weixin.qq.com/s/i4u4Ty8kC0zzUpmRqj8g7A
+
+473个模型试验告诉你文本分类中的最好编码方式
+
+https://mp.weixin.qq.com/s/-D-5p_7DfvR3D7cZjlUmUA
+
+TensorFlow 谷歌神经机器翻译:从零开始打造属于你的翻译系统
+
+https://mp.weixin.qq.com/s/JAWDiNUfU62n8lDRG8zzRw
+
+嘿，朋友，老夫掐指一算你就是“水军”
+
 https://mp.weixin.qq.com/s/-qk__SLahfssHuYsGNhKSA
 
 阿里巴巴首次近万字公布人工智能对话交互技术

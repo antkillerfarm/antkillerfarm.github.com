@@ -352,10 +352,6 @@ https://mp.weixin.qq.com/s/pmnb_WnncL12T1IZoso5DA
 
 DeepID
 
-https://mp.weixin.qq.com/s/BV3xv8mH6K7dV1nik0X5aw
-
-PFLD：简单、快速、超高精度人脸特征点检测算法
-
 https://mp.weixin.qq.com/s/kH3-WUX4rc2SaLJcGzVLcQ
 
 如何检测极小人脸？试试超分辨率

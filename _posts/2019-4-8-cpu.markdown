@@ -254,6 +254,10 @@ https://zhuanlan.zhihu.com/p/62234511
 
 DDR3 vs DDR4? 为什么说内存是个很傻的设备？DDR5在哪里？
 
+https://mp.weixin.qq.com/s/QwE_VTEUS9kGDDrHlzPYmg
+
+硅片为什么不是方的？
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。

@@ -238,6 +238,10 @@ https://mp.weixin.qq.com/s/bzgMWR2kzAI9NeXEY92GmA
 
 目标检测任务的优化策略tricks
 
+https://zhuanlan.zhihu.com/p/62724053
+
+CenterNet：将目标视为点
+
 # Flink
 
 Flink是一个流计算引擎。

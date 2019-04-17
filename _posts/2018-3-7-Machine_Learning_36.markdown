@@ -11,6 +11,8 @@ XGBoost是陈天奇于2014年提出的一套并行boost算法的工具库。
 >注：陈天奇，华盛顿大学计算机系博士生，研究方向为大规模机器学习。上海交通大学本科（2006～2010）和硕士（2010～2013）。   
 >http://homes.cs.washington.edu/~tqchen/
 
+![](/images/img2/XGBoost.png)
+
 论文：
 
 《XGBoost: A Scalable Tree Boosting System》
@@ -123,6 +125,10 @@ https://mp.weixin.qq.com/s/7RU3Nzy5qkTL8-2LOjg9qg
 https://mp.weixin.qq.com/s/Pkc8KyDZ53ZGO5lNLVjoBg
 
 一份完备的集成学习手册！
+
+https://mp.weixin.qq.com/s/pwuOFj_rT5Z_XY9siZosKQ
+
+线性模型已退场，XGBoost时代早已来
 
 # LightGBM
 
