@@ -383,19 +383,3 @@ Petuum新研究提出形义感知型Grad-GAN：可基于虚拟游戏生成更具
 http://mp.weixin.qq.com/s/RlpI3hCKjcJ8VHSbBXf84g
 
 用生成对抗网络解决NLP问题：谷歌大脑提出MaskGAN
-
-https://zhuanlan.zhihu.com/p/32135185
-
-从一篇ICLR'2017被拒论文谈起：行走在GAN的Latent Space
-
-https://mp.weixin.qq.com/s/9N_3JkNEPdXQgFn0S7MqnA
-
-走进深度生成模型：变分自动编码器（VAE）和生成对抗网络（GAN）
-
-https://mp.weixin.qq.com/s/SPAbCZloiHp2mtGu0IDWDA
-
-DeepMind高级研究员：重新理解GAN，最新算法、技巧及应用
-
-https://mp.weixin.qq.com/s/EI57G3ph9WCrT7kudOAjvQ
-
-Petuum提出对偶运动生成对抗网络：可合成逼真的视频未来帧和流

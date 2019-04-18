@@ -8,54 +8,6 @@ category: DL
 
 ## 参考
 
-https://mp.weixin.qq.com/s/M-YeUqvcSVHj_MbCS_c-6Q
-
-无平行文本照样破解密码，CipherGAN有望提升机器翻译水平
-
-https://mp.weixin.qq.com/s/uJEGXNvBVJfsxYJUQCz4DQ
-
-DA-GAN技术：计算机帮你创造奇妙“新物种”
-
-https://mp.weixin.qq.com/s/b8g_wNqi4dD5x9whj9ZN4A
-
-争议、流派，有关GAN的一切：Ian Goodfellow Q&A
-
-https://mp.weixin.qq.com/s/9N-eOyRseMc6zVH1_VBE4w
-
-斯坦福联合谷歌使用图卷积和GAN从场景图中生成图像
-
-https://mp.weixin.qq.com/s/V8v9eeP4HFH-TfIKUio6Iw
-
-上交大推出新型无监督生成模型算法CoT，性能比GAN稳定！
-
-https://mp.weixin.qq.com/s/Gjb-PkMqUIIV81Na6Za_BQ
-
-超全的GAN PyTorch+Keras实现集合
-
-https://mp.weixin.qq.com/s/Cb3C6Q5aWSjsNFs5hqD6kw
-
-阿里提出应用LocalizedGAN进行半监督训练
-
-https://mp.weixin.qq.com/s/Y8D0gr1ybQ48H0bDpPvD8w
-
-二次元萌妹高清舞姿随心变，换装只需一瞬间：又是GAN立功了
-
-https://mp.weixin.qq.com/s/H_EcHi9BRur214rktocGbg
-
-怎样用GAN生成各种胖吉猫？谷歌大脑程序员教你撩妹神技
-
-https://mp.weixin.qq.com/s/FDyN6fblDFGOSNRFs5OYqA
-
-什么都能GAN，无监督神经网络翻译新方法
-
-https://mp.weixin.qq.com/s/DYSnAwP9xt-p0ihsEtKm1Q
-
-TensorFlow实现StarGAN代码全部开源，1天训练完
-
-https://mp.weixin.qq.com/s/se_2Ci4eE5fxiiG4LZrv8w
-
-怎样用可交互对抗网络增强人类创造力
-
 https://mp.weixin.qq.com/s/29Ror1CKFubB0n38cihMqQ
 
 六种GAN评估指标的综合评估实验，迈向定量评估GAN的重要一步
