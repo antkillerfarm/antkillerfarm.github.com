@@ -6,6 +6,18 @@ category: DL
 
 # 模型压缩与加速
 
+https://mp.weixin.qq.com/s/OyEIcS5o6kWUu2UzuWZi3g
+
+这么Deep且又轻量的Network，实时目标检测
+
+https://mp.weixin.qq.com/s/mWfZ4jfuby4myGfi6TW3wQ
+
+从超参数到架构，一文简述模型优化策略
+
+https://mp.weixin.qq.com/s/8NDOf_8qxMMpcuXIZGJCGg
+
+Google又发大招：高效实时实现视频目标检测
+
 https://mp.weixin.qq.com/s/_JlaxwEYqdTTuS4hNSQTTw
 
 这么Deep且又轻量的Network，实时目标检测
@@ -137,6 +149,10 @@ https://mp.weixin.qq.com/s/NsvjADgQZrYkUGNN6fzXVg
 https://mp.weixin.qq.com/s/HzgRHtVwdmW6_m7OJwK-ew
 
 SysML 2019论文解读：Accurate and Efficient 2-Bit Quantized Neural Netowrks
+
+https://mp.weixin.qq.com/s/5NM9M1oY8bwsEqdBRVYpMg
+
+网络规模更小、速度更快，这是谷歌提出的MorphNet
 
 # Mask R-CNN
 

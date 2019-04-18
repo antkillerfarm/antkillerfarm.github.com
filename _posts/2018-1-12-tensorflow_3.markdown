@@ -90,6 +90,10 @@ https://mp.weixin.qq.com/s/6l-NS0NbYK44JS0jnRl82w
 
 使用TensorFlow Probability的概率层执行回归
 
+https://mp.weixin.qq.com/s/2cbd7LBPBRqGt-QO1A7SfQ
+
+在TensorFlow Probability中对结构时间序列建模
+
 ## TensorFlow Federated
 
 TFF是一个开源框架，用于试验针对分散式数据的机器学习和其他计算。它采用的是一种名为联合学习(FL)的方法，许多参与的客户端能够训练共享的ML模型，同时将数据保存在本地。
@@ -391,15 +395,3 @@ CNN for Chinese Text Classification in Tensorflow
 https://mp.weixin.qq.com/s/yc1ssCzaPzI4UUsl4jl5Yw
 
 用TensorFlow和TensorBoard从零开始构建ConvNet
-
-https://mp.weixin.qq.com/s/hquOoKeeHQXqWcHM6Bkvbw
-
-如何训练一个简单的音频识别网络
-
-https://mp.weixin.qq.com/s/KohwsQQetwjfTj-PXvLjwA
-
-使用MNIST数据集，在TensorFlow上实现基础LSTM网络
-
-http://mp.weixin.qq.com/s/ioaS7RQ6bsJs4_X0G4ZHyQ
-
-如何优雅地用TensorFlow预测时间序列：TFTS库详细教程

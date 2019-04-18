@@ -100,6 +100,18 @@ $$k\le (D/\gamma)^2$$
 
 # TensorFlow+
 
+https://mp.weixin.qq.com/s/hquOoKeeHQXqWcHM6Bkvbw
+
+如何训练一个简单的音频识别网络
+
+https://mp.weixin.qq.com/s/KohwsQQetwjfTj-PXvLjwA
+
+使用MNIST数据集，在TensorFlow上实现基础LSTM网络
+
+http://mp.weixin.qq.com/s/ioaS7RQ6bsJs4_X0G4ZHyQ
+
+如何优雅地用TensorFlow预测时间序列：TFTS库详细教程
+
 https://mp.weixin.qq.com/s/pIESRzjsmqoO46P4x5Iqhw
 
 Tensorflow卷积神经网络

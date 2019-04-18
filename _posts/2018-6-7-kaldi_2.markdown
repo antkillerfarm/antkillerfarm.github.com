@@ -302,3 +302,7 @@ https://mp.weixin.qq.com/s/Er3Poj8oxV5OKNlAlZwq_A
 https://mp.weixin.qq.com/s/gmXgZZdxU2Qqv6X7HFqhdg
 
 为什么CNN中的卷积核半径都是奇数？
+
+https://mp.weixin.qq.com/s/0UpHuJ_gJfJvURRzmlJ1iA
+
+segmentation和matting有什么区别？

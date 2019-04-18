@@ -362,6 +362,10 @@ https://mp.weixin.qq.com/s/0wMTL7x87YXiin3xkf8eJA
 
 中文文本分类技术实践与分享
 
+https://mp.weixin.qq.com/s/WvgftlX_LVIrt9tE38mXkQ
+
+NLP基础任务:文本分类近年发展汇总,68页超详细解析
+
 https://mp.weixin.qq.com/s/rCBdY4AcSupppEbZhRQW6Q
 
 一文看懂深度文本分类之DPCNN原理与代码

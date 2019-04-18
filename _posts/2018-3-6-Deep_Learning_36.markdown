@@ -64,6 +64,10 @@ DeepFM
 
 ![](/images/img2/DL_recommend.jpg)
 
+这是另一个版本的演化图谱：
+
+![](/images/img2/CTR.png)
+
 ## 工具
 
 https://www.librec.net/
@@ -79,6 +83,10 @@ https://zhuanlan.zhihu.com/learningdeep
 https://mp.weixin.qq.com/s/GMHjXa2r_1SG3HsA-bcIOQ
 
 从FM推演各深度CTR预估模型
+
+https://mp.weixin.qq.com/s/Yz3vv6H4oHyZ-vX71yv5gw
+
+谷歌、阿里等10大深度学习CTR模型最全演化图谱
 
 https://zhuanlan.zhihu.com/p/26237106
 
@@ -371,15 +379,3 @@ https://zhuanlan.zhihu.com/p/57234648
 https://mp.weixin.qq.com/s/2Th2PO4rC-r4LOU46uYDjg
 
 重读Youtube深度学习推荐系统论文，字字珠玑，惊为神文
-
-https://mp.weixin.qq.com/s/mcf3Aoub6VbNwtA-Izsdbg
-
-YouTube深度学习推荐系统的十大工程问题
-
-https://mp.weixin.qq.com/s/A7Qg1gd66aksA6npJl3dNQ
-
-深度学习在搜索业务中的探索与实践
-
-https://mp.weixin.qq.com/s/wjgoH6-eJQDL1KUQD3aQUQ
-
-大众点评搜索基于知识图谱的深度学习排序实践

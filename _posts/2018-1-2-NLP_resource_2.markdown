@@ -6,7 +6,7 @@ category: resource
 
 # NLP参考资源
 
-## 文本分类
+## 文本分类（续）
 
 https://mp.weixin.qq.com/s/uL7J5cSU3P7QsFczvT1fTA
 

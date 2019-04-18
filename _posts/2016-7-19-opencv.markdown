@@ -172,23 +172,27 @@ https://mp.weixin.qq.com/s/mmvfSxjtJgx5q6Gm_3xQQw
 
 https://mp.weixin.qq.com/s/3KkucMJSde9SUf4pTp-4Kw
 
-OpenVINO视觉加速库使用一
+使用OpenVINO实现车辆与车牌检测
 
 https://mp.weixin.qq.com/s/nfi-E4IY61ivWL6jiATDHg
 
-OpenVINO视觉加速库使用二
+使用模型优化器把TF对象检测模型转换压缩
 
 https://mp.weixin.qq.com/s/X0_-NB4iY8KlQQqWhhD6OA
 
-OpenVINO视觉加速库使用三
+使用OpenVINO 推断引擎SDK实现加速
 
 https://mp.weixin.qq.com/s/BNfmU0sumvK4yoaffejeWQ
 
-OpenVINO视觉加速库使用四
+使用OpenVINO实现车辆属性与车牌识别
 
 https://mp.weixin.qq.com/s/xPox6kgy37E4c8U3UmyZ1A
 
-OpenVINO视觉加速库使用五
+在OpenVINO中开启异步执行模式视频实时分析
+
+https://mp.weixin.qq.com/s/6LivY65bNtdIfAcGMvIHXQ
+
+OpenVINO视觉加速库使用六
 
 ## blog
 
@@ -457,15 +461,3 @@ OpenCV实现图像连通组件标记与分析
 https://mp.weixin.qq.com/s/II76kX7khztkHtDIvKvHqw
 
 OpenCV中实现曲线与圆拟合
-
-https://mp.weixin.qq.com/s/HbNtWyA_EG4tLdVRueLLAA
-
-OpenCV实现0到9数字识别OCR
-
-https://mp.weixin.qq.com/s/5j-WNi4vafLDeyKqfVER0g
-
-图形图像算法中必须要了解的设计模式(1)
-
-https://mp.weixin.qq.com/s/909FlTC_ROtlziJekcRJ9Q
-
-图形图像算法中必须要了解的设计模式(2)

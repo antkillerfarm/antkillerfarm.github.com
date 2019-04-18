@@ -368,3 +368,7 @@ Python制作一款简易音乐播放器
 https://mp.weixin.qq.com/s/d2_MTvfbOFZmppej5UOwUw
 
 关于使用Python析构函数的正确姿势
+
+https://mp.weixin.qq.com/s/a4mGDzKdEs7-tAPsfyL29w
+
+Python Requests库使用指南
