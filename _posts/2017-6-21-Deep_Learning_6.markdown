@@ -6,6 +6,26 @@ category: DL
 
 # RNN（续）
 
+## RNN的训练困难
+
+理论上，RNN可以支持无限长的时间序列，然而实际情况却没这么简单。
+
+Yoshua Bengio在论文《On the difficulty of training recurrent neural networks》（http://proceedings.mlr.press/v28/pascanu13.pdf）中，给出了如下公式：
+
+$$\left\|\prod_{k<i\le t} \frac{\partial h_{i}}{\partial h_{i-1}}\right\| \le \eta^{t-k}$$
+
+并指出当$$\eta < 1$$时，RNN会Gradient Vanish，而当$$\eta > 1$$时，RNN会Gradient Explode。
+
+这里显然不考虑$$\eta > 1$$的情况，因为Gradient Explode，直接会导致训练无法收敛，从而没有实用价值。
+
+因此有实用价值的，只剩下$$\eta < 1$$了，但是Gradient Vanish又注定了RNN所谓的“记忆性”维持不了多久，一般也就5～7层左右。
+
+上述内容只是一般性的讨论，实际训练还是有很多trick的。
+
+比如，针对$$\eta > 1$$的情况，可以采用Gradient Clipping技术，通过设置梯度的上限，来避免Gradient Explode。
+
+还可使用正交初始化技术，在训练之初就将$$\eta$$调整到1附近。
+
 ## RNN的历史
 
 上面研究的RNN结构，又被称为Elman RNN。最早是Jeffrey Elman于1990年发明的。
@@ -291,23 +311,3 @@ https://blog.csdn.net/taoqick/article/details/79475350
 ## 激活函数的作用
 
 神经网络中激活函数的主要作用是提供网络的**非线性建模能力**，如不特别说明，激活函数一般而言是非线性函数。
-
-假设一个神经网络中仅包含线性卷积和全连接运算，那么该网络仅能够表达线性映射，即便增加网络的深度也依旧还是线性映射，难以有效建模实际环境中非线性分布的数据。
-
-加入非线性激活函数之后，深度神经网络才具备了分层的非线性映射学习能力。因此，激活函数是深度神经网络中不可或缺的部分。
-
->注意：其实也有采用线性激活函数的神经网络，亦被称为linear neurons。但是这些神经网络，基本只有学术价值而无实际意义。
-
-理论上来说，只要是非线性函数，都有做激活函数的可能性。然而不同的激活函数其训练成本是不同的。
-
-虽然OpenAI的探索表明连浮点误差都可以做激活函数，但是由于这个操作的不可微分性，因此他们使用了“进化策略”来训练模型，所谓“进化策略”，是诸如遗传算法之类的耗时耗力的算法。
-
-参考：
-
-https://mp.weixin.qq.com/s/d9XmDCahK6UBlYWhI0D5jQ
-
-深度线性神经网络也能做非线性计算，OpenAI使用进化策略新发现
-
-https://mp.weixin.qq.com/s/PNe2aKVMYjV_Nd7qZwGuOw
-
-理解激活函数作用，看这篇文章就够了！

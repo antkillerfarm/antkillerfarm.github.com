@@ -198,6 +198,10 @@ https://mp.weixin.qq.com/s/h8tk28IEuqB7g1e-vsyN5g
 
 2DASL：目前最好的开源人脸3D重建与密集对齐算法
 
+https://mp.weixin.qq.com/s/JmIpiSKR3AXje6DZiGImRQ
+
+三维语义分割概述及总结
+
 # 视频处理
 
 ## 视频目标分割

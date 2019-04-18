@@ -6,7 +6,45 @@ category: DL
 
 # CNN
 
-## 参考（续）
+## CNN的反向传播算法（续）
+
+https://mp.weixin.qq.com/s/dnElNURJ6xfWHJVf_yeT8w
+
+理解多层CNN中转置卷积的反向传播
+
+https://www.jianshu.com/p/f0674e48894c
+
+Tensorflow反卷积（DeConv）实现原理
+
+## 参考
+
+http://lib.csdn.net/article/deeplearning/58185
+
+BP神经网络与卷积神经网络
+
+http://blog.csdn.net/Fate_fjh/article/details/52882134
+
+卷积神经网络系列blog
+
+https://zhuanlan.zhihu.com/p/47184529
+
+卷积神经网络（CNN）详解
+
+http://mp.weixin.qq.com/s/YRwGwelyA3VOYZ4XGAjUBw
+
+CNN感受野首次可视化：深入解读及计算指南
+
+https://mp.weixin.qq.com/s/EJyG3Y4EHTGMm_Q1mY4RvA
+
+CNN入门手册（上）
+
+https://mp.weixin.qq.com/s/T3tHFdjnQh4asE0V25vTog
+
+CNN入门手册（中）
+
+https://mp.weixin.qq.com/s/chsDjS39qcoHICUNbSdQHQ
+
+长文揭秘图像处理和卷积神经网络架构
 
 https://mp.weixin.qq.com/s/nIbfiDXkqkpdLzQo2Gmc2Q
 
@@ -273,19 +311,3 @@ Hierarchical Softmax是Softmax的一个变种。这时的输出层不再是一�
 Hierarchical Softmax一般基于Huffman编码构建。在本例中，我们首先统计词频，以获得每个词所对应的Huffman编码，然后输出层会利用Huffman编码所对应的层次二叉树的路径来计算每个词的概率，并逆传播到隐藏层。
 
 由Huffman编码的特性可知，Hierarchical Softmax的计算量要小于一般的Softmax。
-
-### Negative Sampling
-
-在CBOW模型中，已知w的上下文Context(w)需要预测w，则w就是正样本，而其他词是负样本。
-
-负样本那么多，该如何选取呢？Negative Sampling就是一种对负样本采样的方法。
-
-![](/images/article/Negative_Sampling.png)
-
-上图是Negative Sampling的原理图。L轴表示的是词频分布，很明显这是一个非等距剖分。而M轴是一个等距剖分。
-
-每次生成一个M轴上的随机数，将之映射到L轴上的一个单词。映射方法如上图中的虚线所示。
-
-除了word2vec之外，类似的Word Embedding方案还有SENNA、RNN-LM、Glove等。但影响力仍以word2vec最大。
-
-Skip-Gram Negative Sampling，又被简称为SGNS。

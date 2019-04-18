@@ -317,3 +317,7 @@ https://mp.weixin.qq.com/s/NH09Pvh8vKtOGrS6Lwq3Tw
 https://mp.weixin.qq.com/s/UAPbNq_KNWCFd7p8U8HnYQ
 
 模型预测控制（MPC)
+
+https://mp.weixin.qq.com/s/0EsgWDCFGbjLv8Rn_OBG1g
+
+路径的速度解耦规划需要几步？2个“规划”带你了解轨迹生成

@@ -315,3 +315,11 @@ https://mp.weixin.qq.com/s/ErmGAsSHvCOxCn97yZ4WJQ
 https://mp.weixin.qq.com/s/Q0IUGbVcIYJMdidSVcFzFw
 
 GAN的五个神奇应用场景
+
+https://mp.weixin.qq.com/s/LJfsadhp3WGi0tLXN7jCUA
+
+GAN生成图像综述
+
+https://mp.weixin.qq.com/s/wW8kTQ7eQeCJsHC9ju8VLA
+
+One Day One GAN_keras版[DAY 1]

@@ -74,7 +74,7 @@ $$y=\Phi^{-1}\left(\int_0^x \rho(t)dt\right)$$
 
 ## 正样本分布
 
-如上所述，一般的正样本分布是很难给出概率密度函数的。然而，我们可以换个角度思考问题。
+如上所述，一般的正样本（Real Samples）分布是很难给出概率密度函数的。然而，我们可以换个角度思考问题。
 
 假设有一批服从某个指定分布的数据$$Z=(z_1,z_2,\dots,z_N)$$，根据概率论的相关定义，我们至少可以使用**离散采样**的方法，根据Z中的样本分布，来近似求出Z的指定分布。下文如无特殊指出，**均以Z中的样本分布来代替Z的指定分布，简称Z的分布**。
 
@@ -177,7 +177,7 @@ $$\left\| \frac{\partial D(y,\Theta)}{\partial y}\right\| \leq C$$
 
 KL散度和JS散度由于不是距离，数学特性并不够好。因此，Martín Arjovsky于2017年1月，提出了Wasserstein GAN。
 
-其中的一项改进就是使用Wasserstein距离替代KL散度和JS散度。Wasserstein距离的定义参看《机器学习（二十）》。
+其中的一项改进就是使用Wasserstein距离替代KL散度和JS散度。Wasserstein距离的定义参看《机器学习（二十七）》。
 
 WGAN极大程度的改善了GAN训练困难的问题，成为当前GAN研究的主流。
 
@@ -186,6 +186,12 @@ WGAN极大程度的改善了GAN训练困难的问题，成为当前GAN研究的�
 https://zhuanlan.zhihu.com/p/25071913
 
 令人拍案叫绝的Wasserstein GAN
+
+## 总结
+
+1.Real Samples可看作满足分布Z的采样集。
+
+2.GAN的目标是学习分布Z。因此，虽然GAN和RL都是无监督学习，但前者需要Real Samples，而后者可能只需要一个规则，例如AlphaZero。换句话说，GAN的监督信号隐藏在样本中，而不是标签或者规则中。
 
 ## 参考资源
 
@@ -240,7 +246,3 @@ https://mp.weixin.qq.com/s/er-VG1P8iNIcQew2gXZqGw
 https://mp.weixin.qq.com/s/BNWPTPl_vowAlQUQ7__wvQ
 
 有三说GANs
-
-https://zhuanlan.zhihu.com/p/24897387
-
-GAN的基本原理、应用和走向

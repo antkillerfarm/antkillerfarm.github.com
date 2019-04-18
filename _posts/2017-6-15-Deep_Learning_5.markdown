@@ -6,6 +6,22 @@ category: DL
 
 # 词向量（续）
 
+### Negative Sampling
+
+在CBOW模型中，已知w的上下文Context(w)需要预测w，则w就是正样本，而其他词是负样本。
+
+负样本那么多，该如何选取呢？Negative Sampling就是一种对负样本采样的方法。
+
+![](/images/article/Negative_Sampling.png)
+
+上图是Negative Sampling的原理图。L轴表示的是词频分布，很明显这是一个非等距剖分。而M轴是一个等距剖分。
+
+每次生成一个M轴上的随机数，将之映射到L轴上的一个单词。映射方法如上图中的虚线所示。
+
+除了word2vec之外，类似的Word Embedding方案还有SENNA、RNN-LM、Glove等。但影响力仍以word2vec最大。
+
+Skip-Gram Negative Sampling，又被简称为SGNS。
+
 ## doc2vec
 
 我们知道，word是sentence的基本组成单位。一个最简单也是最直接得到sentence embedding的方法是将组成sentence的所有word的embedding向量全部加起来。
@@ -279,23 +295,3 @@ $$\nabla U=\frac{\partial E}{\partial U}=\sum_t\frac{\partial e_t}{\partial U} \
 从上式可以看出，三个误差梯度实际上都是**时域的积分**。
 
 正因为RNN的状态和过去、现在都有关系，因此，RNN也被看作是一种拥有“记忆性”的神经网络。
-
-## RNN的训练困难
-
-理论上，RNN可以支持无限长的时间序列，然而实际情况却没这么简单。
-
-Yoshua Bengio在论文《On the difficulty of training recurrent neural networks》（http://proceedings.mlr.press/v28/pascanu13.pdf）中，给出了如下公式：
-
-$$\left\|\prod_{k<i\le t} \frac{\partial h_{i}}{\partial h_{i-1}}\right\| \le \eta^{t-k}$$
-
-并指出当$$\eta < 1$$时，RNN会Gradient Vanish，而当$$\eta > 1$$时，RNN会Gradient Explode。
-
-这里显然不考虑$$\eta > 1$$的情况，因为Gradient Explode，直接会导致训练无法收敛，从而没有实用价值。
-
-因此有实用价值的，只剩下$$\eta < 1$$了，但是Gradient Vanish又注定了RNN所谓的“记忆性”维持不了多久，一般也就5～7层左右。
-
-上述内容只是一般性的讨论，实际训练还是有很多trick的。
-
-比如，针对$$\eta > 1$$的情况，可以采用Gradient Clipping技术，通过设置梯度的上限，来避免Gradient Explode。
-
-还可使用正交初始化技术，在训练之初就将$$\eta$$调整到1附近。

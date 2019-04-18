@@ -242,6 +242,10 @@ https://zhuanlan.zhihu.com/p/62724053
 
 CenterNet：将目标视为点
 
+https://zhuanlan.zhihu.com/p/62789701
+
+中科院牛津华为诺亚提出CenterNet，one-stage detector可达47AP，已开源！
+
 # Flink
 
 Flink是一个流计算引擎。

@@ -4,7 +4,29 @@ title:  深度学习（七）——Deep Residual Network, Bi-directional RNN, se
 category: DL 
 ---
 
-# 神经元激活函数进阶（续）
+# 神经元激活函数进阶
+
+## 激活函数的作用（续）
+
+假设一个神经网络中仅包含线性卷积和全连接运算，那么该网络仅能够表达线性映射，即便增加网络的深度也依旧还是线性映射，难以有效建模实际环境中非线性分布的数据。
+
+加入非线性激活函数之后，深度神经网络才具备了分层的非线性映射学习能力。因此，激活函数是深度神经网络中不可或缺的部分。
+
+>注意：其实也有采用线性激活函数的神经网络，亦被称为linear neurons。但是这些神经网络，基本只有学术价值而无实际意义。
+
+理论上来说，只要是非线性函数，都有做激活函数的可能性。然而不同的激活函数其训练成本是不同的。
+
+虽然OpenAI的探索表明连浮点误差都可以做激活函数，但是由于这个操作的不可微分性，因此他们使用了“进化策略”来训练模型，所谓“进化策略”，是诸如遗传算法之类的耗时耗力的算法。
+
+参考：
+
+https://mp.weixin.qq.com/s/d9XmDCahK6UBlYWhI0D5jQ
+
+深度线性神经网络也能做非线性计算，OpenAI使用进化策略新发现
+
+https://mp.weixin.qq.com/s/PNe2aKVMYjV_Nd7qZwGuOw
+
+理解激活函数作用，看这篇文章就够了！
 
 ## ReLU的缺点
 
@@ -176,9 +198,6 @@ https://mp.weixin.qq.com/s/VSRtjIH1tvAVhGAByEH0bg
 
 https://github.com/KaimingHe/deep-residual-networks
 
->注：何恺明，清华本科+香港中文大学博士（2011）。先后在MS和Facebook担任研究员。   
->个人主页：http://kaiminghe.com/
-
 残差网络的明显特征是有着相当深的深度，从32层到152层，其深度远远超过了之前提出的深度网络结构，而后又针对小数据设计了1001层的网络结构。
 
 其简化版的结构图如下所示：
@@ -286,47 +305,3 @@ seq2seq最早用于Neural Machine Translation领域（与之相对应的有Stati
 从中发现一个问题：状态向量的维数决定了存储的语义的内容上限（显然不能指望，一个200维的向量，能够表示一部百科全书。）因此，seq2seq通常只用于短文本的翻译。
 
 在Decoder阶段，我们根据输出序列，反向修正RNN的参数，以达到训练神经网络的目的。
-
-## Beam Search Decoder
-
-https://guillaumegenthial.github.io/sequence-to-sequence.html
-
-Seq2Seq with Attention and Beam Search
-
-https://blog.csdn.net/mr_tyting/article/details/78604721
-
-Seq2Seq Learning(Encoder-Decoder,Beam Search,Attention)
-
-## 参考
-
-https://github.com/ematvey/tensorflow-seq2seq-tutorials
-
-一步步的seq2seq教程
-
-http://blog.csdn.net/sunlylorn/article/details/50607376
-
-seq2seq模型
-
-http://datartisan.com/article/detail/120.html
-
-Seq2Seq的DIY简介
-
-https://mp.weixin.qq.com/s/U5yqXBHFD9LgIQJrqOlXFw
-
-机器翻译不可不知的Seq2Seq模型
-
-http://www.cnblogs.com/Determined22/p/6650373.html
-
-DL4NLP——seq2seq+attention机制的应用：文档自动摘要（Automatic Text Summarization）
-
-https://mp.weixin.qq.com/s/m-Z0UBgmFQ4CE0yLKYoHZw
-
-seq2seq和attention如何应用到文档自动摘要
-
-http://blog.csdn.net/young_gy/article/details/73412285
-
-基于RNN的语言模型与机器翻译NMT
-
-http://karpathy.github.io/2015/05/21/rnn-effectiveness/
-
-The Unreasonable Effectiveness of Recurrent Neural Networks

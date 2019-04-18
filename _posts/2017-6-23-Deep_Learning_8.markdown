@@ -4,9 +4,51 @@ title:  深度学习（八）——CNN进化史（1）
 category: DL 
 ---
 
-# seq2seq
+# seq2seq（续）
 
-## 参考（续）
+## Beam Search Decoder
+
+https://guillaumegenthial.github.io/sequence-to-sequence.html
+
+Seq2Seq with Attention and Beam Search
+
+https://blog.csdn.net/mr_tyting/article/details/78604721
+
+Seq2Seq Learning(Encoder-Decoder,Beam Search,Attention)
+
+## 参考
+
+https://github.com/ematvey/tensorflow-seq2seq-tutorials
+
+一步步的seq2seq教程
+
+http://blog.csdn.net/sunlylorn/article/details/50607376
+
+seq2seq模型
+
+http://datartisan.com/article/detail/120.html
+
+Seq2Seq的DIY简介
+
+https://mp.weixin.qq.com/s/U5yqXBHFD9LgIQJrqOlXFw
+
+机器翻译不可不知的Seq2Seq模型
+
+http://www.cnblogs.com/Determined22/p/6650373.html
+
+DL4NLP——seq2seq+attention机制的应用：文档自动摘要（Automatic Text Summarization）
+
+https://mp.weixin.qq.com/s/m-Z0UBgmFQ4CE0yLKYoHZw
+
+seq2seq和attention如何应用到文档自动摘要
+
+http://blog.csdn.net/young_gy/article/details/73412285
+
+基于RNN的语言模型与机器翻译NMT
+
+http://karpathy.github.io/2015/05/21/rnn-effectiveness/
+
+The Unreasonable Effectiveness of Recurrent Neural Networks
 
 https://mp.weixin.qq.com/s/8u3v9XzECkwcNn5Ay-kYQQ
 
@@ -297,35 +339,3 @@ Network In Network是颜水成团队于2013年提出的。
 >颜水成，北京大学博士，新加坡国立大学副教授。奇虎360AI研究院院长。
 
 Network In Network最重要的贡献是使用Global Average Pooling替换了Full Connection。这直接促进了之后Fully Convolutional Networks的发展。
-
-参考：
-
-http://blog.csdn.net/sheng_ai/article/details/41313883
-
-Network In Network(精读)
-
-http://blog.csdn.net/zhufenghao/article/details/52526611
-
-Network In Network
-
-http://www.cnblogs.com/dmzhuo/p/5868346.html
-
-读论文“Network in Network”——ICLR 2014
-
-### ZF Net
-
-论文：
-
-《Visualizing and understandingConvolutional Networks》
-
-本文是Matthew D.Zeiler 和Rob Fergus于（纽约大学）2013年撰写的论文，主要通过Deconvnet（反卷积）来可视化卷积网络，来理解卷积网络，并调整卷积网络；本文通过Deconvnet技术，可视化Alex-net，并指出了Alex-net的一些不足，最后修改网络结构，使得分类结果提升。
-
-参考：
-
-http://blog.csdn.net/u011534057/article/details/51274862
-
-论文阅读笔记
-
-http://blog.csdn.net/whiteinblue/article/details/43312059
-
-另一篇论文阅读笔记

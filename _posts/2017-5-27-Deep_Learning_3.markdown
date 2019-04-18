@@ -8,6 +8,20 @@ category: DL
 
 ## Batch Normalization（续）
 
+![](/images/article/Gradient_Vanish.png)
+
+上图是Hinton在2015年的讲座中的例子。从中可以看出，反向传递的梯度大小不仅和激活函数有关，也和每一层的权值大小有关。
+
+通常来说，越靠近输出层，由于该层网络已被充分训练，其权值越大，反之则越小。这实际上也是梯度消失的一种原因。
+
+更一般的，如果一层的权值显著异于相邻的层，从系统的角度出发，这一层也是不稳定的。Normalization将**每一层**的权值归一化，从而改善了神经网络的性能。它的优点有：
+
+1.提高梯度在网络中的流动。Normalization能够使特征全部缩放到[0,1]，这样在反向传播时候的梯度都是在1左右，避免了梯度消失现象。
+
+2.提升学习速率。归一化后的数据能够快速的达到收敛。
+
+3.减少模型训练对初始化的依赖。
+
 参考：
 
 http://blog.csdn.net/malefactor/article/details/51476961
@@ -263,41 +277,3 @@ http://www.cnblogs.com/pinard/p/6494810.html
 http://blog.csdn.net/zy3381/article/details/44409535
 
 CNN误差反传时旋转卷积核的简明分析
-
-https://mp.weixin.qq.com/s/dnElNURJ6xfWHJVf_yeT8w
-
-理解多层CNN中转置卷积的反向传播
-
-https://www.jianshu.com/p/f0674e48894c
-
-Tensorflow反卷积（DeConv）实现原理
-
-## 参考
-
-http://lib.csdn.net/article/deeplearning/58185
-
-BP神经网络与卷积神经网络
-
-http://blog.csdn.net/Fate_fjh/article/details/52882134
-
-卷积神经网络系列blog
-
-https://zhuanlan.zhihu.com/p/47184529
-
-卷积神经网络（CNN）详解
-
-http://mp.weixin.qq.com/s/YRwGwelyA3VOYZ4XGAjUBw
-
-CNN感受野首次可视化：深入解读及计算指南
-
-https://mp.weixin.qq.com/s/EJyG3Y4EHTGMm_Q1mY4RvA
-
-CNN入门手册（上）
-
-https://mp.weixin.qq.com/s/T3tHFdjnQh4asE0V25vTog
-
-CNN入门手册（中）
-
-https://mp.weixin.qq.com/s/chsDjS39qcoHICUNbSdQHQ
-
-长文揭秘图像处理和卷积神经网络架构

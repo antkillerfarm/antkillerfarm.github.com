@@ -16,7 +16,7 @@ Deep Learning虽然在学术界的大牛看来，属于旧概念的炒作。然�
 
 《机器学习》，周志华著。
 
->注：周志华，1973年生，南京大学博士（2000年）。南京大学教授。   
+>周志华，1973年生，南京大学博士（2000年）。南京大学教授。   
 >从派系而言，周属于统计学派，对深度学习并不感冒。然而《机器学习》一书（又称西瓜书），已经成为ML入门的必读经典，因此这里也把它列为主要的参考文献之一。   
 >在深度学习统治学界的时代，周依然能用gcForest、mcODM之类的算法，撑起统计学派的大旗，堪称国内一流的学者。
 
@@ -48,7 +48,7 @@ http://www.deeplearningbook.org/
 
 https://github.com/exacity/deeplearningbook-chinese
 
->注：这本书基于markdown文件，使用tex编译而成，可作为编写大型书的代码参考项目。   
+>这本书基于markdown文件，使用tex编译而成，可作为编写大型书的代码参考项目。   
 >安装方法：   
 >`sudo apt install texlive-xetex texlive-lang-chinese texlive-science xindy`   
 >`make`
@@ -63,7 +63,7 @@ Deep Learning圈子的主要人物：
 
 ![](/images/article/DL_NB.png)
 
->注：Yann LeCun，1960年生，法国科学家。Pierre and Marie Curie University博士。Geoffrey Hinton是他博士后时代的导师。CNN的发明人。纽约大学教授，Facebook AI研究所主任。由于他的姓名发音非常东方化，因此被网友起了很多中文名如燕乐存、杨乐康等。2017.3，Yann访华期间正式公布中文名：杨立昆。
+>Yann LeCun，1960年生，法国科学家。Pierre and Marie Curie University博士。Geoffrey Hinton是他博士后时代的导师。CNN的发明人。纽约大学教授，Facebook AI研究所主任。由于他的姓名发音非常东方化，因此被网友起了很多中文名如燕乐存、杨乐康等。2017.3，Yann访华期间正式公布中文名：杨立昆。
 
 >Léon Bottou，法国科学家，随机梯度下降算法的发明人。
 
@@ -93,7 +93,7 @@ https://mp.weixin.qq.com/s/w_LKb-xOdyBsQBRGmHo6zw
 
 MP神经元模型是1943年，由Warren McCulloch和Walter Pitts提出的。
 
->注：Warren Sturgis McCulloch，1898~1969，美国神经生理学和控制论科学家。哥伦比亚大学博士，先后执教于MIT、Yale、芝加哥大学。
+>Warren Sturgis McCulloch，1898~1969，美国神经生理学和控制论科学家。哥伦比亚大学博士，先后执教于MIT、Yale、芝加哥大学。
 
 >Walter Harry Pitts, Jr.，1923~1969，美国计算神经学科学家。   
 >这个人的经历，实在是非典型。家里贫穷，大约是读不起大学，15岁的时候，到芝加哥大学旁听Bertrand Russell的讲座。Russell很看重这个年轻人，但由于他只是访问学者，于是在回国之前，将Pitts介绍给Rudolf Carnap，后者为Pitts安排了一份在学校打杂的工作。这一打杂就是五六年时间，最后凭借论文，获得芝加哥大学的准学士学位（因为他始终都不是正式学籍的学生），这也是他一生唯一的学位。   
@@ -199,7 +199,9 @@ $$\frac{\partial E_k}{\partial w_{hj}}=\frac{\partial E_k}{\partial \hat y_j^k}\
 
 ![](/images/img2/BP.png)
 
-其中$$\Delta x$$和$$\Delta w$$分别是$$\Delta$$在x和w的偏导数方向上的分量。通常情况下，$$\Delta x$$用于向上层传递梯度，而$$\Delta w$$用于更新权值w。
+其中，$$\Delta x$$和$$\Delta w$$分别是$$\Delta$$在x和w的偏导数方向上的分量。$$\Delta x$$用于向上层传递梯度，而$$\Delta w$$用于更新权值w。
+
+通常来说，我们只需要更新权值w，但少数情况下，w和x可能都需要更新，这时只要分别计算w和x的偏导，并更新即可。
 
 ## 随机初始化
 
@@ -211,19 +213,26 @@ $$\frac{\partial E_k}{\partial w_{hj}}=\frac{\partial E_k}{\partial \hat y_j^k}\
 
 2.Xavier。该方法基于Gaussian分布或均匀分布产生随机数。其中分布W的均值为零，方差公式如下：
 
-$$\text{Var}(W)=\frac{1}{n_{in}}$$
+$$\text{Var}(W)=\frac{1}{n_{in}}\tag{1}$$
 
 其中，$$n_{in}$$表示需要输入层的神经元的个数。也有如下变种：
 
-$$\text{Var}(W)=\frac{2}{n_{in}+n_{out}}$$
+$$\text{Var}(W)=\frac{2}{n_{in}+n_{out}}\tag{2}$$
 
 其中，$$n_{out}$$表示需要输出层的神经元的个数。
+
+公式1也被称作LeCun initializer，公式2也被称作Glorot initializer。
 
 3.MSRA。该方法基于零均值的Gaussian分布产生随机数。Gaussian分布的标准差为：
 
 $$\sqrt{\frac{2}{n_l}}$$
 
 其中，$$n_l=k_l^2d_{l-1}$$，$$k_l$$表示l层的filter的大小，$$d_{l-1}$$表示l-1层的filter的数量。
+
+这种方法也被称作He initializer，是何恺明发明的。
+
+>何恺明，清华本科+香港中文大学博士（2011）。先后在MS和Facebook担任研究员。   
+>个人主页：http://kaiminghe.com/
 
 参考：
 
@@ -234,9 +243,3 @@ How to initialize deep neural networks? Xavier and Kaiming initialization
 ## BP算法的缺点
 
 虽然传统的BP算法，理论上可以支持任意深度的神经网络。然而实际使用中，却很少能支持3层以上的神经网络。
-
-![](/images/article/sigmoid.png)
-
-如上图所示，sigmoid函数不是线性的，一个小的输出值的改变，对应了比较大的输入值改变。换句话说，就是输出值的梯度较大，而输入值的梯度较小。而梯度在基于梯度下降的优化问题中，是至关重要的。
-
-随着层数的增多，反向传递的残差梯度会越来越小，这样的现象，被称作**梯度消失**（Vanishing Gradient）。它导致的结果是，虽然靠近输出端的神经网络已经训练好了，但输入端的神经网络仍处于随机状态。也就是说，靠近输入端的神经网络，有和没有都是一样的效果，完全体现不了深度神经网络的优越性。

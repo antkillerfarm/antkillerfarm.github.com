@@ -186,6 +186,10 @@ https://mp.weixin.qq.com/s/N93TrVnUuvAgfcoHXevTHw
 
 FCOS: 最新的one-stage逐像素目标检测算法
 
+https://mp.weixin.qq.com/s/04h80ubIxjJbT9BxQy5FSw
+
+目标检测：Anchor-Free时代
+
 # 其它目标检测网络
 
 ## A-Fast-RCNN

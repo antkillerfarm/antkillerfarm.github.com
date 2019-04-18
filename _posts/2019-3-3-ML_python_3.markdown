@@ -306,6 +306,10 @@ Hbase万亿级存储性能优化总结
 
 # NLP参考资源+
 
+https://mp.weixin.qq.com/s/qE8dBeBT6iGBrLjJr4mN9g
+
+短文本主题建模最新综述
+
 https://mp.weixin.qq.com/s/i4u4Ty8kC0zzUpmRqj8g7A
 
 473个模型试验告诉你文本分类中的最好编码方式
