@@ -1,12 +1,52 @@
 ---
 layout: post
-title:  GAN（二）——GAN进阶
+title:  GAN（二）——GAN进阶, DCGAN, WGAN-GP, CGAN, BEGAN & EBGAN
 category: GAN & VAE 
 ---
 
 # 概况
 
 ## 参考资源（续）
+
+https://mp.weixin.qq.com/s/pgWysIGObceGVrxs85kyew
+
+白话生成对抗网络GAN，50行代码玩转GAN模型！
+
+https://mp.weixin.qq.com/s/YnOF9CCUFvtaiTY8HXYOuw
+
+深入浅出：GAN原理与应用入门介绍
+
+http://blog.csdn.net/u011534057/article/category/6396518
+
+GAN系列blog
+
+https://mp.weixin.qq.com/s/4CypEZscTfmUzOk-p_rZog
+
+生成对抗网络初学入门：一文读懂GAN的基本原理
+
+http://mp.weixin.qq.com/s/bzwG0QxnP2drqS4RwcZlBg
+
+微软详解：到底什么是生成式对抗网络GAN？
+
+https://mp.weixin.qq.com/s/GobKiuxgZv0-ufSRBpTcIA
+
+Ian Goodfellow ICCV2017演讲：解读GAN的原理与应用
+
+https://mp.weixin.qq.com/s/NDZPPA-0FhqSzRndQOhNEw
+
+Google GAN之父Ian Goodfellow 最新演讲：生成对抗网络介绍
+
+https://mp.weixin.qq.com/s/TIgRVbnZYtrGUCDNLcL1uw
+
+GAN的入门与实践
+
+https://mp.weixin.qq.com/s/er-VG1P8iNIcQew2gXZqGw
+
+一文读懂生成对抗网络
+
+https://mp.weixin.qq.com/s/BNWPTPl_vowAlQUQ7__wvQ
+
+有三说GANs
 
 https://zhuanlan.zhihu.com/p/24897387
 
@@ -48,14 +88,6 @@ https://mp.weixin.qq.com/s/LAS0KgPiVekGdQXbqlw1cQ
 
 深度学习的三大生成模型：VAE、GAN、GAN的变种
 
-https://mp.weixin.qq.com/s/N7YU-YeXiVX7gSB-mzYgnw
-
-生成式对抗网络GAN的研究进展与展望
-
-https://mp.weixin.qq.com/s/gDzti2DISq_cwGbP5T7ICQ
-
-聊聊对抗自编码器
-
 https://mp.weixin.qq.com/s/mPtv1fQd0NBgdY2b_ALNTQ
 
 机器之心GitHub项目：GAN完整理论推导与实现，Perfect！
@@ -64,21 +96,9 @@ https://mp.weixin.qq.com/s/uUSq3irEIcBM35JCYGDPfw
 
 生成对抗网络综述：从架构到训练技巧，看这篇论文就够了
 
-https://mp.weixin.qq.com/s/nuT6Glyx0-tU7WJyoPji9w
-
-GANs正在多个层面有所突破
-
 https://mp.weixin.qq.com/s/d_W0O7LNqlBuZV87Ou9uqw
 
 训练GAN的16个技巧
-
-https://mp.weixin.qq.com/s/df51nYaA-uz7vd4WbBuE8g
-
-GAN货：生成对抗网络知识资料全集
-
-https://mp.weixin.qq.com/s/cI4xZOw6eL0w9sz9Q2mSCw
-
-Ian Goodfellow盛赞：一个GAN生成ImageNet全部1000类物体
 
 https://mp.weixin.qq.com/s/uJlgx9Bq-XI49l8wwmdIsw
 
@@ -91,10 +111,6 @@ GAN系列学习(1)——前生今世
 https://mp.weixin.qq.com/s/JRyQ5vp_zDwcG3X15e32Gw
 
 GAN系列学习(2)——前生今世
-
-https://mp.weixin.qq.com/s/BCA7MmYnivuGbwyjHqDQUw
-
-手把手教你实现GAN半监督学习
 
 https://mp.weixin.qq.com/s/FL63vEAhp8mElI5RFxnbSQ
 
@@ -112,33 +128,49 @@ https://mp.weixin.qq.com/s/A66WeHH77IOCv61RHiDE0w
 
 2016年，GAN开始发力，年底时已有52个变种。2017年6月底，更达到142个变种。
 
+参考：
+
+https://github.com/hindupuravinash/the-gan-zoo
+
+GAN的各种变种
+
+GAN的变种（或者说改进）主要分为两大类：
+
+**1.修改Loss。**这一类的典型就是前述的WGAN。Sebastian Nowozin提出的f-GAN，对这一类改进进行了总结。
+
+参见：
+
+https://mp.weixin.qq.com/s/f93aCYrxlBFhRn0bgPDiTg
+
+微软剑桥研究院153页最新GAN教程
+
+>Sebastian Nowozin，微软剑桥研究院首席研究员。
+
+**2.修改网络结构。**
+
 ![](/images/article/GAN_structure.png)
 
 上图的源地址：
 
 https://github.com/hwalsuklee/tensorflow-generative-model-collections
 
+![](/images/img2/GAN.jpg)
+
+![](/images/img2/GAN_2.jpg)
+
 《Generating Reasonable and Diversified Story Ending Using Sequence to Sequence Model with Adversarial Training》，这篇论文提出的Seq2Seq+RL+GAN的组合模型，也算是让我开眼界了。
 
-![](/images/article/Seq2Seq_RL_GAN.png)
+![](/images/img2/Seq2Seq_RL_GAN.png)
 
-参考：
+## 参考
 
 https://zhuanlan.zhihu.com/p/58812258
 
 GAN万字长文综述
 
-https://github.com/hindupuravinash/the-gan-zoo
-
-GAN的各种变种
-
 https://mp.weixin.qq.com/s/gH6b5zgvWArOSfKBSIG1Ww
 
 必读！生成对抗网络GAN论文TOP 10
-
-https://mp.weixin.qq.com/s/ZIJAdOGgdrOKCdXkEBDyMA
-
-万字综述之生成对抗网络（GAN）
 
 https://zhuanlan.zhihu.com/p/34016536
 
@@ -148,6 +180,10 @@ https://mp.weixin.qq.com/s/rE_RYklz8G_Etg5Gstlhew
 
 十款神奇的GAN，总有一个适合你！
 
+https://mp.weixin.qq.com/s/N7YU-YeXiVX7gSB-mzYgnw
+
+生成式对抗网络GAN的研究进展与展望
+
 https://mp.weixin.qq.com/s/IjlIT-3FVY7IfYzNDtkkgg
 
 谷歌大脑发布GAN全景图：看百家争鸣的生成对抗网络
@@ -155,6 +191,10 @@ https://mp.weixin.qq.com/s/IjlIT-3FVY7IfYzNDtkkgg
 https://mp.weixin.qq.com/s/Y4Ags-yupq__gQZmparhsg
 
 COLING 2018⽤对抗增强的端到端模型⽣成合理且多样的故事结尾
+
+https://mp.weixin.qq.com/s/df51nYaA-uz7vd4WbBuE8g
+
+GAN货：生成对抗网络知识资料全集
 
 https://mp.weixin.qq.com/s/QRmy8f88eJcdp1xCxCI8bg
 
@@ -167,6 +207,10 @@ https://mp.weixin.qq.com/s/LHCEh4BPZ_qbSKaar19nNg
 https://mp.weixin.qq.com/s/RAlQVWMBYeddG2Mvu2bF4w
 
 生成对抗网络（GANs）最新家谱：为你揭秘GANs的前世今生
+
+https://mp.weixin.qq.com/s/NPUJ89nddF1WHfFv2nn-Hg
+
+GANs有嘻哈：一次学完10个GANs明星模型
 
 ## GAN的理论解释
 
@@ -206,119 +250,99 @@ https://mp.weixin.qq.com/s/EPwsQ_005CYNlCK_82SYWQ
 
 六种GAN评估指标的综合评估实验，迈向定量评估GAN的重要一步
 
-# GAN参考资源
+# DCGAN
 
-https://blog.csdn.net/liuxiao214/article/category/6940697
+论文：
 
-某GAN专栏
+《Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks》
 
-https://mp.weixin.qq.com/s/oCDlhzjOYTIhsr5JuoRCJQ
+![](/images/img2/DCGAN.png)
 
-IRGAN：大一统信息检索模型的博弈竞争
+DCGAN的改进主要是：
 
-https://mp.weixin.qq.com/s/4Daw-2aRmzcCMtxdvB3uYQ
+1.使用步长卷积代替上采样层，卷积在提取图像特征上具有很好的作用，并且使用卷积代替全连接层。
 
-IRGAN ：生成对抗网络在搜狗图片搜索排序中的应用
+2.上图是G网络的结构图，而D网络和G网络的结构基本是对称的。
 
-https://zhuanlan.zhihu.com/p/28342644
+3.在判别器中使用leakrelu激活函数，而不是RELU，防止梯度稀疏，生成器中仍然采用relu，但是输出层采用tanh。
 
-CycleGAN的原理与实验详解
+参考：
 
-https://zhuanlan.zhihu.com/p/30532830
+https://mp.weixin.qq.com/s/Dz5c32SnM8-Pdjb9oWxZ_Q
 
-眼见已不为实，迄今最真实的GAN：Progressive Growing of GANs
+想实现DCGAN？从制作一张门票谈起！
 
 https://mp.weixin.qq.com/s/ouLWl623r_YaZdIdpqSWcw
 
 深度卷积对抗生成网络(DCGAN)实战
 
-https://mp.weixin.qq.com/s/PkZ069S8ysY_JCQx1nzfGg
+# WGAN-GP
 
-NVIDIA新作解读：用GAN生成前所未有的高清图像（附PyTorch复现）
+论文：
 
-https://mp.weixin.qq.com/s/Q_1IUS-65ZAFt9w0RlZUpw
+《Improved Training of Wasserstein GANs》
 
-谷歌开源TFGAN：轻量级生成对抗网络工具库
+![](/images/img2/WGAN_GP.png)
 
-https://mp.weixin.qq.com/s/E28lA-fcAQ6Sp6Qv64H3TQ
+在某些情况下，weight clipping会导致weight集中在两端，这样整个网络就退化成二值网络了。为了改善这一点，WGAN-GP提出了一种叫做gradient penalty的办法，来取代weight clipping。
 
-GAN in NLP
+weight clipping对于超出limit的值，采用了简单粗暴clipping方式。而gradient penalty则偏于软性的“惩罚”，也就是说：对于超出limit的值，允许其存在，但要惩罚一下，使之靠近limit。距离越远，惩罚力度越大。
 
-https://mp.weixin.qq.com/s/7-oHa-8Q8ThcctaVOZFfew
+Lipschitz约束只关心所有的梯度都小于C，但C的值是多少，其实并不care。gradient penalty虽然并不能把所有值都约束在limit之内，但是梯度总归不会是无穷大，因此还是满足Lipschitz约束的。
 
-Facebook创意生成网络CAN，比GAN更有创造力
+# CGAN
 
-https://mp.weixin.qq.com/s/aSQ2-QxbToGF0ROyjxw2yw
+论文：
 
-萌物生成器：如何使用四种GAN制造猫图
+《Conditional Generative Adversarial Nets》
 
-http://mp.weixin.qq.com/s/UkZdUcdz7h4DqcyjSbNncw
+GAN不仅可用于无监督学习，也可用于有监督学习。Conditional GAN中的Condition实际上就是监督学习中的类别信息。
 
-zi2zi：用条件生成对抗网络玩转中文书法，绝妙汉字字体自动生成
+GAN首先是个生成模型，类别信息对于GAN的意义在于：我不仅可以生成和数据集中样本类似的fake data，而且还可以指定它的类别。
 
-http://blog.csdn.net/v_JULY_v/article/details/52683959
+类别信息和随机噪声的融合，可以采用组合编码（combined embedding）的方式，也可以采用hadamard product之类的互相关操作。
 
-没GPU也能玩梵高作画：Ubuntu tensorflow CPU版
+# BEGAN & EBGAN
 
-http://mp.weixin.qq.com/s/zNmJuevHaagKbyGFdKTwoQ
+论文：
 
-tensorflow实现基于深度学习的图像补全
+《BEGAN: Boundary Equilibrium GenerativeAdversarial Networks》
 
-https://zhuanlan.zhihu.com/p/25204020
+《Energy-based Generative Adversarial Network》
 
-条条大路通罗马LS-GAN：把GAN建立在Lipschitz密度上
+这两篇论文的思路（包括名字）都差不多，都是从AutoEncoder中获取的灵感，这里就放在一起讲了。
 
-https://zhuanlan.zhihu.com/p/27199954
+AutoEncoder包含两个部分：
 
-用GAN去除动作片中的马赛克和衣服
+**1.Encoder。**将图片编码为tensor。
 
-https://mp.weixin.qq.com/s/Qzlg1MzRT3josy2RJpQSVg
+**2.Decoder。**将tensor解码为图片。
 
-Image to Image Translation Using GAN
+对于原始的GAN来说，G网络和Decoder的结构类似，而D网络和Encoder的结构类似。所以整个网络D(G(z))就像是一个反着接的AutoEncoder。
 
-https://mp.weixin.qq.com/s/AswdyjPeKbX7yhAPloP2og
+AutoEncoder：Encoder->Decoder
 
-基于对抗学习的生成式对话模型
+GAN：Decoder->Encoder
 
-https://mp.weixin.qq.com/s/sxa0BfXtylHXzjq0YBn-Kg
+对于生成模型来说，细节是很重要的，然而原始的GAN，通常只能生成模糊的图片。如何提高图片的分辨率呢？
 
-伯克利图像迁移cycleGAN，猫狗互换效果感人
+BEGAN将D网络的结构由Encoder改为了Encoder->Decoder（也就是一个AE），即输入和输出都是图片。将Loss由KL散度改为了MSE。
 
-https://mp.weixin.qq.com/s/YXWTslQXIKVihBb2Bgtafg
+这样的做法可以类比CV中的分类网络和语义分割网络。由于Loss和图片的每个像素都直接相关，因此更利于生成细节信息。
 
-GAN在信息检索领域的应用
+类似的，这里的AE，也可以换成其他Encoder->Decoder网络，例如U-NET。
 
-https://mp.weixin.qq.com/s/0tTLotV-8w2j3VdkH-qjCQ
+影响GAN性能的还有一个问题：**模式坍塌**，即生成高度相似的样本。分类网络由于样本/类别是多对一的关系，更容易发生模式坍塌。
 
-让机器告诉你故事的结局应该是什么：利用GAN进行故事型常识阅读理解
+# Pix2Pix
 
-https://zhuanlan.zhihu.com/p/28488946
+论文：
 
-AI可能真的要代替插画师了……
+《Image-to-image translation with conditional adversarial networks》
 
-https://mp.weixin.qq.com/s/OXN8Y5truLeslX8-UWgqmg
+https://blog.csdn.net/stdcoutzyx/article/details/78820728
 
-宅男的福音：用GAN自动生成二次元萌妹子
-
-https://mp.weixin.qq.com/s/NFqTpSXtFdP43MBeb3Ovrw
-
-GAN眼中的图像翻译
-
-http://blog.csdn.net/amds123/article/details/70199708
-
-生成对抗网络GAN最近在NLP领域有哪些应用？
-
-https://mp.weixin.qq.com/s/h7lrJYQ_RqJDako8UoYK-A
-
-六种改进均未超越原版：谷歌新研究对GAN现状提出质疑
-
-https://mp.weixin.qq.com/s/dwEHorYSJuX9JapIYLHiXg
-
-BicycleGAN：图像转换多样化，大幅提升pix2pix生成图像效果
-
-https://mp.weixin.qq.com/s/W4WVHMIMKPNvt5lcCe1v4g
-
-半监督学习需要Bad GAN，清华特奖学霸与苹果AI总监提出
+Pix2Pix-基于GAN的图像翻译
 
 https://mp.weixin.qq.com/s/_PlISSOaowgvVW5msa7GlQ
 
@@ -328,58 +352,40 @@ https://mp.weixin.qq.com/s/PoSA6JXYE_OexEoJYzaX4A
 
 利用条件GANs的pix2pix进化版：高分辨率图像合成和语义操作
 
-https://mp.weixin.qq.com/s/jG7r7THhVAnJTYgDeWX2Eg
+# CycleGAN
 
-百度提出使用GAN构建语音识别新框架
+Style Transfer的基本内容可参见《深度学习（十五）》。
 
-https://mp.weixin.qq.com/s/I7axl00VZeCHJpaaITCO2Q
+除了基于纹理的Style Transfer之外，基于GAN的Style Transfer是另外一个流派。
 
-对抗学习GAN提升跨模态检索效果
+https://zhuanlan.zhihu.com/p/28342644
 
-https://mp.weixin.qq.com/s/OZWih_xfqYdeP-x9MawogA
+CycleGAN的原理与实验详解
 
-GAN做图像翻译的一点总结
+https://mp.weixin.qq.com/s/7GHBH79kWIpEBLYX-VEd7A
 
-https://zhuanlan.zhihu.com/p/32103958
+CycleGAN：图片风格，想换就换
 
-GAN调研：多极扩展（跨域和条件的GAN扩展模型调研）
+https://mp.weixin.qq.com/s/sxa0BfXtylHXzjq0YBn-Kg
 
-https://mp.weixin.qq.com/s/RZ6UbTgfn30UFaUYNtApRg
+伯克利图像迁移cycleGAN，猫狗互换效果感人
 
-如何用Masking GAN让100,000人笑起来？
+https://mp.weixin.qq.com/s/tzPCU1bxQ7NWtQ7o2PjF0g
 
-https://mp.weixin.qq.com/s/OPn4_jmJ7pUg8xa0FZvyiw
+BAIR提出MC-GAN，使用GAN实现字体风格迁移
 
-超火的漫画线稿上色AI出新版了！无监督训练，效果更美好
+https://mp.weixin.qq.com/s/A2VhfO3CkyQGCs5GqBWzOg
 
-https://mp.weixin.qq.com/s/wrxKwY2SvJZc8bRuZ_wF_A
+实景照片秒变新海诚风格漫画：清华大学提出CartoonGAN
 
-用生成对抗网络给雪人上色，探索人工智能时代的美学
+https://mp.weixin.qq.com/s/rt4uuqh8IrZTjsYXEZvxKQ
 
-https://mp.weixin.qq.com/s/lPeySqEr3pzPdZqnp1Eh8A
+阿里提出全新风格化自编码GAN，图像生成更逼真！
 
-CMU提出对抗生成网络：可实现对人脸识别模型的神经网络攻击
+https://mp.weixin.qq.com/s/3lrCRiq5zuX9yWxiQRQE9A
 
-https://mp.weixin.qq.com/s/Dz5c32SnM8-Pdjb9oWxZ_Q
+CartoonGAN不靠手绘，也能成为漫画达人
 
-想实现DCGAN？从制作一张门票谈起！
+https://mp.weixin.qq.com/s/i3lNcbOblgVKUTBtwKIFwg
 
-https://mp.weixin.qq.com/s/f5dGUJw3bv8WppPZVzqyAA
-
-反GAN传统，Petuum自动驾驶新研究提出从复杂真实图像生成简单虚拟表征以预测驾驶指令
-
-https://mp.weixin.qq.com/s/SvIC6DXUKH93jU9R-7fcyw
-
-CNN对抗补丁之谜
-
-https://mp.weixin.qq.com/s/V1XX8WWstR00m_OimMrDDw
-
-微软亚洲研究院论文解读：GAN在网络特征学习中的应用
-
-https://mp.weixin.qq.com/s/YNkx03D2Ok2xyMpPI0XXKg
-
-Petuum新研究提出形义感知型Grad-GAN：可基于虚拟游戏生成更具真实感的城市场景
-
-http://mp.weixin.qq.com/s/RlpI3hCKjcJ8VHSbBXf84g
-
-用生成对抗网络解决NLP问题：谷歌大脑提出MaskGAN
+AI秒造全球房源：StyleGAN快速生成假房子，连图说都配好了！

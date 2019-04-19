@@ -22,11 +22,11 @@ http://www.iangoodfellow.com/slides/2016-12-04-NIPS.pdf
 
 ## 通俗解释
 
+![](/images/article/GAN.png)
+
 对于GAN来说，最通俗的解释就是**“伪造者-鉴别者”**的解释，如艺术画的伪造者和鉴别者。一开始伪造者和鉴别者的水平都不高，但是鉴别者还是比较容易鉴别出伪造者伪造出来的艺术画。但随着伪造者对伪造技术的学习后，其伪造的艺术画会让鉴别者识别错误；或者随着鉴别者对鉴别技术的学习后，能够很简单的鉴别出伪造者伪造的艺术画。这是一个双方不断学习技术，以达到最高的伪造和鉴别水平的过程。
 
 从上面的解释可以看出，GAN实际上是一种**零和游戏上的无监督算法**。
-
-![](/images/article/GAN.png)
 
 ## 基本原理
 
@@ -152,14 +152,32 @@ $$\begin{aligned}\Theta =& \mathop{\arg\min}_{\Theta} L = \mathop{\arg\min}_{\Th
 然而有两个目标并不容易平衡，所以干脆都取同样的样本数B（一个batch），然后一起训练就好：
 
 $$\begin{aligned}\Theta =& \mathop{\arg\min}_{\Theta} L_1\\ 
-=&\mathop{\arg\min}_{\Theta} \frac{1}{B}\sum_{i=1}^B\left[D\Big(z_i,\Theta\Big)-D\Big(y_i,\Theta\Big)\right]\end{aligned}$$
+=&\mathop{\arg\min}_{\Theta} \frac{1}{B}\sum_{i=1}^B\left[D\Big(z_i,\Theta\Big)-D\Big(y_i,\Theta\Big)\right]\end{aligned}\tag{1}$$
 
 ### Step2
 
 $$G(X,\theta)$$希望它生成的样本越接近真实样本越好，因此这时候把$$\Theta$$固定，只训练$$\theta$$让L越来越小：
 
 $$\begin{aligned}\theta =& \mathop{\arg\min}_{\theta} L_2\\ 
-=&\mathop{\arg\min}_{\theta} \frac{1}{B}\sum_{i=1}^B\left[D\Big(G(x_i,\theta),\Theta\Big)\right]\end{aligned}$$
+=&\mathop{\arg\min}_{\theta} \frac{1}{B}\sum_{i=1}^B\left[D\Big(G(x_i,\theta),\Theta\Big)\right]\end{aligned}\tag{2}$$
+
+## 小结
+
+![](/images/img2/GAN.png)
+
+1.Real Samples可看作满足分布Z的采样集。
+
+2.GAN的目标是学习分布Z。因此，虽然GAN和RL都是无监督学习，但前者需要Real Samples，而后者可能只需要一个规则，例如AlphaZero。换句话说，GAN的监督信号隐藏在样本中，而不是标签或者规则中。
+
+![](/images/img2/GAN_vs_RL.png)
+
+3.使用G网络将noise变成fake_data。
+
+4.用fake_data和Real Samples共同训练D网络，分别可得到$$D_{fake}$$和$$D_{real}$$。使用公式1计算总Loss：D。
+
+5.固定D网络参数，使用公式2训练网络D(G)中G的参数。
+
+6.相对于监督学习，生成模型G的参数更新不是来自于数据样本本身（不是对数据的似然性进行优化），而是来自于判别模型D的一个反传梯度。因此我们常常需要D更新K次，G才能更新1次。
 
 ## Lipschitz约束
 
@@ -181,17 +199,25 @@ KL散度和JS散度由于不是距离，数学特性并不够好。因此，Mart
 
 WGAN极大程度的改善了GAN训练困难的问题，成为当前GAN研究的主流。
 
+论文：
+
+《Wasserstein GAN》
+
+此外，还有使用最小二乘代替JS散度的GAN——LSGAN。
+
 参考：
 
 https://zhuanlan.zhihu.com/p/25071913
 
 令人拍案叫绝的Wasserstein GAN
 
-## 总结
+https://zhuanlan.zhihu.com/p/25204020
 
-1.Real Samples可看作满足分布Z的采样集。
+条条大路通罗马LS-GAN：把GAN建立在Lipschitz密度上
 
-2.GAN的目标是学习分布Z。因此，虽然GAN和RL都是无监督学习，但前者需要Real Samples，而后者可能只需要一个规则，例如AlphaZero。换句话说，GAN的监督信号隐藏在样本中，而不是标签或者规则中。
+## 其他细节
+
+1.GAN的目的是在高维非凸的参数空间中找到纳什均衡点，GAN的纳什均衡点是一个鞍点。而SGD只会找到局部极小值，所以GAN中的优化器不常用SGD。
 
 ## 参考资源
 
@@ -202,47 +228,3 @@ GAN的数学原理
 http://www.jianshu.com/p/e2d2d7cbbe49
 
 50行代码实现GAN
-
-https://mp.weixin.qq.com/s/pgWysIGObceGVrxs85kyew
-
-白话生成对抗网络GAN，50行代码玩转GAN模型！
-
-https://mp.weixin.qq.com/s/YnOF9CCUFvtaiTY8HXYOuw
-
-深入浅出：GAN原理与应用入门介绍
-
-http://blog.csdn.net/u011534057/article/category/6396518
-
-GAN系列blog
-
-https://mp.weixin.qq.com/s/f93aCYrxlBFhRn0bgPDiTg
-
-微软剑桥研究院153页最新GAN教程
-
-https://mp.weixin.qq.com/s/4CypEZscTfmUzOk-p_rZog
-
-生成对抗网络初学入门：一文读懂GAN的基本原理
-
-http://mp.weixin.qq.com/s/bzwG0QxnP2drqS4RwcZlBg
-
-微软详解：到底什么是生成式对抗网络GAN？
-
-https://mp.weixin.qq.com/s/GobKiuxgZv0-ufSRBpTcIA
-
-Ian Goodfellow ICCV2017演讲：解读GAN的原理与应用
-
-https://mp.weixin.qq.com/s/NDZPPA-0FhqSzRndQOhNEw
-
-Google GAN之父Ian Goodfellow 最新演讲：生成对抗网络介绍
-
-https://mp.weixin.qq.com/s/TIgRVbnZYtrGUCDNLcL1uw
-
-GAN的入门与实践
-
-https://mp.weixin.qq.com/s/er-VG1P8iNIcQew2gXZqGw
-
-一文读懂生成对抗网络
-
-https://mp.weixin.qq.com/s/BNWPTPl_vowAlQUQ7__wvQ
-
-有三说GANs

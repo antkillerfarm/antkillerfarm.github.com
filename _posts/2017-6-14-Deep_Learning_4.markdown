@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四）——Autoencoder, 词向量
+title:  深度学习（四）——AutoEncoder, 词向量
 category: DL 
 ---
 
@@ -114,7 +114,7 @@ https://mp.weixin.qq.com/s/zvPNuP_LT7pWIgoxzfeUWw
 
 综述卷积神经网络：从基础技术到研究前景
 
-# Autoencoder
+# AutoEncoder
 
 ## Basic AE
 
@@ -138,7 +138,7 @@ Autoencoder的结构如上图所示。它的特殊之处在于：
 
 和Autoencoder类似的神经网络还有：Denoising Autoencoder（DAE）、Variational Autoencoder（VAE）、Sparse Autoencoder（SAE）。
 
-## Stacked Autoencoders
+## Stacked AutoEncoders
 
 AE不仅可以单独使用，还可以堆叠式的使用。
 

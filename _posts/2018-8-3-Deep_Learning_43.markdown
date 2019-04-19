@@ -108,14 +108,6 @@ https://mp.weixin.qq.com/s/TiXILy4l6Q3dxVwapyd9KQ
 
 二维码太丑？用风格迁移生成个性二维码了解一下
 
-https://mp.weixin.qq.com/s/7GHBH79kWIpEBLYX-VEd7A
-
-CycleGAN：图片风格，想换就换
-
-https://mp.weixin.qq.com/s/tzPCU1bxQ7NWtQ7o2PjF0g
-
-BAIR提出MC-GAN，使用GAN实现字体风格迁移
-
 https://mp.weixin.qq.com/s/RMz5fwt72j2ufrGpdD6POw
 
 带自注意力机制的生成对抗网络，实现效果怎样？
@@ -127,10 +119,6 @@ https://mp.weixin.qq.com/s/PVM7wMsT6TpJkQUlt7d2Aw
 https://mp.weixin.qq.com/s/12_Gl4snq-LdMHJSZn4oOA
 
 换脸AI升级版：面部表情、身体动作、视线方向都能实时迁移
-
-https://mp.weixin.qq.com/s/A2VhfO3CkyQGCs5GqBWzOg
-
-实景照片秒变新海诚风格漫画：清华大学提出CartoonGAN
 
 https://mp.weixin.qq.com/s/lPzPfjYiAsNvVcVWdL08dA
 
@@ -192,10 +180,6 @@ https://mp.weixin.qq.com/s/MFKhmHcaQvufdRawFqisjA
 
 Distill详述“可微图像参数化“：神经网络可视化和风格迁移利器！
 
-https://mp.weixin.qq.com/s/rt4uuqh8IrZTjsYXEZvxKQ
-
-阿里提出全新风格化自编码GAN，图像生成更逼真！
-
 https://mp.weixin.qq.com/s/VFq3BWLpzyKZ3sqVWf1HKA
 
 从换脸到换姿势，AI在图像处理的道路上越走越魔幻
@@ -231,10 +215,6 @@ pix2pix 3D版：几笔线条生成超炫猫咪霹雳舞！
 https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650748774&idx=4&sn=efb794e4e418493f17138e7fa7eb84ab
 
 这种两阶段深度着色模型，为黑白照披上了彩衣
-
-https://mp.weixin.qq.com/s/3lrCRiq5zuX9yWxiQRQE9A
-
-CartoonGAN不靠手绘，也能成为漫画达人
 
 https://mp.weixin.qq.com/s/BWBrso7O1O3Rfxa4QWZH4g
 
@@ -331,10 +311,6 @@ https://mp.weixin.qq.com/s/MePEEuwH-e5c2hwiEXo2wg
 https://mp.weixin.qq.com/s/Pmr2yPZ3Mi32W5JuJCco_A
 
 用英伟达StyleGAN生成老婆吧，他生成了一百多只明日香
-
-https://mp.weixin.qq.com/s/i3lNcbOblgVKUTBtwKIFwg
-
-AI秒造全球房源：StyleGAN快速生成假房子，连图说都配好了！
 
 https://mp.weixin.qq.com/s/4hKIh77UfsuJCSKwtvpq3Q
 
