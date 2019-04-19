@@ -122,6 +122,16 @@ https://mp.weixin.qq.com/s/A66WeHH77IOCv61RHiDE0w
 
 # GAN进阶
 
+## 传统GAN的局限
+
+**1.没有用户控制（user control）能力。**
+
+在传统的GAN里，输入一个随机噪声，就会输出一幅随机图像。
+
+但用户是有想法的，我们想输出的图像是我们想要的那种图像，和我们的输入是对应的、有关联的。比如输入一只喵的草图，输出同一形态的喵的真实图片。
+
+**2. 低分辨率（Low resolution）和低质量（Low quality）问题。**
+
 ## GAN的发展
 
 最早的GAN出现在2014年6月，但直到2015年底，也只有5个变种，发展并不迅速。
@@ -333,59 +343,3 @@ BEGAN将D网络的结构由Encoder改为了Encoder->Decoder（也就是一个AE�
 类似的，这里的AE，也可以换成其他Encoder->Decoder网络，例如U-NET。
 
 影响GAN性能的还有一个问题：**模式坍塌**，即生成高度相似的样本。分类网络由于样本/类别是多对一的关系，更容易发生模式坍塌。
-
-# Pix2Pix
-
-论文：
-
-《Image-to-image translation with conditional adversarial networks》
-
-https://blog.csdn.net/stdcoutzyx/article/details/78820728
-
-Pix2Pix-基于GAN的图像翻译
-
-https://mp.weixin.qq.com/s/_PlISSOaowgvVW5msa7GlQ
-
-条件GAN高分辨率图像合成与语义编辑pix2pixHD
-
-https://mp.weixin.qq.com/s/PoSA6JXYE_OexEoJYzaX4A
-
-利用条件GANs的pix2pix进化版：高分辨率图像合成和语义操作
-
-# CycleGAN
-
-Style Transfer的基本内容可参见《深度学习（十五）》。
-
-除了基于纹理的Style Transfer之外，基于GAN的Style Transfer是另外一个流派。
-
-https://zhuanlan.zhihu.com/p/28342644
-
-CycleGAN的原理与实验详解
-
-https://mp.weixin.qq.com/s/7GHBH79kWIpEBLYX-VEd7A
-
-CycleGAN：图片风格，想换就换
-
-https://mp.weixin.qq.com/s/sxa0BfXtylHXzjq0YBn-Kg
-
-伯克利图像迁移cycleGAN，猫狗互换效果感人
-
-https://mp.weixin.qq.com/s/tzPCU1bxQ7NWtQ7o2PjF0g
-
-BAIR提出MC-GAN，使用GAN实现字体风格迁移
-
-https://mp.weixin.qq.com/s/A2VhfO3CkyQGCs5GqBWzOg
-
-实景照片秒变新海诚风格漫画：清华大学提出CartoonGAN
-
-https://mp.weixin.qq.com/s/rt4uuqh8IrZTjsYXEZvxKQ
-
-阿里提出全新风格化自编码GAN，图像生成更逼真！
-
-https://mp.weixin.qq.com/s/3lrCRiq5zuX9yWxiQRQE9A
-
-CartoonGAN不靠手绘，也能成为漫画达人
-
-https://mp.weixin.qq.com/s/i3lNcbOblgVKUTBtwKIFwg
-
-AI秒造全球房源：StyleGAN快速生成假房子，连图说都配好了！
