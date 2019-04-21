@@ -100,6 +100,22 @@ $$k\le (D/\gamma)^2$$
 
 # TensorFlow+
 
+https://mp.weixin.qq.com/s/OVWbxBNc4i0_5jgy06xS1A
+
+基于Tensorflow Estimators的文本分类
+
+https://mp.weixin.qq.com/s/c_2_9gvOynHaVW6pi4qQjQ
+
+用TensorFlow让机器人唱首歌给你听
+
+https://mp.weixin.qq.com/s/hn-LqyREkusxP2TOWfTJ6g
+
+使用TensorFlow官方Java API调用TensorFlow模型
+
+https://mp.weixin.qq.com/s/kS92vYyeHLc38RGc_4CZbg
+
+如何应用TFGAN快速实践生成对抗网络？
+
 https://mp.weixin.qq.com/s/hquOoKeeHQXqWcHM6Bkvbw
 
 如何训练一个简单的音频识别网络

@@ -88,6 +88,10 @@ https://zhuanlan.zhihu.com/p/33088748
 
 数据集和评价指标介绍
 
+https://mp.weixin.qq.com/s/9hoM_yF96XxSbQHEP6oasw
+
+怎样生成语言才能更自然，斯坦福提出超越Perplexity的评估新方法
+
 # 决策树
 
 Decision Tree讲的最好的，首推周志华的《机器学习》。这里只对要点进行备忘。

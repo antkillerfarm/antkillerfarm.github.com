@@ -1,12 +1,26 @@
 ---
 layout: post
-title:  深度学习（七）——Deep Residual Network, Bi-directional RNN, seq2seq
+title:  深度学习（七）——神经元激活函数进阶, Deep Residual Network, Bi-directional RNN
 category: DL 
 ---
 
+# LSTM（续）
+
+https://mp.weixin.qq.com/s/m_cOjUHwvW496Gv9_aYgpA
+
+LSTM和循环神经网络基础教程
+
+https://blog.csdn.net/taoqick/article/details/79475350
+
+学会区分RNN的output和state
+
 # 神经元激活函数进阶
 
-## 激活函数的作用（续）
+在《深度学习（二）》中，我们探讨了ReLU相对于sigmoid函数的改进，以及一些保证深度神经网络能够训练的措施。然而即便如此，深度神经网络的训练仍然是一件非常困难的事情，还需要更多的技巧和方法。
+
+## 激活函数的作用
+
+神经网络中激活函数的主要作用是提供网络的**非线性建模能力**，如不特别说明，激活函数一般而言是非线性函数。
 
 假设一个神经网络中仅包含线性卷积和全连接运算，那么该网络仅能够表达线性映射，即便增加网络的深度也依旧还是线性映射，难以有效建模实际环境中非线性分布的数据。
 
@@ -291,17 +305,3 @@ ResNet架构可逆！多大等提出性能优越的可逆残差网络
 https://mp.weixin.qq.com/s/_CENjzEK1kjsFpvX0H5gpQ
 
 结合堆叠与深度转换的新型神经翻译架构：爱丁堡大学提出BiDeep RNN
-
-# seq2seq
-
-seq2seq最早用于Neural Machine Translation领域（与之相对应的有Statistical Machine Translation）。训练后的seq2seq模型，可以根据输入语句，自动生成翻译后的输出语句。
-
-![](/images/article/seq2seq.png)
-
-上图是seq2seq的结构图。可以看出seq2seq实际上是一种Encoder-Decoder结构。
-
-在Encoder阶段，RNN依次读入输入序列。但由于这时，没有输出序列与之对应，因此这仅仅相当于一个对隐层的编码过程，即将句子的语义编码为隐层的状态向量。
-
-从中发现一个问题：状态向量的维数决定了存储的语义的内容上限（显然不能指望，一个200维的向量，能够表示一部百科全书。）因此，seq2seq通常只用于短文本的翻译。
-
-在Decoder阶段，我们根据输出序列，反向修正RNN的参数，以达到训练神经网络的目的。

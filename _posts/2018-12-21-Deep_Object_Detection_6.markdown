@@ -238,13 +238,9 @@ https://mp.weixin.qq.com/s/bzgMWR2kzAI9NeXEY92GmA
 
 目标检测任务的优化策略tricks
 
-https://zhuanlan.zhihu.com/p/62724053
+https://mp.weixin.qq.com/s/0_ap6CsBlz4pvx21c57-ag
 
-CenterNet：将目标视为点
-
-https://zhuanlan.zhihu.com/p/62789701
-
-中科院牛津华为诺亚提出CenterNet，one-stage detector可达47AP，已开源！
+旷视研究院提出新型损失函数：改善边界框模糊问题
 
 # Flink
 

@@ -1,10 +1,22 @@
 ---
 layout: post
-title:  深度学习（八）——CNN进化史（1）
+title:  深度学习（八）——seq2seq, CNN进化史（1）
 category: DL 
 ---
 
-# seq2seq（续）
+# seq2seq
+
+seq2seq最早用于Neural Machine Translation领域（与之相对应的有Statistical Machine Translation）。训练后的seq2seq模型，可以根据输入语句，自动生成翻译后的输出语句。
+
+![](/images/article/seq2seq.png)
+
+上图是seq2seq的结构图。可以看出seq2seq实际上是一种Encoder-Decoder结构。
+
+在Encoder阶段，RNN依次读入输入序列。但由于这时，没有输出序列与之对应，因此这仅仅相当于一个对隐层的编码过程，即将句子的语义编码为隐层的状态向量。
+
+从中发现一个问题：状态向量的维数决定了存储的语义的内容上限（显然不能指望，一个200维的向量，能够表示一部百科全书。）因此，seq2seq通常只用于短文本的翻译。
+
+在Decoder阶段，我们根据输出序列，反向修正RNN的参数，以达到训练神经网络的目的。
 
 ## Beam Search Decoder
 
@@ -311,31 +323,3 @@ http://blog.csdn.net/xbinworld/article/details/50897870
 http://www.jianshu.com/p/8e269451795d
 
 神经网络瘦身：SqueezeNet
-
-http://blog.csdn.net/shenxiaolu1984/article/details/51444525
-
-超轻量级网络SqueezeNet算法详解
-
-https://mp.weixin.qq.com/s/euppu_2rhujlWz1z5S5nYA
-
-纵览轻量化卷积神经网络：SqueezeNet、MobileNet、ShuffleNet、Xception
-
-https://mp.weixin.qq.com/s/rkTL1cj7tG5FaLP9cYRb4A
-
-CNN模型之SqueezeNet
-
-## 其他知名CNN
-
-### Network In Network
-
-Network In Network是颜水成团队于2013年提出的。
-
-论文：
-
-《Network In Network》
-
-![](/images/article/nin.png)
-
->颜水成，北京大学博士，新加坡国立大学副教授。奇虎360AI研究院院长。
-
-Network In Network最重要的贡献是使用Global Average Pooling替换了Full Connection。这直接促进了之后Fully Convolutional Networks的发展。

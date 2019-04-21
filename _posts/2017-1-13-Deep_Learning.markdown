@@ -157,6 +157,10 @@ https://mp.weixin.qq.com/s/DkAFMDOnJKkdpV7bnkSZqQ
 
 洪小文：以科学的方式赤裸裸地剖析AI（四）：未来是人工智能+人类智能
 
+https://www.visualcapitalist.com/ai-revolution-infographic/
+
+Visualizing the AI Revolution in One Infographic
+
 # BP算法
 
 单层神经网络的学习算法最早由Donald Olding Hebb提出，因此又被叫做Hebb算法。但是这种算法无法扩展到多层神经网络，这最终导致了AI的第一个冬天，直到BP算法的出现。
@@ -235,17 +239,3 @@ $$\sqrt{\frac{2}{n_l}}$$
 >个人主页：http://kaiminghe.com/
 
 何恺明在训练ResNet的时候发现Xavier方法对于ReLU激活不是太有效，故而提出了新方法。
-
-参考：
-
-https://pouannes.github.io/blog/initialization/
-
-How to initialize deep neural networks? Xavier and Kaiming initialization
-
-https://mp.weixin.qq.com/s/_wt-zTpbd25OL3os0X6cJg
-
-神经网络中的权重初始化一览：从基础到Kaiming
-
-## BP算法的缺点
-
-虽然传统的BP算法，理论上可以支持任意深度的神经网络。然而实际使用中，却很少能支持3层以上的神经网络。

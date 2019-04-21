@@ -404,7 +404,7 @@ https://blog.csdn.net/w174504744/article/details/73187697
 
 ZeroMQ
 
-# 知识图谱参考资源+
+# 知识图谱参考资源
 
 https://mp.weixin.qq.com/s/7LFkOzkD1-PsNNAr5DAETg
 

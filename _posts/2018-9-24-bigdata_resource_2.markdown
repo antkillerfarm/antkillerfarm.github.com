@@ -300,6 +300,10 @@ https://zhuanlan.zhihu.com/p/40785841
 
 ## 无人驾驶
 
+https://mp.weixin.qq.com/s/YlC4fbn8O15JdNsVTnBVOw
+
+无人驾驶数据集汇总
+
 http://www.cvlibs.net/datasets/kitti/
 
 KITTI Vision Benchmark Suite：一个自动驾驶方面的数据库。包括GPS、雷达、摄像头等数据。
@@ -383,21 +387,3 @@ https://mp.weixin.qq.com/s/h38VZnInkuOjkgcEmsTtMg
 https://mp.weixin.qq.com/s/8wiHVMhKjzlg8BqMMLLgYw
 
 神经网络也能解数学题，DeepMind发布千万数学题海数据集
-
-# TensorFlow
-
-https://mp.weixin.qq.com/s/OVWbxBNc4i0_5jgy06xS1A
-
-基于Tensorflow Estimators的文本分类
-
-https://mp.weixin.qq.com/s/c_2_9gvOynHaVW6pi4qQjQ
-
-用TensorFlow让机器人唱首歌给你听
-
-https://mp.weixin.qq.com/s/hn-LqyREkusxP2TOWfTJ6g
-
-使用TensorFlow官方Java API调用TensorFlow模型
-
-https://mp.weixin.qq.com/s/kS92vYyeHLc38RGc_4CZbg
-
-如何应用TFGAN快速实践生成对抗网络？

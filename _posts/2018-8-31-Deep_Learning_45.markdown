@@ -232,6 +232,10 @@ https://zhuanlan.zhihu.com/p/62523100
 
 NAS之Randomly Wired Neural Networks
 
+https://mp.weixin.qq.com/s/20jDhSv1wazb9UD_bYRXFQ
+
+用神经架构搜索实现更好的目标检测
+
 # 图像超分辨率进阶
 
 https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
@@ -317,17 +321,3 @@ https://mp.weixin.qq.com/s/Rr4AKGjZNyV3PDoRBVH-lw
 https://mp.weixin.qq.com/s/PIq78vhNQxAKntnZilL4pQ
 
 分割、检测与定位，高分辨率网络显神威！这会是席卷深度学习的通用结构吗？
-
-# 深度推荐系统+
-
-https://mp.weixin.qq.com/s/mcf3Aoub6VbNwtA-Izsdbg
-
-YouTube深度学习推荐系统的十大工程问题
-
-https://mp.weixin.qq.com/s/A7Qg1gd66aksA6npJl3dNQ
-
-深度学习在搜索业务中的探索与实践
-
-https://mp.weixin.qq.com/s/wjgoH6-eJQDL1KUQD3aQUQ
-
-大众点评搜索基于知识图谱的深度学习排序实践

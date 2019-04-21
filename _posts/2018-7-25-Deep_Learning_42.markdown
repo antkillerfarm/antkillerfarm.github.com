@@ -182,6 +182,10 @@ https://mp.weixin.qq.com/s/BYAmDulUKJLE-rb-Kh8Xmg
 
 CSP行人检测：无锚点框的检测新思路
 
+https://mp.weixin.qq.com/s/FodjDqc30XuT4fV3XPVy8g
+
+一个更加强力的ReID Baseline
+
 # 人脸检测/识别进阶
 
 https://mp.weixin.qq.com/s/-G94Mj-8972i2HtEcIZDpA
@@ -367,15 +371,3 @@ https://mp.weixin.qq.com/s/-VknGwKKY14cT-lZ7sC43A
 https://mp.weixin.qq.com/s/bAlaCWg4OEprpoZqQFQg1w
 
 百度提出PyramidBox人脸检测算法
-
-https://mp.weixin.qq.com/s/CYZvFb7kryE-8HV3teGRzA
-
-有效遮挡检测的鲁棒人脸识别
-
-https://mp.weixin.qq.com/s/XTIl505glmfCItuiwuPLwg
-
-人脸聚类——Linkage Based Face Clustering via GCN
-
-https://mp.weixin.qq.com/s/CR4Nf_RklcXA45mswPv8Zw
-
-腾讯优图开源人脸检测算法DSFD，刷新两项数据集纪录

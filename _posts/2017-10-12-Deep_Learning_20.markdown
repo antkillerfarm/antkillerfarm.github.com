@@ -38,6 +38,10 @@ http://blog.csdn.net/zijinxuxu/article/details/67638290
 
 论文中文版blog
 
+https://mp.weixin.qq.com/s/_Sz8u7A6_01e_Xbkvuoscg
+
+快速道路场景分割—ENet
+
 # Global Convolutional Network
 
 Global Convolutional Network是孙剑团队的Chao Peng于2017年提出的。

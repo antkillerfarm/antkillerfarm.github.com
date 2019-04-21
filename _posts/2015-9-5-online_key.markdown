@@ -289,6 +289,10 @@ https://mp.weixin.qq.com/s/Emlzfgoo99T9xAsTKJRQXg
 
 一文看懂虚假新闻检测
 
+https://mp.weixin.qq.com/s/8qFGiMjIHXSwozDmTe7XbA
+
+《打击假新闻: 识别和缓解技术调查》
+
 https://mp.weixin.qq.com/s/aEhLCkEnImubZlwEP2ZHBQ
 
 从本体论开始说起，运营商关系图谱的构建及应用

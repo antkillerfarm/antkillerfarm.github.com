@@ -177,3 +177,7 @@ Google又发大招：高效实时实现视频目标检测
 https://mp.weixin.qq.com/s/ySAfdII8291hvTxUBtE5qA
 
 详解爱奇艺ZoomAI视频增强技术的应用
+
+https://mp.weixin.qq.com/s/l6WMJnrGNNK4A1cTD2drcg
+
+视频跟踪新思路，完全无需手工标注。这是一篇Visual Tracking和Optical Flow Estimation相互结合的论文

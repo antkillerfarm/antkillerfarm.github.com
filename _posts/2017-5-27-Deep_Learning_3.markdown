@@ -4,9 +4,23 @@ title:  深度学习（三）——Neural Network Zoo, CNN
 category: DL 
 ---
 
-# 深度学习常用术语解释
+# 深度学习常用术语解释（续）
 
-## Batch Normalization（续）
+## Batch Normalization
+
+Batch Normalization是Google提出的一种神经网络优化技巧。
+
+原始论文：
+
+《Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift》
+
+![](/images/article/normalize.png)
+
+上图直观的展示了Normalize的效果。
+
+![](/images/article/whiten.png)
+
+与Normalization相关的概念，还有Decorrelate和Whiten。
 
 ![](/images/article/Gradient_Vanish.png)
 
@@ -255,25 +269,3 @@ Implementing convolution as a matrix multiplication（中文blog）
 其对应的梯度反向传播公式为：
 
 $$\frac{\partial Loss}{\partial x} = \frac{\partial y^T}{\partial x}\cdot \frac{\partial Loss}{\partial y} = C^T \cdot \frac{\partial Loss}{\partial y}$$
-
-因此：
-
-正向：$$Y=X*K$$
-
-反向：$$\Delta X = \Delta Y * rot_{180}(K)$$
-
-卷积的反向传播，有时也被称为反卷积（Deconvolution）。
-
-![](/images/article/dcign.png)
-
-上图是Deep convolutional inverse graphics networks的结构图。DCIGN实际上是一个正向CNN连上一个反向CNN，以实现图片合成的目的。其原理可参考《深度学习（四）》中的Autoencoder。
-
-参见：
-
-http://www.cnblogs.com/pinard/p/6494810.html
-
-卷积神经网络(CNN)反向传播算法
-
-http://blog.csdn.net/zy3381/article/details/44409535
-
-CNN误差反传时旋转卷积核的简明分析

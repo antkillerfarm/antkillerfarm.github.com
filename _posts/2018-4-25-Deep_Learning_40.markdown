@@ -124,6 +124,10 @@ https://github.com/memoiry/Awesome-model-compression-and-acceleration
 
 模型压缩与加速相关资源汇总
 
+https://mp.weixin.qq.com/s/bndECrtEcNCkCF5EG0wO-A
+
+移动端机器学习资源合集
+
 https://zhuanlan.zhihu.com/p/58805980
 
 深度学习的模型加速与模型裁剪方法

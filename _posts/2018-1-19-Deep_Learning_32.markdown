@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十二）——NN Quantization
+title:  深度学习（三十二）——NN Quantization, 点云
 category: DL 
 ---
 
@@ -225,3 +225,47 @@ https://mp.weixin.qq.com/s/7dzQhgblEm-kzRnpddweSw
 https://mp.weixin.qq.com/s/XzLJzfvpP93cDYplf6-LXA
 
 港科腾讯等提出Bi-Real net：超XNOR-net 10%的ImageNet分类精度
+
+# 点云
+
+## PCL
+
+The Point Cloud Library是一个点云处理的库。
+
+官网：
+
+http://www.pointclouds.org/
+
+## 参考
+
+https://mp.weixin.qq.com/s/f44TkWXklGONCuXnIuTbXg
+
+无人驾驶汽车系统入门：基于VoxelNet的激光雷达点云车辆检测及ROS实现
+
+https://mp.weixin.qq.com/s/_lK-DPldCYGcicV7O0njfg
+
+上海交大卢策吾团队开源PointSIFT刷新点云语义分割记录
+
+https://zhuanlan.zhihu.com/p/41287237
+
+点云感知CVPR 2018论文总结
+
+https://mp.weixin.qq.com/s/fPj4wMtiFX55c_UjNsQnBg
+
+PointCNN全面刷新测试记录：山东大学提出通用点云卷积框架
+
+http://mp.weixin.qq.com/s/5ozeLeF6IyKTOqAxYEdaog
+
+山东大学提出PointCNN：让CNN更好地处理不规则和无序的点云数据
+
+https://mp.weixin.qq.com/s/QHxuYWb39BktuTomiwG2rg
+
+点云配准国内外研究现状
+
+https://mp.weixin.qq.com/s/ki0F3zjbB_X84m9NsYYlow
+
+旷视Oral论文提出GeoNet：基于测地距离的点云分析深度网络
+
+https://mp.weixin.qq.com/s/X7ijhqXjICjIJh3nUNsuBw
+
+百度无人车实现全球首个基于深度学习的激光点云自定位技术

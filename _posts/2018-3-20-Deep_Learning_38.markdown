@@ -124,6 +124,10 @@ https://mp.weixin.qq.com/s/ZEIsyV-0aTvYn6K8GyANPA
 
 硬核NeruIPS 2018最佳论文，一个神经了的常微分方程
 
+https://mp.weixin.qq.com/s/uAiRTeYkZKy9q3d9v3dR5A
+
+神经微分方程--钢琴和小提琴
+
 ## 参考
 
 https://mp.weixin.qq.com/s/0TLaC8ACXAFEK5aMNK9O-Q
@@ -212,6 +216,18 @@ LightRNN：存储和计算高效的RNN
 
 # 深度推荐系统进阶
 
+https://mp.weixin.qq.com/s/mcf3Aoub6VbNwtA-Izsdbg
+
+YouTube深度学习推荐系统的十大工程问题
+
+https://mp.weixin.qq.com/s/A7Qg1gd66aksA6npJl3dNQ
+
+深度学习在搜索业务中的探索与实践
+
+https://mp.weixin.qq.com/s/wjgoH6-eJQDL1KUQD3aQUQ
+
+大众点评搜索基于知识图谱的深度学习排序实践
+
 https://mp.weixin.qq.com/s/Dmkc7X-GgRrdNVQXz6Mwgg
 
 镶嵌在互联网技术上的明珠：漫谈深度学习时代点击率预估技术进展
@@ -247,6 +263,10 @@ https://mp.weixin.qq.com/s/98X2agJlZcCH6IdZqf9m0A
 https://mp.weixin.qq.com/s/J0j9NwSNhxab6bXqBBzaUw
 
 进击的下一代推荐系统：多目标学习如何让知乎用户互动率提升100%？
+
+https://mp.weixin.qq.com/s/BInWMRt-fVcRbY8aCiPnpA
+
+淘宝总知道你要什么？万字讲述智能内容生成实践
 
 # Multi-agent
 

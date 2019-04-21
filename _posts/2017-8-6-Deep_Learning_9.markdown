@@ -6,7 +6,35 @@ category: DL
 
 # CNN进化史
 
-### Network In Network（续）
+### SqueezeNet（续）
+
+http://blog.csdn.net/shenxiaolu1984/article/details/51444525
+
+超轻量级网络SqueezeNet算法详解
+
+https://mp.weixin.qq.com/s/euppu_2rhujlWz1z5S5nYA
+
+纵览轻量化卷积神经网络：SqueezeNet、MobileNet、ShuffleNet、Xception
+
+https://mp.weixin.qq.com/s/rkTL1cj7tG5FaLP9cYRb4A
+
+CNN模型之SqueezeNet
+
+## 其他知名CNN
+
+### Network In Network
+
+Network In Network是颜水成团队于2013年提出的。
+
+论文：
+
+《Network In Network》
+
+![](/images/article/nin.png)
+
+>颜水成，北京大学博士，新加坡国立大学副教授。奇虎360AI研究院院长。
+
+Network In Network最重要的贡献是使用Global Average Pooling替换了Full Connection。这直接促进了之后Fully Convolutional Networks的发展。
 
 参考：
 
@@ -255,35 +283,3 @@ https://mp.weixin.qq.com/s/Ewiil56vMkzhO2xDWgo-Wg
 https://mp.weixin.qq.com/s/jOVUPhrCBI9W9vPvD9eKYg
 
 UC Berkeley提出新型分布式框架Ray：实时动态学习的开端
-
-https://mp.weixin.qq.com/s/r951Iasr4dke6MPHsUO0TA
-
-开源DAWN，Stanford的又一力作
-
-https://mp.weixin.qq.com/s/2jrMDeMcb47zpPfFLEcnIA
-
-深度学习平台技术演进
-
-https://mp.weixin.qq.com/s/L4CMKS53pNyvhhqvQhja0g
-
-5种商业AI产品的技术架构设计
-
-https://mp.weixin.qq.com/s/IqjKdAlGYREqCR9XQB5N1A
-
-伯克利AI分布式框架Ray，兼容TensorFlow、PyTorch与MXNet
-
-https://mp.weixin.qq.com/s/aNX_8UDYI_0u-MwMTYeqdQ
-
-开发易、通用难，深度学习框架何时才能飞入寻常百姓家？
-
-https://mp.weixin.qq.com/s/UbAHB-uEIvqYZCB7xIAJTg
-
-机器学习新框架Propel：使用JavaScript做可微分编程
-
-https://mp.weixin.qq.com/s/_-z2d1GE_3FElzAwPyJZ8A
-
-十大流行AI框架和库的优缺点比较
-
-https://mp.weixin.qq.com/s/Ctl65r4iZNEOBxiiX2I2eQ
-
-Momenta王晋玮：让深度学习更高效运行的两个视角

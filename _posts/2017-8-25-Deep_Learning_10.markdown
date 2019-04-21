@@ -6,6 +6,38 @@ category: DL
 
 # 并行 & 框架（续）
 
+https://mp.weixin.qq.com/s/r951Iasr4dke6MPHsUO0TA
+
+开源DAWN，Stanford的又一力作
+
+https://mp.weixin.qq.com/s/2jrMDeMcb47zpPfFLEcnIA
+
+深度学习平台技术演进
+
+https://mp.weixin.qq.com/s/L4CMKS53pNyvhhqvQhja0g
+
+5种商业AI产品的技术架构设计
+
+https://mp.weixin.qq.com/s/IqjKdAlGYREqCR9XQB5N1A
+
+伯克利AI分布式框架Ray，兼容TensorFlow、PyTorch与MXNet
+
+https://mp.weixin.qq.com/s/aNX_8UDYI_0u-MwMTYeqdQ
+
+开发易、通用难，深度学习框架何时才能飞入寻常百姓家？
+
+https://mp.weixin.qq.com/s/UbAHB-uEIvqYZCB7xIAJTg
+
+机器学习新框架Propel：使用JavaScript做可微分编程
+
+https://mp.weixin.qq.com/s/_-z2d1GE_3FElzAwPyJZ8A
+
+十大流行AI框架和库的优缺点比较
+
+https://mp.weixin.qq.com/s/Ctl65r4iZNEOBxiiX2I2eQ
+
+Momenta王晋玮：让深度学习更高效运行的两个视角
+
 https://mp.weixin.qq.com/s/irvBbPKENiZX9G_6wh5c-Q
 
 陈天奇等人提出TVM：深度学习自动优化代码生成器

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十八）——语义分割进阶
+title:  深度学习（四十八）——语义分割进阶, 深度ISP
 category: DL 
 ---
 
@@ -253,3 +253,79 @@ https://mp.weixin.qq.com/s/-FmBrHJ6IGVIiT5PwNhczw
 https://zhuanlan.zhihu.com/p/62652145
 
 加州大学提出：实时实例分割算法YOLACT，可达33 FPS/30mAP！现已开源！
+
+# 深度ISP
+
+## 数据集
+
+### HDR+
+
+HDR+是一个使用连拍摄影生成更好的图像的数据集。
+
+官网：
+
+http://hdrplusdata.org
+
+参考：
+
+https://zhuanlan.zhihu.com/p/34391353
+
+机器感知Google推出HDR+连拍摄影数据集
+
+### HDRNet
+
+HDRNet是一个Image Enhancement方面的数据集。
+
+官网：
+
+https://groups.csail.mit.edu/graphics/hdrnet/
+
+## 参考
+
+https://mp.weixin.qq.com/s/wA85XFQXeypuoqFnmN2P4g
+
+降噪的新时代
+
+https://mp.weixin.qq.com/s/919VEvennHEG3iXKkMZoQQ
+
+不止是去噪---从去噪看AI ISP的趋势
+
+https://mp.weixin.qq.com/s/1HA6XKnWpqVd8k7IIfzB7w
+
+利用卷积自编码器对图片进行降噪
+
+https://zhuanlan.zhihu.com/p/39512000
+
+Noise2Noise：图像降噪，无需干净样本
+
+https://mp.weixin.qq.com/s/_tvOQPvybqmvLF19kHcbFg
+
+北大开源ECCV2018深度去雨算法：RESCAN
+
+https://mp.weixin.qq.com/s/Wdxkvlz4nLbJS_gWqHwMjw
+
+无需额外硬件，全卷积网络让机器学习学会夜视能力
+
+https://mp.weixin.qq.com/s/iH7gbRn4opLsWgKWoVFpBA
+
+腾讯优图&港科大提出较大前景运动下的深度高动态范围成像
+
+https://mp.weixin.qq.com/s/WXVZkqCGlj6ym5YrSZS3Vg
+
+谷歌普林斯顿提出首个端到端立体双目系统深度学习方案
+
+https://mp.weixin.qq.com/s/NlYgA-A43q4C155kRdWPAQ
+
+论文复现：谷歌实时端到端双目系统深度学习网络stereonet
+
+https://mp.weixin.qq.com/s/9yfTO2jHz69-k1MsUGIM0Q
+
+双目立体放大！谷歌刚刚开源的这篇论文可能会成为手机双摄的新玩法
+
+https://mp.weixin.qq.com/s/z87Wp3yutq1l5bYfJS2YIA
+
+谷歌新研究用深度学习合成运动模糊效果，手抖也能拍出摄影师级照片
+
+https://mp.weixin.qq.com/s/B5XNmFlSnjEh2xAXB42pHQ
+
+超十亿样本炼就的CNN助力图像质量增强，Adobe推出新功能“增强细节”

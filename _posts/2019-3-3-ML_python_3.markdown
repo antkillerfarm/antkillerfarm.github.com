@@ -6,6 +6,30 @@ category: AI
 
 # Machine Learning之Python篇
 
+https://zhuanlan.zhihu.com/p/30630608
+
+Python和MATLAB交互的基本操作
+
+https://mp.weixin.qq.com/s/drpd1O502TcL54cHSEdl_g
+
+如何为时间序列数据优化K-均值聚类速度？
+
+https://mp.weixin.qq.com/s/Di4xVdD1jOGGCiIB-vdkkg
+
+Python可以被用来做哪些神奇好玩的事情
+
+https://mp.weixin.qq.com/s/-SHD9rXUGQ-yp21RtFhJpg
+
+Python挖掘用户评论典型意见并自动生产报告
+
+https://mp.weixin.qq.com/s/ZbT5ASvnTODkodTJjBGhnw
+
+Python环境下的8种简单线性回归算法
+
+https://mp.weixin.qq.com/s/iL53BraKspGJ1rw7LK-3bA
+
+Logistic回归Python实战，评估销售系统的盈利能力
+
 https://mp.weixin.qq.com/s/JwsG0XzIGr5jiQqrOTGFGQ
 
 8种用Python实现线性回归的方法，究竟哪个方法最高效？
@@ -304,6 +328,10 @@ https://blog.csdn.net/odailidong/article/details/41794403
 
 Hbase万亿级存储性能优化总结
 
+https://mp.weixin.qq.com/s/kJbeuu3zqRxQxVN38Z4asA
+
+​你应该知道的HBase基础，都在这儿了
+
 # NLP参考资源+
 
 https://mp.weixin.qq.com/s/qE8dBeBT6iGBrLjJr4mN9g
@@ -373,3 +401,7 @@ https://mp.weixin.qq.com/s/kYCb4Fc4_Gh4eIlJbFDwJA
 https://mp.weixin.qq.com/s/r-mndw2BKHdVq-jKLinYZQ
 
 别说还不懂依存句法分析
+
+https://mp.weixin.qq.com/s/jInNuNQprWlCNAz7UyHRvg
+
+IEMLRN：基于图像增强的句子语义表示

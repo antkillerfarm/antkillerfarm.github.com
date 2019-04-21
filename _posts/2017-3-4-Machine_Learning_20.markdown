@@ -148,6 +148,11 @@ FP-growth算法：高效频繁项集挖掘
 
 >注：Abraham Wald，1902～1950，生于奥匈帝国，维也纳大学博士。1938年为躲避纳粹，移民美国，哥伦比亚大学教授。Herman Chernoff的导师。其子Robert M. Wald，为著名理论物理学家，芝加哥大学教授，黑洞理论的提出者之一。
 
+>记者在列车上采访：这位乘客，您买到火车票了吗？   
+>乘客甲：买到了！旁边这位呢？   
+>乘客乙：买到了。   
+>记者随机采访了十几个人，高兴地发现大家都买到了回家的火车票。
+
 参考：
 
 https://mp.weixin.qq.com/s/49YCWbmyoMW-0NyK_aK4Tg
@@ -191,4 +196,3 @@ $$\mathrm{lift}(X\Rightarrow Y)\begin{cases}
 实际运用中，正相关和负相关都是我们需要关注的，而独立往往是我们不需要的。显然：
 
 $$\mathrm{lift}(X\Rightarrow Y)=\mathrm{lift}(Y\Rightarrow X)$$
-

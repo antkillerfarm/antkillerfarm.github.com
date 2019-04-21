@@ -187,6 +187,16 @@ Sly Lex Yacc是David Beazley的新作，号称新一代的PLY。
 
 https://sly.readthedocs.io/en/latest/
 
+## glob
+
+glob的历史可以追溯到早期的UNIX系统。用它可以查找符合特定规则的文件路径名。
+
+参考：
+
+https://blog.csdn.net/csapr1987/article/details/7469769
+
+python glob模块
+
 ## 参考
 
 https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA

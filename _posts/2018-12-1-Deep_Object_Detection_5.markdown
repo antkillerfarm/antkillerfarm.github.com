@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（五）——YOLOv3, One-stage vs. Two-stage, Anchor-Free, 其它目标检测网络, 点云
+title:  深度目标检测（五）——YOLOv3, One-stage vs. Two-stage, Anchor-Free, 其它目标检测网络
 category: Deep Object Detection 
 ---
 
@@ -190,6 +190,14 @@ https://mp.weixin.qq.com/s/04h80ubIxjJbT9BxQy5FSw
 
 目标检测：Anchor-Free时代
 
+https://zhuanlan.zhihu.com/p/62724053
+
+CenterNet：将目标视为点
+
+https://zhuanlan.zhihu.com/p/62789701
+
+中科院牛津华为诺亚提出CenterNet，one-stage detector可达47AP，已开源！
+
 # 其它目标检测网络
 
 ## A-Fast-RCNN
@@ -264,42 +272,6 @@ https://mp.weixin.qq.com/s/ZhfnZ4IwOnTQlqeB6Ilr3A
 
 CornerNet: Detecting Objects as Paired Keypoints解读
 
-# 点云
+https://zhuanlan.zhihu.com/p/63134919
 
-## PCL
-
-The Point Cloud Library是一个点云处理的库。
-
-官网：
-
-http://www.pointclouds.org/
-
-## 参考
-
-https://mp.weixin.qq.com/s/f44TkWXklGONCuXnIuTbXg
-
-无人驾驶汽车系统入门：基于VoxelNet的激光雷达点云车辆检测及ROS实现
-
-https://mp.weixin.qq.com/s/_lK-DPldCYGcicV7O0njfg
-
-上海交大卢策吾团队开源PointSIFT刷新点云语义分割记录
-
-https://zhuanlan.zhihu.com/p/41287237
-
-点云感知CVPR 2018论文总结
-
-https://mp.weixin.qq.com/s/fPj4wMtiFX55c_UjNsQnBg
-
-PointCNN全面刷新测试记录：山东大学提出通用点云卷积框架
-
-http://mp.weixin.qq.com/s/5ozeLeF6IyKTOqAxYEdaog
-
-山东大学提出PointCNN：让CNN更好地处理不规则和无序的点云数据
-
-https://mp.weixin.qq.com/s/QHxuYWb39BktuTomiwG2rg
-
-点云配准国内外研究现状
-
-https://mp.weixin.qq.com/s/ki0F3zjbB_X84m9NsYYlow
-
-旷视Oral论文提出GeoNet：基于测地距离的点云分析深度网络
+普林斯顿大学提出：CornerNet-Lite，基于关键点的目标检测算法，已开源！

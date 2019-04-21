@@ -4,6 +4,28 @@ title:  GAN（三）——Pix2Pix, CycleGAN, 参考资源（1）
 category: GAN & VAE 
 ---
 
+# BEGAN & EBGAN（续）
+
+对于原始的GAN来说，G网络和Decoder的结构类似，而D网络和Encoder的结构类似。所以整个网络D(G(z))就像是一个反着接的AutoEncoder。
+
+AutoEncoder：Encoder->Decoder
+
+GAN：Decoder->Encoder
+
+对于生成模型来说，细节是很重要的，然而原始的GAN，通常只能生成模糊的图片。如何提高图片的分辨率呢？
+
+BEGAN将D网络的结构由Encoder改为了Encoder->Decoder（也就是一个AE），即输入和输出都是图片。将Loss由KL散度改为了MSE。
+
+这样的做法可以类比CV中的分类网络和语义分割网络。由于Loss和图片的每个像素都直接相关，因此更利于生成细节信息。
+
+类似的，这里的AE，也可以换成其他Encoder->Decoder网络，例如U-NET。
+
+影响GAN性能的还有一个问题：**mode collapse(模式坍塌)**，即生成高度相似的样本。分类网络由于样本/类别是多对一的关系，更容易发生模式坍塌。
+
+![](/images/img2/mode_collapse.jpg)
+
+假设某个data distribution有两个模式（如上图所示），generator可能就学到一个mode，另一个mode则完全没学到。
+
 # Pix2Pix
 
 论文：
@@ -14,7 +36,19 @@ category: GAN & VAE
 
 https://github.com/phillipi/pix2pix
 
+torch版本
 
+https://github.com/affinelayer/pix2pix-tensorflow
+
+tensorflow版本
+
+![](/images/img2/pix2pix.png)
+
+Pix2Pix对于user control的要求比一般的CGAN更高，这里的监督信息不再是一个类别，而是一张图片。上图就是一个使用Pix2Pix对素描图上色的示例。其中的素描图就相当于CGAN中的类别信息。
+
+Pix2Pix相对于传统GAN的改进在于：
+
+1.D网络的输入
 
 参考：
 
@@ -327,35 +361,3 @@ https://mp.weixin.qq.com/s/2cY3NCtMYiRlLayB32wl-w
 https://mp.weixin.qq.com/s/1cUM8_AUZ40JWGI37HsqFw
 
 换脸效果媲美GAN！一文解析OpenAI最新流生成模型Glow
-
-https://mp.weixin.qq.com/s/kD_163rjGRp4rXOdIPCvRA
-
-亲历IJCAI 2018，为什么北京大学SentiGAN能获杰出论文？
-
-https://mp.weixin.qq.com/s/v23rSjIKyVEAGCN8rEtsfg
-
-伯克利新论文：合成GAN（Compositional GAN）
-
-https://mp.weixin.qq.com/s/ddR7dwwBZnu3knKmfDWjCg
-
-斯坦福大学PH.D Aditya Grover：115页Slides带你领略深度生成模型（Deep Generative Model）全貌
-
-https://mp.weixin.qq.com/s/QjEShm__Rq0n7n_sdc6GNg
-
-Ryan P.Adams教授：深度概率生成模型—156页普林斯顿教程带你回顾深度生成模型最新发展脉络
-
-https://mp.weixin.qq.com/s/DSHuCNQWKN3pLozZ8i16hQ
-
-卡成PPT不开心？GAN也能生成流畅的连续表情了
-
-https://mp.weixin.qq.com/s/5S6TsyT6dwXP3cTE_KQleg
-
-把酱油瓶放进菜篮子：UC Berkeley提出高度逼真的物体组合网络Compositional GAN
-
-https://mp.weixin.qq.com/s/IE5h6AiAYhA1nBvsFiGUHA
-
-GAN最新进展：8大技巧提高稳定性
-
-https://mp.weixin.qq.com/s/QacQCrjh3KmrQSMp-G_rEg
-
-贝叶斯生成对抗网络

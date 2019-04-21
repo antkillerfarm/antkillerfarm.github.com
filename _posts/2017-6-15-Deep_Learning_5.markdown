@@ -6,6 +6,20 @@ category: DL
 
 # 词向量（续）
 
+### Hierarchical Softmax
+
+word2vec的输出层有两种模型：Hierarchical Softmax和Negative Sampling。
+
+Softmax是DL中常用的输出层结构，它表征**多分类中的每一个分类所对应的概率**。
+
+然而在这里，每个分类表示一个单词，即：分类的个数=词汇表的单词个数。如此众多的分类直接映射到隐层，显然并不容易训练出有效特征。
+
+Hierarchical Softmax是Softmax的一个变种。这时的输出层不再是一个扁平的多分类层，而变成了一个层次化的二分类层。
+
+Hierarchical Softmax一般基于Huffman编码构建。在本例中，我们首先统计词频，以获得每个词所对应的Huffman编码，然后输出层会利用Huffman编码所对应的层次二叉树的路径来计算每个词的概率，并逆传播到隐藏层。
+
+由Huffman编码的特性可知，Hierarchical Softmax的计算量要小于一般的Softmax。
+
 ### Negative Sampling
 
 在CBOW模型中，已知w的上下文Context(w)需要预测w，则w就是正样本，而其他词是负样本。
@@ -285,13 +299,3 @@ RNN是Recurrent Neural Network和Recursive Neural Network的简称。前者主�
 从静态结构图可以看出RNN实际上和3层MLP的结构，是基本类似的。差别在于RNN的隐藏层多了一个指向自己的环状结构。
 
 上图的展开箭头右边是RNN的时序展开结构图。从纵向来看，它只是一个3层的浅层神经网络，然而从横向来看，它却是一个深层的神经网络。可见神经网络深浅与否，不仅和模型本身的层数有关，也与神经元之间的连接方式密切相关。
-
-虽然理论上，我们可以给每一时刻赋予不同的$$U,V,W$$，然而出于简化计算和稀疏度的考量，RNN所有时刻的$$U,V,W$$都是相同的。
-
-RNN的误差反向传播算法，被称作**Backpropagation Through Time**。其主要公式如下：
-
-$$\nabla U=\frac{\partial E}{\partial U}=\sum_t\frac{\partial e_t}{\partial U} \\\nabla V=\frac{\partial E}{\partial V}=\sum_t\frac{\partial e_t}{\partial V} \\\nabla W=\frac{\partial E}{\partial W}=\sum_t\frac{\partial e_t}{\partial W}$$
-
-从上式可以看出，三个误差梯度实际上都是**时域的积分**。
-
-正因为RNN的状态和过去、现在都有关系，因此，RNN也被看作是一种拥有“记忆性”的神经网络。

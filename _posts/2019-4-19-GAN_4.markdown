@@ -6,6 +6,38 @@ category: GAN & VAE
 
 # 参考资源
 
+https://mp.weixin.qq.com/s/kD_163rjGRp4rXOdIPCvRA
+
+亲历IJCAI 2018，为什么北京大学SentiGAN能获杰出论文？
+
+https://mp.weixin.qq.com/s/v23rSjIKyVEAGCN8rEtsfg
+
+伯克利新论文：合成GAN（Compositional GAN）
+
+https://mp.weixin.qq.com/s/ddR7dwwBZnu3knKmfDWjCg
+
+斯坦福大学PH.D Aditya Grover：115页Slides带你领略深度生成模型（Deep Generative Model）全貌
+
+https://mp.weixin.qq.com/s/QjEShm__Rq0n7n_sdc6GNg
+
+Ryan P.Adams教授：深度概率生成模型—156页普林斯顿教程带你回顾深度生成模型最新发展脉络
+
+https://mp.weixin.qq.com/s/DSHuCNQWKN3pLozZ8i16hQ
+
+卡成PPT不开心？GAN也能生成流畅的连续表情了
+
+https://mp.weixin.qq.com/s/5S6TsyT6dwXP3cTE_KQleg
+
+把酱油瓶放进菜篮子：UC Berkeley提出高度逼真的物体组合网络Compositional GAN
+
+https://mp.weixin.qq.com/s/IE5h6AiAYhA1nBvsFiGUHA
+
+GAN最新进展：8大技巧提高稳定性
+
+https://mp.weixin.qq.com/s/QacQCrjh3KmrQSMp-G_rEg
+
+贝叶斯生成对抗网络
+
 https://mp.weixin.qq.com/s/c84LMFnIhoDeolc1B4MIVA
 
 AI以假乱真怎么办？TequilaGAN教你轻松辨真伪

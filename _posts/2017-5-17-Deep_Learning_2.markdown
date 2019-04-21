@@ -6,7 +6,21 @@ category: DL
 
 # BP算法
 
-## BP算法的缺点（续）
+## 随机初始化（续）
+
+参考：
+
+https://pouannes.github.io/blog/initialization/
+
+How to initialize deep neural networks? Xavier and Kaiming initialization
+
+https://mp.weixin.qq.com/s/_wt-zTpbd25OL3os0X6cJg
+
+神经网络中的权重初始化一览：从基础到Kaiming
+
+## BP算法的缺点
+
+虽然传统的BP算法，理论上可以支持任意深度的神经网络。然而实际使用中，却很少能支持3层以上的神经网络。
 
 ![](/images/article/sigmoid.png)
 
@@ -240,19 +254,3 @@ $$W^{(l)} = W^{(l)} - \alpha \left[ \left(\frac{1}{m} \Delta W^{(l)} \right) + \
 https://www.zhihu.com/question/24529483
 
 在神经网络中weight decay起到的做用是什么？momentum呢？normalization呢？
-
-## Batch Normalization
-
-Batch Normalization是Google提出的一种神经网络优化技巧。
-
-原始论文：
-
-《Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift》
-
-![](/images/article/normalize.png)
-
-上图直观的展示了Normalize的效果。
-
-![](/images/article/whiten.png)
-
-与Normalization相关的概念，还有Decorrelate和Whiten。

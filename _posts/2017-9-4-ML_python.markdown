@@ -246,7 +246,7 @@ https://stackoverflow.com/questions/25216382/gaussian-filter-in-scipy
 
 Gaussian filter in scipy
 
-## Scikit-learn
+## sklearn
 
 Scikit-learn提供了常见的机器学习算法的实现。
 
@@ -273,6 +273,18 @@ http://sklearn.apachecn.org
 https://mp.weixin.qq.com/s/OHfQtJWq0wkF6BLkRWOAyw
 
 sklearn与分类算法
+
+https://mp.weixin.qq.com/s/OxNj9fWaEMh8SuQiK52HWg
+
+sklearn中PCA库讲解与实战
+
+https://mp.weixin.qq.com/s/JjJcyAccRc84U8C_qllf_Q
+
+如何用sklearn创建机器学习分类器？
+
+https://mp.weixin.qq.com/s/JkyJMKyDAaiX2M58PnWXaA
+
+如何使用sklearn优雅地进行数据挖掘？
 
 ## Matplotlib
 
@@ -408,48 +420,28 @@ Preferred Networks是日本目前最强的AI创业公司，估值已经超过20�
 
 https://github.com/pfnet/PaintsChainer
 
-## iPython
+## TuShare
 
-ipython是一个python的交互式 shell，比默认的python shell 好用得多，支持变量自动补全，自动缩进，支持 bash shell 命令，内置了许多很有用的功能和函数。
-
-在较新的ipython版本中，添加了ipython notebook的功能，弥补了ipython shell下代码不易保存等缺点，并且在使用--pylab inline选项后，可以在代码执行后立即显示运行结果（包括图片，数据表格等），因此在数据分析中运用十分广泛。
-
-`sudo apt-get install ipython ipython-notebook`
-
-## Jupyter
-
-Jupyter是iPython的后继项目，它不仅支持python语言，还支持其他50多种交互式语言。成为目前最流行的交互式shell和数据文本交换格式。
+TuShare是一个免费、开源的python财经数据接口包。主要实现对股票等金融数据从数据采集、清洗加工 到 数据存储的过程，能够为金融分析人员提供快速、整洁、和多样的便于分析的数据，为他们在数据获取方面极大地减轻工作量，使他们更加专注于策略和模型的研究与实现上。
 
 官网：
 
-https://jupyter.org/
+http://tushare.org/
 
-安装：
+## skimage
 
-`pip install jupyter`
+skimage相当于python版本的OpenCV。
 
-运行：
+官网：
 
-`jupyter notebook`
+http://scikit-image.org/
 
-参见：
+参考：
 
-https://mp.weixin.qq.com/s/UXlPhX3Vb2yqocpUH_3W5w
+https://buptldy.github.io/2016/03/31/2016-03-31-Skimage%20hog/
 
-Jupyter项目的前世今生
+Compute the HOG descriptor by skimage
 
-https://mp.weixin.qq.com/s/aJRVh7BWOMq4KCoBMtLGGw
+https://mp.weixin.qq.com/s/WL8jfxB-xukP_MkN2aMb0w
 
-快速学习Jupyter Notebook
-
-https://blog.csdn.net/u011493486/article/details/55001477
-
-Jupyter中显示matplotlib的图片
-
-https://www.cnblogs.com/nxld/p/6566380.html
-
-Jupyter Notebook快速入门
-
-https://mp.weixin.qq.com/s/u-e66SgesPjmpKEihHHr8g
-
-Jupyter Notebook超实用的5个插件，值得一试！
+OpenCV，PIL，Skimage你pick谁

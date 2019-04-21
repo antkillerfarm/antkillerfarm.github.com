@@ -94,9 +94,17 @@ https://wenku.baidu.com/view/136b666c561252d380eb6e8c.html
 
 使用勾股定理定义的距离，也就是通常的Euclidean Distance。之所以用Euclid命名是因为：**勾股定理实际上和Euclid几何的平行公理是等价的。**
 
-Euclidean Distance => 最小二乘法 => 正态分布
+空间拓扑结构对于定理的影响不仅于此。以下就是欧氏空间的一些有意思的等价结论：
 
-所以GMM隐含使用了Euclidean Distance。
+Euclidean Distance（2范数） => 最小二乘法 => 正态分布
+
+由于GMM隐含使用了Euclidean Distance，所以K-Means聚类可以采用任意距离，但GMM只能采用欧氏距离。
+
+同理，为什么多数误差都符合正态分布？因为我们生活的空间是Euclidean space，多数的物理定律都是各向同性的，也只有Euclidean space才满足这种对称性。
+
+不对称的空间也有，例如：
+
+Manhattan Distance（1范数） => 拉普拉斯分布
 
 不满足勾股定理的几何，也就是非欧几何。但实际上，Euclid对于其中的特例——球面几何，也有一定的研究。比如，著名的“**球面三角形相似必全等**“，就是他发现的。
 
@@ -241,19 +249,3 @@ https://mp.weixin.qq.com/s/PrugbfsWIt0LWGJRw_9i1Q
 https://mp.weixin.qq.com/s/_pNDalO6D8kGiCBYi1jnIA
 
 对于知识图谱嵌入表示的几何形状理解
-
-https://mp.weixin.qq.com/s/ZM0qZrqyk0QPBXYbkHAA8A
-
-基于多模态关联数据嵌入的知识库补全
-
-https://mp.weixin.qq.com/s/NxTTIWVPJi6yXuXr1qAmKw
-
-复旦数据院副院长阳德青：知识图谱在个性化推荐系统中的应用
-
-https://mp.weixin.qq.com/s/pwgYl6U3-w2sS-tAqn1hjg
-
-北京大学计算机所邹磊教授研究组开源面向RDF知识图谱的自然语言问答系统gAnswer
-
-https://mp.weixin.qq.com/s/d4cEHHo6OhlWEIXTFIdTuA
-
-知识图谱相关实体搜索

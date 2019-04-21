@@ -8,6 +8,28 @@ category: DL
 
 ## CNN的反向传播算法（续）
 
+因此：
+
+正向：$$Y=X*K$$
+
+反向：$$\Delta X = \Delta Y * rot_{180}(K)$$
+
+卷积的反向传播，有时也被称为反卷积（Deconvolution）。
+
+![](/images/article/dcign.png)
+
+上图是Deep convolutional inverse graphics networks的结构图。DCIGN实际上是一个正向CNN连上一个反向CNN，以实现图片合成的目的。其原理可参考《深度学习（四）》中的Autoencoder。
+
+参见：
+
+http://www.cnblogs.com/pinard/p/6494810.html
+
+卷积神经网络(CNN)反向传播算法
+
+http://blog.csdn.net/zy3381/article/details/44409535
+
+CNN误差反传时旋转卷积核的简明分析
+
 https://mp.weixin.qq.com/s/dnElNURJ6xfWHJVf_yeT8w
 
 理解多层CNN中转置卷积的反向传播
@@ -135,6 +157,10 @@ Autoencoder的结构如上图所示。它的特殊之处在于：
 粗看起来，这类恒等变换没有太大意义。然而这类恒等变换之所以能够成立，最根本的地方在于，隐藏层的神经元具有表达输出样本的能力，也就是用低维表达高维的能力。反过来，我们就可以利用这一点，实现数据的降维操作。
 
 但是，不是所有的数据都能够降维，而这种情况通常会导致Autoencoder的训练失败。
+
+类似的，如果隐藏层的神经元数量大于样本的维度，则该AE可用于升维。
+
+总体来看，AE是个Encoder/Decoder结构。我们上面提到的降维/升维，主要是利用了Encoder部分。而Decoder部分也是很有意义的，它表明我们能够从tensor生成样本，这实际上就是一种生成模型。
 
 和Autoencoder类似的神经网络还有：Denoising Autoencoder（DAE）、Variational Autoencoder（VAE）、Sparse Autoencoder（SAE）。
 
@@ -297,17 +323,3 @@ CBOW（Continuous Bag-of-Words Model）模型和Skip-gram（Continuous Skip-gram
 | 输入 | $$\{w_{t-1},w_{t-2},w_{t+1},w_{t+2}\}$$ | $$\{w_t\}$$ |
 | 输出 | $$\{w_t\}$$ | $$\{w_{t-1},w_{t-2},w_{t+1},w_{t+2}\}$$ |
 | 目标 | 在输入确定的情况下，最大化输出值的概率。 | 在输入确定的情况下，最大化输出值的概率。 |
-
-### Hierarchical Softmax
-
-word2vec的输出层有两种模型：Hierarchical Softmax和Negative Sampling。
-
-Softmax是DL中常用的输出层结构，它表征**多分类中的每一个分类所对应的概率**。
-
-然而在这里，每个分类表示一个单词，即：分类的个数=词汇表的单词个数。如此众多的分类直接映射到隐层，显然并不容易训练出有效特征。
-
-Hierarchical Softmax是Softmax的一个变种。这时的输出层不再是一个扁平的多分类层，而变成了一个层次化的二分类层。
-
-Hierarchical Softmax一般基于Huffman编码构建。在本例中，我们首先统计词频，以获得每个词所对应的Huffman编码，然后输出层会利用Huffman编码所对应的层次二叉树的路径来计算每个词的概率，并逆传播到隐藏层。
-
-由Huffman编码的特性可知，Hierarchical Softmax的计算量要小于一般的Softmax。

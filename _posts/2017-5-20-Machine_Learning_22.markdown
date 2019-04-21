@@ -34,6 +34,10 @@ https://mp.weixin.qq.com/s/Uf1lWtxOpKYCDLmCDlnVAQ
 
 把Cross Entropy梯度分布拉‘平’，就能轻松超越Focal Loss
 
+https://mp.weixin.qq.com/s/aKRUJt-_1QSQFcRVtuyJ4w
+
+被忽略的Focal Loss变种
+
 ## Other Loss
 
 https://mp.weixin.qq.com/s/7Jg-YvS3nvcPJ-zYhK96EA
@@ -266,3 +270,7 @@ https://mp.weixin.qq.com/s/PzPRKZa1C5IlEUASWt71cA
 https://mp.weixin.qq.com/s/aIpRx-etMkh7jwL2lFNa4w
 
 理解隐马尔可夫模型
+
+https://mp.weixin.qq.com/s/O0oAzJ-Hk9pQkojgdgT4qg
+
+隐马尔可夫模型
