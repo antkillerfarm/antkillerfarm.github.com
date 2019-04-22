@@ -236,6 +236,14 @@ https://mp.weixin.qq.com/s/20jDhSv1wazb9UD_bYRXFQ
 
 用神经架构搜索实现更好的目标检测
 
+https://mp.weixin.qq.com/s/rgbHJ_95tDf-kYMTO1YYcw
+
+谷歌大脑提出NAS-FPN：这是一种学会自动架构搜索的特征金字塔网络
+
+https://mp.weixin.qq.com/s/Awn_fNRpGVa1xhy-jsCOFQ
+
+AutoML for Mobile Compression and Acceleration on Mobile Devices
+
 # 图像超分辨率进阶
 
 https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg

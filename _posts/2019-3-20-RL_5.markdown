@@ -139,6 +139,34 @@ https://mp.weixin.qq.com/s/hKGS4Ek5prwTRJoMCaxQLA
 
 # 深度强化学习参考资源
 
+https://mp.weixin.qq.com/s/S2eGPTON3XmfN830m4vaaA
+
+腾讯AI Lab：可自适应于不同环境和任务的强化学习方法
+
+https://mp.weixin.qq.com/s/FtHJCXniVne2TGKfgCeS9w
+
+Pieter Abbeel：深度强化学习加速方法
+
+https://mp.weixin.qq.com/s/Rvc5fXnbDPMJftp13xF4hg
+
+强化学习应用金融投资组合优化
+
+https://mp.weixin.qq.com/s/dlOFM7LuOF2npDP_EaITvg
+
+效率提高50倍！谷歌提出从图像中学习世界的强化学习新方法（PlaNet）
+
+https://mp.weixin.qq.com/s/Maoy2feVWj5hpn4Ysh_47A
+
+你追踪，我逃跑：一种用于主动视觉跟踪的对抗博弈机制
+
+https://mp.weixin.qq.com/s/4w3wIyy4H0UGeqOGhNcIbA
+
+强化学习落地！京东等发布综述《深度强化学习在搜索，推荐和在线广告中的应用》
+
+https://mp.weixin.qq.com/s/F_GsfAJRFJ_o8PETqUL35g
+
+谷歌大脑AI飞速解锁雅达利，训练不用两小时：预测能力“前所未有”
+
 https://mp.weixin.qq.com/s/6wPtb9Qdhr9FiMk15xrUsQ
 
 强化跨模态匹配和自监督模仿学习

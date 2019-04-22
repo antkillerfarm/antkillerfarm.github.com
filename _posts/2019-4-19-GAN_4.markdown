@@ -253,3 +253,7 @@ GAN生成图像综述
 https://mp.weixin.qq.com/s/wW8kTQ7eQeCJsHC9ju8VLA
 
 One Day One GAN_keras版[DAY 1]
+
+https://mp.weixin.qq.com/s/kWv-hp2svq1OEHy2DqQ4uA
+
+古纾旸：Generative model is more than just GANs

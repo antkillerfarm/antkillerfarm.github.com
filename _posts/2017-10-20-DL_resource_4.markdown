@@ -330,6 +330,10 @@ https://mp.weixin.qq.com/s/oOru4Dn2uyVuHVOLDxvsBg
 
 最新的图像质量评价
 
+https://mp.weixin.qq.com/s/fTFyH5jaLEWWPka_XP9EaQ
+
+视觉识别新范式：开放世界下的大规模长尾识别
+
 ## 参考
 
 https://mp.weixin.qq.com/s/MoKzux6Z69dlpqcVTvQ9oQ

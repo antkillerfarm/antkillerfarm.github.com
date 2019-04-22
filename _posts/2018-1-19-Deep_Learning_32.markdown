@@ -269,3 +269,7 @@ https://mp.weixin.qq.com/s/ki0F3zjbB_X84m9NsYYlow
 https://mp.weixin.qq.com/s/X7ijhqXjICjIJh3nUNsuBw
 
 百度无人车实现全球首个基于深度学习的激光点云自定位技术
+
+https://mp.weixin.qq.com/s/iQwvqMfQgVZbOHeK-fVBIQ
+
+PointConv：在点云上高效实现卷积操作

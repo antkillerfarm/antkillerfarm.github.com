@@ -303,6 +303,20 @@ Neo4j Graph Algorithms扩展包，是一个关于图算法的jar包，集成了�
 
 https://github.com/neo4j-contrib/neo4j-graph-algorithms
 
+## InteractiveGraph
+
+InteractiveGraph是一个图结构的可视化库。
+
+代码：
+
+https://github.com/grapheco/InteractiveGraph
+
+参考：
+
+https://zhuanlan.zhihu.com/p/63221921
+
+InteractiveGraph实现酷炫关系图谱之前瞻
+
 ## openCypher
 
 openCypher是基于Neo4j的查询语言Cypher开发的，Cypher用于在图数据库中存储和检索数据。在图数据库领域，目前还没有像关系数据库中访问数据的SQL这样的通用查询语言标准。

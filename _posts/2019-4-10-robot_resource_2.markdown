@@ -329,3 +329,7 @@ https://mp.weixin.qq.com/s/0EsgWDCFGbjLv8Rn_OBG1g
 https://mp.weixin.qq.com/s/dQd-2gGyLQURfK4SO9kjPA
 
 智能体张量融合，一种保持空间结构信息的轨迹预测方法
+
+https://mp.weixin.qq.com/s/BNanIQKY9SSNpms0qSTOBA
+
+硬核干货！揭秘波士顿动力背后的专利技术

@@ -240,6 +240,10 @@ https://mp.weixin.qq.com/s/UFfBoxQwsB_GUqTDRv3Asg
 
 免费数学神器！再复杂的公式，只要有照片就能转成LaTeX
 
+https://mp.weixin.qq.com/s/x8iyl4gwz31XOCw3oSHSwg
+
+开源！基于TensorFlow/Keras/PyTorch实现对自然场景的文字检测及端到端的OCR中文文字识别
+
 # 问答系统
 
 GA-Reader

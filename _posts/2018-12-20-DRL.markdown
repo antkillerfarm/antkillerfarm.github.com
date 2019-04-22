@@ -64,6 +64,10 @@ https://katefvision.github.io/
 
 CMU: Deep Reinforcement Learning and Control
 
+https://course.ie.cuhk.edu.hk/~ierg6130/schedule.html
+
+香港中文大学：Reinforcement Learning
+
 https://github.com/aikorea/awesome-rl
 
 提供了RL方面的资源网页。aikorea还提供了同类的资源收集网页：awesome-rnn, awesome-deep-vision, awesome-random-forest。
@@ -181,6 +185,20 @@ https://mp.weixin.qq.com/s/781fVvKr4yuq4q2GI1Y1gA
 https://spinningup.openai.com/en/latest/spinningup/keypapers.html
 
 深度强化学习关键论文列表
+
+## DeepMind vs OpenAI
+
+DeepMind和OpenAI算是DRL的两大重镇。
+
+DeepMind主要是David Silver和他导师Richard Sutton一脉，最初来源于control theory，代表作是Deep Q-learning, DDPG。
+
+OpenAI背后的派别是Berkeley帮，主要工作是围绕Pieter Abbeel以及他的两位superstar博士生Sergey Levine和John Schulman，最初来源于Robotics，代表作是TRPO以及后来的PPO。
+
+参考：
+
+https://www.zhihu.com/question/316626294
+
+请问DeepMind和OpenAI身后的两大RL流派有什么具体的区别？
 
 ## 参考
 
@@ -343,31 +361,3 @@ https://mp.weixin.qq.com/s/x-qCA0TzoVUtZ8VAf8ey0A
 https://mp.weixin.qq.com/s/snNvN4FFP0VEZwDA0TAp1w
 
 强化学习训练Chrome小恐龙Dino Run：最高超过4000分
-
-https://mp.weixin.qq.com/s/SZHMyWOXHM8T3zp_aUt-6A
-
-DeepMind提出Rainbow：整合DQN算法中的六种变体
-
-https://mp.weixin.qq.com/s/SqU74jYBrjtp9L-bnBuboA
-
-教你完美实现深度强化学习算法DQN
-
-https://mp.weixin.qq.com/s/Vdt5h8APAFoeVxFYKlywpg
-
-用DeepMind的DQN解数学题，准确率提升15%
-
-https://mp.weixin.qq.com/s/RH4ifA46njdC7fyRI9kVMg
-
-深度Q网络与视觉格斗类游戏
-
-https://mp.weixin.qq.com/s/uymKtR_7IgMpfXcekfkCDg
-
-从强化学习基本概念到Q学习的实现，打造自己的迷宫智能体
-
-https://mp.weixin.qq.com/s/9ZvaZQ1yumhr75okBxNyeA
-
-优化强化学习Q-learning算法进行股市交易
-
-https://mp.weixin.qq.com/s/QkRdv0xMoqwaXsNAMAHR0A
-
-一图尽展视频游戏AI技术，DQN无愧众算法之鼻祖

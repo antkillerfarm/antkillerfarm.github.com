@@ -154,6 +154,10 @@ https://mp.weixin.qq.com/s/5NM9M1oY8bwsEqdBRVYpMg
 
 网络规模更小、速度更快，这是谷歌提出的MorphNet
 
+https://mp.weixin.qq.com/s/SC3ebx-C4N4H8B_R6K09cg
+
+分段的人脸检测在移动端的应用
+
 # Mask R-CNN
 
 Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的NN。它是何恺明2017年的新作。
@@ -331,3 +335,7 @@ https://mp.weixin.qq.com/s/CpDZEqo14X_lCBh6i7feIA
 https://mp.weixin.qq.com/s/XApSbi-Pg-AeYGkPN3fldg
 
 旷视研究院提出ML-GCN：基于图卷积网络的多标签图像识别模型
+
+https://mp.weixin.qq.com/s/49vnVOO0G_JvKrWcsN2_Ww
+
+关系图注意力网络-Relational Graph Attention Networks

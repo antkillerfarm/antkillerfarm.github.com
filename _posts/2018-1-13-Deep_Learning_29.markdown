@@ -194,6 +194,10 @@ https://mp.weixin.qq.com/s/xc_TnMLs3o2LQ8eM4naZDw
 
 AAAI2019 Tutorial《图表示学习》, 180页PPT带你从入门到精通
 
+http://www.p-chao.com/2019-01-20/%e5%9b%be%e7%a5%9e%e7%bb%8f%e7%bd%91%e7%bb%9cgnn/
+
+图神经网络GNN的简单理解
+
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
 
 Bengio等人提出图注意网络架构GAT，可处理复杂结构图

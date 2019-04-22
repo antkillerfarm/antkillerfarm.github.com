@@ -371,6 +371,18 @@ https://mp.weixin.qq.com/s/QZT1SLCVFXBE-1FNNhWk0g
 
 利用AllenNLP，百行Python代码训练情感分类器
 
+### TorchNLP
+
+代码：
+
+https://github.com/kolloldas/torchnlp
+
+参考：
+
+https://mp.weixin.qq.com/s/xCHvB7gKCBxXk1_rAtG0sw
+
+基于PyTorch/TorchText的自然语言处理库
+
 ### FlashText
 
 在NLP任务中，清理文本数据通常需要替换句子中的关键词或从句子中提取关键词。通常，这样的操作可以用正则表达式来完成，但是如果要搜索的词汇量过大，操作就会变得麻烦。Python 中基于FlashText算法的FlashText模块，为这种情况提供了一个合适的替代方案。

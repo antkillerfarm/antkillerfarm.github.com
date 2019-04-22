@@ -206,6 +206,10 @@ https://mp.weixin.qq.com/s/lelQq4y-LIog3kNAS0kBVw
 
 向“假脸”说 No：用OpenCV搭建活体检测器
 
+https://mp.weixin.qq.com/s/y5McKum6JyQZd6oVcMOkPg
+
+深扒美图秀秀中掳获万千少女芳心的“AI秘籍”
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。

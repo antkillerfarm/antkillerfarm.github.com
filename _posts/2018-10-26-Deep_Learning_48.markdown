@@ -254,6 +254,10 @@ https://zhuanlan.zhihu.com/p/62652145
 
 加州大学提出：实时实例分割算法YOLACT，可达33 FPS/30mAP！现已开源！
 
+https://mp.weixin.qq.com/s/bbFDJ6PjjDZqdnPLMqBuKA
+
+秒杀DeepLabv3+与UNet的表面缺陷检测网络
+
 # 深度ISP
 
 ## 数据集

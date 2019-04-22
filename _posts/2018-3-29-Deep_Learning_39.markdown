@@ -181,3 +181,11 @@ https://mp.weixin.qq.com/s/ySAfdII8291hvTxUBtE5qA
 https://mp.weixin.qq.com/s/l6WMJnrGNNK4A1cTD2drcg
 
 视频跟踪新思路，完全无需手工标注。这是一篇Visual Tracking和Optical Flow Estimation相互结合的论文
+
+https://zhuanlan.zhihu.com/p/59915784
+
+Video Action Recognition的近期进展
+
+https://mp.weixin.qq.com/s/NQSJvlcjOAoIZjI2cgjhkw
+
+谷歌AI：根据视频生成深度图，效果堪比激光雷达
