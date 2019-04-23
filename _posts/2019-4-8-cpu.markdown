@@ -66,6 +66,18 @@ https://mp.weixin.qq.com/s/WBab6k4mIkZNzpvbgSbpVQ
 
 一文看懂SiP封装技术
 
+## NUMA
+
+![](/images/img2/NUMA.jpg)
+
+上图是NUMA（Non-Uniform Memory Access）的结构图。可以看到CPU和一部分内存直接相连，而和其他内存通过总线相连。如果我们把局部数据放到直连内存上，CPU显然就能够更快速的访问数据。
+
+参考：
+
+https://software.intel.com/en-us/articles/optimizing-applications-for-numa
+
+Optimizing Applications for NUMA
+
 ## 业界
 
 https://mp.weixin.qq.com/s/YdoIVBpn1dFUEzDEF5pYJw

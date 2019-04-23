@@ -408,6 +408,10 @@ http://frozengene.github.io/
 
 一个LLVM方面的blog
 
+https://www.zhihu.com/question/320728455/answer/658973076
+
+为什么上古编程语言（比如COBOL）总喜欢把代码全部写成大写字母？
+
 ## 5G
 
 https://mp.weixin.qq.com/s/oN-drJHFU34XanBzOKzrUQ
