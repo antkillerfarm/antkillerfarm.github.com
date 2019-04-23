@@ -48,7 +48,7 @@ Pix2Pix对于user control的要求比一般的CGAN更高，这里的监督信息
 
 Pix2Pix相对于传统GAN的改进在于：
 
-1.D网络的输入
+1.D网络的输入同时包括生成的图片X和它的素描图Y，X和Y使用Concat操作进行融合。例如，假设两者都是3通道的RGB颜色图，则D网络的Input就是一个6通道的tensor。
 
 参考：
 

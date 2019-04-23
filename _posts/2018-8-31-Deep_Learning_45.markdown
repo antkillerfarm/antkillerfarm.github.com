@@ -329,3 +329,7 @@ https://mp.weixin.qq.com/s/Rr4AKGjZNyV3PDoRBVH-lw
 https://mp.weixin.qq.com/s/PIq78vhNQxAKntnZilL4pQ
 
 分割、检测与定位，高分辨率网络显神威！这会是席卷深度学习的通用结构吗？
+
+https://mp.weixin.qq.com/s/G55dxHfMYxWzjz4_8YnUaw
+
+深度学习超分辨率最新综述：一文道尽技术分类与效果评测

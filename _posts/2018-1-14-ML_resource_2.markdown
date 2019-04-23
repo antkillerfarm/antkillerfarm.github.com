@@ -102,6 +102,10 @@ https://mp.weixin.qq.com/s/VxC1X4U7SnAhpaJLvKvz1g
 
 通俗理解粒子群优化算法
 
+https://mp.weixin.qq.com/s/Vz6BFqzFmQLwgQz6agjG0A
+
+粒子群算法介绍
+
 https://mp.weixin.qq.com/s/PAFt4eQ2MaAlRbR9rWW8mA
 
 “想你所想”之个性化推荐：实践与优化
