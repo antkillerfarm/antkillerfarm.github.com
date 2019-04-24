@@ -405,3 +405,7 @@ https://mp.weixin.qq.com/s/r-mndw2BKHdVq-jKLinYZQ
 https://mp.weixin.qq.com/s/jInNuNQprWlCNAz7UyHRvg
 
 IEMLRN：基于图像增强的句子语义表示
+
+https://mp.weixin.qq.com/s/XP0V6v__O4wxpjPSC5O7vw
+
+一文了解成分句法分析

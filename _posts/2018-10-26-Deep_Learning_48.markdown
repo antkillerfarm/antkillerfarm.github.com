@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十八）——语义分割进阶, 深度ISP
+title:  深度学习（四十八）——语义分割进阶, 深度ISP, AI可解释性
 category: DL 
 ---
 
@@ -333,3 +333,27 @@ https://mp.weixin.qq.com/s/z87Wp3yutq1l5bYfJS2YIA
 https://mp.weixin.qq.com/s/B5XNmFlSnjEh2xAXB42pHQ
 
 超十亿样本炼就的CNN助力图像质量增强，Adobe推出新功能“增强细节”
+
+# AI可解释性
+
+XAI(Explainable Artificial Intelligence)
+
+https://github.com/pbiecek/xai_resources
+
+AI可解释性资源汇总
+
+https://mp.weixin.qq.com/s/XVl6voP5cwdC7DcvTMQvVQ
+
+机器学习可解释性工具箱XAI
+
+https://github.com/jphall663/awesome-machine-learning-interpretability
+
+最全的机器学习可解释性资料
+
+https://mp.weixin.qq.com/s/OV4vXu7TAuyV7qU9BAMF6g
+
+机器学习模型的“可解释性”到底有多重要？
+
+https://mp.weixin.qq.com/s/33VQNVvb7JGlk10Jc3mmeg
+
+从可视化到新模型：纵览深度学习的视觉可解释性

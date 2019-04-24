@@ -340,6 +340,10 @@ https://mp.weixin.qq.com/s/V6xiG931OUJyVx15QFb_mQ
 
 弱监督视觉理解笔记
 
+https://mp.weixin.qq.com/s/HopNSLS75TgE28LfY02qog
+
+不同视角构造cycle-consistency，降低视频标注成本
+
 # 细粒度分类
 
 https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw

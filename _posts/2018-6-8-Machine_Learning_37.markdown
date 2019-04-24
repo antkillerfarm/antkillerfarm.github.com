@@ -318,10 +318,6 @@ https://mp.weixin.qq.com/s/jCXfu6AHFWnQL118r38Zpw
 
 全球顶级算法赛事Top5选手，跟你聊聊推荐系统领域的“战斗机”
 
-https://mp.weixin.qq.com/s/RAQrW6Fchynbc1Rd9IcOJQ
-
-清华张敏教授: 个性化推荐的可解释性、鲁棒性和公平性
-
 https://mp.weixin.qq.com/s/rzCqz2HasT5zxBQjHy13Tw
 
 前深度学习时代CTR预估模型的演化之路：从LR到FFM

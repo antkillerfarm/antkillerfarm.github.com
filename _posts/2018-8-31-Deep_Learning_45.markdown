@@ -248,6 +248,10 @@ https://mp.weixin.qq.com/s/Awn_fNRpGVa1xhy-jsCOFQ
 
 AutoML for Mobile Compression and Acceleration on Mobile Devices
 
+https://mp.weixin.qq.com/s/rMpV2na0GJxiO1v0HRJjPA
+
+何凯明团队《随机生成网络 RandWire》
+
 # 图像超分辨率进阶
 
 https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg

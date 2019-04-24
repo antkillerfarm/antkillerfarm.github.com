@@ -189,3 +189,7 @@ Video Action Recognition的近期进展
 https://mp.weixin.qq.com/s/NQSJvlcjOAoIZjI2cgjhkw
 
 谷歌AI：根据视频生成深度图，效果堪比激光雷达
+
+https://mp.weixin.qq.com/s/k4Ilj11wbuj5oIXLHo-5ew
+
+《视频目标分割与跟踪》最新39页综述论文

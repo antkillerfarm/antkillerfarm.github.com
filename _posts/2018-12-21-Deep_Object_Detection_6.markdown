@@ -246,6 +246,10 @@ https://mp.weixin.qq.com/s/wR5jUHBJHWFm8UTsobKDqw
 
 目标检测中的Consistent Optimization
 
+https://mp.weixin.qq.com/s/j-arl6qiD6mei4crfQPrgw
+
+《深度学习显著目标检测综述》
+
 # Flink
 
 Flink是一个流计算引擎。
