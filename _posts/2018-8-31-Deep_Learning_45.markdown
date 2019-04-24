@@ -240,6 +240,10 @@ https://mp.weixin.qq.com/s/rgbHJ_95tDf-kYMTO1YYcw
 
 谷歌大脑提出NAS-FPN：这是一种学会自动架构搜索的特征金字塔网络
 
+https://mp.weixin.qq.com/s/j-EA1ha1lcLtqJQJO8y0ZA
+
+Google Brain新作：网络结构搜索NAS在物体检测金字塔FPN框架大放异彩
+
 https://mp.weixin.qq.com/s/Awn_fNRpGVa1xhy-jsCOFQ
 
 AutoML for Mobile Compression and Acceleration on Mobile Devices

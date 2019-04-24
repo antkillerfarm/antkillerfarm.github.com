@@ -268,6 +268,10 @@ https://mp.weixin.qq.com/s/BInWMRt-fVcRbY8aCiPnpA
 
 淘宝总知道你要什么？万字讲述智能内容生成实践
 
+https://mp.weixin.qq.com/s/E6EH6aJjzTwN2UZf_4nwoA
+
+从FFM到DeepFFM，推荐排序模型到底哪家强？
+
 # Multi-agent
 
 https://zhuanlan.zhihu.com/p/39037444

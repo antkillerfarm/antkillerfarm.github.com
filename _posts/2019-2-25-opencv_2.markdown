@@ -210,6 +210,14 @@ https://mp.weixin.qq.com/s/y5McKum6JyQZd6oVcMOkPg
 
 深扒美图秀秀中掳获万千少女芳心的“AI秘籍”
 
+https://mp.weixin.qq.com/s/6IAEus9OTg-hP9NGKJRm_Q
+
+实战：CNN+BLSTM+CTC的验证码识别从训练到部署
+
+https://mp.weixin.qq.com/s/ESnIexX80y5Eus9fjHu6_w
+
+详解OpenCV卷积滤波之边缘处理与锚定输出
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。

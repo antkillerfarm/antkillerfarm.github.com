@@ -336,6 +336,10 @@ https://mp.weixin.qq.com/s/ys9iiiBL3iL2SJL247AMlA
 
 多伦多大学&NVIDIA最新成果：图像标注速度提升10倍！
 
+https://mp.weixin.qq.com/s/V6xiG931OUJyVx15QFb_mQ
+
+弱监督视觉理解笔记
+
 # 细粒度分类
 
 https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw

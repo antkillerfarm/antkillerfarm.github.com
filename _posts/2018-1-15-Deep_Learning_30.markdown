@@ -307,6 +307,10 @@ https://mp.weixin.qq.com/s/CSx7dnqPjVDAvM6ena-FTw
 
 从俄罗斯方块到星际2，全都用得上：DeepMind无监督分割大法，为游戏而生
 
+https://mp.weixin.qq.com/s/XMLYjw_wN-M8jluczkbcyw
+
+一种考虑缓和KL消失的简单VAE训练方法
+
 # 深度哈希
 
 https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg

@@ -333,3 +333,7 @@ https://mp.weixin.qq.com/s/dQd-2gGyLQURfK4SO9kjPA
 https://mp.weixin.qq.com/s/BNanIQKY9SSNpms0qSTOBA
 
 硬核干货！揭秘波士顿动力背后的专利技术
+
+https://mp.weixin.qq.com/s/GDQSxVxwx7z-YW0QkCeVBQ
+
+马斯克刚骂了激光雷达，这篇用纯视觉代替激光雷达的名校论文“力挺”了他

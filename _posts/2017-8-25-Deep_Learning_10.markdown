@@ -182,6 +182,10 @@ https://mp.weixin.qq.com/s/ipj8qpYRiYbIeXn2PZb1SQ
 
 5G时代下多模态理解做不到位注定要掉队
 
+https://mp.weixin.qq.com/s/UghgWBN7mE8oJdMUvjAjcQ
+
+何晖光：多模态情绪识别及跨被试迁移学习
+
 # 花式卷积
 
 在DL中，卷积实际上是一大类计算的总称。除了原始的卷积、反卷积（Deconvolution）之外，还有各种各样的花式卷积。

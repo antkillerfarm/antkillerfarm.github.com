@@ -150,6 +150,10 @@ https://mp.weixin.qq.com/s/n11gkdXiUf618IAxvFx_RA
 
 不识字也能翻译：谷歌AI直接用音频翻音频，不用先转文本
 
+https://mp.weixin.qq.com/s/TkOMspquWEZPdUtlOe1Tfg
+
+语音识别中的End2End模型: CTC, RNN-T与LAS
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw

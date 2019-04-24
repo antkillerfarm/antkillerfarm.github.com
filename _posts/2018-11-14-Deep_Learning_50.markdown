@@ -186,6 +186,10 @@ https://mp.weixin.qq.com/s/E7wygpWbSHoq6R7wlalFkA
 
 放弃幻想，全面拥抱Transformer！NLP三大特征抽取器（CNN/RNN/TF）比较
 
+https://mp.weixin.qq.com/s/cs4IjkmdPmu2-3Mu36f8UQ
+
+OpenAI提出Sparse Transformer，文本、图像、声音都能预测，序列长度提高30倍
+
 # Attention进阶
 
 https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA
@@ -335,3 +339,7 @@ https://mp.weixin.qq.com/s/D7GQ8DRzss9ppP6pyAs1qA
 https://mp.weixin.qq.com/s/K_VRt0B9-Xw7YJndmb4WZg
 
 Attention！注意力机制模型最新综述
+
+https://mp.weixin.qq.com/s/hzwp5oGspdtDyNBmq8sMsw
+
+HAN：基于双层注意力机制的异质图深度神经网络

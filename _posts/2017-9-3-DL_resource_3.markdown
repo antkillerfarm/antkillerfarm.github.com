@@ -378,6 +378,10 @@ https://mp.weixin.qq.com/s/WKRb0SEt1F_2lbgzwlxu_Q
 
 图像压缩重建也能抵御对抗样本，这是一种新的防守策略
 
+https://mp.weixin.qq.com/s/675tMer_pEXwXkg7fzq73g
+
+带了个对抗图像块，YOLOv2竟然无法识别我是人……
+
 ## 光神经网络
 
 https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ

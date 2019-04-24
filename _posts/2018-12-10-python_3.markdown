@@ -382,3 +382,7 @@ https://mp.weixin.qq.com/s/d2_MTvfbOFZmppej5UOwUw
 https://mp.weixin.qq.com/s/a4mGDzKdEs7-tAPsfyL29w
 
 Python Requests库使用指南
+
+https://mp.weixin.qq.com/s/weEZEr4g8pI11Gijc-St0Q
+
+DeBug Python代码全靠print函数？换用这个一天2K+Star的工具吧

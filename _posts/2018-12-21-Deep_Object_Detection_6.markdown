@@ -242,6 +242,10 @@ https://mp.weixin.qq.com/s/0_ap6CsBlz4pvx21c57-ag
 
 旷视研究院提出新型损失函数：改善边界框模糊问题
 
+https://mp.weixin.qq.com/s/wR5jUHBJHWFm8UTsobKDqw
+
+目标检测中的Consistent Optimization
+
 # Flink
 
 Flink是一个流计算引擎。
