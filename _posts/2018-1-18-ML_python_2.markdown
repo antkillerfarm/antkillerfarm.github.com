@@ -126,7 +126,7 @@ https://mp.weixin.qq.com/s/yduK_XKQ-qhiYTNl-YZMFg
 
 ## PIL
 
-PIL：Python Imaging Library，已经是Python平台事实上的图像处理标准库了。PIL功能非常强大，但API却非常简单易用。
+PIL：Python Imaging Library，已经是Python平台事实上的图像处理标准库了。
 
 官网：
 
@@ -229,6 +229,14 @@ Pyecharts：极其强大的Python数据可视化模块
 https://mp.weixin.qq.com/s/20cxuC_tAVmofA7lvquEMQ
 
 Python可视化神器——pyecharts的超详细使用指南！
+
+## Yellowbrick
+
+Yellowbrick是和Scikit-Learn配套的ML可视化库。
+
+官网：
+
+https://www.scikit-yb.org/en/latest/
 
 ## mlpy
 

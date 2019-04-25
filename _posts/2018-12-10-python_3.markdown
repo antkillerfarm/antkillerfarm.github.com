@@ -197,6 +197,34 @@ https://blog.csdn.net/csapr1987/article/details/7469769
 
 python glob模块
 
+## Sphinx
+
+Sphinx可用于为python库生成doc。目前绝大多数python库的帮助文档都是用Sphinx生成的。
+
+官网：
+
+http://www.sphinx-doc.org/en/master/
+
+代码：
+
+https://github.com/sphinx-doc/sphinx
+
+Sphinx是如下网站的默认解决方案：
+
+https://readthedocs.org/
+
+Read the Docs网站包含了大量python库的帮助文档，还为另外一些库提供了Hosting服务，即便后者有独立的域名。
+
+参考：
+
+https://blog.csdn.net/preyta/article/details/73647937
+
+使用Sphinx为你的python模块自动生成文档
+
+https://www.ibm.com/developerworks/cn/opensource/os-sphinx-documentation/
+
+使用sphinx制作简洁而又美观的文档
+
 ## 参考
 
 https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA

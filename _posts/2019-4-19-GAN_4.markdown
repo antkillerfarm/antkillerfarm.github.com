@@ -6,6 +6,34 @@ category: GAN & VAE
 
 # 参考资源
 
+https://mp.weixin.qq.com/s/FDyN6fblDFGOSNRFs5OYqA
+
+什么都能GAN，无监督神经网络翻译新方法
+
+https://mp.weixin.qq.com/s/DYSnAwP9xt-p0ihsEtKm1Q
+
+TensorFlow实现StarGAN代码全部开源，1天训练完
+
+https://mp.weixin.qq.com/s/se_2Ci4eE5fxiiG4LZrv8w
+
+怎样用可交互对抗网络增强人类创造力
+
+https://mp.weixin.qq.com/s/29Ror1CKFubB0n38cihMqQ
+
+六种GAN评估指标的综合评估实验，迈向定量评估GAN的重要一步
+
+https://mp.weixin.qq.com/s/0I8jLO3srXC3fUdoMC585w
+
+一些fancy的GAN应用
+
+https://mp.weixin.qq.com/s/2cY3NCtMYiRlLayB32wl-w
+
+下一个GAN？OpenAI提出可逆生成模型Glow
+
+https://mp.weixin.qq.com/s/1cUM8_AUZ40JWGI37HsqFw
+
+换脸效果媲美GAN！一文解析OpenAI最新流生成模型Glow
+
 https://mp.weixin.qq.com/s/kD_163rjGRp4rXOdIPCvRA
 
 亲历IJCAI 2018，为什么北京大学SentiGAN能获杰出论文？

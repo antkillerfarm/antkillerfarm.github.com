@@ -250,6 +250,10 @@ https://mp.weixin.qq.com/s/j-arl6qiD6mei4crfQPrgw
 
 《深度学习显著目标检测综述》
 
+https://mp.weixin.qq.com/s/ts4WFnuN4cHLfUh8--96Kw
+
+Libra R-CNN：全面平衡的目标检测器
+
 # Flink
 
 Flink是一个流计算引擎。

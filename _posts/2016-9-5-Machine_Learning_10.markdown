@@ -4,15 +4,23 @@ title:  机器学习（十）——高斯混合模型和EM算法
 category: ML 
 ---
 
-## 聚类结果的评价
+## Elbow Method
 
-可考虑用以下几个指标来评价聚类效果：
+K-means算法中，K值的选取除了依赖领域知识之外，还可以采用Elbow Method（肘部原则）来确定。
 
-1.聚类中心之间的距离。距离值大，通常可考虑分为不同类。
+![](/images/img2/elbow.png)
 
-2.聚类域中的样本数目。样本数目少且聚类中心距离远，可考虑是否为噪声。
+上图中的蓝线是畸变率，数值越低越好，而绿线是计算时间，也是数值越低越好。可以看出K=8的时候，效果最佳。实际上即使只有一根线，我们也可以判断K取值的优劣：折线的斜率在K=8处，变化较大，形如人的肘部，故名。
 
-3.聚类域内样本的距离方差。方差过大的样本可考虑是否属于这一类。
+参考：
+
+https://www.scikit-yb.org/en/latest/api/cluster/elbow.html
+
+Elbow Method
+
+https://bl.ocks.org/rpgove/0060ff3b656618e9136b
+
+Using the elbow method to determine the optimal number of clusters for k-means clustering
 
 # 高斯混合模型和EM算法
 
@@ -245,4 +253,3 @@ $$\sum_i\sum_{z^{(i)}}Q_i^{(t)}(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\theta^{(t+1
 $$J(Q,\theta)=\sum_i\sum_{z^{(i)}}Q_i(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}$$
 
 则EM算法可以看作是J函数的坐标上升法。E-Step固定$$\theta$$，优化Q；M-Step固定Q，优化$$\theta$$。
-
