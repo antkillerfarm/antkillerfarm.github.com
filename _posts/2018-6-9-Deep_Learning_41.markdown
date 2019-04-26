@@ -18,6 +18,10 @@ https://mp.weixin.qq.com/s/Ut_of4Xb8c0beACShKOWlQ
 
 何恺明“终结”ImageNet预训练时代：从0开始训练神经网络，效果比肩COCO冠军
 
+## Unsupervised Domain Adaptation by Backpropagation
+
+![](/images/img3/Transfer_Learning.png)
+
 ## 参考
 
 >龙明盛，清华本科（2008）+博士（2016），迁移学习的最早提出者之一。清华大学副教授，博导。   

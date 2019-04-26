@@ -324,6 +324,10 @@ https://mp.weixin.qq.com/s/1Cz6js4kYdvc8g4oKjVPeA
 
 BERT烹饪之法：fintune的艺术
 
+https://mp.weixin.qq.com/s/nVM2Kxc_Mn7BAC6-Pig2Uw
+
+BERT模型的标准调优和花式调优
+
 # 图像检索
 
 ## 传统方法

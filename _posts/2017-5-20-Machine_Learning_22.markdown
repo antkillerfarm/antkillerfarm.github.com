@@ -38,6 +38,10 @@ https://mp.weixin.qq.com/s/aKRUJt-_1QSQFcRVtuyJ4w
 
 被忽略的Focal Loss变种
 
+https://zhuanlan.zhihu.com/p/55036597
+
+样本贡献不均：Focal Loss和 Gradient Harmonizing Mechanism
+
 ## Other Loss
 
 https://mp.weixin.qq.com/s/7Jg-YvS3nvcPJ-zYhK96EA

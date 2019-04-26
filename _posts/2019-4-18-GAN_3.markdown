@@ -42,13 +42,35 @@ https://github.com/affinelayer/pix2pix-tensorflow
 
 tensorflow版本
 
+https://github.com/williamFalcon/pix2pix-keras
+
+keras版本
+
 ![](/images/img2/pix2pix.png)
 
 Pix2Pix对于user control的要求比一般的CGAN更高，这里的监督信息不再是一个类别，而是一张图片。上图就是一个使用Pix2Pix对素描图上色的示例。其中的素描图就相当于CGAN中的类别信息。
 
 Pix2Pix相对于传统GAN的改进在于：
 
-1.D网络的输入同时包括生成的图片X和它的素描图Y，X和Y使用Concat操作进行融合。例如，假设两者都是3通道的RGB颜色图，则D网络的Input就是一个6通道的tensor。
+**1.D网络的输入同时包括生成的图片X和它的素描图Y，X和Y使用Concat操作进行融合。**例如，假设两者都是3通道的RGB颜色图，则D网络的Input就是一个6通道的tensor。
+
+**2.G网络使用dropout来提供随机性。**作者在实践中发现，噪声向量在这个模型的学习过程中，被模型忽略掉了，起不到相应的作用。
+
+**3.G网络使用U-NET。**实践表明，U-NET比AE的效果要好。
+
+**4.L1损失函数的加入来保证输入和输出之间的一致性。**
+
+**5.使用PatchGAN来保证局部精准。**
+
+一般的GAN的D网络，只需要输出一个true or fasle的矢量，这代表对整张图像的评价。而PatchGAN输出的是一个NxN的矩阵，这个NxN的矩阵的每一个元素，对应着原图中的一个Patch。
+
+![](/images/img3/Patch_GAN.png)
+
+判别器对每一个patch做真假判别，将一张图片所有patch的结果取平均作为最终的判别器输出。这一步在具体实现上，就是使用Conv来代替D网络最后一层的FC。由于Conv操作不在乎输入尺寸，因此可以用不同尺寸的图片训练网络。
+
+![](/images/img3/Patch_GAN_2.png)
+
+这是使用不同大小的patch的效果。可以看出patch size越大，则效果越好，但是计算量也越大。
 
 参考：
 
@@ -76,11 +98,25 @@ https://mp.weixin.qq.com/s/PoSA6JXYE_OexEoJYzaX4A
 
 利用条件GANs的pix2pix进化版：高分辨率图像合成和语义操作
 
+https://blog.csdn.net/xiaoxifei/article/details/86506955
+
+关于PatchGAN的理解
+
 # CycleGAN
 
 Style Transfer的基本内容可参见《深度学习（十五）》。
 
 除了基于纹理的Style Transfer之外，基于GAN的Style Transfer是另外一个流派。
+
+论文：
+
+《Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks》
+
+![](/images/img3/CycleGAN.png)
+
+![](/images/img3/CycleGAN_2.png)
+
+![](/images/img3/CycleGAN_3.png)
 
 参考：
 
@@ -293,67 +329,3 @@ http://mp.weixin.qq.com/s/RlpI3hCKjcJ8VHSbBXf84g
 https://mp.weixin.qq.com/s/gDzti2DISq_cwGbP5T7ICQ
 
 聊聊对抗自编码器
-
-https://mp.weixin.qq.com/s/nuT6Glyx0-tU7WJyoPji9w
-
-GANs正在多个层面有所突破
-
-https://mp.weixin.qq.com/s/cI4xZOw6eL0w9sz9Q2mSCw
-
-Ian Goodfellow盛赞：一个GAN生成ImageNet全部1000类物体
-
-https://mp.weixin.qq.com/s/BCA7MmYnivuGbwyjHqDQUw
-
-手把手教你实现GAN半监督学习
-
-https://zhuanlan.zhihu.com/p/32135185
-
-从一篇ICLR'2017被拒论文谈起：行走在GAN的Latent Space
-
-https://mp.weixin.qq.com/s/9N_3JkNEPdXQgFn0S7MqnA
-
-走进深度生成模型：变分自动编码器（VAE）和生成对抗网络（GAN）
-
-https://mp.weixin.qq.com/s/SPAbCZloiHp2mtGu0IDWDA
-
-DeepMind高级研究员：重新理解GAN，最新算法、技巧及应用
-
-https://mp.weixin.qq.com/s/EI57G3ph9WCrT7kudOAjvQ
-
-Petuum提出对偶运动生成对抗网络：可合成逼真的视频未来帧和流
-
-https://mp.weixin.qq.com/s/M-YeUqvcSVHj_MbCS_c-6Q
-
-无平行文本照样破解密码，CipherGAN有望提升机器翻译水平
-
-https://mp.weixin.qq.com/s/uJEGXNvBVJfsxYJUQCz4DQ
-
-DA-GAN技术：计算机帮你创造奇妙“新物种”
-
-https://mp.weixin.qq.com/s/b8g_wNqi4dD5x9whj9ZN4A
-
-争议、流派，有关GAN的一切：Ian Goodfellow Q&A
-
-https://mp.weixin.qq.com/s/9N-eOyRseMc6zVH1_VBE4w
-
-斯坦福联合谷歌使用图卷积和GAN从场景图中生成图像
-
-https://mp.weixin.qq.com/s/V8v9eeP4HFH-TfIKUio6Iw
-
-上交大推出新型无监督生成模型算法CoT，性能比GAN稳定！
-
-https://mp.weixin.qq.com/s/Gjb-PkMqUIIV81Na6Za_BQ
-
-超全的GAN PyTorch+Keras实现集合
-
-https://mp.weixin.qq.com/s/Cb3C6Q5aWSjsNFs5hqD6kw
-
-阿里提出应用LocalizedGAN进行半监督训练
-
-https://mp.weixin.qq.com/s/Y8D0gr1ybQ48H0bDpPvD8w
-
-二次元萌妹高清舞姿随心变，换装只需一瞬间：又是GAN立功了
-
-https://mp.weixin.qq.com/s/H_EcHi9BRur214rktocGbg
-
-怎样用GAN生成各种胖吉猫？谷歌大脑程序员教你撩妹神技

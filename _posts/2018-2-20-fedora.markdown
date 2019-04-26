@@ -127,7 +127,9 @@ Install TightVNC Server in RHEL/CentOS and Fedora to Access Remote Desktops
 
 # Blog维护日志
 
-3019.3.27 NLP参考资源已经积攒了很多，特进行细分类，使之更有条理。
+2019.4.26 img2的图片太多，特添加img3。
+
+2019.3.27 NLP参考资源已经积攒了很多，特进行细分类，使之更有条理。
 
 2019.3.19 添加GAN & VAE分类。
 

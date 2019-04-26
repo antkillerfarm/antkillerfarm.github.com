@@ -28,6 +28,22 @@ urllib2.install_opener(l_opener)
 usock = urllib2.urlopen('http://www.sohu.com')
 {% endhighlight %}
 
+## Requests
+
+>上一小节大概写作于2008年，已经10年了，urllib3都出来了。
+
+Requests是Python语言编写，基于urllib3，采用Apache2 Licensed开源协议的HTTP库。
+
+参考：
+
+https://mp.weixin.qq.com/s/a4mGDzKdEs7-tAPsfyL29w
+
+Python Requests库使用指南
+
+https://mp.weixin.qq.com/s/cyG_TpPA9eyzG70VT2m2Ww
+
+Requests的基本用法
+
 ## NetworkX
 
 NetworkX是一个用Python语言开发的图论与复杂网络建模工具，内置了常用的图与复杂网络分析算法，可以方便的进行复杂网络数据分析、仿真建模等工作。
@@ -406,10 +422,6 @@ Python制作一款简易音乐播放器
 https://mp.weixin.qq.com/s/d2_MTvfbOFZmppej5UOwUw
 
 关于使用Python析构函数的正确姿势
-
-https://mp.weixin.qq.com/s/a4mGDzKdEs7-tAPsfyL29w
-
-Python Requests库使用指南
 
 https://mp.weixin.qq.com/s/weEZEr4g8pI11Gijc-St0Q
 

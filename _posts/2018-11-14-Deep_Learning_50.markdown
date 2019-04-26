@@ -343,3 +343,7 @@ Attention！注意力机制模型最新综述
 https://mp.weixin.qq.com/s/hzwp5oGspdtDyNBmq8sMsw
 
 HAN：基于双层注意力机制的异质图深度神经网络
+
+https://mp.weixin.qq.com/s/aixpv9t1PLPRWUP6PvZ0EQ
+
+用自注意力增强卷积：这是新老两代神经网络的对话

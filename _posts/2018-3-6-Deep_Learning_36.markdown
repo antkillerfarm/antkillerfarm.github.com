@@ -74,6 +74,10 @@ https://www.librec.net/
 
 这是一个Java写的推荐系统。东北大学的郭贵冰主持的项目。该网址同时也有不少相关论文可供阅读。
 
+https://github.com/cheungdaven/DeepRec
+
+这是一个基于Tensorflow的深度推荐系统
+
 ## 参考
 
 https://zhuanlan.zhihu.com/learningdeep

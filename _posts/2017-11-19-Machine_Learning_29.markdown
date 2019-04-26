@@ -195,3 +195,7 @@ https://mp.weixin.qq.com/s/atQHJ5U2pJpSG6PguN7J4Q
 https://mp.weixin.qq.com/s/yi-PNmMNMbwSi56aXo6ZSQ
 
 tensorflow对象检测框架训练VOC数据集常见的两个问题
+
+https://mp.weixin.qq.com/s/bcLCCvWrJLbMxwDl9GutjQ
+
+TensorFlow动态图5行代码实现迁移学习-识别转变风格的MNIST

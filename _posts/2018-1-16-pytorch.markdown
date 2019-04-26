@@ -314,6 +314,10 @@ https://mp.weixin.qq.com/s/cKvkvWgVPuq9y1A5q1OPEQ
 
 跟着指南学PyTorch—迁移学习教程
 
+https://mp.weixin.qq.com/s/gJgxh4l0CXTlaJaQ_FS3YQ
+
+PyTorch的数据增强与数据标准化
+
 # PaddlePaddle
 
 https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q
