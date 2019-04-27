@@ -1,10 +1,47 @@
 ---
 layout: post
-title:  机器学习（十四）——机器学习中的矩阵方法（2）特征值和奇异值, 病态矩阵
+title:  机器学习（十四）——机器学习中的矩阵方法（2）特征值和奇异值
 category: ML 
 ---
 
-## QR算法（续）
+## QR算法
+
+对矩阵A进行QR分解可得：$$A=QR$$
+
+因为Q是正交阵（$$Q^T=Q^{-1}$$），所以正交相似变换$$Q^TAQ$$和A有相同的特征值。
+
+证明：
+
+$$\mid Q^TAQ-\lambda I\mid =\mid Q^TAQ-Q^T(\lambda I)Q\mid =\mid Q^T(A-\lambda I)Q\mid \\=\mid Q^T\mid \cdot\mid A-\lambda I\mid \cdot\mid Q\mid =\mid Q^TQ\mid \cdot\mid A-\lambda I\mid =\mid I\mid \cdot\mid A-\lambda I\mid =\mid A-\lambda I\mid $$
+
+这里的证明，用到了行列式的如下性质：
+
+$$\mid I\mid =1$$
+
+$$\mid AB\mid =\mid A\mid \cdot\mid B\mid $$
+
+因为$$Q^TAQ$$和A的特征方程相同，所以它们的特征值也相同。证毕。
+
+由此产生如下迭代算法：
+
+>Repeat until convergence {   
+>>1.$$A_k=Q_kR_k$$（QR分解）   
+>>2.$$A_{k+1}=Q_k^TA_kQ_k=Q_k^{-1}Q_kR_kQ_k=R_kQ_k$$   
+>
+>}
+
+这个算法的收敛性证明比较复杂，这里只给出结论：
+
+$$\lim_{k\to\infty}A_k=\begin{bmatrix}
+\lambda_1 & u_{12} &  \dots  & u_{1n} \\
+0 & \lambda_2 &  \dots  & u_{2n} \\
+\dots & \dots & \ddots & \dots \\
+0 & 0 & \dots & \lambda_n 
+\end{bmatrix}$$
+
+其中，$$\lambda_i$$为矩阵的特征值。$$u_{ij}$$表示任意值，它们的极限可能并不存在。
+
+QR算法于1961年，由John G.F. Francis和Vera Nikolaevna Kublanovskaya发现。
 
 >注：John G.F. Francis，1934年生，英国计算机科学家，剑桥大学肄业生。   
 >2000年，QR算法被IEEE计算机学会评为20世纪的top 10算法之一。然而直到那时，计算机界的数学家们竟然都没有见过Francis本尊，连这位大神是活着还是死了都不知道，仿佛他在发表完这篇惊世之作后就消失了一般。   
@@ -218,36 +255,3 @@ $$\|x\|_\infty=max(\mid x_1\mid ,\dots,\mid x_n\mid )$$
 ![](/images/img2/Chebyshev.png)
 
 >Pafnuty Lvovich Chebyshev，1821～1894，俄罗斯数学家，莫斯科大学博士，圣彼得堡大学教授。俄罗斯数学的奠基人，他创建的圣彼得堡学派，是20世纪俄罗斯最主要的数学流派。
-
-这里不做解释的给出如下示意图：
-
-![](/images/article/lp_ball.png)
-
-其中，0范数表示向量中非0元素的个数。上图中的图形被称为$$l_p$$ ball。表征在同一范数条件下，具有相同距离的点的集合。
-
-范数满足如下不等式：
-
-$$\|A+B\|\le \|A\|+\|B\|(三角不等式)$$
-
-向量范数推广可得到矩阵范数。某些矩阵范数满足如下公式：
-
-$$\|A\cdot B\|\le \|A\|\cdot\|B\|$$
-
-这种范数被称为相容范数。
-
->注：矩阵范数要比向量范数复杂的多，还包含一些不可以由向量范数来诱导的范数，如Frobenius范数。而且只有极少数矩阵范数，可由简单表达式来表达。这里篇幅有限，不再赘述。
-
->Ferdinand Georg Frobenius，1849～1917，德国数学家，哥廷根大学博士（1870）,University of Berlin和ETH Zurich教授。他在椭圆函数、微分方程、数论和群论等领域有杰出贡献。矩阵的秩就是他提出来的。
-
-## 病态矩阵
-
-现在有线性系统$$Ax = b$$：
-
-$$\begin{bmatrix} 400 & -201 \\-800 & 401 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}=\begin{bmatrix} 200 \\ -200 \end{bmatrix}$$
-
-很容易得到解为：$$x_1=-100,x_2=-200$$。如果在样本采集时存在一个微小的误差，比如，将 A矩阵的系数400改变成401：
-
-$$\begin{bmatrix} 401 & -201 \\-800 & 401 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}=\begin{bmatrix} 200 \\ -200 \end{bmatrix}$$
-
-则得到一个截然不同的解：$$x_1=40000,x_2=79800$$。
-

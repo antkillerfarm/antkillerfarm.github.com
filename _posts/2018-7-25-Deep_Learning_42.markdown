@@ -68,7 +68,11 @@ https://zhuanlan.zhihu.com/p/38603624
 
 https://mp.weixin.qq.com/s/leuILzYz40PqrwsCatYhPw
 
-行人再识别年度进展
+2018行人再识别年度进展
+
+https://zhuanlan.zhihu.com/p/64004977
+
+2019行人再识别年度进展回顾
 
 https://zhuanlan.zhihu.com/p/37931822
 

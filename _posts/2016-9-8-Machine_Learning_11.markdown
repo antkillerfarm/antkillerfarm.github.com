@@ -6,6 +6,18 @@ category: ML
 
 ## EM算法的一般形式（续）
 
+因为M-Step的最大化过程，可得：
+
+$$\sum_i\sum_{z^{(i)}}Q_i^{(t)}(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\theta^{(t+1)})}{Q_i^{(t)}(z^{(i)})}\ge\sum_i\sum_{z^{(i)}}Q_i^{(t)}(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\theta^{(t)})}{Q_i^{(t)}(z^{(i)})}$$
+
+综上可得：$$\ell(\theta^{(t)})\le \ell(\theta^{(t+1)})$$
+
+事实上，如果我们定义：
+
+$$J(Q,\theta)=\sum_i\sum_{z^{(i)}}Q_i(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}$$
+
+则EM算法可以看作是J函数的坐标上升法。E-Step固定$$\theta$$，优化Q；M-Step固定Q，优化$$\theta$$。
+
 参考：
 
 https://mp.weixin.qq.com/s/NbM4sY93kaG5qshzgZzZIQ
@@ -230,20 +242,3 @@ $$p(x_1\mid x_2)=\frac{1}{Z_2}\exp\left(-\frac{1}{2}\left(x_1^TV_{11}x_1-2x_1^TV
 使用上一节中的完全配方技巧，可得：
 
 $$p(x_1\mid x_2)=\frac{1}{Z_3}\exp\left(-\frac{1}{2}(x_1-\mu_{1\mid 2})^TV_{11}(x_1-\mu_{1\mid 2})\right)$$
-
-其中：
-
-$$\mu_{1\mid 2}=\mu_1-V_{11}^{-1}V_{12}(x_2-\mu_2)\tag{1}$$
-
-即：
-
-$$x_1\mid x_2\sim N(\mu_1-V_{11}^{-1}V_{12}(x_2-\mu_2),V_{11}^{-1})$$
-
-另，根据分块矩阵的求逆法则，可得：
-
-$$\Sigma^{-1}=\begin{bmatrix} \Sigma_{11} & \Sigma_{12} \\ \Sigma_{21} & \Sigma_{22} \end{bmatrix}^{-1}=\begin{bmatrix} (\Sigma_{11}-\Sigma_{12}\Sigma_{22}^{-1}\Sigma_{21})^{-1} & -(\Sigma_{11}-\Sigma_{12}\Sigma_{22}^{-1}\Sigma_{21})^{-1}\Sigma_{12}\Sigma_{22}^{-1} \\ -\Sigma_{22}^{-1}\Sigma_{21}(\Sigma_{11}-\Sigma_{12}\Sigma_{22}^{-1}\Sigma_{21})^{-1} & (\Sigma_{22}-\Sigma_{21}\Sigma_{11}^{-1}\Sigma_{12})^{-1} \end{bmatrix}$$
-
-因此：
-
-$$\Sigma_{1\mid 2}=V_{11}^{-1}=\Sigma_{11}-\Sigma_{12}\Sigma_{22}^{-1}\Sigma_{21}\tag{2}$$
-

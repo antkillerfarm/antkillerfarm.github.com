@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Pytorch, PaddlePaddle, X-Deep Learning
+title:  Pytorch
 category: AI 
 ---
 
@@ -318,90 +318,6 @@ https://mp.weixin.qq.com/s/gJgxh4l0CXTlaJaQ_FS3YQ
 
 PyTorch的数据增强与数据标准化
 
-# PaddlePaddle
+https://mp.weixin.qq.com/s/pDo2bSctEiTEyjRUgOAC8w
 
-https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q
-
-如何用百度深度学习框架PaddlePaddle做数据预处理
-
-https://mp.weixin.qq.com/s/yTZs_rQnuZK1GAy3V1Cuog
-
-一文读懂百度PaddlePaddle EDL技术
-
-https://mp.weixin.qq.com/s/VKK4M_0S7HaBkvURqWgseQ
-
-PaddlePaddle与TensorFlow的对比分析
-
-https://mp.weixin.qq.com/s/ync8iu8nmpJoI5Sfnj8DqQ
-
-百度深度学习平台PaddlePaddle框架解析
-
-https://mp.weixin.qq.com/s/dGapoc3YUkzjItrTUi3DQg
-
-新手入门？一步一步教你如何安装PaddlePaddle
-
-https://mp.weixin.qq.com/s/tAhaVwlsxJ5ml0wxiew_4Q
-
-在PaddlePaddle上实现MNIST手写体数字识别
-
-https://mp.weixin.qq.com/s/nGXhXvEd8mXbpTqmFHNJcQ
-
-说说为什么选择Paddlepaddle而不是TensorFlow
-
-https://mp.weixin.qq.com/s/G8hUNK5hyZPDHt9JRROMKw
-
-PaddleFluid和TensorFlow基本使用概念对比
-
-https://mp.weixin.qq.com/s/RuVtfoGDdbWSBBfN-A0OOw
-
-使用PaddleFluid和TensorFlow实现图像分类网络SE_ResNeXt
-
-https://mp.weixin.qq.com/s/JULU6bO7sPUbEJZ9tUDqiQ
-
-使用PaddleFluid和TensorFlow训练RNN语言模型
-
-https://mp.weixin.qq.com/s/ceCopgMboWvNxl8qgmeB-Q
-
-使用PaddleFluid和TensorFlow训练序列标注模型
-
-https://mp.weixin.qq.com/s/PjwsfdlwZMRvuprkmi-saQ
-
-云脑科技-实习僧文本匹配模型及基于百度PaddlePaddle的应用
-
-https://mp.weixin.qq.com/s/oC1ZMRNrJK9oY4y6oHxzbA
-
-百度PaddlePaddle的新特性与大规模稀疏数据分布式模型训练
-
-https://mp.weixin.qq.com/s/ZV32xDgGTriIAUbHohc90Q
-
-4个学生，1个暑假，百度深度学习开源平台PaddlePaddle诞生了智能桃子分拣器
-
-https://mp.weixin.qq.com/s/m9Kh4Syo5c6a0aAW0a7kAw
-
-基于深度学习的图像超分辨率重建
-
-https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247492226&idx=1&sn=eafb23c1658f487f47254128bcc6e1b2
-
-PyraNet：基于特征金字塔网络的人体姿态估计
-
-https://mp.weixin.qq.com/s/QBI9C_2CKLTvR0SoDdF27g
-
-百度PaddlePaddle开源视频分类模型Attention Cluster
-
-https://mp.weixin.qq.com/s/e63adoVJ5M_LalMCbB6CIQ
-
-PARL源码走读：使用策略梯度算法求解迷宫寻宝问题
-
-# X-Deep Learning
-
-TensorFlow、MXNet、PyTorch等框架大都是面向图像、语音等领域的稠密数据设计，对广告、推荐等场景的高维稀疏数据上的深度学习计算考虑不足。
-
-为此，阿里妈妈启动了XDL框架的研发，希望能够在复用已有开源框架对稠密数据的计算能力基础上，重点打造面向工业级应用的分布式规模能力。
-
-![](/images/img2/XDL.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/kdCk_twY_czQo58y3x_yyA
-
-阿里深度学习框架开源了！无缝对接TensorFlow、PyTorch
+PyTorch常用代码段整理合集

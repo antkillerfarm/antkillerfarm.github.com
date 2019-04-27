@@ -1,12 +1,109 @@
 ---
 layout: post
-title:  机器学习（十六）——协同过滤的ALS算法（2）
+title:  机器学习（十六）——协同过滤的ALS算法
 category: ML 
 ---
 
-# 协同过滤的ALS算法
+# 协同过滤的ALS算法（续）
 
-### Spearman秩相关系数（续）
+### Spearman秩相关系数（Spearman's rank correlation coefficient）
+
+对秩变量（ranked variables）套用PCC公式，即可得Spearman秩相关系数。
+
+秩变量是一类不在乎值的具体大小，而只关心值的大小关系的统计量。
+
+<table>
+<tr>
+<th>$$X_i$$</th>
+<th>$$Y_i$$</th>
+<th>$$x_i$$</th>
+<th>$$y_i$$</th>
+<th>$$d_i$$</th>
+<th>$$d_i^2$$</th>
+</tr>
+<tr>
+<td>86</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>97</td>
+<td>20</td>
+<td>2</td>
+<td>6</td>
+<td>−4</td>
+<td>16</td>
+</tr>
+<tr>
+<td>99</td>
+<td>28</td>
+<td>3</td>
+<td>8</td>
+<td>−5</td>
+<td>25</td>
+</tr>
+<tr>
+<td>100</td>
+<td>27</td>
+<td>4</td>
+<td>7</td>
+<td>−3</td>
+<td>9</td>
+</tr>
+<tr>
+<td>101</td>
+<td>50</td>
+<td>5</td>
+<td>10</td>
+<td>−5</td>
+<td>25</td>
+</tr>
+<tr>
+<td>103</td>
+<td>29</td>
+<td>6</td>
+<td>9</td>
+<td>−3</td>
+<td>9</td>
+</tr>
+<tr>
+<td>106</td>
+<td>7</td>
+<td>7</td>
+<td>3</td>
+<td>4</td>
+<td>16</td>
+</tr>
+<tr>
+<td>110</td>
+<td>17</td>
+<td>8</td>
+<td>5</td>
+<td>3</td>
+<td>9</td>
+</tr>
+<tr>
+<td>112</td>
+<td>6</td>
+<td>9</td>
+<td>2</td>
+<td>7</td>
+<td>49</td>
+</tr>
+<tr>
+<td>113</td>
+<td>12</td>
+<td>10</td>
+<td>4</td>
+<td>6</td>
+<td>36</td>
+</tr>
+</table>
+
+如上表所示，$$X_i$$和$$Y_i$$是原始的变量值，$$x_i$$和$$y_i$$是rank之后的值，$$d_i=x_i-y_i$$。
 
 当$$X_i$$和$$Y_i$$没有重复值的时候，也可用如下公式计算相关系数：
 
@@ -209,60 +306,3 @@ ALS-WR没有考虑到时序行为的影响，时序行为相关的内容，可�
 http://www.jos.org.cn/1000-9825/4478.htm
 
 基于时序行为的协同过滤推荐算法
-
-## 参考
-
-参考论文：
-
-《Large-scale Parallel Collaborative Filtering forthe Netflix Prize》
-
-《Collaborative Filtering for Implicit Feedback Datasets》
-
-《Matrix Factorization Techniques for Recommender Systems》
-
-其他参考：
-
-http://www.jos.org.cn/html/2014/9/4648.htm
-
-基于大规模隐式反馈的个性化推荐
-
-http://www.fuqingchuan.com/2015/03/812.html
-
-协同过滤之ALS-WR算法
-
-http://www.docin.com/p-714582034.html
-
-基于矩阵分解的协同过滤算法
-
-http://www.tuicool.com/articles/fANvieZ
-
-Spark MLlib中的协同过滤
-
-http://www.68idc.cn/help/buildlang/ask/20150727462819.html
-
-Alternating Least Squares(ASL)的数学推导
-
-https://mp.weixin.qq.com/s/bRhIm8Xvlb51zE2HpDO5Og
-
-一文读懂推荐系统知识体系
-
-http://mp.weixin.qq.com/s/QhP3wRGbrO7sYSDNm8z0gQ
-
-常用推荐算法（50页干货）
-
-https://zhuanlan.zhihu.com/p/23036112
-
-推荐系统常用的推荐算法
-
-https://mp.weixin.qq.com/s/6x8cK_SDW67At3IUZ15ijQ
-
-协同过滤典型算法概述
-
-https://mp.weixin.qq.com/s/wtvwWZhqCRjJgdCpa7qdJw
-
-矩阵分解在协同过滤推荐中的应用
-
-https://mp.weixin.qq.com/s/sUQPaiYAfRpCFryrHMqPoA
-
-想写出人见人爱的推荐系统，先了解经典矩阵分解技术
-

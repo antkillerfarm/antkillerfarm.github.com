@@ -4,6 +4,24 @@ title:  机器学习（十二）——因子分析（2）
 category: ML 
 ---
 
+## 边缘和条件高斯分布（续）
+
+其中：
+
+$$\mu_{1\mid 2}=\mu_1-V_{11}^{-1}V_{12}(x_2-\mu_2)\tag{1}$$
+
+即：
+
+$$x_1\mid x_2\sim N(\mu_1-V_{11}^{-1}V_{12}(x_2-\mu_2),V_{11}^{-1})$$
+
+另，根据分块矩阵的求逆法则，可得：
+
+$$\Sigma^{-1}=\begin{bmatrix} \Sigma_{11} & \Sigma_{12} \\ \Sigma_{21} & \Sigma_{22} \end{bmatrix}^{-1}=\begin{bmatrix} (\Sigma_{11}-\Sigma_{12}\Sigma_{22}^{-1}\Sigma_{21})^{-1} & -(\Sigma_{11}-\Sigma_{12}\Sigma_{22}^{-1}\Sigma_{21})^{-1}\Sigma_{12}\Sigma_{22}^{-1} \\ -\Sigma_{22}^{-1}\Sigma_{21}(\Sigma_{11}-\Sigma_{12}\Sigma_{22}^{-1}\Sigma_{21})^{-1} & (\Sigma_{22}-\Sigma_{21}\Sigma_{11}^{-1}\Sigma_{12})^{-1} \end{bmatrix}$$
+
+因此：
+
+$$\Sigma_{1\mid 2}=V_{11}^{-1}=\Sigma_{11}-\Sigma_{12}\Sigma_{22}^{-1}\Sigma_{21}\tag{2}$$
+
 ## 因子分析的例子
 
 下面通过一个简单例子，来引出因子分析背后的思想。
@@ -222,25 +240,3 @@ $$E_{z^{(i)}\sim Q_i}\left[z^{(i)}(z^{(i)})^T\right]=\mu_{z^{(i)}\mid x^{(i)}}\m
 $$\Lambda=\left(\sum_{i=1}^m(x^{(i)}-\mu)\mu_{z^{(i)}\mid x^{(i)}}^T\right)\left(\sum_{i=1}^m \left(\mu_{z^{(i)}\mid x^{(i)}}\mu_{z^{(i)}\mid x^{(i)}}^T+\Sigma_{z^{(i)}\mid x^{(i)}}\right)\right)^{-1}$$
 
 这里需要注意的是，和之前的混合高斯模型相比，我们不仅要计算$$\Sigma_{z^{(i)}\mid x^{(i)}}$$，还要计算$$E[z]$$和$$E[zz^T]$$。
-
-此外，我们还可得出：（推导过程略）
-
-$$\mu=\frac{1}{m}\sum_{i=1}^mx^{(i)}$$
-
-$$\begin{split}\Phi=\frac{1}{m}\sum_{i=1}^m\left(x^{(i)}(x^{(i)})^T-x^{(i)}\mu_{z^{(i)}\mid x^{(i)}}^T\Lambda^T-\Lambda\mu_{z^{(i)}\mid x^{(i)}}(x^{(i)})^T
-\\+\Lambda\left(\mu_{z^{(i)}\mid x^{(i)}}\mu_{z^{(i)}\mid x^{(i)}}^T+\Sigma_{z^{(i)}\mid x^{(i)}}\right)\Lambda^T\right)\end{split}$$
-
-# 机器学习中的矩阵方法
-
-在继续Andrew Ng的讲义之前，我们需要加强一些矩阵的相关知识。虽然Andrew Ng的讲义中已经包含了一个线性代数方面的简介文章，然而真的就只是简介而已，好多内容都没有。
-
-这里推荐一本书《Matrix Methods in Data Mining and Pattern Recognition》。
-
->作者：Lars Eld´en，执教于Linköping University数学系。
-
-http://www.cnblogs.com/daniel-D/p/3204508.html
-
-这是daniel-D写的中文笔记。
-
-这一部分的内容属于数值计算领域，涉及的概念虽然不复杂，但提出一个高效算法，仍然不是件容易的事情。
-

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  量子计算, 遗传算法 & 进化算法, 山丹军马场
+title:  量子计算, 遗传算法 & 进化算法, PaddlePaddle, X-Deep Learning
 category: resource 
 ---
 
@@ -188,76 +188,90 @@ https://mp.weixin.qq.com/s/nFOaWGqBQtbvPJF7BGCBIA
 
 当机器学习遇上进化算法
 
-# 山丹军马场
+# PaddlePaddle
 
-山丹军马场地处祁连山北麓，甘肃省山丹县辖区内。
+https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q
 
-历史上几经沉浮，抗战时期，国民政府从马步芳的手里将其收回，组建了山丹军牧场。这时山丹军牧场所饲养的品种，主要为本地土种马与少数外来品种杂交而成，身材、速度、驮力、耐力等指标均不尽如人意。
+如何用百度深度学习框架PaddlePaddle做数据预处理
 
-养马人深知这样的马不能满足战争需求。1948年，军牧场向国民政府申请培育新马种的计划，但那时的国民政府已经自顾不暇，这一计划只能搁置。
+https://mp.weixin.qq.com/s/yTZs_rQnuZK1GAy3V1Cuog
 
-1949年9月，解放军对军牧场进行接管，几经周折改为山丹军马场。新马种培育再一次被提上日程。
+一文读懂百度PaddlePaddle EDL技术
 
-1953年，山丹军马场从苏联引进一批顿河马作为种马，与土种母马杂交。经过十年的培育，山丹马诞生了。
+https://mp.weixin.qq.com/s/VKK4M_0S7HaBkvURqWgseQ
 
-1962年，中印战争爆发。战场上山丹马表现不佳，据部队反映，山丹马不易饲养，不适应高海拔。基于实战教训，马场对山丹马回收再配种，将顿河马血统从50％降至25％，培育出了第二代山丹马。
+PaddlePaddle与TensorFlow的对比分析
 
-1972年，克服了前一代缺点的新一代山丹马培育成功，培育进入了横交阶段。
+https://mp.weixin.qq.com/s/ync8iu8nmpJoI5Sfnj8DqQ
 
-1984年，山丹马的育种工作基本完成。1984年7月，山丹马通过了兰州军区后勤部的鉴定，山丹马正式定名。山丹马的培育宣告成功。
+百度深度学习平台PaddlePaddle框架解析
 
-随着山丹马培育工作一同进行的，是全军的摩托化进程，骑兵这一历史悠久、功勋卓著的兵种，在新时代的军队中失去了原有的地位。
+https://mp.weixin.qq.com/s/dGapoc3YUkzjItrTUi3DQg
 
-1985年，百万大裁军开始。骑兵作为一个兵种，结束了它的历史使命。2001年，山丹军马场从兰州军区联勤部转交到中牧集团。
+新手入门？一步一步教你如何安装PaddlePaddle
 
-养马人的奋斗，终究无法阻挡历史的进程。
+https://mp.weixin.qq.com/s/tAhaVwlsxJ5ml0wxiew_4Q
 
-# 世说新语+
+在PaddlePaddle上实现MNIST手写体数字识别
 
-## 2019.4（续）
+https://mp.weixin.qq.com/s/nGXhXvEd8mXbpTqmFHNJcQ
 
-做一个小姐姐的备胎永远是备胎，做一百个小姐姐的备胎小姐姐就是备胎。
+说说为什么选择Paddlepaddle而不是TensorFlow
 
-----
+https://mp.weixin.qq.com/s/G8hUNK5hyZPDHt9JRROMKw
 
-![](/images/img2/Watermelon_Producing.png)
+PaddleFluid和TensorFlow基本使用概念对比
 
-----
+https://mp.weixin.qq.com/s/RuVtfoGDdbWSBBfN-A0OOw
 
-https://www.zhihu.com/question/23673843/answer/642503123
+使用PaddleFluid和TensorFlow实现图像分类网络SE_ResNeXt
 
-科罗拉多煤田战争
+https://mp.weixin.qq.com/s/JULU6bO7sPUbEJZ9tUDqiQ
 
-----
+使用PaddleFluid和TensorFlow训练RNN语言模型
 
-https://mp.weixin.qq.com/s/ec8gos6vU1_Xn9OVhOONeg
+https://mp.weixin.qq.com/s/ceCopgMboWvNxl8qgmeB-Q
 
-三分钟，看完五千年宗教版图变迁
+使用PaddleFluid和TensorFlow训练序列标注模型
 
-----
+https://mp.weixin.qq.com/s/PjwsfdlwZMRvuprkmi-saQ
 
-曹操送碗的目的是一种态度，他是想“挽留”，想让荀彧留下这只碗，回心转意。荀彧也是绝顶聪明之人，他没有会错意，并不是曹操想让他死，曹操是在给他出选择题，只是荀彧自己选择了忠于汉室，这也成为了曹操生平的一大憾事。
+云脑科技-实习僧文本匹配模型及基于百度PaddlePaddle的应用
 
-----
+https://mp.weixin.qq.com/s/oC1ZMRNrJK9oY4y6oHxzbA
 
-詹天佑于1911年在广州约集工程界同志，创立中华工程学会，是工程师有团体组织之始；后颜德庆先生又在上海创立中华工学会，又有徐文炯先生等组设路工同人共济会； 不久三会合并，改名为中华工程师会，选詹天佑为会长，以汉口为会址。民国3年（1912年），改名为中华工程师学会。
+百度PaddlePaddle的新特性与大规模稀疏数据分布式模型训练
 
-1934年10月，中国电机工程学会的前身中国电机工程师学会在上海成立；1956年6月，中华全国自然科学专门学会联合会作出成立中国电机工程学会筹备委员会决定；1957年7月，中国电机工程学会在北京召开中国电机工程学会筹委会常务委员会第一次会议宣告学会成立。
+https://mp.weixin.qq.com/s/ZV32xDgGTriIAUbHohc90Q
 
-上世纪50年代，顾毓琇完成了从行政管理到学术研究的惊人转型，而且一跃又站到了世界科学研究的最前沿，开创了非线性控制理论的先河。
+4个学生，1个暑假，百度深度学习开源平台PaddlePaddle诞生了智能桃子分拣器
 
-顾毓琇是中国现代话剧的发轫人之一，曾创办上海戏剧学院的前身——上海市立实验戏剧学校。
+https://mp.weixin.qq.com/s/m9Kh4Syo5c6a0aAW0a7kAw
 
-顾毓琇曾任国立音乐院(今中央音乐学院的前身)的首任院长、国立交响乐团团长、国立礼乐馆馆长。日本音乐界称之为“中国古典音乐泰斗”。
+基于深度学习的图像超分辨率重建
 
-----
+https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247492226&idx=1&sn=eafb23c1658f487f47254128bcc6e1b2
 
-https://mp.weixin.qq.com/s/tCnzPMhM-aNLMVm6iHnXxw
+PyraNet：基于特征金字塔网络的人体姿态估计
 
-源码泄露是裁员报复还是程序员反抗996？
+https://mp.weixin.qq.com/s/QBI9C_2CKLTvR0SoDdF27g
 
-----
+百度PaddlePaddle开源视频分类模型Attention Cluster
 
-https://www.zhihu.com/question/321165966
+https://mp.weixin.qq.com/s/e63adoVJ5M_LalMCbB6CIQ
 
-如何看待演员泽连斯基2019年乌克兰大选高票当选乌克兰总统？
+PARL源码走读：使用策略梯度算法求解迷宫寻宝问题
+
+# X-Deep Learning
+
+TensorFlow、MXNet、PyTorch等框架大都是面向图像、语音等领域的稠密数据设计，对广告、推荐等场景的高维稀疏数据上的深度学习计算考虑不足。
+
+为此，阿里妈妈启动了XDL框架的研发，希望能够在复用已有开源框架对稠密数据的计算能力基础上，重点打造面向工业级应用的分布式规模能力。
+
+![](/images/img2/XDL.png)
+
+参考：
+
+https://mp.weixin.qq.com/s/kdCk_twY_czQo58y3x_yyA
+
+阿里深度学习框架开源了！无缝对接TensorFlow、PyTorch

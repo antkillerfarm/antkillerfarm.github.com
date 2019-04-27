@@ -1,10 +1,24 @@
 ---
 layout: post
-title:  GAN（三）——Pix2Pix, CycleGAN, 参考资源（1）
+title:  GAN（三）——BEGAN & EBGAN, Pix2Pix, CycleGAN
 category: GAN & VAE 
 ---
 
-# BEGAN & EBGAN（续）
+# BEGAN & EBGAN
+
+论文：
+
+《BEGAN: Boundary Equilibrium GenerativeAdversarial Networks》
+
+《Energy-based Generative Adversarial Network》
+
+这两篇论文的思路（包括名字）都差不多，都是从AutoEncoder中获取的灵感，这里就放在一起讲了。
+
+AutoEncoder包含两个部分：
+
+**1.Encoder。**将图片编码为tensor。
+
+**2.Decoder。**将tensor解码为图片。
 
 对于原始的GAN来说，G网络和Decoder的结构类似，而D网络和Encoder的结构类似。所以整个网络D(G(z))就像是一个反着接的AutoEncoder。
 
@@ -114,7 +128,11 @@ Style Transfer的基本内容可参见《深度学习（十五）》。
 
 ![](/images/img3/CycleGAN.png)
 
+Pix2Pix要求训练数据的source和target是成对的，因此它只适合于图片翻译任务。对于一般的Style Transfer来说，训练数据显然是不配对的，那么又该怎么办呢？
+
 ![](/images/img3/CycleGAN_2.png)
+
+
 
 ![](/images/img3/CycleGAN_3.png)
 

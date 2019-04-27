@@ -4,7 +4,27 @@ title:  机器学习（十八）——独立成分分析, 时间序列分析
 category: ML 
 ---
 
-# 独立成分分析（续）
+# 独立成分分析
+
+## ICA的不确定性（续）
+
+在线性代数中，每个n阶的置换矩阵都代表了一个对n个元素（n维空间的基）的置换。当一个矩阵乘上一个置换矩阵时，所得到的是原来矩阵的横行（置换矩阵在左）或纵列（置换矩阵在右）经过置换后得到的矩阵。
+
+ICA的不确定性(ICA ambiguities)包括以下几种情形：
+
+1.无法区分W和WP。比如改变说话人的编号，会改变$$s^{(i)}$$的值，但却不会改变$$x^{(i)}$$的值，因此也就无法确定$$s^{(i)}$$的值了。
+
+2.无法确定W的尺度。比如$$x^{(i)}$$还可以写作$$x^{(i)}=2A \cdot (0.5)s^{(i)}$$，因此在不知道A的情况下，同样无法确定$$s^{(i)}$$的值。
+
+3.信号不能是高斯分布的。
+
+假设两个人发出的声音信号符合多值正态分布$$s\sim \mathcal{N}(0,I)$$，这里的I是一个2阶单位阵，则$$E[xx^T]=E[Ass^TA^T]=AA^T$$。
+
+假设R是正交矩阵，$$A'=AR,x'=A's$$，则：
+
+$$E[xx^T]=E[A'ss^T(A')^T]=E[ARss^T(AR)^T]=ARR^TA^T=AA^T$$
+
+可见，无论是A还是A'，观测值x都是一个$$\mathcal{N}(0,AA^T)$$的正态分布，也就是说A的值无法确定，那么W和s也就无法求出了。
 
 ## 密度函数和线性变换
 
@@ -241,10 +261,6 @@ https://mp.weixin.qq.com/s/2hpQ_7Ih58d1RKYb1oW_Sg
 
 时间序列简介（一）
 
-https://mp.weixin.qq.com/s/05WAZcklXnL_hFPLZW9t7Q
-
-时间序列模型之相空间重构模型
-
 https://zhuanlan.zhihu.com/p/34407471
 
 如何理解时间序列？—从Riemann积分和Lebesgue积分谈起
@@ -252,10 +268,6 @@ https://zhuanlan.zhihu.com/p/34407471
 https://zhuanlan.zhihu.com/p/35093835
 
 时间序列的自回归模型—从线性代数的角度来看
-
-https://mp.weixin.qq.com/s/lmJk-iIzxxPmnZa6D8i_nw
-
-一文简述如何使用嵌套交叉验证方法处理时序数据
 
 https://zhuanlan.zhihu.com/p/39105270
 
@@ -269,10 +281,6 @@ https://zhuanlan.zhihu.com/p/38130622
 
 时间序列的相似性
 
-https://mp.weixin.qq.com/s/p8oN4xh-FHnay2eTsk6Gng
-
-基于高阶模糊认知图与小波变换的时间序列预测
-
 https://mp.weixin.qq.com/s/DGGuAYsoa6DPD6FBf2Hc4g
 
 时间序列分析之理论篇
@@ -281,10 +289,6 @@ https://zhuanlan.zhihu.com/p/50698719
 
 两篇关于时间序列的论文
 
-https://mp.weixin.qq.com/s/iKM6zMSm1F2icjy79F9Hcg
-
-季节性的分析才不简单，小心不要在随机数据中也分析出季节性
-
 https://zhuanlan.zhihu.com/p/55129654
 
 时间序列的单调性
@@ -292,10 +296,6 @@ https://zhuanlan.zhihu.com/p/55129654
 https://zhuanlan.zhihu.com/p/55903495
 
 时间序列的聚类
-
-https://mp.weixin.qq.com/s/avLWHXj2JkjXOomCipj8kA
-
-使用希尔伯特-黄变换（HHT）进行时间序列分析
 
 https://mp.weixin.qq.com/s/2teyejpbpM6x5UCiYL8s-Q
 

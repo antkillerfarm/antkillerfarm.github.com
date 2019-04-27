@@ -332,7 +332,7 @@ https://mp.weixin.qq.com/s/kJbeuu3zqRxQxVN38Z4asA
 
 ​你应该知道的HBase基础，都在这儿了
 
-# NLP参考资源+
+# NLP参考资源
 
 https://mp.weixin.qq.com/s/qE8dBeBT6iGBrLjJr4mN9g
 

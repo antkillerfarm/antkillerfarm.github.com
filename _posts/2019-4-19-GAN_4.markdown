@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GAN（四）——参考资源（2）
+title:  GAN（四）——参考资源
 category: GAN & VAE 
 ---
 
@@ -349,3 +349,7 @@ One Day One GAN_keras版[DAY 1]
 https://mp.weixin.qq.com/s/kWv-hp2svq1OEHy2DqQ4uA
 
 古纾旸：Generative model is more than just GANs
+
+https://mp.weixin.qq.com/s/fmqaw0xm4Lm7h3rPsLD7yA
+
+关于GAN的灵魂七问

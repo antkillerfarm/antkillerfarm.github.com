@@ -50,6 +50,12 @@ $$Attention(\boldsymbol{q}_t,\boldsymbol{K},\boldsymbol{V}) = \sum_{s=1}^m \frac
 
 概括的说就是：**比较Q和K的相似度，以得到合适的V。**
 
+参考：
+
+https://zhuanlan.zhihu.com/p/63895164
+
+完全解析Tranformer转移力机制
+
 ## Multi-Head Attention
 
 ![](/images/img2/Attention_6.png)

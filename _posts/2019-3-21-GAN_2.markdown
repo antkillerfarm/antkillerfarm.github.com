@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GAN（二）——GAN进阶, DCGAN, WGAN-GP, CGAN, BEGAN & EBGAN
+title:  GAN（二）——GAN进阶, DCGAN, WGAN-GP, CGAN
 category: GAN & VAE 
 ---
 
@@ -332,18 +332,12 @@ GAN首先是个生成模型，类别信息对于GAN的意义在于：我不仅�
 
 从数学角度看，GAN拟合的是$$p(data)$$，而CGAN拟合的是条件概率$$p(data \mid c)$$。
 
-# BEGAN & EBGAN
+![](/images/img3/CGAN.png)
 
-论文：
+上图展示了监督学习（图左二）、GAN（图左三）和CGAN（图左四）的效果：
 
-《BEGAN: Boundary Equilibrium GenerativeAdversarial Networks》
+1.监督学习一般采用MSE loss，它学习到的往往是若干训练图片的平均值，所以生成的图片比较模糊。
 
-《Energy-based Generative Adversarial Network》
+2.GAN生成的图片细节较多，但是只保留了训练数据的语义信息，而忽略了具体内容。这里的语义信息，指的是高层级的抽象，比如都是狗图片（语义相同），内容却可以千差万别。
 
-这两篇论文的思路（包括名字）都差不多，都是从AutoEncoder中获取的灵感，这里就放在一起讲了。
-
-AutoEncoder包含两个部分：
-
-**1.Encoder。**将图片编码为tensor。
-
-**2.Decoder。**将tensor解码为图片。
+3.CGAN较好的解决了监督学习和GAN的结合问题，即保留了语义，也保留了内容。

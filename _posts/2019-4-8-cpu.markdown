@@ -417,3 +417,7 @@ OpenAI发布“块稀疏”GPU内核：实现文本情感分析与图像生成�
 https://mp.weixin.qq.com/s/Qfbc2iQnXacOqOGIrpRQRw
 
 Tensor Core究竟有多快？全面对比英伟达Tesla V100/P100的RNN加速能力
+
+https://mp.weixin.qq.com/s/JYTqJDlGw6Q2gNLaYIGLcQ
+
+特斯拉芯片究竟怎么样？

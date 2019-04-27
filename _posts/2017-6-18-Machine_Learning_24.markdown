@@ -290,3 +290,25 @@ https://mp.weixin.qq.com/s/LN6ib-8b_SZHR9u_-OMwNg
 https://mp.weixin.qq.com/s/95Zklj8ovheQV3Gnc-2h-Q
 
 小米大数据总监司马云瑞详解小米用户画像的演进及应用解读
+
+# 时间序列分析+
+
+https://mp.weixin.qq.com/s/iKM6zMSm1F2icjy79F9Hcg
+
+季节性的分析才不简单，小心不要在随机数据中也分析出季节性
+
+https://mp.weixin.qq.com/s/avLWHXj2JkjXOomCipj8kA
+
+使用希尔伯特-黄变换（HHT）进行时间序列分析
+
+https://mp.weixin.qq.com/s/p8oN4xh-FHnay2eTsk6Gng
+
+基于高阶模糊认知图与小波变换的时间序列预测
+
+https://mp.weixin.qq.com/s/lmJk-iIzxxPmnZa6D8i_nw
+
+一文简述如何使用嵌套交叉验证方法处理时序数据
+
+https://mp.weixin.qq.com/s/05WAZcklXnL_hFPLZW9t7Q
+
+时间序列模型之相空间重构模型

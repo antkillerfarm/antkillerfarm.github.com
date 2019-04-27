@@ -4,6 +4,64 @@ title:  机器学习（十七）——主成分分析
 category: ML 
 ---
 
+# 协同过滤的ALS算法（续）
+
+## 参考
+
+参考论文：
+
+《Large-scale Parallel Collaborative Filtering forthe Netflix Prize》
+
+《Collaborative Filtering for Implicit Feedback Datasets》
+
+《Matrix Factorization Techniques for Recommender Systems》
+
+其他参考：
+
+http://www.jos.org.cn/html/2014/9/4648.htm
+
+基于大规模隐式反馈的个性化推荐
+
+http://www.fuqingchuan.com/2015/03/812.html
+
+协同过滤之ALS-WR算法
+
+http://www.docin.com/p-714582034.html
+
+基于矩阵分解的协同过滤算法
+
+http://www.tuicool.com/articles/fANvieZ
+
+Spark MLlib中的协同过滤
+
+http://www.68idc.cn/help/buildlang/ask/20150727462819.html
+
+Alternating Least Squares(ASL)的数学推导
+
+https://mp.weixin.qq.com/s/bRhIm8Xvlb51zE2HpDO5Og
+
+一文读懂推荐系统知识体系
+
+http://mp.weixin.qq.com/s/QhP3wRGbrO7sYSDNm8z0gQ
+
+常用推荐算法（50页干货）
+
+https://zhuanlan.zhihu.com/p/23036112
+
+推荐系统常用的推荐算法
+
+https://mp.weixin.qq.com/s/6x8cK_SDW67At3IUZ15ijQ
+
+协同过滤典型算法概述
+
+https://mp.weixin.qq.com/s/wtvwWZhqCRjJgdCpa7qdJw
+
+矩阵分解在协同过滤推荐中的应用
+
+https://mp.weixin.qq.com/s/sUQPaiYAfRpCFryrHMqPoA
+
+想写出人见人爱的推荐系统，先了解经典矩阵分解技术
+
 # 主成分分析
 
 真实的训练数据总是存在各种各样的问题。
@@ -229,21 +287,3 @@ https://mp.weixin.qq.com/s/9-nNNhhDWSYWy46u0hTazQ
 $$P=\begin{bmatrix}0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 1 \end{bmatrix};
 P=\begin{bmatrix}0 & 1 \\ 1 & 0 \end{bmatrix};
 P=\begin{bmatrix}1 & 0 \\ 0 & 1 \end{bmatrix}$$
-
-在线性代数中，每个n阶的置换矩阵都代表了一个对n个元素（n维空间的基）的置换。当一个矩阵乘上一个置换矩阵时，所得到的是原来矩阵的横行（置换矩阵在左）或纵列（置换矩阵在右）经过置换后得到的矩阵。
-
-ICA的不确定性(ICA ambiguities)包括以下几种情形：
-
-1.无法区分W和WP。比如改变说话人的编号，会改变$$s^{(i)}$$的值，但却不会改变$$x^{(i)}$$的值，因此也就无法确定$$s^{(i)}$$的值了。
-
-2.无法确定W的尺度。比如$$x^{(i)}$$还可以写作$$x^{(i)}=2A \cdot (0.5)s^{(i)}$$，因此在不知道A的情况下，同样无法确定$$s^{(i)}$$的值。
-
-3.信号不能是高斯分布的。
-
-假设两个人发出的声音信号符合多值正态分布$$s\sim \mathcal{N}(0,I)$$，这里的I是一个2阶单位阵，则$$E[xx^T]=E[Ass^TA^T]=AA^T$$。
-
-假设R是正交矩阵，$$A'=AR,x'=A's$$，则：
-
-$$E[xx^T]=E[A'ss^T(A')^T]=E[ARss^T(AR)^T]=ARR^TA^T=AA^T$$
-
-可见，无论是A还是A'，观测值x都是一个$$\mathcal{N}(0,AA^T)$$的正态分布，也就是说A的值无法确定，那么W和s也就无法求出了。

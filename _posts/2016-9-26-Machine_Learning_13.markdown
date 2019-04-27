@@ -4,7 +4,28 @@ title:  机器学习（十三）——机器学习中的矩阵方法（1）LU分
 category: ML 
 ---
 
-# 机器学习中的矩阵方法（续）
+## 因子分析的EM估计（续）
+
+此外，我们还可得出：（推导过程略）
+
+$$\mu=\frac{1}{m}\sum_{i=1}^mx^{(i)}$$
+
+$$\begin{split}\Phi=\frac{1}{m}\sum_{i=1}^m\left(x^{(i)}(x^{(i)})^T-x^{(i)}\mu_{z^{(i)}\mid x^{(i)}}^T\Lambda^T-\Lambda\mu_{z^{(i)}\mid x^{(i)}}(x^{(i)})^T
+\\+\Lambda\left(\mu_{z^{(i)}\mid x^{(i)}}\mu_{z^{(i)}\mid x^{(i)}}^T+\Sigma_{z^{(i)}\mid x^{(i)}}\right)\Lambda^T\right)\end{split}$$
+
+# 机器学习中的矩阵方法
+
+在继续Andrew Ng的讲义之前，我们需要加强一些矩阵的相关知识。虽然Andrew Ng的讲义中已经包含了一个线性代数方面的简介文章，然而真的就只是简介而已，好多内容都没有。
+
+这里推荐一本书《Matrix Methods in Data Mining and Pattern Recognition》。
+
+>作者：Lars Eld´en，执教于Linköping University数学系。
+
+http://www.cnblogs.com/daniel-D/p/3204508.html
+
+这是daniel-D写的中文笔记。
+
+这一部分的内容属于数值计算领域，涉及的概念虽然不复杂，但提出一个高效算法，仍然不是件容易的事情。
 
 还有另外一本书《Liner Algebra Done Right》，也值得推荐。这本书从定义矩阵算子，而不是通过行列式，来解释各种线性代数原理，提供了一种独特的视角。因为算子是有明确的几何或物理意义的，而行列式则不然。
 
@@ -245,43 +266,3 @@ https://mp.weixin.qq.com/s/mZ4AeCcoU0LhWRWfa9_kvw
 https://mp.weixin.qq.com/s/uL5fCNTegK9ST2LOO13-4g
 
 图说幂法求特征值和特征向量
-
-## QR算法
-
-对矩阵A进行QR分解可得：$$A=QR$$
-
-因为Q是正交阵（$$Q^T=Q^{-1}$$），所以正交相似变换$$Q^TAQ$$和A有相同的特征值。
-
-证明：
-
-$$\mid Q^TAQ-\lambda I\mid =\mid Q^TAQ-Q^T(\lambda I)Q\mid =\mid Q^T(A-\lambda I)Q\mid \\=\mid Q^T\mid \cdot\mid A-\lambda I\mid \cdot\mid Q\mid =\mid Q^TQ\mid \cdot\mid A-\lambda I\mid =\mid I\mid \cdot\mid A-\lambda I\mid =\mid A-\lambda I\mid $$
-
-这里的证明，用到了行列式的如下性质：
-
-$$\mid I\mid =1$$
-
-$$\mid AB\mid =\mid A\mid \cdot\mid B\mid $$
-
-因为$$Q^TAQ$$和A的特征方程相同，所以它们的特征值也相同。证毕。
-
-由此产生如下迭代算法：
-
->Repeat until convergence {   
->>1.$$A_k=Q_kR_k$$（QR分解）   
->>2.$$A_{k+1}=Q_k^TA_kQ_k=Q_k^{-1}Q_kR_kQ_k=R_kQ_k$$   
->
->}
-
-这个算法的收敛性证明比较复杂，这里只给出结论：
-
-$$\lim_{k\to\infty}A_k=\begin{bmatrix}
-\lambda_1 & u_{12} &  \dots  & u_{1n} \\
-0 & \lambda_2 &  \dots  & u_{2n} \\
-\dots & \dots & \ddots & \dots \\
-0 & 0 & \dots & \lambda_n 
-\end{bmatrix}$$
-
-其中，$$\lambda_i$$为矩阵的特征值。$$u_{ij}$$表示任意值，它们的极限可能并不存在。
-
-QR算法于1961年，由John G.F. Francis和Vera Nikolaevna Kublanovskaya发现。
-

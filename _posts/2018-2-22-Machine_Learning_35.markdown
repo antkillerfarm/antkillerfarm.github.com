@@ -150,6 +150,10 @@ https://mp.weixin.qq.com/s/J27fVvYMRdoAgQtfXsywxg
 
 OpenCV卡尔曼滤波介绍与代码演示
 
+https://zhuanlan.zhihu.com/p/64007212
+
+卡尔曼滤波家族
+
 # 推荐算法中的常用排序算法
 
 ## Pointwise方法
@@ -267,4 +271,3 @@ $$\hat v(S,w)=\begin{pmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{pmatrix}\begin
 ## Batch Methods
 
 前面所说的递增算法都是基于数据流的，经历一步，更新算法后，我们就不再使用这步的数据了，这种算法简单，但有时候不够高效。与之相反，批方法则是把一段时期内的数据集中起来，通过学习来使得参数能较好地符合这段时期内所有的数据。这里的训练数据集“块”相当于个体的一段经验。
-

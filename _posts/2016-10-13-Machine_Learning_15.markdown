@@ -1,10 +1,42 @@
 ---
 layout: post
-title:  机器学习（十五）——协同过滤的ALS算法（1）
+title:  机器学习（十五）——机器学习中的矩阵方法（3）病态矩阵
 category: ML 
 ---
 
-## 病态矩阵（续）
+## 向量的范数（续）
+
+这里不做解释的给出如下示意图：
+
+![](/images/article/lp_ball.png)
+
+其中，0范数表示向量中非0元素的个数。上图中的图形被称为$$l_p$$ ball。表征在同一范数条件下，具有相同距离的点的集合。
+
+范数满足如下不等式：
+
+$$\|A+B\|\le \|A\|+\|B\|(三角不等式)$$
+
+向量范数推广可得到矩阵范数。某些矩阵范数满足如下公式：
+
+$$\|A\cdot B\|\le \|A\|\cdot\|B\|$$
+
+这种范数被称为相容范数。
+
+>注：矩阵范数要比向量范数复杂的多，还包含一些不可以由向量范数来诱导的范数，如Frobenius范数。而且只有极少数矩阵范数，可由简单表达式来表达。这里篇幅有限，不再赘述。
+
+>Ferdinand Georg Frobenius，1849～1917，德国数学家，哥廷根大学博士（1870）,University of Berlin和ETH Zurich教授。他在椭圆函数、微分方程、数论和群论等领域有杰出贡献。矩阵的秩就是他提出来的。
+
+## 病态矩阵
+
+现在有线性系统$$Ax = b$$：
+
+$$\begin{bmatrix} 400 & -201 \\-800 & 401 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}=\begin{bmatrix} 200 \\ -200 \end{bmatrix}$$
+
+很容易得到解为：$$x_1=-100,x_2=-200$$。如果在样本采集时存在一个微小的误差，比如，将 A矩阵的系数400改变成401：
+
+$$\begin{bmatrix} 401 & -201 \\-800 & 401 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}=\begin{bmatrix} 200 \\ -200 \end{bmatrix}$$
+
+则得到一个截然不同的解：$$x_1=40000,x_2=79800$$。
 
 当解集x对A和b的系数高度敏感，那么这样的方程组就是病态的 (ill-conditioned/ill-posed)。
 
@@ -216,102 +248,3 @@ https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient
 https://mp.weixin.qq.com/s/RjpH7XD5SCMkrSdcmG394g
 
 从PCC到MIC，一文教你如何计算变量之间的相关性
-
-### Spearman秩相关系数（Spearman's rank correlation coefficient）
-
-对秩变量（ranked variables）套用PCC公式，即可得Spearman秩相关系数。
-
-秩变量是一类不在乎值的具体大小，而只关心值的大小关系的统计量。
-
-<table>
-<tr>
-<th>$$X_i$$</th>
-<th>$$Y_i$$</th>
-<th>$$x_i$$</th>
-<th>$$y_i$$</th>
-<th>$$d_i$$</th>
-<th>$$d_i^2$$</th>
-</tr>
-<tr>
-<td>86</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>97</td>
-<td>20</td>
-<td>2</td>
-<td>6</td>
-<td>−4</td>
-<td>16</td>
-</tr>
-<tr>
-<td>99</td>
-<td>28</td>
-<td>3</td>
-<td>8</td>
-<td>−5</td>
-<td>25</td>
-</tr>
-<tr>
-<td>100</td>
-<td>27</td>
-<td>4</td>
-<td>7</td>
-<td>−3</td>
-<td>9</td>
-</tr>
-<tr>
-<td>101</td>
-<td>50</td>
-<td>5</td>
-<td>10</td>
-<td>−5</td>
-<td>25</td>
-</tr>
-<tr>
-<td>103</td>
-<td>29</td>
-<td>6</td>
-<td>9</td>
-<td>−3</td>
-<td>9</td>
-</tr>
-<tr>
-<td>106</td>
-<td>7</td>
-<td>7</td>
-<td>3</td>
-<td>4</td>
-<td>16</td>
-</tr>
-<tr>
-<td>110</td>
-<td>17</td>
-<td>8</td>
-<td>5</td>
-<td>3</td>
-<td>9</td>
-</tr>
-<tr>
-<td>112</td>
-<td>6</td>
-<td>9</td>
-<td>2</td>
-<td>7</td>
-<td>49</td>
-</tr>
-<tr>
-<td>113</td>
-<td>12</td>
-<td>10</td>
-<td>4</td>
-<td>6</td>
-<td>36</td>
-</tr>
-</table>
-
-如上表所示，$$X_i$$和$$Y_i$$是原始的变量值，$$x_i$$和$$y_i$$是rank之后的值，$$d_i=x_i-y_i$$。
