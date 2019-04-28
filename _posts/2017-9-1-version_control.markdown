@@ -230,3 +230,15 @@ https://mp.weixin.qq.com/s/LQU_HJ4q74lL5oCIk7w5RA
 https://mp.weixin.qq.com/s/9NFkd-8tRUI6GaPefhEf-Q
 
 斯坦福新模型刷新纪录：自然语言理解GLUE排行榜最高分！
+
+https://mp.weixin.qq.com/s/AhoEzujMVUU-P7j5z_8sVQ
+
+基于神经网络的实体识别和关系抽取联合学习
+
+https://mp.weixin.qq.com/s/mgeQXkEWu5JlZxyAM0yiaQ
+
+充分利用候选项的选择型机器阅读理解模型
+
+https://mp.weixin.qq.com/s/RlarTDziwkGGM_CUa40XAw
+
+机器之心线上分享：用于序列生成的推敲网络

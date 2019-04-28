@@ -198,3 +198,7 @@ https://mp.weixin.qq.com/s/VPCtsv2Q73qVcNAa4Xufag
 https://mp.weixin.qq.com/s/6Sj2QIELQvI28Rpp7A39Fg
 
 如何通过结构化智能体完成物理构造任务？
+
+https://mp.weixin.qq.com/s/Ctn1Wr68lph1UK_wjfCY1Q
+
+策略梯度搜索：不使用搜索树的在线规划和专家迭代

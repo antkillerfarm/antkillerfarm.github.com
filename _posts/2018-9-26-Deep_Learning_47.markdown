@@ -328,6 +328,14 @@ https://mp.weixin.qq.com/s/nVM2Kxc_Mn7BAC6-Pig2Uw
 
 BERT模型的标准调优和花式调优
 
+https://mp.weixin.qq.com/s/FwmEIZ3ugeZBbLIGHmH-_g
+
+BERT之后，GLUE基准升级为SuperGLUE：难度更大
+
+https://mp.weixin.qq.com/s/SDVxn3Ra1dKmr-XgKNg5IA
+
+罗玲：From Word Representation to BERT
+
 # 图像检索
 
 ## 传统方法

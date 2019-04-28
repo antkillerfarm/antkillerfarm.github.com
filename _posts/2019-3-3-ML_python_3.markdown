@@ -398,14 +398,6 @@ https://mp.weixin.qq.com/s/kYCb4Fc4_Gh4eIlJbFDwJA
 
 自然语言处理中的语言模型预训练方法
 
-https://mp.weixin.qq.com/s/r-mndw2BKHdVq-jKLinYZQ
-
-别说还不懂依存句法分析
-
 https://mp.weixin.qq.com/s/jInNuNQprWlCNAz7UyHRvg
 
 IEMLRN：基于图像增强的句子语义表示
-
-https://mp.weixin.qq.com/s/XP0V6v__O4wxpjPSC5O7vw
-
-一文了解成分句法分析

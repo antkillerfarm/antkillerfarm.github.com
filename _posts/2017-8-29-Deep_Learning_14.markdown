@@ -138,18 +138,6 @@ https://mp.weixin.qq.com/s/KYGqSOftm8FWDXk_C13iCQ
 
 Conditional Batch Normalization详解
 
-# ESN
-
-Echo State Network
-
-https://blog.csdn.net/zwqhehe/article/details/77025035
-
-回声状态网络(ESN)原理详解
-
-https://mp.weixin.qq.com/s/tjawT2-bhPrit0Fd4knSgA
-
-基于回声状态网络预测股票价格
-
 # MobileNet
 
 论文：
@@ -191,6 +179,10 @@ https://mp.weixin.qq.com/s/lu0GHCpWCmogkmHRKnJ8zQ
 https://mp.weixin.qq.com/s/T6S1_cFXPEuhRAkJo2m8Ig
 
 轻量级CNN网络之MobileNetv2
+
+https://mp.weixin.qq.com/s/RRu3r_dokORhpSq3eyrPDQ
+
+为什么MobileNet及其变体如此之快？
 
 # NetVLAD
 

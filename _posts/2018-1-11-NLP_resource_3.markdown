@@ -62,10 +62,6 @@ https://github.com/Gii16/TreeDrawer
 
 A small tool to draw a only-text tree as the result of stanford coreNLP
 
-http://www.cnblogs.com/CheeseZH/p/5768389.html
-
-依存句法分析与语义依存分析的区别
-
 https://mp.weixin.qq.com/s/JgQAMknL4x7nMONzZua7tg
 
 深度学习要多深，才能读懂人话？阿里小蜜前沿探索
@@ -85,10 +81,6 @@ https://mp.weixin.qq.com/s/6cTG9347dOLxiUs_-tdpnQ
 https://mp.weixin.qq.com/s/zfgx2iViwFm-tzBGvgHVuw
 
 百度开源：语义表示应用介绍和源代码
-
-https://mp.weixin.qq.com/s/CxpyMUPnKFCTpw6WgG0kqg
-
-依存句法分析的任务以及形式化定义
 
 http://www.csdn.net/article/2015-02-05/2823865
 

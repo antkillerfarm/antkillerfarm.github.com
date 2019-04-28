@@ -343,3 +343,19 @@ https://mp.weixin.qq.com/s/LlTuzLT9L4FHetV4EbBHEw
 https://mp.weixin.qq.com/s/eLHhmPMNSe1QxDKv6Lk9yw
 
 原来，阿里工程师才是隐藏的“修图高手”！
+
+https://mp.weixin.qq.com/s/1QQ2_vkQ_vLvuxvR-fboQg
+
+大三少年造出AI写意画家，像人类一样挥笔作画
+
+# ESN
+
+Echo State Network
+
+https://blog.csdn.net/zwqhehe/article/details/77025035
+
+回声状态网络(ESN)原理详解
+
+https://mp.weixin.qq.com/s/tjawT2-bhPrit0Fd4knSgA
+
+基于回声状态网络预测股票价格

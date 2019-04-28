@@ -348,10 +348,34 @@ https://mp.weixin.qq.com/s/ShLqAgB8VJJQjCS9iako6Q
 
 # NLP参考资源+
 
-https://mp.weixin.qq.com/s/DN_PeqF1JUZfIl0kNCwFng
-
-联合汉语分词和依存句法分析的统一模型：当前效果最佳
-
 https://zhuanlan.zhihu.com/p/64032803
 
 无监督循环神经网络文法(URNNG)
+
+https://github.com/crownpku/Information-Extraction-Chinese
+
+这是中文NER的代码示例
+
+https://mp.weixin.qq.com/s/5S5ikwnF7f55sL_VI73XSQ
+
+吴恩达博士生Ziang Xie：深度文本生成最佳实战指南
+
+http://www.jianshu.com/p/f45c3540c56e
+
+Chatbot架构
+
+https://mp.weixin.qq.com/s/tvtT5S9mDhXoYLKh9apgDw
+
+达观文本指纹算法和系统简述
+
+https://mp.weixin.qq.com/s/eiEME27eDMPSeKkwiisWnQ
+
+达观数据搜索引擎的Query自动纠错技术和架构详解
+
+https://mp.weixin.qq.com/s/o5mE6IRs8ZkkXy8c5rdrjw
+
+达观数据阐述推荐系统和搜索引擎的关系
+
+https://mp.weixin.qq.com/s/PVzVNI7jMzHPcUbL7UaCIQ
+
+什么是语义角色标注？

@@ -402,10 +402,6 @@ https://zhuanlan.zhihu.com/p/26461511
 
 关于WordNet，我的一些用法和思路
 
-http://mp.weixin.qq.com/s?__biz=MzI4MDYzNzg4Mw==&mid=2247483922&idx=1&sn=cffbaf797cc58e303a65a8a2ae370b86
-
-句法分析（syntactic parsing）在NLP领域的应用是怎样的？
-
 https://speechlab.sjtu.edu.cn/pages/sz128/homepage/year/10/27/survey-on-grammar-retrieval/
 
 论文调研：基于“规则、槽值”检索的口语语义理解

@@ -208,14 +208,6 @@ https://mp.weixin.qq.com/s/xjSw7PbVrESo9u4otBOM1Q
 
 白话TF-IDF应用（一）：自动提取关键词
 
-## 句法分析
-
-传统方法主要是PCFG （Probabilistic Context-Free Grammar）。
-
-https://blog.csdn.net/continueOo/article/details/72851724
-
-统计自然语言处理（概率上下文无关文法）
-
 ## 论文
 
 《Distant Supervision for relation extraction without labeled data》

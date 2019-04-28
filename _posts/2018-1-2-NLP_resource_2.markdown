@@ -136,6 +136,18 @@ https://mp.weixin.qq.com/s/rA6oTLlFWmIvGUq_XPLOKQ
 
 利用Lattice LSTM的最优中文命名实体识别方法
 
+https://mp.weixin.qq.com/s/Xe-T7EKvGDSR5GOeL4nvKg
+
+从Chatbot到NER
+
+https://mp.weixin.qq.com/s/Ounb14tu6lyebiOQqY4TyQ
+
+达观数据如何打造一个中文NER系统
+
+https://github.com/Franck-Dernoncourt/NeuroNER/
+
+一个NER方面的示例代码
+
 ## 文本摘要
 
 https://mp.weixin.qq.com/s/jk1XgnuydrsTg3HvV0CVvw
@@ -149,6 +161,42 @@ https://mp.weixin.qq.com/s/NGpDrYilAeuH6pQji0ujaA
 https://mp.weixin.qq.com/s/bcpjkuRtErSRfJPsAnAWWQ
 
 用深度学习做文本摘要
+
+## 句法分析
+
+传统方法主要是PCFG （Probabilistic Context-Free Grammar）。
+
+https://blog.csdn.net/continueOo/article/details/72851724
+
+统计自然语言处理（概率上下文无关文法）
+
+http://mp.weixin.qq.com/s?__biz=MzI4MDYzNzg4Mw==&mid=2247483922&idx=1&sn=cffbaf797cc58e303a65a8a2ae370b86
+
+句法分析（syntactic parsing）在NLP领域的应用是怎样的？
+
+http://www.cnblogs.com/CheeseZH/p/5768389.html
+
+依存句法分析与语义依存分析的区别
+
+https://mp.weixin.qq.com/s/r-mndw2BKHdVq-jKLinYZQ
+
+别说还不懂依存句法分析
+
+https://mp.weixin.qq.com/s/XP0V6v__O4wxpjPSC5O7vw
+
+一文了解成分句法分析
+
+https://mp.weixin.qq.com/s/DN_PeqF1JUZfIl0kNCwFng
+
+联合汉语分词和依存句法分析的统一模型：当前效果最佳
+
+https://mp.weixin.qq.com/s/Vy7OxAojvgndgGkvmFrBKw
+
+61页slides理解句法分析过程
+
+https://mp.weixin.qq.com/s/CxpyMUPnKFCTpw6WgG0kqg
+
+依存句法分析的任务以及形式化定义
 
 ## 其他
 
@@ -235,10 +283,6 @@ KBQA从入门到放弃 - Part 2
 https://mp.weixin.qq.com/s/pq2m4A31c9QQwka1j7XJDQ
 
 116页PPT了解FrameNet最新进展
-
-https://mp.weixin.qq.com/s/Vy7OxAojvgndgGkvmFrBKw
-
-61页slides理解句法分析过程
 
 https://mp.weixin.qq.com/s/27Mbw2ViT8eJPJasD6tdfw
 
@@ -328,10 +372,6 @@ https://mp.weixin.qq.com/s/i9AXKsd6XVxyuaTCKsAj3g
 
 像Sheldon一样对“讽刺语言”分辨无能？别怕，MIT最新算法帮你助攻
 
-https://mp.weixin.qq.com/s/Xe-T7EKvGDSR5GOeL4nvKg
-
-从Chatbot到NER
-
 https://mp.weixin.qq.com/s/ZlfxZMWz5lSVLxkAf9isJQ
 
 斯坦福李纪为博士毕业论文：让机器像人一样交流
@@ -364,50 +404,6 @@ https://mp.weixin.qq.com/s/M8Awv6Tod4SEo85F8xzqqg
 
 基于半监督学习技术的达观数据文本过滤系统
 
-https://mp.weixin.qq.com/s/Ounb14tu6lyebiOQqY4TyQ
-
-达观数据如何打造一个中文NER系统
-
 https://mp.weixin.qq.com/s/r_x1IUuyIQw3aif2f7-Fxw
 
 邱锡鹏：深度学习在语义分析处理的最新发展
-
-https://mp.weixin.qq.com/s/tvtT5S9mDhXoYLKh9apgDw
-
-达观文本指纹算法和系统简述
-
-https://mp.weixin.qq.com/s/eiEME27eDMPSeKkwiisWnQ
-
-达观数据搜索引擎的Query自动纠错技术和架构详解
-
-https://mp.weixin.qq.com/s/o5mE6IRs8ZkkXy8c5rdrjw
-
-达观数据阐述推荐系统和搜索引擎的关系
-
-https://github.com/Franck-Dernoncourt/NeuroNER/
-
-一个NER方面的示例代码
-
-https://github.com/crownpku/Information-Extraction-Chinese
-
-这是中文NER的代码示例
-
-https://mp.weixin.qq.com/s/5S5ikwnF7f55sL_VI73XSQ
-
-吴恩达博士生Ziang Xie：深度文本生成最佳实战指南
-
-http://www.jianshu.com/p/f45c3540c56e
-
-Chatbot架构
-
-https://mp.weixin.qq.com/s/AhoEzujMVUU-P7j5z_8sVQ
-
-基于神经网络的实体识别和关系抽取联合学习
-
-https://mp.weixin.qq.com/s/mgeQXkEWu5JlZxyAM0yiaQ
-
-充分利用候选项的选择型机器阅读理解模型
-
-https://mp.weixin.qq.com/s/RlarTDziwkGGM_CUa40XAw
-
-机器之心线上分享：用于序列生成的推敲网络
