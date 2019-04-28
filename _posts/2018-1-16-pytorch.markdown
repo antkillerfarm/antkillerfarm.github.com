@@ -321,3 +321,21 @@ PyTorch的数据增强与数据标准化
 https://mp.weixin.qq.com/s/pDo2bSctEiTEyjRUgOAC8w
 
 PyTorch常用代码段整理合集
+
+# AI Chip+
+
+https://zhuanlan.zhihu.com/p/31782874
+
+Graphcore AI芯片：更多分析
+
+https://mp.weixin.qq.com/s/O-NDsFs6AOwl43LyevXtzg
+
+OpenAI发布“块稀疏”GPU内核：实现文本情感分析与图像生成建模当前最优水平
+
+https://mp.weixin.qq.com/s/Qfbc2iQnXacOqOGIrpRQRw
+
+Tensor Core究竟有多快？全面对比英伟达Tesla V100/P100的RNN加速能力
+
+https://mp.weixin.qq.com/s/JYTqJDlGw6Q2gNLaYIGLcQ
+
+特斯拉芯片究竟怎么样？

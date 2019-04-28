@@ -173,7 +173,7 @@ $$\begin{aligned}\theta =& \mathop{\arg\min}_{\theta} L_2\\
 
 3.使用G网络将noise变成fake_data。
 
-4.用fake_data和Real Samples共同训练D网络，分别可得到$$D_{fake}$$和$$D_{real}$$。使用公式1计算总Loss：D。
+4.用fake_data和Real Samples共同训练D网络，分别可得到$$L_{fake}$$和$$L_{real}$$。使用公式1计算总Loss：L。
 
 5.固定D网络参数，使用公式2训练网络D(G)中G的参数。
 
@@ -219,7 +219,7 @@ https://zhuanlan.zhihu.com/p/25204020
 
 1.GAN的目的是在高维非凸的参数空间中找到纳什均衡点，GAN的纳什均衡点是一个鞍点。而SGD只会找到局部极小值，所以GAN中的优化器不常用SGD。
 
-## 参考资源
+## 参考
 
 https://mp.weixin.qq.com/s/xa3F3kCprE6DEQclas4umg
 

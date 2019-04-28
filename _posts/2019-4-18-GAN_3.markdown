@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GAN（三）——BEGAN & EBGAN, Pix2Pix, CycleGAN
+title:  GAN（三）——BEGAN & EBGAN, Stack GAN, GAN Ensemble, Pix2Pix, CycleGAN, StarGAN
 category: GAN & VAE 
 ---
 
@@ -34,11 +34,75 @@ BEGAN将D网络的结构由Encoder改为了Encoder->Decoder（也就是一个AE�
 
 类似的，这里的AE，也可以换成其他Encoder->Decoder网络，例如U-NET。
 
-影响GAN性能的还有一个问题：**mode collapse(模式坍塌)**，即生成高度相似的样本。分类网络由于样本/类别是多对一的关系，更容易发生模式坍塌。
+# Stack GAN
+
+论文：
+
+《StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks》
+
+早期以DCGAN为代表的网络生成的图片分辨率太低，质量不够好，都不超过100×100，在32×32或者64×64左右。这是因为难以一次性学习到生成高分辨率的样本，收敛过程容易不稳定。因此采用级联结构，逐次提升分辨率的Stack GAN应运而生。
+
+![](/images/img2/Stack_GAN.png)
+
+上图是Stack GAN的网络结构图。其中的Conditioning Augmentation，显然使用了和VAE类似的添加随机噪声的技术。
+
+类似想法的还有LAPGAN。
+
+论文：
+
+《Deep Generative Image Models using a Laplacian Pyramid of Adversarial Networks》
+
+顾名思义，这是使用了Laplacian Pyramid来不断提升生成图片的分辨率。
+
+参考：
+
+https://www.cnblogs.com/wangxiaocvpr/p/5966776.html
+
+LAPGAN论文笔记
+
+# GAN Ensemble
+
+除了级联结构之外，以下结构用的也比较多。
+
+## 多判别器单生成器
+
+论文：
+
+《Generative Multi-Adversarial Networks》
+
+![](/images/img3/boosting_GAN.png)
+
+采用多个判别器的好处带来了类似于boosting的优势，训练一个过于好的判别器，会损坏生成器的性能，这是GAN面临的一个大难题。如果能够训练多个没有那么强的判别器，然后进行boosting，可以取得不错的效果，甚至连dropout技术都可以应用进来。
+
+多个判别器还可以相互进行分工，比如在图像分类中，一个进行粗粒度的分类，一个进行细粒度的分类。在语音任务中，各自用于不同声道的处理。
+
+## 单判别器多生成器
+
+论文：
+
+《Multi-Agent Diverse Generative Adversarial Networks》
+
+![](/images/img3/MA_GAN.png)
+
+一般来说，生成器相比判别器要完成的任务更难，因为它要完成数据概率密度的拟合，而判别器只需要进行判别，导致影响GAN性能的一个问题就是模式坍塌，即生成高度相似的样本。采用多个生成器单个判别器的方法，可以有效地缓解这个问题。
+
+从上图结构可以看出，多个生成器采用同样的结构，在网络的浅层还共享权重。
+
+**mode collapse(模式坍塌)**，即生成高度相似的样本。
 
 ![](/images/img2/mode_collapse.jpg)
 
 假设某个data distribution有两个模式（如上图所示），generator可能就学到一个mode，另一个mode则完全没学到。
+
+## 增加分类器
+
+论文：
+
+《Triple Generative Adversarial Nets》
+
+![](/images/img3/Triple_GAN.png)
+
+在利用GAN进行半监督的图像分类任务时，判别器需要同时担任两个角色，即判别生成的假样本，以及预测类别，这对判别器提出了较高的要求。通过增加一个分类器可以分担判别器的工作量，即将捕捉样本和标签的条件分布这一任务交给生成器和分类器，而判别器只专注于区分真实样本和生成的样本。
 
 # Pix2Pix
 
@@ -66,7 +130,7 @@ Pix2Pix对于user control的要求比一般的CGAN更高，这里的监督信息
 
 Pix2Pix相对于传统GAN的改进在于：
 
-**1.D网络的输入同时包括生成的图片X和它的素描图Y，X和Y使用Concat操作进行融合。**例如，假设两者都是3通道的RGB颜色图，则D网络的Input就是一个6通道的tensor。
+**1.D网络的输入同时包括生成的图片X和它的素描图Y，X和Y使用Concat操作进行融合。**例如，假设两者都是3通道的RGB颜色图，则D网络的Input就是一个6通道的tensor，即所谓的Depth-wise concatenation。
 
 **2.G网络使用dropout来提供随机性。**作者在实践中发现，噪声向量在这个模型的学习过程中，被模型忽略掉了，起不到相应的作用。
 
@@ -128,13 +192,43 @@ Style Transfer的基本内容可参见《深度学习（十五）》。
 
 ![](/images/img3/CycleGAN.png)
 
-Pix2Pix要求训练数据的source和target是成对的，因此它只适合于图片翻译任务。对于一般的Style Transfer来说，训练数据显然是不配对的，那么又该怎么办呢？
+Pix2Pix要求训练数据的X和Y是成对的，因此它只适合于图片翻译任务。对于一般的Style Transfer来说，训练数据显然是不配对的，那么又该怎么办呢？
 
 ![](/images/img3/CycleGAN_2.png)
 
-
+首先，简单的按照CGAN的做法，肯定是行不通的。最终生成的图片，实际上只是Y的复刻，一点X的影子都没有。
 
 ![](/images/img3/CycleGAN_3.png)
+
+上图是CycleGAN的网络结构图。它的要点如下：
+
+**1**.既然G网络缺乏配对的生成数据，那么不妨采用类似AE的手法来处理。
+
+1）我们首先使用$$G_{X\to Y}$$将X变成Domain Y的数据$$Y'$$。
+
+2）再使用$$G_{Y\to X}$$将$$Y'$$变成Domain X的数据$$X'$$。
+
+3）X和$$X'$$显然是配对的，因此也就是可以比较的。
+
+**2**.D网络不需要配对数据即可训练。
+
+**3**.为了增加训练稳定性，我们可以交替训练两个网络：$$X\to Y'\to X'$$和$$Y\to X'\to Y'$$。其中的$$G_{X\to Y}$$和$$G_{Y\to X}$$在两个网络中的参数是相同的。
+
+CycleGAN不仅可用于Style Transfer，还可用于其他用途。
+
+![](/images/img3/CycleGAN_3.png)
+
+上图是CycleGAN用于Steganography（隐写术）的示例。
+
+值得注意的是，CycleGAN的idea并非该文作者独有，**同期（2017.3）的DualGAN和DiscoGAN采用了完全相同做法。**
+
+DualGAN论文：
+
+《DualGAN: Unsupervised Dual Learning for Image-to-Image Translation》
+
+DiscoGAN论文：
+
+《Learning to Discover Cross-Domain Relationswith Generative Adversarial Networks》
 
 参考：
 
@@ -170,180 +264,20 @@ https://mp.weixin.qq.com/s/i3lNcbOblgVKUTBtwKIFwg
 
 AI秒造全球房源：StyleGAN快速生成假房子，连图说都配好了！
 
-# Stack GAN
+# StarGAN
 
 论文：
 
-《StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks》
+《StarGAN: Unified Generative Adversarial Networksfor Multi-Domain Image-to-Image Translation》
 
-![](/images/img2/Stack_GAN.png)
+![](/images/img3/StarGAN.png)
 
-上图是Stack GAN的网络结构图。其中的Conditioning Augmentation，显然使用了和VAE类似的技术。
+![](/images/img3/StarGAN_2.png)
 
-类似想法的还有LAPGAN。
-
-论文：
-
-《Deep Generative Image Models using a Laplacian Pyramid of Adversarial Networks》
-
-顾名思义，这是使用了Laplacian Pyramid来不断提升生成图片的分辨率。
+![](/images/img3/StarGAN_3.png)
 
 参考：
 
-https://www.cnblogs.com/wangxiaocvpr/p/5966776.html
+https://mp.weixin.qq.com/s/rPDvLnG4MBDRUMCWs2fjcQ
 
-LAPGAN论文笔记
-
-# 参考资源
-
-https://blog.csdn.net/liuxiao214/article/category/6940697
-
-某GAN专栏
-
-https://mp.weixin.qq.com/s/oCDlhzjOYTIhsr5JuoRCJQ
-
-IRGAN：大一统信息检索模型的博弈竞争
-
-https://mp.weixin.qq.com/s/4Daw-2aRmzcCMtxdvB3uYQ
-
-IRGAN：生成对抗网络在搜狗图片搜索排序中的应用
-
-https://zhuanlan.zhihu.com/p/30532830
-
-眼见已不为实，迄今最真实的GAN：Progressive Growing of GANs
-
-https://mp.weixin.qq.com/s/PkZ069S8ysY_JCQx1nzfGg
-
-NVIDIA新作解读：用GAN生成前所未有的高清图像（附PyTorch复现）
-
-https://mp.weixin.qq.com/s/Q_1IUS-65ZAFt9w0RlZUpw
-
-谷歌开源TFGAN：轻量级生成对抗网络工具库
-
-https://mp.weixin.qq.com/s/E28lA-fcAQ6Sp6Qv64H3TQ
-
-GAN in NLP
-
-https://mp.weixin.qq.com/s/7-oHa-8Q8ThcctaVOZFfew
-
-Facebook创意生成网络CAN，比GAN更有创造力
-
-https://mp.weixin.qq.com/s/aSQ2-QxbToGF0ROyjxw2yw
-
-萌物生成器：如何使用四种GAN制造猫图
-
-http://mp.weixin.qq.com/s/UkZdUcdz7h4DqcyjSbNncw
-
-zi2zi：用条件生成对抗网络玩转中文书法，绝妙汉字字体自动生成
-
-http://blog.csdn.net/v_JULY_v/article/details/52683959
-
-没GPU也能玩梵高作画：Ubuntu tensorflow CPU版
-
-http://mp.weixin.qq.com/s/zNmJuevHaagKbyGFdKTwoQ
-
-tensorflow实现基于深度学习的图像补全
-
-https://zhuanlan.zhihu.com/p/27199954
-
-用GAN去除动作片中的马赛克和衣服
-
-https://mp.weixin.qq.com/s/Qzlg1MzRT3josy2RJpQSVg
-
-Image to Image Translation Using GAN
-
-https://mp.weixin.qq.com/s/AswdyjPeKbX7yhAPloP2og
-
-基于对抗学习的生成式对话模型
-
-https://mp.weixin.qq.com/s/YXWTslQXIKVihBb2Bgtafg
-
-GAN在信息检索领域的应用
-
-https://mp.weixin.qq.com/s/0tTLotV-8w2j3VdkH-qjCQ
-
-让机器告诉你故事的结局应该是什么：利用GAN进行故事型常识阅读理解
-
-https://zhuanlan.zhihu.com/p/28488946
-
-AI可能真的要代替插画师了……
-
-https://mp.weixin.qq.com/s/OXN8Y5truLeslX8-UWgqmg
-
-宅男的福音：用GAN自动生成二次元萌妹子
-
-https://mp.weixin.qq.com/s/NFqTpSXtFdP43MBeb3Ovrw
-
-GAN眼中的图像翻译
-
-http://blog.csdn.net/amds123/article/details/70199708
-
-生成对抗网络GAN最近在NLP领域有哪些应用？
-
-https://mp.weixin.qq.com/s/h7lrJYQ_RqJDako8UoYK-A
-
-六种改进均未超越原版：谷歌新研究对GAN现状提出质疑
-
-https://mp.weixin.qq.com/s/dwEHorYSJuX9JapIYLHiXg
-
-BicycleGAN：图像转换多样化，大幅提升pix2pix生成图像效果
-
-https://mp.weixin.qq.com/s/W4WVHMIMKPNvt5lcCe1v4g
-
-半监督学习需要Bad GAN，清华特奖学霸与苹果AI总监提出
-
-https://mp.weixin.qq.com/s/jG7r7THhVAnJTYgDeWX2Eg
-
-百度提出使用GAN构建语音识别新框架
-
-https://mp.weixin.qq.com/s/I7axl00VZeCHJpaaITCO2Q
-
-对抗学习GAN提升跨模态检索效果
-
-https://mp.weixin.qq.com/s/OZWih_xfqYdeP-x9MawogA
-
-GAN做图像翻译的一点总结
-
-https://zhuanlan.zhihu.com/p/32103958
-
-GAN调研：多极扩展（跨域和条件的GAN扩展模型调研）
-
-https://mp.weixin.qq.com/s/RZ6UbTgfn30UFaUYNtApRg
-
-如何用Masking GAN让100,000人笑起来？
-
-https://mp.weixin.qq.com/s/OPn4_jmJ7pUg8xa0FZvyiw
-
-超火的漫画线稿上色AI出新版了！无监督训练，效果更美好
-
-https://mp.weixin.qq.com/s/wrxKwY2SvJZc8bRuZ_wF_A
-
-用生成对抗网络给雪人上色，探索人工智能时代的美学
-
-https://mp.weixin.qq.com/s/lPeySqEr3pzPdZqnp1Eh8A
-
-CMU提出对抗生成网络：可实现对人脸识别模型的神经网络攻击
-
-https://mp.weixin.qq.com/s/f5dGUJw3bv8WppPZVzqyAA
-
-反GAN传统，Petuum自动驾驶新研究提出从复杂真实图像生成简单虚拟表征以预测驾驶指令
-
-https://mp.weixin.qq.com/s/SvIC6DXUKH93jU9R-7fcyw
-
-CNN对抗补丁之谜
-
-https://mp.weixin.qq.com/s/V1XX8WWstR00m_OimMrDDw
-
-微软亚洲研究院论文解读：GAN在网络特征学习中的应用
-
-https://mp.weixin.qq.com/s/YNkx03D2Ok2xyMpPI0XXKg
-
-Petuum新研究提出形义感知型Grad-GAN：可基于虚拟游戏生成更具真实感的城市场景
-
-http://mp.weixin.qq.com/s/RlpI3hCKjcJ8VHSbBXf84g
-
-用生成对抗网络解决NLP问题：谷歌大脑提出MaskGAN
-
-https://mp.weixin.qq.com/s/gDzti2DISq_cwGbP5T7ICQ
-
-聊聊对抗自编码器
+最新StarGAN对抗生成网络实现多领域图像变换

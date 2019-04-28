@@ -6,7 +6,7 @@ category: GAN & VAE
 
 # 概况
 
-## 参考资源（续）
+## 参考（续）
 
 https://mp.weixin.qq.com/s/pgWysIGObceGVrxs85kyew
 

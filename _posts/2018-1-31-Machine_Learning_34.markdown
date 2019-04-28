@@ -198,6 +198,10 @@ https://blog.csdn.net/liuyuemaicha/article/details/73147548
 
 从PGM到HMM再到CRF
 
+https://mp.weixin.qq.com/s/4r4k6JIj4xvHHmt3QqmbuA
+
+以RNN形式做CRF后处理—CRFasRNN
+
 ## BiLSTM+CRF
 
 ![](/images/img2/BiLSTM_CRF.jpg)

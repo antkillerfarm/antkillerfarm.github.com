@@ -351,3 +351,7 @@ https://mp.weixin.qq.com/s/ShLqAgB8VJJQjCS9iako6Q
 https://mp.weixin.qq.com/s/DN_PeqF1JUZfIl0kNCwFng
 
 联合汉语分词和依存句法分析的统一模型：当前效果最佳
+
+https://zhuanlan.zhihu.com/p/64032803
+
+无监督循环神经网络文法(URNNG)

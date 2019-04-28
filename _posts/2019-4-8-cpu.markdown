@@ -88,6 +88,42 @@ https://mp.weixin.qq.com/s/hIWvLLKWksNlO2eaVKcbAA
 
 那个延续摩尔定律的人的传奇人生。Mark Bohr，UIUC硕士（1978），美国工程院院士。
 
+## 多核
+
+https://zhuanlan.zhihu.com/p/53596593
+
+所有CPU内核一定生来平等吗？Intel非对称异构多处理器：Lakefield
+
+https://en.wikipedia.org/wiki/ARM_big.LITTLE
+
+ARM的big.LITTLE架构
+
+https://mp.weixin.qq.com/s/KndkpO_UbR4j1TEi5Nnbpg
+
+详说片上网络之一：片上多核系统与片上网络的发展
+
+## 历史
+
+https://mp.weixin.qq.com/s/-2kGkJzjay2WJzIpMs2Adw
+
+IEEE盘点27款震撼世界的芯片
+
+https://mp.weixin.qq.com/s/KhY-PPdvZ26Uy8xEgi70DA
+
+纪念晶体管诞生71周年——改变世界30款芯片大阅兵！
+
+http://m.uczzd.cn/webview/news?aid=15020380163392206798
+
+你所不知道的经典科技发展史: 以前CPU是如何设计出来的
+
+https://mp.weixin.qq.com/s/Lnolh9y0rf86wOGa-F1xmw
+
+计算机的诞生史
+
+https://mp.weixin.qq.com/s/f_rk-NPKNzYpbHOr5bgluw
+
+一文了解半导体的过去、现在和未来
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/29743431
@@ -154,14 +190,6 @@ https://mp.weixin.qq.com/s/v_BsfSFp-LwiCOFKaMIS_g
 
 后摩尔时代，如何给你的CPU减负？
 
-https://mp.weixin.qq.com/s/-2kGkJzjay2WJzIpMs2Adw
-
-IEEE盘点27款震撼世界的芯片
-
-https://mp.weixin.qq.com/s/KhY-PPdvZ26Uy8xEgi70DA
-
-纪念晶体管诞生71周年——改变世界30款芯片大阅兵！
-
 https://mp.weixin.qq.com/s/gpfMOW7gzVa2HhYOlDy2nQ
 
 从Intel和ARM争霸战，看看做芯片有多难
@@ -194,14 +222,6 @@ https://mp.weixin.qq.com/s/rml_wqePIx8vOk2ZO9_GMA
 
 深入理解Cache（下）
 
-http://m.uczzd.cn/webview/news?aid=15020380163392206798
-
-你所不知道的经典科技发展史: 以前CPU是如何设计出来的
-
-https://mp.weixin.qq.com/s/Lnolh9y0rf86wOGa-F1xmw
-
-计算机的诞生史
-
 https://zhuanlan.zhihu.com/p/48593932
 
 CPU底部的小块是干什么用的？为什么CPU这么多电源引脚？
@@ -209,14 +229,6 @@ CPU底部的小块是干什么用的？为什么CPU这么多电源引脚？
 https://zhuanlan.zhihu.com/p/51145563
 
 TDP是CPU的功耗吗？TDP是固定不变的吗？
-
-https://zhuanlan.zhihu.com/p/53596593
-
-所有CPU内核一定生来平等吗？Intel非对称异构多处理器：Lakefield
-
-https://en.wikipedia.org/wiki/ARM_big.LITTLE
-
-ARM的big.LITTLE架构
 
 https://mp.weixin.qq.com/s/gzE46SzANLaYaXdLVEBRaA
 
@@ -245,10 +257,6 @@ https://mp.weixin.qq.com/s/LreWWlXAQL-dqQBCk93soQ
 https://mp.weixin.qq.com/s/XcC18tulYdnwqlusg2QrxA
 
 嵌入式内存STT-MRAM趋势分析
-
-https://mp.weixin.qq.com/s/f_rk-NPKNzYpbHOr5bgluw
-
-一文了解半导体的过去、现在和未来
 
 https://mp.weixin.qq.com/s/26se041cc9aBRw16kvPPjA
 
@@ -372,7 +380,7 @@ https://mp.weixin.qq.com/s/k5GNHhxEE6mIOnxXlCpKXg
 
 Apollo 3.5软件架构
 
-# AI Chip+
+# AI Chip
 
 https://mp.weixin.qq.com/s/BD-HAILp3TPvBFlIy6QC4w
 
@@ -405,19 +413,3 @@ https://mp.weixin.qq.com/s/gtgPYf939uYRzxAab_LZLQ
 https://mp.weixin.qq.com/s/s-fYxv4z5kkJUFueU2IR7w
 
 BP表达式与硬件架构：相似性构建更高效的计算单元
-
-https://zhuanlan.zhihu.com/p/31782874
-
-Graphcore AI芯片：更多分析
-
-https://mp.weixin.qq.com/s/O-NDsFs6AOwl43LyevXtzg
-
-OpenAI发布“块稀疏”GPU内核：实现文本情感分析与图像生成建模当前最优水平
-
-https://mp.weixin.qq.com/s/Qfbc2iQnXacOqOGIrpRQRw
-
-Tensor Core究竟有多快？全面对比英伟达Tesla V100/P100的RNN加速能力
-
-https://mp.weixin.qq.com/s/JYTqJDlGw6Q2gNLaYIGLcQ
-
-特斯拉芯片究竟怎么样？
