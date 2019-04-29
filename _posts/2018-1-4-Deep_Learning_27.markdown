@@ -1,172 +1,166 @@
 ---
 layout: post
-title:  深度学习（二十七）——RBM & DBN & Deep Autoencoder
+title:  深度学习（二十七）——MobileNet, NetVLAD, 李飞飞, RBM & DBN & Deep Autoencoder
 category: DL 
 ---
 
-# VAE（续）
+# MobileNet
 
-## 正态分布？
+论文：
 
-对于$$p(Z\mid X)$$的分布，是不是必须选择正态分布？可以选择均匀分布吗？
+《MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications》
 
-正态分布有两组独立的参数：均值和方差，而均匀分布只有一组。前面我们说，在VAE中，重构跟噪声是相互对抗的，重构误差跟噪声强度是两个相互对抗的指标，而在改变噪声强度时原则上需要有保持均值不变的能力，不然我们很难确定重构误差增大了，究竟是均值变化了（encoder的锅）还是方差变大了（噪声的锅）。而均匀分布不能做到保持均值不变的情况下改变方差，所以正态分布应该更加合理。
+代码：
 
-## 条件VAE
+https://github.com/Zehaos/MobileNet
 
-最后，因为目前的VAE是无监督训练的，因此很自然想到：如果有标签数据，那么能不能把标签信息加进去辅助生成样本呢？这个问题的意图，往往是希望能够实现控制某个变量来实现生成某一类图像。当然，这是肯定可以的，我们把这种情况叫做Conditional VAE，或者叫CVAE。正如在GAN中我们有个CGAN。
-
-但是，CVAE不是一个特定的模型，而是一类模型，总之就是把标签信息融入到VAE中的方式有很多，目的也不一样。这里基于前面的讨论，给出一种非常简单的CVAE。
-
-![](/images/img2/VAE_6.png)
-
-在前面的讨论中，我们希望X经过编码后，Z的分布都具有零均值和单位方差，这个“希望”是通过加入了KL loss来实现的。如果现在多了类别信息Y，我们可以希望同一个类的样本都有一个专属的均值$$\mu^Y$$（方差不变，还是单位方差），这个$$\mu^Y$$让模型自己训练出来。这样的话，有多少个类就有多少个正态分布，而在生成的时候，我们就可以通过控制均值来控制生成图像的类别。事实上，这样可能也是在VAE的基础上加入最少的代码来实现CVAE的方案了，因为这个“新希望”也只需通过修改KL loss实现：
-
-$$\mathcal{L}_{\mu,\sigma^2}=\frac{1}{2} \sum_{i=1}^d\Big[\big(\mu_{(i)}-\mu^Y_{(i)}\big)^2 + \sigma_{(i)}^2 - \log \sigma_{(i)}^2 - 1\Big]$$
-
-## VAE的另一个介绍
-
-以下章节的内容主要摘自：
-
-https://www.jeremyjordan.me/variational-autoencoders/
-
-Variational autoencoders
-
-该文中文版：
-
-https://mp.weixin.qq.com/s/tRB85VF8XH9TTXZsiNVLhA
-
-深入理解变分自编码器
-
-自编码器是发现数据的一些隐状态（不完整，稀疏，去噪，收缩）表示的模型。 更具体地说，输入数据被转换成一个编码向量，其中每个维度表示从数据学到的属性。 最重要的是编码器为每个编码维度输出单个值， 解码器随后接收这些值并尝试重新创建原始输入。
-
-变分自编码器（VAE）提供了描述隐空间观察的概率方式。 因此，我们不需要构建一个输出单个值来描述每个隐状态属性的编码器，而是要用编码器描述每个隐属性的概率分布。
-
-举个例子，假设我们已经在一个大型人脸数据集上训练了一个Autoencoder模型, encoder的维度是6。理想情况下, 我们希望自编码器学习面部的描述性属性，比如肤色，人是否戴眼镜，从而能够用一些特征值来表示这些属性。
-
-![](/images/img2/VAE_7.png)
-
-在上面的示例中，我们使用单个值来描述输入图像的隐属性。 但是，我们其实更愿意用一个分布去表示每个隐属性。 比如, 输入蒙娜丽莎的照片，我们很难非常自信的为微笑属性分配一个具体值, 但是用了变分自编码器, 我们有能比较自信的说微笑属性服从什么分布。
-
-![](/images/img2/VAE_8.png)
-
-通过这种方法，我们现在将给定输入的每个隐属性表示为概率分布。 当从隐状态解码时，我们将从每个隐状态分布中随机采样，来生成向量作为解码器的输入。
-
-![](/images/img2/VAE_9.png)
-
-通过构造我们的编码器来输出一系列可能的值（统计分布），然后随机采样该值作为解码器的输入，我们能够学习到一个连续，平滑的隐空间。因此，在隐空间中彼此相邻的值应该与非常类似的重建相对应。而从隐分布中采样到的任何样本，我们都希望解码器理解, 并准确重构出来。
-
-![](/images/img2/VAE_10.png)
-
-我们可以进一步将此模型构造成神经网络架构：
-
-![](/images/img2/VAE_11.png)
-
-下图是VAE的结构图：
-
-![](/images/img2/VAE_12.png)
-
-Reparameterization Trick的图示：
-
-![](/images/img2/VAE_13.png)
-
-从上面两图可以看出如下几点：
-
-1.mean tensor和variance tensor都是从上一层经FC计算得到。
-
-2.两者的差异主要是由生成z时候的角色决定的：做加法的就是mean tensor，做乘法的就是variance tensor。
-
-Reparameterization Trick的反向传播：
-
-![](/images/img2/VAE_14.png)
-
-## 数值计算 vs 采样计算
-
-VAE的基本概念到此差不多了，苏剑林趁热打铁又写了以下理论文章：
-
-https://kexue.fm/archives/5343
-
-变分自编码器（二）：从贝叶斯观点出发
-
-特将要点摘录如下。
-
-对于不是很熟悉概率统计的读者，容易混淆数值计算和采样计算的概念。
-
-已知概率密度函数p(x)，那么x的期望也就定义为：
-
-$$\mathbb{E}[x] = \int x p(x)dx\tag{1}$$
-
-如果要对它进行数值计算，也就是数值积分，那么可以选若干个有代表性的点$$x_0 < x_1 < \dots < x_n$$，然后得到：
-
-$$\mathbb{E}[x] \approx \sum_{i=1}^n x_i p(x_i) \left(\frac{x_i - x_{i-1}}{x_n - x_0}\right)\tag{2}$$
-
-如果从p(x)中采样若干个点$$x_1,x_2,\dots,x_n$$，那么我们有：
-
-$$\mathbb{E}[x] \approx \frac{1}{n}\sum_{i=1}^n x_i,\quad x_i \sim p(x)\tag{3}$$
-
-我们可以比较(2)跟(3)，它们的主要区别是(2)中包含了概率的计算而(3)中仅有x的计算，这是因为在(3)中$$x_i$$是从p(x)中依概率采样出来的，概率大的$$x_i$$出现的次数也多，所以可以说采样的结果已经包含了p(x)在里边，就不用再乘以$$p(x_i)$$了。
-
-## 生成模型近似
-
-对于二值数据，我们可以对decoder用sigmoid函数激活，然后用交叉熵作为损失函数，这对应于$$q(x\mid z)$$为伯努利分布；而对于一般数据，我们用MSE作为损失函数，这对应于$$q(x\mid z)$$为固定方差的正态分布。
-
-苏剑林稍后还写了以下两文，都很值得一看：
-
-https://kexue.fm/archives/5332
-
-基于CNN和VAE的作诗机器人：随机成诗
-
-https://kexue.fm/archives/5383
-
-变分自编码器：这样做为什么能成？
-
-## VAE vs GAN
-
-VAE是直接计算生成图片和原始图片的均方误差而不是像GAN那样去对抗来学习，这就使得生成的图片会有点模糊。但是VAE的收敛性要优于GAN。因此又有GAN hybrids：一方面可以提高VAE的采样质量和改善表示学习，另一方面也可以提高GAN的稳定性和丰富度。
+![](/images/article/dwl_pwl.png)
 
 参考：
 
-https://mp.weixin.qq.com/s/d_P-4uQx0kC2w6J69OZIAw
+https://mp.weixin.qq.com/s/f3bmtbCY5BfA4v3movwLVg
 
-Deepmind研究科学家最新演讲：VAEs and GANs
+向手机端神经网络进发：MobileNet压缩指南
+
+https://mp.weixin.qq.com/s/mcK8M6pnHiZZRAkYVdaYGQ
+
+MobileNet在手机端上的速度评测：iPhone 8 Plus竟不如iPhone 7 Plus
+
+https://mp.weixin.qq.com/s/2XqBeq3N4mvu05S1Jo2UwA
+
+CNN模型之MobileNet
+
+https://mp.weixin.qq.com/s/fdgaDoYm2sfjqO2esv7jyA
+
+Google论文解读：轻量化卷积神经网络MobileNetV2
+
+https://mp.weixin.qq.com/s/7vFxmvRZuM2DqSYN7C88SA
+
+谷歌发布MobileNetV2：可做语义分割的下一代移动端计算机视觉架构
+
+https://mp.weixin.qq.com/s/lu0GHCpWCmogkmHRKnJ8zQ
+
+浅析两代MobileNet
+
+https://mp.weixin.qq.com/s/T6S1_cFXPEuhRAkJo2m8Ig
+
+轻量级CNN网络之MobileNetv2
+
+https://mp.weixin.qq.com/s/RRu3r_dokORhpSq3eyrPDQ
+
+为什么MobileNet及其变体如此之快？
+
+# NetVLAD
+
+NetVLAD算的上是CNN+传统算子的一个范例。
+
+论文：
+
+《NetVLAD: CNN architecture for weakly supervised place recognition》
+
+《GhostVLAD for set-based face recognition》
+
+数据集：
+
+http://places.csail.mit.edu/
+
+## VLAD
+
+Vector of Locally Aggregated Descriptors
+
+https://www.cnblogs.com/minemine/p/7364950.html
+
+场景分类(scene classification)摘录
+
+http://www.cnblogs.com/mafuqiang/p/6909556.html
+
+图像检索——VLAD
 
 ## 参考
 
-https://mp.weixin.qq.com/s/TqZnlXLKHhZn3U29PlqetA
+https://www.oukohou.wang/2018/11/27/NetVLAD/
 
-变分自编码器VAE面临的挑战与发展方向
+论文阅读-NetVLAD
 
-https://mp.weixin.qq.com/s/mtZ4_pwl8_GhitgImAU0VA
+https://www.oukohou.wang/2018/12/26/GhostVLAD/
 
-一文读懂什么是变分自编码器
+论文阅读-GhostVLAD
 
-https://mp.weixin.qq.com/s/LQFuXgI7uZK2UKRfZvlVbA
+https://mp.weixin.qq.com/s/cfUl0Eym0mu7rSJJL7Zt1A
 
-Variational AutoEncoder
+基于深度学习的视觉实例搜索研究进展
 
-https://mp.weixin.qq.com/s/lnSMdOk8fYfdU4aGeI5j7Q
+https://zhuanlan.zhihu.com/p/25013378
 
-未标注的数据如何处理？一文读懂变分自编码器VAE
+深度纹理编码网络 (Deep TEN: Texture Encoding Network)
 
-https://zhuanlan.zhihu.com/p/27549418
+https://blog.csdn.net/LiGuang923/article/details/85416407
 
-花式解释AutoEncoder与VAE
+图像检索与降维（一）：VLAD
 
-https://mp.weixin.qq.com/s/TJDGZvAvT7KamR_WN-oYYw
+https://blog.csdn.net/LiGuang923/article/details/85470289
 
-如何使用变分自编码器VAE生成动漫人物形象
+图像检索与降维（二）：NetVLAD
 
-https://mp.weixin.qq.com/s/1q36Cb4Fy4Mg7DcrAcJv3A
+# 李飞飞
 
-双人协作游戏带你理解变分自编码器-Part1
+## AI大佬
 
-https://mp.weixin.qq.com/s/zJf-dWsMe5WELgDz7TlivA
+李飞飞是吴恩达之后的华裔AI新大佬。巧合的是，他们都是斯坦福AP+AI lab的主任，只不过吴是李的前任而已。
 
-双人协作游戏带你理解变分自编码器-Part2
+**李飞飞（Fei-Fei Li）**，1976年生，成都人，16岁移民美国。普林斯顿大学本科（1995～1999）+加州理工学院博士（2001～2005）。先后执教于UIUC、普林斯顿、斯坦福等学校。
 
-https://mp.weixin.qq.com/s/fzadP8NwPTxuhEB0O4GU8g
+个人主页：
 
-漫谈生成模型，从AE到CVAE-GAN
+http://vision.stanford.edu/feifeili/
+
+她的老公Silvio Savarese，也是斯坦福的AP。
+
+## 大佬的门徒
+
+比如可爱的妹子**Serena Yeung**。这个妹子是斯坦福的本硕博。出身不详，但从姓名的英文拼法来看，应该是美国土生的华裔。Yeung是杨、阳、羊等姓的传统英文拼法，但显然不是大陆推行的拼音拼法。（可以对比的是Fei-Fei Li和Bruce Lee，对于同一个姓的不同拼法。）
+
+个人主页：
+
+http://ai.stanford.edu/~syyeung/
+
+还有当红的“辣子鸡”：**Andrej Karpathy**，多伦多大学本科（2009）+英属不列颠哥伦比亚大学硕士（2011）+斯坦福博士（2015）。现任特斯拉AI总监。
+
+吐槽一下：英属不列颠哥伦比亚大学其实是加拿大的一所大学。
+
+个人主页：
+
+http://cs.stanford.edu/people/karpathy/
+
+Andrej Karpathy建了一个检索arxiv的网站，主要搜集了近3年来的ML/DL领域的论文。网址：
+
+http://www.arxiv-sanity.com/
+
+**李佳（Jia Li）**，李飞飞的开山大弟子，追随她从UIUC、普林斯顿到斯坦福。目前又追随其到Google。大约是知道自己的名字是个大路货，她的笔名叫做Li-Jia Li。
+
+个人主页：
+
+http://vision.stanford.edu/lijiali/
+
+## 学神
+
+应该说李飞飞和吴恩达都是万里挑一的超卓人物，但是和学神还是有所差距。下面是两个80后的华裔学神，他们都已经是正教授了：
+
+**尹希**，1983年生，哈佛大学物理系教授。
+
+**张锋**，1982年生，MIT教授，生物学家。
+
+这两个人都是有机会挑战诺奖的人，而李和吴暂时还没有这个可能性。
+
+## 网红
+
+这里收录了一些非李飞飞门下的AI网红。
+
+**Zachary Chase Lipton**，1985年生，哥伦比亚大学本科+UCSD博士，CMU的AP。他的另一身份——Jazz歌手，可比他的学术成就知名多了。
+
+个人主页：
+
+http://zacklipton.com/
 
 # RBM & DBN & Deep Autoencoder
 

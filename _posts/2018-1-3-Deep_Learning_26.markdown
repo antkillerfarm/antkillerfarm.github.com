@@ -1,110 +1,377 @@
 ---
 layout: post
-title:  深度学习（二十六）——VAE
+title:  深度学习（二十六）——深度推荐系统（1）
 category: DL 
 ---
 
-# VAE
+# 深度推荐系统
 
-变分自编码器（Variational Auto-Encoder，VAE）是Autoencoder的一种扩展。
+推荐系统一直是AI能够落地且商业前景很好的一个研究方向。自2016年以来，该方向也逐渐被DL所侵蚀，尽管目前从招聘来说，这方面的职位仍以普通ML为主。
 
-论文：
+2017年5月，我曾面试了一家电商企业。当时给我的感觉，虽然里面的工程师较早接触ML，然而知识老化现象比较严重，对最基本的神经网络知识缺乏必要的了解。这显然给了后来者一个弯道超车的好机会。
 
-《Auto-Encoding Variational Bayes》
+## 教程
 
-代码：
+https://mp.weixin.qq.com/s/3L-HNGBd1xW8SpK6BpEEtg
 
-https://github.com/keras-team/keras/blob/master/examples/variational_autoencoder.py
+在线购买率转化高达60%，Amazon推荐系统是如何做到的？这个blog篇幅较长，基本涵盖了推荐系统的各个方面，包括传统算法和深度算法都有涉及。
 
-Keras官方提供的代码示例
+https://mp.weixin.qq.com/s/aB8PnQuPmhftS18fUrumNg
 
-以下部分主要摘自：
+零基础如何快速搭建一个推荐系统？这篇blog是某牛课程的广告贴，然而从课程目录中，我们还是能够知道一个推荐系统的大致知识点。
 
-https://kexue.fm/archives/5253
+https://mp.weixin.qq.com/s/2RRzZcoy4L92n3VZH0o07w
 
-变分自编码器（一）：原来是这么一回事
+无偏见排序学习：理论与实践135页PPT教程
 
-## 分布变换
+## 算法
 
-通常我们会拿VAE跟GAN比较，的确，它们两个的目标基本是一致的——希望构建一个从隐变量Z生成目标数据X的模型，但是实现上有所不同。更准确地讲，它们是假设了Z服从某些常见的分布（比如正态分布或均匀分布），然后希望训练一个模型$$X=g(Z)$$，这个模型能够将原来的概率分布映射到训练集的概率分布，也就是说，它们的目的都是进行分布之间的映射。
+深度推荐系统的算法包括：
 
-现在假设Z服从标准的正态分布，那么我就可以从中采样得到若干个$$Z_1, Z_2, \dots, Z_n$$，然后对它做变换得到$$\hat{X}_1 = g(Z_1),\hat{X}_2 = g(Z_2),\dots,\hat{X}_n = g(Z_n)$$，我们怎么判断这个通过f构造出来的数据集，它的分布跟我们目标数据集的分布是不是一样的呢？
+https://mp.weixin.qq.com/s/qwDIvXlpP5UIBTwtpqhYsg
 
-![](/images/img2/VAE.png)
+Auto-Encoder
 
-**生成模型的难题就是判断生成分布与真实分布的相似度，因为我们只知道两者的采样结果，不知道它们的分布表达式。**
+https://mp.weixin.qq.com/s/AqgxnfR4h1FBRmmEe6uPqQ
 
-有读者说不是有KL散度吗？当然不行，因为KL散度是根据两个概率分布的表达式来算它们的相似度的，然而目前我们并不知道它们的概率分布的表达式，我们只有一批从构造的分布采样而来的数据$$\{\hat{X}_1,\hat{X}_2,\dots,\hat{X}_n\}$$，还有一批从真实的分布采样而来的数据$$\{X_1,X_2,\dots,X_n\}$$（也就是我们希望生成的训练集）。我们只有样本本身，没有分布表达式，当然也就没有方法算KL散度。
+CDL
 
-虽然遇到困难，但还是要想办法解决的。GAN的思路很直接粗犷：既然没有合适的度量，那我干脆把这个度量也用神经网络训练出来吧。而VAE则使用了一个精致迂回的技巧。
+https://mp.weixin.qq.com/s/WlgUVf1EjpO9UGqjTJN5ww
 
-## VAE的传统理解
+UWRL
 
-首先我们有一批数据样本$$\{X_1,\dots,X_n\}$$，其整体用X来描述，我们本想根据$$\{X_1,\dots,X_n\}$$得到X的分布p(X)，如果能得到的话，那我直接根据p(X)来采样，就可以得到所有可能的X了（包括$$\{X_1,\dots,X_n\}$$以外的），这是一个终极理想的生成模型了。当然，这个理想很难实现，于是我们将分布改一改：
+https://mp.weixin.qq.com/s/KII9oNg7kqfco2MngUOGAw
 
-$$p(X)=\sum_Z p(X|Z)p(Z)$$
+AutoRec
 
-此时$$p(X\mid Z)$$就描述了一个由Z来生成X的模型，而我们假设Z服从标准正态分布，也就是$$p(Z)=\mathcal{N}(0,I)$$。如果这个理想能实现，那么我们就可以先从标准正态分布中采样一个Z，然后根据Z来算一个X，也是一个很棒的生成模型。接下来就是结合自编码器来实现重构，保证有效信息没有丢失，再加上一系列的推导，最后把模型实现。框架的示意图如下：
+https://mp.weixin.qq.com/s/mnGuPGtdw9d1BzeNpoYYqw
 
-![](/images/img2/VAE_2.png)
+DeepCoNN
 
-看出了什么问题了吗？如果像这个图的话，我们其实完全不清楚：究竟经过重新采样出来的$$Z_k$$，是不是还对应着原来的$$X_k$$，所以我们如果直接最小化$$\mathcal{D}(\hat{X}_k,X_k)^2$$（这里D代表某种距离函数）是很不科学的，而事实上你看代码也会发现根本不是这样实现的。
+https://mp.weixin.qq.com/s/lJDiP7oeiFQSEyxWt_9uBA
 
-## VAE初现
+NFM
 
-其实，在整个VAE模型中，我们并没有去使用p(Z)（先验分布）是正态分布的假设，我们用的是假设$$p(Z\mid X)$$（后验分布）是正态分布！！
+https://mp.weixin.qq.com/s/G4bDj4a05K0kB4IZ6IosiQ
 
-具体来说，给定一个真实样本$$X_k$$，我们假设存在一个专属于$$X_k$$的分布$$p(Z\mid X_k)$$（学名叫后验分布），并进一步假设这个分布是（独立的、多元的）正态分布。为什么要强调“专属”呢？因为我们后面要训练一个生成器$$X=g(Z)$$，希望能够把从分布$$p(Z\mid X_k)$$采样出来的一个$$Z_k$$还原为$$X_k$$。如果假设p(Z)是正态分布，然后从p(Z)中采样一个Z，那么我们怎么知道这个Z对应于哪个真实的X呢？现在$$p(Z\mid X_k)$$专属于$$X_k$$，我们有理由说从这个分布采样出来的Z应该要还原到$$X_k$$中去。
+Wide & Deep
 
-这样有多少个X就有多少个正态分布了。我们知道正态分布有两组参数：均值$$\mu$$和方差$$\sigma^2$$（多元的话，它们都是向量），那我怎么找出专属于$$X_k$$的正态分布$$p(Z\mid X_k)$$的均值和方差呢？好像并没有什么直接的思路。那好吧，就用神经网络拟合出来吧！
+https://mp.weixin.qq.com/s/JNGKz4-fWG4ygl7f6UkxcQ
 
-![](/images/img2/VAE_3.png)
+DeepFM
 
-于是我们构建两个神经网络$$\mu_k = f_1(X_k),\log \sigma^2 = f_2(X_k)$$来算它们了。我们选择拟合$$\log \sigma^2$$而不是直接拟合$$\sigma^2$$，是因为$$\sigma^2$$总是非负的，需要加激活函数处理，而拟合$$\log \sigma^2$$不需要加激活函数，因为它可正可负。到这里，知道专属于$$X_k$$的均值和方差，也就知道它的正态分布长什么样了，然后从这个专属分布中采样一个$$Z_k$$出来，经过一个生成器得到$$\hat{X}_k=g(Z_k)$$，现在我们可以放心地最小化$$\mathcal{D}(\hat{X}_k,X_k)^2$$，因为$$Z_k$$是从专属$$X_k$$的分布中采样出来的，这个生成器应该要把开始的$$X_k$$还原回来。
+这些算法的演化路径具体来说有两条：其一是从FM开始推演其在深度学习上的各种推广（对应下图的红线），另一条是从embedding+MLP自身的演进特点结合CTR预估本身的业务场景进行推演（对应下图黑线部分）。 
 
-## 分布标准化
+![](/images/img2/DL_recommend.jpg)
 
-让我们来思考一下，根据上图的训练过程，最终会得到什么结果。
+这是另一个版本的演化图谱：
 
-首先，我们希望重构X，也就是最小化$$\mathcal{D}(\hat{X}_k,X_k)^2$$，但是这个重构过程受到噪声的影响，因为$$Z_k$$是通过重新采样过的，不是直接由encoder算出来的。显然噪声会增加重构的难度，不过好在这个噪声强度（也就是方差）通过一个神经网络算出来的，所以最终模型为了重构得更好，肯定会想尽办法让方差为0。而方差为0的话，也就没有随机性了，所以不管怎么采样其实都只是得到确定的结果（也就是均值）。说白了，**模型会慢慢退化成普通的AutoEncoder，噪声不再起作用。**
+![](/images/img2/CTR.png)
 
-为了使模型具有生成能力，VAE决定让所有的$$p(Z\mid X)$$都向标准正态分布看齐。如果所有的$$p(Z\mid X)$$都很接近标准正态分布$$\mathcal{N}(0,I)$$，那么根据定义：
+## 工具
 
-$$p(Z)=\sum_X p(Z|X)p(X)=\sum_X \mathcal{N}(0,I)p(X)=\mathcal{N}(0,I) \sum_X p(X) = \mathcal{N}(0,I)$$
+https://www.librec.net/
 
-这样我们就能达到我们的先验假设：p(Z)是标准正态分布。然后我们就可以放心地从$$\mathcal{N}(0,I)$$中采样来生成图像了。
+这是一个Java写的推荐系统。东北大学的郭贵冰主持的项目。该网址同时也有不少相关论文可供阅读。
 
-那怎么让所有的$$p(Z\mid X)$$都向$$\mathcal{N}(0,I)$$看齐呢？如果没有外部知识的话，其实最直接的方法应该是在重构误差的基础上中加入额外的loss：
+https://github.com/cheungdaven/DeepRec
 
-$$\mathcal{L}_{\mu}=\Vert f_1(X_k)\Vert^2,\mathcal{L}_{\sigma^2}=\Vert f_2(X_k)\Vert^2$$
+这是一个基于Tensorflow的深度推荐系统
 
-因为它们分别代表了均值$$\mu_k$$和方差的对数$$\log \sigma^2$$，达到$$\mathcal{N}(0,I)$$就是希望二者尽量接近于0了。不过，这又会面临着这两个损失的比例要怎么选取的问题，选取得不好，生成的图像会比较模糊。所以，原论文直接算了一般（各分量独立的）正态分布与标准正态分布的KL散度$$KL\Big(N(\mu,\sigma^2)\Big\Vert N(0,I)\Big)$$作为这个额外的loss，计算结果为：
+## 参考
 
-$$\mathcal{L}_{\mu,\sigma^2}=\frac{1}{2} \sum_{i=1}^d \Big(\mu_{(i)}^2 + \sigma_{(i)}^2 - \log \sigma_{(i)}^2 - 1\Big)$$
+https://zhuanlan.zhihu.com/learningdeep
 
-这里的d是隐变量Z的维度，而$$\mu_{(i)}$$和$$\sigma_{(i)}^2$$分别代表一般正态分布的均值向量和方差向量的第i个分量。直接用这个式子做补充loss，就不用考虑均值损失和方差损失的相对比例问题了。显然，这个loss也可以分两部分理解：
+一个深度推荐的专栏
 
-$$\begin{aligned}&\mathcal{L}_{\mu,\sigma^2}=\mathcal{L}_{\mu} + \mathcal{L}_{\sigma^2}\\ 
-&\mathcal{L}_{\mu}=\frac{1}{2} \sum_{i=1}^d \mu_{(i)}^2=\frac{1}{2}\Vert f_1(X)\Vert^2\\ 
-&\mathcal{L}_{\sigma^2}=\frac{1}{2} \sum_{i=1}^d\Big(\sigma_{(i)}^2 - \log \sigma_{(i)}^2 - 1\Big)\end{aligned}$$
+https://mp.weixin.qq.com/s/GMHjXa2r_1SG3HsA-bcIOQ
 
-## Reparameterization Trick
+从FM推演各深度CTR预估模型
 
-这是实现模型的一个技巧。我们要从$$p(Z\mid X_k)$$中采样一个$$Z_k$$出来，尽管我们知道了$$p(Z\mid X_k)$$是正态分布，但是均值方差都是靠模型算出来的，我们要靠这个过程反过来优化均值方差的模型，但是“采样”这个操作是不可导的，而采样的结果是可导的，于是我们利用了一个事实：
+https://mp.weixin.qq.com/s/Yz3vv6H4oHyZ-vX71yv5gw
 
->从$$\mathcal{N}(\mu,\sigma^2)$$中采样一个Z，相当于从$$\mathcal{N}(0,I)$$中采样一个$$\varepsilon$$，然后让$$Z=\mu + \varepsilon \times \sigma$$。
+谷歌、阿里等10大深度学习CTR模型最全演化图谱
 
-![](/images/img2/VAE_4.png)
+https://zhuanlan.zhihu.com/p/26237106
 
-于是，我们将从$$\mathcal{N}(\mu,\sigma^2)$$采样变成了从$$\mathcal{N}(0,I)$$中采样，然后通过参数变换得到从$$\mathcal{N}(\mu,\sigma^2)$$中采样的结果。这样一来，“采样”这个操作就不用参与梯度下降了，改为采样的结果参与，使得整个模型可训练了。
+深度学习在推荐算法上的应用进展
 
-## VAE本质
+http://i.dataguru.cn/mportal.php?mod=view&aid=11463
 
-VAE本质上就是在我们常规的自编码器的基础上，对encoder的结果（在VAE中对应着计算均值的网络）加上了“高斯噪声”，使得结果decoder能够对噪声有鲁棒性；而那个额外的KL loss（目的是让均值为0，方差为1），事实上就是相当于对encoder的一个正则项，希望encoder出来的东西均有零均值。
+深度学习在推荐领域的应用
 
-那另外一个encoder（对应着计算方差的网络）的作用呢？它是用来动态调节噪声的强度的。直觉上来想，当decoder还没有训练好时（重构误差远大于KL loss），就会适当降低噪声（KL loss增加），使得拟合起来容易一些（重构误差开始下降）；反之，如果decoder训练得还不错时（重构误差小于KL loss），这时候噪声就会增加（KL loss减少），使得拟合更加困难了（重构误差又开始增加），这时候decoder就要想办法提高它的生成能力了。
+https://zhuanlan.zhihu.com/p/33214451
 
-![](/images/img2/VAE_5.png)
+深度学习在推荐系统上的应用
 
-简言之，**重构的过程是希望没噪声的，而KL loss则希望有高斯噪声的，两者是对立的。所以，VAE跟GAN一样，内部其实是包含了一个对抗的过程，只不过它们两者是混合起来，共同进化的。**
+https://mp.weixin.qq.com/s/hGvQvddD3i858XSK4z08Ug
 
+主要推荐系统算法总结及Youtube深度学习推荐算法实例概括
+
+https://mp.weixin.qq.com/s/yHtqWJUpCIvTStKW5TINaA
+
+Youtube短视频推荐系统变迁：从机器学习到深度学习
+
+https://mp.weixin.qq.com/s/N1oLs-saWN_ifkWEaWw_Vg
+
+YouTube 2016年公布的基于深度学习的推荐算法
+
+https://mp.weixin.qq.com/s/WzSO_XobY6kesDm4sF-hBg
+
+深度学习之推荐篇
+
+https://mp.weixin.qq.com/s/LKjVfhyhL4GVx6l5WC6-CQ
+
+如何用深度学习实现用户行为预测与推荐
+
+https://mp.weixin.qq.com/s/UrMsMHAkqNHJEl5lhAvLtA
+
+腾讯提出并行贝叶斯在线深度学习框架PBODL：预测广告系统的点击率
+
+http://mp.weixin.qq.com/s/Jiis7j3W3D5GG_ZdxplY7Q
+
+淘宝搜索/推荐系统背后深度强化学习与自适应在线学习的实践之路
+
+https://mp.weixin.qq.com/s/847h4ITQMtUlZcurJ9Vlvg
+
+深度学习在美团点评推荐平台排序中的运用
+
+https://mp.weixin.qq.com/s/AICgNDyWASx_B8NzWcFTqA
+
+一文综述所有用于推荐系统的深度学习方法
+
+https://mp.weixin.qq.com/s/zSBpqhoyROh74UZEItBanA
+
+基于概率隐层模型的购物搭配推送：阿里巴巴提出新型用户偏好预测模型
+
+http://mp.weixin.qq.com/s/nmLNKscP1qxyv_aoSrwEEw
+
+基于大规模图计算的本地算法对展示广告的行为预测
+
+https://mp.weixin.qq.com/s/8hNkntUauCSeVqc2v0QUqA
+
+人工智能如何帮你找到好歌：探秘Spotify神奇的每周歌单
+
+https://zhuanlan.zhihu.com/p/30720579
+
+推荐中的序列化建模：Session-based neural recommendation
+
+https://mp.weixin.qq.com/s/vpxLTcwenvlIvj5D-8uolg
+
+一天造出10亿个淘宝首页，阿里工程师如何实现？
+
+https://mp.weixin.qq.com/s/lZ4FOOVIxsdKvfW45CYCnA
+
+你看到哪版电影海报，由算法决定：揭秘Netflix个性化推荐系统
+
+http://www.cnblogs.com/qcloud1001/p/7483362.html
+
+深度学习在CTR中应用
+
+http://www.cnblogs.com/qcloud1001/p/7513982.html
+
+常见计算广告点击率预估算法总结
+
+https://mp.weixin.qq.com/s/Q8Mt9B1rzbeWXqIInrzSYQ
+
+使用深度学习构建先进推荐系统：近期33篇重要研究概述
+
+https://mp.weixin.qq.com/s/PlsFxKz_Igorh94Ni-78Hg
+
+融合MF和RNN的电影推荐系统
+
+https://mp.weixin.qq.com/s/JKMOhpLWWlrDzymDDEldXw
+
+深度学习大行其道，个性化推荐如何与时俱进？
+
+https://mp.weixin.qq.com/s/FBzd0x4_A9z-r0f3ZKFGuw
+
+携程个性化推荐算法实践
+
+https://mp.weixin.qq.com/s/Q01jy2RtbpBBHGtvtfhEGA
+
+当机器学习遇到推荐系统，悉尼科技大学Liang Hu博士最新分享
+
+https://mp.weixin.qq.com/s/zBcd2vCYZvb_T7De2QhRew
+
+京东公布基于计算机视觉的电商推荐技术！
+
+https://mp.weixin.qq.com/s/rIZUar6sUZXo2S1JwLrHug
+
+AI研究新利器Etymo，妈妈再也不用担心我找不到论文！
+
+https://zhuanlan.zhihu.com/p/33956907
+
+阿里-搜索团队智能内容生成实践
+
+https://mp.weixin.qq.com/s/9nGjIgwzGG2sXvEzvYEptQ
+
+基于“翻译”的推荐系统方案，加州大学圣地亚哥分校最新工作
+
+https://mp.weixin.qq.com/s/Qupo61cnuO_10sVpRe-wQA
+
+DKN:基于深度知识感知的新闻推荐网络
+
+https://mp.weixin.qq.com/s/9xw-FwWEK9VI2wNzc8EhPA
+
+阿里盖坤：解读阿里深度学习实践，CTR 预估、MLR 模型、兴趣分布网络等
+
+https://zhuanlan.zhihu.com/p/35472804
+
+TransNets: Learning to Transform for Recommendation
+
+https://mp.weixin.qq.com/s/_xAB7-LxKRlH76FVsyezzQ
+
+阿里妈妈资深技术专家刘凯鹏解读基于深度学习的智能搜索营销
+
+https://mp.weixin.qq.com/s/CMZHhxAMno2GlnQCjv0BKg
+
+深度学习在CTR预估中的应用
+
+https://mp.weixin.qq.com/s/nboZ6p_l30L__FJNyz6Ohw
+
+深度学习如何应用在广告、推荐及搜索业务？
+
+https://zhuanlan.zhihu.com/p/36564514
+
+基于深度学习的评论文本表示论文引介
+
+https://mp.weixin.qq.com/s/a-lDJuwFYVNupeNhxyXDkA
+
+跨域社交推荐：如何透过用户社交信息“猜你喜欢”？
+
+https://mp.weixin.qq.com/s/FvuWZPNKcnimAGzsfgVdBQ
+
+阿里妈妈公开全新CVR预估模型
+
+https://mp.weixin.qq.com/s/Ya8RZ3TouAapU_xuvMjjMQ
+
+深度协同过滤：用神经网络取代内积建模
+
+https://mp.weixin.qq.com/s/CyelwdWX4yPVp8o79itonQ
+
+阿里提出联合预估算法JUMP：点击率和停留时长预测效果最优
+
+https://mp.weixin.qq.com/s/HS2zcnA1YSRU8-DrodJ6Qw
+
+淘宝用强化学习优化商品搜索后，总收入能提高2%
+
+https://mp.weixin.qq.com/s/QZeyEN2DDM_etEki7uodMg
+
+一个神奇的特征选择轮子----MLFeatureSelection
+
+https://mp.weixin.qq.com/s/8MQ1G-JWGAw5Ev1Ws3V_ig
+
+IJCAI 2018国际广告算法大赛迁移学习夺冠，中国包揽冠亚季军
+
+https://mp.weixin.qq.com/s/QCGemlo8CYIz6imMde_cmg
+
+推荐系统中的机器学习算法与评估实战
+
+https://mp.weixin.qq.com/s/v8L0E6G-ShOiyvaymw8MYg
+
+一文搞懂DeepFM的理论与实践
+
+https://mp.weixin.qq.com/s/u4onsUU4G4DNm4F5ytiNhQ
+
+互联网广告CTR预估新算法：基于神经网络的DeepFM原理解读
+
+https://mp.weixin.qq.com/s/QaMjHRZ5fiN2zBJLIeGrSg
+
+阿里推出DeepInsight平台：可视化理解深度神经网络CTR预估模型
+
+https://mp.weixin.qq.com/s/JEOfAXg4nDepMtzPCgElrg
+
+SIGIR 2018最佳论文：深入分析流行度在推荐系统中的作用
+
+https://mp.weixin.qq.com/s/5wdGemYBtkYUvq1n5ioyFg
+
+详解Wide&Deep理论与实践
+
+https://mp.weixin.qq.com/s/pA1SSEnwC884LBZGiH3jhg
+
+基于改进注意力循环控制门，品牌个性化排序升级系统来了
+
+https://mp.weixin.qq.com/s/V6tjQzfzsekXuoXhbXbKSQ
+
+一文搞懂阿里Deep Interest Network
+
+https://mp.weixin.qq.com/s/ro3D_d-ZPP0TasqPr4PgPA
+
+推荐系统特征构建新进展：极深因子分解机模型
+
+https://mp.weixin.qq.com/s/MoUd99mCR3Xyu_FnV8jLKA
+
+机器如何“猜你喜欢”？深度学习模型在1688的应用实践
+
+https://mp.weixin.qq.com/s/O_BYzrw5YAbLkfVDqcmwmw
+
+36页最新《深度学习在推荐系统上的应用》综述论文，209篇参考论文
+
+https://mp.weixin.qq.com/s/frUPjpCQGlZc7Dag_v7r3A
+
+2018年最全的推荐系统干货
+
+https://mp.weixin.qq.com/s/3NStfKyn3rGmLUrgk4b9lQ
+
+想了解推荐系统最新研究进展？请收好这16篇论文
+
+https://mp.weixin.qq.com/s/7I8k3sKZfaGr8vj1WHbS7g
+
+99页推荐系统情感分析教程发布
+
+https://mp.weixin.qq.com/s/5ryEfgQnX-JXCvhwzKSCjA
+
+点击率预估界的“神算子”是如何炼成的？
+
+https://mp.weixin.qq.com/s/npZg46MK5MZ7h9cqvrAYiQ
+
+机器如何猜你所想？阿里小蜜预测平台揭秘
+
+https://zhuanlan.zhihu.com/p/46755166
+
+利用评论文本交互提升推荐系统
+
+https://zhuanlan.zhihu.com/p/47393033
+
+基于知识的新闻推荐
+
+https://mp.weixin.qq.com/s/jHKgKnl-SbZltl76Ln_Fgg
+
+AutoML详解及其在推荐系统中的应用、优缺点
+
+https://mp.weixin.qq.com/s/0FdosHMzKiYL8XCx_XEPFA
+
+双十一疯狂剁手，你知道阿里是如何跟踪用户兴趣演化的吗？
+
+https://zhuanlan.zhihu.com/p/49410727
+
+利用分类学数据来增强序列推荐的能力
+
+https://mp.weixin.qq.com/s/jdRu-cishwV8qBmGLTFJCA
+
+美团“猜你喜欢”深度学习排序模型实践
+
+https://mp.weixin.qq.com/s/u7GJstj5E_7y1rwkUbpAXg
+
+推荐系统的可解释性浅谈
+
+https://mp.weixin.qq.com/s/3j367YCViJtY9iB386p8jA
+
+简洁易用可扩展，一个基于深度学习的CTR模型包
+
+https://mp.weixin.qq.com/s/hxwyVCjK40urSTUZoDsQig
+
+Deep Neural Network for YouTube Recommendations
+
+https://mp.weixin.qq.com/s/fiUcm143ieCe3KkcJ0V5LQ
+
+京东如何在仓储库存部署时保证“啤酒尿裤”的高效履约？
+
+https://mp.weixin.qq.com/s/n9j9QuMe3fIPQFQKk5Tgjw
+
+Airbnb: 深度学习在搜索排序业务中的探索与演进（一）
+
+https://mp.weixin.qq.com/s/ejQW9EI48kJ4pvIlh7H3Dw
+
+Airbnb: 深度学习在搜索排序业务中的探索与演进（二）

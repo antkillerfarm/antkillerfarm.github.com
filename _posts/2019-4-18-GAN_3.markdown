@@ -1,8 +1,32 @@
 ---
 layout: post
-title:  GAN（三）——BEGAN & EBGAN, Stack GAN, GAN Ensemble, Pix2Pix, CycleGAN, StarGAN
+title:  GAN（三）——CGAN, BEGAN & EBGAN, Stack GAN, GAN Ensemble, Pix2Pix, CycleGAN
 category: GAN & VAE 
 ---
+
+# CGAN
+
+论文：
+
+《Conditional Generative Adversarial Nets》
+
+GAN不仅可用于无监督学习，也可用于有监督学习。Conditional GAN中的Condition实际上就是监督学习中的类别信息。
+
+GAN首先是个生成模型，类别信息对于GAN的意义在于：我不仅可以生成和数据集中样本类似的fake data，而且还可以指定它的类别。
+
+类别信息和随机噪声的融合，可以采用组合编码（combined embedding）的方式，也可以采用hadamard product之类的互相关操作。
+
+从数学角度看，GAN拟合的是$$p(data)$$，而CGAN拟合的是条件概率$$p(data \mid c)$$。
+
+![](/images/img3/CGAN.png)
+
+上图展示了监督学习（图左二）、GAN（图左三）和CGAN（图左四）的效果：
+
+1.监督学习一般采用MSE loss，它学习到的往往是若干训练图片的平均值，所以生成的图片比较模糊。
+
+2.GAN生成的图片细节较多，但是只保留了训练数据的语义信息，而忽略了具体内容。这里的语义信息，指的是高层级的抽象，比如都是狗图片（语义相同），内容却可以千差万别。
+
+3.CGAN较好的解决了监督学习和GAN的结合问题，即保留了语义，也保留了内容。
 
 # BEGAN & EBGAN
 
@@ -59,6 +83,10 @@ BEGAN将D网络的结构由Encoder改为了Encoder->Decoder（也就是一个AE�
 https://www.cnblogs.com/wangxiaocvpr/p/5966776.html
 
 LAPGAN论文笔记
+
+https://zhuanlan.zhihu.com/p/30532830
+
+眼见已不为实，迄今最真实的GAN：Progressive Growing of GANs
 
 # GAN Ensemble
 
@@ -229,55 +257,3 @@ DualGAN论文：
 DiscoGAN论文：
 
 《Learning to Discover Cross-Domain Relationswith Generative Adversarial Networks》
-
-参考：
-
-https://zhuanlan.zhihu.com/p/28342644
-
-CycleGAN的原理与实验详解
-
-https://mp.weixin.qq.com/s/7GHBH79kWIpEBLYX-VEd7A
-
-CycleGAN：图片风格，想换就换
-
-https://mp.weixin.qq.com/s/sxa0BfXtylHXzjq0YBn-Kg
-
-伯克利图像迁移cycleGAN，猫狗互换效果感人
-
-https://mp.weixin.qq.com/s/tzPCU1bxQ7NWtQ7o2PjF0g
-
-BAIR提出MC-GAN，使用GAN实现字体风格迁移
-
-https://mp.weixin.qq.com/s/A2VhfO3CkyQGCs5GqBWzOg
-
-实景照片秒变新海诚风格漫画：清华大学提出CartoonGAN
-
-https://mp.weixin.qq.com/s/rt4uuqh8IrZTjsYXEZvxKQ
-
-阿里提出全新风格化自编码GAN，图像生成更逼真！
-
-https://mp.weixin.qq.com/s/3lrCRiq5zuX9yWxiQRQE9A
-
-CartoonGAN不靠手绘，也能成为漫画达人
-
-https://mp.weixin.qq.com/s/i3lNcbOblgVKUTBtwKIFwg
-
-AI秒造全球房源：StyleGAN快速生成假房子，连图说都配好了！
-
-# StarGAN
-
-论文：
-
-《StarGAN: Unified Generative Adversarial Networksfor Multi-Domain Image-to-Image Translation》
-
-![](/images/img3/StarGAN.png)
-
-![](/images/img3/StarGAN_2.png)
-
-![](/images/img3/StarGAN_3.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/rPDvLnG4MBDRUMCWs2fjcQ
-
-最新StarGAN对抗生成网络实现多领域图像变换

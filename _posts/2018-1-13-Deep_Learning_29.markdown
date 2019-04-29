@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十九）——Normalization进阶（2）, Graph NN
+title:  深度学习（二十九）——Graph NN
 category: DL 
 ---
 
@@ -46,96 +46,6 @@ https://mp.weixin.qq.com/s/rXr_XBc2Psh3NSA0pj4ptQ
 
 常建龙：深度卷积网络中的卷积算子研究进展
 
-# Normalization进阶
-
-和Batch Normalization类似的概念还有Weight Normalization和Layer Normalization。
-
-### Batch Normalization
-
-![](/images/img2/BN.jpg)
-
-从上图可以看出，**BN是对input tensor的每个通道进行mini-batch级别的Normalization。而LN则是对所有通道的input tensor进行Normalization**。
-
-BN的特点：
-
-对于batch size比较小的时候，效果非常不好，而batch size越大，那么效果则越好，因为其本质上是要通过mini-batch得到对整个数据集的无偏估计；
-
-在训练阶段和推理阶段的计算过程是不一样的；
-
-在CNN上表现较好，而不适用于RNN甚至LSTM。
-
-### Layer Normalization
-
-LN的特点：
-
-不依赖于batch size的大小，即使对于batch size为1的在线学习，也可以完美适应；
-
-训练阶段和推理阶段的计算过程完全一样。
-
-适用于RNN或LSTM，而在CNN上表现一般。
-
-### Weight Normalization
-
-WN的公式如下：
-
-$$w=\frac{g}{\|v\|}v$$
-
-**WN将权重分为模和方向两个分量，并分别进行训练。**
-
-论文：
-
-《Weight Normalization: A Simple Reparameterization to Accelerate Training of Deep Neural Networks》
-
-WN的特点：
-
-计算简单，易于理解。
-
-相比于其他两种方法，其训练起来不太稳定，非常依赖于输入数据的分布。
-
-### Cosine Normalization
-
-Normalization还能怎么做？
-
-我们再来看看神经元的经典变换$$f_w(x)=w\cdot x$$。
-
-对输入数据x的变换已经做过了，横着来是LN，纵着来是BN。
-
-对模型参数w的变换也已经做过了，就是WN。
-
-好像没啥可做的了。然而天才的研究员们盯上了中间的那个点，对，就是$$\cdot$$。
-
-$$f_w(x)=\cos \theta=\frac{w\cdot x}{\|w\|\cdot\|x\|}$$
-
-参考：
-
-https://mp.weixin.qq.com/s/EBRYlCoj9rwf0NQY0B4nhQ
-
-Layer Normalization原理及其TensorFlow实现
-
-http://mlexplained.com/2018/01/10/an-intuitive-explanation-of-why-batch-normalization-really-works-normalization-in-deep-learning-part-1/
-
-An Intuitive Explanation of Why Batch Normalization Really Works
-
-http://mlexplained.com/2018/01/13/weight-normalization-and-layer-normalization-explained-normalization-in-deep-learning-part-2/
-
-Weight Normalization and Layer Normalization Explained
-
-https://mp.weixin.qq.com/s/KnmQTKneSimuOGqGSPy58w
-
-详解深度学习中的Normalization，不只是BN（1）
-
-https://mp.weixin.qq.com/s/nSQvjBRMaBeoOjdHbyrbuw
-
-详解深度学习中的Normalization，不只是BN（2）
-
-https://mp.weixin.qq.com/s/Z119_EpLKDz1TiLXGbygJQ
-
-MIT新研究参透批归一化原理
-
-https://mp.weixin.qq.com/s/Lp2pq95woQ5-E3RemdRnyw
-
-动态层归一化（Dynamic Layer Normalization）
-
 # Graph NN
 
 ## DGL
@@ -163,6 +73,10 @@ https://mp.weixin.qq.com/s/Ux3_baKdA_Fee-jmcs4Myg
 https://mp.weixin.qq.com/s/OUjMmxio9OCyuN0mJW-fdg
 
 完爆旧系统！Facebook开源图神经网络库PBG，无需GPU搞定数十亿节点图嵌入
+
+https://mp.weixin.qq.com/s/idznSOGOp0o5N86boLo3aw
+
+使用Facebook Pytorch BigGraph从知识图谱中提取知识
 
 ## Graph Nets
 

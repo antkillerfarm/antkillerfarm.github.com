@@ -194,7 +194,11 @@ https://mp.weixin.qq.com/s/k4Ilj11wbuj5oIXLHo-5ew
 
 《视频目标分割与跟踪》最新39页综述论文
 
-# GAN参考资源+
+https://mp.weixin.qq.com/s/fxKHMVRYCR9CycifjEnArQ
+
+视频显著性目标检测
+
+# GAN参考资源
 
 https://blog.csdn.net/liuxiao214/article/category/6940697
 
@@ -207,10 +211,6 @@ IRGAN：大一统信息检索模型的博弈竞争
 https://mp.weixin.qq.com/s/4Daw-2aRmzcCMtxdvB3uYQ
 
 IRGAN：生成对抗网络在搜狗图片搜索排序中的应用
-
-https://zhuanlan.zhihu.com/p/30532830
-
-眼见已不为实，迄今最真实的GAN：Progressive Growing of GANs
 
 https://mp.weixin.qq.com/s/PkZ069S8ysY_JCQx1nzfGg
 
@@ -227,10 +227,6 @@ GAN in NLP
 https://mp.weixin.qq.com/s/7-oHa-8Q8ThcctaVOZFfew
 
 Facebook创意生成网络CAN，比GAN更有创造力
-
-https://mp.weixin.qq.com/s/aSQ2-QxbToGF0ROyjxw2yw
-
-萌物生成器：如何使用四种GAN制造猫图
 
 http://mp.weixin.qq.com/s/UkZdUcdz7h4DqcyjSbNncw
 
@@ -280,10 +276,6 @@ http://blog.csdn.net/amds123/article/details/70199708
 
 生成对抗网络GAN最近在NLP领域有哪些应用？
 
-https://mp.weixin.qq.com/s/h7lrJYQ_RqJDako8UoYK-A
-
-六种改进均未超越原版：谷歌新研究对GAN现状提出质疑
-
 https://mp.weixin.qq.com/s/dwEHorYSJuX9JapIYLHiXg
 
 BicycleGAN：图像转换多样化，大幅提升pix2pix生成图像效果
@@ -327,3 +319,55 @@ CMU提出对抗生成网络：可实现对人脸识别模型的神经网络攻�
 https://mp.weixin.qq.com/s/f5dGUJw3bv8WppPZVzqyAA
 
 反GAN传统，Petuum自动驾驶新研究提出从复杂真实图像生成简单虚拟表征以预测驾驶指令
+
+https://mp.weixin.qq.com/s/FXKWP4OlUsprSDgU7ue8CA
+
+OCGAN: 使用具有约束潜在表示的GAN的一类新颖性检测
+
+https://mp.weixin.qq.com/s/SvIC6DXUKH93jU9R-7fcyw
+
+CNN对抗补丁之谜
+
+https://mp.weixin.qq.com/s/V1XX8WWstR00m_OimMrDDw
+
+微软亚洲研究院论文解读：GAN在网络特征学习中的应用
+
+https://mp.weixin.qq.com/s/YNkx03D2Ok2xyMpPI0XXKg
+
+Petuum新研究提出形义感知型Grad-GAN：可基于虚拟游戏生成更具真实感的城市场景
+
+http://mp.weixin.qq.com/s/RlpI3hCKjcJ8VHSbBXf84g
+
+用生成对抗网络解决NLP问题：谷歌大脑提出MaskGAN
+
+https://mp.weixin.qq.com/s/gDzti2DISq_cwGbP5T7ICQ
+
+聊聊对抗自编码器
+
+https://mp.weixin.qq.com/s/nuT6Glyx0-tU7WJyoPji9w
+
+GANs正在多个层面有所突破
+
+https://mp.weixin.qq.com/s/cI4xZOw6eL0w9sz9Q2mSCw
+
+Ian Goodfellow盛赞：一个GAN生成ImageNet全部1000类物体
+
+https://mp.weixin.qq.com/s/BCA7MmYnivuGbwyjHqDQUw
+
+手把手教你实现GAN半监督学习
+
+https://zhuanlan.zhihu.com/p/32135185
+
+从一篇ICLR'2017被拒论文谈起：行走在GAN的Latent Space
+
+https://mp.weixin.qq.com/s/9N_3JkNEPdXQgFn0S7MqnA
+
+走进深度生成模型：变分自动编码器（VAE）和生成对抗网络（GAN）
+
+https://mp.weixin.qq.com/s/SPAbCZloiHp2mtGu0IDWDA
+
+DeepMind高级研究员：重新理解GAN，最新算法、技巧及应用
+
+https://mp.weixin.qq.com/s/EI57G3ph9WCrT7kudOAjvQ
+
+Petuum提出对偶运动生成对抗网络：可合成逼真的视频未来帧和流

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十四）——Normalization进阶（1）, MobileNet, 李飞飞
+title:  深度学习（十四）——Normalization进阶
 category: DL 
 ---
 
@@ -90,6 +90,92 @@ http://www.jianshu.com/p/d77b6273b990
 
 论文中文版
 
+## 再看Batch Normalization
+
+![](/images/img2/BN.jpg)
+
+从上图可以看出，**BN是对input tensor的每个通道进行mini-batch级别的Normalization。而LN则是对所有通道的input tensor进行Normalization**。
+
+BN的特点：
+
+对于batch size比较小的时候，效果非常不好，而batch size越大，那么效果则越好，因为其本质上是要通过mini-batch得到对整个数据集的无偏估计；
+
+在训练阶段和推理阶段的计算过程是不一样的；
+
+在CNN上表现较好，而不适用于RNN甚至LSTM。
+
+## Layer Normalization
+
+LN的特点：
+
+不依赖于batch size的大小，即使对于batch size为1的在线学习，也可以完美适应；
+
+训练阶段和推理阶段的计算过程完全一样。
+
+适用于RNN或LSTM，而在CNN上表现一般。
+
+### Weight Normalization
+
+WN的公式如下：
+
+$$w=\frac{g}{\|v\|}v$$
+
+**WN将权重分为模和方向两个分量，并分别进行训练。**
+
+论文：
+
+《Weight Normalization: A Simple Reparameterization to Accelerate Training of Deep Neural Networks》
+
+WN的特点：
+
+计算简单，易于理解。
+
+相比于其他两种方法，其训练起来不太稳定，非常依赖于输入数据的分布。
+
+## Cosine Normalization
+
+Normalization还能怎么做？
+
+我们再来看看神经元的经典变换$$f_w(x)=w\cdot x$$。
+
+对输入数据x的变换已经做过了，横着来是LN，纵着来是BN。
+
+对模型参数w的变换也已经做过了，就是WN。
+
+好像没啥可做的了。然而天才的研究员们盯上了中间的那个点，对，就是$$\cdot$$。
+
+$$f_w(x)=\cos \theta=\frac{w\cdot x}{\|w\|\cdot\|x\|}$$
+
+参考：
+
+https://mp.weixin.qq.com/s/EBRYlCoj9rwf0NQY0B4nhQ
+
+Layer Normalization原理及其TensorFlow实现
+
+http://mlexplained.com/2018/01/10/an-intuitive-explanation-of-why-batch-normalization-really-works-normalization-in-deep-learning-part-1/
+
+An Intuitive Explanation of Why Batch Normalization Really Works
+
+http://mlexplained.com/2018/01/13/weight-normalization-and-layer-normalization-explained-normalization-in-deep-learning-part-2/
+
+Weight Normalization and Layer Normalization Explained
+
+https://mp.weixin.qq.com/s/KnmQTKneSimuOGqGSPy58w
+
+详解深度学习中的Normalization，不只是BN（1）
+
+https://mp.weixin.qq.com/s/nSQvjBRMaBeoOjdHbyrbuw
+
+详解深度学习中的Normalization，不只是BN（2）
+
+https://mp.weixin.qq.com/s/Z119_EpLKDz1TiLXGbygJQ
+
+MIT新研究参透批归一化原理
+
+https://mp.weixin.qq.com/s/Lp2pq95woQ5-E3RemdRnyw
+
+动态层归一化（Dynamic Layer Normalization）
+
 ## IBN-Net
 
 IBN-Net是汤晓鸥小组的新作（2018.7）。
@@ -137,164 +223,6 @@ https://mp.weixin.qq.com/s/44RvXEYYc5lebsHs_ooswg
 https://mp.weixin.qq.com/s/KYGqSOftm8FWDXk_C13iCQ
 
 Conditional Batch Normalization详解
-
-# MobileNet
-
-论文：
-
-《MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications》
-
-代码：
-
-https://github.com/Zehaos/MobileNet
-
-![](/images/article/dwl_pwl.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/f3bmtbCY5BfA4v3movwLVg
-
-向手机端神经网络进发：MobileNet压缩指南
-
-https://mp.weixin.qq.com/s/mcK8M6pnHiZZRAkYVdaYGQ
-
-MobileNet在手机端上的速度评测：iPhone 8 Plus竟不如iPhone 7 Plus
-
-https://mp.weixin.qq.com/s/2XqBeq3N4mvu05S1Jo2UwA
-
-CNN模型之MobileNet
-
-https://mp.weixin.qq.com/s/fdgaDoYm2sfjqO2esv7jyA
-
-Google论文解读：轻量化卷积神经网络MobileNetV2
-
-https://mp.weixin.qq.com/s/7vFxmvRZuM2DqSYN7C88SA
-
-谷歌发布MobileNetV2：可做语义分割的下一代移动端计算机视觉架构
-
-https://mp.weixin.qq.com/s/lu0GHCpWCmogkmHRKnJ8zQ
-
-浅析两代MobileNet
-
-https://mp.weixin.qq.com/s/T6S1_cFXPEuhRAkJo2m8Ig
-
-轻量级CNN网络之MobileNetv2
-
-https://mp.weixin.qq.com/s/RRu3r_dokORhpSq3eyrPDQ
-
-为什么MobileNet及其变体如此之快？
-
-# NetVLAD
-
-NetVLAD算的上是CNN+传统算子的一个范例。
-
-论文：
-
-《NetVLAD: CNN architecture for weakly supervised place recognition》
-
-《GhostVLAD for set-based face recognition》
-
-数据集：
-
-http://places.csail.mit.edu/
-
-## VLAD
-
-Vector of Locally Aggregated Descriptors
-
-https://www.cnblogs.com/minemine/p/7364950.html
-
-场景分类(scene classification)摘录
-
-http://www.cnblogs.com/mafuqiang/p/6909556.html
-
-图像检索——VLAD
-
-## 参考
-
-https://www.oukohou.wang/2018/11/27/NetVLAD/
-
-论文阅读-NetVLAD
-
-https://www.oukohou.wang/2018/12/26/GhostVLAD/
-
-论文阅读-GhostVLAD
-
-https://mp.weixin.qq.com/s/cfUl0Eym0mu7rSJJL7Zt1A
-
-基于深度学习的视觉实例搜索研究进展
-
-https://zhuanlan.zhihu.com/p/25013378
-
-深度纹理编码网络 (Deep TEN: Texture Encoding Network)
-
-https://blog.csdn.net/LiGuang923/article/details/85416407
-
-图像检索与降维（一）：VLAD
-
-https://blog.csdn.net/LiGuang923/article/details/85470289
-
-图像检索与降维（二）：NetVLAD
-
-# 李飞飞
-
-## AI大佬
-
-李飞飞是吴恩达之后的华裔AI新大佬。巧合的是，他们都是斯坦福AP+AI lab的主任，只不过吴是李的前任而已。
-
-**李飞飞（Fei-Fei Li）**，1976年生，成都人，16岁移民美国。普林斯顿大学本科（1995～1999）+加州理工学院博士（2001～2005）。先后执教于UIUC、普林斯顿、斯坦福等学校。
-
-个人主页：
-
-http://vision.stanford.edu/feifeili/
-
-她的老公Silvio Savarese，也是斯坦福的AP。
-
-## 大佬的门徒
-
-比如可爱的妹子**Serena Yeung**。这个妹子是斯坦福的本硕博。出身不详，但从姓名的英文拼法来看，应该是美国土生的华裔。Yeung是杨、阳、羊等姓的传统英文拼法，但显然不是大陆推行的拼音拼法。（可以对比的是Fei-Fei Li和Bruce Lee，对于同一个姓的不同拼法。）
-
-个人主页：
-
-http://ai.stanford.edu/~syyeung/
-
-还有当红的“辣子鸡”：**Andrej Karpathy**，多伦多大学本科（2009）+英属不列颠哥伦比亚大学硕士（2011）+斯坦福博士（2015）。现任特斯拉AI总监。
-
-吐槽一下：英属不列颠哥伦比亚大学其实是加拿大的一所大学。
-
-个人主页：
-
-http://cs.stanford.edu/people/karpathy/
-
-Andrej Karpathy建了一个检索arxiv的网站，主要搜集了近3年来的ML/DL领域的论文。网址：
-
-http://www.arxiv-sanity.com/
-
-**李佳（Jia Li）**，李飞飞的开山大弟子，追随她从UIUC、普林斯顿到斯坦福。目前又追随其到Google。大约是知道自己的名字是个大路货，她的笔名叫做Li-Jia Li。
-
-个人主页：
-
-http://vision.stanford.edu/lijiali/
-
-## 学神
-
-应该说李飞飞和吴恩达都是万里挑一的超卓人物，但是和学神还是有所差距。下面是两个80后的华裔学神，他们都已经是正教授了：
-
-**尹希**，1983年生，哈佛大学物理系教授。
-
-**张锋**，1982年生，MIT教授，生物学家。
-
-这两个人都是有机会挑战诺奖的人，而李和吴暂时还没有这个可能性。
-
-## 网红
-
-这里收录了一些非李飞飞门下的AI网红。
-
-**Zachary Chase Lipton**，1985年生，哥伦比亚大学本科+UCSD博士，CMU的AP。他的另一身份——Jazz歌手，可比他的学术成就知名多了。
-
-个人主页：
-
-http://zacklipton.com/
 
 # fine-tuning
 

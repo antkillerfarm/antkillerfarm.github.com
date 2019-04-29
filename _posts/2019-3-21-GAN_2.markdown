@@ -1,12 +1,42 @@
 ---
 layout: post
-title:  GAN（二）——GAN进阶, DCGAN, WGAN-GP, CGAN
+title:  GAN（二）——GAN进阶, DCGAN, WGAN-GP
 category: GAN & VAE 
 ---
 
 # 概况
 
-## 参考（续）
+## WGAN（续）
+
+论文：
+
+《Wasserstein GAN》
+
+此外，还有使用最小二乘代替JS散度的GAN——LSGAN。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/25071913
+
+令人拍案叫绝的Wasserstein GAN
+
+https://zhuanlan.zhihu.com/p/25204020
+
+条条大路通罗马LS-GAN：把GAN建立在Lipschitz密度上
+
+## 其他细节
+
+1.GAN的目的是在高维非凸的参数空间中找到纳什均衡点，GAN的纳什均衡点是一个鞍点。而SGD只会找到局部极小值，所以GAN中的优化器不常用SGD。
+
+## 参考
+
+https://mp.weixin.qq.com/s/xa3F3kCprE6DEQclas4umg
+
+GAN的数学原理
+
+http://www.jianshu.com/p/e2d2d7cbbe49
+
+50行代码实现GAN
 
 https://mp.weixin.qq.com/s/pgWysIGObceGVrxs85kyew
 
@@ -318,26 +348,12 @@ weight clipping对于超出limit的值，采用了简单粗暴clipping方式。�
 
 Lipschitz约束只关心所有的梯度都小于C，但C的值是多少，其实并不care。gradient penalty虽然并不能把所有值都约束在limit之内，但是梯度总归不会是无穷大，因此还是满足Lipschitz约束的。
 
-# CGAN
+参考：
 
-论文：
+https://mp.weixin.qq.com/s/aSQ2-QxbToGF0ROyjxw2yw
 
-《Conditional Generative Adversarial Nets》
+萌物生成器：如何使用四种GAN制造猫图
 
-GAN不仅可用于无监督学习，也可用于有监督学习。Conditional GAN中的Condition实际上就是监督学习中的类别信息。
+https://mp.weixin.qq.com/s/h7lrJYQ_RqJDako8UoYK-A
 
-GAN首先是个生成模型，类别信息对于GAN的意义在于：我不仅可以生成和数据集中样本类似的fake data，而且还可以指定它的类别。
-
-类别信息和随机噪声的融合，可以采用组合编码（combined embedding）的方式，也可以采用hadamard product之类的互相关操作。
-
-从数学角度看，GAN拟合的是$$p(data)$$，而CGAN拟合的是条件概率$$p(data \mid c)$$。
-
-![](/images/img3/CGAN.png)
-
-上图展示了监督学习（图左二）、GAN（图左三）和CGAN（图左四）的效果：
-
-1.监督学习一般采用MSE loss，它学习到的往往是若干训练图片的平均值，所以生成的图片比较模糊。
-
-2.GAN生成的图片细节较多，但是只保留了训练数据的语义信息，而忽略了具体内容。这里的语义信息，指的是高层级的抽象，比如都是狗图片（语义相同），内容却可以千差万别。
-
-3.CGAN较好的解决了监督学习和GAN的结合问题，即保留了语义，也保留了内容。
+六种改进均未超越原版：谷歌新研究对GAN现状提出质疑

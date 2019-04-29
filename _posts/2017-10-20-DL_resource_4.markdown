@@ -192,6 +192,10 @@ https://mp.weixin.qq.com/s/_4QG0dWhh784lF0n1wymcw
 
 数据竞赛Top解决方案开源整理
 
+https://mp.weixin.qq.com/s/bA2jUxLhurm2vRTxX0Inpw
+
+超长文详解作业帮产品逻辑和技术原理
+
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA

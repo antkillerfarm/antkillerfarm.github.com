@@ -192,6 +192,28 @@ https://mp.weixin.qq.com/s/cGKsZYxrVP7hVnv7Jli9Zg
 
 MIT课程全面解读2019深度学习最前沿
 
+# GAN参考资源+
+
+https://mp.weixin.qq.com/s/M-YeUqvcSVHj_MbCS_c-6Q
+
+无平行文本照样破解密码，CipherGAN有望提升机器翻译水平
+
+https://mp.weixin.qq.com/s/uJEGXNvBVJfsxYJUQCz4DQ
+
+DA-GAN技术：计算机帮你创造奇妙“新物种”
+
+https://mp.weixin.qq.com/s/b8g_wNqi4dD5x9whj9ZN4A
+
+争议、流派，有关GAN的一切：Ian Goodfellow Q&A
+
+https://mp.weixin.qq.com/s/9N-eOyRseMc6zVH1_VBE4w
+
+斯坦福联合谷歌使用图卷积和GAN从场景图中生成图像
+
+https://mp.weixin.qq.com/s/V8v9eeP4HFH-TfIKUio6Iw
+
+上交大推出新型无监督生成模型算法CoT，性能比GAN稳定！
+
 # LSTM进阶
 
 ## 《Long short-term memory》

@@ -64,9 +64,13 @@ https://mp.weixin.qq.com/s/wTwjbripELzqdCjs64Dzzw
 
 ## 参考
 
-https://mp.weixin.qq.com/s/GO2ePhc64aKUEayF2o51Mg
+https://github.com/hibayesian/awesome-automl-papers
 
 自动机器学习（auto machine learning）相关资源列表
+
+https://github.com/guan-yuan/awesome-AutoML-and-Lightweight-Models
+
+一份高质量AutoML工作和轻量级模型的列表，包括神经结构搜索，轻量级结构，模型压缩和加速，超参数优化，自动特征工程。
 
 https://mp.weixin.qq.com/s/Ia-8qFLAyY65Nai5PGAw0w
 

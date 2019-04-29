@@ -1,78 +1,74 @@
 ---
 layout: post
-title:  GAN（四）——参考资源
+title:  GAN（四）——StarGAN, 参考资源
 category: GAN & VAE 
 ---
 
+# CycleGAN（续）
+
+参考：
+
+https://zhuanlan.zhihu.com/p/28342644
+
+CycleGAN的原理与实验详解
+
+https://mp.weixin.qq.com/s/7GHBH79kWIpEBLYX-VEd7A
+
+CycleGAN：图片风格，想换就换
+
+https://mp.weixin.qq.com/s/sxa0BfXtylHXzjq0YBn-Kg
+
+伯克利图像迁移cycleGAN，猫狗互换效果感人
+
+https://mp.weixin.qq.com/s/tzPCU1bxQ7NWtQ7o2PjF0g
+
+BAIR提出MC-GAN，使用GAN实现字体风格迁移
+
+https://mp.weixin.qq.com/s/A2VhfO3CkyQGCs5GqBWzOg
+
+实景照片秒变新海诚风格漫画：清华大学提出CartoonGAN
+
+https://mp.weixin.qq.com/s/rt4uuqh8IrZTjsYXEZvxKQ
+
+阿里提出全新风格化自编码GAN，图像生成更逼真！
+
+https://mp.weixin.qq.com/s/3lrCRiq5zuX9yWxiQRQE9A
+
+CartoonGAN不靠手绘，也能成为漫画达人
+
+https://mp.weixin.qq.com/s/i3lNcbOblgVKUTBtwKIFwg
+
+AI秒造全球房源：StyleGAN快速生成假房子，连图说都配好了！
+
+# StarGAN
+
+论文：
+
+《StarGAN: Unified Generative Adversarial Networksfor Multi-Domain Image-to-Image Translation》
+
+![](/images/img3/StarGAN.png)
+
+CycleGAN的局限在于：对于两个Domain之间的变换，需要两个G网络。可以想象，当Domain的数量上升时，所需G网络的个数将呈指数级增长。如上图左半部分所示。
+
+StarGAN给出的办法是：所有的Domain共享一个G网络。如上图右半部分所示。
+
+具体的操作如下图所示：
+
+![](/images/img3/StarGAN_2.png)
+
+1.
+
+![](/images/img3/StarGAN_3.png)
+
+
+
+参考：
+
+https://mp.weixin.qq.com/s/rPDvLnG4MBDRUMCWs2fjcQ
+
+最新StarGAN对抗生成网络实现多领域图像变换
+
 # 参考资源
-
-https://mp.weixin.qq.com/s/SvIC6DXUKH93jU9R-7fcyw
-
-CNN对抗补丁之谜
-
-https://mp.weixin.qq.com/s/V1XX8WWstR00m_OimMrDDw
-
-微软亚洲研究院论文解读：GAN在网络特征学习中的应用
-
-https://mp.weixin.qq.com/s/YNkx03D2Ok2xyMpPI0XXKg
-
-Petuum新研究提出形义感知型Grad-GAN：可基于虚拟游戏生成更具真实感的城市场景
-
-http://mp.weixin.qq.com/s/RlpI3hCKjcJ8VHSbBXf84g
-
-用生成对抗网络解决NLP问题：谷歌大脑提出MaskGAN
-
-https://mp.weixin.qq.com/s/gDzti2DISq_cwGbP5T7ICQ
-
-聊聊对抗自编码器
-
-https://mp.weixin.qq.com/s/nuT6Glyx0-tU7WJyoPji9w
-
-GANs正在多个层面有所突破
-
-https://mp.weixin.qq.com/s/cI4xZOw6eL0w9sz9Q2mSCw
-
-Ian Goodfellow盛赞：一个GAN生成ImageNet全部1000类物体
-
-https://mp.weixin.qq.com/s/BCA7MmYnivuGbwyjHqDQUw
-
-手把手教你实现GAN半监督学习
-
-https://zhuanlan.zhihu.com/p/32135185
-
-从一篇ICLR'2017被拒论文谈起：行走在GAN的Latent Space
-
-https://mp.weixin.qq.com/s/9N_3JkNEPdXQgFn0S7MqnA
-
-走进深度生成模型：变分自动编码器（VAE）和生成对抗网络（GAN）
-
-https://mp.weixin.qq.com/s/SPAbCZloiHp2mtGu0IDWDA
-
-DeepMind高级研究员：重新理解GAN，最新算法、技巧及应用
-
-https://mp.weixin.qq.com/s/EI57G3ph9WCrT7kudOAjvQ
-
-Petuum提出对偶运动生成对抗网络：可合成逼真的视频未来帧和流
-
-https://mp.weixin.qq.com/s/M-YeUqvcSVHj_MbCS_c-6Q
-
-无平行文本照样破解密码，CipherGAN有望提升机器翻译水平
-
-https://mp.weixin.qq.com/s/uJEGXNvBVJfsxYJUQCz4DQ
-
-DA-GAN技术：计算机帮你创造奇妙“新物种”
-
-https://mp.weixin.qq.com/s/b8g_wNqi4dD5x9whj9ZN4A
-
-争议、流派，有关GAN的一切：Ian Goodfellow Q&A
-
-https://mp.weixin.qq.com/s/9N-eOyRseMc6zVH1_VBE4w
-
-斯坦福联合谷歌使用图卷积和GAN从场景图中生成图像
-
-https://mp.weixin.qq.com/s/V8v9eeP4HFH-TfIKUio6Iw
-
-上交大推出新型无监督生成模型算法CoT，性能比GAN稳定！
 
 https://mp.weixin.qq.com/s/Gjb-PkMqUIIV81Na6Za_BQ
 

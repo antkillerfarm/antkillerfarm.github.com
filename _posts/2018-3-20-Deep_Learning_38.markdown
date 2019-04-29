@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十八）——多任务学习, RNN进阶, 深度推荐系统进阶, Multi-agent
+title:  深度学习（三十八）——多任务学习, RNN进阶, Multi-agent
 category: DL 
 ---
 
@@ -213,64 +213,6 @@ https://mp.weixin.qq.com/s/vIL-bKHZK-6eXZYWxrc9vw
 https://mp.weixin.qq.com/s/GGK9T0DeyIdD5ahHy5uvfg
 
 LightRNN：存储和计算高效的RNN
-
-# 深度推荐系统进阶
-
-https://mp.weixin.qq.com/s/mcf3Aoub6VbNwtA-Izsdbg
-
-YouTube深度学习推荐系统的十大工程问题
-
-https://mp.weixin.qq.com/s/A7Qg1gd66aksA6npJl3dNQ
-
-深度学习在搜索业务中的探索与实践
-
-https://mp.weixin.qq.com/s/wjgoH6-eJQDL1KUQD3aQUQ
-
-大众点评搜索基于知识图谱的深度学习排序实践
-
-https://mp.weixin.qq.com/s/Dmkc7X-GgRrdNVQXz6Mwgg
-
-镶嵌在互联网技术上的明珠：漫谈深度学习时代点击率预估技术进展
-
-https://mp.weixin.qq.com/s/-EDxUwAKdXnmUKeLJTiAUw
-
-解构阿里深度兴趣网络（DIN）：如何将注意力机制引入推荐系统？
-
-https://mp.weixin.qq.com/s/lnCe_3ssP6IEOHEX-N4vyg
-
-达观数据于敬：个性化推荐系统实践应用
-
-https://mp.weixin.qq.com/s/CYW-WMl94FT2-fqsxShNDw
-
-读者喜欢看什么文章？腾讯微信融合时间过程与内容特征寻找答案
-
-https://mp.weixin.qq.com/s/4k106lCBns-iEg3gy5mcbg
-
-WSDM 2019教程—李航、何向南等，深度学习匹配在搜索和推荐中的应用
-
-https://mp.weixin.qq.com/s/SYFShtmBIgEW8_cEYec0kw
-
-清华张敏教授：个性化推荐研究进展（可解释性、鲁棒性和公平性）
-
-https://zhuanlan.zhihu.com/p/57056588
-
-一图胜千言: 解读阿里的Deep Image CTR Model
-
-https://mp.weixin.qq.com/s/98X2agJlZcCH6IdZqf9m0A
-
-深度学习在美团配送ETA预估中的探索与实践
-
-https://mp.weixin.qq.com/s/J0j9NwSNhxab6bXqBBzaUw
-
-进击的下一代推荐系统：多目标学习如何让知乎用户互动率提升100%？
-
-https://mp.weixin.qq.com/s/BInWMRt-fVcRbY8aCiPnpA
-
-淘宝总知道你要什么？万字讲述智能内容生成实践
-
-https://mp.weixin.qq.com/s/E6EH6aJjzTwN2UZf_4nwoA
-
-从FFM到DeepFFM，推荐排序模型到底哪家强？
 
 # Multi-agent
 

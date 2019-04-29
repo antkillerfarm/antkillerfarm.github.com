@@ -1,228 +1,10 @@
 ---
 layout: post
-title:  深度学习（三十七）——人脸检测/识别（2）
+title:  深度学习（三十七）——人脸检测/识别（3）
 category: DL 
 ---
 
 # 人脸检测/识别
-
-## 人脸识别
-
-人脸检测是从一张图片中，识别出人脸，这和通常的目标检测没有太大的差别。**而人脸识别，则是精确到具体的人。**
-
-人脸识别通常的做法是：
-
-1.使用人脸检测，得到人脸区域的图像。
-
-2.提取人脸特征。一般采用CNN+FC+loss的结构。其中，CNN+FC用于提取特征，而loss仅用于训练阶段。在推理阶段，我们使用CNN+FC得到人脸的特征向量即可。
-
-3.特征的对比。比较两个特征向量的相似度（可以使用LMS或者cos相似度）。超过阈值，即认为是同一张脸。
-
-## OHEM
-
-论文：
-
-《Training Region-based Object Detectors with Online Hard Example Mining》
-
-代码：
-
-https://github.com/abhi2610/ohem
-
-参考：
-
-https://blog.csdn.net/zimenglan_sysu/article/details/51318058
-
-论文笔记
-
-https://blog.csdn.net/Wayne2019/article/details/78945099
-
-OHEM，Batch Hard（识别乱入），Focal Loss
-
-https://blog.csdn.net/Z5337209/article/details/72838049
-
-Faster R-CNN 深入理解 && 改进方法汇总
-
-https://zhuanlan.zhihu.com/p/28202204
-
-困难样本挖掘
-
-https://zhuanlan.zhihu.com/p/34179420
-
-目标检测入门（二）：模型的评测与训练技巧
-
-## FaceNet
-
-论文：
-
-《FaceNet: A Unified Embedding for Face Recognition and Clustering》
-
-https://blog.csdn.net/stdcoutzyx/article/details/46687471
-
-FaceNet--Google的人脸识别
-
-## OpenFace
-
-OpenFace是一款开源的人脸识别软件。它的原理基于CVPR 2015年的论文：FaceNet。由于采用了深度学习技术，OpenFace对人脸识别的准确率，大大超过了OpenCV。
-
-OpenFace是用Python和Torch编写的。
-
-官网：
-
-https://cmusatyalab.github.io/openface/
-
-参考：
-
-http://www.cnblogs.com/pandaroll/p/6590339.html
-
-开源人脸识别openface
-
-https://mp.weixin.qq.com/s/RSCrkeIToeNKrFvMITxzDg
-
-通过OpenFace来理解人脸识别
-
-## SeetaFace
-
-SeetaFace人脸识别引擎由中科院计算所山世光研究员带领的人脸识别研究组研发。代码基于C++实现，且不依赖于任何第三方的库函数，开源协议为BSD-2，可供学术界和工业界免费使用。
-
-代码：
-
-https://github.com/seetaface
-
-论文：
-
-《Coarse-to-Fine Auto-Encoder Networks (CFAN) for Real-Time Face Alignment》
-
-参考：
-
-https://zhuanlan.zhihu.com/p/22451474
-
-SeetaFace开源人脸识别引擎介绍
-
-http://www.cnblogs.com/nenya33/p/6801045.html
-
-CFAN
-
-## Siamese network
-
-https://blog.csdn.net/shenziheng1/article/details/81213668
-
-Siamese Network（原理篇）
-
-https://www.jianshu.com/p/92d7f6eaacf5
-
-Siamese network孪生神经网络--一个简单神奇的结构
-
-https://blog.csdn.net/sxf1061926959/article/details/54836696
-
-Siamese Network理解
-
-https://vra.github.io/2016/12/13/siamese-caffe/
-
-Caffe中的Siamese网络
-
-https://mp.weixin.qq.com/s/rPC542OcO8B4bjxn7JRFrw
-
-深度学习网络只能有一个输入吗
-
-## S3FD
-
-https://mp.weixin.qq.com/s/MyA8_yt4YCkFl67AyhpZow
-
-尺度不变人脸检测器（S3FD-Single Shot Scale-invariant Face Detector）
-
-https://github.com/sfzhang15/SFD
-
-S3FD: Single Shot Scale-invariant Face Detector
-
-## 人脸年龄识别
-
-https://zhuanlan.zhihu.com/p/53229759
-
-年龄估计技术综述
-
-https://www.openu.ac.il/home/hassner/projects/cnn_agegender/
-
-Age and Gender Classification using Convolutional Neural Networks
-
-https://mp.weixin.qq.com/s/0hVPateb108B1KpVpYXK0A
-
-人工智能：长相越“娘”颜值越高
-
-https://mp.weixin.qq.com/s/YlrWHDPIPzN4dQO2vo4DjA
-
-人脸颜值研究综述
-
-https://www.oukohou.wang/2019/01/30/face-aging_using_GAN/
-
-论文阅读-人脸老化：Generative Adversarial Style Transfer Networks for Face Aging
-
-https://mp.weixin.qq.com/s/s2SFQgUOZLV-f6auqymVOg
-
-基于Caffe的年龄&性别识别
-
-## 活体检测
-
-https://mp.weixin.qq.com/s/zOnmKSnQctnyx7pKXX-tpQ
-
-活体检测新文解读：利用多帧人脸来预测更精确的深度
-
-https://mp.weixin.qq.com/s?__biz=MzU4MjQ3MDkwNA==&mid=2247486721&idx=1&sn=f0e5b2b0165e391c0d5adc4ce253f2f6
-
-人脸识别中的活体检测算法综述
-
-https://mp.weixin.qq.com/s/A1pbiU5PA9Owe69lGX9afw
-
-活体识别告诉你为什么照片无法破解人脸系统
-
-https://mp.weixin.qq.com/s/sPnoZyCkAhcCs_GtA79DrA
-
-单目可见光静默活体检测Binary or Auxiliary Supervision论文解读
-
-https://mp.weixin.qq.com/s/Vi2ypwO3uCD2lQZOwDFqTA
-
-基于rPPG的人脸活体检测综述
-
-## DeepFace
-
-《DeepFace: Closing the Gap to Human-Level Performance in Face Verification》
-
-DeepFace先进行了两次全卷积＋一次池化，提取了低层次的边缘／纹理等特征。
-
-后接了3个Local-Conv层，这里是用Local-Conv的原因是，人脸在不同的区域存在不同的特征（眼睛／鼻子／嘴的分布位置相对固定），当不存在全局的局部特征分布时，Local-Conv更适合特征的提取。
-
-## 人脸关键点
-
-https://zhuanlan.zhihu.com/p/42968117
-
-人脸关键点检测综述
-
-https://mp.weixin.qq.com/s/CvdeV5xgUF0kStJQdRst0w
-
-从传统方法到深度学习，人脸关键点检测方法综述
-
-https://mp.weixin.qq.com/s/ZrnAqDJCLtMy_qTQ2RZT0A
-
-级联MobileNet-V2实现人脸关键点检测
-
-https://mp.weixin.qq.com/s/ymeJPUPRAGb1FltskqBs-A
-
-人脸关键点检测汇总（上）
-
-https://mp.weixin.qq.com/s/N6y-RDx7VszgCVhSiwP8jA
-
-人脸关键点检测汇总（下）
-
-https://mp.weixin.qq.com/s/D435jGsGPkCH5j-p8Zoksg
-
-遮挡、光照等因素的人脸关键点检测
-
-https://mp.weixin.qq.com/s/BV3xv8mH6K7dV1nik0X5aw
-
-PFLD：简单、快速、超高精度人脸特征点检测算法
-
-https://mp.weixin.qq.com/s/kWRW81aAMl18GIDQWqX1Ow
-
-PFLD：简单高效的实用人脸关键点检测算法
 
 ## 参考
 
@@ -393,3 +175,187 @@ https://mp.weixin.qq.com/s/IS5iAPZeUrvvyWs29O8Ukg
 https://mp.weixin.qq.com/s/DEJ0z2CahZIrhTE3VXNVvg
 
 基于注意力机制学习的人脸幻构
+
+https://mp.weixin.qq.com/s/-G94Mj-8972i2HtEcIZDpA
+
+人脸识别世界杯榜单出炉，微软百万名人识别竞赛冠军分享
+
+https://mp.weixin.qq.com/s/bqWle_188lhYO4hpCfafkQ
+
+用浏览器做人脸检测，竟然这么简单？
+
+https://mp.weixin.qq.com/s/kn9JS55wIW2cfpUv7Jm0eQ
+
+深度学习教你如何“以貌取人”！
+
+https://mp.weixin.qq.com/s/3xEDtMoe0iRQSZiN5A1FGw
+
+IPHONE X“刷脸”技术奥秘大揭底
+
+https://mp.weixin.qq.com/s/s5HL6y2P9_KqpSAQg08URw
+
+世界最大人脸对齐数据集ICCV 2017：距离解决人脸对齐已不远
+
+https://mp.weixin.qq.com/s/7AnF0uMgepchiUeqfqVbCg
+
+清华大学王生进：新智能安防：人脸识别技术与应用系统
+
+https://mp.weixin.qq.com/s/-T5k2ViPjvEoXccKt-_J3Q
+
+中科院自动化研究所提出FaceBoxes：实时、高准确率的CPU面部检测器
+
+https://www.leiphone.com/news/201707/mFuwXGvZBhoVQD5S.html
+
+一秒分辨出杨臣刚、王大治和孙楠，这个黑产居然用AI来"打码"
+
+https://mp.weixin.qq.com/s/PF7_kSnwngnJ1jeh7ebyww
+
+手把手教你用1行代码实现人脸识别
+
+http://blog.csdn.net/gitchat/article/details/78546894
+
+TensorFlow人脸识别网络与对抗网络搭建
+
+https://mp.weixin.qq.com/s/YRsVi09u3W0aQMdsR5KY4Q
+
+腾讯AI Lab提出Face R-FCN与Face CNN，刷新人脸检测与识别两大测评记录
+
+https://mp.weixin.qq.com/s/zyMIRGig-m732rvraPKxwA
+
+单样本学习：使用孪生神经网络进行人脸识别
+
+https://mp.weixin.qq.com/s/QJm7YoCYmiF0dX8uac5w4Q
+
+旷视研究院：被遮挡人脸区域检测的技术细节
+
+https://mp.weixin.qq.com/s/Fmi9RJz-bMOYBoZWt1nWag
+
+人脸注意机制网络
+
+https://mp.weixin.qq.com/s/s9H_OXX-CCakrTAQUFDm8g
+
+申省梅颜水成团队获国际非受限人脸识别竞赛IJB-A冠军，主要负责人熊霖技术分享
+
+https://mp.weixin.qq.com/s/ZFFSTFDVxFUe2KOFy8XDxw
+
+人脸识别——新的一个境界（无约束）
+
+https://mp.weixin.qq.com/s/GlS2VJdX7Y_nfBOEnUt2NQ
+
+使用Siamese神经网络进行人脸识别
+
+https://mp.weixin.qq.com/s/xDEga2tITO8rVkvXCZ62sg
+
+中国团以98%精度夺得MegaFace人脸识别冠军
+
+https://mp.weixin.qq.com/s/HVooLtr_k6fwh2N3GjMb1A
+
+新研究提出深度残差等价映射：由正脸加强侧脸识别效果
+
+https://mp.weixin.qq.com/s/9noWOZJSRAi424ZDTD1IRQ
+
+世界权威评测冠军：百度人脸检测算法PyramidBox
+
+https://www.zhihu.com/question/37060782
+
+人脸识别哪家强？不如问哪家公司吹牛逼强
+
+https://mp.weixin.qq.com/s/S_T0tYhZ1pjoIMysP0aVWA
+
+美军AI黑科技：黑暗中也能准确识别人脸，谁该为此感到紧张？
+
+https://mp.weixin.qq.com/s/GLKvzC_o6MR1ixThAVc9lQ
+
+CosFace: 面向深度人脸识别的增强边缘余弦损失函数设计
+
+https://mp.weixin.qq.com/s/AMDkkbdTQbL-2jyweVid-A
+
+摆好Pose却没管理好面部表情？腾讯优图Facelet-Bank人脸处理技术了解一下
+
+https://mp.weixin.qq.com/s/OjId_YfxkhEh4tJ1Sw-Hbw
+
+多伦多大学反人脸识别，身份欺骗成功率达99.5%
+
+https://mp.weixin.qq.com/s/tUSNk5R_zbEFz-yIx0LXYQ
+
+基于DNN的人脸识别中的反欺骗机制
+
+https://mp.weixin.qq.com/s/mjdW7xY77H03RIKuKuFmQg
+
+人脸画像合成研究的综述与对比分析
+
+https://mp.weixin.qq.com/s/Ieha-lJ_KuEnpbJha_nxJw
+
+利用人脸图片准确识别年龄：上海大学研究者提出“深度回归森林”
+
+https://mp.weixin.qq.com/s/9VTpbqwALmxr07pEfdQBCA
+
+旷视科技提出GridFace：通过学习局部单应变换实现人脸校正
+
+https://mp.weixin.qq.com/s/z726pDBhn5bML5Xho2XCig
+
+人脸对齐与跟踪如何克服遮挡、姿态变化带来的特征点跳变？
+
+https://mp.weixin.qq.com/s/qpP6AzLdgtH6NnIUl4JNpQ
+
+腾讯AI Lab提出正交深度特征分解算法：在多个跨年龄人脸识别任务中创造新记录
+
+https://mp.weixin.qq.com/s/J4_snLK7DoV5oN7GP5M_Ww
+
+新思路！商汤开源利用无标注数据大幅提高精度的人脸识别算法
+
+https://mp.weixin.qq.com/s/4xYAhNys6svltEb4cQUrXw
+
+Bi-box行人检测：‘行人遮挡’为几何？
+
+https://mp.weixin.qq.com/s/IfZ5gTZrSFqQP2cpcIxAeQ
+
+清华&商汤开源CVPR2018超高精度人脸对齐算法LAB
+
+https://mp.weixin.qq.com/s/R1hdkPTdFCo7JvOKNcEzJg
+
+DeepMind&VGG提出基于集合的人脸识别算法GhostVLAD,精度远超IJB-B数据集state-of-the-art
+
+https://mp.weixin.qq.com/s/CH46uvOshGss7O2bbxFoWQ
+
+曹杰：Rotating is Believing
+
+https://mp.weixin.qq.com/s/unoSZVPQrjMjjxSbnp1IBQ
+
+FaceBoxes—官方开源CPU实时高精度人脸检测器
+
+https://zhuanlan.zhihu.com/p/55983565
+
+中科院和京东AI研究院提出：改进SRN人脸检测算法，目前业界最强！
+
+https://mp.weixin.qq.com/s/KY11jsedOa0HHIhET83V3g
+
+目前最强性能的人脸检测算法Improved SRN
+
+https://mp.weixin.qq.com/s/Chw_gLxQHdfe0hFJGMk-3A
+
+日本东北大学改进单阶段人脸检测—兼具速度与精度优势
+
+https://mp.weixin.qq.com/s/E9Esoe4VHvMdJNTbxF-sXA
+
+ShapeNet:超实时人脸特征点检测与形状拟合开源库
+
+https://mp.weixin.qq.com/s/pmnb_WnncL12T1IZoso5DA
+
+DeepID
+
+https://mp.weixin.qq.com/s/kH3-WUX4rc2SaLJcGzVLcQ
+
+如何检测极小人脸？试试超分辨率
+
+https://github.com/ShiqiYu/libfacedetection
+
+libfacedetection算法开源
+
+https://mp.weixin.qq.com/s/-VknGwKKY14cT-lZ7sC43A
+
+人脸识别--基于深度学习以人类为中心的图像理解
+
+https://mp.weixin.qq.com/s/bAlaCWg4OEprpoZqQFQg1w
+
+百度提出PyramidBox人脸检测算法
