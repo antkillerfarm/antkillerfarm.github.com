@@ -330,6 +330,10 @@ https://mp.weixin.qq.com/s/l6xvmnLE6HfRtw6upo6yUA
 
 高效开发与高性能并存的UI框架——携程Flutter实践
 
+https://mp.weixin.qq.com/s/vcbHMtaJEkZhSgiRBST1YA
+
+移动开发这十年
+
 ## Litho
 
 Litho是Facebook推出的一套高效构建Android UI的声明式框架，主要目的是提升RecyclerView复杂列表的滑动性能和降低内存占用。
@@ -385,4 +389,3 @@ https://jersey.java.net/
 示例：
 
 https://github.com/feuyeux/jax-rs2-guide-II
-

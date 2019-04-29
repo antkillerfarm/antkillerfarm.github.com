@@ -58,6 +58,8 @@ StarGAN给出的办法是：所有的Domain共享一个G网络。如上图右半
 
 1.
 
+2.
+
 ![](/images/img3/StarGAN_3.png)
 
 

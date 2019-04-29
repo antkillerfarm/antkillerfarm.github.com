@@ -351,21 +351,3 @@ $$loss(W;x;y) = loss_D(W;x;y) + \lambda_R R(W) + \lambda_g \sum_{l=1}^{L} R_g(W_
 $$R_g(w^{(g)}) = \sum_{g=1}^{G} \lVert w^{(g)} \rVert_g = \sum_{g=1}^{G} \sum_{i=1}^{|w^{(g)}|} {(w_i^{(g)})}^2$$
 
 Group Regularization也叫做Block Regularization或Structured Regularization。
-
-# 人脸检测/识别进阶+
-
-https://mp.weixin.qq.com/s/CYZvFb7kryE-8HV3teGRzA
-
-有效遮挡检测的鲁棒人脸识别
-
-https://mp.weixin.qq.com/s/XTIl505glmfCItuiwuPLwg
-
-人脸聚类——Linkage Based Face Clustering via GCN
-
-https://mp.weixin.qq.com/s/CR4Nf_RklcXA45mswPv8Zw
-
-腾讯优图开源人脸检测算法DSFD，刷新两项数据集纪录
-
-https://zhuanlan.zhihu.com/p/62954487
-
-旷视研究院新出8000点人脸关键点，堪比电影级表情捕捉
