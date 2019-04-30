@@ -56,7 +56,7 @@ StarGAN给出的办法是：所有的Domain共享一个G网络。如上图右半
 
 ![](/images/img3/StarGAN_2.png)
 
-1.
+1.D网络除了常规的Real/Fake判别之外，还有
 
 2.
 

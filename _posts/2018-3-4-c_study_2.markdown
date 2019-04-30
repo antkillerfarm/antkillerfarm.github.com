@@ -74,10 +74,6 @@ https://code.visualstudio.com/
 
 `sudo apt install libgconf-2-4`
 
-## 2018.9
-
-VS Code也有作为IDE的用途。大概从2014年开始，就陆续有公司基于VS Code开发自己的商用IDE。早先还主要集中于前端开发领域，现在就连传统的半导体公司也开始转型VS Code了。Eclipse统治商用IDE的时代，行将结束。
-
 ## 细节
 
 ctrl+P 命令行
@@ -85,6 +81,12 @@ ctrl+P 命令行
 View--> Toggle Word Wrap 自动换行
 
 `"editor.rulers": []`：在一定数量的等宽字符后显示垂直标尺。输入多个值，显示多个标尺。
+
+格式化对齐快捷键：
+
+Windows：Shift + Alt + F
+
+Ubuntu： Ctrl + Shift + I
 
 ## 插件
 

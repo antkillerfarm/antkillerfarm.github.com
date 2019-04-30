@@ -100,7 +100,11 @@ https://nodejs.org/
 
 安装方法：
 
-`sudo apt-get install nodejs-dev nodejs-legacy npm`
+`sudo apt install nodejs-dev nodejs-legacy npm`
+
+执行：
+
+`node hello.js`
 
 教程：
 

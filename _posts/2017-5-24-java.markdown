@@ -276,6 +276,12 @@ Step3还添加了fadeOutLeft动画，为了在两种动画之间切换，引入�
 
 2.`<a href="javascript:void(0);" onclick="function()"></a>`或者`<a href="javascript:;" onclick="function()"></a>`表示这个链接不跳转，而执行一段js脚本。
 
+#### import js的时机
+
+和C/Java/Python等不同，js的加载并不一定需要在html的开头，而可以在任意位置。有些特效甚至必须在布局元素之后，再加载。
+
+比如D3的绘图代码，必须出现在需要绘图的div之后。否则d3.select之类的操作选择不到任何对象。
+
 ## JS特效资料
 
 https://github.com/wagerfield/flat-surface-shader
@@ -292,6 +298,20 @@ Monaco Editor是MS开源的一个在线代码编辑工具，可提供类似VS co
 官网：
 
 https://microsoft.github.io/monaco-editor/
+
+## D3.js
+
+D3.js是一个数据可视化的库。
+
+官网：
+
+https://d3js.org/
+
+参考：
+
+https://www.cnblogs.com/fastmover/p/7779660.html
+
+D3.js从入门到“放弃”指南
 
 ## 参考
 
