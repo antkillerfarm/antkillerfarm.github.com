@@ -339,3 +339,41 @@ Tensor Core究竟有多快？全面对比英伟达Tesla V100/P100的RNN加速能
 https://mp.weixin.qq.com/s/JYTqJDlGw6Q2gNLaYIGLcQ
 
 特斯拉芯片究竟怎么样？
+
+# 数字成像+
+
+https://mp.weixin.qq.com/s/m_EKOLjWjTyx4RBxsAAAGg
+
+4x4阵列摄/“深感”摄
+
+https://mp.weixin.qq.com/s/dX_thGA2V_-AMjDGTUgWrg
+
+计算摄影技术：身怀绝技的扫地僧
+
+https://mp.weixin.qq.com/s/ZSczU1_J_exb2oreiHtK3g
+
+夜景拍照之sensor篇
+
+https://mp.weixin.qq.com/s/eyIeLaBZ0f_EsxglsUuH8A
+
+深度学习自动构图研究报告
+
+https://mp.weixin.qq.com/s/k2JLF_aM3j68GjEByCZF-g
+
+模拟/数字增益对图像噪声的影响
+
+https://mp.weixin.qq.com/s/QmEQuEk2B_fAleewTuNClg
+
+3D成像技术和CMOS传感器的发展方向简析
+
+https://mp.weixin.qq.com/s/R7wnyHT6M-KF3ZMz0bPrVg
+
+这台相机没镜头！美国教授新发明，一块玻璃可成像，拍照给计算机看
+
+https://mp.weixin.qq.com/s/j970Qp8Cz2fpbImujkS2Xg
+
+自动驾驶应用中的LED flicker问题
+
+https://mp.weixin.qq.com/s/Yy-XEyM0YGTRFUX2uWgNKw
+
+夜景拍照之算法篇

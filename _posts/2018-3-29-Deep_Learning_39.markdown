@@ -198,6 +198,14 @@ https://mp.weixin.qq.com/s/fxKHMVRYCR9CycifjEnArQ
 
 视频显著性目标检测
 
+https://mp.weixin.qq.com/s/oSoCIAEF78iKIxLxj2H1mA
+
+基于光流的视频目标检测系列文章解读
+
+https://mp.weixin.qq.com/s/1tcoGGbJnnWARu-2wefWdQ
+
+不同视角构造cycle-consistency，降低视频标注成本
+
 # GAN参考资源
 
 https://blog.csdn.net/liuxiao214/article/category/6940697
@@ -275,10 +283,6 @@ GAN眼中的图像翻译
 http://blog.csdn.net/amds123/article/details/70199708
 
 生成对抗网络GAN最近在NLP领域有哪些应用？
-
-https://mp.weixin.qq.com/s/dwEHorYSJuX9JapIYLHiXg
-
-BicycleGAN：图像转换多样化，大幅提升pix2pix生成图像效果
 
 https://mp.weixin.qq.com/s/W4WVHMIMKPNvt5lcCe1v4g
 
@@ -359,10 +363,6 @@ https://mp.weixin.qq.com/s/BCA7MmYnivuGbwyjHqDQUw
 https://zhuanlan.zhihu.com/p/32135185
 
 从一篇ICLR'2017被拒论文谈起：行走在GAN的Latent Space
-
-https://mp.weixin.qq.com/s/9N_3JkNEPdXQgFn0S7MqnA
-
-走进深度生成模型：变分自动编码器（VAE）和生成对抗网络（GAN）
 
 https://mp.weixin.qq.com/s/SPAbCZloiHp2mtGu0IDWDA
 

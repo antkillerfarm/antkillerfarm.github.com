@@ -293,3 +293,21 @@ https://www.jianshu.com/p/193f0089b7a2
 https://mp.weixin.qq.com/s/vwhetMpQllczILptBNcoWg
 
 基于快速GeoHash，如何实现海量商品与商圈的高效匹配？
+
+# 知识图谱参考资源+
+
+https://mp.weixin.qq.com/s/7LFkOzkD1-PsNNAr5DAETg
+
+TechKG：一个面向中文学术领域的大型知识图谱
+
+https://mp.weixin.qq.com/s/QNTJngwEDtxufEpIGTngCw
+
+事理图谱，下一代知识图谱
+
+https://mp.weixin.qq.com/s/0bTmzKiC7WDbLRcxfAAGqw
+
+提取计数量词丰富知识库
+
+https://mp.weixin.qq.com/s/Pqm5uhC9iMLuPk6mDCtPuQ
+
+动态知识图谱补全论文合集

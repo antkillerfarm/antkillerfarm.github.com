@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  量子计算, 遗传算法 & 进化算法, PaddlePaddle, X-Deep Learning
+title:  量子计算, 遗传算法 & 进化算法, PaddlePaddle, X-Deep Learning, 安全
 category: resource 
 ---
 
@@ -275,3 +275,55 @@ TensorFlow、MXNet、PyTorch等框架大都是面向图像、语音等领域的�
 https://mp.weixin.qq.com/s/kdCk_twY_czQo58y3x_yyA
 
 阿里深度学习框架开源了！无缝对接TensorFlow、PyTorch
+
+# TVM
+
+https://mp.weixin.qq.com/s/irvBbPKENiZX9G_6wh5c-Q
+
+陈天奇等人提出TVM：深度学习自动优化代码生成器
+
+https://mp.weixin.qq.com/s/28n8g_epHsYB0I9GVc_lww
+
+陈天奇团队TVM重磅更新：直接在浏览器使用GPU
+
+https://mp.weixin.qq.com/s/7JGLm-hkCZBNDLA98qvWNA
+
+自动生成硬件优化内核：陈天奇等人发布深度学习编译器TVM
+
+https://mp.weixin.qq.com/s/YVIvdMznb3oatIXqD5a5_A
+
+陈天奇等人提出AutoTVM：让AI来编译优化AI系统底层算子
+
+https://mp.weixin.qq.com/s/HquT_mKm7x_rbDGz4Voqpw
+
+阿里巴巴最新实践：TVM+TensorFlow提高神经机器翻译性能
+
+# 安全
+
+https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126
+
+前端安全系列之一：如何防止XSS攻击？
+
+http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
+
+理解OAuth 2.0
+
+https://www.cnblogs.com/linianhui/category/929878.html
+
+一个认证授权方面的专栏
+
+https://mp.weixin.qq.com/s/OLg_wocXJz7VGDabTtxdWQ
+
+Web登录很简单？开玩笑！
+
+https://mp.weixin.qq.com/s/agS2-wu6HGO__QfbIt7Esw
+
+数字签名是什么？
+
+https://mp.weixin.qq.com/s/YNMw8u7O6u7Bc4-mnrwRXg
+
+老听别人说加密算法，现在给你个机会深入了解下
+
+http://www.xfyun.cn/share/?p=2626
+
+开发者常犯的十大加密错误

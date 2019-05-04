@@ -321,10 +321,6 @@ https://mp.weixin.qq.com/s/XUYJub0559wwQ9H1wA_SAg
 
 机器学习时代的哈希算法，将如何更高效地索引数据
 
-https://mp.weixin.qq.com/s/YVIvdMznb3oatIXqD5a5_A
-
-陈天奇等人提出AutoTVM：让AI来编译优化AI系统底层算子
-
 https://mp.weixin.qq.com/s/vFBlFAQLvDZP7IvwKoaPhA
 
 无问西东，只问哈希

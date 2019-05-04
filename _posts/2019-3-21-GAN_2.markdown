@@ -1,12 +1,32 @@
 ---
 layout: post
-title:  GAN（二）——GAN进阶, DCGAN, WGAN-GP
+title:  GAN（二）——GAN进阶, GAN的评估指标
 category: GAN & VAE 
 ---
 
-# 概况
+# 概况（续）
 
-## WGAN（续）
+## WGAN
+
+KL散度和JS散度由于不是距离，数学特性并不够好。
+
+![](/images/img3/GAN_4.png)
+
+如上图所示，从左到右，$$P_G$$和$$P_{data}$$的分布是越来越接近，然而前两个的JS散度居然是一样的。
+
+究其原因在于：
+
+1.对于两个没有交集的分布，它们的JS散度为$$\log 2$$。然而没有交集，并不意味着在空间中距离遥远。
+
+2.采样总是有限的，即便是有交集的分布，其采样也未必有交集。
+
+显然，**在这种情况下，JS散度是没有区分度的，梯度也就不存在了。**
+
+因此，Martín Arjovsky于2017年1月，提出了Wasserstein GAN。
+
+其中的一项改进就是使用Wasserstein距离替代KL散度和JS散度。Wasserstein距离的定义参看《机器学习（二十七）》。
+
+WGAN极大程度的改善了GAN训练困难的问题，成为当前GAN研究的主流。
 
 论文：
 
@@ -270,6 +290,10 @@ https://mp.weixin.qq.com/s/NPUJ89nddF1WHfFv2nn-Hg
 
 GANs有嘻哈：一次学完10个GANs明星模型
 
+http://www.gwylab.com/pdf/生成模型-生成对抗网络.pdf
+
+这篇中文综述写的很好
+
 ## GAN的理论解释
 
 顾险峰教授对GAN提出了自己的理论解释。
@@ -298,9 +322,15 @@ https://mp.weixin.qq.com/s/ecqPzcSa75U9n4BcvnNJ_Q
 
 GAN模式崩溃的理论解释
 
-## GAN的评估指标
+# GAN的评估指标
 
 尽管可用的GAN模型非常多，但对它们的评估仍然主要是定性评估，通常需要借助人工检验生成图像的视觉保真度来进行。此类评估非常耗时，且主观性较强、具备一定误导性。鉴于定性评估的内在缺陷，恰当的定量评估指标对于GAN的发展和更好模型的设计至关重要。
+
+论文：
+
+《An empirical study on evaluation metrics of generative adversarial networks》
+
+![](/images/img3/GAN_evaluation.png)
 
 参考：
 
@@ -308,52 +338,10 @@ https://mp.weixin.qq.com/s/EPwsQ_005CYNlCK_82SYWQ
 
 六种GAN评估指标的综合评估实验，迈向定量评估GAN的重要一步
 
-# DCGAN
+https://mp.weixin.qq.com/s/WTvJjiF8fkXWKW7rI9Uvug
 
-论文：
+全面解析Inception Score原理及其局限性
 
-《Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks》
+https://zhuanlan.zhihu.com/p/54213305
 
-![](/images/img2/DCGAN.png)
-
-DCGAN的改进主要是：
-
-1.使用步长卷积代替上采样层，卷积在提取图像特征上具有很好的作用，并且使用卷积代替全连接层。
-
-2.上图是G网络的结构图，而D网络和G网络的结构基本是对称的。
-
-3.在判别器中使用leakrelu激活函数，而不是RELU，防止梯度稀疏，生成器中仍然采用relu，但是输出层采用tanh。
-
-参考：
-
-https://mp.weixin.qq.com/s/Dz5c32SnM8-Pdjb9oWxZ_Q
-
-想实现DCGAN？从制作一张门票谈起！
-
-https://mp.weixin.qq.com/s/ouLWl623r_YaZdIdpqSWcw
-
-深度卷积对抗生成网络(DCGAN)实战
-
-# WGAN-GP
-
-论文：
-
-《Improved Training of Wasserstein GANs》
-
-![](/images/img2/WGAN_GP.png)
-
-在某些情况下，weight clipping会导致weight集中在两端，这样整个网络就退化成二值网络了。为了改善这一点，WGAN-GP提出了一种叫做gradient penalty的办法，来取代weight clipping。
-
-weight clipping对于超出limit的值，采用了简单粗暴clipping方式。而gradient penalty则偏于软性的“惩罚”，也就是说：对于超出limit的值，允许其存在，但要惩罚一下，使之靠近limit。距离越远，惩罚力度越大。
-
-Lipschitz约束只关心所有的梯度都小于C，但C的值是多少，其实并不care。gradient penalty虽然并不能把所有值都约束在limit之内，但是梯度总归不会是无穷大，因此还是满足Lipschitz约束的。
-
-参考：
-
-https://mp.weixin.qq.com/s/aSQ2-QxbToGF0ROyjxw2yw
-
-萌物生成器：如何使用四种GAN制造猫图
-
-https://mp.weixin.qq.com/s/h7lrJYQ_RqJDako8UoYK-A
-
-六种改进均未超越原版：谷歌新研究对GAN现状提出质疑
+Fréchet Inception Distance(FID)

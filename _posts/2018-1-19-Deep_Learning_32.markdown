@@ -277,3 +277,11 @@ PointConv：在点云上高效实现卷积操作
 https://mp.weixin.qq.com/s/MQU98bk6tFRSJGDfRUFkOQ
 
 Relation-Shape CNN：以几何关系卷积推理点云3D形状
+
+https://mp.weixin.qq.com/s/u9BNyA06P96yIvA0uXUqAw
+
+PointNet系列论文解读
+
+https://mp.weixin.qq.com/s/KuoHFPpUYHPFacsBWZWVSg
+
+Relation-Shape CNN：以几何关系卷积推理点云3D形状

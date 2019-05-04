@@ -405,7 +405,7 @@ https://mp.weixin.qq.com/s/WZyuTtEfaTFLnCfvhOrp7g
 
 虚拟化原理和分类
 
-# 知识图谱参考资源+
+# 知识图谱参考资源
 
 https://mp.weixin.qq.com/s/ZM0qZrqyk0QPBXYbkHAA8A
 

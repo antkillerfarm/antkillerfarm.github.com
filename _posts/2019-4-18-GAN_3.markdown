@@ -1,8 +1,60 @@
 ---
 layout: post
-title:  GAN（三）——CGAN, BEGAN & EBGAN, Stack GAN, GAN Ensemble, Pix2Pix, CycleGAN
+title:  GAN（三）——DCGAN, WGAN-GP, CGAN, BEGAN & EBGAN, Stack GAN, GAN Ensemble, Pix2Pix
 category: GAN & VAE 
 ---
+
+# DCGAN
+
+论文：
+
+《Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks》
+
+![](/images/img2/DCGAN.png)
+
+DCGAN的改进主要是：
+
+1.使用步长卷积代替上采样层，卷积在提取图像特征上具有很好的作用，并且使用卷积代替全连接层。
+
+2.不使用pooling层。
+
+3.上图是G网络的结构图，而D网络和G网络的结构基本是对称的。
+
+4.在判别器中使用leakrelu激活函数，而不是RELU，防止梯度稀疏，生成器中仍然采用relu，但是输出层采用tanh。
+
+参考：
+
+https://mp.weixin.qq.com/s/Dz5c32SnM8-Pdjb9oWxZ_Q
+
+想实现DCGAN？从制作一张门票谈起！
+
+https://mp.weixin.qq.com/s/ouLWl623r_YaZdIdpqSWcw
+
+深度卷积对抗生成网络(DCGAN)实战
+
+# WGAN-GP
+
+论文：
+
+《Improved Training of Wasserstein GANs》
+
+![](/images/img2/WGAN_GP.png)
+
+在某些情况下，weight clipping会导致weight集中在两端，这样整个网络就退化成二值网络了。为了改善这一点，WGAN-GP提出了一种叫做gradient penalty的办法，来取代weight clipping。
+
+weight clipping对于超出limit的值，采用了简单粗暴clipping方式。而gradient penalty则偏于软性的“惩罚”，也就是说：对于超出limit的值，允许其存在，但要惩罚一下，使之靠近limit。距离越远，惩罚力度越大。
+
+Lipschitz约束只关心所有的梯度都小于C，但C的值是多少，其实并不care。gradient penalty虽然并不能把所有值都约束在limit之内，但是梯度总归不会是无穷大，因此还是满足Lipschitz约束的。
+
+参考：
+
+https://mp.weixin.qq.com/s/aSQ2-QxbToGF0ROyjxw2yw
+
+萌物生成器：如何使用四种GAN制造猫图
+
+https://mp.weixin.qq.com/s/h7lrJYQ_RqJDako8UoYK-A
+
+六种改进均未超越原版：谷歌新研究对GAN现状提出质疑
 
 # CGAN
 
@@ -12,11 +64,13 @@ category: GAN & VAE
 
 GAN不仅可用于无监督学习，也可用于有监督学习。Conditional GAN中的Condition实际上就是监督学习中的类别信息。
 
-GAN首先是个生成模型，类别信息对于GAN的意义在于：我不仅可以生成和数据集中样本类似的fake data，而且还可以指定它的类别。
+GAN首先是个生成模型，类别信息对于GAN的意义在于：**我不仅可以生成和数据集中样本类似的fake data，而且还可以指定它的类别。**
 
 类别信息和随机噪声的融合，可以采用组合编码（combined embedding）的方式，也可以采用hadamard product之类的互相关操作。
 
 从数学角度看，GAN拟合的是$$p(data)$$，而CGAN拟合的是条件概率$$p(data \mid c)$$。
+
+CGAN的D网络，除了预测数据的真假之外，还要预测数据的类别。
 
 ![](/images/img3/CGAN.png)
 
@@ -28,13 +82,13 @@ GAN首先是个生成模型，类别信息对于GAN的意义在于：我不仅�
 
 3.CGAN较好的解决了监督学习和GAN的结合问题，即保留了语义，也保留了内容。
 
-# BEGAN & EBGAN
+# EBGAN & BEGAN
 
 论文：
 
-《BEGAN: Boundary Equilibrium GenerativeAdversarial Networks》
-
 《Energy-based Generative Adversarial Network》
+
+《BEGAN: Boundary Equilibrium GenerativeAdversarial Networks》
 
 这两篇论文的思路（包括名字）都差不多，都是从AutoEncoder中获取的灵感，这里就放在一起讲了。
 
@@ -52,11 +106,15 @@ GAN：Decoder->Encoder
 
 对于生成模型来说，细节是很重要的，然而原始的GAN，通常只能生成模糊的图片。如何提高图片的分辨率呢？
 
-BEGAN将D网络的结构由Encoder改为了Encoder->Decoder（也就是一个AE），即输入和输出都是图片。将Loss由KL散度改为了MSE。
+EBGAN将D网络的结构由Encoder改为了Encoder->Decoder（也就是一个AE），即输入和输出都是图片。将Loss由KL散度改为了MSE。
 
 这样的做法可以类比CV中的分类网络和语义分割网络。由于Loss和图片的每个像素都直接相关，因此更利于生成细节信息。
 
 类似的，这里的AE，也可以换成其他Encoder->Decoder网络，例如U-NET。
+
+EBGAN的最大特点就是判别器一开始就非常强(因为有pretrain)，因此生成器在一开始就能获得比较大的“能量驱动”(energy based)，使得在一开始生成器就进步非常快。所以如果我们比较看中训练效率，希望在短期内获得一个比较不错的生成器的话，就可以考虑EBGAN。
+
+BEGAN则借鉴了EBGAN和WGAN各自的一些优点。
 
 # Stack GAN
 
@@ -207,53 +265,3 @@ https://mp.weixin.qq.com/s/PoSA6JXYE_OexEoJYzaX4A
 https://blog.csdn.net/xiaoxifei/article/details/86506955
 
 关于PatchGAN的理解
-
-# CycleGAN
-
-Style Transfer的基本内容可参见《深度学习（十五）》。
-
-除了基于纹理的Style Transfer之外，基于GAN的Style Transfer是另外一个流派。
-
-论文：
-
-《Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks》
-
-![](/images/img3/CycleGAN.png)
-
-Pix2Pix要求训练数据的X和Y是成对的，因此它只适合于图片翻译任务。对于一般的Style Transfer来说，训练数据显然是不配对的，那么又该怎么办呢？
-
-![](/images/img3/CycleGAN_2.png)
-
-首先，简单的按照CGAN的做法，肯定是行不通的。最终生成的图片，实际上只是Y的复刻，一点X的影子都没有。
-
-![](/images/img3/CycleGAN_3.png)
-
-上图是CycleGAN的网络结构图。它的要点如下：
-
-**1**.既然G网络缺乏配对的生成数据，那么不妨采用类似AE的手法来处理。
-
-1）我们首先使用$$G_{X\to Y}$$将X变成Domain Y的数据$$Y'$$。
-
-2）再使用$$G_{Y\to X}$$将$$Y'$$变成Domain X的数据$$X'$$。
-
-3）X和$$X'$$显然是配对的，因此也就是可以比较的。
-
-**2**.D网络不需要配对数据即可训练。
-
-**3**.为了增加训练稳定性，我们可以交替训练两个网络：$$X\to Y'\to X'$$和$$Y\to X'\to Y'$$。其中的$$G_{X\to Y}$$和$$G_{Y\to X}$$在两个网络中的参数是相同的。
-
-CycleGAN不仅可用于Style Transfer，还可用于其他用途。
-
-![](/images/img3/CycleGAN_3.png)
-
-上图是CycleGAN用于Steganography（隐写术）的示例。
-
-值得注意的是，CycleGAN的idea并非该文作者独有，**同期（2017.3）的DualGAN和DiscoGAN采用了完全相同做法。**
-
-DualGAN论文：
-
-《DualGAN: Unsupervised Dual Learning for Image-to-Image Translation》
-
-DiscoGAN论文：
-
-《Learning to Discover Cross-Domain Relationswith Generative Adversarial Networks》

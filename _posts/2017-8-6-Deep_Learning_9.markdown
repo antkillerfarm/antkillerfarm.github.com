@@ -224,10 +224,6 @@ https://mp.weixin.qq.com/s/IE6blClvhYlq3-QAGHo5ww
 
 TensorFlow分布式计算机制解读：以数据并行为重
 
-https://mp.weixin.qq.com/s/7JGLm-hkCZBNDLA98qvWNA
-
-自动生成硬件优化内核：陈天奇等人发布深度学习编译器TVM
-
 https://mp.weixin.qq.com/s/4Ii3um3jqfm5yKKxZAFdmA
 
 继1小时训练ImageNet之后，大批量训练扩展到了3万2千个样本

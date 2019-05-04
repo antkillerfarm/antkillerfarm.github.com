@@ -150,11 +150,7 @@ GAN网络图像翻译机：图像复原、模糊变清晰、素描变彩图
 
 https://mp.weixin.qq.com/s/djkjAfUO_DefTP2drzY_iQ
 
-在《绝地求生》中玩《堡垒之夜》！ 深度学习帮你转换画风
-
-https://mp.weixin.qq.com/s/X8osUSPROJqGVTvw0gieDQ
-
-T2T：利用StackGAN和ProGAN从文本生成人脸
+在《绝地求生》中玩《堡垒之夜》！深度学习帮你转换画风
 
 https://mp.weixin.qq.com/s/moDVf7h8Q2S1SL0IuxXQtQ
 
@@ -219,18 +215,6 @@ https://mp.weixin.qq.com/s/BWBrso7O1O3Rfxa4QWZH4g
 https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247505181&idx=1&sn=2e817ec2ae918fd85c0ebcf85e810997
 
 惊！史上最佳GAN现身，超真实AI假照片，行家们都沸腾了
-
-https://mp.weixin.qq.com/s/b3EVdPGY2jxliwdbbB1kcQ
-
-“史上最强GAN图像生成器”BigGAN的demo出了！
-
-https://mp.weixin.qq.com/s/kSyXd5dgdEcqupDeouhObQ
-
-BigGAN论文解读
-
-https://mp.weixin.qq.com/s/akLvNQZMNTaVbkbUrZY4tw
-
-史上最强图像生成器BigGAN变身DeepGAN？四倍深度实现更强效果
 
 https://mp.weixin.qq.com/s/MPdGF2-cJbNcvaEx-2BnFg
 

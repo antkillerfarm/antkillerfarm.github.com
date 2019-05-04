@@ -146,10 +146,6 @@ https://mp.weixin.qq.com/s/ZlVuVGW_XA_MTgBJhMmqXg
 
 DeepXplore：深度学习系统的自动化白盒测试
 
-https://mp.weixin.qq.com/s/PhaDqX3OT-mqyFHohDMfdA
-
-从Pix2Code到CycleGAN：2017年深度学习重大研究进展全解读
-
 https://mp.weixin.qq.com/s/0qyJtD124O5pRJ1UYEV0qg
 
 为给定任务自动生成神经网络：MIT提出RNN架构生成新方法

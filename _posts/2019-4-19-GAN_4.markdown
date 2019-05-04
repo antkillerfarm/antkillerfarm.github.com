@@ -1,10 +1,58 @@
 ---
 layout: post
-title:  GAN（四）——StarGAN, 参考资源
+title:  GAN（四）——CycleGAN, StarGAN, InfoGAN
 category: GAN & VAE 
 ---
 
-# CycleGAN（续）
+# CycleGAN
+
+Style Transfer的基本内容可参见《深度学习（十五）》。
+
+除了基于纹理的Style Transfer之外，基于GAN的Style Transfer是另外一个流派。
+
+论文：
+
+《Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks》
+
+![](/images/img3/CycleGAN.png)
+
+Pix2Pix要求训练数据的X和Y是成对的，因此它只适合于图片翻译任务。对于一般的Style Transfer来说，训练数据显然是不配对的，那么又该怎么办呢？
+
+![](/images/img3/CycleGAN_2.png)
+
+首先，简单的按照CGAN的做法，肯定是行不通的。最终生成的图片，实际上只是Y的复刻，一点X的影子都没有。
+
+![](/images/img3/CycleGAN_3.png)
+
+上图是CycleGAN的网络结构图。它的要点如下：
+
+**1**.既然G网络缺乏配对的生成数据，那么不妨采用类似AE的手法来处理。
+
+1）我们首先使用$$G_{X\to Y}$$将X变成Domain Y的数据$$Y'$$。
+
+2）再使用$$G_{Y\to X}$$将$$Y'$$变成Domain X的数据$$X'$$。
+
+3）X和$$X'$$显然是配对的，因此也就是可以比较的。
+
+**2**.D网络不需要配对数据即可训练。
+
+**3**.为了增加训练稳定性，我们可以交替训练两个网络：$$X\to Y'\to X'$$和$$Y\to X'\to Y'$$。其中的$$G_{X\to Y}$$和$$G_{Y\to X}$$在两个网络中的参数是相同的。
+
+CycleGAN不仅可用于Style Transfer，还可用于其他用途。
+
+![](/images/img3/CycleGAN_3.png)
+
+上图是CycleGAN用于Steganography（隐写术）的示例。
+
+值得注意的是，CycleGAN的idea并非该文作者独有，**同期（2017.3）的DualGAN和DiscoGAN采用了完全相同做法。**
+
+DualGAN论文：
+
+《DualGAN: Unsupervised Dual Learning for Image-to-Image Translation》
+
+DiscoGAN论文：
+
+《Learning to Discover Cross-Domain Relationswith Generative Adversarial Networks》
 
 参考：
 
@@ -40,6 +88,14 @@ https://mp.weixin.qq.com/s/i3lNcbOblgVKUTBtwKIFwg
 
 AI秒造全球房源：StyleGAN快速生成假房子，连图说都配好了！
 
+https://mp.weixin.qq.com/s/PhaDqX3OT-mqyFHohDMfdA
+
+从Pix2Code到CycleGAN：2017年深度学习重大研究进展全解读
+
+https://mp.weixin.qq.com/s/dwEHorYSJuX9JapIYLHiXg
+
+BicycleGAN：图像转换多样化，大幅提升pix2pix生成图像效果
+
 # StarGAN
 
 论文：
@@ -56,13 +112,25 @@ StarGAN给出的办法是：所有的Domain共享一个G网络。如上图右半
 
 ![](/images/img3/StarGAN_2.png)
 
-1.D网络除了常规的Real/Fake判别之外，还有
+1.D网络除了常规的Real/Fake判别器之外，还有一个Domain分类器。
 
-2.
+2.G网络的结构和CycleGAN类似，也包括了两部分：$$G_{X\to Y}$$和$$G_{Y\to X}。区别在于：后者的两个G网络是不同的网络，而前者是同一个网络。
+
+3.既然G网络只有一个，那么如何完成Domain变换呢？答案就是：把目标Domain的信息也输进G网络中。
 
 ![](/images/img3/StarGAN_3.png)
 
+StarGAN不仅可在同一数据集中进行Domain变换，还可在不同数据集之间进行Domain变换。上图展示的是StarGAN在CelebA和RaFD数据集上的训练过程：
 
+1.两个数据集的标签不是完全相同的。（实际上是完全不同，囧）
+
+2.对标签进行编码。例如图中使用的Onehot编码。
+
+3.**利用Mask区分是哪个数据集。**这一步是关键。
+
+![](/images/img3/GAN_5.png)
+
+除此之外，同期的Couple GAN也采用了类似的设计。上图是Couple GAN的网络结构图，其中的虚线表示网络的参数是共享的。
 
 参考：
 
@@ -70,304 +138,62 @@ https://mp.weixin.qq.com/s/rPDvLnG4MBDRUMCWs2fjcQ
 
 最新StarGAN对抗生成网络实现多领域图像变换
 
-# 参考资源
+# InfoGAN
 
-https://mp.weixin.qq.com/s/Gjb-PkMqUIIV81Na6Za_BQ
+论文：
 
-超全的GAN PyTorch+Keras实现集合
+《InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets》
 
-https://mp.weixin.qq.com/s/Cb3C6Q5aWSjsNFs5hqD6kw
+CGAN虽然已经有了些user control的能力，然而还不够强。比如人脸图片，user control的点（例如肤色、发型、表情等）就非常多，简单的标签不足以表达这么多含义。InfoGAN主要就是用来提升user control能力的。
 
-阿里提出应用LocalizedGAN进行半监督训练
+![](/images/img3/InfoGAN.png)
 
-https://mp.weixin.qq.com/s/Y8D0gr1ybQ48H0bDpPvD8w
+上图是InfoGAN的网络结构图。相比CGAN，它的改进在于：
 
-二次元萌妹高清舞姿随心变，换装只需一瞬间：又是GAN立功了
+1.将控制变量嵌入网络中。
 
-https://mp.weixin.qq.com/s/H_EcHi9BRur214rktocGbg
+2.Discriminator和Classifier共享大多数参数，仅最后一层不同。
 
-怎样用GAN生成各种胖吉猫？谷歌大脑程序员教你撩妹神技
+# ProGAN
 
-https://mp.weixin.qq.com/s/FDyN6fblDFGOSNRFs5OYqA
+论文：
 
-什么都能GAN，无监督神经网络翻译新方法
+《》
 
-https://mp.weixin.qq.com/s/DYSnAwP9xt-p0ihsEtKm1Q
+参考：
 
-TensorFlow实现StarGAN代码全部开源，1天训练完
+https://mp.weixin.qq.com/s/X8osUSPROJqGVTvw0gieDQ
 
-https://mp.weixin.qq.com/s/se_2Ci4eE5fxiiG4LZrv8w
+T2T：利用StackGAN和ProGAN从文本生成人脸
 
-怎样用可交互对抗网络增强人类创造力
+# BigGAN
 
-https://mp.weixin.qq.com/s/29Ror1CKFubB0n38cihMqQ
+论文：
 
-六种GAN评估指标的综合评估实验，迈向定量评估GAN的重要一步
+《Large Scale GAN Training for High Fidelity Natural Image Synthesis》
 
-https://mp.weixin.qq.com/s/0I8jLO3srXC3fUdoMC585w
+参考：
 
-一些fancy的GAN应用
+https://mp.weixin.qq.com/s/b3EVdPGY2jxliwdbbB1kcQ
 
-https://mp.weixin.qq.com/s/2cY3NCtMYiRlLayB32wl-w
+“史上最强GAN图像生成器”BigGAN的demo出了！
 
-下一个GAN？OpenAI提出可逆生成模型Glow
+https://mp.weixin.qq.com/s/kSyXd5dgdEcqupDeouhObQ
 
-https://mp.weixin.qq.com/s/1cUM8_AUZ40JWGI37HsqFw
+BigGAN论文解读
 
-换脸效果媲美GAN！一文解析OpenAI最新流生成模型Glow
+https://mp.weixin.qq.com/s/akLvNQZMNTaVbkbUrZY4tw
 
-https://mp.weixin.qq.com/s/kD_163rjGRp4rXOdIPCvRA
+史上最强图像生成器BigGAN变身DeepGAN？四倍深度实现更强效果
 
-亲历IJCAI 2018，为什么北京大学SentiGAN能获杰出论文？
+# S2GAN
 
-https://mp.weixin.qq.com/s/v23rSjIKyVEAGCN8rEtsfg
+论文：
 
-伯克利新论文：合成GAN（Compositional GAN）
+《》
 
-https://mp.weixin.qq.com/s/ddR7dwwBZnu3knKmfDWjCg
+# SAGAN
 
-斯坦福大学PH.D Aditya Grover：115页Slides带你领略深度生成模型（Deep Generative Model）全貌
+论文：
 
-https://mp.weixin.qq.com/s/QjEShm__Rq0n7n_sdc6GNg
-
-Ryan P.Adams教授：深度概率生成模型—156页普林斯顿教程带你回顾深度生成模型最新发展脉络
-
-https://mp.weixin.qq.com/s/DSHuCNQWKN3pLozZ8i16hQ
-
-卡成PPT不开心？GAN也能生成流畅的连续表情了
-
-https://mp.weixin.qq.com/s/5S6TsyT6dwXP3cTE_KQleg
-
-把酱油瓶放进菜篮子：UC Berkeley提出高度逼真的物体组合网络Compositional GAN
-
-https://mp.weixin.qq.com/s/IE5h6AiAYhA1nBvsFiGUHA
-
-GAN最新进展：8大技巧提高稳定性
-
-https://mp.weixin.qq.com/s/QacQCrjh3KmrQSMp-G_rEg
-
-贝叶斯生成对抗网络
-
-https://mp.weixin.qq.com/s/c84LMFnIhoDeolc1B4MIVA
-
-AI以假乱真怎么办？TequilaGAN教你轻松辨真伪
-
-https://mp.weixin.qq.com/s/fgL6FtjeF-EgG5jjAGDR7A
-
-GANimation让图片秒变GIF表情包，秒杀StarGAN
-
-https://mp.weixin.qq.com/s/yShYrMFKox30jXajXXQPGw
-
-如何让GAN生成更高质量图像？斯坦福大学给你答案
-
-https://mp.weixin.qq.com/s/qiLFQowjH67XECXBlppUDg
-
-对抗深度学习:鱼(模型准确性)与熊掌(模型鲁棒性)能否兼得？
-
-https://mp.weixin.qq.com/s/1SpHGtjkSfDEFCZuudCm0Q
-
-基于GAN和VAE的跨模态图像生成
-
-https://mp.weixin.qq.com/s/02amaVnLFxeLDBsjG-iN1Q
-
-UBC&腾讯AI Lab提出首个模块化GAN架构，搞定任意图像PS组合
-
-https://mp.weixin.qq.com/s/pf0fNSoNDaI9bZvohRX28A
-
-不再使用人眼评估，你训练的GAN还OK吗？ 
-
-https://mp.weixin.qq.com/s/KeXXi5kwvWAfArv13f6VPg
-
-给Cycle-GAN加上时间约束，CMU等提出新型视频转换方法Recycle-GAN
-
-https://mp.weixin.qq.com/s/IzVTkH7fEiS4gAUIyA_IrA
-
-谷歌GAN 实验室来了！迄今最强可视化工具，在浏览器运行GAN
-
-https://mp.weixin.qq.com/s/1jBpz55pPgM8oxlUZLSWXA
-
-ICML2018对抗生成网络论文评述
-
-https://mp.weixin.qq.com/s/uQpmP7pJ8wnEgyJrvvHgwg
-
-基于解剖结构的面部表情生成
-
-https://mp.weixin.qq.com/s/cLCtxS1frJYvC5tLsQAWrQ
-
-用神经网络生成音乐
-
-https://mp.weixin.qq.com/s?__biz=MzIwOTc2MTUyMg==&mid=2247485368&idx=1&sn=1da8bd2490fa2fe16dbe25aea79dcd63
-
-交互式GAN Lab让生成对抗网络轻松实现可视化！
-
-https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247491630&idx=1&sn=394ffec2969cff23f63022526684f259
-
-杜伦大学提出GANomaly：无需负例样本实现异常检测
-
-https://mp.weixin.qq.com/s/BEuA5icaQwRJGsJJLnAFVg
-
-用机器学习生成图片：GAN的局限性以及如何GAN的更爽
-
-https://zhuanlan.zhihu.com/p/41114883
-
-手机照片脑补成超大画幅，这个GAN想象力惊人
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650749368&idx=3&sn=fc20d9e6682c74227282df3133cea06c
-
-基于IR-transformer、IRGAN模型，解读搜狗语义匹配技术
-
-https://mp.weixin.qq.com/s/bKve_tZi9usz4oX0T3S15A
-
-悉尼大学陶大程：遗传对抗生成网络有效解决GAN两大痛点
-
-https://mp.weixin.qq.com/s/UO0pNLcwYN5tE5x_4azVJA
-
-LSGAN：最小二乘生成对抗网络
-
-https://zhuanlan.zhihu.com/p/46629127
-
-生成对抗网络-GAN---一个好老师的重要性
-
-https://mp.weixin.qq.com/s/Sp0EYvaq-1u0mtnrrmFNCQ
-
-为什么说GANs是一个绝妙的艺术创作工具？
-
-https://mp.weixin.qq.com/s/uHEAtuY1_KZdUAdDAwFi_A
-
-以为GAN只能“炮制假图”？它还有这7种另类用途
-
-https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247492415&idx=1&sn=a359e72ee99555f7a2fb4e21b2ad51db
-
-InfoGAN：一种无监督生成方法
-
-https://mp.weixin.qq.com/s/Yf5quOXmzJAy0GnJnvam5g
-
-台湾学者研发新型二元神经元GAN！有望用于AI作曲
-
-https://mp.weixin.qq.com/s/8aL7COItG7lS4q5-3IZCmQ
-
-定制人脸图像没那么难！使用TL-GAN模型轻松变脸
-
-https://mp.weixin.qq.com/s/9t0GvQW-cmakM0E9dWxBcg
-
-旧照片着色修复神器！自注意力GAN效果惊艳
-
-https://mp.weixin.qq.com/s/cUFQ6EADa39h2eFoa_Dh0A
-
-最高76%破解成功率！GAN已经能造出“万能指纹”，你的手机还安全吗？
-
-https://mp.weixin.qq.com/s/_tABIMkWX8L5xQFmvPI7rw
-
-有效稳定对抗模型训练过程，伯克利提出变分判别器瓶颈
-
-https://zhuanlan.zhihu.com/p/50790727
-
-SeqGAN: Sequence GAN with Policy Gradient
-
-https://mp.weixin.qq.com/s/bH5yYbwq6NGQJ84xUDhoxg
-
-生成对抗网络在图像翻译上的应用
-
-https://mp.weixin.qq.com/s/3Gsmrl4HbcnXpje0nyAq2w
-
-中国西北大学和北京大学的研究结果是否将终结CAPTCHA验证码时代？
-
-https://zhuanlan.zhihu.com/p/53260242
-
-抛开复杂证明，我们从直觉上理解W-GAN为啥这么好训
-
-https://mp.weixin.qq.com/s/FJA8Tctq_p4Mj-KgNn_OGg
-
-为什么让GAN一家独大？Facebook提出非对抗式生成方法GLANN
-
-https://mp.weixin.qq.com/s/xr9fDv9DFkwi2ImV4RZAHg
-
-换个角度看GAN：另一种损失函数
-
-https://mp.weixin.qq.com/s/U1rrPfJDLgXHRj__XwrMZw
-
-只有条件GAN才能稳定训练？对抗+自监督的无监督方法了解一下
-
-https://mp.weixin.qq.com/s/xHKQlFFkBQLBg2GdZuGPSw
-
-提升GAN训练的技巧汇总
-
-https://mp.weixin.qq.com/s/8Vt3p8iXFq9rI-ph1Syt-Q
-
-Uber提出基于Metropolis-Hastings算法的GAN改进思想
-
-https://mp.weixin.qq.com/s/kobEEizpP2v5Yy-8stiGgg
-
-让画面更逼真！这个强化超分辨率GAN让老游戏迎来第二春
-
-https://mp.weixin.qq.com/s/tWaKMFZ4dQX7kZlT3tiDAQ
-
-详解GAN的谱归一化（Spectral Normalization）
-
-https://mp.weixin.qq.com/s/I7mpy5P7LFFkop618ANLtA
-
-这份攻略帮你“稳住”反复无常的GAN
-
-https://mp.weixin.qq.com/s/bPieF6CNvM4N1Njx6OHNwg
-
-谷歌大脑：像BigGAN那样生成高清大图不一定需要大量图像标签
-
-https://mp.weixin.qq.com/s/jByvPPrlN7zIOPXON4fZJw
-
-生成对抗网络也需要注意力机制
-
-https://mp.weixin.qq.com/s/dViPKDzxsMRRntMusi1Isw
-
-5个最新图像合成GAN架构解读：核心理念、关键成就、商业化路径
-
-https://mp.weixin.qq.com/s/c1zzP9_Ds1oCkFitLZLrCg
-
-MIT本科学神重启基于能量的生成模型，新框架堪比GAN
-
-https://mp.weixin.qq.com/s/eSvrnUCnz74O3txrPq7RlA
-
-Google用更少标签生成图像，还提出一个用于训练评估GAN的库
-
-https://mp.weixin.qq.com/s/CwB7IDaCZBzcQV8IBsYQDw
-
-最新《生成式对抗网络GAN进展》论文
-
-https://mp.weixin.qq.com/s/-SVtuZGOn6Wk9kwe50JJqw
-
-《GAN实战：生成对抗网络深度学习》牛津大学Jakub著作
-
-https://mp.weixin.qq.com/s/QqQ0SoF-kFTQRLxo4Tzm2g
-
-反思基于能量的生成式模型：中山大学研究者从粒子演化角度改进经典的FRAME
-
-https://mp.weixin.qq.com/s/ExsDftIvi8VUdvxfka-1ow
-
-南大和中大“合体”拯救手残党：基于GAN的PI-REC重构网络，“老婆”画作有救了
-
-https://mp.weixin.qq.com/s/RhYVCO0jNlY97ptIUvRRQQ
-
-带你读论文：生成对抗网络GAN论文TOP 10
-
-https://mp.weixin.qq.com/s/ErmGAsSHvCOxCn97yZ4WJQ
-
-关于GAN的灵魂七问
-
-https://mp.weixin.qq.com/s/Q0IUGbVcIYJMdidSVcFzFw
-
-GAN的五个神奇应用场景
-
-https://mp.weixin.qq.com/s/LJfsadhp3WGi0tLXN7jCUA
-
-GAN生成图像综述
-
-https://mp.weixin.qq.com/s/wW8kTQ7eQeCJsHC9ju8VLA
-
-One Day One GAN_keras版[DAY 1]
-
-https://mp.weixin.qq.com/s/kWv-hp2svq1OEHy2DqQ4uA
-
-古纾旸：Generative model is more than just GANs
-
-https://mp.weixin.qq.com/s/fmqaw0xm4Lm7h3rPsLD7yA
-
-关于GAN的灵魂七问
+《》

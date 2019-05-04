@@ -381,3 +381,7 @@ CNN更新换代！性能提升算力减半，还即插即用（OctConv）
 https://mp.weixin.qq.com/s/UcLUir2UWibXw9lS8R0sXA
 
 比CNN表现更好，CV领域全新卷积操作OctConv厉害在哪里？
+
+https://mp.weixin.qq.com/s/wRLMEpGP2hyFdI0IwXWDPw
+
+ICML 2019反锯齿下采样改进网络平移不变性

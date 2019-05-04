@@ -254,6 +254,10 @@ https://mp.weixin.qq.com/s/ts4WFnuN4cHLfUh8--96Kw
 
 Libra R-CNN：全面平衡的目标检测器
 
+https://mp.weixin.qq.com/s/groq55Cbts272k1mfhJwaQ
+
+超越bounding box的代表性点集：视觉物体表示的新方法
+
 # Flink
 
 Flink是一个流计算引擎。

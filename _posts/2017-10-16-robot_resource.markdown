@@ -298,6 +298,10 @@ https://mp.weixin.qq.com/s/yDQ4zQpo4BVrnnnV_J6dlg
 
 一文看懂四大汽车总线：LIN、CAN、FlexRay、MOST
 
+https://mp.weixin.qq.com/s/u6gibvshU4KI3fEE6h9KeQ
+
+上海大众内训资料：CAN总线讲解
+
 ## 高精地图
 
 https://mp.weixin.qq.com/s/-HdpWQeMY6-sptxF9D4CcQ

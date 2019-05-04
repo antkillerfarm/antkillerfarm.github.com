@@ -350,6 +350,10 @@ https://mp.weixin.qq.com/s/GN4u91Dc5uYLP8N8rptczA
 
 全自动泊车辅助F-APA简介
 
+https://mp.weixin.qq.com/s/ZRbEwUlqtp8f5987j9-McQ
+
+自动驾驶计算机视觉研究综述：难题、数据集与前沿成果
+
 # NLP参考资源+
 
 https://zhuanlan.zhihu.com/p/64032803
@@ -383,3 +387,11 @@ https://mp.weixin.qq.com/s/o5mE6IRs8ZkkXy8c5rdrjw
 https://mp.weixin.qq.com/s/PVzVNI7jMzHPcUbL7UaCIQ
 
 什么是语义角色标注？
+
+https://mp.weixin.qq.com/s/S2SH8MUmreciZRc0Ff-qlw
+
+一文了解自然语言生成演变史！
+
+https://mp.weixin.qq.com/s/h6BjW1nrV4z30eWfny7Wzw
+
+聊天机器人落地及进阶实战

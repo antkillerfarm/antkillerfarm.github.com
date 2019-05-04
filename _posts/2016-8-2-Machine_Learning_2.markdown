@@ -87,7 +87,7 @@ $$L(\theta)=p(\vec{y}\mid X;\theta)=\prod_{i=1}^m(h_\theta(x^{(i)}))^{y^{(i)}}(1
 
 两边都取对数，得到对数化的似然估计函数：
 
-$$\ell(\theta)=\log L(\theta)=\sum_{i=1}^my^{(i)}\log h_\theta(x^{(i)})+(1-y^{(i)})\log(1-h_\theta(x^{(i)}))$$
+$$\ell(\theta)=\log L(\theta)=\sum_{i=1}^my^{(i)}\log h_\theta(x^{(i)})+\sum_{i=1}^m(1-y^{(i)})\log(1-h_\theta(x^{(i)}))$$
 
 $$\frac{\partial \ell(\theta)}{\partial \theta_j}=(y-h_\theta(x))x_j$$
 

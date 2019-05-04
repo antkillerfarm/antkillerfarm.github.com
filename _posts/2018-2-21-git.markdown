@@ -392,6 +392,10 @@ https://mp.weixin.qq.com/s/G2oo6HMHnQtHPqsoSxUHqQ
 
 权力的游戏收官，我用Python致敬这场血雨腥风
 
+https://mp.weixin.qq.com/s/WDeF3o_M4RQRgwd2iex_bg
+
+基于Selenium模拟浏览器爬虫详解
+
 # ZeroMQ
 
 ZeroMQ是个在Socket之上，而在MQ之下的网络通信库。正如名称所言，它实际上并不是一个完整的MQ，而仅仅只有MQ的一些子功能罢了。
@@ -403,21 +407,3 @@ http://zeromq.org
 https://blog.csdn.net/w174504744/article/details/73187697
 
 ZeroMQ
-
-# 知识图谱参考资源
-
-https://mp.weixin.qq.com/s/7LFkOzkD1-PsNNAr5DAETg
-
-TechKG：一个面向中文学术领域的大型知识图谱
-
-https://mp.weixin.qq.com/s/QNTJngwEDtxufEpIGTngCw
-
-事理图谱，下一代知识图谱
-
-https://mp.weixin.qq.com/s/0bTmzKiC7WDbLRcxfAAGqw
-
-提取计数量词丰富知识库
-
-https://mp.weixin.qq.com/s/Pqm5uhC9iMLuPk6mDCtPuQ
-
-动态知识图谱补全论文合集

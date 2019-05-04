@@ -44,6 +44,8 @@ http://kexue.fm/archives/4439/
 
 互怼的艺术：从零直达WGAN-GP
 
+还有李宏毅的课程。
+
 老规矩，摘要+点评。
 
 ## 伪造者
@@ -156,6 +158,22 @@ $$\begin{aligned}\Theta =& \mathop{\arg\min}_{\Theta} L = \mathop{\arg\min}_{\Th
 $$\begin{aligned}\Theta =& \mathop{\arg\min}_{\Theta} L_1\\ 
 =&\mathop{\arg\min}_{\Theta} \frac{1}{B}\sum_{i=1}^B\left[D\Big(z_i,\Theta\Big)-D\Big(y_i,\Theta\Big)\right]\end{aligned}\tag{3}$$
 
+公式3的**简略推导**如下：
+
+$$\ell(\theta)=\log L(\theta)=\sum_{i=1}^my^{(i)}\log h_\theta(x^{(i)})+\sum_{i=1}^m(1-y^{(i)})\log(1-h_\theta(x^{(i)}))$$
+
+上式是二分类的对数似然函数。（参见《机器学习（二）》）具体到这里，可以改写为：
+
+$$E_{x\sim P_{data}}[\log D(x)]+E_{x\sim P_{G}}[\log (1-D(x))]$$
+
+![](/images/img3/GAN_3.png)
+
+$$\log (1-D(x))$$和$$-\log (D(x))$$的单调性相同，只是下降速度不同。为了迅速收敛，通常采用后者，即：
+
+$$E_{x\sim P_{data}}[\log D(x)]+E_{x\sim P_{G}}[-\log D(x)]$$
+
+为了区分，一般把使用$$\log (1-D(x))$$的GAN称为Minimax GAN，而把使用$$-\log (D(x))$$的GAN称为Non-saturating GAN。
+
 ### Step2
 
 $$G(X,\theta)$$希望它生成的样本越接近真实样本越好，因此这时候把$$\Theta$$固定，只训练$$\theta$$让L越来越小：
@@ -204,11 +222,3 @@ $$\| D(y,\theta) - D(y' , \theta) \| \leq C \|y-y'\|$$
 也可写作：
 
 $$\left\| \frac{\partial D(y,\Theta)}{\partial y}\right\| \leq C$$
-
-## WGAN
-
-KL散度和JS散度由于不是距离，数学特性并不够好。因此，Martín Arjovsky于2017年1月，提出了Wasserstein GAN。
-
-其中的一项改进就是使用Wasserstein距离替代KL散度和JS散度。Wasserstein距离的定义参看《机器学习（二十七）》。
-
-WGAN极大程度的改善了GAN训练困难的问题，成为当前GAN研究的主流。

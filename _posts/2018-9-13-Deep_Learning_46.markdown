@@ -244,6 +244,14 @@ https://mp.weixin.qq.com/s/x8iyl4gwz31XOCw3oSHSwg
 
 开源！基于TensorFlow/Keras/PyTorch实现对自然场景的文字检测及端到端的OCR中文文字识别
 
+https://mp.weixin.qq.com/s/eVhId0OqKB-jNCg4j8qaNg
+
+仅用200个样本就能得到当前最佳结果：手写字符识别新模型TextCaps
+
+https://mp.weixin.qq.com/s/z5hRafxepA4Zj5pbbK8HzA
+
+基于模板的文字识别结果结构化处理技术
+
 # 问答系统
 
 GA-Reader

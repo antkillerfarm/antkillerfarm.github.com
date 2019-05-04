@@ -376,6 +376,10 @@ https://mp.weixin.qq.com/s/MMzvZA55Xb2sOA7rJiXiEw
 
 那些酷炫的深度学习网络图怎么画出来的？
 
+https://mp.weixin.qq.com/s/TrAzbHt0kGlQKpymVJet6A
+
+8行代码用Python画一个中国地图
+
 ## howmuch.net
 
 howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：

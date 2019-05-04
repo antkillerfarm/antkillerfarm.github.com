@@ -38,14 +38,6 @@ https://mp.weixin.qq.com/s/Ctl65r4iZNEOBxiiX2I2eQ
 
 Momenta王晋玮：让深度学习更高效运行的两个视角
 
-https://mp.weixin.qq.com/s/irvBbPKENiZX9G_6wh5c-Q
-
-陈天奇等人提出TVM：深度学习自动优化代码生成器
-
-https://mp.weixin.qq.com/s/28n8g_epHsYB0I9GVc_lww
-
-陈天奇团队TVM重磅更新：直接在浏览器使用GPU
-
 https://mp.weixin.qq.com/s/UxN9ZRmKLN30s7uPqMpHPQ
 
 Jeff Dean等提出动态控制流编程模型，大规模机器学习性能提升21%

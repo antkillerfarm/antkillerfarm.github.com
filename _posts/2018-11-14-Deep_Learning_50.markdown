@@ -130,10 +130,6 @@ https://mp.weixin.qq.com/s/RLxWevVWHXgX-UcoxDS70w
 
 细讲《Attention Is All You Need》
 
-https://mp.weixin.qq.com/s/HquT_mKm7x_rbDGz4Voqpw
-
-阿里巴巴最新实践：TVM+TensorFlow提高神经机器翻译性能
-
 https://mp.weixin.qq.com/s/S_xhaDrOaPe38ZvDLWl4dg
 
 从技术到产品，搜狗为我们解读了神经机器翻译的现状

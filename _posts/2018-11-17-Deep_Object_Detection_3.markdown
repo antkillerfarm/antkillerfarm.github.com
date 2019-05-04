@@ -4,6 +4,34 @@ title:  深度目标检测（三）——Fast R-CNN, Faster R-CNN
 category: Deep Object Detection 
 ---
 
+# SPPNet（续）
+
+![](/images/article/spp.png)
+
+**Step 1**：为图像建立不同尺度的图像金字塔。上图为3层。
+
+**Step 2**：将图像金字塔中包含的feature映射到固定尺寸的向量中。上图为$$(16+4+1)\times 256$$维向量。
+
+总结：
+
+![](/images/article/spp_p.png)
+
+从上图可以看出，由于卷积策略的不同，SPPnet的流程和RCNN也有一点微小的差异：
+
+1.RCNN是先选择区域，然后对区域进行卷积，并检测。
+
+2.SPPnet是先统一卷积，然后应用选择区域，做区域检测。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/24774302
+
+SPPNet-引入空间金字塔池化改进RCNN
+
+http://kaiminghe.com/iccv15tutorial/iccv2015_tutorial_convolutional_feature_maps_kaiminghe.pdf
+
+何恺明：Convolutional Feature Maps
+
 # Fast R-CNN
 
 Fast R-CNN是Ross Girshick于2015年祭出的又一大招。
@@ -237,25 +265,3 @@ YOLO: Real-Time Object Detection，是一个基于神经网络的实时对象检
 官网：
 
 https://pjreddie.com/darknet/yolo/
-
->注：Joseph Chet Redmon，Middlebury College本科+华盛顿大学博士（在读）。网名：pjreddie。
-
-pjreddie不仅是个算法达人，也是个造轮子的高手。YOLO的原始代码基于他本人编写的DL框架——darknet。
-
-darknet代码：
-
-https://github.com/pjreddie/darknet/
-
-YOLO的caffe版本有很多（当然都是非官方的），这里推荐：
-
-https://github.com/yeahkun/caffe-yolo
-
-有个叫做darkflow的项目，可以用于将darknet模型转换成tensorflow模型：
-
-https://github.com/thtrieu/darkflow
-
-## 概述
-
-从R-CNN到Fast R-CNN一直采用的思路是proposal+分类（proposal提供位置信息，分类提供类别信息），这也被称作two-stage cascade。
-
-YOLO不仅是end-to-end，而且还提供了另一种更为直接的思路：直接在输出层回归bounding box的位置和bounding box所属的类别(整张图作为网络的输入，把Object Detection的问题转化成一个Regression问题)。

@@ -100,7 +100,7 @@ https://nodejs.org/
 
 安装方法：
 
-`sudo apt install nodejs-dev nodejs-legacy npm`
+`sudo apt install nodejs-dev npm`
 
 执行：
 

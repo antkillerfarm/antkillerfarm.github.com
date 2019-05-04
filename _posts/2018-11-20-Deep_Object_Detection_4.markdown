@@ -4,9 +4,29 @@ title:  深度目标检测（四）——YOLO, SSD, YOLOv2
 category: Deep Object Detection 
 ---
 
-# YOLO
+# YOLO（续）
 
-## 概述（续）
+>注：Joseph Chet Redmon，Middlebury College本科+华盛顿大学博士（在读）。网名：pjreddie。
+
+pjreddie不仅是个算法达人，也是个造轮子的高手。YOLO的原始代码基于他本人编写的DL框架——darknet。
+
+darknet代码：
+
+https://github.com/pjreddie/darknet/
+
+YOLO的caffe版本有很多（当然都是非官方的），这里推荐：
+
+https://github.com/yeahkun/caffe-yolo
+
+有个叫做darkflow的项目，可以用于将darknet模型转换成tensorflow模型：
+
+https://github.com/thtrieu/darkflow
+
+## 概述
+
+从R-CNN到Fast R-CNN一直采用的思路是proposal+分类（proposal提供位置信息，分类提供类别信息），这也被称作two-stage cascade。
+
+YOLO不仅是end-to-end，而且还提供了另一种更为直接的思路：直接在输出层回归bounding box的位置和bounding box所属的类别(整张图作为网络的输入，把Object Detection的问题转化成一个Regression问题)。
 
 ![](/images/article/yolo.png)
 
@@ -263,11 +283,3 @@ YOLOv2首先修改预训练分类网络的分辨率为448x448，在ImageNet数�
 其主要思路是：将对类别的预测放到anchor box中。
 
 同时，由于分辨率的提高，cell的数量由7x7改为13x13。这样一来就有13x13x9=1521个boxes了。因此，YOLOv2比YOLO在检测小物体方面有一定的优势。
-
-### Dimension Clusters
-
-使用anchor时，作者发现Faster-RCNN中anchor boxes的个数和宽高维度往往是手动精选的先验框（hand-picked priors)，设想能否一开始就选择了更好的、更有代表性的先验boxes维度，那么网络就应该更容易学到准确的预测位置。
-
-解决办法就是统计学习中的K-means聚类方法，通过对数据集中的ground true box做聚类，找到ground true box的统计规律。以聚类个数k为anchor boxs个数，以k个聚类中心box的宽高维度为anchor box的维度。
-
-作者做了对比实验，5种boxes的Avg IOU(61.0)就和Faster R-CNN的9种Avg IOU(60.9)相当。 说明K-means方法的生成的boxes更具有代表性，使得检测任务更好学习。

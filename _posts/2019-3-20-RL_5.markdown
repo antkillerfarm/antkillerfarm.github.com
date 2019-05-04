@@ -202,3 +202,7 @@ https://mp.weixin.qq.com/s/6Sj2QIELQvI28Rpp7A39Fg
 https://mp.weixin.qq.com/s/Ctn1Wr68lph1UK_wjfCY1Q
 
 策略梯度搜索：不使用搜索树的在线规划和专家迭代
+
+https://mp.weixin.qq.com/s/78ir-Z4ch8_aVpjC6aCPGg
+
+DeepMind综述深度强化学习中的快与慢，智能体应该像人一样学习

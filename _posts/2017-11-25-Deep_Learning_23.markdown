@@ -192,7 +192,7 @@ https://mp.weixin.qq.com/s/cGKsZYxrVP7hVnv7Jli9Zg
 
 MIT课程全面解读2019深度学习最前沿
 
-# GAN参考资源+
+# GAN参考资源
 
 https://mp.weixin.qq.com/s/M-YeUqvcSVHj_MbCS_c-6Q
 
@@ -213,6 +213,26 @@ https://mp.weixin.qq.com/s/9N-eOyRseMc6zVH1_VBE4w
 https://mp.weixin.qq.com/s/V8v9eeP4HFH-TfIKUio6Iw
 
 上交大推出新型无监督生成模型算法CoT，性能比GAN稳定！
+
+https://mp.weixin.qq.com/s/ErmGAsSHvCOxCn97yZ4WJQ
+
+关于GAN的灵魂七问
+
+https://mp.weixin.qq.com/s/Q0IUGbVcIYJMdidSVcFzFw
+
+GAN的五个神奇应用场景
+
+https://mp.weixin.qq.com/s/LJfsadhp3WGi0tLXN7jCUA
+
+GAN生成图像综述
+
+https://mp.weixin.qq.com/s/wW8kTQ7eQeCJsHC9ju8VLA
+
+One Day One GAN_keras版[DAY 1]
+
+https://mp.weixin.qq.com/s/kWv-hp2svq1OEHy2DqQ4uA
+
+古纾旸：Generative model is more than just GANs
 
 # LSTM进阶
 

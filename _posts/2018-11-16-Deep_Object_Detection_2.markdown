@@ -80,6 +80,10 @@ https://mp.weixin.qq.com/s/NPoB4_kpTIYAO34qZFRbQA
 
 对象检测网络中的NMS算法详解
 
+https://mp.weixin.qq.com/s/GdNcQqDeVQ1vtIJrAIYpWw
+
+目标检测之非极大值抑制(NMS)各种变体
+
 ## NMS的快速算法
 
 RCNN系列的NMS的一个经典取值是：从N=6000个排好序的矩形框中，选出M=300个独立的目标框。
@@ -243,29 +247,3 @@ http://www.cnblogs.com/objectDetect/p/5947169.html
 2.想办法让全连接层（罪魁祸首）可以接受非固定的输入维度。（打破全连接层的固定性，继而也打破了图像输入的固定性）
 
 以上的方法1就是SPPnet的思想。
-
-![](/images/article/spp.png)
-
-**Step 1**：为图像建立不同尺度的图像金字塔。上图为3层。
-
-**Step 2**：将图像金字塔中包含的feature映射到固定尺寸的向量中。上图为$$(16+4+1)\times 256$$维向量。
-
-总结：
-
-![](/images/article/spp_p.png)
-
-从上图可以看出，由于卷积策略的不同，SPPnet的流程和RCNN也有一点微小的差异：
-
-1.RCNN是先选择区域，然后对区域进行卷积，并检测。
-
-2.SPPnet是先统一卷积，然后应用选择区域，做区域检测。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/24774302
-
-SPPNet-引入空间金字塔池化改进RCNN
-
-http://kaiminghe.com/iccv15tutorial/iccv2015_tutorial_convolutional_feature_maps_kaiminghe.pdf
-
-何恺明：Convolutional Feature Maps

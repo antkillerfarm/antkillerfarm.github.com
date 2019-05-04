@@ -12,6 +12,8 @@ category: resource
 
 >胡正明，1947年生。台湾大学本科（1968）+UCB硕博（1970，1973）。台积电首席科学家，MIT教授。美国工程院院士，中科院外籍院士。
 
+![](/images/img3/NMOS_PMOS.png)
+
 参考：
 
 http://www.sohu.com/a/108777952_467791
@@ -281,6 +283,10 @@ https://mp.weixin.qq.com/s/QwE_VTEUS9kGDDrHlzPYmg
 https://zhuanlan.zhihu.com/p/63494668
 
 显存为什么不能当内存使？内存、Cache和Cache一致性
+
+https://zhuanlan.zhihu.com/p/32378843
+
+ARM攒机指南-汽车篇
 
 # Apollo
 

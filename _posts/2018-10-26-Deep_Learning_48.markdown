@@ -334,6 +334,10 @@ https://mp.weixin.qq.com/s/B5XNmFlSnjEh2xAXB42pHQ
 
 超十亿样本炼就的CNN助力图像质量增强，Adobe推出新功能“增强细节”
 
+https://mp.weixin.qq.com/s/MEjZT_41w2cRqIYDi8a1rw
+
+腾讯优图CVPR中标论文：不靠硬件靠算法，暗光拍照也清晰
+
 # AI可解释性
 
 XAI(Explainable Artificial Intelligence)
