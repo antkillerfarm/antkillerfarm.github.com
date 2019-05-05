@@ -30,9 +30,11 @@ category: GAN & VAE
 
 ## 泛函 & 变分
 
-泛函数 (Functionals)、Calculus of Variations
+历史上对于最速降线的研究催生了泛函数（Functionals）和变分法（Calculus of Variations）的概念。
 
-最速降线（The most fast line problem）
+这里就以最速降线为例，说明一下泛函和变分的含义。
+
+
 
 教程：
 
