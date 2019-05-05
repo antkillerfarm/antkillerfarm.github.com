@@ -244,6 +244,10 @@ https://www.cnblogs.com/lochan/p/7011831.html
 
 核化主成分分析（Kernel PCA）应用及调参
 
+https://zhuanlan.zhihu.com/p/59644996
+
+Kernel Principal Component Analysis(KPCA核主成分分析)
+
 ## 参考
 
 https://mp.weixin.qq.com/s/tJ_FbL2nFQfkvKqpQJ8kmg

@@ -231,6 +231,24 @@ https://mp.weixin.qq.com/s/bf_CHcoZMjqP6Is4ebD58g
 
 使用Prophet预测股价并进行多策略交易
 
+## Lebesgue积分
+
+![](/images/img3/Riemann_Lebesgue.jpg)
+
+蓝色的是Riemann积分，红色的是Lebesgue积分。
+
+>Henri Léon Lebesgue，1875～1941，法国数学家。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/34407471
+
+如何理解时间序列？—从Riemann积分和Lebesgue积分谈起
+
+https://zhuanlan.zhihu.com/p/49262150
+
+从Riemann积分到Lebesgue积分
+
 ## 参考
 
 https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average
@@ -260,10 +278,6 @@ https://mp.weixin.qq.com/s/JR-GIXwHF45OysoE0qvwzw
 https://mp.weixin.qq.com/s/2hpQ_7Ih58d1RKYb1oW_Sg
 
 时间序列简介（一）
-
-https://zhuanlan.zhihu.com/p/34407471
-
-如何理解时间序列？—从Riemann积分和Lebesgue积分谈起
 
 https://zhuanlan.zhihu.com/p/35093835
 

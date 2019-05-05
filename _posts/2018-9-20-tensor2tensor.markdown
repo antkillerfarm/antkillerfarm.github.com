@@ -144,7 +144,7 @@ https://github.com/ysh329/deep-learning-model-convertor
 
 Tensorflow Model / ONNX / Caffe Model / ... ---> DL IR (nGraph IR / *.IR) ---> LLVM IR ---> CPU JIT / GPU / ...
 
-如果把前面的Model看成一种语言或者DSL，就是DSL ---> DL IR ---> LLVM IR ---> Target ，然后你就在中间层疯狂的做优化，编译器优化开发也是这样做的。
+如果把前面的Model看成一种语言或者DSL，就是DSL ---> DL IR ---> LLVM IR ---> Target，然后你就在中间层疯狂的做优化，编译器优化开发也是这样做的。
 
 在LLVM IR出现以前，很多编译器都有几层的IR表示，比如 C++ ----> 1st IR ----> OPT ----> 2nd IR ----> .... -> Target，只是LLVM出来以后，LLVM IR做了统一，编译器变为了 C++ ----> LLVM IR ---> OPT ----> LLVM IR ----> Target
 
@@ -201,6 +201,14 @@ nGraph是Intel推出的一款能兼容所有框架的深度神经网络（DNN）
 官网：
 
 https://ngraph.nervanasys.com/docs/latest/
+
+## 展望
+
+总的来说，DL方面的中间语言/接口/编译器架构都太多了。下图是Google最近（2019.4）推出的MLIR对自家各种优化技术的总结，这里还不包括其他家的相关技术。
+
+![](/images/img2/MLIR.png)
+
+从趋势来看，仅仅纠结于各种模型的导入/导出已经不再是最佳的做法，DL compiler才是王道。
 
 ## 参考
 
@@ -345,23 +353,3 @@ TensorFlow 1.11.0发布，一键多GPU
 https://mp.weixin.qq.com/s/316VVXLQfeIsKNk4ld-VRw
 
 TensorFlow语义分割套件开源了ECCV18旷视科技BiSeNet实时分割算法
-
-https://mp.weixin.qq.com/s/XI1J4ardEWKP4UQ4IXZGTQ
-
-TensorFlow Hub,给您带来全新的Web体验
-
-http://www.jianshu.com/p/1da012a83b74
-
-利用TensorFlow实现排序和搜索算法
-
-https://mp.weixin.qq.com/s/oEqMjOTj8xpd3sg60ZUhqA
-
-TensorFlow的c++实践及各种坑
-
-https://mp.weixin.qq.com/s/-5RCRl9ztQ2dQmX00QvfvQ
-
-在Python和TensorFlow上构建Word2Vec词嵌入模型
-
-https://mp.weixin.qq.com/s/Nyjp0mZxcn04vLKjJXLSaw
-
-如何用TensorFlow在安卓设备上实现深度学习推断

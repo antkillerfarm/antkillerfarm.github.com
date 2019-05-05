@@ -1,0 +1,205 @@
+---
+layout: post
+title:  VAE（三）——VAE vs GAN, 参考资源
+category: GAN & VAE 
+---
+
+# Vanilla VAE（续）
+
+## 生成模型近似
+
+对于二值数据，我们可以对decoder用sigmoid函数激活，然后用交叉熵作为损失函数，这对应于$$q(x\mid z)$$为伯努利分布；而对于一般数据，我们用MSE作为损失函数，这对应于$$q(x\mid z)$$为固定方差的正态分布。
+
+苏剑林稍后还写了以下两文，都很值得一看：
+
+https://kexue.fm/archives/5332
+
+基于CNN和VAE的作诗机器人：随机成诗
+
+https://kexue.fm/archives/5383
+
+变分自编码器：这样做为什么能成？
+
+## 参考
+
+https://mp.weixin.qq.com/s/TqZnlXLKHhZn3U29PlqetA
+
+变分自编码器VAE面临的挑战与发展方向
+
+https://mp.weixin.qq.com/s/mtZ4_pwl8_GhitgImAU0VA
+
+一文读懂什么是变分自编码器
+
+https://mp.weixin.qq.com/s/LQFuXgI7uZK2UKRfZvlVbA
+
+Variational AutoEncoder
+
+https://mp.weixin.qq.com/s/lnSMdOk8fYfdU4aGeI5j7Q
+
+未标注的数据如何处理？一文读懂变分自编码器VAE
+
+https://zhuanlan.zhihu.com/p/27549418
+
+花式解释AutoEncoder与VAE
+
+https://mp.weixin.qq.com/s/TJDGZvAvT7KamR_WN-oYYw
+
+如何使用变分自编码器VAE生成动漫人物形象
+
+https://mp.weixin.qq.com/s/1q36Cb4Fy4Mg7DcrAcJv3A
+
+双人协作游戏带你理解变分自编码器-Part1
+
+https://mp.weixin.qq.com/s/zJf-dWsMe5WELgDz7TlivA
+
+双人协作游戏带你理解变分自编码器-Part2
+
+# VAE vs GAN
+
+VAE是直接计算生成图片和原始图片的均方误差而不是像GAN那样去对抗来学习，这就使得生成的图片会有点模糊。但是VAE的收敛性要优于GAN。因此又有GAN hybrids：一方面可以提高VAE的采样质量和改善表示学习，另一方面也可以提高GAN的稳定性和丰富度。
+
+![](/images/img3/VAE_GAN.jpg)
+
+上图给出了VAE和GAN的联系和区别。
+
+无论是VAE还是GAN，我们在接触一个新模型的时候都需要注意以下几点：
+
+1.网络结构和训练流程。
+
+2.Loss。
+
+**3.随机性的引入方法。**
+
+其中，第3点是生成模型特有的，必须加倍重视。
+
+参考：
+
+https://mp.weixin.qq.com/s/d_P-4uQx0kC2w6J69OZIAw
+
+Deepmind研究科学家最新演讲：VAEs and GANs
+
+https://mp.weixin.qq.com/s/9N_3JkNEPdXQgFn0S7MqnA
+
+走进深度生成模型：变分自动编码器（VAE）和生成对抗网络（GAN）
+
+# AAE
+
+论文：
+
+《Adversarial Autoencoders》
+
+![](/images/img3/AAE.png)
+
+![](/images/img3/AAE_2.png)
+
+![](/images/img3/AAE_3.png)
+
+参考：
+
+http://kissg.me/2017/12/17/papernotes03/
+
+AAE, ALI, BiGAN
+
+# VAE-GAN
+
+论文：
+
+《Autoencoding beyond pixels using a learned similarity metric》
+
+![](/images/img3/VAE_GAN.png)
+
+![](/images/img3/VAE_GAN_2.png)
+
+而关于VAEGAN，有趣的一点是，我们不仅可以用GANs来提升VAE，也可以用VAE来提升GANs。如果是被用作后者的话，“GANVAE”其实就等效为CycleGAN的一部分
+
+参考：
+
+https://mp.weixin.qq.com/s/fzadP8NwPTxuhEB0O4GU8g
+
+漫谈生成模型，从AE到CVAE-GAN
+
+# BiGAN
+
+论文：
+
+《Adversarial Feature Learning》
+
+# BiVAE
+
+论文：
+
+《A Variational Autoencoding Approach for Inducing Cross-lingual WordEmbeddings》
+
+# Big transformation
+
+我们前面提到的风格转换都是比较小幅度的风格转换,有的时候我们会需要做非常大的风格转换,譬如把真人照片转成动漫照片。
+
+# 参考资源
+
+https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw
+
+变分U-Net，可按条件独立变换目标的外观和形状
+
+https://mp.weixin.qq.com/s/ZlLuhu08m_RnD-h86df8sA
+
+清华大学提出SA-VAE框架，通过单样本/少样本学习生成任意风格的汉字
+
+https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
+
+面向无监督任务：DeepMind提出神经离散表示学习生成模型VQ-VAE
+
+https://mp.weixin.qq.com/s/51Xu7osdVa-fCV-IZbHdCA
+
+Wasserstein自编码器
+
+https://mp.weixin.qq.com/s/0HK026K6jru10VscvT2rOQ
+
+哈佛大学提出变分注意力：用VAE重建注意力机制
+
+https://mp.weixin.qq.com/s/790wbFnxkNbNRampiV-0MQ
+
+谷歌大脑提出对抗正则化方法，显著改善自编码器的泛化和表征学习能力
+
+https://mp.weixin.qq.com/s/iOdh1iIP0GIYe4gRDE0z-g
+
+漫谈概率PCA和变分自编码器
+
+https://mp.weixin.qq.com/s/pBnKNRc56HhBWvrYaZjGdw
+
+稳定、表征丰富的球面变分自编码器
+
+https://mp.weixin.qq.com/s/QOdQKdLolR-YTihzaA81yw
+
+黄怀波 ：自省变分自编码器理论及其在图像生成上的应用
+
+https://mp.weixin.qq.com/s/FqY9I02blg3S8_K50B7czQ
+
+UC伯克利提出小批量MH测试：令MCMC方法在自编码器中更强劲
+
+https://zhuanlan.zhihu.com/p/48985202
+
+谈谈变分自编码器背后的数学知识
+
+https://mp.weixin.qq.com/s/fYR2dS3wCMMVk3s9O4nqUw
+
+自编码表示学习 25页最新进展综述，90篇参考文献
+
+https://zhuanlan.zhihu.com/p/52974147
+
+VAE 的细节：$$p(x \mid z)$$的噪音，与$$p(z \mid x)$$的编码坍塌
+
+https://mp.weixin.qq.com/s/uNjF6NxVRs_gAKAmxRpThQ
+
+华为美研所提出自动编码变换网络AET：用无监督逼近全监督效果
+
+https://zhuanlan.zhihu.com/p/60330303
+
+用于协同过滤的变分自编码器论文引介
+
+https://mp.weixin.qq.com/s/CSx7dnqPjVDAvM6ena-FTw
+
+从俄罗斯方块到星际2，全都用得上：DeepMind无监督分割大法，为游戏而生
+
+https://mp.weixin.qq.com/s/XMLYjw_wN-M8jluczkbcyw
+
+一种考虑缓和KL消失的简单VAE训练方法

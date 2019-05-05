@@ -354,7 +354,7 @@ https://mp.weixin.qq.com/s/ZRbEwUlqtp8f5987j9-McQ
 
 自动驾驶计算机视觉研究综述：难题、数据集与前沿成果
 
-# NLP参考资源+
+# NLP参考资源
 
 https://zhuanlan.zhihu.com/p/64032803
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  量子计算, 遗传算法 & 进化算法, PaddlePaddle, X-Deep Learning, 安全
+title:  量子计算, 遗传算法 & 进化算法, PaddlePaddle, X-Deep Learning, TVM, 安全
 category: resource 
 ---
 
@@ -277,6 +277,12 @@ https://mp.weixin.qq.com/s/kdCk_twY_czQo58y3x_yyA
 阿里深度学习框架开源了！无缝对接TensorFlow、PyTorch
 
 # TVM
+
+官网：
+
+https://tvm.ai
+
+参考：
 
 https://mp.weixin.qq.com/s/irvBbPKENiZX9G_6wh5c-Q
 

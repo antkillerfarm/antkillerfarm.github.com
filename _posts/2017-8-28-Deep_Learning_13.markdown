@@ -143,6 +143,8 @@ https://github.com/andravin/wincnn
 
 这个项目可以很方便的计算不同大小的核的Winograd的结果。这个项目中还有一个pdf文件作为上述论文的补充材料，详细的给出了各矩阵的计算方法。
 
+![](/images/img3/Winograd.png)
+
 参考：
 
 http://shuokay.com/2018/02/21/winograd/

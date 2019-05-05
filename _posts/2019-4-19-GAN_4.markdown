@@ -154,6 +154,12 @@ CGAN虽然已经有了些user control的能力，然而还不够强。比如人�
 
 2.Discriminator和Classifier共享大多数参数，仅最后一层不同。
 
+参考：
+
+https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247492415&idx=1&sn=a359e72ee99555f7a2fb4e21b2ad51db
+
+InfoGAN：一种无监督生成方法
+
 # ProGAN
 
 论文：

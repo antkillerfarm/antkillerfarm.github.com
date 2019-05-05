@@ -294,15 +294,53 @@ https://www.cnblogs.com/vincentcheng/p/9186540.html
 
 Augmentor和imgaug——python图像数据增强库
 
+## 可视化
+
+https://github.com/neozhaoliang/pywonderland/tree/master/
+
+如何用Python画各种著名数学图案
+
+https://mp.weixin.qq.com/s/p69x5YyWxMulxx_OwX3nzQ
+
+TuChart：基于Tushare和Echarts的股票数据视觉化应用
+
+https://mp.weixin.qq.com/s/D_e8lxO3cx-dshEQ_zhfzQ
+
+如何利用散点图矩阵进行数据可视化
+
+https://mp.weixin.qq.com/s/dARWbR1ghho0yX02lNA-gw
+
+Python绘制histogram直方图
+
+https://mp.weixin.qq.com/s/j07zF72UyDXpKNnvQli5NQ
+
+简单几步教你用Python生成词云图
+
+https://mp.weixin.qq.com/s/tHNd6y2v7GXN2mSIv0qXlg
+
+手把手：一张图看清编程语言发展史，你也能用Python画出来！
+
+https://mp.weixin.qq.com/s/7M_xbmDQIlSEB1TKN3fbQw
+
+4种更快更简单实现Python数据可视化的方法
+
+https://mp.weixin.qq.com/s/wsa-HxJRCzhBF8E6yrLCQg
+
+如何用Python画一个中国地图？
+
+https://mp.weixin.qq.com/s/c7Sry6FaGv3ZgkKLekxc2g
+
+用Python画中国地图（下）
+
+https://mp.weixin.qq.com/s/ty5xy6s0z3rvMYZptdTdBQ
+
+Python热图进阶
+
 ## 参考
 
 https://mp.weixin.qq.com/s/S7gnAdekPFcyd4ni1m9phg
 
 GitHub最著名的20个Python机器学习项目，值得收藏！
-
-https://github.com/neozhaoliang/pywonderland/tree/master/
-
-如何用Python画各种著名数学图案
 
 http://old.sebug.net/paper/books/scipydoc/index.html
 
@@ -376,10 +414,6 @@ http://www.sohu.com/a/168170785_642762
 
 基于机器学习的Python信用卡欺诈检测
 
-https://mp.weixin.qq.com/s/p69x5YyWxMulxx_OwX3nzQ
-
-TuChart：基于Tushare和Echarts的股票数据视觉化应用
-
 https://mp.weixin.qq.com/s/Xl9ZT7_I8P_ZU4O8j6bS5Q
 
 基于Python的人脸识别：识别准确率高达99.38%！
@@ -398,7 +432,7 @@ https://mp.weixin.qq.com/s/V1EVdhX6-c1VNGNBgscFeA
 
 https://mp.weixin.qq.com/s/UOJsoB_YwBunj0YNShF11w
 
-深度学习 + OpenCV，Python实现实时视频目标检测
+深度学习+OpenCV，Python实现实时视频目标检测
 
 https://mp.weixin.qq.com/s/YCNnfR9XAP0i-Qs-DIpOCg
 
@@ -451,23 +485,3 @@ Logistic回归实战篇之预测病马死亡率（三）
 https://mp.weixin.qq.com/s/U46HOaBP5ijghpc2myJCvA
 
 机器学习中，使用Scikit-Learn简单处理文本数据？
-
-https://mp.weixin.qq.com/s/HoMr52X9O4fMs2YjtH9oFg
-
-scikit-learn Adaboost类库的实战分析
-
-https://mp.weixin.qq.com/s/61oY3gLEOjQjCJgGkEcABw
-
-支持向量机分类实战
-
-https://mp.weixin.qq.com/s?__biz=MzIxNjA2ODUzNg==&mid=2651435914&idx=1&sn=b0b6f1cda08798dc35bf0930dc9d9096
-
-盘膝而坐--跟你聊聊APP市场的数据分析
-
-https://mp.weixin.qq.com/s/AVSFbfikczjm7flsQQPC1g
-
-2017年最受数据科学欢迎的Top15个Python库
-
-https://mp.weixin.qq.com/s/jBULfMR0_7Ms9nc5CLLIFQ
-
-Python的开源人脸识别库：离线识别率高达99.38%

@@ -38,6 +38,10 @@ https://mp.weixin.qq.com/s/zRdJktyk1LZWUd2cyTjpiw
 
 基于图像检索的行人重识别
 
+https://zhuanlan.zhihu.com/p/31921944
+
+基于深度学习的行人重识别研究综述
+
 https://zhuanlan.zhihu.com/p/31473785
 
 行人再识别中的迁移学习：图像风格转换
@@ -189,3 +193,17 @@ CSP行人检测：无锚点框的检测新思路
 https://mp.weixin.qq.com/s/FodjDqc30XuT4fV3XPVy8g
 
 一个更加强力的ReID Baseline
+
+# NLP参考资源+
+
+https://mp.weixin.qq.com/s/_2P7Ru990cUNzOpfPcDyvg
+
+斯坦福NLP组最新报告：自然语言处理中的学习挑战
+
+https://mp.weixin.qq.com/s/kYCb4Fc4_Gh4eIlJbFDwJA
+
+自然语言处理中的语言模型预训练方法
+
+https://mp.weixin.qq.com/s/jInNuNQprWlCNAz7UyHRvg
+
+IEMLRN：基于图像增强的句子语义表示

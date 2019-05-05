@@ -92,6 +92,10 @@ https://mp.weixin.qq.com/s/hXGGN1K0LoqAdtyYhCu63w
 
 以合成假脸、假画闻名的GAN很成熟了？那这些问题呢？
 
+https://mp.weixin.qq.com/s/gzwa6ZZeNvm1MyIM93sC5Q
+
+全新缺失图像数据插补框架—CollaGAN
+
 # Graph NN
 
 ## DGL

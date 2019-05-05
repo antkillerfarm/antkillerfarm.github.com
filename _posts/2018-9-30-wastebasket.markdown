@@ -294,10 +294,6 @@ https://mp.weixin.qq.com/s/q5mPN_rt1Af5L2fnxuTdCA
 
 46款数据可视化分析工具大集合
 
-https://mp.weixin.qq.com/s/tHNd6y2v7GXN2mSIv0qXlg
-
-手把手：一张图看清编程语言发展史，你也能用Python画出来！
-
 https://mp.weixin.qq.com/s/mD732PqDtqYdFZSxZWtvvg
 
 从1维到6维，一文读懂多维数据可视化策略
@@ -352,18 +348,6 @@ https://mp.weixin.qq.com/s/94IGjVPXZ0FeCILQN33eBQ
 
 遇见大数据可视化：不要错过这么漂亮的数据可视化案例！
 
-https://mp.weixin.qq.com/s/7M_xbmDQIlSEB1TKN3fbQw
-
-4种更快更简单实现Python数据可视化的方法
-
-https://mp.weixin.qq.com/s/wsa-HxJRCzhBF8E6yrLCQg
-
-如何用Python画一个中国地图？
-
-https://mp.weixin.qq.com/s/c7Sry6FaGv3ZgkKLekxc2g
-
-用Python画中国地图（下）
-
 https://mp.weixin.qq.com/s/torRtPSVRnULRTbv4dB1sA
 
 大规模地理数据可视化入门：Deck.gl和H3
@@ -375,10 +359,6 @@ https://mp.weixin.qq.com/s/UwPCDA89GH5X-HubeJddnQ
 https://mp.weixin.qq.com/s/MMzvZA55Xb2sOA7rJiXiEw
 
 那些酷炫的深度学习网络图怎么画出来的？
-
-https://mp.weixin.qq.com/s/TrAzbHt0kGlQKpymVJet6A
-
-8行代码用Python画一个中国地图
 
 ## howmuch.net
 
@@ -427,3 +407,11 @@ LinkedIn文本分析平台：主题挖掘的四大技术步骤
 http://mp.weixin.qq.com/s/Or6oDt0aZFlnlMr8EBr-xQ
 
 三角兽首席科学家王宝勋：热度之下的对话生成
+
+https://mp.weixin.qq.com/s/Xnea50Eisq9rzhGFa1iTFA
+
+DRr-Net：基于动态重读机制的句子语义匹配方法
+
+https://mp.weixin.qq.com/s/M_UE4yI-ZDXhGtWXprGYjA
+
+自然语言处理常识推理综述论文

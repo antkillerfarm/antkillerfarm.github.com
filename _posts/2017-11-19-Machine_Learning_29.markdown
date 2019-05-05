@@ -100,6 +100,26 @@ $$k\le (D/\gamma)^2$$
 
 # TensorFlow+
 
+https://mp.weixin.qq.com/s/XI1J4ardEWKP4UQ4IXZGTQ
+
+TensorFlow Hub,给您带来全新的Web体验
+
+http://www.jianshu.com/p/1da012a83b74
+
+利用TensorFlow实现排序和搜索算法
+
+https://mp.weixin.qq.com/s/oEqMjOTj8xpd3sg60ZUhqA
+
+TensorFlow的c++实践及各种坑
+
+https://mp.weixin.qq.com/s/-5RCRl9ztQ2dQmX00QvfvQ
+
+在Python和TensorFlow上构建Word2Vec词嵌入模型
+
+https://mp.weixin.qq.com/s/Nyjp0mZxcn04vLKjJXLSaw
+
+如何用TensorFlow在安卓设备上实现深度学习推断
+
 https://mp.weixin.qq.com/s/OVWbxBNc4i0_5jgy06xS1A
 
 基于Tensorflow Estimators的文本分类

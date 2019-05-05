@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  GAN（一）——概述
+title:  GAN（一）——Vanilla GAN
 category: GAN & VAE 
 ---
 
-# 概况
+# Vanilla GAN
 
 GAN是“生成对抗网络”（Generative Adversarial Networks）的简称，由2014年还在蒙特利尔读博士的Ian Goodfellow引入深度学习领域。
 

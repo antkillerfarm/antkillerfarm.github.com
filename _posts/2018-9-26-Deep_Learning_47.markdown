@@ -148,6 +148,20 @@ https://github.com/google-research/bert/blob/master/multilingual.md
 
 https://github.com/macanv/BERT-BiLSMT-CRF-NER
 
+## ELMo
+
+https://mp.weixin.qq.com/s/I315hYPrxV0YYryqsUysXw
+
+NLP的游戏规则从此改写？从word2vec, ELMo到BERT
+
+https://mp.weixin.qq.com/s/VL09dIQE6kAUzj5-CRFoXA
+
+ELMo的朋友圈：预训练语言模型真的一枝独秀吗？
+
+https://mp.weixin.qq.com/s/1nZV6wXzeIxIAAovFOageA
+
+手把手教你用ELMo模型提取文本特征
+
 ## GPT 2.0
 
 https://mp.weixin.qq.com/s/E7FLbXYvE9irSpJ9Cdx5tg
@@ -179,14 +193,6 @@ https://mp.weixin.qq.com/s/INDOBcpg5p7vtPBChAIjAA
 https://mp.weixin.qq.com/s/SZMYj4rMneR3OWST007H-Q
 
 解读谷歌最强NLP模型BERT：模型、数据和训练
-
-https://mp.weixin.qq.com/s/I315hYPrxV0YYryqsUysXw
-
-NLP的游戏规则从此改写？从word2vec, ELMo到BERT
-
-https://mp.weixin.qq.com/s/VL09dIQE6kAUzj5-CRFoXA
-
-ELMo的朋友圈：预训练语言模型真的一枝独秀吗？
 
 https://mp.weixin.qq.com/s/8uZ2SJtzZhzQhoPY7XO9uw
 

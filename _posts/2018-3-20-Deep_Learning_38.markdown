@@ -283,3 +283,29 @@ https://mp.weixin.qq.com/s/e4hriDvTRLkg-mIifVWayw
 https://zhuanlan.zhihu.com/p/61060358
 
 Paper survey: Multi-Agent Reinforcement Learning
+
+# Capsule
+
+https://github.com/freefuiiismyname/capsule-mrc
+
+基于capsule的观点型阅读理解模型
+
+https://mp.weixin.qq.com/s/cskdgsysD7R_FKChAKmlDg
+
+利用Capsule重构过程，Hinton等人实现对抗样本的自动检测
+
+https://mp.weixin.qq.com/s/7fBXMvT4eyZrKhPKQTAIZQ
+
+你听说过胶囊网络吗？
+
+https://mp.weixin.qq.com/s/F9SGZPZj6gup_nOVuDel6A
+
+与胶囊网络异曲同工：Bengio等提出四元数循环神经网络
+
+https://mp.weixin.qq.com/s/4o9XHGwx5lYsJ7YfUNHSoQ
+
+百年老图难倒谷歌AI，网友：是鸭是兔？连我都不能确定
+
+https://mp.weixin.qq.com/s/dN1p7nuv6xtnIsSuY73CcA
+
+基于GNN，强于GNN：胶囊图神经网络的PyTorch实现

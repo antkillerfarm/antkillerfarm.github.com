@@ -178,6 +178,8 @@ $$EMD(P_r,P_\theta) = \frac{\sum_{i=1}^m \sum_{j=1}^n f_{i,j}d_{i,j}}{\sum_{i=1}
 
 这个问题实际是线性规划中的运输问题，可以用匈牙利算法迭代求解。最终求得的最小值就是EMD。
 
+最优方案也被称为“最优传输”，相关的研究被称作“最优传输理论”。
+
 EMD可以是多维分布之间的距离。一维的EMD也被称为Match distance。
 
 EMD有时也称作Wasserstein距离。

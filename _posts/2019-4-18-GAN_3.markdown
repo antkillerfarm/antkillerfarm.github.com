@@ -134,7 +134,9 @@ BEGAN则借鉴了EBGAN和WGAN各自的一些优点。
 
 《Deep Generative Image Models using a Laplacian Pyramid of Adversarial Networks》
 
-顾名思义，这是使用了Laplacian Pyramid来不断提升生成图片的分辨率。
+![](/images/img3/LAPGAN.png)
+
+上图是LAPGAN的网络结构图。顾名思义，这是使用了Laplacian Pyramid来不断提升生成图片的分辨率。
 
 参考：
 
@@ -218,7 +220,7 @@ Pix2Pix相对于传统GAN的改进在于：
 
 **1.D网络的输入同时包括生成的图片X和它的素描图Y，X和Y使用Concat操作进行融合。**例如，假设两者都是3通道的RGB颜色图，则D网络的Input就是一个6通道的tensor，即所谓的Depth-wise concatenation。
 
-**2.G网络使用dropout来提供随机性。**作者在实践中发现，噪声向量在这个模型的学习过程中，被模型忽略掉了，起不到相应的作用。
+**2.G网络使用dropout来提供随机性。**作者在实践中发现，传统的噪声向量在这个模型的学习过程中，被模型忽略掉了，起不到相应的作用。
 
 **3.G网络使用U-NET。**实践表明，U-NET比AE的效果要好。
 

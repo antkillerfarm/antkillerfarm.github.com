@@ -6,6 +6,26 @@ category: AI
 
 # Machine Learning之Python篇
 
+https://mp.weixin.qq.com/s/HoMr52X9O4fMs2YjtH9oFg
+
+scikit-learn Adaboost类库的实战分析
+
+https://mp.weixin.qq.com/s/61oY3gLEOjQjCJgGkEcABw
+
+支持向量机分类实战
+
+https://mp.weixin.qq.com/s?__biz=MzIxNjA2ODUzNg==&mid=2651435914&idx=1&sn=b0b6f1cda08798dc35bf0930dc9d9096
+
+盘膝而坐--跟你聊聊APP市场的数据分析
+
+https://mp.weixin.qq.com/s/AVSFbfikczjm7flsQQPC1g
+
+2017年最受数据科学欢迎的Top15个Python库
+
+https://mp.weixin.qq.com/s/jBULfMR0_7Ms9nc5CLLIFQ
+
+Python的开源人脸识别库：离线识别率高达99.38%
+
 https://zhuanlan.zhihu.com/p/30630608
 
 Python和MATLAB交互的基本操作
@@ -142,10 +162,6 @@ https://mp.weixin.qq.com/s/5YHyM7gILvCItScvYYoANQ
 
 Python实现文字转语音功能
 
-https://mp.weixin.qq.com/s/D_e8lxO3cx-dshEQ_zhfzQ
-
-如何利用散点图矩阵进行数据可视化
-
 https://mp.weixin.qq.com/s/-s5K8gl4Xdjh_1xgTn9PZg
 
 维基百科中的数据科学：手把手教你用Python读懂全球最大百科全书
@@ -266,17 +282,9 @@ https://mp.weixin.qq.com/s/8H8GrAe7wMaLGWKjKUVp2Q
 
 用文本分类模型轻松搞定复杂语义分析
 
-https://mp.weixin.qq.com/s/dARWbR1ghho0yX02lNA-gw
-
-Python绘制histogram直方图
-
 https://mp.weixin.qq.com/s/ss9UlDU9lYokS-EDrPnOxQ
 
 如何在Python中使用LightFM构建可扩展的电子商务推荐系统？
-
-https://mp.weixin.qq.com/s/j07zF72UyDXpKNnvQli5NQ
-
-简单几步教你用Python生成词云图
 
 # 边缘计算
 
@@ -381,23 +389,3 @@ https://mp.weixin.qq.com/s/PPAIARqkYqaIYRD7SFOtBg
 https://mp.weixin.qq.com/s/r1uXn2jGsHZcZ8Nk7GnGFA
 
 语义表征的无监督对比学习：一个新理论框架
-
-https://mp.weixin.qq.com/s/Xnea50Eisq9rzhGFa1iTFA
-
-DRr-Net：基于动态重读机制的句子语义匹配方法
-
-https://mp.weixin.qq.com/s/M_UE4yI-ZDXhGtWXprGYjA
-
-自然语言处理常识推理综述论文
-
-https://mp.weixin.qq.com/s/_2P7Ru990cUNzOpfPcDyvg
-
-斯坦福NLP组最新报告：自然语言处理中的学习挑战
-
-https://mp.weixin.qq.com/s/kYCb4Fc4_Gh4eIlJbFDwJA
-
-自然语言处理中的语言模型预训练方法
-
-https://mp.weixin.qq.com/s/jInNuNQprWlCNAz7UyHRvg
-
-IEMLRN：基于图像增强的句子语义表示

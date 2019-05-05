@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十六）——Style Transfer（2）, 人脸检测/识别（1）, SENet
+title:  深度学习（十六）——Style Transfer（2）, 人脸检测/识别（1）, SENet, Spatial Transformer Networks
 category: DL 
 ---
 
@@ -289,3 +289,31 @@ SENet（Squeeze-and-Excitation Networks）算法笔记
 https://mp.weixin.qq.com/s/ao7gOfMYDJDPsNMVV9-Dlg
 
 后ResNet时代：SENet与SKNet
+
+# Spatial Transformer Networks
+
+论文：
+
+《Spatial Transformer Networks》
+
+参考：
+
+http://www.cnblogs.com/neopenx/p/4851806.html
+
+Spatial Transformer Networks(空间变换神经网络)
+
+http://blog.csdn.net/shaoxiaohu1/article/details/51809605
+
+论文笔记：Spatial Transformer Networks
+
+http://blog.csdn.net/shaoxiaohu1/article/details/51809605
+
+Spatial Transformer Networks
+
+https://mp.weixin.qq.com/s/ciqQMezcB-oM24X8eQqTNg
+
+花式玩耍Spatial Transformation Networks
+
+https://mp.weixin.qq.com/s/4VE2lZeFf05AyLp_s3nTFQ
+
+理解Spatial Transformer Networks

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十）——自动求导, 元学习, VAE进阶, 深度哈希
+title:  深度学习（三十）——自动求导, 元学习, 深度哈希
 category: DL 
 ---
 
@@ -240,76 +240,6 @@ https://mp.weixin.qq.com/s/8sBXlnXiZNsPRwFsgJVRQQ
 https://mp.weixin.qq.com/s/x7uk7jBNvnM7Tgk9lFKy3Q
 
 元学习(Meta-Learning)综述及五篇顶会论文推荐
-
-# VAE进阶
-
-https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw
-
-变分U-Net，可按条件独立变换目标的外观和形状
-
-https://mp.weixin.qq.com/s/ZlLuhu08m_RnD-h86df8sA
-
-清华大学提出SA-VAE框架，通过单样本/少样本学习生成任意风格的汉字
-
-https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
-
-面向无监督任务：DeepMind提出神经离散表示学习生成模型VQ-VAE
-
-https://mp.weixin.qq.com/s/51Xu7osdVa-fCV-IZbHdCA
-
-Wasserstein自编码器
-
-https://mp.weixin.qq.com/s/0HK026K6jru10VscvT2rOQ
-
-哈佛大学提出变分注意力：用VAE重建注意力机制
-
-https://mp.weixin.qq.com/s/790wbFnxkNbNRampiV-0MQ
-
-谷歌大脑提出对抗正则化方法，显著改善自编码器的泛化和表征学习能力
-
-https://mp.weixin.qq.com/s/iOdh1iIP0GIYe4gRDE0z-g
-
-漫谈概率PCA和变分自编码器
-
-https://mp.weixin.qq.com/s/pBnKNRc56HhBWvrYaZjGdw
-
-稳定、表征丰富的球面变分自编码器
-
-https://mp.weixin.qq.com/s/QOdQKdLolR-YTihzaA81yw
-
-黄怀波 ：自省变分自编码器理论及其在图像生成上的应用
-
-https://mp.weixin.qq.com/s/FqY9I02blg3S8_K50B7czQ
-
-UC伯克利提出小批量MH测试：令MCMC方法在自编码器中更强劲
-
-https://zhuanlan.zhihu.com/p/48985202
-
-谈谈变分自编码器背后的数学知识
-
-https://mp.weixin.qq.com/s/fYR2dS3wCMMVk3s9O4nqUw
-
-自编码表示学习 25页最新进展综述，90篇参考文献
-
-https://zhuanlan.zhihu.com/p/52974147
-
-VAE 的细节：$$p(x \mid z)$$的噪音，与$$p(z \mid x)$$的编码坍塌
-
-https://mp.weixin.qq.com/s/uNjF6NxVRs_gAKAmxRpThQ
-
-华为美研所提出自动编码变换网络AET：用无监督逼近全监督效果
-
-https://zhuanlan.zhihu.com/p/60330303
-
-用于协同过滤的变分自编码器论文引介
-
-https://mp.weixin.qq.com/s/CSx7dnqPjVDAvM6ena-FTw
-
-从俄罗斯方块到星际2，全都用得上：DeepMind无监督分割大法，为游戏而生
-
-https://mp.weixin.qq.com/s/XMLYjw_wN-M8jluczkbcyw
-
-一种考虑缓和KL消失的简单VAE训练方法
 
 # 深度哈希
 
