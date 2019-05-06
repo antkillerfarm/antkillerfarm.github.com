@@ -4,7 +4,33 @@ title:  VAE（三）——VAE vs GAN, 参考资源
 category: GAN & VAE 
 ---
 
-# Vanilla VAE（续）
+# Vanilla VAE
+
+## VAE的另一个介绍（续）
+
+![](/images/img2/VAE_10.png)
+
+我们可以进一步将此模型构造成神经网络架构：
+
+![](/images/img2/VAE_11.png)
+
+下图是VAE的结构图：
+
+![](/images/img2/VAE_12.png)
+
+Reparameterization Trick的图示：
+
+![](/images/img2/VAE_13.png)
+
+从上面两图可以看出如下几点：
+
+1.mean tensor和variance tensor都是从上一层经FC计算得到。
+
+2.两者的差异主要是由生成z时候的角色决定的：做加法的就是mean tensor，做乘法的就是variance tensor。
+
+Reparameterization Trick的反向传播：
+
+![](/images/img2/VAE_14.png)
 
 ## 数值计算 vs 采样计算
 

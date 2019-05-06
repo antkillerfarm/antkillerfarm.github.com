@@ -338,6 +338,28 @@ https://mp.weixin.qq.com/s/fTFyH5jaLEWWPka_XP9EaQ
 
 视觉识别新范式：开放世界下的大规模长尾识别
 
+https://mp.weixin.qq.com/s/sOeBUZi5-7fGkqcd1MPmiQ
+
+李飞飞团队新作-有限标签的场景图预测
+
+## 光神经网络
+
+https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ
+
+3D打印的深度神经网络，光速执行AI运算
+
+https://mp.weixin.qq.com/s/5zt8UIpNBcgNZpwHHJj68Q
+
+光学CNN层替换传统CNN层，超省电
+
+https://mp.weixin.qq.com/s/IheyYAC1yIigYOW-gtc5Eg
+
+Science重磅！用光速实现深度学习，跟GPU说再见
+
+https://mp.weixin.qq.com/s/ENYX87SMlgv30x08iYFQIw
+
+几乎零能耗零延迟！UCLA科学家发明光衍射神经网络，登上Science
+
 ## 参考
 
 https://mp.weixin.qq.com/s/MoKzux6Z69dlpqcVTvQ9oQ
@@ -387,27 +409,3 @@ Bengio等提出稀疏注意力回溯：长期依赖关系建模的更一般化�
 https://mp.weixin.qq.com/s/2QuwBVaFCQjl81z38u6L-g
 
 一文看尽三种针对人工智能系统的攻击技术及防御策略
-
-https://mp.weixin.qq.com/s/5gsbviBZ9Wkns0NTwCfDFw
-
-孙剑：如何打造云、端、芯上的视觉计算
-
-https://mp.weixin.qq.com/s/7dIf0YbUJCwz-_X9yTYIsA
-
-一文读懂AI如何判断照片中人物的社交关系
-
-https://mp.weixin.qq.com/s/w-6z8B60cIHUF5tU-RoQ3w
-
-旷视科技提出统一感知解析网络UPerNet，优化场景理解
-
-https://mp.weixin.qq.com/s/8dVronQoeZLJI2g49AljLg
-
-技术讲解概率机器学习——深度学习革命之后AI道路
-
-https://mp.weixin.qq.com/s/qof4GEPQYb9rO3Do_oL7BQ
-
-如果给猫披上象皮，神经网络将作何判断？
-
-https://mp.weixin.qq.com/s/l1Bc5l5cr3y9jQbh-bEQeQ
-
-Deep Learning of Graph Matching论文解读

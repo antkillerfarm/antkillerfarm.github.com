@@ -392,3 +392,27 @@ https://mp.weixin.qq.com/s/zcuTY9oWKhAQ8z0rx4nY4A
 https://mp.weixin.qq.com/s/gjVLbH_S0t7jcjCYhpsTgw
 
 基于深度学习的人脑视觉神经信息编解码研究进展及挑战
+
+https://mp.weixin.qq.com/s/5gsbviBZ9Wkns0NTwCfDFw
+
+孙剑：如何打造云、端、芯上的视觉计算
+
+https://mp.weixin.qq.com/s/7dIf0YbUJCwz-_X9yTYIsA
+
+一文读懂AI如何判断照片中人物的社交关系
+
+https://mp.weixin.qq.com/s/w-6z8B60cIHUF5tU-RoQ3w
+
+旷视科技提出统一感知解析网络UPerNet，优化场景理解
+
+https://mp.weixin.qq.com/s/8dVronQoeZLJI2g49AljLg
+
+技术讲解概率机器学习——深度学习革命之后AI道路
+
+https://mp.weixin.qq.com/s/qof4GEPQYb9rO3Do_oL7BQ
+
+如果给猫披上象皮，神经网络将作何判断？
+
+https://mp.weixin.qq.com/s/l1Bc5l5cr3y9jQbh-bEQeQ
+
+Deep Learning of Graph Matching论文解读

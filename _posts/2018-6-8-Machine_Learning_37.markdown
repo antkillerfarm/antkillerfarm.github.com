@@ -354,6 +354,10 @@ https://mp.weixin.qq.com/s/WV0igXcxFuTNKU5MvZrl0Q
 
 再谈亚马逊Item-based推荐系统
 
+https://mp.weixin.qq.com/s/mXE3f2ZO6wQRSURZGmyBpQ
+
+产品聚类
+
 # 强连通分量算法
 
 http://ishare.iask.sina.com.cn/f/34626295.html

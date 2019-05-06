@@ -186,6 +186,10 @@ https://mp.weixin.qq.com/s/cs4IjkmdPmu2-3Mu36f8UQ
 
 OpenAI提出Sparse Transformer，文本、图像、声音都能预测，序列长度提高30倍
 
+https://mp.weixin.qq.com/s/cpbIHt-rBu48uGifg_lPfg
+
+Gaussian Transformer: 一种自然语言推理的轻量方法
+
 # Attention进阶
 
 https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA

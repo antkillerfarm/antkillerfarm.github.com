@@ -354,6 +354,10 @@ https://mp.weixin.qq.com/s/ZRbEwUlqtp8f5987j9-McQ
 
 自动驾驶计算机视觉研究综述：难题、数据集与前沿成果
 
+https://mp.weixin.qq.com/s/K5MJTYmuJ4Vv0sKT-VpDvg
+
+一种基于ACP理论的平行车道线检测方法，能有效解决目前车道线检测的困境
+
 # NLP参考资源
 
 https://zhuanlan.zhihu.com/p/64032803

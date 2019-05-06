@@ -146,6 +146,10 @@ https://buptldy.github.io/2016/03/31/2016-03-31-HOG%20Note/
 
 《Histograms of Oriented Gradients for Human Detection》Note
 
+https://mp.weixin.qq.com/s/9345Y-Ag-2AWPur-NAdiEw
+
+HOG特征详解与行人检测
+
 # Haar
 
 ![](/images/article/Haar.png)

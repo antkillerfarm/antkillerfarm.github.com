@@ -382,21 +382,6 @@ https://mp.weixin.qq.com/s/675tMer_pEXwXkg7fzq73g
 
 带了个对抗图像块，YOLOv2竟然无法识别我是人……
 
-## 光神经网络
+https://mp.weixin.qq.com/s/QeuQZiC1hKS5cqs59r9KNQ
 
-https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ
-
-3D打印的深度神经网络，光速执行AI运算
-
-https://mp.weixin.qq.com/s/5zt8UIpNBcgNZpwHHJj68Q
-
-光学CNN层替换传统CNN层，超省电
-
-https://mp.weixin.qq.com/s/IheyYAC1yIigYOW-gtc5Eg
-
-Science重磅！用光速实现深度学习，跟GPU说再见
-
-https://mp.weixin.qq.com/s/ENYX87SMlgv30x08iYFQIw
-
-几乎零能耗零延迟！UCLA科学家发明光衍射神经网络，登上Science
-
+危险！一张贴画就能迷惑AI，对抗补丁或让自动驾驶车毁人亡

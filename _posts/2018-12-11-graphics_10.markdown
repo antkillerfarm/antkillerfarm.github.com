@@ -251,3 +251,7 @@ Tracking算法：Discriminative Correlation Filter (DCF)
 https://blog.csdn.net/wanghanthu/article/details/53375393
 
 Kernelized Correlation Filters (KCF) Tracking算法
+
+https://mp.weixin.qq.com/s/1lLrbi_Dtyq4ixMfR4pPnA
+
+线性卷积积分及其在图像增强和特效方面的应用

@@ -190,6 +190,14 @@ https://mp.weixin.qq.com/s/rPC542OcO8B4bjxn7JRFrw
 
 深度学习网络只能有一个输入吗
 
+https://mp.weixin.qq.com/s/GlS2VJdX7Y_nfBOEnUt2NQ
+
+使用Siamese神经网络进行人脸识别
+
+https://mp.weixin.qq.com/s/lDlijjIUGmzNzcP89IzJnw
+
+张志鹏:基于siamese网络的单目标跟踪
+
 ## S3FD
 
 https://mp.weixin.qq.com/s/MyA8_yt4YCkFl67AyhpZow

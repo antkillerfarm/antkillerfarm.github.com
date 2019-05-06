@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  大数据平台参考资源（二）, 知名数据集（二）, TensorFlow（四）
+title:  大数据平台参考资源（二）, 知名数据集（二）
 category: resource 
 ---
 
@@ -121,6 +121,10 @@ https://mp.weixin.qq.com/s/HRwn7CvY6D6OsJzN9tWKQg
 https://mp.weixin.qq.com/s/MOtlA8lT4XZ0nsldqe9xeQ
 
 微博深度学习平台如何支撑4亿用户愉快吃瓜？
+
+https://mp.weixin.qq.com/s/muS68_vtXTrIGd1JNmS50A
+
+揭秘！现代IM系统的消息架构如何设计？
 
 # 知名数据集
 
