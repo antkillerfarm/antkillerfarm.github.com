@@ -347,3 +347,7 @@ https://mp.weixin.qq.com/s/XApSbi-Pg-AeYGkPN3fldg
 https://mp.weixin.qq.com/s/49vnVOO0G_JvKrWcsN2_Ww
 
 关系图注意力网络-Relational Graph Attention Networks
+
+https://mp.weixin.qq.com/s/rvcj9-6KlBsVmF_CAsip2A
+
+超越标准GNN！DeepMind、谷歌提出图匹配网络

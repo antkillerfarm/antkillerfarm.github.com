@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（十二）——数学杂谈, 通信协议
+title:  数学狂想曲（十二）——数学杂谈, 最速降线, 泛函 & 变分
 category: math 
 ---
 
@@ -8,7 +8,7 @@ category: math
 
 有一次正在做穿过欧洲的旅行，他与一个陌生人聊天，他很谦虚的自我介绍：“我是Daniel Bernoullis。”
 
-那个人当时就怒了，说：“我还是Issac Newton（牛顿）呢。”
+那个人当时就怒了，说：“我还是Issac Newton呢。”
 
 Daniel从此之后在很多的场合深情的回忆起这一次经历把他当作他曾经听过的最衷心的赞扬。
 
@@ -54,6 +54,136 @@ https://mp.weixin.qq.com/s/6hs0pqHqqg46wWL0rlgKJQ
 
 数学家轶闻录
 
+# 最速降线
+
+约翰·伯努利在1696年提出最速降线的问题（problem of brachistochrone），向全欧洲数学家征求解答。这个问题最早由伽利略在1630年提出：**“一个质点在只受重力的作用下，从一个给定点A到不在它垂直下方的另一点B，问沿着什么曲线下滑（忽略摩擦力）所需时间最短？”**
+
+然而伽利略自己给出的答案是错误的：他认为这条曲线是过AB的圆弧。这条曲线也不是连接AB两点的直线，尽管AB间线段最短，但小球滚下来的时间不是最短。
+
+伯努利把此问题发布在Acta Eruditorum上，他还这么说：
+
+“我，约翰·伯努利，想找到世界上最出色的数学家。对聪明人而言，没有什么能比一道诚实而富有挑战性的难题更有吸引力，其可能的解决方案将会成为一个永恒的纪念碑。按照帕斯卡，费马等人设定的例子，请允许我代表整个数学界将这个尤其能在今天考验大家的数学技巧和思维耐力的问题展示在最优秀的数学家面前。如果有人能把答案递交与我，我会将其公开，并授予其应得的奖赏。”
+
+伯努利原定的截止期限是1696年年底，可是他只受到了一份来自他的老师莱布尼兹的解答。莱布尼兹要求伯努利将截止期限延长到来年复活节（大致在3月下旬到4月下旬之间），以便让欧洲数学家们有更多时间来充分解决此道难题。约翰·伯努利亲自把最速降线问题抄了一份，装进信封寄给在英国的牛顿。
+
+1697年1月29日，牛顿正在造币局里忙着改铸新币的工作。下午4点回到家里，他看到了邮箱里伯努利寄来的问题。尽管牛顿非常疲惫，他立即彻夜未眠的投入研究，在凌晨4点时得到问题的解答。他将他的解答寄给好友兼皇家协会主席查尔斯，随后皇家协会以匿名的形式发表在Philosophical Transactions上。
+
+要知道，此时的牛顿已经56岁，工作重点是皇家铸币厂监管。即使如此，在忙了一天的本职工作后，牛顿还是用几个小时就解决了许多欧洲数学家都无法解出的难题。约翰·伯努利本人也花了两个星期的时间才完成解答。
+
+1697年复活节的截止期限，伯努利共收到了5份答案，他自己和其老师莱布尼兹，第三份是他的哥哥雅可布·伯努利，洛必达是第四个，最后是一份匿名答案。伯努利在阅读最后一份解答时立即认出它的作者，他惊叹道：
+
+**“从利爪上认出了这头狮子（recognizes a lion from his claw mark）”**
+
+在给查尔斯的信里，牛顿还写道：**我不喜欢在数学上被外国人糊弄（I do not love to be dunned and teased by foreigners about mathematical things）。**
+
+除了牛顿之外，雅可布·伯努利也是约翰·伯努利最想击败的对手。事实上，三个人虽然都正确回答了该问题，然而所用的方法竟然全都不同。下面提到的变分法，主要是雅可布·伯努利的贡献。
+
+言归正传，最速降线的正确答案是——**摆线（Cycloid）：一个圆在一条定直线上滚动时，圆周上一个定点的轨迹，又称圆滚线、旋轮线。**
+
+![](/images/img3/Cycloid.jpg)
+
+伽利略虽然在最速降线问题上给出了错误的答案，然而他本人对于摆线还是研究颇深的。事实上，摆线的名字就是他起的（1599年）。
+
+他还发现了以下结论：
+
+1.摆线弧的长度等于旋转圆的直径的4倍。
+
+2.摆线弧下方所围成的面积是旋转圆的面积的3倍。
+
+在没有微积分的时代，他是如何发现这些结论的呢？答案：做实验。
+
+是的，你没看错，就是实验。他用一根绳子附在摆线度量出这条绳子的长度再与旋转圆的直径作比较，得到了第一个事实；在一块薄板上画出摆线所围成的图形，再把这个图形切下来，称一下它的重量，然后在同样的薄板上画出旋转圆，再把旋转圆切下来，称一下重量，他发现了第二条事实。
+
+注意，伽利略虽然发现了摆的等时性，然而他用的摆是圆摆。直到惠更斯改进钟摆，钟摆和摆线才有了关系。这从摆线的英文名可以看的很清楚。伽利略显然采用的是圆滚线的定义。
+
+# 泛函 & 变分
+
+历史上对于最速降线的研究催生了泛函数（Functionals）和变分法（Calculus of Variations）的概念。
+
+这里就以最速降线为例，说明一下泛函和变分的含义。
+
+首先建立坐标系，水平方向为x轴，竖直方向为y轴。
+
+则质点下落速率与下落高度间的关系为：
+
+$$v=\sqrt{2gh}\Rightarrow \frac{\mathrm{d}s}{\mathrm{d}t}=\sqrt{2gy}$$
+
+所以：
+
+$$T=\int_{t_1(A)}^{t_2(B)}\mathrm{d}t=\int_{A}^{B}\frac{\mathrm{d}s}{\sqrt{2gy}}=\int_{A}^{B}\frac{\sqrt{1-y'^2}}{\sqrt{2gy}}\mathrm{d}x$$
+
+显然，这是一个路径积分。
+
+上式可改写为以下形式：
+
+$$T=T[y(x)]=\int_{A}^{B}\frac{\sqrt{1-y'^2}}{\sqrt{2gy}}\mathrm{d}x=\int_{A}^{B}F(x,y,y')\mathrm{d}x$$
+
+注意，这里的$$T[y(x)]$$不能理解为复合函数：
+
+1.复合函数的变换是$$x\to y \to T$$。其中，x、y、T都是数值。换句话说，就是**数值的传递**。
+
+2.在这个问题中，y的具体值，意义不大，如何到达y的路径才是关键。而路径其实可以表达为一个函数，即y是x的函数，而T是x的**函数的函数（也被称为“泛函”）**。
+
+**泛函求极值的方法和过程，被称作变分法。**上述最速降线问题，实际上就是在一个泛函集合上求极值的问题。
+
+对于任意定值$$x \in [x_0,x_1]$$，可取函数$$y(x)$$与另一可取函数$$y_0(x)$$之差$$y(x)-y_0(x)$$，称为函数$$y(x)$$在$$y_0(x)$$处的**变分或者叫函数的变分**，记作$$\delta y$$，其中$$\delta$$称为变分算子，那么：
+
+$$\delta y = y(x)-y_0(x)$$
+
+从上面的定义可以看出函数的变分$$\delta y$$与函数的增量$$\Delta y$$之间的区别：
+
+1.函数的变分$$\delta y$$是两个不同的函数$$y(x)$$和$$y_0(x)$$在自变量x固定时的差，这是函数发生了改变。
+
+2.函数的增量$$\Delta y$$是自变量x的增量使得函数$$y(x)$$产生的增量，函数依然是原来的函数。
+
+被积函数F被称为**泛函的核**。
+
+核的三要素：
+
+1.自变量x。可以有多个自变量。
+
+2.函数y。也可以是多个。
+
+3.y的导数。可以是多个，也可以是高阶导数。
+
+最速降线问题由于只涉及y的一阶导数，因此又被称为**一阶变分**问题。
+
+这类问题是最简单的变分问题，它的极值通常符合Euler–Lagrange equation：
+
+$$F_y-\frac{d}{dx}F'_y=0$$
+
+教程：
+
+《变分法基础》，老大中著。
+
+>老大中，北京理工大学宇航学院发射与推进工程系副教授。
+
+参考：
+
+https://zhuanlan.zhihu.com/yueaptx
+
+一个变分法方面的专栏
+
+https://blog.csdn.net/shenziheng1/article/details/54808173
+
+泛函与变分初步（Euler-lagrange条件）
+
+https://www.cnblogs.com/MagicXYoung/p/4906606.html
+
+泛函与变分基础
+
+https://blog.csdn.net/theonegis/article/details/86217916
+
+变分法入门介绍
+
+https://zhuanlan.zhihu.com/p/41573146
+
+变分法理解1——泛函简介
+
+https://zhuanlan.zhihu.com/p/41810184
+
+变分法理解2——基本方法
+
 # 张量分析
 
 在同构的意义下，第零阶张量（r = 0）为标量（Scalar），第一阶张量（r = 1）为向量（Vector），第二阶张量（r = 2）则成为矩阵（Matrix）。
@@ -69,301 +199,3 @@ https://mp.weixin.qq.com/s/6hs0pqHqqg46wWL0rlgKJQ
 该书的中文版：
 
 http://www.topologywithouttears.net/topbookchinese.pdf
-
-# 莫比乌斯反演
-
-http://blog.csdn.net/acdreamers/article/details/8542292
-
-莫比乌斯反演
-
-http://blog.csdn.net/litble/article/details/72804050
-
-初涉莫比乌斯反演
-
-http://blog.csdn.net/u013632138/article/details/52250567
-
-莫比乌斯反演讲解
-
-http://blog.csdn.net/Ripped/article/details/70263965
-
-莫比乌斯反演详解
-
-http://blog.csdn.net/hzj1054689699/article/details/51659994
-
-莫比乌斯反演入门
-
-http://blog.csdn.net/outer_form/article/details/50588307
-
-莫比乌斯反演定理证明
-
-# 通信协议
-
-https://mp.weixin.qq.com/s/_bWOYpZNjA4p7ZWM1J_4mw
-
-通信协议之序列化
-
-https://mp.weixin.qq.com/s/C68icGtwh3IzuUbANaRXEg
-
-也许，这样理解HTTPS更容易
-
-https://mp.weixin.qq.com/s/ewI7sHDFj1AHaNAtBDM8uA
-
-HTTPS到底加密了什么？
-
-https://mp.weixin.qq.com/s/CP_Egs4LUx7I8BXSqrS_dQ
-
-互联网协议入门（一）
-
-https://mp.weixin.qq.com/s/zU1Mw3yaNmk4D5pP9vxxaw
-
-TCP三次握手和SYN攻击
-
-https://mp.weixin.qq.com/s/3VqdjEK4QkER4Q05JgfjhQ
-
-详解TCP之滑动窗口
-
-https://mp.weixin.qq.com/s/yH3PzGEFopbpA-jw4MythQ
-
-TCP三次握手原理，你真的理解吗？
-
-https://mp.weixin.qq.com/s/DDk5YZv9Q7CaqdiKvQxZGQ
-
-从理论到实践，全方位认识DNS（理论篇）
-
-https://mp.weixin.qq.com/s/rZU35kVTXs5ebf7k6lnheQ
-
-从理论到实践，全方位认识DNS（实践篇）
-
-https://mp.weixin.qq.com/s/iN8NQd8SuWL4gCWhRbY6tg
-
-图解基于HTTPS的DNS
-
-https://mp.weixin.qq.com/s/oydBIAEqAswppme6ku70fQ
-
-https加密那点事
-
-https://mp.weixin.qq.com/s/Lee4DRNCQuGCTTAsSYR8ng
-
-高性能网络编程之accept建立连接
-
-https://mp.weixin.qq.com/s/PAuijOCx8TLCsyU_RGs11w
-
-从TCP协议的原理来谈谈rst复位攻击
-
-https://mp.weixin.qq.com/s/W_JjnDuinmLrahIpPY8h-g
-
-tcp服务端一直sleep，客户端发送数据问题总结
-
-https://mp.weixin.qq.com/s/IcpaoCU6WXYRTqOuC4AmKQ
-
-用信鸽来解释HTTPS
-
-https://mp.weixin.qq.com/s/bUrTDj1atJSZvFeWA8H-SA
-
-正向代理和反向代理
-
-https://mp.weixin.qq.com/s/YQfk9lqHbepG2om7mEGTSg
-
-如何给女朋友解释什么是反向代理？
-
-https://zhuanlan.zhihu.com/p/32615963
-
-什么是IPFS?(一)
-
-https://zhuanlan.zhihu.com/p/32633235
-
-什么是IPFS?(二)
-
-https://zhuanlan.zhihu.com/p/32651288
-
-什么是IPFS?(三)
-
-# TensorFlow
-
-https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
-
-简易浣熊识别器是如何实现的
-
-http://www.jianshu.com/p/d443aab9bcb1
-
-在TensorFlow上使用LSTM进行情感分析
-
-https://mp.weixin.qq.com/s/gW_KX6eF9XEsSUO1UzJ3WQ
-
-基于LSTM的情感分析
-
-https://mp.weixin.qq.com/s/KZhL477ApHgQfmM2xFrYJw
-
-Tensorlang：基于TensorFlow的可微编程语言
-
-https://mp.weixin.qq.com/s/_9NJ6QLQArUAD1DKb0KRfA
-
-如何使用TensorFlow mobile部署模型到移动设备
-
-https://mp.weixin.qq.com/s/e_TzQxFLAonLMyYAhte6Cg
-
-face-api.js：在浏览器中进行人脸识别的JavaScript接口
-
-https://mp.weixin.qq.com/s/23FoaaA3Z_3kf03BmepFPg
-
-如何将模型部署到安卓移动端，这里有一份简单教程
-
-https://mp.weixin.qq.com/s/MT1YaMm4KBWsIZeHehahgw
-
-TensorFlow重大升级：自动将Python代码转为TF Graph，大幅简化动态图处理！
-
-https://mp.weixin.qq.com/s/zeZs48XbYJGhvOoIysZ8QA
-
-Docker Compose+GPU+TensorFlow所产生的奇妙火花
-
-https://mp.weixin.qq.com/s/sOggiB57D-ekWOsbL6TY_A
-
-TensorFlow中那些鲜为人知却又极其实用的知识
-
-https://mp.weixin.qq.com/s/XHKrkNf2bWLF7r7gzdU24w
-
-Quick, Draw!涂鸦分类递归神经网络
-
-https://mp.weixin.qq.com/s/QQednlKYl6t3aO0xCzgGmA
-
-带你轻松使用TensorFlow创建大型线性模型
-
-https://mp.weixin.qq.com/s/BfwTOtLnwnMsS3-PQQBHSg
-
-使用TensorFlow训练WDL模型性能问题定位与调优
-
-https://mp.weixin.qq.com/s/kw3BYTXdyhnIyVZrnQuPew
-
-基于深度学习和迁移学习的识花实践
-
-https://mp.weixin.qq.com/s/F965Zu_PgA-1ZUGIQ0nIEQ
-
-TensorFlow协同过滤推荐实战
-
-http://gitbook.cn/books/593d71ba4686067a2200aec6/index.html
-
-用TensorFlow实现智能机器人的原理及如何实现一个对话机器人
-
-https://mp.weixin.qq.com/s/lLaSXG1VF9Rys2GNzFP7pw
-
-轻松使用多种预训练卷积网络抽取图像特征
-
-https://mp.weixin.qq.com/s/tVqp1Tht1P-0EQazJizQaA
-
-利用人口普查收入数据集预测收入
-
-https://mp.weixin.qq.com/s/3WleFm9S_wMIPTz_WfjKQw
-
-TensorFlow支持Unicode，中文NLP终于省心了
-
-https://mp.weixin.qq.com/s/jFEOokxfJ1Kw-P3wvw3EAg
-
-带你了解，不规则张量！
-
-https://mp.weixin.qq.com/s/tMtx4PZbpo5IrnhzLz8Lzw
-
-AutoGraph：图的简易控制流程
-
-https://mp.weixin.qq.com/s/zY7rGh-kA-36VEo9DiaKbg
-
-TensorFlow进行简单的图像处理
-
-https://mp.weixin.qq.com/s/nnjyR4XGVZQ1zXCIPzTNlg
-
-基于TensorFlow的变分自编码器实现
-
-https://mp.weixin.qq.com/s/iMgesGmdb7Jq4muCxb-nFA
-
-Tensorflow实战：Discuz验证码识别
-
-https://mp.weixin.qq.com/s/4aJUGBpPG_6Oc5EqOmM0Iw
-
-作为TensorFlow的底层语言，你会用C++构建深度神经网络吗？
-
-https://mp.weixin.qq.com/s/W1KP213Ngj-BNEyx-_nVyw
-
-利用TensorFlow实现卷积自编码器
-
-https://mp.weixin.qq.com/s/2COA8aRQBpxaihKnlLkXZQ
-
-快速上手图像识别：用TensorFlow API实现图像分类实例
-
-https://mp.weixin.qq.com/s/rVSC1AXj9YECjUrl5PkSGw
-
-详解深度强化学习展现TensorFlow 2.0新特性
-
-https://mp.weixin.qq.com/s/TZMOO_LFCxk297lKNQfvGQ
-
-TensorFlow从基础到实战：一步步教你创建交通标志分类神经网络
-
-https://mp.weixin.qq.com/s/HUUwtyjRllg-5olqYHK4XA
-
-基于TensorFlow的开源项目FaceRank
-
-https://mp.weixin.qq.com/s/N2OP1uX7JjfIJQ_B4NHKpw
-
-横向对比三大分布式机器学习平台：Spark、PMLS、TensorFlow
-
-https://github.com/jinfagang/rl_atari_pytorch
-
-ReinforcementLearning Learn Play Atari Using DDPG and LSTM.
-
-https://mp.weixin.qq.com/s/bJigyEv6iNDp799KlHsclg
-
-TensorFlow 不仅用于机器学习，还能模拟偏微分方程（水滴特效）
-
-https://mp.weixin.qq.com/s/dmNEzrWNX3YWmocjpORpig
-
-谷歌开源TF-Ranking可扩展库，支持多种排序学习
-
-https://mp.weixin.qq.com/s/ww0nd07DaK4eVcexqebn3g
-
-基于TensorFlow卷积神经网络的短期股票预测
-
-https://mp.weixin.qq.com/s/n_zU7Rg7v6PwjZWEF88fNA
-
-如何使用TensorFlow实现音频分类任务
-
-https://mp.weixin.qq.com/s/UbBJYOmWtUXPFliRMyzDrg
-
-最新TensorFlow专业深度学习实战书籍和代码《Pro Deep Learning with TensorFlow》
-
-https://mp.weixin.qq.com/s/skl5w2cJaO3mYtr656lb9Q
-
-见人识面，TensorFlow实现人脸性别/年龄识别
-
-https://mp.weixin.qq.com/s/g2xMUmhxUTuQugR2PWUJtw
-
-组成TensorFlow核心的六篇论文
-
-https://mp.weixin.qq.com/s/n4nEtyRc5G44kj3zmHpd5g
-
-TensorFlow实战——图像分类神经网络模型
-
-https://mp.weixin.qq.com/s?__biz=MzU1OTMyNDcxMQ==&mid=2247484836&idx=1&sn=0bc47c662ea64aa833df9fb9c4b1d706
-
-TensorFlow模型优化工具包正式推出
-
-https://mp.weixin.qq.com/s/NMRwXqwr4VFbMUPgI8Uccg
-
-使用Google Cloud上的tf.Transform对TensorFlow管道模式进行预处理
-
-https://mp.weixin.qq.com/s/UKt1cFLcRYZQTJiZRiajwQ
-
-TensorFlow Servering C/S通信约束
-
-https://mp.weixin.qq.com/s/DpqI4AfjiygCh8dqq_Kgmw
-
-基于TensorFlow Serving的深度学习在线预估
-
-https://mp.weixin.qq.com/s/XcqVtFBY5rIn0FgPEx0eTg
-
-工业领域中的AI：BHGE通过使用TensorFlow概率编程工具包开发的基于物理的概率深度学习
-
-http://brucedone.com/archives/1005
-
-Tensorflow破解验证码
-
-https://mp.weixin.qq.com/s/CjlEY_m6tp-NJ3B2MiAZRg
-
-基于TensorFlow的深度模型训练GPU显存优化

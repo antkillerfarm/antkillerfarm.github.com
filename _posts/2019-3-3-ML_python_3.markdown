@@ -286,6 +286,10 @@ https://mp.weixin.qq.com/s/ss9UlDU9lYokS-EDrPnOxQ
 
 如何在Python中使用LightFM构建可扩展的电子商务推荐系统？
 
+https://mp.weixin.qq.com/s/tzyj0LaJ2Ccv730UhJBdig
+
+拿起Python，防御特朗普的Twitter！
+
 # 边缘计算
 
 ![](/images/img2/edge_computing.png)

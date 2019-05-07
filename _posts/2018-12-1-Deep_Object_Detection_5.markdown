@@ -162,6 +162,10 @@ https://mp.weixin.qq.com/s/Vuuca3A7luCyCQ-jBKMIcw
 
 YOLO v3目标检测的PyTorch实现，GitHub完整源码解析！
 
+https://mp.weixin.qq.com/s/2aeBBjCbWdweYmNrTaWqqw
+
+一文看尽目标检测：从YOLO v1到v3的进化之路
+
 # One-stage vs. Two-stage
 
 虽然我们在概述一节已经提到了One-stage和Two-stage的概念。但鉴于这个概念的重要性，在介绍完主要的目标检测网络之后，很有必要再次总结一下。

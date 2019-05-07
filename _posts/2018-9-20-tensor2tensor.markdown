@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Tensor2Tensor, NN中间语言, MXNet
+title:  Tensor2Tensor, NN中间语言, MXNet, 移动端推理框架
 category: AI 
 ---
 
@@ -242,14 +242,6 @@ MLPerf是谷歌、百度、斯坦福等联手打造的基准测量工具，用�
 
 https://mlperf.org/
 
-# SNPE
-
-Snapdragon Neural Processing Engine SDK是Qualcomm推出的NN加速包。
-
-官网：
-
-https://developer.qualcomm.com/software/qualcomm-neural-processing-sdk
-
 # MXNet
 
 https://mp.weixin.qq.com/s/50uGupiwU2UVuVeMm_bTag
@@ -312,44 +304,60 @@ https://zhuanlan.zhihu.com/p/42345854
 
 如何基于gluon训练一个强有力的Reid Baseline
 
-# TensorFlow
+# 移动端推理框架
 
-https://mp.weixin.qq.com/s/DAV3TDI4JYr0sXqTGU6t2A
+最知名的移动端推理框架毫无疑问是Google的Tensorflow Lite和Android NN。这两个框架在本blog的Tensorflow章节已经有描述了，这里不再赘述。
 
-分布式TensorFlow入坑指南：从实例到代码带你玩转多机器深度学习
+## Arm NN
 
-https://mp.weixin.qq.com/s/QU5NjksCEswjHnkY7WXWXQ
+Arm NN是Arm的作品。
 
-分布式TensorFlow入门教程
+代码：
 
-https://mp.weixin.qq.com/s/pBR4wMITrigbSVAvn0d6vQ
+https://github.com/Arm-software/armnn
 
-利用TensorFlow实现上下文的Chat-bots
+## SNPE
 
-https://mp.weixin.qq.com/s/BD-nJSZJLjBBq1n7HEHpKw
+Snapdragon Neural Processing Engine SDK是Qualcomm推出的NN加速包。
 
-将您的代码升级至TensorFlow 2.0
+官网：
 
-https://mp.weixin.qq.com/s/8I5Nvw4t2jT1NR9vIYT5XA
+https://developer.qualcomm.com/software/qualcomm-neural-processing-sdk
 
-深入理解TensorFlow中的tf.metrics算子
+## NCNN
 
-https://mp.weixin.qq.com/s/aMarI-nyIvFqhtpJWQrNhQ
+NCNN是腾讯的作品。
 
-谷歌推强化学习新框架“多巴胺“，基于TensorFlow，已开源
+代码：
 
-https://mp.weixin.qq.com/s/ntHkMIef1o2-FF-AJf_bZQ
+https://github.com/Tencent/ncnn
 
-三分钟训练眼球追踪术，AI就知道你在盯着哪个妹子——TensorFlow.js代码
+## MACE
 
-https://mp.weixin.qq.com/s/7rTmEBfh613SrNnTQvfSjw
+MACE是小米的作品。
 
-懒人福利：不写代码调优深度模型，谷歌开源的“What-If”了解一下
+代码：
 
-https://mp.weixin.qq.com/s/eX3LWYiSH-KObH_7F_3QCA
+https://github.com/XiaoMi/mace
 
-TensorFlow 1.11.0发布，一键多GPU
+## Paddle-Mobile
 
-https://mp.weixin.qq.com/s/316VVXLQfeIsKNk4ld-VRw
+Paddle-Mobile是百度的作品。
 
-TensorFlow语义分割套件开源了ECCV18旷视科技BiSeNet实时分割算法
+代码：
+
+https://github.com/PaddlePaddle/paddle-mobile
+
+## MNN
+
+MNN是阿里的作品。
+
+代码：
+
+https://github.com/alibaba/MNN
+
+参考：
+
+https://mp.weixin.qq.com/s/yDvTDTk8VtGZjA3RK4dLMQ
+
+阿里巴巴开源轻量级深度神经网络推理引擎MNN

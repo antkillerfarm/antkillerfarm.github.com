@@ -98,47 +98,115 @@ $$\sqrt{k}D\ge \|\theta^{(k+1)}\|\ge (\theta^{(k+1)})^Tu\ge k\gamma$$
 
 $$k\le (D/\gamma)^2$$
 
-# TensorFlow+
+# 贝叶斯学习
 
-https://mp.weixin.qq.com/s/XI1J4ardEWKP4UQ4IXZGTQ
+1787年5月，美国各州（当时为13个）代表在费城召开制宪会议；1787年9月，美国的宪法草案被分发到各州进行讨论。一批反对派以“反联邦主义者”为笔名，发表了大量文章对该草案提出批评。宪法起草人之一亚历山大·汉密尔顿着急了，他找到曾任外交国务秘书（即后来的国务卿）的约翰·杰伊，以及纽约市国会议员麦迪逊，一同以普布利乌斯（Publius）的笔名发表文章，向公众解释为什么美国需要一部宪法。他们走笔如飞，通常在一周之内就会发表3-4篇新的评论。1788年，他们所写的85篇文章结集出版，这就是美国历史上著名的《联邦党人文集》。
 
-TensorFlow Hub,给您带来全新的Web体验
+《联邦党人文集》出版的时候，汉密尔顿坚持匿名发表，于是，这些文章到底出自谁人之手，成了一桩公案。1810年，汉密尔顿接受了一个政敌的决斗挑战，但出于基督徒的宗教信仰，他决意不向对方开枪。在决斗之前数日，汉密尔顿自知时日不多，他列出了一份《联邦党人文集》的作者名单。1818年，麦迪逊又提出了另一份作者名单。这两份名单并不一致。在85篇文章中，有73篇文章的作者身份较为明确，其余12篇存在争议。
 
-http://www.jianshu.com/p/1da012a83b74
+像这样一个问题，在没有机器学习的时代，可以耗费一个考据学家10年20年也不一定能有结果。但是用机器学习一个叫朴素贝叶斯的方法，就可以解开。
 
-利用TensorFlow实现排序和搜索算法
+https://mp.weixin.qq.com/s/szTmHY-Yvn7N3s_GzTDiEA
 
-https://mp.weixin.qq.com/s/oEqMjOTj8xpd3sg60ZUhqA
+解开贝叶斯黑暗魔法：通俗理解贝叶斯线性回归
 
-TensorFlow的c++实践及各种坑
+https://mp.weixin.qq.com/s/1JSxjkKEUlWOzXCQPTve3A
 
-https://mp.weixin.qq.com/s/-5RCRl9ztQ2dQmX00QvfvQ
+贝叶斯线性回归简介
 
-在Python和TensorFlow上构建Word2Vec词嵌入模型
+https://mp.weixin.qq.com/s/NTK-u4aVrTTmvi-4ZBa8RQ
 
-https://mp.weixin.qq.com/s/Nyjp0mZxcn04vLKjJXLSaw
+数十亿用户的Facebook如何进行贝叶斯系统调优？
 
-如何用TensorFlow在安卓设备上实现深度学习推断
+https://mp.weixin.qq.com/s/g24mcZjQ25sQJx9mqE_XSA
 
-https://mp.weixin.qq.com/s/OVWbxBNc4i0_5jgy06xS1A
+怎样判断漂亮女孩是不是单身的？美国海军在汪洋大海里搜索丢失的氢弹、失踪的核潜艇都用过这种方法。
 
-基于Tensorflow Estimators的文本分类
+https://mp.weixin.qq.com/s/bjyO4AS1Sjo09qNMpqf6JA
 
-https://mp.weixin.qq.com/s/c_2_9gvOynHaVW6pi4qQjQ
+最新36页《贝叶斯非参学习综述》，机器学习内功修炼手册
 
-用TensorFlow让机器人唱首歌给你听
+https://mp.weixin.qq.com/s/x3AREJcDKvjo7vl6TS79OA
 
-https://mp.weixin.qq.com/s/hn-LqyREkusxP2TOWfTJ6g
+贝叶斯推理实用入门
 
-使用TensorFlow官方Java API调用TensorFlow模型
+https://mp.weixin.qq.com/s/Tk2t3R_SUU6S9yvdjnwzDQ
 
-https://mp.weixin.qq.com/s/kS92vYyeHLc38RGc_4CZbg
+量化交易中的贝叶斯优化问题
 
-如何应用TFGAN快速实践生成对抗网络？
+https://mp.weixin.qq.com/s/1JH3hDy0FXUjGB4QgTd31g
 
-https://mp.weixin.qq.com/s/hquOoKeeHQXqWcHM6Bkvbw
+不看任何数学公式来讲解贝叶斯算法
 
-如何训练一个简单的音频识别网络
+https://zhuanlan.zhihu.com/p/59196946
+
+如何用贝叶斯高斯张量分解修复缺失数据？
+
+https://zhuanlan.zhihu.com/p/63351454
+
+如何用贝叶斯概率矩阵分解修复缺失数据？
+
+# TensorFlow
+
+https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
+
+简易浣熊识别器是如何实现的
+
+http://www.jianshu.com/p/d443aab9bcb1
+
+在TensorFlow上使用LSTM进行情感分析
+
+https://mp.weixin.qq.com/s/gW_KX6eF9XEsSUO1UzJ3WQ
+
+基于LSTM的情感分析
+
+https://mp.weixin.qq.com/s/KZhL477ApHgQfmM2xFrYJw
+
+Tensorlang：基于TensorFlow的可微编程语言
+
+https://mp.weixin.qq.com/s/_9NJ6QLQArUAD1DKb0KRfA
+
+如何使用TensorFlow mobile部署模型到移动设备
+
+https://mp.weixin.qq.com/s/e_TzQxFLAonLMyYAhte6Cg
+
+face-api.js：在浏览器中进行人脸识别的JavaScript接口
+
+https://mp.weixin.qq.com/s/23FoaaA3Z_3kf03BmepFPg
+
+如何将模型部署到安卓移动端，这里有一份简单教程
+
+https://mp.weixin.qq.com/s/MT1YaMm4KBWsIZeHehahgw
+
+TensorFlow重大升级：自动将Python代码转为TF Graph，大幅简化动态图处理！
+
+https://mp.weixin.qq.com/s/zeZs48XbYJGhvOoIysZ8QA
+
+Docker Compose+GPU+TensorFlow所产生的奇妙火花
+
+https://mp.weixin.qq.com/s/sOggiB57D-ekWOsbL6TY_A
+
+TensorFlow中那些鲜为人知却又极其实用的知识
+
+https://mp.weixin.qq.com/s/XHKrkNf2bWLF7r7gzdU24w
+
+Quick, Draw!涂鸦分类递归神经网络
+
+https://mp.weixin.qq.com/s/QQednlKYl6t3aO0xCzgGmA
+
+带你轻松使用TensorFlow创建大型线性模型
+
+https://mp.weixin.qq.com/s/BfwTOtLnwnMsS3-PQQBHSg
+
+使用TensorFlow训练WDL模型性能问题定位与调优
+
+https://mp.weixin.qq.com/s/kw3BYTXdyhnIyVZrnQuPew
+
+基于深度学习和迁移学习的识花实践
+
+https://mp.weixin.qq.com/s/F965Zu_PgA-1ZUGIQ0nIEQ
+
+TensorFlow协同过滤推荐实战
 
 https://mp.weixin.qq.com/s/KohwsQQetwjfTj-PXvLjwA
 

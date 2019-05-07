@@ -232,20 +232,28 @@ Sophus是一个C++写的Lie Groups的库。显然，它得名自Marius Sophus Li
 
 https://github.com/strasdat/Sophus
 
-# 知识图谱参考资源
+# 莫比乌斯反演
 
-https://zhuanlan.zhihu.com/p/51000072
+http://blog.csdn.net/acdreamers/article/details/8542292
 
-基于知识图谱路径推理的可解释推荐
+莫比乌斯反演
 
-https://mp.weixin.qq.com/s/qj5sFIqCUkW38XQ6hRao1w
+http://blog.csdn.net/litble/article/details/72804050
 
-KG Embedding with Iterative Guidance from Soft Rules
+初涉莫比乌斯反演
 
-https://mp.weixin.qq.com/s/PrugbfsWIt0LWGJRw_9i1Q
+http://blog.csdn.net/u013632138/article/details/52250567
 
-基于知识库的类型实体和关系的联合抽取
+莫比乌斯反演讲解
 
-https://mp.weixin.qq.com/s/_pNDalO6D8kGiCBYi1jnIA
+http://blog.csdn.net/Ripped/article/details/70263965
 
-对于知识图谱嵌入表示的几何形状理解
+莫比乌斯反演详解
+
+http://blog.csdn.net/hzj1054689699/article/details/51659994
+
+莫比乌斯反演入门
+
+http://blog.csdn.net/outer_form/article/details/50588307
+
+莫比乌斯反演定理证明

@@ -10,6 +10,10 @@ https://zhuanlan.zhihu.com/p/57234648
 
 深入解读Airbnb推荐算法
 
+https://mp.weixin.qq.com/s/oOQfV35x9IJgE0y_ecjntA
+
+解读Airbnb的个性化搜索排序算法
+
 https://mp.weixin.qq.com/s/2Th2PO4rC-r4LOU46uYDjg
 
 重读Youtube深度学习推荐系统论文，字字珠玑，惊为神文

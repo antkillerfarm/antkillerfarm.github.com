@@ -275,3 +275,69 @@ AutoML在推荐系统中的应用
 https://mp.weixin.qq.com/s/95FH-_L5smx7WoNnfucWVg
 
 为什么说自动化特征工程将改变机器学习的方式
+
+# TensorFlow
+
+https://mp.weixin.qq.com/s/W1KP213Ngj-BNEyx-_nVyw
+
+利用TensorFlow实现卷积自编码器
+
+https://mp.weixin.qq.com/s/2COA8aRQBpxaihKnlLkXZQ
+
+快速上手图像识别：用TensorFlow API实现图像分类实例
+
+https://mp.weixin.qq.com/s/rVSC1AXj9YECjUrl5PkSGw
+
+详解深度强化学习展现TensorFlow 2.0新特性
+
+https://mp.weixin.qq.com/s/TZMOO_LFCxk297lKNQfvGQ
+
+TensorFlow从基础到实战：一步步教你创建交通标志分类神经网络
+
+https://mp.weixin.qq.com/s/HUUwtyjRllg-5olqYHK4XA
+
+基于TensorFlow的开源项目FaceRank
+
+https://mp.weixin.qq.com/s/N2OP1uX7JjfIJQ_B4NHKpw
+
+横向对比三大分布式机器学习平台：Spark、PMLS、TensorFlow
+
+https://github.com/jinfagang/rl_atari_pytorch
+
+ReinforcementLearning Learn Play Atari Using DDPG and LSTM.
+
+https://mp.weixin.qq.com/s/bJigyEv6iNDp799KlHsclg
+
+TensorFlow 不仅用于机器学习，还能模拟偏微分方程（水滴特效）
+
+https://mp.weixin.qq.com/s/dmNEzrWNX3YWmocjpORpig
+
+谷歌开源TF-Ranking可扩展库，支持多种排序学习
+
+https://mp.weixin.qq.com/s/ww0nd07DaK4eVcexqebn3g
+
+基于TensorFlow卷积神经网络的短期股票预测
+
+https://mp.weixin.qq.com/s/n_zU7Rg7v6PwjZWEF88fNA
+
+如何使用TensorFlow实现音频分类任务
+
+https://mp.weixin.qq.com/s/UbBJYOmWtUXPFliRMyzDrg
+
+最新TensorFlow专业深度学习实战书籍和代码《Pro Deep Learning with TensorFlow》
+
+https://mp.weixin.qq.com/s/skl5w2cJaO3mYtr656lb9Q
+
+见人识面，TensorFlow实现人脸性别/年龄识别
+
+https://mp.weixin.qq.com/s/g2xMUmhxUTuQugR2PWUJtw
+
+组成TensorFlow核心的六篇论文
+
+https://mp.weixin.qq.com/s/n4nEtyRc5G44kj3zmHpd5g
+
+TensorFlow实战——图像分类神经网络模型
+
+https://mp.weixin.qq.com/s?__biz=MzU1OTMyNDcxMQ==&mid=2247484836&idx=1&sn=0bc47c662ea64aa833df9fb9c4b1d706
+
+TensorFlow模型优化工具包正式推出

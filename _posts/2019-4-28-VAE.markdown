@@ -1,106 +1,10 @@
 ---
 layout: post
-title:  VAE（一）——前置知识, Vanilla VAE（1）
+title:  VAE（一）——Variational Inference, Vanilla VAE（1）
 category: GAN & VAE 
 ---
 
-# 前置知识
-
-## 最速降线
-
-约翰·伯努利在1696年提出最速降线的问题（problem of brachistochrone），向全欧洲数学家征求解答。这个问题最早由伽利略在1630年提出：**“一个质点在只受重力的作用下，从一个给定点A到不在它垂直下方的另一点B，问沿着什么曲线下滑（忽略摩擦力）所需时间最短？”**
-
-然而伽利略自己给出的答案是错误的：他认为这条曲线是过AB的圆弧。这条曲线也不是连接AB两点的直线，尽管AB间线段最短，但小球滚下来的时间不是最短。
-
-伯努利把此问题发布在Acta Eruditorum上，他还这么说：
-
-“我，约翰·伯努利，想找到世界上最出色的数学家。对聪明人而言，没有什么能比一道诚实而富有挑战性的难题更有吸引力，其可能的解决方案将会成为一个永恒的纪念碑。按照帕斯卡，费马等人设定的例子，请允许我代表整个数学界将这个尤其能在今天考验大家的数学技巧和思维耐力的问题展示在最优秀的数学家面前。如果有人能把答案递交与我，我会将其公开，并授予其应得的奖赏。”
-
-伯努利原定的截止期限是1696年年底，可是他只受到了一份来自他的老师莱布尼兹的解答。莱布尼兹要求伯努利将截止期限延长到来年复活节（大致在3月下旬到4月下旬之间），以便让欧洲数学家们有更多时间来充分解决此道难题。约翰·伯努利亲自把最速降线问题抄了一份，装进信封寄给在英国的牛顿。
-
-1697年1月29日，牛顿正在造币局里忙着改铸新币的工作。下午4点回到家里，他看到了邮箱里伯努利寄来的问题。尽管牛顿非常疲惫，他立即彻夜未眠的投入研究，在凌晨4点时得到问题的解答。他将他的解答寄给好友兼皇家协会主席查尔斯，随后皇家协会以匿名的形式发表在Philosophical Transactions上。
-
-要知道，此时的牛顿已经56岁，工作重点是皇家铸币厂监管。即使如此，在忙了一天的本职工作后，牛顿还是用几个小时就解决了许多欧洲数学家都无法解出的难题。约翰·伯努利本人也花了两个星期的时间才完成解答。
-
-1697年复活节的截止期限，伯努利共收到了5份答案，他自己和其老师莱布尼兹，第三份是他的哥哥雅可布·伯努利，洛必达是第四个，最后是一份匿名答案。伯努利在阅读最后一份解答时立即认出它的作者，他惊叹道：
-
-**“从利爪上认出了这头狮子（recognizes a lion from his claw mark）”**
-
-在给查尔斯的信里，牛顿还写道：**我不喜欢在数学上被外国人糊弄（I do not love to be dunned and teased by foreigners about mathematical things）。**
-
-## 泛函 & 变分
-
-历史上对于最速降线的研究催生了泛函数（Functionals）和变分法（Calculus of Variations）的概念。
-
-这里就以最速降线为例，说明一下泛函和变分的含义。
-
-首先建立坐标系，水平方向为x轴，竖直方向为y轴。
-
-则质点下落速率与下落高度间的关系为：
-
-$$v=\sqrt{2gh}\Rightarrow \frac{\mathrm{d}s}{\mathrm{d}t}=\sqrt{2gy}$$
-
-所以：
-
-$$T=\int_{t_1(A)}^{t_2(B)}\mathrm{d}t=\int_{A}^{B}\frac{\mathrm{d}s}{\sqrt{2gy}}=\int_{A}^{B}\frac{\sqrt{1-y'^2}}{\sqrt{2gy}}\mathrm{d}x$$
-
-显然，这是一个路径积分。
-
-上式可改写为以下形式：
-
-$$T=T[y(x)]=\int_{A}^{B}\frac{\sqrt{1-y'^2}}{\sqrt{2gy}}\mathrm{d}x=\int_{A}^{B}F(x,y,y')\mathrm{d}x$$
-
-注意，这里的$$T[y(x)]$$不能理解为复合函数：
-
-1.复合函数的变换是$$x\to y \to T$$。其中，x、y、T都是数值。换句话说，就是**数值的传递**。
-
-2.在这个问题中，y的具体值，意义不大，如何到达y的路径才是关键。而路径其实可以表达为一个函数，即y是x的函数，而T是x的**函数的函数（也被称为“泛函”）**。
-
-**泛函求极值的方法和过程，被称作变分法。**上述最速降线问题，实际上就是在一个泛函集合上求极值的问题。
-
-对于任意定值$$x \in [x_0,x_1]$$，可取函数$$y(x)$$与另一可取函数$$y_0(x)$$之差$$y(x)-y_0(x)$$，称为函数$$y(x)$$在$$y_0(x)$$处的**变分或者叫函数的变分**，记作$$\delta y$$，其中$$\delta$$称为变分算子，那么：
-
-$$\delta y = y(x)-y_0(x)$$
-
-被积函数F被称为**泛函的核**。
-
-核的三要素：
-
-1.
-
-教程：
-
-《变分法基础》，老大中著。
-
->老大中，北京理工大学宇航学院发射与推进工程系副教授。
-
-参考：
-
-https://zhuanlan.zhihu.com/yueaptx
-
-一个变分法方面的专栏
-
-https://blog.csdn.net/shenziheng1/article/details/54808173
-
-泛函与变分初步（Euler-lagrange条件）
-
-https://www.cnblogs.com/MagicXYoung/p/4906606.html
-
-泛函与变分基础
-
-https://blog.csdn.net/theonegis/article/details/86217916
-
-变分法入门介绍
-
-https://zhuanlan.zhihu.com/p/41573146
-
-变分法理解1——泛函简介
-
-https://zhuanlan.zhihu.com/p/41810184
-
-变分法理解2——基本方法
-
-## Variational Inference
+# Variational Inference
 
 论文：
 
@@ -111,6 +15,10 @@ https://zhuanlan.zhihu.com/p/41810184
 《Stochastic Variational Inference》
 
 《An Introduction to Variational Methods for Graphical Models》
+
+泛函/变分方面的基本知识可参见《数学狂想曲（十二）》。
+
+
 
 参考：
 

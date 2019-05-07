@@ -258,6 +258,10 @@ https://mp.weixin.qq.com/s/groq55Cbts272k1mfhJwaQ
 
 超越bounding box的代表性点集：视觉物体表示的新方法
 
+https://mp.weixin.qq.com/s/BXwL33qOf3f7BtJvHsi23Q
+
+目标检测：Segmentation is All You Need？
+
 # Flink
 
 Flink是一个流计算引擎。

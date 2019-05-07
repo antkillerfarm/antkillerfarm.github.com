@@ -162,42 +162,6 @@ https://mp.weixin.qq.com/s/7hVCRHxllip70SpEJ5I6mQ
 
 MatConvnet图像分类从模型自定义到测试
 
-## OpenVINO
-
-OpenVINO是英特尔推出一套基于深度学习的计算机视觉加速优化框架，支持其它机器学习平台模型的压缩优化、加速计算等功能。
-
-https://mp.weixin.qq.com/s/mmvfSxjtJgx5q6Gm_3xQQw
-
-英特尔重磅开源OpenVINO
-
-https://mp.weixin.qq.com/s/3KkucMJSde9SUf4pTp-4Kw
-
-使用OpenVINO实现车辆与车牌检测
-
-https://mp.weixin.qq.com/s/nfi-E4IY61ivWL6jiATDHg
-
-使用模型优化器把TF对象检测模型转换压缩
-
-https://mp.weixin.qq.com/s/X0_-NB4iY8KlQQqWhhD6OA
-
-使用OpenVINO 推断引擎SDK实现加速
-
-https://mp.weixin.qq.com/s/BNfmU0sumvK4yoaffejeWQ
-
-使用OpenVINO实现车辆属性与车牌识别
-
-https://mp.weixin.qq.com/s/xPox6kgy37E4c8U3UmyZ1A
-
-在OpenVINO中开启异步执行模式视频实时分析
-
-https://mp.weixin.qq.com/s/6LivY65bNtdIfAcGMvIHXQ
-
-OpenVINO视觉加速库使用六
-
-https://mp.weixin.qq.com/s/5qj4cNMLgDAz4iTQu01SpQ
-
-OpenVINO视觉加速库使用七
-
 ## blog
 
 https://github.com/1zlab/opencv-tutorial
@@ -465,3 +429,31 @@ OpenCV实现图像连通组件标记与分析
 https://mp.weixin.qq.com/s/II76kX7khztkHtDIvKvHqw
 
 OpenCV中实现曲线与圆拟合
+
+https://mp.weixin.qq.com/s/HbNtWyA_EG4tLdVRueLLAA
+
+OpenCV实现0到9数字识别OCR
+
+https://mp.weixin.qq.com/s/5j-WNi4vafLDeyKqfVER0g
+
+图形图像算法中必须要了解的设计模式(1)
+
+https://mp.weixin.qq.com/s/909FlTC_ROtlziJekcRJ9Q
+
+图形图像算法中必须要了解的设计模式(2)
+
+https://mp.weixin.qq.com/s/2aN9V8VlmugoSRk_AesOzw
+
+图形图像算法中必须要了解的设计模式(3)
+
+https://mp.weixin.qq.com/s/vgOkHsxKaFcgWDCBpY7kng
+
+如何用OpenCV、Python和深度学习实现面部识别？
+
+https://mp.weixin.qq.com/s/Dmk4EWidsWpz31JYAx7mbQ
+
+使用OpenCV与sklearn实现基于词袋模型(Bag of Word)的图像分类预测与搜索
+
+https://mp.weixin.qq.com/s/hClNIg2LZSeeCpLfBS1BoQ
+
+OpenCV Gabor滤波器实现纹理提取与缺陷分析

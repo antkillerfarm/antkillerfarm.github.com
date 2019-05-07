@@ -298,6 +298,20 @@ https://mp.weixin.qq.com/s/vwhetMpQllczILptBNcoWg
 
 基于快速GeoHash，如何实现海量商品与商圈的高效匹配？
 
+# TensorFlow+
+
+https://mp.weixin.qq.com/s/nnjyR4XGVZQ1zXCIPzTNlg
+
+基于TensorFlow的变分自编码器实现
+
+https://mp.weixin.qq.com/s/iMgesGmdb7Jq4muCxb-nFA
+
+Tensorflow实战：Discuz验证码识别
+
+https://mp.weixin.qq.com/s/4aJUGBpPG_6Oc5EqOmM0Iw
+
+作为TensorFlow的底层语言，你会用C++构建深度神经网络吗？
+
 # 知识图谱参考资源+
 
 https://mp.weixin.qq.com/s/7LFkOzkD1-PsNNAr5DAETg
@@ -315,3 +329,19 @@ https://mp.weixin.qq.com/s/0bTmzKiC7WDbLRcxfAAGqw
 https://mp.weixin.qq.com/s/Pqm5uhC9iMLuPk6mDCtPuQ
 
 动态知识图谱补全论文合集
+
+https://zhuanlan.zhihu.com/p/51000072
+
+基于知识图谱路径推理的可解释推荐
+
+https://mp.weixin.qq.com/s/qj5sFIqCUkW38XQ6hRao1w
+
+KG Embedding with Iterative Guidance from Soft Rules
+
+https://mp.weixin.qq.com/s/PrugbfsWIt0LWGJRw_9i1Q
+
+基于知识库的类型实体和关系的联合抽取
+
+https://mp.weixin.qq.com/s/_pNDalO6D8kGiCBYi1jnIA
+
+对于知识图谱嵌入表示的几何形状理解
