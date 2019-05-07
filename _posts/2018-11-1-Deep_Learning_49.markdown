@@ -166,6 +166,10 @@ https://zhuanlan.zhihu.com/p/53864403
 
 知识蒸馏（Knowledge Distillation）最新进展（二）
 
+https://mp.weixin.qq.com/s/_C5AvD3YmRH2dmBjbEZFrQ
+
+神经网络子网络压缩10倍，精确度保持不变
+
 # Mask R-CNN
 
 Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的NN。它是何恺明2017年的新作。

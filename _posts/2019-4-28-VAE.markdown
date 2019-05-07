@@ -42,6 +42,10 @@ https://www.cnblogs.com/yifdu25/p/8181185.html
 
 变分推断（Variational Inference）
 
+http://blog.huajh7.com/2013/03/06/variational-bayes/
+
+变分贝叶斯算法理解与推导
+
 # Vanilla VAE
 
 变分自编码器（Variational Auto-Encoder，VAE）是Autoencoder的一种扩展。

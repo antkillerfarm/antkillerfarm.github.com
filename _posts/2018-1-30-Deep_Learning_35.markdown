@@ -342,6 +342,10 @@ https://mp.weixin.qq.com/s/wjLLGX1UvLRF_Xb5oc8CYQ
 
 华科开源效果超群的人体姿态迁移算法
 
+https://mp.weixin.qq.com/s/KdsHDoPEdrYZgqcW7SMfSw
+
+从DeepNet到HRNet，这有一份深度学习“人体姿势估计”全指南
+
 # Regularization
 
 DL中的Regularization除了常见的$$l_1$$-norm、$$l_2$$-norm和squared $$l_2$$-norm之外，还有Group Regularization。它的定义如下：

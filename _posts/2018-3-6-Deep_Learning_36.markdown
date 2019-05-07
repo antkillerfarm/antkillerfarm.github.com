@@ -74,6 +74,14 @@ https://mp.weixin.qq.com/s/E6EH6aJjzTwN2UZf_4nwoA
 
 从FFM到DeepFFM，推荐排序模型到底哪家强？
 
+https://zhuanlan.zhihu.com/p/64952093
+
+排序评价指标
+
+https://zhuanlan.zhihu.com/p/64970393
+
+PointwiseRank
+
 # 人脸检测/识别
 
 ## 人脸识别
