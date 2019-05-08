@@ -282,6 +282,8 @@ https://mp.weixin.qq.com/s/kdCk_twY_czQo58y3x_yyA
 
 https://tvm.ai
 
+![](/images/img3/tvm_stack.png)
+
 参考：
 
 https://mp.weixin.qq.com/s/irvBbPKENiZX9G_6wh5c-Q
@@ -303,6 +305,10 @@ https://mp.weixin.qq.com/s/YVIvdMznb3oatIXqD5a5_A
 https://mp.weixin.qq.com/s/HquT_mKm7x_rbDGz4Voqpw
 
 阿里巴巴最新实践：TVM+TensorFlow提高神经机器翻译性能
+
+https://zhuanlan.zhihu.com/p/50529704
+
+手把手带你遨游TVM
 
 # 安全
 
@@ -333,3 +339,77 @@ https://mp.weixin.qq.com/s/YNMw8u7O6u7Bc4-mnrwRXg
 http://www.xfyun.cn/share/?p=2626
 
 开发者常犯的十大加密错误
+
+# 网络架构
+
+## LVS
+
+简单来说，Linux Virtual Server就是把一个集群虚拟成一台机器。
+
+参考：
+
+http://www.linuxvirtualserver.org/zh/lvs1.html
+
+章文嵩博士的LVS经典论文，非常值得一读。
+
+LVS的代码已经集成进Linux内核，在net/netfilter/ipvs目录下。
+
+http://www.cnblogs.com/xybaby/p/7867735.html
+
+关于负载均衡的一切：总结与思考
+
+## 网络虚拟化
+
+网络虚拟化是一个相反的过程，即将一台机器虚拟成一个集群。
+
+它和LVS不是相对的概念，而是相辅相成的：
+
+1.对于用户来说，无论多大的集群，用起来都像一台机器一样。
+
+2.对于集群内部来说，资源调度的颗粒度，从单台机器下移到单个实例（服务/VM/容器）。
+
+这里的内容较多，仅列出关键术语，备查。
+
+Software Defined Network，SDN
+
+Open vSwitch，OVS
+
+Overlay，顾名思义，上层的，或者说，业务层面的、用户层面的，overlay traffic 是指用户业务流量。
+
+而与overlay所对应的是underlay，顾名思义，下层的，或者说，基础架构层，专门用于承载用户流量的传统的IP网络，只要可以提供IP包的转发即可。
+
+leaf-spine
+
+参考：
+
+https://mp.weixin.qq.com/s/blU7ewaKiQowV8Yju5J4lA
+
+云计算时代携程的网络架构变迁
+
+https://mp.weixin.qq.com/s/zuTgPlNSUpUBp8eZUFMbPA
+
+OpenStack的架构详解
+
+https://www.cnblogs.com/bakari/p/8037105.html
+
+网络虚拟化
+
+https://www.cnblogs.com/bakari/p/8097439.html
+
+从Bridge到OVS，探索虚拟交换机
+
+https://zhuanlan.zhihu.com/p/29881248
+
+数据中心网络架构浅谈（一）
+
+https://zhuanlan.zhihu.com/p/29975418
+
+数据中心网络架构浅谈（二）
+
+https://zhuanlan.zhihu.com/p/30119950
+
+数据中心网络架构浅谈（三）
+
+https://zhuanlan.zhihu.com/p/64445886
+
+数据中心网络架构浅谈（四）

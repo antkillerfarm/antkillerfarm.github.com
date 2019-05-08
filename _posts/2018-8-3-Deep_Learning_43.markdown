@@ -332,6 +332,10 @@ https://mp.weixin.qq.com/s/1QQ2_vkQ_vLvuxvR-fboQg
 
 大三少年造出AI写意画家，像人类一样挥笔作画
 
+https://mp.weixin.qq.com/s/hx2CFdosvydg2xly8vuVJA
+
+AI还原半世纪前的黑白电影和照片：效果惊艳在线可玩，网友大呼“鹅妹子嘤”
+
 # ESN
 
 Echo State Network

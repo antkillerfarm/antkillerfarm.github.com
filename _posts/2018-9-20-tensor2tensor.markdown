@@ -306,7 +306,9 @@ https://zhuanlan.zhihu.com/p/42345854
 
 # 移动端推理框架
 
-最知名的移动端推理框架毫无疑问是Google的Tensorflow Lite和Android NN。这两个框架在本blog的Tensorflow章节已经有描述了，这里不再赘述。
+最知名的移动端推理框架毫无疑问是Google的Tensorflow Lite和Android NN。这两个框架在本blog的Tensorflow章节已有描述。
+
+TensorRT在Nvidia章节亦有描述。
 
 ## Arm NN
 

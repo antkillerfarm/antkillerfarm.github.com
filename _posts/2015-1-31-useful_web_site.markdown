@@ -24,12 +24,6 @@ http://www.hellogcc.org/
 
 一个有关GCC和GDB的博客。其中的大牛teawater（朱辉）开发了一个Linux动态跟踪器KGTP，他的blog：http://teawater.github.io/
 
-http://www.linuxvirtualserver.org/zh/lvs1.html
-
-章文嵩博士的LVS经典论文，非常值得一读。
-
-LVS的代码已经集成进Linux内核，在net/netfilter/ipvs目录下。
-
 http://blog.csdn.net/leixiaohua1020/
 
 中国传媒大学雷霄骅博士的blog，专注ffmpeg等的音视频研究。
@@ -232,10 +226,6 @@ https://mp.weixin.qq.com/s/T7bVFQqzTbZJ7GuQDiNwoA
 
 人工智能在iOS开发上的应用和机会
 
-https://mp.weixin.qq.com/s/tIau6pRZU0r4Aasofca5yQ
-
-50张动图带你走进神奇的物理化学生物世界，超震撼！
-
 http://mp.weixin.qq.com/s/aftxoxvzefZtzbGK3XrmuA
 
 李沐：博士这五年
@@ -260,10 +250,6 @@ http://lucacardelli.name/
 
 Luca Andrea Cardelli的个人主页。英国皇家学会会员。主要从事生物化学领域的信息处理和计算。
 
-http://www.cnblogs.com/xybaby/p/7867735.html
-
-关于负载均衡的一切：总结与思考
-
 https://mp.weixin.qq.com/s/z5zMETSMUGoTiZYMooKZ-g
 
 内核空间镜像攻击揭秘：ARM硬件特性，竟能开启安卓8终端的上帝模式？
@@ -283,10 +269,6 @@ https://zhuanlan.zhihu.com/p/31189198
 https://mp.weixin.qq.com/s/Nn7Yl6UzRpWnSleKUss8Sw
 
 阿里巴巴正式开源自研动态非侵入AOP解决方案：JVM-Sandbox
-
-https://mp.weixin.qq.com/s/eEuNPtTaPwJ7hSghgeU32g
-
-Android Hook技术防范漫谈
 
 https://mp.weixin.qq.com/s/M5syxE9Ln4UDLThPh5iuJg
 

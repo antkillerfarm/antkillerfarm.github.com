@@ -18,7 +18,7 @@ category: GAN & VAE
 
 泛函/变分方面的基本知识可参见《数学狂想曲（十二）》。
 
-
+ELOB(Evidence Lower Bound)
 
 参考：
 

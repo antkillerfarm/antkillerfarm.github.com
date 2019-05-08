@@ -70,10 +70,6 @@ https://mp.weixin.qq.com/s/HNH5DPp55A9thV7lPzQolA
 
 中国移动一级业务支撑系统网状网PaaS之路
 
-https://mp.weixin.qq.com/s/zuTgPlNSUpUBp8eZUFMbPA
-
-OpenStack的架构详解
-
 https://mp.weixin.qq.com/s/Q_YfMcmI6W4lQFpGxpV_aQ
 
 以云计算为名之微软生死战略大逃亡

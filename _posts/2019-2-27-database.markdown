@@ -354,6 +354,10 @@ https://mp.weixin.qq.com/s/twfpUMf9CfXcgwtFFkJ4Ig
 
 Android整体设计及背后意义
 
+https://mp.weixin.qq.com/s/eEuNPtTaPwJ7hSghgeU32g
+
+Android Hook技术防范漫谈
+
 # Restful
 
 相比于WebService，Restful是一种简单的多的编程风格。

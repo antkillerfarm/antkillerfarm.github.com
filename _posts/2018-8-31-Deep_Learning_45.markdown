@@ -76,6 +76,10 @@ https://mp.weixin.qq.com/s/Ia-8qFLAyY65Nai5PGAw0w
 
 人人都能用的深度学习：当前三大自动化深度学习平台简介
 
+https://mp.weixin.qq.com/s/tFzbJdW-L342tMNXDiacCg
+
+AutoML研究综述：让AI学习设计AI
+
 http://blog.csdn.net/u014380165/article/details/78525687
 
 自学网络结构（二）：Learning Transferable Architectures for Scalable Image Recognition

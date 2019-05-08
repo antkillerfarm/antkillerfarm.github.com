@@ -108,9 +108,9 @@ http://www.matrix67.com/
 
 一个数学blog
 
-http://blog.huajh7.com/2013/03/06/variational-bayes/
+https://mp.weixin.qq.com/s/tIau6pRZU0r4Aasofca5yQ
 
-变分贝叶斯算法理解与推导
+50张动图带你走进神奇的物理化学生物世界，超震撼！
 
 https://mp.weixin.qq.com/s/np9OuEMQNtKMC7P1KPzTmg
 
