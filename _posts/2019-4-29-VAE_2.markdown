@@ -44,6 +44,10 @@ $$\begin{aligned}&\mathcal{L}_{\mu,\sigma^2}=\mathcal{L}_{\mu} + \mathcal{L}_{\s
 &\mathcal{L}_{\mu}=\frac{1}{2} \sum_{i=1}^d \mu_{(i)}^2=\frac{1}{2}\Vert f_1(X)\Vert^2\\ 
 &\mathcal{L}_{\sigma^2}=\frac{1}{2} \sum_{i=1}^d\Big(\sigma_{(i)}^2 - \log \sigma_{(i)}^2 - 1\Big)\end{aligned}$$
 
+综上，最终的Loss为：
+
+$$\mathcal{L}=\mathcal{L}_{reconstruct}+\mathcal{L}_{\mu,\sigma^2}$$
+
 ## Reparameterization Trick
 
 这是实现模型的一个技巧。我们要从$$p(Z\mid X_k)$$中采样一个$$Z_k$$出来，尽管我们知道了$$p(Z\mid X_k)$$是正态分布，但是均值方差都是靠模型算出来的，我们要靠这个过程反过来优化均值方差的模型，但是“采样”这个操作是不可导的，而采样的结果是可导的，于是我们利用了一个事实：

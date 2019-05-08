@@ -244,6 +244,10 @@ https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/content/
 
 某人写的AI心得
 
+https://github.com/firmai/industry-machine-learning
+
+工业机器学习应用资源汇总
+
 ## 项目集锦
 
 https://mp.weixin.qq.com/s/ZNNgEB9rFjAE8SdfMo9NLA

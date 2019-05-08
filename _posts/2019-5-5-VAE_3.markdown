@@ -8,11 +8,11 @@ category: GAN & VAE
 
 ## VAE的另一个介绍（续）
 
-在上面的示例中，我们使用单个值来描述输入图像的隐属性。 但是，我们其实更愿意用一个分布去表示每个隐属性。 比如, 输入蒙娜丽莎的照片，我们很难非常自信的为微笑属性分配一个具体值, 但是用了变分自编码器, 我们有能比较自信的说微笑属性服从什么分布。
+在上面的示例中，我们使用单个值来描述输入图像的隐属性。 但是，我们其实更愿意用一个分布去表示每个隐属性。 比如, 输入蒙娜丽莎的照片，我们很难非常自信的为微笑属性分配一个具体值, 但是用了变分自编码器, 我们就能比较自信的说微笑属性服从什么分布。
 
 ![](/images/img2/VAE_8.png)
 
-通过这种方法，我们现在将给定输入的每个隐属性表示为概率分布。 当从隐状态解码时，我们将从每个隐状态分布中随机采样，来生成向量作为解码器的输入。
+通过这种方法，我们现在将给定输入的每个隐属性表示为概率分布。 **当从隐状态解码时，我们将从每个隐状态分布中随机采样，来生成向量作为解码器的输入。**（这也是VAE模型训练好之后的推断阶段，为decoder生成输入tensor的方法。）
 
 ![](/images/img2/VAE_9.png)
 
@@ -107,6 +107,10 @@ https://mp.weixin.qq.com/s/mtZ4_pwl8_GhitgImAU0VA
 https://mp.weixin.qq.com/s/LQFuXgI7uZK2UKRfZvlVbA
 
 Variational AutoEncoder
+
+https://jaan.io/what-is-variational-autoencoder-vae-tutorial/
+
+Tutorial - What is a variational autoencoder?
 
 https://mp.weixin.qq.com/s/lnSMdOk8fYfdU4aGeI5j7Q
 

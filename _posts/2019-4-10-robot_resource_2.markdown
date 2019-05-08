@@ -358,6 +358,10 @@ https://mp.weixin.qq.com/s/K5MJTYmuJ4Vv0sKT-VpDvg
 
 一种基于ACP理论的平行车道线检测方法，能有效解决目前车道线检测的困境
 
+https://mp.weixin.qq.com/s/g8Y83vhw-OORm0CJElwPEA
+
+感知算法
+
 # NLP参考资源
 
 https://zhuanlan.zhihu.com/p/64032803

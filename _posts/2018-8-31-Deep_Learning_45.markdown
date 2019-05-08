@@ -80,6 +80,10 @@ https://mp.weixin.qq.com/s/tFzbJdW-L342tMNXDiacCg
 
 AutoML研究综述：让AI学习设计AI
 
+https://mp.weixin.qq.com/s/62cqtwslax_cvA57252zYA
+
+IBM自动机器学习网络架构搜索最新综述
+
 http://blog.csdn.net/u014380165/article/details/78525687
 
 自学网络结构（二）：Learning Transferable Architectures for Scalable Image Recognition

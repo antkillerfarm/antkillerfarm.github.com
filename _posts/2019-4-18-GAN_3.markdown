@@ -66,6 +66,8 @@ GAN不仅可用于无监督学习，也可用于有监督学习。Conditional GA
 
 GAN首先是个生成模型，类别信息对于GAN的意义在于：**我不仅可以生成和数据集中样本类似的fake data，而且还可以指定它的类别。**
 
+以MNIST数据集为例，GAN能生成数字，但生成之前，无法知道是哪个数字，而CGAN则可以按需生成。
+
 类别信息和随机噪声的融合，可以采用组合编码（combined embedding）的方式，也可以采用hadamard product之类的互相关操作。
 
 从数学角度看，GAN拟合的是$$p(data)$$，而CGAN拟合的是条件概率$$p(data \mid c)$$。

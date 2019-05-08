@@ -252,6 +252,10 @@ https://mp.weixin.qq.com/s/otwmDtiDfVVID65RQgT4Uw
 
 教你如何鉴别那些用深度学习预测股价的花哨模型？
 
+https://mp.weixin.qq.com/s/xGUcqs3q3yNpVsJ8P7ag_g
+
+以机器学习的视角来看时序点过程的最新进展
+
 # CNN进阶
 
 http://mp.weixin.qq.com/s/ddTNr-967IahTZ2X1LNSEQ
