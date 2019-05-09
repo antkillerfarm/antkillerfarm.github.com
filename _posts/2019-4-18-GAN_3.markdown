@@ -22,6 +22,8 @@ $$IS(G)=\exp(\mathbb{E}_{x\sim p_g}D_{KL}(p(y \mid x)\|p(y)))$$
 
 $$$$
 
+$$$$
+
 相关代码：
 
 https://github.com/sbarratt/inception-score-pytorch

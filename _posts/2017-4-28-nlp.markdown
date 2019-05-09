@@ -351,6 +351,12 @@ https://github.com/hankcs/HanLP/
 
 >注：不要以为中文有分词问题，就比别的语言复杂，英文还有词根问题呢。。。每种语言都不简单。
 
+参考：
+
+https://mp.weixin.qq.com/s/GwU3wtINvV9T4kQcr8qcJA
+
+一文掌握HanLP用法
+
 ### AllenNLP
 
 AllenNLP是Allen AI实验室的作品，采用深度学习技术，基于PyTorch开发。
