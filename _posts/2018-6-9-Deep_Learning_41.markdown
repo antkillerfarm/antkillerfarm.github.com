@@ -354,3 +354,7 @@ https://mp.weixin.qq.com/s/TUwhd7ruF-156GDmInpA7w
 https://mp.weixin.qq.com/s/duJK5y9ZeFkYsFkAg4E2Jw
 
 IBM-小样本学习（Few-shot Learning）State of the art方法及论文讲解
+
+https://mp.weixin.qq.com/s/l-Ae8-K78AYITSn8_0LIfg
+
+破解数据孤岛壁垒，三篇论文详细解读联邦学习

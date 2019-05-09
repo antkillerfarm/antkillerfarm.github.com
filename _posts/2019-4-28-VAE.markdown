@@ -16,11 +16,86 @@ category: GAN & VAE
 
 《An Introduction to Variational Methods for Graphical Models》
 
+## 概述
+
 泛函/变分方面的基本知识可参见《数学狂想曲（十二）》。
 
-ELOB(Evidence Lower Bound)
+Variational Inference实际上和变分法一样，是个很广泛的概念。但是在ML领域，由于主要用在贝叶斯统计的优化方面，因此又叫做Variational Bayesian Inference。这里只讨论后者。
 
-参考：
+在概率模型中，我们常常需要近似难以计算的概率分布，在贝叶斯统计中，所有的对于未知量的推断(inference)问题可以看做是对后验概率(posterior)的计算，而这一概率通常难以计算。我们可以利用MCMC算法（参见《机器学习（二十六）》）做近似，但是对于大量数据，MCMC算法计算较慢。变分推断(Variational Inference)就为我们提供了一种更快更简单的适用于大量数据的近似推断方法。
+
+## 与MCMC算法比较
+
+MCMC方法是利用马尔科夫链取样来近似后验概率，变分法是利用优化结果来近似后验概率，那么我们什么时候用MCMC，什么时候用变分法呢？
+
+首先，MCMC相较于变分法计算上消耗更大，但是它可以保证取得与目标分布相同的样本，而变分法没有这个保证：它只能寻找到近似于目标分布一个密度分布，但同时变分法计算上更快，由于我们将其转化为了优化问题，所以可以利用诸如随机优化(stochastic optimization)或分布优化(distributed optimization)等方法快速的得到结果。所以当数据量较小时，我们可以用MCMC方法消耗更多的计算力但得到更精确的样本。当数据量较大时，我们用变分法处理比较合适。
+
+另一方面，后验概率的分布形式也影响着我们的选择。比如对于有多个峰值的混合模型，MCMC可能只注重其中的一个峰而不能很好的描述其他峰值，而变分法对于此类问题即使样本量较小也可能优于MCMC方法。
+
+## 贝叶斯统计
+
+贝叶斯统计模型一般包括三类变量：观测变量(observed variables, data)（记作X），未知参数（parameters）和潜变量（latent variables）。在贝叶斯推断中，参数和潜变量统称为不可观测变量(unobserved variables)（记作Z）。
+
+![](/images/img3/Variational_Inference.png)
+
+变分贝叶斯方法主要是两个目的:
+
+1.近似不可观测变量的后验概率，以便通过这些变量作出统计推断。
+
+2.对一个特定的模型（记作$$q(Z)$$），计算观测变量的边缘似然函数（或称为证据，evidence）的下界。使用ELBO选择模型：模型的ELBO值越高，则模型对数据拟合程度越好，该模型产生Data的概率也越高。我们对ELBO进行优化，从而得到最优的$$q(Z)$$。如果把$$q(Z)$$当成函数的话，这个问题就是标准的泛函优化问题。
+
+## ELBO(Evidence Lower Bound)
+
+$$p(Z|X) = \frac{p(X|Z)p(Z)}{p(X)} = \frac{p(X|Z)p(Z)}{\int_Z p(X,Z)}\tag{Bayes’ Theorem}$$
+
+$$
+\begin{aligned}
+\log p(X) &= \log \int_Z p(X,Z) \\
+          &= \log \int_Z p(X,Z) \frac{q(Z)}{q(Z)} \\
+          &= \log \left( \mathbb{E}_q\left[\frac{p(X,Z)}{q(Z)}\right] \right)\\
+          &\geq \mathbb{E}_q\left[\log \frac{p(X,Z)}{q(Z)} \right] (\text{Jensen’s inequality})\\
+          &= \mathbb{E}_q\left[\log p(X,Z)\right] + H[Z] (\text{ELBO})
+\end{aligned}
+$$
+
+Jensen’s inequality的推导参见《机器学习（十）》。
+
+通过上述变换，我们可以得到变分的下界ELBO。
+
+## ELBO和KL散度
+
+$$
+\begin{align}
+\log P(x) &= \log P(x,z) - \log P(z|x) \\
+&=\log\frac{P(x,z)}{q(z)} - \log\frac{P(z|x)}{q(z)} \\
+&=\log P(x,z) - \log q(z) - \log\frac {P(z|x)}{q(z)} \\
+&=\log P(x,z) - \log q(z) + \log\frac {q(z)}{P(z|x)} \\
+\end{align}
+$$
+
+等式两边同时对q(z)做期望，即：
+
+$$\int q(z)\log P(x)dz =\int q(z)\log P(x,z)dz - \int q(z)\log q(z)dz + \int q(z)\log\frac{q(z)}{P(z|x)}dz$$
+
+由于q(z)与P(x)无关，所以：
+
+$$\int q(z)\log P(x)dz=\log P(x)$$
+
+即：
+
+$$\log P(x) = \underbrace{\int q(z)\log P(x,z)dz - \int q(z)\log q(z)dz}_{ELBO} + \underbrace{\int q(z)\log\frac{q(z)}{P(z|x)}dz}_{KL(q(z)||P(z|x))}$$
+
+从上式可以看出，想让ELBO越大，则KL散度就要越小。即：**最小化KL散度等价于最大化ELBO**。
+
+Variational Inference常用方法有Mean Field Method、混合高斯模型变分法等。
+
+这些方法不但比较复杂，适用范围也有限，比如Mean Field Method，就要求所求解的问题满足Mean Field假设。
+
+因此，下面提到的VAE，采用了另一种方法——使用神经网络求解分布优化问题。
+
+总结一下：本章节的目的在于揭示为什么VAE需要最小化KL散度的原理，这也正是VAE名字中的Variational的由来。在后面的章节中，我们会看到VAE其实并没有用到常见的变分法，也没有积分这样的运算。
+
+## 参考
 
 https://zhuanlan.zhihu.com/p/49401976
 
@@ -45,6 +120,14 @@ https://www.cnblogs.com/yifdu25/p/8181185.html
 http://blog.huajh7.com/2013/03/06/variational-bayes/
 
 变分贝叶斯算法理解与推导
+
+https://www.cnblogs.com/yifdu25/p/8278986.html
+
+ELBO与KL散度
+
+https://blog.csdn.net/step_forward_ML/article/details/78077383
+
+变分推断(Variational Inference)-mean field
 
 # Vanilla VAE
 
@@ -99,3 +182,9 @@ $$p(X)=\sum_Z p(X|Z)p(Z)$$
 ![](/images/img2/VAE_2.png)
 
 看出了什么问题了吗？如果像这个图的话，我们其实完全不清楚：究竟经过重新采样出来的$$Z_k$$，是不是还对应着原来的$$X_k$$，所以我们如果直接最小化$$\mathcal{D}(\hat{X}_k,X_k)^2$$（这里D代表某种距离函数）是很不科学的，而事实上你看代码也会发现根本不是这样实现的。
+
+## VAE初现
+
+其实，在整个VAE模型中，我们并没有去使用p(Z)（先验分布）是正态分布的假设，我们用的是假设$$p(Z\mid X)$$（后验分布）是正态分布！！
+
+具体来说，给定一个真实样本$$X_k$$，我们假设存在一个专属于$$X_k$$的分布$$p(Z\mid X_k)$$（学名叫后验分布），并进一步假设这个分布是（独立的、多元的）正态分布。为什么要强调“专属”呢？因为我们后面要训练一个生成器$$X=g(Z)$$，希望能够把从分布$$p(Z\mid X_k)$$采样出来的一个$$Z_k$$还原为$$X_k$$。如果假设p(Z)是正态分布，然后从p(Z)中采样一个Z，那么我们怎么知道这个Z对应于哪个真实的X呢？现在$$p(Z\mid X_k)$$专属于$$X_k$$，我们有理由说从这个分布采样出来的Z应该要还原到$$X_k$$中去。

@@ -162,10 +162,6 @@ http://blog.csdn.net/tangxiaoyin/article/details/73274955
 
 一文理清散乱的物联网里开发者必须关注的技术！
 
-https://mp.weixin.qq.com/s/6gX1UFSykuzw358ARUzifw
-
-张溪梦：14年数据分析经历，我总结为这三点“道、术、器”
-
 https://mp.weixin.qq.com/s/aumZu90B4gZQ4nKNY4PRxA
 
 Redux从设计到源码
@@ -218,17 +214,9 @@ https://mp.weixin.qq.com/s/INlW41lJWWjfAHJAnnfB8A
 
 程序员不能错过的28份技术知识图谱，你的进阶路上必备
 
-https://www.zhihu.com/question/30022694/answer/224543003
-
-田渊栋：作为入行数年的专业科研工作者，你每周看几篇paper？
-
 https://mp.weixin.qq.com/s/T7bVFQqzTbZJ7GuQDiNwoA
 
 人工智能在iOS开发上的应用和机会
-
-http://mp.weixin.qq.com/s/aftxoxvzefZtzbGK3XrmuA
-
-李沐：博士这五年
 
 http://chrome.360.cn/test/html5/index.html
 
@@ -309,10 +297,6 @@ https://mp.weixin.qq.com/s/pdOVONHbjfIJPW45nEw1fg
 https://mp.weixin.qq.com/s/9oi-zkuUtjv0P6GyBLmatg
 
 简单说明CGI和动态请求是什么
-
-http://phdcomics.com/
-
-一个关于博士学习生活的漫画网站
 
 https://mp.weixin.qq.com/s/OJJLY5DiCa0e3UVjPtLXmw
 
@@ -397,6 +381,24 @@ https://www.zhihu.com/question/320728455/answer/658973076
 https://mp.weixin.qq.com/s/3a5k3YA6ALri3BrQWQbOpw
 
 浅谈Cgroups
+
+## 科研人生
+
+https://mp.weixin.qq.com/s/6gX1UFSykuzw358ARUzifw
+
+张溪梦：14年数据分析经历，我总结为这三点“道、术、器”
+
+https://www.zhihu.com/question/30022694/answer/224543003
+
+田渊栋：作为入行数年的专业科研工作者，你每周看几篇paper？
+
+http://mp.weixin.qq.com/s/aftxoxvzefZtzbGK3XrmuA
+
+李沐：博士这五年
+
+http://phdcomics.com/
+
+一个关于博士学习生活的漫画网站
 
 ## 5G
 

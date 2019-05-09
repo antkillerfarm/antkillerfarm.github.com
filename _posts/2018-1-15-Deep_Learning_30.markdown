@@ -241,6 +241,10 @@ https://mp.weixin.qq.com/s/x7uk7jBNvnM7Tgk9lFKy3Q
 
 元学习(Meta-Learning)综述及五篇顶会论文推荐
 
+https://mp.weixin.qq.com/s/GF_NLkSw64_6msmFep81fw
+
+Google Brain ICLR Talk：元学习的前沿与挑战
+
 # 深度哈希
 
 https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg

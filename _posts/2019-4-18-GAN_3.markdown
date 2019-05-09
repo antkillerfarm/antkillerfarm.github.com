@@ -1,8 +1,44 @@
 ---
 layout: post
-title:  GAN（三）——DCGAN, WGAN-GP, CGAN, BEGAN & EBGAN, Stack GAN, GAN Ensemble, Pix2Pix
+title:  GAN（三）——DCGAN, WGAN-GP, CGAN, BEGAN & EBGAN, Stack GAN, GAN Ensemble
 category: GAN & VAE 
 ---
+
+# GAN的评估指标
+
+## Inception Score（续）
+
+针对这两方面，IS的思路如下：
+
+1.清晰度：把生成的图片x输入Inception V3中，将输出1000维的向量y，向量的每个维度的值对应图片属于某类的概率。对于一个清晰的图片，它属于某一类的概率应该非常大，而属于其它类的概率应该很小。即$$p(y\mid x)$$的熵应该很小。
+
+2.多样性：如果一个模型能生成足够多样的图片，那么它生成的图片在各个类别中的分布应该是平均的，假设生成了10000张图片，那么最理想的情况是，1000 类中每类生成了10张。即$$p(y)$$的熵很大（熵代表混乱度，均匀分布的混乱度最大）。
+
+IS的计算方法：
+
+$$IS(G)=\exp(\mathbb{E}_{x\sim p_g}D_{KL}(p(y \mid x)\|p(y)))$$
+
+由于生成器的分布并不能精确得到，这里将用采样来近似分布。因此，IS的最终计算方法为：
+
+$$$$
+
+相关代码：
+
+https://github.com/sbarratt/inception-score-pytorch
+
+## 参考
+
+https://mp.weixin.qq.com/s/EPwsQ_005CYNlCK_82SYWQ
+
+六种GAN评估指标的综合评估实验，迈向定量评估GAN的重要一步
+
+https://mp.weixin.qq.com/s/WTvJjiF8fkXWKW7rI9Uvug
+
+全面解析Inception Score原理及其局限性
+
+https://zhuanlan.zhihu.com/p/54213305
+
+Fréchet Inception Distance(FID)
 
 # DCGAN
 
@@ -45,6 +81,8 @@ https://mp.weixin.qq.com/s/ouLWl623r_YaZdIdpqSWcw
 weight clipping对于超出limit的值，采用了简单粗暴clipping方式。而gradient penalty则偏于软性的“惩罚”，也就是说：对于超出limit的值，允许其存在，但要惩罚一下，使之靠近limit。距离越远，惩罚力度越大。
 
 Lipschitz约束只关心所有的梯度都小于C，但C的值是多少，其实并不care。gradient penalty虽然并不能把所有值都约束在limit之内，但是梯度总归不会是无穷大，因此还是满足Lipschitz约束的。
+
+WGAN-GP只是对于梯度的模大于1的区域的x作出了惩罚，它并没有保证每一个x的梯度的模都小于或等于1，也就是说它并没有从根本上解决判别器的1-Lipschitz限制问题。针对这个问题，后来又有了Spectral Normalization GAN。
 
 参考：
 
@@ -193,79 +231,3 @@ https://zhuanlan.zhihu.com/p/30532830
 ![](/images/img3/Triple_GAN.png)
 
 在利用GAN进行半监督的图像分类任务时，判别器需要同时担任两个角色，即判别生成的假样本，以及预测类别，这对判别器提出了较高的要求。通过增加一个分类器可以分担判别器的工作量，即将捕捉样本和标签的条件分布这一任务交给生成器和分类器，而判别器只专注于区分真实样本和生成的样本。
-
-# Pix2Pix
-
-论文：
-
-《Image-to-image translation with conditional adversarial networks》
-
-代码：
-
-https://github.com/phillipi/pix2pix
-
-torch版本
-
-https://github.com/affinelayer/pix2pix-tensorflow
-
-tensorflow版本
-
-https://github.com/williamFalcon/pix2pix-keras
-
-keras版本
-
-![](/images/img2/pix2pix.png)
-
-Pix2Pix对于user control的要求比一般的CGAN更高，这里的监督信息不再是一个类别，而是一张图片。上图就是一个使用Pix2Pix对素描图上色的示例。其中的素描图就相当于CGAN中的类别信息。
-
-Pix2Pix相对于传统GAN的改进在于：
-
-**1.D网络的输入同时包括生成的图片X和它的素描图Y，X和Y使用Concat操作进行融合。**例如，假设两者都是3通道的RGB颜色图，则D网络的Input就是一个6通道的tensor，即所谓的Depth-wise concatenation。
-
-**2.G网络使用dropout来提供随机性。**作者在实践中发现，传统的噪声向量在这个模型的学习过程中，被模型忽略掉了，起不到相应的作用。
-
-**3.G网络使用U-NET。**实践表明，U-NET比AE的效果要好。
-
-**4.L1损失函数的加入来保证输入和输出之间的一致性。**
-
-**5.使用PatchGAN来保证局部精准。**
-
-一般的GAN的D网络，只需要输出一个true or fasle的矢量，这代表对整张图像的评价。而PatchGAN输出的是一个NxN的矩阵，这个NxN的矩阵的每一个元素，对应着原图中的一个Patch。
-
-![](/images/img3/Patch_GAN.png)
-
-判别器对每一个patch做真假判别，将一张图片所有patch的结果取平均作为最终的判别器输出。这一步在具体实现上，就是使用Conv来代替D网络最后一层的FC。由于Conv操作不在乎输入尺寸，因此可以用不同尺寸的图片训练网络。
-
-![](/images/img3/Patch_GAN_2.png)
-
-这是使用不同大小的patch的效果。可以看出patch size越大，则效果越好，但是计算量也越大。
-
-参考：
-
-https://blog.csdn.net/stdcoutzyx/article/details/78820728
-
-Pix2Pix-基于GAN的图像翻译
-
-https://zhuanlan.zhihu.com/p/38411618
-
-pix2pix
-
-https://www.jianshu.com/p/8c7a7cb7198c
-
-pix2pix
-
-https://blog.csdn.net/gdymind/article/details/82696481
-
-一文读懂GAN, pix2pix, CycleGAN和pix2pixHD
-
-https://mp.weixin.qq.com/s/_PlISSOaowgvVW5msa7GlQ
-
-条件GAN高分辨率图像合成与语义编辑pix2pixHD
-
-https://mp.weixin.qq.com/s/PoSA6JXYE_OexEoJYzaX4A
-
-利用条件GANs的pix2pix进化版：高分辨率图像合成和语义操作
-
-https://blog.csdn.net/xiaoxifei/article/details/86506955
-
-关于PatchGAN的理解

@@ -48,6 +48,14 @@ https://mp.weixin.qq.com/s/uei9W13lOp_bbcobv4VvlQ
 
 一张版图带你摸清全球10大自动驾驶联盟布局
 
+https://mp.weixin.qq.com/s/fG_Oee0biudXyX-B-93THw
+
+史上最全的自动驾驶研究报告（上）
+
+https://mp.weixin.qq.com/s/Qe6ex06SFbI1ggq9ONZYFA
+
+史上最全的自动驾驶研究报告（下）
+
 ## 课程
 
 http://selfdrivingcars.mit.edu/

@@ -258,6 +258,10 @@ https://mp.weixin.qq.com/s/bbFDJ6PjjDZqdnPLMqBuKA
 
 秒杀DeepLabv3+与UNet的表面缺陷检测网络
 
+https://mp.weixin.qq.com/s/8I7Lm5DMkVVlvw8v1L_HBA
+
+多感受野的金字塔结构—PSPNet
+
 # 深度ISP
 
 ## 数据集

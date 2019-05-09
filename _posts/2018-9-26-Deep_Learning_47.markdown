@@ -345,3 +345,7 @@ https://mp.weixin.qq.com/s/SDVxn3Ra1dKmr-XgKNg5IA
 https://mp.weixin.qq.com/s/-bh8BL4LxnevS8xnW5U9ZA
 
 中科院自动化所提出BIFT模型：面向自然语言生成，同步双向推断
+
+https://mp.weixin.qq.com/s/7yCnAHk6x0ICtEwBKxXpOw
+
+序列到序列自然语言生成任务超越BERT、GPT！微软提出通用预训练模型MASS

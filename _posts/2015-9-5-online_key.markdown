@@ -251,6 +251,10 @@ https://mp.weixin.qq.com/s/euTQJy0HFVQotAY-KI2OzA
 
 10个实战及面试常用Shell脚本编写
 
+https://github.com/jaywcjlove/linux-command
+
+Linux命令大全搜索工具
+
 # 知识图谱参考资源
 
 https://mp.weixin.qq.com/s/9MToVjepCZuTgXz967ugjg

@@ -232,6 +232,10 @@ https://mp.weixin.qq.com/s/2P7Rlcy-fIC_cwqrB4UQUw
 
 超越Dlib！81个特征点覆盖全脸，面部特征点检测更精准
 
+https://mp.weixin.qq.com/s/YXMJvTcHw_sSMCsN04BfSA
+
+40行代码的人脸识别实践
+
 # OpenVINO
 
 OpenVINO是英特尔推出一套基于深度学习的计算机视觉加速优化框架，支持其它机器学习平台模型的压缩优化、加速计算等功能。

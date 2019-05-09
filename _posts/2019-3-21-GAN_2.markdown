@@ -344,18 +344,18 @@ GAN模式崩溃的理论解释
 
 上图是该文给出的各种常见评估指标的体系结构图。
 
-## 
+## Inception Score
 
-## 参考
+论文：
 
-https://mp.weixin.qq.com/s/EPwsQ_005CYNlCK_82SYWQ
+《Improved Techniques for Training GANs》
 
-六种GAN评估指标的综合评估实验，迈向定量评估GAN的重要一步
+Inception来源于Google的Inception Net，因为计算这个score需要用到Inception Net-V3。
 
-https://mp.weixin.qq.com/s/WTvJjiF8fkXWKW7rI9Uvug
+评价一个生成模型，我们需要考验它两方面性能：
 
-全面解析Inception Score原理及其局限性
+1.生成的图片是否清晰；
 
-https://zhuanlan.zhihu.com/p/54213305
+2.生成的图片是否多样。
 
-Fréchet Inception Distance(FID)
+生成的图片不够清晰，显然说明生成模型表现欠佳；生成的图片够清晰了，我们还要看是不是能生成足够多样的图片，有些生成模型只能生成有限的几种清晰图片，陷入了所谓mode collapse，也不是好的模型。

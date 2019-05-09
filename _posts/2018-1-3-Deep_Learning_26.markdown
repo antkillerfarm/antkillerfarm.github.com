@@ -68,6 +68,12 @@ DeepFM
 
 ![](/images/img2/CTR.png)
 
+## Sequential Recommender
+
+![](/images/img3/sequential_recommendation.png)
+
+上图中，灰色表示MLP，橙色表示RNN，黄色表示CNN，蓝色表示Attention，绿色表示GNN。
+
 ## 工具
 
 https://www.librec.net/
@@ -87,6 +93,10 @@ https://zhuanlan.zhihu.com/learningdeep
 https://mp.weixin.qq.com/s/GMHjXa2r_1SG3HsA-bcIOQ
 
 从FM推演各深度CTR预估模型
+
+https://mp.weixin.qq.com/s/4CLFaP4F-CknDcOWSOdiTQ
+
+基于深度学习的序列推荐系统综述：概念、方法与实验评估
 
 https://mp.weixin.qq.com/s/Yz3vv6H4oHyZ-vX71yv5gw
 

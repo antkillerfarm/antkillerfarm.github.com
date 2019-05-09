@@ -336,6 +336,10 @@ https://mp.weixin.qq.com/s/hx2CFdosvydg2xly8vuVJA
 
 AI还原半世纪前的黑白电影和照片：效果惊艳在线可玩，网友大呼“鹅妹子嘤”
 
+https://xyang35.github.io/2017/08/20/paper-2/
+
+图像去雾算法专题
+
 # ESN
 
 Echo State Network

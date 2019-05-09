@@ -379,3 +379,7 @@ https://mp.weixin.qq.com/s/p0Y3Svrk1WWTed6R4AFWLQ
 https://mp.weixin.qq.com/s/yoCVFWlqReUHx1Wmo0-rtw
 
 强大的姿势感知模型用于姿势不变的人脸识别
+
+https://mp.weixin.qq.com/s/MEB-qLGiOKcvdee-vlsjYw
+
+改进的阴影抑制用于光照鲁棒的人脸识别
