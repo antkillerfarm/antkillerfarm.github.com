@@ -426,3 +426,7 @@ https://mp.weixin.qq.com/s/d2_MTvfbOFZmppej5UOwUw
 https://mp.weixin.qq.com/s/weEZEr4g8pI11Gijc-St0Q
 
 DeBug Python代码全靠print函数？换用这个一天2K+Star的工具吧
+
+https://mp.weixin.qq.com/s/wr18ylCJyJOX83BhbvGXng
+
+13个Python开发者必知的Python GUI库

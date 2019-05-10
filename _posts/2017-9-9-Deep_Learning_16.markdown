@@ -290,6 +290,10 @@ https://mp.weixin.qq.com/s/ao7gOfMYDJDPsNMVV9-Dlg
 
 后ResNet时代：SENet与SKNet
 
+https://mp.weixin.qq.com/s/Tox7jEFNHFHZQ-KdojMIpA
+
+GCNet：当Non-local遇见SENet
+
 # Spatial Transformer Networks
 
 论文：

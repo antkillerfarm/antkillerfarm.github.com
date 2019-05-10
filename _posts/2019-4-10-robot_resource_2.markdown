@@ -350,6 +350,10 @@ https://mp.weixin.qq.com/s/GN4u91Dc5uYLP8N8rptczA
 
 全自动泊车辅助F-APA简介
 
+https://mp.weixin.qq.com/s/b4cnjOByE2j0gIljF7IXCw
+
+F-APA车位搜索及障碍物识别控制原理
+
 https://mp.weixin.qq.com/s/ZRbEwUlqtp8f5987j9-McQ
 
 自动驾驶计算机视觉研究综述：难题、数据集与前沿成果

@@ -56,6 +56,10 @@ https://mp.weixin.qq.com/s/Qe6ex06SFbI1ggq9ONZYFA
 
 史上最全的自动驾驶研究报告（下）
 
+https://mp.weixin.qq.com/s/iQ9vnGX7TjtMP_UOmvVjlA
+
+特斯拉深度研究报告
+
 ## 课程
 
 http://selfdrivingcars.mit.edu/

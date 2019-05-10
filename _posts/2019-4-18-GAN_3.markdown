@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GAN（三）——DCGAN, WGAN-GP, CGAN, BEGAN & EBGAN, Stack GAN, GAN Ensemble
+title:  GAN（三）——DCGAN, WGAN-GP, CGAN, BEGAN & EBGAN, Stack GAN
 category: GAN & VAE 
 ---
 
@@ -20,13 +20,39 @@ $$IS(G)=\exp(\mathbb{E}_{x\sim p_g}D_{KL}(p(y \mid x)\|p(y)))$$
 
 由于生成器的分布并不能精确得到，这里将用采样来近似分布。因此，IS的最终计算方法为：
 
-$$$$
+$$\hat{p}(y)=\frac{1}{N}\sum_{i=1}^N p(y\mid x^{(i)})$$
 
-$$$$
+$$IS(G)\approx \exp(\frac{1}{N}\sum_{i=1}^ND_{KL}(p(y \mid x^{(i)})\|\hat{p}(y)))$$
+
+这里的N表示生成图片的数量。
+
+IS是早期的评估指标，它也有很多问题。例如：均匀分布$$U(-100,100)$$，正态分布$$N(0, 20)$$，因为它们都可以得到$$H(y)=\log 2$$（关于坐标原点对称，所以生成两类的概率相同），同时得到一个很小的$$H(y\mid x)=0$$（最优判别器下，大于0的数对应的概率都很大，小于0的数，概率都很小）。反而真正的分布，左右两个正态分布对应的Inception Score小于前面这些分布。
+
+除了这些特例之外，IS本身的假设也有站不住脚的地方：
+
+1.是否越真实的图片，分类网络输出的概率分布函数越尖锐？显然是不见得的，如果某一个物体所属的类别在分类网络中并不存在，那么它的分布函数依然尖锐吗？
+
+2.是否输出图片均匀地覆盖每个类别，就意味着生成模型不存在mode collapse？Inception net输出1000类，假设生成模型在每类上都生成了50个图片，那么生成的图片的类别边缘分布是严格均匀分布的，按照Inception Score的假设，这种模型不存在mode collapse，但是，如果各类中的50个图片，都是一模一样的，仍然是mode collapse。Inception Score无法检测这种情况。
+
+本质上来说，计算IS时只考虑了生成样本，没有考虑真实数据，即IS无法反映真实数据和样本之间的距离，IS判断数据真实性的依据，源于Inception V3的训练集：ImageNet，在Inception V3的“世界观”下，凡是不像ImageNet的数据，都是不真实的，不能保证输出一个sharp的predition distribution。
 
 相关代码：
 
 https://github.com/sbarratt/inception-score-pytorch
+
+## FID
+
+Fréchet Inception Distance(FID)计算了真实图片和假图片在feature层面的距离，其公式如下：
+
+$$FID=\|\mu_r-\mu_g\|^2+Tr\left(\Sigma_r+\Sigma_g-2(\Sigma_r\Sigma_g)^{1/2}\right)$$
+
+$$\mu_r$$：真实图片的特征的均值。
+
+$$\mu_g$$：生成的图片的特征的均值。
+
+$$\Sigma_r$$：真实图片的特征的协方差矩阵。
+
+$$\Sigma_g$$：生成图片的特征的协方差矩阵。
 
 ## 参考
 
@@ -180,6 +206,8 @@ BEGAN则借鉴了EBGAN和WGAN各自的一些优点。
 
 上图是LAPGAN的网络结构图。顾名思义，这是使用了Laplacian Pyramid来不断提升生成图片的分辨率。
 
+另，StackGAN还有后续版本StackGAN++。
+
 参考：
 
 https://www.cnblogs.com/wangxiaocvpr/p/5966776.html
@@ -205,31 +233,3 @@ https://zhuanlan.zhihu.com/p/30532830
 采用多个判别器的好处带来了类似于boosting的优势，训练一个过于好的判别器，会损坏生成器的性能，这是GAN面临的一个大难题。如果能够训练多个没有那么强的判别器，然后进行boosting，可以取得不错的效果，甚至连dropout技术都可以应用进来。
 
 多个判别器还可以相互进行分工，比如在图像分类中，一个进行粗粒度的分类，一个进行细粒度的分类。在语音任务中，各自用于不同声道的处理。
-
-## 单判别器多生成器
-
-论文：
-
-《Multi-Agent Diverse Generative Adversarial Networks》
-
-![](/images/img3/MA_GAN.png)
-
-一般来说，生成器相比判别器要完成的任务更难，因为它要完成数据概率密度的拟合，而判别器只需要进行判别，导致影响GAN性能的一个问题就是模式坍塌，即生成高度相似的样本。采用多个生成器单个判别器的方法，可以有效地缓解这个问题。
-
-从上图结构可以看出，多个生成器采用同样的结构，在网络的浅层还共享权重。
-
-**mode collapse(模式坍塌)**，即生成高度相似的样本。
-
-![](/images/img2/mode_collapse.jpg)
-
-假设某个data distribution有两个模式（如上图所示），generator可能就学到一个mode，另一个mode则完全没学到。
-
-## 增加分类器
-
-论文：
-
-《Triple Generative Adversarial Nets》
-
-![](/images/img3/Triple_GAN.png)
-
-在利用GAN进行半监督的图像分类任务时，判别器需要同时担任两个角色，即判别生成的假样本，以及预测类别，这对判别器提出了较高的要求。通过增加一个分类器可以分担判别器的工作量，即将捕捉样本和标签的条件分布这一任务交给生成器和分类器，而判别器只专注于区分真实样本和生成的样本。

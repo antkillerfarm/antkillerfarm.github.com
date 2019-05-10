@@ -180,7 +180,7 @@ AAE, ALI, BiGAN
 
 ![](/images/img3/VAE_GAN_2.png)
 
-而关于VAEGAN，有趣的一点是，我们不仅可以用GANs来提升VAE，也可以用VAE来提升GANs。如果是被用作后者的话，“GANVAE”其实就等效为CycleGAN的一部分
+而关于VAEGAN，有趣的一点是，我们不仅可以用GANs来提升VAE，也可以用VAE来提升GANs。如果是被用作后者的话，“GANVAE”其实就等效为CycleGAN的一部分。
 
 参考：
 

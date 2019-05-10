@@ -349,3 +349,7 @@ https://mp.weixin.qq.com/s/-bh8BL4LxnevS8xnW5U9ZA
 https://mp.weixin.qq.com/s/7yCnAHk6x0ICtEwBKxXpOw
 
 序列到序列自然语言生成任务超越BERT、GPT！微软提出通用预训练模型MASS
+
+https://mp.weixin.qq.com/s/7sIUaSON53hsXUJjq8uVUA
+
+马聪：NLP中的生成式预训练模型

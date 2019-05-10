@@ -295,6 +295,10 @@ https://zhuanlan.zhihu.com/p/61096301
 
 一文教你用Neo4j快速构建明星关系图谱
 
+https://mp.weixin.qq.com/s/dnqbsBXHodJB0ZRUrcukCw
+
+使用Docker安装Neo4j
+
 ## neo4j-graph-algorithms
 
 Neo4j Graph Algorithms扩展包，是一个关于图算法的jar包，集成了一些常见的图算法，比如社区发现，路径扩展，中心点计算，PageRank等。

@@ -86,6 +86,10 @@ https://mp.weixin.qq.com/s/7hScDZQfv42nBKdYu4RA0Q
 
 惊艳的SiamMask：开源快速同时进行目标跟踪与分割算法
 
+https://mp.weixin.qq.com/s/yU7_j6hmWKv6FV1pWGq8qA
+
+京东开源姿态跟踪新框架LightTrack！
+
 ## FlowNet
 
 论文：

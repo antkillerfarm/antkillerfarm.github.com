@@ -1,8 +1,38 @@
 ---
 layout: post
-title:  GAN（四）——Pix2Pix, CycleGAN, StarGAN, InfoGAN
+title:  GAN（四）——GAN Ensemble, Pix2Pix, CycleGAN, StarGAN, InfoGAN
 category: GAN & VAE 
 ---
+
+# GAN Ensemble（续）
+
+## 单判别器多生成器
+
+论文：
+
+《Multi-Agent Diverse Generative Adversarial Networks》
+
+![](/images/img3/MA_GAN.png)
+
+一般来说，生成器相比判别器要完成的任务更难，因为它要完成数据概率密度的拟合，而判别器只需要进行判别，导致影响GAN性能的一个问题就是模式坍塌，即生成高度相似的样本。采用多个生成器单个判别器的方法，可以有效地缓解这个问题。
+
+从上图结构可以看出，多个生成器采用同样的结构，在网络的浅层还共享权重。
+
+**mode collapse(模式坍塌)**，即生成高度相似的样本。
+
+![](/images/img2/mode_collapse.jpg)
+
+假设某个data distribution有两个模式（如上图所示），generator可能就学到一个mode，另一个mode则完全没学到。
+
+## 增加分类器
+
+论文：
+
+《Triple Generative Adversarial Nets》
+
+![](/images/img3/Triple_GAN.png)
+
+在利用GAN进行半监督的图像分类任务时，判别器需要同时担任两个角色，即判别生成的假样本，以及预测类别，这对判别器提出了较高的要求。通过增加一个分类器可以分担判别器的工作量，即将捕捉样本和标签的条件分布这一任务交给生成器和分类器，而判别器只专注于区分真实样本和生成的样本。
 
 # Pix2Pix
 
@@ -116,7 +146,7 @@ Pix2Pix要求训练数据的X和Y是成对的，因此它只适合于图片翻�
 
 CycleGAN不仅可用于Style Transfer，还可用于其他用途。
 
-![](/images/img3/CycleGAN_3.png)
+![](/images/img3/CycleGAN_4.png)
 
 上图是CycleGAN用于Steganography（隐写术）的示例。
 
@@ -240,7 +270,10 @@ InfoGAN：一种无监督生成方法
 
 论文：
 
-《》
+《Progressive Growing of GANs for Improved Quality, Stability, and Variation》
+
+
+
 
 参考：
 
