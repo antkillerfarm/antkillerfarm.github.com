@@ -304,6 +304,10 @@ https://mp.weixin.qq.com/s/v8-JHd5tWm41WLqR-h6eKA
 
 使用TensorRT集成加速TensorFlow推理
 
+https://mp.weixin.qq.com/s/rMvhsi2vXxVC65C5Z4IXIw
+
+AI视频处理加速引擎TensorRT及Deepstream介绍
+
 ## NVDLA
 
 NVIDIA Deep Learning Accelerator是一个开源的用于inference的芯片方案。官网：

@@ -341,15 +341,11 @@ https://mp.weixin.qq.com/s/UvR7rLXV8V_QAzLOEOTg2Q
 
 如何在网上选到一瓶心仪的红酒？通过文本分析预测葡萄酒的质量
 
+https://mp.weixin.qq.com/s/xXbyBvxM2HOzHedztpu1Wg
+
+Keras的可视化训练
+
 # AI工具
-
-https://mp.weixin.qq.com/s/wZQ57V0d0O_JylOcqAvfzQ
-
-Deepy———基于Numpy深度学习库，小巧优雅简单
-
-https://mp.weixin.qq.com/s/HMLwjLlFXR4WM92_OnKHbA
-
-基于Apache MXNet，亚马逊NMT开源框架Sockeye论文介绍
 
 https://mp.weixin.qq.com/s/hkcVhyqiDW--F3QxucgEcA
 

@@ -366,6 +366,14 @@ https://mp.weixin.qq.com/s/g8Y83vhw-OORm0CJElwPEA
 
 感知算法
 
+https://mp.weixin.qq.com/s/3yKqwQxwjlu_X-dkJHdhtA
+
+L4自动驾驶中感知系统遇到的挑战及解决方案
+
+https://mp.weixin.qq.com/s/flbCQIaHhYmrgd5Czhnw4g
+
+博世：用于自动驾驶的具备超快速板载以太网的高性能车载芯片研究
+
 # NLP参考资源
 
 https://zhuanlan.zhihu.com/p/64032803

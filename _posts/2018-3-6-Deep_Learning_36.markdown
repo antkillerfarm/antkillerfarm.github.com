@@ -82,6 +82,10 @@ https://zhuanlan.zhihu.com/p/64970393
 
 PointwiseRank
 
+https://zhuanlan.zhihu.com/p/65224450
+
+PairwiseRank
+
 # 人脸检测/识别
 
 ## 人脸识别

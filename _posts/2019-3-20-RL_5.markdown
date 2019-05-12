@@ -137,6 +137,14 @@ https://mp.weixin.qq.com/s/hKGS4Ek5prwTRJoMCaxQLA
 
 强化学习Exploration漫游
 
+https://zhuanlan.zhihu.com/p/65116688
+
+值分布强化学习（01）
+
+https://zhuanlan.zhihu.com/p/65364484
+
+值分布强化学习（02）
+
 # 深度强化学习参考资源
 
 https://mp.weixin.qq.com/s/S2eGPTON3XmfN830m4vaaA

@@ -346,6 +346,10 @@ https://mp.weixin.qq.com/s/KdsHDoPEdrYZgqcW7SMfSw
 
 从DeepNet到HRNet，这有一份深度学习“人体姿势估计”全指南
 
+https://mp.weixin.qq.com/s/spaI9rPy9H3wnlStoncBqQ
+
+中科大&微软开源：基于高清表示网络的人体姿态估计
+
 # Regularization
 
 DL中的Regularization除了常见的$$l_1$$-norm、$$l_2$$-norm和squared $$l_2$$-norm之外，还有Group Regularization。它的定义如下：

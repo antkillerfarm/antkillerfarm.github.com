@@ -393,3 +393,7 @@ https://mp.weixin.qq.com/s/UcLUir2UWibXw9lS8R0sXA
 https://mp.weixin.qq.com/s/wRLMEpGP2hyFdI0IwXWDPw
 
 ICML 2019反锯齿下采样改进网络平移不变性
+
+https://mp.weixin.qq.com/s/CFC7OoVQZyW4pO6p-pnf1g
+
+一个高阶张量搞定整个全卷积网络

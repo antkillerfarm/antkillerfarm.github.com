@@ -190,6 +190,8 @@ https://mp.weixin.qq.com/s/UhckYnIVPCgkJZNeuba1YQ
 
 偏差（bias）和方差（variance）都是泛化误差（generalization error）的组成部分。但遗憾的是，这两个名词至今也没有公认的严格定义，这里只做定性的描述，即：欠拟合的误差主要是偏差，而过拟合的误差主要是方差。
 
+![](/images/img3/Bias_Variance.png)
+
 ## 学习理论的预备知识
 
 学习理论（learning theory）主要解决三大问题：

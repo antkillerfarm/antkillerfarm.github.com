@@ -134,11 +134,15 @@ https://mp.weixin.qq.com/s/c5rvWfIjujw6TNszDzPMdw
 
 DeepMind开源图深度学习(GraphDL)工具包，基于Tensorflow和Sonnet
 
-## Other Framework
+## Other Tools
 
 https://mp.weixin.qq.com/s/POMluy69sphGZ_AlDnJ0og
 
 阿里重磅发布大规模图神经网络平台AliGraph，技术架构和算法独家解读
+
+https://mp.weixin.qq.com/s/KjlIa3oxqfk-iu6Ba5NixQ
+
+图神经网络开发必备组件，NetworkX、稀疏矩阵、稀疏Tensor等
 
 ## 参考
 

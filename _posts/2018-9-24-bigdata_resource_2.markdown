@@ -242,6 +242,10 @@ https://zhuanlan.zhihu.com/p/53151892
 
 航拍/无人机视频图像数据集
 
+https://mp.weixin.qq.com/s/hH3Px_KGegJbGbBvfqrXYA
+
+谷歌开放史上最大分割掩码数据集
+
 ## 人脸/行为
 
 http://blog.csdn.net/wangkr111/article/details/44514097

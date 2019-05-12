@@ -148,6 +148,10 @@ https://mp.weixin.qq.com/s/XgKvh63wgEe-CR9bchp03Q
 
 什么是知识图谱？
 
+https://mp.weixin.qq.com/s/sQPi40dCu6KKwQWOrlSGfw
+
+从知识工程到知识图谱全面回顾
+
 https://www.zhihu.com/question/52368821/answer/138745422
 
 鲍捷：知识图谱怎样入门

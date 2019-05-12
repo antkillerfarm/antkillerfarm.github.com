@@ -4,6 +4,42 @@ title:  GAN（五）——参考资源
 category: GAN & VAE 
 ---
 
+# StyleGAN
+
+
+
+# BigGAN
+
+论文：
+
+《Large Scale GAN Training for High Fidelity Natural Image Synthesis》
+
+参考：
+
+https://mp.weixin.qq.com/s/b3EVdPGY2jxliwdbbB1kcQ
+
+“史上最强GAN图像生成器”BigGAN的demo出了！
+
+https://mp.weixin.qq.com/s/kSyXd5dgdEcqupDeouhObQ
+
+BigGAN论文解读
+
+https://mp.weixin.qq.com/s/akLvNQZMNTaVbkbUrZY4tw
+
+史上最强图像生成器BigGAN变身DeepGAN？四倍深度实现更强效果
+
+# S2GAN
+
+论文：
+
+《》
+
+# SAGAN
+
+论文：
+
+《》
+
 # 参考资源
 
 https://mp.weixin.qq.com/s/Gjb-PkMqUIIV81Na6Za_BQ

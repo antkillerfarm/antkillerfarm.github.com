@@ -116,6 +116,10 @@ ML时代的代表算法还有：
 
 ## 参考
 
+https://mp.weixin.qq.com/s/93HfbJxG-5hFeEm1li-0tw
+
+超分辨率相关资源大列表
+
 https://mp.weixin.qq.com/s/0BNpiyIdLCjJlmTkRNNLrA
 
 深度学习图像超分辨率最新综述：从模型到应用

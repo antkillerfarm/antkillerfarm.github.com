@@ -120,6 +120,8 @@ https://mp.weixin.qq.com/s/kdmmgVdWxz2nJPmjcprvqg
 
 ![](/images/article/computer_vision.jpg)
 
+![](/images/img3/CV_CG.jpg)
+
 6大关键技术：
 
 ![](/images/article/computer_vision_2.jpg)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十五）——Tri-training, 聚类算法, 压缩感知, 元胞自动机, 线性规划, simhash
+title:  机器学习（二十五）——Tri-training, 聚类算法, 压缩感知, 元胞自动机, 运筹学, simhash
 category: ML 
 ---
 
@@ -208,7 +208,7 @@ http://www.cnblogs.com/Firefly727/articles/1856328.html
 
 元胞自动机
 
-# 线性规划
+# 运筹学
 
 http://www.cnblogs.com/6DAN_HUST/archive/2010/11/11/1874681.html
 
@@ -245,6 +245,10 @@ https://mp.weixin.qq.com/s/Ve_Gvp1Y0nIX4DV9_w0S3g
 https://mp.weixin.qq.com/s/wspfngdFNq-GeCTUJAse0A
 
 在单纯形法之前
+
+https://mp.weixin.qq.com/s/sGRNiAl7tvPc1tl0Xk2Idw
+
+深度学习和强化学习在组合优化方面有哪些应用？
 
 # 金融模型
 
@@ -312,6 +316,10 @@ https://mp.weixin.qq.com/s/4aJUGBpPG_6Oc5EqOmM0Iw
 
 作为TensorFlow的底层语言，你会用C++构建深度神经网络吗？
 
+https://mp.weixin.qq.com/s/5_oCSK6MtsK_4xNU6T76UA
+
+计算机图形学遇上深度学习，针对3D图像的TensorFlow Graphics面世
+
 # 知识图谱参考资源+
 
 https://mp.weixin.qq.com/s/7LFkOzkD1-PsNNAr5DAETg
@@ -345,3 +353,7 @@ https://mp.weixin.qq.com/s/PrugbfsWIt0LWGJRw_9i1Q
 https://mp.weixin.qq.com/s/_pNDalO6D8kGiCBYi1jnIA
 
 对于知识图谱嵌入表示的几何形状理解
+
+https://mp.weixin.qq.com/s/3QjLFzMvH9qR05kmUyawQg
+
+知识图谱如何用于可解释人工智能中？

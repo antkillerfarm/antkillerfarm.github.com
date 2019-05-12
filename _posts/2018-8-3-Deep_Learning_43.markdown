@@ -340,6 +340,14 @@ https://xyang35.github.io/2017/08/20/paper-2/
 
 图像去雾算法专题
 
+https://mp.weixin.qq.com/s/H0kl1i4P3Dak2COdzQNG4A
+
+一图生万物！英伟达推超强图像转换神器，小样本一秒猫变狗（FUNIT）
+
+https://mp.weixin.qq.com/s/VbRxHizSBZbUnmTlhK9GPw
+
+GitHub5800星！一键还原百年老电影、黑白旧照片本色
+
 # ESN
 
 Echo State Network

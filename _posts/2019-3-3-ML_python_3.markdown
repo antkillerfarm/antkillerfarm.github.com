@@ -290,6 +290,10 @@ https://mp.weixin.qq.com/s/tzyj0LaJ2Ccv730UhJBdig
 
 拿起Python，防御特朗普的Twitter！
 
+https://mp.weixin.qq.com/s/tARJdv_ybTmVigTXPoeuYw
+
+还在用Matplotlib? 又一可视化神器Altair登场
+
 # 边缘计算
 
 ![](/images/img2/edge_computing.png)

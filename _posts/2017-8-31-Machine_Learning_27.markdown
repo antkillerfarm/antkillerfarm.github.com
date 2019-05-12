@@ -224,6 +224,10 @@ https://mp.weixin.qq.com/s/iwZrWYbppwStJlXESUufZQ
 
 想要算一算Wasserstein距离？这里有一份PyTorch实战
 
+https://mp.weixin.qq.com/s/itQNrNsdjAgPl5R48V-HtQ
+
+计算最优传输（Computational Optimal Transport）
+
 # LSA
 
 ## 基本原理

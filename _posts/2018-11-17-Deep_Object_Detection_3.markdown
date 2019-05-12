@@ -62,7 +62,15 @@ SPP将图像pooling成多个固定尺度，而RoI只将图像pooling到单个固
 
 而ROI Pooling中，为了将ROI区域pooling到单个固定的目标尺度，我们需要根据ROI区域和目标尺度的大小，动态计算pooling区域的大小。
 
+![](/images/img3/ROI_pooling.png)
+
 ROI Pooling有两个输入：feature map和ROI区域。Pooling方式一般为Max Pooling。Pooling的kernel形状可以不为正方形。
+
+参考：
+
+https://mp.weixin.qq.com/s/pH-Eea6Gz5jYnVD5Psp8ZA
+
+在TensorFlow+Keras环境下使用RoI池化一步步实现注意力机制
 
 ## Bounding-box Regression
 

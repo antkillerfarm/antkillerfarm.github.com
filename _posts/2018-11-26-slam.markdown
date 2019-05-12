@@ -162,6 +162,10 @@ https://mp.weixin.qq.com/s/MXsyN7D5ApGUcDxoOp1uKw
 
 深度学习遇到SLAM--如何评价基于深度学习的DeepVO，VINet，VidLoc？
 
+https://mp.weixin.qq.com/s/TDANJJjDXBOsPEHeBWwN1g
+
+视觉SLAM的技术总结
+
 ## 张正友标定算法
 
 ”张正友标定”是指张正友1998年提出的单平面棋盘格的摄像机标定方法。该方法介于传统标定法和自标定法之间，但克服了传统标定法需要的高精度标定物的缺点，而仅需使用一个打印出来的棋盘格就可以。同时也相对于自标定而言，提高了精度，便于操作。因此张氏标定法被广泛应用于计算机视觉方面。

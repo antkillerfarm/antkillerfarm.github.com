@@ -176,6 +176,10 @@ https://mp.weixin.qq.com/s/7u_W4LTYqQBmz3geux5QNQ
 
 对标Bert？刷屏的GPT 2.0意味着什么
 
+https://mp.weixin.qq.com/s/1GIQGBwciP22CZvFxhmLzA
+
+如何构建OpenAI的GPT 2：“太危险而无法释放的人工智能”
+
 ## 参考
 
 https://www.zhihu.com/question/298203515
@@ -353,3 +357,7 @@ https://mp.weixin.qq.com/s/7yCnAHk6x0ICtEwBKxXpOw
 https://mp.weixin.qq.com/s/7sIUaSON53hsXUJjq8uVUA
 
 马聪：NLP中的生成式预训练模型
+
+https://mp.weixin.qq.com/s/s1bQFdA6gtoHeeQMJKQ8UQ
+
+Bert时代的创新：Bert应用模式比较及其它

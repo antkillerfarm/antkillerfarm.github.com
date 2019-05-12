@@ -207,3 +207,7 @@ https://mp.weixin.qq.com/s/kYCb4Fc4_Gh4eIlJbFDwJA
 https://mp.weixin.qq.com/s/jInNuNQprWlCNAz7UyHRvg
 
 IEMLRN：基于图像增强的句子语义表示
+
+https://mp.weixin.qq.com/s/3YPWQjzkmbayeEbKkUdp9w
+
+平安人寿资深算法工程师张智：人机交互场景下的知识挖掘

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GAN（四）——GAN Ensemble, Pix2Pix, CycleGAN, StarGAN, InfoGAN
+title:  GAN（四）——GAN Ensemble, Pix2Pix, CycleGAN, StarGAN, InfoGAN, ProGAN
 category: GAN & VAE 
 ---
 
@@ -272,43 +272,16 @@ InfoGAN：一种无监督生成方法
 
 《Progressive Growing of GANs for Improved Quality, Stability, and Variation》
 
+![](/images/img3/ProGAN.png)
 
+如果现在我们想生成超高分辨率的图像，譬如1024×1024图片，假设我们采用StackGAN或者是LapGAN的话，我们需要用到的 GANs结构会非常多，这样会导致网络深度巨大，训练起来非常慢。
 
+为了解决这一问题，ProGAN（也称PGGAN）提出的想法是，我们只需要一个GANs就能产生1024×1024图片。但是一开始的时候GANs的网络非常浅，只能学习低分辨率（4x4）的图片生成，随着训练进行，我们会把GANs的网络层数逐渐加深，进而去学习更高分辨率的图片生成，最终不断的更新GANs，从而能学习到1024×1024分辨率的图片生成。
+
+也就是说，PGGAN与StackGAN和LapGAN的最大不同在于，后两者的网络结构是固定的，但是PGGAN随着训练进行网络会不断加深，网络结构是在不断改变的。这样做最大的好处就是，PGGAN大部分的迭代都在较低分辨率下完成，训练速度比传统GANs提升了2-6倍。
 
 参考：
 
 https://mp.weixin.qq.com/s/X8osUSPROJqGVTvw0gieDQ
 
 T2T：利用StackGAN和ProGAN从文本生成人脸
-
-# BigGAN
-
-论文：
-
-《Large Scale GAN Training for High Fidelity Natural Image Synthesis》
-
-参考：
-
-https://mp.weixin.qq.com/s/b3EVdPGY2jxliwdbbB1kcQ
-
-“史上最强GAN图像生成器”BigGAN的demo出了！
-
-https://mp.weixin.qq.com/s/kSyXd5dgdEcqupDeouhObQ
-
-BigGAN论文解读
-
-https://mp.weixin.qq.com/s/akLvNQZMNTaVbkbUrZY4tw
-
-史上最强图像生成器BigGAN变身DeepGAN？四倍深度实现更强效果
-
-# S2GAN
-
-论文：
-
-《》
-
-# SAGAN
-
-论文：
-
-《》

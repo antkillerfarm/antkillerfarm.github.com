@@ -298,6 +298,10 @@ https://mp.weixin.qq.com/s/YX1XqKVfPS9DpMi_gTFNiA
 
 1000行MySQL学习笔记
 
+https://www.cnblogs.com/andy6/p/6959028.html
+
+从Oracle迁移到MySQL的各种坑及自救方案
+
 # Android研究
 
 ## Flutter
