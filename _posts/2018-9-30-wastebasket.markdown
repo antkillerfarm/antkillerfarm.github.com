@@ -100,10 +100,6 @@ https://zhuanlan.zhihu.com/p/43934918
 
 诡异的布雷斯悖论：为什么越是修新路，城市反而更堵了！
 
-https://zhuanlan.zhihu.com/p/43472599
-
-为什么现在的动物不如恐龙那样巨大？
-
 http://www.matrix67.com/
 
 一个数学blog

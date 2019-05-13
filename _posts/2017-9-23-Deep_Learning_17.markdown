@@ -146,6 +146,10 @@ https://mp.weixin.qq.com/s/5Kcbnme7151Ln6KiTyVaBw
 
 多目标追踪资源列表
 
+https://zhuanlan.zhihu.com/p/65177442
+
+多目标跟踪：近年论文及开源代码汇总
+
 https://zhuanlan.zhihu.com/p/36462982
 
 多目标追踪算法：条件随机场算法
@@ -351,6 +355,10 @@ https://mp.weixin.qq.com/s/HopNSLS75TgE28LfY02qog
 https://mp.weixin.qq.com/s/XiLBHkraT8lJcOu2faqK5g
 
 关于弱监督学习，这可能是目前最详尽的一篇科普文
+
+https://mp.weixin.qq.com/s/VnOfYuHQQf_q92VHVE3mrQ
+
+谷歌新发布的半监督学习算法降低4倍错误率
 
 # 细粒度分类
 

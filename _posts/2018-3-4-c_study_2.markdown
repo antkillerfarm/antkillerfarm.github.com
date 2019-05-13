@@ -352,3 +352,17 @@ JPype：实现在python中调用JAVA
 http://www.cnblogs.com/yu-zhang/p/3817024.html
 
 python调用java程序--jpype
+
+## NetworkX
+
+NetworkX是一个用Python语言开发的图论与复杂网络建模工具，内置了常用的图与复杂网络分析算法，可以方便的进行复杂网络数据分析、仿真建模等工作。
+
+官网：
+
+https://networkx.github.io/
+
+参考：
+
+https://www.cnblogs.com/kaituorensheng/p/5423131.html
+
+python复杂网络分析库NetworkX

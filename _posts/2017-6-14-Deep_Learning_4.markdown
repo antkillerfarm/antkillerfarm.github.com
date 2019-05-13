@@ -158,11 +158,17 @@ Autoencoder的结构如上图所示。它的特殊之处在于：
 
 但是，不是所有的数据都能够降维，而这种情况通常会导致Autoencoder的训练失败。
 
-类似的，如果隐藏层的神经元数量大于样本的维度，则该AE可用于升维。
+类似的，如果隐藏层的神经元数量大于样本的维度，则该AE可用于升维。这样的AE又叫做Sparse autoencoders。
+
+![](/images/img3/sae.png)
 
 总体来看，AE是个Encoder/Decoder结构。我们上面提到的降维/升维，主要是利用了Encoder部分。而Decoder部分也是很有意义的，它表明我们能够从tensor生成样本，这实际上就是一种**生成模型**。
 
-和Autoencoder类似的神经网络还有：Denoising Autoencoder（DAE）、Variational Autoencoder（VAE）、Sparse Autoencoder（SAE）。
+和Autoencoder类似的神经网络还有：Denoising Autoencoder（DAE）。
+
+![](/images/img3/dae.png)
+
+黄色的三角表明输入数据中被加入了噪声。当然了DAE的输出要和无噪声样本做比较，这样才能体现去噪的效果。
 
 ## Stacked AutoEncoders
 

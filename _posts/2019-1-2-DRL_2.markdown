@@ -56,6 +56,14 @@ https://deepmind.com/research/alphago/alphago-games-simplified-chinese/
 
 《Mastering the game of Go with deep neural networks and tree search》
 
+2017.1
+
+岁首，业界最重要的事情莫过于AlphaGo以Master之名再度出山，60场快棋未遇敌手。牛逼！
+
+http://goeye-app.com/resources.html#cn
+
+精选在线棋谱资源
+
 ## DarkForest
 
 DarkForest是田渊栋2015年11月的作品，虽然棋力和稍后的AlphaGo相去甚远，但毕竟也算是用到了RL和DNN了。

@@ -32,6 +32,10 @@ https://mp.weixin.qq.com/s/lbku7wQK1k8nuC2QqIJrug
 
 基于非负谱学习和稀疏回归的双图特征选择算法
 
+https://mp.weixin.qq.com/s/6JberaY4H7it_UQiBls8wg
+
+为你介绍7种流行的线性回归收缩与选择方法
+
 ## KL散度
 
 KL散度（Kullback–Leibler divergence）是两个随机分布间距离的度量。其定义如下：

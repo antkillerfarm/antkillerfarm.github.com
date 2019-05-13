@@ -320,6 +320,10 @@ https://mp.weixin.qq.com/s/5_oCSK6MtsK_4xNU6T76UA
 
 计算机图形学遇上深度学习，针对3D图像的TensorFlow Graphics面世
 
+https://mp.weixin.qq.com/s/ndnbTCr51k_FSDRCLi0UOg
+
+添加新操作
+
 # 知识图谱参考资源+
 
 https://mp.weixin.qq.com/s/7LFkOzkD1-PsNNAr5DAETg

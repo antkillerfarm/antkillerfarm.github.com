@@ -44,20 +44,6 @@ https://mp.weixin.qq.com/s/cyG_TpPA9eyzG70VT2m2Ww
 
 Requests的基本用法
 
-## NetworkX
-
-NetworkX是一个用Python语言开发的图论与复杂网络建模工具，内置了常用的图与复杂网络分析算法，可以方便的进行复杂网络数据分析、仿真建模等工作。
-
-官网：
-
-https://networkx.github.io/
-
-参考：
-
-https://www.cnblogs.com/kaituorensheng/p/5423131.html
-
-python复杂网络分析库NetworkX
-
 ## Celery
 
 Celery是一个专注于实时处理和任务调度的分布式任务队列，可用于执行定时任务。

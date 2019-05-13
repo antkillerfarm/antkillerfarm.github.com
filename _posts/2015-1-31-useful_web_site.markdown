@@ -382,6 +382,10 @@ https://mp.weixin.qq.com/s/3a5k3YA6ALri3BrQWQbOpw
 
 浅谈Cgroups
 
+https://mp.weixin.qq.com/s/_7q9K9D1q40eaGkLt9yDhQ
+
+分布式系统关注点——深入浅出“异步”
+
 ## 科研人生
 
 https://mp.weixin.qq.com/s/6gX1UFSykuzw358ARUzifw
