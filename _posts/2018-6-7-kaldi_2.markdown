@@ -213,6 +213,10 @@ https://mp.weixin.qq.com/s/xBbYHMQhxkRQ-dy-0gHvaw
 
 如何用kaldi参加京东金融对话语音识别大赛
 
+https://zhuanlan.zhihu.com/p/59686031
+
+怎样从二进制数据分辨单声道与双声道音频
+
 # OpenAI
 
 OpenAI，由诸多硅谷大亨（Elon Musk等）联合建立的人工智能非营利组织。

@@ -244,6 +244,10 @@ https://mp.weixin.qq.com/s/Y1bskBi8GUi1MW1VMM2-vw
 
 没有照相机之前，画家是怎么修出漂亮的图的？
 
+https://zhuanlan.zhihu.com/p/54898983
+
+一道弹性碰撞的物理题，结果为什么会出现$$\pi$$？
+
 ## LSM (Log Structured Merge)
 
 十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。

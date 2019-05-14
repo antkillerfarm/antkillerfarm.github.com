@@ -262,6 +262,10 @@ https://mp.weixin.qq.com/s/BXwL33qOf3f7BtJvHsi23Q
 
 目标检测：Segmentation is All You Need？
 
+https://mp.weixin.qq.com/s/2PLp2xNfhkHB3fPQr5Ts6g
+
+密歇根大学40页《20年目标检测综述》最新论文，带你全面了解目标检测方法
+
 # Flink
 
 Flink是一个流计算引擎。

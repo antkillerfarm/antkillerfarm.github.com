@@ -214,3 +214,7 @@ https://mp.weixin.qq.com/s/Ctn1Wr68lph1UK_wjfCY1Q
 https://mp.weixin.qq.com/s/78ir-Z4ch8_aVpjC6aCPGg
 
 DeepMind综述深度强化学习中的快与慢，智能体应该像人一样学习
+
+https://mp.weixin.qq.com/s/ij3bf61Pu7lrX0WijhbDeA
+
+骑驴找马：利用深度强化学习模型定位新物体

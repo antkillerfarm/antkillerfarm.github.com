@@ -273,3 +273,7 @@ https://mp.weixin.qq.com/s/I7mpy5P7LFFkop618ANLtA
 https://mp.weixin.qq.com/s/bPieF6CNvM4N1Njx6OHNwg
 
 谷歌大脑：像BigGAN那样生成高清大图不一定需要大量图像标签
+
+https://mp.weixin.qq.com/s/wFW7rmAM5HL8NEa6w-VCxQ
+
+LADN：局部对抗解缠网络-人脸妆容迁移与反迁移的深度学习模型

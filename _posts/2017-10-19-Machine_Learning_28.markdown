@@ -66,6 +66,8 @@ https://mp.weixin.qq.com/s/ewXRcTrolJxxN549vMQcfg
 
 # 异常检测
 
+Anomaly Detection
+
 1.基于聚类算法的异常检测。
 
 2.基于孤立森林算法的异常检测。
@@ -133,6 +135,10 @@ https://mp.weixin.qq.com/s/PKX13Fv5fWmgX5IHLYgjmQ
 https://mp.weixin.qq.com/s/l1OKsahXHrFGr4YX441c9A
 
 时序数据异常检测工具/数据集大列表
+
+https://mp.weixin.qq.com/s/CuFbmcoXf4oG2YcDOgO3qw
+
+异常检测基础
 
 # AutoML
 

@@ -136,6 +136,10 @@ https://mp.weixin.qq.com/s/mCOHF2MMIOD4QZJzyfi7Vw
 
 携程机票Node.js开发实践
 
+https://mp.weixin.qq.com/s/uDwX0iq9RWs1sK1ct0tiCg
+
+浅谈Node.js在携程的应用
+
 ## NPM
 
 npm是node.js的软件包管理工具。它的官网是：

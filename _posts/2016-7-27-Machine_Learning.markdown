@@ -115,6 +115,8 @@ $$
 
 因为$$\frac{\partial^2 f}{\partial x_i\partial x_j}=\frac{\partial^2 f}{\partial x_j\partial x_i}$$(克莱罗定理，Clairaut’s theorem)，所以Hessian矩阵通常是一个对称矩阵。
 
+![](/images/img3/Hessian.jpg)
+
 参考：
 
 http://blog.csdn.net/dsbatigol/article/details/12558891
@@ -124,6 +126,10 @@ http://blog.csdn.net/dsbatigol/article/details/12558891
 http://files.cnblogs.com/files/leoleo/matrix_rules.pdf
 
 矩阵、向量求导法则全览
+
+https://zhuanlan.zhihu.com/p/35323714
+
+梯度、散度、旋度、Jacobian、Hessian、Laplacian 的关系图
 
 ## 梯度下降算法
 
