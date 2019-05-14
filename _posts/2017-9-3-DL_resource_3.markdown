@@ -385,3 +385,7 @@ https://mp.weixin.qq.com/s/675tMer_pEXwXkg7fzq73g
 https://mp.weixin.qq.com/s/QeuQZiC1hKS5cqs59r9KNQ
 
 危险！一张贴画就能迷惑AI，对抗补丁或让自动驾驶车毁人亡
+
+https://zhuanlan.zhihu.com/p/65745852
+
+动量迭代式对抗噪声生成方法

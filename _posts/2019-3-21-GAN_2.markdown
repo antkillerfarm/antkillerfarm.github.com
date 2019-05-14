@@ -180,6 +180,10 @@ https://mp.weixin.qq.com/s/A66WeHH77IOCv61RHiDE0w
 
 生成式对抗网络（GAN）如何快速理解？这里有一篇最直观的解读
 
+https://mp.weixin.qq.com/s/wW8kTQ7eQeCJsHC9ju8VLA
+
+GAN_keras版
+
 # GAN进阶
 
 ## Structured Learning

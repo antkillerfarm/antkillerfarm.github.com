@@ -174,6 +174,10 @@ LCNN论文阅读笔记
 
 7.因果推理
 
+最前沿 = good new idea
+
+工业界 = proven idea in practice
+
 参考：
 
 https://mp.weixin.qq.com/s/QtO-4ARpAQf0kXfALqMKSQ
@@ -225,10 +229,6 @@ GAN的五个神奇应用场景
 https://mp.weixin.qq.com/s/LJfsadhp3WGi0tLXN7jCUA
 
 GAN生成图像综述
-
-https://mp.weixin.qq.com/s/wW8kTQ7eQeCJsHC9ju8VLA
-
-One Day One GAN_keras版[DAY 1]
 
 https://mp.weixin.qq.com/s/kWv-hp2svq1OEHy2DqQ4uA
 

@@ -46,6 +46,8 @@ https://zhuanlan.zhihu.com/p/44862021
 
 >Tsugio Makimoto（牧本次生），IEEE Robert N. Noyce Medal（2018）。曾任索尼CTO。半导体工业从NMOS到CMOS演进的先驱。
 
+![](/images/img3/broadcom.jpg)
+
 # 四行仓库
 
 2018.1

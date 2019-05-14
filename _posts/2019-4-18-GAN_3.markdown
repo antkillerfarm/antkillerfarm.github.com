@@ -96,6 +96,10 @@ https://mp.weixin.qq.com/s/ouLWl623r_YaZdIdpqSWcw
 
 深度卷积对抗生成网络(DCGAN)实战
 
+https://mp.weixin.qq.com/s/qvNT_QjQh0NkDl6bgsnfwg
+
+DCGAN
+
 # WGAN-GP
 
 论文：
@@ -149,6 +153,12 @@ CGAN的D网络，除了预测数据的真假之外，还要预测数据的类别
 2.GAN生成的图片细节较多，但是只保留了训练数据的语义信息，而忽略了具体内容。这里的语义信息，指的是高层级的抽象，比如都是狗图片（语义相同），内容却可以千差万别。
 
 3.CGAN较好的解决了监督学习和GAN的结合问题，即保留了语义，也保留了内容。
+
+参考：
+
+https://mp.weixin.qq.com/s/0fr6H5xGxmFoNuSxs7z7bQ
+
+CGAN
 
 # EBGAN & BEGAN
 

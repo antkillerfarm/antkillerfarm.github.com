@@ -324,6 +324,10 @@ https://mp.weixin.qq.com/s/ndnbTCr51k_FSDRCLi0UOg
 
 添加新操作
 
+https://mp.weixin.qq.com/s/s8hAYadCw9-_BpWSCh38gg
+
+TensorFlow 2.0：数据读取与使用方式
+
 # 知识图谱参考资源+
 
 https://mp.weixin.qq.com/s/7LFkOzkD1-PsNNAr5DAETg

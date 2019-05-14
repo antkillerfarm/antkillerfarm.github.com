@@ -310,6 +310,10 @@ https://zhuanlan.zhihu.com/p/50529704
 
 手把手带你遨游TVM
 
+https://mp.weixin.qq.com/s/z5rsU_uAAaRxgD9YAxDkZA
+
+陈天奇：深度学习编译技术的现状和未来
+
 # 安全
 
 https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126

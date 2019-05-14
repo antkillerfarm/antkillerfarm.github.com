@@ -327,3 +327,7 @@ https://mp.weixin.qq.com/s/ZkVK9S-BSoQTo09ALBI9aA
 https://mp.weixin.qq.com/s/hm_1A5Mu_6R0ygZPsspV8g
 
 开源的Blink和Spark3.0，谁将称霸大数据领域？
+
+https://mp.weixin.qq.com/s/DPLJA8Q2gDXLZF17FOcczw
+
+OPPO数据中台之基石：基于Flink SQL构建实数据仓库

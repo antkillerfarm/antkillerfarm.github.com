@@ -224,7 +224,79 @@ sbt支持：
 
 `libraryDependencies += "org.scalafx" %% "scalafx" % "8.0.92-R10"`
 
-# ML参考资源+
+# 推荐系统的工程细节+
+
+## 评价推荐质量（续）
+
+参考：
+
+https://www.zhihu.com/question/26990692
+
+类似今日头条这样的个性化推荐网站怎么评价推荐质量的优劣？
+
+https://www.zhihu.com/question/19660417
+
+为什么那么多牛人成天在研究讨论算法，系统自动推荐的东西还是不能令人满意呢？
+
+https://mp.weixin.qq.com/s/fB3AFUiS4nFmqXpSnOpf4w
+
+如何选择上班路线最省时间？从A/B测试数学原理说起
+
+https://mp.weixin.qq.com/s/EGorUTYz09PYU3CdU_qwDA
+
+如何省时省力验证模型效果？达观数据在线分层实验平台给你支招
+
+https://mp.weixin.qq.com/s/S9AjPkYLzRQpg5evyaoleQ
+
+推荐系统的工程实现
+
+https://mp.weixin.qq.com/s/cjo5MYa-t9tWDCjwDpkOeg
+
+推荐系统评估
+
+## 召回
+
+这个词在推荐系统中至少有三个不同的含义：
+
+1.recall。ML领域的查全率也称召回率。参见《机器学习（二十二）》。
+
+2.match。指对大量的物品做一个初选，针对每一个用户形成个性化侯选集。
+
+3.产品召回，流失客户召回。这个和通常汉语中意思一致，表示失而复得/得而复失。
+
+## 术语
+
+GMV(Gross Merchandise Volume)成交额
+
+![](/images/article/pv.jpg)
+
+CTR（Click-Through-Rate）即点击通过率，是互联网广告常用的术语，指网络广告（图片广告/文字广告/关键词广告/排名广告/视频广告等）的点击到达率，即该广告的实际点击次数除以广告的展现量。
+
+RTB（Real Time Bidding，实时竞价）
+
+eCPM（千次展示期望收入）
+
+CPM（Cost per mille）
+
+CPC（Cost per click）
+
+CPA（Cost per action）
+
+CPT（按展现时间收费）、CPL（按潜在线索收费）、CPS（按成功销售收费）
+
+ROI（return on investment）投资回报率
+
+## 数据埋点
+
+数据埋点是数据产品经理、数据运营以及数据分析师，基于业务需求或产品需求对用户在应用内产生行为的每一个事件对应的页面和位置植入相关代码，并通过采集工具上报统计数据，以便相关人员追踪用户行为，推动产品优化或指导运营的一项工程。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/53522063
+
+数据产品经理需要掌握的产品埋点方法
+
+# ML参考资源
 
 https://mp.weixin.qq.com/s/lJQprqGShGys3vfhYSxDWg
 
@@ -233,43 +305,3 @@ https://mp.weixin.qq.com/s/lJQprqGShGys3vfhYSxDWg
 https://mp.weixin.qq.com/s/lpNTdnfp2FnJ97EivhUv2g
 
 12种降维方法终极指南
-
-https://mp.weixin.qq.com/s/s2XpGne0sAqnuN-u6g5k1A
-
-资金流因子全面测试兼正交化方法详解
-
-https://mp.weixin.qq.com/s/oblwg01BUIJjVhBeHa9HQQ
-
-程序员分析了50万条拼多多商品数据，告诉你到底是消费升级还是降级！
-
-https://mp.weixin.qq.com/s/4HVkEnk6_hONWJYdi8L53g
-
-闲聊结构化预测（structured learning）
-
-https://mp.weixin.qq.com/s/GP_t_fhklpVNhC6J6i0YbA
-
-再聊聊自然语言处理中的结构化预测问题
-
-https://mp.weixin.qq.com/s/G6-XbqCO5iuwGDen-r6aWg
-
-唐宏:基于概率主题模型的高分辨率遥感图像非监督语义分割
-
-https://mp.weixin.qq.com/s/21LVssq2ynMgp_x1lwSC9w
-
-基于稀疏自表示与模糊双C均值聚类的SAR图像分割
-
-https://mp.weixin.qq.com/s/Oi1yJty_guzTUbRGZ5MuEw
-
-使用高斯过程的因果推理：GP CaKe的基本思路
-
-https://mp.weixin.qq.com/s/vLvjo8Cso_bYEuW-AFoyiA
-
-南大周志华等人提出无组织恶意攻击检测算法UMA
-
-https://mp.weixin.qq.com/s/y6EwGHlKk1XjaasuuRzb5w
-
-机器学习算法中的概率方法
-
-https://mp.weixin.qq.com/s/jNQmh7NAiR-qJshBF38WkQ
-
-DeepMind新研究：三招解决机器学习模型debug难题

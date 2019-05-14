@@ -348,6 +348,10 @@ https://mp.weixin.qq.com/s/VbRxHizSBZbUnmTlhK9GPw
 
 GitHub5800星！一键还原百年老电影、黑白旧照片本色
 
+https://mp.weixin.qq.com/s/3hv44bkXYHn2wN_2OZmhxA
+
+四大指标超现有模型！少样本的无监督图像翻译效果逆天（FUNIT）
+
 # ESN
 
 Echo State Network

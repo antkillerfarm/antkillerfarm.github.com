@@ -240,6 +240,10 @@ https://mp.weixin.qq.com/s/9ZmyidQ888PiT7jbr7Zusg
 
 物理学家辞掉NASA工作玩折纸，竟被请回实验室“折卫星”（折纸几何学）
 
+https://mp.weixin.qq.com/s/Y1bskBi8GUi1MW1VMM2-vw
+
+没有照相机之前，画家是怎么修出漂亮的图的？
+
 ## LSM (Log Structured Merge)
 
 十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。

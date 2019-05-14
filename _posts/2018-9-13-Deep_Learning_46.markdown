@@ -96,6 +96,10 @@ https://mp.weixin.qq.com/s/KFgC8zHWS7ysb9GfbkfLRA
 
 OCR技术简介
 
+https://zhuanlan.zhihu.com/p/65707543
+
+文字OCR方法整理
+
 https://mp.weixin.qq.com/s/0ysaJGNslckesv21o752FA
 
 图像OCR年度进展

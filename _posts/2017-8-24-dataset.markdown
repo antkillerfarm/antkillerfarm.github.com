@@ -324,6 +324,10 @@ https://mp.weixin.qq.com/s/txlWG1yAFlSMMVNKYssMsw
 
 微软亚洲研究院开源表格数据集TableBank，数据量达41.7万
 
+https://mp.weixin.qq.com/s/dlmzRrAeB-jkhk7rbUrNpg
+
+微软亚洲研究院发布业界最全面的语义分析数据集MSParS
+
 ## CV
 
 http://www.cvpapers.com/datasets.html

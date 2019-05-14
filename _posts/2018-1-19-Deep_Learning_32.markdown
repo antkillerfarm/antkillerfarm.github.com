@@ -238,6 +238,10 @@ http://www.pointclouds.org/
 
 ## 参考
 
+https://github.com/Yochengliu/awesome-point-cloud-analysis
+
+三维点云论文和数据集
+
 https://mp.weixin.qq.com/s/f44TkWXklGONCuXnIuTbXg
 
 无人驾驶汽车系统入门：基于VoxelNet的激光雷达点云车辆检测及ROS实现

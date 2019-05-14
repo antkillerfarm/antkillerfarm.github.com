@@ -305,48 +305,26 @@ A/B测试、双盲交叉验证
 
 PS：NLP领域的TF-IDF算法可有效防止马太效应问题。
 
-参考：
+按照道理来讲，推荐系统要做的事情其实是“推荐用户希望看到的东西”，但是“用户希望看到的东西”落实到指标上，可就让人头大了。
 
-https://www.zhihu.com/question/26990692
+以新闻推荐为例。你说究竟要得到什么呢？
 
-类似今日头条这样的个性化推荐网站怎么评价推荐质量的优劣？
+高CTR？那么擦边球的软色情以及热门文章就会被选出来。
 
-https://www.zhihu.com/question/19660417
+高Staytime？那么视频+文章feed流就退化为视频feed流
 
-为什么那么多牛人成天在研究讨论算法，系统自动推荐的东西还是不能令人满意呢？
+高read/U？那么短文章就会被选出来。
 
-https://mp.weixin.qq.com/s/fB3AFUiS4nFmqXpSnOpf4w
+exploration & exploitation，简单说，就是保证精准推荐的同时，进行兴趣探索。
 
-如何选择上班路线最省时间？从A/B测试数学原理说起
+一说大家都明白了，这不就是所有推荐系统做的最差的地方吗？我看了一个东西，就使劲出一个东西，App明明很多东西，我却越用越窄。
 
-https://mp.weixin.qq.com/s/EGorUTYz09PYU3CdU_qwDA
+这个问题更加玄学，更加让人无奈。EE要不要做？
 
-如何省时省力验证模型效果？达观数据在线分层实验平台给你支招
+肯定要做，你不能让用户只能看到一类新闻，这样久了他的feed流只会越来越小，自己也觉得没劲，所以一定要做兴趣探索。
 
-https://mp.weixin.qq.com/s/S9AjPkYLzRQpg5evyaoleQ
+但是做，就势必牺牲指标，探索的过程是艰难的，大部分时间用户体验上也是负向的。
 
-推荐系统的工程实现
+那么，牺牲多少ctr来保EE才算是合适的？EE的ROI什么时候算是>1的？怎么样确定EE的效果？EE要E到什么程度？
 
-https://mp.weixin.qq.com/s/cjo5MYa-t9tWDCjwDpkOeg
-
-推荐系统评估
-
-## 术语
-
-GMV(Gross Merchandise Volume)成交额
-
-![](/images/article/pv.jpg)
-
-CTR（Click-Through-Rate）即点击通过率，是互联网广告常用的术语，指网络广告（图片广告/文字广告/关键词广告/排名广告/视频广告等）的点击到达率，即该广告的实际点击次数除以广告的展现量。
-
-RTB（Real Time Bidding，实时竞价）
-
-eCPM（千次展示期望收入）
-
-CPM（Cost per mille）
-
-CPC（Cost per click）
-
-CPA（Cost per action）
-
-CPT（按展现时间收费）、CPL（按潜在线索收费）、CPS（按成功销售收费）
+对于新业务线暂时不要以GMV为导向，可以从流量或转化率的角度入手，选取CTR作为核心指标；对于比较稳定的业务线则以GMV为导向，选取UV价值作为核心指标。

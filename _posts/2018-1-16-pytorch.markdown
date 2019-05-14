@@ -322,6 +322,10 @@ https://mp.weixin.qq.com/s/pDo2bSctEiTEyjRUgOAC8w
 
 PyTorch常用代码段整理合集
 
+https://mp.weixin.qq.com/s/Mo7XhRcPkgurmQPJ3Zu1ug
+
+基于PyTorch的计算机视觉框架
+
 # AI Chip+
 
 https://zhuanlan.zhihu.com/p/31782874

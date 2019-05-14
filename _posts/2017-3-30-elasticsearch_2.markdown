@@ -305,6 +305,10 @@ https://mp.weixin.qq.com/s/2kU9QhLP-njpToPckyfK5A
 
 伯克利RISE Lab开源Confluo：吞吐量比Kafka高4到10倍
 
+https://mp.weixin.qq.com/s/QJOfh5gJReQTimu-mAzexg
+
+以Kafka和RocketMQ为例，漫谈消息队列
+
 # 数据结构 & 普通CS算法
 
 https://mp.weixin.qq.com/s/52JFdyaLwZq7nWiZq6z6qA
