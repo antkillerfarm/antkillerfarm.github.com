@@ -184,9 +184,7 @@ https://github.com/zcbenz/nw-sample-apps
 
 替换国内的源：
 
-编辑~/.npmrc，添加
-
-`registry=http://npmreg.mirrors.ustc.edu.cn/`
+https://npm.taobao.org
 
 nw打包是指将nw脚本打包成可执行文件的过程。打包的目的如下：
 
