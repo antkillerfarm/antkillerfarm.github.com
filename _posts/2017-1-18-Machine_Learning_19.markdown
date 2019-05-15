@@ -314,3 +314,6 @@ https://mp.weixin.qq.com/s/gKQw8saCgSW6JkyocHvKqg
 
 关于决策树的那些事
 
+https://mp.weixin.qq.com/s/nwd4zXy6hTjt6Hx9e7QMFg
+
+常用的模型集成方法介绍：bagging、boosting、stacking

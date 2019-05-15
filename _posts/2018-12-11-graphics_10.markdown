@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  图像处理理论（十）——Optical flow, Particle filter, 从BOW到SPM
+title:  图像处理理论（十）——Optical flow, Particle filter, 从BOW到SPM, Superpixel
 category: graphics 
 ---
 
@@ -230,6 +230,40 @@ https://blog.csdn.net/xxboy61/article/details/38319757
 
 OpenCV实现之模板匹配(Template Matching)
 
+# Superpixel
+
+论文：
+
+《Superpixels: An Evaluation of the State-of-the-Art》
+
+超像素最直观的解释，便是把一些具有相似特性的像素“聚合”起来，形成一个更具有代表性的大“元素”。
+
+而这个新的元素，将作为其他图像处理算法的基本单位。
+
+一来大大降低了维度；二来可以剔除一些异常像素点。
+
+至于根据什么特性把一个个像素点聚集起来，可以是颜色、纹理、类别等。
+
+![](/images/img3/superpixel.jpg)
+
+由于Superpixel的粒度在pixel和segmentation之间，因此又被称为over segmentation。
+
+三维的Superpixel，也被称作Supervoxel。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/50996404
+
+超像素、语义分割、实例分割、全景分割 傻傻分不清？
+
+https://www.zhihu.com/question/27623988
+
+超像素(Superpixel)的大致原理以及State-of-the-art？
+
+https://zhuanlan.zhihu.com/p/41874735
+
+龙生龙，凤生凤，SLIC生超像素
+
 # CV/CG参考资源
 
 https://zhuanlan.zhihu.com/p/31921046
@@ -259,21 +293,3 @@ https://mp.weixin.qq.com/s/1lLrbi_Dtyq4ixMfR4pPnA
 https://mp.weixin.qq.com/s/47TcGoasB9E_Et2zwl3OCw
 
 全局对比度的图像显著性检测算法
-
-# 超算
-
-![](/images/img3/power.aug.gif)
-
-![](/images/img3/Supercomputers-history.png)
-
-Top 500超算之间的差距竟有3个数量级，从榜首到落榜差不多要10年时间。OS从2015年开始全都是Linux了。Windows在超算领域从来没有风光过，之前没钱，自然斗不过UNIX，后来又被Linux打趴下了。
-
-Sunway TaihuLight和Sierra的算力相当，但core的数量竟是后者的6.7倍，功耗是后者的2.06倍。差距明显啊！
-
-https://www.top500.org/
-
-超算排名网站
-
-https://zhuanlan.zhihu.com/p/33956771
-
-超算排名之中的地区和架构之争

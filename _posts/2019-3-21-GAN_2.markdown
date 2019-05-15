@@ -6,6 +6,18 @@ category: GAN & VAE
 
 # 概况（续）
 
+## Lipschitz约束
+
+继续思考一下，我们会发现问题还没完。我们目前还没有对D做约束，不难发现，无约束的话Loss基本上会直接跑到负无穷去了～
+
+最简单的方案就是采用Lipschitz约束：
+
+$$\| D(y,\theta) - D(y' , \theta) \| \leq C \|y-y'\|$$
+
+也可写作：
+
+$$\left\| \frac{\partial D(y,\Theta)}{\partial y}\right\| \leq C$$
+
 ## WGAN
 
 KL散度和JS散度由于不是距离，数学特性并不够好。
@@ -56,6 +68,8 @@ https://zhuanlan.zhihu.com/p/65002974
 
 1.GAN的目的是在高维非凸的参数空间中找到纳什均衡点（Nash equilibrium），GAN的纳什均衡点是一个鞍点。而SGD只会找到局部极小值，所以GAN中的优化器不常用SGD。
 
+![](/images/img3/Nash.png)
+
 >John Nash，1928～2015，数学家、经济学家。Princeton博士（1950），Princeton教授。主要研究博弈论、微分几何学和偏微分方程。诺贝尔经济学奖获得者（1994）。奥斯卡金像奖电影《美丽心灵》男主角原型。
 
 ## 参考
@@ -87,14 +101,6 @@ https://mp.weixin.qq.com/s/4CypEZscTfmUzOk-p_rZog
 http://mp.weixin.qq.com/s/bzwG0QxnP2drqS4RwcZlBg
 
 微软详解：到底什么是生成式对抗网络GAN？
-
-https://mp.weixin.qq.com/s/GobKiuxgZv0-ufSRBpTcIA
-
-Ian Goodfellow ICCV2017演讲：解读GAN的原理与应用
-
-https://mp.weixin.qq.com/s/NDZPPA-0FhqSzRndQOhNEw
-
-Google GAN之父Ian Goodfellow 最新演讲：生成对抗网络介绍
 
 https://mp.weixin.qq.com/s/TIgRVbnZYtrGUCDNLcL1uw
 

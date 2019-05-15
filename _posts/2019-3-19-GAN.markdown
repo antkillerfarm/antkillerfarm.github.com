@@ -20,6 +20,24 @@ GAN是“生成对抗网络”（Generative Adversarial Networks）的简称，�
 
 http://www.iangoodfellow.com/slides/2016-12-04-NIPS.pdf
 
+Goodfellow的历年演讲：（基本全是GAN，没啥新领域。。。）
+
+https://mp.weixin.qq.com/s/GobKiuxgZv0-ufSRBpTcIA
+
+Ian Goodfellow ICCV2017演讲：解读GAN的原理与应用
+
+https://mp.weixin.qq.com/s/NDZPPA-0FhqSzRndQOhNEw
+
+Google GAN之父Ian Goodfellow 最新演讲：生成对抗网络介绍
+
+https://mp.weixin.qq.com/s/b8g_wNqi4dD5x9whj9ZN4A
+
+争议、流派，有关GAN的一切：Ian Goodfellow Q&A
+
+https://mp.weixin.qq.com/s/RYMvgbOgZYjMOIxygpYWSQ
+
+Ian GoodFellow ICLR 2019演讲：对抗机器学习的进展与挑战
+
 ## 通俗解释
 
 ![](/images/article/GAN.png)
@@ -210,15 +228,3 @@ $$\begin{aligned}\theta =& \mathop{\arg\min}_{\theta} L_2\\
 4.用fake_data和Real Samples共同训练D网络，分别可得到$$L_{fake}$$和$$L_{real}$$。使用公式3计算总Loss：L。
 
 5.固定D网络参数，使用公式4训练网络D(G)中G的参数。
-
-## Lipschitz约束
-
-继续思考一下，我们会发现问题还没完。我们目前还没有对D做约束，不难发现，无约束的话Loss基本上会直接跑到负无穷去了～
-
-最简单的方案就是采用Lipschitz约束：
-
-$$\| D(y,\theta) - D(y' , \theta) \| \leq C \|y-y'\|$$
-
-也可写作：
-
-$$\left\| \frac{\partial D(y,\Theta)}{\partial y}\right\| \leq C$$

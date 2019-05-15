@@ -204,3 +204,6 @@ https://mp.weixin.qq.com/s/okx0jZR6PmFm3ikCCUbNkg
 
 从DensNet到CliqueNet，解读北大在卷积架构上的探索
 
+https://mp.weixin.qq.com/s/geANIVbd4C0qpSig0IB2zA
+
+梯形DenseNets结构实现语义分割新高度！

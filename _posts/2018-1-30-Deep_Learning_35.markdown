@@ -350,6 +350,10 @@ https://mp.weixin.qq.com/s/spaI9rPy9H3wnlStoncBqQ
 
 中科大&微软开源：基于高清表示网络的人体姿态估计
 
+https://github.com/sebastianstarke/AI4Animation
+
+Character Animation in Unity 3D using Deep Learning and Artificial Intelligence
+
 # Regularization
 
 DL中的Regularization除了常见的$$l_1$$-norm、$$l_2$$-norm和squared $$l_2$$-norm之外，还有Group Regularization。它的定义如下：

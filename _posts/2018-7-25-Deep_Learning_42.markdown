@@ -194,6 +194,10 @@ https://mp.weixin.qq.com/s/FodjDqc30XuT4fV3XPVy8g
 
 一个更加强力的ReID Baseline
 
+https://mp.weixin.qq.com/s/zUcLZ41mse7qRqZgXlMvvg
+
+C3F：首个开源人群计数算法框架
+
 # NLP参考资源+
 
 https://mp.weixin.qq.com/s/_2P7Ru990cUNzOpfPcDyvg

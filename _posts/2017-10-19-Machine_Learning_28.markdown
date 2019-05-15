@@ -64,6 +64,10 @@ https://mp.weixin.qq.com/s/ewXRcTrolJxxN549vMQcfg
 
 一文搞懂K近邻算法(KNN)，附带多个实现案例
 
+https://zhuanlan.zhihu.com/p/62450795
+
+kNN的花式用法
+
 # 异常检测
 
 Anomaly Detection

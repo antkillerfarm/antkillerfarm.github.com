@@ -383,3 +383,7 @@ https://mp.weixin.qq.com/s/yoCVFWlqReUHx1Wmo0-rtw
 https://mp.weixin.qq.com/s/MEB-qLGiOKcvdee-vlsjYw
 
 改进的阴影抑制用于光照鲁棒的人脸识别
+
+https://mp.weixin.qq.com/s/BE0bBFNVOoKjXLUH5vr5Kg
+
+在警察领域高级人脸识别技术的一致性

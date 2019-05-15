@@ -86,6 +86,10 @@ https://zhuanlan.zhihu.com/p/65224450
 
 PairwiseRank
 
+https://www.zhihu.com/question/20830906/
+
+deep learning可以用来做推荐系统吗？
+
 # 人脸检测/识别
 
 ## 人脸识别
