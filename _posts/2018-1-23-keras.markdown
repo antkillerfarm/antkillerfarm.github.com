@@ -359,6 +359,10 @@ https://mp.weixin.qq.com/s/l0pzq54uDdYctSj7R3QNWw
 
 AmpliGraph：知识图谱表示学习工具包
 
+https://mp.weixin.qq.com/s/a3zu7nvy0itOvzvgOlf01Q
+
+搜狗开源机器阅读理解工具箱
+
 # DL参考资源+
 
 https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ

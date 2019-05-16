@@ -262,6 +262,10 @@ https://mp.weixin.qq.com/s/8I7Lm5DMkVVlvw8v1L_HBA
 
 多感受野的金字塔结构—PSPNet
 
+https://mp.weixin.qq.com/s/TNHTvXmefRBlc6zfHW7C8A
+
+全局特征与局部特征的交响曲—ParseNet
+
 # 深度ISP
 
 ## 数据集

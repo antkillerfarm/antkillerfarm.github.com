@@ -180,6 +180,10 @@ https://mp.weixin.qq.com/s/fzdK4YPTUgiW0D0aeH7WlQ
 
 用于跨模态检索的综合距离保持自编码器
 
+https://mp.weixin.qq.com/s/AWsiAYyVWY83s5uJ01Lg6Q
+
+千亿级照片，毫秒间匹配最佳结果，微软开源Bing搜索背后的关键算法
+
 # DMN
 
 Question answering是自然语言处理领域的一个复杂问题。它需要对文本的理解力和推理能力。大部分NLP问题都可以转化为一个QA问题。Dynamic Memory Networks可以用来处理QA问题。DMN的输入包含事实输入，问题输入，经过内部处理形成片段记忆，最终产生问题的答案。

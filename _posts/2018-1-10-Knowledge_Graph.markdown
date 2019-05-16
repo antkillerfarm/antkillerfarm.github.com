@@ -156,6 +156,10 @@ https://www.zhihu.com/question/52368821/answer/138745422
 
 鲍捷：知识图谱怎样入门
 
+https://mp.weixin.qq.com/s/jqK5A8YTVL3iOKPjKdd6YQ
+
+浙大陈华钧教授《知识图谱导论》课程系列PPT
+
 https://mp.weixin.qq.com/s/iqFXvhvYfOejaeNAhXxJEg
 
 当知识图谱遇上聊天机器人
