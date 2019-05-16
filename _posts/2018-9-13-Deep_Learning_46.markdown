@@ -256,6 +256,10 @@ https://mp.weixin.qq.com/s/z5hRafxepA4Zj5pbbK8HzA
 
 基于模板的文字识别结果结构化处理技术
 
+https://mp.weixin.qq.com/s/Buv6m66kj3RjKq0LjqNAiA
+
+mathAI手写拍照自动能解高数题，还不快试试？
+
 # 问答系统
 
 GA-Reader

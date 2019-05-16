@@ -374,6 +374,14 @@ https://mp.weixin.qq.com/s/flbCQIaHhYmrgd5Czhnw4g
 
 博世：用于自动驾驶的具备超快速板载以太网的高性能车载芯片研究
 
+https://mp.weixin.qq.com/s/SljxjcrjnG22tscpjlWCLw
+
+无人驾驶中用到的八大坐标系
+
+https://mp.weixin.qq.com/s/e2pC39pfs-v9o1H2d1TS6A
+
+LaserNet：一种高效的自动驾驶概率三维目标探测器
+
 # NLP参考资源
 
 https://zhuanlan.zhihu.com/p/64032803

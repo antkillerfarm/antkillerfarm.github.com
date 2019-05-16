@@ -342,6 +342,10 @@ https://mp.weixin.qq.com/s/sOeBUZi5-7fGkqcd1MPmiQ
 
 李飞飞团队新作-有限标签的场景图预测
 
+https://zhuanlan.zhihu.com/p/55286828
+
+当低级视觉任务遇上高级视觉任务
+
 ## 光神经网络
 
 https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ

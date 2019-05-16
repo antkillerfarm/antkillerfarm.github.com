@@ -266,6 +266,10 @@ https://mp.weixin.qq.com/s/2PLp2xNfhkHB3fPQr5Ts6g
 
 密歇根大学40页《20年目标检测综述》最新论文，带你全面了解目标检测方法
 
+https://www.zhihu.com/question/270143544
+
+目标检测中，不同物体之间的距离非常接近如何解决？
+
 # Flink
 
 Flink是一个流计算引擎。

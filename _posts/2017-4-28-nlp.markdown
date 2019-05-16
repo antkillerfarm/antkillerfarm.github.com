@@ -197,6 +197,10 @@ http://opennlp.apache.org/
 
 https://github.com/FudanNLP/fnlp
 
+它还提供了一个新手教程：
+
+https://github.com/FudanNLP/nlp-beginner
+
 ### Stanford CoreNLP
 
 http://stanfordnlp.github.io/CoreNLP/

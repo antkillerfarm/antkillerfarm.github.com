@@ -277,3 +277,7 @@ https://mp.weixin.qq.com/s/bPieF6CNvM4N1Njx6OHNwg
 https://mp.weixin.qq.com/s/wFW7rmAM5HL8NEa6w-VCxQ
 
 LADN：局部对抗解缠网络-人脸妆容迁移与反迁移的深度学习模型
+
+https://mp.weixin.qq.com/s/r1LFbnTo48Gs6-gKmuBMIg
+
+GAN毕业手册：从零到一构建自己的GAN模型

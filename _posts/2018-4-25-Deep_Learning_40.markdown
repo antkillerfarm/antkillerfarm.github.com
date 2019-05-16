@@ -124,6 +124,10 @@ https://github.com/memoiry/Awesome-model-compression-and-acceleration
 
 模型压缩与加速相关资源汇总
 
+https://blog.csdn.net/hw5226349/article/details/84888416
+
+Deep Compression/Acceleration：模型压缩加速论文汇总
+
 https://mp.weixin.qq.com/s/bndECrtEcNCkCF5EG0wO-A
 
 移动端机器学习资源合集

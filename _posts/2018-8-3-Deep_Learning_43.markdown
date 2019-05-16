@@ -352,6 +352,10 @@ https://mp.weixin.qq.com/s/3hv44bkXYHn2wN_2OZmhxA
 
 四大指标超现有模型！少样本的无监督图像翻译效果逆天（FUNIT）
 
+https://mp.weixin.qq.com/s/uhbKu69K6N-pxFZCRwAz1g
+
+秒变“女装大佬”！Snapchat推出性别转换滤镜，离线实时渲染
+
 # ESN
 
 Echo State Network

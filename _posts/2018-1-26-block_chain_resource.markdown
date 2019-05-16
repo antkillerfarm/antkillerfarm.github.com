@@ -366,6 +366,10 @@ https://mp.weixin.qq.com/s/hVhutvHeXsZOvJZfG1xaFw
 
 自动驾驶车载激光雷达技术现状分析
 
+https://mp.weixin.qq.com/s/WIjbYMvMis-YBr_ev_wjmQ
+
+霍尔元件及其应用
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/l4W7qmKJ4Pc-rlF-KvhrPA

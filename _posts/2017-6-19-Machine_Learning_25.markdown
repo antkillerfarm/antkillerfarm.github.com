@@ -330,7 +330,11 @@ TensorFlow 2.0：数据读取与使用方式
 
 https://mp.weixin.qq.com/s/G3fbhTsHA22b02_B5WCPcg
 
-TensorFlow调试程序
+TensorFlow调试程序（一）
+
+https://mp.weixin.qq.com/s/1mSF2HKa72HgWq_q14HMtQ
+
+TensorFlow调试程序（二）
 
 # 知识图谱参考资源+
 
