@@ -397,3 +397,7 @@ ICML 2019反锯齿下采样改进网络平移不变性
 https://mp.weixin.qq.com/s/CFC7OoVQZyW4pO6p-pnf1g
 
 一个高阶张量搞定整个全卷积网络
+
+https://mp.weixin.qq.com/s/Z-ACpKmy20xdTAUC2XsLYQ
+
+模块设计之SKNet, GCNet, GloRe, Octave

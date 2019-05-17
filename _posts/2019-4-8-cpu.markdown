@@ -6,7 +6,7 @@ category: resource
 
 # CPU
 
-## 行业
+## 行业划分
 
 IC行业的公司一般分为全流程的（IDM），著名公司如德州仪器，英特尔，三星，意法半导体，只做设计自己没有晶圆厂的（Fabless），比如英伟达，AMD，只负责制造的（Foundry），比如台积电。
 
@@ -129,6 +129,10 @@ https://mp.weixin.qq.com/s/Lnolh9y0rf86wOGa-F1xmw
 https://mp.weixin.qq.com/s/f_rk-NPKNzYpbHOr5bgluw
 
 一文了解半导体的过去、现在和未来
+
+https://mp.weixin.qq.com/s?__biz=MzI1NTA0MDUyMA==&mid=2456660188&idx=1&sn=b9dafaa60e10130442aac48f165800f7
+
+芯片春秋·ARM传
 
 ## 参考
 

@@ -336,6 +336,10 @@ https://mp.weixin.qq.com/s/1mSF2HKa72HgWq_q14HMtQ
 
 TensorFlow调试程序（二）
 
+https://mp.weixin.qq.com/s/L9kYXFXYmKadghAhd-51pA
+
+TensorFlow模型优化工具包—剪枝API
+
 # 知识图谱参考资源+
 
 https://mp.weixin.qq.com/s/7LFkOzkD1-PsNNAr5DAETg

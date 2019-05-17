@@ -252,6 +252,10 @@ https://zhuanlan.zhihu.com/p/26645548
 
 支付宝集五福活动五福是随机给定的吗?
 
+https://wenku.baidu.com/view/209d2f8183d049649b665894.html
+
+超纯水18.2的意义
+
 ## LSM (Log Structured Merge)
 
 十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。

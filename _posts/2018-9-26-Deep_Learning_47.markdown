@@ -202,6 +202,10 @@ https://mp.weixin.qq.com/s/8uZ2SJtzZhzQhoPY7XO9uw
 
 详细解读谷歌新模型BERT为什么嗨翻AI圈
 
+https://zhuanlan.zhihu.com/p/66053631
+
+BERT
+
 https://mp.weixin.qq.com/s/CofeiL4fImq98UeuJ4hWTg
 
 预训练BERT，官方代码发布前他们是这样用TensorFlow解决的

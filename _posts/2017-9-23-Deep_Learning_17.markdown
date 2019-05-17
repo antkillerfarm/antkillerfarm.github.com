@@ -409,3 +409,7 @@ https://mp.weixin.qq.com/s/JGQdHS_yqkOMrN_Z3jEb7A
 https://mp.weixin.qq.com/s/L-1gkElxsMtT369fgJl86Q
 
 旷视南京研究院魏秀参：细粒度图像分析综述
+
+https://zhuanlan.zhihu.com/p/57086099
+
+细粒度识别之Local Attention Network

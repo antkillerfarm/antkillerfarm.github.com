@@ -295,9 +295,16 @@ https://mp.weixin.qq.com/s/p8ll1R9aXc5aELtL3MAEcA
 ## Monaco Editor
 
 Monaco Editor是MS开源的一个在线代码编辑工具，可提供类似VS code的功能。
+
 官网：
 
 https://microsoft.github.io/monaco-editor/
+
+参考：
+
+https://www.cnblogs.com/isaboy/p/monaco-editor.html
+
+微软开源代码编辑器monaco-editor
 
 ## D3.js
 
