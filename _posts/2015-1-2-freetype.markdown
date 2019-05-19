@@ -14,10 +14,6 @@ http://www.cppblog.com/wlwlxj/archive/2006/11/08/14843.aspx   （文献A）
 
 这篇文章比较概括，且有demo，适合入门之用。
 
-http://hi.baidu.com/guopeng717/blog/item/f371088287532a95f603a6db.html   （文献B）
-
-这篇文章深入一些，但代码片段不可运行，需要对FreeType有根底的才看的明白。
-
 本着原创的精神，上面文献提到过的，我不再复述，仅结合自己近来的研究，对一些关键点做一下说明。
 
 ## 1.编译FreeType库

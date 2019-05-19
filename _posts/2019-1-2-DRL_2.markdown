@@ -34,6 +34,20 @@ https://mp.weixin.qq.com/s/QkRdv0xMoqwaXsNAMAHR0A
 
 一图尽展视频游戏AI技术，DQN无愧众算法之鼻祖
 
+# DDPG
+
+https://mp.weixin.qq.com/s/dgLJrn3omUKMqmqTIEcoyg
+
+Tensorflow实现DDPG
+
+https://github.com/jinfagang/rl_atari_pytorch
+
+ReinforcementLearning Learn Play Atari Using DDPG and LSTM.
+
+https://zhuanlan.zhihu.com/p/65931777
+
+强化学习-基于pytorch的DDPG实现
+
 # reward modeling
 
 ![](/images/img2/reward_modeling.jpg)

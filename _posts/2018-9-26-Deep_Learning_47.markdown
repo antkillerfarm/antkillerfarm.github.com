@@ -180,6 +180,10 @@ https://mp.weixin.qq.com/s/1GIQGBwciP22CZvFxhmLzA
 
 如何构建OpenAI的GPT 2：“太危险而无法释放的人工智能”
 
+https://mp.weixin.qq.com/s/eJn379q9raDHY9FdWaXeKQ
+
+AI界最危险武器GPT-2使用指南：从Finetune到部署
+
 ## 参考
 
 https://www.zhihu.com/question/298203515

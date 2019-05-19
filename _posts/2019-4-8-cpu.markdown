@@ -300,6 +300,10 @@ https://mp.weixin.qq.com/s/Hq9hzkyfGcCQa_FfzSDoRg
 
 5nm工艺节点以后，半导体器件的发展方向
 
+https://zhuanlan.zhihu.com/p/66263349
+
+为什么内存和闪存制程比CPU低？它们现在都在什么节点？
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。

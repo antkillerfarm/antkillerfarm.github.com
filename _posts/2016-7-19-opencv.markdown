@@ -162,6 +162,20 @@ https://mp.weixin.qq.com/s/7hVCRHxllip70SpEJ5I6mQ
 
 MatConvnet图像分类从模型自定义到测试
 
+## OpenMV
+
+OpenMV是一个开源，低成本，功能强大的机器视觉模块。以STM32F427CPU为核心，集成了OV7725摄像头芯片，在小巧的硬件模块上，用C语言高效地实现了核心机器视觉算法，提供Python编程接口。使用者们（包括发明家、爱好者以及智能设备开发商）可以用Python语言使用OpenMV提供的机器视觉功能，为自己的产品和发明增加有特色的竞争力。
+
+简单来说就是：**带机器视觉功能的Arduino**。
+
+官网：
+
+https://openmv.io
+
+代码：
+
+https://github.com/openmv/openmv
+
 ## blog
 
 https://github.com/1zlab/opencv-tutorial
@@ -449,11 +463,3 @@ https://mp.weixin.qq.com/s/2aN9V8VlmugoSRk_AesOzw
 https://mp.weixin.qq.com/s/vgOkHsxKaFcgWDCBpY7kng
 
 如何用OpenCV、Python和深度学习实现面部识别？
-
-https://mp.weixin.qq.com/s/Dmk4EWidsWpz31JYAx7mbQ
-
-使用OpenCV与sklearn实现基于词袋模型(Bag of Word)的图像分类预测与搜索
-
-https://mp.weixin.qq.com/s/hClNIg2LZSeeCpLfBS1BoQ
-
-OpenCV Gabor滤波器实现纹理提取与缺陷分析

@@ -373,3 +373,7 @@ https://mp.weixin.qq.com/s/sg9O761F0KHAmCPOfMW_kQ
 https://mp.weixin.qq.com/s/Irs_fLrf4oybc3sAfpmEeA
 
 图嵌入（Graph embedding）综述
+
+https://mp.weixin.qq.com/s/PkUJsnZdihPM7q9BpvO8Ag
+
+深度学习中不得不学的Graph Embedding方法

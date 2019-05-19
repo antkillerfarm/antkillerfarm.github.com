@@ -362,6 +362,10 @@ https://mp.weixin.qq.com/s/HKHLiCqEAtoCAqf4CHv86w
 
 python机器学习算法代码实现
 
+https://github.com/TheAlgorithms/Python
+
+各种Python算法的新手入门大全
+
 https://mp.weixin.qq.com/s/PtZ3YvFrUgbK5y3pcAeW9A
 
 使用OpenCV和Python实现的机器学习

@@ -210,6 +210,10 @@ https://zhuanlan.zhihu.com/p/62789701
 
 中科院牛津华为诺亚提出CenterNet，one-stage detector可达47AP，已开源！
 
+https://zhuanlan.zhihu.com/p/66156431
+
+从Densebox到Dubox：更快、性能更优、更易部署的anchor-free目标检测
+
 # 其它目标检测网络
 
 ## A-Fast-RCNN
@@ -233,6 +237,10 @@ https://mp.weixin.qq.com/s/mY_QHvKmJ0IH_Rpp2ic1ig
 https://mp.weixin.qq.com/s/TelGG-uVQyxwQjiDGE1pqA
 
 特征金字塔网络FPN
+
+https://zhuanlan.zhihu.com/p/58603276
+
+FPN-目标检测
 
 ## R-FCN
 

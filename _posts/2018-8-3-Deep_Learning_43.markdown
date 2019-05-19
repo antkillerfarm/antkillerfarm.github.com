@@ -356,6 +356,14 @@ https://mp.weixin.qq.com/s/uhbKu69K6N-pxFZCRwAz1g
 
 秒变“女装大佬”！Snapchat推出性别转换滤镜，离线实时渲染
 
+https://mp.weixin.qq.com/s/H2nqQi2EVQ_EyeDNCRD3Cg
+
+一文回顾AI绘画的成长之路：从简笔画到真实人脸生成
+
+https://mp.weixin.qq.com/s/ttdr14ryy6C-Fcm06kC7pQ
+
+CVPR 2019 Oral 亮风台提出端到端投影光学补偿算法
+
 # ESN
 
 Echo State Network

@@ -90,6 +90,10 @@ https://mp.weixin.qq.com/s/yU7_j6hmWKv6FV1pWGq8qA
 
 京东开源姿态跟踪新框架LightTrack！
 
+https://mp.weixin.qq.com/s/Tlac-tXNlbACm17EFUsn8Q
+
+ASRCF：基于自适应空间加权相关滤波的视觉跟踪研究
+
 ## FlowNet
 
 论文：

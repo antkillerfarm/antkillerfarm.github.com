@@ -6,6 +6,14 @@ category: AI
 
 # OpenCV
 
+https://mp.weixin.qq.com/s/Dmk4EWidsWpz31JYAx7mbQ
+
+使用OpenCV与sklearn实现基于词袋模型(Bag of Word)的图像分类预测与搜索
+
+https://mp.weixin.qq.com/s/hClNIg2LZSeeCpLfBS1BoQ
+
+OpenCV Gabor滤波器实现纹理提取与缺陷分析
+
 https://mp.weixin.qq.com/s/DjyydSvYA8JWPqC1AsFuag
 
 OpenCV中如何获得物体的主要方向

@@ -254,9 +254,15 @@ turtle是python对于LOGO语言图形库的实现。大概是出于照顾初学�
 
 https://docs.python.org/3/library/turtle.html
 
-# Javascript
+# Javascript（续）
 
-### Step3:延迟动画（续）
+### Step3:延迟动画
+
+除了Step2的办法之外，还可以用设置延迟属性animation-delay的办法，设定动画的播放次序。这种方法的灵活性超过前种方法，但控制难度较高，需要通过公式计算各动画的起始时间，以达到正确的效果。示例代码：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/hello/super_button3.html
+
+这里还解决了Step2的一个Bug。在Step2中，每点击一次按钮，就会添加一次AnimationEnd事件处理函数，但是新添加的函数并不会覆盖原来的事件处理函数。而是在原来的事件处理函数之后，执行新添加的事件处理函数。利用console.log可以很容易的确认这一点。
 
 因此，AnimationEnd事件处理函数仅需要在开始时，添加一次即可。
 

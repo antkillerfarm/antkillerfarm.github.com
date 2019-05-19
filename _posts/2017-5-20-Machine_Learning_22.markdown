@@ -225,6 +225,10 @@ https://mp.weixin.qq.com/s/u-QTHFSA-8rwvL0KBVYXjQ
 
 深度学习模型评估，从图像分类到生成模型
 
+https://mp.weixin.qq.com/s/sKiAwLoxdP9yyZX0-R4UrA
+
+一文读懂AUC-ROC
+
 # HMM
 
 ![](/images/article/HMM.png)

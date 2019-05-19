@@ -258,7 +258,7 @@ name、id、class都可以用来标识元素。
 
 name是个普通的属性，一个页面可以有多个相同name的元素。
 
-id在一个页面中是唯一的。但这个唯一性由程序员保证，浏览器并不检查id是否唯一。不唯一的话，相应的JS操作可能会出错。
+id在一个页面中是唯一的。但这个唯一性由程序员保证，浏览器并不检查id是否唯一。不唯一的话，相应的JS操作可能会出错。（通常的实现中，选择器只选择第一个id出现时的那个元素。）
 
 class允许多个类型的组合，比如`<p class="a b"/>`表示p既属于a类，也属于b类。
 
@@ -273,6 +273,8 @@ selector {property1: value1; property2: value2; ... propertyN: valueN}
 | 元素 | 类 | ID | 属性 | 后代 | 子元素 | 相邻兄弟 |
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
 | p | .p | #p | p[attr] | p0 p1 | p0>p1 | p0+p1 |
+
+name没有快捷的选择方法，但可以采用属性的方式进行选择，例如：`input[name="you"]`
 
 ## CSS动画
 
@@ -292,7 +294,9 @@ http://daneden.github.io/animate.css/
 
 教程：
 
-http://www.gbtags.com/technology/css/20120812-animate-css/
+http://www.dowebok.com/98.html
+
+animate.css – 齐全的CSS3动画库
 
 ### Step1：事件触发动画
 
@@ -327,11 +331,3 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/hello
 虽然JS递归函数的例子在教程中不太多，但和C语言类似，JS也拥有定义递归函数的能力，且语法也和C类似。这里使用递归函数解决回调嵌套的问题，代码在：
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/hello/super_button2.html
-
-### Step3:延迟动画
-
-除了Step2的办法之外，还可以用设置延迟属性animation-delay的办法，设定动画的播放次序。这种方法的灵活性超过前种方法，但控制难度较高，需要通过公式计算各动画的起始时间，以达到正确的效果。示例代码：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/hello/super_button3.html
-
-这里还解决了Step2的一个Bug。在Step2中，每点击一次按钮，就会添加一次AnimationEnd事件处理函数，但是新添加的函数并不会覆盖原来的事件处理函数。而是在原来的事件处理函数之后，执行新添加的事件处理函数。利用console.log可以很容易的确认这一点。

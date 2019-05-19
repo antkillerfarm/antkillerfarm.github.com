@@ -152,17 +152,9 @@ https://mp.weixin.qq.com/s/iIj1kymBgwH8sUgLyuWiSQ
 
 在个人电脑上快速训练Atari深度学习模型：Uber开源“深度神经进化”加速版
 
-https://mp.weixin.qq.com/s/Jc5f4iX9uoOo5igQ79P77w
-
-多目标进化算法在混合可再生能源系统的应用
-
 https://mp.weixin.qq.com/s/GdY4UAdF5ufiTpl0GsTbpQ
 
 数据+进化算法=数据驱动的进化优化？进化算法 PK 数学优化
-
-https://mp.weixin.qq.com/s/iAmkb2EdYofJU1AoBw2HyA
-
-多目标优化详解
 
 https://mp.weixin.qq.com/s/MCKkngSzzsABxyiGAFA1lg
 
@@ -343,6 +335,20 @@ https://mp.weixin.qq.com/s/YNMw8u7O6u7Bc4-mnrwRXg
 http://www.xfyun.cn/share/?p=2626
 
 开发者常犯的十大加密错误
+
+# 多目标进化
+
+https://mp.weixin.qq.com/s/Jc5f4iX9uoOo5igQ79P77w
+
+多目标进化算法在混合可再生能源系统的应用
+
+https://mp.weixin.qq.com/s/iAmkb2EdYofJU1AoBw2HyA
+
+多目标优化详解
+
+https://mp.weixin.qq.com/s/9FBl5zSz9WEgjFeq41y1kQ
+
+动态多目标优化问题
 
 # 网络架构
 

@@ -380,10 +380,6 @@ https://mp.weixin.qq.com/s/3URLEdhB8hs0XXekKbvsnw
 
 使用TensorFlow在卷积神经网络上实现L2约束的softmax损失函数
 
-https://mp.weixin.qq.com/s/dgLJrn3omUKMqmqTIEcoyg
-
-Tensorflow实现DDPG
-
 https://mp.weixin.qq.com/s/FdPrRQr0LukcWh7B703MlQ
 
 利用tf.gradients在TensorFlow中实现梯度下降
