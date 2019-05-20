@@ -12,6 +12,10 @@ https://github.com/ChanChiChoi/awesome-Face_Recognition
 
 不止面部识别，一切关于人脸AI的资源都能在这里下载
 
+https://github.com/ShownX/FacePaperCollection
+
+人脸相关文献代码集锦：人脸检测、人脸识别、人脸生成等
+
 https://mp.weixin.qq.com/s/eZ78biXN-mVw3s9Ky_LBZg
 
 如何走近深度学习人脸识别？你需要这篇超长综述

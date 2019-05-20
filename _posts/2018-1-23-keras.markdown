@@ -424,3 +424,7 @@ Deep Learning of Graph Matching论文解读
 https://mp.weixin.qq.com/s/oWBZmjZZB-Sk3ivhC2jY-w
 
 不用挨个数数，DNN也能“一眼看出”目标数量
+
+https://mp.weixin.qq.com/s/I1BcM3qM7lb9XecKeAMwMQ
+
+Hinton等人新研究：如何更好地测量神经网络表示相似性

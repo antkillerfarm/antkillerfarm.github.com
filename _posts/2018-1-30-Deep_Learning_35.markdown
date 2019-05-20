@@ -114,6 +114,10 @@ https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247500351&idx=2&sn=aaaecd
 
 157页基于相似度的动作捕捉数据处理教程
 
+https://mp.weixin.qq.com/s/VjCB_CCENVye9SvDYOmsaA
+
+深度学习人体姿态估计算法综述
+
 https://mp.weixin.qq.com/s/6pNZ8Crs4Lel2C0TlFAc4Q
 
 真能“穿墙识人”，MIT人体姿态估计系统创历史最高精度！

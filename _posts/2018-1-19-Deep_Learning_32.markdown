@@ -289,3 +289,7 @@ PointNet系列论文解读
 https://mp.weixin.qq.com/s/KuoHFPpUYHPFacsBWZWVSg
 
 Relation-Shape CNN：以几何关系卷积推理点云3D形状
+
+https://mp.weixin.qq.com/s/Jso2YZs2NEtMORZsLkrJ5w
+
+Geometric Relation Learning in 3D Point Cloud Analysis

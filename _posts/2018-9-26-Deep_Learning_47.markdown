@@ -369,3 +369,7 @@ https://mp.weixin.qq.com/s/7sIUaSON53hsXUJjq8uVUA
 https://mp.weixin.qq.com/s/s1bQFdA6gtoHeeQMJKQ8UQ
 
 Bert时代的创新：Bert应用模式比较及其它
+
+https://mp.weixin.qq.com/s/zqlWx3e4LOJ3_Zy2DEbCjw
+
+从语言模型看Bert的善变与GPT的坚守

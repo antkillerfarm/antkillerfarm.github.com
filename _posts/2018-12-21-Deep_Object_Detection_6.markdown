@@ -343,3 +343,37 @@ https://mp.weixin.qq.com/s/hm_1A5Mu_6R0ygZPsspV8g
 https://mp.weixin.qq.com/s/DPLJA8Q2gDXLZF17FOcczw
 
 OPPO数据中台之基石：基于Flink SQL构建实数据仓库
+
+# AI Chip
+
+https://mp.weixin.qq.com/s/BD-HAILp3TPvBFlIy6QC4w
+
+一文看懂机器视觉芯片
+
+https://mp.weixin.qq.com/s/PMnNay4CRgVghA4fU9oLqg
+
+牛津大学研发类脑光子芯片，运算速度超人脑1000倍
+
+https://mp.weixin.qq.com/s/HeoVktVtvOK4VgocyxuCXg
+
+摩尔定律已死？GPU会取代CPU的位置吗？
+
+https://mp.weixin.qq.com/s/e333KjLavEvvpNIL3u1Y4Q
+
+NovuMind异构智能核心技术引领智联网
+
+https://mp.weixin.qq.com/s/fSSyOs4-NXbPTbDjpfJBNQ
+
+Google IPU：互联网巨头纷纷进军芯片行业是为何？
+
+https://mp.weixin.qq.com/s/S1y4NEx4_Mgwf68S2pexqA
+
+拿着锤子找钉子，数字芯片领导者比特大陆进军人工智能
+
+https://mp.weixin.qq.com/s/gtgPYf939uYRzxAab_LZLQ
+
+谢源：计算存储一体化，在存储里做深度学习，架构创新实现下一代AI芯片
+
+https://mp.weixin.qq.com/s/s-fYxv4z5kkJUFueU2IR7w
+
+BP表达式与硬件架构：相似性构建更高效的计算单元

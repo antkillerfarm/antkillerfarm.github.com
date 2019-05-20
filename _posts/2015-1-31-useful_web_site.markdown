@@ -366,14 +366,6 @@ https://mp.weixin.qq.com/s/yHSraIAYsjYWPaGXA3PijA
 
 一张图读懂非公平锁与公平锁
 
-https://zhuanlan.zhihu.com/frozengene
-
-一个编译器方面的专栏
-
-http://frozengene.github.io/
-
-一个LLVM方面的blog
-
 https://www.zhihu.com/question/320728455/answer/658973076
 
 为什么上古编程语言（比如COBOL）总喜欢把代码全部写成大写字母？
@@ -385,6 +377,20 @@ https://mp.weixin.qq.com/s/3a5k3YA6ALri3BrQWQbOpw
 https://mp.weixin.qq.com/s/_7q9K9D1q40eaGkLt9yDhQ
 
 分布式系统关注点——深入浅出“异步”
+
+## 编译原理
+
+https://zhuanlan.zhihu.com/frozengene
+
+一个编译器方面的专栏
+
+http://frozengene.github.io/
+
+一个LLVM方面的blog
+
+https://zhuanlan.zhihu.com/p/28637279
+
+使用LLVM + PLY实现一个C语言子集的玩具编译器
 
 ## 科研人生
 

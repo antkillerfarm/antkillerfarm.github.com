@@ -206,6 +206,10 @@ https://mp.weixin.qq.com/s/1tcoGGbJnnWARu-2wefWdQ
 
 不同视角构造cycle-consistency，降低视频标注成本
 
+https://mp.weixin.qq.com/s/pDMBnX3CeQbv8hr-79Mvvg
+
+商汤EDVR算法获NTIRE 2019 视频恢复比赛全部四项冠军
+
 # GAN参考资源
 
 https://blog.csdn.net/liuxiao214/article/category/6940697
