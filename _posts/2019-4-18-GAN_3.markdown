@@ -160,6 +160,12 @@ https://mp.weixin.qq.com/s/0fr6H5xGxmFoNuSxs7z7bQ
 
 CGAN
 
+# ACGAN
+
+https://mp.weixin.qq.com/s/oQpDW1oHIVZlvjTZm_AuYg
+
+ACGAN
+
 # EBGAN & BEGAN
 
 论文：

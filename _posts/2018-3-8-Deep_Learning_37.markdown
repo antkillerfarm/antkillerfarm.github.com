@@ -391,3 +391,7 @@ https://mp.weixin.qq.com/s/MEB-qLGiOKcvdee-vlsjYw
 https://mp.weixin.qq.com/s/BE0bBFNVOoKjXLUH5vr5Kg
 
 在警察领域高级人脸识别技术的一致性
+
+https://mp.weixin.qq.com/s/fyx_P_M_CyuAshdc9lCAcg
+
+鲁棒异构判别分析的单样本人脸识别

@@ -264,6 +264,10 @@ https://mp.weixin.qq.com/s/rMpV2na0GJxiO1v0HRJjPA
 
 何凯明团队《随机生成网络 RandWire》
 
+https://mp.weixin.qq.com/s/ZTeIuBZzC44NhLNZkxJNQw
+
+商汤使用AutoML设计Loss函数，全面超越人工设计
+
 # 图像超分辨率进阶
 
 https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg

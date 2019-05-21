@@ -140,6 +140,10 @@ https://mp.weixin.qq.com/s/Ye2GVTFIrX3SbU1-4cDLoQ
 
 你天天叫的外卖，你知道这里面深度学习的水有多深吗
 
+https://mp.weixin.qq.com/s/FIWfbCLgckVzeNvfThIl4Q
+
+阿里线下智能方案进化史
+
 # 多模态学习
 
 https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw
