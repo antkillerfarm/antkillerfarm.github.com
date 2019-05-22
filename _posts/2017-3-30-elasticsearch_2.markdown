@@ -393,7 +393,15 @@ https://mp.weixin.qq.com/s/M8U9B7UA2AdfnJi5EpTv-g
 
 算法面试中经常问的“字符串”问题
 
-# ML参考资源
+# ML参考资源+
+
+https://mp.weixin.qq.com/s/lJQprqGShGys3vfhYSxDWg
+
+机器学习在股票交易中难点分析
+
+https://mp.weixin.qq.com/s/lpNTdnfp2FnJ97EivhUv2g
+
+12种降维方法终极指南
 
 https://mp.weixin.qq.com/s/Sez56UaCAt3Aspn7OTFj_Q
 

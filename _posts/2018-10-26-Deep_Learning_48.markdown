@@ -162,6 +162,10 @@ https://mp.weixin.qq.com/s/iNz82GUULxDndBIiGSArmQ
 
 新开源！实时语义分割算法Light-Weight RefineNet
 
+https://mp.weixin.qq.com/s/2QBifDubR5mMoJNKkdBNIw
+
+多分辨率特征融合—RefineNet
+
 https://mp.weixin.qq.com/s/1wqguIqDS4FNsS67Yj77Qw
 
 牛津大学&Emotech首次严谨评估语义分割模型对对抗攻击的鲁棒性

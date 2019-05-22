@@ -198,7 +198,35 @@ https://mp.weixin.qq.com/s/zUcLZ41mse7qRqZgXlMvvg
 
 C3F：首个开源人群计数算法框架
 
+https://mp.weixin.qq.com/s/51X7NIS1UEXJ1sqx54tuwg
+
+NVIDIA/悉尼科技大学/澳洲国立大学新作：用GAN生成高质量行人图像，辅助行人重识别
+
 # NLP参考资源+
+
+https://mp.weixin.qq.com/s/tvtT5S9mDhXoYLKh9apgDw
+
+达观文本指纹算法和系统简述
+
+https://mp.weixin.qq.com/s/eiEME27eDMPSeKkwiisWnQ
+
+达观数据搜索引擎的Query自动纠错技术和架构详解
+
+https://mp.weixin.qq.com/s/o5mE6IRs8ZkkXy8c5rdrjw
+
+达观数据阐述推荐系统和搜索引擎的关系
+
+https://mp.weixin.qq.com/s/PVzVNI7jMzHPcUbL7UaCIQ
+
+什么是语义角色标注？
+
+https://mp.weixin.qq.com/s/S2SH8MUmreciZRc0Ff-qlw
+
+一文了解自然语言生成演变史！
+
+https://mp.weixin.qq.com/s/h6BjW1nrV4z30eWfny7Wzw
+
+聊天机器人落地及进阶实战
 
 https://mp.weixin.qq.com/s/_2P7Ru990cUNzOpfPcDyvg
 

@@ -401,3 +401,7 @@ https://mp.weixin.qq.com/s/CFC7OoVQZyW4pO6p-pnf1g
 https://mp.weixin.qq.com/s/Z-ACpKmy20xdTAUC2XsLYQ
 
 模块设计之SKNet, GCNet, GloRe, Octave
+
+https://mp.weixin.qq.com/s/sF-1bV1UA1AyLMlvRRF8iQ
+
+告别低分辨率网络，微软提出高分辨率深度神经网络HRNet

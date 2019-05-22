@@ -144,6 +144,10 @@ https://mp.weixin.qq.com/s/CuFbmcoXf4oG2YcDOgO3qw
 
 异常检测基础
 
+https://mp.weixin.qq.com/s/w7SbAHxZsmHqFtTG8ZAXNg
+
+异常检测的N种方法，阿里工程师都盘出来了
+
 # AutoML
 
 ## 概述

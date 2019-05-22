@@ -191,6 +191,10 @@ http://ybin.cc/git/gitignore-syntax/
 
 彻底理解.gitignore
 
+https://github.com/github/gitignore
+
+包含各种常见开发环境的.gitignore示例
+
 ## LF与CRLF转换
 
 {% highlight bash %}

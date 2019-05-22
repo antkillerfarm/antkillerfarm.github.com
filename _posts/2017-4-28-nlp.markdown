@@ -381,6 +381,10 @@ https://mp.weixin.qq.com/s/QZT1SLCVFXBE-1FNNhWk0g
 
 利用AllenNLP，百行Python代码训练情感分类器
 
+https://zhuanlan.zhihu.com/p/48504619
+
+写给NLP研究者的编程指南
+
 ### TorchNLP
 
 代码：

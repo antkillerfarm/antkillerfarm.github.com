@@ -286,6 +286,10 @@ CPT（按展现时间收费）、CPL（按潜在线索收费）、CPS（按成�
 
 ROI（return on investment）投资回报率
 
+$$同比=\frac{2010.12}{2009.12}$$
+
+$$环比=\frac{2010.12}{2010.11}$$
+
 ## 数据埋点
 
 数据埋点是数据产品经理、数据运营以及数据分析师，基于业务需求或产品需求对用户在应用内产生行为的每一个事件对应的页面和位置植入相关代码，并通过采集工具上报统计数据，以便相关人员追踪用户行为，推动产品优化或指导运营的一项工程。
@@ -295,13 +299,3 @@ ROI（return on investment）投资回报率
 https://zhuanlan.zhihu.com/p/53522063
 
 数据产品经理需要掌握的产品埋点方法
-
-# ML参考资源
-
-https://mp.weixin.qq.com/s/lJQprqGShGys3vfhYSxDWg
-
-机器学习在股票交易中难点分析
-
-https://mp.weixin.qq.com/s/lpNTdnfp2FnJ97EivhUv2g
-
-12种降维方法终极指南

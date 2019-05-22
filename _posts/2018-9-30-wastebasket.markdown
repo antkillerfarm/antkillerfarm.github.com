@@ -260,6 +260,10 @@ https://mp.weixin.qq.com/s/i076Bk9i0kJOP5kGmneBRw
 
 有趣的海盗问题
 
+https://mp.weixin.qq.com/s/Kake5sQm79L2j_uDqKfznQ
+
+在《我的世界》里从零打造一台计算机有多难？复旦本科生大神花费了一年心血
+
 ## LSM (Log Structured Merge)
 
 十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。

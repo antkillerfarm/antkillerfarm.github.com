@@ -180,7 +180,7 @@ PyQt编写GUI界面
 
 https://mp.weixin.qq.com/s/lelQq4y-LIog3kNAS0kBVw
 
-向“假脸”说 No：用OpenCV搭建活体检测器
+向“假脸”说No：用OpenCV搭建活体检测器
 
 https://mp.weixin.qq.com/s/y5McKum6JyQZd6oVcMOkPg
 
@@ -193,6 +193,10 @@ https://mp.weixin.qq.com/s/6IAEus9OTg-hP9NGKJRm_Q
 https://mp.weixin.qq.com/s/ESnIexX80y5Eus9fjHu6_w
 
 详解OpenCV卷积滤波之边缘处理与锚定输出
+
+https://mp.weixin.qq.com/s/FGZ0lVzjhRqTPaoYI9yPEg
+
+OpenCV视频分析背景提取与前景提取
 
 # Dlib
 

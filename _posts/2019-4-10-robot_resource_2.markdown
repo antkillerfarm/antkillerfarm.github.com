@@ -382,6 +382,10 @@ https://mp.weixin.qq.com/s/e2pC39pfs-v9o1H2d1TS6A
 
 LaserNet：一种高效的自动驾驶概率三维目标探测器
 
+https://mp.weixin.qq.com/s/GnJRfbc6_smyeWjCKzsc7g
+
+通过视觉信号预测驾驶员意图
+
 # NLP参考资源
 
 https://zhuanlan.zhihu.com/p/64032803
@@ -399,27 +403,3 @@ https://mp.weixin.qq.com/s/5S5ikwnF7f55sL_VI73XSQ
 http://www.jianshu.com/p/f45c3540c56e
 
 Chatbot架构
-
-https://mp.weixin.qq.com/s/tvtT5S9mDhXoYLKh9apgDw
-
-达观文本指纹算法和系统简述
-
-https://mp.weixin.qq.com/s/eiEME27eDMPSeKkwiisWnQ
-
-达观数据搜索引擎的Query自动纠错技术和架构详解
-
-https://mp.weixin.qq.com/s/o5mE6IRs8ZkkXy8c5rdrjw
-
-达观数据阐述推荐系统和搜索引擎的关系
-
-https://mp.weixin.qq.com/s/PVzVNI7jMzHPcUbL7UaCIQ
-
-什么是语义角色标注？
-
-https://mp.weixin.qq.com/s/S2SH8MUmreciZRc0Ff-qlw
-
-一文了解自然语言生成演变史！
-
-https://mp.weixin.qq.com/s/h6BjW1nrV4z30eWfny7Wzw
-
-聊天机器人落地及进阶实战

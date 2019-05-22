@@ -376,7 +376,7 @@ http://www.cnblogs.com/luweiseu/archive/2012/07/14/2591370.html
 
 强连通分支算法--Kosaraju算法、Tarjan算法和Gabow算法
 
-# ML参考资源+
+# ML参考资源
 
 https://mp.weixin.qq.com/s/s2XpGne0sAqnuN-u6g5k1A
 
