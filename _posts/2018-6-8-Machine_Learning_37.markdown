@@ -358,6 +358,10 @@ https://mp.weixin.qq.com/s/mXE3f2ZO6wQRSURZGmyBpQ
 
 产品聚类
 
+https://mp.weixin.qq.com/s/lvbXtLfa6Z4h_5lCHKn_6A
+
+CTR点击率预估之经典模型回顾
+
 # 强连通分量算法
 
 http://ishare.iask.sina.com.cn/f/34626295.html

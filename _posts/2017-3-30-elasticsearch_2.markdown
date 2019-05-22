@@ -203,6 +203,10 @@ https://mp.weixin.qq.com/s/Hpy76P0spGJcDmmBCq2vpA
 
 为什么已有Elasticsearch，我们还要重造实时分析引擎AresDB？
 
+https://mp.weixin.qq.com/s/di_CJ7kBwI4ICe4mhz0Tcg
+
+滴滴基于ElasticSearch的一站式搜索中台实践
+
 # scrapy
 
 scrapy是一个Python写的网页抓取分析工具。网页抓取分析的学名叫做“Web scraping”，可在wiki上获得更多的相关信息。

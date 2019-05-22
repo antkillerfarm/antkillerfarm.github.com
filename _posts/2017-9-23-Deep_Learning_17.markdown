@@ -10,6 +10,10 @@ https://zhuanlan.zhihu.com/p/22334661
 
 深度学习在目标跟踪中的应用
 
+https://mp.weixin.qq.com/s/yunmBZ_5acDZlIN0mLf66g
+
+《视觉跟踪最新方法与趋势》，44页最新综述带你全面了解视觉跟踪领域发展方向
+
 https://mp.weixin.qq.com/s/3R8zaFUKFTvp0uE8lY44WA
 
 首个应用残差学习的深度目标跟踪算法

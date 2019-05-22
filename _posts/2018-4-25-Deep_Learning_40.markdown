@@ -144,6 +144,10 @@ https://zhuanlan.zhihu.com/p/24337627
 
 深度压缩之蒸馏模型
 
+https://blog.csdn.net/xbinworld/article/details/83063726
+
+知识蒸馏（Distilling the Knowledge in a Neural Network），在线蒸馏
+
 http://blog.csdn.net/shuzfan/article/details/51383809
 
 神经网络压缩：Deep Compression

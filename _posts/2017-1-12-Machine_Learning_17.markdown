@@ -270,6 +270,10 @@ https://mp.weixin.qq.com/s/9-nNNhhDWSYWy46u0hTazQ
 
 降维：PCA真的能改善分类结果吗？
 
+https://mp.weixin.qq.com/s/vkBSextwFQv8-DUwAxgVyA
+
+图像降维之Isomap特征抽取方法
+
 # 独立成分分析
 
 这一节我们将讲述独立成分分析（Independent Components Analysis，ICA）算法。

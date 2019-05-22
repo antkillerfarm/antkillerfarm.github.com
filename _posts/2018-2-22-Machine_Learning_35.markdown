@@ -154,6 +154,10 @@ https://zhuanlan.zhihu.com/p/64007212
 
 卡尔曼滤波家族
 
+https://zhuanlan.zhihu.com/p/66646519
+
+IKF(IEKF)推导
+
 # 推荐算法中的常用排序算法
 
 ## Pointwise方法
@@ -211,6 +215,22 @@ https://mp.weixin.qq.com/s/dRaiYPIdh_oJcQD-UxAlkA
 https://mp.weixin.qq.com/s/XT4_E2d2gr1T8jCo82ix4A
 
 深入浅出排序学习：写给程序员的算法系统开发实践
+
+https://zhuanlan.zhihu.com/p/64952093
+
+排序评价指标
+
+https://zhuanlan.zhihu.com/p/64970393
+
+PointwiseRank
+
+https://zhuanlan.zhihu.com/p/65224450
+
+PairwiseRank
+
+https://zhuanlan.zhihu.com/p/66514492
+
+ListwiseRank
 
 # 价值函数的近似表示
 

@@ -246,6 +246,10 @@ https://mp.weixin.qq.com/s/hH3Px_KGegJbGbBvfqrXYA
 
 谷歌开放史上最大分割掩码数据集
 
+https://github.com/lartpang/awesome-segmentation-saliency-dataset
+
+图像分割/显著性检测数据集列表
+
 ## 人脸/行为
 
 http://blog.csdn.net/wangkr111/article/details/44514097

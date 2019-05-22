@@ -74,18 +74,6 @@ https://mp.weixin.qq.com/s/E6EH6aJjzTwN2UZf_4nwoA
 
 从FFM到DeepFFM，推荐排序模型到底哪家强？
 
-https://zhuanlan.zhihu.com/p/64952093
-
-排序评价指标
-
-https://zhuanlan.zhihu.com/p/64970393
-
-PointwiseRank
-
-https://zhuanlan.zhihu.com/p/65224450
-
-PairwiseRank
-
 https://www.zhihu.com/question/20830906/
 
 deep learning可以用来做推荐系统吗？
