@@ -416,3 +416,7 @@ DeBug Python代码全靠print函数？换用这个一天2K+Star的工具吧
 https://mp.weixin.qq.com/s/wr18ylCJyJOX83BhbvGXng
 
 13个Python开发者必知的Python GUI库
+
+https://mp.weixin.qq.com/s/S_mIspLOrmj8ny0VHP52ZA
+
+Python高级技巧：lazy property

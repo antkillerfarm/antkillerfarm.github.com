@@ -367,3 +367,7 @@ https://mp.weixin.qq.com/s/v4A--nGiDTt58pZyIzepeg
 https://mp.weixin.qq.com/s/x4GW5zvjD5Fyc-NrXDqpmA
 
 Kafka不够好，智联招聘基于Pulsar打造企业级事件中心
+
+https://mp.weixin.qq.com/s/sWrUlwEe4CBPQklzFWNE3A
+
+选择Pulsar而不是Kafka的7大理由

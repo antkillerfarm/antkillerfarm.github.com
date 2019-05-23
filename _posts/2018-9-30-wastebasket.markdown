@@ -264,6 +264,8 @@ https://mp.weixin.qq.com/s/Kake5sQm79L2j_uDqKfznQ
 
 在《我的世界》里从零打造一台计算机有多难？复旦本科生大神花费了一年心血
 
+![](/images/img3/PAL-NTSC-SECAM.png)
+
 https://zhuanlan.zhihu.com/p/66319869
 
 29.97Hz这种奇葩帧率是怎么来的？

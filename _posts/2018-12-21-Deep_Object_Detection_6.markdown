@@ -182,17 +182,9 @@ https://mp.weixin.qq.com/s/Xs3nThAcUOq62bO2p61YFA
 
 论文解读 Receptive Field Block Net for Accurate and Fast
 
-https://mp.weixin.qq.com/s/WAx3Zazx9Pq7Lb3vKa510w
-
-目标检测最新方向：推翻固有设置，不再一成不变Anchor
-
 https://mp.weixin.qq.com/s/-G47vOGx2iNQCarYRAiNPg
 
 基于区域分解集成的目标检测
-
-https://mp.weixin.qq.com/s/dYV446meJXtCQVFrLzWV8A
-
-目标检测中Anchor的认识及理解
 
 https://mp.weixin.qq.com/s/rlmgN0LbUfd2n9MI8OMT2w
 
@@ -343,6 +335,10 @@ https://mp.weixin.qq.com/s/hm_1A5Mu_6R0ygZPsspV8g
 https://mp.weixin.qq.com/s/DPLJA8Q2gDXLZF17FOcczw
 
 OPPO数据中台之基石：基于Flink SQL构建实数据仓库
+
+https://mp.weixin.qq.com/s/tbnl4a8lhamCQ-KDRYYhVA
+
+Blink有何特别之处？菜鸟供应链场景最佳实践
 
 # AI Chip
 

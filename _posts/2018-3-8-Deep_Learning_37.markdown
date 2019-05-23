@@ -6,31 +6,7 @@ category: DL
 
 # 人脸检测/识别
 
-## 参考
-
-https://github.com/ChanChiChoi/awesome-Face_Recognition
-
-不止面部识别，一切关于人脸AI的资源都能在这里下载
-
-https://github.com/ShownX/FacePaperCollection
-
-人脸相关文献代码集锦：人脸检测、人脸识别、人脸生成等
-
-https://mp.weixin.qq.com/s/eZ78biXN-mVw3s9Ky_LBZg
-
-如何走近深度学习人脸识别？你需要这篇超长综述
-
-https://mp.weixin.qq.com/s/tum24mzS2cUiKW87a1weFA
-
-人脸识别全面总结：从传统方法到深度学习
-
-https://mp.weixin.qq.com/s/bFnuGu4xLJiRfANi0Rkduw
-
-人脸识别的前世今生：从人工特征的百花齐放到深度学习的一统江湖
-
-https://zhuanlan.zhihu.com/p/32702868
-
-人脸检测背景介绍和发展现状
+## 参考（续）
 
 http://mp.weixin.qq.com/s/KQxGQdLa3XzKVIFYqlrV7g
 
@@ -395,3 +371,7 @@ https://mp.weixin.qq.com/s/BE0bBFNVOoKjXLUH5vr5Kg
 https://mp.weixin.qq.com/s/fyx_P_M_CyuAshdc9lCAcg
 
 鲁棒异构判别分析的单样本人脸识别
+
+https://mp.weixin.qq.com/s/lhut5ndqZWTwlKZjeY484w
+
+漫画人脸检测：全局和局部信息融合的深度神经网络

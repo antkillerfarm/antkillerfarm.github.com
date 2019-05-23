@@ -368,6 +368,14 @@ https://mp.weixin.qq.com/s/VnOfYuHQQf_q92VHVE3mrQ
 
 谷歌新发布的半监督学习算法降低4倍错误率
 
+https://mp.weixin.qq.com/s/rOj_J1zNYf-Vj9tqLG5KOQ
+
+超强半监督学习MixMatch
+
+https://zhuanlan.zhihu.com/p/66389797
+
+虚拟对抗训练：一种新颖的半监督学习正则化方法
+
 # 细粒度分类
 
 https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw

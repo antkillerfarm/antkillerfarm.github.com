@@ -34,7 +34,7 @@ YOLO不仅是end-to-end，而且还提供了另一种更为直接的思路：直
 
 **Step 1**：Resize成448x448，图片分割得到7x7网格(cell)。
 
-**Step 2**：CNN提取特征和预测：卷积部分负责提特征。全连接部分负责预测。
+**Step 2**：CNN提取特征和预测：卷积部分负责提取特征，全连接部分负责预测。
 
 a) 7x7x2=98个bounding box(bbox) 的坐标$$x_{center},y_{center},w,h$$和是否有物体的confidence。
 
@@ -56,7 +56,7 @@ YOLO的输出是一个7x7x30的tensor，其中7x7对应图片分割的7x7网格�
 
 总结一下，输出tersor的维度是：$$S\times S \times (B \times 5 + C)$$
 
-这里的confidence代表了所预测的box中含有object的置信度和这个box预测的有多准两重信息：
+这里的confidence代表了所预测的box中含有两重信息：object的置信度和这个box预测的有多准。
 
 $$\text{confidence} = \text{Pr}(Object) ∗ \text{IOU}_{pred}^{truth}$$
 
@@ -268,7 +268,7 @@ YOLOv2网络通过在每一个卷积层后添加batch normalization，极大的�
 
 ### High Resolution Classifier
 
-所有state-of-the-art的检测方法基本上都会使用ImageNet预训练过的模型（classifier）来提取特征，例如AlexNet输入图片会被resize到不足256x256，这导致分辨率不够高，给检测带来困难。所以YOLO(v1)先以分辨率224x224训练分类网络，然后需要增加分辨率到448x448，这样做不仅切换为检测算法也改变了分辨率。所以作者想能不能在预训练的时候就把分辨率提高了，训练的时候只是由分类算法切换为检测算法。
+所有state-of-the-art的检测方法基本上都会使用ImageNet预训练过的模型（classifier）来提取特征，例如AlexNet输入图片会被resize到不足256x256，这导致分辨率不够高，给检测带来困难。所以YOLO(v1)先以分辨率224x224训练分类网络，然后需要增加分辨率到448x448，这样做不仅将网络切换为检测网络，也改变了分辨率。所以作者想能不能在预训练的时候就把分辨率提高了，训练的时候只是由分类网络切换为检测网络。
 
 YOLOv2首先修改预训练分类网络的分辨率为448x448，在ImageNet数据集上训练10轮（10 epochs）。这个过程让网络有足够的时间调整filter去适应高分辨率的输入。然后fine tune为检测网络。mAP获得了4%的提升。
 

@@ -186,6 +186,18 @@ One-stage一步搞定分类和bbox问题。
 
 # Anchor-Free
 
+https://zhuanlan.zhihu.com/p/63024247
+
+锚框：Anchor box综述
+
+https://mp.weixin.qq.com/s/dYV446meJXtCQVFrLzWV8A
+
+目标检测中Anchor的认识及理解
+
+https://mp.weixin.qq.com/s/WAx3Zazx9Pq7Lb3vKa510w
+
+目标检测最新方向：推翻固有设置，不再一成不变Anchor
+
 https://mp.weixin.qq.com/s/DoN-vha1H-2lHhbFOaVS8w
 
 FoveaBox：目标检测新纪元，无Anchor时代来临！
