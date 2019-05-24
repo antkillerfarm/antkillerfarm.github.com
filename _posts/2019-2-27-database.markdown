@@ -142,6 +142,10 @@ https://mp.weixin.qq.com/s/O94Q1Dxe8TnbCMv9d_hlOg
 
 Uber推出数据湖集成神器DBEvents，支持MySQL、Cassandra等
 
+https://mp.weixin.qq.com/s/AcuFiHgRJg2OcNGtfjRxYA
+
+我们对比了5款数据库，告诉你NewSQL的独到之处
+
 # Mysql
 
 ## 安装

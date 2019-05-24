@@ -298,10 +298,6 @@ https://mp.weixin.qq.com/s/Ja3uc06ZndbM7b6PitNdQQ
 
 瑟瑟发抖……神经网络可能在欺骗你！
 
-https://mp.weixin.qq.com/s/Mi62oqtXUT5If_Dj4KmVYA
-
-计算机视觉如何知道你想看什么？个人显著性检测
-
 https://mp.weixin.qq.com/s/3Pe5wJ0VomzwKMF84OqcMg
 
 脑启发的视觉计算2017年度关键进展回顾

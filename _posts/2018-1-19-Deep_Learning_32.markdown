@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十二）——NN Quantization, 点云
+title:  深度学习（三十二）——NN Quantization, 点云, 显著性检测
 category: DL 
 ---
 
@@ -293,3 +293,17 @@ Relation-Shape CNN：以几何关系卷积推理点云3D形状
 https://mp.weixin.qq.com/s/Jso2YZs2NEtMORZsLkrJ5w
 
 Geometric Relation Learning in 3D Point Cloud Analysis
+
+# 显著性检测
+
+https://mp.weixin.qq.com/s/Mi62oqtXUT5If_Dj4KmVYA
+
+计算机视觉如何知道你想看什么？个人显著性检测
+
+https://mp.weixin.qq.com/s/47TcGoasB9E_Et2zwl3OCw
+
+全局对比度的图像显著性检测算法
+
+https://zhuanlan.zhihu.com/p/65307842
+
+快、好、实现简单并且开源的显著性检测方法

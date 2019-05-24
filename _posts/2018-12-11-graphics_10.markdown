@@ -289,7 +289,3 @@ Kernelized Correlation Filters (KCF) Tracking算法
 https://mp.weixin.qq.com/s/1lLrbi_Dtyq4ixMfR4pPnA
 
 线性卷积积分及其在图像增强和特效方面的应用
-
-https://mp.weixin.qq.com/s/47TcGoasB9E_Et2zwl3OCw
-
-全局对比度的图像显著性检测算法

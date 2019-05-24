@@ -56,6 +56,12 @@ https://stackoverflow.com/questions/27475977/c-undefined-reference-to-sqrt-even-
 
 C - undefined reference to “sqrt” even with '-lm'
 
+## 参考
+
+https://mp.weixin.qq.com/s/Hpn7KqYlBKz0JdryiozqyQ
+
+每个开发者都应该了解的一些C++特性
+
 # VS Code
 
 VS Code（Visual Studio Code）是由微软研发的一款免费、开源的跨平台文本（代码）编辑器。（首发于2015年）从文件来看应该是基于nodejs所做，据说脱胎于Atom。

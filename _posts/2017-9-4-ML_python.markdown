@@ -394,6 +394,10 @@ https://mp.weixin.qq.com/s/2-Ayzmzo8tydDLoKpz1Ezw
 
 如何用一行代码在多CPU环境下高效并行Pandas
 
+https://mp.weixin.qq.com/s/ebRQMJI9sB7wNI_NYdmTAw
+
+高逼格使用Pandas加速代码，向for循环说拜拜！
+
 ## mysql
 
 http://www.runoob.com/python/python-mysql.html

@@ -336,6 +336,10 @@ https://mp.weixin.qq.com/s/ty5xy6s0z3rvMYZptdTdBQ
 
 Python热图进阶
 
+https://github.com/lutzroeder/netron
+
+一个DL模型的可视化工具，支持几乎所有类型的模型。
+
 ## 参考
 
 https://mp.weixin.qq.com/s/S7gnAdekPFcyd4ni1m9phg

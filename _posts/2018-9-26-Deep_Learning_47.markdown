@@ -373,3 +373,7 @@ Bert时代的创新：Bert应用模式比较及其它
 https://mp.weixin.qq.com/s/zqlWx3e4LOJ3_Zy2DEbCjw
 
 从语言模型看Bert的善变与GPT的坚守
+
+https://mp.weixin.qq.com/s/rQ8ISipvV3Irrjd3MI-Idw
+
+百度ERNIE，中文任务全面超越BERT

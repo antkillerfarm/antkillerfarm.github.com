@@ -252,7 +252,15 @@ https://mp.weixin.qq.com/s/vfC1FPi8sjatFh2HMjTEXQ
 
 # YOLOv2
 
-面对SSD的攻势，pjreddie不甘示弱，于2016年12月提出了YOLOv2（又名YOLO9000）。YOLOv2对YOLO做了较多改进，实际上更像是SSD的升级版。
+面对SSD的攻势，pjreddie不甘示弱，于2016年12月提出了YOLOv2。
+
+YOLOv2有两个版本：
+
+原始版：仍然是VOC数据集的20个分类。
+
+加强版：类别增加到9000类。因此这一版本也被称作YOLO9000。
+
+YOLOv2对YOLO做了较多改进，实际上更像是SSD的升级版。
 
 论文：
 
@@ -282,4 +290,4 @@ YOLOv2首先修改预训练分类网络的分辨率为448x448，在ImageNet数�
 
 其主要思路是：将对类别的预测放到anchor box中。
 
-同时，由于分辨率的提高，cell的数量由7x7改为13x13。这样一来就有13x13x9=1521个boxes了。因此，YOLOv2比YOLO在检测小物体方面有一定的优势。
+同时，由于分辨率的提高，cell的数量由7x7改为13x13。这样一来就有13x13x9=1521个boxes了。（假设每个cell的Anchor Boxes的数量为9。）因此，YOLOv2比YOLO在检测小物体方面有一定的优势。

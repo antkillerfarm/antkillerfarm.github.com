@@ -36,6 +36,12 @@ YOLOv2使用了一种不同的方法，简单添加一个passthrough layer，把
 
 2.将浅层特征图（13x13x2048）和深层特征图（13x13x1024）合并为一个（13x13x3072）tensor。
 
+![](/images/img3/passthough.jpg)
+
+![](/images/img3/YOLOv2.jpg)
+
+上图中每个cell的Anchor Boxes为5。
+
 ### Multi-Scale Training
 
 为了让YOLOv2对不同尺寸图片具有鲁棒性，在训练的时候就要考虑这一点。

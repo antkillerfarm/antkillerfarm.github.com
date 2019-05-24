@@ -392,7 +392,7 @@ https://mp.weixin.qq.com/s/NwjYJde9_TC4PXMPpYw1Gw
 
 https://mp.weixin.qq.com/s/Kv1Qq4118I2itYwPYyQUoA
 
-Spark Streaming 实时计算在甜橙金融监控系统中的应用及优化
+Spark Streaming实时计算在甜橙金融监控系统中的应用及优化
 
 https://mp.weixin.qq.com/s/syM4ReAWpZ5d4KI87ogpiQ
 

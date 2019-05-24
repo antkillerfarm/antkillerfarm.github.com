@@ -96,6 +96,10 @@ https://mp.weixin.qq.com/s/gzwa6ZZeNvm1MyIM93sC5Q
 
 全新缺失图像数据插补框架—CollaGAN
 
+https://mp.weixin.qq.com/s/3bi5Timesxi1YbFdzBs8AA
+
+DeepMind论文：深度压缩感知，新框架提升GAN性能
+
 # Graph NN
 
 ## DGL
@@ -381,3 +385,7 @@ https://mp.weixin.qq.com/s/Irs_fLrf4oybc3sAfpmEeA
 https://mp.weixin.qq.com/s/PkUJsnZdihPM7q9BpvO8Ag
 
 深度学习中不得不学的Graph Embedding方法
+
+https://mp.weixin.qq.com/s/PxNGJ0hcmCo-2zvWD-rfug
+
+GCN作者Thomas Kipf 最新Talk：利用图神经网络进行无监督学习
