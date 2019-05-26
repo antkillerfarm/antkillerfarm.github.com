@@ -116,6 +116,12 @@ Style Transfer的基本内容可参见《深度学习（十五）》。
 
 除了基于纹理的Style Transfer之外，基于GAN的Style Transfer是另外一个流派。
 
+CycleGAN是朱俊彦2017年的作品。
+
+>朱俊彦，清华本科（2012）+UCB博士（2018）。   
+>个人主页：   
+>http://people.csail.mit.edu/junyanz/
+
 论文：
 
 《Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks》

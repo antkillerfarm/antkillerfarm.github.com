@@ -386,6 +386,10 @@ https://mp.weixin.qq.com/s/MMzvZA55Xb2sOA7rJiXiEw
 
 那些酷炫的深度学习网络图怎么画出来的？
 
+https://mp.weixin.qq.com/s/CqvranTh9dawJW5DP-oHpw
+
+手把手教你将矩阵画成张量网络图
+
 ## howmuch.net
 
 howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：
@@ -411,33 +415,3 @@ Processing是一个在可视化领域用的比较多的sketchbook，类似于Log
 官网：
 
 https://processing.org
-
-# NLP参考资源
-
-https://mp.weixin.qq.com/s/-YmB6QSQ01EsHfXB40MMcQ
-
-Generative QA: Learning to Answer the Whole Question
-
-https://mp.weixin.qq.com/s/MJMPpiY_FQqwIv8qXTp4TQ
-
-CMU开源NLP生成句子评估工具，帮你快速分析模型产出
-
-https://mp.weixin.qq.com/s/Y99PgmD3ilHGhURWFL6rzg
-
-云从科技联手上海交大提出端到端统一语义角色标注
-
-https://mp.weixin.qq.com/s/wJry8N4FC9KVv_bVGuzXXw
-
-LinkedIn文本分析平台：主题挖掘的四大技术步骤
-
-http://mp.weixin.qq.com/s/Or6oDt0aZFlnlMr8EBr-xQ
-
-三角兽首席科学家王宝勋：热度之下的对话生成
-
-https://mp.weixin.qq.com/s/Xnea50Eisq9rzhGFa1iTFA
-
-DRr-Net：基于动态重读机制的句子语义匹配方法
-
-https://mp.weixin.qq.com/s/M_UE4yI-ZDXhGtWXprGYjA
-
-自然语言处理常识推理综述论文

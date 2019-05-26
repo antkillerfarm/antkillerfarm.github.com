@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十八）——多任务学习, RNN进阶, Multi-agent
+title:  深度学习（三十八）——多任务学习, RNN进阶, Multi-agent, 细粒度分类
 category: DL 
 ---
 
@@ -309,3 +309,57 @@ https://mp.weixin.qq.com/s/4o9XHGwx5lYsJ7YfUNHSoQ
 https://mp.weixin.qq.com/s/dN1p7nuv6xtnIsSuY73CcA
 
 基于GNN，强于GNN：胶囊图神经网络的PyTorch实现
+
+# 细粒度分类
+
+https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw
+
+分段映射：帮助利用少量样本习得新类别细粒度分类器
+
+https://mp.weixin.qq.com/s/zeN7rjmAnvh_7BbTmScrZw
+
+细粒度分类你懂吗？——fine-gained image classification
+
+https://mp.weixin.qq.com/s/LtWMGRBk2sbPDjeC9PmJ7g
+
+弱监督学习下的商品识别：CVPR 2018细粒度识别挑战赛获胜方案简介
+
+https://mp.weixin.qq.com/s/hcoAL1AHm_HtderWU8fSBw
+
+大连理工大学在CVPR18大规模精细粒度物种识别竞赛中获得冠军
+
+https://mp.weixin.qq.com/s/31r9FjuJn9yxrZMnfozkMQ
+
+全卷积注意网络的细粒度识别
+
+https://zhuanlan.zhihu.com/p/24738319
+
+“见微知著”——细粒度图像分析进展综述
+
+https://zhuanlan.zhihu.com/p/42067661
+
+CVPR Look Closer to See Better
+
+https://mp.weixin.qq.com/s/52hm3Cq3TFRnTMfDppivSQ
+
+中山大学等提出HSE：基于层次语义嵌入模型的精细化物体分类
+
+https://zhuanlan.zhihu.com/p/48192930
+
+Object-Part Attention Model for FGVC
+
+https://mp.weixin.qq.com/s/slmod5rW4qRhxGnbNN2J8g
+
+双线性汇合(bilinear pooling)在细粒度图像分析及其他领域的进展综述
+
+https://mp.weixin.qq.com/s/JGQdHS_yqkOMrN_Z3jEb7A
+
+基于深度学习的细粒度图像分类综述
+
+https://mp.weixin.qq.com/s/L-1gkElxsMtT369fgJl86Q
+
+旷视南京研究院魏秀参：细粒度图像分析综述
+
+https://zhuanlan.zhihu.com/p/57086099
+
+细粒度识别之Local Attention Network

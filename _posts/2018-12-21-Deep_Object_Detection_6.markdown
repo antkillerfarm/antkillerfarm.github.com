@@ -1,8 +1,90 @@
 ---
 layout: post
-title:  深度目标检测（六）——目标检测进阶, Flink
+title:  深度目标检测（六）——其它目标检测网络, 目标检测进阶
 category: Deep Object Detection 
 ---
+
+# 其它目标检测网络
+
+## A-Fast-RCNN
+
+A-Fast-RCNN首次将对抗学习引入到了目标检测领域，idea是非常创新的。
+
+http://blog.csdn.net/jesse_mx/article/details/72955981
+
+A-Fast-RCNN论文笔记
+
+## FPN
+
+FPN(Feature Pyramid Network)
+
+参考：
+
+https://mp.weixin.qq.com/s/mY_QHvKmJ0IH_Rpp2ic1ig
+
+目标检测FPN
+
+https://mp.weixin.qq.com/s/TelGG-uVQyxwQjiDGE1pqA
+
+特征金字塔网络FPN
+
+https://zhuanlan.zhihu.com/p/58603276
+
+FPN-目标检测
+
+## R-FCN
+
+FCN在目标检测领域的应用。
+
+http://blog.csdn.net/zijin0802034/article/details/53411041
+
+R-FCN: Object Detection via Region-based Fully Convolutional Networks
+
+https://blog.csdn.net/App_12062011/article/details/79737363
+
+R-FCN
+
+https://mp.weixin.qq.com/s/HPzQST8cq5lBhU3wnz7-cg
+
+R-FCN每秒30帧实时检测3000类物体，马里兰大学Larry Davis组最新目标检测工作
+
+https://mp.weixin.qq.com/s/AddHG_I00uaDov0le4vdvA
+
+R-FCN和FPN
+
+## G-CNN
+
+G-CNN是MaryLand大学的工作，论文主要的思路也是消除region proposal，和YOLO，SSD不同，G-CNN的工作借鉴了迭代的想法，把边框检测等价于找到初始边框到最终目标的一个路径。但是使用one-step regression不能处理这个非线性的过程，所以作者采用迭代的方法逐步接近最终的目标。
+
+http://blog.csdn.net/zijin0802034/article/details/53535647
+
+G-CNN: an Iterative Grid Based Object Detector
+
+## CornerNet
+
+https://mp.weixin.qq.com/s/e74-zFcMZzn67KaFXb_fdQ
+
+CornerNet目标检测开启预测“边界框”到预测“点对”的新思路
+
+https://zhuanlan.zhihu.com/p/41865617
+
+CornerNet：目标检测算法新思路
+
+https://mp.weixin.qq.com/s/e6B22xpue_xZwrXmIlZodw
+
+ECCV-2018最佼佼者CornerNet的目标检测算法
+
+https://mp.weixin.qq.com/s/9ldLaYKGkgq-MnJZw7CrDQ
+
+CornerNet为什么有别于其他目标检测领域的主流算法？
+
+https://mp.weixin.qq.com/s/ZhfnZ4IwOnTQlqeB6Ilr3A
+
+CornerNet: Detecting Objects as Paired Keypoints解读
+
+https://zhuanlan.zhihu.com/p/63134919
+
+普林斯顿大学提出：CornerNet-Lite，基于关键点的目标检测算法，已开源！
 
 # 目标检测进阶
 
@@ -269,111 +351,3 @@ https://www.zhihu.com/question/270143544
 https://mp.weixin.qq.com/s/b4s8Te29DyS71xwQU789pQ
 
 实体零售场景下密集商品的精确探测
-
-# Flink
-
-Flink是一个流计算引擎。
-
-官网：
-
-https://flink.apache.org
-
-参考：
-
-https://mp.weixin.qq.com/s/WNcs0P5baLclZFBmEH3CCA
-
-Spark比拼Flink：下一代大数据计算引擎之争，谁主沉浮？
-
-https://mp.weixin.qq.com/s/_DLKTRI_IytYkPlMZ3eDCQ
-
-流计算框架Flink与Storm的性能对比
-
-https://mp.weixin.qq.com/s/NvD-NSR-aE8HTADR2LSSjA
-
-基于Flink流处理的动态实时超大规模用户行为分析
-
-https://mp.weixin.qq.com/s/UFzFuHFqsXl6ynKyYoOnRA
-
-容错和高性能如何兼得: Flink创始人谈流计算核心架构演化和现状
-
-https://mp.weixin.qq.com/s/lc9fWkEVt1kG5Mw3Xeuv3g
-
-Apache Beam实战指南：手把手教你玩转KafkaIO与Flink
-
-https://mp.weixin.qq.com/s/qhiX62dALXd3owYYP9KsEQ
-
-支持流式处理ACID事务！Flink团队开源新作Streaming Ledger
-
-https://mp.weixin.qq.com/s/AoSDPDKbTbjH9rviioK-5Q
-
-阿里巴巴为什么选择Apache Flink？
-
-https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651749037&idx=1&sn=4a448647b3dae50779bc9ec0e9c10275
-
-美团点评基于Flink的实时数仓建设实践
-
-https://mp.weixin.qq.com/s/Jkd-FykUEKZZeVizRoTeJQ
-
-一文读懂Apache Flink技术
-
-https://mp.weixin.qq.com/s/rsJlZEP_oVG3NiFRyeS8gw
-
-Apache Flink干货合集打包好了，速来下载
-
-https://mp.weixin.qq.com/s/vVwBEzPyXAX1ObZ6IU8XeQ
-
-Flink如何取代JStorm，成为字节跳动流处理唯一标准？
-
-https://mp.weixin.qq.com/s/zeIcY_JknIo9-hR7UTxvrA
-
-从Storm到Flink：大数据处理的开源系统及编程模型
-
-https://mp.weixin.qq.com/s/ZkVK9S-BSoQTo09ALBI9aA
-
-从Storm到Flink，有赞五年实时计算效率提升实践
-
-https://mp.weixin.qq.com/s/hm_1A5Mu_6R0ygZPsspV8g
-
-开源的Blink和Spark3.0，谁将称霸大数据领域？
-
-https://mp.weixin.qq.com/s/DPLJA8Q2gDXLZF17FOcczw
-
-OPPO数据中台之基石：基于Flink SQL构建实数据仓库
-
-https://mp.weixin.qq.com/s/tbnl4a8lhamCQ-KDRYYhVA
-
-Blink有何特别之处？菜鸟供应链场景最佳实践
-
-# AI Chip
-
-https://mp.weixin.qq.com/s/BD-HAILp3TPvBFlIy6QC4w
-
-一文看懂机器视觉芯片
-
-https://mp.weixin.qq.com/s/PMnNay4CRgVghA4fU9oLqg
-
-牛津大学研发类脑光子芯片，运算速度超人脑1000倍
-
-https://mp.weixin.qq.com/s/HeoVktVtvOK4VgocyxuCXg
-
-摩尔定律已死？GPU会取代CPU的位置吗？
-
-https://mp.weixin.qq.com/s/e333KjLavEvvpNIL3u1Y4Q
-
-NovuMind异构智能核心技术引领智联网
-
-https://mp.weixin.qq.com/s/fSSyOs4-NXbPTbDjpfJBNQ
-
-Google IPU：互联网巨头纷纷进军芯片行业是为何？
-
-https://mp.weixin.qq.com/s/S1y4NEx4_Mgwf68S2pexqA
-
-拿着锤子找钉子，数字芯片领导者比特大陆进军人工智能
-
-https://mp.weixin.qq.com/s/gtgPYf939uYRzxAab_LZLQ
-
-谢源：计算存储一体化，在存储里做深度学习，架构创新实现下一代AI芯片
-
-https://mp.weixin.qq.com/s/s-fYxv4z5kkJUFueU2IR7w
-
-BP表达式与硬件架构：相似性构建更高效的计算单元

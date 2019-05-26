@@ -294,6 +294,14 @@ https://mp.weixin.qq.com/s/tARJdv_ybTmVigTXPoeuYw
 
 还在用Matplotlib? 又一可视化神器Altair登场
 
+https://mp.weixin.qq.com/s/wwhjwQyM2r0F-hOIWV35pg
+
+Python数据科学手册专题：线性回归
+
+https://mp.weixin.qq.com/s/VZlrWwbU0nJIlSVa9PgMBQ
+
+在Python中简洁使用CSV、JSON、XML
+
 # 边缘计算
 
 ![](/images/img2/edge_computing.png)

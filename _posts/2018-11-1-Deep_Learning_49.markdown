@@ -176,7 +176,7 @@ https://zhuanlan.zhihu.com/p/65348860
 
 # Mask R-CNN
 
-Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的NN。它是何恺明2017年的新作。
+Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的网络。它是何恺明2017年的新作。
 
 论文：
 
@@ -363,3 +363,11 @@ https://mp.weixin.qq.com/s/rvcj9-6KlBsVmF_CAsip2A
 https://mp.weixin.qq.com/s/LrGWJIdPdUNZ3jyC8tdE6w
 
 Graph Neural Network（GNN）综述
+
+https://mp.weixin.qq.com/s/t2kjxrcn6O9tbJ-IQELboQ
+
+高君宇：图神经网络在视频分类中的应用
+
+https://mp.weixin.qq.com/s/7DyPJ9LnqZ9XyAop33SxSw
+
+ST-GCN动作识别算法详解

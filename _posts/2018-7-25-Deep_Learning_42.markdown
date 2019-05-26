@@ -204,6 +204,50 @@ NVIDIA/悉尼科技大学/澳洲国立大学新作：用GAN生成高质量行人
 
 # NLP参考资源+
 
+https://mp.weixin.qq.com/s/-YmB6QSQ01EsHfXB40MMcQ
+
+Generative QA: Learning to Answer the Whole Question
+
+https://mp.weixin.qq.com/s/MJMPpiY_FQqwIv8qXTp4TQ
+
+CMU开源NLP生成句子评估工具，帮你快速分析模型产出
+
+https://mp.weixin.qq.com/s/Y99PgmD3ilHGhURWFL6rzg
+
+云从科技联手上海交大提出端到端统一语义角色标注
+
+https://mp.weixin.qq.com/s/wJry8N4FC9KVv_bVGuzXXw
+
+LinkedIn文本分析平台：主题挖掘的四大技术步骤
+
+http://mp.weixin.qq.com/s/Or6oDt0aZFlnlMr8EBr-xQ
+
+三角兽首席科学家王宝勋：热度之下的对话生成
+
+https://mp.weixin.qq.com/s/Xnea50Eisq9rzhGFa1iTFA
+
+DRr-Net：基于动态重读机制的句子语义匹配方法
+
+https://mp.weixin.qq.com/s/M_UE4yI-ZDXhGtWXprGYjA
+
+自然语言处理常识推理综述论文
+
+https://zhuanlan.zhihu.com/p/64032803
+
+无监督循环神经网络文法(URNNG)
+
+https://github.com/crownpku/Information-Extraction-Chinese
+
+这是中文NER的代码示例
+
+https://mp.weixin.qq.com/s/5S5ikwnF7f55sL_VI73XSQ
+
+吴恩达博士生Ziang Xie：深度文本生成最佳实战指南
+
+http://www.jianshu.com/p/f45c3540c56e
+
+Chatbot架构
+
 https://mp.weixin.qq.com/s/tvtT5S9mDhXoYLKh9apgDw
 
 达观文本指纹算法和系统简述
@@ -243,3 +287,7 @@ IEMLRN：基于图像增强的句子语义表示
 https://mp.weixin.qq.com/s/3YPWQjzkmbayeEbKkUdp9w
 
 平安人寿资深算法工程师张智：人机交互场景下的知识挖掘
+
+https://blog.csdn.net/liuchonge/article/details/78929474
+
+从头实现深度学习的对话系统--简单chatbot代码实现

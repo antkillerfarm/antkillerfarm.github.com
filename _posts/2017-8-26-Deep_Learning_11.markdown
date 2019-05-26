@@ -160,6 +160,10 @@ https://mp.weixin.qq.com/s/ybI8kJPRn7sH-hJbc5uqnw
 
 CMU研究者探索新卷积方法：在实验中可媲美基准CNN
 
+https://zhuanlan.zhihu.com/p/46633171
+
+深度卷积神经网络中的降采样
+
 # Winograd
 
 矩阵方面的数值计算，Shmuel Winograd是一个无法绕开的人物。

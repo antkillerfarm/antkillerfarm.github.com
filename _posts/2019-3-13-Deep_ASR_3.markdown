@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度语音识别（三）——语音合成参考资源
+title:  深度语音识别（三）——语音合成参考资源, Flink
 category: speech 
 ---
 
@@ -227,3 +227,77 @@ https://mp.weixin.qq.com/s/1glxeUx-4DCWRjJQMW7IiQ
 https://mp.weixin.qq.com/s/c1QSGia52ICTc25i-C91Rg
 
 GAN跨界合成高保真音乐，Jeff Dean听了都陶醉
+
+# Flink
+
+Flink是一个流计算引擎。
+
+官网：
+
+https://flink.apache.org
+
+参考：
+
+https://mp.weixin.qq.com/s/WNcs0P5baLclZFBmEH3CCA
+
+Spark比拼Flink：下一代大数据计算引擎之争，谁主沉浮？
+
+https://mp.weixin.qq.com/s/_DLKTRI_IytYkPlMZ3eDCQ
+
+流计算框架Flink与Storm的性能对比
+
+https://mp.weixin.qq.com/s/NvD-NSR-aE8HTADR2LSSjA
+
+基于Flink流处理的动态实时超大规模用户行为分析
+
+https://mp.weixin.qq.com/s/UFzFuHFqsXl6ynKyYoOnRA
+
+容错和高性能如何兼得: Flink创始人谈流计算核心架构演化和现状
+
+https://mp.weixin.qq.com/s/lc9fWkEVt1kG5Mw3Xeuv3g
+
+Apache Beam实战指南：手把手教你玩转KafkaIO与Flink
+
+https://mp.weixin.qq.com/s/qhiX62dALXd3owYYP9KsEQ
+
+支持流式处理ACID事务！Flink团队开源新作Streaming Ledger
+
+https://mp.weixin.qq.com/s/AoSDPDKbTbjH9rviioK-5Q
+
+阿里巴巴为什么选择Apache Flink？
+
+https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651749037&idx=1&sn=4a448647b3dae50779bc9ec0e9c10275
+
+美团点评基于Flink的实时数仓建设实践
+
+https://mp.weixin.qq.com/s/Jkd-FykUEKZZeVizRoTeJQ
+
+一文读懂Apache Flink技术
+
+https://mp.weixin.qq.com/s/rsJlZEP_oVG3NiFRyeS8gw
+
+Apache Flink干货合集打包好了，速来下载
+
+https://mp.weixin.qq.com/s/vVwBEzPyXAX1ObZ6IU8XeQ
+
+Flink如何取代JStorm，成为字节跳动流处理唯一标准？
+
+https://mp.weixin.qq.com/s/zeIcY_JknIo9-hR7UTxvrA
+
+从Storm到Flink：大数据处理的开源系统及编程模型
+
+https://mp.weixin.qq.com/s/ZkVK9S-BSoQTo09ALBI9aA
+
+从Storm到Flink，有赞五年实时计算效率提升实践
+
+https://mp.weixin.qq.com/s/hm_1A5Mu_6R0ygZPsspV8g
+
+开源的Blink和Spark3.0，谁将称霸大数据领域？
+
+https://mp.weixin.qq.com/s/DPLJA8Q2gDXLZF17FOcczw
+
+OPPO数据中台之基石：基于Flink SQL构建实数据仓库
+
+https://mp.weixin.qq.com/s/tbnl4a8lhamCQ-KDRYYhVA
+
+Blink有何特别之处？菜鸟供应链场景最佳实践

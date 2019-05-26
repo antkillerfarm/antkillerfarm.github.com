@@ -340,6 +340,10 @@ https://mp.weixin.qq.com/s/L9kYXFXYmKadghAhd-51pA
 
 TensorFlow模型优化工具包—剪枝API
 
+https://mp.weixin.qq.com/s/G0xrlTHfxKHikYj8dGWRWQ
+
+Transformer聊天机器人教程
+
 # 知识图谱参考资源+
 
 https://mp.weixin.qq.com/s/7LFkOzkD1-PsNNAr5DAETg
@@ -377,3 +381,7 @@ https://mp.weixin.qq.com/s/_pNDalO6D8kGiCBYi1jnIA
 https://mp.weixin.qq.com/s/3QjLFzMvH9qR05kmUyawQg
 
 知识图谱如何用于可解释人工智能中？
+
+https://mp.weixin.qq.com/s/_ZBvq7gXvbiP2IQve9tcKg
+
+清华等提出ERNIE：知识图谱结合BERT才是“有文化”的语言模型

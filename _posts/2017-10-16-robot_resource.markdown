@@ -222,6 +222,14 @@ https://github.com/raulmur/ORB_SLAM2
 
 Real-Time SLAM for Monocular, Stereo and RGB-D Cameras, with Loop Detection and Relocalization Capabilities
 
+https://mp.weixin.qq.com/s/yNr4_tEyYg_VBmNjIrjYug
+
+自动驾驶车辆仿真模拟软件盘点
+
+https://zhuanlan.zhihu.com/p/66961439
+
+交通模型仿真工具SUMO介绍
+
 ## PythonRobotics
 
 PythonRobotics是一个机器人算法方面的代码示例库。
@@ -433,19 +441,3 @@ MATLAB R2017a: 自动驾驶工具箱
 https://mp.weixin.qq.com/s/Fc19GZgMP167fvqOcG0rbA
 
 英特尔中国研究院HERO机器人平台问世
-
-https://mp.weixin.qq.com/s/h7qBPDoYTDCXSix1KdyXtg
-
-波士顿动动力的机器人用的是什么学习算法？
-
-https://mp.weixin.qq.com/s/ur2eYPZGKdk-ltyXanqiMA
-
-自动驾驶的“大脑”——决策规划篇
-
-https://mp.weixin.qq.com/s/booAFydlBvH-SAAVtByt7w
-
-一文带你看懂自动驾驶
-
-https://mp.weixin.qq.com/s/j_rkmJ09QxhtzFH_Xa1Evw
-
-陈小平：机器人灵巧性可解决不确定性问题

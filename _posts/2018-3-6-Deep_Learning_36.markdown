@@ -78,6 +78,10 @@ https://www.zhihu.com/question/20830906/
 
 deep learning可以用来做推荐系统吗？
 
+https://mp.weixin.qq.com/s/WZ5CYdinRvRrCuniLHok-Q
+
+Embedding技术在深度学习CTR模型中的应用
+
 # 人脸检测/识别
 
 ## 人脸识别

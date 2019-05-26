@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（五）——YOLOv3, One-stage vs. Two-stage, Anchor-Free, 其它目标检测网络
+title:  深度目标检测（五）——YOLOv3, Tiny-YOLO, One-stage vs. Two-stage, Anchor-Free
 category: Deep Object Detection 
 ---
 
@@ -37,6 +37,8 @@ YOLOv2使用了一种不同的方法，简单添加一个passthrough layer，把
 2.将浅层特征图（13x13x2048）和深层特征图（13x13x1024）合并为一个（13x13x3072）tensor。
 
 ![](/images/img3/passthough.jpg)
+
+从实际的实现来看，这里passthrough layer，实际上就是`tf.space_to_depth`运算。
 
 ![](/images/img3/YOLOv2.jpg)
 
@@ -116,6 +118,46 @@ YOLOv2/YOLO9000深入理解
 
 # YOLOv3
 
+2018年4月，pjreddie提出了YOLOv3。
+
+论文：
+
+《YOLOv3: An Incremental Improvement》
+
+代码：
+
+https://github.com/YunYang1994/tensorflow-yolov3
+
+TF版本
+
+它的改进点在于：
+
+1.**骨干网络再次升级。**
+
+![](/images/img3/YOLOv3.png)
+
+上图是YOLOv3的网络结构图。由于这个网络共有53层Conv，因此也被作者称作**Darknet-53**。
+
+从结构来看，它明显借鉴了ResNet的残差结构。而3x3、1x1卷积核的使用，则显然是SqueezeNet的思路。
+
+2.**多尺度先验框**。
+
+![](/images/img3/YOLOv3.jpg)
+
+YOLOv2从两个不同尺度的conv层输出中提取bbox，而YOLOv3从3个不同尺度的conv层输出中提取bbox。多尺度提取特征在U-NET、DenseNet中，早就广泛使用了。用到这里也很自然。
+
+![](/images/img3/YOLOv3_2.jpg)
+
+上图是YOLOv3网络输出的tensor的格式。
+
+3.**对象分类softmax改成logistic**。
+
+预测对象类别时不使用softmax，改成使用logistic的输出进行预测。这样能够支持多标签对象（比如一个人有Woman 和 Person两个标签）。
+
+实际上，就是把loss由`tf.nn.softmax_cross_entropy_with_logits`换成`tf.nn.sigmoid_cross_entropy_with_logits`。它的特点是每个类别给出一个二分类（是/否）的置信度，如果某个对象是多标签的话，则它可能有多个类别的置信度接近1。
+
+参考：
+
 https://zhuanlan.zhihu.com/p/34945787
 
 YOLOv3：An Incremental Improvement全文翻译
@@ -144,18 +186,6 @@ https://zhuanlan.zhihu.com/p/49556105
 
 YOLO v3深入理解
 
-https://mp.weixin.qq.com/s/xNaXPwI1mQsJ2Y7TT07u3g
-
-YOLO-LITE:专门面向CPU的实时目标检测
-
-https://zhuanlan.zhihu.com/p/50170492
-
-重磅！YOLO-LITE来了
-
-https://zhuanlan.zhihu.com/p/52928205
-
-重磅！MobileNet-YOLOv3来了
-
 https://mp.weixin.qq.com/s/0lyDv9b-mpvSFYXqyngT-w
 
 实用教程！使用YOLOv3训练自己数据的目标检测
@@ -171,6 +201,28 @@ YOLO v3目标检测的PyTorch实现，GitHub完整源码解析！
 https://mp.weixin.qq.com/s/2aeBBjCbWdweYmNrTaWqqw
 
 一文看尽目标检测：从YOLO v1到v3的进化之路
+
+# Tiny-YOLO
+
+YOLO系列还包括了一个速度更快但精度稍低的嵌入式版本系列——Tiny-YOLO。
+
+到了YOLOv3时代，Tiny-YOLO被改名为YOLO-LITE。
+
+此外，还有使用其他轻量级骨干网络的YOLO变种，如MobileNet-YOLOv3。
+
+参考：
+
+https://mp.weixin.qq.com/s/xNaXPwI1mQsJ2Y7TT07u3g
+
+YOLO-LITE:专门面向CPU的实时目标检测
+
+https://zhuanlan.zhihu.com/p/50170492
+
+重磅！YOLO-LITE来了
+
+https://zhuanlan.zhihu.com/p/52928205
+
+重磅！MobileNet-YOLOv3来了
 
 # One-stage vs. Two-stage
 
@@ -220,7 +272,7 @@ https://mp.weixin.qq.com/s/04h80ubIxjJbT9BxQy5FSw
 
 目标检测：Anchor-Free时代
 
-https://zhuanlan.zhihu.com/p/62724053
+https://mp.weixin.qq.com/s/wWqdjsJ6U86lML0rSohz4A
 
 CenterNet：将目标视为点
 
@@ -231,85 +283,3 @@ https://zhuanlan.zhihu.com/p/62789701
 https://zhuanlan.zhihu.com/p/66156431
 
 从Densebox到Dubox：更快、性能更优、更易部署的anchor-free目标检测
-
-# 其它目标检测网络
-
-## A-Fast-RCNN
-
-A-Fast-RCNN首次将对抗学习引入到了目标检测领域，idea是非常创新的。
-
-http://blog.csdn.net/jesse_mx/article/details/72955981
-
-A-Fast-RCNN论文笔记
-
-## FPN
-
-FPN(Feature Pyramid Network)
-
-参考：
-
-https://mp.weixin.qq.com/s/mY_QHvKmJ0IH_Rpp2ic1ig
-
-目标检测FPN
-
-https://mp.weixin.qq.com/s/TelGG-uVQyxwQjiDGE1pqA
-
-特征金字塔网络FPN
-
-https://zhuanlan.zhihu.com/p/58603276
-
-FPN-目标检测
-
-## R-FCN
-
-FCN在目标检测领域的应用。
-
-http://blog.csdn.net/zijin0802034/article/details/53411041
-
-R-FCN: Object Detection via Region-based Fully Convolutional Networks
-
-https://blog.csdn.net/App_12062011/article/details/79737363
-
-R-FCN
-
-https://mp.weixin.qq.com/s/HPzQST8cq5lBhU3wnz7-cg
-
-R-FCN每秒30帧实时检测3000类物体，马里兰大学Larry Davis组最新目标检测工作
-
-https://mp.weixin.qq.com/s/AddHG_I00uaDov0le4vdvA
-
-R-FCN和FPN
-
-## G-CNN
-
-G-CNN是MaryLand大学的工作，论文主要的思路也是消除region proposal，和YOLO，SSD不同，G-CNN的工作借鉴了迭代的想法，把边框检测等价于找到初始边框到最终目标的一个路径。但是使用one-step regression不能处理这个非线性的过程，所以作者采用迭代的方法逐步接近最终的目标。
-
-http://blog.csdn.net/zijin0802034/article/details/53535647
-
-G-CNN: an Iterative Grid Based Object Detector
-
-## CornerNet
-
-https://mp.weixin.qq.com/s/e74-zFcMZzn67KaFXb_fdQ
-
-CornerNet目标检测开启预测“边界框”到预测“点对”的新思路
-
-https://zhuanlan.zhihu.com/p/41865617
-
-CornerNet：目标检测算法新思路
-
-https://mp.weixin.qq.com/s/e6B22xpue_xZwrXmIlZodw
-
-ECCV-2018最佼佼者CornerNet的目标检测算法
-
-https://mp.weixin.qq.com/s/9ldLaYKGkgq-MnJZw7CrDQ
-
-CornerNet为什么有别于其他目标检测领域的主流算法？
-
-https://mp.weixin.qq.com/s/ZhfnZ4IwOnTQlqeB6Ilr3A
-
-CornerNet: Detecting Objects as Paired Keypoints解读
-
-https://zhuanlan.zhihu.com/p/63134919
-
-普林斯顿大学提出：CornerNet-Lite，基于关键点的目标检测算法，已开源！

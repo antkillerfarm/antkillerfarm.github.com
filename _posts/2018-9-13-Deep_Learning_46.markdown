@@ -48,6 +48,10 @@ https://blog.csdn.net/Relocy/article/details/78629441
 
 HyperLPR：一个基于深度学习的支持多种车牌的中文开源车牌识别框架
 
+https://blog.csdn.net/yang_daxia/article/details/90408160
+
+车牌识别论文survey
+
 ## CRNN
 
 CRNN是白翔小组的作品。

@@ -364,6 +364,10 @@ https://mp.weixin.qq.com/s/ttdr14ryy6C-Fcm06kC7pQ
 
 CVPR 2019 Oral 亮风台提出端到端投影光学补偿算法
 
+https://zhuanlan.zhihu.com/p/61761901
+
+LearningToPaint：一个绘画AI
+
 # ESN
 
 Echo State Network

@@ -266,10 +266,6 @@ https://mp.weixin.qq.com/s/giwq3IZs6KSILSyXDn90pA
 
 破解AI大脑黑盒迈出新一步！谷歌现在更懂机器，还开源了研究工具
 
-https://mp.weixin.qq.com/s/VdZLGE3DU80Ycid1ePIR6w
-
-DIY发现新行星操作指南：谷歌开源了行星发现代码
-
 https://zhuanlan.zhihu.com/p/34286453
 
 林倞：Beyond Supervised Deep Learning--后深度学习时代的挑战
@@ -337,3 +333,47 @@ https://mp.weixin.qq.com/s/eS0OzK3Vxo0koGiLHP83ag
 https://mp.weixin.qq.com/s/ew9oKF92M_t6vcSWxyFL3w
 
 无参考图像质量评价研究进展综述
+
+https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
+
+北大：一种基于新闻特征抽取和循环神经网络的股票预测方法
+
+https://mp.weixin.qq.com/s/_QPzoFyhCxnIxDWKzzsvAQ
+
+智能交通大数据最新论文综述
+
+https://mp.weixin.qq.com/s/eYTDwSqgj-r7yV7w9tY_MA
+
+融合质量不理想数据
+
+https://mp.weixin.qq.com/s/fhpYkWiLGwSbpRsrwBcV9g
+
+多轴3D打印中的几何计算
+
+https://mp.weixin.qq.com/s/yXGuoBPmIeA3SteD_TliXg
+
+F-Principle：初探深度学习在计算数学的应用
+
+https://mp.weixin.qq.com/s/tduZoZecbOM0gC9Ugerbwg
+
+用AI设计微波集成电路，清华大学等提出深度强化学习方法RINN
+
+https://mp.weixin.qq.com/s/zcuTY9oWKhAQ8z0rx4nY4A
+
+让TA说你想听的—基于音/视频特征解离的讲述者人脸生成
+
+https://mp.weixin.qq.com/s/gjVLbH_S0t7jcjCYhpsTgw
+
+基于深度学习的人脑视觉神经信息编解码研究进展及挑战
+
+https://mp.weixin.qq.com/s/5gsbviBZ9Wkns0NTwCfDFw
+
+孙剑：如何打造云、端、芯上的视觉计算
+
+https://mp.weixin.qq.com/s/7dIf0YbUJCwz-_X9yTYIsA
+
+一文读懂AI如何判断照片中人物的社交关系
+
+https://mp.weixin.qq.com/s/w-6z8B60cIHUF5tU-RoQ3w
+
+旷视科技提出统一感知解析网络UPerNet，优化场景理解

@@ -208,7 +208,11 @@ https://mp.weixin.qq.com/s/1tcoGGbJnnWARu-2wefWdQ
 
 https://mp.weixin.qq.com/s/pDMBnX3CeQbv8hr-79Mvvg
 
-商汤EDVR算法获NTIRE 2019 视频恢复比赛全部四项冠军
+商汤EDVR算法获NTIRE 2019视频恢复比赛全部四项冠军
+
+https://mp.weixin.qq.com/s/GCCqIm4Q7UfUhhiqFbBS3g
+
+Pytorch视频分类教程
 
 # GAN参考资源
 

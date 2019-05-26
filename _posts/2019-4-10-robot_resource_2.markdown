@@ -6,6 +6,22 @@ category: resource
 
 # 机器人/无人驾驶参考资源
 
+https://mp.weixin.qq.com/s/h7qBPDoYTDCXSix1KdyXtg
+
+波士顿动动力的机器人用的是什么学习算法？
+
+https://mp.weixin.qq.com/s/ur2eYPZGKdk-ltyXanqiMA
+
+自动驾驶的“大脑”——决策规划篇
+
+https://mp.weixin.qq.com/s/booAFydlBvH-SAAVtByt7w
+
+一文带你看懂自动驾驶
+
+https://mp.weixin.qq.com/s/j_rkmJ09QxhtzFH_Xa1Evw
+
+陈小平：机器人灵巧性可解决不确定性问题
+
 https://mp.weixin.qq.com/s/DhA9V5IlNAaa4qpWHVQCPA
 
 一个机器学者的故事：机器人工程师学习计划
@@ -386,20 +402,6 @@ https://mp.weixin.qq.com/s/GnJRfbc6_smyeWjCKzsc7g
 
 通过视觉信号预测驾驶员意图
 
-# NLP参考资源
+https://zhuanlan.zhihu.com/p/66963787
 
-https://zhuanlan.zhihu.com/p/64032803
-
-无监督循环神经网络文法(URNNG)
-
-https://github.com/crownpku/Information-Extraction-Chinese
-
-这是中文NER的代码示例
-
-https://mp.weixin.qq.com/s/5S5ikwnF7f55sL_VI73XSQ
-
-吴恩达博士生Ziang Xie：深度文本生成最佳实战指南
-
-http://www.jianshu.com/p/f45c3540c56e
-
-Chatbot架构
+自动驾驶模拟仿真系统中的传感器模型
