@@ -62,6 +62,32 @@ https://mp.weixin.qq.com/s/wTwjbripELzqdCjs64Dzzw
 
 告别调参，AutoML新书发布
 
+## ENAS
+
+https://mp.weixin.qq.com/s/SwJs0OUzBlhiIOyFHFBK_g
+
+一文看懂Jeff Dean等提出的ENAS到底好在哪？
+
+https://mp.weixin.qq.com/s/Jw2kzCf2uFibhIpREnjO_A
+
+图解高效神经网络结构搜索（ENAS）
+
+## DARTS
+
+论文：
+
+《DARTS: Differentiable Architecture Search》
+
+代码：
+
+https://github.com/quark0/darts
+
+参考：
+
+https://mp.weixin.qq.com/s/bjVTpdaKFx4fFtT8BjMNew
+
+指数级加速架构搜索：CMU提出基于梯度下降的可微架构搜索方法（DARTS）
+
 ## 参考
 
 https://github.com/hibayesian/awesome-automl-papers
@@ -100,10 +126,6 @@ https://mp.weixin.qq.com/s/Yh8Zj7Jhliy7a9h6mW8FxQ
 
 解读谷歌NASNet：一个大规模图像识别架构!
 
-https://mp.weixin.qq.com/s/SwJs0OUzBlhiIOyFHFBK_g
-
-一文看懂JeffDean等提出的ENAS到底好在哪？
-
 https://mp.weixin.qq.com/s/MkXBtGq4xt5YOh1-uhMBbg
 
 循环神经网络自动生成程序：谷歌大脑提出“优先级队列训练”
@@ -131,10 +153,6 @@ https://mp.weixin.qq.com/s/HJ5caV1bQi7qVDeNXZ21qg
 https://zhuanlan.zhihu.com/p/35050923
 
 跬步至千里：揭秘谷歌AutoML背后的渐进式搜索技术
-
-https://mp.weixin.qq.com/s/bjVTpdaKFx4fFtT8BjMNew
-
-指数级加速架构搜索：CMU提出基于梯度下降的可微架构搜索方法
 
 https://mp.weixin.qq.com/s/wGt3Xk_ARqHei-ddU9iXNg
 
@@ -235,10 +253,6 @@ https://mp.weixin.qq.com/s/4hHoRDKqPT25ltU7nyaRAQ
 https://mp.weixin.qq.com/s/5kynyTPod0AUIYhL5kIDbA
 
 何恺明等人新作：效果超ResNet，利用NAS方法设计随机连接网络
-
-https://mp.weixin.qq.com/s/Jw2kzCf2uFibhIpREnjO_A
-
-图解高效神经网络结构搜索（ENAS）
 
 https://zhuanlan.zhihu.com/p/62523100
 

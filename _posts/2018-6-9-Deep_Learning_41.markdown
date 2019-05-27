@@ -358,3 +358,7 @@ IBM-小样本学习（Few-shot Learning）State of the art方法及论文讲解
 https://mp.weixin.qq.com/s/l-Ae8-K78AYITSn8_0LIfg
 
 破解数据孤岛壁垒，三篇论文详细解读联邦学习
+
+https://mp.weixin.qq.com/s/kPFS_4swYEP6Amw8xfXEgg
+
+中科院自动化所-针对小样本问题的学习生成匹配网络方法

@@ -136,10 +136,6 @@ https://mp.weixin.qq.com/s/PpT-NmTVjRi0_SEq0lISXw
 
 旷视科技Oral论文解读：IoU-Net让目标检测用上定位置信度
 
-https://mp.weixin.qq.com/s/tmp1HXU7cLerLr0DY9NluQ
-
-杂乱环境下的显著性物体： 将显著性物体检测推向新高度
-
 https://mp.weixin.qq.com/s/OqlZ2TRGbHURYW00440lgQ
 
 微软亚洲研究院与北京大学共同提出用于物体检测的可学习区域特征提取模块

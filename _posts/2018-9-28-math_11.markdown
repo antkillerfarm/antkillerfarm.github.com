@@ -4,7 +4,19 @@ title:  数学狂想曲（十一）——高阶统计, 勾股定理, PID算法, 
 category: math 
 ---
 
-# 高阶统计（续）
+# 高阶统计
+
+上面讨论的基本都是一阶和二阶统计量，实际上我们还可以使用更高阶的统计量。使用高阶统计量的学科，一般被称为高阶统计学（higher-order statistics）。
+
+## Moment
+
+Moment（矩）的定义为：
+
+$$\mu_n = \int_{-\infty}^\infty (x - c)^n\,f(x)\,\mathrm{d}x$$
+
+其中，当c=0时，被称作Raw Moment。当c为均值时，被称作Central Moment。如果用$$\mu_n/\sigma^n$$替换$$\mu_n$$，就是所谓的Normalised Moment了。
+
+1阶Raw Moment，常称为Mean。2阶Central Moment，常称为Variance。3阶Normalised Moment，常称为Skewness。4阶Normalised Moment，常称为kurtosis。
 
 ## Cumulants
 

@@ -354,6 +354,10 @@ https://pan.baidu.com/s/1qYPUHNQ
 
 小抄合集
 
+https://github.com/FavioVazquez/ds-cheatsheets
+
+更大的小抄合集
+
 https://mp.weixin.qq.com/s/1--i1OhxRNPvNnmP9bFo3g
 
 全机器学习和Python的27个速查表

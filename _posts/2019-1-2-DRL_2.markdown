@@ -312,6 +312,10 @@ https://mp.weixin.qq.com/s/sHP03DAeZvdBxwVPuSNRPg
 
 如何丝滑地入门神经网络？写个AI赛车游戏，只训练4代就能安全驾驶
 
+https://mp.weixin.qq.com/s/1SZKhG1ZbD1pl-3YQD_umg
+
+6行代码搞定基本的RL算法，速度围观Reddit高赞帖
+
 https://mp.weixin.qq.com/s/7BsXPQ8wC6_fHulU63ZQiQ
 
 当强化学习遇见泛函分析

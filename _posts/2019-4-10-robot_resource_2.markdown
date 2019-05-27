@@ -405,3 +405,7 @@ https://mp.weixin.qq.com/s/GnJRfbc6_smyeWjCKzsc7g
 https://zhuanlan.zhihu.com/p/66963787
 
 自动驾驶模拟仿真系统中的传感器模型
+
+https://mp.weixin.qq.com/s/AlYTOetU43VDaSlotRDUDg
+
+秒杀高精地图？MIT&丰田称仅靠简单地图和视觉就可让无人车适应新环境

@@ -420,3 +420,7 @@ https://mp.weixin.qq.com/s/wr18ylCJyJOX83BhbvGXng
 https://mp.weixin.qq.com/s/S_mIspLOrmj8ny0VHP52ZA
 
 Python高级技巧：lazy property
+
+https://mp.weixin.qq.com/s/06-iOG5TkRkHb4RZl1bXNQ
+
+史上最全Python迭代器与生成器

@@ -6,6 +6,10 @@ category: resource
 
 # AI工具
 
+https://mp.weixin.qq.com/s/w6asQp2cI3_K6omlZKtICw
+
+50款大数据分析神器
+
 https://mp.weixin.qq.com/s/TT4whft1Tj1pCEPbnMH1cA
 
 清华大学发布OpenNE：用于网络嵌入的开源工具包

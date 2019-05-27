@@ -196,6 +196,10 @@ https://mp.weixin.qq.com/s/bA2jUxLhurm2vRTxX0Inpw
 
 超长文详解作业帮产品逻辑和技术原理
 
+https://mp.weixin.qq.com/s/2Qm8TAFCLTQqrpR4dTN6Qg
+
+2019搜狐校园算法大赛-rank5
+
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA

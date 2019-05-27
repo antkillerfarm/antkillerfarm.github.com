@@ -307,3 +307,11 @@ https://mp.weixin.qq.com/s/47TcGoasB9E_Et2zwl3OCw
 https://zhuanlan.zhihu.com/p/65307842
 
 快、好、实现简单并且开源的显著性检测方法
+
+https://mp.weixin.qq.com/s/tmp1HXU7cLerLr0DY9NluQ
+
+杂乱环境下的显著性物体： 将显著性物体检测推向新高度
+
+https://mp.weixin.qq.com/s/urgkUcu2ZWQMGPZdArWzYg
+
+PoolNet：基于池化技术的显著性目标检测

@@ -64,6 +64,14 @@ https://mp.weixin.qq.com/s/FjQfAYKCgZ1ToE4nVyr28A
 
 图像与CNN发家简史，集齐深度学习三巨头
 
+# CV/CG
+
+![](/images/article/computer_vision.jpg)
+
+![](/images/img3/CV_CG.jpg)
+
+一般来说，CV和CG是两个相反的过程，但是也有交集的领域例如AR/VR。
+
 # 特征工程
 
 颜色特征：RGB、HSV、Lab
