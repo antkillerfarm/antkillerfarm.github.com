@@ -162,6 +162,10 @@ https://mp.weixin.qq.com/s/bcpjkuRtErSRfJPsAnAWWQ
 
 用深度学习做文本摘要
 
+https://zhuanlan.zhihu.com/p/67328697
+
+文本摘要简述
+
 ## 句法分析
 
 传统方法主要是PCFG （Probabilistic Context-Free Grammar）。

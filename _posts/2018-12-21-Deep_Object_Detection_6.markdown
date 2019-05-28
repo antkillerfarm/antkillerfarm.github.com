@@ -16,7 +16,15 @@ A-Fast-RCNN论文笔记
 
 ## FPN
 
-FPN(Feature Pyramid Network)
+FPN(Feature Pyramid Network)是Tsung-Yi Lin（Ross Girshick和何恺明小组成员）的作品。
+
+论文：
+
+《Feature Pyramid Networks for Object Detection》
+
+![](/images/img3/FPN.png)
+
+
 
 参考：
 
@@ -33,6 +41,10 @@ https://zhuanlan.zhihu.com/p/58603276
 FPN-目标检测
 
 ## R-FCN
+
+论文：
+
+《R-FCN: Object Detection via Region-based Fully Convolutional Networks》
 
 FCN在目标检测领域的应用。
 

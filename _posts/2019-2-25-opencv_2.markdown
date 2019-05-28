@@ -198,6 +198,10 @@ https://mp.weixin.qq.com/s/FGZ0lVzjhRqTPaoYI9yPEg
 
 OpenCV视频分析背景提取与前景提取
 
+https://mp.weixin.qq.com/s/C9LG-5vFHWhR_Fl94LJYTw
+
+二值图像分析案例精选
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。

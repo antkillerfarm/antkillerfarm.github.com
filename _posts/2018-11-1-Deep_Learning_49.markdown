@@ -202,6 +202,8 @@ https://github.com/wannabeOG/Mask-RCNN
 
 ![](/images/img2/mask_rcnn.png)
 
+
+
 参考：
 
 https://zhuanlan.zhihu.com/p/25954683
@@ -215,6 +217,10 @@ Mask R-CNN的Keras/TensorFlow/Pytorch代码实现
 https://zhuanlan.zhihu.com/p/30967656
 
 从R-CNN到Mask R-CNN
+
+https://www.zhihu.com/question/57403701
+
+如何评价Kaiming He最新的Mask R-CNN?
 
 http://zh.gluon.ai/chapter_computer-vision/object-detection.html
 
@@ -276,6 +282,10 @@ https://mp.weixin.qq.com/s/SUZcgq6wOqct_CrWB0j1gA
 
 CVPR2019-实例分割Mask Scoring R-CNN
 
+https://mp.weixin.qq.com/s/Uc0VFMmYoOFvH0c7IExKIg
+
+何恺明团队计算机视觉最新进展：从特征金字塔网络、Mask R-CNN到学习分割一切
+
 # Fast Image Processing
 
 ![](/images/article/FIP.png)
@@ -334,7 +344,7 @@ http://mmlab.science.unitn.it/RAISE/
 
 RAISE数据集包含了8156张高分辨率原始照片，由3台不同的相机拍摄，并给出了相机的型号和参数。
 
-# Graph NN+
+# Graph NN
 
 https://mp.weixin.qq.com/s/s6E2vV1KrQDI4SeAnkYTKw
 
@@ -347,31 +357,3 @@ https://mp.weixin.qq.com/s/6vhFfSh2mveBiZXB1oZb1Q
 https://mp.weixin.qq.com/s/aGP8pcsCmEdjdCWVjA82Jg
 
 近期必读的5篇CVPR 2019图卷积网络相关论文和代码
-
-https://mp.weixin.qq.com/s/CpDZEqo14X_lCBh6i7feIA
-
-图卷积神经网络(GCN)文本分类详述
-
-https://mp.weixin.qq.com/s/XApSbi-Pg-AeYGkPN3fldg
-
-旷视研究院提出ML-GCN：基于图卷积网络的多标签图像识别模型
-
-https://mp.weixin.qq.com/s/49vnVOO0G_JvKrWcsN2_Ww
-
-关系图注意力网络-Relational Graph Attention Networks
-
-https://mp.weixin.qq.com/s/rvcj9-6KlBsVmF_CAsip2A
-
-超越标准GNN！DeepMind、谷歌提出图匹配网络
-
-https://mp.weixin.qq.com/s/LrGWJIdPdUNZ3jyC8tdE6w
-
-Graph Neural Network（GNN）综述
-
-https://mp.weixin.qq.com/s/t2kjxrcn6O9tbJ-IQELboQ
-
-高君宇：图神经网络在视频分类中的应用
-
-https://mp.weixin.qq.com/s/7DyPJ9LnqZ9XyAop33SxSw
-
-ST-GCN动作识别算法详解

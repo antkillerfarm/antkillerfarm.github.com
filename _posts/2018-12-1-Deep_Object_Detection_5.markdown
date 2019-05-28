@@ -144,7 +144,7 @@ TF版本
 
 ![](/images/img3/YOLOv3.jpg)
 
-YOLOv2从两个不同尺度的conv层输出中提取bbox，而YOLOv3从3个不同尺度的conv层输出中提取bbox。多尺度提取特征在U-NET、DenseNet中，早就广泛使用了。用到这里也很自然。
+YOLOv2从两个不同尺度的conv层输出中提取bbox，而YOLOv3从3个不同尺度的conv层输出中提取bbox。多尺度特征提取在U-NET、DenseNet中，早就广泛使用了，用到这里也很自然。
 
 ![](/images/img3/YOLOv3_2.jpg)
 

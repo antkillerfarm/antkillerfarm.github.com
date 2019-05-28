@@ -330,10 +330,6 @@ https://zhuanlan.zhihu.com/p/33445638
 
 传统不死：在CNN中学习和构建空间传播模块
 
-https://mp.weixin.qq.com/s/Uc0VFMmYoOFvH0c7IExKIg
-
-何恺明团队计算机视觉最新进展：从特征金字塔网络、Mask R-CNN到学习分割一切
-
 https://mp.weixin.qq.com/s/W2DqCjmF3oyPLKeETAO5XA
 
 CNN实现“读脑术”，成功解码人脑视觉活动，准确率超50%
@@ -353,10 +349,6 @@ https://mp.weixin.qq.com/s/f1uOimoA3a37e1BK1l1rvw
 https://mp.weixin.qq.com/s/DG4ofF78fIgiIMiJaxuIVA
 
 AAAI 2019 论文解读：卷积神经网络继续进步
-
-https://mp.weixin.qq.com/s/1TK4h7UoeVas1S1NfNgRag
-
-为什么深度学习图像分类的输入多是224*224
 
 https://mp.weixin.qq.com/s/ro1VgHkPPYuGP0eO8TNg9g
 

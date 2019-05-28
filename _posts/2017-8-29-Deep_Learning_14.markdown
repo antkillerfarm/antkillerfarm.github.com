@@ -266,6 +266,36 @@ https://mp.weixin.qq.com/s/QgYtfvsLGcfqLA98mp19tg
 
 KDD2018阿里巴巴论文揭示自家大规模视觉搜索算法
 
+# Graph NN+
+
+https://mp.weixin.qq.com/s/CpDZEqo14X_lCBh6i7feIA
+
+图卷积神经网络(GCN)文本分类详述
+
+https://mp.weixin.qq.com/s/XApSbi-Pg-AeYGkPN3fldg
+
+旷视研究院提出ML-GCN：基于图卷积网络的多标签图像识别模型
+
+https://mp.weixin.qq.com/s/49vnVOO0G_JvKrWcsN2_Ww
+
+关系图注意力网络-Relational Graph Attention Networks
+
+https://mp.weixin.qq.com/s/rvcj9-6KlBsVmF_CAsip2A
+
+超越标准GNN！DeepMind、谷歌提出图匹配网络
+
+https://mp.weixin.qq.com/s/LrGWJIdPdUNZ3jyC8tdE6w
+
+Graph Neural Network（GNN）综述
+
+https://mp.weixin.qq.com/s/t2kjxrcn6O9tbJ-IQELboQ
+
+高君宇：图神经网络在视频分类中的应用
+
+https://mp.weixin.qq.com/s/7DyPJ9LnqZ9XyAop33SxSw
+
+ST-GCN动作识别算法详解
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
