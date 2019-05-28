@@ -272,6 +272,10 @@ https://mp.weixin.qq.com/s/7Z8unW7Gsu0cf1hAwvjAxw
 
 何恺明等人提TensorMask框架：比肩Mask R-CNN，4D张量预测新突破
 
+https://mp.weixin.qq.com/s/SUZcgq6wOqct_CrWB0j1gA
+
+CVPR2019-实例分割Mask Scoring R-CNN
+
 # Fast Image Processing
 
 ![](/images/article/FIP.png)

@@ -270,6 +270,10 @@ https://mp.weixin.qq.com/s/TNHTvXmefRBlc6zfHW7C8A
 
 全局特征与局部特征的交响曲—ParseNet
 
+https://mp.weixin.qq.com/s/riS79dU5Zpzsl8vB64sPIg
+
+BRNN下的RGB-D分割—LSTM-CF
+
 # 深度ISP
 
 ## 数据集

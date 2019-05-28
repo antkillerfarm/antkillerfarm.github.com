@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十五）——Probabilistic Robotics, 推荐算法中的常用排序算法, 价值函数的近似表示
+title:  机器学习（三十五）——Probabilistic Robotics, 推荐算法中的常用排序算法
 category: ML 
 ---
 
@@ -142,6 +142,14 @@ https://mp.weixin.qq.com/s/kBGhHCxq6idOOSGoLX5Kaw
 
 手把手教你写卡尔曼滤波器
 
+https://mp.weixin.qq.com/s/x0twRIdONCp3-qjhFJuCEQ
+
+手把手教你写扩展卡尔曼滤波器
+
+https://mp.weixin.qq.com/s/Nta9ksUkAVoX8arBGm7qqg
+
+手把手教你实现多传感器融合技术
+
 https://zhuanlan.zhihu.com/p/41767489
 
 概率机器人——扩展卡尔曼滤波、无迹卡尔曼滤波
@@ -232,62 +240,76 @@ https://zhuanlan.zhihu.com/p/66514492
 
 ListwiseRank
 
-# 价值函数的近似表示
+# 深度强化学习参考资源
 
-之前的内容都是讲解一些强化学习的基础理论，这些知识只能解决一些中小规模的问题，很多价值函数需要用一张大表来存储，获取某一状态或行为价值的时候通常需要一个查表操作（Table Lookup），这对于那些状态空间或行为空间很大的问题几乎无法求解。
+https://mp.weixin.qq.com/s/S2eGPTON3XmfN830m4vaaA
 
-在实际应用中，对于状态和行为空间都比较大的情况下，精确获得各种v(S)和q(s,a)几乎是不可能的。这时候需要找到近似的函数，具体可以使用线性组合、神经网络以及其他方法来近似价值函数：
+腾讯AI Lab：可自适应于不同环境和任务的强化学习方法
 
-$$\hat v(s,w)\approx v_\pi(s)\\
-\hat q(s,a,w)\approx q_\pi(s,a)
-$$
+https://mp.weixin.qq.com/s/FtHJCXniVne2TGKfgCeS9w
 
-其中w是该近似函数的参数。
+Pieter Abbeel：深度强化学习加速方法
 
-## 线性函数
+https://mp.weixin.qq.com/s/Rvc5fXnbDPMJftp13xF4hg
 
-这里仍然从最简单的线性函数说起：
+强化学习应用金融投资组合优化
 
-$$\hat v(S,w)=x(S)^Tw=\sum_{j=1}^nx_j(S)w_j$$
+https://mp.weixin.qq.com/s/dlOFM7LuOF2npDP_EaITvg
 
-目标函数为：
+效率提高50倍！谷歌提出从图像中学习世界的强化学习新方法（PlaNet）
 
-$$J(w)=E_\pi[(v_\pi(S)-x(S)^Tw)^2]$$
+https://mp.weixin.qq.com/s/Maoy2feVWj5hpn4Ysh_47A
 
-更新公式为：
+你追踪，我逃跑：一种用于主动视觉跟踪的对抗博弈机制
 
-$$\Delta w=\alpha (v_\pi(S)-\hat v(S,w))x(S)$$
+https://mp.weixin.qq.com/s/4w3wIyy4H0UGeqOGhNcIbA
 
-上述公式都是基本的ML方法，这里不再赘述。既然是传统ML方法，自然少不了特征工程。
+强化学习落地！京东等发布综述《深度强化学习在搜索，推荐和在线广告中的应用》
 
-比如Table Lookup Features：
+https://mp.weixin.qq.com/s/F_GsfAJRFJ_o8PETqUL35g
 
-$$x^{table}(S)=\begin{pmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{pmatrix}$$
+谷歌大脑AI飞速解锁雅达利，训练不用两小时：预测能力“前所未有”
 
-则：
+https://mp.weixin.qq.com/s/6wPtb9Qdhr9FiMk15xrUsQ
 
-$$\hat v(S,w)=\begin{pmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{pmatrix}\begin{pmatrix} w_1 \\ \vdots \\ w_n \end{pmatrix}$$
+强化跨模态匹配和自监督模仿学习
 
-## Incremental Prediction Algorithms
+https://mp.weixin.qq.com/s/lU3_ONAIGDUv_AVv2Xn14w
 
-事实上，之前所列的公式都不能直接用于强化学习，因为公式里都有一个实际价值函数$$v_\pi(S)$$，或者是一个具体的数值，而强化学习没有监督数据，因此不能直接使用上述公式。
+仅需2小时学习，基于模型的强化学习方法可以在Atari上实现人类水平
 
-因此，我们需要找到一个替代$$v_\pi(S)$$的目标。
+https://mp.weixin.qq.com/s/TIWnnCmVZnFQNH9Fig5aTw
 
-|:--:|:--:|:--:|:--:|
-| MC | $$\Delta w=\alpha (\color{red}{G_t}-\hat v(S_t,w))\nabla_w \hat v(S_t,w)$$ | 有噪声、无偏采样 | 收敛至一个局部最优解 |
-| TD(0) | $$\Delta w=\alpha (\color{red}{R_{t+1}+\gamma\hat v(S_{t+1},w)}-\hat v(S_t,w))\nabla_w \hat v(S_t,w)$$ | 有噪声、有偏采样 | 收敛至全局最优解 |
-| TD($$\lambda$$) | $$\Delta w=\alpha (\color{red}{G_t^\lambda}-\hat v(S_t,w))\nabla_w \hat v(S_t,w)$$ | 有噪声、有偏采样 |  |
+DeepMind发布新奖励机制：让智能体不再“碰瓷”
 
-上面公式中，红色的部分就是目标函数。
+https://mp.weixin.qq.com/s/w0_g5FlC6vx2MRAhADPq2g
 
-对于$$\hat q(S,A,w)$$，我们也有类似的结论：
+深度强化学习在智能对话上的应用
 
-|:--:|:--:|:--:|:--:|
-| MC | $$\Delta w=\alpha (\color{red}{G_t}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、无偏采样 | 收敛至一个局部最优解 |
-| TD(0) | $$\Delta w=\alpha (\color{red}{R_{t+1}+\gamma\hat q(S_{t+1},A_{t+1},w)}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、有偏采样 | 收敛至全局最优解 |
-| TD($$\lambda$$) | $$\Delta w=\alpha (\color{red}{q_t^\lambda}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、有偏采样 |  |
+https://mp.weixin.qq.com/s/4SZ1NN5hUUcO_dSe4Bv0NQ
 
-## Batch Methods
+利用鲁棒控制实现深度强化学习驾驶策略的迁移
 
-前面所说的递增算法都是基于数据流的，经历一步，更新算法后，我们就不再使用这步的数据了，这种算法简单，但有时候不够高效。与之相反，批方法则是把一段时期内的数据集中起来，通过学习来使得参数能较好地符合这段时期内所有的数据。这里的训练数据集“块”相当于个体的一段经验。
+https://mp.weixin.qq.com/s/rwqtw5b2Nap5UPU9DWBXqg
+
+强化学习与文本生成
+
+https://mp.weixin.qq.com/s/VPCtsv2Q73qVcNAa4Xufag
+
+从虚拟到现实，北大等提出基于强化学习的端到端主动目标跟踪方法
+
+https://mp.weixin.qq.com/s/6Sj2QIELQvI28Rpp7A39Fg
+
+如何通过结构化智能体完成物理构造任务？
+
+https://mp.weixin.qq.com/s/Ctn1Wr68lph1UK_wjfCY1Q
+
+策略梯度搜索：不使用搜索树的在线规划和专家迭代
+
+https://mp.weixin.qq.com/s/78ir-Z4ch8_aVpjC6aCPGg
+
+DeepMind综述深度强化学习中的快与慢，智能体应该像人一样学习
+
+https://mp.weixin.qq.com/s/ij3bf61Pu7lrX0WijhbDeA
+
+骑驴找马：利用深度强化学习模型定位新物体
