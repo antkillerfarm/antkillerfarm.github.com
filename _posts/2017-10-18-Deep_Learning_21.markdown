@@ -207,6 +207,10 @@ http://www.cnblogs.com/vincent2012/archive/2012/10/13/2723152.html
 
 PSNR和SSIM
 
+https://mp.weixin.qq.com/s/hGum0fXrKUHCoaInVVS3rQ
+
+除了MSE loss，也可以试试用它：SSIM的原理和代码实现
+
 # DRCN
 
 DRCN（deeply-recursive convolutional network）是韩国首尔国立大学的作品。

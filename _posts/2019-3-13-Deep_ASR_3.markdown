@@ -305,3 +305,7 @@ OPPO数据中台之基石：基于Flink SQL构建实数据仓库
 https://mp.weixin.qq.com/s/tbnl4a8lhamCQ-KDRYYhVA
 
 Blink有何特别之处？菜鸟供应链场景最佳实践
+
+https://mp.weixin.qq.com/s/zIp_14_hgRRa0sKCW4Vejw
+
+腾讯基于Flink的实时流计算平台演进之路

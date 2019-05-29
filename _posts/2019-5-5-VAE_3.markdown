@@ -278,6 +278,10 @@ https://mp.weixin.qq.com/s/5G4KzhrJZ-GHPci_XSHheQ
 
 什么是解耦表示学习？使用beta-VAE模型探究医疗和金融问题
 
+https://mp.weixin.qq.com/s/0coPJFrW7anW7QuqjPBt3g
+
+深度生成模型在信号处理领域的应用
+
 # 通信协议
 
 https://mp.weixin.qq.com/s/_bWOYpZNjA4p7ZWM1J_4mw

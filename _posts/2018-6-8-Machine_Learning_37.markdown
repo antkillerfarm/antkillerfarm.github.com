@@ -362,6 +362,10 @@ https://mp.weixin.qq.com/s/lvbXtLfa6Z4h_5lCHKn_6A
 
 CTR点击率预估之经典模型回顾
 
+https://mp.weixin.qq.com/s/GowWRaE5mZoPVAPK6_AkrA
+
+如何构建可解释的推荐系统？
+
 # 强连通分量算法
 
 http://ishare.iask.sina.com.cn/f/34626295.html

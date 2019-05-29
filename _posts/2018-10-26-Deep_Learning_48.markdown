@@ -274,6 +274,10 @@ https://mp.weixin.qq.com/s/riS79dU5Zpzsl8vB64sPIg
 
 BRNN下的RGB-D分割—LSTM-CF
 
+https://zhuanlan.zhihu.com/p/67423280
+
+无监督域适应语义分割
+
 # 深度ISP
 
 ## 数据集
