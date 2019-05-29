@@ -228,6 +228,10 @@ https://mp.weixin.qq.com/s/c1QSGia52ICTc25i-C91Rg
 
 GAN跨界合成高保真音乐，Jeff Dean听了都陶醉
 
+https://mp.weixin.qq.com/s/f1W7PFLwkoJtVXb_7Rh3sw
+
+极大提升合成速度，百度提出首个全并行语音合成模型ParaNet
+
 # Flink
 
 Flink是一个流计算引擎。

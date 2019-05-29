@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（五）——YOLOv3, Tiny-YOLO, One-stage vs. Two-stage, Anchor-Free
+title:  深度目标检测（五）——YOLOv3, Tiny-YOLO, One-stage vs. Two-stage, FPN
 category: Deep Object Detection 
 ---
 
@@ -242,44 +242,18 @@ One-stage一步搞定分类和bbox问题。
 
 2.对bbox进行分类和细调。
 
-# Anchor-Free
+# FPN
 
-https://zhuanlan.zhihu.com/p/63024247
+FPN(Feature Pyramid Network)是Tsung-Yi Lin（Ross Girshick和何恺明小组成员）的作品。
 
-锚框：Anchor box综述
+论文：
 
-https://mp.weixin.qq.com/s/dYV446meJXtCQVFrLzWV8A
+《Feature Pyramid Networks for Object Detection》
 
-目标检测中Anchor的认识及理解
+![](/images/img3/FPN.png)
 
-https://mp.weixin.qq.com/s/WAx3Zazx9Pq7Lb3vKa510w
+- 图（a）为手工设计特征描述子（Sift,HoG,Harr,Gabor）时代的常见模型，即对不同尺寸的图片提取特征，以满足不同尺度目标的检测要求，提高模型性能；
 
-目标检测最新方向：推翻固有设置，不再一成不变Anchor
+- 图（b）则是深度卷积网的基本结构，通过不断的卷积抽取特征同时逐渐增加感受野，最后进行预测；
 
-https://mp.weixin.qq.com/s/DoN-vha1H-2lHhbFOaVS8w
-
-FoveaBox：目标检测新纪元，无Anchor时代来临！
-
-https://zhuanlan.zhihu.com/p/62198865
-
-最新的Anchor-Free目标检测模型FCOS，现已开源！
-
-https://mp.weixin.qq.com/s/N93TrVnUuvAgfcoHXevTHw
-
-FCOS: 最新的one-stage逐像素目标检测算法
-
-https://mp.weixin.qq.com/s/04h80ubIxjJbT9BxQy5FSw
-
-目标检测：Anchor-Free时代
-
-https://mp.weixin.qq.com/s/wWqdjsJ6U86lML0rSohz4A
-
-CenterNet：将目标视为点
-
-https://zhuanlan.zhihu.com/p/62789701
-
-中科院牛津华为诺亚提出CenterNet，one-stage detector可达47AP，已开源！
-
-https://zhuanlan.zhihu.com/p/66156431
-
-从Densebox到Dubox：更快、性能更优、更易部署的anchor-free目标检测
+- 图（c）则是融合深度网络的特征金字塔模型，众所周知深度网在经过每一次卷积后均会获得不同尺度的feature map，其天然就具有金字塔结构。但是由于网络的不断加深其图像分别率将不断下降，感受野将不断扩大，同时表征的特征也更叫抽象，其语义信息将更加丰富。SSD则采用图c结构，即不同层预测不同物体，让top层预测分辨率较高，尺寸较大的目标，bottom则预测尺寸较小的目标。然而对于小目标的检测虽然其分辨率提高了但是其语义化程度不够，因此其检测效果依旧不好。

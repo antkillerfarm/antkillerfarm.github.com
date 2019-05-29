@@ -6,6 +6,8 @@ category: resource
 
 # SLAM
 
+Simultaneous Localization And Mapping
+
 ## blog
 
 http://www.cnblogs.com/gaoxiang12/
@@ -169,6 +171,10 @@ https://mp.weixin.qq.com/s/TDANJJjDXBOsPEHeBWwN1g
 https://mp.weixin.qq.com/s/-DhgvHA8GbnnQ3Nh8n5LkQ
 
 OpenVSLAM：日本先进工业科技研究所新开源视觉SLAM框架
+
+https://mp.weixin.qq.com/s/KJSdq0-Y5ZWodC4IHAIngg
+
+从相机标定到SLAM，极简三维视觉六小时课程视频
 
 ## 张正友标定算法
 

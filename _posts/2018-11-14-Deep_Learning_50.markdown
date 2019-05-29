@@ -70,6 +70,10 @@ https://mp.weixin.qq.com/s/_FHXhfZ7TEpBzVf5kB0BsA
 
 为思想“层次”建模，递归推理让AI更聪明
 
+https://mp.weixin.qq.com/s/YkH3loJhdymo7AFTKt0fbg
+
+结合符号主义和深度学习，DeepMind提出新型端到端神经网络架构PrediNet
+
 # LSM
 
 liquid state machine (LSM)

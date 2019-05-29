@@ -126,6 +126,10 @@ https://mp.weixin.qq.com/s/muS68_vtXTrIGd1JNmS50A
 
 揭秘！现代IM系统的消息架构如何设计？
 
+https://mp.weixin.qq.com/s/mhJ2Q30APlCP6_AkV6gG3w
+
+Uber如何为大规模Apache Hadoop表实现一致性数据分区？
+
 # 知名数据集
 
 ## CV（续）

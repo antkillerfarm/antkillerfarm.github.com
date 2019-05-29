@@ -379,3 +379,41 @@ https://mp.weixin.qq.com/s/rOj_J1zNYf-Vj9tqLG5KOQ
 https://zhuanlan.zhihu.com/p/66389797
 
 虚拟对抗训练：一种新颖的半监督学习正则化方法
+
+# 目标检测进阶
+
+https://mp.weixin.qq.com/s/wR5jUHBJHWFm8UTsobKDqw
+
+目标检测中的Consistent Optimization
+
+https://mp.weixin.qq.com/s/j-arl6qiD6mei4crfQPrgw
+
+《深度学习显著目标检测综述》
+
+https://mp.weixin.qq.com/s/ts4WFnuN4cHLfUh8--96Kw
+
+Libra R-CNN：全面平衡的目标检测器
+
+https://mp.weixin.qq.com/s/groq55Cbts272k1mfhJwaQ
+
+超越bounding box的代表性点集：视觉物体表示的新方法
+
+https://mp.weixin.qq.com/s/BXwL33qOf3f7BtJvHsi23Q
+
+目标检测：Segmentation is All You Need？
+
+https://mp.weixin.qq.com/s/2PLp2xNfhkHB3fPQr5Ts6g
+
+密歇根大学40页《20年目标检测综述》最新论文，带你全面了解目标检测方法
+
+https://mp.weixin.qq.com/s/HmUhlw90b2aTsoEwBdYbdQ
+
+目标检测二十年技术综述
+
+https://www.zhihu.com/question/270143544
+
+目标检测中，不同物体之间的距离非常接近如何解决？
+
+https://mp.weixin.qq.com/s/b4s8Te29DyS71xwQU789pQ
+
+实体零售场景下密集商品的精确探测

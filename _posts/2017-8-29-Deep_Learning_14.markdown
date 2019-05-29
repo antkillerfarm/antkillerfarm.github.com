@@ -268,6 +268,18 @@ KDD2018阿里巴巴论文揭示自家大规模视觉搜索算法
 
 # Graph NN+
 
+https://mp.weixin.qq.com/s/s6E2vV1KrQDI4SeAnkYTKw
+
+图神经网络将成AI下一拐点！MIT斯坦福一文综述GNN到底有多强
+
+https://mp.weixin.qq.com/s/6vhFfSh2mveBiZXB1oZb1Q
+
+图分类：结合胶囊网络Capsule和图卷积GCN
+
+https://mp.weixin.qq.com/s/aGP8pcsCmEdjdCWVjA82Jg
+
+近期必读的5篇CVPR 2019图卷积网络相关论文和代码
+
 https://mp.weixin.qq.com/s/CpDZEqo14X_lCBh6i7feIA
 
 图卷积神经网络(GCN)文本分类详述

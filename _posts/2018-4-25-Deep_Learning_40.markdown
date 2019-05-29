@@ -10,13 +10,15 @@ category: DL
 
 此外，对于一些较大的模型（如VGG），即使机器再给力，单位时间内能处理的图像数量，往往也无法达到实际应用的要求。这点在自动驾驶和视频处理领域显得尤为突出。
 
-这里首先提到的是斯坦福的相关课程：
+课程：
 
 https://cs217.github.io/
 
-CS 217: Hardware Accelerators for Machine Learning
+CS 217: Hardware Accelerators for Machine 
 
-其次是韩松的两篇论文：
+## Network Pruning
+
+首先是韩松的两篇论文：
 
 《Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding》
 
@@ -32,11 +34,13 @@ CS 217: Hardware Accelerators for Machine Learning
 
 韩松论文的中心思想如上图所示。简单来说，就是去掉原有模型的一些不重要的参数、结点和层。
 
-参数的选择，相对比较简单。参数的绝对值越接近零，它对结果的贡献就越小。这一点和稀疏矩阵有些类似。
+参数的选择，相对比较简单。参数的绝对值越接近零，它对结果的贡献就越小。这一点和稀疏矩阵有些类似。这种方法一般被称为Weight Pruning。
 
-结点和层的选择，相对麻烦一些，需要通过算法得到不重要的层。
+结点和层的选择，相对麻烦一些，需要通过算法得到不重要的层。删除结点一般被称为Filter Pruning，而删除层则相应的被称作Layer Pruning。
 
 比如可以逐个将每一层50%的参数置零，查看模型性能。对性能影响不大的层就是不重要的。
+
+Weight Pruning需要相关硬件支持跳零操作才能真正加速运算，而Filter/Layer Pruning则无需特殊硬件支持。
 
 虽然这些参数、结点和层相对不重要，但是去掉之后，仍然会对准确度有所影响。这时可以对精简之后的模型，用训练样本进行re-train，通过残差对模型进行一定程度的修正，以提高准确度。
 
@@ -50,7 +54,11 @@ https://www.zhihu.com/question/62068158
 
 除此之外，矩阵量化、Kronecker内积、霍夫曼编码、模型剪枝等也是常见的模型压缩方法。
 
-当然最系统的做法还属Geoffrey Hinton的论文：
+## 知识蒸馏
+
+知识蒸馏是另一大类的模型压缩方法。
+
+Geoffrey Hinton的论文：
 
 《Distilling the Knowledge in a Neural Network》
 
@@ -307,19 +315,3 @@ https://mp.weixin.qq.com/s/NJzGR-tY_WWeccbdshHckA
 https://mp.weixin.qq.com/s/ccFccLb2UTyFyMwFPjsDaA
 
 让CNN跑得更快，腾讯优图提出全局和动态过滤器剪枝
-
-https://mp.weixin.qq.com/s/vswtn3D1-VZZlyKLJmHc7A
-
-纪荣嵘：深度神经网络压缩及应用
-
-https://mp.weixin.qq.com/s/cSYCT1I1asaSCIc5Hgu0Jw
-
-计算成本降低35倍！谷歌发布手机端自动设计神经网络MnasNet
-
-https://zhuanlan.zhihu.com/p/42474017
-
-MnasNet：终端轻量化模型新思路
-
-https://mp.weixin.qq.com/s/p_qdKcQwQ8y_JUw3gQUEnA
-
-谷歌大脑用强化学习为移动设备量身定做最好最快的CNN模型

@@ -6,6 +6,22 @@ category: DL
 
 # 模型压缩与加速
 
+https://mp.weixin.qq.com/s/vswtn3D1-VZZlyKLJmHc7A
+
+纪荣嵘：深度神经网络压缩及应用
+
+https://mp.weixin.qq.com/s/cSYCT1I1asaSCIc5Hgu0Jw
+
+计算成本降低35倍！谷歌发布手机端自动设计神经网络MnasNet
+
+https://zhuanlan.zhihu.com/p/42474017
+
+MnasNet：终端轻量化模型新思路
+
+https://mp.weixin.qq.com/s/p_qdKcQwQ8y_JUw3gQUEnA
+
+谷歌大脑用强化学习为移动设备量身定做最好最快的CNN模型
+
 https://mp.weixin.qq.com/s/OyEIcS5o6kWUu2UzuWZi3g
 
 这么Deep且又轻量的Network，实时目标检测
@@ -173,6 +189,10 @@ https://mp.weixin.qq.com/s/_C5AvD3YmRH2dmBjbEZFrQ
 https://zhuanlan.zhihu.com/p/65348860
 
 南邮提出实时语义分割的轻量级网络：LEDNET
+
+https://zhuanlan.zhihu.com/p/67272163
+
+百度提出关于网络压缩和加速的新剪枝算法
 
 # Mask R-CNN
 
@@ -343,17 +363,3 @@ $$\mathcal{l(K,B)}=\sum_i\frac{1}{N_i}\|\hat f (I_i;\mathcal{K,B})-f(I_i)\|^2$$
 http://mmlab.science.unitn.it/RAISE/
 
 RAISE数据集包含了8156张高分辨率原始照片，由3台不同的相机拍摄，并给出了相机的型号和参数。
-
-# Graph NN
-
-https://mp.weixin.qq.com/s/s6E2vV1KrQDI4SeAnkYTKw
-
-图神经网络将成AI下一拐点！MIT斯坦福一文综述GNN到底有多强
-
-https://mp.weixin.qq.com/s/6vhFfSh2mveBiZXB1oZb1Q
-
-图分类：结合胶囊网络Capsule和图卷积GCN
-
-https://mp.weixin.qq.com/s/aGP8pcsCmEdjdCWVjA82Jg
-
-近期必读的5篇CVPR 2019图卷积网络相关论文和代码

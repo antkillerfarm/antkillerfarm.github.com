@@ -1,30 +1,20 @@
 ---
 layout: post
-title:  深度目标检测（六）——其它目标检测网络, 目标检测进阶
+title:  深度目标检测（六）——Anchor-Free, 其它目标检测网络, 目标检测进阶
 category: Deep Object Detection 
 ---
 
-# 其它目标检测网络
+# FPN（续）
 
-## A-Fast-RCNN
+- 图（d）则是FPN的网络结构，该网络结构大体上分为三个部分，即buttom-up自底向上的特征抽取，自顶向下的upsampling，以及侧边融合通道（lateral coonnection）。通过这三个结构网络的每一层均会具有较强的语义信息，且能很好的满足速度和内存的要求。
 
-A-Fast-RCNN首次将对抗学习引入到了目标检测领域，idea是非常创新的。
+![](/images/img3/FPN.jpg)
 
-http://blog.csdn.net/jesse_mx/article/details/72955981
+上图是加了FPN之后的ResNet，其中的虚线框表示的是通道融合的方法。U-Net采用了concat模式融合下采样和上采样通道，而这里则是沿用了ResNet的融合方法：Tensor Add。
 
-A-Fast-RCNN论文笔记
+![](/images/img3/FPN_2.jpg)
 
-## FPN
-
-FPN(Feature Pyramid Network)是Tsung-Yi Lin（Ross Girshick和何恺明小组成员）的作品。
-
-论文：
-
-《Feature Pyramid Networks for Object Detection》
-
-![](/images/img3/FPN.png)
-
-
+上图是Faster R-CNN+FPN。原始的Faster R-CNN的RoI pooling是从同一个feature map中获得ROI，而这里是根据目标尺度大小，从不同尺度的feature map中获得ROI。
 
 参考：
 
@@ -40,13 +30,77 @@ https://zhuanlan.zhihu.com/p/58603276
 
 FPN-目标检测
 
+# Anchor-Free
+
+https://zhuanlan.zhihu.com/p/63024247
+
+锚框：Anchor box综述
+
+https://mp.weixin.qq.com/s/dYV446meJXtCQVFrLzWV8A
+
+目标检测中Anchor的认识及理解
+
+https://mp.weixin.qq.com/s/WAx3Zazx9Pq7Lb3vKa510w
+
+目标检测最新方向：推翻固有设置，不再一成不变Anchor
+
+https://zhuanlan.zhihu.com/p/64563186
+
+Anchor free深度学习的目标检测方法
+
+https://mp.weixin.qq.com/s/DoN-vha1H-2lHhbFOaVS8w
+
+FoveaBox：目标检测新纪元，无Anchor时代来临！
+
+https://zhuanlan.zhihu.com/p/62198865
+
+最新的Anchor-Free目标检测模型FCOS，现已开源！
+
+https://mp.weixin.qq.com/s/N93TrVnUuvAgfcoHXevTHw
+
+FCOS: 最新的one-stage逐像素目标检测算法
+
+https://mp.weixin.qq.com/s/04h80ubIxjJbT9BxQy5FSw
+
+目标检测：Anchor-Free时代
+
+https://mp.weixin.qq.com/s/wWqdjsJ6U86lML0rSohz4A
+
+CenterNet：将目标视为点
+
+https://zhuanlan.zhihu.com/p/62789701
+
+中科院牛津华为诺亚提出CenterNet，one-stage detector可达47AP，已开源！
+
+https://zhuanlan.zhihu.com/p/66156431
+
+从Densebox到Dubox：更快、性能更优、更易部署的anchor-free目标检测
+
+# 其它目标检测网络
+
+## A-Fast-RCNN
+
+A-Fast-RCNN首次将对抗学习引入到了目标检测领域，idea是非常创新的。
+
+http://blog.csdn.net/jesse_mx/article/details/72955981
+
+A-Fast-RCNN论文笔记
+
 ## R-FCN
+
+R-FCN是何恺明/孙剑小组的Jifeng Dai于2016年提出的。
 
 论文：
 
 《R-FCN: Object Detection via Region-based Fully Convolutional Networks》
 
+代码：
+
+https://github.com/PureDiors/pytorch_RFCN
+
 FCN在目标检测领域的应用。
+
+参考：
 
 http://blog.csdn.net/zijin0802034/article/details/53411041
 
@@ -246,7 +300,7 @@ https://mp.weixin.qq.com/s/oxStDMh90jB7_EY4vqja2w
 
 https://zhuanlan.zhihu.com/p/55972055
 
-SimpleDet: 一套简单通用的目标检测与物体识别框架
+SimpleDet:一套简单通用的目标检测与物体识别框架
 
 https://mp.weixin.qq.com/s/Sl958JkcJjy-HW9_c-SH4g
 
@@ -307,55 +361,3 @@ https://mp.weixin.qq.com/s/psXJNlEawZlQ-ZdktDpjOw
 https://mp.weixin.qq.com/s/Pl8HABuVN27CZv-lvGROTw
 
 基于深度学习的目标检测算法近5年发展历史
-
-https://mp.weixin.qq.com/s/apLEAMshqd3O8nU8Q0Wycg
-
-李祥泰：Context modeling in semantic segmentation
-
-https://mp.weixin.qq.com/s/svqygu4nFkW4ci7dYMnKsw
-
-小目标检测的数据增广秘籍
-
-https://mp.weixin.qq.com/s/bzgMWR2kzAI9NeXEY92GmA
-
-目标检测任务的优化策略tricks
-
-https://mp.weixin.qq.com/s/0_ap6CsBlz4pvx21c57-ag
-
-旷视研究院提出新型损失函数：改善边界框模糊问题
-
-https://mp.weixin.qq.com/s/wR5jUHBJHWFm8UTsobKDqw
-
-目标检测中的Consistent Optimization
-
-https://mp.weixin.qq.com/s/j-arl6qiD6mei4crfQPrgw
-
-《深度学习显著目标检测综述》
-
-https://mp.weixin.qq.com/s/ts4WFnuN4cHLfUh8--96Kw
-
-Libra R-CNN：全面平衡的目标检测器
-
-https://mp.weixin.qq.com/s/groq55Cbts272k1mfhJwaQ
-
-超越bounding box的代表性点集：视觉物体表示的新方法
-
-https://mp.weixin.qq.com/s/BXwL33qOf3f7BtJvHsi23Q
-
-目标检测：Segmentation is All You Need？
-
-https://mp.weixin.qq.com/s/2PLp2xNfhkHB3fPQr5Ts6g
-
-密歇根大学40页《20年目标检测综述》最新论文，带你全面了解目标检测方法
-
-https://mp.weixin.qq.com/s/HmUhlw90b2aTsoEwBdYbdQ
-
-目标检测二十年技术综述
-
-https://www.zhihu.com/question/270143544
-
-目标检测中，不同物体之间的距离非常接近如何解决？
-
-https://mp.weixin.qq.com/s/b4s8Te29DyS71xwQU789pQ
-
-实体零售场景下密集商品的精确探测

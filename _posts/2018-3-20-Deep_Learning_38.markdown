@@ -363,3 +363,21 @@ https://mp.weixin.qq.com/s/L-1gkElxsMtT369fgJl86Q
 https://zhuanlan.zhihu.com/p/57086099
 
 细粒度识别之Local Attention Network
+
+# 目标检测进阶+
+
+https://mp.weixin.qq.com/s/apLEAMshqd3O8nU8Q0Wycg
+
+李祥泰：Context modeling in semantic segmentation
+
+https://mp.weixin.qq.com/s/svqygu4nFkW4ci7dYMnKsw
+
+小目标检测的数据增广秘籍
+
+https://mp.weixin.qq.com/s/bzgMWR2kzAI9NeXEY92GmA
+
+目标检测任务的优化策略tricks
+
+https://mp.weixin.qq.com/s/0_ap6CsBlz4pvx21c57-ag
+
+旷视研究院提出新型损失函数：改善边界框模糊问题
