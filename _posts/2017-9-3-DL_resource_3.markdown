@@ -389,3 +389,7 @@ https://mp.weixin.qq.com/s/QeuQZiC1hKS5cqs59r9KNQ
 https://zhuanlan.zhihu.com/p/65745852
 
 动量迭代式对抗噪声生成方法
+
+https://mp.weixin.qq.com/s/hvbou_OuTQ6UBVOqOC9JlQ
+
+如何引诱分类器犯错？南大周志华等提出用自编码器生成恶意训练数据

@@ -345,7 +345,7 @@ https://mp.weixin.qq.com/s/xXbyBvxM2HOzHedztpu1Wg
 
 Keras的可视化训练
 
-# AI工具
+# AI工具+
 
 https://mp.weixin.qq.com/s/hkcVhyqiDW--F3QxucgEcA
 

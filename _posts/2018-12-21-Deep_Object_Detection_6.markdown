@@ -98,6 +98,8 @@ R-FCN是何恺明/孙剑小组的Jifeng Dai于2016年提出的。
 
 https://github.com/PureDiors/pytorch_RFCN
 
+![](/images/img3/R-FCN.png)
+
 FCN在目标检测领域的应用。
 
 参考：

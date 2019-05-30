@@ -368,6 +368,10 @@ https://zhuanlan.zhihu.com/p/61761901
 
 LearningToPaint：一个绘画AI
 
+https://mp.weixin.qq.com/s/JJ2V9coeDI7WvWyDZNlVqA
+
+你的老婆你做主：画风自定义，内容自定义，南加大AI助你走上人生巅峰
+
 # ESN
 
 Echo State Network

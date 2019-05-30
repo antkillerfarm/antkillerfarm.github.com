@@ -372,6 +372,18 @@ https://github.com/minad/gridslides
 
 `sudo apt install biber texlive-latex-extra texlive-fonts-extra texlive-extra-utils`
 
+## Mathpix Snip
+
+Mathpix Snip可以用来将图片变成Latex公式。
+
+官网：
+
+https://mathpix.com/
+
+安装：
+
+`sudo snap install mathpix-snipping-tool`
+
 ## 参考
 
 https://www.zhihu.com/question/40763253

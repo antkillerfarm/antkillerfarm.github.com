@@ -84,6 +84,46 @@ https://mp.weixin.qq.com/s/cr0BJLkyN2kW35-w1pebGQ
 
 学习在黑暗中看世界（Learning to See in the Dark）
 
+## 花式U-Net
+
+本节主要摘抄自：
+
+https://zhuanlan.zhihu.com/p/57530767
+
+U-Net系列网络简介
+
+### 3D U-Net
+
+论文：
+
+《3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation》
+
+![](/images/img3/U-Net_3D.png)
+
+这个算是3D领域的base-line了，而且效果还不错。好多新网络还未必比得过它。
+
+### ResUnet
+
+论文：
+
+《Road Extraction by Deep Residual U-Net》
+
+![](/images/img3/ResUnet.png)
+
+
+
+### DenseUnet
+
+论文：
+
+《Fully Dense UNet for 2D Sparse Photoacoustic Tomography Artifact Removal》
+
+![](/images/img3/DenseUnet.png)
+
+
+
+![](/images/img3/DenseUnet_2.png)
+
 ## 参考
 
 https://mp.weixin.qq.com/s/cANlqQAI-A2mC9vnd3imQA

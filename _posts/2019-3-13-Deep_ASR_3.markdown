@@ -232,6 +232,10 @@ https://mp.weixin.qq.com/s/f1W7PFLwkoJtVXb_7Rh3sw
 
 极大提升合成速度，百度提出首个全并行语音合成模型ParaNet
 
+https://mp.weixin.qq.com/s/aHupAjPNFdUdaG9Uof_obQ
+
+速度提升270倍！微软和浙大联合推出全新语音合成系统FastSpeech
+
 # Flink
 
 Flink是一个流计算引擎。
