@@ -242,6 +242,10 @@ One-stage一步搞定分类和bbox问题。
 
 2.对bbox进行分类和细调。
 
+论文：
+
+《Speed/accuracy trade-offs for modern convolutional object detectors》
+
 # FPN
 
 FPN(Feature Pyramid Network)是Tsung-Yi Lin（Ross Girshick和何恺明小组成员）的作品。

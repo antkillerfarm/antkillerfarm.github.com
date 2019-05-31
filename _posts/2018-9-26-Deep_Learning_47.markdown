@@ -130,6 +130,10 @@ https://mp.weixin.qq.com/s/yaAuVpuhSGabOswKnv9q5Q
 
 脉冲神经网络与小样本学习
 
+https://mp.weixin.qq.com/s/m7UHX3XL5sC3oBdu3KoyOg
+
+脉冲神经网络（SNN）概述
+
 # BERT
 
 论文：

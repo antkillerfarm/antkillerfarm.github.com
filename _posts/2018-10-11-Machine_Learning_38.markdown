@@ -238,6 +238,10 @@ https://mp.weixin.qq.com/s/S0vUBFCfizjVe_L4SIrGqQ
 
 网络新闻真假难辨？机器学习来助你一臂之力
 
+https://mp.weixin.qq.com/s/2aKc4yM0b52X-SViGQycwA
+
+大规模网络的社区检测和排序问题综述
+
 # 特征工程
 
 https://mp.weixin.qq.com/s/ibiElLIgrT3wYx3tDYMMTw

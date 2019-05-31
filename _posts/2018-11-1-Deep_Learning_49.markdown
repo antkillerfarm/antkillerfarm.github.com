@@ -194,6 +194,10 @@ https://zhuanlan.zhihu.com/p/67272163
 
 百度提出关于网络压缩和加速的新剪枝算法
 
+https://mp.weixin.qq.com/s/on1YdDexq5ICZL70mvikyw
+
+谷歌大脑提出EfficientNet平衡模型扩展三个维度，取得精度-效率的最大化！
+
 # Mask R-CNN
 
 Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的网络。它是何恺明2017年的新作。

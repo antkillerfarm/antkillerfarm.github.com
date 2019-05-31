@@ -186,7 +186,7 @@ https://mp.weixin.qq.com/s/GFO84scpniELyqLdf8HzOQ
 
 https://zhuanlan.zhihu.com/p/36297534
 
-x = cos x 的解析形式
+x=cos(x)的解析形式
 
 https://mp.weixin.qq.com/s/5PR4OUubguj0WLB85aa9Mg
 
@@ -269,6 +269,10 @@ https://mp.weixin.qq.com/s/Kake5sQm79L2j_uDqKfznQ
 https://zhuanlan.zhihu.com/p/66319869
 
 29.97Hz这种奇葩帧率是怎么来的？
+
+https://mp.weixin.qq.com/s/mKyT376nbKNyxouuPYpSBA
+
+“千万豪车”掘进地下城，“基建狂魔”如何打造“钢铁穿山甲”？
 
 ## LSM (Log Structured Merge)
 
@@ -389,6 +393,10 @@ https://mp.weixin.qq.com/s/MMzvZA55Xb2sOA7rJiXiEw
 https://mp.weixin.qq.com/s/CqvranTh9dawJW5DP-oHpw
 
 手把手教你将矩阵画成张量网络图
+
+https://mp.weixin.qq.com/s/SWpgNMDIRfRugWBhMyGrTQ
+
+交互式《几何原本》再现江湖
 
 ## howmuch.net
 

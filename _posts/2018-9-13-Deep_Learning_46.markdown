@@ -264,6 +264,10 @@ https://mp.weixin.qq.com/s/Buv6m66kj3RjKq0LjqNAiA
 
 mathAI手写拍照自动能解高数题，还不快试试？
 
+https://mp.weixin.qq.com/s/gKsfsRxsbfXGOsSqeQEDbw
+
+CVPR2019：文本检测算法综述
+
 # 问答系统
 
 GA-Reader

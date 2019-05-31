@@ -98,7 +98,15 @@ R-FCN是何恺明/孙剑小组的Jifeng Dai于2016年提出的。
 
 https://github.com/PureDiors/pytorch_RFCN
 
+faster R-CNN对卷积层做了共享（RPN和Fast R-CNN）,但是经过RoI pooling后，却没有共享，如果一副图片有500个region proposal，那么就得分别进行500次卷积，这样就太浪费时间了，于是作者猜想，能不能把RoI后面的几层建立共享卷积，只对一个feature map进行一次卷积？
+
+![](/images/img3/R-FCN_2.png)
+
+
+
 ![](/images/img3/R-FCN.png)
+
+
 
 FCN在目标检测领域的应用。
 

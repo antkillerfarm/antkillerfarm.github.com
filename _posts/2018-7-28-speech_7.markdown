@@ -200,6 +200,10 @@ https://blog.csdn.net/twinkle_star1314/article/details/55050138
 
 声纹识别2
 
+https://zhuanlan.zhihu.com/p/67088235
+
+声纹识别5大核心知识点
+
 https://zhuanlan.zhihu.com/p/24425179
 
 End-to-End Voiceprint

@@ -200,6 +200,10 @@ https://mp.weixin.qq.com/s/2Qm8TAFCLTQqrpR4dTN6Qg
 
 2019搜狐校园算法大赛-rank5
 
+https://mp.weixin.qq.com/s/Q-bXkJzFgshkXrTMB5dh0w
+
+抖音短视频推荐大赛小规模赛道Top8模型代码开源
+
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA

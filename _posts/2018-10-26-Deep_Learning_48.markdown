@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十八）——语义分割进阶, 深度ISP, AI可解释性
+title:  深度学习（四十八）——语义分割进阶
 category: DL 
 ---
 
@@ -110,8 +110,6 @@ U-Net系列网络简介
 
 ![](/images/img3/ResUnet.png)
 
-
-
 ### DenseUnet
 
 论文：
@@ -120,9 +118,57 @@ U-Net系列网络简介
 
 ![](/images/img3/DenseUnet.png)
 
-
-
 ![](/images/img3/DenseUnet_2.png)
+
+### MultiResUNet
+
+论文：
+
+《MultiResUNet : Rethinking the U-Net Architecture for Multimodal Biomedical Image Segmentation》
+
+ResUnet和DenseUnet基本属于排列组合式的灌水。下面的MultiResUNet还是有些干货的。
+
+![](/images/img3/MultiResUNet.png)
+
+上图是该论文提出的MultiRes block结构。
+
+![](/images/img3/MultiResUNet_2.png)
+
+还有下采样和上采样之间的Res path结构。
+
+![](/images/img3/MultiResUNet_3.png)
+
+这是最终的网络结构图。基本上把concat和add的各种组合都撸了一遍。
+
+### R2U-Net
+
+论文：
+
+《Recurrent Residual Convolutional Neural Network based on U-Net (R2U-Net) for Medical Image Segmentation》
+
+![](/images/img3/R2U-Net.png)
+
+注意，这里的Recurrent Convolutional是Convolutional的一个变种，和RNN没有关系。
+
+### Attention U-Net
+
+论文：
+
+《Attention U-Net: Learning Where to Look for the Pancreas》
+
+![](/images/img3/AttU-Net.png)
+
+Attention也难逃毒手。
+
+### Attention R2U-Net
+
+![](/images/img3/AttR2U-Net.png)
+
+继续组合。不过作者还是有廉耻的，这个没有写论文灌水。
+
+R2U-Net, Attention U-Net, Attention R2U-Net的代码都在这里：
+
+https://github.com/LeeJunHyun/Image_Segmentation
 
 ## 参考
 
@@ -317,107 +363,3 @@ BRNN下的RGB-D分割—LSTM-CF
 https://zhuanlan.zhihu.com/p/67423280
 
 无监督域适应语义分割
-
-# 深度ISP
-
-## 数据集
-
-### HDR+
-
-HDR+是一个使用连拍摄影生成更好的图像的数据集。
-
-官网：
-
-http://hdrplusdata.org
-
-参考：
-
-https://zhuanlan.zhihu.com/p/34391353
-
-机器感知Google推出HDR+连拍摄影数据集
-
-### HDRNet
-
-HDRNet是一个Image Enhancement方面的数据集。
-
-官网：
-
-https://groups.csail.mit.edu/graphics/hdrnet/
-
-## 参考
-
-https://mp.weixin.qq.com/s/wA85XFQXeypuoqFnmN2P4g
-
-降噪的新时代
-
-https://mp.weixin.qq.com/s/919VEvennHEG3iXKkMZoQQ
-
-不止是去噪---从去噪看AI ISP的趋势
-
-https://mp.weixin.qq.com/s/1HA6XKnWpqVd8k7IIfzB7w
-
-利用卷积自编码器对图片进行降噪
-
-https://zhuanlan.zhihu.com/p/39512000
-
-Noise2Noise：图像降噪，无需干净样本
-
-https://mp.weixin.qq.com/s/_tvOQPvybqmvLF19kHcbFg
-
-北大开源ECCV2018深度去雨算法：RESCAN
-
-https://mp.weixin.qq.com/s/Wdxkvlz4nLbJS_gWqHwMjw
-
-无需额外硬件，全卷积网络让机器学习学会夜视能力
-
-https://mp.weixin.qq.com/s/iH7gbRn4opLsWgKWoVFpBA
-
-腾讯优图&港科大提出较大前景运动下的深度高动态范围成像
-
-https://mp.weixin.qq.com/s/WXVZkqCGlj6ym5YrSZS3Vg
-
-谷歌普林斯顿提出首个端到端立体双目系统深度学习方案
-
-https://mp.weixin.qq.com/s/NlYgA-A43q4C155kRdWPAQ
-
-论文复现：谷歌实时端到端双目系统深度学习网络stereonet
-
-https://mp.weixin.qq.com/s/9yfTO2jHz69-k1MsUGIM0Q
-
-双目立体放大！谷歌刚刚开源的这篇论文可能会成为手机双摄的新玩法
-
-https://mp.weixin.qq.com/s/z87Wp3yutq1l5bYfJS2YIA
-
-谷歌新研究用深度学习合成运动模糊效果，手抖也能拍出摄影师级照片
-
-https://mp.weixin.qq.com/s/B5XNmFlSnjEh2xAXB42pHQ
-
-超十亿样本炼就的CNN助力图像质量增强，Adobe推出新功能“增强细节”
-
-https://mp.weixin.qq.com/s/MEjZT_41w2cRqIYDi8a1rw
-
-腾讯优图CVPR中标论文：不靠硬件靠算法，暗光拍照也清晰
-
-# AI可解释性
-
-XAI(Explainable Artificial Intelligence)
-
-https://github.com/pbiecek/xai_resources
-
-AI可解释性资源汇总
-
-https://mp.weixin.qq.com/s/XVl6voP5cwdC7DcvTMQvVQ
-
-机器学习可解释性工具箱XAI
-
-https://github.com/jphall663/awesome-machine-learning-interpretability
-
-最全的机器学习可解释性资料
-
-https://mp.weixin.qq.com/s/OV4vXu7TAuyV7qU9BAMF6g
-
-机器学习模型的“可解释性”到底有多重要？
-
-https://mp.weixin.qq.com/s/33VQNVvb7JGlk10Jc3mmeg
-
-从可视化到新模型：纵览深度学习的视觉可解释性

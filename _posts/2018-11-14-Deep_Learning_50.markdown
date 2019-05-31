@@ -192,7 +192,11 @@ OpenAI提出Sparse Transformer，文本、图像、声音都能预测，序列�
 
 https://mp.weixin.qq.com/s/cpbIHt-rBu48uGifg_lPfg
 
-Gaussian Transformer: 一种自然语言推理的轻量方法
+Gaussian Transformer：一种自然语言推理的轻量方法
+
+https://mp.weixin.qq.com/s/1y8jTqCcI7HkMA3qXtqdIg
+
+阿里首次将Transformer用于淘宝电商推荐！效果超越深度兴趣网络DIN和谷歌WDL
 
 # Attention进阶
 
