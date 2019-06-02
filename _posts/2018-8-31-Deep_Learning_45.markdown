@@ -371,3 +371,7 @@ https://mp.weixin.qq.com/s/PIq78vhNQxAKntnZilL4pQ
 https://mp.weixin.qq.com/s/G55dxHfMYxWzjz4_8YnUaw
 
 深度学习超分辨率最新综述：一文道尽技术分类与效果评测
+
+https://zhuanlan.zhihu.com/p/67613641
+
+基于多级神经纹理迁移的图像超分辨方法 (Adobe Research)

@@ -259,14 +259,6 @@ https://mp.weixin.qq.com/s/wJAt-RqmsoyECLGgdlH6RA
 
 基于数据的分布式鲁棒优化算法及其应用
 
-## Ceres Solver
-
-Ceres Solver是一个非线性优化库。和上面提到的那些软件不同，Ceres Solver主要应用于工程界。Gauss最早使用最小二乘法估计谷神星（Ceres）的位置，故名。
-
-官网：
-
-http://ceres-solver.org/
-
 # 微服务
 
 ![](/images/img2/FaaS.png)

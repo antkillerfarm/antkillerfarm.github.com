@@ -38,6 +38,10 @@ https://mp.weixin.qq.com/s/TEtZbh0NHSemgWQlrgo2Vw
 
 傅里叶变换还能这么玩
 
+https://bl.ocks.org/jinroh/7524988
+
+Fourier series visualisation with d3.js
+
 # DFT
 
 FT针对的是连续信号，但数字信号处理只能处理离散数据，于是就有了Discrete-time Fourier transform（DTFT）：

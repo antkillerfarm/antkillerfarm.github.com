@@ -240,6 +240,10 @@ https://mp.weixin.qq.com/s/xsoS3tvOh78rkbI0UUIkPQ
 
 2:0！Dota2世界冠军OG被OpenAI碾压，全程人类只推掉两座外塔
 
+https://mp.weixin.qq.com/s/ZkblK9TfBHscX9s0JMBwFA
+
+DeepMind登上Science：“和AI相比，人类都是猪队友”，团战称霸雷神之锤3
+
 ## AI与安全
 
 https://mp.weixin.qq.com/s/jBE4gP3O0qVJ50G49Q_xmQ
@@ -373,23 +377,3 @@ https://zhuanlan.zhihu.com/p/53908224
 https://mp.weixin.qq.com/s/xZ0MWPdrnzk9cqOP-3wdkw
 
 Pig变飞机？AI为什么这么蠢--Adversarial Attack
-
-https://mp.weixin.qq.com/s/WKRb0SEt1F_2lbgzwlxu_Q
-
-图像压缩重建也能抵御对抗样本，这是一种新的防守策略
-
-https://mp.weixin.qq.com/s/675tMer_pEXwXkg7fzq73g
-
-带了个对抗图像块，YOLOv2竟然无法识别我是人……
-
-https://mp.weixin.qq.com/s/QeuQZiC1hKS5cqs59r9KNQ
-
-危险！一张贴画就能迷惑AI，对抗补丁或让自动驾驶车毁人亡
-
-https://zhuanlan.zhihu.com/p/65745852
-
-动量迭代式对抗噪声生成方法
-
-https://mp.weixin.qq.com/s/hvbou_OuTQ6UBVOqOC9JlQ
-
-如何引诱分类器犯错？南大周志华等提出用自编码器生成恶意训练数据

@@ -164,6 +164,18 @@ https://zhuanlan.zhihu.com/p/46633171
 
 深度卷积神经网络中的降采样
 
+# ESN
+
+Echo State Network
+
+https://blog.csdn.net/zwqhehe/article/details/77025035
+
+回声状态网络(ESN)原理详解
+
+https://mp.weixin.qq.com/s/tjawT2-bhPrit0Fd4knSgA
+
+基于回声状态网络预测股票价格
+
 # Winograd
 
 矩阵方面的数值计算，Shmuel Winograd是一个无法绕开的人物。

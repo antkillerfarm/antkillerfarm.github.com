@@ -381,3 +381,11 @@ https://mp.weixin.qq.com/s/bzgMWR2kzAI9NeXEY92GmA
 https://mp.weixin.qq.com/s/0_ap6CsBlz4pvx21c57-ag
 
 旷视研究院提出新型损失函数：改善边界框模糊问题
+
+https://zhuanlan.zhihu.com/p/67714508
+
+“取长补短”的RefineDet物体检测算法
+
+https://mp.weixin.qq.com/s/pB3_ho7JLANKRtQK4gsR5Q
+
+Kaggle实战目标检测奇淫技巧合集

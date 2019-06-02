@@ -164,6 +164,10 @@ https://zhuanlan.zhihu.com/p/63134919
 
 # 目标检测进阶
 
+https://mp.weixin.qq.com/s/1nlOJ7X9ogBHTl1j2adqyg
+
+83页《目标分类和目标检测综述（2D和3D数据）》论文
+
 https://mp.weixin.qq.com/s/dcrBQ-t3tLOTouEyofOBxg
 
 间谍卫星：利用卷积神经网络对卫星影像进行多尺度目标检测

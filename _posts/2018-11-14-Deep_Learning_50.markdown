@@ -355,3 +355,21 @@ HAN：基于双层注意力机制的异质图深度神经网络
 https://mp.weixin.qq.com/s/aixpv9t1PLPRWUP6PvZ0EQ
 
 用自注意力增强卷积：这是新老两代神经网络的对话
+
+# 雷达 & 信号处理+
+
+https://mp.weixin.qq.com/s/5rNpp2cYZhcOKZCiy4LkMQ
+
+SAR成像原理及图像鉴赏
+
+https://mp.weixin.qq.com/s/Y4SE6WxEQdWFLZnn83SK_g
+
+自适应天线及其自由度
+
+https://mp.weixin.qq.com/s/JJWnNsYls9lDJFyTKz0jew
+
+干货！差分信号之剖析与探讨
+
+https://mp.weixin.qq.com/s/jl4DLZ5xwnW5_OsuLxXSUA
+
+《雷达基础知识》专题一：距离

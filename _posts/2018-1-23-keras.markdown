@@ -345,6 +345,10 @@ https://mp.weixin.qq.com/s/xXbyBvxM2HOzHedztpu1Wg
 
 Keras的可视化训练
 
+https://mp.weixin.qq.com/s/K9U3GCW1tAIYRoKKq_nG9w
+
+一行TensorFlow/Keras代码解决真实场景中数据不平衡(imbalanced)问题
+
 # AI工具+
 
 https://mp.weixin.qq.com/s/hkcVhyqiDW--F3QxucgEcA
@@ -364,6 +368,38 @@ https://mp.weixin.qq.com/s/a3zu7nvy0itOvzvgOlf01Q
 搜狗开源机器阅读理解工具箱
 
 # DL参考资源+
+
+https://mp.weixin.qq.com/s/R_nd7_YWA7q1JzE0BP8JrQ
+
+Petuum新研究助力临床决策：使用深度学习实现自动ICD编码
+
+https://mp.weixin.qq.com/s/BpU2num-p95OTKnG1tAp3w
+
+深度神经网络-随机三元化梯度下降和结构化稀疏
+
+https://mp.weixin.qq.com/s/NXA7ymIuk0DaRwhFf0OHqA
+
+MSRA研究员提出物体关系模块，实现首个完全端到端的物体检测系统
+
+https://mp.weixin.qq.com/s/rAq6Rn7pSaZ5IOexgLO-4w
+
+FAIR提出突触可塑算法：让神经网络学会记忆和遗忘
+
+https://mp.weixin.qq.com/s/gljfrNwNvrK7teJ-DYyNIw
+
+如何用深度学习处理结构化数据？
+
+https://mp.weixin.qq.com/s/AZyqxZf6CbZJoT3qOpHDCQ
+
+深度学习也可以取悦女友
+
+https://mp.weixin.qq.com/s/KX85CCpYrXFOvdTU5Q4Frg
+
+阿里巴巴论文提出针对影视作品的语音情感识别信息融合框架
+
+https://mp.weixin.qq.com/s/XnCBiTqFVDh_4oBZdUoxew
+
+Bengio等提出稀疏注意力回溯：长期依赖关系建模的更一般化机制
 
 https://mp.weixin.qq.com/s/8dVronQoeZLJI2g49AljLg
 

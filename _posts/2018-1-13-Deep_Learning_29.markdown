@@ -100,6 +100,10 @@ https://mp.weixin.qq.com/s/3bi5Timesxi1YbFdzBs8AA
 
 DeepMind论文：深度压缩感知，新框架提升GAN性能
 
+https://zhuanlan.zhihu.com/p/67532362
+
+生成对抗网络系列——CVPR2019中的图像转化GAN
+
 # Graph NN
 
 ## DGL
@@ -117,6 +121,10 @@ NYU、AWS联合推出：全新图神经网络框架DGL正式发布
 https://mp.weixin.qq.com/s/5HOA9Pmb3fjsfTVnFMdBIA
 
 新的PyTorch图神经网络库，比前辈快14倍
+
+https://mp.weixin.qq.com/s/_aIPVnJfTWMkCbh4h6MAEA
+
+PyTorch & PyTorch Geometric图神经网络(GNN)实战
 
 ## PyTorch-BigGraph
 

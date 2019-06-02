@@ -372,14 +372,6 @@ https://mp.weixin.qq.com/s/JJ2V9coeDI7WvWyDZNlVqA
 
 你的老婆你做主：画风自定义，内容自定义，南加大AI助你走上人生巅峰
 
-# ESN
+https://zhuanlan.zhihu.com/p/67692429
 
-Echo State Network
-
-https://blog.csdn.net/zwqhehe/article/details/77025035
-
-回声状态网络(ESN)原理详解
-
-https://mp.weixin.qq.com/s/tjawT2-bhPrit0Fd4knSgA
-
-基于回声状态网络预测股票价格
+GAN网络利用单张照片构成动图

@@ -308,6 +308,10 @@ https://zhuanlan.zhihu.com/p/66263349
 
 为什么内存和闪存制程比CPU低？它们现在都在什么节点？
 
+https://mp.weixin.qq.com/s/lz6EoLiLtPtWFMG1FJCuQw
+
+化合物半导体的机遇
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。

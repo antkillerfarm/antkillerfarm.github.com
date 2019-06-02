@@ -6,6 +6,32 @@ category: resource
 
 # DL参考资源
 
+## AI与安全（续）
+
+https://mp.weixin.qq.com/s/WKRb0SEt1F_2lbgzwlxu_Q
+
+图像压缩重建也能抵御对抗样本，这是一种新的防守策略
+
+https://mp.weixin.qq.com/s/675tMer_pEXwXkg7fzq73g
+
+带了个对抗图像块，YOLOv2竟然无法识别我是人……
+
+https://mp.weixin.qq.com/s/QeuQZiC1hKS5cqs59r9KNQ
+
+危险！一张贴画就能迷惑AI，对抗补丁或让自动驾驶车毁人亡
+
+https://zhuanlan.zhihu.com/p/65745852
+
+动量迭代式对抗噪声生成方法
+
+https://mp.weixin.qq.com/s/hvbou_OuTQ6UBVOqOC9JlQ
+
+如何引诱分类器犯错？南大周志华等提出用自编码器生成恶意训练数据
+
+https://mp.weixin.qq.com/s/2QuwBVaFCQjl81z38u6L-g
+
+一文看尽三种针对人工智能系统的攻击技术及防御策略
+
 ## 实战
 
 http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg
@@ -385,39 +411,3 @@ Hinton提出泛化更优的“软决策树”：可解释DNN具体决策
 https://mp.weixin.qq.com/s/X75H8YOysftwU4VSjlmLBQ
 
 谷歌大脑最新技术：将神经网络提炼成软决策树！
-
-https://mp.weixin.qq.com/s/R_nd7_YWA7q1JzE0BP8JrQ
-
-Petuum新研究助力临床决策：使用深度学习实现自动ICD编码
-
-https://mp.weixin.qq.com/s/BpU2num-p95OTKnG1tAp3w
-
-深度神经网络-随机三元化梯度下降和结构化稀疏
-
-https://mp.weixin.qq.com/s/NXA7ymIuk0DaRwhFf0OHqA
-
-MSRA研究员提出物体关系模块，实现首个完全端到端的物体检测系统
-
-https://mp.weixin.qq.com/s/rAq6Rn7pSaZ5IOexgLO-4w
-
-FAIR提出突触可塑算法：让神经网络学会记忆和遗忘
-
-https://mp.weixin.qq.com/s/gljfrNwNvrK7teJ-DYyNIw
-
-如何用深度学习处理结构化数据？
-
-https://mp.weixin.qq.com/s/AZyqxZf6CbZJoT3qOpHDCQ
-
-深度学习也可以取悦女友
-
-https://mp.weixin.qq.com/s/KX85CCpYrXFOvdTU5Q4Frg
-
-阿里巴巴论文提出针对影视作品的语音情感识别信息融合框架
-
-https://mp.weixin.qq.com/s/XnCBiTqFVDh_4oBZdUoxew
-
-Bengio等提出稀疏注意力回溯：长期依赖关系建模的更一般化机制
-
-https://mp.weixin.qq.com/s/2QuwBVaFCQjl81z38u6L-g
-
-一文看尽三种针对人工智能系统的攻击技术及防御策略

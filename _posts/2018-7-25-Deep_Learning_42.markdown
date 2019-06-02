@@ -292,6 +292,52 @@ https://blog.csdn.net/liuchonge/article/details/78929474
 
 从头实现深度学习的对话系统--简单chatbot代码实现
 
+# ML参考资源
+
+https://mp.weixin.qq.com/s/rVXCjEilRC4sgluIg0q6TA
+
+一文尽览近似最近邻搜索中的哈希与量化方法
+
+https://mp.weixin.qq.com/s/HYZWANuSrt4DcO_monHRvA
+
+一位数据科学PhD眼中的算法交易
+
+https://zhuanlan.zhihu.com/p/40214106
+
+流形学习概述
+
+https://mp.weixin.qq.com/s/Uw02CapdvpaMKbjry1Q_Cg
+
+爱犯错的智能体：谈谈黎曼流形与视觉距离错觉问题
+
+https://mp.weixin.qq.com/s/oGSk9Hsu6lbthJjLHF59Hg
+
+摩拜&京东联合利用智能单车数据挖掘违章停车
+
+https://mp.weixin.qq.com/s/iyd0ade-ZcXCxLoZ8_vWPQ
+
+应用于鲁棒主成分分析的双线性因子矩阵范数最小化
+
+https://mp.weixin.qq.com/s/rDdpQDogQR1E6TMkG4j1sA
+
+80页PPT解读量化开发与实盘
+
+https://mp.weixin.qq.com/s/X7aGCeUkLuuFbHrnK2TiMg
+
+啥是有限元？
+
+https://mp.weixin.qq.com/s/hPjf7t5j-kBrrEIhNGo8jQ
+
+从区域到边界（边界元）
+
+https://mp.weixin.qq.com/s/mZlJw3gKhc988n5JpN135g
+
+如何解决春运中的铁路列车调度问题
+
+https://mp.weixin.qq.com/s/yJom9cqh64YNqMbAzsgwOA
+
+浅谈变分不等式与凸优化
+
 # 深度ISP
 
 ## 数据集

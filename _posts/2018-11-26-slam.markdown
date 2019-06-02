@@ -6,7 +6,19 @@ category: resource
 
 # SLAM
 
-Simultaneous Localization And Mapping
+## 概述
+
+SLAM算法大致有基于激光的和基于视觉的两大类。
+
+基于激光的SLAM有Hector SLAM，gmapping算法等。
+
+基于视觉的SLAM有lsd-slam、svo、orb-slam算法等。
+
+## 术语
+
+SLAM: Simultaneous Localization And Mapping
+
+VINS: Visual-inertial SLAM
 
 ## blog
 
@@ -50,6 +62,20 @@ https://zhuanlan.zhihu.com/c_1033028253530750976
 
 一个SLAM方面的专栏
 
+https://www.cnblogs.com/shang-slam/
+
+一个SLAM方面的专栏
+
+## 项目
+
+https://github.com/raulmur/ORB_SLAM2
+
+Real-Time SLAM for Monocular, Stereo and RGB-D Cameras, with Loop Detection and Relocalization Capabilities
+
+https://github.com/HKUST-Aerial-Robotics
+
+港科大的机器人团队的github，有不少好东西。最知名的有VINS-Mono、VINS-Fusion。
+
 ## g2o
 
 g2o是一个C++写的图优化框架。
@@ -57,6 +83,14 @@ g2o是一个C++写的图优化框架。
 官网：
 
 https://openslam-org.github.io/g2o.html
+
+## Ceres Solver
+
+Ceres Solver是一个非线性优化库。Gauss最早使用最小二乘法估计谷神星（Ceres）的位置，故名。
+
+官网：
+
+http://ceres-solver.org/
 
 ## 参考
 
@@ -71,6 +105,10 @@ SLAM(simultaneous localization and mapping)学习笔记
 http://www.cnblogs.com/gaoxiang12/p/5113334.html
 
 视觉SLAM中的数学基础
+
+https://www.zhihu.com/question/51045335
+
+众多SLAM算法各自有什么优点和缺点？
 
 http://www.cnblogs.com/gaoxiang12/p/5560360.html
 
@@ -175,6 +213,26 @@ OpenVSLAM：日本先进工业科技研究所新开源视觉SLAM框架
 https://mp.weixin.qq.com/s/KJSdq0-Y5ZWodC4IHAIngg
 
 从相机标定到SLAM，极简三维视觉六小时课程视频
+
+https://blog.csdn.net/zhubaohua_bupt/article/details/74973347
+
+高斯牛顿(Gauss Newton)、列文伯格-马夸尔特(Levenberg-Marquardt)最优化算法与VSLAM
+
+https://www.cnblogs.com/hitcm/p/6327442.html
+
+视觉惯性里程计Visual–Inertial Odometry(VIO)概述
+
+https://zhuanlan.zhihu.com/p/62988961
+
+一起快速上手VINS-Fusion
+
+https://www.zhihu.com/question/309096467
+
+如何评价港科大VINS-Fusion？
+
+https://www.zhihu.com/question/53571648
+
+有哪些开源项目是关于单目+imu做slam的？
 
 ## 张正友标定算法
 
@@ -389,77 +447,3 @@ https://mp.weixin.qq.com/s/y1nTTjsW31ck6r-Cqp_XFw
 https://mp.weixin.qq.com/s/nThxbRnAGo-QkFgrm3BtIQ
 
 一种半监督张量局部线性嵌入的极化SAR特征提取方法
-
-https://mp.weixin.qq.com/s/5rNpp2cYZhcOKZCiy4LkMQ
-
-SAR成像原理及图像鉴赏
-
-https://mp.weixin.qq.com/s/Y4SE6WxEQdWFLZnn83SK_g
-
-自适应天线及其自由度
-
-https://mp.weixin.qq.com/s/JJWnNsYls9lDJFyTKz0jew
-
-干货！差分信号之剖析与探讨
-
-https://mp.weixin.qq.com/s/jl4DLZ5xwnW5_OsuLxXSUA
-
-《雷达基础知识》专题一：距离
-
-# ML参考资源
-
-https://mp.weixin.qq.com/s/WIx-yzbvgwSaKrRMIbgY2w
-
-无边无际的虚拟城市来了！能走能飞的Demo，一火再火的“波函数坍缩”开源算法
-
-https://mp.weixin.qq.com/s/NbEki2ByMmA93DyoQF1yjA
-
-运满满如何将机器学习应用于车货匹配和公路干线价格预测？
-
-https://mp.weixin.qq.com/s/R7Qud_x6DGqbHAOl7OMruQ
-
-一文带你入门算法分发！
-
-https://mp.weixin.qq.com/s/rVXCjEilRC4sgluIg0q6TA
-
-一文尽览近似最近邻搜索中的哈希与量化方法
-
-https://mp.weixin.qq.com/s/HYZWANuSrt4DcO_monHRvA
-
-一位数据科学PhD眼中的算法交易
-
-https://zhuanlan.zhihu.com/p/40214106
-
-流形学习概述
-
-https://mp.weixin.qq.com/s/Uw02CapdvpaMKbjry1Q_Cg
-
-爱犯错的智能体：谈谈黎曼流形与视觉距离错觉问题
-
-https://mp.weixin.qq.com/s/oGSk9Hsu6lbthJjLHF59Hg
-
-摩拜&京东联合利用智能单车数据挖掘违章停车
-
-https://mp.weixin.qq.com/s/iyd0ade-ZcXCxLoZ8_vWPQ
-
-应用于鲁棒主成分分析的双线性因子矩阵范数最小化
-
-https://mp.weixin.qq.com/s/rDdpQDogQR1E6TMkG4j1sA
-
-80页PPT解读量化开发与实盘
-
-https://mp.weixin.qq.com/s/X7aGCeUkLuuFbHrnK2TiMg
-
-啥是有限元？
-
-https://mp.weixin.qq.com/s/hPjf7t5j-kBrrEIhNGo8jQ
-
-从区域到边界（边界元）
-
-https://mp.weixin.qq.com/s/mZlJw3gKhc988n5JpN135g
-
-如何解决春运中的铁路列车调度问题
-
-https://mp.weixin.qq.com/s/yJom9cqh64YNqMbAzsgwOA
-
-浅谈变分不等式与凸优化

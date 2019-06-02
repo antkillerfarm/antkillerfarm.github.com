@@ -184,8 +184,6 @@ FCW：Forward Collision Warning，前向碰撞预警
 
 AEB：Automatic emergency braking，自动紧急刹车
 
-SLAM：Simultaneous Localization and Mapping
-
 ## blog
 
 http://www.cnblogs.com/yhlx125/
@@ -217,10 +215,6 @@ https://blog.csdn.net/AdamShan
 一个无人驾驶的blog
 
 ## 软件
-
-https://github.com/raulmur/ORB_SLAM2
-
-Real-Time SLAM for Monocular, Stereo and RGB-D Cameras, with Loop Detection and Relocalization Capabilities
 
 https://mp.weixin.qq.com/s/yNr4_tEyYg_VBmNjIrjYug
 

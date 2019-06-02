@@ -313,3 +313,7 @@ Blink有何特别之处？菜鸟供应链场景最佳实践
 https://mp.weixin.qq.com/s/zIp_14_hgRRa0sKCW4Vejw
 
 腾讯基于Flink的实时流计算平台演进之路
+
+https://mp.weixin.qq.com/s/15QDKqcMAuS0zXpqEDDw-Q
+
+非Flink不可？构建实时数据集成平台，这4个因素怎能不注意！
