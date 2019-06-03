@@ -424,3 +424,7 @@ Python高级技巧：lazy property
 https://mp.weixin.qq.com/s/06-iOG5TkRkHb4RZl1bXNQ
 
 史上最全Python迭代器与生成器
+
+https://mp.weixin.qq.com/s/lv_sjvXx8vWf6TsVoYoxFw
+
+Python处理文件系统的10种方法

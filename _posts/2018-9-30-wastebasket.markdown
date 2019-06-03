@@ -278,6 +278,10 @@ https://mp.weixin.qq.com/s/3L37mtt1eCFbRhbyDqi7Jg
 
 史上最硬核高中数学题，题目居然不过4行？
 
+https://mp.weixin.qq.com/s/g3_njGlo3dC696wo0wplVQ
+
+臭氧空洞再度加剧，是谁在偷偷破坏臭氧层？
+
 ## LSM (Log Structured Merge)
 
 十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。
@@ -401,6 +405,10 @@ https://mp.weixin.qq.com/s/CqvranTh9dawJW5DP-oHpw
 https://mp.weixin.qq.com/s/SWpgNMDIRfRugWBhMyGrTQ
 
 交互式《几何原本》再现江湖
+
+https://visualgo.net/zh
+
+一个数据结构和算法的可视化网站
 
 ## howmuch.net
 

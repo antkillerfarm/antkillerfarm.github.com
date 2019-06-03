@@ -375,3 +375,7 @@ https://mp.weixin.qq.com/s/JJ2V9coeDI7WvWyDZNlVqA
 https://zhuanlan.zhihu.com/p/67692429
 
 GAN网络利用单张照片构成动图
+
+https://mp.weixin.qq.com/s/zgMPW6yioGJEhusj031r5A
+
+如何利用深度学习技术处理图像水印？

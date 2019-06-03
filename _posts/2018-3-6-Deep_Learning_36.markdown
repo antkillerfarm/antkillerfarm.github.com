@@ -82,6 +82,10 @@ https://mp.weixin.qq.com/s/WZ5CYdinRvRrCuniLHok-Q
 
 Embedding技术在深度学习CTR模型中的应用
 
+https://mp.weixin.qq.com/s/MBVac45WpZy4c208zF3Ang
+
+当你打开天猫的那一刻，推荐系统做了哪些工作？
+
 # 人脸检测/识别
 
 ## 人脸识别
@@ -359,3 +363,49 @@ https://mp.weixin.qq.com/s/OV4vXu7TAuyV7qU9BAMF6g
 https://mp.weixin.qq.com/s/33VQNVvb7JGlk10Jc3mmeg
 
 从可视化到新模型：纵览深度学习的视觉可解释性
+
+# GAN参考资源+
+
+https://mp.weixin.qq.com/s/fmqaw0xm4Lm7h3rPsLD7yA
+
+关于GAN的灵魂七问
+
+https://mp.weixin.qq.com/s/CwB7IDaCZBzcQV8IBsYQDw
+
+最新《生成式对抗网络GAN进展》论文
+
+https://mp.weixin.qq.com/s/-SVtuZGOn6Wk9kwe50JJqw
+
+《GAN实战：生成对抗网络深度学习》牛津大学Jakub著作
+
+https://mp.weixin.qq.com/s/QqQ0SoF-kFTQRLxo4Tzm2g
+
+反思基于能量的生成式模型：中山大学研究者从粒子演化角度改进经典的FRAME
+
+https://mp.weixin.qq.com/s/ExsDftIvi8VUdvxfka-1ow
+
+南大和中大“合体”拯救手残党：基于GAN的PI-REC重构网络，“老婆”画作有救了
+
+https://mp.weixin.qq.com/s/RhYVCO0jNlY97ptIUvRRQQ
+
+带你读论文：生成对抗网络GAN论文TOP 10
+
+https://mp.weixin.qq.com/s/jByvPPrlN7zIOPXON4fZJw
+
+生成对抗网络也需要注意力机制
+
+https://mp.weixin.qq.com/s/dViPKDzxsMRRntMusi1Isw
+
+5个最新图像合成GAN架构解读：核心理念、关键成就、商业化路径
+
+https://mp.weixin.qq.com/s/c1zzP9_Ds1oCkFitLZLrCg
+
+MIT本科学神重启基于能量的生成模型，新框架堪比GAN
+
+https://mp.weixin.qq.com/s/eSvrnUCnz74O3txrPq7RlA
+
+Google用更少标签生成图像，还提出一个用于训练评估GAN的库
+
+https://mp.weixin.qq.com/s/hXGGN1K0LoqAdtyYhCu63w
+
+以合成假脸、假画闻名的GAN很成熟了？那这些问题呢？

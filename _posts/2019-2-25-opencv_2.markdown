@@ -202,6 +202,10 @@ https://mp.weixin.qq.com/s/C9LG-5vFHWhR_Fl94LJYTw
 
 二值图像分析案例精选
 
+https://mp.weixin.qq.com/s/-b1wfvv1jdtnlXzy9BEpJA
+
+OpenCV实现失焦模糊图像恢复
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。
@@ -457,11 +461,3 @@ https://mp.weixin.qq.com/s/7fvVmmpPSldwa3TZ3dVb2g
 https://mp.weixin.qq.com/s/sXC263Lq25tKp2AK2Tsb-A
 
 Omnivision HDR sensor简介
-
-https://mp.weixin.qq.com/s/oeMqE0MzXyGeABGekY9eiQ
-
-眼擎科技CEO朱继志：如何设计自动驾驶的视觉成像系统
-
-https://blog.csdn.net/weixin_38285131/article/details/80457068
-
-光场相机重聚焦原理介绍及代码解析

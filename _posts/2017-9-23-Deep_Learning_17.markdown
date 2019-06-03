@@ -380,6 +380,14 @@ https://zhuanlan.zhihu.com/p/66389797
 
 虚拟对抗训练：一种新颖的半监督学习正则化方法
 
+https://mp.weixin.qq.com/s/DAtHXSfCpqCAZ0iVsfWkDA
+
+半监督学习理论及其研究进展概述
+
+https://mp.weixin.qq.com/s/eHzNIO-RSY-uf-K-OwtWfw
+
+集多种半监督学习范式为一体，谷歌新研究提出新型半监督方法MixMatch
+
 # 目标检测进阶
 
 https://mp.weixin.qq.com/s/wR5jUHBJHWFm8UTsobKDqw

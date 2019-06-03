@@ -330,6 +330,10 @@ https://mp.weixin.qq.com/s/PWABh72t92pUOJufcmzvag
 
 用PyTorch做深度学习实验！Facebook新框架Ax和BoTorch双双开源
 
+https://mp.weixin.qq.com/s/LcwlCai7PMYOBwsLXPS5HA
+
+PyTorch语义分割开源库semseg
+
 # 超算
 
 ![](/images/img3/power.aug.gif)

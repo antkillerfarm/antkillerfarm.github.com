@@ -294,6 +294,10 @@ https://mp.weixin.qq.com/s/Jso2YZs2NEtMORZsLkrJ5w
 
 Geometric Relation Learning in 3D Point Cloud Analysis
 
+https://mp.weixin.qq.com/s/sXxUh_9Kd_2BkISHbxL2CA
+
+基于深度学习的实时激光雷达点云目标检测及ROS实现
+
 # 显著性检测
 
 https://mp.weixin.qq.com/s/Mi62oqtXUT5If_Dj4KmVYA

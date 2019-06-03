@@ -266,47 +266,19 @@ https://mp.weixin.qq.com/s/QgYtfvsLGcfqLA98mp19tg
 
 KDD2018阿里巴巴论文揭示自家大规模视觉搜索算法
 
-# Graph NN+
+# GAN参考资源+
 
-https://mp.weixin.qq.com/s/s6E2vV1KrQDI4SeAnkYTKw
+https://mp.weixin.qq.com/s/gzwa6ZZeNvm1MyIM93sC5Q
 
-图神经网络将成AI下一拐点！MIT斯坦福一文综述GNN到底有多强
+全新缺失图像数据插补框架—CollaGAN
 
-https://mp.weixin.qq.com/s/6vhFfSh2mveBiZXB1oZb1Q
+https://mp.weixin.qq.com/s/3bi5Timesxi1YbFdzBs8AA
 
-图分类：结合胶囊网络Capsule和图卷积GCN
+DeepMind论文：深度压缩感知，新框架提升GAN性能
 
-https://mp.weixin.qq.com/s/aGP8pcsCmEdjdCWVjA82Jg
+https://zhuanlan.zhihu.com/p/67532362
 
-近期必读的5篇CVPR 2019图卷积网络相关论文和代码
-
-https://mp.weixin.qq.com/s/CpDZEqo14X_lCBh6i7feIA
-
-图卷积神经网络(GCN)文本分类详述
-
-https://mp.weixin.qq.com/s/XApSbi-Pg-AeYGkPN3fldg
-
-旷视研究院提出ML-GCN：基于图卷积网络的多标签图像识别模型
-
-https://mp.weixin.qq.com/s/49vnVOO0G_JvKrWcsN2_Ww
-
-关系图注意力网络-Relational Graph Attention Networks
-
-https://mp.weixin.qq.com/s/rvcj9-6KlBsVmF_CAsip2A
-
-超越标准GNN！DeepMind、谷歌提出图匹配网络
-
-https://mp.weixin.qq.com/s/LrGWJIdPdUNZ3jyC8tdE6w
-
-Graph Neural Network（GNN）综述
-
-https://mp.weixin.qq.com/s/t2kjxrcn6O9tbJ-IQELboQ
-
-高君宇：图神经网络在视频分类中的应用
-
-https://mp.weixin.qq.com/s/7DyPJ9LnqZ9XyAop33SxSw
-
-ST-GCN动作识别算法详解
+生成对抗网络系列——CVPR2019中的图像转化GAN
 
 # fine-tuning
 
