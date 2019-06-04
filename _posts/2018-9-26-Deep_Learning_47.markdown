@@ -381,3 +381,7 @@ https://mp.weixin.qq.com/s/zqlWx3e4LOJ3_Zy2DEbCjw
 https://mp.weixin.qq.com/s/rQ8ISipvV3Irrjd3MI-Idw
 
 百度ERNIE，中文任务全面超越BERT
+
+https://mp.weixin.qq.com/s/LngE10Hnqe9bgFzpNfUwLQ
+
+NLP中的词向量对比：word2vec/glove/fastText/elmo/GPT/bert

@@ -317,3 +317,7 @@ https://mp.weixin.qq.com/s/zIp_14_hgRRa0sKCW4Vejw
 https://mp.weixin.qq.com/s/15QDKqcMAuS0zXpqEDDw-Q
 
 非Flink不可？构建实时数据集成平台，这4个因素怎能不注意！
+
+https://mp.weixin.qq.com/s/Zz63igCUvWf1B3X4jJYTyQ
+
+Flink与Storm协议级对比

@@ -268,6 +268,22 @@ KDD2018阿里巴巴论文揭示自家大规模视觉搜索算法
 
 # GAN参考资源+
 
+https://mp.weixin.qq.com/s/dViPKDzxsMRRntMusi1Isw
+
+5个最新图像合成GAN架构解读：核心理念、关键成就、商业化路径
+
+https://mp.weixin.qq.com/s/c1zzP9_Ds1oCkFitLZLrCg
+
+MIT本科学神重启基于能量的生成模型，新框架堪比GAN
+
+https://mp.weixin.qq.com/s/eSvrnUCnz74O3txrPq7RlA
+
+Google用更少标签生成图像，还提出一个用于训练评估GAN的库
+
+https://mp.weixin.qq.com/s/hXGGN1K0LoqAdtyYhCu63w
+
+以合成假脸、假画闻名的GAN很成熟了？那这些问题呢？
+
 https://mp.weixin.qq.com/s/gzwa6ZZeNvm1MyIM93sC5Q
 
 全新缺失图像数据插补框架—CollaGAN

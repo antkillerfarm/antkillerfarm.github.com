@@ -90,6 +90,10 @@ https://mp.weixin.qq.com/s/V7QODQ2F9q8Q7lfuny8JPw
 
 强化学习用于推荐系统，蚂蚁金服提出生成对抗用户模型
 
+https://mp.weixin.qq.com/s/FevsysNqRhq6Njh0ILCveQ
+
+推荐系统遇上深度学习，9篇阿里推荐论文汇总！
+
 # 人脸检测/识别
 
 ## 人脸识别
@@ -368,6 +372,10 @@ https://mp.weixin.qq.com/s/33VQNVvb7JGlk10Jc3mmeg
 
 从可视化到新模型：纵览深度学习的视觉可解释性
 
+https://github.com/ModelOriented/DrWhy
+
+可解释AI(XAI)工具集—DrWhy
+
 # GAN参考资源
 
 https://mp.weixin.qq.com/s/fmqaw0xm4Lm7h3rPsLD7yA
@@ -397,19 +405,3 @@ https://mp.weixin.qq.com/s/RhYVCO0jNlY97ptIUvRRQQ
 https://mp.weixin.qq.com/s/jByvPPrlN7zIOPXON4fZJw
 
 生成对抗网络也需要注意力机制
-
-https://mp.weixin.qq.com/s/dViPKDzxsMRRntMusi1Isw
-
-5个最新图像合成GAN架构解读：核心理念、关键成就、商业化路径
-
-https://mp.weixin.qq.com/s/c1zzP9_Ds1oCkFitLZLrCg
-
-MIT本科学神重启基于能量的生成模型，新框架堪比GAN
-
-https://mp.weixin.qq.com/s/eSvrnUCnz74O3txrPq7RlA
-
-Google用更少标签生成图像，还提出一个用于训练评估GAN的库
-
-https://mp.weixin.qq.com/s/hXGGN1K0LoqAdtyYhCu63w
-
-以合成假脸、假画闻名的GAN很成熟了？那这些问题呢？

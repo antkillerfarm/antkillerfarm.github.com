@@ -172,6 +172,10 @@ https://mp.weixin.qq.com/s/2LYqppJnRRtlvsdrdu57Gg
 
 万字长文概述NLP中的深度学习技术
 
+https://mp.weixin.qq.com/s/Dqn0smNfH6DDYSUtEHcqWQ
+
+182页PPT带你回顾自然语言推断的前世今生
+
 ## 分词
 
 https://mp.weixin.qq.com/s/Xy_jaOex72pLe4wwieKeUg
