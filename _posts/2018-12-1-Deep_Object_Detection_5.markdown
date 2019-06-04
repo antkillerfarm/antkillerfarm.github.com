@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（五）——YOLOv3, Tiny-YOLO, One-stage vs. Two-stage, FPN
+title:  深度目标检测（五）——YOLOv3, Tiny-YOLO, One-stage vs. Two-stage, R-FCN
 category: Deep Object Detection 
 ---
 
@@ -232,7 +232,7 @@ https://zhuanlan.zhihu.com/p/52928205
 
 ![](/images/img2/Two_stage.png)
 
-上两图是One-stage和Two-stage的网络结构图。
+上两图是One-stage(YOLO)和Two-stage(Faster R-CNN)的网络结构图。
 
 One-stage一步搞定分类和bbox问题。
 
@@ -246,18 +246,24 @@ One-stage一步搞定分类和bbox问题。
 
 《Speed/accuracy trade-offs for modern convolutional object detectors》
 
-# FPN
+# R-FCN
 
-FPN(Feature Pyramid Network)是Tsung-Yi Lin（Ross Girshick和何恺明小组成员）的作品。
+R-FCN是何恺明/孙剑小组的Jifeng Dai于2016年提出的。
 
 论文：
 
-《Feature Pyramid Networks for Object Detection》
+《R-FCN: Object Detection via Region-based Fully Convolutional Networks》
 
-![](/images/img3/FPN.png)
+代码：
 
-- 图（a）为手工设计特征描述子（Sift,HoG,Harr,Gabor）时代的常见模型，即对不同尺寸的图片提取特征，以满足不同尺度目标的检测要求，提高模型性能；
+https://github.com/PureDiors/pytorch_RFCN
 
-- 图（b）则是深度卷积网的基本结构，通过不断的卷积抽取特征同时逐渐增加感受野，最后进行预测；
+faster R-CNN对卷积层做了共享（RPN和Fast R-CNN）,但是经过RoI pooling后，却没有共享，如果一副图片有500个region proposal，那么就得分别进行500次卷积，这样就太浪费时间了，于是作者猜想，能不能把RoI后面的几层建立共享卷积，只对一个feature map进行一次卷积？
 
-- 图（c）则是融合深度网络的特征金字塔模型，众所周知深度网在经过每一次卷积后均会获得不同尺度的feature map，其天然就具有金字塔结构。但是由于网络的不断加深其图像分别率将不断下降，感受野将不断扩大，同时表征的特征也更叫抽象，其语义信息将更加丰富。SSD则采用图c结构，即不同层预测不同物体，让top层预测分辨率较高，尺寸较大的目标，bottom则预测尺寸较小的目标。然而对于小目标的检测虽然其分辨率提高了但是其语义化程度不够，因此其检测效果依旧不好。
+![](/images/img3/R-FCN_2.png)
+
+上图是R-FCN的网络结构图。和上一节的Faster R-CNN相比，我们可以看出如下区别：
+
+1.Faster R-CNN是特征提取之后，先做ROI pooling，然后再经过若干层网络，最后分类+bbox。
+
+2.R-FCN是特征提取之后，先经过若干层网络，然后再做ROI pooling，最后分类+bbox。

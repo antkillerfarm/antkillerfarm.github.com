@@ -204,3 +204,47 @@ https://zhuanlan.zhihu.com/p/65116688
 https://zhuanlan.zhihu.com/p/65364484
 
 值分布强化学习（02）
+
+# 世说新语+
+
+## 2019.6
+
+奥匈帝国的人类学家，马林诺斯基，1914年在太平洋的巴布亚与当地食人族聊天。
+
+马林诺斯基提到了“战争”也就是第一次世界大战。
+
+“现在欧洲在打仗，每一天都要死几万人”
+
+食人族疑惑不解:“你们怎么吃得了那么多人？”
+
+马林诺斯基解释说，“欧洲人不吃人肉...”
+
+食人族震惊:“不吃肉，为什么要杀人？你们太野蛮了！”
+
+----
+
+https://zhuanlan.zhihu.com/p/68046339
+
+印度人是如何把外卖做成百年老店的？
+
+# 目标检测进阶
+
+https://mp.weixin.qq.com/s/uzG8sic5Y6LVqBS6iKQDhw
+
+目标检测中图像增强，mixup如何操作？
+
+https://mp.weixin.qq.com/s/pkFcmm15gnuRJtngFX7f0w
+
+目标检测训练trick超级大礼包—不改模型提升精度，值得拥有
+
+https://mp.weixin.qq.com/s/flXzhQ-Ypf3fwTqLelLzOQ
+
+李沐等将目标检测绝对精度提升5%，不牺牲推理速度
+
+https://mp.weixin.qq.com/s/6QsyYtEVjavoLfU_lQF1pw
+
+目标检测新文：Generalized Intersection over Union
+
+https://mp.weixin.qq.com/s/Xs3nThAcUOq62bO2p61YFA
+
+论文解读 Receptive Field Block Net for Accurate and Fast

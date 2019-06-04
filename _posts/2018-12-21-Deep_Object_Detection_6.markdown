@@ -1,10 +1,68 @@
 ---
 layout: post
-title:  深度目标检测（六）——Anchor-Free, 其它目标检测网络, 目标检测进阶
+title:  深度目标检测（六）——FPN, Anchor-Free, 其它目标检测网络, 目标检测进阶
 category: Deep Object Detection 
 ---
 
-# FPN（续）
+# R-FCN（续）
+
+![](/images/img3/R-FCN.png)
+
+FC layer在近来的CV实践中，越来越不受欢迎，因此R-FCN在最后的分类+bbox阶段，也做了一些针对性的改进（如上图所示）：
+
+1.直接将roi pooling生成的feature map连接到最后的分类和回归层**效果很差**。这主要是因为：基CNN本身是对图像分类设计的，具有图像移动不敏感性；而对象检测领域却是图像移动敏感的，所以二者之间产生了矛盾。
+
+2.因此R-FCN专门设计了一个**position-sensitive score maps**。在feature map上通过卷积运算生成一个等大但通道数为$$k^{2}(C+1)$$的feature map X。
+
+3.对这个feature map进行特殊的ROI pooling。
+
+标准的ROI pooling：将ROI在**空间**上分成kxk部分，对每个部分进行pooling操作。
+
+R-FCN的ROI pooling：将ROI在**通道**上分成kxk部分，对每个部分进行pooling操作，得到一个尺寸为kxkx(C+1)的tensor。上图中各种颜色部分之间的对应关系，展示了该ROI pooling操作的实现方式。
+
+从中可以看出，feature map X不仅在空间维度上对位置敏感，在通道维度上也对位置敏感。因此也被称作position-sensitive score maps。
+
+4.对上一步结果的每个C+1部分进行分类，这样可以得到kxk个分类结果。对所有的分类结果进行vote，得到最终结果。（如下两图所示）
+
+![](/images/img3/R-FCN_3.png)
+
+![](/images/img3/R-FCN_4.png)
+
+5.bbox也是类似的操作，只需将上面的C+1换成4（bbox位置的坐标）即可。
+
+参考：
+
+http://blog.csdn.net/zijin0802034/article/details/53411041
+
+R-FCN: Object Detection via Region-based Fully Convolutional Networks
+
+https://blog.csdn.net/App_12062011/article/details/79737363
+
+R-FCN
+
+https://mp.weixin.qq.com/s/HPzQST8cq5lBhU3wnz7-cg
+
+R-FCN每秒30帧实时检测3000类物体，马里兰大学Larry Davis组最新目标检测工作
+
+https://mp.weixin.qq.com/s/AddHG_I00uaDov0le4vdvA
+
+R-FCN和FPN
+
+# FPN
+
+FPN(Feature Pyramid Network)是Tsung-Yi Lin（Ross Girshick和何恺明小组成员）的作品。
+
+论文：
+
+《Feature Pyramid Networks for Object Detection》
+
+![](/images/img3/FPN.png)
+
+- 图（a）为手工设计特征描述子（Sift,HoG,Harr,Gabor）时代的常见模型，即对不同尺寸的图片提取特征，以满足不同尺度目标的检测要求，提高模型性能；
+
+- 图（b）则是深度卷积网的基本结构，通过不断的卷积抽取特征同时逐渐增加感受野，最后进行预测；
+
+- 图（c）则是融合深度网络的特征金字塔模型，众所周知深度网在经过每一次卷积后均会获得不同尺度的feature map，其天然就具有金字塔结构。但是由于网络的不断加深其图像分别率将不断下降，感受野将不断扩大，同时表征的特征也更叫抽象，其语义信息将更加丰富。SSD则采用图c结构，即不同层预测不同物体，让top层预测分辨率较高，尺寸较大的目标，bottom则预测尺寸较小的目标。然而对于小目标的检测虽然其分辨率提高了但是其语义化程度不够，因此其检测效果依旧不好。
 
 - 图（d）则是FPN的网络结构，该网络结构大体上分为三个部分，即buttom-up自底向上的特征抽取，自顶向下的upsampling，以及侧边融合通道（lateral coonnection）。通过这三个结构网络的每一层均会具有较强的语义信息，且能很好的满足速度和内存的要求。
 
@@ -85,48 +143,6 @@ A-Fast-RCNN首次将对抗学习引入到了目标检测领域，idea是非常�
 http://blog.csdn.net/jesse_mx/article/details/72955981
 
 A-Fast-RCNN论文笔记
-
-## R-FCN
-
-R-FCN是何恺明/孙剑小组的Jifeng Dai于2016年提出的。
-
-论文：
-
-《R-FCN: Object Detection via Region-based Fully Convolutional Networks》
-
-代码：
-
-https://github.com/PureDiors/pytorch_RFCN
-
-faster R-CNN对卷积层做了共享（RPN和Fast R-CNN）,但是经过RoI pooling后，却没有共享，如果一副图片有500个region proposal，那么就得分别进行500次卷积，这样就太浪费时间了，于是作者猜想，能不能把RoI后面的几层建立共享卷积，只对一个feature map进行一次卷积？
-
-![](/images/img3/R-FCN_2.png)
-
-
-
-![](/images/img3/R-FCN.png)
-
-
-
-FCN在目标检测领域的应用。
-
-参考：
-
-http://blog.csdn.net/zijin0802034/article/details/53411041
-
-R-FCN: Object Detection via Region-based Fully Convolutional Networks
-
-https://blog.csdn.net/App_12062011/article/details/79737363
-
-R-FCN
-
-https://mp.weixin.qq.com/s/HPzQST8cq5lBhU3wnz7-cg
-
-R-FCN每秒30帧实时检测3000类物体，马里兰大学Larry Davis组最新目标检测工作
-
-https://mp.weixin.qq.com/s/AddHG_I00uaDov0le4vdvA
-
-R-FCN和FPN
 
 ## G-CNN
 
@@ -295,83 +311,3 @@ https://mp.weixin.qq.com/s/t5p1xGKVnwd7wbiOzucFqQ
 https://mp.weixin.qq.com/s/-zQZjHVs7bYyGkGuMUf3qg
 
 目标检测领域还有什么可做的？19个方向给你建议
-
-https://zhuanlan.zhihu.com/p/54334986
-
-TridentNet：处理目标检测中尺度变化新思路
-
-https://mp.weixin.qq.com/s/S6sz5dPgGNcJvrIAZ3ZjGg
-
-基于深度学习的通用物体检测算法对比探索
-
-https://mp.weixin.qq.com/s/oF3MAkl1UikRkOhrj3equw
-
-深度学习的目标检测算法是如何解决尺度问题的？
-
-https://mp.weixin.qq.com/s/oxStDMh90jB7_EY4vqja2w
-
-目标检测论文阅读：DetNet
-
-https://zhuanlan.zhihu.com/p/55972055
-
-SimpleDet:一套简单通用的目标检测与物体识别框架
-
-https://mp.weixin.qq.com/s/Sl958JkcJjy-HW9_c-SH4g
-
-Guided Anchoring: 物体检测器也能自己学Anchor
-
-https://mp.weixin.qq.com/s/uzG8sic5Y6LVqBS6iKQDhw
-
-目标检测中图像增强，mixup如何操作？
-
-https://mp.weixin.qq.com/s/pkFcmm15gnuRJtngFX7f0w
-
-目标检测训练trick超级大礼包—不改模型提升精度，值得拥有
-
-https://mp.weixin.qq.com/s/flXzhQ-Ypf3fwTqLelLzOQ
-
-李沐等将目标检测绝对精度提升5%，不牺牲推理速度
-
-https://mp.weixin.qq.com/s/6QsyYtEVjavoLfU_lQF1pw
-
-目标检测新文：Generalized Intersection over Union
-
-https://mp.weixin.qq.com/s/Xs3nThAcUOq62bO2p61YFA
-
-论文解读 Receptive Field Block Net for Accurate and Fast
-
-https://mp.weixin.qq.com/s/-G47vOGx2iNQCarYRAiNPg
-
-基于区域分解集成的目标检测
-
-https://mp.weixin.qq.com/s/rlmgN0LbUfd2n9MI8OMT2w
-
-性能大幅度提升（速度&遮挡）:基于区域分解&集成的目标检测
-
-https://zhuanlan.zhihu.com/p/59398728
-
-CVPR2019目标检测方法进展综述
-
-https://mp.weixin.qq.com/s/NWILStthG4klkwrYVcGQSQ
-
-ILC：用于自然场景多目标的计数模型
-
-https://mp.weixin.qq.com/s/9BCf0rCp660a5xQ2JNz3AQ
-
-深入理解one-stage目标检测算法（上篇）
-
-https://mp.weixin.qq.com/s/p9XaI8PSG0o1NWlkmCIn7w
-
-深入理解one-stage目标检测算法（下篇）
-
-https://mp.weixin.qq.com/s/reNCLvOyJHkJZimnMpbIig
-
-目标检测算法优化技巧：Bag of Freebies for Training Object Detection
-
-https://mp.weixin.qq.com/s/psXJNlEawZlQ-ZdktDpjOw
-
-目标检测小tricks之样本不均衡处理
-
-https://mp.weixin.qq.com/s/Pl8HABuVN27CZv-lvGROTw
-
-基于深度学习的目标检测算法近5年发展历史

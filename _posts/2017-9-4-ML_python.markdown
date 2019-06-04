@@ -246,6 +246,10 @@ https://stackoverflow.com/questions/25216382/gaussian-filter-in-scipy
 
 Gaussian filter in scipy
 
+https://mp.weixin.qq.com/s/vGS4U3g4eaPuQwBWh-lTiA
+
+机器学习核心：优化问题基于Scipy
+
 ## sklearn
 
 Scikit-learn提供了常见的机器学习算法的实现。

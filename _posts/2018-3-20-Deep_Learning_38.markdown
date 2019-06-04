@@ -364,7 +364,19 @@ https://zhuanlan.zhihu.com/p/57086099
 
 细粒度识别之Local Attention Network
 
-# 目标检测进阶+
+# 目标检测进阶
+
+https://mp.weixin.qq.com/s/-G47vOGx2iNQCarYRAiNPg
+
+基于区域分解集成的目标检测
+
+https://mp.weixin.qq.com/s/rlmgN0LbUfd2n9MI8OMT2w
+
+性能大幅度提升（速度&遮挡）:基于区域分解&集成的目标检测
+
+https://zhuanlan.zhihu.com/p/59398728
+
+CVPR2019目标检测方法进展综述
 
 https://mp.weixin.qq.com/s/apLEAMshqd3O8nU8Q0Wycg
 

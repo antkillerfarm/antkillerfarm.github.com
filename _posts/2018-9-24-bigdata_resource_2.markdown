@@ -254,6 +254,10 @@ https://github.com/lartpang/awesome-segmentation-saliency-dataset
 
 图像分割/显著性检测数据集列表
 
+https://mp.weixin.qq.com/s/q0GrF3tRBKnio23OzmIF6w
+
+找不到合适的数据？这里有281个计算机视觉数据集任你选
+
 ## 人脸/行为
 
 http://blog.csdn.net/wangkr111/article/details/44514097

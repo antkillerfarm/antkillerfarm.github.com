@@ -206,6 +206,10 @@ https://mp.weixin.qq.com/s/-b1wfvv1jdtnlXzy9BEpJA
 
 OpenCV实现失焦模糊图像恢复
 
+https://mp.weixin.qq.com/s/ygBxKVA9zXSPOEx0ROed4g
+
+OpenCV中保存不同深度图像的技巧
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。

@@ -317,3 +317,7 @@ https://mp.weixin.qq.com/s/gKQw8saCgSW6JkyocHvKqg
 https://mp.weixin.qq.com/s/nwd4zXy6hTjt6Hx9e7QMFg
 
 常用的模型集成方法介绍：bagging、boosting、stacking
+
+https://mp.weixin.qq.com/s/f8kVIBlqZxS_U8FdMTRGVw
+
+决策树算法原理（上）

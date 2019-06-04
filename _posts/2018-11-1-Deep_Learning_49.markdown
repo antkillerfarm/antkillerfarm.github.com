@@ -198,6 +198,10 @@ https://mp.weixin.qq.com/s/on1YdDexq5ICZL70mvikyw
 
 谷歌大脑提出EfficientNet平衡模型扩展三个维度，取得精度-效率的最大化！
 
+https://mp.weixin.qq.com/s/jHv3Amti1YZq51Df2mNFtg
+
+network sliming:加快模型速度同时不损失精度
+
 # Mask R-CNN
 
 Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的网络。它是何恺明2017年的新作。

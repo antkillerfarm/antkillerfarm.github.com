@@ -280,6 +280,10 @@ https://zhuanlan.zhihu.com/p/67532362
 
 生成对抗网络系列——CVPR2019中的图像转化GAN
 
+https://mp.weixin.qq.com/s/CyN2yjpHV_t4-8Jf4Rsj-Q
+
+自然语言处理的深度对抗学习方法-附104页教程Slides
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。

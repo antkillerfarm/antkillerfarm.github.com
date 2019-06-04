@@ -86,6 +86,10 @@ https://mp.weixin.qq.com/s/MBVac45WpZy4c208zF3Ang
 
 当你打开天猫的那一刻，推荐系统做了哪些工作？
 
+https://mp.weixin.qq.com/s/V7QODQ2F9q8Q7lfuny8JPw
+
+强化学习用于推荐系统，蚂蚁金服提出生成对抗用户模型
+
 # 人脸检测/识别
 
 ## 人脸识别
@@ -364,7 +368,7 @@ https://mp.weixin.qq.com/s/33VQNVvb7JGlk10Jc3mmeg
 
 从可视化到新模型：纵览深度学习的视觉可解释性
 
-# GAN参考资源+
+# GAN参考资源
 
 https://mp.weixin.qq.com/s/fmqaw0xm4Lm7h3rPsLD7yA
 

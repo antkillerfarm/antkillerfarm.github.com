@@ -230,6 +230,10 @@ https://developer.android.google.cn/ndk/reference/group/neural-networks
 
 这是Android NDK中的NN相关的接口文档
 
+https://developer.android.google.cn/ndk/guides/neuralnetworks
+
+Android NN的指南
+
 https://developer.arm.com/products/software/mali-drivers/android-nnapi
 
 这是ARM对于Android NN的一个实现。
