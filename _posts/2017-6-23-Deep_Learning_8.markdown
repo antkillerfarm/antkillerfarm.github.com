@@ -4,6 +4,20 @@ title:  深度学习（八）——seq2seq, CNN进化史（1）
 category: DL 
 ---
 
+# Bi-directional RNN（续）
+
+除了原始的Bi-directional RNN之外，后来还出现了Deep Bi-directional RNN。
+
+![](/images/article/Deep_Bi_RNN.png)
+
+上图是包含3个隐层的Deep Bi-directional RNN。
+
+参见：
+
+https://mp.weixin.qq.com/s/_CENjzEK1kjsFpvX0H5gpQ
+
+结合堆叠与深度转换的新型神经翻译架构：爱丁堡大学提出BiDeep RNN
+
 # seq2seq
 
 seq2seq最早用于Neural Machine Translation领域（与之相对应的有Statistical Machine Translation）。训练后的seq2seq模型，可以根据输入语句，自动生成翻译后的输出语句。

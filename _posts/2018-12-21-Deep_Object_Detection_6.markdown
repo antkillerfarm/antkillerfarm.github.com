@@ -180,6 +180,10 @@ https://zhuanlan.zhihu.com/p/63134919
 
 普林斯顿大学提出：CornerNet-Lite，基于关键点的目标检测算法，已开源！
 
+https://mp.weixin.qq.com/s/8hN1RdYVJQWOqPpejjfXeQ
+
+CornerNet
+
 # 目标检测进阶
 
 https://mp.weixin.qq.com/s/1nlOJ7X9ogBHTl1j2adqyg

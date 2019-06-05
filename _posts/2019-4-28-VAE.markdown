@@ -151,6 +151,8 @@ https://github.com/keras-team/keras/blob/master/examples/variational_autoencoder
 
 Keras官方提供的代码示例
 
+研究者将常见的生成模型分为两种：一种是基于似然的模型，包括VAE及其变体、基于流的模型、以及自回归（autoregressive）模型，另一种是隐式生成模型，如生成对抗网络（GAN）。
+
 以下部分主要摘自：
 
 https://kexue.fm/archives/5253

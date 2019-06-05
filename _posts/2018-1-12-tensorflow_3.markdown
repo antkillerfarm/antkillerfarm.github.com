@@ -112,6 +112,18 @@ https://mp.weixin.qq.com/s/6QKyE3jIOwBK_2rcG-Vtiw
 
 联邦机器学习-概念与应用
 
+## TensorNetwork
+
+TensorFlow的计算图模型不仅可以用于DL领域，亦可应用于其他科学计算领域。TensorNetwork就是一个基于TensorFlow的张量运算库。现成的矩阵运算库已经很多了，这次升级为张量运算库了。
+
+https://github.com/google/TensorNetwork
+
+参考：
+
+https://mp.weixin.qq.com/s/jdjX0jirTHOUqsGagJmGLQ
+
+谷歌AI开源张量计算库TensorNetwork，计算速度暴涨100倍
+
 ## 细节
 
 执行`session.run(out)`，会在终端打印out的值，但执行`res = session.run(out)`则不会。

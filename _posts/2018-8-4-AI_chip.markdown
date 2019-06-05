@@ -30,7 +30,7 @@ NN计算问题的瓶颈主要包括两类：
 
 2018.8
 
-深鉴科技是一家AI Chip公司。
+深鉴科技是一家AI Chip公司。成立于2016年3月，2018年7月被Xilinx收购。
 
 官网：
 
@@ -61,6 +61,18 @@ http://www.deephi.com/zh-cn/dnndk.html
 无耻的谈一下我司的Model Zoo。包含40+的模型，涵盖图像分类、目标检测、图像分割、人脸识别、超分辨率、OCR等。目前，主要往RNN、Attention方面发展。这里会遇到循环结构的问题，还没有做的太好。
 
 目前的AI Chip战争，入局的玩家基本都解决了芯片有无的问题。体系结构的红利也吃的差不多了，在未来几年不大可能再保持目前的算力增速。因此，未来争夺的焦点将转向软件方面。实际上，今年以来，已经有客户拿友商产品性能来压我们。然而也就是压一下而已，让他弃用他肯定不干。原因无他，我司80%的功能都已经自动化，没人会和好用过不去。
+
+## Imagination
+
+Imagination Technologies公司前身是一家名为Video Logic的公司，VideoLogic成立于1985年，主营业务是图形与音频加速等方面。后来选择了与ARM的类似盈利模式——授权IP核，并在1999年更名为Imagination Technologies。
+
+在移动GPU市场上，Imagination的PowerVR GPU一度占有非常高的市场份额。苹果公司设计的各种供苹果手机使用的AP，比如A8、A9、A10等处理器都搭载了Imagination Technologies公司的PowerVR图像处理技术。
+
+但在2017年4月，苹果宣布将不再使用其技术后，Imagination股价当天暴跌60%。后于2017年9月，被有中资背景的Canyon Bridge收购。
+
+官网：
+
+https://www.imgtec.com/vision-ai/
 
 ## TPU
 
@@ -298,19 +310,3 @@ https://mp.weixin.qq.com/s/RKRDBiBzG5u2P2eaqNAFbg
 https://mp.weixin.qq.com/s/bL1PoUjZ_sH2VKcBxI6N5A
 
 Wave公司发布数据流处理架构DPU
-
-https://mp.weixin.qq.com/s/1r7G84les7FihqPbSiS0Ng
-
-华为首款手机端AI芯片麒麟970
-
-https://mp.weixin.qq.com/s/y9dVg9YtfWxu6NcW-fxi6Q
-
-内存带宽与计算能力，谁才是决定深度学习执行性能的关键？
-
-https://mp.weixin.qq.com/s/K_dohaZbCISZlxe1Utu50w
-
-如何用FPGA加速卷积神经网络(CNN)？
-
-https://mp.weixin.qq.com/s/z68hk1yqg60QCjgTyzgG2w
-
-GPU深度学习的“加速神器”

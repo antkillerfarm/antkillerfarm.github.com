@@ -334,6 +334,10 @@ https://mp.weixin.qq.com/s/LcwlCai7PMYOBwsLXPS5HA
 
 PyTorch语义分割开源库semseg
 
+https://mp.weixin.qq.com/s/oDYMTb9NWxVsW07FLQKA_Q
+
+万字综述，核心开发者全面解读PyTorch内部机制
+
 # 超算
 
 ![](/images/img3/power.aug.gif)
@@ -354,6 +358,22 @@ https://zhuanlan.zhihu.com/p/33956771
 
 # AI Chip+
 
+https://mp.weixin.qq.com/s/1r7G84les7FihqPbSiS0Ng
+
+华为首款手机端AI芯片麒麟970
+
+https://mp.weixin.qq.com/s/y9dVg9YtfWxu6NcW-fxi6Q
+
+内存带宽与计算能力，谁才是决定深度学习执行性能的关键？
+
+https://mp.weixin.qq.com/s/K_dohaZbCISZlxe1Utu50w
+
+如何用FPGA加速卷积神经网络(CNN)？
+
+https://mp.weixin.qq.com/s/z68hk1yqg60QCjgTyzgG2w
+
+GPU深度学习的“加速神器”
+
 https://zhuanlan.zhihu.com/p/31782874
 
 Graphcore AI芯片：更多分析
@@ -373,41 +393,3 @@ https://mp.weixin.qq.com/s/JYTqJDlGw6Q2gNLaYIGLcQ
 https://mp.weixin.qq.com/s/R1_mXxBrQYgIPlUDGz8w6Q
 
 片上多核系统的互联需求
-
-# 数字成像
-
-https://mp.weixin.qq.com/s/m_EKOLjWjTyx4RBxsAAAGg
-
-4x4阵列摄/“深感”摄
-
-https://mp.weixin.qq.com/s/dX_thGA2V_-AMjDGTUgWrg
-
-计算摄影技术：身怀绝技的扫地僧
-
-https://mp.weixin.qq.com/s/ZSczU1_J_exb2oreiHtK3g
-
-夜景拍照之sensor篇
-
-https://mp.weixin.qq.com/s/eyIeLaBZ0f_EsxglsUuH8A
-
-深度学习自动构图研究报告
-
-https://mp.weixin.qq.com/s/k2JLF_aM3j68GjEByCZF-g
-
-模拟/数字增益对图像噪声的影响
-
-https://mp.weixin.qq.com/s/QmEQuEk2B_fAleewTuNClg
-
-3D成像技术和CMOS传感器的发展方向简析
-
-https://mp.weixin.qq.com/s/R7wnyHT6M-KF3ZMz0bPrVg
-
-这台相机没镜头！美国教授新发明，一块玻璃可成像，拍照给计算机看
-
-https://mp.weixin.qq.com/s/j970Qp8Cz2fpbImujkS2Xg
-
-自动驾驶应用中的LED flicker问题
-
-https://mp.weixin.qq.com/s/Yy-XEyM0YGTRFUX2uWgNKw
-
-夜景拍照之算法篇

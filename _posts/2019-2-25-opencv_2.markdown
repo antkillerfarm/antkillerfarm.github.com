@@ -210,6 +210,10 @@ https://mp.weixin.qq.com/s/ygBxKVA9zXSPOEx0ROed4g
 
 OpenCV中保存不同深度图像的技巧
 
+https://mp.weixin.qq.com/s/5xrUacqWogLZHfw45yR3Vw
+
+OpenCV4中调用HED边缘检测算法
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。

@@ -172,6 +172,10 @@ https://github.com/LeeJunHyun/Image_Segmentation
 
 ## 参考
 
+https://mp.weixin.qq.com/s/_q8N8keNpcD-jXLrRd_8dw
+
+深度学习时代下的语义分割综述
+
 https://mp.weixin.qq.com/s/cANlqQAI-A2mC9vnd3imQA
 
 Instance-Aware图像语义分割

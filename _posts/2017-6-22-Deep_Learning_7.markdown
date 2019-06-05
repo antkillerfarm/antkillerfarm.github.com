@@ -198,6 +198,10 @@ https://mp.weixin.qq.com/s/VSRtjIH1tvAVhGAByEH0bg
 
 21种NLP任务激活函数大比拼：你一定猜不到谁赢了
 
+https://www.cnblogs.com/makefile/p/activation-function.html
+
+激活函数(ReLU, Swish, Maxout)
+
 # Deep Residual Network
 
 无论采用何种方法，可训练的神经网络的层数都不可能无限深。有的时候，即使没有梯度消失，也存在训练退化（即深层网络的效果还不如浅层网络）的问题。
@@ -301,15 +305,3 @@ ResNet架构可逆！多大等提出性能优越的可逆残差网络
 ![](/images/article/Bi_directional_RNN.png)
 
 从图中可以看出，Bi-directional RNN有两个隐层，分别处理前向和后向的时序信息。
-
-除了原始的Bi-directional RNN之外，后来还出现了Deep Bi-directional RNN。
-
-![](/images/article/Deep_Bi_RNN.png)
-
-上图是包含3个隐层的Deep Bi-directional RNN。
-
-参见：
-
-https://mp.weixin.qq.com/s/_CENjzEK1kjsFpvX0H5gpQ
-
-结合堆叠与深度转换的新型神经翻译架构：爱丁堡大学提出BiDeep RNN

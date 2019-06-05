@@ -377,3 +377,7 @@ https://zhuanlan.zhihu.com/p/53908224
 https://mp.weixin.qq.com/s/xZ0MWPdrnzk9cqOP-3wdkw
 
 Pig变飞机？AI为什么这么蠢--Adversarial Attack
+
+https://mp.weixin.qq.com/s/xuncjtCXuqMpJrezFZiFYA
+
+一文读懂文本处理中的对抗训练

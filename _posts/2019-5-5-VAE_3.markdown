@@ -282,6 +282,10 @@ https://mp.weixin.qq.com/s/0coPJFrW7anW7QuqjPBt3g
 
 深度生成模型在信号处理领域的应用
 
+https://mp.weixin.qq.com/s/GJr-YtV84eV1KbkyVSkcBA
+
+超越BigGAN，DeepMind提出“史上最强非GAN生成器”VQ-VAE-2
+
 # 通信协议
 
 https://mp.weixin.qq.com/s/_bWOYpZNjA4p7ZWM1J_4mw
