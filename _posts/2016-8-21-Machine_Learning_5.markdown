@@ -38,6 +38,10 @@ https://mp.weixin.qq.com/s/5655NgkxrbK3qtA4Ilxd4w
 
 为何引入对偶问题
 
+https://mp.weixin.qq.com/s/PRKEIW3HEafytUNscHSLpA
+
+如何写对偶问题
+
 ## 支持向量
 
 针对最优边距分类问题，我们定义：

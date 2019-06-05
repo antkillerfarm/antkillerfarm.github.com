@@ -428,3 +428,17 @@ https://mp.weixin.qq.com/s/06-iOG5TkRkHb4RZl1bXNQ
 https://mp.weixin.qq.com/s/lv_sjvXx8vWf6TsVoYoxFw
 
 Python处理文件系统的10种方法
+
+# 机器人/无人驾驶参考资源+
+
+https://zhuanlan.zhihu.com/p/66963787
+
+自动驾驶模拟仿真系统中的传感器模型
+
+https://mp.weixin.qq.com/s/AlYTOetU43VDaSlotRDUDg
+
+秒杀高精地图？MIT&丰田称仅靠简单地图和视觉就可让无人车适应新环境
+
+https://mp.weixin.qq.com/s/vbzcF9Z_M08DDq3cTVcBfQ
+
+行为克隆：自动驾驶汽车的端到端学习

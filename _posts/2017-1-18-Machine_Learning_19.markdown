@@ -321,3 +321,7 @@ https://mp.weixin.qq.com/s/nwd4zXy6hTjt6Hx9e7QMFg
 https://mp.weixin.qq.com/s/f8kVIBlqZxS_U8FdMTRGVw
 
 决策树算法原理（上）
+
+https://mp.weixin.qq.com/s/ku942npFMgXxOrm0Xam-Cg
+
+决策树算法原理（下）

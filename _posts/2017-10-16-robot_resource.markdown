@@ -352,6 +352,40 @@ https://mp.weixin.qq.com/s/1dOFsRCuTbm6UI1Pd5MNjw
 
 快速扩展随机树路径规划算法
 
+# 车道线检测
+
+https://blog.csdn.net/Young_Gy/article/details/75194914
+
+无人驾驶之车道线检测简易版
+
+https://mp.weixin.qq.com/s/M-J_WaV6AstRwZISPYQ-NA
+
+再识图像之高级车道线检测
+
+https://mp.weixin.qq.com/s/i793SOBdI4GyrfG_5kb3lg
+
+鲁汶大学提出可端到端学习的车道线检测算法
+
+https://zhuanlan.zhihu.com/p/58980251
+
+基于摄像头的车道线检测方法一览
+
+https://mp.weixin.qq.com/s/SlQy59AHyh1BEzDpKOu5GA
+
+初识图像之初级车道线检测
+
+https://mp.weixin.qq.com/s/ANKdDuCxMZAWHEfQbN54MA
+
+再识图像之高级车道线检测
+
+https://mp.weixin.qq.com/s/K5MJTYmuJ4Vv0sKT-VpDvg
+
+一种基于ACP理论的平行车道线检测方法，能有效解决目前车道线检测的困境
+
+https://mp.weixin.qq.com/s/heh6B71IQ5NjmaTo6BaXdA
+
+无人驾驶图像识别-车道线检测
+
 ## 参考
 
 https://rsu.data61.csiro.au/people/jalvarez/research_bbdd.php
@@ -399,39 +433,3 @@ https://zhuanlan.zhihu.com/p/41460767
 https://mp.weixin.qq.com/s/ZePNQ3l3uMMIlndk20sOVA
 
 基于视频的无监督深度和车辆运动估计
-
-https://mp.weixin.qq.com/s/FebViO0PM-cMWJN6rXU6Rg
-
-详解工业机器人典型的控制系统及结构
-
-http://mp.weixin.qq.com/s/KcHlWmIdKpjledwWFdNbCw
-
-自动驾驶汽车到底涉及了哪些技术？
-
-http://mp.weixin.qq.com/s/SWUQvR6qA2JKjaclWskUTQ
-
-DeepTest：可自动测试深度神经网络驾驶系统
-
-https://mp.weixin.qq.com/s/Rmvksy54iKgcyd7bqy_oxQ
-
-机器人开源操作系统ROS入门
-
-https://zhuanlan.zhihu.com/p/51353579
-
-Matlab/Simulink与ROS的通讯
-
-https://mp.weixin.qq.com/s/0njQq6QAfIdwsF5gTvk1Wg
-
-惯性导航系统：现代军事系统的核心技术产品
-
-https://www.zhihu.com/question/47736315
-
-通俗的解释欧拉角，之后为何要引入四元数？
-
-https://zhuanlan.zhihu.com/p/25822544
-
-MATLAB R2017a: 自动驾驶工具箱
-
-https://mp.weixin.qq.com/s/Fc19GZgMP167fvqOcG0rbA
-
-英特尔中国研究院HERO机器人平台问世

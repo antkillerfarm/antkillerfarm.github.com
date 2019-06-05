@@ -282,6 +282,14 @@ https://mp.weixin.qq.com/s/g3_njGlo3dC696wo0wplVQ
 
 臭氧空洞再度加剧，是谁在偷偷破坏臭氧层？
 
+https://zhuanlan.zhihu.com/p/51330777
+
+宇称不守恒到底说了啥？杨振宁和李政道的发现究竟有多大意义？
+
+https://zhuanlan.zhihu.com/p/55922673
+
+杨-米尔斯理论说了啥？为什么说这是杨振宁超越他诺奖的贡献？
+
 ## LSM (Log Structured Merge)
 
 十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。
@@ -409,29 +417,3 @@ https://mp.weixin.qq.com/s/SWpgNMDIRfRugWBhMyGrTQ
 https://visualgo.net/zh
 
 一个数据结构和算法的可视化网站
-
-## howmuch.net
-
-howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：
-
-![](/images/article/top_10_company.jpg)
-
-网址：
-
-https://howmuch.net/
-
-## Gephi
-
-Gephi是一个针对图和网络的可视化工具。
-
-官网：
-
-https://gephi.org/
-
-## Processing
-
-Processing是一个在可视化领域用的比较多的sketchbook，类似于Logo语言的威力加强版。支持Java、python等多种语言。
-
-官网：
-
-https://processing.org

@@ -266,6 +266,10 @@ https://zhuanlan.zhihu.com/p/58812258
 
 GAN万字长文综述
 
+https://mp.weixin.qq.com/s/SBYtetkfi-DboM5jFTXVIQ
+
+生成式对抗网络GAN最新进展综述
+
 https://mp.weixin.qq.com/s/gH6b5zgvWArOSfKBSIG1Ww
 
 必读！生成对抗网络GAN论文TOP 10

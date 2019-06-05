@@ -292,6 +292,10 @@ https://blog.csdn.net/liuchonge/article/details/78929474
 
 从头实现深度学习的对话系统--简单chatbot代码实现
 
+https://mp.weixin.qq.com/s/Vt_g0VgAlZAV6eC_LJMzGg
+
+标签间相关性在多标签分类问题中的应用
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/rVXCjEilRC4sgluIg0q6TA

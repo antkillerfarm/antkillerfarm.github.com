@@ -6,6 +6,42 @@ category: resource
 
 # 机器人/无人驾驶参考资源
 
+https://mp.weixin.qq.com/s/FebViO0PM-cMWJN6rXU6Rg
+
+详解工业机器人典型的控制系统及结构
+
+http://mp.weixin.qq.com/s/KcHlWmIdKpjledwWFdNbCw
+
+自动驾驶汽车到底涉及了哪些技术？
+
+http://mp.weixin.qq.com/s/SWUQvR6qA2JKjaclWskUTQ
+
+DeepTest：可自动测试深度神经网络驾驶系统
+
+https://mp.weixin.qq.com/s/Rmvksy54iKgcyd7bqy_oxQ
+
+机器人开源操作系统ROS入门
+
+https://zhuanlan.zhihu.com/p/51353579
+
+Matlab/Simulink与ROS的通讯
+
+https://mp.weixin.qq.com/s/0njQq6QAfIdwsF5gTvk1Wg
+
+惯性导航系统：现代军事系统的核心技术产品
+
+https://www.zhihu.com/question/47736315
+
+通俗的解释欧拉角，之后为何要引入四元数？
+
+https://zhuanlan.zhihu.com/p/25822544
+
+MATLAB R2017a: 自动驾驶工具箱
+
+https://mp.weixin.qq.com/s/Fc19GZgMP167fvqOcG0rbA
+
+英特尔中国研究院HERO机器人平台问世
+
 https://mp.weixin.qq.com/s/h7qBPDoYTDCXSix1KdyXtg
 
 波士顿动动力的机器人用的是什么学习算法？
@@ -130,14 +166,6 @@ https://mp.weixin.qq.com/s/K1EIKe6U7rmlYAeZkP5O1w
 
 一种新的智能车辆精确定位方法——路面车道线编码
 
-https://blog.csdn.net/Young_Gy/article/details/75194914
-
-无人驾驶之车道线检测简易版
-
-https://mp.weixin.qq.com/s/M-J_WaV6AstRwZISPYQ-NA
-
-再识图像之高级车道线检测
-
 https://mp.weixin.qq.com/s/7kuMFIhJmjvVSRrmeAUE7w
 
 120页高清汽车构造图解，太NB了！每个人都该看看
@@ -169,10 +197,6 @@ https://mp.weixin.qq.com/s/Gn1FCcWLyXMviWBUP6SLGQ
 https://mp.weixin.qq.com/s/F2Vyx3LXKcz2C2J5KHGVLg
 
 基于深度学习的多模态情绪识别与疲劳驾驶检测
-
-https://mp.weixin.qq.com/s/i793SOBdI4GyrfG_5kb3lg
-
-鲁汶大学提出可端到端学习的车道线检测算法
 
 https://mp.weixin.qq.com/s/Uq2Acgo8eSD321AzdiPeJw
 
@@ -266,10 +290,6 @@ https://mp.weixin.qq.com/s/Gqffn_1kgP34MwthcCKH0Q
 
 基于机动LSTM的周围车辆多模态轨迹预测
 
-https://zhuanlan.zhihu.com/p/58980251
-
-基于摄像头的车道线检测方法一览
-
 https://mp.weixin.qq.com/s/WbTtBjeUmBeS3OQgaFG4eA
 
 Apollo控制算法之LQR
@@ -301,14 +321,6 @@ https://mp.weixin.qq.com/s/vFyifSgGLImUrTwcw9bPsg
 https://mp.weixin.qq.com/s/aXck7MLpHojuIkvVP1iHKg
 
 北航机器人研究所名誉所长王田苗：人工智能与机器人的发展趋势
-
-https://mp.weixin.qq.com/s/SlQy59AHyh1BEzDpKOu5GA
-
-初识图像之初级车道线检测
-
-https://mp.weixin.qq.com/s/ANKdDuCxMZAWHEfQbN54MA
-
-再识图像之高级车道线检测
 
 https://blog.csdn.net/qq_35723367/article/details/79721503
 
@@ -374,10 +386,6 @@ https://mp.weixin.qq.com/s/ZRbEwUlqtp8f5987j9-McQ
 
 自动驾驶计算机视觉研究综述：难题、数据集与前沿成果
 
-https://mp.weixin.qq.com/s/K5MJTYmuJ4Vv0sKT-VpDvg
-
-一种基于ACP理论的平行车道线检测方法，能有效解决目前车道线检测的困境
-
 https://mp.weixin.qq.com/s/g8Y83vhw-OORm0CJElwPEA
 
 感知算法
@@ -401,15 +409,3 @@ LaserNet：一种高效的自动驾驶概率三维目标探测器
 https://mp.weixin.qq.com/s/GnJRfbc6_smyeWjCKzsc7g
 
 通过视觉信号预测驾驶员意图
-
-https://zhuanlan.zhihu.com/p/66963787
-
-自动驾驶模拟仿真系统中的传感器模型
-
-https://mp.weixin.qq.com/s/AlYTOetU43VDaSlotRDUDg
-
-秒杀高精地图？MIT&丰田称仅靠简单地图和视觉就可让无人车适应新环境
-
-https://mp.weixin.qq.com/s/vbzcF9Z_M08DDq3cTVcBfQ
-
-行为克隆：自动驾驶汽车的端到端学习

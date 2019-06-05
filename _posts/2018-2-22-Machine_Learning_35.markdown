@@ -314,6 +314,10 @@ https://mp.weixin.qq.com/s/ij3bf61Pu7lrX0WijhbDeA
 
 骑驴找马：利用深度强化学习模型定位新物体
 
+https://mp.weixin.qq.com/s/iYxijHlE3sLJgKnwwd8Tgg
+
+使用深度强化学习和贝叶斯优化获得巨额利润
+
 # 目标检测进阶+
 
 https://zhuanlan.zhihu.com/p/54334986
