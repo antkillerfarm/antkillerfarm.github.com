@@ -184,6 +184,8 @@ FCW：Forward Collision Warning，前向碰撞预警
 
 AEB：Automatic emergency braking，自动紧急刹车
 
+V2X：vehicle to everything
+
 ## blog
 
 http://www.cnblogs.com/yhlx125/

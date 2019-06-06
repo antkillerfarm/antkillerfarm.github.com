@@ -290,6 +290,10 @@ https://zhuanlan.zhihu.com/p/55922673
 
 杨-米尔斯理论说了啥？为什么说这是杨振宁超越他诺奖的贡献？
 
+https://mp.weixin.qq.com/s/pE2hXaq-T20LXbvuXdTFJQ
+
+用火烧子弹，结果会怎样？可能又要颠覆你的认知了！
+
 ## LSM (Log Structured Merge)
 
 十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。

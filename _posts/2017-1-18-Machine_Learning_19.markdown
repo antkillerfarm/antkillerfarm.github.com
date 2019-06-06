@@ -325,3 +325,7 @@ https://mp.weixin.qq.com/s/f8kVIBlqZxS_U8FdMTRGVw
 https://mp.weixin.qq.com/s/ku942npFMgXxOrm0Xam-Cg
 
 决策树算法原理（下）
+
+https://blog.csdn.net/CoderPai/article/details/90900707
+
+bagging方法

@@ -236,6 +236,10 @@ https://mp.weixin.qq.com/s/aHupAjPNFdUdaG9Uof_obQ
 
 速度提升270倍！微软和浙大联合推出全新语音合成系统FastSpeech
 
+https://mp.weixin.qq.com/s/JEYucJ16Zsxc6yWHPHGaZA
+
+浙大研发AudioFace：随心录语音就能实时生成3D面部动画
+
 # Flink
 
 Flink是一个流计算引擎。
@@ -359,3 +363,37 @@ https://mp.weixin.qq.com/s/j970Qp8Cz2fpbImujkS2Xg
 https://mp.weixin.qq.com/s/Yy-XEyM0YGTRFUX2uWgNKw
 
 夜景拍照之算法篇
+
+# 世说新语+
+
+## 2019.6
+
+奥匈帝国的人类学家，马林诺斯基，1914年在太平洋的巴布亚与当地食人族聊天。
+
+马林诺斯基提到了“战争”也就是第一次世界大战。
+
+“现在欧洲在打仗，每一天都要死几万人”
+
+食人族疑惑不解:“你们怎么吃得了那么多人？”
+
+马林诺斯基解释说，“欧洲人不吃人肉...”
+
+食人族震惊:“不吃肉，为什么要杀人？你们太野蛮了！”
+
+----
+
+https://zhuanlan.zhihu.com/p/68046339
+
+印度人是如何把外卖做成百年老店的？
+
+----
+
+https://mp.weixin.qq.com/s/FtgskvIWrkw2DwhoI24WEg
+
+走路就能赚钱，趣步的鬼话你也信
+
+----
+
+https://mp.weixin.qq.com/s/5Ua1tXJ0Eytdh6gzVxXpeg
+
+上万只海螺才提取出一克，价比黄金的染料是什么颜色？
