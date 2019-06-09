@@ -132,7 +132,7 @@ TF版本
 
 它的改进点在于：
 
-1.**骨干网络再次升级。**
+ - **骨干网络再次升级。**
 
 ![](/images/img3/YOLOv3.png)
 
@@ -140,7 +140,7 @@ TF版本
 
 从结构来看，它明显借鉴了ResNet的残差结构。而3x3、1x1卷积核的使用，则显然是SqueezeNet的思路。
 
-2.**多尺度先验框**。
+ - **多尺度先验框**。
 
 ![](/images/img3/YOLOv3.jpg)
 
@@ -150,9 +150,9 @@ YOLOv2从两个不同尺度的conv层输出中提取bbox，而YOLOv3从3个不�
 
 上图是YOLOv3网络输出的tensor的格式。
 
-3.**对象分类softmax改成logistic**。
+ - **对象分类softmax改成logistic**。
 
-预测对象类别时不使用softmax，改成使用logistic的输出进行预测。这样能够支持多标签对象（比如一个人有Woman 和 Person两个标签）。
+预测对象类别时不使用softmax，改成使用logistic的输出进行预测。这样能够支持多标签对象（比如一个人有Woman和Person两个标签）。
 
 实际上，就是把loss由`tf.nn.softmax_cross_entropy_with_logits`换成`tf.nn.sigmoid_cross_entropy_with_logits`。它的特点是每个类别给出一个二分类（是/否）的置信度，如果某个对象是多标签的话，则它可能有多个类别的置信度接近1。
 

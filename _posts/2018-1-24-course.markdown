@@ -62,6 +62,12 @@ https://web.stanford.edu/class/cs230/syllabus.html
 
 CS230: Deep Learning。吴恩达2018年开的新课
 
+https://stanford.edu/~shervine/teaching/cs-221/
+
+学霸双胞胎开源斯坦福CS 221人工智能备忘录
+
+这个教程以及下面的两个教程的作者是一对来自法国的学霸双胞胎，Afshine Amidi和Shervine Amidi。Afshine在MIT读完了硕士，目前是Uber的数据科学家。Shervine现在则是斯坦福硕士在读。
+
 https://stanford.edu/~shervine/teaching/cs-230.html
 
 CS230的Cheatsheet
@@ -405,23 +411,3 @@ https://seeing-theory.brown.edu/
 https://inst.eecs.berkeley.edu/~cs188/fa18/
 
 UCB CS188: Introduction to Artificial Intelligence
-
-https://sites.google.com/view/berkeley-cs294-158-sp19/home
-
-UCB CS294-158: Deep Unsupervised Learning
-
-https://github.com/mbinary/USTC-CS-Courses-Resource
-
-中国科学技术大学计算机学院课程资源
-
-https://mp.weixin.qq.com/s/iQpERylxzfQ0P51AQBj8bA
-
-概率论导论-哈佛和斯坦福大学合著630页新书
-
-https://people.csail.mit.edu/madry/6.883/
-
-6.883 Science of Deep Learning: Bridging Theory and Practice
-
-https://fullstackdeeplearning.com/march2019
-
-UCB: Full Stack Deep Learning。这个课程是专门讲述如何部署DL工程到实际产品中。

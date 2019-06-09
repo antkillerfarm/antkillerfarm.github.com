@@ -269,6 +269,10 @@ https://mp.weixin.qq.com/s/czqO4Lo1Jt9zqg2UKNlLYg
 
 手把手教你用Python创建微信聊天机器人
 
+https://mp.weixin.qq.com/s/DMK3gwMKbpsfOrWMxjb5lg
+
+不到20行代码，用Python做一个智能聊天机器人
+
 https://mp.weixin.qq.com/s/wIXCIMzZmh75SV-qJIKbCw
 
 Python程序员最常犯的10个错误，你中招了吗？
@@ -429,6 +433,10 @@ https://mp.weixin.qq.com/s/lv_sjvXx8vWf6TsVoYoxFw
 
 Python处理文件系统的10种方法
 
+https://mp.weixin.qq.com/s/la9srinIeibkXZEDRvv5pA
+
+手把手教你用Python实现“坦克大战”，附详细代码！
+
 # 机器人/无人驾驶参考资源+
 
 https://zhuanlan.zhihu.com/p/66963787
@@ -442,3 +450,7 @@ https://mp.weixin.qq.com/s/AlYTOetU43VDaSlotRDUDg
 https://mp.weixin.qq.com/s/vbzcF9Z_M08DDq3cTVcBfQ
 
 行为克隆：自动驾驶汽车的端到端学习
+
+https://mp.weixin.qq.com/s/_4P_eEZzxj87sv5MALDM-A
+
+规划技术详解——Basic Motion Planning and Overview

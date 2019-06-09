@@ -130,6 +130,10 @@ https://mp.weixin.qq.com/s/mhJ2Q30APlCP6_AkV6gG3w
 
 Uber如何为大规模Apache Hadoop表实现一致性数据分区？
 
+https://mp.weixin.qq.com/s/QjZL3fGz-Kvjh40RGVm4AQ
+
+SQL on Hadoop在快手大数据平台的实践与优化
+
 # 知名数据集
 
 ## CV（续）
@@ -395,15 +399,3 @@ https://zhuanlan.zhihu.com/p/40984645
 http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201703/t20170310_1471429.html
 
 国家统计局：最新县及县以上行政区划代码
-
-https://github.com/wecatch/china_regions
-
-最全最新中国省，市，地区json及sql数据
-
-https://mp.weixin.qq.com/s/h38VZnInkuOjkgcEmsTtMg
-
-让机器帮你做行测题，UCLA朱松纯团队提出关系和类比视觉推理数据集RAVEN
-
-https://mp.weixin.qq.com/s/8wiHVMhKjzlg8BqMMLLgYw
-
-神经网络也能解数学题，DeepMind发布千万数学题海数据集

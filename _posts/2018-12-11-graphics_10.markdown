@@ -270,10 +270,6 @@ https://zhuanlan.zhihu.com/p/41874735
 
 # CV/CG参考资源
 
-https://zhuanlan.zhihu.com/p/31921046
-
-深度相机的主流技术方案一览Structure Light，ToF，Stereo Dual
-
 https://zhuanlan.zhihu.com/p/32752535
 
 立体匹配成像算法BM，SGBM，GC，SAD一览

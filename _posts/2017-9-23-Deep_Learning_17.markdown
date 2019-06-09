@@ -216,6 +216,10 @@ https://mp.weixin.qq.com/s/foP1xSa5G8oNtAv_pI6AqQ
 
 深度神经网络自监督视觉特征学习综述
 
+https://mp.weixin.qq.com/s/2Wm6eQodwlc5XkjGKqhwCg
+
+南京大学周志华教授综述论文：弱监督学习
+
 https://mp.weixin.qq.com/s/aCWAU2RXk9fTzfFqOyjqUw
 
 能自主学习的人工突触，为无监督学习开辟新的路径
@@ -413,15 +417,3 @@ https://mp.weixin.qq.com/s/BXwL33qOf3f7BtJvHsi23Q
 https://mp.weixin.qq.com/s/2PLp2xNfhkHB3fPQr5Ts6g
 
 密歇根大学40页《20年目标检测综述》最新论文，带你全面了解目标检测方法
-
-https://mp.weixin.qq.com/s/HmUhlw90b2aTsoEwBdYbdQ
-
-目标检测二十年技术综述
-
-https://www.zhihu.com/question/270143544
-
-目标检测中，不同物体之间的距离非常接近如何解决？
-
-https://mp.weixin.qq.com/s/b4s8Te29DyS71xwQU789pQ
-
-实体零售场景下密集商品的精确探测

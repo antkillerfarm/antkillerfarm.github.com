@@ -258,6 +258,10 @@ https://mp.weixin.qq.com/s/4fccUusfRQ7KYhIKWVy38w
 
 如何用图示来优雅地解释复数的意义？
 
+https://mp.weixin.qq.com/s/vdxfzuGEMoiwGARYYzXbKg
+
+最伟大的数学公式：欧拉公式
+
 # 傅立叶变换
 
 $$\hat{f}(\xi) = \int_{-\infty}^{+\infty} f(x)\ e^{- 2\pi i x \xi}\mathrm{d}x$$

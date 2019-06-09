@@ -362,6 +362,14 @@ https://mp.weixin.qq.com/s/xIkYLncxmLKqLQqeq-XxAw
 
 深度学习文本分类方法综述
 
+https://mp.weixin.qq.com/s/sJnDrGe7U_1XtJ8sYIcWiw
+
+深度文本分类综述
+
+https://mp.weixin.qq.com/s/ylRJrP-wnnelX5uUR0fukw
+
+一文综述经典的深度文本分类方法
+
 https://mp.weixin.qq.com/s/0wMTL7x87YXiin3xkf8eJA
 
 中文文本分类技术实践与分享

@@ -206,6 +206,40 @@ https://mp.weixin.qq.com/s/jHv3Amti1YZq51Df2mNFtg
 
 network sliming:加快模型速度同时不损失精度
 
+# 知名数据集+
+
+## Other（续）
+
+https://github.com/wecatch/china_regions
+
+最全最新中国省，市，地区json及sql数据
+
+https://mp.weixin.qq.com/s/h38VZnInkuOjkgcEmsTtMg
+
+让机器帮你做行测题，UCLA朱松纯团队提出关系和类比视觉推理数据集RAVEN
+
+https://mp.weixin.qq.com/s/8wiHVMhKjzlg8BqMMLLgYw
+
+神经网络也能解数学题，DeepMind发布千万数学题海数据集
+
+# AI工具+
+
+https://mp.weixin.qq.com/s/hkcVhyqiDW--F3QxucgEcA
+
+亚马逊开源神经机器翻译框架Sockeye：基于Apache MXNet的NMT平台
+
+http://www.sohu.com/a/163063280_633698
+
+无监督对话数据清洗利器：Data Purification Framework
+
+https://mp.weixin.qq.com/s/l0pzq54uDdYctSj7R3QNWw
+
+AmpliGraph：知识图谱表示学习工具包
+
+https://mp.weixin.qq.com/s/a3zu7nvy0itOvzvgOlf01Q
+
+搜狗开源机器阅读理解工具箱
+
 # Fast Image Processing
 
 ![](/images/article/FIP.png)

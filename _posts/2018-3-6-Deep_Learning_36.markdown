@@ -94,6 +94,10 @@ https://mp.weixin.qq.com/s/FevsysNqRhq6Njh0ILCveQ
 
 推荐系统遇上深度学习，9篇阿里推荐论文汇总！
 
+https://mp.weixin.qq.com/s/_YP6zpsgMLgAZemW3PRj3w
+
+基于深度学习的序列推荐系统：概念，算法与评估
+
 # 人脸检测/识别
 
 ## 人脸识别
@@ -258,6 +262,10 @@ https://mp.weixin.qq.com/s/s2SFQgUOZLV-f6auqymVOg
 
 基于Caffe的年龄&性别识别
 
+https://mp.weixin.qq.com/s/I3MS1gB1yjSnadex4LfOYA
+
+旷视提出极轻量级年龄估计模型C3AE
+
 ## 活体检测
 
 https://mp.weixin.qq.com/s/zOnmKSnQctnyx7pKXX-tpQ
@@ -331,6 +339,10 @@ https://github.com/ChanChiChoi/awesome-Face_Recognition
 https://github.com/ShownX/FacePaperCollection
 
 人脸相关文献代码集锦：人脸检测、人脸识别、人脸生成等
+
+https://mp.weixin.qq.com/s/__b-7Cl482taXwIVb_9vwQ
+
+以人为本的计算机视觉研究：WIDER Challenge 2019（人脸检测/行人检测/人物检索）
 
 https://mp.weixin.qq.com/s/eZ78biXN-mVw3s9Ky_LBZg
 

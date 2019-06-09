@@ -390,6 +390,10 @@ https://www.zhihu.com/question/40763253
 
 如何在Word和PowerPoint中优雅地插入Latex公式？
 
+https://mp.weixin.qq.com/s/3RtKAT3WE8P2YIZRA2dZ3A
+
+LaTeX的历史：图灵奖得主1977年开启的计划，引发学术圈重大变革
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/7dpYRLKpRn0MSa5bz_sBDg
@@ -415,19 +419,3 @@ https://mp.weixin.qq.com/s/-4b3u02KiIt5i4Yzz-Ed3g
 https://mp.weixin.qq.com/s/VdMYtZfH0yBNWMbiuGElOg
 
 商汤及联合实验室入选论文重点解读：ECCV 2018
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650748834&idx=3&sn=805564d2d9956dff6bb888ccb61e9b7b
-
-看图聊天的骚操作，MIT开发精准到单词的语音-图像配对系统
-
-https://mp.weixin.qq.com/s/emJGtx-LAWarlpUnRf-0-w
-
-观察运动推断物体材料，MIT提出“视觉+运动”物理基元分解
-
-https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247491876&idx=1&sn=e431c2291f4c985777be4d9b7bdfefa6
-
-正经炼丹师如何完美安排国庆长假？假期专属论文清单
-
-https://mp.weixin.qq.com/s/aPBPzBEGoiXF0-uMO_BCFQ
-
-iCAN：以人为中心的“人-物”交互检测网络

@@ -290,6 +290,10 @@ https://mp.weixin.qq.com/s/JkyJMKyDAaiX2M58PnWXaA
 
 如何使用sklearn优雅地进行数据挖掘？
 
+https://mp.weixin.qq.com/s/G5P0M-WGV_rMmHJE8lz6WQ
+
+Scikit-Learn决策树算法类库使用小结
+
 ## Matplotlib
 
 Matplotlib是一个高阶的图形库，主要提供生成图表等数据可视化方面的功能。

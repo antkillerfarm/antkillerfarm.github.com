@@ -94,6 +94,14 @@ https://mp.weixin.qq.com/s/hIWvLLKWksNlO2eaVKcbAA
 
 那个延续摩尔定律的人的传奇人生。Mark Bohr，UIUC硕士（1978），美国工程院院士。
 
+https://mp.weixin.qq.com/s?__biz=MzI1NTA0MDUyMA==&mid=2456660188&idx=1&sn=b9dafaa60e10130442aac48f165800f7
+
+芯片春秋·ARM传
+
+https://mp.weixin.qq.com/s/bggtiz_a-Io8e9UQohxv1A
+
+紫光芯片王国是怎样建成的
+
 ## 多核
 
 https://zhuanlan.zhihu.com/p/53596593
@@ -129,10 +137,6 @@ https://mp.weixin.qq.com/s/Lnolh9y0rf86wOGa-F1xmw
 https://mp.weixin.qq.com/s/f_rk-NPKNzYpbHOr5bgluw
 
 一文了解半导体的过去、现在和未来
-
-https://mp.weixin.qq.com/s?__biz=MzI1NTA0MDUyMA==&mid=2456660188&idx=1&sn=b9dafaa60e10130442aac48f165800f7
-
-芯片春秋·ARM传
 
 ## 参考
 
@@ -311,6 +315,10 @@ https://zhuanlan.zhihu.com/p/66263349
 https://mp.weixin.qq.com/s/lz6EoLiLtPtWFMG1FJCuQw
 
 化合物半导体的机遇
+
+https://mp.weixin.qq.com/s/QF9Nsh_YyX9LZQ_D-4hP-A
+
+芯片是怎么制造的？央视最强科普！
 
 # Apollo
 

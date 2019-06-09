@@ -194,6 +194,10 @@ https://mp.weixin.qq.com/s/D0JaJaHeNX4kljSTxTsAAw
 
 一文概览卷积神经网络中的类别不均衡问题
 
+https://mp.weixin.qq.com/s/ZRwr4lIyi3EHafuNAwUrLw
+
+Soft Sampling：探索更有效的采样策略
+
 ## Caffe实现的细节问题
 
 ![](/images/article/ssd_4.png)

@@ -428,6 +428,10 @@ https://mp.weixin.qq.com/s/1un50xpUf0JGIG03M93gZQ
 
 解析5G背后的核心技术：波束成形
 
+https://mp.weixin.qq.com/s/uxuWmcplTmS8cJObd8cfVw
+
+第一次有人把5G核心网讲得如此通俗易懂！
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

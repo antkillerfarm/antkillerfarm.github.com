@@ -244,6 +244,10 @@ https://mp.weixin.qq.com/s/ZkblK9TfBHscX9s0JMBwFA
 
 DeepMind登上Science：“和AI相比，人类都是猪队友”，团战称霸雷神之锤3
 
+https://mp.weixin.qq.com/s/iYB4sd3LXS9Acf7KiV1YvQ
+
+FIFA变身AI主场：谷歌推出强化学习“足球引擎”完爆人类玩家
+
 ## AI与安全
 
 https://mp.weixin.qq.com/s/jBE4gP3O0qVJ50G49Q_xmQ

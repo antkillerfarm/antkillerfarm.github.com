@@ -391,3 +391,7 @@ https://mp.weixin.qq.com/s/SWcJut6QqOvbziirxTd2Kg
 https://mp.weixin.qq.com/s/Lakq83_ngUJf1ES3N7J9_g
 
 图卷积在基于骨架的动作识别中的应用
+
+https://mp.weixin.qq.com/s/5wSgC4pXBfRLoCX-73DLnw
+
+什么是图卷积网络？行为识别领域新星

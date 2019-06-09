@@ -300,6 +300,10 @@ https://mp.weixin.qq.com/s/CyN2yjpHV_t4-8Jf4Rsj-Q
 
 自然语言处理的深度对抗学习方法-附104页教程Slides
 
+https://mp.weixin.qq.com/s/dS4xXgt2duJReLSIlNOMlQ
+
+你的TextGAN调出来了么？来看看人在怎么调的
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。

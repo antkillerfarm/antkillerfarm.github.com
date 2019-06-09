@@ -349,25 +349,23 @@ https://mp.weixin.qq.com/s/K9U3GCW1tAIYRoKKq_nG9w
 
 一行TensorFlow/Keras代码解决真实场景中数据不平衡(imbalanced)问题
 
-# AI工具+
-
-https://mp.weixin.qq.com/s/hkcVhyqiDW--F3QxucgEcA
-
-亚马逊开源神经机器翻译框架Sockeye：基于Apache MXNet的NMT平台
-
-http://www.sohu.com/a/163063280_633698
-
-无监督对话数据清洗利器：Data Purification Framework
-
-https://mp.weixin.qq.com/s/l0pzq54uDdYctSj7R3QNWw
-
-AmpliGraph：知识图谱表示学习工具包
-
-https://mp.weixin.qq.com/s/a3zu7nvy0itOvzvgOlf01Q
-
-搜狗开源机器阅读理解工具箱
-
 # DL参考资源+
+
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650748834&idx=3&sn=805564d2d9956dff6bb888ccb61e9b7b
+
+看图聊天的骚操作，MIT开发精准到单词的语音-图像配对系统
+
+https://mp.weixin.qq.com/s/emJGtx-LAWarlpUnRf-0-w
+
+观察运动推断物体材料，MIT提出“视觉+运动”物理基元分解
+
+https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247491876&idx=1&sn=e431c2291f4c985777be4d9b7bdfefa6
+
+正经炼丹师如何完美安排国庆长假？假期专属论文清单
+
+https://mp.weixin.qq.com/s/aPBPzBEGoiXF0-uMO_BCFQ
+
+iCAN：以人为中心的“人-物”交互检测网络
 
 https://mp.weixin.qq.com/s/R_nd7_YWA7q1JzE0BP8JrQ
 

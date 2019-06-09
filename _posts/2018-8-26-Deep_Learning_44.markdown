@@ -198,7 +198,7 @@ https://mp.weixin.qq.com/s/h8tk28IEuqB7g1e-vsyN5g
 
 2DASL：目前最好的开源人脸3D重建与密集对齐算法
 
-https://mp.weixin.qq.com/s/JmIpiSKR3AXje6DZiGImRQ
+https://zhuanlan.zhihu.com/p/59865273
 
 三维语义分割概述及总结
 
@@ -238,7 +238,29 @@ https://github.com/wannabeOG/Mask-RCNN
 
 ![](/images/img2/mask_rcnn.png)
 
+上图是Mask R-CNN的网络结构图。它实际上就是在Faster R-CNN的基础上添加了一个FCN。
 
+![](/images/img3/Mask_R-CNN.png)
+
+上图也是Mask R-CNN的网络结构图，但它对Faster R-CNN中与本主题无关的部分做了省略。
+
+Mask R-CNN的要点主要有：
+
+ - **RoI Align**
+
+RoI Align避免对RoI的边界或者块（bins）做任何量化，例如直接使用x/16代替[x/16]。
+
+然而这就引来一个问题：如果x/16不是整数该怎么采样呢？
+
+答案：对临近的整数采样点，使用双线性插值（bilinear interpolation）拟合，得到非整数采样点的值。
+
+ - **独立的类别预测**
+
+把loss由`tf.nn.softmax_cross_entropy_with_logits`换成`tf.nn.sigmoid_cross_entropy_with_logits`。参见《深度目标检测（五）》的YOLOv3一节。没错，YOLOv3借鉴了Mask R-CNN的这一设计思路。
+
+ - **对象实例分割**
+
+Mask R-CNN只对RoI Align后的区域进行分割，而不像U-NET等会对全景进行分割。因此，更适合抠图之类的应用。
 
 参考：
 
@@ -300,7 +322,7 @@ Mask R-CNN抢车位，快人一步！
 
 https://zhuanlan.zhihu.com/p/47579399
 
-R-CNN、Fast/Faster/Mask R-CNN、FCN、RFCN 、SSD原理简析
+R-CNN、Fast/Faster/Mask R-CNN、FCN、RFCN、SSD原理简析
 
 https://mp.weixin.qq.com/s/CsEHuGz_fAq8eWpHRq7d6g
 
@@ -321,3 +343,41 @@ CVPR2019-实例分割Mask Scoring R-CNN
 https://mp.weixin.qq.com/s/Uc0VFMmYoOFvH0c7IExKIg
 
 何恺明团队计算机视觉最新进展：从特征金字塔网络、Mask R-CNN到学习分割一切
+
+# 目标检测进阶+
+
+https://mp.weixin.qq.com/s/HmUhlw90b2aTsoEwBdYbdQ
+
+目标检测二十年技术综述
+
+https://www.zhihu.com/question/270143544
+
+目标检测中，不同物体之间的距离非常接近如何解决？
+
+https://mp.weixin.qq.com/s/b4s8Te29DyS71xwQU789pQ
+
+实体零售场景下密集商品的精确探测
+
+https://mp.weixin.qq.com/s/iW-k12CIO0gSx8Y6etTzgA
+
+三分支网络——目前目标检测性能最佳网络框架
+
+https://mp.weixin.qq.com/s/JN1N-IqIL4tAh4rIkZcxpg
+
+Grid R-CNN解读：商汤最新目标检测算法
+
+https://mp.weixin.qq.com/s/baPfFVi7deEsCAFu3ColoQ
+
+CVPR2018目标检测算法总览
+
+https://mp.weixin.qq.com/s/t5p1xGKVnwd7wbiOzucFqQ
+
+基于深度学习的目标检测算法剖析与实现
+
+https://mp.weixin.qq.com/s/-zQZjHVs7bYyGkGuMUf3qg
+
+目标检测领域还有什么可做的？19个方向给你建议
+
+https://mp.weixin.qq.com/s/k8msLl6c2Cp_5h-4xBD6Zw
+
+CVPR2019-目标检测分割技术进展

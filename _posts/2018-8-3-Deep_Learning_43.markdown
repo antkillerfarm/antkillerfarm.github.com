@@ -379,3 +379,7 @@ GAN网络利用单张照片构成动图
 https://mp.weixin.qq.com/s/zgMPW6yioGJEhusj031r5A
 
 如何利用深度学习技术处理图像水印？
+
+https://mp.weixin.qq.com/s/Y__qQCkkUlDGAl8dF_tsPg
+
+女神背心变内衣，只需草图画几笔

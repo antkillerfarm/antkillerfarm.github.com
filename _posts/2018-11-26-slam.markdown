@@ -254,6 +254,26 @@ https://blog.csdn.net/weixin_36340947/article/details/78246174
 
 张正友标定算法原理详解
 
+https://zhuanlan.zhihu.com/p/35223115
+
+从零开始学习“张氏相机标定法”（一）相机成像模型
+
+https://zhuanlan.zhihu.com/p/35309172
+
+从零开始学习“张氏相机标定法”（二）单应矩阵
+
+https://zhuanlan.zhihu.com/p/35391837
+
+从零开始学习“张氏相机标定法”（三）推导求解
+
+https://zhuanlan.zhihu.com/p/35392121
+
+从零开始学习“张氏相机标定法”（四）优化算法前传
+
+https://zhuanlan.zhihu.com/p/35476851
+
+从零开始学习“张氏相机标定法”（五）优化算法正传
+
 # 雷达 & 信号处理
 
 https://mp.weixin.qq.com/s/zDcbrZeK4tlO0jA3-s_lYg
@@ -427,27 +447,3 @@ https://mp.weixin.qq.com/s/ARqiy_zPghf2aKL7PewegQ
 https://mp.weixin.qq.com/s/FYDYV0wVxX-h9makD0JEEA
 
 将基于深度学习的检测和识别算法应用到SAR图像智能解译
-
-https://mp.weixin.qq.com/s/cnSiJb7j2OvVCiWh9VbKJg
-
-灵感来自雷达技术的CPA技术--技术解读2018诺奖
-
-https://mp.weixin.qq.com/s/cwdmd8XRotns8cNfuXLRXA
-
-SAR处理基础
-
-https://mp.weixin.qq.com/s/h1rXE_yA0FiW6nqTHrlGNQ
-
-基于多层字典对学习和稀疏自编码的极化SAR图像分类
-
-https://mp.weixin.qq.com/s/sZ5EpnfYjhdCjzLW-49HFg
-
-GPS传统信号与新信号的产生
-
-https://mp.weixin.qq.com/s/y1nTTjsW31ck6r-Cqp_XFw
-
-基于变分混合Wishart学习的极化SAR图像分类
-
-https://mp.weixin.qq.com/s/nThxbRnAGo-QkFgrm3BtIQ
-
-一种半监督张量局部线性嵌入的极化SAR特征提取方法

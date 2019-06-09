@@ -328,6 +328,42 @@ Flink与Storm协议级对比
 
 # 数字成像+
 
+https://mp.weixin.qq.com/s/DH3mZgh4YbnceaFGs03kOQ
+
+曹汛：计算摄像学研究
+
+https://mp.weixin.qq.com/s/f2BIrZ8if7_rX__J9hMHog
+
+广色域----iphone X/8 camera的色彩进化
+
+https://mp.weixin.qq.com/s/VjzXYgkzAGloczaaPXni2A
+
+PDAF进化史
+
+https://mp.weixin.qq.com/s/vg64EpcCVsk7gQAoEozSRQ
+
+PDAF进阶
+
+https://mp.weixin.qq.com/s/m7q6jHbdnb7fw4lKIDfVWw
+
+camera接口之MIPI联盟浅谈
+
+https://mp.weixin.qq.com/s/DbDrDhbQAhXOsfxQ8UJVZg
+
+三星S9凝时摄影背后的sensor技术
+
+https://mp.weixin.qq.com/s/gOikxUxWpqdDRr6_KT2jxQ
+
+图像处理，计算机视觉与machine learning的区别与联系
+
+https://mp.weixin.qq.com/s/7fvVmmpPSldwa3TZ3dVb2g
+
+3D LUT--色彩校正的利器
+
+https://mp.weixin.qq.com/s/sXC263Lq25tKp2AK2Tsb-A
+
+Omnivision HDR sensor简介
+
 https://mp.weixin.qq.com/s/m_EKOLjWjTyx4RBxsAAAGg
 
 4x4阵列摄/“深感”摄
@@ -363,37 +399,3 @@ https://mp.weixin.qq.com/s/j970Qp8Cz2fpbImujkS2Xg
 https://mp.weixin.qq.com/s/Yy-XEyM0YGTRFUX2uWgNKw
 
 夜景拍照之算法篇
-
-# 世说新语+
-
-## 2019.6
-
-奥匈帝国的人类学家，马林诺斯基，1914年在太平洋的巴布亚与当地食人族聊天。
-
-马林诺斯基提到了“战争”也就是第一次世界大战。
-
-“现在欧洲在打仗，每一天都要死几万人”
-
-食人族疑惑不解:“你们怎么吃得了那么多人？”
-
-马林诺斯基解释说，“欧洲人不吃人肉...”
-
-食人族震惊:“不吃肉，为什么要杀人？你们太野蛮了！”
-
-----
-
-https://zhuanlan.zhihu.com/p/68046339
-
-印度人是如何把外卖做成百年老店的？
-
-----
-
-https://mp.weixin.qq.com/s/FtgskvIWrkw2DwhoI24WEg
-
-走路就能赚钱，趣步的鬼话你也信
-
-----
-
-https://mp.weixin.qq.com/s/5Ua1tXJ0Eytdh6gzVxXpeg
-
-上万只海螺才提取出一克，价比黄金的染料是什么颜色？

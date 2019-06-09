@@ -358,6 +358,30 @@ https://mp.weixin.qq.com/s/aixpv9t1PLPRWUP6PvZ0EQ
 
 # 雷达 & 信号处理+
 
+https://mp.weixin.qq.com/s/cnSiJb7j2OvVCiWh9VbKJg
+
+灵感来自雷达技术的CPA技术--技术解读2018诺奖
+
+https://mp.weixin.qq.com/s/cwdmd8XRotns8cNfuXLRXA
+
+SAR处理基础
+
+https://mp.weixin.qq.com/s/h1rXE_yA0FiW6nqTHrlGNQ
+
+基于多层字典对学习和稀疏自编码的极化SAR图像分类
+
+https://mp.weixin.qq.com/s/sZ5EpnfYjhdCjzLW-49HFg
+
+GPS传统信号与新信号的产生
+
+https://mp.weixin.qq.com/s/y1nTTjsW31ck6r-Cqp_XFw
+
+基于变分混合Wishart学习的极化SAR图像分类
+
+https://mp.weixin.qq.com/s/nThxbRnAGo-QkFgrm3BtIQ
+
+一种半监督张量局部线性嵌入的极化SAR特征提取方法
+
 https://mp.weixin.qq.com/s/5rNpp2cYZhcOKZCiy4LkMQ
 
 SAR成像原理及图像鉴赏

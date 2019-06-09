@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（六）——FPN, Anchor-Free, 其它目标检测网络, 目标检测进阶
+title:  深度目标检测（六）——FPN, CornerNet, Anchor-Free, 其它目标检测网络, 目标检测进阶
 category: Deep Object Detection 
 ---
 
@@ -90,6 +90,44 @@ https://zhuanlan.zhihu.com/p/58603276
 
 FPN-目标检测
 
+# CornerNet
+
+论文：
+
+《CornerNet: Detecting Objects as Paired Keypoints》
+
+
+
+参考：
+
+https://mp.weixin.qq.com/s/e74-zFcMZzn67KaFXb_fdQ
+
+CornerNet目标检测开启预测“边界框”到预测“点对”的新思路
+
+https://zhuanlan.zhihu.com/p/41865617
+
+CornerNet：目标检测算法新思路
+
+https://mp.weixin.qq.com/s/e6B22xpue_xZwrXmIlZodw
+
+ECCV-2018最佼佼者CornerNet的目标检测算法
+
+https://mp.weixin.qq.com/s/9ldLaYKGkgq-MnJZw7CrDQ
+
+CornerNet为什么有别于其他目标检测领域的主流算法？
+
+https://mp.weixin.qq.com/s/ZhfnZ4IwOnTQlqeB6Ilr3A
+
+CornerNet: Detecting Objects as Paired Keypoints解读
+
+https://zhuanlan.zhihu.com/p/63134919
+
+普林斯顿大学提出：CornerNet-Lite，基于关键点的目标检测算法，已开源！
+
+https://mp.weixin.qq.com/s/8hN1RdYVJQWOqPpejjfXeQ
+
+CornerNet
+
 # Anchor-Free
 
 https://zhuanlan.zhihu.com/p/63024247
@@ -136,6 +174,14 @@ https://zhuanlan.zhihu.com/p/66156431
 
 从Densebox到Dubox：更快、性能更优、更易部署的anchor-free目标检测
 
+https://zhuanlan.zhihu.com/p/63273342
+
+聊聊Anchor的"前世今生"（上）
+
+https://zhuanlan.zhihu.com/p/68291859
+
+聊聊Anchor的"前世今生"（下）
+
 # 其它目标检测网络
 
 ## A-Fast-RCNN
@@ -153,36 +199,6 @@ G-CNN是MaryLand大学的工作，论文主要的思路也是消除region propos
 http://blog.csdn.net/zijin0802034/article/details/53535647
 
 G-CNN: an Iterative Grid Based Object Detector
-
-## CornerNet
-
-https://mp.weixin.qq.com/s/e74-zFcMZzn67KaFXb_fdQ
-
-CornerNet目标检测开启预测“边界框”到预测“点对”的新思路
-
-https://zhuanlan.zhihu.com/p/41865617
-
-CornerNet：目标检测算法新思路
-
-https://mp.weixin.qq.com/s/e6B22xpue_xZwrXmIlZodw
-
-ECCV-2018最佼佼者CornerNet的目标检测算法
-
-https://mp.weixin.qq.com/s/9ldLaYKGkgq-MnJZw7CrDQ
-
-CornerNet为什么有别于其他目标检测领域的主流算法？
-
-https://mp.weixin.qq.com/s/ZhfnZ4IwOnTQlqeB6Ilr3A
-
-CornerNet: Detecting Objects as Paired Keypoints解读
-
-https://zhuanlan.zhihu.com/p/63134919
-
-普林斯顿大学提出：CornerNet-Lite，基于关键点的目标检测算法，已开源！
-
-https://mp.weixin.qq.com/s/8hN1RdYVJQWOqPpejjfXeQ
-
-CornerNet
 
 # 目标检测进阶
 
@@ -297,23 +313,3 @@ https://mp.weixin.qq.com/s/s1qmCA8djEEanwCxeLSV2Q
 https://mp.weixin.qq.com/s/XoKdsQKyaI3LsDxF7uyKuQ
 
 聊聊目标检测中的多尺度检测（Multi-Scale），从YOLO到FPN，SNIPER，SSD填坑贴和极大极小目标识别
-
-https://mp.weixin.qq.com/s/iW-k12CIO0gSx8Y6etTzgA
-
-三分支网络——目前目标检测性能最佳网络框架
-
-https://mp.weixin.qq.com/s/JN1N-IqIL4tAh4rIkZcxpg
-
-Grid R-CNN解读：商汤最新目标检测算法
-
-https://mp.weixin.qq.com/s/baPfFVi7deEsCAFu3ColoQ
-
-CVPR2018目标检测算法总览
-
-https://mp.weixin.qq.com/s/t5p1xGKVnwd7wbiOzucFqQ
-
-基于深度学习的目标检测算法剖析与实现
-
-https://mp.weixin.qq.com/s/-zQZjHVs7bYyGkGuMUf3qg
-
-目标检测领域还有什么可做的？19个方向给你建议

@@ -251,17 +251,6 @@ https://www.zhihu.com/question/26991510
 
 这里的$$\alpha$$被称作**显著性水平**。假设检验$$H_0$$所涉及的统计量被称作**检验统计量**。
 
-下表是正态总体均值、方差的检验法表格：
-
-| $$H_0$$ | 检验统计量 | $$H_0$$为真时的统计量分布 |
-|:--:|:--:|:--:|
-| $$\mu=\mu_0(\sigma^2已知)$$ | $$z=\frac{\overline x-\mu_0}{\sigma/\sqrt n}$$ | $$N(0,1)$$ |
-| $$\mu=\mu_0(\sigma^2未知)$$ | $$t=\frac{\overline x-\mu_0}{s/\sqrt n}$$ | $$t(n-1)$$ |
-| $$\mu_1-\mu_2=\delta(\sigma_1^2,\sigma_2^2已知)$$ | $$Z=\frac{\overline x-\overline y-\delta}{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}}$$ | $$N(0,1)$$ |
-| $$\mu_1-\mu_2=\delta(\sigma_1^2=\sigma_2^2=\sigma^2未知)$$ | $$t=\frac{\overline x-\overline y-\delta}{s_w\sqrt{\frac{1}{n_1}+\frac{1}{n_2}}},s_w^2=\frac{(n_1-1)s_1^2+(n_2-1)s_2^2}{n_1+n_2-2}$$ | $$t(n_1+n_2-2)$$ |
-| $$\sigma^2=\sigma_0^2(\mu未知)$$ | $$\chi^2=\frac{(n-1)s^2}{\sigma_0^2}$$ | $$\chi^2(n-1)$$ |
-| $$\sigma_1^2=\sigma_2^2(\mu_1,\mu_2未知)$$ | $$F=\frac{s_1^2}{s_2^2}$$ | $$F(n_1-1,n_2-1)$$ |
-| $$\mu_d=0(成对数据)$$ | $$t=\frac{\overline d-0}{s/\sqrt n}$$ | $$t(n-1)$$ |
-
-上面这些和$$\chi^2$$分布、t分布、F分布有关的假设检验，又被称作**$$\chi^2$$检验、t检验和F检验**。对均值的假设检验，被称为$$\mu$$检验。
-
+>在英国的Rothamsted实验站，Fisher给一位名叫Muriel Bristol的女士倒了一杯茶，但是Bristol表示，自己更喜欢先将牛奶倒入杯中，再倒入茶。这位女士号称能够分辨先倒茶和先倒牛奶的区别。   
+>作为实验设计的鼻祖，Fisher当然想用实验检验一下：这位女士的味觉是否有这么敏锐？Fisher倒了8杯奶茶：其中4杯“先奶后茶”，其余4杯“先茶后奶”。随机打乱次序后，Fisher请Bristol品尝，并选出“先奶后茶”的4杯，看她是否能分辨奶和茶的顺序。   
+>Bristol完全答对了。这是一个小概率事件，概率小于0.05（通常的统计显著性水平）。所以，她“没有任何分辨能力”这个假设就和数据不太相容，可以拒绝这个假设。

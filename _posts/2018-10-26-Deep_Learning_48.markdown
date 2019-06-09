@@ -180,6 +180,10 @@ https://mp.weixin.qq.com/s/_q8N8keNpcD-jXLrRd_8dw
 
 深度学习时代下的语义分割综述
 
+https://mp.weixin.qq.com/s/BSJ-F_Inp1-eHxSJDsQ3AQ
+
+12篇文章带你逛遍主流分割网络
+
 https://mp.weixin.qq.com/s/cANlqQAI-A2mC9vnd3imQA
 
 Instance-Aware图像语义分割

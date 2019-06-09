@@ -300,6 +300,10 @@ https://mp.weixin.qq.com/s/H-Bm2u6Ld-9QfdHbZDZ4cw
 
 关于GANs在医学图像领域应用的总结
 
+https://mp.weixin.qq.com/s/qhqnAoWa81cdeTY5ywZnnw
+
+医学图像处理与深度学习入门
+
 ## 行业
 
 李开复的这篇文章不可不读：

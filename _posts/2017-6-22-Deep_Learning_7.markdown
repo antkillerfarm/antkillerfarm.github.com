@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（七）——神经元激活函数进阶, Deep Residual Network, Bi-directional RNN
+title:  深度学习（七）——神经元激活函数进阶, ResNet, Bi-directional RNN
 category: DL 
 ---
 
@@ -202,7 +202,7 @@ https://www.cnblogs.com/makefile/p/activation-function.html
 
 激活函数(ReLU, Swish, Maxout)
 
-# Deep Residual Network
+# ResNet
 
 无论采用何种方法，可训练的神经网络的层数都不可能无限深。有的时候，即使没有梯度消失，也存在训练退化（即深层网络的效果还不如浅层网络）的问题。
 
@@ -285,6 +285,10 @@ resnet中的残差连接，你确定真的看懂了？
 https://mp.weixin.qq.com/s/AyJ_ZtNFTjkWVH3_Kw7wJg
 
 ResNet架构可逆！多大等提出性能优越的可逆残差网络
+
+https://mp.weixin.qq.com/s/2JwgiCuBoluBNYesYp4zAA
+
+ResNet及其变种的结构梳理、有效性分析与代码解读
 
 # Bi-directional RNN
 

@@ -306,6 +306,10 @@ https://mp.weixin.qq.com/s/d8-e1y3ZvlxNWRbXohfhDQ
 
 从人脸识别到情感分析，50个机器学习实用API
 
+https://github.com/rasbt/deeplearning-models
+
+Yann LeCun推荐的Github深度学习入门教程，2天1500+星，含80个TensorFlow/PyTorch示例
+
 ## 教程
 
 https://theneuralperspective.com/tag/tutorials/
