@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（五）——YOLOv3, Tiny-YOLO, One-stage vs. Two-stage, R-FCN
+title:  深度目标检测（五）——YOLOv3, Tiny-YOLO, One-stage vs. Two-stage
 category: Deep Object Detection 
 ---
 
@@ -246,24 +246,16 @@ One-stage一步搞定分类和bbox问题。
 
 《Speed/accuracy trade-offs for modern convolutional object detectors》
 
-# R-FCN
+通常来说，One-stage模型运算速度比Two-stage模型快，但精度略有不足。究其原因主要是“类别不平衡”问题。
 
-R-FCN是何恺明/孙剑小组的Jifeng Dai于2016年提出的。
+ - **什么是“类别不平衡”呢？**
 
-论文：
+详细来说，检测算法在早期会生成一大波的bbox。而一幅常规的图片中，顶多就那么几个object。这意味着，绝大多数的bbox属于background。
 
-《R-FCN: Object Detection via Region-based Fully Convolutional Networks》
+ - **“类别不平衡”又如何会导致检测精度低呢？**
 
-代码：
+正是因为bbox中属于background的bbox太多了，所以如果分类器无脑地把所有bbox统一归类为background，accuracy也可以刷得很高。于是乎，分类器的训练就失败了。分类器训练失败，检测精度自然就低了。
 
-https://github.com/PureDiors/pytorch_RFCN
+ - **为什么two-stage系可以避免这个问题呢？**
 
-faster R-CNN对卷积层做了共享（RPN和Fast R-CNN）,但是经过RoI pooling后，却没有共享，如果一副图片有500个region proposal，那么就得分别进行500次卷积，这样就太浪费时间了，于是作者猜想，能不能把RoI后面的几层建立共享卷积，只对一个feature map进行一次卷积？
-
-![](/images/img3/R-FCN_2.png)
-
-上图是R-FCN的网络结构图。和上一节的Faster R-CNN相比，我们可以看出如下区别：
-
-1.Faster R-CNN是特征提取之后，先做ROI pooling，然后再经过若干层网络，最后分类+bbox。
-
-2.R-FCN是特征提取之后，先经过若干层网络，然后再做ROI pooling，最后分类+bbox。
+第一个stage的RPN会对anchor进行简单的二分类（只是简单地区分是前景还是背景，并不区别究竟属于哪个细类）。经过该轮初筛，属于background的bbox被大幅砍削。虽然其数量依然远大于前景类bbox，但是至少数量差距已经不像最初生成的anchor那样夸张了。就等于是从“类别极不平衡”变成了“类别较不平衡”。

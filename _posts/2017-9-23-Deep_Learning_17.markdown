@@ -382,7 +382,7 @@ https://mp.weixin.qq.com/s/rOj_J1zNYf-Vj9tqLG5KOQ
 
 https://zhuanlan.zhihu.com/p/66389797
 
-虚拟对抗训练：一种新颖的半监督学习正则化方法
+虚拟对抗训练（VAT）：一种新颖的半监督学习正则化方法
 
 https://mp.weixin.qq.com/s/DAtHXSfCpqCAZ0iVsfWkDA
 

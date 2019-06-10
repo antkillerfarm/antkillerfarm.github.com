@@ -362,6 +362,10 @@ https://zhuanlan.zhihu.com/p/48601321
 
 人体关键点检测（pose estimation）性能度量指标（OKS）解析
 
+https://mp.weixin.qq.com/s/6aDSJ6EzAvj71D4qHqQoPw
+
+董峻廷：多视角下多人三维姿态估计
+
 # Regularization
 
 DL中的Regularization除了常见的$$l_1$$-norm、$$l_2$$-norm和squared $$l_2$$-norm之外，还有Group Regularization。它的定义如下：

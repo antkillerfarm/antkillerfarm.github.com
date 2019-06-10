@@ -344,11 +344,15 @@ https://mp.weixin.qq.com/s/Uc0VFMmYoOFvH0c7IExKIg
 
 何恺明团队计算机视觉最新进展：从特征金字塔网络、Mask R-CNN到学习分割一切
 
-# 目标检测进阶+
+# 目标检测进阶
 
-https://mp.weixin.qq.com/s/HmUhlw90b2aTsoEwBdYbdQ
+https://mp.weixin.qq.com/s/PpT-NmTVjRi0_SEq0lISXw
 
-目标检测二十年技术综述
+旷视科技Oral论文解读：IoU-Net让目标检测用上定位置信度
+
+https://mp.weixin.qq.com/s/OqlZ2TRGbHURYW00440lgQ
+
+微软亚洲研究院与北京大学共同提出用于物体检测的可学习区域特征提取模块
 
 https://www.zhihu.com/question/270143544
 

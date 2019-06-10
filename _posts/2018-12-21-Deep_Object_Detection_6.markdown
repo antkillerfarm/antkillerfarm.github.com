@@ -1,10 +1,30 @@
 ---
 layout: post
-title:  深度目标检测（六）——FPN, CornerNet, Anchor-Free, 其它目标检测网络, 目标检测进阶
+title:  深度目标检测（六）——R-FCN, FPN, RetinaNet, CornerNet, Anchor-Free, 其它目标检测网络, 目标检测进阶
 category: Deep Object Detection 
 ---
 
-# R-FCN（续）
+# R-FCN
+
+R-FCN是何恺明/孙剑小组的Jifeng Dai于2016年提出的。
+
+论文：
+
+《R-FCN: Object Detection via Region-based Fully Convolutional Networks》
+
+代码：
+
+https://github.com/PureDiors/pytorch_RFCN
+
+faster R-CNN对卷积层做了共享（RPN和Fast R-CNN）,但是经过RoI pooling后，却没有共享，如果一副图片有500个region proposal，那么就得分别进行500次卷积，这样就太浪费时间了，于是作者猜想，能不能把RoI后面的几层建立共享卷积，只对一个feature map进行一次卷积？
+
+![](/images/img3/R-FCN_2.png)
+
+上图是R-FCN的网络结构图。和上一节的Faster R-CNN相比，我们可以看出如下区别：
+
+1.Faster R-CNN是特征提取之后，先做ROI pooling，然后再经过若干层网络，最后分类+bbox。
+
+2.R-FCN是特征提取之后，先经过若干层网络，然后再做ROI pooling，最后分类+bbox。
 
 ![](/images/img3/R-FCN.png)
 
@@ -52,7 +72,7 @@ R-FCN和FPN
 
 # FPN
 
-FPN(Feature Pyramid Network)是Tsung-Yi Lin（Ross Girshick和何恺明小组成员）的作品。
+FPN(Feature Pyramid Network)是Tsung-Yi Lin（Ross Girshick和何恺明小组成员）的作品（2016.12）。
 
 论文：
 
@@ -89,6 +109,28 @@ https://mp.weixin.qq.com/s/TelGG-uVQyxwQjiDGE1pqA
 https://zhuanlan.zhihu.com/p/58603276
 
 FPN-目标检测
+
+# RetinaNet
+
+RetinaNet也是Tsung-Yi Lin的作品（2017.8）。
+
+论文：
+
+《Focal Loss for Dense Object Detection》
+
+在《深度目标检测（五）》中，我们已经指出“类别不平衡”是导致One-stage模型精度不高的原因。那么如何解决这个问题呢？
+
+答案是：Focal Loss。（参见《机器学习（二十二）》）
+
+![](/images/img3/RetinaNet.png)
+
+上图是RetinaNet的网络结构图，可以看出它是一个One-stage模型。基本相当于：ResNet+FPN+Focal loss。
+
+参考：
+
+https://blog.csdn.net/jningwei/article/details/80038594
+
+论文阅读: RetinaNet
 
 # CornerNet
 
@@ -206,89 +248,13 @@ https://mp.weixin.qq.com/s/1nlOJ7X9ogBHTl1j2adqyg
 
 83页《目标分类和目标检测综述（2D和3D数据）》论文
 
-https://mp.weixin.qq.com/s/dcrBQ-t3tLOTouEyofOBxg
+https://mp.weixin.qq.com/s/HmUhlw90b2aTsoEwBdYbdQ
 
-间谍卫星：利用卷积神经网络对卫星影像进行多尺度目标检测
-
-https://mp.weixin.qq.com/s/LtXylKTKsHdjMPw9Q1HyXA
-
-优于MobileNet、YOLOv2：移动设备上的实时目标检测系统Pelee
-
-https://mp.weixin.qq.com/s/Gq3bflJq59Tx-nDCvbweNA
-
-无需预训练分类器，清华&旷视提出专用于目标检测的骨干网络DetNet
-
-https://mp.weixin.qq.com/s/u3eXhoFvo7vZujc0XoQQWQ
-
-旷视研究院解读Light-Head R-CNN：平衡精准度和速度
-
-https://mp.weixin.qq.com/s/6cUP9vvfcuv8rIEnGnAFiA
-
-NCSU&阿里巴巴论文：可解释的R-CNN
-
-https://mp.weixin.qq.com/s/1vOdOMyByBacSBMVrscq5Q
-
-黄畅：基于DenesBox的目标检测在自动驾驶中的应用
-
-https://mp.weixin.qq.com/s/-PeXMU_gkcT5YnMcLoaKag
-
-CVPR清华大学研究，高效视觉目标检测框架RON
-
-https://mp.weixin.qq.com/s/AupXIoVmhcOBrX1z1vgdtw
-
-弱监督实现精确目标检测，上交大提出协同学习框架
-
-https://mp.weixin.qq.com/s/Lt00ASVSb_fDDJdtCO0-tQ
-
-物体检测中的结构推理网络
-
-https://mp.weixin.qq.com/s/f0Ynln-27z5A6LXt8j5qKQ
-
-据说以后在探头下面用帽子挡脸没用了：SymmNet遮挡物检测的对称卷积神经网络
-
-https://mp.weixin.qq.com/s/cEg6HmS651riJVAtHdPafg
-
-基于域适应弱监督学习的目标检测
-
-https://mp.weixin.qq.com/s/PpT-NmTVjRi0_SEq0lISXw
-
-旷视科技Oral论文解读：IoU-Net让目标检测用上定位置信度
-
-https://mp.weixin.qq.com/s/OqlZ2TRGbHURYW00440lgQ
-
-微软亚洲研究院与北京大学共同提出用于物体检测的可学习区域特征提取模块
+目标检测二十年技术综述
 
 https://mp.weixin.qq.com/s/5I9uzGCNFD93L1mzakTl0Q
 
 目标检测网络学习总结（RCNN-->YOLO V3）
-
-https://mp.weixin.qq.com/s/ZQqcsJenqkXtH1czOe5WnA
-
-阿里巴巴提出Auto-Context R-CNN算法，刷出Faster RCNN目标检测新高度
-
-https://mp.weixin.qq.com/s/aLYQepnr_BjS27Fb-zoZ_g
-
-迈向完全可学习的物体检测器：可学习区域特征提取方法
-
-https://zhuanlan.zhihu.com/p/43655912
-
-“别挡我，我要C位出道！”谈谈深度学习目标检测中的遮挡问题
-
-https://mp.weixin.qq.com/s/VtlSVF4d9LwPJhDEYSbgTg
-
-无监督难分样本挖掘改进目标检测
-
-https://mp.weixin.qq.com/s/h_ENriEXr7WI_XR_DtxpMQ
-
-这样可以更精确的目标检测——超网络
-
-https://mp.weixin.qq.com/s?__biz=MzI5MDUyMDIxNA==&mid=2247486104&idx=1&sn=5580a4680f3190adb98638471e9b5982
-
-百度视觉团队斩获 ECCV Google AI 目标检测竞赛冠军，获奖方案全解读
-
-https://mp.weixin.qq.com/s/nL9l7hvG3RG7G7LzCzzvug
-
-旷视科技2018 COCO负责人俞刚：如何构建检测与分割的冠军系统
 
 https://mp.weixin.qq.com/s/zeruKQOye_QNWgluVIN0BA
 
@@ -298,10 +264,6 @@ https://mp.weixin.qq.com/s/sCGNUI-mUSYxD69uBDQNoQ
 
 基于深度学习的目标检测算法综述：算法改进
 
-https://mp.weixin.qq.com/s/XdH54ImSfgadCoISmVyyVg
-
-基于单目摄像头的物体检测
-
 https://mp.weixin.qq.com/s/yswy7VwEapQJ9M5n_Uo93w
 
 目标检测最新进展总结与展望
@@ -309,7 +271,3 @@ https://mp.weixin.qq.com/s/yswy7VwEapQJ9M5n_Uo93w
 https://mp.weixin.qq.com/s/s1qmCA8djEEanwCxeLSV2Q
 
 63页《深度CNN-目标检测》综述
-
-https://mp.weixin.qq.com/s/XoKdsQKyaI3LsDxF7uyKuQ
-
-聊聊目标检测中的多尺度检测（Multi-Scale），从YOLO到FPN，SNIPER，SSD填坑贴和极大极小目标识别

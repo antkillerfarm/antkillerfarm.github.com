@@ -206,6 +206,10 @@ https://mp.weixin.qq.com/s/jHv3Amti1YZq51Df2mNFtg
 
 network sliming:加快模型速度同时不损失精度
 
+https://mp.weixin.qq.com/s/8jyQ_7DYn7lHMcAWokKbcA
+
+超Mask RCNN速度4倍，仅在单个GPU训练的实时实例分割算法
+
 # 知名数据集+
 
 ## Other（续）

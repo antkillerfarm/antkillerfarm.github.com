@@ -389,3 +389,7 @@ NLP中的词向量对比：word2vec/glove/fastText/elmo/GPT/bert
 https://mp.weixin.qq.com/s/RjeuHXa8O3MzSpTOuOHMkQ
 
 站在BERT肩膀上的NLP新秀们：XLMs、MASS和UNILM
+
+https://mp.weixin.qq.com/s/yPq1cGnhcbaNLOjadj91pw
+
+Bert时代的创新：Bert在NLP各领域的应用进展

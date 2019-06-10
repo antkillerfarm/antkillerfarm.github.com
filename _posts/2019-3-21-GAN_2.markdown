@@ -262,6 +262,10 @@ https://github.com/hwalsuklee/tensorflow-generative-model-collections
 
 ## 参考
 
+https://machinelearningmindset.com/generative-adversarial-networks-roadmap/
+
+生成对抗网络GANs学习路线
+
 https://zhuanlan.zhihu.com/p/58812258
 
 GAN万字长文综述

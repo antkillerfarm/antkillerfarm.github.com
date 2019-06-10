@@ -124,6 +124,10 @@ https://github.com/icoxfog417/graph-convolution-nlp
 
 图卷积神经网络自然语言处理应用代码和教程
 
+https://mp.weixin.qq.com/s/eA9a3478oxHd3zsepNVTpQ
+
+图数据表示学习综述论文
+
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
 
 Bengio等人提出图注意网络架构GAT，可处理复杂结构图
