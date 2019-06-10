@@ -272,6 +272,10 @@ https://mp.weixin.qq.com/s/R1MhoCfnd5drvg2CGLVsPw
 
 哪种特征分析法适合你的任务？Ian Goodfellow提出显著性映射的可用性测试
 
+https://mp.weixin.qq.com/s/XSovbUDVTKe59DDaC1Kl8Q
+
+如何进行特征表达，你知道吗？
+
 # 数据清洗
 
 https://mp.weixin.qq.com/s/YrCC8CmP6UKuCmSdF2K_3g

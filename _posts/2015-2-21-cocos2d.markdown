@@ -287,7 +287,7 @@ Director::drawScene
 
 Quic全称quick udp internet connection，“快速 UDP 互联网连接”，是由google提出的使用udp进行多路并发传输的协议。
 
-Quic相比现在广泛应用的 http2+tcp+tls 协议有如下优势：
+Quic相比现在广泛应用的http2+tcp+tls协议有如下优势：
 
 1.减少了TCP三次握手及TLS握手时间。
 
@@ -308,6 +308,10 @@ QUIC协议原理分析
 https://mp.weixin.qq.com/s/_RAXrlGPeN_3D6dhJFf6Qg
 
 让互联网更快的协议，QUIC在腾讯的实践及性能优化
+
+https://zhuanlan.zhihu.com/p/68012355
+
+HTTP/3竟然基于UDP，HTTP协议这些年都经历了啥？（HTTP/3之前名为HTTP-over-QUIC）
 
 # OpenWrt配置篇（续）
 

@@ -244,6 +244,28 @@ https://mp.weixin.qq.com/s/a3zu7nvy0itOvzvgOlf01Q
 
 搜狗开源机器阅读理解工具箱
 
+https://zhuanlan.zhihu.com/p/68462431
+
+谷歌开源RL足球环境
+
+# 世说新语+
+
+## 2019.6（续）
+
+![](/images/img3/jiang_qi.jpg)
+
+大局将棋，是江户时代出现的一种棋盘大小为36×36的将棋，是规模最大的日本将棋，其棋子数量达到了804枚（双方各402枚），棋子种类复杂，步法各不相同。
+
+https://baike.baidu.com/item/%E5%A4%A7%E5%B1%80%E5%B0%86%E6%A3%8B
+
+大局将棋
+
+----
+
+https://uboat.net/boats/finder.php
+
+一个关于德国U型潜艇的网站。
+
 # Fast Image Processing
 
 ![](/images/article/FIP.png)
