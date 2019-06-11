@@ -266,6 +266,16 @@ https://uboat.net/boats/finder.php
 
 一个关于德国U型潜艇的网站。
 
+----
+
+https://www.zhihu.com/question/36509150/answer/67878788
+
+为什么10年前的《指环王》三部曲，现在依然能秒杀市场上绝大多数电影制作？
+
+----
+
+央视的军事·农业频道，被网友们亲切地称为“耕战频道”，并由此衍生“外国间谍看央视7套最后变成养猪专业户”的笑谈。
+
 # Fast Image Processing
 
 ![](/images/article/FIP.png)

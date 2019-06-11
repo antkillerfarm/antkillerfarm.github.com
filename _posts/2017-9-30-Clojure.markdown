@@ -238,10 +238,6 @@ https://www.zhihu.com/question/19660417
 
 为什么那么多牛人成天在研究讨论算法，系统自动推荐的东西还是不能令人满意呢？
 
-https://mp.weixin.qq.com/s/fB3AFUiS4nFmqXpSnOpf4w
-
-如何选择上班路线最省时间？从A/B测试数学原理说起
-
 https://mp.weixin.qq.com/s/EGorUTYz09PYU3CdU_qwDA
 
 如何省时省力验证模型效果？达观数据在线分层实验平台给你支招
@@ -299,3 +295,21 @@ $$环比=\frac{2010.12}{2010.11}$$
 https://zhuanlan.zhihu.com/p/53522063
 
 数据产品经理需要掌握的产品埋点方法
+
+## A/B Testing
+
+https://mp.weixin.qq.com/s/fB3AFUiS4nFmqXpSnOpf4w
+
+如何选择上班路线最省时间？从A/B测试数学原理说起
+
+https://cn.udacity.com/course/ab-testing--ud257
+
+A/B测试
+
+https://exp-platform.com/2017abtestingtutorial/
+
+A/B Testing
+
+https://zhuanlan.zhihu.com/p/68509372
+
+Netflix推荐系统模型的快速线上评估方法——Interleaving

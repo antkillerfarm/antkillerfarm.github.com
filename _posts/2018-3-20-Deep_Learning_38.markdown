@@ -18,6 +18,10 @@ https://mp.weixin.qq.com/s/ZlCI02UdRuFBc-uKqIPE_w
 
 深度学习多任务学习综述
 
+https://zhuanlan.zhihu.com/p/67524006
+
+多任务学习综述-A Survey on Multi-Task Learning
+
 https://mp.weixin.qq.com/s/QXOy2jo4RhCZrD5bSVzBOQ
 
 共享相关任务表征，一文读懂深度神经网络多任务学习

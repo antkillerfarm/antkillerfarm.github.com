@@ -82,6 +82,14 @@ https://mp.weixin.qq.com/s/-A87-z5inWBsF1-5UYagTA
 
 Facebook实时人体姿态估计：Dense Pose及其应用展望
 
+## Hourglass networks
+
+参考：
+
+https://blog.csdn.net/shenxiaolu1984/article/details/51428392
+
+Stacked Hourglass算法详解
+
 ## 步态识别
 
 https://mp.weixin.qq.com/s/g6032xTGEtvbsfwXboMJ4A
@@ -365,6 +373,10 @@ https://zhuanlan.zhihu.com/p/48601321
 https://mp.weixin.qq.com/s/6aDSJ6EzAvj71D4qHqQoPw
 
 董峻廷：多视角下多人三维姿态估计
+
+https://mp.weixin.qq.com/s/tEOSPiYvgkaiRjVYLweQ4w
+
+旷视研究院提出TACNet，刷新时空动作检测技术新高度
 
 # Regularization
 

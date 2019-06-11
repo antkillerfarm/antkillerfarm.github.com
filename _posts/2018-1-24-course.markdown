@@ -300,14 +300,6 @@ http://crcv.ucf.edu/courses/
 
 UCF的系列Vision课程，其中的CAP 6412：Advanced Computer Vision是一门高级课程。
 
-https://cn.udacity.com/course/ab-testing--ud257
-
-A/B 测试
-
-https://exp-platform.com/2017abtestingtutorial/
-
-A/B Testing
-
 http://www.cs.tut.fi/~tabus/LSC.html
 
 SGN-2306 Signal Compression
