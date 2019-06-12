@@ -76,6 +76,24 @@ http://www.cnblogs.com/Lands-ljk/p/5880483.html
 
 Python `__init__.py`作用详解
 
+## import
+
+{% highlight python %}
+import subpackage1.a # 将模块subpackage.a导入全局命名空间，例如访问a中属性时用subpackage1.a.attr
+from subpackage1 import a #　将模块a导入全局命名空间，例如访问a中属性时用a.attr_a
+from subpackage.a import attr_a # 将模块a的属性直接导入到命名空间中，例如访问a中属性时直接用attr_a
+{% endhighlight %}
+
+上面的例子给出了import子目录文件的方法。如果是父目录呢？
+
+{% highlight python %}
+import sys
+sys.path.append("..")
+import subpackage1.a # 假设subpackage1在../下
+{% endhighlight %}
+
+使用上法还可以导入任意目录，只需要将路径加入`sys.path`即可。可以是相对路径，也可以是绝对路径。
+
 ## Slice
 
 `L[3:10:2]`
@@ -325,7 +343,7 @@ Python3: isinstance(anobj, str)
 
 ## six
 
-six是一个专门用来兼容Python 2和Python 3的库。它解决了诸如urllib的部分方法不兼容，str和bytes类型不兼容等“知名”问题。2x3=6?
+six是一个专门用来兼容Python 2和Python 3的库。它解决了诸如urllib的部分方法不兼容，str和bytes类型不兼容等“知名”问题。2x3=6？这难道就是得名的原因？
 
 代码：
 
@@ -387,29 +405,3 @@ otherStyleTime = time.strftime("%Y/%m/%d %H:%M:%S", timeArray)
 `datetime(2001, 12, 31).isocalendar() == (2002, 1, 1)#(year, week number, weekday)`
 
 从上面的例子还可以看出，isocalendar可以完美的处理跨年问题。
-
-## argparse
-
-https://blog.csdn.net/It_way/article/details/44815141
-
-python 命令行参数解析 argparse简单分析
-
-## pickle
-
-pickle提供了一个简单的持久化功能。可以将对象以文件（后缀名一般为*.pkl）的形式存放在磁盘上。
-
-参考：
-
-https://blog.csdn.net/sinat_29552923/article/details/70833455
-
-Python pickle模块学习
-
-## dill
-
-dill是pickle的威力加强版。
-
-除了提供pickle的功能之外，还可浏览对象的源代码。
-
-示例：
-
-`dill.source.getsource(func)`

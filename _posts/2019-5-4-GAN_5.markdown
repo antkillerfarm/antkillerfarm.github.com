@@ -363,3 +363,21 @@ https://mp.weixin.qq.com/s/f0Ynln-27z5A6LXt8j5qKQ
 https://mp.weixin.qq.com/s/cEg6HmS651riJVAtHdPafg
 
 基于域适应弱监督学习的目标检测
+
+# 图像变换+
+
+https://zhuanlan.zhihu.com/p/67692429
+
+GAN网络利用单张照片构成动图
+
+https://mp.weixin.qq.com/s/zgMPW6yioGJEhusj031r5A
+
+如何利用深度学习技术处理图像水印？
+
+https://mp.weixin.qq.com/s/Y__qQCkkUlDGAl8dF_tsPg
+
+女神背心变内衣，只需草图画几笔
+
+https://mp.weixin.qq.com/s/mWIJt6niM3cw_Zy_RHRCZw
+
+人脸照片秒变艺术肖像画：清华大学提出APDrawingGAN

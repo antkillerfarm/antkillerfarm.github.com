@@ -371,15 +371,3 @@ LearningToPaint：一个绘画AI
 https://mp.weixin.qq.com/s/JJ2V9coeDI7WvWyDZNlVqA
 
 你的老婆你做主：画风自定义，内容自定义，南加大AI助你走上人生巅峰
-
-https://zhuanlan.zhihu.com/p/67692429
-
-GAN网络利用单张照片构成动图
-
-https://mp.weixin.qq.com/s/zgMPW6yioGJEhusj031r5A
-
-如何利用深度学习技术处理图像水印？
-
-https://mp.weixin.qq.com/s/Y__qQCkkUlDGAl8dF_tsPg
-
-女神背心变内衣，只需草图画几笔

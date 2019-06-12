@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十五）——姿态/行为检测, Regularization
+title:  深度学习（三十五）——姿态/行为检测
 category: DL 
 ---
 
@@ -83,6 +83,20 @@ https://mp.weixin.qq.com/s/-A87-z5inWBsF1-5UYagTA
 Facebook实时人体姿态估计：Dense Pose及其应用展望
 
 ## Hourglass networks
+
+Hourglass networks是University of Michigan的Alejandro Newell的作品。（2016年3月）
+
+论文：
+
+《Stacked hourglass networks for human pose estimation》
+
+![](/images/img3/Hourglass_Networks.png)
+
+上图是Stacked Hourglass networks的网络结构图，其中的每个沙漏形状的结构，都是一个hourglass module，其结构如下图所示：
+
+![](/images/img3/Hourglass_Networks_2.png)
+
+
 
 参考：
 
@@ -378,12 +392,3 @@ https://mp.weixin.qq.com/s/tEOSPiYvgkaiRjVYLweQ4w
 
 旷视研究院提出TACNet，刷新时空动作检测技术新高度
 
-# Regularization
-
-DL中的Regularization除了常见的$$l_1$$-norm、$$l_2$$-norm和squared $$l_2$$-norm之外，还有Group Regularization。它的定义如下：
-
-$$loss(W;x;y) = loss_D(W;x;y) + \lambda_R R(W) + \lambda_g \sum_{l=1}^{L} R_g(W_l^{(G)})$$
-
-$$R_g(w^{(g)}) = \sum_{g=1}^{G} \lVert w^{(g)} \rVert_g = \sum_{g=1}^{G} \sum_{i=1}^{|w^{(g)}|} {(w_i^{(g)})}^2$$
-
-Group Regularization也叫做Block Regularization或Structured Regularization。
