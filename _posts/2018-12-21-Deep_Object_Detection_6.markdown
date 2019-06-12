@@ -134,9 +134,23 @@ https://blog.csdn.net/jningwei/article/details/80038594
 
 # CornerNet
 
+CornerNet是Princeton University的Hei Law的作品。（2018年8月）
+
 论文：
 
 《CornerNet: Detecting Objects as Paired Keypoints》
+
+CornerNet认为Two-stage目标检测最明显的缺点是在Region Proposal阶段需要提取anchor boxes。这样做导致两个问题：
+
+- 提取的anchor boxes数量较多，比如DSSD使用40k，RetinaNet使用100k，anchor boxes众多造成正负样本不均衡。
+
+- Anchor boxes需要调整很多超参数，比如anchor boxes数量、尺寸、比率，影响模型的训练和推断速率。
+
+![](/images/img3/CornerNet_2.png)
+
+
+
+![](/images/img3/CornerNet.png)
 
 
 

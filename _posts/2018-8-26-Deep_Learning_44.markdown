@@ -246,7 +246,7 @@ https://github.com/wannabeOG/Mask-RCNN
 
 Mask R-CNN的要点主要有：
 
- - **RoI Align**
+- **RoI Align**
 
 RoI Align避免对RoI的边界或者块（bins）做任何量化，例如直接使用x/16代替[x/16]。
 
@@ -254,11 +254,11 @@ RoI Align避免对RoI的边界或者块（bins）做任何量化，例如直接�
 
 答案：对临近的整数采样点，使用双线性插值（bilinear interpolation）拟合，得到非整数采样点的值。
 
- - **独立的类别预测**
+- **独立的类别预测**
 
 把loss由`tf.nn.softmax_cross_entropy_with_logits`换成`tf.nn.sigmoid_cross_entropy_with_logits`。参见《深度目标检测（五）》的YOLOv3一节。没错，YOLOv3借鉴了Mask R-CNN的这一设计思路。
 
- - **对象实例分割**
+- **对象实例分割**
 
 Mask R-CNN只对RoI Align后的区域进行分割，而不像U-NET等会对全景进行分割。因此，更适合抠图之类的应用。
 

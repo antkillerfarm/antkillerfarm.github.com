@@ -96,7 +96,7 @@ Hourglass networks是University of Michigan的Alejandro Newell的作品。（201
 
 ![](/images/img3/Hourglass_Networks_2.png)
 
-
+hourglass module基本可以看作是把concat换成add之后的U-NET，或者也可以看作是resnet版的U-NET。上图中一个module包含了4次add，因此也被叫做4阶hourglass module。
 
 参考：
 
@@ -375,20 +375,3 @@ https://mp.weixin.qq.com/s/KdsHDoPEdrYZgqcW7SMfSw
 https://mp.weixin.qq.com/s/spaI9rPy9H3wnlStoncBqQ
 
 中科大&微软开源：基于高清表示网络的人体姿态估计
-
-https://github.com/sebastianstarke/AI4Animation
-
-Character Animation in Unity 3D using Deep Learning and Artificial Intelligence
-
-https://zhuanlan.zhihu.com/p/48601321
-
-人体关键点检测（pose estimation）性能度量指标（OKS）解析
-
-https://mp.weixin.qq.com/s/6aDSJ6EzAvj71D4qHqQoPw
-
-董峻廷：多视角下多人三维姿态估计
-
-https://mp.weixin.qq.com/s/tEOSPiYvgkaiRjVYLweQ4w
-
-旷视研究院提出TACNet，刷新时空动作检测技术新高度
-

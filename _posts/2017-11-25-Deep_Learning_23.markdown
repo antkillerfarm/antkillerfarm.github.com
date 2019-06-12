@@ -230,6 +230,24 @@ https://mp.weixin.qq.com/s/kWv-hp2svq1OEHy2DqQ4uA
 
 古纾旸：Generative model is more than just GANs
 
+# 姿态/行为检测+
+
+https://github.com/sebastianstarke/AI4Animation
+
+Character Animation in Unity 3D using Deep Learning and Artificial Intelligence
+
+https://zhuanlan.zhihu.com/p/48601321
+
+人体关键点检测（pose estimation）性能度量指标（OKS）解析
+
+https://mp.weixin.qq.com/s/6aDSJ6EzAvj71D4qHqQoPw
+
+董峻廷：多视角下多人三维姿态估计
+
+https://mp.weixin.qq.com/s/tEOSPiYvgkaiRjVYLweQ4w
+
+旷视研究院提出TACNet，刷新时空动作检测技术新高度
+
 # LSTM进阶
 
 ## 《Long short-term memory》

@@ -202,6 +202,10 @@ https://mp.weixin.qq.com/s/4r4k6JIj4xvHHmt3QqmbuA
 
 以RNN形式做CRF后处理—CRFasRNN
 
+https://mp.weixin.qq.com/s/JsqhwwJ7wnNcgOuAR6ekxw
+
+理解条件随机场
+
 ## BiLSTM+CRF
 
 ![](/images/img2/BiLSTM_CRF.jpg)

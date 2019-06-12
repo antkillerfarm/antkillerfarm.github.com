@@ -429,3 +429,7 @@ https://mp.weixin.qq.com/s/SWpgNMDIRfRugWBhMyGrTQ
 https://visualgo.net/zh
 
 一个数据结构和算法的可视化网站
+
+https://mp.weixin.qq.com/s/ZuzmCHoo4i8e5TjZUOTPGg
+
+17种经典图表总结，轻松玩转数据可视化！
