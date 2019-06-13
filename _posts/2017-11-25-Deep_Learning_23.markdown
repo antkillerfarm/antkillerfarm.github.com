@@ -248,6 +248,10 @@ https://mp.weixin.qq.com/s/tEOSPiYvgkaiRjVYLweQ4w
 
 旷视研究院提出TACNet，刷新时空动作检测技术新高度
 
+https://mp.weixin.qq.com/s/j70ohcCod9FCijWL_tquig
+
+腾讯AI Lab联合清华大学提出基于骨骼姿态估计的人体实例分割
+
 # LSTM进阶
 
 ## 《Long short-term memory》

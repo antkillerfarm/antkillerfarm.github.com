@@ -160,9 +160,15 @@ Foveon X3虽然色彩不失真，但制作工艺比较复杂，目前只用在�
 
 绿色位于可见光频谱的中段，也是最常见的颜色，所以采样要多一些。
 
-除了Bayer Array之外，还有Fuji Array（主要用于Fuji相机）：
+除了Bayer Array之外，常见的还有Fuji Array（主要用于Fuji相机）：
 
 ![](/images/img2/Fuji.png)
+
+当然了，不常见的就更多了：
+
+![](/images/img3/RYYB.jpg)
+
+比如华为最近出的Mate P30 Pro（2019.4）就使用了RYYB Array。
 
 ## RAW Data
 

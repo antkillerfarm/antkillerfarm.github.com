@@ -6,6 +6,13 @@ category: language
 
 # Python
 
+## 文件名处理
+
+{% highlight python %}
+(filepath,tempfilename) = os.path.split(filename)
+(shotname,extension) = os.path.splitext(tempfilename)
+{% endhighlight %}
+
 ## NetworkX
 
 NetworkX是一个用Python语言开发的图论与复杂网络建模工具，内置了常用的图与复杂网络分析算法，可以方便的进行复杂网络数据分析、仿真建模等工作。
@@ -164,6 +171,10 @@ https://mp.weixin.qq.com/s/xCKC3cz7jUvrwl4uvMNKTA
 https://mp.weixin.qq.com/s/IznKbG3cEF6uxP0Fe_0oaQ
 
 印度小哥“神剑”：PDF提取表格so easy！
+
+https://mp.weixin.qq.com/s/1U3NqvlSvr6jL1e3yFxXgw
+
+20多行 Python 代码优雅搞定PDF转换成图片
 
 ## PLY
 

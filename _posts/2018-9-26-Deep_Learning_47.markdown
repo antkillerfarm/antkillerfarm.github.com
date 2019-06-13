@@ -393,3 +393,7 @@ https://mp.weixin.qq.com/s/RjeuHXa8O3MzSpTOuOHMkQ
 https://mp.weixin.qq.com/s/yPq1cGnhcbaNLOjadj91pw
 
 Bert时代的创新：Bert在NLP各领域的应用进展
+
+https://mp.weixin.qq.com/s/l-de0vfx-L24g58IxK-NKQ
+
+Jeff Dean强推：可视化Bert网络，发掘其中的语言、语法树与几何学

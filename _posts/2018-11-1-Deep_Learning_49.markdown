@@ -276,6 +276,10 @@ https://www.zhihu.com/question/36509150/answer/67878788
 
 央视的军事·农业频道，被网友们亲切地称为“耕战频道”，并由此衍生“外国间谍看央视7套最后变成养猪专业户”的笑谈。
 
+----
+
+棋经有云，布局有三忌，炮忌轻发，马忌躁进，车忌迟开。
+
 # Fast Image Processing
 
 ![](/images/article/FIP.png)

@@ -366,6 +366,10 @@ https://mp.weixin.qq.com/s/GowWRaE5mZoPVAPK6_AkrA
 
 如何构建可解释的推荐系统？
 
+https://mp.weixin.qq.com/s/7QrSSEiLjmGjNhFfU6ue0A
+
+推荐系统产品与算法概述
+
 # 强连通分量算法
 
 http://ishare.iask.sina.com.cn/f/34626295.html

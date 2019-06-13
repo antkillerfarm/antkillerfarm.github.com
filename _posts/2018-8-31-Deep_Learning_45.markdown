@@ -282,6 +282,10 @@ https://mp.weixin.qq.com/s/ZTeIuBZzC44NhLNZkxJNQw
 
 商汤使用AutoML设计Loss函数，全面超越人工设计
 
+https://mp.weixin.qq.com/s/mQ01MkRCWL0gZVtVWZmbJw
+
+谷歌发布颠覆性研究：不训练不调参，AI自动构建超强网络，告别炼丹一大步（WANN）
+
 # 图像超分辨率进阶
 
 https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
