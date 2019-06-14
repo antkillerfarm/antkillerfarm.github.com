@@ -330,6 +330,10 @@ https://mp.weixin.qq.com/s/kWRW81aAMl18GIDQWqX1Ow
 
 PFLD：简单高效的实用人脸关键点检测算法
 
+https://mp.weixin.qq.com/s/HpgcPkAZb9R5jF-zsGcfcw
+
+美图影像实验室（MTlab）10000 点人脸关键点技术全解读
+
 ## 参考
 
 https://github.com/ChanChiChoi/awesome-Face_Recognition
@@ -387,33 +391,3 @@ https://mp.weixin.qq.com/s/33VQNVvb7JGlk10Jc3mmeg
 https://github.com/ModelOriented/DrWhy
 
 可解释AI(XAI)工具集—DrWhy
-
-# GAN参考资源
-
-https://mp.weixin.qq.com/s/fmqaw0xm4Lm7h3rPsLD7yA
-
-关于GAN的灵魂七问
-
-https://mp.weixin.qq.com/s/CwB7IDaCZBzcQV8IBsYQDw
-
-最新《生成式对抗网络GAN进展》论文
-
-https://mp.weixin.qq.com/s/-SVtuZGOn6Wk9kwe50JJqw
-
-《GAN实战：生成对抗网络深度学习》牛津大学Jakub著作
-
-https://mp.weixin.qq.com/s/QqQ0SoF-kFTQRLxo4Tzm2g
-
-反思基于能量的生成式模型：中山大学研究者从粒子演化角度改进经典的FRAME
-
-https://mp.weixin.qq.com/s/ExsDftIvi8VUdvxfka-1ow
-
-南大和中大“合体”拯救手残党：基于GAN的PI-REC重构网络，“老婆”画作有救了
-
-https://mp.weixin.qq.com/s/RhYVCO0jNlY97ptIUvRRQQ
-
-带你读论文：生成对抗网络GAN论文TOP 10
-
-https://mp.weixin.qq.com/s/jByvPPrlN7zIOPXON4fZJw
-
-生成对抗网络也需要注意力机制

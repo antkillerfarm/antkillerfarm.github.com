@@ -290,64 +290,44 @@ https://mp.weixin.qq.com/s/95FH-_L5smx7WoNnfucWVg
 
 为什么说自动化特征工程将改变机器学习的方式
 
-# TensorFlow
+# 知识图谱参考资源+
 
-https://mp.weixin.qq.com/s/W1KP213Ngj-BNEyx-_nVyw
+https://mp.weixin.qq.com/s/7LFkOzkD1-PsNNAr5DAETg
 
-利用TensorFlow实现卷积自编码器
+TechKG：一个面向中文学术领域的大型知识图谱
 
-https://mp.weixin.qq.com/s/2COA8aRQBpxaihKnlLkXZQ
+https://mp.weixin.qq.com/s/QNTJngwEDtxufEpIGTngCw
 
-快速上手图像识别：用TensorFlow API实现图像分类实例
+事理图谱，下一代知识图谱
 
-https://mp.weixin.qq.com/s/rVSC1AXj9YECjUrl5PkSGw
+https://mp.weixin.qq.com/s/0bTmzKiC7WDbLRcxfAAGqw
 
-详解深度强化学习展现TensorFlow 2.0新特性
+提取计数量词丰富知识库
 
-https://mp.weixin.qq.com/s/TZMOO_LFCxk297lKNQfvGQ
+https://mp.weixin.qq.com/s/Pqm5uhC9iMLuPk6mDCtPuQ
 
-TensorFlow从基础到实战：一步步教你创建交通标志分类神经网络
+动态知识图谱补全论文合集
 
-https://mp.weixin.qq.com/s/HUUwtyjRllg-5olqYHK4XA
+https://zhuanlan.zhihu.com/p/51000072
 
-基于TensorFlow的开源项目FaceRank
+基于知识图谱路径推理的可解释推荐
 
-https://mp.weixin.qq.com/s/N2OP1uX7JjfIJQ_B4NHKpw
+https://mp.weixin.qq.com/s/qj5sFIqCUkW38XQ6hRao1w
 
-横向对比三大分布式机器学习平台：Spark、PMLS、TensorFlow
+KG Embedding with Iterative Guidance from Soft Rules
 
-https://mp.weixin.qq.com/s/bJigyEv6iNDp799KlHsclg
+https://mp.weixin.qq.com/s/PrugbfsWIt0LWGJRw_9i1Q
 
-TensorFlow 不仅用于机器学习，还能模拟偏微分方程（水滴特效）
+基于知识库的类型实体和关系的联合抽取
 
-https://mp.weixin.qq.com/s/dmNEzrWNX3YWmocjpORpig
+https://mp.weixin.qq.com/s/_pNDalO6D8kGiCBYi1jnIA
 
-谷歌开源TF-Ranking可扩展库，支持多种排序学习
+对于知识图谱嵌入表示的几何形状理解
 
-https://mp.weixin.qq.com/s/ww0nd07DaK4eVcexqebn3g
+https://mp.weixin.qq.com/s/3QjLFzMvH9qR05kmUyawQg
 
-基于TensorFlow卷积神经网络的短期股票预测
+知识图谱如何用于可解释人工智能中？
 
-https://mp.weixin.qq.com/s/n_zU7Rg7v6PwjZWEF88fNA
+https://mp.weixin.qq.com/s/_ZBvq7gXvbiP2IQve9tcKg
 
-如何使用TensorFlow实现音频分类任务
-
-https://mp.weixin.qq.com/s/UbBJYOmWtUXPFliRMyzDrg
-
-最新TensorFlow专业深度学习实战书籍和代码《Pro Deep Learning with TensorFlow》
-
-https://mp.weixin.qq.com/s/skl5w2cJaO3mYtr656lb9Q
-
-见人识面，TensorFlow实现人脸性别/年龄识别
-
-https://mp.weixin.qq.com/s/g2xMUmhxUTuQugR2PWUJtw
-
-组成TensorFlow核心的六篇论文
-
-https://mp.weixin.qq.com/s/n4nEtyRc5G44kj3zmHpd5g
-
-TensorFlow实战——图像分类神经网络模型
-
-https://mp.weixin.qq.com/s?__biz=MzU1OTMyNDcxMQ==&mid=2247484836&idx=1&sn=0bc47c662ea64aa833df9fb9c4b1d706
-
-TensorFlow模型优化工具包正式推出
+清华等提出ERNIE：知识图谱结合BERT才是“有文化”的语言模型

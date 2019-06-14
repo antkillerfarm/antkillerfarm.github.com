@@ -208,37 +208,3 @@ http://baojie.org/blog/2014/06/23/python-text-extraction/
 浏览器默认是不允许在HTTPS里面引用HTTP资源的，一般都会弹出提示框，用户确认后才会继续加载，用户体验非常差。
 
 对于同时支持HTTPS和HTTP的资源，引用的时候要把引用资源的URL里的协议头去掉，例如：//www.example.com/scirpt.js，这样相当于相对路径，即浏览器会自动根据当前是HTTPS还是HTTP来给资源URL补上协议头的，可以达到无缝切换。
-
-# NLP参考资源
-
-https://mp.weixin.qq.com/s/AqzdRoXthrUFUOqSNwgfqQ
-
-新的一年，想发有关对话系统的paper？快关注时下最大热点：智能化与个性化
-
-https://mp.weixin.qq.com/s/HWqFpDhvhGrJtNTSLsO3Eg
-
-大众点评信息流基于文本生成的创意优化实践
-
-https://mp.weixin.qq.com/s/dIQoNRtZcm2TL_XQldIhaA
-
-详解Transition-based Dependency parser基于转移的依存句法解析器
-
-https://mp.weixin.qq.com/s/LQU_HJ4q74lL5oCIk7w5RA
-
-达观数据：中文对比英文自然语言处理NLP的区别综述
-
-https://mp.weixin.qq.com/s/9NFkd-8tRUI6GaPefhEf-Q
-
-斯坦福新模型刷新纪录：自然语言理解GLUE排行榜最高分！
-
-https://mp.weixin.qq.com/s/AhoEzujMVUU-P7j5z_8sVQ
-
-基于神经网络的实体识别和关系抽取联合学习
-
-https://mp.weixin.qq.com/s/mgeQXkEWu5JlZxyAM0yiaQ
-
-充分利用候选项的选择型机器阅读理解模型
-
-https://mp.weixin.qq.com/s/RlarTDziwkGGM_CUa40XAw
-
-机器之心线上分享：用于序列生成的推敲网络

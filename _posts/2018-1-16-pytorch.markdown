@@ -358,14 +358,6 @@ https://zhuanlan.zhihu.com/p/33956771
 
 # AI Chip+
 
-https://mp.weixin.qq.com/s/1r7G84les7FihqPbSiS0Ng
-
-华为首款手机端AI芯片麒麟970
-
-https://mp.weixin.qq.com/s/y9dVg9YtfWxu6NcW-fxi6Q
-
-内存带宽与计算能力，谁才是决定深度学习执行性能的关键？
-
 https://mp.weixin.qq.com/s/K_dohaZbCISZlxe1Utu50w
 
 如何用FPGA加速卷积神经网络(CNN)？

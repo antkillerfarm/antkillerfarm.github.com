@@ -1,10 +1,26 @@
 ---
 layout: post
-title:  GAN（五）——参考资源
+title:  GAN（五）——GAN参考资源
 category: GAN & VAE 
 ---
 
+# ProGAN（续）
+
+当然，这也带来了另一个问题：网络结构切换的时候，Loss会发生抖动现象，论文中专门提出了如何smooth的方法，这里不再赘述。
+
+参考：
+
+https://mp.weixin.qq.com/s/X8osUSPROJqGVTvw0gieDQ
+
+T2T：利用StackGAN和ProGAN从文本生成人脸
+
 # StyleGAN
+
+StyleGAN是Nvidia Lab的Tero Karras的作品。（2018.12）
+
+论文：
+
+《A Style-Based Generator Architecture for Generative Adversarial Networks》
 
 
 
@@ -40,7 +56,7 @@ https://mp.weixin.qq.com/s/akLvNQZMNTaVbkbUrZY4tw
 
 《》
 
-# 参考资源
+# GAN参考资源
 
 https://mp.weixin.qq.com/s/Gjb-PkMqUIIV81Na6Za_BQ
 
@@ -282,102 +298,38 @@ https://mp.weixin.qq.com/s/r1LFbnTo48Gs6-gKmuBMIg
 
 GAN毕业手册：从零到一构建自己的GAN模型
 
-# 目标检测进阶+
+https://mp.weixin.qq.com/s/QqQ0SoF-kFTQRLxo4Tzm2g
 
-https://mp.weixin.qq.com/s/dcrBQ-t3tLOTouEyofOBxg
+反思基于能量的生成式模型：中山大学研究者从粒子演化角度改进经典的FRAME
 
-间谍卫星：利用卷积神经网络对卫星影像进行多尺度目标检测
+https://mp.weixin.qq.com/s/ExsDftIvi8VUdvxfka-1ow
 
-https://mp.weixin.qq.com/s/LtXylKTKsHdjMPw9Q1HyXA
+南大和中大“合体”拯救手残党：基于GAN的PI-REC重构网络，“老婆”画作有救了
 
-优于MobileNet、YOLOv2：移动设备上的实时目标检测系统Pelee
+https://mp.weixin.qq.com/s/RhYVCO0jNlY97ptIUvRRQQ
 
-https://mp.weixin.qq.com/s/Gq3bflJq59Tx-nDCvbweNA
+带你读论文：生成对抗网络GAN论文TOP 10
 
-无需预训练分类器，清华&旷视提出专用于目标检测的骨干网络DetNet
+https://mp.weixin.qq.com/s/jByvPPrlN7zIOPXON4fZJw
 
-https://mp.weixin.qq.com/s/u3eXhoFvo7vZujc0XoQQWQ
+生成对抗网络也需要注意力机制
 
-旷视研究院解读Light-Head R-CNN：平衡精准度和速度
+https://mp.weixin.qq.com/s/fmqaw0xm4Lm7h3rPsLD7yA
 
-https://mp.weixin.qq.com/s/6cUP9vvfcuv8rIEnGnAFiA
+关于GAN的灵魂七问
 
-NCSU&阿里巴巴论文：可解释的R-CNN
+https://mp.weixin.qq.com/s/CwB7IDaCZBzcQV8IBsYQDw
 
-https://mp.weixin.qq.com/s/1vOdOMyByBacSBMVrscq5Q
+最新《生成式对抗网络GAN进展》论文
 
-黄畅：基于DenesBox的目标检测在自动驾驶中的应用
+https://mp.weixin.qq.com/s/-SVtuZGOn6Wk9kwe50JJqw
 
-https://mp.weixin.qq.com/s/-PeXMU_gkcT5YnMcLoaKag
+《GAN实战：生成对抗网络深度学习》牛津大学Jakub著作
 
-CVPR清华大学研究，高效视觉目标检测框架RON
+https://mp.weixin.qq.com/s/I_v_ccLdEOIPiiMyXYkk2Q
 
-https://mp.weixin.qq.com/s/XoKdsQKyaI3LsDxF7uyKuQ
+Jurgen Schmidhuber新论文：我的就是我的，你的GAN还是我的
 
-聊聊目标检测中的多尺度检测（Multi-Scale），从YOLO到FPN，SNIPER，SSD填坑贴和极大极小目标识别
+https://mp.weixin.qq.com/s/sb9peS6miahqIoMut9DzcA
 
-https://mp.weixin.qq.com/s/XdH54ImSfgadCoISmVyyVg
-
-基于单目摄像头的物体检测
-
-https://mp.weixin.qq.com/s/h_ENriEXr7WI_XR_DtxpMQ
-
-这样可以更精确的目标检测——超网络
-
-https://mp.weixin.qq.com/s?__biz=MzI5MDUyMDIxNA==&mid=2247486104&idx=1&sn=5580a4680f3190adb98638471e9b5982
-
-百度视觉团队斩获 ECCV Google AI 目标检测竞赛冠军，获奖方案全解读
-
-https://mp.weixin.qq.com/s/nL9l7hvG3RG7G7LzCzzvug
-
-旷视科技2018 COCO负责人俞刚：如何构建检测与分割的冠军系统
-
-https://mp.weixin.qq.com/s/ZQqcsJenqkXtH1czOe5WnA
-
-阿里巴巴提出Auto-Context R-CNN算法，刷出Faster RCNN目标检测新高度
-
-https://mp.weixin.qq.com/s/aLYQepnr_BjS27Fb-zoZ_g
-
-迈向完全可学习的物体检测器：可学习区域特征提取方法
-
-https://zhuanlan.zhihu.com/p/43655912
-
-“别挡我，我要C位出道！”谈谈深度学习目标检测中的遮挡问题
-
-https://mp.weixin.qq.com/s/VtlSVF4d9LwPJhDEYSbgTg
-
-无监督难分样本挖掘改进目标检测
-
-https://mp.weixin.qq.com/s/AupXIoVmhcOBrX1z1vgdtw
-
-弱监督实现精确目标检测，上交大提出协同学习框架
-
-https://mp.weixin.qq.com/s/Lt00ASVSb_fDDJdtCO0-tQ
-
-物体检测中的结构推理网络
-
-https://mp.weixin.qq.com/s/f0Ynln-27z5A6LXt8j5qKQ
-
-据说以后在探头下面用帽子挡脸没用了：SymmNet遮挡物检测的对称卷积神经网络
-
-https://mp.weixin.qq.com/s/cEg6HmS651riJVAtHdPafg
-
-基于域适应弱监督学习的目标检测
-
-# 图像变换+
-
-https://zhuanlan.zhihu.com/p/67692429
-
-GAN网络利用单张照片构成动图
-
-https://mp.weixin.qq.com/s/zgMPW6yioGJEhusj031r5A
-
-如何利用深度学习技术处理图像水印？
-
-https://mp.weixin.qq.com/s/Y__qQCkkUlDGAl8dF_tsPg
-
-女神背心变内衣，只需草图画几笔
-
-https://mp.weixin.qq.com/s/mWIJt6niM3cw_Zy_RHRCZw
-
-人脸照片秒变艺术肖像画：清华大学提出APDrawingGAN
+AI版007恐怖上演！间谍用GAN生成假头像，大肆网钓政客大V

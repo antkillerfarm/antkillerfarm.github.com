@@ -193,31 +193,3 @@ MongoDB新功能介绍-Change Streams
 Robomongo是一个开源的MongoDB的前端工具，基于Qt编写。官网：
 
 https://robomongo.org/
-
-# 可视化+
-
-## howmuch.net
-
-howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：
-
-![](/images/article/top_10_company.jpg)
-
-网址：
-
-https://howmuch.net/
-
-## Gephi
-
-Gephi是一个针对图和网络的可视化工具。
-
-官网：
-
-https://gephi.org/
-
-## Processing
-
-Processing是一个在可视化领域用的比较多的sketchbook，类似于Logo语言的威力加强版。支持Java、python等多种语言。
-
-官网：
-
-https://processing.org

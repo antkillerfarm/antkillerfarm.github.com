@@ -6,6 +6,44 @@ category: resource
 
 # DL参考资源
 
+## AI与安全（续）
+
+https://zhuanlan.zhihu.com/p/53908224
+
+如何辨别哪些是人工智能生成的虚假图像？
+
+https://mp.weixin.qq.com/s/xZ0MWPdrnzk9cqOP-3wdkw
+
+Pig变飞机？AI为什么这么蠢--Adversarial Attack
+
+https://mp.weixin.qq.com/s/xuncjtCXuqMpJrezFZiFYA
+
+一文读懂文本处理中的对抗训练
+
+https://mp.weixin.qq.com/s/WKRb0SEt1F_2lbgzwlxu_Q
+
+图像压缩重建也能抵御对抗样本，这是一种新的防守策略
+
+https://mp.weixin.qq.com/s/675tMer_pEXwXkg7fzq73g
+
+带了个对抗图像块，YOLOv2竟然无法识别我是人……
+
+https://mp.weixin.qq.com/s/QeuQZiC1hKS5cqs59r9KNQ
+
+危险！一张贴画就能迷惑AI，对抗补丁或让自动驾驶车毁人亡
+
+https://zhuanlan.zhihu.com/p/65745852
+
+动量迭代式对抗噪声生成方法
+
+https://mp.weixin.qq.com/s/hvbou_OuTQ6UBVOqOC9JlQ
+
+如何引诱分类器犯错？南大周志华等提出用自编码器生成恶意训练数据
+
+https://mp.weixin.qq.com/s/2QuwBVaFCQjl81z38u6L-g
+
+一文看尽三种针对人工智能系统的攻击技术及防御策略
+
 ## AI与游戏
 
 https://zhuanlan.zhihu.com/p/22604627
@@ -248,140 +286,96 @@ https://mp.weixin.qq.com/s/iYB4sd3LXS9Acf7KiV1YvQ
 
 FIFA变身AI主场：谷歌推出强化学习“足球引擎”完爆人类玩家
 
-## AI与安全
+## CV
 
-https://mp.weixin.qq.com/s/jBE4gP3O0qVJ50G49Q_xmQ
+https://mp.weixin.qq.com/s/gsHu7vNs9cm1tH2nz9mmMg
 
-对抗样本攻防战，清华大学TSAIL团队再获CAAD攻防赛第一
+推荐一个不错的边缘检测网络：HED
 
-https://mp.weixin.qq.com/s/w84gLswUFkl4NJSMv0RnIA
+https://mp.weixin.qq.com/s/fqpZ8EHgiNupXumvTMSecw
 
-OpenAI详细解析：攻击者是如何使用“对抗样本”攻击机器学习的！
+北大团队研发“车脸”识别系统，不看车牌看外观特征实现精确识别
 
-https://mp.weixin.qq.com/s/u7HxMuJxQG91qFbvS_8csA
+https://mp.weixin.qq.com/s/7zFcWAmtpW2S_PVYru_lxg
 
-L2正则化和对抗鲁棒性的关系
+眼见未必为实--漫谈图像隐写术
 
-https://mp.weixin.qq.com/s/mbjVliHWT9tt7h998FU9Tg
+https://mp.weixin.qq.com/s/HlqzSdhj3Q3nX4Zl63PM0A
 
-L2正则化视角下的对抗样本
+商汤科技23篇论文横扫CVPR
 
-https://mp.weixin.qq.com/s/5OMT6BvqkUgtshow_tLkNw
+https://mp.weixin.qq.com/s/jdM0w4hRgkWmul9Bcp2oCw
 
-精准防御对抗性攻击，清华大学提出对抗正则化训练方法DeepDefense
+揭秘CVPR2017 WebVision图片分类竞赛冠军背后的技术
 
-https://mp.weixin.qq.com/s/hBPsCUCQjT6cIKjjrHyQYg
+https://mp.weixin.qq.com/s/5VHPc99NsFkz1Vl5iU8qkg
 
-继图像识别后，图像标注系统也被对抗样本攻陷!
+详解如何用深度学习消除背景，实现抠图
 
-https://mp.weixin.qq.com/s/c8-lS2TyuQ1lE2sDrW626A
+https://mp.weixin.qq.com/s/SN1Fc48sa4NZzm_K16kUnw
 
-神奇的面包机！谷歌造出对抗样本的实体版
+通过空间上下文特征进行阴影检测
 
-https://mp.weixin.qq.com/s/FNQSLPHQSHSkDipREE702A
+https://mp.weixin.qq.com/s/oOru4Dn2uyVuHVOLDxvsBg
 
-利用分布鲁棒优化方法应对对抗样本干扰
+最新的图像质量评价
 
-https://mp.weixin.qq.com/s/T--R4c0QfyPS2vrGdyUlOw
+https://mp.weixin.qq.com/s/fTFyH5jaLEWWPka_XP9EaQ
 
-UIUC学者构建欺骗检测器的对抗样本！
+视觉识别新范式：开放世界下的大规模长尾识别
 
-https://mp.weixin.qq.com/s/fMtuJbWG_d9zyCZ0oYyX_w
+https://mp.weixin.qq.com/s/sOeBUZi5-7fGkqcd1MPmiQ
 
-经得住考验的“假图片”：用TensorFlow为神经网络生成对抗样本
+李飞飞团队新作-有限标签的场景图预测
 
-https://mp.weixin.qq.com/s/dWIhQVPNi9SlzuhMiatEVQ
+https://zhuanlan.zhihu.com/p/55286828
 
-几张贴纸就让神经网络看不懂道路标志，伯克利为真实环境生成对抗样本
+当低级视觉任务遇上高级视觉任务
 
-https://mp.weixin.qq.com/s/yfuMacLnj9q-9gpXCUfZhg
+## 光神经网络
 
-PSU提出深度k-最近邻算法：解决深度学习应用的安全漏洞
+https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ
 
-https://mp.weixin.qq.com/s/oUpoqnUUhMR_zlQqrvdLTw
+3D打印的深度神经网络，光速执行AI运算
 
-一文读懂如何用深度学习实现网络安全
+https://mp.weixin.qq.com/s/5zt8UIpNBcgNZpwHHJj68Q
 
-https://mp.weixin.qq.com/s/bWHaBTaKkjtJec3taFugeQ
+光学CNN层替换传统CNN层，超省电
 
-向人类免疫系统学习，AI如何做到挽救30亿美元的网络犯罪损失？
+https://mp.weixin.qq.com/s/IheyYAC1yIigYOW-gtc5Eg
 
-https://mp.weixin.qq.com/s/KNXD-MpVHQRXYvJKTqn6WA
+Science重磅！用光速实现深度学习，跟GPU说再见
 
-完善强化学习安全性：UC Berkeley提出约束型策略优化新算法
+https://mp.weixin.qq.com/s/ENYX87SMlgv30x08iYFQIw
 
-https://mp.weixin.qq.com/s/AL48Gp4NbGWPrz9I0eBOXA
+几乎零能耗零延迟！UCLA科学家发明光衍射神经网络，登上Science
 
-“房间里的大象“：让目标检测器一脸懵逼
+## gcForest
 
-https://mp.weixin.qq.com/s/tk7ghSXi2jz8SYbBeWR8jg
+http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw
 
-神经网络模糊测试：将DNN应用于软件安全测试
+周志华教授gcForest（多粒度级联森林）算法预测股指期货涨跌
 
-https://zhuanlan.zhihu.com/p/45695815
+https://mp.weixin.qq.com/s/GU9-rH0gFan620Jhc1HTDg
 
-华为新论文：将行人重识别准确率从88变到0
+周志华提出的gcForest能否取代深度神经网络？
 
-https://mp.weixin.qq.com/s/Um6U-hjZ8I-awDinHXaQLg
+https://mp.weixin.qq.com/s/dEmox_pi6KGXwFoevbv14Q
 
-三维对抗样本的生成方法MeshAdv，成功欺骗真实场景中的分类器和目标检测器
+周志华：首个基于森林的自编码器，性能优于DNN
 
-https://mp.weixin.qq.com/s/tWKGLntwXyePZcJsZ30K3A
+http://mp.weixin.qq.com/s/IfEgSOIkIPA-YtC9NQW1ng
 
-神经网络太好骗？清华团队如何做到打NIPS攻防赛得3冠军的
+非神经网络的深度模型gcForest
 
-https://mp.weixin.qq.com/s/g1IHOd4S-uKcl3DX131zFg
+https://mp.weixin.qq.com/s/N80l9PZQposbIOKXbv8ayw
 
-“穿墙透视”黑魔法来了！只需WiFi和智能手机就可实现
+周志华：最新实验表明gcForest已经是最好的非深度神经网络方法
 
-https://mp.weixin.qq.com/s/x6KM7iruojEWkWPgXpIAuA
+https://mp.weixin.qq.com/s/8QP5X9Hxi_6qyfxP4O0Gwg
 
-这一次，MIT的科学家让谷歌AI把步枪误认成直升机
+周志华团队和蚂蚁金服合作：用分布式深度森林算法检测套现欺诈
 
-https://mp.weixin.qq.com/s/OjpIeAdPTeOpYa5T0h992A
+https://mp.weixin.qq.com/s/bE9BZQ6wCICvrgomdySDuw
 
-只需修改一个像素，让神经网络连猫都认不出
-
-https://mp.weixin.qq.com/s/Jmlia3v5P8UzG-MEuIMULQ
-
-对抗攻击的12种攻击方法和15种防御方法
-
-https://mp.weixin.qq.com/s/Jhi9TWQqhJIyG7cakgo2Xg
-
-修改一个像素，就能让神经网络识别图像出错
-
-https://mp.weixin.qq.com/s/6AtZZ434HehQSf_YgbylTw
-
-用100元的支票骗到100万：看看对抗性攻击是怎么为非作歹的
-
-https://mp.weixin.qq.com/s/uI5gUGtiR8VDXreU4YEZYA
-
-MILA提出防御增强型网络：简单修改已有网络即可提升防攻击能力
-
-https://mp.weixin.qq.com/s/Ffaotx83qRJS1s-bbMt1UA
-
-一点微小的扰动，就可能导致深度神经网络做出错误判断
-
-https://mp.weixin.qq.com/s/tXr9NhVfBSvI5pduziIECQ
-
-基于深度学习的二进制恶意样本检测
-
-https://mp.weixin.qq.com/s/x8ykOA9CeX3FCz0WCeySng
-
-AI生成假指纹以假乱真，你的指纹识别还安全吗？
-
-https://mp.weixin.qq.com/s/EeAvDpPpfxDO4WFIrvCMpA
-
-深入浅出对抗性机器学习（AML）
-
-https://zhuanlan.zhihu.com/p/53908224
-
-如何辨别哪些是人工智能生成的虚假图像？
-
-https://mp.weixin.qq.com/s/xZ0MWPdrnzk9cqOP-3wdkw
-
-Pig变飞机？AI为什么这么蠢--Adversarial Attack
-
-https://mp.weixin.qq.com/s/xuncjtCXuqMpJrezFZiFYA
-
-一文读懂文本处理中的对抗训练
+周志华组提出可做表征学习的多层梯度提升决策树

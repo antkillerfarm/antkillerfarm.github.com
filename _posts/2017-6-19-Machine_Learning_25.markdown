@@ -250,6 +250,10 @@ https://mp.weixin.qq.com/s/sGRNiAl7tvPc1tl0Xk2Idw
 
 深度学习和强化学习在组合优化方面有哪些应用？
 
+https://mp.weixin.qq.com/s/MuODCRWqolnh62D4t-hRvQ
+
+临(邻)近增量累积梯度法(PIAG)
+
 # 金融模型
 
 Capital asset pricing model
@@ -304,18 +308,6 @@ https://mp.weixin.qq.com/s/vwhetMpQllczILptBNcoWg
 
 # TensorFlow+
 
-https://mp.weixin.qq.com/s/nnjyR4XGVZQ1zXCIPzTNlg
-
-基于TensorFlow的变分自编码器实现
-
-https://mp.weixin.qq.com/s/iMgesGmdb7Jq4muCxb-nFA
-
-Tensorflow实战：Discuz验证码识别
-
-https://mp.weixin.qq.com/s/4aJUGBpPG_6Oc5EqOmM0Iw
-
-作为TensorFlow的底层语言，你会用C++构建深度神经网络吗？
-
 https://mp.weixin.qq.com/s/5_oCSK6MtsK_4xNU6T76UA
 
 计算机图形学遇上深度学习，针对3D图像的TensorFlow Graphics面世
@@ -347,45 +339,3 @@ Transformer聊天机器人教程
 https://mp.weixin.qq.com/s/OGsvcfU1VlhNZYgEGLimsQ
 
 爱奇艺基于TensorFlow Lite的移动端AR解决方案SmileAR
-
-# 知识图谱参考资源+
-
-https://mp.weixin.qq.com/s/7LFkOzkD1-PsNNAr5DAETg
-
-TechKG：一个面向中文学术领域的大型知识图谱
-
-https://mp.weixin.qq.com/s/QNTJngwEDtxufEpIGTngCw
-
-事理图谱，下一代知识图谱
-
-https://mp.weixin.qq.com/s/0bTmzKiC7WDbLRcxfAAGqw
-
-提取计数量词丰富知识库
-
-https://mp.weixin.qq.com/s/Pqm5uhC9iMLuPk6mDCtPuQ
-
-动态知识图谱补全论文合集
-
-https://zhuanlan.zhihu.com/p/51000072
-
-基于知识图谱路径推理的可解释推荐
-
-https://mp.weixin.qq.com/s/qj5sFIqCUkW38XQ6hRao1w
-
-KG Embedding with Iterative Guidance from Soft Rules
-
-https://mp.weixin.qq.com/s/PrugbfsWIt0LWGJRw_9i1Q
-
-基于知识库的类型实体和关系的联合抽取
-
-https://mp.weixin.qq.com/s/_pNDalO6D8kGiCBYi1jnIA
-
-对于知识图谱嵌入表示的几何形状理解
-
-https://mp.weixin.qq.com/s/3QjLFzMvH9qR05kmUyawQg
-
-知识图谱如何用于可解释人工智能中？
-
-https://mp.weixin.qq.com/s/_ZBvq7gXvbiP2IQve9tcKg
-
-清华等提出ERNIE：知识图谱结合BERT才是“有文化”的语言模型

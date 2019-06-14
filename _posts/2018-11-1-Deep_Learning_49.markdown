@@ -210,21 +210,9 @@ https://mp.weixin.qq.com/s/8jyQ_7DYn7lHMcAWokKbcA
 
 超Mask RCNN速度4倍，仅在单个GPU训练的实时实例分割算法
 
-# 知名数据集+
+https://mp.weixin.qq.com/s/TC_Ju2vuKDP6d538v2F8CQ
 
-## Other（续）
-
-https://github.com/wecatch/china_regions
-
-最全最新中国省，市，地区json及sql数据
-
-https://mp.weixin.qq.com/s/h38VZnInkuOjkgcEmsTtMg
-
-让机器帮你做行测题，UCLA朱松纯团队提出关系和类比视觉推理数据集RAVEN
-
-https://mp.weixin.qq.com/s/8wiHVMhKjzlg8BqMMLLgYw
-
-神经网络也能解数学题，DeepMind发布千万数学题海数据集
+剪枝需有的放矢，快手&罗切斯特大学提出基于能耗建模的模型压缩
 
 # AI工具+
 
@@ -247,38 +235,6 @@ https://mp.weixin.qq.com/s/a3zu7nvy0itOvzvgOlf01Q
 https://zhuanlan.zhihu.com/p/68462431
 
 谷歌开源RL足球环境
-
-# 世说新语+
-
-## 2019.6（续）
-
-![](/images/img3/jiang_qi.jpg)
-
-大局将棋，是江户时代出现的一种棋盘大小为36×36的将棋，是规模最大的日本将棋，其棋子数量达到了804枚（双方各402枚），棋子种类复杂，步法各不相同。
-
-https://baike.baidu.com/item/%E5%A4%A7%E5%B1%80%E5%B0%86%E6%A3%8B
-
-大局将棋
-
-----
-
-https://uboat.net/boats/finder.php
-
-一个关于德国U型潜艇的网站。
-
-----
-
-https://www.zhihu.com/question/36509150/answer/67878788
-
-为什么10年前的《指环王》三部曲，现在依然能秒杀市场上绝大多数电影制作？
-
-----
-
-央视的军事·农业频道，被网友们亲切地称为“耕战频道”，并由此衍生“外国间谍看央视7套最后变成养猪专业户”的笑谈。
-
-----
-
-棋经有云，布局有三忌，炮忌轻发，马忌躁进，车忌迟开。
 
 # Fast Image Processing
 

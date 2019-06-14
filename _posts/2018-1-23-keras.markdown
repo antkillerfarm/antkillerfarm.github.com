@@ -349,7 +349,7 @@ https://mp.weixin.qq.com/s/K9U3GCW1tAIYRoKKq_nG9w
 
 一行TensorFlow/Keras代码解决真实场景中数据不平衡(imbalanced)问题
 
-# DL参考资源+
+# DL参考资源
 
 https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650748834&idx=3&sn=805564d2d9956dff6bb888ccb61e9b7b
 
@@ -418,3 +418,7 @@ https://mp.weixin.qq.com/s/oWBZmjZZB-Sk3ivhC2jY-w
 https://mp.weixin.qq.com/s/I1BcM3qM7lb9XecKeAMwMQ
 
 Hinton等人新研究：如何更好地测量神经网络表示相似性
+
+https://mp.weixin.qq.com/s/MoKzux6Z69dlpqcVTvQ9oQ
+
+解释深度神经网络训练全过程：谷歌发布SVCCA

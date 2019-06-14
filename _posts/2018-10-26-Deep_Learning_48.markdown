@@ -397,29 +397,3 @@ https://mp.weixin.qq.com/s/NbEki2ByMmA93DyoQF1yjA
 https://mp.weixin.qq.com/s/R7Qud_x6DGqbHAOl7OMruQ
 
 一文带你入门算法分发！
-
-# 目标检测进阶
-
-https://mp.weixin.qq.com/s/NWILStthG4klkwrYVcGQSQ
-
-ILC：用于自然场景多目标的计数模型
-
-https://mp.weixin.qq.com/s/9BCf0rCp660a5xQ2JNz3AQ
-
-深入理解one-stage目标检测算法（上篇）
-
-https://mp.weixin.qq.com/s/p9XaI8PSG0o1NWlkmCIn7w
-
-深入理解one-stage目标检测算法（下篇）
-
-https://mp.weixin.qq.com/s/reNCLvOyJHkJZimnMpbIig
-
-目标检测算法优化技巧：Bag of Freebies for Training Object Detection
-
-https://mp.weixin.qq.com/s/psXJNlEawZlQ-ZdktDpjOw
-
-目标检测小tricks之样本不均衡处理
-
-https://mp.weixin.qq.com/s/Pl8HABuVN27CZv-lvGROTw
-
-基于深度学习的目标检测算法近5年发展历史

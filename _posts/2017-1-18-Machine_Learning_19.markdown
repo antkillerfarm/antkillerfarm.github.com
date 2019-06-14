@@ -329,3 +329,7 @@ https://mp.weixin.qq.com/s/ku942npFMgXxOrm0Xam-Cg
 https://blog.csdn.net/CoderPai/article/details/90900707
 
 bagging方法
+
+https://mp.weixin.qq.com/s/dIQuuCvSJWAG7vSwrVb-ew
+
+随机森林算法用于股票交易

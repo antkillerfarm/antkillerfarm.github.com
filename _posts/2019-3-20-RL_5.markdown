@@ -204,39 +204,3 @@ https://zhuanlan.zhihu.com/p/65116688
 https://zhuanlan.zhihu.com/p/65364484
 
 值分布强化学习（02）
-
-# 世说新语
-
-## 2019.5（续）
-
-一个女人背着老公跟情夫跑了，大伯子组织全村人去捉奸，把情夫家围了，围着围着自己吵起来了，吵完又打。
-
-如果搁一般故事，这就是个乡村新闻。但如果把大伯子组织的全村人变成十万大军，围了情夫家变成特洛伊城，时间变成十年——忽然就变成史诗《伊利亚特》了。
-
-----
-
-https://mp.weixin.qq.com/s/SukZFrroUmldi25Vfvp2gA
-
-拿下杜克全奖的学霸男神, 却选择了在汶川地震中失去双腿和女儿的她....
-
-# 目标检测进阶
-
-https://mp.weixin.qq.com/s/uzG8sic5Y6LVqBS6iKQDhw
-
-目标检测中图像增强，mixup如何操作？
-
-https://mp.weixin.qq.com/s/pkFcmm15gnuRJtngFX7f0w
-
-目标检测训练trick超级大礼包—不改模型提升精度，值得拥有
-
-https://mp.weixin.qq.com/s/flXzhQ-Ypf3fwTqLelLzOQ
-
-李沐等将目标检测绝对精度提升5%，不牺牲推理速度
-
-https://mp.weixin.qq.com/s/6QsyYtEVjavoLfU_lQF1pw
-
-目标检测新文：Generalized Intersection over Union
-
-https://mp.weixin.qq.com/s/Xs3nThAcUOq62bO2p61YFA
-
-论文解读 Receptive Field Block Net for Accurate and Fast

@@ -8,6 +8,22 @@ category: resource
 
 ## 文本分类（续）
 
+https://mp.weixin.qq.com/s/DsE8X2Hgx1oYMoFUswgKkA
+
+Raúl Garreta大神教你5步搭建机器学习文本分类器！
+
+https://mp.weixin.qq.com/s/6mE3qPL5ag1C6ZVUsQibdg
+
+LR如何在语言理解NLU中实现文本分类
+
+https://mp.weixin.qq.com/s/z2bdlhaala2ko55MYiyXNw
+
+CNN也能用于NLP任务，一文简述文本分类任务的7个模型
+
+http://mp.weixin.qq.com/s/YUV2YDXCH9fS_3ckPPBsFQ
+
+手把手教你如何用TensorFlow实现基于DNN的文本分类
+
 https://mp.weixin.qq.com/s/uL7J5cSU3P7QsFczvT1fTA
 
 基于深度学习的文本分类6大算法-原理、结构、论文、源码打包分享
@@ -391,23 +407,3 @@ https://mp.weixin.qq.com/s/uVoLET8LTnC_z0uJ8r0bRA
 https://mp.weixin.qq.com/s/2cbzD1UFW66-3zwsZk9Bxg
 
 用于文本的最牛神经网络架构是什么？
-
-https://mp.weixin.qq.com/s/T4AkbKXf2pkyazIlzEZxhw
-
-基于转移的语义依存图分析
-
-https://mp.weixin.qq.com/s/GFI_ZCZxuLUi0tdW_gr7tw
-
-基于循环神经网络问句关键词提取技术研究
-
-https://zhuanlan.zhihu.com/p/31453283
-
-浅谈NLP中条件语言模型(Conditioned Language Models)的生成和评估
-
-https://mp.weixin.qq.com/s/M8Awv6Tod4SEo85F8xzqqg
-
-基于半监督学习技术的达观数据文本过滤系统
-
-https://mp.weixin.qq.com/s/r_x1IUuyIQw3aif2f7-Fxw
-
-邱锡鹏：深度学习在语义分析处理的最新发展

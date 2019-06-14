@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  大数据平台参考资源（二）, 知名数据集（二）
+title:  大数据平台参考资源（二）, 数字成像
 category: resource 
 ---
 
@@ -134,268 +134,284 @@ https://mp.weixin.qq.com/s/QjZL3fGz-Kvjh40RGVm4AQ
 
 SQL on Hadoop在快手大数据平台的实践与优化
 
-# 知名数据集
+# 数字成像
 
-## CV（续）
+## CCD
 
-https://mp.weixin.qq.com/s/_wQoiC6ogcLWSEUFUGHd5g
+岩间和夫，1919～1982，东京帝国大学理学部地球物理学毕业。索尼前社长。最大的贡献在于推动CCD(电荷耦合元件)的研究，人称他为“CCD小子”。
 
-Facebook，MIT等发布大规模卫星图像理解数据挑战赛DeepGlobe 2018
+1970年：“完全回收在CCD上的投资，本世纪内都没有可能实现。”
 
-https://mp.weixin.qq.com/s/WPESySGMv_ehSt6oNUkVGg
+八年后，CCD终于开发成功。然而岩间并没有等到CCD的量产，就因肠癌去世。继任索尼社长的大贺典雄将一片CCD镶嵌在岩间和夫的墓碑上，来纪念他对索尼的贡献。
 
-视频语义显著实例分割数据集SESIV
+![](/images/img2/CMOS.png)
 
-https://mp.weixin.qq.com/s/fR8-zODLNp24nlR5dJ85Nw
+参考：
 
-3万患者11万图像14类病理：NIH公开大规模胸部X光数据集
+http://science.china.com.cn/2016-09/26/content_9058067.htm
 
-https://mp.weixin.qq.com/s/d-fIQwMxHXTJvFWQUKHAvw
+睹物思人--索尼历史档案馆的另类发现
 
-我用5000万组数据分析了“猜画小歌”
+## 深度相机
 
-https://mp.weixin.qq.com/s/jOjiAAK1byUx8ic011f33w
+深度相机按照深度测量原理不同，一般分为：飞行时间法、结构光法、双目立体视觉法。
 
-2200万室内场景数据集，包含语义、全景、灯光等十余种效果
+https://zhuanlan.zhihu.com/p/31921046
 
-https://mp.weixin.qq.com/s/aw5o-1Bwc4hQUatehFFx2A
+深度相机的主流技术方案一览Structure Light，ToF，Stereo Dual
 
-南京大学发布WebCaricature漫画人脸识别数据集
+https://mp.weixin.qq.com/s/7es1wtJXatJR2eHScrk2_w
 
-https://mp.weixin.qq.com/s/deJ6dChES_WhYH8T05ruag
+深度相机大盘点（1）
 
-腾讯AI实验室宣布开源多标签图像数据集ML-Images
+https://zhuanlan.zhihu.com/p/32170603
 
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750713&idx=5&sn=678eef1122d35c048a5fca8f22fa12c9
+iPhone X的原深感相机到底是个什么玩意？
 
-CIFAR-10+ImageNet=？CINIC-10！
+https://zhuanlan.zhihu.com/p/32171299
 
-https://mp.weixin.qq.com/s/Kxnvv1i0nvkg0vUDBlx6MA
+深度相机原理揭秘--飞行时间（TOF）
 
-向机器学习偏见开战：谷歌展示全球涂鸦数据集分析结果
+https://zhuanlan.zhihu.com/p/32199990
 
-https://mp.weixin.qq.com/s/vTnc55KAiGaFfktHPZctbw
+深度相机原理揭秘--双目立体视觉
 
-捡漏！用谷歌图片搜索自制深度学习数据集
+http://mp.weixin.qq.com/s/MWQDwMoRc0c1ofkENzn3Ew
 
-https://mp.weixin.qq.com/s/-NQa2VeuskDx5XN9WMCmPQ
+结构光，TOF，双目视觉的异同
 
-腾讯开源业内最大多标签图像数据集，附ResNet-101模型
+## 结构光
 
-https://mp.weixin.qq.com/s/8nPfU72WocrDxToG6v5tIA
+https://mp.weixin.qq.com/s/o_XsmqLSPhvuC0iiK7xHag
 
-计算摄影学数据集汇总（一）
+结构光（1）基本介绍
 
-https://mp.weixin.qq.com/s/0b0g-IwJVsiKKTY_TLRmZA
+https://mp.weixin.qq.com/s?__biz=MzU3ODU0Nzk5MA==&mid=2247483804&idx=1&sn=9e37b8cbd9c47f108c1153e3165fffa3
 
-1460万个目标检测边界框：谷歌开源Open Images V4数据集
+小米结构光VS iPhone 结构光（一）
 
-https://blog.csdn.net/fuwenyan/article/details/79224753
+https://zhuanlan.zhihu.com/p/54761392
 
-服装分类检索识别数据集
+结构光综述
 
-https://blog.csdn.net/fuwenyan/article/details/78203803
+## 解析力
 
-DeepFashion: 服装公开数据集概述
+https://zhuanlan.zhihu.com/p/20726167
 
-https://mp.weixin.qq.com/s/YzuMtFUE3aw7rRplVzAKmQ
+解析力（1）MTF SFR
 
-短视频识别，都有那些行业标准？
+https://zhuanlan.zhihu.com/p/20726175
 
-https://mp.weixin.qq.com/s/iR7SPg_3AStJh5wzkEpoAg
+解析力（2）空间采样和奈奎斯特
 
-这个“多模态视频人物数据集”里，藏了杨幂、吴亦凡和鹿晗
+https://blog.csdn.net/jaych/article/details/50889664
 
-https://mp.weixin.qq.com/s/DhuZJae-Dp4MnCIfc3SAgw
+SFR算法详解1
 
-阿里如何将“高峰前扩容、高峰后缩容”的梦想照进现实？
+https://blog.csdn.net/jaych/article/details/50700576
 
-https://mp.weixin.qq.com/s/NLumRBw5Zqqf08fBJLeTsw
+SFR算法详解2
 
-新任务&数据集：视觉常识推理(VCR)
+https://blog.csdn.net/jaych/article/details/51030939
 
-https://mp.weixin.qq.com/s/uqFy-1_JM9P2WKU5YOmwmA
+SFR算法详解3
 
-一个22万张NSFW图片的鉴黄数据集？我有个大胆的想法……
+https://blog.csdn.net/jaych/article/details/51031064
 
-https://mp.weixin.qq.com/s/QEq8fHY2HCOuCXUWXwOpyA
+SFR算法详解4
 
-情人节：一本正经地为单身狗推荐这个158万张图像的鉴黄数据集
+## 双目成像
 
-https://zhuanlan.zhihu.com/p/55627416
+https://zhuanlan.zhihu.com/p/50801189
 
-旷视RPC大型商品数据集发布！
+OpenCV双目稠密匹配BM算法源代码详细解析
 
-https://mp.weixin.qq.com/s/DtVa_tL5OfC2i-hbFZKY5Q
+https://www.jianshu.com/p/cbe50ede70aa
 
-视觉推理任务中的ImageNet：斯坦福GQA数据集重磅发布
+半全局块匹配（Semi-Global Block Matching）算法
 
-https://mp.weixin.qq.com/s/byEa0rnfBU3WP0KzOMZBVw
+https://mp.weixin.qq.com/s/SD1pkTNHG7TGKrwVbFaMZg
 
-你也能用英伟达GAN造脸了：官方实现有了，高清数据集也开源了
+中科慧眼崔峰：下一代双目视觉产品预警距离将达到80米
 
-https://mp.weixin.qq.com/s/OU3onjVeOnqo_ORIJtQdMQ
+https://mp.weixin.qq.com/s/mYijtRNvkSeVxk0sWkORSw
 
-DeepFashion2数据集：87.3万对买家秀-卖家秀图像+海量标注
+双目视觉简介
 
-https://mp.weixin.qq.com/s/l5wXZOiRj53ufckiRx0hIw
+https://zhuanlan.zhihu.com/p/56236308
 
-从图像中检测和识别表格，北航&微软提出新型数据集TableBank
+基于双目视觉的自动驾驶技术
 
-https://mp.weixin.qq.com/s/ze8SWIrUAPnOUsslxpv2Rg
+https://mp.weixin.qq.com/s/j4jfTKkbdQ9bHD7IZFdkbA
 
-如何从900万张图片中对600类照片进行分类，附代码
+国防科大提出双目超分辨算法，效果优异代码已开源
 
-https://zhuanlan.zhihu.com/p/53151892
+## 参考
 
-航拍/无人机视频图像数据集
+https://mp.weixin.qq.com/s/od9uDZdRU4QaBKPHb0tLag
 
-https://mp.weixin.qq.com/s/hH3Px_KGegJbGbBvfqrXYA
+cmos sensor基础
 
-谷歌开放史上最大分割掩码数据集
+https://mp.weixin.qq.com/s/lVS3CgZGItUkWG-OtolbSA
 
-https://github.com/lartpang/awesome-segmentation-saliency-dataset
+数字成像书籍推荐与资料分享
 
-图像分割/显著性检测数据集列表
+https://mp.weixin.qq.com/s/1IHHo4sV79sXdtXNzKNhMA
 
-https://mp.weixin.qq.com/s/q0GrF3tRBKnio23OzmIF6w
+计算摄影--google相机的王者之道
 
-找不到合适的数据？这里有281个计算机视觉数据集任你选
+https://mp.weixin.qq.com/s/T4XULnykHANEetmDIhZdaw
 
-## 人脸/行为
+mobile camera sensor技术方向选择的经验与教训
 
-http://blog.csdn.net/wangkr111/article/details/44514097
+https://mp.weixin.qq.com/s/EcAAc_ypajEKXUQbOoYAMA
 
-肤色检测&人脸检测数据集等链接大集合
+如何选择IR filter
 
-https://mp.weixin.qq.com/s/aPlNov77l-3hBRePbIEOrg
+https://mp.weixin.qq.com/s/typXBdisUI-d_viVInx9XQ
 
-一文道尽“人脸数据集”
+解析DXO图像质量评价体系
 
-https://mp.weixin.qq.com/s/BCgVMYe011O-Jse4ZFBbxg
+https://mp.weixin.qq.com/s/t-Mzx0IEdZG7_TmMpT_cBA
 
-谷歌发布人类动作识别数据集AVA，精确标注多人动作
+小谈CMOS Sensor设计之FSI和BSI
 
-https://mp.weixin.qq.com/s/vp--aYbPKi8yDSiS5MPMLA
+https://mp.weixin.qq.com/s/gyuKlDwlIqaZmC3w-r8oqg
 
-MIT与Facebook提出SLAC：用于动作分类和定位的稀疏标记数据集
+手机相机如何排名
 
-http://mmlab.ie.cuhk.edu.hk/projects/WIDERFace/
+https://mp.weixin.qq.com/s/cDrVpqsY7f2HZCJa4X8Iww
 
-WIDER FACE: A Face Detection Benchmark
+Google Pixel 2/2XL视频稳定技术探究
 
-http://mmlab.ie.cuhk.edu.hk/archive/CNN_FacePoint.htm
+https://mp.weixin.qq.com/s/7E9QDSM095KyYwPs-wDznA
 
-人脸关键点检测的训练数据集
+成像相关颜色测量仪器简介
 
-https://zhuanlan.zhihu.com/p/39737327
+https://mp.weixin.qq.com/s/oeMqE0MzXyGeABGekY9eiQ
 
-想训练动作识别模型？这里有六个数据源供你参考
+眼擎科技CEO朱继志：如何设计自动驾驶的视觉成像系统
 
-https://mp.weixin.qq.com/s/3QD3KI4IwBQlnPPDpPBb2A
+https://blog.csdn.net/weixin_38285131/article/details/80457068
 
-更大的行人重识别测试集 Market-1501+500k
+光场相机重聚焦原理介绍及代码解析
 
-https://mp.weixin.qq.com/s/bYaAYkTj_0OxpDcWsToBWw
+https://mp.weixin.qq.com/s/ofoh7xH9MB0ifORi-ZQbcA
 
-业内最大规模！美图联合清华推出教程类行为数据集COIN
+苹果iphone Xs/Xr camera有哪些改进
 
-## 推荐系统
+https://mp.weixin.qq.com/s/24ipxnkh6TNiqRrakgw6ew
 
-http://www.zanmel.com/2015/12/14/10-great-datasets-on-movies/
+Google Pixel3拍照为什么那么牛？
 
-最知名的电影数据集。
+https://mp.weixin.qq.com/s/cxsdBLnguAFJcFP65_cC0A
 
-https://mp.weixin.qq.com/s/hrI0ILAs4Nko_JkqegaANA
+3D摄像头产业链解析
 
-推荐系统9个必备数据集
+https://mp.weixin.qq.com/s/Kp1CLCz0eG38r1HplQ02Ew
 
-https://mp.weixin.qq.com/s/DxVhQx4b9GP6IoXOpGESDQ
+即将兴起的汽车内视相机
 
-推荐系统的常用数据集
+https://mp.weixin.qq.com/s/jmvcuiRu82zVC2kq91uS0g
 
-https://mp.weixin.qq.com/s/U96j-8_8yo_KGEu9ufWBGg
+谷歌AI用“深度”学习来虚化背景，单摄手机可用，Jeff Dean表示优秀
 
-亚马逊Kindle电子书和纸质图书销售排行数据
+https://mp.weixin.qq.com/s/tg1Rjl-8t93IVIh1PHTuWg
 
-https://zhuanlan.zhihu.com/p/40785841
+什么是‘log灰’
 
-6个推荐系统开放公共数据集整理分享
+https://mp.weixin.qq.com/s/al1rP_LQLe1xIGuwK2Gr2A
 
-## 无人驾驶
+AI camera时代对成像带来了哪些影响
 
-https://mp.weixin.qq.com/s/YlC4fbn8O15JdNsVTnBVOw
+https://mp.weixin.qq.com/s/YW3anc5S9_BDrXiyVro5fQ
 
-无人驾驶数据集汇总
+从光学成像到计算光学成像
 
-http://www.cvlibs.net/datasets/kitti/
+https://mp.weixin.qq.com/s/Fpy3_kljryrjEqoZz4IlNg
 
-KITTI Vision Benchmark Suite：一个自动驾驶方面的数据库。包括GPS、雷达、摄像头等数据。
+电子后视镜（一）——相关标准汇总
 
-https://github.com/MarvinTeichmann/KittiSeg
+https://mp.weixin.qq.com/s/aUAD-SWJ6PEplrFRb5SHZg
 
-一个KITTI数据集上的道路图像语义分割模型。
+消除摩尔纹的光学方法
 
-https://mp.weixin.qq.com/s/y_Q1umHaC0NEuj2TlKoKZQ
+https://mp.weixin.qq.com/s/yBd9qcmMHKIGx88voovFgw
 
-百度Apollo推出大规模自动驾驶数据集，将于CVPR发起挑战赛
+有趣的偏振相机
 
-https://mp.weixin.qq.com/s/nDX4oSV-_zs5TMl3Q8eP3A
+https://mp.weixin.qq.com/s/eVtbmy8rJ6V2j-6XJ0JJCA
 
-伯克利发布BDD100K：目前最大规模开放驾驶视频数据集
+夜景拍照之技术创新
 
-https://mp.weixin.qq.com/s/gKZt903-hrlcEK-O5k-pTw
+https://mp.weixin.qq.com/s/DH3mZgh4YbnceaFGs03kOQ
 
-本田公布104小时驾驶行为数据集：时间不长但胜在全面
+曹汛：计算摄像学研究
 
-https://mp.weixin.qq.com/s/9k2aorOp_zc10JKf9F9Evw
+https://mp.weixin.qq.com/s/f2BIrZ8if7_rX__J9hMHog
 
-上海交大和厦门大学联合发布大规模驾驶策略学习数据集DBNet
+广色域----iphone X/8 camera的色彩进化
 
-https://mp.weixin.qq.com/s/4A68qHXEA7VHe8RrKv7Wbg
+https://mp.weixin.qq.com/s/VjzXYgkzAGloczaaPXni2A
 
-自动驾驶都有什么测试基准？
+PDAF进化史
 
-https://mp.weixin.qq.com/s/Mt40v0fy3_eq6tkz6a8ndQ
+https://mp.weixin.qq.com/s/vg64EpcCVsk7gQAoEozSRQ
 
-英伟达推出首个跨摄像头汽车跟踪数据集
+PDAF进阶
 
-## 医疗
+https://mp.weixin.qq.com/s/m7q6jHbdnb7fw4lKIDfVWw
 
-https://mp.weixin.qq.com/s/849fLGndmaRvz_oWt6HWtg
+camera接口之MIPI联盟浅谈
 
-一文道尽医学图像数据集与竞赛
+https://mp.weixin.qq.com/s/DbDrDhbQAhXOsfxQ8UJVZg
 
-https://mp.weixin.qq.com/s/AW5PGDXCTPMf8hwsPxOfjg
+三星S9凝时摄影背后的sensor技术
 
-NIHCC发布迄今世界最大的CT医学影像数据集
+https://mp.weixin.qq.com/s/gOikxUxWpqdDRr6_KT2jxQ
 
-https://mp.weixin.qq.com/s/M3s3z3YnEBvUxpDVGFVKHw
+图像处理，计算机视觉与machine learning的区别与联系
 
-斯坦福吴恩达团队公布最大医学影像数据集
+https://mp.weixin.qq.com/s/7fvVmmpPSldwa3TZ3dVb2g
 
-https://mp.weixin.qq.com/s/9TFLE3R7ct0HzaAwOCfkbw
+3D LUT--色彩校正的利器
 
-斯坦福联合MIT，发布两类巨大量级X光胸片数据集
+https://mp.weixin.qq.com/s/sXC263Lq25tKp2AK2Tsb-A
 
-https://mp.weixin.qq.com/s/OhwDbFfHs-farxUVxRDw4Q
+Omnivision HDR sensor简介
 
-吴恩达斯坦福实验室发布MRNet数据集，包含1千多张标注膝关节核磁共振成像
+https://mp.weixin.qq.com/s/m_EKOLjWjTyx4RBxsAAAGg
 
-## Other
+4x4阵列摄/“深感”摄
 
-https://mp.weixin.qq.com/s/VCJoBf2ECdvyRLU7atciYA
+https://mp.weixin.qq.com/s/dX_thGA2V_-AMjDGTUgWrg
 
-浙江大学和帝国理工大学发布的交通速度预测数据集
+计算摄影技术：身怀绝技的扫地僧
 
-https://mp.weixin.qq.com/s/dsLVogBtYjYeMULWp4QrhA
+https://mp.weixin.qq.com/s/ZSczU1_J_exb2oreiHtK3g
 
-一网打尽成语歇后语，GitHub新华字典数据库
+夜景拍照之sensor篇
 
-https://zhuanlan.zhihu.com/p/40984645
+https://mp.weixin.qq.com/s/eyIeLaBZ0f_EsxglsUuH8A
 
-打通推荐系统与知识图谱: 第一个公开的大规模链接数据集合
+深度学习自动构图研究报告
 
-http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201703/t20170310_1471429.html
+https://mp.weixin.qq.com/s/k2JLF_aM3j68GjEByCZF-g
 
-国家统计局：最新县及县以上行政区划代码
+模拟/数字增益对图像噪声的影响
+
+https://mp.weixin.qq.com/s/QmEQuEk2B_fAleewTuNClg
+
+3D成像技术和CMOS传感器的发展方向简析
+
+https://mp.weixin.qq.com/s/R7wnyHT6M-KF3ZMz0bPrVg
+
+这台相机没镜头！美国教授新发明，一块玻璃可成像，拍照给计算机看
+
+https://mp.weixin.qq.com/s/j970Qp8Cz2fpbImujkS2Xg
+
+自动驾驶应用中的LED flicker问题
+
+https://mp.weixin.qq.com/s/Yy-XEyM0YGTRFUX2uWgNKw
+
+夜景拍照之算法篇

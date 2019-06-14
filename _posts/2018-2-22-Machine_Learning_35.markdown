@@ -317,29 +317,3 @@ https://mp.weixin.qq.com/s/ij3bf61Pu7lrX0WijhbDeA
 https://mp.weixin.qq.com/s/iYxijHlE3sLJgKnwwd8Tgg
 
 使用深度强化学习和贝叶斯优化获得巨额利润
-
-# 目标检测进阶
-
-https://zhuanlan.zhihu.com/p/54334986
-
-TridentNet：处理目标检测中尺度变化新思路
-
-https://mp.weixin.qq.com/s/S6sz5dPgGNcJvrIAZ3ZjGg
-
-基于深度学习的通用物体检测算法对比探索
-
-https://mp.weixin.qq.com/s/oF3MAkl1UikRkOhrj3equw
-
-深度学习的目标检测算法是如何解决尺度问题的？
-
-https://mp.weixin.qq.com/s/oxStDMh90jB7_EY4vqja2w
-
-目标检测论文阅读：DetNet
-
-https://zhuanlan.zhihu.com/p/55972055
-
-SimpleDet:一套简单通用的目标检测与物体识别框架
-
-https://mp.weixin.qq.com/s/Sl958JkcJjy-HW9_c-SH4g
-
-Guided Anchoring: 物体检测器也能自己学Anchor

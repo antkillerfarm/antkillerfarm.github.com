@@ -177,6 +177,10 @@ https://mp.weixin.qq.com/s/ePssT5BDb9KebCTehn0ugw
 
 5分钟读懂强化学习之Q-learning
 
+https://www.zhihu.com/question/26408259
+
+如何用简单例子讲解Q-learning的具体过程？
+
 # Markov Decision Process
 
 上边Q-Learning的例子中，由于action能够唯一确定状态的变换，因此又被称为**Markov Reward Process**：

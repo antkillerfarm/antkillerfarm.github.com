@@ -48,6 +48,10 @@ category: RL
 
 在推荐系统领域，由于有用户的反馈信息，亦可使用相关强化学习算法。
 
+这是传统RL算法的分类图：
+
+![](/images/img3/RL_map.png)
+
 ## MDP
 
 强化学习任务通常用**马尔可夫决策过程（Markov Decision Process）**来描述：

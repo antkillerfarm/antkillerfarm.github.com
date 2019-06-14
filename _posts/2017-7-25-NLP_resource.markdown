@@ -397,19 +397,3 @@ https://mp.weixin.qq.com/s/0Jz_BSe6DI29gvWiy7poBw
 https://github.com/brightmart/text_classification
 
 一个文本分类的代码库
-
-https://mp.weixin.qq.com/s/DsE8X2Hgx1oYMoFUswgKkA
-
-Raúl Garreta大神教你5步搭建机器学习文本分类器！
-
-https://mp.weixin.qq.com/s/6mE3qPL5ag1C6ZVUsQibdg
-
-LR如何在语言理解NLU中实现文本分类
-
-https://mp.weixin.qq.com/s/z2bdlhaala2ko55MYiyXNw
-
-CNN也能用于NLP任务，一文简述文本分类任务的7个模型
-
-http://mp.weixin.qq.com/s/YUV2YDXCH9fS_3ckPPBsFQ
-
-手把手教你如何用TensorFlow实现基于DNN的文本分类

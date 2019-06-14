@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  垃圾筐, 可视化
+title:  垃圾筐
 category: resource 
 ---
 
@@ -302,6 +302,10 @@ https://zhuanlan.zhihu.com/p/30124129
 
 引力波的能量之谜：“爱因斯坦奇迹年”和五份手稿
 
+https://mp.weixin.qq.com/s/ChZ-cNTSb7Pm_ka9gunm9A
+
+73岁硬核老爷爷，用物理自证车祸无责，葛军：看来又有新题材了
+
 ## LSM (Log Structured Merge)
 
 十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。
@@ -323,113 +327,3 @@ Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被
 https://mp.weixin.qq.com/s/AdmEd1FHxpZUwSGYy3qggg
 
 利用cpu缓存实现高性能程序
-
-# 可视化
-
-![](/images/img2/data_visual.png)
-
-这里重点推荐下文：
-
-https://mp.weixin.qq.com/s/QUoW4eD93_DPQ7kP_6jaZg
-
-定义可视化！用30分钟读懂人类感知世界的39项研究
-
-这篇文章从人类感知的角度分析了各种可视化技术。其中的一个有意思的结论是：
-
->3D图形虽然“炫目”和“性感”，却没有传达任何额外的信息，迫使读者“处理冗余和无关的线索”。
-
-参考：
-
-https://mp.weixin.qq.com/s/Ul6Qg2ylCgvDfJTQre4DWQ
-
-2017年数据可视化的七大趋势
-
-https://mp.weixin.qq.com/s/i2Ex8Zmu2ZzHPcoPr-1Rlw
-
-太阳系相关图，教你优雅的打开“可视化”的大门
-
-https://mp.weixin.qq.com/s/q5mPN_rt1Af5L2fnxuTdCA
-
-46款数据可视化分析工具大集合
-
-https://mp.weixin.qq.com/s/mD732PqDtqYdFZSxZWtvvg
-
-从1维到6维，一文读懂多维数据可视化策略
-
-https://zhuanlan.zhihu.com/c_122608198
-
-一个可视化方面的专栏
-
-https://mp.weixin.qq.com/s/yF1XJ-_YteoZbVbdIvlbmg
-
-如果伦敦地铁图是数据科学家画的……
-
->Henry Charles Beck，1902～1974，英国制图师。其1931年绘制的伦敦地铁图成为了现代地铁图的设计范例。
-
-https://www.zhihu.com/question/21664179
-
-如何在论文中画出漂亮的插图？
-
-https://zhuanlan.zhihu.com/p/20756711
-
-用Excel做出强大漂亮的数据地图
-
-https://mp.weixin.qq.com/s/XuoeOqGT_mJcFP08ZLq38g
-
-如何选择一个合适的数据图表？
-
-https://mp.weixin.qq.com/s/-XFbY7p8vjJV71Ar5G_5OA
-
-最有趣的机器学习可视化图集
-
-https://mp.weixin.qq.com/s/E-HBQs1-nzP1shC7Gge-7A
-
-“看透”神经网络
-
-https://mp.weixin.qq.com/s/Ys8lnwLyvToumnS2NhAAHg
-
-如何洞悉城市人群移动规律？DataV海量轨迹可视化实践解析
-
-https://mp.weixin.qq.com/s/ndzLKJC2Tvg2gKrr6jUNTw
-
-原来可视化能做得这么酷炫！Uber开源地理空间工具包kepler.gl
-
-http://echarts.baidu.com/echarts2/doc/example.html
-
-各种大数据展示用的图表
-
-https://mp.weixin.qq.com/s/8J-uDw0qwDbj21UkQch2KA
-
-跨平台Canvas绘图引擎背后的黑科技
-
-https://mp.weixin.qq.com/s/94IGjVPXZ0FeCILQN33eBQ
-
-遇见大数据可视化：不要错过这么漂亮的数据可视化案例！
-
-https://mp.weixin.qq.com/s/torRtPSVRnULRTbv4dB1sA
-
-大规模地理数据可视化入门：Deck.gl和H3
-
-https://mp.weixin.qq.com/s/UwPCDA89GH5X-HubeJddnQ
-
-怎么画高大上的神经网络结构？试试这个！
-
-https://mp.weixin.qq.com/s/MMzvZA55Xb2sOA7rJiXiEw
-
-那些酷炫的深度学习网络图怎么画出来的？
-
-https://mp.weixin.qq.com/s/CqvranTh9dawJW5DP-oHpw
-
-手把手教你将矩阵画成张量网络图
-
-https://mp.weixin.qq.com/s/SWpgNMDIRfRugWBhMyGrTQ
-
-交互式《几何原本》再现江湖
-
-https://visualgo.net/zh
-
-一个数据结构和算法的可视化网站
-
-https://mp.weixin.qq.com/s/ZuzmCHoo4i8e5TjZUOTPGg
-
-17种经典图表总结，轻松玩转数据可视化！

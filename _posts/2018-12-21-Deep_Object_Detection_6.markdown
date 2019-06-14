@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（六）——R-FCN, FPN, RetinaNet, CornerNet, Anchor-Free, 其它目标检测网络, 目标检测进阶
+title:  深度目标检测（六）——R-FCN, FPN, RetinaNet, CornerNet, Anchor-Free
 category: Deep Object Detection 
 ---
 
@@ -148,13 +148,43 @@ CornerNet认为Two-stage目标检测最明显的缺点是在Region Proposal阶�
 
 ![](/images/img3/CornerNet_2.png)
 
+上图是CornerNet的网络结构。可以看出它主要由两部分组成：
 
+## Hourglass Network
+
+这是CornerNet的骨干部分。详情参见《深度学习（三十五）》。
+
+## Bottom-right corners & Top-left Corners Prediction Module
+
+CornerNet堆叠两个Hourglass Network生成Top-left和Bottom-right corners，每一个corners都包括corners Pooling，以及对应的Heatmaps, Embeddings vector和offsets。
 
 ![](/images/img3/CornerNet.png)
 
+上图是Heatmaps, Embeddings vector的示意图。
 
+- heatmaps包含C channels（C是目标的类别，没有background channel），每个channel是二进制掩膜，表示相应类别的顶点位置。
 
-参考：
+- embedding vector使相同目标的两个顶点（左上角和右下角）距离最短。或者也可以反过来说，**两个顶点的embedding vector越相近，则它们越有可能配对。**
+
+- offsets用于调整生成更加紧密的边界定位框。
+
+## corner pooling
+
+corner pooling是CornerNet新提出的一种操作。其步骤如下图所示：
+
+![](/images/img3/corner_pooling.png)
+
+依top-left corner pooling为例，对每个channel，分别提取特征图的水平和垂直方向的最大值，然后求和。具体的计算如下图所示：
+
+![](/images/img3/corner_pooling_2.png)
+
+论文认为corner pooling之所以有效，是因为：
+
+- 目标定位框的中心难以确定，和边界框的4条边相关，但是每个顶点只与边界框的两条边相关，所以corner更容易提取。
+
+- 顶点更有效提供离散的边界空间，使用$$O(w\times h)$$顶点可以表示$$O(w^2\times h^2)$$个anchor boxes。
+
+## 参考
 
 https://mp.weixin.qq.com/s/e74-zFcMZzn67KaFXb_fdQ
 
@@ -237,51 +267,3 @@ https://zhuanlan.zhihu.com/p/63273342
 https://zhuanlan.zhihu.com/p/68291859
 
 聊聊Anchor的"前世今生"（下）
-
-# 其它目标检测网络
-
-## A-Fast-RCNN
-
-A-Fast-RCNN首次将对抗学习引入到了目标检测领域，idea是非常创新的。
-
-http://blog.csdn.net/jesse_mx/article/details/72955981
-
-A-Fast-RCNN论文笔记
-
-## G-CNN
-
-G-CNN是MaryLand大学的工作，论文主要的思路也是消除region proposal，和YOLO，SSD不同，G-CNN的工作借鉴了迭代的想法，把边框检测等价于找到初始边框到最终目标的一个路径。但是使用one-step regression不能处理这个非线性的过程，所以作者采用迭代的方法逐步接近最终的目标。
-
-http://blog.csdn.net/zijin0802034/article/details/53535647
-
-G-CNN: an Iterative Grid Based Object Detector
-
-# 目标检测进阶
-
-https://mp.weixin.qq.com/s/1nlOJ7X9ogBHTl1j2adqyg
-
-83页《目标分类和目标检测综述（2D和3D数据）》论文
-
-https://mp.weixin.qq.com/s/HmUhlw90b2aTsoEwBdYbdQ
-
-目标检测二十年技术综述
-
-https://mp.weixin.qq.com/s/5I9uzGCNFD93L1mzakTl0Q
-
-目标检测网络学习总结（RCNN-->YOLO V3）
-
-https://mp.weixin.qq.com/s/zeruKQOye_QNWgluVIN0BA
-
-从R-CNN到RFBNet，目标检测架构5年演进全盘点
-
-https://mp.weixin.qq.com/s/sCGNUI-mUSYxD69uBDQNoQ
-
-基于深度学习的目标检测算法综述：算法改进
-
-https://mp.weixin.qq.com/s/yswy7VwEapQJ9M5n_Uo93w
-
-目标检测最新进展总结与展望
-
-https://mp.weixin.qq.com/s/s1qmCA8djEEanwCxeLSV2Q
-
-63页《深度CNN-目标检测》综述

@@ -272,6 +272,10 @@ https://zhuanlan.zhihu.com/p/68058851
 
 自然场景下的文字检测：从多方向迈向任意形状
 
+https://mp.weixin.qq.com/s/jO2xc7Ri6TvrHyXHH0uX4w
+
+金山WPS：基于本地TensorFlow Lite和AI云服务的文档矫正功能
+
 # 问答系统
 
 GA-Reader

@@ -208,64 +208,6 @@ https://mp.weixin.qq.com/s/WV78mvRn-cYm11cL4l2ScA
 
 开源、快速、高精度的椭圆检测—你值得拥有！
 
-# 数字成像
-
-https://mp.weixin.qq.com/s/oeMqE0MzXyGeABGekY9eiQ
-
-眼擎科技CEO朱继志：如何设计自动驾驶的视觉成像系统
-
-https://blog.csdn.net/weixin_38285131/article/details/80457068
-
-光场相机重聚焦原理介绍及代码解析
-
-https://mp.weixin.qq.com/s/ofoh7xH9MB0ifORi-ZQbcA
-
-苹果iphone Xs/Xr camera有哪些改进
-
-https://mp.weixin.qq.com/s/24ipxnkh6TNiqRrakgw6ew
-
-Google Pixel3拍照为什么那么牛？
-
-https://mp.weixin.qq.com/s/cxsdBLnguAFJcFP65_cC0A
-
-3D摄像头产业链解析
-
-https://mp.weixin.qq.com/s/Kp1CLCz0eG38r1HplQ02Ew
-
-即将兴起的汽车内视相机
-
-https://mp.weixin.qq.com/s/jmvcuiRu82zVC2kq91uS0g
-
-谷歌AI用“深度”学习来虚化背景，单摄手机可用，Jeff Dean表示优秀
-
-https://mp.weixin.qq.com/s/tg1Rjl-8t93IVIh1PHTuWg
-
-什么是‘log灰’
-
-https://mp.weixin.qq.com/s/al1rP_LQLe1xIGuwK2Gr2A
-
-AI camera时代对成像带来了哪些影响
-
-https://mp.weixin.qq.com/s/YW3anc5S9_BDrXiyVro5fQ
-
-从光学成像到计算光学成像
-
-https://mp.weixin.qq.com/s/Fpy3_kljryrjEqoZz4IlNg
-
-电子后视镜（一）——相关标准汇总
-
-https://mp.weixin.qq.com/s/aUAD-SWJ6PEplrFRb5SHZg
-
-消除摩尔纹的光学方法
-
-https://mp.weixin.qq.com/s/yBd9qcmMHKIGx88voovFgw
-
-有趣的偏振相机
-
-https://mp.weixin.qq.com/s/eVtbmy8rJ6V2j-6XJ0JJCA
-
-夜景拍照之技术创新
-
 # Eigenface
 
 Eigenface是M. Turk和A. Pentland于1991年提出的人脸识别算法。

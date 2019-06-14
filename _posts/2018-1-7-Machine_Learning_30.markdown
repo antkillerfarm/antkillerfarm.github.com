@@ -4,60 +4,6 @@ title:  机器学习（三十）——Model-Free Control
 category: ML 
 ---
 
-# TensorFlow
-
-https://mp.weixin.qq.com/s/NMRwXqwr4VFbMUPgI8Uccg
-
-使用Google Cloud上的tf.Transform对TensorFlow管道模式进行预处理
-
-https://mp.weixin.qq.com/s/UKt1cFLcRYZQTJiZRiajwQ
-
-TensorFlow Servering C/S通信约束
-
-https://mp.weixin.qq.com/s/DpqI4AfjiygCh8dqq_Kgmw
-
-基于TensorFlow Serving的深度学习在线预估
-
-https://mp.weixin.qq.com/s/XcqVtFBY5rIn0FgPEx0eTg
-
-工业领域中的AI：BHGE通过使用TensorFlow概率编程工具包开发的基于物理的概率深度学习
-
-http://brucedone.com/archives/1005
-
-Tensorflow破解验证码
-
-https://mp.weixin.qq.com/s/CjlEY_m6tp-NJ3B2MiAZRg
-
-基于TensorFlow的深度模型训练GPU显存优化
-
-http://gitbook.cn/books/593d71ba4686067a2200aec6/index.html
-
-用TensorFlow实现智能机器人的原理及如何实现一个对话机器人
-
-https://mp.weixin.qq.com/s/lLaSXG1VF9Rys2GNzFP7pw
-
-轻松使用多种预训练卷积网络抽取图像特征
-
-https://mp.weixin.qq.com/s/tVqp1Tht1P-0EQazJizQaA
-
-利用人口普查收入数据集预测收入
-
-https://mp.weixin.qq.com/s/3WleFm9S_wMIPTz_WfjKQw
-
-TensorFlow支持Unicode，中文NLP终于省心了
-
-https://mp.weixin.qq.com/s/jFEOokxfJ1Kw-P3wvw3EAg
-
-带你了解，不规则张量！
-
-https://mp.weixin.qq.com/s/tMtx4PZbpo5IrnhzLz8Lzw
-
-AutoGraph：图的简易控制流程
-
-https://mp.weixin.qq.com/s/zY7rGh-kA-36VEo9DiaKbg
-
-TensorFlow进行简单的图像处理
-
 # Model-Free Control
 
 ## 概述
@@ -149,6 +95,12 @@ $$Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\alpha(q_t^{\lambda}-Q(S_t,A_t))$$
 Sarsa($$\lambda$$)+ET：
 
 $$Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\alpha\delta_tE_t(s,a)$$
+
+参考：
+
+https://blog.csdn.net/zchang81/article/details/77746313
+
+Sarsa与Q-learning对比
 
 ## 采样方法
 
