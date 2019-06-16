@@ -240,7 +240,11 @@ https://zhuanlan.zhihu.com/p/66514492
 
 ListwiseRank
 
-# 深度强化学习参考资源
+https://zhuanlan.zhihu.com/p/69246361
+
+基于query的排序
+
+# DRL参考资源
 
 https://mp.weixin.qq.com/s/S2eGPTON3XmfN830m4vaaA
 

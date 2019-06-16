@@ -240,6 +240,10 @@ https://mp.weixin.qq.com/s/JEYucJ16Zsxc6yWHPHGaZA
 
 浙大研发AudioFace：随心录语音就能实时生成3D面部动画
 
+https://mp.weixin.qq.com/s/HubxAFbxCdoaFHNOhfm9QQ
+
+Facebook频谱图模型生成比尔·盖茨声音，性能完胜WaveNet、MAESTRO
+
 # Flink
 
 Flink是一个流计算引擎。

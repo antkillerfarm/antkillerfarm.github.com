@@ -108,6 +108,10 @@ http://mp.weixin.qq.com/s/Ybq6hSTPpyYQSNGJg1tgeQ
 
 AI距离匹敌人类大脑还有多远？人工神经网络和生物神经网络最详细对比
 
+https://github.com/grananqvist/Awesome-Quant-Machine-Learning-Trading
+
+量化交易算法参考资料
+
 ## 算法
 
 http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww

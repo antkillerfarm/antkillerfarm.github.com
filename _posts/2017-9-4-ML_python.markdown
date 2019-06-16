@@ -10,6 +10,8 @@ category: AI
 
 ![](/images/article/python_for_big_data.jpg)
 
+![](/images/img3/ML_python.png)
+
 ## 教程
 
 https://ljalphabeta.gitbooks.io/python-/content/
@@ -439,21 +441,3 @@ TuShare是一个免费、开源的python财经数据接口包。主要实现对�
 官网：
 
 http://tushare.org/
-
-## skimage
-
-skimage相当于python版本的OpenCV。
-
-官网：
-
-http://scikit-image.org/
-
-参考：
-
-https://buptldy.github.io/2016/03/31/2016-03-31-Skimage%20hog/
-
-Compute the HOG descriptor by skimage
-
-https://mp.weixin.qq.com/s/WL8jfxB-xukP_MkN2aMb0w
-
-OpenCV，PIL，Skimage你pick谁

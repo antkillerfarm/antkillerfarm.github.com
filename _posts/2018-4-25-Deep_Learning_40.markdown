@@ -54,36 +54,6 @@ https://www.zhihu.com/question/62068158
 
 除此之外，矩阵量化、Kronecker内积、霍夫曼编码、模型剪枝等也是常见的模型压缩方法。
 
-## 知识蒸馏
-
-知识蒸馏是另一大类的模型压缩方法。
-
-Geoffrey Hinton的论文：
-
-《Distilling the Knowledge in a Neural Network》
-
-![](/images/img2/Distilling.jpeg)
-
-老师网络可以被固定（正如在精炼过程中）或联合优化，甚至同时训练多个不同大小的学生网络。
-
-![](/images/img2/Distilling_2.jpeg)
-
-上图是另一篇论文的图：
-
-《Object detection at 200 Frames Per Second》
-
-该论文的中文版：
-
-https://mp.weixin.qq.com/s/OCG1TiHl2dsuS24uacQ-MA
-
-又快又准确，新目标检测器速度可达每秒200帧
-
-图森科技的后两篇论文也是在Hinton论文的基础上改进的。
-
-论文：
-
-《Articulatory and Spectrum Features Integration using Generalized Distillation Framework》
-
 ## 权值稀疏化实战
 
 这里讲一下韩松论文提到的裁剪方法中，最简单的一种——“权值稀疏化“的工程实现细节。以darknet框架为例。
@@ -152,14 +122,6 @@ https://mp.weixin.qq.com/s/PraNMo4skR-VjEYIIqt1Cw
 
 深度学习模型压缩与加速综述
 
-https://zhuanlan.zhihu.com/p/24337627
-
-深度压缩之蒸馏模型
-
-https://blog.csdn.net/xbinworld/article/details/83063726
-
-知识蒸馏（Distilling the Knowledge in a Neural Network），在线蒸馏
-
 http://blog.csdn.net/shuzfan/article/details/51383809
 
 神经网络压缩：Deep Compression
@@ -167,22 +129,6 @@ http://blog.csdn.net/shuzfan/article/details/51383809
 https://mp.weixin.qq.com/s/2NOFyu_twx1EciDeDPBLKw
 
 深度神经网络加速与压缩
-
-https://zhuanlan.zhihu.com/p/24894102
-
-《Distilling the Knowledge in a Neural Network》阅读笔记
-
-https://luofanghao.github.io/2016/07/20/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0%20%E3%80%8ADistilling%20the%20Knowledge%20in%20a%20Neural%20Network%E3%80%8B/
-
-论文笔记《Distilling the Knowledge in a Neural Network》
-
-http://blog.csdn.net/zhongshaoyy/article/details/53582048
-
-蒸馏神经网络
-
-https://mp.weixin.qq.com/s/A5ka8evElmcuHdowof7kww
-
-Intel发布神经网络压缩库Distiller：快速利用前沿算法压缩PyTorch模型
 
 https://www.zhihu.com/question/50519680
 
@@ -264,10 +210,6 @@ https://mp.weixin.qq.com/s/3oL0Bso3mwbsfaG8X5-xoA
 
 英特尔提出新型压缩技术DeepThin，适合移动端设备深度神经网络
 
-https://mp.weixin.qq.com/s/ekKg46bQlWrlg9Hon01M5g
-
-Hinton胶囊网络后最新研究：用“在线蒸馏”训练大规模分布式神经网络
-
 https://mp.weixin.qq.com/s/JnW7RnOQKG-dPOOAQeOmSA
 
 当前深度神经网络模型压缩和加速都有哪些方法？
@@ -296,10 +238,6 @@ https://zhuanlan.zhihu.com/p/37919669
 
 CVPR 2018 高效小网络探密（下）
 
-https://mp.weixin.qq.com/s/SqxooZqSeD3wA4EFK5D3Kg
-
-再生神经网络：利用知识蒸馏收敛到更优的模型
-
 https://zhuanlan.zhihu.com/p/38046989
 
 从ISCA论文看AI硬件加速的新技巧
@@ -319,3 +257,59 @@ https://mp.weixin.qq.com/s/NJzGR-tY_WWeccbdshHckA
 https://mp.weixin.qq.com/s/ccFccLb2UTyFyMwFPjsDaA
 
 让CNN跑得更快，腾讯优图提出全局和动态过滤器剪枝
+
+https://mp.weixin.qq.com/s/vswtn3D1-VZZlyKLJmHc7A
+
+纪荣嵘：深度神经网络压缩及应用
+
+https://mp.weixin.qq.com/s/cSYCT1I1asaSCIc5Hgu0Jw
+
+计算成本降低35倍！谷歌发布手机端自动设计神经网络MnasNet
+
+https://zhuanlan.zhihu.com/p/42474017
+
+MnasNet：终端轻量化模型新思路
+
+https://mp.weixin.qq.com/s/p_qdKcQwQ8y_JUw3gQUEnA
+
+谷歌大脑用强化学习为移动设备量身定做最好最快的CNN模型
+
+https://mp.weixin.qq.com/s/OyEIcS5o6kWUu2UzuWZi3g
+
+这么Deep且又轻量的Network，实时目标检测
+
+https://mp.weixin.qq.com/s/mWfZ4jfuby4myGfi6TW3wQ
+
+从超参数到架构，一文简述模型优化策略
+
+https://mp.weixin.qq.com/s/8NDOf_8qxMMpcuXIZGJCGg
+
+Google又发大招：高效实时实现视频目标检测
+
+https://mp.weixin.qq.com/s/_JlaxwEYqdTTuS4hNSQTTw
+
+这么Deep且又轻量的Network，实时目标检测
+
+https://mp.weixin.qq.com/s/IxVMMu_7UL5zFsDCcYfzYA
+
+AutoML自动模型压缩再升级，MIT韩松团队利用强化学习全面超越手工调参
+
+https://mp.weixin.qq.com/s/fU-AeaPz-lHlg0CBgqnpZQ
+
+轻量化神经网络综述
+
+https://mp.weixin.qq.com/s/BMsvhXytSy2nWIsGOSOSBQ
+
+自动生成高效DNN，适用于边缘设备的生成合成工具FermiNets
+
+https://mp.weixin.qq.com/s/nEMvoiqImd0RxrskIH7c9A
+
+仅17KB、一万个权重的微型风格迁移网络！
+
+https://mp.weixin.qq.com/s/pc8fJx5StxnX9it2AVU5NA
+
+基于手机系统的实时目标检测
+
+https://mp.weixin.qq.com/s/6wzmyhIvUVeAN4Xjfhb1Yw
+
+论文解读：Channel pruning for Accelerating Very Deep Neural Networks

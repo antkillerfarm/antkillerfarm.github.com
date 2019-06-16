@@ -6,30 +6,7 @@ category: language
 
 # Python
 
-## 文件名处理
-
-{% highlight python %}
-(filepath,tempfilename) = os.path.split(filename)
-(shotname,extension) = os.path.splitext(tempfilename)
-{% endhighlight %}
-
-## NetworkX
-
-NetworkX是一个用Python语言开发的图论与复杂网络建模工具，内置了常用的图与复杂网络分析算法，可以方便的进行复杂网络数据分析、仿真建模等工作。
-
-官网：
-
-https://networkx.github.io/
-
-参考：
-
-https://www.cnblogs.com/kaituorensheng/p/5423131.html
-
-python复杂网络分析库NetworkX
-
-## 如何通过需认证的代理获取HTTP网页
-
-Python内置的urllib和urllib2模块都可用于获取HTTP网页，但使用范围是不同的。urllib只支持HTTP 0.9和HTTP 1.0，所以如果只是使用代理可以使用urllib.FancyURLopener类，如果该代理还需要认证的话urllib就不行了。因为代理认证是HTTP 1.1中引入的。
+## 如何通过需认证的代理获取HTTP网页（续）
 
 这时可以考虑使用urllib2模块。代码如下：
 

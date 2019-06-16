@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  VAE（三）——VAE vs GAN, 参考资源, 通信协议
+title:  VAE（三）——VAE vs GAN, VAE参考资源, 通信协议
 category: GAN & VAE 
 ---
 
@@ -87,6 +87,10 @@ VAE和AE的差异在于：
 VAE映射的是分布，而分布可以通过采样得到有效的z，从而生成相应的x。
 
 ## 参考
+
+https://mp.weixin.qq.com/s/COtuXSpIcujE-pxfeAbTAQ
+
+《变分自编码器（VAE）导论》93页书册
 
 https://mp.weixin.qq.com/s/TqZnlXLKHhZn3U29PlqetA
 
@@ -204,7 +208,7 @@ https://mp.weixin.qq.com/s/fzadP8NwPTxuhEB0O4GU8g
 
 我们前面提到的风格转换都是比较小幅度的风格转换,有的时候我们会需要做非常大的风格转换,譬如把真人照片转成动漫照片。
 
-# 参考资源
+# VAE参考资源
 
 https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw
 
@@ -256,7 +260,7 @@ https://mp.weixin.qq.com/s/fYR2dS3wCMMVk3s9O4nqUw
 
 https://zhuanlan.zhihu.com/p/52974147
 
-VAE 的细节：$$p(x \mid z)$$的噪音，与$$p(z \mid x)$$的编码坍塌
+VAE的细节：$$p(x \mid z)$$的噪音，与$$p(z \mid x)$$的编码坍塌
 
 https://mp.weixin.qq.com/s/uNjF6NxVRs_gAKAmxRpThQ
 

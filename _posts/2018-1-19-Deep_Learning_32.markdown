@@ -24,6 +24,12 @@ https://nervanasystems.github.io/distiller/index.html
 
 Intel AI Lab推出的Distiller是一个关于模型压缩、量化的工具包。这里是它的文档，总结了业界主要使用的各种方法。
 
+参考：
+
+https://mp.weixin.qq.com/s/A5ka8evElmcuHdowof7kww
+
+Intel发布神经网络压缩库Distiller：快速利用前沿算法压缩PyTorch模型
+
 ## Conservative vs. Aggressive
 
 Quantization主要分为两大类：

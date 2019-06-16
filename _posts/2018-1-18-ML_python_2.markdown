@@ -6,6 +6,24 @@ category: AI
 
 # Machine Learning之Python篇
 
+## skimage
+
+skimage相当于python版本的OpenCV。
+
+官网：
+
+http://scikit-image.org/
+
+参考：
+
+https://buptldy.github.io/2016/03/31/2016-03-31-Skimage%20hog/
+
+Compute the HOG descriptor by skimage
+
+https://mp.weixin.qq.com/s/WL8jfxB-xukP_MkN2aMb0w
+
+OpenCV，PIL，Skimage你pick谁
+
 ## Numba
 
 NumPy的一个高速版本，能完成前者大部分的功能。
@@ -229,6 +247,14 @@ Pyecharts：极其强大的Python数据可视化模块
 https://mp.weixin.qq.com/s/20cxuC_tAVmofA7lvquEMQ
 
 Python可视化神器——pyecharts的超详细使用指南！
+
+https://mp.weixin.qq.com/s/5GJKIt5OkMh7C3xqoTJsTA
+
+PyEcharts
+
+https://mp.weixin.qq.com/s/6rusBFuLGw4gpDt6tSQTIw
+
+PyEcharts TreeMap
 
 ## Yellowbrick
 
@@ -461,39 +487,3 @@ https://mp.weixin.qq.com/s/MUMQuZLDE5iyogLnIIBaMw
 http://mp.weixin.qq.com/s/5vI1Ii6bd_IzrXKHlvULSQ
 
 是学习Java还是Python？一张图告诉你！
-
-http://mp.weixin.qq.com/s/Ergq5KKM5vWLWirTf9loEw
-
-7步让你从零开始掌握Python机器学习！
-
-https://mp.weixin.qq.com/s/Ty46-s0kvr2MpbUhQPXJfQ
-
-朴素贝叶斯实战篇之新浪新闻分类
-
-https://mp.weixin.qq.com/s/CMxo4FNxWYyoG-gxAgtzyA
-
-手把手教你安装深度学习操作系统、驱动和各种python库！
-
-https://github.com/leetmaa/KMCLib
-
-KMCLib - a general framework for lattice kinetic Monte Carlo (KMC) simulations
-
-https://mp.weixin.qq.com/s/T7dswxqhie0riPlnjdf9_Q
-
-RNN入门与实践
-
-https://mp.weixin.qq.com/s/ZPCfnj2kLxXLpBNbxs2ggw
-
-Logistic回归实战篇之预测病马死亡率（一）
-
-https://mp.weixin.qq.com/s/XpX9TPgv4a_uKAKiy8W4fg
-
-Logistic回归实战篇之预测病马死亡率（二）
-
-https://mp.weixin.qq.com/s/0i1jKgaRu2pLPAXAvoH6qA
-
-Logistic回归实战篇之预测病马死亡率（三）
-
-https://mp.weixin.qq.com/s/U46HOaBP5ijghpc2myJCvA
-
-机器学习中，使用Scikit-Learn简单处理文本数据？

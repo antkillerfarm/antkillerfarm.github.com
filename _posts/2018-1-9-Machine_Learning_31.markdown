@@ -4,18 +4,6 @@ title:  机器学习（三十一）——Linear Discriminant Analysis
 category: ML 
 ---
 
-# Model-Free Control（续）
-
-### DP和TD的关系
-
-|  | Full Backup (DP) | Sample Backup (TD) |
-|:--:|:--:|:--:|
-| Bellman Expectation<br/>Equation for $$v_\pi(s)$$ | Iterative Policy Evaluation<br/>$$V(s)\leftarrow E[R+\gamma V(S')\mid s]$$ | TD Learning<br/>$$V(S)\xleftarrow{\alpha} R+\gamma V(S')$$ |
-| Bellman Expectation<br/>Equation for $$q_\pi(s,a)$$ | Q-Policy Iteration<br/>$$Q(s,a)\leftarrow E[R+\gamma Q(S',A')\mid s,a]$$ | Sarsa<br/>$$Q(S,A)\xleftarrow{\alpha} R+\gamma Q(S',A')$$ |
-| Bellman Optimality<br/>Equation for $$q_*(s,a)$$ | Q-Value Iteration<br/>$$Q(s,a)\leftarrow E[R+\gamma \max_{a'\in A}Q(S',a')\mid s]$$ | Q-Learning<br/>$$Q(S,A)\xleftarrow{\alpha} R+\gamma \max_{a'\in A}Q(S',a')$$ |
-
-上表中$$x\xleftarrow{\alpha}y\equiv x\leftarrow x+\alpha(y-x)$$。
-
 # Linear Discriminant Analysis
 
 在《机器学习（二十六）》中，我们已经讨论了一个LDA，这里我们来看看另一个LDA。

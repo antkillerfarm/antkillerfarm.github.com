@@ -1,179 +1,186 @@
 ---
 layout: post
-title:  机器学习（三十）——Model-Free Control
+title:  机器学习（三十）——HMM, NLP机器翻译常用评价度量
 category: ML 
 ---
 
-# Model-Free Control
+# HMM
 
-## 概述
+![](/images/article/HMM.png)
 
-之前提到的MC & TD都是Model-free prediction，下面讲讲Model-Free Control。
+![](/images/article/HMM_2.png)
 
-现实中有很多此类的例子，比如控制一个大厦内的多个电梯使得效率最高；控制直升机的特技飞行，机器人足球世界杯上控制机器人球员，围棋游戏等等。所有的这些问题要么我们对其模型运行机制未知，但是我们可以去经历、去试；要么是虽然问题模型是已知的，但问题的规模太大以至于计算机无法高效的计算，除非使用采样的办法。Model-Free Control的内容就专注于解决这些问题。
+![](/images/article/HMM_3.png)
 
-根据优化控制过程中是否利用已有或他人的经验策略来改进我们自身的控制策略，我们可以将这种优化控制分为两类：
+上图中的隐含状态，也称states。可见状态，也称observations。黑线被称为transition probability，而红线则是emission probability或output probability。第一个observations的概率被称为start probability。
 
-一类是On-policy Learning，其基本思想是个体已有一个策略，并且遵循这个策略进行采样，或者说采取一系列该策略下产生的行为，根据这一系列行为得到的奖励，更新状态函数，最后根据该更新的价值函数来优化策略得到较优的策略。
+因此一个HMM可以表示为：
 
-另一类是Off-policy Learning: 其基本思想是，虽然个体有一个自己的策略，但是个体并不针对这个策略进行采样，而是基于另一个策略进行采样，这另一个策略可以是先前学习到的策略，也可以是人类的策略等一些较为优化成熟的策略，通过观察基于这类策略的行为，或者说通过对这类策略进行采样，得到这类策略下的各种行为，继而得到一些奖励，然后更新价值函数，即在自己的策略形成的价值函数的基础上观察别的策略产生的行为，以此达到学习的目的。这种学习方式类似于“站在别人的肩膀上可以看得更远”。
+$$\mu=(A,B,\Pi)$$
 
-**简单来说，On-policy Learning训练时，使用当前策略，而Off-policy Learning使用非当前策略。**
+其中，A是transition probability，B是emission probability，$$\Pi$$是start probability。
 
-## On-Policy Monte-Carlo Control
+如果可见状态和隐含状态之间，存在一对一的关系，那么HMM就退化成普通的Markov链了。
 
-Model-Free Control应用MC需要解决两个问题：
+和HMM（Hidden Markov Model，隐马尔可夫模型）模型相关的算法主要分为三类，分别解决三种问题：
 
-1.在模型未知的条件下无法知道当前状态的所有后续状态，进而无法确定在当前状态下采取怎样的行为更合适。
+1）**知道骰子有几种（隐含状态数量），每种骰子是什么（转换概率），根据掷骰子掷出的结果（可见状态链），我想知道每次掷出来的都是哪种骰子（隐含状态链）。**
 
-解决这一问题的方法是使用action-value function：$$q_{\pi}(s; a)$$替换state-value function：$$v_{\pi}(s)$$。即下图所示：
+这个问题呢，在语音识别领域呢，叫做解码问题。这个问题其实有两种解法，会给出两个不同的答案。每个答案都对，只不过这些答案的意义不一样。第一种解法求最大似然状态路径，说通俗点呢，就是我求一串骰子序列，这串骰子序列产生观测结果的概率最大。第二种解法呢，就不是求一组骰子序列了，而是求每次掷出的骰子分别是某种骰子的概率。比如说我看到结果后，我可以求得第一次掷骰子是D4的概率是0.5，D6的概率是0.3，D8的概率是0.2。
 
-这样做的目的是可以改善策略而不用知道整个模型，只需要知道在某个状态下采取什么什么样的行为价值最大即可。
+2）**知道骰子有几种（隐含状态数量），每种骰子是什么（转换概率），根据掷骰子掷出的结果（可见状态链），我想知道掷出这个结果的概率。**
 
-2.当我们每次都使用贪婪算法来改善策略的时候，将很有可能由于没有足够的采样经验而导致产生一个并不是最优的策略，我们需要不时的尝试一些新的行为，这就是探索（Exploration）。
+看似这个问题意义不大，因为你掷出来的结果很多时候都对应了一个比较大的概率。问这个问题的目的呢，其实是检测观察到的结果和已知的模型是否吻合。如果很多次结果都对应了比较小的概率，那么就说明我们已知的模型很有可能是错的，有人偷偷把我们的骰子給换了。问题2的更一般的用法是：从若干种模型中选择一个概率最大的模型。
 
-一般使用《机器学习（二十六）》中提到的$$\epsilon$$-greedy算法，解决这个问题，这里不再赘述。
+3）**知道骰子有几种（隐含状态数量），不知道每种骰子是什么（转换概率），观测到很多次掷骰子的结果（可见状态链），我想反推出每种骰子是什么（转换概率）。**
 
-![](/images/img2/Model-Free_Control.png)
-
-图中每一个向上或向下的箭头都对应着多个Episode。也就是说我们一般在经历了多个Episode之后才进行依次Ｑ函数更新或策略改善。实际上我们也可以在每经历一个Episode之后就更新Ｑ函数或改善策略。但不管使用那种方式，在Ɛ-贪婪探索算下我们始终只能得到基于某一策略下的近似Ｑ函数，且该算法没没有一个终止条件，因为它一直在进行探索。因此我们必须关注以下两个方面：一方面我们不想丢掉任何更好信息和状态，另一方面随着我们策略的改善我们最终希望能终止于某一个最优策略，因为事实上最优策略不应该包括一些随机行为选择。为此引入了另一个理论概念：**GLIE**。
-
-**GLIE(Greedy in the Limit with Infinite Exploration)**，直白的说是在有限的时间内进行无限可能的探索。具体表现为：所有已经经历的状态行为对（state-action pair）会被无限次探索；另外随着探索的无限延伸，贪婪算法中$$\epsilon$$值趋向于０。例如如果我们取$$\epsilon=1/k$$（k为探索的Episode数目），那么该$$\epsilon$$-greedy MC Control就具备GLIE特性。
-
-基于GLIE的MC Control流程如下：
-
-1.对于给定策略$$\pi$$，采样第k个Episode：$$\{S_1,A_1,R_2,\dots,S_T\}\sim \pi$$
-
-2.对于该Episode里出现的每一个状态/行为对更新：
-
-$$N(S_t,A_t)\leftarrow N(S_t,A_t)+1\\
-Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\frac{1}{N(S_t,A_t)}(G_t-Q(S_t,A_t))
-$$
-
-3.基于新的Q函数改善：
-
-$$\epsilon\leftarrow 1/k,\pi\leftarrow \epsilon-greedy(Q)$$
-
-## On-Policy Temporal-Difference Learning
-
-TD在Model-Free Control的应用主要是Sarsa算法。Sarsa是State–action–reward–state–action的缩写。
-
-Sarsa算法的流程如下所示：
-
->随机初始化$$Q(s,a)$$，其中$$Q(\text{terminal-state},\cdot)=0$$。   
->每个Episode执行：   
->>初始化S   
->>根据Q选择当前S下的A   
->>Episode中的每一步执行：   
->>>执行A，获得观察值R,S'   
->>>根据Q选择当前S'下的A'   
->>>$$Q(S,A)\leftarrow Q(S,A)+\alpha [R+\gamma Q(S',A')-Q(S,A)]$$   
->>>$$S\leftarrow S',A\leftarrow A'$$   
->>
->>直到S是terminal状态。
-
-Sarsa算法的最优化收敛性（即$$Q(s,a)\to q_*(s,a)$$）的条件是：
-
-1.策略产生的序列满足GLIE。
-
-2.$$\alpha_t$$满足Robbins–Monro特性，即：
-
-$$\sum_{t=1}^\infty \alpha_t=\infty, \sum_{t=1}^\infty \alpha_t^2<\infty$$
-
->Herbert Ellis Robbins，1915～2001，美国数学家，Harvard博士，University of North Carolina教授，Columbia University教授。美国科学院院士，美国艺术科学院院士。
-
->Sutton Monro，1920～1995，美国数学家，MIT博士，Lehigh University教授。作为海军参加过二战和韩战。
-
-和TD类似，我们也可以定义n-step的Sarsa(n)算法
-
-$$Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\alpha(q_t^{n}-Q(S_t,A_t))$$
-
-Sarsa($$\lambda$$)：
-
-$$Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\alpha(q_t^{\lambda}-Q(S_t,A_t))$$
-
-Sarsa($$\lambda$$)+ET：
-
-$$Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\alpha\delta_tE_t(s,a)$$
+这个问题很重要，因为这是最常见的情况。很多时候我们只有可见结果，不知道HMM模型里的参数，我们需要从可见结果估计出这些参数，这是训练建模的一个必要步骤。
 
 参考：
 
-https://blog.csdn.net/zchang81/article/details/77746313
+https://www.zhihu.com/question/20962240
 
-Sarsa与Q-learning对比
+如何用简单易懂的例子解释隐马尔可夫模型？
 
-## 采样方法
+http://www.cnblogs.com/kaituorensheng/archive/2012/11/29/2795499.html
 
-在继续后面的内容之前，我们首先介绍几种采样方法。
+隐马尔可夫模型
 
-### Inverse Sampling
+https://mp.weixin.qq.com/s/9MmHDVDal57pdotwxAn_uQ
 
-如果某种分布函数不容易采样的话，可以使用它的反函数进行采样：
+HMM模型详解
 
-$$P(F^{-1}(a) \le x) = P(a \le F(x)) = H(F(x)$$
+https://mp.weixin.qq.com/s/PzPRKZa1C5IlEUASWt71cA
 
-![](/images/img2/Inverse_Sampling.png)
+从朴素贝叶斯到维特比算法：详解隐马尔科夫模型
 
-上图是均匀分布到指数分布的采样图，其中y的采样间隔是：
+https://mp.weixin.qq.com/s/aIpRx-etMkh7jwL2lFNa4w
 
-$$F^{-1}_{exp}(a) = -\frac{1}{\lambda}*log(1-a)$$
+理解隐马尔可夫模型
 
-### Rejective Sampling
+https://mp.weixin.qq.com/s/O0oAzJ-Hk9pQkojgdgT4qg
 
-我们想求一个空间里均匀分布的集合面积，可以尝试在更大范围内按照均匀分布随机采样，如果采样点在集合中，则接受，否则拒绝。
+隐马尔可夫模型
 
-这种方法最经典的例子就是采样计算圆周率：我们在一个1x1的范围内随机采样一个点，如果它到原点的距离小于1,则说明它在1/4圆内，则接受它，最后通过接受的占比来计算1/4圆形的面积，从而根据公式反算出预估的$$\pi$$值，随着采样点的增多，最后的结果会越精准。
+## Viterbi算法
 
-Rejective Sampling的形式化表述为：
+Viterbi算法是求解最大似然状态路径的常用算法，被广泛应用于通信（CDMA技术的理论基础之一）和NLP领域。
 
-$$acc(x_i) = \frac{\tilde{p}(x_i)}{cq(x_i)}$$
+>注：Andrew James Viterbi，1935年生，意大利裔美国工程师、企业家，高通公司联合创始人。MIT本硕+南加州大学博士。viterbi算法和CDMA标准的主要发明人。
 
-其中，$$\tilde{p}(x_i)$$实际采样的样本，它应该正比于目标分布，$$cq(x_i)$$是比例系数，c为常数。在上例中，$$q(x_i)$$是均匀分布，所以就是常数1，如果是其它分布的话，则是一个函数。
+![](/images/article/HMM_4.png)
 
-### Importance Sampling
+上图是一个HMM模型的概率图表示，其中{'Healthy','Fever'}是隐含状态，而{'normal','cold','dizzy'}是可见状态，边是各状态的转移概率。
 
-然而实际工作中，分布的正函数已经很复杂，更不用说反函数，$$cq(x_i)$$也不是那么容易得到的，这时就需要Importance Sampling了。
+![](/images/article/Viterbi_animated_demo.gif)
 
-我们采样的目标是：
+上图是Viterbi算法的动画图。简单来说就是：从开始状态之后每走一步，就记录下到达该状态的所有路径的概率最大值，然后以此最大值为基准继续向后推进。显然，如果这个最大值都不能使该状态成为最大似然状态路径上的结点的话，那些小于它的概率值（以及对应的路径）就更没有可能了。
 
-$$E_{x\sim p}[f(x)] = \int_x f(x)p(x) \mathrm{d}x$$
-
-如果符合p(x)分布的样本不太好生成，我们可以引入另一个分布q(x)，可以很方便地生成样本。使得：
-
-$$\begin{align}
-\int_x f(x)p(x) \mathrm{d}x &= \int_x f(x)\frac{p(x)}{q(x)}q(x) \mathrm{d}x\\
-&= \int_x g(x)q(x) \mathrm{d}x = E_{x\sim q}[g(x)]\\
-where\ \ g(x) &= f(x)\frac{p(x)}{q(x)} = f(x)w(x)
-\end{align}$$
-
-我们将问题转化为了求g(x)在q(x)分布下的期望。我们称其中的$$w(x)=\frac{p(x)}{q(x)}$$为**Importance Weight**。
-
-Importance Sampling还可以改善已有的采样方法：如果我们找到一个q分布，使得它能在f(x)∗p(x)较大的地方采集到样本，则能更好地逼近E[f(x)]。
+Viterbi算法只能求出最佳路径，对于N-best问题就需要进行扩展方可。
 
 参考：
 
-http://blog.csdn.net/Dark_Scope/article/details/70992266
+https://mp.weixin.qq.com/s/FQ520ojMmbFhNMoNCVTKug
 
-采样方法
+通俗理解维特比算法
 
-## Off-Policy Learning
+https://www.zhihu.com/question/20136144
 
-### Importance Sampling for Off-Policy Monte-Carlo
+谁能通俗的讲解下viterbi算法？
 
-前面已经说过，Off-Policy Learning就是根据当前策略$$\mu(a\mid s)$$，评估目标策略$$\pi(a\mid s)$$。因此，对Off-Policy Learning进行Importance Sampling，实际上就是从$$\mu$$中，对$$\pi$$采样的过程。由于MC需要对整个Episode进行采样，因此相应的采样函数为：
+https://mp.weixin.qq.com/s/xyWY3Z5PiHkCFzCP0noBvA
 
-$$G_t^{\pi/\mu}=\frac{\pi(A_t\mid S_t)}{\mu(A_t\mid S_t)}\frac{\pi(A_{t+1}\mid S_{t+1})}{\mu(A_{t+1}\mid S_{t+1})}\dots\frac{\pi(A_T\mid S_T)}{\mu(A_T\mid S_T)}G_t$$
+一文读懂HMM模型和Viterbi算法
 
-更新公式为：
+## 前向算法
 
-$$V(S_t)\leftarrow V(S_t)+\alpha(G_t^{\pi/\mu}-V(S_t))$$
+forward算法是求解问题2的常用算法。
 
-由于这种方法的采样函数实在太过复杂，因此只有理论价值，而无实际意义。
+仍以上面的掷骰子为例，要算用正常的三个骰子掷出这个结果的概率，其实就是将所有可能情况的概率进行加和计算。同样，简单而暴力的方法就是把穷举所有的骰子序列，还是计算每个骰子序列对应的概率，但是这回，我们不挑最大值了，而是把所有算出来的概率相加，得到的总概率就是我们要求的结果。
 
-### Importance Sampling for Off-Policy TD
+穷举法的计算量太大，不适用于计算较长的马尔可夫链。但是我们可以观察一下穷举法的计算步骤。
 
-类似的，TD算法的更新公式为：
+![](/images/article/forward_algorithm.png)
 
-$$V(S_t)\leftarrow V(S_t)+\alpha\left(\frac{\pi(A_t\mid S_t)}{\mu(A_t\mid S_t)}(R_{t+1}+\gamma V(S_{t+1}))-V(S_t)\right)$$
+上图是某骰子序列的穷举计算过程，可以看出第3步计算的概率和公式的某些项，实际上在之前的步骤中已经计算出来了，前向递推的计算量并没有想象中的大。
 
-应用这种思想最好的方法是基于TD(0)的Q-learning。Q-learning的相关内容参见《机器学习（二十七）》。
+## Baum–Welch算法
+
+Baum–Welch算法是求解问题3的常用算法，由Baum和Welch于1972年提出。它虽然是EM算法的一个特例，但后者却是1977年才提出的。
+
+>Leonard Esau Baum，1931～2017，美国数学家，哈佛博士（1958）。国防分析研究所研究员，70年代末，加盟对冲基金——文艺复兴科技公司。
+
+>Lloyd Richard Welch，生于1927年，美国数学家，加州理工博士（1958），南加州大学教授。美国工程院院士，Shannon Award获得者（2003）。
+
+Baum–Welch算法也叫前向后向算法。因为它包含了前向和后向两个步骤。
+
+1:expectation，计算隐变量的概率分布，并得到可观察变量与隐变量联合概率的log-likelihood在前面求得的隐变量概率分布下的期望。这个步骤就是所谓的前向步骤，算法和求解问题2的forward算法是一致的
+
+2:maximization求得使上述期望最大的新的模型参数。若达到收敛条件则退出，否则回到步骤1。
+
+前向后向算法则主要是解决Expectation这步中求隐变量概率分布的一个算法，它利用dynamic programming大大减少了计算量。
+
+此外，训练HMM模型时，也需要对模型参数进行随机初始化，不然和神经网络一样，由于参数没有差异性，而无法进行训练。
+
+参考：
+
+https://blog.csdn.net/xmu_jupiter/article/details/50965039
+
+HMM的Baum-Welch算法和Viterbi算法公式推导细节
+
+## HMM在NLP领域的应用
+
+具体到分词系统，可以将“标签”当作隐含状态，“字或词”当作可见状态。那么，几个NLP的问题就可以转化为：
+
+词性标注：给定一个词的序列（也就是句子），找出最可能的词性序列（标签是词性）。如ansj分词和ICTCLAS分词等。
+
+分词：给定一个字的序列，找出最可能的标签序列（断句符号：[词尾]或[非词尾]构成的序列）。结巴分词目前就是利用BMES标签来分词的，B（开头）,M（中间),E(结尾),S(独立成词）
+
+命名实体识别：给定一个词的序列，找出最可能的标签序列（内外符号：[内]表示词属于命名实体，[外]表示不属于）。如ICTCLAS实现的人名识别、翻译人名识别、地名识别都是用同一个Tagger实现的。
+
+综上，**在监督学习中，一般把训练数据当作HMM的可见状态，而把标签当作隐含状态。**当然这里的标签可能是生成最终训练标签的一个概率模型的参数。
+
+参考：
+
+http://blog.sina.com.cn/s/blog_8267db980102wq4l.html
+
+HMM识别新词
+
+# NLP机器翻译常用评价度量
+
+机器翻译的评价指标主要有：BLEU、NIST、Rouge、METEOR等。
+
+参考：
+
+http://blog.csdn.net/joshuaxx316/article/details/58696552
+
+BLEU，ROUGE，METEOR，ROUGE-浅述自然语言处理机器翻译常用评价度量
+
+http://blog.csdn.net/guolindonggld/article/details/56966200
+
+机器翻译评价指标之BLEU
+
+https://mp.weixin.qq.com/s/niVOM-lnzI2-Tgxn8Qterw
+
+NLP中评价文本输出都有哪些方法？为什么要小心使用BLEU？
+
+http://blog.csdn.net/han_xiaoyang/article/details/10118517
+
+机器翻译评估标准介绍和计算方法
+
+http://blog.csdn.net/lcj369387335/article/details/69845385
+
+自动文档摘要评价方法---Edmundson和ROUGE
+
+https://mp.weixin.qq.com/s/XiZ6Uc5cHZjczn-qoupQnA
+
+对话系统评价方法综述
+
+https://zhuanlan.zhihu.com/p/33088748
+
+数据集和评价指标介绍
+
+https://mp.weixin.qq.com/s/9hoM_yF96XxSbQHEP6oasw
+
+怎样生成语言才能更自然，斯坦福提出超越Perplexity的评估新方法
+

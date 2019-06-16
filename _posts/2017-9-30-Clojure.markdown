@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Clojure, Groovy, Lisp, Javascript在客户端的使用, perl, Scala
+title:  Clojure, Groovy, Lisp, Javascript在客户端的使用, perl, Scala, VS Code
 category: language 
 ---
 
@@ -224,92 +224,48 @@ sbt支持：
 
 `libraryDependencies += "org.scalafx" %% "scalafx" % "8.0.92-R10"`
 
-# 推荐系统的工程细节+
+# VS Code
 
-## 评价推荐质量（续）
+VS Code（Visual Studio Code）是由微软研发的一款免费、开源的跨平台文本（代码）编辑器。（首发于2015年）从文件来看应该是基于nodejs所做，据说脱胎于Atom。
 
-参考：
+目前我已经用VS Code替换了Source Insight。后者这么多年了，版本才4.0，而且由于收费的缘故，绝大多数人还是使用3.5版本，那可是我2009年刚接触时就有的版本。
 
-https://www.zhihu.com/question/26990692
+官网：
 
-类似今日头条这样的个性化推荐网站怎么评价推荐质量的优劣？
+https://code.visualstudio.com/
 
-https://www.zhihu.com/question/19660417
+安装：
 
-为什么那么多牛人成天在研究讨论算法，系统自动推荐的东西还是不能令人满意呢？
+`umake ide visual-studio-code`
 
-https://mp.weixin.qq.com/s/EGorUTYz09PYU3CdU_qwDA
+在Ubuntu 18.04中，umake安装方法没有处理好依赖，需要：
 
-如何省时省力验证模型效果？达观数据在线分层实验平台给你支招
+`sudo apt install libgconf-2-4`
 
-https://mp.weixin.qq.com/s/S9AjPkYLzRQpg5evyaoleQ
+## 细节
 
-推荐系统的工程实现
+ctrl+P 命令行
 
-https://mp.weixin.qq.com/s/cjo5MYa-t9tWDCjwDpkOeg
+View--> Toggle Word Wrap 自动换行
 
-推荐系统评估
+`"editor.rulers": []`：在一定数量的等宽字符后显示垂直标尺。输入多个值，显示多个标尺。
 
-## 召回
+格式化对齐快捷键：
 
-这个词在推荐系统中至少有三个不同的含义：
+Windows：Shift + Alt + F
 
-1.recall。ML领域的查全率也称召回率。参见《机器学习（二十二）》。
+Ubuntu： Ctrl + Shift + I
 
-2.match。指对大量的物品做一个初选，针对每一个用户形成个性化侯选集。
+## 插件
 
-3.产品召回，流失客户召回。这个和通常汉语中意思一致，表示失而复得/得而复失。
+filesize：在底部状态栏显示当前文件大小，点击后还可以看到详细创建、修改时间
 
-## 术语
+## 参考
 
-GMV(Gross Merchandise Volume)成交额
+https://blog.csdn.net/GossipHHH/article/details/78132398
 
-![](/images/article/pv.jpg)
+VsCode插件安装及推荐
 
-CTR（Click-Through-Rate）即点击通过率，是互联网广告常用的术语，指网络广告（图片广告/文字广告/关键词广告/排名广告/视频广告等）的点击到达率，即该广告的实际点击次数除以广告的展现量。
+https://mp.weixin.qq.com/s/cw_Bww22sgPtOeNLKQ7HHA
 
-RTB（Real Time Bidding，实时竞价）
-
-eCPM（千次展示期望收入）
-
-CPM（Cost per mille）
-
-CPC（Cost per click）
-
-CPA（Cost per action）
-
-CPT（按展现时间收费）、CPL（按潜在线索收费）、CPS（按成功销售收费）
-
-ROI（return on investment）投资回报率
-
-$$同比=\frac{2010.12}{2009.12}$$
-
-$$环比=\frac{2010.12}{2010.11}$$
-
-## 数据埋点
-
-数据埋点是数据产品经理、数据运营以及数据分析师，基于业务需求或产品需求对用户在应用内产生行为的每一个事件对应的页面和位置植入相关代码，并通过采集工具上报统计数据，以便相关人员追踪用户行为，推动产品优化或指导运营的一项工程。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/53522063
-
-数据产品经理需要掌握的产品埋点方法
-
-## A/B Testing
-
-https://mp.weixin.qq.com/s/fB3AFUiS4nFmqXpSnOpf4w
-
-如何选择上班路线最省时间？从A/B测试数学原理说起
-
-https://cn.udacity.com/course/ab-testing--ud257
-
-A/B测试
-
-https://exp-platform.com/2017abtestingtutorial/
-
-A/B Testing
-
-https://zhuanlan.zhihu.com/p/68509372
-
-Netflix推荐系统模型的快速线上评估方法——Interleaving
+如何使用Visual Studio Code进行Java开发？

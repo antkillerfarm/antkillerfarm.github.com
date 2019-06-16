@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  C/C++编程心得（二）, VS Code, Python（三）
+title:  C/C++编程心得（二）, Python（三）
 category: language 
 ---
 
@@ -61,52 +61,6 @@ C - undefined reference to “sqrt” even with '-lm'
 https://mp.weixin.qq.com/s/Hpn7KqYlBKz0JdryiozqyQ
 
 每个开发者都应该了解的一些C++特性
-
-# VS Code
-
-VS Code（Visual Studio Code）是由微软研发的一款免费、开源的跨平台文本（代码）编辑器。（首发于2015年）从文件来看应该是基于nodejs所做，据说脱胎于Atom。
-
-目前我已经用VS Code替换了Source Insight。后者这么多年了，版本才4.0，而且由于收费的缘故，绝大多数人还是使用3.5版本，那可是我2009年刚接触时就有的版本。
-
-官网：
-
-https://code.visualstudio.com/
-
-安装：
-
-`umake ide visual-studio-code`
-
-在Ubuntu 18.04中，umake安装方法没有处理好依赖，需要：
-
-`sudo apt install libgconf-2-4`
-
-## 细节
-
-ctrl+P 命令行
-
-View--> Toggle Word Wrap 自动换行
-
-`"editor.rulers": []`：在一定数量的等宽字符后显示垂直标尺。输入多个值，显示多个标尺。
-
-格式化对齐快捷键：
-
-Windows：Shift + Alt + F
-
-Ubuntu： Ctrl + Shift + I
-
-## 插件
-
-filesize：在底部状态栏显示当前文件大小，点击后还可以看到详细创建、修改时间
-
-## 参考
-
-https://blog.csdn.net/GossipHHH/article/details/78132398
-
-VsCode插件安装及推荐
-
-https://mp.weixin.qq.com/s/cw_Bww22sgPtOeNLKQ7HHA
-
-如何使用Visual Studio Code进行Java开发？
 
 # Python
 
@@ -384,3 +338,28 @@ JPype：实现在python中调用JAVA
 http://www.cnblogs.com/yu-zhang/p/3817024.html
 
 python调用java程序--jpype
+
+## 文件名处理
+
+{% highlight python %}
+(filepath,tempfilename) = os.path.split(filename)
+(shotname,extension) = os.path.splitext(tempfilename)
+{% endhighlight %}
+
+## NetworkX
+
+NetworkX是一个用Python语言开发的图论与复杂网络建模工具，内置了常用的图与复杂网络分析算法，可以方便的进行复杂网络数据分析、仿真建模等工作。
+
+官网：
+
+https://networkx.github.io/
+
+参考：
+
+https://www.cnblogs.com/kaituorensheng/p/5423131.html
+
+python复杂网络分析库NetworkX
+
+## 如何通过需认证的代理获取HTTP网页
+
+Python内置的urllib和urllib2模块都可用于获取HTTP网页，但使用范围是不同的。urllib只支持HTTP 0.9和HTTP 1.0，所以如果只是使用代理可以使用urllib.FancyURLopener类，如果该代理还需要认证的话urllib就不行了。因为代理认证是HTTP 1.1中引入的。

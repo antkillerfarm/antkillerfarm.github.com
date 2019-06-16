@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度强化学习（二）——AlphaGo, AlphaStar, 参考资源（1）
+title:  深度强化学习（二）——AlphaGo, AlphaStar, DRL参考资源（1）
 category: RL 
 ---
 
@@ -306,7 +306,7 @@ https://mp.weixin.qq.com/s/XljE82cJZfFOgf2KrXWSKA
 
 DeepMind首个战胜星际2职业玩家的AI为何无敌？新视角揭秘AI里程碑
 
-# 参考资源
+# DRL参考资源
 
 https://mp.weixin.qq.com/s/sHP03DAeZvdBxwVPuSNRPg
 

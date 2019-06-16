@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（十九）——Beam Search, NLP机器翻译常用评价度量, 决策树
+title:  机器学习（十九）——Beam Search, 决策树
 category: ML 
 ---
 
@@ -53,44 +53,6 @@ Beam Search算法及其应用
 https://mp.weixin.qq.com/s/GTtjjBgCDdLRwPrUqfwlVA
 
 如何使用贪婪搜索和束搜索解码算法进行自然语言处理
-
-# NLP机器翻译常用评价度量
-
-机器翻译的评价指标主要有：BLEU、NIST、Rouge、METEOR等。
-
-参考：
-
-http://blog.csdn.net/joshuaxx316/article/details/58696552
-
-BLEU，ROUGE，METEOR，ROUGE-浅述自然语言处理机器翻译常用评价度量
-
-http://blog.csdn.net/guolindonggld/article/details/56966200
-
-机器翻译评价指标之BLEU
-
-https://mp.weixin.qq.com/s/niVOM-lnzI2-Tgxn8Qterw
-
-NLP中评价文本输出都有哪些方法？为什么要小心使用BLEU？
-
-http://blog.csdn.net/han_xiaoyang/article/details/10118517
-
-机器翻译评估标准介绍和计算方法
-
-http://blog.csdn.net/lcj369387335/article/details/69845385
-
-自动文档摘要评价方法---Edmundson和ROUGE
-
-https://mp.weixin.qq.com/s/XiZ6Uc5cHZjczn-qoupQnA
-
-对话系统评价方法综述
-
-https://zhuanlan.zhihu.com/p/33088748
-
-数据集和评价指标介绍
-
-https://mp.weixin.qq.com/s/9hoM_yF96XxSbQHEP6oasw
-
-怎样生成语言才能更自然，斯坦福提出超越Perplexity的评估新方法
 
 # 决策树
 
@@ -330,6 +292,10 @@ https://blog.csdn.net/CoderPai/article/details/90900707
 
 bagging方法
 
-https://mp.weixin.qq.com/s/dIQuuCvSJWAG7vSwrVb-ew
+https://blog.csdn.net/CoderPai/article/details/91615739
 
 随机森林算法用于股票交易
+
+https://blog.csdn.net/CoderPai/article/details/92018343
+
+随机森林的实现与解释

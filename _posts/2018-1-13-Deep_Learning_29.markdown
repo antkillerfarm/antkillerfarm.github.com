@@ -48,6 +48,8 @@ https://mp.weixin.qq.com/s/rXr_XBc2Psh3NSA0pj4ptQ
 
 # Graph NN
 
+![](/images/img3/GNN.jpg)
+
 ## DGL
 
 https://mp.weixin.qq.com/s/I8pGqpKnRJp9HRglHfMZCw
@@ -107,6 +109,10 @@ https://github.com/thunlp/GNNPapers
 https://github.com/nnzhan/Awesome-Graph-Neural-Networks
 
 图神经网络论文列表
+
+https://github.com/jdlc105/Must-read-papers-and-continuous-tracking-on-Graph-Neural-Network-GNN-progress
+
+Papers on Graph neural network(GNN)
 
 https://mp.weixin.qq.com/s/SW6V-AxGq1z9Uq7qIJLj5A
 

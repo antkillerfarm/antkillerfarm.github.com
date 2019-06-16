@@ -1,0 +1,211 @@
+---
+layout: post
+title:  强化学习（六）——价值函数的近似表示, 模仿学习
+category: RL 
+---
+
+# Model-Free Control（续）
+
+## 采样方法
+
+在继续后面的内容之前，我们首先介绍几种采样方法。
+
+### Inverse Sampling
+
+如果某种分布函数不容易采样的话，可以使用它的反函数进行采样：
+
+$$P(F^{-1}(a) \le x) = P(a \le F(x)) = H(F(x)$$
+
+![](/images/img2/Inverse_Sampling.png)
+
+上图是均匀分布到指数分布的采样图，其中y的采样间隔是：
+
+$$F^{-1}_{exp}(a) = -\frac{1}{\lambda}*log(1-a)$$
+
+### Rejective Sampling
+
+我们想求一个空间里均匀分布的集合面积，可以尝试在更大范围内按照均匀分布随机采样，如果采样点在集合中，则接受，否则拒绝。
+
+这种方法最经典的例子就是采样计算圆周率：我们在一个1x1的范围内随机采样一个点，如果它到原点的距离小于1,则说明它在1/4圆内，则接受它，最后通过接受的占比来计算1/4圆形的面积，从而根据公式反算出预估的$$\pi$$值，随着采样点的增多，最后的结果会越精准。
+
+Rejective Sampling的形式化表述为：
+
+$$acc(x_i) = \frac{\tilde{p}(x_i)}{cq(x_i)}$$
+
+其中，$$\tilde{p}(x_i)$$实际采样的样本，它应该正比于目标分布，$$cq(x_i)$$是比例系数，c为常数。在上例中，$$q(x_i)$$是均匀分布，所以就是常数1，如果是其它分布的话，则是一个函数。
+
+### Importance Sampling
+
+然而实际工作中，分布的正函数已经很复杂，更不用说反函数，$$cq(x_i)$$也不是那么容易得到的，这时就需要Importance Sampling了。
+
+我们采样的目标是：
+
+$$E_{x\sim p}[f(x)] = \int_x f(x)p(x) \mathrm{d}x$$
+
+如果符合p(x)分布的样本不太好生成，我们可以引入另一个分布q(x)，可以很方便地生成样本。使得：
+
+$$\begin{align}
+\int_x f(x)p(x) \mathrm{d}x &= \int_x f(x)\frac{p(x)}{q(x)}q(x) \mathrm{d}x\\
+&= \int_x g(x)q(x) \mathrm{d}x = E_{x\sim q}[g(x)]\\
+where\ \ g(x) &= f(x)\frac{p(x)}{q(x)} = f(x)w(x)
+\end{align}$$
+
+我们将问题转化为了求g(x)在q(x)分布下的期望。我们称其中的$$w(x)=\frac{p(x)}{q(x)}$$为**Importance Weight**。
+
+Importance Sampling还可以改善已有的采样方法：如果我们找到一个q分布，使得它能在f(x)∗p(x)较大的地方采集到样本，则能更好地逼近E[f(x)]。
+
+参考：
+
+http://blog.csdn.net/Dark_Scope/article/details/70992266
+
+采样方法
+
+## Off-Policy Learning
+
+### Importance Sampling for Off-Policy Monte-Carlo
+
+前面已经说过，Off-Policy Learning就是根据当前策略$$\mu(a\mid s)$$，评估目标策略$$\pi(a\mid s)$$。因此，对Off-Policy Learning进行Importance Sampling，实际上就是从$$\mu$$中，对$$\pi$$采样的过程。由于MC需要对整个Episode进行采样，因此相应的采样函数为：
+
+$$G_t^{\pi/\mu}=\frac{\pi(A_t\mid S_t)}{\mu(A_t\mid S_t)}\frac{\pi(A_{t+1}\mid S_{t+1})}{\mu(A_{t+1}\mid S_{t+1})}\dots\frac{\pi(A_T\mid S_T)}{\mu(A_T\mid S_T)}G_t$$
+
+更新公式为：
+
+$$V(S_t)\leftarrow V(S_t)+\alpha(G_t^{\pi/\mu}-V(S_t))$$
+
+由于这种方法的采样函数实在太过复杂，因此只有理论价值，而无实际意义。
+
+### Importance Sampling for Off-Policy TD
+
+类似的，TD算法的更新公式为：
+
+$$V(S_t)\leftarrow V(S_t)+\alpha\left(\frac{\pi(A_t\mid S_t)}{\mu(A_t\mid S_t)}(R_{t+1}+\gamma V(S_{t+1}))-V(S_t)\right)$$
+
+应用这种思想最好的方法是基于TD(0)的Q-learning。Q-learning的相关内容参见《机器学习（二十七）》。
+
+### DP和TD的关系
+
+|  | Full Backup (DP) | Sample Backup (TD) |
+|:--:|:--:|:--:|
+| Bellman Expectation<br/>Equation for $$v_\pi(s)$$ | Iterative Policy Evaluation<br/>$$V(s)\leftarrow E[R+\gamma V(S')\mid s]$$ | TD Learning<br/>$$V(S)\xleftarrow{\alpha} R+\gamma V(S')$$ |
+| Bellman Expectation<br/>Equation for $$q_\pi(s,a)$$ | Q-Policy Iteration<br/>$$Q(s,a)\leftarrow E[R+\gamma Q(S',A')\mid s,a]$$ | Sarsa<br/>$$Q(S,A)\xleftarrow{\alpha} R+\gamma Q(S',A')$$ |
+| Bellman Optimality<br/>Equation for $$q_*(s,a)$$ | Q-Value Iteration<br/>$$Q(s,a)\leftarrow E[R+\gamma \max_{a'\in A}Q(S',a')\mid s]$$ | Q-Learning<br/>$$Q(S,A)\xleftarrow{\alpha} R+\gamma \max_{a'\in A}Q(S',a')$$ |
+
+上表中$$x\xleftarrow{\alpha}y\equiv x\leftarrow x+\alpha(y-x)$$。
+
+# 价值函数的近似表示
+
+之前的内容都是讲解一些强化学习的基础理论，这些知识只能解决一些中小规模的问题，很多价值函数需要用一张大表来存储，获取某一状态或行为价值的时候通常需要一个查表操作（Table Lookup），这对于那些状态空间或行为空间很大的问题几乎无法求解。
+
+在实际应用中，对于状态和行为空间都比较大的情况下，精确获得各种v(S)和q(s,a)几乎是不可能的。这时候需要找到近似的函数，具体可以使用线性组合、神经网络以及其他方法来近似价值函数：
+
+$$\hat v(s,w)\approx v_\pi(s)\\
+\hat q(s,a,w)\approx q_\pi(s,a)
+$$
+
+其中w是该近似函数的参数。
+
+## 线性函数
+
+这里仍然从最简单的线性函数说起：
+
+$$\hat v(S,w)=x(S)^Tw=\sum_{j=1}^nx_j(S)w_j$$
+
+目标函数为：
+
+$$J(w)=E_\pi[(v_\pi(S)-x(S)^Tw)^2]$$
+
+更新公式为：
+
+$$\Delta w=\alpha (v_\pi(S)-\hat v(S,w))x(S)$$
+
+上述公式都是基本的ML方法，这里不再赘述。既然是传统ML方法，自然少不了特征工程。
+
+比如Table Lookup Features：
+
+$$x^{table}(S)=\begin{pmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{pmatrix}$$
+
+则：
+
+$$\hat v(S,w)=\begin{pmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{pmatrix}\begin{pmatrix} w_1 \\ \vdots \\ w_n \end{pmatrix}$$
+
+## Incremental Prediction Algorithms
+
+事实上，之前所列的公式都不能直接用于强化学习，因为公式里都有一个实际价值函数$$v_\pi(S)$$，或者是一个具体的数值，而强化学习没有监督数据，因此不能直接使用上述公式。
+
+因此，我们需要找到一个替代$$v_\pi(S)$$的目标。
+
+|:--:|:--:|:--:|:--:|
+| MC | $$\Delta w=\alpha (\color{red}{G_t}-\hat v(S_t,w))\nabla_w \hat v(S_t,w)$$ | 有噪声、无偏采样 | 收敛至一个局部最优解 |
+| TD(0) | $$\Delta w=\alpha (\color{red}{R_{t+1}+\gamma\hat v(S_{t+1},w)}-\hat v(S_t,w))\nabla_w \hat v(S_t,w)$$ | 有噪声、有偏采样 | 收敛至全局最优解 |
+| TD($$\lambda$$) | $$\Delta w=\alpha (\color{red}{G_t^\lambda}-\hat v(S_t,w))\nabla_w \hat v(S_t,w)$$ | 有噪声、有偏采样 |  |
+
+上面公式中，红色的部分就是目标函数。
+
+对于$$\hat q(S,A,w)$$，我们也有类似的结论：
+
+|:--:|:--:|:--:|:--:|
+| MC | $$\Delta w=\alpha (\color{red}{G_t}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、无偏采样 | 收敛至一个局部最优解 |
+| TD(0) | $$\Delta w=\alpha (\color{red}{R_{t+1}+\gamma\hat q(S_{t+1},A_{t+1},w)}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、有偏采样 | 收敛至全局最优解 |
+| TD($$\lambda$$) | $$\Delta w=\alpha (\color{red}{q_t^\lambda}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、有偏采样 |  |
+
+## Batch Methods
+
+前面所说的递增算法都是基于数据流的，经历一步，更新算法后，我们就不再使用这步的数据了，这种算法简单，但有时候不够高效。与之相反，批方法则是把一段时期内的数据集中起来，通过学习来使得参数能较好地符合这段时期内所有的数据。这里的训练数据集“块”相当于个体的一段经验。
+
+# A2C
+
+https://zhuanlan.zhihu.com/p/51652845
+
+强化学习这都学不会的话，咳咳，你过来下！
+
+# 模仿学习
+
+https://zhuanlan.zhihu.com/p/27935902
+
+机器人学习Robot Learning之模仿学习Imitation Learning的发展
+
+https://zhuanlan.zhihu.com/p/25688750
+
+模仿学习（Imitation Learning）完全介绍
+
+https://mp.weixin.qq.com/s/naq73D27vsCOUBperKto8A
+
+从监督式到DAgger，综述论文描绘模仿学习全貌
+
+https://mp.weixin.qq.com/s/LNNqp2KsEAljG26hY43mUw
+
+ICML2018 模仿学习教程
+
+https://mp.weixin.qq.com/s/f9vSgH1HQwGXBDb0UGHQyQ
+
+深度学习进阶之无人车行为克隆
+
+# RL参考资源
+
+https://mp.weixin.qq.com/s/Fn1s9Ia8L1ckgn6iP24FhQ
+
+如何让神经网络具有好奇心
+
+https://mp.weixin.qq.com/s/PBf-YrkhwhPYXuiOGyahxQ
+
+强化学习遭遇瓶颈！分层RL将成为突破的希望
+
+https://zhuanlan.zhihu.com/p/58815288
+
+强化学习之值函数学习
+
+https://mp.weixin.qq.com/s/8Cqknze_iosz6Z6cqnuK5w
+
+谷歌提出强化学习新算法SimPLe，模拟策略学习效率提高2倍
+
+https://mp.weixin.qq.com/s/hKGS4Ek5prwTRJoMCaxQLA
+
+强化学习Exploration漫游
+
+https://zhuanlan.zhihu.com/p/65116688
+
+值分布强化学习（01）
+
+https://zhuanlan.zhihu.com/p/65364484
+
+值分布强化学习（02）

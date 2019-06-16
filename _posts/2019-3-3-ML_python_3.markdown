@@ -6,6 +6,42 @@ category: AI
 
 # Machine Learning之Python篇
 
+http://mp.weixin.qq.com/s/Ergq5KKM5vWLWirTf9loEw
+
+7步让你从零开始掌握Python机器学习！
+
+https://mp.weixin.qq.com/s/Ty46-s0kvr2MpbUhQPXJfQ
+
+朴素贝叶斯实战篇之新浪新闻分类
+
+https://mp.weixin.qq.com/s/CMxo4FNxWYyoG-gxAgtzyA
+
+手把手教你安装深度学习操作系统、驱动和各种python库！
+
+https://github.com/leetmaa/KMCLib
+
+KMCLib - a general framework for lattice kinetic Monte Carlo (KMC) simulations
+
+https://mp.weixin.qq.com/s/T7dswxqhie0riPlnjdf9_Q
+
+RNN入门与实践
+
+https://mp.weixin.qq.com/s/ZPCfnj2kLxXLpBNbxs2ggw
+
+Logistic回归实战篇之预测病马死亡率（一）
+
+https://mp.weixin.qq.com/s/XpX9TPgv4a_uKAKiy8W4fg
+
+Logistic回归实战篇之预测病马死亡率（二）
+
+https://mp.weixin.qq.com/s/0i1jKgaRu2pLPAXAvoH6qA
+
+Logistic回归实战篇之预测病马死亡率（三）
+
+https://mp.weixin.qq.com/s/U46HOaBP5ijghpc2myJCvA
+
+机器学习中，使用Scikit-Learn简单处理文本数据？
+
 https://mp.weixin.qq.com/s/HoMr52X9O4fMs2YjtH9oFg
 
 scikit-learn Adaboost类库的实战分析

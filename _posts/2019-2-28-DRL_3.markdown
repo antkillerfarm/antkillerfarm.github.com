@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  深度强化学习（三）——参考资源（2）
+title:  深度强化学习（三）——DRL参考资源（2）
 category: RL 
 ---
 
-# 参考资源
+# DRL参考资源
 
 https://mp.weixin.qq.com/s/IvR0O6dpz2GJCG7UQb5kUQ
 

@@ -1,94 +1,30 @@
 ---
 layout: post
-title:  机器学习（二十三）——HMM, Optimizer
+title:  机器学习（二十三）——Optimizer
 category: ML 
 ---
 
-# HMM（续）
+# 时间序列分析+
 
-## Viterbi算法
+https://mp.weixin.qq.com/s/iKM6zMSm1F2icjy79F9Hcg
 
-Viterbi算法是求解最大似然状态路径的常用算法，被广泛应用于通信（CDMA技术的理论基础之一）和NLP领域。
+季节性的分析才不简单，小心不要在随机数据中也分析出季节性
 
->注：Andrew James Viterbi，1935年生，意大利裔美国工程师、企业家，高通公司联合创始人。MIT本硕+南加州大学博士。viterbi算法和CDMA标准的主要发明人。
+https://mp.weixin.qq.com/s/avLWHXj2JkjXOomCipj8kA
 
-![](/images/article/HMM_4.png)
+使用希尔伯特-黄变换（HHT）进行时间序列分析
 
-上图是一个HMM模型的概率图表示，其中{'Healthy','Fever'}是隐含状态，而{'normal','cold','dizzy'}是可见状态，边是各状态的转移概率。
+https://mp.weixin.qq.com/s/p8oN4xh-FHnay2eTsk6Gng
 
-![](/images/article/Viterbi_animated_demo.gif)
+基于高阶模糊认知图与小波变换的时间序列预测
 
-上图是Viterbi算法的动画图。简单来说就是：从开始状态之后每走一步，就记录下到达该状态的所有路径的概率最大值，然后以此最大值为基准继续向后推进。显然，如果这个最大值都不能使该状态成为最大似然状态路径上的结点的话，那些小于它的概率值（以及对应的路径）就更没有可能了。
+https://mp.weixin.qq.com/s/lmJk-iIzxxPmnZa6D8i_nw
 
-Viterbi算法只能求出最佳路径，对于N-best问题就需要进行扩展方可。
+一文简述如何使用嵌套交叉验证方法处理时序数据
 
-参考：
+https://mp.weixin.qq.com/s/05WAZcklXnL_hFPLZW9t7Q
 
-https://mp.weixin.qq.com/s/FQ520ojMmbFhNMoNCVTKug
-
-通俗理解维特比算法
-
-https://www.zhihu.com/question/20136144
-
-谁能通俗的讲解下viterbi算法？
-
-https://mp.weixin.qq.com/s/xyWY3Z5PiHkCFzCP0noBvA
-
-一文读懂HMM模型和Viterbi算法
-
-## 前向算法
-
-forward算法是求解问题2的常用算法。
-
-仍以上面的掷骰子为例，要算用正常的三个骰子掷出这个结果的概率，其实就是将所有可能情况的概率进行加和计算。同样，简单而暴力的方法就是把穷举所有的骰子序列，还是计算每个骰子序列对应的概率，但是这回，我们不挑最大值了，而是把所有算出来的概率相加，得到的总概率就是我们要求的结果。
-
-穷举法的计算量太大，不适用于计算较长的马尔可夫链。但是我们可以观察一下穷举法的计算步骤。
-
-![](/images/article/forward_algorithm.png)
-
-上图是某骰子序列的穷举计算过程，可以看出第3步计算的概率和公式的某些项，实际上在之前的步骤中已经计算出来了，前向递推的计算量并没有想象中的大。
-
-## Baum–Welch算法
-
-Baum–Welch算法是求解问题3的常用算法，由Baum和Welch于1972年提出。它虽然是EM算法的一个特例，但后者却是1977年才提出的。
-
->Leonard Esau Baum，1931～2017，美国数学家，哈佛博士（1958）。国防分析研究所研究员，70年代末，加盟对冲基金——文艺复兴科技公司。
-
->Lloyd Richard Welch，生于1927年，美国数学家，加州理工博士（1958），南加州大学教授。美国工程院院士，Shannon Award获得者（2003）。
-
-Baum–Welch算法也叫前向后向算法。因为它包含了前向和后向两个步骤。
-
-1:expectation，计算隐变量的概率分布，并得到可观察变量与隐变量联合概率的log-likelihood在前面求得的隐变量概率分布下的期望。这个步骤就是所谓的前向步骤，算法和求解问题2的forward算法是一致的
-
-2:maximization求得使上述期望最大的新的模型参数。若达到收敛条件则退出，否则回到步骤1。
-
-前向后向算法则主要是解决Expectation这步中求隐变量概率分布的一个算法，它利用dynamic programming大大减少了计算量。
-
-此外，训练HMM模型时，也需要对模型参数进行随机初始化，不然和神经网络一样，由于参数没有差异性，而无法进行训练。
-
-参考：
-
-https://blog.csdn.net/xmu_jupiter/article/details/50965039
-
-HMM的Baum-Welch算法和Viterbi算法公式推导细节
-
-## HMM在NLP领域的应用
-
-具体到分词系统，可以将“标签”当作隐含状态，“字或词”当作可见状态。那么，几个NLP的问题就可以转化为：
-
-词性标注：给定一个词的序列（也就是句子），找出最可能的词性序列（标签是词性）。如ansj分词和ICTCLAS分词等。
-
-分词：给定一个字的序列，找出最可能的标签序列（断句符号：[词尾]或[非词尾]构成的序列）。结巴分词目前就是利用BMES标签来分词的，B（开头）,M（中间),E(结尾),S(独立成词）
-
-命名实体识别：给定一个词的序列，找出最可能的标签序列（内外符号：[内]表示词属于命名实体，[外]表示不属于）。如ICTCLAS实现的人名识别、翻译人名识别、地名识别都是用同一个Tagger实现的。
-
-综上，**在监督学习中，一般把训练数据当作HMM的可见状态，而把标签当作隐含状态。**当然这里的标签可能是生成最终训练标签的一个概率模型的参数。
-
-参考：
-
-http://blog.sina.com.cn/s/blog_8267db980102wq4l.html
-
-HMM识别新词
+时间序列模型之相空间重构模型
 
 # Optimizer
 

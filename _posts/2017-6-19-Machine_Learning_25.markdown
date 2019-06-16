@@ -254,6 +254,10 @@ https://mp.weixin.qq.com/s/MuODCRWqolnh62D4t-hRvQ
 
 临(邻)近增量累积梯度法(PIAG)
 
+https://mp.weixin.qq.com/s/AHM60k3_Th3HD-VPBaXhuw
+
+线性规划和整数规划的若干建模技巧
+
 # 金融模型
 
 Capital asset pricing model

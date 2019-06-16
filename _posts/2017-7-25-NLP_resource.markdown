@@ -140,6 +140,10 @@ https://mp.weixin.qq.com/s/RVg2_abeeYVDlvDRkzPpPQ
 
 常见近30种NLP任务的练手项目
 
+https://github.com/lpty/nlp_base/
+
+一些自然语言处理基本模型Demo
+
 https://mp.weixin.qq.com/s/xlQOfAY0rAeXH6bntLMexQ
 
 优质中文NLP资源集合，做项目一定用得到！

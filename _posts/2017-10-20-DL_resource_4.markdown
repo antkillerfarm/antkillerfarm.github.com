@@ -204,6 +204,10 @@ https://mp.weixin.qq.com/s/Q-bXkJzFgshkXrTMB5dh0w
 
 抖音短视频推荐大赛小规模赛道Top8模型代码开源
 
+https://mp.weixin.qq.com/s/YQXA2PbSe0q6kqWSFf9vgQ
+
+Kaggle美女自述：我是怎么成为竞赛中Top 0.3%的
+
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
