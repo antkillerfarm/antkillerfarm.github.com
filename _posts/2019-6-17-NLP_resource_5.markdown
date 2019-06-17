@@ -273,3 +273,7 @@ https://mp.weixin.qq.com/s/Y__qQCkkUlDGAl8dF_tsPg
 https://mp.weixin.qq.com/s/mWIJt6niM3cw_Zy_RHRCZw
 
 人脸照片秒变艺术肖像画：清华大学提出APDrawingGAN
+
+https://mp.weixin.qq.com/s/xPkB6nexTo1FpcJnn_okhA
+
+你的涂鸦活了，CMU中国本科生让画成真

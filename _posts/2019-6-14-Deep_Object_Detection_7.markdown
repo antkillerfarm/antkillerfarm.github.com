@@ -299,3 +299,7 @@ https://mp.weixin.qq.com/s/f0Ynln-27z5A6LXt8j5qKQ
 https://mp.weixin.qq.com/s/cEg6HmS651riJVAtHdPafg
 
 基于域适应弱监督学习的目标检测
+
+https://mp.weixin.qq.com/s/A51X1e9E9T9pPbYdQVQtSg
+
+你是个成熟的C位检测器了，应该可以自动找C位了

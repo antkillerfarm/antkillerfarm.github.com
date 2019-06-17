@@ -245,6 +245,10 @@ https://mp.weixin.qq.com/s/GF_NLkSw64_6msmFep81fw
 
 Google Brain ICLR Talk：元学习的前沿与挑战
 
+https://mp.weixin.qq.com/s/sQmDZsVGIADwO97yEFATkw
+
+ICML2019《元学习》教程与必读论文列表
+
 # 深度哈希
 
 https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg

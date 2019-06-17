@@ -150,6 +150,10 @@ https://mp.weixin.qq.com/s/TC_Ju2vuKDP6d538v2F8CQ
 
 剪枝需有的放矢，快手&罗切斯特大学提出基于能耗建模的模型压缩
 
+https://mp.weixin.qq.com/s/UkqwPBYgYQuIB9_jGMt2QQ
+
+Rocket Training: 一种提升轻量网络性能的训练方法
+
 # 知识蒸馏
 
 知识蒸馏是另一大类的模型压缩方法。
@@ -299,3 +303,21 @@ $$\mathcal{l(K,B)}=\sum_i\frac{1}{N_i}\|\hat f (I_i;\mathcal{K,B})-f(I_i)\|^2$$
 http://mmlab.science.unitn.it/RAISE/
 
 RAISE数据集包含了8156张高分辨率原始照片，由3台不同的相机拍摄，并给出了相机的型号和参数。
+
+# 图像超分辨率进阶+
+
+https://mp.weixin.qq.com/s/Rr4AKGjZNyV3PDoRBVH-lw
+
+低清视频也能快速转高清：超分辨率算法TecoGAN
+
+https://mp.weixin.qq.com/s/PIq78vhNQxAKntnZilL4pQ
+
+分割、检测与定位，高分辨率网络显神威！这会是席卷深度学习的通用结构吗？
+
+https://mp.weixin.qq.com/s/G55dxHfMYxWzjz4_8YnUaw
+
+深度学习超分辨率最新综述：一文道尽技术分类与效果评测
+
+https://zhuanlan.zhihu.com/p/67613641
+
+基于多级神经纹理迁移的图像超分辨方法(Adobe Research)

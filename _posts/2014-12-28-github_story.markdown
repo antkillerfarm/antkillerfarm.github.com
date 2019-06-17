@@ -30,13 +30,25 @@ https://github.com/trending/python?since=monthly
 
 这个可以看到python的月度趋势，便于分析技术热点。其他语言可以此类推。
 
+----
+
 `svn checkout https://github.com/rain1024/slp2-pdf/trunk/complete-book-pdf`
 
 上述命令可以下载单个文件或文件夹。
 
 要点：将`tree/master`换成`trunk`。
 
+----
+
 在搜索栏输入`stars:>10000`可以查看star最多的项目。
+
+----
+
+在浏览器中输入：
+
+`https://api.github.com/repos/antkillerfarm/antkillerfarm.github.com`
+
+可以查看repo的基本信息，比如repo的大小（单位：KB）。
 
 ## 搭建本地GitHub Blog服务
 
@@ -207,32 +219,6 @@ http://trac.webkit.org/wiki/BuildingGtk
 3)gtk-doc-tools
 
 4)libgail-dev
-
-# GraphQL
-
-GraphQL是在Facebook内部应用多年的一套数据查询语言和runtime。
-
-官网：
-
-http://graphql.org/
-
-中文官网：
-
-http://graphql.cn/
-
-代码：
-
-https://github.com/facebook/graphql
-
-参考：
-
-https://zhuanlan.zhihu.com/p/20638731
-
-GraphQL and Relay浅析
-
-https://mp.weixin.qq.com/s/4AnLu0m2IILGwyPyuK37Fg
-
-基本操作：Go创建GraphQL API
 
 # BBR
 

@@ -255,6 +255,10 @@ https://github.com/jaywcjlove/linux-command
 
 Linux命令大全搜索工具
 
+https://mp.weixin.qq.com/s/xuC_pH1X_GmyK0vVWrBzWQ
+
+10个实战与面试常用Shell脚本编写
+
 # 知识图谱参考资源
 
 https://mp.weixin.qq.com/s/9MToVjepCZuTgXz967ugjg

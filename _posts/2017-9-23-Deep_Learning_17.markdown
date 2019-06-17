@@ -391,3 +391,7 @@ https://mp.weixin.qq.com/s/DAtHXSfCpqCAZ0iVsfWkDA
 https://mp.weixin.qq.com/s/eHzNIO-RSY-uf-K-OwtWfw
 
 集多种半监督学习范式为一体，谷歌新研究提出新型半监督方法MixMatch
+
+https://mp.weixin.qq.com/s/3el7bPAeJrTQGfWW29ewuA
+
+新技术“红”不过十年，半监督学习为什么是个例外？

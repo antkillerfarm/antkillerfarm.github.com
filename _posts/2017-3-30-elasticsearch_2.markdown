@@ -414,3 +414,7 @@ https://mp.weixin.qq.com/s/Sez56UaCAt3Aspn7OTFj_Q
 https://mp.weixin.qq.com/s/C50IBm8EgrE13MOPMgPseQ
 
 基于背景和潜在异常字典构造的高光谱图像异常目标检测
+
+https://mp.weixin.qq.com/s/0bVwxkncZrqxvhHXvbTHIA
+
+终于把微软BING搜索-SPTAG算法的原理搞清了

@@ -385,3 +385,11 @@ https://mp.weixin.qq.com/s/JYTqJDlGw6Q2gNLaYIGLcQ
 https://mp.weixin.qq.com/s/R1_mXxBrQYgIPlUDGz8w6Q
 
 片上多核系统的互联需求
+
+![](/images/img3/Wallace_Tree.png)
+
+https://mp.weixin.qq.com/s/_n1FA7H5q4AwXqeBg9tekA
+
+硬件实现快速累加
+
+>Christopher Stewart "Chris" Wallace，1933～2004，澳大利亚计算机科学家和物理学家。University of Sydney博士（1959）。Monash University教授。ACM fellow。在早期计算机的软件/硬件方面皆有重大贡献。

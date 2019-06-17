@@ -110,6 +110,10 @@ https://mp.weixin.qq.com/s/62cqtwslax_cvA57252zYA
 
 IBM自动机器学习网络架构搜索最新综述
 
+https://mp.weixin.qq.com/s/qVVeKZ1DNLbxqOGm2cKriQ
+
+自动机器学习: 最新进展综述与开放挑战
+
 http://blog.csdn.net/u014380165/article/details/78525687
 
 自学网络结构（二）：Learning Transferable Architectures for Scalable Image Recognition
@@ -363,19 +367,3 @@ https://mp.weixin.qq.com/s/aEu0q04pgXUE1mqAS5kewQ
 https://mp.weixin.qq.com/s/CXDzPSSyObPHYc40YictKQ
 
 CVPR 2019 神奇的超分辨率算法DPSR：应对图像模糊降质
-
-https://mp.weixin.qq.com/s/Rr4AKGjZNyV3PDoRBVH-lw
-
-低清视频也能快速转高清：超分辨率算法TecoGAN
-
-https://mp.weixin.qq.com/s/PIq78vhNQxAKntnZilL4pQ
-
-分割、检测与定位，高分辨率网络显神威！这会是席卷深度学习的通用结构吗？
-
-https://mp.weixin.qq.com/s/G55dxHfMYxWzjz4_8YnUaw
-
-深度学习超分辨率最新综述：一文道尽技术分类与效果评测
-
-https://zhuanlan.zhihu.com/p/67613641
-
-基于多级神经纹理迁移的图像超分辨方法(Adobe Research)

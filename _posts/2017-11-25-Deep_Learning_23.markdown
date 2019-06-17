@@ -214,22 +214,6 @@ https://mp.weixin.qq.com/s/V8v9eeP4HFH-TfIKUio6Iw
 
 上交大推出新型无监督生成模型算法CoT，性能比GAN稳定！
 
-https://mp.weixin.qq.com/s/ErmGAsSHvCOxCn97yZ4WJQ
-
-关于GAN的灵魂七问
-
-https://mp.weixin.qq.com/s/Q0IUGbVcIYJMdidSVcFzFw
-
-GAN的五个神奇应用场景
-
-https://mp.weixin.qq.com/s/LJfsadhp3WGi0tLXN7jCUA
-
-GAN生成图像综述
-
-https://mp.weixin.qq.com/s/kWv-hp2svq1OEHy2DqQ4uA
-
-古纾旸：Generative model is more than just GANs
-
 # 姿态/行为检测+
 
 https://github.com/sebastianstarke/AI4Animation
@@ -251,6 +235,10 @@ https://mp.weixin.qq.com/s/tEOSPiYvgkaiRjVYLweQ4w
 https://mp.weixin.qq.com/s/j70ohcCod9FCijWL_tquig
 
 腾讯AI Lab联合清华大学提出基于骨骼姿态估计的人体实例分割
+
+https://mp.weixin.qq.com/s/Td510LMs3UWV_8d5kDgFYw
+
+浙大CAD实验室：快速鲁棒的多视角多人三维姿态估计新方法
 
 # LSTM进阶
 

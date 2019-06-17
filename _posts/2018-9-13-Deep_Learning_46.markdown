@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十六）——OCR, 问答系统
+title:  深度学习（四十六）——OCR, NetVLAD, 李飞飞
 category: DL 
 ---
 
@@ -276,164 +276,123 @@ https://mp.weixin.qq.com/s/jO2xc7Ri6TvrHyXHH0uX4w
 
 金山WPS：基于本地TensorFlow Lite和AI云服务的文档矫正功能
 
-# 问答系统
+https://mp.weixin.qq.com/s/3t8yzjMXiZwgqBb8izVfFg
 
-GA-Reader
+场景文字检测模型PixelLink详解与使用
 
-Match-LSTM
+https://zhuanlan.zhihu.com/p/68356509
 
-Bi-DAF
+TensorFlow 2.0中文手写字识别（汉字OCR）
 
-R-Net
+# NetVLAD
 
-QA-Net
+NetVLAD算的上是CNN+传统算子的一个范例。
 
-S-Net
+论文：
 
-R3
+《NetVLAD: CNN architecture for weakly supervised place recognition》
+
+《GhostVLAD for set-based face recognition》
+
+数据集：
+
+http://places.csail.mit.edu/
+
+## VLAD
+
+Vector of Locally Aggregated Descriptors
+
+https://www.cnblogs.com/minemine/p/7364950.html
+
+场景分类(scene classification)摘录
+
+http://www.cnblogs.com/mafuqiang/p/6909556.html
+
+图像检索——VLAD
 
 ## 参考
 
-https://mp.weixin.qq.com/s/IahvlkiACOAjicX68teA0A
+https://www.oukohou.wang/2018/11/27/NetVLAD/
 
-套路深深深几许？管窥问答系统、阅读理解的小江湖
+论文阅读-NetVLAD
 
-https://mp.weixin.qq.com/s/h51gh-9LISEBdJx8X--Lsg
+https://www.oukohou.wang/2018/12/26/GhostVLAD/
 
-近期有哪些值得读的QA论文？
+论文阅读-GhostVLAD
 
-https://mp.weixin.qq.com/s/lB44D_RFBqbNB6YX5gEULg
+https://mp.weixin.qq.com/s/cfUl0Eym0mu7rSJJL7Zt1A
 
-近期值得读的QA论文！专题论文解读
+基于深度学习的视觉实例搜索研究进展
 
-http://www.taodocs.com/p-4795349.html
+https://zhuanlan.zhihu.com/p/25013378
 
-基于大规模问答语料的问题检索系统
+深度纹理编码网络 (Deep TEN: Texture Encoding Network)
 
-https://wenku.baidu.com/view/d38ab1e8856a561252d36fab.html
+https://blog.csdn.net/LiGuang923/article/details/85416407
 
-短文本相似度计算在用户交互式问答系统中的应用
+图像检索与降维（一）：VLAD
 
-https://mp.weixin.qq.com/s/5ajhhc4mpIhoqkl5VkGnaw
+https://blog.csdn.net/LiGuang923/article/details/85470289
 
-深度学习实现问答机器人
+图像检索与降维（二）：NetVLAD
 
-https://mp.weixin.qq.com/s/2aKoOx18RB0GGQTzb3Tjzg
+# 李飞飞
 
-Facebook开源DrQA的PyTorch实现：基于维基百科的问答系统
+## AI大佬
 
-https://mp.weixin.qq.com/s/4TC7180LmD7V6u1CdVYRFw
+李飞飞是吴恩达之后的华裔AI新大佬。巧合的是，他们都是斯坦福AP+AI lab的主任，只不过吴是李的前任而已。
 
-漫谈机器阅读理解之Facebook提出的DrQA系统
+**李飞飞（Fei-Fei Li）**，1976年生，成都人，16岁移民美国。普林斯顿大学本科（1995～1999）+加州理工学院博士（2001～2005）。先后执教于UIUC、普林斯顿、斯坦福等学校。
 
-https://mp.weixin.qq.com/s/SYUq1Qd-IOmVjgs7Kp4OAg
+个人主页：
 
-如何打造智能问答引擎
+http://vision.stanford.edu/feifeili/
 
-https://mp.weixin.qq.com/s/Mzycy0chQUNWjJYdpERBOw
+她的老公Silvio Savarese，也是斯坦福的AP。
 
-一文详解维基百科的开放性问答系统
+## 大佬的门徒
 
-https://www.cnblogs.com/combfish/p/6708667.html
+比如可爱的妹子**Serena Yeung**。这个妹子是斯坦福的本硕博。出身不详，但从姓名的英文拼法来看，应该是美国土生的华裔。Yeung是杨、阳、羊等姓的传统英文拼法，但显然不是大陆推行的拼音拼法。（可以对比的是Fei-Fei Li和Bruce Lee，对于同一个姓的不同拼法。）
 
-(QA-LSTM)自然语言处理：智能问答IBM保险QA QA-LSTM实现笔记
+个人主页：
 
-https://mp.weixin.qq.com/s/BhDy55Mj5oMArO0MKwvnKw
+http://ai.stanford.edu/~syyeung/
 
-基于异构社交网络学习的社区问答方法，同时建模问题、回答和回答者
+还有当红的“辣子鸡”：**Andrej Karpathy**，多伦多大学本科（2009）+英属不列颠哥伦比亚大学硕士（2011）+斯坦福博士（2015）。现任特斯拉AI总监。
 
-https://mp.weixin.qq.com/s/bZgis3dxMbv6AnLNyk04Og
+吐槽一下：英属不列颠哥伦比亚大学其实是加拿大的一所大学。
 
-用数据做酷的事！手把手教你搭建问答系统
+个人主页：
 
-https://mp.weixin.qq.com/s/nIMk-xl8Wzy1ANcT3ApAng
+http://cs.stanford.edu/people/karpathy/
 
-百度提出问答模型GNR：检索速度提高25倍
+Andrej Karpathy建了一个检索arxiv的网站，主要搜集了近3年来的ML/DL领域的论文。网址：
 
-https://mp.weixin.qq.com/s/eDA6-BqPmjGBOPsOom0VIw
+http://www.arxiv-sanity.com/
 
-自动组合神经网络做问答系统！
+**李佳（Jia Li）**，李飞飞的开山大弟子，追随她从UIUC、普林斯顿到斯坦福。目前又追随其到Google。大约是知道自己的名字是个大路货，她的笔名叫做Li-Jia Li。
 
-https://mp.weixin.qq.com/s/vazeuiFvCC8aIhP2uAXoew
+个人主页：
 
-达观数据智能问答技术研究
+http://vision.stanford.edu/lijiali/
 
-https://mp.weixin.qq.com/s/eaxyhk93PbEFzHk-qiniOQ
+## 学神
 
-ReQuest: 使用问答数据产生实体关系抽取的间接监督
+应该说李飞飞和吴恩达都是万里挑一的超卓人物，但是和学神还是有所差距。下面是两个80后的华裔学神，他们都已经是正教授了：
 
-https://mp.weixin.qq.com/s/1VYdCLw6q4rS91_YV4SclA
+**尹希**，1983年生，哈佛大学物理系教授。
 
-理解智能问答系统（Ⅰ）
+**张锋**，1982年生，MIT教授，生物学家。
 
-https://mp.weixin.qq.com/s/x4yXjl0YXytAgp8a64ebXg
+这两个人都是有机会挑战诺奖的人，而李和吴暂时还没有这个可能性。
 
-智能问答开源项目之YodaQA（Ⅱ）
+## 网红
 
-https://mp.weixin.qq.com/s/2VPfk7jX0eBP2NZMB9igBg
+这里收录了一些非李飞飞门下的AI网红。
 
-智能问答之使用UIMA进行文本挖掘（Ⅲ）
+**Zachary Chase Lipton**，1985年生，哥伦比亚大学本科+UCSD博士，CMU的AP。他的另一身份——Jazz歌手，可比他的学术成就知名多了。
 
-https://mp.weixin.qq.com/s/NohUxQKHw8Z3kX_riGM10g
+个人主页：
 
-智能问答之答案抽取（Ⅳ）
+http://zacklipton.com/
 
-https://mp.weixin.qq.com/s/EU0O-WR0ynI04NsPZ-bn2g
-
-无从下手落地问答系统？实用百度开源框架了解一下
-
-https://mp.weixin.qq.com/s/F1z7evNDqghEzSD-_Xbgfw
-
-基于卷积深度相关性计算的社区问答方法，建模问题和回答的匹配关系
-
-https://mp.weixin.qq.com/s/_klvAhH-K8tcYmamlr6FcA
-
-Logistic Regression Models分析交互式问答
-
-https://mp.weixin.qq.com/s/_XyqNPkInWfy-gUQtHjNIg
-
-基于深度神经网络的自动问答系统概述
-
-https://mp.weixin.qq.com/s/GyE9qdXPGvrq12dMAf4nrQ
-
-论文推荐：QA，增强学习，知识图谱，机器阅读理解
-
-https://mp.weixin.qq.com/s/6dKticG2I2zqlxnZ3W0ZgQ
-
-“猜你所想，答你所问”，携程智能客服算法实践
-
-https://mp.weixin.qq.com/s/yiAC6SddIFFo3bR351b_0Q
-
-Embodied Question Answering
-
-https://mp.weixin.qq.com/s/L227SZXQPinNOkKJjwr58w
-
-85页《基于神经方法的人机对话系统》，微软+谷歌出品
-
-https://mp.weixin.qq.com/s/_R9LUJhAb0eDCs14BJsoDA
-
-平安人寿资深算法工程师谢舒翼：智能问答系统探索与实践
-
-https://mp.weixin.qq.com/s/wH-YYzifsEqMCD_4n8B-Kw
-
-12张图看懂Gartner《智能客服机器人行业最佳实践》报告
-
-https://mp.weixin.qq.com/s/U2r4qDLh4WZFgAIoF_SRPg
-
-金融客服AI新玩法：语言学运用、LSTM+DSSM算法、多模态情感交互
-
-https://mp.weixin.qq.com/s/tntgiltyHfbIBktgdL3peA
-
-15年研发经验博士手把手教学：从零开始搭建智能客服
-
-https://mp.weixin.qq.com/s/hhWRhBeRCmxjr9Lh8aE_Ww
-
-如何用20万条客服咨询消息“喂”出定制化聊天机器人
-
-https://mp.weixin.qq.com/s/LFmZMcunhJ-9ey9_igrTZA
-
-行业智能客服构建探索
-
-https://mp.weixin.qq.com/s/OHSqHNo7vjLGaTKyzjZjyg
-
-基于智能客服的用户日志研究

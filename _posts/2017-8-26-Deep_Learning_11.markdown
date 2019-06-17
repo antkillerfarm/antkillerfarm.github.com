@@ -26,6 +26,10 @@ https://mp.weixin.qq.com/s/Yhvuog6NZOlVWEZURyqWxA
 
 ShuffleNetV2：轻量级CNN网络中的桂冠
 
+https://mp.weixin.qq.com/s/zLf0aKeMYwqMwC1TymMxgQ
+
+移动端高效网络，卷积拆分和分组的精髓
+
 ## Separable convolution
 
 前面介绍的都是正方形的卷积核，实际上长条形的卷积核也是很常用的。比如可分离卷积。

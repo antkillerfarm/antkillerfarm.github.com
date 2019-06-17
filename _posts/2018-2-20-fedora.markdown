@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Fedora, CentOS, Blog维护日志, OA办公软件, diff&patch
+title:  Fedora, CentOS, Blog维护日志, OA办公软件, diff&patch, Restful
 category: linux 
 ---
 
@@ -240,3 +240,39 @@ patch -R B C #B还原为A
 `sort 1.txt | xargs cat >2.patch`
 
 `patch -p1 <2.patch`
+
+# Restful
+
+相比于WebService，Restful是一种简单的多的编程风格。
+
+比如我们使用搜索引擎的时候，输入的地址：
+
+`https://www.bing.com/search?q=java+restful`
+
+就是一个典型的Restful请求。
+
+有关Restful风格的内容参见：
+
+https://segmentfault.com/a/1190000006735330
+
+Restful应用分析
+
+http://www.drdobbs.com/web-development/restful-web-services-a-tutorial/240169069
+
+RESTful Web Services: A Tutorial
+
+http://www.ibm.com/developerworks/library/ws-restful/index.html
+
+RESTful Web services: The basics
+
+还是那句老话，讨论一个通讯格式或协议，不讨论交互报文的都不是好文章，或者至少不是一个入门的好文章。
+
+常见的Web框架如Spring、Struts都提供了对Restful的支持。
+
+专门负责Restful的框架还有Jersey。其官网：
+
+https://jersey.java.net/
+
+示例：
+
+https://github.com/feuyeux/jax-rs2-guide-II

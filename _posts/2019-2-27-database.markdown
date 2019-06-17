@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数据库, Mysql, Android研究（二）, Restful
+title:  数据库, Mysql, Android研究（二）
 category: technology 
 ---
 
@@ -39,6 +39,32 @@ Hulu在OLAP场景下数据缓存技术实战
 https://mp.weixin.qq.com/s/2VutJPwMLUW51o2P0P0QLw
 
 Sophon：Hulu智能OLAP缓存层技术实践
+
+## GraphQL
+
+GraphQL是在Facebook内部应用多年的一套数据查询语言和runtime。
+
+官网：
+
+http://graphql.org/
+
+中文官网：
+
+http://graphql.cn/
+
+代码：
+
+https://github.com/facebook/graphql
+
+参考：
+
+https://zhuanlan.zhihu.com/p/20638731
+
+GraphQL and Relay浅析
+
+https://mp.weixin.qq.com/s/4AnLu0m2IILGwyPyuK37Fg
+
+基本操作：Go创建GraphQL API
 
 ## 参考
 
@@ -365,39 +391,3 @@ Android整体设计及背后意义
 https://mp.weixin.qq.com/s/eEuNPtTaPwJ7hSghgeU32g
 
 Android Hook技术防范漫谈
-
-# Restful
-
-相比于WebService，Restful是一种简单的多的编程风格。
-
-比如我们使用搜索引擎的时候，输入的地址：
-
-`https://www.bing.com/search?q=java+restful`
-
-就是一个典型的Restful请求。
-
-有关Restful风格的内容参见：
-
-https://segmentfault.com/a/1190000006735330
-
-Restful应用分析
-
-http://www.drdobbs.com/web-development/restful-web-services-a-tutorial/240169069
-
-RESTful Web Services: A Tutorial
-
-http://www.ibm.com/developerworks/library/ws-restful/index.html
-
-RESTful Web services: The basics
-
-还是那句老话，讨论一个通讯格式或协议，不讨论交互报文的都不是好文章，或者至少不是一个入门的好文章。
-
-常见的Web框架如Spring、Struts都提供了对Restful的支持。
-
-专门负责Restful的框架还有Jersey。其官网：
-
-https://jersey.java.net/
-
-示例：
-
-https://github.com/feuyeux/jax-rs2-guide-II

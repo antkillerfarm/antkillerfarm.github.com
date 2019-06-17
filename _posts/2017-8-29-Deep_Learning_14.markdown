@@ -132,6 +132,16 @@ WN的特点：
 
 相比于其他两种方法，其训练起来不太稳定，非常依赖于输入数据的分布。
 
+参考：
+
+https://mp.weixin.qq.com/s/merU6hjBVuNN2C84Rp2RkA
+
+Weight Standarization：携手GN，超越BN
+
+http://mlexplained.com/2018/01/13/weight-normalization-and-layer-normalization-explained-normalization-in-deep-learning-part-2/
+
+Weight Normalization and Layer Normalization Explained
+
 ## Cosine Normalization
 
 Normalization还能怎么做？
@@ -155,10 +165,6 @@ Layer Normalization原理及其TensorFlow实现
 http://mlexplained.com/2018/01/10/an-intuitive-explanation-of-why-batch-normalization-really-works-normalization-in-deep-learning-part-1/
 
 An Intuitive Explanation of Why Batch Normalization Really Works
-
-http://mlexplained.com/2018/01/13/weight-normalization-and-layer-normalization-explained-normalization-in-deep-learning-part-2/
-
-Weight Normalization and Layer Normalization Explained
 
 https://mp.weixin.qq.com/s/KnmQTKneSimuOGqGSPy58w
 
@@ -283,26 +289,6 @@ Google用更少标签生成图像，还提出一个用于训练评估GAN的库
 https://mp.weixin.qq.com/s/hXGGN1K0LoqAdtyYhCu63w
 
 以合成假脸、假画闻名的GAN很成熟了？那这些问题呢？
-
-https://mp.weixin.qq.com/s/gzwa6ZZeNvm1MyIM93sC5Q
-
-全新缺失图像数据插补框架—CollaGAN
-
-https://mp.weixin.qq.com/s/3bi5Timesxi1YbFdzBs8AA
-
-DeepMind论文：深度压缩感知，新框架提升GAN性能
-
-https://zhuanlan.zhihu.com/p/67532362
-
-生成对抗网络系列——CVPR2019中的图像转化GAN
-
-https://mp.weixin.qq.com/s/CyN2yjpHV_t4-8Jf4Rsj-Q
-
-自然语言处理的深度对抗学习方法-附104页教程Slides
-
-https://mp.weixin.qq.com/s/dS4xXgt2duJReLSIlNOMlQ
-
-你的TextGAN调出来了么？来看看人在怎么调的
 
 # fine-tuning
 

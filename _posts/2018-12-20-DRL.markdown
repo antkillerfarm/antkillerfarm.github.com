@@ -120,6 +120,10 @@ https://mp.weixin.qq.com/s/u49cuDV21ITs1aV9tJR85g
 
 Pieter Abbeel：《深度学习在机器人中的应用》
 
+https://mp.weixin.qq.com/s/z9MvLuqjY5Xmty18ZP10WQ
+
+UC伯克利Pieter Abbeel教授强化学习教程-附59页slides
+
 https://github.com/enggen/DeepMind-Advanced-Deep-Learning-and-Reinforcement-Learning
 
 DeepMind与UCL合作推出的深度学习与强化学习进阶课程
