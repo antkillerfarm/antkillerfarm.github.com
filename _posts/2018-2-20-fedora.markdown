@@ -127,6 +127,8 @@ Install TightVNC Server in RHEL/CentOS and Fedora to Access Remote Desktops
 
 # Blog维护日志
 
+2019.6.18 文章数达到300篇。可命名为v4.5。
+
 2019.4.26 img2的图片太多，特添加img3。
 
 2019.3.27 NLP参考资源已经积攒了很多，特进行细分类，使之更有条理。
@@ -276,3 +278,45 @@ https://jersey.java.net/
 示例：
 
 https://github.com/feuyeux/jax-rs2-guide-II
+
+# Python
+
+https://mp.weixin.qq.com/s/XV4LOBM1pO0N8oShZl7MzQ
+
+手把手教你用Python设计一个命令行界面
+
+https://mp.weixin.qq.com/s/EZh5PAUgXkIDzGbim6wqLQ
+
+用Python带你看白雪飘扬~
+
+https://mp.weixin.qq.com/s/SUyRNz_M7B6bcdV7-YxlZQ
+
+Python制作一款简易音乐播放器
+
+https://mp.weixin.qq.com/s/d2_MTvfbOFZmppej5UOwUw
+
+关于使用Python析构函数的正确姿势
+
+https://mp.weixin.qq.com/s/weEZEr4g8pI11Gijc-St0Q
+
+DeBug Python代码全靠print函数？换用这个一天2K+Star的工具吧
+
+https://mp.weixin.qq.com/s/wr18ylCJyJOX83BhbvGXng
+
+13个Python开发者必知的Python GUI库
+
+https://mp.weixin.qq.com/s/S_mIspLOrmj8ny0VHP52ZA
+
+Python高级技巧：lazy property
+
+https://mp.weixin.qq.com/s/06-iOG5TkRkHb4RZl1bXNQ
+
+史上最全Python迭代器与生成器
+
+https://mp.weixin.qq.com/s/lv_sjvXx8vWf6TsVoYoxFw
+
+Python处理文件系统的10种方法
+
+https://mp.weixin.qq.com/s/la9srinIeibkXZEDRvv5pA
+
+手把手教你用Python实现“坦克大战”，附详细代码！

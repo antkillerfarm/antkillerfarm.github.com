@@ -6,7 +6,70 @@ category: language
 
 # Python
 
-## 如何通过需认证的代理获取HTTP网页（续）
+## tqdm
+
+tqdm是一个快速，可扩展的进度条。
+
+代码：
+
+https://github.com/tqdm/tqdm
+
+示例：
+
+{% highlight python %}
+from tqdm import tqdm
+for i in tqdm(range(9)):
+    ...
+{% endhighlight %}
+
+效果：
+
+`76%|████████████████████            | 7641/10000 [00:34<00:10, 222.22 it/s]`
+
+其实还有一个更简单的办法：
+
+`print("\r" + "xxx", end="")`：这样的话会先把console里面当前的行清除掉、再输出xxx。
+
+## JPype
+
+JPype是一个能够让python代码方便地调用Java代码的工具。官网：
+
+https://sourceforge.net/projects/jpype/
+
+参考：
+
+http://blog.csdn.net/niuyisheng/article/details/9002926
+
+JPype：实现在python中调用JAVA
+
+http://www.cnblogs.com/yu-zhang/p/3817024.html
+
+python调用java程序--jpype
+
+## 文件名处理
+
+{% highlight python %}
+(filepath,tempfilename) = os.path.split(filename)
+(shotname,extension) = os.path.splitext(tempfilename)
+{% endhighlight %}
+
+## NetworkX
+
+NetworkX是一个用Python语言开发的图论与复杂网络建模工具，内置了常用的图与复杂网络分析算法，可以方便的进行复杂网络数据分析、仿真建模等工作。
+
+官网：
+
+https://networkx.github.io/
+
+参考：
+
+https://www.cnblogs.com/kaituorensheng/p/5423131.html
+
+python复杂网络分析库NetworkX
+
+## 如何通过需认证的代理获取HTTP网页
+
+Python内置的urllib和urllib2模块都可用于获取HTTP网页，但使用范围是不同的。urllib只支持HTTP 0.9和HTTP 1.0，所以如果只是使用代理可以使用urllib.FancyURLopener类，如果该代理还需要认证的话urllib就不行了。因为代理认证是HTTP 1.1中引入的。
 
 这时可以考虑使用urllib2模块。代码如下：
 
@@ -398,43 +461,3 @@ https://mp.weixin.qq.com/s/rE5OEFwwFxJNb_Omwmqvzw
 https://blog.csdn.net/longerzone/article/details/17889969
 
 Python下调用Linux的Shell命令
-
-https://mp.weixin.qq.com/s/XV4LOBM1pO0N8oShZl7MzQ
-
-手把手教你用Python设计一个命令行界面
-
-https://mp.weixin.qq.com/s/EZh5PAUgXkIDzGbim6wqLQ
-
-用Python带你看白雪飘扬~
-
-https://mp.weixin.qq.com/s/SUyRNz_M7B6bcdV7-YxlZQ
-
-Python制作一款简易音乐播放器
-
-https://mp.weixin.qq.com/s/d2_MTvfbOFZmppej5UOwUw
-
-关于使用Python析构函数的正确姿势
-
-https://mp.weixin.qq.com/s/weEZEr4g8pI11Gijc-St0Q
-
-DeBug Python代码全靠print函数？换用这个一天2K+Star的工具吧
-
-https://mp.weixin.qq.com/s/wr18ylCJyJOX83BhbvGXng
-
-13个Python开发者必知的Python GUI库
-
-https://mp.weixin.qq.com/s/S_mIspLOrmj8ny0VHP52ZA
-
-Python高级技巧：lazy property
-
-https://mp.weixin.qq.com/s/06-iOG5TkRkHb4RZl1bXNQ
-
-史上最全Python迭代器与生成器
-
-https://mp.weixin.qq.com/s/lv_sjvXx8vWf6TsVoYoxFw
-
-Python处理文件系统的10种方法
-
-https://mp.weixin.qq.com/s/la9srinIeibkXZEDRvv5pA
-
-手把手教你用Python实现“坦克大战”，附详细代码！

@@ -328,6 +328,10 @@ Efficient Neural Audio Synthesis
 
 # 语音识别参考资源
 
+https://zhuanlan.zhihu.com/p/69637495
+
+语音转写技术入门
+
 https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=400189223&idx=1&sn=1cb32bee42de626443ebadbf065ec79c
 
 百度贾磊：汉语语音识别技术重大突破：LSTM+CTC详解

@@ -415,3 +415,11 @@ https://mp.weixin.qq.com/s/j970Qp8Cz2fpbImujkS2Xg
 https://mp.weixin.qq.com/s/Yy-XEyM0YGTRFUX2uWgNKw
 
 夜景拍照之算法篇
+
+https://mp.weixin.qq.com/s/h7MQhZjnP3lLkLD0cKNixA
+
+高动态范围成像的理论基础
+
+https://mp.weixin.qq.com/s/Wd6LD8Rme8XJwtYWU-ALtQ
+
+动态范围压缩（DRC）的四种方法

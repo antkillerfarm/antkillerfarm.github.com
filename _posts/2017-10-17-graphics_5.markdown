@@ -170,6 +170,12 @@ Foveon X3虽然色彩不失真，但制作工艺比较复杂，目前只用在�
 
 比如华为最近出的Mate P30 Pro（2019.4）就使用了RYYB Array。
 
+参考：
+
+https://mp.weixin.qq.com/s/Y9BKcJ-0VjdsRqe387P2kQ
+
+关于RGBNIR sensor的一些讨论
+
 ## RAW Data
 
 图像sensor数字采样的结果，就是所谓的RAW Data。
@@ -223,3 +229,13 @@ Demosaic的算法一般如下图所示：
 Demosaic处理后的图片才是真正的彩色图片，如下图所示：
 
 ![](/images/img2/ISP_4.png)
+
+参考：
+
+https://mp.weixin.qq.com/s/sPmPFdfONapA5Y53AI7hSA
+
+小话Demosaic（一）
+
+https://mp.weixin.qq.com/s/8gRzW4qsX6SBzKn8FJ-hJQ
+
+小话demosaic（二）

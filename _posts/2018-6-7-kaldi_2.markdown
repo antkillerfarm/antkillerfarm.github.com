@@ -6,6 +6,8 @@ category: AI
 
 # ARPA文件格式（续）
 
+P(A)的计算直接找对应A的文法项获得概率即可。如果2-grams中存在“A B”项，$$P(B\mid A)$$的概率也很容易获得，但是如果“A B”词组在2-grams中不存在，我们就需要利用回退概率计算$$P(B\mid A)$$，计算公式为$$P(B\mid A)=\alpha(A)*P(B)$$，其中的$$\alpha(A)$$就表示A的回退概率。
+
 类似地，可以获得三元词组的概率计算公式：
 
 $$P(C│AB)=\left\{\begin{matrix}P(C\mid AB) \qquad ABC存在

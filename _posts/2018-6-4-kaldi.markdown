@@ -134,6 +134,8 @@ https://computing.llnl.gov/tutorials/linux_clusters/
 
 Linux Clusters Overview
 
+>据说百度曾经也用过一段时间的slurm，但是最后改用K8S了。
+
 # 目录结构
 
 kaldi的调用层次可分为三级：
@@ -364,5 +366,3 @@ ngram 3=173445
 $$P(ABCDEF)=P(A)*P(B\mid A)*P(C\mid AB)*P(D\mid BC)*P(E\mid CD)*(F\mid DE)$$
 
 其中，P(A)通过访问arpa中的1-grams项获得，$$P(B\mid A)$$通过访问2-grams项获得，其他的概率通过访问3-grams项获得。
-
-P(A)的计算直接找对应A的文法项获得概率即可。如果2-grams中存在“A B”项，$$P(B\mid A)$$的概率也很容易获得，但是如果“A B”词组在2-grams中不存在，我们就需要利用回退概率计算$$P(B\mid A)$$，计算公式为$$P(B\mid A)=\alpha(A)*P(B)$$，其中的$$\alpha(A)$$就表示A的回退概率。

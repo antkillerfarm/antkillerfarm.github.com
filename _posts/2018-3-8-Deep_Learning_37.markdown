@@ -376,6 +376,10 @@ https://mp.weixin.qq.com/s/lhut5ndqZWTwlKZjeY484w
 
 漫画人脸检测：全局和局部信息融合的深度神经网络
 
+https://mp.weixin.qq.com/s/7CV0a-UshPtadgfcsFScJw
+
+用孪生网络、对比损失和三重损失进行人脸识别的单样本学习
+
 # Regularization
 
 DL中的Regularization除了常见的$$l_1$$-norm、$$l_2$$-norm和squared $$l_2$$-norm之外，还有Group Regularization。它的定义如下：

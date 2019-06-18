@@ -4,6 +4,43 @@ title:  C/C++编程心得（二）, Python（三）
 category: language 
 ---
 
+# C/C++编程心得
+
+## 动态链接
+
+这两天实践了一下怎样在linux下创建动态链接。感觉网上的资料虽然翔实，但仍然有疏漏之处。
+
+1）g++和gcc的区别
+
+本来只想给链接的，以显示这不是我的原创。但是现在的链接失效的也太快了。。。囧
+
+只好拿华丽的分隔符来表示引用的内容。
+
+****
+误区一:gcc只能编译c代码,g++只能编译c++代码
+
+两者都可以，但是请注意：
+
+1.后缀为.c的，gcc把它当作是C程序，而g++当作是c++程序；后缀为.cpp的，两者都会认为是c++程序，注意，虽然c++是c的超集，但是两者对语法的要求是有区别的。C++的语法规则更加严谨一些。
+
+2.编译阶段，g++会调用gcc，对于c++代码，两者是等价的，但是因为gcc命令不能自动和C＋＋程序使用的库联接，所以通常用g++来完成链接，为了统一起见，干脆编译/链接统统用g++了，这就给人一种错觉，好像cpp程序只能用g++似的。
+ 
+误区二:gcc不会定义__cplusplus宏，而g++会
+
+实际上，这个宏只是标志着编译器将会把代码按C还是C++语法来解释，如上所述，如果后缀为.c，并且采用gcc编译器，则该宏就是未定义的，否则，就是已定义。
+ 
+误区三:编译只能用gcc，链接只能用g++
+
+原因基本同第一条。此外，g++基本等同gcc -lstdc++。
+
+****
+
+因此，某些时候编不过去，可以试试换换cc的值。
+
+2）gcc4.1.1下似乎对类型检查严了一些，dlsym返回的void*类型不能转换为相应的函数指针类型，需要强制转换。某些网上的例子在这里编不过去。
+
+3）显式调用时,要注意动态库函数的声明,可能要加`extern "C"`才能正常执行。（显式调用是运行时加载，所以编译能过，执行却不对了。）可以用nm命令看看链接库的符号表，以确定问题所在。
+
 ## strtok
 
 strtok函数多用于分割字符串，但它会改变被分割字符串的值。因此，如果该字符串以后还有用的话，需要首先复制该字符串，然后对复制的字符串执行strtok函数。
@@ -298,68 +335,3 @@ https://mp.weixin.qq.com/s/NsaMcgufLYO3i6eG1WO_VA
 | Java | SkewPassImage | http://skewpassim.sourceforge.net/ |
 | Java | Internet Captcha | http://www.icaptcha.com/ |
 | Java | Cage | http://akiraly.github.io/cage/ |
-
-## tqdm
-
-tqdm是一个快速，可扩展的进度条。
-
-代码：
-
-https://github.com/tqdm/tqdm
-
-示例：
-
-{% highlight python %}
-from tqdm import tqdm
-for i in tqdm(range(9)):
-    ...
-{% endhighlight %}
-
-效果：
-
-`76%|████████████████████            | 7641/10000 [00:34<00:10, 222.22 it/s]`
-
-其实还有一个更简单的办法：
-
-`print("\r" + "xxx", end="")`：这样的话会先把console里面当前的行清除掉、再输出xxx。
-
-## JPype
-
-JPype是一个能够让python代码方便地调用Java代码的工具。官网：
-
-https://sourceforge.net/projects/jpype/
-
-参考：
-
-http://blog.csdn.net/niuyisheng/article/details/9002926
-
-JPype：实现在python中调用JAVA
-
-http://www.cnblogs.com/yu-zhang/p/3817024.html
-
-python调用java程序--jpype
-
-## 文件名处理
-
-{% highlight python %}
-(filepath,tempfilename) = os.path.split(filename)
-(shotname,extension) = os.path.splitext(tempfilename)
-{% endhighlight %}
-
-## NetworkX
-
-NetworkX是一个用Python语言开发的图论与复杂网络建模工具，内置了常用的图与复杂网络分析算法，可以方便的进行复杂网络数据分析、仿真建模等工作。
-
-官网：
-
-https://networkx.github.io/
-
-参考：
-
-https://www.cnblogs.com/kaituorensheng/p/5423131.html
-
-python复杂网络分析库NetworkX
-
-## 如何通过需认证的代理获取HTTP网页
-
-Python内置的urllib和urllib2模块都可用于获取HTTP网页，但使用范围是不同的。urllib只支持HTTP 0.9和HTTP 1.0，所以如果只是使用代理可以使用urllib.FancyURLopener类，如果该代理还需要认证的话urllib就不行了。因为代理认证是HTTP 1.1中引入的。
