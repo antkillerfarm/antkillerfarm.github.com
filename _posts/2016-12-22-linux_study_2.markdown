@@ -440,25 +440,3 @@ gl-matrix 3.0以后添加了名字空间glMatrix，所以老旧的代码可能�
 ## 其他库
 
 https://deck.gl/
-
-# 知识图谱参考资源
-
-https://mp.weixin.qq.com/s/ZM0qZrqyk0QPBXYbkHAA8A
-
-基于多模态关联数据嵌入的知识库补全
-
-https://mp.weixin.qq.com/s/NxTTIWVPJi6yXuXr1qAmKw
-
-复旦数据院副院长阳德青：知识图谱在个性化推荐系统中的应用
-
-https://mp.weixin.qq.com/s/pwgYl6U3-w2sS-tAqn1hjg
-
-北京大学计算机所邹磊教授研究组开源面向RDF知识图谱的自然语言问答系统gAnswer
-
-https://mp.weixin.qq.com/s/d4cEHHo6OhlWEIXTFIdTuA
-
-知识图谱相关实体搜索
-
-https://mp.weixin.qq.com/s/3VIy20TyNk67BVg0y6ap6g
-
-领域知识图谱构建，115页2019著作带你学习KGC

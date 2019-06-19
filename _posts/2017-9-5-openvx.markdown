@@ -66,37 +66,11 @@ http://blog.csdn.net/zhoxier/article/details/8058176
 
 https://www.khronos.org/opencl/
 
-按照Michael J. Flynn的分类方法，计算机的体系结构可分为如下四类：
-
-**Single instruction stream single data stream (SISD)**
-
-**Single instruction stream, multiple data streams (SIMD)**
-
-**Multiple instruction streams, single data stream (MISD)**
-
-**Multiple instruction streams, multiple data streams (MIMD)**
-
-![](/images/article/simd_mimd.png)
-
-原图地址：
-
-https://en.wikipedia.org/wiki/Flynn%27s_taxonomy
-
-CPU通常是SISD和SIMD的，而GPU则是MISD的，超级计算机则是MIMD的。
-
 OpenCL是一个硬件中立标准，原则上和计算机的体系结构无关。当然现实中，我们主要使用GPU进行运算加速。
 
 和OpenGL、OpenVX的专用性不同，OpenCL主要定位于通用数学运算。OpenGL年代久远也就罢了。对于像OpenVX这样的新标准，有的时候其内部实现也有可能依赖于OpenCL。毕竟无论哪个领域的专用计算，最终都可以分解为基本的数学运算。
 
 简单来说，**OpenVX的封装粒度在层一级，而OpenCL最多只提供到矩阵运算一级的API**。
-
-术语：
-
-Shared Virtual Memory，SVM
-
-Memory consistency model
-
-Multisample anti-aliasing，MSAA
 
 参考：
 
@@ -255,8 +229,6 @@ ensmallen是一个基于Armadillo的数学优化方面的C++库。
 官网：
 
 https://ensmallen.org/
-
-
 
 # NVIDIA
 

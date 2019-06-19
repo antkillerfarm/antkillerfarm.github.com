@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Qt, 线程池, WebService, Kubernetes
+title:  Qt, 线程池, WebService
 category: technology 
 ---
 
@@ -279,49 +279,3 @@ https://my.oschina.net/fuckmylife0/blog/325432
 ## jaxws-demo-client
 
 jaxws-demo-client就是具体的客户端实现了，可以看出相比于上一步的桩代码，这里的代码文件，数量上要少得多。
-
-# Kubernetes
-
-Kubernetes是Google开源的容器集群管理系统，基于Docker构建一个容器的调度服务，提供资源调度、均衡容灾、服务注册、动态扩缩容等功能套件。
-
-官网：
-
-https://kubernetes.io/
-
-Kubernetes还有个ML的工具集叫KubeFlow。
-
-https://github.com/kubeflow/kubeflow
-
-参考：
-
-https://mp.weixin.qq.com/s/HEUIWK4skqMge8oziQg6Nw
-
-kubernetes简介和实战
-
-http://violetgo.com/blogs/2015/10/14/k8s.html
-
-docker学习笔记(k8s)
-
-https://mp.weixin.qq.com/s/wwwB8OHQmbwqmKKE8Lyv-w
-
-容器技术演化史
-
-https://mp.weixin.qq.com/s/LpNlUlXpt2poRKXEvuIDjw
-
-Kubernetes NetworkPolicy工作原理浅析
-
-https://mp.weixin.qq.com/s/s5eDSQF6mFt2F9_nVtYemQ
-
-PaaS将吞噬云计算？Kubernetes的市场冲击波
-
-https://mp.weixin.qq.com/s/19xreKtNlllfFx43eUGhuQ
-
-如何使用Kubernetes轻松部署深度学习模型
-
-https://mp.weixin.qq.com/s/4e9l-GP22T-myP54hJJjPA
-
-Kubernetes如何打赢容器之战？ 
-
-https://mp.weixin.qq.com/s/iTfHv8EFx4O4G1sNxsuMkg
-
-再见，Yarn！滴滴机器学习平台架构演进

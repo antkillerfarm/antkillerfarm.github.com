@@ -26,9 +26,9 @@ https://mp.weixin.qq.com/s/QXOy2jo4RhCZrD5bSVzBOQ
 
 共享相关任务表征，一文读懂深度神经网络多任务学习
 
-https://mp.weixin.qq.com/s/mm9bXXTEzd8DwyYlMgGMZg
+https://zhuanlan.zhihu.com/p/59413549
 
-NLP多任务学习：一种层次增长的神经网络结构
+Multi-task Learning(Review)多任务学习概述
 
 https://mp.weixin.qq.com/s/X6FwTgr282hbqgOz3oBX-w
 
@@ -41,6 +41,10 @@ https://blog.csdn.net/CoderPai/article/details/80080455
 https://blog.csdn.net/CoderPai/article/details/80087188
 
 利用TensorFlow一步一步构建一个多任务学习模型
+
+https://mp.weixin.qq.com/s/mm9bXXTEzd8DwyYlMgGMZg
+
+NLP多任务学习：一种层次增长的神经网络结构
 
 https://mp.weixin.qq.com/s/fcFb6WkJVP8TYpoxkQgiWQ
 
@@ -89,10 +93,6 @@ https://mp.weixin.qq.com/s/Oopgglg2G7TwnXeN2DtZhA
 https://mp.weixin.qq.com/s/vMgHCQ03Gt5v6GdgW-pY9A
 
 一个神经网络实现4大图像任务，GitHub已开源
-
-https://zhuanlan.zhihu.com/p/59413549
-
-Multi-task Learning(Review)多任务学习概述
 
 https://mp.weixin.qq.com/s/Zui8FFn1FDP_UoAGMH0L7Q
 

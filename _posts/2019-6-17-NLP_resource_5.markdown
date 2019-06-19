@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NLP参考资源（五）, Arm ML
+title:  NLP参考资源（五）
 category: resource 
 ---
 
@@ -205,62 +205,6 @@ https://mp.weixin.qq.com/s/M8Awv6Tod4SEo85F8xzqqg
 https://mp.weixin.qq.com/s/r_x1IUuyIQw3aif2f7-Fxw
 
 邱锡鹏：深度学习在语义分析处理的最新发展
-
-# Arm ML
-
-Arm ML是Arm的作品。它包括了两部分：Arm NN和Arm Compute Library。
-
-官网：
-
-https://mlplatform.org/
-
-## Arm NN
-
-官网：
-
-https://developer.arm.com/ip-products/processors/machine-learning/arm-nn
-
-代码：
-
-https://github.com/Arm-software/armnn
-
-## Arm Compute Library
-
-官网：
-
-https://developer.arm.com/ip-products/processors/machine-learning/compute-library
-
-代码：
-
-https://github.com/ARM-software/ComputeLibrary
-
-## CMSIS NN
-
-CMSIS NN是ARM提供的一个针对Cortex-M CPU的NN计算库。
-
-论文：
-
-《CMSIS-NN: Efficient Neural Network Kernels for Arm Cortex-M CPUs》
-
-官网：
-
-http://www.keil.com/pack/doc/CMSIS_Dev/NN/html/index.html
-
-代码：
-
-https://github.com/ARM-software/CMSIS_5
-
-## 概述
-
-![](/images/img3/arm_nn_frameworks.png)
-
-![](/images/img3/arm_ml_platforms.png)
-
-## 其他
-
-https://www.veryarm.com/872.html
-
-armel、armhf和arm64区别选择
 
 # 图像变换+
 

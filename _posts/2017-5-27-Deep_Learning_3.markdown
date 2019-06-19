@@ -264,6 +264,10 @@ https://buptldy.github.io/2016/10/01/2016-10-01-im2col/
 
 Implementing convolution as a matrix multiplication（中文blog）
 
+https://zhuanlan.zhihu.com/p/66958390
+
+通用矩阵乘（GEMM）优化与卷积计算
+
 ## CNN的反向传播算法
 
 由于卷积和池化两层，不是一般的神经网络结构。因此CNN的反向传播算法实际上也是很有技巧的。

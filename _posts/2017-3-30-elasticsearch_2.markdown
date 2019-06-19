@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Elasticsearch（二）, scrapy, Flume & Kafka, 数据结构 & 普通CS算法
+title:  Elasticsearch（二）, scrapy, Flume & Kafka
 category: AI 
 ---
 
@@ -312,90 +312,6 @@ https://mp.weixin.qq.com/s/2kU9QhLP-njpToPckyfK5A
 https://mp.weixin.qq.com/s/QJOfh5gJReQTimu-mAzexg
 
 以Kafka和RocketMQ为例，漫谈消息队列
-
-# 数据结构 & 普通CS算法
-
-https://mp.weixin.qq.com/s/52JFdyaLwZq7nWiZq6z6qA
-
-二叉堆是什么鬼？
-
-https://mp.weixin.qq.com/s/4V1E2L14c3k-5i0c-JyTVQ
-
-如何在10亿数中找出前1000大的数
-
-https://mp.weixin.qq.com/s/yNn57Uw_-itzZXCSEAzrJw
-
-一起搞定面试中的二叉树（一）
-
-https://mp.weixin.qq.com/s/msv2NZ0aG96d3xQhX3HhNA
-
-一起搞定面试中的二叉树（二）
-
-https://mp.weixin.qq.com/s/xttZJVR0r5vssOJ19sBHGQ
-
-快速排序算法
-
-https://mp.weixin.qq.com/s/jQ6fEi_K2RSesJxZn_kujg
-
-外部排序
-
-https://mp.weixin.qq.com/s/QAAfjSeZtfd3PSN3wAP8RQ
-
-什么是外部排序？
-
-![](/images/img2/DS.png)
-
-![](/images/img2/sort.png)
-
-上面两个图的原始地址：
-
-http://bigocheatsheet.com/
-
-该网站还提供了其他关于算法复杂度的资料。
-
-http://blog.csdn.net/u013709270/article/details/53470428
-
-跳跃表的原理及实现
-
-https://mp.weixin.qq.com/s/t7Q0slX3q8Qlhg8F8pXrZQ
-
-如何找到字符串中的最长回文子串？
-
-https://www.cnblogs.com/tuding/p/7335853.html
-
-双调排序Bitonic Sort，适合并行计算的排序算法
-
-https://mp.weixin.qq.com/s/fP36LYFjAqqfP3rbYxAJlA
-
-优秀的排序算法如何成就了伟大的机器学习技术
-
-![](/images/img2/sort.gif)
-
-https://mp.weixin.qq.com/s/FAp10hI05qLLZi5BypondA
-
-除了冒泡排序，你知道Python内建的排序算法吗？
-
-这篇blog其实和Python关系不大，它主要讲述了Timsort排序算法。
-
->Tim Peters，美国软件工程师。他于2002年在python上实现了Timsort排序算法。该算法后来被诸如Java、Android、GNU Octave等所采用。
-
-早期最好的排序算法是QuickSort，比如C语言库自带的qsort函数，就使用的是该算法。然而它对于倒序数组这种最坏情况的复杂度居然是$$O(n^2)$$。
-
-https://mp.weixin.qq.com/s/d9yNsUVFg9UZN62xuOdxow
-
-为什么MySQL数据库要用B+树存储索引？
-
-https://mp.weixin.qq.com/s/-_DqyBIG3aSDWIYtkD7xuA
-
-看动画轻松理解“递归“与“动态规划”
-
-https://mp.weixin.qq.com/s/ra9v1pgFsbOcJrtONoZNvQ
-
-图论基础与图存储结构
-
-https://mp.weixin.qq.com/s/M8U9B7UA2AdfnJi5EpTv-g
-
-算法面试中经常问的“字符串”问题
 
 # ML参考资源+
 

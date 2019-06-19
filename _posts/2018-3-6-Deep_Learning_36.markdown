@@ -98,6 +98,10 @@ https://mp.weixin.qq.com/s/_YP6zpsgMLgAZemW3PRj3w
 
 基于深度学习的序列推荐系统：概念，算法与评估
 
+https://mp.weixin.qq.com/s/X-1zyTPKlCSKupkhzVG_AQ
+
+Airbnb实时个性化推荐之Embedding真的好用吗？
+
 # 人脸检测/识别
 
 ## 人脸识别

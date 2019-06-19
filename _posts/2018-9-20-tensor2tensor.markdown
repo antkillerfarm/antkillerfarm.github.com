@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Tensor2Tensor, NN中间语言, MXNet, 移动端推理框架
+title:  Tensor2Tensor, NN中间语言, MXNet
 category: AI 
 ---
 
@@ -303,55 +303,3 @@ https://mp.weixin.qq.com/s/hRH7hVsaQBqf0vhD_BqBgg
 https://zhuanlan.zhihu.com/p/42345854
 
 如何基于gluon训练一个强有力的Reid Baseline
-
-# 移动端推理框架
-
-最知名的移动端推理框架毫无疑问是Google的Tensorflow Lite和Android NN。这两个框架在本blog的Tensorflow章节已有描述。
-
-TensorRT在Nvidia章节亦有描述。
-
-## SNPE
-
-Snapdragon Neural Processing Engine SDK是Qualcomm推出的NN加速包。
-
-官网：
-
-https://developer.qualcomm.com/software/qualcomm-neural-processing-sdk
-
-## NCNN
-
-NCNN是腾讯的作品。
-
-代码：
-
-https://github.com/Tencent/ncnn
-
-## MACE
-
-MACE是小米的作品。
-
-代码：
-
-https://github.com/XiaoMi/mace
-
-## Paddle-Mobile
-
-Paddle-Mobile是百度的作品。
-
-代码：
-
-https://github.com/PaddlePaddle/paddle-mobile
-
-## MNN
-
-MNN是阿里的作品。
-
-代码：
-
-https://github.com/alibaba/MNN
-
-参考：
-
-https://mp.weixin.qq.com/s/yDvTDTk8VtGZjA3RK4dLMQ
-
-阿里巴巴开源轻量级深度神经网络推理引擎MNN

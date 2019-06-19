@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  makefile, Autotools, premake, Bazel, Spring, Dubbo
+title:  makefile, Autotools, premake, Bazel, Spring
 category: technology 
 ---
 
@@ -283,23 +283,3 @@ Spring Boot默认的配置文件
 https://spring.io/guides/gs/producing-web-service/
 
 http://localhost:9999/ws/countries.wsdl
-
-# Dubbo
-
-Dubbo是一个分布式服务框架，致力于提供高性能和透明化的RPC远程服务调用方案，是阿里巴巴SOA服务化治理方案的核心框架，每天为2,000+个服务提供3,000,000,000+次访问量支持，并被广泛应用于阿里巴巴集团的各成员站点。
-
->阿里巴巴算是国内开源较多的IT企业了。但是早期仅仅满足于开源本身，对于开源项目的维护没有章法。Dubbo就是典型一例，开源之后的数年，没有任何官方升级和维护。社区由于官方的缺位，也没有大的动静。直到2016年，才纳入正轨。
-
-官网：
-
-http://dubbo.io/
-
-官网的用户指南写的不错，非常值得一看。
-
-https://mp.weixin.qq.com/s/bcwIMIir2RHPbQQr8HgTOQ
-
-如何快速开发一个Dubbo应用？
-
-https://mp.weixin.qq.com/s/fnrGjiywiySA8iAZh_cF0Q
-
-阿里巴巴新开源项目Nacos发布第一个版本，助力构建Dubbo生态
