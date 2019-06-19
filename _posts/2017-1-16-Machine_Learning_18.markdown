@@ -231,6 +231,10 @@ https://mp.weixin.qq.com/s/bf_CHcoZMjqP6Is4ebD58g
 
 使用Prophet预测股价并进行多策略交易
 
+https://mp.weixin.qq.com/s/pJTDJrMCfv5y4LQ2itt1tQ
+
+Facebook的 Prophet 算法简介与使用
+
 ## Lebesgue积分
 
 ![](/images/img3/Riemann_Lebesgue.jpg)

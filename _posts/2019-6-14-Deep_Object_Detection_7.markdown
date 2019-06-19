@@ -68,7 +68,7 @@ https://mp.weixin.qq.com/s/S6sz5dPgGNcJvrIAZ3ZjGg
 
 基于深度学习的通用物体检测算法对比探索
 
-https://mp.weixin.qq.com/s/wR5jUHBJHWFm8UTsobKDqw
+https://zhuanlan.zhihu.com/p/59915784
 
 目标检测中的Consistent Optimization
 
@@ -120,7 +120,7 @@ https://zhuanlan.zhihu.com/p/55972055
 
 SimpleDet:一套简单通用的目标检测与物体识别框架
 
-https://mp.weixin.qq.com/s/Sl958JkcJjy-HW9_c-SH4g
+https://zhuanlan.zhihu.com/p/55854246
 
 Guided Anchoring: 物体检测器也能自己学Anchor
 
@@ -303,3 +303,7 @@ https://mp.weixin.qq.com/s/cEg6HmS651riJVAtHdPafg
 https://mp.weixin.qq.com/s/A51X1e9E9T9pPbYdQVQtSg
 
 你是个成熟的C位检测器了，应该可以自动找C位了
+
+https://blog.csdn.net/u014380165/article/details/80602027
+
+Cascade RCNN算法笔记

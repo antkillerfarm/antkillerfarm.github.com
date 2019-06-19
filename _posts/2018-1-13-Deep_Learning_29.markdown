@@ -134,6 +134,62 @@ https://mp.weixin.qq.com/s/eA9a3478oxHd3zsepNVTpQ
 
 图数据表示学习综述论文
 
+https://mp.weixin.qq.com/s/VEAnkznZUyZ1RCJulSnwGg
+
+基于图结构网络的表征学习
+
+https://mp.weixin.qq.com/s/LrGWJIdPdUNZ3jyC8tdE6w
+
+Graph Neural Network（GNN）综述
+
+https://mp.weixin.qq.com/s/bMpugd2Lp35VPr8fQAPzsg
+
+一文概览图卷积网络基本结构和最新进展
+
+https://mp.weixin.qq.com/s/w5ldyp00CqkX8Kp-8Aw0nQ
+
+图深度学习(GraphDL)，下一个人工智能算法热点？一文了解最新GDL相关文章
+
+https://mp.weixin.qq.com/s/Jt6CjMqNFEXWoL5pkLeVyw
+
+洛桑理工：Graph上的深度学习报告
+
+https://mp.weixin.qq.com/s/TGuEvNXw_9S5-9a3KyDvvw
+
+基于图卷积网络的图深度学习
+
+https://mp.weixin.qq.com/s/WW-URKk-fNct9sC4bJ22eg
+
+深度学习时代的图模型，清华发文综述图网络
+
+https://mp.weixin.qq.com/s/Rr6SC-se_0q8dfEz0oUwlA
+
+清华大学孙茂松课题组:《图神经网络: 方法与应用》综述论文
+
+https://mp.weixin.qq.com/s/kcXp-uWcmIsAVfa63mor4g
+
+图卷积网络介绍及进展
+
+https://mp.weixin.qq.com/s/eelcT5x_kWC0dDt0_Ph4qg
+
+清华朱文武组一文综述GraphDL五类模型
+
+https://mp.weixin.qq.com/s/0rs8Wur7Iv6jSpFz5C-KNg
+
+来自IEEE Fellow的GNN综述
+
+https://mp.weixin.qq.com/s/cdbHoR_E_mpIdcvmNGWfDA
+
+掌握图神经网络GNN基本，看这篇文章就够了
+
+https://mp.weixin.qq.com/s/Irs_fLrf4oybc3sAfpmEeA
+
+图嵌入（Graph embedding）综述
+
+https://mp.weixin.qq.com/s/s6E2vV1KrQDI4SeAnkYTKw
+
+图神经网络将成AI下一拐点！MIT斯坦福一文综述GNN到底有多强
+
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
 
 Bengio等人提出图注意网络架构GAT，可处理复杂结构图
@@ -150,10 +206,6 @@ https://mp.weixin.qq.com/s/Pm1HiEQOBnbo_GQ_v6Y_zw
 
 腾讯提出自适应图卷积神经网络，接受不同图结构和规模的数据
 
-https://mp.weixin.qq.com/s/bMpugd2Lp35VPr8fQAPzsg
-
-一文概览图卷积网络基本结构和最新进展
-
 https://zhuanlan.zhihu.com/p/31067515
 
 《Semi-Supervised Classification with Graph Convolutional Networks》阅读笔记
@@ -161,14 +213,6 @@ https://zhuanlan.zhihu.com/p/31067515
 https://mp.weixin.qq.com/s/6viSk0Ts_7eTfYrWYi_HDQ
 
 基于图结构的实体和关系联合抽取模型简介
-
-https://mp.weixin.qq.com/s/w5ldyp00CqkX8Kp-8Aw0nQ
-
-图深度学习(GraphDL)，下一个人工智能算法热点？一文了解最新GDL相关文章
-
-https://mp.weixin.qq.com/s/Jt6CjMqNFEXWoL5pkLeVyw
-
-洛桑理工：Graph上的深度学习报告
 
 https://zhuanlan.zhihu.com/p/36117802
 
@@ -238,10 +282,6 @@ https://zhuanlan.zhihu.com/p/48834333
 
 GCN in 2018：2018年顶会论文中的图卷积神经网络的理论与应用
 
-https://mp.weixin.qq.com/s/TGuEvNXw_9S5-9a3KyDvvw
-
-基于图卷积网络的图深度学习
-
 https://mp.weixin.qq.com/s/zg3yW7e4UKIs9-m6WmcbvA
 
 GraphWave：一种全新的无监督网络嵌入方法
@@ -249,14 +289,6 @@ GraphWave：一种全新的无监督网络嵌入方法
 https://mp.weixin.qq.com/s/mamet6l_lA7fhoYkysZ7PQ
 
 华为联合LSE提出KONG：有序近邻图的核函数
-
-https://mp.weixin.qq.com/s/WW-URKk-fNct9sC4bJ22eg
-
-深度学习时代的图模型，清华发文综述图网络
-
-https://mp.weixin.qq.com/s/Rr6SC-se_0q8dfEz0oUwlA
-
-清华大学孙茂松课题组:《图神经网络: 方法与应用》综述论文
 
 https://mp.weixin.qq.com/s/OnRB44tliuTFcjlmuRG3Xw
 
@@ -269,18 +301,6 @@ https://mp.weixin.qq.com/s/bsNDI9YxFdaB2Q5aRz9ECw
 https://mp.weixin.qq.com/s/Uy2ekBiwkI2sIo637b-16g
 
 北大、微软提出NGra：高效大规模图神经网络计算
-
-https://mp.weixin.qq.com/s/kcXp-uWcmIsAVfa63mor4g
-
-图卷积网络介绍及进展
-
-https://mp.weixin.qq.com/s/eelcT5x_kWC0dDt0_Ph4qg
-
-清华朱文武组一文综述GraphDL五类模型
-
-https://mp.weixin.qq.com/s/0rs8Wur7Iv6jSpFz5C-KNg
-
-来自IEEE Fellow的GNN综述
 
 https://mp.weixin.qq.com/s/diIzbc0tpCW4xhbIQu8mCw
 
@@ -310,14 +330,6 @@ https://mp.weixin.qq.com/s/mTCrTPzyeogwRHfgitfK6Q
 
 为什么说图网络是AI的未来？
 
-https://mp.weixin.qq.com/s/cdbHoR_E_mpIdcvmNGWfDA
-
-掌握图神经网络GNN基本，看这篇文章就够了
-
-https://mp.weixin.qq.com/s/043sK8IDmdTYDpbCfPLIxw
-
-图神经网络综述：方法及应用
-
 https://mp.weixin.qq.com/s/c6ZhSk4r3pvnjHsvpwkkSw
 
 用图卷积网络(GCN)来做语义角色标注
@@ -338,10 +350,6 @@ https://mp.weixin.qq.com/s/sg9O761F0KHAmCPOfMW_kQ
 
 图卷积网络到底怎么做，这是一份极简的Numpy实现
 
-https://mp.weixin.qq.com/s/Irs_fLrf4oybc3sAfpmEeA
-
-图嵌入（Graph embedding）综述
-
 https://mp.weixin.qq.com/s/PkUJsnZdihPM7q9BpvO8Ag
 
 深度学习中不得不学的Graph Embedding方法
@@ -349,10 +357,6 @@ https://mp.weixin.qq.com/s/PkUJsnZdihPM7q9BpvO8Ag
 https://mp.weixin.qq.com/s/PxNGJ0hcmCo-2zvWD-rfug
 
 GCN作者Thomas Kipf 最新Talk：利用图神经网络进行无监督学习
-
-https://mp.weixin.qq.com/s/s6E2vV1KrQDI4SeAnkYTKw
-
-图神经网络将成AI下一拐点！MIT斯坦福一文综述GNN到底有多强
 
 https://mp.weixin.qq.com/s/6vhFfSh2mveBiZXB1oZb1Q
 
@@ -377,10 +381,6 @@ https://mp.weixin.qq.com/s/49vnVOO0G_JvKrWcsN2_Ww
 https://mp.weixin.qq.com/s/rvcj9-6KlBsVmF_CAsip2A
 
 超越标准GNN！DeepMind、谷歌提出图匹配网络
-
-https://mp.weixin.qq.com/s/LrGWJIdPdUNZ3jyC8tdE6w
-
-Graph Neural Network（GNN）综述
 
 https://mp.weixin.qq.com/s/t2kjxrcn6O9tbJ-IQELboQ
 

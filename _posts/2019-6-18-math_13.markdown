@@ -4,6 +4,34 @@ title:  数学狂想曲（十三）——张量分析
 category: math 
 ---
 
+# 泛函 & 变分（续）
+
+参考：
+
+https://zhuanlan.zhihu.com/yueaptx
+
+一个变分法方面的专栏
+
+https://blog.csdn.net/shenziheng1/article/details/54808173
+
+泛函与变分初步（Euler-lagrange条件）
+
+https://www.cnblogs.com/MagicXYoung/p/4906606.html
+
+泛函与变分基础
+
+https://blog.csdn.net/theonegis/article/details/86217916
+
+变分法入门介绍
+
+https://zhuanlan.zhihu.com/p/41573146
+
+变分法理解1——泛函简介
+
+https://zhuanlan.zhihu.com/p/41810184
+
+变分法理解2——基本方法
+
 # 张量分析
 
 在同构的意义下，第零阶张量（r = 0）为标量（Scalar），第一阶张量（r = 1）为向量（Vector），第二阶张量（r = 2）则成为矩阵（Matrix）。

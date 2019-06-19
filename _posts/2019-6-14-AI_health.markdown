@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  AI医疗, 可视化
+title:  AI医疗, 可视化, 5G
 category: resource 
 ---
 
@@ -301,3 +301,25 @@ Processing是一个在可视化领域用的比较多的sketchbook，类似于Log
 官网：
 
 https://processing.org
+
+# 5G
+
+https://mp.weixin.qq.com/s/oN-drJHFU34XanBzOKzrUQ
+
+有史以来最强的5G入门科普！
+
+https://mp.weixin.qq.com/s/IYT7_bcWG0hTX7yI1_C_Ig
+
+5G将是一个彻底的失败通信技术
+
+https://mp.weixin.qq.com/s/yIJT9D1YXa4rhf-RMBVPLw
+
+1G到5G之争：一部30年惊心动魄的移动通信史
+
+https://mp.weixin.qq.com/s/1un50xpUf0JGIG03M93gZQ
+
+解析5G背后的核心技术：波束成形
+
+https://mp.weixin.qq.com/s/uxuWmcplTmS8cJObd8cfVw
+
+第一次有人把5G核心网讲得如此通俗易懂！

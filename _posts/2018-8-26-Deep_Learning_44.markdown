@@ -328,7 +328,7 @@ https://mp.weixin.qq.com/s/CsEHuGz_fAq8eWpHRq7d6g
 
 性能超越何恺明Mask R-CNN！华科硕士生开源图像分割新方法
 
-https://mp.weixin.qq.com/s/xug0xKfc9RgJEUci1a_xog8
+https://zhuanlan.zhihu.com/p/57629509
 
 实例分割的进阶三级跳：从Mask R-CNN到Hybrid Task Cascade
 

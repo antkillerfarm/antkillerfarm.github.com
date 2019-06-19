@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/Mt40v0fy3_eq6tkz6a8ndQ
 
 英伟达推出首个跨摄像头汽车跟踪数据集
 
+https://mp.weixin.qq.com/s/7q8T6ZArobucty6Rlv3JRw
+
+神秘的Waymo一反常态，CVPR现场发布大型自动驾驶数据集
+
 ## 医疗
 
 https://mp.weixin.qq.com/s/849fLGndmaRvz_oWt6HWtg

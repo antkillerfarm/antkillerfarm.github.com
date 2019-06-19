@@ -127,7 +127,7 @@ Install TightVNC Server in RHEL/CentOS and Fedora to Access Remote Desktops
 
 # Blog维护日志
 
-2019.6.18 文章数达到300篇。可命名为v4.5。
+2019.6.19 文章数达到300篇。可命名为v4.5。
 
 2019.4.26 img2的图片太多，特添加img3。
 

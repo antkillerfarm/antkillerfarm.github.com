@@ -60,6 +60,24 @@ https://mp.weixin.qq.com/s/QSG9UEQu7hxwbqI_FgWhqA
 
 理科生不需要爱情：一道数学题，挽救为情自杀少年（费马定理）
 
+----
+
+当我在32岁成为哈佛大学终身教授的时候，终于有时间学习如何运算了——是如坐针毡地和一群年龄仅仅是我的一半多点的大学小鬼们一起上课。他们中的一些人还在上我执教的进化生物学。我将自尊搁置一边，来学习微积分。当在追赶中学习时，成绩拿C都费劲。----By Edward Osborne Wilson
+
+>Edward Osborne Wilson，1929年生，美国生物学家，以研究蚂蚁著称，被称为生物社会学之父。同时也是一名杰出的科普作家，两获Pulitzer Prize。
+
+----
+
+https://site.douban.com/204378/widget/forum/12552814/discussion/53108568/
+
+2010年以来烟花不堪剪（李吟）关于数学的文章和言论汇集
+
+----
+
+https://mp.weixin.qq.com/s/rwKi8bKeGKiJg5WcZwRhlA
+
+听说这家粉笔厂倒闭，世界顶级数学家们开始疯狂囤货
+
 # 最速降线
 
 约翰·伯努利在1696年提出最速降线的问题（problem of brachistochrone），向全欧洲数学家征求解答。这个问题最早由伽利略在1630年提出：**“一个质点在只受重力的作用下，从一个给定点A到不在它垂直下方的另一点B，问沿着什么曲线下滑（忽略摩擦力）所需时间最短？”**
@@ -165,29 +183,3 @@ $$F_y-\frac{d}{dx}F'_y=0$$
 《变分法基础》，老大中著。
 
 >老大中，北京理工大学宇航学院发射与推进工程系副教授。
-
-参考：
-
-https://zhuanlan.zhihu.com/yueaptx
-
-一个变分法方面的专栏
-
-https://blog.csdn.net/shenziheng1/article/details/54808173
-
-泛函与变分初步（Euler-lagrange条件）
-
-https://www.cnblogs.com/MagicXYoung/p/4906606.html
-
-泛函与变分基础
-
-https://blog.csdn.net/theonegis/article/details/86217916
-
-变分法入门介绍
-
-https://zhuanlan.zhihu.com/p/41573146
-
-变分法理解1——泛函简介
-
-https://zhuanlan.zhihu.com/p/41810184
-
-变分法理解2——基本方法

@@ -267,3 +267,7 @@ https://zhuanlan.zhihu.com/p/63273342
 https://zhuanlan.zhihu.com/p/68291859
 
 聊聊Anchor的"前世今生"（下）
+
+https://zhuanlan.zhihu.com/p/62372897
+
+物体检测的轮回：anchor-based与anchor-free

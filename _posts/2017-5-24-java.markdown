@@ -260,6 +260,10 @@ https://mp.weixin.qq.com/s/WJcLbYwH3-cTRHkMYNjJZA
 
 Steam高赞游戏入门机器学习！不写代码，人人可玩，又能吸猫，汉化版已推出
 
+https://mp.weixin.qq.com/s/gRumlJI8iUj_0HART2WD8Q
+
+不用写代码，谷歌教你如何用2个小时做出只属于你的游戏（Area 120 Game Builder）
+
 # Javascript（续）
 
 ### Step3:延迟动画

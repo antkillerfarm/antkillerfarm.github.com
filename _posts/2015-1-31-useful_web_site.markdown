@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  有用的网址集合（一）
+title:  有用的网址集合
 category: resource 
 ---
 
@@ -374,6 +374,10 @@ https://mp.weixin.qq.com/s/3a5k3YA6ALri3BrQWQbOpw
 
 浅谈Cgroups
 
+https://mp.weixin.qq.com/s/8Rr-hxKQyHpT7L-Zx7PkcA
+
+浅谈Cgroups V2
+
 https://mp.weixin.qq.com/s/_7q9K9D1q40eaGkLt9yDhQ
 
 分布式系统关注点——深入浅出“异步”
@@ -410,28 +414,6 @@ http://phdcomics.com/
 
 一个关于博士学习生活的漫画网站
 
-## 5G
-
-https://mp.weixin.qq.com/s/oN-drJHFU34XanBzOKzrUQ
-
-有史以来最强的5G入门科普！
-
-https://mp.weixin.qq.com/s/IYT7_bcWG0hTX7yI1_C_Ig
-
-5G将是一个彻底的失败通信技术
-
-https://mp.weixin.qq.com/s/yIJT9D1YXa4rhf-RMBVPLw
-
-1G到5G之争：一部30年惊心动魄的移动通信史
-
-https://mp.weixin.qq.com/s/1un50xpUf0JGIG03M93gZQ
-
-解析5G背后的核心技术：波束成形
-
-https://mp.weixin.qq.com/s/uxuWmcplTmS8cJObd8cfVw
-
-第一次有人把5G核心网讲得如此通俗易懂！
-
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/
@@ -453,3 +435,7 @@ ftp://mirrors.ustc.edu.cn/gnu/
 GNOME
 
 http://ftp.gnome.org/pub/GNOME/sources/
+
+## 杂项
+
+向后兼容处理的是一个以较早版本编译的程序集是否可以在较新版本上执行的问题。向前兼容处理的是一个以较新版本编译的程序集是否可以在较老版本上执行的问题。

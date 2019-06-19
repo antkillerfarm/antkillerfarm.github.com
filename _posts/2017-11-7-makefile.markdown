@@ -190,9 +190,17 @@ blade是腾讯出品的构建工具。
 
 https://github.com/chen3feng/typhoon-blade
 
-blade的底层用到了SCons。后者是一个python语言写的构建工具，可用于多种编程语言程序的构建。官网：
+## SCons
+
+blade的底层用到了SCons。后者是一个python语言写的构建工具，可用于多种编程语言程序的构建。
+
+官网：
 
 http://www.scons.org/
+
+和make类似，可以用如下方式并行编译：
+
+`scons -j 4`
 
 参考：
 

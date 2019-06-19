@@ -258,6 +258,10 @@ https://github.com/ARM-software/CMSIS_5
 
 ## 其他
 
+https://www.veryarm.com/872.html
+
+armel、armhf和arm64区别选择
+
 # 图像变换+
 
 https://zhuanlan.zhihu.com/p/67692429

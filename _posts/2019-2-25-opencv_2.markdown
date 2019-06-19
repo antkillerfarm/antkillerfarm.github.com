@@ -315,3 +315,7 @@ OpenVINO车牌识别网络详解
 https://mp.weixin.qq.com/s/zSallonJVZWa7LoZbDxLRQ
 
 道路分割
+
+https://mp.weixin.qq.com/s/2FfSGcsRjESwUA3OunHsfQ
+
+英特尔开源了OpenVINO模型训练框架

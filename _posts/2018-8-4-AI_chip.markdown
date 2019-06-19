@@ -70,9 +70,49 @@ Imagination Technologies公司前身是一家名为Video Logic的公司，VideoL
 
 但在2017年4月，苹果宣布将不再使用其技术后，Imagination股价当天暴跌60%。后于2017年9月，被有中资背景的Canyon Bridge收购。
 
+其AI Chip主要是：PowerVR Series2NX NNA和PowerVR Series3NX NNA。
+
+Imagination目前主要的客户是：
+
+- 汽车电子：Renesas
+
+- 手机：MTK、紫光展锐
+
+除此之外，由于Imagination已经全国资化了，因此很多研究所也对它的产品很感兴趣。
+
+从方案来看，Imagination采用的是GPU+NPU的模式。
+
+这种模式的特点主要有：
+
+- NPU专注NN计算，其实主要是CNN计算。
+
+- GPU作为通用计算的兜底，以应付一些不常见的op。GPU支持各种数学计算，单纯从计算的角度是完全可以替代CPU的。GPU的局限主要在于它没有CPU那样的逻辑控制的能力。
+
+- GPU的主频一般低于CPU，因此如果算法的并行性很差的话，效果并没有CPU好。但这种情况并不多见。
+
+综上，GPU+NPU的模式可以将NN运算完美运行，而无须CPU承担。
+
+从商业的角度讲，Imagination的核心产品还是GPU，NPU只是一个添头而已。它的目的应该还是利用NPU，来多卖一些GPU。
+
 官网：
 
 https://www.imgtec.com/vision-ai/
+
+# Habana
+
+Habana Labs是一家位于以色列特拉维夫和加州圣何塞的无晶圆厂半导体公司，创立于2016年。
+
+Habana的产品线主要有：
+
+- 用于Train的Gaudi系列芯片。
+
+- 用于Inference的Goya系列芯片。这是一个基于PCI接口的板卡，所以还是数据中心的范畴，暂不能用于终端设备。
+
+据说国内的数据中心相关的企业，对它的产品很感兴趣。
+
+官网：
+
+https://habana.ai
 
 ## TPU
 
@@ -228,85 +268,3 @@ https://mp.weixin.qq.com/s/IaCWZXQI8mYLJQXwDoNQcQ
 https://mp.weixin.qq.com/s/KjQ5BTGd92Y0Mqzk1A5JYg
 
 老兵戴辉讲述海思视频监控芯片从0到1的血泪史！如何一步步成为行业霸主的
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/58971347
-
-深度学习的芯片加速器
-
-https://cloud.tencent.com/community/article/244743
-
-深度学习的异构加速技术（一）：AI需要一个多大的“心脏”？
-
-https://cloud.tencent.com/community/article/581797
-
-深度学习的异构加速技术（二）：螺狮壳里做道场
-
-https://cloud.tencent.com/community/article/446425
-
-深度学习的异构加速技术（三）：互联网巨头们“心水”这些AI计算平台
-
-https://zhuanlan.zhihu.com/p/25382177
-
-AI芯片怎么降功耗？
-
-https://mp.weixin.qq.com/s/8HIZRhb-KJOtPnQtQ3GQVg
-
-第一代芯片是CPU，第二代是GPU，第三代是什么？
-
-https://mp.weixin.qq.com/s/qkpbKN62YV2f0W5HLnr7Dg
-
-GPU是如何工作的？与CPU、DSP有什么区别？
-
-https://mp.weixin.qq.com/s/Jof-u8oUuLR4v7t3jjXEmA
-
-GPU和线下训练
-
-https://mp.weixin.qq.com/s/2aE5fzGZeyX-oFyWbcbA5A
-
-揭开神经网络加速器的神秘面纱之DianNao
-
-https://mp.weixin.qq.com/s/VAFb0DAZAUyDnjE6SlNcXw
-
-如何对比评价各种深度神经网络硬件？不妨给它们跑个分
-
-https://mp.weixin.qq.com/s/zTO4UZ3zDLZL0GOjv0YqrQ
-
-GPU加速深度学习
-
-https://mp.weixin.qq.com/s/7vxJTh4IHeqUsc7IsLFLSA
-
-解密哈萨比斯投资的IPU，他们要分英伟达一杯羹
-
-https://zhuanlan.zhihu.com/p/26594188
-
-浅析Yann LeCun提到的两款Dataflow Chip
-
-https://zhuanlan.zhihu.com/p/25728988
-
-AI芯片的几种选择，你更看好哪个？
-
-https://zhuanlan.zhihu.com/p/25510056
-
-ISSCC 2017看AI芯片的四大趋势
-
-https://zhuanlan.zhihu.com/p/26404565
-
-AI芯片四大流派论剑，中国能否弯道超车？
-
-https://zhuanlan.zhihu.com/p/27472524
-
-从AI芯片说起，一起来看芯片门类
-
-https://mp.weixin.qq.com/s/Cy_vb0PpcvGTDmlMt1VkSw
-
-从GPU、TPU到FPGA及其它：一文读懂神经网络硬件平台战局
-
-https://mp.weixin.qq.com/s/RKRDBiBzG5u2P2eaqNAFbg
-
-机器学习的处理器列表
-
-https://mp.weixin.qq.com/s/bL1PoUjZ_sH2VKcBxI6N5A
-
-Wave公司发布数据流处理架构DPU

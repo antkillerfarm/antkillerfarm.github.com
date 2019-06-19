@@ -306,10 +306,6 @@ https://mp.weixin.qq.com/s/ChZ-cNTSb7Pm_ka9gunm9A
 
 73岁硬核老爷爷，用物理自证车祸无责，葛军：看来又有新题材了
 
-https://site.douban.com/204378/widget/forum/12552814/discussion/53108568/
-
-2010年以来烟花不堪剪关于数学的文章和言论汇集
-
 https://mp.weixin.qq.com/s/oybz1DsC8lO5fmgA-3gEfQ
 
 指纹识别不灵敏怎么办？

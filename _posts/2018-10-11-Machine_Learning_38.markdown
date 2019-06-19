@@ -276,6 +276,10 @@ https://mp.weixin.qq.com/s/XSovbUDVTKe59DDaC1Kl8Q
 
 如何进行特征表达，你知道吗？
 
+https://mp.weixin.qq.com/s/vhr5gXoa0S4-QqFcK7uz-w
+
+模型吞噬特征工程
+
 # 数据清洗
 
 https://mp.weixin.qq.com/s/YrCC8CmP6UKuCmSdF2K_3g
