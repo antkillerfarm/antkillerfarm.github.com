@@ -4,6 +4,20 @@ title:  深度学习（三十）——自动求导, 元学习, 深度哈希
 category: DL 
 ---
 
+# Graph NN（续）
+
+https://mp.weixin.qq.com/s/Lakq83_ngUJf1ES3N7J9_g
+
+图卷积在基于骨架的动作识别中的应用
+
+https://mp.weixin.qq.com/s/5wSgC4pXBfRLoCX-73DLnw
+
+什么是图卷积网络？行为识别领域新星
+
+https://mp.weixin.qq.com/s/1-Dmckby2NcXsaoK08zk8w
+
+视频理解中的图表示学习
+
 # 自动求导
 
 DL发展到现在，其基本运算单元早就不止CNN、RNN之类的简单模块了。针对新运算层出不穷的现状，各大DL框架基本都实现了自动求导的功能。

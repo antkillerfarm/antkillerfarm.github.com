@@ -342,6 +342,10 @@ https://mp.weixin.qq.com/s/LngE10Hnqe9bgFzpNfUwLQ
 
 NLP中的词向量对比：word2vec/glove/fastText/elmo/GPT/bert
 
+https://mp.weixin.qq.com/s/MgLLPEY3ynJGkuTgnIXndQ
+
+站在BERT肩膀上的NLP新秀们（PART I）
+
 https://mp.weixin.qq.com/s/RjeuHXa8O3MzSpTOuOHMkQ
 
 站在BERT肩膀上的NLP新秀们：XLMs、MASS和UNILM

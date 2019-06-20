@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十四）——Normalization进阶, 图像检索
+title:  深度学习（十四）——Normalization进阶, Regularization, 图像检索
 category: DL 
 ---
 
@@ -229,6 +229,16 @@ https://mp.weixin.qq.com/s/44RvXEYYc5lebsHs_ooswg
 https://mp.weixin.qq.com/s/KYGqSOftm8FWDXk_C13iCQ
 
 Conditional Batch Normalization详解
+
+# Regularization
+
+DL中的Regularization除了常见的$$l_1$$-norm、$$l_2$$-norm和squared $$l_2$$-norm之外，还有Group Regularization。它的定义如下：
+
+$$loss(W;x;y) = loss_D(W;x;y) + \lambda_R R(W) + \lambda_g \sum_{l=1}^{L} R_g(W_l^{(G)})$$
+
+$$R_g(w^{(g)}) = \sum_{g=1}^{G} \lVert w^{(g)} \rVert_g = \sum_{g=1}^{G} \sum_{i=1}^{|w^{(g)}|} {(w_i^{(g)})}^2$$
+
+Group Regularization也叫做Block Regularization或Structured Regularization。
 
 # 图像检索
 

@@ -397,11 +397,3 @@ https://mp.weixin.qq.com/s/fxVsN2dDmayxJfxBRIXHhQ
 https://mp.weixin.qq.com/s/SWcJut6QqOvbziirxTd2Kg
 
 斯坦福教授ICLR演讲：图网络最新进展GraphRNN和GCPN
-
-https://mp.weixin.qq.com/s/Lakq83_ngUJf1ES3N7J9_g
-
-图卷积在基于骨架的动作识别中的应用
-
-https://mp.weixin.qq.com/s/5wSgC4pXBfRLoCX-73DLnw
-
-什么是图卷积网络？行为识别领域新星

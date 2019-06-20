@@ -84,6 +84,10 @@ Anomaly Detection
 
 参考：
 
+https://github.com/yzhao062/anomaly-detection-resources
+
+异常检测参考资源
+
 http://chuansong.me/n/377440751130
 
 异常点检测算法（一）
@@ -147,6 +151,10 @@ https://mp.weixin.qq.com/s/CuFbmcoXf4oG2YcDOgO3qw
 https://mp.weixin.qq.com/s/w7SbAHxZsmHqFtTG8ZAXNg
 
 异常检测的N种方法，阿里工程师都盘出来了
+
+https://www.zhihu.com/question/324999831
+
+异常检测（anomaly/ outlier detection）领域还有那些值得研究的问题？
 
 # AutoML
 

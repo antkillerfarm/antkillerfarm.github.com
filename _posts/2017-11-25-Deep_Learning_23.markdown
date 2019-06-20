@@ -222,6 +222,10 @@ https://mp.weixin.qq.com/s/Td510LMs3UWV_8d5kDgFYw
 
 浙大CAD实验室：快速鲁棒的多视角多人三维姿态估计新方法
 
+https://mp.weixin.qq.com/s/Ds5IgmSNuokXDjGXiFhlXQ
+
+条件运动传播：从运动中学习物体性质
+
 # LSTM进阶
 
 ## 《Long short-term memory》
