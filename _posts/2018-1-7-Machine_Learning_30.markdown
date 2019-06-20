@@ -62,6 +62,10 @@ https://mp.weixin.qq.com/s/O0oAzJ-Hk9pQkojgdgT4qg
 
 隐马尔可夫模型
 
+https://mp.weixin.qq.com/s/RcMtaBdB2zsmZlVfiM11xA
+
+用于语音识别、分词的隐马尔科夫模型HMM
+
 ## Viterbi算法
 
 Viterbi算法是求解最大似然状态路径的常用算法，被广泛应用于通信（CDMA技术的理论基础之一）和NLP领域。

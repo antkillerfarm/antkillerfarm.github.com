@@ -90,7 +90,9 @@ Imagination目前主要的客户是：
 
 - GPU的主频一般低于CPU，因此如果算法的并行性很差的话，效果并没有CPU好。但这种情况并不多见。
 
-综上，GPU+NPU的模式可以将NN运算完美运行，而无须CPU承担。
+- 最近高通和华为CPU的超大核设计，应该对于提升串行运算性能很有帮助。毕竟CPU核再多，还能有GPU/NPU的核多吗？
+
+综上，GPU+NPU的模式可以将NN运算基本承接过来，而无须CPU承担。
 
 从商业的角度讲，Imagination的核心产品还是GPU，NPU只是一个添头而已。它的目的应该还是利用NPU，来多卖一些GPU。
 
@@ -113,6 +115,16 @@ Habana的产品线主要有：
 官网：
 
 https://habana.ai
+
+## Qualcomm
+
+SnapDragon = Kryo CPU + Adreno GPU + Hexagon DSP(include Hexagon Tensor Accelerator, HTA & Hexagon Vector eXtensions, HVX)
+
+参考：
+
+https://zhuanlan.zhihu.com/p/51727365
+
+骁龙855细节曝光：引入张量加速器最亮眼
 
 ## TPU
 
@@ -252,19 +264,3 @@ https://mp.weixin.qq.com/s/-FwuhibwwG6CFUcZXNBTFA
 https://zhuanlan.zhihu.com/p/28325678
 
 零基础看懂全球AI芯片：详解“xPU”
-
-https://mp.weixin.qq.com/s/Zng0NTR9P78lnR_vniiM8g
-
-Chris Rowen: 分析全球334家真正的深度学习创业公司，盘点25家AI芯片创业公司
-
-https://zhuanlan.zhihu.com/p/33462550
-
-传统IP Vendor的AI加速器一览
-
-https://mp.weixin.qq.com/s/IaCWZXQI8mYLJQXwDoNQcQ
-
-自动驾驶芯片：GPU的现在和ASIC的未来
-
-https://mp.weixin.qq.com/s/KjQ5BTGd92Y0Mqzk1A5JYg
-
-老兵戴辉讲述海思视频监控芯片从0到1的血泪史！如何一步步成为行业霸主的

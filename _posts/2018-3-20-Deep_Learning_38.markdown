@@ -314,6 +314,10 @@ https://mp.weixin.qq.com/s/dN1p7nuv6xtnIsSuY73CcA
 
 基于GNN，强于GNN：胶囊图神经网络的PyTorch实现
 
+https://mp.weixin.qq.com/s/lcJcaiMtYXGVOwa_sVsVfA
+
+Hinton老爷子CapsNet再升级，结合无监督，接近当前最佳效果
+
 # 细粒度分类
 
 https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw

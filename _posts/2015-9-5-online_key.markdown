@@ -225,6 +225,24 @@ https://linux.die.net/abs-guide/here-docs.html
 
 Here Documents
 
+## 目录切换
+
+`cd -`：回到上一次所在的路径的命令。当需要在两个相隔较远的路径下，相互切换的时候，可以使用该命令。
+
+`pushd <dir1>`：将dir1添加到一个栈顶。栈中每个目录都有一个序号（栈顶为0）。使用`pushd +n`将第n个目录切换到栈顶。（栈顶即为当前目录，所以无论添加还是切换栈顶，都可以切换当前目录）
+
+`pushd -n`的含义刚好相反，它从栈底向栈顶方向计数。
+
+`popd`和`popd +n`用于从栈中删除目录。
+
+`dirs`用于查看栈中元素。
+
+参考：
+
+https://www.jianshu.com/p/53cccae3c443
+
+Linux中的pushd和popd
+
 ## 参考
 
 https://blog.csdn.net/iot_flower/article/details/69055590

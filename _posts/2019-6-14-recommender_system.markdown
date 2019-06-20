@@ -177,3 +177,7 @@ A/B Testing
 https://zhuanlan.zhihu.com/p/68509372
 
 Netflix推荐系统模型的快速线上评估方法——Interleaving
+
+https://mp.weixin.qq.com/s/gEET3mcI4VTLLg5ICQL2xQ
+
+如何通过A/B测试实现用户有效增长？

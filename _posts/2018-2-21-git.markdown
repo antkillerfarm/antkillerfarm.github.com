@@ -254,6 +254,22 @@ https://www.zhihu.com/question/25369412
 
 如何从GitHub上下载单个文件夹？
 
+## 缺点
+
+git对于大的二进制文件不太友好，对于文件/历史的部分导出也支持的不太好。所以对于大公司的项目来说，并不太好用。
+
+>目前的公司使用Perforce作为版本控制工具，和git相比这种老工具的功能实在是弱爆了。但是P4对于大文件支持的很好，所以还是不得不用。
+
+参考：
+
+http://www.ruanyifeng.com/blog/2016/07/google-monolithic-source-repository.html
+
+谷歌的代码管理
+
+https://www.zhihu.com/question/25491925/answer/175222330
+
+代码版本控制用SVN还是Git好？
+
 ## Git Server
 
 ### Bonobo Git Server

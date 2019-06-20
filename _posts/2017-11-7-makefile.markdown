@@ -238,6 +238,37 @@ WAF是一个python写的构建工具。
 
 https://waf.io
 
+## Jam
+
+Jam是Perforce推出的构建工具。
+
+官网：
+
+https://www.perforce.com/documentation/jam-documentation
+
+由于Perforce已经不再维护Jam项目，所以目前主要使用由FreeType维护的FT Jam。
+
+官网：
+
+https://www.freetype.org/jam/
+
+此外，还有Boost.Build（也就是原来的Boost.Jam）。
+
+官网：
+
+https://boostorg.github.io/build/
+
+其命令行工具之前叫bjam，现在叫b2。
+
+## boost编译
+
+{% highlight bash %}
+./bootstrap.sh
+./b2 install link=static cxxflags=-fPIC --with-test --prefix=</path/to/install>
+{% endhighlight %}
+
+boost的组件有很多，这里只编译了test组件。
+
 # Spring
 
 Spring是一个Java Web应用框架。官网：

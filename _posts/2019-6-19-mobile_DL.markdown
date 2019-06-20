@@ -18,6 +18,10 @@ Snapdragon Neural Processing Engine SDK是Qualcomm推出的NN加速包。
 
 https://developer.qualcomm.com/software/qualcomm-neural-processing-sdk
 
+和它配套的还有Qualcomm Math Library。
+
+https://developer.qualcomm.com/software/qualcomm-math-library
+
 ## NCNN
 
 NCNN是腾讯的作品。

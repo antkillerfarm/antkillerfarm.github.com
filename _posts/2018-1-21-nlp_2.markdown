@@ -371,3 +371,7 @@ Kafka不够好，智联招聘基于Pulsar打造企业级事件中心
 https://mp.weixin.qq.com/s/sWrUlwEe4CBPQklzFWNE3A
 
 选择Pulsar而不是Kafka的7大理由
+
+https://mp.weixin.qq.com/s/L84Ll2PlJLHhQYo134bcFQ
+
+如何基于Apache Pulsar和Spark进行批流一体的弹性数据处理？

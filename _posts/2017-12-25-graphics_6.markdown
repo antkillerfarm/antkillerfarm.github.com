@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/HyacYh2FcGPW4-8SOECCtA
 
 规划技术详解——Motion Planning with Autonomous Driving
 
+https://mp.weixin.qq.com/s/J2s84TkfHGTw985iXxW0dA
+
+基于兴趣区域投票的多任务车辆检测
+
 # Eigenface
 
 Eigenface是M. Turk和A. Pentland于1991年提出的人脸识别算法。

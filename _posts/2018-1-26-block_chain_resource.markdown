@@ -252,6 +252,10 @@ https://mp.weixin.qq.com/s/TaHiX6uZiGt-K4Na1r7kcA
 
 社科院商法研究室赵磊：证券交易信用机制，从CSD到DLT
 
+https://mp.weixin.qq.com/s/V4PUZF7JkV9N_EkSCtql2w
+
+Facebook发币，AI大牛签署白皮书，Keras之父评价：没用
+
 # 传感器
 
 这里主要讨论自动驾驶方面的传感器，但也包括了一些非自动驾驶类的传感器知识。

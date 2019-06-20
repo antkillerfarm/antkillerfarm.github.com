@@ -22,6 +22,10 @@ https://zhuanlan.zhihu.com/p/31977759
 
 CS224n自然语言处理与深度学习笔记汇总
 
+web.stanford.edu/class/cs224u/
+
+CS224U: Natural Language Understanding
+
 http://demo.clab.cs.cmu.edu/NLP/
 
 CMU的NLP教程。该网页下方还有美国其他高校的NLP课程的链接。

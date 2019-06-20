@@ -319,3 +319,7 @@ https://mp.weixin.qq.com/s/zSallonJVZWa7LoZbDxLRQ
 https://mp.weixin.qq.com/s/2FfSGcsRjESwUA3OunHsfQ
 
 英特尔开源了OpenVINO模型训练框架
+
+https://mp.weixin.qq.com/s/R3sSM3tel7VMRxeZ_tzxug
+
+OpenVINO场景文字检测与识别

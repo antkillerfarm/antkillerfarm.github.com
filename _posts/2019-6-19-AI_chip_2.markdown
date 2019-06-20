@@ -6,6 +6,26 @@ category: AI
 
 # AI Chip
 
+## 行业信息（续）
+
+https://mp.weixin.qq.com/s/Zng0NTR9P78lnR_vniiM8g
+
+Chris Rowen: 分析全球334家真正的深度学习创业公司，盘点25家AI芯片创业公司
+
+https://zhuanlan.zhihu.com/p/33462550
+
+传统IP Vendor的AI加速器一览
+
+https://mp.weixin.qq.com/s/IaCWZXQI8mYLJQXwDoNQcQ
+
+自动驾驶芯片：GPU的现在和ASIC的未来
+
+https://mp.weixin.qq.com/s/KjQ5BTGd92Y0Mqzk1A5JYg
+
+老兵戴辉讲述海思视频监控芯片从0到1的血泪史！如何一步步成为行业霸主的
+
+## 参考
+
 https://zhuanlan.zhihu.com/p/58971347
 
 深度学习的芯片加速器
