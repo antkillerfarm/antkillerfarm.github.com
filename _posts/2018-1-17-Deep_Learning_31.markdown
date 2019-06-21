@@ -322,6 +322,10 @@ https://mp.weixin.qq.com/s/9XiAJzC2_vmZturE9ELVLA
 
 多级语言与视觉集成用于文本-剪辑检索
 
+https://mp.weixin.qq.com/s/V4Tc0ZGwcD_J_WRTOkFkOg
+
+给GAN一句描述，它就能按要求画画，微软CVPR新研究
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

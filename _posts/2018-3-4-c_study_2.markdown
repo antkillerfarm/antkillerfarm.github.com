@@ -16,14 +16,15 @@ category: language
 
 只好拿华丽的分隔符来表示引用的内容。
 
-****
+----
+
 误区一:gcc只能编译c代码,g++只能编译c++代码
 
 两者都可以，但是请注意：
 
 1.后缀为.c的，gcc把它当作是C程序，而g++当作是c++程序；后缀为.cpp的，两者都会认为是c++程序，注意，虽然c++是c的超集，但是两者对语法的要求是有区别的。C++的语法规则更加严谨一些。
 
-2.编译阶段，g++会调用gcc，对于c++代码，两者是等价的，但是因为gcc命令不能自动和C＋＋程序使用的库联接，所以通常用g++来完成链接，为了统一起见，干脆编译/链接统统用g++了，这就给人一种错觉，好像cpp程序只能用g++似的。
+2.编译阶段，g++会调用gcc，对于c++代码，两者是等价的，但是因为gcc命令不能自动和C++程序使用的库联接，所以通常用g++来完成链接，为了统一起见，干脆编译/链接统统用g++了，这就给人一种错觉，好像cpp程序只能用g++似的。
  
 误区二:gcc不会定义__cplusplus宏，而g++会
 
@@ -33,7 +34,7 @@ category: language
 
 原因基本同第一条。此外，g++基本等同gcc -lstdc++。
 
-****
+----
 
 因此，某些时候编不过去，可以试试换换cc的值。
 
@@ -92,6 +93,20 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/linu
 https://stackoverflow.com/questions/27475977/c-undefined-reference-to-sqrt-even-with-lm
 
 C - undefined reference to “sqrt” even with '-lm'
+
+## 左值和右值
+
+**左值**是可以放在赋值号左边可以被赋值的值；左值必须要在内存中有实体；
+
+**右值**当在赋值号右边取出值赋给其他变量的值；右值可以在内存也可以在CPU寄存器。
+
+一个对象被用作右值时，使用的是它的内容(值)，被当作左值时，使用的是它的地址。
+
+左值语法：`type &引用名 = 左值表达式;`
+
+右值语法：`type &&引用名 = 右值表达式;`
+
+
 
 ## 参考
 
@@ -298,40 +313,25 @@ def handler(signum, frame):
 signal.signal(signal.SIGALRM, handler)
 {% endhighlight %}
 
-## Captcha
+## JPype
 
-Captcha是一个Python验证码库，能够生成音频和图片验证码。
+JPype是一个能够让python代码方便地调用Java代码的工具。官网：
 
->CAPTCHA是Completely Automated Public Turing Test to Tell Computers and Humans Apart (全自动区分计算机和人类的图灵测试)的简称. CAPTCHA的目的是区分计算机和人类的一种程序算法，是一种区分用户是计算机和人的计算程序，这种程序必须能生成并评价人类能很容易通过但计算机却通不过的测试。
-
-代码：
-
-https://github.com/lepture/captcha
-
-这个库可用于生成大量有标签的验证码，是DL入门的必备工具。
+https://sourceforge.net/projects/jpype/
 
 参考：
 
-https://mp.weixin.qq.com/s/m4rNUFV4VGUBI7aWv5fgbw
+http://blog.csdn.net/niuyisheng/article/details/9002926
 
-中文项目：快速识别验证码，CNN也能为爬虫保驾护航
+JPype：实现在python中调用JAVA
 
-https://zhuanlan.zhihu.com/p/26078299
+http://www.cnblogs.com/yu-zhang/p/3817024.html
 
-使用深度学习来破解captcha验证码
+python调用java程序--jpype
 
-https://mp.weixin.qq.com/s/NsaMcgufLYO3i6eG1WO_VA
+## 文件名处理
 
-我不是机器人：谷歌最新版验证码系统ReCaptcha破解已开源
-
-其他类似项目还包括：
-
-| 语言 | 名称 | 网址 |
-|:--:|:--:|:--:|
-| Java | JCaptcha | http://jcaptcha.sourceforge.net/ |
-| Java | SimpleCaptcha | http://simplecaptcha.sourceforge.net/ |
-| Java | kcaptcha | http://captcha.ru/en/kcaptcha/ |
-| Java | patchca | https://github.com/pusuo/patchca |
-| Java | SkewPassImage | http://skewpassim.sourceforge.net/ |
-| Java | Internet Captcha | http://www.icaptcha.com/ |
-| Java | Cage | http://akiraly.github.io/cage/ |
+{% highlight python %}
+(filepath,tempfilename) = os.path.split(filename)
+(shotname,extension) = os.path.splitext(tempfilename)
+{% endhighlight %}

@@ -249,3 +249,7 @@ https://mp.weixin.qq.com/s/s8sKoTzqyf-_-N0TSLnPow
 https://mp.weixin.qq.com/s/TM5poGwSGi5C9szO13GYxg
 
 一文解读NLP中的注意力机制
+
+https://zhuanlan.zhihu.com/p/59698165
+
+NLP中的Attention机制

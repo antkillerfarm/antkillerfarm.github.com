@@ -46,10 +46,6 @@ https://mp.weixin.qq.com/s/x5rTpvvCfABWWkjpgnJ5BA
 
 谷歌大脑提出Adversarial Spheres：从简单流形探讨对抗性样本的来源
 
-https://mp.weixin.qq.com/s/xCzS7sYMFmk5K4ClB1I2YQ
-
-Uber提出SBNet：利用激活的稀疏性加速卷积网络
-
 https://mp.weixin.qq.com/s/D9bRjYVJOMT0Jkh59XZ-Rg
 
 DeepMind于Nature子刊发文提出非对称博弈的降维方法

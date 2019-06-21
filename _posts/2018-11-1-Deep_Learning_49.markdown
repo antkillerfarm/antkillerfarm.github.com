@@ -154,6 +154,14 @@ https://mp.weixin.qq.com/s/UkqwPBYgYQuIB9_jGMt2QQ
 
 Rocket Training: 一种提升轻量网络性能的训练方法
 
+https://mp.weixin.qq.com/s/xCzS7sYMFmk5K4ClB1I2YQ
+
+Uber提出SBNet：利用激活的稀疏性加速卷积网络
+
+https://mp.weixin.qq.com/s/6Wj0Y4y30BVA75WrU4oZbQ
+
+SBNet: 提高自动驾驶系统的感知效率
+
 # 知识蒸馏
 
 知识蒸馏是另一大类的模型压缩方法。

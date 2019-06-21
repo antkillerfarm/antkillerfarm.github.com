@@ -6,6 +6,44 @@ category: language
 
 # Python
 
+## Captcha
+
+Captcha是一个Python验证码库，能够生成音频和图片验证码。
+
+>CAPTCHA是Completely Automated Public Turing Test to Tell Computers and Humans Apart (全自动区分计算机和人类的图灵测试)的简称. CAPTCHA的目的是区分计算机和人类的一种程序算法，是一种区分用户是计算机和人的计算程序，这种程序必须能生成并评价人类能很容易通过但计算机却通不过的测试。
+
+代码：
+
+https://github.com/lepture/captcha
+
+这个库可用于生成大量有标签的验证码，是DL入门的必备工具。
+
+参考：
+
+https://mp.weixin.qq.com/s/m4rNUFV4VGUBI7aWv5fgbw
+
+中文项目：快速识别验证码，CNN也能为爬虫保驾护航
+
+https://zhuanlan.zhihu.com/p/26078299
+
+使用深度学习来破解captcha验证码
+
+https://mp.weixin.qq.com/s/NsaMcgufLYO3i6eG1WO_VA
+
+我不是机器人：谷歌最新版验证码系统ReCaptcha破解已开源
+
+其他类似项目还包括：
+
+| 语言 | 名称 | 网址 |
+|:--:|:--:|:--:|
+| Java | JCaptcha | http://jcaptcha.sourceforge.net/ |
+| Java | SimpleCaptcha | http://simplecaptcha.sourceforge.net/ |
+| Java | kcaptcha | http://captcha.ru/en/kcaptcha/ |
+| Java | patchca | https://github.com/pusuo/patchca |
+| Java | SkewPassImage | http://skewpassim.sourceforge.net/ |
+| Java | Internet Captcha | http://www.icaptcha.com/ |
+| Java | Cage | http://akiraly.github.io/cage/ |
+
 ## tqdm
 
 tqdm是一个快速，可扩展的进度条。
@@ -29,29 +67,6 @@ for i in tqdm(range(9)):
 其实还有一个更简单的办法：
 
 `print("\r" + "xxx", end="")`：这样的话会先把console里面当前的行清除掉、再输出xxx。
-
-## JPype
-
-JPype是一个能够让python代码方便地调用Java代码的工具。官网：
-
-https://sourceforge.net/projects/jpype/
-
-参考：
-
-http://blog.csdn.net/niuyisheng/article/details/9002926
-
-JPype：实现在python中调用JAVA
-
-http://www.cnblogs.com/yu-zhang/p/3817024.html
-
-python调用java程序--jpype
-
-## 文件名处理
-
-{% highlight python %}
-(filepath,tempfilename) = os.path.split(filename)
-(shotname,extension) = os.path.splitext(tempfilename)
-{% endhighlight %}
 
 ## NetworkX
 
@@ -417,47 +432,3 @@ https://mp.weixin.qq.com/s/a3YTmQMfpnviHnidXrhYtg
 https://zhuanlan.zhihu.com/p/41293278
 
 把python翻译成C++
-
-https://mp.weixin.qq.com/s/KCiR6ZE1EpYVfySaCG097A
-
-上半年最常见的Python面试题
-
-https://mp.weixin.qq.com/s/0dw2LHsIKFv8B_JaIMoekg
-
-python 字符编码处理总结
-
-https://mp.weixin.qq.com/s/fTs_r7DLbLWoos4uRM3KYA
-
-10个Python常见面试题，这些弄不明白不要说学过Python！
-
-https://mp.weixin.qq.com/s/zIHJsyankFEf_ig4Xnb0Uw
-
-工具推荐！我是如何使用Python脚本分析CPU使用情况的？
-
-https://mp.weixin.qq.com/s/v-N5jUTVFBb-wV0a_RAg5A
-
-Python实现代码雨效果
-
-https://mp.weixin.qq.com/s/0wJRlGS2QXpEL2XaU_Ke-g
-
-Python实现烟花特效
-
-https://mp.weixin.qq.com/s/5YWAgp8LKi5q_NDrNUtyGQ
-
-在GitHub上收获6519颗Star的Python面试题资料
-
-https://mp.weixin.qq.com/s/toh59s2-UlqiZfkE5ThxZw
-
-谈一谈python中的魔法变量*args和**kwargs
-
-https://mp.weixin.qq.com/s/8y7IIQWxXx3bCD8cK8Z3XQ
-
-这17个骚操作你都Ok吗
-
-https://mp.weixin.qq.com/s/rE5OEFwwFxJNb_Omwmqvzw
-
-符合语言习惯的Python优雅编程技巧
-
-https://blog.csdn.net/longerzone/article/details/17889969
-
-Python下调用Linux的Shell命令
