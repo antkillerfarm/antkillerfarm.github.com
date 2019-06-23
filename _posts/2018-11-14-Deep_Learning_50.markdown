@@ -176,6 +176,10 @@ https://mp.weixin.qq.com/s/1y8jTqCcI7HkMA3qXtqdIg
 
 阿里首次将Transformer用于淘宝电商推荐！效果超越深度兴趣网络DIN和谷歌WDL
 
+https://mp.weixin.qq.com/s/E6E6tc2uDJofuNDJArB5RQ
+
+邵晨泽：非自回归机器翻译
+
 # Attention进阶
 
 https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA
@@ -333,49 +337,3 @@ HAN：基于双层注意力机制的异质图深度神经网络
 https://mp.weixin.qq.com/s/aixpv9t1PLPRWUP6PvZ0EQ
 
 用自注意力增强卷积：这是新老两代神经网络的对话
-
-# 雷达 & 信号处理+
-
-https://mp.weixin.qq.com/s/cnSiJb7j2OvVCiWh9VbKJg
-
-灵感来自雷达技术的CPA技术--技术解读2018诺奖
-
-https://mp.weixin.qq.com/s/cwdmd8XRotns8cNfuXLRXA
-
-SAR处理基础
-
-https://mp.weixin.qq.com/s/h1rXE_yA0FiW6nqTHrlGNQ
-
-基于多层字典对学习和稀疏自编码的极化SAR图像分类
-
-https://mp.weixin.qq.com/s/sZ5EpnfYjhdCjzLW-49HFg
-
-GPS传统信号与新信号的产生
-
-https://mp.weixin.qq.com/s/y1nTTjsW31ck6r-Cqp_XFw
-
-基于变分混合Wishart学习的极化SAR图像分类
-
-https://mp.weixin.qq.com/s/nThxbRnAGo-QkFgrm3BtIQ
-
-一种半监督张量局部线性嵌入的极化SAR特征提取方法
-
-https://mp.weixin.qq.com/s/5rNpp2cYZhcOKZCiy4LkMQ
-
-SAR成像原理及图像鉴赏
-
-https://mp.weixin.qq.com/s/Y4SE6WxEQdWFLZnn83SK_g
-
-自适应天线及其自由度
-
-https://mp.weixin.qq.com/s/JJWnNsYls9lDJFyTKz0jew
-
-干货！差分信号之剖析与探讨
-
-https://mp.weixin.qq.com/s/jl4DLZ5xwnW5_OsuLxXSUA
-
-《雷达基础知识》专题一：距离
-
-https://mp.weixin.qq.com/s/XHqcqvJLopx2SH1a_BbA5Q
-
-信号处理工具箱：基本信号发生器

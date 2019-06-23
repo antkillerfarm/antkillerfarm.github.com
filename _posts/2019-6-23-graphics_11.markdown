@@ -1,0 +1,27 @@
+---
+layout: post
+title:  图像处理理论（十一）——CV/CG参考资源
+category: graphics 
+---
+
+# CV/CG参考资源
+
+https://zhuanlan.zhihu.com/p/32752535
+
+立体匹配成像算法BM，SGBM，GC，SAD一览
+
+https://mp.weixin.qq.com/s/cVTfk0xK6F_gHRnoHYUxSw
+
+计算机视觉基本原理介绍—RANSAC
+
+https://blog.csdn.net/wanghanthu/article/details/52777512
+
+Tracking算法：Discriminative Correlation Filter (DCF)
+
+https://blog.csdn.net/wanghanthu/article/details/53375393
+
+Kernelized Correlation Filters (KCF) Tracking算法
+
+https://mp.weixin.qq.com/s/1lLrbi_Dtyq4ixMfR4pPnA
+
+线性卷积积分及其在图像增强和特效方面的应用

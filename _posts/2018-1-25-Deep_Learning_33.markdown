@@ -145,6 +145,10 @@ Capsule的可解释性有很大提升，下图是Hinton论文中给出的示例�
 
 ## 参考
 
+https://mp.weixin.qq.com/s/c5gxaOY2ITN-Q-U0mCYNgA
+
+《胶囊网络（Capsule Networks）综述》
+
 https://www.zhihu.com/question/67287444
 
 如何看待Hinton的论文《Dynamic Routing Between Capsules》？

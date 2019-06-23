@@ -284,6 +284,14 @@ https://zhuanlan.zhihu.com/p/68356509
 
 TensorFlow 2.0中文手写字识别（汉字OCR）
 
+https://mp.weixin.qq.com/s/F0bPat3KUEVnej77OdfYAg
+
+文本检测大满贯！自适应文本区域表示改进形状任意的文本检测
+
+https://mp.weixin.qq.com/s/QwkKqybzW0tYcGojQg9r2w
+
+深度学习场景文字检测识别，20页综述带你了解领域最新动态
+
 # NetVLAD
 
 NetVLAD算的上是CNN+传统算子的一个范例。

@@ -6,6 +6,30 @@ category: GAN & VAE
 
 # GAN参考资源
 
+https://mp.weixin.qq.com/s/CyN2yjpHV_t4-8Jf4Rsj-Q
+
+自然语言处理的深度对抗学习方法-附104页教程Slides
+
+https://mp.weixin.qq.com/s/dS4xXgt2duJReLSIlNOMlQ
+
+你的TextGAN调出来了么？来看看人在怎么调的
+
+https://mp.weixin.qq.com/s/Q0IUGbVcIYJMdidSVcFzFw
+
+GAN的五个神奇应用场景
+
+https://mp.weixin.qq.com/s/LJfsadhp3WGi0tLXN7jCUA
+
+GAN生成图像综述
+
+https://mp.weixin.qq.com/s/kWv-hp2svq1OEHy2DqQ4uA
+
+古纾旸：Generative model is more than just GANs
+
+https://mp.weixin.qq.com/s/RdJeqeSIsQTqonmN9qlqvA
+
+MIT教程-使用GAN进行图像转换-附73页slides
+
 https://blog.csdn.net/liuxiao214/article/category/6940697
 
 某GAN专栏
@@ -201,3 +225,7 @@ Google用更少标签生成图像，还提出一个用于训练评估GAN的库
 https://mp.weixin.qq.com/s/hXGGN1K0LoqAdtyYhCu63w
 
 以合成假脸、假画闻名的GAN很成熟了？那这些问题呢？
+
+https://zhuanlan.zhihu.com/p/70216295
+
+GAN In Text Generation

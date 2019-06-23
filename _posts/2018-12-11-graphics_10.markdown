@@ -4,6 +4,26 @@ title:  图像处理理论（十）——Optical flow, Particle filter, 从BOW�
 category: graphics 
 ---
 
+# Harris（续）
+
+## 参考
+
+http://blog.csdn.net/lwzkiller/article/details/54633670
+
+Harris角点检测原理详解
+
+http://www.cnblogs.com/ronny/p/4009425.html
+
+Harris角点
+
+https://blog.csdn.net/davebobo/article/details/52598850
+
+检测并匹配兴趣点
+
+https://blog.csdn.net/songzitea/article/details/17969375
+
+角点匹配方法
+
 # Optical flow
 
 ## 基本概念
@@ -267,25 +287,3 @@ https://www.zhihu.com/question/27623988
 https://zhuanlan.zhihu.com/p/41874735
 
 龙生龙，凤生凤，SLIC生超像素
-
-# CV/CG参考资源
-
-https://zhuanlan.zhihu.com/p/32752535
-
-立体匹配成像算法BM，SGBM，GC，SAD一览
-
-https://mp.weixin.qq.com/s/cVTfk0xK6F_gHRnoHYUxSw
-
-计算机视觉基本原理介绍—RANSAC
-
-https://blog.csdn.net/wanghanthu/article/details/52777512
-
-Tracking算法：Discriminative Correlation Filter (DCF)
-
-https://blog.csdn.net/wanghanthu/article/details/53375393
-
-Kernelized Correlation Filters (KCF) Tracking算法
-
-https://mp.weixin.qq.com/s/1lLrbi_Dtyq4ixMfR4pPnA
-
-线性卷积积分及其在图像增强和特效方面的应用

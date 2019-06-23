@@ -128,6 +128,10 @@ https://mp.weixin.qq.com/s/qVVeKZ1DNLbxqOGm2cKriQ
 
 自动机器学习: 最新进展综述与开放挑战
 
+https://mp.weixin.qq.com/s/nCyj-OGWXC0pntJJj91xrA
+
+深度学习的未来——神经架构搜索
+
 http://blog.csdn.net/u014380165/article/details/78525687
 
 自学网络结构（二）：Learning Transferable Architectures for Scalable Image Recognition
@@ -307,3 +311,7 @@ https://mp.weixin.qq.com/s/mQ01MkRCWL0gZVtVWZmbJw
 https://mp.weixin.qq.com/s/nNkbX4TEKidK2xKkYWCLbg
 
 深度解读何恺明团队提出的随机连接神经网络RandWireNN
+
+https://mp.weixin.qq.com/s/iEzfaIGwcm8UaPJzedkjnw
+
+谷歌将AutoML应用于Transformer架构，翻译结果飙升

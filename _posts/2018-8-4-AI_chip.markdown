@@ -90,9 +90,9 @@ Imagination目前主要的客户是：
 
 - GPU的主频一般低于CPU，因此如果算法的并行性很差的话，效果并没有CPU好。但这种情况并不多见。
 
-- 最近高通和华为CPU的超大核设计，应该对于提升串行运算性能很有帮助。毕竟CPU核再多，还能有GPU/NPU的核多吗？
+- 最近高通和华为CPU的超大核设计，应该对于提升串行运算性能很有帮助。毕竟CPU核再多，还能有GPU/NPU的核多吗？如果碰到就需要单挑能力的场合该怎么办呢？
 
-综上，GPU+NPU的模式可以将NN运算基本承接过来，而无须CPU承担。
+综上，GPU+NPU的模式可以将NN运算基本承接过来，这样CPU的负载相对就比较小了。
 
 从商业的角度讲，Imagination的核心产品还是GPU，NPU只是一个添头而已。它的目的应该还是利用NPU，来多卖一些GPU。
 
@@ -125,6 +125,18 @@ SnapDragon = Kryo CPU + Adreno GPU + Hexagon DSP(include Hexagon Tensor Accelera
 https://zhuanlan.zhihu.com/p/51727365
 
 骁龙855细节曝光：引入张量加速器最亮眼
+
+## Huawei
+
+Huawei的AI芯片项目大约启动于2016年底，算是布局比较晚的了，所以初期它们和寒武纪有不少合作。
+
+官网：
+
+https://www.huawei.com/minisite/ascend/cn/
+
+Model Zoo：
+
+https://github.com/Ascend/models
 
 ## TPU
 
@@ -252,15 +264,3 @@ NVIDIA GPU架构的变迁史
 https://mp.weixin.qq.com/s/8RDHTn6P63otKXUdrHhbjw
 
 一文看懂AI芯片产业生态及竞争格局
-
-https://mp.weixin.qq.com/s/jINnom16KWiEKiug3N-f8g
-
-一文看懂AI芯片：三大门派四大场景146亿美元大蛋糕
-
-https://mp.weixin.qq.com/s/-FwuhibwwG6CFUcZXNBTFA
-
-投资者梳理AI芯片产业，一文秒懂AI芯片生态！
-
-https://zhuanlan.zhihu.com/p/28325678
-
-零基础看懂全球AI芯片：详解“xPU”

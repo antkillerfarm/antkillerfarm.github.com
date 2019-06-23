@@ -6,6 +6,30 @@ category: RL
 
 # DRL参考资源
 
+https://mp.weixin.qq.com/s/cO1VlYGwdRBAbPs7IgvcAA
+
+超越传统强化学习的价值分布方法
+
+https://mp.weixin.qq.com/s/oyWyb58l4ztqIEyrk0g01A
+
+强化学习在美团“猜你喜欢”的实践
+
+https://zhuanlan.zhihu.com/p/48186354
+
+robot浅谈
+
+https://mp.weixin.qq.com/s/f-rmdWq3kJUJGhuPwU8JtQ
+
+深度策略梯度算法是真正的策略梯度算法吗？
+
+https://zhuanlan.zhihu.com/p/51202503
+
+强化学习在视觉上的应用（RL for computer Vision）
+
+https://mp.weixin.qq.com/s/iBWjobr9srhB3MTiE_Wwmg
+
+史上最强Atari游戏通关算法：蒙特祖玛获分超过200万！
+
 https://mp.weixin.qq.com/s/S2eGPTON3XmfN830m4vaaA
 
 腾讯AI Lab：可自适应于不同环境和任务的强化学习方法

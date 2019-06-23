@@ -184,6 +184,10 @@ https://mp.weixin.qq.com/s/JN1N-IqIL4tAh4rIkZcxpg
 
 Grid R-CNN解读：商汤最新目标检测算法
 
+https://mp.weixin.qq.com/s/_2DwSY6olj3wKy2xKukEGg
+
+商汤开源Grid R-CNN Plus：相比Grid RCNN，速度更快，精度更高
+
 https://mp.weixin.qq.com/s/baPfFVi7deEsCAFu3ColoQ
 
 CVPR2018目标检测算法总览

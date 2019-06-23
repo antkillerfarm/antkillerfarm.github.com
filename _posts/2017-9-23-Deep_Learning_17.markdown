@@ -216,6 +216,10 @@ https://mp.weixin.qq.com/s/foP1xSa5G8oNtAv_pI6AqQ
 
 深度神经网络自监督视觉特征学习综述
 
+https://mp.weixin.qq.com/s/sEHA6fb0XIXQWsmJGf3fTA
+
+DeepMind发布自监督学习最新教程，附122页全文资料下载
+
 https://mp.weixin.qq.com/s/2Wm6eQodwlc5XkjGKqhwCg
 
 南京大学周志华教授综述论文：弱监督学习

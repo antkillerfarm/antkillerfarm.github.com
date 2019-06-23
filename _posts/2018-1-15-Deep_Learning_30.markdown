@@ -18,6 +18,10 @@ https://mp.weixin.qq.com/s/1-Dmckby2NcXsaoK08zk8w
 
 视频理解中的图表示学习
 
+https://mp.weixin.qq.com/s/lyy3AhqLDBT88B2LSSIbZQ
+
+图表示解决长文本关系匹配问题：腾讯提出概念交互图算法
+
 # 自动求导
 
 DL发展到现在，其基本运算单元早就不止CNN、RNN之类的简单模块了。针对新运算层出不穷的现状，各大DL框架基本都实现了自动求导的功能。
@@ -112,6 +116,10 @@ https://www.jianshu.com/p/4c2032c685dc
 https://mp.weixin.qq.com/s/xXwbV46-kTobAMRwfKyk_w
 
 自动求导--Deep Learning框架必备技术二三事
+
+https://mp.weixin.qq.com/s/f0xFfA1inOVOdJnSZR4k6Q
+
+自动微分技术
 
 # 元学习
 

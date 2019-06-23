@@ -94,6 +94,10 @@ https://wenku.baidu.com/view/59596ac42cc58bd63186bd37.html
 
 Camshift算法原理
 
+https://zhuanlan.zhihu.com/p/26970589
+
+基于Camshift算法的小球跟踪
+
 # Harris
 
 ## 角点
@@ -207,21 +211,3 @@ Harris角点检测算子使用的是角点附近的区域灰度二阶矩矩阵�
 为了解决尺度不变性问题，可以使用多尺度Harris角点算法，将Harris角点检测算子与高斯尺度空间表示相结合，使其具有尺度不变性：
 
 $$\boldsymbol{M}=\mu(x,\sigma_I,\sigma_D)=\sigma_D^2g(\sigma_I)\otimes\begin{bmatrix}L_x^2(x,\sigma_D)&L_xL_y(x,\sigma_D)\\L_xL_y(x,\sigma_D)&L_y^2(x,\sigma_D)\end{bmatrix}$$
-
-## 参考
-
-http://blog.csdn.net/lwzkiller/article/details/54633670
-
-Harris角点检测原理详解
-
-http://www.cnblogs.com/ronny/p/4009425.html
-
-Harris角点
-
-https://blog.csdn.net/davebobo/article/details/52598850
-
-检测并匹配兴趣点
-
-https://blog.csdn.net/songzitea/article/details/17969375
-
-角点匹配方法

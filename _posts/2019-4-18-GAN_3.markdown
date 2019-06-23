@@ -1,12 +1,36 @@
 ---
 layout: post
-title:  GAN（三）——DCGAN, WGAN-GP, CGAN, BEGAN & EBGAN, Stack GAN
+title:  GAN（三）——GAN的评估指标, DCGAN, WGAN-GP, CGAN, BEGAN & EBGAN, Stack GAN
 category: GAN & VAE 
 ---
 
-# GAN的评估指标
+# GAN的评估指标（续）
 
-## Inception Score（续）
+论文：
+
+《An empirical study on evaluation metrics of generative adversarial networks》
+
+这篇论文是GAN评估指标方面的综述文章。
+
+![](/images/img3/GAN_evaluation.png)
+
+上图是该文给出的各种常见评估指标的体系结构图。
+
+## Inception Score
+
+论文：
+
+《Improved Techniques for Training GANs》
+
+Inception来源于Google的Inception Net，因为计算这个score需要用到Inception Net-V3。
+
+评价一个生成模型，我们需要考验它两方面性能：
+
+1.生成的图片是否清晰；
+
+2.生成的图片是否多样。
+
+生成的图片不够清晰，显然说明生成模型表现欠佳；生成的图片够清晰了，我们还要看是不是能生成足够多样的图片，有些生成模型只能生成有限的几种清晰图片，陷入了所谓mode collapse，也不是好的模型。
 
 针对这两方面，IS的思路如下：
 
@@ -223,29 +247,3 @@ BEGAN则借鉴了EBGAN和WGAN各自的一些优点。
 上图是LAPGAN的网络结构图。顾名思义，这是使用了Laplacian Pyramid来不断提升生成图片的分辨率。
 
 另，StackGAN还有后续版本StackGAN++。
-
-参考：
-
-https://www.cnblogs.com/wangxiaocvpr/p/5966776.html
-
-LAPGAN论文笔记
-
-https://zhuanlan.zhihu.com/p/30532830
-
-眼见已不为实，迄今最真实的GAN：Progressive Growing of GANs
-
-# GAN Ensemble
-
-除了级联结构之外，以下结构用的也比较多。
-
-## 多判别器单生成器
-
-论文：
-
-《Generative Multi-Adversarial Networks》
-
-![](/images/img3/boosting_GAN.png)
-
-采用多个判别器的好处带来了类似于boosting的优势，训练一个过于好的判别器，会损坏生成器的性能，这是GAN面临的一个大难题。如果能够训练多个没有那么强的判别器，然后进行boosting，可以取得不错的效果，甚至连dropout技术都可以应用进来。
-
-多个判别器还可以相互进行分工，比如在图像分类中，一个进行粗粒度的分类，一个进行细粒度的分类。在语音任务中，各自用于不同声道的处理。

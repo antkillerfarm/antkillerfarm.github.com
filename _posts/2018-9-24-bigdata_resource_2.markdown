@@ -180,6 +180,10 @@ http://mp.weixin.qq.com/s/MWQDwMoRc0c1ofkENzn3Ew
 
 结构光，TOF，双目视觉的异同
 
+https://mp.weixin.qq.com/s/uT_jrFzfttnG_VYiJIsRbQ
+
+走近3D ToF摄像头，揭秘ToF传感器工作原理
+
 ## 结构光
 
 https://mp.weixin.qq.com/s/o_XsmqLSPhvuC0iiK7xHag

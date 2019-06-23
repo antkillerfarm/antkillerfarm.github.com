@@ -4,7 +4,33 @@ title:  GAN（四）——GAN Ensemble, Pix2Pix, CycleGAN, StarGAN, InfoGAN, Pro
 category: GAN & VAE 
 ---
 
-# GAN Ensemble（续）
+# Stack GAN（续）
+
+参考：
+
+https://www.cnblogs.com/wangxiaocvpr/p/5966776.html
+
+LAPGAN论文笔记
+
+https://zhuanlan.zhihu.com/p/30532830
+
+眼见已不为实，迄今最真实的GAN：Progressive Growing of GANs
+
+# GAN Ensemble
+
+除了级联结构之外，以下结构用的也比较多。
+
+## 多判别器单生成器
+
+论文：
+
+《Generative Multi-Adversarial Networks》
+
+![](/images/img3/boosting_GAN.png)
+
+采用多个判别器的好处带来了类似于boosting的优势，训练一个过于好的判别器，会损坏生成器的性能，这是GAN面临的一个大难题。如果能够训练多个没有那么强的判别器，然后进行boosting，可以取得不错的效果，甚至连dropout技术都可以应用进来。
+
+多个判别器还可以相互进行分工，比如在图像分类中，一个进行粗粒度的分类，一个进行细粒度的分类。在语音任务中，各自用于不同声道的处理。
 
 ## 单判别器多生成器
 
@@ -271,17 +297,3 @@ CGAN虽然已经有了些user control的能力，然而还不够强。比如人�
 https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247492415&idx=1&sn=a359e72ee99555f7a2fb4e21b2ad51db
 
 InfoGAN：一种无监督生成方法
-
-# ProGAN
-
-论文：
-
-《Progressive Growing of GANs for Improved Quality, Stability, and Variation》
-
-![](/images/img3/ProGAN.png)
-
-如果现在我们想生成超高分辨率的图像，譬如1024×1024图片，假设我们采用StackGAN或者是LapGAN的话，我们需要用到的 GANs结构会非常多，这样会导致网络深度巨大，训练起来非常慢。
-
-为了解决这一问题，ProGAN（也称PGGAN）提出的想法是，我们只需要一个GANs就能产生1024×1024图片。但是一开始的时候GANs的网络非常浅，只能学习低分辨率（4x4）的图片生成，随着训练进行，我们会把GANs的网络层数逐渐加深，进而去学习更高分辨率的图片生成，最终不断的更新GANs，从而能学习到1024×1024分辨率的图片生成。
-
-也就是说，PGGAN与StackGAN和LapGAN的最大不同在于，后两者的网络结构是固定的，但是PGGAN随着训练进行网络会不断加深，网络结构是在不断改变的。这样做最大的好处就是，PGGAN大部分的迭代都在较低分辨率下完成，训练速度比传统GANs提升了2-6倍。

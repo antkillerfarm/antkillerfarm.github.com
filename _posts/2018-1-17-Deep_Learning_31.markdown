@@ -322,9 +322,9 @@ https://mp.weixin.qq.com/s/9XiAJzC2_vmZturE9ELVLA
 
 多级语言与视觉集成用于文本-剪辑检索
 
-https://mp.weixin.qq.com/s/V4Tc0ZGwcD_J_WRTOkFkOg
+https://mp.weixin.qq.com/s/UehKCDiBRnjZWLEcx_iU-g
 
-给GAN一句描述，它就能按要求画画，微软CVPR新研究
+微软最新提出ObjGAN，输入一句话秒生成图片
 
 # Recursive NN
 

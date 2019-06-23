@@ -150,6 +150,10 @@ https://mp.weixin.qq.com/s/Wz-loMz1oOlxtm10gazQRg
 
 目标检测（Object Detection）和目标跟踪（Object Tracking）的区别
 
+https://mp.weixin.qq.com/s/XJ5uVzYULWHLRjhb5iE8Qg
+
+一文读懂图像定位及跟踪技术
+
 # Meanshift
 
 ## Meanshift聚类

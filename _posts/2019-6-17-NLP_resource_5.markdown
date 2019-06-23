@@ -227,3 +227,7 @@ https://mp.weixin.qq.com/s/mWIJt6niM3cw_Zy_RHRCZw
 https://mp.weixin.qq.com/s/xPkB6nexTo1FpcJnn_okhA
 
 你的涂鸦活了，CMU中国本科生让画成真
+
+https://mp.weixin.qq.com/s/LkRgaSWBkE8dJl69IQroIg
+
+造假AI又进化！只要一张照片，说话唱歌视频自动生成，降维打击Deepfakes

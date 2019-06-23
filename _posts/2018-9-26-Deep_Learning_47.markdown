@@ -365,3 +365,7 @@ https://mp.weixin.qq.com/s/nlFXfgM5KKZXnPdwd97JYg
 https://mp.weixin.qq.com/s/29y2bg4KE-HNwsimD3aauw
 
 20项任务全面碾压BERT，CMU全新XLNet预训练模型屠榜
+
+https://zhuanlan.zhihu.com/p/70389596
+
+一批高质量中文BERT预训练模型请查收（上）

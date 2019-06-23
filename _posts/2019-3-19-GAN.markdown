@@ -222,9 +222,3 @@ $$\begin{aligned}\theta =& \mathop{\arg\min}_{\theta} L_2\\
 2.GAN的目标是学习分布Z。因此，虽然GAN和RL都是无监督学习，但前者需要Real Samples，而后者可能只需要一个规则，例如AlphaZero。换句话说，GAN的监督信号隐藏在样本中，而不是标签或者规则中。
 
 ![](/images/img2/GAN_vs_RL.png)
-
-3.使用G网络将noise变成fake_data。
-
-4.用fake_data和Real Samples共同训练D网络，分别可得到$$L_{fake}$$和$$L_{real}$$。使用公式3计算总Loss：L。
-
-5.固定D网络参数，使用公式4训练网络D(G)中G的参数。

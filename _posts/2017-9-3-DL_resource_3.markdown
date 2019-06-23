@@ -44,6 +44,10 @@ https://mp.weixin.qq.com/s/2QuwBVaFCQjl81z38u6L-g
 
 一文看尽三种针对人工智能系统的攻击技术及防御策略
 
+https://mp.weixin.qq.com/s/mOYgJhEaouL7Ebi0502_Uw
+
+DeepFakes天敌来了！伯克利紧急研发“火眼金睛”防伪克星
+
 ## AI与游戏
 
 https://zhuanlan.zhihu.com/p/22604627

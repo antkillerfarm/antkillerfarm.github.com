@@ -34,6 +34,10 @@ https://mp.weixin.qq.com/s/QkRdv0xMoqwaXsNAMAHR0A
 
 一图尽展视频游戏AI技术，DQN无愧众算法之鼻祖
 
+https://mp.weixin.qq.com/s/SJd-3qH4W4GMMLZSmvFk1w
+
+利用DQN玩吃豆人（Pacman）小游戏
+
 # DDPG
 
 https://mp.weixin.qq.com/s/dgLJrn3omUKMqmqTIEcoyg
@@ -379,27 +383,3 @@ https://zhuanlan.zhihu.com/p/36322095
 https://mp.weixin.qq.com/s/xr-2cNoSYpCftLI3dV6zEw
 
 如何使用深度强化学习帮助自动驾驶汽车通过交叉路口？
-
-https://mp.weixin.qq.com/s/R_pfTXDMaLHmiCaSV2t_YA
-
-英特尔Nervana发布强化学习库Coach：支持多种价值与策略优化算法
-
-https://mp.weixin.qq.com/s/AyW7oOC7yxVtmswaMT1DGQ
-
-腾讯AI Lab获得计算机视觉权威赛事MSCOCO Captions冠军
-
-https://mp.weixin.qq.com/s/4aENmxUMEEPVPnexLKrg7Q
-
-新型强化学习算法ACKTR
-
-https://mp.weixin.qq.com/s/5PzTiPoXPC1gH3xszzT2dQ
-
-邓力等人提出BBQ网络：将深度强化学习用于对话系统
-
-https://mp.weixin.qq.com/s/pM8oykHmtu5O5jYJBZjO_w
-
-伯克利研究人员使用内在激励，教AI学会好奇
-
-https://mp.weixin.qq.com/s/3WI3QgfHXcrCPbvmHWOEkg
-
-强化学习在生成对抗网络文本生成中的作用

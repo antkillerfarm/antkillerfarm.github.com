@@ -1,10 +1,18 @@
 ---
 layout: post
-title:  GAN（二）——GAN进阶, GAN的评估指标
+title:  GAN（二）——GAN进阶
 category: GAN & VAE 
 ---
 
-# 概况（续）
+# 概况
+
+## 小结（续）
+
+3.使用G网络将noise变成fake_data。
+
+4.用fake_data和Real Samples共同训练D网络，分别可得到$$L_{fake}$$和$$L_{real}$$。使用公式3计算总Loss：L。
+
+5.固定D网络参数，使用公式4训练网络D(G)中G的参数。
 
 ## Lipschitz约束
 
@@ -322,6 +330,10 @@ http://www.gwylab.com/pdf/生成模型-生成对抗网络.pdf
 
 这篇中文综述写的很好
 
+https://mp.weixin.qq.com/s/trFM7dfBL23TykWCY9rRtw
+
+别人家的高中生：入大学前，Ta详细梳理了GAN的发展脉络
+
 ## GAN的理论解释
 
 顾险峰教授对GAN提出了自己的理论解释。
@@ -353,29 +365,3 @@ GAN模式崩溃的理论解释
 # GAN的评估指标
 
 尽管可用的GAN模型非常多，但对它们的评估仍然主要是定性评估，通常需要借助人工检验生成图像的视觉保真度来进行。此类评估非常耗时，且主观性较强、具备一定误导性。鉴于定性评估的内在缺陷，恰当的定量评估指标对于GAN的发展和更好模型的设计至关重要。
-
-论文：
-
-《An empirical study on evaluation metrics of generative adversarial networks》
-
-这篇论文是GAN评估指标方面的综述文章。
-
-![](/images/img3/GAN_evaluation.png)
-
-上图是该文给出的各种常见评估指标的体系结构图。
-
-## Inception Score
-
-论文：
-
-《Improved Techniques for Training GANs》
-
-Inception来源于Google的Inception Net，因为计算这个score需要用到Inception Net-V3。
-
-评价一个生成模型，我们需要考验它两方面性能：
-
-1.生成的图片是否清晰；
-
-2.生成的图片是否多样。
-
-生成的图片不够清晰，显然说明生成模型表现欠佳；生成的图片够清晰了，我们还要看是不是能生成足够多样的图片，有些生成模型只能生成有限的几种清晰图片，陷入了所谓mode collapse，也不是好的模型。

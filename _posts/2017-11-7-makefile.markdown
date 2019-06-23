@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  makefile, Autotools, premake, Bazel, Spring
+title:  makefile, Autotools, premake, Bazel, Jam
 category: technology 
 ---
 
@@ -180,6 +180,59 @@ https://zhuanlan.zhihu.com/p/47397799
 
 bazel项目添加automake/autoconf项目解决办法
 
+# Jam
+
+Jam是Perforce推出的构建工具。
+
+官网：
+
+https://www.perforce.com/documentation/jam-documentation
+
+由于Perforce已经不再维护Jam项目，所以目前主要使用由FreeType维护的FT Jam。
+
+官网：
+
+https://www.freetype.org/jam/
+
+此外，还有Boost.Build（也就是原来的Boost.Jam）。
+
+官网：
+
+https://boostorg.github.io/build/
+
+其命令行工具之前叫bjam，现在叫b2。
+
+原始的Jam对C++不太友好，所以如果是C++的项目，推荐使用b2。
+
+b2的使用示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cpp/jam
+
+- 每个项目的根目录必须有一个Jamroot.jam文件。
+
+- 其他源代码目录下有一个Jamfile.jam文件。
+
+参考：
+
+https://blog.csdn.net/jadedrip/article/details/1722318
+
+bjam初接触
+
+## boost
+
+boost直接安装：
+
+`sudo apt install libboost-all-dev`
+
+编译：
+
+{% highlight bash %}
+./bootstrap.sh
+./b2 install link=static cxxflags=-fPIC --with-test --prefix=</path/to/install>
+{% endhighlight %}
+
+boost的组件有很多，这里只编译了test组件。
+
 # Other
 
 ## blade
@@ -188,7 +241,7 @@ blade是腾讯出品的构建工具。
 
 官网：
 
-https://github.com/chen3feng/typhoon-blade
+https://github.com/chen3feng/blade-build
 
 ## SCons
 
@@ -198,9 +251,17 @@ blade的底层用到了SCons。后者是一个python语言写的构建工具，�
 
 http://www.scons.org/
 
+安装：
+
+`sudo apt install scons`
+
 和make类似，可以用如下方式并行编译：
 
 `scons -j 4`
+
+使用示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cpp/scons
 
 参考：
 
@@ -237,80 +298,3 @@ WAF是一个python写的构建工具。
 官网：
 
 https://waf.io
-
-## Jam
-
-Jam是Perforce推出的构建工具。
-
-官网：
-
-https://www.perforce.com/documentation/jam-documentation
-
-由于Perforce已经不再维护Jam项目，所以目前主要使用由FreeType维护的FT Jam。
-
-官网：
-
-https://www.freetype.org/jam/
-
-此外，还有Boost.Build（也就是原来的Boost.Jam）。
-
-官网：
-
-https://boostorg.github.io/build/
-
-其命令行工具之前叫bjam，现在叫b2。
-
-## boost编译
-
-{% highlight bash %}
-./bootstrap.sh
-./b2 install link=static cxxflags=-fPIC --with-test --prefix=</path/to/install>
-{% endhighlight %}
-
-boost的组件有很多，这里只编译了test组件。
-
-# Spring
-
-Spring是一个Java Web应用框架。官网：
-
-http://spring.io/
-
-## Ubuntu安装Eclipse、Spring
-
-1.安装Eclipse
-
-`sudo apt-get install eclipse`
-
-2.安装Spring
-
-`sudo apt-get install libspring-web-portlet-java`
-
-注意：ubuntu软件仓库中还有一个叫做spring的游戏引擎，不要弄错了。
-
-http://www.mkyong.com/spring/quick-start-maven-spring-example/
-
-Maven+Spring hello world example
-
-http://wiki.jikexueyuan.com/project/spring/
-
-Spring 教程
-
-## Restful
-
-http://spring.io/guides/gs/rest-service/
-
-## Spring Boot
-
-https://www.tianmaying.com/tutorial/deploy-spring-boot-application
-
-部署Spring Boot应用
-
-http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
-
-Spring Boot默认的配置文件
-
-## WebService
-
-https://spring.io/guides/gs/producing-web-service/
-
-http://localhost:9999/ws/countries.wsdl

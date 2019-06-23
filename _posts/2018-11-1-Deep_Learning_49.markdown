@@ -232,28 +232,6 @@ https://mp.weixin.qq.com/s/SqxooZqSeD3wA4EFK5D3Kg
 
 再生神经网络：利用知识蒸馏收敛到更优的模型
 
-# AI工具+
-
-https://mp.weixin.qq.com/s/hkcVhyqiDW--F3QxucgEcA
-
-亚马逊开源神经机器翻译框架Sockeye：基于Apache MXNet的NMT平台
-
-http://www.sohu.com/a/163063280_633698
-
-无监督对话数据清洗利器：Data Purification Framework
-
-https://mp.weixin.qq.com/s/l0pzq54uDdYctSj7R3QNWw
-
-AmpliGraph：知识图谱表示学习工具包
-
-https://mp.weixin.qq.com/s/a3zu7nvy0itOvzvgOlf01Q
-
-搜狗开源机器阅读理解工具箱
-
-https://zhuanlan.zhihu.com/p/68462431
-
-谷歌开源RL足球环境
-
 # Fast Image Processing
 
 ![](/images/article/FIP.png)

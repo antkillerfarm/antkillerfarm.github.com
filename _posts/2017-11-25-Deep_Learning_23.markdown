@@ -226,6 +226,10 @@ https://mp.weixin.qq.com/s/Ds5IgmSNuokXDjGXiFhlXQ
 
 条件运动传播：从运动中学习物体性质
 
+https://zhuanlan.zhihu.com/p/65400509
+
+浙大CAD&CG实验室提出PVNet，实时且效果超群，已开源
+
 # LSTM进阶
 
 ## 《Long short-term memory》
