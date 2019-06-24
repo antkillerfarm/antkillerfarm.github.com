@@ -6,6 +6,20 @@ category: DL
 
 # Bi-directional RNN（续）
 
+基于这样的实验结果，1997年Mike Schuster提出了Bi-directional RNN模型。
+
+>注：Mike Schuster，杜伊斯堡大学硕士（1993）+奈良科技大学博士。语音识别专家，尤其是日语、韩语方面。Google研究员。
+
+论文：
+
+《Bidirectional Recurrent Neural Networks》
+
+下图是Bi-directional RNN的结构示意图：
+
+![](/images/article/Bi_directional_RNN.png)
+
+从图中可以看出，Bi-directional RNN有两个隐层，分别处理前向和后向的时序信息。
+
 除了原始的Bi-directional RNN之外，后来还出现了Deep Bi-directional RNN。
 
 ![](/images/article/Deep_Bi_RNN.png)
@@ -309,25 +323,3 @@ TensorFlow版本
 ![](/images/article/SqueezeNet_2.png)
 
 上图是SqueezeNet的网络结构图，其最大的创新点在于使用Fire Module替换大尺寸的卷积层。
-
-![](/images/article/SqueezeNet.png)
-
-上图是Fire Module的结构示意图。它采用squeeze层+expand层两个小卷积层，替换了AlexNet的大尺寸卷积层。其中，$$N_{squeeze}<N_{expand}$$，N表示每层的卷积个数。
-
-这里需要特别指出的是：expand层采用了2种不同尺寸的卷积，这也是当前设计的一个趋势。
-
-这个趋势在GoogleNet中已经有所体现，在ResNet中也间接隐含。
-
-![](/images/article/expand_ResNet.png)
-
-上图是ResNet的展开图，可见展开之后的ResNet，实际上等效于一个多尺寸交错混编的复杂卷积网。其思路和GoogleNet实际上是一致的。
-
-参见：
-
-http://blog.csdn.net/xbinworld/article/details/50897870
-
-最新SqueezeNet模型详解，CNN模型参数降低50倍，压缩461倍！
-
-http://www.jianshu.com/p/8e269451795d
-
-神经网络瘦身：SqueezeNet

@@ -371,3 +371,7 @@ https://mp.weixin.qq.com/s/L-1gkElxsMtT369fgJl86Q
 https://zhuanlan.zhihu.com/p/57086099
 
 细粒度识别之Local Attention Network
+
+https://mp.weixin.qq.com/s/6K4tXPlYLaXhexh6gElP5Q
+
+多标签图像分类综述

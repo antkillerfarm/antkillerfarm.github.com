@@ -106,7 +106,11 @@ C - undefined reference to “sqrt” even with '-lm'
 
 右值语法：`type &&引用名 = 右值表达式;`
 
+参考：
 
+https://www.cnblogs.com/ldlchina/p/6608154.html
+
+C++11右值引用和std::move语句实例解析
 
 ## 参考
 

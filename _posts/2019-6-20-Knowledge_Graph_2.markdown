@@ -150,10 +150,6 @@ https://mp.weixin.qq.com/s/3QjLFzMvH9qR05kmUyawQg
 
 知识图谱如何用于可解释人工智能中？
 
-https://mp.weixin.qq.com/s/_ZBvq7gXvbiP2IQve9tcKg
-
-清华等提出ERNIE：知识图谱结合BERT才是“有文化”的语言模型
-
 # 数据结构 & 普通CS算法
 
 https://mp.weixin.qq.com/s/52JFdyaLwZq7nWiZq6z6qA

@@ -8,6 +8,28 @@ category: DL
 
 ### SqueezeNet（续）
 
+![](/images/article/SqueezeNet.png)
+
+上图是Fire Module的结构示意图。它采用squeeze层+expand层两个小卷积层，替换了AlexNet的大尺寸卷积层。其中，$$N_{squeeze}<N_{expand}$$，N表示每层的卷积个数。
+
+这里需要特别指出的是：expand层采用了2种不同尺寸的卷积，这也是当前设计的一个趋势。
+
+这个趋势在GoogleNet中已经有所体现，在ResNet中也间接隐含。
+
+![](/images/article/expand_ResNet.png)
+
+上图是ResNet的展开图，可见展开之后的ResNet，实际上等效于一个多尺寸交错混编的复杂卷积网。其思路和GoogleNet实际上是一致的。
+
+参见：
+
+http://blog.csdn.net/xbinworld/article/details/50897870
+
+最新SqueezeNet模型详解，CNN模型参数降低50倍，压缩461倍！
+
+http://www.jianshu.com/p/8e269451795d
+
+神经网络瘦身：SqueezeNet
+
 http://blog.csdn.net/shenxiaolu1984/article/details/51444525
 
 超轻量级网络SqueezeNet算法详解
@@ -255,27 +277,3 @@ https://mp.weixin.qq.com/s/ASqpPSIgW_bcFPBfRYz7Xg
 http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
 
 《Large Scale Distributed Deep Networks》中译文
-
-https://mp.weixin.qq.com/s/X7XG51yohLnEZ_Jg6XK9oQ
-
-Caffe作者贾扬清教你怎样打造更加优秀的深度学习架构
-
-https://mp.weixin.qq.com/s/_mrYI7McMBUx0lEh4rNiYQ
-
-百度开源移动端深度学习框架MDL，手机部署CNN支持iOS GPU
-
-https://mp.weixin.qq.com/s/qOjGrR59Mf0Mzgh4bpDhrA
-
-详解Horovod：Uber开源的TensorFlow分布式深度学习框架
-
-https://mp.weixin.qq.com/s/ZCNSq5FC2REoVTKAK2mJQg
-
-分布式深度学习原理、算法详细介绍
-
-https://mp.weixin.qq.com/s/Ewiil56vMkzhO2xDWgo-Wg
-
-苹果发布Turi Create机器学习框架，5行代码开发图像识别
-
-https://mp.weixin.qq.com/s/jOVUPhrCBI9W9vPvD9eKYg
-
-UC Berkeley提出新型分布式框架Ray：实时动态学习的开端

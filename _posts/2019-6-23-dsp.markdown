@@ -251,3 +251,7 @@ https://mp.weixin.qq.com/s/cyTHnDGdMZvhxg7hUmuYZw
 https://mp.weixin.qq.com/s/6q7wy7Xq7GcepdLkQN-1wA
 
 最新中文NLP开源工具箱来了！支持6大任务，面向工业应用
+
+https://mp.weixin.qq.com/s/203UyMxZ-Sx14WEX-KMusg
+
+异类框架BigDL，TensorFlow的潜在杀器！

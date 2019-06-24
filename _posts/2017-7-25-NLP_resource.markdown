@@ -234,6 +234,10 @@ https://mp.weixin.qq.com/s/-gnzRjLerqIyLPLBkZNmcA
 
 深度学习在NLP中的运用？从分词、词性到机器翻译、对话系统
 
+https://mp.weixin.qq.com/s/AV-FiiYrSn3Z-J3S4l_yIQ
+
+中文NLP的分词真有必要吗？李纪为团队四项任务评测一探究竟
+
 ## 机器翻译
 
 https://mp.weixin.qq.com/s/sREYZGiK2OmuETrPdeJptA

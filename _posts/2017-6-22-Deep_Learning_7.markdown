@@ -160,6 +160,16 @@ x, & -1\le x \le 1 \\
 
 ![](/images/article/hard_tanh.png)
 
+### hard sigmoid
+
+$$\text{HardSigmoid}(x)=\begin{cases}
+0, & x<-2.5 \\
+0.2x, & -2.5\le x \le 2.5 \\
+1, & x>2.5 \\
+\end{cases}$$
+
+![](/images/img3/hard_sigmoid2.png)
+
 ### soft sign
 
 $$\text{softsign}(x)=\frac{x}{1+\mid x\mid }$$
@@ -295,17 +305,3 @@ ResNet及其变种的结构梳理、有效性分析与代码解读
 众所周知，RNN在处理长距离依赖关系时会出现问题。LSTM虽然改进了一些，但也只能缓解问题，而不能解决该问题。
 
 研究人员发现将原文倒序（将其倒序输入编码器）产生了显著改善的结果，因为从解码器到编码器对应部分的路径被缩短了。同样，两次输入同一个序列似乎也有助于网络更好地记忆。
-
-基于这样的实验结果，1997年Mike Schuster提出了Bi-directional RNN模型。
-
->注：Mike Schuster，杜伊斯堡大学硕士（1993）+奈良科技大学博士。语音识别专家，尤其是日语、韩语方面。Google研究员。
-
-论文：
-
-《Bidirectional Recurrent Neural Networks》
-
-下图是Bi-directional RNN的结构示意图：
-
-![](/images/article/Bi_directional_RNN.png)
-
-从图中可以看出，Bi-directional RNN有两个隐层，分别处理前向和后向的时序信息。

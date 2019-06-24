@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十九）——模型压缩与加速（2）, 知识蒸馏, Fast Image Processing
+title:  深度学习（四十九）——模型压缩与加速（2）, 知识蒸馏, Fast Image Processing, DMN
 category: DL 
 ---
 
@@ -289,6 +289,20 @@ $$\mathcal{l(K,B)}=\sum_i\frac{1}{N_i}\|\hat f (I_i;\mathcal{K,B})-f(I_i)\|^2$$
 http://mmlab.science.unitn.it/RAISE/
 
 RAISE数据集包含了8156张高分辨率原始照片，由3台不同的相机拍摄，并给出了相机的型号和参数。
+
+# DMN
+
+Question answering是自然语言处理领域的一个复杂问题。它需要对文本的理解力和推理能力。大部分NLP问题都可以转化为一个QA问题。Dynamic Memory Networks可以用来处理QA问题。DMN的输入包含事实输入，问题输入，经过内部处理形成片段记忆，最终产生问题的答案。
+
+DMN可进行端到端的训练，并在多种任务上取得了state-of-the-art的效果：包括QA（Facebook的bAbI数据集），情感分析文本分类（Stanford Sentiment Treebank）和词性标注（WSJ-PTB）。
+
+![](/images/article/DMN.png)
+
+参考：
+
+http://blog.csdn.net/javafreely/article/details/71994247
+
+动态记忆网络
 
 # 图像超分辨率进阶+
 

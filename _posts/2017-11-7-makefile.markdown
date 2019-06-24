@@ -233,6 +233,8 @@ boost直接安装：
 
 boost的组件有很多，这里只编译了test组件。
 
+>注意：指定生成目录的时候，stage使用stagedir选项，而install使用prefix选项。
+
 # Other
 
 ## blade

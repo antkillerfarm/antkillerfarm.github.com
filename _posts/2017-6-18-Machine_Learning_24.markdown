@@ -302,3 +302,7 @@ https://mp.weixin.qq.com/s/LN6ib-8b_SZHR9u_-OMwNg
 https://mp.weixin.qq.com/s/95Zklj8ovheQV3Gnc-2h-Q
 
 小米大数据总监司马云瑞详解小米用户画像的演进及应用解读
+
+https://mp.weixin.qq.com/s/iuchckQ-MRqSZ2QwghgPTQ
+
+浅谈“用户画像”

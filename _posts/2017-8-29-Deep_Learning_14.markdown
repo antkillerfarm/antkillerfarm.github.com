@@ -182,6 +182,10 @@ https://mp.weixin.qq.com/s/Lp2pq95woQ5-E3RemdRnyw
 
 动态层归一化（Dynamic Layer Normalization）
 
+https://mp.weixin.qq.com/s/Cbjcks3jyEeIIZNzjG1YgA
+
+深度学习中的Normalization模型
+
 ## IBN-Net
 
 IBN-Net是汤晓鸥小组的新作（2018.7）。

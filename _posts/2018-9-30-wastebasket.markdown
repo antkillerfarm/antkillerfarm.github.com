@@ -314,6 +314,10 @@ https://mp.weixin.qq.com/s/DrMK8XuJckmb-zujR540Sw
 
 40个金属之最，搞了一辈子机械知道不会超过10个。。。
 
+https://mp.weixin.qq.com/s/oCoyEh1VhUmqZnf9okgYnA
+
+科普：十大物理学中最牛逼的思想实验!
+
 ## LSM (Log Structured Merge)
 
 十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。

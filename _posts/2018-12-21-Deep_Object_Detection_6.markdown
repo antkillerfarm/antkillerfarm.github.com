@@ -132,6 +132,10 @@ https://blog.csdn.net/jningwei/article/details/80038594
 
 论文阅读: RetinaNet
 
+https://zhuanlan.zhihu.com/p/68786098
+
+再谈RetinaNet
+
 # CornerNet
 
 CornerNet是Princeton University的Hei Law的作品。（2018年8月）

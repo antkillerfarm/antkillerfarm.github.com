@@ -144,6 +144,24 @@ https://mp.weixin.qq.com/s/eJn379q9raDHY9FdWaXeKQ
 
 AI界最危险武器GPT-2使用指南：从Finetune到部署
 
+## ERNIE
+
+https://mp.weixin.qq.com/s/xoQhz6ljbsbzKRBJlTQQuQ
+
+百度提出ERNIE，多项中文NLP任务表现出色
+
+https://mp.weixin.qq.com/s/rQ8ISipvV3Irrjd3MI-Idw
+
+百度ERNIE，中文任务全面超越BERT
+
+https://mp.weixin.qq.com/s/_ZBvq7gXvbiP2IQve9tcKg
+
+清华等提出ERNIE：知识图谱结合BERT才是“有文化”的语言模型
+
+https://mp.weixin.qq.com/s/QVEYQfEQV0CsklI9S4vOiA
+
+ERNIE真有官方说的那么好？亲测告诉你答案！
+
 ## 参考
 
 https://www.zhihu.com/question/298203515
@@ -262,10 +280,6 @@ https://zhuanlan.zhihu.com/p/58425003
 
 从Word2Vec到Bert，聊聊词向量的前世今生（一）
 
-https://mp.weixin.qq.com/s/xoQhz6ljbsbzKRBJlTQQuQ
-
-百度提出ERNIE，多项中文NLP任务表现出色
-
 https://mp.weixin.qq.com/s/SfMIKfF_B4agFCHN_U_mzQ
 
 BAM！利用知识蒸馏和多任务学习构建的通用语言模型
@@ -333,10 +347,6 @@ Bert时代的创新：Bert应用模式比较及其它
 https://mp.weixin.qq.com/s/zqlWx3e4LOJ3_Zy2DEbCjw
 
 从语言模型看Bert的善变与GPT的坚守
-
-https://mp.weixin.qq.com/s/rQ8ISipvV3Irrjd3MI-Idw
-
-百度ERNIE，中文任务全面超越BERT
 
 https://mp.weixin.qq.com/s/LngE10Hnqe9bgFzpNfUwLQ
 

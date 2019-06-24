@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十八）——数据增强, 深度信息检索, DMN, 手势识别, 语义分割
+title:  深度学习（十八）——数据增强, 深度信息检索, 手势识别, 语义分割
 category: DL 
 ---
 
@@ -65,6 +65,10 @@ https://mp.weixin.qq.com/s/g4022Rc1RNvr3IOC_bWuaQ
 https://mp.weixin.qq.com/s/YuFVEhO3wzCN5dIM_YqA7A
 
 EDA：最简单的自然语言处理数据增广方法
+
+https://mp.weixin.qq.com/s/IeqSfjt4x8HquXBeQN2gdQ
+
+深度学习中的数据增强方法总结
 
 # 深度信息检索
 
@@ -184,20 +188,6 @@ https://mp.weixin.qq.com/s/AWsiAYyVWY83s5uJ01Lg6Q
 
 千亿级照片，毫秒间匹配最佳结果，微软开源Bing搜索背后的关键算法
 
-# DMN
-
-Question answering是自然语言处理领域的一个复杂问题。它需要对文本的理解力和推理能力。大部分NLP问题都可以转化为一个QA问题。Dynamic Memory Networks可以用来处理QA问题。DMN的输入包含事实输入，问题输入，经过内部处理形成片段记忆，最终产生问题的答案。
-
-DMN可进行端到端的训练，并在多种任务上取得了state-of-the-art的效果：包括QA（Facebook的bAbI数据集），情感分析文本分类（Stanford Sentiment Treebank）和词性标注（WSJ-PTB）。
-
-![](/images/article/DMN.png)
-
-参考：
-
-http://blog.csdn.net/javafreely/article/details/71994247
-
-动态记忆网络
-
 # 手势识别
 
 https://zhuanlan.zhihu.com/p/26630215
@@ -295,6 +285,10 @@ https://mp.weixin.qq.com/s/mQqEe4LC0VHBH2ZAtFanWQ
 https://mp.weixin.qq.com/s/9G3kahaoOSoB-DiGey1VLA
 
 基于深度学习的图像语义分割算法综述
+
+https://mp.weixin.qq.com/s/9F2UB_5ah1nEe3dfyoeRhg
+
+图像分割算法综述
 
 https://mp.weixin.qq.com/s/JbdwtpA3iRXReyerO4HYIg
 

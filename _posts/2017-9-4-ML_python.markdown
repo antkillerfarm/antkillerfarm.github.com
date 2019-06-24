@@ -408,6 +408,26 @@ https://mp.weixin.qq.com/s/ebRQMJI9sB7wNI_NYdmTAw
 
 高逼格使用Pandas加速代码，向for循环说拜拜！
 
+## datatable
+
+datatable相当于高级版的Pandas。
+
+它的优点：
+
+- 支持超过内存数量的大数据。
+
+- 多线程数据处理。
+
+官网：
+
+https://datatable.readthedocs.io/en/latest/
+
+参考：
+
+https://mp.weixin.qq.com/s/oVHxYRMzJtD5t79uJ5jgWw
+
+媲美Pandas？一文入门Python的Datatable操作
+
 ## mysql
 
 http://www.runoob.com/python/python-mysql.html

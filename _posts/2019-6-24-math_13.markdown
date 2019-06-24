@@ -1,0 +1,83 @@
+---
+layout: post
+title:  数学狂想曲（十三）——张量分析
+category: math 
+---
+
+# 泛函 & 变分（续）
+
+参考：
+
+https://zhuanlan.zhihu.com/yueaptx
+
+一个变分法方面的专栏
+
+https://blog.csdn.net/shenziheng1/article/details/54808173
+
+泛函与变分初步（Euler-lagrange条件）
+
+https://www.cnblogs.com/MagicXYoung/p/4906606.html
+
+泛函与变分基础
+
+https://blog.csdn.net/theonegis/article/details/86217916
+
+变分法入门介绍
+
+https://zhuanlan.zhihu.com/p/41573146
+
+变分法理解1——泛函简介
+
+https://zhuanlan.zhihu.com/p/41810184
+
+变分法理解2——基本方法
+
+# 张量分析
+
+在同构的意义下，第零阶张量（r = 0）为标量（Scalar），第一阶张量（r = 1）为向量（Vector），第二阶张量（r = 2）则成为矩阵（Matrix）。
+
+《张量分析》，黄克智著。
+
+>注：黄克智，1927年生，固体力学家。江西中正大学本科+清华硕士+莫斯科大学博士（因应召回国，放弃博士学位）。清华大学工程力学系教授、工程力学研究所所长，中国科学院院士。断裂力学领域权威。
+
+# 拓扑学
+
+《Topopogy Without Tears》，University of New South Wales的Sidney A. Morris著。
+
+该书的中文版：
+
+http://www.topologywithouttears.net/topbookchinese.pdf
+
+# 世说新语
+
+## 2019.6（续）
+
+https://uboat.net/boats/finder.php
+
+一个关于德国U型潜艇的网站。
+
+----
+
+https://www.zhihu.com/question/36509150/answer/67878788
+
+为什么10年前的《指环王》三部曲，现在依然能秒杀市场上绝大多数电影制作？
+
+----
+
+央视的军事·农业频道，被网友们亲切地称为“耕战频道”，并由此衍生“外国间谍看央视7套最后变成养猪专业户”的笑谈。
+
+----
+
+棋经有云，布局有三忌，炮忌轻发，马忌躁进，车忌迟开。
+
+----
+
+https://mp.weixin.qq.com/s/S0IJB1avA0GCxDZXeOJyfA
+
+这所学校只为一个学生开放，毕业典礼轰动全岛，“校霸”背后的故事却暖哭了所有人
+
+----
+
+https://media.weibo.cn/article?id=2309404385183922015915
+
+王莽爱改名
