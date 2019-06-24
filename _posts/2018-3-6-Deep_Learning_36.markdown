@@ -368,6 +368,10 @@ https://zhuanlan.zhihu.com/p/32702868
 
 人脸检测背景介绍和发展现状
 
+https://zhuanlan.zhihu.com/p/69777256
+
+简述人脸识别开发原理。这篇文章对传统算法做了一个很好的总结。
+
 # AI可解释性
 
 XAI(Explainable Artificial Intelligence)

@@ -168,43 +168,9 @@ https://mp.weixin.qq.com/s/FIWfbCLgckVzeNvfThIl4Q
 
 阿里线下智能方案进化史
 
-# 多模态学习
+https://mp.weixin.qq.com/s/pqxiF6yEZzrw8qXu2hEsaA
 
-https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw
-
-多模态学习研究进展综述
-
-https://mp.weixin.qq.com/s/vpBPkjuCebSWh5qPLYHCkw
-
-上海交大提出多模态框架“EmotionMeter”，更精准地识别人类情绪
-
-https://mp.weixin.qq.com/s/BBg04rDtiqU-XrWortufNA
-
-康奈尔&英伟达提出多模态无监督图像转换新方法
-
-http://mp.weixin.qq.com/s/khOINUyrNV3TFfgNRheH0A
-
-卷积神经网络压缩、多模态的语义分析研究
-
-https://mp.weixin.qq.com/s/ywU4L659iRcmIgmV6RtbXA
-
-DeepMind新研究连接听与看，实现“听声辨位”的多模态学习
-
-https://mp.weixin.qq.com/s/1qhcyTXttgKWlw-Oy556Tw
-
-TPAMI2019最新《多模态机器学习综述》
-
-https://mp.weixin.qq.com/s/BczgUuh2FIvP5MG9xh87wQ
-
-多模态多任务学习新论文
-
-https://mp.weixin.qq.com/s/ipj8qpYRiYbIeXn2PZb1SQ
-
-5G时代下多模态理解做不到位注定要掉队
-
-https://mp.weixin.qq.com/s/UghgWBN7mE8oJdMUvjAjcQ
-
-何晖光：多模态情绪识别及跨被试迁移学习
+单机训练速度提升640倍！独家解读快手商业广告模型GPU训练平台Persia
 
 # 花式卷积
 

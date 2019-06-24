@@ -234,6 +234,14 @@ https://mp.weixin.qq.com/s/J2s84TkfHGTw985iXxW0dA
 
 基于兴趣区域投票的多任务车辆检测
 
+https://mp.weixin.qq.com/s/ao5hC_3A7fn8_L_PFw399A
+
+轨迹规划技术分享
+
+https://mp.weixin.qq.com/s/pEA7mN7AhxrDqLb3ku1CxQ
+
+ADAS以及自动驾驶车辆运动特性
+
 # Eigenface
 
 Eigenface是M. Turk和A. Pentland于1991年提出的人脸识别算法。

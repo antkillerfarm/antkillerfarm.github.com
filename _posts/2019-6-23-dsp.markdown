@@ -255,3 +255,7 @@ https://mp.weixin.qq.com/s/6q7wy7Xq7GcepdLkQN-1wA
 https://mp.weixin.qq.com/s/203UyMxZ-Sx14WEX-KMusg
 
 异类框架BigDL，TensorFlow的潜在杀器！
+
+https://mp.weixin.qq.com/s/3eoN0YHI84oomdTZO6TrvQ
+
+快速搞定机器人开发！Facebook联合CMU开源PyRobot框架

@@ -401,10 +401,6 @@ https://mp.weixin.qq.com/s/b19SLduKoiOIeE5CA3ZOjg
 
 Python标准库之LRU缓存实现学习
 
-https://mp.weixin.qq.com/s/0jjJrclscaA5LkdhHUNkUg
-
-Python的进阶：copy()与deepcopy()区别
-
 https://mp.weixin.qq.com/s/VPCUd5op6Vd-b0LbFEMSYQ
 
 秒懂Python编程中的if __name__ == 'main' 的作用和原理

@@ -120,6 +120,14 @@ https://mp.weixin.qq.com/s/Hpn7KqYlBKz0JdryiozqyQ
 
 # Python
 
+## 星期处理
+
+`datetime(2002, 12, 4).isoweekday() == 3`
+
+`datetime(2001, 12, 31).isocalendar() == (2002, 1, 1)#(year, week number, weekday)`
+
+从上面的例子还可以看出，isocalendar可以完美的处理跨年问题。
+
 ## eval
 
 eval函数用来执行一个字符串表达式，并返回表达式的值。

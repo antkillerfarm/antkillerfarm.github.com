@@ -399,3 +399,7 @@ https://mp.weixin.qq.com/s/eHzNIO-RSY-uf-K-OwtWfw
 https://mp.weixin.qq.com/s/3el7bPAeJrTQGfWW29ewuA
 
 新技术“红”不过十年，半监督学习为什么是个例外？
+
+https://mp.weixin.qq.com/s/alnji5kgTxc34O7k78uGiA
+
+无监督学习中的目标检测

@@ -229,3 +229,7 @@ https://mp.weixin.qq.com/s/hXGGN1K0LoqAdtyYhCu63w
 https://zhuanlan.zhihu.com/p/70216295
 
 GAN In Text Generation
+
+https://mp.weixin.qq.com/s/isrB3yda9sGgbOb4dBXMrQ
+
+更自由的GAN图像联想：无监督跨类的图像转换模型FUNIT，英伟达&康奈尔大学

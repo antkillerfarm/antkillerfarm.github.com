@@ -231,3 +231,7 @@ https://mp.weixin.qq.com/s/xPkB6nexTo1FpcJnn_okhA
 https://mp.weixin.qq.com/s/LkRgaSWBkE8dJl69IQroIg
 
 造假AI又进化！只要一张照片，说话唱歌视频自动生成，降维打击Deepfakes
+
+https://mp.weixin.qq.com/s/entoLCunjKY7PYWI8-aAgg
+
+谷歌AI秀神技：大脸畸变一键还原，拍照无需抢C位，实时运行毫无PS痕迹

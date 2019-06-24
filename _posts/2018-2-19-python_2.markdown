@@ -301,6 +301,16 @@ https://blog.csdn.net/love1code/article/details/47276683
 
 python中del的用法
 
+## deep copy
+
+https://mp.weixin.qq.com/s/0jjJrclscaA5LkdhHUNkUg
+
+Python的进阶：copy()与deepcopy()区别
+
+https://mp.weixin.qq.com/s/bgk375-KxF-is5dIgV_p4g
+
+5张图彻底理解Python中的浅拷贝与深拷贝
+
 ## Python 2 to Python 3
 
 https://www.linuxzen.com/qian-yi-dao-python-3.html
@@ -397,11 +407,3 @@ otherStyleTime = time.strftime("%Y/%m/%d %H:%M:%S", timeArray)
 {% endhighlight %}
 
 日期方面也是类似的做法。
-
-## 星期处理
-
-`datetime(2002, 12, 4).isoweekday() == 3`
-
-`datetime(2001, 12, 31).isocalendar() == (2002, 1, 1)#(year, week number, weekday)`
-
-从上面的例子还可以看出，isocalendar可以完美的处理跨年问题。
