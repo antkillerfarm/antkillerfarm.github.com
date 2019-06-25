@@ -206,6 +206,10 @@ https://mp.weixin.qq.com/s/JsqhwwJ7wnNcgOuAR6ekxw
 
 理解条件随机场
 
+https://mp.weixin.qq.com/s/79M6ehrQTiUc0l_sO9fUqA
+
+用于序列标注问题的条件随机场（Conditional Random Field, CRF）
+
 ## BiLSTM+CRF
 
 ![](/images/img2/BiLSTM_CRF.jpg)

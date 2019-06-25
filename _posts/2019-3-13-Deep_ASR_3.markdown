@@ -158,6 +158,10 @@ https://mp.weixin.qq.com/s/kk3UdijIbMsyYTd59nSoMw
 
 语音情绪识别, 声源增强, 基频可视化
 
+https://mp.weixin.qq.com/s/5Ddz_Y4-KFV4ioOOmLuQtw
+
+MASR-中文语音识别，提供预训练模型，高识别率
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw

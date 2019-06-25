@@ -46,9 +46,13 @@ https://developer.microsoft.com/en-us/windows/iot
 
 那么Raspberry Pi的成功之道是什么呢？我个人总结起来，有以下几点：
 
-1.把握住了市场对于廉价计算的需求。单片机讲究价格便宜，性能够用就好，而PC追求功能强大。因此，在单片机和PC之间，存在一个巨大的细分市场。这个市场既需要强大的计算能力，也需要便宜的价格。Raspberry Pi很好的满足了这一点。
+- **把握住了市场对于廉价计算的需求**
 
-2.通用的计算平台。很多手机开发板的计算能力和Raspberry Pi类似，但为什么Raspberry Pi取得了成功呢？因为，手机OS主要面向普通用户，对于程序开发不太友好，而Raspberry Pi则更多强调它是一个功能完整的PC。
+单片机讲究价格便宜，性能够用就好，而PC追求功能强大。因此，在单片机和PC之间，存在一个巨大的细分市场。这个市场既需要强大的计算能力，也需要便宜的价格。Raspberry Pi很好的满足了这一点。
+
+- **通用的计算平台**
+
+很多手机开发板的计算能力和Raspberry Pi类似，但为什么Raspberry Pi取得了成功呢？因为，手机OS主要面向普通用户，对于程序开发不太友好，而Raspberry Pi则更多强调它是一个功能完整的PC。
 
 它使用了普通的桌面Linux，集成了完整的开发环境，对于小程序，甚至可以直接在Raspberry Pi上编译执行，就和在PC上一样。
 
@@ -56,13 +60,19 @@ https://developer.microsoft.com/en-us/windows/iot
 
 而国内的开发板，很多仍然停留在手机开发板的阶段，对于通用计算，理解支持都不到位。
 
-3.开放的态度。Raspberry Pi的开放不仅体现在它使用了很多开源软件，更在于它的软硬件都是开源的。这样，也就给了极客群体扩展使用它的机会，反过来又促进了Raspberry Pi的发展。Raspberry Pi和极客群体之间的互动，使得它突破了产品或平台的限制，而构成了一个有机的生态系统。
+- **开放的态度**
+
+Pi的开放不仅体现在它使用了很多开源软件，更在于它的软硬件都是开源的
+
+这样，也就给了极客群体扩展使用它的机会，反过来又促进了Raspberry Pi的发展。Raspberry Pi和极客群体之间的互动，使得它突破了产品或平台的限制，而构成了一个有机的生态系统。
 
 反观国内的开发板生产商，或曰“解决方案提供商”，实际上陷入了一个怪圈。它们为了推销自己的硬件或者软件，而有意对某些部分闭源。但实际上，生态那么差，你就算免费我都懒得用。因为，嵌入式平台都是专有平台，需要程序员投入额外的精力，去理解一些离开该平台就用不到的知识，而这是需要成本的。
 
 Raspberry Pi成立之初的非营利性质，反而帮助它们赚到了这个细分市场中最多的钱，这对于国内众解决方案提供商，真是一个莫大的讽刺。
 
-4.完善的服务。很多国内厂商提供的所谓服务，无非也就是建个网站，让人下载一些资料而已。这样的等级实在太低了。
+- **完善的服务**
+
+很多国内厂商提供的所谓服务，无非也就是建个网站，让人下载一些资料而已。这样的等级实在太低了。
 
 Raspberry Pi建有专门的软件仓库，安装软件就和PC上的Ubuntu一样方便。
 
@@ -92,6 +102,28 @@ http://dcaoyuan.github.io/papers/rpi_cluster/component.html
 
 官方推荐使用NOOBS，但其实直接烧镜像更简单快捷。这里我使用的是Raspbian OS。
 
+安装步骤：
+
+1.列出设备。
+
+`lsblk`
+
+2.烧写。
+
+`unzip -p 2018-11-13-raspbian-stretch.zip | sudo dd of=/dev/sdX bs=4M status=progress conv=fsync`
+
+上述命令中的`progress`用于展示进度条。
+
+官方步骤：
+
+https://www.raspberrypi.org/documentation/installation/installing-images/linux.md
+
+参考：
+
+https://zhuanlan.zhihu.com/p/33030757
+
+为树莓派装上CentOS 7系统
+
 ### 登录Raspberry Pi
 
 1.串口登录
@@ -114,6 +146,8 @@ Raspberry Pi 3B的GPIO接口图如下所示：
 然而这样做之后，串口并不稳定，无法顺利登录设备。原因在于：
 
 http://ju.outofmemory.cn/entry/245310
+
+树莓派3串口(UART)使用问题的解决方法！！！！
 
 2.网口登录
 
@@ -233,6 +267,22 @@ https://mp.weixin.qq.com/s?__biz=MzU1OTMyNDcxMQ==&mid=2247484969&idx=1&sn=29d04f
 
 基于源代码为Raspberry Pi设备构建TensorFlow
 
+## Raspberry Pi 4
+
+2019.6
+
+时间过的好快啊，现在Raspberry Pi 4也出来了。
+
+| 串口 | Raspberry Pi 3 | Raspberry Pi 4 |
+|:--:|:--:|:--:|
+| CPU | BCM2837 | BCM2711 |
+| CPU core | 4 Cortex-A53, 1.2GHz | 4 Cortex-A72, 1.5GHz |
+| GPU | 400MHz VideoCore IV | 500MHz VideoCore IV |
+| USB | 4 USB 2.0 | 2 USB 2.0+2 USB 3.0 |
+| Video | 2560x1600 | Dual 4K |
+
+>VideoCore是Broadcom旗下的GPU产品。
+
 # UPNP（二）
 
 ## upnp-inspector
@@ -268,4 +318,3 @@ https://sourceforge.net/projects/libmcupnp/
 这是GNOME项目的upnp库，使用libsoup处理HTTP，libxml处理XML。它的官网是：
 
 https://wiki.gnome.org/Projects/GUPnP
-

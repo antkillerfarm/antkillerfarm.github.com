@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  makefile, Autotools, premake, Bazel, Jam
+title:  makefile, Autotools, premake, Bazel, Jam, boost
 category: technology 
 ---
 
@@ -218,23 +218,6 @@ https://blog.csdn.net/jadedrip/article/details/1722318
 
 bjam初接触
 
-## boost
-
-boost直接安装：
-
-`sudo apt install libboost-all-dev`
-
-编译：
-
-{% highlight bash %}
-./bootstrap.sh
-./b2 install link=static cxxflags=-fPIC --with-test --prefix=</path/to/install>
-{% endhighlight %}
-
-boost的组件有很多，这里只编译了test组件。
-
->注意：指定生成目录的时候，stage使用stagedir选项，而install使用prefix选项。
-
 # Other
 
 ## blade
@@ -300,3 +283,60 @@ WAF是一个python写的构建工具。
 官网：
 
 https://waf.io
+
+# boost
+
+## 安装&编译
+
+boost直接安装：
+
+`sudo apt install libboost-all-dev`
+
+编译：
+
+{% highlight bash %}
+./bootstrap.sh
+./b2 install link=static cxxflags=-fPIC --with-test --prefix=</path/to/install>
+{% endhighlight %}
+
+boost的组件有很多，这里只编译了test组件。
+
+>注意：指定生成目录的时候，stage使用stagedir选项，而install使用prefix选项。
+
+## boost.test
+
+boost.test是一个C++的单元测试框架。
+
+代码示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cpp/boost_test
+
+要点：
+
+- 测试代码无须main函数。
+
+- 编译：`-DBOOST_TEST_DYN_LINK`
+
+- 链接：`-lboost_unit_test_framework`
+
+参考：
+
+https://www.ibm.com/developerworks/cn/aix/library/au-ctools1_boost/
+
+了解Boost单元测试框架
+
+https://www.ibm.com/developerworks/cn/aix/library/au-ctools2_cppunit/index.html
+
+了解CppUnit
+
+https://www.ibm.com/developerworks/cn/aix/library/au-ctools3_ccptest/
+
+了解CppTest。上面这3篇算是比较权威的C++单元测试工具的教程了。
+
+https://my.oschina.net/vaero/blog/227528
+
+C++单元测试：boost.test
+
+https://remonstrate.wordpress.com/2011/07/06/boost-%e7%9a%84-unit-test/
+
+boost的unit test
