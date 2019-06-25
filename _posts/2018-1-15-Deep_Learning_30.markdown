@@ -155,6 +155,10 @@ https://mp.weixin.qq.com/s/KKK3VEpwL90g6Aro8qtXxQ
 
 学习如何学习的算法：简述元学习研究方向现状
 
+https://mp.weixin.qq.com/s/qoKQwEvOnP384i5Z-_jO1A
+
+CVPR2019最新元学习教程：基于元学习的计算机视觉应用
+
 https://mp.weixin.qq.com/s/KtO3OTZ-bZ6m0ZSI6jTyjw
 
 OpenAI提出Reptile：可扩展的元学习算法

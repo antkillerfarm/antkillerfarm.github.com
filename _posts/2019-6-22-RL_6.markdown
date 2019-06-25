@@ -213,3 +213,7 @@ https://zhuanlan.zhihu.com/p/65364484
 https://zhuanlan.zhihu.com/p/62363784
 
 强化学习之策略搜索
+
+https://zhuanlan.zhihu.com/p/70360272
+
+深度解读Soft Actor-Critic算法
