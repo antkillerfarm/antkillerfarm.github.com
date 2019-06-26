@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（六）——R-FCN, FPN, RetinaNet, CornerNet, Anchor-Free
+title:  深度目标检测（六）——R-FCN, FPN, RetinaNet, CornerNet, CenterNet
 category: Deep Object Detection 
 ---
 
@@ -138,7 +138,17 @@ https://zhuanlan.zhihu.com/p/68786098
 
 # CornerNet
 
-CornerNet是Princeton University的Hei Law的作品。（2018年8月）
+传统的目标检测网络，无论是One-stage还是Two-stage，都有基于Anchor的。Anchor的作用主要在于：**显式枚举出不同的scale和aspect ratio的基准bbox。**
+
+但就本质而言，**框对于物体来说不是一个最好的表示。**框的顶点可能甚至都不在物体上，离物体本身已经很远了。
+
+因此，自2018年以来，逐渐有一些不基于anchor的目标检测方法出现，形成了一股Anchor-Free的热潮。下面将首先介绍一下，该类方法的开山之作——CornerNet。
+
+>CornerNet并非第一个提出Anchor-Free思想的模型，但却是第一个精度和性能达到与anchor base方法同等水平的Anchor-Free模型。
+
+----
+
+CornerNet是Princeton University的Hei Law的作品。（2018.8）
 
 论文：
 
@@ -218,39 +228,21 @@ https://mp.weixin.qq.com/s/8hN1RdYVJQWOqPpejjfXeQ
 
 CornerNet
 
-# Anchor-Free
+# CenterNet
 
-https://zhuanlan.zhihu.com/p/63024247
+CenterNet是中科院、牛津、Huawei Noah’s Ark Lab的一个联合团队的作品。（2019.4）
 
-锚框：Anchor box综述
+论文：
 
-https://mp.weixin.qq.com/s/dYV446meJXtCQVFrLzWV8A
+《CenterNet: Keypoint Triplets for Object Detection》
 
-目标检测中Anchor的认识及理解
+![](/images/img3/CenterNet.png)
 
-https://mp.weixin.qq.com/s/WAx3Zazx9Pq7Lb3vKa510w
+上图是CenterNet的网络结构图。
 
-目标检测最新方向：推翻固有设置，不再一成不变Anchor
 
-https://zhuanlan.zhihu.com/p/64563186
 
-Anchor free深度学习的目标检测方法
-
-https://mp.weixin.qq.com/s/DoN-vha1H-2lHhbFOaVS8w
-
-FoveaBox：目标检测新纪元，无Anchor时代来临！
-
-https://zhuanlan.zhihu.com/p/62198865
-
-最新的Anchor-Free目标检测模型FCOS，现已开源！
-
-https://mp.weixin.qq.com/s/N93TrVnUuvAgfcoHXevTHw
-
-FCOS: 最新的one-stage逐像素目标检测算法
-
-https://mp.weixin.qq.com/s/04h80ubIxjJbT9BxQy5FSw
-
-目标检测：Anchor-Free时代
+参考：
 
 https://mp.weixin.qq.com/s/wWqdjsJ6U86lML0rSohz4A
 
@@ -259,19 +251,3 @@ CenterNet：将目标视为点
 https://zhuanlan.zhihu.com/p/62789701
 
 中科院牛津华为诺亚提出CenterNet，one-stage detector可达47AP，已开源！
-
-https://zhuanlan.zhihu.com/p/66156431
-
-从Densebox到Dubox：更快、性能更优、更易部署的anchor-free目标检测
-
-https://zhuanlan.zhihu.com/p/63273342
-
-聊聊Anchor的"前世今生"（上）
-
-https://zhuanlan.zhihu.com/p/68291859
-
-聊聊Anchor的"前世今生"（下）
-
-https://zhuanlan.zhihu.com/p/62372897
-
-物体检测的轮回：anchor-based与anchor-free

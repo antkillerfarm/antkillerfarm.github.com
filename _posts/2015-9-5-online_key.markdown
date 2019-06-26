@@ -235,7 +235,7 @@ Here Documents
 
 `popd`和`popd +n`用于从栈中删除目录。
 
-`dirs`用于查看栈中元素。
+`dirs -v`用于查看栈中元素。
 
 参考：
 

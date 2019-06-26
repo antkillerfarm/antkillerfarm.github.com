@@ -1,8 +1,58 @@
 ---
 layout: post
-title:  深度目标检测（七）——其它目标检测网络, 目标检测进阶
+title:  深度目标检测（七）——Anchor-Free, 其它目标检测网络, 目标检测进阶
 category: Deep Object Detection 
 ---
+
+# Anchor-Free
+
+https://zhuanlan.zhihu.com/p/63024247
+
+锚框：Anchor box综述
+
+https://mp.weixin.qq.com/s/dYV446meJXtCQVFrLzWV8A
+
+目标检测中Anchor的认识及理解
+
+https://mp.weixin.qq.com/s/WAx3Zazx9Pq7Lb3vKa510w
+
+目标检测最新方向：推翻固有设置，不再一成不变Anchor
+
+https://zhuanlan.zhihu.com/p/64563186
+
+Anchor free深度学习的目标检测方法
+
+https://mp.weixin.qq.com/s/DoN-vha1H-2lHhbFOaVS8w
+
+FoveaBox：目标检测新纪元，无Anchor时代来临！
+
+https://zhuanlan.zhihu.com/p/62198865
+
+最新的Anchor-Free目标检测模型FCOS，现已开源！
+
+https://mp.weixin.qq.com/s/N93TrVnUuvAgfcoHXevTHw
+
+FCOS: 最新的one-stage逐像素目标检测算法
+
+https://mp.weixin.qq.com/s/04h80ubIxjJbT9BxQy5FSw
+
+目标检测：Anchor-Free时代
+
+https://zhuanlan.zhihu.com/p/66156431
+
+从Densebox到Dubox：更快、性能更优、更易部署的anchor-free目标检测
+
+https://zhuanlan.zhihu.com/p/63273342
+
+聊聊Anchor的"前世今生"（上）
+
+https://zhuanlan.zhihu.com/p/68291859
+
+聊聊Anchor的"前世今生"（下）
+
+https://zhuanlan.zhihu.com/p/62372897
+
+物体检测的轮回：anchor-based与anchor-free
 
 # 其它目标检测网络
 

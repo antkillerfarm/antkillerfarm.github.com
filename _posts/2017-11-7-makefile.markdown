@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  makefile, Autotools, premake, Bazel, Jam, boost
+title:  makefile, Autotools, premake, Bazel, Jam
 category: technology 
 ---
 
@@ -248,6 +248,16 @@ http://www.scons.org/
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cpp/scons
 
+从个人角度，我认为一个好的构建工具需要具备以下特点：
+
+- 常见任务书写简单。换句话说就是预先内置好了大量规则。make在这一点上做的不太好，手工任务太多，以致出现了Autotools和Cmake这样的辅助工具。
+
+- 特殊任务扩展简单。make系列工具的DSL都不是完备的语言，这一点是比不了python的。
+
+因此，我是比较看好SCons的。
+
+上述特点在Java的构建工具上也得到了体现，ANT书写麻烦，所以被Maven取代，而Maven扩展不便，又被Gradle挑战。
+
 参考：
 
 https://www.ibm.com/developerworks/cn/linux/l-cn-scons/
@@ -284,59 +294,3 @@ WAF是一个python写的构建工具。
 
 https://waf.io
 
-# boost
-
-## 安装&编译
-
-boost直接安装：
-
-`sudo apt install libboost-all-dev`
-
-编译：
-
-{% highlight bash %}
-./bootstrap.sh
-./b2 install link=static cxxflags=-fPIC --with-test --prefix=</path/to/install>
-{% endhighlight %}
-
-boost的组件有很多，这里只编译了test组件。
-
->注意：指定生成目录的时候，stage使用stagedir选项，而install使用prefix选项。
-
-## boost.test
-
-boost.test是一个C++的单元测试框架。
-
-代码示例：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cpp/boost_test
-
-要点：
-
-- 测试代码无须main函数。
-
-- 编译：`-DBOOST_TEST_DYN_LINK`
-
-- 链接：`-lboost_unit_test_framework`
-
-参考：
-
-https://www.ibm.com/developerworks/cn/aix/library/au-ctools1_boost/
-
-了解Boost单元测试框架
-
-https://www.ibm.com/developerworks/cn/aix/library/au-ctools2_cppunit/index.html
-
-了解CppUnit
-
-https://www.ibm.com/developerworks/cn/aix/library/au-ctools3_ccptest/
-
-了解CppTest。上面这3篇算是比较权威的C++单元测试工具的教程了。
-
-https://my.oschina.net/vaero/blog/227528
-
-C++单元测试：boost.test
-
-https://remonstrate.wordpress.com/2011/07/06/boost-%e7%9a%84-unit-test/
-
-boost的unit test

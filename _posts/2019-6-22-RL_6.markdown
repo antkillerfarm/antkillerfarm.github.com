@@ -216,4 +216,4 @@ https://zhuanlan.zhihu.com/p/62363784
 
 https://zhuanlan.zhihu.com/p/70360272
 
-深度解读Soft Actor-Critic算法
+最前沿：深度解读Soft Actor-Critic算法

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  IT杂谈, Sikuli
+title:  IT杂谈, Sikuli, boost
 category: technology 
 ---
 
@@ -137,3 +137,64 @@ https://mp.weixin.qq.com/s/MYA6l9V4BYIZO8Jgtds6GA
 http://www.cnblogs.com/fnng/archive/2012/12/15/2819367.html
 
 图形脚本语言sikuli
+
+# boost
+
+## 安装&编译
+
+boost直接安装：
+
+`sudo apt install libboost-all-dev`
+
+编译：
+
+{% highlight bash %}
+./bootstrap.sh
+./b2 install link=static cxxflags=-fPIC --with-test --prefix=</path/to/install>
+{% endhighlight %}
+
+boost的组件有很多，这里只编译了test组件。
+
+>注意：指定生成目录的时候，stage使用stagedir选项，而install使用prefix选项。
+
+## boost.test
+
+boost.test是一个C++的单元测试框架。
+
+代码示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cpp/boost_test
+
+要点：
+
+- 测试代码无须main函数。
+
+- 编译：`-DBOOST_TEST_DYN_LINK`
+
+- 链接：`-lboost_unit_test_framework`
+
+打印所有的log：
+
+`unit_test --log_level=all`
+
+参考：
+
+https://www.ibm.com/developerworks/cn/aix/library/au-ctools1_boost/
+
+了解Boost单元测试框架
+
+https://www.ibm.com/developerworks/cn/aix/library/au-ctools2_cppunit/index.html
+
+了解CppUnit
+
+https://www.ibm.com/developerworks/cn/aix/library/au-ctools3_ccptest/
+
+了解CppTest。上面这3篇算是比较权威的C++单元测试工具的教程了。
+
+https://my.oschina.net/vaero/blog/227528
+
+C++单元测试：boost.test
+
+https://remonstrate.wordpress.com/2011/07/06/boost-%e7%9a%84-unit-test/
+
+boost的unit test

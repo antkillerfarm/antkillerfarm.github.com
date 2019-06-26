@@ -146,7 +146,7 @@ gcc还可以用`__attribute__((packed))`
 
 # Java中创建对象的时候代码执行顺序(这个问题C++应该也存在)
 
-http://jacob777.blog.sohu.com/106426297.html
+https://blog.csdn.net/hahahacff/article/details/39504699
 
 # 宏展开函数的小技巧
 
@@ -232,6 +232,24 @@ C#
 http://blog.csdn.net/cnsword/article/details/8034947
 
 C++11老关键字的新含义(auto, using，extern)
+
+6.列表初始化
+
+{% highlight cpp %}
+struct Studnet
+{
+    char* name;
+    int age;
+};
+Studnet s={"dablelv",18};
+
+std::vector<int> nVec(10，1);　// 包含10个元素，且值为1 
+std::vector<int> nVec{10，1};　// 包含2个元素，值分别为10,1
+{% endhighlight %}
+
+https://blog.csdn.net/sevenjoin/article/details/81779221
+
+C++11列表初始化-花括号的使用
 
 # 添加废弃提示
 
@@ -336,7 +354,7 @@ static struct resource pxa27x_resource_ohci[] = {
 };
 {% endhighlight %}
 
-这些方法虽然不知道是C的那个标准引入的，但是见到有代码这样用。
+这些方法虽然不知道是C的哪个标准引入的，但是见到有代码这样用。
 
 # switch...case
 
