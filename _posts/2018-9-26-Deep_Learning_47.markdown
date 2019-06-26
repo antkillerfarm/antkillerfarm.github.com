@@ -379,3 +379,7 @@ https://mp.weixin.qq.com/s/29y2bg4KE-HNwsimD3aauw
 https://zhuanlan.zhihu.com/p/70389596
 
 一批高质量中文BERT预训练模型请查收（上）
+
+https://mp.weixin.qq.com/s/h1VUSY7_UZF3PmjSN0DMSg
+
+从One-hot, Word embedding到Transformer，一步步教你理解Bert

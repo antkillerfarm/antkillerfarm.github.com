@@ -72,6 +72,10 @@ https://zhuanlan.zhihu.com/p/65002974
 
 《Towards Principled Methods for Training GAN》阅读笔记
 
+https://mp.weixin.qq.com/s/cBj6n8BlqLjt8M8N4Tc5qQ
+
+详解对偶与WGAN
+
 ## 其他细节
 
 1.GAN的目的是在高维非凸的参数空间中找到纳什均衡点（Nash equilibrium），GAN的纳什均衡点是一个鞍点。而SGD只会找到局部极小值，所以GAN中的优化器不常用SGD。

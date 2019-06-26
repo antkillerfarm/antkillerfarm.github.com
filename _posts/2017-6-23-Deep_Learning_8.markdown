@@ -142,6 +142,10 @@ https://mp.weixin.qq.com/s/kdmmgVdWxz2nJPmjcprvqg
 
 机器学习中的编码器-解码器结构哲学
 
+https://mp.weixin.qq.com/s/OcrT2-sAWJg-ILdHwi4t5Q
+
+seq2seq最新变体，稀疏序列模型
+
 # CNN进化史
 
 ## 计算机视觉

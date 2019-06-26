@@ -240,14 +240,10 @@ CenterNet是中科院、牛津、Huawei Noah’s Ark Lab的一个联合团队的
 
 上图是CenterNet的网络结构图。
 
+正如之前提到的，**框对于物体来说不是一个最好的表示**。同理，Corner也不是什么特别好的表示：绝大多数情况下，Corner同样是远离物体的。
 
+也正是由于Corner和物体的关联度不大，CornerNet才发明了corner pooling操作，用以提取Corner。
 
-参考：
+有鉴于此，CenterNet除了Corner之外，还添加了Center的预测分支。这主要基于以下假设：**如果目标框是准确的，那么在其中心区域能够检测到目标中心点的概率就会很高，反之亦然。**
 
-https://mp.weixin.qq.com/s/wWqdjsJ6U86lML0rSohz4A
-
-CenterNet：将目标视为点
-
-https://zhuanlan.zhihu.com/p/62789701
-
-中科院牛津华为诺亚提出CenterNet，one-stage detector可达47AP，已开源！
+因此，首先利用左上和右下两个角点生成初始目标框，对每个预测框定义一个中心区域，然后判断每个目标框的中心区域是否含有中心点，若有则保留该目标框，若无则删除该目标框。
