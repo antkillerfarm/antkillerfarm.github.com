@@ -242,10 +242,6 @@ https://mp.weixin.qq.com/s/jKIo1SnrbLyPpFhgX--7mg
 
 谷歌推出“流体标注”AI辅助工具，图像标注速度提升3倍！
 
-https://mp.weixin.qq.com/s/30cxIX9aKIpELC8H4_k8Gg
-
-比TFLite快2倍！FB开源移动深度学习优化库QNNPACK
-
 https://mp.weixin.qq.com/s/qT8EhRuVn83OFpy94Ywqiw
 
 HiddenLayer：可视化PyTorch、TensorFlow神经网络图的轻量级工具！

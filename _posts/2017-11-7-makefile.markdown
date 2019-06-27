@@ -170,6 +170,30 @@ https://github.com/bazelbuild/bazel/releases
 
 `./bazel-<version>-installer-linux-x86_64.sh --user`
 
+bazel使用Starlark语言编写扩展，后者的语法主要源自python，但并不是通用语言，也没有python那么强的功能。
+
+Starlark官网：
+
+https://docs.bazel.build/versions/master/skylark/language.html
+
+使用示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cpp/bazel
+
+- 每个项目的根目录必须有一个WORKSPACE文件。
+
+- 其他源代码目录下有一个BUILD文件。
+
+编译：
+
+`bazel build <target>`
+
+这里的target在上例中就是cc_binary中的`name = "test"`：
+
+`bazel build test`
+
+bazel还可以从网上下载依赖文件：`http_archive`
+
 参考：
 
 http://www.cnblogs.com/Jack47/p/bazel-faq.html
@@ -179,6 +203,10 @@ Google软件构建工具Bazel FAQ
 https://zhuanlan.zhihu.com/p/47397799
 
 bazel项目添加automake/autoconf项目解决办法
+
+https://www.cnblogs.com/puyangsky/p/7596282.html
+
+bazel的使用
 
 # Jam
 
@@ -248,6 +276,8 @@ http://www.scons.org/
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cpp/scons
 
+项目的工程文件为SConstruct。
+
 从个人角度，我认为一个好的构建工具需要具备以下特点：
 
 - 常见任务书写简单。换句话说就是预先内置好了大量规则。make在这一点上做的不太好，手工任务太多，以致出现了Autotools和Cmake这样的辅助工具。
@@ -293,4 +323,3 @@ WAF是一个python写的构建工具。
 官网：
 
 https://waf.io
-

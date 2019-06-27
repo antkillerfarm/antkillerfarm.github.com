@@ -312,10 +312,6 @@ https://mp.weixin.qq.com/s/jdM0w4hRgkWmul9Bcp2oCw
 
 揭秘CVPR2017 WebVision图片分类竞赛冠军背后的技术
 
-https://mp.weixin.qq.com/s/5VHPc99NsFkz1Vl5iU8qkg
-
-详解如何用深度学习消除背景，实现抠图
-
 https://mp.weixin.qq.com/s/SN1Fc48sa4NZzm_K16kUnw
 
 通过空间上下文特征进行阴影检测

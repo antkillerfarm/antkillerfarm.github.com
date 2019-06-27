@@ -224,10 +224,6 @@ https://mp.weixin.qq.com/s/deepxMWCpIEe3jk_kanfMg
 
 金字塔注意力网络：一种利用底层像素与高级特征的语义分割网络
 
-https://mp.weixin.qq.com/s/LVD7rry0BajGh9iQg-Y2jw
-
-MIT用AI实现3分钟自动抠图，精细到头发丝
-
 https://mp.weixin.qq.com/s/5n3jpvv_LxnHB0w4hsCEzQ
 
 NVIDIA ECCV18论文:超像素采样网络助力语义分割与光流估计
@@ -243,10 +239,6 @@ UC伯克利提出基于自适应相似场的语义分割
 https://zhuanlan.zhihu.com/p/43774180
 
 提升密集预测的平滑的空洞卷积
-
-https://mp.weixin.qq.com/s/01D9wYK92i4PjjGcwFTxOw
-
-揭秘阿里巴巴神奇的人物抠图算法内幕
 
 https://mp.weixin.qq.com/s/sjD36kUDQ5iCmIKpR8_rlA
 
@@ -347,10 +339,6 @@ Decoders对于语义分割的重要性
 https://mp.weixin.qq.com/s/eackv0HypWm3mTW9OAHv8g
 
 旷视实时语义分割技术DFANet：高清虚化无需双摄
-
-https://mp.weixin.qq.com/s/-FmBrHJ6IGVIiT5PwNhczw
-
-那些一键抠图的软件是怎么做到的？这些语义分割方法了解一下
 
 https://zhuanlan.zhihu.com/p/62652145
 

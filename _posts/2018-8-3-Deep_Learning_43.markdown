@@ -46,6 +46,58 @@ https://mp.weixin.qq.com/s/qD6_ygJjnV5rbppzy0WEmg
 
 比无所不能的DIP更强大的图像恢复方法：DeepRED
 
+# 抠图
+
+https://mp.weixin.qq.com/s/dRa1mss4dve487FhS4KjTg
+
+AI帮你抠图，阿里妈妈自研算法入选国际顶级学术会议
+
+https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
+
+谷歌提出多图像抠图算法，并弥补水印技术的一致性漏洞
+
+https://mp.weixin.qq.com/s/5VHPc99NsFkz1Vl5iU8qkg
+
+详解如何用深度学习消除背景，实现抠图
+
+https://mp.weixin.qq.com/s/E11HfgE8dU4xIvJwOn_Lwg
+
+揭秘阿里妈妈智能抠图算法：简单几笔，精准抠图
+
+https://mp.weixin.qq.com/s/-FmBrHJ6IGVIiT5PwNhczw
+
+那些一键抠图的软件是怎么做到的？这些语义分割方法了解一下
+
+https://mp.weixin.qq.com/s/01D9wYK92i4PjjGcwFTxOw
+
+揭秘阿里巴巴神奇的人物抠图算法内幕
+
+https://mp.weixin.qq.com/s/LVD7rry0BajGh9iQg-Y2jw
+
+MIT用AI实现3分钟自动抠图，精细到头发丝
+
+https://mp.weixin.qq.com/s/4BvvwV11f9MrrYyLwUrX9w
+
+还在用ps抠图抠瞎眼？机器学习通用背景去除产品诞生记
+
+## deepfake
+
+https://zhuanlan.zhihu.com/p/34042498
+
+深度解密换脸应用Deepfake
+
+https://mp.weixin.qq.com/s/gvPTNtrd5Du9Oablp3jZYw
+
+如何使用DeepFake实现视频换脸
+
+https://mp.weixin.qq.com/s/Lzv3wQR2DOrw5AmyCXWvsw
+
+拯救北京卫视！如何用Deepfakes把“吴秀波”的脸换掉
+
+https://mp.weixin.qq.com/s/rkAVGTNca1zudrrutXll0w
+
+传统图像算法+深度学习方法结合会有什么样的火花？本文主要描述了deepfake中非深度学习的算法部分
+
 ## 参考
 
 https://mp.weixin.qq.com/s/YbRo7TJ3j4dloSmKX40uAA
@@ -75,18 +127,6 @@ https://mp.weixin.qq.com/s/73mkWlqJsVdu9m1kPDvfbQ
 https://mp.weixin.qq.com/s/gEFzogsteK_1VeywbQxbgQ
 
 (GAN)延时摄影视频的生成
-
-https://zhuanlan.zhihu.com/p/34042498
-
-深度解密换脸应用Deepfake
-
-https://mp.weixin.qq.com/s/gvPTNtrd5Du9Oablp3jZYw
-
-如何使用DeepFake实现视频换脸
-
-https://mp.weixin.qq.com/s/Lzv3wQR2DOrw5AmyCXWvsw
-
-拯救北京卫视！如何用Deepfakes把“吴秀波”的脸换掉
 
 https://mp.weixin.qq.com/s/BTzV7ulweqFQokdQ-AX2Rg
 
@@ -196,10 +236,6 @@ https://mp.weixin.qq.com/s/UySQTv8uuGungjxFNeHbRw
 
 给动漫人物轻松换装、编舞，这家游戏公司用GAN做到了！
 
-https://mp.weixin.qq.com/s/dRa1mss4dve487FhS4KjTg
-
-AI帮你抠图，阿里妈妈自研算法入选国际顶级学术会议
-
 https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652026913&idx=2&sn=fc38fa94211c277d616f4f37aa6d8b5d
 
 pix2pix 3D版：几笔线条生成超炫猫咪霹雳舞！
@@ -300,10 +336,6 @@ https://mp.weixin.qq.com/s/-iPQBni4dWvdARAy9_T32g
 
 神还原女神照片！GAN为百年旧照上色
 
-https://mp.weixin.qq.com/s/Y35r_UbNV1bekj9KVvi1_A
-
-谷歌提出多图像抠图算法，并弥补水印技术的一致性漏洞
-
 https://mp.weixin.qq.com/s/zvEIUJpgrjSM9-TLSzr3sQ
 
 为什么说GAN很快就要替代现有摄影技术了？
@@ -331,43 +363,3 @@ https://mp.weixin.qq.com/s/eLHhmPMNSe1QxDKv6Lk9yw
 https://mp.weixin.qq.com/s/1QQ2_vkQ_vLvuxvR-fboQg
 
 大三少年造出AI写意画家，像人类一样挥笔作画
-
-https://mp.weixin.qq.com/s/hx2CFdosvydg2xly8vuVJA
-
-AI还原半世纪前的黑白电影和照片：效果惊艳在线可玩，网友大呼“鹅妹子嘤”
-
-https://xyang35.github.io/2017/08/20/paper-2/
-
-图像去雾算法专题
-
-https://mp.weixin.qq.com/s/H0kl1i4P3Dak2COdzQNG4A
-
-一图生万物！英伟达推超强图像转换神器，小样本一秒猫变狗（FUNIT）
-
-https://mp.weixin.qq.com/s/VbRxHizSBZbUnmTlhK9GPw
-
-GitHub5800星！一键还原百年老电影、黑白旧照片本色
-
-https://mp.weixin.qq.com/s/3hv44bkXYHn2wN_2OZmhxA
-
-四大指标超现有模型！少样本的无监督图像翻译效果逆天（FUNIT）
-
-https://mp.weixin.qq.com/s/uhbKu69K6N-pxFZCRwAz1g
-
-秒变“女装大佬”！Snapchat推出性别转换滤镜，离线实时渲染
-
-https://mp.weixin.qq.com/s/H2nqQi2EVQ_EyeDNCRD3Cg
-
-一文回顾AI绘画的成长之路：从简笔画到真实人脸生成
-
-https://mp.weixin.qq.com/s/ttdr14ryy6C-Fcm06kC7pQ
-
-CVPR 2019 Oral 亮风台提出端到端投影光学补偿算法
-
-https://zhuanlan.zhihu.com/p/61761901
-
-LearningToPaint：一个绘画AI
-
-https://mp.weixin.qq.com/s/JJ2V9coeDI7WvWyDZNlVqA
-
-你的老婆你做主：画风自定义，内容自定义，南加大AI助你走上人生巅峰

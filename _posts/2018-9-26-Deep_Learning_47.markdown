@@ -383,3 +383,7 @@ https://zhuanlan.zhihu.com/p/70389596
 https://mp.weixin.qq.com/s/h1VUSY7_UZF3PmjSN0DMSg
 
 从One-hot, Word embedding到Transformer，一步步教你理解Bert
+
+https://mp.weixin.qq.com/s/UJlmjFHWhnlXXJoRv4zkEQ
+
+虽被BERT碾压，但还是有必要谈谈BERT时代与后时代的NLP

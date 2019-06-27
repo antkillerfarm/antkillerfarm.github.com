@@ -76,6 +76,20 @@ https://mp.weixin.qq.com/s/kEC-5huq6cFjd1iPjSuK-g
 
 5行代码秀碾压，比Keras还好用的fastai来了，尝鲜PyTorch 1.0必备伴侣
 
+## QNNPACK
+
+QNNPACK是FB推出的一个矩阵运算加速库，已经集成到pytorch中。
+
+代码：
+
+https://github.com/pytorch/qnnpack
+
+参考：
+
+https://mp.weixin.qq.com/s/30cxIX9aKIpELC8H4_k8Gg
+
+比TFLite快2倍！FB开源移动深度学习优化库QNNPACK
+
 ## 细节
 
 ### op的C++实现

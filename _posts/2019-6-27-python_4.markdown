@@ -1,10 +1,90 @@
 ---
 layout: post
-title:  Python（四）
+title:  Python（五）
 category: language 
 ---
 
 # Python
+
+https://mp.weixin.qq.com/s/DMK3gwMKbpsfOrWMxjb5lg
+
+不到20行代码，用Python做一个智能聊天机器人
+
+https://mp.weixin.qq.com/s/wIXCIMzZmh75SV-qJIKbCw
+
+Python程序员最常犯的10个错误，你中招了吗？
+
+https://mp.weixin.qq.com/s/W1j4G_QQqlzDYru231dZFA
+
+Python：编写条件分支代码的技巧
+
+http://www.cnblogs.com/Python666/p/7506546.html
+
+Python单例模式
+
+https://mp.weixin.qq.com/s/ST7TQ5Wkn_owv5bpTiTKVA
+
+2018年最好用的5个python网站开发框架
+
+https://mp.weixin.qq.com/s/3nr8uHnRoSgs-Zu6QxGiqw
+
+Python实现数据库一键导出为Excel表格！大大的增加了工作效率！
+
+https://mp.weixin.qq.com/s/dmJI2GlzgUJgYllfVOPt4g
+
+两句话轻松掌握Python最难知识点
+
+https://mp.weixin.qq.com/s/PkzD1ig_D5AIUTkO5zH8pQ
+
+Python字节码介绍
+
+https://mp.weixin.qq.com/s/_ZvF6jK5Jo4rFGwHvEoAig
+
+一文读懂Python装饰器由来
+
+https://mp.weixin.qq.com/s/RdnAQPAn9E8qDvtnCEgcKw
+
+Tkinter可视化窗口
+
+https://mp.weixin.qq.com/s/_fi4fpfN8Whe7_ZpkPL0tA
+
+怎么给Python写C扩展？
+
+https://mp.weixin.qq.com/s/-erFsz8NvLZ5mOIXyDosFg
+
+使用PyInstaller将python转成可执行文件exe笔记
+
+https://mp.weixin.qq.com/s/b19SLduKoiOIeE5CA3ZOjg
+
+Python标准库之LRU缓存实现学习
+
+https://mp.weixin.qq.com/s/VPCUd5op6Vd-b0LbFEMSYQ
+
+秒懂Python编程中的if __name__ == 'main' 的作用和原理
+
+https://mp.weixin.qq.com/s/FtlAkInyXgvUxDnSCikTIw
+
+全面深入理解Python面向对象编程
+
+https://mp.weixin.qq.com/s/_PtdgGElw0mvr_rRm5xrCg
+
+Python性能优化的20条招数
+
+https://mp.weixin.qq.com/s/0Rpbuo7LCRo1SnbE8NcH4Q
+
+快速学习Python的全套14张思维导图
+
+https://mp.weixin.qq.com/s/Cujl2nxITCuZL7B72uKVrQ
+
+为什么Python这么慢？
+
+https://mp.weixin.qq.com/s/a3YTmQMfpnviHnidXrhYtg
+
+这17个骚操作你都Ok吗
+
+https://zhuanlan.zhihu.com/p/41293278
+
+把python翻译成C++
 
 https://mp.weixin.qq.com/s/XV4LOBM1pO0N8oShZl7MzQ
 

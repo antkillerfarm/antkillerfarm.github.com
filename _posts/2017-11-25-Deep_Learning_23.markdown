@@ -230,6 +230,10 @@ https://zhuanlan.zhihu.com/p/65400509
 
 浙大CAD&CG实验室提出PVNet，实时且效果超群，已开源
 
+https://zhuanlan.zhihu.com/p/69177318
+
+通过自适应的图卷积网络建模骨骼点数据进行行为识别
+
 # LSTM进阶
 
 ## 《Long short-term memory》

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  C/C++编程心得（二）, Python（三）
+title:  C/C++编程心得（二）, boost, Python（三）
 category: language 
 ---
 
@@ -118,6 +118,83 @@ https://mp.weixin.qq.com/s/Hpn7KqYlBKz0JdryiozqyQ
 
 每个开发者都应该了解的一些C++特性
 
+# boost
+
+## 安装&编译
+
+boost直接安装：
+
+`sudo apt install libboost-all-dev`
+
+编译：
+
+{% highlight bash %}
+./bootstrap.sh
+./b2 install link=static cxxflags=-fPIC --with-test --prefix=</path/to/install>
+{% endhighlight %}
+
+boost的组件有很多，这里只编译了test组件。
+
+>注意：指定生成目录的时候，stage使用stagedir选项，而install使用prefix选项。
+
+## boost.test
+
+boost.test是一个C++的单元测试框架。
+
+代码示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cpp/boost_test
+
+要点：
+
+- 测试代码无须main函数。
+
+- 编译：`-DBOOST_TEST_DYN_LINK`
+
+- 链接：`-lboost_unit_test_framework`
+
+打印所有的log：
+
+`unit_test --log_level=all`
+
+参考：
+
+https://www.ibm.com/developerworks/cn/aix/library/au-ctools1_boost/
+
+了解Boost单元测试框架
+
+https://www.ibm.com/developerworks/cn/aix/library/au-ctools2_cppunit/index.html
+
+了解CppUnit
+
+https://www.ibm.com/developerworks/cn/aix/library/au-ctools3_ccptest/
+
+了解CppTest。上面这3篇算是比较权威的C++单元测试工具的教程了，作者都是Arpan Sen。
+
+https://my.oschina.net/vaero/blog/227528
+
+C++单元测试：boost.test
+
+https://remonstrate.wordpress.com/2011/07/06/boost-%e7%9a%84-unit-test/
+
+boost的unit test
+
+# googletest
+
+安装：
+
+`sudo apt install libgtest-dev`
+
+代码：
+
+https://github.com/google/googletest
+
+参考：
+
+https://www.ibm.com/developerworks/cn/aix/library/au-googletestingframework.html
+
+Google C++ Testing Framework简介
+
 # Python
 
 ## 星期处理
@@ -186,103 +263,6 @@ https://mp.weixin.qq.com/s/HcmOmwWQFBIOZs8p3nr7CQ
 
 让Python更加充分的使用Sqlite3
 
-## python调用GTK函数的一般规则
-
-众所周知，GTK库是用C语言编写的，其相关的文档提供的也是C函数的接口，python接口的文档相对较少，获得也不太容易。因此有必要掌握一下这方面基本的命名规则。（这里只讲方法，对深层次的调用原理不做探究。）
-
-1）类初始化函数
-
-C:`GtkWidget * gtk_button_new (void);`
-
-python:`button = Gtk.Button()`
-
-这里除了把C函数式的写法，替换成python的类的写法之外，并无其他差异。
-
-2）普通类成员函数
-
-C:`void gtk_container_add (GtkContainer *container, GtkWidget *widget);`
-
-python:`button.add(image)`
-
-可以看出，C函数的第一个表示self类指针的参数被省略掉了。
-
-3）回调函数
-
-这里以按钮的click事件回调为例：
-
-C:`void user_function (GtkButton *button, gpointer user_data)`
-
-python:
-
-`button.connect("clicked", self.playToggled)`
-
-`def playToggled(self, w):`
-
-这里的情况要复杂的多。首先在事件回调注册的时候，由于我们并没有给user_data赋值，因此照理说playToggled函数，只有button这一个参数。但实际传递给playToggled函数的有两个参数，self是一个用于占位的参数，w对应button，没有东西对应user_data。
-
-4）用于输出的参数
-
-C:`void gst_message_parse_error (GstMessage *message, GError **gerror, gchar **debug);`
-
-python:`err, debug = message.parse_error()`
-
-这个例子中的gerror和debug都是用于输出的参数。如果只想得到其一，还可用以下方法:
-
-`debug = message.parse_error()[2]`
-
-5）枚举类型
-
-C:
-
-{% highlight c %}
-enum GstSeekFlags
-{
-  GST_SEEK_FLAG_FLUSH,
-  ...
-}
-{% endhighlight %}
-
-python:`Gst.SeekFlags.FLUSH`
-
-6）宏常量
-
-C:`#define GST_CLOCK_TIME_NONE ((GstClockTime) -1)`
-
-python:`Gst.CLOCK_TIME_NONE`
-
-7）类型转换
-
-大多数情况下，类型转换自动完成，并无什么问题。这里只讨论特殊的情况。
-
-C:
-
-{% highlight c %}
-gst_element_seek (pipeline, 1.0, GST_FORMAT_TIME, GST_SEEK_FLAG_FLUSH,
-                         GST_SEEK_TYPE_SET, time_nanoseconds,
-                         GST_SEEK_TYPE_NONE, GST_CLOCK_TIME_NONE))
-{% endhighlight %}
-
-python:
-
-{% highlight python %}
-self.player.seek(1.0, Gst.Format.TIME, Gst.SeekFlags.FLUSH, Gst.SeekType.SET,\
-                 time_nanoseconds, Gst.SeekType.NONE, Gst.CLOCK_TIME_NONE)
-{% endhighlight %}
-
-这里首先按照一般的方法，将C代码转化成python代码。但是运行之后，产生如下错误：
-
-`OverflowError: long too big to convert`
-
-究其原因，gst_element_seek的最后一个参数是uint64类型的。但python原生并不支持该类型，而是将之转换成int类型（实际上是int64类型），这样的话，GST_CLOCK_TIME_NONE的值显然超出了int64所能表示的范围。
-
-解决的办法是使用ctypes库，将
-
-`Gst.CLOCK_TIME_NONE`
-
-改为
-
-`c_long(Gst.CLOCK_TIME_NONE).value`
-
 ## zip
 
 Python的zip函数和数据压缩的zip算法没有任何关系。
@@ -347,3 +327,41 @@ python调用java程序--jpype
 (filepath,tempfilename) = os.path.split(filename)
 (shotname,extension) = os.path.splitext(tempfilename)
 {% endhighlight %}
+
+## NetworkX
+
+NetworkX是一个用Python语言开发的图论与复杂网络建模工具，内置了常用的图与复杂网络分析算法，可以方便的进行复杂网络数据分析、仿真建模等工作。
+
+官网：
+
+https://networkx.github.io/
+
+参考：
+
+https://www.cnblogs.com/kaituorensheng/p/5423131.html
+
+python复杂网络分析库NetworkX
+
+## tqdm
+
+tqdm是一个快速，可扩展的进度条。
+
+代码：
+
+https://github.com/tqdm/tqdm
+
+示例：
+
+{% highlight python %}
+from tqdm import tqdm
+for i in tqdm(range(9)):
+    ...
+{% endhighlight %}
+
+效果：
+
+`76%|████████████████████            | 7641/10000 [00:34<00:10, 222.22 it/s]`
+
+其实还有一个更简单的办法：
+
+`print("\r" + "xxx", end="")`：这样的话会先把console里面当前的行清除掉、再输出xxx。

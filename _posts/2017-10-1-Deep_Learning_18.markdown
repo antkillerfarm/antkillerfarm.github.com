@@ -148,7 +148,7 @@ https://mp.weixin.qq.com/s/fZv9FgbdQ1bWPoNdl9sF1A
 
 “宝石迷阵”与信息检索
 
-https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247488366&idx=1&sn=01baaf8b6c6a2c727bb9e0e2101f803b
+https://mp.weixin.qq.com/s/Vvo3Ti3XiGQz0IwLgATfWQ
 
 电商搜索算法技术的演进
 
@@ -273,10 +273,6 @@ https://zhuanlan.zhihu.com/p/25515361
 https://zhuanlan.zhihu.com/p/27794982
 
 语义分割中的深度学习方法全解：从FCN、SegNet到各代DeepLab
-
-https://mp.weixin.qq.com/s/4BvvwV11f9MrrYyLwUrX9w
-
-还在用ps抠图抠瞎眼？机器学习通用背景去除产品诞生记
 
 https://mp.weixin.qq.com/s/mQqEe4LC0VHBH2ZAtFanWQ
 

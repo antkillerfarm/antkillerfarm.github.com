@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十九）——视频处理
+title:  深度学习（三十九）——视频处理, Mask R-CNN
 category: DL 
 ---
 
@@ -213,3 +213,141 @@ https://mp.weixin.qq.com/s/pDMBnX3CeQbv8hr-79Mvvg
 https://mp.weixin.qq.com/s/GCCqIm4Q7UfUhhiqFbBS3g
 
 Pytorch视频分类教程
+
+https://mp.weixin.qq.com/s/ua8V2g2uZAditKui-IcoKw
+
+物体检测算法在视频中的应用
+
+# Mask R-CNN
+
+Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的网络。它是何恺明2017年的新作。
+
+论文：
+
+《Mask R-CNN》
+
+只有非官方的代码：
+
+Caffe版本：
+
+https://github.com/jasjeetIM/Mask-RCNN
+
+TensorFlow版本：
+
+https://github.com/hillox/TFMaskRCNN
+
+MXNet版本：
+
+https://github.com/TuSimple/mx-maskrcnn
+
+Pytorch版本：
+
+https://github.com/wannabeOG/Mask-RCNN
+
+![](/images/img2/mask_rcnn.png)
+
+上图是Mask R-CNN的网络结构图。它实际上就是在Faster R-CNN的基础上添加了一个FCN。
+
+![](/images/img3/Mask_R-CNN.png)
+
+上图也是Mask R-CNN的网络结构图，但它对Faster R-CNN中与本主题无关的部分做了省略。
+
+Mask R-CNN的要点主要有：
+
+- **RoI Align**
+
+RoI Align避免对RoI的边界或者块（bins）做任何量化，例如直接使用x/16代替[x/16]。
+
+然而这就引来一个问题：如果x/16不是整数该怎么采样呢？
+
+答案：对临近的整数采样点，使用双线性插值（bilinear interpolation）拟合，得到非整数采样点的值。
+
+- **独立的类别预测**
+
+把loss由`tf.nn.softmax_cross_entropy_with_logits`换成`tf.nn.sigmoid_cross_entropy_with_logits`。参见《深度目标检测（五）》的YOLOv3一节。没错，YOLOv3借鉴了Mask R-CNN的这一设计思路。
+
+- **对象实例分割**
+
+Mask R-CNN只对RoI Align后的区域进行分割，而不像U-NET等会对全景进行分割。因此，更适合抠图之类的应用。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/25954683
+
+Mask R-CNN个人理解
+
+https://mp.weixin.qq.com/s/E0P2B798pukbtRarWooUkg
+
+Mask R-CNN的Keras/TensorFlow/Pytorch代码实现
+
+https://zhuanlan.zhihu.com/p/30967656
+
+从R-CNN到Mask R-CNN
+
+https://www.zhihu.com/question/57403701
+
+如何评价Kaiming He最新的Mask R-CNN?
+
+http://zh.gluon.ai/chapter_computer-vision/object-detection.html
+
+使用卷积神经网络的物体检测
+
+https://mp.weixin.qq.com/s/4BRwMEr6rFYvkmKXM7rYLg
+
+效果惊艳！FAIR提出人体姿势估计新模型，升级版Mask-RCNN
+
+https://mp.weixin.qq.com/s/UXzhMkGIwqek4zHVNPgRbA
+
+Mask-RCNN论文解读
+
+https://mp.weixin.qq.com/s/_ohsx7kzgU-szP-K9_Yv1w
+
+优于Mask R-CNN，港中文&腾讯优图提出PANet实例分割框架
+
+https://mp.weixin.qq.com/s/uJpVqRpWWaK2cY8fYGlRag
+
+先理解Mask R-CNN的工作原理，然后构建颜色填充器应用
+
+https://mp.weixin.qq.com/s/x_9klKK_hIiFV1fGhxZIVA
+
+Mask R-CNN神应用：像英剧《黑镜》一样屏蔽人像
+
+https://mp.weixin.qq.com/s/V6m1xBS2vZQ6VRlAg5zOSA
+
+干掉照片中那些讨厌的家伙！Mask R-CNN助你一键“除”人！
+
+https://mp.weixin.qq.com/s/48eIhnBdYzgEiV_wESHsJA
+
+如何使用Mask RCNN模型进行图像实体分割？
+
+https://mp.weixin.qq.com/s/G_2tuZlaxX5w-2c1DO8FwQ
+
+利用边缘监督信息加速Mask R-CNN实例分割训练
+
+https://mp.weixin.qq.com/s/Ug4ZEQWVF5UjhqWw4Kwb8A
+
+Mask R-CNN抢车位，快人一步！
+
+https://zhuanlan.zhihu.com/p/47579399
+
+R-CNN、Fast/Faster/Mask R-CNN、FCN、RFCN、SSD原理简析
+
+https://mp.weixin.qq.com/s/CsEHuGz_fAq8eWpHRq7d6g
+
+性能超越何恺明Mask R-CNN！华科硕士生开源图像分割新方法
+
+https://zhuanlan.zhihu.com/p/57629509
+
+实例分割的进阶三级跳：从Mask R-CNN到Hybrid Task Cascade
+
+https://mp.weixin.qq.com/s/7Z8unW7Gsu0cf1hAwvjAxw
+
+何恺明等人提TensorMask框架：比肩Mask R-CNN，4D张量预测新突破
+
+https://mp.weixin.qq.com/s/SUZcgq6wOqct_CrWB0j1gA
+
+CVPR2019-实例分割Mask Scoring R-CNN
+
+https://mp.weixin.qq.com/s/Uc0VFMmYoOFvH0c7IExKIg
+
+何恺明团队计算机视觉最新进展：从特征金字塔网络、Mask R-CNN到学习分割一切

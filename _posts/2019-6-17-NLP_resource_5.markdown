@@ -206,32 +206,6 @@ https://mp.weixin.qq.com/s/r_x1IUuyIQw3aif2f7-Fxw
 
 邱锡鹏：深度学习在语义分析处理的最新发展
 
-# 图像变换+
+https://mp.weixin.qq.com/s/kKXFBBufFuqVgQ2uumQQ8Q
 
-https://zhuanlan.zhihu.com/p/67692429
-
-GAN网络利用单张照片构成动图
-
-https://mp.weixin.qq.com/s/zgMPW6yioGJEhusj031r5A
-
-如何利用深度学习技术处理图像水印？
-
-https://mp.weixin.qq.com/s/Y__qQCkkUlDGAl8dF_tsPg
-
-女神背心变内衣，只需草图画几笔
-
-https://mp.weixin.qq.com/s/mWIJt6niM3cw_Zy_RHRCZw
-
-人脸照片秒变艺术肖像画：清华大学提出APDrawingGAN
-
-https://mp.weixin.qq.com/s/xPkB6nexTo1FpcJnn_okhA
-
-你的涂鸦活了，CMU中国本科生让画成真
-
-https://mp.weixin.qq.com/s/LkRgaSWBkE8dJl69IQroIg
-
-造假AI又进化！只要一张照片，说话唱歌视频自动生成，降维打击Deepfakes
-
-https://mp.weixin.qq.com/s/entoLCunjKY7PYWI8-aAgg
-
-谷歌AI秀神技：大脸畸变一键还原，拍照无需抢C位，实时运行毫无PS痕迹
+商品标题这么长长长长长，阿里工程师如何解决？

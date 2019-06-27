@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  在线激活流程研究, 芯片杂烩, Actor model, bash
+title:  在线激活流程研究, 芯片杂烩, Actor model, OA办公软件, Restful
 category: technology 
 ---
 
@@ -158,121 +158,58 @@ https://www.cnblogs.com/MOBIN/p/7236893.html
 
 Actor模型原理
 
-# bash
+# OA办公软件
 
-手册：
+2016.6
 
-https://www.gnu.org/software/bash/manual/bash.pdf
+工作9年，先后服务于4家公司，OA软件也算见识了一些。
 
-## 空格和TAB的细节
+第一家公司，用了一套作坊OA。说它作坊，是因为这是老板的一个朋友的作坊做出来的东西。代码极度差劲，以至于我这样的网站外行，都能改出不少问题来。
 
-在大多数编程语言中，空格和TAB都不是有意义的字符，有没有或者有多少都无所谓。但Linux Shell不是这样的，尽管它看起来并没有如python那样的对缩进的强制语言规定。
+第二家公司是外企，用他们国外的OA系统。除了文字是英语之外，其他的中规中矩。
 
-以下是它在使用空格和TAB时的一些细节：
+第三家公司，用的是用友致远OA系统。也是中规中矩，语言换成了中文，好用了一些。
 
-1.makefile文件中，规则定义部分的shell脚本命令需要使用TAB开头，使用空格会出错。
+第四家公司，使用企明岛的OA平台。上手感觉很惊艳，UI甩开之前的产品一条街。
 
-2.if命令的格式：
+详细了解之后，才知道：
 
-{% highlight bash %}
-if [ "$yn" == "Y" ] || [ "$yn" == "y" ]; then
-	echo "OK, continue"
-fi
-{% endhighlight %}
+1.yammer是OA 2.0的鼻祖。
 
-注意一下上面脚本中的表达式[]之间的部分。其中所使用的空格不可省略，否则会出错。bash在处理[]表达式的时候，实际上调用了`/usr/bin/[`命令。如果把`[`当作特殊名称的普通命令的话，就会发现这里的空格用法实际上并不奇怪。
+2.国内的同类产品还有：明道，纷享，伙伴，企明岛，tita，UU社区，云之家等。
 
-## 查看当前使用的shell
+# Restful
 
-实时查看：
+相比于WebService，Restful是一种简单的多的编程风格。
 
-`ps |  grep $$  |  awk '{print $4}'`
+比如我们使用搜索引擎的时候，输入的地址：
 
-非实时查看：
+`https://www.bing.com/search?q=java+restful`
 
-`echo $SHELL`
+就是一个典型的Restful请求。
 
-## return和exit的区别
+有关Restful风格的内容参见：
 
-return用于函数的返回，它只能用在函数中。
+https://segmentfault.com/a/1190000006735330
 
-exit用于整个shell脚本的退出。
+Restful应用分析
 
-## 预定义变量
+http://www.drdobbs.com/web-development/restful-web-services-a-tutorial/240169069
 
-`$?`: 上条命令的返回值
+RESTful Web Services: A Tutorial
 
-`$$`: 当前shell的PID。
+http://www.ibm.com/developerworks/library/ws-restful/index.html
 
-## shell如何把多行内容输出到一个文件
+RESTful Web services: The basics
 
-一行一行echo重定向显然是个笨办法，这里可以使用Here Documents语法。
+还是那句老话，讨论一个通讯格式或协议，不讨论交互报文的都不是好文章，或者至少不是一个入门的好文章。
 
-例子：
+常见的Web框架如Spring、Struts都提供了对Restful的支持。
 
-{% highlight bash %}
-(
-cat<<EOF
-line 1
-line 2
-EOF
-)>a.txt
-{% endhighlight %}
+专门负责Restful的框架还有Jersey。其官网：
 
-参考：
+https://jersey.java.net/
 
-https://linux.die.net/abs-guide/here-docs.html
+示例：
 
-Here Documents
-
-## 目录切换
-
-`cd -`：回到上一次所在的路径的命令。当需要在两个相隔较远的路径下，相互切换的时候，可以使用该命令。
-
-`pushd <dir1>`：将dir1添加到一个栈顶。栈中每个目录都有一个序号（栈顶为0）。使用`pushd +n`将第n个目录切换到栈顶。（栈顶即为当前目录，所以无论添加还是切换栈顶，都可以切换当前目录）
-
-`pushd -n`的含义刚好相反，它从栈底向栈顶方向计数。
-
-`popd`和`popd +n`用于从栈中删除目录。
-
-`dirs -v`用于查看栈中元素。
-
-参考：
-
-https://www.jianshu.com/p/53cccae3c443
-
-Linux中的pushd和popd
-
-## 参考
-
-https://blog.csdn.net/iot_flower/article/details/69055590
-
-shell脚本第一行：#!/bin/bash的含义
-
-https://mp.weixin.qq.com/s/ZaIX8jv9LMWmrHQb4ew-dQ
-
-写好shell脚本的13个技巧
-
-http://www.ywnds.com/?p=12325
-
-Shell版俄罗斯方块
-
-https://mp.weixin.qq.com/s/SBVEo53irSZfI40sBFZXWQ
-
-shift：解决shell编程中的入参问题
-
-https://mp.weixin.qq.com/s/T_XwLS6CIrkXbgXJVIo2Jw
-
-一文了解十大Linux命令行工具！
-
-https://mp.weixin.qq.com/s/euTQJy0HFVQotAY-KI2OzA
-
-10个实战及面试常用Shell脚本编写
-
-https://github.com/jaywcjlove/linux-command
-
-Linux命令大全搜索工具
-
-https://mp.weixin.qq.com/s/xuC_pH1X_GmyK0vVWrBzWQ
-
-10个实战与面试常用Shell脚本编写
+https://github.com/feuyeux/jax-rs2-guide-II

@@ -198,6 +198,10 @@ https://mp.weixin.qq.com/s/B0HAl9T8yKGpH_PZbbw0Yg
 
 用于知识图中链接预测的嵌入方法SimplE
 
+https://mp.weixin.qq.com/s/wekqgCtlMan_PJHYadSpcg
+
+从词向量到句向量的技术详解
+
 # 深度时间序列
 
 https://mp.weixin.qq.com/s/cChJO6YrE_XAgeInS7J1Vw
