@@ -309,37 +309,3 @@ https://www.jianshu.com/p/193f0089b7a2
 https://mp.weixin.qq.com/s/vwhetMpQllczILptBNcoWg
 
 基于快速GeoHash，如何实现海量商品与商圈的高效匹配？
-
-# TensorFlow+
-
-https://mp.weixin.qq.com/s/5_oCSK6MtsK_4xNU6T76UA
-
-计算机图形学遇上深度学习，针对3D图像的TensorFlow Graphics面世
-
-https://mp.weixin.qq.com/s/ndnbTCr51k_FSDRCLi0UOg
-
-添加新操作
-
-https://mp.weixin.qq.com/s/s8hAYadCw9-_BpWSCh38gg
-
-TensorFlow 2.0：数据读取与使用方式
-
-https://mp.weixin.qq.com/s/G3fbhTsHA22b02_B5WCPcg
-
-TensorFlow调试程序（一）
-
-https://mp.weixin.qq.com/s/1mSF2HKa72HgWq_q14HMtQ
-
-TensorFlow调试程序（二）
-
-https://mp.weixin.qq.com/s/L9kYXFXYmKadghAhd-51pA
-
-TensorFlow模型优化工具包—剪枝API
-
-https://mp.weixin.qq.com/s/G0xrlTHfxKHikYj8dGWRWQ
-
-Transformer聊天机器人教程
-
-https://mp.weixin.qq.com/s/OGsvcfU1VlhNZYgEGLimsQ
-
-爱奇艺基于TensorFlow Lite的移动端AR解决方案SmileAR

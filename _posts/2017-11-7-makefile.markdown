@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  makefile, Autotools, premake, Bazel, Jam
+title:  makefile, Autotools, premake, Bazel
 category: technology 
 ---
 
@@ -207,44 +207,6 @@ bazel项目添加automake/autoconf项目解决办法
 https://www.cnblogs.com/puyangsky/p/7596282.html
 
 bazel的使用
-
-# Jam
-
-Jam是Perforce推出的构建工具。
-
-官网：
-
-https://www.perforce.com/documentation/jam-documentation
-
-由于Perforce已经不再维护Jam项目，所以目前主要使用由FreeType维护的FT Jam。
-
-官网：
-
-https://www.freetype.org/jam/
-
-此外，还有Boost.Build（也就是原来的Boost.Jam）。
-
-官网：
-
-https://boostorg.github.io/build/
-
-其命令行工具之前叫bjam，现在叫b2。
-
-原始的Jam对C++不太友好，所以如果是C++的项目，推荐使用b2。
-
-b2的使用示例：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cpp/jam
-
-- 每个项目的根目录必须有一个Jamroot.jam文件。
-
-- 其他源代码目录下有一个Jamfile.jam文件。
-
-参考：
-
-https://blog.csdn.net/jadedrip/article/details/1722318
-
-bjam初接触
 
 # Other
 

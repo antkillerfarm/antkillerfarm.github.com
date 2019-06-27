@@ -6,278 +6,202 @@ category: resource
 
 # DL参考资源
 
-## 实战
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650748834&idx=3&sn=805564d2d9956dff6bb888ccb61e9b7b
 
-http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg
+看图聊天的骚操作，MIT开发精准到单词的语音-图像配对系统
 
-GitHub最受欢迎深度学习项目Top 20
+https://mp.weixin.qq.com/s/emJGtx-LAWarlpUnRf-0-w
 
-https://mp.weixin.qq.com/s/WNJD8ZjnSVsE91H8Hks4vA
+观察运动推断物体材料，MIT提出“视觉+运动”物理基元分解
 
-手把手教你从零搭建深度学习项目
+https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247491876&idx=1&sn=e431c2291f4c985777be4d9b7bdfefa6
 
-https://mp.weixin.qq.com/s/Shz6BmsOrtbEFtoJRSkl9A
+正经炼丹师如何完美安排国庆长假？假期专属论文清单
 
-简单车牌检测
+https://mp.weixin.qq.com/s/aPBPzBEGoiXF0-uMO_BCFQ
 
-https://mp.weixin.qq.com/s/QjoxqCpN5JDroBowWmVk1Q
+iCAN：以人为中心的“人-物”交互检测网络
 
-边玩边入门深度学习，我们帮你找了10个简易应用demo
+https://mp.weixin.qq.com/s/R_nd7_YWA7q1JzE0BP8JrQ
 
-https://mp.weixin.qq.com/s/8TALhdJqyR9WJOz2RjENBw
+Petuum新研究助力临床决策：使用深度学习实现自动ICD编码
 
-生产级深度学习的开发经验分享：数据集的构建和提升是关键
+https://mp.weixin.qq.com/s/BpU2num-p95OTKnG1tAp3w
 
-http://mp.weixin.qq.com/s/G4lQqiiVvmCW9SmX2blDEg
+深度神经网络-随机三元化梯度下降和结构化稀疏
 
-实战——目标检测与识别
+https://mp.weixin.qq.com/s/NXA7ymIuk0DaRwhFf0OHqA
 
-https://mp.weixin.qq.com/s/KoRXcV-ujIT-5eO4RUkWYw
+MSRA研究员提出物体关系模块，实现首个完全端到端的物体检测系统
 
-基于TensorFlow和OpenCV实现文档检测功能！
+https://mp.weixin.qq.com/s/rAq6Rn7pSaZ5IOexgLO-4w
 
-https://mp.weixin.qq.com/s/ObIYpiH7MLZEi5XzXdGBYg
+FAIR提出突触可塑算法：让神经网络学会记忆和遗忘
 
-10大深度学习架构
+https://mp.weixin.qq.com/s/gljfrNwNvrK7teJ-DYyNIw
 
-https://mp.weixin.qq.com/s/-39_7SbRFChDOOpcpJjVMQ
+如何用深度学习处理结构化数据？
 
-如何在浏览器使用synaptic.js训练简单的神经网络推荐系统
+https://mp.weixin.qq.com/s/AZyqxZf6CbZJoT3qOpHDCQ
 
-https://mp.weixin.qq.com/s/ZG_PShoIys6oiPBEN7Pwuw
+深度学习也可以取悦女友
 
-无需基础知识，使用JavaScript构建你的第一个神经网络
+https://mp.weixin.qq.com/s/KX85CCpYrXFOvdTU5Q4Frg
 
-https://mp.weixin.qq.com/s/iwPI8g2JwabwiCO8kfw8Hw
+阿里巴巴论文提出针对影视作品的语音情感识别信息融合框架
 
-用开源工具DIY车牌识别系统
+https://mp.weixin.qq.com/s/XnCBiTqFVDh_4oBZdUoxew
 
-https://mp.weixin.qq.com/s/ObIYpiH7MLZEi5XzXdGBYg
+Bengio等提出稀疏注意力回溯：长期依赖关系建模的更一般化机制
 
-从TensorFlow到PyTorch：九大深度学习框架哪款最适合你？
+https://mp.weixin.qq.com/s/8dVronQoeZLJI2g49AljLg
 
-https://mp.weixin.qq.com/s/bU541QHjC4grICDjnTSYDA
+技术讲解概率机器学习——深度学习革命之后AI道路
 
-10大深度学习框架实验对比
+https://mp.weixin.qq.com/s/qof4GEPQYb9rO3Do_oL7BQ
 
-https://mp.weixin.qq.com/s/Ez9zn6HN4tX_QFpGDWs_rA
+如果给猫披上象皮，神经网络将作何判断？
 
-30行JavaScript代码，教你分分钟创建神经网络
+https://mp.weixin.qq.com/s/l1Bc5l5cr3y9jQbh-bEQeQ
 
-https://mp.weixin.qq.com/s/dY5r_KJVkpipluo7ji9H6w
+Deep Learning of Graph Matching论文解读
 
-如何用“摄像头秒解数独”
+https://mp.weixin.qq.com/s/oWBZmjZZB-Sk3ivhC2jY-w
 
-https://mp.weixin.qq.com/s/HTj9OozYdq_VLJuGKaiEAg
+不用挨个数数，DNN也能“一眼看出”目标数量
 
-百行代码构建神经网络黑白图片自动上色系统
+https://mp.weixin.qq.com/s/I1BcM3qM7lb9XecKeAMwMQ
 
-https://mp.weixin.qq.com/s/hbvM64QPT1mKQZey6Kauww
+Hinton等人新研究：如何更好地测量神经网络表示相似性
 
-图像算法在电商大促中的应用浅析
+https://mp.weixin.qq.com/s/MoKzux6Z69dlpqcVTvQ9oQ
 
-https://mp.weixin.qq.com/s/10nLPqBgQ1XJAP8jXqFU0g
+解释深度神经网络训练全过程：谷歌发布SVCCA
 
-讲解Vision图像识别框架API详解
+https://mp.weixin.qq.com/s/LU5-zrWof5HmgqiIx6aNsg
 
-https://mp.weixin.qq.com/s/MK_al7CgieiVXB1MGWZ9GA
+用神经网络来判定量子纠缠？这里有一篇简单易懂的方法解读
 
-听说你用JavaScript写代码？本文是你的机器学习指南
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750713&idx=1&sn=c24923e28907f90754967da424891831
 
-https://mp.weixin.qq.com/s/C2Gn8NSZe4u5uZsCeLnfVQ
+Diss所有深度生成模型，DeepMind说它们真的不知道到底不知道什么
 
-22分钟直冲Kaggle竞赛第二名！一文教你做到
+https://mp.weixin.qq.com/s/dpJRequ5eilPKBT-wqA6YQ
 
-https://mp.weixin.qq.com/s/JRfZIH6YikmW2og9Sn0hQg
+厉害了！AI成功伪装人类贡献GitHub修复补丁
 
-如何快速训练免费的文本生成神经网络
+https://mp.weixin.qq.com/s/fqHropcxoP0AfQu2m1-wYQ
 
-https://mp.weixin.qq.com/s/qussbqTKjLI23xNxJ2eRPw
+王克欣:详解记忆增强神经网络
 
-手把手教你训练一个秒杀科比的投篮AI，不服来练
+https://mp.weixin.qq.com/s/LK8PBCC_uJoe_Rc4V940sQ
 
-https://mp.weixin.qq.com/s/v63CjKknQTVhGXaS7nBceQ
+小心你发的图：机器视觉推断你的家庭成员
 
-你们都用Python做人脸识别，我就偏要用Go！
+https://mp.weixin.qq.com/s/LV8tmeDGkfmFFyQqJwY25g
 
-https://mp.weixin.qq.com/s/BCNrsuoThJt031jCnbAjAA
+基于超像素的多局部区域的卷积神经网络用于全色图和多光谱图像分类
 
-腾讯广告算法大赛季军SML_21队伍解决方案
+https://mp.weixin.qq.com/s?__biz=MzI3MTM5ODA0Nw==&mid=2247484058&idx=1&sn=0dfe92a0991294afba2514b137217a66
 
-https://mp.weixin.qq.com/s/esBjgFqR0H3JD_3Tu0qh3g
+朱松纯：浅谈人工智能：现状、任务、构架与统一
 
-一只初学者，如何登顶野生动物识别挑战赛？
+https://mp.weixin.qq.com/s/8xSqmBbaFZ-oww4w-dOmeg
 
-https://mp.weixin.qq.com/s/M120ZRfLoT9abWZOmgj-TQ
+吴恩达对话Hinton、Bengio、Goodfellow
 
-面部识别技术能用来识别鲸鱼？
+https://zhuanlan.zhihu.com/p/28444154
 
-https://mp.weixin.qq.com/s/3g6PB5shkY8WM4aDMH-RjA
+Seeta看AI：从大数据驱动到X数据驱动
 
-Kaggle竞赛“找盐”冠军：价值5万美元的第一名方案出炉
+https://zhuanlan.zhihu.com/p/28445169
 
-https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652029536&idx=5&sn=96977b00be7f1a8d1845ad5e7d81b3d0
+毕彦超：物体识别与物体知识表征的认知神经基础
 
-用神经网络识别歌曲流派
+https://mp.weixin.qq.com/s/VAEH_241IAuEH5S6H6ep5w
 
-https://mp.weixin.qq.com/s/I2Mi-ppwRztSCJNUDgVXcg
+UC伯克利提出新型视觉描述系统，物体描述无需大量样本
 
-全球数据竞赛Top解决方案开源整理与汇总
+https://mp.weixin.qq.com/s/lSd6Gaf9RrmgZCd_EcQQOg
 
-https://mp.weixin.qq.com/s/uha9bmmLfSPbRtKeuSqNiw
+Bengio高徒演讲：深度学习三板斧：网络架构、学习算法和时空层级
 
-浙江移动—利用TensorFlow实现通讯运维智能化
+https://mp.weixin.qq.com/s/r6Dnv3v6TYwTsAQJTDR0Mg
 
-https://mp.weixin.qq.com/s/44-CKvdWm-4IZP0heGllsw
+熬过深宫十几载，深度学习上位这五年
 
-Kaggle新手银牌：Airbus Ship Detection卫星图像分割检测
+https://mp.weixin.qq.com/s/calUA-Ddq-mq4uHrExtfBQ
 
-https://mp.weixin.qq.com/s/QU3jM4evzMDFJlRmIXMi-Q
+实习生通关秘籍：我在谷歌大脑开挂的一年
 
-如何用Python和循环神经网络预测严重交通拥堵？
+https://mp.weixin.qq.com/s/LqjEQN7pHTL47ToDh4WgZg
 
-https://mp.weixin.qq.com/s/4VUVu4z-_Cg2tUz-QD_wOA
+CVPR 2018，盘点我心中的创意 TOP10
 
-线下场景的客流数字化探索与应用
+https://mp.weixin.qq.com/s/R3T2CveNbjZszoJ1iL_3bw
 
-https://mp.weixin.qq.com/s/2Mh68gfbG_5gKnoICuRmeA
+带引导的进化策略：摆脱随机搜索中维数爆炸的魔咒
 
-Byte Cup 2018国际机器学习竞赛夺冠记
+https://mp.weixin.qq.com/s/NXyrqkwqMHFsWJZE7D_SMA
 
-https://mp.weixin.qq.com/s/DD-BOtPbGCXvxfFxL-qOgg
+线性模型可解释一定比DNN高？UCSD科学家：大错特错！
 
-Kaggle Quora Insincere Question Classification Rank 13方案分享
+https://mp.weixin.qq.com/s/ivtMohnpgJGmbQJdo_xr9w
 
-https://blog.csdn.net/songbinxu/article/details/79628443
+UCL等三强联手提出完全可微自适应神经树：神经网络与决策树完美结合
 
-第一届腾讯社交广告高校算法大赛经验分享
+https://mp.weixin.qq.com/s/ugK5U6A2tqYkJwWfNWPuKg
 
-https://mp.weixin.qq.com/s/qf6FVJe_Kai_11_wImykqg
+计算机视觉深度学习中的几何结构与不确定性
 
-达观杯文本智能处理挑战赛冠军解决方案
+https://mp.weixin.qq.com/s/l6fNAWeufws4RijA0nZWpA
 
-https://mp.weixin.qq.com/s/iAMYqJjlMWAvFq4Hddh4ig
+模型的泛化能力仅和Hessian谱有关吗？
 
-从0上手Kaggle图像分类挑战：冠军解决方案详解
+https://mp.weixin.qq.com/s/j_nU7QB_nArHQj36PL3h9w
 
-https://mp.weixin.qq.com/s/irXumGRVCP1PUHrCf17PFA
+李宏扬：二阶信息在图像分类中的应用
 
-识别座头鲸，Kaggle竞赛第一名解决方案解读
+https://mp.weixin.qq.com/s/hE-2GLo1SNdIMY858_HuaQ
 
-https://mp.weixin.qq.com/s/jqICZ2nkv-1vF_XPCWRxiQ
+化秋毫为波澜:运动放大算法
 
-大规模机器学习在爱奇艺视频分析理解中的实践
+https://mp.weixin.qq.com/s/y0SAI0f3w42z-nnoorFoEQ
 
-https://mp.weixin.qq.com/s/-n2Sujgg3vdQXJOrCgQRkw
+共享空间学习共有特征的异源图像匹配
 
-浅析搜狗AI主播背后的核心技术
+https://mp.weixin.qq.com/s/M7w7tMVd23YToIW7DypYjA
 
-https://mp.weixin.qq.com/s/jjQMnrGGTdui9uc7GGKpsg
+用DL实现Bug自动归类：微软研究院提出DBRNN-A
 
-Kaggle座头鲸识别赛，TOP10团队的解决方案分享
+https://mp.weixin.qq.com/s/7dpYRLKpRn0MSa5bz_sBDg
 
-https://mp.weixin.qq.com/s/jpfvRbmTgFVQczHzKekmLw
+从傅里叶分析角度解读深度学习的泛化能力
 
-北邮夺冠CVPR 2018 DeepGlobe比赛，他们是这样做卫星图像识别的
+https://mp.weixin.qq.com/s/iZZHmxGFHQHk1rlzMzDQcg
 
-https://mp.weixin.qq.com/s/CGe1MAKRiLtaFFyVOkauhw
+训练深度神经网络失败的罪魁祸首不是梯度消失，而是退化
 
-16岁高中生夺冠Kaggle地标检索挑战赛！
+https://mp.weixin.qq.com/s/yvHZ9hVueYUKsMXcNQQzmQ
 
-https://mp.weixin.qq.com/s/09C0N6f0rpN7QLvjgjEkWQ
+深度学习会被可微分编程取代？
 
-使用NLP和深度学习预测股价
+https://mp.weixin.qq.com/s/lPAcNayqcz1sh8xNVklzEA
 
-https://mp.weixin.qq.com/s/_4QG0dWhh784lF0n1wymcw
+DeepMind提出可微分逻辑编程，结合深度学习与符号程序优点
 
-数据竞赛Top解决方案开源整理
+https://mp.weixin.qq.com/s/-4b3u02KiIt5i4Yzz-Ed3g
 
-https://mp.weixin.qq.com/s/bA2jUxLhurm2vRTxX0Inpw
+从信息论的角度理解与可视化神经网络
 
-超长文详解作业帮产品逻辑和技术原理
+https://mp.weixin.qq.com/s/VdMYtZfH0yBNWMbiuGElOg
 
-https://mp.weixin.qq.com/s/2Qm8TAFCLTQqrpR4dTN6Qg
+商汤及联合实验室入选论文重点解读：ECCV 2018
 
-2019搜狐校园算法大赛-rank5
+https://mp.weixin.qq.com/s/DF5eSgJpFHfcMeW2EL6oZQ
 
-https://mp.weixin.qq.com/s/Q-bXkJzFgshkXrTMB5dh0w
+Hinton提出泛化更优的“软决策树”：可解释DNN具体决策
 
-抖音短视频推荐大赛小规模赛道Top8模型代码开源
+https://mp.weixin.qq.com/s/X75H8YOysftwU4VSjlmLBQ
 
-https://mp.weixin.qq.com/s/YQXA2PbSe0q6kqWSFf9vgQ
-
-Kaggle美女自述：我是怎么成为竞赛中Top 0.3%的
-
-## 连续学习
-
-https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
-
-终身机器学习: 一种持续学习的范式
-
-https://mp.weixin.qq.com/s/SBppyDBWqQUariiHbpaq1w
-
-实时深度学习的推理加速和连续学习
-
-https://mp.weixin.qq.com/s/83HufWMDnuXIOCCfgqeDJw
-
-为什么说持续学习才是AI的关键
-
-https://mp.weixin.qq.com/s/kmEFjzFIbNq0_qdjc1Wm_w
-
-DeepMind新智能体架构Unicorn：持续学习能力胜过多个基准智能体
-
-## 鉴黄
-
-https://mp.weixin.qq.com/s/vTtKUagiFD55mcQIeGDxQw
-
-图像鉴黄做得好，健康上网少烦恼
-
-https://zhuanlan.zhihu.com/p/33177237
-
-在Movidius计算棒上利用深度学习鉴黄
-
-http://tensorinfinity.com/paper_119.html
-
-图像内容鉴黄算法综述
-
-## 面试
-
-https://mp.weixin.qq.com/s/U5hlr69m_9Znwjkj3Yl4Hg
-
-《深度学习500问》一份超全深度学习资料，面试必备！
-
-https://www.zhihu.com/question/41233373
-
-如果你是面试官，你怎么去判断一个面试者的深度学习水平？
-
-https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
-
-20万、50万、100万的算法工程师，到底有什么区别？
-
-https://www.zhihu.com/question/56676679/answer/151505274
-
-机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
-
-https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
-
-面试官是如何看出你机器学习水平的？
-
-https://mp.weixin.qq.com/s?__biz=MzI3NTA0MzM1OQ==&mid=2651615534&idx=1&sn=00ecd7dc1d8472c070e720a1b63f04c4
-
-我如何考察面试者的机器学习水平
-
-https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
-
-谷歌等巨头机器学习面试题：从逻辑回归到智力测验
-
-https://mp.weixin.qq.com/s/9ivDZXpPpLE3fuPgpNUyJA
-
-超全数据科学与机器学习面试指南
-
-https://mp.weixin.qq.com/s/qmdfLlTfQzT0QVq_SzEPUw
-
-机器学习和深度学习中值得弄清楚的一些问题
-
-https://mp.weixin.qq.com/s/JgSTOiWZ30mIR_uiXyU2PQ
-
-硅谷高级工程师告诉你：算法工程师必须要知道的面试技能雷达图
+谷歌大脑最新技术：将神经网络提炼成软决策树！

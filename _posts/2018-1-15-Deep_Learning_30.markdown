@@ -22,6 +22,14 @@ https://mp.weixin.qq.com/s/lyy3AhqLDBT88B2LSSIbZQ
 
 图表示解决长文本关系匹配问题：腾讯提出概念交互图算法
 
+https://mp.weixin.qq.com/s/bvp3NIrrarJc_MesKy1x_A
+
+崔泽宇：套装搭配推荐在图神经网络上的应用
+
+https://mp.weixin.qq.com/s/_8K0s9WceJ-xlRViHhz2Zw
+
+Google图挖掘团队最新博客《图表示学习中的创新》
+
 # 自动求导
 
 DL发展到现在，其基本运算单元早就不止CNN、RNN之类的简单模块了。针对新运算层出不穷的现状，各大DL框架基本都实现了自动求导的功能。

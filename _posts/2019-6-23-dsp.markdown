@@ -259,3 +259,7 @@ https://mp.weixin.qq.com/s/203UyMxZ-Sx14WEX-KMusg
 https://mp.weixin.qq.com/s/3eoN0YHI84oomdTZO6TrvQ
 
 快速搞定机器人开发！Facebook联合CMU开源PyRobot框架
+
+https://mp.weixin.qq.com/s/Uih8JaRCaeD38o9AoovRmA
+
+字节跳动开源高性能分布式训练框架BytePS：兼容TensorFlow、PyTorch等

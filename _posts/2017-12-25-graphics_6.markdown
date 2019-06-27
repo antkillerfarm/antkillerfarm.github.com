@@ -242,6 +242,10 @@ https://mp.weixin.qq.com/s/pEA7mN7AhxrDqLb3ku1CxQ
 
 ADAS以及自动驾驶车辆运动特性
 
+https://mp.weixin.qq.com/s/HSvy_mWcpoS4_-2izgXlzg
+
+第一次有人把V2X讲的这么通俗易懂！
+
 # Eigenface
 
 Eigenface是M. Turk和A. Pentland于1991年提出的人脸识别算法。

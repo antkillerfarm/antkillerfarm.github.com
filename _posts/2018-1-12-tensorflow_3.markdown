@@ -234,7 +234,7 @@ Theano被同样基于计算图的TensorFlow淘汰。2017年9月停止更新。
 
 Torch相对变动最小，它被PyTorch替代。这更可以看作是python对于lua的胜利。
 
-# TensorFlow
+# TensorFlow参考资源
 
 https://mp.weixin.qq.com/s/t1QFIOq-VBNOrSm0zW-PlQ
 

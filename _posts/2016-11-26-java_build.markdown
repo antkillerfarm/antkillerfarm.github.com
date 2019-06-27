@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Java构建工具, ZeroC ICE
+title:  Java构建工具, ZeroC ICE, Jam
 category: technology 
 ---
 
@@ -285,44 +285,40 @@ Github：
 
 https://github.com/hprose
 
-# DL参考资源
+# Jam
 
-https://mp.weixin.qq.com/s/LqjEQN7pHTL47ToDh4WgZg
+Jam是Perforce推出的构建工具。
 
-CVPR 2018，盘点我心中的创意 TOP10
+官网：
 
-https://mp.weixin.qq.com/s/R3T2CveNbjZszoJ1iL_3bw
+https://www.perforce.com/documentation/jam-documentation
 
-带引导的进化策略：摆脱随机搜索中维数爆炸的魔咒
+由于Perforce已经不再维护Jam项目，所以目前主要使用由FreeType维护的FT Jam。
 
-https://mp.weixin.qq.com/s/NXyrqkwqMHFsWJZE7D_SMA
+官网：
 
-线性模型可解释一定比DNN高？UCSD科学家：大错特错！
+https://www.freetype.org/jam/
 
-https://mp.weixin.qq.com/s/ivtMohnpgJGmbQJdo_xr9w
+此外，还有Boost.Build（也就是原来的Boost.Jam）。
 
-UCL等三强联手提出完全可微自适应神经树：神经网络与决策树完美结合
+官网：
 
-https://mp.weixin.qq.com/s/ugK5U6A2tqYkJwWfNWPuKg
+https://boostorg.github.io/build/
 
-计算机视觉深度学习中的几何结构与不确定性
+其命令行工具之前叫bjam，现在叫b2。
 
-https://mp.weixin.qq.com/s/l6fNAWeufws4RijA0nZWpA
+原始的Jam对C++不太友好，所以如果是C++的项目，推荐使用b2。
 
-模型的泛化能力仅和Hessian谱有关吗？
+b2的使用示例：
 
-https://mp.weixin.qq.com/s/j_nU7QB_nArHQj36PL3h9w
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cpp/jam
 
-李宏扬：二阶信息在图像分类中的应用
+- 每个项目的根目录必须有一个Jamroot.jam文件。
 
-https://mp.weixin.qq.com/s/hE-2GLo1SNdIMY858_HuaQ
+- 其他源代码目录下有一个Jamfile.jam文件。
 
-化秋毫为波澜:运动放大算法
+参考：
 
-https://mp.weixin.qq.com/s/y0SAI0f3w42z-nnoorFoEQ
+https://blog.csdn.net/jadedrip/article/details/1722318
 
-共享空间学习共有特征的异源图像匹配
-
-https://mp.weixin.qq.com/s/M7w7tMVd23YToIW7DypYjA
-
-用DL实现Bug自动归类：微软研究院提出DBRNN-A
+bjam初接触
