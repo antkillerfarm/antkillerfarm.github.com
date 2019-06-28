@@ -102,6 +102,10 @@ https://mp.weixin.qq.com/s/X-1zyTPKlCSKupkhzVG_AQ
 
 Airbnb实时个性化推荐之Embedding真的好用吗？
 
+https://mp.weixin.qq.com/s/w3qt1qW8tfWr25ZemPdYvQ
+
+推荐模型的演化趋势及FM统一召回模型实践
+
 # 人脸检测/识别
 
 ## 人脸识别

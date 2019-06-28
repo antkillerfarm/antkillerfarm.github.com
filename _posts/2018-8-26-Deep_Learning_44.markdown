@@ -74,6 +74,10 @@ https://mp.weixin.qq.com/s/JJ2V9coeDI7WvWyDZNlVqA
 
 你的老婆你做主：画风自定义，内容自定义，南加大AI助你走上人生巅峰
 
+https://mp.weixin.qq.com/s/f-ITHpPB0F-CmFT1k5WfQA
+
+INIT：针对实例级的图像翻译
+
 # 三维处理
 
 https://github.com/timzhang642/3D-Machine-Learning

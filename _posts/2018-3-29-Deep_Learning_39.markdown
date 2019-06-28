@@ -351,3 +351,7 @@ CVPR2019-实例分割Mask Scoring R-CNN
 https://mp.weixin.qq.com/s/Uc0VFMmYoOFvH0c7IExKIg
 
 何恺明团队计算机视觉最新进展：从特征金字塔网络、Mask R-CNN到学习分割一切
+
+https://mp.weixin.qq.com/s/sRU9_M9LsP-j46kNdcI0QQ
+
+Cascade R-CNN升级！目标检测制霸COCO，实例分割超越Mask R-CNN
