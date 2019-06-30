@@ -162,6 +162,10 @@ https://mp.weixin.qq.com/s/6Wj0Y4y30BVA75WrU4oZbQ
 
 SBNet: 提高自动驾驶系统的感知效率
 
+https://mp.weixin.qq.com/s/HXxnhMjAchxKSidu45kOeg
+
+网络压缩最新进展：2019年最新文章概览
+
 # 知识蒸馏
 
 知识蒸馏是另一大类的模型压缩方法。

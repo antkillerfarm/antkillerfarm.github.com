@@ -162,6 +162,10 @@ https://mp.weixin.qq.com/s/g1hpuzH36j_rbYR23Mwx0w
 
 开源图像风格迁移，快看看大画家的潜力股
 
+https://mp.weixin.qq.com/s/OzancX-44Si13ZtZiONnpQ
+
+基于感知损失的实时风格迁移与超分辨率重建
+
 # 人脸检测/识别
 
 ## Cascade CNN

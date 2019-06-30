@@ -78,6 +78,10 @@ https://mp.weixin.qq.com/s/f-ITHpPB0F-CmFT1k5WfQA
 
 INIT：针对实例级的图像翻译
 
+https://mp.weixin.qq.com/s/x4Jelv7qAJpehfn-5A-azA
+
+进阶版神笔：只需一句话、一个故事，即可生成画面
+
 # 三维处理
 
 https://github.com/timzhang642/3D-Machine-Learning

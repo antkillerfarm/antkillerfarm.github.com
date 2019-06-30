@@ -388,6 +388,10 @@ https://mp.weixin.qq.com/s/O5okcuVKuf339BZzhmxiew
 
 13个Python GUI库
 
+https://mp.weixin.qq.com/s/hIMwss4h5k10oLanCYYS1g
+
+49个Python学习资源
+
 https://mp.weixin.qq.com/s/jHnkmpnOz1LApVCLJL-8Tw
 
 如何写出优雅又地道的Python代码？

@@ -162,6 +162,16 @@ https://mp.weixin.qq.com/s/QVEYQfEQV0CsklI9S4vOiA
 
 ERNIE真有官方说的那么好？亲测告诉你答案！
 
+## XLNet
+
+https://mp.weixin.qq.com/s/29y2bg4KE-HNwsimD3aauw
+
+20项任务全面碾压BERT，CMU全新XLNet预训练模型屠榜
+
+https://mp.weixin.qq.com/s/itNtDuQS4KF_sLnfiwdyNg
+
+拆解XLNet模型设计，回顾语言表征学习的思想演进
+
 ## 参考
 
 https://www.zhihu.com/question/298203515
@@ -371,10 +381,6 @@ Jeff Dean强推：可视化Bert网络，发掘其中的语言、语法树与几�
 https://mp.weixin.qq.com/s/nlFXfgM5KKZXnPdwd97JYg
 
 哈工大讯飞联合实验室发布基于全词覆盖的中文BERT预训练模型
-
-https://mp.weixin.qq.com/s/29y2bg4KE-HNwsimD3aauw
-
-20项任务全面碾压BERT，CMU全新XLNet预训练模型屠榜
 
 https://zhuanlan.zhihu.com/p/70389596
 

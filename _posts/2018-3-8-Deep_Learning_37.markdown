@@ -383,3 +383,7 @@ https://mp.weixin.qq.com/s/7CV0a-UshPtadgfcsFScJw
 https://mp.weixin.qq.com/s/UUDmWMaFEkW9qbMaJkMhhA
 
 低光照人脸检测竞赛冠军代码与PPT分享
+
+https://mp.weixin.qq.com/s/4J_pPkNoE9eSDQK4NVs0sw
+
+看一眼就知道你的BMI：基于Keras与迁移学习的人脸预测系统

@@ -234,6 +234,10 @@ https://zhuanlan.zhihu.com/p/69177318
 
 通过自适应的图卷积网络建模骨骼点数据进行行为识别
 
+https://mp.weixin.qq.com/s/RBsRXN5ySsty0ZDlUKKQnQ
+
+刷新记录，算法开源！字节跳动获人体姿态估计竞赛双冠
+
 # LSTM进阶
 
 ## 《Long short-term memory》

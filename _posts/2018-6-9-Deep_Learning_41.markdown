@@ -22,6 +22,16 @@ https://mp.weixin.qq.com/s/Ut_of4Xb8c0beACShKOWlQ
 
 ![](/images/img3/Transfer_Learning.png)
 
+## Federated Transfer Learning
+
+https://mp.weixin.qq.com/s/l-Ae8-K78AYITSn8_0LIfg
+
+破解数据孤岛壁垒，三篇论文详细解读联邦学习
+
+https://mp.weixin.qq.com/s/8f8-YdQ5-wCNDV6tKjzVNQ
+
+玩转联邦学习，摆脱数据枷锁
+
 ## 参考
 
 >龙明盛，清华本科（2008）+博士（2016），迁移学习的最早提出者之一。清华大学副教授，博导。   
@@ -38,7 +48,7 @@ https://zhuanlan.zhihu.com/wjdml
 
 https://mp.weixin.qq.com/s/WuX7-w--MGX3BfU_K7qT0A
 
-什么是迁移学习 (Transfer Learning)？这个领域历史发展前景如何？
+什么是迁移学习(Transfer Learning)？这个领域历史发展前景如何？
 
 https://mp.weixin.qq.com/s/ThwsfHME_2csqTlKuG5heg
 
@@ -354,10 +364,6 @@ https://mp.weixin.qq.com/s/TUwhd7ruF-156GDmInpA7w
 https://mp.weixin.qq.com/s/duJK5y9ZeFkYsFkAg4E2Jw
 
 IBM-小样本学习（Few-shot Learning）State of the art方法及论文讲解
-
-https://mp.weixin.qq.com/s/l-Ae8-K78AYITSn8_0LIfg
-
-破解数据孤岛壁垒，三篇论文详细解读联邦学习
 
 https://mp.weixin.qq.com/s/kPFS_4swYEP6Amw8xfXEgg
 

@@ -258,6 +258,10 @@ https://mp.weixin.qq.com/s/AHM60k3_Th3HD-VPBaXhuw
 
 线性规划和整数规划的若干建模技巧
 
+https://mp.weixin.qq.com/s/Pvu7JAHvsGJdL0mJIhVwng
+
+多工序、多机台(产线)环境下的排程要点
+
 # 金融模型
 
 Capital asset pricing model

@@ -405,6 +405,14 @@ https://mp.weixin.qq.com/s/WZyuTtEfaTFLnCfvhOrp7g
 
 虚拟化原理和分类
 
+https://mp.weixin.qq.com/s/n6D5_6K9TrnuXg3h6AiFNA
+
+华为“鸿蒙”所涉及的微内核到底是什么？一文带你认识微内核
+
+![](/images/img3/Monolithic_vs_Micro.jpg)
+
+![](/images/img3/UNIX.jpg)
+
 # WebGL
 
 WebGL可以看作是JavaScript+OpenGL ES，它为Web开发者使用显卡创建3D应用提供了方案。

@@ -258,6 +258,10 @@ https://mp.weixin.qq.com/s/n9ZJEJQqyrgNZr5zJbnS8g
 
 飞桨上线万能转换小工具，教你玩转TensorFlow、Caffe等模型迁移
 
+https://mp.weixin.qq.com/s/1jtO1efF2UauaUZFDRzQHw
+
+比Pytorch Hub更早？三分钟带你弄懂PaddleHub！
+
 # X-Deep Learning
 
 TensorFlow、MXNet、PyTorch等框架大都是面向图像、语音等领域的稠密数据设计，对广告、推荐等场景的高维稀疏数据上的深度学习计算考虑不足。

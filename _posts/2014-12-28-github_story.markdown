@@ -124,6 +124,10 @@ StackEdit是一个在线的markdown编辑工具，被CSDN等网站所使用。
 
 https://stackedit.io/
 
+## GitHub下载速度太慢
+
+219.76.4.4  http://github-cloud.s3.amazonaws.com
+
 ## 参考
 
 https://mp.weixin.qq.com/s/CHca0V7LR4NhomtLIPhc4w

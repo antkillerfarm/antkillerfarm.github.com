@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十八）——KNN, 异常检测, AutoML
+title:  机器学习（二十八）——KNN, 异常检测, 因果推理, AutoML
 category: ML 
 ---
 
@@ -155,6 +155,28 @@ https://mp.weixin.qq.com/s/w7SbAHxZsmHqFtTG8ZAXNg
 https://www.zhihu.com/question/324999831
 
 异常检测（anomaly/ outlier detection）领域还有那些值得研究的问题？
+
+# 因果推理
+
+https://mp.weixin.qq.com/s/doi26r9AVIMbpkZ01wsCZA
+
+北京大学何洋波博士《因果推断和因果图模型》机器学习报告
+
+https://mp.weixin.qq.com/s/L1ZY_qXPMXpStIgtUp7AKQ
+
+为机器学习插上因果推理的翅膀：这是一本系统的因果推理开源书
+
+https://mp.weixin.qq.com/s/ejf0qbIZWpq6Mi4G60ssEQ
+
+隐藏着的因果关系，如何让相同的机器学习模型变得不同
+
+https://mp.weixin.qq.com/s/O4JAv4NWp7NL-CzmaB6GxQ
+
+因果关系到底存不存在：反事实和平行宇宙
+
+https://mp.weixin.qq.com/s/-SdFNMxHzdSenDYHtjfldA
+
+因果推理入门指南-必须的7个步骤
 
 # AutoML
 

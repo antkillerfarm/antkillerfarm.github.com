@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十七）——数据不平衡问题, 因果推理, EMD, LSA
+title:  机器学习（二十七）——数据不平衡问题, EMD, LSA
 category: ML 
 ---
 
@@ -139,24 +139,6 @@ https://mp.weixin.qq.com/s/DxkHjArbr5XRdEGVNjJAKA
 https://mp.weixin.qq.com/s/x48Ctb0_Eu1kcSGTYLt5BQ
 
 机器学习中如何处理不平衡数据？
-
-# 因果推理
-
-https://mp.weixin.qq.com/s/doi26r9AVIMbpkZ01wsCZA
-
-北京大学何洋波博士《因果推断和因果图模型》机器学习报告
-
-https://mp.weixin.qq.com/s/L1ZY_qXPMXpStIgtUp7AKQ
-
-为机器学习插上因果推理的翅膀：这是一本系统的因果推理开源书
-
-https://mp.weixin.qq.com/s/ejf0qbIZWpq6Mi4G60ssEQ
-
-隐藏着的因果关系，如何让相同的机器学习模型变得不同
-
-https://mp.weixin.qq.com/s/O4JAv4NWp7NL-CzmaB6GxQ
-
-因果关系到底存不存在：反事实和平行宇宙
 
 # Earth mover's distance
 
