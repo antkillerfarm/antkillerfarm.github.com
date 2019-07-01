@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Fedora, CentOS, Blog维护日志, diff&patch, bash
+title:  Fedora, CentOS, diff&patch, bash, awk&sed&grep
 category: linux 
 ---
 
@@ -124,76 +124,6 @@ VNCSERVERARGS[1]="-geometry 1280x1024"
 http://www.tecmint.com/install-tightvnc-remote-desktop/
 
 Install TightVNC Server in RHEL/CentOS and Fedora to Access Remote Desktops
-
-# Blog维护日志
-
-2019.6.19 文章数达到300篇。可命名为v4.5。
-
-2019.4.26 img2的图片太多，特添加img3。
-
-2019.3.27 NLP参考资源已经积攒了很多，特进行细分类，使之更有条理。
-
-2019.3.19 添加GAN & VAE分类。
-
-2018.11.19 添加RL分类。
-
-2018.11.16 文章数达到250篇。一个分类达到50篇，可读性的问题就比较大了，修订也比较麻烦。特创建Deep object detection分类。由于文章较多，新分类的迁移将缓慢进行。可命名为v4.0。
-
-2018.11.14 DL专栏文章达到50篇。
-
-2018.8.1 在知名公众号上看到自己的文章。里程碑啊！
-
-2018.7.26 近来blog相关的事情比较多。
-
-1. CSDN编辑拉我进高级作者微信群。另一不知名小编居然和我约稿。。。太瞧得起我的水平了。。。
-
-2. 添了一个Google的follower，居然还是tensorflow的committer，就连做的工作都和我类似。。。
-
-3. 添了一个Azerbaijan的follower，有没有搞错啊！你确定你看得懂中文吗？
-
-2018.7.19 添加Speech分类。
-
-2018.2.22 文章数达到200篇。
-
-2018.2.1 又添了几个清华、头条、商汤的follower。其中有个人，我俩几乎同时关注了对方，挺有缘分的。此外，居然还有人把我的blog给fork了。。。
-
-2018.1.10 近来转战DL以后，blog的产量日增，也渐有重量级的follower：几个中科院、浙大的硕士。并收到了第一笔打赏。
-
-2017.12.21 blog图片太多，特添加第2个图片文件夹。
-
-2017.10.22 文章分为Language、Linux、Technology、Essay、Resource、Graphics、AI、ML、Math、DL十类。可命名为v3.5。
-
-2017.10.18 文章数达到150篇。
-
-2017.5.17 修改标题的css。可命名为v3.0。
-
-2017.4.5 添加微信打赏二维码图片。
-
-2017.3.22 评论系统切换到Github Issue。
-
-2017.3.4 文章数达到100篇。
-
-2016.11.3 文章分为Technology、Theory、Essay三类。
-
-2016.8.1 添加blog数量的统计信息，将MathJax升级到2.6.1。
-
-2016.5.12 为了广而告之，特将blog登录CSDN。但由于编辑方式的差异，Github仍为主站，内容较新较全。
-
-2016.4.12 将MathJax等资源切换为国内的cdn。
-
-2016.4.10 首页将技术文章和非技术文章分栏显示。
-
-2016.3.30 白底黑字太晃眼，特切换为浅灰底色。
-
-2016.3.18 评论系统切换到多说。
-
-2016.2.22 文章数达到50篇。
-
-2016.2.2 代码区的配色实在看起来费眼，屡次微调，仍不满意。这次借鉴原blog（也就是大徐抄袭的源头）的配色方案，最终达到基本满意的效果。可命名为v2.0。
-
-2015.1.7 blog搬家基本完成。
-
-2014.12.23 围观大徐的blog有感，特在github上安家落户，废弃了原来的搜狐blog。
 
 # diff&patch
 
@@ -339,3 +269,60 @@ Linux命令大全搜索工具
 https://mp.weixin.qq.com/s/xuC_pH1X_GmyK0vVWrBzWQ
 
 10个实战与面试常用Shell脚本编写
+
+# awk&sed&grep
+
+这三个工具是文本处理中用的比较多的工具，各有各的特色，且都支持正则表达式。
+
+一般来说，行处理优先考虑使用sed和grep，列处理优先考虑使用awk。通常情况下，组合使用多个命令，其命令编写的难度小于只使用一个命令。比如sed和grep也可以进行列处理，但语法难度远超awk，反之亦然。
+
+这里不打算列出各个命令的选项，而仅列出使用它们的一些示例：
+
+这里假设我们有一文件名为ab。
+
+## awk
+
+{% highlight bash %}
+awk '{print $1}' ab #显示第一列
+{% endhighlight %}
+
+## sed
+
+{% highlight bash %}
+sed '1d' ab #删除第一行 
+sed '$d' ab #删除最后一行
+sed '1,2d' ab #删除第一行到第二行
+sed '2,$d' ab #删除第二行到最后一行
+
+sed -n '1p' ab    #显示第一行 
+sed -n '$p' ab    #显示最后一行
+sed -n '1,2p' ab  #显示第一行到第二行
+sed -n '2,$p' ab  #显示第二行到最后一行
+
+sed -n '/ruby/p' ab #查询包括关键字ruby所在所有行
+sed -n '/\$/p' ab #查询包括关键字$所在所有行，使用反斜线\屏蔽特殊含义
+
+sed -n '/ruby/p' ab | sed 's/ruby/bird/g'    #替换ruby为bird
+sed -n '/ruby/p' ab | sed 's/ruby//g'        #删除ruby
+
+sed -e 's/.$//' mydos.txt > myunix.txt #dos->unix
+{% endhighlight %}
+
+## grep
+
+{% highlight bash %}
+grep 'ruby' ab #查询包括关键字ruby所在所有行
+grep -nri 'ruby' #n 显示行号，r 子目录搜索，i 忽略大小写
+{% endhighlight %}
+
+## 综合
+
+{% highlight bash %}
+ip addr show br-lan | grep 'inet ' | awk  '{print $2}' | sed 's/\/.*//g'
+{% endhighlight %}
+
+参考：
+
+https://mp.weixin.qq.com/s/o1vuL3RrWz9tyUPguZeSWA
+
+简单快捷的数据处理，数据科学需要注意的命令行

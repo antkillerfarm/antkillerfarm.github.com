@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  小众语言集中营, Julia, Go, Lua, Kotlin, Github显示数学公式， VS
+title:  小众语言集中营, Julia, Go, Lua, Kotlin, Github显示数学公式, VS
 category: language 
 ---
 
