@@ -38,6 +38,10 @@ https://mp.weixin.qq.com/s/RYMvgbOgZYjMOIxygpYWSQ
 
 Ian GoodFellow ICLR 2019演讲：对抗机器学习的进展与挑战
 
+https://mp.weixin.qq.com/s/LL6kheCrJ07PtJ6NleIKTA
+
+IanGoodfellow自注意力GAN的代码与PPT
+
 ## 通俗解释
 
 ![](/images/article/GAN.png)

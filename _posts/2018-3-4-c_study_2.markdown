@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  C/C++编程心得（二）, boost, Python（三）
+title:  C/C++编程心得（二）, boost
 category: language 
 ---
 
@@ -112,6 +112,22 @@ https://www.cnblogs.com/ldlchina/p/6608154.html
 
 C++11右值引用和std::move语句实例解析
 
+## 各类ptr
+
+**auto_ptr**：它允许程序员创建一个指向某种资源的指针对象，当该对象离开它的作用域时，它所指向的资源也会被自动释放。
+
+在原本的C++中，new和delete必须配对使用，然而给每个异常处理分支添加delete是一件很麻烦的事。auto_ptr就是用来干这事的，它无需显式调用delete。
+
+对auto_ptr的赋值和拷贝会导致原来的auto_ptr变为NULL，从而无效化。
+
+**unique_ptr**：大多数情况下，auto_ptr都是唯一的，这样的话，赋值和拷贝都是不必要的，且会造成混淆。（尤其拷贝会导致原来的auto_ptr变为NULL，这个还能叫做拷贝吗？）因此，auto_ptr在后续标准中，不再推荐使用，而是用unique_ptr替代。unique_ptr默认不支持赋值和拷贝，确需使用，要与std::move配合方可。否则会编译出错。
+
+unique_ptr早先在boost库中的时候，也叫做scoped_ptr。
+
+**shared_ptr**：为多个拥有者管理内存中对象的生命周期而设计的。在你初始化一个 shared_ptr 后，你可以复制它，把函数参数的值递给它，并把它分配给其它 shared_ptr 实例。所有实例指向同一个对象，并共享访问一个“控制块”，即每当一个新的shared_ptr 被添加时，递增和递减引用计数，超出范围，则复位。当引用计数到达零时，控制块删除内存资源和自身。
+
+**weak_ptr**：
+
 ## 参考
 
 https://mp.weixin.qq.com/s/Hpn7KqYlBKz0JdryiozqyQ
@@ -179,7 +195,7 @@ https://remonstrate.wordpress.com/2011/07/06/boost-%e7%9a%84-unit-test/
 
 boost的unit test
 
-# googletest
+## googletest
 
 安装：
 
@@ -194,174 +210,3 @@ https://github.com/google/googletest
 https://www.ibm.com/developerworks/cn/aix/library/au-googletestingframework.html
 
 Google C++ Testing Framework简介
-
-# Python
-
-## 星期处理
-
-`datetime(2002, 12, 4).isoweekday() == 3`
-
-`datetime(2001, 12, 31).isocalendar() == (2002, 1, 1)#(year, week number, weekday)`
-
-从上面的例子还可以看出，isocalendar可以完美的处理跨年问题。
-
-## eval
-
-eval函数用来执行一个字符串表达式，并返回表达式的值。
-
-示例：
-
-`eval('pow(2,2)')`
-
-粗看起来，eval函数在上面的例子中有些多此一举。然而如果字符串来自外部的话，就完全不同了。我们完全可以在任何地方嵌入python脚本。然后，只需要在用到的时候，找到并加载该字符串即可。
-
-## argparse
-
-https://blog.csdn.net/It_way/article/details/44815141
-
-python 命令行参数解析 argparse简单分析
-
-## pickle
-
-pickle提供了一个简单的持久化功能。可以将对象以文件（后缀名一般为*.pkl）的形式存放在磁盘上。
-
-参考：
-
-https://blog.csdn.net/sinat_29552923/article/details/70833455
-
-Python pickle模块学习
-
-## dill
-
-dill是pickle的威力加强版。
-
-除了提供pickle的功能之外，还可浏览对象的源代码。
-
-示例：
-
-`dill.source.getsource(func)`
-
-## Sqlite
-
-Ubuntu下的安装方法是：
-
-`sudo apt-get install sqlite`
-
-Python自带了pysqlite包，用于调用sqlite。
-
-pysqlite的helloworld程序可参见：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/pysqlite-helloworld.py
-
-可以使用sqlite_bro软件包，查看sqlite数据库。安装方法：
-
-`sudo pip install sqlite_bro`
-
-参考：
-
-https://mp.weixin.qq.com/s/HcmOmwWQFBIOZs8p3nr7CQ
-
-让Python更加充分的使用Sqlite3
-
-## zip
-
-Python的zip函数和数据压缩的zip算法没有任何关系。
-
-它的典型用法如下：
-
-{% highlight python %}
->>> name=['song','ping','python']
->>> age=[26,26,27]
->>> zip(name,age)
-[('song', 26), ('ping', 26), ('python', 27)]
->>> for n,a in zip(name,age):
-...   print n,a
-{% endhighlight %}
-
-zip函数属于Python的Built-in Functions，类似的函数还有：
-
-https://docs.python.org/3.6/library/functions.html
-
-参考：
-
-http://www.cnblogs.com/frydsh/archive/2012/07/10/2585370.html
-
-Python的zip函数
-
-## signal
-
-signal包用于处理系统消息。
-
-代码示例：
-
-{% highlight python %}
-import signal
-
-def handler(signum, frame):
-    print 'Signal handler called with signal', signum
-    raise IOError("Couldn't open device!")
-
-# Set the signal handler and a 5-second alarm
-signal.signal(signal.SIGALRM, handler)
-{% endhighlight %}
-
-## JPype
-
-JPype是一个能够让python代码方便地调用Java代码的工具。官网：
-
-https://sourceforge.net/projects/jpype/
-
-参考：
-
-http://blog.csdn.net/niuyisheng/article/details/9002926
-
-JPype：实现在python中调用JAVA
-
-http://www.cnblogs.com/yu-zhang/p/3817024.html
-
-python调用java程序--jpype
-
-## 文件名处理
-
-{% highlight python %}
-(filepath,tempfilename) = os.path.split(filename)
-(shotname,extension) = os.path.splitext(tempfilename)
-{% endhighlight %}
-
-## NetworkX
-
-NetworkX是一个用Python语言开发的图论与复杂网络建模工具，内置了常用的图与复杂网络分析算法，可以方便的进行复杂网络数据分析、仿真建模等工作。
-
-官网：
-
-https://networkx.github.io/
-
-参考：
-
-https://www.cnblogs.com/kaituorensheng/p/5423131.html
-
-python复杂网络分析库NetworkX
-
-## tqdm
-
-tqdm是一个快速，可扩展的进度条。
-
-代码：
-
-https://github.com/tqdm/tqdm
-
-示例：
-
-{% highlight python %}
-from tqdm import tqdm
-for i in tqdm(range(9)):
-    ...
-{% endhighlight %}
-
-效果：
-
-`76%|████████████████████            | 7641/10000 [00:34<00:10, 222.22 it/s]`
-
-其实还有一个更简单的办法：
-
-`print("\r" + "xxx", end="")`：这样的话会先把console里面当前的行清除掉、再输出xxx。

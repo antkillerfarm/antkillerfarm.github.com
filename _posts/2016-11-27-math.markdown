@@ -262,22 +262,6 @@ https://mp.weixin.qq.com/s/vdxfzuGEMoiwGARYYzXbKg
 
 最伟大的数学公式：欧拉公式
 
-# 傅立叶变换
+https://mp.weixin.qq.com/s/cy5U6in3QQSy7yAXkDjvqA
 
-$$\hat{f}(\xi) = \int_{-\infty}^{+\infty} f(x)\ e^{- 2\pi i x \xi}\mathrm{d}x$$
-
-傅立叶变换是最基本的频域变换，这里不再赘述，只是提供一些有意思的图示。
-
-正弦波的叠加（傅立叶级数）：
-
-![](/images/article/Fourier_series_sawtooth_wave_circles_animation.gif)
-
-![](/images/article/Fourier_series_square_wave_circles_animation.gif)
-
-时域、频域、相位：
-
-![](/images/article/fourier.jpg)
-
-傅立叶级数与傅立叶变换：
-
-![](/images/article/fourier_2.jpg)
+欧拉：1分钟解决$$e^π$$和$$π^e$$谁大的问题！

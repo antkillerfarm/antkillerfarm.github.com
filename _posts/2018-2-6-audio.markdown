@@ -273,3 +273,25 @@ http://tech.sina.com.cn/i/2018-10-10/doc-ihkvrhpt4844011.shtml
 矿机围城里的比特大陆：研发持续落后 公司四面楚歌
 
 詹克团、吴忌寒、杨作兴
+
+# 名校机器学习相关课程+
+
+https://sites.google.com/view/berkeley-cs294-158-sp19/home
+
+UCB CS294-158: Deep Unsupervised Learning
+
+https://github.com/mbinary/USTC-CS-Courses-Resource
+
+中国科学技术大学计算机学院课程资源
+
+https://mp.weixin.qq.com/s/iQpERylxzfQ0P51AQBj8bA
+
+概率论导论-哈佛和斯坦福大学合著630页新书
+
+https://people.csail.mit.edu/madry/6.883/
+
+6.883 Science of Deep Learning: Bridging Theory and Practice
+
+https://fullstackdeeplearning.com/march2019
+
+UCB: Full Stack Deep Learning。这个课程是专门讲述如何部署DL工程到实际产品中。

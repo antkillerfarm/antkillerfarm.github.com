@@ -318,6 +318,22 @@ https://mp.weixin.qq.com/s/oCoyEh1VhUmqZnf9okgYnA
 
 科普：十大物理学中最牛逼的思想实验!
 
+https://mp.weixin.qq.com/s/_0SN18UFx_GGlHebUaar9A
+
+兵器试验中心数字弹道的传奇。陆载德的故事——从一位左腿残疾的清华学子成长为90年代共和国军队中唯一的独腿将军。
+
+![](/images/img3/DC.gif)
+
+![](/images/img3/BLDC.gif)
+
+https://mp.weixin.qq.com/s/rpiOZWQwj92MiFQPXD-NMQ
+
+何谓BLDC电机？BLDC电机是如何旋转的？
+
+https://mp.weixin.qq.com/s/IQ8YSyp-m2jCIDfLtuh_ew
+
+天上会掉金子吗？会！你现在用的这些就是！
+
 ## LSM (Log Structured Merge)
 
 十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。

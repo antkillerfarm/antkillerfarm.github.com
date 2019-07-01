@@ -319,3 +319,7 @@ AutoML在推荐系统中的应用
 https://mp.weixin.qq.com/s/95FH-_L5smx7WoNnfucWVg
 
 为什么说自动化特征工程将改变机器学习的方式
+
+https://mp.weixin.qq.com/s/lKsHvKjbIyBJ5OmCl2fIvg
+
+如何基于Flink+TensorFlow打造实时智能异常检测平台？

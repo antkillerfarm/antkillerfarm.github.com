@@ -6,6 +6,38 @@ category: resource
 
 # NLP参考资源
 
+https://mp.weixin.qq.com/s/tGw2c0AMAZSVYddGUQDdOw
+
+沈向洋：懂语言者得天下
+
+https://mp.weixin.qq.com/s/LdU91j8OpDR-pidzzYVtqA
+
+Pointer Networks在自然语言处理领域中的应用
+
+https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247484926&idx=1&sn=4e34a442c126c46bba27a7f17df3e61e
+
+聊天机器人Chatbot知识资料全集
+
+https://mp.weixin.qq.com/s/i9AXKsd6XVxyuaTCKsAj3g
+
+像Sheldon一样对“讽刺语言”分辨无能？别怕，MIT最新算法帮你助攻
+
+https://mp.weixin.qq.com/s/ZlfxZMWz5lSVLxkAf9isJQ
+
+斯坦福李纪为博士毕业论文：让机器像人一样交流
+
+https://mp.weixin.qq.com/s/bNB7EFj1QgSNb9as1YfgJw
+
+Reddit热门话题：你是否也对NLP的现状感到失望？
+
+https://mp.weixin.qq.com/s/uVoLET8LTnC_z0uJ8r0bRA
+
+对话系统综述：新进展新前沿
+
+https://mp.weixin.qq.com/s/2cbzD1UFW66-3zwsZk9Bxg
+
+用于文本的最牛神经网络架构是什么？
+
 https://mp.weixin.qq.com/s/AqzdRoXthrUFUOqSNwgfqQ
 
 新的一年，想发有关对话系统的paper？快关注时下最大热点：智能化与个性化

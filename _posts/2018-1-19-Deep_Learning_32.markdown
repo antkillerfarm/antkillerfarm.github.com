@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十二）——NN Quantization, 点云, 显著性检测
+title:  深度学习（三十二）——NN Quantization, 点云
 category: DL 
 ---
 
@@ -303,25 +303,3 @@ Geometric Relation Learning in 3D Point Cloud Analysis
 https://mp.weixin.qq.com/s/sXxUh_9Kd_2BkISHbxL2CA
 
 基于深度学习的实时激光雷达点云目标检测及ROS实现
-
-# 显著性检测
-
-https://mp.weixin.qq.com/s/Mi62oqtXUT5If_Dj4KmVYA
-
-计算机视觉如何知道你想看什么？个人显著性检测
-
-https://mp.weixin.qq.com/s/47TcGoasB9E_Et2zwl3OCw
-
-全局对比度的图像显著性检测算法
-
-https://zhuanlan.zhihu.com/p/65307842
-
-快、好、实现简单并且开源的显著性检测方法
-
-https://mp.weixin.qq.com/s/tmp1HXU7cLerLr0DY9NluQ
-
-杂乱环境下的显著性物体： 将显著性物体检测推向新高度
-
-https://mp.weixin.qq.com/s/urgkUcu2ZWQMGPZdArWzYg
-
-PoolNet：基于池化技术的显著性目标检测

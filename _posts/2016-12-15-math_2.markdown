@@ -4,7 +4,25 @@ title:  数学狂想曲（二）——DFT, 拉普拉斯变换, 随机变量的�
 category: math 
 ---
 
-# 傅立叶变换（续）
+# 傅立叶变换
+
+$$\hat{f}(\xi) = \int_{-\infty}^{+\infty} f(x)\ e^{- 2\pi i x \xi}\mathrm{d}x$$
+
+傅立叶变换是最基本的频域变换，这里不再赘述，只是提供一些有意思的图示。
+
+正弦波的叠加（傅立叶级数）：
+
+![](/images/article/Fourier_series_sawtooth_wave_circles_animation.gif)
+
+![](/images/article/Fourier_series_square_wave_circles_animation.gif)
+
+时域、频域、相位：
+
+![](/images/article/fourier.jpg)
+
+傅立叶级数与傅立叶变换：
+
+![](/images/article/fourier_2.jpg)
 
 欧拉公式：
 
@@ -264,29 +282,3 @@ $$\Pr(Y=k) = (1 - p)^k\,p\,$$
 泊松分布的独特之处，还在于它的两个要素t和k，一个是连续型随机变量，另一个是离散型随机变量。无形之中，它成为了这两类变量之间的桥梁。与此相关的数学分支，一般被称为泊松分析。
 
 仍以上面的例子为例，如果反过来，求两次来电的时间间隔t，则t符合**指数分布**。
-
-参考：
-
-https://www.zhihu.com/question/26441147
-
-泊松分布的现实意义是什么，为什么现实生活多数服从于泊松分布？
-
-http://www.ruanyifeng.com/blog/2015/06/poisson-distribution.html
-
-泊松分布和指数分布：10分钟教程
-
-http://blog.csdn.net/kicilove/article/details/78655856
-
-数据科学家应知必会的6种常见概率分布
-
-## 贝塔分布和共轭先验分布
-
-$$f(x;\alpha,\beta)=\frac{x^{\alpha-1}(1-x)^{\beta-1}}{B(\alpha,\beta)}$$
-
-贝塔分布的PDF和CDF如下图所示：
-
-![](/images/article/beta.png)
-
-![](/images/article/beta1.png)
-
-从上图可以看出它是个百变星君，它可以是凹的、凸的、单调上升的、单调下降的；可以是曲线也可以是直线。由于Beta分布能够拟合如此之多的形状，因此它在统计数据拟合中，被广泛使用。

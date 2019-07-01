@@ -134,6 +134,10 @@ https://mp.weixin.qq.com/s/QjZL3fGz-Kvjh40RGVm4AQ
 
 SQL on Hadoop在快手大数据平台的实践与优化
 
+https://mp.weixin.qq.com/s/waoNAf7bFKgkyHbCMIMy_Q
+
+大数据架构如何做到流批一体？
+
 # 数字成像
 
 ## CCD

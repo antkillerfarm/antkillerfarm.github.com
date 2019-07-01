@@ -370,6 +370,10 @@ https://mp.weixin.qq.com/s/7QrSSEiLjmGjNhFfU6ue0A
 
 推荐系统产品与算法概述
 
+https://mp.weixin.qq.com/s/49o_AobVNs_9Lgm4qbQcPA
+
+一文全面了解基于内容的推荐算法
+
 # 强连通分量算法
 
 http://ishare.iask.sina.com.cn/f/34626295.html

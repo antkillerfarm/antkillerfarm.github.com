@@ -106,6 +106,10 @@ https://mp.weixin.qq.com/s/w3qt1qW8tfWr25ZemPdYvQ
 
 推荐模型的演化趋势及FM统一召回模型实践
 
+https://mp.weixin.qq.com/s/IfS7-pMbyfkDENoEOFN6lQ
+
+学习偏好，北大&BOSS直聘的这个AI模型能更好的为你找工作
+
 # 人脸检测/识别
 
 ## 人脸识别

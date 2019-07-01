@@ -96,6 +96,16 @@ Adversarial loss(C. Li and M. Wand. Precomputed real-time texture synthesis with
 
 梯度直方图（P. Wilmot, E. Risser, and C. Barnes. Stable and controllable neural texture synthesis and style transfer using histogram losses. arXiv preprint arXiv:1701.08893 , 2017）
 
+## ResNet + Style transfer
+
+Style transfer的CNN bone也是有讲究的，除了AlexNet之外，还可以使用VGG，但是它在ResNet上效果不佳。直到最近的论文才对这一现象有所解释。
+
+参考：
+
+https://mp.weixin.qq.com/s/Pub83W6nMM02lEIrsBe49Q
+
+谁说只有VGG才能做风格迁移，ResNet也可以！
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/26746283

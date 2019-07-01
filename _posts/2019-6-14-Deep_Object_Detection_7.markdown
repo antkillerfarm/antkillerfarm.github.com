@@ -329,3 +329,7 @@ https://mp.weixin.qq.com/s/h_ENriEXr7WI_XR_DtxpMQ
 https://mp.weixin.qq.com/s?__biz=MzI5MDUyMDIxNA==&mid=2247486104&idx=1&sn=5580a4680f3190adb98638471e9b5982
 
 百度视觉团队斩获 ECCV Google AI 目标检测竞赛冠军，获奖方案全解读
+
+https://zhuanlan.zhihu.com/p/54182158
+
+GHM（解决one-stage样本不平衡问题）目标检测算法论文阅读笔记

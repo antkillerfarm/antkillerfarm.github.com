@@ -8,6 +8,30 @@ category: resource
 
 ## 文本分类（续）
 
+https://mp.weixin.qq.com/s/0wMTL7x87YXiin3xkf8eJA
+
+中文文本分类技术实践与分享
+
+https://mp.weixin.qq.com/s/WvgftlX_LVIrt9tE38mXkQ
+
+NLP基础任务:文本分类近年发展汇总,68页超详细解析
+
+https://mp.weixin.qq.com/s/rCBdY4AcSupppEbZhRQW6Q
+
+一文看懂深度文本分类之DPCNN原理与代码
+
+https://mp.weixin.qq.com/s/A-UDbDNS77wd8WTgYiYD8Q
+
+文本分类有哪些论文中很少提及却对性能有重要影响的tricks？
+
+https://mp.weixin.qq.com/s/0Jz_BSe6DI29gvWiy7poBw
+
+基于深度学习和经典方法的文本分类
+
+https://github.com/brightmart/text_classification
+
+一个文本分类的代码库
+
 https://mp.weixin.qq.com/s/DsE8X2Hgx1oYMoFUswgKkA
 
 Raúl Garreta大神教你5步搭建机器学习文本分类器！
@@ -375,35 +399,3 @@ http://www.jianshu.com/p/ac1840abc63f
 https://mp.weixin.qq.com/s/SVKlD0T8IkpVAKFJu-VQAg
 
 胡一川：深度学习在智能助理中的应用
-
-https://mp.weixin.qq.com/s/tGw2c0AMAZSVYddGUQDdOw
-
-沈向洋：懂语言者得天下
-
-https://mp.weixin.qq.com/s/LdU91j8OpDR-pidzzYVtqA
-
-Pointer Networks在自然语言处理领域中的应用
-
-https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247484926&idx=1&sn=4e34a442c126c46bba27a7f17df3e61e
-
-聊天机器人Chatbot知识资料全集
-
-https://mp.weixin.qq.com/s/i9AXKsd6XVxyuaTCKsAj3g
-
-像Sheldon一样对“讽刺语言”分辨无能？别怕，MIT最新算法帮你助攻
-
-https://mp.weixin.qq.com/s/ZlfxZMWz5lSVLxkAf9isJQ
-
-斯坦福李纪为博士毕业论文：让机器像人一样交流
-
-https://mp.weixin.qq.com/s/bNB7EFj1QgSNb9as1YfgJw
-
-Reddit热门话题：你是否也对NLP的现状感到失望？
-
-https://mp.weixin.qq.com/s/uVoLET8LTnC_z0uJ8r0bRA
-
-对话系统综述：新进展新前沿
-
-https://mp.weixin.qq.com/s/2cbzD1UFW66-3zwsZk9Bxg
-
-用于文本的最牛神经网络架构是什么？

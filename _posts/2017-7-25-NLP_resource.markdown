@@ -364,6 +364,10 @@ https://mp.weixin.qq.com/s/r9WRkmApBaHvlCQ5F5ypjg
 
 神奇的神经机器翻译：从发展脉络到未来前景
 
+https://mp.weixin.qq.com/s/8xGPwxLZX0ZJ586fZogkpg
+
+NAACL2019-使用感知句法词表示的句法增强神经机器翻译
+
 ## 文本分类
 
 http://www.jianshu.com/p/0273c377c34e
@@ -381,27 +385,3 @@ https://mp.weixin.qq.com/s/sJnDrGe7U_1XtJ8sYIcWiw
 https://mp.weixin.qq.com/s/ylRJrP-wnnelX5uUR0fukw
 
 一文综述经典的深度文本分类方法
-
-https://mp.weixin.qq.com/s/0wMTL7x87YXiin3xkf8eJA
-
-中文文本分类技术实践与分享
-
-https://mp.weixin.qq.com/s/WvgftlX_LVIrt9tE38mXkQ
-
-NLP基础任务:文本分类近年发展汇总,68页超详细解析
-
-https://mp.weixin.qq.com/s/rCBdY4AcSupppEbZhRQW6Q
-
-一文看懂深度文本分类之DPCNN原理与代码
-
-https://mp.weixin.qq.com/s/A-UDbDNS77wd8WTgYiYD8Q
-
-文本分类有哪些论文中很少提及却对性能有重要影响的tricks？
-
-https://mp.weixin.qq.com/s/0Jz_BSe6DI29gvWiy7poBw
-
-基于深度学习和经典方法的文本分类
-
-https://github.com/brightmart/text_classification
-
-一个文本分类的代码库

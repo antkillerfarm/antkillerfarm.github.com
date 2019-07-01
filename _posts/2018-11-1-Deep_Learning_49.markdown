@@ -236,6 +236,10 @@ https://mp.weixin.qq.com/s/SqxooZqSeD3wA4EFK5D3Kg
 
 再生神经网络：利用知识蒸馏收敛到更优的模型
 
+https://mp.weixin.qq.com/s/af-z73asc-PmpEsI_yEulA
+
+北邮提出新AI模型压缩算法，显著降低计算复杂度
+
 # Fast Image Processing
 
 ![](/images/article/FIP.png)

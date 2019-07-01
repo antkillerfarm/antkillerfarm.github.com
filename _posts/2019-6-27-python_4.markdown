@@ -1,10 +1,153 @@
 ---
 layout: post
-title:  Python（五）
+title:  Python（四）
 category: language 
 ---
 
 # Python
+
+## python调用GTK函数的一般规则
+
+众所周知，GTK库是用C语言编写的，其相关的文档提供的也是C函数的接口，python接口的文档相对较少，获得也不太容易。因此有必要掌握一下这方面基本的命名规则。（这里只讲方法，对深层次的调用原理不做探究。）
+
+1）类初始化函数
+
+C:`GtkWidget * gtk_button_new (void);`
+
+python:`button = Gtk.Button()`
+
+这里除了把C函数式的写法，替换成python的类的写法之外，并无其他差异。
+
+2）普通类成员函数
+
+C:`void gtk_container_add (GtkContainer *container, GtkWidget *widget);`
+
+python:`button.add(image)`
+
+可以看出，C函数的第一个表示self类指针的参数被省略掉了。
+
+3）回调函数
+
+这里以按钮的click事件回调为例：
+
+C:`void user_function (GtkButton *button, gpointer user_data)`
+
+python:
+
+`button.connect("clicked", self.playToggled)`
+
+`def playToggled(self, w):`
+
+这里的情况要复杂的多。首先在事件回调注册的时候，由于我们并没有给user_data赋值，因此照理说playToggled函数，只有button这一个参数。但实际传递给playToggled函数的有两个参数，self是一个用于占位的参数，w对应button，没有东西对应user_data。
+
+4）用于输出的参数
+
+C:`void gst_message_parse_error (GstMessage *message, GError **gerror, gchar **debug);`
+
+python:`err, debug = message.parse_error()`
+
+这个例子中的gerror和debug都是用于输出的参数。如果只想得到其一，还可用以下方法:
+
+`debug = message.parse_error()[2]`
+
+5）枚举类型
+
+C:
+
+{% highlight c %}
+enum GstSeekFlags
+{
+  GST_SEEK_FLAG_FLUSH,
+  ...
+}
+{% endhighlight %}
+
+python:`Gst.SeekFlags.FLUSH`
+
+6）宏常量
+
+C:`#define GST_CLOCK_TIME_NONE ((GstClockTime) -1)`
+
+python:`Gst.CLOCK_TIME_NONE`
+
+7）类型转换
+
+大多数情况下，类型转换自动完成，并无什么问题。这里只讨论特殊的情况。
+
+C:
+
+{% highlight c %}
+gst_element_seek (pipeline, 1.0, GST_FORMAT_TIME, GST_SEEK_FLAG_FLUSH,
+                         GST_SEEK_TYPE_SET, time_nanoseconds,
+                         GST_SEEK_TYPE_NONE, GST_CLOCK_TIME_NONE))
+{% endhighlight %}
+
+python:
+
+{% highlight python %}
+self.player.seek(1.0, Gst.Format.TIME, Gst.SeekFlags.FLUSH, Gst.SeekType.SET,\
+                 time_nanoseconds, Gst.SeekType.NONE, Gst.CLOCK_TIME_NONE)
+{% endhighlight %}
+
+这里首先按照一般的方法，将C代码转化成python代码。但是运行之后，产生如下错误：
+
+`OverflowError: long too big to convert`
+
+究其原因，gst_element_seek的最后一个参数是uint64类型的。但python原生并不支持该类型，而是将之转换成int类型（实际上是int64类型），这样的话，GST_CLOCK_TIME_NONE的值显然超出了int64所能表示的范围。
+
+解决的办法是使用ctypes库，将
+
+`Gst.CLOCK_TIME_NONE`
+
+改为
+
+`c_long(Gst.CLOCK_TIME_NONE).value`
+
+## 参考
+
+https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA
+
+Python学习思维导图
+
+https://mp.weixin.qq.com/s/_OmRvwFmvuuOpBf7DQG8IA
+
+Python30个编程技巧
+
+https://github.com/leisurelicht/wtfpython-cn
+
+《What the f*ck Python!》中文版
+
+https://mp.weixin.qq.com/s/-CaMHjsY580et8Hh_D2FSg
+
+简约而不简单的Django新手图文教程
+
+https://mp.weixin.qq.com/s/O5okcuVKuf339BZzhmxiew
+
+13个Python GUI库
+
+https://mp.weixin.qq.com/s/hIMwss4h5k10oLanCYYS1g
+
+49个Python学习资源
+
+https://mp.weixin.qq.com/s/jHnkmpnOz1LApVCLJL-8Tw
+
+如何写出优雅又地道的Python代码？
+
+https://mp.weixin.qq.com/s/5xs1ivkrUAP_Rr9P-EMc5g
+
+代码优化指南：人生苦短，我用Python。这篇blog主要介绍了如何追踪Python脚本的CPU使用情况。
+
+https://mp.weixin.qq.com/s/HGH2e_0ocHv2VWsjOje9BQ
+
+程序员必知的Python陷阱与缺陷列表
+
+http://blog.csdn.net/linda1000/article/details/8315892
+
+单引号、双引号和三双引号的区别
+
+https://mp.weixin.qq.com/s/czqO4Lo1Jt9zqg2UKNlLYg
+
+手把手教你用Python创建微信聊天机器人
 
 https://mp.weixin.qq.com/s/DMK3gwMKbpsfOrWMxjb5lg
 

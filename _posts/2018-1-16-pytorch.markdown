@@ -114,6 +114,12 @@ https://github.com/lanpa/tensorboardX
 
 https://tensorboardx.readthedocs.io/en/latest/tensorboard.html
 
+参考：
+
+https://mp.weixin.qq.com/s/Zxoug2sMoWsOWnZPCQ22ug
+
+PyTorch模型训练特征图可视化（TensorboardX）
+
 ## 参考
 
 https://mp.weixin.qq.com/s/zhkaenFdnB5KgaEYb-XDEQ

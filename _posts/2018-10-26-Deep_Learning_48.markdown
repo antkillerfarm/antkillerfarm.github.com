@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十八）——语义分割进阶
+title:  深度学习（四十八）——语义分割进阶, 显著性检测
 category: DL 
 ---
 
@@ -371,3 +371,29 @@ https://mp.weixin.qq.com/s/XTTzAkgVF-WMJT7IYWxJYg
 https://mp.weixin.qq.com/s/HJzbMoCa7GenNm78sz7YAg
 
 全景分割是什么？
+
+# 显著性检测
+
+https://mp.weixin.qq.com/s/Mi62oqtXUT5If_Dj4KmVYA
+
+计算机视觉如何知道你想看什么？个人显著性检测
+
+https://mp.weixin.qq.com/s/47TcGoasB9E_Et2zwl3OCw
+
+全局对比度的图像显著性检测算法
+
+https://zhuanlan.zhihu.com/p/65307842
+
+快、好、实现简单并且开源的显著性检测方法
+
+https://mp.weixin.qq.com/s/tmp1HXU7cLerLr0DY9NluQ
+
+杂乱环境下的显著性物体： 将显著性物体检测推向新高度
+
+https://mp.weixin.qq.com/s/urgkUcu2ZWQMGPZdArWzYg
+
+PoolNet：基于池化技术的显著性目标检测
+
+https://zhuanlan.zhihu.com/p/71538356
+
+BASNet，一种能关注边缘的显著性检测算法

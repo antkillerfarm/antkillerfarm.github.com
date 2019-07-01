@@ -210,6 +210,10 @@ https://zhuanlan.zhihu.com/p/69559437
 
 基于自然语言的跨模态行人re-id的SOTA方法简述（上）
 
+https://mp.weixin.qq.com/s/RBfHrvkZlx90RM1Ohd6m9g
+
+一种行人重识别监督之下的纹理生成网络
+
 # 深度ISP
 
 ## 数据集
@@ -235,6 +239,14 @@ HDRNet是一个Image Enhancement方面的数据集。
 官网：
 
 https://groups.csail.mit.edu/graphics/hdrnet/
+
+## 综述
+
+论文：
+
+《Unprocessing Images for Learned Raw Denoising》
+
+这篇论文虽然不是综述，但有很多内容讲解ISP的流程。
 
 ## 参考
 
@@ -289,6 +301,10 @@ https://mp.weixin.qq.com/s/B5XNmFlSnjEh2xAXB42pHQ
 https://mp.weixin.qq.com/s/MEjZT_41w2cRqIYDi8a1rw
 
 腾讯优图CVPR中标论文：不靠硬件靠算法，暗光拍照也清晰
+
+https://mp.weixin.qq.com/s/Ek2eNeUPzEJiN6E1Yr6sMw
+
+CVPR2019成像类论文拾英
 
 # LSM
 
