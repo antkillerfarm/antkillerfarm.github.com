@@ -120,19 +120,23 @@ C++11右值引用和std::move语句实例解析
 
 对auto_ptr的赋值和拷贝会导致原来的auto_ptr变为NULL，从而无效化。
 
-**unique_ptr**：大多数情况下，auto_ptr都是唯一的，这样的话，赋值和拷贝都是不必要的，且会造成混淆。（尤其拷贝会导致原来的auto_ptr变为NULL，这个还能叫做拷贝吗？）因此，auto_ptr在后续标准中，不再推荐使用，而是用unique_ptr替代。unique_ptr默认不支持赋值和拷贝，确需使用，要与std::move配合方可。否则会编译出错。
+**unique_ptr**：auto_ptr是全局唯一的，且不采用引用计数管理，因此，赋值和拷贝都是不必要的，且会造成混淆。（尤其拷贝会导致原来的auto_ptr变为NULL，这个还能叫做拷贝吗？）因此，auto_ptr在后续标准中，不再推荐使用，而是用unique_ptr替代。unique_ptr默认不支持赋值和拷贝，确需使用，要与std::move配合方可。否则会编译出错。
 
 unique_ptr早先在boost库中的时候，也叫做scoped_ptr。
 
 **shared_ptr**：为多个拥有者管理内存中对象的生命周期而设计的。在你初始化一个 shared_ptr 后，你可以复制它，把函数参数的值递给它，并把它分配给其它 shared_ptr 实例。所有实例指向同一个对象，并共享访问一个“控制块”，即每当一个新的shared_ptr 被添加时，递增和递减引用计数，超出范围，则复位。当引用计数到达零时，控制块删除内存资源和自身。
 
-**weak_ptr**：
+**weak_ptr**：如果对象A中有对象B的shared_ptr，而对象B中又有对象A的shared_ptr，那么就会出现循环引用的情况。这时可以使用weak_ptr。两者的区别在于新建shared_ptr会增加引用计数，而weak_ptr不会。
 
 ## 参考
 
 https://mp.weixin.qq.com/s/Hpn7KqYlBKz0JdryiozqyQ
 
 每个开发者都应该了解的一些C++特性
+
+https://www.cnblogs.com/wuchanming/p/3913492.html
+
+emplace_back与push_back的区别
 
 # boost
 
