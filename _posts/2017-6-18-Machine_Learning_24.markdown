@@ -306,3 +306,7 @@ https://mp.weixin.qq.com/s/95Zklj8ovheQV3Gnc-2h-Q
 https://mp.weixin.qq.com/s/iuchckQ-MRqSZ2QwghgPTQ
 
 浅谈“用户画像”
+
+https://mp.weixin.qq.com/s/ptI6cBxtykTQoljZR94RTw
+
+从入门到冠军：中国移动人群画像赛TOP1经验分享

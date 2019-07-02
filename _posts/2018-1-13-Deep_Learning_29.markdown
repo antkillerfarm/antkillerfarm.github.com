@@ -382,6 +382,10 @@ https://mp.weixin.qq.com/s/rvcj9-6KlBsVmF_CAsip2A
 
 超越标准GNN！DeepMind、谷歌提出图匹配网络
 
+https://mp.weixin.qq.com/s/UotqgRjCTpjPrsIEWBRPxA
+
+基于随机游走的图匹配算法
+
 https://mp.weixin.qq.com/s/t2kjxrcn6O9tbJ-IQELboQ
 
 高君宇：图神经网络在视频分类中的应用

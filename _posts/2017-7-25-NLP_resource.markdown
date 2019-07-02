@@ -184,6 +184,10 @@ https://mp.weixin.qq.com/s/uVqcw1GpR4gC_kA96M86Mg
 
 微软智能对话方法教程，130页PPT带你了解最新研究进展
 
+https://mp.weixin.qq.com/s/1z5RCYyEiHRbaERaXvgwQw
+
+深度学习在自然语言处理中的应用发展史
+
 ## 分词
 
 https://mp.weixin.qq.com/s/Xy_jaOex72pLe4wwieKeUg

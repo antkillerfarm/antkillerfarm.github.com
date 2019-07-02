@@ -60,6 +60,10 @@ https://mp.weixin.qq.com/s/yDvTDTk8VtGZjA3RK4dLMQ
 
 阿里巴巴开源轻量级深度神经网络推理引擎MNN
 
+https://mp.weixin.qq.com/s/EcwmGKpCfVy22BWTB0Ro2g
+
+淘宝开源深度学习推理引擎MNN，移动AI的挑战与应对全面解读
+
 # Kubernetes
 
 Kubernetes是Google开源的容器集群管理系统，基于Docker构建一个容器的调度服务，提供资源调度、均衡容灾、服务注册、动态扩缩容等功能套件。

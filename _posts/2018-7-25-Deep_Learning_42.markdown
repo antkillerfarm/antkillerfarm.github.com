@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十二）——行人重识别, 深度ISP, Spiking Neuron Networks
+title:  深度学习（四十二）——行人重识别, 深度ISP, Spiking Neuron Networks, 多模态学习
 category: DL 
 ---
 

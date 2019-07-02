@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十七）——深度图像压缩, 深度贝叶斯学习, BERT
+title:  深度学习（四十七）——深度图像压缩, BERT
 category: DL 
 ---
 
@@ -44,51 +44,9 @@ https://mp.weixin.qq.com/s/exUYS2v5VyRaMdFylWlobw
 
 用循环神经网络进行文件无损压缩：斯坦福大学提出DeepZip
 
-# 深度贝叶斯学习
+https://mp.weixin.qq.com/s/GEMOfh04XR5IyWWlvZeeng
 
-https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og
-
-贝叶斯学习与未来人工智能
-
-https://mp.weixin.qq.com/s/Zd4rFU7Lebr4zmzxThNyVw
-
-详解珠算：清华大学开源的贝叶斯深度学习库
-
-https://mp.weixin.qq.com/s/RpaOrngeXTKycLb3iCygZw
-
-利用贝叶斯神经网络进行随机动力系统中的学习与策略搜索
-
-https://mp.weixin.qq.com/s/lKm_ypn5I7tSjoQHceJ0jQ
-
-概率编程：使用贝叶斯神经网络预测金融市场价格
-
-https://mp.weixin.qq.com/s/cDqxmRVQCIqdM5oiUh82YQ
-
-Yee Whye Teh：《贝叶斯深度学习与深度贝叶斯学习》
-
-https://mp.weixin.qq.com/s/Zk2YG-IJNhJxTBU8THSM-g
-
-让DL可解释？这一份66页贝叶斯深度学习教程告诉你
-
-https://mp.weixin.qq.com/s/-izo9VUdxN33pwVFGV_tjw
-
-299页PPT带你回顾深度贝叶斯学习最新发展脉络
-
-https://github.com/bayesgroup/deepbayes-2018
-
-Seminars DeepBayes Summer School 2018
-
-https://mp.weixin.qq.com/s/WCRYppBLdl_M4etUChnfgw
-
-PyMC3和Theano代码构建贝叶斯深度网络
-
-https://mp.weixin.qq.com/s/7mwJpQFWWXJ3dvTAwDFI7Q
-
-贝叶斯卷积神经网络：架起深度学习与统计学的桥梁
-
-https://mp.weixin.qq.com/s/2LkpuchuHs82Sxs5rD8bWA
-
-《深度贝叶斯与序列学习》，279页PPT带你知晓深度贝叶斯序列模型在NLP最新进展
+CLIC图像压缩挑战赛冠军方案解读
 
 # BERT
 
@@ -107,6 +65,8 @@ https://github.com/google-research/bert/blob/master/multilingual.md
 这里有一个使用预训练模型的参考代码：
 
 https://github.com/macanv/BERT-BiLSMT-CRF-NER
+
+![](/images/img2/BERT.png)
 
 ## ELMo
 
@@ -171,6 +131,10 @@ https://mp.weixin.qq.com/s/29y2bg4KE-HNwsimD3aauw
 https://mp.weixin.qq.com/s/itNtDuQS4KF_sLnfiwdyNg
 
 拆解XLNet模型设计，回顾语言表征学习的思想演进
+
+https://mp.weixin.qq.com/s/2zuR0x-Cb1NTeRHYeTjrHQ
+
+一文详解Google最新NLP模型XLNet
 
 ## 参考
 

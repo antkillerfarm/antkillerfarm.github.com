@@ -145,6 +145,8 @@ https://github.com/andravin/wincnn
 
 ![](/images/img3/Winograd.png)
 
+![](/images/img3/Winograd_2.png)
+
 参考：
 
 http://shuokay.com/2018/02/21/winograd/
@@ -178,6 +180,14 @@ Cooley-Tukey算法 （蝶形算法）
 https://www.zhihu.com/question/264307400
 
 为什么很少人用FFT加速CNN卷积层的运算？
+
+## Strassen algorithm
+
+![](/images/img3/Strassen.png)
+
+上图展示的是Strassen algorithm的步骤，该算法也是在矩阵运算加速领域比较知名的算法。
+
+然而，实际的情况要比理论计算复杂的多。比如有的硬件支持加法/乘法的跳零（忽略对0的加法/乘法）操作，这时无论是Strassen还是Winograd都不会有太好的效果。
 
 ## 参考
 

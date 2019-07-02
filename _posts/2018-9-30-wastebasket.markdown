@@ -338,6 +338,10 @@ https://mp.weixin.qq.com/s/o1a2YlYritcOrsLN2YuLmA
 
 神奇的霍特林法则：为什么汉堡王总是开在麦当劳旁边？
 
+https://mp.weixin.qq.com/s/K1fJ1wI9T46i7qW1xjMY_w
+
+比圆周率更神秘的“混沌”常数：4.669201609102...（费根鲍姆常数）
+
 ## LSM (Log Structured Merge)
 
 十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。

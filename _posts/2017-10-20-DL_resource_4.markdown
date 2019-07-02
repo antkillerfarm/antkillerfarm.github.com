@@ -205,3 +205,7 @@ Hinton提出泛化更优的“软决策树”：可解释DNN具体决策
 https://mp.weixin.qq.com/s/X75H8YOysftwU4VSjlmLBQ
 
 谷歌大脑最新技术：将神经网络提炼成软决策树！
+
+https://mp.weixin.qq.com/s/CjYVCqs21pwGTuYYzzzPiQ
+
+常建龙：基于关系的深度学习
