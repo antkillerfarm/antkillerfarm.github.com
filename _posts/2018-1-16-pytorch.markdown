@@ -362,6 +362,10 @@ https://www.zhihu.com/question/274635237
 
 Pytorch有什么节省内存（显存）的小技巧？
 
+https://mp.weixin.qq.com/s/rCocDz2kW2tpkZel5Wh-hw
+
+Pytorch网络结构可视化
+
 # 超算
 
 ![](/images/img3/power.aug.gif)

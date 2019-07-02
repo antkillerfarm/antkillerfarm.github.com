@@ -110,6 +110,10 @@ https://mp.weixin.qq.com/s/IfS7-pMbyfkDENoEOFN6lQ
 
 学习偏好，北大&BOSS直聘的这个AI模型能更好的为你找工作
 
+https://mp.weixin.qq.com/s/d3ZQ07XJ8x8MRgWHpAckZg
+
+工程师如何给女友买包？问问阿里“百事通”
+
 # 人脸检测/识别
 
 ## 人脸识别

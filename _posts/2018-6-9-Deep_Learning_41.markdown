@@ -32,6 +32,10 @@ https://mp.weixin.qq.com/s/8f8-YdQ5-wCNDV6tKjzVNQ
 
 玩转联邦学习，摆脱数据枷锁
 
+https://mp.weixin.qq.com/s/gGqpmzJKvgrfqsqsSeJ2xg
+
+第四范式等机构提出隐私保护新算法，医疗敏感数据也能合理学
+
 ## 参考
 
 >龙明盛，清华本科（2008）+博士（2016），迁移学习的最早提出者之一。清华大学副教授，博导。   

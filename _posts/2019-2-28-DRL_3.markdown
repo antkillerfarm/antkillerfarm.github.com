@@ -6,6 +6,22 @@ category: RL
 
 # DRL参考资源
 
+https://mp.weixin.qq.com/s/lR6BSa_pJzcinkSaSWsM2A
+
+伯克利提出强化学习新方法，可让智能体同时学习多个解决方案
+
+https://mp.weixin.qq.com/s/P-iSI80IVmb5s-Q15Re2HQ
+
+All In!我学会了用强化学习打德州扑克
+
+https://zhuanlan.zhihu.com/p/36322095
+
+最前沿：从虚拟到现实，DRL让小狗机器人跑起来了！
+
+https://mp.weixin.qq.com/s/xr-2cNoSYpCftLI3dV6zEw
+
+如何使用深度强化学习帮助自动驾驶汽车通过交叉路口？
+
 https://mp.weixin.qq.com/s/R_pfTXDMaLHmiCaSV2t_YA
 
 英特尔Nervana发布强化学习库Coach：支持多种价值与策略优化算法
@@ -341,23 +357,3 @@ https://mp.weixin.qq.com/s/dic_ssebe32L30pAUxlP6w
 https://mp.weixin.qq.com/s/tieGV_tDWkVVW2YFes4AqA
 
 学习何时做分类决策，深度好奇提出强化学习模型Jumper
-
-https://mp.weixin.qq.com/s/GUyZ0U5_JlXCI-5mO796SA
-
-超越DQN和A3C：深度强化学习领域近期新进展概览
-
-https://mp.weixin.qq.com/s/THgo4YzhUN2PUkyI5sSnpw
-
-开源啦：连DeepMind也捉急的游戏，OpenAI给你攻破第一关的高分算法
-
-https://mp.weixin.qq.com/s/loH6M0_U1DVrod0Drkl4eg
-
-深度强化学习教机器人自己穿衣服！
-
-https://mp.weixin.qq.com/s/VqPPQnH22Y-XeojNEZn3YQ
-
-CoRL 2018最佳系统论文：如此鸡贼的机器手，确定不是人在控制？
-
-https://mp.weixin.qq.com/s/eEQhwV1cA4nEgEBcOKDenA
-
-将逆向课程生成用于强化学习：伯克利新研究让智能体掌握全新任务

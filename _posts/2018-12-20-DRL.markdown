@@ -156,6 +156,10 @@ https://www.starai.io/course/
 
 StarAi的DRL教程
 
+https://mp.weixin.qq.com/s/eMzrktlm93ZEZi-J5sipqA
+
+莫斯科国立大学56页《深度强化学习综述》最新论文，带你全面了解DRL最新方法
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》
@@ -353,19 +357,3 @@ DQN从入门到放弃7 连续控制DQN算法-NAF
 https://zhuanlan.zhihu.com/p/56023723
 
 通过Q-learning深入理解强化学习（上）
-
-https://zhuanlan.zhihu.com/p/21434933
-
-DQN实战篇 从零开始安装Ubuntu, Cuda, Cudnn, Tensorflow, OpenAI Gym
-
-https://mp.weixin.qq.com/s/0HukwNmg3k-rBrIBByLhnQ
-
-深度Q学习：一步步实现能玩《毁灭战士》的智能体
-
-https://mp.weixin.qq.com/s/x-qCA0TzoVUtZ8VAf8ey0A
-
-深度Q学习介绍
-
-https://mp.weixin.qq.com/s/snNvN4FFP0VEZwDA0TAp1w
-
-强化学习训练Chrome小恐龙Dino Run：最高超过4000分
