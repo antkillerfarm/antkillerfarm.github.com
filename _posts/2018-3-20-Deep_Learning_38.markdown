@@ -318,6 +318,10 @@ https://mp.weixin.qq.com/s/lcJcaiMtYXGVOwa_sVsVfA
 
 Hinton老爷子CapsNet再升级，结合无监督，接近当前最佳效果
 
+https://mp.weixin.qq.com/s/A0m3lkIBCTFf5bzTQlYbgQ
+
+基于胶囊网络的计算机视觉应用
+
 # 细粒度分类
 
 https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw

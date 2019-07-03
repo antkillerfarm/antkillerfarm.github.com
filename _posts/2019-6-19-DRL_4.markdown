@@ -6,6 +6,26 @@ category: RL
 
 # DRL参考资源
 
+https://mp.weixin.qq.com/s/GUyZ0U5_JlXCI-5mO796SA
+
+超越DQN和A3C：深度强化学习领域近期新进展概览
+
+https://mp.weixin.qq.com/s/THgo4YzhUN2PUkyI5sSnpw
+
+开源啦：连DeepMind也捉急的游戏，OpenAI给你攻破第一关的高分算法
+
+https://mp.weixin.qq.com/s/loH6M0_U1DVrod0Drkl4eg
+
+深度强化学习教机器人自己穿衣服！
+
+https://mp.weixin.qq.com/s/VqPPQnH22Y-XeojNEZn3YQ
+
+CoRL 2018最佳系统论文：如此鸡贼的机器手，确定不是人在控制？
+
+https://mp.weixin.qq.com/s/eEQhwV1cA4nEgEBcOKDenA
+
+将逆向课程生成用于强化学习：伯克利新研究让智能体掌握全新任务
+
 https://mp.weixin.qq.com/s/cO1VlYGwdRBAbPs7IgvcAA
 
 超越传统强化学习的价值分布方法

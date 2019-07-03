@@ -6,6 +6,22 @@ category: RL
 
 # Deep Q-learning Network（续）
 
+https://zhuanlan.zhihu.com/p/21434933
+
+DQN实战篇 从零开始安装Ubuntu, Cuda, Cudnn, Tensorflow, OpenAI Gym
+
+https://mp.weixin.qq.com/s/0HukwNmg3k-rBrIBByLhnQ
+
+深度Q学习：一步步实现能玩《毁灭战士》的智能体
+
+https://mp.weixin.qq.com/s/x-qCA0TzoVUtZ8VAf8ey0A
+
+深度Q学习介绍
+
+https://mp.weixin.qq.com/s/snNvN4FFP0VEZwDA0TAp1w
+
+强化学习训练Chrome小恐龙Dino Run：最高超过4000分
+
 https://mp.weixin.qq.com/s/SZHMyWOXHM8T3zp_aUt-6A
 
 DeepMind提出Rainbow：整合DQN算法中的六种变体
@@ -367,19 +383,3 @@ http://mp.weixin.qq.com/s/TBVVdX3erOpXNjXmhLmxOw
 https://mp.weixin.qq.com/s/_Di73PkEWJV1-OLLHfz7yQ
 
 组合在线学习：实时反馈玩转组合优化
-
-https://mp.weixin.qq.com/s/lR6BSa_pJzcinkSaSWsM2A
-
-伯克利提出强化学习新方法，可让智能体同时学习多个解决方案
-
-https://mp.weixin.qq.com/s/P-iSI80IVmb5s-Q15Re2HQ
-
-All In!我学会了用强化学习打德州扑克
-
-https://zhuanlan.zhihu.com/p/36322095
-
-最前沿：从虚拟到现实，DRL让小狗机器人跑起来了！
-
-https://mp.weixin.qq.com/s/xr-2cNoSYpCftLI3dV6zEw
-
-如何使用深度强化学习帮助自动驾驶汽车通过交叉路口？

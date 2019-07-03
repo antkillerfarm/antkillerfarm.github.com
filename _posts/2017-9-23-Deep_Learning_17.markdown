@@ -130,6 +130,10 @@ http://blog.csdn.net/bea_tree/article/details/67049373
 
 几分钟走进神奇的光流：FlowNet 2.0: Evolution of Optical Flow Estimation with Deep Networks
 
+https://mp.weixin.qq.com/s/Z3Ra-XcUGO5BcYGLeKBClg
+
+港中大等打造光流预测新模型SelFlow，自监督学习攻克遮挡难题
+
 ## SpyNet
 
 论文：
