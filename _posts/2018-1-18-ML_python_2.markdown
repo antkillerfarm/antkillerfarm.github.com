@@ -6,6 +6,34 @@ category: AI
 
 # Machine Learning之Python篇
 
+## chainer
+
+chainer是一个日本公司Preferred Networks写的基于python的深度学习框架。
+
+官网：
+
+https://chainer.org/
+
+代码：
+
+https://github.com/chainer/chainer
+
+Preferred Networks是日本目前最强的AI创业公司，估值已经超过20亿美元。在工业机器人领域具有很强的实力。
+
+它推出的PaintsChainer是一个给黑白线稿上色的App。
+
+官网：
+
+https://github.com/pfnet/PaintsChainer
+
+## TuShare
+
+TuShare是一个免费、开源的python财经数据接口包。主要实现对股票等金融数据从数据采集、清洗加工 到 数据存储的过程，能够为金融分析人员提供快速、整洁、和多样的便于分析的数据，为他们在数据获取方面极大地减轻工作量，使他们更加专注于策略和模型的研究与实现上。
+
+官网：
+
+http://tushare.org/
+
 ## skimage
 
 skimage相当于python版本的OpenCV。
@@ -463,27 +491,3 @@ Python学习者最易上手的机器学习漫游指南
 https://mp.weixin.qq.com/s/MmuxNA8Xm6uRiVNGhDnyFw
 
 Scikit-learn实战之数据预处理
-
-https://mp.weixin.qq.com/s/V1EVdhX6-c1VNGNBgscFeA
-
-用Python统计新浪微博各种表情使用频率
-
-https://mp.weixin.qq.com/s/UOJsoB_YwBunj0YNShF11w
-
-深度学习+OpenCV，Python实现实时视频目标检测
-
-https://mp.weixin.qq.com/s/YCNnfR9XAP0i-Qs-DIpOCg
-
-6段Python代码刻画深度学习历史：从最小二乘法到深度神经网络
-
-https://mp.weixin.qq.com/s/a7TLJD1-k3AlJ_ENPoJpwA
-
-用Python分析《红楼梦》，后四十回是曹雪芹所写吗？
-
-https://mp.weixin.qq.com/s/MUMQuZLDE5iyogLnIIBaMw
-
-7步让你从零开始掌握Python机器学习！
-
-http://mp.weixin.qq.com/s/5vI1Ii6bd_IzrXKHlvULSQ
-
-是学习Java还是Python？一张图告诉你！

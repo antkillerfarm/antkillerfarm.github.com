@@ -233,3 +233,7 @@ GAN In Text Generation
 https://mp.weixin.qq.com/s/isrB3yda9sGgbOb4dBXMrQ
 
 更自由的GAN图像联想：无监督跨类的图像转换模型FUNIT，英伟达&康奈尔大学
+
+https://mp.weixin.qq.com/s/k3olis2A7cArgppKUPK7uw
+
+详解SNGAN(频谱归一化GAN)

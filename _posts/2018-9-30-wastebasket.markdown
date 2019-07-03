@@ -342,6 +342,10 @@ https://mp.weixin.qq.com/s/K1fJ1wI9T46i7qW1xjMY_w
 
 比圆周率更神秘的“混沌”常数：4.669201609102...（费根鲍姆常数）
 
+https://mp.weixin.qq.com/s/t2EM1l7ujoSquGl2x5hBBA
+
+21世纪最强王者纸飞机：用一张A4纸拿到了吉尼斯世界记录
+
 ## LSM (Log Structured Merge)
 
 十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。

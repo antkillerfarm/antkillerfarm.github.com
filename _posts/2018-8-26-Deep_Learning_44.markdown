@@ -287,3 +287,7 @@ AM3D:高精度单目三维检测器
 https://mp.weixin.qq.com/s/6hXNcm4ICNqa2Ezao-oE-g
 
 AR版“神笔马良”：从单张2D图片建立3D人物运动模型，华盛顿大学与Facebook 3D重建
+
+https://mp.weixin.qq.com/s/K_2lGGlLKHIIm4iSg0xCUw
+
+铅笔素描画自动生成

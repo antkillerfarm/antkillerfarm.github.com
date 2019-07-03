@@ -198,6 +198,26 @@ histogram：直方图。
 
 percentile：百分位数。用途举例：提取数组中最小的30%的数。
 
+### einsum
+
+在实现一些算法时，数学表达式已经求出来了，需要将之转换为代码实现，简单的一些还好，有时碰到例如矩阵转置、矩阵乘法、求迹、张量乘法、数组求和等等，若是以分别以transopse、sum、trace、tensordot等函数实现的话，不但复杂，还容易出错
+
+现在，这些问题你统统可以一个函数搞定，没错，就是einsum。
+
+einsum全称Einstein summation convention，是爱因斯坦1916年提出的一种标记约定。
+
+示例：
+
+$$c_{ik}=a_{ij}b_{jk}=\sum_ja_{ij}b_{jk}$$
+
+`c = np.einsum('ij,jk->ik', a, b)`
+
+参考：
+
+https://zhuanlan.zhihu.com/p/71639781
+
+一个函数打天下，einsum
+
 ### 参考
 
 https://mp.weixin.qq.com/s/FVI3zEp4it-fd99-3MU9vA
@@ -433,31 +453,3 @@ https://mp.weixin.qq.com/s/oVHxYRMzJtD5t79uJ5jgWw
 http://www.runoob.com/python/python-mysql.html
 
 python操作mysql数据库
-
-## chainer
-
-chainer是一个日本公司Preferred Networks写的基于python的深度学习框架。
-
-官网：
-
-https://chainer.org/
-
-代码：
-
-https://github.com/chainer/chainer
-
-Preferred Networks是日本目前最强的AI创业公司，估值已经超过20亿美元。在工业机器人领域具有很强的实力。
-
-它推出的PaintsChainer是一个给黑白线稿上色的App。
-
-官网：
-
-https://github.com/pfnet/PaintsChainer
-
-## TuShare
-
-TuShare是一个免费、开源的python财经数据接口包。主要实现对股票等金融数据从数据采集、清洗加工 到 数据存储的过程，能够为金融分析人员提供快速、整洁、和多样的便于分析的数据，为他们在数据获取方面极大地减轻工作量，使他们更加专注于策略和模型的研究与实现上。
-
-官网：
-
-http://tushare.org/

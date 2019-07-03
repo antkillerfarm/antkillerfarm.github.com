@@ -128,6 +128,36 @@ unique_ptr早先在boost库中的时候，也叫做scoped_ptr。
 
 **weak_ptr**：如果对象A中有对象B的shared_ptr，而对象B中又有对象A的shared_ptr，那么就会出现循环引用的情况。这时可以使用weak_ptr。两者的区别在于新建shared_ptr会增加引用计数，而weak_ptr不会。
 
+上述指针还可以自己定义deleter：
+
+{% highlight cpp %}
+void close_file(std::FILE* fp) { std::fclose(fp); }
+std::unique_ptr<std::FILE, decltype(&close_file)> fp(std::fopen("demo.txt", "r"),&close_file);
+{% endhighlight %}
+
+上面的`close_file`就是自定义的deleter，用来进行特殊的析构。
+
+## decltype
+
+和auto的用法类似，auto不仅要推导类型，还要定义变量，而decltype则只进行类型推导。
+
+{% highlight cpp %}
+int add(int x,int y){
+    return x+y;
+}
+int main(){
+    double i=0;
+    decltype(i) a; // double
+    decltype(add()) b; //int 注意括号。不带括号就是函数指针了。
+}
+{% endhighlight %}
+
+参考：
+
+https://www.cnblogs.com/npbool/p/3433360.html
+
+C++11初探：类型推导，auto和decltype
+
 ## 参考
 
 https://mp.weixin.qq.com/s/Hpn7KqYlBKz0JdryiozqyQ

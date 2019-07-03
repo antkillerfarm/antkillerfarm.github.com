@@ -170,10 +170,6 @@ https://mp.weixin.qq.com/s/Roum90M-FIhIcuh2mh9gWg
 
 全解机器学习3大分类6大算法的优势和劣势！
 
-http://kexue.fm/archives/4638/
-
-训练集、验证集和测试集的意义
-
 https://mp.weixin.qq.com/s/y5TCYmnJ3ssA8AI9voaRqw
 
 机器学习新手工程师常犯的6大错误

@@ -6,6 +6,30 @@ category: AI
 
 # Machine Learning之Python篇
 
+https://mp.weixin.qq.com/s/V1EVdhX6-c1VNGNBgscFeA
+
+用Python统计新浪微博各种表情使用频率
+
+https://mp.weixin.qq.com/s/UOJsoB_YwBunj0YNShF11w
+
+深度学习+OpenCV，Python实现实时视频目标检测
+
+https://mp.weixin.qq.com/s/YCNnfR9XAP0i-Qs-DIpOCg
+
+6段Python代码刻画深度学习历史：从最小二乘法到深度神经网络
+
+https://mp.weixin.qq.com/s/a7TLJD1-k3AlJ_ENPoJpwA
+
+用Python分析《红楼梦》，后四十回是曹雪芹所写吗？
+
+https://mp.weixin.qq.com/s/MUMQuZLDE5iyogLnIIBaMw
+
+7步让你从零开始掌握Python机器学习！
+
+http://mp.weixin.qq.com/s/5vI1Ii6bd_IzrXKHlvULSQ
+
+是学习Java还是Python？一张图告诉你！
+
 http://mp.weixin.qq.com/s/Ergq5KKM5vWLWirTf9loEw
 
 7步让你从零开始掌握Python机器学习！
@@ -353,41 +377,3 @@ https://mp.weixin.qq.com/s/6Nr7LF9VxYQ4NlLlk8bCVw
 https://mp.weixin.qq.com/s/3d7CEQ0iQzwnJ_tE7eB9Yg
 
 边缘计算芯片格局分析
-
-# Hbase
-
-## OpenTSDB
-
-OpenTSDB（Time Series Database）是一个基于HBase的存放时序数据的数据库。
-
-官网：
-
-http://opentsdb.net/
-
-DB这个词很有误导性，其实它并不是一个db，单独一个OpenTSDB无法存储任何数据，它只是一层数据读写的服务，更准确的说它只是建立在Hbase上的一层数据读写的服务。
-
-HBase在使用上的一个难点就是如何根据业务的特点，设计键值和索引。OpenTSDB就是这方面的一个实践。
-
-参考：
-
-https://mp.weixin.qq.com/s/GApmeXGbjRTnhullArlkYg
-
-小米正用时序数据库，解决这个“硬核”问题
-
-## 参考
-
-https://mp.weixin.qq.com/s/ucQgmb1NkdyfAw6wDTyWYg
-
-阿里HBase又放出了哪些大招？
-
-https://mp.weixin.qq.com/s/BICJgyv2Y8r0j5Jjw6weRw
-
-大数据查询——HBase读写设计与实践
-
-https://blog.csdn.net/odailidong/article/details/41794403
-
-Hbase万亿级存储性能优化总结
-
-https://mp.weixin.qq.com/s/kJbeuu3zqRxQxVN38Z4asA
-
-​你应该知道的HBase基础，都在这儿了
