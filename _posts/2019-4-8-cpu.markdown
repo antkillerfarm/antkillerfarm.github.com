@@ -144,8 +144,6 @@ https://mp.weixin.qq.com/s/AW08yhPzBZqfys8CbOjrYg
 
 南桥芯片则用于扩展外围I/O接口，例如SATA和USB接口等。
 
-
-
 ## 历史
 
 https://mp.weixin.qq.com/s/-2kGkJzjay2WJzIpMs2Adw
@@ -167,6 +165,10 @@ https://mp.weixin.qq.com/s/Lnolh9y0rf86wOGa-F1xmw
 https://mp.weixin.qq.com/s/f_rk-NPKNzYpbHOr5bgluw
 
 一文了解半导体的过去、现在和未来
+
+https://mp.weixin.qq.com/s/O4hARQmcBDolt3THeoSwkg
+
+昙花一现的“图文电视”
 
 ## 参考
 
