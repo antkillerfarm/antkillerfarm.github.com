@@ -160,10 +160,6 @@ https://mp.weixin.qq.com/s/7imMQ3GkD52xP7N4fqNPog
 
 NLP的巨人肩膀（下）：从CoVe到BERT
 
-https://mp.weixin.qq.com/s/kdbaMyDLC5YaOMqTAOyLAg
-
-斯坦福陈丹琦博士论文：神经网络阅读理解与更多（附156页pdf）
-
 https://mp.weixin.qq.com/s/VpWabo7_ekA7j_fw2ZuDdA
 
 白硕：人工智能的诗与远方，一文读懂NLP起源、流派和技术

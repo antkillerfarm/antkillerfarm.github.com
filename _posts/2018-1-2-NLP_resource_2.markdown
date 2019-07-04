@@ -242,6 +242,36 @@ https://mp.weixin.qq.com/s/CxpyMUPnKFCTpw6WgG0kqg
 
 依存句法分析的任务以及形式化定义
 
+## 阅读理解
+
+https://mp.weixin.qq.com/s/kdbaMyDLC5YaOMqTAOyLAg
+
+斯坦福陈丹琦博士论文：神经网络阅读理解与更多（附156页pdf）
+
+https://mp.weixin.qq.com/s/7UnUedr8tapwFeRnHVOkjA
+
+阿里巴巴人工智能机器阅读理解能力创新纪录
+
+https://mp.weixin.qq.com/s/Su7tGSWX2bG1UKQU-nGC5A
+
+解读R-Net：微软“超越人类”的阅读理解人工智能
+
+https://mp.weixin.qq.com/s/41mynm-vB5mpLPcR-ByOdA
+
+北大与百度提出多文章验证方法：让机器验证阅读理解候选答案
+
+https://mp.weixin.qq.com/s/mgeQXkEWu5JlZxyAM0yiaQ
+
+充分利用候选项的选择型机器阅读理解模型
+
+https://mp.weixin.qq.com/s/TnG2iYwQpJ4ugdWf-ORP-Q
+
+一览微软在机器阅读理解、推荐系统、人机对话等最新研究进展
+
+https://mp.weixin.qq.com/s/ONmwKV6VyYVt2S6lOBrE5g
+
+神经机器阅读理解：方法与趋势，附39页最新综述下载
+
 ## 其他
 
 http://mp.weixin.qq.com/s/lmHWo9MUdv7ZMI7ARNmTSw
@@ -379,23 +409,3 @@ https://zhuanlan.zhihu.com/p/30268946
 https://mp.weixin.qq.com/s/CGZhp1eJU0jd9dcGJzPu0w
 
 LSF-SCNN：一种基于CNN的短文本表达模型及相似度计算的全新优化模型
-
-https://zhuanlan.zhihu.com/p/30533380
-
-Neural Response Generation——关于回复生成工作的一些总结
-
-https://mp.weixin.qq.com/s/ZexnTKHEFKPso5fhZNQfQQ
-
-聊天机器人中用户出行消费意图识别方法研究
-
-https://mp.weixin.qq.com/s/HHPp0JJzpY3q0nC-DF3F3g
-
-阿里：语言卷积神经网络应用于图像标题生成的经验学习
-
-http://www.jianshu.com/p/ac1840abc63f
-
-从Quora的187个问题中学习机器学习和NLP
-
-https://mp.weixin.qq.com/s/SVKlD0T8IkpVAKFJu-VQAg
-
-胡一川：深度学习在智能助理中的应用

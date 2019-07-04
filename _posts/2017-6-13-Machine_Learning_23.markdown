@@ -26,6 +26,10 @@ https://mp.weixin.qq.com/s/05WAZcklXnL_hFPLZW9t7Q
 
 时间序列模型之相空间重构模型
 
+https://mp.weixin.qq.com/s/rIgjtILF7EtuBS5UWCEFcQ
+
+重大事件后，股价将何去何从？
+
 # Optimizer
 
 在《机器学习（一）》中，我们已经指出梯度下降是解决凸优化问题的一般方法。而如何更有效率的梯度下降，就是本节中Optimizer的责任了。

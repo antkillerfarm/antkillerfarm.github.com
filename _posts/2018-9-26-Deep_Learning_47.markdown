@@ -104,6 +104,10 @@ https://mp.weixin.qq.com/s/eJn379q9raDHY9FdWaXeKQ
 
 AI界最危险武器GPT-2使用指南：从Finetune到部署
 
+https://mp.weixin.qq.com/s/WDFwKqNynwPtXhM8rZnOsA
+
+自动生成马斯克的推特几乎无破绽！MIT用GPT-2模型做了个名人发言模仿器
+
 ## ERNIE
 
 https://mp.weixin.qq.com/s/xoQhz6ljbsbzKRBJlTQQuQ

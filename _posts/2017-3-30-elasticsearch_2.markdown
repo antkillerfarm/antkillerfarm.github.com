@@ -410,3 +410,7 @@ https://mp.weixin.qq.com/s/C50IBm8EgrE13MOPMgPseQ
 https://mp.weixin.qq.com/s/0bVwxkncZrqxvhHXvbTHIA
 
 终于把微软BING搜索-SPTAG算法的原理搞清了
+
+https://mp.weixin.qq.com/s/8KEWJROGSe-7nmBlrkQ7Nw
+
+雇水军刷分有效吗？虚假评论的影响研究分析

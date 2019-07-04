@@ -166,6 +166,10 @@ https://mp.weixin.qq.com/s/b8Cvy5X9jP11biRGm005ow
 
 医学图像分割（二）——心脏分割
 
+https://mp.weixin.qq.com/s/45JOopEwHoNtzF57SxZM1A
+
+医学图像分割（三）——肿瘤分割
+
 # 可视化
 
 ![](/images/img2/data_visual.png)

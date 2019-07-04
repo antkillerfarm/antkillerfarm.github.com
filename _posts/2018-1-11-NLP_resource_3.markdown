@@ -6,6 +6,26 @@ category: resource
 
 # NLP参考资源
 
+https://zhuanlan.zhihu.com/p/30533380
+
+Neural Response Generation——关于回复生成工作的一些总结
+
+https://mp.weixin.qq.com/s/ZexnTKHEFKPso5fhZNQfQQ
+
+聊天机器人中用户出行消费意图识别方法研究
+
+https://mp.weixin.qq.com/s/HHPp0JJzpY3q0nC-DF3F3g
+
+阿里：语言卷积神经网络应用于图像标题生成的经验学习
+
+http://www.jianshu.com/p/ac1840abc63f
+
+从Quora的187个问题中学习机器学习和NLP
+
+https://mp.weixin.qq.com/s/SVKlD0T8IkpVAKFJu-VQAg
+
+胡一川：深度学习在智能助理中的应用
+
 https://mp.weixin.qq.com/s/Ce3gOZSqkG8wZQ6X1CUE1Q
 
 如何从编码器和解码器两方面改进生成式句子摘要？
@@ -142,10 +162,6 @@ https://mp.weixin.qq.com/s/SfFRXlekKkEapbjoSeKEog
 
 自然语言处理中N-Gram模型介绍
 
-https://mp.weixin.qq.com/s/7UnUedr8tapwFeRnHVOkjA
-
-阿里巴巴人工智能机器阅读理解能力创新纪录
-
 https://mp.weixin.qq.com/s/KVONdK44T8JKU5pFB5ydrQ
 
 SQuAD文本理解挑战赛十大模型解读
@@ -173,10 +189,6 @@ https://mp.weixin.qq.com/s/2Y66uCi1qS0VTaizyCg3cA
 http://mp.weixin.qq.com/s/OArqUTh0ZLGBTX71K7UUnw
 
 记忆网络之Gated End-to-End Memory Networks
-
-https://mp.weixin.qq.com/s/Su7tGSWX2bG1UKQU-nGC5A
-
-解读R-Net：微软“超越人类”的阅读理解人工智能
 
 https://mp.weixin.qq.com/s/GaRL8VFWfbKOwz2jPzvN5A
 
@@ -301,10 +313,6 @@ https://mp.weixin.qq.com/s/1bCw7m8YVLVA0g_jhw9HCg
 https://mp.weixin.qq.com/s/x8GwNyd9y7xqyi2KeIcqTw
 
 5篇AAAI 2018论文看“应答生成”
-
-https://mp.weixin.qq.com/s/41mynm-vB5mpLPcR-ByOdA
-
-北大与百度提出多文章验证方法：让机器验证阅读理解候选答案
 
 https://mp.weixin.qq.com/s/12RA4Bd86SJS6Q4CAvOEWw
 

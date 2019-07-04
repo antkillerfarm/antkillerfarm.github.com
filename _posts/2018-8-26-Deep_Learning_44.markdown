@@ -82,6 +82,10 @@ https://mp.weixin.qq.com/s/x4Jelv7qAJpehfn-5A-azA
 
 进阶版神笔：只需一句话、一个故事，即可生成画面
 
+https://mp.weixin.qq.com/s/0AqEALPYRSqco8ZGkP9_eQ
+
+暴力解剖GAN！MIT、港中文团队GANpaint，一笔成画不是梦
+
 # 三维处理
 
 https://github.com/timzhang642/3D-Machine-Learning
