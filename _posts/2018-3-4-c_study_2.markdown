@@ -137,6 +137,10 @@ std::unique_ptr<std::FILE, decltype(&close_file)> fp(std::fopen("demo.txt", "r")
 
 上面的`close_file`就是自定义的deleter，用来进行特殊的析构。
 
+上述ptr不仅可以保存对象的指针，还可以保存数组指针：
+
+`shared_ptr<double[]> p2( new double[n] );`
+
 ## decltype
 
 和auto的用法类似，auto不仅要推导类型，还要定义变量，而decltype则只进行类型推导。
