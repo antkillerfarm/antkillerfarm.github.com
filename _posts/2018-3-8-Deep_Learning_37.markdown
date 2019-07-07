@@ -387,3 +387,7 @@ https://mp.weixin.qq.com/s/UUDmWMaFEkW9qbMaJkMhhA
 https://mp.weixin.qq.com/s/4J_pPkNoE9eSDQK4NVs0sw
 
 看一眼就知道你的BMI：基于Keras与迁移学习的人脸预测系统
+
+https://mp.weixin.qq.com/s/B7PgyhSROXnEUzfdQc4jOw
+
+基于深度树学习的Zero-shot人脸检测识别

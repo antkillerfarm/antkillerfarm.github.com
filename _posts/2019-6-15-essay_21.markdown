@@ -381,3 +381,15 @@ https://www.zhihu.com/question/30046079/answer/83892467
 https://mp.weixin.qq.com/s/ZHIpG4TN-wyHtcD67s7Y8A
 
 毛遂自荐贴
+
+----
+
+在欧洲，Software as a science（软件即科学）
+
+在美国，Software as a business（软件即商业）
+
+在印度，Software as a service（软件即服务）
+
+在日本，Software as a production（软件即制造）
+
+在中国，Software as a 996（囧）

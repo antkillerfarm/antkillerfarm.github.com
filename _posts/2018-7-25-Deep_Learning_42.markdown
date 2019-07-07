@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十二）——行人重识别, 深度ISP, Spiking Neuron Networks, 多模态学习
+title:  深度学习（四十二）——行人重识别, 深度ISP, Spiking Neuron Networks
 category: DL 
 ---
 
@@ -214,6 +214,14 @@ https://mp.weixin.qq.com/s/RBfHrvkZlx90RM1Ohd6m9g
 
 一种行人重识别监督之下的纹理生成网络
 
+https://mp.weixin.qq.com/s/PfhhqW3e2miMVrIA2saeCg
+
+英伟达开源行人生成/重识别代码
+
+https://mp.weixin.qq.com/s/nY3NMCeP6yadJrRdSWM1WA
+
+基于密集语义对齐的行人重识别模型：有效解决语义不对齐
+
 # 深度ISP
 
 ## 数据集
@@ -375,41 +383,3 @@ https://mp.weixin.qq.com/s/yaAuVpuhSGabOswKnv9q5Q
 https://mp.weixin.qq.com/s/m7UHX3XL5sC3oBdu3KoyOg
 
 脉冲神经网络（SNN）概述
-
-# 多模态学习
-
-https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw
-
-多模态学习研究进展综述
-
-https://mp.weixin.qq.com/s/vpBPkjuCebSWh5qPLYHCkw
-
-上海交大提出多模态框架“EmotionMeter”，更精准地识别人类情绪
-
-https://mp.weixin.qq.com/s/BBg04rDtiqU-XrWortufNA
-
-康奈尔&英伟达提出多模态无监督图像转换新方法
-
-http://mp.weixin.qq.com/s/khOINUyrNV3TFfgNRheH0A
-
-卷积神经网络压缩、多模态的语义分析研究
-
-https://mp.weixin.qq.com/s/ywU4L659iRcmIgmV6RtbXA
-
-DeepMind新研究连接听与看，实现“听声辨位”的多模态学习
-
-https://mp.weixin.qq.com/s/1qhcyTXttgKWlw-Oy556Tw
-
-TPAMI2019最新《多模态机器学习综述》
-
-https://mp.weixin.qq.com/s/BczgUuh2FIvP5MG9xh87wQ
-
-多模态多任务学习新论文
-
-https://mp.weixin.qq.com/s/ipj8qpYRiYbIeXn2PZb1SQ
-
-5G时代下多模态理解做不到位注定要掉队
-
-https://mp.weixin.qq.com/s/UghgWBN7mE8oJdMUvjAjcQ
-
-何晖光：多模态情绪识别及跨被试迁移学习

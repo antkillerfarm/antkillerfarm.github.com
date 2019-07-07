@@ -172,6 +172,10 @@ https://mp.weixin.qq.com/s/AcuFiHgRJg2OcNGtfjRxYA
 
 我们对比了5款数据库，告诉你NewSQL的独到之处
 
+https://mp.weixin.qq.com/s/Gm7S0a5VN9L57wlry4-t6w
+
+缓存关注点——先写DB还是“缓存”？
+
 # Mysql
 
 ## 安装

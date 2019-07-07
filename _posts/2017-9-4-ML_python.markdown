@@ -244,6 +244,10 @@ https://mp.weixin.qq.com/s/0OSweIx9ibpp2bc5N61I4Q
 
 C++程序员也能用上NumPy了
 
+https://github.com/ddbourgin/numpy-ml
+
+惊为天人，NumPy手写全部主流机器学习模型，代码超3万行！
+
 ## SciPy
 
 SciPy提供了一些更高阶的数学运算库，比如：积分、插值、信号处理、傅立叶变换、矩阵特征值、统计计算等。

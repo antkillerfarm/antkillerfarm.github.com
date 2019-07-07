@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（九）——CNN进化史（2）, 并行 & 框架
+title:  深度学习（九）——CNN进化史（2）, AI可解释性
 category: DL 
 ---
 
@@ -209,3 +209,31 @@ LeCun亲授的深度学习入门课：从飞行器的发明到卷积神经网络
 https://mp.weixin.qq.com/s/z26bXb8eAelrwj6Tkvm_-A
 
 卷积神经网络常见架构AlexNet、ZFNet、VGGNet、GoogleNet和ResNet模型的理论与实践
+
+# AI可解释性
+
+XAI(Explainable Artificial Intelligence)
+
+https://github.com/pbiecek/xai_resources
+
+AI可解释性资源汇总
+
+https://mp.weixin.qq.com/s/XVl6voP5cwdC7DcvTMQvVQ
+
+机器学习可解释性工具箱XAI
+
+https://github.com/jphall663/awesome-machine-learning-interpretability
+
+最全的机器学习可解释性资料
+
+https://mp.weixin.qq.com/s/OV4vXu7TAuyV7qU9BAMF6g
+
+机器学习模型的“可解释性”到底有多重要？
+
+https://mp.weixin.qq.com/s/33VQNVvb7JGlk10Jc3mmeg
+
+从可视化到新模型：纵览深度学习的视觉可解释性
+
+https://github.com/ModelOriented/DrWhy
+
+可解释AI(XAI)工具集—DrWhy

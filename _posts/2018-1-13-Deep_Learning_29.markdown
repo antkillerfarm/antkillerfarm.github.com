@@ -110,6 +110,10 @@ https://github.com/nnzhan/Awesome-Graph-Neural-Networks
 
 图神经网络论文列表
 
+https://github.com/DeepGraphLearning/LiteratureDL4Graph
+
+图深度学习资源汇总
+
 https://github.com/jdlc105/Must-read-papers-and-continuous-tracking-on-Graph-Neural-Network-GNN-progress
 
 Papers on Graph neural network(GNN)

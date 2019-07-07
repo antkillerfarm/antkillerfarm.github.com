@@ -164,6 +164,10 @@ https://mp.weixin.qq.com/s/fTQbatHpZFxxU6VGhJNVrg
 
 0-1背包问题的动态规划算法
 
+https://mp.weixin.qq.com/s/1yAnUVhzbckCqG2_ie07wg
+
+什么是动态规划（Dynamic Programming）?
+
 # Monte-Carlo
 
 ## 概率算法

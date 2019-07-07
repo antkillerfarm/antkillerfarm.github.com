@@ -290,6 +290,10 @@ https://mp.weixin.qq.com/s/GJr-YtV84eV1KbkyVSkcBA
 
 超越BigGAN，DeepMind提出“史上最强非GAN生成器”VQ-VAE-2
 
+https://mp.weixin.qq.com/s/1K2Lxws_3QmhwzKB3ucIeA
+
+变分自编码器：金融间序的降维与指标构建
+
 # 通信协议
 
 https://mp.weixin.qq.com/s/_bWOYpZNjA4p7ZWM1J_4mw

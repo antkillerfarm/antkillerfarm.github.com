@@ -237,3 +237,7 @@ https://mp.weixin.qq.com/s/isrB3yda9sGgbOb4dBXMrQ
 https://mp.weixin.qq.com/s/k3olis2A7cArgppKUPK7uw
 
 详解SNGAN(频谱归一化GAN)
+
+https://mp.weixin.qq.com/s/vh0_EkJcyBp6d0Uswa19VA
+
+还在脑补画面？这款GAN能把故事画出来

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十六）——深度推荐系统（2）, 人脸检测/识别（2）, AI可解释性
+title:  深度学习（三十六）——深度推荐系统（2）, 人脸检测/识别（2）
 category: DL 
 ---
 
@@ -113,6 +113,10 @@ https://mp.weixin.qq.com/s/IfS7-pMbyfkDENoEOFN6lQ
 https://mp.weixin.qq.com/s/d3ZQ07XJ8x8MRgWHpAckZg
 
 工程师如何给女友买包？问问阿里“百事通”
+
+https://mp.weixin.qq.com/s/I5LG_u1_pcY9_tUCAxATGA
+
+“看一看”推荐模型揭秘！微信团队提出实时Look-alike算法，解决推荐系统多样性问题
 
 # 人脸检测/识别
 
@@ -356,6 +360,10 @@ https://github.com/ChanChiChoi/awesome-Face_Recognition
 
 不止面部识别，一切关于人脸AI的资源都能在这里下载
 
+https://mp.weixin.qq.com/s/FqH_5ztUWRDqb6X9_QggJw
+
+深度学习在人脸检测中的应用
+
 https://github.com/ShownX/FacePaperCollection
 
 人脸相关文献代码集锦：人脸检测、人脸识别、人脸生成等
@@ -383,31 +391,3 @@ https://zhuanlan.zhihu.com/p/32702868
 https://zhuanlan.zhihu.com/p/69777256
 
 简述人脸识别开发原理。这篇文章对传统算法做了一个很好的总结。
-
-# AI可解释性
-
-XAI(Explainable Artificial Intelligence)
-
-https://github.com/pbiecek/xai_resources
-
-AI可解释性资源汇总
-
-https://mp.weixin.qq.com/s/XVl6voP5cwdC7DcvTMQvVQ
-
-机器学习可解释性工具箱XAI
-
-https://github.com/jphall663/awesome-machine-learning-interpretability
-
-最全的机器学习可解释性资料
-
-https://mp.weixin.qq.com/s/OV4vXu7TAuyV7qU9BAMF6g
-
-机器学习模型的“可解释性”到底有多重要？
-
-https://mp.weixin.qq.com/s/33VQNVvb7JGlk10Jc3mmeg
-
-从可视化到新模型：纵览深度学习的视觉可解释性
-
-https://github.com/ModelOriented/DrWhy
-
-可解释AI(XAI)工具集—DrWhy

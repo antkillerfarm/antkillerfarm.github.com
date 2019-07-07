@@ -262,3 +262,6 @@ http://blog.csdn.net/dc_726/article/details/41143175
 
 几张图看懂列式存储
 
+https://mp.weixin.qq.com/s/z9xpjhL5gS9w9ZpcZWee3g
+
+大数据列式存储Parquet和ORC简介

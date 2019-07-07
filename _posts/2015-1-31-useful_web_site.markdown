@@ -126,18 +126,6 @@ http://blog.shengbin.me/posts/multi-user-video-conference-based-on-webrtc
 
 基于WebRTC的多人视频会议
 
-http://blog.csdn.net/gzh0222/article/details/8540604
-
-lvs、haproxy、nginx 负载均衡的比较分析
-
-https://mp.weixin.qq.com/s/31DGDYpDHcYg-4qM4OczxA
-
-深入浅出Nginx
-
-https://mp.weixin.qq.com/s/h9sXZc4Y62f4KOSVXAB1Pg
-
-Nginx基本功能极速入门
-
 http://chongzhuang.windowszj.com/
 
 系统之家一键重装
@@ -354,10 +342,6 @@ https://fwupd.org/
 
 Linux Vendor Firmware Service。这个网站提供Linux平台的各种BIOS或者外设的固件更新。
 
-https://mp.weixin.qq.com/s/SO1ZLSPaRkk8WwUl9u-JPA
-
-仅需这一篇，吃透“负载均衡”妥妥的
-
 https://mp.weixin.qq.com/s/TlhhDjKlLYslif0RtpNotw
 
 世界三大电子展(CES、MWC、IFA)的前世今生
@@ -413,6 +397,28 @@ http://mp.weixin.qq.com/s/aftxoxvzefZtzbGK3XrmuA
 http://phdcomics.com/
 
 一个关于博士学习生活的漫画网站
+
+## 负载均衡
+
+http://blog.csdn.net/gzh0222/article/details/8540604
+
+lvs、haproxy、nginx负载均衡的比较分析
+
+https://mp.weixin.qq.com/s/SO1ZLSPaRkk8WwUl9u-JPA
+
+仅需这一篇，吃透“负载均衡”妥妥的
+
+https://mp.weixin.qq.com/s/31DGDYpDHcYg-4qM4OczxA
+
+深入浅出Nginx
+
+https://mp.weixin.qq.com/s/h9sXZc4Y62f4KOSVXAB1Pg
+
+Nginx基本功能极速入门
+
+https://mp.weixin.qq.com/s/3KZ99d94yqRDxEByn7nGWg
+
+QPS比Nginx提升60%，阿里Tengine负载均衡算法揭秘
 
 ## 有用的blog
 

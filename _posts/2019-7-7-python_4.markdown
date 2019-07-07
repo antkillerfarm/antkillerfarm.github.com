@@ -312,3 +312,7 @@ https://mp.weixin.qq.com/s/rE5OEFwwFxJNb_Omwmqvzw
 https://blog.csdn.net/longerzone/article/details/17889969
 
 Python下调用Linux的Shell命令
+
+https://mp.weixin.qq.com/s/zLTEzMczlrHrX9by0ccp5w
+
+史上最全Python Re模块讲解

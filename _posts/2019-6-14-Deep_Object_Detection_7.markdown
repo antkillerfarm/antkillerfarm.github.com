@@ -16,6 +16,10 @@ https://zhuanlan.zhihu.com/p/62789701
 
 中科院牛津华为诺亚提出CenterNet，one-stage detector可达47AP，已开源！
 
+https://mp.weixin.qq.com/s/CEcN5Aljvs7AyOLPRFjUaw
+
+真Anchor Free目标检测----CenterNet详解
+
 # Anchor-Free
 
 https://zhuanlan.zhihu.com/p/63024247
@@ -65,6 +69,10 @@ https://zhuanlan.zhihu.com/p/68291859
 https://zhuanlan.zhihu.com/p/62372897
 
 物体检测的轮回：anchor-based与anchor-free
+
+https://mp.weixin.qq.com/s/m_PvEbq2QbTXNmj_gObKmQ
+
+Anchor-free目标检测之ExtremeNet
 
 # 其它目标检测网络
 

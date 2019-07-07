@@ -320,6 +320,14 @@ https://mp.weixin.qq.com/s/iEzfaIGwcm8UaPJzedkjnw
 
 谷歌将AutoML应用于Transformer架构，翻译结果飙升
 
+https://mp.weixin.qq.com/s/j_QHRCa_eNJ_IMRPpqc76w
+
+NAS-FPN：基于自动架构搜索的特征金字塔网络
+
+https://mp.weixin.qq.com/s/6PtBqWmqIm76jhfSNGPHYA
+
+超越MnasNet、Proxyless：小米开源全新神经架构搜索算法FairNAS
+
 # 深度贝叶斯学习
 
 https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og

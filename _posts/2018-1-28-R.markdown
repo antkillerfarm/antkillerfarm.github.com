@@ -291,6 +291,12 @@ blogdown：
 
 https://github.com/rstudio/blogdown
 
+参考：
+
+https://mp.weixin.qq.com/s/TqEXxeru_QUNCvBtW_QT3Q
+
+基于R Markdown的演示文稿和报告模板使用经验
+
 ## Renjin
 
 Renjin是一个基于JVM的R语言实现。
