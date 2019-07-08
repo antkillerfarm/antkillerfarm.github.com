@@ -391,3 +391,7 @@ https://mp.weixin.qq.com/s/4J_pPkNoE9eSDQK4NVs0sw
 https://mp.weixin.qq.com/s/B7PgyhSROXnEUzfdQc4jOw
 
 基于深度树学习的Zero-shot人脸检测识别
+
+https://mp.weixin.qq.com/s/CwMGZUWaopT3HAIXmlowsA
+
+目前最强开源人脸检测算法RetinaFace

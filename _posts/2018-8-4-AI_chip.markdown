@@ -225,6 +225,10 @@ https://mp.weixin.qq.com/s/3DubSQ1D59Z-PCovjHiidQ
 
 TPU(灵魂三问 WHAT? WHY? HOW?)
 
+https://mp.weixin.qq.com/s/lP7sLiqiGGR2IY-FaorIPw
+
+英伟达：AI芯片还可以这样做
+
 ## HBM
 
 HBM==High Bandwidth Memory是一款新型的CPU/GPU内存芯片（即 “RAM”），其实就是将很多个DDR芯片堆叠在一起后和GPU封装在一起，实现大容量，高位宽的DDR组合阵列。

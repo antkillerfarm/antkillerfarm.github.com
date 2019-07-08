@@ -212,6 +212,10 @@ https://www.cnblogs.com/chenyangchun/p/6795923.html
 
 C++强制类型转换：static_cast、dynamic_cast、const_cast、reinterpret_cast
 
+## 小细节
+
+对于std::vector来说，begin()/end()返回iterator，而front()/back()返回的是element。
+
 ## 参考
 
 https://mp.weixin.qq.com/s/Hpn7KqYlBKz0JdryiozqyQ

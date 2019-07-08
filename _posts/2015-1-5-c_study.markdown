@@ -243,8 +243,8 @@ struct Studnet
 };
 Studnet s={"dablelv",18};
 
-std::vector<int> nVec(10，1);　// 包含10个元素，且值为1 
-std::vector<int> nVec{10，1};　// 包含2个元素，值分别为10,1
+std::vector<int> nVec(10, 1); // 包含10个元素，且值为1 
+std::vector<int> nVec{10, 1}; // 包含2个元素，值分别为10,1
 {% endhighlight %}
 
 https://blog.csdn.net/sevenjoin/article/details/81779221
