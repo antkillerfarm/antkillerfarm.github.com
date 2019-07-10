@@ -256,6 +256,10 @@ https://mp.weixin.qq.com/s/f93aCYrxlBFhRn0bgPDiTg
 
 >Sebastian Nowozin，微软剑桥研究院首席研究员。
 
+https://mp.weixin.qq.com/s/IYQij9JbOKKbH3IuRvM9SQ
+
+一览IPM框架下的各种GAN
+
 **2.修改网络结构。**
 
 ![](/images/article/GAN_structure.png)
@@ -337,6 +341,10 @@ http://www.gwylab.com/pdf/生成模型-生成对抗网络.pdf
 https://mp.weixin.qq.com/s/trFM7dfBL23TykWCY9rRtw
 
 别人家的高中生：入大学前，Ta详细梳理了GAN的发展脉络
+
+https://mp.weixin.qq.com/s/ynZj6OCfHJ_0t8qlS9txXQ
+
+能生成Deepfake也能诊断癌症，GAN与恶的距离
 
 ## GAN的理论解释
 

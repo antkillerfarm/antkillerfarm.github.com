@@ -262,6 +262,10 @@ https://mp.weixin.qq.com/s/1jtO1efF2UauaUZFDRzQHw
 
 比Pytorch Hub更早？三分钟带你弄懂PaddleHub！
 
+https://mp.weixin.qq.com/s/gfJKmoeR6n3m89r4F3R_yw
+
+PaddleDetection物体检测统一框架
+
 # X-Deep Learning
 
 TensorFlow、MXNet、PyTorch等框架大都是面向图像、语音等领域的稠密数据设计，对广告、推荐等场景的高维稀疏数据上的深度学习计算考虑不足。

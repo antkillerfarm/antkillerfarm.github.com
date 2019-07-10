@@ -405,3 +405,7 @@ https://mp.weixin.qq.com/s/Z-ACpKmy20xdTAUC2XsLYQ
 https://mp.weixin.qq.com/s/sF-1bV1UA1AyLMlvRRF8iQ
 
 告别低分辨率网络，微软提出高分辨率深度神经网络HRNet
+
+https://zhuanlan.zhihu.com/p/72901400
+
+深度图像分类网络小结(上)

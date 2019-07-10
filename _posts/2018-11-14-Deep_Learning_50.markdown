@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（五十）——深度推理, Transformer, Attention进阶
+title:  深度学习（五十）——深度推理, Attention进阶
 category: DL 
 ---
 
@@ -77,108 +77,6 @@ https://mp.weixin.qq.com/s/YkH3loJhdymo7AFTKt0fbg
 https://mp.weixin.qq.com/s/u8U63i7zpcXA7iNsJP5vzQ
 
 AlphaGo之父DeepMind再出神作，PrediNet原理详解
-
-# Transformer
-
-之前的文章已经介绍了Attention和《Attention is All You Need》。但实际上，《Attention is All You Need》不仅提出了两种Attention模块，而且还提出了如下图所示的Transformer模型。该模型主要用于NMT领域，由于Attention不依赖上一刻的数据，同时精度也不弱于LSTM，因此有很好并行计算特性，在工业界得到了广泛应用。阿里巴巴和搜狗目前的NMT方案都是基于Transformer模型的。
-
-![](/images/img2/Transformer.png)
-
-$$FFN(x) = \max(0,xW_1 + b_1)W_2 + b_2$$
-
-代码：
-
-https://github.com/Kyubyong/transformer
-
-参考：
-
-http://jalammar.github.io/illustrated-transformer/
-
-The Illustrated Transformer
-
-http://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/
-
-Visualizing A Neural Machine Translation Model (Mechanics of Seq2seq Models With Attention)
-
-https://zhuanlan.zhihu.com/p/39034683
-
-Attention is all you need模型笔记
-
-https://zhuanlan.zhihu.com/p/40920384
-
-真正的完全图解Seq2Seq Attention模型
-
-https://mp.weixin.qq.com/s/RLxWevVWHXgX-UcoxDS70w
-
-细讲《Attention Is All You Need》
-
-https://mp.weixin.qq.com/s/S_xhaDrOaPe38ZvDLWl4dg
-
-从技术到产品，搜狗为我们解读了神经机器翻译的现状
-
-https://mp.weixin.qq.com/s/vzjKU_0qhapWKOYZ4Rnj-Q
-
-谷歌的机器翻译模型Transformer，现在可以用来做任何事了
-
-https://mp.weixin.qq.com/s/lgGDTCF3qg84njv2IeHC9A
-
-大规模集成Transformer模型，阿里达摩院如何打造WMT 2018机器翻译获胜系统
-
-https://mp.weixin.qq.com/s/_UC2jlOfb34tfB_tsEXjMg
-
-谷歌全新神经网络架构Transformer：基于自注意力机制，擅长自然语言理解
-
-https://mp.weixin.qq.com/s/w3IKoygTLDsAxk1MB5JrGg
-
-详细讲解Transformer新型神经网络在机器翻译中的应用
-
-https://mp.weixin.qq.com/s/HzzDG8PpDlyilQjr2PH6PA
-
-Transformer注解及PyTorch实现（上）
-
-https://mp.weixin.qq.com/s/YDaSv5oHLEtyJrp4Y5e64A
-
-Transformer注解及PyTorch实现（下）
-
-https://mp.weixin.qq.com/s/j0KRAOf8Sd0_tTlRadnw9Q
-
-利用篇章信息提升机器翻译质量
-
-https://mp.weixin.qq.com/s/s_s-MtrEwRNyllV_9qpAQA
-
-放弃幻想，全面拥抱Transformer：NLP三大特征抽取器（CNN/RNN/TF）比较
-
-https://mp.weixin.qq.com/s/NtWMcwUGg591meuGubWY1g
-
-CMU和谷歌联手放出XL号Transformer！提速1800倍
-
-https://mp.weixin.qq.com/s/_MI-OQUHVbyZ3Utd52rWMw
-
-Facebook推出最新跨语言预训练模型，刷新多项跨语言任务记录
-
-https://mp.weixin.qq.com/s/C0p1U0-x6aRipvYJItn8-g
-
-Transformer在进化！谷歌大脑用架构搜索方法找到Evolved Transformer
-
-https://mp.weixin.qq.com/s/E7wygpWbSHoq6R7wlalFkA
-
-放弃幻想，全面拥抱Transformer！NLP三大特征抽取器（CNN/RNN/TF）比较
-
-https://mp.weixin.qq.com/s/cs4IjkmdPmu2-3Mu36f8UQ
-
-OpenAI提出Sparse Transformer，文本、图像、声音都能预测，序列长度提高30倍
-
-https://mp.weixin.qq.com/s/cpbIHt-rBu48uGifg_lPfg
-
-Gaussian Transformer：一种自然语言推理的轻量方法
-
-https://mp.weixin.qq.com/s/1y8jTqCcI7HkMA3qXtqdIg
-
-阿里首次将Transformer用于淘宝电商推荐！效果超越深度兴趣网络DIN和谷歌WDL
-
-https://mp.weixin.qq.com/s/E6E6tc2uDJofuNDJArB5RQ
-
-邵晨泽：非自回归机器翻译
 
 # Attention进阶
 
@@ -337,3 +235,7 @@ HAN：基于双层注意力机制的异质图深度神经网络
 https://mp.weixin.qq.com/s/aixpv9t1PLPRWUP6PvZ0EQ
 
 用自注意力增强卷积：这是新老两代神经网络的对话
+
+https://mp.weixin.qq.com/s/i3Xd_IB7R0-QPztn-pgpng
+
+遍地开花的Attention，你真的懂吗？

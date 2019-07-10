@@ -395,3 +395,7 @@ https://mp.weixin.qq.com/s/B7PgyhSROXnEUzfdQc4jOw
 https://mp.weixin.qq.com/s/CwMGZUWaopT3HAIXmlowsA
 
 目前最强开源人脸检测算法RetinaFace
+
+https://mp.weixin.qq.com/s/ViX3kAT96aaLZ0r9SNtSWA
+
+强判别能力的深度人脸识别

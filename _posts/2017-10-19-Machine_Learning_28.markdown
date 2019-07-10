@@ -323,3 +323,7 @@ https://mp.weixin.qq.com/s/95FH-_L5smx7WoNnfucWVg
 https://mp.weixin.qq.com/s/lKsHvKjbIyBJ5OmCl2fIvg
 
 如何基于Flink+TensorFlow打造实时智能异常检测平台？
+
+https://mp.weixin.qq.com/s/MEGonT3rh0CTMkZ1Y8rZ7g
+
+Auto Machine Learning自动化机器学习笔记

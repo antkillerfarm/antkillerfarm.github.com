@@ -1,255 +1,279 @@
 ---
 layout: post
-title:  深度学习（二十五）——Attention（2）
+title:  深度学习（二十五）——人脸检测/识别（2）
 category: DL 
 ---
 
-# Attention
+# 人脸检测/识别
 
-## Adaptive Computation Time（续）
+## 人脸识别
 
-![](/images/img2/ACT_2.png)
+人脸检测是从一张图片中，识别出人脸，这和通常的目标检测没有太大的差别。**而人脸识别，则是精确到具体的人。**
 
-这一步就是典型的RNN+输出各个状态的带权重组合。
+人脸识别通常的做法是：
 
-![](/images/img2/ACT_3.png)
+1.使用人脸检测，得到人脸区域的图像。
 
-每一步的权重值由“halting neuron”决定。这个神经元事实上是一个sigmoid函数，输出一个终止权重，可以理解为需要在当前步骤终止的概率值。
+2.提取人脸特征。一般采用CNN+FC+loss的结构。其中，CNN+FC用于提取特征，而loss仅用于训练阶段。在推理阶段，我们使用CNN+FC得到人脸的特征向量即可。
 
-![](/images/img2/ACT_4.png)
+3.特征的对比。比较两个特征向量的相似度（可以使用LMS或者cos相似度）。超过阈值，即认为是同一张脸。
 
-停止权重值的总和等于1，每一步结束后要减去相应的值。一旦这个值小于了epsilon，我们就停止计算。
+## OHEM
 
-![](/images/img2/ACT_5.png)
+论文：
 
-当训练Adaptive Computation Time模型时，可以在损失函数添加一项“ponder cost”，用来惩罚模型的累积计算时间。这一项的值越大，就更不倾向于降低计算时间。
+《Training Region-based Object Detectors with Online Hard Example Mining》
 
-## Scaled Dot-Product Attention
+代码：
 
-以下内容摘自：
-
-https://kexue.fm/archives/4765
-
-《Attention is All You Need》浅读
-
-《Attention is All You Need》是Google 2017年的作品。论文中提出了若干Attention的变种。比如下图所示的Scaled Dot-Product Attention。
-
-![](/images/img2/Attention_5.png)
-
-上图用公式表述就是：
-
-$$Attention(\boldsymbol{Q},\boldsymbol{K},\boldsymbol{V}) = softmax\left(\frac{\boldsymbol{Q}\boldsymbol{K}^{\top}}{\sqrt{d_k}}\right)\boldsymbol{V}$$
-
-如果忽略激活函数softmax的话，那么事实上它就是三个$$n\times d_k,d_k\times m, m\times d_v$$的矩阵相乘，最后的结果就是一个$$n\times d_v$$的矩阵。于是我们可以认为：**这是一个Attention层，将$$n\times d_k$$的序列Q编码成了一个新的$$n\times d_v$$的序列**。
-
-那怎么理解这种结构呢？我们不妨逐个向量来看。
-
-$$Attention(\boldsymbol{q}_t,\boldsymbol{K},\boldsymbol{V}) = \sum_{s=1}^m \frac{1}{Z}\exp\left(\frac{\langle\boldsymbol{q}_t, \boldsymbol{k}_s\rangle}{\sqrt{d_k}}\right)\boldsymbol{v}_s$$
-
-其中Z是归一化因子。事实上q,k,v分别是query,key,value的简写，K,V是一一对应的，它们就像是key-value的关系，那么上式的意思就是$$q_t$$这个query，通过与各个$$k_s$$内积的并softmax的方式，来得到$$q_t$$与各个$$v_s$$的相似度，然后加权求和，得到一个$$d_v$$维的向量。其中因子$$\sqrt{d_k}$$起到调节作用，使得内积不至于太大（太大的话softmax后就非0即1了，不够“soft”了）。
-
-概括的说就是：**比较Q和K的相似度，以得到合适的V。**
+https://github.com/abhi2610/ohem
 
 参考：
 
-https://zhuanlan.zhihu.com/p/63895164
+https://blog.csdn.net/zimenglan_sysu/article/details/51318058
 
-完全解析Tranformer转移力机制
+论文笔记
 
-## Multi-Head Attention
+https://blog.csdn.net/Wayne2019/article/details/78945099
 
-![](/images/img2/Attention_6.png)
+OHEM，Batch Hard（识别乱入），Focal Loss
 
-这个是Google提出的新概念，是Attention机制的完善。不过从形式上看，它其实就再简单不过了，就是把Q,K,V通过参数矩阵映射一下，然后再做Attention，把这个过程重复做h次，结果拼接起来就行了，可谓“大道至简”了。具体来说：
+https://blog.csdn.net/Z5337209/article/details/72838049
 
-$$head_i = Attention(\boldsymbol{Q}\boldsymbol{W}_i^Q,\boldsymbol{K}\boldsymbol{W}_i^K,\boldsymbol{V}\boldsymbol{W}_i^V)$$
+Faster R-CNN 深入理解 && 改进方法汇总
 
-所谓“多头”（Multi-Head），就是只多做几次同样的事情（参数不共享），然后把结果拼接。
+https://zhuanlan.zhihu.com/p/28202204
 
-## Self Attention
+困难样本挖掘
 
-到目前为止，对Attention层的描述都是一般化的，我们可以落实一些应用。比如，如果做阅读理解的话，Q可以是篇章的词向量序列，取K=V为问题的词向量序列，那么输出就是所谓的Aligned Question Embedding。
+https://zhuanlan.zhihu.com/p/34179420
 
-而在Google的论文中，大部分的Attention都是Self Attention，即“自注意力”，或者叫内部注意力。
+目标检测入门（二）：模型的评测与训练技巧
 
-所谓Self Attention，其实就是Attention(X,X,X)，X就是前面说的输入序列。也就是说，在序列内部做Attention，寻找序列内部的联系。
-
-## Position Embedding
-
-然而，只要稍微思考一下就会发现，这样的模型并不能捕捉序列的顺序！换句话说，如果将K,V按行打乱顺序（相当于句子中的词序打乱），那么Attention的结果还是一样的。这就表明了，到目前为止，Attention模型顶多是一个非常精妙的“词袋模型”而已。
-
-这问题就比较严重了，大家知道，对于时间序列来说，尤其是对于NLP中的任务来说，顺序是很重要的信息，它代表着局部甚至是全局的结构，学习不到顺序信息，那么效果将会大打折扣（比如机器翻译中，有可能只把每个词都翻译出来了，但是不能组织成合理的句子）。
-
-于是Google再祭出了一招——Position Embedding，也就是“位置向量”，将每个位置编号，然后每个编号对应一个向量，通过结合位置向量和词向量，就给每个词都引入了一定的位置信息，**这样Attention就可以分辨出不同位置的词了**。
-
-## Hard Attention
+## FaceNet
 
 论文：
 
-《Show, Attend and Tell: Neural Image Caption Generation with Visual Attention》
+《FaceNet: A Unified Embedding for Face Recognition and Clustering》
 
-我们之前所描述的传统的Attention Mechanism是Soft Attention。Soft Attention是参数化的（Parameterization），因此可导，可以被嵌入到模型中去，直接训练。梯度可以经过Attention Mechanism模块，反向传播到模型其他部分。
+https://blog.csdn.net/stdcoutzyx/article/details/46687471
 
-相反，Hard Attention是一个随机的过程。Hard Attention不会选择整个encoder的输出做为其输入，Hard Attention会依概率Si来采样输入端的隐状态一部分来进行计算，而不是整个encoder的隐状态。为了实现梯度的反向传播，需要采用蒙特卡洛采样的方法来估计模块的梯度。
+FaceNet--Google的人脸识别
 
-两种Attention Mechanism都有各自的优势，但目前更多的研究和应用还是更倾向于使用Soft Attention，因为其可以直接求导，进行梯度反向传播。
+## OpenFace
 
-## Local Attention
+OpenFace是一款开源的人脸识别软件。它的原理基于CVPR 2015年的论文：FaceNet。由于采用了深度学习技术，OpenFace对人脸识别的准确率，大大超过了OpenCV。
+
+OpenFace是用Python和Torch编写的。
+
+官网：
+
+https://cmusatyalab.github.io/openface/
+
+参考：
+
+http://www.cnblogs.com/pandaroll/p/6590339.html
+
+开源人脸识别openface
+
+https://mp.weixin.qq.com/s/RSCrkeIToeNKrFvMITxzDg
+
+通过OpenFace来理解人脸识别
+
+## SeetaFace
+
+SeetaFace人脸识别引擎由中科院计算所山世光研究员带领的人脸识别研究组研发。代码基于C++实现，且不依赖于任何第三方的库函数，开源协议为BSD-2，可供学术界和工业界免费使用。
+
+代码：
+
+https://github.com/seetaface
 
 论文：
 
-《Effective Approaches to Attention-based Neural Machine Translation》
+《Coarse-to-Fine Auto-Encoder Networks (CFAN) for Real-Time Face Alignment》
 
->Thang Luong，越南人，Stanford博士（2016），现为Google研究员。导师是Christopher Manning。
->个人主页：   
->https://nlp.stanford.edu/~lmthang/
+参考：
 
->Christopher Manning，澳大利亚人，Stanford博士（1994），现为Stanford教授。从事NLP近三十年，率先将统计方法引入NLP。
+https://zhuanlan.zhihu.com/p/22451474
 
-![](/images/img2/Global_attention.png)
+SeetaFace开源人脸识别引擎介绍
 
-传统的Attention model中，所有的hidden state都被用于计算Context vector的权重，因此也叫做Global Attention。
+http://www.cnblogs.com/nenya33/p/6801045.html
 
-Local Attention：Global Attention有一个明显的缺点就是，每一次，encoder端的所有hidden state都要参与计算，这样做计算开销会比较大，特别是当encoder的句子偏长，比如，一段话或者一篇文章，效率偏低。因此，为了提高效率，Local Attention应运而生。
+CFAN
 
-Local Attention是一种介于Kelvin Xu所提出的Soft Attention和Hard Attention之间的一种Attention方式，即把两种方式结合起来。其结构如下图所示。
+## Siamese network
 
-![](/images/img2/Local_attention.png)
+https://blog.csdn.net/shenziheng1/article/details/81213668
 
-## Attention over Attention
+Siamese Network（原理篇）
 
-《Attention-over-Attention Neural Networks for Reading Comprehension》
+https://www.jianshu.com/p/92d7f6eaacf5
 
-![](/images/img2/Attention-over-Attention.png)
+Siamese network孪生神经网络--一个简单神奇的结构
 
-## 总结
+https://blog.csdn.net/sxf1061926959/article/details/54836696
 
-从最初的原始Attention，到后面的各种示例，不难看出**Attention实际上是一个大箩筐，凡是不好用CNN、RNN、FC概括的累计乘加，基本都可冠以XX Attention的名义**。
+Siamese Network理解
 
-虽然，权重的确代表了Attention的程度，然而直接叫累计乘加，似乎更接近操作本身一些。
+https://vra.github.io/2016/12/13/siamese-caffe/
 
-考虑到神经网络的各种操作基本都是累计乘加的变种，因此，Attention is All You Need实际上是很自然的结论，你总可以对Attention进行修改，让它实现CNN、RNN、FC的效果。
+Caffe中的Siamese网络
 
-这点在AI芯片领域尤为突出，**无论IC架构差异如何巨大，硬件底层基本就是乘累加器。**
+https://mp.weixin.qq.com/s/rPC542OcO8B4bjxn7JRFrw
+
+深度学习网络只能有一个输入吗
+
+https://mp.weixin.qq.com/s/GlS2VJdX7Y_nfBOEnUt2NQ
+
+使用Siamese神经网络进行人脸识别
+
+https://mp.weixin.qq.com/s/lDlijjIUGmzNzcP89IzJnw
+
+张志鹏:基于siamese网络的单目标跟踪
+
+## S3FD
+
+https://mp.weixin.qq.com/s/MyA8_yt4YCkFl67AyhpZow
+
+尺度不变人脸检测器（S3FD-Single Shot Scale-invariant Face Detector）
+
+https://github.com/sfzhang15/SFD
+
+S3FD: Single Shot Scale-invariant Face Detector
+
+## 人脸年龄识别
+
+https://zhuanlan.zhihu.com/p/53229759
+
+年龄估计技术综述
+
+https://www.openu.ac.il/home/hassner/projects/cnn_agegender/
+
+Age and Gender Classification using Convolutional Neural Networks
+
+https://mp.weixin.qq.com/s/0hVPateb108B1KpVpYXK0A
+
+人工智能：长相越“娘”颜值越高
+
+https://mp.weixin.qq.com/s/YlrWHDPIPzN4dQO2vo4DjA
+
+人脸颜值研究综述
+
+https://www.oukohou.wang/2019/01/30/face-aging_using_GAN/
+
+论文阅读-人脸老化：Generative Adversarial Style Transfer Networks for Face Aging
+
+https://mp.weixin.qq.com/s/s2SFQgUOZLV-f6auqymVOg
+
+基于Caffe的年龄&性别识别
+
+https://mp.weixin.qq.com/s/I3MS1gB1yjSnadex4LfOYA
+
+旷视提出极轻量级年龄估计模型C3AE
+
+## 活体检测
+
+https://mp.weixin.qq.com/s/zOnmKSnQctnyx7pKXX-tpQ
+
+活体检测新文解读：利用多帧人脸来预测更精确的深度
+
+https://mp.weixin.qq.com/s?__biz=MzU4MjQ3MDkwNA==&mid=2247486721&idx=1&sn=f0e5b2b0165e391c0d5adc4ce253f2f6
+
+人脸识别中的活体检测算法综述
+
+https://mp.weixin.qq.com/s/A1pbiU5PA9Owe69lGX9afw
+
+活体识别告诉你为什么照片无法破解人脸系统
+
+https://mp.weixin.qq.com/s/sPnoZyCkAhcCs_GtA79DrA
+
+单目可见光静默活体检测Binary or Auxiliary Supervision论文解读
+
+https://mp.weixin.qq.com/s/Vi2ypwO3uCD2lQZOwDFqTA
+
+基于rPPG的人脸活体检测综述
+
+## DeepFace
+
+《DeepFace: Closing the Gap to Human-Level Performance in Face Verification》
+
+DeepFace先进行了两次全卷积＋一次池化，提取了低层次的边缘／纹理等特征。
+
+后接了3个Local-Conv层，这里是用Local-Conv的原因是，人脸在不同的区域存在不同的特征（眼睛／鼻子／嘴的分布位置相对固定），当不存在全局的局部特征分布时，Local-Conv更适合特征的提取。
+
+## 人脸关键点
+
+https://zhuanlan.zhihu.com/p/42968117
+
+人脸关键点检测综述
+
+https://mp.weixin.qq.com/s/CvdeV5xgUF0kStJQdRst0w
+
+从传统方法到深度学习，人脸关键点检测方法综述
+
+https://mp.weixin.qq.com/s/ZrnAqDJCLtMy_qTQ2RZT0A
+
+级联MobileNet-V2实现人脸关键点检测
+
+https://mp.weixin.qq.com/s/ymeJPUPRAGb1FltskqBs-A
+
+人脸关键点检测汇总（上）
+
+https://mp.weixin.qq.com/s/N6y-RDx7VszgCVhSiwP8jA
+
+人脸关键点检测汇总（下）
+
+https://mp.weixin.qq.com/s/D435jGsGPkCH5j-p8Zoksg
+
+遮挡、光照等因素的人脸关键点检测
+
+https://mp.weixin.qq.com/s/BV3xv8mH6K7dV1nik0X5aw
+
+PFLD：简单、快速、超高精度人脸特征点检测算法
+
+https://mp.weixin.qq.com/s/kWRW81aAMl18GIDQWqX1Ow
+
+PFLD：简单高效的实用人脸关键点检测算法
+
+https://mp.weixin.qq.com/s/HpgcPkAZb9R5jF-zsGcfcw
+
+美图影像实验室（MTlab）10000 点人脸关键点技术全解读
 
 ## 参考
 
-https://blog.csdn.net/mijiaoxiaosan/article/details/73251443
+https://github.com/ChanChiChoi/awesome-Face_Recognition
 
-对Attention is all you need的理解
+不止面部识别，一切关于人脸AI的资源都能在这里下载
 
-http://geek.csdn.net/news/detail/106118
+https://mp.weixin.qq.com/s/FqH_5ztUWRDqb6X9_QggJw
 
-Attention and Augmented Recurrent Neural Networks译文
+深度学习在人脸检测中的应用
 
-http://blog.csdn.net/rtygbwwwerr/article/details/50548311
+https://github.com/ShownX/FacePaperCollection
 
-Neural Turing Machines
+人脸相关文献代码集锦：人脸检测、人脸识别、人脸生成等
 
-http://www.robots.ox.ac.uk/~tvg/publications/talks/NeuralTuringMachines.pdf
+https://mp.weixin.qq.com/s/__b-7Cl482taXwIVb_9vwQ
 
-Neural Turing Machines
+以人为本的计算机视觉研究：WIDER Challenge 2019（人脸检测/行人检测/人物检索）
 
-http://blog.csdn.net/malefactor/article/details/50550211
+https://mp.weixin.qq.com/s/eZ78biXN-mVw3s9Ky_LBZg
 
-自然语言处理中的Attention Model
+如何走近深度学习人脸识别？你需要这篇超长综述
 
-https://mp.weixin.qq.com/s/ZBaBtnQR7e39jZsY_JOqfw
+https://mp.weixin.qq.com/s/tum24mzS2cUiKW87a1weFA
 
-自然语言处理中注意力机制综述
+人脸识别全面总结：从传统方法到深度学习
 
-https://yq.aliyun.com/articles/65356
+https://mp.weixin.qq.com/s/bFnuGu4xLJiRfANi0Rkduw
 
-图文结合详解深度学习Memory & Attention
+人脸识别的前世今生：从人工特征的百花齐放到深度学习的一统江湖
 
-http://www.cosmosshadow.com/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/2016/03/08/Attention.html
+https://zhuanlan.zhihu.com/p/32702868
 
-Attention
+人脸检测背景介绍和发展现状
 
-https://mp.weixin.qq.com/s/b5d_jNNDB_a_VFdT3J3Vog
+https://zhuanlan.zhihu.com/p/69777256
 
-通俗易懂理解Attention机制
-
-https://mp.weixin.qq.com/s/eY2XJipUIKHIlrYVOhiMRQ
-
-什么是自注意力机制？
-
-https://mp.weixin.qq.com/s/azce34Q3N4hnhIlE3NVTVw
-
-注意力机制(Attention)最新综述论文及相关源码
-
-http://geek.csdn.net/news/detail/50558
-
-深度学习和自然语言处理中的attention和memory机制
-
-https://mp.weixin.qq.com/s/rKvh9fqfVf_EYBxa5QRDOw
-
-不得不了解的五种Attention模型方法及其应用
-
-https://mp.weixin.qq.com/s/XrlveG0kwij2qNL45TZdBg
-
-Attention的另类用法
-
-https://zhuanlan.zhihu.com/p/31547842
-
-深度学习中Attention Mechanism详细介绍：原理、分类及应用
-
-https://zhuanlan.zhihu.com/p/32089282
-
-Attention学习笔记
-
-https://mp.weixin.qq.com/s/LQ7uv0-AakkHE5b17yemqw
-
-Awni Hannun：序列模型Attention Model中的问题与挑战
-
-https://mp.weixin.qq.com/s/xr_1ZYbvADMMwgxLEAflCw
-
-如何在语言翻译中理解Attention Mechanism？
-
-https://mp.weixin.qq.com/s/Nyq_36aFmQYRWdpgbgxpuA
-
-将注意力机制引入RNN，解决5大应用领域的序列预测问题
-
-https://mp.weixin.qq.com/s/g2PcmsDW9ixUCh_yP8W-Vg
-
-各类Seq2Seq模型对比及《Attention Is All You Need》中技术详解
-
-https://mp.weixin.qq.com/s/FtI94xY6a8TEvFCHfjMnmA
-
-小组讨论谷歌机器翻译Attention is All You Need
-
-https://mp.weixin.qq.com/s/SqIMkiP1IZMGWzwZWGOI7w
-
-谈谈神经网络的注意机制和使用方法
-
-https://mp.weixin.qq.com/s/EMCZHuvk5dOV_Rz00GkJMA
-
-近年火爆的Attention模型，它的套路这里都有！
-
-https://zhuanlan.zhihu.com/p/27464080
-
-从《Convolutional Sequence to Sequence Learning》到《Attention Is All You Need》
-
-http://www.cnblogs.com/robert-dlut/p/8638283.html
-
-自然语言处理中的自注意力机制！
-
-https://mp.weixin.qq.com/s/sAYOXEjAdA91x3nliHNX8w
-
-Attention模型方法综述
-
-https://mp.weixin.qq.com/s/MZ8qSQzXqZQPQa97BKitHA
-
-深入理解注意力机制
-
-https://mp.weixin.qq.com/s/s8sKoTzqyf-_-N0TSLnPow
-
-不用看数学公式！图解谷歌神经机器翻译核心部分：注意力机制
-
-https://mp.weixin.qq.com/s/TM5poGwSGi5C9szO13GYxg
-
-一文解读NLP中的注意力机制
-
-https://zhuanlan.zhihu.com/p/59698165
-
-NLP中的Attention机制
+简述人脸识别开发原理。这篇文章对传统算法做了一个很好的总结。

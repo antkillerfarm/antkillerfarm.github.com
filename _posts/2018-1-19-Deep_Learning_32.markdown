@@ -232,6 +232,10 @@ https://mp.weixin.qq.com/s/XzLJzfvpP93cDYplf6-LXA
 
 港科腾讯等提出Bi-Real net：超XNOR-net 10%的ImageNet分类精度
 
+https://mp.weixin.qq.com/s/wCx7rQFwC2mW45FMR77tGQ
+
+二值网络，围绕STE的那些事儿
+
 # 点云
 
 ## PCL

@@ -26,10 +26,6 @@ https://mp.weixin.qq.com/s/M_ZN0YuvegAnc2GXCZTt9Q
 
 初学者指南：神经网络在自然语言处理中的应用
 
-https://mp.weixin.qq.com/s/ouNxUvWC_mxap6P5z6_dFA
-
-教聊天机器人进行多轮对话
-
 https://mp.weixin.qq.com/s/5DvSVL0CRJTymtXPDvS-0w
 
 基于主题信息的神经网络作文生成模型
@@ -77,10 +73,6 @@ https://mp.weixin.qq.com/s/vGUizRVnosd7cgxha-pimw
 https://mp.weixin.qq.com/s/0kM72uF7qa5IiinEnLC5-A
 
 一起来看看词性标注
-
-http://www.jianshu.com/p/43db6425ad33
-
-如何为聊天机器人设计数据通道
 
 https://mp.weixin.qq.com/s/L04yE6J8n-Z7Cl9yt6kphA
 

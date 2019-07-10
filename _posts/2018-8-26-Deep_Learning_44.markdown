@@ -86,6 +86,10 @@ https://mp.weixin.qq.com/s/0AqEALPYRSqco8ZGkP9_eQ
 
 暴力解剖GAN！MIT、港中文团队GANpaint，一笔成画不是梦
 
+https://mp.weixin.qq.com/s/K_2lGGlLKHIIm4iSg0xCUw
+
+铅笔素描画自动生成
+
 # 三维处理
 
 https://github.com/timzhang642/3D-Machine-Learning
@@ -292,6 +296,6 @@ https://mp.weixin.qq.com/s/6hXNcm4ICNqa2Ezao-oE-g
 
 AR版“神笔马良”：从单张2D图片建立3D人物运动模型，华盛顿大学与Facebook 3D重建
 
-https://mp.weixin.qq.com/s/K_2lGGlLKHIIm4iSg0xCUw
+https://mp.weixin.qq.com/s/pPgjBmct11POKqeVv8ymIA
 
-铅笔素描画自动生成
+3D重建：硬派几何求解vs深度学习打天下？

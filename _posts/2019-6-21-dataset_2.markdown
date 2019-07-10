@@ -136,6 +136,10 @@ https://mp.weixin.qq.com/s/HhamuAkWcoHy1cw9qZo_GA
 
 港中文开源视频动作分析库MMAction，目标检测库算法大更新
 
+https://mp.weixin.qq.com/s/xnhPvgJxsXvJOIABWVLmRg
+
+颜值，自拍，美学三大任务简介和数据集下载
+
 ## 人脸/行为
 
 http://blog.csdn.net/wangkr111/article/details/44514097

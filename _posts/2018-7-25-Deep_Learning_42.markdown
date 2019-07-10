@@ -222,6 +222,14 @@ https://mp.weixin.qq.com/s/nY3NMCeP6yadJrRdSWM1WA
 
 基于密集语义对齐的行人重识别模型：有效解决语义不对齐
 
+https://zhuanlan.zhihu.com/p/72693526
+
+SPGAN--ReID
+
+https://mp.weixin.qq.com/s/ueAIT-oAQQPtaPkljOmTwg
+
+超阿里、大华，澎思科技行人再识别（ReID）技术刷新三大数据集记录
+
 # 深度ISP
 
 ## 数据集

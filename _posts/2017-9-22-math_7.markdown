@@ -42,6 +42,56 @@ https://mp.weixin.qq.com/s/xiVmQjJDqY_iOBz_bB_O7g
 
 ![](/images/article/AI_hell.jpg)
 
+最近（2019.7）新出了一个加强版的数学的深渊：
+
+![](/images/img3/math.jpg)
+
+![](/images/img3/math_2.jpg)
+
+![](/images/img3/math_3.jpg)
+
+![](/images/img3/math_4.jpg)
+
+![](/images/img3/math_5.jpg)
+
+![](/images/img3/math_6.jpg)
+
+![](/images/img3/math_7.jpg)
+
+![](/images/img3/math_8.jpg)
+
+![](/images/img3/math_9.jpg)
+
+![](/images/img3/math_10.jpg)
+
+![](/images/img3/math_11.jpg)
+
+![](/images/img3/math_12.jpg)
+
+![](/images/img3/math_13.jpg)
+
+![](/images/img3/math_14.jpg)
+
+![](/images/img3/math_15.jpg)
+
+![](/images/img3/math_16.jpg)
+
+![](/images/img3/math_17.jpg)
+
+![](/images/img3/math_18.jpg)
+
+![](/images/img3/math_19.jpg)
+
+![](/images/img3/math_20.jpg)
+
+![](/images/img3/math_21.jpg)
+
+![](/images/img3/math_22.jpg)
+
+![](/images/img3/math_23.jpg)
+
+![](/images/img3/math_24.jpg)
+
 # 函数连续性
 
 函数连续性本质上是刻画函数在自变量变化的情况下，函数值变化的稳定程度。
@@ -202,4 +252,3 @@ https://max.book118.com/html/2015/0401/14126427.shtm
 https://mp.weixin.qq.com/s/jrNIhSlTiXsO2sGWmzcFfg
 
 Michael I. Jordan最新清华授课笔记！
-

@@ -222,6 +222,10 @@ https://mp.weixin.qq.com/s/BtIYc7SSi0E6mT3muV6NhQ
 
 视频编辑利器，不喜欢就框除！开源视频物体移除软件video object removal
 
+https://mp.weixin.qq.com/s/YwZijgTbhd2ILiVxug1dWg
+
+框一下就能从视频隐身，这是现实版的“隐身衣”？
+
 # Mask R-CNN
 
 Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的网络。它是何恺明2017年的新作。

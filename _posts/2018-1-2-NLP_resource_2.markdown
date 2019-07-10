@@ -206,6 +206,10 @@ https://zhuanlan.zhihu.com/p/67328697
 
 文本摘要简述
 
+https://mp.weixin.qq.com/s/z7BlFHfStYEtNzl1EorokA
+
+文章太长不想看？ML文本自动摘要了解一下
+
 ## 句法分析
 
 传统方法主要是PCFG （Probabilistic Context-Free Grammar）。
@@ -272,6 +276,48 @@ https://mp.weixin.qq.com/s/ONmwKV6VyYVt2S6lOBrE5g
 
 神经机器阅读理解：方法与趋势，附39页最新综述下载
 
+## 聊天机器人
+
+https://mp.weixin.qq.com/s/Vh3bCO-ZYoBJLqCTPCpggg
+
+论如何为聊天机器人定义一个固定的人格
+
+https://mp.weixin.qq.com/s/sM72a52wz6eXSkcgnd4JJw
+
+人类与机器人，如何能像朋友一样愉快聊天？
+
+https://mp.weixin.qq.com/s/vt25TVX-tcurtAC63dYYNA
+
+让聊天机器人同你聊得更带劲-对话策略学习
+
+http://blog.csdn.net/malefactor/article/details/52166235
+
+聊天机器人中对话模板的高效匹配方法
+
+https://mp.weixin.qq.com/s/ouNxUvWC_mxap6P5z6_dFA
+
+教聊天机器人进行多轮对话
+
+http://www.jianshu.com/p/43db6425ad33
+
+如何为聊天机器人设计数据通道
+
+https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247484926&idx=1&sn=4e34a442c126c46bba27a7f17df3e61e
+
+聊天机器人Chatbot知识资料全集
+
+https://mp.weixin.qq.com/s/bzjRlFfh7tz4OWVpGnNPwQ
+
+揭秘阿里小蜜：基于检索模型和生成模型相结合的聊天引擎
+
+https://mp.weixin.qq.com/s/h6BjW1nrV4z30eWfny7Wzw
+
+聊天机器人落地及进阶实战
+
+https://mp.weixin.qq.com/s/ziM0U-KEePjZLNMhK5PVXA
+
+基于金融-司法领域(兼有闲聊性质)的聊天机器人
+
 ## 其他
 
 http://mp.weixin.qq.com/s/lmHWo9MUdv7ZMI7ARNmTSw
@@ -306,10 +352,6 @@ https://mp.weixin.qq.com/s/LbskUMqwkOJ8CFoLud76ww
 
 机器理解中的迁移学习，斯坦福联合微软提出SynNet网络
 
-https://mp.weixin.qq.com/s/Vh3bCO-ZYoBJLqCTPCpggg
-
-论如何为聊天机器人定义一个固定的人格
-
 https://mp.weixin.qq.com/s?__biz=MzU3NzEzOTE3Mg==&mid=2247483654&idx=1&sn=da54e5cd777e2b9b16e8d526b161886b
 
 深度学习在自然语言处理的应用
@@ -325,10 +367,6 @@ https://mp.weixin.qq.com/s/klfTdvfti0xCg2lGitG4hg
 https://mp.weixin.qq.com/s/gyuq2ujb1tiAvAlXtZY4Eg
 
 聊聊“事件抽取”
-
-https://mp.weixin.qq.com/s/sM72a52wz6eXSkcgnd4JJw
-
-人类与机器人，如何能像朋友一样愉快聊天？
 
 https://mp.weixin.qq.com/s/IvbJ_d7z91BCcRVpJ9_jMA
 
@@ -362,10 +400,6 @@ https://mp.weixin.qq.com/s/27Mbw2ViT8eJPJasD6tdfw
 
 神经混合模型：提升模型性能，显著降低困惑度
 
-https://mp.weixin.qq.com/s/vt25TVX-tcurtAC63dYYNA
-
-让聊天机器人同你聊得更带劲-对话策略学习
-
 https://mp.weixin.qq.com/s/AqvzxiI7cNesdGt_IfVb-w
 
 Highway Networks For Sentence Classification
@@ -377,35 +411,3 @@ http://mp.weixin.qq.com/s/ZrFcpYf7E57j8E6zQsBexg
 https://mp.weixin.qq.com/s/0yRnBW_WWoUHInJcAeVd9A
 
 基于深度学习的候选答案句抽取研究
-
-https://mp.weixin.qq.com/s/y39QT55RcsNAmNS6mT1SKg
-
-深度好奇提出文档解析框架：面向对象的神经规划
-
-https://zhuanlan.zhihu.com/p/27552230
-
-基于Depthwise Separable Convolutions的Seq2Seq模型_SliceNet原理解析
-
-https://mp.weixin.qq.com/s/AlxiYM5ujM9TqzcFVLXK1w
-
-语义分析的一些方法(一)
-
-https://mp.weixin.qq.com/s/7KBtbip4JS0jQfOy_BWb3Q
-
-语义分析的一些方法(二)
-
-http://blog.csdn.net/malefactor/article/details/52166235
-
-聊天机器人中对话模板的高效匹配方法
-
-https://mp.weixin.qq.com/s/Cq7ivDYurS3CidvoemFfqA
-
-Twitter是怎么做情感分析的？长文解读！
-
-https://zhuanlan.zhihu.com/p/30268946
-
-从CNN视角看在自然语言处理上的应用
-
-https://mp.weixin.qq.com/s/CGZhp1eJU0jd9dcGJzPu0w
-
-LSF-SCNN：一种基于CNN的短文本表达模型及相似度计算的全新优化模型

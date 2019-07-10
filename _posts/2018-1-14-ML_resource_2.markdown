@@ -62,10 +62,6 @@ https://mp.weixin.qq.com/s/seIwEHqoCoWk5JzXGpL3rQ
 
 用一座冠军奖杯的实力讲述资讯个性化推荐
 
-https://mp.weixin.qq.com/s/ycxigg0HbiOTRUBPAWk21Q
-
-推荐系统中的冷启动问题和探索利用问题
-
 https://mp.weixin.qq.com/s/yQs8Mhe0kM6XMA7JfjRuPA
 
 达观数据推荐系统算法实践—重排序

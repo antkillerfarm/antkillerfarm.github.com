@@ -379,3 +379,7 @@ https://zhuanlan.zhihu.com/p/57086099
 https://mp.weixin.qq.com/s/6K4tXPlYLaXhexh6gElP5Q
 
 多标签图像分类综述
+
+https://mp.weixin.qq.com/s/bb3ZsXtiRmPvzQ-lfSXrZQ
+
+基于Pascal VOC2012增强数据的多标签图像分类实战

@@ -1,8 +1,82 @@
 ---
 layout: post
-title:  boost
+title:  C/C++编程心得（三）, boost
 category: language 
 ---
+
+# C/C++编程心得
+
+## typename
+
+`vector<T>::size_type`可能有三种解释：
+
+- 静态数据成员
+
+- 静态成员函数
+
+- 嵌套类型
+
+前两者比较好区分，函数名后一般有括号。但是嵌套类型就不好区分了，因此需要用typename关键字指定之。
+
+参考：
+
+https://blog.csdn.net/zhangxiao93/article/details/50569924
+
+C++ typedef typename作用
+
+## C++ thread
+
+长期以来，C/C++的线程编程主要依赖pthread库，但是这个情况在C++ 11之后有所改观，因为C++ 11的标准库已经支持thread了。
+
+thread基本用法：
+
+https://www.runoob.com/w3cnote/cpp-std-thread.html
+
+std::thread
+
+配合thread还提出了thread_local关键字：
+
+https://www.cnblogs.com/pop-lar/p/5123014.html
+
+thread_local变量
+
+mutex同步：
+
+https://www.cnblogs.com/xudong-bupt/p/9194394.html
+
+C++并发编程，std::unique_lock与std::lock_guard区别示例
+
+条件等待：
+
+http://hengyunabc.github.io/cpp11-mutex-lock-condition/
+
+C++11中的mutex, lock，condition variable实现分析
+
+https://www.zhihu.com/question/24116967
+
+pthread_cond_wait为什么需要传递mutex参数？
+
+https://segmentfault.com/a/1190000006679917
+
+条件变量（Condition Variable）
+
+## 小细节
+
+对于std::vector来说，begin()/end()返回iterator，而front()/back()返回的是element。
+
+----
+
+除了for循环遍历之外，C++还可以用std::for_each/std::find_if进行循环遍历，尤其是后者可以用于条件筛选。
+
+## 参考
+
+https://mp.weixin.qq.com/s/Hpn7KqYlBKz0JdryiozqyQ
+
+每个开发者都应该了解的一些C++特性
+
+https://www.cnblogs.com/wuchanming/p/3913492.html
+
+emplace_back与push_back的区别
 
 # boost
 

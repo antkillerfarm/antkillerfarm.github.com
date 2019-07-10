@@ -302,6 +302,10 @@ https://mp.weixin.qq.com/s/pdqAaw0xrpQ23nday6AVPA
 
 Freesound Competition：Kaggle金牌第9名技术分享
 
+https://github.com/zhpmatrix/nlp-competitions-list-review
+
+NLP比赛TOP方案汇总
+
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA

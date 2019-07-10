@@ -241,3 +241,7 @@ https://mp.weixin.qq.com/s/k3olis2A7cArgppKUPK7uw
 https://mp.weixin.qq.com/s/vh0_EkJcyBp6d0Uswa19VA
 
 还在脑补画面？这款GAN能把故事画出来
+
+https://mp.weixin.qq.com/s/bDu10O1QSgzt2cQaEkGejw
+
+DeepMind爆出无监督表示学习模型BigBiGAN，GAN之父点赞！

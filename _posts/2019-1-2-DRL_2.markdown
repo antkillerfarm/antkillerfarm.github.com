@@ -54,6 +54,10 @@ https://mp.weixin.qq.com/s/SJd-3qH4W4GMMLZSmvFk1w
 
 利用DQN玩吃豆人（Pacman）小游戏
 
+https://github.com/Curt-Park/rainbow-is-all-you-need
+
+手把手教你从DQN到Rainbow
+
 # DDPG
 
 https://mp.weixin.qq.com/s/dgLJrn3omUKMqmqTIEcoyg

@@ -280,6 +280,20 @@ http://www.cnblogs.com/EE-NovRain/p/3810737.html
 
 各大公司广泛使用的在线学习算法FTRL详解
 
+## 冷启动
+
+https://mp.weixin.qq.com/s/ll2Nx7_1Sg7XfuiH-OQnWA
+
+推荐系统如何冷启动？
+
+https://mp.weixin.qq.com/s/ecAA43az0-6UIEPR_maNAw
+
+推荐系统之冷启动问题
+
+https://mp.weixin.qq.com/s/ycxigg0HbiOTRUBPAWk21Q
+
+推荐系统中的冷启动问题和探索利用问题
+
 ## 参考
 
 https://mp.weixin.qq.com/s/q9FU19Hpw2eWLLhsY5lYJQ
@@ -337,10 +351,6 @@ https://mp.weixin.qq.com/s/pWcFuOecG-dZHZ365clDjg
 https://mp.weixin.qq.com/s/R6-y-W0CGhlEUPXDkYdtJw
 
 Item-Based协同过滤算法
-
-https://mp.weixin.qq.com/s/ll2Nx7_1Sg7XfuiH-OQnWA
-
-推荐系统如何冷启动？
 
 https://mp.weixin.qq.com/s/C5cokipqnSsgg53chbi3oA
 

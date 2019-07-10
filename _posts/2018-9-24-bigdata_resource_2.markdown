@@ -138,6 +138,10 @@ https://mp.weixin.qq.com/s/waoNAf7bFKgkyHbCMIMy_Q
 
 大数据架构如何做到流批一体？
 
+https://mp.weixin.qq.com/s/yUWtbm1Yzg4yc9rom30HJA
+
+千亿级的数据难题，优酷工程师怎么解决？（MaxCompute）
+
 # 数字成像
 
 ## CCD

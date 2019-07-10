@@ -14,10 +14,6 @@ https://mp.weixin.qq.com/s/LdU91j8OpDR-pidzzYVtqA
 
 Pointer Networks在自然语言处理领域中的应用
 
-https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247484926&idx=1&sn=4e34a442c126c46bba27a7f17df3e61e
-
-聊天机器人Chatbot知识资料全集
-
 https://mp.weixin.qq.com/s/i9AXKsd6XVxyuaTCKsAj3g
 
 像Sheldon一样对“讽刺语言”分辨无能？别怕，MIT最新算法帮你助攻
@@ -93,10 +89,6 @@ https://mp.weixin.qq.com/s/JAWDiNUfU62n8lDRG8zzRw
 https://mp.weixin.qq.com/s/-qk__SLahfssHuYsGNhKSA
 
 阿里巴巴首次近万字公布人工智能对话交互技术
-
-https://mp.weixin.qq.com/s/bzjRlFfh7tz4OWVpGnNPwQ
-
-揭秘阿里小蜜：基于检索模型和生成模型相结合的聊天引擎
 
 https://mp.weixin.qq.com/s/4fYvp9XFyJP4fE9BYvYLBw
 
@@ -186,10 +178,6 @@ https://mp.weixin.qq.com/s/S2SH8MUmreciZRc0Ff-qlw
 
 一文了解自然语言生成演变史！
 
-https://mp.weixin.qq.com/s/h6BjW1nrV4z30eWfny7Wzw
-
-聊天机器人落地及进阶实战
-
 https://mp.weixin.qq.com/s/_2P7Ru990cUNzOpfPcDyvg
 
 斯坦福NLP组最新报告：自然语言处理中的学习挑战
@@ -241,3 +229,31 @@ https://mp.weixin.qq.com/s/kKXFBBufFuqVgQ2uumQQ8Q
 https://mp.weixin.qq.com/s/5k7WH6mJ9_qllFqpiCHpGw
 
 GitHub机器学习代码分类器：仅凭代码轻松鉴别300种编程语言
+
+https://mp.weixin.qq.com/s/y39QT55RcsNAmNS6mT1SKg
+
+深度好奇提出文档解析框架：面向对象的神经规划
+
+https://zhuanlan.zhihu.com/p/27552230
+
+基于Depthwise Separable Convolutions的Seq2Seq模型_SliceNet原理解析
+
+https://mp.weixin.qq.com/s/AlxiYM5ujM9TqzcFVLXK1w
+
+语义分析的一些方法(一)
+
+https://mp.weixin.qq.com/s/7KBtbip4JS0jQfOy_BWb3Q
+
+语义分析的一些方法(二)
+
+https://mp.weixin.qq.com/s/Cq7ivDYurS3CidvoemFfqA
+
+Twitter是怎么做情感分析的？长文解读！
+
+https://zhuanlan.zhihu.com/p/30268946
+
+从CNN视角看在自然语言处理上的应用
+
+https://mp.weixin.qq.com/s/CGZhp1eJU0jd9dcGJzPu0w
+
+LSF-SCNN：一种基于CNN的短文本表达模型及相似度计算的全新优化模型

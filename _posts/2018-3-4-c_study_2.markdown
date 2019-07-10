@@ -112,6 +112,16 @@ https://www.cnblogs.com/ldlchina/p/6608154.html
 
 C++11右值引用和std::move语句实例解析
 
+## RAII
+
+资源获取即初始化（Resource Acquisition Is Initialization），或称RAII，是一种C++编程技术，它将必须在使用前请求的资源（分配的堆内存、执行线程、打开的套接字、打开的文件、锁定的互斥体、磁盘空间、数据库连接等——任何存在受限供给中的事物）的生命周期绑定与一个对象的生存期相绑定。
+
+C++标准库遵循RAII管理其自身的资源：类在构造函数中获取其资源（错误时抛出异常），并在其析构函数中释放之（决不抛出），而不要求显式清理。 
+
+RAII不适用于并非在使用前请求的资源：CPU 时间、核心，以及缓存容量、熵池容量、网络带宽、电力消费、栈内存等。
+
+RAII也是下面介绍的各类智能指针的理论基础。
+
 ## 各类ptr
 
 **auto_ptr**：它允许程序员创建一个指向某种资源的指针对象，当该对象离开它的作用域时，它所指向的资源也会被自动释放。
@@ -212,16 +222,36 @@ https://www.cnblogs.com/chenyangchun/p/6795923.html
 
 C++强制类型转换：static_cast、dynamic_cast、const_cast、reinterpret_cast
 
-## 小细节
+## 特化（traits）
 
-对于std::vector来说，begin()/end()返回iterator，而front()/back()返回的是element。
+{% highlight cpp %}
+template<class T1, class T2>      // 普通版本，有两个模板参数
+class B { ..... };
 
-## 参考
+template<class T2>　　　         // 偏特化版本，指定其中一个参数，即指定了部分类型
+class B<int , T2> { ..... };　　// 当实例化时的第一个参数为int 则会优先调用这个版本
+{% endhighlight %}
 
-https://mp.weixin.qq.com/s/Hpn7KqYlBKz0JdryiozqyQ
+**偏特化**的条件：
 
-每个开发者都应该了解的一些C++特性
+1.必须有一个主模板。
 
-https://www.cnblogs.com/wuchanming/p/3913492.html
+2.模板类型被部分明确化。
 
-emplace_back与push_back的区别
+相应的，如果模板参数全被指定，则为**全特化**。
+
+对主版本模板类、全特化类、偏特化类的调用优先级从高到低进行排序是：全特化类>偏特化类>主版本模板类。
+
+traits一方面，在面对不同的输入类时，能找到合适的返回型别；另一方面，当型别对应有不同的实现函数的时候，能起到一个提取型别然后分流的作用。
+
+标准库已经内置了一些常见的traits操作，例如std::pointer_traits，该模板可返回迭代器指向对象的型别。
+
+参考：
+
+https://www.cnblogs.com/yyehl/p/7253254.html
+
+C++ 模板偏特化－来自STL的思考
+
+https://www.cnblogs.com/mangoyuan/p/6446046.html
+
+C++ traits技术浅谈
