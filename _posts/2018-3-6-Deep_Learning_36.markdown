@@ -129,3 +129,7 @@ https://mp.weixin.qq.com/s/4VcRdEg_XcZ1TRKPfbCjaw
 https://mp.weixin.qq.com/s/qoxEidhZAlY9R0T3y3nP6Q
 
 阿里首次将用户手势数据用于电商场景！淘宝提出用户实时意图预测算法DIPN，效果秒杀传统模型
+
+https://mp.weixin.qq.com/s/MhW2RDgFv58Yt4cvD2YvHg
+
+CTR预估问题没有“银弹”，比模型结构更重要的是什么？

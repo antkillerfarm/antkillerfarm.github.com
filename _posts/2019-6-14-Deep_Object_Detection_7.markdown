@@ -6,6 +6,8 @@ category: Deep Object Detection
 
 # CenterNet（续）
 
+为了和CornerNet做比较，CenterNet同样使用了Hourglass Network作为骨干网络。并针对中心点和角点的提取，提出了Center pooling和Cascade corner pooling操作。这里不再赘述。
+
 参考：
 
 https://mp.weixin.qq.com/s/wWqdjsJ6U86lML0rSohz4A

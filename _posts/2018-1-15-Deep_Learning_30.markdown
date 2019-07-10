@@ -167,9 +167,13 @@ https://mp.weixin.qq.com/s/f0xFfA1inOVOdJnSZR4k6Q
 
 ## 参考
 
-https://mp.weixin.qq.com/s/Kv4gLKcXyGz7iHcetdrN0Q
+https://github.com/gopala-kr/meta-learning
 
 元学习（meta-learning）相关文献资源大列表
+
+https://github.com/sudharsan13296/Awesome-Meta-Learning
+
+元学习相关资源汇总
 
 https://mp.weixin.qq.com/s/KKK3VEpwL90g6Aro8qtXxQ
 
@@ -298,6 +302,10 @@ ICML2019《元学习》教程与必读论文列表
 https://zhuanlan.zhihu.com/p/70782949
 
 最前沿：General Meta Learning
+
+https://mp.weixin.qq.com/s/rZdd-vWlicynthaSasX3kQ
+
+Meta Learning入门：MAML 和 Reptile
 
 # 深度哈希
 

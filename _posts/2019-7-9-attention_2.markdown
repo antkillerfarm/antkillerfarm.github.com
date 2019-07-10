@@ -286,6 +286,10 @@ https://mp.weixin.qq.com/s/E6E6tc2uDJofuNDJArB5RQ
 
 邵晨泽：非自回归机器翻译
 
+https://mp.weixin.qq.com/s/ZfvShgevhjhe39PmF-ONnA
+
+周龙：同步双向文本生成
+
 # BERT
 
 论文：
