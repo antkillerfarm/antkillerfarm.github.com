@@ -24,6 +24,66 @@ https://mp.weixin.qq.com/s/CEcN5Aljvs7AyOLPRFjUaw
 
 # Anchor-Free
 
+在前面的章节，我们已经简要的分析了Anchor Free和Anchor Base模型的差异，并介绍了两个Anchor-Free的模型——CornerNet和CenterNet。
+
+这里对其他比较重要的Anchor-Free模型做一个简单介绍。
+
+## ExtremeNet
+
+ExtremeNet是UT Austin的Xingyi Zhou的作品。（2019.1）
+
+论文：
+
+《Bottom-up Object Detection by Grouping Extreme and Center Points》
+
+代码：
+
+https://github.com/xingyizhou/ExtremeNet
+
+![](/images/img3/ExtremeNet.png)
+
+上图是ExtremeNet的网络结构图。它预测是关键点就不光是角点和中心点了，事实上它预测了9个点。具体的方法和CenterNet类似，也是heatmap抽取关键点。
+
+显然，这类关键点算法是受到人脸/姿态关键点算法的启发，因此它们采用Hourglass Network作为骨干网络也就顺理成章了，后者正是比较经典的关键点算法模型之一。
+
+## FoveaBox
+
+论文：
+
+《FoveaBox: Beyond Anchor-based Object Detector》
+
+![](/images/img3/FoveaBox.png)
+
+![](/images/img3/FoveaBox_2.png)
+
+上两图是FoveaBox的网络结构图。
+
+它的主要思路是：直接学习目标存在的概率和目标框的坐标位置，其中包括预测类别相关的语义图和生成类别无关的候选目标框。
+
+事实上这和YOLOv1的思路是一致的。但FoveaBox比YOLOv1精度高，主要在于FPN提供了多尺度的信息，而YOLOv1只有单尺度的信息。
+
+此外，Focal loss也是Anchor-Free模型的常用手段。
+
+## 总结
+
+Anchor-Free模型主要是为了解决Two-stage模型运算速度较慢的问题而提出的，因此它们绝大多数都是One-stage模型。从目前的效果来看，某些Anchor-Free模型其精度已经接近Two-stage模型，但运算速度相比YOLOv3等传统One-stage模型，仍有较大差距，尚无太大的实用优势（可以使用，但优势不大）。
+
+其他比较知名的Anchor-Free模型还有：
+
+- FCOS
+
+《FCOS: Fully Convolutional One-Stage Object Detection》
+
+- FSAF
+
+《Feature Selective Anchor-Free Module》
+
+- DenseBox
+
+《DenseBox: Unifying Landmark Localization and Object Detection》
+
+## 参考
+
 https://zhuanlan.zhihu.com/p/63024247
 
 锚框：Anchor box综述
@@ -307,39 +367,3 @@ https://mp.weixin.qq.com/s/LtXylKTKsHdjMPw9Q1HyXA
 https://mp.weixin.qq.com/s/Gq3bflJq59Tx-nDCvbweNA
 
 无需预训练分类器，清华&旷视提出专用于目标检测的骨干网络DetNet
-
-https://mp.weixin.qq.com/s/u3eXhoFvo7vZujc0XoQQWQ
-
-旷视研究院解读Light-Head R-CNN：平衡精准度和速度
-
-https://mp.weixin.qq.com/s/6cUP9vvfcuv8rIEnGnAFiA
-
-NCSU&阿里巴巴论文：可解释的R-CNN
-
-https://mp.weixin.qq.com/s/1vOdOMyByBacSBMVrscq5Q
-
-黄畅：基于DenesBox的目标检测在自动驾驶中的应用
-
-https://mp.weixin.qq.com/s/-PeXMU_gkcT5YnMcLoaKag
-
-CVPR清华大学研究，高效视觉目标检测框架RON
-
-https://mp.weixin.qq.com/s/XoKdsQKyaI3LsDxF7uyKuQ
-
-聊聊目标检测中的多尺度检测（Multi-Scale），从YOLO到FPN，SNIPER，SSD填坑贴和极大极小目标识别
-
-https://mp.weixin.qq.com/s/XdH54ImSfgadCoISmVyyVg
-
-基于单目摄像头的物体检测
-
-https://mp.weixin.qq.com/s/h_ENriEXr7WI_XR_DtxpMQ
-
-这样可以更精确的目标检测——超网络
-
-https://mp.weixin.qq.com/s?__biz=MzI5MDUyMDIxNA==&mid=2247486104&idx=1&sn=5580a4680f3190adb98638471e9b5982
-
-百度视觉团队斩获 ECCV Google AI 目标检测竞赛冠军，获奖方案全解读
-
-https://zhuanlan.zhihu.com/p/54182158
-
-GHM（解决one-stage样本不平衡问题）目标检测算法论文阅读笔记

@@ -328,6 +328,10 @@ https://mp.weixin.qq.com/s/6PtBqWmqIm76jhfSNGPHYA
 
 超越MnasNet、Proxyless：小米开源全新神经架构搜索算法FairNAS
 
+https://mp.weixin.qq.com/s/1qQmvSF4Btfoo0F4g6WZwQ
+
+深度解读：小米AI实验室AutoML团队最新成果FairNAS
+
 https://mp.weixin.qq.com/s/wzf7VwVPpTz9DxsoEfCpYw
 
 单路径NAS: 在四小时内设计出给定硬件内最有效的网

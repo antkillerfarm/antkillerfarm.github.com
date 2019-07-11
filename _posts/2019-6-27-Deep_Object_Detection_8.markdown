@@ -4,8 +4,43 @@ title:  深度目标检测（八）——目标检测进阶（2）
 category: Deep Object Detection 
 ---
 
-
 # 目标检测进阶
+
+https://mp.weixin.qq.com/s/u3eXhoFvo7vZujc0XoQQWQ
+
+旷视研究院解读Light-Head R-CNN：平衡精准度和速度
+
+https://mp.weixin.qq.com/s/6cUP9vvfcuv8rIEnGnAFiA
+
+NCSU&阿里巴巴论文：可解释的R-CNN
+
+https://mp.weixin.qq.com/s/1vOdOMyByBacSBMVrscq5Q
+
+黄畅：基于DenesBox的目标检测在自动驾驶中的应用
+
+https://mp.weixin.qq.com/s/-PeXMU_gkcT5YnMcLoaKag
+
+CVPR清华大学研究，高效视觉目标检测框架RON
+
+https://mp.weixin.qq.com/s/XoKdsQKyaI3LsDxF7uyKuQ
+
+聊聊目标检测中的多尺度检测（Multi-Scale），从YOLO到FPN，SNIPER，SSD填坑贴和极大极小目标识别
+
+https://mp.weixin.qq.com/s/XdH54ImSfgadCoISmVyyVg
+
+基于单目摄像头的物体检测
+
+https://mp.weixin.qq.com/s/h_ENriEXr7WI_XR_DtxpMQ
+
+这样可以更精确的目标检测——超网络
+
+https://mp.weixin.qq.com/s?__biz=MzI5MDUyMDIxNA==&mid=2247486104&idx=1&sn=5580a4680f3190adb98638471e9b5982
+
+百度视觉团队斩获 ECCV Google AI 目标检测竞赛冠军，获奖方案全解读
+
+https://zhuanlan.zhihu.com/p/54182158
+
+GHM（解决one-stage样本不平衡问题）目标检测算法论文阅读笔记
 
 https://mp.weixin.qq.com/s/nL9l7hvG3RG7G7LzCzzvug
 

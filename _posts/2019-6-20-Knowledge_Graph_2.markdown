@@ -262,7 +262,7 @@ Memory consistency model
 
 Multisample anti-aliasing，MSAA
 
-----
+## 参考
 
 https://blog.csdn.net/do2jiang/article/details/4545889
 
@@ -271,3 +271,7 @@ https://blog.csdn.net/do2jiang/article/details/4545889
 https://blog.csdn.net/edonlii/article/details/8755205
 
 单发射与多发射
+
+https://mp.weixin.qq.com/s/FJX9eeRkxS5nJ4XIhRVwkg
+
+从ServerSwitch到SONiC Chassis：数据中心交换机技术的十年探索历程

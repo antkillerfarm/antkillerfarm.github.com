@@ -366,10 +366,6 @@ https://mp.weixin.qq.com/s/_7q9K9D1q40eaGkLt9yDhQ
 
 分布式系统关注点——深入浅出“异步”
 
-https://mp.weixin.qq.com/s/FJX9eeRkxS5nJ4XIhRVwkg
-
-从ServerSwitch到SONiC Chassis：数据中心交换机技术的十年探索历程
-
 ## 编译原理
 
 https://zhuanlan.zhihu.com/frozengene

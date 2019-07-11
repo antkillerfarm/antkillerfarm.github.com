@@ -290,6 +290,10 @@ https://mp.weixin.qq.com/s/ZfvShgevhjhe39PmF-ONnA
 
 周龙：同步双向文本生成
 
+https://mp.weixin.qq.com/s/O7B-pQveMefaCuMswT7H-A
+
+跨8千个字学习知识，上下文要多长还是交给Transformer自己决定吧
+
 # BERT
 
 论文：

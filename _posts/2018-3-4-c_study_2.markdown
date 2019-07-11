@@ -151,6 +151,12 @@ std::unique_ptr<std::FILE, decltype(&close_file)> fp(std::fopen("demo.txt", "r")
 
 `shared_ptr<double[]> p2( new double[n] );`
 
+此外ptr的声明方式也有两种（以unique_ptr为例）：
+
+- 方法1：`std::unique_ptr<int>(new int(1));`
+
+- 方法2：`std::make_unique<int>(1);`
+
 ## decltype
 
 和auto的用法类似，auto不仅要推导类型，还要定义变量，而decltype则只进行类型推导。
@@ -241,17 +247,3 @@ class B<int , T2> { ..... };　　// 当实例化时的第一个参数为int 则
 相应的，如果模板参数全被指定，则为**全特化**。
 
 对主版本模板类、全特化类、偏特化类的调用优先级从高到低进行排序是：全特化类>偏特化类>主版本模板类。
-
-traits一方面，在面对不同的输入类时，能找到合适的返回型别；另一方面，当型别对应有不同的实现函数的时候，能起到一个提取型别然后分流的作用。
-
-标准库已经内置了一些常见的traits操作，例如std::pointer_traits，该模板可返回迭代器指向对象的型别。
-
-参考：
-
-https://www.cnblogs.com/yyehl/p/7253254.html
-
-C++ 模板偏特化－来自STL的思考
-
-https://www.cnblogs.com/mangoyuan/p/6446046.html
-
-C++ traits技术浅谈

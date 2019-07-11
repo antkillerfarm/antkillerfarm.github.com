@@ -234,6 +234,10 @@ https://mp.weixin.qq.com/s/dwEHorYSJuX9JapIYLHiXg
 
 BicycleGAN：图像转换多样化，大幅提升pix2pix生成图像效果
 
+https://mp.weixin.qq.com/s/VU06PqZ4OaLxpjLwIObWZw
+
+加强版CycleGAN！贾佳亚等提出卡通图与真实人脸转换模型，看女神突破次元壁长啥样
+
 # StarGAN
 
 论文：
