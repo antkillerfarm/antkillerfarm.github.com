@@ -49,3 +49,7 @@ ADAS系统横纵向控制策略之碰撞时间计算方法
 https://zhuanlan.zhihu.com/p/73073753
 
 基于深度学习的多传感器标定
+
+https://mp.weixin.qq.com/s/m4KtRGoBgqcgF8ZBMjG6Hg
+
+深层卷积神经网络在路面分类中的应用
