@@ -173,3 +173,7 @@ DeepFakes天敌来了！伯克利紧急研发“火眼金睛”防伪克星
 https://mp.weixin.qq.com/s/6r8y7tMqo53lnACWG1K4xA
 
 深度树学习用于Zero-shot人脸的反欺诈
+
+https://mp.weixin.qq.com/s/ww2A-SJGj_F7KmkjHfN5tg
+
+SemanticAdv：基于语义属性的对抗样本生成方法

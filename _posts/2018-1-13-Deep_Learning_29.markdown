@@ -194,6 +194,10 @@ https://mp.weixin.qq.com/s/s6E2vV1KrQDI4SeAnkYTKw
 
 图神经网络将成AI下一拐点！MIT斯坦福一文综述GNN到底有多强
 
+https://mp.weixin.qq.com/s/5oOobY_3blbXYYxuuQmShQ
+
+一文读懂图神经网络
+
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
 
 Bengio等人提出图注意网络架构GAT，可处理复杂结构图

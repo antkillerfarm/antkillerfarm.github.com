@@ -198,6 +198,10 @@ https://mp.weixin.qq.com/s/PGs3M5-vdQf4deE6hJuqng
 
 多目标跟踪：SORT和Deep SORT
 
+https://mp.weixin.qq.com/s/R2OE76ipTX3r_vvj0lYYYQ
+
+精度优秀，速度214.7fps！卡内基梅隆大学开源强大的3D多目标跟踪系统
+
 # 无监督/半监督/自监督深度学习
 
 自监督学习是一种特殊目的的无监督学习。不同于传统的AutoEncoder等方法，仅仅以重构输入为目的，而是希望通过surrogate task学习到和高层语义信息相关联的特征。

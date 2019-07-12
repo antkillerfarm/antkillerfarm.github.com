@@ -142,6 +142,10 @@ https://mp.weixin.qq.com/s/yUWtbm1Yzg4yc9rom30HJA
 
 千亿级的数据难题，优酷工程师怎么解决？（MaxCompute）
 
+https://mp.weixin.qq.com/s/X3RVXKi40uEO7ra8mX_C-w
+
+海量数据下的舆情分析，该如何搭建？
+
 # 数字成像
 
 ## CCD
