@@ -209,3 +209,11 @@ https://mp.weixin.qq.com/s/X75H8YOysftwU4VSjlmLBQ
 https://mp.weixin.qq.com/s/CjYVCqs21pwGTuYYzzzPiQ
 
 常建龙：基于关系的深度学习
+
+https://mp.weixin.qq.com/s/K9j4tX6_U8rdtItKntJkVQ
+
+基于关系网络的视觉建模：有望替代卷积神经网络
+
+https://mp.weixin.qq.com/s/-ZhYXTIiEFHd-G-NZEqlcA
+
+深度学习可解释性！深度taylor分解

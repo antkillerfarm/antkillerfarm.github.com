@@ -146,6 +146,10 @@ https://mp.weixin.qq.com/s/X3RVXKi40uEO7ra8mX_C-w
 
 海量数据下的舆情分析，该如何搭建？
 
+https://mp.weixin.qq.com/s/q2XL-_XoRLL1xLzGmzlo6A
+
+分布式快照算法: Chandy-Lamport
+
 # 数字成像
 
 ## CCD
@@ -439,3 +443,7 @@ https://mp.weixin.qq.com/s/h7MQhZjnP3lLkLD0cKNixA
 https://mp.weixin.qq.com/s/Wd6LD8Rme8XJwtYWU-ALtQ
 
 动态范围压缩（DRC）的四种方法
+
+https://mp.weixin.qq.com/s/7_mDPCEq3S-843PwUQSwXA
+
+车载相机image sensor选型

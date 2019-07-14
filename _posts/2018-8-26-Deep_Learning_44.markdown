@@ -90,6 +90,10 @@ https://mp.weixin.qq.com/s/K_2lGGlLKHIIm4iSg0xCUw
 
 铅笔素描画自动生成
 
+https://mp.weixin.qq.com/s/t2bO5A9XCKzXBP5tcS3P-A
+
+智能图像视频编辑，北大教程，400多页PPT
+
 # 三维处理
 
 https://github.com/timzhang642/3D-Machine-Learning
@@ -299,3 +303,7 @@ AR版“神笔马良”：从单张2D图片建立3D人物运动模型，华盛�
 https://mp.weixin.qq.com/s/pPgjBmct11POKqeVv8ymIA
 
 3D重建：硬派几何求解vs深度学习打天下？
+
+https://mp.weixin.qq.com/s/8an3eBrOZ5d6_PdNp6QkyA
+
+一文教你读懂3D目标检测

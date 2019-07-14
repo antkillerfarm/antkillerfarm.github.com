@@ -100,6 +100,10 @@ https://blog.csdn.net/songbinxu/article/details/86660136
 
 基于DTW相似度的Affinity Propagation(AP)聚类
 
+https://zhuanlan.zhihu.com/p/72453060
+
+动态时间规整下搜索和挖掘数万亿个时间序列子序列
+
 # Spectrogram
 
 ## Window function

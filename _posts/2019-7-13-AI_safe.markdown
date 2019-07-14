@@ -177,3 +177,7 @@ https://mp.weixin.qq.com/s/6r8y7tMqo53lnACWG1K4xA
 https://mp.weixin.qq.com/s/ww2A-SJGj_F7KmkjHfN5tg
 
 SemanticAdv：基于语义属性的对抗样本生成方法
+
+https://mp.weixin.qq.com/s/UYAGubXEKFfLqvVRykFBpQ
+
+自动驾驶“无视”障碍物：百度研究人员攻陷激光雷达

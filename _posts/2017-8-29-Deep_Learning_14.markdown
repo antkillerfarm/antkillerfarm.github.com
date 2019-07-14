@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/44RvXEYYc5lebsHs_ooswg
 
 ## 参考
 
+https://zhuanlan.zhihu.com/p/69659844
+
+如何区分并记住常见的几种Normalization算法
+
 https://mp.weixin.qq.com/s/KYGqSOftm8FWDXk_C13iCQ
 
 Conditional Batch Normalization详解

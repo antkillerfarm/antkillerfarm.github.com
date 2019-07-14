@@ -194,6 +194,10 @@ https://mp.weixin.qq.com/s/Vi2ypwO3uCD2lQZOwDFqTA
 
 基于rPPG的人脸活体检测综述
 
+https://mp.weixin.qq.com/s/ViQDmUqNiXCQ1KzvlLI6Wg
+
+OpenCV活体检测
+
 ## DeepFace
 
 《DeepFace: Closing the Gap to Human-Level Performance in Face Verification》

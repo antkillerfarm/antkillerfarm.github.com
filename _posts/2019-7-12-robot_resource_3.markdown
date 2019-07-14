@@ -53,3 +53,15 @@ https://zhuanlan.zhihu.com/p/73073753
 https://mp.weixin.qq.com/s/m4KtRGoBgqcgF8ZBMjG6Hg
 
 深层卷积神经网络在路面分类中的应用
+
+https://mp.weixin.qq.com/s/nQq2tzK_2y2lEt9H14zdwA
+
+自动驾驶中的决策规划算法概述
+
+https://mp.weixin.qq.com/s/yIFgwxU-DI6NBogfmxqqKQ
+
+基于深度学习的计算机视觉技术在无人驾驶中的应用
+
+https://mp.weixin.qq.com/s/x0Ls8jeqjuyJoZ53q5R7_A
+
+自动驾驶中的障碍物行为预测

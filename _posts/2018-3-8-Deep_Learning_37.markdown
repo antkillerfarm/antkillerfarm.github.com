@@ -328,6 +328,10 @@ https://github.com/ShiqiYu/libfacedetection
 
 libfacedetection算法开源
 
+https://mp.weixin.qq.com/s/DkvQ86tgU4DarsmY_qTLdg
+
+最快人脸检测遇敌手！ZQCNN vs libfacedetection
+
 https://mp.weixin.qq.com/s/-VknGwKKY14cT-lZ7sC43A
 
 人脸识别--基于深度学习以人类为中心的图像理解

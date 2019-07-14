@@ -166,6 +166,14 @@ https://mp.weixin.qq.com/s/HXxnhMjAchxKSidu45kOeg
 
 网络压缩最新进展：2019年最新文章概览
 
+https://mp.weixin.qq.com/s/Bl7-hGIxZMsHxscqb7DnMA
+
+200～1000+fps！谷歌公布亚毫秒级人脸检测算法BlazeFace，面向移动GPU
+
+https://mp.weixin.qq.com/s/l2_N-PXjDMCqSRwYxU4BEA
+
+模型加速概述与模型裁剪算法技术解析
+
 # 知识蒸馏
 
 知识蒸馏是另一大类的模型压缩方法。

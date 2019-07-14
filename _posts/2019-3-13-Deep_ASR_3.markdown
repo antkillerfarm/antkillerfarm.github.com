@@ -333,3 +333,7 @@ https://mp.weixin.qq.com/s/15QDKqcMAuS0zXpqEDDw-Q
 https://mp.weixin.qq.com/s/Zz63igCUvWf1B3X4jJYTyQ
 
 Flink与Storm协议级对比
+
+https://mp.weixin.qq.com/s/WWCkdF1N6vXZKvw5fAq7iA
+
+寻找数据统治力：比较Spark和Flink

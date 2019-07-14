@@ -336,6 +336,10 @@ https://mp.weixin.qq.com/s/wzf7VwVPpTz9DxsoEfCpYw
 
 单路径NAS: 在四小时内设计出给定硬件内最有效的网
 
+https://mp.weixin.qq.com/s/AlDMBVJHxOEpj-Z4hIjpqA
+
+DenseNAS：密集连接搜索空间下的高灵活度网络结构搜索
+
 # 深度贝叶斯学习
 
 https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og

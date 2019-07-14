@@ -275,6 +275,12 @@ HBase中，将一个Column Family中的列存在一起，而不同Column Family�
 
 吐槽一下。既然2~3个column family的表都支持的不好，那么似乎表明column family在现阶段只是一个设计的概念，离实用尚有距离。这样做的用意，大概是期待有一天Hbase把这个特性做好之后，上层应用可以无须修改吧。
 
+参考：
+
+https://mp.weixin.qq.com/s/ElmuT_Z2UIavFKUlSM7rZw
+
+HBase RowKey与索引设计
+
 ## HBase架构
 
 ![](/images/article/hbase.jpg)

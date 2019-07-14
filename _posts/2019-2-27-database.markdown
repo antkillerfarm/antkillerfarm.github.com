@@ -68,6 +68,10 @@ https://mp.weixin.qq.com/s/4AnLu0m2IILGwyPyuK37Fg
 
 ## 参考
 
+https://mp.weixin.qq.com/s/ActS6PxbtZGqPb0jOn0iFg
+
+不懂数据库索引的底层原理？那是因为你心里没点b树
+
 https://blog.csdn.net/zhengzhb/article/details/8590390
 
 SQL查找删除重复行

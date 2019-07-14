@@ -133,3 +133,15 @@ https://mp.weixin.qq.com/s/qoxEidhZAlY9R0T3y3nP6Q
 https://mp.weixin.qq.com/s/MhW2RDgFv58Yt4cvD2YvHg
 
 CTR预估问题没有“银弹”，比模型结构更重要的是什么？
+
+https://mp.weixin.qq.com/s/a4_BLRB8Y1HvJcZS9O-I5A
+
+阿里最新论文解读：考虑时空域影响的点击率预估模型DSTN
+
+https://zhuanlan.zhihu.com/p/69050253
+
+五大顶会2019必读的深度推荐系统与CTR预估相关的论文
+
+https://mp.weixin.qq.com/s/HwMkRHGH_vH1M2naoW902A
+
+深度学习在美团配送ETA预估中的探索与实践

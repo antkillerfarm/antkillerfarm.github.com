@@ -230,7 +230,7 @@ https://www.cnblogs.com/bluemapleman/p/9277175.html
 
 但用户是有想法的，我们想输出的图像是我们想要的那种图像，和我们的输入是对应的、有关联的。比如输入一只喵的草图，输出同一形态的喵的真实图片。
 
-**2. 低分辨率（Low resolution）和低质量（Low quality）问题。**
+**2.低分辨率（Low resolution）和低质量（Low quality）问题。**
 
 ## GAN的发展
 
@@ -275,6 +275,8 @@ https://github.com/hwalsuklee/tensorflow-generative-model-collections
 《Generating Reasonable and Diversified Story Ending Using Sequence to Sequence Model with Adversarial Training》，这篇论文提出的Seq2Seq+RL+GAN的组合模型，也算是让我开眼界了。
 
 ![](/images/img2/Seq2Seq_RL_GAN.png)
+
+![](/images/img3/GAN.jpg)
 
 ## 参考
 
@@ -345,6 +347,10 @@ https://mp.weixin.qq.com/s/trFM7dfBL23TykWCY9rRtw
 https://mp.weixin.qq.com/s/ynZj6OCfHJ_0t8qlS9txXQ
 
 能生成Deepfake也能诊断癌症，GAN与恶的距离
+
+https://zhuanlan.zhihu.com/p/70033932
+
+一文看懂GAN演进图谱
 
 ## GAN的理论解释
 

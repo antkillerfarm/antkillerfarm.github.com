@@ -66,7 +66,7 @@ DeepFM
 
 这是另一个版本的演化图谱：
 
-![](/images/img2/CTR.png)
+![](/images/img3/recommend.jpg)
 
 ## Sequential Recommender
 

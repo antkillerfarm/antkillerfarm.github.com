@@ -30,13 +30,13 @@ http://user.xmission.com/~nate/opengl.html
 
 主要需要这几个包：
 
-1. freeglut3-dev。最经典的跨平台OpenGL工具包。书籍和教程都用且只用了它。
+1.freeglut3-dev。最经典的跨平台OpenGL工具包。书籍和教程都用且只用了它。
 
-2. libglew-dev。可以用来运行GLSL的相关例子。这个对于OpenGL新特性的支持要强于glut。
+2.libglew-dev。可以用来运行GLSL的相关例子。这个对于OpenGL新特性的支持要强于glut。
 
-3. libglfw-dev。一个glut的替代品。glut适合做demo，而这个可以用来做产品。
+3.libglfw-dev。一个glut的替代品。glut适合做demo，而这个可以用来做产品。
 
-4. libepoxy-dev。GTK项目选择的OpenGL库。
+4.libepoxy-dev。GTK项目选择的OpenGL库。
 
 ## OpenGL vs Direct X
 
@@ -266,7 +266,7 @@ www.wireshark.org
 
 桌面图标：`gksudo wireshark`
 
-2. 非root方式，这也是官方推荐的方式。
+2.非root方式，这也是官方推荐的方式。
 
 `sudo dpkg-reconfigure wireshark-common`
 

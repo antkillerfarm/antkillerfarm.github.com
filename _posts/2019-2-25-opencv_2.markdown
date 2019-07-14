@@ -365,3 +365,7 @@ Hbase万亿级存储性能优化总结
 https://mp.weixin.qq.com/s/kJbeuu3zqRxQxVN38Z4asA
 
 ​你应该知道的HBase基础，都在这儿了
+
+https://mp.weixin.qq.com/s/Bl1NT-pgSseImLEd9f6xzA
+
+Apache HBase的现状和发展

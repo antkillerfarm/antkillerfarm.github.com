@@ -170,3 +170,24 @@ https://github.com/google/googletest
 https://www.ibm.com/developerworks/cn/aix/library/au-googletestingframework.html
 
 Google C++ Testing Framework简介
+
+## boost::format
+
+{% highlight cpp %}
+cout << boost::format("%1%"
+    "%1t 十进制 = [%2$d]\n"
+    "%1t 格式化的十进制 = [%2$5d]\n"
+    "%1t 格式化十进制，前补'0' = [%2$05d]\n"
+    "%1t 十六进制 = [%2$x]\n"
+    "%1t 八进制 = [%2$o]\n"
+    "%1t 浮点 = [%3$f]\n"
+    "%1t 格式化的浮点 = [%3$3.3f]\n"
+    "%1t 科学计数 = [%3$e]\n"
+    ) % "example :\n" % 15 % 15.01 << endl;
+{% endhighlight %}
+
+参考：
+
+https://www.cnblogs.com/WuErPIng/archive/2005/04/21/142308.html
+
+浅尝boost之format

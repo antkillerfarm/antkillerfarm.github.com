@@ -86,10 +86,6 @@ https://zhuanlan.zhihu.com/p/59774288
 
 自动驾驶中基于传感器融合的道路分割
 
-https://mp.weixin.qq.com/s/Lj7Rluq_BF53fXr5dMUPNQ
-
-自动驾驶中的激光雷达目标检测
-
 https://mp.weixin.qq.com/s/gT0P5hXry1Yfs_TbIma18A
 
 基于1R1V的L2级ADAS功能（一）：TJA&ICA系统简介

@@ -258,6 +258,10 @@ https://mp.weixin.qq.com/s/TtU0R8P-YIq8JOJrgHP07w
 
 Facobook开源视觉问答VQA框架：Pythia
 
+https://mp.weixin.qq.com/s/a0Xt_hkcW2OVlEzhQFWugg
+
+由浅及深，细致解读图像问答 VQA 2018 Challenge冠军模型Pythia
+
 https://mp.weixin.qq.com/s/sc3ROchBFK9pAb-FCKNwLg
 
 你说我导！微软玩转标题描述生成视频
@@ -305,10 +309,6 @@ https://zhuanlan.zhihu.com/p/53220566
 https://mp.weixin.qq.com/s/sQoqt-7EqZmy5gvIWTtMKQ
 
 更有智慧的眼睛：图像描述（Image Caption）&视觉问答（VQA）综述（上）
-
-https://mp.weixin.qq.com/s/a0Xt_hkcW2OVlEzhQFWugg
-
-由浅及深，细致解读图像问答 VQA 2018 Challenge冠军模型Pythia
 
 https://mp.weixin.qq.com/s/3Y5f7JsxsmmuCjAX625h1Q
 

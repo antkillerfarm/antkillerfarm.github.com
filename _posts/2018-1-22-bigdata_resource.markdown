@@ -6,6 +6,8 @@ category: resource
 
 # 大数据平台参考资源
 
+![](/images/img3/big_data.png)
+
 https://dzone.com/
 
 这是一个大数据方面的资源网站，但是是英文的

@@ -82,6 +82,14 @@ https://mp.weixin.qq.com/s/t8XDCPOYna8mZ1Iqk_g7Zw
 
 最新语言表示方法XLNet
 
+https://zhuanlan.zhihu.com/p/70257427
+
+XLNet:运行机制及和Bert的异同比较
+
+https://mp.weixin.qq.com/s/SAiIIa9_-16dqRMKASsuhw
+
+追溯XLNet的前世今生：从Transformer到XLNet
+
 ## 参考
 
 https://www.zhihu.com/question/298203515

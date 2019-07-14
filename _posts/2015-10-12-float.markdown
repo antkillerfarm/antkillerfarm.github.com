@@ -101,9 +101,9 @@ void main()
 
 回到第一个问题。如何做才能在最终的可执行文件中不包含未使用的函数呢？步骤如下：
 
-1. gcc添加-ffunction-sections选项。我们通常的做法是一个.c文件编译生成一个.o文件。而这个.c文件中的函数代码都会包含在.o文件的.text段（section）中。而-ffunction-sections选项会将每个函数放在单独的段中，例如a函数，会被放到.text.a段中。
+1.gcc添加-ffunction-sections选项。我们通常的做法是一个.c文件编译生成一个.o文件。而这个.c文件中的函数代码都会包含在.o文件的.text段（section）中。而-ffunction-sections选项会将每个函数放在单独的段中，例如a函数，会被放到.text.a段中。
 
-2. ld添加--gc-sections选项。这个选项的作用是不链接未使用的段。
+2.ld添加--gc-sections选项。这个选项的作用是不链接未使用的段。
 
 从上面的步骤可以看出，链接的最小单位既不是.o文件，也不是单个函数，而是段。
 

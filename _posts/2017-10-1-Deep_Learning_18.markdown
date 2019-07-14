@@ -188,6 +188,10 @@ https://mp.weixin.qq.com/s/AWsiAYyVWY83s5uJ01Lg6Q
 
 千亿级照片，毫秒间匹配最佳结果，微软开源Bing搜索背后的关键算法
 
+https://mp.weixin.qq.com/s/fw5dRWmvZ17lqzxjKFrCtQ
+
+相关性特征在图片搜索中的实践
+
 # 手势识别
 
 https://zhuanlan.zhihu.com/p/26630215

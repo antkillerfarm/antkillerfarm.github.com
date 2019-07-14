@@ -224,7 +224,7 @@ PC上搭建Objective-C（以下简称OC）开发环境，主要借助GNUstep开�
 
 以Ubuntu为例，步骤如下：
 
-1. 安装软件包。
+1.安装软件包。
 
 `sudo apt-get install gnustep-devel libjpeg-dev libtiff5-dev gobjc-4.9`
 

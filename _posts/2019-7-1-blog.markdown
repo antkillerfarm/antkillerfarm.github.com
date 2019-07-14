@@ -24,11 +24,11 @@ category: essay
 
 2018.7.26 近来blog相关的事情比较多。
 
-1. CSDN编辑拉我进高级作者微信群。另一不知名小编居然和我约稿。。。太瞧得起我的水平了。。。
+1.CSDN编辑拉我进高级作者微信群。另一不知名小编居然和我约稿。。。太瞧得起我的水平了。。。
 
-2. 添了一个Google的follower，居然还是tensorflow的committer，就连做的工作都和我类似。。。
+2.添了一个Google的follower，居然还是tensorflow的committer，就连做的工作都和我类似。。。
 
-3. 添了一个Azerbaijan的follower，有没有搞错啊！你确定你看得懂中文吗？
+3.添了一个Azerbaijan的follower，有没有搞错啊！你确定你看得懂中文吗？
 
 2018.7.19 添加Speech分类。
 

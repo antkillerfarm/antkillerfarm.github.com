@@ -84,7 +84,7 @@ https://software.intel.com/en-us/articles/optimizing-applications-for-numa
 
 Optimizing Applications for NUMA
 
-## 业界
+## 行业
 
 https://mp.weixin.qq.com/s/YdoIVBpn1dFUEzDEF5pYJw
 
@@ -105,6 +105,10 @@ https://mp.weixin.qq.com/s/bggtiz_a-Io8e9UQohxv1A
 https://mp.weixin.qq.com/s/KOjA94ODbWBEOGS-DWCNyw
 
 美国本土的晶圆厂大盘点
+
+https://mp.weixin.qq.com/s/zzlJ1VjgR70jZQrBsUBLMA
+
+日本元器件三龙头的成功秘籍
 
 ## 多核
 

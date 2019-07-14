@@ -262,6 +262,10 @@ https://blog.csdn.net/weixin_36340947/article/details/78246174
 
 张正友标定算法原理详解
 
+https://mp.weixin.qq.com/s/0VuaW9zK5Q_sh5uasXauRg
+
+腾讯张正友：计算机视觉的三生三世
+
 https://zhuanlan.zhihu.com/p/35223115
 
 从零开始学习“张氏相机标定法”（一）相机成像模型

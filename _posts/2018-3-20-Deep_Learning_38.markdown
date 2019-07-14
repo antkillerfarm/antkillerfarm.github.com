@@ -383,3 +383,7 @@ https://mp.weixin.qq.com/s/6K4tXPlYLaXhexh6gElP5Q
 https://mp.weixin.qq.com/s/bb3ZsXtiRmPvzQ-lfSXrZQ
 
 基于Pascal VOC2012增强数据的多标签图像分类实战
+
+https://mp.weixin.qq.com/s/2pJt9hlUFhR6mo1ughKkiA
+
+超全深度学习细粒度图像分析：项目、综述、教程一网打尽

@@ -294,6 +294,10 @@ https://mp.weixin.qq.com/s/O7B-pQveMefaCuMswT7H-A
 
 跨8千个字学习知识，上下文要多长还是交给Transformer自己决定吧
 
+https://mp.weixin.qq.com/s/VG5WHwuO6DKRzcm0pddeMQ
+
+参数少一半，效果还更好，天津大学和微软提出Transformer压缩模型
+
 # BERT
 
 论文：

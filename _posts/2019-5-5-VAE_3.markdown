@@ -128,6 +128,14 @@ https://mp.weixin.qq.com/s/zJf-dWsMe5WELgDz7TlivA
 
 双人协作游戏带你理解变分自编码器-Part2
 
+# VAE的发展
+
+![](/images/img3/VAE.jpg)
+
+https://zhuanlan.zhihu.com/p/68903857
+
+一文看懂AutoEncoder模型演进图谱
+
 # VAE vs GAN
 
 VAE是直接计算生成图片和原始图片的均方误差而不是像GAN那样去对抗来学习，这就使得生成的图片会有点模糊。但是VAE的收敛性要优于GAN。因此又有GAN hybrids：一方面可以提高VAE的采样质量和改善表示学习，另一方面也可以提高GAN的稳定性和丰富度。
