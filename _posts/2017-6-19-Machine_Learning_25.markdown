@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十五）——Tri-training, 聚类算法, 压缩感知, 元胞自动机, 运筹学, simhash
+title:  机器学习（二十五）——Tri-training, 聚类算法, 元胞自动机, simhash, LSH
 category: ML 
 ---
 
@@ -168,28 +168,6 @@ https://mp.weixin.qq.com/s/qTZZVBlZF7_oR8QFGq6hmQ
 
 Fuzzy c-means聚类算法简介
 
-# 压缩感知
-
-https://blog.csdn.net/jbb0523
-
-一个压缩感知+贝叶斯网络方面的blog
-
-http://blog.csdn.net/abcjennifer/article/details/7721834
-
-初识压缩感知Compressive Sensing
-
-http://blog.csdn.net/abcjennifer/article/details/7724360
-
-中国压缩传感资源（China Compressive Sensing Resources）
-
-http://blog.csdn.net/xiahouzuoxin/article/details/38820925
-
-白话压缩感知（含Matlab代码）
-
-http://blog.csdn.net/abcjennifer/article/details/7748833
-
-压缩感知进阶——有关稀疏矩阵
-
 # 元胞自动机
 
 http://www.doc88.com/p-8939046003005.html
@@ -208,73 +186,13 @@ http://www.cnblogs.com/Firefly727/articles/1856328.html
 
 元胞自动机
 
-# 运筹学
-
-http://www.cnblogs.com/6DAN_HUST/archive/2010/11/11/1874681.html
-
-运筹学——线性规划及单纯形法求解
-
-https://mp.weixin.qq.com/s/2qOjE0B6x9xuyoBw94NqQA
-
-线性规划基础
-
-https://mp.weixin.qq.com/s/zV6zi79c1Q2dfCaywuK6Pw
-
-内点法六十年再回首
-
-https://mp.weixin.qq.com/s/aryMyP0r6vov0pUvkoFYng
-
-过去，现在和未来：运筹学为航空业保驾护航
-
-https://mp.weixin.qq.com/s?__biz=MzUxMTYwMzI0OQ==&mid=2247486937&idx=1&sn=6be69679390f59516ee5f077adb8ccfa
-
-运筹优化的剖析与应用
-
-https://mp.weixin.qq.com/s/Ofn-p8NnnO4kLYqTlL0bJg
-
-二次规划（QP）样条路径
-
-https://mp.weixin.qq.com/s/zqesjLOeWIkiq68tLVVmJQ
-
-混合整数规划模型在页岩气开采中的应用：EQT公司的案例
-
-https://mp.weixin.qq.com/s/Ve_Gvp1Y0nIX4DV9_w0S3g
-
-半正定规划(SDP)的形象理解和基本原理
-
-https://mp.weixin.qq.com/s/wspfngdFNq-GeCTUJAse0A
-
-在单纯形法之前
-
-https://mp.weixin.qq.com/s/sGRNiAl7tvPc1tl0Xk2Idw
-
-深度学习和强化学习在组合优化方面有哪些应用？
-
-https://mp.weixin.qq.com/s/MuODCRWqolnh62D4t-hRvQ
-
-临(邻)近增量累积梯度法(PIAG)
-
-https://mp.weixin.qq.com/s/AHM60k3_Th3HD-VPBaXhuw
-
-线性规划和整数规划的若干建模技巧
-
-https://mp.weixin.qq.com/s/Pvu7JAHvsGJdL0mJIhVwng
-
-多工序、多机台(产线)环境下的排程要点
-
-# 金融模型
-
-Capital asset pricing model
-
-Fama–French three-factor model
-
-Carhart four-factor model
-
 # simhash
 
 simhash是一种能计算文档相似度的hash算法。
 
 论文：
+
+《Similarity Estimation Techniques from Rounding Algorithms》
 
 《Detecting Near-Duplicates for Web Crawling》
 
@@ -313,3 +231,67 @@ https://www.jianshu.com/p/193f0089b7a2
 https://mp.weixin.qq.com/s/vwhetMpQllczILptBNcoWg
 
 基于快速GeoHash，如何实现海量商品与商圈的高效匹配？
+
+# LSH
+
+论文：
+
+《Approximate nearest neighbors: towards removing the curse of dimensionality》
+
+《Similarity Search in High Dimensions via Hashing》
+
+说到Hash，大家都很熟悉，是一种典型的Key-Value结构，最常见的算法莫过于MD5。其设计思想是使Key集合中的任意关键字能够尽可能均匀的变换到Value空间中，不同的Key对应不同的Value，即使Key值只有轻微变化，Value值也会发生很大地变化。这样特性可以作为文件的唯一标识，在做下载校验时我们就使用了这个特性。
+
+但是有没有这样一种Hash呢？他能够使相似Key值计算出的Value值相同或在某种度量下相近呢？甚至得到的Value值能够保留原始文件的信息，这样相同或相近的文件能够以Hash的方式被快速检索出来，或用作快速的相似性比对。位置敏感哈希（Local Sensitive Hashing, LSH）正好满足了这种需求。
+
+相似性检索在各种领域特别是在视频、音频、图像、文本等含有丰富特征信息领域中的应用变得越来越重要。丰富的特征信息一般用高维向量表示，由此相似性检索一般通过K近邻或近似近邻查询来实现。
+
+传统主要方法是基于空间划分的算法——tree类似算法，如R-tree，Kd-tree，SR-tree。这种算法返回的结果是精确的，但是这种算法在高维数据集上的时间效率并不高。实验指出维度高于10之后，基于空间划分的算法时间复杂度反而不如线性查找。LSH方法能够在保证一定程度上的准确性的前提下，时间和空间复杂度得到降低，并且能够很好地支持高维数据的检索。
+
+参考：
+
+http://blog.csdn.net/icvpr/article/details/12342159
+
+局部敏感哈希(Locality-Sensitive Hashing, LSH)方法介绍
+
+https://blog.csdn.net/guoziqing506/article/details/53019049
+
+LSH(Locality Sensitive Hashing)原理与实现
+
+https://www.cnblogs.com/wt869054461/p/9234184.html
+
+局部敏感哈希-Locality Sensitivity Hashing
+
+https://blog.csdn.net/yc461515457/article/details/48845775
+
+局部敏感哈希LSH(Locality Sensitive Hashing)
+
+https://blog.csdn.net/baidu_21807307/article/details/51794373
+
+局部敏感哈希深度解析(locality-sensetive hashing, LSH)
+
+## K-D Tree
+
+K-Dimensional Tree
+
+https://blog.csdn.net/acdreamers/article/details/44664645
+
+K-D树
+
+## SR-tree
+
+sphere/rectangle-tree
+
+https://wenku.baidu.com/view/22416a14b94ae45c3b3567ec102de2bd9605de83.html
+
+基于SR-树的空间对象最近邻查询
+
+## GRASS GIS
+
+一个开源的GIS软件。
+
+官网：
+
+https://grass.osgeo.org/
+
+上面列举的这些空间搜索算法，在该软件中都有实现。

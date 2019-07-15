@@ -166,6 +166,10 @@ https://zhuanlan.zhihu.com/p/66646519
 
 IKF(IEKF)推导
 
+https://blog.csdn.net/baidu_21807307/article/details/51843079
+
+浅谈卡尔曼滤波（Kalman Filter）
+
 # 推荐算法中的常用排序算法
 
 ## Pointwise方法

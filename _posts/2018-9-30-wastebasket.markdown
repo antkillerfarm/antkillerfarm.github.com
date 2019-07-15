@@ -28,10 +28,6 @@ http://blog.codinglabs.org/articles/algorithms-for-cardinality-estimation-part-i
 
 解读Cardinality Estimation算法
 
-http://blog.csdn.net/icvpr/article/details/12342159
-
-局部敏感哈希(Locality-Sensitive Hashing, LSH)方法介绍
-
 https://mp.weixin.qq.com/s/zQJve_w5OoM6u-WcSWArdQ
 
 神速Hash
@@ -346,17 +342,9 @@ https://mp.weixin.qq.com/s/t2EM1l7ujoSquGl2x5hBBA
 
 21世纪最强王者纸飞机：用一张A4纸拿到了吉尼斯世界记录
 
-## LSM (Log Structured Merge)
+https://mp.weixin.qq.com/s/-pnk_O7cOn5KNrqC89Ydsg
 
-十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。
-
-http://www.open-open.com/lib/view/open1424916275249.html
-
-Log Structured Merge Trees(LSM)原理
-
-https://mp.weixin.qq.com/s/CmYg22NObamkNOqGjKg0-w
-
-解读现代存储系统背后的经典算法
+在数学奥林匹克的125年里，这25个逆天解法称霸江湖！
 
 ## Bélády's Algorithm
 

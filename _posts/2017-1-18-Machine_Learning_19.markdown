@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（十九）——Beam Search, 决策树
+title:  机器学习（十九）——Beam Search, 压缩感知, 决策树
 category: ML 
 ---
 
@@ -53,6 +53,28 @@ Beam Search算法及其应用
 https://mp.weixin.qq.com/s/GTtjjBgCDdLRwPrUqfwlVA
 
 如何使用贪婪搜索和束搜索解码算法进行自然语言处理
+
+# 压缩感知
+
+https://blog.csdn.net/jbb0523
+
+一个压缩感知+贝叶斯网络方面的blog
+
+http://blog.csdn.net/abcjennifer/article/details/7721834
+
+初识压缩感知Compressive Sensing
+
+http://blog.csdn.net/abcjennifer/article/details/7724360
+
+中国压缩传感资源（China Compressive Sensing Resources）
+
+http://blog.csdn.net/xiahouzuoxin/article/details/38820925
+
+白话压缩感知（含Matlab代码）
+
+http://blog.csdn.net/abcjennifer/article/details/7748833
+
+压缩感知进阶——有关稀疏矩阵
 
 # 决策树
 

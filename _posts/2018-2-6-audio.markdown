@@ -295,3 +295,7 @@ https://people.csail.mit.edu/madry/6.883/
 https://fullstackdeeplearning.com/march2019
 
 UCB: Full Stack Deep Learning。这个课程是专门讲述如何部署DL工程到实际产品中。
+
+http://web.stanford.edu/class/cs246/
+
+CS246: Mining Massive Data Sets

@@ -226,6 +226,18 @@ https://mp.weixin.qq.com/s/YwZijgTbhd2ILiVxug1dWg
 
 框一下就能从视频隐身，这是现实版的“隐身衣”？
 
+https://zhuanlan.zhihu.com/p/73599727
+
+基于深度学习的视频帧内插技术
+
+https://mp.weixin.qq.com/s/PnDjXF_ZPYPJ3cgZ_w6v-g
+
+视频分类/行为识别网络和数据集上新
+
+https://mp.weixin.qq.com/s/cNvQy4MW9vHTbUPsrqnUdA
+
+视频PS神器！人物隐身、水印去除，简直像重拍了一遍，这项登上CVPR的研究刚刚开源了
+
 # Mask R-CNN
 
 Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的网络。它是何恺明2017年的新作。

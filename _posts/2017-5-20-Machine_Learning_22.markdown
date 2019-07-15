@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十二）——机器学习分类器性能指标, 训练集、验证集和测试集
+title:  机器学习（二十二）——机器学习分类器性能指标, 训练集、验证集和测试集, 运筹学
 category: ML 
 ---
 
@@ -250,3 +250,65 @@ https://zhuanlan.zhihu.com/p/48976706
 https://mp.weixin.qq.com/s/idS2l7u_OBxWi5UBexlK4w
 
 如何正确使用机器学习中的训练集、验证集和测试集？
+
+# 运筹学
+
+http://www.cnblogs.com/6DAN_HUST/archive/2010/11/11/1874681.html
+
+运筹学——线性规划及单纯形法求解
+
+https://mp.weixin.qq.com/s/2qOjE0B6x9xuyoBw94NqQA
+
+线性规划基础
+
+https://mp.weixin.qq.com/s/zV6zi79c1Q2dfCaywuK6Pw
+
+内点法六十年再回首
+
+https://mp.weixin.qq.com/s/aryMyP0r6vov0pUvkoFYng
+
+过去，现在和未来：运筹学为航空业保驾护航
+
+https://mp.weixin.qq.com/s?__biz=MzUxMTYwMzI0OQ==&mid=2247486937&idx=1&sn=6be69679390f59516ee5f077adb8ccfa
+
+运筹优化的剖析与应用
+
+https://mp.weixin.qq.com/s/Ofn-p8NnnO4kLYqTlL0bJg
+
+二次规划（QP）样条路径
+
+https://mp.weixin.qq.com/s/zqesjLOeWIkiq68tLVVmJQ
+
+混合整数规划模型在页岩气开采中的应用：EQT公司的案例
+
+https://mp.weixin.qq.com/s/Ve_Gvp1Y0nIX4DV9_w0S3g
+
+半正定规划(SDP)的形象理解和基本原理
+
+https://mp.weixin.qq.com/s/wspfngdFNq-GeCTUJAse0A
+
+在单纯形法之前
+
+https://mp.weixin.qq.com/s/sGRNiAl7tvPc1tl0Xk2Idw
+
+深度学习和强化学习在组合优化方面有哪些应用？
+
+https://mp.weixin.qq.com/s/MuODCRWqolnh62D4t-hRvQ
+
+临(邻)近增量累积梯度法(PIAG)
+
+https://mp.weixin.qq.com/s/AHM60k3_Th3HD-VPBaXhuw
+
+线性规划和整数规划的若干建模技巧
+
+https://mp.weixin.qq.com/s/Pvu7JAHvsGJdL0mJIhVwng
+
+多工序、多机台(产线)环境下的排程要点
+
+# 金融模型
+
+Capital asset pricing model
+
+Fama–French three-factor model
+
+Carhart four-factor model

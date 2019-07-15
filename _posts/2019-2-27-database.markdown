@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数据库, Mysql, Android研究（二）
+title:  数据库, Mysql
 category: technology 
 ---
 
@@ -65,6 +65,18 @@ GraphQL and Relay浅析
 https://mp.weixin.qq.com/s/4AnLu0m2IILGwyPyuK37Fg
 
 基本操作：Go创建GraphQL API
+
+## LSM (Log Structured Merge)
+
+十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。
+
+http://www.open-open.com/lib/view/open1424916275249.html
+
+Log Structured Merge Trees(LSM)原理
+
+https://mp.weixin.qq.com/s/CmYg22NObamkNOqGjKg0-w
+
+解读现代存储系统背后的经典算法
 
 ## 参考
 
@@ -331,71 +343,3 @@ https://mp.weixin.qq.com/s/YX1XqKVfPS9DpMi_gTFNiA
 https://www.cnblogs.com/andy6/p/6959028.html
 
 从Oracle迁移到MySQL的各种坑及自救方案
-
-# Android研究
-
-## Flutter
-
-Flutter是Google用以帮助开发者在Ios和Android两个平台开发高质量原生应用的全新移动UI框架。Beta1版本于2018年2月27日在2018世界移动大会上公布。
-
-官网：
-
-https://flutter.io/
-
-参考：
-
-https://mp.weixin.qq.com/s/pU75twMDry4VUYtTHeV_IQ
-
-一文深入了解Flutter界面开发
-
-https://mp.weixin.qq.com/s/yPvaB7sLuJoGfsjj7x7wcg
-
-深入理解Flutter的编译原理与优化
-
-https://mp.weixin.qq.com/s/SWP7Nu9DEUhvAyvdIG-Ixw
-
-聊一聊Flutter Engine线程管理与Dart Isolate机制
-
-https://mp.weixin.qq.com/s/cJjKZCqc8UuzvEtxK1BJCw
-
-Flutter的原理及美团的实践
-
-https://mp.weixin.qq.com/s/l6xvmnLE6HfRtw6upo6yUA
-
-高效开发与高性能并存的UI框架——携程Flutter实践
-
-https://mp.weixin.qq.com/s/vcbHMtaJEkZhSgiRBST1YA
-
-移动开发这十年
-
-https://mp.weixin.qq.com/s/VlleaiIzsZHZDkDrGgYi1g
-
-如何用Flutter实现混合开发？闲鱼公开源代码实例
-
-https://mp.weixin.qq.com/s/n2avWVS0FAFIEB4w0W0Xsw
-
-学习Dart的10大理由
-
-## Litho
-
-Litho是Facebook推出的一套高效构建Android UI的声明式框架，主要目的是提升RecyclerView复杂列表的滑动性能和降低内存占用。
-
-官网：
-
-https://fblitho.com/
-
-参考：
-
-https://mp.weixin.qq.com/s/RS7O7prvkCvKyxkK3YQxtA
-
-Litho的使用及原理剖析
-
-## 参考
-
-https://mp.weixin.qq.com/s/twfpUMf9CfXcgwtFFkJ4Ig
-
-Android整体设计及背后意义
-
-https://mp.weixin.qq.com/s/eEuNPtTaPwJ7hSghgeU32g
-
-Android Hook技术防范漫谈
