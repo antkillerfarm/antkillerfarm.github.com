@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十九）——在线学习
+title:  机器学习（二十九）——在线学习, 贝叶斯学习
 category: ML 
 ---
 

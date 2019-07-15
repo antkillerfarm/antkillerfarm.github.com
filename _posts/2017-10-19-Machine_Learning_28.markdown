@@ -88,6 +88,10 @@ https://github.com/yzhao062/anomaly-detection-resources
 
 异常检测参考资源
 
+https://github.com/zhuyiche/awesome-anomaly-detection
+
+异常检测论文大列表：方法、应用、综述
+
 http://chuansong.me/n/377440751130
 
 异常点检测算法（一）

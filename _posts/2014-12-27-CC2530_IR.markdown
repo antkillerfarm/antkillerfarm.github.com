@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  CC2530, Trie树, Parquet
+title:  CC2530, Trie树
 category: technology 
 ---
 
@@ -247,21 +247,3 @@ https://mp.weixin.qq.com/s/J7C70ASC6GZJqmqut0Z6Ag
 https://mp.weixin.qq.com/s/nMmrVPvjaPOLgxKNjMzetw
 
 动画+解析，轻松理解“Trie树”
-
-# Parquet
-
-Parquet是Twitter开源的一种供Hadoop使用的列式存储格式。
-
-参考：
-
-http://blog.csdn.net/dc_726/article/details/41777661
-
-从NSM到Parquet：存储结构的衍化
-
-http://blog.csdn.net/dc_726/article/details/41143175
-
-几张图看懂列式存储
-
-https://mp.weixin.qq.com/s/z9xpjhL5gS9w9ZpcZWee3g
-
-大数据列式存储Parquet和ORC简介
