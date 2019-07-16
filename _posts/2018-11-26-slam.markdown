@@ -226,6 +226,10 @@ https://www.cnblogs.com/hitcm/p/6327442.html
 
 视觉惯性里程计Visual–Inertial Odometry(VIO)概述
 
+https://mp.weixin.qq.com/s/8KOQYtL8QgCNimGSxA1dgA
+
+视觉惯性里程计(VIO)
+
 https://zhuanlan.zhihu.com/p/62988961
 
 一起快速上手VINS-Fusion

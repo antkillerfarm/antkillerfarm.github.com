@@ -314,10 +314,6 @@ https://mp.weixin.qq.com/s/6AfmiLRSUP819J43EwJBqA
 
 ORACLE ERP的前世今生
 
-https://mp.weixin.qq.com/s/m44zVWMvactsLPjKsFnlSg
-
-RAII惯用法：C++资源管理的利器
-
 https://mp.weixin.qq.com/s/rPZsFyJkoYjqwxjcMnivOQ
 
 微信小程序开发
@@ -365,6 +361,10 @@ https://mp.weixin.qq.com/s/8Rr-hxKQyHpT7L-Zx7PkcA
 https://mp.weixin.qq.com/s/_7q9K9D1q40eaGkLt9yDhQ
 
 分布式系统关注点——深入浅出“异步”
+
+https://mp.weixin.qq.com/s/pSUXoLrwQeaxsI2LI-13EA
+
+带你用生活大白话理解NIO
 
 ## 编译原理
 

@@ -368,11 +368,3 @@ https://mp.weixin.qq.com/s/TUwhd7ruF-156GDmInpA7w
 https://mp.weixin.qq.com/s/duJK5y9ZeFkYsFkAg4E2Jw
 
 IBM-小样本学习（Few-shot Learning）State of the art方法及论文讲解
-
-https://mp.weixin.qq.com/s/kPFS_4swYEP6Amw8xfXEgg
-
-中科院自动化所-针对小样本问题的学习生成匹配网络方法
-
-https://mp.weixin.qq.com/s/Kb1KggOE3gxy7Edn48dlMg
-
-自然语言处理的迁移学习--来自DeepMind、AllenNLP等，附238页Slides&代码

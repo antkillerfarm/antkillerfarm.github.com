@@ -242,6 +242,10 @@ https://mp.weixin.qq.com/s/7q8T6ZArobucty6Rlv3JRw
 
 神秘的Waymo一反常态，CVPR现场发布大型自动驾驶数据集
 
+https://mp.weixin.qq.com/s/L6r59FOy-hhygnMsfpa2gg
+
+Apollo开放全长380km点云数据集，助推厘米级精度定位实现
+
 ## 医疗
 
 https://mp.weixin.qq.com/s/849fLGndmaRvz_oWt6HWtg

@@ -4,6 +4,20 @@ title:  深度学习（四十二）——行人重识别, 深度ISP, Spiking Neu
 category: DL 
 ---
 
+# 迁移学习（续）
+
+https://mp.weixin.qq.com/s/kPFS_4swYEP6Amw8xfXEgg
+
+中科院自动化所-针对小样本问题的学习生成匹配网络方法
+
+https://mp.weixin.qq.com/s/Kb1KggOE3gxy7Edn48dlMg
+
+自然语言处理的迁移学习--来自DeepMind、AllenNLP等，附238页Slides&代码
+
+https://mp.weixin.qq.com/s/NFziZe6xS_CzVZX_0Den9g
+
+达观数据CTO纪达麒:小标注数据量下自然语言处理实战经验
+
 # 行人重识别
 
 行人重识别（Person re-identification）也称行人再识别，是利用计算机视觉技术判断图像或者视频序列中是否存在特定行人的技术。广泛被认为是一个图像检索的子问题。给定一个监控行人图像，检索跨设备下的该行人图像。旨在弥补目前固定的摄像头的视觉局限，并可与行人检测/行人跟踪技术相结合，可广泛应用于智能视频监控、智能安保等领域。

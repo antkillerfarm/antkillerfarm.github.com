@@ -247,3 +247,7 @@ https://mp.weixin.qq.com/s/JEYucJ16Zsxc6yWHPHGaZA
 https://mp.weixin.qq.com/s/HubxAFbxCdoaFHNOhfm9QQ
 
 Facebook频谱图模型生成比尔·盖茨声音，性能完胜WaveNet、MAESTRO
+
+https://mp.weixin.qq.com/s/QbSPOHvYD9CGnbPmigeYdA
+
+多语言语音合成和跨语言语音克隆

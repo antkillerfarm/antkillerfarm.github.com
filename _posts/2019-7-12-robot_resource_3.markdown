@@ -65,3 +65,7 @@ https://mp.weixin.qq.com/s/yIFgwxU-DI6NBogfmxqqKQ
 https://mp.weixin.qq.com/s/x0Ls8jeqjuyJoZ53q5R7_A
 
 自动驾驶中的障碍物行为预测
+
+https://mp.weixin.qq.com/s/cV1-mxUKisRgeu9G4NPLrQ
+
+出行领域计算机视觉技术，滴滴AI Labs教程，117页PPT
