@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  在线激活流程研究, 芯片杂烩, Actor model, OA办公软件, Restful
+title:  在线激活流程研究, 芯片杂烩, Actor model, OA办公软件, Restful, 微服务
 category: technology 
 ---
 
@@ -213,3 +213,35 @@ https://jersey.java.net/
 示例：
 
 https://github.com/feuyeux/jax-rs2-guide-II
+
+# 微服务
+
+![](/images/img2/FaaS.png)
+
+http://blog.csdn.net/wurenhai/article/details/37659335
+
+微服务(Microservices)
+
+https://mp.weixin.qq.com/s/yPl746zhMFdMVtJaPUoAxg
+
+微服务并非Spring Cloud独角戏，Service Mesh未来大有可为
+
+https://mp.weixin.qq.com/s/tLG7ZP2IyYweCR0ctpwk_Q
+
+日调度5万亿次 腾讯云微服务架构体系TSF深度解读
+
+https://mp.weixin.qq.com/s/bsuveX-E6E2fKZ24mj03nQ
+
+微服务架构技术栈选型手册
+
+https://mp.weixin.qq.com/s/HK9_GfLe1Q215YouTsezvQ
+
+一张图了解微服务架构核心知识点
+
+https://mp.weixin.qq.com/s/j0kiWTlrntzvthUJlxZBsA
+
+数据转换：从单体式应用到微服务的低风险演变
+
+https://mp.weixin.qq.com/s/bUtu2nTs0bybnTvk-iLt6Q
+
+GTS来了！阿里微服务架构下的分布式事务解决方案

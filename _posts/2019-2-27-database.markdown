@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数据库, Mysql
+title:  数据库, Mysql, scrapy
 category: technology 
 ---
 
@@ -343,3 +343,51 @@ https://mp.weixin.qq.com/s/YX1XqKVfPS9DpMi_gTFNiA
 https://www.cnblogs.com/andy6/p/6959028.html
 
 从Oracle迁移到MySQL的各种坑及自救方案
+
+# scrapy
+
+scrapy是一个Python写的网页抓取分析工具。网页抓取分析的学名叫做“Web scraping”，可在wiki上获得更多的相关信息。
+
+官网：
+
+https://scrapy.org/
+
+安装：
+
+`sudo apt install python-scrapy`
+
+`scrapy crawl csdn`
+
+新建工程：
+
+`scrapy startproject tutorial`
+
+参考：
+
+https://segmentfault.com/a/1190000000583419
+
+一个中文简易教程。
+
+https://github.com/scrapy/dirbot
+
+官方例程。
+
+http://www.cnblogs.com/fengzheng/p/4974509.html
+
+另一个中文简易教程。
+
+https://mp.weixin.qq.com/s/nIcUBS0lRrOwVUHoWmKecw
+
+爬虫系列之使用scrapy框架
+
+https://mp.weixin.qq.com/s/A2QNr4-LTUNy-H8zE0OgXA
+
+教你用Scrapy建立你自己的数据集
+
+https://mp.weixin.qq.com/s/i-umuOi8jGw8dMQmG44liQ
+
+如何租到靠谱的房子？Scrapy爬虫帮你一网打尽各平台租房信息！这篇blog中，还有如何用Kibana处理数据的内容
+
+https://mp.weixin.qq.com/s/hzl8D-AhpCwqZVSLTK56XQ
+
+Python爬虫--Scrapy入门

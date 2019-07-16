@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（五十）——深度推理, Attention进阶
+title:  深度学习（五十）——深度推理
 category: DL 
 ---
 
