@@ -150,6 +150,10 @@ https://mp.weixin.qq.com/s/3QjLFzMvH9qR05kmUyawQg
 
 知识图谱如何用于可解释人工智能中？
 
+https://mp.weixin.qq.com/s/gKCPQcEtqIIiVMQL_DOzww
+
+学习开发知识图谱中的长期关系依赖
+
 # 数据结构 & 普通CS算法
 
 https://mp.weixin.qq.com/s/52JFdyaLwZq7nWiZq6z6qA

@@ -171,6 +171,10 @@ https://www.ibm.com/developerworks/cn/aix/library/au-googletestingframework.html
 
 Google C++ Testing Framework简介
 
+https://www.cnblogs.com/coderzh/archive/2009/04/06/1426755.html
+
+玩转Google开源C++单元测试框架Google Test系列(gtest)
+
 ## boost::format
 
 {% highlight cpp %}

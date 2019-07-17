@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  VAE（三）——VAE vs GAN, VAE参考资源, 通信协议
+title:  VAE（三）——VAE vs GAN, VAE参考资源
 category: GAN & VAE 
 ---
 

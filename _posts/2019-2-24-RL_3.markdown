@@ -56,7 +56,7 @@ Hartford大学的这个网站也有些不错的资料，偏重RL、机器人、M
 
 ![](/images/img2/RL_3.png)
 
-$$v_{\pi}$$和$$q_{\pi}$$的定义参见《机器学习（二十五）》。
+$$v_{\pi}$$和$$q_{\pi}$$的定义参见《强化学习（一）》。
 
 $$v_*(s)=\max_{\pi}v_{\pi}(s)$$
 
@@ -232,7 +232,7 @@ Monte Carlo Policy Evaluation的目标是对状态s进行估值。它的步骤�
 
 ## Incremental Monte-Carlo Updates
 
-借用《机器学习（二十六）》中，求均值的小技巧，我们可以得到Incremental Mean。
+借用《强化学习（二）》中，求均值的小技巧，我们可以得到Incremental Mean。
 
 用Incremental Mean进行更新，被称作Incremental Monte-Carlo Updates：
 
@@ -259,3 +259,7 @@ http://www.cnblogs.com/2010Freeze/archive/2011/09/19/2181016.html
 http://www.cnblogs.com/chinazhangjie/archive/2010/11/11/1874924.html
 
 概率算法
+
+https://mp.weixin.qq.com/s/h9S5HZQwQKstDAKth-9Qeg
+
+蒙特卡洛算法(MC)

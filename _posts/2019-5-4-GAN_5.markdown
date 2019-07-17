@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GAN（五）——GAN参考资源
+title:  GAN（五）——GAN参考资源（1）
 category: GAN & VAE 
 ---
 

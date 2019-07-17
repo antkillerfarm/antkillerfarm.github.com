@@ -308,6 +308,10 @@ https://mp.weixin.qq.com/s/8an3eBrOZ5d6_PdNp6QkyA
 
 一文教你读懂3D目标检测
 
+https://mp.weixin.qq.com/s/BVP7vJ1RxwyRoU0purj0Xw
+
+3D数据分类深度学习方法综述，25页论文带你全面了解最新进展
+
 # 深度贝叶斯学习
 
 https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og

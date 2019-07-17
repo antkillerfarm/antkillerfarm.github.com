@@ -140,3 +140,7 @@ https://mp.weixin.qq.com/s/FJAgpbBgRA2Zk3BuiEwjdw
 https://zhuanlan.zhihu.com/p/58987388
 
 多元高斯分布完全解析
+
+https://zhuanlan.zhihu.com/p/73832253
+
+通俗理解高斯过程及其应用
