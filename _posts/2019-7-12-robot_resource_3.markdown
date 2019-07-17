@@ -69,3 +69,7 @@ https://mp.weixin.qq.com/s/x0Ls8jeqjuyJoZ53q5R7_A
 https://mp.weixin.qq.com/s/cV1-mxUKisRgeu9G4NPLrQ
 
 出行领域计算机视觉技术，滴滴AI Labs教程，117页PPT
+
+https://mp.weixin.qq.com/s/lSkMJTPitiswAp3GV3NDSQ
+
+基于车辆动力学辅助多轴IMU的自动驾驶汽车车身侧偏角和姿态角估计

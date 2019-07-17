@@ -63,7 +63,9 @@ TD算法相当于在整个返家的过程中（一个Episode），根据已经�
 | 到达家所在街区 | 40 | 3 | 43 |
 | 到家 | 43 | 0 | 43 |
 
-基于上表所示的数据，下图展示了蒙特卡洛学习和TD学习两种不同的学习策略来更新价值函数（各个状态的价值）。这里使用的是从某个状态预估的到家还需耗时来间接反映某状态的价值：某位置预估的到家时间越长，该位置价值越低，在优化决策时需要避免进入该状态。对于蒙特卡洛学习过程，驾驶员在路面上碰到各种情况时，他不会更新对于回家的预估时间，等他回到家得到了真实回家耗时后，他会重新估计在返家的路上着每一个主要节点状态到家的时间，在下一次返家的时候用新估计的时间来帮助决策。
+基于上表所示的数据，下图展示了蒙特卡洛学习和TD学习两种不同的学习策略来更新价值函数（各个状态的价值）。这里使用的是从某个状态预估的到家还需耗时来间接反映某状态的价值：某位置预估的到家时间越长，该位置价值越低，在优化决策时需要避免进入该状态。
+
+对于蒙特卡洛学习过程，驾驶员在路面上碰到各种情况时，他不会更新对于回家的预估时间，等他回到家得到了真实回家耗时后，他会重新估计在返家的路上着每一个主要节点状态到家的时间，在下一次返家的时候用新估计的时间来帮助决策。
 
 而对于TD学习，在一开始离开办公室的时候你可能会预估总耗时30分钟，但是当你取到车发现下雨的时候，你会立刻想到原来的预计过于乐观，因为既往的经验告诉你下雨会延长你的返家总时间，此时你会更新目前的状态价值估计，从原来的30分钟提高到40分钟。同样当你驾车离开高速公路时，会一路根据当前的状态（位置、路况等）对应的预估返家剩余时间，直到返回家门得到实际的返家总耗时。这一过程中，你会根据状态的变化实时更新该状态的价值。
 
@@ -93,7 +95,7 @@ TD低variance, 但有一定程度的bias，对初始值较敏感，通常比MC�
 
 再来看如下示例：
 
-已现有两个状态(A和B)，MDP未知，衰减系数为1，有如下表所示8个完整Episode的经验及对应的即时奖励，其中除了第1个Episode有状态转移外，其余7个均只有一个状态。
+现有两个状态(A和B)，MDP未知，衰减系数为1，有如下表所示8个完整Episode的经验及对应的即时奖励，其中除了第1个Episode有状态转移外，其余7个均只有一个状态。
 
 | Episode | 状态转移及奖励 |
 |:--:|:--:|
@@ -110,23 +112,33 @@ TD低variance, 但有一定程度的bias，对初始值较敏感，通常比MC�
 
 答案：V(B) = 6/8，V(A)根据不同算法结果不同，用MC算法结果为0，TD则得出6/8。
 
-解释：应用MC算法，由于需要完整的Episode,因此仅Episode1可以用来计算A的状态价值，很明显是0；同时B的价值是6/8。应用TD算法时，TD算法试图利用现有的Episode经验构建一个MDP（如下图），由于存在一个Episode使得状态A有后继状态B，因此状态A的价值是通过状态B的价值来计算的，同时经验表明A到B的转移概率是100%，且A状态的即时奖励是0，并且没有衰减，因此A的状态价值等于B的状态价值。
+解释：应用MC算法，由于需要完整的Episode,因此仅Episode1可以用来计算A的状态价值，很明显是0；同时B的价值是6/8。应用TD算法时，TD算法试图利用现有的Episode经验构建一个MDP（图见下节），由于存在一个Episode使得状态A有后继状态B，因此状态A的价值是通过状态B的价值来计算的，同时经验表明A到B的转移概率是100%，且A状态的即时奖励是0，并且没有衰减，因此A的状态价值等于B的状态价值。
 
 MC算法试图收敛至一个能够最小化状态价值与实际收获的均方差的解决方案。TD算法则收敛至一个根据已有经验构建的最大可能的Markov模型的状态价值。
 
-通过比较可以看出，TD算法使用了MDP问题的Markov属性，在Markov环境下更有效；但是MC算法并不利用Markov属性，通常在非Markov环境下更有效。
+通过比较可以看出，TD算法使用了MDP问题的Markov属性，在Markov环境下更有效；而MC算法并不利用Markov属性，通常在非Markov环境下更有效。
 
 ## DP & MC & TD
 
-Monte-Carlo, Temporal-Difference和Dynamic Programming都是计算状态价值的一种方法，区别在于，前两种是在不知道Model的情况下的常用方法，这其中又以MC方法需要一个完整的Episode来更新状态价值，TD则不需要完整的Episode；DP方法则是基于Model（知道模型的运作方式）的计算状态价值的方法，它通过计算一个状态S所有可能的转移状态S’及其转移概率以及对应的即时奖励来计算这个状态S的价值。
+Monte-Carlo, Temporal-Difference和Dynamic Programming都是计算状态价值的一种方法，区别在于：
 
-关于是否Bootstrap：MC没有bootstrapping，只使用实际收获；DP和TD都有bootstrapping。
+- 前两种是在不知道Model的情况下的常用方法，这其中MC方法需要一个完整的Episode来更新状态价值，而TD则不需要完整的Episode；DP方法则是基于Model（知道模型的运作方式）的计算状态价值的方法，它通过计算一个状态S所有可能的转移状态S’及其转移概率以及对应的即时奖励来计算这个状态S的价值。
 
-关于是否用采样来计算: MC和TD都是应用样本来估计实际的价值函数；而DP则是利用模型直接计算得到实际价值函数，没有采样之说。
+- 关于是否Bootstrap：MC没有bootstrapping，只使用实际收获；DP和TD都有bootstrapping。
+
+- 关于是否用采样来计算: MC和TD都是应用样本来估计实际的价值函数；而DP则是利用模型直接计算得到实际价值函数，没有采样之说。
 
 ![](/images/img2/DP_MC_TD.png)
 
-上图从两个维度解释了四种算法的差别，多了一个穷举法。这两个维度分别是：采样深度和广度。当使用单个采样，同时不走完整个Episode就是TD；当使用单个采样但走完整个Episode就是MC；当考虑全部样本可能性，但对每一个样本并不走完整个Episode时，就是DP；当既考虑所有Episode又把Episode从开始到终止遍历完，就变成了穷举法。
+上图从两个维度解释了四种算法的差别，多了一个穷举法。这两个维度分别是：采样深度和广度。
+
+- 当使用单个采样，同时不走完整个Episode就是TD；
+
+- 当使用单个采样但走完整个Episode就是MC；
+
+- 当考虑全部样本可能性，但对每一个样本并不走完整个Episode时，就是DP；
+
+- 当既考虑所有Episode又把Episode从开始到终止遍历完，就变成了穷举法。
 
 需要提及的是：DP利用的是整个MDP问题的模型，也就是状态转移概率，虽然它并不实际利用样本，但是它利用了整个模型的规律，因此认为是Full Width的。
 
@@ -146,9 +158,7 @@ bootstrapping方法的实现很简单，假设抽取的样本大小为n:
 
 **但是，这不是bootstrapping在RL中的含义！**
 
-Finally, we note one last special property of DP methods. All of them update estimates of the values
-of states based on estimates of the values of successor states. That is, they update estimates on the
-basis of other estimates. We call this general idea **bootstrapping**.
+Finally, we note one last special property of DP methods. All of them update estimates of the values of states based on estimates of the values of successor states. That is, they update estimates on the basis of other estimates. We call this general idea **bootstrapping**.
 
 上面这段是Sutton给bootstrapping的定义，其实也不是太好懂。那么bootstrapping到底是什么意思呢？
 

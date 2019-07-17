@@ -174,6 +174,14 @@ https://mp.weixin.qq.com/s/l2_N-PXjDMCqSRwYxU4BEA
 
 模型加速概述与模型裁剪算法技术解析
 
+https://mp.weixin.qq.com/s/af-z73asc-PmpEsI_yEulA
+
+北邮提出新AI模型压缩算法，显著降低计算复杂度
+
+https://mp.weixin.qq.com/s/AOI2LUjiKPUJFE0D7zX0Hw
+
+谷歌新研究：基于数据共享的神经网络快速训练方法
+
 # 知识蒸馏
 
 知识蒸馏是另一大类的模型压缩方法。
@@ -243,10 +251,6 @@ Hinton胶囊网络后最新研究：用“在线蒸馏”训练大规模分布�
 https://mp.weixin.qq.com/s/SqxooZqSeD3wA4EFK5D3Kg
 
 再生神经网络：利用知识蒸馏收敛到更优的模型
-
-https://mp.weixin.qq.com/s/af-z73asc-PmpEsI_yEulA
-
-北邮提出新AI模型压缩算法，显著降低计算复杂度
 
 # Fast Image Processing
 
