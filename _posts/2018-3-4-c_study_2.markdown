@@ -106,11 +106,54 @@ C - undefined reference to “sqrt” even with '-lm'
 
 右值语法：`type &&引用名 = 右值表达式;`
 
+C++11通过引入右值引用来优化性能，具体来说是通过move语义来将临时生成的左值中的资源无代价的转移到另外一个对象中去。
+
+但右值引入也带来的新问题。
+
+原来我们只有：
+
+`template<typename T> void f1(T& t);`
+
+现在还有：
+
+`template<typename T> void f2(T&& t);`
+
+不加限制的话，还会有`T&& &`（将`T&&`作为参数传给f1），所以就有了引用折叠（Reference collapsing）的概念，即：
+
+{% highlight cpp %}
+& & => &
+&& & => &
+& && => &
+&& && => &&
+{% endhighlight %}
+
+如果把上述规则看作logical-OR的话，那么`&`就是1，而`&&`就是0。
+
+注意，因为临时变量是右值，所以`T&&`的类型在f2函数体内实际上就是`T`。
+
+std::move：无条件的转为右值引用。
+
+std::forward：有条件的转为右值引用。
+
+std::remove_reference：将`T&`或`T&&`变成`T`。
+
 参考：
 
 https://www.cnblogs.com/ldlchina/p/6608154.html
 
 C++11右值引用和std::move语句实例解析
+
+https://www.jianshu.com/p/b90d1091a4ff
+
+C++11 std::move和std::forward
+
+http://shaoyuan1943.github.io/2016/03/26/explain-move-forward/
+
+详解C++11中移动语义(std::move)和完美转发(std::forward)
+
+https://eli.thegreenplace.net/2014/perfect-forwarding-and-universal-references-in-c/
+
+Perfect forwarding and universal references in C++
 
 ## RAII
 
@@ -216,40 +259,4 @@ template <class Derived, class Base>
 inline Derived polymorphic_downcast(Base* x);
 // Effects: assert( dynamic_cast<Derived>(x) == x );
 // Returns: static_cast<Derived>(x)
-
-template <class Derived, class Base>
-inline auto polymorphic_pointer_cast(Base x);
-// Throws: std::bad_cast if ( dynamic_pointer_cast<Derived>(x) == 0 )
-// Returns: dynamic_pointer_cast<Derived>(x)
-
-template <class Derived, class Base>
-inline auto polymorphic_pointer_downcast(Base x);
-// Effects: assert( dynamic_pointer_cast<Derived>(x) == x );
-// Returns: static_pointer_cast<Derived>(x)
 {% endhighlight %}
-
-参考：
-
-https://www.cnblogs.com/chenyangchun/p/6795923.html
-
-C++强制类型转换：static_cast、dynamic_cast、const_cast、reinterpret_cast
-
-## 特化（traits）
-
-{% highlight cpp %}
-template<class T1, class T2>      // 普通版本，有两个模板参数
-class B { ..... };
-
-template<class T2>　　　         // 偏特化版本，指定其中一个参数，即指定了部分类型
-class B<int , T2> { ..... };　　// 当实例化时的第一个参数为int 则会优先调用这个版本
-{% endhighlight %}
-
-**偏特化**的条件：
-
-1.必须有一个主模板。
-
-2.模板类型被部分明确化。
-
-相应的，如果模板参数全被指定，则为**全特化**。
-
-对主版本模板类、全特化类、偏特化类的调用优先级从高到低进行排序是：全特化类>偏特化类>主版本模板类。

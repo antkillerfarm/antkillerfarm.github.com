@@ -6,7 +6,57 @@ category: language
 
 # C/C++编程心得
 
-## 特化（traits）（续）
+## 类型转换（续）
+
+{% highlight cpp %}
+template <class Derived, class Base>
+inline auto polymorphic_pointer_cast(Base x);
+// Throws: std::bad_cast if ( dynamic_pointer_cast<Derived>(x) == 0 )
+// Returns: dynamic_pointer_cast<Derived>(x)
+
+template <class Derived, class Base>
+inline auto polymorphic_pointer_downcast(Base x);
+// Effects: assert( dynamic_pointer_cast<Derived>(x) == x );
+// Returns: static_pointer_cast<Derived>(x)
+{% endhighlight %}
+
+参考：
+
+https://www.cnblogs.com/chenyangchun/p/6795923.html
+
+C++强制类型转换：static_cast、dynamic_cast、const_cast、reinterpret_cast
+
+## std::bind & std::placeholders
+
+{% highlight cpp %}
+void f(int n1, int n2, int n3, const int& n4, int n5)
+{
+    std::cout << n1 << ' ' << n2 << ' ' << n3 << ' ' << n4 << ' ' << n5 << '\n';
+}
+
+auto f2 = std::bind(f, _3, std::bind(g, _3), _3, 4, 5);
+f2(10, 11, 12); // 进行到 f(12, g(12), 12, 4, 5); 的调用
+{% endhighlight %}
+
+## 特化（traits）
+
+{% highlight cpp %}
+template<class T1, class T2>      // 普通版本，有两个模板参数
+class B { ..... };
+
+template<class T2>         // 偏特化版本，指定其中一个参数，即指定了部分类型
+class B<int , T2> { ..... };// 当实例化时的第一个参数为int 则会优先调用这个版本
+{% endhighlight %}
+
+**偏特化**的条件：
+
+1.必须有一个主模板。
+
+2.模板类型被部分明确化。
+
+相应的，如果模板参数全被指定，则为**全特化**。
+
+对主版本模板类、全特化类、偏特化类的调用优先级从高到低进行排序是：全特化类>偏特化类>主版本模板类。
 
 traits一方面，在面对不同的输入类时，能找到合适的返回型别；另一方面，当型别对应有不同的实现函数的时候，能起到一个提取型别然后分流的作用。
 

@@ -346,6 +346,10 @@ https://mp.weixin.qq.com/s/-pnk_O7cOn5KNrqC89Ydsg
 
 在数学奥林匹克的125年里，这25个逆天解法称霸江湖！
 
+https://mp.weixin.qq.com/s/C83eMExh4Zi3TWD2QhVWsQ
+
+夹逼准则
+
 ## Bélády's Algorithm
 
 Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。

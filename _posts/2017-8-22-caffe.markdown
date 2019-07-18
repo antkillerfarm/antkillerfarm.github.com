@@ -402,3 +402,7 @@ https://zhuanlan.zhihu.com/p/54517790
 https://zhuanlan.zhihu.com/p/65478149
 
 为什么USB Type C电缆正反插都可以？它是怎么做到的？
+
+https://mp.weixin.qq.com/s/dk_sl3OvPwvnRWPpPJ4D_Q
+
+USB3.1 Type-C高速接口设计指南
