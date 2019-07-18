@@ -16,6 +16,12 @@ Vulkan：OpenGL的升级版本。在OpenGL中Context和单一线程是绑定的�
 
 简单来说，Khronos的任务就是创建一个统一的硬件和软件之间的API，这样无论软件厂商，还是硬件厂商，都能各行其道，互不干扰了。
 
+参考：
+
+https://zhuanlan.zhihu.com/p/20712354
+
+Vulkan-高性能渲染
+
 ## 概述
 
 官网：
@@ -54,7 +60,7 @@ Device上的内存一般不能直接访问，需要使用vxCreateScalar、vxCrea
 
 和OpenGL一样，OpenVX中的tensor，也是列优先存储的。而C语言是行优先存储的。
 
-行优先/列优先的概念参见：
+行优先/列优先的概念参见《多维数组的行优先和列优先》，亦可参考下文：
 
 http://blog.csdn.net/zhoxier/article/details/8058176
 
