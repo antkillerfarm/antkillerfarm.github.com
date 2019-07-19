@@ -73,3 +73,7 @@ https://mp.weixin.qq.com/s/cV1-mxUKisRgeu9G4NPLrQ
 https://mp.weixin.qq.com/s/lSkMJTPitiswAp3GV3NDSQ
 
 基于车辆动力学辅助多轴IMU的自动驾驶汽车车身侧偏角和姿态角估计
+
+https://mp.weixin.qq.com/s/vSa5KSSj_B_2YFNvZuaygQ
+
+规划技术详解——Motion Planning Environment
