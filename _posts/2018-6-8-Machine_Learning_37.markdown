@@ -384,6 +384,10 @@ https://mp.weixin.qq.com/s/49o_AobVNs_9Lgm4qbQcPA
 
 一文全面了解基于内容的推荐算法
 
+https://mp.weixin.qq.com/s/uxi0OTxjmn047fE8nbYplw
+
+推荐系统：石器与青铜时代
+
 # 强连通分量算法
 
 http://ishare.iask.sina.com.cn/f/34626295.html

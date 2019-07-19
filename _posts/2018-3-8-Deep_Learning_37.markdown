@@ -352,6 +352,10 @@ https://mp.weixin.qq.com/s/CR4Nf_RklcXA45mswPv8Zw
 
 腾讯优图开源人脸检测算法DSFD，刷新两项数据集纪录
 
+https://mp.weixin.qq.com/s/B8r2YEd9UbKMTT8Tup2Y_w
+
+腾讯（优图）新技术的人脸检测（DSFD）
+
 https://zhuanlan.zhihu.com/p/62954487
 
 旷视研究院新出8000点人脸关键点，堪比电影级表情捕捉

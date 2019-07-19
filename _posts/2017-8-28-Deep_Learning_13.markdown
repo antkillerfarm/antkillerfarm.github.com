@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十三）——花式池化
+title:  深度学习（十三）——Winograd（3）, 花式池化
 category: DL 
 ---
 
@@ -143,7 +143,21 @@ https://github.com/andravin/wincnn
 
 这个项目可以很方便的计算不同大小的核的Winograd的结果。这个项目中还有一个pdf文件作为上述论文的补充材料，详细的给出了各矩阵的计算方法。
 
+论文：
+
+《Efficient Sparse-Winograd Convolutional Neural Networks》
+
 ![](/images/img3/Winograd.png)
+
+这篇论文（2018.2）讨论了如何在稀疏矩阵中应用Winograd算法。
+
+论文：
+
+《Sparse Winograd Convolutional neural networks on small-scale systolic arrays》
+
+![](/images/img3/Winograd_3.png)
+
+这篇论文（2018.10）讨论了如何在脉动阵列上实现Winograd算法，还讨论了3D卷积的计算方法。
 
 ![](/images/img3/Winograd_2.png)
 
@@ -215,6 +229,10 @@ https://www.leiphone.com/news/201804/SpmfJVa3al3uBDh2.html
 
 斯坦福ICLR 2018录用论文：高效稀疏Winograd卷积神经网络
 
+https://www.cnblogs.com/shine-lee/p/10906535.html
+
+卷积神经网络中的Winograd快速卷积算法
+
 # 花式池化
 
 池化和卷积一样，都是信号采样的一种方式。
@@ -282,41 +300,3 @@ UnPooling是一种常见的上采样操作。其过程如下图所示：
 2.中间经历若干网络层的运算。
 
 3.上采样阶段，利用第1步保存的Max Location，重建下一层的feature map。
-
-从上面的描述可以看出，UnPooling不完全是Pooling的逆运算：
-
-1.Pooling之后的feature map，要经过若干运算，才会进行UnPooling操作。
-
-2.对于非Max Location的地方以零填充。然而这样并不能完全还原信息。
-
-参考：
-
-http://blog.csdn.net/u012938704/article/details/52831532
-
-caffe反卷积
-
-## K-max Pooling
-
-![](/images/article/kmax_pooling.png)
-
-## 参考
-
-http://www.cnblogs.com/tornadomeet/p/3432093.html
-
-Stochastic Pooling简单理解
-
-http://mp.weixin.qq.com/s/XzOri12hwyOCdI1TgGQV3w
-
-新型池化层sort_pool2d实现更快更好的收敛：表现优于最大池化层
-
-http://blog.csdn.net/liuchonge/article/details/67638232
-
-CNN与句子分类之动态池化方法DCNN--模型介绍篇
-
-https://mp.weixin.qq.com/s/K1RBux3AfxVFT8_uezYHFA
-
-被Hinton，DeepMind和斯坦福嫌弃的池化，到底是什么？
-
-https://mp.weixin.qq.com/s/J4opJ6NvbTxbHWAWNHEltw
-
-自然语言处理中CNN模型几种常见的Max Pooling操作

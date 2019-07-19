@@ -344,6 +344,10 @@ https://mp.weixin.qq.com/s/pToK-DfUVqWaAznJND__Ag
 
 方杰民：Recent Advances and Highlights of NAS
 
+https://mp.weixin.qq.com/s/H30A9cBFkAu4o7amO8SEwg
+
+网络搜索之DARTS, GDAS, DenseNAS, P-DARTS, PC-DARTS
+
 # 图像超分辨率进阶+
 
 https://mp.weixin.qq.com/s/Rr4AKGjZNyV3PDoRBVH-lw

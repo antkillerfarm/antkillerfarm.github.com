@@ -398,6 +398,10 @@ http://phdcomics.com/
 
 一个关于博士学习生活的漫画网站
 
+https://zhuanlan.zhihu.com/p/74249758
+
+陈天奇：机器学习科研的十年
+
 ## 负载均衡
 
 http://blog.csdn.net/gzh0222/article/details/8540604

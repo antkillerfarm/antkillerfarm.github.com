@@ -1,8 +1,50 @@
 ---
 layout: post
-title:  深度学习（十四）——Normalization进阶, Regularization, 图像检索
+title:  深度学习（十四）——Normalization进阶, Regularization
 category: DL 
 ---
+
+# 花式池化
+
+## UnPooling（续）
+
+从上面的描述可以看出，UnPooling不完全是Pooling的逆运算：
+
+1.Pooling之后的feature map，要经过若干运算，才会进行UnPooling操作。
+
+2.对于非Max Location的地方以零填充。然而这样并不能完全还原信息。
+
+参考：
+
+http://blog.csdn.net/u012938704/article/details/52831532
+
+caffe反卷积
+
+## K-max Pooling
+
+![](/images/article/kmax_pooling.png)
+
+## 参考
+
+http://www.cnblogs.com/tornadomeet/p/3432093.html
+
+Stochastic Pooling简单理解
+
+http://mp.weixin.qq.com/s/XzOri12hwyOCdI1TgGQV3w
+
+新型池化层sort_pool2d实现更快更好的收敛：表现优于最大池化层
+
+http://blog.csdn.net/liuchonge/article/details/67638232
+
+CNN与句子分类之动态池化方法DCNN--模型介绍篇
+
+https://mp.weixin.qq.com/s/K1RBux3AfxVFT8_uezYHFA
+
+被Hinton，DeepMind和斯坦福嫌弃的池化，到底是什么？
+
+https://mp.weixin.qq.com/s/J4opJ6NvbTxbHWAWNHEltw
+
+自然语言处理中CNN模型几种常见的Max Pooling操作
 
 # Normalization进阶
 
@@ -247,48 +289,6 @@ $$loss(W;x;y) = loss_D(W;x;y) + \lambda_R R(W) + \lambda_g \sum_{l=1}^{L} R_g(W_
 $$R_g(w^{(g)}) = \sum_{g=1}^{G} \lVert w^{(g)} \rVert_g = \sum_{g=1}^{G} \sum_{i=1}^{|w^{(g)}|} {(w_i^{(g)})}^2$$
 
 Group Regularization也叫做Block Regularization或Structured Regularization。
-
-# 图像检索
-
-## 传统方法
-
-https://mp.weixin.qq.com/s/sM78DCOK3fuG2JrP2QaSZA
-
-SIFT与CNN的碰撞：万字长文回顾图像检索任务十年探索历程（上）
-
-https://mp.weixin.qq.com/s/yzVMDEpwbXVS0y-CwWSBEA
-
-SIFT与CNN的碰撞：万字长文回顾图像检索任务十年探索历程（下）
-
-https://mp.weixin.qq.com/s/Sda94q-40goiZGSYGgm_Yw
-
-基于内容的图像检索技术综述-传统经典方法
-
-https://mp.weixin.qq.com/s/ED-zovVT_vHId4mYXdEo5w
-
-高效大规模图像搜索开源实现
-
-## DL方法
-
-https://zhuanlan.zhihu.com/p/36479489
-
-图像检索：因缘际会与前瞻
-
-https://mp.weixin.qq.com/s/aRndRlVnY5ZRBFnNbVNecg
-
-李飞飞CS231n项目：这两位工程师想用神经网络帮你还原买家秀
-
-https://mp.weixin.qq.com/s/zHSDFR_Nd4LfvIaq9kSrww
-
-BMVC2018图像检索论文—使用区域注意力网络改进R-MAC方法
-
-https://mp.weixin.qq.com/s/FJCZvc8pl-CwFhyiCD6E-g
-
-Pinterest视觉搜索工程师孙彦：视觉搜索不是“鸡肋”
-
-https://mp.weixin.qq.com/s/QgYtfvsLGcfqLA98mp19tg
-
-KDD2018阿里巴巴论文揭示自家大规模视觉搜索算法
 
 # fine-tuning
 

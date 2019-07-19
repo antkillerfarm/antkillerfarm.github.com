@@ -244,6 +244,10 @@ https://mp.weixin.qq.com/s/ueAIT-oAQQPtaPkljOmTwg
 
 超阿里、大华，澎思科技行人再识别（ReID）技术刷新三大数据集记录
 
+https://mp.weixin.qq.com/s/ePh_fdgLBXKujYY6KGESrA
+
+你需要知道的10种行人属性
+
 # 深度ISP
 
 ## 数据集
