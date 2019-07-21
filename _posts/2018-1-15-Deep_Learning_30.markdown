@@ -6,6 +6,18 @@ category: DL
 
 # Graph NN（续）
 
+https://mp.weixin.qq.com/s/7DyPJ9LnqZ9XyAop33SxSw
+
+ST-GCN动作识别算法详解
+
+https://mp.weixin.qq.com/s/fxVsN2dDmayxJfxBRIXHhQ
+
+解读PingSage：图卷积神经网络在数十亿数据网络级别推荐系统的应用
+
+https://mp.weixin.qq.com/s/SWcJut6QqOvbziirxTd2Kg
+
+斯坦福教授ICLR演讲：图网络最新进展GraphRNN和GCPN
+
 https://mp.weixin.qq.com/s/Lakq83_ngUJf1ES3N7J9_g
 
 图卷积在基于骨架的动作识别中的应用

@@ -366,6 +366,10 @@ https://mp.weixin.qq.com/s/Oh2ma7UjQhklE6YBo0EQBA
 
 快速入门Matplotlib教程
 
+https://mp.weixin.qq.com/s/fmoUGFjqlJf46r_iOrg9fA
+
+高效使用Python可视化工具Matplotlib
+
 ## Pandas
 
 Pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。

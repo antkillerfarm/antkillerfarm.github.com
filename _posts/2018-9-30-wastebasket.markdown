@@ -350,6 +350,18 @@ https://mp.weixin.qq.com/s/C83eMExh4Zi3TWD2QhVWsQ
 
 夹逼准则
 
+https://mp.weixin.qq.com/s/lu4wQOIzVtsFvwhO1c2d0A
+
+一大坨泥巴在移动，没人能够阻止它
+
+https://mp.weixin.qq.com/s/R5EonufyiXy8bzD2fddnEg
+
+不喷岩浆喷泥浆，这些火山是要闹哪样？
+
+https://mp.weixin.qq.com/s/S7OmcrLO21PVMyuWin-6Bw
+
+数学上最有趣的数，装得了逼，撩得了妹！
+
 ## Bélády's Algorithm
 
 Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。

@@ -241,3 +241,11 @@ https://mp.weixin.qq.com/s/cNvQy4MW9vHTbUPsrqnUdA
 https://mp.weixin.qq.com/s/umLqkfSDCBUGaEa0yygAIw
 
 有了这款DVD-GAN，DeepMind就生成了逼真视频
+
+https://mp.weixin.qq.com/s/7ygF4zxZxp0Iz7KRDdWebg
+
+R-C3D视频活动检测
+
+https://mp.weixin.qq.com/s/pfAVyS_JQLqsXLYdX2m8IQ
+
+基于深度学习的视频目标检测综述

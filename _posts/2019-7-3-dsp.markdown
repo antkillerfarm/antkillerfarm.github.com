@@ -267,3 +267,7 @@ https://mp.weixin.qq.com/s/Uih8JaRCaeD38o9AoovRmA
 https://mp.weixin.qq.com/s/o9cYmqwuvlbOuUXSNIuicg
 
 十个最常用深度学习图像/视频数据标注工具
+
+https://mp.weixin.qq.com/s/iKXZmhffiYaFHsIU21zVQA
+
+NeuralNLP-NeuralClassifier：腾讯开源深度学习文本分类工具

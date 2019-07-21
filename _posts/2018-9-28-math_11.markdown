@@ -118,7 +118,7 @@ Euclidean Distance（2范数） => 最小二乘法 => 正态分布
 
 Manhattan Distance（1范数） => 拉普拉斯分布
 
-不满足勾股定理的几何，也就是非欧几何。但实际上，Euclid对于其中的特例——球面几何，也有一定的研究。比如，著名的“**球面三角形相似必全等**“，就是他发现的。
+不满足勾股定理的几何，也就是非欧几何。但实际上，Euclid对于其中的特例——球面几何，也有一定的研究。比如，著名的“**球面三角形相似必全等**”，就是他发现的。
 
 # PID算法
 
@@ -243,29 +243,3 @@ Sophus是一个C++写的Lie Groups的库。显然，它得名自Marius Sophus Li
 代码：
 
 https://github.com/strasdat/Sophus
-
-# 莫比乌斯反演
-
-http://blog.csdn.net/acdreamers/article/details/8542292
-
-莫比乌斯反演
-
-http://blog.csdn.net/litble/article/details/72804050
-
-初涉莫比乌斯反演
-
-http://blog.csdn.net/u013632138/article/details/52250567
-
-莫比乌斯反演讲解
-
-http://blog.csdn.net/Ripped/article/details/70263965
-
-莫比乌斯反演详解
-
-http://blog.csdn.net/hzj1054689699/article/details/51659994
-
-莫比乌斯反演入门
-
-http://blog.csdn.net/outer_form/article/details/50588307
-
-莫比乌斯反演定理证明

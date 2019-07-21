@@ -212,6 +212,10 @@ https://mp.weixin.qq.com/s/OCG1TiHl2dsuS24uacQ-MA
 
 参考：
 
+https://github.com/dkozlov/awesome-knowledge-distillation
+
+知识蒸馏从入门到精通
+
 https://zhuanlan.zhihu.com/p/24894102
 
 《Distilling the Knowledge in a Neural Network》阅读笔记

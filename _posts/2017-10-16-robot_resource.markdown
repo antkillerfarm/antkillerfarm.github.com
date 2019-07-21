@@ -40,6 +40,10 @@ https://mp.weixin.qq.com/s/y0HnpWRUBLyEyqzWfOhkCw
 
 Never forget your humanity, and respect human dignity in your dealings with others.---Robert Bosch
 
+https://mp.weixin.qq.com/s/GtAZa5veVKFpQdJgdlMDBg
+
+你不一定知道的博世！
+
 https://mp.weixin.qq.com/s/xgxsmcMAqstzmhTJZFZIyw
 
 特斯拉重磅深度：T E S L A，T-S.E.X.Y
@@ -335,6 +339,10 @@ Apollo高精地图技术与应用
 https://mp.weixin.qq.com/s/BRuT4YtU3D9c2GCeBkqv_w
 
 高精地图，比想象更重要
+
+https://mp.weixin.qq.com/s/GG1V6k3c3Dvfw334jpqNxA
+
+自动驾驶车会看地图吗？它如何认路、找准定位？
 
 ## 路径规划
 

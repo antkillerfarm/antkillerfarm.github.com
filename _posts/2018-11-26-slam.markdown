@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/8KOQYtL8QgCNimGSxA1dgA
 
 视觉惯性里程计(VIO)
 
+https://mp.weixin.qq.com/s/VgHVSecXhBHIdiSnS2MAjg
+
+视觉惯性导航：一个简明的概述
+
 https://zhuanlan.zhihu.com/p/62988961
 
 一起快速上手VINS-Fusion
@@ -253,6 +257,10 @@ https://mp.weixin.qq.com/s/nuJCrfoBGgISsty-YJB-uQ
 https://zhuanlan.zhihu.com/p/73709609
 
 SLAM爱上Deep Learning
+
+https://zhuanlan.zhihu.com/p/71924149
+
+SLAM中面特征的参数化
 
 ## 张正友标定算法
 

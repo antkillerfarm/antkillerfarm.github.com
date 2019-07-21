@@ -70,6 +70,10 @@ https://mp.weixin.qq.com/s/_aIPVnJfTWMkCbh4h6MAEA
 
 PyTorch & PyTorch Geometric图神经网络(GNN)实战
 
+https://mp.weixin.qq.com/s/E8m0bAHxcwHRJQlc3nJhlg
+
+Github火爆图神经网络框架pytorch_geometric原理解析—基于边的高效GNN实现
+
 ## PyTorch-BigGraph
 
 https://mp.weixin.qq.com/s/Ux3_baKdA_Fee-jmcs4Myg
@@ -117,6 +121,10 @@ https://github.com/DeepGraphLearning/LiteratureDL4Graph
 https://github.com/jdlc105/Must-read-papers-and-continuous-tracking-on-Graph-Neural-Network-GNN-progress
 
 Papers on Graph neural network(GNN)
+
+https://github.com/benedekrozemberczki/awesome-graph-classification
+
+图网络大列表
 
 https://mp.weixin.qq.com/s/SW6V-AxGq1z9Uq7qIJLj5A
 
@@ -397,15 +405,3 @@ https://mp.weixin.qq.com/s/UotqgRjCTpjPrsIEWBRPxA
 https://mp.weixin.qq.com/s/t2kjxrcn6O9tbJ-IQELboQ
 
 高君宇：图神经网络在视频分类中的应用
-
-https://mp.weixin.qq.com/s/7DyPJ9LnqZ9XyAop33SxSw
-
-ST-GCN动作识别算法详解
-
-https://mp.weixin.qq.com/s/fxVsN2dDmayxJfxBRIXHhQ
-
-解读PingSage：图卷积神经网络在数十亿数据网络级别推荐系统的应用
-
-https://mp.weixin.qq.com/s/SWcJut6QqOvbziirxTd2Kg
-
-斯坦福教授ICLR演讲：图网络最新进展GraphRNN和GCPN

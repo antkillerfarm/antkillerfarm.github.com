@@ -331,3 +331,7 @@ https://mp.weixin.qq.com/s/1un50xpUf0JGIG03M93gZQ
 https://mp.weixin.qq.com/s/uxuWmcplTmS8cJObd8cfVw
 
 第一次有人把5G核心网讲得如此通俗易懂！
+
+https://mp.weixin.qq.com/s/uYnu7v3w0evrJhTBYjbI_g
+
+啥叫5G超级上行？

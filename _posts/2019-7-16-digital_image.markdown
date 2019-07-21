@@ -321,3 +321,8 @@ https://mp.weixin.qq.com/s/7_mDPCEq3S-843PwUQSwXA
 https://zhuanlan.zhihu.com/p/73748124
 
 多视角立体视觉MVS简介
+
+https://zhuanlan.zhihu.com/p/74085115
+
+深度学习在3-D环境重建中的应用
+
