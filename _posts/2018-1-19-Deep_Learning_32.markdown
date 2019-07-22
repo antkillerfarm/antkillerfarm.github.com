@@ -311,3 +311,7 @@ https://mp.weixin.qq.com/s/sXxUh_9Kd_2BkISHbxL2CA
 https://mp.weixin.qq.com/s/dgDBmjavB0-Rz9VrsJ8vkQ
 
 PointNet
+
+https://zhuanlan.zhihu.com/p/71564244
+
+PointRCNN第一个基于原始点云的3D目标检测

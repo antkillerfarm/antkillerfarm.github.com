@@ -166,7 +166,7 @@ CornerNet认为Two-stage目标检测最明显的缺点是在Region Proposal阶�
 
 ## Hourglass Network
 
-这是CornerNet的骨干部分。详情参见《深度学习（三十五）》。
+这是CornerNet的骨干部分。详情参见《深度学习（十二）》。
 
 ## Bottom-right corners & Top-left Corners Prediction Module
 

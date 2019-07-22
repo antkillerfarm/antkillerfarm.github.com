@@ -258,6 +258,10 @@ https://github.com/ShownX/FacePaperCollection
 
 人脸相关文献代码集锦：人脸检测、人脸识别、人脸生成等
 
+https://zhuanlan.zhihu.com/p/74603794
+
+基于深度学习的人脸检测和识别方法介绍
+
 https://mp.weixin.qq.com/s/__b-7Cl482taXwIVb_9vwQ
 
 以人为本的计算机视觉研究：WIDER Challenge 2019（人脸检测/行人检测/人物检索）

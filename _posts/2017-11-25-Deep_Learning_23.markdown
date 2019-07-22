@@ -196,48 +196,6 @@ https://mp.weixin.qq.com/s/cGKsZYxrVP7hVnv7Jli9Zg
 
 MIT课程全面解读2019深度学习最前沿
 
-# 姿态/行为检测+
-
-https://github.com/sebastianstarke/AI4Animation
-
-Character Animation in Unity 3D using Deep Learning and Artificial Intelligence
-
-https://zhuanlan.zhihu.com/p/48601321
-
-人体关键点检测（pose estimation）性能度量指标（OKS）解析
-
-https://mp.weixin.qq.com/s/6aDSJ6EzAvj71D4qHqQoPw
-
-董峻廷：多视角下多人三维姿态估计
-
-https://mp.weixin.qq.com/s/tEOSPiYvgkaiRjVYLweQ4w
-
-旷视研究院提出TACNet，刷新时空动作检测技术新高度
-
-https://mp.weixin.qq.com/s/j70ohcCod9FCijWL_tquig
-
-腾讯AI Lab联合清华大学提出基于骨骼姿态估计的人体实例分割
-
-https://mp.weixin.qq.com/s/Td510LMs3UWV_8d5kDgFYw
-
-浙大CAD实验室：快速鲁棒的多视角多人三维姿态估计新方法
-
-https://mp.weixin.qq.com/s/Ds5IgmSNuokXDjGXiFhlXQ
-
-条件运动传播：从运动中学习物体性质
-
-https://zhuanlan.zhihu.com/p/65400509
-
-浙大CAD&CG实验室提出PVNet，实时且效果超群，已开源
-
-https://zhuanlan.zhihu.com/p/69177318
-
-通过自适应的图卷积网络建模骨骼点数据进行行为识别
-
-https://mp.weixin.qq.com/s/RBsRXN5ySsty0ZDlUKKQnQ
-
-刷新记录，算法开源！字节跳动获人体姿态估计竞赛双冠
-
 # LSTM进阶
 
 ## 《Long short-term memory》
