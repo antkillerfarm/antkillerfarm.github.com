@@ -77,3 +77,7 @@ https://mp.weixin.qq.com/s/lSkMJTPitiswAp3GV3NDSQ
 https://mp.weixin.qq.com/s/vSa5KSSj_B_2YFNvZuaygQ
 
 规划技术详解——Motion Planning Environment
+
+https://mp.weixin.qq.com/s/E7nxUyX5TjsPnaAovf3PdA
+
+自动驾驶思考：硬件篇

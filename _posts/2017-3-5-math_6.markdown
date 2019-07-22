@@ -96,6 +96,10 @@ https://mp.weixin.qq.com/s/pCDSyFOd7D_pKYYvxEkqwQ
 
 女士品茶的实验、假设和检验
 
+https://mp.weixin.qq.com/s/u30ikol5V9t4eRUNhYtoQg
+
+p值是什么？数据科学家用最简单的方式告诉你
+
 ## KS检验
 
 Kolmogorov–Smirnov test用于对样本是否属于某种分布进行假设检验。
