@@ -326,6 +326,10 @@ https://mp.weixin.qq.com/s/UehKCDiBRnjZWLEcx_iU-g
 
 微软最新提出ObjGAN，输入一句话秒生成图片
 
+https://mp.weixin.qq.com/s/p8K4eixOwCiUkhzntKYa-Q
+
+视觉问答：VQA经典模型Up-Down以及VQA 2017challenge 冠军方案解读
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

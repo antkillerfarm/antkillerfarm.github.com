@@ -348,6 +348,10 @@ https://mp.weixin.qq.com/s/H30A9cBFkAu4o7amO8SEwg
 
 网络搜索之DARTS, GDAS, DenseNAS, P-DARTS, PC-DARTS
 
+https://mp.weixin.qq.com/s/OMzx3nKqn1un2fCZseID2Q
+
+怎样设计最优的卷积神经网络架构？NAS原理剖析
+
 https://mp.weixin.qq.com/s/_31zbbQ5dHf2UaI8GhXozw
 
 4 GPU hours搜索到一个鲁棒的网络结构
