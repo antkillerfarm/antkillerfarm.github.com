@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/xtTmPtjCk4FQuQ3RnPZxEg
 
 UC伯克利黑科技：用语音数据预测说话人手势
 
+https://blog.csdn.net/wangyaninglm/article/details/87296595
+
+指纹的对比分析系统概述
+
 # 语义分割
 
 Semantic segmentation是图像理解的基石性技术，在自动驾驶系统（具体为街景识别与理解）、无人机应用（着陆点判断）以及穿戴式设备应用中举足轻重。

@@ -357,3 +357,7 @@ https://mp.weixin.qq.com/s/7mwJpQFWWXJ3dvTAwDFI7Q
 https://mp.weixin.qq.com/s/2LkpuchuHs82Sxs5rD8bWA
 
 《深度贝叶斯与序列学习》，279页PPT带你知晓深度贝叶斯序列模型在NLP最新进展
+
+https://zhuanlan.zhihu.com/p/74573041
+
+针对推荐系统的深度贝叶斯多目标学习

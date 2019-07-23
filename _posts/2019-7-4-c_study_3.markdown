@@ -126,6 +126,16 @@ https://segmentfault.com/a/1190000006679917
 
 条件变量（Condition Variable）
 
+## explicit
+
+可以通过将构造函数声明为explicit，来防止隐式类型转换。explicit关键字只能用于类内部的构造函数声明上，而不能用在类外部的函数定义上。
+
+参考：
+
+https://www.cnblogs.com/winnersun/archive/2011/07/16/2108440.html
+
+C++中explicit关键字的作用
+
 ## 小细节
 
 对于std::vector来说，begin()/end()返回iterator，而front()/back()返回的是element。
@@ -133,6 +143,18 @@ https://segmentfault.com/a/1190000006679917
 ----
 
 除了for循环遍历之外，C++还可以用std::for_each/std::find_if进行循环遍历，尤其是后者可以用于条件筛选。
+
+----
+
+std::map用二叉树实现，相当于Java中的TreeMap，而std::unordered_map用hash表实现，相当于Java中的HashMap。
+
+C++11之前的一些非标准STL还实现了一种叫做hash_map的容器，原理上也是使用hash表，C++11标准为了不与之前的非标实现冲突，换了个名字而已。
+
+----
+
+map：存储key-value pair。`iterator->first`指向key，而`iterator->second`指向value。
+
+set：只有value。set也有unordered_set这样的变种。
 
 ## 参考
 
