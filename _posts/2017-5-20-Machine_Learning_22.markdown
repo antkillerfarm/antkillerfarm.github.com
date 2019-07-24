@@ -305,6 +305,10 @@ https://mp.weixin.qq.com/s/Pvu7JAHvsGJdL0mJIhVwng
 
 多工序、多机台(产线)环境下的排程要点
 
+https://mp.weixin.qq.com/s/oMiNGJOCqjEHoTmfBQv6EA
+
+使用神经网络为A*搜索算法赋能：以个性化路径推荐为例
+
 # 金融模型
 
 Capital asset pricing model

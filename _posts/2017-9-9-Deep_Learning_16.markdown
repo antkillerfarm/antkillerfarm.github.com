@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十六）——Style Transfer（2）, 人脸检测/识别（1）, SENet, Spatial Transformer Networks
+title:  深度学习（十六）——Style Transfer（2）, 人脸检测/识别（1）, SENet
 category: DL 
 ---
 
@@ -105,6 +105,10 @@ Style transfer的CNN bone也是有讲究的，除了AlexNet之外，还可以使
 https://mp.weixin.qq.com/s/Pub83W6nMM02lEIrsBe49Q
 
 谁说只有VGG才能做风格迁移，ResNet也可以！
+
+## Style transfer的其他用法
+
+使用VGG抽取的所谓纹理信息，也可以用于图像增强领域。具体的做法是将纹理信息作为Loss的一部分。（注意不是Loss的全部，否则就只是Style transfer了）。
 
 ## 参考
 
@@ -307,31 +311,3 @@ https://mp.weixin.qq.com/s/ao7gOfMYDJDPsNMVV9-Dlg
 https://mp.weixin.qq.com/s/Tox7jEFNHFHZQ-KdojMIpA
 
 GCNet：当Non-local遇见SENet
-
-# Spatial Transformer Networks
-
-论文：
-
-《Spatial Transformer Networks》
-
-参考：
-
-http://www.cnblogs.com/neopenx/p/4851806.html
-
-Spatial Transformer Networks(空间变换神经网络)
-
-http://blog.csdn.net/shaoxiaohu1/article/details/51809605
-
-论文笔记：Spatial Transformer Networks
-
-http://blog.csdn.net/shaoxiaohu1/article/details/51809605
-
-Spatial Transformer Networks
-
-https://mp.weixin.qq.com/s/ciqQMezcB-oM24X8eQqTNg
-
-花式玩耍Spatial Transformation Networks
-
-https://mp.weixin.qq.com/s/4VE2lZeFf05AyLp_s3nTFQ
-
-理解Spatial Transformer Networks

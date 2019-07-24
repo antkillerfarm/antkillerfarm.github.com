@@ -246,6 +246,10 @@ https://mp.weixin.qq.com/s/bDu10O1QSgzt2cQaEkGejw
 
 DeepMind爆出无监督表示学习模型BigBiGAN，GAN之父点赞！
 
+https://mp.weixin.qq.com/s/OR1m78VbVxVeJxDIruhhOQ
+
+BigBiGAN的前世今生，走向成熟的特征抽取器
+
 https://mp.weixin.qq.com/s/qdQg3bg-_TXTMTklTSck8Q
 
 Rob-GAN：生成器、鉴别器以及对抗攻击者

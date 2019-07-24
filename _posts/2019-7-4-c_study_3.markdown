@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  C/C++编程心得（三）, boost
+title:  C/C++编程心得（三）
 category: language 
 ---
 
@@ -37,6 +37,78 @@ void f(int n1, int n2, int n3, const int& n4, int n5)
 auto f2 = std::bind(f, _3, std::bind(g, _3), _3, 4, 5);
 f2(10, 11, 12); // 进行到 f(12, g(12), 12, 4, 5); 的调用
 {% endhighlight %}
+
+## 不定参数
+
+{% highlight cpp %}
+int sum(int count, ...)
+{
+    va_list vl;
+    int sum = 0;
+    va_start(vl, count);
+    for (int i = 0; i < count; ++i)
+    {
+        sum += va_arg(vl, int);
+    }
+    va_end(vl);
+    return sum;
+}
+{% endhighlight %}
+
+上面是C风格的变参函数，主要依赖了va_xx系列函数。
+
+{% highlight cpp %}
+template<typename T>
+void Append(Optimizer::Optimizations& optimizations, T&& optimization)
+{
+    optimizations.emplace_back(new T(optimization));
+};
+
+template<typename Front, typename... Others>
+void Append(Optimizer::Optimizations& optimizations, Front&& front, Others&&... others)
+{
+    Append<Front>(optimizations, std::forward<Front>(front));
+    Append<Others...>(optimizations, std::forward<Others>(others)...);
+};
+
+template<typename... Args>
+Optimizer::Optimizations MakeOptimizations(Args&&... args)
+{
+    Optimizer::Optimizations optimizations;
+
+    Append(optimizations, std::forward<Args>(args)...);
+
+    return optimizations;
+}
+{% endhighlight %}
+
+上面是C++风格的变参函数。它主要采用了Parameter pack技术，简单的说就是递归的模板展开。
+
+以上面的函数为例：
+
+1.首先使用第2个模板函数展开函数。
+
+2.在第2个模板函数中调用第1个模板函数，而第1个模板函数不是变参函数，相当于是递归的结尾。
+
+std::tuple、std::bind等的实现都借助了Parameter pack。
+
+在C++17中，还提出一个叫做fold expression的技术。
+
+{% highlight cpp %}
+template<typename ...Args>
+int sum(Args&&... args) {
+//    return (args + ... + 1 * 2); // Error: operator with precedence below cast
+    return (args + ... + (1 * 2)); // OK
+}
+{% endhighlight %}
+
+上述函数是一个对`+`运算符的fold expression。
+
+参考：
+
+https://www.jianshu.com/p/d22904f30930
+
+C++11新特性--不定参数模板与std::tuple、std::bind实现原理
 
 ## 特化（traits）
 
@@ -136,6 +208,54 @@ https://www.cnblogs.com/winnersun/archive/2011/07/16/2108440.html
 
 C++中explicit关键字的作用
 
+## tuple
+
+{% highlight cpp %}
+auto tuple = std::make_tuple(1, 'A', "test");
+std::cout << std::get<0>(tuple) << std::endl;
+std::cout << std::get<1>(tuple) << std::endl;
+std::cout << std::get<2>(tuple) << std::endl;
+{% endhighlight %}
+
+## 模板实参推导
+
+{% highlight cpp %}
+template<typename To, typename From> To convert(From f);
+void g(double d)
+{
+    int i = convert<int>(d);    // 调用 convert<int, double>(double)
+    char c = convert<char>(d);  // 调用 convert<char, double>(double)
+    int(*ptr)(float) = convert; // 实例化 convert<int, float>(float)
+}
+{% endhighlight %}
+
+除了特化模板之外，从函数参数推断模板参数也是可以的，如上例中的模板参数`From`就可以从使用该模板参数的函数参数`f`的类型，倒推出来。
+
+## Defaulted & Deleted
+
+{% highlight cpp %}
+class X{
+public:
+  X(int i){
+   a = i;
+  }
+  X(const X&) = delete;
+  X()=default;
+private:
+ int a;
+};
+
+X x;
+{% endhighlight %}
+
+由于已经有了`X(int i)`，编译器就不会生成默认的`X()`了，因此`X x;`会出错。解决办法是`X()=default;`。
+
+如果想禁用默认函数的话，可以使用`=delete`。上例中，就是禁用默认的拷贝构造函数的示例。
+
+参考：
+
+C++11标准新特性：Defaulted和Deleted函数
+
 ## 小细节
 
 对于std::vector来说，begin()/end()返回iterator，而front()/back()返回的是element。
@@ -143,6 +263,13 @@ C++中explicit关键字的作用
 ----
 
 除了for循环遍历之外，C++还可以用std::for_each/std::find_if进行循环遍历，尤其是后者可以用于条件筛选。
+
+{% highlight cpp %}
+for(auto& item: list)
+{
+  //do sth
+}
+{% endhighlight %}
 
 ----
 
@@ -165,105 +292,3 @@ https://mp.weixin.qq.com/s/Hpn7KqYlBKz0JdryiozqyQ
 https://www.cnblogs.com/wuchanming/p/3913492.html
 
 emplace_back与push_back的区别
-
-# boost
-
-## 安装&编译
-
-boost直接安装：
-
-`sudo apt install libboost-all-dev`
-
-编译：
-
-{% highlight bash %}
-./bootstrap.sh
-./b2 install link=static cxxflags=-fPIC --with-test --prefix=</path/to/install>
-{% endhighlight %}
-
-boost的组件有很多，这里只编译了test组件。
-
->注意：指定生成目录的时候，stage使用stagedir选项，而install使用prefix选项。
-
-## boost.test
-
-boost.test是一个C++的单元测试框架。
-
-代码示例：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cpp/boost_test
-
-要点：
-
-- 测试代码无须main函数。
-
-- 编译：`-DBOOST_TEST_DYN_LINK`
-
-- 链接：`-lboost_unit_test_framework`
-
-打印所有的log：
-
-`unit_test --log_level=all`
-
-参考：
-
-https://www.ibm.com/developerworks/cn/aix/library/au-ctools1_boost/
-
-了解Boost单元测试框架
-
-https://www.ibm.com/developerworks/cn/aix/library/au-ctools2_cppunit/index.html
-
-了解CppUnit
-
-https://www.ibm.com/developerworks/cn/aix/library/au-ctools3_ccptest/
-
-了解CppTest。上面这3篇算是比较权威的C++单元测试工具的教程了，作者都是Arpan Sen。
-
-https://my.oschina.net/vaero/blog/227528
-
-C++单元测试：boost.test
-
-https://remonstrate.wordpress.com/2011/07/06/boost-%e7%9a%84-unit-test/
-
-boost的unit test
-
-## googletest
-
-安装：
-
-`sudo apt install libgtest-dev`
-
-代码：
-
-https://github.com/google/googletest
-
-参考：
-
-https://www.ibm.com/developerworks/cn/aix/library/au-googletestingframework.html
-
-Google C++ Testing Framework简介
-
-https://www.cnblogs.com/coderzh/archive/2009/04/06/1426755.html
-
-玩转Google开源C++单元测试框架Google Test系列(gtest)
-
-## boost::format
-
-{% highlight cpp %}
-cout << boost::format("%1%"
-    "%1t 十进制 = [%2$d]\n"
-    "%1t 格式化的十进制 = [%2$5d]\n"
-    "%1t 格式化十进制，前补'0' = [%2$05d]\n"
-    "%1t 十六进制 = [%2$x]\n"
-    "%1t 八进制 = [%2$o]\n"
-    "%1t 浮点 = [%3$f]\n"
-    "%1t 格式化的浮点 = [%3$3.3f]\n"
-    "%1t 科学计数 = [%3$e]\n"
-    ) % "example :\n" % 15 % 15.01 << endl;
-{% endhighlight %}
-
-参考：
-
-https://www.cnblogs.com/WuErPIng/archive/2005/04/21/142308.html
-
-浅尝boost之format

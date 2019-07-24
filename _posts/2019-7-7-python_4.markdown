@@ -381,3 +381,4 @@ https://github.com/gtk-rs/gtk
 
 示例：
 
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/rust/hello-rust

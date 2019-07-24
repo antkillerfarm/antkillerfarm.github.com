@@ -236,6 +236,10 @@ https://github.com/google/gemmlowp
 
 ## 参考
 
+https://mp.weixin.qq.com/s/M79xGWWtJUB6wBVlHXw8ig
+
+低精度神经网络：从数值计算角度优化模型效率
+
 https://www.chiphell.com/thread-1620755-1-1.html
 
 新Titan X的INT8计算到底是什么鬼

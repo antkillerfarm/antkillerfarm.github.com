@@ -366,6 +366,10 @@ https://mp.weixin.qq.com/s/pSUXoLrwQeaxsI2LI-13EA
 
 带你用生活大白话理解NIO
 
+https://www.huaweicloud.com/product/ai-modelarts.html
+
+华为云AI开发平台ModelArts
+
 ## 编译原理
 
 https://zhuanlan.zhihu.com/frozengene

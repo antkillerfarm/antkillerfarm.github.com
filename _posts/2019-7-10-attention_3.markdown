@@ -20,6 +20,10 @@ https://mp.weixin.qq.com/s/1nZV6wXzeIxIAAovFOageA
 
 手把手教你用ELMo模型提取文本特征
 
+https://mp.weixin.qq.com/s/S3dISq03PDXPvFsL4xjzNQ
+
+通俗理解ELMo
+
 ## GPT 2.0
 
 https://mp.weixin.qq.com/s/E7FLbXYvE9irSpJ9Cdx5tg
@@ -385,23 +389,3 @@ https://mp.weixin.qq.com/s/c64XucML13OwI26_UE9xDQ
 https://mp.weixin.qq.com/s/7OYY3L7gL4wVv_EjoosOHA
 
 如何增强Attention Model的推理能力
-
-https://mp.weixin.qq.com/s/9Kt6_DfeYRnhsb10aCSFGw
-
-FAGAN：完全注意力机制（Full Attention）GAN，Self-attention+GAN
-
-https://mp.weixin.qq.com/s/lZOIK5BRXZrmL_Z9crl6sA
-
-机器翻译新突破！“普适注意力”模型：概念简单参数少，性能大增
-
-https://mp.weixin.qq.com/s/JoTzaInn_uAA9oZgMcfskw
-
-计算机视觉技术self-attention最新进展
-
-https://mp.weixin.qq.com/s/jRfOzKO6OlQLokIzipbqUQ
-
-为什么使用自注意力机制？
-
-https://mp.weixin.qq.com/s/_3pA8FZwzegSpyz_cK63BQ
-
-Self-Attention GAN中的self-attention机制

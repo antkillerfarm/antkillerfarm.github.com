@@ -330,6 +330,10 @@ https://mp.weixin.qq.com/s/p8K4eixOwCiUkhzntKYa-Q
 
 视觉问答：VQA经典模型Up-Down以及VQA 2017challenge 冠军方案解读
 
+https://mp.weixin.qq.com/s/hGaX4I_WsPv9P_WAHaDuog
+
+NLP+CV《桥接视觉与语言的研究综述》，带你全面了解视觉+语言最新应用和方法
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

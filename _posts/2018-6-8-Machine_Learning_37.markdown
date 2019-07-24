@@ -388,6 +388,10 @@ https://mp.weixin.qq.com/s/uxi0OTxjmn047fE8nbYplw
 
 推荐系统：石器与青铜时代
 
+https://zhuanlan.zhihu.com/p/74978160
+
+揭开Top-N 经典算法SLIM和FISM之谜
+
 # 强连通分量算法
 
 http://ishare.iask.sina.com.cn/f/34626295.html

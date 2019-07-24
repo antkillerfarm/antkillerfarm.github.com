@@ -94,6 +94,10 @@ https://mp.weixin.qq.com/s/t2bO5A9XCKzXBP5tcS3P-A
 
 智能图像视频编辑，北大教程，400多页PPT
 
+https://mp.weixin.qq.com/s/5covdsSaNBIAqORbtfHa4w
+
+效果超赞服务器挤爆！用GAN生成人像油画火了，带你一秒回到文艺复兴
+
 # 三维处理
 
 https://github.com/timzhang642/3D-Machine-Learning

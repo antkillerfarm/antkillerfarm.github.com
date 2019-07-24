@@ -184,6 +184,10 @@ https://mp.weixin.qq.com/s/1z5RCYyEiHRbaERaXvgwQw
 
 深度学习在自然语言处理中的应用发展史
 
+https://mp.weixin.qq.com/s/D7NqCnHsEHe7Kuv2XzRV-A
+
+《深度自然语言处理的搜索系统》教程, 211页PPT带你从入门到精通
+
 ## 分词
 
 https://mp.weixin.qq.com/s/Xy_jaOex72pLe4wwieKeUg

@@ -144,6 +144,10 @@ https://zhuanlan.zhihu.com/p/71823334
 
 百万级别二次元角色识别数据集
 
+https://mp.weixin.qq.com/s/bOpKXshitpQ1YKE53WUPEw
+
+UCSB等机构提出首个大规模视频语言数据集
+
 ## 人脸/行为
 
 http://blog.csdn.net/wangkr111/article/details/44514097
