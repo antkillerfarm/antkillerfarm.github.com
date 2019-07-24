@@ -374,48 +374,6 @@ https://mp.weixin.qq.com/s/WIjbYMvMis-YBr_ev_wjmQ
 
 霍尔元件及其应用
 
-# ML参考资源
-
-https://mp.weixin.qq.com/s/l4W7qmKJ4Pc-rlF-KvhrPA
-
-机器学习在信用评分卡中的应用
-
-https://mp.weixin.qq.com/s/O3SIexXUeWM1svdI_ygrDg
-
-非精确图匹配方法综述
-
-https://mp.weixin.qq.com/s/vOZust2RceSVoYPH6nauJw
-
-机器学习模型该如何选择和评估？希望这个小册子能帮到你！
-
-https://mp.weixin.qq.com/s/eW3fGJAQQMS12EmmeqZsYQ
-
-如何打开黑盒子模型？41页最新机器学习可解释模型综述论文
-
-https://mp.weixin.qq.com/s/Z1ixoRmUDl17CF4k7JS4zg
-
-浅谈物流网络中的选址规划问题
-
-https://mp.weixin.qq.com/s/voumCoLRPJO2eHFUVGm0PA
-
-理解Scikit-Learn中分类性能度量指标
-
-https://mp.weixin.qq.com/s/JW62V3wBguSPSAkyWKAEpQ
-
-一个数据分析师眼中的数据预测与监控
-
-https://mp.weixin.qq.com/s/Xk1myDvYQxvKKyQ7RKqcyw
-
-机器学习可重复性最佳实践
-
-https://mp.weixin.qq.com/s/tnkS6xtuv29A_TGlPUAxlQ
-
-我猜，每个程序员对着电梯都想过调度算法吧！
-
-https://mp.weixin.qq.com/s/0m5DuJzh92aYUgdiQ3PfIg
-
-数据竞赛大杀器之模型融合(stacking & blending)
-
 # 知名AI公司技术主页
 
 http://uber.ai/

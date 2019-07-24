@@ -367,3 +367,7 @@ https://mp.weixin.qq.com/s/tTtySk3u6m2BGUkDto5Ojw
 https://mp.weixin.qq.com/s/RkRZX_scr__Q_mLPhaaWAA
 
 AMD Zen 2处理器架构为何要如此设计？
+
+https://mp.weixin.qq.com/s/dRv4xWV8laCYBaZ0DwOC3A
+
+如何从零开始设计一颗芯片？

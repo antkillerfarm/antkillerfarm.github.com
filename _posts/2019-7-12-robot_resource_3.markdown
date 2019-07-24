@@ -81,3 +81,7 @@ https://mp.weixin.qq.com/s/vSa5KSSj_B_2YFNvZuaygQ
 https://mp.weixin.qq.com/s/E7nxUyX5TjsPnaAovf3PdA
 
 自动驾驶思考：硬件篇
+
+https://mp.weixin.qq.com/s/jMqkdhtPRUurgC5XRYWqFw
+
+分割驱动下的6D物体姿态估计

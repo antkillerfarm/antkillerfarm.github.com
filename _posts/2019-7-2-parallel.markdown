@@ -239,3 +239,7 @@ https://mp.weixin.qq.com/s/FIWfbCLgckVzeNvfThIl4Q
 https://mp.weixin.qq.com/s/pqxiF6yEZzrw8qXu2hEsaA
 
 单机训练速度提升640倍！独家解读快手商业广告模型GPU训练平台Persia
+
+https://mp.weixin.qq.com/s/Jcz4XWDjMmbhmAiI_zBQXQ
+
+流式计算优化：时效性
