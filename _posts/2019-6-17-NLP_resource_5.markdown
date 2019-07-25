@@ -261,3 +261,7 @@ LSF-SCNN：一种基于CNN的短文本表达模型及相似度计算的全新优
 https://mp.weixin.qq.com/s/9-_Gwzsyk3Z6dItlz5ChrA
 
 句对匹配任务中的样本选择偏差与去偏方法
+
+https://mp.weixin.qq.com/s/0JOHn0EtrwkMgkklda37-A
+
+神经机器阅读理解最新综述：方法和趋势

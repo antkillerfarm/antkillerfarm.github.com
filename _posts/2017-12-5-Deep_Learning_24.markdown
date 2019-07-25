@@ -112,6 +112,10 @@ https://zhuanlan.zhihu.com/p/22334661
 
 深度学习在目标跟踪中的应用
 
+https://mp.weixin.qq.com/s/u2UyeZwWKCQX5iOe6ZUA9w
+
+目标跟踪算法综述
+
 https://mp.weixin.qq.com/s/yunmBZ_5acDZlIN0mLf66g
 
 《视觉跟踪最新方法与趋势》，44页最新综述带你全面了解视觉跟踪领域发展方向

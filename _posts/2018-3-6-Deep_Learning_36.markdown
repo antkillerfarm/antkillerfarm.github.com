@@ -150,6 +150,10 @@ https://mp.weixin.qq.com/s/C0osCg2uNrzJv0kqZohUDg
 
 当经济学遇见搜索引擎，287页教程带你领略最新研究成果
 
+https://mp.weixin.qq.com/s/x2nmmEcsV82dGBJgIj2Znw
+
+可解释性推荐和搜索教程
+
 # Mask R-CNN
 
 Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的网络。它是何恺明2017年的新作。
