@@ -110,6 +110,10 @@ https://zhuanlan.zhihu.com/p/58603276
 
 FPN-目标检测
 
+https://zhuanlan.zhihu.com/p/70523190
+
+总结-CNN中的目标多尺度处理
+
 # RetinaNet
 
 RetinaNet也是Tsung-Yi Lin的作品（2017.8）。

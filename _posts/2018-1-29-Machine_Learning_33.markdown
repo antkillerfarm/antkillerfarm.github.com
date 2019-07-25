@@ -144,3 +144,7 @@ https://zhuanlan.zhihu.com/p/58987388
 https://zhuanlan.zhihu.com/p/73832253
 
 通俗理解高斯过程及其应用
+
+https://zhuanlan.zhihu.com/p/75072046
+
+Gaussian process classification初介绍——回归与分类点点滴滴

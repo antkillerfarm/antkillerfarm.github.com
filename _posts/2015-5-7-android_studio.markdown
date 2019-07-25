@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Android Studio, Java（一）
-category: language 
+title:  Android Studio
+category: technology 
 ---
 
 # Android Studio配置
@@ -257,57 +257,10 @@ OkHttp使用介绍
 
 # ButterKnife
 
-这个开源库可以让我们从大量的findViewById()和setonclicktListener()中解放出来。这里用到了Java的annotation语法。
+这个开源库可以让我们从大量的findViewById()和setOnClickListener()中解放出来。这里用到了Java的annotation语法。
 
 参考：
 
 http://www.cnblogs.com/flyme/p/4517560.html
 
 推荐一个Android开发懒人库--ButterKnife
-
-# Java
-
-## Java反射机制
-
-Java反射机制容许程序在运行时加载、探知、使用编译期间完全未知的classes。参见：
-
-http://blog.csdn.net/yongjian1092/article/details/7364451
-
-反射机制的一个副产品是可以访问私有变量和私有方法。（笔试题的常客）
-
-http://blog.csdn.net/nisaijie/article/details/5692901
-
-## JavaFX
-
-使用Java开发GUI是一个很冷门的技能树，即使是多年的Java程序员，也未必接触过这个领域。我上次接触该技能，还是10年前的AWT时代。
-
-Java的GUI框架，大致有：
-
-1.awt。最古老的框架。
-
-2.swt。Eclipse项目的早期产物，现在Eclipse也不用它了。
-
-2.swing。和swt差不多同时期的东西，Sun的产物。
-
-3.JavaFX。目前最新的GUI框架，其设计思路和实现，均与WPF是同一档次，已经成为官方推荐的标准框架，并集成到JRE中。
-
-## Ubuntu安装Oracle JDK
-
-`sudo apt install software-properties-common`
-
-`sudo add-apt-repository ppa:webupd8team/java`
-
-这一步，可能会出现安装密钥失败的情况。不过不要紧，后面安装jdk的时候，手动选择Yes就可以了。
-
-`sudo apt update`
-
-`sudo apt install oracle-java7-installer`
-
-这样安装之后，还需要设置环境变量JAVA_HOME。（在/etc/profile中）
-
-`export JAVA_HOME=/usr/lib/jvm/default-java/`
-
-`cd /usr/lib/jvm`
-
-`sudo ln -s java-7-oracle default-java`
-

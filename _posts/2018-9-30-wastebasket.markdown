@@ -366,6 +366,10 @@ https://mp.weixin.qq.com/s/KUr8kkHov0XgolEo0y6z8g
 
 不同颜色的尿液颜，是怎么形成的？
 
+https://mp.weixin.qq.com/s/sa7ppdn-KotIz6dB-ZuITA
+
+柏拉图：我参透了爱情，却搞不懂为什么只有五种正多面体！
+
 ## Bélády's Algorithm
 
 Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。
