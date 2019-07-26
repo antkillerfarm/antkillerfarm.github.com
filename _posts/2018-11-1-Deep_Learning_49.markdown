@@ -256,6 +256,14 @@ https://mp.weixin.qq.com/s/SqxooZqSeD3wA4EFK5D3Kg
 
 再生神经网络：利用知识蒸馏收敛到更优的模型
 
+https://zhuanlan.zhihu.com/p/51563760
+
+知识蒸馏（Knowledge Distillation）最新进展（一）
+
+https://zhuanlan.zhihu.com/p/53864403
+
+知识蒸馏（Knowledge Distillation）最新进展（二）
+
 # Fast Image Processing
 
 ![](/images/article/FIP.png)

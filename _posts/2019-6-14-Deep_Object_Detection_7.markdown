@@ -367,3 +367,7 @@ https://mp.weixin.qq.com/s/LtXylKTKsHdjMPw9Q1HyXA
 https://mp.weixin.qq.com/s/Gq3bflJq59Tx-nDCvbweNA
 
 无需预训练分类器，清华&旷视提出专用于目标检测的骨干网络DetNet
+
+https://blog.csdn.net/wq604887956/article/details/83053927
+
+2018小目标检测文章总结

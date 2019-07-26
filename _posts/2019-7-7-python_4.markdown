@@ -317,6 +317,10 @@ https://mp.weixin.qq.com/s/zLTEzMczlrHrX9by0ccp5w
 
 史上最全Python Re模块讲解
 
+https://mp.weixin.qq.com/s/GEn6rmbSfob5W7syf9cnJw
+
+Python实现Word文档操作
+
 # Rust
 
 官网：
