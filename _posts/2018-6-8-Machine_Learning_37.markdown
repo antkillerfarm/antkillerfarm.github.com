@@ -390,7 +390,11 @@ https://mp.weixin.qq.com/s/uxi0OTxjmn047fE8nbYplw
 
 https://zhuanlan.zhihu.com/p/74978160
 
-揭开Top-N 经典算法SLIM和FISM之谜
+揭开Top-N经典算法SLIM和FISM之谜
+
+https://mp.weixin.qq.com/s/S9-GgQTlx2c14mN_3kNQiQ
+
+基于标签的实时短视频推荐系统
 
 # 强连通分量算法
 

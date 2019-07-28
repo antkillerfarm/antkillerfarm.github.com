@@ -320,6 +320,14 @@ https://mp.weixin.qq.com/s/e4dgIdwzDzcLSkdgr1yZpg
 
 LeCun力荐：Facebook推出十亿参数超大容量存储器
 
+https://mp.weixin.qq.com/s/zXXtbuSvyMOkgrWJwB83kg
+
+预训练语言模型的最新探索
+
+https://mp.weixin.qq.com/s/WzGa5XVi2Op4Lz-1uQXfxQ
+
+SpanBERT：提出基于分词的预训练模型，多项任务性能超越现有模型！
+
 # Attention进阶
 
 https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA

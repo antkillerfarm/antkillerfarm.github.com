@@ -359,3 +359,7 @@ https://mp.weixin.qq.com/s/bb3ZsXtiRmPvzQ-lfSXrZQ
 https://mp.weixin.qq.com/s/2pJt9hlUFhR6mo1ughKkiA
 
 超全深度学习细粒度图像分析：项目、综述、教程一网打尽
+
+https://mp.weixin.qq.com/s/jyIrREnJQv4mW-H9ghO7_A
+
+细粒度图像分类是什么，有什么方法，发展的怎么样

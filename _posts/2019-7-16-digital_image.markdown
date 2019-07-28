@@ -326,3 +326,6 @@ https://zhuanlan.zhihu.com/p/74085115
 
 深度学习在3-D环境重建中的应用
 
+https://mp.weixin.qq.com/s/k9gff0Ote_V9qtN7HAruBA
+
+工业相机的sensor

@@ -124,6 +124,10 @@ XLORE是融合中英文维基、法语维基和百度百科，对百科知识进
 
 ## 参考
 
+https://github.com/lihanghang/Knowledge-Graph
+
+知识图谱深度学习相关资料整理
+
 https://mp.weixin.qq.com/s/aLljr0R5w7OcidbXf71FQw
 
 知识图谱火了，但你知道它的发展历史吗？
@@ -180,6 +184,22 @@ https://mp.weixin.qq.com/s/JZYH_m1eS93KRjkWA82GoA
 
 复旦肖仰华：基于知识图谱的问答系统
 
+https://mp.weixin.qq.com/s?__biz=MjM5ODYwNDUyMQ==&mid=2649658169&idx=1&sn=88392dc21eda4019ade216f8e937bd71
+
+肖仰华：基于知识图谱的可解释人工智能：机遇与挑战
+
+https://mp.weixin.qq.com/s/C1kd8pD0yLu9nO9JVW1pEw
+
+复旦大学肖仰华教授：知识图谱与认知智能
+
+https://mp.weixin.qq.com/s/XTJ0t39SbeIDXtseCUcDBA
+
+复旦大学肖仰华：领域知识图谱落地实践中的问题与对策
+
+https://mp.weixin.qq.com/s/Am9gHuMaYnH_tFmnTSrBQQ
+
+肖仰华教授：知识图谱落地的基本原则与最佳实践
+
 https://mp.weixin.qq.com/s/cL1aKdu8ig8-ocOPirXk2w
 
 如何构建知识图谱
@@ -207,10 +227,6 @@ https://mp.weixin.qq.com/s/Nh7XJOLNBDdpibopVG4MrQ
 https://zhuanlan.zhihu.com/p/30320631
 
 知识图谱向量化表示及其在推荐系统上的应用
-
-https://mp.weixin.qq.com/s?__biz=MjM5ODYwNDUyMQ==&mid=2649658169&idx=1&sn=88392dc21eda4019ade216f8e937bd71
-
-肖仰华：基于知识图谱的可解释人工智能：机遇与挑战
 
 http://www.bigcilin.com/
 
@@ -267,10 +283,6 @@ UCSB提出变分知识图谱推理：在KG中引入变分推理框架
 https://blog.csdn.net/hadoopdevelop/article/details/79784722
 
 基于知识图谱的智能问答机器人技术架构
-
-https://mp.weixin.qq.com/s/C1kd8pD0yLu9nO9JVW1pEw
-
-复旦大学肖仰华教授：知识图谱与认知智能
 
 https://mp.weixin.qq.com/s/SrhACueWelBAGU4sC2nBtg
 
@@ -344,10 +356,6 @@ https://mp.weixin.qq.com/s/kTrBLTH46KtfcAK4aZ2H0A
 
 请查收本周份“知识图谱”专题论文解读
 
-https://mp.weixin.qq.com/s/XTJ0t39SbeIDXtseCUcDBA
-
-复旦大学肖仰华：领域知识图谱落地实践中的问题与对策
-
 https://mp.weixin.qq.com/s/4huHklyr_H6fFDb6VJ7ozw
 
 知识图谱的前世今生：为什么我们需要知识图谱？
@@ -395,19 +403,3 @@ https://zhuanlan.zhihu.com/p/46235742
 https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750713&idx=3&sn=cb51e094fe07e9ac25273e99cd7b8de3
 
 ISWC 2018概览：知识图谱与机器学习
-
-https://mp.weixin.qq.com/s/0irBgfodvba5znu96caZuQ
-
-当知识图谱遇上文本智能处理，会擦出怎样的火花？
-
-https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651749250&idx=1&sn=6f382206bed8d5e79999a8c957857ba5
-
-美团大脑：知识图谱的建模方法及其应用
-
-https://mp.weixin.qq.com/s/bRZLHO4CJabaPMqYLW-_1g
-
-从零到一学习知识图谱的技术与应用
-
-https://mp.weixin.qq.com/s/98lkCQT4rKME6PavCI0Mkg
-
-Bengio研究组最新论文：图谱注意力网络GAT，以图谱做输入做深度学习

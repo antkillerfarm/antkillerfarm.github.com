@@ -210,6 +210,10 @@ https://mp.weixin.qq.com/s/z7BlFHfStYEtNzl1EorokA
 
 文章太长不想看？ML文本自动摘要了解一下
 
+https://mp.weixin.qq.com/s/gDZyTbM1nw3fbEnU--y3nQ
+
+Python利用深度学习进行文本摘要的综合指南
+
 ## 句法分析
 
 传统方法主要是PCFG （Probabilistic Context-Free Grammar）。
@@ -251,6 +255,10 @@ https://mp.weixin.qq.com/s/CxpyMUPnKFCTpw6WgG0kqg
 https://mp.weixin.qq.com/s/kdbaMyDLC5YaOMqTAOyLAg
 
 斯坦福陈丹琦博士论文：神经网络阅读理解与更多（附156页pdf）
+
+https://chendq-thesis-zh.readthedocs.io/en/latest/
+
+陈丹琦博士论文翻译：Neural Reading Comprehension and Beyond
 
 https://mp.weixin.qq.com/s/7UnUedr8tapwFeRnHVOkjA
 

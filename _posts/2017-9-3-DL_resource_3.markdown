@@ -306,6 +306,10 @@ https://github.com/zhpmatrix/nlp-competitions-list-review
 
 NLP比赛TOP方案汇总
 
+https://mp.weixin.qq.com/s/H1pr2ESCaGV67VKzKMZn9A
+
+eBay高精度召回任务挑战赛冠军团队DeepBlueAI技术分享
+
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA

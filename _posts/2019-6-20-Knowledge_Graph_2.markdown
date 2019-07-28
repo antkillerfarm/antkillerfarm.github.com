@@ -6,6 +6,22 @@ category: resource
 
 # 知识图谱参考资源
 
+https://mp.weixin.qq.com/s/0irBgfodvba5znu96caZuQ
+
+当知识图谱遇上文本智能处理，会擦出怎样的火花？
+
+https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651749250&idx=1&sn=6f382206bed8d5e79999a8c957857ba5
+
+美团大脑：知识图谱的建模方法及其应用
+
+https://mp.weixin.qq.com/s/bRZLHO4CJabaPMqYLW-_1g
+
+从零到一学习知识图谱的技术与应用
+
+https://mp.weixin.qq.com/s/98lkCQT4rKME6PavCI0Mkg
+
+Bengio研究组最新论文：图谱注意力网络GAT，以图谱做输入做深度学习
+
 https://mp.weixin.qq.com/s/Yg-ggqTg5HlcvrH9BKC0YA
 
 最新知识图谱论文清单

@@ -86,6 +86,10 @@ https://mp.weixin.qq.com/s/jMqkdhtPRUurgC5XRYWqFw
 
 分割驱动下的6D物体姿态估计
 
+https://mp.weixin.qq.com/s/OHZl3KHfhh7i_EJ9pDvBPg
+
+V2X技术发展历程及应用研究
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。

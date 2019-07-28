@@ -1,229 +1,235 @@
 ---
 layout: post
-title:  深度学习（四十）——模型压缩与加速（1）
+title:  深度学习（四十）——行人重识别
 category: DL 
 ---
 
-# 模型压缩与加速
+# 行人重识别
 
-## 参考
+行人重识别（Person re-identification）也称行人再识别，是利用计算机视觉技术判断图像或者视频序列中是否存在特定行人的技术。广泛被认为是一个图像检索的子问题。给定一个监控行人图像，检索跨设备下的该行人图像。旨在弥补目前固定的摄像头的视觉局限，并可与行人检测/行人跟踪技术相结合，可广泛应用于智能视频监控、智能安保等领域。
 
-https://mp.weixin.qq.com/s/yp5gExPzpDiXaGk9oXEMVA
+参考：
 
-最新综述：模型压缩与加速
+https://github.com/gjy3035/Awesome-Crowd-Counting
 
-https://github.com/memoiry/Awesome-model-compression-and-acceleration
+人群计数最全代码、数据、论文合集
 
-模型压缩与加速相关资源汇总
+https://mp.weixin.qq.com/s/ZmX_ir1pSUZbCaFpbcQ6Lw
 
-https://blog.csdn.net/hw5226349/article/details/84888416
+一文读懂行人检测算法
 
-Deep Compression/Acceleration：模型压缩加速论文汇总
+https://zhuanlan.zhihu.com/p/26168232
 
-https://mp.weixin.qq.com/s/bndECrtEcNCkCF5EG0wO-A
+行人重识别：从哈利波特地图说起
 
-移动端机器学习资源合集
+https://zhuanlan.zhihu.com/p/50387521
 
-https://zhuanlan.zhihu.com/p/58805980
+从零开始行人重识别
 
-深度学习的模型加速与模型裁剪方法
+https://mp.weixin.qq.com/s/_NDw7pFmDB07mliHTA6VYQ
 
-https://mp.weixin.qq.com/s/pAEoVs8xu0SY9tfBqOJHHA
+旷视行人再识别（ReID）突破
 
-Google DeepMind最新报告—深度神经网络压缩进展
+https://zhuanlan.zhihu.com/p/31181247
 
-https://mp.weixin.qq.com/s/PraNMo4skR-VjEYIIqt1Cw
+从人脸识别到行人重识别，下一个风口
 
-深度学习模型压缩与加速综述
+https://mp.weixin.qq.com/s/zRdJktyk1LZWUd2cyTjpiw
 
-http://blog.csdn.net/shuzfan/article/details/51383809
+基于图像检索的行人重识别
 
-神经网络压缩：Deep Compression
+https://zhuanlan.zhihu.com/p/31921944
 
-https://mp.weixin.qq.com/s/2NOFyu_twx1EciDeDPBLKw
+基于深度学习的行人重识别研究综述
 
-深度神经网络加速与压缩
+https://zhuanlan.zhihu.com/p/31473785
 
-https://www.zhihu.com/question/50519680
+行人再识别中的迁移学习：图像风格转换
 
-如何理解soft target这一做法？
+https://mp.weixin.qq.com/s/fX94rPgNHrOaQTqBv-ZADg
 
-https://mp.weixin.qq.com/s/0KlnQ8UUxpyhBRdeo0EOAA
+基于视频的行人再识别新进展：区域质量估计方法和高质量的数据集
 
-用于网络压缩的滤波器级别剪枝算法ThiNet
+https://mp.weixin.qq.com/s/rf-pGfkQFK3abkOLEEVOeA
 
-https://mp.weixin.qq.com/s/lO2UM04PfSM5VJYh6vINhw
+PTGAN：针对行人重识别的生成对抗网络
 
-为模型减减肥：谈谈移动／嵌入式端的深度学习
+https://zhuanlan.zhihu.com/p/34778414
 
-https://mp.weixin.qq.com/s/cIGuJvYr4lZW01TdINBJnA
+基于时空模型无监督迁移学习的行人重识别
 
-深度压缩网络：较大程度减少了网络参数存储问题
+https://zhuanlan.zhihu.com/p/35296881
 
-https://mp.weixin.qq.com/s/1JwLP0FmV1AGJ65iDgLWQw
+刷新三数据集纪录的跨镜追踪(行人再识别-ReID)技术介绍
 
-神经网络模型压缩技术
+https://mp.weixin.qq.com/s/ZbmJGO3lqwNM2z-E4_Mpbw
 
-https://mp.weixin.qq.com/s/Xqc4UgcfCUWYOeGhjNpidA
+由“刷脸”到“识人”，云从科技刷新跨镜追踪(ReID)技术三项世界纪录！
 
-CNN模型压缩与加速算法综述
+https://zhuanlan.zhihu.com/p/38603624
 
-https://mp.weixin.qq.com/s/rzv8VCAxBQi0HsUcnLqqUA
+云从科技资深算法研究员：详解跨镜追踪(ReID)技术实现及难点
 
-处理移动端传感器时序数据的深度学习框架：DeepSense
+https://mp.weixin.qq.com/s/leuILzYz40PqrwsCatYhPw
 
-https://mp.weixin.qq.com/s/UYk3YQmFW7-44RUojUqfGg
+2018行人再识别年度进展
 
-上交大ICCV：精度保证下的新型深度网络压缩框架
+https://zhuanlan.zhihu.com/p/64004977
 
-https://mp.weixin.qq.com/s/ZuEi32ZBSjruvtyUimBgxQ
+2019行人再识别年度进展回顾
 
-揭秘支付宝中的深度学习引擎：xNN
+https://zhuanlan.zhihu.com/p/37931822
 
-http://mp.weixin.qq.com/s/iapih9Mme-VKCfsFCmO7hQ
+你需要知道的10种行人属性
 
-简单聊聊压缩网络
+https://mp.weixin.qq.com/s/YBorhQrJ0UL3HZQHgd5D6A
 
-https://mp.weixin.qq.com/s/3qstz-KoRuxwpmfE4XDI-Q
+清华等机构提出基于内部一致性的行人检索方法，实现当前最优
 
-面向卷积神经网络的卷积核冗余消除策略
+https://zhuanlan.zhihu.com/p/40514536
 
-https://mp.weixin.qq.com/s/dEdWz4bovmk65fwLknHBhg
+一个强力的ReID basemodel
 
-韩松毕业论文：面向深度学习的高效方法与硬件
+https://mp.weixin.qq.com/s/mktVMZ0Fdo0mubstpl2GDA
 
-https://mp.weixin.qq.com/s/GFE2XYHZXPP0doQ5nd0JNQ
+Repulsion loss：专注于遮挡情况下的行人检测
 
-当前深度神经网络模型压缩和加速方法速览
+https://mp.weixin.qq.com/s/LZCYx-VyOAMWXBS76ttkFw
 
-https://mp.weixin.qq.com/s/Faej1LKqurtwEIreUVJ0cw
+如何在不同摄像头里识别行人？多层相似度感知CNN网络解析
 
-普林斯顿新算法自动生成高性能神经网络，同时超高效压缩
+https://mp.weixin.qq.com/s/iUPZ4DfL65_NV2v3eWomww
 
-https://mp.weixin.qq.com/s/uK-HasmiavM3jv6hNRY11A
+无监督深度关联学习大幅提高行人重识别性能
 
-深度梯度压缩：降低分布式训练的通信带宽
+https://mp.weixin.qq.com/s/Wj6RBS7gYd9skE3AU1s4Qg
 
-https://mp.weixin.qq.com/s/_MDbbGzDOGHk5TBgbu_-oA
+尺度不变提升人群计数性能
 
-中大商汤等提出深度网络加速新方法，具有强大兼容能力
+https://mp.weixin.qq.com/s/3eLL5Xg2mBFWnbYFbW486A
 
-https://mp.weixin.qq.com/s/gbOmpP7XO1Hz_ld4iSEsrw
+行人检测全新视角：从人体中轴线标注出发
 
-三星提出移动端神经网络模型加速框架DeepRebirth
+https://mp.weixin.qq.com/s/VwejfjxjVnGFW3WXXyL1og
 
-https://mp.weixin.qq.com/s/rTFLiZ7DCo6vzD5O64UnMQ
+ALFNet：向高效行人检测迈进
 
-阿里提出新神经网络算法，压缩掉最后一个比特
+https://mp.weixin.qq.com/s/3gzlln0yqqXQ6Xbwt-VXjw
 
-https://mp.weixin.qq.com/s/f1SCK0J5oTWNJvtld3UAHQ
+OR-CNN行人检测：为‘遮挡’而生
 
-神经网络修剪最新研究进展
+https://mp.weixin.qq.com/s/yrygkZUwsCL-twTFvA--1w
 
-https://mp.weixin.qq.com/s/3oL0Bso3mwbsfaG8X5-xoA
+尺度不变网络提升人群计数性能
 
-英特尔提出新型压缩技术DeepThin，适合移动端设备深度神经网络
+https://mp.weixin.qq.com/s/K7JNqjuUfotTODtJU1W-YQ
 
-https://mp.weixin.qq.com/s/JnW7RnOQKG-dPOOAQeOmSA
+快速精准的人头检测，代码已开源
 
-当前深度神经网络模型压缩和加速都有哪些方法？
+https://mp.weixin.qq.com/s/DZmAWpptAVIqA_7L24ldHg
 
-https://mp.weixin.qq.com/s/YUg2dZZhDSsRpSftdNfiIQ
+行人重识别PCB-RPP，SGGNN
 
-极致的优化：智能手机是如何处理大型神经网络的
+https://mp.weixin.qq.com/s/e_n-BsPkrPd4MsyvlMVeYg
 
-https://mp.weixin.qq.com/s/Ck_GDv1Xo-YMZcu-00gTOA
+行人重识别告别辅助姿势信息，商汤、中科大提出姿势无关的特征提取GAN
 
-中星微夺冠国际人工智能算法竞赛，目标检测一步法精度速度双赢
+https://mp.weixin.qq.com/s/l8ExvxOERUngHBqtep-ZWw
 
-https://mp.weixin.qq.com/s/qWJarPrjOrwxSX77xQ9rCw
+人群计数（Crowd Counting）研究综述
 
-面向卷积神经网络的卷积核冗余消除策略
+https://zhuanlan.zhihu.com/p/51511683
 
-https://mp.weixin.qq.com/s/QSGgvhkMUj3cXVlQwlzTFQ
+Graph Reid系列结合谱聚类做特征变换
 
-深度神经网络加速和压缩新进展年度报告
+https://zhuanlan.zhihu.com/p/47073533
 
-https://zhuanlan.zhihu.com/p/37074222
+结合时空的Re-ID系列：ECCV2018 TAUDL
 
-CVPR 2018 高效小网络探密（上）
+https://mp.weixin.qq.com/s/eKHL0F3tnjEHY10d5PqkMg
 
-https://zhuanlan.zhihu.com/p/37919669
+最新Video-based ReID论文核心解读
 
-CVPR 2018 高效小网络探密（下）
+https://mp.weixin.qq.com/s/iotqiyRrH4kwWmBvYi-tMQ
 
-https://zhuanlan.zhihu.com/p/38046989
+中科院&地平线开源state-of-the-art行人重识别算法EANet:增强跨域行人重识别中的部件对齐
 
-从ISCA论文看AI硬件加速的新技巧
+https://zhuanlan.zhihu.com/p/54576174
 
-https://mp.weixin.qq.com/s/jqRBrs9Y_-3qvemL0RTflA
+行人重识别新任务：训练只需一张标注图片
 
-支付宝如何优化移动端深度学习引擎？
+https://zhuanlan.zhihu.com/p/52274204
 
-https://mp.weixin.qq.com/s/-V6hlZAKp1vuARSibZDBQQ
+AAAI2019 Spatial-Temporal Person Re-identification
 
-深度学习高效计算与处理器设计
+https://zhuanlan.zhihu.com/p/55320029
 
-https://mp.weixin.qq.com/s/NJzGR-tY_WWeccbdshHckA
+行人跨模态重识别：双向限制的排序损失
 
-基于交错组卷积的高效深度神经网络
+https://zhuanlan.zhihu.com/p/55787893
 
-https://mp.weixin.qq.com/s/ccFccLb2UTyFyMwFPjsDaA
+亚马逊提出：用于人群计数的尺度感知注意力网络
 
-让CNN跑得更快，腾讯优图提出全局和动态过滤器剪枝
+https://mp.weixin.qq.com/s/U-ICoZQWatyJmkPcnXNRbA
 
-https://mp.weixin.qq.com/s/vswtn3D1-VZZlyKLJmHc7A
+最新最简易的迁移学习方法，人员再识别新模型
 
-纪荣嵘：深度神经网络压缩及应用
+https://mp.weixin.qq.com/s/ajpxP3b5nw2AC393uBypvA
 
-https://mp.weixin.qq.com/s/cSYCT1I1asaSCIc5Hgu0Jw
+西工大开源拥挤人群数据集生成工具，大幅提升算法精度
 
-计算成本降低35倍！谷歌发布手机端自动设计神经网络MnasNet
+https://mp.weixin.qq.com/s/BDgIf6foDGtCNc48JPqrcg
 
-https://zhuanlan.zhihu.com/p/42474017
+行人重识别算法优化技巧：Bags of Tricks and A Strong Baseline
 
-MnasNet：终端轻量化模型新思路
+https://mp.weixin.qq.com/s/FEJDrCvXcnhl5y7KR8EXKw
 
-https://mp.weixin.qq.com/s/p_qdKcQwQ8y_JUw3gQUEnA
+行人检测新思路：高级语义特征检测取得精度新突破
 
-谷歌大脑用强化学习为移动设备量身定做最好最快的CNN模型
+https://mp.weixin.qq.com/s/BYAmDulUKJLE-rb-Kh8Xmg
 
-https://mp.weixin.qq.com/s/OyEIcS5o6kWUu2UzuWZi3g
+CSP行人检测：无锚点框的检测新思路
 
-这么Deep且又轻量的Network，实时目标检测
+https://mp.weixin.qq.com/s/FodjDqc30XuT4fV3XPVy8g
 
-https://mp.weixin.qq.com/s/mWfZ4jfuby4myGfi6TW3wQ
+一个更加强力的ReID Baseline
 
-从超参数到架构，一文简述模型优化策略
+https://mp.weixin.qq.com/s/zUcLZ41mse7qRqZgXlMvvg
 
-https://mp.weixin.qq.com/s/8NDOf_8qxMMpcuXIZGJCGg
+C3F：首个开源人群计数算法框架
 
-Google又发大招：高效实时实现视频目标检测
+https://mp.weixin.qq.com/s/51X7NIS1UEXJ1sqx54tuwg
 
-https://mp.weixin.qq.com/s/_JlaxwEYqdTTuS4hNSQTTw
+NVIDIA/悉尼科技大学/澳洲国立大学新作：用GAN生成高质量行人图像，辅助行人重识别
 
-这么Deep且又轻量的Network，实时目标检测
+https://mp.weixin.qq.com/s/JbZblzgLyHBQxP9AecLZbA
 
-https://mp.weixin.qq.com/s/IxVMMu_7UL5zFsDCcYfzYA
+旷视研究院提出Re-ID新方法VPM，优化局部成像下行人再识别
 
-AutoML自动模型压缩再升级，MIT韩松团队利用强化学习全面超越手工调参
+https://zhuanlan.zhihu.com/p/69559437
 
-https://mp.weixin.qq.com/s/fU-AeaPz-lHlg0CBgqnpZQ
+基于自然语言的跨模态行人re-id的SOTA方法简述（上）
 
-轻量化神经网络综述
+https://mp.weixin.qq.com/s/RBfHrvkZlx90RM1Ohd6m9g
 
-https://mp.weixin.qq.com/s/BMsvhXytSy2nWIsGOSOSBQ
+一种行人重识别监督之下的纹理生成网络
 
-自动生成高效DNN，适用于边缘设备的生成合成工具FermiNets
+https://mp.weixin.qq.com/s/PfhhqW3e2miMVrIA2saeCg
 
-https://mp.weixin.qq.com/s/nEMvoiqImd0RxrskIH7c9A
+英伟达开源行人生成/重识别代码
 
-仅17KB、一万个权重的微型风格迁移网络！
+https://mp.weixin.qq.com/s/nY3NMCeP6yadJrRdSWM1WA
 
-https://mp.weixin.qq.com/s/pc8fJx5StxnX9it2AVU5NA
+基于密集语义对齐的行人重识别模型：有效解决语义不对齐
 
-基于手机系统的实时目标检测
+https://zhuanlan.zhihu.com/p/72693526
 
-https://mp.weixin.qq.com/s/6wzmyhIvUVeAN4Xjfhb1Yw
+SPGAN--ReID
 
-论文解读：Channel pruning for Accelerating Very Deep Neural Networks
+https://mp.weixin.qq.com/s/ueAIT-oAQQPtaPkljOmTwg
+
+超阿里、大华，澎思科技行人再识别（ReID）技术刷新三大数据集记录
+
+https://mp.weixin.qq.com/s/ePh_fdgLBXKujYY6KGESrA
+
+你需要知道的10种行人属性

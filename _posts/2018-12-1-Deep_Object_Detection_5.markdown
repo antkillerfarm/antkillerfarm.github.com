@@ -202,6 +202,10 @@ https://mp.weixin.qq.com/s/2aeBBjCbWdweYmNrTaWqqw
 
 一文看尽目标检测：从YOLO v1到v3的进化之路
 
+https://mp.weixin.qq.com/s/fDOskKqG-fsJmhT0-tdtTg
+
+SlimYOLOv3：更窄、更快、更好的无人机目标检测算法
+
 # Tiny-YOLO
 
 YOLO系列还包括了一个速度更快但精度稍低的嵌入式版本系列——Tiny-YOLO。

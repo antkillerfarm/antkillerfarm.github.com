@@ -122,9 +122,9 @@ http://mp.weixin.qq.com/s/IWagHP0MSQFAJ50NeoyOjw
 
 ## NLP的女学霸们
 
-http://cs.stanford.edu/people/danqi/
+https://www.cs.princeton.edu/~danqic/
 
-陈丹琦，清华本科（姚班）（2012）+斯坦福博士生。
+陈丹琦，清华本科（姚班）（2012）+斯坦福博士（2018）。Princeton AP。
 
 http://theory.stanford.edu/~yuhch123/
 
@@ -182,9 +182,9 @@ https://github.com/largelymfs/topical_word_embeddings
 
 参见：
 
-http://nlp.csai.tsinghua.edu.cn/~zm/
+https://zmlarry.github.io
 
-张檬，清华本科（2013）+博士（在读）。
+张檬，清华本科（2013）+博士（2018）。
 
 # Image Caption Generation
 

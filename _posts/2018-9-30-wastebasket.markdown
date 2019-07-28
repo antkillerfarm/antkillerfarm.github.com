@@ -370,6 +370,14 @@ https://mp.weixin.qq.com/s/sa7ppdn-KotIz6dB-ZuITA
 
 柏拉图：我参透了爱情，却搞不懂为什么只有五种正多面体！
 
+https://mp.weixin.qq.com/s/IcY_RfIpioEBC493bEtUdw
+
+计算机鼻祖的鼻祖-差分机：机械史上的最强大脑，最复杂的巅峰之作
+
+https://mp.weixin.qq.com/s/_wEKKLg_zYOrDmGjkVGVRw
+
+美国高校风靡一时的数学游戏，比黎曼猜想更硬核，至今仍是未解之谜（冰雹猜想）
+
 ## Bélády's Algorithm
 
 Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。

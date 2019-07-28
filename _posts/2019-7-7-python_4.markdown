@@ -117,6 +117,10 @@ https://github.com/leisurelicht/wtfpython-cn
 
 《What the f*ck Python!》中文版
 
+https://mp.weixin.qq.com/s/FbMvWgVf1rYtWH4cwYarIg
+
+140种Python标准库、第三方库和外部工具都有了
+
 https://mp.weixin.qq.com/s/-CaMHjsY580et8Hh_D2FSg
 
 简约而不简单的Django新手图文教程
@@ -320,6 +324,10 @@ https://mp.weixin.qq.com/s/zLTEzMczlrHrX9by0ccp5w
 https://mp.weixin.qq.com/s/GEn6rmbSfob5W7syf9cnJw
 
 Python实现Word文档操作
+
+https://mp.weixin.qq.com/s/QatY21HxcYHqV2WZ8gc0_g
+
+Python中的异常处理
 
 # Rust
 

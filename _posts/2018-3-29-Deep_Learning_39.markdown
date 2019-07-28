@@ -249,3 +249,7 @@ R-C3D视频活动检测
 https://mp.weixin.qq.com/s/pfAVyS_JQLqsXLYdX2m8IQ
 
 基于深度学习的视频目标检测综述
+
+https://mp.weixin.qq.com/s/N6nL9D1wjsBNzxedXX3qNQ
+
+Hulu在视频内容理解上的应用和最佳实践

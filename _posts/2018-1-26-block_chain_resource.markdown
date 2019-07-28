@@ -374,6 +374,10 @@ https://mp.weixin.qq.com/s/WIjbYMvMis-YBr_ev_wjmQ
 
 霍尔元件及其应用
 
+https://mp.weixin.qq.com/s/vbTR1A0rgzCQY8XG70SNPQ
+
+了不起的MEMS发明人
+
 # 知名AI公司技术主页
 
 http://uber.ai/

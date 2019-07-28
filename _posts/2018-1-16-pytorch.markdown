@@ -370,6 +370,10 @@ https://mp.weixin.qq.com/s/EXuFXbPBIbzTyi0fUjvvPw
 
 两行代码统计模型参数量与FLOPs，这个PyTorch小工具值得一试
 
+https://zhuanlan.zhihu.com/p/73711222
+
+巧用torch.backends.cudnn.benchmark减少训练时间
+
 # 超算
 
 ![](/images/img3/power.aug.gif)

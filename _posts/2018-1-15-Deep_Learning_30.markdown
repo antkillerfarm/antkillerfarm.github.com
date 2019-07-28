@@ -323,6 +323,10 @@ https://mp.weixin.qq.com/s/rZdd-vWlicynthaSasX3kQ
 
 Meta Learning入门：MAML 和 Reptile
 
+https://mp.weixin.qq.com/s/MsIAkJAcYHWkkMjzd7qXKA
+
+元学习与强化学习的概率视角，47页ppt，DeepMind牛津Yee Whye Teh
+
 # 深度哈希
 
 https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg

@@ -299,3 +299,7 @@ UCB: Full Stack Deep Learning。这个课程是专门讲述如何部署DL工程�
 http://web.stanford.edu/class/cs246/
 
 CS246: Mining Massive Data Sets
+
+https://mp.weixin.qq.com/s/P7szDhvn5QNRKc7Iuq3Q6g
+
+UAI 2019教程《深度学习数学基础》

@@ -192,6 +192,10 @@ https://mp.weixin.qq.com/s/Gm7S0a5VN9L57wlry4-t6w
 
 缓存关注点——先写DB还是“缓存”？
 
+https://mp.weixin.qq.com/s/q-R7kv4696LooHy3Hn-H1A
+
+分布式系统关注点——缓存背后的“毁灭种子”
+
 # Mysql
 
 ## 安装
