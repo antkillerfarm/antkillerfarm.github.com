@@ -176,7 +176,7 @@ https://mp.weixin.qq.com/s/AnWWnD3ScSW6GhrwRGpRDw
 
 LIDAR：LIght Detection And Ranging
 
-LDW：lane departure warning，车道偏离警告系统
+LDW：Lane Departure Warning System，车道偏离警告系统
 
 LKS：lane keeping system，车道保持系统
 
@@ -189,6 +189,50 @@ FCW：Forward Collision Warning，前向碰撞预警
 AEB：Automatic emergency braking，自动紧急刹车
 
 V2X：vehicle to everything
+
+TMC：Traffic Message Channel，实时交通系统
+
+ISA：Intelligent Speed Adaptation，电子警察系统
+
+VCS：Vehicular Communication Systems，车联网系统
+
+VD：Vihicle Detection，车辆检测
+
+ACC：Adaptive Cruise Control，自适应巡航控制
+
+HMW：Headway Monitoring & Warning，车距检测及警告
+
+CAS：Collision Avoidance System，碰撞避免或预碰撞系统
+
+PED：Pedestrian Detection，行人检测
+
+TSR：Traffic Sign Recognition，道路交通标志识别系统
+
+TLR：Traffic Light Recognition，交通信号灯识别系统
+
+Night Vision，夜视系统
+
+Adaptivelight Control，自适应灯光控制
+
+Pedestrian Protection System，行人保护系统
+
+Automatic Parking，自动泊车
+
+Blind Spot Detection，盲点探测
+
+Driver Drowsiness Detection，驾驶员疲劳探测
+
+Hill Descentcontrol，下坡控制系统
+
+Electric Vehicle Warningsounds，电动汽车报警
+
+Surround View Monitor，全景影像系统
+
+Intelligent Headlight Control，远光自动控制
+
+Augmented Reality Navigation，增强现实导航
+
+High Beam Assist，远近光灯辅助系统
 
 ## blog
 
@@ -395,51 +439,3 @@ https://mp.weixin.qq.com/s/K5MJTYmuJ4Vv0sKT-VpDvg
 https://mp.weixin.qq.com/s/heh6B71IQ5NjmaTo6BaXdA
 
 无人驾驶图像识别-车道线检测
-
-## 参考
-
-https://rsu.data61.csiro.au/people/jalvarez/research_bbdd.php
-
-这个网站提供了一系列用于汽车自动驾驶的视频标注的工具。
-
->Jose M. Alvarez，西班牙巴塞罗那自治大学博士（2010年）。现为澳大利亚CSIRO研究员。CSIRO是澳大利亚最大的国家级科研机构。
-
-https://zhuanlan.zhihu.com/p/26988866
-
-机器人学习Robot Learning的发展
-
-https://mp.weixin.qq.com/s/YLhECwwig9f21zk1-PNiTw
-
-25篇车辆检测与分类DL文章读懂自动驾驶
-
-https://mp.weixin.qq.com/s/cqzk7iHD8sJGLnIhkTgN3w
-
-一文读懂全球自动驾驶研究现状
-
-https://mp.weixin.qq.com/s/3lgOxQm07nFpxWauT8b2ow
-
-值得收藏，自动驾驶技术与实例最全解析！
-
-https://mp.weixin.qq.com/s/qyZS6ufN6f4dQRdG9diP0A
-
-自动驾驶传感器，感知，地图定位和规划控制发展现状及热点研究
-
-https://mp.weixin.qq.com/s/9Oghiqbuz4sUFisylTEzng
-
-雷洪钧：汽车自动驾驶技术与实例的研究（上）
-
-https://mp.weixin.qq.com/s/7gBl3ckqk7gQJ0FGMmv_jg
-
-雷洪钧：汽车自动驾驶技术与实例的研究（下）
-
-https://mp.weixin.qq.com/s/pPPq3b1yj92RaGgIpTAhqQ
-
-一文看透汽车无人驾驶技术、产品和市场
-
-https://zhuanlan.zhihu.com/p/41460767
-
-无人驾驶与视觉感知导读
-
-https://mp.weixin.qq.com/s/ZePNQ3l3uMMIlndk20sOVA
-
-基于视频的无监督深度和车辆运动估计

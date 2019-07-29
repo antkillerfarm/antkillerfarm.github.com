@@ -36,6 +36,10 @@ https://mp.weixin.qq.com/s/gGqpmzJKvgrfqsqsSeJ2xg
 
 第四范式等机构提出隐私保护新算法，医疗敏感数据也能合理学
 
+https://mp.weixin.qq.com/s/tv6-oTuPX2mCBwo5IgOwNg
+
+如何通过开源平台解决人工智能的最大“痛点”
+
 ## 参考
 
 >龙明盛，清华本科（2008）+博士（2016），迁移学习的最早提出者之一。清华大学副教授，博导。   

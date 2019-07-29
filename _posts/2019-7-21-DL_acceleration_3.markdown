@@ -162,7 +162,7 @@ UINT量化使用bias将数据搬移到均值为0的区间。
 
 bfloat16是Google针对AI领域的特殊情况提出的浮点格式。目前已有Intel的AI processors和Google的TPU，提供对该格式的原生支持。
 
-![](/images/img2/bfloat16.jpg)
+![](/images/img3/bfloat16.png)
 
 上图比较了bfloat16和IEEE fp32/fp16的差异。可以看出bfloat16有如下特点：
 

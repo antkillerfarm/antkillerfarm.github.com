@@ -170,6 +170,10 @@ https://mp.weixin.qq.com/s/gKCPQcEtqIIiVMQL_DOzww
 
 学习开发知识图谱中的长期关系依赖
 
+https://mp.weixin.qq.com/s/R-KLHsYLbb8WHRjk6gwrhw
+
+基于复杂空间关系旋转的知识表示方法
+
 # 数据结构 & 普通CS算法
 
 https://mp.weixin.qq.com/s/52JFdyaLwZq7nWiZq6z6qA

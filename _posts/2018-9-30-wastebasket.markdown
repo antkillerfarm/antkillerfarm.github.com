@@ -378,6 +378,10 @@ https://mp.weixin.qq.com/s/_wEKKLg_zYOrDmGjkVGVRw
 
 美国高校风靡一时的数学游戏，比黎曼猜想更硬核，至今仍是未解之谜（冰雹猜想）
 
+https://mp.weixin.qq.com/s/9gflokoja0sA70B29nEHLA
+
+谁是世界上最孤独的数？
+
 ## Bélády's Algorithm
 
 Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。

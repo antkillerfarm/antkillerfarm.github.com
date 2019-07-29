@@ -253,3 +253,7 @@ https://mp.weixin.qq.com/s/pfAVyS_JQLqsXLYdX2m8IQ
 https://mp.weixin.qq.com/s/N6nL9D1wjsBNzxedXX3qNQ
 
 Hulu在视频内容理解上的应用和最佳实践
+
+https://mp.weixin.qq.com/s/0z6jrEYTdIUSOYzW3gA9FQ
+
+ActivityNet 挑战赛冠军方案—时序动作提名，边界匹配网络详解

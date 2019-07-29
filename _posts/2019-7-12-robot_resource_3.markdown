@@ -6,6 +6,62 @@ category: resource
 
 # 机器人/无人驾驶参考资源
 
+https://mp.weixin.qq.com/s/BNanIQKY9SSNpms0qSTOBA
+
+硬核干货！揭秘波士顿动力背后的专利技术
+
+https://mp.weixin.qq.com/s/GDQSxVxwx7z-YW0QkCeVBQ
+
+马斯克刚骂了激光雷达，这篇用纯视觉代替激光雷达的名校论文“力挺”了他
+
+https://mp.weixin.qq.com/s/7mu-n13H2YxbCFrVJ0fD1A
+
+如何基于深度神经网络设计一个端到端的自动驾驶模型？如何设计一个基于增强学习的自动驾驶决策系统？
+
+https://mp.weixin.qq.com/s/ShLqAgB8VJJQjCS9iako6Q
+
+一文了解超级电容器
+
+https://mp.weixin.qq.com/s/GN4u91Dc5uYLP8N8rptczA
+
+全自动泊车辅助F-APA简介
+
+https://mp.weixin.qq.com/s/b4cnjOByE2j0gIljF7IXCw
+
+F-APA车位搜索及障碍物识别控制原理
+
+https://mp.weixin.qq.com/s/ZRbEwUlqtp8f5987j9-McQ
+
+自动驾驶计算机视觉研究综述：难题、数据集与前沿成果
+
+https://mp.weixin.qq.com/s/g8Y83vhw-OORm0CJElwPEA
+
+感知算法
+
+https://mp.weixin.qq.com/s/3yKqwQxwjlu_X-dkJHdhtA
+
+L4自动驾驶中感知系统遇到的挑战及解决方案
+
+https://mp.weixin.qq.com/s/flbCQIaHhYmrgd5Czhnw4g
+
+博世：用于自动驾驶的具备超快速板载以太网的高性能车载芯片研究
+
+https://mp.weixin.qq.com/s/SljxjcrjnG22tscpjlWCLw
+
+无人驾驶中用到的八大坐标系
+
+https://mp.weixin.qq.com/s/e2pC39pfs-v9o1H2d1TS6A
+
+LaserNet：一种高效的自动驾驶概率三维目标探测器
+
+https://mp.weixin.qq.com/s/GnJRfbc6_smyeWjCKzsc7g
+
+通过视觉信号预测驾驶员意图
+
+https://zhuanlan.zhihu.com/p/68127887
+
+驾驶员监控DMS
+
 https://zhuanlan.zhihu.com/p/66963787
 
 自动驾驶模拟仿真系统中的传感器模型
@@ -45,6 +101,10 @@ https://mp.weixin.qq.com/s/HSvy_mWcpoS4_-2izgXlzg
 https://mp.weixin.qq.com/s/AekhB7D1W5UhkTmLikvpxA
 
 ADAS系统横纵向控制策略之碰撞时间计算方法
+
+https://mp.weixin.qq.com/s/ZEvNniUUzcsCbU-UpzxtEA
+
+ADAS高级辅助驾驶视觉系统（Advanced Driver Assistant System）
 
 https://zhuanlan.zhihu.com/p/73073753
 

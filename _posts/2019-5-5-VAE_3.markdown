@@ -301,3 +301,7 @@ https://mp.weixin.qq.com/s/GJr-YtV84eV1KbkyVSkcBA
 https://mp.weixin.qq.com/s/1K2Lxws_3QmhwzKB3ucIeA
 
 变分自编码器：金融间序的降维与指标构建
+
+https://mp.weixin.qq.com/s/3ZHlWlO0FdnQTnskcrz2IA
+
+生成式模型入门：训练似然模型的技巧

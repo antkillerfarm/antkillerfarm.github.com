@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十四）——词向量进阶, 深度时间序列, CNN进阶
+title:  深度学习（三十四）——词向量进阶, CNN进阶
 category: DL 
 ---
 
@@ -202,64 +202,6 @@ https://mp.weixin.qq.com/s/wekqgCtlMan_PJHYadSpcg
 
 从词向量到句向量的技术详解
 
-# 深度时间序列
-
-https://mp.weixin.qq.com/s/cChJO6YrE_XAgeInS7J1Vw
-
-130页序列推荐系统教程重磅发布
-
-https://mp.weixin.qq.com/s/zv264-dqDQYRkYmjX_QZpQ
-
-郑宇解读地理传感器时间序列预测问题
-
-https://mp.weixin.qq.com/s/JwRXBNmXBaQM2GK6BDRqMw
-
-Kaggle网站流量预测任务第一名解决方案：从模型到代码详解时序预测
-
-https://mp.weixin.qq.com/s/caXnseARUwLIXdsZ7BXOUw
-
-用于金融时序预测的神经网络：可改善移动平均线经典策略
-
-http://mp.weixin.qq.com/s/9fJT0dMLvYQdfMVvSEiG4A
-
-深度学习的时间序列模型评价
-
-https://mp.weixin.qq.com/s/1Gdx-U3DRZtSJoFyCLnD0w
-
-深度学习之Sequence Learning
-
-https://mp.weixin.qq.com/s/SWKWI7BADnX43e-sCBxRPg
-
-神经网络在算法交易上的应用系列——简单时序预测
-
-https://mp.weixin.qq.com/s/Ux7XjLHzlaGFtM1uSMu2gQ
-
-神经网络在算法交易上的应用系列——时序预测+回测
-
-https://mp.weixin.qq.com/s/fUqQo0m7nMLZO85YG-duRw
-
-神经网络在算法交易上的应用系列——多元时间序列
-
-https://mp.weixin.qq.com/s/PS1SqSWckuHuyZP6d5ZUFw
-
-“深度学习”信号处理和时序分析的最后选择？
-
-https://zhuanlan.zhihu.com/p/54471673
-
-基于前馈神经网络的时间序列异常检测算法
-
-https://mp.weixin.qq.com/s/g9upS70qFOCFBMm-T5nI1A
-
-利用深度学习最新前沿预测股价走势
-
-https://mp.weixin.qq.com/s/otwmDtiDfVVID65RQgT4Uw
-
-教你如何鉴别那些用深度学习预测股价的花哨模型？
-
-https://mp.weixin.qq.com/s/xGUcqs3q3yNpVsJ8P7ag_g
-
-以机器学习的视角来看时序点过程的最新进展
-
 # CNN进阶
 
 http://mp.weixin.qq.com/s/ddTNr-967IahTZ2X1LNSEQ
@@ -409,3 +351,7 @@ https://mp.weixin.qq.com/s/sF-1bV1UA1AyLMlvRRF8iQ
 https://zhuanlan.zhihu.com/p/72901400
 
 深度图像分类网络小结(上)
+
+https://mp.weixin.qq.com/s/Ojah3bo8M0KTTk7iYODSpw
+
+总有些骨骼轻奇，姿态妖娆的模型结构设计，不知道你知不知道，反正我知道一些

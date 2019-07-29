@@ -78,6 +78,12 @@ http://www.aptchina.com/zhuanli/3684478/
 
 一般来说，网络协议就是一层层的组帧和解帧的过程。因此比较帧头的差异，无疑是个建立感性认识的好方法。上图就是IPv6和IPv4在帧头方面的区别。
 
+参考：
+
+https://mp.weixin.qq.com/s/_-KrxPywEahojmA7_9ojKw
+
+将IPv6照进现实，我们需要做些什么？
+
 ## IPv6和6LowPAN
 
 在Zigbee技术的体系结构中，Zigbee只是一个mac子层协议。其下的mac层采用的是802.15.4协议。除了Zigbee协议之外，802.15.4协议之上还支持其他的mac子层协议，其中最有名的是6LowPAN。
