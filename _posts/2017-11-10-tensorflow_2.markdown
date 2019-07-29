@@ -218,6 +218,10 @@ https://mp.weixin.qq.com/s/65HiEwCyzeA_d9flPBcpLQ
 
 谷歌正式发布TensorFlowLite，半监督跨平台快速训练ML模型
 
+https://mp.weixin.qq.com/s/6_yZPlKLYiWBRQFk5Y1OKA
+
+TensorFlow Lite微控制器
+
 ## Android NN
 
 TFLite是Google的Tensorflow团队开发的移动DL框架，它可以在任意系统（非android，甚至非linux）上执行。而Android NN则是Google的Android团队针对Android平台开发的DL框架。

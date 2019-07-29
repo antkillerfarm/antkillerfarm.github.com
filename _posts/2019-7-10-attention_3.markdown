@@ -68,6 +68,10 @@ https://mp.weixin.qq.com/s/QVEYQfEQV0CsklI9S4vOiA
 
 ERNIE真有官方说的那么好？亲测告诉你答案！
 
+https://mp.weixin.qq.com/s/FoX2bXCJlFYjb9U6JcZCqg
+
+超详细中文预训练模型ERNIE使用指南
+
 ## XLNet
 
 https://mp.weixin.qq.com/s/29y2bg4KE-HNwsimD3aauw

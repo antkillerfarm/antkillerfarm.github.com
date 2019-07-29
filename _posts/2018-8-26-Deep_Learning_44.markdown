@@ -316,6 +316,14 @@ https://mp.weixin.qq.com/s/BVP7vJ1RxwyRoU0purj0Xw
 
 3D数据分类深度学习方法综述，25页论文带你全面了解最新进展
 
+https://mp.weixin.qq.com/s/DxDkYfzW5BqhidPlqT772Q
+
+从单幅图像到双目立体视觉的3D目标检测算法
+
+https://mp.weixin.qq.com/s/n3ZUsq2I0CaJ5pIl2nZUFQ
+
+3D目标检测：MonoDIS
+
 # 深度贝叶斯学习
 
 https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og
