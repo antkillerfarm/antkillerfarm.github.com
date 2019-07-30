@@ -124,6 +124,10 @@ https://mp.weixin.qq.com/s/UfplwSgyWnLNiCdIrconhA
 
 SGD的那些变种，真的比SGD强吗
 
+https://zhuanlan.zhihu.com/p/73441350
+
+从物理角度理解加速梯度下降
+
 # 单分类SVM&多分类SVM
 
 原始的SVM主要用于二分类，然而稍加变化，也可用于单分类和多分类。

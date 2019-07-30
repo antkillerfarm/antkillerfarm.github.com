@@ -201,3 +201,7 @@ https://mp.weixin.qq.com/s/AOI2LUjiKPUJFE0D7zX0Hw
 https://mp.weixin.qq.com/s/m9I5TM9uJcgZvMusO667OA
 
 5MB的神经网络也高效，Facebook新压缩算法造福嵌入式设备
+
+https://mp.weixin.qq.com/s/FFs0-ROvbXSAIOspW_rMbw
+
+超越MobileNetV3！谷歌大脑提出 MixNet 轻量级网络

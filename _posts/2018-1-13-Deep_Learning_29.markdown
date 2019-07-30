@@ -150,6 +150,10 @@ https://mp.weixin.qq.com/s/VEAnkznZUyZ1RCJulSnwGg
 
 基于图结构网络的表征学习
 
+https://mp.weixin.qq.com/s/rxZQrhvRk6Dw3AWpGJS4dg
+
+《基于图的句子意思表征》教程, 300多页PPT带你进入这一新兴领域
+
 https://mp.weixin.qq.com/s/LrGWJIdPdUNZ3jyC8tdE6w
 
 Graph Neural Network（GNN）综述

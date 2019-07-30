@@ -20,7 +20,7 @@ Google的这两篇论文在这里做了一些尝试：
 
 这里学到的模型，一般被称为NASNet。
 
-AutoD常用的套路主要有：
+AutoDL常用的套路主要有：
 
 - random search/gird search。这是最古老的办法。
 
@@ -359,3 +359,7 @@ https://mp.weixin.qq.com/s/OMzx3nKqn1un2fCZseID2Q
 https://mp.weixin.qq.com/s/_31zbbQ5dHf2UaI8GhXozw
 
 4 GPU hours搜索到一个鲁棒的网络结构
+
+https://mp.weixin.qq.com/s/slrRXgD49I7ZG24ialVxPw
+
+第四范式涂威威：自动机器学习求解三要素与发展趋势

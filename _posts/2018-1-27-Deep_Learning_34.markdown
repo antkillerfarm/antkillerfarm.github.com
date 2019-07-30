@@ -355,3 +355,7 @@ https://zhuanlan.zhihu.com/p/72901400
 https://mp.weixin.qq.com/s/Ojah3bo8M0KTTk7iYODSpw
 
 总有些骨骼轻奇，姿态妖娆的模型结构设计，不知道你知不知道，反正我知道一些
+
+https://mp.weixin.qq.com/s/m5rUNy938cCNjD7L3J4h-Q
+
+让CNN有了平移不变性，同时提升ImageNet成绩：Adobe开源新方法，登上ICML

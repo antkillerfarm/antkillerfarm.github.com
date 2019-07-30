@@ -298,6 +298,10 @@ https://mp.weixin.qq.com/s/RBsRXN5ySsty0ZDlUKKQnQ
 
 刷新记录，算法开源！字节跳动获人体姿态估计竞赛双冠
 
+https://mp.weixin.qq.com/s/xR1_ptMaXKonvmFOPurY1A
+
+人体动作识别在智能八段锦 App 中的实践
+
 # Capsule
 
 https://github.com/freefuiiismyname/capsule-mrc

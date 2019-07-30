@@ -114,6 +114,10 @@ https://zhuanlan.zhihu.com/p/70523190
 
 总结-CNN中的目标多尺度处理
 
+https://mp.weixin.qq.com/s/xMQA97k0USl69v1MC86HKA
+
+多尺度特征金字塔结构用于目标检测
+
 # RetinaNet
 
 RetinaNet也是Tsung-Yi Lin的作品（2017.8）。
@@ -249,7 +253,3 @@ CenterNet是中科院、牛津、Huawei Noah’s Ark Lab的一个联合团队的
 也正是由于Corner和物体的关联度不大，CornerNet才发明了corner pooling操作，用以提取Corner。
 
 但是即使这样，由于没有anchor的限制，使得任意两个角点都可以组成一个目标框，这就对判断两个角点是否属于同一物体的算法要求很高，一但准确度差一点，就会产生很多错误目标框。
-
-有鉴于此，CenterNet除了Corner之外，还添加了Center的预测分支，也就是上图中的center pooling+center heatmap。这主要基于以下假设：**如果目标框是准确的，那么在其中心区域能够检测到目标中心点的概率就会很高，反之亦然。**
-
-因此，首先利用左上和右下两个角点生成初始目标框，对每个预测框定义一个中心区域，然后判断每个目标框的中心区域是否含有中心点，若有则保留该目标框，若无则删除该目标框。

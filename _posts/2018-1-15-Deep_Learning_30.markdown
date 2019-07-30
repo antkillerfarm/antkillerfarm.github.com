@@ -58,6 +58,10 @@ https://mp.weixin.qq.com/s/tAfTmGWqG6IR8SOP0uKW6g
 
 什么限制了GNN的能力？首篇探究GNN普适性与局限性的论文出炉！
 
+https://mp.weixin.qq.com/s/zOdy-1vCJD_dPFSoe0ELFA
+
+图论与图学习（一）：图的基本概念
+
 # 自动求导
 
 DL发展到现在，其基本运算单元早就不止CNN、RNN之类的简单模块了。针对新运算层出不穷的现状，各大DL框架基本都实现了自动求导的功能。

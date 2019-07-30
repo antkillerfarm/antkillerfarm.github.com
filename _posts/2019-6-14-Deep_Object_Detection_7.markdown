@@ -6,6 +6,10 @@ category: Deep Object Detection
 
 # CenterNet（续）
 
+有鉴于此，CenterNet除了Corner之外，还添加了Center的预测分支，也就是上图中的center pooling+center heatmap。这主要基于以下假设：**如果目标框是准确的，那么在其中心区域能够检测到目标中心点的概率就会很高，反之亦然。**
+
+因此，首先利用左上和右下两个角点生成初始目标框，对每个预测框定义一个中心区域，然后判断每个目标框的中心区域是否含有中心点，若有则保留该目标框，若无则删除该目标框。
+
 为了和CornerNet做比较，CenterNet同样使用了Hourglass Network作为骨干网络。并针对中心点和角点的提取，提出了Center pooling和Cascade corner pooling操作。这里不再赘述。
 
 参考：
@@ -351,27 +355,3 @@ https://mp.weixin.qq.com/s/pkFcmm15gnuRJtngFX7f0w
 https://mp.weixin.qq.com/s/flXzhQ-Ypf3fwTqLelLzOQ
 
 李沐等将目标检测绝对精度提升5%，不牺牲推理速度
-
-https://mp.weixin.qq.com/s/6QsyYtEVjavoLfU_lQF1pw
-
-目标检测新文：Generalized Intersection over Union
-
-https://mp.weixin.qq.com/s/Xs3nThAcUOq62bO2p61YFA
-
-论文解读 Receptive Field Block Net for Accurate and Fast
-
-https://mp.weixin.qq.com/s/dcrBQ-t3tLOTouEyofOBxg
-
-间谍卫星：利用卷积神经网络对卫星影像进行多尺度目标检测
-
-https://mp.weixin.qq.com/s/LtXylKTKsHdjMPw9Q1HyXA
-
-优于MobileNet、YOLOv2：移动设备上的实时目标检测系统Pelee
-
-https://mp.weixin.qq.com/s/Gq3bflJq59Tx-nDCvbweNA
-
-无需预训练分类器，清华&旷视提出专用于目标检测的骨干网络DetNet
-
-https://blog.csdn.net/wq604887956/article/details/83053927
-
-2018小目标检测文章总结

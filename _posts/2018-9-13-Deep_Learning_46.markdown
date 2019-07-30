@@ -116,6 +116,10 @@ https://blog.csdn.net/linolzhang/article/details/82780071
 
 OCR文字识别
 
+https://www.cnblogs.com/skyfsm/category/1123384.html
+
+一个OCR方面的blog
+
 https://mp.weixin.qq.com/s/WmsHrTIMJhSt8MtFO7-yXA
 
 证件全文本OCR技术，了解一下
