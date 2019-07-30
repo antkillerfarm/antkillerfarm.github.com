@@ -84,6 +84,10 @@ Anchor-Free模型主要是为了解决Two-stage模型运算速度较慢的问题
 
 ## 参考
 
+https://mp.weixin.qq.com/s/T7DDWvtvCULfjcDmljvx5Q
+
+Anchor-free的对象检测网络汇总
+
 https://zhuanlan.zhihu.com/p/63024247
 
 锚框：Anchor box综述
