@@ -137,3 +137,7 @@ https://mp.weixin.qq.com/s/fWySZWsYEKBRwYaFL3J2Xg
 https://mp.weixin.qq.com/s/nHBczPlffhZrJy4G4oJ1Ag
 
 让神经网络懂得黄金法则
+
+https://www.zhihu.com/question/323420831
+
+强化学习中A3C/DDPG/DPPO哪个效果更好？

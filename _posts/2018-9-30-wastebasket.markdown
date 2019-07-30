@@ -92,10 +92,6 @@ https://mp.weixin.qq.com/s/mc9aH5hDgRFS2h2blPhb8w
 
 21张绘画完美演绎地球演化新说！
 
-https://zhuanlan.zhihu.com/p/43934918
-
-诡异的布雷斯悖论：为什么越是修新路，城市反而更堵了！
-
 http://www.matrix67.com/
 
 一个数学blog
@@ -108,125 +104,13 @@ https://mp.weixin.qq.com/s/np9OuEMQNtKMC7P1KPzTmg
 
 通往物理学世界的地图
 
-http://www.matrix67.com/blog/archives/6750
-
-趣题：两个方阵是怎样互相穿过对方的？
-
-https://mp.weixin.qq.com/s/r95iMIKMctgjko1GRn9-5A
-
-史上最贱的数学题
-
-https://mp.weixin.qq.com/s/BkKw2C3n9WsmIchJkkZxUw
-
-从七桥问题开始：全面介绍图论及其应用
-
-https://mp.weixin.qq.com/s/ZDY3Yt67eXK5pjXgvJkkyQ
-
-图论的各种基本算法
-
-https://mp.weixin.qq.com/s/2h1dgvPbYKBOYZPiixg9iw
-
-手把手：四色猜想、七桥问题…程序员眼里的图论，了解下？
-
-https://mp.weixin.qq.com/s/JSnAK22gohPDCGZ_BipHqg
-
-sin1°是否为超越数？
-
-https://mp.weixin.qq.com/s/qhqCqHo9xGr_Tc-2bnS4mw
-
-用数学方程和不等式创作艺术
-
-https://mp.weixin.qq.com/s/CM7WLc7iSp877WrkH8R_7g
-
-如何用数学方法估算一个女生前男友的数量？
-
-https://mp.weixin.qq.com/s/QJQnRCrBu9j94-VhNq_4tA
-
-群论的创立：两个少年天才的接力
-
-https://mp.weixin.qq.com/s/H6QV5L-Ewdb1NkMKZrNK9w
-
-一杯咖啡背后的拓扑
-
-https://mp.weixin.qq.com/s/FqY19sTQd7GPdGSsB5L9eQ
-
-数学大反例合集
-
-https://mp.weixin.qq.com/s/rZwqxyBmQg07Pq1ihTjNMg
-
-动图解释泰勒级数（一）
-
-https://mp.weixin.qq.com/s/yqAnIjGmXpubgSsGDx6O8w
-
-动图解释泰勒级数（二）
-
-https://zhuanlan.zhihu.com/p/36230460
-
-黑盒函数的探索
-
-http://www.matrix67.com/blog/archives/4570
-
-再谈Julia集与Mandelbrot集
-
 https://mp.weixin.qq.com/s/3svGvbk0-ek5tQCWJ9ii4A
 
 读懂相对论：从弯曲空间的几何开始
 
-https://mp.weixin.qq.com/s/xin9VUuIVCZqP-KPn_xAlw
-
-没想到，用极坐标画素数时竟然出现了这神奇的一幕！
-
-https://mp.weixin.qq.com/s/GFO84scpniELyqLdf8HzOQ
-
-一个10*10的正方形里，最多可以放多少个直径为1的圆？为啥不是100个？
-
-https://zhuanlan.zhihu.com/p/36297534
-
-x=cos(x)的解析形式
-
-https://mp.weixin.qq.com/s/5PR4OUubguj0WLB85aa9Mg
-
-2018年菲尔兹奖候选人分析
-
 https://mp.weixin.qq.com/s/COIYp4Ao9fBPnaUZvhCxkg
 
 表情包的画质是如何越传越差甚至还变绿的？
-
-https://mp.weixin.qq.com/s/EJj7gonRv2607QnYTZWKqQ
-
-笛卡尔！！你……你……你这样泡妞真的好吗？！
-
-http://web.stanford.edu/~tonyfeng/notes
-
-某牛的数学笔记
-
-https://zhuanlan.zhihu.com/p/50206917
-
-数学笔记（Chapter 1-3. 代数和几何的基础）
-
-https://zhuanlan.zhihu.com/p/50311527
-
-数学笔记（Chapter 4-5. 代数几何和分析的基础）
-
-https://zhuanlan.zhihu.com/p/50524005
-
-数学笔记（Chapter 6. L-函数，第1课）
-
-https://mp.weixin.qq.com/s/eq4MllJta5NmaLARPpvang
-
-公交车总迟到？你大概掉进了“等待时间悖论”
-
-http://www.moe.gov.cn/s78/A16/A16_ztzl/ztzl_kxnt/kxnt_sgxz/201512/t20151218_225337.html
-
-10000个科学难题数学卷
-
-https://mp.weixin.qq.com/s/imqoo3WWgdWtfah2HYYb6Q
-
-糟糕，我学了假的微积分！
-
-https://mp.weixin.qq.com/s/H_4vuzYcvnZwLZrAxIwgDg
-
-3.14特别纪念：π的第100000000000000···
 
 https://mp.weixin.qq.com/s/oEhG7AaY_TAljvhhK5YfNA
 
@@ -251,10 +135,6 @@ https://zhuanlan.zhihu.com/p/26645548
 https://wenku.baidu.com/view/209d2f8183d049649b665894.html
 
 超纯水18.2的意义
-
-https://mp.weixin.qq.com/s/i076Bk9i0kJOP5kGmneBRw
-
-有趣的海盗问题
 
 https://mp.weixin.qq.com/s/Kake5sQm79L2j_uDqKfznQ
 
@@ -330,25 +210,9 @@ https://mp.weixin.qq.com/s/IQ8YSyp-m2jCIDfLtuh_ew
 
 天上会掉金子吗？会！你现在用的这些就是！
 
-https://mp.weixin.qq.com/s/o1a2YlYritcOrsLN2YuLmA
-
-神奇的霍特林法则：为什么汉堡王总是开在麦当劳旁边？
-
-https://mp.weixin.qq.com/s/K1fJ1wI9T46i7qW1xjMY_w
-
-比圆周率更神秘的“混沌”常数：4.669201609102...（费根鲍姆常数）
-
 https://mp.weixin.qq.com/s/t2EM1l7ujoSquGl2x5hBBA
 
 21世纪最强王者纸飞机：用一张A4纸拿到了吉尼斯世界记录
-
-https://mp.weixin.qq.com/s/-pnk_O7cOn5KNrqC89Ydsg
-
-在数学奥林匹克的125年里，这25个逆天解法称霸江湖！
-
-https://mp.weixin.qq.com/s/C83eMExh4Zi3TWD2QhVWsQ
-
-夹逼准则
 
 https://mp.weixin.qq.com/s/lu4wQOIzVtsFvwhO1c2d0A
 
@@ -358,29 +222,17 @@ https://mp.weixin.qq.com/s/R5EonufyiXy8bzD2fddnEg
 
 不喷岩浆喷泥浆，这些火山是要闹哪样？
 
-https://mp.weixin.qq.com/s/S7OmcrLO21PVMyuWin-6Bw
-
-数学上最有趣的数，装得了逼，撩得了妹！
-
 https://mp.weixin.qq.com/s/KUr8kkHov0XgolEo0y6z8g
 
 不同颜色的尿液颜，是怎么形成的？
-
-https://mp.weixin.qq.com/s/sa7ppdn-KotIz6dB-ZuITA
-
-柏拉图：我参透了爱情，却搞不懂为什么只有五种正多面体！
 
 https://mp.weixin.qq.com/s/IcY_RfIpioEBC493bEtUdw
 
 计算机鼻祖的鼻祖-差分机：机械史上的最强大脑，最复杂的巅峰之作
 
-https://mp.weixin.qq.com/s/_wEKKLg_zYOrDmGjkVGVRw
+https://mp.weixin.qq.com/s/KJyvT_MsD2DZ6QvwXh32ug
 
-美国高校风靡一时的数学游戏，比黎曼猜想更硬核，至今仍是未解之谜（冰雹猜想）
-
-https://mp.weixin.qq.com/s/9gflokoja0sA70B29nEHLA
-
-谁是世界上最孤独的数？
+假如把地球46亿年历史压缩到一天
 
 ## Bélády's Algorithm
 

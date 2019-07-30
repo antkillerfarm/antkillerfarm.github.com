@@ -217,3 +217,7 @@ https://mp.weixin.qq.com/s/3el7bPAeJrTQGfWW29ewuA
 https://mp.weixin.qq.com/s/alnji5kgTxc34O7k78uGiA
 
 无监督学习中的目标检测
+
+https://mp.weixin.qq.com/s/8FtDhpgc-1j3TSL771N-Ng
+
+无标注数据是鸡肋还是宝藏？阿里工程师这样用它

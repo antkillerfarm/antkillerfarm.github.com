@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  名校机器学习相关课程
+title:  名校机器学习相关课程（一）
 category: resource 
 ---
 

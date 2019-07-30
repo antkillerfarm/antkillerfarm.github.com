@@ -98,6 +98,10 @@ https://mp.weixin.qq.com/s/BghNofoU6cPRn7XfdHR83w
 
 日均处理万亿数据！Flink在快手的应用实践与技术演进之路
 
+https://mp.weixin.qq.com/s/qRPquDgb2M8xptZWapajDg
+
+Flink SQL功能解密系列——流式TopN挑战与实现
+
 # Parquet
 
 Parquet是Twitter开源的一种供Hadoop使用的列式存储格式。

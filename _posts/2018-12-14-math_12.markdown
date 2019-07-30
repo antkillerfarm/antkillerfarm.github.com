@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（十二）——数学杂谈, 最速降线, 泛函 & 变分
+title:  数学狂想曲（十二）——数学杂谈
 category: math 
 ---
 
@@ -90,6 +90,146 @@ https://mp.weixin.qq.com/s/1jLcPIS0bgcDyp9tejGInw
 
 拿破仑时代的炮兵究竟数学要多好？
 
+https://mp.weixin.qq.com/s/_wEKKLg_zYOrDmGjkVGVRw
+
+美国高校风靡一时的数学游戏，比黎曼猜想更硬核，至今仍是未解之谜（冰雹猜想）
+
+https://mp.weixin.qq.com/s/9gflokoja0sA70B29nEHLA
+
+谁是世界上最孤独的数？
+
+https://mp.weixin.qq.com/s/S7OmcrLO21PVMyuWin-6Bw
+
+数学上最有趣的数，装得了逼，撩得了妹！（走马灯数）
+
+https://mp.weixin.qq.com/s/sa7ppdn-KotIz6dB-ZuITA
+
+柏拉图：我参透了爱情，却搞不懂为什么只有五种正多面体！
+
+https://mp.weixin.qq.com/s/-pnk_O7cOn5KNrqC89Ydsg
+
+在数学奥林匹克的125年里，这25个逆天解法称霸江湖！
+
+https://mp.weixin.qq.com/s/C83eMExh4Zi3TWD2QhVWsQ
+
+夹逼准则
+
+https://mp.weixin.qq.com/s/K1fJ1wI9T46i7qW1xjMY_w
+
+比圆周率更神秘的“混沌”常数：4.669201609102...（费根鲍姆常数）
+
+https://mp.weixin.qq.com/s/i076Bk9i0kJOP5kGmneBRw
+
+有趣的海盗问题
+
+https://mp.weixin.qq.com/s/EJj7gonRv2607QnYTZWKqQ
+
+笛卡尔！！你……你……你这样泡妞真的好吗？！
+
+http://web.stanford.edu/~tonyfeng/notes
+
+某牛的数学笔记
+
+https://zhuanlan.zhihu.com/p/50206917
+
+数学笔记（Chapter 1-3. 代数和几何的基础）
+
+https://zhuanlan.zhihu.com/p/50311527
+
+数学笔记（Chapter 4-5. 代数几何和分析的基础）
+
+https://zhuanlan.zhihu.com/p/50524005
+
+数学笔记（Chapter 6. L-函数，第1课）
+
+http://www.moe.gov.cn/s78/A16/A16_ztzl/ztzl_kxnt/kxnt_sgxz/201512/t20151218_225337.html
+
+10000个科学难题数学卷
+
+https://mp.weixin.qq.com/s/imqoo3WWgdWtfah2HYYb6Q
+
+糟糕，我学了假的微积分！
+
+https://mp.weixin.qq.com/s/H_4vuzYcvnZwLZrAxIwgDg
+
+3.14特别纪念：π的第100000000000000···
+
+https://mp.weixin.qq.com/s/xin9VUuIVCZqP-KPn_xAlw
+
+没想到，用极坐标画素数时竟然出现了这神奇的一幕！
+
+https://mp.weixin.qq.com/s/GFO84scpniELyqLdf8HzOQ
+
+一个10*10的正方形里，最多可以放多少个直径为1的圆？为啥不是100个？
+
+https://zhuanlan.zhihu.com/p/36297534
+
+x=cos(x)的解析形式
+
+https://mp.weixin.qq.com/s/5PR4OUubguj0WLB85aa9Mg
+
+2018年菲尔兹奖候选人分析
+
+http://www.matrix67.com/blog/archives/6750
+
+趣题：两个方阵是怎样互相穿过对方的？
+
+https://mp.weixin.qq.com/s/r95iMIKMctgjko1GRn9-5A
+
+史上最贱的数学题
+
+https://mp.weixin.qq.com/s/BkKw2C3n9WsmIchJkkZxUw
+
+从七桥问题开始：全面介绍图论及其应用
+
+https://mp.weixin.qq.com/s/ZDY3Yt67eXK5pjXgvJkkyQ
+
+图论的各种基本算法
+
+https://mp.weixin.qq.com/s/2h1dgvPbYKBOYZPiixg9iw
+
+手把手：四色猜想、七桥问题…程序员眼里的图论，了解下？
+
+https://mp.weixin.qq.com/s/JSnAK22gohPDCGZ_BipHqg
+
+sin1°是否为超越数？
+
+https://mp.weixin.qq.com/s/qhqCqHo9xGr_Tc-2bnS4mw
+
+用数学方程和不等式创作艺术
+
+https://mp.weixin.qq.com/s/CM7WLc7iSp877WrkH8R_7g
+
+如何用数学方法估算一个女生前男友的数量？
+
+https://mp.weixin.qq.com/s/QJQnRCrBu9j94-VhNq_4tA
+
+群论的创立：两个少年天才的接力
+
+https://mp.weixin.qq.com/s/H6QV5L-Ewdb1NkMKZrNK9w
+
+一杯咖啡背后的拓扑
+
+https://mp.weixin.qq.com/s/FqY19sTQd7GPdGSsB5L9eQ
+
+数学大反例合集
+
+https://mp.weixin.qq.com/s/rZwqxyBmQg07Pq1ihTjNMg
+
+动图解释泰勒级数（一）
+
+https://mp.weixin.qq.com/s/yqAnIjGmXpubgSsGDx6O8w
+
+动图解释泰勒级数（二）
+
+https://zhuanlan.zhihu.com/p/36230460
+
+黑盒函数的探索
+
+http://www.matrix67.com/blog/archives/4570
+
+再谈Julia集与Mandelbrot集
+
 # 最速降线
 
 约翰·伯努利在1696年提出最速降线的问题（problem of brachistochrone），向全欧洲数学家征求解答。这个问题最早由伽利略在1630年提出：**“一个质点在只受重力的作用下，从一个给定点A到不在它垂直下方的另一点B，问沿着什么曲线下滑（忽略摩擦力）所需时间最短？”**
@@ -105,71 +245,3 @@ https://mp.weixin.qq.com/s/1jLcPIS0bgcDyp9tejGInw
 1697年1月29日，牛顿正在造币局里忙着改铸新币的工作。下午4点回到家里，他看到了邮箱里伯努利寄来的问题。尽管牛顿非常疲惫，他立即彻夜未眠的投入研究，在凌晨4点时得到问题的解答。他将他的解答寄给好友兼皇家协会主席查尔斯，随后皇家协会以匿名的形式发表在Philosophical Transactions上。
 
 要知道，此时的牛顿已经56岁，工作重点是皇家铸币厂监管。即使如此，在忙了一天的本职工作后，牛顿还是用几个小时就解决了许多欧洲数学家都无法解出的难题。约翰·伯努利本人也花了两个星期的时间才完成解答。
-
-1697年复活节的截止期限，伯努利共收到了5份答案，他自己和其老师莱布尼兹，第三份是他的哥哥雅可布·伯努利，洛必达是第四个，最后是一份匿名答案。伯努利在阅读最后一份解答时立即认出它的作者，他惊叹道：
-
-**“从利爪上认出了这头狮子（recognizes a lion from his claw mark）”**
-
-在给查尔斯的信里，牛顿还写道：**我不喜欢在数学上被外国人糊弄（I do not love to be dunned and teased by foreigners about mathematical things）。**
-
-除了牛顿之外，雅可布·伯努利也是约翰·伯努利最想击败的对手。事实上，三个人虽然都正确回答了该问题，然而所用的方法竟然全都不同。下面提到的变分法，主要是雅可布·伯努利的贡献。
-
-言归正传，最速降线的正确答案是——**摆线（Cycloid）：一个圆在一条定直线上滚动时，圆周上一个定点的轨迹，又称圆滚线、旋轮线。**
-
-![](/images/img3/Cycloid.jpg)
-
-伽利略虽然在最速降线问题上给出了错误的答案，然而他本人对于摆线还是研究颇深的。事实上，摆线的名字就是他起的（1599年）。
-
-他还发现了以下结论：
-
-1.摆线弧的长度等于旋转圆的直径的4倍。
-
-2.摆线弧下方所围成的面积是旋转圆的面积的3倍。
-
-在没有微积分的时代，他是如何发现这些结论的呢？答案：做实验。
-
-是的，你没看错，就是实验。他用一根绳子附在摆线度量出这条绳子的长度再与旋转圆的直径作比较，得到了第一个事实；在一块薄板上画出摆线所围成的图形，再把这个图形切下来，称一下它的重量，然后在同样的薄板上画出旋转圆，再把旋转圆切下来，称一下重量，于是发现了第二条事实。
-
-注意，伽利略虽然发现了摆的等时性，然而他用的摆是圆摆。直到惠更斯改进钟摆，钟摆和摆线才有了关系。这从摆线的英文名可以看的很清楚。伽利略显然采用的是圆滚线的定义。
-
-# 泛函 & 变分
-
-历史上对于最速降线的研究催生了泛函数（Functionals）和变分法（Calculus of Variations）的概念。
-
-这里就以最速降线为例，说明一下泛函和变分的含义。
-
-首先建立坐标系，水平方向为x轴，竖直方向为y轴。
-
-则质点下落速率与下落高度间的关系为：
-
-$$v=\sqrt{2gh}\Rightarrow \frac{\mathrm{d}s}{\mathrm{d}t}=\sqrt{2gy}$$
-
-所以：
-
-$$T=\int_{t_1(A)}^{t_2(B)}\mathrm{d}t=\int_{A}^{B}\frac{\mathrm{d}s}{\sqrt{2gy}}=\int_{A}^{B}\frac{\sqrt{1-y'^2}}{\sqrt{2gy}}\mathrm{d}x$$
-
-显然，这是一个路径积分。
-
-上式可改写为以下形式：
-
-$$T=T[y(x)]=\int_{A}^{B}\frac{\sqrt{1-y'^2}}{\sqrt{2gy}}\mathrm{d}x=\int_{A}^{B}F(x,y,y')\mathrm{d}x$$
-
-注意，这里的$$T[y(x)]$$不能理解为复合函数：
-
-1.复合函数的变换是$$x\to y \to T$$。其中，x、y、T都是数值。换句话说，就是**数值的传递**。
-
-2.在这个问题中，y的具体值，意义不大，如何到达y的路径才是关键。而路径其实可以表达为一个函数，即y是x的函数，而T是x的**函数的函数（也被称为“泛函”）**。
-
-**泛函求极值的方法和过程，被称作变分法。**上述最速降线问题，实际上就是在一个泛函集合上求极值的问题。
-
-对于任意定值$$x \in [x_0,x_1]$$，可取函数$$y(x)$$与另一可取函数$$y_0(x)$$之差$$y(x)-y_0(x)$$，称为函数$$y(x)$$在$$y_0(x)$$处的**变分或者叫函数的变分**，记作$$\delta y$$，其中$$\delta$$称为变分算子，那么：
-
-$$\delta y = y(x)-y_0(x)$$
-
-从上面的定义可以看出函数的变分$$\delta y$$与函数的增量$$\Delta y$$之间的区别：
-
-1.函数的变分$$\delta y$$是两个不同的函数$$y(x)$$和$$y_0(x)$$在自变量x固定时的差，这是函数发生了改变。
-
-2.函数的增量$$\Delta y$$是自变量x的增量使得函数$$y(x)$$产生的增量，函数依然是原来的函数。
-
-被积函数F被称为**泛函的核**。

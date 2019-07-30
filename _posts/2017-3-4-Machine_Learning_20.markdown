@@ -159,6 +159,10 @@ https://mp.weixin.qq.com/s/49YCWbmyoMW-0NyK_aK4Tg
 
 大师告诉你，学习数学有什么用
 
+https://mp.weixin.qq.com/s/5WYSbh-CBBhIy7ZnWrTFrA
+
+从数学的角度看，为什么会有这么多渣男？
+
 ## 关联规则评价
 
 “数据说谎”的问题很普遍。再看这样一个例子，我们分析一个购物篮数据中购买游戏光碟和购买影片光碟之间的关联关系。交易数据集共有10,000条记录，如表1所示：

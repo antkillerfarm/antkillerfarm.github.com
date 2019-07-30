@@ -1,10 +1,30 @@
 ---
 layout: post
-title:  强化学习（六）——价值函数的近似表示, 模仿学习
+title:  强化学习（六）——价值函数的近似表示
 category: RL 
 ---
 
-# Model-Free Control（续）
+# Model-Free Control
+
+## On-Policy Temporal-Difference Learning（续）
+
+和TD类似，我们也可以定义n-step的Sarsa(n)算法
+
+$$Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\alpha(q_t^{n}-Q(S_t,A_t))$$
+
+Sarsa($$\lambda$$)：
+
+$$Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\alpha(q_t^{\lambda}-Q(S_t,A_t))$$
+
+Sarsa($$\lambda$$)+ET：
+
+$$Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\alpha\delta_tE_t(s,a)$$
+
+参考：
+
+https://blog.csdn.net/zchang81/article/details/77746313
+
+Sarsa与Q-learning对比
 
 ## 采样方法
 
@@ -14,7 +34,7 @@ category: RL
 
 如果某种分布函数不容易采样的话，可以使用它的反函数进行采样：
 
-$$P(F^{-1}(a) \le x) = P(a \le F(x)) = H(F(x)$$
+$$P(F^{-1}(a) \le x) = P(a \le F(x)) = H(F(x))$$
 
 ![](/images/img2/Inverse_Sampling.png)
 
@@ -32,7 +52,7 @@ Rejective Sampling的形式化表述为：
 
 $$acc(x_i) = \frac{\tilde{p}(x_i)}{cq(x_i)}$$
 
-其中，$$\tilde{p}(x_i)$$实际采样的样本，它应该正比于目标分布，$$cq(x_i)$$是比例系数，c为常数。在上例中，$$q(x_i)$$是均匀分布，所以就是常数1，如果是其它分布的话，则是一个函数。
+其中，$$\tilde{p}(x_i)$$是实际采样的样本，它应该正比于目标分布，$$cq(x_i)$$是比例系数，c为常数。在上例中，$$q(x_i)$$是均匀分布，所以就是常数1，如果是其它分布的话，则是一个函数。
 
 ### Importance Sampling
 
@@ -80,7 +100,7 @@ $$V(S_t)\leftarrow V(S_t)+\alpha(G_t^{\pi/\mu}-V(S_t))$$
 
 $$V(S_t)\leftarrow V(S_t)+\alpha\left(\frac{\pi(A_t\mid S_t)}{\mu(A_t\mid S_t)}(R_{t+1}+\gamma V(S_{t+1}))-V(S_t)\right)$$
 
-应用这种思想最好的方法是基于TD(0)的Q-learning。Q-learning的相关内容参见《机器学习（二十七）》。
+应用这种思想最好的方法是基于TD(0)的Q-learning。Q-learning的相关内容参见《强化学习（二）》。
 
 ### DP和TD的关系
 
@@ -151,69 +171,3 @@ $$\hat v(S,w)=\begin{pmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{pmatrix}\begin
 ## Batch Methods
 
 前面所说的递增算法都是基于数据流的，经历一步，更新算法后，我们就不再使用这步的数据了，这种算法简单，但有时候不够高效。与之相反，批方法则是把一段时期内的数据集中起来，通过学习来使得参数能较好地符合这段时期内所有的数据。这里的训练数据集“块”相当于个体的一段经验。
-
-# A2C
-
-https://zhuanlan.zhihu.com/p/51652845
-
-强化学习这都学不会的话，咳咳，你过来下！
-
-# 模仿学习
-
-https://zhuanlan.zhihu.com/p/27935902
-
-机器人学习Robot Learning之模仿学习Imitation Learning的发展
-
-https://zhuanlan.zhihu.com/p/25688750
-
-模仿学习（Imitation Learning）完全介绍
-
-https://mp.weixin.qq.com/s/naq73D27vsCOUBperKto8A
-
-从监督式到DAgger，综述论文描绘模仿学习全貌
-
-https://mp.weixin.qq.com/s/LNNqp2KsEAljG26hY43mUw
-
-ICML2018 模仿学习教程
-
-https://mp.weixin.qq.com/s/f9vSgH1HQwGXBDb0UGHQyQ
-
-深度学习进阶之无人车行为克隆
-
-# RL参考资源
-
-https://mp.weixin.qq.com/s/Fn1s9Ia8L1ckgn6iP24FhQ
-
-如何让神经网络具有好奇心
-
-https://mp.weixin.qq.com/s/PBf-YrkhwhPYXuiOGyahxQ
-
-强化学习遭遇瓶颈！分层RL将成为突破的希望
-
-https://zhuanlan.zhihu.com/p/58815288
-
-强化学习之值函数学习
-
-https://mp.weixin.qq.com/s/8Cqknze_iosz6Z6cqnuK5w
-
-谷歌提出强化学习新算法SimPLe，模拟策略学习效率提高2倍
-
-https://mp.weixin.qq.com/s/hKGS4Ek5prwTRJoMCaxQLA
-
-强化学习Exploration漫游
-
-https://zhuanlan.zhihu.com/p/65116688
-
-值分布强化学习（01）
-
-https://zhuanlan.zhihu.com/p/65364484
-
-值分布强化学习（02）
-
-https://zhuanlan.zhihu.com/p/62363784
-
-强化学习之策略搜索
-
-https://zhuanlan.zhihu.com/p/70360272
-
-最前沿：深度解读Soft Actor-Critic算法

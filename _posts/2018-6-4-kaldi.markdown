@@ -48,6 +48,18 @@ http://jrmeyer.github.io/asr/2016/12/15/DNN-AM-Kaldi.html
 
 How to Train a Deep Neural Net Acoustic Model with Kaldi
 
+# PyTorch-Kaldi
+
+代码：
+
+https://github.com/mravanelli/pytorch-kaldi
+
+参考：
+
+https://mp.weixin.qq.com/s/f0B85WP-y84Xo3HaG3T6dQ
+
+语音识别开源工具PyTorch-Kaldi：兼顾Kaldi效率与PyTorch灵活性
+
 # 编译
 
 1.检查依赖。

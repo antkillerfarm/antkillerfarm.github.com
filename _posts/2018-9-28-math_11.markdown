@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（十一）——高阶统计, 勾股定理, PID算法, 辛普森悖论, 抛物线, Lie Groups
+title:  数学狂想曲（十一）——高阶统计, 勾股定理, PID算法, 辛普森悖论, 抛物线
 category: math 
 ---
 
@@ -222,6 +222,18 @@ https://mp.weixin.qq.com/s/5jZ2dzLInLtUw7rWZF4mtg
 
 张忠元：渣男受女生欢迎？当心统计陷阱
 
+https://mp.weixin.qq.com/s/o1a2YlYritcOrsLN2YuLmA
+
+神奇的霍特林法则：为什么汉堡王总是开在麦当劳旁边？
+
+https://mp.weixin.qq.com/s/eq4MllJta5NmaLARPpvang
+
+公交车总迟到？你大概掉进了“等待时间悖论”
+
+https://zhuanlan.zhihu.com/p/43934918
+
+诡异的布雷斯悖论：为什么越是修新路，城市反而更堵了！
+
 # 抛物线
 
 ![](/images/img2/conic_section.jpg)
@@ -229,17 +241,3 @@ https://mp.weixin.qq.com/s/5jZ2dzLInLtUw7rWZF4mtg
 我们都知道抛物线只有一个焦点，而椭圆、双曲线有两个焦点，但是对于真正天体的运行来说，其实只有一个焦点是有意义的，就是中心恒星的位置；另一个焦点没有实在的意义。这两个焦点中任取一个就可以构成这条圆锥曲线，而取哪一个作为恒星位置都是一样的。因为对于椭圆、双曲线来说，这两个焦点是对称的。
 
 那么抛物线呢？实际上抛物线是椭圆和双曲线的临界状态，它的另一个焦点在无穷远的地方。对于绕恒星的抛物线轨道来说，取的是那个通常说的焦点位置作为恒星位置；对于地面上的斜抛运动来说，取的是无穷远处的那个焦点位置作为恒星位置。
-
-# Lie Groups
-
-《State estimation for Robotics: A Matrix Lie Group Approach》
-
->Marius Sophus Lie，1842～1899，挪威数学家。University of Christiania博士（1871），University of Leipzig教授。当时德国的大学，一个系只有一个教授，所以这里的教授相当于现在的系主任或者院长。Lie接的是Felix Klein的班，后者跑到University of Göttingen当教授去了。
-
-## Sophus
-
-Sophus是一个C++写的Lie Groups的库。显然，它得名自Marius Sophus Lie。
-
-代码：
-
-https://github.com/strasdat/Sophus

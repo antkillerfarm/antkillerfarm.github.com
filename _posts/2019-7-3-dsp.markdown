@@ -271,37 +271,3 @@ https://mp.weixin.qq.com/s/o9cYmqwuvlbOuUXSNIuicg
 https://mp.weixin.qq.com/s/iKXZmhffiYaFHsIU21zVQA
 
 NeuralNLP-NeuralClassifier：腾讯开源深度学习文本分类工具
-
-# 名校机器学习相关课程+
-
-https://sites.google.com/view/berkeley-cs294-158-sp19/home
-
-UCB CS294-158: Deep Unsupervised Learning
-
-https://github.com/mbinary/USTC-CS-Courses-Resource
-
-中国科学技术大学计算机学院课程资源
-
-https://mp.weixin.qq.com/s/iQpERylxzfQ0P51AQBj8bA
-
-概率论导论-哈佛和斯坦福大学合著630页新书
-
-https://people.csail.mit.edu/madry/6.883/
-
-6.883 Science of Deep Learning: Bridging Theory and Practice
-
-https://fullstackdeeplearning.com/march2019
-
-UCB: Full Stack Deep Learning。这个课程是专门讲述如何部署DL工程到实际产品中。
-
-http://web.stanford.edu/class/cs246/
-
-CS246: Mining Massive Data Sets
-
-https://mp.weixin.qq.com/s/P7szDhvn5QNRKc7Iuq3Q6g
-
-UAI 2019教程《深度学习数学基础》
-
-https://mp.weixin.qq.com/s/By6xBnUgCKkK3b7pU7E1mA
-
-宾夕法尼亚大学：面向计算机视觉、机器人和机器学习的线性代数 - 附749页书籍PDF

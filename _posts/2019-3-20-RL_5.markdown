@@ -111,7 +111,7 @@ Model-Free Control应用MC需要解决两个问题：
 
 解决这一问题的方法是使用action-value function：$$q_{\pi}(s; a)$$替换state-value function：$$v_{\pi}(s)$$。即下图所示：
 
-这样做的目的是可以改善策略而不用知道整个模型，只需要知道在某个状态下采取什么什么样的行为价值最大即可。
+这样做的目的是可以改善策略而不用知道整个模型，只需要知道在某个状态下采取什么样的行为价值最大即可。
 
 2.当我们每次都使用贪婪算法来改善策略的时候，将很有可能由于没有足够的采样经验而导致产生一个并不是最优的策略，我们需要不时的尝试一些新的行为，这就是探索（Exploration）。
 
@@ -119,9 +119,13 @@ Model-Free Control应用MC需要解决两个问题：
 
 ![](/images/img2/Model-Free_Control.png)
 
-图中每一个向上或向下的箭头都对应着多个Episode。也就是说我们一般在经历了多个Episode之后才进行依次Ｑ函数更新或策略改善。实际上我们也可以在每经历一个Episode之后就更新Ｑ函数或改善策略。但不管使用那种方式，在Ɛ-贪婪探索算下我们始终只能得到基于某一策略下的近似Ｑ函数，且该算法没没有一个终止条件，因为它一直在进行探索。因此我们必须关注以下两个方面：一方面我们不想丢掉任何更好信息和状态，另一方面随着我们策略的改善我们最终希望能终止于某一个最优策略，因为事实上最优策略不应该包括一些随机行为选择。为此引入了另一个理论概念：**GLIE**。
+>这个图建议和《强化学习（三）》中Policy Iteration一节的类似图，对比着看。可以看出无论是Q函数迭代还是V函数迭代，都会收敛到最佳策略$$\pi$$。
 
-**GLIE(Greedy in the Limit with Infinite Exploration)**，直白的说是在有限的时间内进行无限可能的探索。具体表现为：所有已经经历的状态行为对（state-action pair）会被无限次探索；另外随着探索的无限延伸，贪婪算法中$$\epsilon$$值趋向于０。例如如果我们取$$\epsilon=1/k$$（k为探索的Episode数目），那么该$$\epsilon$$-greedy MC Control就具备GLIE特性。
+上图中每一个向上或向下的箭头都对应着多个Episode。也就是说我们一般在经历了多个Episode之后才进行一次Ｑ函数更新或策略改善。实际上我们也可以在每经历一个Episode之后就更新Ｑ函数或改善策略。但不管使用那种方式，在Ɛ-贪婪探索算法下，我们始终只能得到基于某一策略下的近似Ｑ函数，且该算法没有一个终止条件，因为它一直在进行探索。
+
+因此我们必须关注以下两个方面：一方面我们不想丢掉任何更好信息和状态，另一方面随着我们策略的改善我们最终希望能终止于某一个最优策略，因为事实上最优策略不应该包括一些随机行为选择。为此引入了另一个理论概念：**GLIE**。
+
+**GLIE(Greedy in the Limit with Infinite Exploration)**，直白的说是在有限的时间内进行无限可能的探索。具体表现为：所有已经经历的状态行为对（state-action pair）会被无限次探索；另外随着探索的无限延伸，贪婪算法中$$\epsilon$$值趋向于０。例如，如果我们取$$\epsilon=1/k$$（k为探索的Episode数目），那么该$$\epsilon$$-greedy MC Control就具备GLIE特性。
 
 基于GLIE的MC Control流程如下：
 
@@ -147,7 +151,7 @@ Sarsa算法的流程如下所示：
 >每个Episode执行：   
 >>初始化S   
 >>根据Q选择当前S下的A   
->>Episode中的每一步执行：   
+>>对Episode中的每一步执行：   
 >>>执行A，获得观察值R,S'   
 >>>根据Q选择当前S'下的A'   
 >>>$$Q(S,A)\leftarrow Q(S,A)+\alpha [R+\gamma Q(S',A')-Q(S,A)]$$   
@@ -166,21 +170,3 @@ $$\sum_{t=1}^\infty \alpha_t=\infty, \sum_{t=1}^\infty \alpha_t^2<\infty$$
 >Herbert Ellis Robbins，1915～2001，美国数学家，Harvard博士，University of North Carolina教授，Columbia University教授。美国科学院院士，美国艺术科学院院士。
 
 >Sutton Monro，1920～1995，美国数学家，MIT博士，Lehigh University教授。作为海军参加过二战和韩战。
-
-和TD类似，我们也可以定义n-step的Sarsa(n)算法
-
-$$Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\alpha(q_t^{n}-Q(S_t,A_t))$$
-
-Sarsa($$\lambda$$)：
-
-$$Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\alpha(q_t^{\lambda}-Q(S_t,A_t))$$
-
-Sarsa($$\lambda$$)+ET：
-
-$$Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\alpha\delta_tE_t(s,a)$$
-
-参考：
-
-https://blog.csdn.net/zchang81/article/details/77746313
-
-Sarsa与Q-learning对比

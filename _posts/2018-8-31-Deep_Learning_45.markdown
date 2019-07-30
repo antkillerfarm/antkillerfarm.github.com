@@ -136,6 +136,10 @@ https://mp.weixin.qq.com/s/3DxOb4HOeT0E0-bjP6TiSg
 
 一文读懂神经架构搜索
 
+https://zhuanlan.zhihu.com/p/75747814
+
+自动机器学习AutoML和神经架构搜索NAS简介
+
 http://blog.csdn.net/u014380165/article/details/78525687
 
 自学网络结构（二）：Learning Transferable Architectures for Scalable Image Recognition
