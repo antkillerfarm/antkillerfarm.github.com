@@ -1,0 +1,76 @@
+---
+layout: post
+title: 对Geoffrey Everest Hinton的深度挖掘
+category: essay 
+---
+
+# 对Geoffrey Everest Hinton的深度挖掘
+
+2017.1
+
+有人说当代的数学家谱系是一棵树，根源基本都可追溯到欧拉、高斯等人头上。
+
+>数学家家谱：   
+>https://www.genealogy.math.ndsu.nodak.edu/
+
+那么深度学习的谱系是什么样的呢？这里以深度学习的鼻祖Geoffrey Everest Hinton为基点，挖掘一下Hinton的师承脉络。
+
+1.Geoffrey Everest Hinton，1947～，加拿大认知心理学家、计算机科学家。
+
+2.Hugh Christopher Longuet-Higgins，1927～2004，英国化学家、认知学家。
+
+3.Charles Alfred Coulson，1910～1974，英国应用数学家、化学家。
+
+4.Sir John Edward Lennard-Jones，1894～1954，英国数学家、计算化学家。
+
+5.Sir Ralph Howard Fowler，1889～1944，英国物理学家、天文学家。
+
+6.Archibald Vivian Hill，1886～1977，英国生理学家。
+
+7.Sir Walter Morley Fletcher，1873～1933，英国生理学家。
+
+8.John Newport Langley，1852～1925，英国生理学家。
+
+9.Sir Michael Foster，1836～1907，英国生理学家。
+
+10.Thomas Henry Huxley，1825～1895，英国生物学家。
+
+11.Thomas Wharton Jones，1808～1891，英国眼科医生、生理学家。
+
+12.William Mackenzie，1791～1868，英国眼科医生。
+
+13.Georg Joseph Beer，1763～1821，奥地利眼科医生。
+
+14.Joseph Barth，1746～1818，奥地利眼科医生。
+
+15.Anton von Störck，1731～1803，奥地利医师。
+
+16.Gerard van Swieten，1700～1772，荷兰裔奥地利医师。
+
+17.Herman Boerhaave，1668～1738，荷兰植物学家、医师。
+
+18.Burchard de Volder，1643～1709，荷兰自然哲学家。
+
+19.Franciscus Sylvius，1614～1672，荷兰医师、化学家、生理学家、解剖学家。
+
+20.Otto Heurnius，1577～1652，荷兰医师、神学家、哲学家。
+
+21.Johannes Heurnius，1543～1601，荷兰医师、自然哲学家。
+
+22.Hieronymus Fabricius，1537～1619，意大利解剖学家、外科医生。
+
+23.Gabriele Falloppio，1523～1562，意大利医师、解剖学家。
+
+24.Antonio Musa Brassavola，1500～1555，意大利医师、解剖学家、植物学家。
+
+25.Niccolò Leoniceno，1428～1524，意大利医师、人类学家。
+
+26.Pietro Roccabonella，这个人的生平以及之前的师承，在wiki上已经不可考证。
+
+从上面的数据我们可以看出以下有趣的事实：
+
+1.Hinton在英国读书，却在北美发展，反映了大英帝国在二战后的急剧衰落和瓦解。
+
+2.在Fowler之前，这一派系主要和生理学、医学相关，而和数理化关系不大。这体现了第二次工业革命对教育界的影响。
+
+3.科技的中心经历了意大利->荷兰->奥地利->英国的改变，客观反映了各国在不同时期的历史发展状况。

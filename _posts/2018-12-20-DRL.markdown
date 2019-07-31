@@ -182,6 +182,14 @@ https://www.cnblogs.com/pinard/category/1254674.html
 
 一个DRL的专栏
 
+https://www.cnblogs.com/steven-yang/tag/强化学习/
+
+一个RL的专栏
+
+https://www.cnblogs.com/steven-yang/tag/博弈论/
+
+一个博弈论的专栏
+
 # 概述
 
 ![](/images/img2/RL_intro.png)
@@ -261,6 +269,10 @@ https://mp.weixin.qq.com/s/R30quVGK0TgjerLpiIK9eg
 https://www.zhihu.com/question/49230922
 
 强化学习（reinforcement learning)有什么好的开源项目、网站、文章推荐一下？
+
+https://zhuanlan.zhihu.com/p/75913329
+
+深度强化学习简介
 
 # DRL和Robotics
 

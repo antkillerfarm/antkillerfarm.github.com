@@ -138,9 +138,9 @@ $$J(w)=E_\pi[(v_\pi(S)-x(S)^Tw)^2]$$
 
 $$\Delta w=\alpha (v_\pi(S)-\hat v(S,w))x(S)$$
 
-上述公式都是基本的ML方法，这里不再赘述。既然是传统ML方法，自然少不了特征工程。
+上述公式都是基本的ML方法，这里不再赘述。
 
-比如Table Lookup Features：
+最简单的一类线性函数，被叫做Table Lookup Features：
 
 $$x^{table}(S)=\begin{pmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{pmatrix}$$
 
@@ -167,6 +167,15 @@ $$\hat v(S,w)=\begin{pmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{pmatrix}\begin
 | MC | $$\Delta w=\alpha (\color{red}{G_t}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、无偏采样 | 收敛至一个局部最优解 |
 | TD(0) | $$\Delta w=\alpha (\color{red}{R_{t+1}+\gamma\hat q(S_{t+1},A_{t+1},w)}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、有偏采样 | 收敛至全局最优解 |
 | TD($$\lambda$$) | $$\Delta w=\alpha (\color{red}{q_t^\lambda}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、有偏采样 |  |
+
+下面给出各种算法的收敛特性。
+
+**预测算法的收敛性**：
+
+| On/Off-Policy | Algorithm | Table Lookup | Linear | Non-Linear |
+|:--:|:--:|:--:|:--:|:--:|
+| On-Policy | MC<br/>TD(0)<br/>TD($$\lambda$$) | Yes<br/>Yes<br/>Yes | Yes<br/>Yes<br/>Yes | Yes<br/>Yes<br/>Yes |
+| On-Policy | MC<br/>TD(0)<br/>TD($$\lambda$$) | Yes<br/>Yes<br/>Yes | Yes<br/>Yes<br/>Yes | Yes<br/>Yes<br/>Yes |
 
 ## Batch Methods
 

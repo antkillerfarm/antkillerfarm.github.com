@@ -32,6 +32,26 @@ Ubuntu 16.04正式发布（2016.4.21）之后，我第一时间下载了下来�
 
 `sudo apt-get remove gvfs-backends`
 
+# 系统清理工具
+
+1.ubuntu tweak
+
+一个国内小伙写的工具。(2016.5停止更新，不支持Ubuntu 16.04以上的版本。)官网：
+
+http://ubuntu-tweak.com/
+
+代码：
+
+https://github.com/tualatrix/ubuntu-tweak
+
+安装依赖：
+
+`sudo apt-get install python-pip python-aptdaemon.gtk3widgets python-gi python-lxml libwebkitgtk-3.0-dev libgconf2-dev python-compizconfig libdbus-glib-1-dev python-dbus python-xdg python-cairo`
+
+2.BleachBit
+
+支持平台广泛，大多数Linux发行版都有对应的软件包。
+
 # 清理系统
 
 ## 清理安装包
@@ -147,24 +167,6 @@ MTP类似于HTTP之类的应用层通信协议传输，由于不涉及驱动的�
 | 思维导图 | Mindmanager | FreeMind |
 | 快速原型 | Axure RP | pencil |
 
-# 发行版乱战
-
-Linux以发行版众多闻名于世。最近发现了以下网站，或可对各个发行版进行一个简单的比较。
-
-http://distrowatch.com/
-
-下面对几个主要的参数，进行一下点评：
-
-## Office
-
-主要是3个流派：
-
-1.StarOffice->OpenOffice.org->LibreOffice。最初由Sun主导，后来改为Google主导。
-
-2.KOffice->Calligra Office。KDE项目的成果。
-
-3.GOffice。Gnome项目的成果，和前两个相比，GOffice的组件比较独立，没有什么协同能力。
-
 # Firefox插件
 
 http://mozilla.com.cn/addon/76-pagesaver/
@@ -174,32 +176,6 @@ http://mozilla.com.cn/addon/76-pagesaver/
 # Virtual MIDI Piano Keyboard
 
 VMPK是一款MIDI生成工具软件，也就是俗称的“虚拟电子琴”软件。但它本身只生成MIDI输出，需要配合使用MIDI后处理软件，才能发声。常见的MIDI后处理软件有Qsynth、TiMidity。
-
-# 便签软件
-
-主要有两类便签软件：
-
-1.支持超链接的便签。典型的有Gnote和Tomboy，这两个软件都有内容检索的功能。
-
-2.桌面随意贴。典型的有Indicator Stickynotes和Knotes。后者有内容检索的功能，而前者没有。
-
-# ASCII表情
-
-╮(╯_╰)╭
-
-(^ω^)
-
-# 常用英语缩写
-
-FYI：for your information
-
-IFF：if and only if
-
-eta：estimated time of arrival
-
-w/o：without
-
-N.B.:nota bene 注意,留心
 
 # 远程桌面
 
@@ -273,6 +249,14 @@ http://snapcraft.io/
 
 删除：`sudo snap remove <snap name>`
 
+有的时候，snap官方的下载比较慢，这时可以到如下网站直接下载snap包：
+
+https://uappexplorer.com/snaps
+
+安装离线包：
+
+`sudo snap install xxx.snap --dangerous`
+
 参考：
 
 https://www.ubuntu.com/desktop/snappy
@@ -295,11 +279,35 @@ Ubuntu Make前身是Ubuntu Developer Tools Center。可在Ubuntu平台上快速�
 
 putty在ubuntu平台的复制粘贴，依赖于鼠标中键。
 
-# XMind
+# 思维导图
 
-XMind是一款开源的思维导图工具，比FreeMind更友好。官网：
+## XMind
+
+官网：
 
 https://www.xmind.net/
+
+## Freemind
+
+官网：
+
+http://freemind.sourceforge.net/wiki/index.php/Main_Page
+
+安装：
+
+`sudo snap install freemind`
+
+## Freeplane
+
+官网：
+
+https://www.freeplane.org/wiki/index.php/Home
+
+安装：
+
+`sudo apt install freeplane`
+
+功能上来说，Freeplane不算太强，但是它原生支持Latex。。。
 
 # Chrome
 
@@ -362,21 +370,3 @@ http://www.ubuntuthemes.org/
 # Battle of Wesnoth
 
 在逛Ubuntu软件中心的时候，发现了Battle of Wesnoth这个开源的回合制战旗游戏。试着玩了一下，感觉蛮不错的。正好这个项目在Source Forge上使用Git管理源代码。考虑到Android Source也是用Git管理的，于是就用Git下载了Battle of Wesnoth的source来熟悉一下Git的用法。
-
-# Ubuntu 18.04使用手记
-
-又是两年过去了，这次是Ubuntu 18.04（2018.4.26发布）。
-
-这次的变化还是有点大，Ubuntu舍弃了自己开发的Unity，转回Gnome，连带着好多软件的界面都出现了一定的调整。这个适应过程，要长于之前的几次升级。
-
->前些年由于Unity界面乏善可陈，Ubuntu的版本升级被吐槽为换壁纸。这次算是换主题吧。
-
-由于这个改变是2017.4做出的，有了1年的过渡期，因此拿到手的Ubuntu 18.04的成品度还是蛮高的。
-
-输入法比原来好，但有些软件存在兼容问题。
-
-内核：4.15
-
-LibreOffice：6.0
-
-Emacs：25.2

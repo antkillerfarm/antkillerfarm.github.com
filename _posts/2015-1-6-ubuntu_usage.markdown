@@ -284,25 +284,17 @@ Ubuntu使用apt-get安装本地deb包
 
 `sudo apt-get install <pkg_name>=<version>`
 
-# 系统清理工具
+## dpkg
 
-1.ubuntu tweak
+dpkg是Debian类Linux发行版的基本包管理工具，apt可以看作对它的高层封装。第三方软件一般采用这种安装方式。
 
-一个国内小伙写的工具。(2016.5停止更新，不支持Ubuntu 16.04以上的版本。)官网：
+安装：
 
-http://ubuntu-tweak.com/
+`dpkg -i xxx.deb`
 
-代码：
+如果缺少依赖，可以用如下方式解决：
 
-https://github.com/tualatrix/ubuntu-tweak
-
-安装依赖：
-
-`sudo apt-get install python-pip python-aptdaemon.gtk3widgets python-gi python-lxml libwebkitgtk-3.0-dev libgconf2-dev python-compizconfig libdbus-glib-1-dev python-dbus python-xdg python-cairo`
-
-2.BleachBit
-
-支持平台广泛，大多数Linux发行版都有对应的软件包。
+`sudo apt --fix-broken install`
 
 # tftp
 
