@@ -107,6 +107,16 @@ The Expansion of the Fireball of an Explosion
 
 这里的推导和热力学统计其实没多大关系，算是本人学习玻尔兹曼分布的副产品吧。
 
+----
+
+https://futureoflife.org/background/us-nuclear-targets/
+
+美国核弹目标清单（1959年）
+
+https://nuclearsecrecy.com/nukemap/
+
+一个核弹效果的评估网站
+
 # Lanchester战争模型
 
 第一次世界大战期间，英国工程师Lanchester针对战争问题建模，以预测战争的结果。
@@ -256,4 +266,3 @@ http://pinkyjie.com/2010/08/31/covariance/
 $$E(X)\approx \frac{1}{n}\sum_{k=1}^{n}x_k$$
 
 贝努利大数定律：事件A发生的频率$$\frac{n_A}{n}$$依概率收敛于事件A的概率p。当n很大时，事件发生的频率与概率有较大偏差的可能性很小：$$p\approx \frac{n_A}{n}$$
-

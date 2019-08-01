@@ -98,6 +98,10 @@ https://mp.weixin.qq.com/s/5covdsSaNBIAqORbtfHa4w
 
 效果超赞服务器挤爆！用GAN生成人像油画火了，带你一秒回到文艺复兴
 
+https://mp.weixin.qq.com/s/2ygq9D9x1ae_rMcu6eZb-w
+
+基于空间自适应归一化的图像语义合成
+
 # 三维处理
 
 https://github.com/timzhang642/3D-Machine-Learning
