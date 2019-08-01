@@ -352,6 +352,10 @@ http://www.xfyun.cn/share/?p=2626
 
 开发者常犯的十大加密错误
 
+https://mp.weixin.qq.com/s/nWoo-Pr50341WJNwtSZq1w
+
+工程师的灵魂拷问：你的密钥安全吗？
+
 # 多目标进化
 
 https://mp.weixin.qq.com/s/Jc5f4iX9uoOo5igQ79P77w

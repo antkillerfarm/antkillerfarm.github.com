@@ -72,6 +72,10 @@ https://mp.weixin.qq.com/s/FoX2bXCJlFYjb9U6JcZCqg
 
 超详细中文预训练模型ERNIE使用指南
 
+https://mp.weixin.qq.com/s/EYQXM-1WSommj9mKJZVVzw
+
+百度正式发布ERNIE 2.0，16项中英文任务超越BERT、XLNet，刷新SOTA
+
 ## XLNet
 
 https://mp.weixin.qq.com/s/29y2bg4KE-HNwsimD3aauw

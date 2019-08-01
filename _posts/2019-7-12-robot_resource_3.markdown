@@ -150,6 +150,14 @@ https://mp.weixin.qq.com/s/OHZl3KHfhh7i_EJ9pDvBPg
 
 V2X技术发展历程及应用研究
 
+https://mp.weixin.qq.com/s/UOfagdeiREP4Acakkvfd7A
+
+自动驾驶四轮独立驱动电动汽车的自适应分层轨迹跟踪控制方法
+
+https://www.cnblogs.com/guoyaohua/p/8940871.html
+
+SCNN车道线检测--(SCNN)Spatial As Deep: Spatial CNN for Traffic Scene Understanding（论文解读）
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。

@@ -254,10 +254,6 @@ https://zhuanlan.zhihu.com/p/30268946
 
 从CNN视角看在自然语言处理上的应用
 
-https://mp.weixin.qq.com/s/CGZhp1eJU0jd9dcGJzPu0w
-
-LSF-SCNN：一种基于CNN的短文本表达模型及相似度计算的全新优化模型
-
 https://mp.weixin.qq.com/s/9-_Gwzsyk3Z6dItlz5ChrA
 
 句对匹配任务中的样本选择偏差与去偏方法

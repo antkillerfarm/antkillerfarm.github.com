@@ -324,6 +324,10 @@ https://mp.weixin.qq.com/s/n3ZUsq2I0CaJ5pIl2nZUFQ
 
 3D目标检测：MonoDIS
 
+https://mp.weixin.qq.com/s/uKCQVpkN6Va8jZisAyAfNA
+
+3D人脸技术漫游指南
+
 # 深度贝叶斯学习
 
 https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og
@@ -373,3 +377,7 @@ https://mp.weixin.qq.com/s/2LkpuchuHs82Sxs5rD8bWA
 https://zhuanlan.zhihu.com/p/74573041
 
 针对推荐系统的深度贝叶斯多目标学习
+
+https://mp.weixin.qq.com/s/b041h_hbHQYiXCiDHGaD5w
+
+深度贝叶斯自然语言处理，304页ppt带你了解最新研究进展

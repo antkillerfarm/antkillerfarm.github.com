@@ -253,3 +253,7 @@ BigBiGAN的前世今生，走向成熟的特征抽取器
 https://mp.weixin.qq.com/s/qdQg3bg-_TXTMTklTSck8Q
 
 Rob-GAN：生成器、鉴别器以及对抗攻击者
+
+https://mp.weixin.qq.com/s/DLoFJmr5H04R8cLixuCObA
+
+中科院、百度研究院等联合提出UGAN，生成图片难以溯源

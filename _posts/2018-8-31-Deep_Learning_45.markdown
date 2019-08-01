@@ -363,3 +363,7 @@ https://mp.weixin.qq.com/s/_31zbbQ5dHf2UaI8GhXozw
 https://mp.weixin.qq.com/s/slrRXgD49I7ZG24ialVxPw
 
 第四范式涂威威：自动机器学习求解三要素与发展趋势
+
+https://mp.weixin.qq.com/s/X5Oi8gKyT5Tmh7ljon3MzQ
+
+谷歌引入自动网络设计，高效解决大规模深度推荐模型的特征嵌入问题

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十）——自动求导, 元学习, 深度哈希, 多模态学习
+title:  深度学习（三十）——自动求导, 元学习, 深度哈希
 category: DL 
 ---
 
@@ -61,6 +61,10 @@ https://mp.weixin.qq.com/s/tAfTmGWqG6IR8SOP0uKW6g
 https://mp.weixin.qq.com/s/zOdy-1vCJD_dPFSoe0ELFA
 
 图论与图学习（一）：图的基本概念
+
+https://mp.weixin.qq.com/s/Orv47r4EchVIR7VcleoJ5Q
+
+谷歌图表征学习创新：学习单个节点多个嵌入&自动学习最优超参数
 
 # 自动求导
 
@@ -364,41 +368,3 @@ HashGAN:基于注意力机制的深度对抗哈希模型提升跨模态检索效
 https://mp.weixin.qq.com/s/3Z2Zc8zTq2uiPyw7ZuuZfw
 
 解密美图大规模多媒体数据检索技术DeepHash
-
-# 多模态学习
-
-https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw
-
-多模态学习研究进展综述
-
-https://mp.weixin.qq.com/s/vpBPkjuCebSWh5qPLYHCkw
-
-上海交大提出多模态框架“EmotionMeter”，更精准地识别人类情绪
-
-https://mp.weixin.qq.com/s/BBg04rDtiqU-XrWortufNA
-
-康奈尔&英伟达提出多模态无监督图像转换新方法
-
-http://mp.weixin.qq.com/s/khOINUyrNV3TFfgNRheH0A
-
-卷积神经网络压缩、多模态的语义分析研究
-
-https://mp.weixin.qq.com/s/ywU4L659iRcmIgmV6RtbXA
-
-DeepMind新研究连接听与看，实现“听声辨位”的多模态学习
-
-https://mp.weixin.qq.com/s/1qhcyTXttgKWlw-Oy556Tw
-
-TPAMI2019最新《多模态机器学习综述》
-
-https://mp.weixin.qq.com/s/BczgUuh2FIvP5MG9xh87wQ
-
-多模态多任务学习新论文
-
-https://mp.weixin.qq.com/s/ipj8qpYRiYbIeXn2PZb1SQ
-
-5G时代下多模态理解做不到位注定要掉队
-
-https://mp.weixin.qq.com/s/UghgWBN7mE8oJdMUvjAjcQ
-
-何晖光：多模态情绪识别及跨被试迁移学习

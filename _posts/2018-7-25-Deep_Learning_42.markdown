@@ -146,6 +146,8 @@ DNC4广义线性回归
 
 ![](/images/img2/BrainChip_Fig2.gif)
 
+![](/images/img3/Tianjic.png)
+
 参考：
 
 https://homepages.cwi.nl/~sbohte/publication/paugam_moisy_bohte_SNNChapter.pdf
@@ -183,3 +185,7 @@ https://mp.weixin.qq.com/s/yaAuVpuhSGabOswKnv9q5Q
 https://mp.weixin.qq.com/s/m7UHX3XL5sC3oBdu3KoyOg
 
 脉冲神经网络（SNN）概述
+
+https://mp.weixin.qq.com/s/vwZfmyIEdEdpqJWKOSKYYw
+
+清华天机AI芯片登Nature封面：全球首款异构融合类脑芯片，实现自行车无人驾驶

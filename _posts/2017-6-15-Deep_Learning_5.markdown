@@ -130,6 +130,12 @@ https://github.com/yandex/faster-rnnlm
 
 《Item2Vec: Neural Item Embedding for Collaborative Filtering》
 
+在实际的新闻信息流推荐中，Word2Vec的点击效果比ALS要好30%+，主要有两个原因：
+
+1. 用户的兴趣和行为是多样的，局部的行为往往更偏相关，往往整体的样本差异是很大的；
+
+2. 在负样本采样中，ALS 是全局的负样本采样，Word2Vec 更倾向高频，倾向高频的采样更不容易让学习出的结果都与高频（头部）的结果相似。
+
 参考：
 
 https://mp.weixin.qq.com/s/vpxCP1Uw23y9XNTRUhY79w
@@ -143,6 +149,10 @@ https://www.sohu.com/a/215535516_99992181
 https://mp.weixin.qq.com/s/Ta2Im4WCWq5eQ8SF-mNpuQ
 
 万物皆Embedding，从经典的word2vec到深度学习基本操作item2vec
+
+https://mp.weixin.qq.com/s/6XJuZBTmfRWWFwS9J3HOsQ
+
+推荐技术随谈
 
 ## word2vec/doc2vec的缺点
 

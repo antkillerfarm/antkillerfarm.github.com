@@ -403,19 +403,3 @@ https://mp.weixin.qq.com/s/B7PgyhSROXnEUzfdQc4jOw
 https://mp.weixin.qq.com/s/CwMGZUWaopT3HAIXmlowsA
 
 目前最强开源人脸检测算法RetinaFace
-
-https://mp.weixin.qq.com/s/ViX3kAT96aaLZ0r9SNtSWA
-
-强判别能力的深度人脸识别
-
-https://zhuanlan.zhihu.com/p/71003906
-
-开箱即用的动漫头像检测包
-
-https://zhuanlan.zhihu.com/p/75752110
-
-从自动化颜艺挑选看异常检测的实际挑战（可和上一篇配套食用）
-
-https://zhuanlan.zhihu.com/p/55479744
-
-人脸检测与对齐python实现

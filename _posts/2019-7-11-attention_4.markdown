@@ -97,3 +97,11 @@ https://mp.weixin.qq.com/s/aixpv9t1PLPRWUP6PvZ0EQ
 https://mp.weixin.qq.com/s/i3Xd_IB7R0-QPztn-pgpng
 
 遍地开花的Attention，你真的懂吗？
+
+https://mp.weixin.qq.com/s/rrbwItXt-1EaGiqtDEGvog
+
+为节约而生：从标准Attention到稀疏Attention
+
+https://mp.weixin.qq.com/s/G4mFW8cn-ho3KGmbw5sSTw
+
+计算机视觉中注意力机制原理及其模型发展和应用

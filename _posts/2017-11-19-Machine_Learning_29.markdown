@@ -145,3 +145,7 @@ https://zhuanlan.zhihu.com/p/59196946
 https://zhuanlan.zhihu.com/p/63351454
 
 如何用贝叶斯概率矩阵分解修复缺失数据？
+
+https://mp.weixin.qq.com/s/GuM0jZlI4mC-DFSWybtG1A
+
+贝叶斯优化简介
