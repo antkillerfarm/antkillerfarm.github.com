@@ -184,6 +184,10 @@ https://mp.weixin.qq.com/s/WNkzfvYtEO5zJoe_-yAPow
 
 一文览尽计算机视觉研究方向
 
+https://zhuanlan.zhihu.com/p/55747295
+
+深度学习在计算机视觉领域（包括图像，视频，3-D点云，深度图）的应用一览
+
 ## CNN简史
 
 ![](/images/article/computer_vision_3.jpg)

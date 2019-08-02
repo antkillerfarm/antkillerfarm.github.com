@@ -238,6 +238,10 @@ https://mp.weixin.qq.com/s/NHjfCLp6k7GYh8fScL_UWg
 
 几天前，一颗小行星与地球擦肩而过，我们几乎毫不知情
 
+https://mp.weixin.qq.com/s/XDBvVjIRfjtDrTN4zd92yg
+
+高铁辐射致癌，为什么会有这种令人喷饭的言论出现？
+
 ## Bélády's Algorithm
 
 Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。

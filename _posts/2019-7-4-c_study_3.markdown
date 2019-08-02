@@ -208,13 +208,29 @@ https://www.cnblogs.com/winnersun/archive/2011/07/16/2108440.html
 
 C++中explicit关键字的作用
 
-## tuple
+## std::tuple
 
 {% highlight cpp %}
 auto tuple = std::make_tuple(1, 'A', "test");
 std::cout << std::get<0>(tuple) << std::endl;
 std::cout << std::get<1>(tuple) << std::endl;
 std::cout << std::get<2>(tuple) << std::endl;
+{% endhighlight %}
+
+## std::tie
+
+可用tuple或pair返回多个返回值，然后用tie进行解包。这里的语法非常类似python。
+
+{% highlight cpp %}
+std::pair<int, std::string> fun_tie(int a, std::string str)
+{
+  return std::make_pair(a, str);
+}
+
+int a;
+std::string str;
+std::tie(a , str) = fun_tie(12, std::string("Pony Ma"));
+std::cout << a << "," << str << std::endl;
 {% endhighlight %}
 
 ## 模板实参推导

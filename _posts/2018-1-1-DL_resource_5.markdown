@@ -362,10 +362,6 @@ https://mp.weixin.qq.com/s/_w4IIRY6LwqehpDlEXt90A
 
 牛津大学提出神经网络新训练法：用低秩结构增强网络压缩和对抗稳健性
 
-https://mp.weixin.qq.com/s/ysRppHSD0zX1tv197ubzWg
-
-深度学习在计算机视觉领域的应用一览
-
 https://mp.weixin.qq.com/s/rK_RcVY9_3kA5MWD3jAyGg
 
 腾讯优图25篇CVPR 2019论文详解！涵盖视觉对抗学习、人脸检测等
