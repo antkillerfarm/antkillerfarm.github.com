@@ -6,6 +6,22 @@ category: Attention
 
 # Attention进阶（续）
 
+https://mp.weixin.qq.com/s/ANpBFnsLXTIiW6WHzGrv2g
+
+自注意力机制学习句子embedding
+
+https://mp.weixin.qq.com/s/49fQX8yiOIwDyof3PD01rA
+
+CMU&谷歌大脑提出新型问答模型QANet：仅使用卷积和自注意力，性能大大优于RNN
+
+https://mp.weixin.qq.com/s/c64XucML13OwI26_UE9xDQ
+
+滴滴披露语音识别新进展：基于Attention显著提升中文识别率
+
+https://mp.weixin.qq.com/s/7OYY3L7gL4wVv_EjoosOHA
+
+如何增强Attention Model的推理能力
+
 https://mp.weixin.qq.com/s/9Kt6_DfeYRnhsb10aCSFGw
 
 FAGAN：完全注意力机制（Full Attention）GAN，Self-attention+GAN

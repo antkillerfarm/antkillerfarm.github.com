@@ -130,6 +130,10 @@ https://zhuanlan.zhihu.com/p/38855840
 
 SphereReID：从人脸到行人，Softmax变种效果显著
 
+https://mp.weixin.qq.com/s/ZoLO6OilivPgle03KdNzCQ
+
+人脸识别中Softmax-based Loss的演化史
+
 # 机器学习分类器性能指标
 
 很多学习器是为测试样本产生一个实值或概率预测，然后将这个预测值与一个分类阈值（threshold）进行比较，若大于阈值则分为正类，否则为反类。这个实值或概率预测结果的好坏，直接决定了学习器的泛化能力。实际上，根据这个实值或概率预测结果，我们可将测试样本进行**排序**，“最可能”是正例的排在最前面，“最不可能”是正例的排在最后面。这样，分类过程就相当于在这个排序中以某个“截断点”（cut point）将样本分为两部分，前一部分判作正例，后一部分则判作反例。
@@ -308,11 +312,3 @@ https://mp.weixin.qq.com/s/Pvu7JAHvsGJdL0mJIhVwng
 https://mp.weixin.qq.com/s/oMiNGJOCqjEHoTmfBQv6EA
 
 使用神经网络为A*搜索算法赋能：以个性化路径推荐为例
-
-# 金融模型
-
-Capital asset pricing model
-
-Fama–French three-factor model
-
-Carhart four-factor model

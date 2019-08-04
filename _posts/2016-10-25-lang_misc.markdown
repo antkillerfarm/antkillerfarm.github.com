@@ -162,11 +162,15 @@ https://golang.org
 
 教程：
 
-https://golang.org
+https://www.runoob.com/go/go-tutorial.html
 
 安装：
 
 `sudo apt install golang`
+
+运行：
+
+`go run xxx.go`
 
 参考：
 

@@ -250,6 +250,10 @@ https://mp.weixin.qq.com/s/Pgf6JMokilV9JxYWi7Y20Q
 
 揭秘自编码器，一种捕捉数据最重要特征的神经网络
 
+https://mp.weixin.qq.com/s/FpPlSMfbtcxg_UnH0lwaqA
+
+手把手教你实现去噪自编码器（Denoise Autoencoder）
+
 # 词向量
 
 ## One-hot Representation

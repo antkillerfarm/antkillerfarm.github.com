@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/w2D2q5Ym7HnPWPP7VOWjJw
 
 OpenCV中图像频率域滤波
 
+https://mp.weixin.qq.com/s/TDUlkl-_QWIcWKdbDGmhPw
+
+如何从OpenCV源码编译生成OpenCV-Python的SDK开发包
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。

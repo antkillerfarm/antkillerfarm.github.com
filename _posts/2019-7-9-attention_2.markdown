@@ -298,6 +298,10 @@ https://mp.weixin.qq.com/s/VG5WHwuO6DKRzcm0pddeMQ
 
 参数少一半，效果还更好，天津大学和微软提出Transformer压缩模型
 
+https://mp.weixin.qq.com/s/9aW1p03f6mEnvSRf56rcgw
+
+Transformer-XL模型浅析
+
 # BERT
 
 论文：

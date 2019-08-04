@@ -359,3 +359,7 @@ https://mp.weixin.qq.com/s/Ojah3bo8M0KTTk7iYODSpw
 https://mp.weixin.qq.com/s/m5rUNy938cCNjD7L3J4h-Q
 
 让CNN有了平移不变性，同时提升ImageNet成绩：Adobe开源新方法，登上ICML
+
+https://mp.weixin.qq.com/s/LwBOK7J1tby4WecOiRoA6g
+
+告诉我我在哪？——目标级别的场景上下文预测

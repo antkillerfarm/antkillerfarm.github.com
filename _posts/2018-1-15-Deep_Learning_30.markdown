@@ -62,9 +62,21 @@ https://mp.weixin.qq.com/s/zOdy-1vCJD_dPFSoe0ELFA
 
 图论与图学习（一）：图的基本概念
 
+https://mp.weixin.qq.com/s/0ZdS1WOSDZiXnxP8fybBAw
+
+图论与图学习（二）：图算法
+
 https://mp.weixin.qq.com/s/Orv47r4EchVIR7VcleoJ5Q
 
 谷歌图表征学习创新：学习单个节点多个嵌入&自动学习最优超参数
+
+https://mp.weixin.qq.com/s/sJB4N_ObUqKM8H65yU_1sg
+
+Graph基础知识介绍
+
+https://mp.weixin.qq.com/s/jBQOgP-I4FQT1EU8y72ICA
+
+GNN系列：图神经网络的“开山之作”CGN模型
 
 # 自动求导
 

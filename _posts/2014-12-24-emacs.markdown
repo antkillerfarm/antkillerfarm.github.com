@@ -329,6 +329,10 @@ https://mp.weixin.qq.com/s/QpJWyLY5AyrXGF-j7LYTGg
 
 1700页数学笔记火了！全程敲代码，速度飞快易搜索，硬核小哥教你上手LaTeX+Vim
 
+https://mp.weixin.qq.com/s/tvn2SKXyrZZRGDF6-Myx3A
+
+Vim激荡30年发展史
+
 # IDE
 
 http://pypl.github.io/IDE.html

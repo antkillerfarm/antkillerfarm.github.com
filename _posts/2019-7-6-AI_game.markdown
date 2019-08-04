@@ -4,7 +4,25 @@ title:  AI游戏
 category: resource 
 ---
 
-## AI游戏
+# AI游戏
+
+博弈树（Game Tree）
+
+极小化极大算法（Minimax）
+
+Alpha-Beta剪枝
+
+CFR（Counterfactual Regret Minimization）
+
+## 资料
+
+http://gameaibook.org/
+
+一个游戏AI方面的教程
+
+## 参考
+
+游戏AI的缘起与进化
 
 https://zhuanlan.zhihu.com/p/22604627
 

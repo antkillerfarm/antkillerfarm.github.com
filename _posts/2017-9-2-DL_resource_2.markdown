@@ -8,6 +8,18 @@ category: resource
 
 ## 教程（续）
 
+https://mp.weixin.qq.com/s/GYno7htF_-Hw4UN_Nc2etg
+
+直观梳理深度学习关键概念：优化算法、调参基本思路、正则化方式等
+
+https://mp.weixin.qq.com/s/l3AgM6U7EEq3fZrhY_8Zug
+
+机器学习老中医：利用学习曲线诊断模型的偏差和方差
+
+https://mp.weixin.qq.com/s/n-vnekQfns6_a6f7InhMpA
+
+最优解的平坦度与鲁棒性，我们该如何度量模型的泛化能力
+
 https://mp.weixin.qq.com/s/J75ZdrNCSwBO1y9o84THQg
 
 综述论文：机器学习中的模型评价、模型选择与算法选择
@@ -253,4 +265,3 @@ https://mp.weixin.qq.com/s/empXVsgqe6OljVa1Hduigw
 https://mp.weixin.qq.com/s/_IOdMk8CJbZkeYO9CDDgZQ
 
 AI设计师“鲁班”进化史：每秒制作8000张双11海报，没有一张雷同！
-

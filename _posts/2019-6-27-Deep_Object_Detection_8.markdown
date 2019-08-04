@@ -109,3 +109,7 @@ https://mp.weixin.qq.com/s/A51X1e9E9T9pPbYdQVQtSg
 https://blog.csdn.net/u014380165/article/details/80602027
 
 Cascade RCNN算法笔记
+
+https://mp.weixin.qq.com/s/KupXlIt8bHLLGF6qWFH6vQ
+
+从Grid R-CNN到Grid R-CNN Plus：基于网格的目标检测演化

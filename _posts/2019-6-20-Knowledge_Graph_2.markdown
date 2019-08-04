@@ -174,6 +174,10 @@ https://mp.weixin.qq.com/s/R-KLHsYLbb8WHRjk6gwrhw
 
 基于复杂空间关系旋转的知识表示方法
 
+https://mp.weixin.qq.com/s/zhtJoaJ6Js0it-MM9stsHQ
+
+KGCN：使用TensorFlow进行知识图谱的机器学习
+
 # 数据结构 & 普通CS算法
 
 https://mp.weixin.qq.com/s/52JFdyaLwZq7nWiZq6z6qA

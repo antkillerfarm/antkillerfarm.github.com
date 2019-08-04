@@ -210,6 +210,10 @@ https://mp.weixin.qq.com/s/z26bXb8eAelrwj6Tkvm_-A
 
 卷积神经网络常见架构AlexNet、ZFNet、VGGNet、GoogleNet和ResNet模型的理论与实践
 
+https://mp.weixin.qq.com/s/MlEGnUPhomQn0oGGEpF9ig
+
+通俗易懂：图解10大CNN网络架构
+
 # AI可解释性
 
 XAI(Explainable Artificial Intelligence)
