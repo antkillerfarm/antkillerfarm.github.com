@@ -314,7 +314,7 @@ TikZ是一个用于绘图的Tex包。TikZ基于PGF（portable graphics format）
 
 安装：
 
-`sudo apt install qtikz texlive-fonts-recommended`
+`sudo apt install qtikz texlive-fonts-recommended texlive-latex-extra`
 
 官方文档：
 

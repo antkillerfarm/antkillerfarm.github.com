@@ -114,6 +114,10 @@ https://mp.weixin.qq.com/s/cjo5MYa-t9tWDCjwDpkOeg
 
 推荐系统评估
 
+https://mp.weixin.qq.com/s/M0-TIuZBIYi4xGv5SkN6xw
+
+利用高效率的补贴策略驱动用户增长
+
 ## 召回
 
 这个词在推荐系统中至少有三个不同的含义：

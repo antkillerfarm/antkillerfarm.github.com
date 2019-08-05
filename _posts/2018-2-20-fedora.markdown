@@ -236,6 +236,10 @@ https://www.jianshu.com/p/53cccae3c443
 
 Linux中的pushd和popd
 
+## 批量修改后缀名
+
+`rename 's/\.pgf/\.tex/' *`
+
 ## 参考
 
 https://blog.csdn.net/iot_flower/article/details/69055590

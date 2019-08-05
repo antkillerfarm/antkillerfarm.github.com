@@ -80,6 +80,10 @@ https://www.cnblogs.com/lillylin/p/9315180.html
 
 论文阅读笔记
 
+https://mp.weixin.qq.com/s/Ai43GvLsEtFrfArHUvqLXg
+
+Aster:具有柔性矫正功能的注意力机制场景文本识别方法
+
 ## CTPN
 
 https://zhuanlan.zhihu.com/p/34757009
