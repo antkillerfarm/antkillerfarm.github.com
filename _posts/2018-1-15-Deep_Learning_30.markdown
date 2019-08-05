@@ -78,6 +78,14 @@ https://mp.weixin.qq.com/s/jBQOgP-I4FQT1EU8y72ICA
 
 GNN系列：图神经网络的“开山之作”CGN模型
 
+https://mp.weixin.qq.com/s/DJAimuhrXIXjAqm2dciTXg
+
+何时能懂你的心——图卷积神经网络（GCN）
+
+https://mp.weixin.qq.com/s/DNePTCpyjrlZEixw5L7w5A
+
+GraphSAGE：我寻思GCN也没我牛逼
+
 # 自动求导
 
 DL发展到现在，其基本运算单元早就不止CNN、RNN之类的简单模块了。针对新运算层出不穷的现状，各大DL框架基本都实现了自动求导的功能。

@@ -310,7 +310,7 @@ $$\arg\min_{\theta,\theta_\Delta}$$
 
 ## TikZ
 
-TikZ是一个用于绘图的Tex包。
+TikZ是一个用于绘图的Tex包。TikZ基于PGF（portable graphics format）。TikZ ist kein Zeichenprogram(TikZ is not a drawing program)。
 
 安装：
 
@@ -367,6 +367,12 @@ https://sandrocirulli.net/how-to-plot-functions-with-latex/
 http://www.latexstudio.net/archives/category/tex-graphics/tikz-example
 
 一个tikz的论坛
+
+## Tikz+Gnuplot
+
+`sudo apt install gnuplot`
+
+`pdflatex --enable-write18 --shell-escape xxx.tex`
 
 ## gridslides
 
