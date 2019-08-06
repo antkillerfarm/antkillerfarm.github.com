@@ -74,6 +74,8 @@ https://www.cnblogs.com/shine-lee/p/10906535.html
 
 # NN Quantization
 
+![](/images/img3/NN_Quantization.jpg)
+
 ## 概述
 
 NN的量化计算是近来NN计算优化的方向之一。相比于传统的浮点计算，整数计算无疑速度更快，而NN由于自身特性，对单点计算的精确度要求不高，且损失的精度还可以通过retrain的方式恢复大部分，因此通常的科学计算的硬件（没错就是指的GPU）并不太适合NN运算，尤其是NN Inference。

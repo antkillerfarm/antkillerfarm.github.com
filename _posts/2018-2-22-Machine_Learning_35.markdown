@@ -170,6 +170,10 @@ https://blog.csdn.net/baidu_21807307/article/details/51843079
 
 浅谈卡尔曼滤波（Kalman Filter）
 
+https://mp.weixin.qq.com/s/ZlyF1GcmpwZoT-3o4T567A
+
+卡尔曼滤波算法及其应用
+
 # 推荐算法中的常用排序算法
 
 ## Pointwise方法

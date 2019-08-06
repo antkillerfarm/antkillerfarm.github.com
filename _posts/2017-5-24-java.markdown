@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Java, Javascript（二）
+title:  Java, Javascript（二）, VS, Kotlin
 category: language 
 ---
 
@@ -311,3 +311,47 @@ https://mp.weixin.qq.com/s/OwJ2gBWvmj8rJ_vW5nzaPA
 https://mp.weixin.qq.com/s/pYtKpfL68lEy9bus9HHAMQ
 
 Javascript将HTML页面生成PDF并下载
+
+# VS
+
+## 分栏显示
+
+1.Window -> New Window
+
+2.Window -> New Vertical Tab Group
+
+## Visual Studio Tab转换为空格的设置
+
+打开“Tools --> Options --> Text Editor”，如果是编写C/C++程序，就打开“C/C++-->Tabs”，在这里，选中“Insert spaces”即可。
+
+## 离线安装
+
+VS2015以后，MS不再提供VS的离线安装包，因为安装文件实在是太大了（10GB+），取而代之的是offline模式。
+
+1.首先下载在线安装器vs_community.exe，打开命令行：
+
+`vs_community.exe --layout D:\vs2017\offline --lang zh-CN`
+
+2.安装证书。证书在offline\certificates下。
+
+3.运行运行offline\vs_community.exe。
+
+# Kotlin
+
+Kotlin是一门编程语言，由JetBrains公司开发，与Java 100%互通。
+
+官网：
+
+http://kotlinlang.org/
+
+官网文档：
+
+http://kotlinlang.org/docs/reference/android-overview.html
+
+国内中文文档：
+
+https://huanglizhuo.gitbooks.io/kotlin-in-chinese/content/
+
+国内中文文档2：
+
+http://www.liying-cn.net/kotlin/docs/reference/

@@ -4,6 +4,16 @@ title:  深度学习（二十二）——VDSR, ESPCN, FSRCNN, VESPCN, SRGAN, Dem
 category: DL 
 ---
 
+# DRCN（续）
+
+其中的$$H_1$$到$$H_D$$是D个共享参数的卷积层。DRCN将每一层的卷积结果都通过同一个Reconstruction Net得到一个重建结果，从而共得到D个重建结果，再把它们加权平均得到最终的输出。另外，受到ResNet的启发，DRCN通过skip connection将输入图像与H_d的输出相加后再作为Reconstruction Net的输入，相当于使Inference Net去学习高分辨率图像与低分辨率图像的差，即恢复图像的高频部分。
+
+参考：
+
+http://blog.csdn.net/u011692048/article/details/77500764
+
+超分辨率重建之DRCN
+
 # VDSR
 
 VDSR是DRCN的原班人马的新作。
@@ -218,21 +228,3 @@ https://github.com/mgharbi/demosaicnet
 上图是ISP处理的一般流程，其中的Demosaic和Image Enhancement，都可以通过NN的端到端学习一次性完成。DemosaicNet就是其中的代表，它的网络结构如下：
 
 ![](/images/img2/DemosaicNet.png)
-
-和之前的网络不同，DemosaicNet的输入是原始的Bayer Array数据，而输出是处理好的图片。
-
-由于并没有那么多图片的Bayer Array数据，因此通常的做法是使用HR图片经采样得到Bayer Array数据。
-
->注意，如果训练数据有原始的Bayer Array的Raw data，那是最好的。降采样或者Raw data的RGB化，都有一定的高频信号的损失。
-
-DemosaicNet的设计借鉴了ResNet的Skip Connection的方案，只不过使用Concat代替了ResNet的Add操作而已。
-
-这里再额外补充两点：
-
-1.Demosaic处理不当，会导致如下问题：
-
-![](/images/img2/Demosaic_2.png)
-
-2.将出错的mine hard case，进行retrain，可以有效的提升模型的效果。
-
-![](/images/img2/Demosaic_3.png)

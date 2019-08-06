@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  小众语言集中营, Julia, Go, Lua, Kotlin, Github显示数学公式, VS
+title:  小众语言集中营, Julia, Go, Lua, Github显示数学公式
 category: language 
 ---
 
@@ -222,26 +222,6 @@ http://lua-users.org/wiki/GraphicalUserInterfaceToolkits
 
 Lua的GUI工具列表
 
-# Kotlin
-
-Kotlin是一门编程语言，由JetBrains公司开发，与Java 100%互通。
-
-官网：
-
-http://kotlinlang.org/
-
-官网文档：
-
-http://kotlinlang.org/docs/reference/android-overview.html
-
-国内中文文档：
-
-https://huanglizhuo.gitbooks.io/kotlin-in-chinese/content/
-
-国内中文文档2：
-
-http://www.liying-cn.net/kotlin/docs/reference/
-
 # Github显示数学公式
 
 这里主要用到了LaTeX和MathJax。
@@ -308,19 +288,39 @@ $${\arg\min}_{\theta,\theta_\Delta}$$
 
 $$\arg\min_{\theta,\theta_\Delta}$$
 
+## CTAN
+
+CTAN是tex包的一个集中资源站，类似于perl的CPAN。
+
+官网：
+
+https://ctan.org/
+
+## tlmgr
+
+tlmgr是texlive提供的包管理器。
+
+`tlmgr install <package>`
+
 ## TikZ
 
-TikZ是一个用于绘图的Tex包。TikZ基于PGF（portable graphics format）。TikZ ist kein Zeichenprogram(TikZ is not a drawing program)。
+TikZ是PGF（portable graphics format）提供的用户层API，主要用于绘图。TikZ ist kein Zeichenprogram(TikZ is not a drawing program)。
+
+官网：
+
+https://pgf-tikz.github.io/
+
+代码：
+
+https://github.com/pgf-tikz/pgf
+
+官方文档：
+
+https://pgf-tikz.github.io/pgf/pgfmanual.pdf
 
 安装：
 
 `sudo apt install qtikz texlive-fonts-recommended texlive-latex-extra`
-
-官方文档：
-
-https://stuff.mit.edu/afs/athena/contrib/tex-contrib/beamer/pgf-1.01/doc/generic/pgf/version-for-tex4ht/en/pgfmanual.html
-
-http://www.bu.edu/math/files/2013/08/tikzpgfmanual.pdf
 
 此外，ubuntu上还有一个叫做texdoctk的程序，可以查看各种tex包的用户手册。
 
@@ -407,27 +407,3 @@ https://www.zhihu.com/question/40763253
 https://mp.weixin.qq.com/s/3RtKAT3WE8P2YIZRA2dZ3A
 
 LaTeX的历史：图灵奖得主1977年开启的计划，引发学术圈重大变革
-
-# VS
-
-## 分栏显示
-
-1.Window -> New Window
-
-2.Window -> New Vertical Tab Group
-
-## Visual Studio Tab转换为空格的设置
-
-打开“Tools --> Options --> Text Editor”，如果是编写C/C++程序，就打开“C/C++-->Tabs”，在这里，选中“Insert spaces”即可。
-
-## 离线安装
-
-VS2015以后，MS不再提供VS的离线安装包，因为安装文件实在是太大了（10GB+），取而代之的是offline模式。
-
-1.首先下载在线安装器vs_community.exe，打开命令行：
-
-`vs_community.exe --layout D:\vs2017\offline --lang zh-CN`
-
-2.安装证书。证书在offline\certificates下。
-
-3.运行运行offline\vs_community.exe。

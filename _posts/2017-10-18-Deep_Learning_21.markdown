@@ -140,6 +140,10 @@ https://mp.weixin.qq.com/s/tg0Qnlf2WyG99J449KZTZQ
 
 图像超分辨率重建--基础原理
 
+https://zhuanlan.zhihu.com/p/76820438
+
+基于深度学习的超分辨率图像技术一览
+
 # SRCNN
 
 SRCNN（Super-Resolution CNN）是汤晓鸥小组的Chao Dong的作品。
@@ -226,12 +230,3 @@ SRCNN的层数较少，同时感受野也较小（13x13）。DRCN提出使用更
 与SRCNN类似，该网络分为三个模块，第一个是Embedding network，相当于特征提取，第二个是Inference network, 相当于特征的非线性变换，第三个是Reconstruction network,即从特征图像得到最后的重建结果。其中的Inference network是一个递归网络，即数据循环地通过该层多次。将这个循环进行展开，就等效于使用同一组参数的多个串联的卷积层，如下图所示：
 
 ![](/images/img2/DRCN_2.jpg)
-
-其中的$$H_1$$到$$H_D$$是D个共享参数的卷积层。DRCN将每一层的卷积结果都通过同一个Reconstruction Net得到一个重建结果，从而共得到D个重建结果，再把它们加权平均得到最终的输出。另外，受到ResNet的启发，DRCN通过skip connection将输入图像与H_d的输出相加后再作为Reconstruction Net的输入，相当于使Inference Net去学习高分辨率图像与低分辨率图像的差，即恢复图像的高频部分。
-
-参考：
-
-http://blog.csdn.net/u011692048/article/details/77500764
-
-超分辨率重建之DRCN
-

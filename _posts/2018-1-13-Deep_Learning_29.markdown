@@ -158,6 +158,10 @@ https://mp.weixin.qq.com/s/LrGWJIdPdUNZ3jyC8tdE6w
 
 Graph Neural Network（GNN）综述
 
+https://mp.weixin.qq.com/s/CCoP1taU07k6McJsEUh63g
+
+图神经网络（Graph Neural Networks，GNN）综述
+
 https://mp.weixin.qq.com/s/bMpugd2Lp35VPr8fQAPzsg
 
 一文概览图卷积网络基本结构和最新进展

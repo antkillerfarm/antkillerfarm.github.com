@@ -196,6 +196,10 @@ https://mp.weixin.qq.com/s/lJYzxehwo3K2APB2l_WeTA
 
 用Python做图像处理（1）
 
+https://mp.weixin.qq.com/s/yc_-PyR1qM-3_oKcH9PztQ
+
+Python PIL图像处理开发极简教程
+
 ## Seaborn
 
 Seaborn是另一个非常棒的Matplotlib的威力加强版，专注于统计绘图，并可无缝对接Pandas库。

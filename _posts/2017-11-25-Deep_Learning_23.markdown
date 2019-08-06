@@ -4,6 +4,26 @@ title:  深度学习（二十三）——MemNet, RDN, ShuffleSeg, SVDF, LCNN, AI
 category: DL 
 ---
 
+# DemosaicNet（续）
+
+和之前的网络不同，DemosaicNet的输入是原始的Bayer Array数据，而输出是处理好的图片。
+
+由于并没有那么多图片的Bayer Array数据，因此通常的做法是使用HR图片经采样得到Bayer Array数据。
+
+>注意，如果训练数据有原始的Bayer Array的Raw data，那是最好的。降采样或者Raw data的RGB化，都有一定的高频信号的损失。
+
+DemosaicNet的设计借鉴了ResNet的Skip Connection的方案，只不过使用Concat代替了ResNet的Add操作而已。
+
+这里再额外补充两点：
+
+1.Demosaic处理不当，会导致如下问题：
+
+![](/images/img2/Demosaic_2.png)
+
+2.将出错的mine hard case，进行retrain，可以有效的提升模型的效果。
+
+![](/images/img2/Demosaic_3.png)
+
 # MemNet
 
 MemNet是南京理工大学的作品。
@@ -195,24 +215,6 @@ https://mp.weixin.qq.com/s/AQrgvjFPXUpqfqQQgOFN9A
 https://mp.weixin.qq.com/s/cGKsZYxrVP7hVnv7Jli9Zg
 
 MIT课程全面解读2019深度学习最前沿
-
-# 图像超分辨率进阶+
-
-https://mp.weixin.qq.com/s/Rr4AKGjZNyV3PDoRBVH-lw
-
-低清视频也能快速转高清：超分辨率算法TecoGAN
-
-https://mp.weixin.qq.com/s/PIq78vhNQxAKntnZilL4pQ
-
-分割、检测与定位，高分辨率网络显神威！这会是席卷深度学习的通用结构吗？
-
-https://mp.weixin.qq.com/s/G55dxHfMYxWzjz4_8YnUaw
-
-深度学习超分辨率最新综述：一文道尽技术分类与效果评测
-
-https://zhuanlan.zhihu.com/p/67613641
-
-基于多级神经纹理迁移的图像超分辨方法(Adobe Research)
 
 # LSTM进阶
 

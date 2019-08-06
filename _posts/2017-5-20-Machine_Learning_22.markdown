@@ -312,3 +312,7 @@ https://mp.weixin.qq.com/s/Pvu7JAHvsGJdL0mJIhVwng
 https://mp.weixin.qq.com/s/oMiNGJOCqjEHoTmfBQv6EA
 
 使用神经网络为A*搜索算法赋能：以个性化路径推荐为例
+
+https://mp.weixin.qq.com/s/D_CQIw1372RTYBeSqPEl9A
+
+鲁棒优化基础

@@ -180,6 +180,22 @@ KGCN：使用TensorFlow进行知识图谱的机器学习
 
 # 数据结构 & 普通CS算法
 
+## TopK
+
+https://zhuanlan.zhihu.com/p/76734219
+
+面试官最喜爱的TopK问题算法详解
+
+https://www.cnblogs.com/qlky/p/7512199.html
+
+海量数据中找出前k大数（topk问题）
+
+https://www.jianshu.com/p/5b8f00d6a9d7
+
+topK算法问题
+
+## 参考
+
 https://mp.weixin.qq.com/s/52JFdyaLwZq7nWiZq6z6qA
 
 二叉堆是什么鬼？
@@ -261,10 +277,6 @@ https://mp.weixin.qq.com/s/ra9v1pgFsbOcJrtONoZNvQ
 https://mp.weixin.qq.com/s/M8U9B7UA2AdfnJi5EpTv-g
 
 算法面试中经常问的“字符串”问题
-
-https://zhuanlan.zhihu.com/p/76734219
-
-面试官最喜爱的TopK问题算法详解
 
 # 计算机体系结构
 
