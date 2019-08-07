@@ -214,6 +214,16 @@ http://blog.csdn.net/outer_form/article/details/50588307
 
 >Marius Sophus Lie，1842～1899，挪威数学家。University of Christiania博士（1871），University of Leipzig教授。当时德国的大学，一个系只有一个教授，所以这里的教授相当于现在的系主任或者院长。Lie接的是Felix Klein的班，后者跑到University of Göttingen当教授去了。
 
+参考：
+
+https://zhuanlan.zhihu.com/p/33156814
+
+李群和李代数
+
+https://zhuanlan.zhihu.com/p/76959511
+
+李群和李代数（一）：刚体的三维运动
+
 ## Sophus
 
 Sophus是一个C++写的Lie Groups的库。显然，它得名自Marius Sophus Lie。
