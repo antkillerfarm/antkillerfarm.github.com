@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  孩子的编程语言
+title:  孩子的编程语言, Go
 category: language 
 ---
 
@@ -97,3 +97,55 @@ https://mp.weixin.qq.com/s/gRumlJI8iUj_0HART2WD8Q
 https://mp.weixin.qq.com/s/7SfFeKUwEixcmChe3lC-lg
 
 有了这15款编程游戏，谁都可以学编程！
+
+# Go
+
+官网：
+
+https://golang.org
+
+教程：
+
+https://www.runoob.com/go/go-tutorial.html
+
+安装：
+
+`sudo apt install golang`
+
+运行：
+
+`go run xxx.go`
+
+参考：
+
+https://mp.weixin.qq.com/s/ka5woeuvNxX3Y0Y4UMlruw
+
+Go上下文取消操作
+
+https://mp.weixin.qq.com/s/5MNvW9czxaRWso8jbBRyBw
+
+Go调度程序：Ms，Ps&Gs
+
+https://mp.weixin.qq.com/s/mUhPHycvLSYYkBQSfIgIdA
+
+Channels In Go
+
+https://mp.weixin.qq.com/s/neBQ4Etx3RLhMQdM6GksVg
+
+Go语言HTTP/2探险之旅
+
+https://mp.weixin.qq.com/s/_d_-qg-mY3QLSxfACsNBJw
+
+Golang之不可重入函数实现
+
+https://mp.weixin.qq.com/s/3jmMexGYY4ww_urSZ36vVQ
+
+图解Go内存分配器
+
+https://mp.weixin.qq.com/s/qaqN4Eqndjg95TPBOC4d_g
+
+HTTP/2 in GO
+
+https://mp.weixin.qq.com/s/XbtSamp7I6HwvRO_OweqJg
+
+Go实现ORM及构建查询

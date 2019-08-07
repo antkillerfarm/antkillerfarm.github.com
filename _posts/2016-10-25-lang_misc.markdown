@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  小众语言集中营, Julia, Go, Lua, Github显示数学公式
+title:  小众语言集中营, Julia, Lua, Github显示数学公式
 category: language 
 ---
 
@@ -154,58 +154,6 @@ https://mp.weixin.qq.com/s/G0u_mP7xBJ7mx4eerdiY_g
 
 为什么Julia比Python快？
 
-# Go
-
-官网：
-
-https://golang.org
-
-教程：
-
-https://www.runoob.com/go/go-tutorial.html
-
-安装：
-
-`sudo apt install golang`
-
-运行：
-
-`go run xxx.go`
-
-参考：
-
-https://mp.weixin.qq.com/s/ka5woeuvNxX3Y0Y4UMlruw
-
-Go上下文取消操作
-
-https://mp.weixin.qq.com/s/5MNvW9czxaRWso8jbBRyBw
-
-Go调度程序：Ms，Ps&Gs
-
-https://mp.weixin.qq.com/s/mUhPHycvLSYYkBQSfIgIdA
-
-Channels In Go
-
-https://mp.weixin.qq.com/s/neBQ4Etx3RLhMQdM6GksVg
-
-Go语言HTTP/2探险之旅
-
-https://mp.weixin.qq.com/s/_d_-qg-mY3QLSxfACsNBJw
-
-Golang之不可重入函数实现
-
-https://mp.weixin.qq.com/s/3jmMexGYY4ww_urSZ36vVQ
-
-图解Go内存分配器
-
-https://mp.weixin.qq.com/s/qaqN4Eqndjg95TPBOC4d_g
-
-HTTP/2 in GO
-
-https://mp.weixin.qq.com/s/XbtSamp7I6HwvRO_OweqJg
-
-Go实现ORM及构建查询
-
 # Lua
 
 Lua的包管理工具叫做LuaRocks。官网：
@@ -296,6 +244,8 @@ CTAN是tex包的一个集中资源站，类似于perl的CPAN。
 
 https://ctan.org/
 
+Tex/Latex的历史非常悠久，多数基本包都诞生于90年代中期之前，此后的十几年进入了一个沉闷期，发展很缓慢，有些包也年久失修了。最近这些年，随着科研人群的增加，一些明星包尤其是Tikz/Beamer的 更新逐渐变得活跃。当然也少不了github的功劳，其他代码托管的网站太难用了，包括十年前的标杆——sourceforge。
+
 ## tlmgr
 
 tlmgr是texlive提供的包管理器。
@@ -320,7 +270,7 @@ https://pgf-tikz.github.io/pgf/pgfmanual.pdf
 
 安装：
 
-`sudo apt install qtikz texlive-fonts-recommended texlive-latex-extra`
+`sudo apt install qtikz texlive-fonts-recommended texlive-xetex texlive-lang-chinese`
 
 此外，ubuntu上还有一个叫做texdoctk的程序，可以查看各种tex包的用户手册。
 
@@ -337,6 +287,14 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/tikz
 `pdflatex xxx.tex`
 
 `evince xxx.pdf`
+
+>有的时候，会报没有`.aux`的错误，但实际上该文件是存在的，这时只需要再运行一遍`pdflatex`即可。
+
+tikz的衍生包也不少，比如：
+
+`tikz-network`：绘制网络图。
+
+`tikz-cd`：绘制通用图表，接口更友好。
 
 参考：
 
@@ -373,6 +331,18 @@ http://www.latexstudio.net/archives/category/tex-graphics/tikz-example
 `sudo apt install gnuplot`
 
 `pdflatex --enable-write18 --shell-escape xxx.tex`
+
+## 中文支持
+
+Latex的中文支持方案很多，早期有CCT、天元、CJK等，后来又有了Ctex套装。目前主流的是texlive+xelatex+xeCJK。
+
+示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/helloworld/tikz/mindmap/mindmap_2.tex
+
+`xelatex xxx.tex`
+
+原始的Tex/Latex虽然比较稳定，但一者功能有限，二者使用步骤比较繁琐，因此才有paflatex/xelatex之类的一站式方案。
 
 ## gridslides
 
