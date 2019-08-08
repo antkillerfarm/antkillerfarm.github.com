@@ -300,6 +300,10 @@ https://mp.weixin.qq.com/s/QwkKqybzW0tYcGojQg9r2w
 
 深度学习场景文字检测识别，20页综述带你了解领域最新动态
 
+https://mp.weixin.qq.com/s/B35xbBfP2eM4WQ-Y3dldsg
+
+华科提出对称限制的校正网络，显著改进场景文本识别
+
 # NetVLAD
 
 NetVLAD算的上是CNN+传统算子的一个范例。
@@ -411,4 +415,3 @@ http://vision.stanford.edu/lijiali/
 个人主页：
 
 http://zacklipton.com/
-

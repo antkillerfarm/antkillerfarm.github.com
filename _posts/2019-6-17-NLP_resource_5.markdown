@@ -6,6 +6,26 @@ category: resource
 
 # NLP参考资源
 
+https://mp.weixin.qq.com/s/pq2m4A31c9QQwka1j7XJDQ
+
+116页PPT了解FrameNet最新进展
+
+https://mp.weixin.qq.com/s/27Mbw2ViT8eJPJasD6tdfw
+
+神经混合模型：提升模型性能，显著降低困惑度
+
+https://mp.weixin.qq.com/s/AqvzxiI7cNesdGt_IfVb-w
+
+Highway Networks For Sentence Classification
+
+http://mp.weixin.qq.com/s/ZrFcpYf7E57j8E6zQsBexg
+
+引入秘密武器强化学习，发掘GAN在NLP领域的潜力
+
+https://mp.weixin.qq.com/s/0yRnBW_WWoUHInJcAeVd9A
+
+基于深度学习的候选答案句抽取研究
+
 https://mp.weixin.qq.com/s/tGw2c0AMAZSVYddGUQDdOw
 
 沈向洋：懂语言者得天下

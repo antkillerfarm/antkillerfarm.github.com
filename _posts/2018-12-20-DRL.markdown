@@ -36,6 +36,10 @@ https://mp.weixin.qq.com/s/_PVe7Gcq7Yk8nOFJFPcUQw
 
 叶强：David Silver《深度强化学习》公开课教程学习笔记完整版
 
+https://github.com/clamesc/reinforcement-learning-mindmap
+
+另一个版本的David Silver课程的思维导图。
+
 http://web.stanford.edu/class/cs234/syllabus.html
 
 CS234: Reinforcement Learning
@@ -195,6 +199,14 @@ https://www.cnblogs.com/steven-yang/tag/博弈论/
 ![](/images/img2/RL_intro.png)
 
 上图是深度强化学习的脉络图，参考文献中还有该领域的关键论文列表。
+
+![](/images/img3/RL_methods.png)
+
+![](/images/img3/RL_challenges.png)
+
+原图地址：
+
+http://louiskirsch.com/maps/reinforcement-learning
 
 参考：
 

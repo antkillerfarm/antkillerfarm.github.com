@@ -113,3 +113,7 @@ Cascade RCNN算法笔记
 https://mp.weixin.qq.com/s/KupXlIt8bHLLGF6qWFH6vQ
 
 从Grid R-CNN到Grid R-CNN Plus：基于网格的目标检测演化
+
+https://mp.weixin.qq.com/s/kdD658xzC-JxuWGYqLRtcQ
+
+性能达到SOTA的CSP对象检测网络

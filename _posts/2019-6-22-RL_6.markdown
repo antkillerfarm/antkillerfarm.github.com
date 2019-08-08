@@ -174,8 +174,18 @@ $$\hat v(S,w)=\begin{pmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{pmatrix}\begin
 
 | On/Off-Policy | Algorithm | Table Lookup | Linear | Non-Linear |
 |:--:|:--:|:--:|:--:|:--:|
-| On-Policy | MC<br/>TD(0)<br/>TD($$\lambda$$) | Yes<br/>Yes<br/>Yes | Yes<br/>Yes<br/>Yes | Yes<br/>Yes<br/>Yes |
-| On-Policy | MC<br/>TD(0)<br/>TD($$\lambda$$) | Yes<br/>Yes<br/>Yes | Yes<br/>Yes<br/>Yes | Yes<br/>Yes<br/>Yes |
+| On-Policy | MC<br/>TD(0)<br/>TD($$\lambda$$)<br/>Gradient TD | Yes<br/>Yes<br/>Yes<br/>Yes | Yes<br/>Yes<br/>Yes<br/>Yes | Yes<br/>No<br/>No<br/>Yes |
+| On-Policy | MC<br/>TD(0)<br/>TD($$\lambda$$)<br/>Gradient TD | Yes<br/>Yes<br/>Yes<br/>Yes | Yes<br/>No<br/>No<br/>Yes | Yes<br/>No<br/>No<br/>Yes |
+
+Gradient TD中的Gradient指的是对应的Bellman公式的梯度。
+
+**控制算法的收敛性**：
+
+| Algorithm | Table Lookup | Linear | Non-Linear |
+|:--:|:--:|:--:|:--:|
+| Monte-Carlo Control<br/>Sarsa<br/>Q-learning<br/>Gradient Q-learning | Yes<br/>Yes<br/>Yes<br/>Yes | Yes'<br/>Yes'<br/>No<br/>Yes | No<br/>No<br/>No<br/>No |
+
+Yes' = chatters around near-optimal value function
 
 ## Batch Methods
 

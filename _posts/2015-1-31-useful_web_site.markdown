@@ -384,6 +384,12 @@ https://zhuanlan.zhihu.com/p/28637279
 
 使用LLVM + PLY实现一个C语言子集的玩具编译器
 
+![](/images/img3/ART.png)
+
+https://mp.weixin.qq.com/s/vnaI8FwB4Ot46weAgq18Eg
+
+华为新贵！方舟编译器的荣光和使命
+
 ## 科研人生
 
 https://mp.weixin.qq.com/s/6gX1UFSykuzw358ARUzifw

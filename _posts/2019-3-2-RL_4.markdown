@@ -138,7 +138,7 @@ Monte-Carlo, Temporal-Difference和Dynamic Programming都是计算状态价值�
 
 - 当考虑全部样本可能性，但对每一个样本并不走完整个Episode时，就是DP；
 
-- 当既考虑所有Episode又把Episode从开始到终止遍历完，就变成了穷举法。
+- 当既考虑所有样本，又把Episode从开始到终止遍历完，就变成了穷举法。
 
 需要提及的是：DP利用的是整个MDP问题的模型，也就是状态转移概率，虽然它并不实际利用样本，但是它利用了整个模型的规律，因此认为是Full Width的。
 

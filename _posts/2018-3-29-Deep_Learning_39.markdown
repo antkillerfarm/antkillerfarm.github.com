@@ -266,6 +266,10 @@ https://zhuanlan.zhihu.com/p/75444151
 
 时序动作提名：边界匹配网络详解
 
+https://mp.weixin.qq.com/s/8x1ne425aRb2aqP8dSrClg
+
+玩王者荣耀用不好英雄？两阶段算法帮你精准推荐精彩视频
+
 # 多模态学习
 
 https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw

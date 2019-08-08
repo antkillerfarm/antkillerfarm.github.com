@@ -186,6 +186,10 @@ http://www.cnblogs.com/Firefly727/articles/1856328.html
 
 元胞自动机
 
+https://mp.weixin.qq.com/s/KZcNsTLurOm7MNfCkNvcZw
+
+CNN与元胞自动机：“深度”之含义初探
+
 # simhash
 
 simhash是一种能计算文档相似度的hash算法。

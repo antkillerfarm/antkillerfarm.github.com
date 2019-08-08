@@ -204,4 +204,12 @@ https://mp.weixin.qq.com/s/m9I5TM9uJcgZvMusO667OA
 
 https://mp.weixin.qq.com/s/FFs0-ROvbXSAIOspW_rMbw
 
-超越MobileNetV3！谷歌大脑提出 MixNet 轻量级网络
+超越MobileNetV3！谷歌大脑提出MixNet轻量级网络
+
+https://mp.weixin.qq.com/s/nys9R6xCJXt0vG06gnQzFQ
+
+模型剪枝，不可忽视的推断效率提升方法
+
+https://mp.weixin.qq.com/s/EuT-4_eEtIVKh6QdLDbohg
+
+解读小米MoGA：超过MobileNetV3的移动端GPU敏感型搜索
