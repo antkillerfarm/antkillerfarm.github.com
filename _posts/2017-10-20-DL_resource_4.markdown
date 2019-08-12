@@ -221,3 +221,11 @@ https://mp.weixin.qq.com/s/-ZhYXTIiEFHd-G-NZEqlcA
 https://mp.weixin.qq.com/s/Ou8a9ZkluYdSJhw-y7_jQQ
 
 京东城市6篇论文展示AI和大数据在智能城市的落地应用
+
+https://mp.weixin.qq.com/s/v7tzVtgUZuYunFMKtxpIiA
+
+有效整合多类信息，阿里文娱提出多视图多标记算法SIMM
+
+https://mp.weixin.qq.com/s/Lx1mCVtuFKkeuP_ovFJopg
+
+基于Keras的关联神经网络CorrNet综合指南

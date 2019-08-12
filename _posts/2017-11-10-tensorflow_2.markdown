@@ -314,6 +314,10 @@ https://mp.weixin.qq.com/s/7nugWFKtD-C6cpwm2TyvdQ
 
 手把手教你如何部署深度学习模型
 
+https://zhuanlan.zhihu.com/p/77664408
+
+如何解决推荐系统工程难题——深度学习推荐模型线上serving？
+
 ## op的C++实现
 
 有的时候为了将Tensorflow的op移植到其他平台，需要找到相应op的cpu实现。比如space_to_batch这个op，它的实现在：

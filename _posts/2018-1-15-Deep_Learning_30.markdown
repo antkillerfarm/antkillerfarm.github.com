@@ -76,7 +76,7 @@ Graph基础知识介绍
 
 https://mp.weixin.qq.com/s/jBQOgP-I4FQT1EU8y72ICA
 
-GNN系列：图神经网络的“开山之作”CGN模型
+图神经网络的“开山之作”CGN模型
 
 https://mp.weixin.qq.com/s/DJAimuhrXIXjAqm2dciTXg
 
@@ -85,6 +85,18 @@ https://mp.weixin.qq.com/s/DJAimuhrXIXjAqm2dciTXg
 https://mp.weixin.qq.com/s/DNePTCpyjrlZEixw5L7w5A
 
 GraphSAGE：我寻思GCN也没我牛逼
+
+https://mp.weixin.qq.com/s/1DHvLLysMU24dBeLzbSpUA
+
+GraphSAGE
+
+https://mp.weixin.qq.com/s/C-Pa1jznQntyhocdxS-4Hg
+
+节点嵌入训练加快300倍！解读开源高性能图嵌入系统GraphVite
+
+https://mp.weixin.qq.com/s/edrh-HXqW01Yx7c8tQ8UxA
+
+从数据结构到算法：图网络方法初探
 
 # 自动求导
 

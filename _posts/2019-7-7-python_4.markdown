@@ -329,6 +329,10 @@ https://mp.weixin.qq.com/s/QatY21HxcYHqV2WZ8gc0_g
 
 Python中的异常处理
 
+https://mp.weixin.qq.com/s/i_xLlknJbap3Z9ci0gwuNQ
+
+如何用Python编写一个Lisp解释器
+
 # Rust
 
 官网：

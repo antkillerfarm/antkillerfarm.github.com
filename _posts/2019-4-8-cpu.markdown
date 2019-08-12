@@ -126,6 +126,10 @@ https://mp.weixin.qq.com/s/z4Aik3NgB6XE64YCZolM4w
 
 ![](/images/img3/IC_process_2.jpg)
 
+https://mp.weixin.qq.com/s/GuO87_b9g6jFAepIWxDw5g
+
+闪存技术的52年发展史
+
 ## 多核
 
 https://zhuanlan.zhihu.com/p/53596593
@@ -387,3 +391,7 @@ https://mp.weixin.qq.com/s/dRv4xWV8laCYBaZ0DwOC3A
 https://mp.weixin.qq.com/s/eAzdtKvfw7EVz5Ax3nXeZg
 
 自己动手设计专用处理器
+
+https://mp.weixin.qq.com/s/NfNJVoAC5aW1sgToAmYsGw
+
+3nm芯片终结者

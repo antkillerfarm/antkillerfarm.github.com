@@ -10,6 +10,18 @@ https://zhuanlan.zhihu.com/p/51652845
 
 强化学习这都学不会的话，咳咳，你过来下！
 
+https://zhuanlan.zhihu.com/p/70360272
+
+最前沿：深度解读Soft Actor-Critic算法
+
+https://mp.weixin.qq.com/s/ce9W3FbLdsqAEyvw6px_RA
+
+Actor Critic——一个融合基于策略梯度和基于值优点的强化学习算法
+
+https://mp.weixin.qq.com/s/c4xoy4CJ_hsVdmGe1n3rTQ
+
+A3C——一种异步强化学习方法
+
 # 模仿学习
 
 https://zhuanlan.zhihu.com/p/27935902
@@ -66,6 +78,6 @@ https://zhuanlan.zhihu.com/p/62363784
 
 强化学习之策略搜索
 
-https://zhuanlan.zhihu.com/p/70360272
+https://mp.weixin.qq.com/s/j9Cs5M9gyITu2u_XDkKm-g
 
-最前沿：深度解读Soft Actor-Critic算法
+Policy Gradient——一种不以loss来反向传播的策略梯度方法

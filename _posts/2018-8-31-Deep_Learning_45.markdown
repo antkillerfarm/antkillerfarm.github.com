@@ -62,14 +62,6 @@ https://mp.weixin.qq.com/s/2ehni5O__XnPaLjBRmAiIQ
 
 利用AdaNet将多个TensorFlow Hub模块组合成一个集成网络
 
-https://mp.weixin.qq.com/s/rllQLPPYxxLCK9-dgOjLDg
-
-另一种可微架构搜索：商汤提出在反传中学习架构参数的SNAS
-
-https://mp.weixin.qq.com/s/AV8fD5Vf6uzhLeW9nfMASg
-
-一文详解随机神经网络结构搜索(SNAS)
-
 ## 书籍
 
 https://mp.weixin.qq.com/s/wTwjbripELzqdCjs64Dzzw
@@ -135,6 +127,10 @@ https://mp.weixin.qq.com/s/nCyj-OGWXC0pntJJj91xrA
 https://mp.weixin.qq.com/s/3DxOb4HOeT0E0-bjP6TiSg
 
 一文读懂神经架构搜索
+
+https://mp.weixin.qq.com/s/m5b9QZl6Axd1iYWeTADZzA
+
+AutoML自动机器学习：最新进展综述
 
 https://zhuanlan.zhihu.com/p/75747814
 
@@ -367,3 +363,11 @@ https://mp.weixin.qq.com/s/slrRXgD49I7ZG24ialVxPw
 https://mp.weixin.qq.com/s/X5Oi8gKyT5Tmh7ljon3MzQ
 
 谷歌引入自动网络设计，高效解决大规模深度推荐模型的特征嵌入问题
+
+https://mp.weixin.qq.com/s/rllQLPPYxxLCK9-dgOjLDg
+
+另一种可微架构搜索：商汤提出在反传中学习架构参数的SNAS
+
+https://mp.weixin.qq.com/s/AV8fD5Vf6uzhLeW9nfMASg
+
+一文详解随机神经网络结构搜索(SNAS)

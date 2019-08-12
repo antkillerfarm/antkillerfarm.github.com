@@ -108,7 +108,7 @@ https://mp.weixin.qq.com/s/KjlIa3oxqfk-iu6Ba5NixQ
 
 https://github.com/thunlp/GNNPapers
 
-相关论文列表
+清华NLP图神经网络GNN论文分门别类，16大应用200+篇论文
 
 https://github.com/nnzhan/Awesome-Graph-Neural-Networks
 

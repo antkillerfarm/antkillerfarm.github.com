@@ -73,3 +73,7 @@ TF.Text来啦！
 https://mp.weixin.qq.com/s/9etR8QEk4UXtoLqkJFQIHA
 
 深入理解TensorFlow中的tf.metrics算子
+
+https://zhuanlan.zhihu.com/p/27087310
+
+《安娜卡列尼娜》文本生成——利用TensorFlow构建LSTM模型

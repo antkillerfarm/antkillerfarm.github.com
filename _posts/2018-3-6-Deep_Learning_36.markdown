@@ -162,6 +162,18 @@ https://mp.weixin.qq.com/s/69z8LSuEM3Th8crhUNMhiA
 
 基于知识的个性化推荐理由生成解析
 
+https://mp.weixin.qq.com/s/xxTP_WRGy-lYykk300SnWw
+
+推荐系统工程难题：如何做好深度学习CTR模型线上Serving
+
+https://mp.weixin.qq.com/s/ZZoQynG8XYzhtgwqorBUyg
+
+天下武功，唯快不破，论推荐系统的“实时性”
+
+https://mp.weixin.qq.com/s/DzsS7Q1hqH2YwRTvKFVh6w
+
+如何增强推荐系统模型更新的“实时性”？
+
 # Mask R-CNN
 
 Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的网络。它是何恺明2017年的新作。
@@ -186,7 +198,7 @@ https://github.com/TuSimple/mx-maskrcnn
 
 Pytorch版本：
 
-https://github.com/wannabeOG/Mask-RCNN
+https://github.com/facebookresearch/maskrcnn-benchmark
 
 ![](/images/img2/mask_rcnn.png)
 

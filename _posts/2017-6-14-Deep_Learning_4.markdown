@@ -333,3 +333,9 @@ CBOW（Continuous Bag-of-Words Model）模型和Skip-gram（Continuous Skip-gram
 | 输入 | $$\{w_{t-1},w_{t-2},w_{t+1},w_{t+2}\}$$ | $$\{w_t\}$$ |
 | 输出 | $$\{w_t\}$$ | $$\{w_{t-1},w_{t-2},w_{t+1},w_{t+2}\}$$ |
 | 目标 | 在输入确定的情况下，最大化输出值的概率。 | 在输入确定的情况下，最大化输出值的概率。 |
+
+参考：
+
+https://mp.weixin.qq.com/s/ZiPWbSmr0Ba-CtydLDmEMQ
+
+通俗理解Word2Vec之Skip-Gram模型

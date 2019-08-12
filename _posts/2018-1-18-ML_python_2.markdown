@@ -52,6 +52,10 @@ https://mp.weixin.qq.com/s/WL8jfxB-xukP_MkN2aMb0w
 
 OpenCV，PIL，Skimage你pick谁
 
+https://mp.weixin.qq.com/s/JszkK3geKXfebH4xLoerYQ
+
+scikit-image图像处理入门
+
 ## Numba
 
 NumPy的一个高速版本，能完成前者大部分的功能。

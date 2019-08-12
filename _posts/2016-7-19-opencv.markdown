@@ -246,7 +246,7 @@ https://mp.weixin.qq.com/s/jlgTGqxBpD-va2R2KT0E6Q
 
 同学，你要的OpenCV图像处理系列教程已安排
 
-## 参考
+## 二维码
 
 https://mp.weixin.qq.com/s/zZNJKUYlmKKSuSRCM1sgeg
 
@@ -259,6 +259,16 @@ OpenCV4.0 快速QR二维码检测测试示例
 https://mp.weixin.qq.com/s/LKltnkxxoMHMiqx2Rpi77w
 
 基于OpenCV Python实现二维码检测与识别
+
+https://mp.weixin.qq.com/s/GMt66ZIO5AiF1B2B8nDVKw
+
+开源、高质量QR码多语言生成库
+
+https://mp.weixin.qq.com/s/X-CEAOiOc46B7NrjGH9Mjg
+
+二维码检测哪家强？五大开源库测评比较
+
+## 参考
 
 https://mp.weixin.qq.com/s/R2kGr7NHorfnpHV9OD18Qw
 

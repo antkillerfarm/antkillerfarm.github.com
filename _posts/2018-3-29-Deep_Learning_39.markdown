@@ -270,6 +270,10 @@ https://mp.weixin.qq.com/s/8x1ne425aRb2aqP8dSrClg
 
 玩王者荣耀用不好英雄？两阶段算法帮你精准推荐精彩视频
 
+https://mp.weixin.qq.com/s/YL08krIuf0WOz8KsoBYhew
+
+25个视频神同步，还能给视频声音移花接木，谷歌开源最新自监督算法
+
 # 多模态学习
 
 https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw

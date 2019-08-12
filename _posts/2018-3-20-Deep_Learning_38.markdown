@@ -381,3 +381,11 @@ https://mp.weixin.qq.com/s/2pJt9hlUFhR6mo1ughKkiA
 https://mp.weixin.qq.com/s/jyIrREnJQv4mW-H9ghO7_A
 
 细粒度图像分类是什么，有什么方法，发展的怎么样
+
+https://mp.weixin.qq.com/s/5Y4sQlt6DvgkAYtncByjzw
+
+基于Pytorch的细粒度图像分类实战
+
+https://mp.weixin.qq.com/s/232DjhM5sqWqPTv7PCaORA
+
+ElementAI提出超复杂多尺度细粒度图像分类Attention模型

@@ -121,3 +121,7 @@ https://mp.weixin.qq.com/s/rrbwItXt-1EaGiqtDEGvog
 https://mp.weixin.qq.com/s/G4mFW8cn-ho3KGmbw5sSTw
 
 计算机视觉中注意力机制原理及其模型发展和应用
+
+https://mp.weixin.qq.com/s/MzHmvbwxFCaFjmMkjfjeSg
+
+遍地开花的 Attention ，你真的懂吗？

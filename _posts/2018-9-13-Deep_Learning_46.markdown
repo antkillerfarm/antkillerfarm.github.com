@@ -300,9 +300,9 @@ https://mp.weixin.qq.com/s/QwkKqybzW0tYcGojQg9r2w
 
 深度学习场景文字检测识别，20页综述带你了解领域最新动态
 
-https://mp.weixin.qq.com/s/B35xbBfP2eM4WQ-Y3dldsg
+https://mp.weixin.qq.com/s/j8Xvj7OSoFZp-zIrd3Xjow
 
-华科提出对称限制的校正网络，显著改进场景文本识别
+华科提出对称性约束的校正网络ScRN，显著改进场景文本识别
 
 # NetVLAD
 

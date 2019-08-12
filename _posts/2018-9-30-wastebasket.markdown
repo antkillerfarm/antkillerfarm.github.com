@@ -242,6 +242,24 @@ https://mp.weixin.qq.com/s/XDBvVjIRfjtDrTN4zd92yg
 
 高铁辐射致癌，为什么会有这种令人喷饭的言论出现？
 
+https://mp.weixin.qq.com/s/VcWZgMbpXp6M8CmWqz8gaA
+
+从《长安十二时辰》看懂“智慧城市”
+
+https://mp.weixin.qq.com/s/WRd_kx-HeSSgDtPTdgk09A
+
+山上“飞”来只火凤凰，这里的居民却要杀掉它？
+
+![](/images/img3/Universe.jpg)
+
+原图地址：
+
+http://www.cpepweb.org/main_universe/universe-poster.html
+
+https://zhuanlan.zhihu.com/p/72636777
+
+粒子物理入门notes
+
 ## Bélády's Algorithm
 
 Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。

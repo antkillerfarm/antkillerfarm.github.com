@@ -213,3 +213,7 @@ https://mp.weixin.qq.com/s/nys9R6xCJXt0vG06gnQzFQ
 https://mp.weixin.qq.com/s/EuT-4_eEtIVKh6QdLDbohg
 
 解读小米MoGA：超过MobileNetV3的移动端GPU敏感型搜索
+
+https://mp.weixin.qq.com/s/L49cqZ2PXP-x4Y6xBJG5cQ
+
+旷视研究院提出MetaPruning：基于元学习和AutoML的模型压缩新方法

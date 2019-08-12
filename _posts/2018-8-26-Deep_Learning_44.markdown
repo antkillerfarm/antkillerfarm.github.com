@@ -385,3 +385,7 @@ https://zhuanlan.zhihu.com/p/74573041
 https://mp.weixin.qq.com/s/b041h_hbHQYiXCiDHGaD5w
 
 深度贝叶斯自然语言处理，304页ppt带你了解最新研究进展
+
+https://zhuanlan.zhihu.com/p/77140176
+
+构建贝叶斯深度学习分类器

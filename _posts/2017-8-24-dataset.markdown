@@ -40,7 +40,7 @@ CIFAR-10是由Hinton的两个大弟子Alex Krizhevsky、Ilya Sutskever收集的�
 
 DL强调的是自适应感知和人工智能，是计算机与神经科学交叉。DM强调的是高速、大数据、统计数学分析，是计算机和数学的交叉。
 
-CIFAR-10由60000张32*32的RGB彩色图片构成，共10个分类。50000张训练，10000张测试（交叉验证）。这个数据集最大的特点在于将识别迁移到了普适物体，而且应用于多分类（姊妹数据集CIFAR-10达到100类，ILSVRC比赛则是1000类）。
+CIFAR-10由60000张32x32的RGB彩色图片构成，共10个分类。50000张训练，10000张测试（交叉验证）。这个数据集最大的特点在于将识别迁移到了普适物体，而且应用于多分类（姊妹数据集CIFAR-10达到100类，ILSVRC比赛则是1000类）。
 
 官网：
 
@@ -77,6 +77,10 @@ http://host.robots.ox.ac.uk/pascal/VOC/
 https://zhuanlan.zhihu.com/p/53068162
 
 如何用自己的数据制作Pascal VOC格式数据集详细教程（附带所有代码脚本）
+
+https://mp.weixin.qq.com/s/INyw9X2dXJfpfZbBHbXPJg
+
+PASCAL VOC2012数据集详解
 
 ## MSCOCO
 

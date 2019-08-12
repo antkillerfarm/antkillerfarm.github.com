@@ -162,6 +162,10 @@ https://mp.weixin.qq.com/s/NREmqVYXo6hWsIvzcnwIDA
 
 开源AI画出超准街道地图，全球适用，刷新DeepGlobe最好成绩
 
+https://zhuanlan.zhihu.com/p/76828112
+
+通路规划的行为树（自动驾驶）
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。
