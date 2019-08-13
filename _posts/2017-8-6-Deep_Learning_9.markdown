@@ -1,12 +1,50 @@
 ---
 layout: post
-title:  深度学习（九）——CNN进化史（2）, AI可解释性, 图像检索
+title:  深度学习（九）——CNN进化史（2）, AI可解释性
 category: DL 
 ---
 
 # CNN进化史
 
-### SqueezeNet（续）
+## GoogleNet（续）
+
+Inception系列的改进方向基本都集中在构建不同的Inception模型上。
+
+GoogleNet的另一个改进是**减少了全连接层**（Full Connection, FC），这是减少模型参数的一个重要改进。事实上，在稍后的实践中，人们发现去掉VGG的第一个FC层，对于效果几乎没有任何影响。
+
+参考：
+
+https://mp.weixin.qq.com/s/ceOxFS3Iwf3iLWY73ueoNw
+
+GoogLeNet中的inception结构，你看懂了吗
+
+http://www.cnblogs.com/Allen-rg/p/5833919.html
+
+GoogLeNet学习心得
+
+## SqueezeNet
+
+GoogleNet之后，最有名的CNN模型当属何恺明的Deep Residual Network。DRN在《深度学习（六）》中已有提及，这里不再赘述。
+
+DRN之后，学界的研究重点，由如何提升精度，转变为如何用更少的参数和计算量来达到同样的精度。SqueezeNet就是其中的代表。
+
+论文：
+
+《SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size》
+
+代码：
+
+https://github.com/DeepScale/SqueezeNet
+
+Caffe版本
+
+https://github.com/vonclites/squeezenet
+
+TensorFlow版本
+
+![](/images/article/SqueezeNet_2.png)
+
+上图是SqueezeNet的网络结构图，其最大的创新点在于使用Fire Module替换大尺寸的卷积层。
 
 ![](/images/article/SqueezeNet.png)
 
@@ -241,45 +279,3 @@ https://mp.weixin.qq.com/s/33VQNVvb7JGlk10Jc3mmeg
 https://github.com/ModelOriented/DrWhy
 
 可解释AI(XAI)工具集—DrWhy
-
-# 图像检索
-
-## 传统方法
-
-https://mp.weixin.qq.com/s/sM78DCOK3fuG2JrP2QaSZA
-
-SIFT与CNN的碰撞：万字长文回顾图像检索任务十年探索历程（上）
-
-https://mp.weixin.qq.com/s/yzVMDEpwbXVS0y-CwWSBEA
-
-SIFT与CNN的碰撞：万字长文回顾图像检索任务十年探索历程（下）
-
-https://mp.weixin.qq.com/s/Sda94q-40goiZGSYGgm_Yw
-
-基于内容的图像检索技术综述-传统经典方法
-
-https://mp.weixin.qq.com/s/ED-zovVT_vHId4mYXdEo5w
-
-高效大规模图像搜索开源实现
-
-## DL方法
-
-https://zhuanlan.zhihu.com/p/36479489
-
-图像检索：因缘际会与前瞻
-
-https://mp.weixin.qq.com/s/aRndRlVnY5ZRBFnNbVNecg
-
-李飞飞CS231n项目：这两位工程师想用神经网络帮你还原买家秀
-
-https://mp.weixin.qq.com/s/zHSDFR_Nd4LfvIaq9kSrww
-
-BMVC2018图像检索论文—使用区域注意力网络改进R-MAC方法
-
-https://mp.weixin.qq.com/s/FJCZvc8pl-CwFhyiCD6E-g
-
-Pinterest视觉搜索工程师孙彦：视觉搜索不是“鸡肋”
-
-https://mp.weixin.qq.com/s/QgYtfvsLGcfqLA98mp19tg
-
-KDD2018阿里巴巴论文揭示自家大规模视觉搜索算法

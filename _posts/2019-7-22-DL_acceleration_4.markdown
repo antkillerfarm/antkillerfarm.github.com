@@ -28,6 +28,10 @@ https://mp.weixin.qq.com/s/wCx7rQFwC2mW45FMR77tGQ
 
 二值网络，围绕STE的那些事儿
 
+https://mp.weixin.qq.com/s/M3NcH30zY5Wlj76BDPQlMA
+
+模型压缩一半，精度几乎无损，TensorFlow推出半精度浮点量化工具包，还有在线Demo
+
 # 模型压缩与加速
 
 对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。

@@ -26,7 +26,25 @@ https://cloud.tencent.com/developer/article/1153079
 
 “变形金刚”为何强大：从模型到代码全面解析Google Tensor2Tensor系统
 
-这篇blog不仅对Tensor2Tensor的基本结构做了介绍，也对transformer模型进行了介绍。transformer模型的详解参见《深度学习（二十五）》。
+这篇blog不仅对Tensor2Tensor的基本结构做了介绍，也对transformer模型进行了介绍。transformer模型的详解参见《Attention（二）》。
+
+## mesh tensorflow
+
+T2T不仅支持单机，还支持网格（Mesh）计算，推出了所谓的mesh tensorflow，简称MTF。
+
+## 参考
+
+https://blog.csdn.net/hpulfc/article/details/81172498
+
+如何使用tensor2tensor自定义数据并训练模型
+
+https://blog.csdn.net/hpulfc/article/details/82625217
+
+tensor2tensor自定义问题，训练模型(bpe篇)
+
+https://mp.weixin.qq.com/s/YRDZ8inqaxmdD5g_SR1MLg
+
+四种常见NLP框架使用总结
 
 # Tensor2Tensor transformer实战
 
@@ -101,20 +119,6 @@ num_encoder_layers/num_decoder_layers控制transformer的层数，如果为0，�
 位置信息的函数：
 
 get_timing_signal_1d
-
-## mesh tensorflow
-
-T2T不仅支持单机，还支持网格（Mesh）计算，推出了所谓的mesh tensorflow，简称MTF。
-
-## 参考
-
-https://blog.csdn.net/hpulfc/article/details/81172498
-
-如何使用tensor2tensor自定义数据并训练模型
-
-https://blog.csdn.net/hpulfc/article/details/82625217
-
-tensor2tensor自定义问题，训练模型(bpe篇)
 
 # GNU Octave
 

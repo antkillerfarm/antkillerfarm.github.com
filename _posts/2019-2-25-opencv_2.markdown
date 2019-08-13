@@ -6,6 +6,30 @@ category: AI
 
 # OpenCV
 
+https://mp.weixin.qq.com/s/II76kX7khztkHtDIvKvHqw
+
+OpenCV中实现曲线与圆拟合
+
+https://mp.weixin.qq.com/s/HbNtWyA_EG4tLdVRueLLAA
+
+OpenCV实现0到9数字识别OCR
+
+https://mp.weixin.qq.com/s/5j-WNi4vafLDeyKqfVER0g
+
+图形图像算法中必须要了解的设计模式(1)
+
+https://mp.weixin.qq.com/s/909FlTC_ROtlziJekcRJ9Q
+
+图形图像算法中必须要了解的设计模式(2)
+
+https://mp.weixin.qq.com/s/2aN9V8VlmugoSRk_AesOzw
+
+图形图像算法中必须要了解的设计模式(3)
+
+https://mp.weixin.qq.com/s/vgOkHsxKaFcgWDCBpY7kng
+
+如何用OpenCV、Python和深度学习实现面部识别？
+
 https://mp.weixin.qq.com/s/Dmk4EWidsWpz31JYAx7mbQ
 
 使用OpenCV与sklearn实现基于词袋模型(Bag of Word)的图像分类预测与搜索

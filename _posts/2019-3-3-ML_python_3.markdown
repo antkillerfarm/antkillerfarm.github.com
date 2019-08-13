@@ -6,6 +6,34 @@ category: AI
 
 # Machine Learning之Python篇
 
+https://mp.weixin.qq.com/s/hNOF6YvDjIuX4u36Wr7LCA
+
+随机森林之美
+
+https://mp.weixin.qq.com/s/AHz81u8SGyi9_k40040QVg
+
+Python机器学习入门到进阶
+
+https://mp.weixin.qq.com/s/hFg1TvNocrMi5CpDtvRLcQ
+
+推荐一个计算“造人”成功与否的贝叶斯模型！
+
+http://www.sohu.com/a/168170785_642762
+
+基于机器学习的Python信用卡欺诈检测
+
+https://mp.weixin.qq.com/s/Xl9ZT7_I8P_ZU4O8j6bS5Q
+
+基于Python的人脸识别：识别准确率高达99.38%！
+
+https://mp.weixin.qq.com/s/tN7KVBA9GqdjpAjW-_WF8Q
+
+Python学习者最易上手的机器学习漫游指南
+
+https://mp.weixin.qq.com/s/MmuxNA8Xm6uRiVNGhDnyFw
+
+Scikit-learn实战之数据预处理
+
 https://mp.weixin.qq.com/s/V1EVdhX6-c1VNGNBgscFeA
 
 用Python统计新浪微博各种表情使用频率

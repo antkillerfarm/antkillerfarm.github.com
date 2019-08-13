@@ -1,10 +1,28 @@
 ---
 layout: post
-title:  深度学习（五）——RNN
+title:  深度学习（五）——词向量（2）
 category: DL 
 ---
 
-# 词向量（续）
+# 词向量
+
+### CBOW & Skip-gram（续）
+
+| 名称 | CBOW | Skip-gram |
+|:--:|:--:|:--:|
+| 输入 | $$\{w_{t-1},w_{t-2},w_{t+1},w_{t+2}\}$$ | $$\{w_t\}$$ |
+| 输出 | $$\{w_t\}$$ | $$\{w_{t-1},w_{t-2},w_{t+1},w_{t+2}\}$$ |
+| 目标 | 在输入确定的情况下，最大化输出值的概率。 | 在输入确定的情况下，最大化输出值的概率。 |
+
+参考：
+
+https://zhuanlan.zhihu.com/p/27234078
+
+通俗理解Word2Vec之Skip-Gram模型
+
+https://mp.weixin.qq.com/s/reT4lAjwo4fHV4ctR9zbxQ
+
+漫谈Word2vec之skip-gram模型
 
 ### Hierarchical Softmax
 
@@ -264,10 +282,6 @@ http://kexue.fm/archives/4681/
 
 更别致的词向量模型(六)：代码、分享与结语
 
-https://mp.weixin.qq.com/s/reT4lAjwo4fHV4ctR9zbxQ
-
-漫谈Word2vec之skip-gram模型
-
 https://mp.weixin.qq.com/s/GOPIIlDBd3vXpgq-a5s2fQ
 
 文本分类特征提取之Word2Vec
@@ -295,17 +309,3 @@ Word2Vec——深度学习的一小步，自然语言处理的一大步
 https://www.zhihu.com/question/290088641/answer/543419468
 
 CNN文本分类中是否可以使用字向量代替词向量？
-
-# RNN
-
-## RNN的基本结构
-
-RNN是Recurrent Neural Network和Recursive Neural Network的简称。前者主要用于处理和时序相关的输入，而后者目前已经没落。本文只讨论前者。
-
-![](/images/article/RNN.png)
-
-上图是RNN的结构图。其中，展开箭头左边是RNN的静态结构图。不同于之前的神经网络表示，这里的圆形不是单个神经元，而是一层神经元。权值也不是单个权值，而是权值向量。
-
-从静态结构图可以看出RNN实际上和3层MLP的结构，是基本类似的。差别在于RNN的隐藏层多了一个指向自己的环状结构。
-
-上图的展开箭头右边是RNN的时序展开结构图。从纵向来看，它只是一个3层的浅层神经网络，然而从横向来看，它却是一个深层的神经网络。可见神经网络深浅与否，不仅和模型本身的层数有关，也与神经元之间的连接方式密切相关。

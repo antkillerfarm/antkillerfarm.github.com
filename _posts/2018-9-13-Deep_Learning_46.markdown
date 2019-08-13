@@ -304,6 +304,10 @@ https://mp.weixin.qq.com/s/j8Xvj7OSoFZp-zIrd3Xjow
 
 华科提出对称性约束的校正网络ScRN，显著改进场景文本识别
 
+https://github.com/ctripcorp/C-OCR
+
+携程自研的OCR项目
+
 # NetVLAD
 
 NetVLAD算的上是CNN+传统算子的一个范例。

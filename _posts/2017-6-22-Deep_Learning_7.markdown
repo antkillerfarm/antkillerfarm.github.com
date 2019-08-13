@@ -1,10 +1,42 @@
 ---
 layout: post
-title:  深度学习（七）——神经元激活函数进阶, ResNet, Bi-directional RNN
+title:  深度学习（七）——神经元激活函数进阶, ResNet
 category: DL 
 ---
 
 # LSTM（续）
+
+https://mp.weixin.qq.com/s/MQR7c57NL4b5i4MRA2JgWA
+
+用Python实现CNN长短期记忆网络！
+
+http://mp.weixin.qq.com/s/V2-grLPdZ66FOiC2duc-EA
+
+如何判断LSTM模型中的过拟合与欠拟合
+
+http://blog.csdn.net/malefactor/article/details/51183989
+
+深度学习计算模型中“门函数（Gating Function）”的作用
+
+https://mp.weixin.qq.com/s/ORLpqqV8pOv-pIagi8yS1A
+
+在调用API之前，你需要理解的LSTM工作原理
+
+https://mp.weixin.qq.com/s/BzlFbweHEJ3z7dSIGmd-QA
+
+深度学习基础之LSTM
+
+https://mp.weixin.qq.com/s/lbHTDdzPbYn2Ln4aihGujQ
+
+人人都能看懂的LSTM
+
+https://mp.weixin.qq.com/s/LI6TsPjzIaa8DxDu3UaV1A
+
+门控循环单元（GRU）的基本概念与原理
+
+https://mp.weixin.qq.com/s/LcdmXgAFpiIoHMIIXECC9g
+
+人人都能看懂的GRU
 
 https://mp.weixin.qq.com/s/m_cOjUHwvW496Gv9_aYgpA
 
@@ -283,29 +315,3 @@ https://mp.weixin.qq.com/s/Kgwwq5XOt88WW6KL8gADmQ
 https://mp.weixin.qq.com/s/7fWh2dovmfbsF8afaX9UOg
 
 一文简述ResNet及其多种变体
-
-https://mp.weixin.qq.com/s/fxq-H2_ZyXVd_kJx6rwEcQ
-
-何恺明CVPR2018关于视觉深度表示学习教程
-
-https://mp.weixin.qq.com/s/xTJr-jWMjk73TCZ8gBT4Ww
-
-一个神经元统治一切：ResNet强大的理论证明
-
-https://mp.weixin.qq.com/s/-SmmtqHWJjq2A4pu5KqYfQ
-
-resnet中的残差连接，你确定真的看懂了？
-
-https://mp.weixin.qq.com/s/AyJ_ZtNFTjkWVH3_Kw7wJg
-
-ResNet架构可逆！多大等提出性能优越的可逆残差网络
-
-https://mp.weixin.qq.com/s/2JwgiCuBoluBNYesYp4zAA
-
-ResNet及其变种的结构梳理、有效性分析与代码解读
-
-# Bi-directional RNN
-
-众所周知，RNN在处理长距离依赖关系时会出现问题。LSTM虽然改进了一些，但也只能缓解问题，而不能解决该问题。
-
-研究人员发现将原文倒序（将其倒序输入编码器）产生了显著改善的结果，因为从解码器到编码器对应部分的路径被缩短了。同样，两次输入同一个序列似乎也有助于网络更好地记忆。

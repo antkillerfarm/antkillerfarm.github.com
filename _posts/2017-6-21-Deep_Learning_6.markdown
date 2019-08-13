@@ -1,12 +1,22 @@
 ---
 layout: post
-title:  深度学习（六）——LSTM
+title:  深度学习（六）——RNN, LSTM
 category: DL 
 ---
 
 # RNN
 
-## RNN的基本结构（续）
+## RNN的基本结构
+
+RNN是Recurrent Neural Network和Recursive Neural Network的简称。前者主要用于处理和时序相关的输入，而后者目前已经没落。本文只讨论前者。
+
+![](/images/article/RNN.png)
+
+上图是RNN的结构图。其中，展开箭头左边是RNN的静态结构图。不同于之前的神经网络表示，这里的圆形不是单个神经元，而是一层神经元。权值也不是单个权值，而是权值向量。
+
+从静态结构图可以看出RNN实际上和3层MLP的结构，是基本类似的。差别在于RNN的隐藏层多了一个指向自己的环状结构。
+
+上图的展开箭头右边是RNN的时序展开结构图。从纵向来看，它只是一个3层的浅层神经网络，然而从横向来看，它却是一个深层的神经网络。可见神经网络深浅与否，不仅和模型本身的层数有关，也与神经元之间的连接方式密切相关。
 
 虽然理论上，我们可以给每一时刻赋予不同的$$U,V,W$$，然而出于简化计算和稀疏度的考量，RNN所有时刻的$$U,V,W$$都是相同的。
 
@@ -275,35 +285,3 @@ LSTM入门必读：从基础知识到工作方式详解
 https://mp.weixin.qq.com/s/jcS4IX7LKCt1E2FVzLWzDw
 
 LSTM入门详解
-
-https://mp.weixin.qq.com/s/MQR7c57NL4b5i4MRA2JgWA
-
-用Python实现CNN长短期记忆网络！
-
-http://mp.weixin.qq.com/s/V2-grLPdZ66FOiC2duc-EA
-
-如何判断LSTM模型中的过拟合与欠拟合
-
-http://blog.csdn.net/malefactor/article/details/51183989
-
-深度学习计算模型中“门函数（Gating Function）”的作用
-
-https://mp.weixin.qq.com/s/ORLpqqV8pOv-pIagi8yS1A
-
-在调用API之前，你需要理解的LSTM工作原理
-
-https://mp.weixin.qq.com/s/BzlFbweHEJ3z7dSIGmd-QA
-
-深度学习基础之LSTM
-
-https://mp.weixin.qq.com/s/lbHTDdzPbYn2Ln4aihGujQ
-
-人人都能看懂的LSTM
-
-https://mp.weixin.qq.com/s/LI6TsPjzIaa8DxDu3UaV1A
-
-门控循环单元（GRU）的基本概念与原理
-
-https://mp.weixin.qq.com/s/LcdmXgAFpiIoHMIIXECC9g
-
-人人都能看懂的GRU

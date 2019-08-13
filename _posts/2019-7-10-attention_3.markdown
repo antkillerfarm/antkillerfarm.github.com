@@ -340,6 +340,10 @@ https://mp.weixin.qq.com/s/WzGa5XVi2Op4Lz-1uQXfxQ
 
 SpanBERT：提出基于分词的预训练模型，多项任务性能超越现有模型！
 
+https://zhuanlan.zhihu.com/p/76912493
+
+nlp中的预训练语言模型总结(单向模型、BERT系列模型、XLNet)
+
 # Attention进阶
 
 https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA

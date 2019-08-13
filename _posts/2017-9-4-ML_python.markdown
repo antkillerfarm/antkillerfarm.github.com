@@ -370,6 +370,10 @@ https://mp.weixin.qq.com/s/fmoUGFjqlJf46r_iOrg9fA
 
 高效使用Python可视化工具Matplotlib
 
+https://mp.weixin.qq.com/s/MYqPHzzoWfaV2N7c4ZgfPQ
+
+Python绘图，我只用Matplotlib
+
 ## Pandas
 
 Pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。
@@ -435,29 +439,3 @@ https://mp.weixin.qq.com/s/2-Ayzmzo8tydDLoKpz1Ezw
 https://mp.weixin.qq.com/s/ebRQMJI9sB7wNI_NYdmTAw
 
 高逼格使用Pandas加速代码，向for循环说拜拜！
-
-## datatable
-
-datatable相当于高级版的Pandas。
-
-它的优点：
-
-- 支持超过内存数量的大数据。
-
-- 多线程数据处理。
-
-官网：
-
-https://datatable.readthedocs.io/en/latest/
-
-参考：
-
-https://mp.weixin.qq.com/s/oVHxYRMzJtD5t79uJ5jgWw
-
-媲美Pandas？一文入门Python的Datatable操作
-
-## mysql
-
-http://www.runoob.com/python/python-mysql.html
-
-python操作mysql数据库

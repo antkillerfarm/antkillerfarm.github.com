@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四）——AutoEncoder, 词向量
+title:  深度学习（四）——AutoEncoder, 词向量（1）
 category: DL 
 ---
 
@@ -327,15 +327,3 @@ http://blog.csdn.net/itplus/article/details/37969519
 CBOW（Continuous Bag-of-Words Model）模型和Skip-gram（Continuous Skip-gram Model）模型脱胎于n-gram模型，即一个词出现的概率只与它前后的n个词有关。这里的n也被称为窗口大小.
 
 上图中，窗口大小为5，即一个中心词$$\{w_t\}$$+前面的两个词$$\{w_{t-1},w_{t-2}\}$$+后面的两个词$$\{w_{t+1},w_{t+2}\}$$。
-
-| 名称 | CBOW | Skip-gram |
-|:--:|:--:|:--:|
-| 输入 | $$\{w_{t-1},w_{t-2},w_{t+1},w_{t+2}\}$$ | $$\{w_t\}$$ |
-| 输出 | $$\{w_t\}$$ | $$\{w_{t-1},w_{t-2},w_{t+1},w_{t+2}\}$$ |
-| 目标 | 在输入确定的情况下，最大化输出值的概率。 | 在输入确定的情况下，最大化输出值的概率。 |
-
-参考：
-
-https://mp.weixin.qq.com/s/ZiPWbSmr0Ba-CtydLDmEMQ
-
-通俗理解Word2Vec之Skip-Gram模型

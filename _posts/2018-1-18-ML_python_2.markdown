@@ -6,6 +6,32 @@ category: AI
 
 # Machine Learning之Python篇
 
+## datatable
+
+datatable相当于高级版的Pandas。
+
+它的优点：
+
+- 支持超过内存数量的大数据。
+
+- 多线程数据处理。
+
+官网：
+
+https://datatable.readthedocs.io/en/latest/
+
+参考：
+
+https://mp.weixin.qq.com/s/oVHxYRMzJtD5t79uJ5jgWw
+
+媲美Pandas？一文入门Python的Datatable操作
+
+## mysql
+
+http://www.runoob.com/python/python-mysql.html
+
+python操作mysql数据库
+
 ## chainer
 
 chainer是一个日本公司Preferred Networks写的基于python的深度学习框架。
@@ -470,32 +496,4 @@ Python3实现决策树算法
 
 https://mp.weixin.qq.com/s?__biz=MzA3MTM3NTA5Ng==&mid=2651056396&idx=1&sn=dabbda2c433e54a2bad506fc13bfd743
 
-<<战狼Ⅱ>>豆瓣十二万影评浅析
-
-https://mp.weixin.qq.com/s/hNOF6YvDjIuX4u36Wr7LCA
-
-随机森林之美
-
-https://mp.weixin.qq.com/s/AHz81u8SGyi9_k40040QVg
-
-Python机器学习入门到进阶
-
-https://mp.weixin.qq.com/s/hFg1TvNocrMi5CpDtvRLcQ
-
-推荐一个计算“造人”成功与否的贝叶斯模型！
-
-http://www.sohu.com/a/168170785_642762
-
-基于机器学习的Python信用卡欺诈检测
-
-https://mp.weixin.qq.com/s/Xl9ZT7_I8P_ZU4O8j6bS5Q
-
-基于Python的人脸识别：识别准确率高达99.38%！
-
-https://mp.weixin.qq.com/s/tN7KVBA9GqdjpAjW-_WF8Q
-
-Python学习者最易上手的机器学习漫游指南
-
-https://mp.weixin.qq.com/s/MmuxNA8Xm6uRiVNGhDnyFw
-
-Scikit-learn实战之数据预处理
+《战狼Ⅱ》豆瓣十二万影评浅析

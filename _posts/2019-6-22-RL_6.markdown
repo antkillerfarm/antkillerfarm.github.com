@@ -177,7 +177,9 @@ $$\hat v(S,w)=\begin{pmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{pmatrix}\begin
 | On-Policy | MC<br/>TD(0)<br/>TD($$\lambda$$)<br/>Gradient TD | Yes<br/>Yes<br/>Yes<br/>Yes | Yes<br/>Yes<br/>Yes<br/>Yes | Yes<br/>No<br/>No<br/>Yes |
 | On-Policy | MC<br/>TD(0)<br/>TD($$\lambda$$)<br/>Gradient TD | Yes<br/>Yes<br/>Yes<br/>Yes | Yes<br/>No<br/>No<br/>Yes | Yes<br/>No<br/>No<br/>Yes |
 
-Gradient TD中的Gradient指的是对应的Bellman公式的梯度。
+Gradient TD中的Gradient指的是PBE（projected Bellman error）的梯度。
+
+![](/images/img3/PBE.png)
 
 **控制算法的收敛性**：
 

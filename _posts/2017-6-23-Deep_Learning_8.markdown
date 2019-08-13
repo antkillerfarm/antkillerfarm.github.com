@@ -1,10 +1,36 @@
 ---
 layout: post
-title:  深度学习（八）——seq2seq, CNN进化史（1）
+title:  深度学习（八）——Bi-directional RNN, seq2seq, CNN进化史（1）
 category: DL 
 ---
 
-# Bi-directional RNN（续）
+# 神经元激活函数进阶（续）
+
+https://mp.weixin.qq.com/s/fxq-H2_ZyXVd_kJx6rwEcQ
+
+何恺明CVPR2018关于视觉深度表示学习教程
+
+https://mp.weixin.qq.com/s/xTJr-jWMjk73TCZ8gBT4Ww
+
+一个神经元统治一切：ResNet强大的理论证明
+
+https://mp.weixin.qq.com/s/-SmmtqHWJjq2A4pu5KqYfQ
+
+resnet中的残差连接，你确定真的看懂了？
+
+https://mp.weixin.qq.com/s/AyJ_ZtNFTjkWVH3_Kw7wJg
+
+ResNet架构可逆！多大等提出性能优越的可逆残差网络
+
+https://mp.weixin.qq.com/s/2JwgiCuBoluBNYesYp4zAA
+
+ResNet及其变种的结构梳理、有效性分析与代码解读
+
+# Bi-directional RNN
+
+众所周知，RNN在处理长距离依赖关系时会出现问题。LSTM虽然改进了一些，但也只能缓解问题，而不能解决该问题。
+
+研究人员发现将原文倒序（将其倒序输入编码器）产生了显著改善的结果，因为从解码器到编码器对应部分的路径被缩短了。同样，两次输入同一个序列似乎也有助于网络更好地记忆。
 
 基于这样的实验结果，1997年Mike Schuster提出了Bi-directional RNN模型。
 
@@ -293,41 +319,3 @@ GoogleNet的进化道路和VGG有所不同。VGG实际上就是“大力出奇�
 代码：
 
 https://github.com/BVLC/caffe/tree/master/models/bvlc_googlenet
-
-Inception系列的改进方向基本都集中在构建不同的Inception模型上。
-
-GoogleNet的另一个改进是**减少了全连接层**（Full Connection, FC），这是减少模型参数的一个重要改进。事实上，在稍后的实践中，人们发现去掉VGG的第一个FC层，对于效果几乎没有任何影响。
-
-参考：
-
-https://mp.weixin.qq.com/s/ceOxFS3Iwf3iLWY73ueoNw
-
-GoogLeNet中的inception结构，你看懂了吗
-
-http://www.cnblogs.com/Allen-rg/p/5833919.html
-
-GoogLeNet学习心得
-
-## SqueezeNet
-
-GoogleNet之后，最有名的CNN模型当属何恺明的Deep Residual Network。DRN在《深度学习（六）》中已有提及，这里不再赘述。
-
-DRN之后，学界的研究重点，由如何提升精度，转变为如何用更少的参数和计算量来达到同样的精度。SqueezeNet就是其中的代表。
-
-论文：
-
-《SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size》
-
-代码：
-
-https://github.com/DeepScale/SqueezeNet
-
-Caffe版本
-
-https://github.com/vonclites/squeezenet
-
-TensorFlow版本
-
-![](/images/article/SqueezeNet_2.png)
-
-上图是SqueezeNet的网络结构图，其最大的创新点在于使用Fire Module替换大尺寸的卷积层。
