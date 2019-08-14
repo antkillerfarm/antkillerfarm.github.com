@@ -242,10 +242,6 @@ https://mp.weixin.qq.com/s/XDBvVjIRfjtDrTN4zd92yg
 
 高铁辐射致癌，为什么会有这种令人喷饭的言论出现？
 
-https://mp.weixin.qq.com/s/VcWZgMbpXp6M8CmWqz8gaA
-
-从《长安十二时辰》看懂“智慧城市”
-
 https://mp.weixin.qq.com/s/WRd_kx-HeSSgDtPTdgk09A
 
 山上“飞”来只火凤凰，这里的居民却要杀掉它？

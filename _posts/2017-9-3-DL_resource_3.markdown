@@ -56,6 +56,14 @@ https://zhuanlan.zhihu.com/p/37404280
 
 图像处理：从bilateral filter到HDRnet
 
+https://zhuanlan.zhihu.com/p/78053406
+
+基于深度学习的特征提取和匹配方法介绍
+
+https://zhuanlan.zhihu.com/p/78051407
+
+基于深度学习的图像边缘和轮廓提取方法介绍
+
 ## 光神经网络
 
 https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ

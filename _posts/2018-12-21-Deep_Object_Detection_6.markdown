@@ -1,8 +1,28 @@
 ---
 layout: post
-title:  深度目标检测（六）——R-FCN, FPN, RetinaNet, CornerNet, CenterNet
+title:  深度目标检测（六）——R-FCN, FPN, RetinaNet, CornerNet
 category: Deep Object Detection 
 ---
+
+# One-stage vs. Two-stage（续）
+
+通常来说，One-stage模型运算速度比Two-stage模型快，但精度略有不足。究其原因主要是“类别不平衡”问题。
+
+- **什么是“类别不平衡”呢？**
+
+详细来说，检测算法在早期会生成一大波的bbox。而一幅常规的图片中，顶多就那么几个object。这意味着，绝大多数的bbox属于background。
+
+- **“类别不平衡”又如何会导致检测精度低呢？**
+
+正是因为bbox中属于background的bbox太多了，所以如果分类器无脑地把所有bbox统一归类为background，accuracy也可以刷得很高。于是乎，分类器的训练就失败了。分类器训练失败，检测精度自然就低了。
+
+- **为什么two-stage系可以避免这个问题呢？**
+
+第一个stage的RPN会对anchor进行简单的二分类（只是简单地区分是前景还是背景，并不区别究竟属于哪个细类）。经过该轮初筛，属于background的bbox被大幅砍削。虽然其数量依然远大于前景类bbox，但是至少数量差距已经不像最初生成的anchor那样夸张了。就等于是从“类别极不平衡”变成了“类别较不平衡”。
+
+![](/images/img3/One_stage.png)
+
+![](/images/img3/Two_stage.png)
 
 # R-FCN
 
@@ -95,6 +115,8 @@ FPN(Feature Pyramid Network)是Tsung-Yi Lin（Ross Girshick和何恺明小组成
 ![](/images/img3/FPN_2.jpg)
 
 上图是Faster R-CNN+FPN。原始的Faster R-CNN的RoI pooling是从同一个feature map中获得ROI，而这里是根据目标尺度大小，从不同尺度的feature map中获得ROI。
+
+![](/images/img3/FP.png)
 
 参考：
 
@@ -215,41 +237,3 @@ CornerNet目标检测开启预测“边界框”到预测“点对”的新思�
 https://zhuanlan.zhihu.com/p/41865617
 
 CornerNet：目标检测算法新思路
-
-https://mp.weixin.qq.com/s/e6B22xpue_xZwrXmIlZodw
-
-ECCV-2018最佼佼者CornerNet的目标检测算法
-
-https://mp.weixin.qq.com/s/9ldLaYKGkgq-MnJZw7CrDQ
-
-CornerNet为什么有别于其他目标检测领域的主流算法？
-
-https://mp.weixin.qq.com/s/ZhfnZ4IwOnTQlqeB6Ilr3A
-
-CornerNet: Detecting Objects as Paired Keypoints解读
-
-https://zhuanlan.zhihu.com/p/63134919
-
-普林斯顿大学提出：CornerNet-Lite，基于关键点的目标检测算法，已开源！
-
-https://mp.weixin.qq.com/s/8hN1RdYVJQWOqPpejjfXeQ
-
-CornerNet
-
-# CenterNet
-
-CenterNet是中科院、牛津、Huawei Noah’s Ark Lab的一个联合团队的作品。（2019.4）
-
-论文：
-
-《CenterNet: Keypoint Triplets for Object Detection》
-
-![](/images/img3/CenterNet.png)
-
-上图是CenterNet的网络结构图。
-
-正如之前提到的，**框对于物体来说不是一个最好的表示**。同理，Corner也不是什么特别好的表示：绝大多数情况下，Corner同样是远离物体的。
-
-也正是由于Corner和物体的关联度不大，CornerNet才发明了corner pooling操作，用以提取Corner。
-
-但是即使这样，由于没有anchor的限制，使得任意两个角点都可以组成一个目标框，这就对判断两个角点是否属于同一物体的算法要求很高，一但准确度差一点，就会产生很多错误目标框。

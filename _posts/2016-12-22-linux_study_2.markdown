@@ -413,6 +413,10 @@ https://mp.weixin.qq.com/s/n6D5_6K9TrnuXg3h6AiFNA
 
 ![](/images/img3/UNIX.jpg)
 
+https://www.cnblogs.com/liqiuhao/p/9450093.html
+
+关于TOCTTOU攻击的简介
+
 # WebGL
 
 WebGL可以看作是JavaScript+OpenGL ES，它为Web开发者使用显卡创建3D应用提供了方案。

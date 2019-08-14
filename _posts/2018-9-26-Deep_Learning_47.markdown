@@ -47,3 +47,7 @@ https://mp.weixin.qq.com/s/exUYS2v5VyRaMdFylWlobw
 https://mp.weixin.qq.com/s/GEMOfh04XR5IyWWlvZeeng
 
 CLIC图像压缩挑战赛冠军方案解读
+
+https://zhuanlan.zhihu.com/p/78050429
+
+基于深度学习的视频压缩方案介绍

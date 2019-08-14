@@ -302,6 +302,10 @@ https://mp.weixin.qq.com/s/9aW1p03f6mEnvSRf56rcgw
 
 Transformer-XL模型浅析
 
+https://mp.weixin.qq.com/s/Xxk6n6r0lSuybjKlwzLAnw
+
+TransformerXL：因为XL，所以更牛
+
 # BERT
 
 论文：

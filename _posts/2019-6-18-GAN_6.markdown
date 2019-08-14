@@ -261,3 +261,7 @@ https://mp.weixin.qq.com/s/DLoFJmr5H04R8cLixuCObA
 https://mp.weixin.qq.com/s/aDulKQMAI4g_GXRunbIxWw
 
 非监督GAN算法U-GAT-IT大幅改进图像转换效果
+
+https://mp.weixin.qq.com/s/YkQnTYPq2Zd-4oaDh4O_zQ
+
+GAN训练的小技巧

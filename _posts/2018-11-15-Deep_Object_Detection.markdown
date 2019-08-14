@@ -26,6 +26,10 @@ DPM(2007)->RCNN(2014)->Fast RCNN->Faster RCNN
 
 ![](/images/img2/deep_learning_object_detection_history.png)
 
+![](/images/img3/deep_learning_object_detection_history_2.png)
+
+![](/images/img3/object_detection.png)
+
 https://github.com/hoya012/deep_learning_object_detection
 
 这个网页提供了相关的论文/模型的列表。
@@ -39,6 +43,10 @@ DPM(Deformable Parts Model)--原理
 https://mp.weixin.qq.com/s/BFL2PhAojZ5zHstgTrhlrw
 
 悉尼大学欧阳万里等人30页最新目标检测综述
+
+https://mp.weixin.qq.com/s/UoIhAcMRgMJ8rlA29_Nacg
+
+深度学习目标检测近年进展
 
 ## CV实践的难点
 
@@ -266,7 +274,7 @@ RCNN相对传统方法的改进：
 
 RCNN使用识别库进行预训练得到CNN（有监督预训练），而后用检测库调优参数，最后在检测库上评测。
 
-这实际上就是《深度学习（九）》中提到的fine-tuning的思想。
+这实际上就是《深度学习（十五）》中提到的fine-tuning的思想。
 
 ## RCNN算法的基本流程
 

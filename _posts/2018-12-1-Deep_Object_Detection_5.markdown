@@ -6,6 +6,18 @@ category: Deep Object Detection
 
 # YOLOv2（续）
 
+### Convolutional With Anchor Boxes
+
+借鉴SSD的经验，使用Anchor方法替代全连接+reshape。
+
+相应的，YOLOv2对于输出向量的编码方式进行了改进，如下图所示：
+
+![](/images/article/yolov2.png)
+
+其主要思路是：将对类别的预测放到anchor box中。
+
+同时，由于分辨率的提高，cell的数量由7x7改为13x13。这样一来就有13x13x9=1521个boxes了。（假设每个cell的Anchor Boxes的数量为9。）因此，YOLOv2比YOLO在检测小物体方面有一定的优势。
+
 ### Dimension Clusters
 
 使用anchor时，作者发现Faster-RCNN中anchor boxes的个数和宽高维度往往是手动精选的先验框（hand-picked priors)，设想能否一开始就选择了更好的、更有代表性的先验boxes维度，那么网络就应该更容易学到准确的预测位置。
@@ -249,17 +261,3 @@ One-stage一步搞定分类和bbox问题。
 论文：
 
 《Speed/accuracy trade-offs for modern convolutional object detectors》
-
-通常来说，One-stage模型运算速度比Two-stage模型快，但精度略有不足。究其原因主要是“类别不平衡”问题。
-
-- **什么是“类别不平衡”呢？**
-
-详细来说，检测算法在早期会生成一大波的bbox。而一幅常规的图片中，顶多就那么几个object。这意味着，绝大多数的bbox属于background。
-
-- **“类别不平衡”又如何会导致检测精度低呢？**
-
-正是因为bbox中属于background的bbox太多了，所以如果分类器无脑地把所有bbox统一归类为background，accuracy也可以刷得很高。于是乎，分类器的训练就失败了。分类器训练失败，检测精度自然就低了。
-
-- **为什么two-stage系可以避免这个问题呢？**
-
-第一个stage的RPN会对anchor进行简单的二分类（只是简单地区分是前景还是背景，并不区别究竟属于哪个细类）。经过该轮初筛，属于background的bbox被大幅砍削。虽然其数量依然远大于前景类bbox，但是至少数量差距已经不像最初生成的anchor那样夸张了。就等于是从“类别极不平衡”变成了“类别较不平衡”。

@@ -6,6 +6,62 @@ category: Deep Object Detection
 
 # 目标检测进阶
 
+https://mp.weixin.qq.com/s/PpT-NmTVjRi0_SEq0lISXw
+
+旷视科技Oral论文解读：IoU-Net让目标检测用上定位置信度
+
+https://mp.weixin.qq.com/s/OqlZ2TRGbHURYW00440lgQ
+
+微软亚洲研究院与北京大学共同提出用于物体检测的可学习区域特征提取模块
+
+https://www.zhihu.com/question/270143544
+
+目标检测中，不同物体之间的距离非常接近如何解决？
+
+https://mp.weixin.qq.com/s/b4s8Te29DyS71xwQU789pQ
+
+实体零售场景下密集商品的精确探测
+
+https://mp.weixin.qq.com/s/iW-k12CIO0gSx8Y6etTzgA
+
+三分支网络——目前目标检测性能最佳网络框架
+
+https://mp.weixin.qq.com/s/JN1N-IqIL4tAh4rIkZcxpg
+
+Grid R-CNN解读：商汤最新目标检测算法
+
+https://mp.weixin.qq.com/s/_2DwSY6olj3wKy2xKukEGg
+
+商汤开源Grid R-CNN Plus：相比Grid RCNN，速度更快，精度更高
+
+https://mp.weixin.qq.com/s/baPfFVi7deEsCAFu3ColoQ
+
+CVPR2018目标检测算法总览
+
+https://mp.weixin.qq.com/s/t5p1xGKVnwd7wbiOzucFqQ
+
+基于深度学习的目标检测算法剖析与实现
+
+https://mp.weixin.qq.com/s/-zQZjHVs7bYyGkGuMUf3qg
+
+目标检测领域还有什么可做的？19个方向给你建议
+
+https://mp.weixin.qq.com/s/k8msLl6c2Cp_5h-4xBD6Zw
+
+CVPR2019-目标检测分割技术进展
+
+https://mp.weixin.qq.com/s/uzG8sic5Y6LVqBS6iKQDhw
+
+目标检测中图像增强，mixup如何操作？
+
+https://mp.weixin.qq.com/s/pkFcmm15gnuRJtngFX7f0w
+
+目标检测训练trick超级大礼包—不改模型提升精度，值得拥有
+
+https://mp.weixin.qq.com/s/flXzhQ-Ypf3fwTqLelLzOQ
+
+李沐等将目标检测绝对精度提升5%，不牺牲推理速度
+
 https://mp.weixin.qq.com/s/6QsyYtEVjavoLfU_lQF1pw
 
 目标检测新文：Generalized Intersection over Union

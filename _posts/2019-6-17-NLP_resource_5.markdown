@@ -289,3 +289,7 @@ NLP技术也能帮助程序分析？
 https://mp.weixin.qq.com/s/eb0GcjdwO18-_0T9z3KdlA
 
 最新综述：对话系统之用户模拟器
+
+https://mp.weixin.qq.com/s/HaJtc7XlCPh0KdGnUehkcg
+
+万字长文详解文本抽取：从算法理论到实践

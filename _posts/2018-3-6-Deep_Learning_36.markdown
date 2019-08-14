@@ -174,6 +174,10 @@ https://mp.weixin.qq.com/s/DzsS7Q1hqH2YwRTvKFVh6w
 
 如何增强推荐系统模型更新的“实时性”？
 
+https://mp.weixin.qq.com/s/G4G6okx8NGOH8hk92C0KmQ
+
+前沿推荐系统方法，UTS 316页PPT
+
 # Mask R-CNN
 
 Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的网络。它是何恺明2017年的新作。

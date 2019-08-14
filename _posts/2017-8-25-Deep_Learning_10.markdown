@@ -108,7 +108,19 @@ https://mp.weixin.qq.com/s/NjFdu6iP3Sn9GbDhrbpisQ
 
 ![](/images/article/AlexNet.png)
 
-分组卷积最早在AlexNet中出现，由于当时的硬件资源有限，训练AlexNet时卷积操作不能全部放在同一个GPU处理，因此作者把feature maps分给2个GPU分别进行处理，最后把2个GPU的结果进行融合。
+Grouped Convolution最早在AlexNet中出现，由于当时的硬件资源有限，训练AlexNet时卷积操作不能全部放在同一个GPU处理，因此作者把feature maps分给2个GPU分别进行处理，最后把2个GPU的结果进行融合。
+
+![](/images/img3/group_conv.png)
+
+上图是Grouped Convolution的具体运算图：
+
+- input分成了g组。每组的channel数只有全部的1/g。
+
+- weight和bias也分成了g组。每组的input_num和output_num都只有全部的1/g。
+
+- 每组input和相应的weight/bias进行普通的conv运算得到一个结果。g组结果合并在一起得到一个最终结果。
+
+可以看出，Grouped Convolution和普通Convolution的input/output/weight的尺寸是完全一致的，只是运算方式有差异。由于group之间没有数据交换，总的计算量只有普通Convolution的1/g。
 
 在AlexNet的Group Convolution当中，特征的通道被平均分到不同组里面，最后再通过两个全连接层来融合特征，这样一来，就只能在最后时刻才融合不同组之间的特征，对模型的泛化性是相当不利的。
 
@@ -123,3 +135,9 @@ https://mp.weixin.qq.com/s/NjFdu6iP3Sn9GbDhrbpisQ
 ![](/images/img2/ShuffleNet_2.png)
 
 上图是ShuffleNet的Unit结构图，DWConv表示depthwise convolution，GConv表示pointwise group convolution。a是普通的Deep Residual Unit，b的进化用以提高精度，c的进一步进化用以减少计算量。
+
+参考：
+
+https://blog.yani.io/filter-group-tutorial/
+
+A Tutorial on Filter Groups (Grouped Convolution)

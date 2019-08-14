@@ -174,6 +174,14 @@ https://mp.weixin.qq.com/s/ZlyF1GcmpwZoT-3o4T567A
 
 卡尔曼滤波算法及其应用
 
+https://zhuanlan.zhihu.com/p/77327349
+
+如何理解那个能造导弹军舰还把嫦娥送上天的卡尔曼滤波算法Kalman filter?
+
+https://mp.weixin.qq.com/s/vAm0QDp_i2ec5pZbTmdHNA
+
+傻瓜也能懂的卡尔曼滤波器
+
 # 推荐算法中的常用排序算法
 
 ## Pointwise方法

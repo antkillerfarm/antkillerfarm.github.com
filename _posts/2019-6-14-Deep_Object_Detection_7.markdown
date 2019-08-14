@@ -1,10 +1,48 @@
 ---
 layout: post
-title:  深度目标检测（七）——Anchor-Free, 其它目标检测网络, 目标检测进阶（1）
+title:  深度目标检测（七）——CenterNet, Anchor-Free, 其它目标检测网络, 目标检测进阶（1）
 category: Deep Object Detection 
 ---
 
-# CenterNet（续）
+# CornerNet（续）
+
+https://mp.weixin.qq.com/s/e6B22xpue_xZwrXmIlZodw
+
+ECCV-2018最佼佼者CornerNet的目标检测算法
+
+https://mp.weixin.qq.com/s/9ldLaYKGkgq-MnJZw7CrDQ
+
+CornerNet为什么有别于其他目标检测领域的主流算法？
+
+https://mp.weixin.qq.com/s/ZhfnZ4IwOnTQlqeB6Ilr3A
+
+CornerNet: Detecting Objects as Paired Keypoints解读
+
+https://zhuanlan.zhihu.com/p/63134919
+
+普林斯顿大学提出：CornerNet-Lite，基于关键点的目标检测算法，已开源！
+
+https://mp.weixin.qq.com/s/8hN1RdYVJQWOqPpejjfXeQ
+
+CornerNet
+
+# CenterNet
+
+CenterNet是中科院、牛津、Huawei Noah’s Ark Lab的一个联合团队的作品。（2019.4）
+
+论文：
+
+《CenterNet: Keypoint Triplets for Object Detection》
+
+![](/images/img3/CenterNet.png)
+
+上图是CenterNet的网络结构图。
+
+正如之前提到的，**框对于物体来说不是一个最好的表示**。同理，Corner也不是什么特别好的表示：绝大多数情况下，Corner同样是远离物体的。
+
+也正是由于Corner和物体的关联度不大，CornerNet才发明了corner pooling操作，用以提取Corner。
+
+但是即使这样，由于没有anchor的限制，使得任意两个角点都可以组成一个目标框，这就对判断两个角点是否属于同一物体的算法要求很高，一但准确度差一点，就会产生很多错误目标框。
 
 有鉴于此，CenterNet除了Corner之外，还添加了Center的预测分支，也就是上图中的center pooling+center heatmap。这主要基于以下假设：**如果目标框是准确的，那么在其中心区域能够检测到目标中心点的概率就会很高，反之亦然。**
 
@@ -303,59 +341,3 @@ https://zhuanlan.zhihu.com/p/67714508
 https://mp.weixin.qq.com/s/pB3_ho7JLANKRtQK4gsR5Q
 
 Kaggle实战目标检测奇淫技巧合集
-
-https://mp.weixin.qq.com/s/PpT-NmTVjRi0_SEq0lISXw
-
-旷视科技Oral论文解读：IoU-Net让目标检测用上定位置信度
-
-https://mp.weixin.qq.com/s/OqlZ2TRGbHURYW00440lgQ
-
-微软亚洲研究院与北京大学共同提出用于物体检测的可学习区域特征提取模块
-
-https://www.zhihu.com/question/270143544
-
-目标检测中，不同物体之间的距离非常接近如何解决？
-
-https://mp.weixin.qq.com/s/b4s8Te29DyS71xwQU789pQ
-
-实体零售场景下密集商品的精确探测
-
-https://mp.weixin.qq.com/s/iW-k12CIO0gSx8Y6etTzgA
-
-三分支网络——目前目标检测性能最佳网络框架
-
-https://mp.weixin.qq.com/s/JN1N-IqIL4tAh4rIkZcxpg
-
-Grid R-CNN解读：商汤最新目标检测算法
-
-https://mp.weixin.qq.com/s/_2DwSY6olj3wKy2xKukEGg
-
-商汤开源Grid R-CNN Plus：相比Grid RCNN，速度更快，精度更高
-
-https://mp.weixin.qq.com/s/baPfFVi7deEsCAFu3ColoQ
-
-CVPR2018目标检测算法总览
-
-https://mp.weixin.qq.com/s/t5p1xGKVnwd7wbiOzucFqQ
-
-基于深度学习的目标检测算法剖析与实现
-
-https://mp.weixin.qq.com/s/-zQZjHVs7bYyGkGuMUf3qg
-
-目标检测领域还有什么可做的？19个方向给你建议
-
-https://mp.weixin.qq.com/s/k8msLl6c2Cp_5h-4xBD6Zw
-
-CVPR2019-目标检测分割技术进展
-
-https://mp.weixin.qq.com/s/uzG8sic5Y6LVqBS6iKQDhw
-
-目标检测中图像增强，mixup如何操作？
-
-https://mp.weixin.qq.com/s/pkFcmm15gnuRJtngFX7f0w
-
-目标检测训练trick超级大礼包—不改模型提升精度，值得拥有
-
-https://mp.weixin.qq.com/s/flXzhQ-Ypf3fwTqLelLzOQ
-
-李沐等将目标检测绝对精度提升5%，不牺牲推理速度

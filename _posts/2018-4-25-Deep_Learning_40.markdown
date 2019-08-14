@@ -233,7 +233,3 @@ https://mp.weixin.qq.com/s/ueAIT-oAQQPtaPkljOmTwg
 https://mp.weixin.qq.com/s/ePh_fdgLBXKujYY6KGESrA
 
 你需要知道的10种行人属性
-
-https://mp.weixin.qq.com/s/sZjHni2aV5M3g-ZP-Fp9Lg
-
-《长安十二时辰》中的跨域行人重识别问题

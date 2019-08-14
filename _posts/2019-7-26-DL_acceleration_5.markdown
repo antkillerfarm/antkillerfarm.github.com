@@ -217,3 +217,7 @@ https://mp.weixin.qq.com/s/EuT-4_eEtIVKh6QdLDbohg
 https://mp.weixin.qq.com/s/L49cqZ2PXP-x4Y6xBJG5cQ
 
 旷视研究院提出MetaPruning：基于元学习和AutoML的模型压缩新方法
+
+https://mp.weixin.qq.com/s/F_p414ezQ0RDhPnZj36SUA
+
+网络剪枝中的AutoML方法

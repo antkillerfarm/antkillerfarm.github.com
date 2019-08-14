@@ -344,6 +344,10 @@ https://zhuanlan.zhihu.com/p/76912493
 
 nlp中的预训练语言模型总结(单向模型、BERT系列模型、XLNet)
 
+https://mp.weixin.qq.com/s/pYSs6NhIAB6DuwNnKZhkZQ
+
+Bert改进： 如何融入知识
+
 # Attention进阶
 
 https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA

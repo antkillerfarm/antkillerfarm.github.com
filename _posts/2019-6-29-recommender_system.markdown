@@ -191,3 +191,7 @@ https://mp.weixin.qq.com/s/gEET3mcI4VTLLg5ICQL2xQ
 https://mp.weixin.qq.com/s/vpANPrl86Ou2fBVHgLXtBQ
 
 京东电商推荐系统实践
+
+https://mp.weixin.qq.com/s/oKayc5612vVm9k8hu50GNw
+
+当个不“佛系”的推荐系统，CTR 预估要做哪些工作？

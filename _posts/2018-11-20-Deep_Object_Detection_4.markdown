@@ -283,15 +283,3 @@ YOLOv2网络通过在每一个卷积层后添加batch normalization，极大的�
 所有state-of-the-art的检测方法基本上都会使用ImageNet预训练过的模型（classifier）来提取特征，例如AlexNet输入图片会被resize到不足256x256，这导致分辨率不够高，给检测带来困难。所以YOLO(v1)先以分辨率224x224训练分类网络，然后需要增加分辨率到448x448，这样做不仅将网络切换为检测网络，也改变了分辨率。所以作者想能不能在预训练的时候就把分辨率提高了，训练的时候只是由分类网络切换为检测网络。
 
 YOLOv2首先修改预训练分类网络的分辨率为448x448，在ImageNet数据集上训练10轮（10 epochs）。这个过程让网络有足够的时间调整filter去适应高分辨率的输入。然后fine tune为检测网络。mAP获得了4%的提升。
-
-### Convolutional With Anchor Boxes
-
-借鉴SSD的经验，使用Anchor方法替代全连接+reshape。
-
-相应的，YOLOv2对于输出向量的编码方式进行了改进，如下图所示：
-
-![](/images/article/yolov2.png)
-
-其主要思路是：将对类别的预测放到anchor box中。
-
-同时，由于分辨率的提高，cell的数量由7x7改为13x13。这样一来就有13x13x9=1521个boxes了。（假设每个cell的Anchor Boxes的数量为9。）因此，YOLOv2比YOLO在检测小物体方面有一定的优势。
