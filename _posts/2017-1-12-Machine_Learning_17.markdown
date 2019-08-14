@@ -274,6 +274,10 @@ https://mp.weixin.qq.com/s/vkBSextwFQv8-DUwAxgVyA
 
 图像降维之Isomap特征抽取方法
 
+https://zhuanlan.zhihu.com/p/78193297
+
+PCA和SVD的联系和区别？
+
 # 独立成分分析
 
 这一节我们将讲述独立成分分析（Independent Components Analysis，ICA）算法。

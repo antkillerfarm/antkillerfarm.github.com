@@ -300,7 +300,11 @@ code.google.com/p/wireme
 
 http://blog.csdn.net/tkwxty/article/details/43342595
 
+Android下DLNA开发简介
+
 https://www.raspberrypi.org/forums/viewtopic.php?f=38&t=25684
+
+Multi-room audio solution
 
 # PulseAudio
 
@@ -337,4 +341,3 @@ https://www.audinate.com/
 http://wenku.baidu.com/view/d0bcd929e2bd960590c67750.html
 
 IEEE Ethernet AVB协议简介。
-

@@ -64,6 +64,10 @@ https://zhuanlan.zhihu.com/p/78051407
 
 基于深度学习的图像边缘和轮廓提取方法介绍
 
+https://mp.weixin.qq.com/s/ifNZksDtAOVKomH9b4TL-w
+
+更好也更快！最先进的图像去模糊算法DeblurGAN-v2
+
 ## 光神经网络
 
 https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ
