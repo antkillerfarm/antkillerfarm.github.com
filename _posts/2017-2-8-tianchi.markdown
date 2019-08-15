@@ -26,11 +26,11 @@ http://www.kdd.org/kdd-cup
 
 http://www.datafountain.cn/
 
-京东、搜狗投放赛事。
+京东、搜狗投放的赛事。
 
 https://biendata.com/
 
-知乎投放赛事。
+知乎投放的赛事。
 
 https://challenger.ai/
 
@@ -72,14 +72,15 @@ https://tianchi.shuju.aliyun.com/competition/introduction.htm?spm=5176.100066.33
 
 这里发现一个有趣的事实：**用户浏览数量最多的是火锅店，前10家中占到了9家，而用户购买最多的却是快餐店和便利店。**
 
-这实际上暗合《机器学习（十五）》中提到的**显式反馈**和**隐式反馈**的区别。
+这实际上暗合《机器学习（十六）》中提到的**显式反馈**和**隐式反馈**的区别。
 
 因为隐式反馈的数据有效性（这里指单位数据中包含的有效信息的数量，也可称作信息丰度）不如显式反馈，所以通常需要有多出1到2个数量级的隐式反馈数据，才能得到足够的信息以辅助预测显式反馈。
 
 而官方的数据正好相反，隐式反馈数据的数量只有显式反馈的十分之一，且并不包含待预测时间段的数据。因此，user_view实际上是没什么用的数据。
 
-select count(distinct user_id) from user_pay;
-select count(*) from user_pay;
+`select count(distinct user_id) from user_pay;`
+
+`select count(*) from user_pay;`
 
 其次，对用户行为进行分析。诚如论坛某网友指出的，这批数据平均下来一个用户还不到4条交易记录（19583949个用户，69674110条交易记录），这都能找出规律，那就不是人而是神了。
 

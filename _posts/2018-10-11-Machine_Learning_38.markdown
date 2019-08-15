@@ -293,3 +293,7 @@ https://mp.weixin.qq.com/s/FHdo2DTapoTryA-hOM-y_w
 https://mp.weixin.qq.com/s/r7ngZOM9tO-_OSfvs2aDJw
 
 数据清洗&预处理入门完整指南
+
+https://mp.weixin.qq.com/s/r4ycLnjOl5hSPBMwKpnmsQ
+
+如何打造高质量的NLP数据集

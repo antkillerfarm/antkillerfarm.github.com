@@ -375,3 +375,7 @@ https://mp.weixin.qq.com/s/AV8fD5Vf6uzhLeW9nfMASg
 https://mp.weixin.qq.com/s/s10z5pkYf5Sha0V58T8fBw
 
 单路径NAS: 在四小时内设计出给定硬件内最有效的网
+
+https://www.zhihu.com/question/339002300
+
+One-Shot 神经网络搜索(NAS)的searching阶段到底在做什么？

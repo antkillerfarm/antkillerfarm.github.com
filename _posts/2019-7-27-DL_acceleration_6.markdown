@@ -89,3 +89,7 @@ https://zhuanlan.zhihu.com/p/53864403
 https://mp.weixin.qq.com/s/Nkxy0SUdbwIjp5swU6tS9g
 
 深度互学习-Deep Mutual Learning：三人行必有我师
+
+https://mp.weixin.qq.com/s/I08kMmUohWWbYVpPDgTJsw
+
+Startdt AI提出：使用生成对抗网络用于One-Stage目标检测的知识蒸馏方法

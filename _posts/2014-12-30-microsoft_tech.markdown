@@ -4,56 +4,6 @@ title:  这些年微软相关的技术总结
 category: technology 
 ---
 
-# C#相关
-
-## 1.XmlReader
-
-XmlReader是.NET中处理XML的类。之前的W3C已经提出了DOM和SAX两种模型。作为最早的模型，这两种模型在各种语言中都有相应的实现，关于它们的讨论也有很多，在此不再赘述。
-
-XmlReader是一种快速、无缓冲、向前并只读的轻量级XML引擎，在这一点上它和SAX是相同的。它和SAX的主要区别在于它们的设计模式是不同的。SAX是push模式的XML引擎，它会在读到相应的节点时，触发消息并将之发送给调用程序。而XmlReader则是pull式的XML引擎，它更符合人们的通常的对文件顺序处理的习惯。当然除此之外，它还有其他的好处。参看MSDN的相关章节。
-
-通常情况下，pull模型比push模型的效率高，但push模型的灵活性要高些。例如，Dos下的编程主要是一种顺序执行的pull模型结构，而Windows下的编程则是一种基于消息的push模型结构。所以，读取特定标签内容的XML文档，采用XmlReader比较好，而对于那些结构不固定或需要遍历的XML文档用SAX较好。
-
-PS: XmlReader提出的pull方案，后来被libxml2采用，成为了GTK+的一部分。
-
-## 2.Microsoft.WindowsCE.Forms
-
-这是一个Wince的类。由于.NET CF中的System.Windows.Forms.Form没有DefWndProc参数，所以要想接收窗体消息就要用到它。不过它的dll需要自己添（在.NET CF的安装路径下可以找到这个Microsoft.WindowsCE.Forms.dll），接收C++编程时的那些WM_开头的消息时需要用到这个模块中的MessageWindow类。
-
-代码示例如下:
-
-{% highlight c# %}
-    public class MsgWindow : MessageWindow
-    {
-
-        public const int WM_CUSTOMMSG = 0x0400+3333;
-        
-        private Form1 msgform;//Form1是用于接收消息的那个窗体Form。
-
-        public MsgWindow(Form1 msgform)
-        {
-            this.msgform = msgform;
-        }
-
-        protected override void WndProc(ref Message msg)
-        {
-            switch (msg.Msg)
-            {
-                case WM_CUSTOMMSG:
-                    //do sth
-                    break;
-            }
-            base.WndProc(ref msg);
-        }
-    }
-{% endhighlight %}
-
-## 3.C#中的发布功能
-
-C#项目属性中有个publish标签是关于发布程序的功能的。用过Java的人都知道，Java的可移植性是很不错的，但Java程序的部署相对于一般 的本地程序来说就显得比较麻烦了。至少在本人的程序生涯中，就多次经历拿着JAR文件兴冲冲的跑去，却发现目标机没有JRE的情况。
-
-C#中的发布功能除了能打包程序和.NET Framework之外，还有网络发布的功能。这里我主要讨论单机程序的打包。如果只有程序文件的话，情况比较简单，没什么难度。如果还有数据文件的话就 要注意了。在程序文件（Application Files）对话框中，每个文件有一个发布状态（Publish Status）的属性，如果你希望数据文件和程序文件在同一个文件夹下的话，最好选择包含（Include）而不是数据文件（Data File），后者会把你的数据文件部署到一个专门的数据文件夹下，这个文件夹可用 System.Deployment.Application.DataDirectory获得。
-
 # VS
 
 ## 1.选择CPU的类型
@@ -116,7 +66,6 @@ http://topic.csdn.net/t/20050525/17/4035191.html
 `cmd /k dir`
 
 如上所示的命令，在启动命令行之后，会在命令行下执行dir命令。
-
 
 ## 8.工程向导
 
@@ -232,5 +181,3 @@ EVC下将MFC的工程分为PPC和wince两种，而VS2005下，不再区分这两
 由于这些内部文件夹都在C:\Users\xxx\AppData\Local\Microsoft\Outlook\outlook.ost中，并不能直接删除。因此我的办法是直接删除该文件。
 
 不用担心邮件丢失，本地删除之后，Outlook会自动从服务器重新下载的。
-
-
