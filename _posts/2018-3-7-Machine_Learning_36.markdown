@@ -130,6 +130,10 @@ https://mp.weixin.qq.com/s/pwuOFj_rT5Z_XY9siZosKQ
 
 线性模型已退场，XGBoost时代早已来
 
+https://mp.weixin.qq.com/s/hYuBHHfAGLO3Y0l5t6y94Q
+
+XGBoost缺失值引发的问题及其深度分析
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。
@@ -292,4 +296,3 @@ https://mp.weixin.qq.com/s/N7DE0kvf8THhJQwroHj4vA
 >李舰，从2003年开始，一直把R当作随身武器奋战在统计学和数据分析的第一线，是Rweibo、Rwordseg、tmcn等高质量R包的作者，在业界积累了大量的经验，目前供职于Mango Solutions（中国），任数据总监。
 
 >刘思喆，2012至2016年就职于京东商城，推荐系统平台部高级经理，主要负责和推荐系统离线、在线相关的用户行为、商品特征的建模，以及数据监控平台。因工作业绩，在《京东技术解密》一书中获“数据达人”称号。
-

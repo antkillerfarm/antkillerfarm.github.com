@@ -4,31 +4,7 @@ title:  深度学习（十一）——花式卷积（2）
 category: DL 
 ---
 
-# 花式卷积
-
-## 分组卷积（续）
-
-参考：
-
-https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg
-
-旷视科技提出新型卷积网络ShuffleNet，专为移动端设计
-
-https://mp.weixin.qq.com/s/0MvCnm46pgeMGEw-EdNv_w
-
-CNN模型之ShuffleNet
-
-https://mp.weixin.qq.com/s/tceLrEalafgL8R44DZYP9g
-
-旷视科技提出新型轻量架构ShuffleNet V2：从理论复杂度到实用设计准则
-
-https://mp.weixin.qq.com/s/Yhvuog6NZOlVWEZURyqWxA
-
-ShuffleNetV2：轻量级CNN网络中的桂冠
-
-https://mp.weixin.qq.com/s/zLf0aKeMYwqMwC1TymMxgQ
-
-移动端高效网络，卷积拆分和分组的精髓
+# 花式卷积（续）
 
 ## Separable convolution
 
@@ -79,6 +55,10 @@ https://www.zhihu.com/question/56024942
 它包含一个深度方面的卷积（一个为每个通道单独执行的空间卷积，depthwise convolution），后面跟着一个逐点的卷积（一个跨通道的1×1卷积，pointwise convolution）。我们可以将其看作是首先求跨一个2D空间的相关性，然后再求跨一个1D空间的相关性。可以看出，这种2D+1D映射学起来比全 3D 映射更加简单。
 
 在ImageNet数据集上，Xception的表现稍稍优于Inception v3，而且在一个有17000类的更大规模的图像分类数据集上的表现更是好得多。而它的模型参数的数量仅和Inception一样多。
+
+上面展示的是1个input channel对应1个output channel的depthwise convolution，实际使用中，也可以1个input channel对应N个output channel，这里的N一般被称作multipler参数。
+
+更一般的，如果是N个input channel对应M个output channel的话，就是之前介绍过的Grouped Convolution了。
 
 论文：
 

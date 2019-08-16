@@ -114,13 +114,13 @@ Grouped Convolution最早在AlexNet中出现，由于当时的硬件资源有限
 
 上图是Grouped Convolution的具体运算图：
 
-- input分成了g组。每组的channel数只有全部的1/g。
+- input分成了g组。每组的channel数只有全部的1/g。（上图中g=2）
 
-- weight和bias也分成了g组。每组的input_num和output_num都只有全部的1/g。
+- weight和bias也分成了g组。每组weight的input_num和output_num都只有普通卷积的1/g。也就是每组weight的尺寸只有原来的$$1/g^2$$，g组weight的总尺寸就是原来的1/g。
 
 - 每组input和相应的weight/bias进行普通的conv运算得到一个结果。g组结果合并在一起得到一个最终结果。
 
-可以看出，Grouped Convolution和普通Convolution的input/output/weight的尺寸是完全一致的，只是运算方式有差异。由于group之间没有数据交换，总的计算量只有普通Convolution的1/g。
+可以看出，Grouped Convolution和普通Convolution的input/output的尺寸是完全一致的，只是运算方式有差异。由于group之间没有数据交换，总的计算量只有普通Convolution的1/g。
 
 在AlexNet的Group Convolution当中，特征的通道被平均分到不同组里面，最后再通过两个全连接层来融合特征，这样一来，就只能在最后时刻才融合不同组之间的特征，对模型的泛化性是相当不利的。
 
@@ -141,3 +141,23 @@ Grouped Convolution最早在AlexNet中出现，由于当时的硬件资源有限
 https://blog.yani.io/filter-group-tutorial/
 
 A Tutorial on Filter Groups (Grouped Convolution)
+
+https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg
+
+旷视科技提出新型卷积网络ShuffleNet，专为移动端设计
+
+https://mp.weixin.qq.com/s/0MvCnm46pgeMGEw-EdNv_w
+
+CNN模型之ShuffleNet
+
+https://mp.weixin.qq.com/s/tceLrEalafgL8R44DZYP9g
+
+旷视科技提出新型轻量架构ShuffleNet V2：从理论复杂度到实用设计准则
+
+https://mp.weixin.qq.com/s/Yhvuog6NZOlVWEZURyqWxA
+
+ShuffleNetV2：轻量级CNN网络中的桂冠
+
+https://mp.weixin.qq.com/s/zLf0aKeMYwqMwC1TymMxgQ
+
+移动端高效网络，卷积拆分和分组的精髓

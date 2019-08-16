@@ -173,3 +173,7 @@ https://mp.weixin.qq.com/s/KupXlIt8bHLLGF6qWFH6vQ
 https://mp.weixin.qq.com/s/kdD658xzC-JxuWGYqLRtcQ
 
 性能达到SOTA的CSP对象检测网络
+
+https://mp.weixin.qq.com/s/8k0Mhver2mLnKmV8rVqJHQ
+
+小目标检测相关技巧总结

@@ -90,6 +90,12 @@ COCO数据集是微软团队获取的一个可以用来图像recognition+segment
 
 http://cocodataset.org/
 
+参考：
+
+https://mp.weixin.qq.com/s/EKh9lq9TDum4zC3snNi5bA
+
+MS COCO数据集详解
+
 ## UCI数据集
 
 UCI大学有个专门提供数据集的网站：

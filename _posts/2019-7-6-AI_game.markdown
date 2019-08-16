@@ -14,6 +14,22 @@ Alpha-Beta剪枝
 
 CFR（Counterfactual Regret Minimization）
 
+一般来说，我们可以根据信息的暴露程度将游戏分为两大类：完美信息游戏（Perfect-Information Games）和不完美信息游戏（Imperfect-Information Games）。
+
+如果所有的参与者，在游戏的任何阶段都可以访问所有关于游戏（包括对手）状态及其可能延续的信息，那么称这类游戏为完美信息游戏；否则称为不完美信息游戏。
+
+围棋、象棋等棋类游戏，对局双方可以看到局面的所有信息，属于完美信息游戏；
+
+而扑克、桥牌、麻将等游戏，虽然每个参与者都能看到对手打过的牌，但并不知道对手的手牌和游戏的底牌，也就是说各个对局者所掌握的信息是不对称的，因此属于不完美信息游戏。
+
+对于完美信息游戏，通常游戏的复杂度就决定了难度，我们可以用状态空间复杂度（State-Space Complexity）和游戏树复杂度（Game-Tree Complexity）对其难度进行衡量；
+
+而对于不完美信息游戏，隐藏信息对于游戏的难度影响很大，我们可以用信息集（Information Set）数目和信息集平均大小对其难度进行衡量。
+
+![](/images/img3/AI_game.png)
+
+目前大部分完美信息游戏（如国际象棋、围棋等）以及信息集平均大小较小的不完美信息游戏（如两人德州扑克和多人德州扑克等）都有了相当好的解决方法。然而，对于桥牌和麻将这类含有大量隐藏信息的不完美信息游戏，需要我们发明全新的方法论，才能有所突破。
+
 ## 资料
 
 http://gameaibook.org/
@@ -22,7 +38,13 @@ http://gameaibook.org/
 
 ## 参考
 
+https://mp.weixin.qq.com/s/jYyAxh5epSziWcgYb1nNgA
+
 游戏AI的缘起与进化
+
+https://mp.weixin.qq.com/s/S88VHJQXcdVNWU1wQG13RA
+
+哪类游戏AI难度更高？用数学方法来分析一下
 
 https://zhuanlan.zhihu.com/p/22604627
 
