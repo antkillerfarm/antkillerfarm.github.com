@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十四）——三维处理, 深度贝叶斯学习
+title:  深度学习（四十四）——三维处理
 category: DL 
 ---
 
@@ -101,6 +101,10 @@ https://mp.weixin.qq.com/s/5covdsSaNBIAqORbtfHa4w
 https://mp.weixin.qq.com/s/2ygq9D9x1ae_rMcu6eZb-w
 
 基于空间自适应归一化的图像语义合成
+
+https://mp.weixin.qq.com/s/6bI8tvRbzopGGBwayB1XBA
+
+三十六亿的《哪吒》历时五年，动画创作难如何解决？
 
 # 三维处理
 
@@ -331,61 +335,3 @@ https://mp.weixin.qq.com/s/n3ZUsq2I0CaJ5pIl2nZUFQ
 https://mp.weixin.qq.com/s/uKCQVpkN6Va8jZisAyAfNA
 
 3D人脸技术漫游指南
-
-# 深度贝叶斯学习
-
-https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og
-
-贝叶斯学习与未来人工智能
-
-https://mp.weixin.qq.com/s/Zd4rFU7Lebr4zmzxThNyVw
-
-详解珠算：清华大学开源的贝叶斯深度学习库
-
-https://mp.weixin.qq.com/s/RpaOrngeXTKycLb3iCygZw
-
-利用贝叶斯神经网络进行随机动力系统中的学习与策略搜索
-
-https://mp.weixin.qq.com/s/lKm_ypn5I7tSjoQHceJ0jQ
-
-概率编程：使用贝叶斯神经网络预测金融市场价格
-
-https://mp.weixin.qq.com/s/cDqxmRVQCIqdM5oiUh82YQ
-
-Yee Whye Teh：《贝叶斯深度学习与深度贝叶斯学习》
-
-https://mp.weixin.qq.com/s/Zk2YG-IJNhJxTBU8THSM-g
-
-让DL可解释？这一份66页贝叶斯深度学习教程告诉你
-
-https://mp.weixin.qq.com/s/-izo9VUdxN33pwVFGV_tjw
-
-299页PPT带你回顾深度贝叶斯学习最新发展脉络
-
-https://github.com/bayesgroup/deepbayes-2018
-
-Seminars DeepBayes Summer School 2018
-
-https://mp.weixin.qq.com/s/WCRYppBLdl_M4etUChnfgw
-
-PyMC3和Theano代码构建贝叶斯深度网络
-
-https://mp.weixin.qq.com/s/7mwJpQFWWXJ3dvTAwDFI7Q
-
-贝叶斯卷积神经网络：架起深度学习与统计学的桥梁
-
-https://mp.weixin.qq.com/s/2LkpuchuHs82Sxs5rD8bWA
-
-《深度贝叶斯与序列学习》，279页PPT带你知晓深度贝叶斯序列模型在NLP最新进展
-
-https://zhuanlan.zhihu.com/p/74573041
-
-针对推荐系统的深度贝叶斯多目标学习
-
-https://mp.weixin.qq.com/s/b041h_hbHQYiXCiDHGaD5w
-
-深度贝叶斯自然语言处理，304页ppt带你了解最新研究进展
-
-https://zhuanlan.zhihu.com/p/77140176
-
-构建贝叶斯深度学习分类器

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十一）——Linear Discriminant Analysis
+title:  机器学习（三十一）——Linear Discriminant Analysis, 强连通分量算法
 category: ML 
 ---
 
@@ -158,6 +158,24 @@ http://www.cnblogs.com/jerrylead/archive/2011/04/21/2024389.html
 https://mp.weixin.qq.com/s/AeLwfmM0N-b1dfxt3v4C-A
 
 教科书上的LDA为什么长这样？
+
+# 强连通分量算法
+
+http://ishare.iask.sina.com.cn/f/34626295.html
+
+矩阵不可约的充要条件
+
+http://www.cnblogs.com/saltless/archive/2010/11/08/1871430.html
+
+求强连通分量的Tarjan算法
+
+http://blog.csdn.net/dm_vincent/article/details/8554244
+
+求解强连通分量算法之---Kosaraju算法
+
+http://www.cnblogs.com/luweiseu/archive/2012/07/14/2591370.html
+
+强连通分支算法--Kosaraju算法、Tarjan算法和Gabow算法
 
 # t-SNE
 

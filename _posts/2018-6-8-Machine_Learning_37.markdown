@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十七）——Optimizer进阶, 推荐系统进阶, 强连通分量算法
+title:  机器学习（三十七）——Optimizer进阶, 推荐系统进阶
 category: ML 
 ---
 
@@ -194,9 +194,17 @@ https://mp.weixin.qq.com/s/mylRodVvvzI3e0-9-fEzTw
 
 深度研究自然梯度优化，从入门到放弃
 
+https://mp.weixin.qq.com/s/P0qzzyVQke_c-RUF0Faitw
+
+怎么判断一个优化问题是凸优化还是非凸优化？
+
+https://mp.weixin.qq.com/s/scGkuMJ4lZULhmK69vWYpA
+
+中国博士生提出最先进AI训练优化器，收敛快精度高，网友亲测：Adam可以退休了
+
 # 推荐系统进阶
 
-除了《机器学习（十五～十六）》提及的ALS和PCA之外，相关的算法还包括：
+除了《机器学习（十六～十七）》提及的ALS和PCA之外，相关的算法还包括：
 
 ## FM：Factorization Machines
 
@@ -229,6 +237,10 @@ https://github.com/aksnzhy/xlearn
 https://mp.weixin.qq.com/s/MEjhJycDwssvzXm7DaSp7Q
 
 推荐系统召回模型之全能的FM模型
+
+https://mp.weixin.qq.com/s/zIvzGpHNnm7WRgDmtdFd-w
+
+Factorization Machines因子分解机详解
 
 ## PITF
 
@@ -396,20 +408,6 @@ https://mp.weixin.qq.com/s/S9-GgQTlx2c14mN_3kNQiQ
 
 基于标签的实时短视频推荐系统
 
-# 强连通分量算法
+https://mp.weixin.qq.com/s/sw16_sUsyYuzpqqy39RsdQ
 
-http://ishare.iask.sina.com.cn/f/34626295.html
-
-矩阵不可约的充要条件
-
-http://www.cnblogs.com/saltless/archive/2010/11/08/1871430.html
-
-求强连通分量的Tarjan算法
-
-http://blog.csdn.net/dm_vincent/article/details/8554244
-
-求解强连通分量算法之---Kosaraju算法
-
-http://www.cnblogs.com/luweiseu/archive/2012/07/14/2591370.html
-
-强连通分支算法--Kosaraju算法、Tarjan算法和Gabow算法
+阿里妈妈深度树检索技术（TDM）及应用框架的探索实践

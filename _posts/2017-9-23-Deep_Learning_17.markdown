@@ -221,3 +221,7 @@ https://mp.weixin.qq.com/s/alnji5kgTxc34O7k78uGiA
 https://mp.weixin.qq.com/s/8FtDhpgc-1j3TSL771N-Ng
 
 无标注数据是鸡肋还是宝藏？阿里工程师这样用它
+
+https://mp.weixin.qq.com/s/LdfLd2cZCdpvNYLKHUNwuA
+
+简述无监督图像分类发展现状

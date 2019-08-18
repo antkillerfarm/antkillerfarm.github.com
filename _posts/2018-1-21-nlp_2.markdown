@@ -214,8 +214,6 @@ https://mp.weixin.qq.com/s/xjSw7PbVrESo9u4otBOM1Q
 
 《Using Recurrent Neural Networks for Slot Filling in Spoken Language Understanding》
 
-《Convolutional Neural Networks for Sentence Classification》：TextCNN的开山之作
-
 Semantic Role Labeling
 
 ## BPE

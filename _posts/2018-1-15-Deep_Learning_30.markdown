@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十）——自动求导, 元学习, 深度哈希
+title:  深度学习（三十）——自动求导, 深度哈希, 深度贝叶斯学习
 category: DL 
 ---
 
@@ -97,6 +97,10 @@ https://mp.weixin.qq.com/s/C-Pa1jznQntyhocdxS-4Hg
 https://mp.weixin.qq.com/s/edrh-HXqW01Yx7c8tQ8UxA
 
 从数据结构到算法：图网络方法初探
+
+https://mp.weixin.qq.com/s/9MWoCmtKPPVs3Rmko-7adQ
+
+10亿节点异构网络中，GCN 如何应用？
 
 # 自动求导
 
@@ -197,176 +201,6 @@ https://mp.weixin.qq.com/s/f0xFfA1inOVOdJnSZR4k6Q
 
 自动微分技术
 
-# 元学习
-
-人工智能的历史显示了明确的进展方向：
-
-第一代：**良好的老式人工智能**
-
->手工预测   
->什么都不学
-
-第二代：**浅学习**
-
->手工功能   
->学习预测
-
-第三代：**深度学习**
-
->手工算法（优化器，目标，架构......）   
->端到端地学习功能和预测
-
-第四代：**元学习**
-
->无手工   
->端到端学习算法和功能以及预测
-
-## 参考
-
-https://github.com/gopala-kr/meta-learning
-
-元学习（meta-learning）相关文献资源大列表
-
-https://github.com/sudharsan13296/Awesome-Meta-Learning
-
-元学习相关资源汇总
-
-https://mp.weixin.qq.com/s/KKK3VEpwL90g6Aro8qtXxQ
-
-学习如何学习的算法：简述元学习研究方向现状
-
-https://mp.weixin.qq.com/s/qoKQwEvOnP384i5Z-_jO1A
-
-CVPR2019最新元学习教程：基于元学习的计算机视觉应用
-
-https://mp.weixin.qq.com/s/KtO3OTZ-bZ6m0ZSI6jTyjw
-
-OpenAI提出Reptile：可扩展的元学习算法
-
-https://mp.weixin.qq.com/s/T4GiL9vW7ALOzWloE_QQBA
-
-OpenAI开发可拓展元学习算法Reptile，能快速学习
-
-https://mp.weixin.qq.com/s/MWcoGsQJg1GBbSqzyPD9uQ
-
-基于梯度的元学习算法，可高效适应非平稳环境
-
-https://zhuanlan.zhihu.com/p/35695477
-
-基于Meta Learning在动态竞争环境中实现策略自适应
-
-https://mp.weixin.qq.com/s/AhadWUjtgsFmb8uTylTvqg
-
-OpenAI提出新型元学习方法EPG，调整损失函数实现新任务上的快速训练
-
-https://mp.weixin.qq.com/s/dmRdp2oMn0vGukclJSVZDg
-
-Uber AI论文：利用反向传播训练可塑神经网络，生物启发的元学习范式
-
-https://mp.weixin.qq.com/s/Cc4EHc6ei-PtZWhewM10xw
-
-学习如何学习的算法：简述元学习研究方向现状
-
-https://mp.weixin.qq.com/s/4f6-gXovdrYk7240TrUwJg
-
-谷歌大脑：基于元学习的无监督学习更新规则
-
-https://mp.weixin.qq.com/s/cAbMB-DB9vu2ua8t5J28ww
-
-从零开始，了解元学习
-
-https://mp.weixin.qq.com/s/Q36vpS1HF2IfeCsFLh656A
-
-基于元强化学习的神经科学新理论
-
-https://mp.weixin.qq.com/s/XtzvHOk7CdXRBy02kUmgsg
-
-近期爆火的Meta Learning，遗传算法与深度学习的火花，再不了解你就out了
-
-https://mp.weixin.qq.com/s/KvgYyuyICueNQPo_S27fEA
-
-BAIR展示新型模仿学习，学会像人那样执行任务
-
-https://zhuanlan.zhihu.com/p/41223529
-
-最前沿:Meta RL论文解读
-
-https://zhuanlan.zhihu.com/p/40600485
-
-最前沿：Meta Learning前沿进展扫描
-
-https://zhuanlan.zhihu.com/p/28639662
-
-百家争鸣的Meta Learning/Learning to learn
-
-https://zhuanlan.zhihu.com/p/45845001
-
-最前沿：用模仿学习来学习增强学习
-
-https://zhuanlan.zhihu.com/p/46059552
-
-Meta Learning单排小教学
-
-https://zhuanlan.zhihu.com/p/46131981
-
-最前沿：Meta Learning在少样本文本翻译上的应用
-
-https://zhuanlan.zhihu.com/p/46339823
-
-谈谈无监督Meta Learning的研究
-
-https://zhuanlan.zhihu.com/p/46340382
-
-ICLR19最新论文解读之Meta Domain Adaptation
-
-https://mp.weixin.qq.com/s/RBMGI20AI92ZcWSlYczqAA
-
-伯克利、OpenAI等提出基于模型的元策略优化强化学习
-
-https://mp.weixin.qq.com/s/p0dcov84pZqsU7XP30bexQ
-
-Meta-Learning元学习：学会快速学习
-
-https://mp.weixin.qq.com/s/wl8j7dLu3OxPV7MNaO2-7Q
-
-《基于梯度的元学习》199页伯克利博士论文带你回顾元学习最新发展脉络
-
-https://mp.weixin.qq.com/s/ftiGPBhAx5iqlW_Ltg1yhg
-
-《元监督视觉学习》132页伯克利博士论文带你回顾元监督视觉应用最新发展脉络
-
-https://mp.weixin.qq.com/s/K7sLM-LMcF6-gQrV1ddrDw
-
-让智能体主动交互，DeepMind提出用元强化学习实现因果推理
-
-https://mp.weixin.qq.com/s/8sBXlnXiZNsPRwFsgJVRQQ
-
-谷歌提出元奖励学习，两大基准测试刷新最优结果
-
-https://mp.weixin.qq.com/s/x7uk7jBNvnM7Tgk9lFKy3Q
-
-元学习(Meta-Learning)综述及五篇顶会论文推荐
-
-https://mp.weixin.qq.com/s/GF_NLkSw64_6msmFep81fw
-
-Google Brain ICLR Talk：元学习的前沿与挑战
-
-https://mp.weixin.qq.com/s/sQmDZsVGIADwO97yEFATkw
-
-ICML2019《元学习》教程与必读论文列表
-
-https://zhuanlan.zhihu.com/p/70782949
-
-最前沿：General Meta Learning
-
-https://mp.weixin.qq.com/s/rZdd-vWlicynthaSasX3kQ
-
-Meta Learning入门：MAML 和 Reptile
-
-https://mp.weixin.qq.com/s/MsIAkJAcYHWkkMjzd7qXKA
-
-元学习与强化学习的概率视角，47页ppt，DeepMind牛津Yee Whye Teh
-
 # 深度哈希
 
 https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg
@@ -400,3 +234,61 @@ HashGAN:基于注意力机制的深度对抗哈希模型提升跨模态检索效
 https://mp.weixin.qq.com/s/3Z2Zc8zTq2uiPyw7ZuuZfw
 
 解密美图大规模多媒体数据检索技术DeepHash
+
+# 深度贝叶斯学习
+
+https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og
+
+贝叶斯学习与未来人工智能
+
+https://mp.weixin.qq.com/s/Zd4rFU7Lebr4zmzxThNyVw
+
+详解珠算：清华大学开源的贝叶斯深度学习库
+
+https://mp.weixin.qq.com/s/RpaOrngeXTKycLb3iCygZw
+
+利用贝叶斯神经网络进行随机动力系统中的学习与策略搜索
+
+https://mp.weixin.qq.com/s/lKm_ypn5I7tSjoQHceJ0jQ
+
+概率编程：使用贝叶斯神经网络预测金融市场价格
+
+https://mp.weixin.qq.com/s/cDqxmRVQCIqdM5oiUh82YQ
+
+Yee Whye Teh：《贝叶斯深度学习与深度贝叶斯学习》
+
+https://mp.weixin.qq.com/s/Zk2YG-IJNhJxTBU8THSM-g
+
+让DL可解释？这一份66页贝叶斯深度学习教程告诉你
+
+https://mp.weixin.qq.com/s/-izo9VUdxN33pwVFGV_tjw
+
+299页PPT带你回顾深度贝叶斯学习最新发展脉络
+
+https://github.com/bayesgroup/deepbayes-2018
+
+Seminars DeepBayes Summer School 2018
+
+https://mp.weixin.qq.com/s/WCRYppBLdl_M4etUChnfgw
+
+PyMC3和Theano代码构建贝叶斯深度网络
+
+https://mp.weixin.qq.com/s/7mwJpQFWWXJ3dvTAwDFI7Q
+
+贝叶斯卷积神经网络：架起深度学习与统计学的桥梁
+
+https://mp.weixin.qq.com/s/2LkpuchuHs82Sxs5rD8bWA
+
+《深度贝叶斯与序列学习》，279页PPT带你知晓深度贝叶斯序列模型在NLP最新进展
+
+https://zhuanlan.zhihu.com/p/74573041
+
+针对推荐系统的深度贝叶斯多目标学习
+
+https://mp.weixin.qq.com/s/b041h_hbHQYiXCiDHGaD5w
+
+深度贝叶斯自然语言处理，304页ppt带你了解最新研究进展
+
+https://zhuanlan.zhihu.com/p/77140176
+
+构建贝叶斯深度学习分类器

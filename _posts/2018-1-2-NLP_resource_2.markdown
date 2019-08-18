@@ -84,6 +84,12 @@ https://mp.weixin.qq.com/s/S6qSU6CGUMsqYaIPCEVhxA
 
 剖析CNN句子分类任务
 
+《Convolutional Neural Networks for Sentence Classification》：TextCNN的开山之作
+
+https://mp.weixin.qq.com/s/8nPVMPBgc33_f9tFWV3IUw
+
+详述CNN及TextCNN原理
+
 ## 情感分析
 
 https://mp.weixin.qq.com/s/mWOhh9rJru_YDwQEB34GNg

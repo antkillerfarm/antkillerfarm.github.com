@@ -226,6 +226,10 @@ https://www.jianshu.com/p/7c83478eeb56
 
 BiLSTM模型中CRF层的运行原理-2
 
+https://mp.weixin.qq.com/s/Na07vvySqo11VXRGe2YbCg
+
+如何理解LSTM后接CRF？
+
 # 自适应滤波器
 
 《自适应滤波器原理（Adaptive Filter Theory）》，Simon Haykin著。

@@ -262,6 +262,10 @@ https://mp.weixin.qq.com/s/aDulKQMAI4g_GXRunbIxWw
 
 非监督GAN算法U-GAT-IT大幅改进图像转换效果
 
+https://zhuanlan.zhihu.com/p/76936166
+
+GitHub趋势榜第一：把小姐姐自拍，变成二次元萌妹子，神情高度还原，效果胜于CycleGAN
+
 https://mp.weixin.qq.com/s/YkQnTYPq2Zd-4oaDh4O_zQ
 
 GAN训练的小技巧

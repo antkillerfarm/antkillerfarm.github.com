@@ -68,6 +68,10 @@ https://zhuanlan.zhihu.com/p/62450795
 
 kNN的花式用法
 
+https://zhuanlan.zhihu.com/p/78561555
+
+KNN的实现方式有哪些？
+
 # 异常检测
 
 Anomaly Detection

@@ -177,3 +177,7 @@ https://mp.weixin.qq.com/s/kdD658xzC-JxuWGYqLRtcQ
 https://mp.weixin.qq.com/s/8k0Mhver2mLnKmV8rVqJHQ
 
 小目标检测相关技巧总结
+
+https://mp.weixin.qq.com/s/ouBxEXcY4s894Sec4ifBtQ
+
+基于YOLO的3D目标检测：YOLO-6D

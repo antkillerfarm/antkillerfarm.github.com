@@ -397,3 +397,7 @@ PoolNet：基于池化技术的显著性目标检测
 https://zhuanlan.zhihu.com/p/71538356
 
 BASNet，一种能关注边缘的显著性检测算法
+
+https://mp.weixin.qq.com/s/ntSH2aS4YHqrLaTAfWFLsQ
+
+可选择性与不变性：关注边界的显著性目标检测
