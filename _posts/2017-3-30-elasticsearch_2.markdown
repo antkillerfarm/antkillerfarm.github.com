@@ -264,3 +264,7 @@ https://mp.weixin.qq.com/s/2kU9QhLP-njpToPckyfK5A
 https://mp.weixin.qq.com/s/QJOfh5gJReQTimu-mAzexg
 
 以Kafka和RocketMQ为例，漫谈消息队列
+
+https://mp.weixin.qq.com/s/6aXcum-FAbvcGcOrkSC4vQ
+
+为什么 Kafka 会成为微服务架构的事实标准？

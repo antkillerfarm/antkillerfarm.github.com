@@ -22,6 +22,10 @@ https://mp.weixin.qq.com/s/6w5S5R_qA0956VMj1isunQ
 
 雷哥带你读论文之深度迁移炼丹！
 
+https://mp.weixin.qq.com/s/uVby0GpWlmAlqRlbvysSyQ
+
+计算机视觉中深度迁移学习，165页PPT
+
 # 深度ISP
 
 ## 数据集

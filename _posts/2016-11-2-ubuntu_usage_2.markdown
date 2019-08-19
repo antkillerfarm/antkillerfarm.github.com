@@ -263,6 +263,10 @@ https://www.ubuntu.com/desktop/snappy
 
 A ‘snap’ is a universal Linux package
 
+https://blog.csdn.net/dyxcome/article/details/86105724
+
+解决ubuntu安装软件has install-snap change in progress错误
+
 ## Ubuntu Make
 
 Ubuntu Make前身是Ubuntu Developer Tools Center。可在Ubuntu平台上快速安装各种语言的开发环境。

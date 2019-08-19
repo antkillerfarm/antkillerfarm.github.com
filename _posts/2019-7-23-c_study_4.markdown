@@ -172,7 +172,7 @@ Mono有个IDE，叫做MonoDevelop。
 
 https://www.monodevelop.com/
 
-安装方面，尽管ubuntu的仓库已经有了Mono，但是却没有MonoDevelop，且该Mono版本与MonoDevelop不兼容，因此还是老老实实采用官网的方案安装吧。
+安装方面，尽管ubuntu的仓库已经有了Mono，但是却没有MonoDevelop，且该Mono版本与最新的MonoDevelop不兼容，因此还是老老实实采用官网的方案安装吧。
 
 参考：
 
@@ -183,3 +183,7 @@ https://www.cnblogs.com/shanyou/p/4295163.html
 https://www.cnblogs.com/wer-ltm/p/8776846.html#!comments
 
 .NET:持续进化的统一开发平台
+
+https://mp.weixin.qq.com/s/j5PFEkWd49SNKVdlWoqHiw
+
+.NET Core 很酷，你不得不知！

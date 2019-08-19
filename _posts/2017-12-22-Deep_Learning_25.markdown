@@ -88,6 +88,12 @@ SeetaFace人脸识别引擎由中科院计算所山世光研究员带领的人�
 
 https://github.com/seetaface
 
+第一代
+
+https://github.com/seetafaceengine/SeetaFace2
+
+第二代
+
 论文：
 
 《Coarse-to-Fine Auto-Encoder Networks (CFAN) for Real-Time Face Alignment》
@@ -101,6 +107,10 @@ SeetaFace开源人脸识别引擎介绍
 http://www.cnblogs.com/nenya33/p/6801045.html
 
 CFAN
+
+https://mp.weixin.qq.com/s/iESGCZjdvwUzqW7pu0GwrQ
+
+中科视拓开源SeetaFace2人脸识别算法
 
 ## Siamese network
 

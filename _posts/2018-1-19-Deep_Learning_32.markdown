@@ -83,3 +83,7 @@ PointNet
 https://zhuanlan.zhihu.com/p/71564244
 
 PointRCNN第一个基于原始点云的3D目标检测
+
+https://mp.weixin.qq.com/s/ZujYVfpM7ccGPqZnh1YsuQ
+
+基于点云 / RGBD的3D视觉检测技术

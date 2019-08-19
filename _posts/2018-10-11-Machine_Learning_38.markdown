@@ -280,6 +280,10 @@ https://mp.weixin.qq.com/s/vhr5gXoa0S4-QqFcK7uz-w
 
 模型吞噬特征工程
 
+https://mp.weixin.qq.com/s/zgKbG3r_B8d1qQHnrD2NCg
+
+特征工程宝典《Feature Engineering for Machine Learning》翻译及代码实现
+
 # 数据清洗
 
 https://mp.weixin.qq.com/s/YrCC8CmP6UKuCmSdF2K_3g

@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/Na07vvySqo11VXRGe2YbCg
 
 如何理解LSTM后接CRF？
 
+https://mp.weixin.qq.com/s/1FCWMRapGMXjxTLoA2fYCg
+
+CRF和LSTM 模型在序列标注上的优劣？
+
 # 自适应滤波器
 
 《自适应滤波器原理（Adaptive Filter Theory）》，Simon Haykin著。

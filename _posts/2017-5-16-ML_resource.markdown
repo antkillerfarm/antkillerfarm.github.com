@@ -158,6 +158,10 @@ https://mp.weixin.qq.com/s/YI0yRgxgNE1CVY-lBwjR9g
 
 177页鲁棒机器学习教程
 
+https://mp.weixin.qq.com/s/xK2RCv2eMv0f7ZAFHHIoRw
+
+鲁棒机器学习相关文献集
+
 http://mp.weixin.qq.com/s/xP4lnLXwGlYE_RmJfRwJ4w
 
 关于如何解释机器学习的一些方法

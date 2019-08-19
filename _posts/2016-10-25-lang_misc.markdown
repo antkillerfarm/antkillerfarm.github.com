@@ -358,7 +358,7 @@ https://github.com/minad/gridslides
 
 ## Mathpix Snip
 
-Mathpix Snip可以用来将图片变成Latex公式。
+Mathpix Snip可以用来将图片变成Latex公式。目前已经收费。。。
 
 官网：
 
@@ -368,11 +368,43 @@ https://mathpix.com/
 
 `sudo snap install mathpix-snipping-tool`
 
+快捷键：
+
+Ctrl+Alt+M
+
 参考：
 
 https://mp.weixin.qq.com/s/fY936R9trn0RcTICE8EAAA
 
 免费数学神器Mathpix发布移动版，一起来写更快的公式
+
+## Mathpix原理
+
+论文：
+
+《What You Get Is What You See:A Visual Markup Decompiler》
+
+代码：
+
+https://github.com/harvardnlp/im2markup/
+
+官方实现（torch版本）
+
+https://github.com/ritheshkumar95/im2latex-tensorflow
+
+tensorflow版本
+
+https://github.com/yixuanzhou/image2latex
+
+上个版本的GUI封装
+
+https://github.com/ssampang/im2latex
+
+另一个TF实现
+
+https://github.com/guillaumegenthial/im2latex
+
+另一个TF实现
 
 ## 参考
 
