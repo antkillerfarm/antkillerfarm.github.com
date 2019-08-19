@@ -335,3 +335,7 @@ https://mp.weixin.qq.com/s/n3ZUsq2I0CaJ5pIl2nZUFQ
 https://mp.weixin.qq.com/s/uKCQVpkN6Va8jZisAyAfNA
 
 3D人脸技术漫游指南
+
+https://mp.weixin.qq.com/s/WBiDyIBV9OaKbxUhBml2AA
+
+GS3D(monocular 3D detection)

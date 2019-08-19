@@ -72,7 +72,11 @@ https://mp.weixin.qq.com/s/IeqSfjt4x8HquXBeQN2gdQ
 
 https://zhuanlan.zhihu.com/p/76044027
 
-A survey on Image Data Augmentation 数据增强文献综述
+A survey on Image Data Augmentation数据增强文献综述
+
+https://mp.weixin.qq.com/s/2B0NBY39noikPEO1dB06Sg
+
+CV领域中数据增强相关的论文推荐
 
 # 深度信息检索
 
