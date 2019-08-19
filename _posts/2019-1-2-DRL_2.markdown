@@ -1,10 +1,52 @@
 ---
 layout: post
-title:  深度强化学习（二）——AlphaGo, AlphaStar, DRL参考资源（1）
+title:  深度强化学习（二）——AlphaGo, AlphaStar
 category: RL 
 ---
 
 # Deep Q-learning Network（续）
+
+![](/images/img2/DQN.jpg)
+
+上图引用自论文：
+
+《Deep Learning for Video Game Playing》
+
+该论文最早发表于2017年，但是作者每年都会更新论文的内容。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/21262246
+
+DQN从入门到放弃1 DQN与增强学习
+
+https://zhuanlan.zhihu.com/p/21292697
+
+DQN从入门到放弃2 增强学习与MDP
+
+https://zhuanlan.zhihu.com/p/21340755
+
+DQN从入门到放弃3 价值函数与Bellman方程
+
+https://zhuanlan.zhihu.com/p/21378532
+
+DQN从入门到放弃4 动态规划与Q-Learning
+
+https://zhuanlan.zhihu.com/p/21421729
+
+DQN从入门到放弃5 深度解读DQN算法
+
+https://zhuanlan.zhihu.com/p/21547911
+
+DQN从入门到放弃6 DQN的各种改进
+
+https://zhuanlan.zhihu.com/p/21609472
+
+DQN从入门到放弃7 连续控制DQN算法-NAF
+
+https://zhuanlan.zhihu.com/p/56023723
+
+通过Q-learning深入理解强化学习（上）
 
 https://zhuanlan.zhihu.com/p/21434933
 
@@ -341,57 +383,3 @@ AlphaStar之IMPALA
 https://mp.weixin.qq.com/s/XljE82cJZfFOgf2KrXWSKA
 
 DeepMind首个战胜星际2职业玩家的AI为何无敌？新视角揭秘AI里程碑
-
-# DRL参考资源
-
-https://mp.weixin.qq.com/s/sHP03DAeZvdBxwVPuSNRPg
-
-如何丝滑地入门神经网络？写个AI赛车游戏，只训练4代就能安全驾驶
-
-https://mp.weixin.qq.com/s/1SZKhG1ZbD1pl-3YQD_umg
-
-6行代码搞定基本的RL算法，速度围观Reddit高赞帖
-
-https://mp.weixin.qq.com/s/7BsXPQ8wC6_fHulU63ZQiQ
-
-当强化学习遇见泛函分析
-
-https://mp.weixin.qq.com/s/6n5HawyR4AgH8Dq0gJMw2g
-
-强化学习的基本概念与代码实现
-
-https://zhuanlan.zhihu.com/p/27699682
-
-荐译一篇通俗易懂的策略梯度（Policy Gradient）方法讲解
-
-https://mp.weixin.qq.com/s/RLEuaiRdq6AbTSUcYQ5O3A
-
-深度强化学习在NLP怎么用？看清华黄民烈老师这一份120页《自然语言处理和搜索中的深度强化学习应用》讲义
-
-https://mp.weixin.qq.com/s/I8IwPCY6-zocJKFXMr6rUg
-
-深度强化学习的18个关键问题
-
-https://zhuanlan.zhihu.com/p/29019246
-
-基于策略的增强学习
-
-https://mp.weixin.qq.com/s/OY56lJ_NFf5vVAgKfKyx2A
-
-利用强化学习自动搜索最优化方法
-
-https://mp.weixin.qq.com/s/uDFsWebfLmka-zZX3Y_8kg
-
-深度强化学习在面向任务的对话管理中的应用
-
-https://mp.weixin.qq.com/s/nYOOwVoijl1p4V0A7yaI3w
-
-机遇与挑战：用强化学习自动搜索优化算法
-
-http://mp.weixin.qq.com/s/TBVVdX3erOpXNjXmhLmxOw
-
-学“深度强化学习”，看懂DeepMind这篇文章就够了!
-
-https://mp.weixin.qq.com/s/_Di73PkEWJV1-OLLHfz7yQ
-
-组合在线学习：实时反馈玩转组合优化

@@ -340,48 +340,5 @@ Deepmind是当今DL领域最前沿的科研机构，尤其在RL领域更是领�
 
 上图是DQN的网络结构图。由于这里的任务是训练Atari游戏的AI，因此网络的输入实际上就是游戏的画面。而理解游戏画面，就需要一定的CNN结构。所以DQN的结构实际上和一般的CNN是一致的，其关键要害在于loss函数的设定。
 
-由《强化学习（六）》中的“价值函数的近似表示”可知，
+由《强化学习（六）》中的“价值函数的近似表示”可知：$$Q(s,a)\approx f(s,a,w)$$
 
-$$Q(s,a)$$
-
-![](/images/img2/DQN.jpg)
-
-上图引用自论文：
-
-《Deep Learning for Video Game Playing》
-
-该论文最早发表于2017年，但是作者每年都会更新论文的内容。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/21262246
-
-DQN从入门到放弃1 DQN与增强学习
-
-https://zhuanlan.zhihu.com/p/21292697
-
-DQN从入门到放弃2 增强学习与MDP
-
-https://zhuanlan.zhihu.com/p/21340755
-
-DQN从入门到放弃3 价值函数与Bellman方程
-
-https://zhuanlan.zhihu.com/p/21378532
-
-DQN从入门到放弃4 动态规划与Q-Learning
-
-https://zhuanlan.zhihu.com/p/21421729
-
-DQN从入门到放弃5 深度解读DQN算法
-
-https://zhuanlan.zhihu.com/p/21547911
-
-DQN从入门到放弃6 DQN的各种改进
-
-https://zhuanlan.zhihu.com/p/21609472
-
-DQN从入门到放弃7 连续控制DQN算法-NAF
-
-https://zhuanlan.zhihu.com/p/56023723
-
-通过Q-learning深入理解强化学习（上）
