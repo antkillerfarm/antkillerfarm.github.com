@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度强化学习（二）——Deep Q-learning Network
+title:  深度强化学习（二）——Deep Q-learning Network, DQN进化史
 category: RL 
 ---
 
@@ -82,21 +82,13 @@ $$L=E[(\color{blue}{r+\gamma \max_{a'}Q(s',a',w)}-Q(s,a,w))^2]$$
 
 DQN虽然是model-free的，但是也有难点，那就是Reward的定义。好在在Atari游戏的例子里，这个问题比较简单，直接采用游戏得分即可。但得分奖励过于肤浅，在动作类游戏中或许没啥问题，但对于《Montezuma's Revenge》这样的解谜游戏，就不太好使了。
 
-## DQN进化史
-
-![](/images/img2/DQN.jpg)
-
-上图引用自论文：
-
-《Deep Learning for Video Game Playing》
-
-该论文最早发表于2017年，但是作者每年都会更新论文的内容。
+## Nature DQN
 
 DQN最早发表于NIPS 2013，该版本的DQN，也被称为NIPS DQN。NIPS DQN除了提出DQN的基本概念之外，还使用了《强化学习（六）》中提到的Experience Replay技术。
 
 2015年初，Deepmind在Nature上提出了改进版本，是为Nature DQN。它改进了Loss函数：
 
-$$L=E[(\color{blue}{r+\gamma \max_{a'}Q(s',a',w^-)}-Q(s,a,w))^2]$$
+$$L=(\color{blue}{r+\gamma \max_{a'}Q(s',a',w^-)}-Q(s,a,w))^2$$
 
 上式中，计算目标Q值的网络使用的参数是$$w^-$$，而不是w。也就是说，原来NIPS DQN的target Q网络是动态变化的，跟着Q网络的更新而变化，这样不利于计算目标Q值，导致目标Q值和当前的Q值相关性较大。
 
@@ -107,24 +99,6 @@ $$L=E[(\color{blue}{r+\gamma \max_{a'}Q(s',a',w^-)}-Q(s,a,w))^2]$$
 这在下文介绍的Leela Zero项目的训练过程中体现的很明显：一开始我们只训练一个简单的AI，然后逐渐加深加大网络，淘汰废物AI，得到更优秀的AI。
 
 为了使进化生效，在一段时间内保持目标Q网络不变就是很显然的了——你过不了我这关，就没资格继续下去了。
-
-在Nature DQN出来之后，肯定很多人在思考如何改进它。那么DQN有什么问题呢？
-
-- 目标Q值的计算准确吗？全部通过max Q来计算有没有问题？
-
-- 随机采样的方法好吗？按道理不同样本的重要性是不一样的Q值代表状态，动作的价值，那么单独动作价值的评估会不会更准确？
-
-- DQN中使用$$\epsilon$$-greedy的方法来探索状态空间，有没有更好的做法？
-
-- 使用卷积神经网络的结构是否有局限？加入RNN呢？
-
-- DQN无法解决一些高难度的Atari游戏比如《Montezuma's Revenge》，如何处理这些游戏？
-
-- DQN训练时间太慢了，跑一个游戏要好几天，有没有办法更快？
-
-- DQN训练是单独的，也就是一个游戏弄一个网络进行训练，有没有办法弄一个网络同时掌握多个游戏，或者训练某一个游戏后将知识迁移到新的游戏？
-
-- DQN能否用在连续动作输出问题？
 
 ## 参考
 
@@ -204,13 +178,51 @@ https://mp.weixin.qq.com/s/SJd-3qH4W4GMMLZSmvFk1w
 
 利用DQN玩吃豆人（Pacman）小游戏
 
-# Double DQN
+# DQN进化史
 
-$$L=E[(\color{blue}{r+\gamma \max_{a'}Q(s',a',w^-)}-Q(s,a,w))^2]$$
+![](/images/img2/DQN.jpg)
+
+上图引用自论文：
+
+《Deep Learning for Video Game Playing》
+
+该论文最早发表于2017年，但是作者每年都会更新论文的内容。
+
+----
+
+在Nature DQN出来之后，肯定很多人在思考如何改进它。那么DQN有什么问题呢？
+
+- 目标Q值的计算准确吗？全部通过max Q来计算有没有问题？
+
+- 随机采样的方法好吗？按道理不同样本的重要性是不一样的Q值代表状态，动作的价值，那么单独动作价值的评估会不会更准确？
+
+- DQN中使用$$\epsilon$$-greedy的方法来探索状态空间，有没有更好的做法？
+
+- 使用卷积神经网络的结构是否有局限？加入RNN呢？
+
+- DQN无法解决一些高难度的Atari游戏比如《Montezuma's Revenge》，如何处理这些游戏？
+
+- DQN训练时间太慢了，跑一个游戏要好几天，有没有办法更快？
+
+- DQN训练是单独的，也就是一个游戏弄一个网络进行训练，有没有办法弄一个网络同时掌握多个游戏，或者训练某一个游戏后将知识迁移到新的游戏？
+
+- DQN能否用在连续动作输出问题？
+
+## Double DQN
+
+$$L=\left(\color{blue}{r+\gamma Q(s',\mathop{\arg\max}_{a'}Q(s',a',w),w^-)}-Q(s,a,w)\right)^2$$
 
 
 
-# Rainbow
+## Prioritised replay
+
+
+
+## Dueling Network
+
+
+
+## Rainbow
 
 https://mp.weixin.qq.com/s/SZHMyWOXHM8T3zp_aUt-6A
 
