@@ -186,11 +186,11 @@ Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不�
 
 《Mask R-CNN》
 
-只有非官方的代码：
+代码：
 
-Caffe版本：
+Pytorch版本：
 
-https://github.com/jasjeetIM/Mask-RCNN
+https://github.com/facebookresearch/maskrcnn-benchmark
 
 TensorFlow版本：
 
@@ -199,10 +199,6 @@ https://github.com/hillox/TFMaskRCNN
 MXNet版本：
 
 https://github.com/TuSimple/mx-maskrcnn
-
-Pytorch版本：
-
-https://github.com/facebookresearch/maskrcnn-benchmark
 
 ![](/images/img2/mask_rcnn.png)
 
@@ -221,6 +217,8 @@ RoI Align避免对RoI的边界或者块（bins）做任何量化，例如直接�
 然而这就引来一个问题：如果x/16不是整数该怎么采样呢？
 
 答案：对临近的整数采样点，使用双线性插值（bilinear interpolation）拟合，得到非整数采样点的值。
+
+![](/images/img3/ROI_Align.png)
 
 - **独立的类别预测**
 

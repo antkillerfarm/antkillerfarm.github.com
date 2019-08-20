@@ -106,6 +106,10 @@ https://mp.weixin.qq.com/s/SAiIIa9_-16dqRMKASsuhw
 
 追溯XLNet的前世今生：从Transformer到XLNet
 
+https://mp.weixin.qq.com/s/qzAN6VlKcfqmpX9kQCJ7Gg
+
+XLnet：GPT和BERT的合体，博采众长，所以更强
+
 ## 参考
 
 https://www.zhihu.com/question/298203515
@@ -389,15 +393,3 @@ https://zhuanlan.zhihu.com/p/25928551
 http://blog.csdn.net/leo_xu06/article/details/53491400
 
 视觉注意力的循环神经网络模型
-
-https://mp.weixin.qq.com/s/l4HN0_VzaiO-DwtNp9cLVA
-
-循环注意力区域实现图像多标签分类
-
-https://mp.weixin.qq.com/s/zhZLK4pgJzQXN49YkYnSjA
-
-自适应注意力机制在Image Caption中的应用
-
-https://mp.weixin.qq.com/s/uvr-G5-_lKpyfyn5g7ES0w
-
-基于注意力机制，机器之心带你理解与训练神经机器翻译系统

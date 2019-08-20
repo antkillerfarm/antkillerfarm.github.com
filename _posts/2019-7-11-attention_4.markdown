@@ -6,6 +6,18 @@ category: Attention
 
 # Attention进阶（续）
 
+https://mp.weixin.qq.com/s/l4HN0_VzaiO-DwtNp9cLVA
+
+循环注意力区域实现图像多标签分类
+
+https://mp.weixin.qq.com/s/zhZLK4pgJzQXN49YkYnSjA
+
+自适应注意力机制在Image Caption中的应用
+
+https://mp.weixin.qq.com/s/uvr-G5-_lKpyfyn5g7ES0w
+
+基于注意力机制，机器之心带你理解与训练神经机器翻译系统
+
 https://mp.weixin.qq.com/s/ANpBFnsLXTIiW6WHzGrv2g
 
 自注意力机制学习句子embedding
@@ -124,4 +136,4 @@ https://mp.weixin.qq.com/s/G4mFW8cn-ho3KGmbw5sSTw
 
 https://mp.weixin.qq.com/s/MzHmvbwxFCaFjmMkjfjeSg
 
-遍地开花的 Attention ，你真的懂吗？
+遍地开花的Attention，你真的懂吗？

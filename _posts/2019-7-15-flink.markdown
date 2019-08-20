@@ -102,6 +102,10 @@ https://mp.weixin.qq.com/s/qRPquDgb2M8xptZWapajDg
 
 Flink SQL功能解密系列——流式TopN挑战与实现
 
+https://mp.weixin.qq.com/s/ynPmQjCCPFA_hNjvh3vS-w
+
+Apache Flink零基础入门（一）：基础概念解析
+
 # Parquet
 
 Parquet是Twitter开源的一种供Hadoop使用的列式存储格式。

@@ -18,6 +18,14 @@ GAN是“生成对抗网络”（Generative Adversarial Networks）的简称，�
 
 教程：
 
+https://deepgenerativemodels.github.io
+
+CS 236: Deep Generative Models
+
+李宏毅的DL课程中也有GAN的章节，篇幅还不短。
+
+Goodfellow相关资源：
+
 http://www.iangoodfellow.com/slides/2016-12-04-NIPS.pdf
 
 Goodfellow的历年演讲：（基本全是GAN，没啥新领域。。。）

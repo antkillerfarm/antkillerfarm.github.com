@@ -395,3 +395,7 @@ https://mp.weixin.qq.com/s/eAzdtKvfw7EVz5Ax3nXeZg
 https://mp.weixin.qq.com/s/NfNJVoAC5aW1sgToAmYsGw
 
 3nm芯片终结者
+
+https://mp.weixin.qq.com/s/o8C6n-ZRw3vFS8E-hikXJQ
+
+移动的王者：深入分析ARM最强处理器Cortex A77

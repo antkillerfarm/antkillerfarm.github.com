@@ -262,6 +262,10 @@ https://mp.weixin.qq.com/s/5OkPWPLRyf07mZwLRSZ3Fw
 
 机器视觉目标检测补习贴之R-CNN系列—R-CNN,Fast R-CNN,Faster R-CNN
 
+https://mp.weixin.qq.com/s/KL6gB0SsclyHqedS_tThXA
+
+里程碑式成果Faster RCNN复现难？我们试了一下
+
 # YOLO
 
 YOLO: Real-Time Object Detection，是一个基于神经网络的实时对象检测软件。它的原理基于Joseph Chet Redmon 2016年的论文：

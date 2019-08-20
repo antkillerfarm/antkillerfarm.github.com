@@ -195,3 +195,7 @@ https://mp.weixin.qq.com/s/vpANPrl86Ou2fBVHgLXtBQ
 https://mp.weixin.qq.com/s/oKayc5612vVm9k8hu50GNw
 
 当个不“佛系”的推荐系统，CTR 预估要做哪些工作？
+
+https://mp.weixin.qq.com/s/env2bFsEWZjxB87GK8QqvQ
+
+Hulu：视频广告系统中的算法实践

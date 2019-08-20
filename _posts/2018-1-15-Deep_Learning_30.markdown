@@ -201,6 +201,10 @@ https://mp.weixin.qq.com/s/f0xFfA1inOVOdJnSZR4k6Q
 
 自动微分技术
 
+https://mp.weixin.qq.com/s/0tTlPG4hd9hcHORkZF6w1A
+
+PyTorch的自动求导机制详细解析，PyTorch的核心魔法
+
 # 深度哈希
 
 https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg

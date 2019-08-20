@@ -225,3 +225,7 @@ https://mp.weixin.qq.com/s/F_p414ezQ0RDhPnZj36SUA
 https://zhuanlan.zhihu.com/c_151876233
 
 如何Finetune一个小网络到移动端（时空性能分析篇）
+
+https://mp.weixin.qq.com/s/kU0_BuQW8VQihUwBuZ90cA
+
+发布可伸缩超网SCARLET，小米AutoML团队NAS三部曲杀青

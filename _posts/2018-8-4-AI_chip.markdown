@@ -138,6 +138,12 @@ Model Zoo：
 
 https://github.com/Ascend/models
 
+参考：
+
+https://mp.weixin.qq.com/s/P381v0eXrwfzlLE79c8sGg
+
+华为在hotchips详细介绍了达芬奇架构
+
 ## TPU
 
 ​Tensor Processing Unit(TPU)是Google推出的AI芯片系列。目前已经有3个版本：
