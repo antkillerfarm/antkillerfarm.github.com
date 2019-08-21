@@ -314,6 +314,10 @@ https://mp.weixin.qq.com/s/XXef4F9HEZizoWRYXwHitw
 
 如何配置一台深度学习工作站?
 
+https://mp.weixin.qq.com/s/_xFRRkVyN9qevLeek7bFxQ
+
+深度学习中GPU和显存分析
+
 # GPU通信技术
 
 ## RDMA

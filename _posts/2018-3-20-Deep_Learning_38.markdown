@@ -22,6 +22,10 @@ https://zhuanlan.zhihu.com/p/55479744
 
 人脸检测与对齐python实现
 
+https://mp.weixin.qq.com/s/QpOl26RzsKELGctKDskS4w
+
+2K图像90FPS，中科院开源轻量级通用人脸检测器
+
 # 多任务学习
 
 https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA

@@ -334,6 +334,10 @@ https://mp.weixin.qq.com/s/H1pr2ESCaGV67VKzKMZn9A
 
 eBay高精度召回任务挑战赛冠军团队DeepBlueAI技术分享
 
+https://mp.weixin.qq.com/s/bpKNWjIXuXsUKclunbJvVQ
+
+这两年：我的数据竞赛之路
+
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA

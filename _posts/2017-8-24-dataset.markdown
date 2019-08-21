@@ -84,7 +84,7 @@ PASCAL VOC2012数据集详解
 
 ## MSCOCO
 
-COCO数据集是微软团队获取的一个可以用来图像recognition+segmentation+captioning的数据集。
+COCO数据集是微软团队获取的一个可以用来图像recognition+segmentation+captioning的数据集，包含超过200000张图片，250000个标注的人体实例，每个人体包含17个关键点。
 
 官网：
 

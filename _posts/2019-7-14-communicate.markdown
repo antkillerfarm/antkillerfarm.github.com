@@ -89,3 +89,7 @@ https://zhuanlan.zhihu.com/p/32651288
 https://mp.weixin.qq.com/s/F6hZpIDqxSCs0ZZ5_6fsMg
 
 HTTP/2 协议的优点解析
+
+https://mp.weixin.qq.com/s/3-6T0YS0UsbWndu1xgrW_A
+
+白话Session与Cookie：从经营杂货店开始

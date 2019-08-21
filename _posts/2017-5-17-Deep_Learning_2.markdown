@@ -216,6 +216,10 @@ https://mp.weixin.qq.com/s/jFz-2Bdn4dbFAza6MXtroA
 
 Dropout的那些事
 
+https://mp.weixin.qq.com/s/XgiWfRcIMiPUSoadMtAbIg
+
+神经网络Dropout层中为什么dropout后还需要进行rescale？
+
 ## Dropout预测阶段
 
 经Dropout处理过的模型，在预测阶段不再Dropout，而是打开所有的神经元。这样的效果类似于集成学习，即若干个弱分类器，集成为一个强分类器。

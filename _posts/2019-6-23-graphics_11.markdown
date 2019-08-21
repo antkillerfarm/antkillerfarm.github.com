@@ -75,3 +75,7 @@ https://mp.weixin.qq.com/s/fWySZWsYEKBRwYaFL3J2Xg
 https://mp.weixin.qq.com/s/nHBczPlffhZrJy4G4oJ1Ag
 
 让神经网络懂得黄金法则
+
+https://mp.weixin.qq.com/s/0dUlVC9I8qmv3f2BB0IFew
+
+强化学习介绍及自动驾驶汽车应用

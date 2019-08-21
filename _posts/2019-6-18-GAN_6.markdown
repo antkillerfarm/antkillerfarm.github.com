@@ -269,3 +269,7 @@ GitHub趋势榜第一：把小姐姐自拍，变成二次元萌妹子，神情�
 https://mp.weixin.qq.com/s/YkQnTYPq2Zd-4oaDh4O_zQ
 
 GAN训练的小技巧
+
+https://zhuanlan.zhihu.com/p/79080156
+
+基于GAN的高分辨率图像合成方法介绍

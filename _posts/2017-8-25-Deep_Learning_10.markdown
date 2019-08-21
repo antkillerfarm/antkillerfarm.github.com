@@ -132,6 +132,10 @@ Grouped Convolution最早在AlexNet中出现，由于当时的硬件资源有限
 
 《ShuffleNet: An Extremely Efficient Convolutional Neural Network for Mobile Devices》
 
+代码：
+
+https://github.com/megvii-model/ShuffleNet-Series
+
 ![](/images/img2/ShuffleNet_2.png)
 
 上图是ShuffleNet的Unit结构图，DWConv表示depthwise convolution，GConv表示pointwise group convolution。a是普通的Deep Residual Unit，b的进化用以提高精度，c的进一步进化用以减少计算量。

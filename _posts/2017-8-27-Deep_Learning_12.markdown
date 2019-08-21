@@ -110,6 +110,14 @@ https://blog.csdn.net/shenxiaolu1984/article/details/51428392
 
 Stacked Hourglass算法详解
 
+## 评价度量
+
+Object Keypoint Similarity(OKS)：
+
+$$\mathbf{OKS} = \frac{\sum_i exp(-\frac{d_i^2}{2s^2k_i^2}) \delta (v_i >0)}{\sum_i \delta (v_i >0)}$$
+
+其中，$$d_i$$是检测的关键点与groundtruth关键点之间的欧氏距离；$$v_i$$是groundtruth关键点的可见性标志；s是目标的尺度；$$k_i$$是控制衰减(falloff)的per-keypoint常数。
+
 ## 步态识别
 
 https://mp.weixin.qq.com/s/g6032xTGEtvbsfwXboMJ4A

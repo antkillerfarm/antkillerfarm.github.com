@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十六）——深度推荐系统（2）, Mask R-CNN, 深度时间序列
+title:  深度学习（三十六）——深度推荐系统（2）, Mask R-CNN
 category: DL 
 ---
 
@@ -188,7 +188,7 @@ Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不�
 
 代码：
 
-Pytorch版本：
+官方Pytorch版本：
 
 https://github.com/facebookresearch/maskrcnn-benchmark
 
@@ -227,6 +227,16 @@ RoI Align避免对RoI的边界或者块（bins）做任何量化，例如直接�
 - **对象实例分割**
 
 Mask R-CNN只对RoI Align后的区域进行分割，而不像U-NET等会对全景进行分割。因此，更适合抠图之类的应用。
+
+Mask R-CNN除了可以用于实例分割以外，还可用于关键点检测。这点在原始论文和FB的代码中有体现，但是在通常的介绍中往往被忽略。
+
+![](/images/img3/Mask_R-CNN_keypoint.png)
+
+keypoint branch的输出结果是一个keypoint的heatmap（每个keypoint都有自己的heatmap），显然，heatmap中值最大的点就是keypoint的所在。
+
+当然ROI区域和原图，无论是坐标，还是尺寸，都有差异，需要通过插值恢复回去。Mask R-CNN使用的是bicubic插值，该方法计算量较大，因此实际中，多采用下文所述的基于Taylor展开的方法进行插值。
+
+《Invariant Features from Interest Point Groups》
 
 参考：
 
@@ -314,64 +324,14 @@ https://mp.weixin.qq.com/s/sRU9_M9LsP-j46kNdcI0QQ
 
 Cascade R-CNN升级！目标检测制霸COCO，实例分割超越Mask R-CNN
 
-# 深度时间序列
+https://www.cnblogs.com/fydeblog/p/10145805.html
 
-https://mp.weixin.qq.com/s/cChJO6YrE_XAgeInS7J1Vw
+MaskRCNN-Keypoints
 
-130页序列推荐系统教程重磅发布
+https://zhuanlan.zhihu.com/p/65893018
 
-https://mp.weixin.qq.com/s/zv264-dqDQYRkYmjX_QZpQ
+玩转Facebook的maskrcnn-benchmark项目
 
-郑宇解读地理传感器时间序列预测问题
+https://mp.weixin.qq.com/s/A9WkTGHLsaUE11NiQKT2vw
 
-https://mp.weixin.qq.com/s/JwRXBNmXBaQM2GK6BDRqMw
-
-Kaggle网站流量预测任务第一名解决方案：从模型到代码详解时序预测
-
-https://mp.weixin.qq.com/s/caXnseARUwLIXdsZ7BXOUw
-
-用于金融时序预测的神经网络：可改善移动平均线经典策略
-
-http://mp.weixin.qq.com/s/9fJT0dMLvYQdfMVvSEiG4A
-
-深度学习的时间序列模型评价
-
-https://mp.weixin.qq.com/s/1Gdx-U3DRZtSJoFyCLnD0w
-
-深度学习之Sequence Learning
-
-https://mp.weixin.qq.com/s/SWKWI7BADnX43e-sCBxRPg
-
-神经网络在算法交易上的应用系列——简单时序预测
-
-https://mp.weixin.qq.com/s/Ux7XjLHzlaGFtM1uSMu2gQ
-
-神经网络在算法交易上的应用系列——时序预测+回测
-
-https://mp.weixin.qq.com/s/fUqQo0m7nMLZO85YG-duRw
-
-神经网络在算法交易上的应用系列——多元时间序列
-
-https://mp.weixin.qq.com/s/PS1SqSWckuHuyZP6d5ZUFw
-
-“深度学习”信号处理和时序分析的最后选择？
-
-https://zhuanlan.zhihu.com/p/54471673
-
-基于前馈神经网络的时间序列异常检测算法
-
-https://mp.weixin.qq.com/s/g9upS70qFOCFBMm-T5nI1A
-
-利用深度学习最新前沿预测股价走势
-
-https://mp.weixin.qq.com/s/otwmDtiDfVVID65RQgT4Uw
-
-教你如何鉴别那些用深度学习预测股价的花哨模型？
-
-https://mp.weixin.qq.com/s/xGUcqs3q3yNpVsJ8P7ag_g
-
-以机器学习的视角来看时序点过程的最新进展
-
-https://mp.weixin.qq.com/s/F0z5aEaigQLtlLfDoFIJXQ
-
-时间序列预测：理论与实践教程，300多页PPT带你了解领域最新动态
+1小时上手MaskRCNN·Keras开源实战
