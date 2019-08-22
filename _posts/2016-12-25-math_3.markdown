@@ -202,6 +202,10 @@ Mersenne Twister算法是1997年由Makoto Matsumoto(松本 眞)和Takuji Nishimu
 
 该算法最常见的实现基于梅森素数$$2^{19937}-1$$，因此又被称为MT19937。原始的MT19937可以生成32位的随机数，它还有64位的版本：MT19937-64。
 
+MT算法的实现也很多了，参见原作者的官网：
+
+http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt.html
+
 参考：
 
 https://blog.csdn.net/wuha391/article/details/78486021

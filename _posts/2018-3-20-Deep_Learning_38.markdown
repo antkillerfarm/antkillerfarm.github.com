@@ -26,6 +26,10 @@ https://mp.weixin.qq.com/s/QpOl26RzsKELGctKDskS4w
 
 2K图像90FPS，中科院开源轻量级通用人脸检测器
 
+https://mp.weixin.qq.com/s/0JX-zEQwkC_0Iq5ZBU6xsg
+
+级联卷积神经网络用于人脸检测
+
 # 多任务学习
 
 https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA

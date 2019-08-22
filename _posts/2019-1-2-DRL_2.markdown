@@ -234,6 +234,12 @@ $$Q(s,a)=V(s,v)+A(s,a,w)$$
 
 ![](/images/img3/DuelDQN.png)
 
+## NAF
+
+传统RL任务：低维输入，低维离散输出。
+
+Atari游戏：高维输入，低维离散输出。
+
 ## Rainbow
 
 https://mp.weixin.qq.com/s/SZHMyWOXHM8T3zp_aUt-6A

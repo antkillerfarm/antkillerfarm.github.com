@@ -272,6 +272,19 @@ X x;
 
 C++11标准新特性：Defaulted和Deleted函数
 
+## 打印vector的N种方法
+
+{% highlight cpp %}
+auto vec = make_index_vector(std::make_index_sequence<10>());
+for(auto i : vec) {std::cout << i << ' ';}
+std::cout << std::endl;
+std::iota(vec.begin(), vec.end(), 999);
+std::copy(vec.begin(), vec.end(), std::ostream_iterator<int>(std::cout, " "));
+std::cout << std::endl;
+std::for_each(std::begin(vec),std::end(vec),[](int n){std::cout<<n<<" ";});
+std::cout << std::endl;
+{% endhighlight %}
+
 ## 小细节
 
 对于std::vector来说，begin()/end()返回iterator，而front()/back()返回的是element。

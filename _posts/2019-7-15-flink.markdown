@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Flink, Parquet
+title:  Flink, Apache Beam, Parquet
 category: AI 
 ---
 
@@ -29,10 +29,6 @@ https://mp.weixin.qq.com/s/NvD-NSR-aE8HTADR2LSSjA
 https://mp.weixin.qq.com/s/UFzFuHFqsXl6ynKyYoOnRA
 
 容错和高性能如何兼得: Flink创始人谈流计算核心架构演化和现状
-
-https://mp.weixin.qq.com/s/lc9fWkEVt1kG5Mw3Xeuv3g
-
-Apache Beam实战指南：手把手教你玩转KafkaIO与Flink
 
 https://mp.weixin.qq.com/s/qhiX62dALXd3owYYP9KsEQ
 
@@ -105,6 +101,14 @@ Flink SQL功能解密系列——流式TopN挑战与实现
 https://mp.weixin.qq.com/s/ynPmQjCCPFA_hNjvh3vS-w
 
 Apache Flink零基础入门（一）：基础概念解析
+
+# Apache Beam
+
+Apache Beam是一个数据处理的通用引擎，集成了多个处理数据框架（包括Cassandra、Elasticesarch、Hadoop-file-system、Hadoop-hbase、Jdbc、Kafka等）。Beam SDK给上层应用的开发者提供了一个统一的编程接口，开发者不需要了解底层的具体的大数据平台的开发接口是什么，直接通过Beam SDK的接口就可以开发数据处理的加工流程，不管输入是用于批处理的有界数据集，还是流式的无界数据集。
+
+参考：
+
+Apache Beam实战指南：大数据管道（pipeline）设计及实践
 
 # Parquet
 

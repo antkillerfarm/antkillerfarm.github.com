@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  小众语言集中营, Julia, Lua, Github显示数学公式
+title:  小众语言集中营, Lua, Github显示数学公式
 category: language 
 ---
 
@@ -98,62 +98,6 @@ http://www.15yan.com/story/5Y8BZqIGwjg/
 
 那些奇奇怪怪的编程语言
 
-# Julia
-
-Julia是新晋发布1.0版本的科学计算类语言，号称兼具C++、python、matlab的优点。
-
-官网：
-
-https://julialang.org/
-
-代码：
-
-https://github.com/JuliaLang/julia
-
-## 安装
-
-Julia目前暂时没有apt安装的办法，需要源代码编译，后者安装预编译的版本。这里讲讲源码编译的过程。
-
-1.安装依赖
-
-`sudo apt install build-essential libatomic1 python gfortran perl wget m4 cmake pkg-config`
-
-2.源码编译
-
-`make -j 4`
-
-3.安装
-
-`echo "alias julia='/path/to/install/folder/bin/julia'" >> ~/.bashrc && source ~/.bashrc`
-
-## GTK
-
-1.安装
-
-Julia使用pkg模式进行安装。在Julia命令行下，输入`]`即可进入pkg模式。
-
-`(v1.0) pkg> add Gtk`
-
-输入Ctrl+C可退出pkg模式。
-
-## 参考
-
-https://mp.weixin.qq.com/s/dvVQ9H14eyVjyD4yhadRnQ
-
-MIT正式发布编程语言Julia 1.0：Python、R、C++三合一
-
-https://mp.weixin.qq.com/s/X_MDcEmmKDN_RHYTx3kjhw
-
-Julia 1.0正式发布，这是新出炉的一份简单中文教程
-
-https://mp.weixin.qq.com/s/zZbK5VPlr43CleExwDoBxw
-
-如何在Julia编程中实现GPU加速
-
-https://mp.weixin.qq.com/s/G0u_mP7xBJ7mx4eerdiY_g
-
-为什么Julia比Python快？
-
 # Lua
 
 Lua的包管理工具叫做LuaRocks。官网：
@@ -215,6 +159,17 @@ $$
 \]`
 
 $$A\xrightarrow[\alpha]{\beta}B$$
+
+$$\text{vxRPNLayer}\left\{ 
+\begin{array}{l}
+\begin{aligned}
+\text{softmax} &  \left\{ \begin{aligned}\text{background scores} \\ \text{foreground scores}\end{aligned} \right.
+\end{aligned}  \hfill \\
+\left.\begin{aligned}\text{proposal}  & \Rightarrow \color{red}{\text{axis_aligned_bbox_transform}}\\
+\text{sort} \\
+\text{nms} & \left\{ \begin{aligned} \Rightarrow  & \color{red}{\text{detection_postprocess(hard nms)}} \\ \Rightarrow & \color{red}{\text{box_with_nms_limit(soft nms)}}\end{aligned} \right. \\
+\text{retrieve}\end{aligned}\right\} \Rightarrow  \color{red}{\text{generate_proposals}}
+\end{array} \right.$$
 
 ## 注意
 

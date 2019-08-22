@@ -100,7 +100,11 @@ https://mp.weixin.qq.com/s/edrh-HXqW01Yx7c8tQ8UxA
 
 https://mp.weixin.qq.com/s/9MWoCmtKPPVs3Rmko-7adQ
 
-10亿节点异构网络中，GCN 如何应用？
+10亿节点异构网络中，GCN如何应用？
+
+https://mp.weixin.qq.com/s/ftz8E5LffWFfaSuF9uKqZQ
+
+Graph Neural Network：GCN 算法原理，实现和应用
 
 # 自动求导
 

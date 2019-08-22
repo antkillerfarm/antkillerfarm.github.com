@@ -106,6 +106,10 @@ https://mp.weixin.qq.com/s/6bI8tvRbzopGGBwayB1XBA
 
 三十六亿的《哪吒》历时五年，动画创作难如何解决？
 
+https://mp.weixin.qq.com/s/v5Sy-fxW-hm8u6XiyuRXlA
+
+Anime4K：目前最热的开源实时动漫放大算法
+
 # 三维处理
 
 https://github.com/timzhang642/3D-Machine-Learning

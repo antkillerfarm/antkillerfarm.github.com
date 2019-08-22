@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  孩子的编程语言, Go
+title:  孩子的编程语言, Go, Julia
 category: language 
 ---
 
@@ -149,3 +149,59 @@ HTTP/2 in GO
 https://mp.weixin.qq.com/s/XbtSamp7I6HwvRO_OweqJg
 
 Go实现ORM及构建查询
+
+# Julia
+
+Julia是新晋发布1.0版本的科学计算类语言，号称兼具C++、python、matlab的优点。
+
+官网：
+
+https://julialang.org/
+
+代码：
+
+https://github.com/JuliaLang/julia
+
+## 安装
+
+Julia目前暂时没有apt安装的办法，需要源代码编译，后者安装预编译的版本。这里讲讲源码编译的过程。
+
+1.安装依赖
+
+`sudo apt install build-essential libatomic1 python gfortran perl wget m4 cmake pkg-config`
+
+2.源码编译
+
+`make -j 4`
+
+3.安装
+
+`echo "alias julia='/path/to/install/folder/bin/julia'" >> ~/.bashrc && source ~/.bashrc`
+
+## GTK
+
+1.安装
+
+Julia使用pkg模式进行安装。在Julia命令行下，输入`]`即可进入pkg模式。
+
+`(v1.0) pkg> add Gtk`
+
+输入Ctrl+C可退出pkg模式。
+
+## 参考
+
+https://mp.weixin.qq.com/s/dvVQ9H14eyVjyD4yhadRnQ
+
+MIT正式发布编程语言Julia 1.0：Python、R、C++三合一
+
+https://mp.weixin.qq.com/s/X_MDcEmmKDN_RHYTx3kjhw
+
+Julia 1.0正式发布，这是新出炉的一份简单中文教程
+
+https://mp.weixin.qq.com/s/zZbK5VPlr43CleExwDoBxw
+
+如何在Julia编程中实现GPU加速
+
+https://mp.weixin.qq.com/s/G0u_mP7xBJ7mx4eerdiY_g
+
+为什么Julia比Python快？
