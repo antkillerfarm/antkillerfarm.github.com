@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（十三）——最速降线, 泛函 & 变分, Gabriel's Horn, 双曲函数和悬链线
+title:  数学狂想曲（十三）——最速降线, 泛函 & 变分, 双曲函数和悬链线, Gabriel's Horn, 20世纪10大算法
 category: math 
 ---
 
@@ -166,6 +166,42 @@ $$\lim_{a\to\infty}A\ge\lim_{a\to\infty}2\pi\ln(a)=\infty$$
 
 Gabriel's horn现象不仅存在于表面积/体积中，也存在于长度/面积中，即所谓的无限长海岸线问题。对此的进一步研究，开拓了数学中的分形几何领域。
 
+# 20世纪10大算法
+
+2000年，IEEE评选出20世纪10大算法。名单如下：
+
+1.[Metropolis Algorithm for Monte Carlo](http://en.wikipedia.org/wiki/Metropolis_Algorithm)
+
+2.[Simplex Method for Linear Programming](http://en.wikipedia.org/wiki/Simplex_Method)
+
+3.[Krylov Subspace Iteration Methods](http://en.wikipedia.org/wiki/Krylov_subspace_methods)
+
+4.[The Decompositional Approach to Matrix Computations](http://en.wikipedia.org/wiki/Matrix_(mathematics)#Decomposition)
+
+5.[The Fortran Optimizing Compiler](http://en.wikipedia.org/wiki/Fortran#History)
+
+6.[QR Algorithm for Computing Eigenvalues](http://en.wikipedia.org/wiki/QR_algorithm)
+
+7.[Quicksort Algorithm for Sorting](http://en.wikipedia.org/wiki/Quicksort)
+
+8.[Fast Fourier Transform](http://en.wikipedia.org/wiki/Fast_Fourier_Transform)
+
+9.[Integer Relation Detection](http://en.wikipedia.org/wiki/Integer_relation_algorithm)
+
+10.[Fast Multipole Method](http://en.wikipedia.org/wiki/Fast_Multipole_Method)
+
+详细内容参见：
+
+http://www.uta.edu/faculty/rcli/TopTen/topten.pdf
+
+中文版本：
+
+http://blog.csdn.net/v_JULY_v/article/details/6127953
+
+类似的，还有奥地利符号计算研究所（Research Institute for Symbolic Computation，简称RISC）的Christoph Koutschan博士，针对计算机科学家所做的调查，选出的最重要的32个算法：
+
+https://mp.weixin.qq.com/s/AFTaowkCz1pfFzaMDen-RA
+
 # 张量分析
 
 在同构的意义下，第零阶张量（r = 0）为标量（Scalar），第一阶张量（r = 1）为向量（Vector），第二阶张量（r = 2）则成为矩阵（Matrix）。
@@ -181,32 +217,6 @@ Gabriel's horn现象不仅存在于表面积/体积中，也存在于长度/面�
 该书的中文版：
 
 http://www.topologywithouttears.net/topbookchinese.pdf
-
-# 莫比乌斯反演
-
-http://blog.csdn.net/acdreamers/article/details/8542292
-
-莫比乌斯反演
-
-http://blog.csdn.net/litble/article/details/72804050
-
-初涉莫比乌斯反演
-
-http://blog.csdn.net/u013632138/article/details/52250567
-
-莫比乌斯反演讲解
-
-http://blog.csdn.net/Ripped/article/details/70263965
-
-莫比乌斯反演详解
-
-http://blog.csdn.net/hzj1054689699/article/details/51659994
-
-莫比乌斯反演入门
-
-http://blog.csdn.net/outer_form/article/details/50588307
-
-莫比乌斯反演定理证明
 
 # Lie Groups
 

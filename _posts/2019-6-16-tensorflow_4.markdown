@@ -14,10 +14,6 @@ https://mp.weixin.qq.com/s/2COA8aRQBpxaihKnlLkXZQ
 
 快速上手图像识别：用TensorFlow API实现图像分类实例
 
-https://mp.weixin.qq.com/s/rVSC1AXj9YECjUrl5PkSGw
-
-详解深度强化学习展现TensorFlow 2.0新特性
-
 https://mp.weixin.qq.com/s/TZMOO_LFCxk297lKNQfvGQ
 
 TensorFlow从基础到实战：一步步教你创建交通标志分类神经网络
@@ -273,10 +269,6 @@ https://mp.weixin.qq.com/s/QU5NjksCEswjHnkY7WXWXQ
 https://mp.weixin.qq.com/s/pBR4wMITrigbSVAvn0d6vQ
 
 利用TensorFlow实现上下文的Chat-bots
-
-https://mp.weixin.qq.com/s/BD-nJSZJLjBBq1n7HEHpKw
-
-将您的代码升级至TensorFlow 2.0
 
 https://mp.weixin.qq.com/s/8I5Nvw4t2jT1NR9vIYT5XA
 

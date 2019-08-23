@@ -51,3 +51,7 @@ CLIC图像压缩挑战赛冠军方案解读
 https://zhuanlan.zhihu.com/p/78050429
 
 基于深度学习的视频压缩方案介绍
+
+https://mp.weixin.qq.com/s/gNtxBI0Alk70cEujxQmSFQ
+
+如何将图像压缩10倍？阿里工程师有个大胆的想法！这是一篇传统算法的blog。

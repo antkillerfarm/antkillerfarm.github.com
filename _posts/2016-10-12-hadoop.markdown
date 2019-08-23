@@ -186,3 +186,7 @@ YARN，母系社会的运行架构
 https://mp.weixin.qq.com/s/goXmXMc8JyAgU_GKyWXDzw
 
 白话Hadoop架构原理
+
+https://mp.weixin.qq.com/s/s-kOquVbIuJAMSQqkfmaAA
+
+Hadoop之HDFS简介

@@ -271,3 +271,7 @@ https://mp.weixin.qq.com/s/o9cYmqwuvlbOuUXSNIuicg
 https://mp.weixin.qq.com/s/iKXZmhffiYaFHsIU21zVQA
 
 NeuralNLP-NeuralClassifier：腾讯开源深度学习文本分类工具
+
+https://mp.weixin.qq.com/s/UwijIjGOF-eRb2GjDxB95g
+
+漫画汉化组福音：深度学习工具一键抠图

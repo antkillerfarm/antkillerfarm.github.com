@@ -6,6 +6,30 @@ category: AI
 
 # TensorFlow
 
+https://mp.weixin.qq.com/s/dHkmDvFVUGmt4Ch-gv3s1g
+
+一步一步带你用TensorFlow玩转LSTM
+
+https://mp.weixin.qq.com/s/Bx5Djj-RE0jPJ7LjyQ7GPg
+
+基于gym和tensorflow的强化学习算法实现
+
+https://mp.weixin.qq.com/s/3URLEdhB8hs0XXekKbvsnw
+
+使用TensorFlow在卷积神经网络上实现L2约束的softmax损失函数
+
+https://mp.weixin.qq.com/s/FdPrRQr0LukcWh7B703MlQ
+
+利用tf.gradients在TensorFlow中实现梯度下降
+
+https://github.com/indiejoseph/cnn-text-classification-tf-chinese
+
+CNN for Chinese Text Classification in Tensorflow
+
+https://mp.weixin.qq.com/s/yc1ssCzaPzI4UUsl4jl5Yw
+
+用TensorFlow和TensorBoard从零开始构建ConvNet
+
 https://mp.weixin.qq.com/s/6cFvh0OgouY_Lg7awxv_3g
 
 快速开启你的第一个项目：TensorFlow项目架构模板
@@ -41,10 +65,6 @@ https://mp.weixin.qq.com/s/5_oCSK6MtsK_4xNU6T76UA
 https://mp.weixin.qq.com/s/ndnbTCr51k_FSDRCLi0UOg
 
 添加新操作
-
-https://mp.weixin.qq.com/s/s8hAYadCw9-_BpWSCh38gg
-
-TensorFlow 2.0：数据读取与使用方式
 
 https://mp.weixin.qq.com/s/G3fbhTsHA22b02_B5WCPcg
 

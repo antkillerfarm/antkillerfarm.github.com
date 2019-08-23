@@ -190,6 +190,10 @@ https://mp.weixin.qq.com/s/kcXp-uWcmIsAVfa63mor4g
 
 图卷积网络介绍及进展
 
+https://mp.weixin.qq.com/s/rgcDlFA1_Qbu8xRH7WZrtA
+
+清华大学《图神经网络-算法、理论和应用》教程
+
 https://mp.weixin.qq.com/s/eelcT5x_kWC0dDt0_Ph4qg
 
 清华朱文武组一文综述GraphDL五类模型
@@ -393,23 +397,3 @@ https://mp.weixin.qq.com/s/aGP8pcsCmEdjdCWVjA82Jg
 https://mp.weixin.qq.com/s/CpDZEqo14X_lCBh6i7feIA
 
 图卷积神经网络(GCN)文本分类详述
-
-https://mp.weixin.qq.com/s/XApSbi-Pg-AeYGkPN3fldg
-
-旷视研究院提出ML-GCN：基于图卷积网络的多标签图像识别模型
-
-https://mp.weixin.qq.com/s/49vnVOO0G_JvKrWcsN2_Ww
-
-关系图注意力网络-Relational Graph Attention Networks
-
-https://mp.weixin.qq.com/s/rvcj9-6KlBsVmF_CAsip2A
-
-超越标准GNN！DeepMind、谷歌提出图匹配网络
-
-https://mp.weixin.qq.com/s/UotqgRjCTpjPrsIEWBRPxA
-
-基于随机游走的图匹配算法
-
-https://mp.weixin.qq.com/s/t2kjxrcn6O9tbJ-IQELboQ
-
-高君宇：图神经网络在视频分类中的应用

@@ -6,6 +6,26 @@ category: DL
 
 # Graph NN（续）
 
+https://mp.weixin.qq.com/s/XApSbi-Pg-AeYGkPN3fldg
+
+旷视研究院提出ML-GCN：基于图卷积网络的多标签图像识别模型
+
+https://mp.weixin.qq.com/s/49vnVOO0G_JvKrWcsN2_Ww
+
+关系图注意力网络-Relational Graph Attention Networks
+
+https://mp.weixin.qq.com/s/rvcj9-6KlBsVmF_CAsip2A
+
+超越标准GNN！DeepMind、谷歌提出图匹配网络
+
+https://mp.weixin.qq.com/s/UotqgRjCTpjPrsIEWBRPxA
+
+基于随机游走的图匹配算法
+
+https://mp.weixin.qq.com/s/t2kjxrcn6O9tbJ-IQELboQ
+
+高君宇：图神经网络在视频分类中的应用
+
 https://mp.weixin.qq.com/s/7DyPJ9LnqZ9XyAop33SxSw
 
 ST-GCN动作识别算法详解

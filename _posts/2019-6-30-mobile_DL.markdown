@@ -38,13 +38,19 @@ MACE是小米的作品。
 
 https://github.com/XiaoMi/mace
 
-## Paddle-Mobile
+## 百度系
 
-Paddle-Mobile是百度的作品。
+百度的Inference-engine以多变且不兼容著称。
 
-代码：
+2017年9月底，baidu发布移动端深度学习框架mobile-deep-learning(MDL)。
 
-https://github.com/PaddlePaddle/paddle-mobile
+2018年5月底，baidu发布跨平台AI推理加速引擎anakin。
+
+2018年5月底，baidu移动端深度学习框架完全重构为paddle-mobile。
+
+2018年8月，baidu为ARM移动端开发精简版anakin引擎anakin-lite。
+
+2019年8月中，baidu发布纯自研的移动端框架paddle-lite。
 
 ## MNN
 

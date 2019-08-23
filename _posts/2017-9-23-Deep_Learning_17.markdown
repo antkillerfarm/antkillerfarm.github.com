@@ -225,3 +225,7 @@ https://mp.weixin.qq.com/s/8FtDhpgc-1j3TSL771N-Ng
 https://mp.weixin.qq.com/s/LdfLd2cZCdpvNYLKHUNwuA
 
 简述无监督图像分类发展现状
+
+https://mp.weixin.qq.com/s/qaLQK3uzaeyp68AbL0aOOQ
+
+怎么在视频标注上省钱？这里有一个面向视频推荐的多视图主动学习

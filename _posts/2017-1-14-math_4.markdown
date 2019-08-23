@@ -1,44 +1,48 @@
 ---
 layout: post
-title:  数学狂想曲（四）——20世纪10大算法, 矩阵&向量的积, 软件滤波算法
+title:  数学狂想曲（四）——矩阵&向量的积, 软件滤波算法
 category: math 
 ---
 
-# 20世纪10大算法
+# 统计杂谈
 
-2000年，IEEE评选出20世纪10大算法。名单如下：
+## 频率统计学派 vs. 贝叶斯学派（续）
 
-1.[Metropolis Algorithm for Monte Carlo](http://en.wikipedia.org/wiki/Metropolis_Algorithm)
+https://mp.weixin.qq.com/s/AsZyjwUclEoxxl2VRBekHA
 
-2.[Simplex Method for Linear Programming](http://en.wikipedia.org/wiki/Simplex_Method)
+拟合目标函数后验分布的调参利器：贝叶斯优化
 
-3.[Krylov Subspace Iteration Methods](http://en.wikipedia.org/wiki/Krylov_subspace_methods)
+https://mp.weixin.qq.com/s/psMlGLOZcmX-SmEKr2gUOg
 
-4.[The Decompositional Approach to Matrix Computations](http://en.wikipedia.org/wiki/Matrix_(mathematics)#Decomposition)
+从贝叶斯定理到概率分布：综述概率论基本定义
 
-5.[The Fortran Optimizing Compiler](http://en.wikipedia.org/wiki/Fortran#History)
+http://mp.weixin.qq.com/s/axwRMb8lCyMEh2WGIZR1rA
 
-6.[QR Algorithm for Computing Eigenvalues](http://en.wikipedia.org/wiki/QR_algorithm)
+实例详解贝叶斯推理的原理
 
-7.[Quicksort Algorithm for Sorting](http://en.wikipedia.org/wiki/Quicksort)
+https://mp.weixin.qq.com/s/rTpmFvgRC-cKbVxQkygdNQ
 
-8.[Fast Fourier Transform](http://en.wikipedia.org/wiki/Fast_Fourier_Transform)
+从概率论到多分类问题：综述贝叶斯统计分类
 
-9.[Integer Relation Detection](http://en.wikipedia.org/wiki/Integer_relation_algorithm)
+https://mp.weixin.qq.com/s/TQfaBddaDh_jIhcaKJFx7w
 
-10.[Fast Multipole Method](http://en.wikipedia.org/wiki/Fast_Multipole_Method)
+概率论之概念解析：用贝叶斯推断进行参数估计
 
-详细内容参见：
+https://mp.weixin.qq.com/s/i4G2k5yZZV_Q8U4T30XX2A
 
-http://www.uta.edu/faculty/rcli/TopTen/topten.pdf
+概率论之概念解析：边缘化（Marginalisation）
 
-中文版本：
+https://mp.weixin.qq.com/s/Jcwxx5oxACjDEVZr9qgPGQ
 
-http://blog.csdn.net/v_JULY_v/article/details/6127953
+一个我们几乎每天都在使用的数学工具
 
-类似的，还有奥地利符号计算研究所（Research Institute for Symbolic Computation，简称RISC）的Christoph Koutschan博士，针对计算机科学家所做的调查，选出的最重要的32个算法：
+https://mp.weixin.qq.com/s/vuFBY99-TDdyQELcUdXjTQ
 
-https://mp.weixin.qq.com/s/AFTaowkCz1pfFzaMDen-RA
+浅谈贝叶斯和MCMC
+
+https://mp.weixin.qq.com/s/eIiFLW5pShrCnK5mZalLSw
+
+贝叶斯统计数据如何说服我去健身房
 
 # 矩阵&向量的积
 
@@ -254,4 +258,3 @@ $$b_0*X(n)+b_1*X(n-1)+b_2*X(n-2)+...+b_k*X(n-k)$$
 优点：高通，低通，带通，带阻任意。design简单(用matlab）。
 
 缺点：运算量大。
-

@@ -338,6 +338,10 @@ https://mp.weixin.qq.com/s/bpKNWjIXuXsUKclunbJvVQ
 
 这两年：我的数据竞赛之路
 
+https://mp.weixin.qq.com/s/RHm08c95VevH8c2rEERV2Q
+
+工业视觉中的目标检测——兼谈天池大赛优胜方案
+
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA

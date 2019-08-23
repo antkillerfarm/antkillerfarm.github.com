@@ -243,6 +243,10 @@ https://www.zhihu.com/question/316626294
 
 请问DeepMind和OpenAI身后的两大RL流派有什么具体的区别？
 
+https://www.zhihu.com/question/49787932
+
+RL两大类算法的本质区别？（Policy Gradient 和 Q-Learning)
+
 ## 参考
 
 https://www.nervanasys.com/demystifying-deep-reinforcement-learning/

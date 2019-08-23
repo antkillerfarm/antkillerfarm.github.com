@@ -190,6 +190,8 @@ https://mp.weixin.qq.com/s/9hoM_yF96XxSbQHEP6oasw
 
 # 数据不平衡问题
 
+![](/images/img3/imbalance.png)
+
 https://mp.weixin.qq.com/s/e0jXXCIhbaZz7xaCZl-YmA
 
 如何处理不均衡数据？
@@ -241,3 +243,7 @@ https://mp.weixin.qq.com/s/DxkHjArbr5XRdEGVNjJAKA
 https://mp.weixin.qq.com/s/x48Ctb0_Eu1kcSGTYLt5BQ
 
 机器学习中如何处理不平衡数据？
+
+https://mp.weixin.qq.com/s/a57oy26UvLFNj4T8_pddCQ
+
+关于图像分类中类别不平衡那些事

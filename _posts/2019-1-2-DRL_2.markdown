@@ -240,6 +240,14 @@ $$Q(s,a)=V(s,v)+A(s,a,w)$$
 
 Atari游戏：高维输入，低维离散输出。
 
+通常的控制系统，除了离散控制之外，还有连续控制，然而DQN并不能直接用于连续域：因为它根本就没办法穷举每一个动作，也就无法计算最大的Q值对应的动作。
+
+论文：
+
+《Continuous Deep Q-Learning with Model-based Acceleration》
+
+
+
 ## Rainbow
 
 https://mp.weixin.qq.com/s/SZHMyWOXHM8T3zp_aUt-6A

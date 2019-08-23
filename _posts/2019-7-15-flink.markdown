@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Flink, Apache Beam, Parquet
+title:  Flink, Beam, Parquet
 category: AI 
 ---
 
@@ -102,7 +102,7 @@ https://mp.weixin.qq.com/s/ynPmQjCCPFA_hNjvh3vS-w
 
 Apache Flink零基础入门（一）：基础概念解析
 
-# Apache Beam
+# Beam
 
 Apache Beam是一个数据处理的通用引擎，集成了多个处理数据框架（包括Cassandra、Elasticesarch、Hadoop-file-system、Hadoop-hbase、Jdbc、Kafka等）。Beam SDK给上层应用的开发者提供了一个统一的编程接口，开发者不需要了解底层的具体的大数据平台的开发接口是什么，直接通过Beam SDK的接口就可以开发数据处理的加工流程，不管输入是用于批处理的有界数据集，还是流式的无界数据集。
 
@@ -112,7 +112,7 @@ Apache Beam实战指南：大数据管道（pipeline）设计及实践
 
 # Parquet
 
-Parquet是Twitter开源的一种供Hadoop使用的列式存储格式。
+Parquet是由Cloudera和Twitter共同开发的一种供Hadoop使用的列式存储格式。
 
 参考：
 
@@ -127,3 +127,23 @@ http://blog.csdn.net/dc_726/article/details/41143175
 https://mp.weixin.qq.com/s/z9xpjhL5gS9w9ZpcZWee3g
 
 大数据列式存储Parquet和ORC简介
+
+# ORC
+
+2013年初的时候，Hortonworks和Facebook一起开发出ORC用来替代Hive中的RCFile文件格式。
+
+相比ORC，Parquet有两个优点：
+
+- Parquet能够更好地支持嵌套类型，Parquet能够通过使用definition level和repetition level来标识复杂类型的层数等信息。
+
+- Parquet的编码类型比ORC也更多一些，其支持plain、bit-packing以及浮点数等编码方式，所以Parquet在某些数据类型的压缩率上比ORC更高。
+
+缺点：
+
+- Parquet读取速度较慢。
+
+参考：
+
+https://mp.weixin.qq.com/s/aVLBXS-eiWVpvIbeE2JVIw
+
+阿里巴巴如何打造“EB级计算平台存储引擎”？

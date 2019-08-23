@@ -206,6 +206,20 @@ MT算法的实现也很多了，参见原作者的官网：
 
 http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt.html
 
+----
+
+除了MT算法之外，Philox算法也是比较常用的，且后者更适合并行，速度也更快。
+
+Philox原作者官网：
+
+http://www.thesalmons.org/john/random123/
+
+----
+
+https://bashtage.github.io/randomgen/index.html
+
+这是一个RNG（Random Number Generation）项目，集成了多种算法。
+
 参考：
 
 https://blog.csdn.net/wuha391/article/details/78486021
@@ -215,6 +229,14 @@ https://blog.csdn.net/wuha391/article/details/78486021
 https://blog.csdn.net/caimouse/article/details/55668071
 
 mt19937是什么鬼？
+
+http://michaelbrundage.com/note/2005/01/05/random-number-generation/
+
+这是一篇RNG方面的综述。
+
+http://www.azillionmonkeys.com/qed/random.html
+
+这篇blog讲述了将随机整数变为浮点数，需要注意的问题。
 
 ## 统计力学与组合优化
 
@@ -252,39 +274,3 @@ MCMC和Gibbs Sampling最早都是统计力学的概念，后来才被用于机�
 https://mp.weixin.qq.com/s/uFeyZ-6gFo2oOYKTnt2R9Q
 
 揭示贝叶斯公式应用中的认识误区
-
-https://mp.weixin.qq.com/s/AsZyjwUclEoxxl2VRBekHA
-
-拟合目标函数后验分布的调参利器：贝叶斯优化
-
-https://mp.weixin.qq.com/s/psMlGLOZcmX-SmEKr2gUOg
-
-从贝叶斯定理到概率分布：综述概率论基本定义
-
-http://mp.weixin.qq.com/s/axwRMb8lCyMEh2WGIZR1rA
-
-实例详解贝叶斯推理的原理
-
-https://mp.weixin.qq.com/s/rTpmFvgRC-cKbVxQkygdNQ
-
-从概率论到多分类问题：综述贝叶斯统计分类
-
-https://mp.weixin.qq.com/s/TQfaBddaDh_jIhcaKJFx7w
-
-概率论之概念解析：用贝叶斯推断进行参数估计
-
-https://mp.weixin.qq.com/s/i4G2k5yZZV_Q8U4T30XX2A
-
-概率论之概念解析：边缘化（Marginalisation）
-
-https://mp.weixin.qq.com/s/Jcwxx5oxACjDEVZr9qgPGQ
-
-一个我们几乎每天都在使用的数学工具
-
-https://mp.weixin.qq.com/s/vuFBY99-TDdyQELcUdXjTQ
-
-浅谈贝叶斯和MCMC
-
-https://mp.weixin.qq.com/s/eIiFLW5pShrCnK5mZalLSw
-
-贝叶斯统计数据如何说服我去健身房

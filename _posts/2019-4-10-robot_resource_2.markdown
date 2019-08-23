@@ -282,6 +282,10 @@ https://zhuanlan.zhihu.com/p/56487822
 
 传感器融合-任务篇
 
+https://mp.weixin.qq.com/s/1sbL2vmugiIlSn_ehIOuig
+
+车载多传感器融合定位方案：GPS +IMU+MM
+
 https://zhuanlan.zhihu.com/p/56236181
 
 自动/自主泊车技术简介

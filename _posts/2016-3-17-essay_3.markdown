@@ -151,6 +151,12 @@ http://wenku.baidu.com/view/abe9560c71fe910ef02df815.html
 
 4.XYZ34的公式，使用了三角函数和反三角函数，速度上根本不具有可比性，故不列出。
 
+参考：
+
+https://mp.weixin.qq.com/s/I0yOGihofWesxT2TcYrY4w
+
+CORDIC算法理论与代码实现（VHDL）
+
 # 镇楼之宝
 
 ![](/images/article/nb.png)

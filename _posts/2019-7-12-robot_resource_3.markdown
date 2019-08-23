@@ -170,6 +170,14 @@ https://mp.weixin.qq.com/s/8znzrzoBAYGza6uOFfuz5g
 
 一文读懂无人驾驶汽车系统基本框架
 
+https://mp.weixin.qq.com/s/cLhnFCQdftj6Qi5j-PWDzw
+
+控制技术详解——控制理论
+
+https://mp.weixin.qq.com/s/N39CF1M7nV2cwUUMGRnG7g
+
+控制技术详解——基于模型的控制方法
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。

@@ -350,7 +350,11 @@ nlp中的预训练语言模型总结(单向模型、BERT系列模型、XLNet)
 
 https://mp.weixin.qq.com/s/pYSs6NhIAB6DuwNnKZhkZQ
 
-Bert改进： 如何融入知识
+Bert改进：如何融入知识
+
+https://mp.weixin.qq.com/s/in5SDWlQg8ts4E8DTmHxMQ
+
+BERT在推荐系统领域可能会有什么作为？
 
 # Attention进阶
 

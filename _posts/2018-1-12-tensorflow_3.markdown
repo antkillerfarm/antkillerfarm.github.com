@@ -124,6 +124,28 @@ https://mp.weixin.qq.com/s/jdjX0jirTHOUqsGagJmGLQ
 
 谷歌AI开源张量计算库TensorNetwork，计算速度暴涨100倍
 
+## Tensorflow 2.x
+
+https://mp.weixin.qq.com/s/BD-nJSZJLjBBq1n7HEHpKw
+
+将您的代码升级至TensorFlow 2.0
+
+https://mp.weixin.qq.com/s/xgsUF97aI1YfGSdh0FJ6Cw
+
+都在关心TensorFlow 2.0，那我手里基于1.x构建的程序怎么办？
+
+https://mp.weixin.qq.com/s/s8hAYadCw9-_BpWSCh38gg
+
+TensorFlow 2.0：数据读取与使用方式
+
+https://mp.weixin.qq.com/s/rVSC1AXj9YECjUrl5PkSGw
+
+详解深度强化学习展现TensorFlow 2.0新特性
+
+https://mp.weixin.qq.com/s/8D8kxFSfruwWhU2jmYL3sg
+
+Google大佬Josh Gordon发布Tensorflow 2.0入门教程
+
 ## 细节
 
 执行`session.run(out)`，会在终端打印out的值，但执行`res = session.run(out)`则不会。
@@ -379,27 +401,3 @@ https://mp.weixin.qq.com/s/3QgtemxxsQmuNQVEdpiMwA
 https://mp.weixin.qq.com/s/pSE2V8wD3_KHMI71kLTXng
 
 如何基于TensorFlow使用LSTM和CNN实现时序分类任务
-
-https://mp.weixin.qq.com/s/dHkmDvFVUGmt4Ch-gv3s1g
-
-一步一步带你用TensorFlow玩转LSTM
-
-https://mp.weixin.qq.com/s/Bx5Djj-RE0jPJ7LjyQ7GPg
-
-基于gym和tensorflow的强化学习算法实现
-
-https://mp.weixin.qq.com/s/3URLEdhB8hs0XXekKbvsnw
-
-使用TensorFlow在卷积神经网络上实现L2约束的softmax损失函数
-
-https://mp.weixin.qq.com/s/FdPrRQr0LukcWh7B703MlQ
-
-利用tf.gradients在TensorFlow中实现梯度下降
-
-https://github.com/indiejoseph/cnn-text-classification-tf-chinese
-
-CNN for Chinese Text Classification in Tensorflow
-
-https://mp.weixin.qq.com/s/yc1ssCzaPzI4UUsl4jl5Yw
-
-用TensorFlow和TensorBoard从零开始构建ConvNet

@@ -148,6 +148,10 @@ https://mp.weixin.qq.com/s/bOpKXshitpQ1YKE53WUPEw
 
 UCSB等机构提出首个大规模视频语言数据集
 
+https://mp.weixin.qq.com/s/3S9TJo1LJ_A5Zvr2gEl9Nw
+
+深度学习中图像语义分割基准数据集详解
+
 ## 人脸/行为
 
 http://blog.csdn.net/wangkr111/article/details/44514097
@@ -261,6 +265,10 @@ Apollo开放全长380km点云数据集，助推厘米级精度定位实现
 https://mp.weixin.qq.com/s/89a4gd3942BGTemPz0oFow
 
 Lyft公开自动驾驶数据集，包含55000个人工标注3D注释帧
+
+https://mp.weixin.qq.com/s/fDSC_e3JwVw3i2VLlBIkEQ
+
+Waymo公开全球最大规模自动驾驶传感器数据集：1200万3D标签，1000段驾驶片段
 
 ## 医疗
 
