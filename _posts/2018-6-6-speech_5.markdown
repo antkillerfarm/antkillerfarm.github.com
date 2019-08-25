@@ -34,6 +34,12 @@ $$h(t)=\int_{-\infty}^\infty H(f)e^{-2\pi i ft}\mathrm{d}f$$
 
 而我们所关心的$$h[k]$$就是倒谱的低频部分，它在语音识别中被广泛用于描述特征。
 
+参考：
+
+https://www.zhihu.com/question/340426968/answer/790986702
+
+怎样让安卓手机均匀连续地循环播放某一频率段的声波？
+
 # Mel-Frequency Analysis
 
 ## Mel scale

@@ -379,3 +379,7 @@ https://mp.weixin.qq.com/s/s10z5pkYf5Sha0V58T8fBw
 https://www.zhihu.com/question/339002300
 
 One-Shot 神经网络搜索(NAS)的searching阶段到底在做什么？
+
+https://mp.weixin.qq.com/s/323RA6UtnyTySoXVXcJ2vA
+
+华人团队打造：AutoML + GAN = AutoGAN！AI设计GAN模型比人类更好

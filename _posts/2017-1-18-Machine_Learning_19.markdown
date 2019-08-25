@@ -1,58 +1,50 @@
 ---
 layout: post
-title:  机器学习（十九）——Beam Search, 压缩感知, 决策树
+title:  机器学习（十九）——压缩感知, 决策树
 category: ML 
 ---
 
-# Beam Search
+# 时间序列分析（续）
 
-## 概述
+https://zhuanlan.zhihu.com/p/39105270
 
-Beam Search（集束搜索）是一种启发式图搜索算法，通常用在图的解空间比较大的情况下，为了减少搜索所占用的空间和时间，在每一步深度扩展的时候，剪掉一些质量比较差的结点，保留下一些质量较高的结点。保留下来的结点个数一般叫做Beam Width。
+时间序列的表示与信息提取
 
-这样减少了空间消耗，并提高了时间效率，但缺点就是有可能存在潜在的最佳方案被丢弃，因此Beam Search算法是不完全的，一般用于解空间较大的系统中。
+https://mp.weixin.qq.com/s/iah8PvIC0oZngSaNHw7gJw
 
-![](/images/article/beam_search.png)
+从上帝视角看透时间序列和数据挖掘
 
-上图是一个Beam Width为2的Beam Search的剪枝示意图。每一层只保留2个最优的分支，其余分支都被剪掉了。
+https://zhuanlan.zhihu.com/p/38130622
 
-显然，Beam Width越大，找到最优解的概率越大，相应的计算复杂度也越大。因此，设置合适的Beam Width是一个工程中需要trade off的事情。
+时间序列的相似性
 
-当Beam Width为1时，也就是著名的A*算法了。
+https://mp.weixin.qq.com/s/DGGuAYsoa6DPD6FBf2Hc4g
 
-Beam Search主要用于机器翻译、语音识别等系统。这类系统虽然从理论来说，也就是个多分类系统，然而由于分类数等于词汇数，简单的套用softmax之类的多分类方案，明显是计算量过于巨大了。
+时间序列分析之理论篇
 
-PS：中文验证码识别估计也可以采用该技术。
+https://zhuanlan.zhihu.com/p/50698719
 
-## Beam Search与Viterbi算法
+两篇关于时间序列的论文
 
-Beam Search与Viterbi算法虽然都是解空间的剪枝算法，但它们的思路是不同的。
+https://zhuanlan.zhihu.com/p/55129654
 
-Beam Search是对状态迁移的路径进行剪枝，而Viterbi算法是合并不同路径到达同一状态的概率值，用最大值作为对该状态的充分估计值，从而在后续计算中，忽略历史信息（这种以偏概全也就是所谓的Markov性），以达到剪枝的目的。
+时间序列的单调性
 
-从状态转移图的角度来说，Beam Search是空间剪枝，而Viterbi算法是时间剪枝。
+https://zhuanlan.zhihu.com/p/55903495
 
-## 参考
+时间序列的聚类
 
-http://people.csail.mit.edu/srush/optbeam.pdf
+https://mp.weixin.qq.com/s/2teyejpbpM6x5UCiYL8s-Q
 
-Optimal Beam Search for Machine Translation
+关于时间序列你需要了解的一切
 
-http://www.cnblogs.com/xxey/p/4277181.html
+https://mp.weixin.qq.com/s/FRSe1mJTvk9U66ta-r9iCQ
 
-Beam Search（集束搜索/束搜索）
+手把手教你用Python玩转时序数据，从采样、预测到聚类
 
-http://blog.csdn.net/girlhpp/article/details/19400731
+https://mp.weixin.qq.com/s/Q82YzANWDMkKWm5k2XmPkA
 
-束搜索算法（Andrew Jungwirth 初稿）BEAM Search
-
-http://hongbomin.com/2017/06/23/beam-search/
-
-Beam Search算法及其应用
-
-https://mp.weixin.qq.com/s/GTtjjBgCDdLRwPrUqfwlVA
-
-如何使用贪婪搜索和束搜索解码算法进行自然语言处理
+严谨解决5种机器学习算法在预测股价的应用
 
 # 压缩感知
 

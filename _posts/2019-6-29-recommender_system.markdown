@@ -186,6 +186,10 @@ https://mp.weixin.qq.com/s/gEET3mcI4VTLLg5ICQL2xQ
 
 如何通过A/B测试实现用户有效增长？
 
+https://mp.weixin.qq.com/s/zBUy_k2lyK0mqMMxm01w6w
+
+推荐系统评估
+
 ## 参考
 
 https://mp.weixin.qq.com/s/vpANPrl86Ou2fBVHgLXtBQ

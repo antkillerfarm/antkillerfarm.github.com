@@ -162,6 +162,10 @@ https://mp.weixin.qq.com/s/5Ddz_Y4-KFV4ioOOmLuQtw
 
 MASR-中文语音识别，提供预训练模型，高识别率
 
+https://mp.weixin.qq.com/s/eoihGqB2yTUWPieaxq_Svg
+
+谷歌再获语音识别新进展：利用序列转导来实现多人语音识别和说话人分类
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw

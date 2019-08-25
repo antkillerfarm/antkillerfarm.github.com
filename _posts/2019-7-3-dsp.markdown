@@ -275,3 +275,7 @@ NeuralNLP-NeuralClassifier：腾讯开源深度学习文本分类工具
 https://mp.weixin.qq.com/s/UwijIjGOF-eRb2GjDxB95g
 
 漫画汉化组福音：深度学习工具一键抠图
+
+https://mp.weixin.qq.com/s/suLJs_GjRsdYA5fwtsje7g
+
+腾讯AI开源框架Angel 3.0重磅发布：超50万行代码，支持3种算法，打造全栈机器学习平台

@@ -152,6 +152,10 @@ https://mp.weixin.qq.com/s/3S9TJo1LJ_A5Zvr2gEl9Nw
 
 深度学习中图像语义分割基准数据集详解
 
+https://mp.weixin.qq.com/s/W9KoEgbEkSNkxQIa92sRMg
+
+视频分类模型和数据集板块干货集锦
+
 ## 人脸/行为
 
 http://blog.csdn.net/wangkr111/article/details/44514097

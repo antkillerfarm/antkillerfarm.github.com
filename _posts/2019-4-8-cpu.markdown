@@ -399,3 +399,7 @@ https://mp.weixin.qq.com/s/NfNJVoAC5aW1sgToAmYsGw
 https://mp.weixin.qq.com/s/o8C6n-ZRw3vFS8E-hikXJQ
 
 移动的王者：深入分析ARM最强处理器Cortex A77
+
+https://www.cnblogs.com/f-ck-need-u/p/11141636.html
+
+关于CPU的一些基本知识总结

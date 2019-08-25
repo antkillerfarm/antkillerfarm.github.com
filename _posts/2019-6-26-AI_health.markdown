@@ -339,3 +339,7 @@ https://mp.weixin.qq.com/s/uxuWmcplTmS8cJObd8cfVw
 https://mp.weixin.qq.com/s/uYnu7v3w0evrJhTBYjbI_g
 
 啥叫5G超级上行？
+
+https://mp.weixin.qq.com/s/5v1uknmAPfqFR_5meie9GQ
+
+5G基站功耗到底有多可怕？网友惊呼：国家电网或是5G最大赢家！

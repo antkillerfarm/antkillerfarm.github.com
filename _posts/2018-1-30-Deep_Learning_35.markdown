@@ -300,7 +300,11 @@ https://mp.weixin.qq.com/s/RBsRXN5ySsty0ZDlUKKQnQ
 
 https://mp.weixin.qq.com/s/xR1_ptMaXKonvmFOPurY1A
 
-人体动作识别在智能八段锦 App 中的实践
+人体动作识别在智能八段锦App中的实践
+
+https://mp.weixin.qq.com/s/nX3LRXQzgfW-Wx1Dh-_brQ
+
+基于骨骼点轨迹的规律学习的异常检测
 
 # Capsule
 

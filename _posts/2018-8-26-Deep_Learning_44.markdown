@@ -110,6 +110,10 @@ https://mp.weixin.qq.com/s/v5Sy-fxW-hm8u6XiyuRXlA
 
 Anime4K：目前最热的开源实时动漫放大算法
 
+https://mp.weixin.qq.com/s/W4ghsuSRhe2aTDn5GkNuAg
+
+基于深度学习的图像修补/完整方法分析
+
 # 三维处理
 
 https://github.com/timzhang642/3D-Machine-Learning
@@ -343,3 +347,7 @@ https://mp.weixin.qq.com/s/uKCQVpkN6Va8jZisAyAfNA
 https://mp.weixin.qq.com/s/WBiDyIBV9OaKbxUhBml2AA
 
 GS3D(monocular 3D detection)
+
+https://mp.weixin.qq.com/s/G7YNTR8FAsCtkCxLQv1-dQ
+
+Facebook 开源3D目标检测框架VoteNet，曾刷新两大数据集最高精度

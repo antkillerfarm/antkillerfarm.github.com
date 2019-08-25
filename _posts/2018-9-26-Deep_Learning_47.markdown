@@ -10,6 +10,12 @@ Tiny Network Graphics是图鸭科技推出一种基于深度学习的图片压�
 
 ![](/images/img2/TNG.png)
 
+还有视频压缩：
+
+论文：
+
+《Deep Learning-Based Video Coding: A Review and A Case Study》
+
 参考：
 
 https://mp.weixin.qq.com/s/WYsxFX4LyM562bZD8rO95w

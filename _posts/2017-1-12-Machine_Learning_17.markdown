@@ -278,6 +278,10 @@ https://zhuanlan.zhihu.com/p/78193297
 
 PCA和SVD的联系和区别？
 
+https://mp.weixin.qq.com/s/c8P9KmkQTqNcazcjU9qQFw
+
+机器学习中的维度灾难
+
 # 独立成分分析
 
 这一节我们将讲述独立成分分析（Independent Components Analysis，ICA）算法。
@@ -289,13 +293,3 @@ PCA和SVD的联系和区别？
 为了更为正式的描述这个问题，我们假设数据$$s\in R^n$$是由n个独立的源生成的。我们接收到的信号可写作：$$x=As$$。其中，A被称为混合矩阵（mixing matrix）。在这个问题中，$$s^{(i)}$$是一个n维向量，$$s_j^{(i)}$$表示第j个说话者在i时刻的声音。同理，$$x_j^{(i)}$$表示第j个麦克风在i时刻的记录下的数据。
 
 我们把$$W=A^{-1}$$称作unmixing matrix。我们的目标就是找到W，然后利用$$s=Wx$$，求得s。我们使用$$w_i^T$$表示W矩阵的第i行，因此：$$s_j^{(i)}=w_j^Tx^{(i)}$$。
-
-## ICA的不确定性
-
-不幸的是，在没有源和混合矩阵的先验知识的情况下，仅凭$$x^{(i)}$$是没有办法求出W的。为了说明这一点，我们引入置换矩阵的概念。
-
-置换矩阵（permutation matrix）是一种元素只由0和1组成的方块矩阵。置换矩阵的每一行和每一列都恰好只有一个1，其余的系数都是0。它的例子如下：
-
-$$P=\begin{bmatrix}0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 1 \end{bmatrix};
-P=\begin{bmatrix}0 & 1 \\ 1 & 0 \end{bmatrix};
-P=\begin{bmatrix}1 & 0 \\ 0 & 1 \end{bmatrix}$$

@@ -353,3 +353,7 @@ Pinterest视觉搜索工程师孙彦：视觉搜索不是“鸡肋”
 https://mp.weixin.qq.com/s/QgYtfvsLGcfqLA98mp19tg
 
 KDD2018阿里巴巴论文揭示自家大规模视觉搜索算法
+
+https://mp.weixin.qq.com/s/CS4iAMprZizrXhpXDhySzg
+
+视频分类/行为识别研究综述，从数据集到方法

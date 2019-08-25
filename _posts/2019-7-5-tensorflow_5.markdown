@@ -78,10 +78,6 @@ https://mp.weixin.qq.com/s/L9kYXFXYmKadghAhd-51pA
 
 TensorFlow模型优化工具包—剪枝API
 
-https://mp.weixin.qq.com/s/G0xrlTHfxKHikYj8dGWRWQ
-
-Transformer聊天机器人教程
-
 https://mp.weixin.qq.com/s/OGsvcfU1VlhNZYgEGLimsQ
 
 爱奇艺基于TensorFlow Lite的移动端AR解决方案SmileAR

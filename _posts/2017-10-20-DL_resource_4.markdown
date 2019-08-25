@@ -229,3 +229,7 @@ https://mp.weixin.qq.com/s/v7tzVtgUZuYunFMKtxpIiA
 https://mp.weixin.qq.com/s/Lx1mCVtuFKkeuP_ovFJopg
 
 基于Keras的关联神经网络CorrNet综合指南
+
+https://mp.weixin.qq.com/s/RLe5E7rjqbKWxkE4Bpe7uw
+
+26秒单GPU训练CIFAR10，Jeff Dean也点赞的深度学习优化技巧

@@ -296,6 +296,18 @@ https://mp.weixin.qq.com/s/ONmwKV6VyYVt2S6lOBrE5g
 
 ## 聊天机器人
 
+http://www.shareditor.com/bloglistbytag/?tagname=%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%81%9A%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA
+
+实战课程：自己动手做聊天机器人
+
+https://mp.weixin.qq.com/s/ZL6T-8M-KfA5wSHcao_PDw
+
+152页基于深度学习的聊天机器人全面总结
+
+https://mp.weixin.qq.com/s/mekBRtHcXqbMJiN1CgbgQg
+
+聊天机器人是如何工作的：基于深度学习的对话系统教程 152页PPT
+
 https://mp.weixin.qq.com/s/Vh3bCO-ZYoBJLqCTPCpggg
 
 论如何为聊天机器人定义一个固定的人格
@@ -336,6 +348,30 @@ https://mp.weixin.qq.com/s/ziM0U-KEePjZLNMhK5PVXA
 
 基于金融-司法领域(兼有闲聊性质)的聊天机器人
 
+https://mp.weixin.qq.com/s/Tk-WWuYp-CBx0p-mBWm5Jg
+
+开发聊天机器人必读的重要论文
+
+https://mp.weixin.qq.com/s/ZexnTKHEFKPso5fhZNQfQQ
+
+聊天机器人中用户出行消费意图识别方法研究
+
+https://mp.weixin.qq.com/s/jifGPaxdqVii3q6gG4F2ag
+
+Google工程师带你了解聊天机器人的工作原理和未来发展
+
+https://mp.weixin.qq.com/s/wU3sZKQ6gkYHeTEEClB4Gw
+
+通过深度模型加深和拓宽聊天话题，让你与机器多聊两句
+
+https://mp.weixin.qq.com/s/55-YouMoqOtGFPpIsGWwOg
+
+Google工程师带你看遍聊天机器人的前世今生
+
+https://mp.weixin.qq.com/s/G0xrlTHfxKHikYj8dGWRWQ
+
+Transformer聊天机器人教程
+
 ## 其他
 
 http://mp.weixin.qq.com/s/lmHWo9MUdv7ZMI7ARNmTSw
@@ -361,51 +397,3 @@ NLP2005年以来大突破：语义角色标记深度模型
 https://mp.weixin.qq.com/s/xMCu8bbrJSVLEpUdd_RIGw
 
 你是合格的数据科学家吗？30道题测试你的NLP水平
-
-https://mp.weixin.qq.com/s/-bAeg91e3F8hsZAGGmRswQ
-
-基于Bi-LSTM的语义角色标注系统
-
-https://mp.weixin.qq.com/s/LbskUMqwkOJ8CFoLud76ww
-
-机器理解中的迁移学习，斯坦福联合微软提出SynNet网络
-
-https://mp.weixin.qq.com/s?__biz=MzU3NzEzOTE3Mg==&mid=2247483654&idx=1&sn=da54e5cd777e2b9b16e8d526b161886b
-
-深度学习在自然语言处理的应用
-
-https://mp.weixin.qq.com/s/86WNiyEoqBUqHuacNKoJtA
-
-教你打造一个曲风分类机器人
-
-https://mp.weixin.qq.com/s/klfTdvfti0xCg2lGitG4hg
-
-用户表示方法对新浪微博中用户属性分类性能影响的研究
-
-https://mp.weixin.qq.com/s/gyuq2ujb1tiAvAlXtZY4Eg
-
-聊聊“事件抽取”
-
-https://mp.weixin.qq.com/s/IvbJ_d7z91BCcRVpJ9_jMA
-
-如何用深度学习做自然语言处理？这里有份最佳实践清单
-
-https://mp.weixin.qq.com/s/DhiCkZd4TU4YIAm83e_vLg
-
-更近人类的对话系统自动评测方法
-
-https://mp.weixin.qq.com/s/9uG8lqr2Kn0vzZKyjLHNGg
-
-从文本挖掘综述分类、聚类和信息提取等算法
-
-https://mp.weixin.qq.com/s/62b7kK0StmwTP_DGusE0MA
-
-MIT自然语言处理数据集和语料库
-
-https://mp.weixin.qq.com/s/GSHk-otPeyGZN5xRNehAyw
-
-KBQA从入门到放弃—入门篇
-
-https://mp.weixin.qq.com/s/-Zz5Cv4QJaRHdBFrGyBuLg
-
-KBQA从入门到放弃 - Part 2

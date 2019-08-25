@@ -114,6 +114,10 @@ https://zhuanlan.zhihu.com/p/33214451
 
 深度学习在推荐系统上的应用
 
+https://mp.weixin.qq.com/s/ouHfqFk_WQk7ZofvabEwZg
+
+推荐系统Wide & Deep Learning详解
+
 https://mp.weixin.qq.com/s/hGvQvddD3i858XSK4z08Ug
 
 主要推荐系统算法总结及Youtube深度学习推荐算法实例概括

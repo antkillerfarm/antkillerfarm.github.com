@@ -161,6 +161,10 @@ https://mp.weixin.qq.com/s/Xgg61ICqkUo9ovdEV7G8Cw
 
 推荐算法综述
 
+https://mp.weixin.qq.com/s/lBj0Z9vY9FcEFQnk0VrdOw
+
+协同过滤推荐算法
+
 上面的网页概括了ALS算法出现之前的协同过滤算法的概况。
 
 ALS算法是2008年以来，用的比较多的协同过滤算法。它已经集成到Spark的Mllib库中，使用起来比较方便。

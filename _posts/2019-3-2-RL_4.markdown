@@ -44,6 +44,10 @@ https://mp.weixin.qq.com/s/wfCyii6bS-GxMZPg2TPaLA
 
 蒙特卡洛树搜索是什么？如何将其用于规划星际飞行？
 
+https://www.zhihu.com/question/39916945
+
+蒙特卡洛树是什么算法？
+
 https://mp.weixin.qq.com/s/tqhPGG2Djl4gnd09RdHsUA
 
 一个彻底改变世界的思想

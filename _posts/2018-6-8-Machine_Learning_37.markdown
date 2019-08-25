@@ -200,7 +200,11 @@ https://mp.weixin.qq.com/s/P0qzzyVQke_c-RUF0Faitw
 
 https://mp.weixin.qq.com/s/scGkuMJ4lZULhmK69vWYpA
 
-中国博士生提出最先进AI训练优化器，收敛快精度高，网友亲测：Adam可以退休了
+中国博士生提出最先进AI训练优化器RAdam，收敛快精度高，网友亲测：Adam可以退休了
+
+https://mp.weixin.qq.com/s/010zXPYu36oLOoSkaA8YMg
+
+RAdam优化器又进化：与LookAhead强强结合，性能更优速度更快
 
 # 推荐系统进阶
 
@@ -310,6 +314,10 @@ https://mp.weixin.qq.com/s/ycxigg0HbiOTRUBPAWk21Q
 
 推荐系统中的冷启动问题和探索利用问题
 
+https://mp.weixin.qq.com/s/82REVmDV5cfeQP766qOZmw
+
+推荐系统冷启动
+
 ## 参考
 
 https://mp.weixin.qq.com/s/q9FU19Hpw2eWLLhsY5lYJQ
@@ -415,3 +423,11 @@ https://mp.weixin.qq.com/s/S9-GgQTlx2c14mN_3kNQiQ
 https://mp.weixin.qq.com/s/sw16_sUsyYuzpqqy39RsdQ
 
 阿里妈妈深度树检索技术（TDM）及应用框架的探索实践
+
+https://mp.weixin.qq.com/s/_zSe_Ia4DPrFKqsqW3iQ8w
+
+电商推荐那点事
+
+https://mp.weixin.qq.com/s/frEjB8SznDzJxOL3bkHnYw
+
+矩阵分解推荐算法

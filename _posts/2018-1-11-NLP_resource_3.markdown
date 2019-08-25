@@ -6,13 +6,21 @@ category: resource
 
 # NLP参考资源
 
+https://mp.weixin.qq.com/s/klfTdvfti0xCg2lGitG4hg
+
+用户表示方法对新浪微博中用户属性分类性能影响的研究
+
+https://mp.weixin.qq.com/s/gyuq2ujb1tiAvAlXtZY4Eg
+
+聊聊“事件抽取”
+
+https://mp.weixin.qq.com/s/IvbJ_d7z91BCcRVpJ9_jMA
+
+如何用深度学习做自然语言处理？这里有份最佳实践清单
+
 https://zhuanlan.zhihu.com/p/30533380
 
 Neural Response Generation——关于回复生成工作的一些总结
-
-https://mp.weixin.qq.com/s/ZexnTKHEFKPso5fhZNQfQQ
-
-聊天机器人中用户出行消费意图识别方法研究
 
 https://mp.weixin.qq.com/s/HHPp0JJzpY3q0nC-DF3F3g
 
@@ -226,10 +234,6 @@ https://mp.weixin.qq.com/s/go0TK5ml_LZkLTSxrQLvfA
 
 携程“小诗机”背后的机器学习和自然语言处理技术
 
-https://mp.weixin.qq.com/s/jifGPaxdqVii3q6gG4F2ag
-
-Google工程师带你了解聊天机器人的工作原理和未来发展
-
 https://mp.weixin.qq.com/s/h3OXtnEOmT_YPs4QEU1Gag
 
 Chatbot这么火，但你真的知道它的玩法有哪几种吗？
@@ -273,14 +277,6 @@ https://mp.weixin.qq.com/s/vLw-krU2vorr5ZUAPI7VMA
 https://mp.weixin.qq.com/s/FvQUvyB32XZt0AIS0m6KDw
 
 基于连通图的篇章级事件抽取与相关度计算
-
-https://mp.weixin.qq.com/s/wU3sZKQ6gkYHeTEEClB4Gw
-
-通过深度模型加深和拓宽聊天话题，让你与机器多聊两句
-
-https://mp.weixin.qq.com/s/55-YouMoqOtGFPpIsGWwOg
-
-Google工程师带你看遍聊天机器人的前世今生
 
 https://mp.weixin.qq.com/s/CQDYzRvFqJHPVXDu94pgLA
 

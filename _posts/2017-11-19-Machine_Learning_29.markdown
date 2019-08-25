@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十九）——在线学习, 贝叶斯学习
+title:  机器学习（二十九）——在线学习, 贝叶斯学习, Beam Search
 category: ML 
 ---
 
@@ -155,3 +155,53 @@ https://zhuanlan.zhihu.com/p/63351454
 https://mp.weixin.qq.com/s/GuM0jZlI4mC-DFSWybtG1A
 
 贝叶斯优化简介
+
+# Beam Search
+
+## 概述
+
+Beam Search（集束搜索）是一种启发式图搜索算法，通常用在图的解空间比较大的情况下，为了减少搜索所占用的空间和时间，在每一步深度扩展的时候，剪掉一些质量比较差的结点，保留下一些质量较高的结点。保留下来的结点个数一般叫做Beam Width。
+
+这样减少了空间消耗，并提高了时间效率，但缺点就是有可能存在潜在的最佳方案被丢弃，因此Beam Search算法是不完全的，一般用于解空间较大的系统中。
+
+![](/images/article/beam_search.png)
+
+上图是一个Beam Width为2的Beam Search的剪枝示意图。每一层只保留2个最优的分支，其余分支都被剪掉了。
+
+显然，Beam Width越大，找到最优解的概率越大，相应的计算复杂度也越大。因此，设置合适的Beam Width是一个工程中需要trade off的事情。
+
+当Beam Width为1时，也就是著名的A*算法了。
+
+Beam Search主要用于机器翻译、语音识别等系统。这类系统虽然从理论来说，也就是个多分类系统，然而由于分类数等于词汇数，简单的套用softmax之类的多分类方案，明显是计算量过于巨大了。
+
+PS：中文验证码识别估计也可以采用该技术。
+
+## Beam Search与Viterbi算法
+
+Beam Search与Viterbi算法虽然都是解空间的剪枝算法，但它们的思路是不同的。
+
+Beam Search是对状态迁移的路径进行剪枝，而Viterbi算法是合并不同路径到达同一状态的概率值，用最大值作为对该状态的充分估计值，从而在后续计算中，忽略历史信息（这种以偏概全也就是所谓的Markov性），以达到剪枝的目的。
+
+从状态转移图的角度来说，Beam Search是空间剪枝，而Viterbi算法是时间剪枝。
+
+## 参考
+
+http://people.csail.mit.edu/srush/optbeam.pdf
+
+Optimal Beam Search for Machine Translation
+
+http://www.cnblogs.com/xxey/p/4277181.html
+
+Beam Search（集束搜索/束搜索）
+
+http://blog.csdn.net/girlhpp/article/details/19400731
+
+束搜索算法（Andrew Jungwirth 初稿）BEAM Search
+
+http://hongbomin.com/2017/06/23/beam-search/
+
+Beam Search算法及其应用
+
+https://mp.weixin.qq.com/s/GTtjjBgCDdLRwPrUqfwlVA
+
+如何使用贪婪搜索和束搜索解码算法进行自然语言处理

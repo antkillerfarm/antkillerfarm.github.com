@@ -4,9 +4,17 @@ title:  机器学习（十八）——独立成分分析, 时间序列分析
 category: ML 
 ---
 
-# 独立成分分析
+# 独立成分分析（续）
 
-## ICA的不确定性（续）
+## ICA的不确定性
+
+不幸的是，在没有源和混合矩阵的先验知识的情况下，仅凭$$x^{(i)}$$是没有办法求出W的。为了说明这一点，我们引入置换矩阵的概念。
+
+置换矩阵（permutation matrix）是一种元素只由0和1组成的方块矩阵。置换矩阵的每一行和每一列都恰好只有一个1，其余的系数都是0。它的例子如下：
+
+$$P=\begin{bmatrix}0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 1 \end{bmatrix};
+P=\begin{bmatrix}0 & 1 \\ 1 & 0 \end{bmatrix};
+P=\begin{bmatrix}1 & 0 \\ 0 & 1 \end{bmatrix}$$
 
 在线性代数中，每个n阶的置换矩阵都代表了一个对n个元素（n维空间的基）的置换。当一个矩阵乘上一个置换矩阵时，所得到的是原来矩阵的横行（置换矩阵在左）或纵列（置换矩阵在右）经过置换后得到的矩阵。
 
@@ -286,43 +294,3 @@ https://mp.weixin.qq.com/s/2hpQ_7Ih58d1RKYb1oW_Sg
 https://zhuanlan.zhihu.com/p/35093835
 
 时间序列的自回归模型—从线性代数的角度来看
-
-https://zhuanlan.zhihu.com/p/39105270
-
-时间序列的表示与信息提取
-
-https://mp.weixin.qq.com/s/iah8PvIC0oZngSaNHw7gJw
-
-从上帝视角看透时间序列和数据挖掘
-
-https://zhuanlan.zhihu.com/p/38130622
-
-时间序列的相似性
-
-https://mp.weixin.qq.com/s/DGGuAYsoa6DPD6FBf2Hc4g
-
-时间序列分析之理论篇
-
-https://zhuanlan.zhihu.com/p/50698719
-
-两篇关于时间序列的论文
-
-https://zhuanlan.zhihu.com/p/55129654
-
-时间序列的单调性
-
-https://zhuanlan.zhihu.com/p/55903495
-
-时间序列的聚类
-
-https://mp.weixin.qq.com/s/2teyejpbpM6x5UCiYL8s-Q
-
-关于时间序列你需要了解的一切
-
-https://mp.weixin.qq.com/s/FRSe1mJTvk9U66ta-r9iCQ
-
-手把手教你用Python玩转时序数据，从采样、预测到聚类
-
-https://mp.weixin.qq.com/s/Q82YzANWDMkKWm5k2XmPkA
-
-严谨解决5种机器学习算法在预测股价的应用

@@ -374,6 +374,10 @@ https://zhuanlan.zhihu.com/p/73711222
 
 巧用torch.backends.cudnn.benchmark减少训练时间
 
+https://www.zhihu.com/question/303070254
+
+PyTorch中在反向传播前为什么要手动将梯度清零？
+
 # 超算
 
 ![](/images/img3/power.aug.gif)

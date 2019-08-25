@@ -78,17 +78,9 @@ https://mp.weixin.qq.com/s/sBRqSEKozodG2iA3Iqrpxw
 
 300页文本知识提取与推断最新教程
 
-https://mp.weixin.qq.com/s/mekBRtHcXqbMJiN1CgbgQg
-
-聊天机器人是如何工作的：基于深度学习的对话系统教程 152页PPT
-
 https://mp.weixin.qq.com/s/wQEahUTHvqDNndv8Spkolw
 
 清华刘洋与邓力合著338页新书《Deep Learning in Natural Language Processing》
-
-https://mp.weixin.qq.com/s/ZL6T-8M-KfA5wSHcao_PDw
-
-152页基于深度学习的聊天机器人全面总结
 
 https://mp.weixin.qq.com/s/HcGDwZWhuL-vmF19aerJyw
 
@@ -124,10 +116,6 @@ https://github.com/jacobeisenstein/gt-nlp-class/tree/master/notes
 http://www.52nlp.cn/
 
 一个自然语言处理爱好者的群体博客。包括52nlp、rickjin、liwei等国内外华人大牛。
-
-http://www.shareditor.com/bloglistbytag/?tagname=%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%81%9A%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA
-
-实战课程：自己动手做聊天机器人
 
 http://www.icst.pku.edu.cn/lcwm/
 

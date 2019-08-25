@@ -196,6 +196,10 @@ https://mp.weixin.qq.com/s/dB5u2No8eakLnrjto0kvyQ
 
 DaSiamRPN的升级版，视觉目标跟踪之SiamRPN++
 
+https://mp.weixin.qq.com/s/hAdMfwTqfuMcF07RhhKvGg
+
+SiamRPN++论文笔记
+
 https://mp.weixin.qq.com/s/7hScDZQfv42nBKdYu4RA0Q
 
 惊艳的SiamMask：开源快速同时进行目标跟踪与分割算法

@@ -1,8 +1,14 @@
 ---
 layout: post
-title:  深度加速（一）——Winograd（1）
+title:  深度加速（一）——概述, Winograd（1）
 category: DL acceleration 
 ---
+
+# 概述
+
+书籍：
+
+《Embedded Deep Learning:  Algorithms, Architectures and Circuits for Always-on Neural Network Processing》
 
 # Winograd
 
