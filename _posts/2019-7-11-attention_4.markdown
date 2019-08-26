@@ -6,6 +6,14 @@ category: Attention
 
 # Attention进阶（续）
 
+https://zhuanlan.zhihu.com/p/25928551
+
+用深度学习（CNN RNN Attention）解决大规模文本分类问题-综述和实践
+
+http://blog.csdn.net/leo_xu06/article/details/53491400
+
+视觉注意力的循环神经网络模型
+
 https://mp.weixin.qq.com/s/l4HN0_VzaiO-DwtNp9cLVA
 
 循环注意力区域实现图像多标签分类
@@ -137,3 +145,7 @@ https://mp.weixin.qq.com/s/G4mFW8cn-ho3KGmbw5sSTw
 https://mp.weixin.qq.com/s/MzHmvbwxFCaFjmMkjfjeSg
 
 遍地开花的Attention，你真的懂吗？
+
+https://mp.weixin.qq.com/s/7ETHeN2xV_hEwkDxrhJyNg
+
+用Attention玩转CV，一文总览自注意力语义分割进展

@@ -103,6 +103,47 @@ self.player.seek(1.0, Gst.Format.TIME, Gst.SeekFlags.FLUSH, Gst.SeekType.SET,\
 
 `c_long(Gst.CLOCK_TIME_NONE).value`
 
+## .pyc & .pyx & .pyd
+
+.pyc: 编译好的二进制文件。
+
+.pyx: python的c扩展文件，代码要符合cython的规范
+
+.pyd: 编译好的cython动态库，仅在Windows平台有，Linux平台生成.so文件。
+
+参考:
+
+https://blog.csdn.net/sislcb/article/details/4002414
+
+py文件编译为pyc
+
+https://www.cnblogs.com/kaituorensheng/p/4452881.html
+
+Cython学习
+
+## Cython
+
+Cython支持python和C的混编。
+
+官网：
+
+https://cython.org/
+
+示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/cython
+
+编译：
+
+`python setup.py build_ext --inplace`
+
+运行：
+
+{% highlight python %}
+>import hello
+>hello.say_hello()
+{% endhighlight %}
+
 ## 参考
 
 https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA

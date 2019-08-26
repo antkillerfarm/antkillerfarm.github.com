@@ -106,6 +106,10 @@ https://mp.weixin.qq.com/s/wPYd2jLUPzlPwIZkb_wSbA
 
 深度递归LSTM-LRP非线性时变多因子模型
 
+https://mp.weixin.qq.com/s/3djAWJs6ecDdPSpQMxqmrg
+
+清华、李飞飞团队等提出强记忆力E3D-LSTM网络
+
 # 深度目标跟踪
 
 https://zhuanlan.zhihu.com/p/22334661
@@ -331,28 +335,6 @@ https://mp.weixin.qq.com/s/PGs3M5-vdQf4deE6hJuqng
 https://mp.weixin.qq.com/s/R2OE76ipTX3r_vvj0lYYYQ
 
 精度优秀，速度214.7fps！卡内基梅隆大学开源强大的3D多目标跟踪系统
-
-# 图像超分辨率进阶+
-
-https://mp.weixin.qq.com/s/Rr4AKGjZNyV3PDoRBVH-lw
-
-低清视频也能快速转高清：超分辨率算法TecoGAN
-
-https://mp.weixin.qq.com/s/PIq78vhNQxAKntnZilL4pQ
-
-分割、检测与定位，高分辨率网络显神威！这会是席卷深度学习的通用结构吗？
-
-https://mp.weixin.qq.com/s/G55dxHfMYxWzjz4_8YnUaw
-
-深度学习超分辨率最新综述：一文道尽技术分类与效果评测
-
-https://zhuanlan.zhihu.com/p/67613641
-
-基于多级神经纹理迁移的图像超分辨方法(Adobe Research)
-
-https://mp.weixin.qq.com/s/IStOD22WgZ6EBFCvIHkNSg
-
-图像超分辨率网络：RCAN
 
 # Spatial Transformer Networks
 

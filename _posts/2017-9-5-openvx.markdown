@@ -152,6 +152,14 @@ Intel的Neon专为DL设计。
 
 https://ai.intel.com/neon/
 
+## GSL
+
+GNU scientific library是一个C/C++写的数值计算库。
+
+官网：
+
+https://www.gnu.org/software/gsl/
+
 ## OpenACC
 
 官网：

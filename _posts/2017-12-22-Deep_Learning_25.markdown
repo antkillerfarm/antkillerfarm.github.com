@@ -1,8 +1,106 @@
 ---
 layout: post
-title:  深度学习（二十五）——人脸检测/识别（2）
+title:  深度学习（二十五）——多任务学习, 人脸检测/识别（2）
 category: DL 
 ---
+
+# 多任务学习
+
+https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA
+
+多任务学习-Multitask Learning概述
+
+https://mp.weixin.qq.com/s/A-CVKTz_moaFzTYywSt2gg
+
+张宇 杨强：多任务学习概述
+
+https://mp.weixin.qq.com/s/ZlCI02UdRuFBc-uKqIPE_w
+
+深度学习多任务学习综述
+
+https://zhuanlan.zhihu.com/p/67524006
+
+多任务学习综述-A Survey on Multi-Task Learning
+
+https://mp.weixin.qq.com/s/QXOy2jo4RhCZrD5bSVzBOQ
+
+共享相关任务表征，一文读懂深度神经网络多任务学习
+
+https://zhuanlan.zhihu.com/p/59413549
+
+Multi-task Learning(Review)多任务学习概述
+
+https://mp.weixin.qq.com/s/X6FwTgr282hbqgOz3oBX-w
+
+多任务学习概述论文：从定义和方法到应用和原理分析
+
+https://blog.csdn.net/CoderPai/article/details/80080455
+
+多任务学习与深度学习
+
+https://blog.csdn.net/CoderPai/article/details/80087188
+
+利用TensorFlow一步一步构建一个多任务学习模型
+
+https://mp.weixin.qq.com/s/mm9bXXTEzd8DwyYlMgGMZg
+
+NLP多任务学习：一种层次增长的神经网络结构
+
+https://mp.weixin.qq.com/s/fcFb6WkJVP8TYpoxkQgiWQ
+
+CMU提出“十字绣网络”，自动决定多任务学习的最佳共享层
+
+https://mp.weixin.qq.com/s/i7WAFjQHK1NGVACR8x3v0A
+
+自然语言十项全能：转化为问答的多任务学习
+
+https://mp.weixin.qq.com/s/NpO1UP_mzyaeqW26xLY1Xg
+
+CVPR 2018最佳论文作者亲笔解读：研究视觉任务关联性的Taskonomy
+
+https://mp.weixin.qq.com/s/DUSa3SW1AgvJ0szL030NHQ
+
+一个AI玩57个游戏，DeepMind离真正“万能”的AGI不远了！
+
+https://mp.weixin.qq.com/s/P81I5vl99mV-4StNHmd_6A
+
+作为多目标优化的多任务学习：寻找帕累托最优解
+
+https://mp.weixin.qq.com/s/cyX_FzHF-6df9_AMUDu1aQ
+
+One Model To Learn Them All
+
+https://mp.weixin.qq.com/s/oY2yGrTmIpr3H2qvzYKInA
+
+谷歌一个模型解决所有问题《One Model to Learn Them All》论文深度解读
+
+https://mp.weixin.qq.com/s/VMHyEOn8uyRYt39QXVWUww
+
+西湖大学张岳：自然语言处理中的多任务联合学习（384页PPT）
+
+https://mp.weixin.qq.com/s/5zo-2WB9v2hOvKAC7ZhKuQ
+
+基于学习的多任务框架L2MT，为多任务问题选择最优模型
+
+https://mp.weixin.qq.com/s/MPhKUosKZbLtVjJ1XYGXYA
+
+如何利用深度学习模型实现多任务学习？这里有三点经验
+
+https://mp.weixin.qq.com/s/Oopgglg2G7TwnXeN2DtZhA
+
+多任务+注意力机制的学习
+
+https://mp.weixin.qq.com/s/vMgHCQ03Gt5v6GdgW-pY9A
+
+一个神经网络实现4大图像任务，GitHub已开源
+
+https://mp.weixin.qq.com/s/Zui8FFn1FDP_UoAGMH0L7Q
+
+知其然，知其所以然：基于多任务学习的可解释推荐系统
+
+https://mp.weixin.qq.com/s/8Ablt7Sa86DXTB1dE_RqaA
+
+港中文开源基于PyTorch的多任务人脸识别框架
 
 # 人脸检测/识别
 

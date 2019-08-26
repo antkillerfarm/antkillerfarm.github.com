@@ -54,6 +54,14 @@ https://mp.weixin.qq.com/s/WDFwKqNynwPtXhM8rZnOsA
 
 自动生成马斯克的推特几乎无破绽！MIT用GPT-2模型做了个名人发言模仿器
 
+https://mp.weixin.qq.com/s/67Z_dslvwTyRl3OMrArhCg
+
+完全图解GPT-2（一）
+
+https://mp.weixin.qq.com/s/xk5fWrSBKErH8tvl-3pgtg
+
+完全图解GPT-2（二）
+
 ## ERNIE
 
 https://mp.weixin.qq.com/s/xoQhz6ljbsbzKRBJlTQQuQ
@@ -389,11 +397,3 @@ https://mp.weixin.qq.com/s/POYTh4Jf7HttxoLhrHZQhw
 https://mp.weixin.qq.com/s/2gxp7A38epQWoy7wK8Nl6A
 
 谷歌翻译最新突破，“关注机制”让机器读懂词与词的联系
-
-https://zhuanlan.zhihu.com/p/25928551
-
-用深度学习（CNN RNN Attention）解决大规模文本分类问题-综述和实践
-
-http://blog.csdn.net/leo_xu06/article/details/53491400
-
-视觉注意力的循环神经网络模型

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十七）——MobileNet, 问答系统, 图像超分辨率进阶, RBM & DBN & Deep Autoencoder
+title:  深度学习（二十七）——MobileNet, 问答系统, RBM & DBN & Deep Autoencoder
 category: DL 
 ---
 
@@ -211,84 +211,6 @@ https://mp.weixin.qq.com/s/LFmZMcunhJ-9ey9_igrTZA
 https://mp.weixin.qq.com/s/OHSqHNo7vjLGaTKyzjZjyg
 
 基于智能客服的用户日志研究
-
-# 图像超分辨率进阶
-
-https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
-
-NTIRE2017夺冠论文：用于单一图像超分辨率的增强型深度残差网络
-
-https://www.zhihu.com/question/25401250
-
-如何通过多帧影像进行超分辨率重构？
-
-https://www.zhihu.com/question/38637977
-
-超分辨率重建还有什么可以研究的吗？
-
-https://zhuanlan.zhihu.com/p/25912465
-
-胎儿MRI高分辨率重建技术：现状与趋势
-
-https://mp.weixin.qq.com/s/i-im1sy6MNWP1Fmi5oWMZg
-
-华为推出新型HiSR：移动端的超分辨率算法
-
-https://mp.weixin.qq.com/s/h4Xzt-aS1_-5zjTB0ypTLg
-
-普通视频转高清：10个基于深度学习的超分辨率神经网络
-
-https://mp.weixin.qq.com/s/WmqagSGRy98USgnz21W3Pg
-
-WDSR
-
-https://mp.weixin.qq.com/s/oNavFLOPskHNxWIyBbFzHw
-
-WDSR (NTIRE2018 超分辨率冠军)
-
-https://mp.weixin.qq.com/s/AxHTaT-G5_Y6Iw_3aIIxCg
-
-超分辨率技术如何发展？这6篇ECCV 18论文带你一次尽览
-
-https://mp.weixin.qq.com/s/zWoQCKbZNz2td3cZxEsqKQ
-
-腾讯优图提出SRN-DeblurNet：高效高质量去除复杂图像模糊
-
-https://mp.weixin.qq.com/s/eJkkbGBYxWlngkT5gjjW7g
-
-效果惊人：上古卷轴III等经典游戏也能使用超分辨率GAN重制了
-
-https://mp.weixin.qq.com/s/M8gCrQDtjT1lszsxV2QQKg
-
-FSRNet：端到端深度可训练人脸超分辨网络
-
-https://mp.weixin.qq.com/s/fkHfzkHRFpEGc-L4uGlqcg
-
-从网络设计到实际应用，深度学习图像超分辨率综述
-
-https://mp.weixin.qq.com/s/C9Ku4MvU2QuZ_GJcs8FelA
-
-基于深度学习的图像超分辨率最新进展与趋势
-
-https://mp.weixin.qq.com/s/qNHbs2Bd4buVlu0j3Rtj0g
-
-Adobe提出新型超分辨率方法：用神经网络迁移参照图像纹理
-
-https://mp.weixin.qq.com/s/N-kAIK_qMowsFqEtWTqt4w
-
-图像超分辨率重建--工程应用
-
-https://mp.weixin.qq.com/s/JaPYUWvh7RBHVUYgKlTeHw
-
-旷视提出超分辨率新方法Meta-SR：单一模型实现任意缩放因子
-
-https://mp.weixin.qq.com/s/aEu0q04pgXUE1mqAS5kewQ
-
-不用P30 Pro，普通手机也能变身望远镜：陈启峰团队新作，登上CVPR 2019
-
-https://mp.weixin.qq.com/s/CXDzPSSyObPHYc40YictKQ
-
-CVPR 2019 神奇的超分辨率算法DPSR：应对图像模糊降质
 
 # RBM & DBN & Deep Autoencoder
 

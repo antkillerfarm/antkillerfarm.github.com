@@ -182,6 +182,10 @@ https://www.zhihu.com/question/332347498
 
 如何理解在各类NLP或CTR预估模型中，将embedding求平均这一做法的物理意义？
 
+https://mp.weixin.qq.com/s/F2DAMKXbc4MI3iaayljxtQ
+
+Deep FM详解
+
 # Mask R-CNN
 
 Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的网络。它是何恺明2017年的新作。

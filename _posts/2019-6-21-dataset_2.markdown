@@ -156,6 +156,10 @@ https://mp.weixin.qq.com/s/W9KoEgbEkSNkxQIa92sRMg
 
 视频分类模型和数据集板块干货集锦
 
+https://mp.weixin.qq.com/s/xZVC3-OBVo5P7WW-Y9Pe8A
+
+LVIS：大规模细粒度词汇级标记数据集 ，出自FAIR ，连披萨里的菠萝粒都能完整标注
+
 ## 人脸/行为
 
 http://blog.csdn.net/wangkr111/article/details/44514097
