@@ -273,3 +273,7 @@ GAN训练的小技巧
 https://zhuanlan.zhihu.com/p/79080156
 
 基于GAN的高分辨率图像合成方法介绍
+
+https://mp.weixin.qq.com/s/pEm_rLZHt9ZZER16gTBp9g
+
+Lifelong GAN：基于持续学习的条件图像生成模型

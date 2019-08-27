@@ -6,6 +6,26 @@ category: Attention
 
 # Attention进阶（续）
 
+https://mp.weixin.qq.com/s/C4f0N_bVWU9YPY34t-HAEA
+
+UNC&Adobe提出模块化注意力模型MAttNet，解决指示表达的理解问题
+
+https://mp.weixin.qq.com/s/V3brXuey7Gear0f_KAdq2A
+
+基于注意力机制的交易上下文感知推荐，悉尼科技大学和电子科技大学最新工作
+
+http://mp.weixin.qq.com/s/Bt6EMD4opHCnRoHKYitsUA
+
+结合人类视觉注意力进行图像分类
+
+https://mp.weixin.qq.com/s/POYTh4Jf7HttxoLhrHZQhw
+
+基于双向注意力机制视觉问答pyTorch实现
+
+https://mp.weixin.qq.com/s/2gxp7A38epQWoy7wK8Nl6A
+
+谷歌翻译最新突破，“关注机制”让机器读懂词与词的联系
+
 https://zhuanlan.zhihu.com/p/25928551
 
 用深度学习（CNN RNN Attention）解决大规模文本分类问题-综述和实践

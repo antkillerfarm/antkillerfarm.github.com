@@ -4,7 +4,25 @@ title:  Attention（三）——BERT
 category: Attention 
 ---
 
-# BERT（续）
+# BERT
+
+论文：
+
+《BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding》
+
+代码：
+
+https://github.com/google-research/bert
+
+BERT算的上是Google暴力美学的新作了。如果用家用显卡GTX 1080Ti的话，大概需要几个月的训练时间。幸好Google已经提供了预训练的模型：
+
+https://github.com/google-research/bert/blob/master/multilingual.md
+
+这里有一个使用预训练模型的参考代码：
+
+https://github.com/macanv/BERT-BiLSMT-CRF-NER
+
+![](/images/img2/BERT.png)
 
 ## ELMo
 
@@ -377,23 +395,3 @@ https://mp.weixin.qq.com/s/Yq3S4WrsQRQC06GvRgGjTQ
 https://mp.weixin.qq.com/s/MJ1578NdTKbjU-j3Uuo9Ww
 
 基于文档级问答任务的新注意力模型
-
-https://mp.weixin.qq.com/s/C4f0N_bVWU9YPY34t-HAEA
-
-UNC&Adobe提出模块化注意力模型MAttNet，解决指示表达的理解问题
-
-https://mp.weixin.qq.com/s/V3brXuey7Gear0f_KAdq2A
-
-基于注意力机制的交易上下文感知推荐，悉尼科技大学和电子科技大学最新工作
-
-http://mp.weixin.qq.com/s/Bt6EMD4opHCnRoHKYitsUA
-
-结合人类视觉注意力进行图像分类
-
-https://mp.weixin.qq.com/s/POYTh4Jf7HttxoLhrHZQhw
-
-基于双向注意力机制视觉问答pyTorch实现
-
-https://mp.weixin.qq.com/s/2gxp7A38epQWoy7wK8Nl6A
-
-谷歌翻译最新突破，“关注机制”让机器读懂词与词的联系

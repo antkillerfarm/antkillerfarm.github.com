@@ -306,22 +306,6 @@ https://mp.weixin.qq.com/s/Xxk6n6r0lSuybjKlwzLAnw
 
 TransformerXL：因为XL，所以更牛
 
-# BERT
+https://mp.weixin.qq.com/s/o__YU5vlfKi4HGytlug3og
 
-论文：
-
-《BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding》
-
-代码：
-
-https://github.com/google-research/bert
-
-BERT算的上是Google暴力美学的新作了。如果用家用显卡GTX 1080Ti的话，大概需要几个月的训练时间。幸好Google已经提供了预训练的模型：
-
-https://github.com/google-research/bert/blob/master/multilingual.md
-
-这里有一个使用预训练模型的参考代码：
-
-https://github.com/macanv/BERT-BiLSMT-CRF-NER
-
-![](/images/img2/BERT.png)
+从头开始了解Transformer

@@ -233,3 +233,7 @@ https://mp.weixin.qq.com/s/ueAIT-oAQQPtaPkljOmTwg
 https://mp.weixin.qq.com/s/ePh_fdgLBXKujYY6KGESrA
 
 你需要知道的10种行人属性
+
+https://mp.weixin.qq.com/s/oXM9Stb65WjqlY4GGAAyHw
+
+北邮提出高阶注意力模型，大幅改进行人重识别SOTA精度

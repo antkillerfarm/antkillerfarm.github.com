@@ -214,6 +214,12 @@ Philox原作者官网：
 
 http://www.thesalmons.org/john/random123/
 
+Philox算法的实现一般以philox_4x32_10的形式命名，它表明算法一次能生成4个32位的无符号数，10表示运算迭代的次数。
+
+官方的代码由于要考虑各种兼容性，写的复杂无比，这里有一个精简版：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/Tool/Gcc/random/philox.c
+
 ----
 
 https://bashtage.github.io/randomgen/index.html

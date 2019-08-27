@@ -170,6 +170,10 @@ https://mp.weixin.qq.com/s/45JOopEwHoNtzF57SxZM1A
 
 医学图像分割（三）——肿瘤分割
 
+https://mp.weixin.qq.com/s/L1c30sTN1CSth_KdORzpVw
+
+用于医学图像分割的主动轮廓线学习模型
+
 # 可视化
 
 ![](/images/img2/data_visual.png)

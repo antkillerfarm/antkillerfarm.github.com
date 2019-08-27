@@ -285,7 +285,7 @@ Director::drawScene
 
 # QUIC
 
-Quic全称quick udp internet connection，“快速 UDP 互联网连接”，是由google提出的使用udp进行多路并发传输的协议。
+Quic全称quick udp internet connection，“快速UDP互联网连接”，是由google提出的使用udp进行多路并发传输的协议。
 
 Quic相比现在广泛应用的http2+tcp+tls协议有如下优势：
 

@@ -363,3 +363,7 @@ https://mp.weixin.qq.com/s/m5rUNy938cCNjD7L3J4h-Q
 https://mp.weixin.qq.com/s/LwBOK7J1tby4WecOiRoA6g
 
 告诉我我在哪？——目标级别的场景上下文预测
+
+https://zhuanlan.zhihu.com/p/79943361
+
+Matrix Nets: A New Deep Architecture论文阅读

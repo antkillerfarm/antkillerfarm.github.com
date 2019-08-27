@@ -372,6 +372,10 @@ https://mp.weixin.qq.com/s/HJzbMoCa7GenNm78sz7YAg
 
 全景分割是什么？
 
+https://mp.weixin.qq.com/s/PUHytS_nLKPjlrv8RYxo8A
+
+一文看懂实时语义分割
+
 # 显著性检测
 
 https://mp.weixin.qq.com/s/Mi62oqtXUT5If_Dj4KmVYA

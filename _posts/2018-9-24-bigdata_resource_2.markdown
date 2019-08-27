@@ -149,3 +149,7 @@ https://mp.weixin.qq.com/s/X3RVXKi40uEO7ra8mX_C-w
 https://mp.weixin.qq.com/s/q2XL-_XoRLL1xLzGmzlo6A
 
 分布式快照算法: Chandy-Lamport
+
+https://mp.weixin.qq.com/s/DBcGC1ViNlIda0u9pr7djQ
+
+统一Elasticsearch、MySQL、Hive的SQL查询引擎，我们把它开源了！
