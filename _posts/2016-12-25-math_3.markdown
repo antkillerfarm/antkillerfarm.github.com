@@ -220,6 +220,10 @@ Philox算法的实现一般以philox_4x32_10的形式命名，它表明算法一
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/Tool/Gcc/random/philox.c
 
+还有一个进阶版，增加了多线程并行生成、均匀分布变换、正态分布变换的功能：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/Tool/Gcc/random/philox_1.c
+
 ----
 
 https://bashtage.github.io/randomgen/index.html

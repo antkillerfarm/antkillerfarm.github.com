@@ -34,6 +34,10 @@ https://mp.weixin.qq.com/s/6eHmudo6EG47qBe7xwri6g
 
 ImageNet错误率小于4%，数据量依然不够，N-Shot Learning或是终极解决之道？
 
+https://mp.weixin.qq.com/s/06FWeGysBjU9wTMUx_eY0Q
+
+一文看懂自然语言处理中迁移学习的现状
+
 # 深度ISP
 
 ## 数据集

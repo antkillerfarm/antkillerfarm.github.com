@@ -30,6 +30,10 @@ https://mp.weixin.qq.com/s/0JX-zEQwkC_0Iq5ZBU6xsg
 
 级联卷积神经网络用于人脸检测
 
+https://mp.weixin.qq.com/s/09iDezt4pJ-7oO77juB2GQ
+
+快速准确的人脸检测、识别和验证新框架
+
 # RNN进阶
 
 ## IndRNN

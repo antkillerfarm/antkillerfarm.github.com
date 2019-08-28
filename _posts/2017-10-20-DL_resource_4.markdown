@@ -6,6 +6,50 @@ category: resource
 
 # DL参考资源
 
+## 面试
+
+https://mp.weixin.qq.com/s/U5hlr69m_9Znwjkj3Yl4Hg
+
+《深度学习500问》一份超全深度学习资料，面试必备！
+
+https://www.zhihu.com/question/41233373
+
+如果你是面试官，你怎么去判断一个面试者的深度学习水平？
+
+https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
+
+20万、50万、100万的算法工程师，到底有什么区别？
+
+https://www.zhihu.com/question/56676679/answer/151505274
+
+机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
+
+https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
+
+面试官是如何看出你机器学习水平的？
+
+https://mp.weixin.qq.com/s?__biz=MzI3NTA0MzM1OQ==&mid=2651615534&idx=1&sn=00ecd7dc1d8472c070e720a1b63f04c4
+
+我如何考察面试者的机器学习水平
+
+https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
+
+谷歌等巨头机器学习面试题：从逻辑回归到智力测验
+
+https://mp.weixin.qq.com/s/9ivDZXpPpLE3fuPgpNUyJA
+
+超全数据科学与机器学习面试指南
+
+https://mp.weixin.qq.com/s/qmdfLlTfQzT0QVq_SzEPUw
+
+机器学习和深度学习中值得弄清楚的一些问题
+
+https://mp.weixin.qq.com/s/JgSTOiWZ30mIR_uiXyU2PQ
+
+硅谷高级工程师告诉你：算法工程师必须要知道的面试技能雷达图
+
+## 参考
+
 https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650748834&idx=3&sn=805564d2d9956dff6bb888ccb61e9b7b
 
 看图聊天的骚操作，MIT开发精准到单词的语音-图像配对系统

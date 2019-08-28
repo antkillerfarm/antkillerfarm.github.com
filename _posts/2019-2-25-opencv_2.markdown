@@ -254,6 +254,10 @@ https://mp.weixin.qq.com/s/TDUlkl-_QWIcWKdbDGmhPw
 
 如何从OpenCV源码编译生成OpenCV-Python的SDK开发包
 
+https://mp.weixin.qq.com/s/r5NIEwU3lMpdyAmFw-VTAA
+
+OpenCV方块体识别解决方案
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。

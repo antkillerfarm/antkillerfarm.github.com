@@ -306,6 +306,10 @@ https://mp.weixin.qq.com/s/nX3LRXQzgfW-Wx1Dh-_brQ
 
 基于骨骼点轨迹的规律学习的异常检测
 
+https://mp.weixin.qq.com/s/d-VKoQ6FG8myyCHrFlQAYw
+
+Tensorflow Lite人体姿势跟踪功能上线：基于PosNet的实时人体姿态估计
+
 # Capsule
 
 https://github.com/freefuiiismyname/capsule-mrc

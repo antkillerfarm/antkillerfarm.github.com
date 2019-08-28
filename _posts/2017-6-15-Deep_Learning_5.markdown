@@ -124,6 +124,10 @@ https://mp.weixin.qq.com/s/v1-mLhmbp5MoRR824tdPDw
 
 玩转词向量：用fastText预训练向量做个智能小程序
 
+https://mp.weixin.qq.com/s/LLrq1F2uEC2xEWZrd9uijA
+
+一行代码自动调参，支持模型压缩指定大小，Facebook升级FastText
+
 ## RNNLM
 
 RNNLM是Mikolov早期提出的文本分类的工具。（其实就是他的博士毕业论文）

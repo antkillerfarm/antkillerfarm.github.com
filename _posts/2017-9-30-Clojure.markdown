@@ -290,6 +290,16 @@ Ubuntu： Ctrl + Shift + I
 
 filesize：在底部状态栏显示当前文件大小，点击后还可以看到详细创建、修改时间
 
+## 新版的空格显示问题
+
+自2019.6之后，新版VS code在新版Ubuntu的默认显示总是很诡异，空格的宽度很小，总让人怀疑是否有空格。
+
+解决办法：
+
+首选项->设置->用户->Editor: Font Family
+
+Consolas,'Courier New',monospace
+
 ## 参考
 
 https://blog.csdn.net/GossipHHH/article/details/78132398

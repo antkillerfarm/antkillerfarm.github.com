@@ -378,6 +378,10 @@ https://www.zhihu.com/question/303070254
 
 PyTorch中在反向传播前为什么要手动将梯度清零？
 
+https://mp.weixin.qq.com/s/HQnI8rzPvZN6Q_5c8d1nVQ
+
+唯快不破：基于Apex的混合精度加速
+
 # 超算
 
 ![](/images/img3/power.aug.gif)

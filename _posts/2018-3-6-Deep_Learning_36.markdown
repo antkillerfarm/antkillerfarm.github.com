@@ -190,6 +190,10 @@ https://zhuanlan.zhihu.com/p/79900211
 
 通过Embedding和Mapping方法实现跨领域推荐
 
+https://mp.weixin.qq.com/s/f8WypYGcz3W56o6aG0NuoA
+
+为什么说阿里工程师最懂时尚？
+
 # Mask R-CNN
 
 Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的网络。它是何恺明2017年的新作。
