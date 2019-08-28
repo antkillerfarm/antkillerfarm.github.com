@@ -90,10 +90,6 @@ https://mp.weixin.qq.com/s/-3Gmmk28anznxtg1TWrluw
 
 Parris：机器学习算法自动化训练工具
 
-https://mp.weixin.qq.com/s/5ScRIl2MHNGaUyIEJJKnKw
-
-DeepMind开源强化学习研究环境Control Suite
-
 https://mp.weixin.qq.com/s/9-svsjeSFyUeM8IYphSsgw
 
 Darkon：可更好理解深度学习模型的开源工具包
@@ -230,14 +226,6 @@ https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750181&idx=2&sn=227bdb
 
 一个基于PyTorch的目标检测工具箱，商汤联合港中文开源mmdetection
 
-https://mp.weixin.qq.com/s/GTjNToprM2OO7uzSRQXkHw
-
-DeepMind开源强化学习库TRFL，关键算法可编写RL智能体
-
-https://mp.weixin.qq.com/s/PLFxehTAXcehzIrIMRfVpA
-
-强化学习的基石：DeepMind开源框架TRFL
-
 https://mp.weixin.qq.com/s/jKIo1SnrbLyPpFhgX--7mg
 
 谷歌推出“流体标注”AI辅助工具，图像标注速度提升3倍！
@@ -282,10 +270,6 @@ https://mp.weixin.qq.com/s/8rvpdh8mTclYQ_RjwG5-Nw
 
 阿里开源大规模分布式图学习框架：专为Graph嵌入，无缝对接TF/PyTorch
 
-https://mp.weixin.qq.com/s/ew7vmvskp_q4aM7cJM-CXg
-
-夺魁NeurIPS 2018强化学习大赛，百度正式发布RL模型库和算法框架PARL
-
 https://mp.weixin.qq.com/s/FRgUbvE8xzxrMZ_AtCheMQ
 
 南京航空航天大学开源ALiPy：用于主动学习的Python工具包
@@ -298,17 +282,9 @@ https://mp.weixin.qq.com/s/NJujC9QQtNF27IonW5lI6Q
 
 Facebook开源增强版LASER库，包含93种语言工具包
 
-https://mp.weixin.qq.com/s/ApP0zNuG5OP_-HzJC1v95Q
-
-谷歌发布开源Dopamine 2.0，让强化学习变得更灵活
-
 https://mp.weixin.qq.com/s/sXAntMlz3eg5RmYVSy0i4A
 
 一键免费自动AI抠图，效果连PS大哥也点赞！
-
-https://github.com/danaugrs/huskarl
-
-基于TF2.0的深度强化学习平台：Huskarl
 
 https://mp.weixin.qq.com/s/QNk3vf8WWqSPNN-61W64zQ
 
@@ -317,10 +293,6 @@ https://mp.weixin.qq.com/s/QNk3vf8WWqSPNN-61W64zQ
 https://mp.weixin.qq.com/s/V8VoyMqVvjblH358ozcWEg
 
 face.evoLVe：高性能人脸识别开源库
-
-https://mp.weixin.qq.com/s/BhTX4KQnLxUQLvPUfY3q6Q
-
-物理实验成本为零！南大LAMDA开源虚拟RL训练环境
 
 https://mp.weixin.qq.com/s/TRfXVO9-DYHCqP49nPWMtw
 

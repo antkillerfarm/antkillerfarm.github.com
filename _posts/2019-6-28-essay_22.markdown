@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 高考复读, 阿波罗50年, 长安十二时辰
+title: 高考复读, 阿波罗50年, 上古软件开发, 长安十二时辰
 category: essay 
 ---
 
@@ -40,10 +40,6 @@ https://mp.weixin.qq.com/s/QtvKdwbuzUJICjdKbcPIlg
 
 登月究竟是真是假？
 
-https://mp.weixin.qq.com/s/ksAz2w5F7GF5TGJtF13OLA
-
-50年前的程序员们，拯救了阿波罗号登月飞船
-
 https://view.inews.qq.com/a/TEC201907170006770C
 
 别误会，那个经典的月球脚印不是阿姆斯特朗的（巴兹·奥尔德林）
@@ -51,14 +47,6 @@ https://view.inews.qq.com/a/TEC201907170006770C
 https://mp.weixin.qq.com/s/OdMaaP_gE1rR_rd14LfA9w
 
 战争与登月的渊源
-
-https://github.com/chrislgarry/Apollo-11
-
-Apollo 11登月代码成Github热度第一
-
-https://mp.weixin.qq.com/s/0WAXiveeT3BPyowya0y2Ag
-
-揭秘阿波罗11号大脑：人类的一大步，也是机器的一大步！
 
 https://mp.weixin.qq.com/s/YRJpHvlEulfBFm8HpBYBZQ
 
@@ -85,6 +73,24 @@ https://mp.weixin.qq.com/s/d6nmsH10qchY1pP8CibiBA
 https://mp.weixin.qq.com/s/-KHsG9lZknY952U_LTV7qg
 
 天气太热了，我们去太阳系度假吧
+
+# 上古软件开发
+
+https://github.com/chrislgarry/Apollo-11
+
+Apollo 11登月代码成Github热度第一
+
+https://mp.weixin.qq.com/s/0WAXiveeT3BPyowya0y2Ag
+
+揭秘阿波罗11号大脑：人类的一大步，也是机器的一大步！
+
+https://mp.weixin.qq.com/s/5aezQzLIqNwJBEYR62-TQg
+
+我在1969年写代码
+
+https://mp.weixin.qq.com/s/ksAz2w5F7GF5TGJtF13OLA
+
+50年前的程序员们，拯救了阿波罗号登月飞船
 
 # 长安十二时辰
 

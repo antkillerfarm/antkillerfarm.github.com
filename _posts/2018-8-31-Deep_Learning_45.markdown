@@ -371,15 +371,3 @@ https://mp.weixin.qq.com/s/rllQLPPYxxLCK9-dgOjLDg
 https://mp.weixin.qq.com/s/AV8fD5Vf6uzhLeW9nfMASg
 
 一文详解随机神经网络结构搜索(SNAS)
-
-https://mp.weixin.qq.com/s/s10z5pkYf5Sha0V58T8fBw
-
-单路径NAS: 在四小时内设计出给定硬件内最有效的网
-
-https://www.zhihu.com/question/339002300
-
-One-Shot 神经网络搜索(NAS)的searching阶段到底在做什么？
-
-https://mp.weixin.qq.com/s/323RA6UtnyTySoXVXcJ2vA
-
-华人团队打造：AutoML + GAN = AutoGAN！AI设计GAN模型比人类更好

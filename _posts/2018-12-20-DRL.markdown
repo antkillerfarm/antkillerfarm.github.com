@@ -198,6 +198,44 @@ https://www.cnblogs.com/steven-yang/tag/博弈论/
 
 一个博弈论的专栏
 
+# 工具/框架
+
+https://mp.weixin.qq.com/s/5ScRIl2MHNGaUyIEJJKnKw
+
+DeepMind开源强化学习研究环境Control Suite
+
+https://mp.weixin.qq.com/s/GTjNToprM2OO7uzSRQXkHw
+
+DeepMind开源强化学习库TRFL，关键算法可编写RL智能体
+
+https://mp.weixin.qq.com/s/PLFxehTAXcehzIrIMRfVpA
+
+强化学习的基石：DeepMind开源框架TRFL
+
+https://mp.weixin.qq.com/s/ew7vmvskp_q4aM7cJM-CXg
+
+夺魁NeurIPS 2018强化学习大赛，百度正式发布RL模型库和算法框架PARL
+
+https://github.com/danaugrs/huskarl
+
+基于TF2.0的深度强化学习平台：Huskarl
+
+https://mp.weixin.qq.com/s/ApP0zNuG5OP_-HzJC1v95Q
+
+谷歌发布开源Dopamine 2.0，让强化学习变得更灵活
+
+https://mp.weixin.qq.com/s/Hod37LQ-eEe0EVtLfyXLGQ
+
+DeepMind重磅开源强化学习框架！覆盖28款游戏，24多个算法(OpenSpiel)
+
+https://zhuanlan.zhihu.com/p/68462431
+
+谷歌开源RL足球环境
+
+https://mp.weixin.qq.com/s/BhTX4KQnLxUQLvPUfY3q6Q
+
+物理实验成本为零！南大LAMDA开源虚拟RL训练环境
+
 # 概述
 
 ![](/images/img2/RL_intro.png)
@@ -245,7 +283,7 @@ https://www.zhihu.com/question/316626294
 
 https://www.zhihu.com/question/49787932
 
-RL两大类算法的本质区别？（Policy Gradient 和 Q-Learning)
+RL两大类算法的本质区别？（Policy Gradient和Q-Learning)
 
 ## 参考
 
@@ -264,39 +302,3 @@ https://mp.weixin.qq.com/s/K82PlSZ5TDWHJzlEJrjGlg
 http://mp.weixin.qq.com/s/lLPRwInF5qaw7ewYHOpPyw
 
 深度强化学习资料
-
-http://lamda.nju.edu.cn/yangjw/project/drlintro.html
-
-深度强化学习初探
-
-https://zhuanlan.zhihu.com/p/21498750
-
-深度强化学习导引
-
-https://mp.weixin.qq.com/s/RnUWHa6QzgJbE_XqLeAQmg
-
-深度强化学习，决策与控制
-
-https://mp.weixin.qq.com/s/SckTPgEw7KWmfKXWriNIRg
-
-浅谈强化学习的方法及学习路线
-
-https://mp.weixin.qq.com/s/-JHHOQPB6pKVuge64NkMuQ
-
-DeepMind主攻的深度强化学习3大核心算法及7大挑战
-
-https://mp.weixin.qq.com/s/2SOHQElaYbplse3QqG9tYw
-
-强化学习介绍
-
-https://mp.weixin.qq.com/s/R30quVGK0TgjerLpiIK9eg
-
-从算法到训练，综述强化学习实现技巧与调试经验
-
-https://www.zhihu.com/question/49230922
-
-强化学习（reinforcement learning)有什么好的开源项目、网站、文章推荐一下？
-
-https://zhuanlan.zhihu.com/p/75913329
-
-深度强化学习简介

@@ -240,6 +240,12 @@ Linux中的pushd和popd
 
 `rename 's/\.pgf/\.tex/' *`
 
+## 复制和粘贴
+
+复制：Ctrl+Shift+C
+
+粘贴：Ctrl+Shift+V
+
 ## 参考
 
 https://blog.csdn.net/iot_flower/article/details/69055590

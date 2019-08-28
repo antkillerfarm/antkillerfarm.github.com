@@ -222,6 +222,10 @@ https://mp.weixin.qq.com/s/feJKRqYJTVEIxl6jvjevAg
 
 咱们从头到尾说一次Java的垃圾回收
 
+https://mp.weixin.qq.com/s/9xGsz5TpTSN0LxeOdNV8zA
+
+一文看懂JVM内存布局及GC原理
+
 # Javascript（续）
 
 ### Step3:延迟动画

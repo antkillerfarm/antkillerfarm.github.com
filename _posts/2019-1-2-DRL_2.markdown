@@ -4,6 +4,46 @@ title:  深度强化学习（二）——Deep Q-learning Network, DQN进化史
 category: RL 
 ---
 
+# 概述
+
+## 参考（续）
+
+http://lamda.nju.edu.cn/yangjw/project/drlintro.html
+
+深度强化学习初探
+
+https://zhuanlan.zhihu.com/p/21498750
+
+深度强化学习导引
+
+https://mp.weixin.qq.com/s/RnUWHa6QzgJbE_XqLeAQmg
+
+深度强化学习，决策与控制
+
+https://mp.weixin.qq.com/s/SckTPgEw7KWmfKXWriNIRg
+
+浅谈强化学习的方法及学习路线
+
+https://mp.weixin.qq.com/s/-JHHOQPB6pKVuge64NkMuQ
+
+DeepMind主攻的深度强化学习3大核心算法及7大挑战
+
+https://mp.weixin.qq.com/s/2SOHQElaYbplse3QqG9tYw
+
+强化学习介绍
+
+https://mp.weixin.qq.com/s/R30quVGK0TgjerLpiIK9eg
+
+从算法到训练，综述强化学习实现技巧与调试经验
+
+https://www.zhihu.com/question/49230922
+
+强化学习（reinforcement learning)有什么好的开源项目、网站、文章推荐一下？
+
+https://zhuanlan.zhihu.com/p/75913329
+
+深度强化学习简介
+
 # DRL和Robotics
 
 虽然，DRL似乎生来就是为了Robotics，然而现实中的无人系统，目前基本还是使用传统的控制方法。
@@ -257,45 +297,3 @@ DeepMind提出Rainbow：整合DQN算法中的六种变体
 https://github.com/Curt-Park/rainbow-is-all-you-need
 
 手把手教你从DQN到Rainbow
-
-# DDPG
-
-https://mp.weixin.qq.com/s/dgLJrn3omUKMqmqTIEcoyg
-
-Tensorflow实现DDPG
-
-https://github.com/jinfagang/rl_atari_pytorch
-
-ReinforcementLearning Learn Play Atari Using DDPG and LSTM.
-
-https://zhuanlan.zhihu.com/p/65931777
-
-强化学习-基于pytorch的DDPG实现
-
-https://mp.weixin.qq.com/s/p2jF2Awmgeem-XGCkix-Lg
-
-深度确定性策略梯度DDPG详解
-
-https://mp.weixin.qq.com/s/_dskX5U8gHAEl6aToBvQvg
-
-从Q学习到DDPG，一文简述多种强化学习算法
-
-https://www.zhihu.com/question/323420831
-
-强化学习中A3C/DDPG/DPPO哪个效果更好？
-
-# reward modeling
-
-![](/images/img2/reward_modeling.jpg)
-
-训练一个奖励模型，其中包含来自用户的反馈，从而捕捉他们的意图。与此同时，我们通过强化学习训练一个策略，使奖励模型的奖励最大化。换句话说，我们把学习做什么(奖励模型)和学习怎么做(策略)区分开来。
-
-参考：
-
-https://mp.weixin.qq.com/s/4yGQtHtMqWlaB7MAsr8T_g
-
-DeepMind重磅论文：通过奖励模型，让AI按照人类意图行事
-
-https://mp.weixin.qq.com/s/TIWnnCmVZnFQNH9Fig5aTw
-
-DeepMind发布新奖励机制：让智能体不再“碰瓷”

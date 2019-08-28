@@ -240,10 +240,6 @@ https://mp.weixin.qq.com/s/a3zu7nvy0itOvzvgOlf01Q
 
 搜狗开源机器阅读理解工具箱
 
-https://zhuanlan.zhihu.com/p/68462431
-
-谷歌开源RL足球环境
-
 https://mp.weixin.qq.com/s/cyTHnDGdMZvhxg7hUmuYZw
 
 训练速度提升超3倍！斯坦福推出全新深度学习并行计算框架FlexFlow
