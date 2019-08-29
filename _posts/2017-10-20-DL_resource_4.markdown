@@ -277,3 +277,7 @@ https://mp.weixin.qq.com/s/Lx1mCVtuFKkeuP_ovFJopg
 https://mp.weixin.qq.com/s/RLe5E7rjqbKWxkE4Bpe7uw
 
 26秒单GPU训练CIFAR10，Jeff Dean也点赞的深度学习优化技巧
+
+https://mp.weixin.qq.com/s/Enc_bG3bL04ZCUDUTje75w
+
+DeepMind提图像生成的递归神经网络DRAW，158行Python代码复现

@@ -274,6 +274,10 @@ https://mp.weixin.qq.com/s/YL08krIuf0WOz8KsoBYhew
 
 25个视频神同步，还能给视频声音移花接木，谷歌开源最新自监督算法
 
+https://mp.weixin.qq.com/s/THUjd-wXI6_57mdw4XfYUQ
+
+商汤-港中文MMLab开源图像视频超分辨率工具箱MMSR
+
 # 多模态学习
 
 https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw

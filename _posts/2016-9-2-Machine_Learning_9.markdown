@@ -227,6 +227,10 @@ https://mp.weixin.qq.com/s/oAvNzxENTfaxUkSRypCo1g
 
 K-Means算法的10个有趣用例
 
+https://zhuanlan.zhihu.com/p/45408671
+
+K-Means小谈
+
 ## 聚类结果的评价
 
 可考虑用以下几个指标来评价聚类效果：

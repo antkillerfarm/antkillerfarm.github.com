@@ -198,6 +198,10 @@ https://mp.weixin.qq.com/s/t8HKBn2NKzEkzyZwR4svaA
 
 Exact-k：阿里工程师找到了组合推荐的秘密！
 
+https://zhuanlan.zhihu.com/p/76413089
+
+电商多目标优化小结
+
 # Mask R-CNN
 
 Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的网络。它是何恺明2017年的新作。

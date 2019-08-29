@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（十三）——最速降线, 泛函 & 变分, 双曲函数和悬链线, Gabriel's Horn, 20世纪10大算法
+title:  数学狂想曲（十三）——最速降线, 泛函 & 变分, 软件滤波算法
 category: math 
 ---
 
@@ -122,85 +122,99 @@ https://zhuanlan.zhihu.com/p/41810184
 
 变分法理解2——基本方法
 
-# 双曲函数和悬链线
+# 软件滤波算法
 
-悬链线 (Catenary) 是一种曲线，因其与两端固定的绳子在均匀引力作用下下垂相似而得名。适当选择坐标系后，悬链线的方程是一个双曲余弦函数。
+## 限幅滤波法
 
-悬链线背后的故事和推导，百度百科已经比较详细了，不再赘述。参见：
+方法：根据经验判断，确定两次采样允许的最大偏差值（设为A），每次检测到新值时判断：如果本次值与上次值之差<=A，则本次值有效，如果本次值与上次值之差>A，则本次值有效，放弃本次值，用上次值代替本次值。
 
-http://baike.baidu.com/view/45656.htm
+优点：能有效克服因偶然要素惹起的脉冲干扰。
 
-然而对于实际工程中的悬索结构，由于悬索自身的重量较其所提拉的跨度结构要轻得多，在力学简单计算中可以忽略，结构受力模式成为在水平长度范围内的均布荷载。这种荷载模式与拱结构相同，因此可以推导出在该荷载模式下的悬垂线为一抛物线，线型与拱结构相同，但内力为拉力。
+缺点：无法抑制那种周期性的干扰，平滑度差。
 
-在工程中完全按照悬链线进行设计的结构，恐怕只有高压输电线了。由于不承担任何自重以外的附加荷载，输电线的数学曲线会与悬链线完全一致。
+## 中位值滤波法
 
-双曲函数的性质，参见：
+方法：连续采样N次（N取奇数），把N次采样值按大小陈列，取中位值（第$$\frac{(N-1)}{2}$$个值）为本次有效值。
 
-https://zhuanlan.zhihu.com/p/20042215
+优点：能有效克服因偶然要素惹起的波动干扰，对变化缓慢的被测参数有良好的滤波效果。
 
-可能是最好的讲解双曲函数的文章
+缺点：对快速变化的参数不宜。
 
-![](/images/article/trigonometric.jpg)
+## 算术平均滤波法
 
-![](/images/article/hyperbolic.jpg)
+方法：连续取N个采样值进行算术平均运算，N值较大时：信号平滑度较高，但灵敏度较低；N值较小时：信号平滑度较低，但灵敏度较高。
 
-# Gabriel's Horn
+优点：适用于对普通具有随机干扰的信号进行滤波，这样信号的特点是有一个平均值，信号在某一数值范围附近上下波动。
 
-Gabriel's Horn，又名托里拆利小号（Torricelli's trumpet），是数学史上非常经典的模型。它最早由Evangelista Torricelli提出，故名。
+缺点：对于测量速度较慢或要求数据计算速度较快的实时控制不适用，比较浪费RAM 。
 
->注：Evangelista Torricelli，1608~1647，意大利物理学家和数学家。主要研究气压、水压，提出了托里拆利原理，并发明了气压计。
+## 递推平均滤波法（又称滑动平均滤波法）
 
-![](/images/article/GabrielHorn.png)
+方法：把连续取的N个采样值看成一个队列，队列的长度固定为N，每次采样到一个新数据放入队尾，并扔掉原来队首的一次数据(先进先出) 。把队列中的N个数据进行算术平均运算，就可获得新的滤波结果。
 
-上图是Gabriel's Horn的图像，它由$$y=\frac{1}{x}(x>1)$$绕x轴旋转得到。Torricelli发现Gabriel's Horn是个**体积有限，而表面积无限**的形状。
+优点：对周期性干扰有良好的抑制效用，平滑度高，适用于高频振荡系统。
 
-$$V=\pi\int\limits_1^a\left(\frac{1}{x}\right)^2\mathrm{d}x=\pi\left(1-\frac{1}{a}\right)$$
+缺点：灵敏度低，对偶然出现的脉冲性干扰的抑制效用较差，不易消弭由于脉冲干扰所引起的采样值偏差，不适用于脉冲干扰比较严重的场合，比较浪费RAM。
 
-$$\lim_{a\to\infty}V=\lim_{a\to\infty}\pi\left(1-\frac{1}{a}\right)=\pi\cdot\lim_{a\to\infty}\left(1-\frac{1}{a}\right)=\pi$$
+## 中位值平均滤波法（又称防脉冲干扰平均滤波法）
 
-$$A=2\pi\int\limits_1^a {\frac{1}{x}}\sqrt{1+\left(-\frac{1}{x^2}\right)^2}\mathrm{d}x > 2\pi\int\limits_1^a \frac{\mathrm{d}x}{x}=2\pi\ln(a)$$
+方法：相当于“中位值滤波法”+“算术平均滤波法”，连续采样N个数据，去掉一个最大值和一个最小值，然后计算N-2个数据的算术平均值。。
 
-$$\lim_{a\to\infty}A\ge\lim_{a\to\infty}2\pi\ln(a)=\infty$$
+优点：融合了两种滤波法的优点，对于偶然出现的脉冲性干扰，可消弭由于脉冲干扰所惹起的采样值偏差。
 
-但是反过来的情况，即表面积有限，而体积无限的情况，也就是所谓的Gabriel's horn逆现象，是不存在的。——实际上，众所周知的是表面积一定的形状中，球形体积最大。
+缺点：测量速度较慢，和算术平均滤波法一样，比较浪费RAM。
 
-Gabriel's horn现象不仅存在于表面积/体积中，也存在于长度/面积中，即所谓的无限长海岸线问题。对此的进一步研究，开拓了数学中的分形几何领域。
+## 限幅平均滤波法
 
-# 20世纪10大算法
+方法：相当于“限幅滤波法”+“递推平均滤波法”，每次采样到的新数据先进行限幅处理，再送入队列进行递推平均滤波处理。
 
-2000年，IEEE评选出20世纪10大算法。名单如下：
+优点：融合了两种滤波法的优点，对于偶然出现的脉冲性干扰，可消弭由于脉冲干扰所惹起的采样值偏差。
 
-1.[Metropolis Algorithm for Monte Carlo](http://en.wikipedia.org/wiki/Metropolis_Algorithm)
+缺点：比较浪费RAM。
 
-2.[Simplex Method for Linear Programming](http://en.wikipedia.org/wiki/Simplex_Method)
+## 一阶滞后滤波法
 
-3.[Krylov Subspace Iteration Methods](http://en.wikipedia.org/wiki/Krylov_subspace_methods)
+方法：取a=0~1，本次滤波结果=(1-a)*本次采样值+a*上次滤波结果。
 
-4.[The Decompositional Approach to Matrix Computations](http://en.wikipedia.org/wiki/Matrix_(mathematics)#Decomposition)
+优点：对周期性干扰具有良好的抑制造用，适用于波动频率较高的场合。
 
-5.[The Fortran Optimizing Compiler](http://en.wikipedia.org/wiki/Fortran#History)
+缺点：相位滞后，灵敏度低，滞后程度取决于a值大小，不能消弭滤波频率高于采样频率的1/2的干扰信号。
 
-6.[QR Algorithm for Computing Eigenvalues](http://en.wikipedia.org/wiki/QR_algorithm)
+## 加权递推平均滤波法
 
-7.[Quicksort Algorithm for Sorting](http://en.wikipedia.org/wiki/Quicksort)
+方法：这是对递推平均滤波法的改进，即不同时刻的数据加以不同的权，通常是，越接近现时刻的材料，权取得越大，给予新采样值的权系数越大，则灵敏度越高，但信号平滑度越低。
 
-8.[Fast Fourier Transform](http://en.wikipedia.org/wiki/Fast_Fourier_Transform)
+优点：适用于有较大纯滞后事件常数的对象和采样周期较短的系统。
 
-9.[Integer Relation Detection](http://en.wikipedia.org/wiki/Integer_relation_algorithm)
+缺点：对于纯滞后事件常数较小，采样周期较长，变化缓慢的信号，不能迅速反应系统当前所受干扰的严重程度，滤波效果差。
 
-10.[Fast Multipole Method](http://en.wikipedia.org/wiki/Fast_Multipole_Method)
+## 消抖滤波法
 
-详细内容参见：
+方法：设置一个滤波计数器，将每次采样值与当前有效值比较：如果采样值等于当前有效值，则计数器清零。如果采样值不等于当前有效值，则计数器+1，并判断计数器能否>=下限N(溢出)，如果计数器溢出，则将本次值交换当前有效值，并清计数器。
 
-http://www.uta.edu/faculty/rcli/TopTen/topten.pdf
+优点：对于变化缓慢的被测参数有较好的滤波效果，可避免在临界值附近控制器的反复开/关跳动或显示器上数值抖动。
 
-中文版本：
+缺点：对于快速变化的参数不宜，如果在计数器溢出的那一次采样到的值恰好是干扰值，则会将干扰值当作有效值导入系统。
 
-http://blog.csdn.net/v_JULY_v/article/details/6127953
+## 限幅消抖滤波法
 
-类似的，还有奥地利符号计算研究所（Research Institute for Symbolic Computation，简称RISC）的Christoph Koutschan博士，针对计算机科学家所做的调查，选出的最重要的32个算法：
+方法：相当于“限幅滤波法”+“消抖滤波法”，先限幅后消抖。
 
-https://mp.weixin.qq.com/s/AFTaowkCz1pfFzaMDen-RA
+优点：承继了“限幅”和“消抖”的优点，改进了“消抖滤波法”中的某些缺陷，避免将干扰值导入系统。
+
+缺点：对于快速变化的参数不宜。
+
+## IIR数字滤波
+
+方法：确定信号带宽，滤之。
+
+$$Y(n)=a_1*Y(n-1)+a_2*Y(n-2)+...+a_k*Y(n-k)+$$
+
+$$b_0*X(n)+b_1*X(n-1)+b_2*X(n-2)+...+b_k*X(n-k)$$
+
+优点：高通，低通，带通，带阻任意。design简单(用matlab）。
+
+缺点：运算量大。
 
 # 张量分析
 
@@ -209,39 +223,3 @@ https://mp.weixin.qq.com/s/AFTaowkCz1pfFzaMDen-RA
 《张量分析》，黄克智著。
 
 >注：黄克智，1927年生，固体力学家。江西中正大学本科+清华硕士+莫斯科大学博士（因应召回国，放弃博士学位）。清华大学工程力学系教授、工程力学研究所所长，中国科学院院士。断裂力学领域权威。
-
-# 拓扑学
-
-《Topopogy Without Tears》，University of New South Wales的Sidney A. Morris著。
-
-该书的中文版：
-
-http://www.topologywithouttears.net/topbookchinese.pdf
-
-# Lie Groups
-
-《State estimation for Robotics: A Matrix Lie Group Approach》
-
->Marius Sophus Lie，1842～1899，挪威数学家。University of Christiania博士（1871），University of Leipzig教授。当时德国的大学，一个系只有一个教授，所以这里的教授相当于现在的系主任或者院长。Lie接的是Felix Klein的班，后者跑到University of Göttingen当教授去了。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/33156814
-
-李群和李代数
-
-https://zhuanlan.zhihu.com/p/76959511
-
-李群和李代数（一）：刚体的三维运动
-
-https://zhuanlan.zhihu.com/p/77576417
-
-李群和李代数（二）：矩阵李群基础
-
-## Sophus
-
-Sophus是一个C++写的Lie Groups的库。显然，它得名自Marius Sophus Lie。
-
-代码：
-
-https://github.com/strasdat/Sophus

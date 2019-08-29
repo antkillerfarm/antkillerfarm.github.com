@@ -6,6 +6,14 @@ category: AI
 
 # TensorFlow
 
+https://mp.weixin.qq.com/s/MYBTWL3X_OhLZL6C4rISzw
+
+TensorFlow训练线性回归
+
+https://mp.weixin.qq.com/s/5QYlh6gV9IqdQfraK4DC8w
+
+10种深度学习算法的TensorFlow实现
+
 https://mp.weixin.qq.com/s/W1KP213Ngj-BNEyx-_nVyw
 
 利用TensorFlow实现卷积自编码器
@@ -353,10 +361,6 @@ https://mp.weixin.qq.com/s/8Hrq_z8s_5ms6Q_6OOaU-g
 https://mp.weixin.qq.com/s/rQ9eZosHOoDOXg9tAg4t6A
 
 tensorflow Object Detection API使用预训练模型mask r-cnn实现对象检测
-
-http://mp.weixin.qq.com/s/hpv6bzr-5VZet-UCHOCQLQ
-
-谷歌TFX：基于TensorFlow可大规模扩展的机器学习平台
 
 https://mp.weixin.qq.com/s/cPWXAI2TBv3_ssnWDFoQ4w
 

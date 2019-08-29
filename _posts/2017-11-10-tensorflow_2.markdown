@@ -318,6 +318,14 @@ https://zhuanlan.zhihu.com/p/77664408
 
 如何解决推荐系统工程难题——深度学习推荐模型线上serving？
 
+https://mp.weixin.qq.com/s/vqFRbsM9DGu8ikJ3VNp_-g
+
+TensorFlow Extended(TFX)：面向生产环境的机器学习
+
+http://mp.weixin.qq.com/s/hpv6bzr-5VZet-UCHOCQLQ
+
+谷歌TFX：基于TensorFlow可大规模扩展的机器学习平台
+
 ## op的C++实现
 
 有的时候为了将Tensorflow的op移植到其他平台，需要找到相应op的cpu实现。比如space_to_batch这个op，它的实现在：
@@ -363,33 +371,3 @@ https://mp.weixin.qq.com/s/vjpMr3TsF3Lui8Q0IstQxw
 https://mp.weixin.qq.com/s/-BblgnvPLuqpYM8PZ7PQCQ
 
 三行代码实时追踪你的手，只要有浏览器就够了
-
-## Eager Execution
-
-TensorFlow的Eager Execution可立即评估操作，无需构建图：操作会返回具体的值，而不是构建以后再运行的计算图。这也就是所谓的动态图计算的概念。
-
-参考：
-
-https://mp.weixin.qq.com/s/Yp2zE85VCx8q67YXvuw5qw
-
-TensorFlow引入了动态图机制Eager Execution
-
-https://github.com/ZhuanZhiCode/TensorFlow-Eager-Execution-Examples
-
-Eager Execution的代码示例
-
-https://github.com/madalinabuzau/tensorflow-eager-tutorials
-
-TensorFlow的动态图工具Eager怎么用？这是一篇极简教程
-
-https://mp.weixin.qq.com/s/Lvd4NfLg0Lzivb4BingV7w
-
-Tensorflow Eager Execution入门指南
-
-https://github.com/snowkylin/TensorFlow-cn
-
-简单粗暴TensorFlow Eager教程
-
-https://mp.weixin.qq.com/s/zz8XCykJ6jxbE5J4YwAkEA
-
-一招教你使用tf.keras和eager execution解决复杂问题

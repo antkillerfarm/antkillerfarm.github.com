@@ -111,7 +111,11 @@ $$\mathrm{B}(\boldsymbol\alpha) = \frac{\prod_{i=1}^K \Gamma(\alpha_i)}{\Gamma\l
 
 上面的图，实际上是个4维图，只不过用一个平面上的三角形代表实验结果的3维而已。这也是一种高维数据可视化的方法。
 
-多项分布有时也叫做Categorical Distribution。
+和多项分布类似的还有Categorical Distribution：
+
+- 将一个小球放入k个桶，记变量X为k个桶内的小球个数，所以是一个向量，并且是One-hot的形式，因为这个小球只能在一个桶里面，所以是服从Categorical分布；
+
+- 将n个小球放入k个桶，记变量X为k个桶内的小球个数，是一个向量，并且向量元素的和为n，所以是服从多项分布。
 
 参考：
 
@@ -122,6 +126,10 @@ LDA-math-认识Beta/Dirichlet分布
 http://www.cs.cmu.edu/~epxing/Class/10701-08s/recitation/dirichlet.pdf
 
 Dirichlet Distribution, Dirichlet Process and Dirichlet Process Mixture
+
+https://zhuanlan.zhihu.com/p/59550457
+
+Categorical Distribution
 
 ## 各种概率分布的关系
 
@@ -268,19 +276,3 @@ MCMC和Gibbs Sampling最早都是统计力学的概念，后来才被用于机�
 >注：陈希孺，1934～2005，数理统计学家。1956年毕业于武汉大学数学系，1997年当选为中国科学院院士。
 
 该书中关于频率统计学派和贝叶斯学派的争议，引起了我的注意。
-
-频率统计学派是所谓的正统派，由于其简单且便于理解的特点，多数入门级的数理统计学教程，一般都是按照该学派的思路写的。
-
-而贝叶斯学派可谓另辟蹊径，它和频率统计学派的差异，参见《机器学习（八）》。由于该派系的思想比较新颖，我一度以为它和频率统计学派的关系，就犹如相对论之于经典力学。
-
-然而，陈希孺院士告诉我们，两者各有优劣，尚未到一方决出胜负的阶段。比如，贝叶斯学派的先验估计，既是其成功的奥秘，也是其不成功的软肋。比如，对于“无信息先验分布”，目前尚处于“信则灵，不信则无”的境地。
-
-陈院士的观点是：**各取所长，为我所用**。
-
-近年来，贝叶斯学派的广泛应用，更多的原因在于计算机的计算能力大幅提升之后，由于随机样本获取成本的下降，导致了蒙特卡洛方法大行其道。
-
-参考：
-
-https://mp.weixin.qq.com/s/uFeyZ-6gFo2oOYKTnt2R9Q
-
-揭示贝叶斯公式应用中的认识误区

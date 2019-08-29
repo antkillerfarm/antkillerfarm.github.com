@@ -26,6 +26,42 @@ https://mp.weixin.qq.com/s/1lLrbi_Dtyq4ixMfR4pPnA
 
 线性卷积积分及其在图像增强和特效方面的应用
 
+# 拓扑学
+
+《Topopogy Without Tears》，University of New South Wales的Sidney A. Morris著。
+
+该书的中文版：
+
+http://www.topologywithouttears.net/topbookchinese.pdf
+
+# Lie Groups
+
+《State estimation for Robotics: A Matrix Lie Group Approach》
+
+>Marius Sophus Lie，1842～1899，挪威数学家。University of Christiania博士（1871），University of Leipzig教授。当时德国的大学，一个系只有一个教授，所以这里的教授相当于现在的系主任或者院长。Lie接的是Felix Klein的班，后者跑到University of Göttingen当教授去了。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/33156814
+
+李群和李代数
+
+https://zhuanlan.zhihu.com/p/76959511
+
+李群和李代数（一）：刚体的三维运动
+
+https://zhuanlan.zhihu.com/p/77576417
+
+李群和李代数（二）：矩阵李群基础
+
+## Sophus
+
+Sophus是一个C++写的Lie Groups的库。显然，它得名自Marius Sophus Lie。
+
+代码：
+
+https://github.com/strasdat/Sophus
+
 # 莫比乌斯反演
 
 http://blog.csdn.net/acdreamers/article/details/8542292
@@ -185,3 +221,7 @@ https://mp.weixin.qq.com/s/nHBczPlffhZrJy4G4oJ1Ag
 https://mp.weixin.qq.com/s/0dUlVC9I8qmv3f2BB0IFew
 
 强化学习介绍及自动驾驶汽车应用
+
+https://mp.weixin.qq.com/s/AI3i3ZLZ-fynavbeNAMKgA
+
+强化学习应用介绍，41页报告带你快速了解RL的最新应用价值

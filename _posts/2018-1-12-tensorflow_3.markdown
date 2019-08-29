@@ -6,6 +6,36 @@ category: AI
 
 # TensorFlow
 
+## Eager Execution
+
+TensorFlow的Eager Execution可立即评估操作，无需构建图：操作会返回具体的值，而不是构建以后再运行的计算图。这也就是所谓的动态图计算的概念。
+
+参考：
+
+https://mp.weixin.qq.com/s/Yp2zE85VCx8q67YXvuw5qw
+
+TensorFlow引入了动态图机制Eager Execution
+
+https://github.com/ZhuanZhiCode/TensorFlow-Eager-Execution-Examples
+
+Eager Execution的代码示例
+
+https://github.com/madalinabuzau/tensorflow-eager-tutorials
+
+TensorFlow的动态图工具Eager怎么用？这是一篇极简教程
+
+https://mp.weixin.qq.com/s/Lvd4NfLg0Lzivb4BingV7w
+
+Tensorflow Eager Execution入门指南
+
+https://github.com/snowkylin/TensorFlow-cn
+
+简单粗暴TensorFlow Eager教程
+
+https://mp.weixin.qq.com/s/zz8XCykJ6jxbE5J4YwAkEA
+
+一招教你使用tf.keras和eager execution解决复杂问题
+
 ## Estimator
 
 ![](/images/img2/tensorflow_programming_environment.png)
@@ -361,43 +391,3 @@ https://mp.weixin.qq.com/s/OmVAnkHV2aI4D4pMKyVjCQ
 https://mp.weixin.qq.com/s/YOyOR8fdaEKcydAywcc-HA
 
 如何使用TensorFlow API构建视频物体识别系统
-
-https://mp.weixin.qq.com/s/MYBTWL3X_OhLZL6C4rISzw
-
-TensorFlow训练线性回归
-
-https://mp.weixin.qq.com/s/5QYlh6gV9IqdQfraK4DC8w
-
-10种深度学习算法的TensorFlow实现
-
-https://zhuanlan.zhihu.com/p/28475975
-
-如何优雅地用TensorFlow预测时间序列：TFTS库详细教程
-
-https://mp.weixin.qq.com/s/zZCEOdNQsPovn_i-C57Z9g
-
-如何使用最流行框架Tensorflow进行时间序列分析？
-
-https://mp.weixin.qq.com/s/CqOo7Fu6t5-yJiYhzo03oQ
-
-利用TensorFlow和神经网络来处理文本分类问题
-
-https://mp.weixin.qq.com/s/VlvQmrS7Qi2qq6fTBXKTYw
-
-从零开始用TensorFlow搭建卷积神经网络
-
-https://mp.weixin.qq.com/s/hETnA81WlkMG3rftAHg9bw
-
-PyTorch和TensorFlow哪家强：九项对比读懂各自长项短板
-
-https://mp.weixin.qq.com/s/7R-Gvegnta9XBwIaSPBL_Q
-
-基于Tensorflow的验证码识别
-
-https://mp.weixin.qq.com/s/3QgtemxxsQmuNQVEdpiMwA
-
-如何做准确率达98%的交通标志识别系统？
-
-https://mp.weixin.qq.com/s/pSE2V8wD3_KHMI71kLTXng
-
-如何基于TensorFlow使用LSTM和CNN实现时序分类任务
