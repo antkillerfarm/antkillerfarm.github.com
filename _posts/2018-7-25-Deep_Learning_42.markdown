@@ -82,7 +82,7 @@ https://mp.weixin.qq.com/s/919VEvennHEG3iXKkMZoQQ
 
 不止是去噪---从去噪看AI ISP的趋势
 
-https://mp.weixin.qq.com/s/1HA6XKnWpqVd8k7IIfzB7w
+https://zhuanlan.zhihu.com/p/27902193
 
 利用卷积自编码器对图片进行降噪
 

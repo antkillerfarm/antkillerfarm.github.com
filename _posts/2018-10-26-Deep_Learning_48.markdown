@@ -409,3 +409,7 @@ BASNet，一种能关注边缘的显著性检测算法
 https://mp.weixin.qq.com/s/ntSH2aS4YHqrLaTAfWFLsQ
 
 可选择性与不变性：关注边界的显著性目标检测
+
+https://mp.weixin.qq.com/s/0T1QhiT_20BrerNcTjKreQ
+
+南开提出边缘引导的显著目标检测算法EGNet，刷新主流数据集所有评价指标

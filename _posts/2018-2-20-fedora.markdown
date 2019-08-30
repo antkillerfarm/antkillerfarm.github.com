@@ -246,6 +246,12 @@ Linux中的pushd和popd
 
 粘贴：Ctrl+Shift+V
 
+## 彩色字符
+
+https://mp.weixin.qq.com/s/DQzlfQXt4dV9PYwoVdomaw
+
+如何开发多彩动感的终端UI应用
+
 ## 参考
 
 https://blog.csdn.net/iot_flower/article/details/69055590

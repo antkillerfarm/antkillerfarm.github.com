@@ -134,6 +134,10 @@ https://mp.weixin.qq.com/s/JvtrGa0YiUmR6UA5wBQ-pQ
 
 图神经网络GNN最新理论进展和应用探索
 
+https://mp.weixin.qq.com/s/zQU47tjpTCPiLdEmUmZx3Q
+
+图卷积神经网络及其应用
+
 # 自动求导
 
 DL发展到现在，其基本运算单元早就不止CNN、RNN之类的简单模块了。针对新运算层出不穷的现状，各大DL框架基本都实现了自动求导的功能。
