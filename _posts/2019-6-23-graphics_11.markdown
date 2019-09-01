@@ -26,6 +26,10 @@ https://mp.weixin.qq.com/s/1lLrbi_Dtyq4ixMfR4pPnA
 
 线性卷积积分及其在图像增强和特效方面的应用
 
+https://blog.csdn.net/iverson_49/article/details/38160081
+
+薄板样条函数(Thin plate splines)的讨论与分析
+
 # 拓扑学
 
 《Topopogy Without Tears》，University of New South Wales的Sidney A. Morris著。
@@ -225,3 +229,7 @@ https://mp.weixin.qq.com/s/0dUlVC9I8qmv3f2BB0IFew
 https://mp.weixin.qq.com/s/AI3i3ZLZ-fynavbeNAMKgA
 
 强化学习应用介绍，41页报告带你快速了解RL的最新应用价值
+
+https://mp.weixin.qq.com/s/Dq4HsRg05bVMjvrsrxfOOQ
+
+从这篇YouTube论文，剖析强化学习在工业级场景推荐系统中的应用

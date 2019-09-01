@@ -284,6 +284,10 @@ https://mp.weixin.qq.com/s/zgKbG3r_B8d1qQHnrD2NCg
 
 特征工程宝典《Feature Engineering for Machine Learning》翻译及代码实现
 
+https://mp.weixin.qq.com/s/3Clq9ECs6M52Sg-_xMxJGw
+
+最核心的特征工程方法-分箱算法
+
 # 数据清洗
 
 https://mp.weixin.qq.com/s/YrCC8CmP6UKuCmSdF2K_3g

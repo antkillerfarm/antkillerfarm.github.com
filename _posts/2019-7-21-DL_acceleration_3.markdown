@@ -34,6 +34,10 @@ https://www.zhihu.com/question/264307400
 
 为什么很少人用FFT加速CNN卷积层的运算？
 
+https://zhuanlan.zhihu.com/p/80297169
+
+快速数论变换（NTT）及蝴蝶操作构造详解
+
 ## Strassen algorithm
 
 ![](/images/img3/Strassen.png)

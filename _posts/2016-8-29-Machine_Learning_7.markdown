@@ -180,6 +180,10 @@ https://mp.weixin.qq.com/s/UhckYnIVPCgkJZNeuba1YQ
 
 基于线性SVM的CIFAR-10图像集分类
 
+https://www.zhihu.com/question/31211585
+
+如何学习SVM（支持向量机）以及改进实现SVM算法程序？
+
 # 学习理论
 
 ## 偏差和方差

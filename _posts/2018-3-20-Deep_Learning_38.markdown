@@ -32,7 +32,11 @@ https://mp.weixin.qq.com/s/0JX-zEQwkC_0Iq5ZBU6xsg
 
 https://mp.weixin.qq.com/s/09iDezt4pJ-7oO77juB2GQ
 
-快速准确的人脸检测、识别和验证新框架
+快速准确的人脸检测、识别和验证新框架（DPSSD）
+
+https://mp.weixin.qq.com/s/45R7yxjPbm0wO4EW7RzXnQ
+
+LFFD：轻量级人脸检测器，不止是快
 
 # RNN进阶
 
