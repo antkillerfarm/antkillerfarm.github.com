@@ -90,7 +90,9 @@ $$J_{avR}(\theta)=\sum_s d^{\pi_\theta}(s)\sum_a\pi_\theta(s,a)R_s^a$$
 
 $$\Delta\theta=\alpha\nabla_\theta J(\theta)$$
 
+其中，
 
+$$\nabla_\theta J(\theta)=\begin{pmatrix} \frac{\partial J(\theta)}{\partial \theta_1} \\ \vdots \\ \frac{\partial J(\theta)}{\partial \theta_n} \end{pmatrix}$$
 
 ## 参考
 
