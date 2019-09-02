@@ -142,6 +142,10 @@ https://mp.weixin.qq.com/s/gE0jGuduKOQYqkTAuhC2Nw
 
 基于空间对齐的图卷积网络
 
+https://mp.weixin.qq.com/s/xJ05ctlYhyVy__6CaOm4WQ
+
+利用图Transformer实现基于知识图谱的文本生成
+
 # 自动求导
 
 DL发展到现在，其基本运算单元早就不止CNN、RNN之类的简单模块了。针对新运算层出不穷的现状，各大DL框架基本都实现了自动求导的功能。
@@ -336,6 +340,10 @@ https://mp.weixin.qq.com/s/b041h_hbHQYiXCiDHGaD5w
 https://zhuanlan.zhihu.com/p/77140176
 
 构建贝叶斯深度学习分类器
+
+https://mp.weixin.qq.com/s/4sDNUZiOiS6VH_oRSnW6HQ
+
+牛津大学YARIN GAL《贝叶斯深度学习》入门教程，336页ppt
 
 # 手势识别
 

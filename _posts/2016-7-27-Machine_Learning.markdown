@@ -160,6 +160,14 @@ $$x_{k+1}=x_k-t_kA_k\nabla f(x_k)$$
 | ![](/images/article/Convex.png) | ![](/images/article/non-Convex.png) | ![](/images/article/convex_function.png) |
 | Convex set | non-Convex set | convex function |
 
+某牛语录：
+
+>虽然Newton Method收敛快，只需要很少次的迭代，但是每一步迭代的计算量却比普通的Gradient Descent要大很多：Gradient Descent只要计算一个d维Gradient向量即可，Newton Method不仅要计算Hessian矩阵（$$d^2$$维），而且要对该矩阵求逆（或者是解线性方程组）——对于通常的dense矩阵，这是一个复杂度为$$O(d^3)$$的操作。
+
+>更严重的是，如果数据的维度非常高，且不说后面的求逆操作，即使Hessian矩阵本身的求解甚至存储都会出现问题。有时候碰到的情况是连Newton Method迭代一次的计算量都承担不起，所以在大规模机器学习或者general的大规模优化问题中，简单的一阶（只需要用到gradient信息）算法得到了更多的关注。
+
+>例如Interior Point Method的发明被认为是Optimization中的重要里程碑，这一类的方法能够保证在多项式次迭代内收敛。但是在机器学习中，特别是现在的所谓“大数据”的趋势下，这类算法却没法工作，一方面由于机器学习中所处理的数据通常维度非常高，从而相应的优化问题的变量个数变得很巨大，传统的方法虽然保证多项式迭代收敛，但是其中每一步迭代的计算代价却是随着变量个数的平方甚至三次方增长，结果是连算法的一次迭代都无法在可接受的时间内完成。
+
 参考：
 
 http://freemind.pluskid.org/machine-learning/gradient-descent-wolfe-s-condition-and-logistic-regression/
@@ -253,31 +261,3 @@ $$X=\begin{bmatrix}
 则：
 
 $$\theta=(X^TX)^{-1}X^T\vec{y}$$
-
-这种解方程的算法，实际上就是通常所说的最小二乘法（Least squares）。
-
-优点：解是精确解，而不是近似解。不是迭代算法，程序实现简单。不在意$$X$$特征的scale。比如，特征向量$$X=\{x_1, x_2\}$$, 其中$$x_1$$的range为1~2000，而$$x_2$$的range为1~4，可以看到它们的范围相差了500倍。如果使用梯度下降方法的话，会导致椭圆变得很窄很长，而出现梯度下降困难，甚至无法下降梯度（因为导数乘上步长后可能会冲到椭圆的外面）的问题。
-
-缺点：维数高的时候，矩阵求逆运算的计算量很大。
-
->注：这里的精确解指的是优化问题的精确解，而不是上述方程组的精确解。有效方程个数超过未知数个数的方程组，被称为**超定方程组**。超定方程组没有代数解，只有最小二乘解。解与实际方程的误差，又被称作**残差**。
-
-## 插值问题
-
-回归问题在数学上和插值问题是同一类问题。除了线性插值（回归）之外，还有多项式插值（回归）问题。
-
-这里以一元函数为例，描述一下多项式插值问题。
-
-对于给定的$$k+1$$个点$$(x_0,y_0),\dots,(x_k,y_k)$$，求$$f(x)=\sum_{i=0}^ka_ix^i$$经过给定的$$k+1$$个点。显然$$k=1$$的时候，是线性插值。
-
-多项式插值算法有很多种，最经典是以下两种：
-
-1.拉格朗日插值算法（the interpolation polynomial in the Lagrange form）
-
-$$L(x)=\sum_{j=0}^ky_jl_j(x),l_j(x)=\prod_{0\le m\le k\atop m\neq j}\frac{x-x_m}{x_j-x_m}$$
-
-2.牛顿插值算法（the interpolation polynomial in the Newton form）
-
-$$N(x)=\sum_{j=0}^ka_jn_j(x),n_j(x)=\prod_{i=0}^{j-1}(x-x_i),a_j=[y_0,\dots,y_j]$$
-
-此外还有分段插值法，即将整个定义域分为若干区间，在区间内部进行线性插值或多项式插值。

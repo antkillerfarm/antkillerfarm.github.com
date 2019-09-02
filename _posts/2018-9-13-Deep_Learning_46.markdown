@@ -22,6 +22,10 @@ https://mp.weixin.qq.com/s/nN7tgkvvkv8B8N-z4yAgcQ
 
 四小时搜索NN结构，厦大提出快速NAS检索方法
 
+https://zhuanlan.zhihu.com/p/71547478
+
+NAS发展史：从放弃到入门
+
 # OCR
 
 ## 概述

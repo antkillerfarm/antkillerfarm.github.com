@@ -202,6 +202,10 @@ https://mp.weixin.qq.com/s/wekqgCtlMan_PJHYadSpcg
 
 从词向量到句向量的技术详解
 
+https://www.zhihu.com/question/33952003
+
+如何通过词向量技术来计算2个文档的相似度？
+
 # CNN进阶
 
 http://mp.weixin.qq.com/s/ddTNr-967IahTZ2X1LNSEQ

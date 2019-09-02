@@ -184,6 +184,10 @@ https://www.zhihu.com/question/31211585
 
 如何学习SVM（支持向量机）以及改进实现SVM算法程序？
 
+https://zhuanlan.zhihu.com/p/80714877
+
+SVM和LR区别和联系？
+
 # 学习理论
 
 ## 偏差和方差

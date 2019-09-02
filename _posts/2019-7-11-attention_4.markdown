@@ -169,3 +169,7 @@ https://mp.weixin.qq.com/s/MzHmvbwxFCaFjmMkjfjeSg
 https://mp.weixin.qq.com/s/7ETHeN2xV_hEwkDxrhJyNg
 
 用Attention玩转CV，一文总览自注意力语义分割进展
+
+https://mp.weixin.qq.com/s/e_LEhLf2Rh-1zkEBmqS4nA
+
+NLP这两年：15个预训练模型对比分析与剖析

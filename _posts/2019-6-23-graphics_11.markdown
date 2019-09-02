@@ -58,6 +58,10 @@ https://zhuanlan.zhihu.com/p/77576417
 
 李群和李代数（二）：矩阵李群基础
 
+https://zhuanlan.zhihu.com/p/80663767
+
+李群和李代数（三）：优化基础
+
 ## Sophus
 
 Sophus是一个C++写的Lie Groups的库。显然，它得名自Marius Sophus Lie。
@@ -233,3 +237,7 @@ https://mp.weixin.qq.com/s/AI3i3ZLZ-fynavbeNAMKgA
 https://mp.weixin.qq.com/s/Dq4HsRg05bVMjvrsrxfOOQ
 
 从这篇YouTube论文，剖析强化学习在工业级场景推荐系统中的应用
+
+https://mp.weixin.qq.com/s/cyaQt-SO7sgG49kuUyPJbQ
+
+旷视开源的深度强化学习绘画智能体论文解读

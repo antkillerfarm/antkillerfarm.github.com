@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十一）——Linear Discriminant Analysis, 强连通分量算法
+title:  机器学习（三十一）——Linear Discriminant Analysis, 强连通分量算法, 度量学习
 category: ML 
 ---
 
@@ -176,6 +176,24 @@ http://blog.csdn.net/dm_vincent/article/details/8554244
 http://www.cnblogs.com/luweiseu/archive/2012/07/14/2591370.html
 
 强连通分支算法--Kosaraju算法、Tarjan算法和Gabow算法
+
+# 度量学习
+
+度量学习（Metric Learning）是机器学习里面的一个研究方向，主要是用来学习一个距离或者用来降维，比如PCA、NCA等等都属于度量学习算法。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/80656461
+
+Metric Learning科普文
+
+https://mp.weixin.qq.com/s/mvbyddpgxBFQSxC1zZZmFw
+
+如何通过距离度量学习解决Street-to-Shop问题
+
+https://mp.weixin.qq.com/s/iuOmxW0OAhSA7xSoIIn1dw
+
+鲁继文：面向视觉内容理解的深度度量学习
 
 # t-SNE
 

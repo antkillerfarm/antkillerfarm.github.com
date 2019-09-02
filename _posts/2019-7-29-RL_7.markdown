@@ -44,7 +44,53 @@ $$\pi_\theta(s,a)=P[a | s, \theta]$$
 
 首先，我们看看如何评价一个策略的好坏。
 
-- **Start value**。
+- **Start value**：
+
+$$J_1(\theta)=V^{\pi_\theta}(s_1)=E_{\pi_\theta}[v_1]$$
+
+上式表示在能够产生完整Episode的环境下，从状态$$s_1$$开始，直到结束状态所能获得的累计奖励。在这种情况下，由于整个Episode的状态、路径都是确定的，因此奖励也是确定的。我们需要做的只是最大化start value，以找到最佳路径（也就是最佳策略）。
+
+- **Average Value**：
+
+$$J_{avV}(\theta)=\sum_s d^{\pi_\theta}(s)V^{\pi_\theta}(s)$$
+
+对于连续环境条件，不存在一个开始状态，这个时候可以使用average value。上式中的$$d^{\pi_\theta}(s)$$表示$$\pi_\theta$$对应的MDP过程的Markov chain的稳态分布。
+
+- **Average reward per time-step**：
+
+$$J_{avR}(\theta)=\sum_s d^{\pi_\theta}(s)\sum_a\pi_\theta(s,a)R_s^a$$
+
+上式表示每一个time-step在各种情况下所能得到的平均奖励。
+
+当然了，在很多情况下，我们未必可以得到一个真实的奖励值，这时使用相关函数的估计值作为奖励值即可。
+
+## 策略优化（Policy Optimisation）
+
+主要分为两大类：
+
+1.非gradient算法。
+
+- Hill climbing
+
+- Simplex / amoeba / Nelder Mead
+
+- Genetic algorithms
+
+2.gradient算法。
+
+- Gradient descent
+
+- Conjugate gradient
+
+- Quasi-newton
+
+一般来说，gradient算法的优化效率较高，因此本文只讨论gradient算法。
+
+我们可以仿照ML中的梯度优化算法，定义策略的梯度函数：
+
+$$\Delta\theta=\alpha\nabla_\theta J(\theta)$$
+
+
 
 ## 参考
 

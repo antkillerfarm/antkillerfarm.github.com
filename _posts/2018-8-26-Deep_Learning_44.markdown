@@ -354,4 +354,4 @@ GS3D(monocular 3D detection)
 
 https://mp.weixin.qq.com/s/G7YNTR8FAsCtkCxLQv1-dQ
 
-Facebook 开源3D目标检测框架VoteNet，曾刷新两大数据集最高精度
+Facebook开源3D目标检测框架VoteNet，曾刷新两大数据集最高精度

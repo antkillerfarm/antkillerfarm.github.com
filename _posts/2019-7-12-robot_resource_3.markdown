@@ -182,6 +182,10 @@ https://mp.weixin.qq.com/s/DrWeZOIhJV1dbpg7Ns6gJQ
 
 控制技术详解——控制器的类型
 
+https://mp.weixin.qq.com/s/E-Vo3mqANB21Gv-X3b6o1A
+
+用虚拟仿真平台实现ADAS目标融合、检测和跟踪
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。

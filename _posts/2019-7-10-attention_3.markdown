@@ -80,6 +80,10 @@ https://mp.weixin.qq.com/s/xk5fWrSBKErH8tvl-3pgtg
 
 完全图解GPT-2（二）
 
+https://zhuanlan.zhihu.com/p/80215294
+
+GPT：第一个引入Transformer的预训练模型
+
 ## ERNIE
 
 https://mp.weixin.qq.com/s/xoQhz6ljbsbzKRBJlTQQuQ
@@ -135,6 +139,10 @@ https://mp.weixin.qq.com/s/SAiIIa9_-16dqRMKASsuhw
 https://mp.weixin.qq.com/s/qzAN6VlKcfqmpX9kQCJ7Gg
 
 XLnet：GPT和BERT的合体，博采众长，所以更强
+
+https://zhuanlan.zhihu.com/p/80216580
+
+XLnet：集合了GPT和BERT的预训练模型
 
 ## 参考
 

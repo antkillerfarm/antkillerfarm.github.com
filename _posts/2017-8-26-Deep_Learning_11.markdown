@@ -329,3 +329,7 @@ Meta Learning入门：MAML 和 Reptile
 https://mp.weixin.qq.com/s/MsIAkJAcYHWkkMjzd7qXKA
 
 元学习与强化学习的概率视角，47页ppt，DeepMind牛津Yee Whye Teh
+
+https://mp.weixin.qq.com/s/IdUhvWJYviKtPs9jCbtybA
+
+元知识图谱推理

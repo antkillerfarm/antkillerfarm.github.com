@@ -277,3 +277,7 @@ https://zhuanlan.zhihu.com/p/79080156
 https://mp.weixin.qq.com/s/pEm_rLZHt9ZZER16gTBp9g
 
 Lifelong GAN：基于持续学习的条件图像生成模型
+
+https://mp.weixin.qq.com/s/axCd8GZZ8tGg4S90NyApbw
+
+综述：基于GAN的图像翻译模型盘点

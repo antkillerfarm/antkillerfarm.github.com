@@ -176,6 +176,10 @@ https://mp.weixin.qq.com/s/8D8kxFSfruwWhU2jmYL3sg
 
 Google大佬Josh Gordon发布Tensorflow 2.0入门教程
 
+https://mp.weixin.qq.com/s/Ra-lVtKoYI0eOC_6VrPZeg
+
+有了TensorFlow2.0，我手里的1.x程序怎么办？
+
 ## 细节
 
 执行`session.run(out)`，会在终端打印out的值，但执行`res = session.run(out)`则不会。

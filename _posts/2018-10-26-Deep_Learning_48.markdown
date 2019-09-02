@@ -380,6 +380,10 @@ https://mp.weixin.qq.com/s/PUHytS_nLKPjlrv8RYxo8A
 
 一文看懂实时语义分割
 
+https://zhuanlan.zhihu.com/p/77834369
+
+语义分割中的Attention和低秩重建
+
 # 显著性检测
 
 https://mp.weixin.qq.com/s/Mi62oqtXUT5If_Dj4KmVYA

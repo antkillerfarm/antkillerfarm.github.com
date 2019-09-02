@@ -275,6 +275,12 @@ GloVe:Global Vectors for Word Representation
 
 https://nlp.stanford.edu/projects/glove/
 
+参考：
+
+https://zhuanlan.zhihu.com/p/80335195
+
+GloVe模型的理解
+
 ### textsum
 
 textsum是一个基于深度学习的文本自动摘要工具。

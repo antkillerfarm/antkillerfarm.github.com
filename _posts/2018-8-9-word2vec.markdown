@@ -345,6 +345,12 @@ https://mp.weixin.qq.com/s/BzQBy6AoMXXpjsdGyXh1zA
 
 揭秘RedisGraph: Redis内嵌高性能内存图数据库
 
+## 参考
+
+https://mp.weixin.qq.com/s/YfNlDoGOlHtpG9VFBCZHnQ
+
+VLDB2019特邀报告《图处理》综述进展，滑铁卢大学数据库大牛M. Tamer Özsu教授，170页ppt
+
 # Jetty
 
 Jetty是一个Java Servlet容器。官网：

@@ -4,7 +4,37 @@ title:  机器学习（二）——分类与逻辑回归, 广义线性模型
 category: ML 
 ---
 
-# 线性回归（续）
+# 线性回归
+
+## 正规方程组算法（续）
+
+这种解方程的算法，实际上就是通常所说的最小二乘法（Least squares）。
+
+优点：解是精确解，而不是近似解。不是迭代算法，程序实现简单。不在意$$X$$特征的scale。比如，特征向量$$X=\{x_1, x_2\}$$, 其中$$x_1$$的range为1~2000，而$$x_2$$的range为1~4，可以看到它们的范围相差了500倍。如果使用梯度下降方法的话，会导致椭圆变得很窄很长，而出现梯度下降困难，甚至无法下降梯度（因为导数乘上步长后可能会冲到椭圆的外面）的问题。
+
+缺点：维数高的时候，矩阵求逆运算的计算量很大。
+
+>注：这里的精确解指的是优化问题的精确解，而不是上述方程组的精确解。有效方程个数超过未知数个数的方程组，被称为**超定方程组**。超定方程组没有代数解，只有最小二乘解。解与实际方程的误差，又被称作**残差**。
+
+## 插值问题
+
+回归问题在数学上和插值问题是同一类问题。除了线性插值（回归）之外，还有多项式插值（回归）问题。
+
+这里以一元函数为例，描述一下多项式插值问题。
+
+对于给定的$$k+1$$个点$$(x_0,y_0),\dots,(x_k,y_k)$$，求$$f(x)=\sum_{i=0}^ka_ix^i$$经过给定的$$k+1$$个点。显然$$k=1$$的时候，是线性插值。
+
+多项式插值算法有很多种，最经典是以下两种：
+
+1.拉格朗日插值算法（the interpolation polynomial in the Lagrange form）
+
+$$L(x)=\sum_{j=0}^ky_jl_j(x),l_j(x)=\prod_{0\le m\le k\atop m\neq j}\frac{x-x_m}{x_j-x_m}$$
+
+2.牛顿插值算法（the interpolation polynomial in the Newton form）
+
+$$N(x)=\sum_{j=0}^ka_jn_j(x),n_j(x)=\prod_{i=0}^{j-1}(x-x_i),a_j=[y_0,\dots,y_j]$$
+
+此外还有分段插值法，即将整个定义域分为若干区间，在区间内部进行线性插值或多项式插值。
 
 ## 欠拟合与过拟合
 
@@ -202,33 +232,3 @@ $$g(h(x))=\eta \tag{3}$$
 $$y$$的取值为$$k$$个离散值的分布，被称为$$k$$项分布。显然$$k=2$$时，就是二项分布了。
 
 这里将$$k$$个离散值出现的概率记作$$\phi_1,\dots,\phi_k$$。由于$$\sum_{i=1}^k=1$$，因此，$$k$$项分布的自由度为$$k-1$$。
-
-定义$$k-1$$维空间上的向量$$T(y)$$：
-
-$$T(1)=\begin{bmatrix} 1 \\ 0 \\ 0 \\ \vdots \\ 0 \end{bmatrix},
-T(2)=\begin{bmatrix} 0 \\ 1 \\ 0 \\ \vdots \\ 0 \end{bmatrix},
-T(k-1)=\begin{bmatrix} 0 \\ 0 \\ 0 \\ \vdots \\ 1 \end{bmatrix},
-T(k)=\begin{bmatrix} 0 \\ 0 \\ 0 \\ \vdots \\ 0 \end{bmatrix}
-$$
-
-我们使用$$(T(y))_i$$表示$$T(y)$$的第$$i$$个元素。
-
-定义函数$$1\{True\}=1,1\{False\}=0$$，则$$(T(y))_i=1\{y=i\},E[(T(y))_i]=P(y=i)=\phi_i$$。
-
-$$\begin{align}p(y:\phi)&=\phi_1^{1\{y=1\}}\phi_2^{1\{y=2\}}\cdots \phi_k^{1\{y=k\}}=\phi_1^{1\{y=1\}}\phi_2^{1\{y=2\}}\cdots \phi_k^{1-\sum_{i=1}^{k-1}1\{y=i\}}
-\\&=\phi_1^{(T(y))_1}\phi_2^{(T(y))_2}\cdots \phi_k^{1-\sum_{i=1}^{k-1}(T(y))_i}
-\\&=\exp((T(y))_1\log(\phi_1)+(T(y))_2\log(\phi_2)+\cdots+(1-\sum_{i=1}^{k-1}(T(y))_i)\log(\phi_k))
-\\&=\exp((T(y))_1\log(\frac{\phi_1}{\phi_k})+(T(y))_2\log(\frac{\phi_2}{\phi_k})+\cdots+(T(y))_{k-1}\log(\frac{\phi_{k-1}}{\phi_k})+\log(\phi_k))
-\end{align}$$
-
-可见，
-
-$$\eta=\begin{bmatrix} \log(\frac{\phi_1}{\phi_k}) \\ \log(\frac{\phi_2}{\phi_k}) \\ \vdots \\ \log(\frac{\phi_{k-1}}{\phi_k}) \end{bmatrix},a(\eta)=-\log(\phi_k),b(y)=1$$
-
-$$\eta_i=\log(\frac{\phi_i}{\phi_k})\tag{4}$$
-
-$$\Rightarrow e^{\eta_i}=\frac{\phi_i}{\phi_k}\Rightarrow \phi_ke^{\eta_i}=\phi_i$$
-
-$$\Rightarrow \phi_k\sum_{i=1}^ke^{\eta_i}=\sum_{i=1}^k\phi_i=1$$
-
-$$\Rightarrow \phi_k=\frac{1}{\sum_{i=1}^ke^{\eta_i}}\tag{5}$$

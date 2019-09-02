@@ -90,10 +90,6 @@ https://mp.weixin.qq.com/s/4LjWHFO0wTP7kqnKf2mdWw
 
 林倞：Beyond Supervised Deep Learning--后深度学习时代的挑战
 
-https://mp.weixin.qq.com/s/mvbyddpgxBFQSxC1zZZmFw
-
-如何通过距离度量学习解决Street-to-Shop问题
-
 https://mp.weixin.qq.com/s/A4ewMO50xoopctpn9B7Y5Q
 
 深度学习及AR在移动端打车场景下的应用
@@ -245,10 +241,6 @@ https://mp.weixin.qq.com/s/LOFbNzJQEE3wieNOn6gxXg
 https://mp.weixin.qq.com/s/YyGf7tJcGhdqtciKuw4bbw
 
 谭铁牛院士：Biometric Data Analysis
-
-https://mp.weixin.qq.com/s/iuOmxW0OAhSA7xSoIIn1dw
-
-鲁继文：面向视觉内容理解的深度度量学习
 
 https://mp.weixin.qq.com/s/ora66weNks8tHlFTKJrKSA
 

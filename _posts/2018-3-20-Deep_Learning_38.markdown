@@ -38,6 +38,10 @@ https://mp.weixin.qq.com/s/45R7yxjPbm0wO4EW7RzXnQ
 
 LFFD：轻量级人脸检测器，不止是快
 
+https://mp.weixin.qq.com/s/pT2XgyvFeV2P3k5coN6ztA
+
+局部人脸识别的动态特征匹配
+
 # RNN进阶
 
 ## IndRNN

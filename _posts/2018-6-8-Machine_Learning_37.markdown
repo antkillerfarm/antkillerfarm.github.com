@@ -16,6 +16,8 @@ category: ML
 
 常用的算法有BGFS和L-BFGS。
 
+参考：
+
 http://www.cnblogs.com/kemaswill/p/3352898.html
 
 优化算法-BFGS
