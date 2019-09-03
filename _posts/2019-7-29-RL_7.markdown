@@ -94,6 +94,38 @@ $$\Delta\theta=\alpha\nabla_\theta J(\theta)$$
 
 $$\nabla_\theta J(\theta)=\begin{pmatrix} \frac{\partial J(\theta)}{\partial \theta_1} \\ \vdots \\ \frac{\partial J(\theta)}{\partial \theta_n} \end{pmatrix}$$
 
+然而，梯度函数有的时候并不简单，也许并不可微。这时可以使用有限差分法：
+
+$$\frac{\partial J(\theta)}{\partial \theta_k}\approx \frac{J(\theta + \epsilon u_k)-J(\theta)}{\epsilon}$$
+
+这里的$$u_k$$是第k个元素为1，其余元素为0的单位向量。
+
+有限差分法简单，不要求策略函数可微分，适用于任意策略；但有噪声，且大多数时候不高效。
+
+## Monte-Carlo Policy Gradient
+
+$$\nabla_\theta \pi_\theta(s,a) = \pi_\theta(s,a)\frac{\nabla_\theta \pi_\theta(s,a)}{\pi_\theta(s,a)}=\pi_\theta(s,a) \nabla_\theta \log \pi_\theta(s,a)$$
+
+上式一般被称作Likelihood ratios，这里使用到了一个公式：$$\mathrm{d}\log(y)=\mathrm{d}y/y$$
+
+我们定义Score function为：$$\nabla_\theta \log \pi_\theta(s,a)$$
+
+## Softmax Policy
+
+Softmax Policy是适用于离散行为的策略。它把行为权重看成是多个特征在一定权重下的线性代数和：$$\phi(s,a)^T\theta$$，则采取某一行为的概率为：
+
+$$\pi_\theta(s,a)\propto e^{\phi(s,a)^T\theta}$$
+
+相应的Score function为:
+
+$$\nabla_\theta \log \pi_\theta(s,a)=\phi(s,a)-E_{\pi_\theta}[\phi(s,\cdot)]$$
+
+## Gaussian Policy
+
+相应的Score function为:
+
+$$\nabla_\theta \log \pi_\theta(s,a)=\frac{(a-\mu(s))\phi(s)}{\sigma^2}$$
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/54825295

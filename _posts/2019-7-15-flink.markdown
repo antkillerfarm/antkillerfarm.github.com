@@ -98,9 +98,37 @@ https://mp.weixin.qq.com/s/qRPquDgb2M8xptZWapajDg
 
 Flink SQL功能解密系列——流式TopN挑战与实现
 
-https://mp.weixin.qq.com/s/ynPmQjCCPFA_hNjvh3vS-w
+https://mp.weixin.qq.com/s/oBmRhRA-52CLRLXp6sZwEw
 
 Apache Flink零基础入门（一）：基础概念解析
+
+https://mp.weixin.qq.com/s/nLHjYUCx2mOGBSFS4_uu_g
+
+Apache Flink零基础入门（二）：DataStream API编程
+
+https://mp.weixin.qq.com/s/noD2Jv6m-somEMtjWTJh3w
+
+Apache Flink零基础入门（三）：开发环境搭建和应用的配置、部署及运行
+
+https://mp.weixin.qq.com/s/KfuAZv2G0682NNzHv0iFfQ
+
+Apache Flink零基础入门（四）：客户端操作的5种模式
+
+https://mp.weixin.qq.com/s/B0aAexdqmvX8WwjS_VEdOA
+
+Apache Flink和Apache Pulsar的批流融合
+
+https://mp.weixin.qq.com/s/1ssipS4vseDf1cgXQHxBRw
+
+Apache Flink零基础入门（六）：状态管理及容错机制
+
+https://mp.weixin.qq.com/s/B2-WT3gSui4ylmWK92aQng
+
+Apache Flink零基础入门（七）：Table API编程
+
+https://mp.weixin.qq.com/s/QUaJJtB5A9vyAB3d_Vg6bA
+
+Apache Flink零基础入门（八）：SQL编程实践
 
 # Beam
 

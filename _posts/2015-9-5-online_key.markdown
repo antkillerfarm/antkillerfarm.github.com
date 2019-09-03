@@ -245,3 +245,23 @@ https://mp.weixin.qq.com/s/j0kiWTlrntzvthUJlxZBsA
 https://mp.weixin.qq.com/s/bUtu2nTs0bybnTvk-iLt6Q
 
 GTS来了！阿里微服务架构下的分布式事务解决方案
+
+# Jetty
+
+Jetty是一个Java Servlet容器。官网：
+
+https://www.eclipse.org/jetty/
+
+它与Tomcat的差异在于：
+
+1.Jetty是Eclipse基金会的项目，而Tomcat是Apache基金会的项目。
+
+2.Jetty是轻量级的Web Server，系统开销小，而Tomcat是重量级的Web Server，功能更强大。
+
+3.启动方式不同。Jetty一般是嵌入Java程序中，在程序启动之后，再启动Jetty。而Tomcat是首先启动自己作为后台服务，然后再加载功能性的应用。
+
+参考：
+
+https://github.com/jasonish/jetty-springmvc-jsp-template
+
+一个Jetty+Spring MVC+JSP的demo。

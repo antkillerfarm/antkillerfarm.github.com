@@ -42,6 +42,10 @@ https://mp.weixin.qq.com/s/pT2XgyvFeV2P3k5coN6ztA
 
 局部人脸识别的动态特征匹配
 
+https://mp.weixin.qq.com/s/GNYrR0NOaN42SgLXsm2KIg
+
+三维"ZAO"脸，单张图片估计人脸几何，效果堪比真实皮肤
+
 # RNN进阶
 
 ## IndRNN

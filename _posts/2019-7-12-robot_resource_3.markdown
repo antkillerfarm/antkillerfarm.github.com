@@ -186,6 +186,14 @@ https://mp.weixin.qq.com/s/E-Vo3mqANB21Gv-X3b6o1A
 
 用虚拟仿真平台实现ADAS目标融合、检测和跟踪
 
+https://mp.weixin.qq.com/s/Q4me1G9B8uwwRIr6dfETEA
+
+行为轨迹预测技术
+
+https://mp.weixin.qq.com/s/3ApXC3u13_O8s4QCYxldlQ
+
+基于模块化轻量级网络的道路目标检测
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。

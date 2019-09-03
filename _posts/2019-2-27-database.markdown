@@ -40,6 +40,28 @@ https://mp.weixin.qq.com/s/2VutJPwMLUW51o2P0P0QLw
 
 Sophon：Hulu智能OLAP缓存层技术实践
 
+## Apache Kylin
+
+Apache Kylin是一个开源的分布式分析引擎，最初由eBay开发贡献至开源社区。它提供Hadoop之上的SQL查询接口及多维分析（OLAP）能力以支持大规模数据，能够处理TB乃至PB级别的分析任务，能够在亚秒级查询巨大的Hive表，并支持高并发。
+
+官网：
+
+http://kylin.apache.org/
+
+参考：
+
+http://d.xiumi.us/board/v5/39rut/82854193
+
+老司机带路系列：多维交叉分析引擎-Kylin
+
+https://mp.weixin.qq.com/s/e0nkJK927ANPCsoFzlBFsg
+
+OLAP系统解析：Apache Kylin和Baidu Palo哪家强？
+
+https://blog.csdn.net/zhangzheng0413/article/details/8271322
+
+OLAP、OLTP的介绍和比较
+
 ## GraphQL
 
 GraphQL是在Facebook内部应用多年的一套数据查询语言和runtime。

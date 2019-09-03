@@ -237,3 +237,7 @@ https://mp.weixin.qq.com/s/ePh_fdgLBXKujYY6KGESrA
 https://mp.weixin.qq.com/s/oXM9Stb65WjqlY4GGAAyHw
 
 北邮提出高阶注意力模型，大幅改进行人重识别SOTA精度
+
+https://mp.weixin.qq.com/s/KwvqvIU8tVDgtYdq3HL4OQ
+
+密集人群分布检测与计数

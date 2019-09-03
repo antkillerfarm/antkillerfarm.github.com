@@ -158,6 +158,14 @@ https://zhuanlan.zhihu.com/p/69012724
 
 详说片上网络之四：片上网络研究的难与易
 
+https://zhuanlan.zhihu.com/p/71775965
+
+详说片上网络之五：网络分层模型在片上网络上的实现（上）
+
+https://zhuanlan.zhihu.com/p/78672250
+
+详说片上网络之六：网络分层模型在片上网络上的实现（下）
+
 https://mp.weixin.qq.com/s/AW08yhPzBZqfys8CbOjrYg
 
 详说片上网路（NoC）技术

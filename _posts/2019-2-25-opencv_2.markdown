@@ -258,6 +258,10 @@ https://mp.weixin.qq.com/s/r5NIEwU3lMpdyAmFw-VTAA
 
 OpenCV方块体识别解决方案
 
+https://mp.weixin.qq.com/s/q55UXjOpEfhD0f-pSs_BpA
+
+OpenCV实现多张图像拼接
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。

@@ -96,6 +96,42 @@ http://blog.csdn.net/outer_form/article/details/50588307
 
 莫比乌斯反演定理证明
 
+# Wavelet & Chirplet
+
+![](/images/img3/chirplet.png)
+
+除了Fourier Transform之外，Wavelet Transform和Chirplet Transform也是信号处理中常见的变换。
+
+| 名称 | 基函数 |
+|:--:|:--:|
+| Fourier Transform | 正弦波 |
+| Wavelet Transform | 平方可积函数 |
+| Chirplet Transform | 频率随时间变化的函数 |
+
+Chirplet Transform在音频处理方面用的较多，因为人声和无线电通信不同，没有低频信号调制到高频信号的过程。
+
+参考：
+
+https://blog.csdn.net/sinat_26545113/article/details/78835038
+
+什么是chirp信号
+
+https://zhuanlan.zhihu.com/p/66189212
+
+从傅里叶变换进阶到小波变换（一）
+
+https://zhuanlan.zhihu.com/p/66246381
+
+从傅里叶变换进阶到小波变换（二）
+
+https://zhuanlan.zhihu.com/p/68323379
+
+从傅里叶变换进阶到小波变换（三）
+
+https://zhuanlan.zhihu.com/p/69956002
+
+从傅里叶变换进阶到小波变换（四）
+
 # DRL参考资源
 
 https://mp.weixin.qq.com/s/GUyZ0U5_JlXCI-5mO796SA
