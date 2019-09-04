@@ -345,6 +345,10 @@ https://mp.weixin.qq.com/s/4sDNUZiOiS6VH_oRSnW6HQ
 
 牛津大学YARIN GAL《贝叶斯深度学习》入门教程，336页ppt
 
+https://mp.weixin.qq.com/s/UiLyQKhIe2rDYiwPcqyqaw
+
+可跟踪概率模型，209页最新教程
+
 # 手势识别
 
 https://zhuanlan.zhihu.com/p/26630215

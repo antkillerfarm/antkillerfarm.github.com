@@ -390,6 +390,10 @@ https://mp.weixin.qq.com/s/in5SDWlQg8ts4E8DTmHxMQ
 
 BERT在推荐系统领域可能会有什么作为？
 
+https://mp.weixin.qq.com/s/kJhOrz0VaYc-k-6XJS02ag
+
+8篇论文梳理BERT相关模型进展与反思
+
 # Attention进阶
 
 https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA

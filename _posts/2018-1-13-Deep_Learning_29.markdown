@@ -104,6 +104,10 @@ https://mp.weixin.qq.com/s/KjlIa3oxqfk-iu6Ba5NixQ
 
 图神经网络开发必备组件，NetworkX、稀疏矩阵、稀疏Tensor等
 
+https://mp.weixin.qq.com/s/CvV16eK9EUm148dOw0EEcA
+
+TensorFlow开源NSL神经结构学习框架
+
 ## 参考
 
 https://github.com/thunlp/GNNPapers
