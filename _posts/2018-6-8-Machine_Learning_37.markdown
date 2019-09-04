@@ -6,60 +6,6 @@ category: ML
 
 # Optimizer进阶
 
-## AdaSecant
-
-《ADASECANT: Robust Adaptive Secant Method for Stochastic Gradient》
-
-## 二阶Optimizer
-
-虽然二阶Optimizer的收敛效果优于一阶Optimizer，但由于计算量较大，通常用的较少。
-
-常用的算法有BGFS和L-BFGS。
-
-参考：
-
-http://www.cnblogs.com/kemaswill/p/3352898.html
-
-优化算法-BFGS
-
-http://blog.csdn.net/acdreamers/article/details/44728041
-
-L-BFGS算法
-
-https://mp.weixin.qq.com/s/lGrTUYALmKOQkO70DZpbPQ
-
-小改进，大飞跃：深度学习中的最小牛顿求解器
-
-## 参考
-
-https://mp.weixin.qq.com/s/n1Ks8I3Ldgb-u-kVbGBZ5Q
-
-机器学习中的优化方法
-
-https://mp.weixin.qq.com/s/4XOI8Dq6fqe8rhtJjeyxeA
-
-超级收敛：使用超大学习率超快速训练残差网络
-
-http://mp.weixin.qq.com/s/Q5kBCNZs3a6oiznC9-2bVg
-
-Michael Jordan新研究官方解读：如何有效地避开鞍点
-
-https://mp.weixin.qq.com/s/idmt0F49tOCh-ghWdHLdUw
-
-吴恩达导师Michael I.Jordan学术演讲：如何有效避开鞍点。这是Jordan半年后的另一个演讲，有些新内容。
-
-https://mp.weixin.qq.com/s/jVjemfcLzIWOdWdxMgoxsA
-
-超越Adam，从适应性学习率家族出发解读ICLR 2018高分论文
-
-https://mp.weixin.qq.com/s/B9nUwPtgpsLkEyCOlSAO5A
-
-1cycle策略：实践中的学习率设定应该是先增再降
-
-https://mp.weixin.qq.com/s/dseeCB-CRtZnzC3d4_8pYw
-
-AMSGrad能够取代Adam吗
-
 https://mp.weixin.qq.com/s/7E8o1TnvmAvZgB7_AWCunQ
 
 2018值得尝试的无参数全局优化新算法
@@ -247,6 +193,10 @@ https://mp.weixin.qq.com/s/MEjhJycDwssvzXm7DaSp7Q
 https://mp.weixin.qq.com/s/zIvzGpHNnm7WRgDmtdFd-w
 
 Factorization Machines因子分解机详解
+
+https://mp.weixin.qq.com/s/SlflfdqSIZGR59ch50DIAA
+
+因子分解机
 
 https://mp.weixin.qq.com/s/qynApDntA9xiGRBQpoIsjQ
 

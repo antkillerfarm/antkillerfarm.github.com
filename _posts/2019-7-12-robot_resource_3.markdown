@@ -194,6 +194,10 @@ https://mp.weixin.qq.com/s/3ApXC3u13_O8s4QCYxldlQ
 
 基于模块化轻量级网络的道路目标检测
 
+https://mp.weixin.qq.com/s/kAP8MMjTjVyeBPcpY5E1FQ
+
+障碍物行为预测技术
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。

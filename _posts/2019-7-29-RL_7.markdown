@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  强化学习（七）——策略梯度, 模仿学习
+title:  强化学习（七）——策略梯度, Actor-Critic
 category: RL 
 ---
 
@@ -58,7 +58,7 @@ $$J_{avV}(\theta)=\sum_s d^{\pi_\theta}(s)V^{\pi_\theta}(s)$$
 
 - **Average reward per time-step**：
 
-$$J_{avR}(\theta)=\sum_s d^{\pi_\theta}(s)\sum_a\pi_\theta(s,a)R_s^a$$
+$$J_{avR}(\theta)=\sum_s d^{\pi_\theta}(s)\sum_a\pi_\theta(s,a)R_{s,a}$$
 
 上式表示每一个time-step在各种情况下所能得到的平均奖励。
 
@@ -110,9 +110,11 @@ $$\nabla_\theta \pi_\theta(s,a) = \pi_\theta(s,a)\frac{\nabla_\theta \pi_\theta(
 
 我们定义Score function为：$$\nabla_\theta \log \pi_\theta(s,a)$$
 
+下面讨论几种常见的策略。
+
 ## Softmax Policy
 
-Softmax Policy是适用于离散行为的策略。它把行为权重看成是多个特征在一定权重下的线性代数和：$$\phi(s,a)^T\theta$$，则采取某一行为的概率为：
+Softmax Policy适用于离散行为空间，它把行为权重看成是多个特征在一定权重下的线性代数和：$$\phi(s,a)^T\theta$$，则采取某一行为的概率为：
 
 $$\pi_\theta(s,a)\propto e^{\phi(s,a)^T\theta}$$
 
@@ -120,11 +122,53 @@ $$\pi_\theta(s,a)\propto e^{\phi(s,a)^T\theta}$$
 
 $$\nabla_\theta \log \pi_\theta(s,a)=\phi(s,a)-E_{\pi_\theta}[\phi(s,\cdot)]$$
 
+上式中，等号右边第一部分是采取某行为的Score，第二部分是当前状态的期望分值。
+
 ## Gaussian Policy
+
+Gaussian Policy适用于连续行为空间，它用一个正态分布表示策略：$$a\sim N(\mu(s), \sigma^2)$$，其中$$\mu(s)=\phi(s)^T\theta$$。
 
 相应的Score function为:
 
 $$\nabla_\theta \log \pi_\theta(s,a)=\frac{(a-\mu(s))\phi(s)}{\sigma^2}$$
+
+下面我们用一个图来演示一下相关步骤。
+
+![](/images/img3/pg.png)
+
+左图的蓝点表示采样X，箭头指示该点的梯度方向，既然是正态分布，这些箭头显然是远离中心的。中图表示，X对应的Score function。我们根据Score function更新参数（沿着绿色箭头方向，或者沿着红色箭头的反方向）。最终得到右图中的新的正态分布。
+
+从贝叶斯学习的角度来看，左图相当于先验分布，而中图相当于后验分布。
+
+参考：
+
+https://karpathy.github.io/2016/05/31/rl/
+
+Deep Reinforcement Learning: Pong from Pixels
+
+## Policy Gradient Theorem
+
+One-Step MDP是一类特殊的MDP：它从任意状态开始，只执行一次动作，然后就结束了。
+
+$$J(\theta)=E_{\pi_\theta}[r]=\sum_{s\in S} d(s)\sum_{a\in A}\pi_\theta(s,a)R_{s,a}$$
+
+$$\nabla_\theta J(\theta)=\sum_{s\in S} d(s)\sum_{a\in A}\nabla_\theta \log \pi_\theta(s,a)R_{s,a}=E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a)r]$$
+
+One-Step MDP的相关结论可以扩展到multi-step MDP，只需要将即时奖励r，替换为长期奖励（一般使用其估计函数$$Q^{\pi}(s,a)$$）即可。
+
+>在监督学习里，目标函数的梯度不包括价值函数，当前状态、行为的好坏将有监督信息告知；而在强化学习里，需要通过价值函数来估计当前状态行为的好坏。
+
+我们将Policy Gradient应用到MC算法上，则得到如下流程：
+
+>Initialise $$\theta$$ arbitrarily   
+>>for each episode $$\{s_1,a_1,r_2,\dots,s_{T−1},a_{T−1},r_T\}\sim \pi_\theta$$ {   
+>>>for t = 1 to $$T−1$$ {   
+>>>$$\theta \leftarrow \theta + \alpha\nabla_\theta \log \pi_\theta (s_t , a_t )v_t$$   
+>>>}   
+>>
+>>}   
+>
+>return $$\theta$$
 
 ## 参考
 
@@ -132,23 +176,14 @@ https://zhuanlan.zhihu.com/p/54825295
 
 基于值和策略的强化学习入坑
 
-# RL与神经科学
+# Actor-Critic
 
-Pavlov Model（1901）
+MC策略梯度方法使用了收获作为状态价值的估计，它虽然是无偏的，但是噪声却比较大，也就是变异性（方差）较高。如果我们能够相对准确地估计状态价值，用它来指导策略更新，那么是不是会有更好的学习效果呢？这就是Actor-Critic策略梯度的主要思想。
 
-Rescorla-Wagner Model（1972）
-
-Thorndike’s Puzzle Box（1910）
-
-参考：
-
-https://zhuanlan.zhihu.com/p/24437724
-
-学习理论之Rescorla-Wagner模型
-
-# A2C
+Actor-Critic的字面意思是“演员-评论”，相当于演员在演戏的同时，有评论家指点，继而演员演得越来越好。
 
 ![](/images/img3/Actor-critic.png)
+
 
 https://zhuanlan.zhihu.com/p/51652845
 
@@ -165,63 +200,3 @@ Actor Critic——一个融合基于策略梯度和基于值优点的强化学�
 https://mp.weixin.qq.com/s/c4xoy4CJ_hsVdmGe1n3rTQ
 
 A3C——一种异步强化学习方法
-
-# 模仿学习
-
-https://zhuanlan.zhihu.com/p/27935902
-
-机器人学习Robot Learning之模仿学习Imitation Learning的发展
-
-https://zhuanlan.zhihu.com/p/25688750
-
-模仿学习（Imitation Learning）完全介绍
-
-https://mp.weixin.qq.com/s/naq73D27vsCOUBperKto8A
-
-从监督式到DAgger，综述论文描绘模仿学习全貌
-
-https://mp.weixin.qq.com/s/LNNqp2KsEAljG26hY43mUw
-
-ICML2018 模仿学习教程
-
-https://mp.weixin.qq.com/s/f9vSgH1HQwGXBDb0UGHQyQ
-
-深度学习进阶之无人车行为克隆
-
-# RL参考资源
-
-https://mp.weixin.qq.com/s/Fn1s9Ia8L1ckgn6iP24FhQ
-
-如何让神经网络具有好奇心
-
-https://mp.weixin.qq.com/s/PBf-YrkhwhPYXuiOGyahxQ
-
-强化学习遭遇瓶颈！分层RL将成为突破的希望
-
-https://zhuanlan.zhihu.com/p/58815288
-
-强化学习之值函数学习
-
-https://mp.weixin.qq.com/s/8Cqknze_iosz6Z6cqnuK5w
-
-谷歌提出强化学习新算法SimPLe，模拟策略学习效率提高2倍
-
-https://mp.weixin.qq.com/s/hKGS4Ek5prwTRJoMCaxQLA
-
-强化学习Exploration漫游
-
-https://zhuanlan.zhihu.com/p/65116688
-
-值分布强化学习（01）
-
-https://zhuanlan.zhihu.com/p/65364484
-
-值分布强化学习（02）
-
-https://zhuanlan.zhihu.com/p/62363784
-
-强化学习之策略搜索
-
-https://mp.weixin.qq.com/s/j9Cs5M9gyITu2u_XDkKm-g
-
-Policy Gradient——一种不以loss来反向传播的策略梯度方法

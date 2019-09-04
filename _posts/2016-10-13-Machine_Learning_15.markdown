@@ -206,6 +206,10 @@ https://zhuanlan.zhihu.com/p/50142573
 
 L1正则化引起稀疏解的多种解释
 
+https://blog.csdn.net/daunxx/article/details/51596877
+
+Lasso Regression
+
 # 协同过滤的ALS算法
 
 ## 协同过滤概述

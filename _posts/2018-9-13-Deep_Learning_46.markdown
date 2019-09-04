@@ -122,6 +122,18 @@ https://mp.weixin.qq.com/s/h7HVyGbmtLmNVJp4p0rCRQ
 
 字符识别(OCR)相关工具/库/教材/论文等资源整理
 
+https://mp.weixin.qq.com/s/XvtmPUbS2KV0zNXTPgtgDA
+
+史上最全端到端场景文本检测识别资源合集（14篇重要论文 + 5个开源代码 + 49个实验结果 + 222个统计信息）
+
+https://mp.weixin.qq.com/s/qLPfs5nHCVn5J-q3CbeECg
+
+史上最全场景文字识别资源汇集（56篇重要论文 + 20 个开源代码 + 330 个实验结果 + 1882个统计信息）
+
+https://mp.weixin.qq.com/s/rsJZ3R71gSAC4T501-LSQA
+
+史上最全场景文字检测资源合集（70篇重要论文 + 15个开源代码 + 176个实验结果 + 1305个统计信息）
+
 https://mp.weixin.qq.com/s/KFgC8zHWS7ysb9GfbkfLRA
 
 OCR技术简介

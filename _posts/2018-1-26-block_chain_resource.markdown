@@ -326,6 +326,10 @@ https://mp.weixin.qq.com/s/NrNojDc9gEU3F_GybKA67Q
 
 三大屏下指纹技术方案对比
 
+https://mp.weixin.qq.com/s/g5VKcxcp6QWesfegcU_GuQ
+
+手机指纹解锁和密码解锁，哪个更安全？
+
 https://mp.weixin.qq.com/s/2TKkoWZcYVVvlEKvA6iNyA
 
 近年值得关注的新兴MEMS和传感器技术

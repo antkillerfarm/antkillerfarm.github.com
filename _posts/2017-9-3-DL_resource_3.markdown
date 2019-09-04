@@ -72,6 +72,10 @@ https://zhuanlan.zhihu.com/p/78872781
 
 基于深度学习的着色方法介绍
 
+https://zhuanlan.zhihu.com/p/80943002
+
+轮廓检测综述：An Overview of Contour Detection Approaches
+
 ## 光神经网络
 
 https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ

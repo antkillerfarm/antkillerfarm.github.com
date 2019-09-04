@@ -118,6 +118,10 @@ https://zhuanlan.zhihu.com/p/76791923
 
 图像/视频去噪中的Deformable Kernels
 
+https://mp.weixin.qq.com/s/NstPpjfSxXpmHWkhjDSxZg
+
+AI换脸常见方法，从头细说
+
 # 三维处理
 
 https://github.com/timzhang642/3D-Machine-Learning
@@ -355,3 +359,7 @@ GS3D(monocular 3D detection)
 https://mp.weixin.qq.com/s/G7YNTR8FAsCtkCxLQv1-dQ
 
 Facebook开源3D目标检测框架VoteNet，曾刷新两大数据集最高精度
+
+https://mp.weixin.qq.com/s/SBWGvu84oPKZkY5d8gz-oQ
+
+3D实例分割

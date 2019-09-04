@@ -390,6 +390,10 @@ https://mp.weixin.qq.com/s/vnaI8FwB4Ot46weAgq18Eg
 
 华为新贵！方舟编译器的荣光和使命
 
+https://www.zhihu.com/question/344231876/answer/812481811
+
+周志德（Fred Chow)
+
 ## 科研人生
 
 https://mp.weixin.qq.com/s/6gX1UFSykuzw358ARUzifw

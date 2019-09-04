@@ -255,3 +255,7 @@ Facebook频谱图模型生成比尔·盖茨声音，性能完胜WaveNet、MAESTR
 https://mp.weixin.qq.com/s/QbSPOHvYD9CGnbPmigeYdA
 
 多语言语音合成和跨语言语音克隆
+
+https://mp.weixin.qq.com/s/McWHS0esRRhIiBlB4CAGXA
+
+柯南变声器的算法原理解析

@@ -169,3 +169,7 @@ https://mp.weixin.qq.com/s/8KEWJROGSe-7nmBlrkQ7Nw
 https://github.com/yzhao062/awesome-ensemble-learning
 
 集成学习相关资源大列表
+
+https://mp.weixin.qq.com/s/csQoFtE0v1jUAGC08NtX3g
+
+解读：滴滴“猜你去哪儿”功能的算法实现

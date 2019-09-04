@@ -275,3 +275,7 @@ https://mp.weixin.qq.com/s/UwijIjGOF-eRb2GjDxB95g
 https://mp.weixin.qq.com/s/suLJs_GjRsdYA5fwtsje7g
 
 腾讯AI开源框架Angel 3.0重磅发布：超50万行代码，支持3种算法，打造全栈机器学习平台
+
+https://mp.weixin.qq.com/s/adroDI2bm13o6Q40ECc7Zw
+
+MediaPipe: Google Research 开源的跨平台多媒体机器学习模型应用框架
