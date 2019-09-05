@@ -122,6 +122,10 @@ https://mp.weixin.qq.com/s/NstPpjfSxXpmHWkhjDSxZg
 
 AI换脸常见方法，从头细说
 
+https://mp.weixin.qq.com/s/AbCxbG4NJvvZ1WLNze_HuQ
+
+拍照太糊？你需要了解下美图人像画质修复技术
+
 # 三维处理
 
 https://github.com/timzhang642/3D-Machine-Learning

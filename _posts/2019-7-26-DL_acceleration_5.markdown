@@ -233,3 +233,7 @@ https://mp.weixin.qq.com/s/kU0_BuQW8VQihUwBuZ90cA
 https://mp.weixin.qq.com/s/oah61YozMB2fMfpDqPwHjw
 
 Deep Compression神经网络压缩经典之作
+
+https://mp.weixin.qq.com/s/ulrPhfsPunKAWYohBhkh9w
+
+寻找最佳的神经网络架构，韩松组两篇论文解读

@@ -226,6 +226,10 @@ https://mp.weixin.qq.com/s/9xGsz5TpTSN0LxeOdNV8zA
 
 一文看懂JVM内存布局及GC原理
 
+https://mp.weixin.qq.com/s/CH9D-E7fxuu462Q2S3t0AA
+
+Java字节码增强探秘
+
 # Javascript（续）
 
 ### Step3:延迟动画
