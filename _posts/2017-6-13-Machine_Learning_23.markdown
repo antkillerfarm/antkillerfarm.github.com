@@ -128,6 +128,42 @@ $$\Delta \theta_t = - \dfrac{RMS[\Delta \theta]_{t-1}}{RMS[g]_{t}} g_{t}$$
 
 也就是说，Adadelta不仅考虑了梯度的平方和，也考虑了更新量的平方和。
 
+## Adam
+
+Adaptive Moment Estimation借用了卡尔曼滤波的思想，对$$g_t,g_t^2$$进行滤波：
+
+$$m_t = \beta_1 m_{t-1} + (1 - \beta_1) g_t$$
+
+$$v_t = \beta_2 v_{t-1} + (1 - \beta_2) g_t^2$$
+
+估计：
+
+$$\hat{m}_t = \dfrac{m_t}{1 - \beta^t_1}$$
+
+$$\hat{v}_t = \dfrac{v_t}{1 - \beta^t_2}$$
+
+更新：
+
+$$\theta_{t+1} = \theta_{t} - \dfrac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \hat{m}_t$$
+
+## AdamW
+
+Adam自动调整学习率，大幅提高了训练速度，也很少需要调整学习率，但是有相当多的资料报告Adam优化的最终精度略低于SGD。问题出在哪呢，其实Adam本身没有问题，问题在于目前大多数DL框架的L2 loss实现用的是weight decay的方式，而weight decay在与Adam共同使用的时候有互相耦合。
+
+为了解决这个问题，人们又提出了AdamW。
+
+参考：
+
+https://mp.weixin.qq.com/s/TVJIC7IEUeWypN8Z1NGKaA
+
+都9102年了，别再用Adam + L2 Loss了
+
+## Nadam
+
+http://cs229.stanford.edu/proj2015/054_report.pdf
+
+ncorporating Nesterov Momentum into Adam
+
 ## AdaSecant
 
 《ADASECANT: Robust Adaptive Secant Method for Stochastic Gradient》
@@ -153,6 +189,90 @@ https://mp.weixin.qq.com/s/lGrTUYALmKOQkO70DZpbPQ
 小改进，大飞跃：深度学习中的最小牛顿求解器
 
 ## 参考
+
+http://sebastianruder.com/optimizing-gradient-descent/
+
+An overview of gradient descent optimization algorithms
+
+https://mp.weixin.qq.com/s/k_d02G2V4yd6HdGfw2mf1Q
+
+从修正Adam到理解泛化：概览2017年深度学习优化算法的最新研究进展
+
+https://mp.weixin.qq.com/s/cOCCapYrmrS_DyPkj_XRlg
+
+常见的几种最优化方法
+
+https://morvanzhou.github.io/tutorials/machine-learning/ML-intro/3-06-speed-up-learning/
+
+加速神经网络训练
+
+http://www.cnblogs.com/neopenx/p/4768388.html
+
+自适应学习率调整：AdaDelta
+
+https://mp.weixin.qq.com/s/VoBK-l_ieSg2UupC2ix2pA
+
+听说你了解深度学习最常用的学习算法：Adam优化算法？
+
+https://mp.weixin.qq.com/s/YRyqvlNe24mlFZ7GB9vDnw
+
+一文看懂常用的梯度下降算法
+
+https://mp.weixin.qq.com/s/qncTSBCvjMzAual5Sz9R3A
+
+解析深度学习优化：Momentum、RMSProp 和 Adam
+
+https://mp.weixin.qq.com/s/q7BI-YyhtmNzUfBMTKVdqQ
+
+Hitting time analysis of SGLD！
+
+https://mp.weixin.qq.com/s/vt7BEHbwJrAzlL2Pc-6QFg
+
+掌握机器学习数学基础之优化（上）
+
+https://mp.weixin.qq.com/s/6NBLLLa-S625iaehR8zDfQ
+
+掌握机器学习数学基础之优化（下）
+
+https://mp.weixin.qq.com/s/o10Fp2VCwoLqgzirbGL9LQ
+
+如何估算深度神经网络的最优学习率
+
+https://mp.weixin.qq.com/s/T4f4W0V6YNBbjWqWBF19mA
+
+目标函数的经典优化算法介绍
+
+https://mp.weixin.qq.com/s/R_0_E5Ieaj9KiWgg1prxeg
+
+为什么梯度的方向与等高线切线方向垂直？
+
+https://mp.weixin.qq.com/s/0gdGNv98DytB8KxwVu_M0A
+
+通俗易懂讲解Deep Learning最优化方法之AdaGrad
+
+https://mp.weixin.qq.com/s/VVHe2msyeUTGiC7f_f0FFA
+
+一文概览深度学习中的五大正则化方法和七大优化策略
+
+https://mp.weixin.qq.com/s/qp5tJynA2uZIgv-IzJ_lrA
+
+从基础知识到实际应用，一文了解“机器学习非凸优化技术”
+
+https://mp.weixin.qq.com/s/zFGQzC_uQdAwlr9BzA-CYg
+
+深度学习需要了解的四种神经网络优化算法
+
+https://mp.weixin.qq.com/s/rUqIfKWmEBVjajlAn2HXfg
+
+理解深度学习中的学习率及多种选择策略
+
+https://mp.weixin.qq.com/s/UfplwSgyWnLNiCdIrconhA
+
+SGD的那些变种，真的比SGD强吗
+
+https://zhuanlan.zhihu.com/p/73441350
+
+从物理角度理解加速梯度下降
 
 https://mp.weixin.qq.com/s/n1Ks8I3Ldgb-u-kVbGBZ5Q
 
@@ -181,3 +301,7 @@ https://mp.weixin.qq.com/s/B9nUwPtgpsLkEyCOlSAO5A
 https://mp.weixin.qq.com/s/dseeCB-CRtZnzC3d4_8pYw
 
 AMSGrad能够取代Adam吗
+
+https://zhuanlan.zhihu.com/p/81020717
+
+从SGD到NadaMax，十种优化算法原理及实现

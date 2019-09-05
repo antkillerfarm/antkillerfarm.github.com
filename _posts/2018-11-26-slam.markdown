@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/8KOQYtL8QgCNimGSxA1dgA
 
 视觉惯性里程计(VIO)
 
+https://mp.weixin.qq.com/s/rjM1dQi-De_5hiwF4UkGNA
+
+首篇单目无监督深度估计与视觉里程计，效果超越双目算法，已开源
+
 https://mp.weixin.qq.com/s/VgHVSecXhBHIdiSnS2MAjg
 
 视觉惯性导航：一个简明的概述
@@ -269,6 +273,10 @@ DSO（direct sparse odometry）之求导篇
 https://zhuanlan.zhihu.com/p/78602108
 
 用四元数插值来对齐IMU和图像帧
+
+https://mp.weixin.qq.com/s/Zf_Fl-kyHqSNetb-Pa58xg
+
+自动驾驶是怎样工作的？SLAM介绍
 
 ## 张正友标定算法
 

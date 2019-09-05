@@ -292,6 +292,10 @@ https://mp.weixin.qq.com/s/mGgOhuF5PVWzB5cie_ox0A
 
 Github上10个开源免费的后台控制面板你值得拥有！
 
+https://mp.weixin.qq.com/s/BpruKFMyL37MDXvzkMxnzQ
+
+技术人最不该忽视可视化数据分析
+
 ## howmuch.net
 
 howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：

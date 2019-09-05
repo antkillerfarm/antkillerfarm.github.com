@@ -382,6 +382,10 @@ https://mp.weixin.qq.com/s/vbTR1A0rgzCQY8XG70SNPQ
 
 了不起的MEMS发明人
 
+https://mp.weixin.qq.com/s/kO5yy7x0r3LhttBhLVpT5w
+
+固态激光雷达研究进展
+
 # 知名AI公司技术主页
 
 http://uber.ai/

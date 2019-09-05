@@ -342,6 +342,10 @@ https://github.com/ctripcorp/C-OCR
 
 携程自研的OCR项目
 
+https://mp.weixin.qq.com/s/fZN8mtZdB4Fd6gj2dAKURw
+
+金连文：“文字检测与识别：现状及展望”
+
 # NetVLAD
 
 NetVLAD算的上是CNN+传统算子的一个范例。

@@ -394,6 +394,10 @@ https://mp.weixin.qq.com/s/kJhOrz0VaYc-k-6XJS02ag
 
 8篇论文梳理BERT相关模型进展与反思
 
+https://mp.weixin.qq.com/s/-eBL9gFbAGFtmqkLMAoUTw
+
+文本+视觉，多篇Visual/Video BERT论文介绍
+
 # Attention进阶
 
 https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA

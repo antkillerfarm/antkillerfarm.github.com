@@ -42,6 +42,48 @@ https://mp.weixin.qq.com/s/i79W79Z3ujRnHRBl81kvvA
 
 最新版《机器学习数学基础》发布，417页PDF免费下载
 
+# Actor-Critic
+
+## 概述（续）
+
+基于Actor-Critic策略梯度学习分为两部分内容：
+
+1.Critic：更新action-value函数的参数w。
+
+2.Actor：按照Critic得到的价值，引导策略函数参数$$\theta$$的更新。
+
+$$\nabla_\theta J(\theta)\approx E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a)Q_w(s,a)]$$
+
+$$\Delta \theta = \alpha \nabla_\theta \log \pi_\theta(s,a)Q_w(s,a)$$
+
+可以看出，Critic做的事情其实是我们已经见过的：策略评估，他要告诉个体，在由参数$$\theta$$确定的策略$$\pi_\theta$$到底表现得怎么样。
+
+## Compatible Function Approximation
+
+近似策略梯度的方法引入了Bias，从而得到的策略梯度不一定能最后找到较好的解决方案，例如当近似价值函数引起状态重名的特征时。
+
+幸运的是，如果我们小心设计近似函数，是可以避免引入bias的。
+
+
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/51652845
+
+强化学习这都学不会的话，咳咳，你过来下！
+
+https://zhuanlan.zhihu.com/p/70360272
+
+最前沿：深度解读Soft Actor-Critic算法
+
+https://mp.weixin.qq.com/s/ce9W3FbLdsqAEyvw6px_RA
+
+Actor Critic——一个融合基于策略梯度和基于值优点的强化学习算法
+
+https://mp.weixin.qq.com/s/c4xoy4CJ_hsVdmGe1n3rTQ
+
+A3C——一种异步强化学习方法
+
 # 模仿学习
 
 https://zhuanlan.zhihu.com/p/27935902
