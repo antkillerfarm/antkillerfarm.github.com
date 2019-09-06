@@ -24,6 +24,12 @@ https://github.com/macanv/BERT-BiLSMT-CRF-NER
 
 ![](/images/img2/BERT.png)
 
+这里有一个可视化工具：
+
+https://github.com/jessevig/bertviz
+
+Tool for visualizing attention in the Transformer model (BERT, GPT-2, XLNet, and RoBERTa)
+
 ## ELMo
 
 https://mp.weixin.qq.com/s/I315hYPrxV0YYryqsUysXw
@@ -397,17 +403,3 @@ https://mp.weixin.qq.com/s/kJhOrz0VaYc-k-6XJS02ag
 https://mp.weixin.qq.com/s/-eBL9gFbAGFtmqkLMAoUTw
 
 文本+视觉，多篇Visual/Video BERT论文介绍
-
-# Attention进阶
-
-https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA
-
-阿里北大提出新attention建模框架，一个模型预测多种行为
-
-https://mp.weixin.qq.com/s/Yq3S4WrsQRQC06GvRgGjTQ
-
-打入神经网络思维内部
-
-https://mp.weixin.qq.com/s/MJ1578NdTKbjU-j3Uuo9Ww
-
-基于文档级问答任务的新注意力模型

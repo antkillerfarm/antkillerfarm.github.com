@@ -70,6 +70,38 @@ $$\nabla_w Q_w(s,a)=\nabla_\theta \log \pi_\theta(s,a)$$
 
 - 价值函数参数w使得均方差最小：
 
+$$\epsilon = E_{\pi_\theta}[(Q^{\pi_\theta}(s,a)-Q_w(s,a))^2]$$
+
+符合这两个条件，则认为策略梯度是准确的，即：
+
+$$\nabla_\theta J(\theta)= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a)Q_w(s,a)]$$
+
+## Reducing Variance Using Baseline
+
+除了bias之外，variance也是需要考虑的方面。
+
+我们从策略梯度里抽出一个基准函数B(s)，要求这一函数仅与状态有关，而与行为无关，因而不改变梯度本身。
+
+$$E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a)B(s)] = \sum_{s\in S} d^{\pi_\theta}(s)\sum_{a\in A}\nabla_\theta \pi_\theta(s,a)B(s)\\= \sum_{s\in S} d^{\pi_\theta}(s)B(s) \nabla_\theta \sum_{a\in A} \pi_\theta(s,a) = 0$$
+
+由于B(s)与行为无关，可以将其从针对行为a的求和中提出来，同时我们也可以把梯度从求和符号中提出来，而最后一个求和项：策略函数针对所有行为的求和，根据策略函数的定义，这里的结果肯定是1。而常数的梯度是0，因此总的结果等于0。
+
+原则上，和行为无关的函数都可以作为B(s)。一个很好的B(s)就是基于当前状态的状态价值函数：$$V^{\pi_\theta}(s)$$。
+
+所以，我们可以用一个advantage function来改写策略梯度：
+
+$$A^{\pi_\theta}(s,a)=Q^{\pi_\theta}(s,a)-V^{\pi_\theta}(s)$$
+
+$$\nabla_\theta J(\theta)= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a)A^{\pi_\theta}(s,a)]$$
+
+advantage function可以明显减少状态价值的variance，因此，现在Critic的任务就改为估计advantage function。
+
+在这种情况下，我们需要两个近似函数也就是两套参数，一套用来近似状态价值函数，一套用来近似行为价值函数。即：
+
+$$V^{\pi_\theta}(s)\approx V^{\pi_\theta}(s)$$
+
+$$V^{\pi_\theta}(s)\approx V^{\pi_\theta}(s)$$
+
 $$$$
 
 ## 参考

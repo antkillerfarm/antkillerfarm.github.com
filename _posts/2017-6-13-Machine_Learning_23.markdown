@@ -305,3 +305,7 @@ AMSGrad能够取代Adam吗
 https://zhuanlan.zhihu.com/p/81020717
 
 从SGD到NadaMax，十种优化算法原理及实现
+
+https://zhuanlan.zhihu.com/p/22252270
+
+深度学习最全优化方法总结比较（SGD，Adagrad，Adadelta，Adam，Adamax，Nadam）

@@ -346,6 +346,10 @@ https://mp.weixin.qq.com/s/fZN8mtZdB4Fd6gj2dAKURw
 
 金连文：“文字检测与识别：现状及展望”
 
+https://mp.weixin.qq.com/s/_GU5y7v8HNDOjEGvWh8Fkw
+
+旷视研究院提出文字检测新方法：像素聚合网络PAN
+
 # NetVLAD
 
 NetVLAD算的上是CNN+传统算子的一个范例。

@@ -281,3 +281,11 @@ https://mp.weixin.qq.com/s/RLe5E7rjqbKWxkE4Bpe7uw
 https://mp.weixin.qq.com/s/Enc_bG3bL04ZCUDUTje75w
 
 DeepMind提图像生成的递归神经网络DRAW，158行Python代码复现
+
+https://mp.weixin.qq.com/s/vCIpaFUTYggzN9YWs14atw
+
+让遥感图像活起来：遥感图像描述生成的模型与数据集探索
+
+https://mp.weixin.qq.com/s/Wd4n5WnbPBW8CCDWwNGCAA
+
+西北工业大学发布最新遥感图像目标检测综述论文和Benchmark，带你全面了解遥感图像检测方法

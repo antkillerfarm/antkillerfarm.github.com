@@ -397,3 +397,11 @@ https://zhuanlan.zhihu.com/p/26461511
 https://speechlab.sjtu.edu.cn/pages/sz128/homepage/year/10/27/survey-on-grammar-retrieval/
 
 论文调研：基于“规则、槽值”检索的口语语义理解
+
+https://mp.weixin.qq.com/s/BdvBV542AZnMw7hnjDSwWw
+
+百度语义计算技术及其应用
+
+https://mp.weixin.qq.com/s/KQPLDhnlxks4DQNZEhEacQ
+
+百度阅读理解技术研究及应用

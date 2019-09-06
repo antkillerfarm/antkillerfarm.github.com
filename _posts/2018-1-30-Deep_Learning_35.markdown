@@ -310,6 +310,10 @@ https://mp.weixin.qq.com/s/d-VKoQ6FG8myyCHrFlQAYw
 
 Tensorflow Lite人体姿势跟踪功能上线：基于PosNet的实时人体姿态估计
 
+https://mp.weixin.qq.com/s/EstNudSuFKEYEc-G3KXEeQ
+
+微软开源跨视图融合的3D人体姿态估计算法，大幅改进SOTA精度
+
 # Capsule
 
 https://github.com/freefuiiismyname/capsule-mrc

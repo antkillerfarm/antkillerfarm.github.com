@@ -198,10 +198,6 @@ https://mp.weixin.qq.com/s/uK7oQUvuatsCK6WPas3Igg
 
 AI与深度学习重点回顾：Denny Britz眼中的2017
 
-https://mp.weixin.qq.com/s/vCIpaFUTYggzN9YWs14atw
-
-让遥感图像活起来：遥感图像描述生成的模型与数据集探索
-
 https://mp.weixin.qq.com/s/-5zADACehIzB_XYuGn2DKg
 
 简化标注者工作：Google等学者提出基于智能对话的边界框标注方法

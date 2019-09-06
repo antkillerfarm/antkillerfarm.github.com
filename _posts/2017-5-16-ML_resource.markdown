@@ -52,7 +52,7 @@ https://github.com/masinoa/machine_learning
 
 一个python写的算法示例库
 
-## 文章
+## 参考
 
 http://www.open-open.com/lib/view/open1420687784625.html
 
@@ -149,6 +149,18 @@ https://mp.weixin.qq.com/s/0QMjw2cfZu_31BWfpKXMbg
 http://mp.weixin.qq.com/s/lvGPcID0f8Jark8ag5NGfQ
 
 机器学习面试题目总结
+
+https://www.cnblogs.com/hankleo/p/9919959.html
+
+数据科学家成长指南(上)
+
+https://www.cnblogs.com/hankleo/p/9919960.html
+
+数据科学家成长指南(中)
+
+https://www.cnblogs.com/hankleo/p/9919961.html
+
+数据科学家成长指南(下)
 
 https://mp.weixin.qq.com/s/Fa7P3v969JRr6OOAyrGptA
 

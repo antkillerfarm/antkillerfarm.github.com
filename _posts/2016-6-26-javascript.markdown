@@ -296,7 +296,7 @@ http://daneden.github.io/animate.css/
 
 http://www.dowebok.com/98.html
 
-animate.css – 齐全的CSS3动画库
+animate.css–齐全的CSS3动画库
 
 ### Step1：事件触发动画
 

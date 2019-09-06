@@ -72,6 +72,10 @@ https://mp.weixin.qq.com/s/WBab6k4mIkZNzpvbgSbpVQ
 
 一文看懂SiP封装技术
 
+https://mp.weixin.qq.com/s/S-YGgvE6ey2t9_YmVmKOFg
+
+一份难得的MOS管封装分析报告
+
 ## NUMA
 
 ![](/images/img2/NUMA.jpg)

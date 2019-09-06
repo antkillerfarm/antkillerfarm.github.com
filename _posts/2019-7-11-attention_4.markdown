@@ -4,7 +4,19 @@ title:  Attention（四）——Attention进阶
 category: Attention 
 ---
 
-# Attention进阶（续）
+# Attention进阶
+
+https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA
+
+阿里北大提出新attention建模框架，一个模型预测多种行为
+
+https://mp.weixin.qq.com/s/Yq3S4WrsQRQC06GvRgGjTQ
+
+打入神经网络思维内部
+
+https://mp.weixin.qq.com/s/MJ1578NdTKbjU-j3Uuo9Ww
+
+基于文档级问答任务的新注意力模型
 
 https://mp.weixin.qq.com/s/C4f0N_bVWU9YPY34t-HAEA
 

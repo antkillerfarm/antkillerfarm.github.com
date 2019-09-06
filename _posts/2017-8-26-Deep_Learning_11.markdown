@@ -333,3 +333,7 @@ https://mp.weixin.qq.com/s/MsIAkJAcYHWkkMjzd7qXKA
 https://mp.weixin.qq.com/s/IdUhvWJYviKtPs9jCbtybA
 
 元知识图谱推理
+
+https://www.zhihu.com/question/291656490
+
+求问meta-learning和few-shot learning的关系是什么？

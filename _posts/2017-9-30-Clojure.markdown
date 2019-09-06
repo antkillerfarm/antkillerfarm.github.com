@@ -34,6 +34,10 @@ https://mp.weixin.qq.com/s/c1bMljAx1QWz9QQJX7sHmg
 
 大部分教程不会告诉你的12个JS技巧
 
+https://www.jianshu.com/p/c8b86b09daf0
+
+函数防抖和节流
+
 # Clojure
 
 Clojure是Lisp语言在JVM上的实现。源代码以.clj为后缀。
