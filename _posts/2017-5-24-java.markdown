@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Java, Javascript（二）, VS, Kotlin
+title:  Java, Javascript（二）
 category: language 
 ---
 
@@ -302,6 +302,24 @@ https://www.cnblogs.com/fastmover/p/7779660.html
 
 D3.js从入门到“放弃”指南
 
+## TypeScript
+
+TypeScript是JavaScript的一个超集，而且本质上向这个语言添加了可选的静态类型和基于类的面向对象编程。
+
+官网：
+
+https://www.typescriptlang.org/
+
+安装：
+
+`npm install -g typescript`
+
+TypeScript文件的后缀是`.ts`，它不能直接在浏览器中运行，而需要编译成JS才能运行。也正因为如此，TS并没有什么兼容性问题。
+
+编译：
+
+`tsc helloworld.ts`
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/22989691
@@ -328,46 +346,34 @@ https://mp.weixin.qq.com/s/Sjg6jgl1D6IkYgsuQSgFHg
 
 十个最流行的前端CSS库
 
-# VS
+https://zhuanlan.zhihu.com/p/35551654
 
-## 分栏显示
+基于React的高质量坦克大战复刻版
 
-1.Window -> New Window
+https://mp.weixin.qq.com/s/zfOZAmgpndcqgxHHaS1j3g
 
-2.Window -> New Vertical Tab Group
+用Vue和React构建相同应用程序，区别在哪？
 
-## Visual Studio Tab转换为空格的设置
+https://mp.weixin.qq.com/s/DHxEqsTMOyc7pHfmJrfNEg
 
-打开“Tools --> Options --> Text Editor”，如果是编写C/C++程序，就打开“C/C++-->Tabs”，在这里，选中“Insert spaces”即可。
+一篇文章理解JS继承
 
-## 离线安装
+https://mp.weixin.qq.com/s/tNi5LJmotuXSoHbZhNgPcw
 
-VS2015以后，MS不再提供VS的离线安装包，因为安装文件实在是太大了（10GB+），取而代之的是offline模式。
+GitHub已完全弃用jQuery，问题是为什么？
 
-1.首先下载在线安装器vs_community.exe，打开命令行：
+https://mp.weixin.qq.com/s/WHh9v3icCc90PwiLyv0Hng
 
-`vs_community.exe --layout D:\vs2017\offline --lang zh-CN`
+为什么Facebook的API以一个循环作为开头？
 
-2.安装证书。证书在offline\certificates下。
+https://mp.weixin.qq.com/s/GQ2azFxcmXrY78rTAdxuVA
 
-3.运行运行offline\vs_community.exe。
+JS/CSS体积减少了67%，我们是如何做到的？
 
-# Kotlin
+https://mp.weixin.qq.com/s/c1bMljAx1QWz9QQJX7sHmg
 
-Kotlin是一门编程语言，由JetBrains公司开发，与Java 100%互通。
+大部分教程不会告诉你的12个JS技巧
 
-官网：
+https://www.jianshu.com/p/c8b86b09daf0
 
-http://kotlinlang.org/
-
-官网文档：
-
-http://kotlinlang.org/docs/reference/android-overview.html
-
-国内中文文档：
-
-https://huanglizhuo.gitbooks.io/kotlin-in-chinese/content/
-
-国内中文文档2：
-
-http://www.liying-cn.net/kotlin/docs/reference/
+函数防抖和节流

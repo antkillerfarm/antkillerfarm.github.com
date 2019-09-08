@@ -329,3 +329,7 @@ KBQA从入门到放弃—入门篇
 https://mp.weixin.qq.com/s/-Zz5Cv4QJaRHdBFrGyBuLg
 
 KBQA从入门到放弃 - Part 2
+
+https://mp.weixin.qq.com/s/efID_R9ajL34P95eGKkrQA
+
+华为推出AI诗人“乐府”：唐诗宋词都不在话下，我竟一时分不出真假

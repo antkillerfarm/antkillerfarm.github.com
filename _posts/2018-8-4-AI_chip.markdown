@@ -132,7 +132,7 @@ Huawei的AI芯片项目大约启动于2016年底，算是布局比较晚的了�
 
 官网：
 
-https://www.huawei.com/minisite/ascend/cn/
+https://ascend.huawei.com/home
 
 Model Zoo：
 

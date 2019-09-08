@@ -96,4 +96,38 @@ https://mp.weixin.qq.com/s/3-6T0YS0UsbWndu1xgrW_A
 
 https://mp.weixin.qq.com/s/ct3wknW9b9oZBoXwZTh-Fg
 
-面试官问我：一个 TCP 连接可以发多少个 HTTP 请求？我竟然回答不上来...
+面试官问我：一个TCP连接可以发多少个HTTP请求？我竟然回答不上来...
+
+https://mp.weixin.qq.com/s/Btlj2A329KUbRU9It79OKQ
+
+面试环节：在浏览器输入URL回车之后发生了什么？
+
+## QUIC
+
+Quic全称quick udp internet connection，“快速UDP互联网连接”，是由google提出的使用udp进行多路并发传输的协议。
+
+Quic相比现在广泛应用的http2+tcp+tls协议有如下优势：
+
+1.减少了TCP三次握手及TLS握手时间。
+
+2.改进的拥塞控制。
+
+3.避免队头阻塞的多路复用。
+
+4.连接迁移。
+
+5.前向冗余纠错。
+
+参考：
+
+https://mp.weixin.qq.com/s/vpz6bp3PT1IDzZervyOfqw
+
+QUIC协议原理分析
+
+https://mp.weixin.qq.com/s/_RAXrlGPeN_3D6dhJFf6Qg
+
+让互联网更快的协议，QUIC在腾讯的实践及性能优化
+
+https://zhuanlan.zhihu.com/p/68012355
+
+HTTP/3竟然基于UDP，HTTP协议这些年都经历了啥？（HTTP/3之前名为HTTP-over-QUIC）

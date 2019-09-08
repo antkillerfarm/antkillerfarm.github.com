@@ -198,6 +198,10 @@ https://mp.weixin.qq.com/s/kAP8MMjTjVyeBPcpY5E1FQ
 
 障碍物行为预测技术
 
+https://mp.weixin.qq.com/s/VwLNq84Nmg5--yTHlRdSJA
+
+深度学习在道路封闭挖掘方案的探索与实践
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。

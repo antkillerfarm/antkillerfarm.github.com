@@ -93,3 +93,11 @@ https://mp.weixin.qq.com/s/Nkxy0SUdbwIjp5swU6tS9g
 https://mp.weixin.qq.com/s/I08kMmUohWWbYVpPDgTJsw
 
 Startdt AI提出：使用生成对抗网络用于One-Stage目标检测的知识蒸馏方法
+
+https://mp.weixin.qq.com/s/yFyM5OVp1YLKQBlgXeAzhw
+
+华为诺亚方舟实验室提出无需数据网络压缩技术
+
+https://mp.weixin.qq.com/s/a0d0b1jSm5HxHso9Lz8MSQ
+
+小版BERT也能出奇迹：最火的预训练语言库探索小巧之路

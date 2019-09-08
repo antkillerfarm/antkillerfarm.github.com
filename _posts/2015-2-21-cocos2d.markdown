@@ -10,12 +10,6 @@ cocos2d和cocos2d-x虽然都是一家的产品，但前者是用python写的，�
 
 我试着在windows下安装cocos2d，没有什么问题。但在ubuntu下安装的时候，运行demo，程序会出错。看错误提示，错误是出在pyglet这个包里。由于一时间没有好的办法解决，所以就此终止，换用cocos2d-x。
 
-安装过程参见以下文章:
-
-http://www.cocos2d-x.org/wiki/How_to_run_cpp-tests_on_Linux
-
-要点摘录如下:
-
 {% highlight bash %}
 $ cd $cocos2dx_root/build
 $ ./install-deps-linux.sh
@@ -28,12 +22,6 @@ $ ./cpp-tests
 {% endhighlight %}
 
 # 新建工程
-
-参见以下文章:
-
-http://www.cocos2d-x.org/wiki/How_to_Start_A_New_Cocos2D-X_Game
-
-要点摘录如下:
 
 {% highlight bash %}
 $ cd cocos2d-x
@@ -158,9 +146,9 @@ CMakeLists.txt在代码的不同文件夹中有很多个。其中以工程根文
 2.实现动画结束之后触发动作
 
 {% highlight cpp %}
-sprite->runAction(Sequence::create(action, 
-	CallFunc::create(CC_CALLBACK_0(
-	HelloWorld::AnimationFinished, this)), nullptr));
+sprite->runAction(Sequence::create(action,
+  CallFunc::create(CC_CALLBACK_0(
+  HelloWorld::AnimationFinished, this)), nullptr));
 
 void HelloWorld::AnimationFinished();
 {% endhighlight %}
@@ -175,23 +163,23 @@ sprite->runAction(RepeatForever::create(
 4.update操作
 
 {% highlight cpp %}
-bool HelloWorld::init()  
-{  
-...  
-        //每帧更新一次  方式一  
-        scheduleUpdate();  
-        //效果同上 方式儿  
-        //schedule(schedule_selector(HelloWorld::update));  
-        //每秒更新一次  
-        schedule(schedule_selector(HelloWorld::hUpdate),1.0f);  
-  
-        //停止默认的更新函数 对方式二没用  
-        //unscheduleUpdate();  
-        //停止自定义的更新函数 对方式一没用  
-        //unschedule(schedule_selector(HelloWorld::update));  
-        //停止所有的更新函数 对方式一和方式二都有用  
-        unscheduleAllSelectors();  
-...  
+bool HelloWorld::init()
+{
+...
+  //每帧更新一次  方式一
+  scheduleUpdate();
+  //效果同上 方式儿
+  //schedule(schedule_selector(HelloWorld::update));
+  //每秒更新一次
+  schedule(schedule_selector(HelloWorld::hUpdate),1.0f);
+
+  //停止默认的更新函数 对方式二没用
+  //unscheduleUpdate();
+  //停止自定义的更新函数 对方式一没用
+  //unschedule(schedule_selector(HelloWorld::update));
+  //停止所有的更新函数 对方式一和方式二都有用
+  unscheduleAllSelectors();
+...
 }
 void HelloWorld::update(float dt);
 void HelloWorld::hUpdate(float dt);
@@ -283,35 +271,25 @@ DisplayLinkDirector::mainLoop
 
 Director::drawScene
 
-# QUIC
+# 游戏资源
 
-Quic全称quick udp internet connection，“快速UDP互联网连接”，是由google提出的使用udp进行多路并发传输的协议。
+https://opengameart.org
 
-Quic相比现在广泛应用的http2+tcp+tls协议有如下优势：
+https://game-icons.net/
 
-1.减少了TCP三次握手及TLS握手时间。
+# 特效制作
 
-2.改进的拥塞控制。
+https://blog.csdn.net/u011387817/article/details/94607919
 
-3.避免队头阻塞的多路复用。
+Android自定义Drawable第十四式之百步穿杨
 
-4.连接迁移。
+# 2019.8
 
-5.前向冗余纠错。
+随着对python的熟悉，以及python本身生态的完善，cocos2d的安装已经比较简单了。
 
-参考：
+`pip install cocos2d`
 
-https://mp.weixin.qq.com/s/vpz6bp3PT1IDzZervyOfqw
-
-QUIC协议原理分析
-
-https://mp.weixin.qq.com/s/_RAXrlGPeN_3D6dhJFf6Qg
-
-让互联网更快的协议，QUIC在腾讯的实践及性能优化
-
-https://zhuanlan.zhihu.com/p/68012355
-
-HTTP/3竟然基于UDP，HTTP协议这些年都经历了啥？（HTTP/3之前名为HTTP-over-QUIC）
+cocos2d-x的编译步骤变化不大，只是好多第三方库已经prebuilt好了，用起来更方便了。然而，由于官方对ubuntu的支持才到14.04，因此有些prebuilt库实际上是用不了的，需要用新版本ubuntu软件仓库中的同名文件替换之。
 
 # OpenWrt配置篇（续）
 

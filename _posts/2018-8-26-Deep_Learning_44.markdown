@@ -126,6 +126,10 @@ https://mp.weixin.qq.com/s/AbCxbG4NJvvZ1WLNze_HuQ
 
 拍照太糊？你需要了解下美图人像画质修复技术
 
+https://mp.weixin.qq.com/s/rdN8-h33Hyulx4Cq3Anr4g
+
+程序员完美复现了谷歌 DeepMind 图像生成神器（DRAW）
+
 # 三维处理
 
 https://github.com/timzhang642/3D-Machine-Learning

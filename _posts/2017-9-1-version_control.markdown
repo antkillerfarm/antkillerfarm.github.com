@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  版本管理工具的前世今生, Kannel, Win10历险记, 运维工具集, Android研究（二）
+title:  版本管理工具的前世今生, Kannel, Win10历险记, 运维工具集, Android研究（二）, ANTLR
 category: technology 
 ---
 
@@ -106,11 +106,17 @@ https://jenkins.io/index.html
 
 gitlab管理代码版本，触发jenkins自动构建+测试，然后走迭代或者发布，全部环境都在docker内。
 
+和Jenkins同类型的工具还有Travis CI。
+
 参考：
 
 https://mp.weixin.qq.com/s/jcpynCa6CToITUGD9hRylw
 
 推荐10款最佳Jenkins插件
+
+www.ruanyifeng.com/blog/2017/12/travis_ci_tutorial.html
+
+持续集成服务Travis CI教程
 
 ## Walle
 
@@ -227,3 +233,29 @@ Android整体设计及背后意义
 https://mp.weixin.qq.com/s/eEuNPtTaPwJ7hSghgeU32g
 
 Android Hook技术防范漫谈
+
+# ANTLR
+
+ANTLR—Another Tool for Language Recognition，其前身是PCCTS，它为包括Java，C++，C#,python在内的语言提供了一个通过语法描述来自动构造自定义语言的识别器（recognizer），编译器（parser）和解释器（translator）的框架。
+
+官网：
+
+http://www.antlr.org/
+
+参考：
+
+http://yuzhouwan.com/posts/55501/
+
+Antlr
+
+https://www.ibm.com/developerworks/cn/java/j-lo-antlr/index.html
+
+使用Antlr开发领域语言
+
+# MPS
+
+MPS是jetbrains推出的用于构建DSL的工具。
+
+官网：
+
+https://www.jetbrains.com/mps/

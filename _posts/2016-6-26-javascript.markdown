@@ -148,6 +148,10 @@ https://www.npmjs.com/
 
 可用于搜索有用的软件包，避免重复造轮子。
 
+国内镜像：
+
+https://npm.taobao.org
+
 npm有两种安装方式：
 
 1.本地安装。

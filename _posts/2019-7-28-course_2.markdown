@@ -42,6 +42,10 @@ https://mp.weixin.qq.com/s/i79W79Z3ujRnHRBl81kvvA
 
 最新版《机器学习数学基础》发布，417页PDF免费下载
 
+https://mp.weixin.qq.com/s/HBUI9-jMa3otnB-Qq_eg5A
+
+悉尼科大徐亦达教授：机器学习讲义，32份主题推介
+
 # Actor-Critic
 
 ## 概述（续）
@@ -98,11 +102,13 @@ advantage function可以明显减少状态价值的variance，因此，现在Cri
 
 在这种情况下，我们需要两个近似函数也就是两套参数，一套用来近似状态价值函数，一套用来近似行为价值函数。即：
 
-$$V^{\pi_\theta}(s)\approx V^{\pi_\theta}(s)$$
+$$V_v(s)\approx V^{\pi_\theta}(s)$$
 
-$$V^{\pi_\theta}(s)\approx V^{\pi_\theta}(s)$$
+$$Q_w(s,a)\approx Q^{\pi_\theta}(s,a)$$
 
-$$$$
+$$A(s,a) = Q_w(s,a) - V_v(s)$$
+
+
 
 ## 参考
 

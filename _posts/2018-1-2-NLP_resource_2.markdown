@@ -198,6 +198,10 @@ https://mp.weixin.qq.com/s/XeMncQJWIFpXRTDCzcIpJw
 
 NLP中命名实体识别从机器学习到深度学习的代表性研究
 
+https://blog.csdn.net/xiaosongshine/article/details/99622170
+
+NLP命名实体识别(NER)开源实战教程
+
 ## 文本摘要
 
 https://mp.weixin.qq.com/s/jk1XgnuydrsTg3HvV0CVvw

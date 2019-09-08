@@ -200,6 +200,10 @@ topK算法问题
 
 ## 参考
 
+BFS：Breadth First Search
+
+DFS：Depth First Search
+
 https://mp.weixin.qq.com/s/52JFdyaLwZq7nWiZq6z6qA
 
 二叉堆是什么鬼？

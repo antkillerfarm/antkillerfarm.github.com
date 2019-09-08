@@ -164,6 +164,10 @@ https://mp.weixin.qq.com/s/jqK5A8YTVL3iOKPjKdd6YQ
 
 浙大陈华钧教授《知识图谱导论》课程系列PPT
 
+https://mp.weixin.qq.com/s/WyB5Lssy9c0qJt8Ze7a0Ig
+
+中文知识图谱构建技术以及应用的综述
+
 https://mp.weixin.qq.com/s/iqFXvhvYfOejaeNAhXxJEg
 
 当知识图谱遇上聊天机器人

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Cocos2d-x v3在Qt 5上的移植, lex&yacc, ANTLR
+title:  Cocos2d-x v3在Qt 5上的移植, lex&yacc
 category: technology 
 ---
 
@@ -101,6 +101,22 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/Qt/qt_cmake
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/Qt/qt_cmake1
 
+## 例子三
+
+这是一个qmake转cmake的Qt+OpenGL的示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/Qt/MyOpenGL
+
+遇到cmake问题时，查看具体的命令执行是很有帮助的：
+
+`make VERBOSE=1`
+
+## 例子四
+
+这是一个在上例基础上添加OpenGL Shader实现的例子：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/Qt/opengl_shader
+
 # Step 1
 
 有了之前的介绍之后，我们现在就可以使用cocos2d-x的编译环境来编译Qt程序。
@@ -179,7 +195,7 @@ https://github.com/ascetic85/quick-cocos2d-x-20130509
 
 这个代码有些老，是基于cocos2d-x v2的，但是基本的思路是一样的。
 
-# lex&yacc （2014.2）
+# lex&yacc（2014.2）
 
 * 前言
 
@@ -233,30 +249,3 @@ stmt_list:
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/mylex
 
 这里使用的是lex/yacc在linux上现代版本——flex/bison。
-
-# ANTLR
-
-ANTLR—Another Tool for Language Recognition，其前身是PCCTS，它为包括Java，C++，C#,python在内的语言提供了一个通过语法描述来自动构造自定义语言的识别器（recognizer），编译器（parser）和解释器（translator）的框架。
-
-官网：
-
-http://www.antlr.org/
-
-参考：
-
-http://yuzhouwan.com/posts/55501/
-
-Antlr
-
-https://www.ibm.com/developerworks/cn/java/j-lo-antlr/index.html
-
-使用Antlr开发领域语言
-
-# MPS
-
-MPS是jetbrains推出的用于构建DSL的工具。
-
-官网：
-
-https://www.jetbrains.com/mps/
-

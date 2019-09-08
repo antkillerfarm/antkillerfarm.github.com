@@ -38,6 +38,10 @@ https://zhuanlan.zhihu.com/p/80297169
 
 快速数论变换（NTT）及蝴蝶操作构造详解
 
+https://mp.weixin.qq.com/s/fLGCBeSc8yQVsXHLSdogrA
+
+柯尔莫哥洛夫惨遭打脸，没想到这个乘法难题被澳大利亚数学家解决了！
+
 ## Strassen algorithm
 
 ![](/images/img3/Strassen.png)

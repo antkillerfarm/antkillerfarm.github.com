@@ -370,30 +370,6 @@ https://www.huaweicloud.com/product/ai-modelarts.html
 
 华为云AI开发平台ModelArts
 
-## 编译原理
-
-https://zhuanlan.zhihu.com/frozengene
-
-一个编译器方面的专栏
-
-http://frozengene.github.io/
-
-一个LLVM方面的blog
-
-https://zhuanlan.zhihu.com/p/28637279
-
-使用LLVM + PLY实现一个C语言子集的玩具编译器
-
-![](/images/img3/ART.png)
-
-https://mp.weixin.qq.com/s/vnaI8FwB4Ot46weAgq18Eg
-
-华为新贵！方舟编译器的荣光和使命
-
-https://www.zhihu.com/question/344231876/answer/812481811
-
-周志德（Fred Chow)
-
 ## 科研人生
 
 https://mp.weixin.qq.com/s/6gX1UFSykuzw358ARUzifw

@@ -1,42 +1,8 @@
 ---
 layout: post
-title:  Clojure, Groovy, Lisp, Javascript在客户端的使用, perl, Scala, VS Code
+title:  Clojure, Groovy, Lisp, Javascript在客户端的使用, perl, Scala, VS Code, VS, Kotlin
 category: language 
 ---
-
-# Javascript（续）
-
-https://zhuanlan.zhihu.com/p/35551654
-
-基于React的高质量坦克大战复刻版
-
-https://mp.weixin.qq.com/s/zfOZAmgpndcqgxHHaS1j3g
-
-用Vue和React构建相同应用程序，区别在哪？
-
-https://mp.weixin.qq.com/s/DHxEqsTMOyc7pHfmJrfNEg
-
-一篇文章理解JS继承
-
-https://mp.weixin.qq.com/s/tNi5LJmotuXSoHbZhNgPcw
-
-GitHub已完全弃用jQuery，问题是为什么？
-
-https://mp.weixin.qq.com/s/WHh9v3icCc90PwiLyv0Hng
-
-为什么Facebook的API以一个循环作为开头？
-
-https://mp.weixin.qq.com/s/GQ2azFxcmXrY78rTAdxuVA
-
-JS/CSS体积减少了67%，我们是如何做到的？
-
-https://mp.weixin.qq.com/s/c1bMljAx1QWz9QQJX7sHmg
-
-大部分教程不会告诉你的12个JS技巧
-
-https://www.jianshu.com/p/c8b86b09daf0
-
-函数防抖和节流
 
 # Clojure
 
@@ -313,3 +279,47 @@ VsCode插件安装及推荐
 https://mp.weixin.qq.com/s/cw_Bww22sgPtOeNLKQ7HHA
 
 如何使用Visual Studio Code进行Java开发？
+
+# VS
+
+## 分栏显示
+
+1.Window -> New Window
+
+2.Window -> New Vertical Tab Group
+
+## Visual Studio Tab转换为空格的设置
+
+打开“Tools --> Options --> Text Editor”，如果是编写C/C++程序，就打开“C/C++-->Tabs”，在这里，选中“Insert spaces”即可。
+
+## 离线安装
+
+VS2015以后，MS不再提供VS的离线安装包，因为安装文件实在是太大了（10GB+），取而代之的是offline模式。
+
+1.首先下载在线安装器vs_community.exe，打开命令行：
+
+`vs_community.exe --layout D:\vs2017\offline --lang zh-CN`
+
+2.安装证书。证书在offline\certificates下。
+
+3.运行运行offline\vs_community.exe。
+
+# Kotlin
+
+Kotlin是一门编程语言，由JetBrains公司开发，与Java 100%互通。
+
+官网：
+
+http://kotlinlang.org/
+
+官网文档：
+
+http://kotlinlang.org/docs/reference/android-overview.html
+
+国内中文文档：
+
+https://huanglizhuo.gitbooks.io/kotlin-in-chinese/content/
+
+国内中文文档2：
+
+http://www.liying-cn.net/kotlin/docs/reference/

@@ -390,6 +390,10 @@ https://mp.weixin.qq.com/s/fCpbownZuD1FCiDxqkD-sA
 
 操龙兵：非独立同分布学习
 
+https://mp.weixin.qq.com/s/BCQYdpgZdzdNLXZadptP1w
+
+若DL没了独立同分布假设，样本不独立的机器学习方法综述
+
 https://mp.weixin.qq.com/s/_AHqFqf1zFNtBifayiTfXQ
 
 你应具备这3大统计学常识&大数据思维

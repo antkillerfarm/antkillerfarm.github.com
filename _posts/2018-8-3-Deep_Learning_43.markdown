@@ -46,6 +46,10 @@ https://mp.weixin.qq.com/s/qD6_ygJjnV5rbppzy0WEmg
 
 比无所不能的DIP更强大的图像恢复方法：DeepRED
 
+https://mp.weixin.qq.com/s/IlJhZo5Ue2G2hu4nPMbY4A
+
+基于关联语义注意力模型的图像修复
+
 # 抠图
 
 https://mp.weixin.qq.com/s/dRa1mss4dve487FhS4KjTg

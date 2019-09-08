@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数字成像
+title:  数字成像, 编译原理
 category: resource 
 ---
 
@@ -329,3 +329,31 @@ https://zhuanlan.zhihu.com/p/74085115
 https://mp.weixin.qq.com/s/k9gff0Ote_V9qtN7HAruBA
 
 工业相机的sensor
+
+# 编译原理
+
+https://zhuanlan.zhihu.com/frozengene
+
+一个编译器方面的专栏
+
+http://frozengene.github.io/
+
+一个LLVM方面的blog
+
+https://zhuanlan.zhihu.com/p/28637279
+
+使用LLVM + PLY实现一个C语言子集的玩具编译器
+
+![](/images/img3/ART.png)
+
+https://mp.weixin.qq.com/s/vnaI8FwB4Ot46weAgq18Eg
+
+华为新贵！方舟编译器的荣光和使命
+
+https://www.zhihu.com/question/344231876/answer/812481811
+
+周志德（Fred Chow)
+
+https://mp.weixin.qq.com/s/7wmBsJgPnOtPXcYaoQd1qA
+
+基于LLVM的源码级依赖分析方案的设计与实现

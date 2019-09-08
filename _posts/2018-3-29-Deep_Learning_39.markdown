@@ -278,6 +278,10 @@ https://mp.weixin.qq.com/s/THUjd-wXI6_57mdw4XfYUQ
 
 商汤-港中文MMLab开源图像视频超分辨率工具箱MMSR
 
+https://mp.weixin.qq.com/s/NcA178JxgZLrAE1efBG2dA
+
+深度神经网络在视频编码中的应用
+
 # 多模态学习
 
 https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw
