@@ -119,8 +119,28 @@ $$\delta^{\pi_\theta} = r + \gamma V^{\pi_\theta}(s') - V^{\pi_\theta}(s)$$
 因为：
 
 $$\begin{align}
-E_{\pi_\theta}[] &= E_{\pi_\theta}[] - V^{\pi_\theta}(s)\\
-&= - V^{\pi_\theta}(s) \\
+E_{\pi_\theta}[\delta^{\pi_\theta} | s,a] &= E_{\pi_\theta}[r + \gamma V^{\pi_\theta}(s') | s,a] - V^{\pi_\theta}(s)\\
+&= Q^{\pi_\theta}(s,a) - V^{\pi_\theta}(s) \\
+&= A^{\pi_\theta}(s,a)
+\end{align}$$
+
+可见$$\delta^{\pi_\theta}$$就是$$A^{\pi_\theta}(s,a)$$的一个无偏估计。
+
+因此，我们就可以使用TD误差来计算策略梯度：
+
+$$\nabla_\theta J(\theta)= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a)\delta^{\pi_\theta}]$$
+
+实际运用时，我们使用一个近似的TD误差，即用状态函数的近似函数来代替实际的状态函数：
+
+$$\delta_v = r + \gamma V_v(s') - V_v(s)$$
+
+这也就是说，我们只需要一套参数描述状态价值函数，而不再需要行为价值函数了。
+
+上述方法不仅可用于TD方法，还可用于MC方法等，以下不加讨论的给出如下结论：
+
+$$\begin{align}
+\nabla_\theta J(\theta) &= E_{\pi_\theta}[r + \gamma V^{\pi_\theta}(s') | s,a] - V^{\pi_\theta}(s)\\
+&= Q^{\pi_\theta}(s,a) - V^{\pi_\theta}(s) \\
 &= A^{\pi_\theta}(s,a)
 \end{align}$$
 

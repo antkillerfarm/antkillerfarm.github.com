@@ -279,3 +279,7 @@ https://mp.weixin.qq.com/s/suLJs_GjRsdYA5fwtsje7g
 https://mp.weixin.qq.com/s/adroDI2bm13o6Q40ECc7Zw
 
 MediaPipe: Google Research 开源的跨平台多媒体机器学习模型应用框架
+
+https://mp.weixin.qq.com/s/U2e4H1QjjBqH9YbElFLhxw
+
+Microsoft Icecaps：一个用于会话建模的开源工具包

@@ -72,8 +72,6 @@ http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
 
 《Large Scale Distributed Deep Networks》中译文
 
-# 并行 & 框架（续）
-
 https://mp.weixin.qq.com/s/X7XG51yohLnEZ_Jg6XK9oQ
 
 Caffe作者贾扬清教你怎样打造更加优秀的深度学习架构
@@ -243,3 +241,7 @@ https://mp.weixin.qq.com/s/pqxiF6yEZzrw8qXu2hEsaA
 https://mp.weixin.qq.com/s/Jcz4XWDjMmbhmAiI_zBQXQ
 
 流式计算优化：时效性
+
+https://mp.weixin.qq.com/s/iAHvfgn54zIwfM9K8KFJnw
+
+DLM：微信大规模分布式n-gram语言模型系统

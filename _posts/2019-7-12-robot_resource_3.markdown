@@ -202,6 +202,10 @@ https://mp.weixin.qq.com/s/VwLNq84Nmg5--yTHlRdSJA
 
 深度学习在道路封闭挖掘方案的探索与实践
 
+https://mp.weixin.qq.com/s/sxm2cD7DAhJ6eIhUDvYRKA
+
+运动轨迹规划技术
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。

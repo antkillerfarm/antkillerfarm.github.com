@@ -326,3 +326,7 @@ https://mp.weixin.qq.com/s/D_CQIw1372RTYBeSqPEl9A
 https://mp.weixin.qq.com/s/7x2LS94i7te7JAeWo-d5kA
 
 什么样的整数规划模型是一个好的模型
+
+https://mp.weixin.qq.com/s/hzpnHvqaP9sxQQlLq-_3wg
+
+Robust Optimization in 3D Vision
