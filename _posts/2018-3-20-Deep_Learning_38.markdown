@@ -46,6 +46,10 @@ https://mp.weixin.qq.com/s/GNYrR0NOaN42SgLXsm2KIg
 
 三维"ZAO"脸，单张图片估计人脸几何，效果堪比真实皮肤
 
+https://mp.weixin.qq.com/s/-1W4SqEX_xxxdBFMKJJ6Xg
+
+腾讯（优图）新技术的人脸检测
+
 # RNN进阶
 
 ## IndRNN

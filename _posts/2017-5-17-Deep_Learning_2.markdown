@@ -18,6 +18,10 @@ https://mp.weixin.qq.com/s/_wt-zTpbd25OL3os0X6cJg
 
 神经网络中的权重初始化一览：从基础到Kaiming
 
+https://mp.weixin.qq.com/s/Nmi4u8LKrsjYKH3_3vmaVQ
+
+神经网络初始化trick：大神何凯明教你如何训练网络！
+
 ## BP算法的缺点
 
 虽然传统的BP算法，理论上可以支持任意深度的神经网络。然而实际使用中，却很少能支持3层以上的神经网络。
@@ -253,16 +257,3 @@ Vanilla是神经网络领域的常见词汇，比如Vanilla Neural Networks、Va
 $$J(W,b)= \left[ \frac{1}{m} \sum_{i=1}^m J(W,b;x^{(i)},y^{(i)}) \right] + \frac{\lambda}{2} \sum_{l=1}^{n_l-1} \; \sum_{i=1}^{s_l} \; \sum_{j=1}^{s_{l+1}} \left( W^{(l)}_{ji} \right)^2$$
 
 上式中在普通loss函数后，添加的规则项也被称作weight decay。
-
-weight decay的误差反向传播公式如下：
-
-$$\frac{\partial}{\partial W_{ij}^{(l)}} J(W,b) =
-\left[ \frac{1}{m} \sum_{i=1}^m \frac{\partial}{\partial W_{ij}^{(l)}} J(W,b; x^{(i)}, y^{(i)}) \right] + \lambda W_{ij}^{(l)}$$
-
-$$W^{(l)} = W^{(l)} - \alpha \left[ \left(\frac{1}{m} \Delta W^{(l)} \right) + \lambda W^{(l)}\right]=(1-\lambda)W^{(l)}-\alpha \left(\frac{1}{m} \Delta W^{(l)} \right)$$
-
-参考：
-
-https://www.zhihu.com/question/24529483
-
-在神经网络中weight decay起到的做用是什么？momentum呢？normalization呢？

@@ -6,6 +6,38 @@ category: DL
 
 # LSTM（续）
 
+https://zhuanlan.zhihu.com/p/25821063
+
+循环神经网络——scan实现LSTM
+
+http://blog.csdn.net/a635661820/article/details/45390671
+
+LSTM简介以及数学推导(FULL BPTT)
+
+http://blog.csdn.net/dark_scope/article/details/47056361
+
+RNN以及LSTM的介绍和公式梳理
+
+https://mp.weixin.qq.com/s/x3y9WTuVFYQb60eJvw02HQ
+
+如何解决LSTM循环神经网络中的超长序列问题
+
+https://mp.weixin.qq.com/s/IhCfoabRrtjvQBIQMaPpNQ
+
+从任务到可视化，如何理解LSTM网络中的神经元
+
+https://mp.weixin.qq.com/s/GGpaFZ0crP_NQ564d79hFw
+
+LSTM、GRU与神经图灵机：详解深度学习最热门的循环神经网络
+
+https://mp.weixin.qq.com/s/0bBTVjkfAK2EzQiaFcUjBA
+
+LSTM入门必读：从基础知识到工作方式详解
+
+https://mp.weixin.qq.com/s/jcS4IX7LKCt1E2FVzLWzDw
+
+LSTM入门详解
+
 https://mp.weixin.qq.com/s/MQR7c57NL4b5i4MRA2JgWA
 
 用Python实现CNN长短期记忆网络！
@@ -281,37 +313,3 @@ DRN的实现依赖于下图所示的res block：
 如果在网络中每个层只有少量的隐藏单元对不同的输入改变它们的激活值，而大部分隐藏单元对不同的输入都是相同的反应，此时整个权重矩阵的秩不高。并且随着网络层数的增加，连乘后使得整个秩变的更低，这就是我们常说的网络退化问题。
 
 虽然权重矩阵是一个很高维的矩阵，但是大部分维度却没有信息，使得网络的表达能力没有看起来那么强大。这样的情况一定程度上来自于网络的对称性，而残差连接打破了网络的对称性。
-
-![](/images/img3/ResNet.png)
-
-随着ResNet的应用越来越广泛，其设计也有一定的微调。上图左边是原始的ResNet结构，而右边是新的结构，据说新结构更有利于梯度的更新。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/22447440
-
-深度残差网络
-
-https://www.leiphone.com/news/201608/vhqwt5eWmUsLBcnv.html
-
-何恺明的深度残差网络PPT
-
-https://mp.weixin.qq.com/s/kcTQVesjUIPNcz2YTxVUBQ
-
-ResNet 6大变体：何恺明,孙剑,颜水成引领计算机视觉这两年
-
-https://mp.weixin.qq.com/s/5M3QiUVoA8QDIZsHjX5hRw
-
-一文弄懂ResNet有多大威力？最近又有了哪些变体？
-
-http://www.jianshu.com/p/b724411571ab
-
-ResNet到底深不深？
-
-https://mp.weixin.qq.com/s/Kgwwq5XOt88WW6KL8gADmQ
-
-你必须要知道CNN模型：ResNet
-
-https://mp.weixin.qq.com/s/7fWh2dovmfbsF8afaX9UOg
-
-一文简述ResNet及其多种变体

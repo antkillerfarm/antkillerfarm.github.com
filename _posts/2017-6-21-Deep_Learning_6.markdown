@@ -4,6 +4,34 @@ title:  深度学习（六）——RNN, LSTM
 category: DL 
 ---
 
+# 词向量
+
+## 参考（续）
+
+https://mp.weixin.qq.com/s/pOShNO2iOntcGSRMbR9uxg
+
+Word2Vec与GloVe技术浅析与对比
+
+https://mp.weixin.qq.com/s/dUadWioBqIEnG85hJFfBJQ
+
+word2vec在工业界的应用场景
+
+https://mp.weixin.qq.com/s/md3SL076cw0TgZDRlwWG5A
+
+用数据玩点花样！如何构建skim-gram模型来训练和可视化词向量
+
+https://mp.weixin.qq.com/s/HjNjTk_Hs82K87pP3QrNqw
+
+不懂word2vec，还敢说自己是做NLP？
+
+https://mp.weixin.qq.com/s/nHEyJLU18AE-SatW9HKeOw
+
+Word2Vec——深度学习的一小步，自然语言处理的一大步
+
+https://www.zhihu.com/question/290088641/answer/543419468
+
+CNN文本分类中是否可以使用字向量代替词向量？
+
 # RNN
 
 ## RNN的基本结构
@@ -253,35 +281,3 @@ https://mp.weixin.qq.com/s/y2kV4ye2zr1HYvZd3APeWA
 https://blog.csdn.net/zhangxb35/article/details/70060295
 
 RNN, LSTM, GRU公式总结
-
-https://zhuanlan.zhihu.com/p/25821063
-
-循环神经网络——scan实现LSTM
-
-http://blog.csdn.net/a635661820/article/details/45390671
-
-LSTM简介以及数学推导(FULL BPTT)
-
-http://blog.csdn.net/dark_scope/article/details/47056361
-
-RNN以及LSTM的介绍和公式梳理
-
-https://mp.weixin.qq.com/s/x3y9WTuVFYQb60eJvw02HQ
-
-如何解决LSTM循环神经网络中的超长序列问题
-
-https://mp.weixin.qq.com/s/IhCfoabRrtjvQBIQMaPpNQ
-
-从任务到可视化，如何理解LSTM网络中的神经元
-
-https://mp.weixin.qq.com/s/GGpaFZ0crP_NQ564d79hFw
-
-LSTM、GRU与神经图灵机：详解深度学习最热门的循环神经网络
-
-https://mp.weixin.qq.com/s/0bBTVjkfAK2EzQiaFcUjBA
-
-LSTM入门必读：从基础知识到工作方式详解
-
-https://mp.weixin.qq.com/s/jcS4IX7LKCt1E2FVzLWzDw
-
-LSTM入门详解

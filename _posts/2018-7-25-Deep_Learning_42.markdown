@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十二）——深度ISP, Spiking Neuron Networks, 深度时间序列
+title:  深度学习（四十二）——深度ISP, Spiking Neuron Networks, 深度时间序列, AI可解释性
 category: DL 
 ---
 
@@ -37,6 +37,10 @@ ImageNet错误率小于4%，数据量依然不够，N-Shot Learning或是终极�
 https://mp.weixin.qq.com/s/06FWeGysBjU9wTMUx_eY0Q
 
 一文看懂自然语言处理中迁移学习的现状
+
+https://mp.weixin.qq.com/s/3AhiaNilRyTX_f7F306yng
+
+主动学习（Active Learning）-少标签数据学习 
 
 # 深度ISP
 
@@ -267,3 +271,31 @@ https://mp.weixin.qq.com/s/xGUcqs3q3yNpVsJ8P7ag_g
 https://mp.weixin.qq.com/s/F0z5aEaigQLtlLfDoFIJXQ
 
 时间序列预测：理论与实践教程，300多页PPT带你了解领域最新动态
+
+# AI可解释性
+
+XAI(Explainable Artificial Intelligence)
+
+https://github.com/pbiecek/xai_resources
+
+AI可解释性资源汇总
+
+https://mp.weixin.qq.com/s/XVl6voP5cwdC7DcvTMQvVQ
+
+机器学习可解释性工具箱XAI
+
+https://github.com/jphall663/awesome-machine-learning-interpretability
+
+最全的机器学习可解释性资料
+
+https://mp.weixin.qq.com/s/OV4vXu7TAuyV7qU9BAMF6g
+
+机器学习模型的“可解释性”到底有多重要？
+
+https://mp.weixin.qq.com/s/33VQNVvb7JGlk10Jc3mmeg
+
+从可视化到新模型：纵览深度学习的视觉可解释性
+
+https://github.com/ModelOriented/DrWhy
+
+可解释AI(XAI)工具集—DrWhy

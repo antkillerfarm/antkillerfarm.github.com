@@ -403,3 +403,11 @@ https://mp.weixin.qq.com/s/kJhOrz0VaYc-k-6XJS02ag
 https://mp.weixin.qq.com/s/-eBL9gFbAGFtmqkLMAoUTw
 
 文本+视觉，多篇Visual/Video BERT论文介绍
+
+https://mp.weixin.qq.com/s/hI9XAiqKaHLq-Z9JkaWA_A
+
+解决自然语言歧义问题，斯坦福教授、IJCAI卓越研究奖得主提出SenseBERT模型
+
+https://mp.weixin.qq.com/s/55B0ToIKDusiPI5farR19w
+
+NLP这两年：15个预训练模型对比分析与剖析

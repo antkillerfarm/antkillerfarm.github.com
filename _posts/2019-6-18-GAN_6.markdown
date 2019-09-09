@@ -285,3 +285,7 @@ https://mp.weixin.qq.com/s/axCd8GZZ8tGg4S90NyApbw
 https://mp.weixin.qq.com/s/grEBwYzGN-573cvY5goT6g
 
 详解GAN中的一致优化问题
+
+https://mp.weixin.qq.com/s/MFyEtIBVPeG1LB7kEcAlfw
+
+清华黄民烈朱小燕等提出ARAML，文本生成训练稳定性能新SOTA

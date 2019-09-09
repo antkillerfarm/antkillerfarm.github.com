@@ -6,7 +6,39 @@ category: DL
 
 # CNN
 
-## CNN的反向传播算法（续）
+## 多通道卷积（续）
+
+参见：
+
+http://blog.csdn.net/u014114990/article/details/51125776
+
+多通道(比如RGB三通道)卷积过程
+
+https://www.zhihu.com/question/28385679
+
+在Caffe中如何计算卷积？
+
+https://buptldy.github.io/2016/10/01/2016-10-01-im2col/
+
+Implementing convolution as a matrix multiplication（中文blog）
+
+https://zhuanlan.zhihu.com/p/66958390
+
+通用矩阵乘（GEMM）优化与卷积计算
+
+https://mp.weixin.qq.com/s/Q1Ovl1LrT5Y6amVqlYpdbA
+
+基于GEMM实现的CNN底层算法被改？Google提出全新间接卷积算法
+
+## CNN的反向传播算法
+
+由于卷积和池化两层，不是一般的神经网络结构。因此CNN的反向传播算法实际上也是很有技巧的。
+
+上面提到卷积操作可以转换为矩阵运算：$$y=Cx$$
+
+其对应的梯度反向传播公式为：
+
+$$\frac{\partial Loss}{\partial x} = \frac{\partial y^T}{\partial x}\cdot \frac{\partial Loss}{\partial y} = C^T \cdot \frac{\partial Loss}{\partial y}$$
 
 因此：
 
@@ -311,19 +343,3 @@ Tomas Mikolov于2013年对Bengio方案进行了简化改进，提出了目前最
 http://blog.csdn.net/itplus/article/details/37969519
 
 老惯例这里只对最重要的内容进行摘要。
-
-### CBOW & Skip-gram
-
-![](/images/article/word2vec.png)
-
-上图是word2vec中使用到的两种模型的示意图。
-
-从图中可知，word2vec虽然使用了神经网络，但是从层数来说，只有3层而已，还谈不上是Deep Learning。但是考虑到DL，基本就是神经网络的同义词，因此这里仍然将word2vec归为DL的范畴。
-
->注：深度学习不全是神经网络，周志华教授提出的gcForest就是一个有益的另类尝试。
-
-研究一个神经网络模型，最重要的除了神经元之间的连接关系之外，就是神经网络的输入输出了。
-
-CBOW（Continuous Bag-of-Words Model）模型和Skip-gram（Continuous Skip-gram Model）模型脱胎于n-gram模型，即一个词出现的概率只与它前后的n个词有关。这里的n也被称为窗口大小.
-
-上图中，窗口大小为5，即一个中心词$$\{w_t\}$$+前面的两个词$$\{w_{t-1},w_{t-2}\}$$+后面的两个词$$\{w_{t+1},w_{t+2}\}$$。

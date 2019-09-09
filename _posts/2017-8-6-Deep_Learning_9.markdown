@@ -1,12 +1,36 @@
 ---
 layout: post
-title:  深度学习（九）——CNN进化史（2）, AI可解释性
+title:  深度学习（九）——CNN进化史（2）
 category: DL 
 ---
 
-# CNN进化史
+# CNN进化史（续）
 
-## GoogleNet（续）
+## GoogleNet
+
+GoogleNet的进化道路和VGG有所不同。VGG实际上就是“大力出奇迹”的暴力模型，其他地方不足称道。
+
+而GoogleNet不仅继承了VGG“越深越好”的理念，对于网络结构本身也作了大胆的创新。可以对比的是，AlexNet有60M个参数，而GoogleNet只有4M个参数。
+
+因此，在ILSVRC 2014大赛中，GoogleNet获得第一名，而VGG屈居第二。
+
+![](/images/article/GoogleNet.jpg)
+
+上图是GoogleNet的结构图。从中可以看出，GoogleNet除了AlexNet的基本要素之外，还有被称作Inception的结构。
+
+![](/images/article/inception.png)
+
+上图是Inception的结构图。它的原理实际上就是**将不同尺寸的卷积组合起来，以提供不同尺寸的特征**。
+
+原始的GoogleNet也被称作Inception-v1。在后面的几年，GoogleNet还提出了几种改进的版本，最新的一个是Inception-v4（2016.8）。
+
+论文：
+
+《Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning》
+
+代码：
+
+https://github.com/BVLC/caffe/tree/master/models/bvlc_googlenet
 
 Inception系列的改进方向基本都集中在构建不同的Inception模型上。
 
@@ -203,79 +227,3 @@ https://mp.weixin.qq.com/s/x3bSu9ecl3dldCbvS1rT1g
 http://mp.weixin.qq.com/s/2TUw_2d36uFAiJTkvaaqpA
 
 解读Keras在ImageNet中的应用：详解5种主要的图像识别模型
-
-https://zhuanlan.zhihu.com/p/27642620
-
-YJango的卷积神经网络——介绍
-
-https://www.zybuluo.com/coolwyj/note/202469
-
-ImageNet Classification with Deep Convolutional Neural Networks
-
-http://simtalk.cn/2016/09/20/AlexNet/
-
-AlexNet简介
-
-http://simtalk.cn/2016/09/12/CNNs/
-
-CNN简介
-
-https://mp.weixin.qq.com/s/I94gGXXW_eE5hSHIBOsJFQ
-
-无需数学背景，读懂ResNet、Inception和Xception三大变革性架构
-
-https://mp.weixin.qq.com/s/ToogpkDo-DpQaSoRoalnPg
-
-没看过这5个模型，不要说你玩过CNN!
-
-https://zhuanlan.zhihu.com/p/31006686
-
-从LeNet-5到DenseNet
-
-https://mp.weixin.qq.com/s/L9JY875UjXMv_slAakBrGA
-
-从AlexNet到残差网络，理解卷积神经网络的不同架构
-
-http://www.sohu.com/a/222873093_651893
-
-从LeNet到SENet——卷积神经网络回顾
-
-https://mp.weixin.qq.com/s/-d4T2hgjy6kGdd_ig_J9eg
-
-LeCun亲授的深度学习入门课：从飞行器的发明到卷积神经网络
-
-https://mp.weixin.qq.com/s/z26bXb8eAelrwj6Tkvm_-A
-
-卷积神经网络常见架构AlexNet、ZFNet、VGGNet、GoogleNet和ResNet模型的理论与实践
-
-https://mp.weixin.qq.com/s/MlEGnUPhomQn0oGGEpF9ig
-
-通俗易懂：图解10大CNN网络架构
-
-# AI可解释性
-
-XAI(Explainable Artificial Intelligence)
-
-https://github.com/pbiecek/xai_resources
-
-AI可解释性资源汇总
-
-https://mp.weixin.qq.com/s/XVl6voP5cwdC7DcvTMQvVQ
-
-机器学习可解释性工具箱XAI
-
-https://github.com/jphall663/awesome-machine-learning-interpretability
-
-最全的机器学习可解释性资料
-
-https://mp.weixin.qq.com/s/OV4vXu7TAuyV7qU9BAMF6g
-
-机器学习模型的“可解释性”到底有多重要？
-
-https://mp.weixin.qq.com/s/33VQNVvb7JGlk10Jc3mmeg
-
-从可视化到新模型：纵览深度学习的视觉可解释性
-
-https://github.com/ModelOriented/DrWhy
-
-可解释AI(XAI)工具集—DrWhy

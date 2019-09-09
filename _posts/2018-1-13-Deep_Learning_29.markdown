@@ -222,6 +222,10 @@ https://mp.weixin.qq.com/s/5oOobY_3blbXYYxuuQmShQ
 
 一文读懂图神经网络
 
+https://mp.weixin.qq.com/s/U51C2t92nlE7Tv7oKXgx2A
+
+一份完全解读：是什么使神经网络变成图神经网络？
+
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
 
 Bengio等人提出图注意网络架构GAT，可处理复杂结构图

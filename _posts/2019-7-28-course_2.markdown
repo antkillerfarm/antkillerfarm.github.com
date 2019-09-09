@@ -96,6 +96,8 @@ $$E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a)B(s)] = \sum_{s\in S} d^{\pi_
 
 $$A^{\pi_\theta}(s,a)=Q^{\pi_\theta}(s,a)-V^{\pi_\theta}(s)$$
 
+上式的现实意义在于评估当个体采取行为a离开s状态时，究竟比该状态s总体平均价值要好多少？
+
 $$\nabla_\theta J(\theta)= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a)A^{\pi_\theta}(s,a)]$$
 
 advantage function可以明显减少状态价值的variance，因此，现在Critic的任务就改为估计advantage function。
@@ -108,7 +110,19 @@ $$Q_w(s,a)\approx Q^{\pi_\theta}(s,a)$$
 
 $$A(s,a) = Q_w(s,a) - V_v(s)$$
 
+不过实际操作时，我们并不需要计算两个近似函数。这里以TD学习为例说明一下。
 
+根据定义，TD误差$$\delta^{\pi_\theta}$$可以根据真实的状态价值函数$$V^{\pi_\theta}(s)$$算出：
+
+$$\delta^{\pi_\theta} = r + \gamma V^{\pi_\theta}(s') - V^{\pi_\theta}(s)$$
+
+因为：
+
+$$\begin{align}
+E_{\pi_\theta}[] &= E_{\pi_\theta}[] - V^{\pi_\theta}(s)\\
+&= - V^{\pi_\theta}(s) \\
+&= A^{\pi_\theta}(s,a)
+\end{align}$$
 
 ## 参考
 
@@ -201,3 +215,7 @@ https://zhuanlan.zhihu.com/p/62363784
 https://mp.weixin.qq.com/s/j9Cs5M9gyITu2u_XDkKm-g
 
 Policy Gradient——一种不以loss来反向传播的策略梯度方法
+
+https://mp.weixin.qq.com/s/x6gKTuYIx8y25KX-fCc5bA
+
+蒙特卡洛梯度估计方法（MCGE）简述

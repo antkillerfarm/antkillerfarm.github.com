@@ -203,3 +203,7 @@ https://mp.weixin.qq.com/s/oKayc5612vVm9k8hu50GNw
 https://mp.weixin.qq.com/s/env2bFsEWZjxB87GK8QqvQ
 
 Hulu：视频广告系统中的算法实践
+
+https://mp.weixin.qq.com/s/Eih4J51C8Eh-cuZ8vznESg
+
+当推荐遇到社交：美图的推荐算法设计优化实践

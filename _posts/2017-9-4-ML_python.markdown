@@ -320,6 +320,10 @@ https://mp.weixin.qq.com/s/G5P0M-WGV_rMmHJE8lz6WQ
 
 Scikit-Learn决策树算法类库使用小结
 
+https://mp.weixin.qq.com/s/O1wPvi_aKK73yJcUpDf6EQ
+
+开源sk-dist，超参数调优仅需3.4秒，sk-learn训练速度提升100倍
+
 ## Matplotlib
 
 Matplotlib是一个高阶的图形库，主要提供生成图表等数据可视化方面的功能。

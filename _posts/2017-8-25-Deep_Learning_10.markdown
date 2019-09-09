@@ -4,6 +4,58 @@ title:  深度学习（十）——花式卷积（1）
 category: DL 
 ---
 
+# CNN进化史
+
+## 参考（续）
+
+https://zhuanlan.zhihu.com/p/27642620
+
+YJango的卷积神经网络——介绍
+
+https://www.zybuluo.com/coolwyj/note/202469
+
+ImageNet Classification with Deep Convolutional Neural Networks
+
+http://simtalk.cn/2016/09/20/AlexNet/
+
+AlexNet简介
+
+http://simtalk.cn/2016/09/12/CNNs/
+
+CNN简介
+
+https://mp.weixin.qq.com/s/I94gGXXW_eE5hSHIBOsJFQ
+
+无需数学背景，读懂ResNet、Inception和Xception三大变革性架构
+
+https://mp.weixin.qq.com/s/ToogpkDo-DpQaSoRoalnPg
+
+没看过这5个模型，不要说你玩过CNN!
+
+https://zhuanlan.zhihu.com/p/31006686
+
+从LeNet-5到DenseNet
+
+https://mp.weixin.qq.com/s/L9JY875UjXMv_slAakBrGA
+
+从AlexNet到残差网络，理解卷积神经网络的不同架构
+
+http://www.sohu.com/a/222873093_651893
+
+从LeNet到SENet——卷积神经网络回顾
+
+https://mp.weixin.qq.com/s/-d4T2hgjy6kGdd_ig_J9eg
+
+LeCun亲授的深度学习入门课：从飞行器的发明到卷积神经网络
+
+https://mp.weixin.qq.com/s/z26bXb8eAelrwj6Tkvm_-A
+
+卷积神经网络常见架构AlexNet、ZFNet、VGGNet、GoogleNet和ResNet模型的理论与实践
+
+https://mp.weixin.qq.com/s/MlEGnUPhomQn0oGGEpF9ig
+
+通俗易懂：图解10大CNN网络架构
+
 # 花式卷积
 
 在DL中，卷积实际上是一大类计算的总称。除了原始的卷积、反卷积（Deconvolution）之外，还有各种各样的花式卷积。

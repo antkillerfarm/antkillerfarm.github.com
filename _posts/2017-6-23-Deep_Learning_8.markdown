@@ -4,7 +4,41 @@ title:  深度学习（八）——Bi-directional RNN, seq2seq, CNN进化史（1
 category: DL 
 ---
 
-# 神经元激活函数进阶（续）
+# ResNet（续）
+
+![](/images/img3/ResNet.png)
+
+随着ResNet的应用越来越广泛，其设计也有一定的微调。上图左边是原始的ResNet结构，而右边是新的结构，据说新结构更有利于梯度的更新。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/22447440
+
+深度残差网络
+
+https://www.leiphone.com/news/201608/vhqwt5eWmUsLBcnv.html
+
+何恺明的深度残差网络PPT
+
+https://mp.weixin.qq.com/s/kcTQVesjUIPNcz2YTxVUBQ
+
+ResNet 6大变体：何恺明,孙剑,颜水成引领计算机视觉这两年
+
+https://mp.weixin.qq.com/s/5M3QiUVoA8QDIZsHjX5hRw
+
+一文弄懂ResNet有多大威力？最近又有了哪些变体？
+
+http://www.jianshu.com/p/b724411571ab
+
+ResNet到底深不深？
+
+https://mp.weixin.qq.com/s/Kgwwq5XOt88WW6KL8gADmQ
+
+你必须要知道CNN模型：ResNet
+
+https://mp.weixin.qq.com/s/7fWh2dovmfbsF8afaX9UOg
+
+一文简述ResNet及其多种变体
 
 https://mp.weixin.qq.com/s/fxq-H2_ZyXVd_kJx6rwEcQ
 
@@ -293,29 +327,3 @@ VGG的结构图如下：
 https://zhuanlan.zhihu.com/p/37706726
 
 VGG论文笔记
-
-## GoogleNet
-
-GoogleNet的进化道路和VGG有所不同。VGG实际上就是“大力出奇迹”的暴力模型，其他地方不足称道。
-
-而GoogleNet不仅继承了VGG“越深越好”的理念，对于网络结构本身也作了大胆的创新。可以对比的是，AlexNet有60M个参数，而GoogleNet只有4M个参数。
-
-因此，在ILSVRC 2014大赛中，GoogleNet获得第一名，而VGG屈居第二。
-
-![](/images/article/GoogleNet.jpg)
-
-上图是GoogleNet的结构图。从中可以看出，GoogleNet除了AlexNet的基本要素之外，还有被称作Inception的结构。
-
-![](/images/article/inception.png)
-
-上图是Inception的结构图。它的原理实际上就是**将不同尺寸的卷积组合起来，以提供不同尺寸的特征**。
-
-原始的GoogleNet也被称作Inception-v1。在后面的几年，GoogleNet还提出了几种改进的版本，最新的一个是Inception-v4（2016.8）。
-
-论文：
-
-《Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning》
-
-代码：
-
-https://github.com/BVLC/caffe/tree/master/models/bvlc_googlenet

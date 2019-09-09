@@ -54,6 +54,30 @@ https://mp.weixin.qq.com/s/0JmB0sMUVsiuwrVObN_10g
 
 ## 参考
 
+http://kexue.fm/archives/4667/
+
+更别致的词向量模型(一)：simpler glove
+
+http://kexue.fm/archives/4669/
+
+更别致的词向量模型(二)：对语言进行建模
+
+http://kexue.fm/archives/4671/
+
+更别致的词向量模型(三)：描述相关的模型
+
+http://kexue.fm/archives/4675/
+
+更别致的词向量模型(四)：模型的求解
+
+http://kexue.fm/archives/4677/
+
+更别致的词向量模型(五)：有趣的结果
+
+http://kexue.fm/archives/4681/
+
+更别致的词向量模型(六)：代码、分享与结语
+
 https://mp.weixin.qq.com/s/4ZlVisY08XvisjbK5zSheg
 
 NLP中“词袋”模型和词嵌入模型的比较

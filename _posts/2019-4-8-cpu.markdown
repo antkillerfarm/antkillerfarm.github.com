@@ -415,3 +415,7 @@ https://mp.weixin.qq.com/s/o8C6n-ZRw3vFS8E-hikXJQ
 https://www.cnblogs.com/f-ck-need-u/p/11141636.html
 
 关于CPU的一些基本知识总结
+
+https://mp.weixin.qq.com/s/vTOGmcahRxQBH8RgkTJ2GA
+
+中文系同学都能听懂的集成电路设计流程

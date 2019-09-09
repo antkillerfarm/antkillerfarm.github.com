@@ -128,7 +128,11 @@ https://mp.weixin.qq.com/s/AbCxbG4NJvvZ1WLNze_HuQ
 
 https://mp.weixin.qq.com/s/rdN8-h33Hyulx4Cq3Anr4g
 
-程序员完美复现了谷歌 DeepMind 图像生成神器（DRAW）
+程序员完美复现了谷歌DeepMind图像生成神器（DRAW）
+
+https://mp.weixin.qq.com/s/bH0K_sxvF2oQwewYhMk20A
+
+只需一张自拍，网易伏羲用这种方法直接生成“个人专属”游戏角色
 
 # 三维处理
 

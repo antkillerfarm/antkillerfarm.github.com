@@ -4,7 +4,22 @@ title:  深度学习（三）——Neural Network Zoo, CNN
 category: DL 
 ---
 
-# 深度学习常用术语解释（续）
+# 深度学习常用术语解释
+
+## weight decay（续）
+
+weight decay的误差反向传播公式如下：
+
+$$\frac{\partial}{\partial W_{ij}^{(l)}} J(W,b) =
+\left[ \frac{1}{m} \sum_{i=1}^m \frac{\partial}{\partial W_{ij}^{(l)}} J(W,b; x^{(i)}, y^{(i)}) \right] + \lambda W_{ij}^{(l)}$$
+
+$$W^{(l)} = W^{(l)} - \alpha \left[ \left(\frac{1}{m} \Delta W^{(l)} \right) + \lambda W^{(l)}\right]=(1-\lambda)W^{(l)}-\alpha \left(\frac{1}{m} \Delta W^{(l)} \right)$$
+
+参考：
+
+https://www.zhihu.com/question/24529483
+
+在神经网络中weight decay起到的做用是什么？momentum呢？normalization呢？
 
 ## Batch Normalization
 
@@ -253,35 +268,3 @@ $$g(i,j)=\sum_{c,k,l}f(i+k,j+l)h(k,l)$$
 ![](/images/article/conv.jpg)
 
 这种将卷积运算变为矩阵乘法运算的方法，一般被称为GEMM（General Matrix Multiply）。因为卷积变为矩阵这一步运算在Caffe中是用im2col函数实现的，因此，也有使用im2col来指代这类方法的。
-
-参见：
-
-http://blog.csdn.net/u014114990/article/details/51125776
-
-多通道(比如RGB三通道)卷积过程
-
-https://www.zhihu.com/question/28385679
-
-在Caffe中如何计算卷积？
-
-https://buptldy.github.io/2016/10/01/2016-10-01-im2col/
-
-Implementing convolution as a matrix multiplication（中文blog）
-
-https://zhuanlan.zhihu.com/p/66958390
-
-通用矩阵乘（GEMM）优化与卷积计算
-
-https://mp.weixin.qq.com/s/Q1Ovl1LrT5Y6amVqlYpdbA
-
-基于GEMM实现的CNN底层算法被改？Google提出全新间接卷积算法
-
-## CNN的反向传播算法
-
-由于卷积和池化两层，不是一般的神经网络结构。因此CNN的反向传播算法实际上也是很有技巧的。
-
-上面提到卷积操作可以转换为矩阵运算：$$y=Cx$$
-
-其对应的梯度反向传播公式为：
-
-$$\frac{\partial Loss}{\partial x} = \frac{\partial y^T}{\partial x}\cdot \frac{\partial Loss}{\partial y} = C^T \cdot \frac{\partial Loss}{\partial y}$$

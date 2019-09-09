@@ -247,3 +247,7 @@ https://mp.weixin.qq.com/s/x48Ctb0_Eu1kcSGTYLt5BQ
 https://mp.weixin.qq.com/s/a57oy26UvLFNj4T8_pddCQ
 
 关于图像分类中类别不平衡那些事
+
+https://mp.weixin.qq.com/s/rXaicHuHlWegrpeulYmduw
+
+目标检测中的不平衡问题综述
