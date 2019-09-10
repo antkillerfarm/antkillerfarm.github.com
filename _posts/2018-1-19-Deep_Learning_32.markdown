@@ -92,6 +92,10 @@ https://mp.weixin.qq.com/s/d1eGpZUVR25tusL4VtwHug
 
 激光雷达深度补全
 
+https://mp.weixin.qq.com/s/AOtC1PpTZM9zWPDuK4Vulg
+
+贾佳亚等提出Fast Point R-CNN，利用点云快速高效检测3D目标
+
 # 图像超分辨率进阶
 
 https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg

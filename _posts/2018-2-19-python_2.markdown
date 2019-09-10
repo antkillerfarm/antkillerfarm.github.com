@@ -325,6 +325,10 @@ https://mp.weixin.qq.com/s/Q3cqLuOZDSMOdAjVrCDrtQ
 
 在Python 2.7即将停止支持时，我们为你准备了一份3.x迁移指南
 
+https://mp.weixin.qq.com/s/J4bBvu9z3BNcwMSmmL5SMQ
+
+Python 2大限来了！113天后自生自灭，官方不再维护更新
+
 文件print：
 
 {% highlight python %}
