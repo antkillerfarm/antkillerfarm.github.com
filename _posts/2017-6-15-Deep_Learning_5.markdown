@@ -279,3 +279,7 @@ https://zhuanlan.zhihu.com/p/30868040
 https://mp.weixin.qq.com/s/GOPIIlDBd3vXpgq-a5s2fQ
 
 文本分类特征提取之Word2Vec
+
+https://www.zhihu.com/question/339184168
+
+为什么很多NLP的工作在使用预训练词向量时选择GloVe而不是Word2Vec或其他?

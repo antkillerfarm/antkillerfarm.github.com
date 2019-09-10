@@ -260,6 +260,18 @@ https://mp.weixin.qq.com/s/ELC60377pzaFwJv7czOneQ
 
 15种偶然制造的东西，居然改变了世界！
 
+https://zhuanlan.zhihu.com/p/71793554
+
+最美的公式：你也能懂的麦克斯韦方程组（积分篇）
+
+https://zhuanlan.zhihu.com/p/78503083
+
+最美的公式：你也能懂的麦克斯韦方程组（微分篇）
+
+https://zhuanlan.zhihu.com/p/81867668
+
+见证奇迹的时刻：如何从麦克斯韦方程组推出电磁波
+
 ## Bélády's Algorithm
 
 Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。

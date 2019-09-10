@@ -309,3 +309,7 @@ https://zhuanlan.zhihu.com/p/81020717
 https://zhuanlan.zhihu.com/p/22252270
 
 深度学习最全优化方法总结比较（SGD，Adagrad，Adadelta，Adam，Adamax，Nadam）
+
+https://www.zhihu.com/question/64134994
+
+如何理解深度学习分布式训练中的large batch size与learning rate的关系？

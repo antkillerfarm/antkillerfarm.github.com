@@ -393,3 +393,7 @@ https://zhuanlan.zhihu.com/p/32702868
 https://zhuanlan.zhihu.com/p/69777256
 
 简述人脸识别开发原理。这篇文章对传统算法做了一个很好的总结。
+
+https://zhuanlan.zhihu.com/p/79863225
+
+人脸识别特征介绍以及难题概括

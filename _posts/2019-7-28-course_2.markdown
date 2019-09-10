@@ -139,9 +139,11 @@ $$\delta_v = r + \gamma V_v(s') - V_v(s)$$
 上述方法不仅可用于TD方法，还可用于MC方法等，以下不加讨论的给出如下结论：
 
 $$\begin{align}
-\nabla_\theta J(\theta) &= E_{\pi_\theta}[r + \gamma V^{\pi_\theta}(s') | s,a] - V^{\pi_\theta}(s)\\
-&= Q^{\pi_\theta}(s,a) - V^{\pi_\theta}(s) \\
-&= A^{\pi_\theta}(s,a)
+\nabla_\theta J(\theta) &= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a)\color{red}{v_t}] & \text{REINFORCE}\\
+&= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a)\color{red}{Q_w(s,a)}] & \text{Q Actor-Critic}\\
+&= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a)\color{red}{A_w(s,a)}] & \text{Advantage Actor-Critic} \\
+&= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a)\color{red}{\delta}] & \text{TD Actor-Critic} \\
+&= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a)\color{red}{\delta e}] & \text{TD(}\lambda\text{) Actor-Critic}
 \end{align}$$
 
 ## 参考
@@ -161,6 +163,26 @@ Actor Critic——一个融合基于策略梯度和基于值优点的强化学�
 https://mp.weixin.qq.com/s/c4xoy4CJ_hsVdmGe1n3rTQ
 
 A3C——一种异步强化学习方法
+
+# Integrating Learning and Planning
+
+前面的章节主要介绍了Model-Free RL，下面将讲一下Model-Based RL，主要包括如下内容：
+
+- 如何从经历中直接学习Model。
+
+- 如何基于模型来进行Planning（规划）。
+
+- 如何将“学习”和“规划”整合起来。
+
+![](/images/img3/Model_Free_RL.png) | ![](/images/img3/Model_RL.png)
+
+上面两图形象的说明了Model-Free RL（左图）和Model-Based RL（右图）的差别。
+
+## Model-Based RL
+
+
+
+
 
 # 模仿学习
 
