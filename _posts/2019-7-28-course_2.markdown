@@ -192,86 +192,52 @@ $$R_{t+1} = R_\eta (R_{t+1} | S_t, A_t)$$
 
 通常我们需要如下的假设，即状态转移函数和奖励函数是条件独立的：
 
-$$$$
+$$P[S_{t+1}, R_{t+1} | S_t, A_t] = P[S_{t+1} | S_t, A_t] P[R_{t+1} | S_t, A_t]$$
 
 ## Model Learning
 
+所谓Model Learning是指：从experience$$\{S_1, A_1, R_2, \dots, S_T\}$$，学习
+
+$$S_1, A_1\to R_2,S_2$$
+
+$$S_2, A_2\to R_3,S_3$$
+
+$$\dots$$
+
+$$S_{T-1}, A_{T-1}\to R_T,S_T$$
+
+这实际上是一个监督学习的问题。其中，$$s,a\to r$$是一个回归问题(regression problem)，而$$s,a\to s'$$是一个密度估计问题(density estimation problem)。
+
+选择一个损失函数，比如均方差，KL散度等，优化参数$$\eta$$来最小化经验损失(empirical loss)。所有监督学习相关的算法都可以用来解决上述两个问题。
+
+根据使用的算法不同，可以有如下多种模型：查表式(Table lookup Model)、线性期望模型(Linear Expectation Model)、线性高斯模型(Linear Gaussian Model)、高斯决策模型(Gaussian Process Model)、和深信度神经网络模型(Deep Belief Network Model)等。
+
+这里主要以查表模型来解释模型的构建。
+
+## Table Lookup Model
+
+查表模型适用于MDP的P，R都为已知的情况。我们通过visit得到各状态行为的转移概率和奖励，把这些数据存入表中，使用时直接检索。状态转移概率和奖励计算方法如下：
+
+$$\hat{P}^a_{s,s'}=\frac{1}{N(s,a)}\sum_{t=1}^T 1(S_t,A_t,S_{t+1}=s,a,s')$$
+
+$$\hat{R}^a_{s}=\frac{1}{N(s,a)}\sum_{t=1}^T 1(S_t,A_t=s,a)R_t$$
+
+其中的$$N(s,a)$$表示state action pair$$<s,a>$$在visit中出现的次数。
+
+这里也可以采用如下变种：
+
+- 在每个time-step：t，记录experience tuple：$$<S_t, A_t, R_{t+1}, S_{t+1}>$$。
+
+- 从模型采样构建虚拟经历时，从tuples中随机选择符合$$<s,a,\cdot,\cdot>$$的一个tuple。
+
+这种方法，不再以Episode为最小学习单位，而是以时间步（time-step）为单位，一次学习一个状态转换。
+
+## Planning with a Model
+
+规划的过程相当于求解一个MDP的过程，即给定一个模型$$M_\eta = <P_\eta, R_\eta>$$，求解MDP$$<S, A, P_\eta, R_\eta>$$，找到基于该模型的最优价值函数或最优策略，也就是在给定的状态s下确定最优的行为a。
+
+我们可以使用之前介绍过的价值迭代，策略迭代方法；也可以使用树搜索方法（Tree Search）。
+
+## Sample-Based Planning
 
 
-# 模仿学习
-
-https://zhuanlan.zhihu.com/p/27935902
-
-机器人学习Robot Learning之模仿学习Imitation Learning的发展
-
-https://zhuanlan.zhihu.com/p/25688750
-
-模仿学习（Imitation Learning）完全介绍
-
-https://mp.weixin.qq.com/s/naq73D27vsCOUBperKto8A
-
-从监督式到DAgger，综述论文描绘模仿学习全貌
-
-https://mp.weixin.qq.com/s/LNNqp2KsEAljG26hY43mUw
-
-ICML2018 模仿学习教程
-
-https://mp.weixin.qq.com/s/f9vSgH1HQwGXBDb0UGHQyQ
-
-深度学习进阶之无人车行为克隆
-
-# RL与神经科学
-
-Pavlov Model（1901）
-
-Rescorla-Wagner Model（1972）
-
-Thorndike’s Puzzle Box（1910）
-
-参考：
-
-https://zhuanlan.zhihu.com/p/24437724
-
-学习理论之Rescorla-Wagner模型
-
-# RL参考资源
-
-https://mp.weixin.qq.com/s/Fn1s9Ia8L1ckgn6iP24FhQ
-
-如何让神经网络具有好奇心
-
-https://mp.weixin.qq.com/s/PBf-YrkhwhPYXuiOGyahxQ
-
-强化学习遭遇瓶颈！分层RL将成为突破的希望
-
-https://zhuanlan.zhihu.com/p/58815288
-
-强化学习之值函数学习
-
-https://mp.weixin.qq.com/s/8Cqknze_iosz6Z6cqnuK5w
-
-谷歌提出强化学习新算法SimPLe，模拟策略学习效率提高2倍
-
-https://mp.weixin.qq.com/s/hKGS4Ek5prwTRJoMCaxQLA
-
-强化学习Exploration漫游
-
-https://zhuanlan.zhihu.com/p/65116688
-
-值分布强化学习（01）
-
-https://zhuanlan.zhihu.com/p/65364484
-
-值分布强化学习（02）
-
-https://zhuanlan.zhihu.com/p/62363784
-
-强化学习之策略搜索
-
-https://mp.weixin.qq.com/s/j9Cs5M9gyITu2u_XDkKm-g
-
-Policy Gradient——一种不以loss来反向传播的策略梯度方法
-
-https://mp.weixin.qq.com/s/x6gKTuYIx8y25KX-fCc5bA
-
-蒙特卡洛梯度估计方法（MCGE）简述

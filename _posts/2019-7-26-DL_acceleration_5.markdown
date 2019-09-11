@@ -241,3 +241,7 @@ https://mp.weixin.qq.com/s/ulrPhfsPunKAWYohBhkh9w
 https://mp.weixin.qq.com/s/gwXXkWumGWy24oWuZKSyAQ
 
 MIT韩松组推出升级版AutoML方法，一个网络适配所有硬件
+
+https://zhuanlan.zhihu.com/p/76909380
+
+轻量型网络：MoGA简介
