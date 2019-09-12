@@ -333,3 +333,7 @@ KBQA从入门到放弃 - Part 2
 https://mp.weixin.qq.com/s/efID_R9ajL34P95eGKkrQA
 
 华为推出AI诗人“乐府”：唐诗宋词都不在话下，我竟一时分不出真假
+
+https://mp.weixin.qq.com/s/PzUqtBJFykB839Ff7yafoA
+
+机器推理系列文章概览：七大NLP任务最新方法与进展

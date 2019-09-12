@@ -208,6 +208,12 @@ $$d^*=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\underset{w}{\ope
 
 这样的对偶问题被称作拉格朗日对偶（Lagrange duality）。
 
+参考：
+
+https://mp.weixin.qq.com/s/IhvdhEnyRI2DRns9EkCy5Q
+
+拉格朗日对偶理论
+
 ## KKT条件
 
 拉格朗日对偶公式中使$$p^*=d^*$$成立的条件，被称为KKT条件（Karush-Kuhn-Tucker conditions）：

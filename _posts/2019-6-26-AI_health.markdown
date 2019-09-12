@@ -174,6 +174,10 @@ https://mp.weixin.qq.com/s/L1c30sTN1CSth_KdORzpVw
 
 用于医学图像分割的主动轮廓线学习模型
 
+https://mp.weixin.qq.com/s/Uh0EI-pTaXK46Zb08_cs0g
+
+智能医疗综述，48页论文详述医学AI最新进展
+
 # 可视化
 
 ![](/images/img2/data_visual.png)

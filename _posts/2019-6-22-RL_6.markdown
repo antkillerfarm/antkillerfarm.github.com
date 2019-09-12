@@ -4,7 +4,35 @@ title:  强化学习（六）——价值函数的近似表示
 category: RL 
 ---
 
-# Model-Free Control（续）
+# Model-Free Control
+
+## On-Policy Monte-Carlo Control（续）
+
+一般使用《强化学习（二）》中提到的$$\epsilon$$-greedy算法，解决这个问题，这里不再赘述。
+
+![](/images/img2/Model-Free_Control.png)
+
+>这个图建议和《强化学习（三）》中Policy Iteration一节的类似图，对比着看。可以看出无论是Q函数迭代还是V函数迭代，都会收敛到最佳策略$$\pi$$。
+
+上图中每一个向上或向下的箭头都对应着多个Episode。也就是说我们一般在经历了多个Episode之后才进行一次Ｑ函数更新或策略改善。实际上我们也可以在每经历一个Episode之后就更新Ｑ函数或改善策略。但不管使用那种方式，在Ɛ-贪婪探索算法下，我们始终只能得到基于某一策略下的近似Ｑ函数，且该算法没有一个终止条件，因为它一直在进行探索。
+
+因此我们必须关注以下两个方面：一方面我们不想丢掉任何更好信息和状态，另一方面随着我们策略的改善我们最终希望能终止于某一个最优策略，因为事实上最优策略不应该包括一些随机行为选择。为此引入了另一个理论概念：**GLIE**。
+
+**GLIE(Greedy in the Limit with Infinite Exploration)**，直白的说是在有限的时间内进行无限可能的探索。具体表现为：所有已经经历的状态行为对（state-action pair）会被无限次探索；另外随着探索的无限延伸，贪婪算法中$$\epsilon$$值趋向于０。例如，如果我们取$$\epsilon=1/k$$（k为探索的Episode数目），那么该$$\epsilon$$-greedy MC Control就具备GLIE特性。
+
+基于GLIE的MC Control流程如下：
+
+1.对于给定策略$$\pi$$，采样第k个Episode：$$\{S_1,A_1,R_2,\dots,S_T\}\sim \pi$$
+
+2.对于该Episode里出现的每一个状态/行为对更新：
+
+$$N(S_t,A_t)\leftarrow N(S_t,A_t)+1\\
+Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\frac{1}{N(S_t,A_t)}(G_t-Q(S_t,A_t))
+$$
+
+3.基于新的Q函数改善：
+
+$$\epsilon\leftarrow 1/k,\pi\leftarrow \epsilon-greedy(Q)$$
 
 ## On-Policy Temporal-Difference Learning
 
@@ -195,44 +223,3 @@ $$\hat v(S,w)=\begin{pmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{pmatrix}\begin
 | MC | $$\Delta w=\alpha (\color{red}{G_t}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、无偏采样 | 收敛至一个局部最优解 |
 | TD(0) | $$\Delta w=\alpha (\color{red}{R_{t+1}+\gamma\hat q(S_{t+1},A_{t+1},w)}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、有偏采样 | 收敛至全局最优解 |
 | TD($$\lambda$$) | $$\Delta w=\alpha (\color{red}{q_t^\lambda}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、有偏采样 |  |
-
-下面给出各种算法的收敛特性。
-
-**预测算法的收敛性**：
-
-| On/Off-Policy | Algorithm | Table Lookup | Linear | Non-Linear |
-|:--:|:--:|:--:|:--:|:--:|
-| On-Policy | MC<br/>TD(0)<br/>TD($$\lambda$$)<br/>Gradient TD | Yes<br/>Yes<br/>Yes<br/>Yes | Yes<br/>Yes<br/>Yes<br/>Yes | Yes<br/>No<br/>No<br/>Yes |
-| On-Policy | MC<br/>TD(0)<br/>TD($$\lambda$$)<br/>Gradient TD | Yes<br/>Yes<br/>Yes<br/>Yes | Yes<br/>No<br/>No<br/>Yes | Yes<br/>No<br/>No<br/>Yes |
-
-Gradient TD中的Gradient指的是PBE（projected Bellman error）的梯度。
-
-![](/images/img3/PBE.png)
-
-**控制算法的收敛性**：
-
-| Algorithm | Table Lookup | Linear | Non-Linear |
-|:--:|:--:|:--:|:--:|
-| Monte-Carlo Control<br/>Sarsa<br/>Q-learning<br/>Gradient Q-learning | Yes<br/>Yes<br/>Yes<br/>Yes | Yes'<br/>Yes'<br/>No<br/>Yes | No<br/>No<br/>No<br/>No |
-
-Yes' = chatters around near-optimal value function
-
-## Batch Methods
-
-前面所说的Incremental算法都是基于数据流的，经历一步，更新算法后，我们就不再使用这步的数据了，这种算法简单，但有时候不够高效。与之相反，Batch Methods则是把一段时期内的数据集中起来，通过学习来使得参数能较好地符合这段时期内所有的数据。这里的训练数据集Batch相当于个体的一段经验。
-
-### Least Squares Prediction
-
-假设存在一个价值函数的近似：$$\hat v(s,w)\approx v_\pi(s)$$和一个经验集$$\mathcal{D}=\{<s_1,v_1^{\pi}>,<s_2,v_2^{\pi}>,\dots,<s_T,v_T^{\pi}>\}$$，则Least Squares Error为：
-
-$$LS(w)=\sum_{t=1}^T(v_t^{\pi}-\hat v(s_t,w))^2$$
-
-使用LSE的Prediction被称为Least Squares Prediction，针对不同方向衍生还出了LSMC、LSTD、LSTD($$\lambda$$)等算法。
-
-LSE亦可推广到Q函数，即所谓的LS Q-Learning。
-
-### Experience Replay
-
-为了充分利用经验集，我们还可以使用Experience Replay技术，即：随机从$$\mathcal{D}中采样$$<s,v^{\pi}>$$，然后使用SGD最小化LSE。
-
-这一点和普通的监督学习很类似，梯度下降从原理上来说，本就不可能一个epoch就达到最优，而需要多跑几个epoch，这里的Experience Replay也是类似的道理。

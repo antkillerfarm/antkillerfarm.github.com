@@ -4,7 +4,31 @@ title:  强化学习（三）——动态规划, Monte-Carlo
 category: RL 
 ---
 
-# 动态规划（续）
+# 动态规划
+
+Dynamic programming(DP)用于解决那些可分解为**重复子问题（overlapping subproblems）**并具有**最优子结构（optimal substructure）**的问题。这里的programming和编程并无任何关系。
+
+上世纪40年代，Richard Bellman最早使用动态规划这一概念表述通过遍历寻找最优决策解问题的求解过程。1953年，Richard Bellman将动态规划赋予现代意义，该领域被IEEE纳入系统分析和工程中。
+
+除了Bellman之外，苏联的Lev Pontryagin也做出了很大的贡献，他和Bellman被并称为Optimal control之父。
+
+>Lev Semyonovich Pontryagin，1908~1988，苏联数学家。主要研究代数拓扑和微分拓扑。他14岁时，因为煤气爆炸事故成为盲人。苏联科学院院士，国际数学家联盟副主席。
+
+## 最优子结构
+
+最优子结构即可用来寻找整个问题最优解的子问题的最优解。举例来说，寻找图上某顶点到终点的最短路径，可先计算该顶点所有相邻顶点至终点的最短路径，然后以此来选择最佳整体路径，如下图所示：
+
+![](/images/article/Shortest_path_optimal_substructure.png)
+
+一般而言，最优子结构通过如下三个步骤解决问题：
+
+a) 将问题分解成较小的子问题；
+
+b) 通过递归使用这三个步骤求出子问题的最优解；
+
+c) 使用这些最优解构造初始问题的最优解。
+
+子问题的求解是通过不断划分为更小的子问题实现的，直至我们可以在常数时间内求解。
 
 ## 重复子问题
 
@@ -207,35 +231,3 @@ Sherwood算法通过增加一个较小的额外开销从而使得算法的复杂
 ## 蒙特卡罗（Monte Carlo）算法
 
 举个例子，假如筐里有100个苹果，让我每次闭眼拿1个，挑出最大的。于是我随机拿1个，再随机拿1个跟它比，留下大的，再随机拿1个……我每拿一次，留下的苹果都至少不比上次的小。拿的次数越多，挑出的苹果就越大，但我除非拿100次，否则无法肯定挑出了最大的。这个挑苹果的算法，就属于蒙特卡罗算法——**尽量找好的，但不保证是最好的**。
-
-## 拉斯维加斯（Las Vegas）算法
-
-假如有一把锁，给我100把钥匙，只有1把是对的。于是我每次随机拿1把钥匙去试，打不开就再换1把。我试的次数越多，打开（最优解）的机会就越大，但在打开之前，那些错的钥匙都是没有用的。这个试钥匙的算法，就是拉斯维加斯算法——**尽量找最好的，但不保证能找到**。
-
-比如N皇后的排列问题，除了顺序枚举法之外，随机枚举也是一种策略。
-
-## Monte Carlo method与RL
-
-MDP的缺点在于model是已知的，但在实际应用中，更多的是Model未知（或部分未知）或者建模困难的情况，这种情况下就需要使用MC method来生成相应的Model。
-
-MC method在RL中主要有两种使用方式：
-
-model-free：完全不依赖Model。
-
-Simulated：简单的模拟，而不需要完整的Model。
-
-MC method用experience替代了MDP中的transitions/rewards（也可以说是用empirical mean替代了expected），但需要注意这些experience不能是重复采样的，而且它只适用于周期性的MDP。
-
-## Monte Carlo Policy Evaluation
-
-Monte Carlo Policy Evaluation的目标是对状态s进行估值。它的步骤是：
-
->当s被访问到(visited)时:   
->>增加计数：$$N(s)\leftarrow N(s) + 1$$   
->>增加总奖励：$$S(s)\leftarrow S(s) + G_t$$   
->>$$V(s) = S(s)/N(s)$$   
->反复多次：$$N(s)\to \infty,V(s)\to v_{\pi}(s)$$
-
-根据Visit的策略不同，Monte Carlo Policy Evaluation又可分为：First-visit MC和Every-Visit MC。
-
-两者的差别在于：First-visit MC的每次探索，一旦抵达状态s，就结束了，Every-Visit MC到达状态s之后还可以继续探索。

@@ -4,9 +4,25 @@ title:  深度强化学习（二）——Deep Q-learning Network, DQN进化史
 category: RL 
 ---
 
-# 概述
+# 概述（续）
 
-## 参考（续）
+## 参考
+
+https://www.nervanasys.com/demystifying-deep-reinforcement-learning/
+
+深度强化学习揭秘
+
+https://zhuanlan.zhihu.com/p/24446336
+
+深度强化学习Deep Reinforcement Learning学习整理
+
+https://mp.weixin.qq.com/s/K82PlSZ5TDWHJzlEJrjGlg
+
+深度学习与强化学习
+
+http://mp.weixin.qq.com/s/lLPRwInF5qaw7ewYHOpPyw
+
+深度强化学习资料
 
 http://lamda.nju.edu.cn/yangjw/project/drlintro.html
 

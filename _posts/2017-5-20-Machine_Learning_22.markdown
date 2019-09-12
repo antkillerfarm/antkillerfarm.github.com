@@ -266,3 +266,7 @@ https://zhuanlan.zhihu.com/p/48976706
 https://mp.weixin.qq.com/s/idS2l7u_OBxWi5UBexlK4w
 
 如何正确使用机器学习中的训练集、验证集和测试集？
+
+https://mp.weixin.qq.com/s/ubpRPQ7-1nvY5CzICWi1Cg
+
+似乎没区别，但你混淆过验证集和测试集吗？

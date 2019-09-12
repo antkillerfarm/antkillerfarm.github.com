@@ -245,3 +245,7 @@ https://mp.weixin.qq.com/s/Jcz4XWDjMmbhmAiI_zBQXQ
 https://mp.weixin.qq.com/s/iAHvfgn54zIwfM9K8KFJnw
 
 DLM：微信大规模分布式n-gram语言模型系统
+
+https://mp.weixin.qq.com/s/s7sHzzLANOp8-1LxgXQskA
+
+谷歌开发者大会上，蚂蚁金服开源ElasticDL分布式深度学习系统

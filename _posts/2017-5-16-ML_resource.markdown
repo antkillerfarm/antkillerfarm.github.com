@@ -210,6 +210,10 @@ https://mp.weixin.qq.com/s/XX0hBHKUgyK6v3iy-wkTmw
 
 机器学习各类算法比较
 
+https://mp.weixin.qq.com/s/kZFV39psoSjjIwunugdyIA
+
+一文读懂机器学习分类算法
+
 https://mp.weixin.qq.com/s/8oAOzImyZj5idLDt4z9WNA
 
 机器学习算法再比较
@@ -221,18 +225,6 @@ kriging插值
 http://blog.csdn.net/zwgdft/article/category/6432397
 
 创业公司做数据分析
-
-http://www.infoq.com/cn/articles/we-are-bringing-learning-to-rank-to-elasticsearch
-
-在Elasticsearch中应用机器学习排序LTR
-
-https://mp.weixin.qq.com/s/IrpIMNxQ4frgBKl5pbsfdg
-
-达观数据：用好学习排序(LTR),资讯信息流推荐效果翻倍
-
-http://mp.weixin.qq.com/s/V-QCRXt5wAfSCiNT955W0A
-
-外卖订单量预测异常报警模型实践
 
 http://mp.weixin.qq.com/s/v0z-s72juBF6Wwb9tc_Z_g
 
@@ -246,10 +238,6 @@ https://mp.weixin.qq.com/s/f6zi_FlygorqUIQFgWKMfA
 
 评测时如何构造训练数据分布与测试数据分布保持一致
 
-https://mp.weixin.qq.com/s/MtnHYmPVoDAid9SNHnlzUw
-
-阿里妈妈首次公开自研CTR预估核心算法MLR
-
 https://mp.weixin.qq.com/s/ykCMNrfKO0Gt_yji7cEA2g
 
 机器学习算法基于信用卡消费记录做信用评分
@@ -261,10 +249,6 @@ https://mp.weixin.qq.com/s/dcb7DRlK6azZHBym4gAVYQ
 https://mp.weixin.qq.com/s/goupgFyxjHouj2zML0XCPg
 
 如何使用JavaScript构建机器学习模型
-
-https://mp.weixin.qq.com/s/G5a0YK39RZzgce_szbwoTA
-
-你点一次广告，会创造多少价值？
 
 https://mp.weixin.qq.com/s/ukiF5uZgt45fJVxexG7UwQ
 
@@ -313,10 +297,6 @@ https://mp.weixin.qq.com/s/9llI8EPy2PNBYZ4Q_LdOFg
 https://mp.weixin.qq.com/s/-Zji6xGISaUzFhQ6tMlQqw
 
 最大似然估计与最小二乘法的一点浅见
-
-https://mp.weixin.qq.com/s/ubpRPQ7-1nvY5CzICWi1Cg
-
-似乎没区别，但你混淆过验证集和测试集吗？
 
 https://mp.weixin.qq.com/s/lNYKzNU6VcT7orPCotbUdg
 
@@ -445,11 +425,3 @@ http://www.jianshu.com/p/af7e063ac9b3
 https://www.zhihu.com/question/28810567
 
 ELM算法相关
-
-https://mp.weixin.qq.com/s/zXABOzbQRV7sfgAhr_WqZw
-
-跨领域推荐系统文献综述（上）
-
-https://mp.weixin.qq.com/s/OxUCIhoIED_Z1Cf91Va36g
-
-跨领域推荐系统文献综述（下）

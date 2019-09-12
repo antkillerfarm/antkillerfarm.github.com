@@ -50,6 +50,10 @@ CS 294: Deep Reinforcement Learning
 
 >以上1本书+4个课程，基本就是目前RL领域的黄金搭档了。Stanford的课程内容比较新，但是很浅。UCB的课程通常都是给入门以后的人准备的，无论DL还是RL，都是这样。Sutton和Silver的课程内容比较老，但是很有深度。和CV领域只需要学习DL，而不需要学习传统方法不同，按照Sutton的说法，基本算法原理远比神经网络更重要。
 
+https://inst.eecs.berkeley.edu/~cs188/fa18/index.html
+
+CS 188: Introduction to Artificial Intelligence。这个课程偏重RL和机器人，有贝叶斯网络的内容，但没有DL的内容。
+
 http://www.eecs.wsu.edu/~taylorm/17_580/index.html
 
 CptS 580: Reinforcement Learning
@@ -166,7 +170,11 @@ https://mp.weixin.qq.com/s/eMzrktlm93ZEZi-J5sipqA
 
 https://github.com/dennybritz/reinforcement-learning
 
-GitHub 万星资源：强化学习算法实现，教程代码样样全，还有详细学习规划
+GitHub万星资源：强化学习算法实现，教程代码样样全，还有详细学习规划
+
+https://mp.weixin.qq.com/s/LJbpDls06jH5xL3Kbh-eBw
+
+强化学习实践教程
 
 # 论文
 
@@ -197,6 +205,10 @@ https://www.cnblogs.com/steven-yang/tag/强化学习/
 https://www.cnblogs.com/steven-yang/tag/博弈论/
 
 一个博弈论的专栏
+
+https://blog.csdn.net/gsww404
+
+一个DRL的专栏
 
 # 工具/框架
 
@@ -235,6 +247,14 @@ https://zhuanlan.zhihu.com/p/68462431
 https://mp.weixin.qq.com/s/BhTX4KQnLxUQLvPUfY3q6Q
 
 物理实验成本为零！南大LAMDA开源虚拟RL训练环境
+
+https://mp.weixin.qq.com/s/La43IWrxuDLoppnfRAYtbA
+
+ReinforceJS库（动态展示DP、TD、DQN算法运行过程）
+
+https://mp.weixin.qq.com/s/HUf41-OBAwZm7zlISkIx0w
+
+DRL在Unity自行车环境中配置与实践
 
 # 概述
 
@@ -284,21 +304,3 @@ https://www.zhihu.com/question/316626294
 https://www.zhihu.com/question/49787932
 
 RL两大类算法的本质区别？（Policy Gradient和Q-Learning)
-
-## 参考
-
-https://www.nervanasys.com/demystifying-deep-reinforcement-learning/
-
-深度强化学习揭秘
-
-https://zhuanlan.zhihu.com/p/24446336
-
-深度强化学习Deep Reinforcement Learning学习整理
-
-https://mp.weixin.qq.com/s/K82PlSZ5TDWHJzlEJrjGlg
-
-深度学习与强化学习
-
-http://mp.weixin.qq.com/s/lLPRwInF5qaw7ewYHOpPyw
-
-深度强化学习资料

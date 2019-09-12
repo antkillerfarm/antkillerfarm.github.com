@@ -383,3 +383,27 @@ https://mp.weixin.qq.com/s/_zSe_Ia4DPrFKqsqW3iQ8w
 https://mp.weixin.qq.com/s/frEjB8SznDzJxOL3bkHnYw
 
 矩阵分解推荐算法
+
+http://www.infoq.com/cn/articles/we-are-bringing-learning-to-rank-to-elasticsearch
+
+在Elasticsearch中应用机器学习排序LTR
+
+https://mp.weixin.qq.com/s/IrpIMNxQ4frgBKl5pbsfdg
+
+达观数据：用好学习排序(LTR),资讯信息流推荐效果翻倍
+
+https://mp.weixin.qq.com/s/MtnHYmPVoDAid9SNHnlzUw
+
+阿里妈妈首次公开自研CTR预估核心算法MLR
+
+https://mp.weixin.qq.com/s/G5a0YK39RZzgce_szbwoTA
+
+你点一次广告，会创造多少价值？
+
+https://mp.weixin.qq.com/s/zXABOzbQRV7sfgAhr_WqZw
+
+跨领域推荐系统文献综述（上）
+
+https://mp.weixin.qq.com/s/OxUCIhoIED_Z1Cf91Va36g
+
+跨领域推荐系统文献综述（下）

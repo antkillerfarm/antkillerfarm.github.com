@@ -6,6 +6,38 @@ category: RL
 
 # Monte-Carlo（续）
 
+## 拉斯维加斯（Las Vegas）算法
+
+假如有一把锁，给我100把钥匙，只有1把是对的。于是我每次随机拿1把钥匙去试，打不开就再换1把。我试的次数越多，打开（最优解）的机会就越大，但在打开之前，那些错的钥匙都是没有用的。这个试钥匙的算法，就是拉斯维加斯算法——**尽量找最好的，但不保证能找到**。
+
+比如N皇后的排列问题，除了顺序枚举法之外，随机枚举也是一种策略。
+
+## Monte Carlo method与RL
+
+MDP的缺点在于model是已知的，但在实际应用中，更多的是Model未知（或部分未知）或者建模困难的情况，这种情况下就需要使用MC method来生成相应的Model。
+
+MC method在RL中主要有两种使用方式：
+
+model-free：完全不依赖Model。
+
+Simulated：简单的模拟，而不需要完整的Model。
+
+MC method用experience替代了MDP中的transitions/rewards（也可以说是用empirical mean替代了expected），但需要注意这些experience不能是重复采样的，而且它只适用于周期性的MDP。
+
+## Monte Carlo Policy Evaluation
+
+Monte Carlo Policy Evaluation的目标是对状态s进行估值。它的步骤是：
+
+>当s被访问到(visited)时:   
+>>增加计数：$$N(s)\leftarrow N(s) + 1$$   
+>>增加总奖励：$$S(s)\leftarrow S(s) + G_t$$   
+>>$$V(s) = S(s)/N(s)$$   
+>反复多次：$$N(s)\to \infty,V(s)\to v_{\pi}(s)$$
+
+根据Visit的策略不同，Monte Carlo Policy Evaluation又可分为：First-visit MC和Every-Visit MC。
+
+两者的差别在于：First-visit MC的每次探索，一旦抵达状态s，就结束了，Every-Visit MC到达状态s之后还可以继续探索。
+
 ## Incremental Monte-Carlo Updates
 
 借用《强化学习（二）》中，求均值的小技巧，我们可以得到Incremental Mean。
@@ -177,35 +209,3 @@ Monte-Carlo, Temporal-Difference和Dynamic Programming都是计算状态价值�
 - 当既考虑所有样本，又把Episode从开始到终止遍历完，就变成了穷举法。
 
 需要提及的是：DP利用的是整个MDP问题的模型，也就是状态转移概率，虽然它并不实际利用样本，但是它利用了整个模型的规律，因此认为是Full Width的。
-
-## bootstrapping
-
-在前面的章节，我们一直提到bootstrapping这个名词，然而却没有解释它的含义，现在是时候了。
-
-统计学中，bootstrapping可以指依赖于重置随机抽样的一切试验。bootstrapping可以用于计算样本估计的准确性。对于一个采样，我们只能计算出某个统计量(例如均值)的一个取值，无法知道均值统计量的分布情况。但是通过自助法(自举法)我们可以模拟出均值统计量的近似分布。有了分布很多事情就可以做了（比如说有你推出的结果来进而推测实际总体的情况）。
-
-bootstrapping方法的实现很简单，假设抽取的样本大小为n，在原样本中有放回的抽样，抽取n次。每抽一次形成一个新的样本，重复操作，形成很多新样本，通过这些样本就可以计算出样本的一个分布。新样本的数量通常是1000-10000。如果计算成本很小，或者对精度要求比较高，就增加新样本的数量。
-
-优点：简单易于操作。
-
-缺点：bootstrapping的运用基于很多统计学假设，因此假设的成立与否会影响采样的准确性。
-
-**但是，这不是bootstrapping在RL中的含义！**
-
-Finally, we note one last special property of DP methods. All of them update estimates of the values of states based on estimates of the values of successor states. That is, they update estimates on the basis of other estimates. We call this general idea **bootstrapping**.
-
-上面这段是Sutton给bootstrapping的定义，其实也不是太好懂。那么bootstrapping到底是什么意思呢？
-
-$$V(S_t)\leftarrow V(S_t)+\alpha(R_{t+1}+\gamma V(S_{t+1})-V(S_t))$$
-
-上式是TD的更新公式，从中可以看出TD target：$$R_{t+1}+\gamma V(S_{t+1})$$中已经包含了V(s)，也就是说它是用其它V(s)更新当前V(s)。这种特性就是**bootstrapping**。
-
-$$V(S_t)\leftarrow V(S_t)+\alpha(G_t-V(S_t))$$
-
-而MC的target：$$G_t$$就和V(s)无关。
-
-参考：
-
-https://datascience.stackexchange.com/questions/26938/what-exactly-is-bootstrapping-in-reinforcement-learning
-
-What exactly is bootstrapping in reinforcement learning?

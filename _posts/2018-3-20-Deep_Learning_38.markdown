@@ -50,6 +50,10 @@ https://mp.weixin.qq.com/s/-1W4SqEX_xxxdBFMKJJ6Xg
 
 腾讯（优图）新技术的人脸检测
 
+https://zhuanlan.zhihu.com/p/81353261
+
+CVPR2019_Group Sampling
+
 # RNN进阶
 
 ## IndRNN

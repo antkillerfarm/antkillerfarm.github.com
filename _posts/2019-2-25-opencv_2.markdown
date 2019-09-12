@@ -220,7 +220,11 @@ OpenCV视频分析背景提取与前景提取
 
 https://mp.weixin.qq.com/s/C9LG-5vFHWhR_Fl94LJYTw
 
-二值图像分析案例精选
+二值图像分析案例精选（1）
+
+https://mp.weixin.qq.com/s/nxvYmQPRUQKEQg2wzEXBSQ
+
+二值图像案例分析精选（2）
 
 https://mp.weixin.qq.com/s/-b1wfvv1jdtnlXzy9BEpJA
 

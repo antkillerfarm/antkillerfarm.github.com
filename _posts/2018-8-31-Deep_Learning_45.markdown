@@ -62,6 +62,10 @@ https://mp.weixin.qq.com/s/2ehni5O__XnPaLjBRmAiIQ
 
 利用AdaNet将多个TensorFlow Hub模块组合成一个集成网络
 
+https://mp.weixin.qq.com/s/mEYFnP1q131-4hdgjOQ2cQ
+
+“超参数”与“网络结构”自动化设置方法---DeepHyper
+
 ## 书籍
 
 https://mp.weixin.qq.com/s/wTwjbripELzqdCjs64Dzzw

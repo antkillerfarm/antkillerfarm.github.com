@@ -1,8 +1,53 @@
 ---
 layout: post
-title:  强化学习（七）——策略梯度, Actor-Critic
+title:  强化学习（七）——策略梯度
 category: RL 
 ---
+
+# 价值函数的近似表示
+
+## Incremental Prediction Algorithms（续）
+
+下面给出各种算法的收敛特性。
+
+**预测算法的收敛性**：
+
+| On/Off-Policy | Algorithm | Table Lookup | Linear | Non-Linear |
+|:--:|:--:|:--:|:--:|:--:|
+| On-Policy | MC<br/>TD(0)<br/>TD($$\lambda$$)<br/>Gradient TD | Yes<br/>Yes<br/>Yes<br/>Yes | Yes<br/>Yes<br/>Yes<br/>Yes | Yes<br/>No<br/>No<br/>Yes |
+| On-Policy | MC<br/>TD(0)<br/>TD($$\lambda$$)<br/>Gradient TD | Yes<br/>Yes<br/>Yes<br/>Yes | Yes<br/>No<br/>No<br/>Yes | Yes<br/>No<br/>No<br/>Yes |
+
+Gradient TD中的Gradient指的是PBE（projected Bellman error）的梯度。
+
+![](/images/img3/PBE.png)
+
+**控制算法的收敛性**：
+
+| Algorithm | Table Lookup | Linear | Non-Linear |
+|:--:|:--:|:--:|:--:|
+| Monte-Carlo Control<br/>Sarsa<br/>Q-learning<br/>Gradient Q-learning | Yes<br/>Yes<br/>Yes<br/>Yes | Yes'<br/>Yes'<br/>No<br/>Yes | No<br/>No<br/>No<br/>No |
+
+Yes' = chatters around near-optimal value function
+
+## Batch Methods
+
+前面所说的Incremental算法都是基于数据流的，经历一步，更新算法后，我们就不再使用这步的数据了，这种算法简单，但有时候不够高效。与之相反，Batch Methods则是把一段时期内的数据集中起来，通过学习来使得参数能较好地符合这段时期内所有的数据。这里的训练数据集Batch相当于个体的一段经验。
+
+### Least Squares Prediction
+
+假设存在一个价值函数的近似：$$\hat v(s,w)\approx v_\pi(s)$$和一个经验集$$\mathcal{D}=\{<s_1,v_1^{\pi}>,<s_2,v_2^{\pi}>,\dots,<s_T,v_T^{\pi}>\}$$，则Least Squares Error为：
+
+$$LS(w)=\sum_{t=1}^T(v_t^{\pi}-\hat v(s_t,w))^2$$
+
+使用LSE的Prediction被称为Least Squares Prediction，针对不同方向衍生还出了LSMC、LSTD、LSTD($$\lambda$$)等算法。
+
+LSE亦可推广到Q函数，即所谓的LS Q-Learning。
+
+### Experience Replay
+
+为了充分利用经验集，我们还可以使用Experience Replay技术，即：随机从$$\mathcal{D}中采样$$<s,v^{\pi}>$$，然后使用SGD最小化LSE。
+
+这一点和普通的监督学习很类似，梯度下降从原理上来说，本就不可能一个epoch就达到最优，而需要多跑几个epoch，这里的Experience Replay也是类似的道理。
 
 # 策略梯度
 
@@ -155,41 +200,3 @@ $$J(\theta)=E_{\pi_\theta}[r]=\sum_{s\in S} d(s)\sum_{a\in A}\pi_\theta(s,a)R_{s
 $$\nabla_\theta J(\theta)=\sum_{s\in S} d(s)\sum_{a\in A}\nabla_\theta \log \pi_\theta(s,a)R_{s,a}=E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a)r]$$
 
 One-Step MDP的相关结论可以扩展到multi-step MDP，只需要将即时奖励r，替换为长期奖励（一般使用其估计函数$$Q^{\pi}(s,a)$$）即可。
-
->在监督学习里，目标函数的梯度不包括价值函数，当前状态、行为的好坏将有监督信息告知；而在强化学习里，需要通过价值函数来估计当前状态行为的好坏。
-
-我们将Policy Gradient应用到MC算法上，则得到如下流程：
-
->Initialise $$\theta$$ arbitrarily   
->>for each episode $$\{s_1,a_1,r_2,\dots,s_{T−1},a_{T−1},r_T\}\sim \pi_\theta$$ {   
->>>for t = 1 to $$T−1$$ {   
->>>$$\theta \leftarrow \theta + \alpha\nabla_\theta \log \pi_\theta (s_t , a_t )v_t$$   
->>>}   
->>
->>}   
->
->return $$\theta$$
-
-在基于策略的学习算法中，算法挑选策略的时候不需使用$$\epsilon$$-贪婪搜索，策略是直接根据参数$$\theta$$得到的。同时在对策略参数更新时有一个学习率$$\alpha$$，它体现了在梯度方向上更新参数θ的步长（step size），一般的我们在更新参数时是按梯度方向只更新由$$\alpha$$确定的一定量。
-
-打个比方，当前策略在更新时提示梯度方向倾向于选择“向左”的行为，那么在更新策略参数时，可以朝着向左的方向更新一定的值，如果这个$$\alpha$$取值增大，则导致决策朝着更容易选择“向左”的行为倾斜，这其实就相当于没有探索的贪婪决策行为。而只要学习在持续，就有可能因为梯度变化而尝试更多的行为，这一过程中参数$$\alpha$$控制了策略更新的平滑度。
-
-如果基于价值函数制定策略，使用查表（table look-up)的方式可以保证能收敛到全局最优解，即虽然使用直接基于策略的学习方法，当仍然使用查表的方式时，比如使用softmax策略是可以得到全局最优解的；但是如果使用一些通用化的近似函数表示方法，比如神经网络等，则无论是基于价值函数还是基于策略，都可能陷入局部最优解。
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/54825295
-
-基于值和策略的强化学习入坑
-
-# Actor-Critic
-
-## 概述
-
-MC策略梯度方法使用了收获作为状态价值的估计，它虽然是无偏的，但是噪声却比较大，也就是变异性（方差）较高。如果我们能够相对准确地估计状态价值，用它来指导策略更新，那么是不是会有更好的学习效果呢？这就是Actor-Critic策略梯度的主要思想。
-
-![](/images/img3/Actor-critic.png)
-
-Actor-Critic的字面意思是“演员-评论”，相当于演员在演戏的同时，有评论家指点，继而演员演得越来越好。即使用Critic来估计行为价值：
-
-$$Q_w(s,a)\approx Q^{\pi_\theta}(s,a)$$

@@ -46,9 +46,51 @@ https://mp.weixin.qq.com/s/HBUI9-jMa3otnB-Qq_eg5A
 
 悉尼科大徐亦达教授：机器学习讲义，32份主题推介
 
+# 策略梯度
+
+## Policy Gradient Theorem（续）
+
+>在监督学习里，目标函数的梯度不包括价值函数，当前状态、行为的好坏将有监督信息告知；而在强化学习里，需要通过价值函数来估计当前状态行为的好坏。
+
+我们将Policy Gradient应用到MC算法上，则得到如下流程：
+
+>Initialise $$\theta$$ arbitrarily   
+>>for each episode $$\{s_1,a_1,r_2,\dots,s_{T−1},a_{T−1},r_T\}\sim \pi_\theta$$ {   
+>>>for t = 1 to $$T−1$$ {   
+>>>$$\theta \leftarrow \theta + \alpha\nabla_\theta \log \pi_\theta (s_t , a_t )v_t$$   
+>>>}   
+>>
+>>}   
+>
+>return $$\theta$$
+
+在基于策略的学习算法中，算法挑选策略的时候不需使用$$\epsilon$$-贪婪搜索，策略是直接根据参数$$\theta$$得到的。同时在对策略参数更新时有一个学习率$$\alpha$$，它体现了在梯度方向上更新参数θ的步长（step size），一般的我们在更新参数时是按梯度方向只更新由$$\alpha$$确定的一定量。
+
+打个比方，当前策略在更新时提示梯度方向倾向于选择“向左”的行为，那么在更新策略参数时，可以朝着向左的方向更新一定的值，如果这个$$\alpha$$取值增大，则导致决策朝着更容易选择“向左”的行为倾斜，这其实就相当于没有探索的贪婪决策行为。而只要学习在持续，就有可能因为梯度变化而尝试更多的行为，这一过程中参数$$\alpha$$控制了策略更新的平滑度。
+
+如果基于价值函数制定策略，使用查表（table look-up)的方式可以保证能收敛到全局最优解，即虽然使用直接基于策略的学习方法，当仍然使用查表的方式时，比如使用softmax策略是可以得到全局最优解的；但是如果使用一些通用化的近似函数表示方法，比如神经网络等，则无论是基于价值函数还是基于策略，都可能陷入局部最优解。
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/54825295
+
+基于值和策略的强化学习入坑
+
+https://blog.csdn.net/gsww404/article/details/80705950
+
+策略梯度（Policy Gradient）
+
 # Actor-Critic
 
-## 概述（续）
+## 概述
+
+MC策略梯度方法使用了收获作为状态价值的估计，它虽然是无偏的，但是噪声却比较大，也就是变异性（方差）较高。如果我们能够相对准确地估计状态价值，用它来指导策略更新，那么是不是会有更好的学习效果呢？这就是Actor-Critic策略梯度的主要思想。
+
+![](/images/img3/Actor-critic.png)
+
+Actor-Critic的字面意思是“演员-评论”，相当于演员在演戏的同时，有评论家指点，继而演员演得越来越好。即使用Critic来估计行为价值：
+
+$$Q_w(s,a)\approx Q^{\pi_\theta}(s,a)$$
 
 基于Actor-Critic策略梯度学习分为两部分内容：
 
@@ -164,6 +206,10 @@ https://mp.weixin.qq.com/s/c4xoy4CJ_hsVdmGe1n3rTQ
 
 A3C——一种异步强化学习方法
 
+https://mp.weixin.qq.com/s/5kI72vg4JNAZWD93EYAUWA
+
+直观的强化学习算法(A2C)
+
 # Integrating Learning and Planning
 
 前面的章节主要介绍了Model-Free RL，下面将讲一下Model-Based RL，主要包括如下内容：
@@ -193,51 +239,3 @@ $$R_{t+1} = R_\eta (R_{t+1} | S_t, A_t)$$
 通常我们需要如下的假设，即状态转移函数和奖励函数是条件独立的：
 
 $$P[S_{t+1}, R_{t+1} | S_t, A_t] = P[S_{t+1} | S_t, A_t] P[R_{t+1} | S_t, A_t]$$
-
-## Model Learning
-
-所谓Model Learning是指：从experience$$\{S_1, A_1, R_2, \dots, S_T\}$$，学习
-
-$$S_1, A_1\to R_2,S_2$$
-
-$$S_2, A_2\to R_3,S_3$$
-
-$$\dots$$
-
-$$S_{T-1}, A_{T-1}\to R_T,S_T$$
-
-这实际上是一个监督学习的问题。其中，$$s,a\to r$$是一个回归问题(regression problem)，而$$s,a\to s'$$是一个密度估计问题(density estimation problem)。
-
-选择一个损失函数，比如均方差，KL散度等，优化参数$$\eta$$来最小化经验损失(empirical loss)。所有监督学习相关的算法都可以用来解决上述两个问题。
-
-根据使用的算法不同，可以有如下多种模型：查表式(Table lookup Model)、线性期望模型(Linear Expectation Model)、线性高斯模型(Linear Gaussian Model)、高斯决策模型(Gaussian Process Model)、和深信度神经网络模型(Deep Belief Network Model)等。
-
-这里主要以查表模型来解释模型的构建。
-
-## Table Lookup Model
-
-查表模型适用于MDP的P，R都为已知的情况。我们通过visit得到各状态行为的转移概率和奖励，把这些数据存入表中，使用时直接检索。状态转移概率和奖励计算方法如下：
-
-$$\hat{P}^a_{s,s'}=\frac{1}{N(s,a)}\sum_{t=1}^T 1(S_t,A_t,S_{t+1}=s,a,s')$$
-
-$$\hat{R}^a_{s}=\frac{1}{N(s,a)}\sum_{t=1}^T 1(S_t,A_t=s,a)R_t$$
-
-其中的$$N(s,a)$$表示state action pair$$<s,a>$$在visit中出现的次数。
-
-这里也可以采用如下变种：
-
-- 在每个time-step：t，记录experience tuple：$$<S_t, A_t, R_{t+1}, S_{t+1}>$$。
-
-- 从模型采样构建虚拟经历时，从tuples中随机选择符合$$<s,a,\cdot,\cdot>$$的一个tuple。
-
-这种方法，不再以Episode为最小学习单位，而是以时间步（time-step）为单位，一次学习一个状态转换。
-
-## Planning with a Model
-
-规划的过程相当于求解一个MDP的过程，即给定一个模型$$M_\eta = <P_\eta, R_\eta>$$，求解MDP$$<S, A, P_\eta, R_\eta>$$，找到基于该模型的最优价值函数或最优策略，也就是在给定的状态s下确定最优的行为a。
-
-我们可以使用之前介绍过的价值迭代，策略迭代方法；也可以使用树搜索方法（Tree Search）。
-
-## Sample-Based Planning
-
-

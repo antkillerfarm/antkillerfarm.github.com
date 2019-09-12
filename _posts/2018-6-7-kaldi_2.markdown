@@ -219,6 +219,16 @@ https://zhuanlan.zhihu.com/p/59686031
 
 怎样从二进制数据分辨单声道与双声道音频
 
+# SpeechBrain
+
+SpeechBrain是一个基于pytorch的语音工具包，目前（2019.9）正在开发中。
+
+它的目标是采用目前主流的DL框架，替代Kaldi。毕竟后者年头有些久远，扩展麻烦，使用也复杂，不符合目前的开发需求。
+
+官网：
+
+https://speechbrain.github.io/
+
 # OpenAI
 
 OpenAI，由诸多硅谷大亨（Elon Musk等）联合建立的人工智能非营利组织。
@@ -257,6 +267,12 @@ pip install -e .[all] # all install
 
 这里选择minimal install就可以了，all install需要安装MuJoCo，而后者是收费软件。
 
+和Gym配套的还有一个算法库：
+
+https://github.com/openai/baselines
+
+当然，看名字也知道这只是一个简单的算法库。
+
 参考：
 
 http://tech.163.com/16/0510/09/BMMOPSCR00094OE0.html
@@ -283,6 +299,10 @@ https://mp.weixin.qq.com/s/_A0q8DFAsIclaofVgZfjMA
 
 定制股票交易OpenAI Gym强化学习环境
 
+https://blog.csdn.net/gsww404/article/details/80627892
+
+OpenAI-baselines的使用方法
+
 ## RND
 
 OpenAI最近开发了RND（Random Network Distillation），一种基于预测的强化学习算法，用于鼓励强化学习代理通过好奇心来探索他们所处环境。在游戏任务Montezuma's Revenge上首次超过人类的平均表现。
@@ -296,27 +316,3 @@ Reinforcement Learning with Prediction-Based Rewards
 代码：
 
 https://github.com/openai/random-network-distillation
-
-# AI-1000问
-
-这个是“有三AI”微信公众号下的栏目，特辑录如下。
-
-https://mp.weixin.qq.com/s/5-3UxBVy080WhEWumv7BiA
-
-为什么LeNet5倒数第二个全连接层维度为84？
-
-https://mp.weixin.qq.com/s/Er3Poj8oxV5OKNlAlZwq_A
-
-为什么OpenCV读取的图像格式是BGR？
-
-https://mp.weixin.qq.com/s/gmXgZZdxU2Qqv6X7HFqhdg
-
-为什么CNN中的卷积核半径都是奇数？
-
-https://mp.weixin.qq.com/s/0UpHuJ_gJfJvURRzmlJ1iA
-
-segmentation和matting有什么区别？
-
-https://mp.weixin.qq.com/s/1TK4h7UoeVas1S1NfNgRag
-
-为什么深度学习图像分类的输入多是224*224

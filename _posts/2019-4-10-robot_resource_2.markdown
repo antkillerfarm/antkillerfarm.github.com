@@ -66,14 +66,6 @@ http://mp.weixin.qq.com/s/SWUQvR6qA2JKjaclWskUTQ
 
 DeepTest：可自动测试深度神经网络驾驶系统
 
-https://mp.weixin.qq.com/s/Rmvksy54iKgcyd7bqy_oxQ
-
-机器人开源操作系统ROS入门
-
-https://zhuanlan.zhihu.com/p/51353579
-
-Matlab/Simulink与ROS的通讯
-
 https://mp.weixin.qq.com/s/0njQq6QAfIdwsF5gTvk1Wg
 
 惯性导航系统：现代军事系统的核心技术产品

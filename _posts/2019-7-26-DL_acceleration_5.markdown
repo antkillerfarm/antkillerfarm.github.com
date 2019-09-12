@@ -245,3 +245,7 @@ MIT韩松组推出升级版AutoML方法，一个网络适配所有硬件
 https://zhuanlan.zhihu.com/p/76909380
 
 轻量型网络：MoGA简介
+
+https://mp.weixin.qq.com/s/n7neAptKozRz5p5ctvKZrQ
+
+模型压缩——结构篇

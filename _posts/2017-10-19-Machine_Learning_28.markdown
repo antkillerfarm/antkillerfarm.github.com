@@ -164,6 +164,10 @@ https://www.zhihu.com/question/324999831
 
 异常检测（anomaly/ outlier detection）领域还有那些值得研究的问题？
 
+http://mp.weixin.qq.com/s/V-QCRXt5wAfSCiNT955W0A
+
+外卖订单量预测异常报警模型实践
+
 # 因果推理
 
 https://mp.weixin.qq.com/s/doi26r9AVIMbpkZ01wsCZA
@@ -335,3 +339,7 @@ https://mp.weixin.qq.com/s/lKsHvKjbIyBJ5OmCl2fIvg
 https://mp.weixin.qq.com/s/MEGonT3rh0CTMkZ1Y8rZ7g
 
 Auto Machine Learning自动化机器学习笔记
+
+https://mp.weixin.qq.com/s/7-EMaoBsEAS3ZuubpZMaUQ
+
+AutoML在表数据中的研究与应用

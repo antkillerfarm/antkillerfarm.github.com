@@ -252,10 +252,6 @@ http://blog.exbot.net/
 
 一个机器人技术方面的网站。
 
-http://www.ros.org/
-
-ROS(Robot Operating System）是一个机器人软件平台，前身是斯坦福人工智能实验室为了支持斯坦福智能机器人STAIR而建立的项目。
-
 https://blog.csdn.net/yuxuan20062007/
 
 一个无人驾驶的blog
@@ -273,6 +269,24 @@ https://mp.weixin.qq.com/s/yNr4_tEyYg_VBmNjIrjYug
 https://zhuanlan.zhihu.com/p/66961439
 
 交通模型仿真工具SUMO介绍
+
+## ROS
+
+http://www.ros.org/
+
+ROS(Robot Operating System）是一个机器人软件平台，前身是斯坦福人工智能实验室为了支持斯坦福智能机器人STAIR而建立的项目。
+
+https://mp.weixin.qq.com/s/Rmvksy54iKgcyd7bqy_oxQ
+
+机器人开源操作系统ROS入门
+
+https://zhuanlan.zhihu.com/p/51353579
+
+Matlab/Simulink与ROS的通讯
+
+https://mp.weixin.qq.com/s/lUhLd8HXz_HG_mCnDwURNg
+
+ROS概述
 
 ## PythonRobotics
 

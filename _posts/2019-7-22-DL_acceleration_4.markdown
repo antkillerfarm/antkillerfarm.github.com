@@ -313,7 +313,3 @@ https://mp.weixin.qq.com/s/mWfZ4jfuby4myGfi6TW3wQ
 https://mp.weixin.qq.com/s/8NDOf_8qxMMpcuXIZGJCGg
 
 Google又发大招：高效实时实现视频目标检测
-
-https://mp.weixin.qq.com/s/_JlaxwEYqdTTuS4hNSQTTw
-
-这么Deep且又轻量的Network，实时目标检测

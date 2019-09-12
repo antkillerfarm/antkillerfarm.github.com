@@ -255,6 +255,10 @@ https://mp.weixin.qq.com/s/TScPuY_nk3Iqpo2m_0qd5w
 
 如何应对大数据分析工程师面试Spark考察，看这一篇就够了
 
+https://mp.weixin.qq.com/s/UPYiPrpM4A7nRpxpBstyrA
+
+Spark MLlib并行训练原理
+
 # 多维数组的行优先和列优先
 
 这里以numpy为工具，介绍一下多维数组的行优先和列优先的概念。

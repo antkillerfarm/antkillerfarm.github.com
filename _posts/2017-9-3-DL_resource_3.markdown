@@ -350,6 +350,10 @@ https://mp.weixin.qq.com/s/U9Ncrw6rJfoHn84shYns4g
 
 GPU显存不足怎么办？
 
+https://mp.weixin.qq.com/s/cMp9UPrbYsBqL_mdnaB6wA
+
+天池布匹疵点检测大赛解决方案与Baseline
+
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA

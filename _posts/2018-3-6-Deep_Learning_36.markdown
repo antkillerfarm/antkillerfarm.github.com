@@ -210,6 +210,10 @@ https://mp.weixin.qq.com/s/29mEv-trmrvIx_wqfu5EYw
 
 Neural Factorization Machines神经因子分解机详解
 
+https://mp.weixin.qq.com/s/92udRhAQHqDCCFpK6YUFOw
+
+深度学习在推荐系统中的最新应用
+
 # Mask R-CNN
 
 Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的网络。它是何恺明2017年的新作。
