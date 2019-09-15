@@ -80,6 +80,10 @@ https://www.cnblogs.com/shine-lee/p/10906535.html
 
 卷积神经网络中的Winograd快速卷积算法
 
+https://mp.weixin.qq.com/s/RaW_WVKoLBk6jkoA6A3D-A
+
+如何实现高速卷积？深度学习库使用了这些“黑魔法”
+
 # NN Quantization
 
 ![](/images/img3/NN_Quantization.jpg)

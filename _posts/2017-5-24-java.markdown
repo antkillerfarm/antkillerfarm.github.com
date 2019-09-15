@@ -30,6 +30,10 @@ Java的GUI框架，大致有：
 
 3.JavaFX。目前最新的GUI框架，其设计思路和实现，均与WPF是同一档次，已经成为官方推荐的标准框架，并集成到JRE中。
 
+官网：
+
+https://openjfx.io/
+
 ## Ubuntu安装Oracle JDK
 
 `sudo apt install software-properties-common`
@@ -349,31 +353,3 @@ https://mp.weixin.qq.com/s/Sjg6jgl1D6IkYgsuQSgFHg
 https://zhuanlan.zhihu.com/p/35551654
 
 基于React的高质量坦克大战复刻版
-
-https://mp.weixin.qq.com/s/zfOZAmgpndcqgxHHaS1j3g
-
-用Vue和React构建相同应用程序，区别在哪？
-
-https://mp.weixin.qq.com/s/DHxEqsTMOyc7pHfmJrfNEg
-
-一篇文章理解JS继承
-
-https://mp.weixin.qq.com/s/tNi5LJmotuXSoHbZhNgPcw
-
-GitHub已完全弃用jQuery，问题是为什么？
-
-https://mp.weixin.qq.com/s/WHh9v3icCc90PwiLyv0Hng
-
-为什么Facebook的API以一个循环作为开头？
-
-https://mp.weixin.qq.com/s/GQ2azFxcmXrY78rTAdxuVA
-
-JS/CSS体积减少了67%，我们是如何做到的？
-
-https://mp.weixin.qq.com/s/c1bMljAx1QWz9QQJX7sHmg
-
-大部分教程不会告诉你的12个JS技巧
-
-https://www.jianshu.com/p/c8b86b09daf0
-
-函数防抖和节流

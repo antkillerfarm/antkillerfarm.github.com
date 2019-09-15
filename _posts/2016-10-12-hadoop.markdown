@@ -55,7 +55,6 @@ Hadoop的“生态圈”
 
 ![](/images/img3/hadoop.png)
 
-
 ## 编译
 
 Hadoop目前不在Ubuntu的官方软件仓库中，无法使用apt-get安装。使用源代码编译Hadoop的相关步骤，可在源码包的BUILDING.txt中找到。这里仅作为补遗之用。总的来说，如无必要还是直接下载bin包比较好，编译还是很麻烦的。
@@ -193,3 +192,7 @@ https://mp.weixin.qq.com/s/goXmXMc8JyAgU_GKyWXDzw
 https://mp.weixin.qq.com/s/s-kOquVbIuJAMSQqkfmaAA
 
 Hadoop之HDFS简介
+
+https://mp.weixin.qq.com/s/0qgaJnZjYsf0WP2z5yGgrg
+
+面试集锦：HDFS

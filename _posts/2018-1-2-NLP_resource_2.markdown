@@ -228,6 +228,10 @@ https://mp.weixin.qq.com/s/gDZyTbM1nw3fbEnU--y3nQ
 
 Python利用深度学习进行文本摘要的综合指南
 
+https://mp.weixin.qq.com/s/byKEY726MfEtKwsip-go1Q
+
+AI攒论文指日可待？Transformer生成论文摘要方法已出
+
 ## 句法分析
 
 传统方法主要是PCFG （Probabilistic Context-Free Grammar）。

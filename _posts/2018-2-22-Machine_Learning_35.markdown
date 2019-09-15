@@ -330,3 +330,7 @@ https://mp.weixin.qq.com/s/7x2LS94i7te7JAeWo-d5kA
 https://mp.weixin.qq.com/s/hzpnHvqaP9sxQQlLq-_3wg
 
 Robust Optimization in 3D Vision
+
+https://mp.weixin.qq.com/s/T20YMbTBbn1GC3fvInhkkA
+
+深度学习如何影响运筹学？

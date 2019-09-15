@@ -54,6 +54,10 @@ https://zhuanlan.zhihu.com/p/81353261
 
 CVPR2019_Group Sampling
 
+https://mp.weixin.qq.com/s/QZvGiri0x5UetBp0ZoDHDQ
+
+目前最强判别能力的深度人脸识别
+
 # RNN进阶
 
 ## IndRNN

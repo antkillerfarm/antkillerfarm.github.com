@@ -273,3 +273,7 @@ https://mp.weixin.qq.com/s/Dq4HsRg05bVMjvrsrxfOOQ
 https://mp.weixin.qq.com/s/cyaQt-SO7sgG49kuUyPJbQ
 
 旷视开源的深度强化学习绘画智能体论文解读
+
+https://mp.weixin.qq.com/s/amXiNKJPEkAnu2m5NAERVw
+
+Top-K Oﬀ-Policy Correction

@@ -146,7 +146,7 @@ onPause
 说点题外话，这个Blog本来打算完全写些自己的原创内容，对于转贴只给链接，但链接这东西，有利有弊。常常过上几个月，原来的链接就不好使了。所以只好有选择的粘贴一些了。
 ****
 
- Froyo出来有一阵子了，一时兴起，从官网上git了代码，打算编译。不料根据出错信息得知，Froyo及其以后的版本需要64-bit的OS才能编译。所以只好重新安装64-bit的Ubuntu。
+Froyo出来有一阵子了，一时兴起，从官网上git了代码，打算编译。不料根据出错信息得知，Froyo及其以后的版本需要64-bit的OS才能编译。所以只好重新安装64-bit的Ubuntu。
 
 按照官网上的步骤一步一步的做，然后卡在apt-get install sun-java5-jdk上了。出错信息告诉我，找不到这个包。Google了一下，找到以下解决方法：
 
@@ -246,17 +246,3 @@ android.content.ActivityNotFoundException: Unable to find explicit activity clas
 在三星的手机上，计算器的Activity是“com.sec.android.app.popupcalculator.Calculator”。
 
 同样的方法，我们可以找到浏览器的Activity是“com.android.browser.BrowserActivity”。
-
-## 各种特效的代码
-
-http://www.23code.com/
-
-这个网站是各种特效的搜集站。
-
-https://github.com/maarek/android-wheel.git
-
-电表或水表那样的表盘式选择器控件。
-
-https://github.com/jgilfelt/android-viewbadger.git
-
-按钮或者View的角标控件。

@@ -134,6 +134,22 @@ https://mp.weixin.qq.com/s/bH0K_sxvF2oQwewYhMk20A
 
 只需一张自拍，网易伏羲用这种方法直接生成“个人专属”游戏角色
 
+https://mp.weixin.qq.com/s/I_F5KKuld2rYLrDiDAazxw
+
+旷视研究院提出新型抠图方法AdaMatting，实现当前最佳
+
+https://mp.weixin.qq.com/s/11ZurpNFygoeOJKvx_JuIg
+
+深度学习之换掉人物的裤子
+
+https://mp.weixin.qq.com/s/-HBMKBQKXzRugKn5OLgiPg
+
+10秒搞定建筑日夜景转换，还自带中秋月光
+
+https://mp.weixin.qq.com/s/YRYtja5BhFeAfbUJtAEVnQ
+
+将普通图片转换为梵高大作
+
 # 三维处理
 
 https://github.com/timzhang642/3D-Machine-Learning

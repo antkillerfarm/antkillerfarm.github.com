@@ -26,6 +26,10 @@ https://zhuanlan.zhihu.com/p/71547478
 
 NAS发展史：从放弃到入门
 
+https://mp.weixin.qq.com/s/rgUTcuH2mfIFBDoOfd26Cw
+
+NASNet：神经架构搜索网络在图像分类中的表现
+
 # OCR
 
 ## 概述

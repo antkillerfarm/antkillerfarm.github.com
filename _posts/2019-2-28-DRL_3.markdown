@@ -300,6 +300,10 @@ https://mp.weixin.qq.com/s/XljE82cJZfFOgf2KrXWSKA
 
 DeepMind首个战胜星际2职业玩家的AI为何无敌？新视角揭秘AI里程碑
 
+https://mp.weixin.qq.com/s/_t2vLFfIG6VYAdWDalpIXQ
+
+说人话教AI打游戏，Facebook开源迷你版星际争霸，成果登上NeurIPS 2019
+
 # DRL参考资源
 
 https://mp.weixin.qq.com/s/ruAAQEjPIDPWPiuPepKU6Q

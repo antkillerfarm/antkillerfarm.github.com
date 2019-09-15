@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Python（四）
+title:  Python（四）, Rust
 category: language 
 ---
 
@@ -439,3 +439,25 @@ https://github.com/gtk-rs/gtk
 示例：
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/rust/hello-rust
+
+## 编写OS
+
+教程：
+
+https://os.phil-opp.com/
+
+Writing an OS in Rust
+
+https://web.stanford.edu/class/cs140e/
+
+CS140E: Operating Systems Design and Implementation
+
+项目：
+
+https://github.com/rcore-os/rCore
+
+参考：
+
+https://zhuanlan.zhihu.com/c_1078248076300521472
+
+一个Rust OS的专栏

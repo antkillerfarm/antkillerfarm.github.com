@@ -369,3 +369,7 @@ https://mp.weixin.qq.com/s/YX1XqKVfPS9DpMi_gTFNiA
 https://www.cnblogs.com/andy6/p/6959028.html
 
 从Oracle迁移到MySQL的各种坑及自救方案
+
+https://mp.weixin.qq.com/s/txbusDvTKwFZdX94kDp7VQ
+
+10个不为人知的SQL技巧

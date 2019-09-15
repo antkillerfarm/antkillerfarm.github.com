@@ -205,3 +205,33 @@ https://mp.weixin.qq.com/s/zZbK5VPlr43CleExwDoBxw
 https://mp.weixin.qq.com/s/G0u_mP7xBJ7mx4eerdiY_g
 
 为什么Julia比Python快？
+
+# Javascript（续）
+
+https://mp.weixin.qq.com/s/zfOZAmgpndcqgxHHaS1j3g
+
+用Vue和React构建相同应用程序，区别在哪？
+
+https://mp.weixin.qq.com/s/DHxEqsTMOyc7pHfmJrfNEg
+
+一篇文章理解JS继承
+
+https://mp.weixin.qq.com/s/tNi5LJmotuXSoHbZhNgPcw
+
+GitHub已完全弃用jQuery，问题是为什么？
+
+https://mp.weixin.qq.com/s/WHh9v3icCc90PwiLyv0Hng
+
+为什么Facebook的API以一个循环作为开头？
+
+https://mp.weixin.qq.com/s/GQ2azFxcmXrY78rTAdxuVA
+
+JS/CSS体积减少了67%，我们是如何做到的？
+
+https://mp.weixin.qq.com/s/c1bMljAx1QWz9QQJX7sHmg
+
+大部分教程不会告诉你的12个JS技巧
+
+https://www.jianshu.com/p/c8b86b09daf0
+
+函数防抖和节流

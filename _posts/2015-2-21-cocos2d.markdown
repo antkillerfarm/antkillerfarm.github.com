@@ -277,12 +277,6 @@ https://opengameart.org
 
 https://game-icons.net/
 
-# 特效制作
-
-https://blog.csdn.net/u011387817/article/details/94607919
-
-Android自定义Drawable第十四式之百步穿杨
-
 # 2019.8
 
 随着对python的熟悉，以及python本身生态的完善，cocos2d的安装已经比较简单了。

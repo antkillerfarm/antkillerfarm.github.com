@@ -341,3 +341,7 @@ https://www.zhihu.com/question/291656490
 https://mp.weixin.qq.com/s/LZbprcnben6vPqsoC1DgDA
 
 DeepMind提出元梯度强化学习算法，显著提高大规模深度强化学习应用的性能
+
+https://mp.weixin.qq.com/s/AH35EGTH1YDSx4WzUwY15g
+
+三四行代码打造元学习核心，PyTorch元学习库L2L现已开源

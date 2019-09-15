@@ -166,6 +166,10 @@ https://mp.weixin.qq.com/s/eoihGqB2yTUWPieaxq_Svg
 
 谷歌再获语音识别新进展：利用序列转导来实现多人语音识别和说话人分类
 
+https://mp.weixin.qq.com/s/0-KviOoC_jVVjZr0C0Qnnw
+
+2019年，这8款自动语音识别方案你应该了解！
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw

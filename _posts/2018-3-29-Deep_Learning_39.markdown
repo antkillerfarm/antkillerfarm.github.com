@@ -282,6 +282,10 @@ https://mp.weixin.qq.com/s/NcA178JxgZLrAE1efBG2dA
 
 深度神经网络在视频编码中的应用
 
+https://mp.weixin.qq.com/s/XZ-fn_Xd7vVoLiVr6Esb3g
+
+Ranking Attention-适用于视频分割的全新Attention机制
+
 # 多模态学习
 
 https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw

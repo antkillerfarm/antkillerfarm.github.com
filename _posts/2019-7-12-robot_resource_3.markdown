@@ -206,6 +206,10 @@ https://mp.weixin.qq.com/s/sxm2cD7DAhJ6eIhUDvYRKA
 
 运动轨迹规划技术
 
+https://mp.weixin.qq.com/s/hs6uMkRctASmH1YrNOKFdw
+
+脱手检测在自动驾驶中的原理及应用
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。

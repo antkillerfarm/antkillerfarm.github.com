@@ -207,3 +207,7 @@ Hulu：视频广告系统中的算法实践
 https://mp.weixin.qq.com/s/Eih4J51C8Eh-cuZ8vznESg
 
 当推荐遇到社交：美图的推荐算法设计优化实践
+
+https://mp.weixin.qq.com/s/8jcaMIwNJQ1408VM-ucr_g
+
+快看漫画个性化推荐探索与实践

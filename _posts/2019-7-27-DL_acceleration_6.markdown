@@ -180,84 +180,46 @@ $$S'\sim P_{s,s'}^a, R=R_s^a$$
 
 $$S'\sim P_\eta(S' | S,A), R=R_\eta(R | S,A)$$
 
-我们可以把不基于模型的真实经历和基于模型采样得到的模拟经历结合起来，提出一种新的架构：
+对于Model-Free RL来说，所有的知识都来源于real experience。
 
+对于Model-Based RL来说，Model来源于real experience，而planning相关的知识来源于simulated experience。
 
+于是我们很自然的想到，是否可以把real experience和simulated experience结合起来呢？
 
-# 模仿学习
+![](/images/img3/Dyna.png)
 
-https://zhuanlan.zhihu.com/p/27935902
+上图是Dyna算法的流程图。它从实际经历中学习得到模型，然后联合使用实际经历和模拟经历，一边学习，一边规划更新价值和（或）策略函数。
 
-机器人学习Robot Learning之模仿学习Imitation Learning的发展
+Dyna-Q算法流程如下：
 
-https://zhuanlan.zhihu.com/p/25688750
+>Initialize $$Q(s, a)$$ and $$Model(s, a)$$ for all $$s \in S$$ and $$a \in A(s)$$   
+>Do forever:   
+>>(a) $$S \leftarrow$$ current (nonterminal) state   
+>>(b) $$A \leftarrow \epsilon-greedy(S, Q)$$   
+>>(c) Execute action A; observe resultant reward, R, and state S'   
+>>(d) $$Q(S, A) \leftarrow Q(S, A)+\alpha[R+\gamma \max_a Q(S', a)-Q(S, A)]$$   
+>>(e) $$Model(S, A) \leftarrow R,S'$$(assuming deterministic environment)   
+>>(f) Repeat n times:   
+>>>$$S \leftarrow$$ random previously observed state   
+>>>$$A \leftarrow$$ random action previously taken in S   
+>>>$$R, S' \leftarrow Model(S, A)$$   
+>>>$$Q(S, A) \leftarrow Q(S, A)+\alpha[R+\gamma \max_a Q(S', a)-Q(S, A)]$$
 
-模仿学习（Imitation Learning）完全介绍
+这个算法赋予了个体在与实际环境进行交互式时有一段时间用来思考的能力。其中的步骤：a,b,c,d和e都是从实际经历中学习，d过程是学习价值函数，e过程是学习模型。
 
-https://mp.weixin.qq.com/s/naq73D27vsCOUBperKto8A
+在f步，给以个体一定时间（或次数）的思考。在思考环节，个体将使用模型，在之前观测过的状态空间中随机采样一个状态，同时从这个状态下曾经使用过的行为中随机选择一个行为，将两者带入模型得到新的状态和奖励，依据这个来再次更新行为价值函数。
 
-从监督式到DAgger，综述论文描绘模仿学习全貌
+![](/images/img3/Dyna_2.png)
 
-https://mp.weixin.qq.com/s/LNNqp2KsEAljG26hY43mUw
+上图是细化后的Dyna框架图。从上面的分析可以看出，Dyna与其说是一个算法，倒不如说是一个算法框架，两者的区别在于：框架的每个组成部分，可以采用不同的算法，只要各部分之间的关系不变，就还算是同一个框架。
 
-ICML2018 模仿学习教程
+![](/images/img3/Dyna_3.png)
 
-https://mp.weixin.qq.com/s/f9vSgH1HQwGXBDb0UGHQyQ
+上图比较了在Dyna算法中一次实际经历期间采取不同步数的规划时的个体表现。横坐标是Episode序号，纵坐标是特定Episode所花费的步数。可以看出，当直接使用实际经历时，个体在早期完成一个Episode需要花费较多步数，而使用5步或50步思考步数时，个体完成一个Episode与环境发生的实际交互的步数要少很多。不过到了后期，基本上就没什么差别了。
 
-深度学习进阶之无人车行为克隆
+可以看出**Dyna算法可以有效提升算法的收敛速度，但不会提高最终的性能**。
 
-# RL与神经科学
+![](/images/img3/Dyna_4.png)
 
-Pavlov Model（1901）
+上面的例子模拟了某时刻（虚线所示）环境发生了改变，变得更加困难，此时使用Dyna-Q算法在经历过一段时间的平台期后又找到了最优解决方案。在平台期，模型持续的给以个体原先的策略，也就是错误的策略，但个体通过与实际的交互仍然能够找到最优方案。
 
-Rescorla-Wagner Model（1972）
-
-Thorndike’s Puzzle Box（1910）
-
-参考：
-
-https://zhuanlan.zhihu.com/p/24437724
-
-学习理论之Rescorla-Wagner模型
-
-# RL参考资源
-
-https://mp.weixin.qq.com/s/Fn1s9Ia8L1ckgn6iP24FhQ
-
-如何让神经网络具有好奇心
-
-https://mp.weixin.qq.com/s/PBf-YrkhwhPYXuiOGyahxQ
-
-强化学习遭遇瓶颈！分层RL将成为突破的希望
-
-https://zhuanlan.zhihu.com/p/58815288
-
-强化学习之值函数学习
-
-https://mp.weixin.qq.com/s/8Cqknze_iosz6Z6cqnuK5w
-
-谷歌提出强化学习新算法SimPLe，模拟策略学习效率提高2倍
-
-https://mp.weixin.qq.com/s/hKGS4Ek5prwTRJoMCaxQLA
-
-强化学习Exploration漫游
-
-https://zhuanlan.zhihu.com/p/65116688
-
-值分布强化学习（01）
-
-https://zhuanlan.zhihu.com/p/65364484
-
-值分布强化学习（02）
-
-https://zhuanlan.zhihu.com/p/62363784
-
-强化学习之策略搜索
-
-https://mp.weixin.qq.com/s/j9Cs5M9gyITu2u_XDkKm-g
-
-Policy Gradient——一种不以loss来反向传播的策略梯度方法
-
-https://mp.weixin.qq.com/s/x6gKTuYIx8y25KX-fCc5bA
-
-蒙特卡洛梯度估计方法（MCGE）简述

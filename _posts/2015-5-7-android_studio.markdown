@@ -264,3 +264,21 @@ OkHttp使用介绍
 http://www.cnblogs.com/flyme/p/4517560.html
 
 推荐一个Android开发懒人库--ButterKnife
+
+# 各种特效的代码
+
+http://www.23code.com/
+
+这个网站是各种特效的搜集站。
+
+https://github.com/maarek/android-wheel.git
+
+电表或水表那样的表盘式选择器控件。
+
+https://github.com/jgilfelt/android-viewbadger.git
+
+按钮或者View的角标控件。
+
+https://blog.csdn.net/u011387817/article/details/94607919
+
+Android自定义Drawable第十四式之百步穿杨
