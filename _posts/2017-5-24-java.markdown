@@ -34,6 +34,10 @@ Java的GUI框架，大致有：
 
 https://openjfx.io/
 
+文档：
+
+https://openjfx.io/openjfx-docs/
+
 ## Ubuntu安装Oracle JDK
 
 `sudo apt install software-properties-common`

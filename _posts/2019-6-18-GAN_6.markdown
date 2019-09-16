@@ -289,3 +289,7 @@ https://mp.weixin.qq.com/s/grEBwYzGN-573cvY5goT6g
 https://mp.weixin.qq.com/s/MFyEtIBVPeG1LB7kEcAlfw
 
 清华黄民烈朱小燕等提出ARAML，文本生成训练稳定性能新SOTA
+
+https://mp.weixin.qq.com/s/De-qjmA2VCMSQy7lESeYMA
+
+如何选好正则项让你的GAN收敛

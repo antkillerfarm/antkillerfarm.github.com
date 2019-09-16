@@ -181,3 +181,7 @@ https://mp.weixin.qq.com/s/8k0Mhver2mLnKmV8rVqJHQ
 https://mp.weixin.qq.com/s/ouBxEXcY4s894Sec4ifBtQ
 
 基于YOLO的3D目标检测：YOLO-6D
+
+https://mp.weixin.qq.com/s/dFoUO4xArZpmtbKg1Kx6Zg
+
+COCO mAP 53.3！骨干网合成算法CBNet带来目标检测精度新突破

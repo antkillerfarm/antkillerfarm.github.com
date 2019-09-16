@@ -102,6 +102,10 @@ https://mp.weixin.qq.com/s/8Ablt7Sa86DXTB1dE_RqaA
 
 港中文开源基于PyTorch的多任务人脸识别框架
 
+https://www.zhihu.com/question/345173757
+
+多任务学习成功的原因是引入了别的数据库还是多任务框架本身呢？
+
 # 人脸检测/识别
 
 ## 人脸识别

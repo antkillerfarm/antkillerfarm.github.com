@@ -382,6 +382,10 @@ https://mp.weixin.qq.com/s/HQnI8rzPvZN6Q_5c8d1nVQ
 
 唯快不破：基于Apex的混合精度加速
 
+https://mp.weixin.qq.com/s/NupSd4e01cvQ3CRnjy1npw
+
+超原版速度110倍，针对PyTorch的CPU到GPU张量迁移工具开源
+
 # 超算
 
 ![](/images/img3/power.aug.gif)

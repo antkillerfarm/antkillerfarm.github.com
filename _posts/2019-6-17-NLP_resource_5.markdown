@@ -194,6 +194,10 @@ https://mp.weixin.qq.com/s/PVzVNI7jMzHPcUbL7UaCIQ
 
 什么是语义角色标注？
 
+https://zhuanlan.zhihu.com/p/35789254
+
+语义角色标注(Semantic Role Labelling)
+
 https://mp.weixin.qq.com/s/S2SH8MUmreciZRc0Ff-qlw
 
 一文了解自然语言生成演变史！

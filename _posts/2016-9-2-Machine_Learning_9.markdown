@@ -62,6 +62,10 @@ https://mp.weixin.qq.com/s/PPz5iKY5Kb0vGqlfHvCJHA
 
 初学机器学习：直观解读KL散度的数学概念
 
+https://www.zhihu.com/question/345907033
+
+KL散度衡量的是两个概率分布的距离吗？
+
 ## 过滤特征选择方法
 
 过滤特征选择（Filter feature selection）方法，是另一种启发式的特征选择算法，计算量比较小。它的思路是计算特征$$x_i$$和类别标签y之间的相关度的评分$$S(i)$$。
