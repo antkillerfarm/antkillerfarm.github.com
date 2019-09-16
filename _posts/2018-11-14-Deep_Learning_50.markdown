@@ -77,3 +77,7 @@ https://mp.weixin.qq.com/s/YkH3loJhdymo7AFTKt0fbg
 https://mp.weixin.qq.com/s/u8U63i7zpcXA7iNsJP5vzQ
 
 AlphaGo之父DeepMind再出神作，PrediNet原理详解
+
+https://mp.weixin.qq.com/s/DSEEZ9bMe0g7zV7FB0nXpg
+
+机器推理在常识问答任务中的应用

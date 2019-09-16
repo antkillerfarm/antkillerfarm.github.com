@@ -314,6 +314,10 @@ https://mp.weixin.qq.com/s/EstNudSuFKEYEc-G3KXEeQ
 
 微软开源跨视图融合的3D人体姿态估计算法，大幅改进SOTA精度
 
+https://mp.weixin.qq.com/s/58CRtsV_1q_c25zTJt2qHA
+
+高效多人体姿态检测SPM
+
 # Capsule
 
 https://github.com/freefuiiismyname/capsule-mrc

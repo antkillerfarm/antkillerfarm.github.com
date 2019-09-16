@@ -211,3 +211,7 @@ https://mp.weixin.qq.com/s/Eih4J51C8Eh-cuZ8vznESg
 https://mp.weixin.qq.com/s/8jcaMIwNJQ1408VM-ucr_g
 
 快看漫画个性化推荐探索与实践
+
+https://mp.weixin.qq.com/s/G5O4-ne2Ll4qJnKlQ_MWog
+
+微博广告策略工程架构体系演进

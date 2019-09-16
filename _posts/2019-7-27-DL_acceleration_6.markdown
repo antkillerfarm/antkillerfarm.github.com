@@ -168,7 +168,7 @@ Sample-Based Planning使用Model生成采样数据，即一个time-step的虚拟
 
 model-based RL适用于连续变量的状态和行为空间。
 
-# Dyna-Q Algorithm
+## Dyna-Q Algorithm
 
 当构建了一个环境的模型后，个体可以有两种经历来源：
 
@@ -223,3 +223,18 @@ Dyna-Q算法流程如下：
 
 上面的例子模拟了某时刻（虚线所示）环境发生了改变，变得更加困难，此时使用Dyna-Q算法在经历过一段时间的平台期后又找到了最优解决方案。在平台期，模型持续的给以个体原先的策略，也就是错误的策略，但个体通过与实际的交互仍然能够找到最优方案。
 
+上二个例子表明，Dyn-Q算法赋予了个体一定的应对环境变化的能力，当环境发生一定改变时，个体一方面可以利用模型，一方面也可以通过与实际环境的交互来重新构建模型。
+
+>上2个示例图中的Q+算法与Q的差别体现在：Q+算法鼓励探索，给以探索额外的奖励。
+
+## Simulation-Based Search
+
+Planning主要有两个用途：
+
+- 改善policy或value function。这种方式通常叫做background planning。
+
+- 直接根据当前状态选择动作。这种方式通常叫做decision-time planning。
+
+background planning
+
+首先回顾下前向搜索(Forward Search)算法

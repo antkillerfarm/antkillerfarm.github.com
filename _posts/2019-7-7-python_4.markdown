@@ -144,6 +144,20 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/cython
 >hello.say_hello()
 {% endhighlight %}
 
+## mypy
+
+mypy是一个针对python语言的静态类型检查工具。
+
+官网：
+
+http://www.mypy-lang.org/
+
+参考：
+
+https://mp.weixin.qq.com/s/dBK8x_WajI2A3L5v6OQEgA
+
+四年完成400万行Python代码检查，甚至顺手写了个编译器
+
 ## 参考
 
 https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA
