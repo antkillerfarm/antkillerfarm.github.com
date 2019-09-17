@@ -153,3 +153,7 @@ https://mp.weixin.qq.com/s/YRYtja5BhFeAfbUJtAEVnQ
 https://mp.weixin.qq.com/s/354IU6NeCf24x0xmvsNWMw
 
 2D图片3秒变立体，变换视角流畅自然：Adobe实习生的智能景深算法，登上顶级期刊
+
+https://mp.weixin.qq.com/s/FkKHLCWcHZfdD9htYnlKCA
+
+从无到有！自动化所提出海量虚拟数据生成新方法

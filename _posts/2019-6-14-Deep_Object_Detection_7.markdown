@@ -68,6 +68,10 @@ https://mp.weixin.qq.com/s/CEcN5Aljvs7AyOLPRFjUaw
 
 真Anchor Free目标检测----CenterNet详解
 
+https://mp.weixin.qq.com/s/7lwEn49G-3RDnBKBv5c7Ag
+
+论文也撞衫，你更喜欢哪个无锚点CenterNet？
+
 # Anchor-Free
 
 在前面的章节，我们已经简要的分析了Anchor Free和Anchor Base模型的差异，并介绍了两个Anchor-Free的模型——CornerNet和CenterNet。

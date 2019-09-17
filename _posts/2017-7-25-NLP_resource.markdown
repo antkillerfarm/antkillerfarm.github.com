@@ -242,6 +242,10 @@ https://mp.weixin.qq.com/s/AV-FiiYrSn3Z-J3S4l_yIQ
 
 中文NLP的分词真有必要吗？李纪为团队四项任务评测一探究竟
 
+https://blog.csdn.net/choose_c/article/details/86545299
+
+论文：State-of-the-art Chinese Word Segmentation with Bi-LSTMs
+
 ## 机器翻译
 
 https://mp.weixin.qq.com/s/sREYZGiK2OmuETrPdeJptA

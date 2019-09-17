@@ -278,6 +278,10 @@ https://mp.weixin.qq.com/s/fDSC_e3JwVw3i2VLlBIkEQ
 
 Waymo公开全球最大规模自动驾驶传感器数据集：1200万3D标签，1000段驾驶片段
 
+https://mp.weixin.qq.com/s/S8V9-9L86ob1Fnt6NMuJgA
+
+Mapillary发布世界最大交通标志数据集，用于自动驾驶研究
+
 ## 医疗
 
 https://mp.weixin.qq.com/s/849fLGndmaRvz_oWt6HWtg

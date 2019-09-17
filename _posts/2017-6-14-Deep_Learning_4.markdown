@@ -286,6 +286,10 @@ https://mp.weixin.qq.com/s/FpPlSMfbtcxg_UnH0lwaqA
 
 手把手教你实现去噪自编码器（Denoise Autoencoder）
 
+https://zhuanlan.zhihu.com/p/82415579
+
+浅谈Deep Auto-encoder
+
 # 词向量
 
 ## One-hot Representation

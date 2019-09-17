@@ -20,6 +20,12 @@ category: speech
 
 ![](/images/img2/SR.jpeg)
 
+参考：
+
+https://zhuanlan.zhihu.com/p/82872145
+
+语音识别技术简史
+
 ## 学校
 
 SR领域最牛的高校主要是美国的CMU、Johns Hopkins University、英国的Cambridge University和日本的东京大学。

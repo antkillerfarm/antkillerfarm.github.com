@@ -134,6 +134,10 @@ https://mp.weixin.qq.com/s/hYuBHHfAGLO3Y0l5t6y94Q
 
 XGBoost缺失值引发的问题及其深度分析
 
+https://mp.weixin.qq.com/s/wgiNutl3FhJSAtfJNd5B5g
+
+Xgboost
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。

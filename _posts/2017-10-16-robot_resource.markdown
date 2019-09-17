@@ -380,6 +380,10 @@ https://mp.weixin.qq.com/s/u6gibvshU4KI3fEE6h9KeQ
 
 上海大众内训资料：CAN总线讲解
 
+https://mp.weixin.qq.com/s/tjn6Fob1L9aWnl2b35rjgA
+
+一文读懂总线技术
+
 ## 高精地图
 
 https://mp.weixin.qq.com/s/-HdpWQeMY6-sptxF9D4CcQ

@@ -272,6 +272,10 @@ https://zhuanlan.zhihu.com/p/81867668
 
 见证奇迹的时刻：如何从麦克斯韦方程组推出电磁波
 
+https://mp.weixin.qq.com/s/aUYieCVLLom7EaWIhfccRQ
+
+院士写了首《化工之歌》，聊聊化工那些事
+
 ## Bélády's Algorithm
 
 Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。

@@ -84,6 +84,31 @@ w/o：without
 
 N.B.:nota bene 注意,留心
 
+# Integrating Learning and Planning
+
+## Simulation-Based Search（续）
+
+这种算法以当前状态$$S_t$$作为根节点构建了一个搜索树（Search Tree），使用MDP模型进行前向搜索。前向搜索不需要解决整个MDP，而仅仅需要构建一个从当前状态开始与眼前的未来相关的次级（子）MDP。这相当于一个登山运动员的登山问题，在某一个时刻，他只需要关注当前位置（状态）时应该采取什么样的行为才能更有利于登山（或者下撤），而不需要考虑第二天中饭该吃什么，那是登顶并安全撤退后才要考虑的事情。
+
+从中可以看出，background planning相当于是**广度优先遍历**，虽然考虑的比较全面，但决策的深度较浅，而decision-time planning虽然只考虑当前状态的情况，但决策的深度较深（通常是一个完整的episode），相当于是**深度优先遍历**。
+
+sample-based planning+Forward search就得到了Simulation-Based Search。
+
+首先，从Model中采样，形成从当前状态开始到终止状态的一系列Episode：
+
+$$\{s_t^k, A_t^k, R_{t+1}^k, \dots, S_T^k\}_{k=1}^K\sim M_v$$
+
+有了这些Episode资源，我们可以使用Model-Free的强化学习方法，如果我们使用Monte-Carlo control，那么这个算法可以称作蒙特卡罗搜索(Monte-Carlo Search)，如果使用Sarsa方法，则称为TD搜索(TD Search)。
+
+## Monte-Carlo Search
+
+我们首先看一下Simple Monte-Carlo Search的步骤：
+
+1.给定一个模型M和一个模拟的策略$$\pi$$。
+
+2.
+
+
 # 模仿学习
 
 https://zhuanlan.zhihu.com/p/27935902

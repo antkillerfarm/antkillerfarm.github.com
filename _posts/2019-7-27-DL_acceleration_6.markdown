@@ -231,10 +231,12 @@ Dyna-Q算法流程如下：
 
 Planning主要有两个用途：
 
-- 改善policy或value function。这种方式通常叫做background planning。
+- 改善policy或value function。这种方式通常叫做background planning。它不在乎当前的状态，而在乎对于所有状态都有效的policy或value function。
 
-- 直接根据当前状态选择动作。这种方式通常叫做decision-time planning。
+- 直接根据当前状态选择动作。这种方式通常叫做decision-time planning。它更在乎于当前状态。
 
-background planning
+这里以最简单的前向搜索(Forward Search)算法来讨论一下decision-time planning的特点。
 
-首先回顾下前向搜索(Forward Search)算法
+![](/images/img3/FS.png)
+
+上图是Forward Search的示意图，图中绿色方格节点指的是终止状态。

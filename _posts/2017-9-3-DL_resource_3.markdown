@@ -76,6 +76,10 @@ https://zhuanlan.zhihu.com/p/80943002
 
 轮廓检测综述：An Overview of Contour Detection Approaches
 
+https://mp.weixin.qq.com/s/cD4WnafcX9cam-rLXuNDcg
+
+首个镜子分割网络问世，大连理工、鹏城实验室、香港城大出品
+
 ## 光神经网络
 
 https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ
