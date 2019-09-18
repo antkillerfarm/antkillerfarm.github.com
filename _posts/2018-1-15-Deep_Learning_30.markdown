@@ -86,14 +86,6 @@ https://mp.weixin.qq.com/s/tAfTmGWqG6IR8SOP0uKW6g
 
 什么限制了GNN的能力？首篇探究GNN普适性与局限性的论文出炉！
 
-https://mp.weixin.qq.com/s/zOdy-1vCJD_dPFSoe0ELFA
-
-图论与图学习（一）：图的基本概念
-
-https://mp.weixin.qq.com/s/0ZdS1WOSDZiXnxP8fybBAw
-
-图论与图学习（二）：图算法
-
 https://mp.weixin.qq.com/s/Orv47r4EchVIR7VcleoJ5Q
 
 谷歌图表征学习创新：学习单个节点多个嵌入&自动学习最优超参数

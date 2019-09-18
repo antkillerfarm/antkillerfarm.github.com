@@ -181,3 +181,7 @@ https://mp.weixin.qq.com/s/-SevTK_5SCTRU6xrdX3nMw
 https://mp.weixin.qq.com/s/jW3OMns-38qd8f0twd7eyA
 
 J.P. Morgan首发川普指数：效果如何？量化看看！
+
+https://mp.weixin.qq.com/s/sJ4qb2OF96YtjPVNd3jXzQ
+
+浅谈滴滴派单算法

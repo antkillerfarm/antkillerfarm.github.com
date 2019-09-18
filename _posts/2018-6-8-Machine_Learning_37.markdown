@@ -407,3 +407,7 @@ https://mp.weixin.qq.com/s/zXABOzbQRV7sfgAhr_WqZw
 https://mp.weixin.qq.com/s/OxUCIhoIED_Z1Cf91Va36g
 
 跨领域推荐系统文献综述（下）
+
+https://mp.weixin.qq.com/s/PwIDOeC-wPshZkGet1pE2w
+
+基于朴素ML思想的协同过滤推荐算法

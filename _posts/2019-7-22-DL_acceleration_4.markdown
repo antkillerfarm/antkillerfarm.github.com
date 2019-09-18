@@ -32,6 +32,10 @@ https://mp.weixin.qq.com/s/M3NcH30zY5Wlj76BDPQlMA
 
 模型压缩一半，精度几乎无损，TensorFlow推出半精度浮点量化工具包，还有在线Demo
 
+https://mp.weixin.qq.com/s/7L26ghhDqdMU6LRV0iD6vQ
+
+模型量化从1bit到8bit，二值到三值
+
 # 模型压缩与加速
 
 对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。

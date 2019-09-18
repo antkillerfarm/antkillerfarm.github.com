@@ -357,3 +357,7 @@ https://www.zhihu.com/question/344231876/answer/812481811
 https://mp.weixin.qq.com/s/7wmBsJgPnOtPXcYaoQd1qA
 
 基于LLVM的源码级依赖分析方案的设计与实现
+
+https://mp.weixin.qq.com/s/vOJPxzH_1SUyXzNeE85zHQ
+
+编译器入门：没有siri的那些年，我们如何实现人机对话？

@@ -171,6 +171,8 @@ $$\text{vxRPNLayer}\left\{
 \text{retrieve}\end{aligned}\right\} \Rightarrow  \color{red}{\text{generate_proposals}}
 \end{array} \right.$$
 
+$$\sum\limits_{k=1}^KG_t = \sum\nolimits_{k=1}^KG_t$$
+
 ## 注意
 
 绝对值符号虽然键盘上有这个键，但由于和Markdown的表格功能有冲突，需要采用\mid、\vert、\lvert、\rvert替代之。

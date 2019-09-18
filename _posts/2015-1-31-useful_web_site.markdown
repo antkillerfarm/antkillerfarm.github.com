@@ -166,10 +166,6 @@ https://zhuanlan.zhihu.com/p/27971065
 
 关于多正则匹配
 
-https://mp.weixin.qq.com/s/Y7qZlJdJ8fav5BXFGwdSOQ
-
-Graph Analysis and Its Application
-
 https://mp.weixin.qq.com/s/2_zdY4NoOPXq75H1A15R8w
 
 VMM的功能和分类
@@ -181,10 +177,6 @@ https://mp.weixin.qq.com/s/B486kp-GNshNVIi756lL9Q
 https://mp.weixin.qq.com/s/sCJFFZm-soWAt8kDyYulPQ
 
 99%留学生都不知道的Paper写作神器，Google从此是路人
-
-https://mp.weixin.qq.com/s/vOJPxzH_1SUyXzNeE85zHQ
-
-编译器入门：没有siri的那些年，我们如何实现人机对话？
 
 https://mp.weixin.qq.com/s/OtVRL37CNt_d5yEJPzzBzg
 
@@ -225,10 +217,6 @@ https://www.floydhub.com
 http://lucacardelli.name/
 
 Luca Andrea Cardelli的个人主页。英国皇家学会会员。主要从事生物化学领域的信息处理和计算。
-
-https://mp.weixin.qq.com/s/z5zMETSMUGoTiZYMooKZ-g
-
-内核空间镜像攻击揭秘：ARM硬件特性，竟能开启安卓8终端的上帝模式？
 
 https://mp.weixin.qq.com/s/mHJnbgOjydUrAmF-bLKJ1Q
 
@@ -338,10 +326,6 @@ https://fwupd.org/
 
 Linux Vendor Firmware Service。这个网站提供Linux平台的各种BIOS或者外设的固件更新。
 
-https://mp.weixin.qq.com/s/TlhhDjKlLYslif0RtpNotw
-
-世界三大电子展(CES、MWC、IFA)的前世今生
-
 https://mp.weixin.qq.com/s/yHSraIAYsjYWPaGXA3PijA
 
 一张图读懂非公平锁与公平锁
@@ -369,6 +353,10 @@ https://mp.weixin.qq.com/s/pSUXoLrwQeaxsI2LI-13EA
 https://www.huaweicloud.com/product/ai-modelarts.html
 
 华为云AI开发平台ModelArts
+
+https://mp.weixin.qq.com/s/rF7_xJBq4NJP6CmkW3HPpQ
+
+漫画：什么是中台？
 
 ## 科研人生
 

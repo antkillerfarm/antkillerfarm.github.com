@@ -104,10 +104,55 @@ $$\{s_t^k, A_t^k, R_{t+1}^k, \dots, S_T^k\}_{k=1}^K\sim M_v$$
 
 我们首先看一下Simple Monte-Carlo Search的步骤：
 
-1.给定一个模型M和一个模拟的策略$$\pi$$。
+- 给定一个模型M和一个模拟的策略$$\pi$$。
 
-2.
+- 针对行为空间里的每一个行为$$a\in A$$：
 
+从这个当前状态$$s_t$$开始模拟出K个Episodes：
+
+$$\{s_t^k, a, R_{t+1}^k, S_{t+1}^k, A_{t+1}^k,\dots, S_T^k\}_{k=1}^K\sim M_v,\pi$$
+
+使用平均收获（蒙特卡罗评估）来评估当前行为a的行为价值：
+
+$$Q(s_t, a)=\frac{1}{K}\sum_{k=1}^KG_t\xrightarrow[]{P} q_\pi(s_t, a)$$
+
+- 选择一个有最大Q值的行为作为实际要采取的行为：
+
+$$a_t = \mathop{\arg\max}_{a\in A}Q(s_t, a)$$
+
+Simple Monte-Carlo Search的主要问题在于模拟出的Episodes的质量依赖于Model的质量，如果Model不准确，就会导致一系列的偏差，最终会导致结果的不准确。
+
+我们可以采用优化领域常用的Evaluate/Improve方法来改进Monte-Carlo Search，于是就得到了Monte-Carlo Tree Search（MCTS）方法。
+
+这里先看一下MCTS的Evaluation阶段的流程：
+
+- 给定一个模型M。
+
+- 从当前状态$$s_t$$开始，使用当前的模拟策略$$\pi$$,模拟生成K个Episodes：
+
+$$\{s_t^k, a, R_{t+1}^k, S_{t+1}^k, A_{t+1}^k,\dots, S_T^k\}_{k=1}^K\sim M_v,\pi$$
+
+- 构建一个包括所有个体经历过的状态和行为的**搜索树**。
+
+- 对于搜索树种每一个状态行为对$$(s,a)$$，计算从该$$(s,a)$$开始的所有完整Episode收获的平均值，以此来估算该状态行为对的价值$$Q(s,a)$$:
+
+$$Q(s_t, a)=\frac{1}{N(s,a)}\sum_{k=1}^K \sum_{u=t}^T 1(S_u,A_u=s,a) G_u\xrightarrow[]{P} q_\pi(s, a)$$
+
+- 选择一个有最大Q值的行为作为实际要采取的行为：
+
+$$a_t = \mathop{\arg\max}_{a\in A}Q(s_t, a)$$
+
+MCTS的一个特点是在构建搜索树的过程中，更新了搜索树内状态行为对的价值，积累了丰富的信息，利用这些信息可以更新模拟策略，使得模拟策略得到改进。换句话说，MCTS的策略不是一成不变的。
+
+MCTS的Simulation也是有讲究的。
+
+首先，改进策略时要分情况对待：
+
+- 树内（in-tree）确定性策略（Tree Policy）：对于在搜索树中存在的状态行为对，策略的更新倾向于最大化Q值，这部分策略随着模拟的进行是可以得到持续改进的。
+
+- 树外（out-of-tree）默认策略（Default Policy）：对于搜索树中不包括的状态，可以使用固定的随机策略。
+
+随着不断地重复模拟，状态行为对的价值将得到持续地得到评估。同时基于$$\epsilon-greedy(Q)$$的搜索策略使得搜索树不断的扩展，策略也将不断得到改善。
 
 # 模仿学习
 

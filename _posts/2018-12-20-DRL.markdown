@@ -240,6 +240,10 @@ https://mp.weixin.qq.com/s/Hod37LQ-eEe0EVtLfyXLGQ
 
 DeepMind重磅开源强化学习框架！覆盖28款游戏，24多个算法(OpenSpiel)
 
+https://mp.weixin.qq.com/s/OIxgL4tLXNnapwHk4lDU4g
+
+DeepMind悄咪咪开源三大新框架，深度强化学习落地希望再现（OpenSpiel、SpriteWorld、bsuite）
+
 https://zhuanlan.zhihu.com/p/68462431
 
 谷歌开源RL足球环境

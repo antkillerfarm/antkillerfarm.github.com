@@ -356,6 +356,10 @@ https://mp.weixin.qq.com/s/nWoo-Pr50341WJNwtSZq1w
 
 工程师的灵魂拷问：你的密钥安全吗？
 
+https://mp.weixin.qq.com/s/z5zMETSMUGoTiZYMooKZ-g
+
+内核空间镜像攻击揭秘：ARM硬件特性，竟能开启安卓8终端的上帝模式？
+
 # 多目标进化
 
 https://mp.weixin.qq.com/s/Jc5f4iX9uoOo5igQ79P77w

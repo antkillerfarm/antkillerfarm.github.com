@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  孩子的编程语言, Go, Julia
+title:  孩子的编程语言, Go, Julia, Rust
 category: language 
 ---
 
@@ -205,6 +205,94 @@ https://mp.weixin.qq.com/s/zZbK5VPlr43CleExwDoBxw
 https://mp.weixin.qq.com/s/G0u_mP7xBJ7mx4eerdiY_g
 
 为什么Julia比Python快？
+
+# Rust
+
+官网：
+
+https://www.rust-lang.org/
+
+教程：
+
+http://wiki.jikexueyuan.com/project/rust-primer/
+
+Rust的包管理器叫做cargo。它的官网：
+
+https://crates.io
+
+## 安装
+
+`curl https://sh.rustup.rs -sSf | sh`
+
+或者
+
+`sudo apt install rustc cargo`
+
+Rust的更新比较快，3个月就会发布一个新版本，因此推荐使用前者。
+
+更新：
+
+`rustup update`
+
+参考：
+
+https://blog.csdn.net/xiangxianghehe/article/details/53471936
+
+如何利用科大源提速Cargo和Rust
+
+## Cargo
+
+Rust的编译工具叫做`rustc`，然而正如我们很少使用`gcc`，而更多使用`make`一样，我们更多使用Cargo来编译工程。
+
+文档：
+
+https://doc.rust-lang.org/cargo/guide/
+
+编译：
+
+`cargo build`
+
+运行：
+
+`cargo run`
+
+Cargo可以像maven一样自动下载依赖，也可以手动安装：`cargo install`。
+
+## GTK示例
+
+Rust的gtk支持：
+
+https://gtk-rs.org/
+
+代码：
+
+https://github.com/gtk-rs/gtk
+
+示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/rust/hello-rust
+
+## 编写OS
+
+教程：
+
+https://os.phil-opp.com/
+
+Writing an OS in Rust
+
+https://web.stanford.edu/class/cs140e/
+
+CS140E: Operating Systems Design and Implementation
+
+项目：
+
+https://github.com/rcore-os/rCore
+
+参考：
+
+https://zhuanlan.zhihu.com/c_1078248076300521472
+
+一个Rust OS的专栏
 
 # Javascript（续）
 

@@ -286,6 +286,14 @@ https://mp.weixin.qq.com/s/XZ-fn_Xd7vVoLiVr6Esb3g
 
 Ranking Attention-适用于视频分割的全新Attention机制
 
+https://zhuanlan.zhihu.com/p/79719747
+
+Super SloMo,基于光流和U-Net的视频插值
+
+https://mp.weixin.qq.com/s/8uxeOqcUvnZcKHv7qXwWJQ
+
+如何在视频里任意抠图？阿里工程师做到了！
+
 # 多模态学习
 
 https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw
