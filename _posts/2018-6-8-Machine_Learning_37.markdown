@@ -411,3 +411,7 @@ https://mp.weixin.qq.com/s/OxUCIhoIED_Z1Cf91Va36g
 https://mp.weixin.qq.com/s/PwIDOeC-wPshZkGet1pE2w
 
 基于朴素ML思想的协同过滤推荐算法
+
+https://mp.weixin.qq.com/s/lScxlqHARGYbs1eD3ZuEAQ
+
+推荐系统-大规模信息网络Embedding表征学习

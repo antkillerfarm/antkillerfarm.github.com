@@ -214,6 +214,10 @@ https://mp.weixin.qq.com/s/o74udojH7jGPPoxJSSBdMg
 
 停车不再难，L2到L4的泊车辅助系统技术剖析
 
+https://zhuanlan.zhihu.com/p/83129242
+
+自动驾驶近期行为预测和规划的一些文章介绍
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。

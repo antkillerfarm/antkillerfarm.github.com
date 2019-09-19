@@ -272,6 +272,10 @@ https://mp.weixin.qq.com/s/F0z5aEaigQLtlLfDoFIJXQ
 
 时间序列预测：理论与实践教程，300多页PPT带你了解领域最新动态
 
+https://zhuanlan.zhihu.com/p/83130649
+
+深度学习在时间序列分类中的应用
+
 # AI可解释性
 
 XAI(Explainable Artificial Intelligence)

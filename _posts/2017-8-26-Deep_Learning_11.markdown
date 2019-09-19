@@ -345,3 +345,7 @@ DeepMind提出元梯度强化学习算法，显著提高大规模深度强化学
 https://mp.weixin.qq.com/s/AH35EGTH1YDSx4WzUwY15g
 
 三四行代码打造元学习核心，PyTorch元学习库L2L现已开源
+
+https://github.com/tristandeleu/pytorch-meta
+
+PyTorch上方便好用的元学习工具包

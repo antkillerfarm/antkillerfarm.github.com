@@ -114,6 +114,10 @@ https://mp.weixin.qq.com/s/W4ghsuSRhe2aTDn5GkNuAg
 
 基于深度学习的图像修补/完整方法分析
 
+https://mp.weixin.qq.com/s/JYa-kX6GadXorS1kJ1Heyw
+
+Image inpainting图像修补最新综述
+
 https://zhuanlan.zhihu.com/p/76791923
 
 图像/视频去噪中的Deformable Kernels
