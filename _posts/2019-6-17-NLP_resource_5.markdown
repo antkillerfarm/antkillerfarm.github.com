@@ -341,3 +341,7 @@ https://mp.weixin.qq.com/s/efID_R9ajL34P95eGKkrQA
 https://mp.weixin.qq.com/s/PzUqtBJFykB839Ff7yafoA
 
 机器推理系列文章概览：七大NLP任务最新方法与进展
+
+https://github.com/THUNLP-MT/TG-Reading-List
+
+文本生成公开数据集/开源工具/经典论文详细列表分享

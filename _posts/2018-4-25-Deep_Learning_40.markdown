@@ -241,3 +241,7 @@ https://mp.weixin.qq.com/s/oXM9Stb65WjqlY4GGAAyHw
 https://mp.weixin.qq.com/s/KwvqvIU8tVDgtYdq3HL4OQ
 
 密集人群分布检测与计数
+
+https://mp.weixin.qq.com/s/BMJP6GJfxpyD4FIsR2Fx2w
+
+旷视研究院提出行人搜索当前最佳新方法

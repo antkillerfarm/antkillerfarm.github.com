@@ -108,6 +108,10 @@ https://github.com/guan-yuan/awesome-AutoML-and-Lightweight-Models
 
 一份高质量AutoML工作和轻量级模型的列表，包括神经结构搜索，轻量级结构，模型压缩和加速，超参数优化，自动特征工程。
 
+https://www.automl.org/automl/literature-on-neural-architecture-search/
+
+最新246篇自动化神经网络搜索（NAS）论文
+
 https://mp.weixin.qq.com/s/Ia-8qFLAyY65Nai5PGAw0w
 
 人人都能用的深度学习：当前三大自动化深度学习平台简介

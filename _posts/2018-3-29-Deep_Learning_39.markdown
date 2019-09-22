@@ -294,6 +294,10 @@ https://mp.weixin.qq.com/s/8uxeOqcUvnZcKHv7qXwWJQ
 
 如何在视频里任意抠图？阿里工程师做到了！
 
+https://zhuanlan.zhihu.com/p/83604007
+
+Deep Burst Denoising/RFCN
+
 # 多模态学习
 
 https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw

@@ -391,3 +391,7 @@ https://mp.weixin.qq.com/s/i_xLlknJbap3Z9ci0gwuNQ
 https://mp.weixin.qq.com/s/mP7M4z2mzj_1KPrEx0oqwg
 
 迭代列表不要For循环，这是Python列表推导式最基本的概念
+
+https://mp.weixin.qq.com/s/mcHYTjIDnVBA58-1h8BLdA
+
+手把手教学：提取PDF各种表格文本数据

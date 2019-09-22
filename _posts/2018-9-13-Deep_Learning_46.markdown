@@ -358,6 +358,10 @@ https://mp.weixin.qq.com/s/5eTugA70myKxDTZUby87Pw
 
 任意形状文本检测：Look More Than Once
 
+https://mp.weixin.qq.com/s/RuYZ-nmW2p7jMIJ7sbxbIw
+
+任意形状文本检测的像素聚合网络
+
 # NetVLAD
 
 NetVLAD算的上是CNN+传统算子的一个范例。

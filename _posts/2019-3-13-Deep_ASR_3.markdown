@@ -170,6 +170,14 @@ https://mp.weixin.qq.com/s/0-KviOoC_jVVjZr0C0Qnnw
 
 2019年，这8款自动语音识别方案你应该了解！
 
+https://mp.weixin.qq.com/s/dOrJ9zGelffKGnSAZ1coyA
+
+从顶会看语音技术的发展趋势
+
+https://mp.weixin.qq.com/s/UmVFCnwKqSQoowfQdefDdA
+
+昆山杜克大学李明博士：基于端到端深度神经网络的说话人与语言识别综述
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw

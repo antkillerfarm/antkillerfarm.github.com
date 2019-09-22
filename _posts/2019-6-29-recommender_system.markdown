@@ -198,7 +198,7 @@ https://mp.weixin.qq.com/s/vpANPrl86Ou2fBVHgLXtBQ
 
 https://mp.weixin.qq.com/s/oKayc5612vVm9k8hu50GNw
 
-当个不“佛系”的推荐系统，CTR 预估要做哪些工作？
+当个不“佛系”的推荐系统，CTR预估要做哪些工作？
 
 https://mp.weixin.qq.com/s/env2bFsEWZjxB87GK8QqvQ
 
@@ -215,3 +215,7 @@ https://mp.weixin.qq.com/s/8jcaMIwNJQ1408VM-ucr_g
 https://mp.weixin.qq.com/s/G5O4-ne2Ll4qJnKlQ_MWog
 
 微博广告策略工程架构体系演进
+
+https://mp.weixin.qq.com/s/T6eNEVJF5xLwSZ4Ui7rvZQ
+
+推荐系统应该如何保障推荐的多样性？

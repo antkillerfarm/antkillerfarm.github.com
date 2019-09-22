@@ -154,6 +154,10 @@ https://mp.weixin.qq.com/s/nGPUcDHTrG6KwAqDCkfA1w
 
 基于超图网络模型的图网络进化算法
 
+https://mp.weixin.qq.com/s/XoVUJln3oyhk2jMOtWwfog
+
+基于图神经网络的协同过滤算法
+
 # 自动求导
 
 DL发展到现在，其基本运算单元早就不止CNN、RNN之类的简单模块了。针对新运算层出不穷的现状，各大DL框架基本都实现了自动求导的功能。

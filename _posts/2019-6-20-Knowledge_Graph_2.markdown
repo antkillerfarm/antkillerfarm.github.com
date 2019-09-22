@@ -182,6 +182,10 @@ https://mp.weixin.qq.com/s/zhtJoaJ6Js0it-MM9stsHQ
 
 KGCN：使用TensorFlow进行知识图谱的机器学习
 
+https://mp.weixin.qq.com/s/JbvzSF_BLXRFLZtaJuVlsQ
+
+HiTA知识图谱 “药品-适应证”图谱数据发布！
+
 # 数据结构 & 普通CS算法
 
 ## TopK

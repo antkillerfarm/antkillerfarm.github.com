@@ -195,3 +195,19 @@ https://github.com/ARM-software/CMSIS_5
 https://www.veryarm.com/872.html
 
 armel、armhf和arm64区别选择
+
+# DQN实战
+
+代码：
+
+https://github.com/floodsung/DRL-FlappyBird
+
+安装：
+
+`pip3 install opencv-python pygame tensorflow`
+
+参考：
+
+http://blog.csdn.net/songrotek/article/details/50951537
+
+用Tensorflow基于Deep Q Learning DQN玩Flappy Bird

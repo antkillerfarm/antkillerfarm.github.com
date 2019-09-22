@@ -187,7 +187,7 @@ https://mp.weixin.qq.com/s/7NrB0UtmELXD3UNO3C6jGA
 
 https://mp.weixin.qq.com/s/_s8kxlzcL5Nt2ILUIfAuNQ
 
-不要把所有的鸡蛋放在一个篮子里 -- 谈谈最大熵模型
+不要把所有的鸡蛋放在一个篮子里--谈谈最大熵模型
 
 # 概率分布（2）
 
@@ -242,6 +242,10 @@ https://mp.weixin.qq.com/s/X0nSqiQoJpEur7PM1tM-0A
 https://www.zhihu.com/question/26991510
 
 卡方独立性检验和卡方齐性检验的区别是什么？
+
+https://mp.weixin.qq.com/s/vcgZ2ncZDlXp4SAExyptnQ
+
+Distribution is all you need：这里有12种做ML不可不知的分布
 
 ## 假设检验
 

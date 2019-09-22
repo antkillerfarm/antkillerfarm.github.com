@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数字成像, 编译原理
+title:  数字成像, 编译原理, 边缘计算
 category: resource 
 ---
 
@@ -361,3 +361,19 @@ https://mp.weixin.qq.com/s/7wmBsJgPnOtPXcYaoQd1qA
 https://mp.weixin.qq.com/s/vOJPxzH_1SUyXzNeE85zHQ
 
 编译器入门：没有siri的那些年，我们如何实现人机对话？
+
+# 边缘计算
+
+![](/images/img2/edge_computing.png)
+
+https://mp.weixin.qq.com/s/TXZh-bn9VhwGxJRNjzecRw
+
+重新认识“边缘计算”
+
+https://mp.weixin.qq.com/s/6Nr7LF9VxYQ4NlLlk8bCVw
+
+不了解边缘计算，你可能就要被“边缘”了
+
+https://mp.weixin.qq.com/s/3d7CEQ0iQzwnJ_tE7eB9Yg
+
+边缘计算芯片格局分析

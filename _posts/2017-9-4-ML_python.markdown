@@ -248,6 +248,10 @@ https://github.com/ddbourgin/numpy-ml
 
 惊为天人，NumPy手写全部主流机器学习模型，代码超3万行！
 
+https://mp.weixin.qq.com/s/MxvA-f6ocpmGLW5JQ8qsSg
+
+玩数据必备Python库：Numpy使用详解
+
 ## SciPy
 
 SciPy提供了一些更高阶的数学运算库，比如：积分、插值、信号处理、傅立叶变换、矩阵特征值、统计计算等。
@@ -431,27 +435,3 @@ https://mp.weixin.qq.com/s/1xHeXs9gM3LzEzCUz0jhXA
 http://wiki.jikexueyuan.com/project/start-learning-python/311.html
 
 python科学计算之Pandas使用
-
-https://mp.weixin.qq.com/s/L95slIQ8so5IWpIpy7ZHEQ
-
-23种Pandas核心操作，你需要过一遍吗？
-
-https://mp.weixin.qq.com/s/CAddyz0qQt8SY56VOtcpJA
-
-AI开发最大升级：Pandas与Scikit-Learn合并，新工作流程更简单强大！
-
-https://mp.weixin.qq.com/s/MB7vGecugtemvACK5DRNQg
-
-搞定Python中的“功夫熊猫”，做最高效的数据科学家
-
-https://mp.weixin.qq.com/s/Soy02eshzm2_A7-TzwoGIQ
-
-如何使用Pandas处理Large Data
-
-https://mp.weixin.qq.com/s/2-Ayzmzo8tydDLoKpz1Ezw
-
-如何用一行代码在多CPU环境下高效并行Pandas
-
-https://mp.weixin.qq.com/s/ebRQMJI9sB7wNI_NYdmTAw
-
-高逼格使用Pandas加速代码，向for循环说拜拜！

@@ -161,3 +161,7 @@ https://mp.weixin.qq.com/s/354IU6NeCf24x0xmvsNWMw
 https://mp.weixin.qq.com/s/FkKHLCWcHZfdD9htYnlKCA
 
 从无到有！自动化所提出海量虚拟数据生成新方法
+
+https://mp.weixin.qq.com/s/sbRf8cmSwFsfLRHBaZyW2w
+
+一键上妆的BeautyGAN

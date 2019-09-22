@@ -6,6 +6,32 @@ category: AI
 
 # Machine Learning之Python篇
 
+## Pandas（续）
+
+https://mp.weixin.qq.com/s/L95slIQ8so5IWpIpy7ZHEQ
+
+23种Pandas核心操作，你需要过一遍吗？
+
+https://mp.weixin.qq.com/s/CAddyz0qQt8SY56VOtcpJA
+
+AI开发最大升级：Pandas与Scikit-Learn合并，新工作流程更简单强大！
+
+https://mp.weixin.qq.com/s/MB7vGecugtemvACK5DRNQg
+
+搞定Python中的“功夫熊猫”，做最高效的数据科学家
+
+https://mp.weixin.qq.com/s/Soy02eshzm2_A7-TzwoGIQ
+
+如何使用Pandas处理Large Data
+
+https://mp.weixin.qq.com/s/2-Ayzmzo8tydDLoKpz1Ezw
+
+如何用一行代码在多CPU环境下高效并行Pandas
+
+https://mp.weixin.qq.com/s/ebRQMJI9sB7wNI_NYdmTAw
+
+高逼格使用Pandas加速代码，向for循环说拜拜！
+
 ## datatable
 
 datatable相当于高级版的Pandas。
@@ -469,31 +495,3 @@ https://mp.weixin.qq.com/s/PtZ3YvFrUgbK5y3pcAeW9A
 https://mp.weixin.qq.com/s/wbcAIrI0eNALfKhgkZQYTQ
 
 用Python也能进军金融领域？这有一份股票交易策略开发指南
-
-https://mp.weixin.qq.com/s/e--IeRTRZMqhs_DSJKpgyQ
-
-特征工程之Scikit-learn
-
-https://mp.weixin.qq.com/s/z3N5v4H_W2sxh2XPpFbAcA
-
-除了Python，这些语言写的机器学习项目也很牛
-
-https://mp.weixin.qq.com/s/U2cDVRxZPVsqoL-zHn__CA
-
-Python做机器学习之路
-
-https://mp.weixin.qq.com/s/LgVS5N80UlCeEfrPtyUF4Q
-
-深度学习矩阵运算的概念和代码实现
-
-https://mp.weixin.qq.com/s/0XteuIk71qSpxrZPGVnMbg
-
-Python3实现K-近邻算法
-
-https://mp.weixin.qq.com/s/bGudwxu8c0LIxv1h64qZtQ
-
-Python3实现决策树算法
-
-https://mp.weixin.qq.com/s?__biz=MzA3MTM3NTA5Ng==&mid=2651056396&idx=1&sn=dabbda2c433e54a2bad506fc13bfd743
-
-《战狼Ⅱ》豆瓣十二万影评浅析

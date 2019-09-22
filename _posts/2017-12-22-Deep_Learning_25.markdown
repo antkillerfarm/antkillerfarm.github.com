@@ -106,6 +106,10 @@ https://www.zhihu.com/question/345173757
 
 多任务学习成功的原因是引入了别的数据库还是多任务框架本身呢？
 
+https://mp.weixin.qq.com/s/L0sPKza2CHjyxcxsoGvMeg
+
+电商多目标优化小结
+
 # 人脸检测/识别
 
 ## 人脸识别

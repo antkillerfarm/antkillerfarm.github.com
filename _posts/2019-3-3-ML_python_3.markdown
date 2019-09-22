@@ -1,10 +1,38 @@
 ---
 layout: post
-title:  Machine Learning之Python篇（三）, 边缘计算
+title:  Machine Learning之Python篇（三）
 category: AI 
 ---
 
 # Machine Learning之Python篇
+
+https://mp.weixin.qq.com/s/e--IeRTRZMqhs_DSJKpgyQ
+
+特征工程之Scikit-learn
+
+https://mp.weixin.qq.com/s/z3N5v4H_W2sxh2XPpFbAcA
+
+除了Python，这些语言写的机器学习项目也很牛
+
+https://mp.weixin.qq.com/s/U2cDVRxZPVsqoL-zHn__CA
+
+Python做机器学习之路
+
+https://mp.weixin.qq.com/s/LgVS5N80UlCeEfrPtyUF4Q
+
+深度学习矩阵运算的概念和代码实现
+
+https://mp.weixin.qq.com/s/0XteuIk71qSpxrZPGVnMbg
+
+Python3实现K-近邻算法
+
+https://mp.weixin.qq.com/s/bGudwxu8c0LIxv1h64qZtQ
+
+Python3实现决策树算法
+
+https://mp.weixin.qq.com/s?__biz=MzA3MTM3NTA5Ng==&mid=2651056396&idx=1&sn=dabbda2c433e54a2bad506fc13bfd743
+
+《战狼Ⅱ》豆瓣十二万影评浅析
 
 https://mp.weixin.qq.com/s/hNOF6YvDjIuX4u36Wr7LCA
 
@@ -389,19 +417,3 @@ Python数据科学手册专题：线性回归
 https://mp.weixin.qq.com/s/VZlrWwbU0nJIlSVa9PgMBQ
 
 在Python中简洁使用CSV、JSON、XML
-
-# 边缘计算
-
-![](/images/img2/edge_computing.png)
-
-https://mp.weixin.qq.com/s/TXZh-bn9VhwGxJRNjzecRw
-
-重新认识“边缘计算”
-
-https://mp.weixin.qq.com/s/6Nr7LF9VxYQ4NlLlk8bCVw
-
-不了解边缘计算，你可能就要被“边缘”了
-
-https://mp.weixin.qq.com/s/3d7CEQ0iQzwnJ_tE7eB9Yg
-
-边缘计算芯片格局分析

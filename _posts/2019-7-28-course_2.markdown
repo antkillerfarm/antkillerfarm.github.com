@@ -46,6 +46,10 @@ https://mp.weixin.qq.com/s/HBUI9-jMa3otnB-Qq_eg5A
 
 悉尼科大徐亦达教授：机器学习讲义，32份主题推介
 
+https://mp.weixin.qq.com/s/KCFJdk8fZ1rmRI9bZSQykQ
+
+微软研究院新版书籍《数据科学基础》，附479页PDF下载
+
 # 策略梯度
 
 ## Policy Gradient Theorem（续）

@@ -151,6 +151,10 @@ $$T(x,y)=\frac{\mid X\cap Y\mid }{\mid X\cup Y\mid }=\frac{\mid X\cap Y\mid }{\m
 
 https://en.wikipedia.org/wiki/Jaccard_index
 
+https://www.cnblogs.com/daniel-D/p/3244718.html
+
+漫谈：机器学习中距离和相似性度量方法
+
 ## ALS算法原理
 
 http://www.cnblogs.com/luchen927/archive/2012/02/01/2325360.html

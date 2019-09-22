@@ -282,6 +282,10 @@ https://mp.weixin.qq.com/s/c8P9KmkQTqNcazcjU9qQFw
 
 机器学习中的维度灾难
 
+https://mp.weixin.qq.com/s/Uj9AFbyFRO6jIBoC3Gy8nA
+
+小孩都看得懂的主成分分析
+
 # 独立成分分析
 
 这一节我们将讲述独立成分分析（Independent Components Analysis，ICA）算法。
