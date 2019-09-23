@@ -90,6 +90,10 @@ https://mp.weixin.qq.com/s/8nPVMPBgc33_f9tFWV3IUw
 
 详述CNN及TextCNN原理
 
+https://mp.weixin.qq.com/s/ae4vlWtMlKZ2zg2D-RAj9g
+
+几个可作为Baseline的文本分类模型
+
 ## 情感分析
 
 https://mp.weixin.qq.com/s/mWOhh9rJru_YDwQEB34GNg
@@ -201,6 +205,10 @@ NLP中命名实体识别从机器学习到深度学习的代表性研究
 https://blog.csdn.net/xiaosongshine/article/details/99622170
 
 NLP命名实体识别(NER)开源实战教程
+
+https://mp.weixin.qq.com/s/YwCkeKRIJonBo0yQlF7eXg
+
+什么是命名实体识别？
 
 ## 文本摘要
 

@@ -78,6 +78,10 @@ https://mp.weixin.qq.com/s/egpZl9witWLiP17KSjq2jg
 
 姚期智院士亲自讲授，一文读懂量子计算
 
+https://mp.weixin.qq.com/s/Pp57gElBjMUuPa65KlzBKg
+
+量子计算机的新对手：随机磁电路，因数分解更厉害
+
 # 遗传算法 & 进化算法
 
 http://blog.csdn.net/u010945683/article/details/40987331

@@ -297,3 +297,7 @@ https://mp.weixin.qq.com/s/De-qjmA2VCMSQy7lESeYMA
 https://mp.weixin.qq.com/s/PXu2peQY14syMzSFQ7xvwg
 
 生成式对抗网络GAN在语音自然语言处理中的应用，台大李宏毅老师，附247页ppt下载
+
+https://mp.weixin.qq.com/s/U1_2-j_3lDQ1Lyee0F_YTQ
+
+美人秀色空绝世，我用PS-GAN试伊妆

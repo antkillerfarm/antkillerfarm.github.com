@@ -362,6 +362,10 @@ https://mp.weixin.qq.com/s/RuYZ-nmW2p7jMIJ7sbxbIw
 
 任意形状文本检测的像素聚合网络
 
+https://mp.weixin.qq.com/s/T0QeYbkmD4jwhWB47Fnn2w
+
+基于深度学习的端到端在线手写数学公式识别
+
 # NetVLAD
 
 NetVLAD算的上是CNN+传统算子的一个范例。

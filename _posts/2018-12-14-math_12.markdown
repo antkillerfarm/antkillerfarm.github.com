@@ -226,6 +226,10 @@ https://mp.weixin.qq.com/s/vLqJIaTXOkz0kYJzKguQaQ
 
 99%的数学家都算不出这道题（亲和数）
 
+https://mp.weixin.qq.com/s/ULzU9gwU-X6oSMM4mv5xhA
+
+两次入狱，数次移民，从罗马尼亚地下党到卡耐基梅隆教授—整数规划奠基者Egon Balas的彪悍人生
+
 # 最速降线
 
 约翰·伯努利在1696年提出最速降线的问题（problem of brachistochrone），向全欧洲数学家征求解答。这个问题最早由伽利略在1630年提出：**“一个质点在只受重力的作用下，从一个给定点A到不在它垂直下方的另一点B，问沿着什么曲线下滑（忽略摩擦力）所需时间最短？”**

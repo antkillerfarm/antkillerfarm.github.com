@@ -168,6 +168,10 @@ https://mp.weixin.qq.com/s/qTZZVBlZF7_oR8QFGq6hmQ
 
 Fuzzy c-means聚类算法简介
 
+https://mp.weixin.qq.com/s/FQUeNMU_8VLupHnfIyu8SQ
+
+小孩都看得懂的聚类
+
 # 元胞自动机
 
 http://www.doc88.com/p-8939046003005.html
