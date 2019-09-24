@@ -459,3 +459,7 @@ My Neural Network isn't working! What should I do?
 https://mp.weixin.qq.com/s/9xVMh2Zf9fP0_vXRoTe7ng
 
 详解前馈、卷积和循环神经网络技术
+
+https://www.zhihu.com/question/339287819
+
+求问:调参是否能对深度学习模型的性能有极大提升？

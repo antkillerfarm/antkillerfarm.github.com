@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  图像处理理论（十一）——CV/CG参考资源
+title:  图像处理理论（十一）——CV/CG参考资源, 数学的深渊
 category: graphics 
 ---
 
@@ -29,6 +29,72 @@ https://mp.weixin.qq.com/s/1lLrbi_Dtyq4ixMfR4pPnA
 https://blog.csdn.net/iverson_49/article/details/38160081
 
 薄板样条函数(Thin plate splines)的讨论与分析
+
+# 数学的深渊
+
+![](/images/article/math_trench.jpg)
+
+当然，类似的还有个AI的深渊：
+
+![](/images/article/AI_hell.jpg)
+
+最近（2019.7）新出了一个加强版的数学的深渊：
+
+![](/images/img3/math.jpg)
+
+![](/images/img3/math_2.jpg)
+
+![](/images/img3/math_3.jpg)
+
+![](/images/img3/math_4.jpg)
+
+![](/images/img3/math_5.jpg)
+
+![](/images/img3/math_6.jpg)
+
+![](/images/img3/math_7.jpg)
+
+![](/images/img3/math_8.jpg)
+
+![](/images/img3/math_9.jpg)
+
+![](/images/img3/math_10.jpg)
+
+![](/images/img3/math_11.jpg)
+
+![](/images/img3/math_12.jpg)
+
+![](/images/img3/math_13.jpg)
+
+![](/images/img3/math_14.jpg)
+
+![](/images/img3/math_15.jpg)
+
+![](/images/img3/math_16.jpg)
+
+![](/images/img3/math_17.jpg)
+
+![](/images/img3/math_18.jpg)
+
+![](/images/img3/math_19.jpg)
+
+![](/images/img3/math_20.jpg)
+
+![](/images/img3/math_21.jpg)
+
+![](/images/img3/math_22.jpg)
+
+![](/images/img3/math_23.jpg)
+
+![](/images/img3/math_24.jpg)
+
+----
+
+其他深渊：
+
+https://mp.weixin.qq.com/s/l1_Met_1mCltmoJ-ISWeSg
+
+压力太大，不想工作？那就下海摸鱼吧
 
 # 拓扑学
 

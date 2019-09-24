@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  IT杂谈, Sikuli
+title:  IT杂谈, 电子科技史
 category: technology 
 ---
 
@@ -134,16 +134,72 @@ PS：这里吐槽一下IT技术进步的速度，以基于文本的搜索为例�
 
 如果你在2016年的时候，掌握这门手艺，那么你离失业已经不远了。因为，几乎不会有老板，会为了一个15年前的老技术而投资招人。
 
-# Sikuli
+# 电子科技史
 
-Sikuli是一种新颖的图形脚本语言，或者说是一种另类的自动化测试技术。它采用图像识别的方式进行自动检测。
+https://mp.weixin.qq.com/s/YdoIVBpn1dFUEzDEF5pYJw
 
-参考：
+被迫离开工作近20年的公司，半导体老兵上演逆袭。林孝平，一个小儿麻痹患者。
 
-https://mp.weixin.qq.com/s/MYA6l9V4BYIZO8Jgtds6GA
+https://mp.weixin.qq.com/s/hIWvLLKWksNlO2eaVKcbAA
 
-图像识别在测试中的应用
+那个延续摩尔定律的人的传奇人生。Mark Bohr，UIUC硕士（1978），美国工程院院士。
 
-http://www.cnblogs.com/fnng/archive/2012/12/15/2819367.html
+https://mp.weixin.qq.com/s?__biz=MzI1NTA0MDUyMA==&mid=2456660188&idx=1&sn=b9dafaa60e10130442aac48f165800f7
 
-图形脚本语言sikuli
+芯片春秋·ARM传
+
+https://mp.weixin.qq.com/s/bggtiz_a-Io8e9UQohxv1A
+
+紫光芯片王国是怎样建成的
+
+https://mp.weixin.qq.com/s/KOjA94ODbWBEOGS-DWCNyw
+
+美国本土的晶圆厂大盘点
+
+https://mp.weixin.qq.com/s/zzlJ1VjgR70jZQrBsUBLMA
+
+日本元器件三龙头的成功秘籍
+
+https://mp.weixin.qq.com/s/p7T-xcyWHDYueEE3V42dfg
+
+德州仪器往事
+
+https://m.uczzd.cn/webview/news?aid=7934419892823166898
+
+仅300员工却垄断全球, 7亿一台供不应求, 买一台都成了巨头（Canon Tokki）
+
+https://mp.weixin.qq.com/s/z4Aik3NgB6XE64YCZolM4w
+
+仙童兴亡史
+
+![](/images/img3/IC_process.jpg)
+
+![](/images/img3/IC_process_2.jpg)
+
+https://mp.weixin.qq.com/s/GuO87_b9g6jFAepIWxDw5g
+
+闪存技术的52年发展史
+
+https://mp.weixin.qq.com/s/TlCtyF2HG_5l4STgoMJ05w
+
+日本电子产业大败局
+
+https://mp.weixin.qq.com/s/TlhhDjKlLYslif0RtpNotw
+
+世界三大电子展(CES、MWC、IFA)的前世今生
+
+https://zhuanlan.zhihu.com/p/54493905
+
+PC和BIOS的故事
+
+https://mp.weixin.qq.com/s/iod5Jok3Zfcn4yrGByZQQQ
+
+索尼的古董
+
+https://mp.weixin.qq.com/s/t8q-i5k5V44RfbCtSVQonw
+
+诺基亚经典游戏《贪吃蛇》的前世今生
+
+https://mp.weixin.qq.com/s/CxTr4MFVoRFxyCn-x_z8dQ
+
+奇梦达的前世今生

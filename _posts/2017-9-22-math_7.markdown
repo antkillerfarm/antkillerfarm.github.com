@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（七）——数学的深渊, 函数连续性
+title:  数学狂想曲（七）——函数连续性
 category: math 
 ---
 
@@ -33,64 +33,6 @@ $$d_M(x,y)=\sqrt{(\frac{x_1-y_1}{s_1})^2+\dots+(\frac{x_p-y_p}{s_p})^2}=\sqrt{(x
 https://mp.weixin.qq.com/s/xiVmQjJDqY_iOBz_bB_O7g
 
 距离度量，浅谈！
-
-# 数学的深渊
-
-![](/images/article/math_trench.jpg)
-
-当然，类似的还有个AI的深渊：
-
-![](/images/article/AI_hell.jpg)
-
-最近（2019.7）新出了一个加强版的数学的深渊：
-
-![](/images/img3/math.jpg)
-
-![](/images/img3/math_2.jpg)
-
-![](/images/img3/math_3.jpg)
-
-![](/images/img3/math_4.jpg)
-
-![](/images/img3/math_5.jpg)
-
-![](/images/img3/math_6.jpg)
-
-![](/images/img3/math_7.jpg)
-
-![](/images/img3/math_8.jpg)
-
-![](/images/img3/math_9.jpg)
-
-![](/images/img3/math_10.jpg)
-
-![](/images/img3/math_11.jpg)
-
-![](/images/img3/math_12.jpg)
-
-![](/images/img3/math_13.jpg)
-
-![](/images/img3/math_14.jpg)
-
-![](/images/img3/math_15.jpg)
-
-![](/images/img3/math_16.jpg)
-
-![](/images/img3/math_17.jpg)
-
-![](/images/img3/math_18.jpg)
-
-![](/images/img3/math_19.jpg)
-
-![](/images/img3/math_20.jpg)
-
-![](/images/img3/math_21.jpg)
-
-![](/images/img3/math_22.jpg)
-
-![](/images/img3/math_23.jpg)
-
-![](/images/img3/math_24.jpg)
 
 # 函数连续性
 

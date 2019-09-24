@@ -6,6 +6,30 @@ category: resource
 
 # NLP参考资源
 
+http://mp.weixin.qq.com/s/lmHWo9MUdv7ZMI7ARNmTSw
+
+拆开阿里小蜜的内核，看智能人机交互的实现逻辑
+
+https://www.microsoft.com/en-us/research/project/dssm/
+
+微软的DSSM模型
+
+http://www.csdn.net/article/2015-08-28/2825569
+
+递归神经网络不可思议的有效性
+
+http://mp.weixin.qq.com/s/5kKkZp6Y3_TgHl98dtYNiw
+
+NLP领域中文vs英文有什么异同点，中文NLP有什么独特的地方?
+
+https://mp.weixin.qq.com/s/ROs1Gp_gbgRHUXA5I4yx-g
+
+NLP2005年以来大突破：语义角色标记深度模型
+
+https://mp.weixin.qq.com/s/xMCu8bbrJSVLEpUdd_RIGw
+
+你是合格的数据科学家吗？30道题测试你的NLP水平
+
 https://mp.weixin.qq.com/s/pq2m4A31c9QQwka1j7XJDQ
 
 116页PPT了解FrameNet最新进展
@@ -337,10 +361,6 @@ KBQA从入门到放弃 - Part 2
 https://mp.weixin.qq.com/s/efID_R9ajL34P95eGKkrQA
 
 华为推出AI诗人“乐府”：唐诗宋词都不在话下，我竟一时分不出真假
-
-https://mp.weixin.qq.com/s/PzUqtBJFykB839Ff7yafoA
-
-机器推理系列文章概览：七大NLP任务最新方法与进展
 
 https://github.com/THUNLP-MT/TG-Reading-List
 

@@ -355,33 +355,3 @@ https://mp.weixin.qq.com/s/uYnu7v3w0evrJhTBYjbI_g
 https://mp.weixin.qq.com/s/5v1uknmAPfqFR_5meie9GQ
 
 5G基站功耗到底有多可怕？网友惊呼：国家电网或是5G最大赢家！
-
-# CPU+
-
-https://mp.weixin.qq.com/s/dRv4xWV8laCYBaZ0DwOC3A
-
-如何从零开始设计一颗芯片？
-
-https://mp.weixin.qq.com/s/eAzdtKvfw7EVz5Ax3nXeZg
-
-自己动手设计专用处理器
-
-https://mp.weixin.qq.com/s/NfNJVoAC5aW1sgToAmYsGw
-
-3nm芯片终结者
-
-https://mp.weixin.qq.com/s/o8C6n-ZRw3vFS8E-hikXJQ
-
-移动的王者：深入分析ARM最强处理器Cortex A77
-
-https://www.cnblogs.com/f-ck-need-u/p/11141636.html
-
-关于CPU的一些基本知识总结
-
-https://mp.weixin.qq.com/s/vTOGmcahRxQBH8RgkTJ2GA
-
-中文系同学都能听懂的集成电路设计流程
-
-https://zhuanlan.zhihu.com/p/81960137
-
-UEFI引导与传统BIOS引导在原理上有什么区别？芯片公司在其中扮演什么角色？

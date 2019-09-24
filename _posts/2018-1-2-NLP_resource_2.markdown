@@ -210,6 +210,10 @@ https://mp.weixin.qq.com/s/YwCkeKRIJonBo0yQlF7eXg
 
 什么是命名实体识别？
 
+https://mp.weixin.qq.com/s/abaXgfDK8uaz2Yk8j4maaw
+
+命名实体识别中最常用的两种深度学习模型
+
 ## 文本摘要
 
 https://mp.weixin.qq.com/s/jk1XgnuydrsTg3HvV0CVvw
@@ -388,28 +392,6 @@ https://mp.weixin.qq.com/s/G0xrlTHfxKHikYj8dGWRWQ
 
 Transformer聊天机器人教程
 
-## 其他
+https://mp.weixin.qq.com/s/qfs2-S_02H1DRmHo27hpow
 
-http://mp.weixin.qq.com/s/lmHWo9MUdv7ZMI7ARNmTSw
-
-拆开阿里小蜜的内核，看智能人机交互的实现逻辑
-
-https://www.microsoft.com/en-us/research/project/dssm/
-
-微软的DSSM模型
-
-http://www.csdn.net/article/2015-08-28/2825569
-
-递归神经网络不可思议的有效性
-
-http://mp.weixin.qq.com/s/5kKkZp6Y3_TgHl98dtYNiw
-
-NLP领域中文vs英文有什么异同点，中文NLP有什么独特的地方?
-
-https://mp.weixin.qq.com/s/ROs1Gp_gbgRHUXA5I4yx-g
-
-NLP2005年以来大突破：语义角色标记深度模型
-
-https://mp.weixin.qq.com/s/xMCu8bbrJSVLEpUdd_RIGw
-
-你是合格的数据科学家吗？30道题测试你的NLP水平
+DeepPavlov：一个面向端到端对话系统和聊天机器人的开源库

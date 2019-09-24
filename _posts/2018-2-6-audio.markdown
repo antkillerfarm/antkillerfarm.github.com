@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  音频常识, 区块链
+title:  音频常识, 区块链, Sikuli
 category: technology 
 ---
 
@@ -273,3 +273,17 @@ http://tech.sina.com.cn/i/2018-10-10/doc-ihkvrhpt4844011.shtml
 矿机围城里的比特大陆：研发持续落后 公司四面楚歌
 
 詹克团、吴忌寒、杨作兴
+
+# Sikuli
+
+Sikuli是一种新颖的图形脚本语言，或者说是一种另类的自动化测试技术。它采用图像识别的方式进行自动检测。
+
+参考：
+
+https://mp.weixin.qq.com/s/MYA6l9V4BYIZO8Jgtds6GA
+
+图像识别在测试中的应用
+
+http://www.cnblogs.com/fnng/archive/2012/12/15/2819367.html
+
+图形脚本语言sikuli

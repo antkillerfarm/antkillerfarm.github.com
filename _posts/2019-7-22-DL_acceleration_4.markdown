@@ -10,6 +10,26 @@ category: DL acceleration
 
 https://mp.weixin.qq.com/s/tbRj5Wd69n9gvSzW4oKStg
 
+嵌入式深度学习之神经网络二值化（2）
+
+https://mp.weixin.qq.com/s/RsZCTqCKwpnjATUFC8da7g
+
+嵌入式深度学习之神经网络二值化（3）
+
+https://blog.csdn.net/stdcoutzyx/article/details/50926174
+
+二值神经网络（Binary Neural Network，BNN）
+
+https://mp.weixin.qq.com/s/lVja7woyFWpmr9sH0CitAA
+
+BMXNet：基于MXNet的开源二值神经网络实现
+
+https://mp.weixin.qq.com/s/naDk0mmxd08dNl9LawLUnw
+
+不使用先验知识与复杂训练策略，从头训练二值神经网络！
+
+https://mp.weixin.qq.com/s/tbRj5Wd69n9gvSzW4oKStg
+
 异或神经网络
 
 https://mp.weixin.qq.com/s/KgM1k1bziLTCec67hQ8hlQ
@@ -289,31 +309,3 @@ https://mp.weixin.qq.com/s/NJzGR-tY_WWeccbdshHckA
 https://mp.weixin.qq.com/s/ccFccLb2UTyFyMwFPjsDaA
 
 让CNN跑得更快，腾讯优图提出全局和动态过滤器剪枝
-
-https://mp.weixin.qq.com/s/vswtn3D1-VZZlyKLJmHc7A
-
-纪荣嵘：深度神经网络压缩及应用
-
-https://mp.weixin.qq.com/s/cSYCT1I1asaSCIc5Hgu0Jw
-
-计算成本降低35倍！谷歌发布手机端自动设计神经网络MnasNet
-
-https://zhuanlan.zhihu.com/p/42474017
-
-MnasNet：终端轻量化模型新思路
-
-https://mp.weixin.qq.com/s/p_qdKcQwQ8y_JUw3gQUEnA
-
-谷歌大脑用强化学习为移动设备量身定做最好最快的CNN模型
-
-https://mp.weixin.qq.com/s/OyEIcS5o6kWUu2UzuWZi3g
-
-这么Deep且又轻量的Network，实时目标检测
-
-https://mp.weixin.qq.com/s/mWfZ4jfuby4myGfi6TW3wQ
-
-从超参数到架构，一文简述模型优化策略
-
-https://mp.weixin.qq.com/s/8NDOf_8qxMMpcuXIZGJCGg
-
-Google又发大招：高效实时实现视频目标检测

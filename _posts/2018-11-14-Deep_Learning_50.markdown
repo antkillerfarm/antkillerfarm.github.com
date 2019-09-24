@@ -81,3 +81,11 @@ AlphaGo之父DeepMind再出神作，PrediNet原理详解
 https://mp.weixin.qq.com/s/DSEEZ9bMe0g7zV7FB0nXpg
 
 机器推理在常识问答任务中的应用
+
+https://mp.weixin.qq.com/s/MX2R9KgG6tXWEeviRRgBqQ
+
+机器推理在事实检测任务中的应用
+
+https://mp.weixin.qq.com/s/PzUqtBJFykB839Ff7yafoA
+
+机器推理系列文章概览：七大NLP任务最新方法与进展

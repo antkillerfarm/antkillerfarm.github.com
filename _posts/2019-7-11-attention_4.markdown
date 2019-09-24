@@ -6,6 +6,10 @@ category: Attention
 
 # Attention进阶
 
+https://mp.weixin.qq.com/s/ZSzHOu6uowRSoWrqB7vOaQ
+
+深度学习注意力机制-Attention in Deep learning-附101页PPT
+
 https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA
 
 阿里北大提出新attention建模框架，一个模型预测多种行为

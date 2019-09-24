@@ -84,6 +84,10 @@ https://mp.weixin.qq.com/s/RaW_WVKoLBk6jkoA6A3D-A
 
 如何实现高速卷积？深度学习库使用了这些“黑魔法”
 
+https://mp.weixin.qq.com/s/1JVPTv0ggD0IOEiZAa8mqA
+
+深度神经网络卷积层计算加速与优化
+
 # NN Quantization
 
 ![](/images/img3/NN_Quantization.jpg)
@@ -281,23 +285,3 @@ http://blog.csdn.net/tangwei2014/article/details/55077172
 https://mp.weixin.qq.com/s/oumf8l28ijYLxc9fge0FMQ
 
 嵌入式深度学习之神经网络二值化（1）
-
-https://mp.weixin.qq.com/s/tbRj5Wd69n9gvSzW4oKStg
-
-嵌入式深度学习之神经网络二值化（2）
-
-https://mp.weixin.qq.com/s/RsZCTqCKwpnjATUFC8da7g
-
-嵌入式深度学习之神经网络二值化（3）
-
-https://blog.csdn.net/stdcoutzyx/article/details/50926174
-
-二值神经网络（Binary Neural Network，BNN）
-
-https://mp.weixin.qq.com/s/lVja7woyFWpmr9sH0CitAA
-
-BMXNet：基于MXNet的开源二值神经网络实现
-
-https://mp.weixin.qq.com/s/naDk0mmxd08dNl9LawLUnw
-
-不使用先验知识与复杂训练策略，从头训练二值神经网络！
