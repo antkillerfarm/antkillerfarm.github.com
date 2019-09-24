@@ -277,3 +277,15 @@ https://zhuanlan.zhihu.com/p/76909380
 https://mp.weixin.qq.com/s/n7neAptKozRz5p5ctvKZrQ
 
 模型压缩——结构篇
+
+https://mp.weixin.qq.com/s/kgl7mz4bK7SywkbViY_qhQ
+
+利用LSTM思想来做CNN剪枝，北大提出Gate Decorator
+
+https://mp.weixin.qq.com/s/3_famaAmkAN-4xVEupSXSA
+
+华为、北大等首创GAN剪枝算法，线上加速3倍以上
+
+https://mp.weixin.qq.com/s/DLNyb-GtzmSYuXcn6VQz4Q
+
+高效轻量级深度模型的研究和实践

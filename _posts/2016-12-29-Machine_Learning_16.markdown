@@ -155,6 +155,10 @@ https://www.cnblogs.com/daniel-D/p/3244718.html
 
 漫谈：机器学习中距离和相似性度量方法
 
+https://mp.weixin.qq.com/s/rrIdxEEwFJMWbvbhn_DYDw
+
+协同过滤算法分布式实现
+
 ## ALS算法原理
 
 http://www.cnblogs.com/luchen927/archive/2012/02/01/2325360.html

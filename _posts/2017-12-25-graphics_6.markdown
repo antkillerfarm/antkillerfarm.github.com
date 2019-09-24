@@ -112,6 +112,10 @@ https://github.com/codeauroraforum/gtec-demo-framework/tree/master/DemoApps/Open
 
 一个基于OpenVX的ISP软实现。
 
+https://mp.weixin.qq.com/s/w2d1lRdQoKCrupJD2S4fDQ
+
+长文详解RAW图的来龙去脉
+
 # 颜色空间
 
 ## YUV & YCbCr & RGB
