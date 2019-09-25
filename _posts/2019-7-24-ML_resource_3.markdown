@@ -185,3 +185,7 @@ J.P. Morgan首发川普指数：效果如何？量化看看！
 https://mp.weixin.qq.com/s/sJ4qb2OF96YtjPVNd3jXzQ
 
 浅谈滴滴派单算法
+
+https://mp.weixin.qq.com/s/1T2u2NOZ8wS84HzRdQCbwg
+
+标签噪声对分类性能会有什么样的影响？

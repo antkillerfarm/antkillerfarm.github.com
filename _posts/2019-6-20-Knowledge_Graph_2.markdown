@@ -286,6 +286,10 @@ https://mp.weixin.qq.com/s/M8U9B7UA2AdfnJi5EpTv-g
 
 算法面试中经常问的“字符串”问题
 
+https://mp.weixin.qq.com/s/QHounf4el7nmXnpMSJHjvg
+
+这个问题不简单：寻找缺失元素
+
 # 计算机体系结构
 
 按照Michael J. Flynn的分类方法，计算机的体系结构可分为如下四类：

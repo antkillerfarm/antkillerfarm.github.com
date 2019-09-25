@@ -302,3 +302,7 @@ RAdam优化器又进化：与LookAhead强强结合，性能更优速度更快
 https://www.zhihu.com/question/305694880
 
 为什么K-FAC这种二阶优化方法没有得到广泛的应用？
+
+https://mp.weixin.qq.com/s/etv5Ucyo2tiu64ZtUygz0A
+
+离线优化器

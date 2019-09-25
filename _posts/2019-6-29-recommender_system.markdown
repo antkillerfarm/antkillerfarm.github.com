@@ -219,3 +219,11 @@ https://mp.weixin.qq.com/s/G5O4-ne2Ll4qJnKlQ_MWog
 https://mp.weixin.qq.com/s/T6eNEVJF5xLwSZ4Ui7rvZQ
 
 推荐系统应该如何保障推荐的多样性？
+
+https://mp.weixin.qq.com/s/lTYBrYJBnW_ZNEdsQ-lorw
+
+透着浓浓工业风的Facebook深度学习推荐系统论文
+
+https://mp.weixin.qq.com/s/hNz9Op4lYtaX8tznUmHd9Q
+
+OCPC广告算法在凤凰新媒体的实践探索

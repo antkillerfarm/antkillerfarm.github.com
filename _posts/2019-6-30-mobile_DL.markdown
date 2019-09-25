@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  移动端推理框架, Kubernetes, Dubbo, Arm ML
+title:  移动端推理框架, Kubernetes, Dubbo, Arm ML, DRL实战
 category: AI 
 ---
 
@@ -196,18 +196,82 @@ https://www.veryarm.com/872.html
 
 armel、armhf和arm64区别选择
 
-# DQN实战
+# DRL实战
 
-代码：
+## FlappyBird
+
+Flappy Bird的action只有两种：动/不动，算是非常简单的游戏了。正好可以作为DQN的入门教程。
+
+参考代码：
 
 https://github.com/floodsung/DRL-FlappyBird
+
+这个代码参考了：
+
+https://github.com/yenchenlin/DeepLearningFlappyBird
+
+Flappy Bird的python版本基于pygame，代码：
+
+https://github.com/sourabhv/FlapPyBird
 
 安装：
 
 `pip3 install opencv-python pygame tensorflow`
 
+实战心得：
+
+- 奖励的设计：
+
+通过柱子成功：+1
+
+死亡：-1
+
+活着，但未通过柱子：+0.1
+
+这个游戏每50个time step通过一根柱子，也就是说，每50个time step才有一次大的奖励（无论正负）。
+
+- 开始的时候，由于Agent没有什么经验，所以INITIAL_EPSILON不能太小。然而这个游戏和下棋不一样，下棋的每一步都有差不多的奖励，而这个游戏，多数的时间只是在飞而已，也就是说大奖励是很稀疏的。所以，INITIAL_EPSILON也不能太大，随机运动未必收敛最快。因此，INITIAL_EPSILON设置为0.5似乎是个不错的选择。（纯经验之谈）
+
+- 为了快速收敛，忽略其他无关要素，例如把背景换成纯黑色、不显示得分等。图片的处理过程中，采用了二值化的方法，将彩色图片转换为黑白图片，以便于后面的机器学习。
+
+- 作者创建两个Q网络，以及交换权值的代码，非常优雅。（copyTargetQNetworkOperation）
+
+实战效果：
+
+- 训练5W个time step：有60%的概率能通过第1根柱子。
+
+- 训练40W个time step：平均能通过10根柱子。
+
+- 训练140W个time step: 平均能通过100根柱子。
+
+- 为了验证模型的泛化性能，我将两根之间柱子的横向间隔随机化，性能立马掉到10根柱子的水平，但继续训练之后，性能提升速度比原先快的多。
+
+如果嫌原始代码太大的话（140MB+），也可以下载本人的魔改版本：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/RL/DRL-FlappyBird
+
 参考：
 
 http://blog.csdn.net/songrotek/article/details/50951537
 
-用Tensorflow基于Deep Q Learning DQN玩Flappy Bird
+用Tensorflow基于DQN玩Flappy Bird
+
+https://zhuanlan.zhihu.com/p/21434933
+
+DQN实战篇 从零开始安装Ubuntu, Cuda, Cudnn, Tensorflow, OpenAI Gym
+
+https://zhuanlan.zhihu.com/p/21477488
+
+150行代码实现DQN算法玩CartPole。这是参考代码的作者本人写的另一个blog，其中的框架部分沿用到了Flappy Bird上。
+
+## CartPole
+
+这是Google官方的教程，使用的是A3C算法：
+
+https://github.com/tensorflow/models/tree/master/research/a3c_blogpost
+
+参考：
+
+https://mp.weixin.qq.com/s/atQHJ5U2pJpSG6PguN7J4Q
+
+如何保持运动小车上的旗杆屹立不倒？TensorFlow利用A3C算法训练智能体玩CartPole游戏

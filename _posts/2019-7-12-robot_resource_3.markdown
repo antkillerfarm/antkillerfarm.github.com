@@ -218,6 +218,10 @@ https://zhuanlan.zhihu.com/p/83129242
 
 自动驾驶近期行为预测和规划的一些文章介绍
 
+https://zhuanlan.zhihu.com/p/83605553
+
+移动机器人同时估计自身位姿和物体位姿
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。
