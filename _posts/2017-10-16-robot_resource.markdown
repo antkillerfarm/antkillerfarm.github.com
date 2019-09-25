@@ -292,6 +292,10 @@ https://mp.weixin.qq.com/s/zGIHo97bFii1_z8u9_QiUA
 
 ROS原理—1
 
+https://mp.weixin.qq.com/s/EQGI0l_Zw08QsbU22w4IDg
+
+ROS原理—2
+
 ## PythonRobotics
 
 PythonRobotics是一个机器人算法方面的代码示例库。

@@ -96,6 +96,24 @@ https://mp.weixin.qq.com/s/l1_Met_1mCltmoJ-ISWeSg
 
 压力太大，不想工作？那就下海摸鱼吧
 
+# 一道证明题
+
+设A、B、C为任意可数有限集合，则
+
+$$size(A-C)\le size(A-B)+size(B-C)$$
+
+其中$$size(X)$$表示集合X中的元素个数。
+
+证明：
+
+$$A-C=\{x\mid x\in A \cap x\notin C\}=\{x\mid x\in A \cap (x\in B \cup x\notin B)\cap x\notin C\}
+\\=\{x\mid (x\in A \cap x\notin B \cap x\notin C) \cup (x\in A \cap x\in B \cap x\notin C) \}
+\\\subseteq \{x\mid (x\in A \cap x\notin B) \cup (x\in B \cap x\notin C) \}=(A-B)\cup (B-C)$$
+
+又因为：$$size(X\cup Y)\le size(X)+size(Y)$$，所以
+
+$$size(A-C)\le size((A-B)\cup (B-C))\le size(A-B)+size(B-C)$$
+
 # 拓扑学
 
 《Topopogy Without Tears》，University of New South Wales的Sidney A. Morris著。

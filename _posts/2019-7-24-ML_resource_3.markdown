@@ -189,3 +189,11 @@ https://mp.weixin.qq.com/s/sJ4qb2OF96YtjPVNd3jXzQ
 https://mp.weixin.qq.com/s/1T2u2NOZ8wS84HzRdQCbwg
 
 标签噪声对分类性能会有什么样的影响？
+
+https://mp.weixin.qq.com/s/iAmkb2EdYofJU1AoBw2HyA
+
+多目标优化详解
+
+https://mp.weixin.qq.com/s/9FBl5zSz9WEgjFeq41y1kQ
+
+动态多目标优化问题

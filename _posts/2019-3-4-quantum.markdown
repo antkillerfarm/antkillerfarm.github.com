@@ -82,6 +82,17 @@ https://mp.weixin.qq.com/s/Pp57gElBjMUuPa65KlzBKg
 
 量子计算机的新对手：随机磁电路，因数分解更厉害
 
+https://www.zhihu.com/question/346999432
+
+如何评价Google宣称率先实现量子霸权？
+
+>所谓的quantum supremacy，有人翻译为量子优势也有人翻译为量子霸权，一般指的是量子计算在某一个问题上，可以解决经典计算机不能解决的问题或者是比经典计算机有显著的加速(一般是指数加速)。   
+>量子霸权是量子系统对其对应的经典系统的霸权, 不是什么国与国, 公司和公司上面的霸权。
+
+http://www.iasi.cnr.it/aussois/web/uploads/2019/slides/nannicinig.pdf
+
+An introduction to quantum computing, without the physics
+
 # 遗传算法 & 进化算法
 
 http://blog.csdn.net/u010945683/article/details/40987331
@@ -183,6 +194,10 @@ https://mp.weixin.qq.com/s/vuzx4LPLH2Gk4L9TXlNJqg
 https://mp.weixin.qq.com/s/nFOaWGqBQtbvPJF7BGCBIA
 
 当机器学习遇上进化算法
+
+https://mp.weixin.qq.com/s/Jc5f4iX9uoOo5igQ79P77w
+
+多目标进化算法在混合可再生能源系统的应用
 
 # PaddlePaddle
 
@@ -363,17 +378,3 @@ https://mp.weixin.qq.com/s/nWoo-Pr50341WJNwtSZq1w
 https://mp.weixin.qq.com/s/z5zMETSMUGoTiZYMooKZ-g
 
 内核空间镜像攻击揭秘：ARM硬件特性，竟能开启安卓8终端的上帝模式？
-
-# 多目标进化
-
-https://mp.weixin.qq.com/s/Jc5f4iX9uoOo5igQ79P77w
-
-多目标进化算法在混合可再生能源系统的应用
-
-https://mp.weixin.qq.com/s/iAmkb2EdYofJU1AoBw2HyA
-
-多目标优化详解
-
-https://mp.weixin.qq.com/s/9FBl5zSz9WEgjFeq41y1kQ
-
-动态多目标优化问题

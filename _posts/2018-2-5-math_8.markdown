@@ -117,6 +117,10 @@ https://nuclearsecrecy.com/nukemap/
 
 一个核弹效果的评估网站
 
+https://www.zhihu.com/question/36188584
+
+“大伊万”到底有多强？
+
 # Lanchester战争模型
 
 第一次世界大战期间，英国工程师Lanchester针对战争问题建模，以预测战争的结果。
@@ -172,24 +176,6 @@ Lanchester模型是一个连续模型，但实际战斗，尤其是海战，一�
 https://mp.weixin.qq.com/s/npprTz_GRgdv3BK7ff2grg
 
 Lanchester战争模型：用可分离变量的微分方程占卜战事
-
-# 一道证明题
-
-设A、B、C为任意可数有限集合，则
-
-$$size(A-C)\le size(A-B)+size(B-C)$$
-
-其中$$size(X)$$表示集合X中的元素个数。
-
-证明：
-
-$$A-C=\{x\mid x\in A \cap x\notin C\}=\{x\mid x\in A \cap (x\in B \cup x\notin B)\cap x\notin C\}
-\\=\{x\mid (x\in A \cap x\notin B \cap x\notin C) \cup (x\in A \cap x\in B \cap x\notin C) \}
-\\\subseteq \{x\mid (x\in A \cap x\notin B) \cup (x\in B \cap x\notin C) \}=(A-B)\cup (B-C)$$
-
-又因为：$$size(X\cup Y)\le size(X)+size(Y)$$，所以
-
-$$size(A-C)\le size((A-B)\cup (B-C))\le size(A-B)+size(B-C)$$
 
 # 随机过程
 

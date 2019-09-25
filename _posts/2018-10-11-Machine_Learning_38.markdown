@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十八）——PageRank算法, 社交网络, 特征工程, 数据清洗
+title:  机器学习（三十八）——PageRank算法, 社交网络, 数据清洗
 category: ML 
 ---
 
@@ -245,52 +245,6 @@ https://mp.weixin.qq.com/s/S0vUBFCfizjVe_L4SIrGqQ
 https://mp.weixin.qq.com/s/2aKc4yM0b52X-SViGQycwA
 
 大规模网络的社区检测和排序问题综述
-
-# 特征工程
-
-https://mp.weixin.qq.com/s/ibiElLIgrT3wYx3tDYMMTw
-
-理解特征工程
-
-https://mp.weixin.qq.com/s/3Ce8uMf_Kyt-hEZUYfdh3g
-
-特征工程之特征选择
-
-https://mp.weixin.qq.com/s/tOcyfK68jW7Tr-PGCvdXMA
-
-特征工程最后一个要点:特征预处理
-
-https://mp.weixin.qq.com/s/c9iHdgtErVd_iitwny7_zw
-
-Kaggle前1%参赛者经验：特征工程为何如此重要？
-
-https://mp.weixin.qq.com/s/xbPJD0uoRB-T1x09AUYdzg
-
-基于Python的自动特征工程——教你如何自动创建机器学习特征
-
-https://mp.weixin.qq.com/s?__biz=MjM5MTQzNzU2NA==&mid=2651664000&idx=1&sn=ae6dda80df6d6278ae33b7bf7fbadcd2
-
-深度特征合成：自动化特征工程的运作机制
-
-https://mp.weixin.qq.com/s/R1MhoCfnd5drvg2CGLVsPw
-
-哪种特征分析法适合你的任务？Ian Goodfellow提出显著性映射的可用性测试
-
-https://mp.weixin.qq.com/s/XSovbUDVTKe59DDaC1Kl8Q
-
-如何进行特征表达，你知道吗？
-
-https://mp.weixin.qq.com/s/vhr5gXoa0S4-QqFcK7uz-w
-
-模型吞噬特征工程
-
-https://mp.weixin.qq.com/s/zgKbG3r_B8d1qQHnrD2NCg
-
-特征工程宝典《Feature Engineering for Machine Learning》翻译及代码实现
-
-https://mp.weixin.qq.com/s/3Clq9ECs6M52Sg-_xMxJGw
-
-最核心的特征工程方法-分箱算法
 
 # 数据清洗
 
