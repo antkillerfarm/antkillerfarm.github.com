@@ -38,6 +38,10 @@ https://openjfx.io/
 
 https://openjfx.io/openjfx-docs/
 
+教程：
+
+http://www.javafxchina.net/
+
 ## Ubuntu安装Oracle JDK
 
 `sudo apt install software-properties-common`
