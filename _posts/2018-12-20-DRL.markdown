@@ -176,6 +176,10 @@ https://mp.weixin.qq.com/s/LJbpDls06jH5xL3Kbh-eBw
 
 强化学习实践教程
 
+https://mp.weixin.qq.com/s/g4YW6loDqLLBE-vqznh4qQ
+
+《深度强化学习》面试题汇总
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》

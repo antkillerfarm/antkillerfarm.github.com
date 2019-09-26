@@ -102,6 +102,10 @@ https://mp.weixin.qq.com/s/a0d0b1jSm5HxHso9Lz8MSQ
 
 小版BERT也能出奇迹：最火的预训练语言库探索小巧之路
 
+https://mp.weixin.qq.com/s/0f0aToVaAsU7yWK4xz-HzQ
+
+剪枝量化初完结，蒸馏学习又上线
+
 # Integrating Learning and Planning（续）
 
 ## Model Learning

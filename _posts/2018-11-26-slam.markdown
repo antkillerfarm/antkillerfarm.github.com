@@ -321,3 +321,7 @@ https://zhuanlan.zhihu.com/p/35476851
 https://mp.weixin.qq.com/s/gaLXahXd7T30WssXebhFiQ
 
 相机标定方法
+
+https://mp.weixin.qq.com/s/Ue0Sv9h6JZssfJtg4N8hFg
+
+OpenCV相机标定与畸变校正

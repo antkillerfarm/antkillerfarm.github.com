@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  孩子的编程语言, Go, Julia, Rust
+title:  孩子的编程语言, Go, Julia, Rust, VS, Javascript（三）
 category: language 
 ---
 
@@ -294,7 +294,75 @@ https://zhuanlan.zhihu.com/c_1078248076300521472
 
 一个Rust OS的专栏
 
+# VS
+
+## 分栏显示
+
+1.Window -> New Window
+
+2.Window -> New Vertical Tab Group
+
+## Visual Studio Tab转换为空格的设置
+
+打开“Tools --> Options --> Text Editor”，如果是编写C/C++程序，就打开“C/C++-->Tabs”，在这里，选中“Insert spaces”即可。
+
+## 离线安装
+
+VS2015以后，MS不再提供VS的离线安装包，因为安装文件实在是太大了（10GB+），取而代之的是offline模式。
+
+1.首先下载在线安装器vs_community.exe，打开命令行：
+
+`vs_community.exe --layout D:\vs2017\offline --lang zh-CN`
+
+2.安装证书。证书在offline\certificates下。
+
+3.运行运行offline\vs_community.exe。
+
 # Javascript（续）
+
+## D3.js
+
+D3.js是一个数据可视化的库。
+
+官网：
+
+https://d3js.org/
+
+参考：
+
+https://www.cnblogs.com/fastmover/p/7779660.html
+
+D3.js从入门到“放弃”指南
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/22989691
+
+JavaScript世界万物诞生记
+
+https://mp.weixin.qq.com/s/F5jCHDzgj1YSJBGrEi-RfA
+
+JavaScript性能优化的小知识总结
+
+https://mp.weixin.qq.com/s/WS1hQN5SmK5uavT_0fbrkg
+
+一文说透为什么JavaScript最牛逼
+
+https://mp.weixin.qq.com/s/OwJ2gBWvmj8rJ_vW5nzaPA
+
+10个免费好用功能强大的网页动画效果库
+
+https://mp.weixin.qq.com/s/pYtKpfL68lEy9bus9HHAMQ
+
+Javascript将HTML页面生成PDF并下载
+
+https://mp.weixin.qq.com/s/Sjg6jgl1D6IkYgsuQSgFHg
+
+十个最流行的前端CSS库
+
+https://zhuanlan.zhihu.com/p/35551654
+
+基于React的高质量坦克大战复刻版
 
 https://mp.weixin.qq.com/s/zfOZAmgpndcqgxHHaS1j3g
 

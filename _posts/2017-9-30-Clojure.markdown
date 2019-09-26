@@ -258,7 +258,9 @@ Ubuntu： Ctrl + Shift + I
 
 ## 插件
 
-filesize：在底部状态栏显示当前文件大小，点击后还可以看到详细创建、修改时间
+filesize：在底部状态栏显示当前文件大小，点击后还可以看到详细创建、修改时间。
+
+Beautify：格式化代码。
 
 ## 新版的空格显示问题
 
@@ -279,30 +281,6 @@ VsCode插件安装及推荐
 https://mp.weixin.qq.com/s/cw_Bww22sgPtOeNLKQ7HHA
 
 如何使用Visual Studio Code进行Java开发？
-
-# VS
-
-## 分栏显示
-
-1.Window -> New Window
-
-2.Window -> New Vertical Tab Group
-
-## Visual Studio Tab转换为空格的设置
-
-打开“Tools --> Options --> Text Editor”，如果是编写C/C++程序，就打开“C/C++-->Tabs”，在这里，选中“Insert spaces”即可。
-
-## 离线安装
-
-VS2015以后，MS不再提供VS的离线安装包，因为安装文件实在是太大了（10GB+），取而代之的是offline模式。
-
-1.首先下载在线安装器vs_community.exe，打开命令行：
-
-`vs_community.exe --layout D:\vs2017\offline --lang zh-CN`
-
-2.安装证书。证书在offline\certificates下。
-
-3.运行运行offline\vs_community.exe。
 
 # Kotlin
 

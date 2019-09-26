@@ -110,6 +110,10 @@ https://mp.weixin.qq.com/s/L0sPKza2CHjyxcxsoGvMeg
 
 电商多目标优化小结
 
+https://zhuanlan.zhihu.com/p/52566508
+
+深度神经网络中的多任务学习汇总
+
 # 人脸检测/识别
 
 ## 人脸识别

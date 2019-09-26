@@ -207,7 +207,7 @@ Hulu：视频广告系统中的算法实践
 https://mp.weixin.qq.com/s/Eih4J51C8Eh-cuZ8vznESg
 
 当推荐遇到社交：美图的推荐算法设计优化实践
-
+https://mp.weixin.qq.com/s/WWqaCRtsSqfvO-qDLvehdg
 https://mp.weixin.qq.com/s/8jcaMIwNJQ1408VM-ucr_g
 
 快看漫画个性化推荐探索与实践
@@ -227,3 +227,7 @@ https://mp.weixin.qq.com/s/lTYBrYJBnW_ZNEdsQ-lorw
 https://mp.weixin.qq.com/s/hNz9Op4lYtaX8tznUmHd9Q
 
 OCPC广告算法在凤凰新媒体的实践探索
+
+https://mp.weixin.qq.com/s/WWqaCRtsSqfvO-qDLvehdg
+
+阿里妈妈：品牌广告中的NLP算法实践

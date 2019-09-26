@@ -300,20 +300,6 @@ https://www.cnblogs.com/isaboy/p/monaco-editor.html
 
 微软开源代码编辑器monaco-editor
 
-## D3.js
-
-D3.js是一个数据可视化的库。
-
-官网：
-
-https://d3js.org/
-
-参考：
-
-https://www.cnblogs.com/fastmover/p/7779660.html
-
-D3.js从入门到“放弃”指南
-
 ## TypeScript
 
 TypeScript是JavaScript的一个超集，而且本质上向这个语言添加了可选的静态类型和基于类的面向对象编程。
@@ -332,32 +318,22 @@ TypeScript文件的后缀是`.ts`，它不能直接在浏览器中运行，而�
 
 `tsc helloworld.ts`
 
-## 参考
+## Traffic Demo
 
-https://zhuanlan.zhihu.com/p/22989691
+2019.9
 
-JavaScript世界万物诞生记
+最近心血来潮，翻出了本科时代的作业。其中有一个交通仿真的小demo，最早是用Java Applet写的。岂料，现在别说浏览器了，就连专门看这个的AppletViewer在新版SDK中，都不见踪影了。。。
 
-https://mp.weixin.qq.com/s/F5jCHDzgj1YSJBGrEi-RfA
+于是，只好作现代化移植。本来首选JavaFX的，岂料刚开始写，发现JavaFX对于多线程渲染做的很差，而这个Demo正是个多线程的版本。
 
-JavaScript性能优化的小知识总结
+反正都要大改，还不如直接移植到js上，连编译都省了。
 
-https://mp.weixin.qq.com/s/WS1hQN5SmK5uavT_0fbrkg
+原始版本：
 
-一文说透为什么JavaScript最牛逼
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/java/trafic
 
-https://mp.weixin.qq.com/s/OwJ2gBWvmj8rJ_vW5nzaPA
+新版本：
 
-10个免费好用功能强大的网页动画效果库
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/traffic
 
-https://mp.weixin.qq.com/s/pYtKpfL68lEy9bus9HHAMQ
-
-Javascript将HTML页面生成PDF并下载
-
-https://mp.weixin.qq.com/s/Sjg6jgl1D6IkYgsuQSgFHg
-
-十个最流行的前端CSS库
-
-https://zhuanlan.zhihu.com/p/35551654
-
-基于React的高质量坦克大战复刻版
+众所周知，js是单线程的，所以这个版本也是单线程的，逻辑稍微复杂了一些。
