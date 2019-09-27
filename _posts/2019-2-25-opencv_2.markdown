@@ -274,6 +274,10 @@ https://mp.weixin.qq.com/s/YN-cmj3HyzQNDN4Wkh9rxg
 
 拍个自拍，让Python告诉你，军训过后你黑了几度？
 
+https://mp.weixin.qq.com/s/F93DCxJDbZpGr0oHiJ8aKw
+
+教你用OpenCV-Python轻松生成微信国庆版头像
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。

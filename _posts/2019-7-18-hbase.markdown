@@ -184,3 +184,7 @@ Apache HBase的现状和发展
 https://mp.weixin.qq.com/s/xWNSI9jZVIYaGxdBsSB8gw
 
 快手HBase在千亿级用户特征数据分析中的应用与实践
+
+https://mp.weixin.qq.com/s/pQbsGxM59fgQMYH54ETk7Q
+
+面试集锦-HBase

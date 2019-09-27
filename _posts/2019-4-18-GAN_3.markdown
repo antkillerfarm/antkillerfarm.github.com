@@ -32,6 +32,22 @@ Inception来源于Google的Inception Net，因为计算这个score需要用到In
 
 生成的图片不够清晰，显然说明生成模型表现欠佳；生成的图片够清晰了，我们还要看是不是能生成足够多样的图片，有些生成模型只能生成有限的几种清晰图片，陷入了所谓mode collapse，也不是好的模型。
 
+----
+
+**mode collapse(模式坍塌)**，即生成高度相似的样本。
+
+![](/images/img2/mode_collapse.jpg)
+
+假设某个data distribution有两个模式（如上图所示），generator可能就学到一个mode，另一个mode则完全没学到。
+
+参考：
+
+https://mp.weixin.qq.com/s/A7NBKV6puxqI2xCghktA9Q
+
+什么是模式崩溃，以及如何从优化目标上解决这个问题
+
+----
+
 针对这两方面，IS的思路如下：
 
 1.清晰度：把生成的图片x输入Inception V3中，将输出1000维的向量y，向量的每个维度的值对应图片属于某类的概率。对于一个清晰的图片，它属于某一类的概率应该非常大，而属于其它类的概率应该很小。即$$p(y\mid x)$$的熵应该很小。
@@ -235,15 +251,3 @@ BEGAN则借鉴了EBGAN和WGAN各自的一些优点。
 ![](/images/img2/Stack_GAN.png)
 
 上图是Stack GAN的网络结构图。其中的Conditioning Augmentation，显然使用了和VAE类似的添加随机噪声的技术。
-
-类似想法的还有LAPGAN。
-
-论文：
-
-《Deep Generative Image Models using a Laplacian Pyramid of Adversarial Networks》
-
-![](/images/img3/LAPGAN.png)
-
-上图是LAPGAN的网络结构图。顾名思义，这是使用了Laplacian Pyramid来不断提升生成图片的分辨率。
-
-另，StackGAN还有后续版本StackGAN++。
