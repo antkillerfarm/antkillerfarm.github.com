@@ -366,6 +366,10 @@ https://mp.weixin.qq.com/s/T0QeYbkmD4jwhWB47Fnn2w
 
 基于深度学习的端到端在线手写数学公式识别
 
+https://mp.weixin.qq.com/s/l1rmGxOVrXKAaf4yYUt4kQ
+
+自然场景文字定位技术详解
+
 # NetVLAD
 
 NetVLAD算的上是CNN+传统算子的一个范例。

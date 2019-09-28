@@ -140,11 +140,7 @@ onPause
 
 利用向导生成的代码中只有一个View，相应的UI布局文件在res/layout/main.xml，找了半天也没找到如何快捷的添加View，于是只好自己手动添加相关的xml文件，好在eclipse可以定制添加的xml文件的模板，于是把main.xml复制一下，做成模板，以后添加就方便了。
 
-## 编译Froyo（部分转贴）
-
-****
-说点题外话，这个Blog本来打算完全写些自己的原创内容，对于转贴只给链接，但链接这东西，有利有弊。常常过上几个月，原来的链接就不好使了。所以只好有选择的粘贴一些了。
-****
+## 编译Froyo
 
 Froyo出来有一阵子了，一时兴起，从官网上git了代码，打算编译。不料根据出错信息得知，Froyo及其以后的版本需要64-bit的OS才能编译。所以只好重新安装64-bit的Ubuntu。
 
@@ -172,23 +168,16 @@ update-alternatives --config javac
 
 有 2 个选项可用于替换项 java (提供 /usr/bin/java)。
 
-  选择       路径                                    优先级  状态
-****
-* 0            /usr/lib/jvm/java-6-openjdk/jre/bin/java   1061      自动模式
-
-1            /usr/lib/jvm/java-1.5.0-sun/jre/bin/java   53        手动模式
-
-2            /usr/lib/jvm/java-6-openjdk/jre/bin/java   1061      手动模式
+{% highlight bash %}
+选择       路径                                    优先级  状态
+* 0   /usr/lib/jvm/java-6-openjdk/jre/bin/java   1061    自动模式
+1     /usr/lib/jvm/java-1.5.0-sun/jre/bin/java   53      手动模式
+2     /usr/lib/jvm/java-6-openjdk/jre/bin/java   1061    手动模式
+{% endhighlight %}
 
 查看当前的java版本：
 
-java -version
-
-java version "1.5.0_22"
-
-Java(TM) 2 Runtime Environment, Standard Edition (build 1.5.0_22-b03)
-
-Java HotSpot(TM) Client VM (build 1.5.0_22-b03, mixed mode, sharing)
+`java -version`
 
 最郁闷的是，在安装好sun-java5-jdk之后，make的时候，出错信息告诉我，Froyo已经改用Java 1.6了。 
 
@@ -246,3 +235,11 @@ android.content.ActivityNotFoundException: Unable to find explicit activity clas
 在三星的手机上，计算器的Activity是“com.sec.android.app.popupcalculator.Calculator”。
 
 同样的方法，我们可以找到浏览器的Activity是“com.android.browser.BrowserActivity”。
+
+## m & mm & mmm
+
+m：编译所有的模块
+
+mm：编译当前目录下的模块，当前目录下要有Android.mk文件
+
+mmm：编译指定路径下的模块，指定路径下要有Android.mk文件

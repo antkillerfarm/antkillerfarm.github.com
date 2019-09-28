@@ -212,6 +212,22 @@ Guava: Google Core Libraries for Java。这个库提供了很多JDK没有包含�
 
 https://github.com/google/guava/wiki
 
+## Netty
+
+如果没有Netty？
+
+远古：
+
+java.net + java.io
+
+近代：
+
+java.nio
+
+其他：
+
+Mina，Grizzly
+
 ## 参考
 
 https://mp.weixin.qq.com/s/t1Cx1n6irN1RWG8HQyHU2w

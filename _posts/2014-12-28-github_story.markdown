@@ -128,6 +128,16 @@ https://stackedit.io/
 
 219.76.4.4  http://github-cloud.s3.amazonaws.com
 
+## Hexo
+
+Hexo也是一个常见的blog框架，确实默认主题比jekyll的好。然而，它必须本地编译，然后上传github，而不能如jekyll那样，由github自动编译。所以，我还是观望一下吧。
+
+参考：
+
+https://mp.weixin.qq.com/s/0Bd1bxoWx6MnGccnHc15ZA
+
+利用GitHub从零开始搭建一个自己的专属博客
+
 ## 参考
 
 https://mp.weixin.qq.com/s/CHca0V7LR4NhomtLIPhc4w

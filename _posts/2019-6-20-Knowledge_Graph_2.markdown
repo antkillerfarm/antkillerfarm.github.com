@@ -290,6 +290,26 @@ https://mp.weixin.qq.com/s/QHounf4el7nmXnpMSJHjvg
 
 这个问题不简单：寻找缺失元素
 
+https://blog.csdn.net/changtao381/article/details/8936765
+
+Splay Tree
+
+https://blog.csdn.net/simpsonk/article/details/72832959
+
+史上最强图解Treap总结
+
+https://www.cnblogs.com/BCOI/p/9072444.html
+
+TREAP
+
+https://blog.csdn.net/yishizuofei/article/details/81660841
+
+多路查找树：2-3树、2-3-4树、B树、B+树、B*树、R树
+
+http://www.cppblog.com/mysileng/archive/2013/04/06/199159.html
+
+Skip List（跳跃表）原理详解与实现
+
 # 计算机体系结构
 
 按照Michael J. Flynn的分类方法，计算机的体系结构可分为如下四类：

@@ -24,6 +24,8 @@ category: Deep Object Detection
 
 ![](/images/img3/Two_stage.png)
 
+![](/images/img3/Deep_object_detection.jpg)
+
 # R-FCN
 
 R-FCN是何恺明/孙剑小组的Jifeng Dai于2016年提出的。
