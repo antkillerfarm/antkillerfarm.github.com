@@ -231,3 +231,7 @@ OCPC广告算法在凤凰新媒体的实践探索
 https://mp.weixin.qq.com/s/WWqaCRtsSqfvO-qDLvehdg
 
 阿里妈妈：品牌广告中的NLP算法实践
+
+https://mp.weixin.qq.com/s/sboWpGTuf8rpRUz4G7PdKw
+
+深度学习在美图个性化推荐的应用实践

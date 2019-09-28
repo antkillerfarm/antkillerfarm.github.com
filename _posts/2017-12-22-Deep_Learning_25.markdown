@@ -6,6 +6,10 @@ category: DL
 
 # 多任务学习
 
+http://cs330.stanford.edu/
+
+CS 330: Deep Multi-Task and Meta Learning
+
 https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA
 
 多任务学习-Multitask Learning概述

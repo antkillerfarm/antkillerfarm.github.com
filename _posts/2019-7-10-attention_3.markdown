@@ -411,3 +411,7 @@ https://mp.weixin.qq.com/s/hI9XAiqKaHLq-Z9JkaWA_A
 https://mp.weixin.qq.com/s/55B0ToIKDusiPI5farR19w
 
 NLP这两年：15个预训练模型对比分析与剖析
+
+https://www.zhihu.com/question/347898375
+
+如何看待瘦身成功版BERT——ALBERT？

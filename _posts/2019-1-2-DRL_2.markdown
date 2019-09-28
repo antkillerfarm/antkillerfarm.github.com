@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/SJd-3qH4W4GMMLZSmvFk1w
 
 利用DQN玩吃豆人（Pacman）小游戏
 
+https://zhuanlan.zhihu.com/p/35882937
+
+强化学习——从Q-Learning到DQN到底发生了什么？
+
 # DQN进化史
 
 ![](/images/img2/DQN.jpg)

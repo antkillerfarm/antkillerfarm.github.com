@@ -365,3 +365,7 @@ https://mp.weixin.qq.com/s/efID_R9ajL34P95eGKkrQA
 https://github.com/THUNLP-MT/TG-Reading-List
 
 文本生成公开数据集/开源工具/经典论文详细列表分享
+
+https://mp.weixin.qq.com/s/tREtbGpoLR-kc-1DnC8wWg
+
+对话系统的设计艺术
