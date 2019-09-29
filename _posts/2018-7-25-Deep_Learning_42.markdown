@@ -210,6 +210,10 @@ https://mp.weixin.qq.com/s/vwZfmyIEdEdpqJWKOSKYYw
 
 清华天机AI芯片登Nature封面：全球首款异构融合类脑芯片，实现自行车无人驾驶
 
+https://mp.weixin.qq.com/s/skA3NZIAzTrsnSsNCxCYSA
+
+类脑计算背后的计算神经科学框架
+
 # 深度时间序列
 
 https://mp.weixin.qq.com/s/cChJO6YrE_XAgeInS7J1Vw

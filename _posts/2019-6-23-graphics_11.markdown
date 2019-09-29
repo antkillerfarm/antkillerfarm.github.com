@@ -218,6 +218,22 @@ https://zhuanlan.zhihu.com/p/69956002
 
 # DRL参考资源
 
+https://mp.weixin.qq.com/s/6HVSh7_9Akmf6OE8PGNy6Q
+
+怎样让AI完成人类搞不定的任务？OpenAI提出迭代扩增法给AI设目标
+
+https://mp.weixin.qq.com/s/JpZimrHALjuc-H9WF8sPZg
+
+智能体只想看电视？谷歌新型好奇心方法让智能体离开电视继续探索
+
+https://mp.weixin.qq.com/s/dic_ssebe32L30pAUxlP6w
+
+谷歌AI-强化学习中的好奇和拖延
+
+https://mp.weixin.qq.com/s/tieGV_tDWkVVW2YFes4AqA
+
+学习何时做分类决策，深度好奇提出强化学习模型Jumper
+
 https://mp.weixin.qq.com/s/GUyZ0U5_JlXCI-5mO796SA
 
 超越DQN和A3C：深度强化学习领域近期新进展概览

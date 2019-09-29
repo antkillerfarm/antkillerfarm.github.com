@@ -302,14 +302,10 @@ Atari游戏：高维输入，低维离散输出。
 
 《Continuous Deep Q-Learning with Model-based Acceleration》
 
+对于连续控制，由于我们已经无法选择动作，因此只能设计一种方法，使得我们输入状态，然后能够输出动作，并且保证输出动作对应的Q值是最大值。
 
+这个时候，我们有两种选择：
 
-## Rainbow
+- 弄两个神经网络，一个是Policy网络，输入状态，输出动作，另一个是Q网络，输入状态，输出Q值。这种做法其实就是Actor-Critic算法。
 
-https://mp.weixin.qq.com/s/SZHMyWOXHM8T3zp_aUt-6A
-
-DeepMind提出Rainbow：整合DQN算法中的六种变体
-
-https://github.com/Curt-Park/rainbow-is-all-you-need
-
-手把手教你从DQN到Rainbow
+- 只弄一个神经网络，既能输出动作也能输出Q值。这就是本节所要使用的方法。

@@ -6,6 +6,30 @@ category: RL
 
 # DRL参考资源
 
+https://zhuanlan.zhihu.com/p/27699682
+
+荐译一篇通俗易懂的策略梯度（Policy Gradient）方法讲解
+
+https://mp.weixin.qq.com/s/RLEuaiRdq6AbTSUcYQ5O3A
+
+深度强化学习在NLP怎么用？看清华黄民烈老师这一份120页《自然语言处理和搜索中的深度强化学习应用》讲义
+
+https://zhuanlan.zhihu.com/p/29019246
+
+基于策略的增强学习
+
+https://mp.weixin.qq.com/s/OY56lJ_NFf5vVAgKfKyx2A
+
+利用强化学习自动搜索最优化方法
+
+https://mp.weixin.qq.com/s/uDFsWebfLmka-zZX3Y_8kg
+
+深度强化学习在面向任务的对话管理中的应用
+
+https://mp.weixin.qq.com/s/nYOOwVoijl1p4V0A7yaI3w
+
+机遇与挑战：用强化学习自动搜索优化算法
+
 http://mp.weixin.qq.com/s/TBVVdX3erOpXNjXmhLmxOw
 
 学“深度强化学习”，看懂DeepMind这篇文章就够了!
@@ -333,19 +357,3 @@ https://mp.weixin.qq.com/s/pJkCOCl6o70le1WsE9p3pg
 https://mp.weixin.qq.com/s/fodjmmh_jJMh4hD3m2OrLg
 
 凭借幻想的目标进行视觉强化学习
-
-https://mp.weixin.qq.com/s/6HVSh7_9Akmf6OE8PGNy6Q
-
-怎样让AI完成人类搞不定的任务？OpenAI提出迭代扩增法给AI设目标
-
-https://mp.weixin.qq.com/s/JpZimrHALjuc-H9WF8sPZg
-
-智能体只想看电视？谷歌新型好奇心方法让智能体离开电视继续探索
-
-https://mp.weixin.qq.com/s/dic_ssebe32L30pAUxlP6w
-
-谷歌AI-强化学习中的好奇和拖延
-
-https://mp.weixin.qq.com/s/tieGV_tDWkVVW2YFes4AqA
-
-学习何时做分类决策，深度好奇提出强化学习模型Jumper

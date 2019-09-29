@@ -289,3 +289,7 @@ https://mp.weixin.qq.com/s/3_famaAmkAN-4xVEupSXSA
 https://mp.weixin.qq.com/s/DLNyb-GtzmSYuXcn6VQz4Q
 
 高效轻量级深度模型的研究和实践
+
+https://mp.weixin.qq.com/s/3SWtxtV9b0dFpvqfTNlqIg
+
+Slimmable Neural Networks

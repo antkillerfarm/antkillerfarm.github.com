@@ -214,6 +214,10 @@ https://mp.weixin.qq.com/s/abaXgfDK8uaz2Yk8j4maaw
 
 命名实体识别中最常用的两种深度学习模型
 
+https://mp.weixin.qq.com/s/btU7ulbWV0FPZpnIymie4g
+
+如何使用BERT来做命名实体识别
+
 ## 文本摘要
 
 https://mp.weixin.qq.com/s/jk1XgnuydrsTg3HvV0CVvw
