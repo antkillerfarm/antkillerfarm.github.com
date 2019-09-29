@@ -302,6 +302,10 @@ https://mp.weixin.qq.com/s/dl8kbhKUCHzwJ-5lSv6VMw
 
 高清彩色开国典礼将上映：技术加持之下，历史不会褪色
 
+https://mp.weixin.qq.com/s/-lNM3bVxK8YtmPWdXpSf5A
+
+UC信息流视频标签识别技术
+
 # 多模态学习
 
 https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw

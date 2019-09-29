@@ -50,6 +50,10 @@ https://mp.weixin.qq.com/s/KCFJdk8fZ1rmRI9bZSQykQ
 
 微软研究院新版书籍《数据科学基础》，附479页PDF下载
 
+https://mp.weixin.qq.com/s/R2u3czcEjrRelgJrr_smmw
+
+520 页机器学习笔记！图文并茂可能更适合你
+
 # 策略梯度
 
 ## Policy Gradient Theorem（续）

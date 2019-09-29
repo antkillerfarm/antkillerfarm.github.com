@@ -296,6 +296,10 @@ https://mp.weixin.qq.com/s/5Kcbnme7151Ln6KiTyVaBw
 
 多目标追踪资源列表
 
+https://mp.weixin.qq.com/s/laaLCZZIwNaEsy-Au9Yh7Q
+
+多目标跟踪算法汇总，含算法介绍/论文/源码
+
 https://zhuanlan.zhihu.com/p/65177442
 
 多目标跟踪：近年论文及开源代码汇总

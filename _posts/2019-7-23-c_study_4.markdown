@@ -75,6 +75,14 @@ boost的unit test
 
 https://github.com/google/googletest
 
+`gtest_filter`是一个很有用的选项。
+
+示例：
+
+`./foo_test --gtest_filter=FooTest*.*-FooTest.Bar:FooTest2.Bar`
+
+运行所有“测试案例名称(testcase_name)”为FooTest的案例，但是除了FooTest.Bar和FooTest2.Bar。
+
 参考：
 
 https://www.ibm.com/developerworks/cn/aix/library/au-googletestingframework.html

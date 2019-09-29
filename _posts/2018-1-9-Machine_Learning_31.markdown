@@ -159,6 +159,10 @@ https://mp.weixin.qq.com/s/AeLwfmM0N-b1dfxt3v4C-A
 
 教科书上的LDA为什么长这样？
 
+https://zhuanlan.zhihu.com/p/84660707
+
+线性判别分析
+
 # 强连通分量算法
 
 http://ishare.iask.sina.com.cn/f/34626295.html

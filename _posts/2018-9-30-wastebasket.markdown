@@ -284,6 +284,10 @@ https://mp.weixin.qq.com/s/A9M_2DVqmFQaTdSy2yEJ1A
 
 为什么烤面包会这么香？
 
+https://mp.weixin.qq.com/s/K-ukk-HuztMDCyHWLZaXww
+
+谁是这个世界上最“有名”的科学家？——亚历山大·冯·洪堡（Alexander von Humboldt）
+
 ## Bélády's Algorithm
 
 Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。
