@@ -242,7 +242,7 @@ https://github.com/sourabhv/FlapPyBird
 
 - 训练40W个time step：平均能通过10根柱子。
 
-- 训练140W个time step: 平均能通过100根柱子。
+- 训练140W个time step：平均能通过100根柱子。
 
 - 为了验证模型的泛化性能，我将两根之间柱子的横向间隔随机化，性能立马掉到10根柱子的水平，但继续训练之后，性能提升速度比原先快的多。
 
@@ -269,6 +269,22 @@ https://zhuanlan.zhihu.com/p/21477488
 这是Google官方的教程，使用的是A3C算法：
 
 https://github.com/tensorflow/models/tree/master/research/a3c_blogpost
+
+安装依赖：
+
+`pip3 install gym pyglet tensorflow matplotlib`
+
+首先是训练：
+
+`python3 ./a3c_cartpole.py --train`
+
+这里用的是Gym环境，不需要渲染游戏画面，而直接就可以训练。这个的训练速度很快，即使CPU也就是十分钟的事情。
+
+展示效果：
+
+`python3 ./a3c_cartpole.py`
+
+果然稳如狗。。。
 
 参考：
 

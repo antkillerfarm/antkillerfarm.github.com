@@ -173,6 +173,10 @@ https://zhuanlan.zhihu.com/p/72803739
 
 Word Mover's Distance-文档距离优化方案
 
+https://mp.weixin.qq.com/s/Zi9v_sbxPkHWUWwNhMMMAg
+
+编辑距离
+
 # LSA
 
 ## 基本原理

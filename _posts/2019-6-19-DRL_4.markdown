@@ -1,10 +1,66 @@
 ---
 layout: post
-title:  深度强化学习（四）——DRL参考资源（2）
+title:  深度强化学习（四）——DRL参考资源（1）
 category: RL 
 ---
 
 # DRL参考资源
+
+https://mp.weixin.qq.com/s/ruAAQEjPIDPWPiuPepKU6Q
+
+Deep Reinforcement Learning: An Overview
+
+https://mp.weixin.qq.com/s/FjmlXqlpaRVLdAbjqspOJA
+
+这是一份你必须学习的强化学习算法清单
+
+https://mp.weixin.qq.com/s/lfXQqllfFPtuNIrQZiD-NQ
+
+深度强化学习十大原则
+
+https://mp.weixin.qq.com/s/I8IwPCY6-zocJKFXMr6rUg
+
+深度强化学习的18个关键问题
+
+https://mp.weixin.qq.com/s/_lmz0l1vP_CQ6p6DdFnHWA
+
+谷歌大脑工程师的深度强化学习劝退文
+
+https://zhuanlan.zhihu.com/p/39999667
+
+强化学习路在何方？
+
+https://mp.weixin.qq.com/s/oA98YyLqn1B22QZ5b_iDVA
+
+IJCAI 2018：聚焦强化学习的学习效率
+
+https://mp.weixin.qq.com/s/FtHJCXniVne2TGKfgCeS9w
+
+Pieter Abbeel：深度强化学习加速方法
+
+https://mp.weixin.qq.com/s/xlnwB9e1ks-4M4djnyIAyQ
+
+解读72篇DeepMind深度强化学习论文
+
+https://mp.weixin.qq.com/s/VYIyWRykREjOyLu4YDhLeA
+
+61篇NIPS2019深度强化学习论文及部分解读
+
+https://mp.weixin.qq.com/s/sHP03DAeZvdBxwVPuSNRPg
+
+如何丝滑地入门神经网络？写个AI赛车游戏，只训练4代就能安全驾驶
+
+https://mp.weixin.qq.com/s/1SZKhG1ZbD1pl-3YQD_umg
+
+6行代码搞定基本的RL算法，速度围观Reddit高赞帖
+
+https://mp.weixin.qq.com/s/7BsXPQ8wC6_fHulU63ZQiQ
+
+当强化学习遇见泛函分析
+
+https://mp.weixin.qq.com/s/6n5HawyR4AgH8Dq0gJMw2g
+
+强化学习的基本概念与代码实现
 
 https://zhuanlan.zhihu.com/p/27699682
 
@@ -309,51 +365,3 @@ https://mp.weixin.qq.com/s/oyxqA_LYtze1f_YDwDZziQ
 https://mp.weixin.qq.com/s/qWuoo6cGLWLk4OKlunR-Og
 
 滴滴KDD 2018论文详解：基于强化学习技术的智能派单模型
-
-https://zhuanlan.zhihu.com/p/43496459
-
-解决Sparse Reward RL任务的简单回顾
-
-https://mp.weixin.qq.com/s/G99vqIYeWzgQ4kL4p77cKA
-
-用强化学习做神经机器翻译：中山大学&MSRA填补多项空白
-
-https://zhuanlan.zhihu.com/p/43843955
-
-BAIR：基于人类演示&RL的夹爪训练——高效、通用、低成本
-
-https://mp.weixin.qq.com/s/ADZlLx6gMTFU6IoBCF669g
-
-快1万倍！伯克利提出用深度RL优化SQL查询
-
-https://mp.weixin.qq.com/s/oZDDP59o-1qwfz8prK3nJQ
-
-伯克利最新研究：如何用目标图像进行机器视觉强化学习？
-
-https://zhuanlan.zhihu.com/p/41467058
-
-Policy Optimization with Demonstrations
-
-https://openreview.net/pdf?id=rJzoujRct7
-
-深度学习之斗地主
-
-https://mp.weixin.qq.com/s/00zHwpw2xWP2fR9sDHE2Xw
-
-BAIR讲述如何利用深度强化学习控制灵活手
-
-https://mp.weixin.qq.com/s/V7RESEm4xzhW8tXEjKjn1Q
-
-层次强化学习、记忆与预测模型
-
-https://mp.weixin.qq.com/s/aNskPERmekw9yQVb7A3GPQ
-
-Google大脑最新研究成果：使用强化学习实现动态系统的韧性计算
-
-https://mp.weixin.qq.com/s/pJkCOCl6o70le1WsE9p3pg
-
-在全景视频中预测头部运动：一种深度强化学习方法
-
-https://mp.weixin.qq.com/s/fodjmmh_jJMh4hD3m2OrLg
-
-凭借幻想的目标进行视觉强化学习

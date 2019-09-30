@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度强化学习（三）——AlphaGo, AlphaStar, DRL参考资源（1）
+title:  深度强化学习（三）——AlphaGo, AlphaStar
 category: RL 
 ---
 
@@ -8,7 +8,41 @@ category: RL
 
 ## NAF（续）
 
+在《强化学习（八）》中，我们已经指出advantage function不改变策略梯度，但能有效约束variance。这里沿用了A函数定义：
 
+$$A(s,a)=Q(s,a)-V(s)$$
+
+作者设计了如下A函数：
+
+$$A(x,\mu | \theta^A)=-\frac{1}{2}(u-\mu(x | \theta^\mu))^T P(x | \theta^P)(u-\mu(x | \theta^\mu))$$
+
+其中x是状态，u是动作，$$\mu$$是神经网络的输出动作。
+
+它的一阶矩阵形式等价于：$$A(a)=-P(a-x)^2$$
+
+因此，这是一个正定二次型的相反数，即$$A\le 0$$。
+
+我们的目标就是优化A函数，使之尽可能最大（即等于0）。这时A函数对应的动作即为最优动作。
+
+以下是具体的网络结构图。
+
+![](/images/img3/NAF.jpg)
+
+其流程如下：
+
+- 状态经过两层MLP之后（注意：第2层没有RELU），生成三个tensor：V、$$\mu$$、L0。
+
+- 将L0转化为L。也就是将一个列向量转换为下三角矩阵，就是从新排列，然后把对角线的数exp对数化。
+
+- 使用Cholesky分解构建P。
+
+>若A为n阶对称正定矩阵，则存在唯一的主对角线元素都是正数的下三角阵L，使得$$A=LL^T$$，此分解式称为**正定矩阵的乔列斯基（Cholesky）分解**。
+
+- 按照上图的步骤，依此构建A和Q。其中的Q正好可用于DQN的训练。
+
+综上，NAF既可以输出action，也可产生Q值，而Q值可用于DQN训练，从而使算法可以进行下去。
+
+>这里的构造逻辑和VAE很相似，都是假定构造方法成立，然后再用神经网络拟合构造所需的各要素，最后通过训练以达成构造的效果。
 
 ## Rainbow
 
@@ -319,61 +353,3 @@ DeepMind首个战胜星际2职业玩家的AI为何无敌？新视角揭秘AI里�
 https://mp.weixin.qq.com/s/_t2vLFfIG6VYAdWDalpIXQ
 
 说人话教AI打游戏，Facebook开源迷你版星际争霸，成果登上NeurIPS 2019
-
-# DRL参考资源
-
-https://mp.weixin.qq.com/s/ruAAQEjPIDPWPiuPepKU6Q
-
-Deep Reinforcement Learning: An Overview
-
-https://mp.weixin.qq.com/s/FjmlXqlpaRVLdAbjqspOJA
-
-这是一份你必须学习的强化学习算法清单
-
-https://mp.weixin.qq.com/s/lfXQqllfFPtuNIrQZiD-NQ
-
-深度强化学习十大原则
-
-https://mp.weixin.qq.com/s/I8IwPCY6-zocJKFXMr6rUg
-
-深度强化学习的18个关键问题
-
-https://mp.weixin.qq.com/s/_lmz0l1vP_CQ6p6DdFnHWA
-
-谷歌大脑工程师的深度强化学习劝退文
-
-https://zhuanlan.zhihu.com/p/39999667
-
-强化学习路在何方？
-
-https://mp.weixin.qq.com/s/oA98YyLqn1B22QZ5b_iDVA
-
-IJCAI 2018：聚焦强化学习的学习效率
-
-https://mp.weixin.qq.com/s/FtHJCXniVne2TGKfgCeS9w
-
-Pieter Abbeel：深度强化学习加速方法
-
-https://mp.weixin.qq.com/s/xlnwB9e1ks-4M4djnyIAyQ
-
-解读72篇DeepMind深度强化学习论文
-
-https://mp.weixin.qq.com/s/VYIyWRykREjOyLu4YDhLeA
-
-61篇NIPS2019深度强化学习论文及部分解读
-
-https://mp.weixin.qq.com/s/sHP03DAeZvdBxwVPuSNRPg
-
-如何丝滑地入门神经网络？写个AI赛车游戏，只训练4代就能安全驾驶
-
-https://mp.weixin.qq.com/s/1SZKhG1ZbD1pl-3YQD_umg
-
-6行代码搞定基本的RL算法，速度围观Reddit高赞帖
-
-https://mp.weixin.qq.com/s/7BsXPQ8wC6_fHulU63ZQiQ
-
-当强化学习遇见泛函分析
-
-https://mp.weixin.qq.com/s/6n5HawyR4AgH8Dq0gJMw2g
-
-强化学习的基本概念与代码实现
