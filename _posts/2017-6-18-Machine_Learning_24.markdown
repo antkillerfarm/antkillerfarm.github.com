@@ -240,3 +240,7 @@ https://mp.weixin.qq.com/s/3Clq9ECs6M52Sg-_xMxJGw
 https://mp.weixin.qq.com/s/ghfh1x_lsEcoA8PFPXE46w
 
 练手扎实基本功必备：非结构文本特征提取方法
+
+https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247515402&idx=1&sn=ee3cd5c64a707246216a532fa3af422b
+
+面向机器学习和数据分析的特征工程

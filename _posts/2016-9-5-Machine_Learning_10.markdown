@@ -129,6 +129,10 @@ https://mp.weixin.qq.com/s/RpEgTMRUM4GWhIdIPvkGTg
 
 优于VAE，为万能近似器高斯混合模型加入Wasserstein距离
 
+https://zhuanlan.zhihu.com/p/85338773
+
+高斯混合模型（GMM）推导及实现
+
 # EM算法
 
 本节将进一步讨论EM算法的性质，并将之应用到使用latent random variables的一大类估计问题中。

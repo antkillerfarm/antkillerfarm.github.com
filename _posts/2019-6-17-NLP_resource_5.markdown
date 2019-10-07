@@ -369,3 +369,7 @@ https://github.com/THUNLP-MT/TG-Reading-List
 https://mp.weixin.qq.com/s/tREtbGpoLR-kc-1DnC8wWg
 
 对话系统的设计艺术
+
+https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247486300&idx=1&sn=dd681216da626c73531fc17ffbccf22a
+
+清华刘知远：知识指导的自然语言处理

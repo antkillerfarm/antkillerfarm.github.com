@@ -110,6 +110,12 @@ https://www.jetbrains.com/pycharm/
 
 `sudo snap install pycharm-community --classic`
 
+参考：
+
+https://mp.weixin.qq.com/s?__biz=MzIwOTc2MTUyMg==&mid=2247492214&idx=2&sn=31b7b25246ac0db7f54e24af35e4e2ce
+
+PyCharm中一些不为人知的技巧
+
 ## 软件发布工具
 
 ### distutils

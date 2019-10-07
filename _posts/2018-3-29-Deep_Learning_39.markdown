@@ -306,6 +306,14 @@ https://mp.weixin.qq.com/s/-lNM3bVxK8YtmPWdXpSf5A
 
 UC信息流视频标签识别技术
 
+https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247515277&idx=1&sn=e6466ace50c46b66824747c79ea4d6f1
+
+视频摘要最新综述文章
+
+https://mp.weixin.qq.com/s?__biz=MzI0ODcxODk5OA==&mid=2247508659&idx=1&sn=77bd5db94ffc7737d937e9b2cbda84cf
+
+快手王华彦：端上视觉技术的极致效率及其短视频应用实践
+
 # 多模态学习
 
 https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw

@@ -324,6 +324,10 @@ https://mp.weixin.qq.com/s/Xhy1w87l_b47_hS3zzCgaA
 
 3D障碍物感知
 
+https://mp.weixin.qq.com/s?__biz=MzI1NjkxOTMyNQ==&mid=2247488270&idx=1&sn=25b6e9b4fbe02ef6c84f3171c4bd2e2a
+
+Apollo决策技术分享
+
 # Autoware
 
 Autoware是另一个开源的无人驾驶平台。不像Apollo，没有百度这样的强势公司的介入，社区氛围更浓一些，相对的，功能也要弱一些。

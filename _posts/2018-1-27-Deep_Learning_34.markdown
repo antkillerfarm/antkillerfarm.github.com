@@ -230,6 +230,10 @@ https://www.zhihu.com/question/33952003
 
 如何通过词向量技术来计算2个文档的相似度？
 
+https://mp.weixin.qq.com/s?__biz=MzI1NjM1ODEyMg==&mid=2247484632&idx=1&sn=e3ed259243c4ee26403edf4573165f76
+
+嵌入方法在推荐系统中的应用
+
 # CNN进阶
 
 http://mp.weixin.qq.com/s/ddTNr-967IahTZ2X1LNSEQ

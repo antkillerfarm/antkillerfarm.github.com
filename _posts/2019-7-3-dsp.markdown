@@ -295,3 +295,7 @@ Microsoft Icecaps：一个用于会话建模的开源工具包
 https://zhuanlan.zhihu.com/p/75584326
 
 combo:“Python机器学习模型合并工具库”简介
+
+https://github.com/arraiyopensource/kornia
+
+可微分的“OpenCV”：这是基于PyTorch的可微计算机视觉库

@@ -264,6 +264,10 @@ https://mp.weixin.qq.com/s/HUf41-OBAwZm7zlISkIx0w
 
 DRL在Unity自行车环境中配置与实践
 
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771231&idx=3&sn=09410e8fd9f34cacfac7df6abf4d9973
+
+集合三大类无模型强化学习算法，BAIR开源RL代码库rlpyt
+
 # 概述
 
 ![](/images/img2/RL_intro.png)

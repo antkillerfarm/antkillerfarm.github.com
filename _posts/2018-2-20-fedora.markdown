@@ -288,6 +288,10 @@ https://mp.weixin.qq.com/s/xuC_pH1X_GmyK0vVWrBzWQ
 
 10个实战与面试常用Shell脚本编写
 
+https://zhuanlan.zhihu.com/p/84774691
+
+bash下可控任务数的并发执行脚本
+
 # awk&sed&grep
 
 这三个工具是文本处理中用的比较多的工具，各有各的特色，且都支持正则表达式。

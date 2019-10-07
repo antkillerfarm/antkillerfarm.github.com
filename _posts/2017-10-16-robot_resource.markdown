@@ -64,6 +64,10 @@ https://mp.weixin.qq.com/s/iQ9vnGX7TjtMP_UOmvVjlA
 
 特斯拉深度研究报告
 
+https://mp.weixin.qq.com/s?__biz=MzI1ODYwOTkzNg==&mid=2247497740&idx=3&sn=eedfb5f889b80fde545d89f5fb29238d
+
+中国汽车工业沉浮70年
+
 ## 课程
 
 http://selfdrivingcars.mit.edu/

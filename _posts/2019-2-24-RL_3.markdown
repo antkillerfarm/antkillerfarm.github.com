@@ -62,6 +62,11 @@ http://www.cs.ubc.ca/~poole/demos/
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/RL
 
+>2019.10   
+>由于appletviewer在最新的JDK中已经被移除了，因此，这次选择JS作为目标语言，并对其中的Q-Learning做了移植。   
+>代码：   
+>https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/RL/Q
+
 David Poole还写了一本书《Artificial Intelligence: foundations of computational agents》，目前已经是第2版了。
 
 其中的代码资源参见：

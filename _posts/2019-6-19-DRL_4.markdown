@@ -1,8 +1,144 @@
 ---
 layout: post
-title:  深度强化学习（四）——DRL参考资源（1）
+title:  深度强化学习（四）——AlphaStar, DRL参考资源（1）
 category: RL 
 ---
+
+# AlphaGo（续）
+
+https://mp.weixin.qq.com/s/i5OmLu8aNbypiTUmP4teeQ
+
+刘遥行：深入浅出看懂AlphaGo Zero
+
+https://mp.weixin.qq.com/s/aBrwbB_DOGTen-6XL7LGFQ
+
+邓侃：白话蒙特卡洛树搜索和ResNet
+
+https://mp.weixin.qq.com/s/nbTkr0PImlXUSYl91HD91Q
+
+AlphaGo背后的力量：蒙特卡洛树搜索入门指南
+
+https://mp.weixin.qq.com/s/-tH7DQo1cK9gA0bcpBJSDA
+
+AlphaGo Zero：笔记与伪代码
+
+https://mp.weixin.qq.com/s/CJuVoOf7idUChFIn7dH0Lg
+
+围棋中的数学原理
+
+https://mp.weixin.qq.com/s/d46qNFaftt4wxpV4sZnG-w
+
+一张图看懂AlphaGo Zero
+
+https://zhuanlan.zhihu.com/p/31749249
+
+比AlphaGo Zero更强的AlphaZero问世，8小时解决一切棋类！
+
+https://mp.weixin.qq.com/s/L7bZMkqyncwEt6D5tK1OdQ
+
+AlphaZero炼成最强通用棋类AI，DeepMind强化学习算法8小时完爆人类棋类游戏
+
+https://mp.weixin.qq.com/s/tFdnxqV5a5xZrFtB6E0AiQ
+
+新AlphaZero出世称霸棋界，8小时搞定一切棋类！自对弈通用强化学习无师自通！
+
+https://mp.weixin.qq.com/s/qYWsFBKNCKCGUmizX_1sVg
+
+AlphaGo 教学工具终于上线了！
+
+https://mp.weixin.qq.com/s/JxbIeDk8_wnYu_ewUHp29g
+
+深度学习与围棋实战书籍《Deep Learning and the Game of Go》
+
+https://mp.weixin.qq.com/s/gsRnbknytz2FY2dWgdWEYg
+
+精通国际象棋的AI研究员：AlphaZero真的是一次突破吗？
+
+https://mp.weixin.qq.com/s/Przl4ivbNuOFmz4pcYTrpQ
+
+浅述：从Minimax到AlphaZero，完全信息博弈之路（1）
+
+https://zhuanlan.zhihu.com/p/32089487
+
+AlphaZero实战：从零学下五子棋
+
+http://mp.weixin.qq.com/s/72riTTC3w0q9oF5H-51kXA
+
+手把手教你搭建AlphaZero（使用Python和Keras）
+
+https://mp.weixin.qq.com/s/Qw2tT7H1PwDvPgOYy8YUsQ
+
+AlphaGo Zero代码迟迟不开源，TF等不及自己推了一个
+
+https://mp.weixin.qq.com/s/Vq-osjgNXJQu5avGkxQdsw
+
+手把手：AlphaGo有啥了不起，我也能教你做一个
+
+https://mp.weixin.qq.com/s/ajajJ9yJZsOy4Vc0ULBxXg
+
+国际象棋版AlphaZero出来了诶，还开源了Keras实现
+
+https://zhuanlan.zhihu.com/p/41814142
+
+从源码解密AlphaGo Zero背后基本原理
+
+https://www.ifanr.com/630602
+
+AlphaGo的棋局，与人工智能有关，与人生无关
+
+https://mp.weixin.qq.com/s/J0w6kzzdKTbsaiZitbQdoA
+
+达观数据：一文详解AlphaGo原理
+
+https://mp.weixin.qq.com/s/BBQ54HHrFiqxXkC-EI6ELw
+
+Science封面：AlphaZero达成终极进化体，史上最强棋类AI降临！
+
+https://mp.weixin.qq.com/s/Pgw_xaCNl_kCPCg8NFzUBQ
+
+人类没法下了！DeepMind贝叶斯优化调参AlphaGo，自弈胜率大涨16.5%
+
+https://mp.weixin.qq.com/s/eE3oL6c5zHmTglHE-dgBvg
+
+详解AlphaGo到AlphaGo Zero！
+
+https://mp.weixin.qq.com/s/aAF0Gr7yEPkHRLASecJipw
+
+百度正用谷歌AlphaGo，解决一个比围棋更难的问题
+
+# AlphaStar
+
+https://mp.weixin.qq.com/s/_Y0bCjTu9UrHfnen15htqQ
+
+AlphaStar称霸星际争霸2！AI史诗级胜利，DeepMind再度碾压人类
+
+https://mp.weixin.qq.com/s/axr5VFbHQmYo0shW9ilBaQ
+
+DeepMind回应一切：AlphaStar两百年相当于人类多长时间？
+
+https://www.zhihu.com/question/310011363
+
+如何评价DeepMind在北京时间19年1月25日2点的《星际争霸 2》项目演示？
+
+https://mp.weixin.qq.com/s/k0l2uoik-Z9aA9zax7AoZg
+
+中科院自动化所深度解析：Deepmind AlphaStar如何战胜人类职业玩家
+
+https://zhuanlan.zhihu.com/p/55781614
+
+AlphaStar背后的机器学习原理
+httphttps://zhuanlan.zhihu.com/p/56043646管饭s://zhuanlan.zhihu.com/p/56043646
+https://zhuanlan.zhihu.com/p/56043646
+
+AlphaStar之IMPALA
+
+https://mp.weixin.qq.com/s/XljE82cJZfFOgf2KrXWSKA
+
+DeepMind首个战胜星际2职业玩家的AI为何无敌？新视角揭秘AI里程碑
+
+https://mp.weixin.qq.com/s/_t2vLFfIG6VYAdWDalpIXQ
+
+说人话教AI打游戏，Facebook开源迷你版星际争霸，成果登上NeurIPS 2019
 
 # DRL参考资源
 
@@ -245,123 +381,3 @@ https://mp.weixin.qq.com/s/rpPN2rgru6krRz2fr1RhsQ
 https://mp.weixin.qq.com/s/AelAD57G4GOh7qm-_rvYsg
 
 伯克利提出DeepMimic：使用强化学习练就18般武艺
-
-https://mp.weixin.qq.com/s/0AM4eASolsPZ7GtPYVBqDQ
-
-伯克利今年大热的DeepMimic开源了~
-
-https://zhuanlan.zhihu.com/p/35567591
-
-强化学习在关系抽取、QA场景的应用
-
-https://mp.weixin.qq.com/s/zWo2iSiJBEBwnFF478xxfQ
-
-DeepMind：探索人类行为中的强化学习机制
-
-https://mp.weixin.qq.com/s/oOslkEklaZSbRb8eDDCRBw
-
-天津大学、东京大学等研究：用深度强化学习检测模型缺陷
-
-https://mp.weixin.qq.com/s/DNT9rMynbN4Th0AVDHeY_w
-
-BAIR提出人机合作新范式：教你如何高效安全地在月球着陆
-
-https://zhuanlan.zhihu.com/p/36375292
-
-最前沿：当我们以为Rainbow就是Atari游戏的巅峰时，Ape-X出来把Rainbow秒成了渣！
-
-https://mp.weixin.qq.com/s/KqLCTSYk1C0wYpJw-hpc1g
-
-论强化学习和概率推断的等价性：一种全新概率模型
-
-https://mp.weixin.qq.com/s/FROyReDu7i5amGv-J4cmtg
-
-“世界模型”实现，一步步让机器掌握赛车和躲避火球的技能
-
-https://mp.weixin.qq.com/s/curzH8WrFyl5WWT4lDfpwQ
-
-Chrome暗藏的恐龙跳一跳，已经被AI轻松掌握了
-
-https://mp.weixin.qq.com/s/1b3_AiFhwXqxb7FozdRYIQ
-
-最in强化学习+NLP技术分享会
-
-https://mp.weixin.qq.com/s/RKQb7-mQ-ELRRq18db02Pg
-
-DeepMind大突破！AI模拟大脑导航功能，学会像动物一样“抄近路”
-
-https://mp.weixin.qq.com/s/qBwszD9rn4gKazXdwqexSQ
-
-MIT提出使用“深度强化学习”帮助智能体在运动中做出“动作决策”
-
-https://mp.weixin.qq.com/s/i-udn1M4kiJpF8U7u5Uepg
-
-专家解读DeepMind最新论文：深度学习模型复现大脑网格细胞
-
-https://mp.weixin.qq.com/s/AS1VFjBFnSk19QJ28tBVWA
-
-NIPS 2017斯坦福赛题大公开：强化学习模拟人类肌肉骨骼模型
-
-https://mp.weixin.qq.com/s/TWjFWe6-dZWDoTi5gN1BxA
-
-深度强化学习在指代消解中的一种尝试
-
-https://mp.weixin.qq.com/s/YnMgJDAh3XhyyNdI8RXmtw
-
-腾讯知文等提出新型生成式摘要模型：结合主题信息和强化训练生成更优摘要
-
-https://mp.weixin.qq.com/s/JbCIBFDRvg5qcpZ11g58dw
-
-DeepMind提出关系性深度强化学习：在星际争霸2任务中获得最优水平
-
-https://mp.weixin.qq.com/s/SpCorsAiTWGYGiohT_gZtg
-
-如何训练智能体Agent玩毁灭战士ViZDoom？
-
-https://mp.weixin.qq.com/s/ewC2_8O29Gg0blxK7mHsYA
-
-比TD、MC、MCTS指数级快，性能超越A3C、DDQN等模型，这篇RL算法论文在Reddit上火了
-
-https://mp.weixin.qq.com/s/Q9QzXo_M3jYKjBWSsLYwgQ
-
-强化学习+树搜索：一种新型程序合成方法
-
-https://mp.weixin.qq.com/s/l46yJdRaftMlwr6odiSiHg
-
-Yoshua Bengio团队基于深度强化学习打造聊天机器人MILABOT
-
-https://mp.weixin.qq.com/s/6_cW22DCzSw3DpUDrLXLcA
-
-OpenAI提出强化学习近端策略优化，可替代策略梯度法
-
-http://mp.weixin.qq.com/s/S4jhpNKYZP5YQWaiiOQGFA
-
-DeepMind：“预测地图”海马体催生强化学习新算法
-
-https://mp.weixin.qq.com/s/KZHidOi5KYgg393R_JspBA
-
-DeepMind都拿不下的游戏，刚刚被OpenAI玩出历史最高分
-
-https://mp.weixin.qq.com/s/VrVdsxn94ux_46mIyS8f0w
-
-谷歌大脑实现更宽广的智能体视野，在Atari2600上可持续超越人类玩家！
-
-https://mp.weixin.qq.com/s/P5EysBHBaR6L3IfeSgo6fw
-
-强化学习20分钟，剑桥博士教汽车学会自动驾驶！
-
-https://mp.weixin.qq.com/s/IYyGgnoXZm6YfamLejqoNQ
-
-深度强化学习试金石：DeepMind和OpenAI攻克蒙特祖玛复仇的真正意义
-
-https://mp.weixin.qq.com/s/w3SsadgKaL8-tlzYLvMm-A
-
-讲真？一天就学会了自动驾驶——强化学习在自动驾驶的应用
-
-https://mp.weixin.qq.com/s/oyxqA_LYtze1f_YDwDZziQ
-
-从零开始自学设计新型药物，UNC提出结构进化强化学习
-
-https://mp.weixin.qq.com/s/qWuoo6cGLWLk4OKlunR-Og
-
-滴滴KDD 2018论文详解：基于强化学习技术的智能派单模型

@@ -169,3 +169,7 @@ https://mp.weixin.qq.com/s/sbRf8cmSwFsfLRHBaZyW2w
 https://mp.weixin.qq.com/s/iUk1M7RNFSzx1YUP6r8TfA
 
 在Keras上实现GAN：构建消除图片模糊的应用
+
+https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247515390&idx=1&sn=8ecc511d4538fd297a2ba98829613c11
+
+图像到图像转换，附7份PPT下载

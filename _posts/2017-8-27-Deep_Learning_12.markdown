@@ -44,6 +44,10 @@ https://zhuanlan.zhihu.com/p/37526892
 
 OpenPose：实时多人2D姿态估计
 
+https://mp.weixin.qq.com/s?__biz=MzIwMTE1NjQxMQ==&mid=2247488741&idx=2&sn=93f05747f3a94a2cbfa2431901d2d97f
+
+OpenPose升级，CMU提出首个单网络全人体姿态估计网络，速度大幅提高
+
 ## DensePose
 
 与OpenPose类似的还有Facebook提出的DensePose。

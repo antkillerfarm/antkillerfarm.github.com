@@ -271,3 +271,11 @@ https://mp.weixin.qq.com/s/QbSPOHvYD9CGnbPmigeYdA
 https://mp.weixin.qq.com/s/McWHS0esRRhIiBlB4CAGXA
 
 柯南变声器的算法原理解析
+
+https://mp.weixin.qq.com/s?__biz=MzIzNjc0MTMwMA==&mid=2247491892&idx=1&sn=d23d0c20e3af340e5a55f19f98636811
+
+2019深度学习语音合成指南
+
+https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652055045&idx=3&sn=5c2a564350bdf5c2acb8679d05cba219
+
+DeepMind推出GAN-TTS：用生成对抗网络实现高保真语音

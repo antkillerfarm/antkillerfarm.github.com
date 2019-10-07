@@ -29,3 +29,7 @@ https://mp.weixin.qq.com/s/1lLrbi_Dtyq4ixMfR4pPnA
 https://blog.csdn.net/iverson_49/article/details/38160081
 
 薄板样条函数(Thin plate splines)的讨论与分析
+
+https://mp.weixin.qq.com/s?__biz=MzI0ODcxODk5OA==&mid=2247508603&idx=2&sn=cfb091884ccc7a0ea03af38b1a629823
+
+巧解图像处理经典难题之图像配准

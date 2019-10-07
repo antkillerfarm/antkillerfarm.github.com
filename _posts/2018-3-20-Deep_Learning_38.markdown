@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十八）——RNN进阶, Multi-agent, 细粒度分类
+title:  深度学习（三十八）——RNN进阶, Multi-agent, 细粒度分类, 显著性检测
 category: DL 
 ---
 
@@ -335,3 +335,37 @@ https://mp.weixin.qq.com/s/5Y4sQlt6DvgkAYtncByjzw
 https://mp.weixin.qq.com/s/232DjhM5sqWqPTv7PCaORA
 
 ElementAI提出超复杂多尺度细粒度图像分类Attention模型
+
+# 显著性检测
+
+https://mp.weixin.qq.com/s/Mi62oqtXUT5If_Dj4KmVYA
+
+计算机视觉如何知道你想看什么？个人显著性检测
+
+https://mp.weixin.qq.com/s/47TcGoasB9E_Et2zwl3OCw
+
+全局对比度的图像显著性检测算法
+
+https://zhuanlan.zhihu.com/p/65307842
+
+快、好、实现简单并且开源的显著性检测方法
+
+https://mp.weixin.qq.com/s/tmp1HXU7cLerLr0DY9NluQ
+
+杂乱环境下的显著性物体： 将显著性物体检测推向新高度
+
+https://mp.weixin.qq.com/s/urgkUcu2ZWQMGPZdArWzYg
+
+PoolNet：基于池化技术的显著性目标检测
+
+https://zhuanlan.zhihu.com/p/71538356
+
+BASNet，一种能关注边缘的显著性检测算法
+
+https://mp.weixin.qq.com/s/ntSH2aS4YHqrLaTAfWFLsQ
+
+可选择性与不变性：关注边界的显著性目标检测
+
+https://mp.weixin.qq.com/s/0T1QhiT_20BrerNcTjKreQ
+
+南开提出边缘引导的显著目标检测算法EGNet，刷新主流数据集所有评价指标

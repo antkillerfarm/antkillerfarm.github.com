@@ -56,6 +56,10 @@ https://mp.weixin.qq.com/s/7L26ghhDqdMU6LRV0iD6vQ
 
 模型量化从1bit到8bit，二值到三值
 
+https://mp.weixin.qq.com/s/D3ZKidCV7OhAeqWqWg521w
+
+如何训练和部署FP16/Int8等低精度机器学习模型?
+
 # 模型压缩与加速
 
 对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。

@@ -318,6 +318,10 @@ https://mp.weixin.qq.com/s/58CRtsV_1q_c25zTJt2qHA
 
 高效多人体姿态检测SPM
 
+https://mp.weixin.qq.com/s?__biz=MzI5MDUyMDIxNA==&mid=2247491133&idx=1&sn=a7c20589aa9750b911cea39309394f82
+
+基于Anchor point的手势及人体3D姿态估计方法A2J
+
 # Capsule
 
 https://github.com/freefuiiismyname/capsule-mrc

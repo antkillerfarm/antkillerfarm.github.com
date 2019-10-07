@@ -288,6 +288,14 @@ https://mp.weixin.qq.com/s/K-ukk-HuztMDCyHWLZaXww
 
 谁是这个世界上最“有名”的科学家？——亚历山大·冯·洪堡（Alexander von Humboldt）
 
+https://mp.weixin.qq.com/s?__biz=MjM5MDE3OTk2Ng==&mid=2657461706&idx=1&sn=589d7a4d65f2e2fdd696100e06b1a257
+
+高考成绩接近满分，却被清华北大拒绝，被称“中国最帅科学家”（中国油田分层开采和化学驱油技术的奠基人——王德民）
+
+https://mp.weixin.qq.com/s/0fdnEWpLvPSbweFh0v4x9A
+
+科学家的浪漫，是用激光画一道彩虹（姜黄素）
+
 ## Bélády's Algorithm
 
 Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。

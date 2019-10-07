@@ -138,6 +138,8 @@ $$L=E[(\color{blue}{r+\gamma \max_{a'}Q(s',a',w)}-Q(s,a,w))^2]$$
 
 DQN虽然是model-free的，但是也有难点，那就是Reward的定义。好在在Atari游戏的例子里，这个问题比较简单，直接采用游戏得分即可。但得分奖励过于肤浅，在动作类游戏中或许没啥问题，但对于《Montezuma's Revenge》这样的解谜游戏，就不太好使了。
 
+此外，Deepmind在Atari游戏中，采用了连续4帧图像作为DQN的输入。这样的行为也被称作状态的表示。状态的表示会严重影响学习的效果，然而目前来说，它还是一门艺术，而非科学。例如，AlphaGo采用了过去八手棋局作为状态的表示。
+
 ## Nature DQN
 
 DQN最早发表于NIPS 2013，该版本的DQN，也被称为NIPS DQN。NIPS DQN除了提出DQN的基本概念之外，还使用了《强化学习（六）》中提到的Experience Replay技术。
@@ -303,9 +305,3 @@ Atari游戏：高维输入，低维离散输出。
 《Continuous Deep Q-Learning with Model-based Acceleration》
 
 对于连续控制，由于我们已经无法选择动作，因此只能设计一种方法，使得我们输入状态，然后能够输出动作，并且保证输出动作对应的Q值是最大值。
-
-这个时候，我们有两种选择：
-
-- 弄两个神经网络，一个是Policy网络，输入状态，输出动作，另一个是Q网络，输入状态，输出Q值。这种做法其实就是Actor-Critic算法。
-
-- 只弄一个神经网络，既能输出动作也能输出Q值。这就是本节所要使用的方法。

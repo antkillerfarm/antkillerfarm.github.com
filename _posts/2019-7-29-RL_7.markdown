@@ -55,7 +55,11 @@ LSE亦可推广到Q函数，即所谓的LS Q-Learning。
 
 $$\pi_\theta(s,a)=P[a | s, \theta]$$
 
-所谓函数化是指，$$\pi$$函数会输出状态s下的各种动作a的概率，显然概率越高的a，就是该策略最倾向的a。而策略函数的参数化就和价值函数的参数化类似了，无非是用较少的参数，来表示巨大的状态空间而已。
+所谓函数化是指，通过一个概率分布函数$$\pi_\theta(s,a)$$，来表示每一步的最优策略，在每一步根据该概率分布进行action采样，获得当前的最佳action取值。显然概率越高的a，就是该策略最倾向的a。
+
+显然。生成action的过程，本质上是一个随机过程；最后学习到的策略，也是一个随机策略(stochastic policy).
+
+而策略函数的参数化就和价值函数的参数化类似了，无非是用较少的参数，来表示巨大的状态空间而已。
 
 基于策略学习的优点：
 
@@ -116,17 +120,13 @@ $$J_{avR}(\theta)=\sum_s d^{\pi_\theta}(s)\sum_a\pi_\theta(s,a)R_{s,a}$$
 1.非gradient算法。
 
 - Hill climbing
-
 - Simplex / amoeba / Nelder Mead
-
 - Genetic algorithms
 
 2.gradient算法。
 
 - Gradient descent
-
 - Conjugate gradient
-
 - Quasi-newton
 
 一般来说，gradient算法的优化效率较高，因此本文只讨论gradient算法。

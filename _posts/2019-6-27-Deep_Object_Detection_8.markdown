@@ -185,3 +185,7 @@ https://mp.weixin.qq.com/s/ouBxEXcY4s894Sec4ifBtQ
 https://mp.weixin.qq.com/s/dFoUO4xArZpmtbKg1Kx6Zg
 
 COCO mAP 53.3！骨干网合成算法CBNet带来目标检测精度新突破
+
+https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247499933&idx=1&sn=b9fe7d6714c44acedd12a60cfe6b1c60
+
+小样本域适应的目标检测

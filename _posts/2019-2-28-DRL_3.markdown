@@ -1,12 +1,18 @@
 ---
 layout: post
-title:  深度强化学习（三）——AlphaGo, AlphaStar
+title:  深度强化学习（三）——DDPG, AlphaGo
 category: RL 
 ---
 
 # DQN进化史
 
 ## NAF（续）
+
+这个时候，我们有两种选择：
+
+- 弄两个神经网络，一个是Policy网络，输入状态，输出动作，另一个是Q网络，输入状态，输出Q值。这种做法其实就是Actor-Critic算法。
+
+- 只弄一个神经网络，既能输出动作也能输出Q值。这就是本节所要使用的方法。
 
 在《强化学习（八）》中，我们已经指出advantage function不改变策略梯度，但能有效约束variance。这里沿用了A函数定义：
 
@@ -46,6 +52,23 @@ $$A(x,\mu | \theta^A)=-\frac{1}{2}(u-\mu(x | \theta^\mu))^T P(x | \theta^P)(u-\m
 
 ## Rainbow
 
+论文：
+
+《Rainbow: Combining Improvements in Deep Reinforcement Learning》
+
+Rainbow算是2017年比较火的一篇DRL方面的论文了。它没有提出新方法，而只是整合了6种DQN算法的变种，达到了SOTA的效果。
+
+这6种DQN算法是：
+
+- DoubleDQN
+- PrioritizedExperienceReplay
+- DuelingNet
+- NoisyNet
+- CategoricalDQN
+- N-stepLearning
+
+参考：
+
 https://mp.weixin.qq.com/s/SZHMyWOXHM8T3zp_aUt-6A
 
 DeepMind提出Rainbow：整合DQN算法中的六种变体
@@ -55,6 +78,28 @@ https://github.com/Curt-Park/rainbow-is-all-you-need
 手把手教你从DQN到Rainbow
 
 # DDPG
+
+论文：
+
+《Continuous control with deep reinforcement learning》
+
+DDPG主要从：**PG->DPG->DDPG**发展而来。
+
+Policy Gradient的概念参见《强化学习（七）》，这里不再赘述。
+
+Deterministic Policy Gradient是Deepmind的D.Silver等在2014年提出的，即确定性的行为策略，每一步的行为通过函数$$\mu$$直接获得确定的值：
+
+$$a_{t} = \mu(s_{t} | \theta^{\mu})$$
+
+为何需要确定性的策略？简单来说，PG方法有以下缺陷：
+
+- 即使通过PG学习得到了随机策略之后，在每一步行为时，我们还需要对得到的最优策略概率分布进行采样，才能获得action的具体值；而action通常是高维的向量，比如25维、50维，在高维的action空间的频繁采样，无疑是很耗费计算能力的；
+
+- 在PG的学习过程中，每一步计算policy gradient都需要在整个action space进行积分：
+
+$$\triangledown_{\theta} =  \int_{\mathcal{S}} \int_{A} \rho(s) \pi_{\theta}(a|s)Q^{\pi} (s,a)\mathrm{d}a \mathrm{d}s$$
+
+参考：
 
 https://mp.weixin.qq.com/s/dgLJrn3omUKMqmqTIEcoyg
 
@@ -87,6 +132,14 @@ https://blog.csdn.net/gsww404/article/details/80403150
 https://blog.csdn.net/qq_39388410/article/details/88828548
 
 强化学习（DDPG，AC3，DPPO）
+
+https://blog.csdn.net/qq_30615903/article/details/80776715
+
+DDPG(Deep Deterministic Policy Gradient)算法详解
+
+https://blog.csdn.net/kenneth_yu/article/details/78478356
+
+DDPG原理和算法
 
 # reward modeling
 
@@ -219,137 +272,3 @@ https://mp.weixin.qq.com/s/DC9QqHdWT0xFnowEBuJDbw
 https://mp.weixin.qq.com/s/uZtaxRwROCqYmL2k6Muxaw
 
 从阿尔法狗元(AlphaGo Zero)的诞生看终极算法的可能性
-
-https://mp.weixin.qq.com/s/i5OmLu8aNbypiTUmP4teeQ
-
-刘遥行：深入浅出看懂AlphaGo Zero
-
-https://mp.weixin.qq.com/s/aBrwbB_DOGTen-6XL7LGFQ
-
-邓侃：白话蒙特卡洛树搜索和ResNet
-
-https://mp.weixin.qq.com/s/nbTkr0PImlXUSYl91HD91Q
-
-AlphaGo背后的力量：蒙特卡洛树搜索入门指南
-
-https://mp.weixin.qq.com/s/-tH7DQo1cK9gA0bcpBJSDA
-
-AlphaGo Zero：笔记与伪代码
-
-https://mp.weixin.qq.com/s/CJuVoOf7idUChFIn7dH0Lg
-
-围棋中的数学原理
-
-https://mp.weixin.qq.com/s/d46qNFaftt4wxpV4sZnG-w
-
-一张图看懂AlphaGo Zero
-
-https://zhuanlan.zhihu.com/p/31749249
-
-比AlphaGo Zero更强的AlphaZero问世，8小时解决一切棋类！
-
-https://mp.weixin.qq.com/s/L7bZMkqyncwEt6D5tK1OdQ
-
-AlphaZero炼成最强通用棋类AI，DeepMind强化学习算法8小时完爆人类棋类游戏
-
-https://mp.weixin.qq.com/s/tFdnxqV5a5xZrFtB6E0AiQ
-
-新AlphaZero出世称霸棋界，8小时搞定一切棋类！自对弈通用强化学习无师自通！
-
-https://mp.weixin.qq.com/s/qYWsFBKNCKCGUmizX_1sVg
-
-AlphaGo 教学工具终于上线了！
-
-https://mp.weixin.qq.com/s/JxbIeDk8_wnYu_ewUHp29g
-
-深度学习与围棋实战书籍《Deep Learning and the Game of Go》
-
-https://mp.weixin.qq.com/s/gsRnbknytz2FY2dWgdWEYg
-
-精通国际象棋的AI研究员：AlphaZero真的是一次突破吗？
-
-https://mp.weixin.qq.com/s/Przl4ivbNuOFmz4pcYTrpQ
-
-浅述：从Minimax到AlphaZero，完全信息博弈之路（1）
-
-https://zhuanlan.zhihu.com/p/32089487
-
-AlphaZero实战：从零学下五子棋
-
-http://mp.weixin.qq.com/s/72riTTC3w0q9oF5H-51kXA
-
-手把手教你搭建AlphaZero（使用Python和Keras）
-
-https://mp.weixin.qq.com/s/Qw2tT7H1PwDvPgOYy8YUsQ
-
-AlphaGo Zero代码迟迟不开源，TF等不及自己推了一个
-
-https://mp.weixin.qq.com/s/Vq-osjgNXJQu5avGkxQdsw
-
-手把手：AlphaGo有啥了不起，我也能教你做一个
-
-https://mp.weixin.qq.com/s/ajajJ9yJZsOy4Vc0ULBxXg
-
-国际象棋版AlphaZero出来了诶，还开源了Keras实现
-
-https://zhuanlan.zhihu.com/p/41814142
-
-从源码解密AlphaGo Zero背后基本原理
-
-https://www.ifanr.com/630602
-
-AlphaGo的棋局，与人工智能有关，与人生无关
-
-https://mp.weixin.qq.com/s/J0w6kzzdKTbsaiZitbQdoA
-
-达观数据：一文详解AlphaGo原理
-
-https://mp.weixin.qq.com/s/BBQ54HHrFiqxXkC-EI6ELw
-
-Science封面：AlphaZero达成终极进化体，史上最强棋类AI降临！
-
-https://mp.weixin.qq.com/s/Pgw_xaCNl_kCPCg8NFzUBQ
-
-人类没法下了！DeepMind贝叶斯优化调参AlphaGo，自弈胜率大涨16.5%
-
-https://mp.weixin.qq.com/s/eE3oL6c5zHmTglHE-dgBvg
-
-详解AlphaGo到AlphaGo Zero！
-
-https://mp.weixin.qq.com/s/aAF0Gr7yEPkHRLASecJipw
-
-百度正用谷歌AlphaGo，解决一个比围棋更难的问题
-
-# AlphaStar
-
-https://mp.weixin.qq.com/s/_Y0bCjTu9UrHfnen15htqQ
-
-AlphaStar称霸星际争霸2！AI史诗级胜利，DeepMind再度碾压人类
-
-https://mp.weixin.qq.com/s/axr5VFbHQmYo0shW9ilBaQ
-
-DeepMind回应一切：AlphaStar两百年相当于人类多长时间？
-
-https://www.zhihu.com/question/310011363
-
-如何评价DeepMind在北京时间19年1月25日2点的《星际争霸 2》项目演示？
-
-https://mp.weixin.qq.com/s/k0l2uoik-Z9aA9zax7AoZg
-
-中科院自动化所深度解析：Deepmind AlphaStar如何战胜人类职业玩家
-
-https://zhuanlan.zhihu.com/p/55781614
-
-AlphaStar背后的机器学习原理
-httphttps://zhuanlan.zhihu.com/p/56043646管饭s://zhuanlan.zhihu.com/p/56043646
-https://zhuanlan.zhihu.com/p/56043646
-
-AlphaStar之IMPALA
-
-https://mp.weixin.qq.com/s/XljE82cJZfFOgf2KrXWSKA
-
-DeepMind首个战胜星际2职业玩家的AI为何无敌？新视角揭秘AI里程碑
-
-https://mp.weixin.qq.com/s/_t2vLFfIG6VYAdWDalpIXQ
-
-说人话教AI打游戏，Facebook开源迷你版星际争霸，成果登上NeurIPS 2019

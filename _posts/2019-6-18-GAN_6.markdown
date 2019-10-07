@@ -301,3 +301,11 @@ https://mp.weixin.qq.com/s/PXu2peQY14syMzSFQ7xvwg
 https://mp.weixin.qq.com/s/U1_2-j_3lDQ1Lyee0F_YTQ
 
 美人秀色空绝世，我用PS-GAN试伊妆
+
+https://mp.weixin.qq.com/s?__biz=MzIzNjc0MTMwMA==&mid=2247491852&idx=1&sn=57280692ce527c7968dacb31ff8a52b6
+
+基于GAN的个性化搜索：PSGAN
+
+https://mp.weixin.qq.com/s?__biz=MzA4MDExMDEyMw==&mid=2247487111&idx=1&sn=e0d4e343704d61086aa702fc58e38af6
+
+深度学习中最常见GAN模型应用与解读

@@ -249,3 +249,11 @@ DLM：微信大规模分布式n-gram语言模型系统
 https://mp.weixin.qq.com/s/s7sHzzLANOp8-1LxgXQskA
 
 谷歌开发者大会上，蚂蚁金服开源ElasticDL分布式深度学习系统
+
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771181&idx=1&sn=30b2a5abc7261b4f2ea122e8e96fdabf
+
+世界第一超算跑深度学习模型，2.76万块V100 GPU将分布式训练扩展到极致
+
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771231&idx=2&sn=6907d6d7a98eab353a076ed48352aadc
+
+15分钟完成Kinetics视频识别训练，除了超级计算机你还需要TSM

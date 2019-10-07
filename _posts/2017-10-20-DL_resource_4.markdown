@@ -313,3 +313,7 @@ https://mp.weixin.qq.com/s/vCIpaFUTYggzN9YWs14atw
 https://mp.weixin.qq.com/s/Wd4n5WnbPBW8CCDWwNGCAA
 
 西北工业大学发布最新遥感图像目标检测综述论文和Benchmark，带你全面了解遥感图像检测方法
+
+https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652055088&idx=1&sn=ee79493940fbc35b62875ce32ad474e7
+
+LSTM之父的深度学习“奇迹之年”
