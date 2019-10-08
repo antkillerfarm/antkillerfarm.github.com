@@ -105,6 +105,10 @@ https://mp.weixin.qq.com/s/nW6ZmEiio3VgX_LEktkxUA
 
 视频目标检测：Flow-based
 
+https://mp.weixin.qq.com/s?__biz=MzA4MDExMDEyMw==&mid=2247487121&idx=1&sn=c9ac1802ff79eb3ed86041dfe8781558
+
+OpenCV4中DIS光流算法与应用
+
 # Particle filter
 
 
