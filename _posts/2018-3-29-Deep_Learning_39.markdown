@@ -314,6 +314,10 @@ https://mp.weixin.qq.com/s?__biz=MzI0ODcxODk5OA==&mid=2247508659&idx=1&sn=77bd5d
 
 快手王华彦：端上视觉技术的极致效率及其短视频应用实践
 
+https://mp.weixin.qq.com/s/JahD1ON5ym0_ldc7MiJz7A
+
+让视频里的你完全消失，Adobe最新SOTA模型实现无痕修图，无需先验知识
+
 # 多模态学习
 
 https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw

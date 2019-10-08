@@ -1,0 +1,31 @@
+---
+layout: post
+title:  深度强化学习（六）——DRL参考资源（3）
+category: RL 
+---
+
+# DRL参考资源
+
+https://mp.weixin.qq.com/s/AI3i3ZLZ-fynavbeNAMKgA
+
+强化学习应用介绍，41页报告带你快速了解RL的最新应用价值
+
+https://mp.weixin.qq.com/s/Dq4HsRg05bVMjvrsrxfOOQ
+
+从这篇YouTube论文，剖析强化学习在工业级场景推荐系统中的应用
+
+https://mp.weixin.qq.com/s/cyaQt-SO7sgG49kuUyPJbQ
+
+旷视开源的深度强化学习绘画智能体论文解读
+
+https://mp.weixin.qq.com/s/amXiNKJPEkAnu2m5NAERVw
+
+Top-K Oﬀ-Policy Correction
+
+https://mp.weixin.qq.com/s/kNtzy9-6GbsRhlL-mxksew
+
+基于强化学习的人机对话
+
+https://mp.weixin.qq.com/s?__biz=MzU1NTMyOTI4Mw==&mid=2247494226&idx=1&sn=a96ea0ad8961ec3698301cf0c4514843
+
+以YouTube论文学习如何在推荐场景应用强化学习

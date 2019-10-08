@@ -224,7 +224,7 @@ https://mp.weixin.qq.com/s/Lp2pq95woQ5-E3RemdRnyw
 
 动态层归一化（Dynamic Layer Normalization）
 
-https://mp.weixin.qq.com/s/Cbjcks3jyEeIIZNzjG1YgA
+https://zhuanlan.zhihu.com/p/43200897
 
 深度学习中的Normalization模型
 

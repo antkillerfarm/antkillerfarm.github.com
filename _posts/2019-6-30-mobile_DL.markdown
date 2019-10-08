@@ -234,6 +234,8 @@ https://github.com/sourabhv/FlapPyBird
 
 - 为了快速收敛，忽略其他无关要素，例如把背景换成纯黑色、不显示得分等。图片的处理过程中，采用了二值化的方法，将彩色图片转换为黑白图片，以便于后面的机器学习。
 
+- REPLAY_MEMORY是一个实用的DQN技巧，但在教程中往往被忽略。它可用来消除训练数据间的相关性。
+
 - 作者创建两个Q网络，以及交换权值的代码，非常优雅。（copyTargetQNetworkOperation）
 
 实战效果：

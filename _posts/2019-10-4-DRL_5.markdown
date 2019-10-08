@@ -6,6 +6,42 @@ category: RL
 
 # DRL参考资源
 
+https://mp.weixin.qq.com/s/1zJyw67B6DqsHEJ3avbsfQ
+
+DeepMind推出分布式深度强化学习架构IMPALA，让一个Agent学会多种技能
+
+https://mp.weixin.qq.com/s/xJ_g3BvbM-WaIyLthHdhEw
+
+DeepMind发布通用强化学习新范式，自主机器人可学会任何任务
+
+https://mp.weixin.qq.com/s/To3pnx1hVq_4p7UnQVMw9A
+
+斯坦福大学&DeepMind联合提出机器人控制新方法，RL+IL端到端地学习视觉运动策略
+
+https://mp.weixin.qq.com/s/U0K79ELLj4wsOR4sd5G4Vw
+
+Vicarious详解新型图式网络：赋予强化学习泛化能力
+
+https://mp.weixin.qq.com/s/R308ohdMU8b7Ap4CLofvDg
+
+OpenAI开源算法ACKTR与A2C：把可扩展的自然梯度应用到强化学习
+
+https://mp.weixin.qq.com/s/C8hsGkHGtoaS9Vzm6Ub4tw
+
+Berkeley提出“随机搜索”训练线性策略，提高RL的性能
+
+https://mp.weixin.qq.com/s/vYDb1rTdPxO1sIS38VX5xA
+
+DeepMind的AI学会了画画，利用强化学习完全不需人教：SPIRAL
+
+https://mp.weixin.qq.com/s/rpPN2rgru6krRz2fr1RhsQ
+
+模拟世界的模型：谷歌大脑与Jürgen Schmidhuber提出“人工智能梦境”
+
+https://mp.weixin.qq.com/s/AelAD57G4GOh7qm-_rvYsg
+
+伯克利提出DeepMimic：使用强化学习练就18般武艺
+
 https://mp.weixin.qq.com/s/0AM4eASolsPZ7GtPYVBqDQ
 
 伯克利今年大热的DeepMimic开源了~
@@ -317,27 +353,3 @@ https://mp.weixin.qq.com/s/nHBczPlffhZrJy4G4oJ1Ag
 https://mp.weixin.qq.com/s/0dUlVC9I8qmv3f2BB0IFew
 
 强化学习介绍及自动驾驶汽车应用
-
-https://mp.weixin.qq.com/s/AI3i3ZLZ-fynavbeNAMKgA
-
-强化学习应用介绍，41页报告带你快速了解RL的最新应用价值
-
-https://mp.weixin.qq.com/s/Dq4HsRg05bVMjvrsrxfOOQ
-
-从这篇YouTube论文，剖析强化学习在工业级场景推荐系统中的应用
-
-https://mp.weixin.qq.com/s/cyaQt-SO7sgG49kuUyPJbQ
-
-旷视开源的深度强化学习绘画智能体论文解读
-
-https://mp.weixin.qq.com/s/amXiNKJPEkAnu2m5NAERVw
-
-Top-K Oﬀ-Policy Correction
-
-https://mp.weixin.qq.com/s/kNtzy9-6GbsRhlL-mxksew
-
-基于强化学习的人机对话
-
-https://mp.weixin.qq.com/s?__biz=MzU1NTMyOTI4Mw==&mid=2247494226&idx=1&sn=a96ea0ad8961ec3698301cf0c4514843
-
-以YouTube论文学习如何在推荐场景应用强化学习

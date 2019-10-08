@@ -166,6 +166,10 @@ https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247515402&idx=2&sn=726b41
 
 基于门控图网络实现图到序列学习
 
+https://mp.weixin.qq.com/s/aIU8mP5nlnqR4Qt-4RfMgQ
+
+孙付伟：Graph Embedding在知乎的应用实践
+
 # 自动求导
 
 DL发展到现在，其基本运算单元早就不止CNN、RNN之类的简单模块了。针对新运算层出不穷的现状，各大DL框架基本都实现了自动求导的功能。

@@ -68,6 +68,10 @@ http://blog.csdn.net/abcjennifer/article/details/7748833
 
 压缩感知进阶——有关稀疏矩阵
 
+https://zhuanlan.zhihu.com/p/85558304
+
+深度学习压缩感知（DCS）历史最全资源汇总分享
+
 # 图论
 
 https://mp.weixin.qq.com/s/zOdy-1vCJD_dPFSoe0ELFA

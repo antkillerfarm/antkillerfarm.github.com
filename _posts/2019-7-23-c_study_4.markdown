@@ -114,6 +114,22 @@ https://www.cnblogs.com/WuErPIng/archive/2005/04/21/142308.html
 
 浅尝boost之format
 
+## Boost.Parameter
+
+该库可以支持命名参数，然而实现太复杂。期待新标准直接支持。
+
+## Boost.MPL
+
+元编程（Metaprogramming）是指某类计算机程序的编写，这类计算机程序编写或者操纵其他程序（或者自身）作为它们的数据，或者在运行时完成部分本应在编译时完成的工作。很多情况下与手工编写全部代码相比工作效率更高。编写元程序的语言称之为元语言，被操作的语言称之为目标语言。一门语言同时也是自身的元语言的能力称之为反射。
+
+MPL可以看成是STL的编译期版本，或者说元编程版本。它同样也提供了各种容器，只不过容纳的对象不是数据，而是类型。
+
+参考：
+
+www.cppblog.com/jack-wang/archive/2010/10/04/128589.html
+
+模板元编程---用MPL解决实际问题
+
 # C#
 
 ## XmlReader
@@ -190,8 +206,8 @@ https://www.cnblogs.com/shanyou/p/4295163.html
 
 https://www.cnblogs.com/wer-ltm/p/8776846.html#!comments
 
-.NET:持续进化的统一开发平台
+.NET：持续进化的统一开发平台
 
 https://mp.weixin.qq.com/s/j5PFEkWd49SNKVdlWoqHiw
 
-.NET Core 很酷，你不得不知！
+.NET Core很酷，你不得不知！

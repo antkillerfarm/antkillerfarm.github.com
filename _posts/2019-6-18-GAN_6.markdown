@@ -309,3 +309,7 @@ https://mp.weixin.qq.com/s?__biz=MzIzNjc0MTMwMA==&mid=2247491852&idx=1&sn=572806
 https://mp.weixin.qq.com/s?__biz=MzA4MDExMDEyMw==&mid=2247487111&idx=1&sn=e0d4e343704d61086aa702fc58e38af6
 
 深度学习中最常见GAN模型应用与解读
+
+https://mp.weixin.qq.com/s/XUm7BRi2fXxw4Str8QBnPQ
+
+今日头条最新论文，首次改进DQN网络解决推荐中的在线广告投放问题

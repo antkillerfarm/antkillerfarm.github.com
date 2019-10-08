@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度强化学习（三）——DDPG, AlphaGo
+title:  深度强化学习（三）——A2C & A3C, DDPG, AlphaGo
 category: RL 
 ---
 
@@ -77,6 +77,68 @@ https://github.com/Curt-Park/rainbow-is-all-you-need
 
 手把手教你从DQN到Rainbow
 
+# A2C & A3C
+
+Actor-Critic一般简称AC算法。针对它的一般用法参见《强化学习（八）》。
+
+AC算法也可用于DRL领域，具体的做法和DQN类似：
+
+- 一个Actor网络，用来近似V值。
+
+- 一个Critic网络，用来近似Q值。
+
+这里有个小技巧：
+
+Actor网络和Critic网络可以共享网络参数，两者仅最后几层使用不同结构和参数。（参见下图A3C的图）
+
+针对AC的改进，衍生出了A2C和A3C。
+
+Advantage Actor-Critic（A2C）：advantage function + AC
+
+Asynchronous Advantage Actor-Critic（A3C）：Async + A2C
+
+advantage function的含义参见《强化学习（八）》，这里谈谈A3C。
+
+论文：
+
+《Asynchronous Methods for Deep Reinforcement Learning》
+
+![](/images/img3/A3C.jpg)
+
+
+
+A3C的原始论文运行在CPU上，这里还有一个GPU版本：
+
+《GA3C: Reinforcement Learning through Asynchronous Advantage Actor-Critic on a GPU》
+
+代码：
+
+https://github.com/NVlabs/GA3C
+
+![](/images/img3/GA3C.png)
+
+参考：
+
+https://zhuanlan.zhihu.com/p/51645768
+
+强化学习AC、A2C、A3C算法原理与实现！
+
+https://mp.weixin.qq.com/s/c4xoy4CJ_hsVdmGe1n3rTQ
+
+A3C——一种异步强化学习方法
+
+https://mp.weixin.qq.com/s/5kI72vg4JNAZWD93EYAUWA
+
+直观的强化学习算法(A2C)
+
+https://blog.csdn.net/u013236946/article/details/73195035
+
+A3C
+
+https://zhuanlan.zhihu.com/p/70360272
+
+最前沿：深度解读Soft Actor-Critic算法
+
 # DDPG
 
 论文：
@@ -87,11 +149,15 @@ DDPG主要从：**PG->DPG->DDPG**发展而来。
 
 Policy Gradient的概念参见《强化学习（七）》，这里不再赘述。
 
+## DPG
+
 Deterministic Policy Gradient是Deepmind的D.Silver等在2014年提出的，即确定性的行为策略，每一步的行为通过函数$$\mu$$直接获得确定的值：
 
 $$a_{t} = \mu(s_{t} | \theta^{\mu})$$
 
-为何需要确定性的策略？简单来说，PG方法有以下缺陷：
+换句话说就是：**PG的action是采样出来的，而DPG是算出来的。**
+
+为何需要确定性的策略？简单来说，PG方法有以下缺点：
 
 - 即使通过PG学习得到了随机策略之后，在每一步行为时，我们还需要对得到的最优策略概率分布进行采样，才能获得action的具体值；而action通常是高维的向量，比如25维、50维，在高维的action空间的频繁采样，无疑是很耗费计算能力的；
 
@@ -99,7 +165,17 @@ $$a_{t} = \mu(s_{t} | \theta^{\mu})$$
 
 $$\triangledown_{\theta} =  \int_{\mathcal{S}} \int_{A} \rho(s) \pi_{\theta}(a|s)Q^{\pi} (s,a)\mathrm{d}a \mathrm{d}s$$
 
-参考：
+这个积分我们一般通过Monte Carlo 采样来进行估算，需要在高维的action空间进行采样，耗费计算能力。
+
+- 如果采取简单的Greedy策略，即每一步求解$$\arg\max_a Q(s,a)$$也不可行，因为在连续的、高维度的action空间，如果每一步都求全局最优解，太耗费计算性能。
+
+当然，反过来说，DPG也有一个缺点：无法探索环境。因此，在DPG的实际使用中，我们要采用其他策略来弥补这个缺点。
+
+## DDPG
+
+Deepmind在2016年提出了DDPG。从通俗角度看：**DDPG=DPG+A2C+DQN**。
+
+## 参考
 
 https://mp.weixin.qq.com/s/dgLJrn3omUKMqmqTIEcoyg
 
@@ -230,45 +306,3 @@ https://github.com/Tencent/PhoenixGo
 https://mp.weixin.qq.com/s/tJDmxsuS1QigYS75ZIdzRA
 
 微信团队开源围棋AI技术PhoenixGo，复现AlphaGo Zero论文
-
-## 参考
-
-https://mp.weixin.qq.com/s/Sfv-jzQAkN0PsZOGZUQhkQ
-
-AlphaGo Zero横空出世，DeepMind Nature论文解密不使用人类知识掌握围棋
-
-https://mp.weixin.qq.com/s/oAxouYX7-wDC5okbu--Wuw
-
-Nature重磅：人工智能从0到1, 无师自通完爆阿法狗100-0
-
-https://zhuanlan.zhihu.com/p/30262872
-
-关于AlphaGo Zero
-
-https://zhuanlan.zhihu.com/p/30263585
-
-DeepMind新一代围棋程序AlphaGo Zero再次登上Nature
-
-https://www.zhihu.com/question/66861459
-
-如何评价DeepMind发表在Nature上的AlphaGo Zero？
-
-http://www.alphago-games.com/
-
-AlphaGo的棋谱
-
-https://deepmind.com/blog/alphago-zero-learning-scratch/
-
-AlphaGo Zero官方声明
-
-https://zhuanlan.zhihu.com/mathNote
-
-某牛的专栏，主要讲自制AlphaGo
-
-https://mp.weixin.qq.com/s/DC9QqHdWT0xFnowEBuJDbw
-
-自动化所解读“深度强化学习”：从AlphaGo到AlphaGoZero
-
-https://mp.weixin.qq.com/s/uZtaxRwROCqYmL2k6Muxaw
-
-从阿尔法狗元(AlphaGo Zero)的诞生看终极算法的可能性

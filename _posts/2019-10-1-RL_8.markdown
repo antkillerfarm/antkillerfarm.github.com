@@ -100,7 +100,9 @@ $$A^{\pi_\theta}(s,a)=Q^{\pi_\theta}(s,a)-V^{\pi_\theta}(s)$$
 
 $$\nabla_\theta J(\theta)= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a)A^{\pi_\theta}(s,a)]$$
 
-advantage function可以明显减少状态价值的variance，因此，现在Critic的任务就改为估计advantage function。
+advantage function可以明显减少状态价值的variance。（通俗的说法就是A的值有正有负，不像Q和V都是正值。）
+
+因此，现在Critic的任务就改为估计advantage function。
 
 在这种情况下，我们需要两个近似函数也就是两套参数，一套用来近似状态价值函数，一套用来近似行为价值函数。即：
 
@@ -152,21 +154,9 @@ https://zhuanlan.zhihu.com/p/51652845
 
 强化学习这都学不会的话，咳咳，你过来下！
 
-https://zhuanlan.zhihu.com/p/70360272
-
-最前沿：深度解读Soft Actor-Critic算法
-
 https://mp.weixin.qq.com/s/ce9W3FbLdsqAEyvw6px_RA
 
 Actor Critic——一个融合基于策略梯度和基于值优点的强化学习算法
-
-https://mp.weixin.qq.com/s/c4xoy4CJ_hsVdmGe1n3rTQ
-
-A3C——一种异步强化学习方法
-
-https://mp.weixin.qq.com/s/5kI72vg4JNAZWD93EYAUWA
-
-直观的强化学习算法(A2C)
 
 # Integrating Learning and Planning
 

@@ -30,6 +30,10 @@ https://mp.weixin.qq.com/s/rgUTcuH2mfIFBDoOfd26Cw
 
 NASNet：神经架构搜索网络在图像分类中的表现
 
+https://mp.weixin.qq.com/s/VdjHp5Tb1fSyV3CQblPQmw
+
+利用NAS寻找最佳GAN：AutoGAN架构搜索方案专为GAN打造
+
 # OCR
 
 ## 概述

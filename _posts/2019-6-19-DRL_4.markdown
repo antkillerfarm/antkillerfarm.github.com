@@ -6,6 +6,48 @@ category: RL
 
 # AlphaGo（续）
 
+## 参考
+
+https://mp.weixin.qq.com/s/Sfv-jzQAkN0PsZOGZUQhkQ
+
+AlphaGo Zero横空出世，DeepMind Nature论文解密不使用人类知识掌握围棋
+
+https://mp.weixin.qq.com/s/oAxouYX7-wDC5okbu--Wuw
+
+Nature重磅：人工智能从0到1, 无师自通完爆阿法狗100-0
+
+https://zhuanlan.zhihu.com/p/30262872
+
+关于AlphaGo Zero
+
+https://zhuanlan.zhihu.com/p/30263585
+
+DeepMind新一代围棋程序AlphaGo Zero再次登上Nature
+
+https://www.zhihu.com/question/66861459
+
+如何评价DeepMind发表在Nature上的AlphaGo Zero？
+
+http://www.alphago-games.com/
+
+AlphaGo的棋谱
+
+https://deepmind.com/blog/alphago-zero-learning-scratch/
+
+AlphaGo Zero官方声明
+
+https://zhuanlan.zhihu.com/mathNote
+
+某牛的专栏，主要讲自制AlphaGo
+
+https://mp.weixin.qq.com/s/DC9QqHdWT0xFnowEBuJDbw
+
+自动化所解读“深度强化学习”：从AlphaGo到AlphaGoZero
+
+https://mp.weixin.qq.com/s/uZtaxRwROCqYmL2k6Muxaw
+
+从阿尔法狗元(AlphaGo Zero)的诞生看终极算法的可能性
+
 https://mp.weixin.qq.com/s/i5OmLu8aNbypiTUmP4teeQ
 
 刘遥行：深入浅出看懂AlphaGo Zero
@@ -345,39 +387,3 @@ DeepMind开源Psychlab平台——搭建AI和认知心理学的桥梁
 https://mp.weixin.qq.com/s/4qeHfU9GS4aDWOHsu4Dw2g
 
 记忆增强蒙特卡洛树搜索细节解读
-
-https://mp.weixin.qq.com/s/1zJyw67B6DqsHEJ3avbsfQ
-
-DeepMind推出分布式深度强化学习架构IMPALA，让一个Agent学会多种技能
-
-https://mp.weixin.qq.com/s/xJ_g3BvbM-WaIyLthHdhEw
-
-DeepMind发布通用强化学习新范式，自主机器人可学会任何任务
-
-https://mp.weixin.qq.com/s/To3pnx1hVq_4p7UnQVMw9A
-
-斯坦福大学&DeepMind联合提出机器人控制新方法，RL+IL端到端地学习视觉运动策略
-
-https://mp.weixin.qq.com/s/U0K79ELLj4wsOR4sd5G4Vw
-
-Vicarious详解新型图式网络：赋予强化学习泛化能力
-
-https://mp.weixin.qq.com/s/R308ohdMU8b7Ap4CLofvDg
-
-OpenAI开源算法ACKTR与A2C：把可扩展的自然梯度应用到强化学习
-
-https://mp.weixin.qq.com/s/C8hsGkHGtoaS9Vzm6Ub4tw
-
-Berkeley提出“随机搜索”训练线性策略，提高RL的性能
-
-https://mp.weixin.qq.com/s/vYDb1rTdPxO1sIS38VX5xA
-
-DeepMind的AI学会了画画，利用强化学习完全不需人教：SPIRAL
-
-https://mp.weixin.qq.com/s/rpPN2rgru6krRz2fr1RhsQ
-
-模拟世界的模型：谷歌大脑与Jürgen Schmidhuber提出“人工智能梦境”
-
-https://mp.weixin.qq.com/s/AelAD57G4GOh7qm-_rvYsg
-
-伯克利提出DeepMimic：使用强化学习练就18般武艺
