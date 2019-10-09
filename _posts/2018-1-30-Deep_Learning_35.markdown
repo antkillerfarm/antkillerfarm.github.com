@@ -22,6 +22,10 @@ https://mp.weixin.qq.com/s/VjCB_CCENVye9SvDYOmsaA
 
 深度学习人体姿态估计算法综述
 
+https://mp.weixin.qq.com/s/Oln0s6pOvCWn9sAu-XjGaw
+
+人体姿态估计的过去，现在，未来
+
 https://mp.weixin.qq.com/s/6pNZ8Crs4Lel2C0TlFAc4Q
 
 真能“穿墙识人”，MIT人体姿态估计系统创历史最高精度！

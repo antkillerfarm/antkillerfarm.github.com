@@ -449,23 +449,3 @@ https://mp.weixin.qq.com/s/M-J_WaV6AstRwZISPYQ-NA
 https://mp.weixin.qq.com/s/i793SOBdI4GyrfG_5kb3lg
 
 鲁汶大学提出可端到端学习的车道线检测算法
-
-https://zhuanlan.zhihu.com/p/58980251
-
-基于摄像头的车道线检测方法一览
-
-https://mp.weixin.qq.com/s/SlQy59AHyh1BEzDpKOu5GA
-
-初识图像之初级车道线检测
-
-https://mp.weixin.qq.com/s/ANKdDuCxMZAWHEfQbN54MA
-
-再识图像之高级车道线检测
-
-https://mp.weixin.qq.com/s/K5MJTYmuJ4Vv0sKT-VpDvg
-
-一种基于ACP理论的平行车道线检测方法，能有效解决目前车道线检测的困境
-
-https://mp.weixin.qq.com/s/heh6B71IQ5NjmaTo6BaXdA
-
-无人驾驶图像识别-车道线检测

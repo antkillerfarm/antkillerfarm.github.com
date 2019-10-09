@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Git, ZeroMQ, WebKit
+title:  Git, ZeroMQ, WebKit, 分布式ID生成器
 category: technology 
 ---
 
@@ -348,7 +348,7 @@ http://trac.webkit.org/wiki/BuildingGtk
 
 4)libgail-dev
 
-# 电子科技史
+# 电子科技史+
 
 https://mp.weixin.qq.com/s?__biz=MzAxOTIxNTg0Mg==&mid=2651001664&idx=1&sn=d7fe10c74feb5eb84c45a0381372c1d3
 
@@ -357,3 +357,21 @@ https://mp.weixin.qq.com/s?__biz=MzAxOTIxNTg0Mg==&mid=2651001664&idx=1&sn=d7fe10
 https://mp.weixin.qq.com/s?__biz=MzA4MDExMDEyMw==&mid=2247487079&idx=1&sn=9d29f53cd518b4dcb8ab8c27159dee41
 
 互联网大佬学历背景大调查，不要再相信“学习无用论”
+
+# 分布式ID生成器
+
+http://mp.weixin.qq.com/s/Bk5k6vRG4Rq4iCtmtYDEGQ
+
+Leaf——美团点评分布式ID生成系统
+
+https://mp.weixin.qq.com/s/6J7n3udEyQvUHRHwvALNYw
+
+Leaf：美团分布式ID生成服务开源
+
+https://mp.weixin.qq.com/s/_z0-90xbsCd4Pdi6UlEvnA
+
+分布式ID生成器
+
+https://mp.weixin.qq.com/s/Yk2ZlGCEINGrsTfHI6zpsw
+
+分布式id生成器

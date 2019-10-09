@@ -50,6 +50,8 @@ CS 294: Deep Reinforcement Learning
 
 >以上1本书+4个课程，基本就是目前RL领域的黄金搭档了。Stanford的课程内容比较新，但是很浅。UCB的课程通常都是给入门以后的人准备的，无论DL还是RL，都是这样。Sutton和Silver的课程内容比较老，但是很有深度。和CV领域只需要学习DL，而不需要学习传统方法不同，按照Sutton的说法，基本算法原理远比神经网络更重要。
 
+此外，还是老惯例，推荐一下李宏毅DL课程中的DRL部分。
+
 https://inst.eecs.berkeley.edu/~cs188/fa18/index.html
 
 CS 188: Introduction to Artificial Intelligence。这个课程偏重RL和机器人，有贝叶斯网络的内容，但没有DL的内容。
@@ -304,15 +306,4 @@ OpenAI背后的派别是Berkeley帮，主要工作是围绕Pieter Abbeel以及�
 
 >现在的研究发现policy gradient的方法效果比Q-learning这种单纯基于value的方法好，所以选择policy gradient，事实上是把两者结合起来的actor-critic效果最好！只是说actor-critic的关键在于policy gradient。   
 >然后呢，说说目前DeepMind和OpenAI的研究情况，DeepMind在Q-Learning上造诣太深，OpenAI的Pieter Abbeel派很难从中弄成什么新的东西，因此从改进policy gradient的方法入手，得到TRPO+GAE等方法。（然后DeepMind基本不鸟，论文根本不比较他们的方法，而OpenAI这边到现在也不敢和A3C比较，估计必败）   
->现在OpenAI又因为有一些Deep Generative Model的大神，又把这方面也结合进来了。OpenAI这边的优势在于机器人控制上之前做的多，把传统控制和深度学习结合的方法也能搞出一些东西比如GPS，其他的团队比如Satinder Singh, Honglak Lee那就更只能从边边上去做了，比如做了Atari视频预测，给网络加上memory network。   
->最后还是从方法上说一下，Policy Gradient显然比基于Value的方法更直接，输入感知，输出控制。按道理来说是更符合人类行为的方法。特别在控制上。但是在一些离散的决策上，人类也是评估各方好坏value来做选择的，所以这一块Q-Learning应该会做的更好。事实上，DeepMind也将DQN的Gorila分布式系统用在了Google的推荐系统上。还有，就是接下来机器人控制将会是深度学习要占领的一块地盘，在连续控制上，基于value的方法本身就不好做，连续DQN比如那个NAF方法使用了很多小技巧。而基于Policy的方法则很直接。
-
-参考：
-
-https://www.zhihu.com/question/316626294
-
-请问DeepMind和OpenAI身后的两大RL流派有什么具体的区别？
-
-https://www.zhihu.com/question/49787932
-
-RL两大类算法的本质区别？（Policy Gradient和Q-Learning)
+>现在OpenAI又因为有一些Deep Generative Model的大神，又把这方面也结合进来了。OpenAI这边的优势在于机器人控制上之前做的多，把传统控制和深度学习结合的方法也能搞出一些东西比如GPS，其他的团队比如Satinder Singh, Honglak Lee那就更只能从边边上去做了，比如做了Atari视频预测，给网络加上memory network。

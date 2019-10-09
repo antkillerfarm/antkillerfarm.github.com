@@ -1,12 +1,44 @@
 ---
 layout: post
-title:  深度强化学习（三）——A2C & A3C, DDPG, AlphaGo
+title:  深度强化学习（三）——A2C & A3C, DDPG
 category: RL 
 ---
 
-# DQN进化史
+# DQN进化史（续）
 
-## NAF（续）
+## Prioritised replay
+
+采样优先级采用目标Q值与当前Q值的差值来表示：
+
+$$| \color{blue}{r+\gamma \max_{a'}Q(s',a',w^-)}-Q(s,a,w) |$$
+
+优先级越高，那么采样的概率就越高。
+
+## Dueling Network
+
+Dueling Network将Q网络分成了两个通道：
+
+- Action无关的值函数：$$V(s,v)$$
+
+- Action相关的值函数：$$A(s,a,w)$$
+
+$$Q(s,a)=V(s,v)+A(s,a,w)$$
+
+![](/images/img3/DuelDQN.png)
+
+## NAF
+
+传统RL任务：低维输入，低维离散输出。
+
+Atari游戏：高维输入，低维离散输出。
+
+通常的控制系统，除了离散控制之外，还有连续控制，然而DQN并不能直接用于连续域：因为它根本就没办法穷举每一个动作，也就无法计算最大的Q值对应的动作。
+
+论文：
+
+《Continuous Deep Q-Learning with Model-based Acceleration》
+
+对于连续控制，由于我们已经无法选择动作，因此只能设计一种方法，使得我们输入状态，然后能够输出动作，并且保证输出动作对应的Q值是最大值。
 
 这个时候，我们有两种选择：
 
@@ -50,6 +82,14 @@ $$A(x,\mu | \theta^A)=-\frac{1}{2}(u-\mu(x | \theta^\mu))^T P(x | \theta^P)(u-\m
 
 >这里的构造逻辑和VAE很相似，都是假定构造方法成立，然后再用神经网络拟合构造所需的各要素，最后通过训练以达成构造的效果。
 
+## Distributional DQN
+
+参考：
+
+https://zhang-yi-chi.github.io/2018/09/19/DistributionalRL/
+
+Distributional Reinforcement Learning
+
 ## Rainbow
 
 论文：
@@ -60,12 +100,12 @@ Rainbow算是2017年比较火的一篇DRL方面的论文了。它没有提出新
 
 这6种DQN算法是：
 
-- DoubleDQN
-- PrioritizedExperienceReplay
+- Double DQN
+- Prioritized Experience Replay
 - DuelingNet
 - NoisyNet
-- CategoricalDQN
-- N-stepLearning
+- Distributional DQN(Categorical DQN)
+- N-step Learning
 
 参考：
 
@@ -99,13 +139,19 @@ Asynchronous Advantage Actor-Critic（A3C）：Async + A2C
 
 advantage function的含义参见《强化学习（八）》，这里谈谈A3C。
 
+## A3C
+
 论文：
 
 《Asynchronous Methods for Deep Reinforcement Learning》
 
+在《强化学习（七）》的Experience Replay一节，我们指出训练数据间的相关性会影响算法收敛到最优解。
+
+除了Experience Replay之外，异步更新也是一种有效的消除训练数据间相关性的方法。
+
 ![](/images/img3/A3C.jpg)
 
-
+上图是A3C的网络结构图。它实际上就是将A2C放在了多个线程中进行同步训练。可以想象成几个人同时在玩一样的游戏，而他们玩游戏的经验都会同步上传到一个中央大脑。然后他们又从中央大脑中获取最新的玩游戏方法。
 
 A3C的原始论文运行在CPU上，这里还有一个GPU版本：
 
@@ -117,7 +163,31 @@ https://github.com/NVlabs/GA3C
 
 ![](/images/img3/GA3C.png)
 
-参考：
+这是GA3C的网络结构图。
+
+## AC vs. GAN
+
+论文：
+
+《Connecting Generative Adversarial Networks and Actor-Critic Methods》
+
+| ![](/images/img3/AC_vs_GAN.png) | ![](/images/img3/AC_vs_GAN_2.png) |
+
+左图是GAN，右图是AC。
+
+| Method | GANs | AC |
+|:--:|:--:|:--:|
+| Freezing learning | yes | yes |
+| Label smoothing | yes | no |
+| Historical averaging | yes | no |
+| Minibatch discrimination | yes | no |
+| Batch normalization | yes | yes |
+| Target networks | n/a | yes |
+| Replay buffers | no | yes |
+| Entropy regularization | no | yes |
+| Compatibility | no | yes |
+
+## 参考
 
 https://zhuanlan.zhihu.com/p/51645768
 
@@ -171,9 +241,33 @@ $$\triangledown_{\theta} =  \int_{\mathcal{S}} \int_{A} \rho(s) \pi_{\theta}(a|s
 
 当然，反过来说，DPG也有一个缺点：无法探索环境。因此，在DPG的实际使用中，我们要采用其他策略来弥补这个缺点。
 
+## Noisy
+
+在介绍Rainbow的时候，我们提到了NoisyNet，但没有展开，这里可以说说Noisy在DRL中的作用。
+
+Noisy在DRL中的用法主要有：
+
+- Noise on Action。就是随机乱选。
+
+- Noise on Parameters。这种方法由于网络结构不变，参数也不是全换，因此相当于是有约束的随机选择，或者说是有系统的尝试。
+
+在DPG中，一般采用第二种方法。
+
+需要注意的是，参数的改变意味着策略的改变，因此，Noise在episode中需要保持不变，这样才能检测随机策略的真正效果。否则就是无目的的乱抖了。（类似帕金森症）
+
+产生噪声的方法有：
+
+- Independent Gaussian noise。
+
+- Factorised Gaussian noise。
+
 ## DDPG
 
 Deepmind在2016年提出了DDPG。从通俗角度看：**DDPG=DPG+A2C+DQN**。
+
+![](/images/img3/DDPG.png)
+
+上图是DDPG的网络结构图。
 
 ## 参考
 
@@ -216,93 +310,3 @@ DDPG(Deep Deterministic Policy Gradient)算法详解
 https://blog.csdn.net/kenneth_yu/article/details/78478356
 
 DDPG原理和算法
-
-# reward modeling
-
-![](/images/img2/reward_modeling.jpg)
-
-训练一个奖励模型，其中包含来自用户的反馈，从而捕捉他们的意图。与此同时，我们通过强化学习训练一个策略，使奖励模型的奖励最大化。换句话说，我们把学习做什么(奖励模型)和学习怎么做(策略)区分开来。
-
-参考：
-
-https://mp.weixin.qq.com/s/4yGQtHtMqWlaB7MAsr8T_g
-
-DeepMind重磅论文：通过奖励模型，让AI按照人类意图行事
-
-https://mp.weixin.qq.com/s/TIWnnCmVZnFQNH9Fig5aTw
-
-DeepMind发布新奖励机制：让智能体不再“碰瓷”
-
-# AlphaGo
-
-樊麾讲解AlphaGo与李世石的五番棋：
-
-https://deepmind.com/research/alphago/alphago-games-simplified-chinese/
-
-论文：
-
-《Mastering the game of Go with deep neural networks and tree search》
-
-2017.1
-
-岁首，业界最重要的事情莫过于AlphaGo以Master之名再度出山，60场快棋未遇敌手。牛逼！
-
-http://goeye-app.com/resources.html#cn
-
-精选在线棋谱资源
-
-## DarkForest
-
-DarkForest是田渊栋2015年11月的作品，虽然棋力和稍后的AlphaGo相去甚远，但毕竟也算是用到了RL和DNN了。
-
-代码：
-
-https://github.com/facebookresearch/darkforestGo
-
-## Leela Zero
-
-Leela Zero是比利时人Gian-Carlo Pascutto开源的围棋AI。它的算法与AlphaGo Zero相同。而训练采用GTP协议，集合全球算力，进行分布式训练。
-
-官网：
-
-http://zero.sjeng.org/
-
-代码：
-
-https://github.com/gcp/leela-zero
-
->十多年前，当我还是一个中二青年的时候，就幻想有朝一日能够拿围棋世界冠军。当然，就算再中二，我自己也明白靠实力那是不可能的，当时做梦的法宝是制造一个AI，然后碾压一下所谓的国手。   
->按照当时(2000年前后)人们的预计，这个AI在2030年之前，都不可能造出来，然而，最终的结果实际上只花了一半左右的时间。   
->再之后，随着AI围棋的平民化，我的中二梦终于也有人将之付诸实现了：   
->https://mp.weixin.qq.com/s/npt2zZrKwPnNdY-hsa2RjQ   
->AI再乱围棋圈：“食言之战”柯洁落败；首例素人作弊引风波
-
-这次作弊风波所使用的AI就是Leela Zero，可见目前（2018.5）它的棋力已经超过了顶尖棋手。
-
-## ELF OpenGo
-
-ELF OpenGo是Facebook开源的围棋AI，它是FB的AI游戏框架ELF的一部分。
-
-官网：
-
-https://github.com/pytorch/ELF
-
-参考：
-
-https://mp.weixin.qq.com/s/lOAx3suLIS-pEWyi8xZl6Q
-
-“全民体验”AlphaZero：FAIR田渊栋首次开源超级围棋AI
-
-## PhoenixGo
-
-PhoenixGo是腾讯微信团队的AlphaGo Zero复刻版。
-
-官网：
-
-https://github.com/Tencent/PhoenixGo
-
-参考：
-
-https://mp.weixin.qq.com/s/tJDmxsuS1QigYS75ZIdzRA
-
-微信团队开源围棋AI技术PhoenixGo，复现AlphaGo Zero论文

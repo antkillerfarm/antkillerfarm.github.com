@@ -6,6 +6,28 @@ category: resource
 
 # 机器人/无人驾驶参考资源
 
+## 车道线检测（续）
+
+https://zhuanlan.zhihu.com/p/58980251
+
+基于摄像头的车道线检测方法一览
+
+https://mp.weixin.qq.com/s/SlQy59AHyh1BEzDpKOu5GA
+
+初识图像之初级车道线检测
+
+https://mp.weixin.qq.com/s/ANKdDuCxMZAWHEfQbN54MA
+
+再识图像之高级车道线检测
+
+https://mp.weixin.qq.com/s/K5MJTYmuJ4Vv0sKT-VpDvg
+
+一种基于ACP理论的平行车道线检测方法，能有效解决目前车道线检测的困境
+
+https://mp.weixin.qq.com/s/heh6B71IQ5NjmaTo6BaXdA
+
+无人驾驶图像识别-车道线检测
+
 ## 参考
 
 https://rsu.data61.csiro.au/people/jalvarez/research_bbdd.php
@@ -373,23 +395,3 @@ https://mp.weixin.qq.com/s/enUyu6nJI5olRUQehmu6UA
 https://zhuanlan.zhihu.com/p/61153328
 
 自动驾驶系统中的交通信号检测和识别
-
-https://mp.weixin.qq.com/s/uy16CGG01o3BfYB7Qtvzcg
-
-详细解读斯坦福大学最新成果——自动驾驶的神经网络模型
-
-https://mp.weixin.qq.com/s/NH09Pvh8vKtOGrS6Lwq3Tw
-
-自动驾驶中行为预测的一些根本问题和最新方法
-
-https://mp.weixin.qq.com/s/UAPbNq_KNWCFd7p8U8HnYQ
-
-模型预测控制（MPC)
-
-https://mp.weixin.qq.com/s/0EsgWDCFGbjLv8Rn_OBG1g
-
-路径的速度解耦规划需要几步？2个“规划”带你了解轨迹生成
-
-https://mp.weixin.qq.com/s/dQd-2gGyLQURfK4SO9kjPA
-
-智能体张量融合，一种保持空间结构信息的轨迹预测方法

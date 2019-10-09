@@ -189,3 +189,7 @@ https://mp.weixin.qq.com/s/tIJ4Uv27rZSW7IT9R4kuPw
 https://mp.weixin.qq.com/s/KgUi4n-JwYNW4uFvVlROAw
 
 华为AdvHat: 一文弄懂对抗攻击里的技术细节
+
+https://mp.weixin.qq.com/s/ok-LfkYZwXrM3LrK_oV6Pw
+
+图像分类中的对抗攻击是怎么回事？

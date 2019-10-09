@@ -202,6 +202,10 @@ https://mp.weixin.qq.com/s/FFxWlWx-Cri1Qevd-X43kg
 
 几个人像分割数据集简介和下载
 
+https://mp.weixin.qq.com/s/XsRIuxpqK2UlgLhM7Vxg6g
+
+动作识别数据集简介
+
 ## 推荐系统
 
 http://www.zanmel.com/2015/12/14/10-great-datasets-on-movies/

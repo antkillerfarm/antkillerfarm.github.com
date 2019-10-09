@@ -1,10 +1,98 @@
 ---
 layout: post
-title:  深度强化学习（四）——AlphaStar, DRL参考资源（1）
+title:  深度强化学习（四）——AlphaGo, Multi-agent, AlphaStar
 category: RL 
 ---
 
-# AlphaGo（续）
+# reward modeling
+
+![](/images/img2/reward_modeling.jpg)
+
+训练一个奖励模型，其中包含来自用户的反馈，从而捕捉他们的意图。与此同时，我们通过强化学习训练一个策略，使奖励模型的奖励最大化。换句话说，我们把学习做什么(奖励模型)和学习怎么做(策略)区分开来。
+
+参考：
+
+https://mp.weixin.qq.com/s/4yGQtHtMqWlaB7MAsr8T_g
+
+DeepMind重磅论文：通过奖励模型，让AI按照人类意图行事
+
+https://mp.weixin.qq.com/s/TIWnnCmVZnFQNH9Fig5aTw
+
+DeepMind发布新奖励机制：让智能体不再“碰瓷”
+
+# AlphaGo
+
+樊麾讲解AlphaGo与李世石的五番棋：
+
+https://deepmind.com/research/alphago/alphago-games-simplified-chinese/
+
+论文：
+
+《Mastering the game of Go with deep neural networks and tree search》
+
+2017.1
+
+岁首，业界最重要的事情莫过于AlphaGo以Master之名再度出山，60场快棋未遇敌手。牛逼！
+
+http://goeye-app.com/resources.html#cn
+
+精选在线棋谱资源
+
+## DarkForest
+
+DarkForest是田渊栋2015年11月的作品，虽然棋力和稍后的AlphaGo相去甚远，但毕竟也算是用到了RL和DNN了。
+
+代码：
+
+https://github.com/facebookresearch/darkforestGo
+
+## Leela Zero
+
+Leela Zero是比利时人Gian-Carlo Pascutto开源的围棋AI。它的算法与AlphaGo Zero相同。而训练采用GTP协议，集合全球算力，进行分布式训练。
+
+官网：
+
+http://zero.sjeng.org/
+
+代码：
+
+https://github.com/gcp/leela-zero
+
+>十多年前，当我还是一个中二青年的时候，就幻想有朝一日能够拿围棋世界冠军。当然，就算再中二，我自己也明白靠实力那是不可能的，当时做梦的法宝是制造一个AI，然后碾压一下所谓的国手。   
+>按照当时(2000年前后)人们的预计，这个AI在2030年之前，都不可能造出来，然而，最终的结果实际上只花了一半左右的时间。   
+>再之后，随着AI围棋的平民化，我的中二梦终于也有人将之付诸实现了：   
+>https://mp.weixin.qq.com/s/npt2zZrKwPnNdY-hsa2RjQ   
+>AI再乱围棋圈：“食言之战”柯洁落败；首例素人作弊引风波
+
+这次作弊风波所使用的AI就是Leela Zero，可见目前（2018.5）它的棋力已经超过了顶尖棋手。
+
+## ELF OpenGo
+
+ELF OpenGo是Facebook开源的围棋AI，它是FB的AI游戏框架ELF的一部分。
+
+官网：
+
+https://github.com/pytorch/ELF
+
+参考：
+
+https://mp.weixin.qq.com/s/lOAx3suLIS-pEWyi8xZl6Q
+
+“全民体验”AlphaZero：FAIR田渊栋首次开源超级围棋AI
+
+## PhoenixGo
+
+PhoenixGo是腾讯微信团队的AlphaGo Zero复刻版。
+
+官网：
+
+https://github.com/Tencent/PhoenixGo
+
+参考：
+
+https://mp.weixin.qq.com/s/tJDmxsuS1QigYS75ZIdzRA
+
+微信团队开源围棋AI技术PhoenixGo，复现AlphaGo Zero论文
 
 ## 参考
 
@@ -148,6 +236,80 @@ https://mp.weixin.qq.com/s/aAF0Gr7yEPkHRLASecJipw
 
 百度正用谷歌AlphaGo，解决一个比围棋更难的问题
 
+# Multi-agent
+
+https://zhuanlan.zhihu.com/p/39037444
+
+多智能体强化学习笔记
+
+https://mp.weixin.qq.com/s/bQx-ydEAfijgK1Ii5ilPFQ
+
+UCL汪军团队新方法提高群体智能，解决大规模AI合作竞争
+
+https://mp.weixin.qq.com/s/4lj_G2z0Lbfk5mOgvxLC6w
+
+对抗式协作：一个框架解决多个无监督学习视觉问题
+
+https://mp.weixin.qq.com/s/0v57oHMEDcJuUivs8D5pnQ
+
+善于单挑却难以协作，构建多智能体AI系统为何如此之难？
+
+https://mp.weixin.qq.com/s/tME5GsKEXveVcgWb-Zbx_A
+
+乔明达ICML 2018论文提出协作学习的鲁棒性方法
+
+https://mp.weixin.qq.com/s/0Xuxr7CXqsxrssW2I6NCBQ
+
+通用智能化：BAIR简述人类-机器人协作新技术
+
+https://mp.weixin.qq.com/s/GNbCu1lbOmwJDCU3vgMbtQ
+
+OpenAI发布多智能体深度强化学习新算法LOLA
+
+https://mp.weixin.qq.com/s/5Go20MyBxdVI1r5SkwA6lw
+
+面向星际争霸：DeepMind提出多智能体强化学习新方法
+
+https://mp.weixin.qq.com/s/TlcVxjhHXXGSpIvptC4H8g
+
+使用Gym和CNN构建多智能体自动驾驶马里奥赛车
+
+https://mp.weixin.qq.com/s/zRcq1LMtK72Cl4T3877tgQ
+
+牛津教授吐槽DeepMind心智神经网络，还推荐了这些多智能体学习论文
+
+https://mp.weixin.qq.com/s/qU6XD45RGeMI-T7GI0dg2Q
+
+OpenAI竞争性自我对抗训练：简单环境下获得复杂的智能体
+
+https://mp.weixin.qq.com/s/rPsxvzOLuoo_IRtgH94Ecw
+
+OpenAI自学习多智能体5v5团队战击败人类玩家
+
+https://mp.weixin.qq.com/s/VPVzXzBYD_nYO1SjTMNGVA
+
+Dota2团战AI击败人类最全解析：能团又能gank，AI一日人间180年
+
+https://mp.weixin.qq.com/s/cUFSaHWGKhyZhEvRdX09hw
+
+谷歌大脑QT-Opt算法，机器人探囊取物成功率96%
+
+https://mp.weixin.qq.com/s/xxB1lsiQxSfaHPKwZUI9bw
+
+拔掉机器人的一条腿，它还能学走路？——三次元里优化的DRL策略
+
+https://mp.weixin.qq.com/s/e4hriDvTRLkg-mIifVWayw
+
+如何解决深度学习中的多体问题
+
+https://zhuanlan.zhihu.com/p/61060358
+
+Paper survey: Multi-Agent Reinforcement Learning
+
+https://zhang-yi-chi.github.io/2019/08/15/cooperative-multi-agent-rl/
+
+Cooperative Multi-Agent Reinforcement Learning
+
 # AlphaStar
 
 https://mp.weixin.qq.com/s/_Y0bCjTu9UrHfnen15htqQ
@@ -181,209 +343,3 @@ DeepMind首个战胜星际2职业玩家的AI为何无敌？新视角揭秘AI里�
 https://mp.weixin.qq.com/s/_t2vLFfIG6VYAdWDalpIXQ
 
 说人话教AI打游戏，Facebook开源迷你版星际争霸，成果登上NeurIPS 2019
-
-# DRL参考资源
-
-https://mp.weixin.qq.com/s/ruAAQEjPIDPWPiuPepKU6Q
-
-Deep Reinforcement Learning: An Overview
-
-https://mp.weixin.qq.com/s/FjmlXqlpaRVLdAbjqspOJA
-
-这是一份你必须学习的强化学习算法清单
-
-https://mp.weixin.qq.com/s/lfXQqllfFPtuNIrQZiD-NQ
-
-深度强化学习十大原则
-
-https://mp.weixin.qq.com/s/I8IwPCY6-zocJKFXMr6rUg
-
-深度强化学习的18个关键问题
-
-https://mp.weixin.qq.com/s/_lmz0l1vP_CQ6p6DdFnHWA
-
-谷歌大脑工程师的深度强化学习劝退文
-
-https://zhuanlan.zhihu.com/p/39999667
-
-强化学习路在何方？
-
-https://mp.weixin.qq.com/s/oA98YyLqn1B22QZ5b_iDVA
-
-IJCAI 2018：聚焦强化学习的学习效率
-
-https://mp.weixin.qq.com/s/FtHJCXniVne2TGKfgCeS9w
-
-Pieter Abbeel：深度强化学习加速方法
-
-https://mp.weixin.qq.com/s/xlnwB9e1ks-4M4djnyIAyQ
-
-解读72篇DeepMind深度强化学习论文
-
-https://mp.weixin.qq.com/s/VYIyWRykREjOyLu4YDhLeA
-
-61篇NIPS2019深度强化学习论文及部分解读
-
-https://mp.weixin.qq.com/s/sHP03DAeZvdBxwVPuSNRPg
-
-如何丝滑地入门神经网络？写个AI赛车游戏，只训练4代就能安全驾驶
-
-https://mp.weixin.qq.com/s/1SZKhG1ZbD1pl-3YQD_umg
-
-6行代码搞定基本的RL算法，速度围观Reddit高赞帖
-
-https://mp.weixin.qq.com/s/7BsXPQ8wC6_fHulU63ZQiQ
-
-当强化学习遇见泛函分析
-
-https://mp.weixin.qq.com/s/6n5HawyR4AgH8Dq0gJMw2g
-
-强化学习的基本概念与代码实现
-
-https://zhuanlan.zhihu.com/p/27699682
-
-荐译一篇通俗易懂的策略梯度（Policy Gradient）方法讲解
-
-https://mp.weixin.qq.com/s/RLEuaiRdq6AbTSUcYQ5O3A
-
-深度强化学习在NLP怎么用？看清华黄民烈老师这一份120页《自然语言处理和搜索中的深度强化学习应用》讲义
-
-https://zhuanlan.zhihu.com/p/29019246
-
-基于策略的增强学习
-
-https://mp.weixin.qq.com/s/OY56lJ_NFf5vVAgKfKyx2A
-
-利用强化学习自动搜索最优化方法
-
-https://mp.weixin.qq.com/s/uDFsWebfLmka-zZX3Y_8kg
-
-深度强化学习在面向任务的对话管理中的应用
-
-https://mp.weixin.qq.com/s/nYOOwVoijl1p4V0A7yaI3w
-
-机遇与挑战：用强化学习自动搜索优化算法
-
-http://mp.weixin.qq.com/s/TBVVdX3erOpXNjXmhLmxOw
-
-学“深度强化学习”，看懂DeepMind这篇文章就够了!
-
-https://mp.weixin.qq.com/s/_Di73PkEWJV1-OLLHfz7yQ
-
-组合在线学习：实时反馈玩转组合优化
-
-https://mp.weixin.qq.com/s/lR6BSa_pJzcinkSaSWsM2A
-
-伯克利提出强化学习新方法，可让智能体同时学习多个解决方案
-
-https://mp.weixin.qq.com/s/P-iSI80IVmb5s-Q15Re2HQ
-
-All In!我学会了用强化学习打德州扑克
-
-https://zhuanlan.zhihu.com/p/36322095
-
-最前沿：从虚拟到现实，DRL让小狗机器人跑起来了！
-
-https://mp.weixin.qq.com/s/xr-2cNoSYpCftLI3dV6zEw
-
-如何使用深度强化学习帮助自动驾驶汽车通过交叉路口？
-
-https://mp.weixin.qq.com/s/R_pfTXDMaLHmiCaSV2t_YA
-
-英特尔Nervana发布强化学习库Coach：支持多种价值与策略优化算法
-
-https://mp.weixin.qq.com/s/AyW7oOC7yxVtmswaMT1DGQ
-
-腾讯AI Lab获得计算机视觉权威赛事MSCOCO Captions冠军
-
-https://mp.weixin.qq.com/s/4aENmxUMEEPVPnexLKrg7Q
-
-新型强化学习算法ACKTR
-
-https://mp.weixin.qq.com/s/5PzTiPoXPC1gH3xszzT2dQ
-
-邓力等人提出BBQ网络：将深度强化学习用于对话系统
-
-https://mp.weixin.qq.com/s/pM8oykHmtu5O5jYJBZjO_w
-
-伯克利研究人员使用内在激励，教AI学会好奇
-
-https://mp.weixin.qq.com/s/3WI3QgfHXcrCPbvmHWOEkg
-
-强化学习在生成对抗网络文本生成中的作用
-
-https://mp.weixin.qq.com/s/IvR0O6dpz2GJCG7UQb5kUQ
-
-清华大学冯珺：基于强化学习的关系抽取和文本分类
-
-https://zhuanlan.zhihu.com/p/31579144
-
-让我们从零开始做一个机械手臂(强化学习)
-
-https://mp.weixin.qq.com/s/FiR_GRYqJYpJRO-2p44-Cg
-
-伯克利强化学习新研究：机器人只用几分钟随机数据就能学会轨迹跟踪
-
-https://mp.weixin.qq.com/s/_dHjZQ_7_7H34PHhV_lC3w
-
-全新强化学习算法详解，看贝叶斯神经网络如何进行策略搜索
-
-https://mp.weixin.qq.com/s/YCPXkFzYdC1gMfnprZsVXg
-
-如何让机器人多技能？通过最大熵强化学习
-
-https://mp.weixin.qq.com/s/dbtdNsT3nvLt4UKsrNsn_Q
-
-量化深度强化学习算法的泛化能力
-
-https://mp.weixin.qq.com/s/K-z_dX2-NepkEHbr45QlvQ
-
-微软研究院开源项目TextWorld：可用于强化学习训练的文本游戏
-
-https://mp.weixin.qq.com/s/K2DW_ntSWrlySpxgorF9dA
-
-Python强化学习实战，Anaconda公司的高级数据科学家讲解
-
-https://zhuanlan.zhihu.com/p/32089849
-
-概要：NIPS 2017 Deep Learning for Robotics Keynote
-
-https://mp.weixin.qq.com/s/CCQOHRCAolsorm8FEPdjoQ
-
-什么时候强化学习未必好用？
-
-https://mp.weixin.qq.com/s/aVWHlwOmNIqOlu3025_RXQ
-
-DeepMind提出多任务强化学习新方法Distral
-
-https://mp.weixin.qq.com/s/gFHbLF-q91sddMAX1CRbEQ
-
-俞扬：“审时度势”的高效强化学习
-
-https://mp.weixin.qq.com/s/lstCIiNs_qA6k7GCYUBv2w
-
-阿尔伯塔大学提出新型多步强化学习方法，结合已有TD算法实现更好性能
-
-https://mp.weixin.qq.com/s/ybyZpaHr-JJg7CCdXGOl5A
-
-Seq2seq强化学习实战
-
-https://mp.weixin.qq.com/s/TUk1PWT9CfPGEW77UKxpjw
-
-三招武林绝学带你玩转“强化学习”
-
-https://mp.weixin.qq.com/s/W9yhj7_frLYWJocoBR1TMQ
-
-避免AI错把黑人识别为大猩猩：伯克利大学提出协同反向强化学习
-
-https://mp.weixin.qq.com/s/p2hlc2PsLgrvxOF8wBZANg
-
-李飞飞高徒范麟熙解析强化学习在游戏和现实中的应用
-
-http://mp.weixin.qq.com/s/EPbKE-TAnAPugJDhXHEyNA
-
-DeepMind开源Psychlab平台——搭建AI和认知心理学的桥梁
-
-https://mp.weixin.qq.com/s/4qeHfU9GS4aDWOHsu4Dw2g
-
-记忆增强蒙特卡洛树搜索细节解读

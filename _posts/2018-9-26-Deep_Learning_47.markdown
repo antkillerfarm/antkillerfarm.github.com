@@ -303,3 +303,7 @@ Facebook开源3D目标检测框架VoteNet，曾刷新两大数据集最高精度
 https://mp.weixin.qq.com/s/SBWGvu84oPKZkY5d8gz-oQ
 
 3D实例分割
+
+https://zhuanlan.zhihu.com/p/85686290
+
+MLOD：基于鲁棒特征融合方法的多视点三维目标检测

@@ -6,6 +6,26 @@ category: resource
 
 # 机器人/无人驾驶参考资源
 
+https://mp.weixin.qq.com/s/uy16CGG01o3BfYB7Qtvzcg
+
+详细解读斯坦福大学最新成果——自动驾驶的神经网络模型
+
+https://mp.weixin.qq.com/s/NH09Pvh8vKtOGrS6Lwq3Tw
+
+自动驾驶中行为预测的一些根本问题和最新方法
+
+https://mp.weixin.qq.com/s/UAPbNq_KNWCFd7p8U8HnYQ
+
+模型预测控制（MPC)
+
+https://mp.weixin.qq.com/s/0EsgWDCFGbjLv8Rn_OBG1g
+
+路径的速度解耦规划需要几步？2个“规划”带你了解轨迹生成
+
+https://mp.weixin.qq.com/s/dQd-2gGyLQURfK4SO9kjPA
+
+智能体张量融合，一种保持空间结构信息的轨迹预测方法
+
 https://mp.weixin.qq.com/s/BNanIQKY9SSNpms0qSTOBA
 
 硬核干货！揭秘波士顿动力背后的专利技术

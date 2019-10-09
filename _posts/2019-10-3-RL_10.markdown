@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  强化学习（十）——Exploration & Exploitation
+title:  强化学习（十）——Exploration & Exploitation, 模仿学习, Inverse Reinforcement Learning
 category: RL 
 ---
 
@@ -101,6 +101,48 @@ ICML2018 模仿学习教程
 https://mp.weixin.qq.com/s/f9vSgH1HQwGXBDb0UGHQyQ
 
 深度学习进阶之无人车行为克隆
+
+# Inverse Reinforcement Learning
+
+逆强化学习问题定义：
+
+- 已知：
+
+智能体在变化的环境中的行为
+
+（optional）智能体传感器的数据
+
+（optional）环境的模型
+
+- 求：
+
+最优化的Reward function
+
+逆强化学习研究意义：
+
+- 对动物人类行为用强化学习建模（生物学、计量经济学...）模仿学习。
+
+- reward function在强化学习里面非常非常重要，是对行为的抽象精简的描述，因此IRL (Inverse Reinforcement Learning)可能是一种很高效的模仿学习范式。
+
+通俗的说法就是：**我们用优化控制或强化学习得到的策略能用来解释人类的行为吗？**
+
+比如让一个人去拿桌子上的一个橘子，那手的轨迹一定不是一条从起点到目标的直线，而是有一些弯曲的轨迹，也就是带有偏差的较优行为，但是这种偏差其实并不重要，只要最后拿到橘子就行了，也就是说：
+
+1.有过程中一些偏差是不重要的，但另一些偏差就比较重要了（如最后没拿到）。
+
+2.每次拿橘子的动作也是不一样的，因此人的动作带有一定的随机性。
+
+3.我们可以认为人类行为轨迹分布是以最优策略为峰的随机分布。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/61674994
+
+Algorithms for Inverse Reinforcement Learning
+
+https://zhuanlan.zhihu.com/p/32502503
+
+CS 294：IRL
 
 # RL与神经科学
 
