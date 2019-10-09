@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  深度强化学习（二）——Deep Q-learning Network, DQN进化史
-category: RL 
+category: DRL 
 ---
 
 # 概述

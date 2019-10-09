@@ -193,3 +193,7 @@ https://mp.weixin.qq.com/s/KgUi4n-JwYNW4uFvVlROAw
 https://mp.weixin.qq.com/s/ok-LfkYZwXrM3LrK_oV6Pw
 
 图像分类中的对抗攻击是怎么回事？
+
+https://zhuanlan.zhihu.com/p/77788568
+
+对抗攻击基础知识

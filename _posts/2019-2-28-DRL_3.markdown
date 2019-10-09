@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  深度强化学习（三）——A2C & A3C, DDPG
-category: RL 
+category: DRL 
 ---
 
 # DQN进化史（续）

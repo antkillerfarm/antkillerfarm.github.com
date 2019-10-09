@@ -6,6 +6,8 @@ category: essay
 
 # Blog维护日志
 
+2019.10.9 将RL分类拆分为RL和DRL两类。
+
 2019.7 添加Attention、DL acceleration分类。
 
 2019.6.19 文章数达到300篇。可命名为v4.5。
@@ -75,4 +77,3 @@ category: essay
 2015.1.7 blog搬家基本完成。
 
 2014.12.23 围观大徐的blog有感，特在github上安家落户，废弃了原来的搜狐blog。
-

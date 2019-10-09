@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  深度强化学习（四）——AlphaGo, Multi-agent, AlphaStar
-category: RL 
+category: DRL 
 ---
 
 # reward modeling
@@ -33,10 +33,6 @@ https://deepmind.com/research/alphago/alphago-games-simplified-chinese/
 2017.1
 
 岁首，业界最重要的事情莫过于AlphaGo以Master之名再度出山，60场快棋未遇敌手。牛逼！
-
-http://goeye-app.com/resources.html#cn
-
-精选在线棋谱资源
 
 ## DarkForest
 
@@ -331,7 +327,7 @@ https://mp.weixin.qq.com/s/k0l2uoik-Z9aA9zax7AoZg
 https://zhuanlan.zhihu.com/p/55781614
 
 AlphaStar背后的机器学习原理
-httphttps://zhuanlan.zhihu.com/p/56043646管饭s://zhuanlan.zhihu.com/p/56043646
+
 https://zhuanlan.zhihu.com/p/56043646
 
 AlphaStar之IMPALA

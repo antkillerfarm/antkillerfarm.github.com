@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  深度强化学习（五）——DRL参考资源（1）
-category: RL 
+category: DRL 
 ---
 
 # DRL参考资源

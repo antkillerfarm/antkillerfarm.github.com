@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  图像处理理论（十一）——CV/CG参考资源, 数学的深渊
+title:  图像处理理论（十一）——CV/CG参考资源
 category: graphics 
 ---
 
