@@ -170,6 +170,10 @@ https://mp.weixin.qq.com/s/aIU8mP5nlnqR4Qt-4RfMgQ
 
 孙付伟：Graph Embedding在知乎的应用实践
 
+https://blog.csdn.net/yyl424525/article/details/100057907
+
+Cluster-GCN: An Efficient Algorithm for Training Deep and Large Graph Convolutional Networks
+
 # 自动求导
 
 DL发展到现在，其基本运算单元早就不止CNN、RNN之类的简单模块了。针对新运算层出不穷的现状，各大DL框架基本都实现了自动求导的功能。

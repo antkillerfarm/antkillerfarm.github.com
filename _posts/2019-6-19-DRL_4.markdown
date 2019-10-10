@@ -1,8 +1,52 @@
 ---
 layout: post
-title:  深度强化学习（四）——AlphaGo, Multi-agent, AlphaStar
+title:  深度强化学习（四）——AlphaGo, Multi-agent
 category: DRL 
 ---
+
+# DDPG（续）
+
+## 参考
+
+https://mp.weixin.qq.com/s/dgLJrn3omUKMqmqTIEcoyg
+
+Tensorflow实现DDPG
+
+https://github.com/jinfagang/rl_atari_pytorch
+
+ReinforcementLearning Learn Play Atari Using DDPG and LSTM.
+
+https://zhuanlan.zhihu.com/p/65931777
+
+强化学习-基于pytorch的DDPG实现
+
+https://mp.weixin.qq.com/s/p2jF2Awmgeem-XGCkix-Lg
+
+深度确定性策略梯度DDPG详解
+
+https://mp.weixin.qq.com/s/_dskX5U8gHAEl6aToBvQvg
+
+从Q学习到DDPG，一文简述多种强化学习算法
+
+https://www.zhihu.com/question/323420831
+
+强化学习中A3C/DDPG/DPPO哪个效果更好？
+
+https://blog.csdn.net/gsww404/article/details/80403150
+
+从确定性策略（DPG）到深度确定性策略梯度(DDPG)算法的原理讲解及tensorflow代码实现
+
+https://blog.csdn.net/qq_39388410/article/details/88828548
+
+强化学习（DDPG，AC3，DPPO）
+
+https://blog.csdn.net/qq_30615903/article/details/80776715
+
+DDPG(Deep Deterministic Policy Gradient)算法详解
+
+https://blog.csdn.net/kenneth_yu/article/details/78478356
+
+DDPG原理和算法
 
 # reward modeling
 
@@ -305,37 +349,3 @@ Paper survey: Multi-Agent Reinforcement Learning
 https://zhang-yi-chi.github.io/2019/08/15/cooperative-multi-agent-rl/
 
 Cooperative Multi-Agent Reinforcement Learning
-
-# AlphaStar
-
-https://mp.weixin.qq.com/s/_Y0bCjTu9UrHfnen15htqQ
-
-AlphaStar称霸星际争霸2！AI史诗级胜利，DeepMind再度碾压人类
-
-https://mp.weixin.qq.com/s/axr5VFbHQmYo0shW9ilBaQ
-
-DeepMind回应一切：AlphaStar两百年相当于人类多长时间？
-
-https://www.zhihu.com/question/310011363
-
-如何评价DeepMind在北京时间19年1月25日2点的《星际争霸 2》项目演示？
-
-https://mp.weixin.qq.com/s/k0l2uoik-Z9aA9zax7AoZg
-
-中科院自动化所深度解析：Deepmind AlphaStar如何战胜人类职业玩家
-
-https://zhuanlan.zhihu.com/p/55781614
-
-AlphaStar背后的机器学习原理
-
-https://zhuanlan.zhihu.com/p/56043646
-
-AlphaStar之IMPALA
-
-https://mp.weixin.qq.com/s/XljE82cJZfFOgf2KrXWSKA
-
-DeepMind首个战胜星际2职业玩家的AI为何无敌？新视角揭秘AI里程碑
-
-https://mp.weixin.qq.com/s/_t2vLFfIG6VYAdWDalpIXQ
-
-说人话教AI打游戏，Facebook开源迷你版星际争霸，成果登上NeurIPS 2019

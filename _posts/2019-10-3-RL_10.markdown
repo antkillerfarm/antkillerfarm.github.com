@@ -134,6 +134,8 @@ https://mp.weixin.qq.com/s/f9vSgH1HQwGXBDb0UGHQyQ
 
 3.我们可以认为人类行为轨迹分布是以最优策略为峰的随机分布。
 
+![](/images/img3/GAN_vs_IRL.png)
+
 参考：
 
 https://zhuanlan.zhihu.com/p/61674994

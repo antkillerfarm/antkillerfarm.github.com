@@ -6,6 +6,38 @@ category: DRL
 
 # DRL参考资源
 
+https://mp.weixin.qq.com/s/l46yJdRaftMlwr6odiSiHg
+
+Yoshua Bengio团队基于深度强化学习打造聊天机器人MILABOT
+
+https://mp.weixin.qq.com/s/6_cW22DCzSw3DpUDrLXLcA
+
+OpenAI提出强化学习近端策略优化，可替代策略梯度法
+
+http://mp.weixin.qq.com/s/S4jhpNKYZP5YQWaiiOQGFA
+
+DeepMind：“预测地图”海马体催生强化学习新算法
+
+https://mp.weixin.qq.com/s/KZHidOi5KYgg393R_JspBA
+
+DeepMind都拿不下的游戏，刚刚被OpenAI玩出历史最高分
+
+https://mp.weixin.qq.com/s/VrVdsxn94ux_46mIyS8f0w
+
+谷歌大脑实现更宽广的智能体视野，在Atari2600上可持续超越人类玩家！
+
+https://mp.weixin.qq.com/s/P5EysBHBaR6L3IfeSgo6fw
+
+强化学习20分钟，剑桥博士教汽车学会自动驾驶！
+
+https://mp.weixin.qq.com/s/IYyGgnoXZm6YfamLejqoNQ
+
+深度强化学习试金石：DeepMind和OpenAI攻克蒙特祖玛复仇的真正意义
+
+https://mp.weixin.qq.com/s/w3SsadgKaL8-tlzYLvMm-A
+
+讲真？一天就学会了自动驾驶——强化学习在自动驾驶的应用
+
 https://mp.weixin.qq.com/s/oyxqA_LYtze1f_YDwDZziQ
 
 从零开始自学设计新型药物，UNC提出结构进化强化学习
@@ -229,3 +261,7 @@ https://mp.weixin.qq.com/s/kNtzy9-6GbsRhlL-mxksew
 https://mp.weixin.qq.com/s?__biz=MzU1NTMyOTI4Mw==&mid=2247494226&idx=1&sn=a96ea0ad8961ec3698301cf0c4514843
 
 以YouTube论文学习如何在推荐场景应用强化学习
+
+https://mp.weixin.qq.com/s/uppNSwxNrw4_8NGBQv85xw
+
+今日头条首次改进DQN网络，解决推荐中的在线广告投放问题

@@ -296,6 +296,10 @@ https://mp.weixin.qq.com/s/0fdnEWpLvPSbweFh0v4x9A
 
 科学家的浪漫，是用激光画一道彩虹（姜黄素）
 
+https://mp.weixin.qq.com/s/TM8Cc3AI7Vo5H6VnOl3gyw
+
+唯一两获诺贝尔化学奖的科学家，自称“只是把实验室搞砸的家伙”（弗雷德里克·桑格）
+
 ## Bélády's Algorithm
 
 Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。

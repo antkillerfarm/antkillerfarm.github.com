@@ -1,94 +1,108 @@
 ---
 layout: post
-title:  深度学习（二十）——ENet, GCN, Ultra Deep Network
+title:  深度学习（二十）——Ultra Deep Network
 category: DL 
 ---
 
-# ENet
-
-ENet是波兰的Adam Paszke于2016年提出的。
-
-论文：
-
-《ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation》
-
-代码：
-
-https://github.com/TimoSaemann/ENet
-
-![](/images/article/ENet.png)
-
-ENet的网络结构如上图所示。其中的initial和bottleneck结构分别见下图的(a)和(b)：
-
-![](/images/article/ENet_2.png)
-
-从大的结构来看，ENet的设计主要参考了Resnet和SqueezeNet。
-
-ENet对Pooling操作进行了一定的修改：
-
-1.下采样时，除了输出Pooling值之外，还输出Pooling值的位置，即所谓的Pooling Mask。
-
-2.上采样时，利用第1步的Pooling Mask信息，获得更好的精确度。
-
-显然这个修改在思路上和Dilated convolution是非常类似的。
+# Mask R-CNN（续）
 
 参考：
 
-http://blog.csdn.net/zijinxuxu/article/details/67638290
+https://zhuanlan.zhihu.com/p/25954683
 
-论文中文版blog
+Mask R-CNN个人理解
 
-https://mp.weixin.qq.com/s/_Sz8u7A6_01e_Xbkvuoscg
+https://mp.weixin.qq.com/s/E0P2B798pukbtRarWooUkg
 
-快速道路场景分割—ENet
+Mask R-CNN的Keras/TensorFlow/Pytorch代码实现
 
-# Global Convolutional Network
+https://zhuanlan.zhihu.com/p/30967656
 
-Global Convolutional Network是孙剑团队的Chao Peng于2017年提出的。
+从R-CNN到Mask R-CNN
 
-论文：
+https://www.zhihu.com/question/57403701
 
-《Large Kernel Matters -- Improve Semantic Segmentation by Global Convolutional Network》
+如何评价Kaiming He最新的Mask R-CNN?
 
->孙剑，西安交通大学博士（2003年）。后一直在微软亚洲研究院工作，担任首席研究员。2016年7月正式加入旷视科技担任首席科学家。
+http://zh.gluon.ai/chapter_computer-vision/object-detection.html
 
-![](/images/article/GCN.png)
+使用卷积神经网络的物体检测
 
-上图是论文的关键结构GCN，它主要用于计算超大卷积核。这里借鉴了Separable convolution的思想（将一个k x k的卷积运算，转换成1 x k + k x 1的卷积运算）。
+https://mp.weixin.qq.com/s/4BRwMEr6rFYvkmKXM7rYLg
 
-然而正如我们在《深度学习（九）》中指出的，不是所有的卷积核都满足可分离条件。单纯采用先1 x k后k x 1，或者先k x 1后1 x k，效果都是不好的。而将两者结合起来，可以有效提高计算的精度。
+效果惊艳！FAIR提出人体姿势估计新模型，升级版Mask-RCNN
 
-![](/images/article/GCN_2.png)
+https://mp.weixin.qq.com/s/UXzhMkGIwqek4zHVNPgRbA
 
-这是GCN提出的另一个新结构。
+Mask-RCNN论文解读
 
-![](/images/article/GCN_3.png)
+https://mp.weixin.qq.com/s/_ohsx7kzgU-szP-K9_Yv1w
 
-上图是GCN的整体结构图。
+优于Mask R-CNN，港中文&腾讯优图提出PANet实例分割框架
 
-参考：
+https://mp.weixin.qq.com/s/uJpVqRpWWaK2cY8fYGlRag
 
-http://blog.csdn.net/bea_tree/article/details/60977512
+先理解Mask R-CNN的工作原理，然后构建颜色填充器应用
 
-旷视最新：Global Convolutional Network
+https://mp.weixin.qq.com/s/x_9klKK_hIiFV1fGhxZIVA
 
-# 语义分割的展望
+Mask R-CNN神应用：像英剧《黑镜》一样屏蔽人像
 
-俗话说，“没有免费的午餐”（“No free lunch”）。基于深度学习的图像语义分割技术虽然可以取得相比传统方法突飞猛进的分割效果，但是其对数据标注的要求过高：不仅需要海量图像数据，同时这些图像还需提供精确到像素级别的标记信息（Semantic labels）。因此，越来越多的研究者开始将注意力转移到弱监督（Weakly-supervised）条件下的图像语义分割问题上。在这类问题中，图像仅需提供图像级别标注（如，有“人”，有“车”，无“电视”）而不需要昂贵的像素级别信息即可取得与现有方法可比的语义分割精度。
+https://mp.weixin.qq.com/s/V6m1xBS2vZQ6VRlAg5zOSA
 
-另外，示例级别（Instance level）的图像语义分割问题也同样热门。该类问题不仅需要对不同语义物体进行图像分割，同时还要求对同一语义的不同个体进行分割（例如需要对图中出现的九把椅子的像素用不同颜色分别标示出来）。
+干掉照片中那些讨厌的家伙！Mask R-CNN助你一键“除”人！
 
-![](/images/article/Instance_level.jpg)
+https://mp.weixin.qq.com/s/48eIhnBdYzgEiV_wESHsJA
 
-此外，基于视频的前景／物体分割（Video segmentation）也是今后计算机视觉语义分割领域的新热点之一，这一设定其实更加贴合自动驾驶系统的真实应用环境。
+如何使用Mask RCNN模型进行图像实体分割？
 
-最后，目前使用的分割模型在对分割注释有限的大型概念词汇的识别方面表现欠佳。原因在于它们忽略了所有概念的固有分类和语义层次。例如，长颈鹿、斑马和马同属于有蹄类动物，这个大类描绘了它们的共同视觉特征，使得它们很容易与猫/狗区分开来。对人来说，即使你没见过斑马，但也不会把它错误的认成猫/狗。但目前的DL模型在这方面的能力还很薄弱。
+https://mp.weixin.qq.com/s/G_2tuZlaxX5w-2c1DO8FwQ
 
-参考：
+利用边缘监督信息加速Mask R-CNN实例分割训练
 
-https://mp.weixin.qq.com/s/palhFeMnWOZj-T2cqQN7tw
+https://mp.weixin.qq.com/s/Ug4ZEQWVF5UjhqWw4Kwb8A
 
-新型语义分割模型：动态结构化语义传播网络DSSPN
+Mask R-CNN抢车位，快人一步！
+
+https://zhuanlan.zhihu.com/p/47579399
+
+R-CNN、Fast/Faster/Mask R-CNN、FCN、RFCN、SSD原理简析
+
+https://mp.weixin.qq.com/s/CsEHuGz_fAq8eWpHRq7d6g
+
+性能超越何恺明Mask R-CNN！华科硕士生开源图像分割新方法
+
+https://zhuanlan.zhihu.com/p/57629509
+
+实例分割的进阶三级跳：从Mask R-CNN到Hybrid Task Cascade
+
+https://mp.weixin.qq.com/s/7Z8unW7Gsu0cf1hAwvjAxw
+
+何恺明等人提TensorMask框架：比肩Mask R-CNN，4D张量预测新突破
+
+https://mp.weixin.qq.com/s/SUZcgq6wOqct_CrWB0j1gA
+
+CVPR2019-实例分割Mask Scoring R-CNN
+
+https://mp.weixin.qq.com/s/Uc0VFMmYoOFvH0c7IExKIg
+
+何恺明团队计算机视觉最新进展：从特征金字塔网络、Mask R-CNN到学习分割一切
+
+https://mp.weixin.qq.com/s/sRU9_M9LsP-j46kNdcI0QQ
+
+Cascade R-CNN升级！目标检测制霸COCO，实例分割超越Mask R-CNN
+
+https://www.cnblogs.com/fydeblog/p/10145805.html
+
+MaskRCNN-Keypoints
+
+https://zhuanlan.zhihu.com/p/65893018
+
+玩转Facebook的maskrcnn-benchmark项目
+
+https://mp.weixin.qq.com/s/A9WkTGHLsaUE11NiQKT2vw
+
+1小时上手MaskRCNN·Keras开源实战
 
 # Ultra Deep Network
 

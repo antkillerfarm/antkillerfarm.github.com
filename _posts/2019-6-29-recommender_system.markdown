@@ -235,3 +235,7 @@ https://mp.weixin.qq.com/s/WWqaCRtsSqfvO-qDLvehdg
 https://mp.weixin.qq.com/s/sboWpGTuf8rpRUz4G7PdKw
 
 深度学习在美图个性化推荐的应用实践
+
+https://mp.weixin.qq.com/s/QThtXNF9oIE5bXF5kaSg5w
+
+如何优化大规模推荐？下一代算法技术JTM来了

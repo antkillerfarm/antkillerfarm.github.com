@@ -12,6 +12,10 @@ category: resource
 
 ## 参考
 
+https://mp.weixin.qq.com/s/ai_XI8ddP5I2m3ChCqnQsA
+
+高效大规模机器学习训练，198页PDF带你概览领域前沿进展
+
 https://zhuanlan.zhihu.com/p/58806183
 
 深度学习的分布和并行处理系统

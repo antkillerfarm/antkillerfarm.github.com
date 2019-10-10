@@ -1,216 +1,8 @@
 ---
 layout: post
-title:  深度学习（十八）——数据增强, 深度信息检索, 语义分割
+title:  深度学习（十八）——语义分割, FCN
 category: DL 
 ---
-
-# 数据增强
-
-https://mp.weixin.qq.com/s/GqPfvWwH1T0XFwiZ86cW8A
-
-SamplePairing：针对图像处理领域的高效数据增强方式
-
-https://mp.weixin.qq.com/s/cQtXvOjSXFc4YKn7ANBc_w
-
-谷歌大脑提出自动数据增强方法AutoAugment：可迁移至不同数据集
-
-https://mp.weixin.qq.com/s/ojFo7-gUh73iK3uImFS2-Q
-
-一文道尽主流开源框架中的数据增强
-
-https://mp.weixin.qq.com/s/xJhWu-1FyhIWbFBC5oHMkw
-
-一文道尽深度学习中的数据增强方法（上）
-
-https://mp.weixin.qq.com/s/OctAGrcBB0a6TOGWMmVKUw
-
-深度学习中的数据增强（下）
-
-https://mp.weixin.qq.com/s/lMU6_ywQqneyunqEV6uDiA
-
-如何改善你的训练数据集？
-
-https://mp.weixin.qq.com/s/ooX9Hj5ejO6po6Ghb4zOug
-
-一文解读合成数据在机器学习技术下的表现
-
-https://zhuanlan.zhihu.com/p/33485388
-
-mixup与paring samples ，ICLR2018投稿论文的数据增广两种方式
-
-https://mp.weixin.qq.com/s/_7xFBLPGT0VRTJ22toHJ3g
-
-深度学习中常用的图像数据增强方法
-
-https://mp.weixin.qq.com/s/sXV9epWguGbJEZYo4yNp5Q
-
-如何正确使用样本扩充改进目标检测性能
-
-https://zhuanlan.zhihu.com/p/46833956
-
-图像数据增强之弹性形变（Elastic Distortions）
-
-https://mp.weixin.qq.com/s/iaeHnfepyeLuOioHqMO9bQ
-
-一种小目标检测中有效的数据增强方法
-
-https://mp.weixin.qq.com/s/ws1R-VPyJY6J18OttBDYog
-
-超少量数据训练神经网络：IEEE论文提出径向变换实现图像增强
-
-https://mp.weixin.qq.com/s/g4022Rc1RNvr3IOC_bWuaQ
-
-深度学习中的数据增强方法都有哪些？
-
-https://mp.weixin.qq.com/s/YuFVEhO3wzCN5dIM_YqA7A
-
-EDA：最简单的自然语言处理数据增广方法
-
-https://mp.weixin.qq.com/s/IeqSfjt4x8HquXBeQN2gdQ
-
-深度学习中的数据增强方法总结
-
-https://zhuanlan.zhihu.com/p/76044027
-
-A survey on Image Data Augmentation数据增强文献综述
-
-https://mp.weixin.qq.com/s/2B0NBY39noikPEO1dB06Sg
-
-CV领域中数据增强相关的论文推荐
-
-https://www.zhihu.com/question/35339639
-
-使用深度学习(CNN)算法进行图像识别工作时，有哪些data augmentation的奇技淫巧？
-
-https://mp.weixin.qq.com/s/YtL7GeIGYm9xtdofnabu1g
-
-如何选择最合适的数据增强操作
-
-https://mp.weixin.qq.com/s/Vi_1Sg8OKG-EG4aC4QTCWA
-
-半监督学习的新助力：无监督数据扩增法
-
-# 深度信息检索
-
-Information Retrieval是用户进行信息查询和获取的主要方式，是查找信息的方法和手段。狭义的信息检索仅指信息查询（Information Search）。即用户根据需要，采用一定的方法，借助检索工具，从信息集合中找出所需要信息的查找过程。广义的信息检索是信息按一定的方式进行加工、整理、组织并存储起来，再根据信息用户特定的需要将相关信息准确的查找出来的过程。
-
-这方面的DL应用可参见以下的综述文章：
-
-《MatchZoo: A Toolkit for Deep Text Matching》
-
-## ARC-I & ARC-II
-
-《Convolutional neural network architectures for matching natural language sentences》
-
-## DSSM
-
-《Learning deep structured semantic models for web search using clickthrough data》
-
-## CDSSM
-
-《Learning semantic representations using convolutional neural networks for web search》
-
-## MV-LSTM
-
-《A deep architecture for semantic matching with multiple positional sentence representations》
-
-## CNTN
-
-《Convolutional Neural Tensor Network Architecture for Community-Based Question Answering》
-
-## DRMM
-
-《A deep relevance matching model for ad-hoc retrieval》
-
-## MatchPyramid
-
-《Text Matching as Image Recognition》
-
-## Match-SRNN
-
-《Match-SRNN: Modeling the Recursive Matching Structure with Spatial RNN》
-
-## K-NRM
-
-《End-to-End Neural Ad-hoc Ranking with Kernel Pooling》
-
-## 参考
-
-https://github.com/harpribot/awesome-information-retrieval
-
-信息检索优质资源汇总
-
-https://mp.weixin.qq.com/s/5ba3EM6e9R-i3UpzUhm49w
-
-神经信息检索导论，微软研究员129页最新书册
-
-https://mp.weixin.qq.com/s/aZsj1FQnzHOr-YBcy_ljpw
-
-DNN在搜索场景中的应用
-
-https://mp.weixin.qq.com/s/1jgdI-Pt0PtN3oAs0Wh4XA
-
-阿里提出电商搜索全局排序方法，淘宝无线主搜GMV提升5%
-
-https://mp.weixin.qq.com/s/9Fcj5lO-JPfFVnRSSM_56w
-
-深度学习在美团搜索广告排序的应用实践
-
-https://mp.weixin.qq.com/s/wni3F9lKuO4OT32BVe0QDQ
-
-谷歌发大招：搜索全面AI化，不用关键词就能轻松“撩书”
-
-https://mp.weixin.qq.com/s/TrWwp-DBTrKqIT_Pfy_o5w
-
-阿里妈妈首次公开新一代智能广告检索模型，重新定义传统搜索框架
-
-https://mp.weixin.qq.com/s/fZv9FgbdQ1bWPoNdl9sF1A
-
-“宝石迷阵”与信息检索
-
-https://mp.weixin.qq.com/s/Vvo3Ti3XiGQz0IwLgATfWQ
-
-电商搜索算法技术的演进
-
-https://mp.weixin.qq.com/s/MpuUdZi8CWcu0b-ij-bHjA
-
-Jeff Dean出品：用机器学习索引替代B-Trees，3倍性能提升，10-100倍空间缩小
-
-https://mp.weixin.qq.com/s/uztYEW_azetOkOGiZcbCuw
-
-JeffDean又用深度学习搞事情：这次要颠覆整个计算机系统结构设计。这篇blog介绍了如何用DL方法提高内存访问的命中率。
-
-https://zhuanlan.zhihu.com/p/37020639
-
-读论文系列：CVPR2018 SSAH
-
-https://mp.weixin.qq.com/s/TdnstQaBcLaXg8BvuR7oYA
-
-基于素描图的细粒度图像检索
-
-https://mp.weixin.qq.com/s/N3JBHlqneG9dI0I26M3wHQ
-
-如何做好大规模视觉搜索？eBay基于实践总结出了7条建议
-
-https://mp.weixin.qq.com/s/8Twe3e3WKCY9pTiNtnW2sg
-
-重磅！谷歌等推出基于机器学习的数据库SageDB
-
-https://mp.weixin.qq.com/s/NJf5e25tvT_xKXLD7UY1AQ
-
-MySQL智能调度系统。这篇blog其实和MySQL关系不大，算是DL在负载均衡方面的应用吧。
-
-https://mp.weixin.qq.com/s/fzdK4YPTUgiW0D0aeH7WlQ
-
-用于跨模态检索的综合距离保持自编码器
-
-https://mp.weixin.qq.com/s/AWsiAYyVWY83s5uJ01Lg6Q
-
-千亿级照片，毫秒间匹配最佳结果，微软开源Bing搜索背后的关键算法
-
-https://mp.weixin.qq.com/s/fw5dRWmvZ17lqzxjKFrCtQ
-
-相关性特征在图片搜索中的实践
 
 # 语义分割
 
@@ -301,3 +93,103 @@ Normalized cut （N-cut）方法是基于图划分（Graph partitioning）的语
 常用的方法为经典的最小割算法（Min-cut algorithm）。不过，在边的权重计算时，经典min-cut算法只考虑了局部信息。如下图所示，以二分图为例（将$$\bf{G}$$分为不相交的$$\bf{A},\bf{B}$$两部分），若只考虑局部信息，那么分离出一个点显然是一个min-cut，因此图划分的结果便是类似$$n_1$$或$$n_2$$这样离群点，而从全局来看，实际想分成的组却是左右两大部分。
 
 ![](/images/article/N_cut.jpg)
+
+针对这一情形，N-cut则提出了一种考虑全局信息的方法来进行图划分（Graph partitioning），即，将两个分割部分$$\bf{A},\bf{B}$$与全图节点的连接权重（$${\rm assoc(\bf{A},\bf{V})}$$和$$\rm assoc(\bf{B},\bf{V})$$）考虑进去：
+
+$$N_{cut}(\bf{A},\bf{B})=\frac{cut(\bf{A},\bf{B})}{assoc(\bf{A},\bf{V})}+\frac{cut(\bf{A},\bf{B})}{assoc(\bf{B},\bf{V})}$$
+
+如此一来，在离群点划分中，$$N_{cut}(\bf{A},\bf{B})$$中的某一项会接近1，而这样的图划分显然不能使得$$N_{cut}(\bf{A},\bf{B})$$是一个较小的值，故达到考虑全局信息而摒弃划分离群点的目的。这样的操作类似于机器学习中特征的规范化（Normalization）操作，故称为Normalized cut。N-cut不仅可以处理二类语义分割，而且将二分图扩展为K路（K-way）图划分即可完成多语义的图像语义分割，如下图例。
+
+![](/images/article/N_cut_2.jpg)
+
+## Grab cut
+
+Grab cut是微软剑桥研究院于2004年提出的著名交互式图像语义分割方法。与N-cut一样，grab cut同样也是基于图划分，不过grab cut是其改进版本，可以看作迭代式的语义分割算法。Grab cut利用了图像中的纹理（颜色）信息和边界（反差）信息，只要少量的用户交互操作即可得到比较好的前后背景分割结果。
+
+在Grab cut中，RGB图像的前景和背景分别用一个高斯混合模型（Gaussian mixture model, GMM）来建模。两个GMM分别用以刻画某像素属于前景或背景的概率，每个GMM高斯部件（Gaussian component）个数一般设为k=5。接下来，利用吉布斯能量方程（Gibbs energy function）对整张图像进行全局刻画，而后迭代求取使得能量方程达到最优值的参数作为两个GMM的最优参数。GMM确定后，某像素属于前景或背景的概率就随之确定下来。
+
+在与用户交互的过程中，Grab cut提供两种交互方式：一种以包围框（Bounding box）为辅助信息；另一种以涂写的线条（Scribbled line）作为辅助信息。以下图为例，用户在开始时提供一个包围框，grab cut默认的认为框中像素中包含主要物体／前景，此后经过迭代图划分求解，即可返回扣出的前景结果，可以发现即使是对于背景稍微复杂一些的图像，grab cut仍有不俗表现。
+
+![](/images/article/grab_cut.jpg)
+
+不过，在处理下图时，grab cut的分割效果则不能令人满意。此时，需要额外人为的提供更强的辅助信息：用红色线条／点标明背景区域，同时用白色线条标明前景区域。在此基础上，再次运行grab cut算法求取最优解即可得到较为满意的语义分割结果。Grab cut虽效果优良，但缺点也非常明显，一是仅能处理二类语义分割问题，二是需要人为干预而不能做到完全自动化。
+
+![](/images/article/grab_cut_2.jpg)
+
+不难看出，前DL时代的语义分割工作多是根据图像像素自身的低阶视觉信息（Low-level visual cues）来进行图像分割。由于这样的方法没有算法训练阶段，因此往往计算复杂度不高，但是在较困难的分割任务上（如果不提供人为的辅助信息），其分割效果并不能令人满意。
+
+参考：
+
+https://mp.weixin.qq.com/s/AiuwMytfux9BMt__eVtj6w
+
+基于图割算法的木材表面缺陷图像分析
+
+# FCN
+
+Fully Convolutional Networks是Jonathan Long和Evan Shelhamer于2015年提出的网络结构。
+
+论文：
+
+《Fully Convolutional Networks for Semantic Segmentation》
+
+代码：
+
+https://github.com/shelhamer/fcn.berkeleyvision.org
+
+>Jonathan Long，CMU本科（2010年）+UCB博士在读。   
+>个人主页：   
+>https://people.eecs.berkeley.edu/~jonlong/
+
+>Evan Shelhamer，UCB博士在读。   
+>个人主页：   
+>http://imaginarynumber.net/
+
+>Trevor Darrell，University of Pennsylvania本科（1988年）+MIT硕博（1992年、1996年）。MIT教授（1999～2008）。UCB教授。   
+>个人主页：   
+>https://people.eecs.berkeley.edu/~trevor/
+
+通常CNN网络在卷积层之后会接上若干个全连接层, 将卷积层产生的特征图(feature map)映射成一个固定长度的特征向量。以AlexNet为代表的经典CNN结构适合于图像级的分类和回归任务，因为它们最后都期望得到整个输入图像的一个数值描述（概率），比如AlexNet的ImageNet模型输出一个1000维的向量表示输入图像属于每一类的概率(softmax归一化)。
+
+示例：下图中的猫, 输入AlexNet, 得到一个长为1000的输出向量, 表示输入图像属于每一类的概率, 其中在“tabby cat”这一类统计概率最高。
+
+![](/images/article/FCN_2.png)
+
+然而CNN网络的问题在于：全连接层会将原来二维的矩阵（图片）压扁成一维的，从而丢失了空间信息。这对于分类是没有问题的，但对于语义分割显然就不行了。
+
+![](/images/article/FCN.png)
+
+上图是FCN的网络结构图，它的主要思想包括：
+
+1.采用end-to-end的结构。
+
+2.取消FC层。当图片的feature map缩小（下采样）到一定程度之后，进行反向的上采样操作，以匹配图片的语义分割标注图。这里的上采样所采用的方法，就是《深度学习（九）》中提到的transpose convolution。
+
+4.由于上采样会丢失信息。因此，为了更好的预测图像中的细节部分，FCN还将网络中浅层的响应也考虑进来。具体来说，就是将Pool4和Pool3的响应也拿来，分别作为模型FCN-16s和FCN-8s的输出，与原来FCN-32s的输出结合在一起做最终的语义分割预测（如下图所示）。
+
+![](/images/article/FCN_3.png)
+
+上图的结构在论文中被称为Skip Layer。
+
+FCN的另一贡献是**支持任意大小的图像**。在CNN的常见操作中，Conv和Pooling都不在意图像大小。一组参数可以应用于任意大小的图像，但FC要求固定的输入维度，这决定了输入的图像的大小必须是固定的。因此，现代的CNN为了支持任意大小的图像，都有意减少或避免使用FC。
+
+参考：
+
+http://www.cnblogs.com/gujianhan/p/6030639.html
+
+全卷积网络FCN详解
+
+https://zhuanlan.zhihu.com/p/32506912
+
+FCN的简单实现
+
+https://mp.weixin.qq.com/s/kc0tTcTzRAT0p7q6ejXbqQ
+
+重新发现语义分割，一文简述全卷积网络
+
+https://www.zhihu.com/question/56688854
+
+卷积神经网络里输入图像大小何时是固定，何时是任意？
+
+https://mp.weixin.qq.com/s/AXfyMeFnCENIMc2qS8hNtA
+
+10分钟看懂全卷积神经网络（FCN）：语义分割深度模型先驱
