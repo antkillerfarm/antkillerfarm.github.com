@@ -278,6 +278,10 @@ https://mp.weixin.qq.com/s/F93DCxJDbZpGr0oHiJ8aKw
 
 教你用OpenCV-Python轻松生成微信国庆版头像
 
+https://mp.weixin.qq.com/s/Z6GauX3vgOsXvVNpMyemqA
+
+使用FFT变换自动去除图像中严重的网纹
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。

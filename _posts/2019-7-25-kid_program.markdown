@@ -320,19 +320,25 @@ VS2015以后，MS不再提供VS的离线安装包，因为安装文件实在是�
 
 # Javascript（续）
 
-## D3.js
+## Traffic Demo
 
-D3.js是一个数据可视化的库。
+2019.9
 
-官网：
+最近心血来潮，翻出了本科时代的作业。其中有一个交通仿真的小demo，最早是用Java Applet写的。岂料，现在别说浏览器了，就连专门看这个的AppletViewer在新版SDK中，都不见踪影了。。。
 
-https://d3js.org/
+于是，只好作现代化移植。本来首选JavaFX的，岂料刚开始写，发现JavaFX对于多线程渲染做的很差，而这个Demo正是个多线程的版本。
 
-参考：
+反正都要大改，还不如直接移植到js上，连编译都省了。
 
-https://www.cnblogs.com/fastmover/p/7779660.html
+原始版本：
 
-D3.js从入门到“放弃”指南
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/java/trafic
+
+新版本：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/traffic
+
+众所周知，js是单线程的，所以这个版本也是单线程的，逻辑稍微复杂了一些。
 
 ## 参考
 

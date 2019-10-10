@@ -48,30 +48,6 @@ https://mp.weixin.qq.com/s/JgSTOiWZ30mIR_uiXyU2PQ
 
 硅谷高级工程师告诉你：算法工程师必须要知道的面试技能雷达图
 
-# AI-1000问
-
-这个是“有三AI”微信公众号下的栏目，特辑录如下。
-
-https://mp.weixin.qq.com/s/5-3UxBVy080WhEWumv7BiA
-
-为什么LeNet5倒数第二个全连接层维度为84？
-
-https://mp.weixin.qq.com/s/Er3Poj8oxV5OKNlAlZwq_A
-
-为什么OpenCV读取的图像格式是BGR？
-
-https://mp.weixin.qq.com/s/gmXgZZdxU2Qqv6X7HFqhdg
-
-为什么CNN中的卷积核半径都是奇数？
-
-https://mp.weixin.qq.com/s/0UpHuJ_gJfJvURRzmlJ1iA
-
-segmentation和matting有什么区别？
-
-https://mp.weixin.qq.com/s/1TK4h7UoeVas1S1NfNgRag
-
-为什么深度学习图像分类的输入多是224*224
-
 ## 参考
 
 https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650748834&idx=3&sn=805564d2d9956dff6bb888ccb61e9b7b
@@ -317,3 +293,7 @@ https://mp.weixin.qq.com/s/Wd4n5WnbPBW8CCDWwNGCAA
 https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652055088&idx=1&sn=ee79493940fbc35b62875ce32ad474e7
 
 LSTM之父的深度学习“奇迹之年”
+
+https://mp.weixin.qq.com/s/mPDRmo5XM1JkCBP8fAkYqA
+
+配送交付时间轻量级预估实践

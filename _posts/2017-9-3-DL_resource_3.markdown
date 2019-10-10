@@ -389,3 +389,27 @@ https://zhuanlan.zhihu.com/p/33177237
 http://tensorinfinity.com/paper_119.html
 
 图像内容鉴黄算法综述
+
+# AI-1000问
+
+这个是“有三AI”微信公众号下的栏目，特辑录如下。
+
+https://mp.weixin.qq.com/s/5-3UxBVy080WhEWumv7BiA
+
+为什么LeNet5倒数第二个全连接层维度为84？
+
+https://mp.weixin.qq.com/s/Er3Poj8oxV5OKNlAlZwq_A
+
+为什么OpenCV读取的图像格式是BGR？
+
+https://mp.weixin.qq.com/s/gmXgZZdxU2Qqv6X7HFqhdg
+
+为什么CNN中的卷积核半径都是奇数？
+
+https://mp.weixin.qq.com/s/0UpHuJ_gJfJvURRzmlJ1iA
+
+segmentation和matting有什么区别？
+
+https://mp.weixin.qq.com/s/1TK4h7UoeVas1S1NfNgRag
+
+为什么深度学习图像分类的输入多是224*224

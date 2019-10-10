@@ -180,6 +180,10 @@ https://mp.weixin.qq.com/s/Ra-lVtKoYI0eOC_6VrPZeg
 
 有了TensorFlow2.0，我手里的1.x程序怎么办？
 
+https://mp.weixin.qq.com/s/ddHKc5AffznRaEY_qhHN_g
+
+升级到tensorflow2.0，我整个人都不好了
+
 ## 细节
 
 执行`session.run(out)`，会在终端打印out的值，但执行`res = session.run(out)`则不会。
