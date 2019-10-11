@@ -348,6 +348,10 @@ https://mp.weixin.qq.com/s?__biz=MzI1NjkxOTMyNQ==&mid=2247488270&idx=1&sn=25b6e9
 
 Apollo决策技术分享
 
+https://mp.weixin.qq.com/s/E65x4kNNZ4ctc12e5v095w
+
+自动驾驶专用计算框架探索和实践
+
 # Autoware
 
 Autoware是另一个开源的无人驾驶平台。不像Apollo，没有百度这样的强势公司的介入，社区氛围更浓一些，相对的，功能也要弱一些。

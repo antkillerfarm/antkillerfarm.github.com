@@ -226,36 +226,6 @@ https://mp.weixin.qq.com/s/iESGCZjdvwUzqW7pu0GwrQ
 
 中科视拓开源SeetaFace2人脸识别算法
 
-## Siamese network
-
-https://blog.csdn.net/shenziheng1/article/details/81213668
-
-Siamese Network（原理篇）
-
-https://www.jianshu.com/p/92d7f6eaacf5
-
-Siamese network孪生神经网络--一个简单神奇的结构
-
-https://blog.csdn.net/sxf1061926959/article/details/54836696
-
-Siamese Network理解
-
-https://vra.github.io/2016/12/13/siamese-caffe/
-
-Caffe中的Siamese网络
-
-https://mp.weixin.qq.com/s/rPC542OcO8B4bjxn7JRFrw
-
-深度学习网络只能有一个输入吗
-
-https://mp.weixin.qq.com/s/GlS2VJdX7Y_nfBOEnUt2NQ
-
-使用Siamese神经网络进行人脸识别
-
-https://mp.weixin.qq.com/s/lDlijjIUGmzNzcP89IzJnw
-
-张志鹏:基于siamese网络的单目标跟踪
-
 ## S3FD
 
 https://mp.weixin.qq.com/s/MyA8_yt4YCkFl67AyhpZow

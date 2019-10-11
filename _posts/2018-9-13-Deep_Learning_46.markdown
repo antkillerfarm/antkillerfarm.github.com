@@ -374,6 +374,14 @@ https://mp.weixin.qq.com/s/l1rmGxOVrXKAaf4yYUt4kQ
 
 自然场景文字定位技术详解
 
+https://mp.weixin.qq.com/s/-ZudmG9-qEPaWOu--Hd6SQ
+
+Editing Text in the Wild
+
+https://mp.weixin.qq.com/s/rJ7guL-Hxxr2Ezl7LRhQrA
+
+基于对抗学习的数据稀缺手写文本识别
+
 # NetVLAD
 
 NetVLAD算的上是CNN+传统算子的一个范例。

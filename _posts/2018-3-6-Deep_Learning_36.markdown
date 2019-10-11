@@ -221,3 +221,7 @@ Attentional Factorization Machines（AFM）详解
 https://mp.weixin.qq.com/s/bBVFuxuq4e__MYmYyeX5bQ
 
 MSRA开源基于注意力机制的全新推荐模型，融合用户长短期偏好
+
+https://zhuanlan.zhihu.com/p/86031123
+
+深度CTR预估新积木ONN模型源码阅读与调参经验

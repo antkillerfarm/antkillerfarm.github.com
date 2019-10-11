@@ -121,3 +121,7 @@ https://mp.weixin.qq.com/s/9etR8QEk4UXtoLqkJFQIHA
 https://zhuanlan.zhihu.com/p/27087310
 
 《安娜卡列尼娜》文本生成——利用TensorFlow构建LSTM模型
+
+https://mp.weixin.qq.com/s/6y7AEGz2cs4QUP0Cikhnmw
+
+272页PPT讲述Tensorflow2.0在图形学方面的应用

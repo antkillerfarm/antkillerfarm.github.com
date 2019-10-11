@@ -126,9 +126,9 @@ $$w_{i,j}^{(m)}\approx \alpha_i^{(m)}\beta_i^{(m)}$$
 
 SVDF将运算量从$$Cd$$变为$$(C+d)k$$，这里的k为filters numbers。
 
-这实际上就是2维tensor的SVD，只不过SVD是线性变换，而这里是非线性变换而已。（参见《机器学习（十五）》中的ALS算法部分）
+这实际上就是2维tensor的SVD，只不过SVD是线性变换，而这里是非线性变换而已。（参见《机器学习（十六）》中的ALS算法部分）
 
-实际上，SVDF和之前在《深度学习（十六）》中提到的Fast R-CNN的FC加速，原理是基本一致的。
+实际上，SVDF和《深度目标检测（三）》中提到的Fast R-CNN的FC加速，原理是基本一致的。
 
 # LCNN
 
@@ -333,4 +333,3 @@ $$W=\color{blue}{n_c\times n_r\times 4}+n_i\times n_c\times 4+\color{red}{n_r\ti
 http://blog.csdn.net/xmdxcsj/article/details/53326109
 
 模型压缩lstmp
-
