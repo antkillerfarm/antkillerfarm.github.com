@@ -6,22 +6,6 @@ category: DL
 
 # Graph NN（续）
 
-https://mp.weixin.qq.com/s/XApSbi-Pg-AeYGkPN3fldg
-
-旷视研究院提出ML-GCN：基于图卷积网络的多标签图像识别模型
-
-https://mp.weixin.qq.com/s/49vnVOO0G_JvKrWcsN2_Ww
-
-关系图注意力网络-Relational Graph Attention Networks
-
-https://mp.weixin.qq.com/s/rvcj9-6KlBsVmF_CAsip2A
-
-超越标准GNN！DeepMind、谷歌提出图匹配网络
-
-https://mp.weixin.qq.com/s/UotqgRjCTpjPrsIEWBRPxA
-
-基于随机游走的图匹配算法
-
 https://mp.weixin.qq.com/s/dDaFhssFEYxS7ElMy4ekJw
 
 基于图嵌入的深度图匹配
@@ -173,6 +157,10 @@ https://mp.weixin.qq.com/s/aIU8mP5nlnqR4Qt-4RfMgQ
 https://blog.csdn.net/yyl424525/article/details/100057907
 
 Cluster-GCN: An Efficient Algorithm for Training Deep and Large Graph Convolutional Networks
+
+https://zhuanlan.zhihu.com/p/86216369
+
+从3/4层拓展到56层，如何训练超级深层的图卷积神经网络
 
 # 自动求导
 

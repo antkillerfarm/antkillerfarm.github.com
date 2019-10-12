@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十一）——花式卷积（2）, 元学习
+title:  深度学习（十一）——花式卷积（2）
 category: DL 
 ---
 
@@ -106,6 +106,120 @@ https://zhuanlan.zhihu.com/p/44106492
 
 卷积神经网络的感受野
 
+## 可变形卷积核
+
+MSRA于2017年提出了可变形卷积核的概念。
+
+论文：
+
+《Deformable Convolutional Networks》
+
+![](/images/article/Deformable_convolution.png)
+
+(a) 所示的正常卷积规律的采样 9 个点（绿点），(b)(c)(d) 为可变形卷积，在正常的采样坐标上加上一个位移量（蓝色箭头），其中(c)(d) 作为 (b) 的特殊情况，展示了可变形卷积可以作为尺度变换，比例变换和旋转变换的特殊情况。
+
+![](/images/img2/Deformable_convolution.png)
+
+如上图所示，位移量也成为了网络中待学习的参数。
+
+参考：
+
+https://mp.weixin.qq.com/s/okI3MT3E2o2PKCeokE7Niw
+
+MSRA视觉组最新研究：可变形卷积网络
+
+http://mp.weixin.qq.com/s/dvuX3Ih_DZrv0kgqFn8-lg
+
+卷积神经网络结构变化——可变形卷积网络deformable convolutional networks
+
+https://mp.weixin.qq.com/s/iN2LDAQ2ee-rQnlD3N1yaw
+
+变形卷积核、可分离卷积？CNN中十大拍案叫绝的操作！
+
+http://www.msra.cn/zh-cn/news/features/deformable-convolutional-networks-20170609
+
+可变形卷积网络：计算机新“视”界
+
+https://www.jianshu.com/p/940d21c79aa3
+
+Deformable Convolution Networks
+
+https://mp.weixin.qq.com/s/aLvlLi97JTd_cCfCZfraIg
+
+“不正经”的卷积神经网络
+
+https://mp.weixin.qq.com/s/gsoVFiG3tKhHAU7OCGfLPg
+
+如何评价MSRA视觉组最新提出的Deformable ConvNets V2？
+
+https://mp.weixin.qq.com/s/VmcxU7ZgNJbNUy-Feiz3ig
+
+目标检测：Deformable ConvNets v2算法笔记
+
+## 3D卷积
+
+3D卷积一般用于视频（2D图像+1D时序）和医学影像（3D立体图像）的分析处理中。
+
+![](/images/article/conv_3d.png)
+
+![](/images/img2/conv3d.gif)
+
+如上两图所示，3D卷积的kernel不再是2D的，而是3D的。
+
+它和多通道卷积的区别在于：
+
+多通道卷积不同的通道上的卷积核的参数是不同的，而3D卷积则由于卷积核本身是3D的，所以这个由于“深度”造成的看似不同通道上用的就是同一个卷积
+
+论文：
+
+《A two-stage 3D Unet framework for multi-class segmentation on full resolution image》
+
+![](/images/img2/UNet-3D.jpg)
+
+上图是一个用于CT图像的语义分割网络。其结构仿照UNet，故被称作UNet-3D。
+
+处理大型高分辨率3D数据时的一个常见问题是，由于计算设备的存储容量有限，输入深度CNN的体积必须进行裁剪（crop）或降采样（downsample）。这些操作会导致输入数据 batches 中分辨率的降低和类不平衡的增加，从而降低分割算法的性能。
+
+受到图像超分辨率CNN（SRCNN）和self-normalization（SNN）的架构的启发，我们开发了一个两阶段修改的Unet框架，它可以同时学习检测整个体积内的ROI并对体素进行分类而不会丢失原始图像解析度。对各种多模式音量的实验表明，当用简单加权的模子系数和我们定制的学习程序进行训练时，该框架显示比具有高级相似性度量标准的最先进的深CNN更好的分割性能。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/21325913
+
+3D卷积神经网络Note01
+
+https://zhuanlan.zhihu.com/p/21331911
+
+3D卷积神经网络Note02
+
+https://zhuanlan.zhihu.com/p/31841353
+
+3D CNN阅读笔记
+
+https://mp.weixin.qq.com/s/tcuyp4SK_9zXZKZtUu8h9Q
+
+从2D卷积到3D卷积，都有什么不一样
+
+https://zhuanlan.zhihu.com/p/25912625
+
+C3D network: 用于视频特征提取的3维卷积网络
+
+https://zhuanlan.zhihu.com/p/26350774
+
+SCNN-用于时序动作定位的多阶段3D卷积网络
+
+https://www.jiqizhixin.com/articles/2016-08-03
+
+FusionNet融合三个卷积网络：识别对象从二维升级到三维
+
+http://blog.csdn.net/zouxy09/article/details/9002508
+
+基于3D卷积神经网络的人体行为理解
+
+https://mp.weixin.qq.com/s/YdON6Yzddq2f_QGbQsOY8w
+
+深度三维残差神经网络：视频理解新突破
+
 ## 参考
 
 https://github.com/vdumoulin/conv_arithmetic
@@ -148,204 +262,18 @@ https://zhuanlan.zhihu.com/p/46633171
 
 深度卷积神经网络中的降采样
 
-# ESN
+https://mp.weixin.qq.com/s/1gBC-bp4Q4dPr0XMYPStXA
 
-Echo State Network
+万字长文带你看尽深度学习中的各种卷积网络
 
-https://blog.csdn.net/zwqhehe/article/details/77025035
+https://mp.weixin.qq.com/s/qReN6z8s45870HSMCMNatw
 
-回声状态网络(ESN)原理详解
+微软亚洲研究院：逐层集中Attention的卷积模型
 
-https://mp.weixin.qq.com/s/tjawT2-bhPrit0Fd4knSgA
+http://blog.csdn.net/shuzfan/article/details/77964370
 
-基于回声状态网络预测股票价格
+不规则卷积神经网络
 
-# 元学习
+https://mp.weixin.qq.com/s/rXr_XBc2Psh3NSA0pj4ptQ
 
-人工智能的历史显示了明确的进展方向：
-
-第一代：**良好的老式人工智能**
-
->手工预测   
->什么都不学
-
-第二代：**浅学习**
-
->手工功能   
->学习预测
-
-第三代：**深度学习**
-
->手工算法（优化器，目标，架构......）   
->端到端地学习功能和预测
-
-第四代：**元学习**
-
->无手工   
->端到端学习算法和功能以及预测
-
-## 参考
-
-https://github.com/gopala-kr/meta-learning
-
-元学习（meta-learning）相关文献资源大列表
-
-https://github.com/sudharsan13296/Awesome-Meta-Learning
-
-元学习相关资源汇总
-
-https://mp.weixin.qq.com/s/KKK3VEpwL90g6Aro8qtXxQ
-
-学习如何学习的算法：简述元学习研究方向现状
-
-https://mp.weixin.qq.com/s/qoKQwEvOnP384i5Z-_jO1A
-
-CVPR2019最新元学习教程：基于元学习的计算机视觉应用
-
-https://mp.weixin.qq.com/s/KtO3OTZ-bZ6m0ZSI6jTyjw
-
-OpenAI提出Reptile：可扩展的元学习算法
-
-https://mp.weixin.qq.com/s/T4GiL9vW7ALOzWloE_QQBA
-
-OpenAI开发可拓展元学习算法Reptile，能快速学习
-
-https://mp.weixin.qq.com/s/MWcoGsQJg1GBbSqzyPD9uQ
-
-基于梯度的元学习算法，可高效适应非平稳环境
-
-https://zhuanlan.zhihu.com/p/35695477
-
-基于Meta Learning在动态竞争环境中实现策略自适应
-
-https://mp.weixin.qq.com/s/AhadWUjtgsFmb8uTylTvqg
-
-OpenAI提出新型元学习方法EPG，调整损失函数实现新任务上的快速训练
-
-https://mp.weixin.qq.com/s/dmRdp2oMn0vGukclJSVZDg
-
-Uber AI论文：利用反向传播训练可塑神经网络，生物启发的元学习范式
-
-https://mp.weixin.qq.com/s/Cc4EHc6ei-PtZWhewM10xw
-
-学习如何学习的算法：简述元学习研究方向现状
-
-https://mp.weixin.qq.com/s/4f6-gXovdrYk7240TrUwJg
-
-谷歌大脑：基于元学习的无监督学习更新规则
-
-https://mp.weixin.qq.com/s/cAbMB-DB9vu2ua8t5J28ww
-
-从零开始，了解元学习
-
-https://mp.weixin.qq.com/s/Q36vpS1HF2IfeCsFLh656A
-
-基于元强化学习的神经科学新理论
-
-https://mp.weixin.qq.com/s/XtzvHOk7CdXRBy02kUmgsg
-
-近期爆火的Meta Learning，遗传算法与深度学习的火花，再不了解你就out了
-
-https://mp.weixin.qq.com/s/KvgYyuyICueNQPo_S27fEA
-
-BAIR展示新型模仿学习，学会像人那样执行任务
-
-https://zhuanlan.zhihu.com/p/41223529
-
-最前沿:Meta RL论文解读
-
-https://zhuanlan.zhihu.com/p/40600485
-
-最前沿：Meta Learning前沿进展扫描
-
-https://zhuanlan.zhihu.com/p/28639662
-
-百家争鸣的Meta Learning/Learning to learn
-
-https://zhuanlan.zhihu.com/p/45845001
-
-最前沿：用模仿学习来学习增强学习
-
-https://zhuanlan.zhihu.com/p/46059552
-
-Meta Learning单排小教学
-
-https://zhuanlan.zhihu.com/p/46131981
-
-最前沿：Meta Learning在少样本文本翻译上的应用
-
-https://zhuanlan.zhihu.com/p/46339823
-
-谈谈无监督Meta Learning的研究
-
-https://zhuanlan.zhihu.com/p/46340382
-
-ICLR19最新论文解读之Meta Domain Adaptation
-
-https://mp.weixin.qq.com/s/RBMGI20AI92ZcWSlYczqAA
-
-伯克利、OpenAI等提出基于模型的元策略优化强化学习
-
-https://mp.weixin.qq.com/s/p0dcov84pZqsU7XP30bexQ
-
-Meta-Learning元学习：学会快速学习
-
-https://mp.weixin.qq.com/s/wl8j7dLu3OxPV7MNaO2-7Q
-
-《基于梯度的元学习》199页伯克利博士论文带你回顾元学习最新发展脉络
-
-https://mp.weixin.qq.com/s/ftiGPBhAx5iqlW_Ltg1yhg
-
-《元监督视觉学习》132页伯克利博士论文带你回顾元监督视觉应用最新发展脉络
-
-https://mp.weixin.qq.com/s/K7sLM-LMcF6-gQrV1ddrDw
-
-让智能体主动交互，DeepMind提出用元强化学习实现因果推理
-
-https://mp.weixin.qq.com/s/8sBXlnXiZNsPRwFsgJVRQQ
-
-谷歌提出元奖励学习，两大基准测试刷新最优结果
-
-https://mp.weixin.qq.com/s/x7uk7jBNvnM7Tgk9lFKy3Q
-
-元学习(Meta-Learning)综述及五篇顶会论文推荐
-
-https://mp.weixin.qq.com/s/GF_NLkSw64_6msmFep81fw
-
-Google Brain ICLR Talk：元学习的前沿与挑战
-
-https://mp.weixin.qq.com/s/sQmDZsVGIADwO97yEFATkw
-
-ICML2019《元学习》教程与必读论文列表
-
-https://zhuanlan.zhihu.com/p/70782949
-
-最前沿：General Meta Learning
-
-https://mp.weixin.qq.com/s/rZdd-vWlicynthaSasX3kQ
-
-Meta Learning入门：MAML 和 Reptile
-
-https://mp.weixin.qq.com/s/MsIAkJAcYHWkkMjzd7qXKA
-
-元学习与强化学习的概率视角，47页ppt，DeepMind牛津Yee Whye Teh
-
-https://mp.weixin.qq.com/s/IdUhvWJYviKtPs9jCbtybA
-
-元知识图谱推理
-
-https://www.zhihu.com/question/291656490
-
-求问meta-learning和few-shot learning的关系是什么？
-
-https://mp.weixin.qq.com/s/LZbprcnben6vPqsoC1DgDA
-
-DeepMind提出元梯度强化学习算法，显著提高大规模深度强化学习应用的性能
-
-https://mp.weixin.qq.com/s/AH35EGTH1YDSx4WzUwY15g
-
-三四行代码打造元学习核心，PyTorch元学习库L2L现已开源
-
-https://github.com/tristandeleu/pytorch-meta
-
-PyTorch上方便好用的元学习工具包
+常建龙：深度卷积网络中的卷积算子研究进展

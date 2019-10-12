@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十二）——Siamese network, 姿态/行为检测
+title:  深度学习（十二）——Siamese network, SENet, 姿态/行为检测
 category: DL 
 ---
 
@@ -63,6 +63,68 @@ https://mp.weixin.qq.com/s/GlS2VJdX7Y_nfBOEnUt2NQ
 https://mp.weixin.qq.com/s/lDlijjIUGmzNzcP89IzJnw
 
 张志鹏:基于siamese网络的单目标跟踪
+
+# SENet
+
+无论是在Inception、DenseNet或者ShuffleNet里面，我们对所有通道产生的特征都是不分权重直接结合的，那为什么要认为所有通道的特征对模型的作用就是相等的呢？这是一个好问题，于是，ImageNet2017冠军SEnet就出来了。
+
+论文：
+
+《Squeeze-and-Excitation Networks》
+
+代码：
+
+https://github.com/hujie-frank/SENet
+
+Sequeeze-and-Excitation(SE) block并不是一个完整的网络结构，而是一个子结构，可以嵌到其他分类或检测模型中。
+
+![](/images/img2/SENet.png)
+
+上图就是SE block的示意图。其步骤如下：
+
+1.转换操作$$F_{tr}$$。这一步就是普通的卷积操作，将输入tensor的shape由$$W'\times H'\times C'$$变为$$W\times H\times C$$。
+
+2.Squeeze操作。
+
+$$z_c = F_{sq}(u_c) = \frac{1}{H\times W}\sum_{i=1}^H \sum_{j=1}^W u_c(i,j)$$
+
+这实际上就是一个global average pooling。
+
+3.Excitation操作。
+
+$$s=F_{ex}(z,W) = \sigma(g(z,W)) = \sigma(W_2 \sigma(W_1 z))$$
+
+其中，$$W_1$$的维度是$$C/r \times C$$，这个r是一个缩放参数，在文中取的是16，这个参数的目的是为了减少channel个数从而降低计算量。
+
+$$W_2$$的维度是$$C \times C/r$$，这样s的维度就恢复到$$1 \times 1 \times C$$，正好和z一致。
+
+4.channel-wise multiplication。
+
+$$\tilde{x_c} = F_{scale}(u_c, s_c)=s_c \cdot u_c$$
+
+![](/images/img2/SENet_2.png)
+
+![](/images/img2/SENet_3.png)
+
+上面两图演示了如何将SE block嵌入网络的办法。
+
+参考：
+
+https://mp.weixin.qq.com/s/tLqsWWhzUU6TkDbhnxxZow
+
+Momenta详解ImageNet 2017夺冠架构SENet
+
+http://blog.csdn.net/u014380165/article/details/78006626
+
+SENet（Squeeze-and-Excitation Networks）算法笔记
+
+https://mp.weixin.qq.com/s/ao7gOfMYDJDPsNMVV9-Dlg
+
+后ResNet时代：SENet与SKNet
+
+https://mp.weixin.qq.com/s/Tox7jEFNHFHZQ-KdojMIpA
+
+GCNet：当Non-local遇见SENet
 
 # 姿态/行为检测
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十六）——Style Transfer（2）, 人脸检测/识别（1）, SENet
+title:  深度学习（十六）——Style Transfer（2）, 人脸检测/识别（1）
 category: DL 
 ---
 
@@ -202,13 +202,13 @@ https://mp.weixin.qq.com/s/OzancX-44Si13ZtZiONnpQ
 
 ![](/images/img2/CascadeCNN_2.jpg)
 
-1、按照一般的方法组织正负样本训练第一阶段的12-net和12-calibration-net网络；
+1.按照一般的方法组织正负样本训练第一阶段的12-net和12-calibration-net网络；
 
-2、 利用上述的1层网络在AFLW数据集上作人脸检测，在保证99%的召回率的基础上确定判别阈值T1。
+2.利用上述的1层网络在AFLW数据集上作人脸检测，在保证99%的召回率的基础上确定判别阈值T1。
 
-3、将在AFLW上判为人脸的非人脸窗口作为负样本，将所有真实人脸作为正样本，训练第二阶段的24-net和24-calibration-net网络；
+3.将在AFLW上判为人脸的非人脸窗口作为负样本，将所有真实人脸作为正样本，训练第二阶段的24-net和24-calibration-net网络；
 
-4、重复2和3，完成最后阶段的训练。
+4.重复2和3，完成最后阶段的训练。
 
 参考：
 
@@ -232,6 +232,16 @@ stage2: 将通过stage1的所有窗口输入作进一步判断，同时也要做
 
 stage3: 和stage2相似，只不过增加了更强的约束：5个人脸关键点（landmark）。
 
+![](/images/img3/P-Net.jpg)
+
+![](/images/img3/R-Net.jpg)
+
+![](/images/img3/O-Net.jpg)
+
+上面三图分别是P-Net、R-Net和O-Net的网络结构图。
+
+需要注意的是，Cascade CNN和MTCNN都是比较早期的方案了，这里的人脸候选框，一般是用**滑动窗口**的方式生成的，这种方法的效率不高，不仅比不上Faster RCNN以后的RPN Layer，就连RCNN的Selective Search也颇有不如，完全就是Viola-Jones方法的简单翻版。
+
 参考：
 
 http://blog.csdn.net/qq_14845119/article/details/52680940
@@ -249,65 +259,3 @@ https://mp.weixin.qq.com/s/IrZEQ69RNUdcs0Fl8fHmmQ
 https://mp.weixin.qq.com/s/NfqFj5iCIkbRD34Eu2Lb5g
 
 MTCNN实时人脸检测网络详解与代码演示
-
-# SENet
-
-无论是在Inception、DenseNet或者ShuffleNet里面，我们对所有通道产生的特征都是不分权重直接结合的，那为什么要认为所有通道的特征对模型的作用就是相等的呢？这是一个好问题，于是，ImageNet2017冠军SEnet就出来了。
-
-论文：
-
-《Squeeze-and-Excitation Networks》
-
-代码：
-
-https://github.com/hujie-frank/SENet
-
-Sequeeze-and-Excitation(SE) block并不是一个完整的网络结构，而是一个子结构，可以嵌到其他分类或检测模型中。
-
-![](/images/img2/SENet.png)
-
-上图就是SE block的示意图。其步骤如下：
-
-1.转换操作$$F_{tr}$$。这一步就是普通的卷积操作，将输入tensor的shape由$$W'\times H'\times C'$$变为$$W\times H\times C$$。
-
-2.Squeeze操作。
-
-$$z_c = F_{sq}(u_c) = \frac{1}{H\times W}\sum_{i=1}^H \sum_{j=1}^W u_c(i,j)$$
-
-这实际上就是一个global average pooling。
-
-3.Excitation操作。
-
-$$s=F_{ex}(z,W) = \sigma(g(z,W)) = \sigma(W_2 \sigma(W_1 z))$$
-
-其中，$$W_1$$的维度是$$C/r \times C$$，这个r是一个缩放参数，在文中取的是16，这个参数的目的是为了减少channel个数从而降低计算量。
-
-$$W_2$$的维度是$$C \times C/r$$，这样s的维度就恢复到$$1 \times 1 \times C$$，正好和z一致。
-
-4.channel-wise multiplication。
-
-$$\tilde{x_c} = F_{scale}(u_c, s_c)=s_c \cdot u_c$$
-
-![](/images/img2/SENet_2.png)
-
-![](/images/img2/SENet_3.png)
-
-上面两图演示了如何将SE block嵌入网络的办法。
-
-参考：
-
-https://mp.weixin.qq.com/s/tLqsWWhzUU6TkDbhnxxZow
-
-Momenta详解ImageNet 2017夺冠架构SENet
-
-http://blog.csdn.net/u014380165/article/details/78006626
-
-SENet（Squeeze-and-Excitation Networks）算法笔记
-
-https://mp.weixin.qq.com/s/ao7gOfMYDJDPsNMVV9-Dlg
-
-后ResNet时代：SENet与SKNet
-
-https://mp.weixin.qq.com/s/Tox7jEFNHFHZQ-KdojMIpA
-
-GCNet：当Non-local遇见SENet

@@ -267,6 +267,10 @@ https://mp.weixin.qq.com/s/rHkfb1pZhtzVjzYiTRB4WA
 
 交替方向乘子法（ADMM）的基本原理
 
+https://mp.weixin.qq.com/s/4uaaeZSXavbVuU8d1AZA6Q
+
+浅谈交替方向乘子法(ADMM)的经典使用
+
 https://mp.weixin.qq.com/s/E3Iq8YpIZRZOk7SP-cu1xQ
 
 如何找到全局最小值？先让局部极小值消失吧

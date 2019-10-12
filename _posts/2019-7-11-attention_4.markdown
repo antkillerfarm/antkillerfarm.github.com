@@ -4,6 +4,30 @@ title:  Attention（四）——Attention进阶
 category: Attention 
 ---
 
+# BERT
+
+## 参考（续）
+
+https://mp.weixin.qq.com/s/kJhOrz0VaYc-k-6XJS02ag
+
+8篇论文梳理BERT相关模型进展与反思
+
+https://mp.weixin.qq.com/s/-eBL9gFbAGFtmqkLMAoUTw
+
+文本+视觉，多篇Visual/Video BERT论文介绍
+
+https://mp.weixin.qq.com/s/hI9XAiqKaHLq-Z9JkaWA_A
+
+解决自然语言歧义问题，斯坦福教授、IJCAI卓越研究奖得主提出SenseBERT模型
+
+https://mp.weixin.qq.com/s/55B0ToIKDusiPI5farR19w
+
+NLP这两年：15个预训练模型对比分析与剖析
+
+https://www.zhihu.com/question/347898375
+
+如何看待瘦身成功版BERT——ALBERT？
+
 # Attention进阶
 
 https://mp.weixin.qq.com/s/ZSzHOu6uowRSoWrqB7vOaQ
