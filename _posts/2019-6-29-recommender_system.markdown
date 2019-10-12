@@ -239,3 +239,7 @@ https://mp.weixin.qq.com/s/sboWpGTuf8rpRUz4G7PdKw
 https://mp.weixin.qq.com/s/QThtXNF9oIE5bXF5kaSg5w
 
 如何优化大规模推荐？下一代算法技术JTM来了
+
+https://mp.weixin.qq.com/s/Od2_u1uP5S7htjDKuEDSTw
+
+数据质量良莠不齐？携程是这样来做多场景下的内容智能发现的

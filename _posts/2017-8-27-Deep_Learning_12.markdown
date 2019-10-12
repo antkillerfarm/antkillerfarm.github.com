@@ -1,8 +1,130 @@
 ---
 layout: post
-title:  深度学习（十二）——姿态/行为检测
+title:  深度学习（十二）——Siamese network, SENet, 姿态/行为检测
 category: DL 
 ---
+
+# Siamese network
+
+Siamese和Chinese有点像。Siam是古时候泰国的称呼，中文译作暹罗。Siamese也就是“暹罗”人或“泰国”人。Siamese在英语中是“孪生”、“连体”的意思，这是为什么呢？
+
+>十九世纪泰国出生了一对连体婴儿，当时的医学技术无法使两人分离出来，于是两人顽强地生活了一生，1829年被英国商人发现，进入马戏团，在全世界各地表演，1839年他们访问美国北卡罗莱那州，后来成为“玲玲马戏团” 的台柱，最后成为美国公民。1843年4月13日跟英国一对姐妹结婚，恩生了10个小孩，昌生了12个，姐妹吵架时，兄弟就要轮流到每个老婆家住三天。1874年恩因肺病去世，另一位不久也去世，两人均于63岁离开人间。两人的肝至今仍保存在费城的马特博物馆内。从此之后“暹罗双胞胎”（Siamese twins）就成了连体人的代名词，也因为这对双胞胎让全世界都重视到这项特殊疾病。
+
+![](/images/img3/Siamese_network.jpg)
+
+上图摘自LeCun 1993年的论文：
+
+《Signature Verification using a ‘Siamese’ Time Delay Neural Network》
+
+Siamese network有两个输入（Input1 and Input2）,将两个输入feed进入两个神经网络（Network1 and Network2），这两个神经网络分别将输入映射到新的空间，形成输入在新的空间中的表示。通过Loss的计算，评价两个输入的相似度。
+
+在上图中，两个输入分别是支票上的签名与银行预留签名。我们可以使用Siamese network来验证两者是否一致。
+
+Siamese network也可进一步细分：
+
+- 如果Network1和Network2的结构和参数都相同，则称为Siamese network。
+
+- 如果两个网络不共享参数，则称为pseudo-siamese network。对于pseudo-siamese network，两边可以是不同的神经网络（如一个是lstm，一个是cnn），也可以是相同类型的神经网络。
+
+除了Siamese network之外，类似的还有三胞胎连体——Triplet network。
+
+![](/images/img3/Triplet_network.jpg)
+
+输入是三个，一个正例+两个负例，或者一个负例+两个正例，训练的目标是让相同类别间的距离尽可能的小，让不同类别间的距离尽可能的大。
+
+Siamese network由于输入是一对样本，因此它更能理解样本间的差异，使得数据量相对较小的数据集也能用深度网络训练出不错的效果。
+
+参考：
+
+https://blog.csdn.net/shenziheng1/article/details/81213668
+
+Siamese Network（原理篇）
+
+https://www.jianshu.com/p/92d7f6eaacf5
+
+Siamese network孪生神经网络--一个简单神奇的结构
+
+https://blog.csdn.net/sxf1061926959/article/details/54836696
+
+Siamese Network理解
+
+https://vra.github.io/2016/12/13/siamese-caffe/
+
+Caffe中的Siamese网络
+
+https://mp.weixin.qq.com/s/rPC542OcO8B4bjxn7JRFrw
+
+深度学习网络只能有一个输入吗
+
+https://mp.weixin.qq.com/s/GlS2VJdX7Y_nfBOEnUt2NQ
+
+使用Siamese神经网络进行人脸识别
+
+https://mp.weixin.qq.com/s/lDlijjIUGmzNzcP89IzJnw
+
+张志鹏:基于siamese网络的单目标跟踪
+
+# SENet
+
+无论是在Inception、DenseNet或者ShuffleNet里面，我们对所有通道产生的特征都是不分权重直接结合的，那为什么要认为所有通道的特征对模型的作用就是相等的呢？这是一个好问题，于是，ImageNet2017冠军SEnet就出来了。
+
+论文：
+
+《Squeeze-and-Excitation Networks》
+
+代码：
+
+https://github.com/hujie-frank/SENet
+
+Sequeeze-and-Excitation(SE) block并不是一个完整的网络结构，而是一个子结构，可以嵌到其他分类或检测模型中。
+
+![](/images/img2/SENet.png)
+
+上图就是SE block的示意图。其步骤如下：
+
+1.转换操作$$F_{tr}$$。这一步就是普通的卷积操作，将输入tensor的shape由$$W'\times H'\times C'$$变为$$W\times H\times C$$。
+
+2.Squeeze操作。
+
+$$z_c = F_{sq}(u_c) = \frac{1}{H\times W}\sum_{i=1}^H \sum_{j=1}^W u_c(i,j)$$
+
+这实际上就是一个global average pooling。
+
+3.Excitation操作。
+
+$$s=F_{ex}(z,W) = \sigma(g(z,W)) = \sigma(W_2 \sigma(W_1 z))$$
+
+其中，$$W_1$$的维度是$$C/r \times C$$，这个r是一个缩放参数，在文中取的是16，这个参数的目的是为了减少channel个数从而降低计算量。
+
+$$W_2$$的维度是$$C \times C/r$$，这样s的维度就恢复到$$1 \times 1 \times C$$，正好和z一致。
+
+4.channel-wise multiplication。
+
+$$\tilde{x_c} = F_{scale}(u_c, s_c)=s_c \cdot u_c$$
+
+![](/images/img2/SENet_2.png)
+
+![](/images/img2/SENet_3.png)
+
+上面两图演示了如何将SE block嵌入网络的办法。
+
+参考：
+
+https://mp.weixin.qq.com/s/tLqsWWhzUU6TkDbhnxxZow
+
+Momenta详解ImageNet 2017夺冠架构SENet
+
+http://blog.csdn.net/u014380165/article/details/78006626
+
+SENet（Squeeze-and-Excitation Networks）算法笔记
+
+https://mp.weixin.qq.com/s/ao7gOfMYDJDPsNMVV9-Dlg
+
+后ResNet时代：SENet与SKNet
+
+https://mp.weixin.qq.com/s/Tox7jEFNHFHZQ-KdojMIpA
+
+GCNet：当Non-local遇见SENet
 
 # 姿态/行为检测
 

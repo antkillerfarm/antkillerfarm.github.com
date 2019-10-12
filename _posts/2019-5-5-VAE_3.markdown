@@ -309,3 +309,7 @@ https://mp.weixin.qq.com/s/3ZHlWlO0FdnQTnskcrz2IA
 https://mp.weixin.qq.com/s/KtKYk08xEqwA43Phxw2-_w
 
 基于自编码器的通用性文本表征
+
+https://mp.weixin.qq.com/s/hwb3eRWbwa9weCWz1ypOxw
+
+VAE系解纠缠：从VAE到βVAE，再到β-TCVAE

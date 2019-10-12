@@ -54,6 +54,10 @@ https://mp.weixin.qq.com/s/QZ7PGvi27LiDOJaxici7Pw
 
 数据蒸馏Dataset Distillation
 
+https://mp.weixin.qq.com/s/vGTqHif48O2GZhuxWFhOLw
+
+知识蒸馏总结、应用与扩展（2015-2019）
+
 https://mp.weixin.qq.com/s/mFuxCl0Mzv5hmDFewWZkrw
 
 FAIR&MIT提出知识蒸馏新方法：数据集蒸馏

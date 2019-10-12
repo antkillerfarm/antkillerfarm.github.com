@@ -30,6 +30,10 @@ https://github.com/jessevig/bertviz
 
 Tool for visualizing attention in the Transformer model (BERT, GPT-2, XLNet, and RoBERTa)
 
+https://github.com/thunlp/PLMpapers
+
+预训练语言模型关系图+必读论文列表，清华荣誉出品
+
 ## ELMo
 
 https://mp.weixin.qq.com/s/I315hYPrxV0YYryqsUysXw
@@ -395,23 +399,3 @@ Bert改进：如何融入知识
 https://mp.weixin.qq.com/s/in5SDWlQg8ts4E8DTmHxMQ
 
 BERT在推荐系统领域可能会有什么作为？
-
-https://mp.weixin.qq.com/s/kJhOrz0VaYc-k-6XJS02ag
-
-8篇论文梳理BERT相关模型进展与反思
-
-https://mp.weixin.qq.com/s/-eBL9gFbAGFtmqkLMAoUTw
-
-文本+视觉，多篇Visual/Video BERT论文介绍
-
-https://mp.weixin.qq.com/s/hI9XAiqKaHLq-Z9JkaWA_A
-
-解决自然语言歧义问题，斯坦福教授、IJCAI卓越研究奖得主提出SenseBERT模型
-
-https://mp.weixin.qq.com/s/55B0ToIKDusiPI5farR19w
-
-NLP这两年：15个预训练模型对比分析与剖析
-
-https://www.zhihu.com/question/347898375
-
-如何看待瘦身成功版BERT——ALBERT？

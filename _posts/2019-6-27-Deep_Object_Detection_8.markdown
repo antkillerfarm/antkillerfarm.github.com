@@ -189,3 +189,7 @@ COCO mAP 53.3！骨干网合成算法CBNet带来目标检测精度新突破
 https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247499933&idx=1&sn=b9fe7d6714c44acedd12a60cfe6b1c60
 
 小样本域适应的目标检测
+
+https://zhuanlan.zhihu.com/p/84890413
+
+PolarMask：一阶段实例分割新思路

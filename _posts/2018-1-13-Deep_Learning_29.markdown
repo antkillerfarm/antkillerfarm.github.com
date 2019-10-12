@@ -4,48 +4,6 @@ title:  深度学习（二十九）——Graph NN
 category: DL 
 ---
 
-# 花式卷积进阶
-
-## 3D卷积（续）
-
-https://zhuanlan.zhihu.com/p/25912625
-
-C3D network: 用于视频特征提取的3维卷积网络
-
-https://zhuanlan.zhihu.com/p/26350774
-
-SCNN-用于时序动作定位的多阶段3D卷积网络
-
-https://www.jiqizhixin.com/articles/2016-08-03
-
-FusionNet融合三个卷积网络：识别对象从二维升级到三维
-
-http://blog.csdn.net/zouxy09/article/details/9002508
-
-基于3D卷积神经网络的人体行为理解
-
-https://mp.weixin.qq.com/s/YdON6Yzddq2f_QGbQsOY8w
-
-深度三维残差神经网络：视频理解新突破
-
-## 参考
-
-https://mp.weixin.qq.com/s/1gBC-bp4Q4dPr0XMYPStXA
-
-万字长文带你看尽深度学习中的各种卷积网络
-
-https://mp.weixin.qq.com/s/qReN6z8s45870HSMCMNatw
-
-微软亚洲研究院：逐层集中Attention的卷积模型
-
-http://blog.csdn.net/shuzfan/article/details/77964370
-
-不规则卷积神经网络
-
-https://mp.weixin.qq.com/s/rXr_XBc2Psh3NSA0pj4ptQ
-
-常建龙：深度卷积网络中的卷积算子研究进展
-
 # Graph NN
 
 ![](/images/img3/GNN.jpg)
@@ -405,3 +363,19 @@ https://mp.weixin.qq.com/s/aGP8pcsCmEdjdCWVjA82Jg
 https://mp.weixin.qq.com/s/CpDZEqo14X_lCBh6i7feIA
 
 图卷积神经网络(GCN)文本分类详述
+
+https://mp.weixin.qq.com/s/XApSbi-Pg-AeYGkPN3fldg
+
+旷视研究院提出ML-GCN：基于图卷积网络的多标签图像识别模型
+
+https://mp.weixin.qq.com/s/49vnVOO0G_JvKrWcsN2_Ww
+
+关系图注意力网络-Relational Graph Attention Networks
+
+https://mp.weixin.qq.com/s/rvcj9-6KlBsVmF_CAsip2A
+
+超越标准GNN！DeepMind、谷歌提出图匹配网络
+
+https://mp.weixin.qq.com/s/UotqgRjCTpjPrsIEWBRPxA
+
+基于随机游走的图匹配算法

@@ -33,3 +33,11 @@ https://blog.csdn.net/iverson_49/article/details/38160081
 https://mp.weixin.qq.com/s?__biz=MzI0ODcxODk5OA==&mid=2247508603&idx=2&sn=cfb091884ccc7a0ea03af38b1a629823
 
 巧解图像处理经典难题之图像配准
+
+https://blog.csdn.net/autocyz/article/details/48136473
+
+相关滤波跟踪（MOSSE）
+
+https://blog.csdn.net/qq_17783559/article/details/82254996
+
+MOSSE原理及代码解析

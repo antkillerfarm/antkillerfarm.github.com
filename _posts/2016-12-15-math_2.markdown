@@ -60,6 +60,10 @@ https://bl.ocks.org/jinroh/7524988
 
 Fourier series visualisation with d3.js
 
+https://mp.weixin.qq.com/s/OEo0aboqxQ42ZfMFACXQPw
+
+信号与系统公式大全（傅里叶变换、拉普拉斯变换、Z变换、卷积...）
+
 # DFT
 
 FT针对的是连续信号，但数字信号处理只能处理离散数据，于是就有了Discrete-time Fourier transform（DTFT）：

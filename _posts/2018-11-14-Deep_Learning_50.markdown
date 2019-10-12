@@ -89,3 +89,7 @@ https://mp.weixin.qq.com/s/MX2R9KgG6tXWEeviRRgBqQ
 https://mp.weixin.qq.com/s/PzUqtBJFykB839Ff7yafoA
 
 机器推理系列文章概览：七大NLP任务最新方法与进展
+
+https://mp.weixin.qq.com/s/JXMD8uGcVQImcZULWZiGkg
+
+跨语言预训练，提高机器推理的迁移能力

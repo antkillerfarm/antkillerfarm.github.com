@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十二）——深度ISP, Spiking Neuron Networks, 深度时间序列, AI可解释性, 手势识别
+title:  深度学习（四十二）——深度ISP, Spiking Neuron Networks, 深度时间序列, AI可解释性, 手势识别, NetVLAD
 category: DL 
 ---
 
@@ -353,3 +353,55 @@ https://blog.csdn.net/wangyaninglm/article/details/87296595
 https://mp.weixin.qq.com/s/ji8sEzJXp1UNgBHVOui0ng
 
 谷歌开源手势识别器，手机能用，还有现成的 App，但是被我们玩坏了
+
+# NetVLAD
+
+NetVLAD算的上是CNN+传统算子的一个范例。
+
+论文：
+
+《NetVLAD: CNN architecture for weakly supervised place recognition》
+
+《GhostVLAD for set-based face recognition》
+
+数据集：
+
+http://places.csail.mit.edu/
+
+## VLAD
+
+Vector of Locally Aggregated Descriptors
+
+https://www.cnblogs.com/minemine/p/7364950.html
+
+场景分类(scene classification)摘录
+
+http://www.cnblogs.com/mafuqiang/p/6909556.html
+
+图像检索——VLAD
+
+## 参考
+
+https://www.oukohou.wang/2018/11/27/NetVLAD/
+
+论文阅读-NetVLAD
+
+https://www.oukohou.wang/2018/12/26/GhostVLAD/
+
+论文阅读-GhostVLAD
+
+https://mp.weixin.qq.com/s/cfUl0Eym0mu7rSJJL7Zt1A
+
+基于深度学习的视觉实例搜索研究进展
+
+https://zhuanlan.zhihu.com/p/25013378
+
+深度纹理编码网络 (Deep TEN: Texture Encoding Network)
+
+https://blog.csdn.net/LiGuang923/article/details/85416407
+
+图像检索与降维（一）：VLAD
+
+https://blog.csdn.net/LiGuang923/article/details/85470289
+
+图像检索与降维（二）：NetVLAD

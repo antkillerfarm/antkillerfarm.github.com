@@ -242,6 +242,10 @@ https://mp.weixin.qq.com/s/IrpIMNxQ4frgBKl5pbsfdg
 
 达观数据：用好学习排序(LTR),资讯信息流推荐效果翻倍
 
+https://mp.weixin.qq.com/s/8vdl8QOJNTP6Wekm4LR3mA
+
+LTR那点事—AUC及其与线上点击率的关联详解
+
 https://mp.weixin.qq.com/s/MtnHYmPVoDAid9SNHnlzUw
 
 阿里妈妈首次公开自研CTR预估核心算法MLR

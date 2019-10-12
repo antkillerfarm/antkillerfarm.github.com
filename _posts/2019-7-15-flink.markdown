@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Flink, Beam, Parquet
+title:  Flink, Parquet, Beam, ORC, Apache Arrow
 category: AI 
 ---
 
@@ -179,3 +179,17 @@ https://mp.weixin.qq.com/s/z9xpjhL5gS9w9ZpcZWee3g
 https://mp.weixin.qq.com/s/aVLBXS-eiWVpvIbeE2JVIw
 
 阿里巴巴如何打造“EB级计算平台存储引擎”？
+
+# Apache Arrow
+
+Apache Arrow设计的目的在于作为一个跨平台的数据层，来加快大数据分析项目的运行速度。
+
+参考：
+
+https://www.cnblogs.com/smartloli/p/6367719.html
+
+Apache Arrow内存数据
+
+https://mp.weixin.qq.com/s/5UtpFg7Zmm6WY0OOxzeueQ
+
+TensorFlow与Apache Arrow数据集搭配最佳实践

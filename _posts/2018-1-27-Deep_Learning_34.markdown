@@ -234,6 +234,10 @@ https://mp.weixin.qq.com/s?__biz=MzI1NjM1ODEyMg==&mid=2247484632&idx=1&sn=e3ed25
 
 嵌入方法在推荐系统中的应用
 
+https://zhuanlan.zhihu.com/p/85739175
+
+关于句子表征的学习笔记
+
 # CNN进阶
 
 http://mp.weixin.qq.com/s/ddTNr-967IahTZ2X1LNSEQ

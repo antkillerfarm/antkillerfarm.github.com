@@ -112,6 +112,16 @@ https://mp.weixin.qq.com/s/3djAWJs6ecDdPSpQMxqmrg
 
 # 深度目标跟踪
 
+![](/images/img3/recent_Tracker_development.png)
+
+原图地址：
+
+https://github.com/foolwood/benchmark_results
+
+这也是一个Visual Tracking的Paper List。
+
+参考：
+
 https://zhuanlan.zhihu.com/p/22334661
 
 深度学习在目标跟踪中的应用
@@ -124,13 +134,17 @@ https://mp.weixin.qq.com/s/yunmBZ_5acDZlIN0mLf66g
 
 《视觉跟踪最新方法与趋势》，44页最新综述带你全面了解视觉跟踪领域发展方向
 
-https://mp.weixin.qq.com/s/3R8zaFUKFTvp0uE8lY44WA
+https://zhuanlan.zhihu.com/p/76153871
 
-首个应用残差学习的深度目标跟踪算法
+一文带你了解视觉目标跟踪
 
 https://zhuanlan.zhihu.com/p/27293523
 
 目标跟踪领域进展报告
+
+https://mp.weixin.qq.com/s/3R8zaFUKFTvp0uE8lY44WA
+
+首个应用残差学习的深度目标跟踪算法
 
 https://zhuanlan.zhihu.com/p/27335895
 

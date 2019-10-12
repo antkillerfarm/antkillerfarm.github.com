@@ -101,7 +101,7 @@ y_t &= \sigma_y(W_{y} h_t + b_y)
 
 >美国的创立者，一般被翻译为Founding Fathers of the United States。此外还有一个更响亮的称号76ers。没错，NBA那支球队的名字就是这么来的。
 
-除了Elman RNN之外，还有Jordan RNN。（没错，吴恩达的导师的作品）
+除了Elman RNN之外，还有Jordan RNN。（没错，这就是吴恩达的导师的作品）
 
 $$\begin{align}
 h_t &= \sigma_h(W_{h} x_t + U_{h} y_{t-1} + b_h) \\

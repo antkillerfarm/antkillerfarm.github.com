@@ -265,3 +265,7 @@ https://mp.weixin.qq.com/s?__biz=MzU1NTMyOTI4Mw==&mid=2247494226&idx=1&sn=a96ea0
 https://mp.weixin.qq.com/s/uppNSwxNrw4_8NGBQv85xw
 
 今日头条首次改进DQN网络，解决推荐中的在线广告投放问题
+
+https://mp.weixin.qq.com/s/Uin1gOmJEa6cvkiFJm6cHw
+
+你当年没玩好的《愤怒的小鸟》，AI现在也犯难了
