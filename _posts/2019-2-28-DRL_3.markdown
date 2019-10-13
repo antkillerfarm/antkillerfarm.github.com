@@ -277,8 +277,22 @@ Noisy在DRL中的用法主要有：
 
 ## DDPG
 
-Deepmind在2016年提出了DDPG。从通俗角度看：**DDPG=DPG+A2C+DQN**。
+Deepmind在2016年提出了DDPG。从通俗角度看：**DDPG=DPG+A2C+Double DQN**。
 
 ![](/images/img3/DDPG.png)
 
-上图是DDPG的网络结构图。
+上图是DDPG的网络结构图。仿照Double DQN的做法，DDPG分别为Actor和Critic各创建两个神经网络拷贝,一个叫做online，一个叫做target。即：
+
+- Actor（策略网络） online network（动作估计网络）
+
+- Actor（策略网络） target network（动作现实网络）
+
+- Critic（Q网络） online network（状态估计网络）
+
+- Critic（Q网络） target network（状态现实网络）
+
+简单来说就是，Actor online network和Critic online network组成一对Actor-Critic；而Actor target network和Critic target networ组成另一对Actor-Critic。
+
+当然，DDPG实际的步骤远比示意图复杂的多，可参见下图，这里不再赘述。
+
+![](/images/img3/DDPG.jpg)

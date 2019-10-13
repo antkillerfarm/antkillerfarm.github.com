@@ -48,6 +48,28 @@ https://blog.csdn.net/kenneth_yu/article/details/78478356
 
 DDPG原理和算法
 
+# PPO
+
+
+
+参考：
+
+https://www.jianshu.com/p/f4d383b0bd4c
+
+TRPO与PPO实现
+
+https://bluefisher.github.io/2018/07/03/Proximal-Policy-Optimization-Algorithms/
+
+Proximal Policy Optimization Algorithms
+
+https://www.jianshu.com/p/9f113adc0c50
+
+Proximal Policy Optimization(PPO)算法原理及实现！
+
+https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/6-4-DPPO/
+
+Distributed Proximal Policy Optimization(DPPO)
+
 # reward modeling
 
 ![](/images/img2/reward_modeling.jpg)

@@ -403,3 +403,7 @@ https://mp.weixin.qq.com/s/LwBOK7J1tby4WecOiRoA6g
 https://zhuanlan.zhihu.com/p/79943361
 
 Matrix Nets: A New Deep Architecture论文阅读
+
+https://zhuanlan.zhihu.com/p/84205427
+
+Adaptively Connected Neural Networks

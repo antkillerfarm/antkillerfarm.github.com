@@ -125,3 +125,7 @@ https://zhuanlan.zhihu.com/p/27087310
 https://mp.weixin.qq.com/s/6y7AEGz2cs4QUP0Cikhnmw
 
 272页PPT讲述Tensorflow2.0在图形学方面的应用
+
+https://mp.weixin.qq.com/s/VN2O6faf4spdD3qaqf3aiw
+
+使用AMD显卡加速TensorFlow
