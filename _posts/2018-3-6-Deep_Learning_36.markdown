@@ -225,3 +225,7 @@ MSRA开源基于注意力机制的全新推荐模型，融合用户长短期偏�
 https://zhuanlan.zhihu.com/p/86031123
 
 深度CTR预估新积木ONN模型源码阅读与调参经验
+
+https://mp.weixin.qq.com/s/B109cC_hf3XXsKRAw-0_xA
+
+YouTube视频推荐系统为什么那么强？

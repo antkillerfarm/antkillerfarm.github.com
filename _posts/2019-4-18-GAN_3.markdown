@@ -108,6 +108,10 @@ https://zhuanlan.zhihu.com/p/54213305
 
 Fréchet Inception Distance(FID)
 
+https://mp.weixin.qq.com/s/jGSqB6UpCeQo8FC219TWbQ
+
+学习GAN模型量化评价，先从掌握FID开始吧
+
 # DCGAN
 
 论文：

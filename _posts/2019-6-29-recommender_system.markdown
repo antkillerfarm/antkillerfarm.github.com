@@ -243,3 +243,7 @@ https://mp.weixin.qq.com/s/QThtXNF9oIE5bXF5kaSg5w
 https://mp.weixin.qq.com/s/Od2_u1uP5S7htjDKuEDSTw
 
 数据质量良莠不齐？携程是这样来做多场景下的内容智能发现的
+
+https://mp.weixin.qq.com/s/FXlxT6qSridawZDIdGD1mw
+
+UC信息流推荐模型在多目标和模型优化方面的进展
