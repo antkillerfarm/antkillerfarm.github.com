@@ -70,7 +70,13 @@ https://mp.weixin.qq.com/s/D3ZKidCV7OhAeqWqWg521w
 
 https://cs217.github.io/
 
-CS 217: Hardware Accelerators for Machine 
+CS 217: Hardware Accelerators for Machine
+
+## 复杂度分析
+
+https://zhuanlan.zhihu.com/p/31575074
+
+卷积神经网络的复杂度分析
 
 ## Network Pruning
 

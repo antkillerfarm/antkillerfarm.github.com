@@ -244,3 +244,7 @@ https://mp.weixin.qq.com/s/ghfh1x_lsEcoA8PFPXE46w
 https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247515402&idx=1&sn=ee3cd5c64a707246216a532fa3af422b
 
 面向机器学习和数据分析的特征工程
+
+https://mp.weixin.qq.com/s/NKKk8nRd0qn5XhxXgYWknw
+
+手把手带你入门和实践特征工程的万字笔记

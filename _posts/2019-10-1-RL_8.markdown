@@ -4,9 +4,17 @@ title:  强化学习（八）——Actor-Critic, Integrating Learning and Planni
 category: RL 
 ---
 
-# 策略梯度
+# 策略梯度（续）
 
-## Policy Gradient Theorem（续）
+## Policy Gradient Theorem
+
+One-Step MDP是一类特殊的MDP：它从任意状态开始，只执行一次动作，然后就结束了。
+
+$$J(\theta)=E_{\pi_\theta}[r]=\sum_{s\in S} d(s)\sum_{a\in A}\pi_\theta(s,a)R_{s,a}$$
+
+$$\nabla_\theta J(\theta)=\sum_{s\in S} d(s)\sum_{a\in A}\nabla_\theta \log \pi_\theta(s,a)R_{s,a}=E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a)r]$$
+
+One-Step MDP的相关结论可以扩展到multi-step MDP，只需要将即时奖励r，替换为长期奖励（一般使用其估计函数$$Q^{\pi}(s,a)$$）即可。
 
 >在监督学习里，当前状态、行为的好坏由监督信息告知；而在强化学习里，则需要通过价值函数来估计当前状态行为的好坏。
 
@@ -207,13 +215,3 @@ $$S_{T-1}, A_{T-1}\to R_T,S_T$$
 根据使用的算法不同，可以有如下多种模型：查表式(Table lookup Model)、线性期望模型(Linear Expectation Model)、线性高斯模型(Linear Gaussian Model)、高斯决策模型(Gaussian Process Model)、和深信度神经网络模型(Deep Belief Network Model)等。
 
 这里主要以查表模型来解释模型的构建。
-
-## Table Lookup Model
-
-查表模型适用于MDP的P，R都为已知的情况。我们通过visit得到各状态行为的转移概率和奖励，把这些数据存入表中，使用时直接检索。状态转移概率和奖励计算方法如下：
-
-$$\hat{P}^a_{s,s'}=\frac{1}{N(s,a)}\sum_{t=1}^T 1(S_t,A_t,S_{t+1}=s,a,s')$$
-
-$$\hat{R}^a_{s}=\frac{1}{N(s,a)}\sum_{t=1}^T 1(S_t,A_t=s,a)R_t$$
-
-其中的$$N(s,a)$$表示state action pair$$<s,a>$$在visit中出现的次数。

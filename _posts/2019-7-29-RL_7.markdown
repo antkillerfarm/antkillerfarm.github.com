@@ -45,7 +45,7 @@ LSE亦可推广到Q函数，即所谓的LS Q-Learning。
 
 ### Experience Replay
 
-为了充分利用经验集，我们还可以使用Experience Replay技术，即：随机从$$\mathcal{D}中采样$$<s,v^{\pi}>$$，然后使用SGD最小化LSE。
+为了充分利用经验集，我们还可以使用Experience Replay技术，即：随机从$$\mathcal{D}$$中采样$$<s,v^{\pi}>$$，然后使用SGD最小化LSE。
 
 这一点和普通的监督学习很类似，梯度下降从原理上来说，本就不可能一个epoch就达到最优，而需要多跑几个epoch，这里的Experience Replay也是类似的道理。
 
@@ -59,7 +59,7 @@ $$\pi_\theta(s,a)=P[a | s, \theta]$$
 
 所谓函数化是指，通过一个概率分布函数$$\pi_\theta(s,a)$$，来表示每一步的最优策略，在每一步根据该概率分布进行action采样，获得当前的最佳action取值。显然概率越高的a，就是该策略最倾向的a。
 
-显然。生成action的过程，本质上是一个随机过程；最后学习到的策略，也是一个随机策略(stochastic policy).
+显然，生成action的过程，本质上是一个随机过程；最后学习到的策略，也是一个随机策略(stochastic policy).
 
 而策略函数的参数化就和价值函数的参数化类似了，无非是用较少的参数，来表示巨大的状态空间而已。
 
@@ -68,6 +68,8 @@ $$\pi_\theta(s,a)=P[a | s, \theta]$$
 - 基于策略的学习可能会具有更好的收敛性，这是因为基于策略的学习虽然每次只改善一点点，但总是朝着好的方向在改善；但是上讲提到有些价值函数在后期会一直围绕最优价值函数持续小的震荡而不收敛。
 
 - 在对于那些拥有高维度或连续状态空间来说，使用基于价值函数的学习在得到价值函数后，制定策略时，需要比较各种行为对应的价值大小，这样如果行为空间维度较高或者是连续的，则从中比较得出一个有最大价值函数的行为这个过程就比较难了，这时候使用基于策略的学习就高效的多。
+
+>连续行为空间内的action对应一个具体的数值，这个数值可以从上述的策略分布中随机采样产生。因此策略学习天生支持连续行为空间。
 
 - 能够学到一些随机策略。这一点后文会详述。
 
@@ -173,7 +175,9 @@ $$\nabla_\theta \log \pi_\theta(s,a)=\phi(s,a)-E_{\pi_\theta}[\phi(s,\cdot)]$$
 
 ## Gaussian Policy
 
-Gaussian Policy适用于连续行为空间，它用一个正态分布表示策略：$$a\sim N(\mu(s), \sigma^2)$$，其中$$\mu(s)=\phi(s)^T\theta$$。
+Gaussian Policy适用于连续行为空间。比如，如果控制机器人行走要调整流经某个电机的电流值，而这个电流值是连续值。
+
+它用一个正态分布表示策略：$$a\sim N(\mu(s), \sigma^2)$$，其中$$\mu(s)=\phi(s)^T\theta$$。
 
 相应的Score function为:
 
@@ -192,13 +196,3 @@ $$\nabla_\theta \log \pi_\theta(s,a)=\frac{(a-\mu(s))\phi(s)}{\sigma^2}$$
 https://karpathy.github.io/2016/05/31/rl/
 
 Deep Reinforcement Learning: Pong from Pixels
-
-## Policy Gradient Theorem
-
-One-Step MDP是一类特殊的MDP：它从任意状态开始，只执行一次动作，然后就结束了。
-
-$$J(\theta)=E_{\pi_\theta}[r]=\sum_{s\in S} d(s)\sum_{a\in A}\pi_\theta(s,a)R_{s,a}$$
-
-$$\nabla_\theta J(\theta)=\sum_{s\in S} d(s)\sum_{a\in A}\nabla_\theta \log \pi_\theta(s,a)R_{s,a}=E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a)r]$$
-
-One-Step MDP的相关结论可以扩展到multi-step MDP，只需要将即时奖励r，替换为长期奖励（一般使用其估计函数$$Q^{\pi}(s,a)$$）即可。

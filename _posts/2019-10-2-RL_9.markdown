@@ -4,9 +4,17 @@ title:  强化学习（九）——Integrating Learning and Planning（2）
 category: RL 
 ---
 
-# Integrating Learning and Planning
+# Integrating Learning and Planning（续）
 
-## Table Lookup Model（续）
+## Table Lookup Model
+
+查表模型适用于MDP的P，R都为已知的情况。我们通过visit得到各状态行为的转移概率和奖励，把这些数据存入表中，使用时直接检索。状态转移概率和奖励计算方法如下：
+
+$$\hat{P}^a_{s,s'}=\frac{1}{N(s,a)}\sum_{t=1}^T 1(S_t,A_t,S_{t+1}=s,a,s')$$
+
+$$\hat{R}^a_{s}=\frac{1}{N(s,a)}\sum_{t=1}^T 1(S_t,A_t=s,a)R_t$$
+
+其中的$$N(s,a)$$表示state action pair$$<s,a>$$在visit中出现的次数。
 
 这里也可以采用如下变种：
 
