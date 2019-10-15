@@ -385,3 +385,7 @@ https://mp.weixin.qq.com/s/rJ7guL-Hxxr2Ezl7LRhQrA
 https://mp.weixin.qq.com/s/YixrjGTU4p7LlyfQCEmmmQ
 
 端到端任意形状场景文字识别
+
+https://mp.weixin.qq.com/s/Lk_P74kJCjmQo1S2piTplA
+
+针对不规则场景文字识别的对称约束矫正网络

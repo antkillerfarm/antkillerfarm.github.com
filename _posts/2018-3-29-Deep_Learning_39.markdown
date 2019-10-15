@@ -318,6 +318,10 @@ https://mp.weixin.qq.com/s/JahD1ON5ym0_ldc7MiJz7A
 
 让视频里的你完全消失，Adobe最新SOTA模型实现无痕修图，无需先验知识
 
+https://mp.weixin.qq.com/s/xocs_UI5HzgFZtTPWABRKw
+
+使用时间循环一致性学习(TCC)理解视频内容
+
 # 多模态学习
 
 https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw

@@ -90,6 +90,10 @@ https://zhuanlan.zhihu.com/p/53864403
 
 知识蒸馏（Knowledge Distillation）最新进展（二）
 
+https://zhuanlan.zhihu.com/p/81467832
+
+知识蒸馏（Knowledge Distillation）简述（一）
+
 https://mp.weixin.qq.com/s/Nkxy0SUdbwIjp5swU6tS9g
 
 深度互学习-Deep Mutual Learning：三人行必有我师
