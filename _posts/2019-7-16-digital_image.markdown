@@ -381,3 +381,7 @@ https://mp.weixin.qq.com/s/6Nr7LF9VxYQ4NlLlk8bCVw
 https://mp.weixin.qq.com/s/3d7CEQ0iQzwnJ_tE7eB9Yg
 
 边缘计算芯片格局分析
+
+https://mp.weixin.qq.com/s/U9vnEzumNgGlYFR-lEPfhw
+
+智能边缘计算：计算模式的再次轮回

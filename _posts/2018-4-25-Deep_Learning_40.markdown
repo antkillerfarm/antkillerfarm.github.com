@@ -245,3 +245,11 @@ https://mp.weixin.qq.com/s/KwvqvIU8tVDgtYdq3HL4OQ
 https://mp.weixin.qq.com/s/BMJP6GJfxpyD4FIsR2Fx2w
 
 旷视研究院提出行人搜索当前最佳新方法
+
+https://mp.weixin.qq.com/s/u-6Nl8jjje8B_DkE8b-Kug
+
+旷视研究院张弛：行人重识别及其应用
+
+https://github.com/xingkongliang/Pedestrian-Detection
+
+行人检测（Pedestrian Detection）论文整理
