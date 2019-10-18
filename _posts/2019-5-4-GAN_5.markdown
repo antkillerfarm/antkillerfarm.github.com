@@ -1,8 +1,42 @@
 ---
 layout: post
-title:  GAN（五）——GAN参考资源（1）
+title:  GAN（五）——InfoGAN, ProGAN, GAN参考资源（1）
 category: GAN & VAE 
 ---
+
+# StarGAN（续）
+
+![](/images/img3/GAN_5.png)
+
+除此之外，同期的Couple GAN也采用了类似的设计。上图是Couple GAN的网络结构图，其中的虚线表示网络的参数是共享的。
+
+参考：
+
+https://mp.weixin.qq.com/s/rPDvLnG4MBDRUMCWs2fjcQ
+
+最新StarGAN对抗生成网络实现多领域图像变换
+
+# InfoGAN
+
+论文：
+
+《InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets》
+
+CGAN虽然已经有了些user control的能力，然而还不够强。比如人脸图片，user control的点（例如肤色、发型、表情等）就非常多，简单的标签不足以表达这么多含义。InfoGAN主要就是用来提升user control能力的。
+
+![](/images/img3/InfoGAN.png)
+
+上图是InfoGAN的网络结构图。相比CGAN，它的改进在于：
+
+1.将控制变量嵌入网络中。
+
+2.Discriminator和Classifier共享大多数参数，仅最后一层不同。
+
+参考：
+
+https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247492415&idx=1&sn=a359e72ee99555f7a2fb4e21b2ad51db
+
+InfoGAN：一种无监督生成方法
 
 # ProGAN
 
@@ -321,39 +355,3 @@ https://mp.weixin.qq.com/s/ExsDftIvi8VUdvxfka-1ow
 https://mp.weixin.qq.com/s/RhYVCO0jNlY97ptIUvRRQQ
 
 带你读论文：生成对抗网络GAN论文TOP 10
-
-https://mp.weixin.qq.com/s/jByvPPrlN7zIOPXON4fZJw
-
-生成对抗网络也需要注意力机制
-
-https://mp.weixin.qq.com/s/fmqaw0xm4Lm7h3rPsLD7yA
-
-关于GAN的灵魂七问
-
-https://mp.weixin.qq.com/s/CwB7IDaCZBzcQV8IBsYQDw
-
-最新《生成式对抗网络GAN进展》论文
-
-https://mp.weixin.qq.com/s/-SVtuZGOn6Wk9kwe50JJqw
-
-《GAN实战：生成对抗网络深度学习》牛津大学Jakub著作
-
-https://mp.weixin.qq.com/s/I_v_ccLdEOIPiiMyXYkk2Q
-
-Jurgen Schmidhuber新论文：我的就是我的，你的GAN还是我的
-
-https://mp.weixin.qq.com/s/sb9peS6miahqIoMut9DzcA
-
-AI版007恐怖上演！间谍用GAN生成假头像，大肆网钓政客大V
-
-https://mp.weixin.qq.com/s/gzwa6ZZeNvm1MyIM93sC5Q
-
-全新缺失图像数据插补框架—CollaGAN
-
-https://mp.weixin.qq.com/s/3bi5Timesxi1YbFdzBs8AA
-
-DeepMind论文：深度压缩感知，新框架提升GAN性能
-
-https://zhuanlan.zhihu.com/p/67532362
-
-生成对抗网络系列——CVPR2019中的图像转化GAN

@@ -322,7 +322,15 @@ https://mp.weixin.qq.com/s/xocs_UI5HzgFZtTPWABRKw
 
 使用时间循环一致性学习(TCC)理解视频内容
 
+https://blog.csdn.net/sinat_35177634/article/details/89601950
+
+CVPR 2019视频描述（video caption）相关论文总结
+
 # 多模态学习
+
+https://github.com/HuaizhengZhang/Awsome-Deep-Learning-for-Video-Analysis
+
+深度学习视频分析/多模态学习资源大列表
 
 https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw
 

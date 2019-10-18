@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Flink, Parquet, Beam, ORC, Apache Arrow
+title:  Flink, Parquet, Beam, ORC, Apache Arrow, Ceph
 category: AI 
 ---
 
@@ -136,7 +136,11 @@ https://mp.weixin.qq.com/s/2VMsTvCW9eshEnB-Ak_cIw
 
 https://mp.weixin.qq.com/s/sVdI61Un8C8ycArdrwgmTg
 
-Flink on Yarn / K8s原理剖析及实践
+Flink on Yarn/K8s原理剖析及实践
+
+https://mp.weixin.qq.com/s/pj2iVvNcQH-4O03nmw0vzg
+
+从Storm到Flink，汽车之家基于 Flink 的实时 SQL 平台设计思路与实践
 
 # Beam
 
@@ -197,3 +201,13 @@ Apache Arrow内存数据
 https://mp.weixin.qq.com/s/5UtpFg7Zmm6WY0OOxzeueQ
 
 TensorFlow与Apache Arrow数据集搭配最佳实践
+
+# Ceph
+
+Ceph是一种为提高性能、可靠性和可扩展性而设计的统一的、分布式的存储系统。
+
+参考：
+
+https://mp.weixin.qq.com/s/KBaagb1zrkAmLyVgmkzJ3A
+
+ceph基本架构及数据分布原理

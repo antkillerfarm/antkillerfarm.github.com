@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  深度学习（四十八）——语义分割进阶
+title:  深度学习（四十八）——花式U-NET, 语义分割进阶
 category: DL 
 ---
 
-# 语义分割进阶
+# 花式U-NET
 
 ## U-NET的另类用法
 
@@ -180,6 +180,20 @@ https://github.com/LeeJunHyun/Image_Segmentation
 
 ## 参考
 
+https://www.zhihu.com/question/269914775
+
+Unet神经网络为什么会在医学图像分割表现好？
+
+https://mp.weixin.qq.com/s?__biz=MzIwMTE1NjQxMQ==&mid=2247488752&idx=3&sn=23f223fb82c64c14eb925ebd19d16fc5
+
+图像分割中的深度学习：U-Net体系结构
+
+https://zhuanlan.zhihu.com/p/55193930
+
+Attention U-Net论文笔记
+
+# 语义分割进阶
+
 https://mp.weixin.qq.com/s/_q8N8keNpcD-jXLrRd_8dw
 
 深度学习时代下的语义分割综述
@@ -300,10 +314,6 @@ https://mp.weixin.qq.com/s/94XHMHejqKmkFVA0Vzfrsw
 
 有关语义分割的奇技淫巧有哪些？
 
-https://zhuanlan.zhihu.com/p/55193930
-
-Attention U-Net论文笔记
-
 https://zhuanlan.zhihu.com/p/55263898
 
 语义分割江湖的那些事儿——从旷视说起
@@ -384,10 +394,6 @@ https://zhuanlan.zhihu.com/p/77834369
 
 语义分割中的Attention和低秩重建
 
-https://www.zhihu.com/question/269914775
+https://mp.weixin.qq.com/s/wAWB2SLaqD2SmP9-j0Ut7g
 
-Unet神经网络为什么会在医学图像分割表现好？
-
-https://mp.weixin.qq.com/s?__biz=MzIwMTE1NjQxMQ==&mid=2247488752&idx=3&sn=23f223fb82c64c14eb925ebd19d16fc5
-
-图像分割中的深度学习：U-Net体系结构
+速度提升一倍，无需实例掩码预测即可实现全景分割

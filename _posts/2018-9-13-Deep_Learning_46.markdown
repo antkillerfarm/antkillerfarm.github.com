@@ -34,6 +34,10 @@ https://mp.weixin.qq.com/s/VdjHp5Tb1fSyV3CQblPQmw
 
 利用NAS寻找最佳GAN：AutoGAN架构搜索方案专为GAN打造
 
+https://mp.weixin.qq.com/s/d60EKUJjYfYfcfhMnaCpPA
+
+基于强化学习的自动搜索
+
 # OCR
 
 ## 概述
@@ -389,3 +393,11 @@ https://mp.weixin.qq.com/s/YixrjGTU4p7LlyfQCEmmmQ
 https://mp.weixin.qq.com/s/Lk_P74kJCjmQo1S2piTplA
 
 针对不规则场景文字识别的对称约束矫正网络
+
+https://mp.weixin.qq.com/s/5BuGyj3SaqZPD2kR_jpUWA
+
+基于单阶段小样本学习的艺术风格字形图片生成
+
+https://mp.weixin.qq.com/s/dHRyH7S6jV2jxgoxbQDNSg
+
+DynTypo: 基于样例的动态文本特效迁移

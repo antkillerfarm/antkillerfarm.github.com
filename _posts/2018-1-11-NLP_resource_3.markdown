@@ -6,6 +6,8 @@ category: resource
 
 # NLP参考资源
 
+## 参考
+
 https://mp.weixin.qq.com/s/klfTdvfti0xCg2lGitG4hg
 
 用户表示方法对新浪微博中用户属性分类性能影响的研究

@@ -60,6 +60,10 @@ https://mp.weixin.qq.com/s/D3ZKidCV7OhAeqWqWg521w
 
 如何训练和部署FP16/Int8等低精度机器学习模型?
 
+https://jackwish.net/neural-network-quantization-introduction-chn.html
+
+神经网络量化简介
+
 # 模型压缩与加速
 
 对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。

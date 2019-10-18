@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十二）——Siamese network, SENet, 姿态/行为检测
+title:  深度学习（十二）——Siamese network, SENet, 姿态/行为检测, Recursive NN
 category: DL 
 ---
 
@@ -261,3 +261,17 @@ https://mp.weixin.qq.com/s/3Pe5wJ0VomzwKMF84OqcMg
 https://mp.weixin.qq.com/s/afX8Y84nTS20q4Y36uOWqQ
 
 复旦提出GaitSet算法，步态识别的重大突破！
+
+# Recursive NN
+
+http://blog.csdn.net/qq_26609915/article/details/52119512
+
+递归神经网络（recursive NN）结合自编码（Autoencode）实现句子建模
+
+http://blog.csdn.net/mengmengz07/article/details/51348554
+
+recursive neural network梳理
+
+https://mp.weixin.qq.com/s/DwaSF76uvqFKkybaTUpl3w
+
+空间序列递归神经网络用于高光谱图像分类

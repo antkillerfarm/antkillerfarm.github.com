@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十一）——依存分析, Image Caption Generation, Recursive NN
+title:  深度学习（三十一）——依存分析, Image Caption Generation
 category: DL 
 ---
 
@@ -186,6 +186,24 @@ https://zmlarry.github.io
 
 张檬，清华本科（2013）+博士（2018）。
 
+## Subword
+
+之前的Neural Machine Translation基本上都是基于word单词作为基本单位的，但是其缺点是不能很好的解决out-of-vocabulary即单词不在词汇库里的情况，且对于单词的一些词法上的修饰(morphology)处理的也不是很好。一个自然的想法就是能够利用比word更基本的组成来建立模型，以更好的解决这些问题。
+
+参考：
+
+https://plmsmile.github.io/2017/10/19/subword-units/
+
+subword-units
+
+https://zhuanlan.zhihu.com/p/69414965
+
+Subword模型
+
+https://zhuanlan.zhihu.com/p/86965595
+
+深入理解NLP Subword算法：BPE、WordPiece、ULM
+
 # Image Caption Generation
 
 Image Caption Generation的目标是：给定一张图片，让计算机用一句话来描述这张图片。如果将这里的Image换成Video，那就是Video Caption Generation了。
@@ -333,17 +351,3 @@ https://mp.weixin.qq.com/s/p8K4eixOwCiUkhzntKYa-Q
 https://mp.weixin.qq.com/s/hGaX4I_WsPv9P_WAHaDuog
 
 NLP+CV《桥接视觉与语言的研究综述》，带你全面了解视觉+语言最新应用和方法
-
-# Recursive NN
-
-http://blog.csdn.net/qq_26609915/article/details/52119512
-
-递归神经网络（recursive NN）结合自编码（Autoencode）实现句子建模
-
-http://blog.csdn.net/mengmengz07/article/details/51348554
-
-recursive neural network梳理
-
-https://mp.weixin.qq.com/s/DwaSF76uvqFKkybaTUpl3w
-
-空间序列递归神经网络用于高光谱图像分类

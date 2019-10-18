@@ -182,6 +182,10 @@ https://mp.weixin.qq.com/s/g4YW6loDqLLBE-vqznh4qQ
 
 《深度强化学习》面试题汇总
 
+https://mp.weixin.qq.com/s/nSZfGdPXXs02dCdG49EQhg
+
+142页"ICML会议"强化学习笔记整理(2018&2019年)
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》
@@ -215,6 +219,12 @@ https://www.cnblogs.com/steven-yang/tag/博弈论/
 https://blog.csdn.net/gsww404
 
 一个DRL的专栏
+
+# 比赛
+
+https://github.com/seungjaeryanlee/awesome-rl-competitions
+
+深度强化学习赛事汇总
 
 # 工具/框架
 

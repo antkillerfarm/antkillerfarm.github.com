@@ -1,10 +1,28 @@
 ---
 layout: post
-title:  GAN（三）——GAN的评估指标, DCGAN, WGAN-GP, CGAN, BEGAN & EBGAN, Stack GAN
+title:  GAN（三）——GAN的评估指标, DCGAN, WGAN-GP, CGAN, BEGAN & EBGAN
 category: GAN & VAE 
 ---
 
-# GAN的评估指标（续）
+# GAN进阶
+
+## GAN的理论解释（续）
+
+https://mp.weixin.qq.com/s/thcxsBVttSIEzVNLQlAVCA
+
+看穿机器学习的黑箱（II）
+
+https://mp.weixin.qq.com/s/Jx0o17CwlIVcRV22PXk4wQ
+
+看穿机器学习的黑箱（III）
+
+https://mp.weixin.qq.com/s/ecqPzcSa75U9n4BcvnNJ_Q
+
+GAN模式崩溃的理论解释
+
+# GAN的评估指标
+
+尽管可用的GAN模型非常多，但对它们的评估仍然主要是定性评估，通常需要借助人工检验生成图像的视觉保真度来进行。此类评估非常耗时，且主观性较强、具备一定误导性。鉴于定性评估的内在缺陷，恰当的定量评估指标对于GAN的发展和更好模型的设计至关重要。
 
 论文：
 
@@ -45,6 +63,10 @@ Inception来源于Google的Inception Net，因为计算这个score需要用到In
 https://mp.weixin.qq.com/s/A7NBKV6puxqI2xCghktA9Q
 
 什么是模式崩溃，以及如何从优化目标上解决这个问题
+
+https://mp.weixin.qq.com/s/QFCJ7BxNvfj2L9Wlr6aq9A
+
+解决模式崩溃的两条思路：改进优化和网络架构
 
 ----
 
@@ -239,19 +261,3 @@ EBGAN将D网络的结构由Encoder改为了Encoder->Decoder（也就是一个AE�
 这样的做法可以类比CV中的分类网络和语义分割网络。由于Loss和图片的每个像素都直接相关，因此更利于生成细节信息。
 
 类似的，这里的AE，也可以换成其他Encoder->Decoder网络，例如U-NET。
-
-EBGAN的最大特点就是判别器一开始就非常强(因为有pretrain)，因此生成器在一开始就能获得比较大的“能量驱动”(energy based)，使得在一开始生成器就进步非常快。所以如果我们比较看中训练效率，希望在短期内获得一个比较不错的生成器的话，就可以考虑EBGAN。
-
-BEGAN则借鉴了EBGAN和WGAN各自的一些优点。
-
-# Stack GAN
-
-论文：
-
-《StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks》
-
-早期以DCGAN为代表的网络生成的图片分辨率太低，质量不够好，都不超过100×100，在32×32或者64×64左右。这是因为难以一次性学习到生成高分辨率的样本，收敛过程容易不稳定。因此采用级联结构，逐次提升分辨率的Stack GAN应运而生。
-
-![](/images/img2/Stack_GAN.png)
-
-上图是Stack GAN的网络结构图。其中的Conditioning Augmentation，显然使用了和VAE类似的添加随机噪声的技术。

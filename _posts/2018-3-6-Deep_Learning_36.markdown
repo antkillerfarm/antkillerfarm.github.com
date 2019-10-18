@@ -122,6 +122,10 @@ https://mp.weixin.qq.com/s/3-eGTFCtvSnk-29si2WJGA
 
 深度学习在推荐系统中的应用及论文小结
 
+https://mp.weixin.qq.com/s/TUXvhkdqQ_kdmSKknsvUcA
+
+深度学习在推荐系统中的应用
+
 https://mp.weixin.qq.com/s/4VcRdEg_XcZ1TRKPfbCjaw
 
 想了解大厂如何做推荐？Facebook开源深度学习推荐模型DLRM

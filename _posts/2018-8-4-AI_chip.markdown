@@ -78,7 +78,7 @@ Imagination目前主要的客户是：
 
 - 手机：MTK、紫光展锐
 
-除此之外，由于Imagination已经全国资化了，因此很多研究所也对它的产品很感兴趣。
+除此之外，由于Imagination已经全国资化了，因此很多研究所也对它的产品感兴趣。
 
 从方案来看，Imagination采用的是GPU+NPU的模式。
 

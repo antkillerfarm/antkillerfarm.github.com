@@ -62,6 +62,10 @@ https://mp.weixin.qq.com/s/zSawuk6vn2D6oM5d1pJyWw
 
 选择性细化网络用于高性能人脸检测
 
+https://mp.weixin.qq.com/s/RY26yEIfX4NwSlL65_6RTQ
+
+人脸检测小江湖
+
 # RNN进阶
 
 ## IndRNN

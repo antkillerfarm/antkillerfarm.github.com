@@ -262,6 +262,10 @@ https://mp.weixin.qq.com/s/RKqmy8dw7B7WtQc6Xy2CLA
 
 JVM CPU Profiler技术原理及源码深度解析
 
+https://mp.weixin.qq.com/s/MxMcpJlqSEZRO0CssQglOg
+
+Android兼容Java 8语法特性的原理分析
+
 # Javascript（续）
 
 ### Step3:延迟动画

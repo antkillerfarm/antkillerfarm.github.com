@@ -4,9 +4,17 @@ title:  GAN（二）——GAN进阶
 category: GAN & VAE 
 ---
 
-# 概况
+# 概况（续）
 
-## 小结（续）
+## 小结
+
+![](/images/img2/GAN.png)
+
+1.Real Samples可看作满足分布Z的采样集。
+
+2.GAN的目标是学习分布Z。因此，虽然GAN和RL都是无监督学习，但前者需要Real Samples，而后者可能只需要一个规则，例如AlphaZero。换句话说，GAN的监督信号隐藏在样本中，而不是标签或者规则中。
+
+![](/images/img2/GAN_vs_RL.png)
 
 3.使用G网络将noise变成fake_data。
 
@@ -367,19 +375,3 @@ https://mp.weixin.qq.com/s/7O0AKIUVYK7HRyvdRbUVkg
 https://mp.weixin.qq.com/s/trvMOTXNs7L6fSmTkZXwsA
 
 看穿机器学习（W-GAN模型）的黑箱
-
-https://mp.weixin.qq.com/s/thcxsBVttSIEzVNLQlAVCA
-
-看穿机器学习的黑箱（II）
-
-https://mp.weixin.qq.com/s/Jx0o17CwlIVcRV22PXk4wQ
-
-看穿机器学习的黑箱（III）
-
-https://mp.weixin.qq.com/s/ecqPzcSa75U9n4BcvnNJ_Q
-
-GAN模式崩溃的理论解释
-
-# GAN的评估指标
-
-尽管可用的GAN模型非常多，但对它们的评估仍然主要是定性评估，通常需要借助人工检验生成图像的视觉保真度来进行。此类评估非常耗时，且主观性较强、具备一定误导性。鉴于定性评估的内在缺陷，恰当的定量评估指标对于GAN的发展和更好模型的设计至关重要。

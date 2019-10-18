@@ -140,6 +140,10 @@ https://mp.weixin.qq.com/s/fnrGjiywiySA8iAZh_cF0Q
 
 阿里巴巴新开源项目Nacos发布第一个版本，助力构建Dubbo生态
 
+https://mp.weixin.qq.com/s/AAcQRHZPvW11jvlbrLfRJA
+
+携程的Dubbo之路
+
 # Arm ML
 
 Arm ML是Arm的作品。它包括了两部分：Arm NN和Arm Compute Library。

@@ -265,3 +265,7 @@ https://mp.weixin.qq.com/s/empXVsgqe6OljVa1Hduigw
 https://mp.weixin.qq.com/s/_IOdMk8CJbZkeYO9CDDgZQ
 
 AI设计师“鲁班”进化史：每秒制作8000张双11海报，没有一张雷同！
+
+https://mp.weixin.qq.com/s/UGx3FI9GsHuUreNb8yByAA
+
+手绘稿如何1秒变身数据大屏？深度学习让人人成为可视化专家

@@ -20,6 +20,10 @@ https://zhuanlan.zhihu.com/p/58806183
 
 深度学习的分布和并行处理系统
 
+https://zhuanlan.zhihu.com/p/56991108
+
+一文说清楚Tensorflow分布式训练必备知识
+
 https://zhuanlan.zhihu.com/p/26552293
 
 Dataflow架构和神经网络加速器

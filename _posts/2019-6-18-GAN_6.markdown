@@ -6,6 +6,42 @@ category: GAN & VAE
 
 # GAN参考资源
 
+https://mp.weixin.qq.com/s/jByvPPrlN7zIOPXON4fZJw
+
+生成对抗网络也需要注意力机制
+
+https://mp.weixin.qq.com/s/fmqaw0xm4Lm7h3rPsLD7yA
+
+关于GAN的灵魂七问
+
+https://mp.weixin.qq.com/s/CwB7IDaCZBzcQV8IBsYQDw
+
+最新《生成式对抗网络GAN进展》论文
+
+https://mp.weixin.qq.com/s/-SVtuZGOn6Wk9kwe50JJqw
+
+《GAN实战：生成对抗网络深度学习》牛津大学Jakub著作
+
+https://mp.weixin.qq.com/s/I_v_ccLdEOIPiiMyXYkk2Q
+
+Jurgen Schmidhuber新论文：我的就是我的，你的GAN还是我的
+
+https://mp.weixin.qq.com/s/sb9peS6miahqIoMut9DzcA
+
+AI版007恐怖上演！间谍用GAN生成假头像，大肆网钓政客大V
+
+https://mp.weixin.qq.com/s/gzwa6ZZeNvm1MyIM93sC5Q
+
+全新缺失图像数据插补框架—CollaGAN
+
+https://mp.weixin.qq.com/s/3bi5Timesxi1YbFdzBs8AA
+
+DeepMind论文：深度压缩感知，新框架提升GAN性能
+
+https://zhuanlan.zhihu.com/p/67532362
+
+生成对抗网络系列——CVPR2019中的图像转化GAN
+
 https://mp.weixin.qq.com/s/CyN2yjpHV_t4-8Jf4Rsj-Q
 
 自然语言处理的深度对抗学习方法-附104页教程Slides

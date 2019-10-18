@@ -247,3 +247,11 @@ https://mp.weixin.qq.com/s/Od2_u1uP5S7htjDKuEDSTw
 https://mp.weixin.qq.com/s/FXlxT6qSridawZDIdGD1mw
 
 UC信息流推荐模型在多目标和模型优化方面的进展
+
+https://mp.weixin.qq.com/s/b8DkQWZbUc5-jzWKBd8iUA
+
+深度学习技术在美图个性化推荐的应用实践
+
+https://mp.weixin.qq.com/s/R0GG6Kg-h50RTRU6DIrZCg
+
+爱奇艺效果广告的个性化探索与实践

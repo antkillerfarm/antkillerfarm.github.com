@@ -394,6 +394,10 @@ https://mp.weixin.qq.com/s/6h-1k_D7QIFpknagnA8FZA
 
 Python绘图，我只用Matplotlib
 
+https://mp.weixin.qq.com/s/pBTsByIftGbMMUumSKCvFw
+
+数据分析最有用的Top 50 Matplotlib图（附完整的Python代码）(上)
+
 ## Pandas
 
 Pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。

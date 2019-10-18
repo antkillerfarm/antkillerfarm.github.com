@@ -318,6 +318,10 @@ https://mp.weixin.qq.com/s/_xFRRkVyN9qevLeek7bFxQ
 
 深度学习中GPU和显存分析
 
+https://mp.weixin.qq.com/s/k5Xx-nnaf-yfWqGLIY3LEg
+
+特斯拉的芯片究竟多强
+
 # GPU通信技术
 
 ## RDMA

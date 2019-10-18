@@ -58,7 +58,7 @@ https://github.com/HyeonwooNoh/DeconvNet
 
 类似这样的encoder-decoder对称结构的还有U-Net（因为它们的形状像U字形）：
 
-![](/images/article/U_Net.jpg)
+![](/images/article/U_Net.png)
 
 论文：
 

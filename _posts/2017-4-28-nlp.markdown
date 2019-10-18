@@ -181,6 +181,10 @@ https://mp.weixin.qq.com/s/LKwvTob2fqsAATtH8IIKoQ
 
 分分钟学懂机器学习如何净化处理文本！
 
+https://mp.weixin.qq.com/s/C7s038JYEIC8eMkJAfKJ0Q
+
+初学者不能不会的NLTK
+
 ### OpenNLP
 
 http://opennlp.apache.org/

@@ -265,6 +265,6 @@ $$g(i,j)=\sum_{c,k,l}f(i+k,j+l)h(k,l)$$
 
 多通道卷积操作最终可以转化为矩阵运算，如下图所示：
 
-![](/images/article/conv.jpg)
+![](/images/article/conv.png)
 
 这种将卷积运算变为矩阵乘法运算的方法，一般被称为GEMM（General Matrix Multiply）。因为卷积变为矩阵这一步运算在Caffe中是用im2col函数实现的，因此，也有使用im2col来指代这类方法的。

@@ -224,13 +224,3 @@ $$\begin{aligned}\theta =& \mathop{\arg\min}_{\theta} L_2\\
 ![](/images/img3/GAN_2.png)
 
 由于$$V(G_0,D_0^*)$$和$$V(G_1,D_0^*)$$的走势不尽相同，前者的下坡有可能是后者的上坡，因此G网络的更新不能太频繁。**一般更新D网络k次，更新G网络1次。**
-
-## 小结
-
-![](/images/img2/GAN.png)
-
-1.Real Samples可看作满足分布Z的采样集。
-
-2.GAN的目标是学习分布Z。因此，虽然GAN和RL都是无监督学习，但前者需要Real Samples，而后者可能只需要一个规则，例如AlphaZero。换句话说，GAN的监督信号隐藏在样本中，而不是标签或者规则中。
-
-![](/images/img2/GAN_vs_RL.png)

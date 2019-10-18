@@ -195,7 +195,7 @@ $$TPR=\frac{TP}{TP+FN},FPR=\frac{FP}{TN+FP}$$
 
 ROC曲线下方的面积被称为AUC（Area Under ROC Curve）。
 
-![](/images/article/ROC.gif)
+![](/images/article/ROC.png)
 
 更多内容参见下图：
 
@@ -211,7 +211,7 @@ https://en.wikipedia.org/wiki/Sensitivity_and_specificity
 
 除此之外，还有F-measure：
 
-![](/images/article/P_R_F.gif)
+![](/images/article/P_R_F.png)
 
 如果是做搜索，那就是保证召回的情况下提升准确率；如果做疾病监测、反垃圾，则是保准确率的条件下，提升召回率。所以，在两者都要求高的情况下，可以用F-measure来衡量。
 

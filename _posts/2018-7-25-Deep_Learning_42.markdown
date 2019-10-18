@@ -40,7 +40,15 @@ https://mp.weixin.qq.com/s/06FWeGysBjU9wTMUx_eY0Q
 
 https://mp.weixin.qq.com/s/3AhiaNilRyTX_f7F306yng
 
-主动学习（Active Learning）-少标签数据学习 
+主动学习（Active Learning）-少标签数据学习
+
+https://mp.weixin.qq.com/s/Rj55EoopzlR71DZ5XrvH_w
+
+八千字长文深度解读，迁移学习在强化学习中的应用及最新进展
+
+https://mp.weixin.qq.com/s/G-Z6zyYSV95--x0PjQVMiw
+
+自然语言处理中的迁移学习(上)
 
 # 深度ISP
 

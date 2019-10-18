@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 高考复读, 阿波罗50年, 上古软件开发, 长安十二时辰
+title: 高考复读, 阿波罗50年, 上古软件开发, 长安十二时辰, 华为
 category: essay 
 ---
 
@@ -128,6 +128,30 @@ https://mp.weixin.qq.com/s/_scdjORTdeeHja-1LL-4Qg
 
 《长安十二时辰背后的技术秘籍》正式公开
 
+# 华为
+
+![](/images/img3/huawei.png)
+
+https://mp.weixin.qq.com/s/51BChStbnEt-ptH0WhmNsw
+
+通篇干货！任正非昨日答媒体42问全文实录
+
+https://github.com/ttpianobirds/RenZhengfei
+
+任正非思想
+
+勿谓言之不预：Don't say I didn't warn you.
+
+侠客岛：人民日报海外版
+
+https://mp.weixin.qq.com/s/TwDl28KQUjjaMW3osRC45w
+
+2670亿美金的教训：谁谋杀了华为的对手？
+
+https://mp.weixin.qq.com/s/CL2miB-pJgNq8ueHtHc5gQ
+
+一图看懂国产芯片VS国外芯片！
+
 # 世说新语
 
 ## 2019.5（续）
@@ -167,26 +191,6 @@ https://mp.weixin.qq.com/s/1jYvcT5-XZuwYxBBRPufjA
 尽管如此，GPA两栖吉普车还是参加了一些盟军重大军事行动，如1943年9月9日的西西里登陆作战。但是美军还是无法容忍它的诸多问题：首先，西欧水系的堤岸大多为人工构筑，非常陡峭，即便是GPA这样4×4车辆要克服这样的障碍也是力不从心；其次，GPA干舷太低，只适宜在内河水系中使用，不适合在海上使用。正因如此，美军后来将许多GPA都被作为租借法案的“馈赠”转送给苏联。1942-1943年，总计有大约3500辆GPA被提供给苏联红军。
 
 有趣的是，GPA却是“墙内开花墙外香”——苏联红军认为该车的江河泅渡能力非常出色，这其中的主要原因是使用环境的不同，苏德战场不存在海上使用问题，而那里的内河河岸一般都是自然平缓的，刚好可以让GPA大显身手。在东线战场上，苏联红军经常要穿越许多河流湖泊，夺取河岸的桥头堡，GPA当然成了他们理想的泅渡工具，这帮助东线的GPA赢得了不错的声誉。GPA给苏联人留下了深刻的印象。
-
-----
-
-![](/images/img3/huawei.png)
-
-https://mp.weixin.qq.com/s/51BChStbnEt-ptH0WhmNsw
-
-通篇干货！任正非昨日答媒体42问全文实录
-
-https://github.com/ttpianobirds/RenZhengfei
-
-任正非思想
-
-勿谓言之不预：Don't say I didn't warn you.
-
-侠客岛：人民日报海外版
-
-https://mp.weixin.qq.com/s/TwDl28KQUjjaMW3osRC45w
-
-2670亿美金的教训：谁谋杀了华为的对手？
 
 ----
 

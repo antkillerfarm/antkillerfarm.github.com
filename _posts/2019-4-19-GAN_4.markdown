@@ -1,10 +1,26 @@
 ---
 layout: post
-title:  GAN（四）——GAN Ensemble, Pix2Pix, CycleGAN, StarGAN, InfoGAN, ProGAN
+title:  GAN（四）——Stack GAN, GAN Ensemble, Pix2Pix, CycleGAN, StarGAN
 category: GAN & VAE 
 ---
 
-# Stack GAN（续）
+# EBGAN & BEGAN（续）
+
+EBGAN的最大特点就是判别器一开始就非常强(因为有pretrain)，因此生成器在一开始就能获得比较大的“能量驱动”(energy based)，使得在一开始生成器就进步非常快。所以如果我们比较看中训练效率，希望在短期内获得一个比较不错的生成器的话，就可以考虑EBGAN。
+
+BEGAN则借鉴了EBGAN和WGAN各自的一些优点。
+
+# Stack GAN
+
+论文：
+
+《StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks》
+
+早期以DCGAN为代表的网络生成的图片分辨率太低，质量不够好，都不超过100×100，在32×32或者64×64左右。这是因为难以一次性学习到生成高分辨率的样本，收敛过程容易不稳定。因此采用级联结构，逐次提升分辨率的Stack GAN应运而生。
+
+![](/images/img2/Stack_GAN.png)
+
+上图是Stack GAN的网络结构图。其中的Conditioning Augmentation，显然使用了和VAE类似的添加随机噪声的技术。
 
 类似想法的还有LAPGAN。
 
@@ -275,35 +291,3 @@ StarGAN不仅可在同一数据集中进行Domain变换，还可在不同数据�
 2.对标签进行编码。例如图中使用的Onehot编码。
 
 3.**利用Mask区分是哪个数据集。**这一步是关键。
-
-![](/images/img3/GAN_5.png)
-
-除此之外，同期的Couple GAN也采用了类似的设计。上图是Couple GAN的网络结构图，其中的虚线表示网络的参数是共享的。
-
-参考：
-
-https://mp.weixin.qq.com/s/rPDvLnG4MBDRUMCWs2fjcQ
-
-最新StarGAN对抗生成网络实现多领域图像变换
-
-# InfoGAN
-
-论文：
-
-《InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets》
-
-CGAN虽然已经有了些user control的能力，然而还不够强。比如人脸图片，user control的点（例如肤色、发型、表情等）就非常多，简单的标签不足以表达这么多含义。InfoGAN主要就是用来提升user control能力的。
-
-![](/images/img3/InfoGAN.png)
-
-上图是InfoGAN的网络结构图。相比CGAN，它的改进在于：
-
-1.将控制变量嵌入网络中。
-
-2.Discriminator和Classifier共享大多数参数，仅最后一层不同。
-
-参考：
-
-https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247492415&idx=1&sn=a359e72ee99555f7a2fb4e21b2ad51db
-
-InfoGAN：一种无监督生成方法

@@ -93,3 +93,7 @@ https://mp.weixin.qq.com/s/PzUqtBJFykB839Ff7yafoA
 https://mp.weixin.qq.com/s/JXMD8uGcVQImcZULWZiGkg
 
 跨语言预训练，提高机器推理的迁移能力
+
+https://mp.weixin.qq.com/s/3DPNC2bwmg8veH-XtVAGGA
+
+腾讯提出NumNet+模型，超越谷歌登DROP排行榜第一名
