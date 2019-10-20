@@ -270,10 +270,6 @@ https://mp.weixin.qq.com/s/HS2zcnA1YSRU8-DrodJ6Qw
 
 淘宝用强化学习优化商品搜索后，总收入能提高2%
 
-https://mp.weixin.qq.com/s/QZeyEN2DDM_etEki7uodMg
-
-一个神奇的特征选择轮子----MLFeatureSelection
-
 https://mp.weixin.qq.com/s/8MQ1G-JWGAw5Ev1Ws3V_ig
 
 IJCAI 2018国际广告算法大赛迁移学习夺冠，中国包揽冠亚季军

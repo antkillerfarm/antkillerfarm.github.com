@@ -293,3 +293,7 @@ https://mp.weixin.qq.com/s/DLNyb-GtzmSYuXcn6VQz4Q
 https://mp.weixin.qq.com/s/3SWtxtV9b0dFpvqfTNlqIg
 
 Slimmable Neural Networks
+
+https://mp.weixin.qq.com/s/lc7IoOV6S2Uz5xi7cPQUqg
+
+基于元学习和AutoML的模型压缩新方法

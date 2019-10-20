@@ -78,7 +78,9 @@ https://mp.weixin.qq.com/s/kEC-5huq6cFjd1iPjSuK-g
 
 ## QNNPACK
 
-QNNPACK是FB推出的一个矩阵运算加速库，已经集成到pytorch中。
+QNNPACK (Quantized Neural Networks PACKage) 是 Marat Dukhan (Facebook) 开发的专门用于量化神经网络计算的加速库。其卓越的性能表现一经开源就击败了几乎全部已公开的加速算法，甚至直至今日（2019 年中）。
+
+它已经集成到pytorch中。
 
 代码：
 
@@ -89,6 +91,10 @@ https://github.com/pytorch/qnnpack
 https://mp.weixin.qq.com/s/30cxIX9aKIpELC8H4_k8Gg
 
 比TFLite快2倍！FB开源移动深度学习优化库QNNPACK
+
+https://zhuanlan.zhihu.com/p/81026071
+
+神经网络加速库QNNPACK实现揭秘
 
 ## 细节
 

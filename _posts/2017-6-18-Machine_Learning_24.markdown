@@ -248,3 +248,27 @@ https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247515402&idx=1&sn=ee3cd5
 https://mp.weixin.qq.com/s/NKKk8nRd0qn5XhxXgYWknw
 
 手把手带你入门和实践特征工程的万字笔记
+
+https://mp.weixin.qq.com/s/QZeyEN2DDM_etEki7uodMg
+
+一个神奇的特征选择轮子----MLFeatureSelection
+
+https://mp.weixin.qq.com/s/8NI-NayCg_gZmJ6-1FZ_DA
+
+一个Python特征选择工具，助力实现高效机器学习
+
+https://mp.weixin.qq.com/s/LbXHpnC19euqriCtSHeg1Q
+
+UC Berkeley提出特征选择新方法：条件协方差最小化
+
+https://mp.weixin.qq.com/s/V3w5Iu804O6PmnBjmwCbgw
+
+常用文本特征选择
+
+https://mp.weixin.qq.com/s/Rj-ObD-eM5zEfs5fkWamGQ
+
+三大特征选择策略，有效提升你的机器学习水准
+
+https://mp.weixin.qq.com/s/rNipJC5wljzCT6Aq5gvvqw
+
+一款功能强大的特征选择工具（FeatureSelector）

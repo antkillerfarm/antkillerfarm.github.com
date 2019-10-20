@@ -242,6 +242,10 @@ https://zhuanlan.zhihu.com/p/83605553
 
 移动机器人同时估计自身位姿和物体位姿
 
+https://mp.weixin.qq.com/s/M-ihYsQUsT3deekhniixrQ
+
+聊聊无人驾驶技术中的路由寻径
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。

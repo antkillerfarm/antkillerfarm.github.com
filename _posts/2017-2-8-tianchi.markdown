@@ -268,6 +268,10 @@ https://mp.weixin.qq.com/s/FyYhLS3X7LDe0PLxooz_cQ
 
 Redis的n种妙用，不仅仅是缓存
 
+https://mp.weixin.qq.com/s/X1gh_mtXvc9KnI2jK-cTyw
+
+如果面试官问你：Redis内存满了怎么办？
+
 # Pika
 
 Pika是一个可持久化的大容量redis存储服务，兼容string、hash、list、zset、set的绝大部分接口(兼容详情)，解决redis由于存储数据量巨大而导致内存不够用的容量瓶颈。

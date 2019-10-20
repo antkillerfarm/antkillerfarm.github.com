@@ -401,7 +401,7 @@ https://mp.weixin.qq.com/s/xCHvB7gKCBxXk1_rAtG0sw
 
 ### FlashText
 
-在NLP任务中，清理文本数据通常需要替换句子中的关键词或从句子中提取关键词。通常，这样的操作可以用正则表达式来完成，但是如果要搜索的词汇量过大，操作就会变得麻烦。Python 中基于FlashText算法的FlashText模块，为这种情况提供了一个合适的替代方案。
+在NLP任务中，清理文本数据通常需要替换句子中的关键词或从句子中提取关键词。通常，这样的操作可以用正则表达式来完成，但是如果要搜索的词汇量过大，操作就会变得麻烦。Python中基于FlashText算法的FlashText模块，为这种情况提供了一个合适的替代方案。
 
 官网：
 
@@ -410,6 +410,12 @@ https://flashtext.readthedocs.io/en/latest/
 论文：
 
 《Replace or Retrieve Keywords In Documents at Scale》
+
+参考：
+
+https://mp.weixin.qq.com/s/IKxweABi4IEyXjKNw9BJgA
+
+正则表达式太慢？这里有一个提速100倍的方案：FlashText
 
 ### fuzzywuzzy
 
@@ -436,25 +442,3 @@ https://github.com/NLPchina
 Ansj是一个NLPchina旗下的开源的Java中文分词工具，基于中科院的ictclas中文分词算法，比其他常用的开源分词工具（如mmseg4j）的分词准确率更高。
 
 https://github.com/NLPchina/ansj_seg
-
-### Word2VEC_java
-
-word2vec java版本的一个实现。
-
-https://github.com/NLPchina/Word2VEC_java
-
-doc2vec java版本的一个实现，基于Word2VEC_java。
-
-https://github.com/yao8839836/doc2vec_java
-
-### ansj_fast_lda
-
-LDA算法的Java包。
-
-https://github.com/NLPchina/ansj_fast_lda
-
-### nlp-lang
-
-这个项目是一个基本包.封装了大多数nlp项目中常用工具
-
-https://github.com/NLPchina/nlp-lang

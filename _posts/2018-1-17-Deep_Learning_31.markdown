@@ -204,6 +204,18 @@ https://zhuanlan.zhihu.com/p/86965595
 
 深入理解NLP Subword算法：BPE、WordPiece、ULM
 
+## BPE
+
+Byte Pair Encoding(BPE)本来是一种数据压缩算法，后来被用于分词。它从命名实体、同根词、外来语、组合词（罕见词有相当大比例是上述几种）的翻译策略中得到启发，认为把这些罕见词拆分为“子词单元”(subword units)的组合，可以有效的缓解NMT的OOV和罕见词翻译的问题。BPE对英文、德文、俄文等表音文字效果较好，但不太适用于中文。
+
+论文：
+
+《Neural Machine Translation of Rare Words with Subword Units》
+
+代码：
+
+https://github.com/rsennrich/subword-nmt
+
 # Image Caption Generation
 
 Image Caption Generation的目标是：给定一张图片，让计算机用一句话来描述这张图片。如果将这里的Image换成Video，那就是Video Caption Generation了。
@@ -315,39 +327,3 @@ https://mp.weixin.qq.com/s/-b8FuEQlpEb5G0L0QAxVEA
 https://zhuanlan.zhihu.com/p/50784504
 
 《Reconstruction Network for Video Captioning》阅读笔记
-
-https://mp.weixin.qq.com/s/tEzZ770T1NpYLAxUK-MwIg
-
-综述：Image Caption 任务之语句多样性
-
-https://zhuanlan.zhihu.com/p/53220566
-
-《Adaptive Co-Attention Network for NER in Tweet》阅读笔记
-
-https://mp.weixin.qq.com/s/sQoqt-7EqZmy5gvIWTtMKQ
-
-更有智慧的眼睛：图像描述（Image Caption）&视觉问答（VQA）综述（上）
-
-https://mp.weixin.qq.com/s/3Y5f7JsxsmmuCjAX625h1Q
-
-MirrorGAN出世！浙大等提出文本-图像新框架
-
-https://mp.weixin.qq.com/s/1rtONnhwEc3Osf9gP5fBCQ
-
-李飞飞CVPR最新论文“文本转图”效果优化可多一步：物体关系描述
-
-https://mp.weixin.qq.com/s/9XiAJzC2_vmZturE9ELVLA
-
-多级语言与视觉集成用于文本-剪辑检索
-
-https://mp.weixin.qq.com/s/UehKCDiBRnjZWLEcx_iU-g
-
-微软最新提出ObjGAN，输入一句话秒生成图片
-
-https://mp.weixin.qq.com/s/p8K4eixOwCiUkhzntKYa-Q
-
-视觉问答：VQA经典模型Up-Down以及VQA 2017challenge 冠军方案解读
-
-https://mp.weixin.qq.com/s/hGaX4I_WsPv9P_WAHaDuog
-
-NLP+CV《桥接视觉与语言的研究综述》，带你全面了解视觉+语言最新应用和方法

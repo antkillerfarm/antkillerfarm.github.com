@@ -48,6 +48,10 @@ https://mp.weixin.qq.com/s/cqzk7iHD8sJGLnIhkTgN3w
 
 一文读懂全球自动驾驶研究现状
 
+https://zhuanlan.zhihu.com/p/87416772
+
+自动驾驶中深度学习-综述
+
 https://mp.weixin.qq.com/s/3lgOxQm07nFpxWauT8b2ow
 
 值得收藏，自动驾驶技术与实例最全解析！

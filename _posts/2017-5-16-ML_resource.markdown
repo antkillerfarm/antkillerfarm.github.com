@@ -386,10 +386,6 @@ https://mp.weixin.qq.com/s/YtRt-JTrR6XyVYo-i7RXTw
 
 数学家破解婚恋网站配对程序，90天找到灵魂伴侣
 
-https://mp.weixin.qq.com/s/Rj-ObD-eM5zEfs5fkWamGQ
-
-三大特征选择策略，有效提升你的机器学习水准
-
 https://mp.weixin.qq.com/s/JF23e8-XbkpPxLi6kTxfNA
 
 一文搞懂Hungarian Algorithm匈牙利算法

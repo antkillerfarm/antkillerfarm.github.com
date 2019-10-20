@@ -4,6 +4,44 @@ title:  深度学习（三十二）——点云, 图像超分辨率进阶
 category: DL 
 ---
 
+# Image Caption Generation（续）
+
+https://mp.weixin.qq.com/s/tEzZ770T1NpYLAxUK-MwIg
+
+综述：Image Caption 任务之语句多样性
+
+https://zhuanlan.zhihu.com/p/53220566
+
+《Adaptive Co-Attention Network for NER in Tweet》阅读笔记
+
+https://mp.weixin.qq.com/s/sQoqt-7EqZmy5gvIWTtMKQ
+
+更有智慧的眼睛：图像描述（Image Caption）&视觉问答（VQA）综述（上）
+
+https://mp.weixin.qq.com/s/3Y5f7JsxsmmuCjAX625h1Q
+
+MirrorGAN出世！浙大等提出文本-图像新框架
+
+https://mp.weixin.qq.com/s/1rtONnhwEc3Osf9gP5fBCQ
+
+李飞飞CVPR最新论文“文本转图”效果优化可多一步：物体关系描述
+
+https://mp.weixin.qq.com/s/9XiAJzC2_vmZturE9ELVLA
+
+多级语言与视觉集成用于文本-剪辑检索
+
+https://mp.weixin.qq.com/s/UehKCDiBRnjZWLEcx_iU-g
+
+微软最新提出ObjGAN，输入一句话秒生成图片
+
+https://mp.weixin.qq.com/s/p8K4eixOwCiUkhzntKYa-Q
+
+视觉问答：VQA经典模型Up-Down以及VQA 2017challenge 冠军方案解读
+
+https://mp.weixin.qq.com/s/hGaX4I_WsPv9P_WAHaDuog
+
+NLP+CV《桥接视觉与语言的研究综述》，带你全面了解视觉+语言最新应用和方法
+
 # 点云
 
 ## PCL

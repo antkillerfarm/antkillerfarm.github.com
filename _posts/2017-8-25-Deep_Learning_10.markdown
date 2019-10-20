@@ -217,3 +217,7 @@ ShuffleNetV2：轻量级CNN网络中的桂冠
 https://mp.weixin.qq.com/s/zLf0aKeMYwqMwC1TymMxgQ
 
 移动端高效网络，卷积拆分和分组的精髓
+
+https://zhuanlan.zhihu.com/p/86095608
+
+Learnable Group Convolutions:可以学习的分组卷积

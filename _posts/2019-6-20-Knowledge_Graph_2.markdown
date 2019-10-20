@@ -202,6 +202,40 @@ https://www.jianshu.com/p/5b8f00d6a9d7
 
 topK算法问题
 
+## 正则表达式
+
+https://mp.weixin.qq.com/s/OtVRL37CNt_d5yEJPzzBzg
+
+一个由正则表达式引发的血案
+
+https://mp.weixin.qq.com/s/udEQzNk7vTltFhLyAXrsNQ
+
+图文解读助你理解和使用正则表达式
+
+https://zhuanlan.zhihu.com/p/27971065
+
+关于多正则匹配
+
+# Trie树
+
+Trie树也称字典树，因为其效率很高，所以在在字符串查找、前缀匹配等中应用很广泛，其高效率是以空间为代价的。
+
+下面以英文单词构建的字典树为例，这棵Trie树中每个结点包括26个孩子结点，因为总共有26个英文字母(假设单词都是小写字母组成)。
+
+如给出字符串"abc","ab","bd","dda"，根据该字符串序列构建一棵Trie树。则构建的树如下:
+
+![](/images/article/trie.jpg)
+
+参考：
+
+https://mp.weixin.qq.com/s/J7C70ASC6GZJqmqut0Z6Ag
+
+双数组Trie树(DoubleArrayTrie)Java实现
+
+https://mp.weixin.qq.com/s/nMmrVPvjaPOLgxKNjMzetw
+
+动画+解析，轻松理解“Trie树”
+
 ## 参考
 
 BFS：Breadth First Search

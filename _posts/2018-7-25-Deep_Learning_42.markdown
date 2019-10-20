@@ -50,6 +50,14 @@ https://mp.weixin.qq.com/s/G-Z6zyYSV95--x0PjQVMiw
 
 自然语言处理中的迁移学习(上)
 
+https://mp.weixin.qq.com/s/WlpmZmmqsepwbZJqxXrUhw
+
+自然语言处理中的迁移学习(下)
+
+https://mp.weixin.qq.com/s/cG0TDIZ3z4lUEQb_N1ysbg
+
+使用迁移学习构建顶尖会话AI
+
 # 深度ISP
 
 ## 数据集

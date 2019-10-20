@@ -110,10 +110,6 @@ https://www.zhihu.com/question/345173757
 
 多任务学习成功的原因是引入了别的数据库还是多任务框架本身呢？
 
-https://mp.weixin.qq.com/s/L0sPKza2CHjyxcxsoGvMeg
-
-电商多目标优化小结
-
 https://zhuanlan.zhihu.com/p/52566508
 
 深度神经网络中的多任务学习汇总
@@ -302,6 +298,10 @@ DeepFace先进行了两次全卷积＋一次池化，提取了低层次的边缘
 
 ## 人脸关键点
 
+https://mp.weixin.qq.com/s/qWMQV33k1bDAHWwwVod3_g
+
+初学深度学习人脸关键点检测必读文章
+
 https://zhuanlan.zhihu.com/p/42968117
 
 人脸关键点检测综述
@@ -336,7 +336,7 @@ PFLD：简单高效的实用人脸关键点检测算法
 
 https://mp.weixin.qq.com/s/HpgcPkAZb9R5jF-zsGcfcw
 
-美图影像实验室（MTlab）10000 点人脸关键点技术全解读
+美图影像实验室（MTlab）10000点人脸关键点技术全解读
 
 ## 参考
 

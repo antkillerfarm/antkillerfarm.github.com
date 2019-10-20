@@ -4,7 +4,7 @@ title:  深度加速（三）——Winograd（3）, NN Quantization
 category: DL acceleration 
 ---
 
-# Winograd
+# Winograd（续）
 
 ## FFT与卷积
 
@@ -87,6 +87,10 @@ https://mp.weixin.qq.com/s/RaW_WVKoLBk6jkoA6A3D-A
 https://mp.weixin.qq.com/s/1JVPTv0ggD0IOEiZAa8mqA
 
 深度神经网络卷积层计算加速与优化
+
+https://zhuanlan.zhihu.com/p/80361782
+
+卷积神经网络性能优化
 
 # NN Quantization
 

@@ -386,10 +386,6 @@ https://mp.weixin.qq.com/s/Ljo36772QTUDKuRrxIRmmw
 
 100多个Jupyter精选资源，有人整理在一个GitHub项目里！
 
-https://mp.weixin.qq.com/s/8NI-NayCg_gZmJ6-1FZ_DA
-
-一个Python特征选择工具，助力实现高效机器学习
-
 https://mp.weixin.qq.com/s/8XDXgIm-Zcb3dL-2h9eSjA
 
 用Python构建NLP Pipeline，从思路到具体代码，这篇文章一次性都讲到了

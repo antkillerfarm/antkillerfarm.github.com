@@ -242,6 +242,10 @@ https://mp.weixin.qq.com/s?__biz=MjM5MDE3OTk2Ng==&mid=2657461772&idx=1&sn=fa1412
 
 麻省理工牛人解说数学体系
 
+https://mp.weixin.qq.com/s/GHIFsFleS7aGMP0ye_SCCQ
+
+我居然从一只猫身上学到了斐波那契数列
+
 # 最速降线
 
 约翰·伯努利在1696年提出最速降线的问题（problem of brachistochrone），向全欧洲数学家征求解答。这个问题最早由伽利略在1630年提出：**“一个质点在只受重力的作用下，从一个给定点A到不在它垂直下方的另一点B，问沿着什么曲线下滑（忽略摩擦力）所需时间最短？”**

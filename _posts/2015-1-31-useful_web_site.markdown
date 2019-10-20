@@ -162,10 +162,6 @@ https://zhuanlan.zhihu.com/p/27925292
 
 潜伏、破局与变革：人脸识别技术国内机场发展简史
 
-https://zhuanlan.zhihu.com/p/27971065
-
-关于多正则匹配
-
 https://mp.weixin.qq.com/s/2_zdY4NoOPXq75H1A15R8w
 
 VMM的功能和分类
@@ -177,10 +173,6 @@ https://mp.weixin.qq.com/s/B486kp-GNshNVIi756lL9Q
 https://mp.weixin.qq.com/s/sCJFFZm-soWAt8kDyYulPQ
 
 99%留学生都不知道的Paper写作神器，Google从此是路人
-
-https://mp.weixin.qq.com/s/OtVRL37CNt_d5yEJPzzBzg
-
-一个由正则表达式引发的血案
 
 https://mp.weixin.qq.com/s/oddiCH7TCUBn8CkIYdaNZA
 
@@ -358,6 +350,10 @@ https://mp.weixin.qq.com/s/rF7_xJBq4NJP6CmkW3HPpQ
 
 漫画：什么是中台？
 
+https://mp.weixin.qq.com/s/BJwohmG_BEJ7dXbcPTgaCQ
+
+风口上的RPA：是AI落地缓冲剂，还是创投圈的一场炒作？
+
 ## 科研人生
 
 https://mp.weixin.qq.com/s/6gX1UFSykuzw358ARUzifw
@@ -379,28 +375,6 @@ http://phdcomics.com/
 https://zhuanlan.zhihu.com/p/74249758
 
 陈天奇：机器学习科研的十年
-
-## 负载均衡
-
-http://blog.csdn.net/gzh0222/article/details/8540604
-
-lvs、haproxy、nginx负载均衡的比较分析
-
-https://mp.weixin.qq.com/s/SO1ZLSPaRkk8WwUl9u-JPA
-
-仅需这一篇，吃透“负载均衡”妥妥的
-
-https://mp.weixin.qq.com/s/31DGDYpDHcYg-4qM4OczxA
-
-深入浅出Nginx
-
-https://mp.weixin.qq.com/s/h9sXZc4Y62f4KOSVXAB1Pg
-
-Nginx基本功能极速入门
-
-https://mp.weixin.qq.com/s/3KZ99d94yqRDxEByn7nGWg
-
-QPS比Nginx提升60%，阿里Tengine负载均衡算法揭秘
 
 ## 有用的blog
 

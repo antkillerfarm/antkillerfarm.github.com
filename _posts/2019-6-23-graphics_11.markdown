@@ -42,6 +42,10 @@ https://blog.csdn.net/qq_17783559/article/details/82254996
 
 MOSSE原理及代码解析
 
+https://mp.weixin.qq.com/s/XqFe9d72CepdfTSOq2gWJg
+
+半全局匹配SGM
+
 # DRL参考资源+
 
 https://mp.weixin.qq.com/s/lR6BSa_pJzcinkSaSWsM2A

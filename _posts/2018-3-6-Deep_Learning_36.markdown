@@ -4,7 +4,7 @@ title:  深度学习（三十六）——深度推荐系统（2）
 category: DL 
 ---
 
-# 深度推荐系统
+# 深度推荐系统（续）
 
 https://zhuanlan.zhihu.com/p/57234648
 
@@ -233,3 +233,15 @@ https://zhuanlan.zhihu.com/p/86031123
 https://mp.weixin.qq.com/s/B109cC_hf3XXsKRAw-0_xA
 
 YouTube视频推荐系统为什么那么强？
+
+https://mp.weixin.qq.com/s/c6aZYgx7gKuZk3EMs6PNRQ
+
+Youtube推荐系统是如何挖掘用户内心另一面的
+
+https://zhuanlan.zhihu.com/p/53462648
+
+AutoInt:使用Multi-head Self-Attention进行自动特征学习的CTR模型
+
+https://mp.weixin.qq.com/s/JXW--wzpaFwRHSSvZEA0mg
+
+阿里提出多目标优化全新算法框架，同时提升电商GMV和CTR

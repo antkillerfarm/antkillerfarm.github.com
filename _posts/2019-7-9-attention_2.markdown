@@ -309,3 +309,7 @@ TransformerXL：因为XL，所以更牛
 https://mp.weixin.qq.com/s/o__YU5vlfKi4HGytlug3og
 
 从头开始了解Transformer
+
+https://mp.weixin.qq.com/s/DuRpnJRqvZ8Jfc7jutpIXw
+
+Transformer研究指南

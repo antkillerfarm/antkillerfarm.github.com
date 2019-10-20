@@ -4,7 +4,7 @@ title:  深度加速（二）——Winograd（2）
 category: DL acceleration 
 ---
 
-# Winograd
+# Winograd（续）
 
 ## Bézout's identity和Extended Euclidean algorithm
 

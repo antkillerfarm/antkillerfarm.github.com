@@ -401,3 +401,7 @@ https://mp.weixin.qq.com/s/5BuGyj3SaqZPD2kR_jpUWA
 https://mp.weixin.qq.com/s/dHRyH7S6jV2jxgoxbQDNSg
 
 DynTypo: 基于样例的动态文本特效迁移
+
+https://mp.weixin.qq.com/s/ENvoZ4ZPKT1HXaQjD9VgSA
+
+王晶：华为云OCR文字识别服务技术实践、底层框架及应用场景

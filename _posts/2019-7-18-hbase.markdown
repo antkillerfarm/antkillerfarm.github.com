@@ -188,3 +188,7 @@ https://mp.weixin.qq.com/s/xWNSI9jZVIYaGxdBsSB8gw
 https://mp.weixin.qq.com/s/pQbsGxM59fgQMYH54ETk7Q
 
 面试集锦-HBase
+
+https://mp.weixin.qq.com/s/vyF0VAF8xjEWrBnS1_DtkA
+
+用HBase做高性能键值查询？

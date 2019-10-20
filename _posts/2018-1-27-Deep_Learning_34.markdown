@@ -238,6 +238,10 @@ https://zhuanlan.zhihu.com/p/85739175
 
 关于句子表征的学习笔记
 
+https://mp.weixin.qq.com/s/M_Fo1BSv3yZ52XPxXCf77w
+
+多模态预训练表示UNITER：通用图像-文本语言表示学习
+
 # CNN进阶
 
 http://mp.weixin.qq.com/s/ddTNr-967IahTZ2X1LNSEQ

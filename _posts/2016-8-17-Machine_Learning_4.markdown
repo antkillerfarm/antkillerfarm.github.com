@@ -36,6 +36,10 @@ https://mp.weixin.qq.com/s/KNV0KfWktmsPUtQ93a7cDQ
 
 这个男人嫁还是不嫁？懂点朴素贝叶斯(Naive Bayes)原理让你更幸福
 
+https://mp.weixin.qq.com/s/ph5KbDxS7QR3I_ev-Js2RQ
+
+朴素贝叶斯文本分类实战
+
 ## 拉普拉斯平滑
 
 对于样本集中未出现的单词，在其首次出现时，由于先验概率$$p(x_i\mid y=1)=0,p(x_i\mid y=0)=0$$，这时公式1会出现$$\frac{0}{0}$$的情况。

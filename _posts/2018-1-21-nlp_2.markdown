@@ -6,6 +6,28 @@ category: AI
 
 # NLP
 
+### Word2VEC_java
+
+word2vec java版本的一个实现。
+
+https://github.com/NLPchina/Word2VEC_java
+
+doc2vec java版本的一个实现，基于Word2VEC_java。
+
+https://github.com/yao8839836/doc2vec_java
+
+### ansj_fast_lda
+
+LDA算法的Java包。
+
+https://github.com/NLPchina/ansj_fast_lda
+
+### nlp-lang
+
+这个项目是一个基本包.封装了大多数nlp项目中常用工具
+
+https://github.com/NLPchina/nlp-lang
+
 ## protege
 
 protege软件是斯坦福大学医学院生物信息研究中心基于Java语言开发的本体编辑和知识获取软件，或者说是本体开发工具，也是基于知识的编辑器。这个软件主要用于语义网中本体的构建，是语义网中本体构建的核心开发工具。
@@ -215,18 +237,6 @@ https://mp.weixin.qq.com/s/xjSw7PbVrESo9u4otBOM1Q
 《Using Recurrent Neural Networks for Slot Filling in Spoken Language Understanding》
 
 Semantic Role Labeling
-
-## BPE
-
-Byte Pair Encoding(BPE)本来是一种数据压缩算法，后来被用于分词。它从命名实体、同根词、外来语、组合词（罕见词有相当大比例是上述几种）的翻译策略中得到启发，认为把这些罕见词拆分为“子词单元”(subword units)的组合，可以有效的缓解NMT的OOV和罕见词翻译的问题。BPE对英文、德文、俄文等表音文字效果较好，但不太适用于中文。
-
-论文：
-
-《Neural Machine Translation of Rare Words with Subword Units》
-
-代码：
-
-https://github.com/rsennrich/subword-nmt
 
 ## 模型导读
 

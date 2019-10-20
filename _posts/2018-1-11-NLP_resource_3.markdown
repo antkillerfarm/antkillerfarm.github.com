@@ -76,10 +76,6 @@ https://mp.weixin.qq.com/s/KWWbaE2em4fEBInPoWTq8A
 
 Python实现多种模型(Naive Bayes, SVM, CNN, LSTM, etc)用于推文情感分析
 
-https://mp.weixin.qq.com/s/V3w5Iu804O6PmnBjmwCbgw
-
-常用文本特征选择
-
 https://mp.weixin.qq.com/s/VOyJu8FBIK91MsumCBaMyg
 
 NLP领域的ImageNet时代到来：词嵌入“已死”，语言模型当立
