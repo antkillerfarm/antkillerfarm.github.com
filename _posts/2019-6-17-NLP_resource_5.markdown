@@ -373,3 +373,7 @@ https://mp.weixin.qq.com/s/tREtbGpoLR-kc-1DnC8wWg
 https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247486300&idx=1&sn=dd681216da626c73531fc17ffbccf22a
 
 清华刘知远：知识指导的自然语言处理
+
+https://zhuanlan.zhihu.com/p/69069509
+
+渐入佳境，基于主题感知的Coarse-to-Fine机制的在线评论生成

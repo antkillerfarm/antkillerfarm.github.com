@@ -70,6 +70,10 @@ https://mp.weixin.qq.com/s/ejdrNCY6ZdAqwT-_EjC8rQ
 
 近千人点赞！哈佛博士放出超多资源，机器学习课程教程小抄全都有
 
+https://mp.weixin.qq.com/s/770XJkSS8T6d2UEpcKXy9Q
+
+数据分析技能详细拆解，一张图覆盖全流程知识细节和资源推荐
+
 https://mp.weixin.qq.com/s/BZTCNehoioM9ie8WoL7sUg
 
 机器学习中的这12条经验，希望对你有所帮助

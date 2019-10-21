@@ -186,6 +186,10 @@ https://mp.weixin.qq.com/s/nSZfGdPXXs02dCdG49EQhg
 
 142页"ICML会议"强化学习笔记整理(2018&2019年)
 
+https://mp.weixin.qq.com/s/QZiBPOlp4mlTxIlEbhtgWg
+
+138页“策略优化”PPT--Pieter Abbeel
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》

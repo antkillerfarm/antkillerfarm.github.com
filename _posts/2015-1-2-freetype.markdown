@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  FreeType, FFmpeg, SDL, 图像处理软件, Mac OS X, Objective-C
+title:  FreeType, FFmpeg, SDL, 图像处理软件, Mac OS X
 category: technology 
 ---
 
@@ -105,6 +105,10 @@ http://dranger.com/ffmpeg/
 http://www.cnblogs.com/dwdxdy/p/3240167.html
 
 FFmpeg常用基本命令
+
+https://mp.weixin.qq.com/s/5S_NgjxoswrGcrQzBOyoYQ
+
+视频数据处理方法！关于开源软件FFmpeg视频抽帧的学习
 
 # SDL
 
@@ -219,19 +223,3 @@ ImageMagick将PDF转换为PNG的示例：
 原版镜像由于Apple的硬件检测机制，并不能在PC上运行。这时就需要破解，这一步一般是在boot中做的。
 
 可用的boot工具，早期有empireEFI、HackBoot。较新的有chameleon、Niresh。
-
-# Objective-C
-
-## 环境搭建
-
-PC上搭建Objective-C（以下简称OC）开发环境，主要借助GNUstep开源项目的成果。
-
-以Ubuntu为例，步骤如下：
-
-1.安装软件包。
-
-`sudo apt-get install gnustep-devel libjpeg-dev libtiff5-dev gobjc-4.9`
-
-2.设置环境变量。
-
-`GNUSTEP_MAKEFILES=/usr/share/GNUstep/Makefiles`
