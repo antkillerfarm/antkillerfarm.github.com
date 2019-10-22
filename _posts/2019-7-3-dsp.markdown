@@ -232,34 +232,6 @@ https://mp.weixin.qq.com/s/C0t-JFgs2i9m-YBJyrX2wQ
 
 # AI工具+
 
-https://mp.weixin.qq.com/s/hkcVhyqiDW--F3QxucgEcA
-
-亚马逊开源神经机器翻译框架Sockeye：基于Apache MXNet的NMT平台
-
-http://www.sohu.com/a/163063280_633698
-
-无监督对话数据清洗利器：Data Purification Framework
-
-https://mp.weixin.qq.com/s/l0pzq54uDdYctSj7R3QNWw
-
-AmpliGraph：知识图谱表示学习工具包
-
-https://mp.weixin.qq.com/s/a3zu7nvy0itOvzvgOlf01Q
-
-搜狗开源机器阅读理解工具箱
-
-https://mp.weixin.qq.com/s/cyTHnDGdMZvhxg7hUmuYZw
-
-训练速度提升超3倍！斯坦福推出全新深度学习并行计算框架FlexFlow
-
-https://mp.weixin.qq.com/s/6q7wy7Xq7GcepdLkQN-1wA
-
-最新中文NLP开源工具箱来了！支持6大任务，面向工业应用
-
-https://mp.weixin.qq.com/s/203UyMxZ-Sx14WEX-KMusg
-
-异类框架BigDL，TensorFlow的潜在杀器！
-
 https://mp.weixin.qq.com/s/3eoN0YHI84oomdTZO6TrvQ
 
 快速搞定机器人开发！Facebook联合CMU开源PyRobot框架

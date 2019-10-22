@@ -162,6 +162,10 @@ https://zhuanlan.zhihu.com/p/86216369
 
 从3/4层拓展到56层，如何训练超级深层的图卷积神经网络
 
+https://mp.weixin.qq.com/s/8Sz_jo7pokL_nzupEBGGdg
+
+当深度强化学习遇见图神经网络
+
 # 自动求导
 
 DL发展到现在，其基本运算单元早就不止CNN、RNN之类的简单模块了。针对新运算层出不穷的现状，各大DL框架基本都实现了自动求导的功能。

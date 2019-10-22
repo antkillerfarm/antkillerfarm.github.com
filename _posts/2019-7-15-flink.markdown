@@ -140,7 +140,11 @@ Flink on Yarn/K8s原理剖析及实践
 
 https://mp.weixin.qq.com/s/pj2iVvNcQH-4O03nmw0vzg
 
-从Storm到Flink，汽车之家基于 Flink 的实时 SQL 平台设计思路与实践
+从Storm到Flink，汽车之家基于Flink的实时SQL平台设计思路与实践
+
+https://mp.weixin.qq.com/s/c9HvC2PTlOH92iRY4cpiNg
+
+一文搞懂Flink的Exactly Once和At Least Once
 
 # Beam
 

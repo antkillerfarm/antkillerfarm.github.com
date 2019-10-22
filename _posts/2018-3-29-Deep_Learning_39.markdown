@@ -326,6 +326,14 @@ https://blog.csdn.net/sinat_35177634/article/details/89601950
 
 CVPR 2019视频描述（video caption）相关论文总结
 
+https://mp.weixin.qq.com/s/xjQtVE-i-n1N9a0AsR6BWw
+
+网络运行时间提高100倍，Google使用的AI视频理解架构有多强？
+
+https://mp.weixin.qq.com/s/5qC70NoTBQ95vjI4cGl66g
+
+通过未标记视频进行跨模态时间表征学习
+
 # 多模态学习
 
 https://github.com/HuaizhengZhang/Awsome-Deep-Learning-for-Video-Analysis

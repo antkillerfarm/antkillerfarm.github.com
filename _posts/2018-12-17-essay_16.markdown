@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 高考, 流浪地球
+title: 流浪地球
 category: essay 
 ---
 

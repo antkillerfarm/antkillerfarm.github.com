@@ -392,6 +392,10 @@ https://mp.weixin.qq.com/s/NupSd4e01cvQ3CRnjy1npw
 
 超原版速度110倍，针对PyTorch的CPU到GPU张量迁移工具开源
 
+https://zhuanlan.zhihu.com/p/87572724
+
+一文看懂align_corners
+
 # 超算
 
 ![](/images/img3/power.aug.gif)

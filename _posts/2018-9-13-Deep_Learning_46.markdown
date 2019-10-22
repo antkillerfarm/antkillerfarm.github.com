@@ -38,6 +38,10 @@ https://mp.weixin.qq.com/s/d60EKUJjYfYfcfhMnaCpPA
 
 基于强化学习的自动搜索
 
+https://mp.weixin.qq.com/s/ClqOWx1RJGzoS0akI2s93w
+
+多媒体的AutoML与元学习，清华大学朱文武教授等
+
 # OCR
 
 ## 概述
