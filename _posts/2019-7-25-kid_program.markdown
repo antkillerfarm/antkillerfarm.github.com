@@ -338,7 +338,7 @@ PC上搭建Objective-C（以下简称OC）开发环境，主要借助GNUstep开�
 
 官网：
 
-https://hackage.haskell.org/
+https://www.haskell.org/
 
 Haskell主要有两套包管理系统cabal和stack，它们的仓库都是一样的，只是前端语法不同。stack相对比较新，也是目前的首选。
 
@@ -351,6 +351,16 @@ http://hackage.haskell.org/
 https://mirrors.tuna.tsinghua.edu.cn/help/hackage/
 
 Haskell的安装有多种模式，推荐Stack模式，直接使用Stack安装所需要的依赖。
+
+Stack的官网：
+
+https://www.haskellstack.org/
+
+然而国内访问不了，幸好有github：
+
+https://github.com/commercialhaskell/stack/releases/
+
+
 
 # Javascript（续）
 
