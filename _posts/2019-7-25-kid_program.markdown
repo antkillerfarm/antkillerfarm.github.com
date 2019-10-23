@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  孩子的编程语言, Go, Julia, Rust, VS, Objective-C, Javascript（三）
+title:  孩子的编程语言, Go, Julia, Rust, VS, Objective-C, Haskell, Javascript（三）
 category: language 
 ---
 
@@ -333,6 +333,24 @@ PC上搭建Objective-C（以下简称OC）开发环境，主要借助GNUstep开�
 2.设置环境变量。
 
 `GNUSTEP_MAKEFILES=/usr/share/GNUstep/Makefiles`
+
+# Haskell
+
+官网：
+
+https://hackage.haskell.org/
+
+Haskell主要有两套包管理系统cabal和stack，它们的仓库都是一样的，只是前端语法不同。stack相对比较新，也是目前的首选。
+
+Haskell的官方仓库：
+
+http://hackage.haskell.org/
+
+清华镜像：
+
+https://mirrors.tuna.tsinghua.edu.cn/help/hackage/
+
+Haskell的安装有多种模式，推荐Stack模式，直接使用Stack安装所需要的依赖。
 
 # Javascript（续）
 

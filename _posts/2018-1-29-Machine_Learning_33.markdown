@@ -303,6 +303,10 @@ https://mp.weixin.qq.com/s/010zXPYu36oLOoSkaA8YMg
 
 RAdam优化器又进化：与LookAhead强强结合，性能更优速度更快
 
+https://mp.weixin.qq.com/s/OtmMKR0OWytcUgbCMrSc-A
+
+不是我们喜新厌旧，而是RAdam确实是好用，新的State of the Art优化器RAdam
+
 https://www.zhihu.com/question/305694880
 
 为什么K-FAC这种二阶优化方法没有得到广泛的应用？
@@ -310,3 +314,7 @@ https://www.zhihu.com/question/305694880
 https://mp.weixin.qq.com/s/etv5Ucyo2tiu64ZtUygz0A
 
 离线优化器
+
+https://mp.weixin.qq.com/s/zy5ALOInXHIh8LHmihu1UA
+
+在线优化器之FOBOS

@@ -144,6 +144,10 @@ https://mp.weixin.qq.com/s/AAcQRHZPvW11jvlbrLfRJA
 
 携程的Dubbo之路
 
+https://mp.weixin.qq.com/s/ZW4tO01gC65kZgOUappL9Q
+
+漫话：什么是RPC
+
 # Arm ML
 
 Arm ML是Arm的作品。它包括了两部分：Arm NN和Arm Compute Library。

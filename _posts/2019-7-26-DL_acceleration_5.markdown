@@ -297,3 +297,7 @@ Slimmable Neural Networks
 https://mp.weixin.qq.com/s/lc7IoOV6S2Uz5xi7cPQUqg
 
 基于元学习和AutoML的模型压缩新方法
+
+https://zhuanlan.zhihu.com/p/64400678
+
+轻量卷积神经网络的设计

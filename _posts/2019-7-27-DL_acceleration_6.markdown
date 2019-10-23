@@ -125,3 +125,7 @@ Implements the technique of distillation
 https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771134&idx=2&sn=012082a897dbf125000e38b73520c51d
 
 TinyBERT：模型小7倍，速度快8倍，华中科大、华为出品
+
+https://mp.weixin.qq.com/s/ckn4RERri-mfqLVPDRHGog
+
+让学生网络相互学习，为什么深度相互学习优于传统蒸馏模型？

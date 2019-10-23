@@ -332,6 +332,10 @@ https://mp.weixin.qq.com/s/mekBRtHcXqbMJiN1CgbgQg
 
 聊天机器人是如何工作的：基于深度学习的对话系统教程 152页PPT
 
+https://mp.weixin.qq.com/s/LoIrR-0roO1FO7BRuiVu9A
+
+能干活的聊天机器人-对话系统概述
+
 https://mp.weixin.qq.com/s/Vh3bCO-ZYoBJLqCTPCpggg
 
 论如何为聊天机器人定义一个固定的人格

@@ -28,6 +28,10 @@ https://www.zhihu.com/question/347898375
 
 如何看待瘦身成功版BERT——ALBERT？
 
+https://mp.weixin.qq.com/s/SPfa17p3QetZXCC01DwmQA
+
+解密BERT
+
 # Attention进阶
 
 https://mp.weixin.qq.com/s/ZSzHOu6uowRSoWrqB7vOaQ

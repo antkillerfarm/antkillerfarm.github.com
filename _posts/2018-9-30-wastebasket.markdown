@@ -56,10 +56,6 @@ https://mp.weixin.qq.com/s/Rw3O5MDbEIfgmWCVgFe95w
 
 五次方程的微分方程解法
 
-https://mp.weixin.qq.com/s/ei84HDZIkXQr2k0ghlN_Mw
-
-C罗踢球时在想什么？这是一篇空气动力学的blog
-
 https://mp.weixin.qq.com/s/CC77DL5RKhr5SekDyfqm3Q
 
 为什么我一唱歌，就有人说我的音乐是数学老师教的？
@@ -210,10 +206,6 @@ https://mp.weixin.qq.com/s/IQ8YSyp-m2jCIDfLtuh_ew
 
 天上会掉金子吗？会！你现在用的这些就是！
 
-https://mp.weixin.qq.com/s/t2EM1l7ujoSquGl2x5hBBA
-
-21世纪最强王者纸飞机：用一张A4纸拿到了吉尼斯世界记录
-
 https://mp.weixin.qq.com/s/lu4wQOIzVtsFvwhO1c2d0A
 
 一大坨泥巴在移动，没人能够阻止它
@@ -303,6 +295,28 @@ https://mp.weixin.qq.com/s/TM8Cc3AI7Vo5H6VnOl3gyw
 https://mp.weixin.qq.com/s/wIaMPdYWHzn9vDpiuWZOVg
 
 解读2019诺贝尔化学奖：他们创造了一个可充电的世界
+
+https://mp.weixin.qq.com/s/NE20FomTJCFd_HSfXTHyjg
+
+年仅21岁，干掉6位诺贝尔奖得主，被誉为科学界最强杀手，却惨被人骂成一个笑话（央视《走近科学》栏目）
+
+https://mp.weixin.qq.com/s/H9xRY-sXmVewmmZEWTlmOQ
+
+水银、放血、泻药与死在产床的妇人
+
+## 空气动力学
+
+https://mp.weixin.qq.com/s/ei84HDZIkXQr2k0ghlN_Mw
+
+C罗踢球时在想什么？这是一篇空气动力学的blog
+
+https://mp.weixin.qq.com/s/67vQtycjDEo-JdUpUA1hqg
+
+荷兰人发明的新客机是劈叉的！乘客坐在机翼上
+
+https://mp.weixin.qq.com/s/t2EM1l7ujoSquGl2x5hBBA
+
+21世纪最强王者纸飞机：用一张A4纸拿到了吉尼斯世界记录
 
 ## Bélády's Algorithm
 

@@ -152,6 +152,10 @@ http://blog.csdn.net/u014380165/article/details/78525500
 
 自学网络结构（一）：Neural Architecture Search With Reinforcement Learning
 
+https://mp.weixin.qq.com/s/FdKcWsynTpfD6rbABPTEOQ
+
+神经架构搜索研究指南，只看这一篇就够了
+
 https://www.zhihu.com/question/67477086
 
 如何评价Google最新的论文NASNet？
@@ -367,15 +371,3 @@ https://mp.weixin.qq.com/s/_31zbbQ5dHf2UaI8GhXozw
 https://mp.weixin.qq.com/s/slrRXgD49I7ZG24ialVxPw
 
 第四范式涂威威：自动机器学习求解三要素与发展趋势
-
-https://mp.weixin.qq.com/s/X5Oi8gKyT5Tmh7ljon3MzQ
-
-谷歌引入自动网络设计，高效解决大规模深度推荐模型的特征嵌入问题
-
-https://mp.weixin.qq.com/s/rllQLPPYxxLCK9-dgOjLDg
-
-另一种可微架构搜索：商汤提出在反传中学习架构参数的SNAS
-
-https://mp.weixin.qq.com/s/AV8fD5Vf6uzhLeW9nfMASg
-
-一文详解随机神经网络结构搜索(SNAS)

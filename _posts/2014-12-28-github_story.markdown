@@ -90,6 +90,12 @@ sudo gem sources --add https://gems.ruby-china.org/ --remove https://rubygems.or
 
 `jekyll serve`
 
+参考：
+
+http://jekyllthemes.org/
+
+jekyll的官方主题站点
+
 ## Markdown
 
 自从我在github建立blog以来，一直都在使用markdown语言。这里仅针对我使用过程中遇到的问题做一个笔记。

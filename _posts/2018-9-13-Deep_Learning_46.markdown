@@ -4,44 +4,6 @@ title:  深度学习（四十六）——OCR
 category: DL 
 ---
 
-# AutoDL（续）
-
-https://mp.weixin.qq.com/s/s10z5pkYf5Sha0V58T8fBw
-
-单路径NAS: 在四小时内设计出给定硬件内最有效的网
-
-https://www.zhihu.com/question/339002300
-
-One-Shot 神经网络搜索(NAS)的searching阶段到底在做什么？
-
-https://mp.weixin.qq.com/s/323RA6UtnyTySoXVXcJ2vA
-
-华人团队打造：AutoML+GAN=AutoGAN！AI设计GAN模型比人类更好
-
-https://mp.weixin.qq.com/s/nN7tgkvvkv8B8N-z4yAgcQ
-
-四小时搜索NN结构，厦大提出快速NAS检索方法
-
-https://zhuanlan.zhihu.com/p/71547478
-
-NAS发展史：从放弃到入门
-
-https://mp.weixin.qq.com/s/rgUTcuH2mfIFBDoOfd26Cw
-
-NASNet：神经架构搜索网络在图像分类中的表现
-
-https://mp.weixin.qq.com/s/VdjHp5Tb1fSyV3CQblPQmw
-
-利用NAS寻找最佳GAN：AutoGAN架构搜索方案专为GAN打造
-
-https://mp.weixin.qq.com/s/d60EKUJjYfYfcfhMnaCpPA
-
-基于强化学习的自动搜索
-
-https://mp.weixin.qq.com/s/ClqOWx1RJGzoS0akI2s93w
-
-多媒体的AutoML与元学习，清华大学朱文武教授等
-
 # OCR
 
 ## 概述
@@ -89,6 +51,18 @@ HyperLPR：一个基于深度学习的支持多种车牌的中文开源车牌识
 https://blog.csdn.net/yang_daxia/article/details/90408160
 
 车牌识别论文survey
+
+https://mp.weixin.qq.com/s/6dsufEVsuEILa1gSOBt32w
+
+用于提高车牌识别的单幅噪声图像去噪和校正
+
+https://mp.weixin.qq.com/s/ynpqG7Vfu5b8lYNW6Y-TpA
+
+快准狠！Intel论文揭示自家车牌识别算法:LPRNet
+
+https://mp.weixin.qq.com/s/JIoTsadw4JBkr0e40RwVQQ
+
+这篇论文开源的车牌识别系统打败了目前最先进的商业软件
 
 ## CRNN
 
@@ -148,7 +122,11 @@ https://mp.weixin.qq.com/s/qLPfs5nHCVn5J-q3CbeECg
 
 https://mp.weixin.qq.com/s/rsJZ3R71gSAC4T501-LSQA
 
-史上最全场景文字检测资源合集（70篇重要论文 + 15个开源代码 + 176个实验结果 + 1305个统计信息）
+史上最全场景文字检测资源合集（70篇重要论文 + 15个开源代码 + 176个实验结果 + 
+
+https://mp.weixin.qq.com/s/k_pYPq4QO1aR7DImLSCgoQ
+
+OCR100篇相关论文与代码，从文本识别到验证码识别
 
 https://mp.weixin.qq.com/s/KFgC8zHWS7ysb9GfbkfLRA
 
@@ -214,10 +192,6 @@ https://mp.weixin.qq.com/s/h3VaKs0Pc44n-hXYNlkALA
 
 开源OCR文字识别软件Calamari
 
-https://mp.weixin.qq.com/s/ynpqG7Vfu5b8lYNW6Y-TpA
-
-快准狠！Intel论文揭示自家车牌识别算法:LPRNet
-
 https://mp.weixin.qq.com/s/FjoJA0gF4LgsB8hw24I0EQ
 
 华科白翔老师团队ECCV2018 OCR论文：Mask TextSpotter
@@ -245,10 +219,6 @@ OCR大突破：Facebook推出大规模图像文字检测识别系统——Rosett
 https://mp.weixin.qq.com/s/zeN-QYXBZzVtWUH10DXjVw
 
 Facebook的新AI“Rosetta”会识别表情包，还会删帖
-
-https://mp.weixin.qq.com/s/JIoTsadw4JBkr0e40RwVQQ
-
-这篇论文开源的车牌识别系统打败了目前最先进的商业软件
 
 https://mp.weixin.qq.com/s/lVRIy6DdwfRxdoVW3qFiNg
 
@@ -409,3 +379,7 @@ DynTypo: 基于样例的动态文本特效迁移
 https://mp.weixin.qq.com/s/ENvoZ4ZPKT1HXaQjD9VgSA
 
 王晶：华为云OCR文字识别服务技术实践、底层框架及应用场景
+
+https://mp.weixin.qq.com/s/sigPeclXz12NUk_nX8TZ-A
+
+文档分析与识别技术回顾与反思

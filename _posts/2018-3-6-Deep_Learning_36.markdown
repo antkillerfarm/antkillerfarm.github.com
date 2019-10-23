@@ -245,3 +245,11 @@ AutoInt:使用Multi-head Self-Attention进行自动特征学习的CTR模型
 https://mp.weixin.qq.com/s/JXW--wzpaFwRHSSvZEA0mg
 
 阿里提出多目标优化全新算法框架，同时提升电商GMV和CTR
+
+https://mp.weixin.qq.com/s/0vZqCswErlggD6S52GnYVA
+
+YouTube多目标排序系统：如何推荐接下来收看的视频
+
+https://mp.weixin.qq.com/s/km9jnS5_k3kvuyfhUvzbWQ
+
+推荐系统中的前沿技术研究与落地：深度学习、AutoML与强化学习

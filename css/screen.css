@@ -18,7 +18,7 @@ html, body {
 body {
   color: #000;
   background-color: #fdfdfd;
-  font-family: "Microsoft Yahei", "Segoe UI" ! important;
+  font-family: Arial, "Microsoft YaHei", sans-serif;
   /*font: 13.34px "Segoe UI", arial, clean, sans-serif;*/
   position: relative;
   font-size: 18px;
@@ -108,9 +108,9 @@ ul.posts {
 /*****************************************************************************/
 
 .site {
-  font-size: 110%;
+  font-size: 100%;
   text-align: justify;
-  width: 58em;
+  width: 65em;
   margin: 3em auto 2em auto;
   line-height: 1.5em;
 }

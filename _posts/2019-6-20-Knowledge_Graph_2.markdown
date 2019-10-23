@@ -306,7 +306,11 @@ https://mp.weixin.qq.com/s/FAp10hI05qLLZi5BypondA
 
 >Tim Peters，美国软件工程师。他于2002年在python上实现了Timsort排序算法。该算法后来被诸如Java、Android、GNU Octave等所采用。
 
-早期最好的排序算法是QuickSort，比如C语言库自带的qsort函数，就使用的是该算法。然而它对于倒序数组这种最坏情况的复杂度居然是$$O(n^2)$$。
+早期最好的排序算法是QuickSort，比如C语言库自带的qsort函数，使用的就是该算法。然而它对于倒序数组这种最坏情况的复杂度居然是$$O(n^2)$$。
+
+https://mp.weixin.qq.com/s/gBHmBLGILd6rZ-6cuelw0Q
+
+这可能是你听说过最快的稳定排序算法（Timsort）
 
 https://mp.weixin.qq.com/s/d9yNsUVFg9UZN62xuOdxow
 

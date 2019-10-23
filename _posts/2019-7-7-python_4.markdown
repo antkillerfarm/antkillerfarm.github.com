@@ -395,3 +395,7 @@ https://mp.weixin.qq.com/s/mP7M4z2mzj_1KPrEx0oqwg
 https://mp.weixin.qq.com/s/mcHYTjIDnVBA58-1h8BLdA
 
 手把手教学：提取PDF各种表格文本数据
+
+https://mp.weixin.qq.com/s/bV7g9ugGmFjojGDMIc_kpQ
+
+Python中的元编程：一个关于修饰器和元类的简单教程

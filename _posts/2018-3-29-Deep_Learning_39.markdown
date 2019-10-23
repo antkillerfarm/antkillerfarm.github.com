@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十九）——视频处理, 多模态学习
+title:  深度学习（三十九）——视频处理
 category: DL 
 ---
 
@@ -334,44 +334,6 @@ https://mp.weixin.qq.com/s/5qC70NoTBQ95vjI4cGl66g
 
 通过未标记视频进行跨模态时间表征学习
 
-# 多模态学习
+https://mp.weixin.qq.com/s/Wn-5VD2-YWwVUWCMEy-lvw
 
-https://github.com/HuaizhengZhang/Awsome-Deep-Learning-for-Video-Analysis
-
-深度学习视频分析/多模态学习资源大列表
-
-https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw
-
-多模态学习研究进展综述
-
-https://mp.weixin.qq.com/s/vpBPkjuCebSWh5qPLYHCkw
-
-上海交大提出多模态框架“EmotionMeter”，更精准地识别人类情绪
-
-https://mp.weixin.qq.com/s/BBg04rDtiqU-XrWortufNA
-
-康奈尔&英伟达提出多模态无监督图像转换新方法
-
-http://mp.weixin.qq.com/s/khOINUyrNV3TFfgNRheH0A
-
-卷积神经网络压缩、多模态的语义分析研究
-
-https://mp.weixin.qq.com/s/ywU4L659iRcmIgmV6RtbXA
-
-DeepMind新研究连接听与看，实现“听声辨位”的多模态学习
-
-https://mp.weixin.qq.com/s/1qhcyTXttgKWlw-Oy556Tw
-
-TPAMI2019最新《多模态机器学习综述》
-
-https://mp.weixin.qq.com/s/BczgUuh2FIvP5MG9xh87wQ
-
-多模态多任务学习新论文
-
-https://mp.weixin.qq.com/s/ipj8qpYRiYbIeXn2PZb1SQ
-
-5G时代下多模态理解做不到位注定要掉队
-
-https://mp.weixin.qq.com/s/UghgWBN7mE8oJdMUvjAjcQ
-
-何晖光：多模态情绪识别及跨被试迁移学习
+AI碰撞短视频，从推荐到直播，快手探索了这些ML新思路

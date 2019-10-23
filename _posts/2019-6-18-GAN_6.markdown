@@ -346,6 +346,6 @@ https://mp.weixin.qq.com/s?__biz=MzA4MDExMDEyMw==&mid=2247487111&idx=1&sn=e0d4e3
 
 深度学习中最常见GAN模型应用与解读
 
-https://mp.weixin.qq.com/s/XUm7BRi2fXxw4Str8QBnPQ
+https://mp.weixin.qq.com/s/ctB90bNhaMYvbLE4yketHQ
 
-今日头条最新论文，首次改进DQN网络解决推荐中的在线广告投放问题
+一文读懂对抗机器学习Universal adversarial perturbations

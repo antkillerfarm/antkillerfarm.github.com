@@ -243,3 +243,7 @@ https://mp.weixin.qq.com/s/IStOD22WgZ6EBFCvIHkNSg
 https://mp.weixin.qq.com/s/4LIq3kZaXgaoEEyb8TQvwg
 
 图像超分辨率重建--AI研究
+
+https://mp.weixin.qq.com/s/ETGPXVDGRHOq0W-ef_q2_A
+
+RankSRGAN:排序学习+GAN用于超分辨率

@@ -48,6 +48,12 @@ https://zhuanlan.zhihu.com/p/44862021
 
 ![](/images/img3/broadcom.jpg)
 
+----
+
+https://mp.weixin.qq.com/s/7kRePPUk_Xat8-7PsAO5XQ
+
+晶体管逐渐变小，Dennard定律比摩尔定律更值得关注，散热和功耗推动芯片专业化
+
 # 四行仓库
 
 2018.1

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十七）——深度图像压缩, 三维处理
+title:  深度学习（四十七）——深度图像压缩, 三维处理, AutoDL进阶
 category: DL 
 ---
 
@@ -307,3 +307,53 @@ https://mp.weixin.qq.com/s/SBWGvu84oPKZkY5d8gz-oQ
 https://zhuanlan.zhihu.com/p/85686290
 
 MLOD：基于鲁棒特征融合方法的多视点三维目标检测
+
+# AutoDL进阶
+
+https://mp.weixin.qq.com/s/X5Oi8gKyT5Tmh7ljon3MzQ
+
+谷歌引入自动网络设计，高效解决大规模深度推荐模型的特征嵌入问题
+
+https://mp.weixin.qq.com/s/rllQLPPYxxLCK9-dgOjLDg
+
+另一种可微架构搜索：商汤提出在反传中学习架构参数的SNAS
+
+https://mp.weixin.qq.com/s/AV8fD5Vf6uzhLeW9nfMASg
+
+一文详解随机神经网络结构搜索(SNAS)
+
+https://mp.weixin.qq.com/s/s10z5pkYf5Sha0V58T8fBw
+
+单路径NAS: 在四小时内设计出给定硬件内最有效的网
+
+https://www.zhihu.com/question/339002300
+
+One-Shot 神经网络搜索(NAS)的searching阶段到底在做什么？
+
+https://mp.weixin.qq.com/s/323RA6UtnyTySoXVXcJ2vA
+
+华人团队打造：AutoML+GAN=AutoGAN！AI设计GAN模型比人类更好
+
+https://mp.weixin.qq.com/s/nN7tgkvvkv8B8N-z4yAgcQ
+
+四小时搜索NN结构，厦大提出快速NAS检索方法
+
+https://zhuanlan.zhihu.com/p/71547478
+
+NAS发展史：从放弃到入门
+
+https://mp.weixin.qq.com/s/rgUTcuH2mfIFBDoOfd26Cw
+
+NASNet：神经架构搜索网络在图像分类中的表现
+
+https://mp.weixin.qq.com/s/VdjHp5Tb1fSyV3CQblPQmw
+
+利用NAS寻找最佳GAN：AutoGAN架构搜索方案专为GAN打造
+
+https://mp.weixin.qq.com/s/d60EKUJjYfYfcfhMnaCpPA
+
+基于强化学习的自动搜索
+
+https://mp.weixin.qq.com/s/ClqOWx1RJGzoS0akI2s93w
+
+多媒体的AutoML与元学习，清华大学朱文武教授等
