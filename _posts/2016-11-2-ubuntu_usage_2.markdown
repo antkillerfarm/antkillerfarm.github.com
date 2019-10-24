@@ -227,6 +227,10 @@ sdkman这个工具就可以很好的解决这类问题，它的工作原理是�
 
 http://sdkman.io/
 
+安装：
+
+`curl -s "https://get.sdkman.io" | bash`
+
 教程：
 
 http://blog.csdn.net/heiyouhei123/article/details/51103578

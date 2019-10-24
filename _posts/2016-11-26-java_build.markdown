@@ -229,9 +229,19 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/java_build/grad
 
 https://gradle.org/
 
+安装：
+
+`sdk install gradle 5.6.3`
+
 教程：
 
 https://spring.io/guides/gs/gradle/
+
+参考：
+
+https://blog.csdn.net/lj402159806/article/details/78422953
+
+gradle配置国内镜像
 
 ### Gradle Wrapper
 

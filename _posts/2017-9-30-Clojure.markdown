@@ -301,3 +301,11 @@ https://huanglizhuo.gitbooks.io/kotlin-in-chinese/content/
 国内中文文档2：
 
 http://www.liying-cn.net/kotlin/docs/reference/
+
+国内中文文档3：
+
+https://www.kotlincn.net/
+
+官方示例：
+
+https://github.com/Kotlin/kotlin-examples

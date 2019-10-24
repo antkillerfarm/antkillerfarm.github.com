@@ -18,7 +18,7 @@ http://blog.csdn.net/nisaijie/article/details/5692901
 
 ## JavaFX
 
-使用Java开发GUI是一个很冷门的技能树，即使是多年的Java程序员，也未必接触过这个领域。我上次接触该技能，还是10年前的AWT时代。
+使用Java开发GUI是一个很冷门的技能树，即使是多年的Java程序员，也未必接触过这个领域。我上次接触该技能，还是2005年的AWT时代。
 
 Java的GUI框架，大致有：
 
@@ -41,6 +41,12 @@ https://openjfx.io/openjfx-docs/
 教程：
 
 http://www.javafxchina.net/
+
+参考：
+
+https://www.ibm.com/developerworks/cn/opensource/os-swingswt/index.html
+
+SWT、Swing或AWT：哪个更适合您？
 
 ## Ubuntu安装Oracle JDK
 
