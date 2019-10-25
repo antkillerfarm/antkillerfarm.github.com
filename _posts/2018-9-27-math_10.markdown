@@ -119,6 +119,12 @@ https://mp.weixin.qq.com/s/SUWUAMQjSuB5Gs06SPliTQ
 >Charles Hermite，1822～1901，19世纪下半叶法国最著名的数学家，代数学领域的宗师级人物。Henri Poincaré的导师。他首先证明了e是超越数。以他的名字命名的数学术语竟达10项之多。   
 >Hermite虽然不是如某些地摊文学所言，一遇考试就跪。但是的确不太擅长考试，大学（他考的大学类似国内的清北的地位）入学成绩排在第68位，完全没有学神的风范。相比之下，Poincaré的入学成绩可是排第一位的。尽管就成就而言，Hermite绝不逊于Poincaré。
 
+参考：
+
+https://mp.weixin.qq.com/s/MXHCVFW2mMw7PqMuHB_5Tw
+
+他擅长解决数学难题，却视考试成为终生噩梦
+
 # 平稳离散时间随机过程
 
 ## Toeplitz矩阵

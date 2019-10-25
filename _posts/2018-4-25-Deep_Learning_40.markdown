@@ -253,3 +253,11 @@ https://mp.weixin.qq.com/s/u-6Nl8jjje8B_DkE8b-Kug
 https://github.com/xingkongliang/Pedestrian-Detection
 
 行人检测（Pedestrian Detection）论文整理
+
+https://zhuanlan.zhihu.com/p/85383077
+
+视频行人重识别2019各顶会顶刊文章阅读笔记
+
+https://mp.weixin.qq.com/s/kl01FypFQAmG_TiMTNnvNw
+
+旷视研究院提出VANet：具备视角感知力的车辆重识别网络

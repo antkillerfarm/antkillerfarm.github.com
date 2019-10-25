@@ -182,6 +182,14 @@ https://mp.weixin.qq.com/s/VmcxU7ZgNJbNUy-Feiz3ig
 
 受到图像超分辨率CNN（SRCNN）和self-normalization（SNN）的架构的启发，我们开发了一个两阶段修改的Unet框架，它可以同时学习检测整个体积内的ROI并对体素进行分类而不会丢失原始图像解析度。对各种多模式音量的实验表明，当用简单加权的模子系数和我们定制的学习程序进行训练时，该框架显示比具有高级相似性度量标准的最先进的深CNN更好的分割性能。
 
+除了方形的3D卷积之外，还有球形的3D卷积：
+
+![](/images/img3/sph3d.png)
+
+上图是球卷积在点云处理中的应用。论文：
+
+《Spherical Kernel for Efficient Graph Convolution on 3D Point Clouds》
+
 参考：
 
 https://zhuanlan.zhihu.com/p/21325913
@@ -219,6 +227,10 @@ http://blog.csdn.net/zouxy09/article/details/9002508
 https://mp.weixin.qq.com/s/YdON6Yzddq2f_QGbQsOY8w
 
 深度三维残差神经网络：视频理解新突破
+
+https://mp.weixin.qq.com/s/MfDQXTSoe0GnaEFfyLJQ1w
+
+点云处理不得劲？球卷积了解一下
 
 ## 参考
 

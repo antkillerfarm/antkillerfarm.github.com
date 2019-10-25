@@ -97,3 +97,7 @@ https://mp.weixin.qq.com/s/JXMD8uGcVQImcZULWZiGkg
 https://mp.weixin.qq.com/s/3DPNC2bwmg8veH-XtVAGGA
 
 腾讯提出NumNet+模型，超越谷歌登DROP排行榜第一名
+
+https://mp.weixin.qq.com/s/_6AYWUpPmdABcO1pCIhIsw
+
+李飞飞团队：将因果推理能力赋予代理，以完成目标导向任务

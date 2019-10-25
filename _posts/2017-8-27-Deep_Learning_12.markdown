@@ -170,6 +170,10 @@ https://mp.weixin.qq.com/s?__biz=MzIwMTE1NjQxMQ==&mid=2247488741&idx=2&sn=93f057
 
 OpenPose升级，CMU提出首个单网络全人体姿态估计网络，速度大幅提高
 
+https://mp.weixin.qq.com/s/jAmUscrMZ8EmG3th-3Yx3w
+
+实战：基于OpenPose的卡通人物可视化
+
 ## DensePose
 
 与OpenPose类似的还有Facebook提出的DensePose。

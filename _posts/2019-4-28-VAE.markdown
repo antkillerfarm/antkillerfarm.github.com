@@ -129,6 +129,10 @@ https://blog.csdn.net/step_forward_ML/article/details/78077383
 
 变分推断(Variational Inference)-mean field
 
+https://mp.weixin.qq.com/s/olwyTaOGCugt-thgZm_3Mg
+
+变分推断（Variational Inference）最新进展简述
+
 # Vanilla VAE
 
 变分自编码器（Variational Auto-Encoder，VAE）是Autoencoder的一种扩展。

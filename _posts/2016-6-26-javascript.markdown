@@ -152,11 +152,13 @@ https://www.npmjs.com/
 
 https://npm.taobao.org
 
+>虽然淘宝镜像号称5分钟同步一次，然而有些时候某些包由于比较大，可能存在只有部分更新的情况。这时可以考虑使用老一点的版本。
+
 npm有两种安装方式：
 
 1.本地安装。
 
-`npm install xxx`
+`npm install xxx@1.0.0`
 
 这种方式下，相关依赖库被放到安装目录的node_modules文件夹下。
 
@@ -185,10 +187,6 @@ http://nwjs.io/
 代码示例：
 
 https://github.com/zcbenz/nw-sample-apps
-
-替换国内的源：
-
-https://npm.taobao.org
 
 nw打包是指将nw脚本打包成可执行文件的过程。打包的目的如下：
 
@@ -228,6 +226,10 @@ Electron与NW.js差异主要是：
 
 4.NW.js打包的文件加密有30%的性能损失。
 
+还有一个叫做Electron-forge的工具包：
+
+https://www.electronforge.io/
+
 参考：
 
 http://molunerfinn.com/Electron-vs-nwjs/
@@ -242,6 +244,10 @@ https://github.com/electron/electron/blob/master/docs/development/atom-shell-vs-
 
 Technical Differences Between Electron and NW.js (formerly node-webkit)
 
+https://www.jianshu.com/p/57d910008612
+
+Electron: 从零开始写一个记事本app
+
 ## CEF
 
 Chromium Embedded Framework的官网是：
@@ -253,6 +259,12 @@ https://bitbucket.org/chromiumembedded/cef
 https://cefbuilds.com/
 
 然而，由于图片认证被“墙”的缘故，而无法下载。
+
+## NeDB
+
+http://www.alloyteam.com/2016/03/node-embedded-database-nedb/
+
+Node嵌入式数据库——NeDB
 
 # HTML & CSS
 

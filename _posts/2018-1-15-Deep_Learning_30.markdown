@@ -166,6 +166,10 @@ https://mp.weixin.qq.com/s/8Sz_jo7pokL_nzupEBGGdg
 
 当深度强化学习遇见图神经网络
 
+https://mp.weixin.qq.com/s/b_QqUxFbQ70xmsxGMtoaDQ
+
+网络图模型知识点综述
+
 # 自动求导
 
 DL发展到现在，其基本运算单元早就不止CNN、RNN之类的简单模块了。针对新运算层出不穷的现状，各大DL框架基本都实现了自动求导的功能。

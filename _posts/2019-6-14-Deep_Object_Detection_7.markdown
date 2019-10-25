@@ -190,6 +190,10 @@ https://mp.weixin.qq.com/s/m_PvEbq2QbTXNmj_gObKmQ
 
 Anchor-free目标检测之ExtremeNet
 
+https://mp.weixin.qq.com/s/nI_3kilFCsDHhtjFhRKytA
+
+RepPoints:替代边界框，基于点集的物体表示新方法
+
 # 其它目标检测网络
 
 ## A-Fast-RCNN

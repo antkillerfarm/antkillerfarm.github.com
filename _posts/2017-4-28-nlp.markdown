@@ -273,6 +273,10 @@ https://mp.weixin.qq.com/s/xQrq1UbnliGPUWdF_lufRw
 
 在Python中使用SpaCy进行文本分类
 
+https://mp.weixin.qq.com/s/bvgOy4VIEvdL_Or2sAXUxA
+
+快速掌握spacy在python中进行自然语言处理
+
 ### GloVe
 
 GloVe:Global Vectors for Word Representation

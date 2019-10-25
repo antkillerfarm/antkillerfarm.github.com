@@ -246,6 +246,18 @@ https://mp.weixin.qq.com/s/M-ihYsQUsT3deekhniixrQ
 
 聊聊无人驾驶技术中的路由寻径
 
+https://mp.weixin.qq.com/s/eVHAmNn7sHcghLkl-ksnAw
+
+谈谈“域控制器”
+
+https://mp.weixin.qq.com/s/aaN7W1cnlQyl4kPNGvxn_Q
+
+斯坦福大学李飞飞高徒朱玉可博士毕业论文——闭合感知-动作循环: 通用自主机器人探索
+
+https://mp.weixin.qq.com/s/w8gjhL_NiQSY_OKZ_RXb2g
+
+3D机器人视觉在仓储物流和工业自动化领域的应用
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。

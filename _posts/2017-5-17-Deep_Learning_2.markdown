@@ -246,6 +246,12 @@ iterations（迭代）：每一次迭代都是一次权重更新，每一次权�
 
 最后可以得到一个公式one epoch = numbers of iterations = N = 训练样本的数量/batch size
 
+参考：
+
+https://zhuanlan.zhihu.com/p/83626029
+
+浅析深度学习中Batch Size大小对训练过程的影响
+
 ## Vanilla
 
 Vanilla是神经网络领域的常见词汇，比如Vanilla Neural Networks、Vanilla CNN等。Vanilla本意是香草，在这里基本等同于raw。比如Vanilla Neural Networks实际上就是BP神经网络，而Vanilla CNN实际上就是最原始的CNN。

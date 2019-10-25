@@ -310,6 +310,14 @@ https://mp.weixin.qq.com/s/Fte0SQ7J57AVGyTiIwWKAw
 
 元学习与深度强化学习的机器人应用，84页ppt
 
+https://mp.weixin.qq.com/s/xu5ieaPP2de0GML7b-1BsA
+
+谈谈元学习的技术实现框架
+
+https://mp.weixin.qq.com/s/spRlzjFTh4KeyFfd8pmZgw
+
+新框架ES-MAML：基于进化策略、简易的元学习方法
+
 # DRL参考资源
 
 https://mp.weixin.qq.com/s/ruAAQEjPIDPWPiuPepKU6Q

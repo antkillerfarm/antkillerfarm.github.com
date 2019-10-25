@@ -387,3 +387,7 @@ https://zhuanlan.zhihu.com/p/69777256
 https://zhuanlan.zhihu.com/p/79863225
 
 人脸识别特征介绍以及难题概括
+
+https://mp.weixin.qq.com/s/QvmHO_fulTtYJYB4MdoKGw
+
+初学深度学习人脸识别和验证必读文章
