@@ -217,3 +217,15 @@ https://mp.weixin.qq.com/s/7ETHeN2xV_hEwkDxrhJyNg
 https://mp.weixin.qq.com/s/e_LEhLf2Rh-1zkEBmqS4nA
 
 NLP这两年：15个预训练模型对比分析与剖析
+
+https://mp.weixin.qq.com/s/0EDN-ILeL_diZ1G11ikwjw
+
+T5模型：NLP Text-to-Text预训练模型超大规模探索
+
+https://mp.weixin.qq.com/s/X1mLXPzJU7k_ANMzvVPxjA
+
+BERT、RoBERTa、DistilBERT与XLNet，我们到底该如何选择？
+
+https://mp.weixin.qq.com/s/Di-TbseiezMBc-MUYoEFHg
+
+CV领域的注意力机制

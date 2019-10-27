@@ -301,3 +301,7 @@ https://mp.weixin.qq.com/s/lc7IoOV6S2Uz5xi7cPQUqg
 https://zhuanlan.zhihu.com/p/64400678
 
 轻量卷积神经网络的设计
+
+https://mp.weixin.qq.com/s/pJk84bNzRn7LZZfQfSjs5A
+
+VarGFaceNet：地平线提出轻量级、有效可变组卷积的人脸识别网络

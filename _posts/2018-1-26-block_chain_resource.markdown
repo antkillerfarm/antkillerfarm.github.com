@@ -386,6 +386,10 @@ https://mp.weixin.qq.com/s/kO5yy7x0r3LhttBhLVpT5w
 
 固态激光雷达研究进展
 
+https://mp.weixin.qq.com/s/gHvvMG7D_W0M2RFntyRaDw
+
+车载抬头显示AR HUD成像技术大解密
+
 # 知名AI公司技术主页
 
 http://uber.ai/

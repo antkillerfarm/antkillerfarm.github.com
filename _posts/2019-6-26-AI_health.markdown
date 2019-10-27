@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  AI医疗, 可视化, 5G
+title:  AI医疗, 可视化, 5G, 超算
 category: resource 
 ---
 
@@ -355,3 +355,21 @@ https://mp.weixin.qq.com/s/uYnu7v3w0evrJhTBYjbI_g
 https://mp.weixin.qq.com/s/5v1uknmAPfqFR_5meie9GQ
 
 5G基站功耗到底有多可怕？网友惊呼：国家电网或是5G最大赢家！
+
+# 超算
+
+![](/images/img3/power.aug.gif)
+
+![](/images/img3/Supercomputers-history.png)
+
+Top 500超算之间的差距竟有3个数量级，从榜首到落榜差不多要10年时间。OS从2015年开始全都是Linux了。Windows在超算领域从来没有风光过，之前没钱，自然斗不过UNIX，后来又被Linux打趴下了。
+
+Sunway TaihuLight和Sierra的算力相当，但core的数量竟是后者的6.7倍，功耗是后者的2.06倍。差距明显啊！
+
+https://www.top500.org/
+
+超算排名网站
+
+https://zhuanlan.zhihu.com/p/33956771
+
+超算排名之中的地区和架构之争

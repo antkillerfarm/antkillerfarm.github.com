@@ -357,3 +357,7 @@ https://mp.weixin.qq.com/s/d60EKUJjYfYfcfhMnaCpPA
 https://mp.weixin.qq.com/s/ClqOWx1RJGzoS0akI2s93w
 
 多媒体的AutoML与元学习，清华大学朱文武教授等
+
+https://mp.weixin.qq.com/s/QtYNb1bVnWghNFK6fbynLw
+
+激活函数如何进行自动学习和配置

@@ -32,6 +32,10 @@ https://mp.weixin.qq.com/s/ebRQMJI9sB7wNI_NYdmTAw
 
 高逼格使用Pandas加速代码，向for循环说拜拜！
 
+https://mp.weixin.qq.com/s/zdGOyD9wdgT3NGlH5ttADQ
+
+pandas数据导入与导出
+
 ## datatable
 
 datatable相当于高级版的Pandas。

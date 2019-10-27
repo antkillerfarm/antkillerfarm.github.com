@@ -258,6 +258,10 @@ https://mp.weixin.qq.com/s/w8gjhL_NiQSY_OKZ_RXb2g
 
 3D机器人视觉在仓储物流和工业自动化领域的应用
 
+https://mp.weixin.qq.com/s/rA9AAVx7AlNuS1l4IUuG0w
+
+深度学习技术在自动驾驶中的应用
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。

@@ -216,6 +216,10 @@ https://mp.weixin.qq.com/s/I4sfT8rlwXIXxEjfdQoFbA
 
 东南大学周张泉：基于知识图谱的推理技术
 
+https://mp.weixin.qq.com/s/fslIcD7RVLEByzkeACUhXQ
+
+达观数据：知识图谱与语义分析技术介绍
+
 https://mp.weixin.qq.com/s/MZE_SXsNg6Yt4dz2fmB1sA
 
 阿里知识图谱首次曝光：每天千万级拦截量，亿级别全量智能审核

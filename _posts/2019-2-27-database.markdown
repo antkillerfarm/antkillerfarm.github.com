@@ -348,6 +348,14 @@ http://www.cnblogs.com/pcjim/articles/799302.html
 
 sql之left join、right join、inner join的区别
 
+## 查询语句的执行顺序
+
+![](/images/img3/sql.png)
+
+https://mp.weixin.qq.com/s/CMcgybfgya7ftTUeUFigKg
+
+SQL查询语句总是先执行SELECT？你们都错了
+
 ## 参考
 
 https://mp.weixin.qq.com/s/ok6VD1b5fhG_mY9O3d_VGA
