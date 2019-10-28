@@ -237,6 +237,12 @@ http://www.cnblogs.com/sdgf/p/6237847.html
 
 git换行符LF与CRLF转换问题
 
+## 修改用户名
+
+`git config user.name XXX`
+
+`git config user.email XXX@YYY`
+
 ## 下载单个文件夹
 
 使用Git拉去github上的一些开源项目，无比方便，但是有些项目比较庞大，而我们只想拉取其中指定的一部分文件夹或者文件，那就需要我们另外动些手脚了。

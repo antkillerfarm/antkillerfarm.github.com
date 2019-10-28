@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（十九）——压缩感知, 图论, 决策树
+title:  机器学习（十九）——压缩感知, 决策树
 category: ML 
 ---
 
@@ -72,36 +72,6 @@ https://zhuanlan.zhihu.com/p/85558304
 
 深度学习压缩感知（DCS）历史最全资源汇总分享
 
-# 图论
-
-https://mp.weixin.qq.com/s/zOdy-1vCJD_dPFSoe0ELFA
-
-图论与图学习（一）：图的基本概念
-
-https://mp.weixin.qq.com/s/0ZdS1WOSDZiXnxP8fybBAw
-
-图论与图学习（二）：图算法
-
-https://mp.weixin.qq.com/s/BkKw2C3n9WsmIchJkkZxUw
-
-从七桥问题开始：全面介绍图论及其应用
-
-https://mp.weixin.qq.com/s/ZDY3Yt67eXK5pjXgvJkkyQ
-
-图论的各种基本算法
-
-https://mp.weixin.qq.com/s/2h1dgvPbYKBOYZPiixg9iw
-
-手把手：四色猜想、七桥问题…程序员眼里的图论，了解下？
-
-https://mp.weixin.qq.com/s/ra9v1pgFsbOcJrtONoZNvQ
-
-图论基础与图存储结构
-
-https://mp.weixin.qq.com/s/Y7qZlJdJ8fav5BXFGwdSOQ
-
-Graph Analysis and Its Application
-
 # 决策树
 
 Decision Tree讲的最好的，首推周志华的《机器学习》。这里只对要点进行备忘。
@@ -145,6 +115,22 @@ $$Gini\_index(D,a)=\sum_{v=1}^V\frac{\mid D^v\mid }{\mid D\mid }Gini(D^v)$$
 https://mp.weixin.qq.com/s/TTU9LMG8TuB1gzgfCfWjjw
 
 从香农熵到手推KL散度：一文带你纵览机器学习中的信息论
+
+## Lorenz curve
+
+既然提到了基尼值，那么就再谈一下Lorenz curve吧。
+
+>Max Otto Lorenz，1876～1959，美国经济学家。University of Wisconsin–Madison博士（1906）。美国统计学会会员。
+
+![](/images/img3/Lorenz_curve.png)
+
+上图就是Lorenz curve。它的横轴是人数（按照财富值从低到高排列），纵轴是财富数量。显然，从坐标原点到正方形相应另一个顶点的对角线为均等线，即收入分配绝对平等线，这一般是不存在的。实际收入分配曲线，即洛伦兹曲线都在均等线的右下方。
+
+>Corrado Gini，1884～1965，意大利统计学家。意大利统计学会主席。政治方面支持法西斯统治，但反对排犹。
+
+Lorenz curve将右下方分为了A和B两部分，Gini据此提出了Gini coefficient：$$G=A/(A+B）$$。
+
+显然，如果采用等（横轴）间距采样的话，Gini coefficient就等于上节提到的Gini(D)了。
 
 ## GBDT
 

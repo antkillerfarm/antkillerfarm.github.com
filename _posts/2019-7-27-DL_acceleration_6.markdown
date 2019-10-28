@@ -129,3 +129,7 @@ TinyBERT：模型小7倍，速度快8倍，华中科大、华为出品
 https://mp.weixin.qq.com/s/ckn4RERri-mfqLVPDRHGog
 
 让学生网络相互学习，为什么深度相互学习优于传统蒸馏模型？
+
+https://mp.weixin.qq.com/s/wwtsqjjUGt7MTEWDc5bSvQ
+
+一种无需原始训练数据的Teacher-Student模型压缩方法

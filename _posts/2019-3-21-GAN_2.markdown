@@ -360,6 +360,10 @@ https://zhuanlan.zhihu.com/p/70033932
 
 一文看懂GAN演进图谱
 
+https://zhuanlan.zhihu.com/p/88862044
+
+万字综述之生成对抗网络
+
 ## GAN的理论解释
 
 顾险峰教授对GAN提出了自己的理论解释。
