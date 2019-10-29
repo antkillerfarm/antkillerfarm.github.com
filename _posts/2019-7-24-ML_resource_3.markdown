@@ -201,3 +201,7 @@ https://mp.weixin.qq.com/s/9FBl5zSz9WEgjFeq41y1kQ
 https://mp.weixin.qq.com/s/q1CC7pj8kj2E9zBw-IJnDw
 
 相亲数据告诉你，什么样的人更找不到对象？
+
+https://mp.weixin.qq.com/s/W-4lv_SfT25AqHHvOmG6BA
+
+实锤！用python扒一扒那些疯狂收割着大家的智商税的“烂片”和“艺人”

@@ -18,6 +18,10 @@ Tiny Network Graphics是图鸭科技推出一种基于深度学习的图片压�
 
 参考：
 
+https://mp.weixin.qq.com/s/YBJwLqqL7aVUTG0LaUbwxw
+
+深度学习助力数据压缩，一文读懂相关理论
+
 https://mp.weixin.qq.com/s/WYsxFX4LyM562bZD8rO95w
 
 图鸭发布图片压缩TNG，节省55%带宽
@@ -361,3 +365,7 @@ https://mp.weixin.qq.com/s/ClqOWx1RJGzoS0akI2s93w
 https://mp.weixin.qq.com/s/QtYNb1bVnWghNFK6fbynLw
 
 激活函数如何进行自动学习和配置
+
+https://mp.weixin.qq.com/s/smAlLm-JZn_s2utSCVk7ig
+
+归一化(Normalization)方法如何进行自动学习和配置

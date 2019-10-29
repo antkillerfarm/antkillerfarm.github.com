@@ -52,14 +52,6 @@ https://mp.weixin.qq.com/s/lJDiP7oeiFQSEyxWt_9uBA
 
 NFM
 
-https://mp.weixin.qq.com/s/G4bDj4a05K0kB4IZ6IosiQ
-
-Wide & Deep
-
-https://mp.weixin.qq.com/s/JNGKz4-fWG4ygl7f6UkxcQ
-
-DeepFM
-
 这些算法的演化路径具体来说有两条：其一是从FM开始推演其在深度学习上的各种推广（对应下图的红线），另一条是从embedding+MLP自身的演进特点结合CTR预估本身的业务场景进行推演（对应下图黑线部分）。 
 
 ![](/images/img2/DL_recommend.jpg)
@@ -83,6 +75,38 @@ https://www.librec.net/
 https://github.com/cheungdaven/DeepRec
 
 这是一个基于Tensorflow的深度推荐系统
+
+## Wide & Deep
+
+https://mp.weixin.qq.com/s/G4bDj4a05K0kB4IZ6IosiQ
+
+Wide & Deep
+
+https://mp.weixin.qq.com/s/ouHfqFk_WQk7ZofvabEwZg
+
+推荐系统Wide & Deep Learning详解
+
+https://mp.weixin.qq.com/s/5wdGemYBtkYUvq1n5ioyFg
+
+详解Wide&Deep理论与实践
+
+## DeepFM
+
+https://mp.weixin.qq.com/s/JNGKz4-fWG4ygl7f6UkxcQ
+
+DeepFM
+
+https://mp.weixin.qq.com/s/v8L0E6G-ShOiyvaymw8MYg
+
+一文搞懂DeepFM的理论与实践
+
+https://mp.weixin.qq.com/s/u4onsUU4G4DNm4F5ytiNhQ
+
+互联网广告CTR预估新算法：基于神经网络的DeepFM原理解读
+
+https://zhuanlan.zhihu.com/p/48057256
+
+用TensorFlow实现支持多值、稀疏、共享权重的DeepFM
 
 ## 参考
 
@@ -113,10 +137,6 @@ http://i.dataguru.cn/mportal.php?mod=view&aid=11463
 https://zhuanlan.zhihu.com/p/33214451
 
 深度学习在推荐系统上的应用
-
-https://mp.weixin.qq.com/s/ouHfqFk_WQk7ZofvabEwZg
-
-推荐系统Wide & Deep Learning详解
 
 https://mp.weixin.qq.com/s/hGvQvddD3i858XSK4z08Ug
 
@@ -278,14 +298,6 @@ https://mp.weixin.qq.com/s/QCGemlo8CYIz6imMde_cmg
 
 推荐系统中的机器学习算法与评估实战
 
-https://mp.weixin.qq.com/s/v8L0E6G-ShOiyvaymw8MYg
-
-一文搞懂DeepFM的理论与实践
-
-https://mp.weixin.qq.com/s/u4onsUU4G4DNm4F5ytiNhQ
-
-互联网广告CTR预估新算法：基于神经网络的DeepFM原理解读
-
 https://mp.weixin.qq.com/s/QaMjHRZ5fiN2zBJLIeGrSg
 
 阿里推出DeepInsight平台：可视化理解深度神经网络CTR预估模型
@@ -293,10 +305,6 @@ https://mp.weixin.qq.com/s/QaMjHRZ5fiN2zBJLIeGrSg
 https://mp.weixin.qq.com/s/JEOfAXg4nDepMtzPCgElrg
 
 SIGIR 2018最佳论文：深入分析流行度在推荐系统中的作用
-
-https://mp.weixin.qq.com/s/5wdGemYBtkYUvq1n5ioyFg
-
-详解Wide&Deep理论与实践
 
 https://mp.weixin.qq.com/s/pA1SSEnwC884LBZGiH3jhg
 
@@ -373,15 +381,3 @@ https://mp.weixin.qq.com/s/3j367YCViJtY9iB386p8jA
 https://mp.weixin.qq.com/s/hxwyVCjK40urSTUZoDsQig
 
 Deep Neural Network for YouTube Recommendations
-
-https://mp.weixin.qq.com/s/fiUcm143ieCe3KkcJ0V5LQ
-
-京东如何在仓储库存部署时保证“啤酒尿裤”的高效履约？
-
-https://mp.weixin.qq.com/s/n9j9QuMe3fIPQFQKk5Tgjw
-
-Airbnb: 深度学习在搜索排序业务中的探索与演进（一）
-
-https://mp.weixin.qq.com/s/ejQW9EI48kJ4pvIlh7H3Dw
-
-Airbnb: 深度学习在搜索排序业务中的探索与演进（二）

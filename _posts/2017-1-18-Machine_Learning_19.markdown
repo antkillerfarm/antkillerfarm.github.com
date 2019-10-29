@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/JU0H1cYIyWLgOkdBgra-eA
 
 GBDT！深入浅出详解梯度提升决策树
 
+https://mp.weixin.qq.com/s/0CSAh9LtYj1wwCipCMGo9g
+
+深入理解GBDT回归算法
+
 https://mp.weixin.qq.com/s/KyvjI_2CLss_fzVFxPrE7A
 
 Facebook经典模型LR+GBDT理论与实践

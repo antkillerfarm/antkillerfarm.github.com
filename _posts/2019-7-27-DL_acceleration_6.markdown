@@ -110,10 +110,6 @@ https://mp.weixin.qq.com/s/yFyM5OVp1YLKQBlgXeAzhw
 
 华为诺亚方舟实验室提出无需数据网络压缩技术
 
-https://mp.weixin.qq.com/s/a0d0b1jSm5HxHso9Lz8MSQ
-
-小版BERT也能出奇迹：最火的预训练语言库探索小巧之路
-
 https://mp.weixin.qq.com/s/0f0aToVaAsU7yWK4xz-HzQ
 
 剪枝量化初完结，蒸馏学习又上线
@@ -121,10 +117,6 @@ https://mp.weixin.qq.com/s/0f0aToVaAsU7yWK4xz-HzQ
 https://github.com/patrickwaters1000/DistillingNeuralNets
 
 Implements the technique of distillation
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771134&idx=2&sn=012082a897dbf125000e38b73520c51d
-
-TinyBERT：模型小7倍，速度快8倍，华中科大、华为出品
 
 https://mp.weixin.qq.com/s/ckn4RERri-mfqLVPDRHGog
 

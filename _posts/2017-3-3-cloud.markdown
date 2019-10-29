@@ -223,6 +223,10 @@ https://mp.weixin.qq.com/s/g-HgfQ77ExpS0d9QrRcvlg
 
 Python大数据处理库PySpark实战——使用PySpark处理文本多分类问题
 
+https://mp.weixin.qq.com/s/wZlQLAkZ0-pP74vjyS6oDg
+
+手把手实现PySpark机器学习项目-回归算法
+
 http://blog.csdn.net/xiaomin1991222/article/details/50982579
 
 使用Mahout实现协同过滤Spark

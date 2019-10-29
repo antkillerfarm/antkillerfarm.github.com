@@ -193,3 +193,7 @@ https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247499933&idx=1&sn=b9fe7d
 https://zhuanlan.zhihu.com/p/84890413
 
 PolarMask：一阶段实例分割新思路
+
+https://mp.weixin.qq.com/s/IRD0iIVXyENlUOyfSbmlBA
+
+目标检测的渐进域自适应

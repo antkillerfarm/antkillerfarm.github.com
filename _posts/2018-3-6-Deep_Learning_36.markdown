@@ -6,6 +6,18 @@ category: DL
 
 # 深度推荐系统（续）
 
+https://mp.weixin.qq.com/s/fiUcm143ieCe3KkcJ0V5LQ
+
+京东如何在仓储库存部署时保证“啤酒尿裤”的高效履约？
+
+https://mp.weixin.qq.com/s/n9j9QuMe3fIPQFQKk5Tgjw
+
+Airbnb: 深度学习在搜索排序业务中的探索与演进（一）
+
+https://mp.weixin.qq.com/s/ejQW9EI48kJ4pvIlh7H3Dw
+
+Airbnb: 深度学习在搜索排序业务中的探索与演进（二）
+
 https://zhuanlan.zhihu.com/p/57234648
 
 深入解读Airbnb推荐算法

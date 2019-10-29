@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  AI游戏
+title:  AI游戏, 博弈论
 category: resource 
 ---
 
@@ -309,3 +309,21 @@ OpenAI智能体上演捉迷藏攻防大战，自创套路与反套路
 https://mp.weixin.qq.com/s/pejkWw0mqKMAErfj3u_Vpg
 
 我在哥大研究网游开箱氪金建模
+
+# 博弈论
+
+https://www.cnblogs.com/steven-yang/tag/博弈论/
+
+一个博弈论的专栏
+
+https://mp.weixin.qq.com/s/5o3m8RLwYkZJEhqNxOLq_A
+
+不对称多代理博弈中的博弈理论解读
+
+https://mp.weixin.qq.com/s/D9bRjYVJOMT0Jkh59XZ-Rg
+
+DeepMind于Nature子刊发文提出非对称博弈的降维方法
+
+https://mp.weixin.qq.com/s/1t6WuTQpltMtP-SRF1rT4g
+
+当博弈论遇上机器学习：一文读懂相关理论

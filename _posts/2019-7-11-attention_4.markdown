@@ -8,6 +8,30 @@ category: Attention
 
 ## 参考（续）
 
+https://mp.weixin.qq.com/s/e4dgIdwzDzcLSkdgr1yZpg
+
+LeCun力荐：Facebook推出十亿参数超大容量存储器
+
+https://mp.weixin.qq.com/s/zXXtbuSvyMOkgrWJwB83kg
+
+预训练语言模型的最新探索
+
+https://mp.weixin.qq.com/s/WzGa5XVi2Op4Lz-1uQXfxQ
+
+SpanBERT：提出基于分词的预训练模型，多项任务性能超越现有模型！
+
+https://zhuanlan.zhihu.com/p/76912493
+
+nlp中的预训练语言模型总结(单向模型、BERT系列模型、XLNet)
+
+https://mp.weixin.qq.com/s/pYSs6NhIAB6DuwNnKZhkZQ
+
+Bert改进：如何融入知识
+
+https://mp.weixin.qq.com/s/in5SDWlQg8ts4E8DTmHxMQ
+
+BERT在推荐系统领域可能会有什么作为？
+
 https://mp.weixin.qq.com/s/kJhOrz0VaYc-k-6XJS02ag
 
 8篇论文梳理BERT相关模型进展与反思
@@ -23,10 +47,6 @@ https://mp.weixin.qq.com/s/hI9XAiqKaHLq-Z9JkaWA_A
 https://mp.weixin.qq.com/s/55B0ToIKDusiPI5farR19w
 
 NLP这两年：15个预训练模型对比分析与剖析
-
-https://www.zhihu.com/question/347898375
-
-如何看待瘦身成功版BERT——ALBERT？
 
 https://mp.weixin.qq.com/s/SPfa17p3QetZXCC01DwmQA
 

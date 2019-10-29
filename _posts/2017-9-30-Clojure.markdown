@@ -244,7 +244,7 @@ https://code.visualstudio.com/
 
 ## 细节
 
-ctrl+P 命令行
+Ctrl+P 命令行
 
 View--> Toggle Word Wrap 自动换行
 
@@ -254,7 +254,9 @@ View--> Toggle Word Wrap 自动换行
 
 Windows：Shift + Alt + F
 
-Ubuntu： Ctrl + Shift + I
+Ubuntu：Ctrl + Shift + I
+
+列选择：Shift + Alt + 鼠标左键拖动
 
 ## 插件
 

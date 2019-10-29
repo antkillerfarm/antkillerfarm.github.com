@@ -158,6 +158,22 @@ https://mp.weixin.qq.com/s/dBK8x_WajI2A3L5v6OQEgA
 
 四年完成400万行Python代码检查，甚至顺手写了个编译器
 
+## Django
+
+官网：
+
+https://www.djangoproject.com/
+
+参考：
+
+https://mp.weixin.qq.com/s/-CaMHjsY580et8Hh_D2FSg
+
+简约而不简单的Django新手图文教程
+
+http://www.liujiangblog.com/course/django/
+
+Django教程
+
 ## 参考
 
 https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA
@@ -175,10 +191,6 @@ https://github.com/leisurelicht/wtfpython-cn
 https://mp.weixin.qq.com/s/FbMvWgVf1rYtWH4cwYarIg
 
 140种Python标准库、第三方库和外部工具都有了
-
-https://mp.weixin.qq.com/s/-CaMHjsY580et8Hh_D2FSg
-
-简约而不简单的Django新手图文教程
 
 https://mp.weixin.qq.com/s/O5okcuVKuf339BZzhmxiew
 

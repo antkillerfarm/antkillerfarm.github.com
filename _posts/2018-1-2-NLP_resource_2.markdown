@@ -336,6 +336,10 @@ https://mp.weixin.qq.com/s/LoIrR-0roO1FO7BRuiVu9A
 
 能干活的聊天机器人-对话系统概述
 
+https://mp.weixin.qq.com/s/8KxHKWwhKAsi8c3kvlm6sw
+
+能闲聊的端到端生成型聊天机器人背后都有哪些技术？
+
 https://mp.weixin.qq.com/s/Vh3bCO-ZYoBJLqCTPCpggg
 
 论如何为聊天机器人定义一个固定的人格

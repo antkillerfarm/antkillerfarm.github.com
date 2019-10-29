@@ -216,10 +216,6 @@ https://www.cnblogs.com/steven-yang/tag/强化学习/
 
 一个RL的专栏
 
-https://www.cnblogs.com/steven-yang/tag/博弈论/
-
-一个博弈论的专栏
-
 https://blog.csdn.net/gsww404
 
 一个DRL的专栏

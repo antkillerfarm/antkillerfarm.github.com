@@ -178,6 +178,10 @@ https://mp.weixin.qq.com/s/5snO8CYpc01CCky9WT6SrQ
 
 用AI实现动画角色的姿势迁移，Adobe等提出新型“木偶动画”
 
+https://mp.weixin.qq.com/s/TnJKlOLjZWTI4rLocYXTZg
+
+简单几笔素描就能“复原”真实人脸，这是沈向洋高徒出品的CSAGAN
+
 # ESN
 
 Echo State Network

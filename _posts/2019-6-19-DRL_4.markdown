@@ -52,7 +52,25 @@ DDPG原理和算法
 
 PPO是2017年由OpenAI提出的一种基于随机策略的DRL算法，也是当前OpenAI的默认算法。
 
+PPO是一种Actor-Critic算法。它的主要改进在它的Actor部分。
 
+我们知道，Policy Gradient算法的训练过程中，始终存在着new Policy和old Policy这样一对矛盾。
+
+一方面，我们需要new Policy和old Policy有一定的差异，防止模型收敛到局部最优。
+
+另一方面，两者的差异又不能太大，否则，模型的训练将无法收敛。
+
+那么，**如何衡量new Policy和old Policy的差异程度呢？**
+
+PPO的答案是：我们可以用两种Policy得到的动作的概率分布的KL散度，来描述这种差异。
+
+具体的做法是在$$J(\theta)$$上添加一个KL惩罚项：
+
+$$J^{\theta^k}_{PPO}(\theta)=J^{\theta^k}(\theta)-\beta KL(\theta, \theta^k)$$
+
+这里的惩罚系数$$\beta$$可以是定值，也可以是一个自适应的值。例如，我们可以在KL值小于最小阈值时，减小$$\beta$$，在KL值大于最大阈值时，增大$$\beta$$。
+
+除了KL惩罚项之外，还可以使用clip来限制Gradient的大小，这就是PPO2的做法。
 
 和A3C类似，PPO也有一个分布式版本，叫做DPPO（Distributed Proximal Policy Optimization）。
 

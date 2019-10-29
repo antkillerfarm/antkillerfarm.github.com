@@ -120,6 +120,10 @@ https://mp.weixin.qq.com/s/EYQXM-1WSommj9mKJZVVzw
 
 百度正式发布ERNIE 2.0，16项中英文任务超越BERT、XLNet，刷新SOTA
 
+https://mp.weixin.qq.com/s/PwiVCgN8dDWXTGZsiqM-2g
+
+最新NLP架构的直观解释：多任务学习–ERNIE 2.0
+
 ## XLNet
 
 https://mp.weixin.qq.com/s/29y2bg4KE-HNwsimD3aauw
@@ -153,6 +157,24 @@ XLnet：GPT和BERT的合体，博采众长，所以更强
 https://zhuanlan.zhihu.com/p/80216580
 
 XLnet：集合了GPT和BERT的预训练模型
+
+## 轻量化BERT
+
+https://www.zhihu.com/question/347898375
+
+如何看待瘦身成功版BERT——ALBERT？
+
+https://mp.weixin.qq.com/s/a0d0b1jSm5HxHso9Lz8MSQ
+
+小版BERT也能出奇迹：最火的预训练语言库探索小巧之路
+
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771134&idx=2&sn=012082a897dbf125000e38b73520c51d
+
+TinyBERT：模型小7倍，速度快8倍，华中科大、华为出品
+
+https://mp.weixin.qq.com/s/i82wGiSOlA4l4ozimrE2gg
+
+加速BERT模型有多少种方法？从架构优化、模型压缩到模型蒸馏最新进展详解！
 
 ## 参考
 
@@ -375,27 +397,3 @@ https://mp.weixin.qq.com/s/h1VUSY7_UZF3PmjSN0DMSg
 https://mp.weixin.qq.com/s/UJlmjFHWhnlXXJoRv4zkEQ
 
 虽被BERT碾压，但还是有必要谈谈BERT时代与后时代的NLP
-
-https://mp.weixin.qq.com/s/e4dgIdwzDzcLSkdgr1yZpg
-
-LeCun力荐：Facebook推出十亿参数超大容量存储器
-
-https://mp.weixin.qq.com/s/zXXtbuSvyMOkgrWJwB83kg
-
-预训练语言模型的最新探索
-
-https://mp.weixin.qq.com/s/WzGa5XVi2Op4Lz-1uQXfxQ
-
-SpanBERT：提出基于分词的预训练模型，多项任务性能超越现有模型！
-
-https://zhuanlan.zhihu.com/p/76912493
-
-nlp中的预训练语言模型总结(单向模型、BERT系列模型、XLNet)
-
-https://mp.weixin.qq.com/s/pYSs6NhIAB6DuwNnKZhkZQ
-
-Bert改进：如何融入知识
-
-https://mp.weixin.qq.com/s/in5SDWlQg8ts4E8DTmHxMQ
-
-BERT在推荐系统领域可能会有什么作为？

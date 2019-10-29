@@ -273,6 +273,10 @@ https://mp.weixin.qq.com/s/0tTlPG4hd9hcHORkZF6w1A
 
 PyTorch的自动求导机制详细解析，PyTorch的核心魔法
 
+https://mp.weixin.qq.com/s/PELBuCvu-7KQ33XBtlYfYQ
+
+深度学习中的微分
+
 # 深度哈希
 
 https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg

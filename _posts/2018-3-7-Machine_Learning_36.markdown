@@ -142,6 +142,10 @@ https://mp.weixin.qq.com/s/jZ3vcCcZTfTmJNl-9QXelw
 
 XGBoost超详细推导，终于有人讲明白了！
 
+https://mp.weixin.qq.com/s/HcWoDmrp4taRGREvV7x4vA
+
+斯坦福吴恩达团队提出NGBoost：用于概率预测的自然梯度提升
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。

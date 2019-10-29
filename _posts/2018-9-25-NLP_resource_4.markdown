@@ -258,10 +258,6 @@ https://mp.weixin.qq.com/s/R-BuHOYFEadVe0yx5q92Dg
 
 文本表示简介
 
-https://mp.weixin.qq.com/s/GFIxA9kEGNJ9rg96mRw0PQ
-
-自然语言语义代码搜索之路
-
 https://mp.weixin.qq.com/s/qW-0zGvMi4qjT_KtGat4mQ
 
 TreeGAN：为序列生成任务构建有句法意识的GAN

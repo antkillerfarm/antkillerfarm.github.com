@@ -352,10 +352,6 @@ https://mp.weixin.qq.com/s/l1rmGxOVrXKAaf4yYUt4kQ
 
 自然场景文字定位技术详解
 
-https://mp.weixin.qq.com/s/-ZudmG9-qEPaWOu--Hd6SQ
-
-Editing Text in the Wild
-
 https://mp.weixin.qq.com/s/rJ7guL-Hxxr2Ezl7LRhQrA
 
 基于对抗学习的数据稀缺手写文本识别
@@ -367,14 +363,6 @@ https://mp.weixin.qq.com/s/YixrjGTU4p7LlyfQCEmmmQ
 https://mp.weixin.qq.com/s/Lk_P74kJCjmQo1S2piTplA
 
 针对不规则场景文字识别的对称约束矫正网络
-
-https://mp.weixin.qq.com/s/5BuGyj3SaqZPD2kR_jpUWA
-
-基于单阶段小样本学习的艺术风格字形图片生成
-
-https://mp.weixin.qq.com/s/dHRyH7S6jV2jxgoxbQDNSg
-
-DynTypo: 基于样例的动态文本特效迁移
 
 https://mp.weixin.qq.com/s/ENvoZ4ZPKT1HXaQjD9VgSA
 

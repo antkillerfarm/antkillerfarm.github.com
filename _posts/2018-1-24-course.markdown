@@ -180,6 +180,10 @@ https://nndl.github.io/
 
 复旦邱锡鹏（FudanNLP项目负责人）：神经网络与深度学习
 
+https://github.com/FudanNLP/nlp-beginner
+
+复旦大学NLP入门教程
+
 http://joanbruna.github.io/stat212b/
 
 Stat 212b：Topics Course on Deep Learning——加州大学伯克利分校统计系Joan Bruna（Yann LeCun博士后）以统计的角度讲解DL。

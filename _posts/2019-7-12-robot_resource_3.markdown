@@ -262,6 +262,18 @@ https://mp.weixin.qq.com/s/rA9AAVx7AlNuS1l4IUuG0w
 
 深度学习技术在自动驾驶中的应用
 
+https://mp.weixin.qq.com/s/4_jtb9gv20F6h1Ljw4JwEw
+
+车载以太网通信的“套娃游戏”
+
+https://zhuanlan.zhihu.com/p/86184886
+
+行人的行为意图建模和预测(上)
+
+https://zhuanlan.zhihu.com/p/86185203
+
+行人的行为意图建模和预测(下)
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。

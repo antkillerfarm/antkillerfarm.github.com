@@ -286,6 +286,10 @@ https://mp.weixin.qq.com/s/oXUnnkFl8AcAI-QfV3zWwQ
 
 OpenCV4如何让传统图像处理实现三十倍加速的顶级技能
 
+https://mp.weixin.qq.com/s/U7m6rDgHePsfWicmMn19wg
+
+使用Python创建自己的Instagram滤镜
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。

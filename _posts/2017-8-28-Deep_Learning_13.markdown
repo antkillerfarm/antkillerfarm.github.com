@@ -206,6 +206,16 @@ Information Retrieval是用户进行信息查询和获取的主要方式，是�
 
 《End-to-End Neural Ad-hoc Ranking with Kernel Pooling》
 
+## 代码搜索
+
+https://mp.weixin.qq.com/s/B3Uv-dhB5VYJnu06N4lYBg
+
+深度学习遇见代码搜索，一篇论文概览神经代码搜索
+
+https://mp.weixin.qq.com/s/GFIxA9kEGNJ9rg96mRw0PQ
+
+自然语言语义代码搜索之路
+
 ## 参考
 
 https://github.com/harpribot/awesome-information-retrieval

@@ -322,6 +322,10 @@ https://mp.weixin.qq.com/s/k5Xx-nnaf-yfWqGLIY3LEg
 
 特斯拉的芯片究竟多强
 
+https://zhuanlan.zhihu.com/p/88927564
+
+窥探神经网络加速器的数据复用（一）
+
 # GPU通信技术
 
 ## RDMA
