@@ -113,7 +113,7 @@ git的reset和checkout的区别
 
 这个在代码review的时候比较有用。如果上一个commit在review的时候发现问题，可以再次修改后，合并到上一个commit中，如此反复直到review成功。
 
-14. SSH
+14.SSH
 
 {% highlight bash %}
 cd ~/.ssh
@@ -123,7 +123,7 @@ cat ~/.ssh/id_rsa.pub
 
 >`ssh-keygen`命令会生成两个文件id_rsa和id_rsa.pub，前者是私钥，后者是公钥，不要弄错了。
 
-15. submodule
+15.submodule
 
 有的时候，包太大了，可以将之分成若干小包（submodule）。
 
@@ -146,6 +146,14 @@ Generating Your SSH Public Key
 15.`git blame`查看一行代码是谁改的。
 
 16.`HEAD`表示当前版本，`HEAD^^`表示当前版本之前的两个版本，如果回溯的版本较多也可以写作`HEAD~100`。
+
+17.cherry-pick用于将分支A上的修改C，移植到分支B上。
+
+`git cherry-pick <commit id>`
+
+18.如果对本次提交的内容不满意的话，可以使用：
+
+`git commit --amend --no-edit`
 
 ## 如何git超大版本库
 

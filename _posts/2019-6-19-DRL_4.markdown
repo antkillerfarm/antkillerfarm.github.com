@@ -48,6 +48,10 @@ https://blog.csdn.net/kenneth_yu/article/details/78478356
 
 DDPG原理和算法
 
+https://zhuanlan.zhihu.com/p/27699682
+
+荐译一篇通俗易懂的策略梯度（Policy Gradient）方法讲解
+
 # PPO
 
 PPO是2017年由OpenAI提出的一种基于随机策略的DRL算法，也是当前OpenAI的默认算法。
@@ -319,3 +323,39 @@ https://mp.weixin.qq.com/s/eE3oL6c5zHmTglHE-dgBvg
 https://mp.weixin.qq.com/s/aAF0Gr7yEPkHRLASecJipw
 
 百度正用谷歌AlphaGo，解决一个比围棋更难的问题
+
+# MARL
+
+Multi-agent Reinforcement Learning(MARL)，一般被称为多智能体强化学习。与之相对的则是Single-agent Reinforcement Learning(SARL)。
+
+以下主要参考了如下文章：
+
+https://zhuanlan.zhihu.com/p/39037444
+
+多智能体强化学习笔记 01
+
+https://zhuanlan.zhihu.com/p/43579796
+
+多智能体强化学习笔记 02
+
+论文：
+
+《Multi-agent reinforcement learning: An overview》
+
+《Game Theory and Multi-agent Reinforcement Learning》
+
+我们使用如下示例，探讨一下**什么是MARL？**
+
+![](/images/img3/MARL.png)
+
+上图是两个智能体1、2将金条（object）搬运回家的例子。这根金条需要两个人一人抬着一边才能扛回家。
+
+要想把金条扛回家，小红和小蓝必须先绕过障碍物，然后每个人到达金条的一边，扛起金条后，两人还得绕开家门口的障碍物，这样才能将金条扛回家。
+
+从上面的问题可以看出，MARL至少应该包括如下几个要素：
+
+- 在多智能体系统中至少有两个智能体。
+
+- 智能体之间存在着一定的关系，如合作关系（如本例），竞争关系（如多人游戏），或者同时存在竞争与合作的关系。
+
+- 每个智能体最终所获得的回报不仅仅与自身的动作有关系，还跟对方的动作有关系。如本例中每个智能体要想获得回报，必须是金条被两个智能体一起搬回家。

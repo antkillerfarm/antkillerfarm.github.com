@@ -1,14 +1,38 @@
 ---
 layout: post
-title:  深度强化学习（五）——Multi-agent, AlphaStar, 元学习, DRL参考资源（1）
+title:  深度强化学习（五）——MARL, AlphaStar, 元学习
 category: DRL 
 ---
 
-# Multi-agent
+# Multi-agent（续）
 
-https://zhuanlan.zhihu.com/p/39037444
+SARL用MDP来描述，而MARL则需要用Markov game（马尔科夫博弈，又称随机博弈（stochastic game））来描述。
 
-多智能体强化学习笔记
+类似于
+
+![](/images/img3/MARL_2.png)
+
+
+
+![](/images/img3/prisoner_dilemma.jpg)
+
+参考：
+
+https://zhuanlan.zhihu.com/c_1061939147282915328
+
+一个MARL方面的专栏
+
+https://github.com/LantaoYu/MARL-Papers
+
+Paper list of multi-agent reinforcement learning (MARL)
+
+https://blog.csdn.net/qq_38163755/article/details/98057751
+
+Game Theory and Multi-agent Reinforcement Learning笔记1
+
+https://blog.csdn.net/qq_38163755/article/details/98223987
+
+Game Theory and Multi-agent Reinforcement Learning笔记2
 
 https://mp.weixin.qq.com/s/bQx-ydEAfijgK1Ii5ilPFQ
 
@@ -317,93 +341,3 @@ https://mp.weixin.qq.com/s/xu5ieaPP2de0GML7b-1BsA
 https://mp.weixin.qq.com/s/spRlzjFTh4KeyFfd8pmZgw
 
 新框架ES-MAML：基于进化策略、简易的元学习方法
-
-# DRL参考资源
-
-https://mp.weixin.qq.com/s/ruAAQEjPIDPWPiuPepKU6Q
-
-Deep Reinforcement Learning: An Overview
-
-https://mp.weixin.qq.com/s/FjmlXqlpaRVLdAbjqspOJA
-
-这是一份你必须学习的强化学习算法清单
-
-https://mp.weixin.qq.com/s/lfXQqllfFPtuNIrQZiD-NQ
-
-深度强化学习十大原则
-
-https://mp.weixin.qq.com/s/I8IwPCY6-zocJKFXMr6rUg
-
-深度强化学习的18个关键问题
-
-https://mp.weixin.qq.com/s/_lmz0l1vP_CQ6p6DdFnHWA
-
-谷歌大脑工程师的深度强化学习劝退文
-
-https://zhuanlan.zhihu.com/p/39999667
-
-强化学习路在何方？
-
-https://mp.weixin.qq.com/s/oA98YyLqn1B22QZ5b_iDVA
-
-IJCAI 2018：聚焦强化学习的学习效率
-
-https://mp.weixin.qq.com/s/FtHJCXniVne2TGKfgCeS9w
-
-Pieter Abbeel：深度强化学习加速方法
-
-https://mp.weixin.qq.com/s/xlnwB9e1ks-4M4djnyIAyQ
-
-解读72篇DeepMind深度强化学习论文
-
-https://mp.weixin.qq.com/s/VYIyWRykREjOyLu4YDhLeA
-
-61篇NIPS2019深度强化学习论文及部分解读
-
-https://mp.weixin.qq.com/s/sHP03DAeZvdBxwVPuSNRPg
-
-如何丝滑地入门神经网络？写个AI赛车游戏，只训练4代就能安全驾驶
-
-https://mp.weixin.qq.com/s/1SZKhG1ZbD1pl-3YQD_umg
-
-6行代码搞定基本的RL算法，速度围观Reddit高赞帖
-
-https://mp.weixin.qq.com/s/7BsXPQ8wC6_fHulU63ZQiQ
-
-当强化学习遇见泛函分析
-
-https://mp.weixin.qq.com/s/6n5HawyR4AgH8Dq0gJMw2g
-
-强化学习的基本概念与代码实现
-
-https://zhuanlan.zhihu.com/p/27699682
-
-荐译一篇通俗易懂的策略梯度（Policy Gradient）方法讲解
-
-https://mp.weixin.qq.com/s/RLEuaiRdq6AbTSUcYQ5O3A
-
-深度强化学习在NLP怎么用？看清华黄民烈老师这一份120页《自然语言处理和搜索中的深度强化学习应用》讲义
-
-https://zhuanlan.zhihu.com/p/29019246
-
-基于策略的增强学习
-
-https://mp.weixin.qq.com/s/OY56lJ_NFf5vVAgKfKyx2A
-
-利用强化学习自动搜索最优化方法
-
-https://mp.weixin.qq.com/s/uDFsWebfLmka-zZX3Y_8kg
-
-深度强化学习在面向任务的对话管理中的应用
-
-https://mp.weixin.qq.com/s/nYOOwVoijl1p4V0A7yaI3w
-
-机遇与挑战：用强化学习自动搜索优化算法
-
-http://mp.weixin.qq.com/s/TBVVdX3erOpXNjXmhLmxOw
-
-学“深度强化学习”，看懂DeepMind这篇文章就够了!
-
-https://mp.weixin.qq.com/s/_Di73PkEWJV1-OLLHfz7yQ
-
-组合在线学习：实时反馈玩转组合优化
