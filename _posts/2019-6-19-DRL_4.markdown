@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度强化学习（四）——PPO, AlphaGo
+title:  深度强化学习（四）——PPO, Hierarchical RL, OpenAI, AlphaGo
 category: DRL 
 ---
 
@@ -112,6 +112,140 @@ https://mp.weixin.qq.com/s/TIWnnCmVZnFQNH9Fig5aTw
 
 DeepMind发布新奖励机制：让智能体不再“碰瓷”
 
+# Hierarchical RL
+
+![](/images/img3/Montezuma.png)
+
+之前已经提到，在DeepMind测试的40多款游戏中，有那么几款游戏无论怎么训练，结果都是0，也就是DQN完全无效。上面就是其中最知名的代表游戏《Montezuma’s Revenge》。这是一个解谜游戏，比如图中要拿到钥匙，然后去开门。这对我们而言是通过先验知识得到的。但是很难想象计算机如何仅仅通过图像感知这些内容。感知不到，那么这种游戏也就无从解决。
+
+论文：
+
+《Hierarchical Deep Reinforcement Learning: Integrating Temporal Abstraction and Intrinsic Motivation》
+
+![](/images/img3/HRL.png)
+
+该论文的主要思路就是，弄一个两个层级的神经网络，顶层用于决策，确定下一步的目标，底层用于具体行为。 
+
+这里的内在目标是人工确定的，因此智能程度不高，但是比较实用。
+
+其他算法：
+
+FuN (FeUdal Networks for Hierarchical Reinforcement Learning)
+
+HIRO (Data Efficient Hierarchical Reinforcement Learning)
+
+HAC (Learning Multi-Level Hierarchies with Hindsight)
+
+参考：
+
+https://zhuanlan.zhihu.com/p/78098982
+
+Hierarchical IL/RL(ICML 2018)
+
+https://blog.csdn.net/zhkmxx930xperia/article/details/87742722
+
+Integrating Temporal Abstraction and Intrinsic Motivation
+
+https://blog.csdn.net/songrotek/article/details/51384752
+
+DRL前沿之：Hierarchical Deep Reinforcement Learning
+
+https://mp.weixin.qq.com/s/IYyGgnoXZm6YfamLejqoNQ
+
+深度强化学习试金石：DeepMind和OpenAI攻克蒙特祖玛复仇的真正意义
+
+https://mp.weixin.qq.com/s/iBWjobr9srhB3MTiE_Wwmg
+
+史上最强Atari游戏通关算法：蒙特祖玛获分超过200万！
+
+# OpenAI
+
+OpenAI，由诸多硅谷大亨（Elon Musk等）联合建立的人工智能非营利组织。
+
+官网：
+
+https://openai.com/
+
+github：
+
+https://github.com/openai
+
+## Baselines
+
+若干经典RL算法的实现，包括A2C、DQN等。
+
+代码：
+
+https://github.com/openai/baselines
+
+## Gym
+
+Openai gym是一个用于开发和比较强化学习（reinforcement learning，RL）算法的工具包，与其他的数值计算库兼容，如tensorflow或者theano库。现在主要支持的是python语言，以后将支持其他语言。
+
+官网：
+
+https://gym.openai.com/
+
+{% highlight bash %}
+sudo apt install libffi-dev swig
+git clone https://github.com/openai/gym 
+cd gym
+pip install -e . # minimal install
+pip install -e .[all] # all install
+{% endhighlight %}
+
+这里选择minimal install就可以了，all install需要安装MuJoCo，而后者是收费软件。
+
+和Gym配套的还有一个算法库：
+
+https://github.com/openai/baselines
+
+当然，看名字也知道这只是一个简单的算法库。
+
+参考：
+
+http://tech.163.com/16/0510/09/BMMOPSCR00094OE0.html
+
+马斯克的AI野心——OpenAI Gym系统深度解析
+
+https://mp.weixin.qq.com/s/KK1gwDW2EyptZOiuFjyAlw
+
+OpenAI发布强化学习环境Gym Retro：支持千种游戏
+
+https://blog.csdn.net/jinzhuojun/article/details/77144590
+
+常用增强学习实验环境 I (MuJoCo, OpenAI Gym, rllab, DeepMind Lab, TORCS, PySC2)
+
+https://blog.csdn.net/jinzhuojun/article/details/78508203
+
+常用增强学习实验环境 II (ViZDoom, Roboschool, TensorFlow Agents, ELF, Coach等)
+
+https://mp.weixin.qq.com/s/0oVG7zMi08dzMQrk43T3mw
+
+像训练Dota2一样训练真实机器人？Gibson Environment环境了解一下
+
+https://mp.weixin.qq.com/s/_A0q8DFAsIclaofVgZfjMA
+
+定制股票交易OpenAI Gym强化学习环境
+
+https://blog.csdn.net/gsww404/article/details/80627892
+
+OpenAI-baselines的使用方法
+
+## RND
+
+OpenAI最近开发了RND（Random Network Distillation），一种基于预测的强化学习算法，用于鼓励强化学习代理通过好奇心来探索他们所处环境。在游戏任务Montezuma's Revenge上首次超过人类的平均表现。
+
+blog：
+
+https://blog.openai.com/reinforcement-learning-with-prediction-based-rewards/
+
+Reinforcement Learning with Prediction-Based Rewards
+
+代码：
+
+https://github.com/openai/random-network-distillation
+
 # AlphaGo
 
 樊麾讲解AlphaGo与李世石的五番棋：
@@ -219,143 +353,3 @@ https://zhuanlan.zhihu.com/mathNote
 https://mp.weixin.qq.com/s/DC9QqHdWT0xFnowEBuJDbw
 
 自动化所解读“深度强化学习”：从AlphaGo到AlphaGoZero
-
-https://mp.weixin.qq.com/s/uZtaxRwROCqYmL2k6Muxaw
-
-从阿尔法狗元(AlphaGo Zero)的诞生看终极算法的可能性
-
-https://mp.weixin.qq.com/s/i5OmLu8aNbypiTUmP4teeQ
-
-刘遥行：深入浅出看懂AlphaGo Zero
-
-https://mp.weixin.qq.com/s/aBrwbB_DOGTen-6XL7LGFQ
-
-邓侃：白话蒙特卡洛树搜索和ResNet
-
-https://mp.weixin.qq.com/s/nbTkr0PImlXUSYl91HD91Q
-
-AlphaGo背后的力量：蒙特卡洛树搜索入门指南
-
-https://mp.weixin.qq.com/s/-tH7DQo1cK9gA0bcpBJSDA
-
-AlphaGo Zero：笔记与伪代码
-
-https://mp.weixin.qq.com/s/CJuVoOf7idUChFIn7dH0Lg
-
-围棋中的数学原理
-
-https://mp.weixin.qq.com/s/d46qNFaftt4wxpV4sZnG-w
-
-一张图看懂AlphaGo Zero
-
-https://zhuanlan.zhihu.com/p/31749249
-
-比AlphaGo Zero更强的AlphaZero问世，8小时解决一切棋类！
-
-https://mp.weixin.qq.com/s/L7bZMkqyncwEt6D5tK1OdQ
-
-AlphaZero炼成最强通用棋类AI，DeepMind强化学习算法8小时完爆人类棋类游戏
-
-https://mp.weixin.qq.com/s/tFdnxqV5a5xZrFtB6E0AiQ
-
-新AlphaZero出世称霸棋界，8小时搞定一切棋类！自对弈通用强化学习无师自通！
-
-https://mp.weixin.qq.com/s/qYWsFBKNCKCGUmizX_1sVg
-
-AlphaGo 教学工具终于上线了！
-
-https://mp.weixin.qq.com/s/JxbIeDk8_wnYu_ewUHp29g
-
-深度学习与围棋实战书籍《Deep Learning and the Game of Go》
-
-https://mp.weixin.qq.com/s/gsRnbknytz2FY2dWgdWEYg
-
-精通国际象棋的AI研究员：AlphaZero真的是一次突破吗？
-
-https://mp.weixin.qq.com/s/Przl4ivbNuOFmz4pcYTrpQ
-
-浅述：从Minimax到AlphaZero，完全信息博弈之路（1）
-
-https://zhuanlan.zhihu.com/p/32089487
-
-AlphaZero实战：从零学下五子棋
-
-http://mp.weixin.qq.com/s/72riTTC3w0q9oF5H-51kXA
-
-手把手教你搭建AlphaZero（使用Python和Keras）
-
-https://mp.weixin.qq.com/s/Qw2tT7H1PwDvPgOYy8YUsQ
-
-AlphaGo Zero代码迟迟不开源，TF等不及自己推了一个
-
-https://mp.weixin.qq.com/s/Vq-osjgNXJQu5avGkxQdsw
-
-手把手：AlphaGo有啥了不起，我也能教你做一个
-
-https://mp.weixin.qq.com/s/ajajJ9yJZsOy4Vc0ULBxXg
-
-国际象棋版AlphaZero出来了诶，还开源了Keras实现
-
-https://zhuanlan.zhihu.com/p/41814142
-
-从源码解密AlphaGo Zero背后基本原理
-
-https://www.ifanr.com/630602
-
-AlphaGo的棋局，与人工智能有关，与人生无关
-
-https://mp.weixin.qq.com/s/J0w6kzzdKTbsaiZitbQdoA
-
-达观数据：一文详解AlphaGo原理
-
-https://mp.weixin.qq.com/s/BBQ54HHrFiqxXkC-EI6ELw
-
-Science封面：AlphaZero达成终极进化体，史上最强棋类AI降临！
-
-https://mp.weixin.qq.com/s/Pgw_xaCNl_kCPCg8NFzUBQ
-
-人类没法下了！DeepMind贝叶斯优化调参AlphaGo，自弈胜率大涨16.5%
-
-https://mp.weixin.qq.com/s/eE3oL6c5zHmTglHE-dgBvg
-
-详解AlphaGo到AlphaGo Zero！
-
-https://mp.weixin.qq.com/s/aAF0Gr7yEPkHRLASecJipw
-
-百度正用谷歌AlphaGo，解决一个比围棋更难的问题
-
-# MARL
-
-Multi-agent Reinforcement Learning(MARL)，一般被称为多智能体强化学习。与之相对的则是Single-agent Reinforcement Learning(SARL)。
-
-以下主要参考了如下文章：
-
-https://zhuanlan.zhihu.com/p/39037444
-
-多智能体强化学习笔记 01
-
-https://zhuanlan.zhihu.com/p/43579796
-
-多智能体强化学习笔记 02
-
-论文：
-
-《Multi-agent reinforcement learning: An overview》
-
-《Game Theory and Multi-agent Reinforcement Learning》
-
-我们使用如下示例，探讨一下**什么是MARL？**
-
-![](/images/img3/MARL.png)
-
-上图是两个智能体1、2将金条（object）搬运回家的例子。这根金条需要两个人一人抬着一边才能扛回家。
-
-要想把金条扛回家，小红和小蓝必须先绕过障碍物，然后每个人到达金条的一边，扛起金条后，两人还得绕开家门口的障碍物，这样才能将金条扛回家。
-
-从上面的问题可以看出，MARL至少应该包括如下几个要素：
-
-- 在多智能体系统中至少有两个智能体。
-
-- 智能体之间存在着一定的关系，如合作关系（如本例），竞争关系（如多人游戏），或者同时存在竞争与合作的关系。
-
-- 每个智能体最终所获得的回报不仅仅与自身的动作有关系，还跟对方的动作有关系。如本例中每个智能体要想获得回报，必须是金条被两个智能体一起搬回家。

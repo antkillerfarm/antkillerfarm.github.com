@@ -267,4 +267,4 @@ https://mp.weixin.qq.com/s/QJOfh5gJReQTimu-mAzexg
 
 https://mp.weixin.qq.com/s/6aXcum-FAbvcGcOrkSC4vQ
 
-为什么 Kafka 会成为微服务架构的事实标准？
+为什么Kafka会成为微服务架构的事实标准？

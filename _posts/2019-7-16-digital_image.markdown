@@ -366,6 +366,14 @@ https://mp.weixin.qq.com/s/vOJPxzH_1SUyXzNeE85zHQ
 
 编译器入门：没有siri的那些年，我们如何实现人机对话？
 
+https://zhuanlan.zhihu.com/p/66793637
+
+A Tour to LLVM IR（上）
+
+https://zhuanlan.zhihu.com/p/66909226
+
+A Tour to LLVM IR（下）
+
 # 边缘计算
 
 ![](/images/img2/edge_computing.png)

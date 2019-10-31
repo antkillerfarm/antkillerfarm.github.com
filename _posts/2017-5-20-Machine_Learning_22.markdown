@@ -158,7 +158,7 @@ https://www.zhihu.com/question/264892967
 
 深度学习中loss和accuracy的关系?
 
-https://mp.weixin.qq.com/s/TnR0lDXZbs2hXlwhshp-Vg
+https://zhuanlan.zhihu.com/p/82199561
 
 深度度量学习中的损失函数
 

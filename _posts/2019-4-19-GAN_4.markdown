@@ -260,6 +260,10 @@ https://mp.weixin.qq.com/s/VU06PqZ4OaLxpjLwIObWZw
 
 加强版CycleGAN！贾佳亚等提出卡通图与真实人脸转换模型，看女神突破次元壁长啥样
 
+https://mp.weixin.qq.com/s/eT7K78e2xKkTqmz67pqmEg
+
+炫酷的图像转换：从pix2pix到CycleGAN
+
 # StarGAN
 
 论文：

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  AI游戏, 博弈论
+title:  AI游戏
 category: resource 
 ---
 
@@ -29,6 +29,8 @@ CFR（Counterfactual Regret Minimization）
 ![](/images/img3/AI_game.png)
 
 目前大部分完美信息游戏（如国际象棋、围棋等）以及信息集平均大小较小的不完美信息游戏（如两人德州扑克和多人德州扑克等）都有了相当好的解决方法。然而，对于桥牌和麻将这类含有大量隐藏信息的不完美信息游戏，需要我们发明全新的方法论，才能有所突破。
+
+![](/images/img3/AI_problem.png)
 
 ## 资料
 
@@ -309,21 +311,3 @@ OpenAI智能体上演捉迷藏攻防大战，自创套路与反套路
 https://mp.weixin.qq.com/s/pejkWw0mqKMAErfj3u_Vpg
 
 我在哥大研究网游开箱氪金建模
-
-# 博弈论
-
-https://www.cnblogs.com/steven-yang/tag/博弈论/
-
-一个博弈论的专栏
-
-https://mp.weixin.qq.com/s/5o3m8RLwYkZJEhqNxOLq_A
-
-不对称多代理博弈中的博弈理论解读
-
-https://mp.weixin.qq.com/s/D9bRjYVJOMT0Jkh59XZ-Rg
-
-DeepMind于Nature子刊发文提出非对称博弈的降维方法
-
-https://mp.weixin.qq.com/s/1t6WuTQpltMtP-SRF1rT4g
-
-当博弈论遇上机器学习：一文读懂相关理论

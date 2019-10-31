@@ -411,3 +411,7 @@ https://mp.weixin.qq.com/s/mcHYTjIDnVBA58-1h8BLdA
 https://mp.weixin.qq.com/s/bV7g9ugGmFjojGDMIc_kpQ
 
 Python中的元编程：一个关于修饰器和元类的简单教程
+
+https://mp.weixin.qq.com/s/WZDuxH-SYZlD6DED539J6Q
+
+从Python代码到APP，你只需要一个小工具

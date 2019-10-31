@@ -170,6 +170,14 @@ https://mp.weixin.qq.com/s/b_QqUxFbQ70xmsxGMtoaDQ
 
 网络图模型知识点综述
 
+https://mp.weixin.qq.com/s/ceC1_39cmpqYOoHsu-4sCQ
+
+HEC-Montreal唐建博士：图神经网络推理
+
+https://mp.weixin.qq.com/s/emPDgw_c68JgbpYnem4JvA
+
+一文读懂简化的图卷积网络GCN（SGC）
+
 # 自动求导
 
 DL发展到现在，其基本运算单元早就不止CNN、RNN之类的简单模块了。针对新运算层出不穷的现状，各大DL框架基本都实现了自动求导的功能。

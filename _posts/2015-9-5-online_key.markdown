@@ -246,6 +246,10 @@ https://mp.weixin.qq.com/s/bUtu2nTs0bybnTvk-iLt6Q
 
 GTS来了！阿里微服务架构下的分布式事务解决方案
 
+https://mp.weixin.qq.com/s/OMnb6sBkxo1RpmkqcgymIA
+
+一文详解微服务架构
+
 # Jetty
 
 Jetty是一个Java Servlet容器。官网：

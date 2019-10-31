@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  强化学习（十）——Exploration & Exploitation, 模仿学习, Inverse Reinforcement Learning
+title:  强化学习（十）——Exploration & Exploitation, Inverse Reinforcement Learning, 博弈论
 category: RL 
 ---
 
@@ -80,28 +80,6 @@ Parameter Exploration的优点：得到基于某一策略的一段持续性的�
 
 缺点：对个体曾经到过的状态空间毫无记忆，也就是个体也许会进入一个之前曾经进入过的状态而并不知道其曾到过该状态，不能利用已经到过这个状态这个信息。
 
-# 模仿学习
-
-https://zhuanlan.zhihu.com/p/27935902
-
-机器人学习Robot Learning之模仿学习Imitation Learning的发展
-
-https://zhuanlan.zhihu.com/p/25688750
-
-模仿学习（Imitation Learning）完全介绍
-
-https://mp.weixin.qq.com/s/naq73D27vsCOUBperKto8A
-
-从监督式到DAgger，综述论文描绘模仿学习全貌
-
-https://mp.weixin.qq.com/s/LNNqp2KsEAljG26hY43mUw
-
-ICML2018 模仿学习教程
-
-https://mp.weixin.qq.com/s/f9vSgH1HQwGXBDb0UGHQyQ
-
-深度学习进阶之无人车行为克隆
-
 # Inverse Reinforcement Learning
 
 逆强化学习问题定义：
@@ -146,58 +124,50 @@ https://zhuanlan.zhihu.com/p/32502503
 
 CS 294：IRL
 
-# RL与神经科学
+# 博弈论
 
-Pavlov Model（1901）
+## 概述
 
-Rescorla-Wagner Model（1972）
+从宏观上可以将博弈论（game theory）研究的问题分为：合作博弈和非合作博弈。现代狭义的博弈论一般是指非合作博弈。
 
-Thorndike’s Puzzle Box（1910）
+非合作博弈根据参与博弈的参与人做决策的先后顺序可以分为：静态博弈和动态博弈。
 
-参考：
+静态博弈是指参与人同时做决策，常用标准型（normal form）表述其策略。如两人零和博弈等。
 
-https://zhuanlan.zhihu.com/p/24437724
+动态博弈是指参与人有先后顺序做决策，且后者能观察到前者所做的决策，如围棋等。常用扩展型（extensive form）来表述其策略，常用的扩展型表述为博弈树。
 
-学习理论之Rescorla-Wagner模型
+非合作博弈根据参与人是否已知对方的信息，可以分为：完美信息博弈和不完美信息博弈。
 
-# RL参考资源
+完美信息博弈是指：参与人对相关信息完全已知，如棋类游戏。玩家知道对方棋子所在的位置。
 
-https://mp.weixin.qq.com/s/Fn1s9Ia8L1ckgn6iP24FhQ
+不完美信息博弈是指：参与人对相关信息并不完全已知。如牌类游戏，玩家并不知道对手的牌是什么。
 
-如何让神经网络具有好奇心
+## 囚徒困境
 
-https://mp.weixin.qq.com/s/PBf-YrkhwhPYXuiOGyahxQ
+![](/images/img3/prisoner_dilemma.jpg)
 
-强化学习遭遇瓶颈！分层RL将成为突破的希望
+上图表示的是囚徒困境（prisoner's dilemma）。参与者为：囚徒A和囚徒B。动作空间为：{坦白、抵赖}，回报函数由矩阵给出。即：
 
-https://zhuanlan.zhihu.com/p/58815288
+当囚徒A和囚徒B都坦白时，囚徒A被判处3年有期徒刑、囚徒B也被判处3年有期徒刑。
 
-强化学习之值函数学习
+当囚徒A坦白、囚徒B抵赖时，囚徒A被当场释放、囚徒B被判处5年有期徒刑
 
-https://mp.weixin.qq.com/s/8Cqknze_iosz6Z6cqnuK5w
+当囚徒A抵赖、囚徒B坦白时，囚徒A被判处5年有期徒刑、囚徒B当场释放
 
-谷歌提出强化学习新算法SimPLe，模拟策略学习效率提高2倍
+当囚徒A抵赖、囚徒B抵赖时，囚徒A和B都被判处1年有期徒刑。
 
-https://mp.weixin.qq.com/s/hKGS4Ek5prwTRJoMCaxQLA
+很明显，如果两个囚徒都选择抵赖，那么它们总的惩罚最低。然而，选择抵赖对于囚徒个人来说是理性的吗？
 
-强化学习Exploration漫游
+答案是：选择抵赖对于个人来说并不理性。因为，就个人而言，囚徒并不知道另外一个囚徒选择的策略是什么。在这种情况下，选择坦白对于个人来说是理性的，而且是最优的。
 
-https://zhuanlan.zhihu.com/p/65116688
+即，不管其他囚徒选择什么动作，选择坦白总比选择抵赖要优。
 
-值分布强化学习（01）
+比如，对于囚徒A来说：
 
-https://zhuanlan.zhihu.com/p/65364484
+当囚徒B选择坦白时，如果囚徒A选择坦白被判处3年有期徒刑；而这时如果A选择抵赖则被判处5年有期徒刑，所以这时囚徒A选择坦白要好。
 
-值分布强化学习（02）
+当囚徒B选择抵赖时，如果囚徒A选择坦白，则当场释放；而这时如果A选择抵赖，则被判处1年有期徒刑，所以这时囚徒A选择坦白要好。
 
-https://zhuanlan.zhihu.com/p/62363784
+综合这两种情况，对于囚徒A不管囚徒B如何选择，选择坦白都是最好的。
 
-强化学习之策略搜索
-
-https://mp.weixin.qq.com/s/j9Cs5M9gyITu2u_XDkKm-g
-
-Policy Gradient——一种不以loss来反向传播的策略梯度方法
-
-https://mp.weixin.qq.com/s/x6gKTuYIx8y25KX-fCc5bA
-
-蒙特卡洛梯度估计方法（MCGE）简述
+在该例中（坦白，坦白）是占优策略（dominated strategy）。所谓占优策略是指如果一方在任何情况下从某种策略中得到的回报均大于从另外一种策略得到的回报，那么我们称为这种策略为占优策略。

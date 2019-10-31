@@ -403,3 +403,7 @@ Pytorch有什么节省内存（显存）的小技巧？
 https://zhuanlan.zhihu.com/p/76638962
 
 Pytorch分布式训练
+
+https://mp.weixin.qq.com/s/S1dRfmqpiLzR3tnsocmfvw
+
+Pytorch中的数据增强方式最全解释

@@ -220,6 +220,10 @@ https://blog.csdn.net/gsww404
 
 一个DRL的专栏
 
+https://zhuanlan.zhihu.com/c_1121374124756480000
+
+一个DRL的专栏
+
 # 比赛
 
 https://github.com/seungjaeryanlee/awesome-rl-competitions

@@ -87,11 +87,15 @@ https://www.zhihu.com/question/346999432
 如何评价Google宣称率先实现量子霸权？
 
 >所谓的quantum supremacy，有人翻译为量子优势也有人翻译为量子霸权，一般指的是量子计算在某一个问题上，可以解决经典计算机不能解决的问题或者是比经典计算机有显著的加速(一般是指数加速)。   
->量子霸权是量子系统对其对应的经典系统的霸权, 不是什么国与国, 公司和公司上面的霸权。
+>量子霸权是量子系统对其对应的经典系统的霸权，不是什么国与国，公司和公司上面的霸权。
 
 http://www.iasi.cnr.it/aussois/web/uploads/2019/slides/nannicinig.pdf
 
 An introduction to quantum computing, without the physics
+
+https://mp.weixin.qq.com/s/xgF61ageCtk4hZMsQqgpEg
+
+为什么Google的量子霸权纯属忽悠大众
 
 # 遗传算法 & 进化算法
 
