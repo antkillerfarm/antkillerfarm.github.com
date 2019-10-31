@@ -88,9 +88,7 @@ https://mp.weixin.qq.com/s/cBj6n8BlqLjt8M8N4Tc5qQ
 
 1.GAN的目的是在高维非凸的参数空间中找到纳什均衡点（Nash equilibrium），GAN的纳什均衡点是一个鞍点。而SGD只会找到局部极小值，所以GAN中的优化器不常用SGD。
 
-![](/images/img3/Nash.png)
-
->John Nash，1928～2015，数学家、经济学家。Princeton博士（1950），Princeton教授。主要研究博弈论、微分几何学和偏微分方程。诺贝尔经济学奖获得者（1994）。奥斯卡金像奖电影《美丽心灵》男主角原型。
+纳什均衡的相关概念参见《强化学习（十）》。
 
 ## 参考
 
