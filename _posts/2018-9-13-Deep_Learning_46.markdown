@@ -64,6 +64,22 @@ https://mp.weixin.qq.com/s/JIoTsadw4JBkr0e40RwVQQ
 
 这篇论文开源的车牌识别系统打败了目前最先进的商业软件
 
+https://mp.weixin.qq.com/s/e-vNkSlIpa8Qbsre9kjOkg
+
+用于提高车牌识别的单幅噪声图像去噪和校正
+
+https://mp.weixin.qq.com/s/fqpZ8EHgiNupXumvTMSecw
+
+北大团队研发“车脸”识别系统，不看车牌看外观特征实现精确识别
+
+https://mp.weixin.qq.com/s/Shz6BmsOrtbEFtoJRSkl9A
+
+简单车牌检测
+
+https://mp.weixin.qq.com/s/iwPI8g2JwabwiCO8kfw8Hw
+
+用开源工具DIY车牌识别系统
+
 ## CRNN
 
 CRNN是白翔小组的作品。
@@ -371,3 +387,7 @@ https://mp.weixin.qq.com/s/ENvoZ4ZPKT1HXaQjD9VgSA
 https://mp.weixin.qq.com/s/sigPeclXz12NUk_nX8TZ-A
 
 文档分析与识别技术回顾与反思
+
+https://mp.weixin.qq.com/s/4WXb6igvxZP_XoIHl4AiQA
+
+ESIR:一种基于迭代矫正的端到端场景文本识别方法

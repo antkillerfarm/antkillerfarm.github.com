@@ -176,7 +176,7 @@ $$\beta_2=-1, h(\beta_2)=h_0-h_1, x(\beta_2)=x_0-x_1$$
 
 $$s(\beta_0)=h(\beta_0)x(\beta_0),s(\beta_1)=h(\beta_1)x(\beta_1),s(\beta_2)=h(\beta_2)x(\beta_2)$$
 
-有了3个已知点，就可以应用Lagrange插值了（Lagrange插值的内容可参见《机器学习（一）》）：
+有了3个已知点，就可以应用Lagrange插值了（Lagrange插值的内容可参见《机器学习（二）》）：
 
 $$\begin{align}s(p)&=s(\beta_0)\frac{(p-\beta_1)(p-\beta_2)}{(\beta_0-\beta_1)(\beta_0-\beta_2)}+s(\beta_1)\frac{(p-\beta_0)(p-\beta_2)}{(\beta_1-\beta_0)(\beta_1-\beta_2)}+s(\beta_2)\frac{(p-\beta_0)(p-\beta_1)}{(\beta_2-\beta_0)(\beta_2-\beta_1)}
 \\&=s(\beta_0)+p\left(\frac{s(\beta_1)-s(\beta_2)}{2}\right)+p^2\left(-s(\beta_0)+\frac{s(\beta_1)+s(\beta_2)}{2}\right)

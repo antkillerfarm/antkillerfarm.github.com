@@ -52,6 +52,10 @@ https://mp.weixin.qq.com/s/SPfa17p3QetZXCC01DwmQA
 
 解密BERT
 
+https://zhuanlan.zhihu.com/p/72805778
+
+BERT的演进和应用
+
 # Attention进阶
 
 https://mp.weixin.qq.com/s/ZSzHOu6uowRSoWrqB7vOaQ

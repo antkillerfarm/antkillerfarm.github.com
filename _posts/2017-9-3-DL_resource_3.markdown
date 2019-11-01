@@ -12,10 +12,6 @@ https://mp.weixin.qq.com/s/gsHu7vNs9cm1tH2nz9mmMg
 
 推荐一个不错的边缘检测网络：HED
 
-https://mp.weixin.qq.com/s/fqpZ8EHgiNupXumvTMSecw
-
-北大团队研发“车脸”识别系统，不看车牌看外观特征实现精确识别
-
 https://mp.weixin.qq.com/s/7zFcWAmtpW2S_PVYru_lxg
 
 眼见未必为实--漫谈图像隐写术
@@ -138,10 +134,6 @@ https://mp.weixin.qq.com/s/WNJD8ZjnSVsE91H8Hks4vA
 
 手把手教你从零搭建深度学习项目
 
-https://mp.weixin.qq.com/s/Shz6BmsOrtbEFtoJRSkl9A
-
-简单车牌检测
-
 https://mp.weixin.qq.com/s/QjoxqCpN5JDroBowWmVk1Q
 
 边玩边入门深度学习，我们帮你找了10个简易应用demo
@@ -169,10 +161,6 @@ https://mp.weixin.qq.com/s/-39_7SbRFChDOOpcpJjVMQ
 https://mp.weixin.qq.com/s/ZG_PShoIys6oiPBEN7Pwuw
 
 无需基础知识，使用JavaScript构建你的第一个神经网络
-
-https://mp.weixin.qq.com/s/iwPI8g2JwabwiCO8kfw8Hw
-
-用开源工具DIY车牌识别系统
 
 https://mp.weixin.qq.com/s/ObIYpiH7MLZEi5XzXdGBYg
 

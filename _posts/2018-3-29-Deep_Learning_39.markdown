@@ -337,3 +337,7 @@ https://mp.weixin.qq.com/s/5qC70NoTBQ95vjI4cGl66g
 https://mp.weixin.qq.com/s/Wn-5VD2-YWwVUWCMEy-lvw
 
 AI碰撞短视频，从推荐到直播，快手探索了这些ML新思路
+
+https://mp.weixin.qq.com/s/cuejj8atJsbSDae9xnhsxA
+
+锁定视频中的目标：港大提出运动注意力检测方法
