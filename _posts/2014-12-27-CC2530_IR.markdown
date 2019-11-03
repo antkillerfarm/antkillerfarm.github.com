@@ -230,6 +230,10 @@ http://blog.csdn.net/xiaojsj111/article/details/30482001
 
 # 负载均衡
 
+正向代理，“它代理的是客户端，代客户端发出请求”。
+
+反向代理，“它代理的是服务端，代服务端接收请求”。
+
 http://blog.csdn.net/gzh0222/article/details/8540604
 
 lvs、haproxy、nginx负载均衡的比较分析
@@ -249,3 +253,7 @@ Nginx基本功能极速入门
 https://mp.weixin.qq.com/s/3KZ99d94yqRDxEByn7nGWg
 
 QPS比Nginx提升60%，阿里Tengine负载均衡算法揭秘
+
+https://www.cnblogs.com/wcwnina/p/8728391.html
+
+Nginx相关介绍

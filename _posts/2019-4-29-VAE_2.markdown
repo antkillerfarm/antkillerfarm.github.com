@@ -92,6 +92,12 @@ VAE本质上就是在我们常规的自编码器的基础上，对encoder的结�
 
 $$\mathcal{L}_{\mu,\sigma^2}=\frac{1}{2} \sum_{i=1}^d\Big[\big(\mu_{(i)}-\mu^Y_{(i)}\big)^2 + \sigma_{(i)}^2 - \log \sigma_{(i)}^2 - 1\Big]$$
 
+参考：
+
+https://mp.weixin.qq.com/s/1EvILWkBHKu2RV_xBuU8VQ
+
+条件变分自编码器（CVAE）
+
 ## VAE的另一个介绍
 
 以下章节的内容主要摘自：
