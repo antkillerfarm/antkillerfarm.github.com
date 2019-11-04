@@ -56,6 +56,10 @@ https://zhuanlan.zhihu.com/p/72805778
 
 BERT的演进和应用
 
+https://mp.weixin.qq.com/s/9YuBY0wLLVQ8ZrT9fiNICA
+
+语音版BERT？滴滴提出无监督预训练模型，中文识别性能提升10%以上
+
 # Attention进阶
 
 https://mp.weixin.qq.com/s/ZSzHOu6uowRSoWrqB7vOaQ
