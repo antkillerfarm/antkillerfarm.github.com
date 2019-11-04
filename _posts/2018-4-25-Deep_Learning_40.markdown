@@ -261,3 +261,7 @@ https://zhuanlan.zhihu.com/p/85383077
 https://mp.weixin.qq.com/s/kl01FypFQAmG_TiMTNnvNw
 
 旷视研究院提出VANet：具备视角感知力的车辆重识别网络
+
+https://mp.weixin.qq.com/s/nqRJQ6K6e1TC6IUa57dw0g
+
+基于自然语言的跨模态行人ReID的SOTA方法简述

@@ -306,3 +306,15 @@ https://github.com/jgilfelt/android-viewbadger.git
 https://blog.csdn.net/u011387817/article/details/94607919
 
 Android自定义Drawable第十四式之百步穿杨
+
+https://mp.weixin.qq.com/s/2Lsj3zLY12h3rDbK5IwzaA
+
+真香！阿里工程师的一段代码让我看饿了（水波纹特效）
+
+https://www.html5tricks.com/
+
+一个HTML5的网站，包含教程、示例等。
+
+http://uusama.com/643.html
+
+canvas实现水波纹效果

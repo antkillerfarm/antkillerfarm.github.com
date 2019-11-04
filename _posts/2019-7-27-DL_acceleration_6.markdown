@@ -125,3 +125,11 @@ https://mp.weixin.qq.com/s/ckn4RERri-mfqLVPDRHGog
 https://mp.weixin.qq.com/s/wwtsqjjUGt7MTEWDc5bSvQ
 
 一种无需原始训练数据的Teacher-Student模型压缩方法
+
+https://mp.weixin.qq.com/s/9dHRO80mMTGdRHaa0AdihQ
+
+无需数据集的Student Networks
+
+https://mp.weixin.qq.com/s/hv2DKmF0hhHKWXzVemoNKw
+
+借鸡生蛋，无需数据的知识蒸馏

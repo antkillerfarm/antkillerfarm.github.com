@@ -376,6 +376,16 @@ https://zhuanlan.zhihu.com/p/74249758
 
 陈天奇：机器学习科研的十年
 
+# 知名AI公司技术主页
+
+http://uber.ai/
+
+Uber AI Labs
+
+https://deepmind.com/research/
+
+Deepmind
+
 ## 有用的blog
 
 http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/

@@ -337,3 +337,7 @@ https://blog.csdn.net/CoderPai/article/details/91615739
 https://blog.csdn.net/CoderPai/article/details/92018343
 
 随机森林的实现与解释
+
+https://mp.weixin.qq.com/s/jj3BtmnWRAwCS56ZU3ZXZA
+
+最常见核心的决策树算法—ID3、C4.5、CART

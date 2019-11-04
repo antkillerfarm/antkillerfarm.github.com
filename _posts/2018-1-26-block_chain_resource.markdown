@@ -14,6 +14,10 @@ https://mp.weixin.qq.com/s/hn1a9XZSu_lL5TPgq5ln2A
 
 区域链相关资料汇总
 
+https://github.com/LiuBoyu/blockchain
+
+区块链参考资源
+
 https://mp.weixin.qq.com/s/UvTc1ftOZq6Q57ksEYgzKA
 
 普通程序员如何快速上手区块链？这个课程的目录很有参考意义。
@@ -390,12 +394,6 @@ https://mp.weixin.qq.com/s/gHvvMG7D_W0M2RFntyRaDw
 
 车载抬头显示AR HUD成像技术大解密
 
-# 知名AI公司技术主页
+https://mp.weixin.qq.com/s/qOnMNbA9C7bcwZ6IvOxyCA
 
-http://uber.ai/
-
-Uber AI Labs
-
-https://deepmind.com/research/
-
-Deepmind
+一组动图看懂3D打印原理

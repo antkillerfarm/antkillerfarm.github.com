@@ -254,6 +254,8 @@ GAN的变种（或者说改进）主要分为两大类：
 
 **1.修改Loss。**这一类的典型就是前述的WGAN。Sebastian Nowozin提出的f-GAN，对这一类改进进行了总结。
 
+![](/images/img3/GAN_6.png)
+
 参见：
 
 https://mp.weixin.qq.com/s/f93aCYrxlBFhRn0bgPDiTg
@@ -361,6 +363,10 @@ https://zhuanlan.zhihu.com/p/70033932
 https://zhuanlan.zhihu.com/p/88862044
 
 万字综述之生成对抗网络
+
+https://mp.weixin.qq.com/s/oEnQPWs5WFak_qwajYKq3A
+
+在图像生成领域里，GAN这一大家族是如何生根发芽的
 
 ## GAN的理论解释
 
