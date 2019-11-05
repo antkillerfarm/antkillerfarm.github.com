@@ -368,3 +368,7 @@ docker系列学习（一）：整体认识
 https://mp.weixin.qq.com/s/Ex1AOKGlp2ag6CQTc3rSkA
 
 您想要的docker环境来了！
+
+https://mp.weixin.qq.com/s/HFW3oiGIcYJdaKGjIahXjA
+
+不要把大型JAR包放进Docker镜像

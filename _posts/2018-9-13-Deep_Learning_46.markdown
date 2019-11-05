@@ -391,3 +391,7 @@ https://mp.weixin.qq.com/s/sigPeclXz12NUk_nX8TZ-A
 https://mp.weixin.qq.com/s/4WXb6igvxZP_XoIHl4AiQA
 
 ESIR:一种基于迭代矫正的端到端场景文本识别方法
+
+https://mp.weixin.qq.com/s/MDxltLKP-SQf_31Zp1RL8A
+
+文本识别新王者CharNet：卷积字符网络

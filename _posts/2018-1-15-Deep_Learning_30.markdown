@@ -178,6 +178,14 @@ https://mp.weixin.qq.com/s/emPDgw_c68JgbpYnem4JvA
 
 一文读懂简化的图卷积网络GCN（SGC）
 
+https://mp.weixin.qq.com/s/IHXDqlU1dURrwAIwps50_g
+
+新加坡国立大学：基于图学习与推理的推荐系统，附133页ppt
+
+https://mp.weixin.qq.com/s/olt_i6JxfslFSdbz0Dx4oA
+
+用于深度时空图建模的Graph WaveNet
+
 # 自动求导
 
 DL发展到现在，其基本运算单元早就不止CNN、RNN之类的简单模块了。针对新运算层出不穷的现状，各大DL框架基本都实现了自动求导的功能。

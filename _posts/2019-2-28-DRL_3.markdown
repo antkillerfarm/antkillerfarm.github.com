@@ -131,6 +131,10 @@ https://github.com/Curt-Park/rainbow-is-all-you-need
 
 手把手教你从DQN到Rainbow
 
+https://zhuanlan.zhihu.com/p/36375292
+
+最前沿：当我们以为Rainbow就是Atari游戏的巅峰时，Ape-X出来把Rainbow秒成了渣！
+
 # A2C & A3C
 
 Actor-Critic一般简称AC算法。针对它的一般用法参见《强化学习（八）》。
@@ -277,7 +281,7 @@ Noisy在DRL中的用法主要有：
 
 ## DDPG
 
-Deepmind在2016年提出了DDPG。从通俗角度看：**DDPG=DPG+A2C+Double DQN**。
+Deepmind在2016年提出了DDPG（Deep Deterministic Policy Gradient）。从通俗角度看：**DDPG=DPG+A2C+Double DQN**。
 
 ![](/images/img3/DDPG.png)
 
@@ -296,3 +300,9 @@ Deepmind在2016年提出了DDPG。从通俗角度看：**DDPG=DPG+A2C+Double DQN
 当然，DDPG实际的步骤远比示意图复杂的多，可参见下图，这里不再赘述。
 
 ![](/images/img3/DDPG.jpg)
+
+DDPG还有一个分布式版本。
+
+论文：
+
+《Distributed Distributional Deterministic Policy Gradients》

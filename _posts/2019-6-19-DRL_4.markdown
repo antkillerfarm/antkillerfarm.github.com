@@ -96,6 +96,33 @@ https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/6
 
 Distributed Proximal Policy Optimization(DPPO)
 
+# IMPALA
+
+论文：
+
+《IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures》
+
+代码：
+
+https://github.com/deepmind/lab/tree/master/game_scripts/levels/contributed/dmlab30
+
+
+![](/images/img3/IMPALA.png)
+
+
+
+![](/images/img3/IMPALA_2.png)
+
+参考：
+
+https://zhuanlan.zhihu.com/p/56043646
+
+AlphaStar之IMPALA
+
+https://mp.weixin.qq.com/s/1zJyw67B6DqsHEJ3avbsfQ
+
+DeepMind推出分布式深度强化学习架构IMPALA，让一个Agent学会多种技能
+
 # reward modeling
 
 ![](/images/img2/reward_modeling.jpg)
@@ -315,41 +342,3 @@ https://github.com/Tencent/PhoenixGo
 https://mp.weixin.qq.com/s/tJDmxsuS1QigYS75ZIdzRA
 
 微信团队开源围棋AI技术PhoenixGo，复现AlphaGo Zero论文
-
-## 参考
-
-https://mp.weixin.qq.com/s/Sfv-jzQAkN0PsZOGZUQhkQ
-
-AlphaGo Zero横空出世，DeepMind Nature论文解密不使用人类知识掌握围棋
-
-https://mp.weixin.qq.com/s/oAxouYX7-wDC5okbu--Wuw
-
-Nature重磅：人工智能从0到1, 无师自通完爆阿法狗100-0
-
-https://zhuanlan.zhihu.com/p/30262872
-
-关于AlphaGo Zero
-
-https://zhuanlan.zhihu.com/p/30263585
-
-DeepMind新一代围棋程序AlphaGo Zero再次登上Nature
-
-https://www.zhihu.com/question/66861459
-
-如何评价DeepMind发表在Nature上的AlphaGo Zero？
-
-http://www.alphago-games.com/
-
-AlphaGo的棋谱
-
-https://deepmind.com/blog/alphago-zero-learning-scratch/
-
-AlphaGo Zero官方声明
-
-https://zhuanlan.zhihu.com/mathNote
-
-某牛的专栏，主要讲自制AlphaGo
-
-https://mp.weixin.qq.com/s/DC9QqHdWT0xFnowEBuJDbw
-
-自动化所解读“深度强化学习”：从AlphaGo到AlphaGoZero

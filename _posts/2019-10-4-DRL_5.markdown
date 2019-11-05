@@ -6,6 +6,44 @@ category: DRL
 
 # AlphaGo（续）
 
+## 参考
+
+https://mp.weixin.qq.com/s/Sfv-jzQAkN0PsZOGZUQhkQ
+
+AlphaGo Zero横空出世，DeepMind Nature论文解密不使用人类知识掌握围棋
+
+https://mp.weixin.qq.com/s/oAxouYX7-wDC5okbu--Wuw
+
+Nature重磅：人工智能从0到1, 无师自通完爆阿法狗100-0
+
+https://zhuanlan.zhihu.com/p/30262872
+
+关于AlphaGo Zero
+
+https://zhuanlan.zhihu.com/p/30263585
+
+DeepMind新一代围棋程序AlphaGo Zero再次登上Nature
+
+https://www.zhihu.com/question/66861459
+
+如何评价DeepMind发表在Nature上的AlphaGo Zero？
+
+http://www.alphago-games.com/
+
+AlphaGo的棋谱
+
+https://deepmind.com/blog/alphago-zero-learning-scratch/
+
+AlphaGo Zero官方声明
+
+https://zhuanlan.zhihu.com/mathNote
+
+某牛的专栏，主要讲自制AlphaGo
+
+https://mp.weixin.qq.com/s/DC9QqHdWT0xFnowEBuJDbw
+
+自动化所解读“深度强化学习”：从AlphaGo到AlphaGoZero
+
 https://mp.weixin.qq.com/s/uZtaxRwROCqYmL2k6Muxaw
 
 从阿尔法狗元(AlphaGo Zero)的诞生看终极算法的可能性
@@ -271,10 +309,6 @@ https://mp.weixin.qq.com/s/k0l2uoik-Z9aA9zax7AoZg
 https://zhuanlan.zhihu.com/p/55781614
 
 AlphaStar背后的机器学习原理
-
-https://zhuanlan.zhihu.com/p/56043646
-
-AlphaStar之IMPALA
 
 https://mp.weixin.qq.com/s/XljE82cJZfFOgf2KrXWSKA
 

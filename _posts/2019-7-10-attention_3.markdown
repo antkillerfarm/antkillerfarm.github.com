@@ -176,6 +176,10 @@ https://mp.weixin.qq.com/s/i82wGiSOlA4l4ozimrE2gg
 
 加速BERT模型有多少种方法？从架构优化、模型压缩到模型蒸馏最新进展详解！
 
+https://mp.weixin.qq.com/s/R2MW_5kskvXyuSOh7kfJaA
+
+ALBERT：更轻更快的NLP预训练模型
+
 ## 参考
 
 https://www.zhihu.com/question/298203515

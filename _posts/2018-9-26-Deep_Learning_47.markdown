@@ -369,3 +369,11 @@ https://mp.weixin.qq.com/s/QtYNb1bVnWghNFK6fbynLw
 https://mp.weixin.qq.com/s/smAlLm-JZn_s2utSCVk7ig
 
 归一化(Normalization)方法如何进行自动学习和配置
+
+https://mp.weixin.qq.com/s/E0ULyXGz3UEcD0cIg-XkNA
+
+优化方法可以进行自动搜索学习吗？
+
+https://mp.weixin.qq.com/s/Nmkcy2nBczUccwIdMJiH_A
+
+MaskConnect: 探究网络结构搜索中的Module间更好的连接

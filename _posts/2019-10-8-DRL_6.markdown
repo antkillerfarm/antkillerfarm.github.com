@@ -256,6 +256,14 @@ https://mp.weixin.qq.com/s/e6QOz-MQSn7n53EPtpw64w
 
 DeepMind强化学习综述：她可以很快，但快从慢中来
 
+https://zhuanlan.zhihu.com/p/72642285
+
+基于模型的强化学习论文合集
+
+https://zhuanlan.zhihu.com/p/77976582
+
+强化学习并行训练论文合集
+
 https://mp.weixin.qq.com/s/sHP03DAeZvdBxwVPuSNRPg
 
 如何丝滑地入门神经网络？写个AI赛车游戏，只训练4代就能安全驾驶
@@ -336,10 +344,6 @@ https://mp.weixin.qq.com/s/4qeHfU9GS4aDWOHsu4Dw2g
 
 记忆增强蒙特卡洛树搜索细节解读
 
-https://mp.weixin.qq.com/s/1zJyw67B6DqsHEJ3avbsfQ
-
-DeepMind推出分布式深度强化学习架构IMPALA，让一个Agent学会多种技能
-
 https://mp.weixin.qq.com/s/xJ_g3BvbM-WaIyLthHdhEw
 
 DeepMind发布通用强化学习新范式，自主机器人可学会任何任务
@@ -391,10 +395,6 @@ https://mp.weixin.qq.com/s/oOslkEklaZSbRb8eDDCRBw
 https://mp.weixin.qq.com/s/DNT9rMynbN4Th0AVDHeY_w
 
 BAIR提出人机合作新范式：教你如何高效安全地在月球着陆
-
-https://zhuanlan.zhihu.com/p/36375292
-
-最前沿：当我们以为Rainbow就是Atari游戏的巅峰时，Ape-X出来把Rainbow秒成了渣！
 
 https://mp.weixin.qq.com/s/KqLCTSYk1C0wYpJw-hpc1g
 

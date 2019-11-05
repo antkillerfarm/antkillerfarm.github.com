@@ -401,15 +401,16 @@ for index, item in enumerate(list):
     print(index, item)
 {% endhighlight %}
 
-## 时间、日期数据的格式处理
-
-时间数据上的格式处理，主要指strftime和strptime函数。其中前者可将时间数据转换成指定格式的字符串，而后者则将字符串转换成时间数据。
+## for - else
 
 {% highlight python %}
-import time
-a = "2013-10-10 23:40:00"
-timeArray = time.strptime(a, "%Y-%m-%d %H:%M:%S")
-otherStyleTime = time.strftime("%Y/%m/%d %H:%M:%S", timeArray)
+for i in [1,2,3,4]:
+    if i > 2:
+        print(i)
+else:
+    print(i, '我是else')
 {% endhighlight %}
 
-日期方面也是类似的做法。
+## 三元表达式
+
+`print('y是一个负数' if y < 0 else 'y是一个非负数')`

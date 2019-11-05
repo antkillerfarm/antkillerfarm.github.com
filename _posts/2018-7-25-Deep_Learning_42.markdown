@@ -58,6 +58,10 @@ https://mp.weixin.qq.com/s/cG0TDIZ3z4lUEQb_N1ysbg
 
 使用迁移学习构建顶尖会话AI
 
+https://mp.weixin.qq.com/s/VGdlOlQh1_4FFTAuUHR_VA
+
+迁移学习中如何利用权值调整数据分布？DATL、L2TL两大方法解析
+
 # 深度ISP
 
 ## 数据集
