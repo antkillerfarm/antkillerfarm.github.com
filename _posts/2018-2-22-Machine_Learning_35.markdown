@@ -260,7 +260,6 @@ https://zhuanlan.zhihu.com/p/69246361
 
 基于query的排序
 
-
 # 运筹学
 
 http://www.cnblogs.com/6DAN_HUST/archive/2010/11/11/1874681.html
@@ -334,3 +333,7 @@ Robust Optimization in 3D Vision
 https://mp.weixin.qq.com/s/T20YMbTBbn1GC3fvInhkkA
 
 深度学习如何影响运筹学？
+
+https://mp.weixin.qq.com/s/VcA1SZNS4LvMny_9dCUByQ
+
+混合整数规划/离散优化的精确算法--分支定界法及优化求解器
