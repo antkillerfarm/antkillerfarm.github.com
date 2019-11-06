@@ -157,3 +157,7 @@ https://mp.weixin.qq.com/s/DBcGC1ViNlIda0u9pr7djQ
 https://mp.weixin.qq.com/s/ksVbQq42ay5lxcfqNwBgxA
 
 阿里云小蜜对话机器人背后的核心算法
+
+https://mp.weixin.qq.com/s/UJ2yy7pb8EXZSlQVJIymBg
+
+初创公司5大Java服务困局，阿里工程师如何打破？（如何打造乞丐版的分布式系统）

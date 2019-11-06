@@ -197,3 +197,7 @@ PolarMask：一阶段实例分割新思路
 https://mp.weixin.qq.com/s/IRD0iIVXyENlUOyfSbmlBA
 
 目标检测的渐进域自适应
+
+https://mp.weixin.qq.com/s/10EhUj03NGPTnyOCvLqDQw
+
+港大提出视频显著物体检测算法MGA，大幅提升分割精度

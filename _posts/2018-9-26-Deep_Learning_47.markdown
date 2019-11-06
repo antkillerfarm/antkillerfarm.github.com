@@ -377,3 +377,11 @@ https://mp.weixin.qq.com/s/E0ULyXGz3UEcD0cIg-XkNA
 https://mp.weixin.qq.com/s/Nmkcy2nBczUccwIdMJiH_A
 
 MaskConnect: 探究网络结构搜索中的Module间更好的连接
+
+https://mp.weixin.qq.com/s/of9C3l2cmzAVEt9opIgfKw
+
+损失函数也可以进行自动搜索学习吗？
+
+https://mp.weixin.qq.com/s/OX0C9h5l6xffcQt6HOe_tQ
+
+DetNAS：首个搜索物体检测Backbone的方法
