@@ -46,6 +46,12 @@ MCTS的优点：
 
 - MCTS是可以高效计算的、不受时间限制以及可以并行处理的。
 
+参考：
+
+https://mp.weixin.qq.com/s/4qeHfU9GS4aDWOHsu4Dw2g
+
+记忆增强蒙特卡洛树搜索细节解读
+
 ## Dyna-2
 
 如果我们把基于模拟的前向搜索应用到Dyna算法中来，就变成了Dyna-2算法。

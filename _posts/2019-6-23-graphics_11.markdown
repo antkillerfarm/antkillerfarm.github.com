@@ -64,7 +64,9 @@ https://mp.weixin.qq.com/s/XqFe9d72CepdfTSOq2gWJg
 
 ![](/images/img3/prisoner_dilemma.jpg)
 
-上图表示的是囚徒困境（prisoner's dilemma）。参与者为：囚徒A和囚徒B。动作空间为：{坦白、抵赖}，回报函数由矩阵给出。即：
+上图是囚徒困境（prisoner's dilemma）的**策略矩阵**。
+
+参与者为：囚徒A和囚徒B。动作空间为：{坦白、抵赖}，回报函数由矩阵给出。即：
 
 - 当囚徒A和囚徒B都坦白时，囚徒A被判处3年有期徒刑、囚徒B也被判处3年有期徒刑。
 - 当囚徒A坦白、囚徒B抵赖时，囚徒A被当场释放、囚徒B被判处5年有期徒刑。
@@ -85,7 +87,7 @@ https://mp.weixin.qq.com/s/XqFe9d72CepdfTSOq2gWJg
 
 综合这两种情况，对于囚徒A不管囚徒B如何选择，选择坦白都是最好的。
 
-在该例中（坦白，坦白）是占优策略（dominated strategy）。所谓占优策略是指如果一方在任何情况下从某种策略中得到的回报均大于从另外一种策略得到的回报，那么我们称为这种策略为占优策略。
+在该例中（坦白，坦白）是**占优策略（dominated strategy）**。所谓占优策略是指如果一方在任何情况下从某种策略中得到的回报均大于从另外一种策略得到的回报，那么我们称为这种策略为占优策略。
 
 ## 纳什均衡
 
@@ -106,7 +108,49 @@ Nash equilibrium
 - 若小猪先到，则大猪和小猪各吃到4单位食物；
 - 若两猪同时到，则大猪吃到5单位，小猪仅吃到3单位。
 
+显然，在这里按按钮有两个成本：
 
+- 直接成本：2单位成本。
+- 间接成本：先按按钮的猪，肯定会最后到达食槽。
+
+因此，这个问题写成策略矩阵，则是：
+
+|  |  |  | 小猪 |
+|  |  | 按 | 等待 |
+|  | 按 | 3,1 | 2,4 |
+| 大猪 | 等待 | 7,-1 | 0,0 |
+
+该博弈不存在占优战略均衡，因为尽管小猪有一个严格占优战略，但大猪并没有占优战略。
+
+为了解决这个问题，Nash提出了重复剔除的占优战略均衡（iterated dominance equilibrium）。
+
+其具体做法如下：
+
+**Step 1**：大猪没有劣战略，策略保持不变。
+
+**Step 2**：小猪有一个劣战略: “按”。
+
+“按”的支付值： 1, -1
+
+“等待”的支付值： 4, 0
+
+**Step 3**：剔除小猪的劣战略“按”。
+
+**Step 4**：剔除之后，大猪有一个劣战略：“等待”。
+
+**Step 5**：剔除大猪的劣战略“等待”，剩下最后一个战略组合：
+
+大猪：“按” + 小猪：“等待”
+
+在小企业经营中，学会如何“搭便车”是一个精明的职业经理人最为基本的素质。在某些时候，如果能够注意等待，让其他大的企业首先开发市场，是一种明智的选择。这时候有所不为才能有所为！
+
+## 其他博弈问题
+
+当年英国政府将流放澳洲的犯人交给往来于澳洲之间的商船来完成，由此经常会发生因商船主或水手虐待犯人，致使大批流放人员因此死在途中(葬身大海)的事件发生。
+
+后来大英帝国对运送犯人的办法(制度)稍加改变，流放人员仍然由往来于澳洲的商船来运送，只是运送犯人的费用要等到犯人送到澳洲后才由政府按实到犯人人数支付给商船。
+
+仅就这样一点小小的“改变”，几乎再也没有犯人于中途死掉的事情发生。
 
 ## 参考
 
@@ -229,6 +273,46 @@ https://mp.weixin.qq.com/s/x6gKTuYIx8y25KX-fCc5bA
 蒙特卡洛梯度估计方法（MCGE）简述
 
 # DRL参考资源+
+
+https://mp.weixin.qq.com/s/C8hsGkHGtoaS9Vzm6Ub4tw
+
+Berkeley提出“随机搜索”训练线性策略，提高RL的性能
+
+https://mp.weixin.qq.com/s/vYDb1rTdPxO1sIS38VX5xA
+
+DeepMind的AI学会了画画，利用强化学习完全不需人教：SPIRAL
+
+https://mp.weixin.qq.com/s/rpPN2rgru6krRz2fr1RhsQ
+
+模拟世界的模型：谷歌大脑与Jürgen Schmidhuber提出“人工智能梦境”
+
+https://mp.weixin.qq.com/s/AelAD57G4GOh7qm-_rvYsg
+
+伯克利提出DeepMimic：使用强化学习练就18般武艺
+
+https://mp.weixin.qq.com/s/0AM4eASolsPZ7GtPYVBqDQ
+
+伯克利今年大热的DeepMimic开源了~
+
+https://zhuanlan.zhihu.com/p/35567591
+
+强化学习在关系抽取、QA场景的应用
+
+https://mp.weixin.qq.com/s/zWo2iSiJBEBwnFF478xxfQ
+
+DeepMind：探索人类行为中的强化学习机制
+
+https://mp.weixin.qq.com/s/oOslkEklaZSbRb8eDDCRBw
+
+天津大学、东京大学等研究：用深度强化学习检测模型缺陷
+
+https://mp.weixin.qq.com/s/DNT9rMynbN4Th0AVDHeY_w
+
+BAIR提出人机合作新范式：教你如何高效安全地在月球着陆
+
+https://mp.weixin.qq.com/s/KqLCTSYk1C0wYpJw-hpc1g
+
+论强化学习和概率推断的等价性：一种全新概率模型
 
 https://mp.weixin.qq.com/s/AI3i3ZLZ-fynavbeNAMKgA
 

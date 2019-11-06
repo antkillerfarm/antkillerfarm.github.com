@@ -1,8 +1,42 @@
 ---
 layout: post
-title:  深度强化学习（六）——元学习, DRL参考资源（1）
+title:  深度强化学习（六）——AlphaStar, 元学习, DRL参考资源（1）
 category: DRL 
 ---
+
+# AlphaStar
+
+https://mp.weixin.qq.com/s/_Y0bCjTu9UrHfnen15htqQ
+
+AlphaStar称霸星际争霸2！AI史诗级胜利，DeepMind再度碾压人类
+
+https://mp.weixin.qq.com/s/axr5VFbHQmYo0shW9ilBaQ
+
+DeepMind回应一切：AlphaStar两百年相当于人类多长时间？
+
+https://www.zhihu.com/question/310011363
+
+如何评价DeepMind在北京时间19年1月25日2点的《星际争霸 2》项目演示？
+
+https://mp.weixin.qq.com/s/k0l2uoik-Z9aA9zax7AoZg
+
+中科院自动化所深度解析：Deepmind AlphaStar如何战胜人类职业玩家
+
+https://zhuanlan.zhihu.com/p/55781614
+
+AlphaStar背后的机器学习原理
+
+https://mp.weixin.qq.com/s/XljE82cJZfFOgf2KrXWSKA
+
+DeepMind首个战胜星际2职业玩家的AI为何无敌？新视角揭秘AI里程碑
+
+https://mp.weixin.qq.com/s/_t2vLFfIG6VYAdWDalpIXQ
+
+说人话教AI打游戏，Facebook开源迷你版星际争霸，成果登上NeurIPS 2019
+
+https://mp.weixin.qq.com/s/X7QQn6W2dB3y_Ljii-sJ3w
+
+Alphastar再登Nature！星际争霸任一种族，战网狂虐99.8%人类玩家
 
 # 元学习
 
@@ -340,10 +374,6 @@ http://mp.weixin.qq.com/s/EPbKE-TAnAPugJDhXHEyNA
 
 DeepMind开源Psychlab平台——搭建AI和认知心理学的桥梁
 
-https://mp.weixin.qq.com/s/4qeHfU9GS4aDWOHsu4Dw2g
-
-记忆增强蒙特卡洛树搜索细节解读
-
 https://mp.weixin.qq.com/s/xJ_g3BvbM-WaIyLthHdhEw
 
 DeepMind发布通用强化学习新范式，自主机器人可学会任何任务
@@ -355,47 +385,3 @@ https://mp.weixin.qq.com/s/To3pnx1hVq_4p7UnQVMw9A
 https://mp.weixin.qq.com/s/U0K79ELLj4wsOR4sd5G4Vw
 
 Vicarious详解新型图式网络：赋予强化学习泛化能力
-
-https://mp.weixin.qq.com/s/R308ohdMU8b7Ap4CLofvDg
-
-OpenAI开源算法ACKTR与A2C：把可扩展的自然梯度应用到强化学习
-
-https://mp.weixin.qq.com/s/C8hsGkHGtoaS9Vzm6Ub4tw
-
-Berkeley提出“随机搜索”训练线性策略，提高RL的性能
-
-https://mp.weixin.qq.com/s/vYDb1rTdPxO1sIS38VX5xA
-
-DeepMind的AI学会了画画，利用强化学习完全不需人教：SPIRAL
-
-https://mp.weixin.qq.com/s/rpPN2rgru6krRz2fr1RhsQ
-
-模拟世界的模型：谷歌大脑与Jürgen Schmidhuber提出“人工智能梦境”
-
-https://mp.weixin.qq.com/s/AelAD57G4GOh7qm-_rvYsg
-
-伯克利提出DeepMimic：使用强化学习练就18般武艺
-
-https://mp.weixin.qq.com/s/0AM4eASolsPZ7GtPYVBqDQ
-
-伯克利今年大热的DeepMimic开源了~
-
-https://zhuanlan.zhihu.com/p/35567591
-
-强化学习在关系抽取、QA场景的应用
-
-https://mp.weixin.qq.com/s/zWo2iSiJBEBwnFF478xxfQ
-
-DeepMind：探索人类行为中的强化学习机制
-
-https://mp.weixin.qq.com/s/oOslkEklaZSbRb8eDDCRBw
-
-天津大学、东京大学等研究：用深度强化学习检测模型缺陷
-
-https://mp.weixin.qq.com/s/DNT9rMynbN4Th0AVDHeY_w
-
-BAIR提出人机合作新范式：教你如何高效安全地在月球着陆
-
-https://mp.weixin.qq.com/s/KqLCTSYk1C0wYpJw-hpc1g
-
-论强化学习和概率推断的等价性：一种全新概率模型

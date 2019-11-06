@@ -227,6 +227,10 @@ https://zhuanlan.zhihu.com/p/70360272
 
 最前沿：深度解读Soft Actor-Critic算法
 
+https://mp.weixin.qq.com/s/R308ohdMU8b7Ap4CLofvDg
+
+OpenAI开源算法ACKTR与A2C：把可扩展的自然梯度应用到强化学习
+
 # DDPG
 
 论文：
@@ -279,7 +283,7 @@ Noisy在DRL中的用法主要有：
 
 - Factorised Gaussian noise。
 
-## DDPG
+# DDPG
 
 Deepmind在2016年提出了DDPG（Deep Deterministic Policy Gradient）。从通俗角度看：**DDPG=DPG+A2C+Double DQN**。
 
@@ -296,13 +300,3 @@ Deepmind在2016年提出了DDPG（Deep Deterministic Policy Gradient）。从通
 - Critic（Q网络） target network（状态现实网络）
 
 简单来说就是，Actor online network和Critic online network组成一对Actor-Critic；而Actor target network和Critic target networ组成另一对Actor-Critic。
-
-当然，DDPG实际的步骤远比示意图复杂的多，可参见下图，这里不再赘述。
-
-![](/images/img3/DDPG.jpg)
-
-DDPG还有一个分布式版本。
-
-论文：
-
-《Distributed Distributional Deterministic Policy Gradients》

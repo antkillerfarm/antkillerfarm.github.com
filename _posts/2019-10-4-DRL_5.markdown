@@ -1,10 +1,58 @@
 ---
 layout: post
-title:  深度强化学习（五）——MARL, AlphaStar
+title:  深度强化学习（五）——AlphaGo, MARL
 category: DRL 
 ---
 
 # AlphaGo（续）
+
+## Leela Zero
+
+Leela Zero是比利时人Gian-Carlo Pascutto开源的围棋AI。它的算法与AlphaGo Zero相同。而训练采用GTP协议，集合全球算力，进行分布式训练。
+
+官网：
+
+http://zero.sjeng.org/
+
+代码：
+
+https://github.com/gcp/leela-zero
+
+>十多年前，当我还是一个中二青年的时候，就幻想有朝一日能够拿围棋世界冠军。当然，就算再中二，我自己也明白靠实力那是不可能的，当时做梦的法宝是制造一个AI，然后碾压一下所谓的国手。   
+>按照当时(2000年前后)人们的预计，这个AI在2030年之前，都不可能造出来，然而，最终的结果实际上只花了一半左右的时间。   
+>再之后，随着AI围棋的平民化，我的中二梦终于也有人将之付诸实现了：   
+>https://mp.weixin.qq.com/s/npt2zZrKwPnNdY-hsa2RjQ   
+>AI再乱围棋圈：“食言之战”柯洁落败；首例素人作弊引风波
+
+这次作弊风波所使用的AI就是Leela Zero，可见目前（2018.5）它的棋力已经超过了顶尖棋手。
+
+## ELF OpenGo
+
+ELF OpenGo是Facebook开源的围棋AI，它是FB的AI游戏框架ELF的一部分。
+
+官网：
+
+https://github.com/pytorch/ELF
+
+参考：
+
+https://mp.weixin.qq.com/s/lOAx3suLIS-pEWyi8xZl6Q
+
+“全民体验”AlphaZero：FAIR田渊栋首次开源超级围棋AI
+
+## PhoenixGo
+
+PhoenixGo是腾讯微信团队的AlphaGo Zero复刻版。
+
+官网：
+
+https://github.com/Tencent/PhoenixGo
+
+参考：
+
+https://mp.weixin.qq.com/s/tJDmxsuS1QigYS75ZIdzRA
+
+微信团队开源围棋AI技术PhoenixGo，复现AlphaGo Zero论文
 
 ## 参考
 
@@ -287,37 +335,3 @@ Paper survey: Multi-Agent Reinforcement Learning
 https://zhang-yi-chi.github.io/2019/08/15/cooperative-multi-agent-rl/
 
 Cooperative Multi-Agent Reinforcement Learning
-
-# AlphaStar
-
-https://mp.weixin.qq.com/s/_Y0bCjTu9UrHfnen15htqQ
-
-AlphaStar称霸星际争霸2！AI史诗级胜利，DeepMind再度碾压人类
-
-https://mp.weixin.qq.com/s/axr5VFbHQmYo0shW9ilBaQ
-
-DeepMind回应一切：AlphaStar两百年相当于人类多长时间？
-
-https://www.zhihu.com/question/310011363
-
-如何评价DeepMind在北京时间19年1月25日2点的《星际争霸 2》项目演示？
-
-https://mp.weixin.qq.com/s/k0l2uoik-Z9aA9zax7AoZg
-
-中科院自动化所深度解析：Deepmind AlphaStar如何战胜人类职业玩家
-
-https://zhuanlan.zhihu.com/p/55781614
-
-AlphaStar背后的机器学习原理
-
-https://mp.weixin.qq.com/s/XljE82cJZfFOgf2KrXWSKA
-
-DeepMind首个战胜星际2职业玩家的AI为何无敌？新视角揭秘AI里程碑
-
-https://mp.weixin.qq.com/s/_t2vLFfIG6VYAdWDalpIXQ
-
-说人话教AI打游戏，Facebook开源迷你版星际争霸，成果登上NeurIPS 2019
-
-https://mp.weixin.qq.com/s/X7QQn6W2dB3y_Ljii-sJ3w
-
-Alphastar再登Nature！星际争霸任一种族，战网狂虐99.8%人类玩家
