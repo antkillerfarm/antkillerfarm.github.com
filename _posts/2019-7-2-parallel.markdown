@@ -10,6 +10,12 @@ category: resource
 
 《Demystifying Parallel and Distributed Deep Learning: An In-Depth Concurrency Analysis》
 
+## blog
+
+https://zhuanlan.zhihu.com/c_1174996853811335168
+
+一个多核&并行的专栏
+
 ## 参考
 
 https://mp.weixin.qq.com/s/ai_XI8ddP5I2m3ChCqnQsA

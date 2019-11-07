@@ -275,3 +275,7 @@ https://github.com/arraiyopensource/kornia
 https://mp.weixin.qq.com/s/5Pm03dLW9vbDukgWi1-Tug
 
 OpenARK：惊艳的增强现实、虚实交互开源库
+
+https://mp.weixin.qq.com/s/h0PwA9vtABWHgxd42yX3Fg
+
+当时尚遇上AI！港中文MMLab开源MMFashion工具箱

@@ -60,6 +60,14 @@ https://mp.weixin.qq.com/s/9YuBY0wLLVQ8ZrT9fiNICA
 
 语音版BERT？滴滴提出无监督预训练模型，中文识别性能提升10%以上
 
+https://mp.weixin.qq.com/s/OXkXjPHhaMXsKw2YevV6sw
+
+邱锡鹏：从Transformer到BERT--自然语言处理中的表示学习进展
+
+https://mp.weixin.qq.com/s/6i9eQISKsWU0jawKzWg8nQ
+
+超越bert，最新预训练模型ELECTRA论文阅读笔记
+
 # Attention进阶
 
 https://mp.weixin.qq.com/s/ZSzHOu6uowRSoWrqB7vOaQ
@@ -257,3 +265,7 @@ BERT、RoBERTa、DistilBERT与XLNet，我们到底该如何选择？
 https://mp.weixin.qq.com/s/Di-TbseiezMBc-MUYoEFHg
 
 CV领域的注意力机制
+
+https://mp.weixin.qq.com/s/GGRORF5EfJ5xzMLwAsJt5w
+
+从词袋到Transfomer，NLP十年突破史

@@ -368,6 +368,10 @@ https://mp.weixin.qq.com/s/C87vBloGcdJZTB27Q6WzRQ
 
 训练的神经网络不工作？一文带你跨过这37个坑
 
+https://zhuanlan.zhihu.com/p/89566632
+
+笔记之Troubleshooting Deep Neural Networks
+
 https://mp.weixin.qq.com/s/isE8kriDUrMx3IBKjMtUHg
 
 非常详细的神经网络入门解释

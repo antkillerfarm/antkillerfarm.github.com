@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十）——自动求导, 深度哈希, 深度贝叶斯学习
+title:  深度学习（三十）——自动求导, 深度贝叶斯学习
 category: DL 
 ---
 
@@ -186,6 +186,10 @@ https://mp.weixin.qq.com/s/olt_i6JxfslFSdbz0Dx4oA
 
 用于深度时空图建模的Graph WaveNet
 
+https://mp.weixin.qq.com/s/yGwKK_pl5p9mg_KKFiQkSA
+
+图神经网络GNN的自然语言处理，附315页PPT及作者博士论文下载
+
 # 自动求导
 
 DL发展到现在，其基本运算单元早就不止CNN、RNN之类的简单模块了。针对新运算层出不穷的现状，各大DL框架基本都实现了自动求导的功能。
@@ -292,40 +296,6 @@ PyTorch的自动求导机制详细解析，PyTorch的核心魔法
 https://mp.weixin.qq.com/s/PELBuCvu-7KQ33XBtlYfYQ
 
 深度学习中的微分
-
-# 深度哈希
-
-https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg
-
-深度离散哈希算法，可用于图像检索！
-
-https://mp.weixin.qq.com/s/XUYJub0559wwQ9H1wA_SAg
-
-机器学习时代的哈希算法，将如何更高效地索引数据
-
-https://mp.weixin.qq.com/s/vFBlFAQLvDZP7IvwKoaPhA
-
-无问西东，只问哈希
-
-https://mp.weixin.qq.com/s/XAxuLg2i3q5_uKDo1wU_rA
-
-从哈希到卷积神经网络：高精度&低功耗
-
-https://mp.weixin.qq.com/s/i8iQtCC7ahXLY1a1wOacsA
-
-Science：最新发现哈希可能是大脑的通用计算原理
-
-https://mp.weixin.qq.com/s/ZOVWXNym5yHoo-MmpxXo0A
-
-自监督对抗哈希SSAH：当前最佳的跨模态检索框架
-
-https://mp.weixin.qq.com/s/VldzlYg5AfDRho8bsROL_g
-
-HashGAN:基于注意力机制的深度对抗哈希模型提升跨模态检索效果
-
-https://mp.weixin.qq.com/s/3Z2Zc8zTq2uiPyw7ZuuZfw
-
-解密美图大规模多媒体数据检索技术DeepHash
 
 # 深度贝叶斯学习
 

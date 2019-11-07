@@ -161,3 +161,7 @@ https://mp.weixin.qq.com/s/ksVbQq42ay5lxcfqNwBgxA
 https://mp.weixin.qq.com/s/UJ2yy7pb8EXZSlQVJIymBg
 
 初创公司5大Java服务困局，阿里工程师如何打破？（如何打造乞丐版的分布式系统）
+
+https://mp.weixin.qq.com/s/QeS3PpfwJuxjAUQevVtkyQ
+
+实时计算引擎在贝壳的应用与实践

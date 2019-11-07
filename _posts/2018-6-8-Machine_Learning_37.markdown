@@ -270,6 +270,10 @@ https://mp.weixin.qq.com/s/lScxlqHARGYbs1eD3ZuEAQ
 
 推荐系统-大规模信息网络Embedding表征学习
 
+https://blog.csdn.net/yz930618/article/details/84862751
+
+《基于行列式点过程的推荐多样性提升算法》原理详解
+
 # 数据不平衡问题
 
 ![](/images/img3/imbalance.png)

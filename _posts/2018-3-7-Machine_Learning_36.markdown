@@ -204,6 +204,10 @@ https://mp.weixin.qq.com/s/8IFKL0thCMBh40wUolbTVw
 
 从XGB到LGB：美团外卖树模型的迭代之路
 
+https://mp.weixin.qq.com/s/LoX987dypDg8jbeTJMpEPQ
+
+终于有人把XGBoost和LightGBM讲明白了，项目中最主流的集成算法！
+
 # CatBoost
 
 这是Yandex推出的Boost工具包。

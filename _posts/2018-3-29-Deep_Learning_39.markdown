@@ -341,3 +341,7 @@ AI碰撞短视频，从推荐到直播，快手探索了这些ML新思路
 https://mp.weixin.qq.com/s/cuejj8atJsbSDae9xnhsxA
 
 锁定视频中的目标：港大提出运动注意力检测方法
+
+https://mp.weixin.qq.com/s/AUfaghIcRwwzgZzhOqHVZg
+
+对标GLUE、ImageNet，谷歌推出视觉任务适应性基准VTAB

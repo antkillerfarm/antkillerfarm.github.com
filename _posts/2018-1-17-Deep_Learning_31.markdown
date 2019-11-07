@@ -204,6 +204,10 @@ https://zhuanlan.zhihu.com/p/86965595
 
 深入理解NLP Subword算法：BPE、WordPiece、ULM
 
+https://mp.weixin.qq.com/s/TPRqDyGpkVuJcgomTu774A
+
+子词技巧：The Tricks of Subword
+
 ## BPE
 
 Byte Pair Encoding(BPE)本来是一种数据压缩算法，后来被用于分词。它从命名实体、同根词、外来语、组合词（罕见词有相当大比例是上述几种）的翻译策略中得到启发，认为把这些罕见词拆分为“子词单元”(subword units)的组合，可以有效的缓解NMT的OOV和罕见词翻译的问题。BPE对英文、德文、俄文等表音文字效果较好，但不太适用于中文。

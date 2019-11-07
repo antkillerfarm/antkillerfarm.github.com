@@ -36,6 +36,10 @@ https://mp.weixin.qq.com/s/6JberaY4H7it_UQiBls8wg
 
 为你介绍7种流行的线性回归收缩与选择方法
 
+https://mp.weixin.qq.com/s/7u0Jf5HR4N6G-6Sol3PyVA
+
+一款功能强大的特征选择工具（Feature Selector）
+
 ## KL散度
 
 KL散度（Kullback–Leibler divergence）是两个随机分布间距离的度量。其定义如下：

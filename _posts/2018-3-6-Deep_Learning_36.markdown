@@ -269,3 +269,7 @@ https://mp.weixin.qq.com/s/km9jnS5_k3kvuyfhUvzbWQ
 https://mp.weixin.qq.com/s/9DWyX2D6KlOVAJZoPgonYA
 
 深度CTR预估模型的演化之路2019最新进展
+
+https://mp.weixin.qq.com/s/rAbSWoo3WMdHsHaOx_x6fw
+
+阿里巴巴素材治理算法介绍，为电商大促保驾护航
