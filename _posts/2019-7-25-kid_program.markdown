@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  孩子的编程语言, Go, Julia, Rust, VS, Objective-C, Haskell, Javascript（三）
+title:  孩子的编程语言, Go, Julia, Rust, VS, Javascript（三）
 category: language 
 ---
 
@@ -97,6 +97,10 @@ https://mp.weixin.qq.com/s/gRumlJI8iUj_0HART2WD8Q
 https://mp.weixin.qq.com/s/7SfFeKUwEixcmChe3lC-lg
 
 有了这15款编程游戏，谁都可以学编程！
+
+https://www.codewar.cn/
+
+CodeCombat是一个让学生通过玩游戏学习计算机科学的平台
 
 # Go
 
@@ -318,48 +322,6 @@ VS2015以后，MS不再提供VS的离线安装包，因为安装文件实在是�
 
 3.运行运行offline\vs_community.exe。
 
-# Objective-C
-
-## 环境搭建
-
-PC上搭建Objective-C（以下简称OC）开发环境，主要借助GNUstep开源项目的成果。
-
-以Ubuntu为例，步骤如下：
-
-1.安装软件包。
-
-`sudo apt-get install gnustep-devel libjpeg-dev libtiff5-dev gobjc-4.9`
-
-2.设置环境变量。
-
-`GNUSTEP_MAKEFILES=/usr/share/GNUstep/Makefiles`
-
-# Haskell
-
-官网：
-
-https://www.haskell.org/
-
-Haskell主要有两套包管理系统cabal和stack，它们的仓库都是一样的，只是前端语法不同。stack相对比较新，也是目前的首选。
-
-Haskell的官方仓库：
-
-http://hackage.haskell.org/
-
-清华镜像：
-
-https://mirrors.tuna.tsinghua.edu.cn/help/hackage/
-
-Haskell的安装有多种模式，推荐Stack模式，直接使用Stack安装所需要的依赖。
-
-Stack的官网：
-
-https://www.haskellstack.org/
-
-然而国内访问不了，幸好有github：
-
-https://github.com/commercialhaskell/stack/releases/
-
 # Javascript（续）
 
 ## Traffic Demo
@@ -469,3 +431,23 @@ https://www.jianshu.com/p/c8b86b09daf0
 https://mp.weixin.qq.com/s/vEbTP1SDP3GW20XAP825jw
 
 一种字体，变成千姿百态艺术字，可尖可圆可开花，隔壁设计师馋哭了
+
+https://mp.weixin.qq.com/s/fEAfuVzfOwKjnTB-mdS5UA
+
+用JS写一个同Excel表现的智能填充算法
+
+https://mp.weixin.qq.com/s/D-XvKCSUCzMGcEz_xWTwqg
+
+现代CSS进化史
+
+https://mp.weixin.qq.com/s/zDt92-5NVaAFZJRfEHCUvg
+
+什么是Native、Web App、Hybrid、React Native 和 Weex？
+
+https://mp.weixin.qq.com/s/pdOVONHbjfIJPW45nEw1fg
+
+前端本地文件操作与上传
+
+http://chrome.360.cn/test/html5/index.html
+
+一个用于检测浏览器对html 5支持情况的网页

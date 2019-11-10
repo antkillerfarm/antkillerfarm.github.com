@@ -6,6 +6,14 @@ category: ML
 
 ## EM算法的一般形式（续）
 
+由之前的讨论可以看出，E-Step中的步骤是使上式的等号成立的条件，即：
+
+$$\ell(\theta^{(t)})=\sum_i\sum_{z^{(i)}}Q_i^{(t)}(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\theta^{(t)})}{Q_i^{(t)}(z^{(i)})}$$
+
+因为公式3对于任意$$Q_i$$和$$\theta$$都成立，因此：
+
+$$\ell(\theta^{(t+1)})\ge\sum_i\sum_{z^{(i)}}Q_i^{(t)}(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\theta^{(t+1)})}{Q_i^{(t)}(z^{(i)})}$$
+
 因为M-Step的最大化过程，可得：
 
 $$\sum_i\sum_{z^{(i)}}Q_i^{(t)}(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\theta^{(t+1)})}{Q_i^{(t)}(z^{(i)})}\ge\sum_i\sum_{z^{(i)}}Q_i^{(t)}(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\theta^{(t)})}{Q_i^{(t)}(z^{(i)})}$$
@@ -234,11 +242,3 @@ $$\begin{align}
 \\&=(x_1-\mu_1)^TV_{11}(x_1-\mu_1)+(x_1-\mu_1)^TV_{12}(x_2-\mu_2)
 \\&\qquad+(x_2-\mu_2)^TV_{21}(x_1-\mu_1)+(x_2-\mu_2)^TV_{22}(x_2-\mu_2)
 \end{align}$$
-
-保留上式中与$$x_1$$有关的部分，可得：
-
-$$p(x_1\mid x_2)=\frac{1}{Z_2}\exp\left(-\frac{1}{2}\left(x_1^TV_{11}x_1-2x_1^TV_{11}\mu_1+2x_1^TV_{12}(x_2-\mu_2)\right)\right)$$
-
-使用上一节中的完全配方技巧，可得：
-
-$$p(x_1\mid x_2)=\frac{1}{Z_3}\exp\left(-\frac{1}{2}(x_1-\mu_{1\mid 2})^TV_{11}(x_1-\mu_{1\mid 2})\right)$$

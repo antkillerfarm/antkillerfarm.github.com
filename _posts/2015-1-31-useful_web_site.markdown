@@ -190,14 +190,6 @@ https://mp.weixin.qq.com/s/T7bVFQqzTbZJ7GuQDiNwoA
 
 人工智能在iOS开发上的应用和机会
 
-http://chrome.360.cn/test/html5/index.html
-
-一个用于检测浏览器对html 5支持情况的网页
-
-https://www.codewar.cn/
-
-CodeCombat是一个让学生通过玩游戏学习计算机科学的平台
-
 http://www.xuliangwei.com/xubusi/885.html
 
 一篇文章全面了解监控知识体系
@@ -226,10 +218,6 @@ https://mp.weixin.qq.com/s/Nn7Yl6UzRpWnSleKUss8Sw
 
 阿里巴巴正式开源自研动态非侵入AOP解决方案：JVM-Sandbox
 
-https://mp.weixin.qq.com/s/M5syxE9Ln4UDLThPh5iuJg
-
-各种字符串Hash函数比较
-
 https://mp.weixin.qq.com/s/UehY3iXtcoBwMJkdcEi--A
 
 没有了这个规则，自然界再也不可能发现美丽的分形(递归算法的历史)
@@ -242,10 +230,6 @@ https://mp.weixin.qq.com/s/bk22ljMgODKSfZxibic0rw
 
 这是你见过最简单的 “算法说明书”
 
-https://mp.weixin.qq.com/s/D-XvKCSUCzMGcEz_xWTwqg
-
-现代CSS进化史
-
 https://mp.weixin.qq.com/s/wKpNJY6PD0ArxnKtl71xwQ
 
 程序员实用的工具网站整理
@@ -253,14 +237,6 @@ https://mp.weixin.qq.com/s/wKpNJY6PD0ArxnKtl71xwQ
 https://mp.weixin.qq.com/s/9YXsJo_u2zVNqvABoGqfqg
 
 五种IO模型分析
-
-https://mp.weixin.qq.com/s/zDt92-5NVaAFZJRfEHCUvg
-
-什么是Native、Web App、Hybrid、React Native 和 Weex？
-
-https://mp.weixin.qq.com/s/pdOVONHbjfIJPW45nEw1fg
-
-前端本地文件操作与上传
 
 https://mp.weixin.qq.com/s/9oi-zkuUtjv0P6GyBLmatg
 
@@ -281,10 +257,6 @@ https://mp.weixin.qq.com/s/23YB5JyULJ1l08OJ7LeaGg
 https://mp.weixin.qq.com/s/sYm-5jo-batq1fwv_tCmQw
 
 微信小程序30分钟从陌生到熟悉（下）
-
-https://mp.weixin.qq.com/s/fEAfuVzfOwKjnTB-mdS5UA
-
-用JS写一个同Excel表现的智能填充算法
 
 https://mp.weixin.qq.com/s/VgJSMN0mkfEerhWpWpEFbg
 
@@ -322,10 +294,6 @@ https://mp.weixin.qq.com/s/yHSraIAYsjYWPaGXA3PijA
 
 一张图读懂非公平锁与公平锁
 
-https://www.zhihu.com/question/320728455/answer/658973076
-
-为什么上古编程语言（比如COBOL）总喜欢把代码全部写成大写字母？
-
 https://mp.weixin.qq.com/s/3a5k3YA6ALri3BrQWQbOpw
 
 浅谈Cgroups
@@ -333,6 +301,10 @@ https://mp.weixin.qq.com/s/3a5k3YA6ALri3BrQWQbOpw
 https://mp.weixin.qq.com/s/8Rr-hxKQyHpT7L-Zx7PkcA
 
 浅谈Cgroups V2
+
+https://mp.weixin.qq.com/s/h4LwSRAsDgRqOq3mLt_SCw
+
+浅谈mmap
 
 https://mp.weixin.qq.com/s/_7q9K9D1q40eaGkLt9yDhQ
 

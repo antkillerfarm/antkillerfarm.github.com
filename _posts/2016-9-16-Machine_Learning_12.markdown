@@ -6,6 +6,14 @@ category: ML
 
 ## 边缘和条件高斯分布（续）
 
+保留上式中与$$x_1$$有关的部分，可得：
+
+$$p(x_1\mid x_2)=\frac{1}{Z_2}\exp\left(-\frac{1}{2}\left(x_1^TV_{11}x_1-2x_1^TV_{11}\mu_1+2x_1^TV_{12}(x_2-\mu_2)\right)\right)$$
+
+使用上一节中的完全配方技巧，可得：
+
+$$p(x_1\mid x_2)=\frac{1}{Z_3}\exp\left(-\frac{1}{2}(x_1-\mu_{1\mid 2})^TV_{11}(x_1-\mu_{1\mid 2})\right)$$
+
 其中：
 
 $$\mu_{1\mid 2}=\mu_1-V_{11}^{-1}V_{12}(x_2-\mu_2)\tag{1}$$
@@ -234,9 +242,3 @@ $$E[YY^T]=E[Y]E[Y]^T+\operatorname{Cov}(Y)$$
 $$E_{z^{(i)}\sim Q_i}\left[(z^{(i)})^T\right]=\mu_{z^{(i)}\mid x^{(i)}}^T$$
 
 $$E_{z^{(i)}\sim Q_i}\left[z^{(i)}(z^{(i)})^T\right]=\mu_{z^{(i)}\mid x^{(i)}}\mu_{z^{(i)}\mid x^{(i)}}^T+\Sigma_{z^{(i)}\mid x^{(i)}}$$
-
-将上式代入公式4，可得：
-
-$$\Lambda=\left(\sum_{i=1}^m(x^{(i)}-\mu)\mu_{z^{(i)}\mid x^{(i)}}^T\right)\left(\sum_{i=1}^m \left(\mu_{z^{(i)}\mid x^{(i)}}\mu_{z^{(i)}\mid x^{(i)}}^T+\Sigma_{z^{(i)}\mid x^{(i)}}\right)\right)^{-1}$$
-
-这里需要注意的是，和之前的混合高斯模型相比，我们不仅要计算$$\Sigma_{z^{(i)}\mid x^{(i)}}$$，还要计算$$E[z]$$和$$E[zz^T]$$。

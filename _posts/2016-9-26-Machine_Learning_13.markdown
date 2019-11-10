@@ -6,6 +6,12 @@ category: ML
 
 ## 因子分析的EM估计（续）
 
+将上式代入公式4，可得：
+
+$$\Lambda=\left(\sum_{i=1}^m(x^{(i)}-\mu)\mu_{z^{(i)}\mid x^{(i)}}^T\right)\left(\sum_{i=1}^m \left(\mu_{z^{(i)}\mid x^{(i)}}\mu_{z^{(i)}\mid x^{(i)}}^T+\Sigma_{z^{(i)}\mid x^{(i)}}\right)\right)^{-1}$$
+
+这里需要注意的是，和之前的混合高斯模型相比，我们不仅要计算$$\Sigma_{z^{(i)}\mid x^{(i)}}$$，还要计算$$E[z]$$和$$E[zz^T]$$。
+
 此外，我们还可得出：（推导过程略）
 
 $$\mu=\frac{1}{m}\sum_{i=1}^mx^{(i)}$$
@@ -252,17 +258,3 @@ $$(A-\lambda I)x=0\tag{2}$$
 1.特征向量属于特定的特征值，离开特征值讨论特征向量是没有意义的。不同特征值对应的特征向量不会相等，但特征向量不能由特征值唯一确定。
 
 2.在复数范围内，n阶矩阵A有n个特征值。在这些特征值中，模最大的那个特征值即主特征值（对于实数阵即绝对值最大的特征值），主特征值对应的特征向量称为主特征向量。
-
-更多内容参见：
-
-http://course.tjau.edu.cn/xianxingdaishu/jiao/5.htm
-
-矩阵的特征值和特征向量
-
-https://mp.weixin.qq.com/s/mZ4AeCcoU0LhWRWfa9_kvw
-
-花了10分钟，终于弄懂了特征值和特征向量到底有什么意义
-
-https://mp.weixin.qq.com/s/uL5fCNTegK9ST2LOO13-4g
-
-图说幂法求特征值和特征向量

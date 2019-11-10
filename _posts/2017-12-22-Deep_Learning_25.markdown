@@ -338,6 +338,10 @@ https://mp.weixin.qq.com/s/HpgcPkAZb9R5jF-zsGcfcw
 
 美图影像实验室（MTlab）10000点人脸关键点技术全解读
 
+https://mp.weixin.qq.com/s/YsuvIB56OxS9IBMQYSUdUg
+
+深度学习AI美颜系列——人像静态/动态贴纸特效算法实现
+
 ## 参考
 
 https://github.com/ChanChiChoi/awesome-Face_Recognition

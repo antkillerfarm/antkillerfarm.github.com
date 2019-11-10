@@ -348,6 +348,10 @@ http://www.cppblog.com/mysileng/archive/2013/04/06/199159.html
 
 Skip List（跳跃表）原理详解与实现
 
+https://mp.weixin.qq.com/s/M5syxE9Ln4UDLThPh5iuJg
+
+各种字符串Hash函数比较
+
 # 计算机体系结构
 
 按照Michael J. Flynn的分类方法，计算机的体系结构可分为如下四类：

@@ -349,3 +349,7 @@ https://mp.weixin.qq.com/s?__biz=MzA4MDExMDEyMw==&mid=2247487111&idx=1&sn=e0d4e3
 https://mp.weixin.qq.com/s/ctB90bNhaMYvbLE4yketHQ
 
 一文读懂对抗机器学习Universal adversarial perturbations
+
+https://mp.weixin.qq.com/s/zRNtEKS2dKxyQU4VZm6Mwg
+
+用GANs来自动生成音乐
