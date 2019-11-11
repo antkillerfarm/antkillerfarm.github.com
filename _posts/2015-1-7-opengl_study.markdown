@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenGL研究, GUI框架分析, 虚拟机比较, WxWidget, uboot, WireShark
+title:  OpenGL研究, GUI框架分析, 虚拟机比较, uboot, WireShark
 category: technology 
 ---
 
@@ -46,7 +46,7 @@ http://user.xmission.com/~nate/opengl.html
 
 去年底由于想实现一些特殊的Android特效，才接触到OpenGL。按照我的估计，今后随着移动应用越来越重要，OpenGL的应用前景要好于Direct X。而且这个要不了多久，估计也就是这两年的事情。特此备忘。
 
-# 各种GUI框架分析
+# GUI框架分析
 
 ## 综合型GUI框架
 
@@ -127,18 +127,6 @@ VMware由于是收费软件之故，因此用户的软件升级是个大问题�
 反之，VirtualBox就没有这些问题。虽然比较同期的VMware来说，VirtualBox的性能略逊。但是一般来说，科技行业里领先半年就已经是巨大的优势了。我相信现在的VirtualBox，无论如何也不会弱于两年前的VMware。
 
 因此与其守着过时的VMware 8.0，还不如换用VirtualBox，这就是我的选择。
-
-# WxWidget
-
-WxWidget在windows平台的安装包是个奇葩的东西，它并不是可执行文件的安装包，而是个源代码安装包。因此安装之后，还需要编译，才能使用。
-
-以MinGW编译为例，说一下编译的步骤：
-
-1.设置MinGW环境。这里需要强调的是MinGW和WxWidget的安装路径都不能有空格。
-
-2.进入build/msw文件夹，执行以下命令：
-
-`mingw32-make -f makefile.gcc BUILD=release SHARED=0 MONOLITHIC=1 UNICODE=1 CXXFLAGS=-fno-keep-inline-dllexport`
 
 # uboot
 

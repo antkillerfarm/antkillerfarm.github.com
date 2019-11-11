@@ -205,3 +205,7 @@ https://mp.weixin.qq.com/s/q1CC7pj8kj2E9zBw-IJnDw
 https://mp.weixin.qq.com/s/W-4lv_SfT25AqHHvOmG6BA
 
 实锤！用python扒一扒那些疯狂收割着大家的智商税的“烂片”和“艺人”
+
+https://mp.weixin.qq.com/s/byzL0Te5-QQLR7bxJpoZrw
+
+超好用的自信学习：1行代码查找标签错误，3行代码学习噪声标签

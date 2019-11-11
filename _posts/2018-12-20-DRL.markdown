@@ -224,6 +224,10 @@ https://zhuanlan.zhihu.com/c_1121374124756480000
 
 一个DRL的专栏
 
+https://github.com/NeuronDance/DeepRL
+
+一个DRL的专栏
+
 # 比赛
 
 https://github.com/seungjaeryanlee/awesome-rl-competitions
@@ -283,6 +287,10 @@ DRL在Unity自行车环境中配置与实践
 https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771231&idx=3&sn=09410e8fd9f34cacfac7df6abf4d9973
 
 集合三大类无模型强化学习算法，BAIR开源RL代码库rlpyt
+
+https://mp.weixin.qq.com/s/PYrE6vUCivusWuFvdiUbNQ
+
+几行代码轻松实现，Tensorlayer 2.0推出深度强化学习基准库
 
 # 概述
 

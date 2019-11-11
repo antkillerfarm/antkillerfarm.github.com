@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  这些年微软相关的技术总结
+title:  这些年微软相关的技术总结, WxWidget
 category: technology 
 ---
 
@@ -181,3 +181,21 @@ EVC下将MFC的工程分为PPC和wince两种，而VS2005下，不再区分这两
 由于这些内部文件夹都在C:\Users\xxx\AppData\Local\Microsoft\Outlook\outlook.ost中，并不能直接删除。因此我的办法是直接删除该文件。
 
 不用担心邮件丢失，本地删除之后，Outlook会自动从服务器重新下载的。
+
+# WxWidget
+
+WxWidget在windows平台的安装包是个奇葩的东西，它并不是可执行文件的安装包，而是个源代码安装包。因此安装之后，还需要编译，才能使用。
+
+以MinGW编译为例，说一下编译的步骤：
+
+1.设置MinGW环境。这里需要强调的是MinGW和WxWidget的安装路径都不能有空格。
+
+2.进入build/msw文件夹，执行以下命令：
+
+`mingw32-make -f makefile.gcc BUILD=release SHARED=0 MONOLITHIC=1 UNICODE=1 CXXFLAGS=-fno-keep-inline-dllexport`
+
+参考：
+
+https://mp.weixin.qq.com/s/pJIuKgZC1o757iwkrt3uUQ
+
+wxPython：Python首选的GUI库

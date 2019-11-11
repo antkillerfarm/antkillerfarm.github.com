@@ -130,6 +130,6 @@ https://mp.weixin.qq.com/s/9dHRO80mMTGdRHaa0AdihQ
 
 无需数据集的Student Networks
 
-https://mp.weixin.qq.com/s/hv2DKmF0hhHKWXzVemoNKw
+https://mp.weixin.qq.com/s/fQAkNdNhwkFichSZCwnNqA
 
-借鸡生蛋，无需数据的知识蒸馏
+北大、华为联合提出无需数据集的Student Networks

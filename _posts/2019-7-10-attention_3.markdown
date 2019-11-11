@@ -180,6 +180,10 @@ https://mp.weixin.qq.com/s/R2MW_5kskvXyuSOh7kfJaA
 
 ALBERT：更轻更快的NLP预训练模型
 
+https://mp.weixin.qq.com/s/dWzpqP_U8Y5DyfWHVTl5Vg
+
+BERT瘦身之路：Distillation，Quantization，Pruning
+
 ## 参考
 
 https://www.zhihu.com/question/298203515

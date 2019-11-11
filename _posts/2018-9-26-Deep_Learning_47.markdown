@@ -312,6 +312,10 @@ https://zhuanlan.zhihu.com/p/85686290
 
 MLOD：基于鲁棒特征融合方法的多视点三维目标检测
 
+https://mp.weixin.qq.com/s/S6cf_d6CxPblRS-hnM-jSg
+
+从多视角RGB图像生成三维网格模型Pixel2Mesh++
+
 # AutoDL进阶
 
 https://mp.weixin.qq.com/s/X5Oi8gKyT5Tmh7ljon3MzQ

@@ -74,6 +74,10 @@ https://mp.weixin.qq.com/s/ZSzHOu6uowRSoWrqB7vOaQ
 
 深度学习注意力机制-Attention in Deep learning-附101页PPT
 
+https://mp.weixin.qq.com/s/_mBa-GTdILrvluJtegz8fw
+
+南洋理工大学：注意力神经网络，Attention Neural Networks，78页ppt
+
 https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA
 
 阿里北大提出新attention建模框架，一个模型预测多种行为

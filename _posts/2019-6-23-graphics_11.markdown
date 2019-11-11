@@ -50,6 +50,10 @@ https://mp.weixin.qq.com/s/XqFe9d72CepdfTSOq2gWJg
 
 半全局匹配SGM
 
+https://mp.weixin.qq.com/s/UKxQQx0IJGWOFikz3pncAw
+
+最新的图像质量评价
+
 # 博弈论
 
 ## 概述（续）
@@ -89,6 +93,14 @@ https://mp.weixin.qq.com/s/XqFe9d72CepdfTSOq2gWJg
 
 在该例中（坦白，坦白）是**占优策略（dominated strategy）**。所谓占优策略是指如果一方在任何情况下从某种策略中得到的回报均大于从另外一种策略得到的回报，那么我们称为这种策略为占优策略。
 
+囚徒困境同样适于分析寡头垄断厂商合作的不稳定性。对于寡头整体而言最理性的做法是（合作，合作）。于是，诸如OPEC等组织会联手以期达到利润最大化。但同时，另外有种激励，若自己悄悄毁约、不遵守协议自己的获利会高于合作下的获利。于是（不合作，不合作）的策略组合排挤掉了（合作，合作）的策略组合，并且由于（不合作，不合作）组合还是一个占优策略均衡，所以，卡特尔经常以失败告终，也就属情理之中了。
+
+## 帕累托最优
+
+帕累托最优(Pareto Optimality)，也称为帕累托效率(Pareto efficiency)，是指资源分配的一种理想状态，假定固有的一群人和可分配的资源，从一种分配状态到另一种状态的变化中，在没有使任何人境况变坏的前提下，使得至少一个人变得更好。帕累托最优状态就是不可能再有更多的帕累托改进的余地;换句话说，帕累托改进是达到帕累托最优的路径和方法。 帕累托最优是公平与效率的"理想王国"。
+
+>Vilfredo Pareto，1848~1923，意大利经济学家、社会学家。
+
 ## 纳什均衡
 
 Nash equilibrium
@@ -96,6 +108,19 @@ Nash equilibrium
 ![](/images/img3/Nash.png)
 
 >John Nash，1928～2015，数学家、经济学家。Princeton博士（1950），Princeton教授。主要研究博弈论、微分几何学和偏微分方程。诺贝尔经济学奖获得者（1994）。奥斯卡金像奖电影《美丽心灵》男主角原型。
+
+## 高风险下的纳什均衡
+
+在一些特殊情况下，即使犯错误的可能性很小也可能导致大的灾难（比如核电站，出问题就非常严重），纳什均衡就可能不会产生有说服力的解释。考虑如下博弈：
+
+|  |  |  | 乙 |
+|  |  | 左 | 右 |
+|  | 上 | 8,10 | -1000,9 |
+| 甲 | 下 | 7,6 | 6,5 |
+
+在这个博弈中，参与人甲会选择“下”，因为如果乙不小心（低概率）犯错误，要避免产生右上的灾难性情况。
+
+这个例子说明，**个体可能不想我们所假设的那样完全理性，在遇到高风险的情况下，人们会考虑风险，从而使得最终结果可能偏离纳什均衡战略。**
 
 ## 智猪博弈问题
 
@@ -144,6 +169,22 @@ Nash equilibrium
 
 在小企业经营中，学会如何“搭便车”是一个精明的职业经理人最为基本的素质。在某些时候，如果能够注意等待，让其他大的企业首先开发市场，是一种明智的选择。这时候有所不为才能有所为！
 
+## 最大最小策略
+
+0阶理性共识：每个人都是理性的，但不知道其他人是否是理性的；
+
+1阶理性共识：每个人是理性的，并且知道其他每个人也都是理性的，但并不知道其他人是否知道自己是理性的；
+
+2阶理性共识：每个人是理性的，并且知道其他每个人也都是理性的，并且知道其他人知道自己是理性的，但不知道其他人是否知道自己知道其他人都是理性的。。。。。。。三阶、四阶。。。n阶依次类推。
+
+重复剔除不仅要求每个人是理性的，而且要求每个人知道其他人都是理性的，每个人知道每个人知道每个人是理性的，如此等等，即理性是“共识”。
+
+**优势策略均衡与纳什均衡的概念是建立在博弈者理性行为的基础上的**，任何出现的一点错误将可能使博弈者蒙受巨大的损失，因而可能有player会采取比较保守的策略。
+
+其中一种保守的策略是最大最小策略（Maximin strategy)。
+
+
+
 ## 其他博弈问题
 
 当年英国政府将流放澳洲的犯人交给往来于澳洲之间的商船来完成，由此经常会发生因商船主或水手虐待犯人，致使大批流放人员因此死在途中(葬身大海)的事件发生。
@@ -151,6 +192,10 @@ Nash equilibrium
 后来大英帝国对运送犯人的办法(制度)稍加改变，流放人员仍然由往来于澳洲的商船来运送，只是运送犯人的费用要等到犯人送到澳洲后才由政府按实到犯人人数支付给商船。
 
 仅就这样一点小小的“改变”，几乎再也没有犯人于中途死掉的事情发生。
+
+----
+
+
 
 ## 参考
 
@@ -193,81 +238,3 @@ https://blog.csdn.net/qq_27351341/article/details/81276298
 https://blog.csdn.net/sobermineded/article/details/79541511
 
 几个经典博弈模型（囚徒的困境、赌胜博弈、产量决策的古诺模型）
-
-# 模仿学习
-
-https://zhuanlan.zhihu.com/p/27935902
-
-机器人学习Robot Learning之模仿学习Imitation Learning的发展
-
-https://zhuanlan.zhihu.com/p/25688750
-
-模仿学习（Imitation Learning）完全介绍
-
-https://mp.weixin.qq.com/s/naq73D27vsCOUBperKto8A
-
-从监督式到DAgger，综述论文描绘模仿学习全貌
-
-https://mp.weixin.qq.com/s/LNNqp2KsEAljG26hY43mUw
-
-ICML2018 模仿学习教程
-
-https://mp.weixin.qq.com/s/f9vSgH1HQwGXBDb0UGHQyQ
-
-深度学习进阶之无人车行为克隆
-
-# RL与神经科学
-
-Pavlov Model（1901）
-
-Rescorla-Wagner Model（1972）
-
-Thorndike’s Puzzle Box（1910）
-
-参考：
-
-https://zhuanlan.zhihu.com/p/24437724
-
-学习理论之Rescorla-Wagner模型
-
-# RL参考资源+
-
-https://mp.weixin.qq.com/s/Fn1s9Ia8L1ckgn6iP24FhQ
-
-如何让神经网络具有好奇心
-
-https://mp.weixin.qq.com/s/PBf-YrkhwhPYXuiOGyahxQ
-
-强化学习遭遇瓶颈！分层RL将成为突破的希望
-
-https://zhuanlan.zhihu.com/p/58815288
-
-强化学习之值函数学习
-
-https://mp.weixin.qq.com/s/8Cqknze_iosz6Z6cqnuK5w
-
-谷歌提出强化学习新算法SimPLe，模拟策略学习效率提高2倍
-
-https://mp.weixin.qq.com/s/hKGS4Ek5prwTRJoMCaxQLA
-
-强化学习Exploration漫游
-
-https://zhuanlan.zhihu.com/p/65116688
-
-值分布强化学习（01）
-
-https://zhuanlan.zhihu.com/p/65364484
-
-值分布强化学习（02）
-
-https://zhuanlan.zhihu.com/p/62363784
-
-强化学习之策略搜索
-
-https://mp.weixin.qq.com/s/j9Cs5M9gyITu2u_XDkKm-g
-
-Policy Gradient——一种不以loss来反向传播的策略梯度方法
-
-https://mp.weixin.qq.com/s/x6gKTuYIx8y25KX-fCc5bA
-
-蒙特卡洛梯度估计方法（MCGE）简述

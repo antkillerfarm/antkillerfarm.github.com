@@ -296,10 +296,6 @@ https://mp.weixin.qq.com/s/a0Xt_hkcW2OVlEzhQFWugg
 
 由浅及深，细致解读图像问答 VQA 2018 Challenge冠军模型Pythia
 
-https://mp.weixin.qq.com/s/sc3ROchBFK9pAb-FCKNwLg
-
-你说我导！微软玩转标题描述生成视频
-
 https://zhuanlan.zhihu.com/p/35305264
 
 一文看懂深度学习中的VQA(视觉问答)技术

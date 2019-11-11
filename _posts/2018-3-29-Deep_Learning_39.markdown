@@ -345,3 +345,11 @@ https://mp.weixin.qq.com/s/cuejj8atJsbSDae9xnhsxA
 https://mp.weixin.qq.com/s/AUfaghIcRwwzgZzhOqHVZg
 
 对标GLUE、ImageNet，谷歌推出视觉任务适应性基准VTAB
+
+https://mp.weixin.qq.com/s/sc3ROchBFK9pAb-FCKNwLg
+
+你说我导！微软玩转标题描述生成视频
+
+https://mp.weixin.qq.com/s/0NpTiwNRpd92mFCtXw1oQw
+
+CVPR 2019视频描述（video caption）相关论文总结

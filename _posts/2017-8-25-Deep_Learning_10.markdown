@@ -221,3 +221,7 @@ https://mp.weixin.qq.com/s/zLf0aKeMYwqMwC1TymMxgQ
 https://zhuanlan.zhihu.com/p/86095608
 
 Learnable Group Convolutions:可以学习的分组卷积
+
+https://mp.weixin.qq.com/s/liCS3JoRj1scpc0jXFA4-w
+
+分组卷积最新进展，全自动学习的分组有哪些经典模型？

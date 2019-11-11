@@ -262,6 +262,10 @@ https://zhuanlan.zhihu.com/p/35882937
 
 ----
 
+![](/images/img3/DRL.png)
+
+----
+
 在Nature DQN出来之后，肯定很多人在思考如何改进它。那么DQN有什么问题呢？
 
 - 目标Q值的计算准确吗？全部通过max Q来计算有没有问题？
