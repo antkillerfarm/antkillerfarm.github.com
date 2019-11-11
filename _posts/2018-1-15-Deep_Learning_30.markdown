@@ -190,6 +190,10 @@ https://mp.weixin.qq.com/s/yGwKK_pl5p9mg_KKFiQkSA
 
 图神经网络GNN的自然语言处理，附315页PPT及作者博士论文下载
 
+https://mp.weixin.qq.com/s/LzaP6BWaKXL4O_Jf9QN7Rw
+
+基于层次化注意力图网络和多视角学习的商品推荐
+
 # 自动求导
 
 DL发展到现在，其基本运算单元早就不止CNN、RNN之类的简单模块了。针对新运算层出不穷的现状，各大DL框架基本都实现了自动求导的功能。

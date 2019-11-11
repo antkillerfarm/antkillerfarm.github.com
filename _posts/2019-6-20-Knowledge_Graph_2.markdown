@@ -186,6 +186,10 @@ https://mp.weixin.qq.com/s/JbvzSF_BLXRFLZtaJuVlsQ
 
 HiTA知识图谱 “药品-适应证”图谱数据发布！
 
+https://mp.weixin.qq.com/s/na_9L-4yi-ocC1OYbrqluw
+
+知识图谱在可解释人工智能中的作用，附81页ppt
+
 # 数据结构 & 普通CS算法
 
 ## TopK

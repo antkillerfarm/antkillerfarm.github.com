@@ -64,6 +64,8 @@ https://mp.weixin.qq.com/s/UKxQQx0IJGWOFikz3pncAw
 - 厌恶风险（risk averse）：倾向于一个确定性的回报，不愿意采用一个拥有同样期望回报的不确定性方案。
 - 喜爱风险（risk loving）：更严格地倾向于采用拥有同样期望回报的赌注。
 
+博弈论旨在了解游戏的动态，以优化其玩家可能获得的结果。相反的，**逆博弈论（Inverse Game Theory）**旨在根据玩家的策略和目标来设计游戏。逆博弈论在多智能体AI以及人机交互AI中都很有用处。
+
 ## 囚徒困境
 
 ![](/images/img3/prisoner_dilemma.jpg)
@@ -183,7 +185,21 @@ Nash equilibrium
 
 其中一种保守的策略是最大最小策略（Maximin strategy)。
 
+它是指博弈者所采取的策略是使自己能够获得的最小收入最大化。所谓最小收入是指采取某种策略所能获得的最小收入。
 
+最大最小策略是一种保守的策略而不是利润最大化的策略。
+
+很显然，博弈者往往是在信息不完全的情况下才采取最大最小策略。在信息完全的情形下，他肯定是会采取促使他利润最大化的策略。
+
+**在囚徒困境问题中，两人都坦白是最大最小策略，而两人都抵赖则是利润最大化策略。**
+
+最大最小均衡存在以下问题：
+
+- “最大最小”均衡没有考虑到局中人之间在策略选择上的互动。
+
+- 由“最大最小”方法得到的“均衡”很难说是一种“均衡”。
+
+- 零和博弈在社会科学中没有多大意义。
 
 ## 其他博弈问题
 
@@ -196,45 +212,3 @@ Nash equilibrium
 ----
 
 
-
-## 参考
-
-https://www.cnblogs.com/steven-yang/tag/博弈论/
-
-一个博弈论的专栏
-
-https://mp.weixin.qq.com/s/5o3m8RLwYkZJEhqNxOLq_A
-
-不对称多代理博弈中的博弈理论解读
-
-https://mp.weixin.qq.com/s/D9bRjYVJOMT0Jkh59XZ-Rg
-
-DeepMind于Nature子刊发文提出非对称博弈的降维方法
-
-https://mp.weixin.qq.com/s/1t6WuTQpltMtP-SRF1rT4g
-
-当博弈论遇上机器学习：一文读懂相关理论
-
-https://news.mbalib.com/story/242878
-
-智猪博弈、龟兔悖论、谷堆悖论...这些有趣的博弈论值得一看！
-
-https://blog.csdn.net/qq_27351341/article/details/81119533
-
-偏好函数、无差异曲线、帕累托标准、卡尔多-希克斯标准等基础概念
-
-https://blog.csdn.net/qq_27351341/article/details/81138774
-
-囚徒困境、智猪博弈、纳什均衡与一致预期
-
-https://blog.csdn.net/qq_27351341/article/details/81268801
-
-多重均衡与制度和文化
-
-https://blog.csdn.net/qq_27351341/article/details/81276298
-
-动态博弈、威胁与承诺
-
-https://blog.csdn.net/sobermineded/article/details/79541511
-
-几个经典博弈模型（囚徒的困境、赌胜博弈、产量决策的古诺模型）

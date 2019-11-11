@@ -78,6 +78,50 @@ category: essay
 
 2014.12.23 围观大徐的blog有感，特在github上安家落户，废弃了原来的搜狐blog。
 
+# 博弈论
+
+## 参考
+
+https://www.cnblogs.com/steven-yang/tag/博弈论/
+
+一个博弈论的专栏
+
+https://mp.weixin.qq.com/s/5o3m8RLwYkZJEhqNxOLq_A
+
+不对称多代理博弈中的博弈理论解读
+
+https://mp.weixin.qq.com/s/D9bRjYVJOMT0Jkh59XZ-Rg
+
+DeepMind于Nature子刊发文提出非对称博弈的降维方法
+
+https://mp.weixin.qq.com/s/1t6WuTQpltMtP-SRF1rT4g
+
+当博弈论遇上机器学习：一文读懂相关理论
+
+https://news.mbalib.com/story/242878
+
+智猪博弈、龟兔悖论、谷堆悖论...这些有趣的博弈论值得一看！
+
+https://blog.csdn.net/qq_27351341/article/details/81119533
+
+偏好函数、无差异曲线、帕累托标准、卡尔多-希克斯标准等基础概念
+
+https://blog.csdn.net/qq_27351341/article/details/81138774
+
+囚徒困境、智猪博弈、纳什均衡与一致预期
+
+https://blog.csdn.net/qq_27351341/article/details/81268801
+
+多重均衡与制度和文化
+
+https://blog.csdn.net/qq_27351341/article/details/81276298
+
+动态博弈、威胁与承诺
+
+https://blog.csdn.net/sobermineded/article/details/79541511
+
+几个经典博弈模型（囚徒的困境、赌胜博弈、产量决策的古诺模型）
+
 # 模仿学习
 
 https://zhuanlan.zhihu.com/p/27935902
