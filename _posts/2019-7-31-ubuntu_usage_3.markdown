@@ -86,6 +86,50 @@ N.B.:nota bene 注意,留心
 
 # DRL参考资源+
 
+https://mp.weixin.qq.com/s/_Di73PkEWJV1-OLLHfz7yQ
+
+组合在线学习：实时反馈玩转组合优化
+
+https://mp.weixin.qq.com/s/aVWHlwOmNIqOlu3025_RXQ
+
+DeepMind提出多任务强化学习新方法Distral
+
+https://mp.weixin.qq.com/s/gFHbLF-q91sddMAX1CRbEQ
+
+俞扬：“审时度势”的高效强化学习
+
+https://mp.weixin.qq.com/s/lstCIiNs_qA6k7GCYUBv2w
+
+阿尔伯塔大学提出新型多步强化学习方法，结合已有TD算法实现更好性能
+
+https://mp.weixin.qq.com/s/ybyZpaHr-JJg7CCdXGOl5A
+
+Seq2seq强化学习实战
+
+https://mp.weixin.qq.com/s/TUk1PWT9CfPGEW77UKxpjw
+
+三招武林绝学带你玩转“强化学习”
+
+https://mp.weixin.qq.com/s/W9yhj7_frLYWJocoBR1TMQ
+
+避免AI错把黑人识别为大猩猩：伯克利大学提出协同反向强化学习
+
+https://mp.weixin.qq.com/s/p2hlc2PsLgrvxOF8wBZANg
+
+李飞飞高徒范麟熙解析强化学习在游戏和现实中的应用
+
+http://mp.weixin.qq.com/s/EPbKE-TAnAPugJDhXHEyNA
+
+DeepMind开源Psychlab平台——搭建AI和认知心理学的桥梁
+
+https://mp.weixin.qq.com/s/xJ_g3BvbM-WaIyLthHdhEw
+
+DeepMind发布通用强化学习新范式，自主机器人可学会任何任务
+
+https://mp.weixin.qq.com/s/U0K79ELLj4wsOR4sd5G4Vw
+
+Vicarious详解新型图式网络：赋予强化学习泛化能力
+
 https://mp.weixin.qq.com/s/C8hsGkHGtoaS9Vzm6Ub4tw
 
 Berkeley提出“随机搜索”训练线性策略，提高RL的性能

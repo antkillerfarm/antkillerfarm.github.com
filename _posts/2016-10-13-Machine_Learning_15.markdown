@@ -242,13 +242,3 @@ p(x,y)&=\frac{cov(X,Y)}{\sigma_X\sigma_Y}=\frac{\operatorname{E}[XY]-\operatorna
 ![](/images/article/pearson.png)
 
 如上图所示，Cosine相似度计算的是两个样本点和坐标原点之间的直线的夹角，而PCC计算的是两个样本点和数学期望点之间的直线的夹角。
-
-PCC能够有效解决，在协同过滤数据集中，不同用户评分尺度不一的问题。
-
-参见：
-
-https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient
-
-https://mp.weixin.qq.com/s/RjpH7XD5SCMkrSdcmG394g
-
-从PCC到MIC，一文教你如何计算变量之间的相关性

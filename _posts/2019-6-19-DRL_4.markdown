@@ -302,17 +302,29 @@ https://github.com/openai/random-network-distillation
 
 # AlphaGo
 
+
+
 樊麾讲解AlphaGo与李世石的五番棋：
 
 https://deepmind.com/research/alphago/alphago-games-simplified-chinese/
 
-论文：
+AlphaGo论文：
 
 《Mastering the game of Go with deep neural networks and tree search》
+
+AlphaGo Zero论文：
+
+《Mastering the game of Go without human knowledge》
+
+AlphaZero论文：
+
+《Mastering Chess and Shogi by Self-Play with aGeneral Reinforcement Learning Algorithm》
 
 2017.1
 
 岁首，业界最重要的事情莫过于AlphaGo以Master之名再度出山，60场快棋未遇敌手。牛逼！
+
+![](/images/img3/AlphaGo_Zero.png)
 
 ## DarkForest
 

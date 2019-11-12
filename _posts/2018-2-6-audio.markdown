@@ -92,73 +92,20 @@ I2S总线在硬件测试时，可播放1KHz正弦波的wav文件。这个wav文�
 
 ## 文件后缀名与编码格式
 
-<table>
-  <tr>
-    <th>文件后缀名</th>
-    <th>音频编码（空表示编码格式和文件后缀名一致）</th>
-    <th>视频编码（空表示该格式没有视频数据）</th>
-  </tr>
-  <tr>
-    <td>.aac .ac3 .ape .mp2 .mp3 .flac .wma</td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>.au</td>
-    <td>pcm_s16be</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>.wav</td>
-    <td>pcm_s16le pcm_float</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>.ogg</td>
-    <td>vorbis</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>.m4a</td>
-    <td>mpeg4 aac</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>.3gp</td>
-    <td>mpeg4</td>
-    <td>amr_nb</td>
-  </tr>
-  <tr>
-    <td>.3g2</td>
-    <td>mpeg4</td>
-    <td>mpeg4 aac</td>
-  </tr>
-  <tr>
-    <td>.asf</td>
-    <td>msmpeg4</td>
-    <td>mp3</td>
-  </tr>
-  <tr>
-    <td>.mov</td>
-    <td>mpeg4_qt</td>
-    <td>mpeg4 aac_qt</td>
-  </tr>
-  <tr>
-    <td>.rm</td>
-    <td>rv10</td>
-    <td>ac3</td>
-  </tr>
-  <tr>
-    <td>.vob</td>
-    <td>mpeg2</td>
-    <td>ac3</td>
-  </tr>
-  <tr>
-    <td>.wmv</td>
-    <td>wmv</td>
-    <td>wma</td>
-  </tr>
-</table>
+| 文件后缀名 | 音频编码（空表示编码格式和文件后缀名一致） | 视频编码（空表示该格式没有视频数据） |
+|:--:|:--:|:--:|
+| .aac .ac3 .ape .mp2 .mp3 .flac .wma |  |  |
+| .au | pcm_s16be |  |
+| .wav | pcm_s16le pcm_float |  |
+| .ogg | vorbis |  |
+| .m4a | mpeg4 aac |  |
+| .3gp | mpeg4 | amr_nb |
+| .3g2 | mpeg4 | mpeg4 aac |
+| .asf | msmpeg4 | mp3 |
+| .mov | mpeg4_qt | mpeg4 aac_qt |
+| .rm | rv10 | ac3 |
+| .vob | mpeg2 | ac3 |
+| .wmv | wmv | wma |
 
 常用格式中的.avi .mp4，由于支持的编码格式众多，且没有主要的使用格式，故不列出。
 
@@ -273,6 +220,12 @@ http://tech.sina.com.cn/i/2018-10-10/doc-ihkvrhpt4844011.shtml
 矿机围城里的比特大陆：研发持续落后 公司四面楚歌
 
 詹克团、吴忌寒、杨作兴
+
+### 2019.11
+
+finance.ifeng.com/c/7rSObfR7d0p
+
+币圈风云：比特大陆詹克团被踢下台 战争或许才刚刚开始
 
 # Sikuli
 

@@ -4,7 +4,19 @@ title:  机器学习（十六）——协同过滤的ALS算法
 category: ML 
 ---
 
-# 协同过滤的ALS算法（续）
+# 协同过滤的ALS算法
+
+### 皮尔逊相关系数（续）
+
+PCC能够有效解决，在协同过滤数据集中，不同用户评分尺度不一的问题。
+
+参见：
+
+https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient
+
+https://mp.weixin.qq.com/s/RjpH7XD5SCMkrSdcmG394g
+
+从PCC到MIC，一文教你如何计算变量之间的相关性
 
 ### Spearman秩相关系数（Spearman's rank correlation coefficient）
 
@@ -12,96 +24,18 @@ category: ML
 
 秩变量是一类不在乎值的具体大小，而只关心值的大小关系的统计量。
 
-<table>
-<tr>
-<th>$$X_i$$</th>
-<th>$$Y_i$$</th>
-<th>$$x_i$$</th>
-<th>$$y_i$$</th>
-<th>$$d_i$$</th>
-<th>$$d_i^2$$</th>
-</tr>
-<tr>
-<td>86</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>97</td>
-<td>20</td>
-<td>2</td>
-<td>6</td>
-<td>−4</td>
-<td>16</td>
-</tr>
-<tr>
-<td>99</td>
-<td>28</td>
-<td>3</td>
-<td>8</td>
-<td>−5</td>
-<td>25</td>
-</tr>
-<tr>
-<td>100</td>
-<td>27</td>
-<td>4</td>
-<td>7</td>
-<td>−3</td>
-<td>9</td>
-</tr>
-<tr>
-<td>101</td>
-<td>50</td>
-<td>5</td>
-<td>10</td>
-<td>−5</td>
-<td>25</td>
-</tr>
-<tr>
-<td>103</td>
-<td>29</td>
-<td>6</td>
-<td>9</td>
-<td>−3</td>
-<td>9</td>
-</tr>
-<tr>
-<td>106</td>
-<td>7</td>
-<td>7</td>
-<td>3</td>
-<td>4</td>
-<td>16</td>
-</tr>
-<tr>
-<td>110</td>
-<td>17</td>
-<td>8</td>
-<td>5</td>
-<td>3</td>
-<td>9</td>
-</tr>
-<tr>
-<td>112</td>
-<td>6</td>
-<td>9</td>
-<td>2</td>
-<td>7</td>
-<td>49</td>
-</tr>
-<tr>
-<td>113</td>
-<td>12</td>
-<td>10</td>
-<td>4</td>
-<td>6</td>
-<td>36</td>
-</tr>
-</table>
+| $$X_i$$ | $$Y_i$$ | $$x_i$$ | $$y_i$$ | $$d_i$$ | $$d_i^2$$ |
+|:--:|:--:|:--:|
+| 86 | 0 | 1 | 1 | 0 | 0 |
+| 97 | 20 | 2 | 6 | -4 | 16 |
+| 99 | 28 | 3 | 8 | -5 | 25 |
+| 100 | 27 | 4 | 7 | -3 | 9 |
+| 101 | 50 | 5 | 10 | -5 | 25 |
+| 103 | 29 | 6 | 9 | -3 | 9 |
+| 106 | 7 | 7 | 3 | 4 | 16 |
+| 110 | 17 | 8 | 5 | 3 | 9 |
+| 112 | 6 | 9 | 2 | 7 | 49 |
+| 113 | 12 | 10 | 4 | 6 | 36 |
 
 如上表所示，$$X_i$$和$$Y_i$$是原始的变量值，$$x_i$$和$$y_i$$是rank之后的值，$$d_i=x_i-y_i$$。
 
