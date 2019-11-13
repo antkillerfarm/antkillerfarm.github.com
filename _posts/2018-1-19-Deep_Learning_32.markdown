@@ -142,6 +142,10 @@ https://mp.weixin.qq.com/s/vJ-BlxdY8rTwz7ygno6uWQ
 
 DeepVCP：百度无人车提出首个端到端的高精度点云配准网络
 
+https://zhuanlan.zhihu.com/p/91275450
+
+点云配准综述
+
 # 图像超分辨率进阶
 
 https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg

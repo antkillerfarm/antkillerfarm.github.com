@@ -4,7 +4,71 @@ title:  深度强化学习（五）——AlphaGo, MARL
 category: DRL 
 ---
 
-# AlphaGo（续）
+# AlphaGo
+
+## 概述（续）
+
+在讲解原理之前，我们首先回顾一下AlphaGo的各个重要事件。
+
+2015.10 AlphaGo Fan 5:0 击败樊麾。
+
+2016.3 AlphaGo Lee 4:1 击败李世石。
+
+樊麾讲解AlphaGo与李世石的五番棋：
+
+https://deepmind.com/research/alphago/alphago-games-simplified-chinese/
+
+AlphaGo论文：
+
+《Mastering the game of Go with deep neural networks and tree search》
+
+2017.1 AlphaGo Master 60:0 击败各大高手。
+
+2017.5 AlphaGo Ke 3:0 击败柯洁。
+
+2017.10 AlphaGo Zero。
+
+AlphaGo Zero论文：
+
+《Mastering the game of Go without human knowledge》
+
+2017.12 AlphaZero：
+
+训练4小时打败了国际象棋的最强程序Stockfish！
+
+训练2小时打败了日本将棋的最强程序Elmo！
+
+训练8小时打败了与李世石对战的AlphaGo Lee！
+
+AlphaZero论文：
+
+《Mastering Chess and Shogi by Self-Play with aGeneral Reinforcement Learning Algorithm》
+
+![](/images/img3/AlphaGo_Zero.png)
+
+## DarkForest
+
+DarkForest是田渊栋2015年11月的作品，虽然棋力和稍后的AlphaGo相去甚远，但毕竟也算是用到了RL和DNN了。
+
+论文：
+
+《Better Computer Go Player with Neural Network and Long-term Prediction》
+
+代码：
+
+https://github.com/facebookresearch/darkforestGo
+
+DarkForest中的一些规则借鉴了开源围棋软件Pachi：
+
+http://pachi.or.cz/
+
+以下是作者本人的讲解：
+
+https://zhuanlan.zhihu.com/p/20607684
+
+AlphaGo的分析
+
+
 
 ## Leela Zero
 

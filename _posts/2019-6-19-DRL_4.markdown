@@ -302,34 +302,6 @@ https://github.com/openai/random-network-distillation
 
 # AlphaGo
 
+## 概述
 
-
-樊麾讲解AlphaGo与李世石的五番棋：
-
-https://deepmind.com/research/alphago/alphago-games-simplified-chinese/
-
-AlphaGo论文：
-
-《Mastering the game of Go with deep neural networks and tree search》
-
-AlphaGo Zero论文：
-
-《Mastering the game of Go without human knowledge》
-
-AlphaZero论文：
-
-《Mastering Chess and Shogi by Self-Play with aGeneral Reinforcement Learning Algorithm》
-
-2017.1
-
-岁首，业界最重要的事情莫过于AlphaGo以Master之名再度出山，60场快棋未遇敌手。牛逼！
-
-![](/images/img3/AlphaGo_Zero.png)
-
-## DarkForest
-
-DarkForest是田渊栋2015年11月的作品，虽然棋力和稍后的AlphaGo相去甚远，但毕竟也算是用到了RL和DNN了。
-
-代码：
-
-https://github.com/facebookresearch/darkforestGo
+AlphaGo算是这波AI浪潮的里程碑事件了。如果说AlexNet让学术界重新认识了DL的话，AlphaGo则让大众都认识到了DL的威力。我也是在AlphaGo的感召之下，投身ML/DL领域的（2016.7）。因此了解AlphaGo的原理，就成为了我一直以来的目标。岂料直到三年多之后（2019.11），我才能真正看懂AlphaGo。
