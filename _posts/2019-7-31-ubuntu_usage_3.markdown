@@ -86,6 +86,30 @@ N.B.:nota bene 注意,留心
 
 # DRL参考资源+
 
+https://mp.weixin.qq.com/s/ij3bf61Pu7lrX0WijhbDeA
+
+骑驴找马：利用深度强化学习模型定位新物体
+
+https://mp.weixin.qq.com/s/iYxijHlE3sLJgKnwwd8Tgg
+
+使用深度强化学习和贝叶斯优化获得巨额利润
+
+https://mp.weixin.qq.com/s/_QkxCrQlyRM10eZK8aNCKA
+
+强化学习在携程酒店推荐排序中的应用探索
+
+https://mp.weixin.qq.com/s/fWySZWsYEKBRwYaFL3J2Xg
+
+强化学习大规模应用还远吗？Youtube推荐已强势上线
+
+https://mp.weixin.qq.com/s/nHBczPlffhZrJy4G4oJ1Ag
+
+让神经网络懂得黄金法则
+
+https://mp.weixin.qq.com/s/0dUlVC9I8qmv3f2BB0IFew
+
+强化学习介绍及自动驾驶汽车应用
+
 https://mp.weixin.qq.com/s/_Di73PkEWJV1-OLLHfz7yQ
 
 组合在线学习：实时反馈玩转组合优化

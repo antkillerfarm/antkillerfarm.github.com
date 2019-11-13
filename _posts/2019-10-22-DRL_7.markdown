@@ -6,6 +6,30 @@ category: DRL
 
 # DRL参考资源
 
+https://mp.weixin.qq.com/s/RLEuaiRdq6AbTSUcYQ5O3A
+
+深度强化学习在NLP怎么用？看清华黄民烈老师这一份120页《自然语言处理和搜索中的深度强化学习应用》讲义
+
+https://zhuanlan.zhihu.com/p/29019246
+
+基于策略的增强学习
+
+https://mp.weixin.qq.com/s/OY56lJ_NFf5vVAgKfKyx2A
+
+利用强化学习自动搜索最优化方法
+
+https://mp.weixin.qq.com/s/nYOOwVoijl1p4V0A7yaI3w
+
+机遇与挑战：用强化学习自动搜索优化算法
+
+http://mp.weixin.qq.com/s/TBVVdX3erOpXNjXmhLmxOw
+
+学“深度强化学习”，看懂DeepMind这篇文章就够了!
+
+https://mp.weixin.qq.com/s/uDFsWebfLmka-zZX3Y_8kg
+
+深度强化学习在面向任务的对话管理中的应用
+
 https://mp.weixin.qq.com/s/FROyReDu7i5amGv-J4cmtg
 
 “世界模型”实现，一步步让机器掌握赛车和躲避火球的技能
@@ -337,27 +361,3 @@ https://mp.weixin.qq.com/s/Ctn1Wr68lph1UK_wjfCY1Q
 https://mp.weixin.qq.com/s/78ir-Z4ch8_aVpjC6aCPGg
 
 DeepMind综述深度强化学习中的快与慢，智能体应该像人一样学习
-
-https://mp.weixin.qq.com/s/ij3bf61Pu7lrX0WijhbDeA
-
-骑驴找马：利用深度强化学习模型定位新物体
-
-https://mp.weixin.qq.com/s/iYxijHlE3sLJgKnwwd8Tgg
-
-使用深度强化学习和贝叶斯优化获得巨额利润
-
-https://mp.weixin.qq.com/s/_QkxCrQlyRM10eZK8aNCKA
-
-强化学习在携程酒店推荐排序中的应用探索
-
-https://mp.weixin.qq.com/s/fWySZWsYEKBRwYaFL3J2Xg
-
-强化学习大规模应用还远吗？Youtube推荐已强势上线
-
-https://mp.weixin.qq.com/s/nHBczPlffhZrJy4G4oJ1Ag
-
-让神经网络懂得黄金法则
-
-https://mp.weixin.qq.com/s/0dUlVC9I8qmv3f2BB0IFew
-
-强化学习介绍及自动驾驶汽车应用

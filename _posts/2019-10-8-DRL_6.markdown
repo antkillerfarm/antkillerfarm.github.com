@@ -6,6 +6,24 @@ category: DRL
 
 # MARL（续）
 
+参考：
+
+https://zhuanlan.zhihu.com/c_1061939147282915328
+
+一个MARL方面的专栏
+
+https://github.com/LantaoYu/MARL-Papers
+
+Paper list of multi-agent reinforcement learning (MARL)
+
+https://blog.csdn.net/qq_38163755/article/details/98057751
+
+Game Theory and Multi-agent Reinforcement Learning笔记1
+
+https://blog.csdn.net/qq_38163755/article/details/98223987
+
+Game Theory and Multi-agent Reinforcement Learning笔记2
+
 https://mp.weixin.qq.com/s/bQx-ydEAfijgK1Ii5ilPFQ
 
 UCL汪军团队新方法提高群体智能，解决大规模AI合作竞争
@@ -383,27 +401,3 @@ https://mp.weixin.qq.com/s/7BsXPQ8wC6_fHulU63ZQiQ
 https://mp.weixin.qq.com/s/6n5HawyR4AgH8Dq0gJMw2g
 
 强化学习的基本概念与代码实现
-
-https://mp.weixin.qq.com/s/RLEuaiRdq6AbTSUcYQ5O3A
-
-深度强化学习在NLP怎么用？看清华黄民烈老师这一份120页《自然语言处理和搜索中的深度强化学习应用》讲义
-
-https://zhuanlan.zhihu.com/p/29019246
-
-基于策略的增强学习
-
-https://mp.weixin.qq.com/s/OY56lJ_NFf5vVAgKfKyx2A
-
-利用强化学习自动搜索最优化方法
-
-https://mp.weixin.qq.com/s/uDFsWebfLmka-zZX3Y_8kg
-
-深度强化学习在面向任务的对话管理中的应用
-
-https://mp.weixin.qq.com/s/nYOOwVoijl1p4V0A7yaI3w
-
-机遇与挑战：用强化学习自动搜索优化算法
-
-http://mp.weixin.qq.com/s/TBVVdX3erOpXNjXmhLmxOw
-
-学“深度强化学习”，看懂DeepMind这篇文章就够了!

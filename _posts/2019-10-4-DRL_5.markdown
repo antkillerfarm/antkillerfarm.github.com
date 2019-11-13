@@ -18,19 +18,11 @@ category: DRL
 
 https://deepmind.com/research/alphago/alphago-games-simplified-chinese/
 
-AlphaGo论文：
-
-《Mastering the game of Go with deep neural networks and tree search》
-
 2017.1 AlphaGo Master 60:0 击败各大高手。
 
 2017.5 AlphaGo Ke 3:0 击败柯洁。
 
 2017.10 AlphaGo Zero。
-
-AlphaGo Zero论文：
-
-《Mastering the game of Go without human knowledge》
 
 2017.12 AlphaZero：
 
@@ -39,12 +31,6 @@ AlphaGo Zero论文：
 训练2小时打败了日本将棋的最强程序Elmo！
 
 训练8小时打败了与李世石对战的AlphaGo Lee！
-
-AlphaZero论文：
-
-《Mastering Chess and Shogi by Self-Play with aGeneral Reinforcement Learning Algorithm》
-
-![](/images/img3/AlphaGo_Zero.png)
 
 ## DarkForest
 
@@ -68,7 +54,29 @@ https://zhuanlan.zhihu.com/p/20607684
 
 AlphaGo的分析
 
+![](/images/img3/DarkForestGo.png)
 
+## AlphaGo
+
+论文：
+
+《Mastering the game of Go with deep neural networks and tree search》
+
+
+
+## AlphaGo Zero
+
+论文：
+
+《Mastering the game of Go without human knowledge》
+
+![](/images/img3/AlphaGo_Zero.png)
+
+## AlphaZero
+
+论文：
+
+《Mastering Chess and Shogi by Self-Play with aGeneral Reinforcement Learning Algorithm》
 
 ## Leela Zero
 
@@ -332,22 +340,3 @@ MARL的结构一般如下图所示。
 
 MARL的目标是找到每一个状态的纳什均衡策略，然后将这些策略联合起来。
 
-
-
-参考：
-
-https://zhuanlan.zhihu.com/c_1061939147282915328
-
-一个MARL方面的专栏
-
-https://github.com/LantaoYu/MARL-Papers
-
-Paper list of multi-agent reinforcement learning (MARL)
-
-https://blog.csdn.net/qq_38163755/article/details/98057751
-
-Game Theory and Multi-agent Reinforcement Learning笔记1
-
-https://blog.csdn.net/qq_38163755/article/details/98223987
-
-Game Theory and Multi-agent Reinforcement Learning笔记2
