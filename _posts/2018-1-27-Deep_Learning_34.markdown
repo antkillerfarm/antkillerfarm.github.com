@@ -245,3 +245,7 @@ https://mp.weixin.qq.com/s/M_Fo1BSv3yZ52XPxXCf77w
 https://mp.weixin.qq.com/s/RyKy8Iw_ZLTCrbPS3rFtOQ
 
 Airbnb基于Embedding技术的实时个性化推荐
+
+https://mp.weixin.qq.com/s/3ZZvTULbdeSKzF51Wa74WQ
+
+分布式词向量表示，附239页PPT下载

@@ -300,6 +300,10 @@ https://mp.weixin.qq.com/s/BpruKFMyL37MDXvzkMxnzQ
 
 技术人最不该忽视可视化数据分析
 
+https://mp.weixin.qq.com/s/mnKLpa_uPzoMrh7E7mtupg
+
+别动不动就画折线图了，教你4种酷炫可视化方法
+
 ## howmuch.net
 
 howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：

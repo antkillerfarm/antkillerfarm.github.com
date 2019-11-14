@@ -6,6 +6,18 @@ category: resource
 
 # 知识图谱参考资源
 
+https://mp.weixin.qq.com/s/MZE_SXsNg6Yt4dz2fmB1sA
+
+阿里知识图谱首次曝光：每天千万级拦截量，亿级别全量智能审核
+
+https://mp.weixin.qq.com/s/cEmtOAtfP2gSBlaPfGXb3w
+
+多源信息表示学习在知识图谱中的应用
+
+https://mp.weixin.qq.com/s/eZhhVZlVG-uy-tdtDztOpg
+
+电子健康档案中未知药物不良反应的知识图预测及验证
+
 https://mp.weixin.qq.com/s/0irBgfodvba5znu96caZuQ
 
 当知识图谱遇上文本智能处理，会擦出怎样的火花？

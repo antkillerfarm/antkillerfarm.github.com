@@ -259,3 +259,7 @@ https://mp.weixin.qq.com/s/R0GG6Kg-h50RTRU6DIrZCg
 https://mp.weixin.qq.com/s/QqWGdVGVxSComuJT1SDo0Q
 
 360展示广告召回系统的演进
+
+https://mp.weixin.qq.com/s/zxFGxnQk016Kh72XyPDSSg
+
+阿里文娱首次公开！AI 如何对爆款内容未卜先知？

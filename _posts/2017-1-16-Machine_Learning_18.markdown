@@ -261,6 +261,14 @@ https://zhuanlan.zhihu.com/p/49262150
 
 从Riemann积分到Lebesgue积分
 
+https://zhuanlan.zhihu.com/p/90607361
+
+Quadrature求积法
+
+https://zhuanlan.zhihu.com/p/91709767
+
+ODE's Initial value problem (IVP)
+
 ## 参考
 
 https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average

@@ -68,6 +68,14 @@ https://mp.weixin.qq.com/s/6i9eQISKsWU0jawKzWg8nQ
 
 超越bert，最新预训练模型ELECTRA论文阅读笔记
 
+https://zhuanlan.zhihu.com/p/91052495
+
+当BERT遇上知识图谱
+
+https://mp.weixin.qq.com/s/HOD1Hb70NhTXXCXlopzfng
+
+BERT推理加速实践
+
 # Attention进阶
 
 https://mp.weixin.qq.com/s/ZSzHOu6uowRSoWrqB7vOaQ

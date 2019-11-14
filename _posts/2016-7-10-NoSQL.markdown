@@ -138,6 +138,10 @@ https://mp.weixin.qq.com/s/3F5lwv5LtOqBa7S0Owf4XQ
 
 虽然难用，但12306面临的业务场景复杂度可能是世界之最
 
+https://mp.weixin.qq.com/s/bF0gq2kIzKzKBP1QaM5ebA
+
+12306系统的秒杀“艺术”：如何抗住100万人同时抢1万张票？
+
 ## GemFire
 
 GemFire是一个内存数据库。官网：

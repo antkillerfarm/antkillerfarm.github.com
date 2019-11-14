@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Clojure, Groovy, Lisp, Javascript在客户端的使用, perl, Scala, VS Code, VS, Kotlin
+title:  Clojure, Groovy, Lisp, Javascript在客户端的使用, perl, Scala, VS Code, VS
 category: language 
 ---
 
@@ -284,30 +284,12 @@ https://mp.weixin.qq.com/s/cw_Bww22sgPtOeNLKQ7HHA
 
 如何使用Visual Studio Code进行Java开发？
 
-# Kotlin
+# Scintilla
 
-Kotlin是一门编程语言，由JetBrains公司开发，与Java 100%互通。
+Scintilla是Neil Hodgson出于对Richedit控件的失望，所开发的替代品（1990）。它是Notepad++等编辑器的基础控件。
 
 官网：
 
-http://kotlinlang.org/
+https://www.scintilla.org
 
-官网文档：
-
-http://kotlinlang.org/docs/reference/android-overview.html
-
-国内中文文档：
-
-https://huanglizhuo.gitbooks.io/kotlin-in-chinese/content/
-
-国内中文文档2：
-
-http://www.liying-cn.net/kotlin/docs/reference/
-
-国内中文文档3：
-
-https://www.kotlincn.net/
-
-官方示例：
-
-https://github.com/Kotlin/kotlin-examples
+Scintilla官方还推出了一个名叫SciTE的编辑器，用于展示Scintilla的新功能。

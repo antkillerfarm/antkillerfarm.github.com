@@ -6,6 +6,22 @@ category: resource
 
 # NLP参考资源
 
+https://mp.weixin.qq.com/s/wU3sZKQ6gkYHeTEEClB4Gw
+
+通过深度模型加深和拓宽聊天话题，让你与机器多聊两句
+
+https://mp.weixin.qq.com/s/55-YouMoqOtGFPpIsGWwOg
+
+Google工程师带你看遍聊天机器人的前世今生
+
+https://mp.weixin.qq.com/s/G0xrlTHfxKHikYj8dGWRWQ
+
+Transformer聊天机器人教程
+
+https://mp.weixin.qq.com/s/qfs2-S_02H1DRmHo27hpow
+
+DeepPavlov：一个面向端到端对话系统和聊天机器人的开源库
+
 http://mp.weixin.qq.com/s/lmHWo9MUdv7ZMI7ARNmTSw
 
 拆开阿里小蜜的内核，看智能人机交互的实现逻辑
@@ -356,7 +372,7 @@ KBQA从入门到放弃—入门篇
 
 https://mp.weixin.qq.com/s/-Zz5Cv4QJaRHdBFrGyBuLg
 
-KBQA从入门到放弃 - Part 2
+KBQA从入门到放弃-Part 2
 
 https://mp.weixin.qq.com/s/efID_R9ajL34P95eGKkrQA
 

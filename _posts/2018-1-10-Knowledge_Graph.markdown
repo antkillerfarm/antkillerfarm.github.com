@@ -168,6 +168,10 @@ https://mp.weixin.qq.com/s/WyB5Lssy9c0qJt8Ze7a0Ig
 
 中文知识图谱构建技术以及应用的综述
 
+https://mp.weixin.qq.com/s/DR-atmyBQVEMVKIv48sSLA
+
+人工智能技术最重要基础设施之一，知识图谱你该学习的东西
+
 https://mp.weixin.qq.com/s/iqFXvhvYfOejaeNAhXxJEg
 
 当知识图谱遇上聊天机器人
@@ -220,14 +224,6 @@ https://mp.weixin.qq.com/s/fslIcD7RVLEByzkeACUhXQ
 
 达观数据：知识图谱与语义分析技术介绍
 
-https://mp.weixin.qq.com/s/MZE_SXsNg6Yt4dz2fmB1sA
-
-阿里知识图谱首次曝光：每天千万级拦截量，亿级别全量智能审核
-
-https://mp.weixin.qq.com/s/cEmtOAtfP2gSBlaPfGXb3w
-
-多源信息表示学习在知识图谱中的应用
-
 https://mp.weixin.qq.com/s/Nh7XJOLNBDdpibopVG4MrQ
 
 中文通用百科知识图谱（CN-DBpedia）
@@ -259,10 +255,6 @@ https://mp.weixin.qq.com/s/tDvp8BU3lIWN5ZUSYgBcpg
 http://www.k6k4.com/blog/show/aaazgq11o1478935786270
 
 知识图谱好文章整理
-
-https://mp.weixin.qq.com/s/eZhhVZlVG-uy-tdtDztOpg
-
-电子健康档案中未知药物不良反应的知识图预测及验证
 
 https://mp.weixin.qq.com/s/YeSzOw6dRNiX32PmdWgLow
 

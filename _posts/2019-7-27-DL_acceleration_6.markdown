@@ -133,3 +133,7 @@ https://mp.weixin.qq.com/s/9dHRO80mMTGdRHaa0AdihQ
 https://mp.weixin.qq.com/s/fQAkNdNhwkFichSZCwnNqA
 
 北大、华为联合提出无需数据集的Student Networks
+
+https://mp.weixin.qq.com/s/fA5NWLvLQN6kbB563pJnKg
+
+从16.6%到74.2%，谷歌新模型刷新ImageNet纪录（Noisy Student）

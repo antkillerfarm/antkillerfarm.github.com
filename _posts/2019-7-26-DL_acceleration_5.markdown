@@ -305,3 +305,7 @@ https://zhuanlan.zhihu.com/p/64400678
 https://mp.weixin.qq.com/s/pJk84bNzRn7LZZfQfSjs5A
 
 VarGFaceNet：地平线提出轻量级、有效可变组卷积的人脸识别网络
+
+https://mp.weixin.qq.com/s/cYimAphdyFO_XqKfT2Hbeg
+
+如何使用强化学习进行模型剪枝

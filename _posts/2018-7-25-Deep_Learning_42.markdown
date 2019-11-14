@@ -1,18 +1,62 @@
 ---
 layout: post
-title:  深度学习（四十二）——深度ISP, Spiking Neuron Networks, 深度时间序列, AI可解释性, 手势识别, NetVLAD
+title:  深度学习（四十二）——深度ISP, Spiking Neuron Networks, 深度时间序列, AI可解释性, 手势识别
 category: DL 
 ---
 
 # 迁移学习（续）
 
+https://mp.weixin.qq.com/s/Hok9D8dAzYrBz7XoFmGE2A
+
+AliExpress：在检索式问答系统中应用迁移学习
+
+https://mp.weixin.qq.com/s/f_vB2AXCytnvoZaqfMeIpw
+
+应用TF-Slim快速实现迁移学习
+
+https://mp.weixin.qq.com/s/R1bKmhADfhQAZmhXL9ObiQ
+
+多重预训练视觉模型的迁移学习
+
+https://mp.weixin.qq.com/s/l-l1xbUaPNKc-w5XndjCbQ
+
+通过网络结构迁移学习提高图像识别任务的拓展性
+
+https://mp.weixin.qq.com/s/-KssC3yXsG3ZuV8-I6D_nQ
+
+学习迁移架构用于Scalable图像的识别
+
+https://mp.weixin.qq.com/s/5DtTgc9bIrdXQkmuqRm8CA
+
+谷歌大脑迁移学习：减少调参，直接在数据集中学习最佳图像架构
+
+https://mp.weixin.qq.com/s/fEKc6yFZwTPAHjXJlcHA-w
+
+香港科技大学提出L2T框架：学习如何迁移学习
+
+https://mp.weixin.qq.com/s/pbyByPoZ9SVoP9B7pJMxXg
+
+深度卷积网络迁移学习的脸部表情识别
+
+https://mp.weixin.qq.com/s/aqmeIEVIG-845wiKlyXlsA
+
+小数据、高准确率的文本分类：利用迁移学习创造通用语言模型
+
+https://mp.weixin.qq.com/s/yXF5Cxs_29OBOl41enjfyg
+
+阿里巴巴&浙大Poster论文：基于直推式无偏嵌入的零样本学习
+
+https://mp.weixin.qq.com/s/qYoTgqwjaUlEycuk9LlonA
+
+迁移学习：6张图像vs13000张图像，超越2013 Kaggle猫狗识别竞赛领先水平
+
+http://mp.weixin.qq.com/s/6Urv6TfUfc-BWV1YqTM1PQ
+
+迁移学习+BPE，改进低资源语言的神经翻译结果
+
 https://mp.weixin.qq.com/s/kPFS_4swYEP6Amw8xfXEgg
 
 中科院自动化所-针对小样本问题的学习生成匹配网络方法
-
-https://mp.weixin.qq.com/s/Kb1KggOE3gxy7Edn48dlMg
-
-自然语言处理的迁移学习--来自DeepMind、AllenNLP等，附238页Slides&代码
 
 https://mp.weixin.qq.com/s/NFziZe6xS_CzVZX_0Den9g
 
@@ -22,10 +66,6 @@ https://mp.weixin.qq.com/s/6w5S5R_qA0956VMj1isunQ
 
 雷哥带你读论文之深度迁移炼丹！
 
-https://mp.weixin.qq.com/s/uVby0GpWlmAlqRlbvysSyQ
-
-计算机视觉中深度迁移学习，165页PPT
-
 https://mp.weixin.qq.com/s/wB9skXSWoMHoWnME2JAyIw
 
 基于全局类别表征的小样本学习
@@ -33,26 +73,6 @@ https://mp.weixin.qq.com/s/wB9skXSWoMHoWnME2JAyIw
 https://mp.weixin.qq.com/s/6eHmudo6EG47qBe7xwri6g
 
 ImageNet错误率小于4%，数据量依然不够，N-Shot Learning或是终极解决之道？
-
-https://mp.weixin.qq.com/s/06FWeGysBjU9wTMUx_eY0Q
-
-一文看懂自然语言处理中迁移学习的现状
-
-https://mp.weixin.qq.com/s/3AhiaNilRyTX_f7F306yng
-
-主动学习（Active Learning）-少标签数据学习
-
-https://mp.weixin.qq.com/s/Rj55EoopzlR71DZ5XrvH_w
-
-八千字长文深度解读，迁移学习在强化学习中的应用及最新进展
-
-https://mp.weixin.qq.com/s/G-Z6zyYSV95--x0PjQVMiw
-
-自然语言处理中的迁移学习(上)
-
-https://mp.weixin.qq.com/s/WlpmZmmqsepwbZJqxXrUhw
-
-自然语言处理中的迁移学习(下)
 
 https://mp.weixin.qq.com/s/cG0TDIZ3z4lUEQb_N1ysbg
 
@@ -373,55 +393,3 @@ https://blog.csdn.net/wangyaninglm/article/details/87296595
 https://mp.weixin.qq.com/s/ji8sEzJXp1UNgBHVOui0ng
 
 谷歌开源手势识别器，手机能用，还有现成的 App，但是被我们玩坏了
-
-# NetVLAD
-
-NetVLAD算的上是CNN+传统算子的一个范例。
-
-论文：
-
-《NetVLAD: CNN architecture for weakly supervised place recognition》
-
-《GhostVLAD for set-based face recognition》
-
-数据集：
-
-http://places.csail.mit.edu/
-
-## VLAD
-
-Vector of Locally Aggregated Descriptors
-
-https://www.cnblogs.com/minemine/p/7364950.html
-
-场景分类(scene classification)摘录
-
-http://www.cnblogs.com/mafuqiang/p/6909556.html
-
-图像检索——VLAD
-
-## 参考
-
-https://www.oukohou.wang/2018/11/27/NetVLAD/
-
-论文阅读-NetVLAD
-
-https://www.oukohou.wang/2018/12/26/GhostVLAD/
-
-论文阅读-GhostVLAD
-
-https://mp.weixin.qq.com/s/cfUl0Eym0mu7rSJJL7Zt1A
-
-基于深度学习的视觉实例搜索研究进展
-
-https://zhuanlan.zhihu.com/p/25013378
-
-深度纹理编码网络 (Deep TEN: Texture Encoding Network)
-
-https://blog.csdn.net/LiGuang923/article/details/85416407
-
-图像检索与降维（一）：VLAD
-
-https://blog.csdn.net/LiGuang923/article/details/85470289
-
-图像检索与降维（二）：NetVLAD

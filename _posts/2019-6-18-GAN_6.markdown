@@ -353,3 +353,7 @@ https://mp.weixin.qq.com/s/ctB90bNhaMYvbLE4yketHQ
 https://mp.weixin.qq.com/s/zRNtEKS2dKxyQU4VZm6Mwg
 
 用GANs来自动生成音乐
+
+https://mp.weixin.qq.com/s/zwzl-Tel3Avc4Dm7L5FS5A
+
+NLP中的对抗训练+PyTorch实现

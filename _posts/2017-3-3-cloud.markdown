@@ -88,7 +88,7 @@ http://spark.apache.org/
 
 Resilient Distributed Datasets是一个只读的，可分区的分布式数据集，这个数据集的全部或部分可以缓存在内存中，在多次计算间重用。RDD克服了传统的MapReduce所进行大量的磁盘IO操作。
 
-我的理解：RDD将计算包括中间结果，全部放到内存中，以节省磁盘IO操作。
+我的理解：RDD将计算数据（包括中间结果），全部放到内存中，以节省磁盘IO操作。
 
 http://www.infoq.com/cn/articles/spark-core-rdd
 
@@ -262,6 +262,10 @@ https://mp.weixin.qq.com/s/TScPuY_nk3Iqpo2m_0qd5w
 https://mp.weixin.qq.com/s/UPYiPrpM4A7nRpxpBstyrA
 
 Spark MLlib并行训练原理
+
+https://mp.weixin.qq.com/s/S1Gr18If9Htq-kE89cCa9w
+
+Uber最强机器学习平台是如何使用Spark模型的？
 
 # 多维数组的行优先和列优先
 

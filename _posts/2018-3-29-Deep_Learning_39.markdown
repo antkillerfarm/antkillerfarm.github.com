@@ -34,6 +34,66 @@ https://www.zhihu.com/question/52185576
 
 视频中的目标检测与图像中的目标检测具体有什么区别？
 
+https://mp.weixin.qq.com/s/0NpTiwNRpd92mFCtXw1oQw
+
+CVPR 2019视频描述（video caption）相关论文总结
+
+https://mp.weixin.qq.com/s/nZVIVJ9z0AWA8VFouNpafg
+
+深度学习之视频摘要简述
+
+https://mp.weixin.qq.com/s/z1APyCxlOEPHn48OeJAHkQ
+
+基于深度学习的视频内容识别
+
+https://mp.weixin.qq.com/s/ovjoHCcR1xYb9N6kyFJUTg
+
+视频广告段落检测——从一个偏门说计算机视觉的发展历史
+
+https://mp.weixin.qq.com/s/iqLHjbmLOmvfEeEUB_SqSA
+
+计算机视觉视频理解领域的经典方法和最新成果
+
+https://mp.weixin.qq.com/s/lBu1q5Pyw9dZIxSYXUp2pw
+
+视频语义分割介绍
+
+https://mp.weixin.qq.com/s/qtRV9Sb54o8TnDEhLlB69Q
+
+基于视频的目标检测的发展
+
+https://zhuanlan.zhihu.com/p/59915784
+
+Video Action Recognition的近期进展
+
+https://mp.weixin.qq.com/s/k4Ilj11wbuj5oIXLHo-5ew
+
+《视频目标分割与跟踪》最新39页综述论文
+
+https://mp.weixin.qq.com/s/GCCqIm4Q7UfUhhiqFbBS3g
+
+Pytorch视频分类教程
+
+https://mp.weixin.qq.com/s/ua8V2g2uZAditKui-IcoKw
+
+物体检测算法在视频中的应用
+
+https://mp.weixin.qq.com/s/pfAVyS_JQLqsXLYdX2m8IQ
+
+基于深度学习的视频目标检测综述
+
+https://mp.weixin.qq.com/s/NcA178JxgZLrAE1efBG2dA
+
+深度神经网络在视频编码中的应用
+
+https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247515277&idx=1&sn=e6466ace50c46b66824747c79ea4d6f1
+
+视频摘要最新综述文章
+
+https://blog.csdn.net/sinat_35177634/article/details/89601950
+
+CVPR 2019视频描述（video caption）相关论文总结
+
 https://mp.weixin.qq.com/s/noljXreGfoMfiZb_n90R3w
 
 模仿人类的印象机制，商汤提出精确实时的视频目标检测方法
@@ -41,10 +101,6 @@ https://mp.weixin.qq.com/s/noljXreGfoMfiZb_n90R3w
 http://mp.weixin.qq.com/s/-Av3-ZNi6UGlKNv_jduAeQ
 
 微软新论文：如何利用深度特征流提高视频识别准确率？
-
-https://mp.weixin.qq.com/s/z1APyCxlOEPHn48OeJAHkQ
-
-基于深度学习的视频内容识别
 
 https://mp.weixin.qq.com/s/WMakTEN68KPi7X9kMQetiw
 
@@ -58,17 +114,13 @@ https://mp.weixin.qq.com/s/CXKuSMi0Vd43BGDf5BgoqA
 
 弱监督视频物体识别新方法：香港科技大学联合CMU提出TD-Graph LSTM
 
-https://mp.weixin.qq.com/s/nZVIVJ9z0AWA8VFouNpafg
-
-深度学习之视频摘要简述
-
 https://mp.weixin.qq.com/s/7ccEaDRngVo42OSU6FBlVg
 
 从视频到语句，优必选获TRECVID 2017子任务冠军
 
 https://mp.weixin.qq.com/s/XorPkuIdhRNI1zGLwg-55A
 
-斯坦福新深度学习系统 NoScope：视频对象检测快1000倍
+斯坦福新深度学习系统NoScope：视频对象检测快1000倍
 
 https://mp.weixin.qq.com/s/7w5nYWfZO-YOJ4cA47kQXg
 
@@ -77,10 +129,6 @@ https://mp.weixin.qq.com/s/7w5nYWfZO-YOJ4cA47kQXg
 https://mp.weixin.qq.com/s/PhMPa-e4sbzqWKmFzRZE4Q
 
 实时替换视频背景：谷歌展示全新移动端分割技术
-
-https://mp.weixin.qq.com/s/ovjoHCcR1xYb9N6kyFJUTg
-
-视频广告段落检测——从一个偏门说计算机视觉的发展历史
 
 https://mp.weixin.qq.com/s/0JgwBizaCwvPP9TfLKTang
 
@@ -93,10 +141,6 @@ http://mp.weixin.qq.com/s/LAgDobWyK0SOH08GCLXG7A
 https://mp.weixin.qq.com/s/_ZmbwM-lmS0o2DjAAc_TWQ
 
 美图云+中科院AAAI2018：视频语义理解的类脑智能NOASSOM
-
-https://mp.weixin.qq.com/s/iqLHjbmLOmvfEeEUB_SqSA
-
-计算机视觉视频理解领域的经典方法和最新成果
 
 https://mp.weixin.qq.com/s/LzKsD_vFlA1n-TYOGJkDZg
 
@@ -138,14 +182,6 @@ https://mp.weixin.qq.com/s/TzNqZNEPBewR7neU7Or9nQ
 
 更侧重工业的应用：PRCV2018美图短视频实时分类挑战赛冠军技术方案
 
-https://mp.weixin.qq.com/s/lBu1q5Pyw9dZIxSYXUp2pw
-
-视频语义分割介绍
-
-https://mp.weixin.qq.com/s/qtRV9Sb54o8TnDEhLlB69Q
-
-基于视频的目标检测的发展
-
 https://mp.weixin.qq.com/s/MzVPesFK0vJ1UuQPPSSN2w
 
 百度、MIT等提出StNet：局部+全局的视频时空联合建模
@@ -182,17 +218,9 @@ https://mp.weixin.qq.com/s/l6WMJnrGNNK4A1cTD2drcg
 
 视频跟踪新思路，完全无需手工标注。这是一篇Visual Tracking和Optical Flow Estimation相互结合的论文
 
-https://zhuanlan.zhihu.com/p/59915784
-
-Video Action Recognition的近期进展
-
 https://mp.weixin.qq.com/s/NQSJvlcjOAoIZjI2cgjhkw
 
 谷歌AI：根据视频生成深度图，效果堪比激光雷达
-
-https://mp.weixin.qq.com/s/k4Ilj11wbuj5oIXLHo-5ew
-
-《视频目标分割与跟踪》最新39页综述论文
 
 https://mp.weixin.qq.com/s/fxKHMVRYCR9CycifjEnArQ
 
@@ -209,14 +237,6 @@ https://mp.weixin.qq.com/s/1tcoGGbJnnWARu-2wefWdQ
 https://mp.weixin.qq.com/s/pDMBnX3CeQbv8hr-79Mvvg
 
 商汤EDVR算法获NTIRE 2019视频恢复比赛全部四项冠军
-
-https://mp.weixin.qq.com/s/GCCqIm4Q7UfUhhiqFbBS3g
-
-Pytorch视频分类教程
-
-https://mp.weixin.qq.com/s/ua8V2g2uZAditKui-IcoKw
-
-物体检测算法在视频中的应用
 
 https://mp.weixin.qq.com/s/BtIYc7SSi0E6mT3muV6NhQ
 
@@ -246,10 +266,6 @@ https://mp.weixin.qq.com/s/7ygF4zxZxp0Iz7KRDdWebg
 
 R-C3D视频活动检测
 
-https://mp.weixin.qq.com/s/pfAVyS_JQLqsXLYdX2m8IQ
-
-基于深度学习的视频目标检测综述
-
 https://mp.weixin.qq.com/s/N6nL9D1wjsBNzxedXX3qNQ
 
 Hulu在视频内容理解上的应用和最佳实践
@@ -278,10 +294,6 @@ https://mp.weixin.qq.com/s/THUjd-wXI6_57mdw4XfYUQ
 
 商汤-港中文MMLab开源图像视频超分辨率工具箱MMSR
 
-https://mp.weixin.qq.com/s/NcA178JxgZLrAE1efBG2dA
-
-深度神经网络在视频编码中的应用
-
 https://mp.weixin.qq.com/s/XZ-fn_Xd7vVoLiVr6Esb3g
 
 Ranking Attention-适用于视频分割的全新Attention机制
@@ -306,10 +318,6 @@ https://mp.weixin.qq.com/s/-lNM3bVxK8YtmPWdXpSf5A
 
 UC信息流视频标签识别技术
 
-https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247515277&idx=1&sn=e6466ace50c46b66824747c79ea4d6f1
-
-视频摘要最新综述文章
-
 https://mp.weixin.qq.com/s?__biz=MzI0ODcxODk5OA==&mid=2247508659&idx=1&sn=77bd5db94ffc7737d937e9b2cbda84cf
 
 快手王华彦：端上视觉技术的极致效率及其短视频应用实践
@@ -321,10 +329,6 @@ https://mp.weixin.qq.com/s/JahD1ON5ym0_ldc7MiJz7A
 https://mp.weixin.qq.com/s/xocs_UI5HzgFZtTPWABRKw
 
 使用时间循环一致性学习(TCC)理解视频内容
-
-https://blog.csdn.net/sinat_35177634/article/details/89601950
-
-CVPR 2019视频描述（video caption）相关论文总结
 
 https://mp.weixin.qq.com/s/xjQtVE-i-n1N9a0AsR6BWw
 
@@ -350,6 +354,6 @@ https://mp.weixin.qq.com/s/sc3ROchBFK9pAb-FCKNwLg
 
 你说我导！微软玩转标题描述生成视频
 
-https://mp.weixin.qq.com/s/0NpTiwNRpd92mFCtXw1oQw
+https://mp.weixin.qq.com/s/jUPhF6OHtVrmTbg29sQV2Q
 
-CVPR 2019视频描述（video caption）相关论文总结
+谷歌提出TVN视频架构：单CPU处理1s视频仅需37ms、GPU仅需10ms

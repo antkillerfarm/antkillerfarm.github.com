@@ -82,17 +82,9 @@ https://github.com/chichilicious/awesome-zero-shot-learning
 
 Zero-Shot Learning相关资源大列表
 
-https://mp.weixin.qq.com/s/5DtTgc9bIrdXQkmuqRm8CA
+https://mp.weixin.qq.com/s/ebY7mq8PceHJy2t-wQBuGg
 
-谷歌大脑迁移学习：减少调参，直接在数据集中学习最佳图像架构
-
-https://mp.weixin.qq.com/s/fEKc6yFZwTPAHjXJlcHA-w
-
-香港科技大学提出L2T框架：学习如何迁移学习
-
-https://mp.weixin.qq.com/s/pbyByPoZ9SVoP9B7pJMxXg
-
-深度卷积网络迁移学习的脸部表情识别
+中科院发布最新迁移学习综述论文，带你全面了解40种迁移学习方法
 
 https://www.zhihu.com/question/50996014
 
@@ -114,21 +106,13 @@ https://mp.weixin.qq.com/s/J8ZmIVKd-4X3hMGGIJWoDQ
 
 一文看懂迁移学习：从基础概念到技术研究！
 
-https://mp.weixin.qq.com/s/aqmeIEVIG-845wiKlyXlsA
+https://mp.weixin.qq.com/s/Kb1KggOE3gxy7Edn48dlMg
 
-小数据、高准确率的文本分类：利用迁移学习创造通用语言模型
+自然语言处理的迁移学习--来自DeepMind、AllenNLP等，附238页Slides&代码
 
-https://mp.weixin.qq.com/s/yXF5Cxs_29OBOl41enjfyg
+https://mp.weixin.qq.com/s/uVby0GpWlmAlqRlbvysSyQ
 
-阿里巴巴&浙大Poster论文：基于直推式无偏嵌入的零样本学习
-
-https://mp.weixin.qq.com/s/qYoTgqwjaUlEycuk9LlonA
-
-迁移学习：6张图像vs13000张图像，超越2013 Kaggle猫狗识别竞赛领先水平
-
-http://mp.weixin.qq.com/s/6Urv6TfUfc-BWV1YqTM1PQ
-
-迁移学习+BPE，改进低资源语言的神经翻译结果
+计算机视觉中深度迁移学习，165页PPT
 
 https://zhuanlan.zhihu.com/p/30242073
 
@@ -138,29 +122,41 @@ https://mp.weixin.qq.com/s/rVYWV-LsbmA4QhC6207SWA
 
 14篇论文为你呈现“迁移学习”研究全貌
 
-https://mp.weixin.qq.com/s/l-l1xbUaPNKc-w5XndjCbQ
+https://mp.weixin.qq.com/s/06FWeGysBjU9wTMUx_eY0Q
 
-通过网络结构迁移学习提高图像识别任务的拓展性
+一文看懂自然语言处理中迁移学习的现状
 
-https://mp.weixin.qq.com/s/-KssC3yXsG3ZuV8-I6D_nQ
+https://mp.weixin.qq.com/s/3AhiaNilRyTX_f7F306yng
 
-学习迁移架构用于Scalable图像的识别
+主动学习（Active Learning）-少标签数据学习
+
+https://mp.weixin.qq.com/s/Rj55EoopzlR71DZ5XrvH_w
+
+八千字长文深度解读，迁移学习在强化学习中的应用及最新进展
+
+https://mp.weixin.qq.com/s/G-Z6zyYSV95--x0PjQVMiw
+
+自然语言处理中的迁移学习(上)
+
+https://mp.weixin.qq.com/s/WlpmZmmqsepwbZJqxXrUhw
+
+自然语言处理中的迁移学习(下)
 
 https://mp.weixin.qq.com/s/NQED6DdCJNpNyzURUOZPnA
 
 迁移学习：机器学习的下一个前沿阵地！
 
-https://mp.weixin.qq.com/s/Hok9D8dAzYrBz7XoFmGE2A
+http://chenrudan.github.io/blog/2017/12/15/domainadaptation1.html
 
-AliExpress：在检索式问答系统中应用迁移学习
+迁移学习之Domain Adaptation
 
-https://mp.weixin.qq.com/s/f_vB2AXCytnvoZaqfMeIpw
+https://mp.weixin.qq.com/s/3H1u2JJ0JwfjwDKs5imcxQ
 
-应用TF-Slim快速实现迁移学习
+零资源机器翻译的最新进展
 
-https://mp.weixin.qq.com/s/R1bKmhADfhQAZmhXL9ObiQ
+https://mp.weixin.qq.com/s/2NLPma-wITAUKVnSRrHX9w
 
-多重预训练视觉模型的迁移学习
+小样本学习年度进展
 
 https://mp.weixin.qq.com/s/pDK4qBWArtETARE1fjbbmA
 
@@ -173,6 +169,50 @@ https://mp.weixin.qq.com/s/mB1AEFVdM_s1rk0irST4Ww
 https://mp.weixin.qq.com/s/PDyp_GO0ovWV0KoGTwp_gQ
 
 简述迁移学习在深度学习中的应用
+
+https://zhuanlan.zhihu.com/p/43681859
+
+迁移学习在自然语言处理中的应用之通用语言建模
+
+https://mp.weixin.qq.com/s/Z6RyhsZfn3Fs-gfpS0_7HQ
+
+预训练模型迁移学习
+
+https://mp.weixin.qq.com/s/sVukyFF18IEjUOnoj09eUQ
+
+39页《迁移学习自然语言生成》
+
+https://mp.weixin.qq.com/s/0Zcrwi3WROzm19ApDZINMQ
+
+Ruder博士答辩41页PPT，面向自然语言处理的神经网络迁移学习
+
+https://mp.weixin.qq.com/s/_t9pV93uaY8gpzHZ6XgiAw
+
+面向自然语言处理的神经网络迁移学习，NLP网红Ruder博士329页论文
+
+https://mp.weixin.qq.com/s/nIV7n8o7t2F3j0XFr9v-vg
+
+迁移自适应学习最新综述
+
+https://mp.weixin.qq.com/s/b6rH-eepKDSHLnixDVvKUQ
+
+新加坡南洋理工最新37页《零样本学习综述》论文
+
+https://mp.weixin.qq.com/s/mQU8GX4Yhkbs_bCuBJRllQ
+
+大数据时代小样本如何学习？看这篇最新《小样本学习方法综述》论文
+
+https://mp.weixin.qq.com/s/-73CC3JqnM7wxEqIWCejWQ
+
+小样本学习（Few-shot Learning）综述
+
+https://mp.weixin.qq.com/s/Kw5v9nKP0FbVDH8aO7LtcA
+
+里昂大学Ying LU博士学位论文：图像分类中的迁移学习
+
+https://mp.weixin.qq.com/s/TUwhd7ruF-156GDmInpA7w
+
+《小样本学习(Few-shot learning)》最新41页综述论文，来自港科大和第四范式
 
 https://mp.weixin.qq.com/s/FHmijTVqQ26osp6PzZsbvQ
 
@@ -194,17 +234,9 @@ https://mp.weixin.qq.com/s/e4iv6FJAMZACEqWFmxeSFg
 
 让AI掌握星际争霸微操：中科院提出强化学习+课程迁移学习方法
 
-http://chenrudan.github.io/blog/2017/12/15/domainadaptation1.html
-
-迁移学习之Domain Adaptation
-
 https://mp.weixin.qq.com/s/ovSltv5Ct8AsPcxCFsYwYw
 
 用于部分迁移学习的加权对抗网络
-
-https://mp.weixin.qq.com/s/3H1u2JJ0JwfjwDKs5imcxQ
-
-零资源机器翻译的最新进展
 
 https://mp.weixin.qq.com/s/5DkqsOkTo9l9QtNp16MGOg
 
@@ -233,10 +265,6 @@ https://mp.weixin.qq.com/s/v6denCbxx6q530yAg_bq2A
 https://mp.weixin.qq.com/s/tfScYQYeCz0gEkHTnOEkIg
 
 鸡尾酒网络DCTN：源分布结合律引导的迁移学习框架
-
-https://mp.weixin.qq.com/s/2NLPma-wITAUKVnSRrHX9w
-
-小样本学习年度进展
 
 https://mp.weixin.qq.com/s/Fodqc5cw1TISFJwtrstg9Q
 
@@ -272,14 +300,6 @@ Adaptation for Neural Machine Translation
 https://mp.weixin.qq.com/s/xAWW8aqrj5Qf1KaGGZLqfQ
 
 只有100个标记数据，如何精确分类400万用户评论？
-
-https://zhuanlan.zhihu.com/p/43681859
-
-迁移学习在自然语言处理中的应用之通用语言建模
-
-https://mp.weixin.qq.com/s/Z6RyhsZfn3Fs-gfpS0_7HQ
-
-预训练模型迁移学习
 
 https://mp.weixin.qq.com/s/EWMXDH7Bx0aQaFsGkZaIbA
 
@@ -321,18 +341,6 @@ https://zhuanlan.zhihu.com/p/57930557
 
 Deep Domain Adaptation论文集(六)：源域与目标域特征空间不一致的处理方法
 
-https://mp.weixin.qq.com/s/sVukyFF18IEjUOnoj09eUQ
-
-39页《迁移学习自然语言生成》
-
-https://mp.weixin.qq.com/s/0Zcrwi3WROzm19ApDZINMQ
-
-Ruder博士答辩41页PPT，面向自然语言处理的神经网络迁移学习
-
-https://mp.weixin.qq.com/s/_t9pV93uaY8gpzHZ6XgiAw
-
-面向自然语言处理的神经网络迁移学习，NLP网红Ruder博士329页论文
-
 https://zhuanlan.zhihu.com/p/58514431
 
 Domain Adaptation：不用深度网络，如何处理源域和目标域异构问题？
@@ -341,22 +349,6 @@ https://mp.weixin.qq.com/s/U45X5kKMw_E4vfHfVmWZTA
 
 FSAF：来自CMU的Single-Shot目标检测算法
 
-https://mp.weixin.qq.com/s/nIV7n8o7t2F3j0XFr9v-vg
-
-迁移自适应学习最新综述
-
-https://mp.weixin.qq.com/s/b6rH-eepKDSHLnixDVvKUQ
-
-新加坡南洋理工最新37页《零样本学习综述》论文
-
-https://mp.weixin.qq.com/s/mQU8GX4Yhkbs_bCuBJRllQ
-
-大数据时代小样本如何学习？看这篇最新《小样本学习方法综述》论文
-
-https://mp.weixin.qq.com/s/-73CC3JqnM7wxEqIWCejWQ
-
-小样本学习（Few-shot Learning）综述
-
 https://mp.weixin.qq.com/s/45CLHvP1cumzcwMV0myj_g
 
 微软-少标签样本构建高性能文本分类器
@@ -364,14 +356,6 @@ https://mp.weixin.qq.com/s/45CLHvP1cumzcwMV0myj_g
 https://zhuanlan.zhihu.com/p/60420771
 
 领域自适应：利用DIRT-T模型提高性能
-
-https://mp.weixin.qq.com/s/Kw5v9nKP0FbVDH8aO7LtcA
-
-里昂大学Ying LU博士学位论文：图像分类中的迁移学习
-
-https://mp.weixin.qq.com/s/TUwhd7ruF-156GDmInpA7w
-
-《小样本学习(Few-shot learning)》最新41页综述论文，来自港科大和第四范式
 
 https://mp.weixin.qq.com/s/duJK5y9ZeFkYsFkAg4E2Jw
 

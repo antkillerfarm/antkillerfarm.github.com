@@ -284,6 +284,10 @@ https://mp.weixin.qq.com/s/i8aShQvJhSgP7KY5Qgm36A
 
 ReLU的继任者Mish：一个新的state of the art的激活函数
 
+https://mp.weixin.qq.com/s/XttlCNKGvGZrD7OQZOQGnw
+
+如何发现“将死”的ReLu？
+
 # ResNet
 
 无论采用何种方法，可训练的神经网络的层数都不可能无限深。有的时候，即使没有梯度消失，也存在训练退化（即深层网络的效果还不如浅层网络）的问题。

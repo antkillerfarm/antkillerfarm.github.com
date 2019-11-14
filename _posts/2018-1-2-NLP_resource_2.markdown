@@ -94,6 +94,10 @@ https://mp.weixin.qq.com/s/ae4vlWtMlKZ2zg2D-RAj9g
 
 几个可作为Baseline的文本分类模型
 
+https://mp.weixin.qq.com/s/gksUiNvX9w29wtIz185HCg
+
+NLP入门：搜狗新闻文本分类
+
 ## 情感分析
 
 https://mp.weixin.qq.com/s/mWOhh9rJru_YDwQEB34GNg
@@ -232,10 +236,6 @@ https://mp.weixin.qq.com/s/bcpjkuRtErSRfJPsAnAWWQ
 
 用深度学习做文本摘要
 
-https://zhuanlan.zhihu.com/p/67328697
-
-文本摘要简述
-
 https://mp.weixin.qq.com/s/z7BlFHfStYEtNzl1EorokA
 
 文章太长不想看？ML文本自动摘要了解一下
@@ -247,6 +247,10 @@ Python利用深度学习进行文本摘要的综合指南
 https://mp.weixin.qq.com/s/byKEY726MfEtKwsip-go1Q
 
 AI攒论文指日可待？Transformer生成论文摘要方法已出
+
+https://zhuanlan.zhihu.com/p/83596443
+
+文本自动摘要任务的“不完全”心得总结
 
 ## 句法分析
 
@@ -391,19 +395,3 @@ https://mp.weixin.qq.com/s/ZexnTKHEFKPso5fhZNQfQQ
 https://mp.weixin.qq.com/s/jifGPaxdqVii3q6gG4F2ag
 
 Google工程师带你了解聊天机器人的工作原理和未来发展
-
-https://mp.weixin.qq.com/s/wU3sZKQ6gkYHeTEEClB4Gw
-
-通过深度模型加深和拓宽聊天话题，让你与机器多聊两句
-
-https://mp.weixin.qq.com/s/55-YouMoqOtGFPpIsGWwOg
-
-Google工程师带你看遍聊天机器人的前世今生
-
-https://mp.weixin.qq.com/s/G0xrlTHfxKHikYj8dGWRWQ
-
-Transformer聊天机器人教程
-
-https://mp.weixin.qq.com/s/qfs2-S_02H1DRmHo27hpow
-
-DeepPavlov：一个面向端到端对话系统和聊天机器人的开源库
