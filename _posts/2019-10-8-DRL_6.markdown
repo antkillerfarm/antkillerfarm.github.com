@@ -6,6 +6,47 @@ category: DRL
 
 # MARL（续）
 
+MARL的结构一般如下图所示。
+
+![](/images/img3/MARL_2.png)
+
+**静态博弈**：static/stateless game是指没有状态s，不存在动力学使状态能够转移的博弈。例如一个矩阵博弈。
+
+**阶段博弈**：stage game，是随机博弈的组成成分，状态s是固定的，相当于一个状态固定的静态博弈，随机博弈中的Q值函数就是该阶段博弈的奖励函数。若干状态的阶段博弈组成一个随机博弈。
+
+**重复博弈**：智能体重复访问同一个状态的阶段博弈，并且在访问同一个状态的阶段博弈的过程中收集其他智能体的信息与奖励值，并学习更好的Q值函数与策略。
+
+----
+
+MARL的目标是找到每一个状态的纳什均衡策略，然后将这些策略联合起来。
+
+<div style="text-align: center;">
+<table>
+  <tr>
+    <td colspan="2" rowspan="2"></td>
+    <td colspan="3">Game setting</td>
+  </tr>
+  <tr>
+    <td>Stateless Games</td>
+    <td>Team Markov Games</td>
+    <td>General Markov Games</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Information<br/>Requirement</td>
+    <td>Independent Learners</td>
+    <td>Stateless Q-learning<br/>Learning Automata<br/>IGA<br/>FMQ<br/>Commitment Sequences<br/>Lenient Q-learners</td>
+    <td>Policy Search<br/>Policy Gradient</td>
+    <td>MG-ILA<br/>(WoLF-)PG<br/>Learning of Coordination<br/>Independent RL<br/>CQ-learning</td>
+  </tr>
+  <tr>
+    <td>Joint Action Learners</td>
+    <td></td>
+    <td>Distributed- Q<br/>Sparse Tabular Q<br/>Utile Coordination</td>
+    <td>Nash-Q<br/>Friend-or-Foe Q<br/>Asymmetric Q<br/>Joint Action Learning<br/>Correlated-Q</td>
+  </tr>
+</table>
+</div>
+
 参考：
 
 https://zhuanlan.zhihu.com/c_1061939147282915328
@@ -337,67 +378,3 @@ https://mp.weixin.qq.com/s/spRlzjFTh4KeyFfd8pmZgw
 https://mp.weixin.qq.com/s/ruAAQEjPIDPWPiuPepKU6Q
 
 Deep Reinforcement Learning: An Overview
-
-https://mp.weixin.qq.com/s/FjmlXqlpaRVLdAbjqspOJA
-
-这是一份你必须学习的强化学习算法清单
-
-https://mp.weixin.qq.com/s/lfXQqllfFPtuNIrQZiD-NQ
-
-深度强化学习十大原则
-
-https://mp.weixin.qq.com/s/I8IwPCY6-zocJKFXMr6rUg
-
-深度强化学习的18个关键问题
-
-https://mp.weixin.qq.com/s/_lmz0l1vP_CQ6p6DdFnHWA
-
-谷歌大脑工程师的深度强化学习劝退文
-
-https://zhuanlan.zhihu.com/p/39999667
-
-强化学习路在何方？
-
-https://mp.weixin.qq.com/s/oA98YyLqn1B22QZ5b_iDVA
-
-IJCAI 2018：聚焦强化学习的学习效率
-
-https://mp.weixin.qq.com/s/FtHJCXniVne2TGKfgCeS9w
-
-Pieter Abbeel：深度强化学习加速方法
-
-https://mp.weixin.qq.com/s/xlnwB9e1ks-4M4djnyIAyQ
-
-解读72篇DeepMind深度强化学习论文
-
-https://mp.weixin.qq.com/s/VYIyWRykREjOyLu4YDhLeA
-
-61篇NIPS2019深度强化学习论文及部分解读
-
-https://mp.weixin.qq.com/s/e6QOz-MQSn7n53EPtpw64w
-
-DeepMind强化学习综述：她可以很快，但快从慢中来
-
-https://zhuanlan.zhihu.com/p/72642285
-
-基于模型的强化学习论文合集
-
-https://zhuanlan.zhihu.com/p/77976582
-
-强化学习并行训练论文合集
-
-https://mp.weixin.qq.com/s/sHP03DAeZvdBxwVPuSNRPg
-
-如何丝滑地入门神经网络？写个AI赛车游戏，只训练4代就能安全驾驶
-
-https://mp.weixin.qq.com/s/1SZKhG1ZbD1pl-3YQD_umg
-
-6行代码搞定基本的RL算法，速度围观Reddit高赞帖
-
-https://mp.weixin.qq.com/s/7BsXPQ8wC6_fHulU63ZQiQ
-
-当强化学习遇见泛函分析
-
-https://mp.weixin.qq.com/s/6n5HawyR4AgH8Dq0gJMw2g
-
-强化学习的基本概念与代码实现

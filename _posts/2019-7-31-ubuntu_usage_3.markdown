@@ -86,6 +86,62 @@ N.B.:nota bene 注意,留心
 
 # DRL参考资源+
 
+https://mp.weixin.qq.com/s/pM8oykHmtu5O5jYJBZjO_w
+
+伯克利研究人员使用内在激励，教AI学会好奇
+
+https://mp.weixin.qq.com/s/3WI3QgfHXcrCPbvmHWOEkg
+
+强化学习在生成对抗网络文本生成中的作用
+
+https://mp.weixin.qq.com/s/IvR0O6dpz2GJCG7UQb5kUQ
+
+清华大学冯珺：基于强化学习的关系抽取和文本分类
+
+https://zhuanlan.zhihu.com/p/31579144
+
+让我们从零开始做一个机械手臂(强化学习)
+
+https://mp.weixin.qq.com/s/FiR_GRYqJYpJRO-2p44-Cg
+
+伯克利强化学习新研究：机器人只用几分钟随机数据就能学会轨迹跟踪
+
+https://mp.weixin.qq.com/s/_dHjZQ_7_7H34PHhV_lC3w
+
+全新强化学习算法详解，看贝叶斯神经网络如何进行策略搜索
+
+https://mp.weixin.qq.com/s/YCPXkFzYdC1gMfnprZsVXg
+
+如何让机器人多技能？通过最大熵强化学习
+
+https://mp.weixin.qq.com/s/dbtdNsT3nvLt4UKsrNsn_Q
+
+量化深度强化学习算法的泛化能力
+
+https://mp.weixin.qq.com/s/K-z_dX2-NepkEHbr45QlvQ
+
+微软研究院开源项目TextWorld：可用于强化学习训练的文本游戏
+
+https://mp.weixin.qq.com/s/K2DW_ntSWrlySpxgorF9dA
+
+Python强化学习实战，Anaconda公司的高级数据科学家讲解
+
+https://zhuanlan.zhihu.com/p/32089849
+
+概要：NIPS 2017 Deep Learning for Robotics Keynote
+
+https://mp.weixin.qq.com/s/CCQOHRCAolsorm8FEPdjoQ
+
+什么时候强化学习未必好用？
+
+https://mp.weixin.qq.com/s/Ctn1Wr68lph1UK_wjfCY1Q
+
+策略梯度搜索：不使用搜索树的在线规划和专家迭代
+
+https://mp.weixin.qq.com/s/78ir-Z4ch8_aVpjC6aCPGg
+
+DeepMind综述深度强化学习中的快与慢，智能体应该像人一样学习
+
 https://mp.weixin.qq.com/s/ij3bf61Pu7lrX0WijhbDeA
 
 骑驴找马：利用深度强化学习模型定位新物体

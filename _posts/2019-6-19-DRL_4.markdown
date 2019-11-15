@@ -1,10 +1,26 @@
 ---
 layout: post
-title:  深度强化学习（四）——PPO, IMPALA, Hierarchical RL, OpenAI
+title:  深度强化学习（四）——DDPG, PPO, IMPALA, Hierarchical RL, OpenAI
 category: DRL 
 ---
 
-# DDPG（续）
+# DDPG
+
+Deepmind在2016年提出了DDPG（Deep Deterministic Policy Gradient）。从通俗角度看：**DDPG=DPG+A2C+Double DQN**。
+
+![](/images/img3/DDPG.png)
+
+上图是DDPG的网络结构图。仿照Double DQN的做法，DDPG分别为Actor和Critic各创建两个神经网络拷贝,一个叫做online，一个叫做target。即：
+
+- Actor（策略网络） online network（动作估计网络）
+
+- Actor（策略网络） target network（动作现实网络）
+
+- Critic（Q网络） online network（状态估计网络）
+
+- Critic（Q网络） target network（状态现实网络）
+
+简单来说就是，Actor online network和Critic online network组成一对Actor-Critic；而Actor target network和Critic target networ组成另一对Actor-Critic。
 
 当然，DDPG实际的步骤远比示意图复杂的多，可参见下图，这里不再赘述。
 
@@ -299,9 +315,3 @@ Reinforcement Learning with Prediction-Based Rewards
 代码：
 
 https://github.com/openai/random-network-distillation
-
-# AlphaGo
-
-## 概述
-
-AlphaGo算是这波AI浪潮的里程碑事件了。如果说AlexNet让学术界重新认识了DL的话，AlphaGo则让大众都认识到了DL的威力。我也是在AlphaGo的感召之下，投身ML/DL领域的（2016.7）。因此了解AlphaGo的原理，就成为了我一直以来的目标。岂料直到三年多之后（2019.11），我才能真正看懂AlphaGo。

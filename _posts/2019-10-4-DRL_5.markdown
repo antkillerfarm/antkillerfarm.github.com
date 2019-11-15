@@ -6,7 +6,9 @@ category: DRL
 
 # AlphaGo
 
-## 概述（续）
+## 概述
+
+AlphaGo算是这波AI浪潮的里程碑事件了。如果说AlexNet让学术界重新认识了DL的话，AlphaGo则让大众都认识到了DL的威力。我也是在AlphaGo的感召之下，投身ML/DL领域的（2016.7）。因此了解AlphaGo的原理，就成为了我一直以来的目标。岂料直到三年多之后（2019.11），我才能真正看懂AlphaGo。
 
 在讲解原理之前，我们首先回顾一下AlphaGo的各个重要事件。
 
@@ -32,6 +34,10 @@ https://deepmind.com/research/alphago/alphago-games-simplified-chinese/
 
 训练8小时打败了与李世石对战的AlphaGo Lee！
 
+这里包含了AlphaGo一系列战役的棋谱：
+
+http://www.alphago-games.com/
+
 ## DarkForest
 
 DarkForest是田渊栋2015年11月的作品，虽然棋力和稍后的AlphaGo相去甚远，但毕竟也算是用到了RL和DNN了。
@@ -56,6 +62,8 @@ AlphaGo的分析
 
 ![](/images/img3/DarkForestGo.png)
 
+上图是DarkForest的网络结构图。其中的细节，我们将在讲解AlphaGo的时候，再细说。
+
 ## AlphaGo
 
 论文：
@@ -63,6 +71,8 @@ AlphaGo的分析
 《Mastering the game of Go with deep neural networks and tree search》
 
 
+
+![](/images/img3/AlphaGo.png)
 
 ## AlphaGo Zero
 
@@ -151,10 +161,6 @@ DeepMind新一代围棋程序AlphaGo Zero再次登上Nature
 https://www.zhihu.com/question/66861459
 
 如何评价DeepMind发表在Nature上的AlphaGo Zero？
-
-http://www.alphago-games.com/
-
-AlphaGo的棋谱
 
 https://deepmind.com/blog/alphago-zero-learning-scratch/
 
@@ -272,6 +278,14 @@ https://mp.weixin.qq.com/s/aAF0Gr7yEPkHRLASecJipw
 
 百度正用谷歌AlphaGo，解决一个比围棋更难的问题
 
+https://hackernoon.com/the-3-tricks-that-made-alphago-zero-work-f3d47b6686ef
+
+The 3 Tricks That Made AlphaGo Zero Work
+
+https://web.stanford.edu/~surag/posts/alphazero.html
+
+A Simple Alpha(Go) Zero Tutorial
+
 # MARL
 
 Multi-agent Reinforcement Learning(MARL)，一般被称为多智能体强化学习。与之相对的则是Single-agent Reinforcement Learning(SARL)。
@@ -325,18 +339,3 @@ S为系统状态，一般指多智能体的联合状态，即每个智能体的�
 T为状态转移函数，指给定玩家当前状态和联合行为时，下一状态的概率分布。
 
 R为回报函数。它描述了多智能体之间的关系。当每个智能体的回报函数一致时，则表示智能体之间是合作关系；当回报函数相反时，则表示智能体之间是竞争关系，当回报函数介于两者之间，则是混合关系。
-
-MARL的结构一般如下图所示。
-
-![](/images/img3/MARL_2.png)
-
-**静态博弈**：static/stateless game是指没有状态s，不存在动力学使状态能够转移的博弈。例如一个矩阵博弈。
-
-**阶段博弈**：stage game，是随机博弈的组成成分，状态s是固定的，相当于一个状态固定的静态博弈，随机博弈中的Q值函数就是该阶段博弈的奖励函数。若干状态的阶段博弈组成一个随机博弈。
-
-**重复博弈**：智能体重复访问同一个状态的阶段博弈，并且在访问同一个状态的阶段博弈的过程中收集其他智能体的信息与奖励值，并学习更好的Q值函数与策略。
-
-----
-
-MARL的目标是找到每一个状态的纳什均衡策略，然后将这些策略联合起来。
-
