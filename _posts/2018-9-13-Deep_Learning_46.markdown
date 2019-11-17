@@ -395,3 +395,7 @@ ESIR:一种基于迭代矫正的端到端场景文本识别方法
 https://mp.weixin.qq.com/s/MDxltLKP-SQf_31Zp1RL8A
 
 文本识别新王者CharNet：卷积字符网络
+
+https://mp.weixin.qq.com/s/H8ECjqEcIjcm5YNFu6ONdw
+
+开源OCR文本检测器，基于TextBoxes++和RetinaNet

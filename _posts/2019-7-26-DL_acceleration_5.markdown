@@ -309,3 +309,7 @@ VarGFaceNet：地平线提出轻量级、有效可变组卷积的人脸识别网
 https://mp.weixin.qq.com/s/cYimAphdyFO_XqKfT2Hbeg
 
 如何使用强化学习进行模型剪枝
+
+https://mp.weixin.qq.com/s/SgELZgoHzIvbg2-jzJw6Tw
+
+港科大、清华与旷视提出基于元学习的自动化神经网络通道剪枝网络

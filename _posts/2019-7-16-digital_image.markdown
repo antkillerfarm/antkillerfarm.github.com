@@ -338,6 +338,10 @@ https://mp.weixin.qq.com/s/k9gff0Ote_V9qtN7HAruBA
 
 工业相机的sensor
 
+https://mp.weixin.qq.com/s/kvINl4pL4_wD71e33jaUSg
+
+下一代cmos image sensor----有机光导薄膜图像传感器
+
 # 编译原理
 
 https://zhuanlan.zhihu.com/frozengene

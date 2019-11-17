@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/qaLQK3uzaeyp68AbL0aOOQ
 
 怎么在视频标注上省钱？这里有一个面向视频推荐的多视图主动学习
 
+https://mp.weixin.qq.com/s/-cXOUw9zJteVUkbpRMIWtQ
+
+何恺明一作，刷新7项检测分割任务，无监督预训练完胜有监督
+
 # 图像检索
 
 ## 传统方法

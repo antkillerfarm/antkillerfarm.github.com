@@ -128,6 +128,10 @@ https://github.com/lihanghang/Knowledge-Graph
 
 知识图谱深度学习相关资料整理
 
+https://mp.weixin.qq.com/s/V_VDw-rRF49qXKTDG1Mpew
+
+知识图谱论文大合集，这份干货满满的笔记解读值得收藏
+
 https://mp.weixin.qq.com/s/aLljr0R5w7OcidbXf71FQw
 
 知识图谱火了，但你知道它的发展历史吗？
@@ -332,10 +336,6 @@ https://mp.weixin.qq.com/s/An9mGawI8mhtlqyrVxTzYw
 
 SIGIR 2018基于知识图谱的文本信息检索
 
-https://mp.weixin.qq.com/s/V_VDw-rRF49qXKTDG1Mpew
-
-知识图谱论文大合集，这份干货满满的笔记解读值得收藏
-
 https://mp.weixin.qq.com/s/RpPEqjRUnBIHpX7_guItoQ
 
 如何构建行业知识图谱
@@ -348,10 +348,6 @@ https://mp.weixin.qq.com/s/sCpKkkf2Tj37Nr5j7S7M6Q
 
 基于Freebase的问答研究
 
-https://mp.weixin.qq.com/s/XTgYPCejKwy1WyQYQYXZvQ
-
-基于知识库的问答：生成查询图进行语义分析
-
 https://mp.weixin.qq.com/s/kTrBLTH46KtfcAK4aZ2H0A
 
 请查收本周份“知识图谱”专题论文解读
@@ -359,6 +355,10 @@ https://mp.weixin.qq.com/s/kTrBLTH46KtfcAK4aZ2H0A
 https://mp.weixin.qq.com/s/4huHklyr_H6fFDb6VJ7ozw
 
 知识图谱的前世今生：为什么我们需要知识图谱？
+
+https://mp.weixin.qq.com/s/XTgYPCejKwy1WyQYQYXZvQ
+
+基于知识库的问答：生成查询图进行语义分析
 
 https://mp.weixin.qq.com/s/8REGSXSpXXvz0YIMspZm4g
 

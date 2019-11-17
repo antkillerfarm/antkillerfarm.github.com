@@ -168,6 +168,14 @@ ncorporating Nesterov Momentum into Adam
 
 《ADASECANT: Robust Adaptive Secant Method for Stochastic Gradient》
 
+## cycle参数
+
+在实际的工程实践中，某些优化策略还提供了cycle参数。它的效果如下所示：
+
+![](/images/img3/Cycle.jpg)
+
+cycle参数的初衷是为了防止网络后期lr十分小导致一直在某个局部最小值中振荡，突然调大lr可以跳出注定不会继续增长的区域探索其他区域。
+
 ## 二阶Optimizer
 
 虽然二阶Optimizer的收敛效果优于一阶Optimizer，但由于计算量较大，通常用的较少。

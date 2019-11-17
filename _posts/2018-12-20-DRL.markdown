@@ -190,6 +190,10 @@ https://mp.weixin.qq.com/s/QZiBPOlp4mlTxIlEbhtgWg
 
 138页“策略优化”PPT--Pieter Abbeel
 
+https://mp.weixin.qq.com/s/kFDITf4-wjPSEsByDinInQ
+
+DeepMind Nando（原牛津大学教授）强化学习最新进展，含图文、公式和代码，附102页PPT下载
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》

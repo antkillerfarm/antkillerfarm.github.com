@@ -4,9 +4,7 @@ title:  C/C++编程心得（二）
 category: language 
 ---
 
-# C/C++编程心得
-
-## 动态链接
+# 动态链接
 
 这两天实践了一下怎样在linux下创建动态链接。感觉网上的资料虽然翔实，但仍然有疏漏之处。
 
@@ -42,11 +40,11 @@ category: language
 
 3）显式调用时,要注意动态库函数的声明,可能要加`extern "C"`才能正常执行。（显式调用是运行时加载，所以编译能过，执行却不对了。）可以用nm命令看看链接库的符号表，以确定问题所在。
 
-## strtok
+# strtok
 
 strtok函数多用于分割字符串，但它会改变被分割字符串的值。因此，如果该字符串以后还有用的话，需要首先复制该字符串，然后对复制的字符串执行strtok函数。
 
-## malloc与calloc
+# malloc与calloc
 
 两者都是动态分配内存。
 
@@ -64,13 +62,13 @@ http://www.fuzihao.org/blog/2016/02/10/C-%E5%AE%9E%E7%8E%B0%E6%83%B0%E6%80%A7%E6
 
 C++实现惰性求值
 
-## gcc链接器
+# gcc链接器
 
-### gcc和ld的差异
+## gcc和ld的差异
 
 理论上gcc做链接和ld做链接，应该是一样的效果，然而实际情况要复杂一些。有的厂商的工具链会给gcc添加一些环境变量之类的私货，所以两者的行为就变的很有差异了。遇到这种问题，互换是一种好的解决问题的思路。
 
-### 链接顺序
+## 链接顺序
 
 有的链接器对链接顺序有要求，一般按照c代码、自定义库、标准库的顺序来链接，也就是越基础底层的库，越在后面。（这个顺序正好和声明的顺序相反）
 
@@ -94,7 +92,7 @@ https://stackoverflow.com/questions/27475977/c-undefined-reference-to-sqrt-even-
 
 C - undefined reference to “sqrt” even with '-lm'
 
-## 左值和右值
+# 左值和右值
 
 **左值**是可以放在赋值号左边可以被赋值的值；左值必须要在内存中有实体；
 
@@ -155,7 +153,7 @@ https://eli.thegreenplace.net/2014/perfect-forwarding-and-universal-references-i
 
 Perfect forwarding and universal references in C++
 
-## RAII
+# RAII
 
 资源获取即初始化（Resource Acquisition Is Initialization），或称RAII，是一种C++编程技术，它将必须在使用前请求的资源（分配的堆内存、执行线程、打开的套接字、打开的文件、锁定的互斥体、磁盘空间、数据库连接等——任何存在受限供给中的事物）的生命周期绑定与一个对象的生存期相绑定。
 
@@ -171,7 +169,7 @@ https://mp.weixin.qq.com/s/m44zVWMvactsLPjKsFnlSg
 
 RAII惯用法：C++资源管理的利器
 
-## 各类ptr
+# 各类ptr
 
 **auto_ptr**：它允许程序员创建一个指向某种资源的指针对象，当该对象离开它的作用域时，它所指向的资源也会被自动释放。
 
@@ -183,7 +181,7 @@ RAII惯用法：C++资源管理的利器
 
 unique_ptr早先在boost库中的时候，也叫做scoped_ptr。
 
-**shared_ptr**：为多个拥有者管理内存中对象的生命周期而设计的。在你初始化一个 shared_ptr 后，你可以复制它，把函数参数的值递给它，并把它分配给其它 shared_ptr 实例。所有实例指向同一个对象，并共享访问一个“控制块”，即每当一个新的shared_ptr 被添加时，递增和递减引用计数，超出范围，则复位。当引用计数到达零时，控制块删除内存资源和自身。
+**shared_ptr**：为多个拥有者管理内存中对象的生命周期而设计的。在你初始化一个shared_ptr后，你可以复制它，把函数参数的值递给它，并把它分配给其它shared_ptr实例。所有实例指向同一个对象，并共享访问一个“控制块”，即每当一个新的shared_ptr被添加时，递增和递减引用计数，超出范围，则复位。当引用计数到达零时，控制块删除内存资源和自身。
 
 **weak_ptr**：如果对象A中有对象B的shared_ptr，而对象B中又有对象A的shared_ptr，那么就会出现循环引用的情况。这时可以使用weak_ptr。两者的区别在于新建shared_ptr会增加引用计数，而weak_ptr不会。
 
@@ -206,7 +204,7 @@ std::unique_ptr<std::FILE, decltype(&close_file)> fp(std::fopen("demo.txt", "r")
 
 - 方法2：`std::make_unique<int>(1);`
 
-## decltype
+# decltype
 
 和auto的用法类似，auto不仅要推导类型，还要定义变量，而decltype则只进行类型推导。
 
@@ -227,7 +225,7 @@ https://www.cnblogs.com/npbool/p/3433360.html
 
 C++11初探：类型推导，auto和decltype
 
-## 类型转换
+# 类型转换
 
 **static_cast**：基本等同于C语言的强制类型转换，只有很小的差异。
 

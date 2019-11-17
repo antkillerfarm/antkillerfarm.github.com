@@ -66,6 +66,10 @@ https://mp.weixin.qq.com/s/CvV16eK9EUm148dOw0EEcA
 
 TensorFlow开源NSL神经结构学习框架
 
+https://mp.weixin.qq.com/s/Uf8l2yn5iCFCUFWVvIvAOw
+
+腾讯开源图计算框架Plato
+
 ## 参考
 
 https://github.com/thunlp/GNNPapers
@@ -79,6 +83,10 @@ https://github.com/nnzhan/Awesome-Graph-Neural-Networks
 https://github.com/DeepGraphLearning/LiteratureDL4Graph
 
 图深度学习资源汇总
+
+https://github.com/IndexFziQ/GNN4NLP-Papers
+
+自然语言领域中图神经网络模型（GNN）应用现状（论文列表）
 
 https://github.com/jdlc105/Must-read-papers-and-continuous-tracking-on-Graph-Neural-Network-GNN-progress
 
@@ -246,7 +254,7 @@ https://mp.weixin.qq.com/s/PkUJsnZdihPM7q9BpvO8Ag
 
 https://mp.weixin.qq.com/s/PxNGJ0hcmCo-2zvWD-rfug
 
-GCN作者Thomas Kipf 最新Talk：利用图神经网络进行无监督学习
+GCN作者Thomas Kipf最新Talk：利用图神经网络进行无监督学习
 
 https://mp.weixin.qq.com/s/CpDZEqo14X_lCBh6i7feIA
 
@@ -316,6 +324,10 @@ https://mp.weixin.qq.com/s/IHXDqlU1dURrwAIwps50_g
 
 新加坡国立大学：基于图学习与推理的推荐系统，附133页ppt
 
+https://mp.weixin.qq.com/s/8jCX3Wi-w-b9AbEx9sa36A
+
+58页PPT揭示图神经网络研究最新进展
+
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
 
 Bengio等人提出图注意网络架构GAT，可处理复杂结构图
@@ -383,15 +395,3 @@ https://mp.weixin.qq.com/s/xTZbfiLYHB64AJJRcw04qQ
 https://mp.weixin.qq.com/s/9fFjVSiMg-LwddXfNJuKuw
 
 DeepMind开源图网络库，一种结合图和神经网络的新方法
-
-https://mp.weixin.qq.com/s/5DmpgPN4t3p3H53Xu7_-3A
-
-北大、微软亚洲研究院：高效的大规模图神经网络计算
-
-https://mp.weixin.qq.com/s/BFJD8i_yg1Y6fxZS5or-rw
-
-Bengio最新论文提出GibbsNet：深度图模型中的迭代性对抗推断
-
-https://zhuanlan.zhihu.com/p/48834333
-
-GCN in 2018：2018年顶会论文中的图卷积神经网络的理论与应用

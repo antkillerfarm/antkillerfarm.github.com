@@ -276,6 +276,10 @@ https://mp.weixin.qq.com/s/A1pbiU5PA9Owe69lGX9afw
 
 活体识别告诉你为什么照片无法破解人脸系统
 
+https://mp.weixin.qq.com/s/rroBWY0roDdRap28i-KYtQ
+
+初学活体检测与伪造人脸检测必读的文章
+
 https://mp.weixin.qq.com/s/sPnoZyCkAhcCs_GtA79DrA
 
 单目可见光静默活体检测Binary or Auxiliary Supervision论文解读

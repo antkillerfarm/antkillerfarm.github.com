@@ -42,6 +42,10 @@ https://zhuanlan.zhihu.com/p/55036597
 
 样本贡献不均：Focal Loss和 Gradient Harmonizing Mechanism
 
+https://mp.weixin.qq.com/s/LfCuOEndS4Y5dPqXTsE_hA
+
+剖析Focal Loss损失函数： 消除类别不平衡+挖掘难分样本
+
 ## Other Loss
 
 https://mp.weixin.qq.com/s/7Jg-YvS3nvcPJ-zYhK96EA

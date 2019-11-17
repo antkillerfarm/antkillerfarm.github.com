@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十四）——概率图模型, 机器学习语录
+title:  机器学习（三十四）——概率图模型, 机器学习语录, CRF
 category: ML 
 ---
 
@@ -209,6 +209,10 @@ https://mp.weixin.qq.com/s/JsqhwwJ7wnNcgOuAR6ekxw
 https://mp.weixin.qq.com/s/79M6ehrQTiUc0l_sO9fUqA
 
 用于序列标注问题的条件随机场（Conditional Random Field, CRF）
+
+https://zhuanlan.zhihu.com/p/78006020
+
+NCRF++学习笔记
 
 ## BiLSTM+CRF
 

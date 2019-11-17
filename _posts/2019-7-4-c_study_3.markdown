@@ -4,9 +4,7 @@ title:  C/C++编程心得（三）
 category: language 
 ---
 
-# C/C++编程心得
-
-## 类型转换（续）
+# 类型转换（续）
 
 {% highlight cpp %}
 template <class Derived, class Base>
@@ -26,7 +24,7 @@ https://www.cnblogs.com/chenyangchun/p/6795923.html
 
 C++强制类型转换：static_cast、dynamic_cast、const_cast、reinterpret_cast
 
-## std::bind & std::placeholders
+# std::bind & std::placeholders
 
 {% highlight cpp %}
 void f(int n1, int n2, int n3, const int& n4, int n5)
@@ -38,7 +36,7 @@ auto f2 = std::bind(f, _3, std::bind(g, _3), _3, 4, 5);
 f2(10, 11, 12); // 进行到 f(12, g(12), 12, 4, 5); 的调用
 {% endhighlight %}
 
-## 不定参数
+# 不定参数
 
 {% highlight cpp %}
 int sum(int count, ...)
@@ -110,7 +108,7 @@ https://www.jianshu.com/p/d22904f30930
 
 C++11新特性--不定参数模板与std::tuple、std::bind实现原理
 
-## 特化（traits）
+# 特化（traits）
 
 {% highlight cpp %}
 template<class T1, class T2>      // 普通版本，有两个模板参数
@@ -144,7 +142,7 @@ https://www.cnblogs.com/mangoyuan/p/6446046.html
 
 C++ traits技术浅谈
 
-## typename
+# typename
 
 `vector<T>::size_type`可能有三种解释：
 
@@ -162,7 +160,7 @@ https://blog.csdn.net/zhangxiao93/article/details/50569924
 
 C++ typedef typename作用
 
-## C++ thread
+# C++ thread
 
 长期以来，C/C++的线程编程主要依赖pthread库，但是这个情况在C++ 11之后有所改观，因为C++ 11的标准库已经支持thread了。
 
@@ -198,7 +196,7 @@ https://segmentfault.com/a/1190000006679917
 
 条件变量（Condition Variable）
 
-## explicit
+# explicit
 
 可以通过将构造函数声明为explicit，来防止隐式类型转换。explicit关键字只能用于类内部的构造函数声明上，而不能用在类外部的函数定义上。
 
@@ -208,7 +206,7 @@ https://www.cnblogs.com/winnersun/archive/2011/07/16/2108440.html
 
 C++中explicit关键字的作用
 
-## std::tuple
+# std::tuple
 
 {% highlight cpp %}
 auto tuple = std::make_tuple(1, 'A', "test");
@@ -217,7 +215,7 @@ std::cout << std::get<1>(tuple) << std::endl;
 std::cout << std::get<2>(tuple) << std::endl;
 {% endhighlight %}
 
-## std::tie
+# std::tie
 
 可用tuple或pair返回多个返回值，然后用tie进行解包。这里的语法非常类似python。
 
@@ -233,7 +231,7 @@ std::tie(a , str) = fun_tie(12, std::string("Pony Ma"));
 std::cout << a << "," << str << std::endl;
 {% endhighlight %}
 
-## 模板实参推导
+# 模板实参推导
 
 {% highlight cpp %}
 template<typename To, typename From> To convert(From f);
@@ -247,7 +245,7 @@ void g(double d)
 
 除了特化模板之外，从函数参数推断模板参数也是可以的，如上例中的模板参数`From`就可以从使用该模板参数的函数参数`f`的类型，倒推出来。
 
-## Defaulted & Deleted
+# Defaulted & Deleted
 
 {% highlight cpp %}
 class X{
@@ -272,7 +270,7 @@ X x;
 
 C++11标准新特性：Defaulted和Deleted函数
 
-## 打印vector的N种方法
+# 打印vector的N种方法
 
 {% highlight cpp %}
 auto vec = make_index_vector(std::make_index_sequence<10>());
@@ -285,7 +283,7 @@ std::for_each(std::begin(vec),std::end(vec),[](int n){std::cout<<n<<" ";});
 std::cout << std::endl;
 {% endhighlight %}
 
-## 小细节
+# 小细节
 
 对于std::vector来说，begin()/end()返回iterator，而front()/back()返回的是element。
 
@@ -312,7 +310,7 @@ map：存储key-value pair。`iterator->first`指向key，而`iterator->second`�
 
 set：只有value。set也有unordered_set这样的变种。
 
-## 参考
+# 参考
 
 https://mp.weixin.qq.com/s/Hpn7KqYlBKz0JdryiozqyQ
 
@@ -321,3 +319,21 @@ https://mp.weixin.qq.com/s/Hpn7KqYlBKz0JdryiozqyQ
 https://www.cnblogs.com/wuchanming/p/3913492.html
 
 emplace_back与push_back的区别
+
+https://zhuanlan.zhihu.com/p/82895086
+
+当我们谈论C++时，我们在谈论什么？
+
+# K&R风格
+
+在C语言的函数定义上，我们通常用的函数定义方式为ANSI C的函数定义方式。但是在C语言之父创立C语言之时，函数的定义形式并非现在我们所见到的形式。
+
+这种风格被称为K&R风格，多见于一些历史悠久的项目或者老的书籍中。出于兼容性考虑，现代的C编译器仍然支持K&R风格。
+
+>记得大学学C语言，用的是谭浩强的书。当时，授课老师看不上谭的书，于是另外推荐了一本，那本书更古老，用的就是所谓的K&R风格。。。但在实际工作中，从来没见过K&R风格的代码。。。
+
+详见：
+
+http://blog.chinaunix.net/uid-7426920-id-2627743.html
+
+ANSI和K&R两种函数定义风格

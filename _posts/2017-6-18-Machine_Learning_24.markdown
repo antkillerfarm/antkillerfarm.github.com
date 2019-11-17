@@ -191,6 +191,10 @@ https://mp.weixin.qq.com/s/ptI6cBxtykTQoljZR94RTw
 
 从入门到冠军：中国移动人群画像赛TOP1经验分享
 
+https://mp.weixin.qq.com/s/mSBwsMpOcn4RyVsyWSaYnQ
+
+用户画像必会的行为偏好计算方法
+
 # 特征工程
 
 https://mp.weixin.qq.com/s/ibiElLIgrT3wYx3tDYMMTw

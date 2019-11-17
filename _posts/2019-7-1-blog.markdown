@@ -218,6 +218,10 @@ https://mp.weixin.qq.com/s/To3pnx1hVq_4p7UnQVMw9A
 
 斯坦福大学&DeepMind联合提出机器人控制新方法，RL+IL端到端地学习视觉运动策略
 
+https://mp.weixin.qq.com/s/O0Q1XoTA-7Yshr1ZqOZ90w
+
+加州理工：什么是模仿学习, 这62页ppt带你了解进展
+
 # RL与神经科学
 
 Pavlov Model（1901）

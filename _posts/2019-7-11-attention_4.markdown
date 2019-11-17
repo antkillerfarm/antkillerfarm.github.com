@@ -270,6 +270,10 @@ https://mp.weixin.qq.com/s/0EDN-ILeL_diZ1G11ikwjw
 
 T5模型：NLP Text-to-Text预训练模型超大规模探索
 
+https://zhuanlan.zhihu.com/p/89719631
+
+T5: Text-to-Text Transfer Transformer阅读笔记
+
 https://mp.weixin.qq.com/s/X1mLXPzJU7k_ANMzvVPxjA
 
 BERT、RoBERTa、DistilBERT与XLNet，我们到底该如何选择？

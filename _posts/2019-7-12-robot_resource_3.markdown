@@ -274,6 +274,10 @@ https://zhuanlan.zhihu.com/p/86185203
 
 行人的行为意图建模和预测(下)
 
+https://zhuanlan.zhihu.com/p/90773462
+
+多传感器数据深度图的融合：最近基于深度学习的方法
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。

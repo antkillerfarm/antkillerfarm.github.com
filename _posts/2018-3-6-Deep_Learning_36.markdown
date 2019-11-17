@@ -273,3 +273,7 @@ https://mp.weixin.qq.com/s/9DWyX2D6KlOVAJZoPgonYA
 https://mp.weixin.qq.com/s/rAbSWoo3WMdHsHaOx_x6fw
 
 阿里巴巴素材治理算法介绍，为电商大促保驾护航
+
+https://mp.weixin.qq.com/s/8M3MCrEFktUJPr7UsdMMew
+
+Google最新论文：Youtube视频推荐如何做多目标排序

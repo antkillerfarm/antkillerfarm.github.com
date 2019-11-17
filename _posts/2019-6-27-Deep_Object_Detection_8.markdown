@@ -201,3 +201,7 @@ https://mp.weixin.qq.com/s/IRD0iIVXyENlUOyfSbmlBA
 https://mp.weixin.qq.com/s/10EhUj03NGPTnyOCvLqDQw
 
 港大提出视频显著物体检测算法MGA，大幅提升分割精度
+
+https://mp.weixin.qq.com/s/mqB9wtUjMJ1EhINrUUEf9Q
+
+香港中文大学博士陈恺：物体检测中的训练样本采样

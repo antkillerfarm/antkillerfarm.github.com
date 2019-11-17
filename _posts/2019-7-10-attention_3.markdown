@@ -184,6 +184,10 @@ https://mp.weixin.qq.com/s/dWzpqP_U8Y5DyfWHVTl5Vg
 
 BERT瘦身之路：Distillation，Quantization，Pruning
 
+https://mp.weixin.qq.com/s/DAsY9-Dl5T6peo_71ICOtw
+
+基于ALBERT的文本相似度计算
+
 ## 参考
 
 https://www.zhihu.com/question/298203515

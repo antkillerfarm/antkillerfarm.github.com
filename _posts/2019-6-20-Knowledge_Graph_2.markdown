@@ -202,6 +202,14 @@ https://mp.weixin.qq.com/s/na_9L-4yi-ocC1OYbrqluw
 
 知识图谱在可解释人工智能中的作用，附81页ppt
 
+https://mp.weixin.qq.com/s/Tpql8XIERJPguj7zLBrDaQ
+
+基于知识图谱的问答在美团智能交互场景中的应用和演进
+
+https://zhuanlan.zhihu.com/p/91762831
+
+知识图谱从哪里来：实体关系抽取的现状与未来
+
 # 数据结构 & 普通CS算法
 
 ## TopK

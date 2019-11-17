@@ -30,12 +30,6 @@ https://mp.weixin.qq.com/s/heh6B71IQ5NjmaTo6BaXdA
 
 ## 参考
 
-https://rsu.data61.csiro.au/people/jalvarez/research_bbdd.php
-
-这个网站提供了一系列用于汽车自动驾驶的视频标注的工具。
-
->Jose M. Alvarez，西班牙巴塞罗那自治大学博士（2010年）。现为澳大利亚CSIRO研究员。CSIRO是澳大利亚最大的国家级科研机构。
-
 https://zhuanlan.zhihu.com/p/26988866
 
 机器人学习Robot Learning的发展
@@ -52,9 +46,17 @@ https://zhuanlan.zhihu.com/p/87416772
 
 自动驾驶中深度学习-综述
 
+https://mp.weixin.qq.com/s/lgqSCAE6wh_L4d6VT12fKA
+
+面向机器人的机器学习，63页ppt
+
 https://mp.weixin.qq.com/s/3lgOxQm07nFpxWauT8b2ow
 
 值得收藏，自动驾驶技术与实例最全解析！
+
+http://mp.weixin.qq.com/s/KcHlWmIdKpjledwWFdNbCw
+
+自动驾驶汽车到底涉及了哪些技术？
 
 https://mp.weixin.qq.com/s/qyZS6ufN6f4dQRdG9diP0A
 
@@ -72,6 +74,12 @@ https://mp.weixin.qq.com/s/pPPq3b1yj92RaGgIpTAhqQ
 
 一文看透汽车无人驾驶技术、产品和市场
 
+https://rsu.data61.csiro.au/people/jalvarez/research_bbdd.php
+
+这个网站提供了一系列用于汽车自动驾驶的视频标注的工具。
+
+>Jose M. Alvarez，西班牙巴塞罗那自治大学博士（2010年）。现为澳大利亚CSIRO研究员。CSIRO是澳大利亚最大的国家级科研机构。
+
 https://zhuanlan.zhihu.com/p/41460767
 
 无人驾驶与视觉感知导读
@@ -83,10 +91,6 @@ https://mp.weixin.qq.com/s/ZePNQ3l3uMMIlndk20sOVA
 https://mp.weixin.qq.com/s/FebViO0PM-cMWJN6rXU6Rg
 
 详解工业机器人典型的控制系统及结构
-
-http://mp.weixin.qq.com/s/KcHlWmIdKpjledwWFdNbCw
-
-自动驾驶汽车到底涉及了哪些技术？
 
 http://mp.weixin.qq.com/s/SWUQvR6qA2JKjaclWskUTQ
 

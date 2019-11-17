@@ -6,6 +6,18 @@ category: DL
 
 # Graph NN（续）
 
+https://mp.weixin.qq.com/s/5DmpgPN4t3p3H53Xu7_-3A
+
+北大、微软亚洲研究院：高效的大规模图神经网络计算
+
+https://mp.weixin.qq.com/s/BFJD8i_yg1Y6fxZS5or-rw
+
+Bengio最新论文提出GibbsNet：深度图模型中的迭代性对抗推断
+
+https://zhuanlan.zhihu.com/p/48834333
+
+GCN in 2018：2018年顶会论文中的图卷积神经网络的理论与应用
+
 https://mp.weixin.qq.com/s/zg3yW7e4UKIs9-m6WmcbvA
 
 GraphWave：一种全新的无监督网络嵌入方法
@@ -292,6 +304,14 @@ PyTorch的自动求导机制详细解析，PyTorch的核心魔法
 https://mp.weixin.qq.com/s/PELBuCvu-7KQ33XBtlYfYQ
 
 深度学习中的微分
+
+https://zhuanlan.zhihu.com/p/24709748
+
+矩阵求导术（上）
+
+https://zhuanlan.zhihu.com/p/24863977
+
+矩阵求导术（下）
 
 # 深度贝叶斯学习
 
