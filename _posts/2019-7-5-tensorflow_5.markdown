@@ -129,3 +129,45 @@ https://mp.weixin.qq.com/s/6y7AEGz2cs4QUP0Cikhnmw
 https://mp.weixin.qq.com/s/VN2O6faf4spdD3qaqf3aiw
 
 使用AMD显卡加速TensorFlow
+
+# RL参考资源+
+
+https://mp.weixin.qq.com/s/Fn1s9Ia8L1ckgn6iP24FhQ
+
+如何让神经网络具有好奇心
+
+https://mp.weixin.qq.com/s/PBf-YrkhwhPYXuiOGyahxQ
+
+强化学习遭遇瓶颈！分层RL将成为突破的希望
+
+https://zhuanlan.zhihu.com/p/58815288
+
+强化学习之值函数学习
+
+https://mp.weixin.qq.com/s/8Cqknze_iosz6Z6cqnuK5w
+
+谷歌提出强化学习新算法SimPLe，模拟策略学习效率提高2倍
+
+https://mp.weixin.qq.com/s/hKGS4Ek5prwTRJoMCaxQLA
+
+强化学习Exploration漫游
+
+https://zhuanlan.zhihu.com/p/65116688
+
+值分布强化学习（01）
+
+https://zhuanlan.zhihu.com/p/65364484
+
+值分布强化学习（02）
+
+https://zhuanlan.zhihu.com/p/62363784
+
+强化学习之策略搜索
+
+https://mp.weixin.qq.com/s/j9Cs5M9gyITu2u_XDkKm-g
+
+Policy Gradient——一种不以loss来反向传播的策略梯度方法
+
+https://mp.weixin.qq.com/s/x6gKTuYIx8y25KX-fCc5bA
+
+蒙特卡洛梯度估计方法（MCGE）简述

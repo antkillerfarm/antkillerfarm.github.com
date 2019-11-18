@@ -12,6 +12,12 @@ category: Attention
 
 于是Google再祭出了一招——Position Embedding，也就是“位置向量”，将每个位置编号，然后每个编号对应一个向量，通过结合位置向量和词向量，就给每个词都引入了一定的位置信息，**这样Attention就可以分辨出不同位置的词了**。
 
+参考：
+
+https://zhuanlan.zhihu.com/p/92017824
+
+浅谈Transformer-based模型中的位置表示
+
 ## Hard Attention
 
 论文：

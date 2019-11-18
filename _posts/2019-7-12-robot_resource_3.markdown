@@ -278,6 +278,10 @@ https://zhuanlan.zhihu.com/p/90773462
 
 多传感器数据深度图的融合：最近基于深度学习的方法
 
+https://mp.weixin.qq.com/s/4tOYmCRiFN0xsG6vbedrrg
+
+ADAS系统中的动态目标感知策略（一）
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。

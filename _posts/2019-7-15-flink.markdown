@@ -162,6 +162,12 @@ https://mp.weixin.qq.com/s/7wrmyfu5hh6_6C0Z8Vi3hQ
 
 Flink State有可能代替数据库吗？
 
+https://mp.weixin.qq.com/s/RaEm3lqMZY2rdY3vX4s5ow
+
+如何分析及处理Flink反压？
+
+反压（backpressure）意味着数据管道中某个节点成为瓶颈，处理速率跟不上上游发送数据的速率，而需要对上游进行限速。
+
 # Beam
 
 Apache Beam是一个数据处理的通用引擎，集成了多个处理数据框架（包括Cassandra、Elasticesarch、Hadoop-file-system、Hadoop-hbase、Jdbc、Kafka等）。Beam SDK给上层应用的开发者提供了一个统一的编程接口，开发者不需要了解底层的具体的大数据平台的开发接口是什么，直接通过Beam SDK的接口就可以开发数据处理的加工流程，不管输入是用于批处理的有界数据集，还是流式的无界数据集。

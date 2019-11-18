@@ -78,6 +78,10 @@ https://mp.weixin.qq.com/s/uT_jrFzfttnG_VYiJIsRbQ
 
 走近3D ToF摄像头，揭秘ToF传感器工作原理
 
+https://mp.weixin.qq.com/s/H85oyZh5SzJh6SyF49Pzmg
+
+一文看懂TOF
+
 ## 结构光
 
 https://mp.weixin.qq.com/s/o_XsmqLSPhvuC0iiK7xHag

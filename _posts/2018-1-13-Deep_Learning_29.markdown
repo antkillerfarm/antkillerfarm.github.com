@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十九）——Graph NN
+title:  深度学习（二十九）——Graph NN（1）
 category: DL 
 ---
 

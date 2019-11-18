@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十）——自动求导, 深度贝叶斯学习
+title:  深度学习（三十）——Graph NN（2）, 自动求导
 category: DL 
 ---
 
@@ -198,6 +198,10 @@ https://mp.weixin.qq.com/s/LzaP6BWaKXL4O_Jf9QN7Rw
 
 基于层次化注意力图网络和多视角学习的商品推荐
 
+https://mp.weixin.qq.com/s/EKb9hN9cFrwNtSWWBpE4dw
+
+首次基于神经架构搜索自动生成图卷积结构，刷新人体动作识别准确率
+
 # 自动求导
 
 DL发展到现在，其基本运算单元早就不止CNN、RNN之类的简单模块了。针对新运算层出不穷的现状，各大DL框架基本都实现了自动求导的功能。
@@ -312,69 +316,3 @@ https://zhuanlan.zhihu.com/p/24709748
 https://zhuanlan.zhihu.com/p/24863977
 
 矩阵求导术（下）
-
-# 深度贝叶斯学习
-
-https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og
-
-贝叶斯学习与未来人工智能
-
-https://mp.weixin.qq.com/s/Zd4rFU7Lebr4zmzxThNyVw
-
-详解珠算：清华大学开源的贝叶斯深度学习库
-
-https://mp.weixin.qq.com/s/RpaOrngeXTKycLb3iCygZw
-
-利用贝叶斯神经网络进行随机动力系统中的学习与策略搜索
-
-https://mp.weixin.qq.com/s/lKm_ypn5I7tSjoQHceJ0jQ
-
-概率编程：使用贝叶斯神经网络预测金融市场价格
-
-https://mp.weixin.qq.com/s/cDqxmRVQCIqdM5oiUh82YQ
-
-Yee Whye Teh：《贝叶斯深度学习与深度贝叶斯学习》
-
-https://mp.weixin.qq.com/s/Zk2YG-IJNhJxTBU8THSM-g
-
-让DL可解释？这一份66页贝叶斯深度学习教程告诉你
-
-https://mp.weixin.qq.com/s/-izo9VUdxN33pwVFGV_tjw
-
-299页PPT带你回顾深度贝叶斯学习最新发展脉络
-
-https://github.com/bayesgroup/deepbayes-2018
-
-Seminars DeepBayes Summer School 2018
-
-https://mp.weixin.qq.com/s/WCRYppBLdl_M4etUChnfgw
-
-PyMC3和Theano代码构建贝叶斯深度网络
-
-https://mp.weixin.qq.com/s/7mwJpQFWWXJ3dvTAwDFI7Q
-
-贝叶斯卷积神经网络：架起深度学习与统计学的桥梁
-
-https://mp.weixin.qq.com/s/2LkpuchuHs82Sxs5rD8bWA
-
-《深度贝叶斯与序列学习》，279页PPT带你知晓深度贝叶斯序列模型在NLP最新进展
-
-https://zhuanlan.zhihu.com/p/74573041
-
-针对推荐系统的深度贝叶斯多目标学习
-
-https://mp.weixin.qq.com/s/b041h_hbHQYiXCiDHGaD5w
-
-深度贝叶斯自然语言处理，304页ppt带你了解最新研究进展
-
-https://zhuanlan.zhihu.com/p/77140176
-
-构建贝叶斯深度学习分类器
-
-https://mp.weixin.qq.com/s/4sDNUZiOiS6VH_oRSnW6HQ
-
-牛津大学YARIN GAL《贝叶斯深度学习》入门教程，336页ppt
-
-https://mp.weixin.qq.com/s/UiLyQKhIe2rDYiwPcqyqaw
-
-可跟踪概率模型，209页最新教程

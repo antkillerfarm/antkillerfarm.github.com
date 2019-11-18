@@ -349,6 +349,14 @@ https://mp.weixin.qq.com/s/K9U3GCW1tAIYRoKKq_nG9w
 
 一行TensorFlow/Keras代码解决真实场景中数据不平衡(imbalanced)问题
 
+https://mp.weixin.qq.com/s/TJhes2vp5SfkAdHXbBsiXA
+
+用CNN做NLP文本分类竞赛
+
+https://mp.weixin.qq.com/s/RdrUlu6hBEuIu2VepeiC-Q
+
+CV+NLP，使用tf.Keras构建图像搜索引擎
+
 # 网络架构
 
 ## LVS
