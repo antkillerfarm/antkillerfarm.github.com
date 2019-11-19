@@ -260,6 +260,14 @@ https://mp.weixin.qq.com/s/srHmkY_t3ChFAzhvXG6RPA
 
 # AutoDL进阶
 
+https://mp.weixin.qq.com/s/_31zbbQ5dHf2UaI8GhXozw
+
+4 GPU hours搜索到一个鲁棒的网络结构
+
+https://mp.weixin.qq.com/s/slrRXgD49I7ZG24ialVxPw
+
+第四范式涂威威：自动机器学习求解三要素与发展趋势
+
 https://mp.weixin.qq.com/s/X5Oi8gKyT5Tmh7ljon3MzQ
 
 谷歌引入自动网络设计，高效解决大规模深度推荐模型的特征嵌入问题
@@ -287,10 +295,6 @@ https://mp.weixin.qq.com/s/323RA6UtnyTySoXVXcJ2vA
 https://mp.weixin.qq.com/s/nN7tgkvvkv8B8N-z4yAgcQ
 
 四小时搜索NN结构，厦大提出快速NAS检索方法
-
-https://zhuanlan.zhihu.com/p/71547478
-
-NAS发展史：从放弃到入门
 
 https://mp.weixin.qq.com/s/rgUTcuH2mfIFBDoOfd26Cw
 

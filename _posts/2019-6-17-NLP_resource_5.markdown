@@ -393,3 +393,7 @@ https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247486300&idx=1&sn=dd6812
 https://zhuanlan.zhihu.com/p/69069509
 
 渐入佳境，基于主题感知的Coarse-to-Fine机制的在线评论生成
+
+https://mp.weixin.qq.com/s/w9CbbZ6vr6qV7DafctIf-g
+
+人机语音对话技术在58同城的应用实践

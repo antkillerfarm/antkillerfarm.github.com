@@ -202,6 +202,14 @@ https://mp.weixin.qq.com/s/EKb9hN9cFrwNtSWWBpE4dw
 
 首次基于神经架构搜索自动生成图卷积结构，刷新人体动作识别准确率
 
+https://mp.weixin.qq.com/s/-Fw8HcrQjBoYA4lXk0NZ3Q
+
+图变换网络：Graph Transformer Network
+
+https://mp.weixin.qq.com/s/nigeDLq-HrtELfhfWj5qow
+
+自注意力图池化
+
 # 自动求导
 
 DL发展到现在，其基本运算单元早就不止CNN、RNN之类的简单模块了。针对新运算层出不穷的现状，各大DL框架基本都实现了自动求导的功能。

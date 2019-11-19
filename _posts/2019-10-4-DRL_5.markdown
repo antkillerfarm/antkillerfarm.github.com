@@ -104,6 +104,8 @@ Policy Network摆脱了之前的基于规则的围棋软件，长于局部，但
 
 ### Value Network
 
+
+
 ### Fast rollout
 
 ## AlphaGo Zero

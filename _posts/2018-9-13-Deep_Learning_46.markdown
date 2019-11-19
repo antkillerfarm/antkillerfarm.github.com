@@ -399,3 +399,7 @@ https://mp.weixin.qq.com/s/MDxltLKP-SQf_31Zp1RL8A
 https://mp.weixin.qq.com/s/H8ECjqEcIjcm5YNFu6ONdw
 
 开源OCR文本检测器，基于TextBoxes++和RetinaNet
+
+https://mp.weixin.qq.com/s/YoqFYLFSRcCXvbrpCsyImA
+
+基于形状匹配对抗式生成网络的可控艺术字体风格迁移

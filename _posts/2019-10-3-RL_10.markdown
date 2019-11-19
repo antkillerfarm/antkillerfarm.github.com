@@ -1,192 +1,214 @@
 ---
 layout: post
-title:  强化学习（十）——Exploration & Exploitation, Inverse Reinforcement Learning, 博弈论
+title:  强化学习（十）——Integrating Learning and Planning（1）
 category: RL 
 ---
 
+# 博弈论（续）
+
+## 其他博弈问题
+
+当年英国政府将流放澳洲的犯人交给往来于澳洲之间的商船来完成，由此经常会发生因商船主或水手虐待犯人，致使大批流放人员因此死在途中(葬身大海)的事件发生。
+
+后来大英帝国对运送犯人的办法(制度)稍加改变，流放人员仍然由往来于澳洲的商船来运送，只是运送犯人的费用要等到犯人送到澳洲后才由政府按实到犯人人数支付给商船。
+
+仅就这样一点小小的“改变”，几乎再也没有犯人于中途死掉的事情发生。
+
+----
+
+枪手博弈是指，在三个枪手A、B、C之间一场对决即将展开，枪手A的枪法最好，命中率达到80%；枪手B的枪法次之命中率60%；而枪手C的命中率最差只有50%。
+
+而此时由于是三方对决，先瞄准谁成了关键，对于A枪手来说，当然先瞄准仅次于他的B枪手，但对于B和C枪手而言，威胁最大的当然是A，在A倒下后B面对C的胜率会大很多，同时C的存活率也会提高，所以枪口都会对上A。
+
+结论：
+
+- 第一轮枪战，枪法最差的C竟然存活概率最大——肯定存活，而枪法好的A和B存活概率远低于C。启示：韬晦很重要。
+
+- 如果在第一轮枪战中A、B均被击中，则C成为最终幸存者；只要A、B在第一轮枪战中有一人存活，那最终胜出的很可能是A和B中的幸存者。启示：实力很关键。能力较差的C靠着策略虽然能在第一轮枪战中暂时获胜，但只要A、B在第一轮枪战中有一人存活，那么第二轮枪战里C的存活的概率就会比对手低了。
+
+## 参考
+
+https://www.cnblogs.com/steven-yang/tag/博弈论/
+
+一个博弈论的专栏
+
+https://mp.weixin.qq.com/s/5o3m8RLwYkZJEhqNxOLq_A
+
+不对称多代理博弈中的博弈理论解读
+
+https://mp.weixin.qq.com/s/D9bRjYVJOMT0Jkh59XZ-Rg
+
+DeepMind于Nature子刊发文提出非对称博弈的降维方法
+
+https://mp.weixin.qq.com/s/1t6WuTQpltMtP-SRF1rT4g
+
+当博弈论遇上机器学习：一文读懂相关理论
+
+https://news.mbalib.com/story/242878
+
+智猪博弈、龟兔悖论、谷堆悖论...这些有趣的博弈论值得一看！
+
+https://blog.csdn.net/qq_27351341/article/details/81119533
+
+偏好函数、无差异曲线、帕累托标准、卡尔多-希克斯标准等基础概念
+
+https://blog.csdn.net/qq_27351341/article/details/81138774
+
+囚徒困境、智猪博弈、纳什均衡与一致预期
+
+https://blog.csdn.net/qq_27351341/article/details/81268801
+
+多重均衡与制度和文化
+
+https://blog.csdn.net/qq_27351341/article/details/81276298
+
+动态博弈、威胁与承诺
+
+https://blog.csdn.net/sobermineded/article/details/79541511
+
+几个经典博弈模型（囚徒的困境、赌胜博弈、产量决策的古诺模型）
+
 # Integrating Learning and Planning
 
-## Monte-Carlo Search（续）
+前面的章节主要介绍了Model-Free RL，下面将讲一下Model-Based RL，主要包括如下内容：
 
-下面我们结合实例（下围棋）和示意图，来实际了解MCTS的运作过程。
+- 如何从经历中直接学习Model。
 
-![](/images/img3/MCTS.png)
+- 如何基于模型来进行Planning（规划）。
 
-**第一次迭代**：五角形表示的状态是个体第一次访问的状态，也是第一次被录入搜索树的状态。我们构建搜索树：将当前状态录入搜索树中。使用基于蒙特卡罗树搜索的策略（两个阶段），由于当前搜索树中只有当前状态，全程使用的应该是一个搜索第二阶段的默认随机策略，基于该策略产生一个直到终止状态的完整Episode。图中那些菱形表示中间状态和方格表示的终止状态，在此次迭代过程中并不录入搜索树。终止状态方框内的数字1表示（黑方）在博弈中取得了胜利。此时我们就可以更新搜索树种五角形的状态价值，以分数1/1表示从当前五角形状态开始模拟了一个Episode，其中获胜了1个Episode。
+- 如何将“学习”和“规划”整合起来。
 
-![](/images/img3/MCTS_2.png)
+![](/images/img3/Model_Free_RL.png) | ![](/images/img3/Model_RL.png)
 
-**第二次迭代**：当前状态仍然是树内的圆形图标指示的状态，从该状态开始决定下一步动作。根据目前已经访问过的状态构建搜索树，依据模拟策略产生一个行为模拟进入白色五角形表示的状态，并将该状态录入搜索树，随后继续该次模拟的对弈直到Episode结束，结果显示黑方失败，因此我们可以更新新加入搜索树的五角形节点的价值为0/1，而搜索树种的圆形节点代表的当前状态其价值估计为1/2，表示进行了2次模拟对弈，赢得了1次，输了1次。
+上面两图形象的说明了Model-Free RL（左图）和Model-Based RL（右图）的差别。
 
-经过前两次的迭代，当位于当前状态（黑色圆形节点）时，当前策略会认为选择某行为进入上图中白色五角形节点状态对黑方不利，策略将得到更新：当前状态时会个体会尝试选择其它行为。
+## Model-Based RL
 
-![](/images/img3/MCTS_3.png)
+![](/images/img3/Model_RL_2.png)
 
-**第三次迭代**：假设选择了一个行为进入白色五角形节点状态，将该节点录入搜索树，模拟一次完整的Episode，结果显示黑方获胜，此时更新新录入节点的状态价值为1/1，同时更新其上级节点的状态价值，这里需要更新当前状态的节点价值为2/3，表明在当前状态下已经模拟了3次对弈，黑方获胜2次。
+上图比较好的说明了模型学习在整个RL学习中的位置和作用。
 
-随着迭代次数的增加，在搜索树里录入的节点开始增多，树内每一个节点代表的状态其价值数据也越来越丰富。在搜索树内依据$$\epsilon$$-greedy策略会使得当个体出于当前状态（圆形节点）时更容易做出到达图中五角形节点代表的状态的行为。
+我们首先看一下Model的定义：Model是一个参数化（参数为$$\eta$$）的MDP<S, A, P, R>，其中假定：状态空间Ｓ和行为空间Ａ是已知的，则$$M=<P_\eta, R_\eta>$$，其中$$P_\eta \approx P, R_\eta \approx R$$。则：
 
-![](/images/img3/MCTS_4.png)
+$$S_{t+1} \sim P_\eta (S_{t+1} | S_t, A_t)$$
 
-**第四次迭代**：当个体位于当前（圆形节点）状态时，树内策略使其更容易进入左侧的蓝色圆形节点代表的状态，此时录入一个新的节点（五角形节点），模拟完Episode提示黑方失败，更新该节点以及其父节点的状态价值。
+$$R_{t+1} = R_\eta (R_{t+1} | S_t, A_t)$$
 
-![](/images/img3/MCTS_5.png)
+通常我们需要如下的假设，即状态转移函数和奖励函数是条件独立的：
 
-**第五次迭代**：更新后的策略使得个体在当前状态时仍然有较大几率进入其左侧圆形节点表示的状态，在该节点，个体避免了进入刚才失败的那次节点，录入了一个新节点，基于模拟策略完成一个完整Episode，黑方获得了胜利，同样的更新搜索树内相关节点代表的状态价值。
+$$P[S_{t+1}, R_{t+1} | S_t, A_t] = P[S_{t+1} | S_t, A_t] P[R_{t+1} | S_t, A_t]$$
 
-如此反复，随着迭代次数的增加，当个体处于当前状态时，其搜索树将越来越深，那些能够引导个体获胜的搜索树内的节点将会被充分的探索，其节点代表的状态价值也越来越有说服力；同时个体也忽略了那些结果不好的一些节点（上图中当前状态右下方价值估计为0/1的节点）。需要注意的是，仍然要对这部分节点进行一定程度的探索，以确保这些节点不会被完全忽视。
+## Model Learning
 
-MCTS的优点：
+所谓Model Learning是指：从experience$$\{S_1, A_1, R_2, \dots, S_T\}$$，学习
 
-- 蒙特卡罗树搜索是具有高度选择性的（Highly selective)、导致越好结果的行为越被优先选择（best-first）的一种搜索方法。
+$$S_1, A_1\to R_2,S_2$$
 
-- 它可以动态的评估各状态的价值，这种动态更新价值的方法与动态规划不同，后者聚焦于整个状态空间，而蒙特卡罗树搜索是立足于当前状态，动态更新与该状态相关的状态价值。
+$$S_2, A_2\to R_3,S_3$$
 
-- 使用采样避免了维度灾难；同样由于它仅依靠采样，因此适用于那些“黑盒”模型（black-box models）。
+$$\dots$$
 
-- MCTS是可以高效计算的、不受时间限制以及可以并行处理的。
+$$S_{T-1}, A_{T-1}\to R_T,S_T$$
 
-参考：
+这实际上是一个监督学习的问题。其中，$$s,a\to r$$是一个回归问题(regression problem)，而$$s,a\to s'$$是一个密度估计问题(density estimation problem)。
 
-https://mp.weixin.qq.com/s/4qeHfU9GS4aDWOHsu4Dw2g
+选择一个损失函数，比如均方差，KL散度等，优化参数$$\eta$$来最小化经验损失(empirical loss)。所有监督学习相关的算法都可以用来解决上述两个问题。
 
-记忆增强蒙特卡洛树搜索细节解读
+根据使用的算法不同，可以有如下多种模型：查表式(Table lookup Model)、线性期望模型(Linear Expectation Model)、线性高斯模型(Linear Gaussian Model)、高斯决策模型(Gaussian Process Model)、和深信度神经网络模型(Deep Belief Network Model)等。
 
-## Dyna-2
+这里主要以查表模型来解释模型的构建。
 
-如果我们把基于模拟的前向搜索应用到Dyna算法中来，就变成了Dyna-2算法。
+## Table Lookup Model
 
-使用该算法的个体维护了两套特征权重：
+查表模型适用于MDP的P，R都为已知的情况。我们通过visit得到各状态行为的转移概率和奖励，把这些数据存入表中，使用时直接检索。状态转移概率和奖励计算方法如下：
 
-- 一套反映了个体的长期记忆，该记忆是从真实经历中使用TD学习得到，它反映了个体对于某一特定强化学习问题的普遍性的知识、经验；
+$$\hat{P}^a_{s,s'}=\frac{1}{N(s,a)}\sum_{t=1}^T 1(S_t,A_t,S_{t+1}=s,a,s')$$
 
-- 另一套反映了个体的短期记忆，该记忆从基于模拟经历中使用TD搜索得到，它反映了个体对于某一特定强化学习在特定条件（比如某一Episode、某一状态下）下的特定的、局部适用的知识、经验。
+$$\hat{R}^a_{s}=\frac{1}{N(s,a)}\sum_{t=1}^T 1(S_t,A_t=s,a)R_t$$
 
-# Exploration & Exploitation
+其中的$$N(s,a)$$表示state action pair$$<s,a>$$在visit中出现的次数。
 
-几个基本的探索方法：
+这里也可以采用如下变种：
 
-- **朴素探索(Naive Exploration)**: 在贪婪搜索的基础上增加一个$$\epsilon$$以实现朴素探索；
+- 在每个time-step：t，记录experience tuple：$$<S_t, A_t, R_{t+1}, S_{t+1}>$$。
 
-- **乐观初始估计(Optimistic Initialization)**: 优先选择当前被认为是最高价值的行为，除非新信息的获取推翻了该行为具有最高价值这一认知；
+- 从模型采样构建虚拟经历时，从tuples中随机选择符合$$<s,a,\cdot,\cdot>$$的一个tuple。
 
-- **不确定优先(Optimism in the Face of Uncertainty)**: 优先尝试不确定价值的行为；
+这种方法，不再以Episode为最小学习单位，而是以时间步（time-step）为单位，一次学习一个状态转换。
 
-- **概率匹配（Probability Matching)**: 根据当前估计的概率分布采样行为；
+## Planning with a Model
 
-- **信息状态搜索(Information State Search)**: 将已探索的信息作为状态的一部分联合个体的状态组成新的状态，以新状态为基础进行前向探索。
+规划的过程相当于求解一个MDP的过程，即给定一个模型$$M_\eta = <P_\eta, R_\eta>$$，求解MDP$$<S, A, P_\eta, R_\eta>$$，找到基于该模型的最优价值函数或最优策略，也就是在给定的状态s下确定最优的行为a。
 
-根据搜索过程中使用的数据结构，可以将搜索分为：
+我们可以使用之前介绍过的价值迭代，策略迭代方法；也可以使用树搜索方法（Tree Search）。
 
-- **依据状态行为空间的探索(State-Action Exploration)**。针对每一个当前的状态，以一定的算法尝试之前该状态下没有尝试过的行为。
+## Sample-Based Planning
 
-- **参数化搜索（Parameter Exploration)**。直接针对策略的函数近似，此时策略用各种形式的参数表达，探索即表现为尝试不同的参数设置。
+Sample-Based Planning使用Model生成采样数据，即一个time-step的虚拟经历。
 
-Parameter Exploration的优点：得到基于某一策略的一段持续性的行为。
+有了这些虚拟采样，随后使用model-free RL方法来学习得到价值或策略函数。
 
-缺点：对个体曾经到过的状态空间毫无记忆，也就是个体也许会进入一个之前曾经进入过的状态而并不知道其曾到过该状态，不能利用已经到过这个状态这个信息。
+## Planning with an Inaccurate Model
 
-## UCB
+由于实际经历的不足或者一些无法避免的缺陷，我们通过实际经历学习得到的模型不可能是完美的模型，即：$$<P_\eta, R_\eta> = <P,R>$$
 
-$$\epsilon$$-greedy和softmax算法的缺陷：
+而model-based RL的性能取决于Model的准确度，如果Model不准确的话，往往只能得到一些次优解。
 
-只关心回报是多少，并不关心每个臂被拉下了多少次，这就意味着，这些算法不再会选中初始回报特别低的臂，即使这个臂的回报只测试了一次。
+使用近似的模型解决MDP问题与使用价值函数或策略函数的近似表达来解决MDP问题并不冲突，他们是从不同的角度来近似求解MDP问题，有时候构建一个模型来近似求解MDP比构建一个近似的价值函数或策略函数要更加方便，这是model-based RL的可取之处。
 
-UCB（The Upper Confidence Bound Algorithm）算法将会不仅仅关注于回报，同样会关注每个臂被探索的次数。
+同时由于个体经历的更新，模型处在一个动态变化的过程，当利用早期经历构建的模型后来被认为存在很大错误，不适用于当下经历的时候，需要放弃模型，转而使用model-free RL。
 
-为了进一步刻画每个臂被探索的次数和回报之间的关系，UCB引入了**置信区间**的概念：
+此外，可以在模型中，增加一些不确定性，以跳出次优解。
 
-- 每个item的回报均值都有个置信区间，随着试验次数增加，置信区间会变窄（逐渐确定了到底回报丰厚还是可怜）。
-- 每次选择前，都根据已经试验的结果重新估计每个item的均值及置信区间。
-- 选择置信区间上限最大的那个item。
+model-based RL适用于连续变量的状态和行为空间。
 
-显然：
+## Dyna-Q Algorithm
 
-- 如果item置信区间很宽（被选次数很少，还不确定），那么它会倾向于被多次选择，这个是算法冒风险的部分；
-- 如果item置信区间很窄（备选次数很多，比较确定其好坏了），那么均值大的倾向于被多次选择，这个是算法保守稳妥的部分；
+当构建了一个环境的模型后，个体可以有两种经历来源：
 
-UCB是一种乐观的算法，选择置信区间上界排序，如果是悲观保守的做法，是选择置信区间下界排序。
+- 实际经历(real experience)。
 
-置信区间的度量有很多方式，由此产生了很多UCB的变种算法。最常用的UCB1算法，采用了如下度量方式：
+$$S'\sim P_{s,s'}^a, R=R_s^a$$
 
-$$I_i=\bar{x}_i+\sqrt{2\frac{\log t}{n_i}}$$
+- 模拟经历(simulated experience)。
 
-其中$$x_i$$是第i个臂的奖励均值，$$n_i$$是臂i当前累积被选择的次数。
+$$S'\sim P_\eta(S' | S,A), R=R_\eta(R | S,A)$$
 
-参考：
+对于Model-Free RL来说，所有的知识都来源于real experience。
 
-https://www.cnblogs.com/Ryan0v0/p/11366578.html
+对于Model-Based RL来说，Model来源于real experience，而planning相关的知识来源于simulated experience。
 
-多臂赌博机问题(MAB)的UCB算法介绍
+于是我们很自然的想到，是否可以把real experience和simulated experience结合起来呢？
 
-https://blog.csdn.net/yw8355507/article/details/48579635
+![](/images/img3/Dyna.png)
 
-UCB算法
+上图是Dyna算法的流程图。它从实际经历中学习得到模型，然后联合使用实际经历和模拟经历，一边学习，一边规划更新价值和（或）策略函数。
 
-https://blog.csdn.net/LegenDavid/article/details/71082124
+Dyna-Q算法流程如下：
 
-LinUCB算法
+>Initialize $$Q(s, a)$$ and $$Model(s, a)$$ for all $$s \in S$$ and $$a \in A(s)$$   
+>Do forever:   
+>>(a) $$S \leftarrow$$ current (nonterminal) state   
+>>(b) $$A \leftarrow \epsilon-greedy(S, Q)$$   
+>>(c) Execute action A; observe resultant reward, R, and state S'   
+>>(d) $$Q(S, A) \leftarrow Q(S, A)+\alpha[R+\gamma \max_a Q(S', a)-Q(S, A)]$$   
+>>(e) $$Model(S, A) \leftarrow R,S'$$(assuming deterministic environment)   
+>>(f) Repeat n times:   
+>>>$$S \leftarrow$$ random previously observed state   
+>>>$$A \leftarrow$$ random action previously taken in S   
+>>>$$R, S' \leftarrow Model(S, A)$$   
+>>>$$Q(S, A) \leftarrow Q(S, A)+\alpha[R+\gamma \max_a Q(S', a)-Q(S, A)]$$
 
-https://zhuanlan.zhihu.com/p/32356077
+这个算法赋予了个体在与实际环境进行交互式时有一段时间用来思考的能力。其中的步骤：a,b,c,d和e都是从实际经历中学习，d过程是学习价值函数，e过程是学习模型。
 
-Multi-Armed Bandit: UCB (Upper Bound Confidence)
+在f步，给以个体一定时间（或次数）的思考。在思考环节，个体将使用模型，在之前观测过的状态空间中随机采样一个状态，同时从这个状态下曾经使用过的行为中随机选择一个行为，将两者带入模型得到新的状态和奖励，依据这个来再次更新行为价值函数。
 
-# Inverse Reinforcement Learning
+![](/images/img3/Dyna_2.png)
 
-逆强化学习问题定义：
+上图是细化后的Dyna框架图。从上面的分析可以看出，Dyna与其说是一个算法，倒不如说是一个算法框架，两者的区别在于：框架的每个组成部分，可以采用不同的算法，只要各部分之间的关系不变，就还算是同一个框架。
 
-- 已知：
+![](/images/img3/Dyna_3.png)
 
-智能体在变化的环境中的行为
+上图比较了在Dyna算法中一次实际经历期间采取不同步数的规划时的个体表现。横坐标是Episode序号，纵坐标是特定Episode所花费的步数。可以看出，当直接使用实际经历时，个体在早期完成一个Episode需要花费较多步数，而使用5步或50步思考步数时，个体完成一个Episode与环境发生的实际交互的步数要少很多。不过到了后期，基本上就没什么差别了。
 
-（optional）智能体传感器的数据
-
-（optional）环境的模型
-
-- 求：
-
-最优化的Reward function
-
-逆强化学习研究意义：
-
-- 对动物人类行为用强化学习建模（生物学、计量经济学...）模仿学习。
-
-- reward function在强化学习里面非常非常重要，是对行为的抽象精简的描述，因此IRL (Inverse Reinforcement Learning)可能是一种很高效的模仿学习范式。
-
-通俗的说法就是：**我们用优化控制或强化学习得到的策略能用来解释人类的行为吗？**
-
-比如让一个人去拿桌子上的一个橘子，那手的轨迹一定不是一条从起点到目标的直线，而是有一些弯曲的轨迹，也就是带有偏差的较优行为，但是这种偏差其实并不重要，只要最后拿到橘子就行了，也就是说：
-
-1.有过程中一些偏差是不重要的，但另一些偏差就比较重要了（如最后没拿到）。
-
-2.每次拿橘子的动作也是不一样的，因此人的动作带有一定的随机性。
-
-3.我们可以认为人类行为轨迹分布是以最优策略为峰的随机分布。
-
-![](/images/img3/GAN_vs_IRL.png)
-
-参考：
-
-https://zhuanlan.zhihu.com/p/61674994
-
-Algorithms for Inverse Reinforcement Learning
-
-https://zhuanlan.zhihu.com/p/32502503
-
-CS 294：IRL
-
-# 博弈论
-
-博弈论（game theory）是一门单独的学科，和RL并无统属关系。然而由于RL，特别是MARL大量应用到了相关的知识，所以这里也把它写在RL系列里了。
-
-## 历史
-
-博弈论最早可追溯到“齐威王田忌赛马”，但它真正的发展是在20世纪下半叶。
-
-RL的历史相对比较晚，因此从渊源来看，RL=博弈论+控制论+ML。
-
-参考：
-
-https://blog.csdn.net/sobermineded/article/details/79601986
-
-博弈论历史、发展与应用
+可以看出**Dyna算法可以有效提升算法的收敛速度，但不会提高最终的性能**。

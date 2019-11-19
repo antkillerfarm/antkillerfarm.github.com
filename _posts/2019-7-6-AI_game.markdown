@@ -6,12 +6,6 @@ category: resource
 
 # AI游戏
 
-博弈树（Game Tree）
-
-极小化极大算法（Minimax）
-
-Alpha-Beta剪枝
-
 CFR（Counterfactual Regret Minimization）
 
 一般来说，我们可以根据信息的暴露程度将游戏分为两大类：完美信息游戏（Perfect-Information Games）和不完美信息游戏（Imperfect-Information Games）。

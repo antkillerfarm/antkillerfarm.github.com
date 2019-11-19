@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  强化学习（八）——Actor-Critic, Integrating Learning and Planning（1）
+title:  强化学习（八）——Actor-Critic, 博弈论（1）
 category: RL 
 ---
 
@@ -166,52 +166,50 @@ https://mp.weixin.qq.com/s/ce9W3FbLdsqAEyvw6px_RA
 
 Actor Critic——一个融合基于策略梯度和基于值优点的强化学习算法
 
-# Integrating Learning and Planning
+# 博弈论
 
-前面的章节主要介绍了Model-Free RL，下面将讲一下Model-Based RL，主要包括如下内容：
+博弈论（game theory）是一门单独的学科，和RL并无统属关系。然而由于RL，特别是MARL大量应用到了相关的知识，所以这里也把它写在RL系列里了。
 
-- 如何从经历中直接学习Model。
+## 历史
 
-- 如何基于模型来进行Planning（规划）。
+博弈论最早可追溯到“齐威王田忌赛马”，但它真正的发展是在20世纪下半叶。
 
-- 如何将“学习”和“规划”整合起来。
+RL的历史相对比较晚，因此从渊源来看，RL=博弈论+控制论+ML。
 
-![](/images/img3/Model_Free_RL.png) | ![](/images/img3/Model_RL.png)
+参考：
 
-上面两图形象的说明了Model-Free RL（左图）和Model-Based RL（右图）的差别。
+https://blog.csdn.net/sobermineded/article/details/79601986
 
-## Model-Based RL
+博弈论历史、发展与应用
 
-![](/images/img3/Model_RL_2.png)
+## 教程
 
-上图比较好的说明了模型学习在整个RL学习中的位置和作用。
+《Game Theory An Introduction》，Steven Tadelis著。
 
-我们首先看一下Model的定义：Model是一个参数化（参数为$$\eta$$）的MDP<S, A, P, R>，其中假定：状态空间Ｓ和行为空间Ａ是已知的，则$$M=<P_\eta, R_\eta>$$，其中$$P_\eta \approx P, R_\eta \approx R$$。则：
+>Steven Tadelis，经济学家。Harvard博士（1997），UCB教授。
 
-$$S_{t+1} \sim P_\eta (S_{t+1} | S_t, A_t)$$
+## 概述
 
-$$R_{t+1} = R_\eta (R_{t+1} | S_t, A_t)$$
+要理解博弈论，可以通过博弈论和决策论的区别开始。
 
-通常我们需要如下的假设，即状态转移函数和奖励函数是条件独立的：
+**决策论**是研究局中人在给定其他环境参数条件下的最优选择问题。
 
-$$P[S_{t+1}, R_{t+1} | S_t, A_t] = P[S_{t+1} | S_t, A_t] P[R_{t+1} | S_t, A_t]$$
+**博弈论**研究的是当局中人充分考虑到其他局中人对其战略选择的反应后（即局中人都具有同样充分的理性时）进行最优战略的选择。
 
-## Model Learning
+博弈论的直接目标不是找到一个玩家的最佳策略，而是找到所有玩家的最理性策略组合。我们称最理性策略组合为**均衡（equilibrium）**。
 
-所谓Model Learning是指：从experience$$\{S_1, A_1, R_2, \dots, S_T\}$$，学习
+从宏观上可以将博弈论研究的问题分为：**合作博弈**和**非合作博弈**。现代狭义的博弈论一般是指非合作博弈。
 
-$$S_1, A_1\to R_2,S_2$$
+非合作博弈根据参与博弈的参与人做决策的先后顺序可以分为：静态博弈和动态博弈。
 
-$$S_2, A_2\to R_3,S_3$$
+**静态博弈**：参与人同时做决策，常用标准型（normal form）表述其策略。如两人零和博弈等。
 
-$$\dots$$
+**动态博弈**：参与人有先后顺序做决策，且后者能观察到前者所做的决策，如围棋等。常用扩展型（extensive form）来表述其策略，常用的扩展型表述为博弈树。
 
-$$S_{T-1}, A_{T-1}\to R_T,S_T$$
+非合作博弈根据参与人是否已知对方的信息，可以分为：完美信息博弈和不完美信息博弈。
 
-这实际上是一个监督学习的问题。其中，$$s,a\to r$$是一个回归问题(regression problem)，而$$s,a\to s'$$是一个密度估计问题(density estimation problem)。
+**完美信息博弈**：参与人对相关信息完全已知，如棋类游戏。玩家知道对方棋子所在的位置。
 
-选择一个损失函数，比如均方差，KL散度等，优化参数$$\eta$$来最小化经验损失(empirical loss)。所有监督学习相关的算法都可以用来解决上述两个问题。
+**不完美信息博弈**：参与人对相关信息并不完全已知。如牌类游戏，玩家并不知道对手的牌是什么。
 
-根据使用的算法不同，可以有如下多种模型：查表式(Table lookup Model)、线性期望模型(Linear Expectation Model)、线性高斯模型(Linear Gaussian Model)、高斯决策模型(Gaussian Process Model)、和深信度神经网络模型(Deep Belief Network Model)等。
-
-这里主要以查表模型来解释模型的构建。
+当局中人的个数n为有限数且每个局中人的战略空间中的元素只有限个时，称博弈为**有限博弈（finite game）**。

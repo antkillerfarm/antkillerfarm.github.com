@@ -66,6 +66,10 @@ https://mp.weixin.qq.com/s/RY26yEIfX4NwSlL65_6RTQ
 
 人脸检测小江湖
 
+https://mp.weixin.qq.com/s/bjOVQu0FZyTWQRlwEn8IVA
+
+基于深度树学习的Zero-shot人脸检测识别
+
 # RNN进阶
 
 ## IndRNN

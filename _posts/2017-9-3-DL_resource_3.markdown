@@ -6,94 +6,6 @@ category: resource
 
 # DL参考资源
 
-## CV
-
-https://mp.weixin.qq.com/s/gsHu7vNs9cm1tH2nz9mmMg
-
-推荐一个不错的边缘检测网络：HED
-
-https://mp.weixin.qq.com/s/7zFcWAmtpW2S_PVYru_lxg
-
-眼见未必为实--漫谈图像隐写术
-
-https://mp.weixin.qq.com/s/HlqzSdhj3Q3nX4Zl63PM0A
-
-商汤科技23篇论文横扫CVPR
-
-https://mp.weixin.qq.com/s/jdM0w4hRgkWmul9Bcp2oCw
-
-揭秘CVPR2017 WebVision图片分类竞赛冠军背后的技术
-
-https://mp.weixin.qq.com/s/SN1Fc48sa4NZzm_K16kUnw
-
-通过空间上下文特征进行阴影检测
-
-https://mp.weixin.qq.com/s/oOru4Dn2uyVuHVOLDxvsBg
-
-最新的图像质量评价
-
-https://mp.weixin.qq.com/s/fTFyH5jaLEWWPka_XP9EaQ
-
-视觉识别新范式：开放世界下的大规模长尾识别
-
-https://mp.weixin.qq.com/s/sOeBUZi5-7fGkqcd1MPmiQ
-
-李飞飞团队新作-有限标签的场景图预测
-
-https://zhuanlan.zhihu.com/p/55286828
-
-当低级视觉任务遇上高级视觉任务
-
-https://mp.weixin.qq.com/s/0BeqQ6-ZZM-T38sJJWeX1Q
-
-图像配准的前世今生：从人工设计特征到深度学习
-
-https://zhuanlan.zhihu.com/p/37404280
-
-图像处理：从bilateral filter到HDRnet
-
-https://zhuanlan.zhihu.com/p/78053406
-
-基于深度学习的特征提取和匹配方法介绍
-
-https://zhuanlan.zhihu.com/p/78051407
-
-基于深度学习的图像边缘和轮廓提取方法介绍
-
-https://mp.weixin.qq.com/s/ifNZksDtAOVKomH9b4TL-w
-
-更好也更快！最先进的图像去模糊算法DeblurGAN-v2
-
-https://zhuanlan.zhihu.com/p/78872781
-
-基于深度学习的着色方法介绍
-
-https://zhuanlan.zhihu.com/p/80943002
-
-轮廓检测综述：An Overview of Contour Detection Approaches
-
-https://mp.weixin.qq.com/s/cD4WnafcX9cam-rLXuNDcg
-
-首个镜子分割网络问世，大连理工、鹏城实验室、香港城大出品
-
-## 光神经网络
-
-https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ
-
-3D打印的深度神经网络，光速执行AI运算
-
-https://mp.weixin.qq.com/s/5zt8UIpNBcgNZpwHHJj68Q
-
-光学CNN层替换传统CNN层，超省电
-
-https://mp.weixin.qq.com/s/IheyYAC1yIigYOW-gtc5Eg
-
-Science重磅！用光速实现深度学习，跟GPU说再见
-
-https://mp.weixin.qq.com/s/ENYX87SMlgv30x08iYFQIw
-
-几乎零能耗零延迟！UCLA科学家发明光衍射神经网络，登上Science
-
 ## gcForest
 
 http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw
@@ -401,3 +313,45 @@ segmentation和matting有什么区别？
 https://mp.weixin.qq.com/s/1TK4h7UoeVas1S1NfNgRag
 
 为什么深度学习图像分类的输入多是224*224
+
+## 面试
+
+https://mp.weixin.qq.com/s/U5hlr69m_9Znwjkj3Yl4Hg
+
+《深度学习500问》一份超全深度学习资料，面试必备！
+
+https://www.zhihu.com/question/41233373
+
+如果你是面试官，你怎么去判断一个面试者的深度学习水平？
+
+https://mp.weixin.qq.com/s/NMEDN7ayUrFPareLoQ_WmA
+
+20万、50万、100万的算法工程师，到底有什么区别？
+
+https://www.zhihu.com/question/56676679/answer/151505274
+
+机器学习相关岗位面试中，有哪些加（zhuang）分（bi）项？
+
+https://mp.weixin.qq.com/s/D4ydBcQVt7iJW9SIDwnlzQ
+
+面试官是如何看出你机器学习水平的？
+
+https://mp.weixin.qq.com/s?__biz=MzI3NTA0MzM1OQ==&mid=2651615534&idx=1&sn=00ecd7dc1d8472c070e720a1b63f04c4
+
+我如何考察面试者的机器学习水平
+
+https://mp.weixin.qq.com/s/J25RG04mIi9-snt4GjfrSQ
+
+谷歌等巨头机器学习面试题：从逻辑回归到智力测验
+
+https://mp.weixin.qq.com/s/9ivDZXpPpLE3fuPgpNUyJA
+
+超全数据科学与机器学习面试指南
+
+https://mp.weixin.qq.com/s/qmdfLlTfQzT0QVq_SzEPUw
+
+机器学习和深度学习中值得弄清楚的一些问题
+
+https://mp.weixin.qq.com/s/JgSTOiWZ30mIR_uiXyU2PQ
+
+硅谷高级工程师告诉你：算法工程师必须要知道的面试技能雷达图

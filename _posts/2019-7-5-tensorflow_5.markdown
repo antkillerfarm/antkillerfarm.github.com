@@ -130,6 +130,126 @@ https://mp.weixin.qq.com/s/VN2O6faf4spdD3qaqf3aiw
 
 使用AMD显卡加速TensorFlow
 
+# Exploration & Exploitation
+
+## UCB（续）
+
+UCB是一种乐观的算法，选择置信区间上界排序，如果是悲观保守的做法，是选择置信区间下界排序。
+
+置信区间的度量有很多方式，由此产生了很多UCB的变种算法。最常用的UCB1算法，采用了如下度量方式：
+
+$$I_i=\bar{x}_i+\sqrt{2\frac{\log t}{n_i}}$$
+
+其中$$x_i$$是第i个臂的奖励均值，$$n_i$$是臂i当前累积被选择的次数。
+
+UCB还可以应用到MCTS中，这就是UCT（Upper Confidence Bound Apply to Tree）算法了。即UCT=MCTS+UCB。
+
+参考：
+
+https://www.cnblogs.com/Ryan0v0/p/11366578.html
+
+多臂赌博机问题(MAB)的UCB算法介绍
+
+https://blog.csdn.net/yw8355507/article/details/48579635
+
+UCB算法
+
+https://blog.csdn.net/LegenDavid/article/details/71082124
+
+LinUCB算法
+
+https://zhuanlan.zhihu.com/p/32356077
+
+Multi-Armed Bandit: UCB (Upper Bound Confidence)
+
+# Inverse Reinforcement Learning
+
+逆强化学习问题定义：
+
+- 已知：
+
+智能体在变化的环境中的行为
+
+（optional）智能体传感器的数据
+
+（optional）环境的模型
+
+- 求：
+
+最优化的Reward function
+
+逆强化学习研究意义：
+
+- 对动物人类行为用强化学习建模（生物学、计量经济学...）模仿学习。
+
+- reward function在强化学习里面非常非常重要，是对行为的抽象精简的描述，因此IRL (Inverse Reinforcement Learning)可能是一种很高效的模仿学习范式。
+
+通俗的说法就是：**我们用优化控制或强化学习得到的策略能用来解释人类的行为吗？**
+
+比如让一个人去拿桌子上的一个橘子，那手的轨迹一定不是一条从起点到目标的直线，而是有一些弯曲的轨迹，也就是带有偏差的较优行为，但是这种偏差其实并不重要，只要最后拿到橘子就行了，也就是说：
+
+1.有过程中一些偏差是不重要的，但另一些偏差就比较重要了（如最后没拿到）。
+
+2.每次拿橘子的动作也是不一样的，因此人的动作带有一定的随机性。
+
+3.我们可以认为人类行为轨迹分布是以最优策略为峰的随机分布。
+
+![](/images/img3/GAN_vs_IRL.png)
+
+参考：
+
+https://zhuanlan.zhihu.com/p/61674994
+
+Algorithms for Inverse Reinforcement Learning
+
+https://zhuanlan.zhihu.com/p/32502503
+
+CS 294：IRL
+
+# 模仿学习
+
+https://zhuanlan.zhihu.com/p/27935902
+
+机器人学习Robot Learning之模仿学习Imitation Learning的发展
+
+https://zhuanlan.zhihu.com/p/25688750
+
+模仿学习（Imitation Learning）完全介绍
+
+https://mp.weixin.qq.com/s/naq73D27vsCOUBperKto8A
+
+从监督式到DAgger，综述论文描绘模仿学习全貌
+
+https://mp.weixin.qq.com/s/LNNqp2KsEAljG26hY43mUw
+
+ICML2018 模仿学习教程
+
+https://mp.weixin.qq.com/s/f9vSgH1HQwGXBDb0UGHQyQ
+
+深度学习进阶之无人车行为克隆
+
+https://mp.weixin.qq.com/s/To3pnx1hVq_4p7UnQVMw9A
+
+斯坦福大学&DeepMind联合提出机器人控制新方法，RL+IL端到端地学习视觉运动策略
+
+https://mp.weixin.qq.com/s/O0Q1XoTA-7Yshr1ZqOZ90w
+
+加州理工：什么是模仿学习, 这62页ppt带你了解进展
+
+# RL与神经科学
+
+Pavlov Model（1901）
+
+Rescorla-Wagner Model（1972）
+
+Thorndike’s Puzzle Box（1910）
+
+参考：
+
+https://zhuanlan.zhihu.com/p/24437724
+
+学习理论之Rescorla-Wagner模型
+
 # RL参考资源+
 
 https://mp.weixin.qq.com/s/Fn1s9Ia8L1ckgn6iP24FhQ

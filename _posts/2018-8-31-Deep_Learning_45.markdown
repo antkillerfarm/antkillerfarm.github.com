@@ -140,6 +140,10 @@ https://mp.weixin.qq.com/s/m5b9QZl6Axd1iYWeTADZzA
 
 AutoML自动机器学习：最新进展综述
 
+https://mp.weixin.qq.com/s/aJS8F3SCLnVAv9mwYNnhbA
+
+一文盘点AutoML库
+
 https://zhuanlan.zhihu.com/p/75747814
 
 自动机器学习AutoML和神经架构搜索NAS简介
@@ -164,21 +168,57 @@ https://mp.weixin.qq.com/s/Yh8Zj7Jhliy7a9h6mW8FxQ
 
 解读谷歌NASNet：一个大规模图像识别架构!
 
-https://mp.weixin.qq.com/s/MkXBtGq4xt5YOh1-uhMBbg
+https://mp.weixin.qq.com/s/OMzx3nKqn1un2fCZseID2Q
 
-循环神经网络自动生成程序：谷歌大脑提出“优先级队列训练”
+怎样设计最优的卷积神经网络架构？NAS原理剖析
 
 https://mp.weixin.qq.com/s/D0HngY-U7_fP4vqDIjvaew
 
 自动选模型+调参：谷歌AutoML背后的技术解析
 
-https://mp.weixin.qq.com/s/vctbsYk4LRwrQ7_Hs7fqkg
-
-谷歌大脑发布神经架构搜索新方法：提速1000倍
-
 https://mp.weixin.qq.com/s/tWO1Qv1aoemC8nHvJXZyeA
 
 清华大学张长水教授：神经网络模型的结构优化
+
+https://mp.weixin.qq.com/s/GLiOZjqC9DSvGEX3xqbHJg
+
+鸡生蛋与蛋生鸡，纵览神经架构搜索方法
+
+https://mp.weixin.qq.com/s/DLpMVOmkvpWqlHIAZojwog
+
+一文看懂深度学习新王者“AutoML”：是什么、怎么用、未来如何发展？
+
+https://mp.weixin.qq.com/s/X6m4ZHDKY4gC-v0YN5g4YA
+
+谷歌云提出渐进式神经架构搜索：高效搜索高质量CNN结构
+
+https://mp.weixin.qq.com/s/0te0JUKYZlSLs3kzsFV-NA
+
+神经网络架构搜索（NAS）综述
+
+https://zhuanlan.zhihu.com/p/44576620
+
+让算法解放算法工程师----NAS综述
+
+https://mp.weixin.qq.com/s/3njCAKQsQ8UhL3gqDDHZGQ
+
+近期大热的AutoML领域，都有哪些值得读的论文？
+
+https://mp.weixin.qq.com/s/l6uzHwGSTY5xRSkPD_B2rw
+
+深度学习模型超参数搜索实用指南
+
+https://zhuanlan.zhihu.com/p/71547478
+
+NAS发展史：从放弃到入门
+
+https://mp.weixin.qq.com/s/MkXBtGq4xt5YOh1-uhMBbg
+
+循环神经网络自动生成程序：谷歌大脑提出“优先级队列训练”
+
+https://mp.weixin.qq.com/s/vctbsYk4LRwrQ7_Hs7fqkg
+
+谷歌大脑发布神经架构搜索新方法：提速1000倍
 
 https://mp.weixin.qq.com/s/9qpZUVoEzWaY8zILc3Pl1A
 
@@ -200,22 +240,6 @@ https://mp.weixin.qq.com/s/pXskwKkzCtgIuNtgFVF_wg
 
 ImageNet分类精度再创新高！李飞飞组ECCV Oral提出全新渐进式神经结构搜索
 
-https://mp.weixin.qq.com/s/GLiOZjqC9DSvGEX3xqbHJg
-
-鸡生蛋与蛋生鸡，纵览神经架构搜索方法
-
-https://mp.weixin.qq.com/s/DLpMVOmkvpWqlHIAZojwog
-
-一文看懂深度学习新王者“AutoML”：是什么、怎么用、未来如何发展？
-
-https://mp.weixin.qq.com/s/X6m4ZHDKY4gC-v0YN5g4YA
-
-谷歌云提出渐进式神经架构搜索：高效搜索高质量CNN结构
-
-https://mp.weixin.qq.com/s/0te0JUKYZlSLs3kzsFV-NA
-
-神经网络架构搜索（NAS）综述
-
 https://mp.weixin.qq.com/s/dSAjdx7jsKgI5SQpMY213w
 
 微软&中科大提出新型自动神经架构设计方法NAO
@@ -223,18 +247,6 @@ https://mp.weixin.qq.com/s/dSAjdx7jsKgI5SQpMY213w
 https://mp.weixin.qq.com/s/KvkkmDIY7Y0NBgYF86E2Pw
 
 神经网络突变自动选择AI优化算法，速度提升50000倍！
-
-https://zhuanlan.zhihu.com/p/44576620
-
-让算法解放算法工程师----NAS综述
-
-https://mp.weixin.qq.com/s/3njCAKQsQ8UhL3gqDDHZGQ
-
-近期大热的AutoML领域，都有哪些值得读的论文？
-
-https://mp.weixin.qq.com/s/l6uzHwGSTY5xRSkPD_B2rw
-
-深度学习模型超参数搜索实用指南
 
 https://mp.weixin.qq.com/s/7dNB6V4gHdkN-N2td43NrA
 
@@ -359,15 +371,3 @@ https://mp.weixin.qq.com/s/pToK-DfUVqWaAznJND__Ag
 https://mp.weixin.qq.com/s/H30A9cBFkAu4o7amO8SEwg
 
 网络搜索之DARTS, GDAS, DenseNAS, P-DARTS, PC-DARTS
-
-https://mp.weixin.qq.com/s/OMzx3nKqn1un2fCZseID2Q
-
-怎样设计最优的卷积神经网络架构？NAS原理剖析
-
-https://mp.weixin.qq.com/s/_31zbbQ5dHf2UaI8GhXozw
-
-4 GPU hours搜索到一个鲁棒的网络结构
-
-https://mp.weixin.qq.com/s/slrRXgD49I7ZG24ialVxPw
-
-第四范式涂威威：自动机器学习求解三要素与发展趋势
