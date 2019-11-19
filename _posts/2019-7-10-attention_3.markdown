@@ -158,6 +158,10 @@ https://zhuanlan.zhihu.com/p/80216580
 
 XLnet：集合了GPT和BERT的预训练模型
 
+https://mp.weixin.qq.com/s/7ZTDJmsOxOwJ7fYUxK6eTw
+
+XLNet详解
+
 ## 轻量化BERT
 
 https://www.zhihu.com/question/347898375
