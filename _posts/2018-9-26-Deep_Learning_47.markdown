@@ -18,6 +18,10 @@ https://mp.weixin.qq.com/s/CGF-6P4RDtzQnc2XClu5zw
 
 3D计算机视觉简介
 
+https://mp.weixin.qq.com/s/WDInIzWa9_SYSaXXPhdQuw
+
+基于深度学习的视觉三维重建研究总结
+
 https://mp.weixin.qq.com/s/wHIT2pm_5O4MOR_QLpHVLQ
 
 PRNet：人脸3D重建与密集对齐

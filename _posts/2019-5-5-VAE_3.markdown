@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  VAE（三）——VAE vs GAN, VAE参考资源
+title:  VAE（三）——VAE vs GAN, Normalizing Flow, VAE参考资源
 category: GAN & VAE 
 ---
 
@@ -215,6 +215,24 @@ https://mp.weixin.qq.com/s/fzadP8NwPTxuhEB0O4GU8g
 # Big transformation
 
 我们前面提到的风格转换都是比较小幅度的风格转换,有的时候我们会需要做非常大的风格转换,譬如把真人照片转成动漫照片。
+
+# Normalizing Flow
+
+Normalizing Flow是GAN和VAE之外的另一大类生成模型方法。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/44304684
+
+Normalizing Flow小结
+
+https://www.jianshu.com/p/66393cebe8ba
+
+标准化流(Normalizing Flow)教程（一）
+
+https://www.jianshu.com/p/db72c38233f3
+
+标准化流(Normalizing Flow)（二）：现代标准化流技术
 
 # VAE参考资源
 

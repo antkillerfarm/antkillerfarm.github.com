@@ -98,6 +98,10 @@ https://mp.weixin.qq.com/s/gksUiNvX9w29wtIz185HCg
 
 NLP入门：搜狗新闻文本分类
 
+https://github.com/RandolphVI/Multi-Label-Text-Classification
+
+NLP多标签文本分类代码实现工具包
+
 ## 情感分析
 
 https://mp.weixin.qq.com/s/mWOhh9rJru_YDwQEB34GNg
@@ -252,6 +256,10 @@ https://zhuanlan.zhihu.com/p/83596443
 
 文本自动摘要任务的“不完全”心得总结
 
+https://blog.csdn.net/zhangxb35/article/details/78626799
+
+Text Summarization综述
+
 ## 句法分析
 
 传统方法主要是PCFG （Probabilistic Context-Free Grammar）。
@@ -391,7 +399,3 @@ https://mp.weixin.qq.com/s/Tk-WWuYp-CBx0p-mBWm5Jg
 https://mp.weixin.qq.com/s/ZexnTKHEFKPso5fhZNQfQQ
 
 聊天机器人中用户出行消费意图识别方法研究
-
-https://mp.weixin.qq.com/s/jifGPaxdqVii3q6gG4F2ag
-
-Google工程师带你了解聊天机器人的工作原理和未来发展

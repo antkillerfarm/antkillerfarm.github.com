@@ -94,6 +94,10 @@ https://blog.csdn.net/sinat_35177634/article/details/89601950
 
 CVPR 2019视频描述（video caption）相关论文总结
 
+https://zhuanlan.zhihu.com/p/91986833
+
+视频综合理解：行为识别、场景识别以及视频综述
+
 https://mp.weixin.qq.com/s/noljXreGfoMfiZb_n90R3w
 
 模仿人类的印象机制，商汤提出精确实时的视频目标检测方法

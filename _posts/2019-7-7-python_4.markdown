@@ -6,6 +6,16 @@ category: language
 
 # Python
 
+## glob
+
+glob的历史可以追溯到早期的UNIX系统。用它可以查找符合特定规则的文件路径名。
+
+参考：
+
+https://blog.csdn.net/csapr1987/article/details/7469769
+
+python glob模块
+
 ## Sphinx
 
 Sphinx可用于为python库生成doc。目前绝大多数python库的帮助文档都是用Sphinx生成的。

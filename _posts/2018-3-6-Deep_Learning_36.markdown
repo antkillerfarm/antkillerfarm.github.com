@@ -277,3 +277,7 @@ https://mp.weixin.qq.com/s/rAbSWoo3WMdHsHaOx_x6fw
 https://mp.weixin.qq.com/s/8M3MCrEFktUJPr7UsdMMew
 
 Google最新论文：Youtube视频推荐如何做多目标排序
+
+https://mp.weixin.qq.com/s/s4onMqilnlI1SNgFLr7gww
+
+为什么你的毛衣显胖又显黑？这个算法给你答案

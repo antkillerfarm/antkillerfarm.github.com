@@ -234,6 +234,10 @@ https://mp.weixin.qq.com/s/-cXOUw9zJteVUkbpRMIWtQ
 
 何恺明一作，刷新7项检测分割任务，无监督预训练完胜有监督
 
+https://mp.weixin.qq.com/s/wtHrHFoT2E_HLHukPdJUig
+
+OpenAI科学家一文详解自监督学习
+
 # 图像检索
 
 ## 传统方法

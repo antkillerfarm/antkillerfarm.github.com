@@ -44,6 +44,10 @@ https://mp.weixin.qq.com/s/JSnPTVRgXO3aih5srU1eZQ
 
 EM算法原理总结
 
+https://mp.weixin.qq.com/s/192sLXAvLKzwsTKCZs-AuA
+
+一文详尽系列之EM算法
+
 ## 重新审视混合高斯模型
 
 下面给出混合高斯模型各参数的推导过程。

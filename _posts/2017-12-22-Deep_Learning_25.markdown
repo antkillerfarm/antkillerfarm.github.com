@@ -232,7 +232,15 @@ https://github.com/sfzhang15/SFD
 
 S3FD: Single Shot Scale-invariant Face Detector
 
-## 人脸年龄识别
+## 人脸属性
+
+人脸属性包括：人脸年龄、表情、颜值等。
+
+参考：
+
+https://mp.weixin.qq.com/s/M952HsJnmfx3EGmiDcySGQ
+
+初学深度学习人脸属性分析必读的文章
 
 https://zhuanlan.zhihu.com/p/53229759
 

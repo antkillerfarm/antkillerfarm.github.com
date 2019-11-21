@@ -72,6 +72,10 @@ https://zhuanlan.zhihu.com/p/91052495
 
 当BERT遇上知识图谱
 
+https://mp.weixin.qq.com/s/wQW-JT-sGMj60OtXwTssyQ
+
+BERT模型推理加速总结
+
 https://mp.weixin.qq.com/s/HOD1Hb70NhTXXCXlopzfng
 
 BERT推理加速实践

@@ -283,3 +283,7 @@ https://mp.weixin.qq.com/s?__biz=MzIzNjc0MTMwMA==&mid=2247491892&idx=1&sn=d23d0c
 https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652055045&idx=3&sn=5c2a564350bdf5c2acb8679d05cba219
 
 DeepMind推出GAN-TTS：用生成对抗网络实现高保真语音
+
+https://mp.weixin.qq.com/s/-X2bgZ5P5BrPZFDJ-Dl1AQ
+
+MelGAN：基于生成对抗网络快速生成音频

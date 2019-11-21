@@ -368,6 +368,10 @@ https://mp.weixin.qq.com/s/oEnQPWs5WFak_qwajYKq3A
 
 在图像生成领域里，GAN这一大家族是如何生根发芽的
 
+https://mp.weixin.qq.com/s/X1DPEcNP1mFc1DGUdzh3eQ
+
+生成式深度学习
+
 ## GAN的理论解释
 
 顾险峰教授对GAN提出了自己的理论解释。

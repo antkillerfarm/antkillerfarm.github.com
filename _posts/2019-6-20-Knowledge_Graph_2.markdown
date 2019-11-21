@@ -394,7 +394,13 @@ https://mp.weixin.qq.com/s/M5syxE9Ln4UDLThPh5iuJg
 
 https://en.wikipedia.org/wiki/Flynn%27s_taxonomy
 
-CPU通常是SISD和SIMD的，而GPU则是MISD的，超级计算机则是MIMD的。
+CPU通常是SISD和SIMD的，而GPU则是SIMD的，超级计算机则是MIMD的。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/31271788
+
+SIMD指令集
 
 ## 术语
 

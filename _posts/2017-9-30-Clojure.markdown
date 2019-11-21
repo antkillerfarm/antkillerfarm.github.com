@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Clojure, Groovy, Lisp, Javascript在客户端的使用, perl, Scala, VS Code, VS
+title:  Clojure, Groovy, Javascript在客户端的使用, perl, Scala, VS Code, VS
 category: language 
 ---
 
@@ -90,26 +90,6 @@ http://www.groovy-lang.org/
 代码参见：
 
 https://github.com/antkillerfarm/antkillerfarm_rubbish/tree/master/groovy/javafx
-
-# Lisp & GUI
-
-客观的说，目前开源领域并没有很好用的和Lisp配套的GUI工具集，几个开源实现要么完工度不高，要么过于古老，好几个的样式都是90年代中期的风格。
-
-更有人指出，GUI基本上是OO语言的天下了，Lisp根本不适合干这个事。
-
-不过事实的真相是：
-
-1.最早的交互式GUI生成工具是用Lisp写的。没错，就是苹果乔教主旗下的Interface Builder，时间是1986年。
-
-2.PTC公司的CAD系统是用Lisp和C++写的。
-
-3.苹果公司早期使用MCL作为GUI开发语言（from 1984），因此那个时代有大量的程序是用Lisp写的。包括Mac上最早的MS Word。Objective-C是乔教主到NextStep之后的事，最初和苹果并无交集。
-
-4.由于Mac在艺术家群体的流行。很多音乐软件是用Lisp写的，包括Open Music, PWGL, ScoreCleaner, Igor Engraver和Symbolic Composer等。
-
-5.有家叫做LispWorks（From 1989）的公司提供对Lisp GUI的商业支持，而且提供的界面并不逊色于GTK、Qt等当代GUI工具集。上面提到的音乐软件基本上都是基于LispWorks的。
-
-综上可见，Lisp开发GUI不是可能性的问题，而是一个有待重新发掘的问题。
 
 # Javascript在客户端的使用
 
@@ -284,6 +264,10 @@ https://mp.weixin.qq.com/s/cw_Bww22sgPtOeNLKQ7HHA
 
 如何使用Visual Studio Code进行Java开发？
 
+https://mp.weixin.qq.com/s/7vG2b900eKfVrvm-fi6IZQ
+
+开发一个爆款VS Code插件这么简单！
+
 # Scintilla
 
 Scintilla是Neil Hodgson出于对Richedit控件的失望，所开发的替代品（1990）。它是Notepad++等编辑器的基础控件。
@@ -293,3 +277,15 @@ Scintilla是Neil Hodgson出于对Richedit控件的失望，所开发的替代品
 https://www.scintilla.org
 
 Scintilla官方还推出了一个名叫SciTE的编辑器，用于展示Scintilla的新功能。
+
+# LSP
+
+language server protocol是一种跨编辑器的语言支持实现规范。它由微软提出，目前vscode、vim、atom都已经支持了这个规范。
+
+在过去，每个IDE遇到一门全新的语言，往往都需要重新实现一次基本功能，对于流行的语言来说还好，因为 IDE 厂商都有动力提供支持。然后对于一门全新的语言，往往需要语言的发明人自己实现各种 IDE 的语言支持。由于各个IDE的接口不同，需要将语言支持在各个IDE中重新移植一遍。
+
+有了LSP规范后，语言支持插件开发者只需要编写一次，就可以很快地在 IDE 之间移植代码。
+
+官网：
+
+https://microsoft.github.io/language-server-protocol/

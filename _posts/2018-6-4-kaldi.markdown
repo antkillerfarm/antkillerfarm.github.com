@@ -12,6 +12,10 @@ Kaldi是一个语音识别的工具包。它由Daniel Povey于2009年创建。
 >个人主页：   
 >http://danielpovey.com/
 
+2019.11
+
+Daniel Povey由于和罢课学生产生冲突，被大学解雇。目前来到北京，出任小米语音首席科学家。
+
 官网：
 
 https://github.com/kaldi-asr/kaldi

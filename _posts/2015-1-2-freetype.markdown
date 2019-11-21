@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  FreeType, FFmpeg, SDL, 图像处理软件, Mac OS X
+title:  FreeType, FFmpeg, SDL, 图像处理软件
 category: technology 
 ---
 
@@ -138,6 +138,22 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/HelloSDL
 
 GIMP的格式转换功能非常强大，不但可以转换为常见的图片格式，还可以将图片导出成C语言头文件。但是需要注意的是，这些功能不在菜单项“另存为”中，而在菜单项“导出”中。
 
+代码：
+
+https://gitlab.gnome.org/GNOME/gimp/
+
+自GIMP 2.10之后，核心代码转移到了一个叫做GEGL的项目中。GIMP只是调用GEGL的wrapper而已。
+
+代码：
+
+https://gitlab.gnome.org/GNOME/gegl/
+
+参考：
+
+https://mp.weixin.qq.com/s/PGBIPbKOqZb1WPZ-3x4CXQ
+
+GIMP中的Noise Reduction算法原理及快速实现
+
 ## Inkscape使用技巧
 
 关于绘图软件的认识，我是从Windows 3.1自带的“画图”开始的，那是1995年的事。到了1997年的时候，从杂志上知道了PhotoShop的大名，但是直到现在也从来没用过。再后来到了2007年的时候，开始使用Paint .NET。这个软件已经支持图层的概念，个人认为这是区分入门用户和中级用户的分水岭。
@@ -205,21 +221,3 @@ ImageMagick将PDF转换为PNG的示例：
 `<!-- <policy domain="path" rights="none" pattern="@*" /> -->`
 
 `<policy domain="coder" rights="read|write" pattern="PDF" />`
-
-# Mac OS X
-
-最近对iOS开发产生了兴趣，于是准备在PC上搭建一个iOS的开发环境。
-
-首先，我搜了一下在Linux上搭建相关环境的方法，搜到了一些结果。但历史比较老，基本都是3、4年前的东西，就算搭好，也不见得有什么用。
-
-于是，目标改为在PC上使用Virtual Box搭建Mac OS X虚拟机。目标版本为Mac OS X 10.10。
-
-1.下载镜像文件。
-
-镜像文件主要有dmg和iso两种。前者必须在Mac OS X中才能执行，而后者和其他OS镜像差别不大。
-
-2.boot
-
-原版镜像由于Apple的硬件检测机制，并不能在PC上运行。这时就需要破解，这一步一般是在boot中做的。
-
-可用的boot工具，早期有empireEFI、HackBoot。较新的有chameleon、Niresh。

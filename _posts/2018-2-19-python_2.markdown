@@ -244,6 +244,16 @@ https://mp.weixin.qq.com/s/qMT46hjOQeXsjVpZPqLRVA
 
 一文读懂Python装饰器
 
+## 闭包
+
+在一些语言中，在函数中可以（嵌套）定义另一个函数时，如果内部的函数引用了外部的函数的变量，则可能产生闭包。闭包可以用来在一个函数与一组“私有”变量之间创建关联关系。在给定函数被多次调用的过程中，这些私有变量能够保持其持久性。
+
+用比较容易懂的人话说，就是当某个函数被当成对象返回时，夹带了外部变量，就形成了一个闭包。
+
+https://mp.weixin.qq.com/s/qYKNGqItnSXq0-Zq2kMCKA
+
+聊一聊Python中的闭包
+
 ## @classmethod和@staticmethod
 
 {% highlight python %}
@@ -384,33 +394,3 @@ https://bitbucket.org/gutworth/six
 http://www.cnblogs.com/zhangjing0502/archive/2012/05/16/2503880.html
 
 Python的range和xrange
-
-## enumerate
-
-普通Iterator：
-
-{% highlight python %}
-for item in enumerate(list):
-    print(item)
-{% endhighlight %}
-
-带index的Iterator：
-
-{% highlight python %}
-for index, item in enumerate(list):
-    print(index, item)
-{% endhighlight %}
-
-## for - else
-
-{% highlight python %}
-for i in [1,2,3,4]:
-    if i > 2:
-        print(i)
-else:
-    print(i, '我是else')
-{% endhighlight %}
-
-## 三元表达式
-
-`print('y是一个负数' if y < 0 else 'y是一个非负数')`

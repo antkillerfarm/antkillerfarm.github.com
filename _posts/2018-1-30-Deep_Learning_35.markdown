@@ -326,6 +326,10 @@ https://mp.weixin.qq.com/s?__biz=MzI5MDUyMDIxNA==&mid=2247491133&idx=1&sn=a7c205
 
 基于Anchor point的手势及人体3D姿态估计方法A2J
 
+https://mp.weixin.qq.com/s/Xur9sEDiPtM2jJfHd46bZw
+
+You Only Watch Once：实时人体动作定位网络
+
 # Capsule
 
 https://github.com/freefuiiismyname/capsule-mrc

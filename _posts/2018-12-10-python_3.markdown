@@ -6,6 +6,36 @@ category: language
 
 # Python
 
+## enumerate
+
+普通Iterator：
+
+{% highlight python %}
+for item in enumerate(list):
+    print(item)
+{% endhighlight %}
+
+带index的Iterator：
+
+{% highlight python %}
+for index, item in enumerate(list):
+    print(index, item)
+{% endhighlight %}
+
+## for - else
+
+{% highlight python %}
+for i in [1,2,3,4]:
+    if i > 2:
+        print(i)
+else:
+    print(i, '我是else')
+{% endhighlight %}
+
+## 三元表达式
+
+`print('y是一个负数' if y < 0 else 'y是一个非负数')`
+
 ## 时间、日期数据的格式处理
 
 时间数据上的格式处理，主要指strftime和strptime函数。其中前者可将时间数据转换成指定格式的字符串，而后者则将字符串转换成时间数据。
@@ -416,13 +446,3 @@ Sly Lex Yacc是David Beazley的新作，号称新一代的PLY。
 官网：
 
 https://sly.readthedocs.io/en/latest/
-
-## glob
-
-glob的历史可以追溯到早期的UNIX系统。用它可以查找符合特定规则的文件路径名。
-
-参考：
-
-https://blog.csdn.net/csapr1987/article/details/7469769
-
-python glob模块

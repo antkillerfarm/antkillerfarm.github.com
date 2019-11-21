@@ -268,3 +268,37 @@ https://mp.weixin.qq.com/s/QJOfh5gJReQTimu-mAzexg
 https://mp.weixin.qq.com/s/6aXcum-FAbvcGcOrkSC4vQ
 
 为什么Kafka会成为微服务架构的事实标准？
+
+# DRL参考资源+
+
+https://mp.weixin.qq.com/s/Dq4HsRg05bVMjvrsrxfOOQ
+
+从这篇YouTube论文，剖析强化学习在工业级场景推荐系统中的应用
+
+https://mp.weixin.qq.com/s/cyaQt-SO7sgG49kuUyPJbQ
+
+旷视开源的深度强化学习绘画智能体论文解读
+
+https://mp.weixin.qq.com/s/amXiNKJPEkAnu2m5NAERVw
+
+Top-K Oﬀ-Policy Correction
+
+https://mp.weixin.qq.com/s/kNtzy9-6GbsRhlL-mxksew
+
+基于强化学习的人机对话
+
+https://mp.weixin.qq.com/s?__biz=MzU1NTMyOTI4Mw==&mid=2247494226&idx=1&sn=a96ea0ad8961ec3698301cf0c4514843
+
+以YouTube论文学习如何在推荐场景应用强化学习
+
+https://mp.weixin.qq.com/s/uppNSwxNrw4_8NGBQv85xw
+
+今日头条首次改进DQN网络，解决推荐中的在线广告投放问题
+
+https://mp.weixin.qq.com/s/Uin1gOmJEa6cvkiFJm6cHw
+
+你当年没玩好的《愤怒的小鸟》，AI现在也犯难了
+
+https://mp.weixin.qq.com/s/YY1FIMjDIMABdwRC5x9w4g
+
+17种深度强化学习算法用Pytorch实现

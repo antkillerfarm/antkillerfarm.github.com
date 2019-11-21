@@ -92,6 +92,10 @@ https://zhuanlan.zhihu.com/p/80361782
 
 卷积神经网络性能优化
 
+https://mp.weixin.qq.com/s/Ji2PjZowifkIdGlHJPwEaw
+
+解析卷积的高速计算中的细节，一步步代码带你飞
+
 # NN Quantization
 
 ![](/images/img3/NN_Quantization.jpg)

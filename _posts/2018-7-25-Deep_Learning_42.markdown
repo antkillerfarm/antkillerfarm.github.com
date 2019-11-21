@@ -260,6 +260,10 @@ https://mp.weixin.qq.com/s/cChJO6YrE_XAgeInS7J1Vw
 
 130页序列推荐系统教程重磅发布
 
+https://www.intechopen.com/books/time-series-analysis-data-methods-and-applications
+
+开源新书《时间序列分析，数据/方法/应用》，6章110页pdf带你了解最新进展
+
 https://mp.weixin.qq.com/s/zv264-dqDQYRkYmjX_QZpQ
 
 郑宇解读地理传感器时间序列预测问题
@@ -347,6 +351,10 @@ https://mp.weixin.qq.com/s/33VQNVvb7JGlk10Jc3mmeg
 https://github.com/ModelOriented/DrWhy
 
 可解释AI(XAI)工具集—DrWhy
+
+https://mp.weixin.qq.com/s/1OODeAFaRLFK3elECyZcng
+
+机器学习模型可解释性的详尽介绍
 
 # 手势识别
 

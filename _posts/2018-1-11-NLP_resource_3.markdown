@@ -6,6 +6,24 @@ category: resource
 
 # NLP参考资源
 
+## 聊天机器人（续）
+
+https://mp.weixin.qq.com/s/jifGPaxdqVii3q6gG4F2ag
+
+Google工程师带你了解聊天机器人的工作原理和未来发展
+
+https://mp.weixin.qq.com/s/yeNR0krycswD8cHaN6wa6A
+
+人机对话技术研究进展与思考
+
+https://mp.weixin.qq.com/s/nJItYkjGtlC5fLYWwidduA
+
+聊天机器人的几种主要架构实现
+
+https://mp.weixin.qq.com/s/7BVVtILwtKuFUKLIjrsNaw
+
+端到端学习对话人工智能，附237页PPT下载
+
 ## 参考
 
 https://mp.weixin.qq.com/s/klfTdvfti0xCg2lGitG4hg
@@ -375,19 +393,3 @@ ACM BCB 2018 CausalTriad: 从医学文本数据中推断出新的因果关系假
 https://mp.weixin.qq.com/s/C7GkZk7UWk_2XsVfn1J_lg
 
 ACL 2018使用知识蒸馏提高基于搜索的结构预测
-
-https://mp.weixin.qq.com/s/foknrQWnBxc4b0bpkFKSdQ
-
-上海科技大学ACL2018高分论文：混合高斯隐向量文法
-
-https://zhuanlan.zhihu.com/p/37621168
-
-微博关键词抽取：借力评论信息
-
-https://blog.csdn.net/zhangxb35/article/details/78626799
-
-Text Summarization综述
-
-https://mp.weixin.qq.com/s/znafd7_N_TrQBFWvxYM_hg
-
-基于强化学习的中文零指代消解模型

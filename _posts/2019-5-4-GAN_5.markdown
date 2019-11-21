@@ -108,6 +108,10 @@ https://mp.weixin.qq.com/s/Gjb-PkMqUIIV81Na6Za_BQ
 
 超全的GAN PyTorch+Keras实现集合
 
+https://github.com/FranxYao/Deep-Generative-Models-for-Natural-Language-Processing
+
+Deep Generative Models for Natural Language Processing
+
 https://mp.weixin.qq.com/s/Cb3C6Q5aWSjsNFs5hqD6kw
 
 阿里提出应用LocalizedGAN进行半监督训练

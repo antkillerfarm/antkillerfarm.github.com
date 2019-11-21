@@ -101,3 +101,7 @@ https://mp.weixin.qq.com/s/3DPNC2bwmg8veH-XtVAGGA
 https://mp.weixin.qq.com/s/_6AYWUpPmdABcO1pCIhIsw
 
 李飞飞团队：将因果推理能力赋予代理，以完成目标导向任务
+
+https://mp.weixin.qq.com/s/AwbW3K6cPwTjJ1qzURAbUg
+
+基于推理的多轮语义分析和问答

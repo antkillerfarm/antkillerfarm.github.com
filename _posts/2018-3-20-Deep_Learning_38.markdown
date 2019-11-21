@@ -70,6 +70,10 @@ https://mp.weixin.qq.com/s/bjOVQu0FZyTWQRlwEn8IVA
 
 基于深度树学习的Zero-shot人脸检测识别
 
+https://mp.weixin.qq.com/s/bAf5x1OOf8xqcQyMdTlWyg
+
+强判别能力的深度人脸识别
+
 # RNN进阶
 
 ## IndRNN

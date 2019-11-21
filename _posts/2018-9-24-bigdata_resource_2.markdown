@@ -165,3 +165,7 @@ https://mp.weixin.qq.com/s/UJ2yy7pb8EXZSlQVJIymBg
 https://mp.weixin.qq.com/s/QeS3PpfwJuxjAUQevVtkyQ
 
 实时计算引擎在贝壳的应用与实践
+
+https://mp.weixin.qq.com/s/TJMPqCokiBD_Hb-EpYtO4g
+
+如果你也想做实时数仓…

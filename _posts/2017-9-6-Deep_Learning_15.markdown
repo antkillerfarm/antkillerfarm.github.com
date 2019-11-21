@@ -152,6 +152,10 @@ https://mp.weixin.qq.com/s/o-MFPt6LR_5XDpacqw754Q
 
 马里兰大学论文：可视化神经网络的损失函数
 
+https://mp.weixin.qq.com/s/iIhiMKutVtYEUgAiErLkVQ
+
+Deep Dream
+
 ## DL方法
 
 受到上述事实的启发，2015年德国University of Tuebingen的Leon A. Gatys写了如下两篇论文：

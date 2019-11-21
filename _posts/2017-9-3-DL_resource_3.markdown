@@ -36,6 +36,10 @@ https://mp.weixin.qq.com/s/bE9BZQ6wCICvrgomdySDuw
 
 周志华组提出可做表征学习的多层梯度提升决策树
 
+https://mp.weixin.qq.com/s/AwvSTF8j0AinS-EgmPFJTA
+
+周志华团队：深度森林挑战多标签学习，9大数据集超越传统方法
+
 ## 实战
 
 http://mp.weixin.qq.com/s/716BgHgOnbcAi2Cw-N22eg

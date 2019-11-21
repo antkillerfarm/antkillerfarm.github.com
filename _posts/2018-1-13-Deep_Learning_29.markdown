@@ -240,6 +240,10 @@ https://mp.weixin.qq.com/s/DUv5c6ce-dgLOBAE4ChiQg
 
 图神经网络为何如此强大？看完这份斯坦福31页PPT就懂了！
 
+https://mp.weixin.qq.com/s/OV-rXGU8DTNqv3QZcKo00Q
+
+Graph Learning
+
 https://mp.weixin.qq.com/s/2SaBiMJzhSRw1G0giL9TAw
 
 深入理解图注意力机制
