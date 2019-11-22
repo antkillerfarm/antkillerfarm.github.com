@@ -22,7 +22,7 @@ https://github.com/google-research/bert/blob/master/multilingual.md
 
 https://github.com/macanv/BERT-BiLSMT-CRF-NER
 
-![](/images/img2/BERT.png)
+![](/images/img3/BERT.png)
 
 这里有一个可视化工具：
 
