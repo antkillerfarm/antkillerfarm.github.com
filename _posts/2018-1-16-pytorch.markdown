@@ -40,6 +40,10 @@ Model Zoo(非官方):
 
 https://github.com/Cadene/pretrained-models.pytorch
 
+官方书籍：
+
+https://pytorch.org/deep-learning-with-pytorch-thank-you
+
 ## 安装
 
 Pytorch的安装方法在官网首页就可查到，非常方便。

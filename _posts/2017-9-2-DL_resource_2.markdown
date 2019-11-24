@@ -348,6 +348,10 @@ https://mp.weixin.qq.com/s/cD4WnafcX9cam-rLXuNDcg
 
 首个镜子分割网络问世，大连理工、鹏城实验室、香港城大出品
 
+https://zhuanlan.zhihu.com/p/76960575
+
+深度学习在图像处理的应用一览
+
 ## 光神经网络
 
 https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ

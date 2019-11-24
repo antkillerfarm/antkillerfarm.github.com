@@ -320,6 +320,10 @@ https://web.stanford.edu/~surag/posts/alphazero.html
 
 A Simple Alpha(Go) Zero Tutorial
 
+https://mp.weixin.qq.com/s/BLQF8WNsIe4a_rDeGWo_Vg
+
+通用AlphaGo诞生？DeepMind的MuZero在多种棋类游戏中超越人类
+
 # MARL
 
 Multi-agent Reinforcement Learning(MARL)，一般被称为多智能体强化学习。与之相对的则是Single-agent Reinforcement Learning(SARL)。

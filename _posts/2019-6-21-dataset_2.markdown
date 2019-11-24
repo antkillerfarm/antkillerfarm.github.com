@@ -160,6 +160,10 @@ https://mp.weixin.qq.com/s/xZVC3-OBVo5P7WW-Y9Pe8A
 
 LVIS：大规模细粒度词汇级标记数据集 ，出自FAIR ，连披萨里的菠萝粒都能完整标注
 
+https://mp.weixin.qq.com/s/fgaHG5FmJ8du2SCHm0wZTg
+
+开源新数据集，助力Deepfake检测研究
+
 ## 人脸/行为
 
 http://blog.csdn.net/wangkr111/article/details/44514097

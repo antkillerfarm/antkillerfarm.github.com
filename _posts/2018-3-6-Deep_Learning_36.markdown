@@ -281,3 +281,7 @@ Google最新论文：Youtube视频推荐如何做多目标排序
 https://mp.weixin.qq.com/s/s4onMqilnlI1SNgFLr7gww
 
 为什么你的毛衣显胖又显黑？这个算法给你答案
+
+https://mp.weixin.qq.com/s/QSGrkLWDyeZLfyeeXHUS_w
+
+基于多视角学习和个性化注意力机制的新闻推荐

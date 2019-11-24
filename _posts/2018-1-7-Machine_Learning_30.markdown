@@ -191,3 +191,35 @@ https://zhuanlan.zhihu.com/p/33088748
 https://mp.weixin.qq.com/s/9hoM_yF96XxSbQHEP6oasw
 
 怎样生成语言才能更自然，斯坦福提出超越Perplexity的评估新方法
+
+# Robust PCA
+
+http://www.cnblogs.com/quarryman/p/robust_pca.html
+
+最优化之Robust PCA
+
+http://www.aiuxian.com/article/p-2634727.html
+
+Robust PCA
+
+http://blog.csdn.net/abcjennifer/article/details/8572994
+
+Robust PCA学习笔记
+
+http://patternrecognition.cn/~jin/gs/seminar/20140515_jinzhong.ppt
+
+Robust PCA-模式识别
+
+# 热传导推荐算法
+
+https://www.zhihu.com/question/20184666
+
+推荐系统中用到的热传导算法和物质扩散是怎么用的？
+
+http://tis.hrbeu.edu.cn/oa/pdfdow.aspx?Sid=20160307
+
+基于影响力控制的热传导算法
+
+http://www.doc88.com/p-7082821463697.html
+
+改进的热传导和物质扩散混合推荐算法

@@ -304,6 +304,10 @@ https://mp.weixin.qq.com/s/H9xRY-sXmVewmmZEWTlmOQ
 
 水银、放血、泻药与死在产床的妇人
 
+https://mp.weixin.qq.com/s/oTltrhF25ClrImp6KUlagw
+
+他俩曾和鸽子较劲，却歪打正着获得诺奖（阿诺·彭齐亚斯（Arno Penzias）和罗伯特·威尔逊（Robert Wilson）——宇宙微波背景）
+
 ## 空气动力学
 
 https://mp.weixin.qq.com/s/ei84HDZIkXQr2k0ghlN_Mw

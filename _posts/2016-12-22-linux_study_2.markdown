@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  linux学习心得（二）, WebGL
+title:  linux学习心得（二）
 category: linux 
 ---
 
@@ -421,38 +421,6 @@ https://mp.weixin.qq.com/s/snQ3T86usv4rXz0MMQvFfQ
 
 如何回答性能优化的问题，才能打动阿里面试官？
 
-# WebGL
+https://www.cnblogs.com/zhouyu629/p/3734494.html
 
-WebGL可以看作是JavaScript+OpenGL ES，它为Web开发者使用显卡创建3D应用提供了方案。
-
-## 教程
-
-https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Tutorial
-
-这是mozilla的官方教程。
-
-https://webglfundamentals.org/webgl/lessons/zh_cn/
-
-这是一个中文的教程，但比上个教程要深一些。
-
-## 示例
-
-https://github.com/mdn/webgl-examples
-
-mozilla官方教程的示例
-
-## gl-matrix
-
-gl-matrix是一个矩阵运算库。除非只是绘制一个空画布，否则即使是绘制一个矩形的任务，也少不了数学运算。
-
-官网：
-
-http://glmatrix.net
-
-gl-matrix 3.0以后添加了名字空间glMatrix，所以老旧的代码可能需要这样修改：
-
-`var mat4 = glMatrix.mat4;`
-
-## 其他库
-
-https://deck.gl/
+一次心惊肉跳的服务器误删文件的恢复过程

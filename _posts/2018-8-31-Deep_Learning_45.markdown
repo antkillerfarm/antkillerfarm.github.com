@@ -212,6 +212,10 @@ https://zhuanlan.zhihu.com/p/71547478
 
 NAS发展史：从放弃到入门
 
+https://mp.weixin.qq.com/s/Kg1HHzXutTCaaxH83rLgiQ
+
+神经网络结构搜索NAS，41页ppt了解最新进展
+
 https://mp.weixin.qq.com/s/MkXBtGq4xt5YOh1-uhMBbg
 
 循环神经网络自动生成程序：谷歌大脑提出“优先级队列训练”

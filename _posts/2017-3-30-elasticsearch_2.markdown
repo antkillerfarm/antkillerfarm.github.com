@@ -302,3 +302,7 @@ https://mp.weixin.qq.com/s/Uin1gOmJEa6cvkiFJm6cHw
 https://mp.weixin.qq.com/s/YY1FIMjDIMABdwRC5x9w4g
 
 17种深度强化学习算法用Pytorch实现
+
+https://mp.weixin.qq.com/s/lxnyoo46tS7-MXAB7HNouA
+
+人工智能在电网管理中的应用

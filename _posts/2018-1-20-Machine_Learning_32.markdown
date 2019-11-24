@@ -138,6 +138,10 @@ https://mp.weixin.qq.com/s/F08aOjKsVdRInN6GPNJ7cA
 
 t-SNE：最好的降维方法之一
 
+https://mp.weixin.qq.com/s/qHOmUJgalvxwEBCBiiR7ig
+
+t-SNE
+
 # Adaboost
 
 Adaboost是Yoav Freund和Robert Schapire于1997年提出的算法。两人后来因为该算法被授予Gödel Prize（2003）。

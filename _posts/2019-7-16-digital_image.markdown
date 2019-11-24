@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数字成像, 编译原理, 边缘计算
+title:  数字成像, 编译原理, 边缘计算, Autoware
 category: resource 
 ---
 
@@ -405,3 +405,35 @@ https://mp.weixin.qq.com/s/3d7CEQ0iQzwnJ_tE7eB9Yg
 https://mp.weixin.qq.com/s/U9vnEzumNgGlYFR-lEPfhw
 
 智能边缘计算：计算模式的再次轮回
+
+# Autoware
+
+Autoware是另一个开源的无人驾驶平台。不像Apollo，没有百度这样的强势公司的介入，社区氛围更浓一些，相对的，功能也要弱一些。
+
+官网：
+
+https://www.autoware.org/
+
+主要由一下组件构成：
+
+- autoware.ai
+
+https://www.autoware.ai/
+
+这个组件基于ROS 1.0，是目前的方案。
+
+- autoware.auto
+
+https://www.autoware.auto/
+
+这个组件基于ROS 2.0，是面向未来的方案。
+
+- autoware.io
+
+https://www.autoware.io/
+
+autoware提供的模拟器。
+
+代码仓库：
+
+https://gitlab.com/autowarefoundation/autoware.ai

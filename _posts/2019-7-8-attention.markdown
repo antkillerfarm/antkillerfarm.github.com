@@ -162,7 +162,7 @@ https://zhuanlan.zhihu.com/p/63895164
 
 $$head_i = Attention(\boldsymbol{Q}\boldsymbol{W}_i^Q,\boldsymbol{K}\boldsymbol{W}_i^K,\boldsymbol{V}\boldsymbol{W}_i^V)$$
 
-所谓“多头”（Multi-Head），就是只多做几次同样的事情（参数不共享），然后把结果拼接。
+所谓“多头”（Multi-Head），就是指多做几次同样的事情（参数不共享），然后把结果拼接。
 
 ## Self Attention
 

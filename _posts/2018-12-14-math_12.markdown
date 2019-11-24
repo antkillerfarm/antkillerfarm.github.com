@@ -258,6 +258,10 @@ https://mp.weixin.qq.com/s/ZRMmByhNkjcfbaOcwxQ5dg
 
 日本数学界惊现神操作！偷偷研究飞刀方程致使厕所爆炸，连美国总统特朗普都忍不住发文怒怼
 
+https://blog.csdn.net/ChangHengyi/article/details/80577318
+
+一片文章带你理解再生核希尔伯特空间（RKHS）以及各种空间
+
 # 最速降线
 
 约翰·伯努利在1696年提出最速降线的问题（problem of brachistochrone），向全欧洲数学家征求解答。这个问题最早由伽利略在1630年提出：**“一个质点在只受重力的作用下，从一个给定点A到不在它垂直下方的另一点B，问沿着什么曲线下滑（忽略摩擦力）所需时间最短？”**

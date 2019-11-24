@@ -214,6 +214,10 @@ https://zhuanlan.zhihu.com/p/78006020
 
 NCRF++学习笔记
 
+https://zhuanlan.zhihu.com/p/91031332
+
+用腻了CRF，试试LAN吧？
+
 ## BiLSTM+CRF
 
 ![](/images/img2/BiLSTM_CRF.jpg)
@@ -269,36 +273,3 @@ Wiener Filter主要用于**平稳状态下的线性滤波**。该滤波器在均
 https://blog.csdn.net/bluecol/article/details/46242355
 
 图像去模糊（维纳滤波）
-
-# Robust PCA
-
-http://www.cnblogs.com/quarryman/p/robust_pca.html
-
-最优化之Robust PCA
-
-http://www.aiuxian.com/article/p-2634727.html
-
-Robust PCA
-
-http://blog.csdn.net/abcjennifer/article/details/8572994
-
-Robust PCA学习笔记
-
-http://patternrecognition.cn/~jin/gs/seminar/20140515_jinzhong.ppt
-
-Robust PCA-模式识别
-
-# 热传导推荐算法
-
-https://www.zhihu.com/question/20184666
-
-推荐系统中用到的热传导算法和物质扩散是怎么用的？
-
-http://tis.hrbeu.edu.cn/oa/pdfdow.aspx?Sid=20160307
-
-基于影响力控制的热传导算法
-
-http://www.doc88.com/p-7082821463697.html
-
-改进的热传导和物质扩散混合推荐算法
-

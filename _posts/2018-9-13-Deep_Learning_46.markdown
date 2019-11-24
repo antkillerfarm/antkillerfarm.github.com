@@ -403,3 +403,7 @@ https://mp.weixin.qq.com/s/H8ECjqEcIjcm5YNFu6ONdw
 https://mp.weixin.qq.com/s/YoqFYLFSRcCXvbrpCsyImA
 
 基于形状匹配对抗式生成网络的可控艺术字体风格迁移
+
+https://mp.weixin.qq.com/s/I5WfG2aCMakao3IF30rLGg
+
+TET-GAN: 文字效果迁移与文字风格化和去风格化

@@ -6,7 +6,19 @@ category: resource
 
 # 机器人/无人驾驶参考资源
 
-## 车道线检测（续）
+## 车道线检测
+
+https://blog.csdn.net/Young_Gy/article/details/75194914
+
+无人驾驶之车道线检测简易版
+
+https://mp.weixin.qq.com/s/M-J_WaV6AstRwZISPYQ-NA
+
+再识图像之高级车道线检测
+
+https://mp.weixin.qq.com/s/i793SOBdI4GyrfG_5kb3lg
+
+鲁汶大学提出可端到端学习的车道线检测算法
 
 https://zhuanlan.zhihu.com/p/58980251
 
@@ -387,19 +399,3 @@ https://mp.weixin.qq.com/s/vFyifSgGLImUrTwcw9bPsg
 https://mp.weixin.qq.com/s/aXck7MLpHojuIkvVP1iHKg
 
 北航机器人研究所名誉所长王田苗：人工智能与机器人的发展趋势
-
-https://blog.csdn.net/qq_35723367/article/details/79721503
-
-四轴飞行器基本组成及其飞行原理详解
-
-https://zhuanlan.zhihu.com/p/35319354
-
-最前沿：视觉导航（Visual Navigation），让人惊讶的进展
-
-https://mp.weixin.qq.com/s/enUyu6nJI5olRUQehmu6UA
-
-谷歌ChauffeurNet:训练能够鲁棒地驾驶实车的网络
-
-https://zhuanlan.zhihu.com/p/61153328
-
-自动驾驶系统中的交通信号检测和识别

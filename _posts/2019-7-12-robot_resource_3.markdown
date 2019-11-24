@@ -1,10 +1,26 @@
 ---
 layout: post
-title:  机器人/无人驾驶参考资源（三）, Apollo, Autoware
+title:  机器人/无人驾驶参考资源（三）, Apollo
 category: resource 
 ---
 
 # 机器人/无人驾驶参考资源
+
+https://blog.csdn.net/qq_35723367/article/details/79721503
+
+四轴飞行器基本组成及其飞行原理详解
+
+https://zhuanlan.zhihu.com/p/35319354
+
+最前沿：视觉导航（Visual Navigation），让人惊讶的进展
+
+https://mp.weixin.qq.com/s/enUyu6nJI5olRUQehmu6UA
+
+谷歌ChauffeurNet:训练能够鲁棒地驾驶实车的网络
+
+https://zhuanlan.zhihu.com/p/61153328
+
+自动驾驶系统中的交通信号检测和识别
 
 https://mp.weixin.qq.com/s/uy16CGG01o3BfYB7Qtvzcg
 
@@ -391,35 +407,3 @@ Apollo决策技术分享
 https://mp.weixin.qq.com/s/E65x4kNNZ4ctc12e5v095w
 
 自动驾驶专用计算框架探索和实践
-
-# Autoware
-
-Autoware是另一个开源的无人驾驶平台。不像Apollo，没有百度这样的强势公司的介入，社区氛围更浓一些，相对的，功能也要弱一些。
-
-官网：
-
-https://www.autoware.org/
-
-主要由一下组件构成：
-
-- autoware.ai
-
-https://www.autoware.ai/
-
-这个组件基于ROS 1.0，是目前的方案。
-
-- autoware.auto
-
-https://www.autoware.auto/
-
-这个组件基于ROS 2.0，是面向未来的方案。
-
-- autoware.io
-
-https://www.autoware.io/
-
-autoware提供的模拟器。
-
-代码仓库：
-
-https://gitlab.com/autowarefoundation/autoware.ai

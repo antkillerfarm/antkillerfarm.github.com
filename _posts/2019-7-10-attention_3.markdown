@@ -14,7 +14,7 @@ category: Attention
 
 https://github.com/google-research/bert
 
-BERT算的上是Google暴力美学的新作了。如果用家用显卡GTX 1080Ti的话，大概需要几个月的训练时间。幸好Google已经提供了预训练的模型：
+BERT算的上是Google暴力美学的新作了（2018.10）。如果用家用显卡GTX 1080Ti的话，大概需要几个月的训练时间。幸好Google已经提供了预训练的模型：
 
 https://github.com/google-research/bert/blob/master/multilingual.md
 
@@ -24,15 +24,23 @@ https://github.com/macanv/BERT-BiLSMT-CRF-NER
 
 ![](/images/img3/BERT.png)
 
+![](/images/img3/BERT_2.png)
+
 这里有一个可视化工具：
 
 https://github.com/jessevig/bertviz
 
-Tool for visualizing attention in the Transformer model (BERT, GPT-2, XLNet, and RoBERTa)
+Tool for visualizing attention in the Transformer model(BERT, GPT-2, XLNet, and RoBERTa)
 
 https://github.com/thunlp/PLMpapers
 
 预训练语言模型关系图+必读论文列表，清华荣誉出品
+
+http://jalammar.github.io/illustrated-bert/
+
+图解BERT
+
+《Incorporating BERT into Neural Machine Translation》
 
 ## ELMo
 
@@ -393,23 +401,3 @@ https://mp.weixin.qq.com/s/RjeuHXa8O3MzSpTOuOHMkQ
 https://mp.weixin.qq.com/s/yPq1cGnhcbaNLOjadj91pw
 
 Bert时代的创新：Bert在NLP各领域的应用进展
-
-https://mp.weixin.qq.com/s/l-de0vfx-L24g58IxK-NKQ
-
-Jeff Dean强推：可视化Bert网络，发掘其中的语言、语法树与几何学
-
-https://mp.weixin.qq.com/s/nlFXfgM5KKZXnPdwd97JYg
-
-哈工大讯飞联合实验室发布基于全词覆盖的中文BERT预训练模型
-
-https://zhuanlan.zhihu.com/p/70389596
-
-一批高质量中文BERT预训练模型请查收（上）
-
-https://mp.weixin.qq.com/s/h1VUSY7_UZF3PmjSN0DMSg
-
-从One-hot, Word embedding到Transformer，一步步教你理解Bert
-
-https://mp.weixin.qq.com/s/UJlmjFHWhnlXXJoRv4zkEQ
-
-虽被BERT碾压，但还是有必要谈谈BERT时代与后时代的NLP

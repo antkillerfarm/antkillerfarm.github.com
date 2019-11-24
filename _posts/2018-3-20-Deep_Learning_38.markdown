@@ -74,6 +74,10 @@ https://mp.weixin.qq.com/s/bAf5x1OOf8xqcQyMdTlWyg
 
 强判别能力的深度人脸识别
 
+https://mp.weixin.qq.com/s/zkdD0BDkB5W_j5N0emW53Q
+
+基于生成对抗网络（GAN）的人脸变形
+
 # RNN进阶
 
 ## IndRNN

@@ -265,3 +265,7 @@ https://mp.weixin.qq.com/s/kl01FypFQAmG_TiMTNnvNw
 https://mp.weixin.qq.com/s/nqRJQ6K6e1TC6IUa57dw0g
 
 基于自然语言的跨模态行人ReID的SOTA方法简述
+
+https://mp.weixin.qq.com/s/J1_bs1h_eTqmYU4q5Lzhpg
+
+基于神经网络StarNet的行人轨迹交互预测算法

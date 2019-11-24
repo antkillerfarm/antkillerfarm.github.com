@@ -300,6 +300,10 @@ https://mp.weixin.qq.com/s/PYrE6vUCivusWuFvdiUbNQ
 
 几行代码轻松实现，Tensorlayer 2.0推出深度强化学习基准库
 
+https://mp.weixin.qq.com/s/AUKMBRFMifcgZmdXBjDl3Q
+
+从“小”培养AI安全意识：OpenAI开源最新强化学习训练工具，安全约束自由定制，开箱即用
+
 # 概述
 
 ![](/images/img2/RL_intro.png)

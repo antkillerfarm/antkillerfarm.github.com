@@ -190,6 +190,10 @@ https://mp.weixin.qq.com/s/utX_iY7rRHkPV6IGfirlqw
 
 武汉大学提出ARGAN：注意力循环生成对抗模型用于检测、去除图像阴影
 
+https://mp.weixin.qq.com/s/1eEtZ7lfv613EltgD2uUrA
+
+简单几笔就能精准抠图，阿里妈妈智能抠图算法介绍
+
 # ESN
 
 Echo State Network

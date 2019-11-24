@@ -451,3 +451,17 @@ https://mp.weixin.qq.com/s/pdOVONHbjfIJPW45nEw1fg
 http://chrome.360.cn/test/html5/index.html
 
 一个用于检测浏览器对html 5支持情况的网页
+
+# Python+
+
+https://mp.weixin.qq.com/s/WZDuxH-SYZlD6DED539J6Q
+
+从Python代码到APP，你只需要一个小工具
+
+https://mp.weixin.qq.com/s/hplHCF1e4arlXCRAel0mcw
+
+Python十大装腔语法
+
+https://mp.weixin.qq.com/s/lEtE3ejBLzmm9_eo-_8NBg
+
+处理大型Excel文件，用Python就对了！

@@ -401,3 +401,7 @@ https://zhuanlan.zhihu.com/p/77834369
 https://mp.weixin.qq.com/s/wAWB2SLaqD2SmP9-j0Ut7g
 
 速度提升一倍，无需实例掩码预测即可实现全景分割
+
+https://mp.weixin.qq.com/s/LZNla-NKAu8wmi-OaJD8yA
+
+旷视研究院推出可学习的树状滤波器，实现保留结构信息的特征变换

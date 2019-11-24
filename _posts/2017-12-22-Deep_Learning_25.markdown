@@ -114,6 +114,10 @@ https://zhuanlan.zhihu.com/p/52566508
 
 深度神经网络中的多任务学习汇总
 
+https://mp.weixin.qq.com/s/DUsXj46TCZ9w_Dxgw4ZH8g
+
+用于多任务CNN的随机滤波分组，性能超现有基准方法
+
 # 人脸检测/识别
 
 ## 人脸识别

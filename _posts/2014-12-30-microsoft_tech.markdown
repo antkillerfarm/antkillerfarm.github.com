@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  这些年微软相关的技术总结, WxWidget
+title:  这些年微软相关的技术总结, WxWidget, WebGL
 category: technology 
 ---
 
@@ -199,3 +199,39 @@ WxWidget在windows平台的安装包是个奇葩的东西，它并不是可执�
 https://mp.weixin.qq.com/s/pJIuKgZC1o757iwkrt3uUQ
 
 wxPython：Python首选的GUI库
+
+# WebGL
+
+WebGL可以看作是JavaScript+OpenGL ES，它为Web开发者使用显卡创建3D应用提供了方案。
+
+## 教程
+
+https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Tutorial
+
+这是mozilla的官方教程。
+
+https://webglfundamentals.org/webgl/lessons/zh_cn/
+
+这是一个中文的教程，但比上个教程要深一些。
+
+## 示例
+
+https://github.com/mdn/webgl-examples
+
+mozilla官方教程的示例
+
+## gl-matrix
+
+gl-matrix是一个矩阵运算库。除非只是绘制一个空画布，否则即使是绘制一个矩形的任务，也少不了数学运算。
+
+官网：
+
+http://glmatrix.net
+
+gl-matrix 3.0以后添加了名字空间glMatrix，所以老旧的代码可能需要这样修改：
+
+`var mat4 = glMatrix.mat4;`
+
+## 其他库
+
+https://deck.gl/

@@ -318,3 +318,7 @@ https://mp.weixin.qq.com/s/etv5Ucyo2tiu64ZtUygz0A
 https://mp.weixin.qq.com/s/zy5ALOInXHIh8LHmihu1UA
 
 在线优化器之FOBOS
+
+https://mp.weixin.qq.com/s/7UhB8mSXQUfOPbDKqqg4rg
+
+非光滑优化的光滑化

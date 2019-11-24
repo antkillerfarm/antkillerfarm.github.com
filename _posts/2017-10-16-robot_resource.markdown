@@ -274,6 +274,10 @@ https://zhuanlan.zhihu.com/p/66961439
 
 交通模型仿真工具SUMO介绍
 
+https://mp.weixin.qq.com/s/eQJ8dgNNd3iE2fXXUcXG2A
+
+一贴集齐86种交通建模与仿真软件综述
+
 ## ROS
 
 http://www.ros.org/
@@ -451,17 +455,3 @@ https://mp.weixin.qq.com/s/ArreA2g24n-jqU7vfIE_rA
 https://mp.weixin.qq.com/s/1dOFsRCuTbm6UI1Pd5MNjw
 
 快速扩展随机树路径规划算法
-
-## 车道线检测
-
-https://blog.csdn.net/Young_Gy/article/details/75194914
-
-无人驾驶之车道线检测简易版
-
-https://mp.weixin.qq.com/s/M-J_WaV6AstRwZISPYQ-NA
-
-再识图像之高级车道线检测
-
-https://mp.weixin.qq.com/s/i793SOBdI4GyrfG_5kb3lg
-
-鲁汶大学提出可端到端学习的车道线检测算法
