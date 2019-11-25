@@ -226,6 +226,10 @@ https://mp.weixin.qq.com/s/RLxWevVWHXgX-UcoxDS70w
 
 细讲《Attention Is All You Need》
 
+https://mp.weixin.qq.com/s/1wReNLTtpKySPwi5u1iXMA
+
+All Attention You Need
+
 https://mp.weixin.qq.com/s/S_xhaDrOaPe38ZvDLWl4dg
 
 从技术到产品，搜狗为我们解读了神经机器翻译的现状

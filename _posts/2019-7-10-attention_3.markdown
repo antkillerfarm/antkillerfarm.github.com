@@ -200,6 +200,10 @@ https://mp.weixin.qq.com/s/DAsY9-Dl5T6peo_71ICOtw
 
 基于ALBERT的文本相似度计算
 
+https://mp.weixin.qq.com/s/PY6U3cbz_LnvZTkhqMLFLQ
+
+15篇论文全面概览BERT压缩方法
+
 ## 参考
 
 https://www.zhihu.com/question/298203515

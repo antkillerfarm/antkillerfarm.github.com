@@ -194,6 +194,10 @@ https://mp.weixin.qq.com/s/kFDITf4-wjPSEsByDinInQ
 
 DeepMind Nando（原牛津大学教授）强化学习最新进展，含图文、公式和代码，附102页PPT下载
 
+https://mp.weixin.qq.com/s/cobadH9PXJFfSuMlY6GWiA
+
+强化学习理论与算法，83页pdf，了解最新进展
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》
