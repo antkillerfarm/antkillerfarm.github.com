@@ -262,6 +262,10 @@ https://mp.weixin.qq.com/s/srHmkY_t3ChFAzhvXG6RPA
 
 图像转换3D模型只需5行代码，英伟达推出3D深度学习工具Kaolin
 
+https://mp.weixin.qq.com/s/CpzqhkmZOn-2Qavk90RTvQ
+
+初学深度学习单张图像三维人脸重建需要读的文章
+
 # AutoDL进阶
 
 https://mp.weixin.qq.com/s/_31zbbQ5dHf2UaI8GhXozw
@@ -339,3 +343,7 @@ https://mp.weixin.qq.com/s/of9C3l2cmzAVEt9opIgfKw
 https://mp.weixin.qq.com/s/OX0C9h5l6xffcQt6HOe_tQ
 
 DetNAS：首个搜索物体检测Backbone的方法
+
+https://mp.weixin.qq.com/s/c7S_hV_8iRhR4ZoFxQYGYQ
+
+CVPR 2019神经网络架构搜索进展综述

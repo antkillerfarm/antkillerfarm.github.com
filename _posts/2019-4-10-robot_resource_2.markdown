@@ -40,6 +40,10 @@ https://mp.weixin.qq.com/s/heh6B71IQ5NjmaTo6BaXdA
 
 无人驾驶图像识别-车道线检测
 
+https://mp.weixin.qq.com/s/aaqd0crHdk2WyKO4J9hmDg
+
+自动驾驶中的车道线跟踪技术
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/26988866

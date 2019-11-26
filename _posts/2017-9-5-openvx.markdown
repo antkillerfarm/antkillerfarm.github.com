@@ -16,6 +16,8 @@ Vulkan：OpenGL的升级版本。在OpenGL中Context和单一线程是绑定的�
 
 简单来说，Khronos的任务就是创建一个统一的硬件和软件之间的API，这样无论软件厂商，还是硬件厂商，都能各行其道，互不干扰了。
 
+![](/images/img3/AI_software.png)
+
 参考：
 
 https://zhuanlan.zhihu.com/p/20712354

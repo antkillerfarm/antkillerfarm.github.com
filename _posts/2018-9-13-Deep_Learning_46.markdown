@@ -407,3 +407,7 @@ https://mp.weixin.qq.com/s/YoqFYLFSRcCXvbrpCsyImA
 https://mp.weixin.qq.com/s/I5WfG2aCMakao3IF30rLGg
 
 TET-GAN: 文字效果迁移与文字风格化和去风格化
+
+https://mp.weixin.qq.com/s/CwLN2SRyN7RTEFtNx3u8Pg
+
+基于图卷积网络的视觉富文本数据中文档图像信息抽取

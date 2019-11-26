@@ -82,6 +82,10 @@ https://mp.weixin.qq.com/s/VGdlOlQh1_4FFTAuUHR_VA
 
 迁移学习中如何利用权值调整数据分布？DATL、L2TL两大方法解析
 
+https://mp.weixin.qq.com/s/V-4d-3yMmQpZUVY-h1eaoA
+
+Barbara Plank-NLP模型的跨语言/跨领域迁移-经验分享
+
 # 深度ISP
 
 ## 数据集
@@ -173,6 +177,10 @@ https://mp.weixin.qq.com/s/MEjZT_41w2cRqIYDi8a1rw
 https://mp.weixin.qq.com/s/Ek2eNeUPzEJiN6E1Yr6sMw
 
 CVPR2019成像类论文拾英
+
+https://mp.weixin.qq.com/s/qbPAQeJr7OWOwysa4_iDIw
+
+基于深度学习的低光照图像增强方法总结（2017-2019）
 
 # LSM
 

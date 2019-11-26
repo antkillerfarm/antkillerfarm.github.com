@@ -132,6 +132,10 @@ https://github.com/grananqvist/Awesome-Quant-Machine-Learning-Trading
 
 量化交易算法参考资料
 
+https://mp.weixin.qq.com/s/jUD6UVw-6e9HEmBvnu8v-Q
+
+牛津大学/DeepMind：论深度学习中的统计思维，附49页ppt
+
 ## 算法
 
 http://mp.weixin.qq.com/s/0CD4-dUqGq5O1wrUrSu6Ww

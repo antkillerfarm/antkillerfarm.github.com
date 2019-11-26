@@ -192,6 +192,10 @@ https://zhuanlan.zhihu.com/p/59698165
 
 NLP中的Attention机制
 
+https://mp.weixin.qq.com/s/JVkhX_v2fCaICawk-P-fzw
+
+通俗易懂：8大步骤图解注意力机制
+
 # Transformer
 
 之前的文章已经介绍了Attention和《Attention is All You Need》。但实际上，《Attention is All You Need》不仅提出了两种Attention模块，而且还提出了如下图所示的Transformer模型。该模型主要用于NMT领域，由于Attention不依赖上一刻的数据，同时精度也不弱于LSTM，因此有很好并行计算特性，在工业界得到了广泛应用。阿里巴巴和搜狗目前的NMT方案都是基于Transformer模型的。

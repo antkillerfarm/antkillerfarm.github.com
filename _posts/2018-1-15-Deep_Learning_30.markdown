@@ -210,6 +210,14 @@ https://mp.weixin.qq.com/s/nigeDLq-HrtELfhfWj5qow
 
 自注意力图池化
 
+https://mp.weixin.qq.com/s/_uoyv-NAn8GypYXGsLvjhg
+
+Graph U-Nets
+
+https://zhuanlan.zhihu.com/p/78466344
+
+从源头探讨GCN的行文思路
+
 # 自动求导
 
 DL发展到现在，其基本运算单元早就不止CNN、RNN之类的简单模块了。针对新运算层出不穷的现状，各大DL框架基本都实现了自动求导的功能。

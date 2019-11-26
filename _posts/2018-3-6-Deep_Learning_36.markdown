@@ -285,3 +285,7 @@ https://mp.weixin.qq.com/s/s4onMqilnlI1SNgFLr7gww
 https://mp.weixin.qq.com/s/QSGrkLWDyeZLfyeeXHUS_w
 
 基于多视角学习和个性化注意力机制的新闻推荐
+
+https://mp.weixin.qq.com/s/b6XHZq6C0ZWOcDrysjMoog
+
+RALM: 实时Look-alike算法在微信看一看中的应用

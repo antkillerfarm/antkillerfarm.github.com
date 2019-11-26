@@ -361,3 +361,7 @@ https://mp.weixin.qq.com/s/sc3ROchBFK9pAb-FCKNwLg
 https://mp.weixin.qq.com/s/jUPhF6OHtVrmTbg29sQV2Q
 
 谷歌提出TVN视频架构：单CPU处理1s视频仅需37ms、GPU仅需10ms
+
+https://mp.weixin.qq.com/s/vuhoK4cVaHDn6oTuGqX_Eg
+
+你写脚本，AI自动剪视频：13分钟完成剪辑师7小时创作，清华北航联手打造

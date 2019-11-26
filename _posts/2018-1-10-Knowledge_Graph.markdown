@@ -328,6 +328,10 @@ https://mp.weixin.qq.com/s/uSPkgV-zIBEEJ0Ml-ILXqQ
 
 如何从零开始搭建知识图谱？
 
+https://mp.weixin.qq.com/s/3x__Dl1x1nMgWpp0zz_fPg
+
+如何构建知识体系：知识图谱搭建的第一步
+
 https://mp.weixin.qq.com/s/DALB8eBgVWHhFcZoJFLSpg
 
 基于图的RDF知识图谱数据管理

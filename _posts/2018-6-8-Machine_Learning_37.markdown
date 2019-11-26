@@ -341,3 +341,7 @@ https://mp.weixin.qq.com/s/rXaicHuHlWegrpeulYmduw
 https://mp.weixin.qq.com/s/7_-SSVZpxLfnwn7EmbGyZA
 
 极端类别不平衡数据下的分类问题研究综述
+
+https://mp.weixin.qq.com/s/fAHlrfchgkQ1Wuc8sfTlZg
+
+堪比Focal Loss！解决目标检测中样本不平衡的无采样方法

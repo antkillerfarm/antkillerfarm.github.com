@@ -182,6 +182,10 @@ https://mp.weixin.qq.com/s/Xc-OmRpDPgw2qIgswsCeSA
 
 从嘈杂视频中提取超清人声，语音增强模型PHASEN已加入微软视频服务
 
+https://mp.weixin.qq.com/s/fc58gK4BVN-NeGdyVxjuPg
+
+沟壑易填：端到端语音翻译中预训练和微调的衔接方法
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw

@@ -154,6 +154,10 @@ https://mp.weixin.qq.com/s/XbtSamp7I6HwvRO_OweqJg
 
 Go实现ORM及构建查询
 
+https://mp.weixin.qq.com/s/DxE3YOE1GDq6ZXRhpzfC0w
+
+使用Go语言徒手撸一个简单的负载均衡器
+
 # Julia
 
 Julia是新晋发布1.0版本的科学计算类语言，号称兼具C++、python、matlab的优点。

@@ -428,10 +428,6 @@ http://pandas.pydata.org/pandas-docs/stable/comparison_with_sql.html
 
 Pandas和SQL的比较
 
-https://mp.weixin.qq.com/s/XIQ5EpQcYLxmRBuaTCZFzg
-
-一行代码，Pandas秒变分布式，快速处理TB级数据
-
 https://mp.weixin.qq.com/s/fXI5suCVna6fBxPnVyKevw
 
 浅谈NumPy和Pandas库
