@@ -276,6 +276,10 @@ https://mp.weixin.qq.com/s/ZlNcvwJ_swspifWTLHA92Q
 
 Java动态调试技术原理及实践
 
+https://mp.weixin.qq.com/s/23-S5tXTqi2LSe84OoQvvA
+
+跑得好好的Java进程，怎么突然就瘫痪了？
+
 # Javascript（续）
 
 ### Step3:延迟动画

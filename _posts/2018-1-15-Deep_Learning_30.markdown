@@ -6,6 +6,22 @@ category: DL
 
 # Graph NN（续）
 
+https://mp.weixin.qq.com/s/_0quf0IRe8mn4dnsBwf6Aw
+
+基于路径的实体图关系抽取模型
+
+https://mp.weixin.qq.com/s/jCgbBldpw4TGHUvN9WkJZg
+
+在对抗中学习网络结构——87页PPT带你学习Graph中的GAN
+
+https://mp.weixin.qq.com/s/xTZbfiLYHB64AJJRcw04qQ
+
+知识图和神经网络：如何有效读取图节点属性
+
+https://mp.weixin.qq.com/s/9fFjVSiMg-LwddXfNJuKuw
+
+DeepMind开源图网络库，一种结合图和神经网络的新方法
+
 https://mp.weixin.qq.com/s/5DmpgPN4t3p3H53Xu7_-3A
 
 北大、微软亚洲研究院：高效的大规模图神经网络计算
@@ -217,6 +233,10 @@ Graph U-Nets
 https://zhuanlan.zhihu.com/p/78466344
 
 从源头探讨GCN的行文思路
+
+https://mp.weixin.qq.com/s/YNIwmR8K-H2eKbKoZSZZ-Q
+
+CIKM最佳应用论文：11亿节点的大型图，看闲鱼如何用图卷积过滤垃圾评论
 
 # 自动求导
 

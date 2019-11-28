@@ -154,6 +154,10 @@ https://mp.weixin.qq.com/s/WzSO_XobY6kesDm4sF-hBg
 
 深度学习之推荐篇
 
+https://www.zhihu.com/question/352306163
+
+现阶段各家公司的广告算法使用的主流模型有哪些？
+
 https://mp.weixin.qq.com/s/LKjVfhyhL4GVx6l5WC6-CQ
 
 如何用深度学习实现用户行为预测与推荐

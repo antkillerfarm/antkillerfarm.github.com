@@ -6,6 +6,8 @@ category: essay
 
 # Blog维护日志
 
+2019.11 添了一个National Taiwan University的follower。
+
 2019.10.9 将RL分类拆分为RL和DRL两类。
 
 2019.7 添加Attention、DL acceleration分类。

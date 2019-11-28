@@ -6,13 +6,29 @@ category: Attention
 
 # 花式Attention
 
-## Position Embedding（续）
+## Self Attention（续）
+
+其中，n表示序列长度，d表示词向量的维度，k表示卷积核的大小，r表示restricted self-attention中的neighborhood的数量。
+
+可以看出，在n小于d的情况下，Self Attention是有计算量的优势的。
+
+所谓的restricted self-attention是指：假设当前词只与前后r个词发生联系，因此注意力也只发生在这2r+1个词之间。
+
+## Position Embedding
+
+然而，只要稍微思考一下就会发现，这样的模型并不能捕捉序列的顺序！换句话说，如果将K,V按行打乱顺序（相当于句子中的词序打乱），那么Attention的结果还是一样的。这就表明了，到目前为止，Attention模型顶多是一个非常精妙的“词袋模型”而已。
 
 这问题就比较严重了，大家知道，对于时间序列来说，尤其是对于NLP中的任务来说，顺序是很重要的信息，它代表着局部甚至是全局的结构，学习不到顺序信息，那么效果将会大打折扣（比如机器翻译中，有可能只把每个词都翻译出来了，但是不能组织成合理的句子）。
 
 于是Google再祭出了一招——Position Embedding，也就是“位置向量”，将每个位置编号，然后每个编号对应一个向量，通过结合位置向量和词向量，就给每个词都引入了一定的位置信息，**这样Attention就可以分辨出不同位置的词了**。
 
+Position Embedding的公式为：
 
+$$\left\{\begin{aligned}&PE_{2i}(p)=\sin\Big(p/10000^{2i/{d_{pos}}}\Big)\\ 
+&PE_{2i+1}(p)=\cos\Big(p/10000^{2i/{d_{pos}}}\Big) 
+\end{aligned}\right.$$
+
+由于我们有$$\sin(\alpha+\beta)=\sin\alpha\cos\beta+\cos\alpha\sin\beta$$以及$$\cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta$$，这表明位置p+k的向量可以表示成位置p的向量的线性变换，这提供了表达相对位置信息的可能性。
 
 参考：
 
@@ -200,23 +216,35 @@ https://mp.weixin.qq.com/s/JVkhX_v2fCaICawk-P-fzw
 
 之前的文章已经介绍了Attention和《Attention is All You Need》。但实际上，《Attention is All You Need》不仅提出了两种Attention模块，而且还提出了如下图所示的Transformer模型。该模型主要用于NMT领域，由于Attention不依赖上一刻的数据，同时精度也不弱于LSTM，因此有很好并行计算特性，在工业界得到了广泛应用。阿里巴巴和搜狗目前的NMT方案都是基于Transformer模型的。
 
-![](/images/img2/Transformer.png)
-
-$$FFN(x) = \max(0,xW_1 + b_1)W_2 + b_2$$
-
 代码：
 
 https://github.com/Kyubyong/transformer
 
-参考：
+![](/images/img2/Transformer.png)
+
+上图中的Feed Forward的公式为：
+
+$$FFN(x) = \max(0,xW_1 + b_1)W_2 + b_2$$
+
+Transformer的讲解首推：
+
+http://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/
+
+Visualizing A Neural Machine Translation Model (Mechanics of Seq2seq Models With Attention)
 
 http://jalammar.github.io/illustrated-transformer/
 
 The Illustrated Transformer
 
-http://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/
+这里仅对要点做一个总结：
 
-Visualizing A Neural Machine Translation Model (Mechanics of Seq2seq Models With Attention)
+1.Transformer是一个标准的Seq2seq结构，有encoder和decoder两部分。
+
+2.encoder可以并行执行，一次性算完。而decoder的输入不仅包含encoder的输出，还包含了decoder上次的输出，因此还是一个循环结构，不能完全并行。
+
+3.为了解决循环结构的次序问题，论文提出了上图所示的Masked Multi-Head Attention。
+
+参考：
 
 https://zhuanlan.zhihu.com/p/39034683
 
@@ -253,83 +281,3 @@ https://mp.weixin.qq.com/s/_UC2jlOfb34tfB_tsEXjMg
 https://mp.weixin.qq.com/s/w3IKoygTLDsAxk1MB5JrGg
 
 详细讲解Transformer新型神经网络在机器翻译中的应用
-
-https://mp.weixin.qq.com/s/HzzDG8PpDlyilQjr2PH6PA
-
-Transformer注解及PyTorch实现（上）
-
-https://mp.weixin.qq.com/s/YDaSv5oHLEtyJrp4Y5e64A
-
-Transformer注解及PyTorch实现（下）
-
-https://mp.weixin.qq.com/s/j0KRAOf8Sd0_tTlRadnw9Q
-
-利用篇章信息提升机器翻译质量
-
-https://mp.weixin.qq.com/s/s_s-MtrEwRNyllV_9qpAQA
-
-放弃幻想，全面拥抱Transformer：NLP三大特征抽取器（CNN/RNN/TF）比较
-
-https://mp.weixin.qq.com/s/NtWMcwUGg591meuGubWY1g
-
-CMU和谷歌联手放出XL号Transformer！提速1800倍
-
-https://mp.weixin.qq.com/s/_MI-OQUHVbyZ3Utd52rWMw
-
-Facebook推出最新跨语言预训练模型，刷新多项跨语言任务记录
-
-https://mp.weixin.qq.com/s/C0p1U0-x6aRipvYJItn8-g
-
-Transformer在进化！谷歌大脑用架构搜索方法找到Evolved Transformer
-
-https://mp.weixin.qq.com/s/E7wygpWbSHoq6R7wlalFkA
-
-放弃幻想，全面拥抱Transformer！NLP三大特征抽取器（CNN/RNN/TF）比较
-
-https://mp.weixin.qq.com/s/cs4IjkmdPmu2-3Mu36f8UQ
-
-OpenAI提出Sparse Transformer，文本、图像、声音都能预测，序列长度提高30倍
-
-https://mp.weixin.qq.com/s/cpbIHt-rBu48uGifg_lPfg
-
-Gaussian Transformer：一种自然语言推理的轻量方法
-
-https://mp.weixin.qq.com/s/1y8jTqCcI7HkMA3qXtqdIg
-
-阿里首次将Transformer用于淘宝电商推荐！效果超越深度兴趣网络DIN和谷歌WDL
-
-https://mp.weixin.qq.com/s/E6E6tc2uDJofuNDJArB5RQ
-
-邵晨泽：非自回归机器翻译
-
-https://mp.weixin.qq.com/s/ZfvShgevhjhe39PmF-ONnA
-
-周龙：同步双向文本生成
-
-https://mp.weixin.qq.com/s/O7B-pQveMefaCuMswT7H-A
-
-跨8千个字学习知识，上下文要多长还是交给Transformer自己决定吧
-
-https://mp.weixin.qq.com/s/VG5WHwuO6DKRzcm0pddeMQ
-
-参数少一半，效果还更好，天津大学和微软提出Transformer压缩模型
-
-https://mp.weixin.qq.com/s/9aW1p03f6mEnvSRf56rcgw
-
-Transformer-XL模型浅析
-
-https://mp.weixin.qq.com/s/Xxk6n6r0lSuybjKlwzLAnw
-
-TransformerXL：因为XL，所以更牛
-
-https://mp.weixin.qq.com/s/o__YU5vlfKi4HGytlug3og
-
-从头开始了解Transformer
-
-https://mp.weixin.qq.com/s/DuRpnJRqvZ8Jfc7jutpIXw
-
-Transformer研究指南
-
-https://mp.weixin.qq.com/s/ehhsN0Xj1aUVyAxSxnFJmQ
-
-Transformer落地：使用话语重写器改进多轮人机对话

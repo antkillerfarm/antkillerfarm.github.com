@@ -266,6 +266,10 @@ https://mp.weixin.qq.com/s/CpzqhkmZOn-2Qavk90RTvQ
 
 初学深度学习单张图像三维人脸重建需要读的文章
 
+https://mp.weixin.qq.com/s/HQLgiRfJ0KzstPfGatKHOA
+
+基于Siamese网络的多视角三维人脸重建
+
 # AutoDL进阶
 
 https://mp.weixin.qq.com/s/_31zbbQ5dHf2UaI8GhXozw

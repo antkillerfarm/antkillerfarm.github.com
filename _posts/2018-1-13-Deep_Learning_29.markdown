@@ -18,6 +18,10 @@ https://mp.weixin.qq.com/s/rGC8O2Pyq8WL8D8ATMbH0Q
 
 NYU、AWS联合推出：全新图神经网络框架DGL正式发布
 
+https://zhuanlan.zhihu.com/p/93828551
+
+图神经网络库DGL零基础上手指南
+
 ## PyTorch Geometric
 
 https://mp.weixin.qq.com/s/5HOA9Pmb3fjsfTVnFMdBIA
@@ -332,6 +336,10 @@ https://mp.weixin.qq.com/s/8jCX3Wi-w-b9AbEx9sa36A
 
 58页PPT揭示图神经网络研究最新进展
 
+https://mp.weixin.qq.com/s/lK5b3E84e2idh64v3SBfkg
+
+南洋理工Xavier：图深度学习最新进展，35页ppt，Deep Learning on Graphs
+
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
 
 Bengio等人提出图注意网络架构GAT，可处理复杂结构图
@@ -343,6 +351,10 @@ https://zhuanlan.zhihu.com/p/34232818
 https://zhuanlan.zhihu.com/p/28170197
 
 《Gated Graph Sequence Neural Networks》阅读笔记
+
+https://zhuanlan.zhihu.com/p/75307407
+
+图神经网络（Graph Neural Networks，GNN）综述
 
 https://mp.weixin.qq.com/s/Pm1HiEQOBnbo_GQ_v6Y_zw
 
@@ -383,19 +395,3 @@ https://mp.weixin.qq.com/s/SGCtwYWfnxjcpMJeeH1b4w
 https://mp.weixin.qq.com/s/DOau_vTbwCauQ8mrHkGu9Q
 
 首个面向Facebook、arXiv网络图类的对抗攻击研究
-
-https://mp.weixin.qq.com/s/_0quf0IRe8mn4dnsBwf6Aw
-
-基于路径的实体图关系抽取模型
-
-https://mp.weixin.qq.com/s/jCgbBldpw4TGHUvN9WkJZg
-
-在对抗中学习网络结构——87页PPT带你学习Graph中的GAN
-
-https://mp.weixin.qq.com/s/xTZbfiLYHB64AJJRcw04qQ
-
-知识图和神经网络：如何有效读取图节点属性
-
-https://mp.weixin.qq.com/s/9fFjVSiMg-LwddXfNJuKuw
-
-DeepMind开源图网络库，一种结合图和神经网络的新方法
