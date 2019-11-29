@@ -186,6 +186,10 @@ https://mp.weixin.qq.com/s/fc58gK4BVN-NeGdyVxjuPg
 
 沟壑易填：端到端语音翻译中预训练和微调的衔接方法
 
+https://mp.weixin.qq.com/s/HcumCA0kBrpSInn7Ge17MQ
+
+多语言识别的实现
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw

@@ -128,9 +128,20 @@ http://jalammar.github.io/illustrated-bert/
 
 ![](/images/img3/BERT.png)
 
+上图是BERT的网络结构图。
+
+BERT是Bidirectional Encoder Representations from Transformers的缩写。从这个名字可以看出它将Transformer中的encoder作为一个基本单元，然后采用了类似双向RNN的方式，做了一个双向的Transformer的结构。
+
+## pre-training
+
 
 
 ![](/images/img3/BERT_2.png)
+
+
+![](/images/img3/BERT_3.png)
+
+![](/images/img3/BERT_4.png)
 
 ## ELMo
 
@@ -155,6 +166,12 @@ https://zhuanlan.zhihu.com/p/37684922
 ELMo
 
 ## GPT 2.0
+
+论文：
+
+《Improving Language Understandingby Generative Pre-Training》
+
+![](/images/img3/GPT.png)
 
 https://mp.weixin.qq.com/s/E7FLbXYvE9irSpJ9Cdx5tg
 

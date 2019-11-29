@@ -1,8 +1,32 @@
 ---
 layout: post
-title:  语音识别（二）——基本框架, Microphone Array, 声源定位
+title:  语音识别（二）——基本框架, Microphone Array
 category: speech 
 ---
+
+# 概述
+
+## 数据集（续）
+
+http://www.aishelltech.com/aishell_2
+
+AISHELL-2的数据规模达到1000小时和更优秀的系统级recipe。数据目前以硬盘和网盘形式免费开放给高校科研教育机构。商用似乎还是要钱的。
+
+https://mp.weixin.qq.com/s/f_oFRDuSAuqwbOAby07a5Q
+
+CN-Celeb：中国明星声纹数据集发布
+
+https://catalog.ldc.upenn.edu/LDC93S1
+
+TIMIT数据集（收费）
+
+https://mp.weixin.qq.com/s/w9_D1_VVhk9md4RANaipDg
+
+Mozilla开源语音识别模型和世界第二大语音数据集
+
+http://www.voxforge.org/
+
+VoxForge是一个非常活跃的众包语音识别数据库和经过训练的模型库
 
 # 基本框架
 
@@ -167,22 +191,3 @@ https://zhuanlan.zhihu.com/p/23420891
 ### 混响
 
 声音传播受空间影响较大，由于空间反射，衍射，麦克风收到的信号除了直达信号以外，还有多径信号叠加，使得信号被干扰，即为混响。在室内环境中，受房间边界或者障碍物衍射，反射导致声音延续，极大程度的影响语音的可懂度。
-
-# 声源定位
-
-## 近场模型和远场模型
-
-![](/images/img2/far_field_near_field.jpg)
-
-通常麦克风阵列的距离为1~3m，这属于近场模型，麦克风阵列接受的是球面波而不是平面波，声波在传播的过程中会发生衰减，而衰减因子与传播的距离成正比，因此声波从声源到达阵元时候的幅度也各不相同。而远场模型中，声源到阵元的距离差相对较小，可以忽略。通常，我们定义$$2L^2/\lambda$$为远近场临界值，L为阵列孔径，λ为声波波长，因此阵元接受信号不仅有相位延时还有幅度衰减。
-
-参考：
-
-https://www.zhihu.com/question/48537863
-
-远场（far-field）语音识别的主流技术有哪些？
-
-https://mp.weixin.qq.com/s/1GjBWW5gn2WQb1GWExtB5A
-
-HOA声场重建原理
-

@@ -1,10 +1,74 @@
 ---
 layout: post
-title:  语音识别（六）——语言模型进阶, GMM-HMM, WFST
+title:  语音识别（六）——语音识别的评价指标, 声学模型进阶, 语言模型进阶, GMM-HMM, WFST（1）
 category: speech 
 ---
 
-# 声学模型进阶（续）
+# 语音识别的评价指标
+
+语音识别的评价指标主要是Word Error Rate（WER）。
+
+错误的情况包括三种：
+
+1.Substitutions：错词。
+
+2.Deletions：漏词。
+
+3.Insertions：多词。
+
+$$WER=100\%\times \frac{Subs+Dels+Ins}{\text{word in correct sentence}}$$
+
+类似的还有CER/PER：Character/Phoneme Error Rate。
+
+需要注意的是，评价WER时，需要在ASR output和Label之间进行对齐操作，而不是简单的从左往右匹配，否则将无法正确处理Deletions和Insertions的情形。
+
+还有根据公式可知，WER是可以大于100%的。
+
+参考：
+
+https://blog.csdn.net/quhediegooo/article/details/56834417
+
+语音识别评估标准-WER
+
+# 声学模型进阶
+
+## 语音质量
+
+更高的采样率可以降低WER。一般来说，16KHz相比8KHz的WER要小10%左右。
+
+## Voice Detection
+
+长时间的silence会增加WER，因此我们需要判断当前是否在说话。
+
+Voice Detection包括两个方面：
+
+1.Beginning-Point Detection。也叫做Voice Activity Detection（VAD）或者Acoustic event detection (AED)。有些类似于唤醒检测，但并不局限于设备的开机时刻。
+
+2.End-Point Detection。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/24432663
+
+Voice Active Detection(VAD)的过去时与现在时
+
+https://blog.csdn.net/wxb1553725576/article/details/78069089
+
+Kaldi特征提取之-VAD
+
+https://blog.csdn.net/shichaog/article/details/78257068
+
+VAD综述
+
+## Feature normalization
+
+有时候需要对Feature进行normalization。例如，对MFCC特征减去均值，可以有效提升在噪声环境下的识别率。
+
+## Tri-phone Models
+
+英语一般包含43个音素，因此Tri-phone共有$$43^3\approx 80K$$种不同组合。
+
+但是这些组合的概率是众寡悬殊的，有些组合很常见，而有些组合很罕见。因此我们需要合并相似的发音组合。这通常采用CART决策树来进行聚类。这样做还可以减少状态数量，提高计算效率。
 
 ## 发音词典
 
@@ -207,87 +271,3 @@ $$(K, \bigoplus, \bigotimes，0， 1)$$
 | Log | $$R\cup\{-\infty，+\infty\}$$ | $$\oplus_{log}$$ | + | $$+\infty$$ | 0 |
 | Tropical | $$R\cup\{-\infty，+\infty\}$$ | min | + | $$+\infty$$ | 0 |
 | String | $$\Sigma^*\cup\{\infty\}$$ | $$\land$$ | $$\cdot$$ | $$\infty$$ | $$\epsilon$$ |
-
-在WFST中用的比较多的是log半环和tropical半环。前者对路径概率进行了对数运算，而后者在log半环的基础上，进行了viterbi approximation，也就是用若干路径的概率极值，作为当前概率值，这和动态规划中的viterbi算法是一致的。
-
-接下来定义WFST上的二元运算：
-
-一整条路径的权重$$w[\pi ]=w[e_1]\bigotimes \cdots \bigotimes w[e_k]$$。
-
-多个有限路径集合的权重$$w[R]=\bigoplus_{\pi \in R} w[\pi]$$。
-
-参考：
-
-http://hongjiang.info/semigroup-and-monoid/
-
-半群(semigroup)与幺半群(monoid)
-
-## Sum(Union)
-
-介绍完WFST的定义，再来介绍一下定义在它之上的运算。
-
-![](/images/img2/sum.png)
-
-Sum运算的形式化描述为：
-
-$$[T_1 \oplus T_2](x,y)=[T_1](x,y)\oplus [T_2](x,y)$$
-
-## Product(Concatenation)
-
-![](/images/img2/product.png)
-
-Product运算的形式化描述为：
-
-$$[T_1 \otimes T_2](x,y)=\bigoplus_{x=x_1x_2,y=y_1y_2} [T_1](x_1,y_1)\otimes [T_2](x_2,y_2)$$
-
-## Closure
-
-![](/images/img2/closure.png)
-
-Closure运算的形式化描述为：
-
-$$[T^*](x,y)=\bigoplus_{n=0}^{\infty}[T^n](x,y)$$
-
-## Reversal
-
-![](/images/img2/reversal.png)
-
-Reversal运算的形式化描述为：
-
-$$[\widetilde{T}](x,y)=[T](\widetilde{x},\widetilde{y})$$
-
-## Inversion
-
-![](/images/img2/inversion.png)
-
-Inversion运算的形式化描述为：
-
-$$[T^{-1}](x,y)=[T](y,x)$$
-
-## Projection
-
-![](/images/img2/projection.png)
-
-Projection运算的形式化描述为：
-
-$$[\prod_1(T)](x)=\bigoplus_y[T](x,y)$$
-
-## Composition
-
-Composition用来合并不同级别的转换器。用$$T=T_1\circ T_2$$表示这种操作。
-
-![](/images/img2/composition.png)
-
-Composition运算的形式化描述为：
-
-$$[T_1\circ T_2](x,y)=\bigoplus_z [T_1](x,z)\bigotimes [T_2](z,y)$$
-
-通俗一些的说法就是：
-
-（1）起始状态应该是$$T_1，T_2$$的起始状态
-
-（2）结束状态是$$T_1，T_2$$的结束状态
-
-（3）如果$$q_1$$到$$r_1$$的边$$t_1$$的输出等于$$q_2$$到$$r_2$$的边$$t_2$$的输入，那么$$(q_1,q_2)$$和$$(r_1,r_2)$$应该有一条边，如果是tripical半环，则该边权重是以上两边权重之和。
-
-当$$T_1$$的输出包含$$\epsilon$$，$$T_2$$的输入包含$$\epsilon$$的时候，会导致产生大量多余的边，使得最终结果不正确。这时需要去除$$\epsilon$$-path。细节略。

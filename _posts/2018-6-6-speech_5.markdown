@@ -1,10 +1,44 @@
 ---
 layout: post
-title:  语音识别（五）——Mel-Frequency Analysis, FBank, 语音识别的评价指标, 声学模型进阶
+title:  语音识别（五）——Cepstrum Analysis, Mel-Frequency Analysis, FBank
 category: speech 
 ---
 
-# Cepstrum Analysis（续）
+# Spectrogram
+
+## Spectrogram（续）
+
+![](/images/img2/Spectrogram_3.png)
+
+再将左边的频谱旋转90度。
+
+![](/images/img2/Spectrogram_4.png)
+
+然后把这些幅度映射到一个灰度级表示的直方图。0表示白色，255表示黑色。幅度值越大，相应的区域越黑。
+
+![](/images/img2/Spectrogram_5.png)
+
+这样我们会得到一个随着时间变化的频谱图，这个就是描述语音信号的spectrogram声谱图。
+
+# Cepstrum Analysis
+
+![](/images/img2/Cepstral.png)
+
+上图是一个语音的频谱图。峰值就表示语音的主要频率成分，我们把这些峰值称为共振峰（formants），而共振峰就是携带了声音的辨识属性（就是个人身份证一样）。所以它特别重要。用它就可以识别不同的声音。
+
+![](/images/img2/Cepstral_2.png)
+
+既然它那么重要，那我们就是需要把它提取出来！我们要提取的不仅仅是共振峰的位置，还得提取它们转变的过程。所以我们提取的是频谱的包络（Spectral Envelope）。这包络就是一条连接这些共振峰点的平滑曲线。
+
+原始的频谱由两部分组成：包络和频谱的细节。这里用到的是对数频谱，所以单位是dB。
+
+![](/images/img2/Cepstral_3.png)
+
+怎么把他们分离开呢？也就是，怎么在给定$$\log X[k]$$的基础上，求得$$\log H[k]$$和$$\log E[k]$$以满足$$\log X[k] = \log H[k] + \log E[k]$$呢？
+
+![](/images/img2/Cepstral_4.png)
+
+为了达到这个目标，我们需要Play a Mathematical Trick。这个Trick是什么呢？就是对频谱做FFT。
 
 这里，我们对Fourier transform做一个简单的回顾。
 
@@ -231,69 +265,3 @@ $$\frac{P(W)P(O\mid W)}{P(O)}$$
 这里只有$$P(O)$$已知，剩下的两个参数都需要额外提供。其中HMM提供$$P(O\mid W)$$，LM提供$$P(W)$$。
 
 由于HMM的path上的概率是各个transition probability的乘积，而这些概率都小于1，因此他们的乘积必然是更小的数。这时可以考虑使用对数，不仅可将乘法变为加法，同时数值的范围也得到了改善。
-
-# 语音识别的评价指标
-
-语音识别的评价指标主要是Word Error Rate（WER）。
-
-错误的情况包括三种：
-
-1.Substitutions：错词。
-
-2.Deletions：漏词。
-
-3.Insertions：多词。
-
-$$WER=100\%\times \frac{Subs+Dels+Ins}{\text{word in correct sentence}}$$
-
-类似的还有CER/PER：Character/Phoneme Error Rate。
-
-需要注意的是，评价WER时，需要在ASR output和Label之间进行对齐操作，而不是简单的从左往右匹配，否则将无法正确处理Deletions和Insertions的情形。
-
-还有根据公式可知，WER是可以大于100%的。
-
-参考：
-
-https://blog.csdn.net/quhediegooo/article/details/56834417
-
-语音识别评估标准-WER
-
-# 声学模型进阶
-
-## 语音质量
-
-更高的采样率可以降低WER。一般来说，16KHz相比8KHz的WER要小10%左右。
-
-## Voice Detection
-
-长时间的silence会增加WER，因此我们需要判断当前是否在说话。
-
-Voice Detection包括两个方面：
-
-1.Beginning-Point Detection。也叫做Voice Activity Detection（VAD）或者Acoustic event detection (AED)。有些类似于唤醒检测，但并不局限于设备的开机时刻。
-
-2.End-Point Detection。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/24432663
-
-Voice Active Detection(VAD)的过去时与现在时
-
-https://blog.csdn.net/wxb1553725576/article/details/78069089
-
-Kaldi特征提取之-VAD
-
-https://blog.csdn.net/shichaog/article/details/78257068
-
-VAD综述
-
-## Feature normalization
-
-有时候需要对Feature进行normalization。例如，对MFCC特征减去均值，可以有效提升在噪声环境下的识别率。
-
-## Tri-phone Models
-
-英语一般包含43个音素，因此Tri-phone共有$$43^3\approx 80K$$种不同组合。
-
-但是这些组合的概率是众寡悬殊的，有些组合很常见，而有些组合很罕见。因此我们需要合并相似的发音组合。这通常采用CART决策树来进行聚类。这样做还可以减少状态数量，提高计算效率。

@@ -277,6 +277,8 @@ http://www.speech.cs.cmu.edu/databases/an4/
 
 The CMU Audio Databases。这个数据集非常老了（1991年），只有64M。
 
+----
+
 http://download.tensorflow.org/data/speech_commands_v0.01.tar.gz
 
 TensorFlow提供的Speech Commands Datasets
@@ -291,17 +293,7 @@ https://www.kaggle.com/davids1992/speech-representation-and-data-exploration/not
 
 包含对Speech Commands Datasets的数据处理过程的blog
 
-https://catalog.ldc.upenn.edu/LDC93S1
-
-TIMIT数据集（收费）
-
-https://mp.weixin.qq.com/s/w9_D1_VVhk9md4RANaipDg
-
-Mozilla开源语音识别模型和世界第二大语音数据集
-
-http://www.voxforge.org/
-
-VoxForge是一个非常活跃的众包语音识别数据库和经过训练的模型库
+----
 
 http://pan.baidu.com/s/1dEhUghz
 
@@ -315,12 +307,10 @@ http://blog.csdn.net/sut_wj/article/details/70662181
 
 THCHS-30：一个免费的中文语料库
 
+----
+
 http://cn-mirror.openslr.org/33/
 
 AISHELL数据库是THCHS-30之后，目前中文语音数据开源最大的数据库。
 
 它是由北京希尔贝壳科技有限公司(http://www.aishelltech.com)录制的中文普通话数据。由400名来自不同方言区的发音人录制，男女比例均衡。按照设计好的文本，在相对安静环境中使用手机（Android和IOS系统）录制格式为16kHz、16bit单声道数据和高保真麦克风录制格式为44.1kHz、16bit单声道数据同时采集。
-
-http://www.aishelltech.com/aishell_2
-
-AISHELL-2的数据规模达到1000小时和更优秀的系统级recipe。数据目前以硬盘和网盘形式免费开放给高校科研教育机构。商用似乎还是要钱的。

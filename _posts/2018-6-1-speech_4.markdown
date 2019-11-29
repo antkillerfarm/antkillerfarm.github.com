@@ -1,8 +1,20 @@
 ---
 layout: post
-title:  语音识别（四）——DTW, Spectrogram, Cepstrum Analysis
+title:  语音识别（四）——DTW, Spectrogram
 category: speech 
 ---
+
+# 建模单元
+
+建模单元是指声音建模的最小单元。从细到粗，一般有**state、phoneme、character**三级。
+
+描述一种语言的基本单位被称为音素phoneme，例如BRYAN这个词就可以看做是由B, R, AY, AX, N五个音素构成的。这种模式也叫做单音素monophone模式。
+
+然而语音没有图像识别那么简单，因为我们再说话的时候很多发音都是连在一起的，很难区分，所以一般用左中右三个HMM state来描述一个音素，也就是说BRYAN这个词中的R音素就变成了用B-R, R, R-AY三个HMM state来表示。这种模式又被称作三音素triphone模式。
+
+character显然是个最粗的划分，尽管英语是表音文字，然而一个字母有多个发音，仍然是个普遍现象。
+
+在GMM-HMM时代，人们倾向于细粒度建模，因为模型越细，效果越好。但DL时代，人们更倾向于粗粒度建模，因为这样做，可以加快语音识别的解码速度，从而可以使用更深、更复杂的神经网络建模声学模型。
 
 # DTW
 
@@ -179,37 +191,3 @@ DTW是一种时域方法，作为信号处理自然少不了频域方法。这�
 ![](/images/img2/Spectrogram_2.png)
 
 我们先将其中一帧语音的频谱通过坐标表示出来。
-
-![](/images/img2/Spectrogram_3.png)
-
-再将左边的频谱旋转90度。
-
-![](/images/img2/Spectrogram_4.png)
-
-然后把这些幅度映射到一个灰度级表示的直方图。0表示白色，255表示黑色。幅度值越大，相应的区域越黑。
-
-![](/images/img2/Spectrogram_5.png)
-
-这样我们会得到一个随着时间变化的频谱图，这个就是描述语音信号的spectrogram声谱图。
-
-# Cepstrum Analysis
-
-![](/images/img2/Cepstral.png)
-
-上图是一个语音的频谱图。峰值就表示语音的主要频率成分，我们把这些峰值称为共振峰（formants），而共振峰就是携带了声音的辨识属性（就是个人身份证一样）。所以它特别重要。用它就可以识别不同的声音。
-
-![](/images/img2/Cepstral_2.png)
-
-既然它那么重要，那我们就是需要把它提取出来！我们要提取的不仅仅是共振峰的位置，还得提取它们转变的过程。所以我们提取的是频谱的包络（Spectral Envelope）。这包络就是一条连接这些共振峰点的平滑曲线。
-
-原始的频谱由两部分组成：包络和频谱的细节。这里用到的是对数频谱，所以单位是dB。
-
-![](/images/img2/Cepstral_3.png)
-
-怎么把他们分离开呢？也就是，怎么在给定$$\log X[k]$$的基础上，求得$$\log H[k]$$和$$\log E[k]$$以满足$$\log X[k] = \log H[k] + \log E[k]$$呢？
-
-![](/images/img2/Cepstral_4.png)
-
-为了达到这个目标，我们需要Play a Mathematical Trick。这个Trick是什么呢？就是对频谱做FFT。
-
-
