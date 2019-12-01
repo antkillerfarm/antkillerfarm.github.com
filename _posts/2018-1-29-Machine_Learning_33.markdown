@@ -322,3 +322,7 @@ https://mp.weixin.qq.com/s/zy5ALOInXHIh8LHmihu1UA
 https://mp.weixin.qq.com/s/7UhB8mSXQUfOPbDKqqg4rg
 
 非光滑优化的光滑化
+
+https://zhuanlan.zhihu.com/p/92230537
+
+求解稀疏优化问题——半光滑牛顿方法

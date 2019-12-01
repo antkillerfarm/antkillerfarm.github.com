@@ -78,6 +78,10 @@ https://mp.weixin.qq.com/s/zkdD0BDkB5W_j5N0emW53Q
 
 基于生成对抗网络（GAN）的人脸变形
 
+https://mp.weixin.qq.com/s/tj-ZdB83itO1nAKBGKlb_Q
+
+爱奇艺提出半监督损失函数，利用无标签数据优化人脸识别模型
+
 # RNN进阶
 
 ## IndRNN

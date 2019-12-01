@@ -134,7 +134,7 @@ BERT是Bidirectional Encoder Representations from Transformers的缩写。从这
 
 ## pre-training
 
-
+BERT的强大，主要不在网络结构上。上面介绍的GPT虽然输给了BERT，但更深、维度更大的GPT 2却赢了BERT，可见单向或者双向的Transformer，并不是问题的关键。让这些模型强大的原因主要在于pre-training。
 
 ![](/images/img3/BERT_2.png)
 

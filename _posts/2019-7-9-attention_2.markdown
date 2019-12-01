@@ -240,7 +240,7 @@ The Illustrated Transformer
 
 1.Transformer是一个标准的Seq2seq结构，有encoder和decoder两部分。
 
-2.encoder可以并行执行，一次性算完。而decoder的输入不仅包含encoder的输出，还包含了decoder上次的输出，因此还是一个循环结构，不能完全并行。
+2.encoder可以并行执行，一次性算完。而decoder的输入不仅包含encoder的输出，还包含了decoder上次的输出，因此还是一个循环结构，并不能完全并行。
 
 3.为了解决循环结构的次序问题，论文提出了上图所示的Masked Multi-Head Attention。
 

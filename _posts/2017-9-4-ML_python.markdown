@@ -406,6 +406,10 @@ https://mp.weixin.qq.com/s/bD9XDg2kMtXDb45xMvY5tA
 
 Python绘图还在用Matplotlib？发现一款手绘可视化神器！
 
+https://mp.weixin.qq.com/s/PvK1acmL1D3byEylmhtEaQ
+
+数据可视化简易入门（Matplotlib和Seaborn）
+
 ## Pandas
 
 Pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。

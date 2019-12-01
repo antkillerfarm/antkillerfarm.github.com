@@ -270,6 +270,10 @@ https://mp.weixin.qq.com/s/7vG2b900eKfVrvm-fi6IZQ
 
 开发一个爆款VS Code插件这么简单！
 
+https://mp.weixin.qq.com/s/DMzJxeEWVTcPy0ShVFH8Qg
+
+20个必知必会VSCode小技巧
+
 # Scintilla
 
 Scintilla是Neil Hodgson出于对Richedit控件的失望，所开发的替代品（1990）。它是Notepad++等编辑器的基础控件。

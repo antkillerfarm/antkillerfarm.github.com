@@ -469,3 +469,7 @@ Python十大装腔语法
 https://mp.weixin.qq.com/s/lEtE3ejBLzmm9_eo-_8NBg
 
 处理大型Excel文件，用Python就对了！
+
+https://mp.weixin.qq.com/s/Oo-U4Bq7g1wmQgXJ7Y-rjw
+
+万字长文详解如何用Python玩转OpenGL

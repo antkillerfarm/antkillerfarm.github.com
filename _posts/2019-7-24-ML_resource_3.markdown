@@ -213,3 +213,11 @@ https://mp.weixin.qq.com/s/byzL0Te5-QQLR7bxJpoZrw
 https://mp.weixin.qq.com/s/KmPTljxY4eyoYV8hXLxIXg
 
 浅谈滴滴派单算法
+
+https://mp.weixin.qq.com/s/p3w2GSjGMJOwlMJk3xmbvQ
+
+AI插手！用文本分析鉴定《红楼梦》、《亨利八世》实际作者
+
+https://mp.weixin.qq.com/s/H1diSCPZe6oTouufPY1JkA
+
+机组排班优化及悠桦林的实践
