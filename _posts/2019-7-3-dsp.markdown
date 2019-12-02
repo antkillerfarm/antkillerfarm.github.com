@@ -283,3 +283,49 @@ OpenARK：惊艳的增强现实、虚实交互开源库
 https://mp.weixin.qq.com/s/h0PwA9vtABWHgxd42yX3Fg
 
 当时尚遇上AI！港中文MMLab开源MMFashion工具箱
+
+# Attention进阶+
+
+https://mp.weixin.qq.com/s/i3Xd_IB7R0-QPztn-pgpng
+
+遍地开花的Attention，你真的懂吗？
+
+https://mp.weixin.qq.com/s/rrbwItXt-1EaGiqtDEGvog
+
+为节约而生：从标准Attention到稀疏Attention
+
+https://mp.weixin.qq.com/s/G4mFW8cn-ho3KGmbw5sSTw
+
+计算机视觉中注意力机制原理及其模型发展和应用
+
+https://mp.weixin.qq.com/s/MzHmvbwxFCaFjmMkjfjeSg
+
+遍地开花的Attention，你真的懂吗？
+
+https://mp.weixin.qq.com/s/7ETHeN2xV_hEwkDxrhJyNg
+
+用Attention玩转CV，一文总览自注意力语义分割进展
+
+https://mp.weixin.qq.com/s/e_LEhLf2Rh-1zkEBmqS4nA
+
+NLP这两年：15个预训练模型对比分析与剖析
+
+https://mp.weixin.qq.com/s/0EDN-ILeL_diZ1G11ikwjw
+
+T5模型：NLP Text-to-Text预训练模型超大规模探索
+
+https://zhuanlan.zhihu.com/p/89719631
+
+T5: Text-to-Text Transfer Transformer阅读笔记
+
+https://mp.weixin.qq.com/s/X1mLXPzJU7k_ANMzvVPxjA
+
+BERT、RoBERTa、DistilBERT与XLNet，我们到底该如何选择？
+
+https://mp.weixin.qq.com/s/Di-TbseiezMBc-MUYoEFHg
+
+CV领域的注意力机制
+
+https://mp.weixin.qq.com/s/GGRORF5EfJ5xzMLwAsJt5w
+
+从词袋到Transfomer，NLP十年突破史
