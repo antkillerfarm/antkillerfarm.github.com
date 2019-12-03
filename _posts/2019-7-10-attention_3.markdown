@@ -122,8 +122,6 @@ http://jalammar.github.io/illustrated-bert/
 
 图解BERT
 
-《Incorporating BERT into Neural Machine Translation》
-
 ## 基本结构
 
 ![](/images/img3/BERT.png)
@@ -185,6 +183,18 @@ BERT对于input embeddings也做了改进。（如下图所示）
 ![](/images/img3/BERT_4.png)
 
 其中，Segment Embeddings用于区分输入中的不同句子。这一方案的使用，使得输入文本不再局限于一句话之内，从而大大增加了输入文本的长度，对于获得文本的全局信息，很有好处。
+
+## NMT
+
+BERT的论文并未提到执行NMT任务时的网络结构，但从下面的论文：
+
+《Incorporating BERT into Neural Machine Translation》
+
+可以看出NMT的网络结构仍然是和Transformer类似的seq2seq结构：
+
+![](/images/img3/BERT_5.png)
+
+也就是说，仍然有decoder部分，仍然不能完全并行。
 
 ## ELMo
 
