@@ -10,6 +10,16 @@ category: resource
 
 此外，SLAM、Apollo、传感器（主要是传感器的物理原理，不包括传感器数据的融合处理。）系列也有单独的资源，这里不再列出。
 
+## 前言
+
+2004年，DARPA举办了第一届 “DARPA”挑战赛（无人车挑战赛）。根本没有一支参赛队伍完成这次比赛任务，这件事对来自斯坦福大学的Sebastian Thrun刺激很大。
+
+于是，他在2005年组建了自己的无人车队，并且成为这项挑战赛上的第一支完赛队伍，获得奖金200万美元。这笔奖金虽然巨额，但事实上Sebastian Thrun在这个项目的投入远远大于200万美金。
+
+Sebastian团队另外一大贡献就是在完成挑战赛后，发表了一篇著名的paper：
+
+《Stanley: The Robot that Won the DARPA Grand Challenge》
+
 ## 行业
 
 ![](/images/img2/ADAS.jpg)
@@ -415,28 +425,6 @@ https://mp.weixin.qq.com/s/u6gibvshU4KI3fEE6h9KeQ
 https://mp.weixin.qq.com/s/tjn6Fob1L9aWnl2b35rjgA
 
 一文读懂总线技术
-
-## 高精地图
-
-https://mp.weixin.qq.com/s/-HdpWQeMY6-sptxF9D4CcQ
-
-自动驾驶中的高精地图深度剖析
-
-https://mp.weixin.qq.com/s/rqDYpGj6dG0Zwn5C6kNApA
-
-群雄逐“图”，百度缘何备受关注？这是一篇关于高精地图的blog
-
-http://mp.weixin.qq.com/s/baXCaD1EdHKCJbCIh2HDeA
-
-Apollo高精地图技术与应用
-
-https://mp.weixin.qq.com/s/BRuT4YtU3D9c2GCeBkqv_w
-
-高精地图，比想象更重要
-
-https://mp.weixin.qq.com/s/GG1V6k3c3Dvfw334jpqNxA
-
-自动驾驶车会看地图吗？它如何认路、找准定位？
 
 ## 路径规划
 

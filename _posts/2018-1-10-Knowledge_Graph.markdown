@@ -136,6 +136,10 @@ https://mp.weixin.qq.com/s/aLljr0R5w7OcidbXf71FQw
 
 知识图谱火了，但你知道它的发展历史吗？
 
+https://mp.weixin.qq.com/s/nJip1omVx0HiScIzrlWShA
+
+知识图谱简史：从1950到2019
+
 https://wenku.baidu.com/view/38ad3ef7e109581b6bd97f19227916888586b959.html
 
 知识图谱构建技术综述

@@ -473,3 +473,7 @@ https://mp.weixin.qq.com/s/lEtE3ejBLzmm9_eo-_8NBg
 https://mp.weixin.qq.com/s/Oo-U4Bq7g1wmQgXJ7Y-rjw
 
 万字长文详解如何用Python玩转OpenGL
+
+https://mp.weixin.qq.com/s/sZvawmQ1KH3b_hozAbeX9w
+
+如何用简单的Python为数据科学家编写Web应用程序？（StreamLit）

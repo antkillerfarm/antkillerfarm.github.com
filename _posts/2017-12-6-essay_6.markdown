@@ -50,6 +50,12 @@ https://mp.weixin.qq.com/s/TmLSHVkeyqfU-9Jgir0czA
 
 摩尔定律究竟死没死
 
+![](/images/img3/IC_process_3.jpg)
+
+https://www.zhihu.com/question/290382241
+
+为什么memory制程比CPU的制程低？
+
 ----
 
 ![](/images/img2/Makimoto-Wave.jpg)

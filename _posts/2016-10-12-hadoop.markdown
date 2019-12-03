@@ -197,7 +197,73 @@ https://mp.weixin.qq.com/s/0qgaJnZjYsf0WP2z5yGgrg
 
 面试集锦：HDFS
 
+# BERT（续）
+
+https://mp.weixin.qq.com/s/-eBL9gFbAGFtmqkLMAoUTw
+
+文本+视觉，多篇Visual/Video BERT论文介绍
+
+https://mp.weixin.qq.com/s/hI9XAiqKaHLq-Z9JkaWA_A
+
+解决自然语言歧义问题，斯坦福教授、IJCAI卓越研究奖得主提出SenseBERT模型
+
+https://mp.weixin.qq.com/s/55B0ToIKDusiPI5farR19w
+
+NLP这两年：15个预训练模型对比分析与剖析
+
+https://mp.weixin.qq.com/s/SPfa17p3QetZXCC01DwmQA
+
+解密BERT
+
+https://zhuanlan.zhihu.com/p/72805778
+
+BERT的演进和应用
+
+https://mp.weixin.qq.com/s/9YuBY0wLLVQ8ZrT9fiNICA
+
+语音版BERT？滴滴提出无监督预训练模型，中文识别性能提升10%以上
+
+https://mp.weixin.qq.com/s/OXkXjPHhaMXsKw2YevV6sw
+
+邱锡鹏：从Transformer到BERT--自然语言处理中的表示学习进展
+
+https://mp.weixin.qq.com/s/6i9eQISKsWU0jawKzWg8nQ
+
+超越bert，最新预训练模型ELECTRA论文阅读笔记
+
+https://zhuanlan.zhihu.com/p/91052495
+
+当BERT遇上知识图谱
+
+https://mp.weixin.qq.com/s/wQW-JT-sGMj60OtXwTssyQ
+
+BERT模型推理加速总结
+
+https://mp.weixin.qq.com/s/HOD1Hb70NhTXXCXlopzfng
+
+BERT推理加速实践
+
 # Attention进阶
+
+https://mp.weixin.qq.com/s/ZSzHOu6uowRSoWrqB7vOaQ
+
+深度学习注意力机制-Attention in Deep learning-附101页PPT
+
+https://mp.weixin.qq.com/s/_mBa-GTdILrvluJtegz8fw
+
+南洋理工大学：注意力神经网络，Attention Neural Networks，78页ppt
+
+https://mp.weixin.qq.com/s/pKxqPB9qIGmE_PslPa6EyA
+
+长文详解Attention的前世今生
+
+https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA
+
+阿里北大提出新attention建模框架，一个模型预测多种行为
+
+https://mp.weixin.qq.com/s/Yq3S4WrsQRQC06GvRgGjTQ
+
+打入神经网络思维内部
 
 https://mp.weixin.qq.com/s/MJ1578NdTKbjU-j3Uuo9Ww
 
@@ -278,71 +344,3 @@ https://mp.weixin.qq.com/s/jRfOzKO6OlQLokIzipbqUQ
 https://mp.weixin.qq.com/s/_3pA8FZwzegSpyz_cK63BQ
 
 Self-Attention GAN中的self-attention机制
-
-https://mp.weixin.qq.com/s/h7sLwVXb_UI8jvJU-oe3Cg
-
-Google AI提出“透明注意力”机制，实现更深层NMT模型
-
-https://mp.weixin.qq.com/s/1LYz5SH5rVnPPJ0tZvRQAA
-
-从各种注意力机制窥探深度学习在NLP中的神威
-
-https://zhuanlan.zhihu.com/p/32928645
-
-计算机视觉中的注意力机制
-
-https://zhuanlan.zhihu.com/p/56501461
-
-计算机视觉中的注意力机制
-
-https://zhuanlan.zhihu.com/p/33078323
-
-数字串识别：基于位置的硬性注意力机制
-
-https://zhuanlan.zhihu.com/p/32971586
-
-图像描述：基于项的注意力机制
-
-https://zhuanlan.zhihu.com/p/33158614
-
-图像识别：基于位置的柔性注意力机制
-
-https://mp.weixin.qq.com/s/tVKEJ9rqlMaZ9bx6ngIelw
-
-自注意力机制在计算机视觉中的应用
-
-https://mp.weixin.qq.com/s/6q2q9OVhOYjk4ZrhLvAdkA
-
-Non-local Neural Networks及自注意力机制思考
-
-https://mp.weixin.qq.com/s/-gAISWjSiG6ccPuOPAEg3A
-
-五张动图，看清神经机器翻译里的Attention！
-
-https://mp.weixin.qq.com/s/Qs6tm50YvzHaJv2rh60WMw
-
-撩一发深度文本分类之RNN via Attention
-
-https://mp.weixin.qq.com/s/MMIZGHTKM5FrvNE6ucQRYQ
-
-33页最新《自然语言处理中神经注意力机制综述》论文
-
-https://mp.weixin.qq.com/s/Q0Ft5bWTuiZUIQSTk7X6ZQ
-
-图解神经机器翻译中的注意力机制
-
-https://mp.weixin.qq.com/s/D7GQ8DRzss9ppP6pyAs1qA
-
-从0到1再读注意力机制
-
-https://mp.weixin.qq.com/s/K_VRt0B9-Xw7YJndmb4WZg
-
-Attention！注意力机制模型最新综述
-
-https://mp.weixin.qq.com/s/hzwp5oGspdtDyNBmq8sMsw
-
-HAN：基于双层注意力机制的异质图深度神经网络
-
-https://mp.weixin.qq.com/s/aixpv9t1PLPRWUP6PvZ0EQ
-
-用自注意力增强卷积：这是新老两代神经网络的对话

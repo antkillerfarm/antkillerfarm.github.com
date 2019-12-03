@@ -198,6 +198,10 @@ https://mp.weixin.qq.com/s/cobadH9PXJFfSuMlY6GWiA
 
 强化学习理论与算法，83页pdf，了解最新进展
 
+https://paperswithcode.com/area/playing-games
+
+从Paper到Coding, 一览深度强化学习挑战34类游戏
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》

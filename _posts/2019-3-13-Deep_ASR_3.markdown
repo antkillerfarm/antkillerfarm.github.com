@@ -190,6 +190,10 @@ https://mp.weixin.qq.com/s/HcumCA0kBrpSInn7Ge17MQ
 
 多语言识别的实现
 
+https://mp.weixin.qq.com/s/5ZVl2fRZifIDiNI-fU9YWw
+
+时域音频分离模型登GitHub热榜，效果超传统频域方法，Facebook官方出品
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw

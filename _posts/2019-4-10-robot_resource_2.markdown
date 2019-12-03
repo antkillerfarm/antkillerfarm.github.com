@@ -6,6 +6,28 @@ category: resource
 
 # 机器人/无人驾驶参考资源
 
+## 高精地图
+
+https://mp.weixin.qq.com/s/-HdpWQeMY6-sptxF9D4CcQ
+
+自动驾驶中的高精地图深度剖析
+
+https://mp.weixin.qq.com/s/rqDYpGj6dG0Zwn5C6kNApA
+
+群雄逐“图”，百度缘何备受关注？这是一篇关于高精地图的blog
+
+http://mp.weixin.qq.com/s/baXCaD1EdHKCJbCIh2HDeA
+
+Apollo高精地图技术与应用
+
+https://mp.weixin.qq.com/s/BRuT4YtU3D9c2GCeBkqv_w
+
+高精地图，比想象更重要
+
+https://mp.weixin.qq.com/s/GG1V6k3c3Dvfw334jpqNxA
+
+自动驾驶车会看地图吗？它如何认路、找准定位？
+
 ## 车道线检测
 
 https://blog.csdn.net/Young_Gy/article/details/75194914
@@ -360,14 +382,6 @@ https://mp.weixin.qq.com/s/qrvcvYzSwxSR1-tkvZLUaQ
 
 使用自动编码器从自然驾驶数据中估计测试场景的独特性
 
-https://mp.weixin.qq.com/s/kqIAXs7A1GuXPUwSMLw7ZQ
-
-LKA系列（一）：LKA系统简介
-
-https://mp.weixin.qq.com/s/LzHFxqfyw3JSrTObpCLmzQ
-
-LKA系列（二）：LKA控制原理
-
 https://mp.weixin.qq.com/s/Gqffn_1kgP34MwthcCKH0Q
 
 基于机动LSTM的周围车辆多模态轨迹预测
@@ -395,11 +409,3 @@ https://mp.weixin.qq.com/s/1xNsKVw-OUr3Lmb3Ob33Ow
 https://zhuanlan.zhihu.com/p/59890550
 
 自动驾驶中的目标跟踪方法
-
-https://mp.weixin.qq.com/s/vFyifSgGLImUrTwcw9bPsg
-
-自动驾驶感知训练指南：不许你歧视车道线，那也是路面的一部分
-
-https://mp.weixin.qq.com/s/aXck7MLpHojuIkvVP1iHKg
-
-北航机器人研究所名誉所长王田苗：人工智能与机器人的发展趋势

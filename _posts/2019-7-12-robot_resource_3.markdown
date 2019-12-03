@@ -6,6 +6,22 @@ category: resource
 
 # 机器人/无人驾驶参考资源
 
+https://mp.weixin.qq.com/s/kqIAXs7A1GuXPUwSMLw7ZQ
+
+LKA系列（一）：LKA系统简介
+
+https://mp.weixin.qq.com/s/LzHFxqfyw3JSrTObpCLmzQ
+
+LKA系列（二）：LKA控制原理
+
+https://mp.weixin.qq.com/s/vFyifSgGLImUrTwcw9bPsg
+
+自动驾驶感知训练指南：不许你歧视车道线，那也是路面的一部分
+
+https://mp.weixin.qq.com/s/aXck7MLpHojuIkvVP1iHKg
+
+北航机器人研究所名誉所长王田苗：人工智能与机器人的发展趋势
+
 https://blog.csdn.net/qq_35723367/article/details/79721503
 
 四轴飞行器基本组成及其飞行原理详解
@@ -297,6 +313,10 @@ https://zhuanlan.zhihu.com/p/90773462
 https://mp.weixin.qq.com/s/4tOYmCRiFN0xsG6vbedrrg
 
 ADAS系统中的动态目标感知策略（一）
+
+https://mp.weixin.qq.com/s/JT4p03m77ohOufL3JFecvA
+
+从硬件角度剖析自动驾驶，为什么说它是复杂的系统工程？
 
 # Apollo
 

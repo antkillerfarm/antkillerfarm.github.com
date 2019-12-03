@@ -338,6 +338,10 @@ https://mp.weixin.qq.com/s/QF9Nsh_YyX9LZQ_D-4hP-A
 
 芯片是怎么制造的？央视最强科普！
 
+https://mp.weixin.qq.com/s/bKgYpZdXxAexlEtmPQ9oGw
+
+科普：芯片是怎么从沙子中一步步炼成的！
+
 https://mp.weixin.qq.com/s/tTtySk3u6m2BGUkDto5Ojw
 
 可重构芯片的方法学原理
@@ -373,3 +377,11 @@ https://mp.weixin.qq.com/s/vTOGmcahRxQBH8RgkTJ2GA
 https://zhuanlan.zhihu.com/p/81960137
 
 UEFI引导与传统BIOS引导在原理上有什么区别？芯片公司在其中扮演什么角色？
+
+----
+
+![](/images/img3/Memristor.png)
+
+https://mp.weixin.qq.com/s/k0u7pVzf7tjVF4UjZ3ai7A
+
+忆阻器的前世今生

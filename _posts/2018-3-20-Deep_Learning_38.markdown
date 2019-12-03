@@ -82,6 +82,10 @@ https://mp.weixin.qq.com/s/tj-ZdB83itO1nAKBGKlb_Q
 
 爱奇艺提出半监督损失函数，利用无标签数据优化人脸识别模型
 
+https://mp.weixin.qq.com/s/L1H7PXwuItuF6Vp2Uyfowg
+
+人脸识别剩下的难题：从遮挡，年龄，姿态，妆造到亲属关系，人脸攻击
+
 # RNN进阶
 
 ## IndRNN

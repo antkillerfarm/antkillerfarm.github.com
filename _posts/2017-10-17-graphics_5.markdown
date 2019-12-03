@@ -170,11 +170,19 @@ Foveon X3虽然色彩不失真，但制作工艺比较复杂，目前只用在�
 
 比如华为最近出的Mate P30 Pro（2019.4）就使用了RYYB Array。
 
+![](/images/img3/quad-bayer.jpg)
+
+Quad Bayer(4 Cell)技术很好的补偿了小pixel size在低光时的损失.将用户使用场景分成了高光使用小像素高分辨率,低光中”大像素”低噪声。
+
 参考：
 
 https://mp.weixin.qq.com/s/Y9BKcJ-0VjdsRqe387P2kQ
 
 关于RGBNIR sensor的一些讨论
+
+https://mp.weixin.qq.com/s/19UJS6AJzMuUhjTkyqVSxQ
+
+从一个亿像素看camera sensor的发展
 
 ## RAW Data
 

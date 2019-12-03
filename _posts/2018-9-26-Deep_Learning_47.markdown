@@ -351,3 +351,7 @@ DetNAS：首个搜索物体检测Backbone的方法
 https://mp.weixin.qq.com/s/c7S_hV_8iRhR4ZoFxQYGYQ
 
 CVPR 2019神经网络架构搜索进展综述
+
+https://mp.weixin.qq.com/s/hWRStNp0Gu_ZO7J1Sjr6-w
+
+视频架构搜索的研究

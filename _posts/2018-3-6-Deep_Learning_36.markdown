@@ -289,3 +289,7 @@ https://mp.weixin.qq.com/s/QSGrkLWDyeZLfyeeXHUS_w
 https://mp.weixin.qq.com/s/b6XHZq6C0ZWOcDrysjMoog
 
 RALM: 实时Look-alike算法在微信看一看中的应用
+
+https://mp.weixin.qq.com/s/ZYbiNbBeEADvGafMKfy9zA
+
+淘宝首页那些“辣眼睛”的图去哪了？

@@ -46,6 +46,26 @@ XLNet详解
 
 ## 轻量化BERT
 
+| Paper | Prune | Factor | Distill | W. Sharing | Quant. | Pre-train | Downstream |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| Compressing BERT: Studying the Effects of Weight Pruning on Transfer Learning | Y |  |  |  |  | Y | Y |
+| Are Sixteen Heads Really Better than One? | Y |  |  |  |  |  | Y |
+| Pruning a BERT-based Question Answering Model | Y |  |  |  |  |  | Y |
+| Reducing Transformer Depth on Demand with Structured Dropout | Y |  |  |  |  | Y |  |
+| Reweighted Proximal Pruning for Large-Scale Language Representation | Y |  |  |  |  | Y |  |
+| Structured Pruning of Large Language Models |  | Y |  |  |  |  | Y |
+| ALBERT: A Lite BERT for Self-supervised Learning of Language Representations |  | Y |  | Y |  | Y |  |
+| Extreme Language Model Compression with Optimal Subwords and Shared Projections |  |  | Y |  |  | Y |  |
+| DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter |  |  | Y |  |  | Y |  |
+| Distilling Task-Specific Knowledge from BERT into Simple Neural Networks |  |  | Y |  |  |  | Y |
+| Distilling Transformers into Simple Neural Networks with Unlabeled Transfer Data |  |  | Y |  |  |  | Y |
+| Attentive Student Meets Multi-Task Teacher: Improved Knowledge Distillation for Pretrained Models |  |  | Y |  |  | Multi-task  | Y |
+| Patient Knowledge Distillation for BERT Model Compression |  |  | Y |  |  |  | Y |
+| TinyBERT: Distilling BERT for Natural Language Understanding |  |  | Y |  |  | Y | Y |
+| MobileBERT: Task-Agnostic Compression of BERT by Progressive Knowledge Transfer |  |  | Y |  |  | Y |  |
+| Q8BERT: Quantized 8Bit BERT |  |  |  |  | Y |  | Y |
+| Q-BERT: Hessian Based Ultra Low Precision Quantization of BERT |  |  |  |  | Y |  | Y |
+
 https://www.zhihu.com/question/347898375
 
 如何看待瘦身成功版BERT——ALBERT？
@@ -74,7 +94,7 @@ https://mp.weixin.qq.com/s/DAsY9-Dl5T6peo_71ICOtw
 
 基于ALBERT的文本相似度计算
 
-https://mp.weixin.qq.com/s/PY6U3cbz_LnvZTkhqMLFLQ
+http://mitchgordon.me/machine/learning/2019/11/18/all-the-ways-to-compress-BERT.html
 
 15篇论文全面概览BERT压缩方法
 
@@ -331,69 +351,3 @@ BERT在推荐系统领域可能会有什么作为？
 https://mp.weixin.qq.com/s/kJhOrz0VaYc-k-6XJS02ag
 
 8篇论文梳理BERT相关模型进展与反思
-
-https://mp.weixin.qq.com/s/-eBL9gFbAGFtmqkLMAoUTw
-
-文本+视觉，多篇Visual/Video BERT论文介绍
-
-https://mp.weixin.qq.com/s/hI9XAiqKaHLq-Z9JkaWA_A
-
-解决自然语言歧义问题，斯坦福教授、IJCAI卓越研究奖得主提出SenseBERT模型
-
-https://mp.weixin.qq.com/s/55B0ToIKDusiPI5farR19w
-
-NLP这两年：15个预训练模型对比分析与剖析
-
-https://mp.weixin.qq.com/s/SPfa17p3QetZXCC01DwmQA
-
-解密BERT
-
-https://zhuanlan.zhihu.com/p/72805778
-
-BERT的演进和应用
-
-https://mp.weixin.qq.com/s/9YuBY0wLLVQ8ZrT9fiNICA
-
-语音版BERT？滴滴提出无监督预训练模型，中文识别性能提升10%以上
-
-https://mp.weixin.qq.com/s/OXkXjPHhaMXsKw2YevV6sw
-
-邱锡鹏：从Transformer到BERT--自然语言处理中的表示学习进展
-
-https://mp.weixin.qq.com/s/6i9eQISKsWU0jawKzWg8nQ
-
-超越bert，最新预训练模型ELECTRA论文阅读笔记
-
-https://zhuanlan.zhihu.com/p/91052495
-
-当BERT遇上知识图谱
-
-https://mp.weixin.qq.com/s/wQW-JT-sGMj60OtXwTssyQ
-
-BERT模型推理加速总结
-
-https://mp.weixin.qq.com/s/HOD1Hb70NhTXXCXlopzfng
-
-BERT推理加速实践
-
-# Attention进阶
-
-https://mp.weixin.qq.com/s/ZSzHOu6uowRSoWrqB7vOaQ
-
-深度学习注意力机制-Attention in Deep learning-附101页PPT
-
-https://mp.weixin.qq.com/s/_mBa-GTdILrvluJtegz8fw
-
-南洋理工大学：注意力神经网络，Attention Neural Networks，78页ppt
-
-https://mp.weixin.qq.com/s/pKxqPB9qIGmE_PslPa6EyA
-
-长文详解Attention的前世今生
-
-https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA
-
-阿里北大提出新attention建模框架，一个模型预测多种行为
-
-https://mp.weixin.qq.com/s/Yq3S4WrsQRQC06GvRgGjTQ
-
-打入神经网络思维内部

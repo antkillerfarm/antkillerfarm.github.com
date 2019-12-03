@@ -343,3 +343,7 @@ https://mp.weixin.qq.com/s/ipj8qpYRiYbIeXn2PZb1SQ
 https://mp.weixin.qq.com/s/UghgWBN7mE8oJdMUvjAjcQ
 
 何晖光：多模态情绪识别及跨被试迁移学习
+
+https://mp.weixin.qq.com/s/EMWpBP5iB1Qrleo3XNjbuQ
+
+IEEE Fellow何晓东&邓力：多模态智能论文综述：表示学习，信息融合与应用
