@@ -1,10 +1,120 @@
 ---
 layout: post
-title:  深度强化学习（六）——AlphaStar, 元学习
+title:  深度强化学习（六）——MARL, AlphaStar, 元学习
 category: DRL 
 ---
 
-# MARL（续）
+# AlphaGo
+
+## 参考（续）
+
+https://mp.weixin.qq.com/s/JxbIeDk8_wnYu_ewUHp29g
+
+深度学习与围棋实战书籍《Deep Learning and the Game of Go》
+
+https://mp.weixin.qq.com/s/gsRnbknytz2FY2dWgdWEYg
+
+精通国际象棋的AI研究员：AlphaZero真的是一次突破吗？
+
+https://zhuanlan.zhihu.com/p/31809930
+
+浅述：从Minimax到AlphaZero，完全信息博弈之路（1）
+
+https://zhuanlan.zhihu.com/p/32073374
+
+浅述：从Minimax到AlphaZero，完全信息博弈之路（2）
+
+https://zhuanlan.zhihu.com/p/32089487
+
+AlphaZero实战：从零学下五子棋
+
+http://mp.weixin.qq.com/s/72riTTC3w0q9oF5H-51kXA
+
+手把手教你搭建AlphaZero（使用Python和Keras）
+
+https://mp.weixin.qq.com/s/Qw2tT7H1PwDvPgOYy8YUsQ
+
+AlphaGo Zero代码迟迟不开源，TF等不及自己推了一个
+
+https://mp.weixin.qq.com/s/Vq-osjgNXJQu5avGkxQdsw
+
+手把手：AlphaGo有啥了不起，我也能教你做一个
+
+https://mp.weixin.qq.com/s/ajajJ9yJZsOy4Vc0ULBxXg
+
+国际象棋版AlphaZero出来了诶，还开源了Keras实现
+
+https://zhuanlan.zhihu.com/p/41814142
+
+从源码解密AlphaGo Zero背后基本原理
+
+https://www.ifanr.com/630602
+
+AlphaGo的棋局，与人工智能有关，与人生无关
+
+https://mp.weixin.qq.com/s/J0w6kzzdKTbsaiZitbQdoA
+
+达观数据：一文详解AlphaGo原理
+
+https://mp.weixin.qq.com/s/BBQ54HHrFiqxXkC-EI6ELw
+
+Science封面：AlphaZero达成终极进化体，史上最强棋类AI降临！
+
+https://mp.weixin.qq.com/s/Pgw_xaCNl_kCPCg8NFzUBQ
+
+人类没法下了！DeepMind贝叶斯优化调参AlphaGo，自弈胜率大涨16.5%
+
+https://mp.weixin.qq.com/s/eE3oL6c5zHmTglHE-dgBvg
+
+详解AlphaGo到AlphaGo Zero！
+
+https://mp.weixin.qq.com/s/aAF0Gr7yEPkHRLASecJipw
+
+百度正用谷歌AlphaGo，解决一个比围棋更难的问题
+
+https://hackernoon.com/the-3-tricks-that-made-alphago-zero-work-f3d47b6686ef
+
+The 3 Tricks That Made AlphaGo Zero Work
+
+https://web.stanford.edu/~surag/posts/alphazero.html
+
+A Simple Alpha(Go) Zero Tutorial
+
+https://mp.weixin.qq.com/s/BLQF8WNsIe4a_rDeGWo_Vg
+
+通用AlphaGo诞生？DeepMind的MuZero在多种棋类游戏中超越人类
+
+# MARL
+
+Multi-agent Reinforcement Learning(MARL)，一般被称为多智能体强化学习。与之相对的则是Single-agent Reinforcement Learning(SARL)。
+
+以下主要参考了如下文章：
+
+https://zhuanlan.zhihu.com/p/39037444
+
+多智能体强化学习笔记 01
+
+https://zhuanlan.zhihu.com/p/43579796
+
+多智能体强化学习笔记 02
+
+论文：
+
+《Multi-agent reinforcement learning: An overview》
+
+《Game Theory and Multi-agent Reinforcement Learning》
+
+MARL应用了大量博弈论的知识，可参见《强化学习（十）》。
+
+----
+
+我们使用如下示例，探讨一下**什么是MARL？**
+
+![](/images/img3/MARL.png)
+
+上图是两个智能体1、2将金条（object）搬运回家的例子。这根金条需要两个人一人抬着一边才能扛回家。
+
+要想把金条扛回家，小红和小蓝必须先绕过障碍物，然后每个人到达金条的一边，扛起金条后，两人还得绕开家门口的障碍物，这样才能将金条扛回家。
 
 从上面的问题可以看出，MARL至少应该包括如下几个要素：
 
@@ -234,83 +344,3 @@ https://mp.weixin.qq.com/s/jlD5p5GXFmrWlxg9xvehxg
 https://mp.weixin.qq.com/s/qoKQwEvOnP384i5Z-_jO1A
 
 CVPR2019最新元学习教程：基于元学习的计算机视觉应用
-
-https://mp.weixin.qq.com/s/KtO3OTZ-bZ6m0ZSI6jTyjw
-
-OpenAI提出Reptile：可扩展的元学习算法
-
-https://mp.weixin.qq.com/s/T4GiL9vW7ALOzWloE_QQBA
-
-OpenAI开发可拓展元学习算法Reptile，能快速学习
-
-https://mp.weixin.qq.com/s/MWcoGsQJg1GBbSqzyPD9uQ
-
-基于梯度的元学习算法，可高效适应非平稳环境
-
-https://zhuanlan.zhihu.com/p/35695477
-
-基于Meta Learning在动态竞争环境中实现策略自适应
-
-https://mp.weixin.qq.com/s/AhadWUjtgsFmb8uTylTvqg
-
-OpenAI提出新型元学习方法EPG，调整损失函数实现新任务上的快速训练
-
-https://mp.weixin.qq.com/s/dmRdp2oMn0vGukclJSVZDg
-
-Uber AI论文：利用反向传播训练可塑神经网络，生物启发的元学习范式
-
-https://mp.weixin.qq.com/s/Cc4EHc6ei-PtZWhewM10xw
-
-学习如何学习的算法：简述元学习研究方向现状
-
-https://mp.weixin.qq.com/s/4f6-gXovdrYk7240TrUwJg
-
-谷歌大脑：基于元学习的无监督学习更新规则
-
-https://mp.weixin.qq.com/s/cAbMB-DB9vu2ua8t5J28ww
-
-从零开始，了解元学习
-
-https://mp.weixin.qq.com/s/Q36vpS1HF2IfeCsFLh656A
-
-基于元强化学习的神经科学新理论
-
-https://mp.weixin.qq.com/s/XtzvHOk7CdXRBy02kUmgsg
-
-近期爆火的Meta Learning，遗传算法与深度学习的火花，再不了解你就out了
-
-https://mp.weixin.qq.com/s/KvgYyuyICueNQPo_S27fEA
-
-BAIR展示新型模仿学习，学会像人那样执行任务
-
-https://zhuanlan.zhihu.com/p/41223529
-
-最前沿:Meta RL论文解读
-
-https://zhuanlan.zhihu.com/p/40600485
-
-最前沿：Meta Learning前沿进展扫描
-
-https://zhuanlan.zhihu.com/p/28639662
-
-百家争鸣的Meta Learning/Learning to learn
-
-https://zhuanlan.zhihu.com/p/45845001
-
-最前沿：用模仿学习来学习增强学习
-
-https://zhuanlan.zhihu.com/p/46059552
-
-Meta Learning单排小教学
-
-https://zhuanlan.zhihu.com/p/46131981
-
-最前沿：Meta Learning在少样本文本翻译上的应用
-
-https://zhuanlan.zhihu.com/p/46339823
-
-谈谈无监督Meta Learning的研究
-
-https://zhuanlan.zhihu.com/p/46340382
-
-ICLR19最新论文解读之Meta Domain Adaptation

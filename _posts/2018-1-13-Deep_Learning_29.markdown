@@ -74,6 +74,10 @@ https://mp.weixin.qq.com/s/Uf8l2yn5iCFCUFWVvIvAOw
 
 腾讯开源图计算框架Plato
 
+https://mp.weixin.qq.com/s/h1vDImYTLEheatZnScZwbg
+
+使用DeepWalk从图中提取特征
+
 ## 参考
 
 https://github.com/thunlp/GNNPapers

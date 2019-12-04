@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度强化学习（五）——AlphaGo, MARL
+title:  深度强化学习（五）——AlphaGo
 category: DRL 
 ---
 
@@ -104,9 +104,37 @@ Policy Network摆脱了之前的基于规则的围棋软件，长于局部，但
 
 ### Value Network
 
-
+AlphaGo的Value Network也是一个和Policy Network几乎一样的深度卷积网络。
 
 ### Fast rollout
+
+有了走棋网络，为什么还要做快速走子呢？
+
+- 走棋网络的运行速度是比较慢的（3毫秒），而快速走子能做到几微秒级别，差了1000倍。
+
+- 快速走子可以用来评估盘面。由于天文数字般的可能局面数，围棋的搜索是毫无希望走到底的，搜索到一定程度就要对现有局面做个估分。在没有估值网络的时候，不像国象可以通过算棋子的分数来对盘面做比较精确的估值，围棋盘面的估计得要通过模拟走子来进行，从当前盘面一路走到底，不考虑岔路地算出胜负，然后把胜负值作为当前盘面价值的一个估计。
+
+为了速度快，Fast rollout没有使用神经网络，而是使用传统的局部特征匹配（local pattern matching）加线性回归（logistic regression）的方法。
+
+这种方法虽然没有NN这么强，但还是比更为传统的基于规则的方案适应性好。毕竟规则是死的，而传统的机器学习，再怎么说也是可以自动学习规则的。
+
+由于Fast rollout既可以提供策略，又有一定的价值评估的手段，因此单独使用它，比单独使用Policy Network或者Value Network都要好。相当于是一个劣化版本的AlphaGo。
+
+### MCTS
+
+AlphaGo的MCTS使用的是传统的UCT算法，没太多好讲的。一个细节是Game Tree的结点并不是立即展开，而是要等到路过该结点的次数超过一定阈值，才进行展开，从而大大减小了搜索空间。
+
+### 其他关键点
+
+![](/images/img3/AlphaGo_2.png)
+
+AlphaGo不是一个纯粹的DRL，它还是使用了人类棋谱的先验数据。
+
+- 首先，从人类棋谱中学习rollout策略，并初始化Policy Network。
+
+- 然后，使用自我博弈的方式，训练Policy Network和Value Network。
+
+
 
 ## AlphaGo Zero
 
@@ -116,11 +144,25 @@ Policy Network摆脱了之前的基于规则的围棋软件，长于局部，但
 
 ![](/images/img3/AlphaGo_Zero.png)
 
+AlphaGo Zero对AlphaGo进行了全面提升：
+
+- input plane去掉了手工特征，基本全由历史信息组成。
+
+- Policy Network和Value Network不再是两个同构的独立网络，而是合并成了一个网络，只是该网络有两个输出——Policy Head和Value Head。
+
+- 骨干结构采用了Resnet，层数大大增加。
+
+- 完全采用自我博弈，去掉了人类棋谱。
+
+- 取消了Fast rollout。AlphaGo Zero的实践表明，如果有足够好的Value函数的话，MCTS的采样效率要远远高于传统的alpha-beta剪枝。因此，rollout也不是必须的。
+
 ## AlphaZero
 
 论文：
 
 《Mastering Chess and Shogi by Self-Play with aGeneral Reinforcement Learning Algorithm》
+
+AlphaZero相对于AlphaGo Zero的改进不算大，毕竟也就只差2个月。它的贡献在于，证明了DRL对于很多棋类都是有效的。
 
 ## Leela Zero
 
@@ -251,107 +293,3 @@ https://mp.weixin.qq.com/s/tFdnxqV5a5xZrFtB6E0AiQ
 https://mp.weixin.qq.com/s/qYWsFBKNCKCGUmizX_1sVg
 
 AlphaGo 教学工具终于上线了！
-
-https://mp.weixin.qq.com/s/JxbIeDk8_wnYu_ewUHp29g
-
-深度学习与围棋实战书籍《Deep Learning and the Game of Go》
-
-https://mp.weixin.qq.com/s/gsRnbknytz2FY2dWgdWEYg
-
-精通国际象棋的AI研究员：AlphaZero真的是一次突破吗？
-
-https://mp.weixin.qq.com/s/Przl4ivbNuOFmz4pcYTrpQ
-
-浅述：从Minimax到AlphaZero，完全信息博弈之路（1）
-
-https://zhuanlan.zhihu.com/p/32089487
-
-AlphaZero实战：从零学下五子棋
-
-http://mp.weixin.qq.com/s/72riTTC3w0q9oF5H-51kXA
-
-手把手教你搭建AlphaZero（使用Python和Keras）
-
-https://mp.weixin.qq.com/s/Qw2tT7H1PwDvPgOYy8YUsQ
-
-AlphaGo Zero代码迟迟不开源，TF等不及自己推了一个
-
-https://mp.weixin.qq.com/s/Vq-osjgNXJQu5avGkxQdsw
-
-手把手：AlphaGo有啥了不起，我也能教你做一个
-
-https://mp.weixin.qq.com/s/ajajJ9yJZsOy4Vc0ULBxXg
-
-国际象棋版AlphaZero出来了诶，还开源了Keras实现
-
-https://zhuanlan.zhihu.com/p/41814142
-
-从源码解密AlphaGo Zero背后基本原理
-
-https://www.ifanr.com/630602
-
-AlphaGo的棋局，与人工智能有关，与人生无关
-
-https://mp.weixin.qq.com/s/J0w6kzzdKTbsaiZitbQdoA
-
-达观数据：一文详解AlphaGo原理
-
-https://mp.weixin.qq.com/s/BBQ54HHrFiqxXkC-EI6ELw
-
-Science封面：AlphaZero达成终极进化体，史上最强棋类AI降临！
-
-https://mp.weixin.qq.com/s/Pgw_xaCNl_kCPCg8NFzUBQ
-
-人类没法下了！DeepMind贝叶斯优化调参AlphaGo，自弈胜率大涨16.5%
-
-https://mp.weixin.qq.com/s/eE3oL6c5zHmTglHE-dgBvg
-
-详解AlphaGo到AlphaGo Zero！
-
-https://mp.weixin.qq.com/s/aAF0Gr7yEPkHRLASecJipw
-
-百度正用谷歌AlphaGo，解决一个比围棋更难的问题
-
-https://hackernoon.com/the-3-tricks-that-made-alphago-zero-work-f3d47b6686ef
-
-The 3 Tricks That Made AlphaGo Zero Work
-
-https://web.stanford.edu/~surag/posts/alphazero.html
-
-A Simple Alpha(Go) Zero Tutorial
-
-https://mp.weixin.qq.com/s/BLQF8WNsIe4a_rDeGWo_Vg
-
-通用AlphaGo诞生？DeepMind的MuZero在多种棋类游戏中超越人类
-
-# MARL
-
-Multi-agent Reinforcement Learning(MARL)，一般被称为多智能体强化学习。与之相对的则是Single-agent Reinforcement Learning(SARL)。
-
-以下主要参考了如下文章：
-
-https://zhuanlan.zhihu.com/p/39037444
-
-多智能体强化学习笔记 01
-
-https://zhuanlan.zhihu.com/p/43579796
-
-多智能体强化学习笔记 02
-
-论文：
-
-《Multi-agent reinforcement learning: An overview》
-
-《Game Theory and Multi-agent Reinforcement Learning》
-
-MARL应用了大量博弈论的知识，可参见《强化学习（十）》。
-
-----
-
-我们使用如下示例，探讨一下**什么是MARL？**
-
-![](/images/img3/MARL.png)
-
-上图是两个智能体1、2将金条（object）搬运回家的例子。这根金条需要两个人一人抬着一边才能扛回家。
-
-要想把金条扛回家，小红和小蓝必须先绕过障碍物，然后每个人到达金条的一边，扛起金条后，两人还得绕开家门口的障碍物，这样才能将金条扛回家。

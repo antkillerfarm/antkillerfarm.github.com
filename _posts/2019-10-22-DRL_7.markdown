@@ -6,6 +6,86 @@ category: DRL
 
 # 元学习（续）
 
+https://mp.weixin.qq.com/s/KtO3OTZ-bZ6m0ZSI6jTyjw
+
+OpenAI提出Reptile：可扩展的元学习算法
+
+https://mp.weixin.qq.com/s/T4GiL9vW7ALOzWloE_QQBA
+
+OpenAI开发可拓展元学习算法Reptile，能快速学习
+
+https://mp.weixin.qq.com/s/MWcoGsQJg1GBbSqzyPD9uQ
+
+基于梯度的元学习算法，可高效适应非平稳环境
+
+https://zhuanlan.zhihu.com/p/35695477
+
+基于Meta Learning在动态竞争环境中实现策略自适应
+
+https://mp.weixin.qq.com/s/AhadWUjtgsFmb8uTylTvqg
+
+OpenAI提出新型元学习方法EPG，调整损失函数实现新任务上的快速训练
+
+https://mp.weixin.qq.com/s/dmRdp2oMn0vGukclJSVZDg
+
+Uber AI论文：利用反向传播训练可塑神经网络，生物启发的元学习范式
+
+https://mp.weixin.qq.com/s/Cc4EHc6ei-PtZWhewM10xw
+
+学习如何学习的算法：简述元学习研究方向现状
+
+https://mp.weixin.qq.com/s/4f6-gXovdrYk7240TrUwJg
+
+谷歌大脑：基于元学习的无监督学习更新规则
+
+https://mp.weixin.qq.com/s/cAbMB-DB9vu2ua8t5J28ww
+
+从零开始，了解元学习
+
+https://mp.weixin.qq.com/s/Q36vpS1HF2IfeCsFLh656A
+
+基于元强化学习的神经科学新理论
+
+https://mp.weixin.qq.com/s/XtzvHOk7CdXRBy02kUmgsg
+
+近期爆火的Meta Learning，遗传算法与深度学习的火花，再不了解你就out了
+
+https://mp.weixin.qq.com/s/KvgYyuyICueNQPo_S27fEA
+
+BAIR展示新型模仿学习，学会像人那样执行任务
+
+https://zhuanlan.zhihu.com/p/41223529
+
+最前沿:Meta RL论文解读
+
+https://zhuanlan.zhihu.com/p/40600485
+
+最前沿：Meta Learning前沿进展扫描
+
+https://zhuanlan.zhihu.com/p/28639662
+
+百家争鸣的Meta Learning/Learning to learn
+
+https://zhuanlan.zhihu.com/p/45845001
+
+最前沿：用模仿学习来学习增强学习
+
+https://zhuanlan.zhihu.com/p/46059552
+
+Meta Learning单排小教学
+
+https://zhuanlan.zhihu.com/p/46131981
+
+最前沿：Meta Learning在少样本文本翻译上的应用
+
+https://zhuanlan.zhihu.com/p/46339823
+
+谈谈无监督Meta Learning的研究
+
+https://zhuanlan.zhihu.com/p/46340382
+
+ICLR19最新论文解读之Meta Domain Adaptation
+
 https://mp.weixin.qq.com/s/RBMGI20AI92ZcWSlYczqAA
 
 伯克利、OpenAI等提出基于模型的元策略优化强化学习
@@ -280,6 +360,10 @@ https://mp.weixin.qq.com/s/G99vqIYeWzgQ4kL4p77cKA
 
 用强化学习做神经机器翻译：中山大学&MSRA填补多项空白
 
+https://mp.weixin.qq.com/s/GUyZ0U5_JlXCI-5mO796SA
+
+超越DQN和A3C：深度强化学习领域近期新进展概览
+
 https://zhuanlan.zhihu.com/p/43843955
 
 BAIR：基于人类演示&RL的夹爪训练——高效、通用、低成本
@@ -291,87 +375,3 @@ https://mp.weixin.qq.com/s/ADZlLx6gMTFU6IoBCF669g
 https://mp.weixin.qq.com/s/oZDDP59o-1qwfz8prK3nJQ
 
 伯克利最新研究：如何用目标图像进行机器视觉强化学习？
-
-https://zhuanlan.zhihu.com/p/41467058
-
-Policy Optimization with Demonstrations
-
-https://openreview.net/pdf?id=rJzoujRct7
-
-深度学习之斗地主
-
-https://mp.weixin.qq.com/s/00zHwpw2xWP2fR9sDHE2Xw
-
-BAIR讲述如何利用深度强化学习控制灵活手
-
-https://mp.weixin.qq.com/s/V7RESEm4xzhW8tXEjKjn1Q
-
-层次强化学习、记忆与预测模型
-
-https://mp.weixin.qq.com/s/aNskPERmekw9yQVb7A3GPQ
-
-Google大脑最新研究成果：使用强化学习实现动态系统的韧性计算
-
-https://mp.weixin.qq.com/s/pJkCOCl6o70le1WsE9p3pg
-
-在全景视频中预测头部运动：一种深度强化学习方法
-
-https://mp.weixin.qq.com/s/fodjmmh_jJMh4hD3m2OrLg
-
-凭借幻想的目标进行视觉强化学习
-
-https://mp.weixin.qq.com/s/6HVSh7_9Akmf6OE8PGNy6Q
-
-怎样让AI完成人类搞不定的任务？OpenAI提出迭代扩增法给AI设目标
-
-https://mp.weixin.qq.com/s/JpZimrHALjuc-H9WF8sPZg
-
-智能体只想看电视？谷歌新型好奇心方法让智能体离开电视继续探索
-
-https://mp.weixin.qq.com/s/dic_ssebe32L30pAUxlP6w
-
-谷歌AI-强化学习中的好奇和拖延
-
-https://mp.weixin.qq.com/s/tieGV_tDWkVVW2YFes4AqA
-
-学习何时做分类决策，深度好奇提出强化学习模型Jumper
-
-https://mp.weixin.qq.com/s/GUyZ0U5_JlXCI-5mO796SA
-
-超越DQN和A3C：深度强化学习领域近期新进展概览
-
-https://mp.weixin.qq.com/s/THgo4YzhUN2PUkyI5sSnpw
-
-开源啦：连DeepMind也捉急的游戏，OpenAI给你攻破第一关的高分算法
-
-https://mp.weixin.qq.com/s/loH6M0_U1DVrod0Drkl4eg
-
-深度强化学习教机器人自己穿衣服！
-
-https://mp.weixin.qq.com/s/VqPPQnH22Y-XeojNEZn3YQ
-
-CoRL 2018最佳系统论文：如此鸡贼的机器手，确定不是人在控制？
-
-https://mp.weixin.qq.com/s/eEQhwV1cA4nEgEBcOKDenA
-
-将逆向课程生成用于强化学习：伯克利新研究让智能体掌握全新任务
-
-https://mp.weixin.qq.com/s/cO1VlYGwdRBAbPs7IgvcAA
-
-超越传统强化学习的价值分布方法
-
-https://mp.weixin.qq.com/s/oyWyb58l4ztqIEyrk0g01A
-
-强化学习在美团“猜你喜欢”的实践
-
-https://zhuanlan.zhihu.com/p/48186354
-
-robot浅谈
-
-https://mp.weixin.qq.com/s/f-rmdWq3kJUJGhuPwU8JtQ
-
-深度策略梯度算法是真正的策略梯度算法吗？
-
-https://zhuanlan.zhihu.com/p/51202503
-
-强化学习在视觉上的应用（RL for computer Vision）
