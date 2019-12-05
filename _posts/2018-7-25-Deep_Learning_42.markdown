@@ -332,6 +332,10 @@ https://zhuanlan.zhihu.com/p/83130649
 
 深度学习在时间序列分类中的应用
 
+https://mp.weixin.qq.com/s/09KFXwQLJ-HUJsrTd0B1HA
+
+金融时序预测中的深度学习方法综述: 从2005到2019
+
 # AI可解释性
 
 XAI(Explainable Artificial Intelligence)

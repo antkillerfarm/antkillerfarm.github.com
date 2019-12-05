@@ -94,6 +94,8 @@ AlphaGo主要由几个部分组成：
 
 2. 两者的input plane都是手工构建的特征。
 
+3. 由于棋子的精确位置很重要，这些CNN中都没有pooling。
+
 它们的差异在于：
 
 1.DarkForestGo训练时，会预测三步而非一步，提高了策略输出的质量。
@@ -112,11 +114,11 @@ AlphaGo的Value Network也是一个和Policy Network几乎一样的深度卷积�
 
 - 走棋网络的运行速度是比较慢的（3毫秒），而快速走子能做到几微秒级别，差了1000倍。
 
-- 快速走子可以用来评估盘面。由于天文数字般的可能局面数，围棋的搜索是毫无希望走到底的，搜索到一定程度就要对现有局面做个估分。在没有估值网络的时候，不像国象可以通过算棋子的分数来对盘面做比较精确的估值，围棋盘面的估计得要通过模拟走子来进行，从当前盘面一路走到底，不考虑岔路地算出胜负，然后把胜负值作为当前盘面价值的一个估计。
+- 快速走子可以用来评估盘面。由于天文数字般的可能局面数，围棋的搜索是毫无希望走到底的，搜索到一定程度就要对现有局面做个估分。在没有估值网络的时候，不像国象可以通过算棋子的分数来对盘面做比较精确的估值，围棋盘面的估计得要通过模拟走子来进行，从当前盘面一路走到底，不考虑岔路地算出胜负，然后把胜负值作为当前盘面价值的一个估计。显然，如果一步棋在快速走子之后，生成的N个结果中的胜率较大的话，那它本身是步好棋的概率也较大。
 
 为了速度快，Fast rollout没有使用神经网络，而是使用传统的局部特征匹配（local pattern matching）加线性回归（logistic regression）的方法。
 
-这种方法虽然没有NN这么强，但还是比更为传统的基于规则的方案适应性好。毕竟规则是死的，而传统的机器学习，再怎么说也是可以自动学习规则的。
+这种方法虽然没有NN这么强，但还是比更为传统的基于规则的方案适应性好。毕竟规则是死的，而传统的机器学习，再怎么说也是可以自动学习规则的。当然了，这更比随机走子的效率高了。
 
 由于Fast rollout既可以提供策略，又有一定的价值评估的手段，因此单独使用它，比单独使用Policy Network或者Value Network都要好。相当于是一个劣化版本的AlphaGo。
 
@@ -134,7 +136,9 @@ AlphaGo不是一个纯粹的DRL，它还是使用了人类棋谱的先验数据�
 
 - 然后，使用自我博弈的方式，训练Policy Network和Value Network。
 
+由于很多人类的棋局都是因为中间偶然的失误导致了全盘覆灭（所谓“一着不慎满盘皆输”），其中的偶然性非常大，局部的优劣往往和棋局的最终结果无关，因此Value Network并没有用人类棋谱来训练。
 
+AlphaGo每更新一个“小版本”后，都要将这个版本和迄今最好的版本对比，如果新的版本胜率超过55%，才会用来取代以前最好的版本。这样做的显然的好处是防止AlphaGo自我博弈得“走火入魔”，陷入局部最优。
 
 ## AlphaGo Zero
 
@@ -155,6 +159,18 @@ AlphaGo Zero对AlphaGo进行了全面提升：
 - 完全采用自我博弈，去掉了人类棋谱。
 
 - 取消了Fast rollout。AlphaGo Zero的实践表明，如果有足够好的Value函数的话，MCTS的采样效率要远远高于传统的alpha-beta剪枝。因此，rollout也不是必须的。
+
+>稍后的AlphaZero的实践表明：AlphaZero搜索80000个节点的棋力，已经超过了Stockfish搜索70000000个节点的棋力。
+
+- Policy Gradient vs. Policy Iteration
+
+AlphaGo依赖快速走子的结果，获得最终的结果信息。因此，它的奖励来源比较单一：只有对局的最终结果。这种做法实际上就是通常说的Policy Gradient。
+
+但正如之前指出的：棋下输了，不意味着每步棋都是臭棋。因此，只使用最终结果，既会导致奖励稀疏，也不利于实时评估走子的价值。
+
+AlphaGo Zero转而采用Policy Iteration方法，实时对盘面进行估计，不再依赖终局结果。
+
+![](/images/img3/AlphaGo_Zero_2.jpg)
 
 ## AlphaZero
 
@@ -257,39 +273,3 @@ https://mp.weixin.qq.com/s/uZtaxRwROCqYmL2k6Muxaw
 https://mp.weixin.qq.com/s/i5OmLu8aNbypiTUmP4teeQ
 
 刘遥行：深入浅出看懂AlphaGo Zero
-
-https://mp.weixin.qq.com/s/aBrwbB_DOGTen-6XL7LGFQ
-
-邓侃：白话蒙特卡洛树搜索和ResNet
-
-https://mp.weixin.qq.com/s/nbTkr0PImlXUSYl91HD91Q
-
-AlphaGo背后的力量：蒙特卡洛树搜索入门指南
-
-https://mp.weixin.qq.com/s/-tH7DQo1cK9gA0bcpBJSDA
-
-AlphaGo Zero：笔记与伪代码
-
-https://mp.weixin.qq.com/s/CJuVoOf7idUChFIn7dH0Lg
-
-围棋中的数学原理
-
-https://mp.weixin.qq.com/s/d46qNFaftt4wxpV4sZnG-w
-
-一张图看懂AlphaGo Zero
-
-https://zhuanlan.zhihu.com/p/31749249
-
-比AlphaGo Zero更强的AlphaZero问世，8小时解决一切棋类！
-
-https://mp.weixin.qq.com/s/L7bZMkqyncwEt6D5tK1OdQ
-
-AlphaZero炼成最强通用棋类AI，DeepMind强化学习算法8小时完爆人类棋类游戏
-
-https://mp.weixin.qq.com/s/tFdnxqV5a5xZrFtB6E0AiQ
-
-新AlphaZero出世称霸棋界，8小时搞定一切棋类！自对弈通用强化学习无师自通！
-
-https://mp.weixin.qq.com/s/qYWsFBKNCKCGUmizX_1sVg
-
-AlphaGo 教学工具终于上线了！

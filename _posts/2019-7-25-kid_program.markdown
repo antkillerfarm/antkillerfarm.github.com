@@ -477,3 +477,7 @@ https://mp.weixin.qq.com/s/Oo-U4Bq7g1wmQgXJ7Y-rjw
 https://mp.weixin.qq.com/s/sZvawmQ1KH3b_hozAbeX9w
 
 如何用简单的Python为数据科学家编写Web应用程序？（StreamLit）
+
+https://mp.weixin.qq.com/s/WqDWksBDBa07s84v6R1tlA
+
+Python里三个最高逼格的调试神器

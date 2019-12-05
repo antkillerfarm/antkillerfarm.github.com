@@ -4,6 +4,28 @@ title:  深度学习（四十七）——三维处理, AutoDL进阶
 category: DL 
 ---
 
+# OCR（续）
+
+https://mp.weixin.qq.com/s/CwLN2SRyN7RTEFtNx3u8Pg
+
+基于图卷积网络的视觉富文本数据中文档图像信息抽取
+
+https://mp.weixin.qq.com/s/2wxZSWCfwl_z502MjisdzQ
+
+ICDAR 2019表格识别论文与竞赛综述（上）
+
+https://mp.weixin.qq.com/s/wD7UNeLfCOaOzrSdzMB5qA
+
+ICDAR 2019表格识别论文与竞赛综述（下）
+
+https://mp.weixin.qq.com/s/L_Rz1yHR0Q3L3y32WAYjkg
+
+从边界到文本—一种任意形状文本的检测方法
+
+https://mp.weixin.qq.com/s/CcPhmxCFWYddaQgfJmO9UQ
+
+最新图文识别技术综述
+
 # 三维处理
 
 https://github.com/timzhang642/3D-Machine-Learning

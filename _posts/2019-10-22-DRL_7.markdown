@@ -1,10 +1,54 @@
 ---
 layout: post
-title:  深度强化学习（七）——DRL参考资源（1）
+title:  深度强化学习（七）——元学习, DRL参考资源（1）
 category: DRL 
 ---
 
-# 元学习（续）
+# 元学习
+
+人工智能的历史显示了明确的进展方向：
+
+第一代：**良好的老式人工智能**
+
+- 手工预测
+- 什么都不学
+
+第二代：**浅学习**
+
+- 手工功能
+- 学习预测
+
+第三代：**深度学习**
+
+- 手工算法（优化器，目标，架构......）
+- 端到端地学习功能和预测
+
+第四代：**元学习**
+
+- 无手工
+- 端到端学习算法和功能以及预测
+
+## 参考
+
+https://github.com/gopala-kr/meta-learning
+
+元学习（meta-learning）相关文献资源大列表
+
+https://github.com/sudharsan13296/Awesome-Meta-Learning
+
+元学习相关资源汇总
+
+https://mp.weixin.qq.com/s/KKK3VEpwL90g6Aro8qtXxQ
+
+学习如何学习的算法：简述元学习研究方向现状
+
+https://mp.weixin.qq.com/s/jlD5p5GXFmrWlxg9xvehxg
+
+元学习—Meta Learning的兴起
+
+https://mp.weixin.qq.com/s/qoKQwEvOnP384i5Z-_jO1A
+
+CVPR2019最新元学习教程：基于元学习的计算机视觉应用
 
 https://mp.weixin.qq.com/s/KtO3OTZ-bZ6m0ZSI6jTyjw
 
@@ -347,31 +391,3 @@ https://mp.weixin.qq.com/s/w3SsadgKaL8-tlzYLvMm-A
 https://mp.weixin.qq.com/s/oyxqA_LYtze1f_YDwDZziQ
 
 从零开始自学设计新型药物，UNC提出结构进化强化学习
-
-https://mp.weixin.qq.com/s/qWuoo6cGLWLk4OKlunR-Og
-
-滴滴KDD 2018论文详解：基于强化学习技术的智能派单模型
-
-https://zhuanlan.zhihu.com/p/43496459
-
-解决Sparse Reward RL任务的简单回顾
-
-https://mp.weixin.qq.com/s/G99vqIYeWzgQ4kL4p77cKA
-
-用强化学习做神经机器翻译：中山大学&MSRA填补多项空白
-
-https://mp.weixin.qq.com/s/GUyZ0U5_JlXCI-5mO796SA
-
-超越DQN和A3C：深度强化学习领域近期新进展概览
-
-https://zhuanlan.zhihu.com/p/43843955
-
-BAIR：基于人类演示&RL的夹爪训练——高效、通用、低成本
-
-https://mp.weixin.qq.com/s/ADZlLx6gMTFU6IoBCF669g
-
-快1万倍！伯克利提出用深度RL优化SQL查询
-
-https://mp.weixin.qq.com/s/oZDDP59o-1qwfz8prK3nJQ
-
-伯克利最新研究：如何用目标图像进行机器视觉强化学习？

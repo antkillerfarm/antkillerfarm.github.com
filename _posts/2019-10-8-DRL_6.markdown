@@ -1,12 +1,48 @@
 ---
 layout: post
-title:  深度强化学习（六）——MARL, AlphaStar, 元学习
+title:  深度强化学习（六）——MARL, AlphaStar
 category: DRL 
 ---
 
 # AlphaGo
 
 ## 参考（续）
+
+https://mp.weixin.qq.com/s/aBrwbB_DOGTen-6XL7LGFQ
+
+邓侃：白话蒙特卡洛树搜索和ResNet
+
+https://mp.weixin.qq.com/s/nbTkr0PImlXUSYl91HD91Q
+
+AlphaGo背后的力量：蒙特卡洛树搜索入门指南
+
+https://mp.weixin.qq.com/s/-tH7DQo1cK9gA0bcpBJSDA
+
+AlphaGo Zero：笔记与伪代码
+
+https://mp.weixin.qq.com/s/CJuVoOf7idUChFIn7dH0Lg
+
+围棋中的数学原理
+
+https://mp.weixin.qq.com/s/d46qNFaftt4wxpV4sZnG-w
+
+一张图看懂AlphaGo Zero
+
+https://zhuanlan.zhihu.com/p/31749249
+
+比AlphaGo Zero更强的AlphaZero问世，8小时解决一切棋类！
+
+https://mp.weixin.qq.com/s/L7bZMkqyncwEt6D5tK1OdQ
+
+AlphaZero炼成最强通用棋类AI，DeepMind强化学习算法8小时完爆人类棋类游戏
+
+https://mp.weixin.qq.com/s/tFdnxqV5a5xZrFtB6E0AiQ
+
+新AlphaZero出世称霸棋界，8小时搞定一切棋类！自对弈通用强化学习无师自通！
+
+https://mp.weixin.qq.com/s/qYWsFBKNCKCGUmizX_1sVg
+
+AlphaGo 教学工具终于上线了！
 
 https://mp.weixin.qq.com/s/JxbIeDk8_wnYu_ewUHp29g
 
@@ -298,49 +334,3 @@ https://mp.weixin.qq.com/s/_t2vLFfIG6VYAdWDalpIXQ
 https://mp.weixin.qq.com/s/X7QQn6W2dB3y_Ljii-sJ3w
 
 Alphastar再登Nature！星际争霸任一种族，战网狂虐99.8%人类玩家
-
-# 元学习
-
-人工智能的历史显示了明确的进展方向：
-
-第一代：**良好的老式人工智能**
-
-- 手工预测
-- 什么都不学
-
-第二代：**浅学习**
-
-- 手工功能
-- 学习预测
-
-第三代：**深度学习**
-
-- 手工算法（优化器，目标，架构......）
-- 端到端地学习功能和预测
-
-第四代：**元学习**
-
-- 无手工
-- 端到端学习算法和功能以及预测
-
-## 参考
-
-https://github.com/gopala-kr/meta-learning
-
-元学习（meta-learning）相关文献资源大列表
-
-https://github.com/sudharsan13296/Awesome-Meta-Learning
-
-元学习相关资源汇总
-
-https://mp.weixin.qq.com/s/KKK3VEpwL90g6Aro8qtXxQ
-
-学习如何学习的算法：简述元学习研究方向现状
-
-https://mp.weixin.qq.com/s/jlD5p5GXFmrWlxg9xvehxg
-
-元学习—Meta Learning的兴起
-
-https://mp.weixin.qq.com/s/qoKQwEvOnP384i5Z-_jO1A
-
-CVPR2019最新元学习教程：基于元学习的计算机视觉应用

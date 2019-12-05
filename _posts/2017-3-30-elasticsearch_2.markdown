@@ -269,7 +269,7 @@ https://mp.weixin.qq.com/s/6aXcum-FAbvcGcOrkSC4vQ
 
 为什么Kafka会成为微服务架构的事实标准？
 
-# DRL参考资源+
+# DRL参考资源
 
 https://zhuanlan.zhihu.com/p/41467058
 
@@ -390,3 +390,7 @@ https://mp.weixin.qq.com/s/lxnyoo46tS7-MXAB7HNouA
 https://mp.weixin.qq.com/s/ZYIfzk1kZ4azpmxWagkQuw
 
 强化学习如何用于模型量化？
+
+https://mp.weixin.qq.com/s/w4m4fG-a30AgulNPhBVC5w
+
+基于强化学习的自动交易系统研究与发展综述
