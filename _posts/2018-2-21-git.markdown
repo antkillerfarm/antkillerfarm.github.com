@@ -14,9 +14,31 @@ https://learngitbranching.js.org
 
 ## git常用命令
 
-0.在linux下有个叫做gitk的Git GUI工具。
+0.GUI工具
+
+- gitk：主要用于展示分支树。
+
+安装：
 
 `sudo apt install gitk`
+
+运行：
+
+`gitk`：展示当前分支
+
+`gitk --all`：展示所有分支。
+
+- git-gui：主要用于提交文件。
+
+安装：
+
+`sudo apt install gitk`
+
+运行：
+
+`git gui`
+
+以上两个工具用tk/tcl编写，都是全平台支持的。
 
 1.创建版本库
 
@@ -393,24 +415,6 @@ http://trac.webkit.org/wiki/BuildingGtk
 3)gtk-doc-tools
 
 4)libgail-dev
-
-# 电子科技史+
-
-https://mp.weixin.qq.com/s?__biz=MzAxOTIxNTg0Mg==&mid=2651001664&idx=1&sn=d7fe10c74feb5eb84c45a0381372c1d3
-
-国产芯片·大阅兵
-
-https://mp.weixin.qq.com/s/MzQyu5uqqIEYn-DwxNU50Q
-
-珠海芯片公司江湖
-
-https://mp.weixin.qq.com/s/O4hARQmcBDolt3THeoSwkg
-
-昙花一现的“图文电视”
-
-https://mp.weixin.qq.com/s/OTGy5a-hfxxp19TeJWyIyQ
-
-爬取6271家死亡公司数据，看十年创业公司消亡史
 
 # 分布式ID生成器
 

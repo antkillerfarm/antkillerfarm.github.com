@@ -30,6 +30,8 @@ http://speech.ee.ntu.edu.tw/~tlkagk/courses.html
 
 >李宏毅，国立台湾大学硕士（2010年）+博士（2012年）。国立台湾大学计算机系助理教授。
 
+李宏毅的课程难度适中，且更新很快，每隔半年逛一下，必有新收获。
+
 https://www.csie.ntu.edu.tw/~yvchen/f106-adl/syllabus.html
 
 李宏毅的搭档，美女陈蕴侬的深度学习课程

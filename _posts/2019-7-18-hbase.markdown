@@ -192,33 +192,3 @@ https://mp.weixin.qq.com/s/pQbsGxM59fgQMYH54ETk7Q
 https://mp.weixin.qq.com/s/vyF0VAF8xjEWrBnS1_DtkA
 
 用HBase做高性能键值查询？
-
-# DRL参考资源+
-
-https://mp.weixin.qq.com/s/qWuoo6cGLWLk4OKlunR-Og
-
-滴滴KDD 2018论文详解：基于强化学习技术的智能派单模型
-
-https://zhuanlan.zhihu.com/p/43496459
-
-解决Sparse Reward RL任务的简单回顾
-
-https://mp.weixin.qq.com/s/G99vqIYeWzgQ4kL4p77cKA
-
-用强化学习做神经机器翻译：中山大学&MSRA填补多项空白
-
-https://mp.weixin.qq.com/s/GUyZ0U5_JlXCI-5mO796SA
-
-超越DQN和A3C：深度强化学习领域近期新进展概览
-
-https://zhuanlan.zhihu.com/p/43843955
-
-BAIR：基于人类演示&RL的夹爪训练——高效、通用、低成本
-
-https://mp.weixin.qq.com/s/ADZlLx6gMTFU6IoBCF669g
-
-快1万倍！伯克利提出用深度RL优化SQL查询
-
-https://mp.weixin.qq.com/s/oZDDP59o-1qwfz8prK3nJQ
-
-伯克利最新研究：如何用目标图像进行机器视觉强化学习？
