@@ -405,3 +405,7 @@ https://mp.weixin.qq.com/s/wAWB2SLaqD2SmP9-j0Ut7g
 https://mp.weixin.qq.com/s/LZNla-NKAu8wmi-OaJD8yA
 
 旷视研究院推出可学习的树状滤波器，实现保留结构信息的特征变换
+
+https://mp.weixin.qq.com/s/lTPm229gzV_9RU-aiY-xQg
+
+2019年5篇图像分割算法最佳综述

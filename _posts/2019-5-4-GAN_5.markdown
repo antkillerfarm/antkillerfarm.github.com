@@ -90,6 +90,10 @@ https://mp.weixin.qq.com/s/akLvNQZMNTaVbkbUrZY4tw
 
 史上最强图像生成器BigGAN变身DeepGAN？四倍深度实现更强效果
 
+https://mp.weixin.qq.com/s/jglebP4Zb9rZtb2EhWiQDA
+
+BigGAN被干了！DeepMind发布LOGAN：FID提升32%，华人一作领衔
+
 # S2GAN
 
 论文：
@@ -347,15 +351,3 @@ LADN：局部对抗解缠网络-人脸妆容迁移与反迁移的深度学习模
 https://mp.weixin.qq.com/s/r1LFbnTo48Gs6-gKmuBMIg
 
 GAN毕业手册：从零到一构建自己的GAN模型
-
-https://mp.weixin.qq.com/s/QqQ0SoF-kFTQRLxo4Tzm2g
-
-反思基于能量的生成式模型：中山大学研究者从粒子演化角度改进经典的FRAME
-
-https://mp.weixin.qq.com/s/ExsDftIvi8VUdvxfka-1ow
-
-南大和中大“合体”拯救手残党：基于GAN的PI-REC重构网络，“老婆”画作有救了
-
-https://mp.weixin.qq.com/s/RhYVCO0jNlY97ptIUvRRQQ
-
-带你读论文：生成对抗网络GAN论文TOP 10

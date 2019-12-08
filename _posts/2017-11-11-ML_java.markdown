@@ -160,6 +160,10 @@ https://mp.weixin.qq.com/s/qk8hlcE3oxa-4a-G4sxGVg
 
 为什么说JSON不适合做配置语言？
 
+https://mp.weixin.qq.com/s/qjDj02UuJ8KB4bklZG3odA
+
+9款你不能错过的JSON工具
+
 ## Jackson
 
 Jackson是常用的Java语言的JSON库。

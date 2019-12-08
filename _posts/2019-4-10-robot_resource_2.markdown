@@ -28,6 +28,10 @@ https://mp.weixin.qq.com/s/GG1V6k3c3Dvfw334jpqNxA
 
 自动驾驶车会看地图吗？它如何认路、找准定位？
 
+https://mp.weixin.qq.com/s/kkGH-Jp6ophDXqHpyznEQQ
+
+一文详解高精地图安全技术及标准
+
 ## 车道线检测
 
 https://blog.csdn.net/Young_Gy/article/details/75194914

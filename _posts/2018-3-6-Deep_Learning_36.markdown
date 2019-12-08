@@ -293,3 +293,7 @@ RALM: 实时Look-alike算法在微信看一看中的应用
 https://mp.weixin.qq.com/s/ZYbiNbBeEADvGafMKfy9zA
 
 淘宝首页那些“辣眼睛”的图去哪了？
+
+https://zhuanlan.zhihu.com/p/93467919
+
+推荐系统之序列化建模

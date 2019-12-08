@@ -74,6 +74,10 @@ https://mp.weixin.qq.com/s/rF4zKCbj3Jh8dDR1239lpA
 
 基于双语主题模型的跨语言层次分类体系匹配
 
+https://mp.weixin.qq.com/s/vnqpAiiKZjkamSgF2GAZyw
+
+跨语言自然语言处理笔记
+
 https://mp.weixin.qq.com/s/gQ9dV-IPWHTOLbI6u0D67g
 
 可解释推荐系统：身怀绝技，一招击中用户心理
