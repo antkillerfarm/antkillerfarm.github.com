@@ -385,3 +385,7 @@ https://mp.weixin.qq.com/s/txbusDvTKwFZdX94kDp7VQ
 https://mp.weixin.qq.com/s/qquMk4M81Pjw9fxkostf4Q
 
 小米：Mysql数据实时同步实践
+
+https://shockerli.net/post/1000-line-mysql-note/
+
+一千行MySQL学习笔记

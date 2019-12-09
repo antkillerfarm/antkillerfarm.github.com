@@ -263,3 +263,7 @@ https://mp.weixin.qq.com/s/QqWGdVGVxSComuJT1SDo0Q
 https://mp.weixin.qq.com/s/zxFGxnQk016Kh72XyPDSSg
 
 阿里文娱首次公开！AI 如何对爆款内容未卜先知？
+
+https://mp.weixin.qq.com/s/b0_o4lHOxs7v4PCCL_I4DA
+
+Instagram推荐系统：每秒预测9000万个模型是怎么做到的？

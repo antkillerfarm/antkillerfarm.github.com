@@ -290,6 +290,10 @@ https://mp.weixin.qq.com/s/b6XHZq6C0ZWOcDrysjMoog
 
 RALM: 实时Look-alike算法在微信看一看中的应用
 
+https://mp.weixin.qq.com/s/R0RGMTUj5Er07yvYurzFuQ
+
+微信看一看实时Look-alike推荐算法
+
 https://mp.weixin.qq.com/s/ZYbiNbBeEADvGafMKfy9zA
 
 淘宝首页那些“辣眼睛”的图去哪了？
@@ -297,3 +301,7 @@ https://mp.weixin.qq.com/s/ZYbiNbBeEADvGafMKfy9zA
 https://zhuanlan.zhihu.com/p/93467919
 
 推荐系统之序列化建模
+
+https://mp.weixin.qq.com/s/HEMtps82qKKtq0mV0d4vdw
+
+微信算法工程师带你一文了解推荐系统领域的最新进展

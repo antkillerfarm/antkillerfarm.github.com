@@ -218,6 +218,10 @@ https://mp.weixin.qq.com/s/fDOskKqG-fsJmhT0-tdtTg
 
 SlimYOLOv3：更窄、更快、更好的无人机目标检测算法
 
+https://zhuanlan.zhihu.com/p/50595699
+
+揭秘YOLOv3鲜为人知的关键细节
+
 # Tiny-YOLO
 
 YOLO系列还包括了一个速度更快但精度稍低的嵌入式版本系列——Tiny-YOLO。

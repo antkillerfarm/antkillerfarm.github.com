@@ -243,6 +243,10 @@ https://mp.weixin.qq.com/s/HOD1Hb70NhTXXCXlopzfng
 
 BERT推理加速实践
 
+https://mp.weixin.qq.com/s/0luHJsw7WWJskJWGThR5qg
+
+使用BERT做文本摘要
+
 # Attention进阶
 
 https://mp.weixin.qq.com/s/ZSzHOu6uowRSoWrqB7vOaQ
