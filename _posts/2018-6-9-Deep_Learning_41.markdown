@@ -58,6 +58,10 @@ https://zhuanlan.zhihu.com/wjdml
 
 《小王爱迁移》系列blog
 
+https://mp.weixin.qq.com/s/HkuIJUw99DhJkUSuCYdfjg
+
+《迁移学习简明手册》pdf分享
+
 https://mp.weixin.qq.com/s/WuX7-w--MGX3BfU_K7qT0A
 
 什么是迁移学习(Transfer Learning)？这个领域历史发展前景如何？

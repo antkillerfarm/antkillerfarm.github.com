@@ -148,7 +148,7 @@ GraphSAGE
 
 https://mp.weixin.qq.com/s/IcLk-fMjKO19BaHbuUCeXg
 
-GraphSAGE 算法原理，实现和应用
+GraphSAGE算法原理，实现和应用
 
 https://mp.weixin.qq.com/s/C-Pa1jznQntyhocdxS-4Hg
 
@@ -237,6 +237,18 @@ https://zhuanlan.zhihu.com/p/78466344
 https://mp.weixin.qq.com/s/YNIwmR8K-H2eKbKoZSZZ-Q
 
 CIKM最佳应用论文：11亿节点的大型图，看闲鱼如何用图卷积过滤垃圾评论
+
+https://mp.weixin.qq.com/s/aMFFQBfVXgQr71nyjpyf0g
+
+一文读懂：图卷积在基于骨架的动作识别中的应用
+
+https://mp.weixin.qq.com/s/6RSYTlNvw7TyOJsjHf1iYQ
+
+基于图上下文知识融入的预训练语言模型
+
+https://mp.weixin.qq.com/s/0B1ROCg7SMn0I7-5HVeMIg
+
+用图神经网络改善视频的多标签分类
 
 # 自动求导
 

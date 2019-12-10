@@ -336,6 +336,10 @@ https://mp.weixin.qq.com/s/09KFXwQLJ-HUJsrTd0B1HA
 
 金融时序预测中的深度学习方法综述: 从2005到2019
 
+https://mp.weixin.qq.com/s/iPpVT2iY4Ec6oYdsRpPeTQ
+
+淘宝推荐系统中的深度序列匹配模型SDM
+
 # AI可解释性
 
 XAI(Explainable Artificial Intelligence)

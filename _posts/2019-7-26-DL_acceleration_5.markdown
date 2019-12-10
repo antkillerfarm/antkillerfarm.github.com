@@ -142,6 +142,10 @@ https://mp.weixin.qq.com/s/F0ykoKv027ycinsAZZjbWQ
 
 ThunderNet：国防科大、旷视提出首个在ARM上实时运行的通用目标检测算法
 
+https://mp.weixin.qq.com/s/J3ftOKDPBY5YYD4jkS5-aQ
+
+ThunderNet：Two-stage形式的目标检测也可很快而且精度很高
+
 https://mp.weixin.qq.com/s/ie2O5BPT-QxTRhK3S0Oa0Q
 
 剪枝需有的放矢，快手&罗切斯特大学提出基于能耗建模的模型压缩

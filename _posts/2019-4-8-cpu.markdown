@@ -254,6 +254,10 @@ https://mp.weixin.qq.com/s/rml_wqePIx8vOk2ZO9_GMA
 
 深入理解Cache（下）
 
+https://mp.weixin.qq.com/s/QidAD9OuVdEXFqxRMPx5lQ
+
+响应速度不给力？解锁正确缓存姿势
+
 https://zhuanlan.zhihu.com/p/48593932
 
 CPU底部的小块是干什么用的？为什么CPU这么多电源引脚？
