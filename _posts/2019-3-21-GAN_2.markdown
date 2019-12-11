@@ -372,6 +372,10 @@ https://mp.weixin.qq.com/s/X1DPEcNP1mFc1DGUdzh3eQ
 
 生成式深度学习
 
+https://zhuanlan.zhihu.com/p/96025520
+
+9102年入门GAN的补习
+
 ## GAN的理论解释
 
 顾险峰教授对GAN提出了自己的理论解释。

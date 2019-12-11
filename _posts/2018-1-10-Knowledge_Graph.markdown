@@ -284,6 +284,10 @@ https://mp.weixin.qq.com/s/QbKGm04k_cQbTxnfUFZQBQ
 
 深度学习在知识图谱构建中的应用
 
+https://mp.weixin.qq.com/s/fvgzvZwaMxsZWw-Y5AAe2g
+
+知识图谱的自动构建
+
 https://mp.weixin.qq.com/s/SdCFYYQXdYtQLy-GaQNfcw
 
 UCSB提出变分知识图谱推理：在KG中引入变分推理框架

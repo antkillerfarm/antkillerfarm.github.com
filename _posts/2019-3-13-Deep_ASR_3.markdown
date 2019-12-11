@@ -194,6 +194,14 @@ https://mp.weixin.qq.com/s/5ZVl2fRZifIDiNI-fU9YWw
 
 时域音频分离模型登GitHub热榜，效果超传统频域方法，Facebook官方出品
 
+https://mp.weixin.qq.com/s/1ENIla2CUU1dfhJ-6_bDXg
+
+QQ音乐应用TensorFlow构建AI赋能的音乐曲库
+
+https://mp.weixin.qq.com/s/k5BZGPVwH_DZylZ9dMK6zA
+
+语音识别2019指南
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw

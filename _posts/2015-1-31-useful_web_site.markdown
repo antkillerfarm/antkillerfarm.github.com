@@ -326,6 +326,10 @@ https://mp.weixin.qq.com/s/BJwohmG_BEJ7dXbcPTgaCQ
 
 风口上的RPA：是AI落地缓冲剂，还是创投圈的一场炒作？
 
+https://mp.weixin.qq.com/s/geT7x5RG4xhD-Ro1eZvrdg
+
+深入浅出Serverless：优势、意义与应用
+
 ## 科研人生
 
 https://mp.weixin.qq.com/s/6gX1UFSykuzw358ARUzifw

@@ -86,6 +86,10 @@ https://mp.weixin.qq.com/s/ehhsN0Xj1aUVyAxSxnFJmQ
 
 Transformer落地：使用话语重写器改进多轮人机对话
 
+https://zhuanlan.zhihu.com/p/85825460
+
+Transformer在推荐模型中的应用总结
+
 # BERT
 
 ## 概述

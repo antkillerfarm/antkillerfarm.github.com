@@ -377,3 +377,7 @@ CVPR 2019神经网络架构搜索进展综述
 https://mp.weixin.qq.com/s/hWRStNp0Gu_ZO7J1Sjr6-w
 
 视频架构搜索的研究
+
+https://mp.weixin.qq.com/s/ABNPCpgyk_2EeYwnJFFehg
+
+自动优化架构，这个算法能帮工程师设计神经网络

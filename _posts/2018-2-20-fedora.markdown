@@ -256,6 +256,10 @@ https://mp.weixin.qq.com/s/DQzlfQXt4dV9PYwoVdomaw
 
 ## 参考
 
+https://github.com/dylanaraps/pure-bash-bible
+
+本项目主要汇总了bash脚本经常会使用到的一些代码片段，并按照字符串、数组、正则表达式、文件处理、变量等常用功能进行分类，并给出了具体的Demo，非常适合初学者以及希望提升工作效率的朋友使用。
+
 https://blog.csdn.net/iot_flower/article/details/69055590
 
 shell脚本第一行：#!/bin/bash的含义

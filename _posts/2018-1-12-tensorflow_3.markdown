@@ -156,6 +156,10 @@ https://mp.weixin.qq.com/s/jdjX0jirTHOUqsGagJmGLQ
 
 ## Tensorflow 2.x
 
+![](/images/img3/TF.png)
+
+![](/images/img3/TF_2.png)
+
 https://mp.weixin.qq.com/s/BD-nJSZJLjBBq1n7HEHpKw
 
 将您的代码升级至TensorFlow 2.0
@@ -183,6 +187,10 @@ https://mp.weixin.qq.com/s/Ra-lVtKoYI0eOC_6VrPZeg
 https://mp.weixin.qq.com/s/ddHKc5AffznRaEY_qhHN_g
 
 升级到tensorflow2.0，我整个人都不好了
+
+https://mp.weixin.qq.com/s/RcolwQnCqrAsGaKEK0oo_A
+
+TensorFlow 2.0中的tf.keras和Keras有何区别？为什么以后一定要用tf.keras？
 
 ## 细节
 

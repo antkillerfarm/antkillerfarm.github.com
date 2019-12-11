@@ -274,6 +274,10 @@ https://blog.csdn.net/yz930618/article/details/84862751
 
 《基于行列式点过程的推荐多样性提升算法》原理详解
 
+https://mp.weixin.qq.com/s/NJIEqlW4oKfEon3YXc1U6g
+
+混合推荐系统介绍
+
 # 数据不平衡问题
 
 ![](/images/img3/imbalance.png)

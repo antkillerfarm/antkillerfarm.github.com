@@ -30,6 +30,10 @@ https://mp.weixin.qq.com/s/krW1eUFu7iz9YyYFGbFVeQ
 
 香侬科技提出中文字型的深度学习模型Glyce，横扫13项中文NLP记录
 
+https://mp.weixin.qq.com/s/VtEM6paUPH28GFrwVNmz4w
+
+自然语言处理起源：马尔科夫和香农的语言建模实验
+
 # 依存分析
 
 ## 概况

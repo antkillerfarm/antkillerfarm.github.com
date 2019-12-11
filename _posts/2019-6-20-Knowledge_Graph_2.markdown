@@ -210,6 +210,10 @@ https://zhuanlan.zhihu.com/p/91762831
 
 知识图谱从哪里来：实体关系抽取的现状与未来
 
+https://mp.weixin.qq.com/s/_cFDbp6PnAEjgtDIWSBDVQ
+
+知识结构化在阿里小蜜中的应用
+
 # 数据结构 & 普通CS算法
 
 ## TopK
