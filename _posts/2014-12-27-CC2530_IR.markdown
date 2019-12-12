@@ -257,3 +257,7 @@ QPS比Nginx提升60%，阿里Tengine负载均衡算法揭秘
 https://www.cnblogs.com/wcwnina/p/8728391.html
 
 Nginx相关介绍
+
+https://mp.weixin.qq.com/s/XsyXkaOIJ3m8sdCt8Pl5Ig
+
+计算密集型服务的负载均衡策略

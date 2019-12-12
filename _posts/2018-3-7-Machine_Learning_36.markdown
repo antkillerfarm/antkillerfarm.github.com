@@ -146,6 +146,10 @@ https://mp.weixin.qq.com/s/HcWoDmrp4taRGREvV7x4vA
 
 斯坦福吴恩达团队提出NGBoost：用于概率预测的自然梯度提升
 
+https://mp.weixin.qq.com/s/X4K6UFZPxL05v2uolId7Lw
+
+XGBoost在携程搜索排序中的应用
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。
