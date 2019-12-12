@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Kaldi（二）
+title:  Kaldi（二）, 计算机体系结构
 category: AI 
 ---
 
@@ -228,3 +228,51 @@ SpeechBrain是一个基于pytorch的语音工具包，目前（2019.9）正在�
 官网：
 
 https://speechbrain.github.io/
+
+# 计算机体系结构
+
+按照Michael J. Flynn的分类方法，计算机的体系结构可分为如下四类：
+
+**Single instruction stream single data stream (SISD)**
+
+**Single instruction stream, multiple data streams (SIMD)**
+
+**Multiple instruction streams, single data stream (MISD)**
+
+**Multiple instruction streams, multiple data streams (MIMD)**
+
+![](/images/article/simd_mimd.png)
+
+原图地址：
+
+https://en.wikipedia.org/wiki/Flynn%27s_taxonomy
+
+CPU通常是SISD和SIMD的，而GPU则是SIMD的，超级计算机则是MIMD的。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/31271788
+
+SIMD指令集
+
+## 术语
+
+Shared Virtual Memory，SVM
+
+Memory consistency model
+
+Multisample anti-aliasing，MSAA
+
+## 参考
+
+https://blog.csdn.net/do2jiang/article/details/4545889
+
+流水线、超流水线、超标量技术对比
+
+https://blog.csdn.net/edonlii/article/details/8755205
+
+单发射与多发射
+
+https://mp.weixin.qq.com/s/FJX9eeRkxS5nJ4XIhRVwkg
+
+从ServerSwitch到SONiC Chassis：数据中心交换机技术的十年探索历程

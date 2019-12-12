@@ -411,11 +411,3 @@ https://mp.weixin.qq.com/s?__biz=MjM5MDI3MjA5MQ==&mid=2697267537&idx=1&sn=301130
 https://mp.weixin.qq.com/s/Og5pgNaGIz5gTL_58DvTDw
 
 抛开炒作看知识图谱，为什么现在才爆发？
-
-https://zhuanlan.zhihu.com/p/46235742
-
-基于强化学习的知识图谱问答
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750713&idx=3&sn=cb51e094fe07e9ac25273e99cd7b8de3
-
-ISWC 2018概览：知识图谱与机器学习

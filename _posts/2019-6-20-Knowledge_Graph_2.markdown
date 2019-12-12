@@ -1,10 +1,18 @@
 ---
 layout: post
-title:  知识图谱参考资源（二）, 数据结构 & 普通CS算法, 计算机体系结构
+title:  知识图谱参考资源（二）, 数据结构 & 普通CS算法
 category: resource 
 ---
 
 # 知识图谱参考资源
+
+https://zhuanlan.zhihu.com/p/46235742
+
+基于强化学习的知识图谱问答
+
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750713&idx=3&sn=cb51e094fe07e9ac25273e99cd7b8de3
+
+ISWC 2018概览：知识图谱与机器学习
 
 https://mp.weixin.qq.com/s/MZE_SXsNg6Yt4dz2fmB1sA
 
@@ -379,51 +387,3 @@ Skip List（跳跃表）原理详解与实现
 https://mp.weixin.qq.com/s/M5syxE9Ln4UDLThPh5iuJg
 
 各种字符串Hash函数比较
-
-# 计算机体系结构
-
-按照Michael J. Flynn的分类方法，计算机的体系结构可分为如下四类：
-
-**Single instruction stream single data stream (SISD)**
-
-**Single instruction stream, multiple data streams (SIMD)**
-
-**Multiple instruction streams, single data stream (MISD)**
-
-**Multiple instruction streams, multiple data streams (MIMD)**
-
-![](/images/article/simd_mimd.png)
-
-原图地址：
-
-https://en.wikipedia.org/wiki/Flynn%27s_taxonomy
-
-CPU通常是SISD和SIMD的，而GPU则是SIMD的，超级计算机则是MIMD的。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/31271788
-
-SIMD指令集
-
-## 术语
-
-Shared Virtual Memory，SVM
-
-Memory consistency model
-
-Multisample anti-aliasing，MSAA
-
-## 参考
-
-https://blog.csdn.net/do2jiang/article/details/4545889
-
-流水线、超流水线、超标量技术对比
-
-https://blog.csdn.net/edonlii/article/details/8755205
-
-单发射与多发射
-
-https://mp.weixin.qq.com/s/FJX9eeRkxS5nJ4XIhRVwkg
-
-从ServerSwitch到SONiC Chassis：数据中心交换机技术的十年探索历程

@@ -147,6 +147,21 @@ https://zhuanlan.zhihu.com/p/36375292
 
 最前沿：当我们以为Rainbow就是Atari游戏的巅峰时，Ape-X出来把Rainbow秒成了渣！
 
+## 参考
+
+https://mp.weixin.qq.com/s/o27U97Y7BmMUXe3zAToHSQ
+
+强化学习DQN初探之2048
+
+https://mp.weixin.qq.com/s/SJd-3qH4W4GMMLZSmvFk1w
+
+利用DQN玩吃豆人（Pacman）小游戏
+
+https://mp.weixin.qq.com/s/snNvN4FFP0VEZwDA0TAp1w
+
+强化学习训练Chrome小恐龙Dino Run：最高超过4000分
+
+
 # A2C & A3C
 
 Actor-Critic一般简称AC算法。针对它的一般用法参见《强化学习（八）》。

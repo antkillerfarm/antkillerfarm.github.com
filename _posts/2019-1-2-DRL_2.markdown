@@ -216,10 +216,6 @@ https://mp.weixin.qq.com/s/x-qCA0TzoVUtZ8VAf8ey0A
 
 深度Q学习介绍
 
-https://mp.weixin.qq.com/s/snNvN4FFP0VEZwDA0TAp1w
-
-强化学习训练Chrome小恐龙Dino Run：最高超过4000分
-
 https://mp.weixin.qq.com/s/SqU74jYBrjtp9L-bnBuboA
 
 教你完美实现深度强化学习算法DQN
@@ -243,10 +239,6 @@ https://mp.weixin.qq.com/s/9ZvaZQ1yumhr75okBxNyeA
 https://mp.weixin.qq.com/s/QkRdv0xMoqwaXsNAMAHR0A
 
 一图尽展视频游戏AI技术，DQN无愧众算法之鼻祖
-
-https://mp.weixin.qq.com/s/SJd-3qH4W4GMMLZSmvFk1w
-
-利用DQN玩吃豆人（Pacman）小游戏
 
 https://zhuanlan.zhihu.com/p/35882937
 

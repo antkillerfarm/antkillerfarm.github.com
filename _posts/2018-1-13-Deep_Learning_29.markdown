@@ -8,6 +8,64 @@ category: DL
 
 ![](/images/img3/GNN.jpg)
 
+## 教程
+
+http://web.stanford.edu/class/cs224w/
+
+CS224W: Machine Learning with Graphs
+
+https://mp.weixin.qq.com/s/xc_TnMLs3o2LQ8eM4naZDw
+
+AAAI2019 Tutorial《图表示学习》, 180页PPT带你从入门到精通
+
+https://mp.weixin.qq.com/s/rgcDlFA1_Qbu8xRH7WZrtA
+
+清华大学《图神经网络-算法、理论和应用》教程
+
+https://mp.weixin.qq.com/s/0l2uOhmoBJOZJe0VO3cuZw
+
+南洋理工大学：图神经网络，Graph Neural Networks，附121页ppt
+
+https://mp.weixin.qq.com/s/LrGWJIdPdUNZ3jyC8tdE6w
+
+Graph Neural Network（GNN）综述
+
+https://mp.weixin.qq.com/s/CCoP1taU07k6McJsEUh63g
+
+图神经网络（Graph Neural Networks，GNN）综述
+
+https://mp.weixin.qq.com/s/WW-URKk-fNct9sC4bJ22eg
+
+深度学习时代的图模型，清华发文综述图网络
+
+https://mp.weixin.qq.com/s/Rr6SC-se_0q8dfEz0oUwlA
+
+清华大学孙茂松课题组:《图神经网络: 方法与应用》综述论文
+
+https://mp.weixin.qq.com/s/b_QqUxFbQ70xmsxGMtoaDQ
+
+网络图模型知识点综述
+
+https://mp.weixin.qq.com/s/yGwKK_pl5p9mg_KKFiQkSA
+
+图神经网络GNN的自然语言处理，附315页PPT及作者博士论文下载
+
+https://mp.weixin.qq.com/s/IHXDqlU1dURrwAIwps50_g
+
+新加坡国立大学：基于图学习与推理的推荐系统，附133页ppt
+
+https://mp.weixin.qq.com/s/8jCX3Wi-w-b9AbEx9sa36A
+
+58页PPT揭示图神经网络研究最新进展
+
+https://mp.weixin.qq.com/s/lK5b3E84e2idh64v3SBfkg
+
+南洋理工Xavier：图深度学习最新进展，35页ppt，Deep Learning on Graphs
+
+https://mp.weixin.qq.com/s/eA9a3478oxHd3zsepNVTpQ
+
+图数据表示学习综述论文
+
 ## DGL
 
 https://mp.weixin.qq.com/s/I8pGqpKnRJp9HRglHfMZCw
@@ -108,10 +166,6 @@ https://mp.weixin.qq.com/s/SW6V-AxGq1z9Uq7qIJLj5A
 
 Github上热门图深度学习（GraphDL）源码与工业级框架
 
-https://mp.weixin.qq.com/s/xc_TnMLs3o2LQ8eM4naZDw
-
-AAAI2019 Tutorial《图表示学习》, 180页PPT带你从入门到精通
-
 http://www.p-chao.com/2019-01-20/%e5%9b%be%e7%a5%9e%e7%bb%8f%e7%bd%91%e7%bb%9cgnn/
 
 图神经网络GNN的简单理解
@@ -120,10 +174,6 @@ https://github.com/icoxfog417/graph-convolution-nlp
 
 图卷积神经网络自然语言处理应用代码和教程
 
-https://mp.weixin.qq.com/s/eA9a3478oxHd3zsepNVTpQ
-
-图数据表示学习综述论文
-
 https://mp.weixin.qq.com/s/VEAnkznZUyZ1RCJulSnwGg
 
 基于图结构网络的表征学习
@@ -131,14 +181,6 @@ https://mp.weixin.qq.com/s/VEAnkznZUyZ1RCJulSnwGg
 https://mp.weixin.qq.com/s/rxZQrhvRk6Dw3AWpGJS4dg
 
 《基于图的句子意思表征》教程, 300多页PPT带你进入这一新兴领域
-
-https://mp.weixin.qq.com/s/LrGWJIdPdUNZ3jyC8tdE6w
-
-Graph Neural Network（GNN）综述
-
-https://mp.weixin.qq.com/s/CCoP1taU07k6McJsEUh63g
-
-图神经网络（Graph Neural Networks，GNN）综述
 
 https://mp.weixin.qq.com/s/bMpugd2Lp35VPr8fQAPzsg
 
@@ -156,21 +198,9 @@ https://mp.weixin.qq.com/s/TGuEvNXw_9S5-9a3KyDvvw
 
 基于图卷积网络的图深度学习
 
-https://mp.weixin.qq.com/s/WW-URKk-fNct9sC4bJ22eg
-
-深度学习时代的图模型，清华发文综述图网络
-
-https://mp.weixin.qq.com/s/Rr6SC-se_0q8dfEz0oUwlA
-
-清华大学孙茂松课题组:《图神经网络: 方法与应用》综述论文
-
 https://mp.weixin.qq.com/s/kcXp-uWcmIsAVfa63mor4g
 
 图卷积网络介绍及进展
-
-https://mp.weixin.qq.com/s/rgcDlFA1_Qbu8xRH7WZrtA
-
-清华大学《图神经网络-算法、理论和应用》教程
 
 https://mp.weixin.qq.com/s/eelcT5x_kWC0dDt0_Ph4qg
 
@@ -199,10 +229,6 @@ https://mp.weixin.qq.com/s/5oOobY_3blbXYYxuuQmShQ
 https://mp.weixin.qq.com/s/U51C2t92nlE7Tv7oKXgx2A
 
 一份完全解读：是什么使神经网络变成图神经网络？
-
-https://mp.weixin.qq.com/s/0l2uOhmoBJOZJe0VO3cuZw
-
-南洋理工大学：图神经网络，Graph Neural Networks，附121页ppt
 
 https://mp.weixin.qq.com/s/vK0bzljCNdR1OumUmsi2sA
 
@@ -323,26 +349,6 @@ https://mp.weixin.qq.com/s/zQU47tjpTCPiLdEmUmZx3Q
 https://mp.weixin.qq.com/s/8Sz_jo7pokL_nzupEBGGdg
 
 当深度强化学习遇见图神经网络
-
-https://mp.weixin.qq.com/s/b_QqUxFbQ70xmsxGMtoaDQ
-
-网络图模型知识点综述
-
-https://mp.weixin.qq.com/s/yGwKK_pl5p9mg_KKFiQkSA
-
-图神经网络GNN的自然语言处理，附315页PPT及作者博士论文下载
-
-https://mp.weixin.qq.com/s/IHXDqlU1dURrwAIwps50_g
-
-新加坡国立大学：基于图学习与推理的推荐系统，附133页ppt
-
-https://mp.weixin.qq.com/s/8jCX3Wi-w-b9AbEx9sa36A
-
-58页PPT揭示图神经网络研究最新进展
-
-https://mp.weixin.qq.com/s/lK5b3E84e2idh64v3SBfkg
-
-南洋理工Xavier：图深度学习最新进展，35页ppt，Deep Learning on Graphs
 
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
 

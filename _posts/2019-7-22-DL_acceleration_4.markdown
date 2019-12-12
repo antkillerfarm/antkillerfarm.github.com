@@ -74,11 +74,27 @@ https://mp.weixin.qq.com/s/70GuFnJGhtIZEA-PECHjaA
 
 此外，对于一些较大的模型（如VGG），即使机器再给力，单位时间内能处理的图像数量，往往也无法达到实际应用的要求。这点在自动驾驶和视频处理领域显得尤为突出。
 
-课程：
+## 课程
 
 https://cs217.github.io/
 
 CS 217: Hardware Accelerators for Machine
+
+https://mp.weixin.qq.com/s/RcEPWRxQXv6B4wqLHGyQHg
+
+深度神经网络的高效处理:从算法到硬件架构，140页ppt
+
+https://mp.weixin.qq.com/s/yp5gExPzpDiXaGk9oXEMVA
+
+最新综述：模型压缩与加速
+
+https://mp.weixin.qq.com/s/PraNMo4skR-VjEYIIqt1Cw
+
+深度学习模型压缩与加速综述
+
+https://mp.weixin.qq.com/s/Xqc4UgcfCUWYOeGhjNpidA
+
+CNN模型压缩与加速算法综述
 
 ## 复杂度分析
 
@@ -164,21 +180,17 @@ https://www.zhihu.com/question/62068158
 
 ## 参考
 
-https://mp.weixin.qq.com/s/yp5gExPzpDiXaGk9oXEMVA
-
-最新综述：模型压缩与加速
-
 https://github.com/memoiry/Awesome-model-compression-and-acceleration
 
 模型压缩与加速相关资源汇总
 
-https://blog.csdn.net/hw5226349/article/details/84888416
-
-Deep Compression/Acceleration：模型压缩加速论文汇总
-
 https://mp.weixin.qq.com/s/bndECrtEcNCkCF5EG0wO-A
 
 移动端机器学习资源合集
+
+https://blog.csdn.net/hw5226349/article/details/84888416
+
+Deep Compression/Acceleration：模型压缩加速论文汇总
 
 https://zhuanlan.zhihu.com/p/58805980
 
@@ -187,10 +199,6 @@ https://zhuanlan.zhihu.com/p/58805980
 https://mp.weixin.qq.com/s/pAEoVs8xu0SY9tfBqOJHHA
 
 Google DeepMind最新报告—深度神经网络压缩进展
-
-https://mp.weixin.qq.com/s/PraNMo4skR-VjEYIIqt1Cw
-
-深度学习模型压缩与加速综述
 
 http://blog.csdn.net/shuzfan/article/details/51383809
 
@@ -219,10 +227,6 @@ https://mp.weixin.qq.com/s/cIGuJvYr4lZW01TdINBJnA
 https://mp.weixin.qq.com/s/1JwLP0FmV1AGJ65iDgLWQw
 
 神经网络模型压缩技术
-
-https://mp.weixin.qq.com/s/Xqc4UgcfCUWYOeGhjNpidA
-
-CNN模型压缩与加速算法综述
 
 https://mp.weixin.qq.com/s/rzv8VCAxBQi0HsUcnLqqUA
 
@@ -307,23 +311,3 @@ CVPR 2018 高效小网络探密（上）
 https://zhuanlan.zhihu.com/p/37919669
 
 CVPR 2018 高效小网络探密（下）
-
-https://zhuanlan.zhihu.com/p/38046989
-
-从ISCA论文看AI硬件加速的新技巧
-
-https://mp.weixin.qq.com/s/jqRBrs9Y_-3qvemL0RTflA
-
-支付宝如何优化移动端深度学习引擎？
-
-https://mp.weixin.qq.com/s/-V6hlZAKp1vuARSibZDBQQ
-
-深度学习高效计算与处理器设计
-
-https://mp.weixin.qq.com/s/NJzGR-tY_WWeccbdshHckA
-
-基于交错组卷积的高效深度神经网络
-
-https://mp.weixin.qq.com/s/ccFccLb2UTyFyMwFPjsDaA
-
-让CNN跑得更快，腾讯优图提出全局和动态过滤器剪枝

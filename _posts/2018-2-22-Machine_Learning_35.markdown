@@ -182,6 +182,10 @@ https://mp.weixin.qq.com/s/vAm0QDp_i2ec5pZbTmdHNA
 
 傻瓜也能懂的卡尔曼滤波器
 
+https://mp.weixin.qq.com/s/na0vVhECfBppTb7BmhRyzA
+
+从限价订单薄中推导预测因子：卡尔曼滤波来搞定！
+
 # 推荐算法中的常用排序算法
 
 ## Pointwise方法

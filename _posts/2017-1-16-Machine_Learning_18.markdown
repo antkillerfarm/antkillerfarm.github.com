@@ -6,6 +6,10 @@ category: ML
 
 # 独立成分分析（续）
 
+为了更为正式的描述这个问题，我们假设数据$$s\in R^n$$是由n个独立的源生成的。我们接收到的信号可写作：$$x=As$$。其中，A被称为混合矩阵（mixing matrix）。在这个问题中，$$s^{(i)}$$是一个n维向量，$$s_j^{(i)}$$表示第j个说话者在i时刻的声音。同理，$$x_j^{(i)}$$表示第j个麦克风在i时刻的记录下的数据。
+
+我们把$$W=A^{-1}$$称作unmixing matrix。我们的目标就是找到W，然后利用$$s=Wx$$，求得s。我们使用$$w_i^T$$表示W矩阵的第i行，因此：$$s_j^{(i)}=w_j^Tx^{(i)}$$。
+
 ## ICA的不确定性
 
 不幸的是，在没有源和混合矩阵的先验知识的情况下，仅凭$$x^{(i)}$$是没有办法求出W的。为了说明这一点，我们引入置换矩阵的概念。
@@ -268,37 +272,3 @@ Quadrature求积法
 https://zhuanlan.zhihu.com/p/91709767
 
 ODE's Initial value problem (IVP)
-
-## 参考
-
-https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average
-
-https://en.wikipedia.org/wiki/Autoregressive%E2%80%93moving-average_model
-
-https://zhuanlan.zhihu.com/p/23534595
-
-时间序列分析：结合ARMA的卡尔曼滤波算法（该文的参考文献中有不少好文）
-
-http://blog.csdn.net/aliceyangxi1987/article/details/71079522
-
-用ARIMA模型做需求预测
-
-http://blog.csdn.net/kicilove/article/details/78315335
-
-时间序列初级理论篇
-
-https://mp.weixin.qq.com/s/K-XGuaWTcF6BDPJagaJDPQ
-
-时序数据与事件的关联分析
-
-https://mp.weixin.qq.com/s/JR-GIXwHF45OysoE0qvwzw
-
-时间序列异常检测机制的研究
-
-https://mp.weixin.qq.com/s/2hpQ_7Ih58d1RKYb1oW_Sg
-
-时间序列简介（一）
-
-https://zhuanlan.zhihu.com/p/35093835
-
-时间序列的自回归模型—从线性代数的角度来看

@@ -4,9 +4,20 @@ title:  机器学习（十六）——协同过滤的ALS算法
 category: ML 
 ---
 
-# 协同过滤的ALS算法
+# 协同过滤的ALS算法（续）
 
-### 皮尔逊相关系数（续）
+### 皮尔逊相关系数（Pearson product-moment correlation coefficient，PPMCC or PCC）：
+
+$$\begin{align}
+p(x,y)&=\frac{cov(X,Y)}{\sigma_X\sigma_Y}=\frac{\operatorname{E}[XY]-\operatorname{E}[X]\operatorname{E}[Y]}{\sqrt{\operatorname{E}[X^2]-\operatorname{E}[X]^2}~\sqrt{\operatorname{E}[Y^2]- \operatorname{E}[Y]^2}}
+\\&=\frac{n\sum x_iy_i-\sum x_i\sum y_i}{\sqrt{n\sum x_i^2-(\sum x_i)^2}~\sqrt{n\sum y_i^2-(\sum y_i)^2}}
+\end{align}$$
+
+该系数由Karl Pearson发明。参见《机器学习（二）》中对Karl Pearson的简介。Fisher对该系数也有研究和贡献。
+
+![](/images/article/pearson.png)
+
+如上图所示，Cosine相似度计算的是两个样本点和坐标原点之间的直线的夹角，而PCC计算的是两个样本点和数学期望点之间的直线的夹角。
 
 PCC能够有效解决，在协同过滤数据集中，不同用户评分尺度不一的问题。
 
@@ -230,25 +241,3 @@ $$p_{ui}=\begin{cases}
 1, & \text{preference} \\
 0, & \text{no preference} \\
 \end{cases}$$
-
-但是喜好是有程度差异的，因此需要定义程度系数：
-
-$$c_{ui}=1+\alpha r_{ui}$$
-
-这里的$$r_{ui}$$表示原始量化值，比如观看电影的时间；
-
-这个公式里的1表示最低信任度，$$\alpha$$表示根据用户行为所增加的信任度。
-
-最终，损失函数变为：
-
-$$\min_{x_*,y_*}L(X,Y)=\min_{x_*,y_*}\sum_{u,i}c_{ui}(p_{ui}-x_u^Ty_i)^2+\lambda(\sum_u\mid x_u\mid ^2+\sum_i\mid y_i\mid ^2)$$
-
-除此之外，我们还可以使用指数函数来定义$$c_{ui}$$：
-
-$$c_{ui}=1+\alpha \log(1+r_{ui}/\epsilon)$$
-
-ALS-WR没有考虑到时序行为的影响，时序行为相关的内容，可参见：
-
-http://www.jos.org.cn/1000-9825/4478.htm
-
-基于时序行为的协同过滤推荐算法

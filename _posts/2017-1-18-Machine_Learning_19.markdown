@@ -1,10 +1,44 @@
 ---
 layout: post
-title:  机器学习（十九）——压缩感知, 决策树
+title:  机器学习（十九）——决策树
 category: ML 
 ---
 
 # 时间序列分析（续）
+
+## 参考
+
+https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average
+
+https://en.wikipedia.org/wiki/Autoregressive%E2%80%93moving-average_model
+
+https://zhuanlan.zhihu.com/p/23534595
+
+时间序列分析：结合ARMA的卡尔曼滤波算法（该文的参考文献中有不少好文）
+
+http://blog.csdn.net/aliceyangxi1987/article/details/71079522
+
+用ARIMA模型做需求预测
+
+http://blog.csdn.net/kicilove/article/details/78315335
+
+时间序列初级理论篇
+
+https://mp.weixin.qq.com/s/K-XGuaWTcF6BDPJagaJDPQ
+
+时序数据与事件的关联分析
+
+https://mp.weixin.qq.com/s/JR-GIXwHF45OysoE0qvwzw
+
+时间序列异常检测机制的研究
+
+https://mp.weixin.qq.com/s/2hpQ_7Ih58d1RKYb1oW_Sg
+
+时间序列简介（一）
+
+https://zhuanlan.zhihu.com/p/35093835
+
+时间序列的自回归模型—从线性代数的角度来看
 
 https://zhuanlan.zhihu.com/p/39105270
 
@@ -37,40 +71,6 @@ https://zhuanlan.zhihu.com/p/55903495
 https://mp.weixin.qq.com/s/2teyejpbpM6x5UCiYL8s-Q
 
 关于时间序列你需要了解的一切
-
-https://mp.weixin.qq.com/s/FRSe1mJTvk9U66ta-r9iCQ
-
-手把手教你用Python玩转时序数据，从采样、预测到聚类
-
-https://mp.weixin.qq.com/s/Q82YzANWDMkKWm5k2XmPkA
-
-严谨解决5种机器学习算法在预测股价的应用
-
-# 压缩感知
-
-https://blog.csdn.net/jbb0523
-
-一个压缩感知+贝叶斯网络方面的blog
-
-http://blog.csdn.net/abcjennifer/article/details/7721834
-
-初识压缩感知Compressive Sensing
-
-http://blog.csdn.net/abcjennifer/article/details/7724360
-
-中国压缩传感资源（China Compressive Sensing Resources）
-
-http://blog.csdn.net/xiahouzuoxin/article/details/38820925
-
-白话压缩感知（含Matlab代码）
-
-http://blog.csdn.net/abcjennifer/article/details/7748833
-
-压缩感知进阶——有关稀疏矩阵
-
-https://zhuanlan.zhihu.com/p/85558304
-
-深度学习压缩感知（DCS）历史最全资源汇总分享
 
 # 决策树
 

@@ -250,6 +250,10 @@ https://mp.weixin.qq.com/s/0B1ROCg7SMn0I7-5HVeMIg
 
 用图神经网络改善视频的多标签分类
 
+https://mp.weixin.qq.com/s/M7nzr6n4tZAMR1CXo3Q0OQ
+
+基于图神经网络的CTR预测中的特征交互建模
+
 # 自动求导
 
 DL发展到现在，其基本运算单元早就不止CNN、RNN之类的简单模块了。针对新运算层出不穷的现状，各大DL框架基本都实现了自动求导的功能。

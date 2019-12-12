@@ -222,17 +222,21 @@ https://zhuanlan.zhihu.com/p/37684922
 
 ELMo
 
-## GPT 2.0
+## GPT-2
 
-GPT 1.0论文：
+GPT-1论文：
 
 《Improving Language Understandingby Generative Pre-Training》
 
-GPT 2.0论文：
+GPT-2论文：
 
 《Language Models are Unsupervised Multitask Learners》
 
 ![](/images/img3/GPT.png)
+
+Jay Alammar的教程：
+
+https://jalammar.github.io/illustrated-gpt2/
 
 参考：
 

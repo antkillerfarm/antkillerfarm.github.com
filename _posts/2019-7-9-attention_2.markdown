@@ -14,6 +14,14 @@ category: Attention
 
 所谓的restricted self-attention是指：假设当前词只与前后r个词发生联系，因此注意力也只发生在这2r+1个词之间。
 
+可以看到self-attention和convolution有点儿神似：
+
+- 它摒弃了CNN的局部假设，改为寻找长距离的关联依赖。
+
+- 它没有了递归的限制，就像CNN一样可以在每一层内实现并行。
+
+- self-attention借鉴CNN中multi-kernel的思想，进一步进化成为Multi-Head attention。每一个不同的head使用不同的线性变换，学习不同的relationship。
+
 ## Position Embedding
 
 然而，只要稍微思考一下就会发现，这样的模型并不能捕捉序列的顺序！换句话说，如果将K,V按行打乱顺序（相当于句子中的词序打乱），那么Attention的结果还是一样的。这就表明了，到目前为止，Attention模型顶多是一个非常精妙的“词袋模型”而已。

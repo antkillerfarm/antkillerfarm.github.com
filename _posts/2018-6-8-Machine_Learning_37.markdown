@@ -122,6 +122,10 @@ https://mp.weixin.qq.com/s/82REVmDV5cfeQP766qOZmw
 
 ## 参考
 
+https://zhuanlan.zhihu.com/p/95350982
+
+推荐算法三视角:矩阵，图，时间线
+
 https://mp.weixin.qq.com/s/q9FU19Hpw2eWLLhsY5lYJQ
 
 parameter-free contextual bandits

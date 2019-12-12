@@ -43,7 +43,7 @@ M：按%MEM排序
 
 注：运行top命令之后，输入相应字符即可切换排序。
 
-除此之外，还有个升级版本的命令htop。
+除此之外，还有个升级版本的命令htop，以及htop的升级版——glances。
 
 参考：
 
@@ -424,3 +424,7 @@ https://mp.weixin.qq.com/s/snQ3T86usv4rXz0MMQvFfQ
 https://www.cnblogs.com/zhouyu629/p/3734494.html
 
 一次心惊肉跳的服务器误删文件的恢复过程
+
+https://mp.weixin.qq.com/s/A8TnhOFLQOhEqphE760yvw
+
+15个相见恨晚的Linux神器，你可能一个都没见过

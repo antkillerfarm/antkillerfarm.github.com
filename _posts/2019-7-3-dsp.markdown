@@ -397,3 +397,7 @@ CV领域的注意力机制
 https://mp.weixin.qq.com/s/GGRORF5EfJ5xzMLwAsJt5w
 
 从词袋到Transfomer，NLP十年突破史
+
+https://mp.weixin.qq.com/s/fxEg8UOa3MeJ6qx5SjEHog
+
+NLP领域中各式各样 Attention 知识系统性的梳理和总结

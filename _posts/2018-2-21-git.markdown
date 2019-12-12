@@ -40,6 +40,8 @@ https://learngitbranching.js.org
 
 以上两个工具用tk/tcl编写，都是全平台支持的。
 
+- tig：一个字符式的图形界面工具。
+
 1.创建版本库
 
 `git init`

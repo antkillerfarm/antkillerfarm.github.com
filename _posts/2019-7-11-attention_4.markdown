@@ -98,6 +98,10 @@ http://mitchgordon.me/machine/learning/2019/11/18/all-the-ways-to-compress-BERT.
 
 15篇论文全面概览BERT压缩方法
 
+https://mp.weixin.qq.com/s/5tYuP09dtkmYYGX2R-mCPQ
+
+从transformer到albert
+
 ## 参考
 
 https://www.zhihu.com/question/298203515

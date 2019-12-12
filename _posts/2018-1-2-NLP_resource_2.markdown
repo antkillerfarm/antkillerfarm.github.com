@@ -260,6 +260,10 @@ https://blog.csdn.net/zhangxb35/article/details/78626799
 
 Text Summarization综述
 
+https://zhuanlan.zhihu.com/p/84730122
+
+BottleSum——文本摘要论文系列解读
+
 ## 句法分析
 
 传统方法主要是PCFG （Probabilistic Context-Free Grammar）。

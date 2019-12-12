@@ -8,6 +8,14 @@ category: AI
 
 ## Pandas（续）
 
+https://mp.weixin.qq.com/s/1xHeXs9gM3LzEzCUz0jhXA
+
+简单实用的pandas技巧：如何将内存占用降低90%
+
+http://wiki.jikexueyuan.com/project/start-learning-python/311.html
+
+python科学计算之Pandas使用
+
 https://mp.weixin.qq.com/s/L95slIQ8so5IWpIpy7ZHEQ
 
 23种Pandas核心操作，你需要过一遍吗？
@@ -135,6 +143,20 @@ http://numba.pydata.org/
 https://mp.weixin.qq.com/s/5peMiGXNnviAjMP76tV3pw
 
 Python高性能计算库——Numba
+
+## SymPy
+
+SymPy是一个符号计算的Python库。
+
+官网：
+
+https://www.sympy.org/en/index.html
+
+参考：
+
+https://zhuanlan.zhihu.com/p/96738286
+
+用Python来研究数学---SymPy符号工具包介绍
 
 ## iPython
 
@@ -477,35 +499,3 @@ GitHub最著名的20个Python机器学习项目，值得收藏！
 http://old.sebug.net/paper/books/scipydoc/index.html
 
 用Python做科学计算
-
-https://pan.baidu.com/s/1qYPUHNQ
-
-小抄合集
-
-https://github.com/FavioVazquez/ds-cheatsheets
-
-更大的小抄合集
-
-https://mp.weixin.qq.com/s/1--i1OhxRNPvNnmP9bFo3g
-
-全机器学习和Python的27个速查表
-
-https://mp.weixin.qq.com/s/8wI49YBAs7ckkYdc4B_WNQ
-
-14张思维导图读懂Python编程核心知识体系
-
-https://mp.weixin.qq.com/s/HKHLiCqEAtoCAqf4CHv86w
-
-python机器学习算法代码实现
-
-https://github.com/TheAlgorithms/Python
-
-各种Python算法的新手入门大全
-
-https://mp.weixin.qq.com/s/PtZ3YvFrUgbK5y3pcAeW9A
-
-使用OpenCV和Python实现的机器学习
-
-https://mp.weixin.qq.com/s/wbcAIrI0eNALfKhgkZQYTQ
-
-用Python也能进军金融领域？这有一份股票交易策略开发指南

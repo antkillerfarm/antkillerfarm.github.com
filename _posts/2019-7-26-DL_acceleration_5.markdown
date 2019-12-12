@@ -6,6 +6,26 @@ category: DL acceleration
 
 # 模型压缩与加速
 
+https://zhuanlan.zhihu.com/p/38046989
+
+从ISCA论文看AI硬件加速的新技巧
+
+https://mp.weixin.qq.com/s/jqRBrs9Y_-3qvemL0RTflA
+
+支付宝如何优化移动端深度学习引擎？
+
+https://mp.weixin.qq.com/s/-V6hlZAKp1vuARSibZDBQQ
+
+深度学习高效计算与处理器设计
+
+https://mp.weixin.qq.com/s/NJzGR-tY_WWeccbdshHckA
+
+基于交错组卷积的高效深度神经网络
+
+https://mp.weixin.qq.com/s/ccFccLb2UTyFyMwFPjsDaA
+
+让CNN跑得更快，腾讯优图提出全局和动态过滤器剪枝
+
 https://mp.weixin.qq.com/s/vswtn3D1-VZZlyKLJmHc7A
 
 纪荣嵘：深度神经网络压缩及应用
@@ -317,3 +337,7 @@ https://mp.weixin.qq.com/s/cYimAphdyFO_XqKfT2Hbeg
 https://mp.weixin.qq.com/s/SgELZgoHzIvbg2-jzJw6Tw
 
 港科大、清华与旷视提出基于元学习的自动化神经网络通道剪枝网络
+
+https://mp.weixin.qq.com/s/q5-91AAKwBiYzTMmqadEcg
+
+RefineDetLite：腾讯提出轻量级高精度目标检测网络

@@ -292,7 +292,7 @@ f_t=\delta(W_{fx}x_t+W_{fm}m_{t-1}+W_{fc}c_{t-1}+b_i)\\
 c_t=f_t\odot c_{t-1}+i_t\odot g(W_{cx}x_t+W_{cm}m_{t-1}+b_c)\\
 o_t=\delta(W_{ox}x_t+W_{om}m_{t-1}+W_{oc}c_{t}+b_o)\\
 m_t=o_t\odot h(c_t)\\
-y_t=W_{ym}m_t+b_y
+\color{blue}{y_t=W_{ym}m_t+b_y}
 $$
 
 上式是LSTM的公式（其中的最后一步在多数模型中，往往直接用$$y_t=m_t$$代替。），从中可以看出类似$$W_{ix}x_t+W_{im}m_{t-1}+W_{ic}c_{t-1}+b_i$$的FC运算占据了LSTM的绝大部分运算量。其中W的参数量为：
@@ -315,9 +315,9 @@ f_t=\delta(W_{fx}x_t+W_{fm}r_{t-1}+W_{fc}c_{t-1}+b_i)\\
 c_t=f_t\odot c_{t-1}+i_t\odot g(W_{cx}x_t+W_{cm}r_{t-1}+b_c)\\
 o_t=\delta(W_{ox}x_t+W_{om}r_{t-1}+W_{oc}c_{t}+b_o)\\
 m_t=o_t\odot h(c_t)\\
-r_t = W_{rm}m_t\\
+\color{blue}{r_t = W_{rm}m_t\\
 p_t = W_{pm}m_t\\
-y_t = W_{yr}r_t + W_{yp}p_t + b_y
+y_t = W_{yr}r_t + W_{yp}p_t + b_y}
 $$
 
 LSTMP的主要思想是对$$m_t$$做一个映射，只有部分数据$$r_t$$参与recurrent运算，其余部分$$p_t$$直接输出即可（这一步是可选项，所以用虚框表示）。

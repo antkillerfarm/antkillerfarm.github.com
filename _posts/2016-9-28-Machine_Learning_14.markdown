@@ -67,7 +67,13 @@ QR算法于1961年，由John G.F. Francis和Vera Nikolaevna Kublanovskaya发现�
 >相关内容参见：   
 >http://www.netlib.org/na-digest-html/07/v07n34.html
 
->Vera Nikolaevna Kublanovskaya，1920~2012，苏联数学家，女。终身供职于苏联科学院列宁格勒斯塔克罗夫数学研究所。52岁才拿到博士学位。
+>Vera Nikolaevna Kublanovskaya，1920~2012，苏联数学家，女。终身供职于苏联科学院列宁格勒斯塔克罗夫数学研究所。52岁获得博士学位。
+
+>Steklov的故事，参见《数学狂想曲（六）》。这里顺便说一下，苏联的博士学位问题。苏联有个“副博士”的学位，这是一名学生通过学历教育所能获得的最高学位。苏联的博士学位无法通过教育获得，而只能根据成果评定，因此难度大大超过欧美的博士，一般只有教授级人物才能获得。   
+>简单来说就是：   
+>苏联副博士=欧美博士   
+>苏联博士=欧美教授   
+>所以，Kublanovskaya实际上还是很牛的人物。
 
 需要指出的是，QR算法可求出矩阵的所有特征值，如果只求某一个特征值的话，还有其他一些更快的算法。详见：
 
@@ -249,25 +255,3 @@ $$d(x,y)=\sqrt[\lambda]{\sum_{i=1}^{n}\mid x_i-y_i\mid^{\lambda}}$$
 >Hermann Minkowski（1864-1909），德国数学家，哥廷根大学数学教授，爱因斯坦的老师。
 
 这里的$$\lambda$$就是范数。
-
-范数可用符号$$\|x\|_\lambda$$表示。常用的有：
-
-$$\|x\|_1=\mid x_1\mid +\dots+\mid x_n\mid $$
-
-$$\|x\|_2=\sqrt{x_1^2+\dots+x_n^2}$$
-
-$$\|x\|_\infty=max(\mid x_1\mid ,\dots,\mid x_n\mid )$$
-
-显然，当$$\lambda=2$$时，该距离为Euclid Distance。
-
-![](/images/img2/Euclid.png)
-
-当$$\lambda=1$$时，也被称为CityBlock Distance或Manhattan Distance（曼哈顿距离，以纽约曼哈顿地区的街道形状得名）。
-
-![](/images/img2/Manhattan.png)
-
-当$$\lambda=\infty$$时，叫做Chebyshev distance。
-
-![](/images/img2/Chebyshev.png)
-
->Pafnuty Lvovich Chebyshev，1821～1894，俄罗斯数学家，莫斯科大学博士，圣彼得堡大学教授。俄罗斯数学的奠基人，他创建的圣彼得堡学派，是20世纪俄罗斯最主要的数学流派。

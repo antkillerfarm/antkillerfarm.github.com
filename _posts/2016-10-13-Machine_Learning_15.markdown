@@ -6,6 +6,28 @@ category: ML
 
 ## 向量的范数（续）
 
+范数可用符号$$\|x\|_\lambda$$表示。常用的有：
+
+$$\|x\|_1=\mid x_1\mid +\dots+\mid x_n\mid $$
+
+$$\|x\|_2=\sqrt{x_1^2+\dots+x_n^2}$$
+
+$$\|x\|_\infty=max(\mid x_1\mid ,\dots,\mid x_n\mid )$$
+
+显然，当$$\lambda=2$$时，该距离为Euclid Distance。
+
+![](/images/img2/Euclid.png)
+
+当$$\lambda=1$$时，也被称为CityBlock Distance或Manhattan Distance（曼哈顿距离，以纽约曼哈顿地区的街道形状得名）。
+
+![](/images/img2/Manhattan.png)
+
+当$$\lambda=\infty$$时，叫做Chebyshev distance。
+
+![](/images/img2/Chebyshev.png)
+
+>Pafnuty Lvovich Chebyshev，1821～1894，俄罗斯数学家，莫斯科大学博士，圣彼得堡大学教授。俄罗斯数学的奠基人，他创建的圣彼得堡学派，是20世纪俄罗斯最主要的数学流派。
+
 这里不做解释的给出如下示意图：
 
 ![](/images/article/lp_ball.png)
@@ -229,16 +251,3 @@ $$d(x,y)=\sqrt{\sum(x_i-y_i)^2},sim(x,y)=\frac{1}{1+d(x,y)}$$
 ### Cosine相似度
 
 $$\cos(x,y)=\frac{\langle x,y\rangle}{\mid x\mid \mid y\mid }=\frac{\sum x_iy_i}{\sqrt{\sum x_i^2}~\sqrt{\sum y_i^2}}$$
-
-### 皮尔逊相关系数（Pearson product-moment correlation coefficient，PPMCC or PCC）：
-
-$$\begin{align}
-p(x,y)&=\frac{cov(X,Y)}{\sigma_X\sigma_Y}=\frac{\operatorname{E}[XY]-\operatorname{E}[X]\operatorname{E}[Y]}{\sqrt{\operatorname{E}[X^2]-\operatorname{E}[X]^2}~\sqrt{\operatorname{E}[Y^2]- \operatorname{E}[Y]^2}}
-\\&=\frac{n\sum x_iy_i-\sum x_i\sum y_i}{\sqrt{n\sum x_i^2-(\sum x_i)^2}~\sqrt{n\sum y_i^2-(\sum y_i)^2}}
-\end{align}$$
-
-该系数由Karl Pearson发明。参见《机器学习（二）》中对Karl Pearson的简介。Fisher对该系数也有研究和贡献。
-
-![](/images/article/pearson.png)
-
-如上图所示，Cosine相似度计算的是两个样本点和坐标原点之间的直线的夹角，而PCC计算的是两个样本点和数学期望点之间的直线的夹角。

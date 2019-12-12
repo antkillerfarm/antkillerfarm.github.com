@@ -1,10 +1,18 @@
 ---
 layout: post
-title:  机器学习（二十三）——Optimizer
+title:  机器学习（二十三）——压缩感知, Optimizer
 category: ML 
 ---
 
 # 时间序列分析+
+
+https://mp.weixin.qq.com/s/FRSe1mJTvk9U66ta-r9iCQ
+
+手把手教你用Python玩转时序数据，从采样、预测到聚类
+
+https://mp.weixin.qq.com/s/Q82YzANWDMkKWm5k2XmPkA
+
+严谨解决5种机器学习算法在预测股价的应用
 
 https://mp.weixin.qq.com/s/iKM6zMSm1F2icjy79F9Hcg
 
@@ -29,6 +37,32 @@ https://mp.weixin.qq.com/s/05WAZcklXnL_hFPLZW9t7Q
 https://mp.weixin.qq.com/s/rIgjtILF7EtuBS5UWCEFcQ
 
 重大事件后，股价将何去何从？
+
+# 压缩感知
+
+https://blog.csdn.net/jbb0523
+
+一个压缩感知+贝叶斯网络方面的blog
+
+http://blog.csdn.net/abcjennifer/article/details/7721834
+
+初识压缩感知Compressive Sensing
+
+http://blog.csdn.net/abcjennifer/article/details/7724360
+
+中国压缩传感资源（China Compressive Sensing Resources）
+
+http://blog.csdn.net/xiahouzuoxin/article/details/38820925
+
+白话压缩感知（含Matlab代码）
+
+http://blog.csdn.net/abcjennifer/article/details/7748833
+
+压缩感知进阶——有关稀疏矩阵
+
+https://zhuanlan.zhihu.com/p/85558304
+
+深度学习压缩感知（DCS）历史最全资源汇总分享
 
 # 金融模型
 

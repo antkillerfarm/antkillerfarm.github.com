@@ -355,3 +355,7 @@ https://mp.weixin.qq.com/s/KqLCTSYk1C0wYpJw-hpc1g
 https://mp.weixin.qq.com/s/AI3i3ZLZ-fynavbeNAMKgA
 
 强化学习应用介绍，41页报告带你快速了解RL的最新应用价值
+
+https://mp.weixin.qq.com/s/JtUuFdTK4Q5YwnVj3BFU2w
+
+全参数化分布，提升强化学习中的收益分布拟合能力

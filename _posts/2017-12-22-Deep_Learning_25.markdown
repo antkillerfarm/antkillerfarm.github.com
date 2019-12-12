@@ -368,6 +368,10 @@ https://mp.weixin.qq.com/s/FqH_5ztUWRDqb6X9_QggJw
 
 深度学习在人脸检测中的应用
 
+https://github.com/jiankangdeng/handbook
+
+人脸识别手册 (分类论文集)
+
 https://github.com/ShownX/FacePaperCollection
 
 人脸相关文献代码集锦：人脸检测、人脸识别、人脸生成等

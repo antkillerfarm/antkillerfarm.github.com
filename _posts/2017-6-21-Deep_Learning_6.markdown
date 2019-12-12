@@ -262,11 +262,11 @@ forget bias的初始值可以设为以1为均值，这对于训练很有好处�
 
 ![](/images/article/LSTM_6.png)
 
-上图中的LSTM变体被称为**coupled** 忘记和输入门。它将忘记和输入门连在了一起。
+上图中的LSTM变体被称为**Coupled Input and Forget Gate（CIFG）**。它将忘记和输入门连在了一起。
 
 ![](/images/article/LSTM_7.png)
 
-上图是一个改动较大的变体**Gated Recurrent Unit（GRU）**。它将忘记门和输入门合成了一个单一的 更新门。同样还混合了细胞状态和隐藏状态，和其他一些改动。最终的模型比标准的 LSTM 模型要简单，也是非常流行的变体。
+上图是一个改动较大的变体**Gated Recurrent Unit（GRU）**。它将忘记门和输入门合成了一个单一的更新门。同样还混合了细胞状态和隐藏状态，和其他一些改动。最终的模型比标准的 LSTM 模型要简单，也是非常流行的变体。
 
 ## 参考
 

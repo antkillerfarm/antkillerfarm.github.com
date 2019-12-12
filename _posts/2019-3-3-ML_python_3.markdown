@@ -6,6 +6,38 @@ category: AI
 
 # Machine Learning之Python篇
 
+https://pan.baidu.com/s/1qYPUHNQ
+
+小抄合集
+
+https://github.com/FavioVazquez/ds-cheatsheets
+
+更大的小抄合集
+
+https://mp.weixin.qq.com/s/1--i1OhxRNPvNnmP9bFo3g
+
+全机器学习和Python的27个速查表
+
+https://mp.weixin.qq.com/s/8wI49YBAs7ckkYdc4B_WNQ
+
+14张思维导图读懂Python编程核心知识体系
+
+https://mp.weixin.qq.com/s/HKHLiCqEAtoCAqf4CHv86w
+
+python机器学习算法代码实现
+
+https://github.com/TheAlgorithms/Python
+
+各种Python算法的新手入门大全
+
+https://mp.weixin.qq.com/s/PtZ3YvFrUgbK5y3pcAeW9A
+
+使用OpenCV和Python实现的机器学习
+
+https://mp.weixin.qq.com/s/wbcAIrI0eNALfKhgkZQYTQ
+
+用Python也能进军金融领域？这有一份股票交易策略开发指南
+
 https://mp.weixin.qq.com/s/e--IeRTRZMqhs_DSJKpgyQ
 
 特征工程之Scikit-learn
@@ -381,35 +413,3 @@ https://mp.weixin.qq.com/s/WdYa7Q-yA-s_EO59YkYbqw
 https://mp.weixin.qq.com/s/EqLzNzzMcwq5SEyBoTsuug
 
 11种NLP文本预处理Python代码，简洁实用
-
-https://mp.weixin.qq.com/s/Ljo36772QTUDKuRrxIRmmw
-
-100多个Jupyter精选资源，有人整理在一个GitHub项目里！
-
-https://mp.weixin.qq.com/s/8XDXgIm-Zcb3dL-2h9eSjA
-
-用Python构建NLP Pipeline，从思路到具体代码，这篇文章一次性都讲到了
-
-https://mp.weixin.qq.com/s/8H8GrAe7wMaLGWKjKUVp2Q
-
-用文本分类模型轻松搞定复杂语义分析
-
-https://mp.weixin.qq.com/s/ss9UlDU9lYokS-EDrPnOxQ
-
-如何在Python中使用LightFM构建可扩展的电子商务推荐系统？
-
-https://mp.weixin.qq.com/s/tzyj0LaJ2Ccv730UhJBdig
-
-拿起Python，防御特朗普的Twitter！
-
-https://mp.weixin.qq.com/s/tARJdv_ybTmVigTXPoeuYw
-
-还在用Matplotlib? 又一可视化神器Altair登场
-
-https://mp.weixin.qq.com/s/wwhjwQyM2r0F-hOIWV35pg
-
-Python数据科学手册专题：线性回归
-
-https://mp.weixin.qq.com/s/VZlrWwbU0nJIlSVa9PgMBQ
-
-在Python中简洁使用CSV、JSON、XML

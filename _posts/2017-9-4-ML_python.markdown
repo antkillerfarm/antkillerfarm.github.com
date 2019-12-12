@@ -439,11 +439,3 @@ Pandas和SQL的比较
 https://mp.weixin.qq.com/s/fXI5suCVna6fBxPnVyKevw
 
 浅谈NumPy和Pandas库
-
-https://mp.weixin.qq.com/s/1xHeXs9gM3LzEzCUz0jhXA
-
-简单实用的pandas技巧：如何将内存占用降低90%
-
-http://wiki.jikexueyuan.com/project/start-learning-python/311.html
-
-python科学计算之Pandas使用
