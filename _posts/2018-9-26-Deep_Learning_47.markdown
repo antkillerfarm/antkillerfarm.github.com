@@ -26,6 +26,10 @@ https://mp.weixin.qq.com/s/CcPhmxCFWYddaQgfJmO9UQ
 
 最新图文识别技术综述
 
+https://mp.weixin.qq.com/s/-XPlEnszjBc_NCCIvD9zHg
+
+手写签名认证的逆鉴别网络
+
 # 三维处理
 
 https://github.com/timzhang642/3D-Machine-Learning

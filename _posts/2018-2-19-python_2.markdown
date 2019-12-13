@@ -8,6 +8,28 @@ category: language
 
 ## with（续）
 
+实现上下文管理是通过__enter__和__exit__这两个方法实现的：
+
+{% highlight python %}
+class Query(object):
+
+    def __init__(self, name):
+        self.name = name
+
+    def __enter__(self):
+        print('Begin')
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        if exc_type:
+            print('Error')
+        else:
+            print('End')
+
+    def query(self):
+        print('Query info about %s...' % self.name)
+{% endhighlight %}
+
 编写__enter__和__exit__仍然很繁琐，因此Python的标准库contextlib提供了更简单的写法：
 
 {% highlight python %}
@@ -366,31 +388,3 @@ self._layers = self._layers[1:]
 Python2: isinstance(anobj, basestring)
 Python3: isinstance(anobj, str)
 {% endhighlight %}
-
-## six
-
-six是一个专门用来兼容Python 2和Python 3的库。它解决了诸如urllib的部分方法不兼容，str和bytes类型不兼容等“知名”问题。2x3=6？这难道就是得名的原因？
-
-代码：
-
-https://bitbucket.org/gutworth/six
-
-文档：
-
-https://bitbucket.org/gutworth/six
-
-## range & xrange
-
-1.range会直接生成一个list对象。
-
-2.xrange则不会直接生成一个list，而是每次调用返回其中的一个值。
-
-所以xrange做循环的性能比range好，尤其是返回很大的时候，尽量用xrange吧，除非你是要返回一个列表。
-
->Python 3只有range，效果和Python 2的xrange相仿，且支持slicing。
-
-参考：
-
-http://www.cnblogs.com/zhangjing0502/archive/2012/05/16/2503880.html
-
-Python的range和xrange

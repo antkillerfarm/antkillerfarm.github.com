@@ -6,6 +6,18 @@ category: GAN & VAE
 
 # GAN参考资源
 
+https://mp.weixin.qq.com/s/bPieF6CNvM4N1Njx6OHNwg
+
+谷歌大脑：像BigGAN那样生成高清大图不一定需要大量图像标签
+
+https://mp.weixin.qq.com/s/wFW7rmAM5HL8NEa6w-VCxQ
+
+LADN：局部对抗解缠网络-人脸妆容迁移与反迁移的深度学习模型
+
+https://mp.weixin.qq.com/s/r1LFbnTo48Gs6-gKmuBMIg
+
+GAN毕业手册：从零到一构建自己的GAN模型
+
 https://mp.weixin.qq.com/s/QqQ0SoF-kFTQRLxo4Tzm2g
 
 反思基于能量的生成式模型：中山大学研究者从粒子演化角度改进经典的FRAME

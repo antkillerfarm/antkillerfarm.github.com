@@ -68,7 +68,19 @@ StyleGAN是Nvidia Lab的Tero Karras的作品。（2018.12）
 
 《A Style-Based Generator Architecture for Generative Adversarial Networks》
 
+参考：
 
+https://mp.weixin.qq.com/s/Pmr2yPZ3Mi32W5JuJCco_A
+
+用英伟达StyleGAN生成老婆吧，他生成了一百多只明日香
+
+https://mp.weixin.qq.com/s/i3lNcbOblgVKUTBtwKIFwg
+
+AI秒造全球房源：StyleGAN快速生成假房子，连图说都配好了！
+
+https://mp.weixin.qq.com/s/e1g1B-6bLe0IjNAHMJtGOw
+
+英伟达发布最强图像生成器StyleGAN2，生成图像逼真到吓人
 
 # BigGAN
 
@@ -339,15 +351,3 @@ https://mp.weixin.qq.com/s/tWaKMFZ4dQX7kZlT3tiDAQ
 https://mp.weixin.qq.com/s/I7mpy5P7LFFkop618ANLtA
 
 这份攻略帮你“稳住”反复无常的GAN
-
-https://mp.weixin.qq.com/s/bPieF6CNvM4N1Njx6OHNwg
-
-谷歌大脑：像BigGAN那样生成高清大图不一定需要大量图像标签
-
-https://mp.weixin.qq.com/s/wFW7rmAM5HL8NEa6w-VCxQ
-
-LADN：局部对抗解缠网络-人脸妆容迁移与反迁移的深度学习模型
-
-https://mp.weixin.qq.com/s/r1LFbnTo48Gs6-gKmuBMIg
-
-GAN毕业手册：从零到一构建自己的GAN模型

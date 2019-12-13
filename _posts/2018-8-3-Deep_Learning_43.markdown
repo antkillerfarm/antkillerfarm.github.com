@@ -346,10 +346,6 @@ https://mp.weixin.qq.com/s/MePEEuwH-e5c2hwiEXo2wg
 
 去噪、去水印、超分辨率，这款不用学习的神经网络无所不能
 
-https://mp.weixin.qq.com/s/Pmr2yPZ3Mi32W5JuJCco_A
-
-用英伟达StyleGAN生成老婆吧，他生成了一百多只明日香
-
 https://mp.weixin.qq.com/s/4hKIh77UfsuJCSKwtvpq3Q
 
 最强GAN修图魔术师：美颜生发摘眼镜、草绘秒变真人脸

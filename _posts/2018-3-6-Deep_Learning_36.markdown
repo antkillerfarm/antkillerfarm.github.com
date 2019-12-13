@@ -305,3 +305,7 @@ https://zhuanlan.zhihu.com/p/93467919
 https://mp.weixin.qq.com/s/HEMtps82qKKtq0mV0d4vdw
 
 微信算法工程师带你一文了解推荐系统领域的最新进展
+
+https://mp.weixin.qq.com/s/rM9jhcj1JlZSbXOP4m9E-Q
+
+FLEN: 一种时空高效的利用特征场信息缓解梯度耦合的CTR预测模型

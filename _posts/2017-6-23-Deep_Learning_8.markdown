@@ -64,6 +64,10 @@ https://mp.weixin.qq.com/s/CFKRzF9WuDrNVSivMf3YNw
 
 目标检测新突破！了解Res2Net深度多尺度目标检测架构
 
+https://mp.weixin.qq.com/s/1R7XWPqiDBNcUjIE-sF08Q
+
+ResNeXt深入解读与模型实现
+
 # Bi-directional RNN
 
 众所周知，RNN在处理长距离依赖关系时会出现问题。LSTM虽然改进了一些，但也只能缓解问题，而不能解决该问题。

@@ -6,6 +6,60 @@ category: language
 
 # Python
 
+## PLY
+
+Python Lex-Yacc是一个python版本的lex/yacc实现。
+
+官网：
+
+http://www.dabeaz.com/ply/
+
+参考：
+
+https://blog.csdn.net/feixiaoxing/article/details/79123776
+
+python编程（ply库）
+
+https://blog.csdn.net/chosen0ne/article/details/8077880
+
+Python语法解析器PLY——lex and yacc in Python
+
+## JPype
+
+JPype是一个能够让python代码方便地调用Java代码的工具。官网：
+
+https://sourceforge.net/projects/jpype/
+
+参考：
+
+http://blog.csdn.net/niuyisheng/article/details/9002926
+
+JPype：实现在python中调用JAVA
+
+http://www.cnblogs.com/yu-zhang/p/3817024.html
+
+python调用java程序--jpype
+
+## SWIG
+
+Simplified Wrapper and Interface Generator可以为C/C++的库生成其他高级脚本语言的Wrapper。
+
+官网：
+
+http://swig.org/
+
+PLY和SWIG的作者都是David Beazley。
+
+>David M. Beazley，犹他大学博士。IEEE Gordon Bell Prize(1993,1998)。先后在Los Alamos和University of Chicago工作执教。超算领域专家。python语言核心开发者。
+
+## SLY
+
+Sly Lex Yacc是David Beazley的新作，号称新一代的PLY。
+
+官网：
+
+https://sly.readthedocs.io/en/latest/
+
 ## glob
 
 glob的历史可以追溯到早期的UNIX系统。用它可以查找符合特定规则的文件路径名。
@@ -212,6 +266,20 @@ http://www.liujiangblog.com/course/django/
 
 Django教程
 
+## pygame
+
+pygame是一个python的游戏引擎。
+
+官网：
+
+https://www.pygame.org/
+
+参考：
+
+https://github.com/marblexu/PythonPlantsVsZombies
+
+Python《植物大战僵尸》代码实现
+
 ## 参考
 
 https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA
@@ -389,63 +457,3 @@ python 字符编码处理总结
 https://mp.weixin.qq.com/s/fTs_r7DLbLWoos4uRM3KYA
 
 10个Python常见面试题，这些弄不明白不要说学过Python！
-
-https://mp.weixin.qq.com/s/zIHJsyankFEf_ig4Xnb0Uw
-
-工具推荐！我是如何使用Python脚本分析CPU使用情况的？
-
-https://mp.weixin.qq.com/s/v-N5jUTVFBb-wV0a_RAg5A
-
-Python实现代码雨效果
-
-https://mp.weixin.qq.com/s/0wJRlGS2QXpEL2XaU_Ke-g
-
-Python实现烟花特效
-
-https://mp.weixin.qq.com/s/5YWAgp8LKi5q_NDrNUtyGQ
-
-在GitHub上收获6519颗Star的Python面试题资料
-
-https://mp.weixin.qq.com/s/toh59s2-UlqiZfkE5ThxZw
-
-谈一谈python中的魔法变量*args和**kwargs
-
-https://mp.weixin.qq.com/s/8y7IIQWxXx3bCD8cK8Z3XQ
-
-这17个骚操作你都Ok吗
-
-https://mp.weixin.qq.com/s/rE5OEFwwFxJNb_Omwmqvzw
-
-符合语言习惯的Python优雅编程技巧
-
-https://blog.csdn.net/longerzone/article/details/17889969
-
-Python下调用Linux的Shell命令
-
-https://mp.weixin.qq.com/s/zLTEzMczlrHrX9by0ccp5w
-
-史上最全Python Re模块讲解
-
-https://mp.weixin.qq.com/s/GEn6rmbSfob5W7syf9cnJw
-
-Python实现Word文档操作
-
-https://mp.weixin.qq.com/s/QatY21HxcYHqV2WZ8gc0_g
-
-Python中的异常处理
-
-https://mp.weixin.qq.com/s/i_xLlknJbap3Z9ci0gwuNQ
-
-如何用Python编写一个Lisp解释器
-
-https://mp.weixin.qq.com/s/mP7M4z2mzj_1KPrEx0oqwg
-
-迭代列表不要For循环，这是Python列表推导式最基本的概念
-
-https://mp.weixin.qq.com/s/mcHYTjIDnVBA58-1h8BLdA
-
-手把手教学：提取PDF各种表格文本数据
-
-https://mp.weixin.qq.com/s/bV7g9ugGmFjojGDMIc_kpQ
-
-Python中的元编程：一个关于修饰器和元类的简单教程

@@ -205,3 +205,7 @@ https://mp.weixin.qq.com/s/10EhUj03NGPTnyOCvLqDQw
 https://mp.weixin.qq.com/s/mqB9wtUjMJ1EhINrUUEf9Q
 
 香港中文大学博士陈恺：物体检测中的训练样本采样
+
+https://mp.weixin.qq.com/s/syoJTnh6KMMRUYPQjUnEAg
+
+一个算法同时解决两大CV任务，让目标检测和实例分割互相帮助

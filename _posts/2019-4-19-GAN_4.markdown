@@ -244,10 +244,6 @@ https://mp.weixin.qq.com/s/3lrCRiq5zuX9yWxiQRQE9A
 
 CartoonGAN不靠手绘，也能成为漫画达人
 
-https://mp.weixin.qq.com/s/i3lNcbOblgVKUTBtwKIFwg
-
-AI秒造全球房源：StyleGAN快速生成假房子，连图说都配好了！
-
 https://mp.weixin.qq.com/s/PhaDqX3OT-mqyFHohDMfdA
 
 从Pix2Code到CycleGAN：2017年深度学习重大研究进展全解读

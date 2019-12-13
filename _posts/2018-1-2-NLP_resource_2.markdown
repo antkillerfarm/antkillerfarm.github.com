@@ -264,6 +264,10 @@ https://zhuanlan.zhihu.com/p/84730122
 
 BottleSum——文本摘要论文系列解读
 
+https://mp.weixin.qq.com/s/vjnENPxXzrjKW2ACD3HDkA
+
+抽取式摘要之SUMO
+
 ## 句法分析
 
 传统方法主要是PCFG （Probabilistic Context-Free Grammar）。
