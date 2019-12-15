@@ -4,7 +4,27 @@ title:  深度学习（七）——神经元激活函数进阶, ResNet
 category: DL 
 ---
 
-# LSTM（续）
+# LSTM
+
+## LSTM的变体（续）
+
+![](/images/article/LSTM_7.png)
+
+上图是一个改动较大的变体**Gated Recurrent Unit（GRU）**。它将忘记门和输入门合成了一个单一的更新门。同样还混合了细胞状态和隐藏状态，和其他一些改动。最终的模型比标准的 LSTM 模型要简单，也是非常流行的变体。
+
+## 参考
+
+http://www.csdn.net/article/2015-06-05/2824880
+
+深入浅出LSTM神经网络
+
+https://mp.weixin.qq.com/s/y2kV4ye2zr1HYvZd3APeWA
+
+难以置信！LSTM和GRU的解析从未如此清晰
+
+https://blog.csdn.net/zhangxb35/article/details/70060295
+
+RNN, LSTM, GRU公式总结
 
 https://zhuanlan.zhihu.com/p/25821063
 
@@ -311,13 +331,3 @@ https://github.com/KaimingHe/deep-residual-networks
 简单的说，就是把前面的层跨几层直接接到后面去，以使误差梯度能够传的更远一些。
 
 DRN的基本思想倒不是什么新东西了，在2003年Bengio提出的词向量模型中，就已经采用了这样的思路。
-
-DRN的实现依赖于下图所示的res block：
-
-![](/images/article/res_block.png)
-
-从中可以看出，所谓残差跨层传递，其实就是将本层ternsor $$\mathcal{F}(x)$$和跨层tensor x加在一起而已。
-
-如果在网络中每个层只有少量的隐藏单元对不同的输入改变它们的激活值，而大部分隐藏单元对不同的输入都是相同的反应，此时整个权重矩阵的秩不高。并且随着网络层数的增加，连乘后使得整个秩变的更低，这就是我们常说的网络退化问题。
-
-虽然权重矩阵是一个很高维的矩阵，但是大部分维度却没有信息，使得网络的表达能力没有看起来那么强大。这样的情况一定程度上来自于网络的对称性，而残差连接打破了网络的对称性。

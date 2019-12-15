@@ -62,10 +62,6 @@ https://mp.weixin.qq.com/s/napcf9UDwTVmUXV7BBzdaw
 
 田渊栋：深度学习如何进行游戏推理？
 
-https://mp.weixin.qq.com/s/5Vg9RFvyNv6T7QkIfPm1aQ
-
-DOTA2中打败Dendi的AI如何炼出？
-
 https://mp.weixin.qq.com/s/Jdd7S6JFKRdsVe2w-W01IA
 
 Facebook田渊栋开源游戏平台ELF，简化版《星际争霸》完美测试人工智能
@@ -230,10 +226,6 @@ https://mp.weixin.qq.com/s/BnS5KECLiUNGFd0EtTovTw
 
 南大AI单机训练一天，击败最高难度内置Bot
 
-https://mp.weixin.qq.com/s/e4lK3UoQq-8j1YIWKALBLg
-
-嵌入技术在Dota2人工智能战队OpenAI Five中的应用
-
 https://mp.weixin.qq.com/s/I9gfoCxEYW5lSIy5QGyt6w
 
 2018星际AI大赛（2018.11）冠军诞生！一个个机器学习算法，都输给不会学习的韩国bot
@@ -269,10 +261,6 @@ https://mp.weixin.qq.com/s/wyn-V4-DcjjOKziith3pXw
 https://mp.weixin.qq.com/s/WabOUqqK6RW8mTNR53esYQ
 
 DeepMind让AI组队踢足球学会“合作”，并开源训练环境
-
-https://mp.weixin.qq.com/s/xsoS3tvOh78rkbI0UUIkPQ
-
-2:0！Dota2世界冠军OG被OpenAI碾压，全程人类只推掉两座外塔
 
 https://mp.weixin.qq.com/s/ZkblK9TfBHscX9s0JMBwFA
 

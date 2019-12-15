@@ -324,6 +324,10 @@ https://mp.weixin.qq.com/s/0BeqQ6-ZZM-T38sJJWeX1Q
 
 图像配准的前世今生：从人工设计特征到深度学习
 
+https://zhuanlan.zhihu.com/p/80985475
+
+图像配准综述
+
 https://zhuanlan.zhihu.com/p/37404280
 
 图像处理：从bilateral filter到HDRnet

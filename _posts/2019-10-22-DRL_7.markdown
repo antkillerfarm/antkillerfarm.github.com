@@ -1,8 +1,34 @@
 ---
 layout: post
-title:  深度强化学习（七）——DRL参考资源（1）
+title:  深度强化学习（七）——Dota 2, DRL参考资源（1）
 category: DRL 
 ---
+
+# Dota 2
+
+https://mp.weixin.qq.com/s/rPsxvzOLuoo_IRtgH94Ecw
+
+OpenAI自学习多智能体5v5团队战击败人类玩家
+
+https://mp.weixin.qq.com/s/VPVzXzBYD_nYO1SjTMNGVA
+
+Dota2团战AI击败人类最全解析：能团又能gank，AI一日人间180年
+
+https://mp.weixin.qq.com/s/5Vg9RFvyNv6T7QkIfPm1aQ
+
+DOTA2中打败Dendi的AI如何炼出？
+
+https://mp.weixin.qq.com/s/e4lK3UoQq-8j1YIWKALBLg
+
+嵌入技术在Dota2人工智能战队OpenAI Five中的应用
+
+https://mp.weixin.qq.com/s/xsoS3tvOh78rkbI0UUIkPQ
+
+2:0！Dota2世界冠军OG被OpenAI碾压，全程人类只推掉两座外塔
+
+https://mp.weixin.qq.com/s/X73jL5T_uZ87F3iE-uTnpw
+
+Dota2冠军OG如何被AI碾压？OpenAI累积三年的完整论文终于放出
 
 # DRL参考资源
 

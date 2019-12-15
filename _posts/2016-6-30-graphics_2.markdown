@@ -72,6 +72,8 @@ $$
 
 当normalize=true时的方框滤波，也被称为均值滤波（Mean filter）。
 
+<a name="Gauss"/>
+
 # 高斯滤波（Gauss filter）
 
 高斯平滑滤波器对于抑制服从正态分布的噪声非常有效。

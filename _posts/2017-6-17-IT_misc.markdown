@@ -34,6 +34,12 @@ https://github.com/microsoft/MS-DOS
 
 从代码来看，确实也就是几个星期的工作量
 
+----
+
+https://mp.weixin.qq.com/s/ncdgNEXnUrQimOzoZzVrjA
+
+操作系统三十年的兴衰史
+
 ## CP/M和BeOS
 
 这两个东西的共同点，相信熟悉那段历史的人都能看的出来。没错，这就是：
@@ -183,19 +189,3 @@ https://mp.weixin.qq.com/s/TlCtyF2HG_5l4STgoMJ05w
 https://mp.weixin.qq.com/s/TlhhDjKlLYslif0RtpNotw
 
 世界三大电子展(CES、MWC、IFA)的前世今生
-
-https://zhuanlan.zhihu.com/p/54493905
-
-PC和BIOS的故事
-
-https://mp.weixin.qq.com/s/iod5Jok3Zfcn4yrGByZQQQ
-
-索尼的古董
-
-https://mp.weixin.qq.com/s/CxTr4MFVoRFxyCn-x_z8dQ
-
-奇梦达的前世今生
-
-https://mp.weixin.qq.com/s/TZcVR0wW2LM_bCvB0a88pA
-
-中国芯片完整发展历程

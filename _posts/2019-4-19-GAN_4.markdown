@@ -260,6 +260,10 @@ https://mp.weixin.qq.com/s/eT7K78e2xKkTqmz67pqmEg
 
 炫酷的图像转换：从pix2pix到CycleGAN
 
+https://mp.weixin.qq.com/s/iFuZ8IqyrKGTxJ2ChU6NJA
+
+CycleGAN之美：赛马翻译成斑马背后的直觉和数学
+
 # StarGAN
 
 论文：

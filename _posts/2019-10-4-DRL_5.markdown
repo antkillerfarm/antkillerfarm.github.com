@@ -4,6 +4,22 @@ title:  深度强化学习（五）——AlphaGo
 category: DRL 
 ---
 
+# OpenAI（续）
+
+## RND
+
+OpenAI最近开发了RND（Random Network Distillation），一种基于预测的强化学习算法，用于鼓励强化学习代理通过好奇心来探索他们所处环境。在游戏任务Montezuma's Revenge上首次超过人类的平均表现。
+
+blog：
+
+https://blog.openai.com/reinforcement-learning-with-prediction-based-rewards/
+
+Reinforcement Learning with Prediction-Based Rewards
+
+代码：
+
+https://github.com/openai/random-network-distillation
+
 # AlphaGo
 
 ## 概述
@@ -253,23 +269,3 @@ DeepMind新一代围棋程序AlphaGo Zero再次登上Nature
 https://www.zhihu.com/question/66861459
 
 如何评价DeepMind发表在Nature上的AlphaGo Zero？
-
-https://deepmind.com/blog/alphago-zero-learning-scratch/
-
-AlphaGo Zero官方声明
-
-https://zhuanlan.zhihu.com/mathNote
-
-某牛的专栏，主要讲自制AlphaGo
-
-https://mp.weixin.qq.com/s/DC9QqHdWT0xFnowEBuJDbw
-
-自动化所解读“深度强化学习”：从AlphaGo到AlphaGoZero
-
-https://mp.weixin.qq.com/s/uZtaxRwROCqYmL2k6Muxaw
-
-从阿尔法狗元(AlphaGo Zero)的诞生看终极算法的可能性
-
-https://mp.weixin.qq.com/s/i5OmLu8aNbypiTUmP4teeQ
-
-刘遥行：深入浅出看懂AlphaGo Zero

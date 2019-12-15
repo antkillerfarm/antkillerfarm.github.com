@@ -8,6 +8,30 @@ category: DL
 
 ## 参考（续）
 
+http://licstar.net/archives/328
+
+词向量和语言模型
+
+http://geek.csdn.net/news/detail/135736
+
+漫谈词向量之基于Softmax与Sampling的方法
+
+https://mp.weixin.qq.com/s/nLFRJO2QEG_kAmeRYUdT3g
+
+十分钟带你看遍词向量模型
+
+https://zhuanlan.zhihu.com/p/30868040
+
+文本表示的应用与评价
+
+https://mp.weixin.qq.com/s/GOPIIlDBd3vXpgq-a5s2fQ
+
+文本分类特征提取之Word2Vec
+
+https://www.zhihu.com/question/339184168
+
+为什么很多NLP的工作在使用预训练词向量时选择GloVe而不是Word2Vec或其他?
+
 https://mp.weixin.qq.com/s/pOShNO2iOntcGSRMbR9uxg
 
 Word2Vec与GloVe技术浅析与对比
@@ -263,21 +287,3 @@ forget bias的初始值可以设为以1为均值，这对于训练很有好处�
 ![](/images/article/LSTM_6.png)
 
 上图中的LSTM变体被称为**Coupled Input and Forget Gate（CIFG）**。它将忘记和输入门连在了一起。
-
-![](/images/article/LSTM_7.png)
-
-上图是一个改动较大的变体**Gated Recurrent Unit（GRU）**。它将忘记门和输入门合成了一个单一的更新门。同样还混合了细胞状态和隐藏状态，和其他一些改动。最终的模型比标准的 LSTM 模型要简单，也是非常流行的变体。
-
-## 参考
-
-http://www.csdn.net/article/2015-06-05/2824880
-
-深入浅出LSTM神经网络
-
-https://mp.weixin.qq.com/s/y2kV4ye2zr1HYvZd3APeWA
-
-难以置信！LSTM和GRU的解析从未如此清晰
-
-https://blog.csdn.net/zhangxb35/article/details/70060295
-
-RNN, LSTM, GRU公式总结

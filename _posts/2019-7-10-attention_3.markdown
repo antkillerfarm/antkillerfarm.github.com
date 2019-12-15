@@ -90,6 +90,10 @@ https://zhuanlan.zhihu.com/p/85825460
 
 Transformer在推荐模型中的应用总结
 
+https://mp.weixin.qq.com/s/io87CCfThDZDwpIHngunqQ
+
+Step-by-step to Transformer：深入解析工作原理（以Pytorch机器翻译为例）
+
 # BERT
 
 ## 概述
@@ -335,15 +339,3 @@ https://mp.weixin.qq.com/s/_ZBvq7gXvbiP2IQve9tcKg
 https://mp.weixin.qq.com/s/QVEYQfEQV0CsklI9S4vOiA
 
 ERNIE真有官方说的那么好？亲测告诉你答案！
-
-https://mp.weixin.qq.com/s/FoX2bXCJlFYjb9U6JcZCqg
-
-超详细中文预训练模型ERNIE使用指南
-
-https://mp.weixin.qq.com/s/EYQXM-1WSommj9mKJZVVzw
-
-百度正式发布ERNIE 2.0，16项中英文任务超越BERT、XLNet，刷新SOTA
-
-https://mp.weixin.qq.com/s/PwiVCgN8dDWXTGZsiqM-2g
-
-最新NLP架构的直观解释：多任务学习–ERNIE 2.0

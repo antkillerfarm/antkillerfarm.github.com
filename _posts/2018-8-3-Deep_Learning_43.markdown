@@ -84,7 +84,11 @@ https://mp.weixin.qq.com/s/4BvvwV11f9MrrYyLwUrX9w
 
 还在用ps抠图抠瞎眼？机器学习通用背景去除产品诞生记
 
-## deepfake
+## 换脸技术
+
+https://mp.weixin.qq.com/s/X_cBFBc42qUFpuNGBtISRw
+
+换脸算法都有哪些经典的思路？
 
 https://zhuanlan.zhihu.com/p/34042498
 
@@ -101,6 +105,46 @@ https://mp.weixin.qq.com/s/Lzv3wQR2DOrw5AmyCXWvsw
 https://mp.weixin.qq.com/s/rkAVGTNca1zudrrutXll0w
 
 传统图像算法+深度学习方法结合会有什么样的火花？本文主要描述了deepfake中非深度学习的算法部分
+
+https://mp.weixin.qq.com/s/NstPpjfSxXpmHWkhjDSxZg
+
+AI换脸常见方法，从头细说
+
+https://mp.weixin.qq.com/s/bBvp0PXgDyQMP0xq2OF3LQ
+
+沉迷AI换脸？不如来试试“AI换衣”
+
+https://mp.weixin.qq.com/s/Zq3ngbTAObQuIr86nkTwjQ
+
+视频换脸技术，女神都下海了吗？
+
+https://mp.weixin.qq.com/s/BTzV7ulweqFQokdQ-AX2Rg
+
+三位一体的纯正视频换脸术，拒绝别人的嘴替我说话
+
+https://mp.weixin.qq.com/s/12_Gl4snq-LdMHJSZn4oOA
+
+换脸AI升级版：面部表情、身体动作、视线方向都能实时迁移
+
+https://mp.weixin.qq.com/s/VFq3BWLpzyKZ3sqVWf1HKA
+
+从换脸到换姿势，AI在图像处理的道路上越走越魔幻
+
+https://mp.weixin.qq.com/s/s6VHo8QW9OENMrbqfp6--w
+
+视频换脸新境界：CMU不仅给人类变脸，还能给花草、天气变脸
+
+https://mp.weixin.qq.com/s/k-IIEMtaSQ1gsRvjNTtlUA
+
+3D实时换脸又有新进展！中科院博士生提出改进版本，每张图推理只需0.27毫秒
+
+https://mp.weixin.qq.com/s/2cY3NCtMYiRlLayB32wl-w
+
+下一个GAN？OpenAI提出可逆生成模型Glow
+
+https://mp.weixin.qq.com/s/1cUM8_AUZ40JWGI37HsqFw
+
+换脸效果媲美GAN！一文解析OpenAI最新流生成模型Glow
 
 ## 艺术字
 
@@ -134,10 +178,6 @@ https://mp.weixin.qq.com/s/iV-OXiKF1jgAhSmX4QUIXw
 
 综述：图像风格化算法最全盘点
 
-https://mp.weixin.qq.com/s/Zq3ngbTAObQuIr86nkTwjQ
-
-视频换脸技术，女神都下海了吗？
-
 https://mp.weixin.qq.com/s/eqI5fVuF68RQWb1a5O219w
 
 腾讯研发“一键卸妆” ,让女神秒变路人!
@@ -149,10 +189,6 @@ https://mp.weixin.qq.com/s/73mkWlqJsVdu9m1kPDvfbQ
 https://mp.weixin.qq.com/s/gEFzogsteK_1VeywbQxbgQ
 
 (GAN)延时摄影视频的生成
-
-https://mp.weixin.qq.com/s/BTzV7ulweqFQokdQ-AX2Rg
-
-三位一体的纯正视频换脸术，拒绝别人的嘴替我说话
 
 https://mp.weixin.qq.com/s/97Uj-ATLToy1bNhnSUO8Jw
 
@@ -173,10 +209,6 @@ https://mp.weixin.qq.com/s/RMz5fwt72j2ufrGpdD6POw
 https://mp.weixin.qq.com/s/PVM7wMsT6TpJkQUlt7d2Aw
 
 用风格迁移搞事情！超越艺术字：卷积神经网络打造最美汉字
-
-https://mp.weixin.qq.com/s/12_Gl4snq-LdMHJSZn4oOA
-
-换脸AI升级版：面部表情、身体动作、视线方向都能实时迁移
 
 https://mp.weixin.qq.com/s/lPzPfjYiAsNvVcVWdL08dA
 
@@ -234,10 +266,6 @@ https://mp.weixin.qq.com/s/MFKhmHcaQvufdRawFqisjA
 
 Distill详述“可微图像参数化“：神经网络可视化和风格迁移利器！
 
-https://mp.weixin.qq.com/s/VFq3BWLpzyKZ3sqVWf1HKA
-
-从换脸到换姿势，AI在图像处理的道路上越走越魔幻
-
 https://mp.weixin.qq.com/s/Mk_EkwTYK2141cU9zC1hvQ
 
 合成逼真图像，试试港中大&英特尔的半参数方法
@@ -249,10 +277,6 @@ https://mp.weixin.qq.com/s/K2kptEfezAbcQTE8OgPMtQ
 https://mp.weixin.qq.com/s/l33D8zNtHVcaMjlw4IY05g
 
 想让照片里的美女“回头”？清华MIT谷歌用AI帮你实现了
-
-https://mp.weixin.qq.com/s/s6VHo8QW9OENMrbqfp6--w
-
-视频换脸新境界：CMU不仅给人类变脸，还能给花草、天气变脸
 
 https://mp.weixin.qq.com/s/UySQTv8uuGungjxFNeHbRw
 
@@ -345,39 +369,3 @@ https://mp.weixin.qq.com/s/gTD5H_Vy2b-7fuvAYxVsnQ
 https://mp.weixin.qq.com/s/MePEEuwH-e5c2hwiEXo2wg
 
 去噪、去水印、超分辨率，这款不用学习的神经网络无所不能
-
-https://mp.weixin.qq.com/s/4hKIh77UfsuJCSKwtvpq3Q
-
-最强GAN修图魔术师：美颜生发摘眼镜、草绘秒变真人脸
-
-https://mp.weixin.qq.com/s/-iPQBni4dWvdARAy9_T32g
-
-神还原女神照片！GAN为百年旧照上色
-
-https://mp.weixin.qq.com/s/zvEIUJpgrjSM9-TLSzr3sQ
-
-为什么说GAN很快就要替代现有摄影技术了？
-
-https://mp.weixin.qq.com/s/sTLDG0rmFZv20G5veNYS9g
-
-英伟达再出黑魔法GauGAN：凭借几根线条，草图秒变风景照
-
-https://mp.weixin.qq.com/s/nKME65tCeNOlY4SiPv-fWA
-
-逼真照片随手画，马良神笔已上线--点击收获这份英伟达GauGAN开源代码
-
-https://mp.weixin.qq.com/s/Qwe4LXnB5BitvRGm46dU2w
-
-人工智能是摄影的未来还是摄影技术的末日？
-
-https://mp.weixin.qq.com/s/LlTuzLT9L4FHetV4EbBHEw
-
-渐进式图像重构网络：像画画一样重构图像
-
-https://mp.weixin.qq.com/s/eLHhmPMNSe1QxDKv6Lk9yw
-
-原来，阿里工程师才是隐藏的“修图高手”！
-
-https://mp.weixin.qq.com/s/1QQ2_vkQ_vLvuxvR-fboQg
-
-大三少年造出AI写意画家，像人类一样挥笔作画

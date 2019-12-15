@@ -82,6 +82,8 @@ $$h_\theta(x)=g(\theta^Tx)=\frac{1}{1+e^{-\theta^Tx}} \tag{6}$$
 
 事实上，任何$$[0,1]$$区间的平滑增函数，都可以作为$$g(z)$$，但公式6的好处在于
 
+<a name="LG"/>
+
 $$g'(z)=\frac{1}{(1+e^{-z})^2}e^{-z}=\frac{1}{(1+e^{-z})}\left(1-\frac{1}{(1+e^{-z})}\right)=g(z)(1-g(z))\tag{7}$$
 
 评估逻辑回归（Logistic regression）的质量，需要用到最大似然估计（maximum likelihood estimator）方法（由Ronald Aylmer Fisher提出）。最大似然估计是在“模型已定，参数未知”的情况下，寻找使模型出现的概率最大的参数集$$\theta$$的方法。显然，参数集$$\theta$$所确定的模型，其出现概率越大，模型的准确度越高。
@@ -93,6 +95,8 @@ $$f(x_1,\dots,x_n;\theta)=f(x_1;\theta)\times \dots \times f(x_n;\theta)$$
 似然估计函数如下所示：
 
 $$L(\theta)=\prod_{i=1}^mp(y^{(i)}\mid x^{(i)};\theta)$$
+
+<a name="Pearson"/>
 
 >注：Ronald Aylmer Fisher，1890～1962，英国人，毕业于剑桥大学。英国皇家学会会员，皇家统计学会主席。尽管他被称作“一位几乎独自建立现代统计科学的天才”，然而他的本职工作是遗传学。他最大的贡献是利用统计分析的方法，揭示了孟德尔的遗传定律在达尔文自然选择学说中的作用，为后来遗传物质DNA的发现奠定了理论基础。   
 >虽然对于Fisher来说，数理统计只是他研究工作的一个副产品，但他在1925年所著《研究工作者的统计方法》（Statistical Methods for Research Workers），其影响力超过了半个世纪，几乎当代所有自然科学和社会科学领域都在应用他所创立的理论。F分布就是以他的名字命名的。

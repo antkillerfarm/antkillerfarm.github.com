@@ -86,6 +86,8 @@ https://mp.weixin.qq.com/s/sUQPaiYAfRpCFryrHMqPoA
 
 想写出人见人爱的推荐系统，先了解经典矩阵分解技术
 
+<a name="PCA"/>
+
 # 主成分分析
 
 真实的训练数据总是存在各种各样的问题。
@@ -153,7 +155,7 @@ $$\mathcal{L}(u)=u^T\Sigma u-\lambda(u^Tu-1)$$
 
 $$\nabla_u\mathcal{L}(u)=\Sigma u-\lambda u$$
 
-这里的矩阵求导步骤，参见《机器学习（十）》中的公式5.12的推导过程。
+这里的矩阵求导步骤，参见[《机器学习（十一）》](/ml/2016/09/08/Machine_Learning_11.html#Trace)中的公式5.12的推导过程。
 
 令导数为0可得，当$$\lambda$$为$$\Sigma$$的特征值的时候，该代价函数得到最优解。
 

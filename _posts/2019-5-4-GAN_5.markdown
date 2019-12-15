@@ -118,6 +118,24 @@ BigGAN被干了！DeepMind发布LOGAN：FID提升32%，华人一作领衔
 
 《》
 
+# FUNIT
+
+https://mp.weixin.qq.com/s/3hv44bkXYHn2wN_2OZmhxA
+
+四大指标超现有模型！少样本的无监督图像翻译效果逆天（FUNIT）
+
+https://mp.weixin.qq.com/s/H0kl1i4P3Dak2COdzQNG4A
+
+一图生万物！英伟达推超强图像转换神器，小样本一秒猫变狗（FUNIT）
+
+https://mp.weixin.qq.com/s/isrB3yda9sGgbOb4dBXMrQ
+
+更自由的GAN图像联想：无监督跨类的图像转换模型FUNIT，英伟达&康奈尔大学
+
+https://mp.weixin.qq.com/s/nAaKnI1ADKfeQ8UA_VP0Fw
+
+FUNIT
+
 # GAN参考资源
 
 https://mp.weixin.qq.com/s/Gjb-PkMqUIIV81Na6Za_BQ
@@ -159,14 +177,6 @@ https://mp.weixin.qq.com/s/29Ror1CKFubB0n38cihMqQ
 https://mp.weixin.qq.com/s/0I8jLO3srXC3fUdoMC585w
 
 一些fancy的GAN应用
-
-https://mp.weixin.qq.com/s/2cY3NCtMYiRlLayB32wl-w
-
-下一个GAN？OpenAI提出可逆生成模型Glow
-
-https://mp.weixin.qq.com/s/1cUM8_AUZ40JWGI37HsqFw
-
-换脸效果媲美GAN！一文解析OpenAI最新流生成模型Glow
 
 https://mp.weixin.qq.com/s/kD_163rjGRp4rXOdIPCvRA
 
@@ -335,19 +345,3 @@ https://mp.weixin.qq.com/s/U1rrPfJDLgXHRj__XwrMZw
 https://mp.weixin.qq.com/s/xHKQlFFkBQLBg2GdZuGPSw
 
 提升GAN训练的技巧汇总
-
-https://mp.weixin.qq.com/s/8Vt3p8iXFq9rI-ph1Syt-Q
-
-Uber提出基于Metropolis-Hastings算法的GAN改进思想
-
-https://mp.weixin.qq.com/s/kobEEizpP2v5Yy-8stiGgg
-
-让画面更逼真！这个强化超分辨率GAN让老游戏迎来第二春
-
-https://mp.weixin.qq.com/s/tWaKMFZ4dQX7kZlT3tiDAQ
-
-详解GAN的谱归一化（Spectral Normalization）
-
-https://mp.weixin.qq.com/s/I7mpy5P7LFFkop618ANLtA
-
-这份攻略帮你“稳住”反复无常的GAN

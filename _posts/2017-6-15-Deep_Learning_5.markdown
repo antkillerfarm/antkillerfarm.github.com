@@ -6,6 +6,24 @@ category: DL
 
 # 词向量（续）
 
+## word2vec
+
+除了Bengio方案之外，早期人们还尝试过基于共生矩阵（Co-occurrence Matrix）SVD分解的Word Embedding方案。该方案对于少量语料有不错的效果，但一旦语料增大，计算量即呈指数级上升。
+
+这类方案的典型是Latent Semantic Analysis(LSA)。参见《机器学习（二十一）》。
+
+Tomas Mikolov于2013年对Bengio方案进行了简化改进，提出了目前最为常用的word2vec方案。
+
+介绍word2vec的数学原理比较好的有：
+
+《Deep Learning实战之word2vec》，网易有道的邓澍军、陆光明、夏龙著。
+
+《word2vec中的数学》，peghoty著。该书的网页版：
+
+http://blog.csdn.net/itplus/article/details/37969519
+
+老惯例这里只对最重要的内容进行摘要。
+
 ### CBOW & Skip-gram
 
 ![](/images/article/word2vec.png)
@@ -251,35 +269,3 @@ https://mp.weixin.qq.com/s/Rn_aJYozQ0f53Mjq4MKSwA
 https://mp.weixin.qq.com/s/H7m7lqWpK27pJp9obXxlIQ
 
 见微知著，从细节处提升词向量的表示能力
-
-http://licstar.net/archives/328
-
-词向量和语言模型
-
-https://mp.weixin.qq.com/s/GYTxN5X7MnSQ4k5bD2l-PQ
-
-Salesforce的爱因斯坦AI最新NLP研究，通过情境化词向量从翻译中学习!
-
-https://mp.weixin.qq.com/s/GUUkXrB1iyg4rQbBtICq6A
-
-通过NMT训练的通用语境词向量：NLP中的预训练模型？
-
-http://geek.csdn.net/news/detail/135736
-
-漫谈词向量之基于Softmax与Sampling的方法
-
-https://mp.weixin.qq.com/s/nLFRJO2QEG_kAmeRYUdT3g
-
-十分钟带你看遍词向量模型
-
-https://zhuanlan.zhihu.com/p/30868040
-
-文本表示的应用与评价
-
-https://mp.weixin.qq.com/s/GOPIIlDBd3vXpgq-a5s2fQ
-
-文本分类特征提取之Word2Vec
-
-https://www.zhihu.com/question/339184168
-
-为什么很多NLP的工作在使用预训练词向量时选择GloVe而不是Word2Vec或其他?

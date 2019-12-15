@@ -6,6 +6,28 @@ category: DL
 
 # CNN进化史（续）
 
+## VGG
+
+Visual Geometry Group是牛津大学的一个科研团队。他们推出的一系列深度模型，被称作VGG模型。
+
+代码：
+
+http://www.robots.ox.ac.uk/~vgg/research/very_deep/
+
+VGG的结构图如下：
+
+![](/images/article/vgg.png)
+
+该系列包括A/A-LRN/B/C/D/E等6个不同的型号。其中的D/E，根据其神经网络的层数，也被称为VGG16/VGG19。
+
+从原理角度，VGG相比AlexNet并没有太多的改进。其最主要的意义就是实践了“**神经网络越深越好**”的理念。也是自那时起，神经网络逐渐有了“深度学习”这个别名。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/37706726
+
+VGG论文笔记
+
 ## GoogleNet
 
 GoogleNet的进化道路和VGG有所不同。VGG实际上就是“大力出奇迹”的暴力模型，其他地方不足称道。
@@ -219,11 +241,3 @@ https://mp.weixin.qq.com/s/28GtBOuAZkHs7JLRVLlSyg
 http://www.leiphone.com/news/201609/303vE8MIwFC7E3DB.html
 
 Google最新开源Inception-ResNet-v2，借助残差网络进一步提升图像分类水准
-
-https://mp.weixin.qq.com/s/x3bSu9ecl3dldCbvS1rT1g
-
-站在巨人的肩膀上，深度学习的9篇开山之作
-
-http://mp.weixin.qq.com/s/2TUw_2d36uFAiJTkvaaqpA
-
-解读Keras在ImageNet中的应用：详解5种主要的图像识别模型

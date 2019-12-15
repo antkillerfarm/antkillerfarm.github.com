@@ -6,6 +6,16 @@ category: DL
 
 # ResNet（续）
 
+DRN的实现依赖于下图所示的res block：
+
+![](/images/article/res_block.png)
+
+从中可以看出，所谓残差跨层传递，其实就是将本层ternsor $$\mathcal{F}(x)$$和跨层tensor x加在一起而已。
+
+如果在网络中每个层只有少量的隐藏单元对不同的输入改变它们的激活值，而大部分隐藏单元对不同的输入都是相同的反应，此时整个权重矩阵的秩不高。并且随着网络层数的增加，连乘后使得整个秩变的更低，这就是我们常说的网络退化问题。
+
+虽然权重矩阵是一个很高维的矩阵，但是大部分维度却没有信息，使得网络的表达能力没有看起来那么强大。这样的情况一定程度上来自于网络的对称性，而残差连接打破了网络的对称性。
+
 ![](/images/img3/ResNet.png)
 
 随着ResNet的应用越来越广泛，其设计也有一定的微调。上图左边是原始的ResNet结构，而右边是新的结构，据说新结构更有利于梯度的更新。
@@ -313,25 +323,3 @@ AlexNet作为第一个现代意义上的CNN，它的意义主要包括：
 https://zhuanlan.zhihu.com/p/22538465
 
 运用CNN对ImageNet进行图像分类
-
-## VGG
-
-Visual Geometry Group是牛津大学的一个科研团队。他们推出的一系列深度模型，被称作VGG模型。
-
-代码：
-
-http://www.robots.ox.ac.uk/~vgg/research/very_deep/
-
-VGG的结构图如下：
-
-![](/images/article/vgg.png)
-
-该系列包括A/A-LRN/B/C/D/E等6个不同的型号。其中的D/E，根据其神经网络的层数，也被称为VGG16/VGG19。
-
-从原理角度，VGG相比AlexNet并没有太多的改进。其最主要的意义就是实践了“**神经网络越深越好**”的理念。也是自那时起，神经网络逐渐有了“深度学习”这个别名。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/37706726
-
-VGG论文笔记

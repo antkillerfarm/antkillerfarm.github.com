@@ -269,3 +269,7 @@ https://mp.weixin.qq.com/s/nqRJQ6K6e1TC6IUa57dw0g
 https://mp.weixin.qq.com/s/J1_bs1h_eTqmYU4q5Lzhpg
 
 基于神经网络StarNet的行人轨迹交互预测算法
+
+https://zhuanlan.zhihu.com/p/96999382
+
+重识别（re-ID）特征适合直接用于跟踪（tracking）问题么？

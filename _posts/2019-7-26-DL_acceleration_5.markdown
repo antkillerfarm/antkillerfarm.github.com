@@ -341,3 +341,11 @@ https://mp.weixin.qq.com/s/SgELZgoHzIvbg2-jzJw6Tw
 https://mp.weixin.qq.com/s/q5-91AAKwBiYzTMmqadEcg
 
 RefineDetLite：腾讯提出轻量级高精度目标检测网络
+
+https://mp.weixin.qq.com/s/oDwvMtET0moHVGgtQLfCow
+
+5个可以让你的模型在边缘设备上高效推理的算法
+
+https://mp.weixin.qq.com/s/nbEa0csbaMvEM3TCI3fn0Q
+
+当前模型剪枝有哪些可用的开源工具？

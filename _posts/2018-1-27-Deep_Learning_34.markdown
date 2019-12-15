@@ -78,6 +78,14 @@ http://kexue.fm/archives/4681/
 
 更别致的词向量模型(六)：代码、分享与结语
 
+https://mp.weixin.qq.com/s/GYTxN5X7MnSQ4k5bD2l-PQ
+
+Salesforce的爱因斯坦AI最新NLP研究，通过情境化词向量从翻译中学习!
+
+https://mp.weixin.qq.com/s/GUUkXrB1iyg4rQbBtICq6A
+
+通过NMT训练的通用语境词向量：NLP中的预训练模型？
+
 https://mp.weixin.qq.com/s/4ZlVisY08XvisjbK5zSheg
 
 NLP中“词袋”模型和词嵌入模型的比较

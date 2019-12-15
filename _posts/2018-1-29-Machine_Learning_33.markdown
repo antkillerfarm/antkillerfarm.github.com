@@ -301,7 +301,11 @@ https://mp.weixin.qq.com/s/scGkuMJ4lZULhmK69vWYpA
 
 https://mp.weixin.qq.com/s/010zXPYu36oLOoSkaA8YMg
 
-RAdam优化器又进化：与LookAhead强强结合，性能更优速度更快
+RAdam优化器又进化：与LookAhead强强结合，性能更优速度更快（Ranger）
+
+https://mp.weixin.qq.com/s/g5mPfqxtEQBUvJQr0ORVBg
+
+可以丢掉SGD和Adam了，新的深度学习优化器Ranger：RAdam + LookAhead强强结合
 
 https://mp.weixin.qq.com/s/OtmMKR0OWytcUgbCMrSc-A
 

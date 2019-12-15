@@ -16,6 +16,10 @@ https://mp.weixin.qq.com/s/GdnnMNrpfzxTbKwIE6lfgQ
 
 NLP技术路线详解
 
+https://www.zhihu.com/question/355125622
+
+NLP领域，你推荐哪些综述性的文章？
+
 https://mp.weixin.qq.com/s/hHAYh52cw8u104OeqJNBNg
 
 一文看懂NLP神经网络发展历史中最重要的8个里程碑！

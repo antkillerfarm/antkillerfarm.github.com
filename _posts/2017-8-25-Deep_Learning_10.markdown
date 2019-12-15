@@ -8,6 +8,14 @@ category: DL
 
 ## 参考（续）
 
+https://mp.weixin.qq.com/s/x3bSu9ecl3dldCbvS1rT1g
+
+站在巨人的肩膀上，深度学习的9篇开山之作
+
+http://mp.weixin.qq.com/s/2TUw_2d36uFAiJTkvaaqpA
+
+解读Keras在ImageNet中的应用：详解5种主要的图像识别模型
+
 https://zhuanlan.zhihu.com/p/27642620
 
 YJango的卷积神经网络——介绍

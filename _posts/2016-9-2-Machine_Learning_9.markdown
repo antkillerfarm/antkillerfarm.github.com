@@ -108,6 +108,8 @@ $$MI(x_i,y)=KL(p(x_i,y)\|p(x_i)p(y))$$
 
 ![](/images/img2/Cross_validation_3.png)
 
+<a name="Bayes"/>
+
 ## 贝叶斯统计和规则化ML
 
 前面提到最大似然（maximum likelihood）估计方法的公式如下：

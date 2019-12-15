@@ -209,3 +209,7 @@ https://mp.weixin.qq.com/s/mqB9wtUjMJ1EhINrUUEf9Q
 https://mp.weixin.qq.com/s/syoJTnh6KMMRUYPQjUnEAg
 
 一个算法同时解决两大CV任务，让目标检测和实例分割互相帮助
+
+https://mp.weixin.qq.com/s/ba5rQp4IVYbVbHq3Ef7mEg
+
+深度学习检测小目标常用方法

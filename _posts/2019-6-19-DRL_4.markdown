@@ -301,17 +301,3 @@ https://mp.weixin.qq.com/s/_A0q8DFAsIclaofVgZfjMA
 https://blog.csdn.net/gsww404/article/details/80627892
 
 OpenAI-baselines的使用方法
-
-## RND
-
-OpenAI最近开发了RND（Random Network Distillation），一种基于预测的强化学习算法，用于鼓励强化学习代理通过好奇心来探索他们所处环境。在游戏任务Montezuma's Revenge上首次超过人类的平均表现。
-
-blog：
-
-https://blog.openai.com/reinforcement-learning-with-prediction-based-rewards/
-
-Reinforcement Learning with Prediction-Based Rewards
-
-代码：
-
-https://github.com/openai/random-network-distillation

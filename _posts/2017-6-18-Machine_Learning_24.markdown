@@ -277,6 +277,10 @@ https://mp.weixin.qq.com/s/rNipJC5wljzCT6Aq5gvvqw
 
 一款功能强大的特征选择工具（FeatureSelector）
 
+https://mp.weixin.qq.com/s/Bu34hPN0XAj6GmLXuQwVsQ
+
+风控特征—关系网络特征工程入门实践
+
 # 图论
 
 https://mp.weixin.qq.com/s/zOdy-1vCJD_dPFSoe0ELFA

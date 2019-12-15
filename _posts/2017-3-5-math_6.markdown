@@ -120,6 +120,8 @@ Kolmogorov–Smirnov test用于对样本是否属于某种分布进行假设检�
 
 >Nikolai Vasilyevich Smirnov，1900～1966，俄国数学家。莫斯科大学博士，斯塔克罗夫数学研究所研究员。
 
+<a name="Steklov"/>
+
 >Vladimir Andreevich Steklov，1864～1926，俄国数学家、物理学家。哈尔科夫大学博士，其导师是圣彼得堡学派第二代人物中，仅次于Andrey Markov的Aleksandr Lyapunov。哈尔科夫大学和圣彼得堡大学教授，1919年创建斯塔克罗夫数学研究所。
 
 >斯塔克罗夫数学研究所是一家专职研究没有教学任务和科研任务的研究机构。Grigori Perelman在这里，曾有6年时间没有发表一篇论文。二十世纪俄罗斯绝大多数的数学发现都源自这里。

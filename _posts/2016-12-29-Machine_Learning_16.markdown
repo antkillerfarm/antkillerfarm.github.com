@@ -13,7 +13,7 @@ p(x,y)&=\frac{cov(X,Y)}{\sigma_X\sigma_Y}=\frac{\operatorname{E}[XY]-\operatorna
 \\&=\frac{n\sum x_iy_i-\sum x_i\sum y_i}{\sqrt{n\sum x_i^2-(\sum x_i)^2}~\sqrt{n\sum y_i^2-(\sum y_i)^2}}
 \end{align}$$
 
-该系数由Karl Pearson发明。参见《机器学习（二）》中对Karl Pearson的简介。Fisher对该系数也有研究和贡献。
+该系数由Karl Pearson发明。参见[《机器学习（二）》](/ml/2016/08/02/Machine_Learning_2.html#Pearson)中对Karl Pearson的简介。Fisher对该系数也有研究和贡献。
 
 ![](/images/article/pearson.png)
 
@@ -140,7 +140,7 @@ $$R_{m\times n}\approx X_{m\times k}Y_{n\times k}^T\tag{1}$$
 
 这里的$$\approx$$表明这个投射只是一个近似的空间变换。
 
-不懂这个空间变换的同学，可参见《机器学习（十三）》中的“奇异值分解”的内容，或是《机器学习（十六）》中的“主成分分析”的内容。
+不懂这个空间变换的同学，可参见[《机器学习（十四）》](/ml/2016/09/28/Machine_Learning_14.html)中的“奇异值分解”的内容，或是[《机器学习（十七）》](/ml/2017/01/12/Machine_Learning_17.html#PCA)中的“主成分分析”的内容。
 
 一般情况下，k的值远小于n和m的值，从而达到了数据降维的目的。
 

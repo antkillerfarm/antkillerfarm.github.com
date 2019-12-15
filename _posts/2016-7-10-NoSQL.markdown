@@ -142,6 +142,10 @@ https://mp.weixin.qq.com/s/bF0gq2kIzKzKBP1QaM5ebA
 
 12306系统的秒杀“艺术”：如何抗住100万人同时抢1万张票？
 
+https://mp.weixin.qq.com/s/jWFGod7PqA06c44OkwW7EA
+
+“12306”的架构到底有多牛逼？
+
 ## GemFire
 
 GemFire是一个内存数据库。官网：

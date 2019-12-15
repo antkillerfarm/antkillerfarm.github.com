@@ -276,7 +276,7 @@ RoI Align避免对RoI的边界或者块（bins）做任何量化，例如直接�
 
 - **独立的类别预测**
 
-把loss由`tf.nn.softmax_cross_entropy_with_logits`换成`tf.nn.sigmoid_cross_entropy_with_logits`。参见《深度目标检测（五）》的YOLOv3一节。没错，YOLOv3借鉴了Mask R-CNN的这一设计思路。
+把loss由`tf.nn.softmax_cross_entropy_with_logits`换成`tf.nn.sigmoid_cross_entropy_with_logits`。参见[《深度目标检测（五）》](/deep object detection/2018/12/01/Deep_Object_Detection_5.html#YOLOv3)的YOLOv3一节。没错，YOLOv3借鉴了Mask R-CNN的这一设计思路。
 
 - **对象实例分割**
 

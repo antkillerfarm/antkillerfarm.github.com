@@ -6,6 +6,20 @@ category: Attention
 
 # BERT
 
+## ERNIE（续）
+
+https://mp.weixin.qq.com/s/FoX2bXCJlFYjb9U6JcZCqg
+
+超详细中文预训练模型ERNIE使用指南
+
+https://mp.weixin.qq.com/s/EYQXM-1WSommj9mKJZVVzw
+
+百度正式发布ERNIE 2.0，16项中英文任务超越BERT、XLNet，刷新SOTA
+
+https://mp.weixin.qq.com/s/PwiVCgN8dDWXTGZsiqM-2g
+
+最新NLP架构的直观解释：多任务学习–ERNIE 2.0
+
 ## XLNet
 
 https://mp.weixin.qq.com/s/29y2bg4KE-HNwsimD3aauw
@@ -335,23 +349,3 @@ LeCun力荐：Facebook推出十亿参数超大容量存储器
 https://mp.weixin.qq.com/s/zXXtbuSvyMOkgrWJwB83kg
 
 预训练语言模型的最新探索
-
-https://mp.weixin.qq.com/s/WzGa5XVi2Op4Lz-1uQXfxQ
-
-SpanBERT：提出基于分词的预训练模型，多项任务性能超越现有模型！
-
-https://zhuanlan.zhihu.com/p/76912493
-
-nlp中的预训练语言模型总结(单向模型、BERT系列模型、XLNet)
-
-https://mp.weixin.qq.com/s/pYSs6NhIAB6DuwNnKZhkZQ
-
-Bert改进：如何融入知识
-
-https://mp.weixin.qq.com/s/in5SDWlQg8ts4E8DTmHxMQ
-
-BERT在推荐系统领域可能会有什么作为？
-
-https://mp.weixin.qq.com/s/kJhOrz0VaYc-k-6XJS02ag
-
-8篇论文梳理BERT相关模型进展与反思

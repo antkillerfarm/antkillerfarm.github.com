@@ -66,7 +66,7 @@ https://nlp.cs.princeton.edu/cos484/
 
 COS 484: Natural Langauge Processing（陈丹琦主讲）
 
-# 世说新语+
+# 世说新语
 
 ## 2019.11（续）
 

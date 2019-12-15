@@ -302,6 +302,11 @@ NLP是ML和DL的重要研究领域。但是多数的ML或DL算法都是针对数
 
 这种表示法由于N维向量中只有一个非零元素，故名。该非零元素的序号，就是所表示的单词在单词表中的序号。
 
+某牛点评：
+
+>如果你预测的label是苹果，雪梨，香蕉，草莓这四个，显然他们不直接构成比较关系，但如果我们用1,2,3,4来做label就会出现了比较关系，labe之间的距离也不同。有了比较关系，第一个label 和最后一个 label的距离太远，影响模型的学习。因为模型觉得label 1和label 2最像，和最后一个label 最不像。   
+>不过当你的label之间存在直接的比较关系，就可以直接用数字当label。例如你做一个风控模型，预测的是四个风险类别[低，中，高，紧急]，其实你也可以用1，2，3，4来做label，因为确实存在一个比较。但这本质上就成了回归问题。
+
 One-hot Representation的缺点在于：
 
 1.该表示法中，由于任意两个单词的词向量都是正交的，因此无法反映单词之间的语义相似度。
@@ -313,6 +318,10 @@ One-hot Representation的缺点在于：
 https://mp.weixin.qq.com/s?__biz=MzI4MzM2NTU0Mg==&mid=2247483698&idx=1&sn=cf185232e43b4523ab9b0bc0ce425ed4
 
 One-Hot编码与哑变量
+
+https://www.zhihu.com/question/359742335
+
+分类问题的label为啥必须是one hot形式？
 
 ## Word Embedding
 
@@ -329,21 +338,3 @@ Bengio自己提出了一种基于神经网络的Word Embedding的方案，然而
 http://www.cnblogs.com/neopenx/p/4570648.html
 
 词向量概况
-
-## word2vec
-
-除了Bengio方案之外，早期人们还尝试过基于共生矩阵（Co-occurrence Matrix）SVD分解的Word Embedding方案。该方案对于少量语料有不错的效果，但一旦语料增大，计算量即呈指数级上升。
-
-这类方案的典型是Latent Semantic Analysis(LSA)。参见《机器学习（二十一）》。
-
-Tomas Mikolov于2013年对Bengio方案进行了简化改进，提出了目前最为常用的word2vec方案。
-
-介绍word2vec的数学原理比较好的有：
-
-《Deep Learning实战之word2vec》，网易有道的邓澍军、陆光明、夏龙著。
-
-《word2vec中的数学》，peghoty著。该书的网页版：
-
-http://blog.csdn.net/itplus/article/details/37969519
-
-老惯例这里只对最重要的内容进行摘要。
