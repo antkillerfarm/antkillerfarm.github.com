@@ -280,7 +280,21 @@ https://mp.weixin.qq.com/s/23-S5tXTqi2LSe84OoQvvA
 
 跑得好好的Java进程，怎么突然就瘫痪了？
 
-# Javascript（续）
+# Javascript
+
+### Step2：回调函数嵌套问题（续）
+
+回调嵌套的解决方法有三种：
+
+1.使用Promise。
+
+2.使用Generator。
+
+3.使用递归函数。
+
+虽然JS递归函数的例子在教程中不太多，但和C语言类似，JS也拥有定义递归函数的能力，且语法也和C类似。这里使用递归函数解决回调嵌套的问题，代码在：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/hello/super_button2.html
 
 ### Step3:延迟动画
 
@@ -337,35 +351,3 @@ https://microsoft.github.io/monaco-editor/
 https://www.cnblogs.com/isaboy/p/monaco-editor.html
 
 微软开源代码编辑器monaco-editor
-
-## TypeScript
-
-TypeScript是JavaScript的一个超集，而且本质上向这个语言添加了可选的静态类型和基于类的面向对象编程。
-
-官网：
-
-https://www.typescriptlang.org/
-
-安装：
-
-`npm install -g typescript`
-
-TypeScript文件的后缀是`.ts`，它不能直接在浏览器中运行，而需要编译成JS才能运行。也正因为如此，TS并没有什么兼容性问题。
-
-编译：
-
-`tsc helloworld.ts`
-
-## D3.js
-
-D3.js是一个数据可视化的库。
-
-官网：
-
-https://d3js.org/
-
-参考：
-
-https://www.cnblogs.com/fastmover/p/7779660.html
-
-D3.js从入门到“放弃”指南

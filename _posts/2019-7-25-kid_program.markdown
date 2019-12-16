@@ -328,6 +328,38 @@ VS2015以后，MS不再提供VS的离线安装包，因为安装文件实在是�
 
 # Javascript（续）
 
+## TypeScript
+
+TypeScript是JavaScript的一个超集，而且本质上向这个语言添加了可选的静态类型和基于类的面向对象编程。
+
+官网：
+
+https://www.typescriptlang.org/
+
+安装：
+
+`npm install -g typescript`
+
+TypeScript文件的后缀是`.ts`，它不能直接在浏览器中运行，而需要编译成JS才能运行。也正因为如此，TS并没有什么兼容性问题。
+
+编译：
+
+`tsc helloworld.ts`
+
+## D3.js
+
+D3.js是一个数据可视化的库。
+
+官网：
+
+https://d3js.org/
+
+参考：
+
+https://www.cnblogs.com/fastmover/p/7779660.html
+
+D3.js从入门到“放弃”指南
+
 ## Traffic Demo
 
 2019.9

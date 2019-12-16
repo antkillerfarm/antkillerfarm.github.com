@@ -88,6 +88,10 @@ https://software.intel.com/en-us/articles/optimizing-applications-for-numa
 
 Optimizing Applications for NUMA
 
+https://mp.weixin.qq.com/s/uH0XRjDNfVQe5r1aes0zDw
+
+性能之殇：从冯·诺依曼瓶颈谈起
+
 ## 多核
 
 https://zhuanlan.zhihu.com/p/53596593

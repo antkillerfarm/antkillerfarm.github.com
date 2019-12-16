@@ -324,7 +324,7 @@ https://github.com/spotify/chartify
 
 ## Plotly
 
-Plotly也是Matplotlib的威力加强版。
+Plotly也是Matplotlib的威力加强版，主打交互式绘图。
 
 官网：
 

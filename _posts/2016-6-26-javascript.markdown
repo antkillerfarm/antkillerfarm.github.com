@@ -248,6 +248,10 @@ https://www.jianshu.com/p/57d910008612
 
 Electron: 从零开始写一个记事本app
 
+https://mp.weixin.qq.com/s/pBKoRBO_Grp1otGlDp5pUw
+
+教你做个属于自己的Markdown编辑器
+
 ## CEF
 
 Chromium Embedded Framework的官网是：
@@ -335,15 +339,3 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/hello
 在上面的例子中，所有的button都是同步动画的。如果想要一个接着一个播放动画的话。一种思路就是：在上一个动画的AnimationEnd事件处理函数中，启动下一个动画。但这种方法会导致回调函数的嵌套问题。
 
 首先需要明确一点：回调嵌套并没有执行效率的问题。JS脚本都是单线程执行的，因此无论采用何种写法，都不会改变函数的执行顺序。回调嵌套的问题主要出在可读性方面。
-
-回调嵌套的解决方法有三种：
-
-1.使用Promise。
-
-2.使用Generator。
-
-3.使用递归函数。
-
-虽然JS递归函数的例子在教程中不太多，但和C语言类似，JS也拥有定义递归函数的能力，且语法也和C类似。这里使用递归函数解决回调嵌套的问题，代码在：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/hello/super_button2.html

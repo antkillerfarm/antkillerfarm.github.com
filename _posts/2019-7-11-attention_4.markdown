@@ -20,6 +20,10 @@ https://mp.weixin.qq.com/s/PwiVCgN8dDWXTGZsiqM-2g
 
 最新NLP架构的直观解释：多任务学习–ERNIE 2.0
 
+https://mp.weixin.qq.com/s/yZvKMaBZyodr8SLvcAn7Mg
+
+深度剖析知识增强语义表示模型——ERNIE
+
 ## XLNet
 
 https://mp.weixin.qq.com/s/29y2bg4KE-HNwsimD3aauw

@@ -100,7 +100,7 @@ Imagination目前主要的客户是：
 
 https://www.imgtec.com/vision-ai/
 
-# Habana
+## Habana
 
 Habana Labs是一家位于以色列特拉维夫和加州圣何塞的无晶圆厂半导体公司，创立于2016年。
 
@@ -115,6 +115,12 @@ Habana的产品线主要有：
 官网：
 
 https://habana.ai
+
+参考：
+
+https://mp.weixin.qq.com/s/cnHQSmM89Sp92gke_F9T2Q
+
+一窥Habana的推理和训练神经处理器
 
 ## Qualcomm
 

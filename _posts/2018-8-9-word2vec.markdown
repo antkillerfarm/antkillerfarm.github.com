@@ -299,6 +299,10 @@ https://mp.weixin.qq.com/s/dnqbsBXHodJB0ZRUrcukCw
 
 使用Docker安装Neo4j
 
+https://mp.weixin.qq.com/s/UlgRDOm93QbjWA4q_kky9g
+
+获取到知识后，如何进行存储和便捷的检索？
+
 ## neo4j-graph-algorithms
 
 Neo4j Graph Algorithms扩展包，是一个关于图算法的jar包，集成了一些常见的图算法，比如社区发现，路径扩展，中心点计算，PageRank等。

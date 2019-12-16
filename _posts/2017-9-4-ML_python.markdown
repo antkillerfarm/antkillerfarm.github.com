@@ -140,6 +140,10 @@ quickstart中文版：
 
 https://mp.weixin.qq.com/s/q0jSrxRRQAB7FUUqgD5H6A
 
+中文教程：
+
+https://www.runoob.com/numpy/numpy-tutorial.html
+
 ### 文件存取
 
 原始二进制文件：tofile()和fromfile()

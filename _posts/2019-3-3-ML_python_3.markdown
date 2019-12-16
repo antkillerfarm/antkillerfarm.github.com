@@ -34,6 +34,10 @@ https://mp.weixin.qq.com/s/PtZ3YvFrUgbK5y3pcAeW9A
 
 使用OpenCV和Python实现的机器学习
 
+https://mp.weixin.qq.com/s/iT91pDPP49EuNA0KfY2njg
+
+十大数据科学Python热门库推荐
+
 https://mp.weixin.qq.com/s/wbcAIrI0eNALfKhgkZQYTQ
 
 用Python也能进军金融领域？这有一份股票交易策略开发指南

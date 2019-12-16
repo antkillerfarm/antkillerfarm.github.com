@@ -24,6 +24,10 @@ https://mp.weixin.qq.com/s/Ut_of4Xb8c0beACShKOWlQ
 
 ## Federated Transfer Learning
 
+https://mp.weixin.qq.com/s/Lzs5qaZpgcnQP_9MwgWuKA
+
+联邦学习FL进展与开放问题万字综述论文，58位学者25家机构联合出品，105页pdf438篇文献
+
 https://mp.weixin.qq.com/s/l-Ae8-K78AYITSn8_0LIfg
 
 破解数据孤岛壁垒，三篇论文详细解读联邦学习

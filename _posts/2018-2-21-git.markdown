@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Git, ZeroMQ, WebKit, 分布式ID生成器
+title:  Git, ZeroMQ, WebKit
 category: technology 
 ---
 
@@ -46,9 +46,30 @@ https://learngitbranching.js.org
 
 `git init`
 
-2.撤销add
+2.Git常用的撤销操作
 
-`git rm --cached FILE`
+基本状态标识
+
+- A- = untracked 未跟踪
+- A = tracked 已跟踪未修改
+- A+ = modified - 已修改未暂存
+- B = staged - 已暂存未提交
+- C = committed - 已提交未PUSH
+
+各状态之间变化
+
+- A- -> B : `git add <FILE>`
+- B -> A- : `git rm --cached <FILE>`
+- B -> 删除不保留文件 : `git rm -f <FILE>`
+- A -> A- : `git rm --cached <FILE>`
+- A -> A+ : 修改文件
+- A+ -> A : `git checkout -- <FILE>`
+- A+ -> B : `git add <FILE>`
+- B -> A+ : `git reset HEAD <FILE>`
+- B -> C : `git commit`
+- C -> B : `git reset --soft HEAD^`
+- 修改最后一次提交: `git commit --amend`
+- 只修改内容，不改msg: `git commit --amend --no-edit`
 
 3.暂存本地修改及恢复
 
@@ -131,13 +152,7 @@ git的reset和checkout的区别
     helper = store
 {% endhighlight %}
 
-12.`git cherry-pick`用于把另一个本地分支的commit修改应用到当前分支。
-
-13.`git commit --amend`将当前的修改合并到上一个commit中。
-
-这个在代码review的时候比较有用。如果上一个commit在review的时候发现问题，可以再次修改后，合并到上一个commit中，如此反复直到review成功。
-
-14.SSH
+12.SSH
 
 {% highlight bash %}
 cd ~/.ssh
@@ -147,7 +162,7 @@ cat ~/.ssh/id_rsa.pub
 
 >`ssh-keygen`命令会生成两个文件id_rsa和id_rsa.pub，前者是私钥，后者是公钥，不要弄错了。
 
-15.submodule
+13.submodule
 
 有的时候，包太大了，可以将之分成若干小包（submodule）。
 
@@ -167,17 +182,13 @@ https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key
 
 Generating Your SSH Public Key
 
-15.`git blame`查看一行代码是谁改的。
+14.`git blame`查看一行代码是谁改的。
 
-16.`HEAD`表示当前版本，`HEAD^^`表示当前版本之前的两个版本，如果回溯的版本较多也可以写作`HEAD~100`。
+15.`HEAD`表示当前版本，`HEAD^^`表示当前版本之前的两个版本，如果回溯的版本较多也可以写作`HEAD~100`。
 
-17.cherry-pick用于将分支A上的修改C，移植到分支B上。
+16.cherry-pick用于将分支A上的修改C，移植到分支B上。
 
 `git cherry-pick <commit id>`
-
-18.如果对本次提交的内容不满意的话，可以使用：
-
-`git commit --amend --no-edit`
 
 ## 如何git超大版本库
 
@@ -417,21 +428,3 @@ http://trac.webkit.org/wiki/BuildingGtk
 3)gtk-doc-tools
 
 4)libgail-dev
-
-# 分布式ID生成器
-
-http://mp.weixin.qq.com/s/Bk5k6vRG4Rq4iCtmtYDEGQ
-
-Leaf——美团点评分布式ID生成系统
-
-https://mp.weixin.qq.com/s/6J7n3udEyQvUHRHwvALNYw
-
-Leaf：美团分布式ID生成服务开源
-
-https://mp.weixin.qq.com/s/_z0-90xbsCd4Pdi6UlEvnA
-
-分布式ID生成器
-
-https://mp.weixin.qq.com/s/Yk2ZlGCEINGrsTfHI6zpsw
-
-分布式id生成器

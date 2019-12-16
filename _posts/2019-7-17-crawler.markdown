@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  爬虫, scrapy
+title:  爬虫, scrapy, 分布式ID生成器
 category: technology 
 ---
 
@@ -173,3 +173,21 @@ https://mp.weixin.qq.com/s/i-umuOi8jGw8dMQmG44liQ
 https://mp.weixin.qq.com/s/hzl8D-AhpCwqZVSLTK56XQ
 
 Python爬虫--Scrapy入门
+
+# 分布式ID生成器
+
+http://mp.weixin.qq.com/s/Bk5k6vRG4Rq4iCtmtYDEGQ
+
+Leaf——美团点评分布式ID生成系统
+
+https://mp.weixin.qq.com/s/6J7n3udEyQvUHRHwvALNYw
+
+Leaf：美团分布式ID生成服务开源
+
+https://mp.weixin.qq.com/s/_z0-90xbsCd4Pdi6UlEvnA
+
+分布式ID生成器
+
+https://mp.weixin.qq.com/s/Yk2ZlGCEINGrsTfHI6zpsw
+
+分布式id生成器
