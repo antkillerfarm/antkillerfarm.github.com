@@ -192,10 +192,6 @@ https://mp.weixin.qq.com/s/wH-YYzifsEqMCD_4n8B-Kw
 
 12张图看懂Gartner《智能客服机器人行业最佳实践》报告
 
-https://mp.weixin.qq.com/s/U2r4qDLh4WZFgAIoF_SRPg
-
-金融客服AI新玩法：语言学运用、LSTM+DSSM算法、多模态情感交互
-
 https://mp.weixin.qq.com/s/tntgiltyHfbIBktgdL3peA
 
 15年研发经验博士手把手教学：从零开始搭建智能客服

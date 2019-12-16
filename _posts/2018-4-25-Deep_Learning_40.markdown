@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十）——行人重识别
+title:  深度学习（四十）——行人重识别, 数据增强
 category: DL 
 ---
 
@@ -273,3 +273,97 @@ https://mp.weixin.qq.com/s/J1_bs1h_eTqmYU4q5Lzhpg
 https://zhuanlan.zhihu.com/p/96999382
 
 重识别（re-ID）特征适合直接用于跟踪（tracking）问题么？
+
+# 数据增强
+
+https://mp.weixin.qq.com/s/GqPfvWwH1T0XFwiZ86cW8A
+
+SamplePairing：针对图像处理领域的高效数据增强方式
+
+https://mp.weixin.qq.com/s/cQtXvOjSXFc4YKn7ANBc_w
+
+谷歌大脑提出自动数据增强方法AutoAugment：可迁移至不同数据集
+
+https://mp.weixin.qq.com/s/ojFo7-gUh73iK3uImFS2-Q
+
+一文道尽主流开源框架中的数据增强
+
+https://mp.weixin.qq.com/s/xJhWu-1FyhIWbFBC5oHMkw
+
+一文道尽深度学习中的数据增强方法（上）
+
+https://mp.weixin.qq.com/s/OctAGrcBB0a6TOGWMmVKUw
+
+深度学习中的数据增强（下）
+
+https://mp.weixin.qq.com/s/lMU6_ywQqneyunqEV6uDiA
+
+如何改善你的训练数据集？
+
+https://mp.weixin.qq.com/s/ooX9Hj5ejO6po6Ghb4zOug
+
+一文解读合成数据在机器学习技术下的表现
+
+https://zhuanlan.zhihu.com/p/33485388
+
+mixup与paring samples ，ICLR2018投稿论文的数据增广两种方式
+
+https://mp.weixin.qq.com/s/_7xFBLPGT0VRTJ22toHJ3g
+
+深度学习中常用的图像数据增强方法
+
+https://mp.weixin.qq.com/s/sXV9epWguGbJEZYo4yNp5Q
+
+如何正确使用样本扩充改进目标检测性能
+
+https://zhuanlan.zhihu.com/p/46833956
+
+图像数据增强之弹性形变（Elastic Distortions）
+
+https://mp.weixin.qq.com/s/iaeHnfepyeLuOioHqMO9bQ
+
+一种小目标检测中有效的数据增强方法
+
+https://mp.weixin.qq.com/s/ws1R-VPyJY6J18OttBDYog
+
+超少量数据训练神经网络：IEEE论文提出径向变换实现图像增强
+
+https://mp.weixin.qq.com/s/g4022Rc1RNvr3IOC_bWuaQ
+
+深度学习中的数据增强方法都有哪些？
+
+https://mp.weixin.qq.com/s/YuFVEhO3wzCN5dIM_YqA7A
+
+EDA：最简单的自然语言处理数据增广方法
+
+https://mp.weixin.qq.com/s/IeqSfjt4x8HquXBeQN2gdQ
+
+深度学习中的数据增强方法总结
+
+https://zhuanlan.zhihu.com/p/76044027
+
+A survey on Image Data Augmentation数据增强文献综述
+
+https://mp.weixin.qq.com/s/2B0NBY39noikPEO1dB06Sg
+
+CV领域中数据增强相关的论文推荐
+
+https://www.zhihu.com/question/35339639
+
+使用深度学习(CNN)算法进行图像识别工作时，有哪些data augmentation的奇技淫巧？
+
+https://mp.weixin.qq.com/s/YtL7GeIGYm9xtdofnabu1g
+
+如何选择最合适的数据增强操作
+
+https://mp.weixin.qq.com/s/Vi_1Sg8OKG-EG4aC4QTCWA
+
+半监督学习的新助力：无监督数据扩增法
+
+https://mp.weixin.qq.com/s/omUtD3GFOpP1dvfWZgLDww
+
+计算机视觉模型效果不佳，你可能是被相机的Exif信息坑了
+
+https://mp.weixin.qq.com/s/pV7C2sSJwP3rBO6OYeF-nw
+
+基于马尔可夫链的数据增强

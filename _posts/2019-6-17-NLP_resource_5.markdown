@@ -26,10 +26,6 @@ http://mp.weixin.qq.com/s/lmHWo9MUdv7ZMI7ARNmTSw
 
 拆开阿里小蜜的内核，看智能人机交互的实现逻辑
 
-https://www.microsoft.com/en-us/research/project/dssm/
-
-微软的DSSM模型
-
 http://www.csdn.net/article/2015-08-28/2825569
 
 递归神经网络不可思议的有效性
