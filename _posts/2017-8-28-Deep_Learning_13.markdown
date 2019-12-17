@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十三）——花式池化, 数据增强, 深度信息检索, 多模态学习
+title:  深度学习（十三）——花式池化, 深度信息检索
 category: DL 
 ---
 
@@ -72,100 +72,6 @@ UnPooling是一种常见的上采样操作。其过程如下图所示：
 
 3.上采样阶段，利用第1步保存的Max Location，重建下一层的feature map。
 
-# 数据增强
-
-https://mp.weixin.qq.com/s/GqPfvWwH1T0XFwiZ86cW8A
-
-SamplePairing：针对图像处理领域的高效数据增强方式
-
-https://mp.weixin.qq.com/s/cQtXvOjSXFc4YKn7ANBc_w
-
-谷歌大脑提出自动数据增强方法AutoAugment：可迁移至不同数据集
-
-https://mp.weixin.qq.com/s/ojFo7-gUh73iK3uImFS2-Q
-
-一文道尽主流开源框架中的数据增强
-
-https://mp.weixin.qq.com/s/xJhWu-1FyhIWbFBC5oHMkw
-
-一文道尽深度学习中的数据增强方法（上）
-
-https://mp.weixin.qq.com/s/OctAGrcBB0a6TOGWMmVKUw
-
-深度学习中的数据增强（下）
-
-https://mp.weixin.qq.com/s/lMU6_ywQqneyunqEV6uDiA
-
-如何改善你的训练数据集？
-
-https://mp.weixin.qq.com/s/ooX9Hj5ejO6po6Ghb4zOug
-
-一文解读合成数据在机器学习技术下的表现
-
-https://zhuanlan.zhihu.com/p/33485388
-
-mixup与paring samples ，ICLR2018投稿论文的数据增广两种方式
-
-https://mp.weixin.qq.com/s/_7xFBLPGT0VRTJ22toHJ3g
-
-深度学习中常用的图像数据增强方法
-
-https://mp.weixin.qq.com/s/sXV9epWguGbJEZYo4yNp5Q
-
-如何正确使用样本扩充改进目标检测性能
-
-https://zhuanlan.zhihu.com/p/46833956
-
-图像数据增强之弹性形变（Elastic Distortions）
-
-https://mp.weixin.qq.com/s/iaeHnfepyeLuOioHqMO9bQ
-
-一种小目标检测中有效的数据增强方法
-
-https://mp.weixin.qq.com/s/ws1R-VPyJY6J18OttBDYog
-
-超少量数据训练神经网络：IEEE论文提出径向变换实现图像增强
-
-https://mp.weixin.qq.com/s/g4022Rc1RNvr3IOC_bWuaQ
-
-深度学习中的数据增强方法都有哪些？
-
-https://mp.weixin.qq.com/s/YuFVEhO3wzCN5dIM_YqA7A
-
-EDA：最简单的自然语言处理数据增广方法
-
-https://mp.weixin.qq.com/s/IeqSfjt4x8HquXBeQN2gdQ
-
-深度学习中的数据增强方法总结
-
-https://zhuanlan.zhihu.com/p/76044027
-
-A survey on Image Data Augmentation数据增强文献综述
-
-https://mp.weixin.qq.com/s/2B0NBY39noikPEO1dB06Sg
-
-CV领域中数据增强相关的论文推荐
-
-https://www.zhihu.com/question/35339639
-
-使用深度学习(CNN)算法进行图像识别工作时，有哪些data augmentation的奇技淫巧？
-
-https://mp.weixin.qq.com/s/YtL7GeIGYm9xtdofnabu1g
-
-如何选择最合适的数据增强操作
-
-https://mp.weixin.qq.com/s/Vi_1Sg8OKG-EG4aC4QTCWA
-
-半监督学习的新助力：无监督数据扩增法
-
-https://mp.weixin.qq.com/s/omUtD3GFOpP1dvfWZgLDww
-
-计算机视觉模型效果不佳，你可能是被相机的Exif信息坑了
-
-https://mp.weixin.qq.com/s/pV7C2sSJwP3rBO6OYeF-nw
-
-基于马尔可夫链的数据增强
-
 # 深度信息检索
 
 Information Retrieval是用户进行信息查询和获取的主要方式，是查找信息的方法和手段。狭义的信息检索仅指信息查询（Information Search）。即用户根据需要，采用一定的方法，借助检索工具，从信息集合中找出所需要信息的查找过程。广义的信息检索是信息按一定的方式进行加工、整理、组织并存储起来，再根据信息用户特定的需要将相关信息准确的查找出来的过程。
@@ -180,7 +86,45 @@ Information Retrieval是用户进行信息查询和获取的主要方式，是�
 
 ## DSSM
 
+论文：
+
 《Learning deep structured semantic models for web search using clickthrough data》
+
+### Word Hashing
+
+DSSM已经意识到one-hot是一种低效的词向量表示方式，因此，它转而采用了一种叫做Word Hashing的技术。
+
+Word Hashing是非常重要的一个trick，以英文单词来说，比如good，它可以写成`#good#`，然后按tri-grams来进行分解为`#go goo ood od#`，再将这个tri-grams灌入到bag-of-word中，这种方式可以非常有效的解决vocabulary太大的问题(因为在真实的web search中vocabulary就是异常的大)，另外也不会出现oov问题，因此英文单词才26个，3个字母的组合都是有限的，很容易枚举光。
+
+那么问题就来了，这样两个不同的单词会不会产出相同的tri-grams，paper里面做了统计，说了这个冲突的概率非常的低，500K个word可以降到30k维，冲突的概率为0.0044%。
+
+但是在中文场景下，这个Word Hashing估计没有这么有效了。
+
+上面讲述了Word Hashing的词向量的构建方法，这种方法也可以扩展到句子：统计一下句子中每个tri-grams出现的次数，然后用次数组成句子向量即可。
+
+### 网络结构
+
+![](/images/img3/DSSM.png)
+
+上图是DSSM的网络结构：句子向量经过若干层的神经网络之后，得到了语义向量（semantic concept vectors）。计算两个语义向量的cos相似度，得到两个句子的匹配程度。
+
+### 参考
+
+https://www.microsoft.com/en-us/research/project/dssm/
+
+微软的DSSM模型
+
+https://www.cnblogs.com/baiting/p/7195998.html
+
+深度语义匹配模型-DSSM及其变种
+
+https://blog.csdn.net/u013074302/article/details/76422551
+
+语义相似度计算——DSSM
+
+https://mp.weixin.qq.com/s/U2r4qDLh4WZFgAIoF_SRPg
+
+金融客服AI新玩法：语言学运用、LSTM+DSSM算法、多模态情感交互
 
 ## CDSSM
 
@@ -297,53 +241,3 @@ https://mp.weixin.qq.com/s/AWsiAYyVWY83s5uJ01Lg6Q
 https://mp.weixin.qq.com/s/fw5dRWmvZ17lqzxjKFrCtQ
 
 相关性特征在图片搜索中的实践
-
-# 多模态学习
-
-https://github.com/HuaizhengZhang/Awsome-Deep-Learning-for-Video-Analysis
-
-深度学习视频分析/多模态学习资源大列表
-
-https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw
-
-多模态学习研究进展综述
-
-https://mp.weixin.qq.com/s/g3rwPsusYi7gQopOHvdNrA
-
-多模态学习调研
-
-https://mp.weixin.qq.com/s/vpBPkjuCebSWh5qPLYHCkw
-
-上海交大提出多模态框架“EmotionMeter”，更精准地识别人类情绪
-
-https://mp.weixin.qq.com/s/BBg04rDtiqU-XrWortufNA
-
-康奈尔&英伟达提出多模态无监督图像转换新方法
-
-http://mp.weixin.qq.com/s/khOINUyrNV3TFfgNRheH0A
-
-卷积神经网络压缩、多模态的语义分析研究
-
-https://mp.weixin.qq.com/s/ywU4L659iRcmIgmV6RtbXA
-
-DeepMind新研究连接听与看，实现“听声辨位”的多模态学习
-
-https://mp.weixin.qq.com/s/1qhcyTXttgKWlw-Oy556Tw
-
-TPAMI2019最新《多模态机器学习综述》
-
-https://mp.weixin.qq.com/s/BczgUuh2FIvP5MG9xh87wQ
-
-多模态多任务学习新论文
-
-https://mp.weixin.qq.com/s/ipj8qpYRiYbIeXn2PZb1SQ
-
-5G时代下多模态理解做不到位注定要掉队
-
-https://mp.weixin.qq.com/s/UghgWBN7mE8oJdMUvjAjcQ
-
-何晖光：多模态情绪识别及跨被试迁移学习
-
-https://mp.weixin.qq.com/s/EMWpBP5iB1Qrleo3XNjbuQ
-
-IEEE Fellow何晓东&邓力：多模态智能论文综述：表示学习，信息融合与应用
