@@ -231,6 +231,10 @@ https://mp.weixin.qq.com/s/RgH3std9f5f6sMq8fHSGjQ
 
 36岁北航校友打造中国自主AI芯片第一股！挖矿起家，6年IPO，市值百亿（嘉楠创始人及CEO张楠赓）
 
+https://mp.weixin.qq.com/s/dFI5e4f2J7R7BHZrjtiWZg
+
+涉嫌职务侵占十万元！前比特大陆矿机芯片设计总监，神马矿机创始人杨作兴被捕
+
 # Sikuli
 
 Sikuli是一种新颖的图形脚本语言，或者说是一种另类的自动化测试技术。它采用图像识别的方式进行自动检测。

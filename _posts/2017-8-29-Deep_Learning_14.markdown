@@ -50,7 +50,7 @@ https://mp.weixin.qq.com/s/J4opJ6NvbTxbHWAWNHEltw
 
 ## Batch Normalization
 
-在《深度学习（二）》中，我们已经简单的介绍了Batch Normalization的基本概念。这里主要讲述一下它的实现细节。
+在[《深度学习（三）》](/dl/2017/05/27/Deep_Learning_3.html#BN)中，我们已经简单的介绍了Batch Normalization的基本概念。这里主要讲述一下它的实现细节。
 
 我们知道在神经网络训练开始前，都要对输入数据做一个归一化处理，那么具体为什么需要归一化呢？归一化后有什么好处呢？
 
@@ -62,13 +62,13 @@ https://mp.weixin.qq.com/s/J4opJ6NvbTxbHWAWNHEltw
 
 首先，我们回顾一下归一化的一般做法：
 
-$$\hat x^{(k)} = \frac{x^{(k)} - E[x^{(k)}]}{\sqrt{Var[x^{(k)}]}}$$
+$$\hat x^{(k)} = \frac{x^{(k)} - E[x^{(k)}]}{\sqrt{Var[x^{(k)}]}}\tag{1}$$
 
 其中，$$x = (x^{(0)},x^{(1)},…x^{(d)})$$表示d维的输入向量。
 
 接着，定义归一化变换函数：
 
-$$y^{(k)}=\gamma^{(k)}\hat x^{(k)}+\beta^{(k)}$$
+$$y^{(k)}=\gamma^{(k)}\hat x^{(k)}+\beta^{(k)}\tag{2}$$
 
 这里的$$\gamma^{(k)},\beta^{(k)}$$是待学习的参数。
 
@@ -78,33 +78,37 @@ BN的主要思想是用同一batch的样本分布来近似整体的样本分布�
 
 **Step 1**.计算mini-batch mean。
 
-$$\mu_\mathcal{B}\leftarrow \frac{1}{m}\sum_{i=1}^mx_i\tag{1}$$
+$$\mu_\mathcal{B}\leftarrow \frac{1}{m}\sum_{i=1}^mx_i\tag{3}$$
 
 **Step 2**.计算mini-batch variance。
 
-$$\sigma_\mathcal{B}^2\leftarrow \frac{1}{m}\sum_{i=1}^m(x_i-\mu_\mathcal{B})^2\tag{2}$$
+$$\sigma_\mathcal{B}^2\leftarrow \frac{1}{m}\sum_{i=1}^m(x_i-\mu_\mathcal{B})^2\tag{4}$$
 
 **Step 3**.normalize。
 
-$$\hat x_i\leftarrow \frac{x_i-\mu_\mathcal{B}}{\sqrt{\sigma_\mathcal{B}^2+\epsilon}}\tag{3}$$
+$$\hat x_i\leftarrow \frac{x_i-\mu_\mathcal{B}}{\sqrt{\sigma_\mathcal{B}^2+\epsilon}}\tag{5}$$
 
 这里的$$\epsilon$$是为了数值的稳定性而添加的常数。
 
 **Step 4**.scale and shift。
 
-$$y_i=\gamma\hat x_i+\beta\equiv BN_{\gamma,\beta}(x_i)\tag{4}$$
+$$y_i=\gamma\hat x_i+\beta\equiv BN_{\gamma,\beta}(x_i)\tag{6}$$
 
 在实际使用中，BN计算和卷积计算一样，都被当作神经网络的其中一层。即：
 
-$$z=g(Wx+b)\rightarrow z=g(BN(Wx+b))=g(BN(Wx))\tag{5}$$
+$$z=g(Wx+b)\rightarrow z=g(BN(Wx+b))=g(BN(Wx))\tag{7}$$
 
 从另一个角度来看，BN的均值、方差操作，相当于去除一阶和二阶信息，而只保留网络的高阶信息，即非线性部分。因此，上式最后一步中b被忽略，也就不难理解了。
 
 BN的误差反向算法相对复杂，这里不再赘述。
 
-在inference阶段，BN网络忽略Step 1和Step 2，只计算后两步。其中,$$\beta,\gamma$$由之前的训练得到。而$$\mu,\sigma$$原则上要求使用全体样本的均值和方差，但样本量过大的情况下，也可使用训练时的若干个mini batch的均值和方差的FIR滤波值。
+在inference阶段，BN网络忽略Step 1和Step 2，只计算后两步。
 
-由公式5可以看出，BN不是针对x（输入的），而是针对Wx+b的。而W每个channel都不同，因此在`batch*channel*height*width`这么大的一层中，对总共`batch*height*width`个像素点统计得到一个均值和一个标准差，共得到channel组参数。
+- $$\beta,\gamma$$由之前的训练得到。
+
+- $$\mu,\sigma$$原则上要求使用全体样本的均值和方差，但样本量过大的情况下，也可使用训练时的若干个mini batch的均值和方差的FIR滤波值。因此，**这两个参数也是训练得到的**。
+
+由公式7可以看出，BN不是针对x（输入的），而是针对Wx+b的。而W每个channel都不同。因此，对于Layer: `batch*channel*height*width`来说，对`batch*height*width`个像素点统计得到一个均值和一个标准差，这样总共会得到channel组参数。
 
 ## Instance Normalization
 
@@ -148,6 +152,8 @@ BN的特点：
 
 ## Layer Normalization
 
+Layer Normalization的计算比较简单，直接使用公式1即可。由于它是针对x的，因此对每个样本都要统计它的均值和方差，这对于inference来说，计算量是偏大的。
+
 LN的特点：
 
 不依赖于batch size的大小，即使对于batch size为1的在线学习，也可以完美适应；
@@ -156,7 +162,7 @@ LN的特点：
 
 适用于RNN或LSTM，而在CNN上表现一般。
 
-### Weight Normalization
+## Weight Normalization
 
 WN的公式如下：
 

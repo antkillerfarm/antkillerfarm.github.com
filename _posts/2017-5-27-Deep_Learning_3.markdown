@@ -21,6 +21,8 @@ https://www.zhihu.com/question/24529483
 
 在神经网络中weight decay起到的做用是什么？momentum呢？normalization呢？
 
+<a name="BN"/>
+
 ## Batch Normalization
 
 Batch Normalization是Google提出的一种神经网络优化技巧。

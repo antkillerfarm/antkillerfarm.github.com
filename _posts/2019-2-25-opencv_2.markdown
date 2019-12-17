@@ -294,6 +294,10 @@ https://mp.weixin.qq.com/s/QPXVLleQgW2oZHbhuoJLww
 
 Mat基本元素的表达与读写
 
+https://mp.weixin.qq.com/s/MiHz2zLBif_s1lksQXLBbw
+
+OpenCV中如何提取不规则ROI区域
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。
