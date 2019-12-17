@@ -202,6 +202,10 @@ https://paperswithcode.com/area/playing-games
 
 从Paper到Coding, 一览深度强化学习挑战34类游戏
 
+https://mp.weixin.qq.com/s/-vqX0PHOsDNbj2NX_cR2qg
+
+微软首席研究员Katja Hofmann-强化学习：过去、现在和未来展望，附97页ppt
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》
@@ -343,7 +347,3 @@ DeepMind和OpenAI算是DRL的两大重镇。
 DeepMind主要是David Silver和他导师Richard Sutton一脉，最初来源于control theory，代表作是Deep Q-learning, DDPG。
 
 OpenAI背后的派别是Berkeley帮，主要工作是围绕Pieter Abbeel以及他的两位superstar博士生Sergey Levine和John Schulman，最初来源于Robotics，代表作是TRPO以及后来的PPO。
-
-某牛的点评：
-
->现在的研究发现policy gradient的方法效果比Q-learning这种单纯基于value的方法好，所以选择policy gradient，事实上是把两者结合起来的actor-critic效果最好！只是说actor-critic的关键在于policy gradient。   

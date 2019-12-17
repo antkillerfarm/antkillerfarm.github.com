@@ -72,6 +72,44 @@ UnPooling是一种常见的上采样操作。其过程如下图所示：
 
 3.上采样阶段，利用第1步保存的Max Location，重建下一层的feature map。
 
+从上面的描述可以看出，UnPooling不完全是Pooling的逆运算：
+
+1.Pooling之后的feature map，要经过若干运算，才会进行UnPooling操作。
+
+2.对于非Max Location的地方以零填充。然而这样并不能完全还原信息。
+
+参考：
+
+http://blog.csdn.net/u012938704/article/details/52831532
+
+caffe反卷积
+
+## K-max Pooling
+
+![](/images/article/kmax_pooling.png)
+
+## 参考
+
+http://www.cnblogs.com/tornadomeet/p/3432093.html
+
+Stochastic Pooling简单理解
+
+http://mp.weixin.qq.com/s/XzOri12hwyOCdI1TgGQV3w
+
+新型池化层sort_pool2d实现更快更好的收敛：表现优于最大池化层
+
+http://blog.csdn.net/liuchonge/article/details/67638232
+
+CNN与句子分类之动态池化方法DCNN--模型介绍篇
+
+https://mp.weixin.qq.com/s/K1RBux3AfxVFT8_uezYHFA
+
+被Hinton，DeepMind和斯坦福嫌弃的池化，到底是什么？
+
+https://mp.weixin.qq.com/s/J4opJ6NvbTxbHWAWNHEltw
+
+自然语言处理中CNN模型几种常见的Max Pooling操作
+
 # 深度信息检索
 
 Information Retrieval是用户进行信息查询和获取的主要方式，是查找信息的方法和手段。狭义的信息检索仅指信息查询（Information Search）。即用户根据需要，采用一定的方法，借助检索工具，从信息集合中找出所需要信息的查找过程。广义的信息检索是信息按一定的方式进行加工、整理、组织并存储起来，再根据信息用户特定的需要将相关信息准确的查找出来的过程。

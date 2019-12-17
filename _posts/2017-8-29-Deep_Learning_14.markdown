@@ -4,48 +4,6 @@ title:  深度学习（十四）——Normalization进阶, Regularization
 category: DL 
 ---
 
-# 花式池化
-
-## UnPooling（续）
-
-从上面的描述可以看出，UnPooling不完全是Pooling的逆运算：
-
-1.Pooling之后的feature map，要经过若干运算，才会进行UnPooling操作。
-
-2.对于非Max Location的地方以零填充。然而这样并不能完全还原信息。
-
-参考：
-
-http://blog.csdn.net/u012938704/article/details/52831532
-
-caffe反卷积
-
-## K-max Pooling
-
-![](/images/article/kmax_pooling.png)
-
-## 参考
-
-http://www.cnblogs.com/tornadomeet/p/3432093.html
-
-Stochastic Pooling简单理解
-
-http://mp.weixin.qq.com/s/XzOri12hwyOCdI1TgGQV3w
-
-新型池化层sort_pool2d实现更快更好的收敛：表现优于最大池化层
-
-http://blog.csdn.net/liuchonge/article/details/67638232
-
-CNN与句子分类之动态池化方法DCNN--模型介绍篇
-
-https://mp.weixin.qq.com/s/K1RBux3AfxVFT8_uezYHFA
-
-被Hinton，DeepMind和斯坦福嫌弃的池化，到底是什么？
-
-https://mp.weixin.qq.com/s/J4opJ6NvbTxbHWAWNHEltw
-
-自然语言处理中CNN模型几种常见的Max Pooling操作
-
 # Normalization进阶
 
 ## Batch Normalization
@@ -257,6 +215,10 @@ https://mp.weixin.qq.com/s/LVL90n4--WPgFLMQ-Gnf6g
 https://mp.weixin.qq.com/s/6hNpgffEnUTkNAfrPgKHkA
 
 IBN-Net：打开Domain Generalization的新方式
+
+https://mp.weixin.qq.com/s/lCasw_-Bl3_J6cGBipNsSA
+
+从IBN-Net到Switchable Whitening：在不变性与判别力之间权衡
 
 ## Group Normalization
 

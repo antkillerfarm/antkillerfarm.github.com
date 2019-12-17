@@ -4,6 +4,20 @@ title:  深度学习（四十）——行人重识别, 数据增强
 category: DL 
 ---
 
+# 视频处理（续）
+
+https://mp.weixin.qq.com/s/vuhoK4cVaHDn6oTuGqX_Eg
+
+你写脚本，AI自动剪视频：13分钟完成剪辑师7小时创作，清华北航联手打造
+
+https://mp.weixin.qq.com/s/IZs9Ctktmvzi_SAU9kD7Gg
+
+多模态人物识别技术及其在爱奇艺视频场景中的应用
+
+https://mp.weixin.qq.com/s/_OTvNrUtbYaFvKlMxFXoDg
+
+时间可以是二维的吗？基于二维时间图的视频内容片段检测
+
 # 行人重识别
 
 行人重识别（Person re-identification）也称行人再识别，是利用计算机视觉技术判断图像或者视频序列中是否存在特定行人的技术。广泛被认为是一个图像检索的子问题。给定一个监控行人图像，检索跨设备下的该行人图像。旨在弥补目前固定的摄像头的视觉局限，并可与行人检测/行人跟踪技术相结合，可广泛应用于智能视频监控、智能安保等领域。

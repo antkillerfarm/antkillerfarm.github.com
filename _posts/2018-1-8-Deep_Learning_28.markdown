@@ -203,6 +203,10 @@ https://mp.weixin.qq.com/s/g3rwPsusYi7gQopOHvdNrA
 
 多模态学习调研
 
+https://mp.weixin.qq.com/s/xzeNAuuDt_VLHDgvIkc-Mg
+
+多模态情感分析简述
+
 https://mp.weixin.qq.com/s/vpBPkjuCebSWh5qPLYHCkw
 
 上海交大提出多模态框架“EmotionMeter”，更精准地识别人类情绪
