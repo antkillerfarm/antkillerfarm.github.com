@@ -120,6 +120,8 @@ LN的特点：
 
 适用于RNN或LSTM，而在CNN上表现一般。
 
+和BN一样，LN通常也忽略公式7中的b。
+
 ## Weight Normalization
 
 WN的公式如下：

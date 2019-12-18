@@ -226,6 +226,10 @@ https://mp.weixin.qq.com/s/nxvYmQPRUQKEQg2wzEXBSQ
 
 二值图像案例分析精选（2）
 
+https://mp.weixin.qq.com/s/3Ehdm4uSHz5ctWzXmC_Qpw
+
+OpenCV中图像二值化函数调用几个关键点详解
+
 https://mp.weixin.qq.com/s/-b1wfvv1jdtnlXzy9BEpJA
 
 OpenCV实现失焦模糊图像恢复

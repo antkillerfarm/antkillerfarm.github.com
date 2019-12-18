@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Hbase
+title:  Hbase, Docker
 category: AI 
 ---
 
@@ -192,3 +192,85 @@ https://mp.weixin.qq.com/s/pQbsGxM59fgQMYH54ETk7Q
 https://mp.weixin.qq.com/s/vyF0VAF8xjEWrBnS1_DtkA
 
 用HBase做高性能键值查询？
+
+# Docker
+
+Docker是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的Linux机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。
+
+官网：
+
+https://www.docker.com/
+
+下图显示了Docker和VM之间的差别：
+
+![](/images/article/docker_vs_vm.png)
+
+参考：
+
+http://blog.csdn.net/colorant/article/details/20608157
+
+快速理解Docker
+
+http://www.cnblogs.com/zhangmingcheng/p/5730070.html
+
+Docker数据管理
+
+https://mp.weixin.qq.com/s/E4wKaIddq8_jRVx9q08qtg
+
+Docker入门
+
+https://mp.weixin.qq.com/s/S8OXlhRf90nobJtc3TgIpg
+
+基于docker构建hadoop集群
+
+https://mp.weixin.qq.com/s/VfC41XiVmpdWUy3VXgDLuw
+
+Docker基本概念和安装
+
+https://mp.weixin.qq.com/s/LeaYn-CUeu3wognse1fSzw
+
+理解、使用Docker（上）
+
+https://mp.weixin.qq.com/s/YPLnTF_jh8xahZ-uLffSkw
+
+理解、使用Docker（下）
+
+https://mp.weixin.qq.com/s/0jD_Ek2-AOsefjcdr9-A7g
+
+Docker容器介绍
+
+https://mp.weixin.qq.com/s/KBNFQA_4KG0LLadzRtvPPw
+
+如何用两个小时入门Docker？
+
+https://mp.weixin.qq.com/s/2w_63cwNOZ4pzOmarKIk-w
+
+最全的30+个开源免费的Docker工具
+
+https://mp.weixin.qq.com/s/iRCnShcbcL8cUMe0MT1mZQ
+
+用Docker玩转PHP环境配置
+
+https://mp.weixin.qq.com/s/XgCmAi1sgu1iA4cW-Zjcbw
+
+Docker完全指南
+
+https://mp.weixin.qq.com/s/e51KpBltxRd8Qk-VRj6EhQ
+
+让Docker更强大的9个安全开源工具
+
+https://mp.weixin.qq.com/s/DQESB4tB1G43JJQImKsvqg
+
+docker系列学习（一）：整体认识
+
+https://mp.weixin.qq.com/s/Ex1AOKGlp2ag6CQTc3rSkA
+
+您想要的docker环境来了！
+
+https://mp.weixin.qq.com/s/HFW3oiGIcYJdaKGjIahXjA
+
+不要把大型JAR包放进Docker镜像
+
+https://mp.weixin.qq.com/s/fY0bfMGL3UXT_3j4LZXaHw
+
+推荐5款好用的开源Docker工具

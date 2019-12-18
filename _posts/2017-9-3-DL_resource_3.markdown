@@ -262,6 +262,10 @@ https://mp.weixin.qq.com/s/cMp9UPrbYsBqL_mdnaB6wA
 
 天池布匹疵点检测大赛解决方案与Baseline
 
+https://mp.weixin.qq.com/s/C9BmYe0iK4dRtrNFmhSbAg
+
+2019腾讯广告算法大赛方案分享
+
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA

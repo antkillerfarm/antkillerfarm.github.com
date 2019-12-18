@@ -411,3 +411,7 @@ Pytorch分布式训练
 https://mp.weixin.qq.com/s/S1dRfmqpiLzR3tnsocmfvw
 
 Pytorch中的数据增强方式最全解释
+
+https://zhuanlan.zhihu.com/p/29904755
+
+Autograd:PyTorch中的梯度计算

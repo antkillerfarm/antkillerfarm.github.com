@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十三）——MemNet, RDN, ShuffleSeg, SVDF, LCNN, AI前沿, LSTM进阶
+title:  深度学习（二十三）——MemNet, RDN, ShuffleSeg, SVDF, LCNN, LSTM进阶
 category: DL 
 ---
 
@@ -176,46 +176,6 @@ http://blog.csdn.net/feynman233/article/details/69785592
 
 LCNN论文阅读笔记
 
-# AI前沿
-
-人工智能前沿7大热点：
-
-1.强化学习
-
-2.元学习
-
-3.模仿学习
-
-4.机器人
-
-5.概念与抽象
-
-6.感知与意识
-
-7.因果推理
-
-最前沿 = good new idea
-
-工业界 = proven idea in practice
-
-参考：
-
-https://mp.weixin.qq.com/s/QtO-4ARpAQf0kXfALqMKSQ
-
-DeepMind-深度学习: AI革命及其前沿进展
-
-https://mp.weixin.qq.com/s/sji2HVli-Y7am37YjTbq3w
-
-谷歌Jeff Dean 64页 PPT 讲述《用深度学习解决挑战性问题》
-
-https://mp.weixin.qq.com/s/AQrgvjFPXUpqfqQQgOFN9A
-
-36页最新深度学习综述论文：算法、技术、应用，181篇参考文献
-
-https://mp.weixin.qq.com/s/cGKsZYxrVP7hVnv7Jli9Zg
-
-MIT课程全面解读2019深度学习最前沿
-
 # LSTM进阶
 
 ## 《Long short-term memory》
@@ -333,3 +293,15 @@ $$W=\color{blue}{n_c\times n_r\times 4}+n_i\times n_c\times 4+\color{red}{n_r\ti
 http://blog.csdn.net/xmdxcsj/article/details/53326109
 
 模型压缩lstmp
+
+## Android NN
+
+Android NN除了支持原始版本的LSTM之外，还可支持peephole、CIFG、LSTMP、Layer Normalization等变种，以及它们的组合。其公式如下：
+
+$$\begin{eqnarray*}
+i_t =& \sigma(LN(W_{xi}x_t+W_{hi}h_{t-1}+W_{ci}C_{t-1})+b_i) & \\
+f_t =& \sigma(LN(W_{xf}x_t+W_{hf}h_{t-1}+W_{cf}C_{t-1})+b_f) & \\
+C_t =& clip(f_t \odot C_{t-1} + i_t \odot g(LN(W_{xc}x_t+W_{hc}h_{t-1})+b_c),\ t_{cell}) & \\ o_t =& \sigma(LN(W_{xo}x_t+W_{ho}h_{t-1}+W_{co}C_t)+b_o) & \\ & & \\
+ & clip(W_{proj}(o_t \odot g(C_t))+b_{proj},\ t_{proj}) & if\ there\ is\ a\ projection; \\
+h_t =& & \\ & o_t \odot g(C_t) & otherwise. \\ 
+\end{eqnarray*}$$

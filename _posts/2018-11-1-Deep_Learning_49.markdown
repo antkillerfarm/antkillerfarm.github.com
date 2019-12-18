@@ -102,6 +102,10 @@ http://blog.csdn.net/javafreely/article/details/71994247
 
 ## 教程
 
+http://web.stanford.edu/class/cs330/
+
+CS 330: Deep Multi-Task and Meta Learning
+
 http://metalearning.ml
 
 这是一个Meta-Learning方面的专题讨论会，有不少好东西。

@@ -218,6 +218,10 @@ https://mp.weixin.qq.com/s/1eEtZ7lfv613EltgD2uUrA
 
 简单几笔就能精准抠图，阿里妈妈智能抠图算法介绍
 
+https://mp.weixin.qq.com/s/T-2qNlUFciC77uOJG31utQ
+
+图像分区域合成，这个新方法实现了人脸的“精准整容”
+
 # ESN
 
 Echo State Network
