@@ -292,6 +292,10 @@ https://mp.weixin.qq.com/s/HQLgiRfJ0KzstPfGatKHOA
 
 基于Siamese网络的多视角三维人脸重建
 
+https://mp.weixin.qq.com/s/CA7_70Y5EZkULOYQ2g9O-A
+
+Hinton最新研究NASA：一种更好地学习三维模型动作的方法
+
 # AutoDL进阶
 
 https://mp.weixin.qq.com/s/_31zbbQ5dHf2UaI8GhXozw

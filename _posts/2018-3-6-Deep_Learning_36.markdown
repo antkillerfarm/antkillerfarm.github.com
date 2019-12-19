@@ -313,3 +313,7 @@ FLEN: 一种时空高效的利用特征场信息缓解梯度耦合的CTR预测�
 https://mp.weixin.qq.com/s/nqCJOstJlZv6CrMST-tH8g
 
 用户行为序列推荐模型
+
+https://mp.weixin.qq.com/s/RQ1iBs8ftvNR0_xB7X8Erg
+
+阿里妈妈点击率预估中的长期兴趣建模

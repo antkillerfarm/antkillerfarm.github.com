@@ -386,6 +386,10 @@ https://zhuanlan.zhihu.com/p/66909226
 
 A Tour to LLVM IR（下）
 
+https://mp.weixin.qq.com/s/4FJzxPyCmakjIU-9xlQmJQ
+
+阁下可知文言编程之精妙？CMU本科生开源文言文编程语言，数天2K星
+
 # 边缘计算
 
 ![](/images/img2/edge_computing.png)

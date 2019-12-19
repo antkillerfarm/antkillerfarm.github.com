@@ -200,6 +200,10 @@ https://mp.weixin.qq.com/s/vhvXsSsEHPVjJGqtCOOwLw
 
 Softmax和交叉熵的深度解析和Python实现
 
+https://mp.weixin.qq.com/s/rw-7-4_07TJ48Mq__HnYEg
+
+用Mixtape代替softmax，CMU提出新方法兼顾表达性和高效性
+
 ## Softmax loss
 
 通常我们使用的Softmax loss，实际上是由softmax和交叉熵(cross-entropy loss)loss组合而成，所以全称是softmax with cross-entropy loss。

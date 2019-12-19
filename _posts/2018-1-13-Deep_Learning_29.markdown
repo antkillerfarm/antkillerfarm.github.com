@@ -136,6 +136,10 @@ https://mp.weixin.qq.com/s/h1vDImYTLEheatZnScZwbg
 
 使用DeepWalk从图中提取特征
 
+https://mp.weixin.qq.com/s/PEltOwR1Am7RX6N-4UN9vw
+
+集成图网络模型实现、基准测试，清华推出图表示学习工具包
+
 ## 参考
 
 https://github.com/thunlp/GNNPapers

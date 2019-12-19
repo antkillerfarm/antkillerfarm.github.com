@@ -94,6 +94,10 @@ https://mp.weixin.qq.com/s/io87CCfThDZDwpIHngunqQ
 
 Step-by-step to Transformer：深入解析工作原理（以Pytorch机器翻译为例）
 
+https://mp.weixin.qq.com/s/9Sgln-bfP2DdB_o1RAgiGg
+
+Transformer在深度推荐系统中的应用
+
 # BERT
 
 ## 概述
