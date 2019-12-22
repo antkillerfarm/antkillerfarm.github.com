@@ -259,3 +259,7 @@ https://mp.weixin.qq.com/s/mPDRmo5XM1JkCBP8fAkYqA
 https://mp.weixin.qq.com/s/g7o60Ypri0J1e65cZQspiA
 
 探索权重无关神经网络
+
+https://mp.weixin.qq.com/s/VuCWmi8M62zpSciiqGx03A
+
+AI攻破高数核心，1秒内精确求解微分方程、不定积分，性能远超Matlab

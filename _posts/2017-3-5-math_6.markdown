@@ -1,12 +1,16 @@
 ---
 layout: post
-title:  数学狂想曲（六）——自相关&互相关&卷积, 马氏距离
+title:  数学狂想曲（六）——自相关&互相关&卷积
 category: math 
 ---
 
 # 概率分布（2）
 
 ## 假设检验（续）
+
+>在英国的Rothamsted实验站，Fisher给一位名叫Muriel Bristol的女士倒了一杯茶，但是Bristol表示，自己更喜欢先将牛奶倒入杯中，再倒入茶。这位女士号称能够分辨先倒茶和先倒牛奶的区别。   
+>作为实验设计的鼻祖，Fisher当然想用实验检验一下：这位女士的味觉是否有这么敏锐？Fisher倒了8杯奶茶：其中4杯“先奶后茶”，其余4杯“先茶后奶”。随机打乱次序后，Fisher请Bristol品尝，并选出“先奶后茶”的4杯，看她是否能分辨奶和茶的顺序。   
+>Bristol完全答对了。这是一个小概率事件，概率小于0.05（通常的统计显著性水平）。所以，她“没有任何分辨能力”这个假设就和数据不太相容，可以拒绝这个假设。
 
 下表是正态总体均值、方差的检验法表格：
 
@@ -194,14 +198,3 @@ https://mp.weixin.qq.com/s/R0LTEEYY1jCbSS-f6KlIzw
 https://mp.weixin.qq.com/s/UrWEZ5fMGxj5Ngbi6Y1nFg
 
 如何通俗易懂地解释卷积？
-
-# 马氏距离
-
-Mahalanobis Distance是印度现代统计学之父Prasanta Chandra Mahalanobis于1936年提出的概念。
-
->注：Prasanta Chandra Mahalanobis，1893~1972，印度统计学家，剑桥大学博士，印度统计研究所创始人。   
->印度的重点研究所一般叫做Institute of National Importance，共92所。Indian Statistical Institute是其中唯一一所和统计相关的研究所。教师255，学生375，这得是多精英的教育啊。其计算机科学专业排名印度第2。
-
-p维空间的两点（两个p维向量x,y）的欧氏距离定义为：
-
-$$d_E(x,y)=\sqrt{(x_1-y_1)^2+\dots+(x_p-y_p)^2}=\sqrt{(x-y)^T(x-y)}（公式1）$$

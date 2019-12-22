@@ -68,6 +68,10 @@ https://mp.weixin.qq.com/s/70GuFnJGhtIZEA-PECHjaA
 
 混合精度对模型训练和推理的影响
 
+https://mp.weixin.qq.com/s/xIbF3rNv2mC2G4RBDhIvJQ
+
+哈佛大学在读博士：模型量化——更小更快更强
+
 # 模型压缩与加速
 
 对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。

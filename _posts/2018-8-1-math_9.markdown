@@ -6,27 +6,6 @@ category: math
 
 # 随机过程（续）
 
-### 中心极限定理
-
-中心极限定理：研究何种条件下独立随机变量之和的极限分布为正态分布的一系列命题的统称。它是数理统计学和误差分析的理论基础，指出了大量随机变量积累分布函数逐点收敛到正态分布的积累分布函数的条件。自然界与生产中，一些现象受到许多相互独立的随机因素的影响，如果每个因素所产生的影响都很微小时，总的影响可以看作是服从正态分布的。
-
-#### 独立同分布的中心极限定理
-
-设相互独立的随机变量$$X_1,X_2,\dots,X_n$$具有相同的概率分布，且有有限的数学期望和方差：$$E(X_k)=\mu,D(X_k)=\mu ^2\neq 0(k=1,2,\dots,n)$$，则随机变量：
-
-$$Y_n=\frac{\sum\limits_{k=1}^nX_k-n\mu}{\sqrt n\sigma}$$
-
-的分布函数$$F_n(x)$$对于任意实数x，都有：
-
-$$lim_{n\rightarrow \infty}F_n(x)=\int_{-\infty}^x\frac{1}{\sqrt{2\pi}}e^{-\frac{t^2}{2}}dt$$
-
-由以上定理可知：
-
-当n很大时，$$Y_n$$近似地服从标准正态分布N(0,1)。
-令$$\overline{X}=\frac{1}{n}\sum_{k=1}^nX_k$$，则当n很大时，$$\overline{X}$$近似服从正态分布$$N(\mu,\frac{\sigma ^2}{n})$$。
-
-由此可见：在独立同分布的情况下，无论$$X_1,X_2,\dots,X_n$$的分布函数为何，它们的平均数$$\overline{X}$$当n充分大的时候总是近似地服从正态分布。
-
 #### 独立不同分布的中心极限定理
 
 若随机变量$$X_1,X_2,\dots,X_n$$相互独立，有有限的数学期望和方差，且满足林德贝格(Lindeberg)条件（每个随机变量都均匀小），则当n充分大时，这些变量之和的概率分布近似于正态分布。
@@ -234,3 +213,25 @@ $$\begin{cases}
 \Omega_1\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_1} = \frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega}\Omega \\
 \Omega_2\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_2} = \frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega}\Omega \\
 \end{cases}$$
+
+$$\Omega_1\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_1} =\Omega_2\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_2}=\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega}\Omega = K$$
+
+$$\mathrm{d}f(\Omega)=K\frac{\mathrm{d}\Omega}{\Omega}\Rightarrow f(\Omega) = K\ln \Omega + C$$
+
+根据热力学第三定律，使用绝对零度作为原点，则：
+
+$$S=K\ln \Omega$$
+
+上式就是Boltzmann's entropy formula。这里隐含的另一个假设是：分子随机运动没有偏好性，即**各状态的概率相等**。
+
+如果状态概率不等的话，则：
+
+$$S = K \cdot E[\ln \Omega] = K \sum \Omega_i \ln \Omega_i$$
+
+上式被称作Gibbs entropy。
+
+参考：
+
+https://wenku.baidu.com/view/a90518a37c1cfad6185fa746.html
+
+热力学中的熵

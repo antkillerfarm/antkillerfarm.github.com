@@ -222,6 +222,10 @@ https://mp.weixin.qq.com/s/_cFDbp6PnAEjgtDIWSBDVQ
 
 知识结构化在阿里小蜜中的应用
 
+https://mp.weixin.qq.com/s/a9N0d4fsCaQf9MaCvyahiA
+
+知识图谱与推荐系统的结合
+
 # 数据结构 & 普通CS算法
 
 ## TopK

@@ -264,13 +264,11 @@ Facebook发币，AI大牛签署白皮书，Keras之父评价：没用
 
 这里主要讨论自动驾驶方面的传感器，但也包括了一些非自动驾驶类的传感器知识。
 
-https://mp.weixin.qq.com/s/Ee18sjKXNGMowKwqLB0jVg
+## 激光雷达
 
-给自动驾驶一双"通天眼"——环境感知器篇
+https://mp.weixin.qq.com/s/biiTHllmpsKSgMiaZbBYrQ
 
-https://mp.weixin.qq.com/s/dusPUCjKUzhfmTRhzXte-A
-
-新的图像传感器给汽车装上眼睛
+激光雷达科普文
 
 https://mp.weixin.qq.com/s/4HNaS8Dpi9pcPzE_nN-BvA
 
@@ -279,6 +277,36 @@ https://mp.weixin.qq.com/s/4HNaS8Dpi9pcPzE_nN-BvA
 https://mp.weixin.qq.com/s/Ef6aWgs9xkHaAwTX4rxjKA
 
 用激光雷达感知世界
+
+https://mp.weixin.qq.com/s/mlwDZ1DUDbHIn4hQvkumAw
+
+自动驾驶感知神器——激光雷达概述
+
+https://mp.weixin.qq.com/s/hVhutvHeXsZOvJZfG1xaFw
+
+自动驾驶车载激光雷达技术现状分析
+
+https://mp.weixin.qq.com/s/zX2Jy5a32AVnhOUeLgS_wA
+
+摄像头、雷达、激光雷达——自动驾驶几大传感器系统大揭秘
+
+https://mp.weixin.qq.com/s/ecqeQdOo3xUV-PvL_T48eA
+
+一文读懂三角法和TOF激光雷达
+
+https://mp.weixin.qq.com/s/kO5yy7x0r3LhttBhLVpT5w
+
+固态激光雷达研究进展
+
+## 参考
+
+https://mp.weixin.qq.com/s/Ee18sjKXNGMowKwqLB0jVg
+
+给自动驾驶一双"通天眼"——环境感知器篇
+
+https://mp.weixin.qq.com/s/dusPUCjKUzhfmTRhzXte-A
+
+新的图像传感器给汽车装上眼睛
 
 https://mp.weixin.qq.com/s/45xNWa_32DAsKdlfYY_QfA
 
@@ -338,10 +366,6 @@ https://mp.weixin.qq.com/s/2TKkoWZcYVVvlEKvA6iNyA
 
 近年值得关注的新兴MEMS和传感器技术
 
-https://mp.weixin.qq.com/s/mlwDZ1DUDbHIn4hQvkumAw
-
-自动驾驶感知神器——激光雷达概述
-
 https://mp.weixin.qq.com/s/elSezCSBPnuEqOFmHACLVg
 
 24GHz雷达的应用案例
@@ -349,10 +373,6 @@ https://mp.weixin.qq.com/s/elSezCSBPnuEqOFmHACLVg
 https://mp.weixin.qq.com/s/SgUcLH3kfRVha661PLyMeg
 
 体声波(BAW)是什么？
-
-https://mp.weixin.qq.com/s/zX2Jy5a32AVnhOUeLgS_wA
-
-摄像头、雷达、激光雷达——自动驾驶几大传感器系统大揭秘
 
 https://mp.weixin.qq.com/s/FohJ81sPT_Zk7s1qLuP1-A
 
@@ -366,17 +386,9 @@ https://mp.weixin.qq.com/s/0K595c2GdhPrdWBgpvU-Gw
 
 超声波雷达在汽车上的应用
 
-https://mp.weixin.qq.com/s/ecqeQdOo3xUV-PvL_T48eA
-
-一文读懂三角法和TOF激光雷达
-
 https://mp.weixin.qq.com/s/j0-Lj8lOyDP0RArB7NzUNw
 
 特斯拉的整车传感器配置方案
-
-https://mp.weixin.qq.com/s/hVhutvHeXsZOvJZfG1xaFw
-
-自动驾驶车载激光雷达技术现状分析
 
 https://mp.weixin.qq.com/s/WIjbYMvMis-YBr_ev_wjmQ
 
@@ -385,10 +397,6 @@ https://mp.weixin.qq.com/s/WIjbYMvMis-YBr_ev_wjmQ
 https://mp.weixin.qq.com/s/vbTR1A0rgzCQY8XG70SNPQ
 
 了不起的MEMS发明人
-
-https://mp.weixin.qq.com/s/kO5yy7x0r3LhttBhLVpT5w
-
-固态激光雷达研究进展
 
 https://mp.weixin.qq.com/s/gHvvMG7D_W0M2RFntyRaDw
 

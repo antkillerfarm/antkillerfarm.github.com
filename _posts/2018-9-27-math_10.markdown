@@ -4,31 +4,7 @@ title:  数学狂想曲（十）——复变函数, 平稳离散时间随机过�
 category: math 
 ---
 
-# 熵
-
-## 统计热力学定义（续）
-
-$$\Omega_1\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_1} =\Omega_2\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_2}=\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega}\Omega = K$$
-
-$$\mathrm{d}f(\Omega)=K\frac{\mathrm{d}\Omega}{\Omega}\Rightarrow f(\Omega) = K\ln \Omega + C$$
-
-根据热力学第三定律，使用绝对零度作为原点，则：
-
-$$S=K\ln \Omega$$
-
-上式就是Boltzmann's entropy formula。这里隐含的另一个假设是：分子随机运动没有偏好性，即**各状态的概率相等**。
-
-如果状态概率不等的话，则：
-
-$$S = K \cdot E[\ln \Omega] = K \sum \Omega_i \ln \Omega_i$$
-
-上式被称作Gibbs entropy。
-
-参考：
-
-https://wenku.baidu.com/view/a90518a37c1cfad6185fa746.html
-
-热力学中的熵
+# 熵（续）
 
 ## 信息熵
 

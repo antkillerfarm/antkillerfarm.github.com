@@ -425,21 +425,3 @@ https://mp.weixin.qq.com/s/u6gibvshU4KI3fEE6h9KeQ
 https://mp.weixin.qq.com/s/tjn6Fob1L9aWnl2b35rjgA
 
 一文读懂总线技术
-
-## 路径规划
-
-https://mp.weixin.qq.com/s/Rt6Gem1kgWK2ACqiIGiDiw
-
-无人驾驶汽车路径规划概述
-
-https://mp.weixin.qq.com/s/U3qlIsSLJ6E1eNzQ-ZZ6zQ
-
-世界冠军之路：菜鸟车辆路径规划求解引擎研发历程
-
-https://mp.weixin.qq.com/s/ArreA2g24n-jqU7vfIE_rA
-
-自动驾驶核心技术之——路径规划
-
-https://mp.weixin.qq.com/s/1dOFsRCuTbm6UI1Pd5MNjw
-
-快速扩展随机树路径规划算法

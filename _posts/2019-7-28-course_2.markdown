@@ -66,6 +66,10 @@ https://nlp.cs.princeton.edu/cos484/
 
 COS 484: Natural Langauge Processing（陈丹琦主讲）
 
+https://github.com/glouppe/info8006-introduction-to-ai
+
+INFO8006 - Introduction to Artificial Intelligence
+
 # 世说新语
 
 ## 2019.11（续）

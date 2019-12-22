@@ -250,6 +250,10 @@ https://mp.weixin.qq.com/s/KYGqSOftm8FWDXk_C13iCQ
 
 Conditional Batch Normalization详解
 
+https://mp.weixin.qq.com/s/w_W4NwkCRdbyZbEwMlrFRQ
+
+超越BN和GN！谷歌提出新的归一化层：FRN
+
 # Regularization
 
 DL中的Regularization除了常见的$$l_1$$-norm、$$l_2$$-norm和squared $$l_2$$-norm之外，还有Group Regularization。它的定义如下：

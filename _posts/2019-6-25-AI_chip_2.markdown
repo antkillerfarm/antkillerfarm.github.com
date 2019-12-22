@@ -84,6 +84,10 @@ https://zhuanlan.zhihu.com/p/58971347
 
 深度学习的芯片加速器
 
+https://mp.weixin.qq.com/s/S5Kjt4tuf_o6o3Qag8sukQ
+
+Google Jeff Dean独自署名论文：深度学习革命及其对计算机架构和芯片设计的影响，讲述AI芯片发展历程与未来
+
 https://cloud.tencent.com/community/article/244743
 
 深度学习的异构加速技术（一）：AI需要一个多大的“心脏”？

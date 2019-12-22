@@ -308,6 +308,10 @@ https://mp.weixin.qq.com/s/XttlCNKGvGZrD7OQZOQGnw
 
 如何发现“将死”的ReLu？
 
+https://mp.weixin.qq.com/s/pA9JW75p9J5e5KHe3ifcBQ
+
+从ReLU到GELU，一文概览神经网络的激活函数
+
 # ResNet
 
 无论采用何种方法，可训练的神经网络的层数都不可能无限深。有的时候，即使没有梯度消失，也存在训练退化（即深层网络的效果还不如浅层网络）的问题。

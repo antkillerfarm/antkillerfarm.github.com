@@ -22,6 +22,14 @@ https://mp.weixin.qq.com/s/8N09Argm9sNJRYipq3Mipw
 
 淘宝如何拥抱短视频时代？视频推荐算法实战
 
+https://mp.weixin.qq.com/s/1h9QvZirPa7EZIpOcC_aiw
+
+超清还不够，商汤插帧算法让视频顺滑如丝
+
+https://mp.weixin.qq.com/s/adUW9QuXaJ9uIb7Co5j_gw
+
+视频物体分割算法：如何提升复杂场景的分割精度？
+
 # 行人重识别
 
 行人重识别（Person re-identification）也称行人再识别，是利用计算机视觉技术判断图像或者视频序列中是否存在特定行人的技术。广泛被认为是一个图像检索的子问题。给定一个监控行人图像，检索跨设备下的该行人图像。旨在弥补目前固定的摄像头的视觉局限，并可与行人检测/行人跟踪技术相结合，可广泛应用于智能视频监控、智能安保等领域。

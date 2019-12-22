@@ -334,6 +334,10 @@ https://mp.weixin.qq.com/s/esunl-zyplt-V70PgPDWqA
 
 我收集了12款自动生成器，无聊人士自娱自乐专用
 
+https://mp.weixin.qq.com/s/FMYimnxcAya6bhvdGD5LUw
+
+惊魂48小时，阿里工程师如何紧急定位线上内存泄露？
+
 ## 科研人生
 
 https://mp.weixin.qq.com/s/6gX1UFSykuzw358ARUzifw

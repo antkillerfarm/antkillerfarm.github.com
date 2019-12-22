@@ -281,6 +281,10 @@ https://mp.weixin.qq.com/s/Bu34hPN0XAj6GmLXuQwVsQ
 
 风控特征—关系网络特征工程入门实践
 
+https://mp.weixin.qq.com/s/thd_dtd4erqSf7p6ZON72w
+
+自动特征工程在推荐系统中的研究
+
 # 图论
 
 https://mp.weixin.qq.com/s/zOdy-1vCJD_dPFSoe0ELFA

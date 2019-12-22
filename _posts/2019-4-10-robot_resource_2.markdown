@@ -6,6 +6,24 @@ category: resource
 
 # 机器人/无人驾驶参考资源
 
+## 路径规划
+
+https://mp.weixin.qq.com/s/Rt6Gem1kgWK2ACqiIGiDiw
+
+无人驾驶汽车路径规划概述
+
+https://mp.weixin.qq.com/s/U3qlIsSLJ6E1eNzQ-ZZ6zQ
+
+世界冠军之路：菜鸟车辆路径规划求解引擎研发历程
+
+https://mp.weixin.qq.com/s/ArreA2g24n-jqU7vfIE_rA
+
+自动驾驶核心技术之——路径规划
+
+https://mp.weixin.qq.com/s/1dOFsRCuTbm6UI1Pd5MNjw
+
+快速扩展随机树路径规划算法
+
 ## 高精地图
 
 https://mp.weixin.qq.com/s/-HdpWQeMY6-sptxF9D4CcQ
@@ -87,6 +105,10 @@ https://mp.weixin.qq.com/s/cqzk7iHD8sJGLnIhkTgN3w
 https://zhuanlan.zhihu.com/p/87416772
 
 自动驾驶中深度学习-综述
+
+https://mp.weixin.qq.com/s/Z6j3YA_WPxRTRWS7-avE6w
+
+自动驾驶汽车的计算机视觉全面综述论文：问题、数据集和现状
 
 https://mp.weixin.qq.com/s/lgqSCAE6wh_L4d6VT12fKA
 
@@ -377,39 +399,3 @@ https://zhuanlan.zhihu.com/p/57029694
 https://mp.weixin.qq.com/s/bgP_xMfi3hXayscf9D5JIg
 
 谷歌提出Sim2Real：让机器人像人类一样观察世界
-
-https://zhuanlan.zhihu.com/p/57028341
-
-自动驾驶系统的传感器标定方法
-
-https://mp.weixin.qq.com/s/qrvcvYzSwxSR1-tkvZLUaQ
-
-使用自动编码器从自然驾驶数据中估计测试场景的独特性
-
-https://mp.weixin.qq.com/s/Gqffn_1kgP34MwthcCKH0Q
-
-基于机动LSTM的周围车辆多模态轨迹预测
-
-https://mp.weixin.qq.com/s/WbTtBjeUmBeS3OQgaFG4eA
-
-Apollo控制算法之LQR
-
-https://mp.weixin.qq.com/s/G3Plo1Ogcx3s6nz_rdeKtA
-
-Apollo控制算法之汽车动力学模型
-
-https://zhuanlan.zhihu.com/p/59089908
-
-自动驾驶中的规划控制概述
-
-https://mp.weixin.qq.com/s/eOxle3q_QgejlX10kc30Rg
-
-Apollo无人车自定位技术入门
-
-https://mp.weixin.qq.com/s/1xNsKVw-OUr3Lmb3Ob33Ow
-
-自动驾驶研发模拟仿真系统的工作介绍
-
-https://zhuanlan.zhihu.com/p/59890550
-
-自动驾驶中的目标跟踪方法

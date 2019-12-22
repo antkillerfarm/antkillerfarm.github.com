@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（一）——搞笑图片的数学原理, 欧拉公式, 傅立叶变换
+title:  数学狂想曲（一）——搞笑图片的数学原理, 欧拉公式
 category: math 
 ---
 
@@ -257,11 +257,3 @@ https://mp.weixin.qq.com/s/kwfA7CqBz1myyUR3NBKp1g
 https://mp.weixin.qq.com/s/4fccUusfRQ7KYhIKWVy38w
 
 如何用图示来优雅地解释复数的意义？
-
-https://mp.weixin.qq.com/s/vdxfzuGEMoiwGARYYzXbKg
-
-最伟大的数学公式：欧拉公式
-
-https://mp.weixin.qq.com/s/cy5U6in3QQSy7yAXkDjvqA
-
-欧拉：1分钟解决$$e^π$$和$$π^e$$谁大的问题！

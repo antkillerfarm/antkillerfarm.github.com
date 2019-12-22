@@ -276,6 +276,14 @@ https://zhuanlan.zhihu.com/p/84205427
 
 Adaptively Connected Neural Networks
 
+https://www.zhihu.com/question/270245936
+
+卷积层和分类层，哪个更重要？
+
+https://mp.weixin.qq.com/s/UlEQ845-siCEIJ6JyBqkdw
+
+CNN为什么要用3x3卷积？偶数卷积核其实表现更强！
+
 # AI前沿
 
 人工智能前沿7大热点：

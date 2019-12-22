@@ -104,6 +104,10 @@ https://mp.weixin.qq.com/s/A9WkTGHLsaUE11NiQKT2vw
 
 1小时上手MaskRCNN·Keras开源实战
 
+https://mp.weixin.qq.com/s/wwWk8pmQzEOx8rrtW4u39Q
+
+何恺明团队新作：图像分割精细度空前，边缘自带抗锯齿，算力仅需Mask R-CNN的2.6%（PointRend）
+
 # Ultra Deep Network
 
 ## FractalNet

@@ -271,3 +271,11 @@ https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771181&idx=1&sn=30b2a5
 https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771231&idx=2&sn=6907d6d7a98eab353a076ed48352aadc
 
 15分钟完成Kinetics视频识别训练，除了超级计算机你还需要TSM
+
+https://mp.weixin.qq.com/s/IzLtn1SR-aFuxXM3GNZbFw
+
+蘑菇街自研服务框架如何提升在线推理效率？
+
+https://mp.weixin.qq.com/s/GheEA0Ag0vbhZeyzqpTl0A
+
+分布式优化：在大数据时代应运而生

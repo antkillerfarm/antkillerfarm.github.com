@@ -77,6 +77,10 @@ https://zhuanlan.zhihu.com/p/32315762
 
 如何简单地理解“哈密尔顿蒙特卡洛 (HMC)”？
 
+https://mp.weixin.qq.com/s/BZh3-jk2LNK55jKGJXQgjw
+
+蚂蚁金服：如何训练可自动调整负样本采样器？
+
 ## Gibbs Sampling
 
 这个算法虽然以Gibbs命名，但却是Geman兄弟于1984年研究Gibbs random field时，发现的算法。

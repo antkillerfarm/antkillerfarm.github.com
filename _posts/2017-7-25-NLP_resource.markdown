@@ -196,6 +196,10 @@ https://mp.weixin.qq.com/s/D7NqCnHsEHe7Kuv2XzRV-A
 
 《深度自然语言处理的搜索系统》教程, 211页PPT带你从入门到精通
 
+https://mp.weixin.qq.com/s/SATpFOdUsMjCX4YfbGnM5w
+
+关系提取简述
+
 ## 分词
 
 https://mp.weixin.qq.com/s/Xy_jaOex72pLe4wwieKeUg

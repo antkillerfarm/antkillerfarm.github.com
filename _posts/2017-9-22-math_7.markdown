@@ -1,10 +1,19 @@
 ---
 layout: post
-title:  数学狂想曲（七）——函数连续性
+title:  数学狂想曲（七）——马氏距离, 函数连续性
 category: math 
 ---
 
-# 马氏距离（续）
+# 马氏距离
+
+Mahalanobis Distance是印度现代统计学之父Prasanta Chandra Mahalanobis于1936年提出的概念。
+
+>注：Prasanta Chandra Mahalanobis，1893~1972，印度统计学家，剑桥大学博士，印度统计研究所创始人。   
+>印度的重点研究所一般叫做Institute of National Importance，共92所。Indian Statistical Institute是其中唯一一所和统计相关的研究所。教师255，学生375，这得是多精英的教育啊。其计算机科学专业排名印度第2。
+
+p维空间的两点（两个p维向量x,y）的欧氏距离定义为：
+
+$$d_E(x,y)=\sqrt{(x_1-y_1)^2+\dots+(x_p-y_p)^2}=\sqrt{(x-y)^T(x-y)}（公式1）$$
 
 因此，x到原点的距离为：
 
@@ -172,41 +181,3 @@ https://wenku.baidu.com/view/21877fea551810a6f524868c.html
 | +smoothness | $$\frac{1}{k}$$ | $$\frac{1}{\sqrt{k}}$$ |
 | +strong convexity | $$\frac{1}{k}$$ | $$\frac{1}{k}$$ |
 | +smoothness and strong convexity | $$\exp^{-k}$$ | $$\exp^{-k}$$ |
-
-## 参考
-
-https://www.zhihu.com/question/32201415
-
-函数连续和一致连续有什么区别？开区间上的连续函数不一定是一致连续的，为什么？
-
-https://zhuanlan.zhihu.com/p/27554191
-
-非凸优化基石：Lipschitz Condition
-
-http://www.cnblogs.com/flywithyou/p/4135562.html
-
-Lipschitz连续
-
-https://www.zhihu.com/question/62554985
-
-神经网络的上同调理论
-
-http://tech.scichina.com:8082/sciE/CN/abstract/abstract404403.shtml
-
-神经网络的本质逼近阶
-
-http://www.doc88.com/p-2337088655000.html
-
-神经网络的函数逼近理论
-
-https://zhuanlan.zhihu.com/p/25590725
-
-神经网络为什么能够无限逼近任意连续函数？
-
-https://max.book118.com/html/2015/0401/14126427.shtm
-
-浅谈Borel可测函数及其性质
-
-https://mp.weixin.qq.com/s/jrNIhSlTiXsO2sGWmzcFfg
-
-Michael I. Jordan最新清华授课笔记！
