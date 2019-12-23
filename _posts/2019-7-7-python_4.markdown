@@ -288,6 +288,10 @@ https://mp.weixin.qq.com/s/1xXULpT36P7LTO5HDbjptg
 
 坦克大战小游戏
 
+https://mp.weixin.qq.com/s/EEw4x1mk0y8xsL9mORd9sA
+
+如何用Python实现超级玛丽的界面和状态机？
+
 ## 参考
 
 https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA

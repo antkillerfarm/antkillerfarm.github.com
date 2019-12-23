@@ -86,6 +86,10 @@ https://mp.weixin.qq.com/s/L1H7PXwuItuF6Vp2Uyfowg
 
 人脸识别剩下的难题：从遮挡，年龄，姿态，妆造到亲属关系，人脸攻击
 
+https://zhuanlan.zhihu.com/p/69542283
+
+人脸防伪检测挑战赛-俄初创公司夺冠,中美企业位列二三
+
 # RNN进阶
 
 ## IndRNN

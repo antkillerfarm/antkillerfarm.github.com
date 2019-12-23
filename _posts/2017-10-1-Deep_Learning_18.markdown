@@ -4,61 +4,7 @@ title:  深度学习（十八）——语义分割, FCN
 category: DL 
 ---
 
-# 语义分割
-
-Semantic segmentation是图像理解的基石性技术，在自动驾驶系统（具体为街景识别与理解）、无人机应用（着陆点判断）以及穿戴式设备应用中举足轻重。
-
-我们都知道，图像是由许多像素（Pixel）组成，而“语义分割”顾名思义就是将像素按照图像中表达语义含义的不同进行分组（Grouping）/分割（Segmentation）。
-
-![](/images/article/image_enet.png)
-
-上图是语义分割网络ENet的实际效果图。其中，左图为原始图像，右图为分割任务的真实标记（Ground truth）。
-
-显然，在图像语义分割任务中，其输入为一张HxWx3的三通道彩色图像，输出则是对应的一个HxW矩阵，矩阵的每一个元素表明了原图中对应位置像素所表示的语义类别（Semantic label）。
-
-因此，图像语义分割也称为“图像语义标注”（Image semantic labeling）、“像素语义标注”（Semantic pixel labeling）或“像素语义分组”（Semantic pixel grouping）。
-
-由于图像语义分割不仅要识别出对象，还要标出每个对象的边界。因此，与分类目的不同，相关模型要具有像素级的密集预测能力。
-
-目前用于语义分割研究的两个最重要数据集是PASCAL VOC和MSCOCO。
-
-参考：
-
-https://mp.weixin.qq.com/s/Nmr5oLe_MSLjYjWXUILiMw
-
-视觉分割任务：论文与评测基准列表汇总
-
-https://zhuanlan.zhihu.com/p/21824299
-
-从特斯拉到计算机视觉之“图像语义分割”
-
-https://zhuanlan.zhihu.com/SemanticSegmentation
-
-一个语义分割的专栏
-
-https://mp.weixin.qq.com/s/zZ-i54_wqzVQxTCFABNIMQ
-
-闲聊图像分割这件事儿
-
-https://zhuanlan.zhihu.com/p/22308032
-
-图像语义分割之FCN和CRF
-
-https://zhuanlan.zhihu.com/p/25515361
-
-图像语义分割之特征整合和结构预测
-
-https://zhuanlan.zhihu.com/p/27794982
-
-语义分割中的深度学习方法全解：从FCN、SegNet到各代DeepLab
-
-https://mp.weixin.qq.com/s/mQqEe4LC0VHBH2ZAtFanWQ
-
-基于深度学习的图像语义分割方法回顾
-
-https://mp.weixin.qq.com/s/9G3kahaoOSoB-DiGey1VLA
-
-基于深度学习的图像语义分割算法综述
+# 语义分割（续）
 
 https://mp.weixin.qq.com/s/9F2UB_5ah1nEe3dfyoeRhg
 
@@ -79,6 +25,42 @@ https://mp.weixin.qq.com/s/KcVKKsAyz-eVsyWR0Y812A
 https://mp.weixin.qq.com/s/MFNKDNTrF-8VuKrwcsTDLw
 
 纵览图像语义分割发展史，11篇关键文章简介
+
+# 语义分割常见评价指标
+
+假设总计有k+1分类(标记为$$L_0$$到$$L_k$$，其中包含一个背景类别)，$$P_{ij}$$表示类别为i的像素被预测为类别为j的数目，这样来说$$P_{ii}就表示TP(true positives)，$$P_{ij}$$与$$P_{ji}$$分别表示为FP(false positives)与FN(false negatives)。
+
+- PA(Pixel Accuracy)
+
+最简单的度量计算，总的像素跟预测正确像素的比率：
+
+$$PA=\frac{\sum_{i=0}^k P_{ii}}{\sum_{i=0}^k \sum_{j=0}^k P_{ij}}$$
+
+- MPA(Mean Pixel Accuracy)
+
+基于每个类别正确的像素总数与每个类别总数比率求和得到的均值：
+
+$$MPA=\frac{1}{k+1}\sum_{i=0}^k\frac{P_{ii}}{\sum_{j=0}^k P_{ij}}$$
+
+- MIoU(Mean Intersection over Union)
+
+它通过计算交并比来度量，这里交并比代指ground truth与预测分割结果之间。是重新计算TP跟 (TP + FN+FP)之和之间的比率。IoU是基于每个类别计算，然后再求均值。公式如下：
+
+$$MIoU=\frac{1}{k+1}\sum_{i=0}^k\frac{P_{ii}}{\sum_{j=0}^k P_{ij} + \sum_{j=0}^k P_{ji}-P_{ii}}$$
+
+- FWIoU(Frequency Weighted Intersection over Union)
+
+MIoU的改进版本，它会根据每个分类出现频率，对每个分类给予不同权重。它的计算方法如下：
+
+$$FWIoU=\frac{1}{\sum_{i=0}^k \sum_{j=0}^k P_{ij}}\sum_{i=0}^k\frac{\sum_{j=0}^k P_{ij}P_{ii}}{\sum_{j=0}^k P_{ij} + \sum_{j=0}^k P_{ji}-P_{ii}}$$
+
+上述几种精度计算方法，MIoU是各种基准数据集最常用的标准之一，绝大数的图像语义分割论文中模型评估比较都以此作为主要技术指标。
+
+参考：
+
+https://mp.weixin.qq.com/s/87U2CZsca9XtIg-BXZPJhw
+
+深度学习图像语义分割常见评价指标详解
 
 # 前DL时代的语义分割
 

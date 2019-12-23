@@ -381,15 +381,3 @@ https://mp.weixin.qq.com/s?__biz=MzIzNjc0MTMwMA==&mid=2247491852&idx=1&sn=572806
 https://mp.weixin.qq.com/s?__biz=MzA4MDExMDEyMw==&mid=2247487111&idx=1&sn=e0d4e343704d61086aa702fc58e38af6
 
 深度学习中最常见GAN模型应用与解读
-
-https://mp.weixin.qq.com/s/ctB90bNhaMYvbLE4yketHQ
-
-一文读懂对抗机器学习Universal adversarial perturbations
-
-https://mp.weixin.qq.com/s/zRNtEKS2dKxyQU4VZm6Mwg
-
-用GANs来自动生成音乐
-
-https://mp.weixin.qq.com/s/zwzl-Tel3Avc4Dm7L5FS5A
-
-NLP中的对抗训练+PyTorch实现

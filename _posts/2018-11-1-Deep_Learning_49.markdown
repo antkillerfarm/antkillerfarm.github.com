@@ -4,6 +4,20 @@ title:  深度学习（四十九）——Fast Image Processing, DMN, 元学习
 category: DL 
 ---
 
+# 语义分割进阶（续）
+
+https://mp.weixin.qq.com/s/LZNla-NKAu8wmi-OaJD8yA
+
+旷视研究院推出可学习的树状滤波器，实现保留结构信息的特征变换
+
+https://mp.weixin.qq.com/s/lTPm229gzV_9RU-aiY-xQg
+
+2019年5篇图像分割算法最佳综述
+
+https://mp.weixin.qq.com/s/n9Xdj5RKGR9cyXXNzxzvSw
+
+基于深度学习的图像分割在高德的实践
+
 # Fast Image Processing
 
 ![](/images/article/FIP.png)

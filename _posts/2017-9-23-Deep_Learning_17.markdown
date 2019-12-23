@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十七）——无监督/半监督/自监督深度学习, 图像检索, 深度贝叶斯学习
+title:  深度学习（十七）——无监督/半监督/自监督深度学习, 图像检索
 category: DL 
 ---
 
@@ -284,68 +284,58 @@ https://mp.weixin.qq.com/s/CS4iAMprZizrXhpXDhySzg
 
 视频分类/行为识别研究综述，从数据集到方法
 
-# 深度贝叶斯学习
+# 语义分割
 
-https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og
+Semantic segmentation是图像理解的基石性技术，在自动驾驶系统（具体为街景识别与理解）、无人机应用（着陆点判断）以及穿戴式设备应用中举足轻重。
 
-贝叶斯学习与未来人工智能
+我们都知道，图像是由许多像素（Pixel）组成，而“语义分割”顾名思义就是将像素按照图像中表达语义含义的不同进行分组（Grouping）/分割（Segmentation）。
 
-https://mp.weixin.qq.com/s/Zd4rFU7Lebr4zmzxThNyVw
+![](/images/article/image_enet.png)
 
-详解珠算：清华大学开源的贝叶斯深度学习库
+上图是语义分割网络ENet的实际效果图。其中，左图为原始图像，右图为分割任务的真实标记（Ground truth）。
 
-https://mp.weixin.qq.com/s/RpaOrngeXTKycLb3iCygZw
+显然，在图像语义分割任务中，其输入为一张HxWx3的三通道彩色图像，输出则是对应的一个HxW矩阵，矩阵的每一个元素表明了原图中对应位置像素所表示的语义类别（Semantic label）。
 
-利用贝叶斯神经网络进行随机动力系统中的学习与策略搜索
+因此，图像语义分割也称为“图像语义标注”（Image semantic labeling）、“像素语义标注”（Semantic pixel labeling）或“像素语义分组”（Semantic pixel grouping）。
 
-https://mp.weixin.qq.com/s/lKm_ypn5I7tSjoQHceJ0jQ
+由于图像语义分割不仅要识别出对象，还要标出每个对象的边界。因此，与分类目的不同，相关模型要具有像素级的密集预测能力。
 
-概率编程：使用贝叶斯神经网络预测金融市场价格
+目前用于语义分割研究的两个最重要数据集是PASCAL VOC和MSCOCO。
 
-https://mp.weixin.qq.com/s/cDqxmRVQCIqdM5oiUh82YQ
+参考：
 
-Yee Whye Teh：《贝叶斯深度学习与深度贝叶斯学习》
+https://mp.weixin.qq.com/s/Nmr5oLe_MSLjYjWXUILiMw
 
-https://mp.weixin.qq.com/s/Zk2YG-IJNhJxTBU8THSM-g
+视觉分割任务：论文与评测基准列表汇总
 
-让DL可解释？这一份66页贝叶斯深度学习教程告诉你
+https://zhuanlan.zhihu.com/p/21824299
 
-https://mp.weixin.qq.com/s/-izo9VUdxN33pwVFGV_tjw
+从特斯拉到计算机视觉之“图像语义分割”
 
-299页PPT带你回顾深度贝叶斯学习最新发展脉络
+https://zhuanlan.zhihu.com/SemanticSegmentation
 
-https://github.com/bayesgroup/deepbayes-2018
+一个语义分割的专栏
 
-Seminars DeepBayes Summer School 2018
+https://mp.weixin.qq.com/s/zZ-i54_wqzVQxTCFABNIMQ
 
-https://mp.weixin.qq.com/s/WCRYppBLdl_M4etUChnfgw
+闲聊图像分割这件事儿
 
-PyMC3和Theano代码构建贝叶斯深度网络
+https://zhuanlan.zhihu.com/p/22308032
 
-https://mp.weixin.qq.com/s/7mwJpQFWWXJ3dvTAwDFI7Q
+图像语义分割之FCN和CRF
 
-贝叶斯卷积神经网络：架起深度学习与统计学的桥梁
+https://zhuanlan.zhihu.com/p/25515361
 
-https://mp.weixin.qq.com/s/2LkpuchuHs82Sxs5rD8bWA
+图像语义分割之特征整合和结构预测
 
-《深度贝叶斯与序列学习》，279页PPT带你知晓深度贝叶斯序列模型在NLP最新进展
+https://zhuanlan.zhihu.com/p/27794982
 
-https://zhuanlan.zhihu.com/p/74573041
+语义分割中的深度学习方法全解：从FCN、SegNet到各代DeepLab
 
-针对推荐系统的深度贝叶斯多目标学习
+https://mp.weixin.qq.com/s/mQqEe4LC0VHBH2ZAtFanWQ
 
-https://mp.weixin.qq.com/s/b041h_hbHQYiXCiDHGaD5w
+基于深度学习的图像语义分割方法回顾
 
-深度贝叶斯自然语言处理，304页ppt带你了解最新研究进展
+https://mp.weixin.qq.com/s/9G3kahaoOSoB-DiGey1VLA
 
-https://zhuanlan.zhihu.com/p/77140176
-
-构建贝叶斯深度学习分类器
-
-https://mp.weixin.qq.com/s/4sDNUZiOiS6VH_oRSnW6HQ
-
-牛津大学YARIN GAL《贝叶斯深度学习》入门教程，336页ppt
-
-https://mp.weixin.qq.com/s/UiLyQKhIe2rDYiwPcqyqaw
-
-可跟踪概率模型，209页最新教程
+基于深度学习的图像语义分割算法综述

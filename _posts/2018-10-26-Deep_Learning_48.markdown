@@ -362,6 +362,10 @@ https://zhuanlan.zhihu.com/p/62652145
 
 加州大学提出：实时实例分割算法YOLACT，可达33 FPS/30mAP！现已开源！
 
+https://mp.weixin.qq.com/s/i6Qj5YyjLINxHSYuHckKzg
+
+YOLACT++：更强的实时实例分割网络，可达33.5 FPS/34.1mAP！
+
 https://mp.weixin.qq.com/s/bbFDJ6PjjDZqdnPLMqBuKA
 
 秒杀DeepLabv3+与UNet的表面缺陷检测网络
@@ -401,15 +405,3 @@ https://zhuanlan.zhihu.com/p/77834369
 https://mp.weixin.qq.com/s/wAWB2SLaqD2SmP9-j0Ut7g
 
 速度提升一倍，无需实例掩码预测即可实现全景分割
-
-https://mp.weixin.qq.com/s/LZNla-NKAu8wmi-OaJD8yA
-
-旷视研究院推出可学习的树状滤波器，实现保留结构信息的特征变换
-
-https://mp.weixin.qq.com/s/lTPm229gzV_9RU-aiY-xQg
-
-2019年5篇图像分割算法最佳综述
-
-https://mp.weixin.qq.com/s/n9Xdj5RKGR9cyXXNzxzvSw
-
-基于深度学习的图像分割在高德的实践
