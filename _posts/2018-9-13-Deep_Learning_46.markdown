@@ -26,6 +26,14 @@ https://github.com/hwalsuklee/awesome-deep-text-detection-recognition
 
 Github：深度学习文本检测识别（OCR）精选资源汇总
 
+近年来场景文字检测工作主要分为两大类：
+
+- 自上而下的方法主要借鉴的是通用物体检测的思路，并且根据文字的特点设计相应的检测模型。这类方法通常难以处理不规则文本的检测问题。
+
+- 自下而上的方法，通常先学习文本行的基本组成单元，然后进行单元之间的组合得到文本行检测框。由于其灵活的表征方式，对不规则形状的文本检测有着天然的优势。
+
+自下而上的方法按照组成单元的不同又分为两类：组成单元为像素的基于分割的方法，以及组成单元为文字块的基于单元组合的方法。但是，自下而上的方法通常很难区分密集文本。密集文本检测问题是文本检测中一个广泛存在的难点问题。
+
 ## tesseract
 
 linux下可以使用tesseract作为OCR工具。当然这个工具目前使用的还是传统算法。
@@ -375,35 +383,3 @@ https://mp.weixin.qq.com/s/rJ7guL-Hxxr2Ezl7LRhQrA
 https://mp.weixin.qq.com/s/YixrjGTU4p7LlyfQCEmmmQ
 
 端到端任意形状场景文字识别
-
-https://mp.weixin.qq.com/s/Lk_P74kJCjmQo1S2piTplA
-
-针对不规则场景文字识别的对称约束矫正网络
-
-https://mp.weixin.qq.com/s/ENvoZ4ZPKT1HXaQjD9VgSA
-
-王晶：华为云OCR文字识别服务技术实践、底层框架及应用场景
-
-https://mp.weixin.qq.com/s/sigPeclXz12NUk_nX8TZ-A
-
-文档分析与识别技术回顾与反思
-
-https://mp.weixin.qq.com/s/4WXb6igvxZP_XoIHl4AiQA
-
-ESIR:一种基于迭代矫正的端到端场景文本识别方法
-
-https://mp.weixin.qq.com/s/MDxltLKP-SQf_31Zp1RL8A
-
-文本识别新王者CharNet：卷积字符网络
-
-https://mp.weixin.qq.com/s/H8ECjqEcIjcm5YNFu6ONdw
-
-开源OCR文本检测器，基于TextBoxes++和RetinaNet
-
-https://mp.weixin.qq.com/s/YoqFYLFSRcCXvbrpCsyImA
-
-基于形状匹配对抗式生成网络的可控艺术字体风格迁移
-
-https://mp.weixin.qq.com/s/I5WfG2aCMakao3IF30rLGg
-
-TET-GAN: 文字效果迁移与文字风格化和去风格化

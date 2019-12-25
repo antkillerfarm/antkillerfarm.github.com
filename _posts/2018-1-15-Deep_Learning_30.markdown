@@ -238,10 +238,6 @@ https://mp.weixin.qq.com/s/YNIwmR8K-H2eKbKoZSZZ-Q
 
 CIKM最佳应用论文：11亿节点的大型图，看闲鱼如何用图卷积过滤垃圾评论
 
-https://mp.weixin.qq.com/s/aMFFQBfVXgQr71nyjpyf0g
-
-一文读懂：图卷积在基于骨架的动作识别中的应用
-
 https://mp.weixin.qq.com/s/6RSYTlNvw7TyOJsjHf1iYQ
 
 基于图上下文知识融入的预训练语言模型
@@ -257,6 +253,10 @@ https://mp.weixin.qq.com/s/M7nzr6n4tZAMR1CXo3Q0OQ
 https://mp.weixin.qq.com/s/ee_Mq2vzJ2z253B7PZZc9w
 
 2019年，异质图神经网络领域有哪些值得读的顶会论文？
+
+https://mp.weixin.qq.com/s/QONDTuzv_jIbVwSXxHMyIw
+
+一文读懂图卷积GCN
 
 # 自动求导
 

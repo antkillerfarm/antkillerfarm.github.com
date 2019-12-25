@@ -349,3 +349,7 @@ https://mp.weixin.qq.com/s/8wiHVMhKjzlg8BqMMLLgYw
 https://mp.weixin.qq.com/s/YU4tRplyLxFpJdkqclhXyQ
 
 DeepMind大放送：开放4个多物体表征学习数据集，还有一篇智能体新研究
+
+https://mp.weixin.qq.com/s/fCoQv6zMQw_8eOwANS16OQ
+
+图神经网络的ImageNet？斯坦福大学等开源百万量级OGB基准测试数据集

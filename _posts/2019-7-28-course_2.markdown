@@ -6,6 +6,22 @@ category: resource
 
 # 名校机器学习相关课程
 
+https://mp.weixin.qq.com/s/pMOePInkrfx6o6PNJKlhZA
+
+深度学习如何用于计算机图形学？这一份八个主题700页PPT《图形深度学习》为你讲解
+
+https://mp.weixin.qq.com/s/_wLhjznuzHb2ENYmK6_I1g
+
+这一份217页斯坦福大学统计学习理论笔记，Percy Liang带你搞清楚难懂的理论基础
+
+https://seeing-theory.brown.edu/
+
+一本好玩的可视化统计概率入门书
+
+https://inst.eecs.berkeley.edu/~cs188/fa18/
+
+UCB CS188: Introduction to Artificial Intelligence
+
 https://sites.google.com/view/berkeley-cs294-158-sp19/home
 
 UCB CS294-158: Deep Unsupervised Learning
@@ -283,19 +299,3 @@ http://www.360doc.com/content/18/1220/07/17283749_803043906.shtml
 ----
 
 ![](/images/img3/KMT.png)
-
-----
-
-嘉靖年间，有一个太监奉命出宫办事，办事期间和一个叫陈虎的农民发生了争执，于是他把陈虎揍了一顿。
-
-陈虎回家后痛定思痛，悟出了一个道理：太监是很nb的！
-
-于是陈虎心一横，把自己的大儿子送进了宫阉了。
-
-五十年后，这位大儿子成为了太监中的头头——司礼监掌印太监兼提督东厂。他的名字叫陈矩，是万历年间著名的太监，曾破获妖书案，稳定朝局。死后被明神宗谕祭九坛，祠额为“清忠”。
-
-在把大儿子送进宫后不久，陈虎又得罪了一个举人，那个举人派家丁把陈虎揍了一顿。陈虎不服，发现读书人也很厉害，于是把二儿子送去读书。
-
-万历二十年，二儿子陈万策考中进士，比那个举人强了不知多少倍。虽然有哥哥暗中相助的嫌疑，虽然只是三甲，但起码是中了。
-
-幸好嘉靖皇帝没揍过陈虎。。。

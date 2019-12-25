@@ -4,6 +4,20 @@ title:  机器学习（二十四）——单分类SVM&多分类SVM, Stacking, �
 category: ML 
 ---
 
+# Optimizer（续）
+
+https://zhuanlan.zhihu.com/p/81020717
+
+从SGD到NadaMax，十种优化算法原理及实现
+
+https://zhuanlan.zhihu.com/p/22252270
+
+深度学习最全优化方法总结比较（SGD，Adagrad，Adadelta，Adam，Adamax，Nadam）
+
+https://www.zhihu.com/question/64134994
+
+如何理解深度学习分布式训练中的large batch size与learning rate的关系？
+
 # 单分类SVM&多分类SVM
 
 原始的SVM主要用于二分类，然而稍加变化，也可用于单分类和多分类。

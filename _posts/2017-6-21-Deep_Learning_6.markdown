@@ -8,6 +8,22 @@ category: DL
 
 ## 参考（续）
 
+https://mp.weixin.qq.com/s/CMcNkEFW9UUXAW0832dT6g
+
+对学习/理解Word2Vec有帮助的材料
+
+https://mp.weixin.qq.com/s/XMGZXAt_LUX5iTet7_SX4Q
+
+深度学习和自然语言处理：诠释词向量的魅力
+
+https://mp.weixin.qq.com/s/Rn_aJYozQ0f53Mjq4MKSwA
+
+哪种词向量模型更胜一筹？Word2Vec，WordRank or FastText?
+
+https://mp.weixin.qq.com/s/H7m7lqWpK27pJp9obXxlIQ
+
+见微知著，从细节处提升词向量的表示能力
+
 http://licstar.net/archives/328
 
 词向量和语言模型
@@ -279,13 +295,3 @@ tanh用在了状态和输出上，是对数据的处理，这个用其他激活�
 forget bias的初始值可以设为以1为均值，这对于训练很有好处，这就是tensorflow中forget_bias参数的来历。参见论文：
 
 《An Empirical Exploration of Recurrent Network Architectures》
-
-## LSTM的变体
-
-![](/images/article/LSTM_5.png)
-
-上图中的LSTM变体被称为**peephole connection**。其实就是将细胞状态加入各门的输入中。可以全部添加，也可以部分添加。
-
-![](/images/article/LSTM_6.png)
-
-上图中的LSTM变体被称为**Coupled Input and Forget Gate（CIFG）**。它将忘记和输入门连在了一起。

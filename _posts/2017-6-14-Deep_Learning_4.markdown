@@ -8,6 +8,12 @@ category: DL
 
 ## 多通道卷积（续）
 
+多通道卷积操作最终可以转化为矩阵运算，如下图所示：
+
+![](/images/article/conv.png)
+
+这种将卷积运算变为矩阵乘法运算的方法，一般被称为GEMM（General Matrix Multiply）。因为卷积变为矩阵这一步运算在Caffe中是用im2col函数实现的，因此，也有使用im2col来指代这类方法的。
+
 参见：
 
 http://blog.csdn.net/u014114990/article/details/51125776
@@ -322,19 +328,3 @@ One-Hot编码与哑变量
 https://www.zhihu.com/question/359742335
 
 分类问题的label为啥必须是one hot形式？
-
-## Word Embedding
-
-针对One-hot Representation的不足，Bengio提出了Distributed Representation，也称为Word Embedding。
-
-![](/images/article/word_vector.png)
-
-Word Embedding的思路如上图所示，即想办法**将高维的One-hot词向量映射到低维的语义空间中**。
-
-Bengio自己提出了一种基于神经网络的Word Embedding的方案，然而由于计算量过大，目前已经被淘汰了。
-
-参考：
-
-http://www.cnblogs.com/neopenx/p/4570648.html
-
-词向量概况

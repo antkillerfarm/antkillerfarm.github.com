@@ -359,7 +359,3 @@ https://mp.weixin.qq.com/s/ZYIfzk1kZ4azpmxWagkQuw
 https://mp.weixin.qq.com/s/w4m4fG-a30AgulNPhBVC5w
 
 基于强化学习的自动交易系统研究与发展综述
-
-https://mp.weixin.qq.com/s/4DypXsu_1bCq8szLmk1jng
-
-在深度学习模型的优化上，梯度下降并非唯一的选择（演化策略）

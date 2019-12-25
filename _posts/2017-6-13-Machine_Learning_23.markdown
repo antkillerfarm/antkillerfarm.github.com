@@ -64,14 +64,6 @@ https://zhuanlan.zhihu.com/p/85558304
 
 深度学习压缩感知（DCS）历史最全资源汇总分享
 
-# 金融模型
-
-Capital asset pricing model
-
-Fama–French three-factor model
-
-Carhart four-factor model
-
 # Optimizer
 
 在《机器学习（一）》中，我们已经指出梯度下降是解决凸优化问题的一般方法。而如何更有效率的梯度下降，就是本节中Optimizer的责任了。
@@ -230,6 +222,16 @@ https://mp.weixin.qq.com/s/lGrTUYALmKOQkO70DZpbPQ
 
 小改进，大飞跃：深度学习中的最小牛顿求解器
 
+## 非梯度优化
+
+对于深度学习模型的优化问题来说，随机梯度下降（SGD）是一种被广为使用方法。然而，实际上 SGD 并非我们唯一的选择。当我们使用一个“黑盒算法”时，即使不知道目标函数 f(x):Rn→R 的精确解析形式（因此不能计算梯度或 Hessian 矩阵）你也可以对 f(x) 进行评估。经典的黑盒优化方法包括“模拟退火算法”、“爬山法”以及“单纯形法”。演化策略（ES）是一类诞生于演化算法（EA）黑盒优化算法。
+
+参考：
+
+https://mp.weixin.qq.com/s/USHad8UvhsqWTI4MJmif5g
+
+在深度学习模型的优化上，梯度下降并非唯一的选择
+
 ## 参考
 
 http://sebastianruder.com/optimizing-gradient-descent/
@@ -343,15 +345,3 @@ https://mp.weixin.qq.com/s/B9nUwPtgpsLkEyCOlSAO5A
 https://mp.weixin.qq.com/s/dseeCB-CRtZnzC3d4_8pYw
 
 AMSGrad能够取代Adam吗
-
-https://zhuanlan.zhihu.com/p/81020717
-
-从SGD到NadaMax，十种优化算法原理及实现
-
-https://zhuanlan.zhihu.com/p/22252270
-
-深度学习最全优化方法总结比较（SGD，Adagrad，Adadelta，Adam，Adamax，Nadam）
-
-https://www.zhihu.com/question/64134994
-
-如何理解深度学习分布式训练中的large batch size与learning rate的关系？

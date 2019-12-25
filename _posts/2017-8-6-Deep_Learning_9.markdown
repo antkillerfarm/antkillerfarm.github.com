@@ -4,7 +4,17 @@ title:  深度学习（九）——CNN进化史（2）
 category: DL 
 ---
 
-# CNN进化史（续）
+# CNN进化史
+
+## AlexNet（续）
+
+>注：ILSVRC（Large Scale Visual Recognition Challenge）大赛，在2016年以前，一直是CV界的顶级赛事。但随着技术的成熟，目前的科研重点已经从物体识别转移到了物体理解领域。2017年将是该赛事的最后一届。WebVision有望接替该赛事，成为下一个目标。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/22538465
+
+运用CNN对ImageNet进行图像分类
 
 ## VGG
 
@@ -229,15 +239,3 @@ http://mp.weixin.qq.com/s/ZKMi4gRfDRcTxzKlTQb-Mw
 http://mp.weixin.qq.com/s/kbHzA3h-CfTRcnkViY37MQ
 
 详解CNN五大经典模型:Lenet，Alexnet，Googlenet，VGG，DRL
-
-https://zhuanlan.zhihu.com/p/22094600
-
-Deep Learning回顾之LeNet、AlexNet、GoogLeNet、VGG、ResNet
-
-https://mp.weixin.qq.com/s/28GtBOuAZkHs7JLRVLlSyg
-
-深度卷积神经网络演化历史及结构改进脉络
-
-http://www.leiphone.com/news/201609/303vE8MIwFC7E3DB.html
-
-Google最新开源Inception-ResNet-v2，借助残差网络进一步提升图像分类水准

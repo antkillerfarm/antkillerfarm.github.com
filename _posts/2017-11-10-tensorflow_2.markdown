@@ -42,6 +42,10 @@ https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247515390&idx=2&sn=ebf548
 
 tensorboard学习笔记
 
+https://mp.weixin.qq.com/s/JRa0tgXtGdzaj0UnYcmZ3Q
+
+tensorboard指南
+
 ## 模型文件
 
 tensorflow model包含2个文件：

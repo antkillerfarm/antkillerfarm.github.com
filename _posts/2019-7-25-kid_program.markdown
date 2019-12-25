@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  孩子的编程语言, Go, Julia, Rust, VS, Javascript（三）
+title:  孩子的编程语言, Go, Julia, Rust, Javascript（三）
 category: language 
 ---
 
@@ -119,6 +119,13 @@ https://www.runoob.com/go/go-tutorial.html
 运行：
 
 `go run xxx.go`
+
+- Web 框架：Gin、Beego、Echo等。
+- 微服务框架：go-kit、go-micro等。
+- 数据库连接库：go-sql-driver/mysql、go-redis/redis、mongo-go-driver、go-elasticsearch，以及gorm、xorm等。
+- 中间件软件：etcd、Consul、NSQ、Caddy等。
+- 数据库软件：TiDB、Cockroach、InfluxDB、Cayley等。
+- 数据爬取软件：Pholcus、Colly等。
 
 参考：
 
@@ -301,30 +308,6 @@ https://github.com/rcore-os/rCore
 https://zhuanlan.zhihu.com/c_1078248076300521472
 
 一个Rust OS的专栏
-
-# VS
-
-## 分栏显示
-
-1.Window -> New Window
-
-2.Window -> New Vertical Tab Group
-
-## Visual Studio Tab转换为空格的设置
-
-打开“Tools --> Options --> Text Editor”，如果是编写C/C++程序，就打开“C/C++-->Tabs”，在这里，选中“Insert spaces”即可。
-
-## 离线安装
-
-VS2015以后，MS不再提供VS的离线安装包，因为安装文件实在是太大了（10GB+），取而代之的是offline模式。
-
-1.首先下载在线安装器vs_community.exe，打开命令行：
-
-`vs_community.exe --layout D:\vs2017\offline --lang zh-CN`
-
-2.安装证书。证书在offline\certificates下。
-
-3.运行运行offline\vs_community.exe。
 
 # Javascript（续）
 

@@ -6,6 +6,22 @@ category: DL
 
 # 词向量（续）
 
+## Word Embedding
+
+针对One-hot Representation的不足，Bengio提出了Distributed Representation，也称为Word Embedding。
+
+![](/images/article/word_vector.png)
+
+Word Embedding的思路如上图所示，即想办法**将高维的One-hot词向量映射到低维的语义空间中**。
+
+Bengio自己提出了一种基于神经网络的Word Embedding的方案，然而由于计算量过大，目前已经被淘汰了。
+
+参考：
+
+http://www.cnblogs.com/neopenx/p/4570648.html
+
+词向量概况
+
 ## word2vec
 
 除了Bengio方案之外，早期人们还尝试过基于共生矩阵（Co-occurrence Matrix）SVD分解的Word Embedding方案。该方案对于少量语料有不错的效果，但一旦语料增大，计算量即呈指数级上升。
@@ -253,19 +269,3 @@ NLP之Wrod2Vec三部曲
 https://mp.weixin.qq.com/s/VMK_UpOUI0y7apTGR02D1Q
 
 图解Word2Vec
-
-https://mp.weixin.qq.com/s/CMcNkEFW9UUXAW0832dT6g
-
-对学习/理解Word2Vec有帮助的材料
-
-https://mp.weixin.qq.com/s/XMGZXAt_LUX5iTet7_SX4Q
-
-深度学习和自然语言处理：诠释词向量的魅力
-
-https://mp.weixin.qq.com/s/Rn_aJYozQ0f53Mjq4MKSwA
-
-哪种词向量模型更胜一筹？Word2Vec，WordRank or FastText?
-
-https://mp.weixin.qq.com/s/H7m7lqWpK27pJp9obXxlIQ
-
-见微知著，从细节处提升词向量的表示能力

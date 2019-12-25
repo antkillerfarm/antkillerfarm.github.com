@@ -317,3 +317,7 @@ https://mp.weixin.qq.com/s/nqCJOstJlZv6CrMST-tH8g
 https://mp.weixin.qq.com/s/RQ1iBs8ftvNR0_xB7X8Erg
 
 阿里妈妈点击率预估中的长期兴趣建模
+
+https://mp.weixin.qq.com/s/Y4g2T6qMGzCcE67bINPiGA
+
+推荐场景中召回模型的演化过程

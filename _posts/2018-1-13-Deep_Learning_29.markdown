@@ -138,7 +138,7 @@ https://mp.weixin.qq.com/s/h1vDImYTLEheatZnScZwbg
 
 https://mp.weixin.qq.com/s/PEltOwR1Am7RX6N-4UN9vw
 
-集成图网络模型实现、基准测试，清华推出图表示学习工具包
+集成图网络模型实现、基准测试，清华推出图表示学习工具包（CogDL）
 
 ## 参考
 

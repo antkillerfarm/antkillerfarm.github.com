@@ -187,6 +187,12 @@ $$\left(\begin{array}{ccc}
     \mathrm{a}_{31}\, \mathrm{b}_{31} & \mathrm{a}_{32}\, \mathrm{b}_{32} & \mathrm{a}_{33}\, \mathrm{b}_{33}
   \end{array}\right)$$
 
+参考：
+
+https://mp.weixin.qq.com/s/K_aNhzaxmchynDWTE1QFCQ
+
+给你一些点与线，只用动画就能看懂张量乘法，还能证明迹循环定理
+
 # 20世纪10大算法
 
 2000年，IEEE评选出20世纪10大算法。名单如下：

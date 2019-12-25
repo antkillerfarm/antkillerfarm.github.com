@@ -1,10 +1,42 @@
 ---
 layout: post
-title:  深度学习（四十七）——三维处理, AutoDL进阶
+title:  深度学习（四十七）——三维处理
 category: DL 
 ---
 
 # OCR（续）
+
+https://mp.weixin.qq.com/s/Lk_P74kJCjmQo1S2piTplA
+
+针对不规则场景文字识别的对称约束矫正网络
+
+https://mp.weixin.qq.com/s/ENvoZ4ZPKT1HXaQjD9VgSA
+
+王晶：华为云OCR文字识别服务技术实践、底层框架及应用场景
+
+https://mp.weixin.qq.com/s/sigPeclXz12NUk_nX8TZ-A
+
+文档分析与识别技术回顾与反思
+
+https://mp.weixin.qq.com/s/4WXb6igvxZP_XoIHl4AiQA
+
+ESIR:一种基于迭代矫正的端到端场景文本识别方法
+
+https://mp.weixin.qq.com/s/MDxltLKP-SQf_31Zp1RL8A
+
+文本识别新王者CharNet：卷积字符网络
+
+https://mp.weixin.qq.com/s/H8ECjqEcIjcm5YNFu6ONdw
+
+开源OCR文本检测器，基于TextBoxes++和RetinaNet
+
+https://mp.weixin.qq.com/s/YoqFYLFSRcCXvbrpCsyImA
+
+基于形状匹配对抗式生成网络的可控艺术字体风格迁移
+
+https://mp.weixin.qq.com/s/I5WfG2aCMakao3IF30rLGg
+
+TET-GAN: 文字效果迁移与文字风格化和去风格化
 
 https://mp.weixin.qq.com/s/CwLN2SRyN7RTEFtNx3u8Pg
 
@@ -29,6 +61,10 @@ https://mp.weixin.qq.com/s/CcPhmxCFWYddaQgfJmO9UQ
 https://mp.weixin.qq.com/s/-XPlEnszjBc_NCCIvD9zHg
 
 手写签名认证的逆鉴别网络
+
+https://mp.weixin.qq.com/s/LS_8424jn_3ksemKBgg88w
+
+SegLink++：基于实例感知与组件组合的任意形状密集场景文本检测方法
 
 # 三维处理
 
@@ -300,71 +336,15 @@ https://mp.weixin.qq.com/s/_59iRdLATm2n99M89JBqQA
 
 KITTI立体匹配霸榜论文算法详解
 
-# AutoDL进阶
+https://mp.weixin.qq.com/s/s_cAZ--KHvNZq3thrIGx3w
 
-https://mp.weixin.qq.com/s/_31zbbQ5dHf2UaI8GhXozw
+MVX-Net：多模型三位像素网络用于3D目标检测
 
-4 GPU hours搜索到一个鲁棒的网络结构
+https://mp.weixin.qq.com/s/npKNDrlXZ6oIlE0NG80BpQ
 
-https://mp.weixin.qq.com/s/slrRXgD49I7ZG24ialVxPw
+Geoffrey Hinton再出神作：通过神经网络估计有关节可变形的三维模型
 
-第四范式涂威威：自动机器学习求解三要素与发展趋势
-
-https://mp.weixin.qq.com/s/X5Oi8gKyT5Tmh7ljon3MzQ
-
-谷歌引入自动网络设计，高效解决大规模深度推荐模型的特征嵌入问题
-
-https://mp.weixin.qq.com/s/rllQLPPYxxLCK9-dgOjLDg
-
-另一种可微架构搜索：商汤提出在反传中学习架构参数的SNAS
-
-https://mp.weixin.qq.com/s/AV8fD5Vf6uzhLeW9nfMASg
-
-一文详解随机神经网络结构搜索(SNAS)
-
-https://mp.weixin.qq.com/s/s10z5pkYf5Sha0V58T8fBw
-
-单路径NAS: 在四小时内设计出给定硬件内最有效的网
-
-https://www.zhihu.com/question/339002300
-
-One-Shot 神经网络搜索(NAS)的searching阶段到底在做什么？
-
-https://mp.weixin.qq.com/s/323RA6UtnyTySoXVXcJ2vA
-
-华人团队打造：AutoML+GAN=AutoGAN！AI设计GAN模型比人类更好
-
-https://mp.weixin.qq.com/s/nN7tgkvvkv8B8N-z4yAgcQ
-
-四小时搜索NN结构，厦大提出快速NAS检索方法
-
-https://mp.weixin.qq.com/s/rgUTcuH2mfIFBDoOfd26Cw
-
-NASNet：神经架构搜索网络在图像分类中的表现
-
-https://mp.weixin.qq.com/s/VdjHp5Tb1fSyV3CQblPQmw
-
-利用NAS寻找最佳GAN：AutoGAN架构搜索方案专为GAN打造
-
-https://mp.weixin.qq.com/s/d60EKUJjYfYfcfhMnaCpPA
-
-基于强化学习的自动搜索
-
-https://mp.weixin.qq.com/s/ClqOWx1RJGzoS0akI2s93w
-
-多媒体的AutoML与元学习，清华大学朱文武教授等
-
-https://mp.weixin.qq.com/s/QtYNb1bVnWghNFK6fbynLw
-
-激活函数如何进行自动学习和配置
-
-https://mp.weixin.qq.com/s/smAlLm-JZn_s2utSCVk7ig
-
-归一化(Normalization)方法如何进行自动学习和配置
-
-https://mp.weixin.qq.com/s/E0ULyXGz3UEcD0cIg-XkNA
-
-优化方法可以进行自动搜索学习吗？
+# AutoDL+
 
 https://mp.weixin.qq.com/s/Nmkcy2nBczUccwIdMJiH_A
 

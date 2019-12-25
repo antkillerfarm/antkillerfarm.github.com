@@ -349,11 +349,3 @@ https://mp.weixin.qq.com/s/VcA1SZNS4LvMny_9dCUByQ
 https://mp.weixin.qq.com/s/Ol69W-T67eGJW6RDjQJQ6w
 
 胡武华博士：运筹优化理论在物流行业中的应用实践
-
-https://mp.weixin.qq.com/s/cd08Lk4LcxV-qAVLq7-Kjg
-
-整数规划经典方法--割平面法（Cutting Plane Method）
-
-https://mp.weixin.qq.com/s/NlxZQv8Z-AzIlz6mG8cCxQ
-
-离散/整数/组合/非凸优化概述及其在AI的应用

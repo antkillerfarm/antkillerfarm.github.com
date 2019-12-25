@@ -24,6 +24,38 @@ PRML的matlab实现：
 
 https://github.com/PRML/PRMLT
 
+## Stanford AI课程表
+
+- 新生
+
+秋季：CS106A
+
+冬季：CS106B/X，CS109
+
+春季：CS103，CS107
+
+- 二年级
+
+秋季：CS221，CS131，统计信息202
+
+冬季：CS124，CS161
+
+春季：CS231N，CS110
+
+- 三年级
+
+秋季：CS229
+
+冬季：CS228，CS224N
+
+春季：CS224W
+
+- 四年级
+
+秋季：CS238
+
+冬季：CS246，CS234
+
 ## 参考
 
 https://github.com/prakhar1989/awesome-courses
@@ -391,19 +423,3 @@ https://mp.weixin.qq.com/s/mGM5nJJrWpSISWqXdlIDFg
 https://mp.weixin.qq.com/s/o50c2cMjUSmR8Ea6v925_w
 
 食物图像分析——55页PPT带你学习食物图像分析相关研究进展
-
-https://mp.weixin.qq.com/s/pMOePInkrfx6o6PNJKlhZA
-
-深度学习如何用于计算机图形学？这一份八个主题700页PPT《图形深度学习》为你讲解
-
-https://mp.weixin.qq.com/s/_wLhjznuzHb2ENYmK6_I1g
-
-这一份217页斯坦福大学统计学习理论笔记，Percy Liang带你搞清楚难懂的理论基础
-
-https://seeing-theory.brown.edu/
-
-一本好玩的可视化统计概率入门书
-
-https://inst.eecs.berkeley.edu/~cs188/fa18/
-
-UCB CS188: Introduction to Artificial Intelligence

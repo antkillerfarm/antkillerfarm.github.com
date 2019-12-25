@@ -4,9 +4,17 @@ title:  深度学习（七）——神经元激活函数进阶, ResNet
 category: DL 
 ---
 
-# LSTM
+# LSTM（续）
 
-## LSTM的变体（续）
+## LSTM的变体
+
+![](/images/article/LSTM_5.png)
+
+上图中的LSTM变体被称为**peephole connection**。其实就是将细胞状态加入各门的输入中。可以全部添加，也可以部分添加。
+
+![](/images/article/LSTM_6.png)
+
+上图中的LSTM变体被称为**Coupled Input and Forget Gate（CIFG）**。它将忘记和输入门连在了一起。
 
 ![](/images/article/LSTM_7.png)
 
@@ -325,13 +333,3 @@ https://mp.weixin.qq.com/s/pA9JW75p9J5e5KHe3ifcBQ
 代码：
 
 https://github.com/KaimingHe/deep-residual-networks
-
-残差网络的明显特征是有着相当深的深度，从32层到152层，其深度远远超过了之前提出的深度网络结构，而后又针对小数据设计了1001层的网络结构。
-
-其简化版的结构图如下所示：
-
-![](/images/article/drn.png)
-
-简单的说，就是把前面的层跨几层直接接到后面去，以使误差梯度能够传的更远一些。
-
-DRN的基本思想倒不是什么新东西了，在2003年Bengio提出的词向量模型中，就已经采用了这样的思路。

@@ -6,6 +6,16 @@ category: DL
 
 # ResNet（续）
 
+残差网络的明显特征是有着相当深的深度，从32层到152层，其深度远远超过了之前提出的深度网络结构，而后又针对小数据设计了1001层的网络结构。
+
+其简化版的结构图如下所示：
+
+![](/images/article/drn.png)
+
+简单的说，就是把前面的层跨几层直接接到后面去，以使误差梯度能够传的更远一些。
+
+DRN的基本思想倒不是什么新东西了，在2003年Bengio提出的词向量模型中，就已经采用了这样的思路。
+
 DRN的实现依赖于下图所示的res block：
 
 ![](/images/article/res_block.png)
@@ -315,11 +325,3 @@ AlexNet作为第一个现代意义上的CNN，它的意义主要包括：
 4.多GPU并行计算。
 
 5.当然最应该感谢的是李飞飞团队搞出来的标注数据集合ImageNet。
-
->注：ILSVRC（Large Scale Visual Recognition Challenge）大赛，在2016年以前，一直是CV界的顶级赛事。但随着技术的成熟，目前的科研重点已经从物体识别转移到了物体理解领域。2017年将是该赛事的最后一届。WebVision有望接替该赛事，成为下一个目标。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/22538465
-
-运用CNN对ImageNet进行图像分类

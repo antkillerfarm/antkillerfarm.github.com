@@ -58,29 +58,9 @@ https://mp.weixin.qq.com/s/vGTqHif48O2GZhuxWFhOLw
 
 知识蒸馏总结、应用与扩展（2015-2019）
 
-https://mp.weixin.qq.com/s/mFuxCl0Mzv5hmDFewWZkrw
-
-FAIR&MIT提出知识蒸馏新方法：数据集蒸馏
-
-https://mp.weixin.qq.com/s/MDgqSwVEClNqNpaWuGTEpg
-
-微软亚研院提出用于语义分割的结构化知识蒸馏
-
 https://zhuanlan.zhihu.com/p/24337627
 
 深度压缩之蒸馏模型
-
-https://blog.csdn.net/xbinworld/article/details/83063726
-
-知识蒸馏（Distilling the Knowledge in a Neural Network），在线蒸馏
-
-https://mp.weixin.qq.com/s/ekKg46bQlWrlg9Hon01M5g
-
-Hinton胶囊网络后最新研究：用“在线蒸馏”训练大规模分布式神经网络
-
-https://mp.weixin.qq.com/s/SqxooZqSeD3wA4EFK5D3Kg
-
-再生神经网络：利用知识蒸馏收敛到更优的模型
 
 https://zhuanlan.zhihu.com/p/51563760
 
@@ -97,6 +77,34 @@ https://zhuanlan.zhihu.com/p/81467832
 https://mp.weixin.qq.com/s/pXoENwz4Z-eok9y3P9rQvg
 
 知识蒸馏（Knowledge Distillation）简述（二）
+
+https://zhuanlan.zhihu.com/p/92166184
+
+知识蒸馏简述（一）
+
+https://zhuanlan.zhihu.com/p/92269636
+
+知识蒸馏简述（二）
+
+https://mp.weixin.qq.com/s/mFuxCl0Mzv5hmDFewWZkrw
+
+FAIR&MIT提出知识蒸馏新方法：数据集蒸馏
+
+https://mp.weixin.qq.com/s/MDgqSwVEClNqNpaWuGTEpg
+
+微软亚研院提出用于语义分割的结构化知识蒸馏
+
+https://blog.csdn.net/xbinworld/article/details/83063726
+
+知识蒸馏（Distilling the Knowledge in a Neural Network），在线蒸馏
+
+https://mp.weixin.qq.com/s/ekKg46bQlWrlg9Hon01M5g
+
+Hinton胶囊网络后最新研究：用“在线蒸馏”训练大规模分布式神经网络
+
+https://mp.weixin.qq.com/s/SqxooZqSeD3wA4EFK5D3Kg
+
+再生神经网络：利用知识蒸馏收敛到更优的模型
 
 https://mp.weixin.qq.com/s/Nkxy0SUdbwIjp5swU6tS9g
 

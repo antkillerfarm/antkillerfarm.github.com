@@ -294,3 +294,7 @@ NLP中的对抗训练+PyTorch实现
 https://mp.weixin.qq.com/s/Ze2BXEexTIpNluRSdfeCsA
 
 GAN和PS合体会怎样？东京大学图像增强新研究：无需配对图像，增强效果还可解释
+
+https://mp.weixin.qq.com/s/qLhnvLhXHhRoPGtPWYCY0w
+
+ICCV2019最佳论文SinGAN全面解读

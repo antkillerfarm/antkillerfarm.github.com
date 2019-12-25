@@ -330,3 +330,11 @@ https://mp.weixin.qq.com/s/7UhB8mSXQUfOPbDKqqg4rg
 https://zhuanlan.zhihu.com/p/92230537
 
 求解稀疏优化问题——半光滑牛顿方法
+
+# 金融模型
+
+Capital asset pricing model
+
+Fama–French three-factor model
+
+Carhart four-factor model

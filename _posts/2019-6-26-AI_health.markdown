@@ -178,6 +178,10 @@ https://mp.weixin.qq.com/s/Uh0EI-pTaXK46Zb08_cs0g
 
 智能医疗综述，48页论文详述医学AI最新进展
 
+https://mp.weixin.qq.com/s/9dcq4rTcSvo5kQJ3GjwdTg
+
+医学图像分割专栏之前列腺分割
+
 # 可视化
 
 ![](/images/img2/data_visual.png)

@@ -22,6 +22,10 @@ https://mp.weixin.qq.com/s/ai_XI8ddP5I2m3ChCqnQsA
 
 高效大规模机器学习训练，198页PDF带你概览领域前沿进展
 
+https://mp.weixin.qq.com/s/RAjusu-Jyqb8K19N8KZ_3w
+
+一份552页《大规模数据系统：Large-scale Data Systems》硬核课程PPT
+
 https://zhuanlan.zhihu.com/p/58806183
 
 深度学习的分布和并行处理系统

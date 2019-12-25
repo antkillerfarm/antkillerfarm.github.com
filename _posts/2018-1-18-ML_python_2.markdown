@@ -52,7 +52,7 @@ https://mp.weixin.qq.com/s/XIQ5EpQcYLxmRBuaTCZFzg
 
 https://mp.weixin.qq.com/s/Jkx1K7d1ufD2S6s2cOA7Hw
 
-如何只用一行代码让Pandas加速四倍？
+如何只用一行代码让Pandas加速四倍？（Modin）
 
 ## datatable
 
@@ -462,9 +462,9 @@ https://mp.weixin.qq.com/s/dARWbR1ghho0yX02lNA-gw
 
 Python绘制histogram直方图
 
-https://mp.weixin.qq.com/s/j07zF72UyDXpKNnvQli5NQ
+https://github.com/minimaxir/stylecloud
 
-简单几步教你用Python生成词云图
+一款牛逼的词云工具，开箱即用
 
 https://mp.weixin.qq.com/s/tHNd6y2v7GXN2mSIv0qXlg
 

@@ -173,6 +173,20 @@ https://zhuanlan.zhihu.com/p/32356077
 
 Multi-Armed Bandit: UCB (Upper Bound Confidence)
 
+## 一些MAB变种
+
+我们前面的讨论默认了环境是不会变化的。而一些MAB问题，这个假设可能不成立，这就好比如果一位玩家发现某个机器的$$p_i$$很高，一直摇之后赌场可能人为降低这台机器吐钱的概率。在这种情况下，MAB问题的环境就是随着时间/玩家的行为会发生变化。
+
+如果概率事先设定好，并且在玩家开始有动作之后也无法更改，我们叫做oblivious adversary setting；如果这个对手在玩家有动作之后还能随时更改自己的设定，那就叫做adaptive adversary setting。
+
+另外一类变种，叫做contextual MAB(cMAB)。几乎所有在线广告推送（dynamic ad display）都可以看成是cMAB问题。在这类问题中，每个arm的回报会和当前时段出现的顾客的特征（也就是这里说的context）有关。
+
+参考：
+
+https://mp.weixin.qq.com/s/8Ks1uayLw6nfKs4-boiMpA
+
+多任务学习时转角遇到Bandit老虎机
+
 # Inverse Reinforcement Learning
 
 逆强化学习问题定义：

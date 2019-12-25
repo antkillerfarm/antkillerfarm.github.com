@@ -16,6 +16,10 @@ https://mp.weixin.qq.com/s/rPDvLnG4MBDRUMCWs2fjcQ
 
 最新StarGAN对抗生成网络实现多领域图像变换
 
+https://mp.weixin.qq.com/s/CsIKES2APuxTP33RfX81fg
+
+升级版StarGAN来袭！你想要的多目标域多风格图像变换它都有
+
 # InfoGAN
 
 论文：

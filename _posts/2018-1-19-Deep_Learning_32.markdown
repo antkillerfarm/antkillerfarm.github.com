@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十二）——点云, 图像超分辨率进阶
+title:  深度学习（三十二）——点云, AutoDL（1）, 图像超分辨率进阶
 category: DL 
 ---
 
@@ -145,6 +145,95 @@ DeepVCP：百度无人车提出首个端到端的高精度点云配准网络
 https://zhuanlan.zhihu.com/p/91275450
 
 点云配准综述
+
+# AutoDL
+
+DL领域目前存在的主要问题之一是：如何设计网络结构和调整超参数。目前的做法，通常依赖于作者的直觉，属于典型的拍脑袋想点子。
+
+既然AI已经能够做很多事了，那么有没有可能，使用AI自动生成网络结构呢？
+
+Google的这两篇论文在这里做了一些尝试：
+
+《Neural Architecture Search With Reinforcement Learning》
+
+《Learning Transferable Architectures for Scalable Image Recognition》
+
+这里主要采用强化学习的方法，在一个广阔的搜索空间中，寻找最合适的网络结构。但对于计算能力提出了很高的要求。论文中提到，他们使用了500块GPU。**有钱真的是可以为所欲为的。**
+
+这里学到的模型，一般被称为NASNet。
+
+AutoDL常用的套路主要有：
+
+- random search/gird search。这是最古老的办法。
+- reinforcement learning
+- gradient-based
+- weight-sharing
+- evolutionary
+- random graph
+
+## 工具
+
+https://mp.weixin.qq.com/s/9OZiFgziY8fMn-lkmdtiqQ
+
+终结谷歌AutoML的真正杀手！Saleforce开源TransmogrifAI
+
+https://mp.weixin.qq.com/s/GFjYzxf6IdKPvkij8-i_Dg
+
+调参工要凉？微软重磅开源AutoML工具包NNI
+
+https://mp.weixin.qq.com/s/L1nkhc4I6VX2s6S5Tiv0Zw
+
+小白也能搭建深度模型，百度EasyDL的背后你知多少
+
+![](/images/img2/AdaNet.gif)
+
+https://mp.weixin.qq.com/s/HiD-OqAz67cwwchjSyIjWA
+
+AutoML又一利器来了，谷歌宣布开源AdaNet
+
+https://mp.weixin.qq.com/s/o3WqVIxlsukt3_JcY-10LA
+
+AdaNet简介：快速灵活的AutoML，提供学习保证
+
+https://mp.weixin.qq.com/s/2ehni5O__XnPaLjBRmAiIQ
+
+利用AdaNet将多个TensorFlow Hub模块组合成一个集成网络
+
+https://mp.weixin.qq.com/s/mEYFnP1q131-4hdgjOQ2cQ
+
+“超参数”与“网络结构”自动化设置方法---DeepHyper
+
+## 书籍
+
+https://mp.weixin.qq.com/s/wTwjbripELzqdCjs64Dzzw
+
+告别调参，AutoML新书发布
+
+## ENAS
+
+https://mp.weixin.qq.com/s/SwJs0OUzBlhiIOyFHFBK_g
+
+一文看懂Jeff Dean等提出的ENAS到底好在哪？
+
+https://mp.weixin.qq.com/s/Jw2kzCf2uFibhIpREnjO_A
+
+图解高效神经网络结构搜索（ENAS）
+
+## DARTS
+
+论文：
+
+《DARTS: Differentiable Architecture Search》
+
+代码：
+
+https://github.com/quark0/darts
+
+参考：
+
+https://mp.weixin.qq.com/s/bjVTpdaKFx4fFtT8BjMNew
+
+指数级加速架构搜索：CMU提出基于梯度下降的可微架构搜索方法（DARTS）
 
 # 图像超分辨率进阶
 

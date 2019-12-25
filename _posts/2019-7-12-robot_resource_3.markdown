@@ -353,3 +353,11 @@ ADAS系统中的动态目标感知策略（一）
 https://mp.weixin.qq.com/s/JT4p03m77ohOufL3JFecvA
 
 从硬件角度剖析自动驾驶，为什么说它是复杂的系统工程？
+
+https://mp.weixin.qq.com/s/UGdZCC80gQRTgHz9GV6USA
+
+MEMS IMU/陀螺仪对准基础
+
+https://mp.weixin.qq.com/s/v3gsmCWSI9pEwRolN8qWNA
+
+基于深度卷积网络的自动驾驶多模态轨迹预测
