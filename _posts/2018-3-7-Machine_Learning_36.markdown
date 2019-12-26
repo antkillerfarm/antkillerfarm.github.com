@@ -164,6 +164,10 @@ https://mp.weixin.qq.com/s/X4K6UFZPxL05v2uolId7Lw
 
 XGBoost在携程搜索排序中的应用
 
+https://mp.weixin.qq.com/s/5zSLod4oyL4m6LADI6KC0Q
+
+深入理解XGBoost，优缺点分析，原理推导及工程实现
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。

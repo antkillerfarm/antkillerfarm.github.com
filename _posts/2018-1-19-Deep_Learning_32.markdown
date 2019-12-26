@@ -181,6 +181,10 @@ https://mp.weixin.qq.com/s/GFjYzxf6IdKPvkij8-i_Dg
 
 调参工要凉？微软重磅开源AutoML工具包NNI
 
+https://mp.weixin.qq.com/s/7_KRT-rRojQbNuJzkjFMuA
+
+微软开源自动机器学习工具NNI概览及新功能详解
+
 https://mp.weixin.qq.com/s/L1nkhc4I6VX2s6S5Tiv0Zw
 
 小白也能搭建深度模型，百度EasyDL的背后你知多少
