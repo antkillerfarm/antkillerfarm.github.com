@@ -284,6 +284,10 @@ https://mp.weixin.qq.com/s/h0PwA9vtABWHgxd42yX3Fg
 
 当时尚遇上AI！港中文MMLab开源MMFashion工具箱
 
+https://github.com/Media-Smart/vedaseg
+
+vedaseg:A semantic segmentation toolbox in pytorch
+
 # Attention进阶+
 
 https://mp.weixin.qq.com/s/7OYY3L7gL4wVv_EjoosOHA

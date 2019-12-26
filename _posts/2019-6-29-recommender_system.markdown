@@ -271,3 +271,7 @@ Instagram推荐系统：每秒预测9000万个模型是怎么做到的？
 https://mp.weixin.qq.com/s/ZggfBVw0Z0ODxjqAC4-Lbg
 
 淘宝搜索模型如何全面实时化？
+
+https://mp.weixin.qq.com/s/SPtNy_1_6fiFXKukMmVPlA
+
+深度学习在网易严选智能客服中的应用

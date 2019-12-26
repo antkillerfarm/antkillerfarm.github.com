@@ -50,6 +50,10 @@ https://mp.weixin.qq.com/s/-EDxUwAKdXnmUKeLJTiAUw
 
 解构阿里深度兴趣网络（DIN）：如何将注意力机制引入推荐系统？
 
+https://zhuanlan.zhihu.com/p/54838663
+
+也评Deep Interest Evolution Network
+
 https://mp.weixin.qq.com/s/lnCe_3ssP6IEOHEX-N4vyg
 
 达观数据于敬：个性化推荐系统实践应用

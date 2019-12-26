@@ -18,6 +18,16 @@ $$L=\left(\color{blue}{r+\gamma Q(s',\color{red}{\mathop{\arg\max}_{a'}Q(s',a',w
 
 Nature DQN的两个Q网络分离的还不够彻底，Double DQN用当前的Q网络来选择动作（公式中红色部分所示），而用目标Q网络来计算目标Q。
 
+参考：
+
+https://mp.weixin.qq.com/s/NkWj1bV7uMjACxAvxhPJXw
+
+DQN系列(1)：Double Q-learning
+
+https://mp.weixin.qq.com/s/WGxodXAxcgsz61VnuSF5aQ
+
+DQN系列(2): Double DQN算法原理与实现
+
 ## Prioritised replay
 
 采样优先级采用目标Q值与当前Q值的差值来表示：
@@ -160,7 +170,6 @@ https://mp.weixin.qq.com/s/SJd-3qH4W4GMMLZSmvFk1w
 https://mp.weixin.qq.com/s/snNvN4FFP0VEZwDA0TAp1w
 
 强化学习训练Chrome小恐龙Dino Run：最高超过4000分
-
 
 # A2C & A3C
 

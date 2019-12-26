@@ -370,7 +370,7 @@ https://mp.weixin.qq.com/s/QHounf4el7nmXnpMSJHjvg
 
 https://blog.csdn.net/changtao381/article/details/8936765
 
-Splay Tree
+Splay Tree（一种二叉排序树）
 
 https://blog.csdn.net/simpsonk/article/details/72832959
 
@@ -395,3 +395,7 @@ https://mp.weixin.qq.com/s/M5syxE9Ln4UDLThPh5iuJg
 https://mp.weixin.qq.com/s/IaYnfEZ2bUXIpQvN3ZqFGA
 
 图解红黑树
+
+https://blog.csdn.net/wo541075754/article/details/54632929
+
+Merkle Tree（默克尔树）算法解析（Merkle Tree，通常也被称作Hash Tree，顾名思义，就是存储hash值的一棵树。）

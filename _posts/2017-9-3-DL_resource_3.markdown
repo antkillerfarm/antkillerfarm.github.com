@@ -266,6 +266,10 @@ https://mp.weixin.qq.com/s/C9BmYe0iK4dRtrNFmhSbAg
 
 2019腾讯广告算法大赛方案分享
 
+https://mp.weixin.qq.com/s/8J6xar1ppIOXUlcwFtAdWA
+
+合肥高新杯心电人机智能大赛 — 冠军比赛攻略
+
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA

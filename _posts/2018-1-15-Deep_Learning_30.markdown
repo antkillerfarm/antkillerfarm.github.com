@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十）——Graph NN（2）, 自动求导
+title:  深度学习（三十）——Graph NN（2）
 category: DL 
 ---
 
@@ -258,117 +258,10 @@ https://mp.weixin.qq.com/s/QONDTuzv_jIbVwSXxHMyIw
 
 一文读懂图卷积GCN
 
-# 自动求导
+https://mp.weixin.qq.com/s/lwqYZurdie3lJ_-X9zgoyQ
 
-DL发展到现在，其基本运算单元早就不止CNN、RNN之类的简单模块了。针对新运算层出不穷的现状，各大DL框架基本都实现了自动求导的功能。
+加深图卷积神经网络的可能性探索
 
-论文：
+https://github.com/microsoft/tf-gnn-samples
 
-《Automatic Differentiation in Machine Learning: a Survey》
-
-## Numerical differentiation
-
-数值微分最大的特点就是很直观，好计算，它直接利用了导数定义：
-
-$$f'(x)=\lim_{h\to 0}{f(x+h)-f(x)\over h}$$
-
-不过这里有一个很大的问题：h怎么选择？选大了，误差会很大；选小了，不小心就陷进了浮点数的精度极限里，造成舍入误差。
-
-第二个问题是对于参数比较多时，对深度学习模型来说，上面的计算是不够高效的，因为每计算一个参数的导数，你都需要重新计算$$f(x+h)$$。
-
-因此，这种方法并不常用，而主要用于做梯度检查（Gradient check），你可以用这种不高效但简单的方法去检查其他方法得到的梯度是否正确。
-
-## Symbolic differentiation
-
-符号微分的主要步骤如下：
-
-1.需要预置基本运算单元的求导公式。
-
-2.遍历计算图，得到运算表达式。
-
-3.根据导数的代入法则和四则运算法则，求出复杂运算的求导公式。
-
-这种方法没有误差，是目前的主流，但遍历比较费时间。
-
-## Automatic differentiation
-
-除此之外，常用的自动求导技术，还有Automatic differentiation。（请注意这里的AD是一个很狭义的概念。）
-
-类比复数的概念：
-
-$$x = a + bi \quad (i^2 = -1)$$
-
-我们定义Dual number：
-
-$$x \mapsto x = x + \dot{x} d \quad (d^2=0)$$
-
-定义Dual number的运算法则：
-
-$$(x + \dot{x}d) + ( y + \dot{y}d) = x + y + (\dot{x} + \dot{y})d$$
-
-$$(x + \dot{x}d) ( y + \dot{y}d) = xy + \dot{x}yd + x\dot{y}d  +  \dot{x}\dot{y}d^2 = xy + (\dot{x}y+ x\dot{y})d$$
-
-$$-(x + \dot{x}d) = - x - \dot{x}d$$
-
-$$\frac{1}{x + \dot{x}d} = \frac{1}{x} - \frac{\dot{x}}{x^2}d$$
-
-dual number有很多非常不错的性质。以下面的指数运算多项式为例：
-
-$$f(x) = p_0 + p_1x + p_2x^2 + ... + p_nx^n$$
-
-用$$x + \dot{x}d$$替换x，则有：
-
-$$f(x + \dot{x}d) =   p_0 + p_1(x + \dot{x}d) + ... +  p_n(x + \dot{x}d)^n \\ 
-= p_0 + p_1x + p_2x^2 + ... + p_nx^n + \\ 
-p_1\dot{x}d + 2p_2x\dot{x}d + ... + np_{n-1}x\dot{x}d\\ 
-= f(x) + f'(x)\dot{x}d$$
-
-可以看出d的系数就是$$f'(x)$$。
-
-## 不可导函数的求导
-
-不可导函数的求导，一般采用泰勒展开的方式。典型的算法有PGD（Proximal Gradient Descent）。
-
-参考：
-
-https://blog.csdn.net/bingecuilab/article/details/50628634
-
-Proximal Gradient Descent for L1 Regularization
-
-## 参考
-
-https://mp.weixin.qq.com/s/7Z2tDhSle-9MOslYEUpq6g
-
-从概念到实践，我们该如何构建自动微分库
-
-https://mp.weixin.qq.com/s/bigKoR3IX_Jvo-re9UjqUA
-
-机器学习之——自动求导
-
-https://www.jianshu.com/p/4c2032c685dc
-
-自动求导框架综述
-
-https://mp.weixin.qq.com/s/xXwbV46-kTobAMRwfKyk_w
-
-自动求导--Deep Learning框架必备技术二三事
-
-https://mp.weixin.qq.com/s/f0xFfA1inOVOdJnSZR4k6Q
-
-自动微分技术
-
-https://mp.weixin.qq.com/s/0tTlPG4hd9hcHORkZF6w1A
-
-PyTorch的自动求导机制详细解析，PyTorch的核心魔法
-
-https://mp.weixin.qq.com/s/PELBuCvu-7KQ33XBtlYfYQ
-
-深度学习中的微分
-
-https://zhuanlan.zhihu.com/p/24709748
-
-矩阵求导术（上）
-
-https://zhuanlan.zhihu.com/p/24863977
-
-矩阵求导术（下）
+微软开源了一个用TF实现的GNN例程库
