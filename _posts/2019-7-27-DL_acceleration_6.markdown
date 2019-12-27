@@ -6,17 +6,27 @@ category: DL acceleration
 
 # 知识蒸馏
 
+## 基本概念
+
 知识蒸馏是另一大类的模型压缩方法。
 
-Geoffrey Hinton的论文：
+这类方法的开山之作，当属Geoffrey Hinton和Jeff Dean的论文：
 
 《Distilling the Knowledge in a Neural Network》
 
-![](/images/img2/Distilling.jpeg)
+一个很大的DNN往往训练出来的效果会比较好，并且多个DNN一起ensemble的话效果会更好。但是实际应用中，过于庞大的DNN ensemble会增大计算量，从而影响应用。于是一个问题就被提出了：有没有一个方法，能使降低网络的规模，但是保持（一定程度上的）精确度呢？
 
-老师网络可以被固定（正如在精炼过程中）或联合优化，甚至同时训练多个不同大小的学生网络。
+Hinton举了一个仿生学的例子，就是昆虫在幼生期的时候往往都是一样的，适于它们从环境中摄取能量和营养；然而当它们成长到成熟期，会基于不同的环境或者身份，变成另外一种形态以适应这种环境。
 
-![](/images/img2/Distilling_2.jpeg)
+那么对于DNN是不是存在类似的方法？在一开始training的过程中比较庞杂，但是当后来需要拿去deploy的时候，可以转换成一个更小的模型。他把这种方法叫做**Knowledge Distillation(KD)**。
+
+![](/images/img2/Distilling.jpg)
+
+上图是KD的网络结构图。它的主要思想就是通过一个performance非常好的大网络（有可能是ensemble的）来教一个小网络进行学习。这里我们可以把大网络叫为：teacher network，小网络叫为：student network。
+
+teacher network可以被固定（正如在精炼过程中）或联合优化，甚至同时训练多个不同大小的student network。
+
+![](/images/img2/Distilling_2.jpg)
 
 上图是另一篇论文的图：
 
@@ -28,11 +38,25 @@ https://mp.weixin.qq.com/s/OCG1TiHl2dsuS24uacQ-MA
 
 又快又准确，新目标检测器速度可达每秒200帧
 
+## soft target
+
+由于有teacher network的存在，student network的训练也和普通的监督学习有所不同。
+
+![](/images/img3/KD.png)
+
+上图是两者的训练过程。这里解释一下，何为soft target？
+
+Hinton给了个例子：比如说在MNIST数据集中，有两个数字“2”，但是写法是不一样的：一个可能写的比较像3（后面多出了一点头），一个写的比较像7（出的头特别的短）。在这样的情况下，grund truth label都是“2”，然而一个学习的很好的大网络会给label“3”和“7”都有一定的概率值。通常叫这种信息为“soft targets”；相对的，gt label是一种“hard target”因为它是one－hot label。总的来说就是，通过大网络的“soft targets”，能得到更加多的信息来更好的训练小网络。
+
+
+
 论文：
 
 《Articulatory and Spectrum Features Integration using Generalized Distillation Framework》
 
-参考：
+![](/images/img3/KD.jpg)
+
+## 参考
 
 https://github.com/dkozlov/awesome-knowledge-distillation
 
@@ -42,7 +66,7 @@ https://zhuanlan.zhihu.com/p/24894102
 
 《Distilling the Knowledge in a Neural Network》阅读笔记
 
-https://luofanghao.github.io/2016/07/20/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0%20%E3%80%8ADistilling%20the%20Knowledge%20in%20a%20Neural%20Network%E3%80%8B/
+https://luofanghao.github.io/blog/2016/07/20/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0%20%E3%80%8ADistilling%20the%20Knowledge%20in%20a%20Neural%20Network%E3%80%8B/
 
 论文笔记《Distilling the Knowledge in a Neural Network》
 
@@ -85,6 +109,10 @@ https://zhuanlan.zhihu.com/p/92166184
 https://zhuanlan.zhihu.com/p/92269636
 
 知识蒸馏简述（二）
+
+http://coderskychen.cn/2019/02/23/distilling/
+
+知识蒸馏三部曲：从模型蒸馏、数据蒸馏到任务蒸馏
 
 https://mp.weixin.qq.com/s/mFuxCl0Mzv5hmDFewWZkrw
 

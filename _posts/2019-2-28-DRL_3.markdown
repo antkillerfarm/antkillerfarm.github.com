@@ -68,7 +68,7 @@ Atari游戏：高维输入，低维离散输出。
 
 - 只弄一个神经网络，既能输出动作也能输出Q值。这就是本节所要使用的方法。
 
-在《强化学习（八）》中，我们已经指出advantage function不改变策略梯度，但能有效约束variance。这里沿用了A函数定义：
+在[《强化学习（八）》](/rl/2019/10/01/RL_8.html#advantage_function)中，我们已经指出advantage function不改变策略梯度，但能有效约束variance。这里沿用了A函数定义：
 
 $$A(s,a)=Q(s,a)-V(s)$$
 
@@ -191,7 +191,7 @@ Advantage Actor-Critic（A2C）：advantage function + AC
 
 Asynchronous Advantage Actor-Critic（A3C）：Async + A2C
 
-advantage function的含义参见《强化学习（八）》，这里谈谈A3C。
+advantage function的含义参见[《强化学习（八）》](/rl/2019/10/01/RL_8.html#advantage_function)，这里谈谈A3C。
 
 ## A3C
 
@@ -310,11 +310,3 @@ Noisy在DRL中的用法主要有：
 - Noise on Parameters。这种方法由于网络结构不变，参数也不是全换，因此相当于是有约束的随机选择，或者说是有系统的尝试。
 
 在DPG中，一般采用第二种方法。
-
-需要注意的是，参数的改变意味着策略的改变，因此，Noise在episode中需要保持不变，这样才能检测随机策略的真正效果。否则就是无目的的乱抖了。（类似帕金森症）
-
-产生噪声的方法有：
-
-- Independent Gaussian noise。
-
-- Factorised Gaussian noise。

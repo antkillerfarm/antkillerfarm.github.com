@@ -196,6 +196,24 @@ AlphaGo Zero转而采用Policy Iteration方法，实时对盘面进行估计，�
 
 AlphaZero相对于AlphaGo Zero的改进不算大，毕竟也就只差2个月。它的贡献在于，证明了DRL对于很多棋类都是有效的。
 
+## MuZero
+
+MuZero是DeepMind 2019年11月的作品。
+
+论文：
+
+《Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model》
+
+MuZero在不具备任何底层动态知识的情况下，通过结合基于树的搜索和学得模型，在Atari 2600游戏中达到了SOTA表现，在国际象棋、日本将棋和围棋的精确规划任务中可以匹敌AlphaZero，甚至超过了提前得知规则的围棋版AlphaZero。
+
+![](/images/img3/MuZero.png)
+
+参考：
+
+https://mp.weixin.qq.com/s/BLQF8WNsIe4a_rDeGWo_Vg
+
+通用AlphaGo诞生？DeepMind的MuZero在多种棋类游戏中超越人类
+
 ## Leela Zero
 
 Leela Zero是比利时人Gian-Carlo Pascutto开源的围棋AI。它的算法与AlphaGo Zero相同。而训练采用GTP协议，集合全球算力，进行分布式训练。

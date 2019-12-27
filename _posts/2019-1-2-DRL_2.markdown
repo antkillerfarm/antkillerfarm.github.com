@@ -131,7 +131,7 @@ Deepmind是当今DL领域最前沿的科研机构，尤其在RL领域更是领�
 
 上图是DQN的网络结构图。由于这里的任务是训练Atari游戏的AI，因此网络的输入实际上就是游戏的画面。而理解游戏画面，就需要一定的CNN结构。所以DQN的结构实际上和一般的CNN是一致的，其关键要害在于loss函数的设定。
 
-由《强化学习（六）》中的“价值函数的近似表示”可知：$$Q(s,a)\approx f(s,a,w)$$
+由《强化学习（六）》中的“[价值函数的近似表示](/rl/2019/06/22/RL_6.html#Value)”可知：$$Q(s,a)\approx f(s,a,w)$$
 
 老套路，我们可以用一个神经网络来拟合f函数，这也就是所谓的Q网络（Q-Network）。
 
@@ -139,7 +139,7 @@ Deepmind是当今DL领域最前沿的科研机构，尤其在RL领域更是领�
 
 Deepmind采取的方法是：只把状态s作为输入，但是输出的时候，会输出每一个动作的Q值，也就是输出一个向量$$[Q(s,a_1),Q(s,a_2),\dots,Q(s,a_n)]$$。这样我们只要输入状态s，就可以得到所有的动作Q值。
 
-在《强化学习（二）》中，我们指出Q-Learning算法的**transition rule**为：
+在[《强化学习（二）》](/rl/2018/11/23/RL_2.html#transition_rule)中，我们指出Q-Learning算法的**transition rule**为：
 
 $$Q(s,a)=R(s,a)+\gamma \max(Q(\tilde s,\tilde a))$$
 

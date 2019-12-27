@@ -88,6 +88,8 @@ $$\epsilon = E_{\pi_\theta}[(Q^{\pi_\theta}(s,a)-Q_w(s,a))^2]$$
 
 $$\nabla_\theta J(\theta)= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a)Q_w(s,a)]$$
 
+<a name="advantage_function"/>
+
 ## Reducing Variance Using Baseline
 
 除了bias之外，variance也是需要考虑的方面。

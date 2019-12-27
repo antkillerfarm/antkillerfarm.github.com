@@ -168,6 +168,8 @@ $$V(S_t)\leftarrow V(S_t)+\alpha\left(\frac{\pi(A_t\mid S_t)}{\mu(A_t\mid S_t)}(
 
 上表中$$x\xleftarrow{\alpha}y\equiv x\leftarrow x+\alpha(y-x)$$。
 
+<a name="Value"/>
+
 # 价值函数的近似表示
 
 之前的内容都是讲解一些强化学习的基础理论，这些知识只能解决一些中小规模的问题。很多价值函数需要用一张大表来存储。当获取某一状态或行为的价值的时候，通常需要一个查表操作（Table Lookup），这对于那些状态空间或行为空间很大的问题几乎无法求解。

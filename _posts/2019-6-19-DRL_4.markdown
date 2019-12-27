@@ -6,6 +6,18 @@ category: DRL
 
 # DDPG
 
+## Noisy（续）
+
+需要注意的是，参数的改变意味着策略的改变，因此，Noise在episode中需要保持不变，这样才能检测随机策略的真正效果。否则就是无目的的乱抖了。（类似帕金森症）
+
+产生噪声的方法有：
+
+- Independent Gaussian noise。
+
+- Factorised Gaussian noise。
+
+## DDPG
+
 Deepmind在2016年提出了DDPG（Deep Deterministic Policy Gradient）。从通俗角度看：**DDPG=DPG+A2C+Double DQN**。
 
 ![](/images/img3/DDPG.png)

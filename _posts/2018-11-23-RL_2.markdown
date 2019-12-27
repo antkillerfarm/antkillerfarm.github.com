@@ -72,7 +72,7 @@ $$NewEstimate \leftarrow OldEstimate + StepSize [Target - OldEstimate]$$
 
 $$Q_{n+1}=Q_n+\alpha[R_n-Q_n]$$
 
-详细内容参见《数学狂想曲（十三）》的“软件滤波算法”一节的“一阶滞后滤波法”和“加权递推平均滤波法”。
+详细内容参见[《数学狂想曲（十三）》](/math/2019/06/24/math_13.html#Filter)的“软件滤波算法”一节的“一阶滞后滤波法”和“加权递推平均滤波法”。
 
 ## Gradient-Bandit算法
 
@@ -130,6 +130,8 @@ Q-learning是强化学习中很重要的算法，也是最早被引入DL领域�
 
 开始时，agent对外界一无所知，所以Q可以初始化为零矩阵。
 
+<a name="transition_rule"/>
+
 Q-Learning算法的**transition rule**为：
 
 $$Q(s,a)=R(s,a)+\gamma \max(Q(\tilde s,\tilde a))\tag{1}$$
@@ -153,7 +155,7 @@ Q-Learning算法的计算步骤如下：
 >>>(3)利用公式1，计算$$Q(s,a)$$。   
 >>>(4)令$$s=\tilde s$$。
 
-由马尔可夫过程的性质（参见《机器学习（二十六）》）可知，Q矩阵最终会趋于一个极限，如下所示：
+由马尔可夫过程的性质（参见[《机器学习（二十六）》](/ml/2017/08/30/Machine_Learning_26.html#Markov)）可知，Q矩阵最终会趋于一个极限，如下所示：
 
 ![](/images/article/q_matrix5.gif)
 
