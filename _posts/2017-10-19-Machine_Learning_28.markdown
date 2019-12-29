@@ -190,6 +190,10 @@ https://mp.weixin.qq.com/s/-SdFNMxHzdSenDYHtjfldA
 
 因果推理入门指南-必须的7个步骤
 
+https://mp.weixin.qq.com/s/UcE8lHkaM5RT7ghWz0o-MQ
+
+R. A. Fisher和J. Neyman的分歧
+
 # AutoML
 
 ## 概述

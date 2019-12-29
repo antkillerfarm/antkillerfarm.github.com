@@ -4,6 +4,30 @@ title:  数学狂想曲（七）——马氏距离, 函数连续性
 category: math 
 ---
 
+# 自相关&互相关&卷积（续）
+
+卷积最经典的应用，当属信号处理领域的傅立叶变换：
+
+$$\mathcal{F}\{f * g\} = k\cdot \mathcal{F}\{f\}\cdot \mathcal{F}\{g\}$$
+
+不管怎么组合，**自相关&互相关&卷积实际上都是向量的内积运算**。
+
+除此之外，还有利用**向量张量积运算**的**相关矩阵**。同样的，也有自相关矩阵和互相关矩阵。
+
+4.**循环卷积（Circular convolution）**。
+
+![](/images/img2/Circular_convolution.png)
+
+参考：
+
+https://mp.weixin.qq.com/s/R0LTEEYY1jCbSS-f6KlIzw
+
+有限长序列的线性卷积和圆周卷积
+
+https://mp.weixin.qq.com/s/UrWEZ5fMGxj5Ngbi6Y1nFg
+
+如何通俗易懂地解释卷积？
+
 # 马氏距离
 
 Mahalanobis Distance是印度现代统计学之父Prasanta Chandra Mahalanobis于1936年提出的概念。
@@ -160,24 +184,3 @@ $$f(x)=\sum_{n=0} ^\infty a^n \cos(b^n \pi x)$$
 Weierstrass Function的出现（1872年）说明了所谓的“病态”函数的存在性，改变了当时数学家对连续函数的看法。
 
 Weierstrass Function也被视为第一个分形函数（尽管分形（Fractal）的概念出现的相当晚（1973年），差不多过了整整一个世纪。）：将Weierstrass Function在任一点放大，所得到的局部图都和整体图形相似。因此，无论如何放大，函数图像都不会显得更加光滑，也不存在单调的区间。
-
-参考：
-
-https://wenku.baidu.com/view/21877fea551810a6f524868c.html
-
-一个反例处处连续处处不可导的函数
-
-## 函数连续性和神经网络
-
-理论上说，多层神经网络只要有足够的深度和宽度，就可以任意逼近任意**连续函数**。（严格的说，这里的连续函数必须是Borel可测函数。）
-
-然而从网络训练的角度来说，只有Lipschitz连续的函数才一定会收敛，否则的话，可能会出现梯度爆炸的情况。
-
-此外，不同函数的收敛速度也不一样：
-
-|  | GD | SGD |
-|:--:|:--:|:--:|
-| Lipschitz | $$\frac{1}{\sqrt{k}}$$ | $$\frac{1}{\sqrt{k}}$$ |
-| +smoothness | $$\frac{1}{k}$$ | $$\frac{1}{\sqrt{k}}$$ |
-| +strong convexity | $$\frac{1}{k}$$ | $$\frac{1}{k}$$ |
-| +smoothness and strong convexity | $$\exp^{-k}$$ | $$\exp^{-k}$$ |

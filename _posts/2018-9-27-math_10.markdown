@@ -4,7 +4,27 @@ title:  数学狂想曲（十）——复变函数, 平稳离散时间随机过�
 category: math 
 ---
 
-# 熵（续）
+# 熵
+
+## 统计热力学定义（续）
+
+根据热力学第三定律，使用绝对零度作为原点，则：
+
+$$S=K\ln \Omega$$
+
+上式就是Boltzmann's entropy formula。这里隐含的另一个假设是：分子随机运动没有偏好性，即**各状态的概率相等**。
+
+如果状态概率不等的话，则：
+
+$$S = K \cdot E[\ln \Omega] = K \sum \Omega_i \ln \Omega_i$$
+
+上式被称作Gibbs entropy。
+
+参考：
+
+https://wenku.baidu.com/view/a90518a37c1cfad6185fa746.html
+
+热力学中的熵
 
 ## 信息熵
 
@@ -235,17 +255,3 @@ $$U_N(\omega)=\frac{1}{2\pi}\int_{-\pi}^{\pi}K_N(\omega-v)\mathrm{d}Z(v)\tag{8}$
 一般来说，随机过程的功率谱包含两个分量：确定性分量和连续分量。前者是增量过程$$\mathrm{d}Z(\omega)$$的一阶矩，后者是$$\mathrm{d}Z(\omega)$$的二阶中心矩。
 
 参数法一般在知道相关物理规律时使用，它具有较高的精确度。而非参数法由于只依赖增量过程的一阶矩和二阶中心矩，因此适用范围更广泛，即使不知道系统的物理规律也可以使用。（有些类似万能拟合的GMM）
-
-参考：
-
-https://www.zhihu.com/question/29520851
-
-功率谱密度如何理解？
-
-https://mp.weixin.qq.com/s/i84yW8L7qGVpPtwpaJhhgw
-
-深入浅出聊抖动（Jitter）
-
-https://mp.weixin.qq.com/s/XZHh7O-aiTA4Z-jnz20HgA
-
-功率谱密度

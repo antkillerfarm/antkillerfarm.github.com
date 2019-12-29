@@ -6,7 +6,29 @@ category: math
 
 # 概率分布（2）
 
-## 假设检验（续）
+## F分布（续）
+
+参考：
+
+https://mp.weixin.qq.com/s/X0nSqiQoJpEur7PM1tM-0A
+
+每个数据科学专家都应该知道的六个概率分布
+
+https://www.zhihu.com/question/26991510
+
+卡方独立性检验和卡方齐性检验的区别是什么？
+
+https://mp.weixin.qq.com/s/vcgZ2ncZDlXp4SAExyptnQ
+
+Distribution is all you need：这里有12种做ML不可不知的分布
+
+## 假设检验
+
+假设检验就是根据样本对所提出的假设$$H_0$$作判断。
+
+如果$$P\{拒绝H_0\mid H_0为真\}\le \alpha$$，则接受$$H_0$$。
+
+这里的$$\alpha$$被称作**显著性水平**。假设检验$$H_0$$所涉及的统计量被称作**检验统计量**。
 
 >在英国的Rothamsted实验站，Fisher给一位名叫Muriel Bristol的女士倒了一杯茶，但是Bristol表示，自己更喜欢先将牛奶倒入杯中，再倒入茶。这位女士号称能够分辨先倒茶和先倒牛奶的区别。   
 >作为实验设计的鼻祖，Fisher当然想用实验检验一下：这位女士的味觉是否有这么敏锐？Fisher倒了8杯奶茶：其中4杯“先奶后茶”，其余4杯“先茶后奶”。随机打乱次序后，Fisher请Bristol品尝，并选出“先奶后茶”的4杯，看她是否能分辨奶和茶的顺序。   
@@ -176,25 +198,3 @@ $$f(2)=f_1(2)+f_2(1)$$
 4.这三个操作在离散域最终都可以变为求和操作，也就是向量内积运算。我们一般使用$$a\cdot b$$或者$$\langle a,b\rangle$$表示向量的内积运算。即：
 
 $$\langle a,b\rangle=a_0b_0+a_1b_1+\dots+a_nb_n$$
-
-卷积最经典的应用，当属信号处理领域的傅立叶变换：
-
-$$\mathcal{F}\{f * g\} = k\cdot \mathcal{F}\{f\}\cdot \mathcal{F}\{g\}$$
-
-不管怎么组合，**自相关&互相关&卷积实际上都是向量的内积运算**。
-
-除此之外，还有利用**向量张量积运算**的**相关矩阵**。同样的，也有自相关矩阵和互相关矩阵。
-
-4.**循环卷积（Circular convolution）**。
-
-![](/images/img2/Circular_convolution.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/R0LTEEYY1jCbSS-f6KlIzw
-
-有限长序列的线性卷积和圆周卷积
-
-https://mp.weixin.qq.com/s/UrWEZ5fMGxj5Ngbi6Y1nFg
-
-如何通俗易懂地解释卷积？

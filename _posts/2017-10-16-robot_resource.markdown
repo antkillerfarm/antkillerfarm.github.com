@@ -78,6 +78,10 @@ https://mp.weixin.qq.com/s?__biz=MzI1ODYwOTkzNg==&mid=2247497740&idx=3&sn=eedfb5
 
 中国汽车工业沉浮70年
 
+https://mp.weixin.qq.com/s/myAUMq4hknEcZ7X2Xx455g
+
+万字长文回顾智能驾驶进化史
+
 ## 课程
 
 http://selfdrivingcars.mit.edu/

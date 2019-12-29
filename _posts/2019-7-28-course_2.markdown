@@ -86,6 +86,10 @@ https://github.com/glouppe/info8006-introduction-to-ai
 
 INFO8006 - Introduction to Artificial Intelligence
 
+https://wiki.illinois.edu//wiki/display/cs512
+
+CS 512: Data Mining: Principles and Algorithms
+
 # 世说新语
 
 ## 2019.10（续）

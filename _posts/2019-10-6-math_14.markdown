@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（十四）——数学的深渊, Wavelet & Chirplet, Lanchester战争模型
+title:  数学狂想曲（十四）——数学的深渊, Wavelet & Chirplet, Lanchester战争模型, 抛物线
 category: math 
 ---
 
@@ -137,6 +137,12 @@ $$size(A-C)\le size((A-B)\cup (B-C))\le size(A-B)+size(B-C)$$
 该书的中文版：
 
 http://www.topologywithouttears.net/topbookchinese.pdf
+
+参考：
+
+https://mp.weixin.qq.com/s/QmDCFY0SP3cl71HvwvthJQ
+
+如果高斯没有故意“坑”黎曼，估计这门神奇的学科就不会出现了……（拓扑学（Topology）是一门研究几何图形或空间在连续改变形状后还能保持不变的一些性质的学科。）
 
 # Lie Groups
 
@@ -299,3 +305,11 @@ Lanchester模型是一个连续模型，但实际战斗，尤其是海战，一�
 https://mp.weixin.qq.com/s/npprTz_GRgdv3BK7ff2grg
 
 Lanchester战争模型：用可分离变量的微分方程占卜战事
+
+# 抛物线
+
+![](/images/img2/conic_section.jpg)
+
+我们都知道抛物线只有一个焦点，而椭圆、双曲线有两个焦点，但是对于真正天体的运行来说，其实只有一个焦点是有意义的，就是中心恒星的位置；另一个焦点没有实在的意义。这两个焦点中任取一个就可以构成这条圆锥曲线，而取哪一个作为恒星位置都是一样的。因为对于椭圆、双曲线来说，这两个焦点是对称的。
+
+那么抛物线呢？实际上抛物线是椭圆和双曲线的临界状态，它的另一个焦点在无穷远的地方。对于绕恒星的抛物线轨道来说，取的是那个通常说的焦点位置作为恒星位置；对于地面上的斜抛运动来说，取的是无穷远处的那个焦点位置作为恒星位置。

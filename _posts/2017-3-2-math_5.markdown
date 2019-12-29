@@ -6,9 +6,19 @@ category: math
 
 # Gabriel's Horn（续）
 
+$$V=\pi\int\limits_1^a\left(\frac{1}{x}\right)^2\mathrm{d}x=\pi\left(1-\frac{1}{a}\right)$$
+
+$$\lim_{a\to\infty}V=\lim_{a\to\infty}\pi\left(1-\frac{1}{a}\right)=\pi\cdot\lim_{a\to\infty}\left(1-\frac{1}{a}\right)=\pi$$
+
+$$A=2\pi\int\limits_1^a {\frac{1}{x}}\sqrt{1+\left(-\frac{1}{x^2}\right)^2}\mathrm{d}x > 2\pi\int\limits_1^a \frac{\mathrm{d}x}{x}=2\pi\ln(a)$$
+
+$$\lim_{a\to\infty}A\ge\lim_{a\to\infty}2\pi\ln(a)=\infty$$
+
 但是反过来的情况，即表面积有限，而体积无限的情况，也就是所谓的Gabriel's horn逆现象，是不存在的。——实际上，众所周知的是表面积一定的形状中，球形体积最大。
 
 Gabriel's horn现象不仅存在于表面积/体积中，也存在于长度/面积中，即所谓的无限长海岸线问题。对此的进一步研究，开拓了数学中的分形几何领域。
+
+<a name="Boltzmann"/>
 
 # 玻尔兹曼分布
 
@@ -238,25 +248,3 @@ f(x; d_1,d_2) &= \frac{\sqrt{\frac{(d_1\,x)^{d_1}\,\,d_2^{d_2}} {(d_1\,x+d_2)^{d
 显然：
 
 $$\frac{1}{F}\sim F(d_2,d_1)$$
-
-参考：
-
-https://mp.weixin.qq.com/s/X0nSqiQoJpEur7PM1tM-0A
-
-每个数据科学专家都应该知道的六个概率分布
-
-https://www.zhihu.com/question/26991510
-
-卡方独立性检验和卡方齐性检验的区别是什么？
-
-https://mp.weixin.qq.com/s/vcgZ2ncZDlXp4SAExyptnQ
-
-Distribution is all you need：这里有12种做ML不可不知的分布
-
-## 假设检验
-
-假设检验就是根据样本对所提出的假设$$H_0$$作判断。
-
-如果$$P\{拒绝H_0\mid H_0为真\}\le \alpha$$，则接受$$H_0$$。
-
-这里的$$\alpha$$被称作**显著性水平**。假设检验$$H_0$$所涉及的统计量被称作**检验统计量**。

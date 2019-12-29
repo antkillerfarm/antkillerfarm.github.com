@@ -4,6 +4,24 @@ title:  深度强化学习（七）——Dota 2, DRL参考资源（1）
 category: DRL 
 ---
 
+# AlphaStar（续）
+
+https://zhuanlan.zhihu.com/p/55781614
+
+AlphaStar背后的机器学习原理
+
+https://mp.weixin.qq.com/s/XljE82cJZfFOgf2KrXWSKA
+
+DeepMind首个战胜星际2职业玩家的AI为何无敌？新视角揭秘AI里程碑
+
+https://mp.weixin.qq.com/s/_t2vLFfIG6VYAdWDalpIXQ
+
+说人话教AI打游戏，Facebook开源迷你版星际争霸，成果登上NeurIPS 2019
+
+https://mp.weixin.qq.com/s/X7QQn6W2dB3y_Ljii-sJ3w
+
+Alphastar再登Nature！星际争霸任一种族，战网狂虐99.8%人类玩家
+
 # Dota 2
 
 https://mp.weixin.qq.com/s/rPsxvzOLuoo_IRtgH94Ecw

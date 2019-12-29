@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十四）——单分类SVM&多分类SVM, Stacking, 三门问题, 用户画像, 特征工程, 图论
+title:  机器学习（二十四）——单分类SVM&多分类SVM, Stacking, 用户画像, 特征工程, 图论
 category: ML 
 ---
 
@@ -164,20 +164,6 @@ SVM的概率输出（Platt scaling）
 https://mp.weixin.qq.com/s/lYj-GVNSDp26czRXbf0iNw
 
 如果你会模型融合！那么，我要和你做朋友！！
-
-# 三门问题
-
-https://www.zhihu.com/question/26709273/
-
-蒙提霍尔问题（又称三门问题、山羊汽车问题）的正解是什么？
-
-https://zhuanlan.zhihu.com/p/21461266
-
-数学杂谈——“三门问题”：Monty Hall Problem
-
-https://zhuanlan.zhihu.com/p/23338174
-
-蒙提霍尔问题/三门问题（Monty Hall problem）
 
 # 用户画像
 

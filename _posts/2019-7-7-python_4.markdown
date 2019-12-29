@@ -292,6 +292,14 @@ https://mp.weixin.qq.com/s/EEw4x1mk0y8xsL9mORd9sA
 
 如何用Python实现超级玛丽的界面和状态机？
 
+https://mp.weixin.qq.com/s/HRdc5O6hT-dzx4jmgmlSYw
+
+如何用Python实现超级玛丽的人物行走和碰撞检测？
+
+https://mp.weixin.qq.com/s/20F0ieUjJSZp7yI7ymeJ5Q
+
+试试在终端模拟下雪的效果呗？
+
 ## 参考
 
 https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA

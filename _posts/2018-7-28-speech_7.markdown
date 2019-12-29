@@ -355,3 +355,11 @@ https://mp.weixin.qq.com/s/9GuyWUZ_qCH5Q_rin1yQwg
 https://zhuanlan.zhihu.com/p/94768011
 
 流言止于“智”者：网络虚假信息的特征与检测
+
+https://mp.weixin.qq.com/s/ucFtWopoErtUCYDTLv2kFg
+
+一文了解Text-to-SQL
+
+https://mp.weixin.qq.com/s/T2Nv7dQvZR6sVht1LfKSlw
+
+NLP技术在微博feed流中的应用

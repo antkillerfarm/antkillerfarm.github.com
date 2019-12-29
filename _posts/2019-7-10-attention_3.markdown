@@ -134,6 +134,10 @@ http://jalammar.github.io/illustrated-bert/
 
 图解BERT
 
+https://jalammar.github.io/a-visual-guide-to-using-bert-for-the-first-time/
+
+A Visual Guide to Using BERT for the First Time
+
 ## 基本结构
 
 ![](/images/img3/BERT.png)

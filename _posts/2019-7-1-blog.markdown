@@ -182,6 +182,10 @@ https://materiaalit.github.io/intro-to-ai-17/part2/
 
 Games
 
+https://mp.weixin.qq.com/s/6fd8oxnahJ0EoocRV4q8Bg
+
+一看就懂的Alpha-Beta剪枝算法详解
+
 ## MCTS和MC的区别
 
 ![](/images/img3/MCTS.jpg)

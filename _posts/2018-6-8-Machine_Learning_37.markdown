@@ -371,3 +371,21 @@ https://mp.weixin.qq.com/s/7_-SSVZpxLfnwn7EmbGyZA
 https://mp.weixin.qq.com/s/fAHlrfchgkQ1Wuc8sfTlZg
 
 堪比Focal Loss！解决目标检测中样本不平衡的无采样方法
+
+# 时间序列分析+
+
+https://mp.weixin.qq.com/s/p8oN4xh-FHnay2eTsk6Gng
+
+基于高阶模糊认知图与小波变换的时间序列预测
+
+https://mp.weixin.qq.com/s/lmJk-iIzxxPmnZa6D8i_nw
+
+一文简述如何使用嵌套交叉验证方法处理时序数据
+
+https://mp.weixin.qq.com/s/05WAZcklXnL_hFPLZW9t7Q
+
+时间序列模型之相空间重构模型
+
+https://mp.weixin.qq.com/s/rIgjtILF7EtuBS5UWCEFcQ
+
+重大事件后，股价将何去何从？

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十八）——PageRank算法, 社交网络, 数据清洗
+title:  机器学习（三十八）——PageRank算法, 社交网络, 数据清洗, 三门问题
 category: ML 
 ---
 
@@ -263,3 +263,21 @@ https://mp.weixin.qq.com/s/r7ngZOM9tO-_OSfvs2aDJw
 https://mp.weixin.qq.com/s/r4ycLnjOl5hSPBMwKpnmsQ
 
 如何打造高质量的NLP数据集
+
+# 三门问题
+
+https://www.zhihu.com/question/26709273/
+
+蒙提霍尔问题（又称三门问题、山羊汽车问题）的正解是什么？
+
+https://zhuanlan.zhihu.com/p/21461266
+
+数学杂谈——“三门问题”：Monty Hall Problem
+
+https://zhuanlan.zhihu.com/p/23338174
+
+蒙提霍尔问题/三门问题（Monty Hall problem）
+
+https://mp.weixin.qq.com/s/xHm4AjopGKSUE0-uAk5IHg
+
+用概率论告诉你：直觉到底有多不靠谱。包括了三门问题和本福特定律。

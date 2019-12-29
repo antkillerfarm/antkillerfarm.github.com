@@ -325,3 +325,7 @@ https://mp.weixin.qq.com/s/RQ1iBs8ftvNR0_xB7X8Erg
 https://mp.weixin.qq.com/s/Y4g2T6qMGzCcE67bINPiGA
 
 推荐场景中召回模型的演化过程
+
+https://zhuanlan.zhihu.com/p/100019681
+
+推荐系统技术演进趋势：从召回到排序再到重排

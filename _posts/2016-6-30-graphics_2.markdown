@@ -54,6 +54,10 @@ https://mp.weixin.qq.com/s/xCmagMDmcPRf3xAkOMT4rw
 
 视觉与图像：阈值分割
 
+https://mp.weixin.qq.com/s/Us7K5SBLltJIKzaJZQqltw
+
+简单粗暴二分类分割方法Riddler-Calvard详解
+
 # 方框滤波（Box Filter）
 
 $$g=f\otimes h,h=\alpha

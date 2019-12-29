@@ -4,7 +4,47 @@ title:  机器学习（二十二）——机器学习分类器性能指标, 训�
 category: ML 
 ---
 
-# Loss function详解（续）
+# Loss function详解
+
+## Triplet Loss（续）
+
+它的公式化的表示就是：
+
+$$\|f(x_i^a)-f(x_i^p)\|_2^2 + \alpha < \|f(x_i^a)-f(x_i^n)\|_2^2$$
+
+其中，$$\alpha$$表示两个距离之间的间隔。因此，对应的目标函数也就很清楚了：
+
+$$\sum_i^N\left[\|f(x_i^a)-f(x_i^p)\|_2^2 - \|f(x_i^a)-f(x_i^n)\|_2^2 + \alpha \right]_+$$
+
+这里距离用欧式距离度量，+表示[]内的值大于零的时候，取该值为损失，小于零的时候，损失为零。
+
+>需要注意的是Triplet Loss以及后面介绍的各种改进版softmax，其收敛速度不如softmax，因此，先用softmax训练几轮，再改用这些loss，也是常用的调参技巧。
+
+参考：
+
+https://blog.csdn.net/u010167269/article/details/52027378
+
+Triplet Loss、Coupled Cluster Loss探究
+
+https://blog.csdn.net/tangwei2014/article/details/46788025
+
+triplet loss原理以及梯度推导
+
+https://www.zhihu.com/question/62486208
+
+triplet loss在深度学习中主要应用在什么地方？有什么明显的优势？
+
+https://mp.weixin.qq.com/s/XB9VsW3NRwHua6AdRL3n8w
+
+Lossless Triplet Loss:一种高效的Siamese网络损失函数
+
+https://gehaocool.github.io/2018/03/20/Angular-Margin-%E5%9C%A8%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/
+
+Angular Margin在人脸识别中的应用
+
+https://mp.weixin.qq.com/s/SqaR_7gwJpUNPM7g4IHaYw
+
+深度人脸识别中不同损失函数的性能对比
 
 ## Coupled Cluster Loss
 
@@ -276,25 +316,3 @@ https://mp.weixin.qq.com/s/sKiAwLoxdP9yyZX0-R4UrA
 # 训练集、验证集和测试集
 
 对于一个模型来说，其参数可以分为**普通参数**和**超参数**。在不引入强化学习的前提下，那么普通参数就是可以被梯度下降所更新的，也就是训练集所更新的参数。另外，还有超参数的概念，比如网络层数、网络节点数、迭代次数、学习率等等，这些参数不在梯度下降的更新范围内。尽管现在已经有一些算法可以用来搜索模型的超参数，但多数情况下我们还是自己人工根据验证集来调。
-
-从狭义来讲，验证集没有参与梯度下降的过程，也就是说是没有经过训练的；但从广义上来看，验证集却参与了一个“人工调参”的过程，我们根据验证集的结果调节了迭代数、调节了学习率等等，使得结果在验证集上最优。因此，我们也可以认为，验证集也参与了训练。
-
-那么就很明显了，我们还需要一个完全没有经过训练的集合，那就是测试集。
-
-参考：
-
-http://kexue.fm/archives/4638/
-
-训练集、验证集和测试集的意义
-
-https://zhuanlan.zhihu.com/p/48976706
-
-训练集、验证集和测试集
-
-https://mp.weixin.qq.com/s/idS2l7u_OBxWi5UBexlK4w
-
-如何正确使用机器学习中的训练集、验证集和测试集？
-
-https://mp.weixin.qq.com/s/ubpRPQ7-1nvY5CzICWi1Cg
-
-似乎没区别，但你混淆过验证集和测试集吗？

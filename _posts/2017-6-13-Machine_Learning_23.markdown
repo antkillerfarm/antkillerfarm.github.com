@@ -1,10 +1,34 @@
 ---
 layout: post
-title:  机器学习（二十三）——压缩感知, Optimizer
+title:  机器学习（二十三）——Optimizer
 category: ML 
 ---
 
-# 时间序列分析+
+# 训练集、验证集和测试集（续）
+
+从狭义来讲，验证集没有参与梯度下降的过程，也就是说是没有经过训练的；但从广义上来看，验证集却参与了一个“人工调参”的过程，我们根据验证集的结果调节了迭代数、调节了学习率等等，使得结果在验证集上最优。因此，我们也可以认为，验证集也参与了训练。
+
+那么就很明显了，我们还需要一个完全没有经过训练的集合，那就是测试集。
+
+参考：
+
+http://kexue.fm/archives/4638/
+
+训练集、验证集和测试集的意义
+
+https://zhuanlan.zhihu.com/p/48976706
+
+训练集、验证集和测试集
+
+https://mp.weixin.qq.com/s/idS2l7u_OBxWi5UBexlK4w
+
+如何正确使用机器学习中的训练集、验证集和测试集？
+
+https://mp.weixin.qq.com/s/ubpRPQ7-1nvY5CzICWi1Cg
+
+似乎没区别，但你混淆过验证集和测试集吗？
+
+# 时间序列分析
 
 https://mp.weixin.qq.com/s/FRSe1mJTvk9U66ta-r9iCQ
 
@@ -21,48 +45,6 @@ https://mp.weixin.qq.com/s/iKM6zMSm1F2icjy79F9Hcg
 https://mp.weixin.qq.com/s/avLWHXj2JkjXOomCipj8kA
 
 使用希尔伯特-黄变换（HHT）进行时间序列分析
-
-https://mp.weixin.qq.com/s/p8oN4xh-FHnay2eTsk6Gng
-
-基于高阶模糊认知图与小波变换的时间序列预测
-
-https://mp.weixin.qq.com/s/lmJk-iIzxxPmnZa6D8i_nw
-
-一文简述如何使用嵌套交叉验证方法处理时序数据
-
-https://mp.weixin.qq.com/s/05WAZcklXnL_hFPLZW9t7Q
-
-时间序列模型之相空间重构模型
-
-https://mp.weixin.qq.com/s/rIgjtILF7EtuBS5UWCEFcQ
-
-重大事件后，股价将何去何从？
-
-# 压缩感知
-
-https://blog.csdn.net/jbb0523
-
-一个压缩感知+贝叶斯网络方面的blog
-
-http://blog.csdn.net/abcjennifer/article/details/7721834
-
-初识压缩感知Compressive Sensing
-
-http://blog.csdn.net/abcjennifer/article/details/7724360
-
-中国压缩传感资源（China Compressive Sensing Resources）
-
-http://blog.csdn.net/xiahouzuoxin/article/details/38820925
-
-白话压缩感知（含Matlab代码）
-
-http://blog.csdn.net/abcjennifer/article/details/7748833
-
-压缩感知进阶——有关稀疏矩阵
-
-https://zhuanlan.zhihu.com/p/85558304
-
-深度学习压缩感知（DCS）历史最全资源汇总分享
 
 # Optimizer
 

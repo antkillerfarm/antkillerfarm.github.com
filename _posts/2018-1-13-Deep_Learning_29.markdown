@@ -66,6 +66,10 @@ https://mp.weixin.qq.com/s/eA9a3478oxHd3zsepNVTpQ
 
 图数据表示学习综述论文
 
+https://mp.weixin.qq.com/s/zDXlJtqDRW_Mm56gL4MLEw
+
+《图机器学习导论》附69页PPT
+
 ## DGL
 
 https://mp.weixin.qq.com/s/I8pGqpKnRJp9HRglHfMZCw
@@ -397,15 +401,3 @@ DeepMind等机构提出“图网络”：面向关系推理
 https://mp.weixin.qq.com/s/TAccHagxXQ82lfE91Y6xWg
 
 CNN已老，GNN来了：重磅论文讲述深度学习的因果推理
-
-https://mp.weixin.qq.com/s/UONtTJJgDawRPWtatAVKkg
-
-如何利用高效的搜索算法来搜索网络的拓扑结构
-
-https://mp.weixin.qq.com/s/SGCtwYWfnxjcpMJeeH1b4w
-
-图神经网络+池化模块，斯坦福等提出层级图表征学习
-
-https://mp.weixin.qq.com/s/DOau_vTbwCauQ8mrHkGu9Q
-
-首个面向Facebook、arXiv网络图类的对抗攻击研究

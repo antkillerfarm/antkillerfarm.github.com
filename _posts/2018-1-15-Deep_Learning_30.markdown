@@ -6,6 +6,18 @@ category: DL
 
 # Graph NN（续）
 
+https://mp.weixin.qq.com/s/UONtTJJgDawRPWtatAVKkg
+
+如何利用高效的搜索算法来搜索网络的拓扑结构
+
+https://mp.weixin.qq.com/s/SGCtwYWfnxjcpMJeeH1b4w
+
+图神经网络+池化模块，斯坦福等提出层级图表征学习
+
+https://mp.weixin.qq.com/s/DOau_vTbwCauQ8mrHkGu9Q
+
+首个面向Facebook、arXiv网络图类的对抗攻击研究
+
 https://mp.weixin.qq.com/s/_0quf0IRe8mn4dnsBwf6Aw
 
 基于路径的实体图关系抽取模型
@@ -265,3 +277,7 @@ https://mp.weixin.qq.com/s/lwqYZurdie3lJ_-X9zgoyQ
 https://github.com/microsoft/tf-gnn-samples
 
 微软开源了一个用TF实现的GNN例程库
+
+https://mp.weixin.qq.com/s/s9PmfmpQE9j-swwGQv9w4A
+
+Graph Embedding之如何使用DeepWalk从图中提取特征

@@ -42,17 +42,37 @@ https://mp.weixin.qq.com/s/OCG1TiHl2dsuS24uacQ-MA
 
 由于有teacher network的存在，student network的训练也和普通的监督学习有所不同。
 
-![](/images/img3/KD.png)
-
-上图是两者的训练过程。这里解释一下，何为soft target？
-
-Hinton给了个例子：比如说在MNIST数据集中，有两个数字“2”，但是写法是不一样的：一个可能写的比较像3（后面多出了一点头），一个写的比较像7（出的头特别的短）。在这样的情况下，grund truth label都是“2”，然而一个学习的很好的大网络会给label“3”和“7”都有一定的概率值。通常叫这种信息为“soft targets”；相对的，gt label是一种“hard target”因为它是one－hot label。总的来说就是，通过大网络的“soft targets”，能得到更加多的信息来更好的训练小网络。
-
-
-
 论文：
 
 《Articulatory and Spectrum Features Integration using Generalized Distillation Framework》
+
+![](/images/img3/KD.png)
+
+上图是两者的训练过程。
+
+这里解释一下，何为soft target？
+
+Hinton给了个例子：比如说在MNIST数据集中，有两个数字“2”，但是写法是不一样的：一个可能写的比较像3（后面多出了一点头），一个写的比较像7（出的头特别的短）。在这样的情况下，grund truth label都是“2”，然而一个学习的很好的大网络会给label“3”和“7”都有一定的概率值。通常叫这种信息为“soft targets”；相对的，gt label是一种“hard targets”因为它是one－hot label。总的来说就是，通过大网络的“soft targets”，能得到更加多的信息来更好的训练小网络。
+
+soft targets的计算方法如下：
+
+$$q_i = \frac{exp(z_i/T)}{\sum_j exp(z_j / T)}$$
+
+上式实际上是Boltzmann distribution的PDF。（参见[《数学狂想曲（五）》](/math/2017/03/02/math_5.html#Boltzmann)）所以T也被称为温度，通常默认1。对于分类任务来说使用$$T=1$$往往会导致不同类的概率差距很大，过度集中于某一个类，而其他类别的信息难以利用，这就是所谓的hard targets。
+
+如果增大T的话，不同类别的差异就变小了，这也就是soft targets。类似于Label smoothing Regularization(LSR)。
+
+如果T接近于0，则最大的值会越近1，其它值会接近0，近似于one-hot编码。
+
+如果T等于无穷，那就是一个均匀分布。
+
+综上，KD的流程就很自然了：
+
+- 先训练一个teacher网络。
+
+- 然后使用这个teacher网络的输出和数据的真实标签去训练student网络。
+
+## KD的进化史
 
 ![](/images/img3/KD.jpg)
 

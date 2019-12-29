@@ -367,3 +367,7 @@ https://mp.weixin.qq.com/s/qmdfLlTfQzT0QVq_SzEPUw
 https://mp.weixin.qq.com/s/JgSTOiWZ30mIR_uiXyU2PQ
 
 硅谷高级工程师告诉你：算法工程师必须要知道的面试技能雷达图
+
+https://mp.weixin.qq.com/s/L-hF2OIcV9kbzOavjBhMqw
+
+12个不容错过的深度学习面试题

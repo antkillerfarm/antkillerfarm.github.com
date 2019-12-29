@@ -431,3 +431,7 @@ GitHub上有个沙雕开发者，做了款斗图工具后火了...
 https://mp.weixin.qq.com/s/kt5isheTBnpwKUhJAuXnYw
 
 视频剪辑什么鬼？Python带你高效创作短视频
+
+https://mp.weixin.qq.com/s/G5qx3-1Wq4gcRSuRfrczuw
+
+Python趣味打怪：60秒学会一个例子，147段简单代码助你从入门到大师

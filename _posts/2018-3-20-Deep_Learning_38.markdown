@@ -365,3 +365,7 @@ HashGAN:基于注意力机制的深度对抗哈希模型提升跨模态检索效
 https://mp.weixin.qq.com/s/3Z2Zc8zTq2uiPyw7ZuuZfw
 
 解密美图大规模多媒体数据检索技术DeepHash
+
+https://mp.weixin.qq.com/s/QklCVuukfElVDBFNxLXNKQ
+
+哈希革新Transformer：这篇ICLR高分论文让一块GPU处理64K长度序列

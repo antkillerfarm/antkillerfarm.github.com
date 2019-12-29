@@ -147,6 +147,8 @@ https://zhuanlan.zhihu.com/p/85338773
 
 本节将进一步讨论EM算法的性质，并将之应用到使用latent random variables的一大类估计问题中。
 
+<a name="Jensen"/>
+
 ## Jensen不等式
 
 首先我们给出凸函数的定义：

@@ -32,10 +32,6 @@ https://mp.weixin.qq.com/s/zQJve_w5OoM6u-WcSWArdQ
 
 神速Hash
 
-https://mp.weixin.qq.com/s/NlJ4-b5SjIjPGgvLUuSxFw
-
-孩子，有时候并不是生活欺骗了你，而是你可能还不懂概率统计……
-
 http://blog.csdn.net/luo123n/article/details/48574123
 
 PMI（Pointwise Mutual Information）
@@ -44,17 +40,9 @@ https://mp.weixin.qq.com/s/7usiElPtYAt1DCBIv5BZ2Q
 
 多项式插值算法与回归算法
 
-https://mp.weixin.qq.com/s/6fd8oxnahJ0EoocRV4q8Bg
-
-一看就懂的Alpha-Beta剪枝算法详解
-
 https://mp.weixin.qq.com/s/0o6fjKlUJVHZ6Vb65bFjGg
 
 俄罗斯方块可以永无止境地玩下去吗？
-
-https://mp.weixin.qq.com/s/Rw3O5MDbEIfgmWCVgFe95w
-
-五次方程的微分方程解法
 
 https://mp.weixin.qq.com/s/CC77DL5RKhr5SekDyfqm3Q
 
@@ -64,10 +52,6 @@ https://mp.weixin.qq.com/s/uRdMOX63mefH71sM-PBNnA
 
 立交桥布局中的迷人曲线
 
-https://mp.weixin.qq.com/s/xHm4AjopGKSUE0-uAk5IHg
-
-用概率论告诉你：直觉到底有多不靠谱。包括了三门问题和本福特定律。
-
 https://mp.weixin.qq.com/s/5Ti9_9DMOpRjGCuC2fjc4w
 
 河流为什么是弯曲的？
@@ -76,10 +60,6 @@ https://mp.weixin.qq.com/s/E_EzwLr4JOzR1pk3MOeU_w
 
 复动力系统简介
 
-https://mp.weixin.qq.com/s/QmDCFY0SP3cl71HvwvthJQ
-
-如果高斯没有故意“坑”黎曼，估计这门神奇的学科就不会出现了……
-
 http://www.cnblogs.com/zeze/p/6999651.html
 
 粗糙集（Rough Set Approach）
@@ -87,10 +67,6 @@ http://www.cnblogs.com/zeze/p/6999651.html
 https://mp.weixin.qq.com/s/mc9aH5hDgRFS2h2blPhb8w
 
 21张绘画完美演绎地球演化新说！
-
-http://www.matrix67.com/
-
-一个数学blog
 
 https://mp.weixin.qq.com/s/tIau6pRZU0r4Aasofca5yQ
 
@@ -311,6 +287,10 @@ https://mp.weixin.qq.com/s/oTltrhF25ClrImp6KUlagw
 https://mp.weixin.qq.com/s/CkZhqcGxRoOoaLGvQIVUIQ
 
 科学家开发出“反太阳能”装置，黑夜照样能发电！
+
+https://mp.weixin.qq.com/s/hWPX-lR3Eo46ofMNC2_5oQ
+
+有关诺奖的故事：简单的电学实验，造就了一个有趣的研究领域
 
 ## 空气动力学
 

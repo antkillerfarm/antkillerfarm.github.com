@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十一）——Linear Discriminant Analysis, 强连通分量算法, 度量学习
+title:  机器学习（三十一）——Linear Discriminant Analysis, 强连通分量算法, 度量学习, 压缩感知
 category: ML 
 ---
 
@@ -198,6 +198,32 @@ https://mp.weixin.qq.com/s/mvbyddpgxBFQSxC1zZZmFw
 https://mp.weixin.qq.com/s/iuOmxW0OAhSA7xSoIIn1dw
 
 鲁继文：面向视觉内容理解的深度度量学习
+
+# 压缩感知
+
+https://blog.csdn.net/jbb0523
+
+一个压缩感知+贝叶斯网络方面的blog
+
+http://blog.csdn.net/abcjennifer/article/details/7721834
+
+初识压缩感知Compressive Sensing
+
+http://blog.csdn.net/abcjennifer/article/details/7724360
+
+中国压缩传感资源（China Compressive Sensing Resources）
+
+http://blog.csdn.net/xiahouzuoxin/article/details/38820925
+
+白话压缩感知（含Matlab代码）
+
+http://blog.csdn.net/abcjennifer/article/details/7748833
+
+压缩感知进阶——有关稀疏矩阵
+
+https://zhuanlan.zhihu.com/p/85558304
+
+深度学习压缩感知（DCS）历史最全资源汇总分享
 
 # t-SNE
 
