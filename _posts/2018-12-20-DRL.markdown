@@ -78,6 +78,16 @@ https://course.ie.cuhk.edu.hk/~ierg6130/schedule.html
 
 香港中文大学：Reinforcement Learning
 
+http://nanjiang.cs.illinois.edu/cs498/
+
+CS 498 Reinforcement Learning
+
+http://nanjiang.cs.illinois.edu/cs598/
+
+CS 598 Statistical Reinforcement Learning
+
+>姜楠，清华本科（2011）+University of Michigan博士（2017）。UIUC AP。
+
 https://github.com/aikorea/awesome-rl
 
 提供了RL方面的资源网页。aikorea还提供了同类的资源收集网页：awesome-rnn, awesome-deep-vision, awesome-random-forest。
@@ -343,11 +353,3 @@ https://mp.weixin.qq.com/s/781fVvKr4yuq4q2GI1Y1gA
 https://spinningup.openai.com/en/latest/spinningup/keypapers.html
 
 深度强化学习关键论文列表
-
-## DeepMind vs OpenAI
-
-DeepMind和OpenAI算是DRL的两大重镇。
-
-DeepMind主要是David Silver和他导师Richard Sutton一脉，最初来源于control theory，代表作是Deep Q-learning, DDPG。
-
-OpenAI背后的派别是Berkeley帮，主要工作是围绕Pieter Abbeel以及他的两位superstar博士生Sergey Levine和John Schulman，最初来源于Robotics，代表作是TRPO以及后来的PPO。

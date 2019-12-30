@@ -387,19 +387,3 @@ https://mp.weixin.qq.com/s/lhut5ndqZWTwlKZjeY484w
 https://mp.weixin.qq.com/s/7CV0a-UshPtadgfcsFScJw
 
 用孪生网络、对比损失和三重损失进行人脸识别的单样本学习
-
-https://mp.weixin.qq.com/s/UUDmWMaFEkW9qbMaJkMhhA
-
-低光照人脸检测竞赛冠军代码与PPT分享
-
-https://mp.weixin.qq.com/s/4J_pPkNoE9eSDQK4NVs0sw
-
-看一眼就知道你的BMI：基于Keras与迁移学习的人脸预测系统
-
-https://mp.weixin.qq.com/s/B7PgyhSROXnEUzfdQc4jOw
-
-基于深度树学习的Zero-shot人脸检测识别
-
-https://mp.weixin.qq.com/s/CwMGZUWaopT3HAIXmlowsA
-
-目前最强开源人脸检测算法RetinaFace

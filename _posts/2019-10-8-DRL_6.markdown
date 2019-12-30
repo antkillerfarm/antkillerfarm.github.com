@@ -1,12 +1,56 @@
 ---
 layout: post
-title:  深度强化学习（六）——MARL, AlphaStar
+title:  深度强化学习（六）——MARL
 category: DRL 
 ---
 
 # AlphaGo
 
-## 参考（续）
+## Leela Zero（续）
+
+>再之后，随着AI围棋的平民化，我的中二梦终于也有人将之付诸实现了：   
+>https://mp.weixin.qq.com/s/npt2zZrKwPnNdY-hsa2RjQ   
+>AI再乱围棋圈：“食言之战”柯洁落败；首例素人作弊引风波
+
+这次作弊风波所使用的AI就是Leela Zero，可见目前（2018.5）它的棋力已经超过了顶尖棋手。
+
+## ELF OpenGo
+
+ELF OpenGo是Facebook开源的围棋AI，它是FB的AI游戏框架ELF的一部分。
+
+官网：
+
+https://github.com/pytorch/ELF
+
+参考：
+
+https://mp.weixin.qq.com/s/lOAx3suLIS-pEWyi8xZl6Q
+
+“全民体验”AlphaZero：FAIR田渊栋首次开源超级围棋AI
+
+## PhoenixGo
+
+PhoenixGo是腾讯微信团队的AlphaGo Zero复刻版。
+
+官网：
+
+https://github.com/Tencent/PhoenixGo
+
+参考：
+
+https://mp.weixin.qq.com/s/tJDmxsuS1QigYS75ZIdzRA
+
+微信团队开源围棋AI技术PhoenixGo，复现AlphaGo Zero论文
+
+## 参考
+
+https://blog.csdn.net/amds123/article/details/70666594
+
+论文笔记：Mastering the game of Go with deep neural networks and tree search
+
+https://mp.weixin.qq.com/s/Sfv-jzQAkN0PsZOGZUQhkQ
+
+AlphaGo Zero横空出世，DeepMind Nature论文解密不使用人类知识掌握围棋
 
 https://mp.weixin.qq.com/s/oAxouYX7-wDC5okbu--Wuw
 
@@ -304,41 +348,3 @@ https://mp.weixin.qq.com/s/zRcq1LMtK72Cl4T3877tgQ
 https://mp.weixin.qq.com/s/qU6XD45RGeMI-T7GI0dg2Q
 
 OpenAI竞争性自我对抗训练：简单环境下获得复杂的智能体
-
-https://mp.weixin.qq.com/s/cUFSaHWGKhyZhEvRdX09hw
-
-谷歌大脑QT-Opt算法，机器人探囊取物成功率96%
-
-https://mp.weixin.qq.com/s/xxB1lsiQxSfaHPKwZUI9bw
-
-拔掉机器人的一条腿，它还能学走路？——三次元里优化的DRL策略
-
-https://mp.weixin.qq.com/s/e4hriDvTRLkg-mIifVWayw
-
-如何解决深度学习中的多体问题
-
-https://zhuanlan.zhihu.com/p/61060358
-
-Paper survey: Multi-Agent Reinforcement Learning
-
-https://zhang-yi-chi.github.io/2019/08/15/cooperative-multi-agent-rl/
-
-Cooperative Multi-Agent Reinforcement Learning
-
-# AlphaStar
-
-https://mp.weixin.qq.com/s/_Y0bCjTu9UrHfnen15htqQ
-
-AlphaStar称霸星际争霸2！AI史诗级胜利，DeepMind再度碾压人类
-
-https://mp.weixin.qq.com/s/axr5VFbHQmYo0shW9ilBaQ
-
-DeepMind回应一切：AlphaStar两百年相当于人类多长时间？
-
-https://www.zhihu.com/question/310011363
-
-如何评价DeepMind在北京时间19年1月25日2点的《星际争霸 2》项目演示？
-
-https://mp.weixin.qq.com/s/k0l2uoik-Z9aA9zax7AoZg
-
-中科院自动化所深度解析：Deepmind AlphaStar如何战胜人类职业玩家

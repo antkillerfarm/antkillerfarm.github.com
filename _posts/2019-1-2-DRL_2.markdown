@@ -1,12 +1,18 @@
 ---
 layout: post
-title:  深度强化学习（二）——Deep Q-learning Network, DQN进化史
+title:  深度强化学习（二）——Deep Q-learning Network
 category: DRL 
 ---
 
-# 概述
+# 概述（续）
 
-## DeepMind vs OpenAI（续）
+## DeepMind vs OpenAI
+
+DeepMind和OpenAI算是DRL的两大重镇。
+
+DeepMind主要是David Silver和他导师Richard Sutton一脉，最初来源于control theory，代表作是Deep Q-learning, DDPG。
+
+OpenAI背后的派别是Berkeley帮，主要工作是围绕Pieter Abbeel以及他的两位superstar博士生Sergey Levine和John Schulman，最初来源于Robotics，代表作是TRPO以及后来的PPO。
 
 某牛的点评：
 
@@ -256,21 +262,3 @@ https://zhuanlan.zhihu.com/p/35882937
 《Deep Learning for Video Game Playing》
 
 该论文最早发表于2017年，但是作者每年都会更新论文的内容。
-
-----
-
-![](/images/img3/DRL.png)
-
-----
-
-在Nature DQN出来之后，肯定很多人在思考如何改进它。那么DQN有什么问题呢？
-
-- 目标Q值的计算准确吗？全部通过max Q来计算有没有问题？
-
-- 随机采样的方法好吗？按道理不同样本的重要性是不一样的Q值代表状态，动作的价值，那么单独动作价值的评估会不会更准确？
-
-- DQN中使用$$\epsilon$$-greedy的方法来探索状态空间，有没有更好的做法？
-
-- 使用卷积神经网络的结构是否有局限？加入RNN呢？
-
-- DQN无法解决一些高难度的Atari游戏比如《Montezuma's Revenge》，如何处理这些游戏？

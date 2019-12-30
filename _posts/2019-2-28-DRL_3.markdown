@@ -1,10 +1,26 @@
 ---
 layout: post
-title:  深度强化学习（三）——A2C & A3C
+title:  深度强化学习（三）——DQN进化史, A2C & A3C
 category: DRL 
 ---
 
 # DQN进化史（续）
+
+![](/images/img3/DRL.png)
+
+----
+
+在Nature DQN出来之后，肯定很多人在思考如何改进它。那么DQN有什么问题呢？
+
+- 目标Q值的计算准确吗？全部通过max Q来计算有没有问题？
+
+- 随机采样的方法好吗？按道理不同样本的重要性是不一样的Q值代表状态，动作的价值，那么单独动作价值的评估会不会更准确？
+
+- DQN中使用$$\epsilon$$-greedy的方法来探索状态空间，有没有更好的做法？
+
+- 使用卷积神经网络的结构是否有局限？加入RNN呢？
+
+- DQN无法解决一些高难度的Atari游戏比如《Montezuma's Revenge》，如何处理这些游戏？
 
 - DQN训练时间太慢了，跑一个游戏要好几天，有没有办法更快？
 
@@ -292,21 +308,3 @@ $$a_{t} = \mu(s_{t} | \theta^{\mu})$$
 - 在PG的学习过程中，每一步计算policy gradient都需要在整个action space进行积分：
 
 $$\triangledown_{\theta} =  \int_{\mathcal{S}} \int_{A} \rho(s) \pi_{\theta}(a|s)Q^{\pi} (s,a)\mathrm{d}a \mathrm{d}s$$
-
-这个积分我们一般通过Monte Carlo 采样来进行估算，需要在高维的action空间进行采样，耗费计算能力。
-
-- 如果采取简单的Greedy策略，即每一步求解$$\arg\max_a Q(s,a)$$也不可行，因为在连续的、高维度的action空间，如果每一步都求全局最优解，太耗费计算性能。
-
-当然，反过来说，DPG也有一个缺点：无法探索环境。因此，在DPG的实际使用中，我们要采用其他策略来弥补这个缺点。
-
-## Noisy
-
-在介绍Rainbow的时候，我们提到了NoisyNet，但没有展开，这里可以说说Noisy在DRL中的作用。
-
-Noisy在DRL中的用法主要有：
-
-- Noise on Action。就是随机乱选。
-
-- Noise on Parameters。这种方法由于网络结构不变，参数也不是全换，因此相当于是有约束的随机选择，或者说是有系统的尝试。
-
-在DPG中，一般采用第二种方法。

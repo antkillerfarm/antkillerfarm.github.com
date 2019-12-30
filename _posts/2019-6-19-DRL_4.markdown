@@ -6,7 +6,25 @@ category: DRL
 
 # DDPG
 
-## Noisy（续）
+## DPG（续）
+
+这个积分我们一般通过Monte Carlo 采样来进行估算，需要在高维的action空间进行采样，耗费计算能力。
+
+- 如果采取简单的Greedy策略，即每一步求解$$\arg\max_a Q(s,a)$$也不可行，因为在连续的、高维度的action空间，如果每一步都求全局最优解，太耗费计算性能。
+
+当然，反过来说，DPG也有一个缺点：无法探索环境。因此，在DPG的实际使用中，我们要采用其他策略来弥补这个缺点。
+
+## Noisy
+
+在介绍Rainbow的时候，我们提到了NoisyNet，但没有展开，这里可以说说Noisy在DRL中的作用。
+
+Noisy在DRL中的用法主要有：
+
+- Noise on Action。就是随机乱选。
+
+- Noise on Parameters。这种方法由于网络结构不变，参数也不是全换，因此相当于是有约束的随机选择，或者说是有系统的尝试。
+
+在DPG中，一般采用第二种方法。
 
 需要注意的是，参数的改变意味着策略的改变，因此，Noise在episode中需要保持不变，这样才能检测随机策略的真正效果。否则就是无目的的乱抖了。（类似帕金森症）
 
@@ -275,41 +293,3 @@ cd gym
 pip install -e . # minimal install
 pip install -e .[all] # all install
 {% endhighlight %}
-
-这里选择minimal install就可以了，all install需要安装MuJoCo，而后者是收费软件。
-
-和Gym配套的还有一个算法库：
-
-https://github.com/openai/baselines
-
-当然，看名字也知道这只是一个简单的算法库。
-
-参考：
-
-http://tech.163.com/16/0510/09/BMMOPSCR00094OE0.html
-
-马斯克的AI野心——OpenAI Gym系统深度解析
-
-https://mp.weixin.qq.com/s/KK1gwDW2EyptZOiuFjyAlw
-
-OpenAI发布强化学习环境Gym Retro：支持千种游戏
-
-https://blog.csdn.net/jinzhuojun/article/details/77144590
-
-常用增强学习实验环境 I (MuJoCo, OpenAI Gym, rllab, DeepMind Lab, TORCS, PySC2)
-
-https://blog.csdn.net/jinzhuojun/article/details/78508203
-
-常用增强学习实验环境 II (ViZDoom, Roboschool, TensorFlow Agents, ELF, Coach等)
-
-https://mp.weixin.qq.com/s/0oVG7zMi08dzMQrk43T3mw
-
-像训练Dota2一样训练真实机器人？Gibson Environment环境了解一下
-
-https://mp.weixin.qq.com/s/_A0q8DFAsIclaofVgZfjMA
-
-定制股票交易OpenAI Gym强化学习环境
-
-https://blog.csdn.net/gsww404/article/details/80627892
-
-OpenAI-baselines的使用方法

@@ -4,7 +4,47 @@ title:  深度强化学习（五）——AlphaGo
 category: DRL 
 ---
 
-# OpenAI（续）
+# OpenAI
+
+## Gym（续）
+
+这里选择minimal install就可以了，all install需要安装MuJoCo，而后者是收费软件。
+
+和Gym配套的还有一个算法库：
+
+https://github.com/openai/baselines
+
+当然，看名字也知道这只是一个简单的算法库。
+
+参考：
+
+http://tech.163.com/16/0510/09/BMMOPSCR00094OE0.html
+
+马斯克的AI野心——OpenAI Gym系统深度解析
+
+https://mp.weixin.qq.com/s/KK1gwDW2EyptZOiuFjyAlw
+
+OpenAI发布强化学习环境Gym Retro：支持千种游戏
+
+https://blog.csdn.net/jinzhuojun/article/details/77144590
+
+常用增强学习实验环境 I (MuJoCo, OpenAI Gym, rllab, DeepMind Lab, TORCS, PySC2)
+
+https://blog.csdn.net/jinzhuojun/article/details/78508203
+
+常用增强学习实验环境 II (ViZDoom, Roboschool, TensorFlow Agents, ELF, Coach等)
+
+https://mp.weixin.qq.com/s/0oVG7zMi08dzMQrk43T3mw
+
+像训练Dota2一样训练真实机器人？Gibson Environment环境了解一下
+
+https://mp.weixin.qq.com/s/_A0q8DFAsIclaofVgZfjMA
+
+定制股票交易OpenAI Gym强化学习环境
+
+https://blog.csdn.net/gsww404/article/details/80627892
+
+OpenAI-baselines的使用方法
 
 ## RND
 
@@ -228,46 +268,3 @@ https://github.com/gcp/leela-zero
 
 >十多年前，当我还是一个中二青年的时候，就幻想有朝一日能够拿围棋世界冠军。当然，就算再中二，我自己也明白靠实力那是不可能的，当时做梦的法宝是制造一个AI，然后碾压一下所谓的国手。   
 >按照当时(2000年前后)人们的预计，这个AI在2030年之前，都不可能造出来，然而，最终的结果实际上只花了一半左右的时间。   
->再之后，随着AI围棋的平民化，我的中二梦终于也有人将之付诸实现了：   
->https://mp.weixin.qq.com/s/npt2zZrKwPnNdY-hsa2RjQ   
->AI再乱围棋圈：“食言之战”柯洁落败；首例素人作弊引风波
-
-这次作弊风波所使用的AI就是Leela Zero，可见目前（2018.5）它的棋力已经超过了顶尖棋手。
-
-## ELF OpenGo
-
-ELF OpenGo是Facebook开源的围棋AI，它是FB的AI游戏框架ELF的一部分。
-
-官网：
-
-https://github.com/pytorch/ELF
-
-参考：
-
-https://mp.weixin.qq.com/s/lOAx3suLIS-pEWyi8xZl6Q
-
-“全民体验”AlphaZero：FAIR田渊栋首次开源超级围棋AI
-
-## PhoenixGo
-
-PhoenixGo是腾讯微信团队的AlphaGo Zero复刻版。
-
-官网：
-
-https://github.com/Tencent/PhoenixGo
-
-参考：
-
-https://mp.weixin.qq.com/s/tJDmxsuS1QigYS75ZIdzRA
-
-微信团队开源围棋AI技术PhoenixGo，复现AlphaGo Zero论文
-
-## 参考
-
-https://blog.csdn.net/amds123/article/details/70666594
-
-论文笔记：Mastering the game of Go with deep neural networks and tree search
-
-https://mp.weixin.qq.com/s/Sfv-jzQAkN0PsZOGZUQhkQ
-
-AlphaGo Zero横空出世，DeepMind Nature论文解密不使用人类知识掌握围棋

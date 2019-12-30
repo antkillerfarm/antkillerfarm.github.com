@@ -218,6 +218,10 @@ https://mp.weixin.qq.com/s/q-R7kv4696LooHy3Hn-H1A
 
 分布式系统关注点——缓存背后的“毁灭种子”
 
+https://mp.weixin.qq.com/s/DaspXFLPASYE7N0WHllcYQ
+
+Cassandra的过去、现在、未来
+
 # Mysql
 
 ## 安装
