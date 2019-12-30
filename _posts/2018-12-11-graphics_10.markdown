@@ -4,7 +4,19 @@ title:  图像处理理论（十）——Optical flow, Particle filter, 从BOW�
 category: graphics 
 ---
 
-# Harris（续）
+# Harris
+
+## Harris角点的性质（续）
+
+Harris角点检测算子使用的是角点附近的区域灰度二阶矩矩阵。而二阶矩矩阵可以表示成一个椭圆，椭圆的长短轴正是二阶矩矩阵特征值平方根的倒数。当特征椭圆转动时，特征值并不发生变化，所以判断角点响应值R也不发生变化，由此说明**Harris角点检测算子具有旋转不变性**。
+
+**Harris角点检测算子不具有尺度不变性**。如下图所示，当右图被缩小时，在检测窗口尺寸不变的前提下，在窗口内所包含图像的内容是完全不同的。左侧的图像可能被检测为边缘或曲线，而右侧的图像则可能被检测为一个角点。
+
+![](/images/img2/harris_4.png)
+
+为了解决尺度不变性问题，可以使用多尺度Harris角点算法，将Harris角点检测算子与高斯尺度空间表示相结合，使其具有尺度不变性：
+
+$$\boldsymbol{M}=\mu(x,\sigma_I,\sigma_D)=\sigma_D^2g(\sigma_I)\otimes\begin{bmatrix}L_x^2(x,\sigma_D)&L_xL_y(x,\sigma_D)\\L_xL_y(x,\sigma_D)&L_y^2(x,\sigma_D)\end{bmatrix}$$
 
 ## 参考
 
@@ -247,47 +259,3 @@ ILSVRC 2010的冠军是NEC和UIUC的联合队伍。这也是DL于2012年大放�
 ![](/images/article/ILSVRC_2010.png)
 
 上图是NEC算法的基本流程图。这里不打算描述整个算法，而仅对其中涉及的术语做一个解释。
-
-# 模板匹配
-
-https://blog.csdn.net/liyuanbhu/article/details/49837661
-
-OpenCV 学习笔记（模板匹配）
-
-https://blog.csdn.net/xxboy61/article/details/38319757
-
-OpenCV实现之模板匹配(Template Matching)
-
-# Superpixel
-
-论文：
-
-《Superpixels: An Evaluation of the State-of-the-Art》
-
-超像素最直观的解释，便是把一些具有相似特性的像素“聚合”起来，形成一个更具有代表性的大“元素”。
-
-而这个新的元素，将作为其他图像处理算法的基本单位。
-
-一来大大降低了维度；二来可以剔除一些异常像素点。
-
-至于根据什么特性把一个个像素点聚集起来，可以是颜色、纹理、类别等。
-
-![](/images/img3/superpixel.jpg)
-
-由于Superpixel的粒度在pixel和segmentation之间，因此又被称为over segmentation。
-
-三维的Superpixel，也被称作Supervoxel。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/50996404
-
-超像素、语义分割、实例分割、全景分割 傻傻分不清？
-
-https://www.zhihu.com/question/27623988
-
-超像素(Superpixel)的大致原理以及State-of-the-art？
-
-https://zhuanlan.zhihu.com/p/41874735
-
-龙生龙，凤生凤，SLIC生超像素

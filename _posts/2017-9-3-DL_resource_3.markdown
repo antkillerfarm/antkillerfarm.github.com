@@ -371,3 +371,7 @@ https://mp.weixin.qq.com/s/JgSTOiWZ30mIR_uiXyU2PQ
 https://mp.weixin.qq.com/s/L-hF2OIcV9kbzOavjBhMqw
 
 12个不容错过的深度学习面试题
+
+https://mp.weixin.qq.com/s/k-VOcQCyvdmTnQnm8oAnKQ
+
+快2020年了，还在为深度学习调参而烦恼吗？

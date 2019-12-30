@@ -90,6 +90,10 @@ https://zhuanlan.zhihu.com/p/69542283
 
 人脸防伪检测挑战赛-俄初创公司夺冠,中美企业位列二三
 
+https://mp.weixin.qq.com/s/ROJtk8MSTlHJe-42-f1OYw
+
+部分遮挡下的人脸识别技术
+
 # RNN进阶
 
 ## IndRNN

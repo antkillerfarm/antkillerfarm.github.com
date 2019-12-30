@@ -371,3 +371,29 @@ https://mp.weixin.qq.com/s/k5Xx-nnaf-yfWqGLIY3LEg
 https://zhuanlan.zhihu.com/p/88927564
 
 窥探神经网络加速器的数据复用（一）
+
+# RL参考资源+
+
+https://mp.weixin.qq.com/s/hKGS4Ek5prwTRJoMCaxQLA
+
+强化学习Exploration漫游
+
+https://zhuanlan.zhihu.com/p/65116688
+
+值分布强化学习（01）
+
+https://zhuanlan.zhihu.com/p/65364484
+
+值分布强化学习（02）
+
+https://zhuanlan.zhihu.com/p/62363784
+
+强化学习之策略搜索
+
+https://mp.weixin.qq.com/s/j9Cs5M9gyITu2u_XDkKm-g
+
+Policy Gradient——一种不以loss来反向传播的策略梯度方法
+
+https://mp.weixin.qq.com/s/x6gKTuYIx8y25KX-fCc5bA
+
+蒙特卡洛梯度估计方法（MCGE）简述

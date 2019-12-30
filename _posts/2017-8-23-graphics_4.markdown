@@ -4,7 +4,23 @@ title:  图像处理理论（四）——Schmid滤波, HOG, Haar, SIFT
 category: graphics 
 ---
 
-# Gabor滤波（续）
+# Gabor滤波
+
+## Gabor filter（续）
+
+$$\lambda$$：正弦函数波长；$$\theta$$：Gabor核函数的方向；$$\psi$$：相位偏移；$$\sigma$$：高斯函数的标准差；$$\gamma$$： 空间的宽高比。
+
+可以看出Gabor filter是一个复函数，其实部为：
+
+$$g(x,y;\lambda,\theta,\psi,\sigma,\gamma)=\exp\left(-\frac{x'^2+\gamma^2y'^2}{2\sigma^2}\right)\cos\left(2\pi\frac{x'}{\lambda}+\psi\right)$$
+
+其虚部为：
+
+$$g(x,y;\lambda,\theta,\psi,\sigma,\gamma)=\exp\left(-\frac{x'^2+\gamma^2y'^2}{2\sigma^2}\right)\sin\left(2\pi\frac{x'}{\lambda}+\psi\right)$$
+
+此外，还有对数Gabor函数：
+
+$$G(f)=\exp\left(\frac{-(log(f/f_0))^2}{2(log(\sigma/f_0))^2}\right)$$
 
 ## Gabor滤波的效果
 
@@ -197,21 +213,3 @@ SIFT算法是CV领域在DL进入之前的20年中，最重要的成果。
 尺度空间(scale space)思想最早是由Iijima于1962年提出的，后经witkin和Koenderink等人的推广逐渐得到关注，在计算机视觉领域使用广泛。
 
 尺度空间理论的基本思想是：在图像信息处理模型中引入一个被视为尺度的参数，通过连续变化尺度参数获得多尺度下的尺度空间表示序列，对这些序列进行尺度空间主轮廓的提取，并以该主轮廓作为一种特征向量，实现边缘、角点检测和不同分辨率上的特征提取等。
-
-尺度空间方法将传统的单尺度图像信息处理技术纳入尺度不断变化的动态分析框架中，更容易获取图像的本质特征。尺度空间中各尺度图像的模糊程度逐渐变大，能够模拟人在距离目标由近到远时目标在视网膜上的形成过程。
-
-尺度空间的应用实例就是**图像金字塔**。
-
-参考：
-
-http://www.cnblogs.com/ronny/p/3886013.html
-
-尺度空间理论
-
-## 尺度空间的视觉不变性
-
-视觉不变性是对尺度空间算子提出的一种要求：
-
-1.对图像的分析不受图像的灰度水平和对比度变化的影响，即满足灰度不变性和对比度不变性。这主要体现了物体的**光照变化**。
-
-2.对图像的分析和图像的位置、大小、角度以及仿射变换无关，即满足平移不变性、尺度不变性、欧几里德不变性以及仿射不变性。这主要体现了物体的**空间位置变化**。

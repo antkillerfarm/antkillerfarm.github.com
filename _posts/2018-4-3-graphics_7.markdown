@@ -4,7 +4,33 @@ title:  图像处理理论（七）——LBP, Fisherface, Viola-Jones
 category: graphics 
 ---
 
-# Eigenface（续）
+# Eigenface
+
+## 计算Eigenface（续）
+
+实际上，$$A^TA$$的M个特征值，就是$$AA^T$$的前M大的特征值。
+
+**Step 6**：从中选出K个最大的特征向量供后续使用。
+
+## 使用Eigenface
+
+**Step 1**：给定图片$$\Gamma$$，计算：
+
+$$\Phi=\Gamma-\Psi$$
+
+**Step 2**：将$$\Phi$$映射到K维特征向量空间：
+
+$$\Omega=[w_1,\dots,w_K]^T$$
+
+**Step 3**：计算与图片l的距离：
+
+$$e_r=\|\Omega-\Omega^l\|$$
+
+当$$e_r<T_r$$时，就认为是同一张人脸。
+
+这里的距离可以是欧氏距离，但作者指出使用马式距离效果更佳。
+
+综上，**Eigenface实际上就是PCA在人脸识别上的应用。**
 
 ## Eigenface的缺点
 
@@ -197,17 +223,3 @@ Viola-Jones方法由Paul Viola和Michael Jones于2001年提出。
 《Learning Multi-scale Block Local Binary Patterns for Face Recognition》
 
 《Implementing the Viola-Jones Face Detection Algorithm》
-
-## 概述
-
-和之前的方法不同，Viola-Jones不仅是一个算法，更是一个框架，前DL时代的人脸检测一般都采用该框架。其准确度也由Fisherface时代的不到70%，上升到90%以上。当然，这里所用的数据集以今天的眼光来看，只能算作玩具了——基本都是正面、无遮挡的标准照，光照也比较理想。但不管怎么说，这也是第一个进入商业实用阶段的目标检测框架，目前(2016)，大多数的商业化产品仍然基于该框架。
-
-Viola-Jones框架主要有三个要点：
-
-1.Haar-like特征，AdaBoost算法和Cascade结构。Haar-like特征利用积分图像（Integral Image）快速的计算矩形区域的差分信号；
-
-2.AdaBoost算法选择区分能力强的特征结合Stump函数做弱分类器，然后把若干这些弱分类器线性组合在一起增强分类性能；
-
-3.Cascade结构做Early decision快速抛弃明显不是人脸的扫描窗口。
-
-下面我们分别描述一下这几个要点。

@@ -206,6 +206,10 @@ https://mp.weixin.qq.com/s/-vqX0PHOsDNbj2NX_cR2qg
 
 微软首席研究员Katja Hofmann-强化学习：过去、现在和未来展望，附97页ppt
 
+https://mp.weixin.qq.com/s/Yg_bFykE8zsG2--mBGYS5A
+
+DeepMind出品：深度学习与强化学习教程 850页ppt
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》

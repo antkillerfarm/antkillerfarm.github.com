@@ -279,16 +279,3 @@ $$h_1=\left[\begin{array}{ccc} 0&-1&0\\ -1&4&-1 \\ 0&-1&0\end{array} \right],h_2
 $$s_x=\left[\begin{array}{ccc} -1&0&1\\ -d&0&d \\ -1&0&1\end{array} \right],s_y=\left[\begin{array}{ccc} 1&d&1\\ 0&0&0 \\ -1&-d&-1\end{array} \right]$$
 
 可以看出Sobel算子$$(d=2)$$和Prewitt算子$$(d=1)$$，都是对称梯度算子的特例。d的常用值还有$$\sqrt{2}$$。
-
-## 波纹算子
-
-$$s_x=\left[\begin{array}{ccc} 0&-1&d\\ 1&0&-1 \\ -d&1&0\end{array} \right],s_y=\left[\begin{array}{ccc} d&-1&0\\ -1&0&1 \\ 0&1&-d\end{array} \right]$$
-
-对称梯度算子和波纹算子都属于边缘子空间基。
-
-## 直线算子
-
-$$s_x=\left[\begin{array}{ccc} 0&1&0\\ -1&0&-1 \\ 0&1&0\end{array} \right],s_y=\left[\begin{array}{ccc} -1&0&1\\ 0&0&0 \\ 1&0&-1\end{array} \right]$$
-
-直线算子和拉普拉斯算子都属于直线子空间基。
-

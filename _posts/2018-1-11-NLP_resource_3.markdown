@@ -24,6 +24,48 @@ https://mp.weixin.qq.com/s/7BVVtILwtKuFUKLIjrsNaw
 
 端到端学习对话人工智能，附237页PPT下载
 
+## 关系抽取
+
+https://mp.weixin.qq.com/s/yN0lOmA0XmqIntqLgwn-TQ
+
+我们眼中的“关系抽取”
+
+https://mp.weixin.qq.com/s/1TcIC2BFmswQAoC-86QBaw
+
+基于句法结构与语义信息核函数的搭配关系抽取
+
+https://mp.weixin.qq.com/s/wqJP64BuIT27Le6esZNdLg
+
+浅析深度学习在实体识别和关系抽取中的应用
+
+http://www.crownpku.com//2017/08/19/%E7%94%A8Bi-GRU%E5%92%8C%E5%AD%97%E5%90%91%E9%87%8F%E5%81%9A%E7%AB%AF%E5%88%B0%E7%AB%AF%E7%9A%84%E4%B8%AD%E6%96%87%E5%85%B3%E7%B3%BB%E6%8A%BD%E5%8F%96.html
+
+用Bi-GRU和字向量做端到端的中文关系抽取
+
+https://mp.weixin.qq.com/s/PGjIWuBGAVG9C9X9d1aKaQ
+
+史上最可爱的关系抽取指南？从一条规则到十个开源项目
+
+https://mp.weixin.qq.com/s/1WtJEqhxCtBKVRs_-EevjA
+
+基于排序思想的弱监督关系抽取选种与降噪算法
+
+https://mp.weixin.qq.com/s/2zFOjOuDKo--wTvu5rVWNw
+
+基于局内去噪和迁移学习的关系抽取
+
+https://mp.weixin.qq.com/s/eI-u_RsabtuyRajDYnnZDg
+
+基于深度强化学习的远程监督关系抽取
+
+https://mp.weixin.qq.com/s/AhoEzujMVUU-P7j5z_8sVQ
+
+基于神经网络的实体识别和关系抽取联合学习
+
+https://mp.weixin.qq.com/s/PPAIARqkYqaIYRD7SFOtBg
+
+基于分层强化学习的关系抽取
+
 ## 参考
 
 https://mp.weixin.qq.com/s/klfTdvfti0xCg2lGitG4hg
@@ -114,10 +156,6 @@ https://mp.weixin.qq.com/s/JgQAMknL4x7nMONzZua7tg
 
 深度学习要多深，才能读懂人话？阿里小蜜前沿探索
 
-https://mp.weixin.qq.com/s/yN0lOmA0XmqIntqLgwn-TQ
-
-我们眼中的“关系抽取”
-
 http://www.jianshu.com/p/f45c3540c56e
 
 Chatbot架构
@@ -133,10 +171,6 @@ https://mp.weixin.qq.com/s/zfgx2iViwFm-tzBGvgHVuw
 http://www.csdn.net/article/2015-02-05/2823865
 
 让机器搞懂100万种隐含语义，腾讯Peacock大规模主题模型首次全揭秘
-
-https://mp.weixin.qq.com/s/1TcIC2BFmswQAoC-86QBaw
-
-基于句法结构与语义信息核函数的搭配关系抽取
 
 https://mp.weixin.qq.com/s/NDsQzT4nktbw1fHLLFUhEQ
 
@@ -173,10 +207,6 @@ http://www.cnblogs.com/qcloud1001/p/8074771.html
 https://mp.weixin.qq.com/s/Y-skeJvkWlgkwKBpCjPaKA
 
 中文文本挖掘流程详解
-
-https://mp.weixin.qq.com/s/wqJP64BuIT27Le6esZNdLg
-
-浅析深度学习在实体识别和关系抽取中的应用
 
 https://mp.weixin.qq.com/s/w5A5rvJxqRSJYMeEMlFXsQ
 
@@ -338,10 +368,6 @@ https://mp.weixin.qq.com/s/PJQgrAzwefmFgSBF39_yIA
 
 Gmail新功能：结合BoW模型和RNN-LM，帮助用户快速写邮件
 
-http://www.crownpku.com//2017/08/19/%E7%94%A8Bi-GRU%E5%92%8C%E5%AD%97%E5%90%91%E9%87%8F%E5%81%9A%E7%AB%AF%E5%88%B0%E7%AB%AF%E7%9A%84%E4%B8%AD%E6%96%87%E5%85%B3%E7%B3%BB%E6%8A%BD%E5%8F%96.html
-
-用Bi-GRU和字向量做端到端的中文关系抽取
-
 https://mp.weixin.qq.com/s/gJFwWnKn7BV_BcADu_vJCg
 
 谷歌语义文本最新进展+两个开源新模型
@@ -361,39 +387,3 @@ https://mp.weixin.qq.com/s/A4r01mV-X8CTJy3vPa9BPw
 https://mp.weixin.qq.com/s/JoYmVC_9bw3NHK6WXggAcA
 
 通用句子语义编码器，谷歌在语义文本相似性上的探索
-
-https://mp.weixin.qq.com/s/odRDdSNNuTd5LnUf8rfRaw
-
-Google发布语义文本相似度研究新成果：通用语句编码器
-
-https://mp.weixin.qq.com/s/3aipKax9Md4nG8YGrGc4Tg
-
-提高NLP语义解析准确度：融合SQL语法的生成式语义解析模型
-
-https://mp.weixin.qq.com/s/xILU9fJhs64z8nE1-sDnOA
-
-基于递归联合注意力的句子匹配模型
-
-https://mp.weixin.qq.com/s/Dq-H4rUM19MaQb5W2DGlqA
-
-用递归神经网络，撰写一份特朗普式发言稿！
-
-https://mp.weixin.qq.com/s/VCeEz5QhGqQ5TF0lkCk40A
-
-COLING 2018 最佳论文解读：序列标注经典模型复现
-
-https://mp.weixin.qq.com/s/QUbZZokROzxUwy2kZZ7jeA
-
-Hybrid semi-Markov CRF for Neural Sequence Labeling
-
-https://mp.weixin.qq.com/s/wHweI0_LYHaW7K8jEAY74g
-
-文综提分哪家强？上海交大找AI
-
-https://mp.weixin.qq.com/s/yXs_bLSAIPcUOIrvJ9-0Sw
-
-ACM BCB 2018 CausalTriad: 从医学文本数据中推断出新的因果关系假设
-
-https://mp.weixin.qq.com/s/C7GkZk7UWk_2XsVfn1J_lg
-
-ACL 2018使用知识蒸馏提高基于搜索的结构预测

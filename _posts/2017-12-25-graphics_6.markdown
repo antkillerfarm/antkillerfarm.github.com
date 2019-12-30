@@ -6,6 +6,48 @@ category: graphics
 
 # ISP（续）
 
+## Green Balance
+
+由于Bayer Array的关系，每个点的光强都只是实际光强的一部分。由于接收的绿光较多，通常以绿光光强为基准，对红蓝光强进行修正。这个过程就是Green Balance。
+
+理论上绿光强度应是红蓝光强的两倍，但由于各相机滤光片的性能不同，实际参数略有差异。比如上图相机的RGB修正参数为：[2.648438, 1.000000, 1.484375]
+
+修正效果如下图所示：
+
+![](/images/img2/ISP_3.png)
+
+## Bad Pixel Correction
+
+![](/images/img2/BPC.png)
+
+sensor上可能有坏点存在（如上图中的白点），可以用中值滤波去除之。（参见《图像处理理论（二）》）
+
+Black Level Compensation、Green Balance和Bad Pixel Correction，一般统称为Raw Data Process。这些功能现在通常由图像sensor直接提供，一般不在ISP的处理范畴。
+
+## Demosaic
+
+由于RAW Data中的每个像素点只包含一种颜色，因此若要还原成彩色图片，就需要想办法补齐每个像素点缺失的色彩值。这个过程叫做Demosaic。
+
+Demosaic的算法一般如下图所示：
+
+![](/images/img2/Demosaic.png)
+
+简单来说就是各种插值算法。
+
+Demosaic处理后的图片才是真正的彩色图片，如下图所示：
+
+![](/images/img2/ISP_4.png)
+
+参考：
+
+https://mp.weixin.qq.com/s/sPmPFdfONapA5Y53AI7hSA
+
+小话Demosaic（一）
+
+https://mp.weixin.qq.com/s/8gRzW4qsX6SBzKn8FJ-hJQ
+
+小话demosaic（二）
+
 ## AWB(Auto White Balance) & Color Correction
 
 白平衡的基本原理是在任意环境下，把白色物体还原成白色物体，也就是通过找到图像中的白块，然后调整R/G/B的比例。
@@ -261,27 +303,3 @@ $$A^TAv_i=\mu_iv_i\Rightarrow AA^TAv_i=\mu_iAv_i\Rightarrow CAv_i=\mu_iAv_i$$
 $$Cu_i=\mu_iu_i$$
 
 可见$$\mu_i$$同时也是$$AA^T$$的特征值，而对应的特征向量则是$$Av_i$$。
-
-实际上，$$A^TA$$的M个特征值，就是$$AA^T$$的前M大的特征值。
-
-**Step 6**：从中选出K个最大的特征向量供后续使用。
-
-## 使用Eigenface
-
-**Step 1**：给定图片$$\Gamma$$，计算：
-
-$$\Phi=\Gamma-\Psi$$
-
-**Step 2**：将$$\Phi$$映射到K维特征向量空间：
-
-$$\Omega=[w_1,\dots,w_K]^T$$
-
-**Step 3**：计算与图片l的距离：
-
-$$e_r=\|\Omega-\Omega^l\|$$
-
-当$$e_r<T_r$$时，就认为是同一张人脸。
-
-这里的距离可以是欧氏距离，但作者指出使用马式距离效果更佳。
-
-综上，**Eigenface实际上就是PCA在人脸识别上的应用。**

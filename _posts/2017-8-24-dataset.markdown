@@ -338,6 +338,10 @@ https://mp.weixin.qq.com/s/dlmzRrAeB-jkhk7rbUrNpg
 
 微软亚洲研究院发布业界最全面的语义分析数据集MSParS
 
+https://mp.weixin.qq.com/s/Ud2pwlNSIEb3HncCrniMxA
+
+最全中华古诗词数据库，收录30多万诗词
+
 ## CV
 
 http://www.cvpapers.com/datasets.html
@@ -355,19 +359,3 @@ https://niessner.github.io/Matterport/
 https://mp.weixin.qq.com/s/q2lsD4MSqQG-LqRmVjEHeg
 
 图像配对数据集TTL：展现人类和机器判断图像相似性的差异
-
-https://mp.weixin.qq.com/s/Y__z-0nxAZNuZsZefCm4IA
-
-纽约大学联合谷歌大脑提出“COG”数据集，可提高系统的“视觉推理”能力
-
-https://mp.weixin.qq.com/s/0D8OQ6hF_70mNtadewyGVw
-
-全球最大的第一视角视频数据集开源，取自真实生活，还能提升厨艺
-
-https://mp.weixin.qq.com/s/NXI9Bp4xxbZCQqAddK1HgA
-
-Google开放最大目标检测数据集，还要为它举办AI挑战赛
-
-https://mp.weixin.qq.com/s/DsBoGT2Pl4tRwHX8REOqnw
-
-MURA：斯坦福ML团队开放的大型放射影像数据集与挑战赛

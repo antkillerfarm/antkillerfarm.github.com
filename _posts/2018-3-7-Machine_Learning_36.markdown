@@ -18,6 +18,10 @@ https://mp.weixin.qq.com/s/xhfRPedQ6pLQYrVsK2rgLA
 
 浅谈排队论
 
+https://mp.weixin.qq.com/s/pGvGbtoj96h0DQxKEDXWbg
+
+利用顾客灵活性优化共享汽车规模
+
 # XGBoost
 
 XGBoost是陈天奇于2014年提出的一套并行boost算法的工具库。

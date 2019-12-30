@@ -349,3 +349,7 @@ https://mp.weixin.qq.com/s/oDwvMtET0moHVGgtQLfCow
 https://mp.weixin.qq.com/s/nbEa0csbaMvEM3TCI3fn0Q
 
 当前模型剪枝有哪些可用的开源工具？
+
+https://mp.weixin.qq.com/s/0_66CScEk0qhGlTvfpmqBA
+
+2019年的最后一个月，这里有6种你必须要知道的最新剪枝技术

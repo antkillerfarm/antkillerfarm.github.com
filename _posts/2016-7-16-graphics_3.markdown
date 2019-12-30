@@ -4,6 +4,20 @@ title:  图像处理理论（三）——图像金字塔, 双边滤波, Steerabl
 category: graphics 
 ---
 
+# 边缘检测（续）
+
+## 波纹算子
+
+$$s_x=\left[\begin{array}{ccc} 0&-1&d\\ 1&0&-1 \\ -d&1&0\end{array} \right],s_y=\left[\begin{array}{ccc} d&-1&0\\ -1&0&1 \\ 0&1&-d\end{array} \right]$$
+
+对称梯度算子和波纹算子都属于边缘子空间基。
+
+## 直线算子
+
+$$s_x=\left[\begin{array}{ccc} 0&1&0\\ -1&0&-1 \\ 0&1&0\end{array} \right],s_y=\left[\begin{array}{ccc} -1&0&1\\ 0&0&0 \\ 1&0&-1\end{array} \right]$$
+
+直线算子和拉普拉斯算子都属于直线子空间基。
+
 # 边界闭合
 
 如果像素$$(s,t)$$在像素$$(x,y)$$的领域，且满足以下条件：
@@ -250,17 +264,3 @@ $$g(x,y;\lambda,\theta,\psi,\sigma,\gamma)=\exp\left(-\frac{x'^2+\gamma^2y'^2}{2
 其中，
 
 $$x'=x\cos\theta+y\sin\theta,y'=-x\sin\theta+y\cos\theta$$
-
-$$\lambda$$：正弦函数波长；$$\theta$$：Gabor核函数的方向；$$\psi$$：相位偏移；$$\sigma$$：高斯函数的标准差；$$\gamma$$： 空间的宽高比。
-
-可以看出Gabor filter是一个复函数，其实部为：
-
-$$g(x,y;\lambda,\theta,\psi,\sigma,\gamma)=\exp\left(-\frac{x'^2+\gamma^2y'^2}{2\sigma^2}\right)\cos\left(2\pi\frac{x'}{\lambda}+\psi\right)$$
-
-其虚部为：
-
-$$g(x,y;\lambda,\theta,\psi,\sigma,\gamma)=\exp\left(-\frac{x'^2+\gamma^2y'^2}{2\sigma^2}\right)\sin\left(2\pi\frac{x'}{\lambda}+\psi\right)$$
-
-此外，还有对数Gabor函数：
-
-$$G(f)=\exp\left(\frac{-(log(f/f_0))^2}{2(log(\sigma/f_0))^2}\right)$$

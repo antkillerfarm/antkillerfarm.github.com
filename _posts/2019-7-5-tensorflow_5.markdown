@@ -132,7 +132,35 @@ https://mp.weixin.qq.com/s/VN2O6faf4spdD3qaqf3aiw
 
 # Exploration & Exploitation
 
-## UCB（续）
+几个基本的探索方法：
+
+- **朴素探索(Naive Exploration)**: 在贪婪搜索的基础上增加一个$$\epsilon$$以实现朴素探索；
+
+- **乐观初始估计(Optimistic Initialization)**: 优先选择当前被认为是最高价值的行为，除非新信息的获取推翻了该行为具有最高价值这一认知；
+
+- **不确定优先(Optimism in the Face of Uncertainty)**: 优先尝试不确定价值的行为；
+
+- **概率匹配（Probability Matching)**: 根据当前估计的概率分布采样行为；
+
+- **信息状态搜索(Information State Search)**: 将已探索的信息作为状态的一部分联合个体的状态组成新的状态，以新状态为基础进行前向探索。
+
+根据搜索过程中使用的数据结构，可以将搜索分为：
+
+- **依据状态行为空间的探索(State-Action Exploration)**。针对每一个当前的状态，以一定的算法尝试之前该状态下没有尝试过的行为。
+
+- **参数化搜索（Parameter Exploration)**。直接针对策略的函数近似，此时策略用各种形式的参数表达，探索即表现为尝试不同的参数设置。
+
+Parameter Exploration的优点：得到基于某一策略的一段持续性的行为。
+
+缺点：对个体曾经到过的状态空间毫无记忆，也就是个体也许会进入一个之前曾经进入过的状态而并不知道其曾到过该状态，不能利用已经到过这个状态这个信息。
+
+## UCB
+
+$$\epsilon$$-greedy和softmax算法的缺陷：
+
+只关心回报是多少，并不关心每个臂被拉下了多少次，这就意味着，这些算法不再会选中初始回报特别低的臂，即使这个臂的回报只测试了一次。
+
+UCB（The Upper Confidence Bound Algorithm）算法将会不仅仅关注于回报，同样会关注每个臂被探索的次数。
 
 为了进一步刻画每个臂被探索的次数和回报之间的关系，UCB引入了**置信区间**的概念：
 
@@ -275,7 +303,7 @@ https://zhuanlan.zhihu.com/p/24437724
 
 学习理论之Rescorla-Wagner模型
 
-# RL参考资源+
+# RL参考资源
 
 https://mp.weixin.qq.com/s/Fn1s9Ia8L1ckgn6iP24FhQ
 
@@ -292,27 +320,3 @@ https://zhuanlan.zhihu.com/p/58815288
 https://mp.weixin.qq.com/s/8Cqknze_iosz6Z6cqnuK5w
 
 谷歌提出强化学习新算法SimPLe，模拟策略学习效率提高2倍
-
-https://mp.weixin.qq.com/s/hKGS4Ek5prwTRJoMCaxQLA
-
-强化学习Exploration漫游
-
-https://zhuanlan.zhihu.com/p/65116688
-
-值分布强化学习（01）
-
-https://zhuanlan.zhihu.com/p/65364484
-
-值分布强化学习（02）
-
-https://zhuanlan.zhihu.com/p/62363784
-
-强化学习之策略搜索
-
-https://mp.weixin.qq.com/s/j9Cs5M9gyITu2u_XDkKm-g
-
-Policy Gradient——一种不以loss来反向传播的策略梯度方法
-
-https://mp.weixin.qq.com/s/x6gKTuYIx8y25KX-fCc5bA
-
-蒙特卡洛梯度估计方法（MCGE）简述

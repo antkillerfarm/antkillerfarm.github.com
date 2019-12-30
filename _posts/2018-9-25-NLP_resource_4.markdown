@@ -6,6 +6,42 @@ category: resource
 
 # NLP参考资源
 
+https://mp.weixin.qq.com/s/odRDdSNNuTd5LnUf8rfRaw
+
+Google发布语义文本相似度研究新成果：通用语句编码器
+
+https://mp.weixin.qq.com/s/3aipKax9Md4nG8YGrGc4Tg
+
+提高NLP语义解析准确度：融合SQL语法的生成式语义解析模型
+
+https://mp.weixin.qq.com/s/xILU9fJhs64z8nE1-sDnOA
+
+基于递归联合注意力的句子匹配模型
+
+https://mp.weixin.qq.com/s/Dq-H4rUM19MaQb5W2DGlqA
+
+用递归神经网络，撰写一份特朗普式发言稿！
+
+https://mp.weixin.qq.com/s/VCeEz5QhGqQ5TF0lkCk40A
+
+COLING 2018 最佳论文解读：序列标注经典模型复现
+
+https://mp.weixin.qq.com/s/QUbZZokROzxUwy2kZZ7jeA
+
+Hybrid semi-Markov CRF for Neural Sequence Labeling
+
+https://mp.weixin.qq.com/s/wHweI0_LYHaW7K8jEAY74g
+
+文综提分哪家强？上海交大找AI
+
+https://mp.weixin.qq.com/s/yXs_bLSAIPcUOIrvJ9-0Sw
+
+ACM BCB 2018 CausalTriad: 从医学文本数据中推断出新的因果关系假设
+
+https://mp.weixin.qq.com/s/C7GkZk7UWk_2XsVfn1J_lg
+
+ACL 2018使用知识蒸馏提高基于搜索的结构预测
+
 https://mp.weixin.qq.com/s/kbF8WnaVWf6nOpzvbELpOw
 
 产品评论分析系统
@@ -294,10 +330,6 @@ https://zhuanlan.zhihu.com/p/47949269
 
 开放域下的对话系统
 
-https://mp.weixin.qq.com/s/1WtJEqhxCtBKVRs_-EevjA
-
-基于排序思想的弱监督关系抽取选种与降噪算法
-
 https://mp.weixin.qq.com/s/dXU-HMi8LIjVTwzfMqOzuQ
 
 自然语言中的深度隐变量模型
@@ -334,14 +366,6 @@ https://mp.weixin.qq.com/s/fkBkSakTtuGPhi3mK563mg
 
 结合贪心搜索和蒙特卡洛随机游走的面向DBpedia的实体链接方法
 
-https://mp.weixin.qq.com/s/2zFOjOuDKo--wTvu5rVWNw
-
-基于局内去噪和迁移学习的关系抽取
-
-https://mp.weixin.qq.com/s/eI-u_RsabtuyRajDYnnZDg
-
-基于深度强化学习的远程监督关系抽取
-
 https://mp.weixin.qq.com/s/UZbt1E6QntwtWWvJfTL3eQ
 
 车万翔：任务型对话系统研究进展
@@ -369,35 +393,3 @@ https://mp.weixin.qq.com/s/5F6h2F8L-OdFJxBY2QrWJg
 https://mp.weixin.qq.com/s/wBsh9dmMPks04X2pDB8Ang
 
 沈向洋等重磅论文：公开微软小冰系统设计，迄今最详细！
-
-https://mp.weixin.qq.com/s/-zDMPfR1wWSV9A7HDzJlZA
-
-事件抽取及推理(上)
-
-https://mp.weixin.qq.com/s/GtO3Zf87BTbBQqHAtgAmlA
-
-事件抽取及推理(下)
-
-https://mp.weixin.qq.com/s/tvfCW7Lwkug9ILKpJuMnUA
-
-上下文敏感的改写式回复生成模型
-
-https://mp.weixin.qq.com/s/6IO-pAP6Jcct5W-tReaLtw
-
-基于深度强化学习的远程监督数据集的降噪
-
-https://zhuanlan.zhihu.com/p/26461511
-
-关于WordNet，我的一些用法和思路
-
-https://speechlab.sjtu.edu.cn/pages/sz128/homepage/year/10/27/survey-on-grammar-retrieval/
-
-论文调研：基于“规则、槽值”检索的口语语义理解
-
-https://mp.weixin.qq.com/s/BdvBV542AZnMw7hnjDSwWw
-
-百度语义计算技术及其应用
-
-https://mp.weixin.qq.com/s/KQPLDhnlxks4DQNZEhEacQ
-
-百度阅读理解技术研究及应用

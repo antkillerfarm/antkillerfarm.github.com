@@ -338,7 +338,7 @@ https://mp.weixin.qq.com/s/Ue0Sv9h6JZssfJtg4N8hFg
 
 OpenCV相机标定与畸变校正
 
-# Python+
+# Python
 
 https://mp.weixin.qq.com/s/zIHJsyankFEf_ig4Xnb0Uw
 
@@ -427,11 +427,3 @@ Python里三个最高逼格的调试神器
 https://mp.weixin.qq.com/s/ctlb3nwCEu3qP__xeTUlQQ
 
 GitHub上有个沙雕开发者，做了款斗图工具后火了...
-
-https://mp.weixin.qq.com/s/kt5isheTBnpwKUhJAuXnYw
-
-视频剪辑什么鬼？Python带你高效创作短视频
-
-https://mp.weixin.qq.com/s/G5qx3-1Wq4gcRSuRfrczuw
-
-Python趣味打怪：60秒学会一个例子，147段简单代码助你从入门到大师

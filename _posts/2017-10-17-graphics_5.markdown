@@ -4,7 +4,27 @@ title:  图像处理理论（五）——ISP
 category: graphics 
 ---
 
-# SIFT（续）
+# SIFT
+
+## 尺度空间（续）
+
+尺度空间方法将传统的单尺度图像信息处理技术纳入尺度不断变化的动态分析框架中，更容易获取图像的本质特征。尺度空间中各尺度图像的模糊程度逐渐变大，能够模拟人在距离目标由近到远时目标在视网膜上的形成过程。
+
+尺度空间的应用实例就是**图像金字塔**。
+
+参考：
+
+http://www.cnblogs.com/ronny/p/3886013.html
+
+尺度空间理论
+
+## 尺度空间的视觉不变性
+
+视觉不变性是对尺度空间算子提出的一种要求：
+
+1.对图像的分析不受图像的灰度水平和对比度变化的影响，即满足灰度不变性和对比度不变性。这主要体现了物体的**光照变化**。
+
+2.对图像的分析和图像的位置、大小、角度以及仿射变换无关，即满足平移不变性、尺度不变性、欧几里德不变性以及仿射不变性。这主要体现了物体的**空间位置变化**。
 
 ## DOG & LOG
 
@@ -205,45 +225,3 @@ RAW Data的取值范围取决于sensor的处理器位宽。比如12bit的范围�
 ![](/images/img2/ISP_2.png)
 
 这个过程被称为Black Level Compensation。效果如上图所示，我们开始可以看清一些东西了。
-
-## Green Balance
-
-由于Bayer Array的关系，每个点的光强都只是实际光强的一部分。由于接收的绿光较多，通常以绿光光强为基准，对红蓝光强进行修正。这个过程就是Green Balance。
-
-理论上绿光强度应是红蓝光强的两倍，但由于各相机滤光片的性能不同，实际参数略有差异。比如上图相机的RGB修正参数为：[2.648438, 1.000000, 1.484375]
-
-修正效果如下图所示：
-
-![](/images/img2/ISP_3.png)
-
-## Bad Pixel Correction
-
-![](/images/img2/BPC.png)
-
-sensor上可能有坏点存在（如上图中的白点），可以用中值滤波去除之。（参见《图像处理理论（二）》）
-
-Black Level Compensation、Green Balance和Bad Pixel Correction，一般统称为Raw Data Process。这些功能现在通常由图像sensor直接提供，一般不在ISP的处理范畴。
-
-## Demosaic
-
-由于RAW Data中的每个像素点只包含一种颜色，因此若要还原成彩色图片，就需要想办法补齐每个像素点缺失的色彩值。这个过程叫做Demosaic。
-
-Demosaic的算法一般如下图所示：
-
-![](/images/img2/Demosaic.png)
-
-简单来说就是各种插值算法。
-
-Demosaic处理后的图片才是真正的彩色图片，如下图所示：
-
-![](/images/img2/ISP_4.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/sPmPFdfONapA5Y53AI7hSA
-
-小话Demosaic（一）
-
-https://mp.weixin.qq.com/s/8gRzW4qsX6SBzKn8FJ-hJQ
-
-小话demosaic（二）

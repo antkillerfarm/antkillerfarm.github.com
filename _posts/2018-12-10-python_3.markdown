@@ -417,6 +417,6 @@ https://mp.weixin.qq.com/s/IznKbG3cEF6uxP0Fe_0oaQ
 
 印度小哥“神剑”：PDF提取表格so easy！
 
-https://mp.weixin.qq.com/s/1U3NqvlSvr6jL1e3yFxXgw
+https://mp.weixin.qq.com/s/J-H638ZzhB-GOXMeAQ9aww
 
-20多行 Python 代码优雅搞定PDF转换成图片
+Camelot: 三行代码提取PDF表格数据

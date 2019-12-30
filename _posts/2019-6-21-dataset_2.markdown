@@ -8,6 +8,22 @@ category: resource
 
 ## CV（续）
 
+https://mp.weixin.qq.com/s/Y__z-0nxAZNuZsZefCm4IA
+
+纽约大学联合谷歌大脑提出“COG”数据集，可提高系统的“视觉推理”能力
+
+https://mp.weixin.qq.com/s/0D8OQ6hF_70mNtadewyGVw
+
+全球最大的第一视角视频数据集开源，取自真实生活，还能提升厨艺
+
+https://mp.weixin.qq.com/s/NXI9Bp4xxbZCQqAddK1HgA
+
+Google开放最大目标检测数据集，还要为它举办AI挑战赛
+
+https://mp.weixin.qq.com/s/DsBoGT2Pl4tRwHX8REOqnw
+
+MURA：斯坦福ML团队开放的大型放射影像数据集与挑战赛
+
 https://mp.weixin.qq.com/s/_wQoiC6ogcLWSEUFUGHd5g
 
 Facebook，MIT等发布大规模卫星图像理解数据挑战赛DeepGlobe 2018

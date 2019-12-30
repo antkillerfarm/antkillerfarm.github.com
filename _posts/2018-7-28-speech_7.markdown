@@ -330,7 +330,7 @@ https://mp.weixin.qq.com/s/CjWNZf225OELIBoWRAbakg
 
 全面了解什么是语音交互
 
-# NLP参考资源+
+# NLP参考资源
 
 https://mp.weixin.qq.com/s/foknrQWnBxc4b0bpkFKSdQ
 
@@ -351,15 +351,3 @@ https://mp.weixin.qq.com/s/2QQ_lWUCExvdiXn2wJJeRQ
 https://mp.weixin.qq.com/s/9GuyWUZ_qCH5Q_rin1yQwg
 
 地理文本处理技术在高德的演进(下)
-
-https://zhuanlan.zhihu.com/p/94768011
-
-流言止于“智”者：网络虚假信息的特征与检测
-
-https://mp.weixin.qq.com/s/ucFtWopoErtUCYDTLv2kFg
-
-一文了解Text-to-SQL
-
-https://mp.weixin.qq.com/s/T2Nv7dQvZR6sVht1LfKSlw
-
-NLP技术在微博feed流中的应用

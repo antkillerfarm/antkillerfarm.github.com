@@ -4,6 +4,50 @@ title:  图像处理理论（十一）——CV/CG参考资源
 category: graphics 
 ---
 
+# 模板匹配
+
+https://blog.csdn.net/liyuanbhu/article/details/49837661
+
+OpenCV 学习笔记（模板匹配）
+
+https://blog.csdn.net/xxboy61/article/details/38319757
+
+OpenCV实现之模板匹配(Template Matching)
+
+# Superpixel
+
+论文：
+
+《Superpixels: An Evaluation of the State-of-the-Art》
+
+超像素最直观的解释，便是把一些具有相似特性的像素“聚合”起来，形成一个更具有代表性的大“元素”。
+
+而这个新的元素，将作为其他图像处理算法的基本单位。
+
+一来大大降低了维度；二来可以剔除一些异常像素点。
+
+至于根据什么特性把一个个像素点聚集起来，可以是颜色、纹理、类别等。
+
+![](/images/img3/superpixel.jpg)
+
+由于Superpixel的粒度在pixel和segmentation之间，因此又被称为over segmentation。
+
+三维的Superpixel，也被称作Supervoxel。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/50996404
+
+超像素、语义分割、实例分割、全景分割 傻傻分不清？
+
+https://www.zhihu.com/question/27623988
+
+超像素(Superpixel)的大致原理以及State-of-the-art？
+
+https://zhuanlan.zhihu.com/p/41874735
+
+龙生龙，凤生凤，SLIC生超像素
+
 # CV/CG参考资源
 
 https://github.com/gzr2017/ImageProcessing100Wen
@@ -173,15 +217,3 @@ MCTS的Simulation也是有讲究的。
 ![](/images/img3/MCTS_3.png)
 
 **第三次迭代**：假设选择了一个行为进入白色五角形节点状态，将该节点录入搜索树，模拟一次完整的Episode，结果显示黑方获胜，此时更新新录入节点的状态价值为1/1，同时更新其上级节点的状态价值，这里需要更新当前状态的节点价值为2/3，表明在当前状态下已经模拟了3次对弈，黑方获胜2次。
-
-随着迭代次数的增加，在搜索树里录入的节点开始增多，树内每一个节点代表的状态其价值数据也越来越丰富。在搜索树内依据$$\epsilon$$-greedy策略会使得当个体出于当前状态（圆形节点）时更容易做出到达图中五角形节点代表的状态的行为。
-
-![](/images/img3/MCTS_4.png)
-
-**第四次迭代**：当个体位于当前（圆形节点）状态时，树内策略使其更容易进入左侧的蓝色圆形节点代表的状态，此时录入一个新的节点（五角形节点），模拟完Episode提示黑方失败，更新该节点以及其父节点的状态价值。
-
-![](/images/img3/MCTS_5.png)
-
-**第五次迭代**：更新后的策略使得个体在当前状态时仍然有较大几率进入其左侧圆形节点表示的状态，在该节点，个体避免了进入刚才失败的那次节点，录入了一个新节点，基于模拟策略完成一个完整Episode，黑方获得了胜利，同样的更新搜索树内相关节点代表的状态价值。
-
-如此反复，随着迭代次数的增加，当个体处于当前状态时，其搜索树将越来越深，那些能够引导个体获胜的搜索树内的节点将会被充分的探索，其节点代表的状态价值也越来越有说服力；同时个体也忽略了那些结果不好的一些节点（上图中当前状态右下方价值估计为0/1的节点）。需要注意的是，仍然要对这部分节点进行一定程度的探索，以确保这些节点不会被完全忽视。

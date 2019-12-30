@@ -168,6 +168,10 @@ https://mp.weixin.qq.com/s/U2r4qDLh4WZFgAIoF_SRPg
 
 金融客服AI新玩法：语言学运用、LSTM+DSSM算法、多模态情感交互
 
+https://mp.weixin.qq.com/s/HMhvcAYRatN0n5EiiNVoXQ
+
+详解深度语义匹配模型DSSM
+
 ## CDSSM
 
 《Learning semantic representations using convolutional neural networks for web search》

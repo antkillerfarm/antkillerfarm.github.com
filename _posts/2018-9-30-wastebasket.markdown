@@ -310,6 +310,10 @@ https://mp.weixin.qq.com/s/vJDY58Qi_-VhVMHOjGSo8w
 
 伦敦大学惊现数学神人！创造最完美打水漂方程，一块石头破吉尼斯世界纪录！看完跪了...
 
+https://mp.weixin.qq.com/s/yghERug4kqRNxL9lDsM_vw
+
+飞机飞行原理3D动态图，形象生动解析飞行原理
+
 ## Bélády's Algorithm
 
 Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。
