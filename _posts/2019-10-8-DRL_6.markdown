@@ -6,8 +6,40 @@ category: DRL
 
 # AlphaGo
 
-## Leela Zero（续）
+### Representation Network（续）
 
+上文已经指出Model-based方法的困难在于：有的时候Model是很难刻画的，而环境本身也许并不如模拟器那么纯粹、简单。
+
+一个很自然的思路就是：既然NN能表示Policy和Value，那么能不能表示Model呢？
+
+
+
+![](/images/img3/MuZero_2.png)
+
+### 参考
+
+https://mp.weixin.qq.com/s/BLQF8WNsIe4a_rDeGWo_Vg
+
+通用AlphaGo诞生？DeepMind的MuZero在多种棋类游戏中超越人类
+
+https://www.zhihu.com/question/356976342
+
+如何评价DeepMind新提出的MuZero算法？
+
+## Leela Zero
+
+Leela Zero是比利时人Gian-Carlo Pascutto开源的围棋AI。它的算法与AlphaGo Zero相同。而训练采用GTP协议，集合全球算力，进行分布式训练。
+
+官网：
+
+http://zero.sjeng.org/
+
+代码：
+
+https://github.com/gcp/leela-zero
+
+>十多年前，当我还是一个中二青年的时候，就幻想有朝一日能够拿围棋世界冠军。当然，就算再中二，我自己也明白靠实力那是不可能的，当时做梦的法宝是制造一个AI，然后碾压一下所谓的国手。   
+>按照当时(2000年前后)人们的预计，这个AI在2030年之前，都不可能造出来，然而，最终的结果实际上只花了一半左右的时间。   
 >再之后，随着AI围棋的平民化，我的中二梦终于也有人将之付诸实现了：   
 >https://mp.weixin.qq.com/s/npt2zZrKwPnNdY-hsa2RjQ   
 >AI再乱围棋圈：“食言之战”柯洁落败；首例素人作弊引风波
@@ -304,47 +336,3 @@ Paper list of multi-agent reinforcement learning (MARL)
 https://blog.csdn.net/qq_38163755/article/details/98057751
 
 Game Theory and Multi-agent Reinforcement Learning笔记1
-
-https://blog.csdn.net/qq_38163755/article/details/98223987
-
-Game Theory and Multi-agent Reinforcement Learning笔记2
-
-https://mp.weixin.qq.com/s/bQx-ydEAfijgK1Ii5ilPFQ
-
-UCL汪军团队新方法提高群体智能，解决大规模AI合作竞争
-
-https://mp.weixin.qq.com/s/4lj_G2z0Lbfk5mOgvxLC6w
-
-对抗式协作：一个框架解决多个无监督学习视觉问题
-
-https://mp.weixin.qq.com/s/0v57oHMEDcJuUivs8D5pnQ
-
-善于单挑却难以协作，构建多智能体AI系统为何如此之难？
-
-https://mp.weixin.qq.com/s/tME5GsKEXveVcgWb-Zbx_A
-
-乔明达ICML 2018论文提出协作学习的鲁棒性方法
-
-https://mp.weixin.qq.com/s/0Xuxr7CXqsxrssW2I6NCBQ
-
-通用智能化：BAIR简述人类-机器人协作新技术
-
-https://mp.weixin.qq.com/s/GNbCu1lbOmwJDCU3vgMbtQ
-
-OpenAI发布多智能体深度强化学习新算法LOLA
-
-https://mp.weixin.qq.com/s/5Go20MyBxdVI1r5SkwA6lw
-
-面向星际争霸：DeepMind提出多智能体强化学习新方法
-
-https://mp.weixin.qq.com/s/TlcVxjhHXXGSpIvptC4H8g
-
-使用Gym和CNN构建多智能体自动驾驶马里奥赛车
-
-https://mp.weixin.qq.com/s/zRcq1LMtK72Cl4T3877tgQ
-
-牛津教授吐槽DeepMind心智神经网络，还推荐了这些多智能体学习论文
-
-https://mp.weixin.qq.com/s/qU6XD45RGeMI-T7GI0dg2Q
-
-OpenAI竞争性自我对抗训练：简单环境下获得复杂的智能体

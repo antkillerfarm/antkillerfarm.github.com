@@ -294,3 +294,29 @@ https://mp.weixin.qq.com/s/uMj3JEhgyYw4CaIhP1-GTQ
 https://mp.weixin.qq.com/s/KFzJAxL_xvrrjhubd7zH-Q
 
 Facebook为何放弃ZooKeeper转用自研配置管理系统？
+
+# DRL参考资源+
+
+https://mp.weixin.qq.com/s/oyWyb58l4ztqIEyrk0g01A
+
+强化学习在美团“猜你喜欢”的实践
+
+https://zhuanlan.zhihu.com/p/48186354
+
+robot浅谈
+
+https://mp.weixin.qq.com/s/f-rmdWq3kJUJGhuPwU8JtQ
+
+深度策略梯度算法是真正的策略梯度算法吗？
+
+https://zhuanlan.zhihu.com/p/51202503
+
+强化学习在视觉上的应用（RL for computer Vision）
+
+https://mp.weixin.qq.com/s/Dq4HsRg05bVMjvrsrxfOOQ
+
+从这篇YouTube论文，剖析强化学习在工业级场景推荐系统中的应用
+
+https://mp.weixin.qq.com/s/cyaQt-SO7sgG49kuUyPJbQ
+
+旷视开源的深度强化学习绘画智能体论文解读

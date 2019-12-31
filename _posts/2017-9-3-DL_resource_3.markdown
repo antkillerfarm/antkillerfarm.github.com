@@ -268,7 +268,11 @@ https://mp.weixin.qq.com/s/C9BmYe0iK4dRtrNFmhSbAg
 
 https://mp.weixin.qq.com/s/8J6xar1ppIOXUlcwFtAdWA
 
-合肥高新杯心电人机智能大赛 — 冠军比赛攻略
+合肥高新杯心电人机智能大赛—冠军比赛攻略
+
+https://mp.weixin.qq.com/s/qmQnutBqv-nzP7UgILbCMg
+
+互联网虚假新闻检测挑战赛（冠军）方案分享
 
 ## 连续学习
 

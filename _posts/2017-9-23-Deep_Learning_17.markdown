@@ -238,6 +238,10 @@ https://mp.weixin.qq.com/s/wtHrHFoT2E_HLHukPdJUig
 
 OpenAI科学家一文详解自监督学习
 
+https://mp.weixin.qq.com/s/fy1gUElWVWcOVvzv6fGmdg
+
+谷歌大脑推出视觉领域任务自适应基准：VTAB
+
 # 图像检索
 
 ## 传统方法

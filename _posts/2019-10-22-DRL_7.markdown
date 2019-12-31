@@ -6,6 +6,50 @@ category: DRL
 
 # MARL（续）
 
+https://blog.csdn.net/qq_38163755/article/details/98223987
+
+Game Theory and Multi-agent Reinforcement Learning笔记2
+
+https://mp.weixin.qq.com/s/bQx-ydEAfijgK1Ii5ilPFQ
+
+UCL汪军团队新方法提高群体智能，解决大规模AI合作竞争
+
+https://mp.weixin.qq.com/s/4lj_G2z0Lbfk5mOgvxLC6w
+
+对抗式协作：一个框架解决多个无监督学习视觉问题
+
+https://mp.weixin.qq.com/s/0v57oHMEDcJuUivs8D5pnQ
+
+善于单挑却难以协作，构建多智能体AI系统为何如此之难？
+
+https://mp.weixin.qq.com/s/tME5GsKEXveVcgWb-Zbx_A
+
+乔明达ICML 2018论文提出协作学习的鲁棒性方法
+
+https://mp.weixin.qq.com/s/0Xuxr7CXqsxrssW2I6NCBQ
+
+通用智能化：BAIR简述人类-机器人协作新技术
+
+https://mp.weixin.qq.com/s/GNbCu1lbOmwJDCU3vgMbtQ
+
+OpenAI发布多智能体深度强化学习新算法LOLA
+
+https://mp.weixin.qq.com/s/5Go20MyBxdVI1r5SkwA6lw
+
+面向星际争霸：DeepMind提出多智能体强化学习新方法
+
+https://mp.weixin.qq.com/s/TlcVxjhHXXGSpIvptC4H8g
+
+使用Gym和CNN构建多智能体自动驾驶马里奥赛车
+
+https://mp.weixin.qq.com/s/zRcq1LMtK72Cl4T3877tgQ
+
+牛津教授吐槽DeepMind心智神经网络，还推荐了这些多智能体学习论文
+
+https://mp.weixin.qq.com/s/qU6XD45RGeMI-T7GI0dg2Q
+
+OpenAI竞争性自我对抗训练：简单环境下获得复杂的智能体
+
 https://mp.weixin.qq.com/s/cUFSaHWGKhyZhEvRdX09hw
 
 谷歌大脑QT-Opt算法，机器人探囊取物成功率96%
@@ -323,59 +367,3 @@ https://mp.weixin.qq.com/s/fodjmmh_jJMh4hD3m2OrLg
 https://mp.weixin.qq.com/s/6HVSh7_9Akmf6OE8PGNy6Q
 
 怎样让AI完成人类搞不定的任务？OpenAI提出迭代扩增法给AI设目标
-
-https://mp.weixin.qq.com/s/JpZimrHALjuc-H9WF8sPZg
-
-智能体只想看电视？谷歌新型好奇心方法让智能体离开电视继续探索
-
-https://mp.weixin.qq.com/s/dic_ssebe32L30pAUxlP6w
-
-谷歌AI-强化学习中的好奇和拖延
-
-https://mp.weixin.qq.com/s/tieGV_tDWkVVW2YFes4AqA
-
-学习何时做分类决策，深度好奇提出强化学习模型Jumper
-
-https://mp.weixin.qq.com/s/THgo4YzhUN2PUkyI5sSnpw
-
-开源啦：连DeepMind也捉急的游戏，OpenAI给你攻破第一关的高分算法
-
-https://mp.weixin.qq.com/s/loH6M0_U1DVrod0Drkl4eg
-
-深度强化学习教机器人自己穿衣服！
-
-https://mp.weixin.qq.com/s/VqPPQnH22Y-XeojNEZn3YQ
-
-CoRL 2018最佳系统论文：如此鸡贼的机器手，确定不是人在控制？
-
-https://mp.weixin.qq.com/s/eEQhwV1cA4nEgEBcOKDenA
-
-将逆向课程生成用于强化学习：伯克利新研究让智能体掌握全新任务
-
-https://mp.weixin.qq.com/s/cO1VlYGwdRBAbPs7IgvcAA
-
-超越传统强化学习的价值分布方法
-
-https://mp.weixin.qq.com/s/oyWyb58l4ztqIEyrk0g01A
-
-强化学习在美团“猜你喜欢”的实践
-
-https://zhuanlan.zhihu.com/p/48186354
-
-robot浅谈
-
-https://mp.weixin.qq.com/s/f-rmdWq3kJUJGhuPwU8JtQ
-
-深度策略梯度算法是真正的策略梯度算法吗？
-
-https://zhuanlan.zhihu.com/p/51202503
-
-强化学习在视觉上的应用（RL for computer Vision）
-
-https://mp.weixin.qq.com/s/Dq4HsRg05bVMjvrsrxfOOQ
-
-从这篇YouTube论文，剖析强化学习在工业级场景推荐系统中的应用
-
-https://mp.weixin.qq.com/s/cyaQt-SO7sgG49kuUyPJbQ
-
-旷视开源的深度强化学习绘画智能体论文解读
