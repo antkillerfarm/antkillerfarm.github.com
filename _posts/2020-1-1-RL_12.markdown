@@ -1,0 +1,240 @@
+---
+layout: post
+title:  强化学习（十二）——Exploration & Exploitation
+category: RL 
+---
+
+# Integrating Learning and Planning
+
+## Game Tree
+
+上面围棋示例中的搜索树，在博弈论中，也叫做博弈树（Game Tree）。
+
+### Minimax
+
+极小化极大算法（Minimax）是零和游戏常见的策略。通俗的说法就是：选择对自己最有利，而对对手最不利的动作。
+
+### Alpha Beta pruning algorithm
+
+在博弈过程中，我们不仅要思考自己的最优走法，还要思考对手的最优走法。而且这个过程是可以递归下去的，直到终局为止。
+
+这样就会形成一整套如下所示的策略序列（以围棋为例，黑棋先下）：
+
+黑最优->白最优->黑最优->白最优->...
+
+然后轮到白棋下子：
+
+<p><font color="red">黑最优</font>->白最优->黑最优->白最优->...</p>
+
+这里的红色字体表示的是已经发生的事件。
+
+可以看的出来，在零和游戏中，我们只需要考虑一方的Game Tree就行了，另一方的Game Tree只是一个镜像而已。这样的话，**搜索空间直接就只有原来的一半了**。
+
+能不能进一步裁剪呢？这里介绍一下Alpha Beta pruning algorithm。
+
+详细的步骤参见：
+
+http://web.cs.ucla.edu/~rosen/161/notes/alphabeta.html
+
+Minimax with Alpha Beta Pruning
+
+这里只提一下要点：
+
+- $$\alpha$$是指the maximum lower bound of possible solutions；$$\beta$$是指the minimum upper bound of possible solutions。
+
+- 我方下棋会寻找使我方获得最大值的策略，因此叫做MAX结点；敌方下棋显然会寻找能使我方收益最小的策略，因此叫做MIN结点。从Game Tree的角度来看，就是：一层MAX结点->一层MIN结点->一层MAX结点->一层MIN结点->...
+
+- 初始状态：根节点：$$\alpha=-\infty,\beta=\infty$$，叶子结点：包含value值。
+
+- 深度优先遍历Game Tree，利用MAX结点的值，更新父结点的$$\beta$$值，利用MIN结点的值，更新父结点的$$\alpha$$值。
+
+- 一旦出现$$\alpha > \beta$$的情况，则说明遇到了异常分支，直接剪去该分支即可。
+
+### 参考
+
+https://zhuanlan.zhihu.com/p/55750669
+
+博弈树与α-β剪枝
+
+https://segmentfault.com/a/1190000013527949
+
+Minimax和Alpha-beta剪枝算法简介，以及以此实现的井字棋游戏（Tic-tac-toe）
+
+https://materiaalit.github.io/intro-to-ai-17/part2/
+
+Games
+
+https://mp.weixin.qq.com/s/6fd8oxnahJ0EoocRV4q8Bg
+
+一看就懂的Alpha-Beta剪枝算法详解
+
+## MCTS和MC的区别
+
+![](/images/img3/MCTS.jpg)
+
+上图是一局围棋的Game Tree的局部。最下面的叶子结点给出了黑棋赢棋的百分比。现在的问题是，黑棋该如何走呢？（假设根节点为当前状态）
+
+如果是用蒙特卡洛方法，趋近的会是其下所有胜率的平均值。例如经过蒙特卡洛模拟，会发现b1后续的胜率是49% = (50+48)/2，而b2后续的胜率是55% = (62+45+58)/3。
+
+于是蒙特卡洛方法说应该走b2，因为55%比49%的胜率高。但这是错误的。因为如果白棋够聪明，会在黑棋走b1的时候回应以w2（尽量降低黑棋的胜率），在黑棋走b2的时候回应以w4（尽量降低黑棋的胜率）。
+
+如果用蒙特卡洛方法做上一百万次模拟，b1和b2的胜率仍然会固定在49%和55%，不会进步，永远错误。所以它的结果存在偏差（Bias），当然，也有方差（Variance）。
+
+而蒙特卡洛树搜索在一段时间模拟后，b1和b2的胜率就会向48%和45%收敛，从而给出正确的答案。所以它的结果不存在偏差（Bias），只存在方差（Variance）。但是，对于复杂的局面，它仍然有可能长期陷入陷阱，直到很久之后才开始收敛到正确答案。
+
+## Dyna-2
+
+如果我们把基于模拟的前向搜索应用到Dyna算法中来，就变成了Dyna-2算法。
+
+使用该算法的个体维护了两套特征权重：
+
+- 一套反映了个体的长期记忆，该记忆是从真实经历中使用TD学习得到，它反映了个体对于某一特定强化学习问题的普遍性的知识、经验；
+
+- 另一套反映了个体的短期记忆，该记忆从基于模拟经历中使用TD搜索得到，它反映了个体对于某一特定强化学习在特定条件（比如某一Episode、某一状态下）下的特定的、局部适用的知识、经验。
+
+# Exploration & Exploitation
+
+几个基本的探索方法：
+
+- **朴素探索(Naive Exploration)**: 在贪婪搜索的基础上增加一个$$\epsilon$$以实现朴素探索；
+
+- **乐观初始估计(Optimistic Initialization)**: 优先选择当前被认为是最高价值的行为，除非新信息的获取推翻了该行为具有最高价值这一认知；
+
+- **不确定优先(Optimism in the Face of Uncertainty)**: 优先尝试不确定价值的行为；
+
+- **概率匹配（Probability Matching)**: 根据当前估计的概率分布采样行为；
+
+- **信息状态搜索(Information State Search)**: 将已探索的信息作为状态的一部分联合个体的状态组成新的状态，以新状态为基础进行前向探索。
+
+根据搜索过程中使用的数据结构，可以将搜索分为：
+
+- **依据状态行为空间的探索(State-Action Exploration)**。针对每一个当前的状态，以一定的算法尝试之前该状态下没有尝试过的行为。
+
+- **参数化搜索（Parameter Exploration)**。直接针对策略的函数近似，此时策略用各种形式的参数表达，探索即表现为尝试不同的参数设置。
+
+Parameter Exploration的优点：得到基于某一策略的一段持续性的行为。
+
+缺点：对个体曾经到过的状态空间毫无记忆，也就是个体也许会进入一个之前曾经进入过的状态而并不知道其曾到过该状态，不能利用已经到过这个状态这个信息。
+
+## UCB
+
+$$\epsilon$$-greedy和softmax算法的缺陷：
+
+只关心回报是多少，并不关心每个臂被拉下了多少次，这就意味着，这些算法不再会选中初始回报特别低的臂，即使这个臂的回报只测试了一次。
+
+UCB（The Upper Confidence Bound Algorithm）算法将会不仅仅关注于回报，同样会关注每个臂被探索的次数。
+
+为了进一步刻画每个臂被探索的次数和回报之间的关系，UCB引入了**置信区间**的概念：
+
+- 每个item的回报均值都有个置信区间，随着试验次数增加，置信区间会变窄（逐渐确定了到底回报丰厚还是可怜）。
+- 每次选择前，都根据已经试验的结果重新估计每个item的均值及置信区间。
+- 选择置信区间上限最大的那个item。
+
+显然：
+
+- 如果item置信区间很宽（被选次数很少，还不确定），那么它会倾向于被多次选择，这个是算法冒风险的部分；
+- 如果item置信区间很窄（备选次数很多，比较确定其好坏了），那么均值大的倾向于被多次选择，这个是算法保守稳妥的部分；
+
+UCB是一种乐观的算法，选择置信区间上界排序，如果是悲观保守的做法，是选择置信区间下界排序。
+
+置信区间的度量有很多方式，由此产生了很多UCB的变种算法。最常用的UCB1算法，采用了如下度量方式：
+
+$$I_i=\bar{x}_i+\sqrt{2\frac{\log t}{n_i}}$$
+
+其中$$x_i$$是第i个臂的奖励均值，$$n_i$$是臂i当前累积被选择的次数。
+
+UCB还可以应用到MCTS中，这就是UCT（Upper Confidence Bound Apply to Tree）算法了。即UCT=MCTS+UCB。
+
+参考：
+
+https://www.cnblogs.com/Ryan0v0/p/11366578.html
+
+多臂赌博机问题(MAB)的UCB算法介绍
+
+https://blog.csdn.net/yw8355507/article/details/48579635
+
+UCB算法
+
+https://blog.csdn.net/LegenDavid/article/details/71082124
+
+LinUCB算法
+
+https://zhuanlan.zhihu.com/p/32356077
+
+Multi-Armed Bandit: UCB (Upper Bound Confidence)
+
+## 一些MAB变种
+
+我们前面的讨论默认了环境是不会变化的。而一些MAB问题，这个假设可能不成立，这就好比如果一位玩家发现某个机器的$$p_i$$很高，一直摇之后赌场可能人为降低这台机器吐钱的概率。在这种情况下，MAB问题的环境就是随着时间/玩家的行为会发生变化。
+
+如果概率事先设定好，并且在玩家开始有动作之后也无法更改，我们叫做oblivious adversary setting；如果这个对手在玩家有动作之后还能随时更改自己的设定，那就叫做adaptive adversary setting。
+
+另外一类变种，叫做contextual MAB(cMAB)。几乎所有在线广告推送（dynamic ad display）都可以看成是cMAB问题。在这类问题中，每个arm的回报会和当前时段出现的顾客的特征（也就是这里说的context）有关。
+
+参考：
+
+https://mp.weixin.qq.com/s/8Ks1uayLw6nfKs4-boiMpA
+
+多任务学习时转角遇到Bandit老虎机
+
+# Inverse Reinforcement Learning
+
+逆强化学习问题定义：
+
+- 已知：
+
+智能体在变化的环境中的行为
+
+（optional）智能体传感器的数据
+
+（optional）环境的模型
+
+- 求：
+
+最优化的Reward function
+
+逆强化学习研究意义：
+
+- 对动物人类行为用强化学习建模（生物学、计量经济学...）模仿学习。
+
+- reward function在强化学习里面非常非常重要，是对行为的抽象精简的描述，因此IRL (Inverse Reinforcement Learning)可能是一种很高效的模仿学习范式。
+
+通俗的说法就是：**我们用优化控制或强化学习得到的策略能用来解释人类的行为吗？**
+
+比如让一个人去拿桌子上的一个橘子，那手的轨迹一定不是一条从起点到目标的直线，而是有一些弯曲的轨迹，也就是带有偏差的较优行为，但是这种偏差其实并不重要，只要最后拿到橘子就行了，也就是说：
+
+1.有过程中一些偏差是不重要的，但另一些偏差就比较重要了（如最后没拿到）。
+
+2.每次拿橘子的动作也是不一样的，因此人的动作带有一定的随机性。
+
+3.我们可以认为人类行为轨迹分布是以最优策略为峰的随机分布。
+
+![](/images/img3/GAN_vs_IRL.png)
+
+参考：
+
+https://zhuanlan.zhihu.com/p/61674994
+
+Algorithms for Inverse Reinforcement Learning
+
+https://zhuanlan.zhihu.com/p/32502503
+
+CS 294：IRL
+
+# 模仿学习
+
+https://zhuanlan.zhihu.com/p/27935902
+
+机器人学习Robot Learning之模仿学习Imitation Learning的发展
+
+https://zhuanlan.zhihu.com/p/25688750
+
+模仿学习（Imitation Learning）完全介绍
+
+https://mp.weixin.qq.com/s/naq73D27vsCOUBperKto8A
+
+从监督式到DAgger，综述论文描绘模仿学习全貌
+
+https://mp.weixin.qq.com/s/LNNqp2KsEAljG26hY43mUw
+
+ICML2018 模仿学习教程

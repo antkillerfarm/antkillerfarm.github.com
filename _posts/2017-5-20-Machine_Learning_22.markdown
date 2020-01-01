@@ -8,6 +8,8 @@ category: ML
 
 ## Triplet Loss（续）
 
+**triplet loss的目的就是通过学习（即上图中的Learning），让$$x^a$$和$$x^p$$特征表达之间的距离尽可能小，而$$x^a$$和$$x^n$$的特征表达之间的距离尽可能大。**
+
 它的公式化的表示就是：
 
 $$\|f(x_i^a)-f(x_i^p)\|_2^2 + \alpha < \|f(x_i^a)-f(x_i^n)\|_2^2$$
@@ -193,26 +195,6 @@ https://mp.weixin.qq.com/s/AmXF0xA_T-ZjjnOt4XRgRw
 https://www.zhihu.com/question/268105631
 
 神经网络中，设计loss function有哪些技巧?
-
-https://mp.weixin.qq.com/s/7cr6ptZucXzsZauItcZehw
-
-使用一个特别设计的损失来处理类别不均衡的数据集
-
-https://www.zhihu.com/question/264892967
-
-深度学习中loss和accuracy的关系?
-
-https://zhuanlan.zhihu.com/p/82199561
-
-深度度量学习中的损失函数
-
-https://mp.weixin.qq.com/s/CbORYhJQn27J0G4G6XpODw
-
-用于弱监督图像语义分割的新型损失函数
-
-https://mp.weixin.qq.com/s/Yo68YnMMvy5FXkCjBLCJuw
-
-常见的损失函数
 
 # 机器学习分类器性能指标
 

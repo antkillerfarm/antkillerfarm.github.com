@@ -94,9 +94,9 @@ https://www.zhihu.com/question/298517764
 
 目前有比Topic Model更先进的聚类方式么？比如针对短文本的、加入情感分析的？
 
-# Earth mover's distance
+# EMD
 
-推土机距离（EMD）是两个概率分布之间的距离度量的一种方式。如果将区间D的概率分布比作沙堆P，那么$$P_r$$和$$P_\theta$$之间的EMD距离，就是推土机将$$P_r$$改造为$$P_\theta$$所需要的工作量。
+推土机距离（Earth mover's distance）是两个概率分布之间的距离度量的一种方式。如果将区间D的概率分布比作沙堆P，那么$$P_r$$和$$P_\theta$$之间的EMD距离，就是推土机将$$P_r$$改造为$$P_\theta$$所需要的工作量。
 
 ![](/images/article/earth_move.png)
 

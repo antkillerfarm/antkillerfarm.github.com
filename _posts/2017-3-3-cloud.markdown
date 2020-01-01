@@ -286,3 +286,7 @@ Spark MLlib并行训练原理
 https://mp.weixin.qq.com/s/S1Gr18If9Htq-kE89cCa9w
 
 Uber最强机器学习平台是如何使用Spark模型的？
+
+https://mp.weixin.qq.com/s/vTHRSFg15SDYL3qH3dGCvA
+
+关于Spark NLP学习，你需要掌握的LightPipeline

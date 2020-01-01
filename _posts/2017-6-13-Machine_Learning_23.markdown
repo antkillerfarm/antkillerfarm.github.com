@@ -28,24 +28,6 @@ https://mp.weixin.qq.com/s/ubpRPQ7-1nvY5CzICWi1Cg
 
 似乎没区别，但你混淆过验证集和测试集吗？
 
-# 时间序列分析
-
-https://mp.weixin.qq.com/s/FRSe1mJTvk9U66ta-r9iCQ
-
-手把手教你用Python玩转时序数据，从采样、预测到聚类
-
-https://mp.weixin.qq.com/s/Q82YzANWDMkKWm5k2XmPkA
-
-严谨解决5种机器学习算法在预测股价的应用
-
-https://mp.weixin.qq.com/s/iKM6zMSm1F2icjy79F9Hcg
-
-季节性的分析才不简单，小心不要在随机数据中也分析出季节性
-
-https://mp.weixin.qq.com/s/avLWHXj2JkjXOomCipj8kA
-
-使用希尔伯特-黄变换（HHT）进行时间序列分析
-
 # Optimizer
 
 在《机器学习（一）》中，我们已经指出梯度下降是解决凸优化问题的一般方法。而如何更有效率的梯度下降，就是本节中Optimizer的责任了。

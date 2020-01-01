@@ -232,6 +232,10 @@ https://blog.csdn.net/LiGuang923/article/details/85470289
 
 图像检索与降维（二）：NetVLAD
 
+https://zhuanlan.zhihu.com/p/96718053
+
+从VLAD到NetVLAD，再到NeXtVlad
+
 # 人脸检测/识别
 
 ## Cascade CNN

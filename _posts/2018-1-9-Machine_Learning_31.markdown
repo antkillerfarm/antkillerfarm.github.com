@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十一）——Linear Discriminant Analysis, 强连通分量算法, 度量学习, 压缩感知
+title:  机器学习（三十一）——Linear Discriminant Analysis, 度量学习, 压缩感知
 category: ML 
 ---
 
@@ -163,27 +163,11 @@ https://zhuanlan.zhihu.com/p/84660707
 
 线性判别分析
 
-# 强连通分量算法
-
-http://ishare.iask.sina.com.cn/f/34626295.html
-
-矩阵不可约的充要条件
-
-http://www.cnblogs.com/saltless/archive/2010/11/08/1871430.html
-
-求强连通分量的Tarjan算法
-
-http://blog.csdn.net/dm_vincent/article/details/8554244
-
-求解强连通分量算法之---Kosaraju算法
-
-http://www.cnblogs.com/luweiseu/archive/2012/07/14/2591370.html
-
-强连通分支算法--Kosaraju算法、Tarjan算法和Gabow算法
-
 # 度量学习
 
-度量学习（Metric Learning）是机器学习里面的一个研究方向，主要是用来学习一个距离或者用来降维，比如PCA、NCA等等都属于度量学习算法。
+度量学习（Metric Learning）是机器学习里面的一个研究方向，主要是用来度量数据间距离。
+
+一般来说，对于可度量的数据，我们可以直接通过欧式距离，cosine等方法来做。但对于更广泛的数据我们就很难这样操作，如测量一个视频和一首音乐的距离。
 
 参考：
 
@@ -198,6 +182,10 @@ https://mp.weixin.qq.com/s/mvbyddpgxBFQSxC1zZZmFw
 https://mp.weixin.qq.com/s/iuOmxW0OAhSA7xSoIIn1dw
 
 鲁继文：面向视觉内容理解的深度度量学习
+
+https://zhuanlan.zhihu.com/p/100553403
+
+Deep Metric Learning及其形式
 
 # 压缩感知
 

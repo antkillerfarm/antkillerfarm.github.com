@@ -337,37 +337,3 @@ https://zhuanlan.zhihu.com/p/82895086
 http://blog.chinaunix.net/uid-7426920-id-2627743.html
 
 ANSI和K&R两种函数定义风格
-
-# DRL参考资源
-
-https://mp.weixin.qq.com/s/JpZimrHALjuc-H9WF8sPZg
-
-智能体只想看电视？谷歌新型好奇心方法让智能体离开电视继续探索
-
-https://mp.weixin.qq.com/s/dic_ssebe32L30pAUxlP6w
-
-谷歌AI-强化学习中的好奇和拖延
-
-https://mp.weixin.qq.com/s/tieGV_tDWkVVW2YFes4AqA
-
-学习何时做分类决策，深度好奇提出强化学习模型Jumper
-
-https://mp.weixin.qq.com/s/THgo4YzhUN2PUkyI5sSnpw
-
-开源啦：连DeepMind也捉急的游戏，OpenAI给你攻破第一关的高分算法
-
-https://mp.weixin.qq.com/s/loH6M0_U1DVrod0Drkl4eg
-
-深度强化学习教机器人自己穿衣服！
-
-https://mp.weixin.qq.com/s/VqPPQnH22Y-XeojNEZn3YQ
-
-CoRL 2018最佳系统论文：如此鸡贼的机器手，确定不是人在控制？
-
-https://mp.weixin.qq.com/s/eEQhwV1cA4nEgEBcOKDenA
-
-将逆向课程生成用于强化学习：伯克利新研究让智能体掌握全新任务
-
-https://mp.weixin.qq.com/s/cO1VlYGwdRBAbPs7IgvcAA
-
-超越传统强化学习的价值分布方法

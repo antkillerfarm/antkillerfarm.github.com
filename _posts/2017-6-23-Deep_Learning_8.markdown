@@ -286,6 +286,8 @@ https://zhuanlan.zhihu.com/p/55747295
 
 https://github.com/Nikasa1889/HistoryObjectRecognition/blob/master/HistoryOfObjectRecognition.pdf
 
+![](/images/img3/CNN.jpg)
+
 参考：
 
 https://mp.weixin.qq.com/s/K68CpueI4e4y7o1uZ28KMQ

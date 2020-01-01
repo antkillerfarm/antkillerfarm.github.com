@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十一）——Loss function详解
+title:  机器学习（二十一）——Loss function详解（1）
 category: ML 
 ---
 
@@ -222,6 +222,10 @@ https://mp.weixin.qq.com/s/rw-7-4_07TJ48Mq__HnYEg
 
 用Mixtape代替softmax，CMU提出新方法兼顾表达性和高效性
 
+https://zhuanlan.zhihu.com/p/97475133
+
+从Softmax到AMSoftmax
+
 ## Softmax loss
 
 通常我们使用的Softmax loss，实际上是由softmax和交叉熵(cross-entropy loss)loss组合而成，所以全称是softmax with cross-entropy loss。
@@ -274,5 +278,3 @@ Triplet loss通常是在个体级别的细粒度识别上使用，传统的分�
 如上图所示，triplet是一个三元组，这个三元组是这样构成的：从训练数据集中随机选一个样本，该样本称为Anchor，然后再随机选取一个和Anchor(记为$$x^a$$)属于同一类的样本和不同类的样本,这两个样本对应的称为Positive(记为$$x^p$$)和Negative(记为$$x^n$$)，由此构成一个（Anchor，Positive，Negative）三元组。
 
 针对每个样本$$x_i$$，训练一个参数共享或者不共享的网络，得到三个元素的特征表达，分别记为：$$f(x_i^a), f(x_i^p), f(x_i^n)$$。
-
-**triplet loss的目的就是通过学习（即上图中的Learning），让$$x^a$$和$$x^p$$特征表达之间的距离尽可能小，而$$x^a$$和$$x^n$$的特征表达之间的距离尽可能大。**

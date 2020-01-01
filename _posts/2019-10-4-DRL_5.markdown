@@ -276,6 +276,6 @@ MuZero在不具备任何底层动态知识的情况下，通过结合基于树�
 
 Representation Network的主要思想来自如下论文：
 
-《The Predictron: End-To-End Learning and Planning》
+1.《The Predictron: End-To-End Learning and Planning》
 
-《Value Prediction Network》
+2.《Value Prediction Network》

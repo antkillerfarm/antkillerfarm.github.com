@@ -46,6 +46,10 @@ https://www.zhihu.com/question/41252833
 
 如何通俗的解释交叉熵与相对熵?
 
+https://zhuanlan.zhihu.com/p/74075915
+
+交叉熵、相对熵（KL散度）、JS散度和Wasserstein距离（推土机距离）
+
 ## 焓
 
 焓（enthalpy）是一个和熵经常一起出现的概念。由于和信息论关系不大，这里仅作简要通俗的介绍，而非严格定义。

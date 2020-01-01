@@ -6,6 +6,8 @@ category: DL
 
 # Graph NN
 
+Graph Neural Networks是2019年以来比较热门的方向。然而由于没有大佬全面投入，相关研究比较零散，被人戏称paper survey比paper还多。。。囧
+
 ![](/images/img3/GNN.jpg)
 
 ## 教程
@@ -374,6 +376,10 @@ https://zhuanlan.zhihu.com/p/75307407
 
 图神经网络（Graph Neural Networks，GNN）综述
 
+https://mp.weixin.qq.com/s/rTnv7XOnIvRDGDdhbuoE9g
+
+深度图相似学习综述
+
 https://mp.weixin.qq.com/s/Pm1HiEQOBnbo_GQ_v6Y_zw
 
 腾讯提出自适应图卷积神经网络，接受不同图结构和规模的数据
@@ -389,15 +395,3 @@ https://mp.weixin.qq.com/s/6viSk0Ts_7eTfYrWYi_HDQ
 https://zhuanlan.zhihu.com/p/36117802
 
 《Learn to Represent Programs with Graphs》阅读笔记。这篇论文讲述了DL在程序代码纠错方面的应用。
-
-https://zhuanlan.zhihu.com/p/37278426
-
-Graph2Seq: Graph to Sequence Learning with Attention-based Neural Networks
-
-https://mp.weixin.qq.com/s/iQYVyo2PHuGbEsYgdIf_oQ
-
-DeepMind等机构提出“图网络”：面向关系推理
-
-https://mp.weixin.qq.com/s/TAccHagxXQ82lfE91Y6xWg
-
-CNN已老，GNN来了：重磅论文讲述深度学习的因果推理

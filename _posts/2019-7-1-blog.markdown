@@ -6,6 +6,8 @@ category: essay
 
 # Blog维护日志
 
+2020.1.1 文章数达到350篇。
+
 2019.11 添了一个National Taiwan University的follower。
 
 2019.10.9 将RL分类拆分为RL和DRL两类。
@@ -80,144 +82,72 @@ category: essay
 
 2014.12.23 围观大徐的blog有感，特在github上安家落户，废弃了原来的搜狐blog。
 
-# Integrating Learning and Planning
+# 模仿学习+
 
-## Monte-Carlo Search（续）
+https://mp.weixin.qq.com/s/f9vSgH1HQwGXBDb0UGHQyQ
 
-随着迭代次数的增加，在搜索树里录入的节点开始增多，树内每一个节点代表的状态其价值数据也越来越丰富。在搜索树内依据$$\epsilon$$-greedy策略会使得当个体出于当前状态（圆形节点）时更容易做出到达图中五角形节点代表的状态的行为。
+深度学习进阶之无人车行为克隆
 
-![](/images/img3/MCTS_4.png)
+https://mp.weixin.qq.com/s/To3pnx1hVq_4p7UnQVMw9A
 
-**第四次迭代**：当个体位于当前（圆形节点）状态时，树内策略使其更容易进入左侧的蓝色圆形节点代表的状态，此时录入一个新的节点（五角形节点），模拟完Episode提示黑方失败，更新该节点以及其父节点的状态价值。
+斯坦福大学&DeepMind联合提出机器人控制新方法，RL+IL端到端地学习视觉运动策略
 
-![](/images/img3/MCTS_5.png)
+https://mp.weixin.qq.com/s/O0Q1XoTA-7Yshr1ZqOZ90w
 
-**第五次迭代**：更新后的策略使得个体在当前状态时仍然有较大几率进入其左侧圆形节点表示的状态，在该节点，个体避免了进入刚才失败的那次节点，录入了一个新节点，基于模拟策略完成一个完整Episode，黑方获得了胜利，同样的更新搜索树内相关节点代表的状态价值。
+加州理工：什么是模仿学习, 这62页ppt带你了解进展
 
-如此反复，随着迭代次数的增加，当个体处于当前状态时，其搜索树将越来越深，那些能够引导个体获胜的搜索树内的节点将会被充分的探索，其节点代表的状态价值也越来越有说服力；同时个体也忽略了那些结果不好的一些节点（上图中当前状态右下方价值估计为0/1的节点）。需要注意的是，仍然要对这部分节点进行一定程度的探索，以确保这些节点不会被完全忽视。
+# RL与神经科学
 
-![](/images/img3/MCTS_6.png)
+Pavlov Model（1901）
 
-总结一下，MCTS可分为如下步骤：
+Rescorla-Wagner Model（1972）
 
-- Selection。从根节点状态出发，迭代地选择最优策略，直到碰到一个叶子节点。叶子节点是搜索树中存在至少一个子节点从未被访问过的状态节点。
-
-- Expansion。对叶子节点进行扩展。选择其一个从未访问过的子节点加入当前的搜索树。
-
-- Simulation。从2中的新节点出发，进行Monto Carlo模拟，直到博弈结束。
-
-- Back-propagation。更新博弈树中所有节点的状态。进入下一轮的选择和模拟。
-
-MCTS的优点：
-
-- 蒙特卡罗树搜索是具有高度选择性的（Highly selective)、导致越好结果的行为越被优先选择（best-first）的一种搜索方法。
-
-- 它可以动态的评估各状态的价值，这种动态更新价值的方法与动态规划不同，后者聚焦于整个状态空间，而蒙特卡罗树搜索是立足于当前状态，动态更新与该状态相关的状态价值。
-
-- 使用采样避免了维度灾难；同样由于它仅依靠采样，因此适用于那些“黑盒”模型（black-box models）。
-
-- MCTS是可以高效计算的、不受时间限制以及可以并行处理的。
+Thorndike’s Puzzle Box（1910）
 
 参考：
 
-https://mp.weixin.qq.com/s/4qeHfU9GS4aDWOHsu4Dw2g
+https://zhuanlan.zhihu.com/p/24437724
 
-记忆增强蒙特卡洛树搜索细节解读
+学习理论之Rescorla-Wagner模型
 
-https://zhuanlan.zhihu.com/p/30458774
+# RL参考资源
 
-如何学习蒙特卡罗树搜索（MCTS）
+https://mp.weixin.qq.com/s/Fn1s9Ia8L1ckgn6iP24FhQ
 
-https://zhuanlan.zhihu.com/p/26335999
+如何让神经网络具有好奇心
 
-蒙特卡洛树搜索MCTS入门
+https://mp.weixin.qq.com/s/PBf-YrkhwhPYXuiOGyahxQ
 
-https://zhuanlan.zhihu.com/p/25345778
+强化学习遭遇瓶颈！分层RL将成为突破的希望
 
-蒙特卡洛树搜索（MCTS）基础
+https://zhuanlan.zhihu.com/p/58815288
 
-## Game Tree
+强化学习之值函数学习
 
-上面围棋示例中的搜索树，在博弈论中，也叫做博弈树（Game Tree）。
+https://mp.weixin.qq.com/s/8Cqknze_iosz6Z6cqnuK5w
 
-### Minimax
+谷歌提出强化学习新算法SimPLe，模拟策略学习效率提高2倍
 
-极小化极大算法（Minimax）是零和游戏常见的策略。通俗的说法就是：选择对自己最有利，而对对手最不利的动作。
+https://mp.weixin.qq.com/s/hKGS4Ek5prwTRJoMCaxQLA
 
-### Alpha Beta pruning algorithm
+强化学习Exploration漫游
 
-在博弈过程中，我们不仅要思考自己的最优走法，还要思考对手的最优走法。而且这个过程是可以递归下去的，直到终局为止。
+https://zhuanlan.zhihu.com/p/65116688
 
-这样就会形成一整套如下所示的策略序列（以围棋为例，黑棋先下）：
+值分布强化学习（01）
 
-黑最优->白最优->黑最优->白最优->...
+https://zhuanlan.zhihu.com/p/65364484
 
-然后轮到白棋下子：
+值分布强化学习（02）
 
-<p><font color="red">黑最优</font>->白最优->黑最优->白最优->...</p>
+https://zhuanlan.zhihu.com/p/62363784
 
-这里的红色字体表示的是已经发生的事件。
+强化学习之策略搜索
 
-可以看的出来，在零和游戏中，我们只需要考虑一方的Game Tree就行了，另一方的Game Tree只是一个镜像而已。这样的话，**搜索空间直接就只有原来的一半了**。
+https://mp.weixin.qq.com/s/j9Cs5M9gyITu2u_XDkKm-g
 
-能不能进一步裁剪呢？这里介绍一下Alpha Beta pruning algorithm。
+Policy Gradient——一种不以loss来反向传播的策略梯度方法
 
-详细的步骤参见：
+https://mp.weixin.qq.com/s/x6gKTuYIx8y25KX-fCc5bA
 
-http://web.cs.ucla.edu/~rosen/161/notes/alphabeta.html
-
-Minimax with Alpha Beta Pruning
-
-这里只提一下要点：
-
-- $$\alpha$$是指the maximum lower bound of possible solutions；$$\beta$$是指the minimum upper bound of possible solutions。
-
-- 我方下棋会寻找使我方获得最大值的策略，因此叫做MAX结点；敌方下棋显然会寻找能使我方收益最小的策略，因此叫做MIN结点。从Game Tree的角度来看，就是：一层MAX结点->一层MIN结点->一层MAX结点->一层MIN结点->...
-
-- 初始状态：根节点：$$\alpha=-\infty,\beta=\infty$$，叶子结点：包含value值。
-
-- 深度优先遍历Game Tree，利用MAX结点的值，更新父结点的$$\beta$$值，利用MIN结点的值，更新父结点的$$\alpha$$值。
-
-- 一旦出现$$\alpha > \beta$$的情况，则说明遇到了异常分支，直接剪去该分支即可。
-
-### 参考
-
-https://zhuanlan.zhihu.com/p/55750669
-
-博弈树与α-β剪枝
-
-https://segmentfault.com/a/1190000013527949
-
-Minimax和Alpha-beta剪枝算法简介，以及以此实现的井字棋游戏（Tic-tac-toe）
-
-https://materiaalit.github.io/intro-to-ai-17/part2/
-
-Games
-
-https://mp.weixin.qq.com/s/6fd8oxnahJ0EoocRV4q8Bg
-
-一看就懂的Alpha-Beta剪枝算法详解
-
-## MCTS和MC的区别
-
-![](/images/img3/MCTS.jpg)
-
-上图是一局围棋的Game Tree的局部。最下面的叶子结点给出了黑棋赢棋的百分比。现在的问题是，黑棋该如何走呢？（假设根节点为当前状态）
-
-如果是用蒙特卡洛方法，趋近的会是其下所有胜率的平均值。例如经过蒙特卡洛模拟，会发现b1后续的胜率是49% = (50+48)/2，而b2后续的胜率是55% = (62+45+58)/3。
-
-于是蒙特卡洛方法说应该走b2，因为55%比49%的胜率高。但这是错误的。因为如果白棋够聪明，会在黑棋走b1的时候回应以w2（尽量降低黑棋的胜率），在黑棋走b2的时候回应以w4（尽量降低黑棋的胜率）。
-
-如果用蒙特卡洛方法做上一百万次模拟，b1和b2的胜率仍然会固定在49%和55%，不会进步，永远错误。所以它的结果存在偏差（Bias），当然，也有方差（Variance）。
-
-而蒙特卡洛树搜索在一段时间模拟后，b1和b2的胜率就会向48%和45%收敛，从而给出正确的答案。所以它的结果不存在偏差（Bias），只存在方差（Variance）。但是，对于复杂的局面，它仍然有可能长期陷入陷阱，直到很久之后才开始收敛到正确答案。
-
-## Dyna-2
-
-如果我们把基于模拟的前向搜索应用到Dyna算法中来，就变成了Dyna-2算法。
-
-使用该算法的个体维护了两套特征权重：
-
-- 一套反映了个体的长期记忆，该记忆是从真实经历中使用TD学习得到，它反映了个体对于某一特定强化学习问题的普遍性的知识、经验；
-
-- 另一套反映了个体的短期记忆，该记忆从基于模拟经历中使用TD搜索得到，它反映了个体对于某一特定强化学习在特定条件（比如某一Episode、某一状态下）下的特定的、局部适用的知识、经验。
+蒙特卡洛梯度估计方法（MCGE）简述

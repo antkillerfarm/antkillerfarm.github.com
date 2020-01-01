@@ -12,7 +12,17 @@ category: DRL
 
 一个很自然的思路就是：既然NN能表示Policy和Value，那么能不能表示Model呢？
 
+![](/images/img3/MuZero_3.png)
 
+参考论文1的主要思路是：
+
+- 构建一个abstract MDP model。虽然我们并不知道它的state，更不清楚它的transition，但是不要紧，假设它存在就好。
+
+- 
+
+![](/images/img3/MuZero_4.png)
+
+![](/images/img3/MuZero_5.png)
 
 ![](/images/img3/MuZero_2.png)
 
@@ -295,44 +305,3 @@ MARL的结构一般如下图所示。
 ----
 
 MARL的目标是找到每一个状态的纳什均衡策略，然后将这些策略联合起来。
-
-<div style="text-align: center;">
-<table>
-  <tr>
-    <td colspan="2" rowspan="2"></td>
-    <td colspan="3">Game setting</td>
-  </tr>
-  <tr>
-    <td>Stateless Games</td>
-    <td>Team Markov Games</td>
-    <td>General Markov Games</td>
-  </tr>
-  <tr>
-    <td rowspan="2">Information<br/>Requirement</td>
-    <td>Independent Learners</td>
-    <td>Stateless Q-learning<br/>Learning Automata<br/>IGA<br/>FMQ<br/>Commitment Sequences<br/>Lenient Q-learners</td>
-    <td>Policy Search<br/>Policy Gradient</td>
-    <td>MG-ILA<br/>(WoLF-)PG<br/>Learning of Coordination<br/>Independent RL<br/>CQ-learning</td>
-  </tr>
-  <tr>
-    <td>Joint Action Learners</td>
-    <td></td>
-    <td>Distributed- Q<br/>Sparse Tabular Q<br/>Utile Coordination</td>
-    <td>Nash-Q<br/>Friend-or-Foe Q<br/>Asymmetric Q<br/>Joint Action Learning<br/>Correlated-Q</td>
-  </tr>
-</table>
-</div>
-
-参考：
-
-https://zhuanlan.zhihu.com/c_1061939147282915328
-
-一个MARL方面的专栏
-
-https://github.com/LantaoYu/MARL-Papers
-
-Paper list of multi-agent reinforcement learning (MARL)
-
-https://blog.csdn.net/qq_38163755/article/details/98057751
-
-Game Theory and Multi-agent Reinforcement Learning笔记1

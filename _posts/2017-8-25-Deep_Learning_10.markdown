@@ -80,6 +80,10 @@ https://mp.weixin.qq.com/s/acvpHt4zVQPI0H5nHcg3Bw
 
 67页综述深度卷积神经网络架构：从基本组件到结构创新
 
+https://zhuanlan.zhihu.com/p/66215918
+
+CNN系列模型发展简述
+
 # 深度图像压缩
 
 Tiny Network Graphics是图鸭科技推出一种基于深度学习的图片压缩技术。由于商业因素，这里没有论文，技术细节也不详，但是下图应该还是有些用的。

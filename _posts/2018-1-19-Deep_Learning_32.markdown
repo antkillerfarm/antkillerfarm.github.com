@@ -146,6 +146,10 @@ https://zhuanlan.zhihu.com/p/91275450
 
 点云配准综述
 
+https://mp.weixin.qq.com/s/5RJAv_cOlhee1R9uZzkmHQ
+
+国防科技大学发布最新“3D点云深度学习”综述论文，带你全面了解最新点云学习方法
+
 # AutoDL
 
 DL领域目前存在的主要问题之一是：如何设计网络结构和调整超参数。目前的做法，通常依赖于作者的直觉，属于典型的拍脑袋想点子。

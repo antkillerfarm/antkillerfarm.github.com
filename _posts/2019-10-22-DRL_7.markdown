@@ -6,6 +6,47 @@ category: DRL
 
 # MARL（续）
 
+<div style="text-align: center;">
+<table>
+  <tr>
+    <td colspan="2" rowspan="2"></td>
+    <td colspan="3">Game setting</td>
+  </tr>
+  <tr>
+    <td>Stateless Games</td>
+    <td>Team Markov Games</td>
+    <td>General Markov Games</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Information<br/>Requirement</td>
+    <td>Independent Learners</td>
+    <td>Stateless Q-learning<br/>Learning Automata<br/>IGA<br/>FMQ<br/>Commitment Sequences<br/>Lenient Q-learners</td>
+    <td>Policy Search<br/>Policy Gradient</td>
+    <td>MG-ILA<br/>(WoLF-)PG<br/>Learning of Coordination<br/>Independent RL<br/>CQ-learning</td>
+  </tr>
+  <tr>
+    <td>Joint Action Learners</td>
+    <td></td>
+    <td>Distributed- Q<br/>Sparse Tabular Q<br/>Utile Coordination</td>
+    <td>Nash-Q<br/>Friend-or-Foe Q<br/>Asymmetric Q<br/>Joint Action Learning<br/>Correlated-Q</td>
+  </tr>
+</table>
+</div>
+
+参考：
+
+https://zhuanlan.zhihu.com/c_1061939147282915328
+
+一个MARL方面的专栏
+
+https://github.com/LantaoYu/MARL-Papers
+
+Paper list of multi-agent reinforcement learning (MARL)
+
+https://blog.csdn.net/qq_38163755/article/details/98057751
+
+Game Theory and Multi-agent Reinforcement Learning笔记1
+
 https://blog.csdn.net/qq_38163755/article/details/98223987
 
 Game Theory and Multi-agent Reinforcement Learning笔记2
@@ -331,39 +372,3 @@ https://mp.weixin.qq.com/s/G99vqIYeWzgQ4kL4p77cKA
 https://mp.weixin.qq.com/s/GUyZ0U5_JlXCI-5mO796SA
 
 超越DQN和A3C：深度强化学习领域近期新进展概览
-
-https://zhuanlan.zhihu.com/p/43843955
-
-BAIR：基于人类演示&RL的夹爪训练——高效、通用、低成本
-
-https://mp.weixin.qq.com/s/ADZlLx6gMTFU6IoBCF669g
-
-快1万倍！伯克利提出用深度RL优化SQL查询
-
-https://mp.weixin.qq.com/s/oZDDP59o-1qwfz8prK3nJQ
-
-伯克利最新研究：如何用目标图像进行机器视觉强化学习？
-
-https://mp.weixin.qq.com/s/00zHwpw2xWP2fR9sDHE2Xw
-
-BAIR讲述如何利用深度强化学习控制灵活手
-
-https://mp.weixin.qq.com/s/V7RESEm4xzhW8tXEjKjn1Q
-
-层次强化学习、记忆与预测模型
-
-https://mp.weixin.qq.com/s/aNskPERmekw9yQVb7A3GPQ
-
-Google大脑最新研究成果：使用强化学习实现动态系统的韧性计算
-
-https://mp.weixin.qq.com/s/pJkCOCl6o70le1WsE9p3pg
-
-在全景视频中预测头部运动：一种深度强化学习方法
-
-https://mp.weixin.qq.com/s/fodjmmh_jJMh4hD3m2OrLg
-
-凭借幻想的目标进行视觉强化学习
-
-https://mp.weixin.qq.com/s/6HVSh7_9Akmf6OE8PGNy6Q
-
-怎样让AI完成人类搞不定的任务？OpenAI提出迭代扩增法给AI设目标

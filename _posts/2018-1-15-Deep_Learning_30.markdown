@@ -6,6 +6,18 @@ category: DL
 
 # Graph NN（续）
 
+https://zhuanlan.zhihu.com/p/37278426
+
+Graph2Seq: Graph to Sequence Learning with Attention-based Neural Networks
+
+https://mp.weixin.qq.com/s/iQYVyo2PHuGbEsYgdIf_oQ
+
+DeepMind等机构提出“图网络”：面向关系推理
+
+https://mp.weixin.qq.com/s/TAccHagxXQ82lfE91Y6xWg
+
+CNN已老，GNN来了：重磅论文讲述深度学习的因果推理
+
 https://mp.weixin.qq.com/s/UONtTJJgDawRPWtatAVKkg
 
 如何利用高效的搜索算法来搜索网络的拓扑结构
