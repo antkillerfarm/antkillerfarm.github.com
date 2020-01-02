@@ -1,387 +1,385 @@
 ---
 layout: post
-title:  深度学习（二十六）——深度推荐系统（1）
+title:  深度学习（二十六）——OCR（1）
 category: DL 
 ---
 
-# 深度推荐系统
+# OCR
 
-推荐系统一直是AI能够落地且商业前景很好的一个研究方向。自2016年以来，该方向也逐渐被DL所侵蚀，尽管目前从招聘来说，这方面的职位仍以普通ML为主。
+## 概述
 
-2017年5月，我曾面试了一家电商企业。当时给我的感觉，虽然里面的工程师较早接触ML，然而知识老化现象比较严重，对最基本的神经网络知识缺乏必要的了解。这显然给了后来者一个弯道超车的好机会。
+光学字符识别（Optical Character Recognition, OCR），是指对文本资料的图像文件进行分析识别处理，获取文字及版面信息的过程。
 
-## 教程
+华中科大白翔教授的实验室算是目前国内OCR做的比较好的了。
 
-https://mp.weixin.qq.com/s/3L-HNGBd1xW8SpK6BpEEtg
+白翔的个人主页：
 
-在线购买率转化高达60%，Amazon推荐系统是如何做到的？这个blog篇幅较长，基本涵盖了推荐系统的各个方面，包括传统算法和深度算法都有涉及。
+http://cloud.eic.hust.edu.cn:8071/~xbai/
 
-https://mp.weixin.qq.com/s/aB8PnQuPmhftS18fUrumNg
+该主页上有一个OCR方面的综述，是入门的最好资料。
 
-零基础如何快速搭建一个推荐系统？这篇blog是某牛课程的广告贴，然而从课程目录中，我们还是能够知道一个推荐系统的大致知识点。
+http://www.cnblogs.com/lillylin/
 
-https://mp.weixin.qq.com/s/2RRzZcoy4L92n3VZH0o07w
+这是一个OCR方面的blog。对白翔的论文，几乎都有阅读笔记。
 
-无偏见排序学习：理论与实践135页PPT教程
+https://github.com/hwalsuklee/awesome-deep-text-detection-recognition
 
-## 算法
+Github：深度学习文本检测识别（OCR）精选资源汇总
 
-深度推荐系统的算法包括：
+近年来场景文字检测工作主要分为两大类：
 
-https://mp.weixin.qq.com/s/qwDIvXlpP5UIBTwtpqhYsg
+- 自上而下的方法主要借鉴的是通用物体检测的思路，并且根据文字的特点设计相应的检测模型。这类方法通常难以处理不规则文本的检测问题。
 
-Auto-Encoder
+- 自下而上的方法，通常先学习文本行的基本组成单元，然后进行单元之间的组合得到文本行检测框。由于其灵活的表征方式，对不规则形状的文本检测有着天然的优势。
 
-https://mp.weixin.qq.com/s/AqgxnfR4h1FBRmmEe6uPqQ
+自下而上的方法按照组成单元的不同又分为两类：组成单元为像素的基于分割的方法，以及组成单元为文字块的基于单元组合的方法。但是，自下而上的方法通常很难区分密集文本。密集文本检测问题是文本检测中一个广泛存在的难点问题。
 
-CDL
+## tesseract
 
-https://mp.weixin.qq.com/s/WlgUVf1EjpO9UGqjTJN5ww
+linux下可以使用tesseract作为OCR工具。当然这个工具目前使用的还是传统算法。
 
-UWRL
+安装方法：
 
-https://mp.weixin.qq.com/s/KII9oNg7kqfco2MngUOGAw
+`sudo apt install tesseract-ocr libtesseract-dev`
 
-AutoRec
+使用方法：
 
-https://mp.weixin.qq.com/s/mnGuPGtdw9d1BzeNpoYYqw
+`tesseract ./111.png 1 -l chi_sim+eng`
 
-DeepCoNN
+## 车牌识别
 
-https://mp.weixin.qq.com/s/lJDiP7oeiFQSEyxWt_9uBA
+https://github.com/liuruoze/EasyPR
 
-NFM
+一个开源的中文车牌识别系统。（使用传统算法）
 
-这些算法的演化路径具体来说有两条：其一是从FM开始推演其在深度学习上的各种推广（对应下图的红线），另一条是从embedding+MLP自身的演进特点结合CTR预估本身的业务场景进行推演（对应下图黑线部分）。 
+https://blog.csdn.net/Relocy/article/details/78629441
 
-![](/images/img2/DL_recommend.jpg)
+HyperLPR：一个基于深度学习的支持多种车牌的中文开源车牌识别框架
 
-这是另一个版本的演化图谱：
+https://blog.csdn.net/yang_daxia/article/details/90408160
 
-![](/images/img3/recommend.jpg)
+车牌识别论文survey
 
-## Sequential Recommender
+https://mp.weixin.qq.com/s/6dsufEVsuEILa1gSOBt32w
 
-![](/images/img3/sequential_recommendation.png)
+用于提高车牌识别的单幅噪声图像去噪和校正
 
-上图中，灰色表示MLP，橙色表示RNN，黄色表示CNN，蓝色表示Attention，绿色表示GNN。
+https://mp.weixin.qq.com/s/ynpqG7Vfu5b8lYNW6Y-TpA
 
-## 工具
+快准狠！Intel论文揭示自家车牌识别算法:LPRNet
 
-https://www.librec.net/
+https://mp.weixin.qq.com/s/JIoTsadw4JBkr0e40RwVQQ
 
-这是一个Java写的推荐系统。东北大学的郭贵冰主持的项目。该网址同时也有不少相关论文可供阅读。
+这篇论文开源的车牌识别系统打败了目前最先进的商业软件
 
-https://github.com/cheungdaven/DeepRec
+https://mp.weixin.qq.com/s/e-vNkSlIpa8Qbsre9kjOkg
 
-这是一个基于Tensorflow的深度推荐系统
+用于提高车牌识别的单幅噪声图像去噪和校正
 
-## Wide & Deep
+https://mp.weixin.qq.com/s/fqpZ8EHgiNupXumvTMSecw
 
-https://mp.weixin.qq.com/s/G4bDj4a05K0kB4IZ6IosiQ
+北大团队研发“车脸”识别系统，不看车牌看外观特征实现精确识别
 
-Wide & Deep
+https://mp.weixin.qq.com/s/Shz6BmsOrtbEFtoJRSkl9A
 
-https://mp.weixin.qq.com/s/ouHfqFk_WQk7ZofvabEwZg
+简单车牌检测
 
-推荐系统Wide & Deep Learning详解
+https://mp.weixin.qq.com/s/iwPI8g2JwabwiCO8kfw8Hw
 
-https://mp.weixin.qq.com/s/5wdGemYBtkYUvq1n5ioyFg
+用开源工具DIY车牌识别系统
 
-详解Wide&Deep理论与实践
+## CRNN
 
-## DeepFM
+CRNN是白翔小组的作品。
 
-https://mp.weixin.qq.com/s/JNGKz4-fWG4ygl7f6UkxcQ
+论文：
 
-DeepFM
+《An End-to-End Trainable Neural Network for Image-based Sequence Recognition and Its Application to Scene Text Recognition》
 
-https://mp.weixin.qq.com/s/v8L0E6G-ShOiyvaymw8MYg
+代码：
 
-一文搞懂DeepFM的理论与实践
+https://github.com/bgshih/crnn
 
-https://mp.weixin.qq.com/s/u4onsUU4G4DNm4F5ytiNhQ
+## ASTER
 
-互联网广告CTR预估新算法：基于神经网络的DeepFM原理解读
+ASTER也是白翔小组的作品。
 
-https://zhuanlan.zhihu.com/p/48057256
+《ASTER: An Attentional Scene Text Recognizer with Flexible Rectification》
 
-用TensorFlow实现支持多值、稀疏、共享权重的DeepFM
+代码：
+
+https://github.com/bgshih/aster
+
+参考：
+
+https://www.cnblogs.com/lillylin/p/9315180.html
+
+论文阅读笔记
+
+https://mp.weixin.qq.com/s/Ai43GvLsEtFrfArHUvqLXg
+
+Aster:具有柔性矫正功能的注意力机制场景文本识别方法
+
+## CTPN
+
+https://zhuanlan.zhihu.com/p/34757009
+
+场景文字检测—CTPN原理与实现
+
+https://mp.weixin.qq.com/s/lV2yjhvnRLDfNbZXOSjofg
+
+ctpn：图像文字检测方法
 
 ## 参考
 
-https://zhuanlan.zhihu.com/learningdeep
+https://mp.weixin.qq.com/s/h7HVyGbmtLmNVJp4p0rCRQ
 
-一个深度推荐的专栏
+字符识别(OCR)相关工具/库/教材/论文等资源整理
 
-https://mp.weixin.qq.com/s/GMHjXa2r_1SG3HsA-bcIOQ
+https://mp.weixin.qq.com/s/XvtmPUbS2KV0zNXTPgtgDA
 
-从FM推演各深度CTR预估模型
+史上最全端到端场景文本检测识别资源合集（14篇重要论文 + 5个开源代码 + 49个实验结果 + 222个统计信息）
 
-https://mp.weixin.qq.com/s/4CLFaP4F-CknDcOWSOdiTQ
+https://mp.weixin.qq.com/s/qLPfs5nHCVn5J-q3CbeECg
 
-基于深度学习的序列推荐系统综述：概念、方法与实验评估
+史上最全场景文字识别资源汇集（56篇重要论文 + 20 个开源代码 + 330 个实验结果 + 1882个统计信息）
 
-https://mp.weixin.qq.com/s/Yz3vv6H4oHyZ-vX71yv5gw
+https://mp.weixin.qq.com/s/rsJZ3R71gSAC4T501-LSQA
 
-谷歌、阿里等10大深度学习CTR模型最全演化图谱
+史上最全场景文字检测资源合集（70篇重要论文 + 15个开源代码 + 176个实验结果 + 
 
-https://zhuanlan.zhihu.com/p/26237106
+https://mp.weixin.qq.com/s/k_pYPq4QO1aR7DImLSCgoQ
 
-深度学习在推荐算法上的应用进展
+OCR100篇相关论文与代码，从文本识别到验证码识别
 
-http://i.dataguru.cn/mportal.php?mod=view&aid=11463
+https://mp.weixin.qq.com/s/KFgC8zHWS7ysb9GfbkfLRA
 
-深度学习在推荐领域的应用
+OCR技术简介
 
-https://zhuanlan.zhihu.com/p/33214451
+https://zhuanlan.zhihu.com/p/65707543
 
-深度学习在推荐系统上的应用
+文字OCR方法整理
 
-https://mp.weixin.qq.com/s/hGvQvddD3i858XSK4z08Ug
+https://mp.weixin.qq.com/s/0ysaJGNslckesv21o752FA
 
-主要推荐系统算法总结及Youtube深度学习推荐算法实例概括
+图像OCR年度进展
 
-https://mp.weixin.qq.com/s/yHtqWJUpCIvTStKW5TINaA
+https://mp.weixin.qq.com/s/VIEsfc4qKAGsi-O9LD4mng
 
-Youtube短视频推荐系统变迁：从机器学习到深度学习
+深度学习在OCR中的应用
 
-https://mp.weixin.qq.com/s/N1oLs-saWN_ifkWEaWw_Vg
+https://blog.csdn.net/linolzhang/article/details/82780071
 
-YouTube 2016年公布的基于深度学习的推荐算法
+OCR文字识别
 
-https://mp.weixin.qq.com/s/WzSO_XobY6kesDm4sF-hBg
+https://www.cnblogs.com/skyfsm/category/1123384.html
 
-深度学习之推荐篇
+一个OCR方面的blog
 
-https://www.zhihu.com/question/352306163
+https://mp.weixin.qq.com/s/WmsHrTIMJhSt8MtFO7-yXA
 
-现阶段各家公司的广告算法使用的主流模型有哪些？
+证件全文本OCR技术，了解一下
 
-https://mp.weixin.qq.com/s/LKjVfhyhL4GVx6l5WC6-CQ
+https://zhuanlan.zhihu.com/p/21344595
 
-如何用深度学习实现用户行为预测与推荐
+端到端的OCR：验证码识别(LSTM+CTC)
 
-https://mp.weixin.qq.com/s/UrMsMHAkqNHJEl5lhAvLtA
+http://www.jianshu.com/p/86489f1afd36
 
-腾讯提出并行贝叶斯在线深度学习框架PBODL：预测广告系统的点击率
+端到端的OCR：基于CNN的实现
 
-http://mp.weixin.qq.com/s/Jiis7j3W3D5GG_ZdxplY7Q
+http://www.jianshu.com/p/4fadf629895b
 
-淘宝搜索/推荐系统背后深度强化学习与自适应在线学习的实践之路
+端到端的OCR：LSTM＋CTC的实现
 
-https://mp.weixin.qq.com/s/847h4ITQMtUlZcurJ9Vlvg
+https://mp.weixin.qq.com/s/axpA7Y_Rhiols5bDIdc6jg
 
-深度学习在美团点评推荐平台排序中的运用
+Tesseract-OCR 3.0.1训练自己的语言库之图像文字识别
 
-https://mp.weixin.qq.com/s/AICgNDyWASx_B8NzWcFTqA
+http://mp.weixin.qq.com/s/n8C80a3B54FhrCe-GhhcDA
 
-一文综述所有用于推荐系统的深度学习方法
+文档扫描：深度神经网络在移动端的实践
 
-https://mp.weixin.qq.com/s/zSBpqhoyROh74UZEItBanA
+https://mp.weixin.qq.com/s/MYhQt9uC16BadiZKWjPTzA
 
-基于概率隐层模型的购物搭配推送：阿里巴巴提出新型用户偏好预测模型
+华中科技大学提出多向文本检测方法：基于角定位与区域分割
 
-http://mp.weixin.qq.com/s/nmLNKscP1qxyv_aoSrwEEw
+http://ilovin.me/2017-04-23/tensorflow-lstm-ctc-input-output/
 
-基于大规模图计算的本地算法对展示广告的行为预测
+tensorflow LSTM+CTC/warpCTC使用详解
 
-https://mp.weixin.qq.com/s/8hNkntUauCSeVqc2v0QUqA
+https://mp.weixin.qq.com/s/k0dRu1wx49HTi_oJYJEGPw
 
-人工智能如何帮你找到好歌：探秘Spotify神奇的每周歌单
+阿里提出IncepText：全新多向场景文本检测模块
 
-https://zhuanlan.zhihu.com/p/30720579
+https://mp.weixin.qq.com/s/h3VaKs0Pc44n-hXYNlkALA
 
-推荐中的序列化建模：Session-based neural recommendation
+开源OCR文字识别软件Calamari
 
-https://mp.weixin.qq.com/s/vpxLTcwenvlIvj5D-8uolg
+https://mp.weixin.qq.com/s/FjoJA0gF4LgsB8hw24I0EQ
 
-一天造出10亿个淘宝首页，阿里工程师如何实现？
+华科白翔老师团队ECCV2018 OCR论文：Mask TextSpotter
 
-https://mp.weixin.qq.com/s/lZ4FOOVIxsdKvfW45CYCnA
+https://mp.weixin.qq.com/s/x-_fuVPgDYnle23IDsYCTw
 
-你看到哪版电影海报，由算法决定：揭秘Netflix个性化推荐系统
+百度深度学习图像识别决赛代码分享
 
-http://www.cnblogs.com/qcloud1001/p/7483362.html
+https://mp.weixin.qq.com/s/r7GaYsdKLELXPmW5u2ysPw
 
-深度学习在CTR中应用
+OpenCV深度学习文本检测示例程序（EAST text detector）
 
-http://www.cnblogs.com/qcloud1001/p/7513982.html
+https://mp.weixin.qq.com/s/Twki3TeNWwj_SqP9chXuxw
 
-常见计算广告点击率预估算法总结
+AdvancedEAST高效场景文本检测
 
-https://mp.weixin.qq.com/s/Q8Mt9B1rzbeWXqIInrzSYQ
+https://mp.weixin.qq.com/s/PyV0Ml9ppTx0HZvz5VTe-Q
 
-使用深度学习构建先进推荐系统：近期33篇重要研究概述
+ICPR图像识别与检测挑战赛冠军方案出炉，基于偏旁部首来识别Duang字
 
-https://mp.weixin.qq.com/s/PlsFxKz_Igorh94Ni-78Hg
+https://mp.weixin.qq.com/s/gxpDyd5Lf0fmNZwFrJJZzg
 
-融合MF和RNN的电影推荐系统
+OCR大突破：Facebook推出大规模图像文字检测识别系统——Rosetta
 
-https://mp.weixin.qq.com/s/JKMOhpLWWlrDzymDDEldXw
+https://mp.weixin.qq.com/s/zeN-QYXBZzVtWUH10DXjVw
 
-深度学习大行其道，个性化推荐如何与时俱进？
+Facebook的新AI“Rosetta”会识别表情包，还会删帖
 
-https://mp.weixin.qq.com/s/FBzd0x4_A9z-r0f3ZKFGuw
+https://mp.weixin.qq.com/s/lVRIy6DdwfRxdoVW3qFiNg
 
-携程个性化推荐算法实践
+OCR如何读取皱巴巴的文件？深度学习在文档图像形变矫正的应用详解
 
-https://mp.weixin.qq.com/s/Q01jy2RtbpBBHGtvtfhEGA
+https://mp.weixin.qq.com/s/-KdR3buxFOrPE-w-IMLQ9A
 
-当机器学习遇到推荐系统，悉尼科技大学Liang Hu博士最新分享
+最强开源OCR！印刷体古籍文字识别超越著名商业软件ABBYY
 
-https://mp.weixin.qq.com/s/zBcd2vCYZvb_T7De2QhRew
+http://mp.weixin.qq.com/s/rS4xCsytYGqBLMUzlyA12A
 
-京东公布基于计算机视觉的电商推荐技术！
+构建多层感知器神经网络对数字图片进行文本识别
 
-https://mp.weixin.qq.com/s/rIZUar6sUZXo2S1JwLrHug
+https://mp.weixin.qq.com/s/qTnFQK0CkvdJfZaKj2wUtQ
 
-AI研究新利器Etymo，妈妈再也不用担心我找不到论文！
+海康威视联合提出注意力聚焦网络FAN：提升场景文本识别精确度
 
-https://zhuanlan.zhihu.com/p/33956907
+https://zhuanlan.zhihu.com/p/50521715
 
-阿里-搜索团队智能内容生成实践
+云从科技在自然场景OCR任务取得技术突破
 
-https://mp.weixin.qq.com/s/9nGjIgwzGG2sXvEzvYEptQ
+https://zhuanlan.zhihu.com/p/51397423
 
-基于“翻译”的推荐系统方案，加州大学圣地亚哥分校最新工作
+SPCNet
 
-https://mp.weixin.qq.com/s/Qupo61cnuO_10sVpRe-wQA
+https://mp.weixin.qq.com/s/9f158VM_FoNVuODNER-BUw
 
-DKN:基于深度知识感知的新闻推荐网络
+端到端的弯曲文本检测与识别
 
-https://mp.weixin.qq.com/s/9xw-FwWEK9VI2wNzc8EhPA
+https://mp.weixin.qq.com/s/J5DGF3JRZxk1-fAQSQNvkQ
 
-阿里盖坤：解读阿里深度学习实践，CTR 预估、MLR 模型、兴趣分布网络等
+MORAN文本识别算法开源，刷新多个OCR数据集state-of-the-art
 
-https://zhuanlan.zhihu.com/p/35472804
+https://mp.weixin.qq.com/s/cLB2CPjLVJAuDVVmHRKHEA
 
-TransNets: Learning to Transform for Recommendation
+弯曲文字检测之SPCNet
 
-https://mp.weixin.qq.com/s/_xAB7-LxKRlH76FVsyezzQ
+https://mp.weixin.qq.com/s/_znXs8pkfgmWsb26HIfhLQ
 
-阿里妈妈资深技术专家刘凯鹏解读基于深度学习的智能搜索营销
+复杂环境文字识别技术研究及应用进展
 
-https://mp.weixin.qq.com/s/CMZHhxAMno2GlnQCjv0BKg
+https://mp.weixin.qq.com/s/JA6ey6N3Zho92L6jh_bRkg
 
-深度学习在CTR预估中的应用
+EAST场景文字检测模型使用
 
-https://mp.weixin.qq.com/s/nboZ6p_l30L__FJNyz6Ohw
+https://mp.weixin.qq.com/s/uMzx_U-wx94GRTQtM11d8Q
 
-深度学习如何应用在广告、推荐及搜索业务？
+OCR技术在携程业务中的应用
 
-https://zhuanlan.zhihu.com/p/36564514
+https://mp.weixin.qq.com/s/-zMVO47AL1iKFmF16KsfOw
 
-基于深度学习的评论文本表示论文引介
+文本检测算法PSENet解读与开源实现
 
-https://mp.weixin.qq.com/s/a-lDJuwFYVNupeNhxyXDkA
+https://mp.weixin.qq.com/s/UFfBoxQwsB_GUqTDRv3Asg
 
-跨域社交推荐：如何透过用户社交信息“猜你喜欢”？
+免费数学神器！再复杂的公式，只要有照片就能转成LaTeX
 
-https://mp.weixin.qq.com/s/FvuWZPNKcnimAGzsfgVdBQ
+https://mp.weixin.qq.com/s/x8iyl4gwz31XOCw3oSHSwg
 
-阿里妈妈公开全新CVR预估模型
+开源！基于TensorFlow/Keras/PyTorch实现对自然场景的文字检测及端到端的OCR中文文字识别
 
-https://mp.weixin.qq.com/s/Ya8RZ3TouAapU_xuvMjjMQ
+https://mp.weixin.qq.com/s/eVhId0OqKB-jNCg4j8qaNg
 
-深度协同过滤：用神经网络取代内积建模
+仅用200个样本就能得到当前最佳结果：手写字符识别新模型TextCaps
 
-https://mp.weixin.qq.com/s/CyelwdWX4yPVp8o79itonQ
+https://mp.weixin.qq.com/s/z5hRafxepA4Zj5pbbK8HzA
 
-阿里提出联合预估算法JUMP：点击率和停留时长预测效果最优
+基于模板的文字识别结果结构化处理技术
 
-https://mp.weixin.qq.com/s/HS2zcnA1YSRU8-DrodJ6Qw
+https://mp.weixin.qq.com/s/Buv6m66kj3RjKq0LjqNAiA
 
-淘宝用强化学习优化商品搜索后，总收入能提高2%
+mathAI手写拍照自动能解高数题，还不快试试？
 
-https://mp.weixin.qq.com/s/8MQ1G-JWGAw5Ev1Ws3V_ig
+https://mp.weixin.qq.com/s/gKsfsRxsbfXGOsSqeQEDbw
 
-IJCAI 2018国际广告算法大赛迁移学习夺冠，中国包揽冠亚季军
+CVPR2019：文本检测算法综述
 
-https://mp.weixin.qq.com/s/QCGemlo8CYIz6imMde_cmg
+https://zhuanlan.zhihu.com/p/68058851
 
-推荐系统中的机器学习算法与评估实战
+自然场景下的文字检测：从多方向迈向任意形状
 
-https://mp.weixin.qq.com/s/QaMjHRZ5fiN2zBJLIeGrSg
+https://mp.weixin.qq.com/s/jO2xc7Ri6TvrHyXHH0uX4w
 
-阿里推出DeepInsight平台：可视化理解深度神经网络CTR预估模型
+金山WPS：基于本地TensorFlow Lite和AI云服务的文档矫正功能
 
-https://mp.weixin.qq.com/s/JEOfAXg4nDepMtzPCgElrg
+https://mp.weixin.qq.com/s/3t8yzjMXiZwgqBb8izVfFg
 
-SIGIR 2018最佳论文：深入分析流行度在推荐系统中的作用
+场景文字检测模型PixelLink详解与使用
 
-https://mp.weixin.qq.com/s/pA1SSEnwC884LBZGiH3jhg
+https://zhuanlan.zhihu.com/p/68356509
 
-基于改进注意力循环控制门，品牌个性化排序升级系统来了
+TensorFlow 2.0中文手写字识别（汉字OCR）
 
-https://mp.weixin.qq.com/s/V6tjQzfzsekXuoXhbXbKSQ
+https://mp.weixin.qq.com/s/F0bPat3KUEVnej77OdfYAg
 
-一文搞懂阿里Deep Interest Network
+文本检测大满贯！自适应文本区域表示改进形状任意的文本检测
 
-https://mp.weixin.qq.com/s/ro3D_d-ZPP0TasqPr4PgPA
+https://mp.weixin.qq.com/s/QwkKqybzW0tYcGojQg9r2w
 
-推荐系统特征构建新进展：极深因子分解机模型
+深度学习场景文字检测识别，20页综述带你了解领域最新动态
 
-https://mp.weixin.qq.com/s/MoUd99mCR3Xyu_FnV8jLKA
+https://mp.weixin.qq.com/s/j8Xvj7OSoFZp-zIrd3Xjow
 
-机器如何“猜你喜欢”？深度学习模型在1688的应用实践
+华科提出对称性约束的校正网络ScRN，显著改进场景文本识别
 
-https://mp.weixin.qq.com/s/O_BYzrw5YAbLkfVDqcmwmw
+https://github.com/ctripcorp/C-OCR
 
-36页最新《深度学习在推荐系统上的应用》综述论文，209篇参考论文
+携程自研的OCR项目
 
-https://mp.weixin.qq.com/s/frUPjpCQGlZc7Dag_v7r3A
+https://mp.weixin.qq.com/s/fZN8mtZdB4Fd6gj2dAKURw
 
-2018年最全的推荐系统干货
+金连文：“文字检测与识别：现状及展望”
 
-https://mp.weixin.qq.com/s/3NStfKyn3rGmLUrgk4b9lQ
+https://mp.weixin.qq.com/s/_GU5y7v8HNDOjEGvWh8Fkw
 
-想了解推荐系统最新研究进展？请收好这16篇论文
+旷视研究院提出文字检测新方法：像素聚合网络PAN
 
-https://mp.weixin.qq.com/s/7I8k3sKZfaGr8vj1WHbS7g
+https://mp.weixin.qq.com/s/5eTugA70myKxDTZUby87Pw
 
-99页推荐系统情感分析教程发布
+任意形状文本检测：Look More Than Once
 
-https://mp.weixin.qq.com/s/5ryEfgQnX-JXCvhwzKSCjA
+https://mp.weixin.qq.com/s/RuYZ-nmW2p7jMIJ7sbxbIw
 
-点击率预估界的“神算子”是如何炼成的？
+任意形状文本检测的像素聚合网络
 
-https://mp.weixin.qq.com/s/npZg46MK5MZ7h9cqvrAYiQ
+https://mp.weixin.qq.com/s/T0QeYbkmD4jwhWB47Fnn2w
 
-机器如何猜你所想？阿里小蜜预测平台揭秘
+基于深度学习的端到端在线手写数学公式识别
 
-https://zhuanlan.zhihu.com/p/46755166
+https://mp.weixin.qq.com/s/l1rmGxOVrXKAaf4yYUt4kQ
 
-利用评论文本交互提升推荐系统
+自然场景文字定位技术详解
 
-https://zhuanlan.zhihu.com/p/47393033
+https://mp.weixin.qq.com/s/rJ7guL-Hxxr2Ezl7LRhQrA
 
-基于知识的新闻推荐
+基于对抗学习的数据稀缺手写文本识别
 
-https://mp.weixin.qq.com/s/jHKgKnl-SbZltl76Ln_Fgg
+https://mp.weixin.qq.com/s/YixrjGTU4p7LlyfQCEmmmQ
 
-AutoML详解及其在推荐系统中的应用、优缺点
-
-https://mp.weixin.qq.com/s/0FdosHMzKiYL8XCx_XEPFA
-
-双十一疯狂剁手，你知道阿里是如何跟踪用户兴趣演化的吗？
-
-https://zhuanlan.zhihu.com/p/49410727
-
-利用分类学数据来增强序列推荐的能力
-
-https://mp.weixin.qq.com/s/jdRu-cishwV8qBmGLTFJCA
-
-美团“猜你喜欢”深度学习排序模型实践
-
-https://mp.weixin.qq.com/s/u7GJstj5E_7y1rwkUbpAXg
-
-推荐系统的可解释性浅谈
-
-https://mp.weixin.qq.com/s/3j367YCViJtY9iB386p8jA
-
-简洁易用可扩展，一个基于深度学习的CTR模型包
-
-https://mp.weixin.qq.com/s/hxwyVCjK40urSTUZoDsQig
-
-Deep Neural Network for YouTube Recommendations
+端到端任意形状场景文字识别

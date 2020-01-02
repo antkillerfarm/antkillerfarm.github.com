@@ -18,7 +18,7 @@ category: DRL
 
 - 构建一个abstract MDP model。虽然我们并不知道它的state，更不清楚它的transition，但是不要紧，假设它存在就好。
 
-- 
+- 对这个abstract MDP model应用TD(n)和TD($$\lambda$$)k-step and $$\lambda$$-weighted
 
 ![](/images/img3/MuZero_4.png)
 

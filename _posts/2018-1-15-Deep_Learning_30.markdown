@@ -293,3 +293,33 @@ https://github.com/microsoft/tf-gnn-samples
 https://mp.weixin.qq.com/s/s9PmfmpQE9j-swwGQv9w4A
 
 Graph Embedding之如何使用DeepWalk从图中提取特征
+
+# 视频处理+
+
+https://mp.weixin.qq.com/s/vuhoK4cVaHDn6oTuGqX_Eg
+
+你写脚本，AI自动剪视频：13分钟完成剪辑师7小时创作，清华北航联手打造
+
+https://mp.weixin.qq.com/s/IZs9Ctktmvzi_SAU9kD7Gg
+
+多模态人物识别技术及其在爱奇艺视频场景中的应用
+
+https://mp.weixin.qq.com/s/_OTvNrUtbYaFvKlMxFXoDg
+
+时间可以是二维的吗？基于二维时间图的视频内容片段检测
+
+https://mp.weixin.qq.com/s/8N09Argm9sNJRYipq3Mipw
+
+淘宝如何拥抱短视频时代？视频推荐算法实战
+
+https://mp.weixin.qq.com/s/1h9QvZirPa7EZIpOcC_aiw
+
+超清还不够，商汤插帧算法让视频顺滑如丝
+
+https://mp.weixin.qq.com/s/adUW9QuXaJ9uIb7Co5j_gw
+
+视频物体分割算法：如何提升复杂场景的分割精度？
+
+https://mp.weixin.qq.com/s/mASzImKwlpX7BJZFux3Adw
+
+视频预测领域有哪些最新研究进展？

@@ -222,6 +222,10 @@ https://mp.weixin.qq.com/s/T-2qNlUFciC77uOJG31utQ
 
 图像分区域合成，这个新方法实现了人脸的“精准整容”
 
+https://mp.weixin.qq.com/s/Y0FGO06IhJYu_QbV0IlyTw
+
+当达摩院大牛学会抠图，这一切都不受控制了……
+
 # ESN
 
 Echo State Network

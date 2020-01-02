@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十五）——Probabilistic Robotics, 推荐算法中的常用排序算法
+title:  机器学习（三十五）——Probabilistic Robotics
 category: ML 
 ---
 
@@ -189,81 +189,3 @@ https://mp.weixin.qq.com/s/na0vVhECfBppTb7BmhRyzA
 https://mp.weixin.qq.com/s/v460ql4RnJGbzbV0iZH4kA
 
 深度解读卡尔曼滤波原理
-
-# 推荐算法中的常用排序算法
-
-## Pointwise方法
-
-Pranking (NIPS 2002), OAP-BPM (EMCL 2003), Ranking with Large Margin Principles (NIPS 2002), Constraint Ordinal Regression (ICML 2005)。
-
-## Pairwise方法
-
-Learning to Retrieve Information (SCC 1995), Learning to Order Things (NIPS 1998), Ranking SVM (ICANN 1999), RankBoost (JMLR 2003), LDM (SIGIR 2005), RankNet (ICML 2005), Frank (SIGIR 2007), MHR(SIGIR 2007), Round Robin Ranking (ECML 2003), GBRank (SIGIR 2007), QBRank (NIPS 2007), MPRank (ICML 2007), IRSVM (SIGIR 2006)。
-
-## Listwise方法
-
-LambdaRank (NIPS 2006), AdaRank (SIGIR 2007), SVM-MAP (SIGIR 2007), SoftRank (LR4IR 2007), GPRank (LR4IR 2007), CCA (SIGIR 2007), RankCosine (IP&M 2007), ListNet (ICML 2007), ListMLE (ICML 2008) 。
-
-## LambdaMART
-
-https://www.zhihu.com/question/41418093
-
-求解LambdaMART的疑惑？
-
-https://liam0205.me/2016/07/10/a-not-so-simple-introduction-to-lambdamart/
-
-LambdaMART不太简短之介绍
-
-http://blog.csdn.net/huagong_adu/article/details/40710305
-
-Learning To Rank之LambdaMART的前世今生
-
-## 参考
-
-https://mp.weixin.qq.com/s/YjYVE6jzySVsZmXSPivB5w
-
-达观数据搜索引擎排序实践（上篇）
-
-https://mp.weixin.qq.com/s/UpN7tAMjbFLSPcDYsWaykg
-
-达观数据搜索引擎排序实践（下篇）
-
-https://mp.weixin.qq.com/s/xigME-griWFwEvvPNqWuvg
-
-美团点评联盟广告的场景化定向排序机制
-
-https://blog.csdn.net/stdcoutzyx/article/details/50879219
-
-Learning to Rank简介
-
-http://www.cnblogs.com/wentingtu/archive/2012/03/13/2393993.html
-
-Learning to Rank入门小结
-
-https://mp.weixin.qq.com/s/dRaiYPIdh_oJcQD-UxAlkA
-
-优秀的排序算法如何成就了伟大的机器学习技术
-
-https://mp.weixin.qq.com/s/XT4_E2d2gr1T8jCo82ix4A
-
-深入浅出排序学习：写给程序员的算法系统开发实践
-
-https://zhuanlan.zhihu.com/p/64952093
-
-排序评价指标
-
-https://zhuanlan.zhihu.com/p/64970393
-
-PointwiseRank
-
-https://zhuanlan.zhihu.com/p/65224450
-
-PairwiseRank
-
-https://zhuanlan.zhihu.com/p/66514492
-
-ListwiseRank
-
-https://zhuanlan.zhihu.com/p/69246361
-
-基于query的排序

@@ -292,6 +292,10 @@ https://mp.weixin.qq.com/s/hWPX-lR3Eo46ofMNC2_5oQ
 
 有关诺奖的故事：简单的电学实验，造就了一个有趣的研究领域
 
+https://mp.weixin.qq.com/s/iGebSkPLeR9Vc2VmeHALfw
+
+尿尿尿的到处都是？我总结了男生尿尿的最强攻略！
+
 ## 空气动力学
 
 https://mp.weixin.qq.com/s/ei84HDZIkXQr2k0ghlN_Mw

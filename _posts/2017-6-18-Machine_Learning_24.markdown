@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十四）——单分类SVM&多分类SVM, Stacking, 用户画像, 特征工程, 图论
+title:  机器学习（二十四）——单分类SVM&多分类SVM, Stacking, 特征工程, 图论
 category: ML 
 ---
 
@@ -164,36 +164,6 @@ SVM的概率输出（Platt scaling）
 https://mp.weixin.qq.com/s/lYj-GVNSDp26czRXbf0iNw
 
 如果你会模型融合！那么，我要和你做朋友！！
-
-# 用户画像
-
-https://mp.weixin.qq.com/s/TydTE50NzxMbGAigqv6BCw
-
-如何破解“千人千面”，深度解读用户画像
-
-https://mp.weixin.qq.com/s/bdAp_FExIK5IJH8WnD53Wg
-
-你真的懂用户画像吗？
-
-https://mp.weixin.qq.com/s/LN6ib-8b_SZHR9u_-OMwNg
-
-推荐系统眼中的你：内容画像与用户画像
-
-https://mp.weixin.qq.com/s/95Zklj8ovheQV3Gnc-2h-Q
-
-小米大数据总监司马云瑞详解小米用户画像的演进及应用解读
-
-https://mp.weixin.qq.com/s/iuchckQ-MRqSZ2QwghgPTQ
-
-浅谈“用户画像”
-
-https://mp.weixin.qq.com/s/ptI6cBxtykTQoljZR94RTw
-
-从入门到冠军：中国移动人群画像赛TOP1经验分享
-
-https://mp.weixin.qq.com/s/mSBwsMpOcn4RyVsyWSaYnQ
-
-用户画像必会的行为偏好计算方法
 
 # 特征工程
 

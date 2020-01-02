@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数据库, Mysql
+title:  数据库, 分布式ID生成器
 category: technology 
 ---
 
@@ -222,174 +222,110 @@ https://mp.weixin.qq.com/s/DaspXFLPASYE7N0WHllcYQ
 
 Cassandra的过去、现在、未来
 
-# Mysql
+https://mp.weixin.qq.com/s/ufficZ7cCvRFdEpaAfm8Fg
 
-## 安装
+面试官问：讲讲高并发下的接口幂等性怎么实现？
 
-`sudo apt-get install mysql-server mysql-client mysql-workbench`
+# 分布式ID生成器
 
-其中，mysql-workbench是一个查看mysql的GUI工具。
+http://mp.weixin.qq.com/s/Bk5k6vRG4Rq4iCtmtYDEGQ
 
-安装过程中，会提示输入root用户的密码。注意：这里的root是mysql的登录帐号，而不是系统的登录帐号。
+Leaf——美团点评分布式ID生成系统
 
-·/etc/my.cnf是默认的MySQL配置文件。
+https://mp.weixin.qq.com/s/6J7n3udEyQvUHRHwvALNYw
 
-## 常用操作
+Leaf：美团分布式ID生成服务开源
 
-登录方法：
+https://mp.weixin.qq.com/s/_z0-90xbsCd4Pdi6UlEvnA
 
-`mysql -h 192.168.4.251 -u root -p`
+分布式ID生成器
 
-语句以“;”结尾。
+https://mp.weixin.qq.com/s/Yk2ZlGCEINGrsTfHI6zpsw
 
-| 名称 | 操作 |
-|:--|:--|
-| 添加用户 | insert into mysql.user(Host,User,Password) <br/>values("localhost","test",password("1234")); |
-| 列出所有数据库 | show database; |
-| 切换数据库 | use 数据库名; |
-| 列出所有表 | show tables; |
-| 显示数据表结构 | describe 表名; |
-| 创建自增ID | create table github(id int auto_increment primary key not null,name varchar(256)); |
-| 查询头N条记录 | select * from shop_info limit N; |
-| 检索记录行 6-15 | select * from table limit 5,10; |
-| 删除记录 | delete from shop_info where shop_id="1"; |
-| 排序+别名+分组+count | select city_name,count(*) as city_count from shop_info group by city_name <br/>order by city_count desc limit 5; |
-| 两列排序+两列相乘 | select shop_id,count(*)*per_pay from shop_info order by per_pay desc,shop_id desc; |
-| 每日统计 | select count(shop_id),date(time_stamp) as dates from user_pay <br/>where shop_id='1234' group by dates order by dates asc; |
-| 年月日 | select year(ordertime),month(ordertime),day(ordertime) from book; |
-| 周数+星期几 | select week(ordertime),weekday(ordertime) from book; |
-| 统计表中的记录条数 | select count(*) from user_pay; |
-| 统计某一列中不同值的个数 | select count(distinct user_id) from user_pay; |
+分布式id生成器
 
-参考：
+# 世说新语
 
-http://www.cnblogs.com/wuhou/archive/2008/09/28/1301071.html
+## 2019.12（续）
 
-Ubuntu安装配置Mysql
+当年，福特公司请人检修电机，斯泰因梅茨在电机外壳画了一条线，让工作人员在此处打开电机迅速排除了故障。结账时，斯坦门茨要1万美元，还开了个清单：画一条线，1美元；知道在哪儿画线，9999美元。
 
-http://www.cnblogs.com/wanghetao/p/3806888.html
+Charles Proteus Steinmetz，1865~1923，德国数学家和电气工程师，后移民美国。一生有200+项专利，在交流电领域有重大贡献。因祖父和父亲遗传，他是先天性驼背。IEEE Charles Proteus Steinmetz Award就是以他名字命名的。
 
-MySQL添加用户、删除用户与授权
+----
 
-## 执行脚本
+元音大漂移（Great Vowel Shift）是英语发展史上的一次主要的语音转变，开始于14世纪，大体完成于15世纪中期，由大都会和港口城市向乡村的扩散一直持续到16世纪。转变主要体现在英语长元音的变化上。
 
-mysql命令行下执行：
+这种迁移是整体性的改变，就是某种拼写对应的所有单词全部改变了，这比一个个外来语的借此对读音造成的影响要巨大。
 
-`source a.sql`
+https://www.zhihu.com/question/21298527
 
-## 导入csv文件
+为什么英语不直接按读音书写？
 
-http://www.mysqltutorial.org/import-csv-file-mysql-table/
+----
 
-Import CSV File Into MySQL Table
+https://zhuanlan.zhihu.com/p/33956621
 
-示例：
+汉语拼音+注音符号+威妥玛拼音+国语罗马字+注音符号第二式+耶鲁拼音+通用拼音
 
-{% highlight sql %}
-LOAD DATA LOCAL INFILE 'c:/tmp/discounts.csv' 
-INTO TABLE discounts 
-FIELDS TERMINATED BY ',' 
-ENCLOSED BY '"'
-LINES TERMINATED BY '\n'
-IGNORE 1 ROWS;
-{% endhighlight %}
+----
 
-上面的语句中，LOCAL必不可少，否则会报如下错误：
+都说舞蹈能长寿，跳舞的陶金36岁走了；
 
-`ERROR 1290 (HY000): The MySQL server is running with the --secure-file-priv option so it cannot execute this statement`
+都说早锻炼能长寿，天天在中央电视台教大家早操的马华36岁走了；
 
-## 日志
+都说唱歌能长寿，歌手姚贝娜、叶丹、臧天朔、布仁巴雅尔分别于30多、40多、50多岁走了；
 
-http://www.cnblogs.com/jevo/p/3281139.html
+都说笑能长寿，一辈子幽默、说笑话的侯耀文、笑林都50多岁走了，李咏才50岁也走了；
 
-MySQL日志
+都说勤动脑，多动手指能预防老年痴呆，著名指挥家小泽征尔动脑动眼动表情，动手动脚动全身也痴呆了……
 
-## 时间的格式
+2019年11月11日，称“自然疗法大师”、鼓吹“断食排毒养生”的林海峰，在云南丽江意外身亡，终年51岁。
 
-| 名称 | 格式 |
-|:--|:--|
-| DATE | YYYY-MM-DD |
-| DATETIME | YYYY-MM-DD HH:MM:SS |
-| TIMESTAMP | YYYY-MM-DD HH:MM:SS |
-| YEAR | YYYY或YY |
+林海峰朋友向记者表示，出事前几天，林海峰在微信朋友圈发了一条动态，称自己吃了一包过期的红枣，“全身僵硬”，但他没有去医院，通过呕吐的方式，将食物吐出来后，身体恢复了正常。
 
-## 中间数据的存储
+随后，他删除了这条朋友圈动态。几天后，林海峰和一些朋友去丽江游玩，当日吃过晚饭后，林海峰突发意外倒地。被送到医院后，已经没有生命迹象，大家怀疑是“食物中毒”酿成悲剧。
 
-有的时候，SQL中间处理的结果需要存储起来，以备后用。这时有两种办法：
+----
 
-1.创建View。
+1935-1940年，因为第二次世界大战，在军事上产生了很多应用，如弹道导弹轨迹计算和模拟，如密码破解。人类现有的计算能力和速度无法满足应用的需求，出现一个新领域：Automatic Computer，自动计算机领域。
 
-{% highlight sql %}
-CREATE VIEW view_name AS
-SELECT column_name(s)
-FROM table_name
-WHERE condition;
-{% endhighlight %}
+当时在这个新领域里面几乎没有任何论文，没有任何成型的研究成果。
 
-View并不在数据库中存储数据，而是在查询时，执行其中的select语句（每次查询，都会执行），生成中间结果。因此，View从原理来说，更像是一种语法糖，而非存储机制。
+下面是两个研究人员的研究：
 
-2.使用select语句创建table。
+1. 提出问题：一个高速自动计算的机器，应该是具有什么样的结构的系统？
 
-`Create table new_table_name (Select * from old_table_name);`
+子问题：
 
-这种方法会将中间结果存储到数据库中，下次使用的时候，就无需重新生成了。但缺点是原table中的更新不会体现到新table中，只适合处理历史数据。
+a:每个结构应该有什么功能？
 
-## 模糊查询
+b.每个结构应该和其他结构有什么联系？
 
-http://www.cnblogs.com/GT_Andy/archive/2009/12/25/1921914.html
+c.计算机应该具有什么样的基本计算功能？
 
-SQL 模糊查询
+d.计算机应该如何实现基本计算功能？
 
-## 三种Join的区别
+提出这个大问题和一系列子问题的人叫冯*诺依曼。
 
-left join(左联接)返回包括左表中的所有记录和右表中联结字段相等的记录。
+2. 提出问题：自动计算机的运算和人脑的运算有什么异同？
 
-right join(右联接)返回包括右表中的所有记录和左表中联结字段相等的记录。
+子问题：
 
-inner join(等值连接)只返回两个表中联结字段相等的行。
+a. 什么是人类智能？
 
-http://www.cnblogs.com/pcjim/articles/799302.html
+b.人类智能如何分类？如何测定？
 
-sql之left join、right join、inner join的区别
+c. 如何测定机器“智能”和人类智能的接近程度？
 
-## 查询语句的执行顺序
+提出这个问题的人叫图灵。
 
-![](/images/img3/sql.png)
+----
 
-https://mp.weixin.qq.com/s/CMcgybfgya7ftTUeUFigKg
+Ola和Makinde谁是第一个FB黑人工程师不清楚，但是两个人都在硅谷有着极大的影响。Makinde先是加入Pinterest成为它的早期员工，为Pinterest爆炸性的增长立下汗马功劳，现在自己创办了/dev/color帮助其他有色人种进入到IT行业，Ola在FB近十年，留下了代码提交数量多年无人能破的纪录，现在退休正在享受甜蜜的私人生活。
 
-SQL查询语句总是先执行SELECT？你们都错了
+----
 
-## 参考
+https://www.zhihu.com/question/55530692/answer/790409921
 
-https://mp.weixin.qq.com/s/ok6VD1b5fhG_mY9O3d_VGA
-
-记住，永远不要在MySQL中使用“utf8”
-
-https://mp.weixin.qq.com/s/duYi1Y5jEWSPQbO3Bgsrrw
-
-SQL Server与MySQL中排序规则与字符集相关知识的一点总结
-
-https://mp.weixin.qq.com/s/N7-8vtVUg3MRY2u_NYpAiA
-
-一份值得收藏的的MySQL规范
-
-https://mp.weixin.qq.com/s/YX1XqKVfPS9DpMi_gTFNiA
-
-1000行MySQL学习笔记
-
-https://www.cnblogs.com/andy6/p/6959028.html
-
-从Oracle迁移到MySQL的各种坑及自救方案
-
-https://mp.weixin.qq.com/s/txbusDvTKwFZdX94kDp7VQ
-
-10个不为人知的SQL技巧
-
-https://mp.weixin.qq.com/s/qquMk4M81Pjw9fxkostf4Q
-
-小米：Mysql数据实时同步实践
-
-https://shockerli.net/post/1000-line-mysql-note/
-
-一千行MySQL学习笔记
+阿富汗历史

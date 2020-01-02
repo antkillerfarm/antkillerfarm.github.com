@@ -218,6 +218,10 @@ https://zhuanlan.zhihu.com/p/91031332
 
 用腻了CRF，试试LAN吧？
 
+https://zhuanlan.zhihu.com/p/100576406
+
+条件随机场及Mininum Risk Training
+
 ## BiLSTM+CRF
 
 ![](/images/img2/BiLSTM_CRF.jpg)

@@ -1,281 +1,397 @@
 ---
 layout: post
-title:  推荐系统的工程细节
-category: AI 
+title:  推荐系统（一）——推荐系统进阶, 常用排序算法
+category: Recommender System 
 ---
 
-# 推荐系统的工程细节
+# 推荐系统进阶
 
-推荐系统不仅是算法，还包括若干工程细节。这些细节虽然不算复杂，够不上算法的层面，然而对产品的成败，却有举足轻重的作用。
+除了《机器学习（十六～十七）》提及的ALS和PCA之外，相关的算法还包括：
 
-## 一般架构
+## FM：Factorization Machines
 
-![](/images/article/suggest.png)
+Factorization Machines是Steffen Rendle于2010年提出的算法。
 
-## 用户数据
+>注：Steffen Rendle，弗赖堡大学博士，现为Google研究员。libFM的作者，被誉为推荐系统的新星。
 
-用户自然特征：性别，年龄，地域，教育水平，出生日期，职业，星座
+FM算法实际上是一大类与矩阵分解有关的算法的广义模型。
 
-用户兴趣特征：兴趣爱好，使用网站，浏览/收藏内容，互动内容，品牌偏好，产品偏好
+参考文献1是Rendle本人的论文，其中有章节证明了SVD++、PITF、FPMC等算法，都是FM算法的特例。《机器学习（十四）》中提到的ALS算法，也是FM的特例。
 
-用户社会特征：婚姻状况，家庭情况，社交/信息渠道偏好
-
-用户消费特征：收入状况，购买力水平，已购商品，购买渠道偏好，最后购买时间，购买频次
-
-## 评价推荐质量
-
-以今日头条类的新闻推荐为例，评估指标一般为：
-
-1.平均转化率（点击量/曝光量）
-
-2.人均阅读篇数（点击PV/点击UV）
-
-3.平均阅读完成率
-
-4.人均阅读时长（这个会受文章长度影响）
-
-5.用户互动数据（评论、分享）
-
-对评估指标的选取一般遵循以下原则：
-
-1.用户满意度。
-
-2.预测准确度。
-
-3.覆盖率。
-
-4.多样性。
-
-5.新颖性。
-
-6.惊喜度。
-
-7.信任度。
-
-8.实时性
-
-9.鲁棒性
-
-测试方法一般包括：
-
-A/B测试、双盲交叉验证
-
-需要思考的问题
-
-1.新用户/新商品的冷启动问题。
-
-2.马太效应问题。这在推荐算法中也叫做banana problem。原因是在美国这边的超市，几乎所有人都爱买banana，因为最便宜，也好吃也健康。所以过多的数据量可能会导致一个超市推荐算法疯狂推荐Banana给所有人。
-
-PS：NLP领域的TF-IDF算法可有效防止马太效应问题。
-
-按照道理来讲，推荐系统要做的事情其实是“推荐用户希望看到的东西”，但是“用户希望看到的东西”落实到指标上，可就让人头大了。
-
-以新闻推荐为例。你说究竟要得到什么呢？
-
-高CTR？那么擦边球的软色情以及热门文章就会被选出来。
-
-高Staytime？那么视频+文章feed流就退化为视频feed流
-
-高read/U？那么短文章就会被选出来。
-
-exploration & exploitation，简单说，就是保证精准推荐的同时，进行兴趣探索。
-
-一说大家都明白了，这不就是所有推荐系统做的最差的地方吗？我看了一个东西，就使劲出一个东西，App明明很多东西，我却越用越窄。
-
-这个问题更加玄学，更加让人无奈。EE要不要做？
-
-肯定要做，你不能让用户只能看到一类新闻，这样久了他的feed流只会越来越小，自己也觉得没劲，所以一定要做兴趣探索。
-
-但是做，就势必牺牲指标，探索的过程是艰难的，大部分时间用户体验上也是负向的。
-
-那么，牺牲多少ctr来保EE才算是合适的？EE的ROI什么时候算是>1的？怎么样确定EE的效果？EE要E到什么程度？
-
-对于新业务线暂时不要以GMV为导向，可以从流量或转化率的角度入手，选取CTR作为核心指标；对于比较稳定的业务线则以GMV为导向，选取UV价值作为核心指标。
+参考文献2是国人写的中文说明，相对浅显一些。
 
 参考：
 
-https://www.zhihu.com/question/26990692
+https://www.ismll.uni-hildesheim.de/pub/pdfs/Rendle2010FM.pdf
 
-类似今日头条这样的个性化推荐网站怎么评价推荐质量的优劣？
+http://blog.csdn.net/itplus/article/details/40534885
 
-https://www.zhihu.com/question/19660417
+Factorization Machines 学习笔记（一）预测任务
 
-为什么那么多牛人成天在研究讨论算法，系统自动推荐的东西还是不能令人满意呢？
+https://tech.meituan.com/deep-understanding-of-ffm-principles-and-practices.html
 
-https://mp.weixin.qq.com/s/EGorUTYz09PYU3CdU_qwDA
+深入FFM原理与实践
 
-如何省时省力验证模型效果？达观数据在线分层实验平台给你支招
+https://github.com/aksnzhy/xlearn
 
-https://mp.weixin.qq.com/s/S9AjPkYLzRQpg5evyaoleQ
+这是一个集成了FM和FFM等算法的库
 
-推荐系统的工程实现
+https://mp.weixin.qq.com/s/MEjhJycDwssvzXm7DaSp7Q
 
-https://mp.weixin.qq.com/s/cjo5MYa-t9tWDCjwDpkOeg
+推荐系统召回模型之全能的FM模型
 
-推荐系统评估
+https://mp.weixin.qq.com/s/zIvzGpHNnm7WRgDmtdFd-w
 
-https://mp.weixin.qq.com/s/M0-TIuZBIYi4xGv5SkN6xw
+Factorization Machines因子分解机详解
 
-利用高效率的补贴策略驱动用户增长
+https://mp.weixin.qq.com/s/SlflfdqSIZGR59ch50DIAA
 
-## 召回
+因子分解机
 
-这个词在推荐系统中至少有三个不同的含义：
+https://mp.weixin.qq.com/s/qynApDntA9xiGRBQpoIsjQ
 
-1.recall。ML领域的查全率也称召回率。参见《机器学习（二十二）》。
+FFM：Field-aware Factorization Machines
 
-2.match。指对大量的物品做一个初选，针对每一个用户形成个性化侯选集。
+## PITF
 
-3.产品召回，流失客户召回。这个和通常汉语中意思一致，表示失而复得/得而复失。
+配对互动张量分解（Pairwise Interaction Tensor Factorization）算法，也是最早由Rendle引入推荐系统领域的。
 
-## 术语
+论文：
 
-GMV(Gross Merchandise Volume)成交额
+http://www.wsdm-conference.org/2010/proceedings/docs/p81.pdf
 
-![](/images/article/pv.jpg)
+## 其他
 
-CTR（Click-Through-Rate）即点击通过率，是互联网广告常用的术语，指网络广告（图片广告/文字广告/关键词广告/排名广告/视频广告等）的点击到达率，即该广告的实际点击次数除以广告的展现量。
+https://mp.weixin.qq.com/s/7yjA3_oCI5nSH4tv04BIhQ
 
-RTB（Real Time Bidding，实时竞价）
+HFT
 
-eCPM（千次展示期望收入）
+https://mp.weixin.qq.com/s/gHKOArFzUM9Zn8hEsA-1wQ
 
-CPM（Cost per mille）
+FISM
 
-CPC（Cost per click）
+https://mp.weixin.qq.com/s/VymwTuKq86JP2PL4v8LyyQ
 
-CPA（Cost per action）
+POI by Friends
 
-CPT（按展现时间收费）、CPL（按潜在线索收费）、CPS（按成功销售收费）
+https://mp.weixin.qq.com/s/LnV-Oq3pCCeMk9RRhha-Aw
 
-ROI（return on investment）投资回报率
+GLSLIM
 
-$$同比=\frac{2010.12}{2009.12}$$
+https://mp.weixin.qq.com/s/xnJq-aBAZW22tP7RQylKLw
 
-$$环比=\frac{2010.12}{2010.11}$$
+iCD
 
-## 数据埋点
+https://mp.weixin.qq.com/s/-IPwfrBz1dtYDupuGv4IjQ
 
-数据埋点是数据产品经理、数据运营以及数据分析师，基于业务需求或产品需求对用户在应用内产生行为的每一个事件对应的页面和位置植入相关代码，并通过采集工具上报统计数据，以便相关人员追踪用户行为，推动产品优化或指导运营的一项工程。
+Ensemble
+
+https://mp.weixin.qq.com/s/SC8kNYvexetmDuxfQvwSDw
+
+CKE
+
+https://mp.weixin.qq.com/s/bu9rSno_WmHHisE3lzYnqg
+
+ConvMF
+
+https://mp.weixin.qq.com/s/opJtn5mPVjnfRwr5UZ4aJg
+
+FTRL原理与工程实践
+
+http://www.cnblogs.com/EE-NovRain/p/3810737.html
+
+各大公司广泛使用的在线学习算法FTRL详解
+
+## 稀疏性
+
+稀疏性问题的本质数据的不完备。我们研究稀疏性问题的意义就是使得整个推荐系统中的内容不再沉淀在冗余的空间里，而不被利用。目前推荐系统稀疏性问题的方法主要是使用多级关联规则挖掘方法、ICHM 算法、或者是矩阵聚类、信任度传播策略。其中 ICHM 算法是针对项目采用了传递关联来解决稀疏性，与之类似的还有 UCHM 算法，这个是对用户概貌进行聚类。
+
+## 冷启动
+
+冷启动问题是由于新进用户或者内容尚未建立起内容关联而导致推荐效果差的情况。
+
+目前有两种解决方向：
+
+- 一个是不考虑内容的解决方案，比如说利用随机推荐，当一个新进用户开始使用系统时，给他随机地推荐一些内容，这样子不断地积累此用户概貌，然后慢慢养成，慢慢调教，直到推荐出用户喜欢的内容。除了随机推荐法之外，还有平均值法、众数法、信息熵法等相关解决办法。
+
+- 另一种方案是考虑内容的解决方案，比如说结合机器学习的相关方法或者是统计学上的一些策略模型进行解决。
 
 参考：
 
-https://zhuanlan.zhihu.com/p/53522063
+https://mp.weixin.qq.com/s/ll2Nx7_1Sg7XfuiH-OQnWA
 
-数据产品经理需要掌握的产品埋点方法
+推荐系统如何冷启动？
 
-## A/B Testing
+https://mp.weixin.qq.com/s/ecAA43az0-6UIEPR_maNAw
 
-https://mp.weixin.qq.com/s/fB3AFUiS4nFmqXpSnOpf4w
+推荐系统之冷启动问题
 
-如何选择上班路线最省时间？从A/B测试数学原理说起
+https://mp.weixin.qq.com/s/ycxigg0HbiOTRUBPAWk21Q
 
-https://cn.udacity.com/course/ab-testing--ud257
+推荐系统中的冷启动问题和探索利用问题
 
-A/B测试
+https://mp.weixin.qq.com/s/82REVmDV5cfeQP766qOZmw
 
-https://exp-platform.com/2017abtestingtutorial/
+推荐系统冷启动
 
-A/B Testing
+https://mp.weixin.qq.com/s/x9uDExR-Un8fAI43TOQ7CA
 
-https://zhuanlan.zhihu.com/p/68509372
-
-Netflix推荐系统模型的快速线上评估方法——Interleaving
-
-https://mp.weixin.qq.com/s/gEET3mcI4VTLLg5ICQL2xQ
-
-如何通过A/B测试实现用户有效增长？
-
-https://mp.weixin.qq.com/s/zBUy_k2lyK0mqMMxm01w6w
-
-推荐系统评估
+个性化推荐系统入门指南
 
 ## 参考
 
-https://mp.weixin.qq.com/s/vpANPrl86Ou2fBVHgLXtBQ
+https://zhuanlan.zhihu.com/p/95350982
 
-京东电商推荐系统实践
+推荐算法三视角:矩阵，图，时间线
 
-https://mp.weixin.qq.com/s/oKayc5612vVm9k8hu50GNw
+https://mp.weixin.qq.com/s/q9FU19Hpw2eWLLhsY5lYJQ
 
-当个不“佛系”的推荐系统，CTR预估要做哪些工作？
+parameter-free contextual bandits
 
-https://mp.weixin.qq.com/s/env2bFsEWZjxB87GK8QqvQ
+https://mp.weixin.qq.com/s/T-yCjebTzc_t6D4o5gyQLQ
 
-Hulu：视频广告系统中的算法实践
+Collaborative Metric Learning
 
-https://mp.weixin.qq.com/s/Eih4J51C8Eh-cuZ8vznESg
+https://mp.weixin.qq.com/s/9xxLU51eqhc6C81jzHQijQ
 
-当推荐遇到社交：美图的推荐算法设计优化实践
-https://mp.weixin.qq.com/s/WWqaCRtsSqfvO-qDLvehdg
-https://mp.weixin.qq.com/s/8jcaMIwNJQ1408VM-ucr_g
+简述推荐系统中的矩阵分解
 
-快看漫画个性化推荐探索与实践
+https://mp.weixin.qq.com/s/qmkMJJkMqumbtynM4cLatw
 
-https://mp.weixin.qq.com/s/G5O4-ne2Ll4qJnKlQ_MWog
+计算广告CTR预估系列
 
-微博广告策略工程架构体系演进
+https://zhuanlan.zhihu.com/p/38117606
 
-https://mp.weixin.qq.com/s/T6eNEVJF5xLwSZ4Ui7rvZQ
+早期购买行为的分析和预测建模
 
-推荐系统应该如何保障推荐的多样性？
+https://mp.weixin.qq.com/s/nQAqEZW_TJSsbVp-kVcKGA
 
-https://mp.weixin.qq.com/s/lTYBrYJBnW_ZNEdsQ-lorw
+简谈马尔可夫模型在个性化推荐中的应用
 
-透着浓浓工业风的Facebook深度学习推荐系统论文
+https://mp.weixin.qq.com/s/Zalby_gZsxzrmBq6ZePsiQ
 
-https://mp.weixin.qq.com/s/hNz9Op4lYtaX8tznUmHd9Q
+短视频如何做到千人千面？FM+GBM排序模型深度解析
 
-OCPC广告算法在凤凰新媒体的实践探索
+https://mp.weixin.qq.com/s/hkXyqe6tDdgNuLgk3e90JQ
 
-https://mp.weixin.qq.com/s/WWqaCRtsSqfvO-qDLvehdg
+如何发现品牌潜客？目标人群优选算法模型及实践解析
 
-阿里妈妈：品牌广告中的NLP算法实践
+https://mp.weixin.qq.com/s/jCXfu6AHFWnQL118r38Zpw
 
-https://mp.weixin.qq.com/s/sboWpGTuf8rpRUz4G7PdKw
+全球顶级算法赛事Top5选手，跟你聊聊推荐系统领域的“战斗机”
 
-深度学习在美图个性化推荐的应用实践
+https://mp.weixin.qq.com/s/rzCqz2HasT5zxBQjHy13Tw
 
-https://mp.weixin.qq.com/s/QThtXNF9oIE5bXF5kaSg5w
+前深度学习时代CTR预估模型的演化之路：从LR到FFM
 
-如何优化大规模推荐？下一代算法技术JTM来了
+https://mp.weixin.qq.com/s/Sc6VR--Qzk1BpS638SpS9Q
 
-https://mp.weixin.qq.com/s/Od2_u1uP5S7htjDKuEDSTw
+盘点前深度学习时代阿里、谷歌、Facebook的CTR预估模型
 
-数据质量良莠不齐？携程是这样来做多场景下的内容智能发现的
+https://mp.weixin.qq.com/s/iEMGS1tbNPYXYIM7pKkq4A
 
-https://mp.weixin.qq.com/s/FXlxT6qSridawZDIdGD1mw
+达观数据：计算广告系统算法与架构综述
 
-UC信息流推荐模型在多目标和模型优化方面的进展
+https://mp.weixin.qq.com/s/pWcFuOecG-dZHZ365clDjg
 
-https://mp.weixin.qq.com/s/b8DkQWZbUc5-jzWKBd8iUA
+阿里妈妈新突破！深度树匹配如何扛住千万级推荐系统压力
 
-深度学习技术在美图个性化推荐的应用实践
+https://mp.weixin.qq.com/s/R6-y-W0CGhlEUPXDkYdtJw
 
-https://mp.weixin.qq.com/s/R0GG6Kg-h50RTRU6DIrZCg
+Item-Based协同过滤算法
 
-爱奇艺效果广告的个性化探索与实践
+https://mp.weixin.qq.com/s/C5cokipqnSsgg53chbi3oA
 
-https://mp.weixin.qq.com/s/QqWGdVGVxSComuJT1SDo0Q
+我是怎么走上推荐系统这条（不归）路的……
 
-360展示广告召回系统的演进
+https://mp.weixin.qq.com/s/RA6Elm6C4gnlg0wIOnvlug
 
-https://mp.weixin.qq.com/s/zxFGxnQk016Kh72XyPDSSg
+一步步构建推荐系统
 
-阿里文娱首次公开！AI如何对爆款内容未卜先知？
+https://mp.weixin.qq.com/s/WV0igXcxFuTNKU5MvZrl0Q
 
-https://mp.weixin.qq.com/s/b0_o4lHOxs7v4PCCL_I4DA
+再谈亚马逊Item-based推荐系统
 
-Instagram推荐系统：每秒预测9000万个模型是怎么做到的？
+https://mp.weixin.qq.com/s/mXE3f2ZO6wQRSURZGmyBpQ
 
-https://mp.weixin.qq.com/s/ZggfBVw0Z0ODxjqAC4-Lbg
+产品聚类
 
-淘宝搜索模型如何全面实时化？
+https://mp.weixin.qq.com/s/lvbXtLfa6Z4h_5lCHKn_6A
 
-https://mp.weixin.qq.com/s/SPtNy_1_6fiFXKukMmVPlA
+CTR点击率预估之经典模型回顾
 
-深度学习在网易严选智能客服中的应用
+https://mp.weixin.qq.com/s/GowWRaE5mZoPVAPK6_AkrA
 
-https://mp.weixin.qq.com/s/dw988NgHl93B8sC2UFjtPg
+如何构建可解释的推荐系统？
 
-推荐系统之数据与特征工程
+https://mp.weixin.qq.com/s/7QrSSEiLjmGjNhFfU6ue0A
+
+推荐系统产品与算法概述
+
+https://mp.weixin.qq.com/s/49o_AobVNs_9Lgm4qbQcPA
+
+一文全面了解基于内容的推荐算法
+
+https://mp.weixin.qq.com/s/uxi0OTxjmn047fE8nbYplw
+
+推荐系统：石器与青铜时代
+
+https://zhuanlan.zhihu.com/p/74978160
+
+揭开Top-N经典算法SLIM和FISM之谜
+
+https://mp.weixin.qq.com/s/S9-GgQTlx2c14mN_3kNQiQ
+
+基于标签的实时短视频推荐系统
+
+https://mp.weixin.qq.com/s/sw16_sUsyYuzpqqy39RsdQ
+
+阿里妈妈深度树检索技术（TDM）及应用框架的探索实践
+
+https://mp.weixin.qq.com/s/_zSe_Ia4DPrFKqsqW3iQ8w
+
+电商推荐那点事
+
+https://mp.weixin.qq.com/s/frEjB8SznDzJxOL3bkHnYw
+
+矩阵分解推荐算法
+
+http://www.infoq.com/cn/articles/we-are-bringing-learning-to-rank-to-elasticsearch
+
+在Elasticsearch中应用机器学习排序LTR
+
+https://mp.weixin.qq.com/s/IrpIMNxQ4frgBKl5pbsfdg
+
+达观数据：用好学习排序(LTR),资讯信息流推荐效果翻倍
+
+https://mp.weixin.qq.com/s/8vdl8QOJNTP6Wekm4LR3mA
+
+LTR那点事—AUC及其与线上点击率的关联详解
+
+https://mp.weixin.qq.com/s/MtnHYmPVoDAid9SNHnlzUw
+
+阿里妈妈首次公开自研CTR预估核心算法MLR
+
+https://mp.weixin.qq.com/s/G5a0YK39RZzgce_szbwoTA
+
+你点一次广告，会创造多少价值？
+
+https://mp.weixin.qq.com/s/zXABOzbQRV7sfgAhr_WqZw
+
+跨领域推荐系统文献综述（上）
+
+https://mp.weixin.qq.com/s/OxUCIhoIED_Z1Cf91Va36g
+
+跨领域推荐系统文献综述（下）
+
+https://mp.weixin.qq.com/s/PwIDOeC-wPshZkGet1pE2w
+
+基于朴素ML思想的协同过滤推荐算法
+
+https://mp.weixin.qq.com/s/lScxlqHARGYbs1eD3ZuEAQ
+
+推荐系统-大规模信息网络Embedding表征学习
+
+https://blog.csdn.net/yz930618/article/details/84862751
+
+《基于行列式点过程的推荐多样性提升算法》原理详解
+
+https://mp.weixin.qq.com/s/NJIEqlW4oKfEon3YXc1U6g
+
+混合推荐系统介绍
+
+# 推荐算法中的常用排序算法
+
+## Pointwise方法
+
+Pranking (NIPS 2002), OAP-BPM (EMCL 2003), Ranking with Large Margin Principles (NIPS 2002), Constraint Ordinal Regression (ICML 2005)。
+
+## Pairwise方法
+
+Learning to Retrieve Information (SCC 1995), Learning to Order Things (NIPS 1998), Ranking SVM (ICANN 1999), RankBoost (JMLR 2003), LDM (SIGIR 2005), RankNet (ICML 2005), Frank (SIGIR 2007), MHR(SIGIR 2007), Round Robin Ranking (ECML 2003), GBRank (SIGIR 2007), QBRank (NIPS 2007), MPRank (ICML 2007), IRSVM (SIGIR 2006)。
+
+## Listwise方法
+
+LambdaRank (NIPS 2006), AdaRank (SIGIR 2007), SVM-MAP (SIGIR 2007), SoftRank (LR4IR 2007), GPRank (LR4IR 2007), CCA (SIGIR 2007), RankCosine (IP&M 2007), ListNet (ICML 2007), ListMLE (ICML 2008) 。
+
+## LambdaMART
+
+https://www.zhihu.com/question/41418093
+
+求解LambdaMART的疑惑？
+
+https://liam0205.me/2016/07/10/a-not-so-simple-introduction-to-lambdamart/
+
+LambdaMART不太简短之介绍
+
+http://blog.csdn.net/huagong_adu/article/details/40710305
+
+Learning To Rank之LambdaMART的前世今生
+
+## 参考
+
+https://mp.weixin.qq.com/s/YjYVE6jzySVsZmXSPivB5w
+
+达观数据搜索引擎排序实践（上篇）
+
+https://mp.weixin.qq.com/s/UpN7tAMjbFLSPcDYsWaykg
+
+达观数据搜索引擎排序实践（下篇）
+
+https://mp.weixin.qq.com/s/xigME-griWFwEvvPNqWuvg
+
+美团点评联盟广告的场景化定向排序机制
+
+https://blog.csdn.net/stdcoutzyx/article/details/50879219
+
+Learning to Rank简介
+
+http://www.cnblogs.com/wentingtu/archive/2012/03/13/2393993.html
+
+Learning to Rank入门小结
+
+https://mp.weixin.qq.com/s/dRaiYPIdh_oJcQD-UxAlkA
+
+优秀的排序算法如何成就了伟大的机器学习技术
+
+https://mp.weixin.qq.com/s/XT4_E2d2gr1T8jCo82ix4A
+
+深入浅出排序学习：写给程序员的算法系统开发实践
+
+https://zhuanlan.zhihu.com/p/64952093
+
+排序评价指标
+
+https://zhuanlan.zhihu.com/p/64970393
+
+PointwiseRank
+
+https://zhuanlan.zhihu.com/p/65224450
+
+PairwiseRank
+
+https://zhuanlan.zhihu.com/p/66514492
+
+ListwiseRank
+
+https://zhuanlan.zhihu.com/p/69246361
+
+基于query的排序
+
+# 用户画像
+
+https://mp.weixin.qq.com/s/TydTE50NzxMbGAigqv6BCw
+
+如何破解“千人千面”，深度解读用户画像
+
+https://mp.weixin.qq.com/s/bdAp_FExIK5IJH8WnD53Wg
+
+你真的懂用户画像吗？
+
+https://mp.weixin.qq.com/s/LN6ib-8b_SZHR9u_-OMwNg
+
+推荐系统眼中的你：内容画像与用户画像
+
+https://mp.weixin.qq.com/s/95Zklj8ovheQV3Gnc-2h-Q
+
+小米大数据总监司马云瑞详解小米用户画像的演进及应用解读

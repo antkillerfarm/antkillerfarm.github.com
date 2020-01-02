@@ -6,6 +6,26 @@ category: DL
 
 # 深度推荐系统（续）
 
+https://zhuanlan.zhihu.com/p/49410727
+
+利用分类学数据来增强序列推荐的能力
+
+https://mp.weixin.qq.com/s/jdRu-cishwV8qBmGLTFJCA
+
+美团“猜你喜欢”深度学习排序模型实践
+
+https://mp.weixin.qq.com/s/u7GJstj5E_7y1rwkUbpAXg
+
+推荐系统的可解释性浅谈
+
+https://mp.weixin.qq.com/s/3j367YCViJtY9iB386p8jA
+
+简洁易用可扩展，一个基于深度学习的CTR模型包
+
+https://mp.weixin.qq.com/s/hxwyVCjK40urSTUZoDsQig
+
+Deep Neural Network for YouTube Recommendations
+
 https://mp.weixin.qq.com/s/fiUcm143ieCe3KkcJ0V5LQ
 
 京东如何在仓储库存部署时保证“啤酒尿裤”的高效履约？
