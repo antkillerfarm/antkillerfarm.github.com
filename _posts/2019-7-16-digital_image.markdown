@@ -410,6 +410,10 @@ https://mp.weixin.qq.com/s/U9vnEzumNgGlYFR-lEPfhw
 
 智能边缘计算：计算模式的再次轮回
 
+https://mp.weixin.qq.com/s/x6MWXZAFgyv2HDaVll9S6A
+
+一文读懂边缘计算和业务场景
+
 # Autoware
 
 Autoware是另一个开源的无人驾驶平台。不像Apollo，没有百度这样的强势公司的介入，社区氛围更浓一些，相对的，功能也要弱一些。

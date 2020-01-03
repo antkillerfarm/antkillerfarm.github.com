@@ -258,6 +258,20 @@ https://mp.weixin.qq.com/s/iBWjobr9srhB3MTiE_Wwmg
 
 史上最强Atari游戏通关算法：蒙特祖玛获分超过200万！
 
+# PILCO
+
+https://zhuanlan.zhihu.com/p/27537744
+
+基于模型的强化学习方法 PILCO及其扩展（一）
+
+https://zhuanlan.zhihu.com/p/27539273
+
+基于模型的强化学习方法 PILCO及其扩展（二）
+
+https://zhuanlan.zhihu.com/p/27697260
+
+基于模型的强化学习算法PILCO及其扩展（三）
+
 # OpenAI
 
 OpenAI，由诸多硅谷大亨（Elon Musk等）联合建立的人工智能非营利组织。
@@ -281,15 +295,3 @@ https://github.com/openai/baselines
 ## Gym
 
 Openai gym是一个用于开发和比较强化学习（reinforcement learning，RL）算法的工具包，与其他的数值计算库兼容，如tensorflow或者theano库。现在主要支持的是python语言，以后将支持其他语言。
-
-官网：
-
-https://gym.openai.com/
-
-{% highlight bash %}
-sudo apt install libffi-dev swig
-git clone https://github.com/openai/gym 
-cd gym
-pip install -e . # minimal install
-pip install -e .[all] # all install
-{% endhighlight %}

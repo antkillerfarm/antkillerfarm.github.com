@@ -312,11 +312,15 @@ https://mp.weixin.qq.com/s/t2EM1l7ujoSquGl2x5hBBA
 
 https://mp.weixin.qq.com/s/vJDY58Qi_-VhVMHOjGSo8w
 
-伦敦大学惊现数学神人！创造最完美打水漂方程，一块石头破吉尼斯世界纪录！看完跪了...
+伦敦大学惊现数学神人！创造最完美打水漂方程，一块石头破吉尼斯世界纪录！
 
 https://mp.weixin.qq.com/s/yghERug4kqRNxL9lDsM_vw
 
 飞机飞行原理3D动态图，形象生动解析飞行原理
+
+https://mp.weixin.qq.com/s/uTZ1OdLov1EdiKLgy2ZVtw
+
+德国惊现神操作！物理学家创造最强涡环公式！用空气打破吉尼斯世界纪录！
 
 ## Bélády's Algorithm
 

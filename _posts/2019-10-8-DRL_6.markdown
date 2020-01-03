@@ -4,9 +4,15 @@ title:  深度强化学习（六）——MARL
 category: DRL 
 ---
 
-# AlphaGo
+# AlphaGo（续）
 
-### Representation Network（续）
+### Representation Network
+
+Representation Network的主要思想来自如下论文：
+
+1.《The Predictron: End-To-End Learning and Planning》
+
+2.《Value Prediction Network》
 
 上文已经指出Model-based方法的困难在于：有的时候Model是很难刻画的，而环境本身也许并不如模拟器那么纯粹、简单。
 
@@ -14,11 +20,25 @@ category: DRL
 
 ![](/images/img3/MuZero_3.png)
 
-参考论文1的主要思路是：
+参考论文1提出了Predictron框架，它的主要思路是：
 
 - 构建一个abstract MDP model。虽然我们并不知道它的state，更不清楚它的transition，但是不要紧，假设它存在就好。
 
-- 对这个abstract MDP model应用TD(n)和TD($$\lambda$$)k-step and $$\lambda$$-weighted
+- 状态表示。(即上图中的$$s^0,s^1,\dots$$)
+
+$$\vec{s} = f(s)$$
+
+这里用$$\vec{s}$$表示系统的抽象状态以区别其实际状态s。也就是说，在系统模型中，预测的不是实际的状态s, 而是抽象的状态。
+
+- 模型预测，不只是状态流的预测，还包括立即回报和折扣因子的预测。
+
+$$\vec{s}',\vec{r},\gamma = m(\vec{s}, \beta)$$
+
+- 抽象状态$$\vec{s}$$处的值函数：
+
+$$\vec{v} = v(s)$$
+
+对这个abstract MDP model应用TD(n)和TD($$\lambda$$)算法，得到如上图所示的k-step和$$\lambda$$-weighted的预测值。
 
 ![](/images/img3/MuZero_4.png)
 
@@ -35,6 +55,10 @@ https://mp.weixin.qq.com/s/BLQF8WNsIe4a_rDeGWo_Vg
 https://www.zhihu.com/question/356976342
 
 如何评价DeepMind新提出的MuZero算法？
+
+https://zhuanlan.zhihu.com/p/31344949
+
+联合模型的强化学习算法（三）
 
 ## Leela Zero
 
@@ -295,13 +319,3 @@ R为回报函数。它描述了多智能体之间的关系。当每个智能体�
 MARL的结构一般如下图所示。
 
 ![](/images/img3/MARL_2.png)
-
-**静态博弈**：static/stateless game是指没有状态s，不存在动力学使状态能够转移的博弈。例如一个矩阵博弈。
-
-**阶段博弈**：stage game，是随机博弈的组成成分，状态s是固定的，相当于一个状态固定的静态博弈，随机博弈中的Q值函数就是该阶段博弈的奖励函数。若干状态的阶段博弈组成一个随机博弈。
-
-**重复博弈**：智能体重复访问同一个状态的阶段博弈，并且在访问同一个状态的阶段博弈的过程中收集其他智能体的信息与奖励值，并学习更好的Q值函数与策略。
-
-----
-
-MARL的目标是找到每一个状态的纳什均衡策略，然后将这些策略联合起来。

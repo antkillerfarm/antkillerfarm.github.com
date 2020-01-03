@@ -470,3 +470,7 @@ https://mp.weixin.qq.com/s/pdOVONHbjfIJPW45nEw1fg
 http://chrome.360.cn/test/html5/index.html
 
 一个用于检测浏览器对html 5支持情况的网页
+
+https://www.zhihu.com/question/59578433
+
+为什么现在又流行服务端渲染html？

@@ -307,3 +307,7 @@ https://mp.weixin.qq.com/s/hWRStNp0Gu_ZO7J1Sjr6-w
 https://mp.weixin.qq.com/s/ABNPCpgyk_2EeYwnJFFehg
 
 自动优化架构，这个算法能帮工程师设计神经网络
+
+https://mp.weixin.qq.com/s/0kGJfKARKs2TuIQ4YJYbUA
+
+比手工模型快10~100倍，谷歌揭秘视频NAS三大法宝

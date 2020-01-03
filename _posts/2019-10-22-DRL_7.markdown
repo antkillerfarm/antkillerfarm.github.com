@@ -6,6 +6,16 @@ category: DRL
 
 # MARL（续）
 
+**静态博弈**：static/stateless game是指没有状态s，不存在动力学使状态能够转移的博弈。例如一个矩阵博弈。
+
+**阶段博弈**：stage game，是随机博弈的组成成分，状态s是固定的，相当于一个状态固定的静态博弈，随机博弈中的Q值函数就是该阶段博弈的奖励函数。若干状态的阶段博弈组成一个随机博弈。
+
+**重复博弈**：智能体重复访问同一个状态的阶段博弈，并且在访问同一个状态的阶段博弈的过程中收集其他智能体的信息与奖励值，并学习更好的Q值函数与策略。
+
+----
+
+MARL的目标是找到每一个状态的纳什均衡策略，然后将这些策略联合起来。
+
 <div style="text-align: center;">
 <table>
   <tr>
@@ -344,31 +354,3 @@ https://mp.weixin.qq.com/s/P5EysBHBaR6L3IfeSgo6fw
 https://mp.weixin.qq.com/s/w3SsadgKaL8-tlzYLvMm-A
 
 讲真？一天就学会了自动驾驶——强化学习在自动驾驶的应用
-
-https://mp.weixin.qq.com/s/oyxqA_LYtze1f_YDwDZziQ
-
-从零开始自学设计新型药物，UNC提出结构进化强化学习
-
-https://zhuanlan.zhihu.com/p/41467058
-
-Policy Optimization with Demonstrations
-
-https://openreview.net/pdf?id=rJzoujRct7
-
-深度学习之斗地主
-
-https://mp.weixin.qq.com/s/qWuoo6cGLWLk4OKlunR-Og
-
-滴滴KDD 2018论文详解：基于强化学习技术的智能派单模型
-
-https://zhuanlan.zhihu.com/p/43496459
-
-解决Sparse Reward RL任务的简单回顾
-
-https://mp.weixin.qq.com/s/G99vqIYeWzgQ4kL4p77cKA
-
-用强化学习做神经机器翻译：中山大学&MSRA填补多项空白
-
-https://mp.weixin.qq.com/s/GUyZ0U5_JlXCI-5mO796SA
-
-超越DQN和A3C：深度强化学习领域近期新进展概览

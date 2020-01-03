@@ -8,6 +8,18 @@ category: DRL
 
 ## Gym（续）
 
+官网：
+
+https://gym.openai.com/
+
+{% highlight bash %}
+sudo apt install libffi-dev swig
+git clone https://github.com/openai/gym 
+cd gym
+pip install -e . # minimal install
+pip install -e .[all] # all install
+{% endhighlight %}
+
 这里选择minimal install就可以了，all install需要安装MuJoCo，而后者是收费软件。
 
 和Gym配套的还有一个算法库：
@@ -271,11 +283,3 @@ MuZero在不具备任何底层动态知识的情况下，通过结合基于树�
 - Dynamics Network。
 
 - Representation Network。
-
-### Representation Network
-
-Representation Network的主要思想来自如下论文：
-
-1.《The Predictron: End-To-End Learning and Planning》
-
-2.《Value Prediction Network》
