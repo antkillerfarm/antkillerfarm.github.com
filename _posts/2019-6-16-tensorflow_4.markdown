@@ -6,6 +6,42 @@ category: AI
 
 # TensorFlow
 
+https://mp.weixin.qq.com/s/JSZwQkyxSSwfBWKJ578j3A
+
+TensorFlow最好的入门文章
+
+https://mp.weixin.qq.com/s/68vaQRqUo8u09iheKzFVEw
+
+玩转TensorFlow深度学习
+
+https://mp.weixin.qq.com/s/Es_5KUnkDzMwf_8WD8aW3g
+
+GitHub万星：适用于初学者的TensorFlow代码资源集
+
+https://mp.weixin.qq.com/s/GaK_iSTBl7B4LTdaOtiR_Q
+
+香港科技大学TensorFlow课件分享
+
+https://mp.weixin.qq.com/s/RR3EEI8vm05EZSd7dGU__A
+
+史上最全的Tensorflow学习资源汇总，速藏！
+
+https://mp.weixin.qq.com/s/w4uo9Uodmud4FhqxRNanUw
+
+TensorFlow指南：GPU的使用
+
+https://mp.weixin.qq.com/s/gnDTOLWuPZiCVzspTk_zCQ
+
+TensorFlow轻度入门
+
+https://mp.weixin.qq.com/s/sbJdU7qMMyrSRuybTh7bKg
+
+开源中文书《TensorFlow内核剖析》，335页pdf
+
+https://mp.weixin.qq.com/s/5wy6yqaW_9pMBhgw8qDdOQ
+
+基于TensorFlow打造强化学习API
+
 https://mp.weixin.qq.com/s/MYBTWL3X_OhLZL6C4rISzw
 
 TensorFlow训练线性回归
@@ -365,31 +401,3 @@ TensorFlow sucks，有人吐槽TensorFlow晦涩难用
 https://mp.weixin.qq.com/s/_kr28kN0_1QFP8BR_wGo5w
 
 TensorFlow RNN入门
-
-https://mp.weixin.qq.com/s/WqE-FRl-Thys7tHUvFNlWQ
-
-盯住梅西：TensorFlow目标检测实战
-
-https://mp.weixin.qq.com/s/WfzlHtz0FFJMsPFwPoMqJg
-
-如何利用VGG-16等模型在CPU上测评各深度学习框架
-
-http://www.jianshu.com/p/4e16ae0aad25
-
-利用TensorFlow入门Word2Vec
-
-https://mp.weixin.qq.com/s/YJmMfBhQ3cLNUp_HHsXhGA
-
-手把手教你使用TensorFlow生成对抗样本
-
-https://mp.weixin.qq.com/s/nnjyR4XGVZQ1zXCIPzTNlg
-
-基于TensorFlow的变分自编码器实现
-
-https://mp.weixin.qq.com/s/iMgesGmdb7Jq4muCxb-nFA
-
-Tensorflow实战：Discuz验证码识别
-
-https://mp.weixin.qq.com/s/4aJUGBpPG_6Oc5EqOmM0Iw
-
-作为TensorFlow的底层语言，你会用C++构建深度神经网络吗？

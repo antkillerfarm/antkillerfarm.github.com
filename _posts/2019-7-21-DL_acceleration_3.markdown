@@ -212,6 +212,10 @@ https://zhuanlan.zhihu.com/p/56114254
 
 PAI自动混合精度训练---TensorCore硬件加速单元在阿里PAI平台落地应用实践
 
+https://mp.weixin.qq.com/s/zBtpwrQ5HtI6uzYOx5VsCQ
+
+模型训练太慢？显存不够用？这个算法让你的GPU老树开新花
+
 ## Saturate Quantization
 
 上述各种量化方法都是在保证数值表示范围的情况下，尽可能提高fl或者scale。这种方法也叫做Non-saturation Quantization。

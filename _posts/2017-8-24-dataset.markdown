@@ -356,6 +356,10 @@ https://niessner.github.io/Matterport/
 
 全球最大的3D数据集公开了！标记好的10800张全景图
 
+https://mp.weixin.qq.com/s/FciCPM8CjOwGKlltJsH0XA
+
+超全的3D视觉数据集汇总
+
 https://mp.weixin.qq.com/s/q2lsD4MSqQG-LqRmVjEHeg
 
 图像配对数据集TTL：展现人类和机器判断图像相似性的差异

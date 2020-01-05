@@ -172,6 +172,10 @@ https://mp.weixin.qq.com/s/bxJ7VCI_120psBti-j376w
 
 在ubuntu上配置tensorflow 1.7+CUDA踩过的坑
 
+https://zhuanlan.zhihu.com/p/81724891
+
+配置ubuntu18.04+cuda9.0+cudnn服务器tensorflow-gpu深度学习环境
+
 ## 基本概念
 
 **Variables**：维持计算图执行过程中的状态信息的变量。一般来说，这就是神经网络的参数。
@@ -329,25 +333,3 @@ https://github.com/deepmind/sonnet
 http://www.infoq.com/cn/articles/introduction-of-tensorflow-part06
 
 深入浅出TensorFlow（六）TensorFlow高层封装
-
-## Slim
-
-代码：
-
-tensorflow/contrib/slim
-
-示例：
-
-https://github.com/mnuke/tf-slim-mnist
-
-参见：
-
-http://geek.csdn.net/news/detail/126133
-
-如何用TensorFlow和TF-Slim实现图像分类与分割
-
-实战心得：
-
-tf-slim-mnist例子中mnist数据不是原始格式的，而是经过了`datasets/download_and_convert_mnist.py`的转换。
-
-该示例执行时也没有控制台的输出信息，一度让我觉得很不方便。后来才发现，原来可以用TensorBoard查看log文件夹。

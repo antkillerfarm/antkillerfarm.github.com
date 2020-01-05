@@ -70,3 +70,6 @@ https://mp.weixin.qq.com/s/vuRRcnlTugsUcfW5D5uYyA
 
 旷视研究院提出TextScanner：确保字符阅读顺序，实现文字识别新突破
 
+https://mp.weixin.qq.com/s/huvQszaBcVOxUEz0tJ_Psg
+
+基于OCR的身份证要素提取​​

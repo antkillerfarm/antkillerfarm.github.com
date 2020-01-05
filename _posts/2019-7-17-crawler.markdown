@@ -346,6 +346,10 @@ https://shockerli.net/post/1000-line-mysql-note/
 
 一千行MySQL学习笔记
 
+https://mp.weixin.qq.com/s/SCW_3AypO-rSolMcjCxVtA
+
+MySQL事务隔离级别和MVCC
+
 # 世说新语
 
 ## 2019.12（续）

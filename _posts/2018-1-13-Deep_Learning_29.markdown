@@ -380,6 +380,10 @@ https://mp.weixin.qq.com/s/rTnv7XOnIvRDGDdhbuoE9g
 
 深度图相似学习综述
 
+https://mp.weixin.qq.com/s/FDWoAXGOlRxOEkvli3gd5Q
+
+55页图深度学习导论《A Gentle Introduction to Deep Learning for Graphs》
+
 https://mp.weixin.qq.com/s/Pm1HiEQOBnbo_GQ_v6Y_zw
 
 腾讯提出自适应图卷积神经网络，接受不同图结构和规模的数据

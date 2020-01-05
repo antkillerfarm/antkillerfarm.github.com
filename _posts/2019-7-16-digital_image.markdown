@@ -70,6 +70,10 @@ https://zhuanlan.zhihu.com/p/32199990
 
 深度相机原理揭秘--双目立体视觉
 
+https://mp.weixin.qq.com/s/veFDawkUJFidUFLFaykmGg
+
+双目立体视觉原理及应用
+
 http://mp.weixin.qq.com/s/MWQDwMoRc0c1ofkENzn3Ew
 
 结构光，TOF，双目视觉的异同
@@ -345,6 +349,10 @@ https://mp.weixin.qq.com/s/k9gff0Ote_V9qtN7HAruBA
 https://mp.weixin.qq.com/s/kvINl4pL4_wD71e33jaUSg
 
 下一代cmos image sensor----有机光导薄膜图像传感器
+
+https://mp.weixin.qq.com/s/byeQKa7d5FSLS7JrBwP_Zw
+
+什么是多光谱/高光谱成像
 
 # 编译原理
 

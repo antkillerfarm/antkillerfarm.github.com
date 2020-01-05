@@ -6,6 +6,28 @@ category: AI
 
 # TensorFlow
 
+## Slim
+
+代码：
+
+tensorflow/contrib/slim
+
+示例：
+
+https://github.com/mnuke/tf-slim-mnist
+
+参见：
+
+http://geek.csdn.net/news/detail/126133
+
+如何用TensorFlow和TF-Slim实现图像分类与分割
+
+实战心得：
+
+tf-slim-mnist例子中mnist数据不是原始格式的，而是经过了`datasets/download_and_convert_mnist.py`的转换。
+
+该示例执行时也没有控制台的输出信息，一度让我觉得很不方便。后来才发现，原来可以用TensorBoard查看log文件夹。
+
 ## TensorBoard
 
 TensorBoard是一个http服务，用以监控TensorFlow的执行。
@@ -353,33 +375,3 @@ core/kernels/spacetobatch_functor.cc
 此外，TFlite的实现往往更加简单：
 
 tensorflow/contrib/lite/kernels/internal/reference/reference_ops.h
-
-## TensorFlow.js
-
-https://mp.weixin.qq.com/s/dqMS4NjmNYs7IFHm8uFM8w
-
-TensorFlow发布面向JavaScript开发者的机器学习框架TensorFlow.js
-
-https://zhuanlan.zhihu.com/p/35181413
-
-TensorFlow.js人脸识别—玩转吃豆豆小游戏
-
-https://mp.weixin.qq.com/s/ebLHZAG8H78TsZUKSzAtIw
-
-TF官方博客：基于TensorFlow.js框架的浏览器实时姿态估计
-
-https://mp.weixin.qq.com/s/z6p4A4DfCuK8IBGVGwrtLQ
-
-如何利用TensorFlow.js部署简单的AI版“你画我猜”图像识别应用
-
-https://mp.weixin.qq.com/s/NO_XY-JmTpIkoC-fpkZ-qg
-
-在浏览器上也能训练神经网络？TensorFlow.js带你玩游戏~
-
-https://mp.weixin.qq.com/s/vjpMr3TsF3Lui8Q0IstQxw
-
-浏览器上跑：TensorFlow发布实时人物分割模型，秒速25帧，24个部位
-
-https://mp.weixin.qq.com/s/-BblgnvPLuqpYM8PZ7PQCQ
-
-三行代码实时追踪你的手，只要有浏览器就够了

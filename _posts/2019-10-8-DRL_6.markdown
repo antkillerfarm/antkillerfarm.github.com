@@ -38,11 +38,19 @@ $$\vec{s}',\vec{r},\gamma = m(\vec{s}, \beta)$$
 
 $$\vec{v} = v(s)$$
 
-对这个abstract MDP model应用TD(n)和TD($$\lambda$$)算法，得到如上图所示的k-step和$$\lambda$$-weighted的预测值。
+- 由回报、折扣因子和值函数计算得到估计值。这里可以对这个abstract MDP model应用TD(n)和TD($$\lambda$$)算法，得到如上图所示的k-step和$$\lambda$$-weighted的预测值。其中的g表示累计奖励值。
+
+这里的套路其实和DQN非常像，区别在于：这里既然是Model-based方法，那么自然有利用Model生成模拟样本的步骤，而DQN没有这样的步骤。
+
+如果说参考论文1还有点DQN硬往Model-based上靠的话，参考论文2的方法就优雅的多了。
 
 ![](/images/img3/MuZero_4.png)
 
+$$\mathbf{Encoding}\quad f_\theta^{enc}$$
+
 ![](/images/img3/MuZero_5.png)
+
+
 
 ![](/images/img3/MuZero_2.png)
 

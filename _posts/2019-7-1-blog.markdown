@@ -6,7 +6,7 @@ category: essay
 
 # Blog维护日志
 
-2020.1.1 文章数达到350篇。
+2020.1.1 文章数达到350篇。添加Recommender system分类。
 
 2019.11 添了一个National Taiwan University的follower。
 

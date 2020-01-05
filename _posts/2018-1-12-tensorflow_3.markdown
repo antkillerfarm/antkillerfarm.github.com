@@ -6,6 +6,36 @@ category: AI
 
 # TensorFlow
 
+## TensorFlow.js
+
+https://mp.weixin.qq.com/s/dqMS4NjmNYs7IFHm8uFM8w
+
+TensorFlow发布面向JavaScript开发者的机器学习框架TensorFlow.js
+
+https://zhuanlan.zhihu.com/p/35181413
+
+TensorFlow.js人脸识别—玩转吃豆豆小游戏
+
+https://mp.weixin.qq.com/s/ebLHZAG8H78TsZUKSzAtIw
+
+TF官方博客：基于TensorFlow.js框架的浏览器实时姿态估计
+
+https://mp.weixin.qq.com/s/z6p4A4DfCuK8IBGVGwrtLQ
+
+如何利用TensorFlow.js部署简单的AI版“你画我猜”图像识别应用
+
+https://mp.weixin.qq.com/s/NO_XY-JmTpIkoC-fpkZ-qg
+
+在浏览器上也能训练神经网络？TensorFlow.js带你玩游戏~
+
+https://mp.weixin.qq.com/s/vjpMr3TsF3Lui8Q0IstQxw
+
+浏览器上跑：TensorFlow发布实时人物分割模型，秒速25帧，24个部位
+
+https://mp.weixin.qq.com/s/-BblgnvPLuqpYM8PZ7PQCQ
+
+三行代码实时追踪你的手，只要有浏览器就够了
+
 ## Eager Execution
 
 TensorFlow的Eager Execution可立即评估操作，无需构建图：操作会返回具体的值，而不是构建以后再运行的计算图。这也就是所谓的动态图计算的概念。
@@ -31,6 +61,10 @@ Tensorflow Eager Execution入门指南
 https://github.com/snowkylin/TensorFlow-cn
 
 简单粗暴TensorFlow Eager教程
+
+https://github.com/snowkylin/tensorflow-handbook
+
+简单粗暴TensorFlow 2.0
 
 https://mp.weixin.qq.com/s/zz8XCykJ6jxbE5J4YwAkEA
 
@@ -351,59 +385,3 @@ TensorFlow/PyTorch/Sklearn实现的五十种机器学习模型
 https://mp.weixin.qq.com/s/O5vvGKHWkJQWzeiL7A_S_g
 
 TensorFlow简单介绍
-
-https://mp.weixin.qq.com/s/JSZwQkyxSSwfBWKJ578j3A
-
-TensorFlow最好的入门文章
-
-https://mp.weixin.qq.com/s/68vaQRqUo8u09iheKzFVEw
-
-玩转TensorFlow深度学习
-
-https://mp.weixin.qq.com/s/Es_5KUnkDzMwf_8WD8aW3g
-
-GitHub万星：适用于初学者的TensorFlow代码资源集
-
-https://mp.weixin.qq.com/s/GaK_iSTBl7B4LTdaOtiR_Q
-
-香港科技大学TensorFlow课件分享
-
-https://mp.weixin.qq.com/s/RR3EEI8vm05EZSd7dGU__A
-
-史上最全的Tensorflow学习资源汇总，速藏！
-
-https://mp.weixin.qq.com/s/w4uo9Uodmud4FhqxRNanUw
-
-TensorFlow指南：GPU的使用
-
-https://mp.weixin.qq.com/s/gnDTOLWuPZiCVzspTk_zCQ
-
-TensorFlow轻度入门
-
-https://mp.weixin.qq.com/s/sbJdU7qMMyrSRuybTh7bKg
-
-开源中文书《TensorFlow内核剖析》，335页pdf
-
-https://mp.weixin.qq.com/s/5wy6yqaW_9pMBhgw8qDdOQ
-
-基于TensorFlow打造强化学习API
-
-https://github.com/yahoo/TensorFlowOnSpark
-
-TensorFlow On Spark
-
-https://mp.weixin.qq.com/s/7er3wNV_IhxhFDOIwNMpww
-
-深度强化学习入门：用TensorFlow构建你的第一个游戏AI
-
-https://mp.weixin.qq.com/s/jMPVl3CWvL7MSzq5F12YxQ
-
-维度、广播操作与可视化：如何高效使用TensorFlow
-
-https://mp.weixin.qq.com/s/OmVAnkHV2aI4D4pMKyVjCQ
-
-基于TensorFlow理解三大降维技术：PCA、t-SNE和自编码器
-
-https://mp.weixin.qq.com/s/YOyOR8fdaEKcydAywcc-HA
-
-如何使用TensorFlow API构建视频物体识别系统

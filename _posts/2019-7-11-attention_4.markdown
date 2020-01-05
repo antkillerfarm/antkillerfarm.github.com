@@ -120,6 +120,26 @@ https://mp.weixin.qq.com/s/5tYuP09dtkmYYGX2R-mCPQ
 
 从transformer到albert
 
+## AR vs AE
+
+**AR**: Aotoregressive Lanuage Modeling，又叫自回归语言模型。它指的是，依据前面(或后面)出现的tokens来预测当前时刻的token，代表模型有ELMO、GTP等。
+
+$$\text{forward:}p(x)=\prod_{t=1}^Tp(x_t|x_{<t})$$
+
+$$\text{backward:}p(x)=\prod_{t=T}^1p(x_t|x_{>t})$$
+
+- 缺点：它只能利用单向语义而不能同时利用上下文信息。ELMO通过双向都做AR模型，然后进行拼接，但从结果来看，效果并不是太好。
+
+- 优点：对自然语言生成任务(NLG)友好，天然符合生成式任务的生成过程。这也是为什么GPT能够编故事的原因。
+
+**AE**:Autoencoding Language Modeling，又叫自编码语言。通过上下文信息来预测当前被mask的token，代表有BERT，Word2Vec(CBOW)。
+
+$$p(x)=\prod_{x\in Mask}p(x_t|context)$$
+
+- 缺点：由于训练中采用了MASK标记，导致预训练与微调阶段不一致的问题。此外对于生成式问题，AE模型也显得捉襟见肘，这也是目前BERT为数不多没有实现大的突破的领域。
+
+- 优点：能够很好的编码上下文语义信息，在自然语言理解(NLU)相关的下游任务上表现突出。
+
 ## 参考
 
 https://www.zhihu.com/question/298203515
@@ -313,43 +333,3 @@ https://mp.weixin.qq.com/s/zqlWx3e4LOJ3_Zy2DEbCjw
 https://mp.weixin.qq.com/s/LngE10Hnqe9bgFzpNfUwLQ
 
 NLP中的词向量对比：word2vec/glove/fastText/elmo/GPT/bert
-
-https://mp.weixin.qq.com/s/MgLLPEY3ynJGkuTgnIXndQ
-
-站在BERT肩膀上的NLP新秀们（PART I）
-
-https://mp.weixin.qq.com/s/RjeuHXa8O3MzSpTOuOHMkQ
-
-站在BERT肩膀上的NLP新秀们：XLMs、MASS和UNILM
-
-https://mp.weixin.qq.com/s/yPq1cGnhcbaNLOjadj91pw
-
-Bert时代的创新：Bert在NLP各领域的应用进展
-
-https://mp.weixin.qq.com/s/l-de0vfx-L24g58IxK-NKQ
-
-Jeff Dean强推：可视化Bert网络，发掘其中的语言、语法树与几何学
-
-https://mp.weixin.qq.com/s/nlFXfgM5KKZXnPdwd97JYg
-
-哈工大讯飞联合实验室发布基于全词覆盖的中文BERT预训练模型
-
-https://zhuanlan.zhihu.com/p/70389596
-
-一批高质量中文BERT预训练模型请查收（上）
-
-https://mp.weixin.qq.com/s/h1VUSY7_UZF3PmjSN0DMSg
-
-从One-hot, Word embedding到Transformer，一步步教你理解Bert
-
-https://mp.weixin.qq.com/s/UJlmjFHWhnlXXJoRv4zkEQ
-
-虽被BERT碾压，但还是有必要谈谈BERT时代与后时代的NLP
-
-https://mp.weixin.qq.com/s/e4dgIdwzDzcLSkdgr1yZpg
-
-LeCun力荐：Facebook推出十亿参数超大容量存储器
-
-https://mp.weixin.qq.com/s/zXXtbuSvyMOkgrWJwB83kg
-
-预训练语言模型的最新探索

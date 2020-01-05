@@ -213,3 +213,7 @@ http://www.ict.griffith.edu.au/wiseman/Roman/EmpiresStrikeBack.html
 https://www.zhihu.com/question/364153918/
 
 1月1日重庆一高层居民楼加州花园发生火灾，几乎从楼底烧到楼顶，目前救援情况怎么样了？
+
+----
+
+![](/images/img3/Rome.jpg)

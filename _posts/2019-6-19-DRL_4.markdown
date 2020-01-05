@@ -272,6 +272,10 @@ https://zhuanlan.zhihu.com/p/27697260
 
 基于模型的强化学习算法PILCO及其扩展（三）
 
+https://mp.weixin.qq.com/s/Io9-EQ_1sTwBaSF0yDAUCg
+
+基于模型的强化学习论文合集
+
 # OpenAI
 
 OpenAI，由诸多硅谷大亨（Elon Musk等）联合建立的人工智能非营利组织。
