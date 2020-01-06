@@ -4,9 +4,31 @@ title:  语音识别（五）——Cepstrum Analysis, Mel-Frequency Analysis, FB
 category: speech 
 ---
 
-# Spectrogram
+# Spectrogram（续）
 
-## Spectrogram（续）
+## STFT
+
+$$\mathbf{STFT}\{x(t)\}(\tau,\omega) \equiv X(\tau, \omega) = \int_{-\infty}^{\infty} x(t) w(t-\tau) e^{-j \omega t} \, dt$$
+
+上式是STFT（Short-time Fourier transform）的定义。和FT相比，STFT将FT中的被积函数$$x(t)$$，换成了$$x(t) w(t-\tau)$$。其中，w(t)是窗函数（Window function），因此STFT又叫做加窗傅立叶变换。
+
+参考：
+
+https://mp.weixin.qq.com/s/TsO-tope0m4sHfVmZ0_Hog
+
+STFT极简版
+
+## Spectrogram
+
+DTW是一种时域方法，作为信号处理自然少不了频域方法。这里我们先来了解一个叫声谱图的东西。
+
+![](/images/img2/Spectrogram.png)
+
+这段语音被分为很多帧，每帧语音都对应于一个频谱（通过短时FFT计算），频谱表示频率与能量的关系。在实际使用中，频谱图有三种，即线性振幅谱、对数振幅谱、自功率谱（对数振幅谱中各谱线的振幅都作了对数计算，所以其纵坐标的单位是dB（分贝）。这个变换的目的是使那些振幅较低的成分相对高振幅成分得以拉高，以便观察掩盖在低幅噪声中的周期信号）。
+
+![](/images/img2/Spectrogram_2.png)
+
+我们先将其中一帧语音的频谱通过坐标表示出来。
 
 ![](/images/img2/Spectrogram_3.png)
 
@@ -235,33 +257,3 @@ https://blog.csdn.net/xmdxcsj/article/details/78512645
 https://blog.csdn.net/quhediegooo/article/details/68946100
 
 子空间高斯混合模型-SGMM
-
-# PLP
-
-Perceptual Linear Prediction
-
-《Perceptual Time Varying Linear Prediction Model for Speech Applications》
-
-https://www.isip.piconepress.com/courses/msstate/ece_8463/lectures/current/lecture_17/index.html
-
-SPECTRAL TRANSFORMATIONS
-
-# VTLN
-
-https://blog.csdn.net/jiangyangbo/article/details/6535928
-
-VTLN(Vocal Tract Length Normalisation)
-
-# HMM与语音识别
-
-HMM的基本概念参见《机器学习（二十二）》，这里谈一下HMM在语音识别领域的应用。
-
-从概率的角度来说，语音识别的目标是寻找最可能的$$P(W\mid O)$$。这里的W表示word，O表示observation。
-
-直接找显然没这么容易，所以要用到Bayes公式：
-
-$$\frac{P(W)P(O\mid W)}{P(O)}$$
-
-这里只有$$P(O)$$已知，剩下的两个参数都需要额外提供。其中HMM提供$$P(O\mid W)$$，LM提供$$P(W)$$。
-
-由于HMM的path上的概率是各个transition probability的乘积，而这些概率都小于1，因此他们的乘积必然是更小的数。这时可以考虑使用对数，不仅可将乘法变为加法，同时数值的范围也得到了改善。

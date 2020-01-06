@@ -8,6 +8,30 @@ category: speech
 
 ## 相关的群论知识（续）
 
+**半群（Semigroup）**：仅满足封闭性和结合律群称为半群；如果还包含幺元，则成为幺元半群。
+
+**半环（semiring）**：指具有两个二元运算$$+$$和$$\cdot$$的非空集合S，且满足：
+
+（1）$$(S,+),(S,\cdot)$$都是半群；
+
+（2）$$\forall a,b,c\in S,(a+b)c = ac+bc, c(a+b) = ca+cb$$
+
+半环的形式化表示如下：
+
+$$(K, \bigoplus, \bigotimes，0， 1)$$
+
+其中K是一个数集，$$\bigoplus, \bigotimes$$是两个二元操作，’0’和’1’是特定的（designated）零元素和幺元素（不一定是真正的数0和数1）。
+
+常用的半环如下表所示：
+
+| Semiring | Set | $$\oplus$$ | $$\otimes$$ | 0 | 1 |
+|:--:|:--:|:--:|:--:|:--:|:--:|
+| Boolean | $$\{0,1\}$$ | $$\lor$$ | $$\land$$ | 0 | 1 |
+| Probability | $$R_+$$ | $$+$$ | $$\times$$ | 0 | 1 |
+| Log | $$R\cup\{-\infty，+\infty\}$$ | $$\oplus_{log}$$ | + | $$+\infty$$ | 0 |
+| Tropical | $$R\cup\{-\infty，+\infty\}$$ | min | + | $$+\infty$$ | 0 |
+| String | $$\Sigma^*\cup\{\infty\}$$ | $$\land$$ | $$\cdot$$ | $$\infty$$ | $$\epsilon$$ |
+
 在WFST中用的比较多的是log半环和tropical半环。前者对路径概率进行了对数运算，而后者在log半环的基础上，进行了viterbi approximation，也就是用若干路径的概率极值，作为当前概率值，这和动态规划中的viterbi算法是一致的。
 
 接下来定义WFST上的二元运算：
@@ -301,53 +325,3 @@ https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750181&idx=5&sn=96d857
 https://mp.weixin.qq.com/s/Cfk3639bCy55qQj4HM2HWw
 
 人工智能老司机带你认识声音黑科技：声纹识别
-
-# 汽车声学
-
-https://zhuanlan.zhihu.com/p/22722073
-
-当我谈汽车声学时，我在谈什么(一)
-
-https://zhuanlan.zhihu.com/p/28608243
-
-当我谈汽车声学时，我在谈什么(二)
-
-https://zhuanlan.zhihu.com/p/31240294
-
-当我谈汽车声学时，我在谈什么(三)
-
-https://zhuanlan.zhihu.com/p/34256635
-
-当我谈汽车声学时，我在谈什么(四)
-
-# ASR参考资源
-
-https://zhuanlan.zhihu.com/p/40329331
-
-谈谈语音识别与人声的物理原理，以及真声假声头声混声等概念
-
-https://mp.weixin.qq.com/s/CjWNZf225OELIBoWRAbakg
-
-全面了解什么是语音交互
-
-# NLP参考资源
-
-https://mp.weixin.qq.com/s/foknrQWnBxc4b0bpkFKSdQ
-
-上海科技大学ACL2018高分论文：混合高斯隐向量文法
-
-https://zhuanlan.zhihu.com/p/37621168
-
-微博关键词抽取：借力评论信息
-
-https://mp.weixin.qq.com/s/znafd7_N_TrQBFWvxYM_hg
-
-基于强化学习的中文零指代消解模型
-
-https://mp.weixin.qq.com/s/2QQ_lWUCExvdiXn2wJJeRQ
-
-地理文本处理技术在高德的演进(上)
-
-https://mp.weixin.qq.com/s/9GuyWUZ_qCH5Q_rin1yQwg
-
-地理文本处理技术在高德的演进(下)

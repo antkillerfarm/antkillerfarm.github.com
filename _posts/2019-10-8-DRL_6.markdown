@@ -6,9 +6,9 @@ category: DRL
 
 # AlphaGo（续）
 
-### Representation Network
+### Representation & Dynamics Network
 
-Representation Network的主要思想来自如下论文：
+Representation & Dynamics Network的主要思想来自如下论文：
 
 1.《The Predictron: End-To-End Learning and Planning》
 
@@ -28,7 +28,7 @@ Representation Network的主要思想来自如下论文：
 
 $$\vec{s} = f(s)$$
 
-这里用$$\vec{s}$$表示系统的抽象状态以区别其实际状态s。也就是说，在系统模型中，预测的不是实际的状态s, 而是抽象的状态。
+这里用$$\vec{s}$$表示系统的抽象状态以区别其实际状态s。也就是说，在系统模型中，预测的不是实际的状态s, 而是抽象的状态。即：**建立real state space到abstract state space的映射。**
 
 - 模型预测，不只是状态流的预测，还包括立即回报和折扣因子的预测。
 
@@ -40,19 +40,39 @@ $$\vec{v} = v(s)$$
 
 - 由回报、折扣因子和值函数计算得到估计值。这里可以对这个abstract MDP model应用TD(n)和TD($$\lambda$$)算法，得到如上图所示的k-step和$$\lambda$$-weighted的预测值。其中的g表示累计奖励值。
 
-这里的套路其实和DQN非常像，区别在于：这里既然是Model-based方法，那么自然有利用Model生成模拟样本的步骤，而DQN没有这样的步骤。
+这里的套路其实和DQN非常像，都是让预测值（这里是g）尽可能接近真实值。区别在于：这里既然是Model-based方法，那么自然有利用Model生成模拟样本的步骤，而DQN没有这样的步骤。
 
-如果说参考论文1还有点DQN硬往Model-based上靠的话，参考论文2的方法就优雅的多了。
+参考论文2的做法也是类似的。
 
 ![](/images/img3/MuZero_4.png)
 
-$$\mathbf{Encoding}\quad f_\theta^{enc}$$
+$$\mathbf{Encoding}\quad f_\theta^{enc}: x\to s$$
+
+$$\mathbf{Value}\quad f_\theta^{value}: s\to V_\theta(s)$$
+
+$$\mathbf{Outcome}\quad f_\theta^{out}: s,o\to r,\gamma$$
+
+$$\mathbf{Transition}\quad f_\theta^{trans}: s,o\to s'$$
+
+x：观测值（observation）。
+
+s：abstract state。
+
+o：abstract state上的option。
+
+s'：下一个abstract state。
 
 ![](/images/img3/MuZero_5.png)
 
+也是预测若干步的奖励值。
 
+### 实现细节
+
+重新回到MuZero，下图是MuZero的关键步骤图。
 
 ![](/images/img3/MuZero_2.png)
+
+
 
 ### 参考
 

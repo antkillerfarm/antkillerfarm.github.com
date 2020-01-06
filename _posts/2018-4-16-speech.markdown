@@ -26,6 +26,22 @@ https://zhuanlan.zhihu.com/p/82872145
 
 语音识别技术简史
 
+## 相关任务
+
+语音相关的任务主要有：
+
+- Automatic speech recognition(ASR)：将一个**speech**序列映射为一个**character**序列。
+
+- Speech to text translation (ST)：将**source**语言上的一个**speech**序列映射为**target**语言上的一个**character**序列。
+
+- Text to speech (TTS)：将一个**character**序列映射为一个**speech**序列。
+
+- Speech enhancement (SE)：将一个**noisy**的speech序列映射为一个**clean**的speech序列。
+
+- Speech separation (SS)：分离不同说话人的speech，或者分离人声和背景声音。
+
+- Speech-to-speech translation (S2ST)
+
 ## 学校
 
 SR领域最牛的高校主要是美国的CMU、Johns Hopkins University、英国的Cambridge University和日本的东京大学。
@@ -306,11 +322,3 @@ http://cn-mirror.openslr.org/18/
 http://blog.csdn.net/sut_wj/article/details/70662181
 
 THCHS-30：一个免费的中文语料库
-
-----
-
-http://cn-mirror.openslr.org/33/
-
-AISHELL数据库是THCHS-30之后，目前中文语音数据开源最大的数据库。
-
-它是由北京希尔贝壳科技有限公司(http://www.aishelltech.com)录制的中文普通话数据。由400名来自不同方言区的发音人录制，男女比例均衡。按照设计好的文本，在相对安静环境中使用手机（Android和IOS系统）录制格式为16kHz、16bit单声道数据和高保真麦克风录制格式为44.1kHz、16bit单声道数据同时采集。

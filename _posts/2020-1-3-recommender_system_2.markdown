@@ -301,3 +301,7 @@ https://mp.weixin.qq.com/s/TcxI-XSjj7UtHvx3xC55jg
 https://mp.weixin.qq.com/s/MAfK4B2F8sPXRLodXkwnmw
 
 Query理解和语义召回在知乎搜索中的应用
+
+https://mp.weixin.qq.com/s/t7LYfItthkszzvRp6opG5w
+
+机器学习在微博O系列广告中的应用

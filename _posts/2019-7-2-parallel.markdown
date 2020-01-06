@@ -286,6 +286,26 @@ https://mp.weixin.qq.com/s/GheEA0Ag0vbhZeyzqpTl0A
 
 # NLP参考资源+
 
+https://mp.weixin.qq.com/s/foknrQWnBxc4b0bpkFKSdQ
+
+上海科技大学ACL2018高分论文：混合高斯隐向量文法
+
+https://zhuanlan.zhihu.com/p/37621168
+
+微博关键词抽取：借力评论信息
+
+https://mp.weixin.qq.com/s/znafd7_N_TrQBFWvxYM_hg
+
+基于强化学习的中文零指代消解模型
+
+https://mp.weixin.qq.com/s/2QQ_lWUCExvdiXn2wJJeRQ
+
+地理文本处理技术在高德的演进(上)
+
+https://mp.weixin.qq.com/s/9GuyWUZ_qCH5Q_rin1yQwg
+
+地理文本处理技术在高德的演进(下)
+
 https://mp.weixin.qq.com/s/-zDMPfR1wWSV9A7HDzJlZA
 
 事件抽取及推理(上)

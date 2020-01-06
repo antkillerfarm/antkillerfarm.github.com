@@ -184,6 +184,10 @@ https://mp.weixin.qq.com/s/WvkIQ85CpCR7yhHiPbX6HA
 
 Objects365：大且高质量的数据集用于目标检测
 
+https://mp.weixin.qq.com/s/hXtkTECVfsBltAtYWu4XYg
+
+最大识车数据集出炉：6.4万张，车型参数完整标注，交通安防二手车都能用
+
 ## 人脸/行为
 
 http://blog.csdn.net/wangkr111/article/details/44514097

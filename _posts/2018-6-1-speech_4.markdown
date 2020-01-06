@@ -4,6 +4,36 @@ title:  语音识别（四）——DTW, Spectrogram
 category: speech 
 ---
 
+# 解码器技术（续）
+
+在解码过程中，各种解码器的具体实现可以是不同的。按搜索空间的构成方式来分，有动态编译和静态编译两种方式。
+
+**静态编译**，是把所有知识源统一编译在一个状态网络中，在解码过程中，根据节点间的转移权重获得概率信息。由AT&T提出的Weighted Finite State Transducer（WFST）方法是一种有效编译搜索空间并消除冗余信息的方法。
+
+**动态编译**，预先将发音词典编译成状态网络构成搜索空间，其他知识源在解码过程中根据活跃路径上携带的历史信息动态集成。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/23648888
+
+语音识别之解码器技术简介
+
+# 人类声音
+
+成年男性：80-140 Hz
+
+成年女性：130-220 Hz
+
+儿童：180-320 Hz
+
+从信号处理的角度，人类声音的处理方式和普通的雷达信号处理并无本质差异，主要的区别在于：**雷达信号经过了载波调制，而人类声音则没有这个步骤。**
+
+参考：
+
+https://wenku.baidu.com/view/6123ba2f0066f5335a8121fe.html
+
+人声频率范围及各频段音色效果
+
 # 建模单元
 
 建模单元是指声音建模的最小单元。从细到粗，一般有**state、phoneme、character**三级。
@@ -167,27 +197,3 @@ Hamming window：
 $$w(n) = 0.54 - 0.46\cdot \cos\left( \tfrac{2 \pi n}{N - 1}\right)$$
 
 >Richard Wesley Hamming，1915～1998，美国数学家。University of Chicago本科（1937）+University of Nebraska硕士（1939）+UIUC博士（1942）。参与曼哈顿计划，后长期供职于Bell Lab。通信和计算机工程领域的宗师级人物，美国工程院院士，图灵奖得主（1968）。Hamming code 、Hamming distance等都是他的贡献。
-
-## STFT
-
-$$\mathbf{STFT}\{x(t)\}(\tau,\omega) \equiv X(\tau, \omega) = \int_{-\infty}^{\infty} x(t) w(t-\tau) e^{-j \omega t} \, dt$$
-
-上式是STFT（Short-time Fourier transform）的定义。和FT相比，STFT将FT中的被积函数$$x(t)$$，换成了$$x(t) w(t-\tau)$$。其中，w(t)是窗函数（Window function），因此STFT又叫做加窗傅立叶变换。
-
-参考：
-
-https://mp.weixin.qq.com/s/TsO-tope0m4sHfVmZ0_Hog
-
-STFT极简版
-
-## Spectrogram
-
-DTW是一种时域方法，作为信号处理自然少不了频域方法。这里我们先来了解一个叫声谱图的东西。
-
-![](/images/img2/Spectrogram.png)
-
-这段语音被分为很多帧，每帧语音都对应于一个频谱（通过短时FFT计算），频谱表示频率与能量的关系。在实际使用中，频谱图有三种，即线性振幅谱、对数振幅谱、自功率谱（对数振幅谱中各谱线的振幅都作了对数计算，所以其纵坐标的单位是dB（分贝）。这个变换的目的是使那些振幅较低的成分相对高振幅成分得以拉高，以便观察掩盖在低幅噪声中的周期信号）。
-
-![](/images/img2/Spectrogram_2.png)
-
-我们先将其中一帧语音的频谱通过坐标表示出来。

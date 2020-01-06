@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Kaldi（二）, 计算机体系结构
+title:  Kaldi（二）
 category: AI 
 ---
 
@@ -229,72 +229,48 @@ SpeechBrain是一个基于pytorch的语音工具包，目前（2019.9）正在�
 
 https://speechbrain.github.io/
 
-# 计算机体系结构
+# 声纹识别+
 
-按照Michael J. Flynn的分类方法，计算机的体系结构可分为如下四类：
+https://mp.weixin.qq.com/s/XUHS4o2G-iGuV9uuOmfBdQ
 
-**Single instruction stream single data stream (SISD)**
+为什么在说话人识别技术中，PLDA面对神经网络依然坚挺？
 
-**Single instruction stream, multiple data streams (SIMD)**
+https://mp.weixin.qq.com/s/bgIJMRZ64En3xMk3IGK-Vw
 
-**Multiple instruction streams, single data stream (MISD)**
+如何基于迁移学习快速识别出讲话的人是谁？
 
-**Multiple instruction streams, multiple data streams (MIMD)**
+https://mp.weixin.qq.com/s/I2XU9u28S6LFoTY4kizoqw
 
-![](/images/article/simd_mimd.png)
+清华大学郑方：语音技术与身份信息的隐私保护
 
-原图地址：
+https://mp.weixin.qq.com/s/YOupCjU06JhRCZNCbMvAgQ
 
-https://en.wikipedia.org/wiki/Flynn%27s_taxonomy
+Google开源新AI模型，语音区分准确率92%创新高
 
-CPU通常是SISD和SIMD的，而GPU则是SIMD的，超级计算机则是MIMD的。
+# 汽车声学
 
-参考：
+https://zhuanlan.zhihu.com/p/22722073
 
-https://zhuanlan.zhihu.com/p/31271788
+当我谈汽车声学时，我在谈什么(一)
 
-SIMD指令集
+https://zhuanlan.zhihu.com/p/28608243
 
-## 术语
+当我谈汽车声学时，我在谈什么(二)
 
-Shared Virtual Memory，SVM
+https://zhuanlan.zhihu.com/p/31240294
 
-Memory consistency model
+当我谈汽车声学时，我在谈什么(三)
 
-Multisample anti-aliasing，MSAA
+https://zhuanlan.zhihu.com/p/34256635
 
-## 参考
+当我谈汽车声学时，我在谈什么(四)
 
-https://blog.csdn.net/do2jiang/article/details/4545889
+# ASR参考资源
 
-流水线、超流水线、超标量技术对比
+https://zhuanlan.zhihu.com/p/40329331
 
-https://blog.csdn.net/edonlii/article/details/8755205
+谈谈语音识别与人声的物理原理，以及真声假声头声混声等概念
 
-单发射与多发射
+https://mp.weixin.qq.com/s/CjWNZf225OELIBoWRAbakg
 
-https://mp.weixin.qq.com/s/FJX9eeRkxS5nJ4XIhRVwkg
-
-从ServerSwitch到SONiC Chassis：数据中心交换机技术的十年探索历程
-
-# GAN参考资源+
-
-https://mp.weixin.qq.com/s/ctB90bNhaMYvbLE4yketHQ
-
-一文读懂对抗机器学习Universal adversarial perturbations
-
-https://mp.weixin.qq.com/s/zRNtEKS2dKxyQU4VZm6Mwg
-
-用GANs来自动生成音乐
-
-https://mp.weixin.qq.com/s/zwzl-Tel3Avc4Dm7L5FS5A
-
-NLP中的对抗训练+PyTorch实现
-
-https://mp.weixin.qq.com/s/Ze2BXEexTIpNluRSdfeCsA
-
-GAN和PS合体会怎样？东京大学图像增强新研究：无需配对图像，增强效果还可解释
-
-https://mp.weixin.qq.com/s/qLhnvLhXHhRoPGtPWYCY0w
-
-ICCV2019最佳论文SinGAN全面解读
+全面了解什么是语音交互

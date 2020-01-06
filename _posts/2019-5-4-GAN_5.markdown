@@ -6,6 +6,14 @@ category: GAN & VAE
 
 # StarGAN（续）
 
+StarGAN不仅可在同一数据集中进行Domain变换，还可在不同数据集之间进行Domain变换。上图展示的是StarGAN在CelebA和RaFD数据集上的训练过程：
+
+1.两个数据集的标签不是完全相同的。（实际上是完全不同，囧）
+
+2.对标签进行编码。例如图中使用的Onehot编码。
+
+3.**利用Mask区分是哪个数据集。**这一步是关键。
+
 ![](/images/img3/GAN_5.png)
 
 除此之外，同期的Couple GAN也采用了类似的设计。上图是Couple GAN的网络结构图，其中的虚线表示网络的参数是共享的。
@@ -333,23 +341,3 @@ https://mp.weixin.qq.com/s/bH5yYbwq6NGQJ84xUDhoxg
 https://mp.weixin.qq.com/s/3Gsmrl4HbcnXpje0nyAq2w
 
 中国西北大学和北京大学的研究结果是否将终结CAPTCHA验证码时代？
-
-https://zhuanlan.zhihu.com/p/53260242
-
-抛开复杂证明，我们从直觉上理解W-GAN为啥这么好训
-
-https://mp.weixin.qq.com/s/FJA8Tctq_p4Mj-KgNn_OGg
-
-为什么让GAN一家独大？Facebook提出非对抗式生成方法GLANN
-
-https://mp.weixin.qq.com/s/xr9fDv9DFkwi2ImV4RZAHg
-
-换个角度看GAN：另一种损失函数
-
-https://mp.weixin.qq.com/s/U1rrPfJDLgXHRj__XwrMZw
-
-只有条件GAN才能稳定训练？对抗+自监督的无监督方法了解一下
-
-https://mp.weixin.qq.com/s/xHKQlFFkBQLBg2GdZuGPSw
-
-提升GAN训练的技巧汇总

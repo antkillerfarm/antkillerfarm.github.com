@@ -112,6 +112,24 @@ https://github.com/srvk/eesen
 
 eesen是基于Tensorflow开发的，苗博士之前还有个用Theano开发的叫PDNN的库。
 
+# ESPnet
+
+ESPnet是日本的研究人员2018年的作品。
+
+论文：
+
+《ESPnet: End-to-End Speech Processing Toolkit》
+
+代码：
+
+https://github.com/espnet/espnet
+
+参考：
+
+https://mp.weixin.qq.com/s/Disa8tS398J1mjwXkz5jrg
+
+Advanced Methods for Neural End-to-End Speech Processing
+
 # 语音合成
 
 语音合成（Speech synthesis），有时也叫做text-to-speech (TTS)。
@@ -367,19 +385,3 @@ https://mp.weixin.qq.com/s/u1R7NUg_kgI_mpjIFrO02A
 https://mp.weixin.qq.com/s/2xpwLVHT8qU68uoV7Uj2cw
 
 小米的语音识别系统是如何搭建的
-
-https://mp.weixin.qq.com/s/cYBMy4TIhcutvrAt0y70Ow
-
-腾讯AI Lab副主任俞栋：过去两年基于深度学习的声学模型进展
-
-https://mp.weixin.qq.com/s/cvSz5Pxe3z54Tl5z3WTbQA
-
-手把手教你在音频分类DCASE2017比赛中夺冠
-
-https://blog.csdn.net/ffmpeg4976/article/details/52347845
-
-语音识别系统及科大讯飞最新实践
-
-http://mp.weixin.qq.com/s/0WNJq4OLZlZETKPf1Ewq7w
-
-浅谈语音测试方案

@@ -6,6 +6,22 @@ category: speech
 
 # 语音识别参考资源（续）
 
+https://mp.weixin.qq.com/s/cYBMy4TIhcutvrAt0y70Ow
+
+腾讯AI Lab副主任俞栋：过去两年基于深度学习的声学模型进展
+
+https://mp.weixin.qq.com/s/cvSz5Pxe3z54Tl5z3WTbQA
+
+手把手教你在音频分类DCASE2017比赛中夺冠
+
+https://blog.csdn.net/ffmpeg4976/article/details/52347845
+
+语音识别系统及科大讯飞最新实践
+
+http://mp.weixin.qq.com/s/0WNJq4OLZlZETKPf1Ewq7w
+
+浅谈语音测试方案
+
 https://mp.weixin.qq.com/s/b0bOf1bZ2p0yWMzhp66HhA
 
 A flight (to Boston) to Denver-基于转移的顺滑技术研究

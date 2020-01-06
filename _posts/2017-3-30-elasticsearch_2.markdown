@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Elasticsearch（二）, Flume & Kafka
+title:  Elasticsearch（二）, Flume & Kafka, 计算机体系结构
 category: AI 
 ---
 
@@ -268,3 +268,93 @@ https://mp.weixin.qq.com/s/QJOfh5gJReQTimu-mAzexg
 https://mp.weixin.qq.com/s/6aXcum-FAbvcGcOrkSC4vQ
 
 为什么Kafka会成为微服务架构的事实标准？
+
+# 计算机体系结构
+
+按照Michael J. Flynn的分类方法，计算机的体系结构可分为如下四类：
+
+**Single instruction stream single data stream (SISD)**
+
+**Single instruction stream, multiple data streams (SIMD)**
+
+**Multiple instruction streams, single data stream (MISD)**
+
+**Multiple instruction streams, multiple data streams (MIMD)**
+
+![](/images/article/simd_mimd.png)
+
+原图地址：
+
+https://en.wikipedia.org/wiki/Flynn%27s_taxonomy
+
+CPU通常是SISD和SIMD的，而GPU则是SIMD的，超级计算机则是MIMD的。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/31271788
+
+SIMD指令集
+
+## 术语
+
+Shared Virtual Memory，SVM
+
+Memory consistency model
+
+Multisample anti-aliasing，MSAA
+
+## 参考
+
+https://blog.csdn.net/do2jiang/article/details/4545889
+
+流水线、超流水线、超标量技术对比
+
+https://blog.csdn.net/edonlii/article/details/8755205
+
+单发射与多发射
+
+https://mp.weixin.qq.com/s/FJX9eeRkxS5nJ4XIhRVwkg
+
+从ServerSwitch到SONiC Chassis：数据中心交换机技术的十年探索历程
+
+# GAN参考资源+
+
+https://zhuanlan.zhihu.com/p/53260242
+
+抛开复杂证明，我们从直觉上理解W-GAN为啥这么好训
+
+https://mp.weixin.qq.com/s/FJA8Tctq_p4Mj-KgNn_OGg
+
+为什么让GAN一家独大？Facebook提出非对抗式生成方法GLANN
+
+https://mp.weixin.qq.com/s/xr9fDv9DFkwi2ImV4RZAHg
+
+换个角度看GAN：另一种损失函数
+
+https://mp.weixin.qq.com/s/U1rrPfJDLgXHRj__XwrMZw
+
+只有条件GAN才能稳定训练？对抗+自监督的无监督方法了解一下
+
+https://mp.weixin.qq.com/s/xHKQlFFkBQLBg2GdZuGPSw
+
+提升GAN训练的技巧汇总
+
+https://mp.weixin.qq.com/s/ctB90bNhaMYvbLE4yketHQ
+
+一文读懂对抗机器学习Universal adversarial perturbations
+
+https://mp.weixin.qq.com/s/zRNtEKS2dKxyQU4VZm6Mwg
+
+用GANs来自动生成音乐
+
+https://mp.weixin.qq.com/s/zwzl-Tel3Avc4Dm7L5FS5A
+
+NLP中的对抗训练+PyTorch实现
+
+https://mp.weixin.qq.com/s/Ze2BXEexTIpNluRSdfeCsA
+
+GAN和PS合体会怎样？东京大学图像增强新研究：无需配对图像，增强效果还可解释
+
+https://mp.weixin.qq.com/s/qLhnvLhXHhRoPGtPWYCY0w
+
+ICCV2019最佳论文SinGAN全面解读

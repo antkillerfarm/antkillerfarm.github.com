@@ -214,6 +214,10 @@ DiscoGAN论文：
 
 《Learning to Discover Cross-Domain Relationswith Generative Adversarial Networks》
 
+Cycle-consistency的思想也可用于其他领域。例如：
+
+![](/images/img3/ASR_TTS.png)
+
 参考：
 
 https://zhuanlan.zhihu.com/p/28342644
@@ -287,11 +291,3 @@ StarGAN给出的办法是：所有的Domain共享一个G网络。如上图右半
 3.既然G网络只有一个，那么如何完成Domain变换呢？答案就是：把目标Domain的信息也输进G网络中。
 
 ![](/images/img3/StarGAN_3.png)
-
-StarGAN不仅可在同一数据集中进行Domain变换，还可在不同数据集之间进行Domain变换。上图展示的是StarGAN在CelebA和RaFD数据集上的训练过程：
-
-1.两个数据集的标签不是完全相同的。（实际上是完全不同，囧）
-
-2.对标签进行编码。例如图中使用的Onehot编码。
-
-3.**利用Mask区分是哪个数据集。**这一步是关键。

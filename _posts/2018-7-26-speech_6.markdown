@@ -4,6 +4,36 @@ title:  语音识别（六）——语音识别的评价指标, 声学模型进�
 category: speech 
 ---
 
+# PLP
+
+Perceptual Linear Prediction
+
+《Perceptual Time Varying Linear Prediction Model for Speech Applications》
+
+https://www.isip.piconepress.com/courses/msstate/ece_8463/lectures/current/lecture_17/index.html
+
+SPECTRAL TRANSFORMATIONS
+
+# VTLN
+
+https://blog.csdn.net/jiangyangbo/article/details/6535928
+
+VTLN(Vocal Tract Length Normalisation)
+
+# HMM与语音识别
+
+HMM的基本概念参见《机器学习（二十二）》，这里谈一下HMM在语音识别领域的应用。
+
+从概率的角度来说，语音识别的目标是寻找最可能的$$P(W\mid O)$$。这里的W表示word，O表示observation。
+
+直接找显然没这么容易，所以要用到Bayes公式：
+
+$$\frac{P(W)P(O\mid W)}{P(O)}$$
+
+这里只有$$P(O)$$已知，剩下的两个参数都需要额外提供。其中HMM提供$$P(O\mid W)$$，LM提供$$P(W)$$。
+
+由于HMM的path上的概率是各个transition probability的乘积，而这些概率都小于1，因此他们的乘积必然是更小的数。这时可以考虑使用对数，不仅可将乘法变为加法，同时数值的范围也得到了改善。
+
 # 语音识别的评价指标
 
 语音识别的评价指标主要是Word Error Rate（WER）。
@@ -247,27 +277,3 @@ WFST是基于半环代数理论的，在介绍半环之前我先简单的说一�
 （4）逆元：对于任意$$a\in G$$,存在逆元$$a^{-1}*a=a*a^{-1}=e$$。
 
 则称（G,*）为群。
-
-**半群（Semigroup）**：仅满足封闭性和结合律群称为半群；如果还包含幺元，则成为幺元半群。
-
-**半环（semiring）**：指具有两个二元运算$$+$$和$$\cdot$$的非空集合S，且满足：
-
-（1）$$(S,+),(S,\cdot)$$都是半群；
-
-（2）$$\forall a,b,c\in S,(a+b)c = ac+bc, c(a+b) = ca+cb$$
-
-半环的形式化表示如下：
-
-$$(K, \bigoplus, \bigotimes，0， 1)$$
-
-其中K是一个数集，$$\bigoplus, \bigotimes$$是两个二元操作，’0’和’1’是特定的（designated）零元素和幺元素（不一定是真正的数0和数1）。
-
-常用的半环如下表所示：
-
-| Semiring | Set | $$\oplus$$ | $$\otimes$$ | 0 | 1 |
-|:--:|:--:|:--:|:--:|:--:|:--:|
-| Boolean | $$\{0,1\}$$ | $$\lor$$ | $$\land$$ | 0 | 1 |
-| Probability | $$R_+$$ | $$+$$ | $$\times$$ | 0 | 1 |
-| Log | $$R\cup\{-\infty，+\infty\}$$ | $$\oplus_{log}$$ | + | $$+\infty$$ | 0 |
-| Tropical | $$R\cup\{-\infty，+\infty\}$$ | min | + | $$+\infty$$ | 0 |
-| String | $$\Sigma^*\cup\{\infty\}$$ | $$\land$$ | $$\cdot$$ | $$\infty$$ | $$\epsilon$$ |

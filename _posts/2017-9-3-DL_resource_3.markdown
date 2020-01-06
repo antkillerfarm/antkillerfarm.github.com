@@ -274,6 +274,10 @@ https://mp.weixin.qq.com/s/qmQnutBqv-nzP7UgILbCMg
 
 互联网虚假新闻检测挑战赛（冠军）方案分享
 
+https://mp.weixin.qq.com/s/RvwVhXYNA11Jn1fnqe0XPA
+
+多人种人脸识别
+
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
