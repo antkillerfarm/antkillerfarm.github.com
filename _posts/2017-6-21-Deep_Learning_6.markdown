@@ -88,7 +88,7 @@ RNN是Recurrent Neural Network和Recursive Neural Network的简称。前者主�
 
 虽然理论上，我们可以给每一时刻赋予不同的$$U,V,W$$，然而出于简化计算和稀疏度的考量，RNN所有时刻的$$U,V,W$$都是相同的。
 
-RNN的误差反向传播算法，被称作**Backpropagation Through Time**。其主要公式如下：
+RNN的误差反向传播算法，被称作**Backpropagation Through Time（BPTT）**。其主要公式如下：
 
 $$\nabla U=\frac{\partial E}{\partial U}=\sum_t\frac{\partial e_t}{\partial U} \\\nabla V=\frac{\partial E}{\partial V}=\sum_t\frac{\partial e_t}{\partial V} \\\nabla W=\frac{\partial E}{\partial W}=\sum_t\frac{\partial e_t}{\partial W}$$
 
@@ -160,10 +160,6 @@ http://blog.csdn.net/heyongluoyao8/article/details/48636251
 
 循环神经网络(RNN, Recurrent Neural Networks)介绍
 
-https://mp.weixin.qq.com/s/pq8-u05ww0JgTEgU-0P-Lw
-
-一文搞懂RNN（循环神经网络）基础篇
-
 http://mp.weixin.qq.com/s?__biz=MzIzODExMDE5MA==&mid=2694182661&idx=1&sn=ddfb3f301f5021571992824b21ddcafe
 
 循环神经网络
@@ -199,10 +195,6 @@ https://mp.weixin.qq.com/s/-Am9Z4_SsOc-fZA_54Qg3A
 https://mp.weixin.qq.com/s/ztIrt4_xIPrmCwS1fCn_dA
 
 “魔性”的循环神经网络
-
-https://mp.weixin.qq.com/s/tIXJNkT9gIjGYZz7dekiNw
-
-手把手教你写一个RNN
 
 https://mp.weixin.qq.com/s/BqVicouktsZu8xLVR-XnFg
 

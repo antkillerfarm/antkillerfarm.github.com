@@ -330,40 +330,10 @@ https://mp.weixin.qq.com/s/Xur9sEDiPtM2jJfHd46bZw
 
 You Only Watch Once：实时人体动作定位网络
 
-# Capsule
+https://mp.weixin.qq.com/s/oPYWwZ6GkaE4L4YMxh7WGA
 
-https://github.com/freefuiiismyname/capsule-mrc
+利用OpenCV和深度学习来实现人类活动识别
 
-基于capsule的观点型阅读理解模型
+https://mp.weixin.qq.com/s/6HsL2B7p-XyvGWAb4SwALA
 
-https://mp.weixin.qq.com/s/cskdgsysD7R_FKChAKmlDg
-
-利用Capsule重构过程，Hinton等人实现对抗样本的自动检测
-
-https://mp.weixin.qq.com/s/7fBXMvT4eyZrKhPKQTAIZQ
-
-你听说过胶囊网络吗？
-
-https://mp.weixin.qq.com/s/F9SGZPZj6gup_nOVuDel6A
-
-与胶囊网络异曲同工：Bengio等提出四元数循环神经网络
-
-https://mp.weixin.qq.com/s/4o9XHGwx5lYsJ7YfUNHSoQ
-
-百年老图难倒谷歌AI，网友：是鸭是兔？连我都不能确定
-
-https://mp.weixin.qq.com/s/dN1p7nuv6xtnIsSuY73CcA
-
-基于GNN，强于GNN：胶囊图神经网络的PyTorch实现
-
-https://mp.weixin.qq.com/s/lcJcaiMtYXGVOwa_sVsVfA
-
-Hinton老爷子CapsNet再升级，结合无监督，接近当前最佳效果
-
-https://mp.weixin.qq.com/s/A0m3lkIBCTFf5bzTQlYbgQ
-
-基于胶囊网络的计算机视觉应用
-
-https://mp.weixin.qq.com/s/BqsFIUrVEVz5kOFh3W93gQ
-
-胶囊网络升级新版本，推特2000+赞
+图灵奖得主Geoffrey Hinton最新研究NASA：一种更好地学习三维模型动作的方法
