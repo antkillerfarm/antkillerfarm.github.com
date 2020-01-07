@@ -309,3 +309,7 @@ https://mp.weixin.qq.com/s/t7LYfItthkszzvRp6opG5w
 https://mp.weixin.qq.com/s/3urKkPfhi4JC7Qe2pLclsg
 
 搜索模型核心技术公开，淘宝如何做用户建模？
+
+https://mp.weixin.qq.com/s/0_G3jMpwJVbdJ85TajubIg
+
+个性化海报在爱奇艺视频推荐场景中的实践

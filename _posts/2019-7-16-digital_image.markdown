@@ -402,6 +402,10 @@ https://mp.weixin.qq.com/s/4FJzxPyCmakjIU-9xlQmJQ
 
 ![](/images/img2/edge_computing.png)
 
+https://mp.weixin.qq.com/s/i5KkUVaEULrlxeNtU_PDtQ
+
+天津大学最新“边缘计算与深度学习的融合”综述论文
+
 https://mp.weixin.qq.com/s/TXZh-bn9VhwGxJRNjzecRw
 
 重新认识“边缘计算”

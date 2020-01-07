@@ -207,6 +207,10 @@ https://mp.weixin.qq.com/s/di_CJ7kBwI4ICe4mhz0Tcg
 
 滴滴基于ElasticSearch的一站式搜索中台实践
 
+https://mp.weixin.qq.com/s/-NfKH-2PpA-peq9CU0g1JA
+
+解密Elasticsearch技术，腾讯开源的万亿级分布式搜索分析引擎
+
 # Flume & Kafka
 
 Flume和Kafka都是日志系统。

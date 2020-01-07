@@ -174,6 +174,10 @@ https://mp.weixin.qq.com/s/0YsLo7bB-qcjStfC6q-hLw
 
 字节跳动EB级HDFS实践
 
+https://mp.weixin.qq.com/s/Zs0uHrENeeLNYX1ZfpVTSg
+
+小米流式平台架构演进与实践
+
 # 世说新语+
 
 ## 2019.12（续）
