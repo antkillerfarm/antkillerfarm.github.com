@@ -290,3 +290,17 @@ Uber最强机器学习平台是如何使用Spark模型的？
 https://mp.weixin.qq.com/s/vTHRSFg15SDYL3qH3dGCvA
 
 关于Spark NLP学习，你需要掌握的LightPipeline
+
+# DRL参考资源+
+
+https://mp.weixin.qq.com/s/VrVdsxn94ux_46mIyS8f0w
+
+谷歌大脑实现更宽广的智能体视野，在Atari2600上可持续超越人类玩家！
+
+https://mp.weixin.qq.com/s/P5EysBHBaR6L3IfeSgo6fw
+
+强化学习20分钟，剑桥博士教汽车学会自动驾驶！
+
+https://mp.weixin.qq.com/s/w3SsadgKaL8-tlzYLvMm-A
+
+讲真？一天就学会了自动驾驶——强化学习在自动驾驶的应用

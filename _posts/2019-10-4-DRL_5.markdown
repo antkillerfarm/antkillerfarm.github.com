@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度强化学习（五）——AlphaGo
+title:  深度强化学习（五）——AlphaGo（1）
 category: DRL 
 ---
 

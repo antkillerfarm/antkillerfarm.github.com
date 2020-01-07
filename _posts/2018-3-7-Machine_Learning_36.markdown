@@ -216,6 +216,10 @@ https://mp.weixin.qq.com/s/LoX987dypDg8jbeTJMpEPQ
 
 终于有人把XGBoost和LightGBM讲明白了，项目中最主流的集成算法！
 
+https://mp.weixin.qq.com/s/l6Fp5WTNH0b_cl2y7Az76Q
+
+深入理解LightGBM
+
 # CatBoost
 
 这是Yandex推出的Boost工具包。

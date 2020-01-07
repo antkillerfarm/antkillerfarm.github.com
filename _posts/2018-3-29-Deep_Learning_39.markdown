@@ -46,6 +46,10 @@ https://mp.weixin.qq.com/s/z1APyCxlOEPHn48OeJAHkQ
 
 基于深度学习的视频内容识别
 
+https://mp.weixin.qq.com/s/XFlcGZRrxmmUDZXg-ijFDA
+
+视频识别SOTA模型都在这了—PySlowFast! Facebook AI Research开源视频理解前沿算法代码库
+
 https://mp.weixin.qq.com/s/ovjoHCcR1xYb9N6kyFJUTg
 
 视频广告段落检测——从一个偏门说计算机视觉的发展历史

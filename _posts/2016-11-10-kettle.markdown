@@ -145,6 +145,8 @@ http://lucene.apache.org/solr/quickstart.html
 
 http://www.cnblogs.com/ibook360/archive/2013/03/22/2975345.html
 
+实时分布式搜索引擎比较（senseidb、Solr、elasticsearch）
+
 相关资料：
 
 http://www.solr.cc/blog/
@@ -176,6 +178,10 @@ https://mp.weixin.qq.com/s/ydIkoD3e87As_6f96mJkww
 https://mp.weixin.qq.com/s/KPsR3JlRU2g1V1w9CjTaHg
 
 搜索引擎之倒排索引解读
+
+https://mp.weixin.qq.com/s/P_LBnjeau4Au02Qef0OEsQ
+
+搜索引擎核心技术与算法——词项词典与倒排索引优化
 
 ## start命令
 

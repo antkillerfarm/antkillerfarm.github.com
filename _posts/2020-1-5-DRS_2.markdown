@@ -349,3 +349,11 @@ https://mp.weixin.qq.com/s/Y4g2T6qMGzCcE67bINPiGA
 https://zhuanlan.zhihu.com/p/100019681
 
 推荐系统技术演进趋势：从召回到排序再到重排
+
+https://mp.weixin.qq.com/s/kPdYAzVYelE9LxvGvi4f8w
+
+多值类别特征加入CTR预估模型的方法汇总
+
+https://zhuanlan.zhihu.com/p/101298495
+
+稠密特征加入CTR预估模型有哪些方法？

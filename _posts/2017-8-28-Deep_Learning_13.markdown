@@ -172,6 +172,10 @@ https://mp.weixin.qq.com/s/HMhvcAYRatN0n5EiiNVoXQ
 
 详解深度语义匹配模型DSSM
 
+https://www.cnblogs.com/guoyaohua/p/9229190.html
+
+DSSM：深度语义匹配模型（及其变体CLSM、LSTM-DSSM）
+
 ## CDSSM
 
 《Learning semantic representations using convolutional neural networks for web search》

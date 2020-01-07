@@ -22,6 +22,38 @@ https://mp.weixin.qq.com/s/WDInIzWa9_SYSaXXPhdQuw
 
 基于深度学习的视觉三维重建研究总结
 
+https://zhuanlan.zhihu.com/p/101346137
+
+Det3D-首个通用3D目标检测框架
+
+https://mp.weixin.qq.com/s/tTdKqRZqBFxFFiZaDD9AJw
+
+三维深度学习中的目标分类与语义分割
+
+https://mp.weixin.qq.com/s/ihrExTygb-Pnnh4o4tAYnQ
+
+基于单目视觉的三维重建算法综述
+
+https://mp.weixin.qq.com/s/SBWGvu84oPKZkY5d8gz-oQ
+
+3D实例分割
+
+https://mp.weixin.qq.com/s/8an3eBrOZ5d6_PdNp6QkyA
+
+一文教你读懂3D目标检测
+
+https://mp.weixin.qq.com/s/BVP7vJ1RxwyRoU0purj0Xw
+
+3D数据分类深度学习方法综述，25页论文带你全面了解最新进展
+
+https://mp.weixin.qq.com/s/DxDkYfzW5BqhidPlqT772Q
+
+从单幅图像到双目立体视觉的3D目标检测算法
+
+https://zhuanlan.zhihu.com/p/59865273
+
+三维语义分割概述及总结
+
 https://mp.weixin.qq.com/s/wHIT2pm_5O4MOR_QLpHVLQ
 
 PRNet：人脸3D重建与密集对齐
@@ -146,10 +178,6 @@ https://mp.weixin.qq.com/s/bmtZ_-NaRtFitoJumukQSw
 
 通过端到端几何推理发现潜在3D关键点
 
-https://mp.weixin.qq.com/s/tTdKqRZqBFxFFiZaDD9AJw
-
-三维深度学习中的目标分类与语义分割
-
 https://mp.weixin.qq.com/s/ZdzPDb8NWmWkgAufeylYLg
 
 Google AI提出物体识别新方法：端到端发现同类物体最优3D关键点
@@ -165,10 +193,6 @@ SkeletonNet：完整的人体三维位姿重建方法
 https://mp.weixin.qq.com/s/adSbAAV7POblqE_jaOGZhg
 
 深度学习新应用：在PyTorch中用单个2D图像创建3D模型
-
-https://mp.weixin.qq.com/s/ihrExTygb-Pnnh4o4tAYnQ
-
-基于单目视觉的三维重建算法综述
 
 https://mp.weixin.qq.com/s/3JzwA2HAzoWtE_j2UhZCSw
 
@@ -198,10 +222,6 @@ https://mp.weixin.qq.com/s/h8tk28IEuqB7g1e-vsyN5g
 
 2DASL：目前最好的开源人脸3D重建与密集对齐算法
 
-https://zhuanlan.zhihu.com/p/59865273
-
-三维语义分割概述及总结
-
 https://zhuanlan.zhihu.com/p/62964002
 
 AM3D:高精度单目三维检测器
@@ -213,18 +233,6 @@ AR版“神笔马良”：从单张2D图片建立3D人物运动模型，华盛�
 https://mp.weixin.qq.com/s/pPgjBmct11POKqeVv8ymIA
 
 3D重建：硬派几何求解vs深度学习打天下？
-
-https://mp.weixin.qq.com/s/8an3eBrOZ5d6_PdNp6QkyA
-
-一文教你读懂3D目标检测
-
-https://mp.weixin.qq.com/s/BVP7vJ1RxwyRoU0purj0Xw
-
-3D数据分类深度学习方法综述，25页论文带你全面了解最新进展
-
-https://mp.weixin.qq.com/s/DxDkYfzW5BqhidPlqT772Q
-
-从单幅图像到双目立体视觉的3D目标检测算法
 
 https://mp.weixin.qq.com/s/n3ZUsq2I0CaJ5pIl2nZUFQ
 
@@ -241,10 +249,6 @@ GS3D(monocular 3D detection)
 https://mp.weixin.qq.com/s/G7YNTR8FAsCtkCxLQv1-dQ
 
 Facebook开源3D目标检测框架VoteNet，曾刷新两大数据集最高精度
-
-https://mp.weixin.qq.com/s/SBWGvu84oPKZkY5d8gz-oQ
-
-3D实例分割
 
 https://zhuanlan.zhihu.com/p/85686290
 

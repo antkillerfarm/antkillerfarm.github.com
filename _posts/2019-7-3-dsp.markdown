@@ -288,6 +288,10 @@ https://github.com/Media-Smart/vedaseg
 
 vedaseg:A semantic segmentation toolbox in pytorch
 
+https://mp.weixin.qq.com/s/gGCyMq4PM_Whv-Ssiwt-HA
+
+秒杀Deepfake！微软北大提出AI换脸工具FaceShifter和假脸检测工具Face X-Ray
+
 # Attention进阶+
 
 https://mp.weixin.qq.com/s/7OYY3L7gL4wVv_EjoosOHA

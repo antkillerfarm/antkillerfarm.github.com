@@ -1,10 +1,36 @@
 ---
 layout: post
-title:  深度强化学习（七）——AlphaStar, Dota 2, DRL参考资源（1）
+title:  深度强化学习（七）——MARL, AlphaStar, Dota 2, DRL参考资源（1）
 category: DRL 
 ---
 
 # MARL（续）
+
+从上面的问题可以看出，MARL至少应该包括如下几个要素：
+
+- 在多智能体系统中至少有两个智能体。
+
+- 智能体之间存在着一定的关系，如合作关系（如本例），竞争关系（如多人游戏），或者同时存在竞争与合作的关系。
+
+- 每个智能体最终所获得的回报不仅仅与自身的动作有关系，还跟对方的动作有关系。如本例中每个智能体要想获得回报，必须是金条被两个智能体一起搬回家。
+
+SARL用MDP来描述，而MARL则需要用Markov game（马尔科夫博弈，又称随机博弈（stochastic game））来描述。
+
+类似于MDP，Markov game可形式化表示为：
+
+$$(n,S,A_1,\dots,A_n,T,\gamma,R_1,\dots,R_n)$$
+
+n为玩家的个数，在本例中n为2。
+
+S为系统状态，一般指多智能体的联合状态，即每个智能体的联合状态。
+
+T为状态转移函数，指给定玩家当前状态和联合行为时，下一状态的概率分布。
+
+R为回报函数。它描述了多智能体之间的关系。当每个智能体的回报函数一致时，则表示智能体之间是合作关系；当回报函数相反时，则表示智能体之间是竞争关系，当回报函数介于两者之间，则是混合关系。
+
+MARL的结构一般如下图所示。
+
+![](/images/img3/MARL_2.png)
 
 **静态博弈**：static/stateless game是指没有状态s，不存在动力学使状态能够转移的博弈。例如一个矩阵博弈。
 
@@ -310,47 +336,3 @@ https://mp.weixin.qq.com/s/TWjFWe6-dZWDoTi5gN1BxA
 https://mp.weixin.qq.com/s/YnMgJDAh3XhyyNdI8RXmtw
 
 腾讯知文等提出新型生成式摘要模型：结合主题信息和强化训练生成更优摘要
-
-https://mp.weixin.qq.com/s/JbCIBFDRvg5qcpZ11g58dw
-
-DeepMind提出关系性深度强化学习：在星际争霸2任务中获得最优水平
-
-https://mp.weixin.qq.com/s/SpCorsAiTWGYGiohT_gZtg
-
-如何训练智能体Agent玩毁灭战士ViZDoom？
-
-https://mp.weixin.qq.com/s/ewC2_8O29Gg0blxK7mHsYA
-
-比TD、MC、MCTS指数级快，性能超越A3C、DDQN等模型，这篇RL算法论文在Reddit上火了
-
-https://mp.weixin.qq.com/s/Q9QzXo_M3jYKjBWSsLYwgQ
-
-强化学习+树搜索：一种新型程序合成方法
-
-https://mp.weixin.qq.com/s/l46yJdRaftMlwr6odiSiHg
-
-Yoshua Bengio团队基于深度强化学习打造聊天机器人MILABOT
-
-https://mp.weixin.qq.com/s/6_cW22DCzSw3DpUDrLXLcA
-
-OpenAI提出强化学习近端策略优化，可替代策略梯度法
-
-http://mp.weixin.qq.com/s/S4jhpNKYZP5YQWaiiOQGFA
-
-DeepMind：“预测地图”海马体催生强化学习新算法
-
-https://mp.weixin.qq.com/s/KZHidOi5KYgg393R_JspBA
-
-DeepMind都拿不下的游戏，刚刚被OpenAI玩出历史最高分
-
-https://mp.weixin.qq.com/s/VrVdsxn94ux_46mIyS8f0w
-
-谷歌大脑实现更宽广的智能体视野，在Atari2600上可持续超越人类玩家！
-
-https://mp.weixin.qq.com/s/P5EysBHBaR6L3IfeSgo6fw
-
-强化学习20分钟，剑桥博士教汽车学会自动驾驶！
-
-https://mp.weixin.qq.com/s/w3SsadgKaL8-tlzYLvMm-A
-
-讲真？一天就学会了自动驾驶——强化学习在自动驾驶的应用

@@ -326,6 +326,10 @@ https://mp.weixin.qq.com/s/kDdQCOi7nQWOZrktNrk8dQ
 
 中国惊现变态神人！竟赤足走炭火，暴力吊打一众科学家！（莱顿弗罗斯特效应）
 
+https://mp.weixin.qq.com/s/IyK6sa8ig_LX-tMupqSvVg
+
+倒啤酒竟能拿到诺贝尔物理学大奖！
+
 ## Bélády's Algorithm
 
 Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。

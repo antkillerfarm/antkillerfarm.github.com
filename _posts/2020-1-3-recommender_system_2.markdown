@@ -305,3 +305,7 @@ Query理解和语义召回在知乎搜索中的应用
 https://mp.weixin.qq.com/s/t7LYfItthkszzvRp6opG5w
 
 机器学习在微博O系列广告中的应用
+
+https://mp.weixin.qq.com/s/3urKkPfhi4JC7Qe2pLclsg
+
+搜索模型核心技术公开，淘宝如何做用户建模？

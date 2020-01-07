@@ -124,6 +124,14 @@ https://groups.csail.mit.edu/graphics/hdrnet/
 
 这篇论文虽然不是综述，但有很多内容讲解ISP的流程。
 
+《Deep Learning for Image Denoising: A Survey》
+
+《Deep Learning on Image Denoising: An overview》
+
+这两篇综述都是哈工大深圳分院的作品。
+
+
+
 ## 参考
 
 https://mp.weixin.qq.com/s/wA85XFQXeypuoqFnmN2P4g

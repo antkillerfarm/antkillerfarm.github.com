@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度强化学习（六）——MARL
+title:  深度强化学习（六）——AlphaGo（2）
 category: DRL 
 ---
 
@@ -72,7 +72,21 @@ s'：下一个abstract state。
 
 ![](/images/img3/MuZero_2.png)
 
+A部分：Representation Network + Dynamics Network + MCTS
 
+B部分：从policy:$$\pi_t$$中采样得到action：$$a_{t+1}$$，环境根据$$a_{t+1}$$得到observation：$$o_{t+1}$$h和reward：$$u_{t+1}$$。这些样本在用过后，被存入replay buffer。
+
+C部分：训练时，从replay buffer中，采样得到$$o_t$$，通过h函数，得到$$s_t$$，然后执行K-step展开，得到p,v,r。
+
+loss公式为：
+
+$$l_t(\theta)=\sum_{k=0}^K l^r(u_{t+k},r_t^k)+l^v(z_{t+k},v_t^k)+l^p(\pi_{t+k},p_t^k)+c\|\theta\|^2$$
+
+其中，p,v,r分别是policy、value、reward的预测值。而$$\pi$$、z、u则是对应的target值。（参见《深度强化学习（二）》中DQN一节中的current Q-value和target Q-value的定义）
+
+MuZero和VPN一样，都是在abstract state space中用dynamics model做planning。MuZero的改进在于增加了对每个abstract state上policy的预测，因此效率比VPN要高一些。
+
+最后需要澄清一点的是：**模拟的Model永远比不上确定的规则**。MuZero在棋类上的表现并不如AlphaZero。对比数据中，围棋项目的优势，更多的在于MuZero使用了更宽的网络。
 
 ### 参考
 
@@ -321,29 +335,3 @@ MARL应用了大量博弈论的知识，可参见《强化学习（十）》。
 上图是两个智能体1、2将金条（object）搬运回家的例子。这根金条需要两个人一人抬着一边才能扛回家。
 
 要想把金条扛回家，小红和小蓝必须先绕过障碍物，然后每个人到达金条的一边，扛起金条后，两人还得绕开家门口的障碍物，这样才能将金条扛回家。
-
-从上面的问题可以看出，MARL至少应该包括如下几个要素：
-
-- 在多智能体系统中至少有两个智能体。
-
-- 智能体之间存在着一定的关系，如合作关系（如本例），竞争关系（如多人游戏），或者同时存在竞争与合作的关系。
-
-- 每个智能体最终所获得的回报不仅仅与自身的动作有关系，还跟对方的动作有关系。如本例中每个智能体要想获得回报，必须是金条被两个智能体一起搬回家。
-
-SARL用MDP来描述，而MARL则需要用Markov game（马尔科夫博弈，又称随机博弈（stochastic game））来描述。
-
-类似于MDP，Markov game可形式化表示为：
-
-$$(n,S,A_1,\dots,A_n,T,\gamma,R_1,\dots,R_n)$$
-
-n为玩家的个数，在本例中n为2。
-
-S为系统状态，一般指多智能体的联合状态，即每个智能体的联合状态。
-
-T为状态转移函数，指给定玩家当前状态和联合行为时，下一状态的概率分布。
-
-R为回报函数。它描述了多智能体之间的关系。当每个智能体的回报函数一致时，则表示智能体之间是合作关系；当回报函数相反时，则表示智能体之间是竞争关系，当回报函数介于两者之间，则是混合关系。
-
-MARL的结构一般如下图所示。
-
-![](/images/img3/MARL_2.png)
