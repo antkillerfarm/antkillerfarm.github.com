@@ -228,6 +228,10 @@ http://www.matrix67.com/blog/archives/4570
 
 再谈Julia集与Mandelbrot集
 
+https://mp.weixin.qq.com/s/6XsH71CKaVikqnL6kVPqtg
+
+各种语言的Mandelbrot set示例代码
+
 https://mp.weixin.qq.com/s/gnPiCmsua0ByO5UwWqxuag
 
 史上最牛逼的文科生：学历史成为物理学家，却获得了数学界的最高荣誉，出了350部书，外号火星人！（Edward Witten）

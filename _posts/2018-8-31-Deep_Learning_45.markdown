@@ -224,6 +224,22 @@ https://mp.weixin.qq.com/s/rgbHJ_95tDf-kYMTO1YYcw
 
 谷歌大脑提出NAS-FPN：这是一种学会自动架构搜索的特征金字塔网络
 
+https://mp.weixin.qq.com/s/j_QHRCa_eNJ_IMRPpqc76w
+
+NAS-FPN：基于自动架构搜索的特征金字塔网络
+
+https://zhuanlan.zhihu.com/p/97230695
+
+NAS+Det第一弹：NAS-FPN
+
+https://zhuanlan.zhihu.com/p/98373780
+
+NAS+Det第二弹：EfficientDet
+
+https://zhuanlan.zhihu.com/p/100590305
+
+NAS+Det第三弹：SpineNet
+
 https://mp.weixin.qq.com/s/j-EA1ha1lcLtqJQJO8y0ZA
 
 Google Brain新作：网络结构搜索NAS在物体检测金字塔FPN框架大放异彩
@@ -251,10 +267,6 @@ https://mp.weixin.qq.com/s/nNkbX4TEKidK2xKkYWCLbg
 https://mp.weixin.qq.com/s/iEzfaIGwcm8UaPJzedkjnw
 
 谷歌将AutoML应用于Transformer架构，翻译结果飙升
-
-https://mp.weixin.qq.com/s/j_QHRCa_eNJ_IMRPpqc76w
-
-NAS-FPN：基于自动架构搜索的特征金字塔网络
 
 https://mp.weixin.qq.com/s/6PtBqWmqIm76jhfSNGPHYA
 

@@ -230,3 +230,6 @@ https://mp.weixin.qq.com/s/0DGyw_PzZp3l3NPhtFbmLw
 
 目标检测新技能！引入知识图谱:Reasoning-RCNN
 
+https://mp.weixin.qq.com/s/vtj1HgDC2slsOw9DGoURCA
+
+知识图谱实体链接：一份“由浅入深”的综述

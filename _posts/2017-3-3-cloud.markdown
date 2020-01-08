@@ -304,3 +304,7 @@ https://mp.weixin.qq.com/s/P5EysBHBaR6L3IfeSgo6fw
 https://mp.weixin.qq.com/s/w3SsadgKaL8-tlzYLvMm-A
 
 讲真？一天就学会了自动驾驶——强化学习在自动驾驶的应用
+
+https://mp.weixin.qq.com/s/nnWuIPk_6mI9IAKIUbx6KQ
+
+深度强化学习解决交通控制问题

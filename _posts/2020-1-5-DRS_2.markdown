@@ -357,3 +357,7 @@ https://mp.weixin.qq.com/s/kPdYAzVYelE9LxvGvi4f8w
 https://zhuanlan.zhihu.com/p/101298495
 
 稠密特征加入CTR预估模型有哪些方法？
+
+https://zhuanlan.zhihu.com/p/101136699
+
+推荐系统中的深度匹配模型

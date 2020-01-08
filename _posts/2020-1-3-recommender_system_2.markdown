@@ -313,3 +313,7 @@ https://mp.weixin.qq.com/s/3urKkPfhi4JC7Qe2pLclsg
 https://mp.weixin.qq.com/s/0_G3jMpwJVbdJ85TajubIg
 
 个性化海报在爱奇艺视频推荐场景中的实践
+
+https://mp.weixin.qq.com/s/YkABleB5hlHt_Zn6M6DgBw
+
+从零开始构建企业级推荐系统

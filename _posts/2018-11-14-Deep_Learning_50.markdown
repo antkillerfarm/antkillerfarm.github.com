@@ -284,6 +284,10 @@ https://mp.weixin.qq.com/s/UlEQ845-siCEIJ6JyBqkdw
 
 CNN为什么要用3x3卷积？偶数卷积核其实表现更强！
 
+https://zhuanlan.zhihu.com/p/62532887
+
+双线性池化（Bilinear Pooling）详解、改进及应用
+
 # AI前沿
 
 人工智能前沿7大热点：

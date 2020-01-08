@@ -270,7 +270,7 @@ API参考：
 
 https://docs.scipy.org/doc/scipy/reference/
 
-### Gaussian filter
+- Gaussian filter
 
 w = 2*int(truncate*sigma + 0.5) + 1
 
@@ -283,6 +283,10 @@ Gaussian filter in scipy
 https://mp.weixin.qq.com/s/vGS4U3g4eaPuQwBWh-lTiA
 
 机器学习核心：优化问题基于Scipy
+
+https://mp.weixin.qq.com/s/xN0mX9XWvVUpi0p5Tc6vLA
+
+利用SciPy求解非线性规划问题
 
 ## sklearn
 

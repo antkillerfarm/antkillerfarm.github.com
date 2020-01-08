@@ -436,3 +436,7 @@ https://mp.weixin.qq.com/s/oKtu3AA9D3y--xMDQ8EARw
 https://mp.weixin.qq.com/s/4o_cSzWeJdLJMObJBhaZlw
 
 计算机系统中的内存
+
+https://mp.weixin.qq.com/s/OWGi1htNugOv81ZFPinRGw
+
+汇编实现的memcpy和memset

@@ -282,6 +282,10 @@ https://mp.weixin.qq.com/s/RO3FrPxhK2GEoDCGE9DXrw
 
 利用XLA将GPU性能推向极限
 
+https://mp.weixin.qq.com/s/MPI9KERDS-Al4DTBDRV04w
+
+TensorFlow XLA工作原理简介
+
 ## Eigen
 
 Eigen是一个线性代数方面的C++模板库。tensorflow和caffe2都使用了这个库。
