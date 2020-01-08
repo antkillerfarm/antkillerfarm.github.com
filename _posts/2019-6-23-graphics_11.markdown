@@ -139,3 +139,35 @@ https://blog.csdn.net/jaccen2012/article/details/80328043
 https://www.cnblogs.com/mengdd/p/3237991.html
 
 图形学理论知识BRDF双向反射分布函数（Bidirectional Reflectance Distribution Function）
+
+## Taichi
+
+Taichi是胡渊鸣开发的一套计算机图形库。
+
+官网：
+
+http://taichi.graphics/
+
+代码：
+
+https://github.com/yuanming-hu/taichi
+
+参考：
+
+https://zhuanlan.zhihu.com/p/97700605
+
+99行代码的《冰雪奇缘》
+
+## Halide
+
+Halide也是一个高性能的图形DSL。
+
+官网：
+
+https://halide-lang.org/
+
+参考：
+
+https://www.zhihu.com/question/294625837
+
+如何评价Halide？

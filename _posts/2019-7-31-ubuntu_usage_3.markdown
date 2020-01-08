@@ -101,3 +101,63 @@ N.B.:nota bene 注意,留心
 原版镜像由于Apple的硬件检测机制，并不能在PC上运行。这时就需要破解，这一步一般是在boot中做的。
 
 可用的boot工具，早期有empireEFI、HackBoot。较新的有chameleon、Niresh。
+
+# 阴影面积
+
+![](/images/img3/p0.png)
+
+题如上图，已知正方形边长为10，求阴影面积。
+
+解：
+
+旋转图形建立坐标系如下图：
+
+![](/images/img3/p1.png)
+
+阴影部分上下曲边公式如下：
+
+$$x^2+y^2=5^2$$
+
+$$x^2+(y+5\sqrt{2})^2=10^2$$
+
+求解交点坐标：
+
+$$(y+5\sqrt{2})^2-y^2=75$$
+
+$$10\sqrt{2}y+50=75$$
+
+$$y=\frac{5\sqrt{2}}{4}$$
+
+$$x=\sqrt{\frac{175}{8}}$$
+
+用积分法求解阴影面积：
+
+$$\begin{align}
+\frac{S}{4} & =\int_0^{\sqrt{\frac{175}{8}}}\sqrt{(5^2-x^2)}-(\sqrt{(10^2-x^2)}-5\sqrt{2})\mathrm{d}x \\
+& = \int_0^{\sqrt{\frac{175}{8}}}\sqrt{(5^2-x^2)}\mathrm{d}x - \int_0^{\sqrt{\frac{175}{8}}}\sqrt{(10^2-x^2)}\mathrm{d}x + 5\sqrt{2} \cdot \sqrt{\frac{175}{8}} 
+\end{align}$$
+
+查常用积分表，可得：
+
+$$\int \sqrt{a^2 - x^2}\mathrm{d}{x} = \frac12 \left(x\sqrt{a^2 - x^2} + a^2\arcsin\frac xa\right) + C$$
+
+$$\begin{align}
+\frac{S}{4} & =\left[\frac{25}{16}\sqrt{7} + \frac{25}{2}\arcsin(\frac{\sqrt{\frac{7}{2}}}{2})\right] - \left[\frac{125}{16}\sqrt{7} + 50\arcsin(\frac{\sqrt{\frac{7}{2}}}{4})\right] + \frac{25}{2}\sqrt{7} \\
+& = \frac{25}{4}\sqrt{7} + \frac{25}{2}\arcsin(\frac{\sqrt{\frac{7}{2}}}{2}) - 50\arcsin(\frac{\sqrt{\frac{7}{2}}}{4})
+\end{align}$$
+
+$$S=25\sqrt{7} + 50\arcsin(\frac{\sqrt{\frac{7}{2}}}{2}) - 200\arcsin(\frac{\sqrt{\frac{7}{2}}}{4})\approx 29.27625$$
+
+参考：
+
+https://www.zhihu.com/question/60697114
+
+网传无锡小升初题，求阴影面积
+
+http://wuli.wiki//online/ITable.html
+
+积分表
+
+http://wuli.wiki//online/
+
+小时物理百科
