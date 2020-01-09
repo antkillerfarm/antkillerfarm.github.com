@@ -8,6 +8,26 @@ category: resource
 
 ## 聊天机器人（续）
 
+https://mp.weixin.qq.com/s/bzjRlFfh7tz4OWVpGnNPwQ
+
+揭秘阿里小蜜：基于检索模型和生成模型相结合的聊天引擎
+
+https://mp.weixin.qq.com/s/h6BjW1nrV4z30eWfny7Wzw
+
+聊天机器人落地及进阶实战
+
+https://mp.weixin.qq.com/s/ziM0U-KEePjZLNMhK5PVXA
+
+基于金融-司法领域(兼有闲聊性质)的聊天机器人
+
+https://mp.weixin.qq.com/s/Tk-WWuYp-CBx0p-mBWm5Jg
+
+开发聊天机器人必读的重要论文
+
+https://mp.weixin.qq.com/s/ZexnTKHEFKPso5fhZNQfQQ
+
+聊天机器人中用户出行消费意图识别方法研究
+
 https://mp.weixin.qq.com/s/jifGPaxdqVii3q6gG4F2ag
 
 Google工程师带你了解聊天机器人的工作原理和未来发展
@@ -367,23 +387,3 @@ https://mp.weixin.qq.com/s/12RA4Bd86SJS6Q4CAvOEWw
 https://mp.weixin.qq.com/s/PJQgrAzwefmFgSBF39_yIA
 
 Gmail新功能：结合BoW模型和RNN-LM，帮助用户快速写邮件
-
-https://mp.weixin.qq.com/s/gJFwWnKn7BV_BcADu_vJCg
-
-谷歌语义文本最新进展+两个开源新模型
-
-https://mp.weixin.qq.com/s/f8NoGxirMkTzwLERKon1Vw
-
-北京大学提出基于CNN的学术论文自动评分模型
-
-https://mp.weixin.qq.com/s/ILn-XqAQ_DYCFsiRgqYBrQ
-
-微软亚洲研究院院长副院长周明：语言智能的进展
-
-https://mp.weixin.qq.com/s/A4r01mV-X8CTJy3vPa9BPw
-
-对话式交互技术原理及流程揭秘
-
-https://mp.weixin.qq.com/s/JoYmVC_9bw3NHK6WXggAcA
-
-通用句子语义编码器，谷歌在语义文本相似性上的探索

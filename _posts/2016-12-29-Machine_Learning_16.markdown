@@ -6,6 +6,16 @@ category: ML
 
 # 协同过滤的ALS算法（续）
 
+如何找到相似的用户和物品呢？其实就是计算用户间以及物品间的相似度。以下是几种计算相似度的方法：
+
+### 欧氏距离
+
+$$d(x,y)=\sqrt{\sum(x_i-y_i)^2},sim(x,y)=\frac{1}{1+d(x,y)}$$
+
+### Cosine相似度
+
+$$\cos(x,y)=\frac{\langle x,y\rangle}{\mid x\mid \mid y\mid }=\frac{\sum x_iy_i}{\sqrt{\sum x_i^2}~\sqrt{\sum y_i^2}}$$
+
 ### 皮尔逊相关系数（Pearson product-moment correlation coefficient，PPMCC or PCC）：
 
 $$\begin{align}
@@ -220,24 +230,3 @@ $$RMSE=\sqrt{\frac{\sum(R-XY^T)^2}{N}}$$
 ## 隐式反馈
 
 用户给商品评分是个非常简单粗暴的用户行为。在实际的电商网站中，还有大量的用户行为，同样能够间接反映用户的喜好，比如用户的购买记录、搜索关键字，甚至是鼠标的移动。我们将这些间接用户行为称之为隐式反馈（implicit feedback），以区别于评分这样的显式反馈（explicit feedback）。
-
-隐式反馈有以下几个特点：
-
-1.没有负面反馈（negative feedback）。用户一般会直接忽略不喜欢的商品，而不是给予负面评价。
-
-2.隐式反馈包含大量噪声。比如，电视机在某一时间播放某一节目，然而用户已经睡着了，或者忘了换台。
-
-3.显式反馈表现的是用户的**喜好（preference）**，而隐式反馈表现的是用户的**信任（confidence）**。比如用户最喜欢的一般是电影，但观看时间最长的却是连续剧。大米购买的比较频繁，量也大，但未必是用户最想吃的食物。
-
-4.隐式反馈非常难以量化。
-
-## ALS-WR
-
-针对隐式反馈，有ALS-WR算法（ALS with Weighted-$$\lambda$$-Regularization）。
-
-首先将用户反馈分类：
-
-$$p_{ui}=\begin{cases}
-1, & \text{preference} \\
-0, & \text{no preference} \\
-\end{cases}$$

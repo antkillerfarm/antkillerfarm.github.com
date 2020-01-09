@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十五）——Probabilistic Robotics
+title:  机器学习（三十五）——Probabilistic Robotics, Kalman filters
 category: ML 
 ---
 
@@ -89,7 +89,7 @@ https://blog.csdn.net/HJ199404182515/article/details/52504150
 
 浅谈自适应滤波器
 
-## 卡尔曼滤波
+# Kalman filters
 
 >注：Rudolf (Rudi) Emil Kálmán，1930～2016，匈牙利出生的美国科学家。哥伦比亚大学博士（1957），先后执教于斯坦福大学和佛罗里达大学。现代控制理论的里程碑人物，美国科学院院士。   
 >卡尔曼滤波从纯数学的角度讲，并没有多大意义。因此，主流数学家们在很长一段时间内，并不承认Kálmán是数学家。只是由于卡尔曼滤波在工程界的巨大影响力，才不得不于2012年，授予其美国数学协会院士。

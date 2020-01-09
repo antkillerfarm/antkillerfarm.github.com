@@ -226,6 +226,10 @@ https://mp.weixin.qq.com/s/btU7ulbWV0FPZpnIymie4g
 
 如何使用BERT来做命名实体识别
 
+https://zhuanlan.zhihu.com/p/100969186
+
+代码实现中文命名实体识别（包括多种模型：HMM，CRF，BiLSTM，BiLSTM+CRF）
+
 ## 文本摘要
 
 https://mp.weixin.qq.com/s/jk1XgnuydrsTg3HvV0CVvw
@@ -387,23 +391,3 @@ http://www.jianshu.com/p/43db6425ad33
 https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247484926&idx=1&sn=4e34a442c126c46bba27a7f17df3e61e
 
 聊天机器人Chatbot知识资料全集
-
-https://mp.weixin.qq.com/s/bzjRlFfh7tz4OWVpGnNPwQ
-
-揭秘阿里小蜜：基于检索模型和生成模型相结合的聊天引擎
-
-https://mp.weixin.qq.com/s/h6BjW1nrV4z30eWfny7Wzw
-
-聊天机器人落地及进阶实战
-
-https://mp.weixin.qq.com/s/ziM0U-KEePjZLNMhK5PVXA
-
-基于金融-司法领域(兼有闲聊性质)的聊天机器人
-
-https://mp.weixin.qq.com/s/Tk-WWuYp-CBx0p-mBWm5Jg
-
-开发聊天机器人必读的重要论文
-
-https://mp.weixin.qq.com/s/ZexnTKHEFKPso5fhZNQfQQ
-
-聊天机器人中用户出行消费意图识别方法研究

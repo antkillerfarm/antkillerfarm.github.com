@@ -1,10 +1,46 @@
 ---
 layout: post
-title:  机器学习（十八）——独立成分分析, 时间序列分析（1）
+title:  机器学习（十八）——独立成分分析, 数据不平衡问题
 category: ML 
 ---
 
-# 独立成分分析（续）
+# 主成分分析（续）
+
+https://mp.weixin.qq.com/s/JDWgw3OOdBurDAShrPHJ7Q
+
+从最大方差来看主成分分析PCA
+
+https://mp.weixin.qq.com/s/ZDipXGPOxKhxtAx2Dc9RjA
+
+主成分分析（PCA）以及在图像上的应用
+
+https://mp.weixin.qq.com/s/9-nNNhhDWSYWy46u0hTazQ
+
+降维：PCA真的能改善分类结果吗？
+
+https://mp.weixin.qq.com/s/vkBSextwFQv8-DUwAxgVyA
+
+图像降维之Isomap特征抽取方法
+
+https://zhuanlan.zhihu.com/p/78193297
+
+PCA和SVD的联系和区别？
+
+https://mp.weixin.qq.com/s/c8P9KmkQTqNcazcjU9qQFw
+
+机器学习中的维度灾难
+
+https://mp.weixin.qq.com/s/Uj9AFbyFRO6jIBoC3Gy8nA
+
+小孩都看得懂的主成分分析
+
+# 独立成分分析
+
+这一节我们将讲述独立成分分析（Independent Components Analysis，ICA）算法。
+
+首先，我们介绍一下经典的鸡尾酒宴会问题(cocktail party problem)。
+
+假设在party中有n个人，他们可以同时说话，我们也在房间中放置了n个声音接收器(Microphone)用来记录声音。宴会过后，我们从n个麦克风中得到了m组数据$$x^{(i)}$$，其中的i表示采样的时间顺序。由于宴会上人们的说话声是混杂在一起的，因此，采样得到的声音也是混杂不清的，那么我们是否有办法从混杂的数据中，提取出每个人的声音呢？
 
 为了更为正式的描述这个问题，我们假设数据$$s\in R^n$$是由n个独立的源生成的。我们接收到的信号可写作：$$x=As$$。其中，A被称为混合矩阵（mixing matrix）。在这个问题中，$$s^{(i)}$$是一个n维向量，$$s_j^{(i)}$$表示第j个说话者在i时刻的声音。同理，$$x_j^{(i)}$$表示第j个麦克风在i时刻的记录下的数据。
 
@@ -114,161 +150,74 @@ $$\nabla_W\ell(W)=\begin{bmatrix}
 
 >注意：我们计算最大似然估计时,假设了$$x^{(i)}$$和$$x^{(j)}$$之间是独立的，然而对于语音信号或者其他具有时间连续依赖特性(比如温度)上，这个假设不能成立。但是在数据足够多时，假设独立对效果影响不大。
 
-# 时间序列分析
+# 数据不平衡问题
 
-## 书籍和教程
+![](/images/img3/imbalance.png)
 
-http://www.stat.berkeley.edu/~bartlett/courses/153-fall2010/
+https://mp.weixin.qq.com/s/e0jXXCIhbaZz7xaCZl-YmA
 
-berkeley的时间序列分析课程
+如何处理不均衡数据？
 
-http://people.duke.edu/%7Ernau/411home.htm
+https://mp.weixin.qq.com/s/2j_6hdq-MhybO_B0S7DRCA
 
-回归和时间序列分析
+如何解决机器学习中数据不平衡问题
 
-《应用时间序列分析》，王燕著。
+https://mp.weixin.qq.com/s/gEq7opXLukWD5MVhw_buGA
 
-## 概述
+七招教你处理非平衡数据
 
-时间序列，就是按时间顺序排列的，随时间变化的数据序列。
+http://blog.csdn.net/u013709270/article/details/72967462
 
-生活中各领域各行业太多时间序列的数据了，销售额，顾客数，访问量，股价，油价，GDP，气温...
+机器学习中的数据不平衡解决方案大全
 
-随机过程的特征有均值、方差、协方差等。
+https://mlr-org.github.io/mlr-tutorial/devel/html/over_and_undersampling/index.html
 
-如果随机过程的特征随着时间变化，则此过程是非平稳的；相反，如果随机过程的特征不随时间而变化，就称此过程是平稳的。
+Imbalanced Classification Problems
 
-下图所示，左边非稳定，右边稳定。
+https://mp.weixin.qq.com/s/QEHAV_rW25E0b0N7POr6tw
 
-![](/images/article/time_series.png)
+关于处理样本不平衡问题的Trick整理
 
-非平稳时间序列分析时，若导致非平稳的原因是确定的，可以用的方法主要有趋势拟合模型、季节调整模型、移动平均、指数平滑等方法。
+https://mp.weixin.qq.com/s/5csfnBWZ2MQsnWZnNj9b8w
 
-若导致非平稳的原因是随机的，方法主要有ARIMA及自回归条件异方差模型等。
+机器学习中样本比例不平衡的处理方法
 
-## ARIMA
+https://mp.weixin.qq.com/s/ZL6UWrBB7qr8jp2QRA1MAQ
 
-ARIMA模型全称为差分自回归移动平均模型(Autoregressive Integrated Moving Average Model,简记ARIMA)，也叫求和自回归移动平均模型，是由George Edward Pelham Box和Gwilym Meirion Jenkins于70年代初提出的一著名时间序列预测方法，所以又称为box-jenkins模型、博克思-詹金斯法。
+方法总结：教你处理机器学习中不平衡类问题
 
->注：Gwilym Meirion Jenkins，1932～1982，英国统计学家。伦敦大学学院博士，兰卡斯特大学教授。
+https://mp.weixin.qq.com/s/V5d3kbpXBf4883TQ_sq37A
 
-同《数学狂想曲（十一）》中的PID算法一样，ARIMA模型实际上是三个简单模型的组合。
+遇到有这六大缺陷的数据集该怎么办？这有一份数据处理急救包
 
-### AR模型
+https://mp.weixin.qq.com/s/zLgD8DjnW1DfeqL_xITisQ
 
-$$X_t = c + \sum_{i=1}^p \varphi_i X_{t-i}+ \varepsilon_t$$
+教你如何用python解决非平衡数据建模
 
-其中，p为阶数，$$\varepsilon_t$$为白噪声。上式又记作**AR(p)**。显然，AR模型是一个系统状态模型。
+https://mp.weixin.qq.com/s/ElOFb0Ln4qyG1x38NRFyag
 
-### MA模型
+如何处理数据不均衡问题
 
-$$X_t = \mu + \varepsilon_t + \sum_{i=1}^q \theta_i \varepsilon_{t-i}$$
+https://mp.weixin.qq.com/s/DxkHjArbr5XRdEGVNjJAKA
 
-上式记作**MA(q)**，其中q和$$\varepsilon_t$$的含义与上同。MA模型是一个噪声模型。
+在深度学习中处理不均衡数据集
 
-### ARMA模型
+https://mp.weixin.qq.com/s/x48Ctb0_Eu1kcSGTYLt5BQ
 
-AR模型和MA模型合起来，就是ARMA模型：
+机器学习中如何处理不平衡数据？
 
-$$X_t = c + \varepsilon_t +  \sum_{i=1}^p \varphi_i X_{t-i} + \sum_{i=1}^q \theta_i \varepsilon_{t-i}$$
+https://mp.weixin.qq.com/s/a57oy26UvLFNj4T8_pddCQ
 
-同理，上式也被记作**ARMA(p,q)**。
+关于图像分类中类别不平衡那些事
 
-### Lag operator
+https://mp.weixin.qq.com/s/rXaicHuHlWegrpeulYmduw
 
-在继续下面的描述之前，我们先来定义一下Lag operator--L。
+目标检测中的不平衡问题综述
 
-$$L X_t = X_{t-1} \; \text{or} \; X_t = L X_{t+1}$$
+https://mp.weixin.qq.com/s/7_-SSVZpxLfnwn7EmbGyZA
 
-### I模型
+极端类别不平衡数据下的分类问题研究综述
 
-$$(1-L)^d X_t$$
+https://mp.weixin.qq.com/s/fAHlrfchgkQ1Wuc8sfTlZg
 
-上式中d为阶数，因此上式也记作**I(d)**。显然$$I(0)=X_t$$。
-
-I模型有什么用呢？我们观察一下I(1)：
-
-$$(1-L) X_t = X_t - X_{t-1} = \Delta X$$
-
-有的时候，虽然I(0)不是平稳序列，但I(1)是平稳序列，这时我们称该序列是**1阶平稳序列**。n阶的情况，可依此类推。
-
-### ARIMA模型
-
-ARIMA模型可以看作是两个随机过程的组合。
-
-首先是非平稳过程：
-
-$$Y_t = (1-L)^d X_t$$
-
-接着是一个广义平稳过程：
-
-$$\left( 1 - \sum_{i=1}^p \phi_i L^i \right) Y_t = \left( 1 + \sum_{i=1}^q \theta_i L^i \right) \varepsilon_t$$
-
-最后得到ARIMA模型的公式：
-
-$$\left( 1 - \sum_{i=1}^p \phi_i L^i\right)
-(1-L)^d X_t = \delta + \left( 1 + \sum_{i=1}^q \theta_i L^i \right) \varepsilon_t$$
-
-上式也被记作**ARIMA(p,d,q)**。从上式可以看出，ARIMA模型实际上就是利用I模型，将时间序列转化为平稳序列之后的ARMA模型。
-
->注：上面的内容只是对ARIMA模型给出一个简单的定义。实际的假设检验、参数估计的步骤，还是比较复杂的，完全可以写本书来说。
-
-## 其它
-
-除了ARIMA系列模型之外，ARCH系列模型也用的比较多：
-
-autoregressive conditional heteroskedasticity, ARCH
-
-generalized autoregressive conditional heteroskedasticity, GARCH
-
-## Prophet
-
-Prophet是FaceBook提出的时间序列算法。同时，也是该算法的工具包的名字。
-
-官网：
-
-https://facebook.github.io/prophet/
-
-参考：
-
-https://mp.weixin.qq.com/s/ven_4JbWYFswIkGyhjTcww
-
-Prophet：教你如何用加法模型探索时间序列数据
-
-https://mp.weixin.qq.com/s/PMsAjk7WbGRu2n3s6Q8prQ
-
-Facebook时间序列预测算法Prophet的研究
-
-https://mp.weixin.qq.com/s/bf_CHcoZMjqP6Is4ebD58g
-
-使用Prophet预测股价并进行多策略交易
-
-https://mp.weixin.qq.com/s/pJTDJrMCfv5y4LQ2itt1tQ
-
-Facebook的 Prophet 算法简介与使用
-
-## Lebesgue积分
-
-![](/images/img3/Riemann_Lebesgue.jpg)
-
-蓝色的是Riemann积分，红色的是Lebesgue积分。
-
->Henri Léon Lebesgue，1875～1941，法国数学家。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/34407471
-
-如何理解时间序列？—从Riemann积分和Lebesgue积分谈起
-
-https://zhuanlan.zhihu.com/p/49262150
-
-从Riemann积分到Lebesgue积分
-
-https://zhuanlan.zhihu.com/p/90607361
-
-Quadrature求积法
-
-https://zhuanlan.zhihu.com/p/91709767
-
-ODE's Initial value problem (IVP)
+堪比Focal Loss！解决目标检测中样本不平衡的无采样方法

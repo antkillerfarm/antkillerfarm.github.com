@@ -247,6 +247,10 @@ https://mp.weixin.qq.com/s/YOupCjU06JhRCZNCbMvAgQ
 
 Google开源新AI模型，语音区分准确率92%创新高
 
+https://mp.weixin.qq.com/s/Cx066B8MCnkl4XY1f2AbbA
+
+NIST评测（SRE19）获胜团队声纹识别技术分析
+
 # 汽车声学
 
 https://zhuanlan.zhihu.com/p/22722073

@@ -232,6 +232,22 @@ https://blog.csdn.net/daunxx/article/details/51596877
 
 Lasso Regression
 
+# Krylov subspace
+
+Krylov subspace是一类针对大矩阵的近似计算的方法，由Aleksey Nikolaevich Krylov于1931年提出。
+
+>Aleksey Nikolaevich Krylov，1863～1945，俄罗斯海军工程师、数学家、作家。
+
+参考：
+
+https://blog.csdn.net/lizhengjiang/article/details/18794275
+
+krylov子空间迭代法
+
+https://www.zhihu.com/question/23309010
+
+如何使用Krylov方法求解矩阵的运算尤其是逆？
+
 # 协同过滤的ALS算法
 
 ## 协同过滤概述
@@ -241,13 +257,3 @@ Lasso Regression
 协同过滤是目前很多电商、社交网站的用户推荐系统的算法基础，也是目前工业界应用最广泛的机器学习领域。
 
 协同过滤是利用集体智慧的一个典型方法。要理解什么是协同过滤 (Collaborative Filtering,简称CF)，首先想一个简单的问题，如果你现在想看个电影，但你不知道具体看哪部，你会怎么做？大部分的人会问问周围的朋友，看看最近有什么好看的电影推荐，而我们一般更倾向于从口味比较类似的朋友那里得到推荐。这就是协同过滤的核心思想。
-
-如何找到相似的用户和物品呢？其实就是计算用户间以及物品间的相似度。以下是几种计算相似度的方法：
-
-### 欧氏距离
-
-$$d(x,y)=\sqrt{\sum(x_i-y_i)^2},sim(x,y)=\frac{1}{1+d(x,y)}$$
-
-### Cosine相似度
-
-$$\cos(x,y)=\frac{\langle x,y\rangle}{\mid x\mid \mid y\mid }=\frac{\sum x_iy_i}{\sqrt{\sum x_i^2}~\sqrt{\sum y_i^2}}$$

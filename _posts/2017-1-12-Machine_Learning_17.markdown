@@ -6,7 +6,28 @@ category: ML
 
 # 协同过滤的ALS算法
 
-## ALS-WR（续）
+## 隐式反馈（续）
+
+隐式反馈有以下几个特点：
+
+1.没有负面反馈（negative feedback）。用户一般会直接忽略不喜欢的商品，而不是给予负面评价。
+
+2.隐式反馈包含大量噪声。比如，电视机在某一时间播放某一节目，然而用户已经睡着了，或者忘了换台。
+
+3.显式反馈表现的是用户的**喜好（preference）**，而隐式反馈表现的是用户的**信任（confidence）**。比如用户最喜欢的一般是电影，但观看时间最长的却是连续剧。大米购买的比较频繁，量也大，但未必是用户最想吃的食物。
+
+4.隐式反馈非常难以量化。
+
+## ALS-WR
+
+针对隐式反馈，有ALS-WR算法（ALS with Weighted-$$\lambda$$-Regularization）。
+
+首先将用户反馈分类：
+
+$$p_{ui}=\begin{cases}
+1, & \text{preference} \\
+0, & \text{no preference} \\
+\end{cases}$$
 
 但是喜好是有程度差异的，因此需要定义程度系数：
 
@@ -283,39 +304,3 @@ https://mp.weixin.qq.com/s/tJ_FbL2nFQfkvKqpQJ8kmg
 https://mp.weixin.qq.com/s/dDdyaA7Nxqa8tBE_qQ80Dw
 
 典型相关性分析(CCA)详解
-
-https://mp.weixin.qq.com/s/JDWgw3OOdBurDAShrPHJ7Q
-
-从最大方差来看主成分分析PCA
-
-https://mp.weixin.qq.com/s/ZDipXGPOxKhxtAx2Dc9RjA
-
-主成分分析（PCA）以及在图像上的应用
-
-https://mp.weixin.qq.com/s/9-nNNhhDWSYWy46u0hTazQ
-
-降维：PCA真的能改善分类结果吗？
-
-https://mp.weixin.qq.com/s/vkBSextwFQv8-DUwAxgVyA
-
-图像降维之Isomap特征抽取方法
-
-https://zhuanlan.zhihu.com/p/78193297
-
-PCA和SVD的联系和区别？
-
-https://mp.weixin.qq.com/s/c8P9KmkQTqNcazcjU9qQFw
-
-机器学习中的维度灾难
-
-https://mp.weixin.qq.com/s/Uj9AFbyFRO6jIBoC3Gy8nA
-
-小孩都看得懂的主成分分析
-
-# 独立成分分析
-
-这一节我们将讲述独立成分分析（Independent Components Analysis，ICA）算法。
-
-首先，我们介绍一下经典的鸡尾酒宴会问题(cocktail party problem)。
-
-假设在party中有n个人，他们可以同时说话，我们也在房间中放置了n个声音接收器(Microphone)用来记录声音。宴会过后，我们从n个麦克风中得到了m组数据$$x^{(i)}$$，其中的i表示采样的时间顺序。由于宴会上人们的说话声是混杂在一起的，因此，采样得到的声音也是混杂不清的，那么我们是否有办法从混杂的数据中，提取出每个人的声音呢？

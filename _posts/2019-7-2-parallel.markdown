@@ -286,6 +286,26 @@ https://mp.weixin.qq.com/s/GheEA0Ag0vbhZeyzqpTl0A
 
 # NLP参考资源+
 
+https://mp.weixin.qq.com/s/gJFwWnKn7BV_BcADu_vJCg
+
+谷歌语义文本最新进展+两个开源新模型
+
+https://mp.weixin.qq.com/s/f8NoGxirMkTzwLERKon1Vw
+
+北京大学提出基于CNN的学术论文自动评分模型
+
+https://mp.weixin.qq.com/s/ILn-XqAQ_DYCFsiRgqYBrQ
+
+微软亚洲研究院院长副院长周明：语言智能的进展
+
+https://mp.weixin.qq.com/s/A4r01mV-X8CTJy3vPa9BPw
+
+对话式交互技术原理及流程揭秘
+
+https://mp.weixin.qq.com/s/JoYmVC_9bw3NHK6WXggAcA
+
+通用句子语义编码器，谷歌在语义文本相似性上的探索
+
 https://mp.weixin.qq.com/s/foknrQWnBxc4b0bpkFKSdQ
 
 上海科技大学ACL2018高分论文：混合高斯隐向量文法

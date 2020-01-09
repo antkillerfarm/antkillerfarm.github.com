@@ -180,6 +180,8 @@ https://zhuanlan.zhihu.com/p/53522063
 
 ## A/B Testing
 
+A/B Testing通过分隔A和B两个版本，统计数据，进而看哪个版本的数据效果更好，对产品目标更有帮助。
+
 https://mp.weixin.qq.com/s/fB3AFUiS4nFmqXpSnOpf4w
 
 如何选择上班路线最省时间？从A/B测试数学原理说起
@@ -203,6 +205,10 @@ https://mp.weixin.qq.com/s/gEET3mcI4VTLLg5ICQL2xQ
 https://mp.weixin.qq.com/s/zBUy_k2lyK0mqMMxm01w6w
 
 推荐系统评估
+
+https://mp.weixin.qq.com/s/3Lvuja4fDFSiqwyEgdYxlQ
+
+如何快速上手AB Testing？
 
 ## 参考
 

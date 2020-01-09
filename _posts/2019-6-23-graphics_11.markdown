@@ -140,6 +140,10 @@ https://www.cnblogs.com/mengdd/p/3237991.html
 
 图形学理论知识BRDF双向反射分布函数（Bidirectional Reflectance Distribution Function）
 
+## 术语
+
+Material Point Method（物质点法）
+
 ## Taichi
 
 Taichi是胡渊鸣开发的一套计算机图形库。
@@ -152,11 +156,19 @@ http://taichi.graphics/
 
 https://github.com/yuanming-hu/taichi
 
+胡渊鸣还开发了一个物理模拟方面的自动微分器——DiffTaichi：
+
+https://github.com/yuanming-hu/difftaichi
+
 参考：
 
 https://zhuanlan.zhihu.com/p/97700605
 
 99行代码的《冰雪奇缘》
+
+https://mp.weixin.qq.com/s/zPvvf1VptQ1M7iVEcxN-AQ
+
+计算机图形也能自动可微：MIT学神的微分太极框架开源
 
 ## Halide
 
