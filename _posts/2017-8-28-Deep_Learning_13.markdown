@@ -291,3 +291,7 @@ https://mp.weixin.qq.com/s/AWsiAYyVWY83s5uJ01Lg6Q
 https://mp.weixin.qq.com/s/fw5dRWmvZ17lqzxjKFrCtQ
 
 相关性特征在图片搜索中的实践
+
+https://mp.weixin.qq.com/s/jjbiUkmJ71rM9BYs5yKFSA
+
+从算法原理到应用部署！微信“扫一扫”识物的背后技术揭秘

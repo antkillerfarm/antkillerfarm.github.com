@@ -1,12 +1,52 @@
 ---
 layout: post
-title:  深度强化学习（五）——AlphaGo（1）
+title:  深度强化学习（五）——OpenAI, AlphaGo（1）
 category: DRL 
 ---
 
+# PILCO（续）
+
+参考：
+
+https://zhuanlan.zhihu.com/p/27537744
+
+基于模型的强化学习方法 PILCO及其扩展（一）
+
+https://zhuanlan.zhihu.com/p/27539273
+
+基于模型的强化学习方法 PILCO及其扩展（二）
+
+https://zhuanlan.zhihu.com/p/27697260
+
+基于模型的强化学习算法PILCO及其扩展（三）
+
+https://mp.weixin.qq.com/s/Io9-EQ_1sTwBaSF0yDAUCg
+
+基于模型的强化学习论文合集
+
 # OpenAI
 
-## Gym（续）
+OpenAI，由诸多硅谷大亨（Elon Musk等）联合建立的人工智能非营利组织。
+
+官网：
+
+https://openai.com/
+
+github：
+
+https://github.com/openai
+
+## Baselines
+
+若干经典RL算法的实现，包括A2C、DQN等。
+
+代码：
+
+https://github.com/openai/baselines
+
+## Gym
+
+Openai gym是一个用于开发和比较强化学习（reinforcement learning，RL）算法的工具包，与其他的数值计算库兼容，如tensorflow或者theano库。现在主要支持的是python语言，以后将支持其他语言。
 
 官网：
 
@@ -247,39 +287,3 @@ AlphaGo Zero转而采用Policy Iteration方法，实时对盘面进行估计，�
 《Mastering Chess and Shogi by Self-Play with aGeneral Reinforcement Learning Algorithm》
 
 AlphaZero相对于AlphaGo Zero的改进不算大，毕竟也就只差2个月。它的贡献在于，证明了DRL对于很多棋类都是有效的。
-
-## MuZero
-
-MuZero是DeepMind 2019年11月的作品。
-
-论文：
-
-《Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model》
-
-参考代码：
-
-https://github.com/AppliedDataSciencePartners/DeepReinforcementLearning
-
-### 基本结构
-
-MuZero在不具备任何底层动态知识的情况下，通过结合基于树的搜索和学得模型，在Atari 2600游戏中达到了SOTA表现，在国际象棋、日本将棋和围棋的精确规划任务中可以匹敌AlphaZero，甚至超过了提前得知规则的围棋版AlphaZero。
-
-传统方法的局限：
-
-- Model-based RL在Atari 2600游戏上表现不佳。这类游戏的Model很难刻画，规则比较抽象。
-
-- Model-Free RL在棋类游戏上表现不佳。棋类的规则十分明确。
-
-![](/images/img3/MuZero.png)
-
-上图是MuZero和AlphaZero的网络结构对比图。从中可以看出：
-
-1.AlphaZero只有一个网络。（虽然有两个用途：Policy和Value）
-
-2.MuZero有三个网络：
-
-- Prediction Network。这个和AlphaZero相同。
-
-- Dynamics Network。
-
-- Representation Network。

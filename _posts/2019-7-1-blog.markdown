@@ -82,7 +82,47 @@ category: essay
 
 2014.12.23 围观大徐的blog有感，特在github上安家落户，废弃了原来的搜狐blog。
 
-# 模仿学习+
+# Inverse Reinforcement Learning（续）
+
+通俗的说法就是：**我们用优化控制或强化学习得到的策略能用来解释人类的行为吗？**
+
+比如让一个人去拿桌子上的一个橘子，那手的轨迹一定不是一条从起点到目标的直线，而是有一些弯曲的轨迹，也就是带有偏差的较优行为，但是这种偏差其实并不重要，只要最后拿到橘子就行了，也就是说：
+
+1.有过程中一些偏差是不重要的，但另一些偏差就比较重要了（如最后没拿到）。
+
+2.每次拿橘子的动作也是不一样的，因此人的动作带有一定的随机性。
+
+3.我们可以认为人类行为轨迹分布是以最优策略为峰的随机分布。
+
+![](/images/img3/GAN_vs_IRL.png)
+
+参考：
+
+https://zhuanlan.zhihu.com/p/61674994
+
+Algorithms for Inverse Reinforcement Learning
+
+https://zhuanlan.zhihu.com/p/32502503
+
+CS 294：IRL
+
+# 模仿学习
+
+https://zhuanlan.zhihu.com/p/27935902
+
+机器人学习Robot Learning之模仿学习Imitation Learning的发展
+
+https://zhuanlan.zhihu.com/p/25688750
+
+模仿学习（Imitation Learning）完全介绍
+
+https://mp.weixin.qq.com/s/naq73D27vsCOUBperKto8A
+
+从监督式到DAgger，综述论文描绘模仿学习全貌
+
+https://mp.weixin.qq.com/s/LNNqp2KsEAljG26hY43mUw
+
+ICML2018 模仿学习教程
 
 https://mp.weixin.qq.com/s/f9vSgH1HQwGXBDb0UGHQyQ
 

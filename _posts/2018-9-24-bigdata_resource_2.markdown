@@ -18,10 +18,6 @@ https://mp.weixin.qq.com/s/osCRnfnuCFGJIR1jkhgUwA
 
 弃用ETL，为什么说ELT才更适合AI应用场景？
 
-https://mp.weixin.qq.com/s/IvGkPnYdifuAzrUV3MTyhA
-
-数据埋点太难！知乎的做法有何可借鉴之处？
-
 https://mp.weixin.qq.com/s/fV3OqXreZqaQ5neQaFIlOQ
 
 非易失性内存在阿里生产环境的首次应用：Tair NVM最佳实践总结
@@ -178,6 +174,10 @@ https://mp.weixin.qq.com/s/Zs0uHrENeeLNYX1ZfpVTSg
 
 小米流式平台架构演进与实践
 
+https://blog.csdn.net/weixin_45932995/article/details/103419125
+
+支付宝架构到底有多牛逼！
+
 # 世说新语+
 
 ## 2019.12（续）
@@ -240,6 +240,10 @@ https://mp.weixin.qq.com/s/3Frx_ZmmmEC_aj4tLUPleg
 
 ​苏莱曼尼被斩首后，这篇文章把两伊根本问题说清楚了
 
+https://mp.weixin.qq.com/s/Wt56L0Tdj8H1s4zVh43cMw
+
+决战亮马桥！美国、伊朗驻华大使馆于微博隔空斗法
+
 ----
 
 https://www.zhihu.com/question/33604547
@@ -251,3 +255,9 @@ https://www.zhihu.com/question/33604547
 https://www.f793.club/blog/liusheng1/
 
 关于Y141213是中山靖王刘胜的探讨
+
+----
+
+古兰经很多经文是没法翻译的，一定要阿语才能读。中东的伊朗、土耳其等非阿拉伯国家学校里都会教阿拉伯语来更好地理解。国内么……某族那教育水平读得懂阿拉伯语？？？我和某族大学生们聊过，嘴上一口一个清真，问他们四大哈里发和什叶派几个伊玛目都不知道……逗我呢
+
+最后，猪肉虽为不洁之物，但在特殊时刻（比如快饿死）为了活命是可以食用的，但酒是真正的贪婪和堕落的禁品msl绝对不碰～然而某族在新闻里最出名的都是酒后闹事……我咋那么想笑呢……

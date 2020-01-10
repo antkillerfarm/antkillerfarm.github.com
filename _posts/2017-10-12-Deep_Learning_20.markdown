@@ -108,9 +108,9 @@ https://mp.weixin.qq.com/s/wwWk8pmQzEOx8rrtW4u39Q
 
 何恺明团队新作：图像分割精细度空前，边缘自带抗锯齿，算力仅需Mask R-CNN的2.6%（PointRend）
 
-https://mp.weixin.qq.com/s/45HAfKOahzzUojP1JbRy3w
+https://mp.weixin.qq.com/s/I1Ajguj6b7B1CZGKJoPbqw
 
-完美替代Mask RCNN！BlendMask：实例分割新标杆
+SOTA实例分割算法BlendMask，超越mask-rcnn
 
 # Ultra Deep Network
 

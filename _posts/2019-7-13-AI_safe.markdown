@@ -252,27 +252,17 @@ https://mp.weixin.qq.com/s/nMmrVPvjaPOLgxKNjMzetw
 
 动画+解析，轻松理解“Trie树”
 
-## 参考
+## 排序
 
-BFS：Breadth First Search
+![](/images/img2/DS.png)
 
-DFS：Depth First Search
+![](/images/img2/sort.png)
 
-https://mp.weixin.qq.com/s/52JFdyaLwZq7nWiZq6z6qA
+上面两个图的原始地址：
 
-二叉堆是什么鬼？
+http://bigocheatsheet.com/
 
-https://mp.weixin.qq.com/s/4V1E2L14c3k-5i0c-JyTVQ
-
-如何在10亿数中找出前1000大的数
-
-https://mp.weixin.qq.com/s/yNn57Uw_-itzZXCSEAzrJw
-
-一起搞定面试中的二叉树（一）
-
-https://mp.weixin.qq.com/s/msv2NZ0aG96d3xQhX3HhNA
-
-一起搞定面试中的二叉树（二）
+该网站还提供了其他关于算法复杂度的资料。
 
 https://mp.weixin.qq.com/s/xttZJVR0r5vssOJ19sBHGQ
 
@@ -286,23 +276,9 @@ https://mp.weixin.qq.com/s/QAAfjSeZtfd3PSN3wAP8RQ
 
 什么是外部排序？
 
-![](/images/img2/DS.png)
+https://mp.weixin.qq.com/s/Yp1hD2Bbmj3pRrLYjfwfEw
 
-![](/images/img2/sort.png)
-
-上面两个图的原始地址：
-
-http://bigocheatsheet.com/
-
-该网站还提供了其他关于算法复杂度的资料。
-
-http://blog.csdn.net/u013709270/article/details/53470428
-
-跳跃表的原理及实现
-
-https://mp.weixin.qq.com/s/t7Q0slX3q8Qlhg8F8pXrZQ
-
-如何找到字符串中的最长回文子串？
+用Python手写十大经典排序算法
 
 https://www.cnblogs.com/tuding/p/7335853.html
 
@@ -327,6 +303,36 @@ https://mp.weixin.qq.com/s/FAp10hI05qLLZi5BypondA
 https://mp.weixin.qq.com/s/gBHmBLGILd6rZ-6cuelw0Q
 
 这可能是你听说过最快的稳定排序算法（Timsort）
+
+## 参考
+
+BFS：Breadth First Search
+
+DFS：Depth First Search
+
+https://mp.weixin.qq.com/s/52JFdyaLwZq7nWiZq6z6qA
+
+二叉堆是什么鬼？
+
+https://mp.weixin.qq.com/s/4V1E2L14c3k-5i0c-JyTVQ
+
+如何在10亿数中找出前1000大的数
+
+https://mp.weixin.qq.com/s/yNn57Uw_-itzZXCSEAzrJw
+
+一起搞定面试中的二叉树（一）
+
+https://mp.weixin.qq.com/s/msv2NZ0aG96d3xQhX3HhNA
+
+一起搞定面试中的二叉树（二）
+
+http://blog.csdn.net/u013709270/article/details/53470428
+
+跳跃表的原理及实现
+
+https://mp.weixin.qq.com/s/t7Q0slX3q8Qlhg8F8pXrZQ
+
+如何找到字符串中的最长回文子串？
 
 https://mp.weixin.qq.com/s/d9yNsUVFg9UZN62xuOdxow
 

@@ -440,3 +440,7 @@ https://mp.weixin.qq.com/s/4o_cSzWeJdLJMObJBhaZlw
 https://mp.weixin.qq.com/s/OWGi1htNugOv81ZFPinRGw
 
 汇编实现的memcpy和memset
+
+https://www.jianshu.com/p/fad3339e3448
+
+浅析Linux中的零拷贝技术

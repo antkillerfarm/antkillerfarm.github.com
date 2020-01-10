@@ -298,6 +298,10 @@ https://mp.weixin.qq.com/s/kO5yy7x0r3LhttBhLVpT5w
 
 固态激光雷达研究进展
 
+https://mp.weixin.qq.com/s/1MAb4tZfY4qQPaodo3xHoA
+
+激光雷达原理
+
 ## 参考
 
 https://mp.weixin.qq.com/s/Ee18sjKXNGMowKwqLB0jVg

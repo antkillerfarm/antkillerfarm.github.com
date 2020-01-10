@@ -82,10 +82,6 @@ https://blog.csdn.net/sobermineded/article/details/79541511
 
 上面两图形象的说明了Model-Free RL（左图）和Model-Based RL（右图）的差别。
 
-![](/images/img3/DRL.jpg)
-
-这是各种RL算法的数据效率方面的比较。可以看出Model-Based RL所需的数据比Model-Free RL小多了。
-
 ## Model-Based RL
 
 ![](/images/img3/Model_RL_2.png)

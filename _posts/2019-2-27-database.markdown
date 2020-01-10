@@ -222,6 +222,10 @@ https://mp.weixin.qq.com/s/DaspXFLPASYE7N0WHllcYQ
 
 Cassandra的过去、现在、未来
 
+https://mp.weixin.qq.com/s/cLIrRmcS5sbiDVl0cwDlIw
+
+Cassandra在时空数据上的探索
+
 https://mp.weixin.qq.com/s/ufficZ7cCvRFdEpaAfm8Fg
 
 面试官问：讲讲高并发下的接口幂等性怎么实现？

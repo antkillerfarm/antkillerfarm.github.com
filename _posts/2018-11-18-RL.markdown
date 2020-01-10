@@ -104,9 +104,9 @@ $$R_t=r_t+\gamma(r_{t+1}+\gamma (r_{t+2}+\dots))=r_t+\gamma R_{t+1}$$
 
 即当前时刻的奖励等于当前时刻的即时奖励加上下一时刻的奖励乘上折扣因子$$\gamma$$。
 
-如果$$\gamma$$等于0，意味着只看当前奖励；
+如果$$\gamma=0$$，意味着只看当前奖励；
 
-如果$$\gamma$$等于1，意味着环境是确定的，相同的动作总会获得相同的奖励（也就是cyclic Markov processes）。
+如果$$\gamma=1$$，意味着环境是确定的，相同的动作总会获得相同的奖励（也就是cyclic Markov processes）。
 
 因此实际中$$\gamma$$往往取类似0.9这样的值。因此我们的任务变成了找到一个策略，最大化将来的奖励R。
 
@@ -114,11 +114,11 @@ $$R_t=r_t+\gamma(r_{t+1}+\gamma (r_{t+2}+\dots))=r_t+\gamma R_{t+1}$$
 
 增强学习中，比较重要的几个概念：
 
-**Policy**就是我们的算法追求的目标，可以看做一个函数，在输入state的时候，能够返回此时应该执行的action或者action的概率分布。
+**Policy**：我们的算法追求的目标，可以看做一个函数，在输入state的时候，能够返回此时应该执行的action或者action的概率分布。
 
 $$\pi(a \mid  s) = P[A_t = a \mid  S_t = s]$$
 
-**Value**，价值函数，表示在输入state，action的时候，能够返回在state下，执行这个action能得到的Discounted future reward的（期望）值。
+**Value**：价值函数，表示在输入state，action的时候，能够返回在state下，执行这个action能得到的Discounted future reward的（期望）值。
 
 Value function一般有两种。
 
@@ -132,7 +132,7 @@ $$q_{\pi}(s; a) = E_{\pi} [G_t \mid  S_t = s; A_t = a]$$
 
 后者由于和state、action都有关系，也被称作state-action pair value function。
 
-**Transition model**是说环境本身的结构与特性：当在state执行action的时候，系统会进入的下一个state，也包括可能收到的reward。
+**Transition model**：环境本身的结构与特性。当在state执行action的时候，系统会进入的下一个state，也包括可能收到的reward。
 
 很显然，以上三者互相关联：
 

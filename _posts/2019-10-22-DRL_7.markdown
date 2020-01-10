@@ -4,7 +4,37 @@ title:  深度强化学习（七）——MARL, AlphaStar, Dota 2, DRL参考资�
 category: DRL 
 ---
 
-# MARL（续）
+# MARL
+
+Multi-agent Reinforcement Learning(MARL)，一般被称为多智能体强化学习。与之相对的则是Single-agent Reinforcement Learning(SARL)。
+
+以下主要参考了如下文章：
+
+https://zhuanlan.zhihu.com/p/39037444
+
+多智能体强化学习笔记 01
+
+https://zhuanlan.zhihu.com/p/43579796
+
+多智能体强化学习笔记 02
+
+论文：
+
+《Multi-agent reinforcement learning: An overview》
+
+《Game Theory and Multi-agent Reinforcement Learning》
+
+MARL应用了大量博弈论的知识，可参见《强化学习（十）》。
+
+----
+
+我们使用如下示例，探讨一下**什么是MARL？**
+
+![](/images/img3/MARL.png)
+
+上图是两个智能体1、2将金条（object）搬运回家的例子。这根金条需要两个人一人抬着一边才能扛回家。
+
+要想把金条扛回家，小红和小蓝必须先绕过障碍物，然后每个人到达金条的一边，扛起金条后，两人还得绕开家门口的障碍物，这样才能将金条扛回家。
 
 从上面的问题可以看出，MARL至少应该包括如下几个要素：
 
@@ -304,35 +334,3 @@ https://mp.weixin.qq.com/s/uDFsWebfLmka-zZX3Y_8kg
 https://mp.weixin.qq.com/s/FROyReDu7i5amGv-J4cmtg
 
 “世界模型”实现，一步步让机器掌握赛车和躲避火球的技能
-
-https://mp.weixin.qq.com/s/curzH8WrFyl5WWT4lDfpwQ
-
-Chrome暗藏的恐龙跳一跳，已经被AI轻松掌握了
-
-https://mp.weixin.qq.com/s/1b3_AiFhwXqxb7FozdRYIQ
-
-最in强化学习+NLP技术分享会
-
-https://mp.weixin.qq.com/s/RKQb7-mQ-ELRRq18db02Pg
-
-DeepMind大突破！AI模拟大脑导航功能，学会像动物一样“抄近路”
-
-https://mp.weixin.qq.com/s/qBwszD9rn4gKazXdwqexSQ
-
-MIT提出使用“深度强化学习”帮助智能体在运动中做出“动作决策”
-
-https://mp.weixin.qq.com/s/i-udn1M4kiJpF8U7u5Uepg
-
-专家解读DeepMind最新论文：深度学习模型复现大脑网格细胞
-
-https://mp.weixin.qq.com/s/AS1VFjBFnSk19QJ28tBVWA
-
-NIPS 2017斯坦福赛题大公开：强化学习模拟人类肌肉骨骼模型
-
-https://mp.weixin.qq.com/s/TWjFWe6-dZWDoTi5gN1BxA
-
-深度强化学习在指代消解中的一种尝试
-
-https://mp.weixin.qq.com/s/YnMgJDAh3XhyyNdI8RXmtw
-
-腾讯知文等提出新型生成式摘要模型：结合主题信息和强化训练生成更优摘要

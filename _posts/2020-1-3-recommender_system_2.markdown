@@ -178,6 +178,14 @@ https://zhuanlan.zhihu.com/p/53522063
 
 数据产品经理需要掌握的产品埋点方法
 
+https://mp.weixin.qq.com/s/IvGkPnYdifuAzrUV3MTyhA
+
+数据埋点太难！知乎的做法有何可借鉴之处？
+
+https://mp.weixin.qq.com/s/j_8_kSQ4BrYR-UzIEIEIbw
+
+美团开源Logan Web：前端日志在Web端的实现
+
 ## A/B Testing
 
 A/B Testing通过分隔A和B两个版本，统计数据，进而看哪个版本的数据效果更好，对产品目标更有帮助。
@@ -323,3 +331,7 @@ https://mp.weixin.qq.com/s/0_G3jMpwJVbdJ85TajubIg
 https://mp.weixin.qq.com/s/YkABleB5hlHt_Zn6M6DgBw
 
 从零开始构建企业级推荐系统
+
+https://mp.weixin.qq.com/s/WOXSSA5srCqaNPO-j-Ogqw
+
+优酷：如何让视频算法为质量服务？

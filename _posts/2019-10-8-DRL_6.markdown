@@ -6,6 +6,42 @@ category: DRL
 
 # AlphaGo（续）
 
+## MuZero
+
+MuZero是DeepMind 2019年11月的作品。
+
+论文：
+
+《Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model》
+
+参考代码：
+
+https://github.com/AppliedDataSciencePartners/DeepReinforcementLearning
+
+### 基本结构
+
+MuZero在不具备任何底层动态知识的情况下，通过结合基于树的搜索和学得模型，在Atari 2600游戏中达到了SOTA表现，在国际象棋、日本将棋和围棋的精确规划任务中可以匹敌AlphaZero，甚至超过了提前得知规则的围棋版AlphaZero。
+
+传统方法的局限：
+
+- Model-based RL在Atari 2600游戏上表现不佳。这类游戏的Model很难刻画，规则比较抽象。
+
+- Model-Free RL在棋类游戏上表现不佳。棋类的规则十分明确。
+
+![](/images/img3/MuZero.png)
+
+上图是MuZero和AlphaZero的网络结构对比图。从中可以看出：
+
+1.AlphaZero只有一个网络。（虽然有两个用途：Policy和Value）
+
+2.MuZero有三个网络：
+
+- Prediction Network。这个和AlphaZero相同。
+
+- Dynamics Network。
+
+- Representation Network。
+
 ### Representation & Dynamics Network
 
 Representation & Dynamics Network的主要思想来自如下论文：
@@ -303,35 +339,3 @@ The 3 Tricks That Made AlphaGo Zero Work
 https://web.stanford.edu/~surag/posts/alphazero.html
 
 A Simple Alpha(Go) Zero Tutorial
-
-# MARL
-
-Multi-agent Reinforcement Learning(MARL)，一般被称为多智能体强化学习。与之相对的则是Single-agent Reinforcement Learning(SARL)。
-
-以下主要参考了如下文章：
-
-https://zhuanlan.zhihu.com/p/39037444
-
-多智能体强化学习笔记 01
-
-https://zhuanlan.zhihu.com/p/43579796
-
-多智能体强化学习笔记 02
-
-论文：
-
-《Multi-agent reinforcement learning: An overview》
-
-《Game Theory and Multi-agent Reinforcement Learning》
-
-MARL应用了大量博弈论的知识，可参见《强化学习（十）》。
-
-----
-
-我们使用如下示例，探讨一下**什么是MARL？**
-
-![](/images/img3/MARL.png)
-
-上图是两个智能体1、2将金条（object）搬运回家的例子。这根金条需要两个人一人抬着一边才能扛回家。
-
-要想把金条扛回家，小红和小蓝必须先绕过障碍物，然后每个人到达金条的一边，扛起金条后，两人还得绕开家门口的障碍物，这样才能将金条扛回家。

@@ -274,6 +274,10 @@ https://zhuanlan.zhihu.com/p/96999382
 
 重识别（re-ID）特征适合直接用于跟踪（tracking）问题么？
 
+https://mp.weixin.qq.com/s/H98W-Ml2MfrbM4iuEV8uVg
+
+Group LSTM：拥挤场景的群体轨迹预测
+
 # 数据增强
 
 https://mp.weixin.qq.com/s/GqPfvWwH1T0XFwiZ86cW8A

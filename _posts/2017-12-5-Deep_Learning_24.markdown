@@ -122,6 +122,10 @@ https://github.com/foolwood/benchmark_results
 
 参考：
 
+https://mp.weixin.qq.com/s/i5TyVvaRuTZ8c54Iiu4VHg
+
+跟踪综述推荐：目标跟踪40年
+
 https://zhuanlan.zhihu.com/p/22334661
 
 深度学习在目标跟踪中的应用

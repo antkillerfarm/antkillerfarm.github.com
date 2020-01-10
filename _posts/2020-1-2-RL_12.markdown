@@ -92,6 +92,36 @@ https://mp.weixin.qq.com/s/6fd8oxnahJ0EoocRV4q8Bg
 
 - 另一套反映了个体的短期记忆，该记忆从基于模拟经历中使用TD搜索得到，它反映了个体对于某一特定强化学习在特定条件（比如某一Episode、某一状态下）下的特定的、局部适用的知识、经验。
 
+## Model-Based RL vs Model-Free RL
+
+### Model-Free RL
+
+优点：
+
+- 通用。一种算法可以适用于很多领域。因为无需建立模型，智能体所有的决策都是通过与环境进行交互得到的。所以Model-Free RL适用于很难建模或者根本无法建模的问题，如游戏，自然语言处理等领域。
+
+缺点：
+
+- 数据的利用效率不高。因此，基于无模型的强化学习算法往往需要探索几十万，几百万，甚至是千万次环境。
+
+![](/images/img3/DRL.jpg)
+
+这是各种RL算法数据的利用效率方面的比较。可以看出Model-Based RL所需的数据比Model-Free RL小多了。
+
+- 不具有泛化能力，尤其是当环境和任务发生变化后，智能体需要重新探索。
+
+### Model-Based RL
+
+优点：
+
+- 比较强的泛化能力。因为当训练完成后，智能体便学到了一个比较好的描述系统的模型，当外界环境变化后，很多时候系统自身的模型是不变的，这样智能体其实是学到了一些通用的东西（即系统本身的模型），当泛化到新的环境时，智能体可以依靠学到的模型去做推理。
+
+- 数据的利用效率高。
+
+缺点：
+
+- 不具有通用性。不同系统的Model是不一样的。
+
 # Exploration & Exploitation
 
 几个基本的探索方法：
@@ -198,43 +228,3 @@ https://mp.weixin.qq.com/s/8Ks1uayLw6nfKs4-boiMpA
 - 对动物人类行为用强化学习建模（生物学、计量经济学...）模仿学习。
 
 - reward function在强化学习里面非常非常重要，是对行为的抽象精简的描述，因此IRL (Inverse Reinforcement Learning)可能是一种很高效的模仿学习范式。
-
-通俗的说法就是：**我们用优化控制或强化学习得到的策略能用来解释人类的行为吗？**
-
-比如让一个人去拿桌子上的一个橘子，那手的轨迹一定不是一条从起点到目标的直线，而是有一些弯曲的轨迹，也就是带有偏差的较优行为，但是这种偏差其实并不重要，只要最后拿到橘子就行了，也就是说：
-
-1.有过程中一些偏差是不重要的，但另一些偏差就比较重要了（如最后没拿到）。
-
-2.每次拿橘子的动作也是不一样的，因此人的动作带有一定的随机性。
-
-3.我们可以认为人类行为轨迹分布是以最优策略为峰的随机分布。
-
-![](/images/img3/GAN_vs_IRL.png)
-
-参考：
-
-https://zhuanlan.zhihu.com/p/61674994
-
-Algorithms for Inverse Reinforcement Learning
-
-https://zhuanlan.zhihu.com/p/32502503
-
-CS 294：IRL
-
-# 模仿学习
-
-https://zhuanlan.zhihu.com/p/27935902
-
-机器人学习Robot Learning之模仿学习Imitation Learning的发展
-
-https://zhuanlan.zhihu.com/p/25688750
-
-模仿学习（Imitation Learning）完全介绍
-
-https://mp.weixin.qq.com/s/naq73D27vsCOUBperKto8A
-
-从监督式到DAgger，综述论文描绘模仿学习全貌
-
-https://mp.weixin.qq.com/s/LNNqp2KsEAljG26hY43mUw
-
-ICML2018 模仿学习教程

@@ -218,6 +218,10 @@ https://mp.weixin.qq.com/s/k5BZGPVwH_DZylZ9dMK6zA
 
 语音识别2019指南
 
+https://mp.weixin.qq.com/s/eu_BhsjIWo41jncyl2VYIg
+
+audio-visual recognition
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw

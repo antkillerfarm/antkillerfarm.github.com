@@ -293,6 +293,38 @@ https://mp.weixin.qq.com/s/vTHRSFg15SDYL3qH3dGCvA
 
 # DRL参考资源+
 
+https://mp.weixin.qq.com/s/curzH8WrFyl5WWT4lDfpwQ
+
+Chrome暗藏的恐龙跳一跳，已经被AI轻松掌握了
+
+https://mp.weixin.qq.com/s/1b3_AiFhwXqxb7FozdRYIQ
+
+最in强化学习+NLP技术分享会
+
+https://mp.weixin.qq.com/s/RKQb7-mQ-ELRRq18db02Pg
+
+DeepMind大突破！AI模拟大脑导航功能，学会像动物一样“抄近路”
+
+https://mp.weixin.qq.com/s/qBwszD9rn4gKazXdwqexSQ
+
+MIT提出使用“深度强化学习”帮助智能体在运动中做出“动作决策”
+
+https://mp.weixin.qq.com/s/i-udn1M4kiJpF8U7u5Uepg
+
+专家解读DeepMind最新论文：深度学习模型复现大脑网格细胞
+
+https://mp.weixin.qq.com/s/AS1VFjBFnSk19QJ28tBVWA
+
+NIPS 2017斯坦福赛题大公开：强化学习模拟人类肌肉骨骼模型
+
+https://mp.weixin.qq.com/s/TWjFWe6-dZWDoTi5gN1BxA
+
+深度强化学习在指代消解中的一种尝试
+
+https://mp.weixin.qq.com/s/YnMgJDAh3XhyyNdI8RXmtw
+
+腾讯知文等提出新型生成式摘要模型：结合主题信息和强化训练生成更优摘要
+
 https://mp.weixin.qq.com/s/VrVdsxn94ux_46mIyS8f0w
 
 谷歌大脑实现更宽广的智能体视野，在Atari2600上可持续超越人类玩家！

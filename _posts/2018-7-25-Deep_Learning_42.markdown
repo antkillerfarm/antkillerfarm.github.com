@@ -90,6 +90,10 @@ https://mp.weixin.qq.com/s/TUrH7qiZBpmqWN4VL5dhlw
 
 清华大学：用于少次关系学习的神经网络雪球机制
 
+https://mp.weixin.qq.com/s/VlxF7BVk7hUQ9HDiGYpzGA
+
+基于Co-Attention和Co-Excitation的少样本目标检测
+
 # 深度ISP
 
 ## 数据集
@@ -129,8 +133,6 @@ https://groups.csail.mit.edu/graphics/hdrnet/
 《Deep Learning on Image Denoising: An overview》
 
 这两篇综述都是哈工大深圳分院的作品。
-
-
 
 ## 参考
 
