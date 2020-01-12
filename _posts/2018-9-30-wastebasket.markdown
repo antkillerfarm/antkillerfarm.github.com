@@ -296,6 +296,10 @@ https://mp.weixin.qq.com/s/iGebSkPLeR9Vc2VmeHALfw
 
 尿尿尿的到处都是？我总结了男生尿尿的最强攻略！
 
+https://mp.weixin.qq.com/s/BfQ0qUHpAfmB3_mHvyeCDw
+
+不好！为了一点铅，物理学家和考古学家打起来了！（低本底铅）
+
 ## 空气动力学
 
 https://mp.weixin.qq.com/s/ei84HDZIkXQr2k0ghlN_Mw

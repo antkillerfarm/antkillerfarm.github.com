@@ -178,6 +178,10 @@ https://blog.csdn.net/weixin_45932995/article/details/103419125
 
 支付宝架构到底有多牛逼！
 
+https://mp.weixin.qq.com/s/Ue4toNlLD0-zAstVJP2ynA
+
+爱奇艺大数据实时分析平台的建设与实践
+
 # 世说新语+
 
 ## 2019.12（续）

@@ -200,6 +200,10 @@ https://zhuanlan.zhihu.com/p/56263560
 
 单目视觉深度估计测距的前生今世
 
+https://mp.weixin.qq.com/s/0K_NF84wvPJttEARVUGPWA
+
+DeOccNet：国防科大提出阵列相机去除前景遮挡成像新方法
+
 # LSM
 
 liquid state machine (LSM)

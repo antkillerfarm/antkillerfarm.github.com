@@ -10,17 +10,17 @@ category: DRL
 
 https://zhuanlan.zhihu.com/p/27537744
 
-基于模型的强化学习方法 PILCO及其扩展（一）
+基于模型的强化学习方法PILCO及其扩展（一）
 
 https://zhuanlan.zhihu.com/p/27539273
 
-基于模型的强化学习方法 PILCO及其扩展（二）
+基于模型的强化学习方法PILCO及其扩展（二）
 
 https://zhuanlan.zhihu.com/p/27697260
 
 基于模型的强化学习算法PILCO及其扩展（三）
 
-https://mp.weixin.qq.com/s/Io9-EQ_1sTwBaSF0yDAUCg
+https://zhuanlan.zhihu.com/p/72642285
 
 基于模型的强化学习论文合集
 

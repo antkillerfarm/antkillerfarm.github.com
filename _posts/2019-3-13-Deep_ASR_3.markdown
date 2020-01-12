@@ -222,6 +222,10 @@ https://mp.weixin.qq.com/s/eu_BhsjIWo41jncyl2VYIg
 
 audio-visual recognition
 
+https://mp.weixin.qq.com/s/DJVeNlLi5GHDeE7ajYZbdw
+
+SPICE：新一代自监督式基音检测模型
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw
