@@ -140,6 +140,10 @@ https://mp.weixin.qq.com/s/pGvGbtoj96h0DQxKEDXWbg
 
 利用顾客灵活性优化共享汽车规模
 
+https://mp.weixin.qq.com/s/Hx9aTo8hMr-vY9418oWopQ
+
+浅谈旅行商问题（TSP）的启发式算法
+
 # 强连通分量算法
 
 http://ishare.iask.sina.com.cn/f/34626295.html

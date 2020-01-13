@@ -294,6 +294,10 @@ https://mp.weixin.qq.com/s/s9PmfmpQE9j-swwGQv9w4A
 
 Graph Embedding之如何使用DeepWalk从图中提取特征
 
+https://mp.weixin.qq.com/s/r4_5GwA8Olqh6M1p_6eYPg
+
+图神经网络！2020 AI研究趋势！是什么？有什么用？
+
 # 视频处理+
 
 https://mp.weixin.qq.com/s/vuhoK4cVaHDn6oTuGqX_Eg

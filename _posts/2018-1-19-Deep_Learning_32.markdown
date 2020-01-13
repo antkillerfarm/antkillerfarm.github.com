@@ -211,6 +211,10 @@ https://mp.weixin.qq.com/s/mEYFnP1q131-4hdgjOQ2cQ
 
 “超参数”与“网络结构”自动化设置方法---DeepHyper
 
+https://mp.weixin.qq.com/s/uF3R3FoERAKvIZLpgWp13A
+
+BTB: 用于开发AutoML自动化机器学习系统的简单、可扩展库
+
 ## 书籍
 
 https://mp.weixin.qq.com/s/wTwjbripELzqdCjs64Dzzw

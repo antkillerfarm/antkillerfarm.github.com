@@ -213,3 +213,7 @@ https://mp.weixin.qq.com/s/syoJTnh6KMMRUYPQjUnEAg
 https://mp.weixin.qq.com/s/ba5rQp4IVYbVbHq3Ef7mEg
 
 深度学习检测小目标常用方法
+
+https://mp.weixin.qq.com/s/q9qKVpjluzp8OS2GFpZC6g
+
+张兆翔：基于深度学习的物体检测进展和趋势

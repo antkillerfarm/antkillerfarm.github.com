@@ -108,7 +108,7 @@ https://zhuanlan.zhihu.com/p/27699682
 
 荐译一篇通俗易懂的策略梯度（Policy Gradient）方法讲解
 
-# PPO
+# PPO（Proximal Policy Optimization）
 
 PPO是2017年由OpenAI提出的一种基于随机策略的DRL算法，也是当前OpenAI的默认算法。
 

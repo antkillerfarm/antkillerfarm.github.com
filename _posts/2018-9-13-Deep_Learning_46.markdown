@@ -73,3 +73,11 @@ https://mp.weixin.qq.com/s/vuRRcnlTugsUcfW5D5uYyA
 https://mp.weixin.qq.com/s/huvQszaBcVOxUEz0tJ_Psg
 
 基于OCR的身份证要素提取​​
+
+https://mp.weixin.qq.com/s/hVjTz3ofg3NsvZwAB53_eQ
+
+PRN：面向不规则文字识别的渐进矫正网络
+
+https://mp.weixin.qq.com/s/T6GlweGUguUAYIjfsabPHQ
+
+徒手素描的深度学习:综述论文，Deep Learning for Free-Hand Sketch

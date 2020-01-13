@@ -106,6 +106,10 @@ https://mp.weixin.qq.com/s/unzge23Aw0jrvBST-iW0Qw
 
 HTTP/3的过去、现在和未来
 
+https://zhuanlan.zhihu.com/p/101702312
+
+详解TCP超时与重传机制
+
 ## QUIC
 
 Quic全称quick udp internet connection，“快速UDP互联网连接”，是由google提出的使用udp进行多路并发传输的协议。

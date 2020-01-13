@@ -6,6 +6,30 @@ category: DL acceleration
 
 # 模型压缩与加速
 
+https://mp.weixin.qq.com/s/YUg2dZZhDSsRpSftdNfiIQ
+
+极致的优化：智能手机是如何处理大型神经网络的
+
+https://mp.weixin.qq.com/s/Ck_GDv1Xo-YMZcu-00gTOA
+
+中星微夺冠国际人工智能算法竞赛，目标检测一步法精度速度双赢
+
+https://mp.weixin.qq.com/s/qWJarPrjOrwxSX77xQ9rCw
+
+面向卷积神经网络的卷积核冗余消除策略
+
+https://mp.weixin.qq.com/s/QSGgvhkMUj3cXVlQwlzTFQ
+
+深度神经网络加速和压缩新进展年度报告
+
+https://zhuanlan.zhihu.com/p/37074222
+
+CVPR 2018 高效小网络探密（上）
+
+https://zhuanlan.zhihu.com/p/37919669
+
+CVPR 2018 高效小网络探密（下）
+
 https://zhuanlan.zhihu.com/p/38046989
 
 从ISCA论文看AI硬件加速的新技巧

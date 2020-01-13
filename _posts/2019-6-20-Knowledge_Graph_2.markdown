@@ -146,6 +146,10 @@ https://mp.weixin.qq.com/s/5D5cfLC6flnn9fCYlMplMQ
 
 虚假新闻（Fake News）检测全面综述教程，156页PPT带你进入这一领域
 
+https://mp.weixin.qq.com/s/tBuUozLFagqZYmr5e3AnMQ
+
+如何用AI技术治理假新闻泛滥？看ASU大学舒凯等学者这篇《挖掘虚假信息和假新闻:概念、方法和最新进展》研究综述 
+
 https://mp.weixin.qq.com/s/aEhLCkEnImubZlwEP2ZHBQ
 
 从本体论开始说起，运营商关系图谱的构建及应用

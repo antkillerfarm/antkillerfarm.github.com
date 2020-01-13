@@ -334,6 +334,10 @@ https://mp.weixin.qq.com/s/IyK6sa8ig_LX-tMupqSvVg
 
 倒啤酒竟能拿到诺贝尔物理学大奖！
 
+https://mp.weixin.qq.com/s/tU6Incnq63fT61z6y9E-Jg
+
+一个5000多年的老古董，竟有人把它玩出吉尼斯世界纪录，这波操作我跪服......（陀螺）
+
 ## Bélády's Algorithm
 
 Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。

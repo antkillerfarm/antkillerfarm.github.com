@@ -286,6 +286,10 @@ https://mp.weixin.qq.com/s/npKNDrlXZ6oIlE0NG80BpQ
 
 Geoffrey Hinton再出神作：通过神经网络估计有关节可变形的三维模型
 
+https://mp.weixin.qq.com/s/bAV74fxvwI73Qt7qm_jPJA
+
+一文读懂深度学习在摄像头和激光雷达融合的3-D目标检测中的应用
+
 # AutoDL+
 
 https://mp.weixin.qq.com/s/Nmkcy2nBczUccwIdMJiH_A

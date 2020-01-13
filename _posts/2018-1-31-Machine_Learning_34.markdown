@@ -246,6 +246,10 @@ https://mp.weixin.qq.com/s/1FCWMRapGMXjxTLoA2fYCg
 
 CRF和LSTM 模型在序列标注上的优劣？
 
+https://zhuanlan.zhihu.com/p/97676647
+
+手撕BiLSTM-CRF
+
 # 自适应滤波器
 
 《自适应滤波器原理（Adaptive Filter Theory）》，Simon Haykin著。

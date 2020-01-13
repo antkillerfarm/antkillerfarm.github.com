@@ -8,6 +8,26 @@ category: DL acceleration
 
 ## 参考（续）
 
+https://zhuanlan.zhihu.com/p/35700882
+
+CNN量化技术
+
+https://mp.weixin.qq.com/s/9DXMqiPIK5P5wzUMT7_Vfw
+
+基于交替方向法的循环神经网络多比特量化
+
+https://mp.weixin.qq.com/s/PDeChj1hQqUrZiepxXODJg
+
+ICLR oral：清华提出离散化架构WAGE，神经网络训练推理合二为一
+
+http://blog.csdn.net/tangwei2014/article/details/55077172
+
+二值化神经网络介绍
+
+https://mp.weixin.qq.com/s/oumf8l28ijYLxc9fge0FMQ
+
+嵌入式深度学习之神经网络二值化（1）
+
 https://mp.weixin.qq.com/s/tbRj5Wd69n9gvSzW4oKStg
 
 嵌入式深度学习之神经网络二值化（2）
@@ -291,27 +311,3 @@ https://mp.weixin.qq.com/s/3oL0Bso3mwbsfaG8X5-xoA
 https://mp.weixin.qq.com/s/JnW7RnOQKG-dPOOAQeOmSA
 
 当前深度神经网络模型压缩和加速都有哪些方法？
-
-https://mp.weixin.qq.com/s/YUg2dZZhDSsRpSftdNfiIQ
-
-极致的优化：智能手机是如何处理大型神经网络的
-
-https://mp.weixin.qq.com/s/Ck_GDv1Xo-YMZcu-00gTOA
-
-中星微夺冠国际人工智能算法竞赛，目标检测一步法精度速度双赢
-
-https://mp.weixin.qq.com/s/qWJarPrjOrwxSX77xQ9rCw
-
-面向卷积神经网络的卷积核冗余消除策略
-
-https://mp.weixin.qq.com/s/QSGgvhkMUj3cXVlQwlzTFQ
-
-深度神经网络加速和压缩新进展年度报告
-
-https://zhuanlan.zhihu.com/p/37074222
-
-CVPR 2018 高效小网络探密（上）
-
-https://zhuanlan.zhihu.com/p/37919669
-
-CVPR 2018 高效小网络探密（下）

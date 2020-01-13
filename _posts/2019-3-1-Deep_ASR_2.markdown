@@ -344,6 +344,16 @@ http://slides.com/smerity/reading-group-efficient-neural-audio-synthesis#/
 
 Efficient Neural Audio Synthesis
 
+# Attention Based
+
+https://mp.weixin.qq.com/s/4xUIF0tqKCnTMyfkVX1JJw
+
+​使用transformer模型进行流式自动语音识别
+
+https://mp.weixin.qq.com/s/TTPpOOxSLbCgOmAsI9TLiw
+
+百度发布Deep Voice 3：全卷积注意力机制TTS系统
+
 # 语音识别参考资源
 
 https://zhuanlan.zhihu.com/p/69637495
@@ -377,11 +387,3 @@ https://mp.weixin.qq.com/s/RjoGmtiyqrx8cG6JtgqsxQ
 https://mp.weixin.qq.com/s/pimQBFd5uxrZk4dSgUsblg
 
 苹果机器学习期刊“Siri三部曲”之一：通过跨带宽和跨语言初始化提升神经网络声学模型
-
-https://mp.weixin.qq.com/s/u1R7NUg_kgI_mpjIFrO02A
-
-探索Siri背后的技术：将逆文本标准化（ITN）转化为标签问题
-
-https://mp.weixin.qq.com/s/2xpwLVHT8qU68uoV7Uj2cw
-
-小米的语音识别系统是如何搭建的

@@ -243,6 +243,10 @@ https://mp.weixin.qq.com/s/EMWpBP5iB1Qrleo3XNjbuQ
 
 IEEE Fellow何晓东&邓力：多模态智能论文综述：表示学习，信息融合与应用
 
+https://mp.weixin.qq.com/s/Yus55s1utTrjuzsrebJu_w
+
+让机器读懂视频：亿级淘宝视频背后的多模态AI算法揭秘
+
 # Capsule
 
 https://github.com/freefuiiismyname/capsule-mrc

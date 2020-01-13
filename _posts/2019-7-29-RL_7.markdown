@@ -51,7 +51,7 @@ LSE亦可推广到Q函数，即所谓的LS Q-Learning。
 
 Experience Replay还可用来消除训练数据间的相关性。例如，1个agent在1个episode中产生的experience就是相关的，$$<s_t,a_t>$$和$$<s_{t+1},a_{t+1}>$$显然存在着一定的逻辑关系。训练数据间的相关性会影响算法收敛到最优解。
 
-# 策略梯度
+# 策略梯度（Policy Gradient）
 
 价值函数可以进行近似的参数化表达，策略本身也同样可以函数化、参数化：
 

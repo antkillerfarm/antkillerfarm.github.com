@@ -232,7 +232,13 @@ Saturate Quantization的做法是：将超出上限或下限的值，设置为�
 
 如何设置合理的Saturate threshold呢？
 
-可以设置一组门限，然后计算每个门限的分布和原分布的相似度，即KL散度。然后选择最相似分布的门限即可。
+可以设置一组门限，然后计算每个门限的分布和原分布的相似度，即KL散度，选择最相似分布的门限即可。
+
+参考：
+
+https://blog.csdn.net/u013010889/article/details/90295078
+
+int8量化和tvm实现
 
 ## 量化技巧
 
@@ -277,23 +283,3 @@ https://www.chiphell.com/thread-1620755-1-1.html
 https://mp.weixin.qq.com/s/S9VcoS_59nbZWe_P3ye2Tw
 
 减少模型半数内存用量：百度&英伟达提出混合精度训练法
-
-https://zhuanlan.zhihu.com/p/35700882
-
-CNN量化技术
-
-https://mp.weixin.qq.com/s/9DXMqiPIK5P5wzUMT7_Vfw
-
-基于交替方向法的循环神经网络多比特量化
-
-https://mp.weixin.qq.com/s/PDeChj1hQqUrZiepxXODJg
-
-ICLR oral：清华提出离散化架构WAGE，神经网络训练推理合二为一
-
-http://blog.csdn.net/tangwei2014/article/details/55077172
-
-二值化神经网络介绍
-
-https://mp.weixin.qq.com/s/oumf8l28ijYLxc9fge0FMQ
-
-嵌入式深度学习之神经网络二值化（1）
