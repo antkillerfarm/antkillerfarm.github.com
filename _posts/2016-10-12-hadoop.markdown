@@ -310,3 +310,7 @@ https://mp.weixin.qq.com/s/0luHJsw7WWJskJWGThR5qg
 https://mp.weixin.qq.com/s/m_FU4NmjUsvxusRidDb-Xg
 
 UniLM:一种既能阅读又能自动生成的预训练模型
+
+https://mp.weixin.qq.com/s/IY8J09LvDAr8owYffKi5Dw
+
+五问BERT：深入理解NLP领域爆红的预训练模型

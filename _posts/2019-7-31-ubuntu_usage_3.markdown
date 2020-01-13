@@ -161,3 +161,33 @@ http://wuli.wiki//online/ITable.html
 http://wuli.wiki//online/
 
 小时物理百科
+
+# Linux参考资源+
+
+https://mp.weixin.qq.com/s/snQ3T86usv4rXz0MMQvFfQ
+
+如何回答性能优化的问题，才能打动阿里面试官？
+
+https://www.cnblogs.com/zhouyu629/p/3734494.html
+
+一次心惊肉跳的服务器误删文件的恢复过程
+
+https://mp.weixin.qq.com/s/A8TnhOFLQOhEqphE760yvw
+
+15个相见恨晚的Linux神器，你可能一个都没见过
+
+https://mp.weixin.qq.com/s/oKtu3AA9D3y--xMDQ8EARw
+
+携程一次Dubbo连接超时问题的排查
+
+https://mp.weixin.qq.com/s/4o_cSzWeJdLJMObJBhaZlw
+
+计算机系统中的内存
+
+https://mp.weixin.qq.com/s/OWGi1htNugOv81ZFPinRGw
+
+汇编实现的memcpy和memset
+
+https://www.jianshu.com/p/fad3339e3448
+
+浅析Linux中的零拷贝技术

@@ -393,6 +393,12 @@ https://mp.weixin.qq.com/s/6MRi_UEcMybKn4YXi6qWng
 
 操作系统中锁的实现原理
 
+https://mp.weixin.qq.com/s/qnZL4ENAbTvVMVcImVTtYw
+
+深入浅出CAS
+
+比较并交换(compare and swap, CAS)，是原子操作的一种，可用于在多线程编程中实现不被打断的数据交换操作，从而避免多线程同时改写某一数据时由于执行顺序不确定性以及中断的不可预知性产生的数据不一致问题。
+
 https://mp.weixin.qq.com/s/4tAxQ0auQfv5x7Dh3B-85g
 
 Linux内存管理
@@ -416,31 +422,3 @@ https://mp.weixin.qq.com/s/n6D5_6K9TrnuXg3h6AiFNA
 https://www.cnblogs.com/liqiuhao/p/9450093.html
 
 关于TOCTTOU攻击的简介
-
-https://mp.weixin.qq.com/s/snQ3T86usv4rXz0MMQvFfQ
-
-如何回答性能优化的问题，才能打动阿里面试官？
-
-https://www.cnblogs.com/zhouyu629/p/3734494.html
-
-一次心惊肉跳的服务器误删文件的恢复过程
-
-https://mp.weixin.qq.com/s/A8TnhOFLQOhEqphE760yvw
-
-15个相见恨晚的Linux神器，你可能一个都没见过
-
-https://mp.weixin.qq.com/s/oKtu3AA9D3y--xMDQ8EARw
-
-携程一次Dubbo连接超时问题的排查
-
-https://mp.weixin.qq.com/s/4o_cSzWeJdLJMObJBhaZlw
-
-计算机系统中的内存
-
-https://mp.weixin.qq.com/s/OWGi1htNugOv81ZFPinRGw
-
-汇编实现的memcpy和memset
-
-https://www.jianshu.com/p/fad3339e3448
-
-浅析Linux中的零拷贝技术

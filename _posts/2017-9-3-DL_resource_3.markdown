@@ -296,6 +296,10 @@ https://mp.weixin.qq.com/s/kmEFjzFIbNq0_qdjc1Wm_w
 
 DeepMind新智能体架构Unicorn：持续学习能力胜过多个基准智能体
 
+https://mp.weixin.qq.com/s/pjSsgryShDESN5Erh2XhyA
+
+一时学习一时爽，"持续学习"持续爽
+
 ## 鉴黄
 
 https://mp.weixin.qq.com/s/vTtKUagiFD55mcQIeGDxQw
