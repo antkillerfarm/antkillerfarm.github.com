@@ -217,3 +217,7 @@ https://mp.weixin.qq.com/s/ba5rQp4IVYbVbHq3Ef7mEg
 https://mp.weixin.qq.com/s/q9qKVpjluzp8OS2GFpZC6g
 
 张兆翔：基于深度学习的物体检测进展和趋势
+
+https://mp.weixin.qq.com/s/yCu5Xx6peDKyU06yBlixpA
+
+首个实时单目3D目标检测算法：RTM3D

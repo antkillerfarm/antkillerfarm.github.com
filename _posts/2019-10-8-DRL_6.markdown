@@ -110,7 +110,7 @@ s'：下一个abstract state。
 
 A部分：Representation Network + Dynamics Network + MCTS
 
-B部分：从policy:$$\pi_t$$中采样得到action：$$a_{t+1}$$，环境根据$$a_{t+1}$$得到observation：$$o_{t+1}$$h和reward：$$u_{t+1}$$。这些样本在用过后，被存入replay buffer。
+B部分：从policy:$$\pi_t$$中采样得到action：$$a_{t+1}$$，环境根据$$a_{t+1}$$得到observation：$$o_{t+1}$$、h和reward：$$u_{t+1}$$。这些样本在用过后，被存入replay buffer。
 
 C部分：训练时，从replay buffer中，采样得到$$o_t$$，通过h函数，得到$$s_t$$，然后执行K-step展开，得到p,v,r。
 

@@ -81,3 +81,7 @@ PRN：面向不规则文字识别的渐进矫正网络
 https://mp.weixin.qq.com/s/T6GlweGUguUAYIjfsabPHQ
 
 徒手素描的深度学习:综述论文，Deep Learning for Free-Hand Sketch
+
+https://mp.weixin.qq.com/s/QR53KZwIpQbCqX4TJAhAlQ
+
+面向场景文本识别的带聚焦注意力机制的convLSTM

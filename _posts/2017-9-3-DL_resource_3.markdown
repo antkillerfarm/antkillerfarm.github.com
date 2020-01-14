@@ -387,3 +387,7 @@ https://mp.weixin.qq.com/s/L-hF2OIcV9kbzOavjBhMqw
 https://mp.weixin.qq.com/s/k-VOcQCyvdmTnQnm8oAnKQ
 
 快2020年了，还在为深度学习调参而烦恼吗？
+
+https://mp.weixin.qq.com/s/4kWUE8ml_o6iF0F1TREyiA
+
+机器学习与深度学习习题集答案

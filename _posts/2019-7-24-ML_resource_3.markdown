@@ -210,14 +210,10 @@ https://mp.weixin.qq.com/s/byzL0Te5-QQLR7bxJpoZrw
 
 超好用的自信学习：1行代码查找标签错误，3行代码学习噪声标签
 
-https://mp.weixin.qq.com/s/KmPTljxY4eyoYV8hXLxIXg
-
-浅谈滴滴派单算法
-
 https://mp.weixin.qq.com/s/p3w2GSjGMJOwlMJk3xmbvQ
 
 AI插手！用文本分析鉴定《红楼梦》、《亨利八世》实际作者
 
-https://mp.weixin.qq.com/s/H1diSCPZe6oTouufPY1JkA
+https://mp.weixin.qq.com/s/ZY7WZzePqRfDPv6JX2vWsQ
 
-机组排班优化及悠桦林的实践
+30张地图看懂世界格局，用大数据说话

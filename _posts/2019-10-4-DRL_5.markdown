@@ -228,6 +228,8 @@ AlphaGo的Value Network也是一个和Policy Network几乎一样的深度卷积�
 
 这种方法虽然没有NN这么强，但还是比更为传统的基于规则的方案适应性好。毕竟规则是死的，而传统的机器学习，再怎么说也是可以自动学习规则的。当然了，这更比随机走子的效率高了。
 
+DarkForestGo的走子基于规则模板，且没有快速走子，个人以为这才是它棋力差的主要原因。
+
 由于Fast rollout既可以提供策略，又有一定的价值评估的手段，因此单独使用它，比单独使用Policy Network或者Value Network都要好。相当于是一个劣化版本的AlphaGo。
 
 ### MCTS

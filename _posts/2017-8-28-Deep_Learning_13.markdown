@@ -295,3 +295,7 @@ https://mp.weixin.qq.com/s/fw5dRWmvZ17lqzxjKFrCtQ
 https://mp.weixin.qq.com/s/jjbiUkmJ71rM9BYs5yKFSA
 
 从算法原理到应用部署！微信“扫一扫”识物的背后技术揭秘
+
+https://mp.weixin.qq.com/s/38d90XC2DjMHRoWnKEeVIw
+
+基于图像查询的视频检索

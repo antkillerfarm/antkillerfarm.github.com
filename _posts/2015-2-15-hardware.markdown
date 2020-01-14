@@ -174,3 +174,5 @@ etc.：等等
 Vote：投票
 
 Veto：否决票
+
+TL;DR：可以是 Too long; Didn't read（太长，所以没有看）。也可以是 Too long; Don't read （太长，请不要看），常作为一篇很长的文章的摘要标题。

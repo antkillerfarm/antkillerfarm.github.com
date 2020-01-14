@@ -144,6 +144,14 @@ https://mp.weixin.qq.com/s/Hx9aTo8hMr-vY9418oWopQ
 
 浅谈旅行商问题（TSP）的启发式算法
 
+https://mp.weixin.qq.com/s/KmPTljxY4eyoYV8hXLxIXg
+
+浅谈滴滴派单算法
+
+https://mp.weixin.qq.com/s/H1diSCPZe6oTouufPY1JkA
+
+机组排班优化及悠桦林的实践
+
 # 强连通分量算法
 
 http://ishare.iask.sina.com.cn/f/34626295.html

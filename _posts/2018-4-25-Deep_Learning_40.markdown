@@ -278,6 +278,10 @@ https://mp.weixin.qq.com/s/H98W-Ml2MfrbM4iuEV8uVg
 
 Group LSTM：拥挤场景的群体轨迹预测
 
+https://mp.weixin.qq.com/s/JZPLz1Xczby86id4Zvy1UQ
+
+CrowdHuman+Double Anchor：强强联合，推动密集行人检测技术落地
+
 # 数据增强
 
 https://mp.weixin.qq.com/s/GqPfvWwH1T0XFwiZ86cW8A
