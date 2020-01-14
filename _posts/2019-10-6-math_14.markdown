@@ -144,6 +144,14 @@ https://mp.weixin.qq.com/s/QmDCFY0SP3cl71HvwvthJQ
 
 如果高斯没有故意“坑”黎曼，估计这门神奇的学科就不会出现了……（拓扑学（Topology）是一门研究几何图形或空间在连续改变形状后还能保持不变的一些性质的学科。）
 
+https://mp.weixin.qq.com/s/H6QV5L-Ewdb1NkMKZrNK9w
+
+一杯咖啡背后的拓扑
+
+https://mp.weixin.qq.com/s/zoMJpYQeAAt6GmjPDx863Q
+
+这个“橡皮泥几何”，竟然解决了城中村难题！实在是太牛了！
+
 # Lie Groups
 
 《State estimation for Robotics: A Matrix Lie Group Approach》

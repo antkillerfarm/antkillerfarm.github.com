@@ -18,6 +18,8 @@ category: speech
 
 最近还有一些基于Transformer的E2E方案。
 
+![](/images/img3/multilingual.png)
+
 # CTC
 
 ## 概述

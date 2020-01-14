@@ -122,7 +122,7 @@ https://zhuanlan.zhihu.com/p/34783156
 
 读Xception和DeepLab V3+
 
-https://mp.weixin.qq.com/s/_D9jFc1suFhmkm9v2-_PTQ
+https://mp.weixin.qq.com/s/m7sUib6YQdb528G40LjpPg
 
 DeepLab v2及调试过程
 

@@ -247,6 +247,10 @@ https://mp.weixin.qq.com/s/Yus55s1utTrjuzsrebJu_w
 
 让机器读懂视频：亿级淘宝视频背后的多模态AI算法揭秘
 
+https://mp.weixin.qq.com/s/4AzF6utrQhhEweRIM6zV3A
+
+文本+视觉，跨模态预训练新进展
+
 # Capsule
 
 https://github.com/freefuiiismyname/capsule-mrc

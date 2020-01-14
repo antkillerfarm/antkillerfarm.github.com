@@ -256,6 +256,10 @@ https://mp.weixin.qq.com/s/MxvA-f6ocpmGLW5JQ8qsSg
 
 玩数据必备Python库：Numpy使用详解
 
+https://mp.weixin.qq.com/s/udKMuAfMVD4axulCR6Wgvw
+
+这100道练习，带你玩转Numpy
+
 ## SciPy
 
 SciPy提供了一些更高阶的数学运算库，比如：积分、插值、信号处理、傅立叶变换、矩阵特征值、统计计算等。

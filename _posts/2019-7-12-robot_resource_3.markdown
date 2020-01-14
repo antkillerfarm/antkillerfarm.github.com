@@ -362,6 +362,14 @@ https://mp.weixin.qq.com/s/v3gsmCWSI9pEwRolN8qWNA
 
 基于深度卷积网络的自动驾驶多模态轨迹预测
 
+https://mp.weixin.qq.com/s/R-17JgcGHG67KZ6yRYNFlA
+
+基于Frenet优化轨迹的无人车动作规划方法
+
+https://mp.weixin.qq.com/s/AJowVokPeTdgL18A0385hw
+
+一文读懂自动驾驶轨迹规划的核心解法
+
 # Python+
 
 https://mp.weixin.qq.com/s/lv_sjvXx8vWf6TsVoYoxFw
