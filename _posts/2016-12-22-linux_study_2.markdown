@@ -399,6 +399,14 @@ https://mp.weixin.qq.com/s/qnZL4ENAbTvVMVcImVTtYw
 
 比较并交换(compare and swap, CAS)，是原子操作的一种，可用于在多线程编程中实现不被打断的数据交换操作，从而避免多线程同时改写某一数据时由于执行顺序不确定性以及中断的不可预知性产生的数据不一致问题。
 
+https://mp.weixin.qq.com/s/T_z2_gsYfs6A-XjVTVV_uQ
+
+说说无锁(Lock-Free)编程那些事（上）
+
+https://mp.weixin.qq.com/s/h75n7sHnrmoLJ4DVAW5AUQ
+
+说说无锁(Lock-Free)编程那些事（下）
+
 https://mp.weixin.qq.com/s/4tAxQ0auQfv5x7Dh3B-85g
 
 Linux内存管理

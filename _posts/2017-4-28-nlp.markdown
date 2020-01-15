@@ -50,6 +50,10 @@ http://phontron.com/class/nn4nlp2017/assets/slides/
 
 CMU NN for NLP
 
+http://phontron.com/class/nn4nlp2020/schedule.html
+
+CS 11-747: Neural Networks for NLP
+
 http://phontron.com/class/mtandseq2seq2017/
 
 CMU Machine Translation and Sequence to Sequence Models

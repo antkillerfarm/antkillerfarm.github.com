@@ -137,6 +137,10 @@ https://mp.weixin.qq.com/s/pJTDJrMCfv5y4LQ2itt1tQ
 
 Facebook的 Prophet 算法简介与使用
 
+https://mp.weixin.qq.com/s/675ASxDSVH_8BX6W8WRRqg
+
+基于Prophet的时间序列预测
+
 ## Lebesgue积分
 
 ![](/images/img3/Riemann_Lebesgue.jpg)

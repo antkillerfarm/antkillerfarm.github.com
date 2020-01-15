@@ -107,6 +107,18 @@ https://mp.weixin.qq.com/s/sUQPaiYAfRpCFryrHMqPoA
 
 想写出人见人爱的推荐系统，先了解经典矩阵分解技术
 
+https://mp.weixin.qq.com/s/7C_XRgPFh41r05SZdA2NfA
+
+推荐系统之矩阵分解模型：科普篇
+
+https://mp.weixin.qq.com/s/Fy2ZyxYvRj3C8BqOp6IGPQ
+
+推荐系统之矩阵分解模型：原理篇
+
+https://mp.weixin.qq.com/s/NnykbxFA6xnTUbLzX8GVIg
+
+推荐系统之矩阵分解模型：实践篇
+
 <a name="PCA"/>
 
 # 主成分分析

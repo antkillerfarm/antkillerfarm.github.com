@@ -130,6 +130,10 @@ www.cppblog.com/jack-wang/archive/2010/10/04/128589.html
 
 模板元编程---用MPL解决实际问题
 
+https://mp.weixin.qq.com/s/5ireHbuWFrVY6T9qnvs3rQ
+
+浅谈C++元编程
+
 # C#
 
 ## XmlReader

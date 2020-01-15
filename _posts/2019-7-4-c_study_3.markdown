@@ -310,6 +310,20 @@ map：存储key-value pair。`iterator->first`指向key，而`iterator->second`�
 
 set：只有value。set也有unordered_set这样的变种。
 
+# K&R风格
+
+在C语言的函数定义上，我们通常用的函数定义方式为ANSI C的函数定义方式。但是在C语言之父创立C语言之时，函数的定义形式并非现在我们所见到的形式。
+
+这种风格被称为K&R风格，多见于一些历史悠久的项目或者老的书籍中。出于兼容性考虑，现代的C编译器仍然支持K&R风格。
+
+>记得大学学C语言，用的是谭浩强的书。当时，授课老师看不上谭的书，于是另外推荐了一本，那本书更古老，用的就是所谓的K&R风格。。。但在实际工作中，从来没见过K&R风格的代码。。。
+
+详见：
+
+http://blog.chinaunix.net/uid-7426920-id-2627743.html
+
+ANSI和K&R两种函数定义风格
+
 # 参考
 
 https://mp.weixin.qq.com/s/Hpn7KqYlBKz0JdryiozqyQ
@@ -324,16 +338,10 @@ https://zhuanlan.zhihu.com/p/82895086
 
 当我们谈论C++时，我们在谈论什么？
 
-# K&R风格
+https://mp.weixin.qq.com/s/pxyTlQn4wx-N_MaWZc0oAQ
 
-在C语言的函数定义上，我们通常用的函数定义方式为ANSI C的函数定义方式。但是在C语言之父创立C语言之时，函数的定义形式并非现在我们所见到的形式。
+漫谈C++的各种检查
 
-这种风格被称为K&R风格，多见于一些历史悠久的项目或者老的书籍中。出于兼容性考虑，现代的C编译器仍然支持K&R风格。
+https://mp.weixin.qq.com/s/LchYGGcSbIMVGxO0Uea0RA
 
->记得大学学C语言，用的是谭浩强的书。当时，授课老师看不上谭的书，于是另外推荐了一本，那本书更古老，用的就是所谓的K&R风格。。。但在实际工作中，从来没见过K&R风格的代码。。。
-
-详见：
-
-http://blog.chinaunix.net/uid-7426920-id-2627743.html
-
-ANSI和K&R两种函数定义风格
+深入C++回调

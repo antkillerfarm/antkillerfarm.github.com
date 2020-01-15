@@ -60,15 +60,74 @@ Sly Lex Yacc是David Beazley的新作，号称新一代的PLY。
 
 https://sly.readthedocs.io/en/latest/
 
-## glob
+## Cython
 
-glob的历史可以追溯到早期的UNIX系统。用它可以查找符合特定规则的文件路径名。
+和SWIG功能类似的替代品。
+
+官网：
+
+https://cython.org/
+
+示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/cython
+
+编译：
+
+`python setup.py build_ext --inplace`
+
+运行：
+
+{% highlight python %}
+>import hello
+>hello.say_hello()
+{% endhighlight %}
 
 参考：
 
-https://blog.csdn.net/csapr1987/article/details/7469769
+https://mp.weixin.qq.com/s/ODA74xgoS8X1HFxp4BfshQ
 
-python glob模块
+如何将Python自然语言处理速度提升100倍：用spaCy/Cython加速NLP
+
+https://mp.weixin.qq.com/s/1Iyhsp5-2DyTfOb0JzqLZg
+
+比Python快100倍，利用spaCy和Cython实现高速NLP项目
+
+https://mp.weixin.qq.com/s/l-zmvQvmosw81G1wFCIDbQ
+
+用Cython造个轮子
+
+## .pyc & .pyx & .pyd
+
+.pyc: 编译好的二进制文件。
+
+.pyx: python的c扩展文件，代码要符合cython的规范
+
+.pyd: 编译好的cython动态库，仅在Windows平台有，Linux平台生成.so文件。
+
+参考:
+
+https://blog.csdn.net/sislcb/article/details/4002414
+
+py文件编译为pyc
+
+https://www.cnblogs.com/kaituorensheng/p/4452881.html
+
+Cython学习
+
+## Pythran
+
+Pythran是一个将python翻译成C++的库，而Cython和SWIG则是对C++进行python封装。
+
+官网：
+
+https://pythran.readthedocs.io/en/latest/
+
+参考：
+
+https://mp.weixin.qq.com/s/hJGaREpBP0j7rqCXSZQMvA
+
+把Python自动翻译成C++
 
 ## Sphinx
 
@@ -194,61 +253,6 @@ self.player.seek(1.0, Gst.Format.TIME, Gst.SeekFlags.FLUSH, Gst.SeekType.SET,\
 改为
 
 `c_long(Gst.CLOCK_TIME_NONE).value`
-
-## .pyc & .pyx & .pyd
-
-.pyc: 编译好的二进制文件。
-
-.pyx: python的c扩展文件，代码要符合cython的规范
-
-.pyd: 编译好的cython动态库，仅在Windows平台有，Linux平台生成.so文件。
-
-参考:
-
-https://blog.csdn.net/sislcb/article/details/4002414
-
-py文件编译为pyc
-
-https://www.cnblogs.com/kaituorensheng/p/4452881.html
-
-Cython学习
-
-## Cython
-
-Cython支持python和C的混编。
-
-官网：
-
-https://cython.org/
-
-示例：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/cython
-
-编译：
-
-`python setup.py build_ext --inplace`
-
-运行：
-
-{% highlight python %}
->import hello
->hello.say_hello()
-{% endhighlight %}
-
-## mypy
-
-mypy是一个针对python语言的静态类型检查工具。
-
-官网：
-
-http://www.mypy-lang.org/
-
-参考：
-
-https://mp.weixin.qq.com/s/dBK8x_WajI2A3L5v6OQEgA
-
-四年完成400万行Python代码检查，甚至顺手写了个编译器
 
 ## Django
 

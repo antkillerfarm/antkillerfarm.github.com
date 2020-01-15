@@ -140,21 +140,9 @@ https://mp.weixin.qq.com/s/AMZFvmzo4pQ1m7QeaRpAdA
 
 PyTorch资源列表：450个NLP/CV/SP、论文实现、教程、示例
 
-https://github.com/jinfagang/pytorch_name_net
+https://mp.weixin.qq.com/s/dzDkpUHo4CKqq8i1pyYO2w
 
-PyTorch人工智能自动取名
-
-https://mp.weixin.qq.com/s/UGGrK5LwOP2aLVTz0AGMDw
-
-如何通过PyTorch实现Tensor
-
-https://mp.weixin.qq.com/s/9X77MPcQOQPwZaOVIVfo9Q
-
-用PyTorch搭建抽取式摘要系统
-
-https://mp.weixin.qq.com/s/y5LLraGWuYUbOted9N-GWQ
-
-如何从TensorFlow转入PyTorch
+60题PyTorch简易入门指南
 
 https://mp.weixin.qq.com/s/RKtyNpIxSxFNfOSyHPOiGw
 
@@ -168,13 +156,9 @@ https://mp.weixin.qq.com/s/7Wr70NFi4pxvSpRr2Q1zsQ
 
 强大的PyTorch：10分钟让你了解深度学习领域新流行的框架
 
-https://mp.weixin.qq.com/s/rORvudwdbnmSvzFhM1gVOA
+https://mp.weixin.qq.com/s/y5LLraGWuYUbOted9N-GWQ
 
-斯坦福大学CS-224n课程中深度NLP模型的PyTorch实现
-
-https://mp.weixin.qq.com/s/Chk-QAPhIXlIeguT4hS6kg
-
-对比ResNet：超深层网络DiracNet的PyTorch实现
+如何从TensorFlow转入PyTorch
 
 https://mp.weixin.qq.com/s/KRuEuAOXU2fpSNyOJW4bpA
 
@@ -183,6 +167,34 @@ Yoshua Bengio实验室MILA开放面向初学者的PyTorch教程
 https://mp.weixin.qq.com/s/QjhokXDXuglJajULKigt1g
 
 PyTorch手把手深度学习教程系列完整版
+
+https://mp.weixin.qq.com/s/FGL1vYaXvv-NCcq0vithZw
+
+深度学习框架：PyTorch入门与实践
+
+https://mp.weixin.qq.com/s/pDo2bSctEiTEyjRUgOAC8w
+
+PyTorch常用代码段整理合集
+
+https://github.com/jinfagang/pytorch_name_net
+
+PyTorch人工智能自动取名
+
+https://mp.weixin.qq.com/s/UGGrK5LwOP2aLVTz0AGMDw
+
+如何通过PyTorch实现Tensor
+
+https://mp.weixin.qq.com/s/9X77MPcQOQPwZaOVIVfo9Q
+
+用PyTorch搭建抽取式摘要系统
+
+https://mp.weixin.qq.com/s/rORvudwdbnmSvzFhM1gVOA
+
+斯坦福大学CS-224n课程中深度NLP模型的PyTorch实现
+
+https://mp.weixin.qq.com/s/Chk-QAPhIXlIeguT4hS6kg
+
+对比ResNet：超深层网络DiracNet的PyTorch实现
 
 https://mp.weixin.qq.com/s/BP9MToKcE1MJmQTQv2UUZQ
 
@@ -199,10 +211,6 @@ Pytorch教程：Facebook发布的LR-GAN如何生成图像？
 https://mp.weixin.qq.com/s/BjSx3tSQ2Xa0ja_j6dA7eA
 
 Pytorch中的DataLoader的相关记录
-
-https://mp.weixin.qq.com/s/FGL1vYaXvv-NCcq0vithZw
-
-深度学习框架：PyTorch入门与实践
 
 https://mp.weixin.qq.com/s/vx0txFUf10QDBlldz0VJmg
 
@@ -348,10 +356,6 @@ https://mp.weixin.qq.com/s/gJgxh4l0CXTlaJaQ_FS3YQ
 
 PyTorch的数据增强与数据标准化
 
-https://mp.weixin.qq.com/s/pDo2bSctEiTEyjRUgOAC8w
-
-PyTorch常用代码段整理合集
-
 https://mp.weixin.qq.com/s/Mo7XhRcPkgurmQPJ3Zu1ug
 
 基于PyTorch的计算机视觉框架
@@ -403,23 +407,3 @@ https://zhuanlan.zhihu.com/p/87572724
 https://www.zhihu.com/question/274635237
 
 Pytorch有什么节省内存（显存）的小技巧？
-
-https://zhuanlan.zhihu.com/p/76638962
-
-Pytorch分布式训练
-
-https://mp.weixin.qq.com/s/S1dRfmqpiLzR3tnsocmfvw
-
-Pytorch中的数据增强方式最全解释
-
-https://zhuanlan.zhihu.com/p/29904755
-
-Autograd:PyTorch中的梯度计算
-
-https://mp.weixin.qq.com/s/BTFMvV2ppmRBXYg95YlK4w
-
-PyTorch实现L2和L1正则化的方法
-
-https://zhuanlan.zhihu.com/p/98535650
-
-研究生应当掌握的并行训练方法（单机多卡）

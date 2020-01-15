@@ -159,7 +159,7 @@ Perfect forwarding and universal references in C++
 
 C++标准库遵循RAII管理其自身的资源：类在构造函数中获取其资源（错误时抛出异常），并在其析构函数中释放之（决不抛出），而不要求显式清理。 
 
-RAII不适用于并非在使用前请求的资源：CPU 时间、核心，以及缓存容量、熵池容量、网络带宽、电力消费、栈内存等。
+RAII不适用于并非在使用前请求的资源：CPU时间、核心，以及缓存容量、熵池容量、网络带宽、电力消费、栈内存等。
 
 RAII也是下面介绍的各类智能指针的理论基础。
 
@@ -203,6 +203,12 @@ std::unique_ptr<std::FILE, decltype(&close_file)> fp(std::fopen("demo.txt", "r")
 - 方法1：`std::unique_ptr<int>(new int(1));`
 
 - 方法2：`std::make_unique<int>(1);`
+
+参考：
+
+https://mp.weixin.qq.com/s/32aeGOPaySjTmyKcjFKgYA
+
+窥见C++11智能指针
 
 # decltype
 

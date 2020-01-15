@@ -432,3 +432,9 @@ http://trac.webkit.org/wiki/BuildingGtk
 3)gtk-doc-tools
 
 4)libgail-dev
+
+参考：
+
+https://mp.weixin.qq.com/s/QqpPGWf3IVEDN1t80CZ06Q
+
+深入理解浏览器原理

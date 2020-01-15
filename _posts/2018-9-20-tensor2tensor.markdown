@@ -307,3 +307,25 @@ https://mp.weixin.qq.com/s/hRH7hVsaQBqf0vhD_BqBgg
 https://zhuanlan.zhihu.com/p/42345854
 
 如何基于gluon训练一个强有力的Reid Baseline
+
+# Pytorch+
+
+https://zhuanlan.zhihu.com/p/76638962
+
+Pytorch分布式训练
+
+https://mp.weixin.qq.com/s/S1dRfmqpiLzR3tnsocmfvw
+
+Pytorch中的数据增强方式最全解释
+
+https://zhuanlan.zhihu.com/p/29904755
+
+Autograd:PyTorch中的梯度计算
+
+https://mp.weixin.qq.com/s/BTFMvV2ppmRBXYg95YlK4w
+
+PyTorch实现L2和L1正则化的方法
+
+https://zhuanlan.zhihu.com/p/98535650
+
+研究生应当掌握的并行训练方法（单机多卡）

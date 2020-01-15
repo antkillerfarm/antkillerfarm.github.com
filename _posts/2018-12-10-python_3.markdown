@@ -367,20 +367,6 @@ https://mp.weixin.qq.com/s/QIfxxY6z7y77RDE_8gDEIg
 
 并行运算Process Pools
 
-## Cython
-
-https://mp.weixin.qq.com/s/ODA74xgoS8X1HFxp4BfshQ
-
-如何将Python自然语言处理速度提升100倍：用spaCy/Cython加速NLP
-
-https://mp.weixin.qq.com/s/1Iyhsp5-2DyTfOb0JzqLZg
-
-比Python快100倍，利用spaCy和Cython实现高速NLP项目
-
-https://mp.weixin.qq.com/s/l-zmvQvmosw81G1wFCIDbQ
-
-用Cython造个轮子
-
 ## 处理eml文件
 
 代码示例：
@@ -420,3 +406,27 @@ https://mp.weixin.qq.com/s/IznKbG3cEF6uxP0Fe_0oaQ
 https://mp.weixin.qq.com/s/J-H638ZzhB-GOXMeAQ9aww
 
 Camelot: 三行代码提取PDF表格数据
+
+## mypy
+
+mypy是一个针对python语言的静态类型检查工具。
+
+官网：
+
+http://www.mypy-lang.org/
+
+参考：
+
+https://mp.weixin.qq.com/s/dBK8x_WajI2A3L5v6OQEgA
+
+四年完成400万行Python代码检查，甚至顺手写了个编译器
+
+## glob
+
+glob的历史可以追溯到早期的UNIX系统。用它可以查找符合特定规则的文件路径名。
+
+参考：
+
+https://blog.csdn.net/csapr1987/article/details/7469769
+
+python glob模块

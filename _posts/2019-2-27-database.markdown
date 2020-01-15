@@ -118,6 +118,14 @@ https://mp.weixin.qq.com/s/4lZ7My6cs4-VJQ1qGhQxZg
 
 AliSQL X-Cluste：基于X-Paxos的高性能强一致MySQL数据库
 
+https://mp.weixin.qq.com/s/NqLpT47ZWD6oJzfo_tWceA
+
+Paxos（分布式一致性算法）
+
+https://mp.weixin.qq.com/s/OXE7prU9cMuZG8kFydPm9A
+
+Paxos和Raft的前世今生
+
 https://mp.weixin.qq.com/s/tPzBlQGxGq1WEnXz5ggpxg
 
 sysbench在美团点评中的应用
@@ -232,6 +240,12 @@ https://mp.weixin.qq.com/s/ufficZ7cCvRFdEpaAfm8Fg
 
 # 分布式ID生成器
 
+![](/images/img3/Snow.png)
+
+这种结构是雪花算法提出者Twitter的分法。百度的UidGenerator、美团的Leaf等，都是基于雪花算法做一些适合自身业务的变化。
+
+参考：
+
 http://mp.weixin.qq.com/s/Bk5k6vRG4Rq4iCtmtYDEGQ
 
 Leaf——美团点评分布式ID生成系统
@@ -247,6 +261,10 @@ https://mp.weixin.qq.com/s/_z0-90xbsCd4Pdi6UlEvnA
 https://mp.weixin.qq.com/s/Yk2ZlGCEINGrsTfHI6zpsw
 
 分布式id生成器
+
+https://mp.weixin.qq.com/s/E3PGP6FDBFUcghYfpe6vsg
+
+唯一ID生成算法剖析
 
 # 世说新语
 
@@ -323,13 +341,3 @@ b.人类智能如何分类？如何测定？
 c. 如何测定机器“智能”和人类智能的接近程度？
 
 提出这个问题的人叫图灵。
-
-----
-
-Ola和Makinde谁是第一个FB黑人工程师不清楚，但是两个人都在硅谷有着极大的影响。Makinde先是加入Pinterest成为它的早期员工，为Pinterest爆炸性的增长立下汗马功劳，现在自己创办了/dev/color帮助其他有色人种进入到IT行业，Ola在FB近十年，留下了代码提交数量多年无人能破的纪录，现在退休正在享受甜蜜的私人生活。
-
-----
-
-https://www.zhihu.com/question/55530692/answer/790409921
-
-阿富汗历史
