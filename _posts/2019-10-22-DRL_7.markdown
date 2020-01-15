@@ -179,6 +179,20 @@ Cooperative Multi-Agent Reinforcement Learning
 
 # AlphaStar
 
+AlphaStar是DeepMind在解决了围棋问题之后，在RTS游戏领域的尝试。
+
+里程碑事件：
+
+2018.12 5:0击败TLO，5:0击败MaNa。
+
+2019.1 表演赛不敌MaNa。
+
+论文：
+
+《Grandmaster level in StarCraft II using multi-agent reinforcement learning》
+
+参考：
+
 https://mp.weixin.qq.com/s/_Y0bCjTu9UrHfnen15htqQ
 
 AlphaStar称霸星际争霸2！AI史诗级胜利，DeepMind再度碾压人类
@@ -211,7 +225,35 @@ https://mp.weixin.qq.com/s/X7QQn6W2dB3y_Ljii-sJ3w
 
 Alphastar再登Nature！星际争霸任一种族，战网狂虐99.8%人类玩家
 
+https://zhuanlan.zhihu.com/p/102749648
+
+基于多智能体强化学习主宰星际争霸游戏
+
+https://zhuanlan.zhihu.com/p/92543229
+
+AlphaStar
+
 # Dota 2
+
+Dota 2的AI项目主要是OpenAI来搞，算是DRL在MOBA游戏上的应用。
+
+里程碑事件：
+
+2017.8 1vs1击败Dendi。2：0。稍后，OpenAI将该版本放在线上，被人找出破绽，惨遭调戏。
+
+2018.6 OpenAI Five击败半职业玩家。
+
+2018.7 OpenAI Five在Ti8表演赛被paiN Gaming和中国退役大神队击败。
+
+2019.4 OpenAI Five击败Ti8冠军OG。
+
+2019.12 OpenAI开发了更强的Rerun。Rerun对OpenAI Five的胜率为98%。
+
+论文:
+
+《Dota 2 with Large Scale Deep Reinforcement Learning》
+
+参考：
 
 https://mp.weixin.qq.com/s/rPsxvzOLuoo_IRtgH94Ecw
 
@@ -299,38 +341,6 @@ https://mp.weixin.qq.com/s/1SZKhG1ZbD1pl-3YQD_umg
 
 6行代码搞定基本的RL算法，速度围观Reddit高赞帖
 
-https://mp.weixin.qq.com/s/7BsXPQ8wC6_fHulU63ZQiQ
-
-当强化学习遇见泛函分析
-
 https://mp.weixin.qq.com/s/6n5HawyR4AgH8Dq0gJMw2g
 
 强化学习的基本概念与代码实现
-
-https://mp.weixin.qq.com/s/RLEuaiRdq6AbTSUcYQ5O3A
-
-深度强化学习在NLP怎么用？看清华黄民烈老师这一份120页《自然语言处理和搜索中的深度强化学习应用》讲义
-
-https://zhuanlan.zhihu.com/p/29019246
-
-基于策略的增强学习
-
-https://mp.weixin.qq.com/s/OY56lJ_NFf5vVAgKfKyx2A
-
-利用强化学习自动搜索最优化方法
-
-https://mp.weixin.qq.com/s/nYOOwVoijl1p4V0A7yaI3w
-
-机遇与挑战：用强化学习自动搜索优化算法
-
-http://mp.weixin.qq.com/s/TBVVdX3erOpXNjXmhLmxOw
-
-学“深度强化学习”，看懂DeepMind这篇文章就够了!
-
-https://mp.weixin.qq.com/s/uDFsWebfLmka-zZX3Y_8kg
-
-深度强化学习在面向任务的对话管理中的应用
-
-https://mp.weixin.qq.com/s/FROyReDu7i5amGv-J4cmtg
-
-“世界模型”实现，一步步让机器掌握赛车和躲避火球的技能

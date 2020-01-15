@@ -282,6 +282,10 @@ https://mp.weixin.qq.com/s/JZPLz1Xczby86id4Zvy1UQ
 
 CrowdHuman+Double Anchor：强强联合，推动密集行人检测技术落地
 
+https://mp.weixin.qq.com/s/Dy3_I27fa1j7ZdweoPXImw
+
+深度学习行人重识别ReID最新综述与展望
+
 # 数据增强
 
 https://mp.weixin.qq.com/s/GqPfvWwH1T0XFwiZ86cW8A

@@ -444,6 +444,18 @@ https://www.cnblogs.com/vincentcheng/p/9186540.html
 
 Augmentor和imgaug——python图像数据增强库
 
+## Netron
+
+Netron是一个DL模型的可视化工具，支持几乎所有类型的模型。
+
+代码：
+
+https://github.com/lutzroeder/netron
+
+安装：
+
+`snap install netron`
+
 ## 可视化
 
 https://github.com/neozhaoliang/pywonderland/tree/master/
@@ -485,10 +497,6 @@ https://mp.weixin.qq.com/s/c7Sry6FaGv3ZgkKLekxc2g
 https://mp.weixin.qq.com/s/ty5xy6s0z3rvMYZptdTdBQ
 
 Python热图进阶
-
-https://github.com/lutzroeder/netron
-
-一个DL模型的可视化工具，支持几乎所有类型的模型。
 
 ## 参考
 

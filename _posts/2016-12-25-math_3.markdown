@@ -155,6 +155,10 @@ https://mp.weixin.qq.com/s/svNVryWhiGxWFBz0s0dX5g
 
 概率论简史
 
+https://mp.weixin.qq.com/s/GNrBlxQHa3nAmsboLpBtBg
+
+深度学习必懂的13种概率分布
+
 # 统计杂谈
 
 ## 统计模拟

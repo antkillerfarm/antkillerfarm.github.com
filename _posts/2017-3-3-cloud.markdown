@@ -291,7 +291,7 @@ https://mp.weixin.qq.com/s/vTHRSFg15SDYL3qH3dGCvA
 
 关于Spark NLP学习，你需要掌握的LightPipeline
 
-# DRL参考资源+
+# DRL参考资源
 
 https://mp.weixin.qq.com/s/curzH8WrFyl5WWT4lDfpwQ
 
@@ -332,11 +332,3 @@ https://mp.weixin.qq.com/s/VrVdsxn94ux_46mIyS8f0w
 https://mp.weixin.qq.com/s/P5EysBHBaR6L3IfeSgo6fw
 
 强化学习20分钟，剑桥博士教汽车学会自动驾驶！
-
-https://mp.weixin.qq.com/s/w3SsadgKaL8-tlzYLvMm-A
-
-讲真？一天就学会了自动驾驶——强化学习在自动驾驶的应用
-
-https://mp.weixin.qq.com/s/nnWuIPk_6mI9IAKIUbx6KQ
-
-深度强化学习解决交通控制问题
