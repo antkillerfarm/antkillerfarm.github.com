@@ -255,6 +255,10 @@ https://mp.weixin.qq.com/s/thd_dtd4erqSf7p6ZON72w
 
 自动特征工程在推荐系统中的研究
 
+https://zhuanlan.zhihu.com/p/96420594
+
+特征工程架构性好文
+
 # 图论
 
 https://mp.weixin.qq.com/s/zOdy-1vCJD_dPFSoe0ELFA

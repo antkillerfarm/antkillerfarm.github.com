@@ -253,6 +253,18 @@ https://mp.weixin.qq.com/s/4AzF6utrQhhEweRIM6zV3A
 
 # Capsule
 
+https://jhui.github.io/2017/11/14/Matrix-Capsules-with-EM-routing-Capsule-Network/
+
+“Understanding Matrix capsules with EM Routing (Based on Hinton's Capsule Networks)”
+
+https://zhuanlan.zhihu.com/p/42864711
+
+胶囊网络到底是什么东东？
+
+https://zhuanlan.zhihu.com/p/32106577
+
+酉变换与递归神经网络
+
 https://github.com/freefuiiismyname/capsule-mrc
 
 基于capsule的观点型阅读理解模型

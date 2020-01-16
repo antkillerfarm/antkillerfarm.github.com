@@ -166,6 +166,12 @@ MTP类似于HTTP之类的应用层通信协议传输，由于不涉及驱动的�
 
 计算文件校验和，一般采用MD5和SHA算法。在Ubuntu中，这些算法的命令包括：md5sum、sha1sum(160-bit) ,sha224sum(224-bit) ,sha256sum(256-bit),sha384sum(384-bit),sha512sum(512-bit)等。
 
+参考：
+
+https://mp.weixin.qq.com/s/FPf2EMwHPsNetxx_sCBzNA
+
+MD5算法和SHA-1算法
+
 # 产品设计工具
 
 | 类别 | 收费 | 免费 |
@@ -354,17 +360,3 @@ Ctrl+Shift+T：在terminal中打开多个标签
 alt+1 alt+2 alt+3........：切换标签
 
 Ctrl+Super+D：最小化所有窗口
-
-# 便签软件
-
-主要有两类便签软件：
-
-1.支持超链接的便签。典型的有Gnote和Tomboy，这两个软件都有内容检索的功能。
-
-2.桌面随意贴。典型的有Indicator Stickynotes和Knotes。后者有内容检索的功能，而前者没有。
-
-# ASCII表情
-
-╮(╯_╰)╭
-
-(^ω^)

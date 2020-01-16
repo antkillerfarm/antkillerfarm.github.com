@@ -149,6 +149,10 @@ https://mp.weixin.qq.com/s/c5gxaOY2ITN-Q-U0mCYNgA
 
 《胶囊网络（Capsule Networks）综述》
 
+https://mp.weixin.qq.com/s/gzCDE6PR8rEs8QEy8Mj00g
+
+胶囊网络与计算机视觉教程
+
 https://www.zhihu.com/question/67287444
 
 如何看待Hinton的论文《Dynamic Routing Between Capsules》？
@@ -240,15 +244,3 @@ https://mp.weixin.qq.com/s/HbqmdaxIQrQc7vDgiExtrw
 https://mp.weixin.qq.com/s/VcZSHw98w6nvgz4Hzjto3A
 
 深度学习之CapsuleNets理论与Python实践
-
-https://jhui.github.io/2017/11/14/Matrix-Capsules-with-EM-routing-Capsule-Network/
-
-“Understanding Matrix capsules with EM Routing (Based on Hinton's Capsule Networks)”
-
-https://zhuanlan.zhihu.com/p/42864711
-
-胶囊网络到底是什么东东？
-
-https://zhuanlan.zhihu.com/p/32106577
-
-酉变换与递归神经网络

@@ -202,6 +202,10 @@ https://blog.csdn.net/weixin_38285131/article/details/80457068
 
 光场相机重聚焦原理介绍及代码解析
 
+https://blog.csdn.net/weixin_38490884/article/details/83009344
+
+光场的可视化与重聚焦原理
+
 https://mp.weixin.qq.com/s/ofoh7xH9MB0ifORi-ZQbcA
 
 苹果iphone Xs/Xr camera有哪些改进

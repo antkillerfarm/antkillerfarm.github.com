@@ -362,6 +362,10 @@ https://mp.weixin.qq.com/s/iPpVT2iY4Ec6oYdsRpPeTQ
 
 淘宝推荐系统中的深度序列匹配模型SDM
 
+https://zhuanlan.zhihu.com/p/103012005
+
+序列特征的处理方法之一：基于注意力机制方法
+
 # AI可解释性
 
 XAI(Explainable Artificial Intelligence)

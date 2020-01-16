@@ -72,6 +72,20 @@ http://distrowatch.com/
 
 3.GOffice。Gnome项目的成果，和前两个相比，GOffice的组件比较独立，没有什么协同能力。
 
+# 便签软件
+
+主要有两类便签软件：
+
+1.支持超链接的便签。典型的有Gnote和Tomboy，这两个软件都有内容检索的功能。
+
+2.桌面随意贴。典型的有Indicator Stickynotes和Knotes。后者有内容检索的功能，而前者没有。
+
+# ASCII表情
+
+╮(╯_╰)╭
+
+(^ω^)
+
 # 常用英语缩写
 
 FYI：for your information
