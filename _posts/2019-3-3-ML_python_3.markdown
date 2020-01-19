@@ -417,3 +417,7 @@ https://mp.weixin.qq.com/s/WdYa7Q-yA-s_EO59YkYbqw
 https://mp.weixin.qq.com/s/EqLzNzzMcwq5SEyBoTsuug
 
 11种NLP文本预处理Python代码，简洁实用
+
+https://mp.weixin.qq.com/s/mCUdK4i6XGEyaWNCIWA-wQ
+
+集五福，我用Python

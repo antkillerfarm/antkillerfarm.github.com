@@ -298,6 +298,14 @@ https://mp.weixin.qq.com/s/r4_5GwA8Olqh6M1p_6eYPg
 
 图神经网络！2020 AI研究趋势！是什么？有什么用？
 
+https://mp.weixin.qq.com/s/ae515_P6zA5SLN5-Edxbig
+
+图卷积网络Graph Convolutional Networks
+
+https://mp.weixin.qq.com/s/LbMblqRWeitShSUsnebDAg
+
+基于GNN的图表示学习
+
 # 视频处理+
 
 https://mp.weixin.qq.com/s/vuhoK4cVaHDn6oTuGqX_Eg

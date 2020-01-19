@@ -275,6 +275,10 @@ https://mp.weixin.qq.com/s/fY0bfMGL3UXT_3j4LZXaHw
 
 推荐5款好用的开源Docker工具
 
+https://zhuanlan.zhihu.com/p/90408275
+
+下一代容器架构已出，Docker何去何处？看看这里的6问6答！！
+
 # 多维数组的行优先和列优先
 
 这里以numpy为工具，介绍一下多维数组的行优先和列优先的概念。

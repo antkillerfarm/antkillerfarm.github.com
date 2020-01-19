@@ -343,3 +343,7 @@ MelGAN：基于生成对抗网络快速生成音频
 https://zhuanlan.zhihu.com/p/91024324
 
 变分自编码器（VAE）在语音合成中的应用
+
+https://mp.weixin.qq.com/s/oaI_X2SYeKVn7oXWGtFQag
+
+爱奇艺语音转换技术的探索与实践
