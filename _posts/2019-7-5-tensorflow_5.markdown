@@ -177,3 +177,7 @@ https://mp.weixin.qq.com/s/6y7AEGz2cs4QUP0Cikhnmw
 https://mp.weixin.qq.com/s/VN2O6faf4spdD3qaqf3aiw
 
 使用AMD显卡加速TensorFlow
+
+https://mp.weixin.qq.com/s/LvN6LkUwyVElWVRrAT9NJA
+
+TensorFlow 2.0迁移学习实践指南

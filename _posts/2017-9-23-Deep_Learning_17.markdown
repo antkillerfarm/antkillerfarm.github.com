@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十七）——无监督/半监督/自监督深度学习, 图像检索
+title:  深度学习（十七）——无监督/半监督/自监督深度学习, 语义分割
 category: DL 
 ---
 
@@ -242,52 +242,6 @@ https://mp.weixin.qq.com/s/fy1gUElWVWcOVvzv6fGmdg
 
 谷歌大脑推出视觉领域任务自适应基准：VTAB
 
-# 图像检索
-
-## 传统方法
-
-https://mp.weixin.qq.com/s/sM78DCOK3fuG2JrP2QaSZA
-
-SIFT与CNN的碰撞：万字长文回顾图像检索任务十年探索历程（上）
-
-https://mp.weixin.qq.com/s/yzVMDEpwbXVS0y-CwWSBEA
-
-SIFT与CNN的碰撞：万字长文回顾图像检索任务十年探索历程（下）
-
-https://mp.weixin.qq.com/s/Sda94q-40goiZGSYGgm_Yw
-
-基于内容的图像检索技术综述-传统经典方法
-
-https://mp.weixin.qq.com/s/ED-zovVT_vHId4mYXdEo5w
-
-高效大规模图像搜索开源实现
-
-## DL方法
-
-https://zhuanlan.zhihu.com/p/36479489
-
-图像检索：因缘际会与前瞻
-
-https://mp.weixin.qq.com/s/aRndRlVnY5ZRBFnNbVNecg
-
-李飞飞CS231n项目：这两位工程师想用神经网络帮你还原买家秀
-
-https://mp.weixin.qq.com/s/zHSDFR_Nd4LfvIaq9kSrww
-
-BMVC2018图像检索论文—使用区域注意力网络改进R-MAC方法
-
-https://mp.weixin.qq.com/s/FJCZvc8pl-CwFhyiCD6E-g
-
-Pinterest视觉搜索工程师孙彦：视觉搜索不是“鸡肋”
-
-https://mp.weixin.qq.com/s/QgYtfvsLGcfqLA98mp19tg
-
-KDD2018阿里巴巴论文揭示自家大规模视觉搜索算法
-
-https://mp.weixin.qq.com/s/CS4iAMprZizrXhpXDhySzg
-
-视频分类/行为识别研究综述，从数据集到方法
-
 # 语义分割
 
 Semantic segmentation是图像理解的基石性技术，在自动驾驶系统（具体为街景识别与理解）、无人机应用（着陆点判断）以及穿戴式设备应用中举足轻重。
@@ -324,22 +278,28 @@ https://mp.weixin.qq.com/s/zZ-i54_wqzVQxTCFABNIMQ
 
 闲聊图像分割这件事儿
 
-https://zhuanlan.zhihu.com/p/22308032
+https://mp.weixin.qq.com/s/9F2UB_5ah1nEe3dfyoeRhg
 
-图像语义分割之FCN和CRF
+图像分割算法综述
 
-https://zhuanlan.zhihu.com/p/25515361
+# 语义分割常见评价指标
 
-图像语义分割之特征整合和结构预测
+假设总计有k+1分类(标记为$$L_0$$到$$L_k$$，其中包含一个背景类别)，$$P_{ij}$$表示类别为i的像素被预测为类别为j的数目，这样来说$$P_{ii}$$就表示TP(true positives)，$$P_{ij}$$与$$P_{ji}$$分别表示为FP(false positives)与FN(false negatives)。
 
-https://zhuanlan.zhihu.com/p/27794982
+- PA(Pixel Accuracy)
 
-语义分割中的深度学习方法全解：从FCN、SegNet到各代DeepLab
+最简单的度量计算，总的像素跟预测正确像素的比率：
 
-https://mp.weixin.qq.com/s/mQqEe4LC0VHBH2ZAtFanWQ
+$$PA=\frac{\sum_{i=0}^k P_{ii}}{\sum_{i=0}^k \sum_{j=0}^k P_{ij}}$$
 
-基于深度学习的图像语义分割方法回顾
+- MPA(Mean Pixel Accuracy)
 
-https://mp.weixin.qq.com/s/9G3kahaoOSoB-DiGey1VLA
+基于每个类别正确的像素总数与每个类别总数比率求和得到的均值：
 
-基于深度学习的图像语义分割算法综述
+$$MPA=\frac{1}{k+1}\sum_{i=0}^k\frac{P_{ii}}{\sum_{j=0}^k P_{ij}}$$
+
+- MIoU(Mean Intersection over Union)
+
+它通过计算交并比来度量，这里交并比代指ground truth与预测分割结果之间。是重新计算TP跟 (TP + FN+FP)之和之间的比率。IoU是基于每个类别计算，然后再求均值。公式如下：
+
+$$MIoU=\frac{1}{k+1}\sum_{i=0}^k\frac{P_{ii}}{\sum_{j=0}^k P_{ij} + \sum_{j=0}^k P_{ji}-P_{ii}}$$

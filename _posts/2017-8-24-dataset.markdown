@@ -342,6 +342,10 @@ https://mp.weixin.qq.com/s/Ud2pwlNSIEb3HncCrniMxA
 
 最全中华古诗词数据库，收录30多万诗词
 
+https://mp.weixin.qq.com/s/FdQ7IF4N3BhiqjZ32ZMirg
+
+中文细粒度命名实体识别数据集来了
+
 ## CV
 
 http://www.cvpapers.com/datasets.html

@@ -98,6 +98,10 @@ https://mp.weixin.qq.com/s/9Sgln-bfP2DdB_o1RAgiGg
 
 Transformer在深度推荐系统中的应用
 
+https://mp.weixin.qq.com/s/61ZeO46s19sCW-3xQ_FUJg
+
+如何在NLP中有效利用Deep Transformer？
+
 # BERT
 
 ## 概述

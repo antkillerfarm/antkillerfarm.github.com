@@ -228,6 +228,10 @@ https://mp.weixin.qq.com/s/Irs_fLrf4oybc3sAfpmEeA
 
 图嵌入（Graph embedding）综述
 
+https://zhuanlan.zhihu.com/p/75307407
+
+图神经网络（Graph Neural Networks，GNN）综述
+
 https://mp.weixin.qq.com/s/s6E2vV1KrQDI4SeAnkYTKw
 
 图神经网络将成AI下一拐点！MIT斯坦福一文综述GNN到底有多强

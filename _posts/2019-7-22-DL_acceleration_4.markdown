@@ -48,6 +48,10 @@ https://mp.weixin.qq.com/s/naDk0mmxd08dNl9LawLUnw
 
 不使用先验知识与复杂训练策略，从头训练二值神经网络！
 
+https://mp.weixin.qq.com/s/Xvlxs-Os2meduHrEQFc7vg
+
+第一次胜过MobileNet的二值神经网络，-1与+1的三年艰苦跋涉
+
 https://mp.weixin.qq.com/s/tbRj5Wd69n9gvSzW4oKStg
 
 异或神经网络

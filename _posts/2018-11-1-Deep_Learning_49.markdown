@@ -18,6 +18,10 @@ https://mp.weixin.qq.com/s/n9Xdj5RKGR9cyXXNzxzvSw
 
 基于深度学习的图像分割在高德的实践
 
+https://zhuanlan.zhihu.com/p/98508347
+
+论文速读：PointRend: Image Segmentation as Rendering
+
 # Fast Image Processing
 
 ![](/images/article/FIP.png)

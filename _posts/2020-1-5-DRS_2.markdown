@@ -365,3 +365,11 @@ https://zhuanlan.zhihu.com/p/101136699
 https://mp.weixin.qq.com/s/POEnU7bNG44Mz9844WuzIw
 
 腾讯视频是如何给你高效精准推送的
+
+https://zhuanlan.zhihu.com/p/99953120
+
+YouTube推荐系统算法梳理
+
+https://mp.weixin.qq.com/s/zeF7C7YrLqOjIWPen04K2Q
+
+搜索模型核心技术公开，淘宝如何做用户建模？

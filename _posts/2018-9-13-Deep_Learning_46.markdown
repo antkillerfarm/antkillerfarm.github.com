@@ -85,3 +85,7 @@ https://mp.weixin.qq.com/s/T6GlweGUguUAYIjfsabPHQ
 https://mp.weixin.qq.com/s/QR53KZwIpQbCqX4TJAhAlQ
 
 面向场景文本识别的带聚焦注意力机制的convLSTM
+
+https://mp.weixin.qq.com/s/dg3ydVozTN1wJB-SnjkPGQ
+
+GNN手绘草图识别新架构：Multi-Graph Transformer网络

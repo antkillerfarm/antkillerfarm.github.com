@@ -96,7 +96,11 @@ https://mp.weixin.qq.com/s/e2yroJ8-PXMH5dcIr4KP9w
 
 https://www.eecs189.org/
 
-https://www.eecs189.org/
+CS 189: Introduction to Machine Learning
+
+https://stanford-cs221.github.io/
+
+CS221: Artificial Intelligence: Principles and Techniques
 
 # 世说新语
 

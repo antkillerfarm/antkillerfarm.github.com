@@ -1,52 +1,10 @@
 ---
 layout: post
-title:  深度学习（十八）——语义分割, FCN
+title:  深度学习（十八）——FCN
 category: DL 
 ---
 
-# 语义分割（续）
-
-https://mp.weixin.qq.com/s/9F2UB_5ah1nEe3dfyoeRhg
-
-图像分割算法综述
-
-https://mp.weixin.qq.com/s/JbdwtpA3iRXReyerO4HYIg
-
-一文了解什么是语义分割及常用的语义分割方法有哪些
-
-https://mp.weixin.qq.com/s/jCv259hI0vl7st80Obfrcg
-
-图像语义分割的工作原理和CNN架构变迁
-
-https://mp.weixin.qq.com/s/KcVKKsAyz-eVsyWR0Y812A
-
-分割算法——可以分割一切目标
-
-https://mp.weixin.qq.com/s/MFNKDNTrF-8VuKrwcsTDLw
-
-纵览图像语义分割发展史，11篇关键文章简介
-
-# 语义分割常见评价指标
-
-假设总计有k+1分类(标记为$$L_0$$到$$L_k$$，其中包含一个背景类别)，$$P_{ij}$$表示类别为i的像素被预测为类别为j的数目，这样来说$$P_{ii}就表示TP(true positives)，$$P_{ij}$$与$$P_{ji}$$分别表示为FP(false positives)与FN(false negatives)。
-
-- PA(Pixel Accuracy)
-
-最简单的度量计算，总的像素跟预测正确像素的比率：
-
-$$PA=\frac{\sum_{i=0}^k P_{ii}}{\sum_{i=0}^k \sum_{j=0}^k P_{ij}}$$
-
-- MPA(Mean Pixel Accuracy)
-
-基于每个类别正确的像素总数与每个类别总数比率求和得到的均值：
-
-$$MPA=\frac{1}{k+1}\sum_{i=0}^k\frac{P_{ii}}{\sum_{j=0}^k P_{ij}}$$
-
-- MIoU(Mean Intersection over Union)
-
-它通过计算交并比来度量，这里交并比代指ground truth与预测分割结果之间。是重新计算TP跟 (TP + FN+FP)之和之间的比率。IoU是基于每个类别计算，然后再求均值。公式如下：
-
-$$MIoU=\frac{1}{k+1}\sum_{i=0}^k\frac{P_{ii}}{\sum_{j=0}^k P_{ij} + \sum_{j=0}^k P_{ji}-P_{ii}}$$
+# 语义分割常见评价指标（续）
 
 - FWIoU(Frequency Weighted Intersection over Union)
 
@@ -108,9 +66,59 @@ https://mp.weixin.qq.com/s/AiuwMytfux9BMt__eVtj6w
 
 基于图割算法的木材表面缺陷图像分析
 
+# 语义分割之DL进化史
+
+![](/images/img3/segmentation.png)
+
+上图中，橙色表示语义分割模型，绿色表示实例分割模型。
+
+参考：
+
+https://mp.weixin.qq.com/s/w7pYxm52QbcFPRBe12iMdA
+
+纽约大学发布“深度学习图像分割”最新综述论文，带你全面了解100个10大类深度图像分割算法
+
+https://zhuanlan.zhihu.com/p/22308032
+
+图像语义分割之FCN和CRF
+
+https://zhuanlan.zhihu.com/p/25515361
+
+图像语义分割之特征整合和结构预测
+
+https://zhuanlan.zhihu.com/p/27794982
+
+语义分割中的深度学习方法全解：从FCN、SegNet到各代DeepLab
+
+https://mp.weixin.qq.com/s/mQqEe4LC0VHBH2ZAtFanWQ
+
+基于深度学习的图像语义分割方法回顾
+
+https://mp.weixin.qq.com/s/9G3kahaoOSoB-DiGey1VLA
+
+基于深度学习的图像语义分割算法综述
+
+https://mp.weixin.qq.com/s/jCv259hI0vl7st80Obfrcg
+
+图像语义分割的工作原理和CNN架构变迁
+
+https://mp.weixin.qq.com/s/KcVKKsAyz-eVsyWR0Y812A
+
+分割算法——可以分割一切目标
+
+https://mp.weixin.qq.com/s/JbdwtpA3iRXReyerO4HYIg
+
+一文了解什么是语义分割及常用的语义分割方法有哪些
+
+https://mp.weixin.qq.com/s/MFNKDNTrF-8VuKrwcsTDLw
+
+纵览图像语义分割发展史，11篇关键文章简介
+
 # FCN
 
-Fully Convolutional Networks是Jonathan Long和Evan Shelhamer于2015年提出的网络结构。
+深度学习最初流行的分割方法是，打补丁式的分类方法 (patch classification) 。逐像素地抽取周围像素对中心像素进行分类。由于当时的卷积网络末端都使用全连接层 (full connected layers) ，所以只能使用这种逐像素的分割方法。
+
+Fully Convolutional Networks是Jonathan Long和Evan Shelhamer于2014年提出的网络结构。
 
 论文：
 

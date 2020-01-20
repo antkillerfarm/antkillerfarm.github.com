@@ -221,3 +221,7 @@ https://mp.weixin.qq.com/s/q9qKVpjluzp8OS2GFpZC6g
 https://mp.weixin.qq.com/s/yCu5Xx6peDKyU06yBlixpA
 
 首个实时单目3D目标检测算法：RTM3D
+
+https://zhuanlan.zhihu.com/p/102817180
+
+目标检测比赛中的trick

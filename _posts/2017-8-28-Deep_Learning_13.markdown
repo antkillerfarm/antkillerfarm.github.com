@@ -224,6 +224,10 @@ https://mp.weixin.qq.com/s/5ba3EM6e9R-i3UpzUhm49w
 
 神经信息检索导论，微软研究员129页最新书册
 
+https://mp.weixin.qq.com/s/jZCHyjhTW9JHW3xQSTzyYA
+
+深度学习搜索，Deep Learning for Search，327页pdf
+
 https://mp.weixin.qq.com/s/aZsj1FQnzHOr-YBcy_ljpw
 
 DNN在搜索场景中的应用
