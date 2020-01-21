@@ -380,6 +380,10 @@ https://zhuanlan.zhihu.com/p/75307407
 
 图神经网络（Graph Neural Networks，GNN）综述
 
+https://blog.csdn.net/yorkhunter/article/details/104056795
+
+综述论文“A Comprehensive Survey on Graph Neural Networks”
+
 https://mp.weixin.qq.com/s/rTnv7XOnIvRDGDdhbuoE9g
 
 深度图相似学习综述

@@ -6,6 +6,20 @@ category: GAN & VAE
 
 # StarGAN（续）
 
+StarGAN给出的办法是：所有的Domain共享一个G网络。如上图右半部分所示。
+
+具体的操作如下图所示：
+
+![](/images/img3/StarGAN_2.png)
+
+1.D网络除了常规的Real/Fake判别器之外，还有一个Domain分类器。
+
+2.G网络的结构和CycleGAN类似，也包括了两部分：$$G_{X\to Y}$$和$$G_{Y\to X}。区别在于：后者的两个G网络是不同的网络，而前者是同一个网络。
+
+3.既然G网络只有一个，那么如何完成Domain变换呢？答案就是：把目标Domain的信息也输进G网络中。
+
+![](/images/img3/StarGAN_3.png)
+
 StarGAN不仅可在同一数据集中进行Domain变换，还可在不同数据集之间进行Domain变换。上图展示的是StarGAN在CelebA和RaFD数据集上的训练过程：
 
 1.两个数据集的标签不是完全相同的。（实际上是完全不同，囧）
@@ -321,23 +335,3 @@ https://mp.weixin.qq.com/s/8aL7COItG7lS4q5-3IZCmQ
 https://mp.weixin.qq.com/s/9t0GvQW-cmakM0E9dWxBcg
 
 旧照片着色修复神器！自注意力GAN效果惊艳
-
-https://mp.weixin.qq.com/s/cUFQ6EADa39h2eFoa_Dh0A
-
-最高76%破解成功率！GAN已经能造出“万能指纹”，你的手机还安全吗？
-
-https://mp.weixin.qq.com/s/_tABIMkWX8L5xQFmvPI7rw
-
-有效稳定对抗模型训练过程，伯克利提出变分判别器瓶颈
-
-https://zhuanlan.zhihu.com/p/50790727
-
-SeqGAN: Sequence GAN with Policy Gradient
-
-https://mp.weixin.qq.com/s/bH5yYbwq6NGQJ84xUDhoxg
-
-生成对抗网络在图像翻译上的应用
-
-https://mp.weixin.qq.com/s/3Gsmrl4HbcnXpje0nyAq2w
-
-中国西北大学和北京大学的研究结果是否将终结CAPTCHA验证码时代？

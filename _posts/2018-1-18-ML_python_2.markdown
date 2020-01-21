@@ -40,6 +40,14 @@ https://mp.weixin.qq.com/s/zdGOyD9wdgT3NGlH5ttADQ
 
 pandas数据导入与导出
 
+https://mp.weixin.qq.com/s/oZkPkzUfM4IT9SdKmDL8VQ
+
+一场pandas与SQL的巅峰大战
+
+https://mp.weixin.qq.com/s/-DbRgjgbzqit-XoG-mIntQ
+
+一场pandas与SQL的巅峰大战（二）
+
 ## 并行Pandas
 
 https://mp.weixin.qq.com/s/2-Ayzmzo8tydDLoKpz1Ezw
@@ -314,6 +322,12 @@ Bokeh是一个数据可视化的库。它不仅提供了和Matplotlib类似的�
 
 http://bokeh.pydata.org/en/latest/
 
+参考：
+
+https://mp.weixin.qq.com/s/R6NclZO1MqjScRlLJ6Vefw
+
+Python地图可视化三大秘密武器（bokeh、basemap、geopandas）
+
 ## Chartify
 
 Chartify在Bokeh的基础上又封装了一层，提供了更友好的API。
@@ -379,6 +393,10 @@ PyEcharts
 https://mp.weixin.qq.com/s/6rusBFuLGw4gpDt6tSQTIw
 
 PyEcharts TreeMap
+
+https://mp.weixin.qq.com/s/6LhoraTo2cLtLJaXbKpt-A
+
+教你用pyecharts制作交互式桑基图，赶快学起来吧！
 
 ## Yellowbrick
 
@@ -481,29 +499,3 @@ https://github.com/minimaxir/stylecloud
 https://mp.weixin.qq.com/s/tHNd6y2v7GXN2mSIv0qXlg
 
 手把手：一张图看清编程语言发展史，你也能用Python画出来！
-
-https://mp.weixin.qq.com/s/7M_xbmDQIlSEB1TKN3fbQw
-
-4种更快更简单实现Python数据可视化的方法
-
-https://mp.weixin.qq.com/s/wsa-HxJRCzhBF8E6yrLCQg
-
-如何用Python画一个中国地图？
-
-https://mp.weixin.qq.com/s/c7Sry6FaGv3ZgkKLekxc2g
-
-用Python画中国地图（下）
-
-https://mp.weixin.qq.com/s/ty5xy6s0z3rvMYZptdTdBQ
-
-Python热图进阶
-
-## 参考
-
-https://mp.weixin.qq.com/s/S7gnAdekPFcyd4ni1m9phg
-
-GitHub最著名的20个Python机器学习项目，值得收藏！
-
-http://old.sebug.net/paper/books/scipydoc/index.html
-
-用Python做科学计算

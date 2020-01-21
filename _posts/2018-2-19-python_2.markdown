@@ -208,6 +208,10 @@ https://www.zhihu.com/question/20125256
 
 Lambda表达式有何用处？如何使用？
 
+https://mp.weixin.qq.com/s/sBKosZTns_qePiKIYbCd1w
+
+一文搞懂Python匿名函数
+
 ## defaultdict()和namedtuple()
 
 defaultdict()和namedtuple()是collections模块里面2个很实用的扩展类型。

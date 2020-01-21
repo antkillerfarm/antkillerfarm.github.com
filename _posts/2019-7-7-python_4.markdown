@@ -115,6 +115,10 @@ https://www.cnblogs.com/kaituorensheng/p/4452881.html
 
 Cython学习
 
+https://mp.weixin.qq.com/s/_fi4fpfN8Whe7_ZpkPL0tA
+
+怎么给Python写C扩展？
+
 ## Pythran
 
 Pythran是一个将python翻译成C++的库，而Cython和SWIG则是对C++进行python封装。
@@ -304,6 +308,30 @@ https://mp.weixin.qq.com/s/20F0ieUjJSZp7yI7ymeJ5Q
 
 试试在终端模拟下雪的效果呗？
 
+## 多线程 & 同步
+
+http://www.cnblogs.com/Python666/p/7506546.html
+
+Python单例模式
+
+https://mp.weixin.qq.com/s/tJsdM-4q_RC-5AhTw3y49w
+
+schedule使用进阶
+
+## excel
+
+https://mp.weixin.qq.com/s/lEtE3ejBLzmm9_eo-_8NBg
+
+处理大型Excel文件，用Python就对了！
+
+https://mp.weixin.qq.com/s/GjG1Rc-HtLRkrNXY1pcp2Q
+
+xlwings，让excel飞起来！
+
+https://mp.weixin.qq.com/s/6M7aiXgcne9cbHffqpm_Lw
+
+n种方式教你用python读写excel等数据文件
+
 ## 参考
 
 https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA
@@ -362,10 +390,6 @@ https://mp.weixin.qq.com/s/W1j4G_QQqlzDYru231dZFA
 
 Python：编写条件分支代码的技巧
 
-http://www.cnblogs.com/Python666/p/7506546.html
-
-Python单例模式
-
 https://mp.weixin.qq.com/s/ST7TQ5Wkn_owv5bpTiTKVA
 
 2018年最好用的5个python网站开发框架
@@ -389,10 +413,6 @@ https://mp.weixin.qq.com/s/_ZvF6jK5Jo4rFGwHvEoAig
 https://mp.weixin.qq.com/s/RdnAQPAn9E8qDvtnCEgcKw
 
 Tkinter可视化窗口
-
-https://mp.weixin.qq.com/s/_fi4fpfN8Whe7_ZpkPL0tA
-
-怎么给Python写C扩展？
 
 https://mp.weixin.qq.com/s/-erFsz8NvLZ5mOIXyDosFg
 
@@ -441,23 +461,3 @@ https://mp.weixin.qq.com/s/EZh5PAUgXkIDzGbim6wqLQ
 https://mp.weixin.qq.com/s/SUyRNz_M7B6bcdV7-YxlZQ
 
 Python制作一款简易音乐播放器
-
-https://mp.weixin.qq.com/s/d2_MTvfbOFZmppej5UOwUw
-
-关于使用Python析构函数的正确姿势
-
-https://mp.weixin.qq.com/s/weEZEr4g8pI11Gijc-St0Q
-
-DeBug Python代码全靠print函数？换用这个一天2K+Star的工具吧
-
-https://mp.weixin.qq.com/s/wr18ylCJyJOX83BhbvGXng
-
-13个Python开发者必知的Python GUI库
-
-https://mp.weixin.qq.com/s/S_mIspLOrmj8ny0VHP52ZA
-
-Python高级技巧：lazy property
-
-https://mp.weixin.qq.com/s/06-iOG5TkRkHb4RZl1bXNQ
-
-史上最全Python迭代器与生成器

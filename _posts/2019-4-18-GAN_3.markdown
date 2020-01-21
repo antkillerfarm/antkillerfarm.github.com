@@ -6,7 +6,21 @@ category: GAN & VAE
 
 # GAN进阶
 
-## GAN的理论解释（续）
+## GAN的理论解释
+
+顾险峰教授对GAN提出了自己的理论解释。
+
+>顾险峰，1989年考入清华大学计算机科学与技术系。1992年获得清华大学特等奖学金。后于美国哈佛大学获得计算机博士学位，师从国际著名微分几何大师丘成桐先生。目前为美国纽约州立大学石溪分校计算机系终身教授。
+
+参考：
+
+https://mp.weixin.qq.com/s/7O0AKIUVYK7HRyvdRbUVkg
+
+虚构的对抗，GAN with the wind
+
+https://mp.weixin.qq.com/s/trvMOTXNs7L6fSmTkZXwsA
+
+看穿机器学习（W-GAN模型）的黑箱
 
 https://mp.weixin.qq.com/s/thcxsBVttSIEzVNLQlAVCA
 
@@ -249,15 +263,3 @@ AutoEncoder包含两个部分：
 **2.Decoder。**将tensor解码为图片。
 
 对于原始的GAN来说，G网络和Decoder的结构类似，而D网络和Encoder的结构类似。所以整个网络D(G(z))就像是一个反着接的AutoEncoder。
-
-AutoEncoder：Encoder->Decoder
-
-GAN：Decoder->Encoder
-
-对于生成模型来说，细节是很重要的，然而原始的GAN，通常只能生成模糊的图片。如何提高图片的分辨率呢？
-
-EBGAN将D网络的结构由Encoder改为了Encoder->Decoder（也就是一个AE），即输入和输出都是图片。将Loss由KL散度改为了MSE。
-
-这样的做法可以类比CV中的分类网络和语义分割网络。由于Loss和图片的每个像素都直接相关，因此更利于生成细节信息。
-
-类似的，这里的AE，也可以换成其他Encoder->Decoder网络，例如U-NET。

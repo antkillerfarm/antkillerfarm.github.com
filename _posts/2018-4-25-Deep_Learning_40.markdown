@@ -14,6 +14,10 @@ https://github.com/gjy3035/Awesome-Crowd-Counting
 
 人群计数最全代码、数据、论文合集
 
+https://zhuanlan.zhihu.com/c_1111215695622352896
+
+一个人群计数方面的专栏
+
 https://mp.weixin.qq.com/s/ZmX_ir1pSUZbCaFpbcQ6Lw
 
 一文读懂行人检测算法

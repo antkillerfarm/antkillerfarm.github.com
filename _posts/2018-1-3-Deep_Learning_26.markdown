@@ -10,6 +10,8 @@ category: DL
 
 光学字符识别（Optical Character Recognition, OCR），是指对文本资料的图像文件进行分析识别处理，获取文字及版面信息的过程。
 
+与之类似的还有手写文本识别（Handwritten Text Recognition, HTR）。
+
 华中科大白翔教授的实验室算是目前国内OCR做的比较好的了。
 
 白翔的个人主页：
@@ -171,6 +173,10 @@ https://mp.weixin.qq.com/s/VIEsfc4qKAGsi-O9LD4mng
 https://blog.csdn.net/linolzhang/article/details/82780071
 
 OCR文字识别
+
+https://mp.weixin.qq.com/s/TDlxB6F8wwkcTgqPuWJQPw
+
+如何构建识别图像中字符的自动程序？一文解读OCR与HTR
 
 https://www.cnblogs.com/skyfsm/category/1123384.html
 

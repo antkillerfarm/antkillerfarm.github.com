@@ -303,3 +303,7 @@ https://mp.weixin.qq.com/s/jjbiUkmJ71rM9BYs5yKFSA
 https://mp.weixin.qq.com/s/38d90XC2DjMHRoWnKEeVIw
 
 基于图像查询的视频检索
+
+https://mp.weixin.qq.com/s/fDaZ2HU7W6LnIY_8n-Zg_A
+
+视频版权检测算法​​

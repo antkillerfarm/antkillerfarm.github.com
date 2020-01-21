@@ -327,6 +327,26 @@ https://mp.weixin.qq.com/s/FJX9eeRkxS5nJ4XIhRVwkg
 
 # GAN参考资源+
 
+https://mp.weixin.qq.com/s/cUFQ6EADa39h2eFoa_Dh0A
+
+最高76%破解成功率！GAN已经能造出“万能指纹”，你的手机还安全吗？
+
+https://mp.weixin.qq.com/s/_tABIMkWX8L5xQFmvPI7rw
+
+有效稳定对抗模型训练过程，伯克利提出变分判别器瓶颈
+
+https://zhuanlan.zhihu.com/p/50790727
+
+SeqGAN: Sequence GAN with Policy Gradient
+
+https://mp.weixin.qq.com/s/bH5yYbwq6NGQJ84xUDhoxg
+
+生成对抗网络在图像翻译上的应用
+
+https://mp.weixin.qq.com/s/3Gsmrl4HbcnXpje0nyAq2w
+
+中国西北大学和北京大学的研究结果是否将终结CAPTCHA验证码时代？
+
 https://zhuanlan.zhihu.com/p/53260242
 
 抛开复杂证明，我们从直觉上理解W-GAN为啥这么好训

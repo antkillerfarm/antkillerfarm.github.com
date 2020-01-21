@@ -306,6 +306,10 @@ https://mp.weixin.qq.com/s/LbMblqRWeitShSUsnebDAg
 
 基于GNN的图表示学习
 
+https://mp.weixin.qq.com/s/eg_H0D8m0LdVBJixsc-dNA
+
+张量图卷积网络(TensorGCN)文本分类
+
 # 视频处理+
 
 https://mp.weixin.qq.com/s/vuhoK4cVaHDn6oTuGqX_Eg

@@ -6,6 +6,34 @@ category: AI
 
 # Machine Learning之Python篇
 
+## 可视化（续）
+
+https://mp.weixin.qq.com/s/7M_xbmDQIlSEB1TKN3fbQw
+
+4种更快更简单实现Python数据可视化的方法
+
+https://mp.weixin.qq.com/s/wsa-HxJRCzhBF8E6yrLCQg
+
+如何用Python画一个中国地图？
+
+https://mp.weixin.qq.com/s/c7Sry6FaGv3ZgkKLekxc2g
+
+用Python画中国地图（下）
+
+https://mp.weixin.qq.com/s/ty5xy6s0z3rvMYZptdTdBQ
+
+Python热图进阶
+
+## 参考
+
+https://mp.weixin.qq.com/s/S7gnAdekPFcyd4ni1m9phg
+
+GitHub最著名的20个Python机器学习项目，值得收藏！
+
+http://old.sebug.net/paper/books/scipydoc/index.html
+
+用Python做科学计算
+
 https://pan.baidu.com/s/1qYPUHNQ
 
 小抄合集
@@ -389,35 +417,3 @@ Python代码和贝叶斯理论告诉你，谁是最好的棒球选手
 https://mp.weixin.qq.com/s/NIOLuK8-ctvncglmpIOEhQ
 
 用Python入门不明觉厉的马尔可夫链蒙特卡罗
-
-https://mp.weixin.qq.com/s/6x5Wmpy4Im0x3Ddua9rvFw
-
-用python怎样识别验证码？传统方法，非DL
-
-https://mp.weixin.qq.com/s/wD1BwpcVbzAJQqiWr1JueQ
-
-用Scikit-Learn构建K-近邻算法，分类MNIST数据集
-
-https://mp.weixin.qq.com/s/fb9LyEdMsfUBR6ctc1gdXA
-
-Python模拟太阳-地球-月亮运动模型
-
-https://mp.weixin.qq.com/s/VmLphhs8rGabdNXtvllgdQ
-
-教你用Python实现简单监督学习算法
-
-https://mp.weixin.qq.com/s/TglQzG1iE0keEGLKZ-pGIg
-
-Python数据处理实战——使用Scikit-Learn进行多类文本分类
-
-https://mp.weixin.qq.com/s/WdYa7Q-yA-s_EO59YkYbqw
-
-7个基本机器学习算法Python实现
-
-https://mp.weixin.qq.com/s/EqLzNzzMcwq5SEyBoTsuug
-
-11种NLP文本预处理Python代码，简洁实用
-
-https://mp.weixin.qq.com/s/mCUdK4i6XGEyaWNCIWA-wQ
-
-集五福，我用Python

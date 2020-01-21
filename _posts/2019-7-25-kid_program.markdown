@@ -102,6 +102,10 @@ https://www.codewar.cn/
 
 CodeCombat是一个让学生通过玩游戏学习计算机科学的平台
 
+https://mp.weixin.qq.com/s/TLnUMECwumg-xA48b1bOIg
+
+这三款超好评编程游戏，好玩到停不下来
+
 # Go
 
 官网：

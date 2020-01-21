@@ -306,7 +306,7 @@ https://mp.weixin.qq.com/s/Mdq9fL10Zcjs_z3PeqtN9Q
 
 腾讯AI单挑碾压王者荣耀职业玩家：人类15场只能赢1局，坚持不到8分钟
 
-# Machine Learning之Python篇+
+# Machine Learning之Python篇
 
 https://mp.weixin.qq.com/s/Ljo36772QTUDKuRrxIRmmw
 
@@ -327,15 +327,3 @@ https://mp.weixin.qq.com/s/ss9UlDU9lYokS-EDrPnOxQ
 https://mp.weixin.qq.com/s/tzyj0LaJ2Ccv730UhJBdig
 
 拿起Python，防御特朗普的Twitter！
-
-https://mp.weixin.qq.com/s/tARJdv_ybTmVigTXPoeuYw
-
-还在用Matplotlib? 又一可视化神器Altair登场
-
-https://mp.weixin.qq.com/s/wwhjwQyM2r0F-hOIWV35pg
-
-Python数据科学手册专题：线性回归
-
-https://mp.weixin.qq.com/s/VZlrWwbU0nJIlSVa9PgMBQ
-
-在Python中简洁使用CSV、JSON、XML

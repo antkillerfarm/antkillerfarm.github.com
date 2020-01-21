@@ -6,6 +6,18 @@ category: GAN & VAE
 
 # EBGAN & BEGAN（续）
 
+AutoEncoder：Encoder->Decoder
+
+GAN：Decoder->Encoder
+
+对于生成模型来说，细节是很重要的，然而原始的GAN，通常只能生成模糊的图片。如何提高图片的分辨率呢？
+
+EBGAN将D网络的结构由Encoder改为了Encoder->Decoder（也就是一个AE），即输入和输出都是图片。将Loss由KL散度改为了MSE。
+
+这样的做法可以类比CV中的分类网络和语义分割网络。由于Loss和图片的每个像素都直接相关，因此更利于生成细节信息。
+
+类似的，这里的AE，也可以换成其他Encoder->Decoder网络，例如U-NET。
+
 EBGAN的最大特点就是判别器一开始就非常强(因为有pretrain)，因此生成器在一开始就能获得比较大的“能量驱动”(energy based)，使得在一开始生成器就进步非常快。所以如果我们比较看中训练效率，希望在短期内获得一个比较不错的生成器的话，就可以考虑EBGAN。
 
 BEGAN则借鉴了EBGAN和WGAN各自的一些优点。
@@ -277,17 +289,3 @@ CycleGAN之美：赛马翻译成斑马背后的直觉和数学
 ![](/images/img3/StarGAN.png)
 
 CycleGAN的局限在于：对于两个Domain之间的变换，需要两个G网络。可以想象，当Domain的数量上升时，所需G网络的个数将呈指数级增长。如上图左半部分所示。
-
-StarGAN给出的办法是：所有的Domain共享一个G网络。如上图右半部分所示。
-
-具体的操作如下图所示：
-
-![](/images/img3/StarGAN_2.png)
-
-1.D网络除了常规的Real/Fake判别器之外，还有一个Domain分类器。
-
-2.G网络的结构和CycleGAN类似，也包括了两部分：$$G_{X\to Y}$$和$$G_{Y\to X}。区别在于：后者的两个G网络是不同的网络，而前者是同一个网络。
-
-3.既然G网络只有一个，那么如何完成Domain变换呢？答案就是：把目标Domain的信息也输进G网络中。
-
-![](/images/img3/StarGAN_3.png)
