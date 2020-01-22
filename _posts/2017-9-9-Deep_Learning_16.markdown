@@ -236,6 +236,10 @@ https://zhuanlan.zhihu.com/p/96718053
 
 从VLAD到NetVLAD，再到NeXtVlad
 
+https://mp.weixin.qq.com/s/HkaG9KeJ5w6FqZmo15n9JA
+
+短视频潜力预测及其在微视推荐冷启动中的应用
+
 # 人脸检测/识别
 
 ## Cascade CNN
