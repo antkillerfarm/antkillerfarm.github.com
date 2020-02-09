@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 埃塞俄比亚航空空难, 黑洞成像, 权力的游戏, 无问西东
+title: 埃塞俄比亚航空空难, 权力的游戏, 无问西东
 category: essay 
 ---
 
@@ -58,154 +58,6 @@ https://mp.weixin.qq.com/s/qwUYFvLlbbIvR-9-TeXJsw
 
 特鲁多证实：飞机是被伊朗导弹打下来的！誓言为63名加拿大人讨回公道！
 
-# 黑洞成像
-
-## 黑洞照片
-
-![](/images/img2/Black_hole_-_Messier_87.jpg)
-
-2019.4.10，EHT发布了人类第一张黑洞照片。拍摄日期：2017.4.11。拍摄对象：Messier 87星系的超大质量黑洞（$$3.5\times 10^9 M_{\odot} \sim 6.6 \times 10^9 M_{\odot}$$）
-
-![](/images/img2/BH-illum1.jpg)
-
-![](/images/img2/BH-illumin2.jpg)
-
-![](/images/img2/BH-illumin3.jpg)
-
-![](/images/img2/BH-illumin4.jpg)
-
-https://www.zhihu.com/question/319589547
-
-如何评价人类的第一张黑洞照片？
-
-https://blogs.futura-sciences.com/e-luminet/tag/black-hole/
-
-一个关于Black Hole Imaging的系列blog
-
-https://mp.weixin.qq.com/s/GTHiZZ0ox8GsYKseYfDiRw
-
-科学界大事要来，世界首张黑洞照片即将公布！
-
-https://mp.weixin.qq.com/s/zNs4NikZ912R3V1ZT2DcTg
-
-黑洞---像极了爱情！
-
-## EHT
-
-![](/images/img2/Event_horizon_telescope_logo_2019.png)
-
-如它的logo所示，Event Horizon Telescope是一个多地联合的天文观测组织。和它类似的组织还有（The Global mm-VLBI Array, GMVA）。两个阵营的差别在于GMVA观测波长为3毫米，而EHT在1.3毫米。
-
-![](/images/img2/The_Event_Horizon_Telescope_and_Global_mm-VLBI_Array_on_the_Earth.jpg)
-
-EHT（蓝绿线）与GMVA（黄线）之望远镜阵列分布。其中ALMA和IRAM同时属于两个阵营。
-
-## ALMA
-
-Atacama Large Millimeter/submillimeter Array是EHT计划的主力天文台。由欧洲南方天文台(European Southern Observatory, ESO)和美国国家射电天文台（National Radio Astronomy Observatory, NRAO）共同负责。
-
-1962年10月5日，德国、法国、比利时、荷兰、瑞典五国在巴黎签署了一份协议，决定共同在南半球建立天文台，并命名为欧洲南方天文台。1960年代中期，ESO考察了智利北部的阿塔卡玛沙漠，最终选定这里作为台址。这里是地球上气候最干燥的地区之一，海拔高，非常适合毫米波天文观测。
-
-![](/images/img2/ALMA.jpg)
-
-66座ALMA天线可用不同的配置法排成阵列，天线间的距离变化多样，最短可以是150米，最长可以到16公里。
-
-图中貌似还乱入了红警的基地车。没错，所有的天线都是可移动的。
-
-![](/images/img2/ALMA_2.jpg)
-
-这是基地车的正面图。
-
-## Katie Bouman
-
-![](/images/img2/Katie_Bouman.jpg)
-
-Katherine Louise Bouman，1990年生，University of Michigan本科（2011）+MIT博士（2017）。EHT计划的成像团队的负责人。
-
-![](/images/img2/Katie_Bouman.png)
-
-上图是Katie和装有黑洞成像数据的半吨重硬盘的合影。
-
-论文：
-
-《Computational Imaging for VLBI Image Reconstruction》
-
-代码：
-
-https://github.com/achael/eht-imaging
-
-个人主页：
-
-https://people.csail.mit.edu/klbouman/
-
-Margaret Heafield Hamilton，1936年生，美国计算机科学家。发明了“software engineering”一词。在MIT期间，负责领导了Apollo计划的飞行软件的设计工作。
-
-![](/images/img2/Margaret_Hamilton.jpg)
-
-上图是1969年Margaret和她的小组所编写的软件代码的合影。
-
-Hedy Lamarr，1913～2000，美国好莱坞默片时期著名女演员，生于奥地利一个富裕的犹太人银行家庭。她曾与克拉克·盖博等顶级男星合作，主演了多部热门影片。19岁时在电影《神魂颠倒》中裸泳成为世界电影史上第一位裸体出镜的女演员。一生曾有过八次婚姻。
-
-她曾被认为是全欧最美的女人，并因美貌盖过了演技而被人称为花瓶。有意思的是，她其实数学和通信功底很深，是现代无线通信的核心专利跳频技术的第一发明者，CDMA、WiFi 等技术都以此为基础。美国电话局主席安东尼·罗德（Anthony Loder）对她的评价所说：“虽然 Hedy Lamarr 已经被大家遗忘了，但她所做出的一切仍然影响着一代又一代的人。”
-
-参考：
-
-https://mp.weixin.qq.com/s/sIPKApVO-2OYlMKuSl1ZKg
-
-黑洞成像背后的算法
-
-https://mp.weixin.qq.com/s/xPAJ00EImF4mnv79aeVltg
-
-浅析黑洞成像背后的稀疏重构算法原理
-
-https://mp.weixin.qq.com/s/Jmm-dJ84IYhaVFv9OW1WoQ
-
-人类首张黑洞照片幕后英雄：29岁女算法工程师
-
-https://mp.weixin.qq.com/s/dAAjBL3P0FAZQqvWT5CoVw
-
-心酸科研路：3年前CVPR论文，仅被引用11次，如今成就黑洞照片！
-
-https://mp.weixin.qq.com/s/BoF3-GGCFSr7MhVjJ1Erbg
-
-反转？MIT女博士遭质疑：代码贡献太少，黑洞照片功臣另有其人
-
-https://mp.weixin.qq.com/s/VdZLGE3DU80Ycid1ePIR6w
-
-DIY发现新行星操作指南：谷歌开源了行星发现代码
-
-## 视觉中国
-
-2016年getty image侵权销售Carol Highsmith捐献给美国国会图书馆的公有领域作品被起诉。为什么被抓到呢，getty image的代理发律师信要求作者本人停止使用自己的作品……
-
-https://www.zhihu.com/question/319641115
-
-如何看待视觉中国获得人类首张黑洞照片版权，该行为有无法律依据，是否会追究转载者侵权责任？
-
-## 黑洞之王
-
-2019.11.28 国际学术期刊《自然》在线发布了我国天文学家主导的一项重大发现：
-
-中国科学院国家天文台研究员刘继峰、张昊彤领导的研究团队发现了一颗迄今为止最大质量的恒星级黑洞。
-
-https://mp.weixin.qq.com/s/aN8Pr3UG4OamzeZQXW5tiQ
-
-围猎“黑洞之王”
-
-https://mp.weixin.qq.com/s/A19GrpLGzw98tmz_Ve9eLw
-
-迄今最大质量的恒星级黑洞被发现，考点全在这了
-
-## 其他
-
-https://mp.weixin.qq.com/s/L1BCaXeNmlZ2s6GjCCap_w
-
-技术详解“中国天眼”：世界上最大的单口径射电望远镜FAST
-
-https://mp.weixin.qq.com/s/bGWlOG4BEJ4wZvlhry2vMg
-
-小行星命名背后，为啥是这颗叫“南仁东星”
-
 # 权力的游戏
 
 https://www.sohu.com/a/307973443_157078
@@ -261,3 +113,197 @@ https://mp.weixin.qq.com/s/yfeQPMQfr40N3bOOOhdACQ
 “在这个时候，我们二十多岁的青年男子即不能保家卫国，最低限度不可能要求别人来保卫我们。在这个时候还要求学校担保我们生命的安全是我们的大羞耻。难道这点丈夫气都没有了。这点丈夫气都没有的人保全了生命有什么好处？将来为国家服务那一套话我们还有脸说得出来么？”
 
 一直到1943年，国民政府号召知识分子从军，在战争中成长起来的新一代的学生们因为饱受日本侵略所带来的痛苦，懂得**保家卫国不是一句口号，而是要和敌人真刀真枪地战斗**，因而踊跃参军，知识分子空谈爱国的现象这才得以消失。
+
+----
+
+1937年卢沟桥事变的爆发后不到一年时间内，中国108所高校当中有91所遭到战争破坏，25所被迫暂时停办。
+
+于是，当时国民政府紧急要求大学搬迁。国立北平大学、国立北洋工学院和国立北平师范的大学，选择向西内迁，组建西安临时大学。
+
+到了1938年，西安临时大学正式改名国立西北联合大学，就在前一天，长沙临时大学改名国立西南联合大学。
+
+两校相当的不止有校名，还有实力。相比小而精的西南联大，西北联大走的是大而全的路线，文、理、工、农、医，哪个学科都有。要说当时西南西北两个联大齐名，是不过分的。
+
+这么有名，怎么没听过这个学校？因为西北联大仅仅存在了一年零四个月，就被分批拆成了西北大学、西北工学院、西北医学院、西北农学院、西北师范学院等五所国立大学。
+
+不过，西北联大的存在的时间虽然短暂，但是留下了实实在在的遗产。名声更大的西南联大，虽然留下了一段传说，但随着抗战结束，组成西南联大的三所名校各自回迁，西南的高等教育就重归沉寂。西南联大的所在地云南，到现在仍然只有一所211高校。
+
+反观西北联大就实惠多了，西北联合大学分拆出的五所高校，大部分都留在了当地。它播下的这五颗种子，真正的扎根西北，成了日后西安诸多名高校的本源。
+
+# 世说新语
+
+## 2019.6（续）
+
+https://mp.weixin.qq.com/s/x9N6rhGJPuyWdcYybD8S1A?
+
+1997-2019年全球最有价值公司变化
+
+----
+
+![](/images/img3/jiang_qi.jpg)
+
+大局将棋，是江户时代出现的一种棋盘大小为36×36的将棋，是规模最大的日本将棋，其棋子数量达到了804枚（双方各402枚），棋子种类复杂，步法各不相同。
+
+https://baike.baidu.com/item/%E5%A4%A7%E5%B1%80%E5%B0%86%E6%A3%8B
+
+大局将棋
+
+----
+
+https://uboat.net/boats/finder.php
+
+一个关于德国U型潜艇的网站。
+
+----
+
+https://www.zhihu.com/question/36509150/answer/67878788
+
+为什么10年前的《指环王》三部曲，现在依然能秒杀市场上绝大多数电影制作？
+
+----
+
+央视的军事·农业频道，被网友们亲切地称为“耕战频道”，并由此衍生“外国间谍看央视7套最后变成养猪专业户”的笑谈。
+
+----
+
+棋经有云，布局有三忌，炮忌轻发，马忌躁进，车忌迟开。
+
+----
+
+https://mp.weixin.qq.com/s/S0IJB1avA0GCxDZXeOJyfA
+
+这所学校只为一个学生开放，毕业典礼轰动全岛，“校霸”背后的故事却暖哭了所有人
+
+----
+
+https://media.weibo.cn/article?id=2309404385183922015915
+
+王莽爱改名
+
+----
+
+https://www.zhihu.com/question/271443445/answer/692061772
+
+学术圈修仙记
+
+## 2019.7
+
+https://mp.weixin.qq.com/s/L6VeZb79-8EU0NywtKd83w
+
+日韩科技战争简史：究竟谁是芯片、半导体、屏幕之王？
+
+----
+
+https://www.zhihu.com/question/30046079/answer/83892467
+
+如何理清五代十国的历史？
+
+----
+
+https://mp.weixin.qq.com/s/ZHIpG4TN-wyHtcD67s7Y8A
+
+毛遂自荐贴
+
+----
+
+在欧洲，Software as a science（软件即科学）
+
+在美国，Software as a business（软件即商业）
+
+在印度，Software as a service（软件即服务）
+
+在日本，Software as a production（软件即制造）
+
+在中国，Software as a 996（囧）
+
+----
+
+http://news.ifeng.com/history/phtv/tfzg/detail_2011_08/22/8584366_0.shtml
+
+新中国第一艘万吨轮为何首航驶往日本时沉没？
+
+----
+
+https://mp.weixin.qq.com/s/mBdZMaD7AmWzqm4WvhwBIA
+
+学生们打架斗殴、宿舍厕所男女公用，这个烂到学校都没法管的宿舍究竟是如何培养出诺奖得主的？
+
+----
+
+https://mp.weixin.qq.com/s/Di8OnthUmX7sA1pjaI8JJQ
+
+乒乓之盛与足球之殇
+
+----
+
+前几年有个家伙为了省一张动物园门票，跳下去被老虎咬死了。
+
+经济学家：一命换一票，太不值得。
+
+心理学家：老虎低自尊，容不得有人侵犯它的领地。
+
+吃瓜群众：已经是百兽之王了，却如此小肚鸡肠，非要把人逼死。 ​​
+
+----
+
+二战美国潜艇喜欢以鱼的名字命名。后来因为生产潜艇太多，海军负责命名的人员天天拿鱼类百科全书研究，战争结束时他们都几乎成研究鱼类的生物学家了。
+
+----
+
+https://mp.weixin.qq.com/s/cAgXbOUrBff78ahicxSwGQ
+
+俩博士相亲，第一反应是查对方发多少SCI，学傻了是一种怎样的体验？
+
+----
+
+https://mp.weixin.qq.com/s/s2NXopXQ8byVLISY0JXu4Q
+
+波音工程师沦为两年连抢30家银行的劫匪，他的堕落，源于一次手术...
+
+----
+
+科大黄秋原、同济沈海英、交大钱璐璐、复旦李敏、中科大陈璐，由于手段极其高级，所以现在被网友称为“学术圈妲己”。
+
+https://www.zhihu.com/question/336719951/answer/761750649
+
+学术圈五大蛊王吃瓜汇总
+
+----
+
+https://www.guancha.cn/ShiYang/2016_10_26_378389.shtml
+
+施洋：“辽宁号”会像“库兹涅佐夫”一样冒黑烟么
+
+----
+
+https://mp.weixin.qq.com/s/1XiBOeAluulMplfpEqQ2HQ
+
+20个上世纪绝版老物件，认出5个证明你老了
+
+----
+
+https://mp.weixin.qq.com/s/08stAzq0zVIxfawKJ1yBnQ
+
+日本凭什么如此“猖狂”盘点一下日本那些知名制造企业
+
+----
+
+https://mp.weixin.qq.com/s/w0CA3uqZj9llyCxhOU-xgw
+
+地球上十座最危险的毒物废城
+
+----
+
+https://www.zhihu.com/question/26380205
+
+FC 游戏《中国象棋》中，困难难度是真的在计算棋谱吗？
+
+----
+
+https://mp.weixin.qq.com/s/ECMZ284rDKnK6ypTOjPdVQ
+
+如果你早上睁眼，发现时间往后推移了10天……（格里高利历）
+
+----
+
+中国内战大抵靠武器，银元，主义，而银元不如武器，武器不如主义，我北洋只有武器，银元既少，主义全无，为过去之雄尔，而今南京国府有银元，有武器，略有主义，为当下之雄尔。吾观之十五年之后，有武器有坚定主义之共产少年恐为中国之雄尔。----by 北洋内政部长朱启钤（1931）

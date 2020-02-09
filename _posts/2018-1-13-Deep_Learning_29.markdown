@@ -32,7 +32,7 @@ https://mp.weixin.qq.com/s/LrGWJIdPdUNZ3jyC8tdE6w
 
 Graph Neural Network（GNN）综述
 
-https://mp.weixin.qq.com/s/CCoP1taU07k6McJsEUh63g
+https://zhuanlan.zhihu.com/p/75307407
 
 图神经网络（Graph Neural Networks，GNN）综述
 
@@ -47,6 +47,10 @@ https://mp.weixin.qq.com/s/Rr6SC-se_0q8dfEz0oUwlA
 https://mp.weixin.qq.com/s/b_QqUxFbQ70xmsxGMtoaDQ
 
 网络图模型知识点综述
+
+https://zhuanlan.zhihu.com/p/54505069
+
+图卷积网络(GCN)新手村完全指南
 
 https://mp.weixin.qq.com/s/yGwKK_pl5p9mg_KKFiQkSA
 
@@ -71,6 +75,10 @@ https://mp.weixin.qq.com/s/eA9a3478oxHd3zsepNVTpQ
 https://mp.weixin.qq.com/s/zDXlJtqDRW_Mm56gL4MLEw
 
 《图机器学习导论》附69页PPT
+
+https://mp.weixin.qq.com/s/AzJ_X2xpOTXmYN-GxzghzA
+
+图神经网络GNN模型与应用：305页ppt教程，密歇根州立大学
 
 ## DGL
 
@@ -228,9 +236,9 @@ https://mp.weixin.qq.com/s/Irs_fLrf4oybc3sAfpmEeA
 
 图嵌入（Graph embedding）综述
 
-https://zhuanlan.zhihu.com/p/75307407
+https://mp.weixin.qq.com/s/hyW3b7o4kRZN0oflMLYlTw
 
-图神经网络（Graph Neural Networks，GNN）综述
+图嵌入概述
 
 https://mp.weixin.qq.com/s/s6E2vV1KrQDI4SeAnkYTKw
 
@@ -375,10 +383,6 @@ https://zhuanlan.zhihu.com/p/34232818
 https://zhuanlan.zhihu.com/p/28170197
 
 《Gated Graph Sequence Neural Networks》阅读笔记
-
-https://zhuanlan.zhihu.com/p/75307407
-
-图神经网络（Graph Neural Networks，GNN）综述
 
 https://blog.csdn.net/yorkhunter/article/details/104056795
 

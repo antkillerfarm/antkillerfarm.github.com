@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Ubuntu使用技巧（三）, Mac OS X
+title:  Ubuntu使用技巧（三）, Mac OS X, 阴影面积, 辛普森悖论
 category: linux 
 ---
 
@@ -175,6 +175,46 @@ http://wuli.wiki//online/ITable.html
 http://wuli.wiki//online/
 
 小时物理百科
+
+# 辛普森悖论
+
+![](/images/img2/Simpson.png)
+
+如果分专业来看，你就会发现：在各个专业女生的录取率其实都是更高的。之所以会产生“总体录取率女生偏低”这一结果，是因为女生大部分都报考了那些本身就难以录取的学院，而男生则大部分报考了那些录取率本身就偏高的学院。
+
+参考：
+
+https://mp.weixin.qq.com/s/5jZ2dzLInLtUw7rWZF4mtg
+
+张忠元：渣男受女生欢迎？当心统计陷阱
+
+https://mp.weixin.qq.com/s/o1a2YlYritcOrsLN2YuLmA
+
+神奇的霍特林法则：为什么汉堡王总是开在麦当劳旁边？
+
+https://mp.weixin.qq.com/s/eq4MllJta5NmaLARPpvang
+
+公交车总迟到？你大概掉进了“等待时间悖论”
+
+https://zhuanlan.zhihu.com/p/43934918
+
+诡异的布雷斯悖论：为什么越是修新路，城市反而更堵了！
+
+https://mp.weixin.qq.com/s/-0VMucGBq4Trb_9FnsW6KQ
+
+10大反直觉的数学结论
+
+https://mp.weixin.qq.com/s/FqY19sTQd7GPdGSsB5L9eQ
+
+数学大反例合集
+
+https://mp.weixin.qq.com/s/EICefFM3dfv5A6V9kVqGWw
+
+吸烟致癌的迷思是如何破除的
+
+https://mp.weixin.qq.com/s/NlJ4-b5SjIjPGgvLUuSxFw
+
+孩子，有时候并不是生活欺骗了你，而是你可能还不懂概率统计……
 
 # Linux参考资源+
 

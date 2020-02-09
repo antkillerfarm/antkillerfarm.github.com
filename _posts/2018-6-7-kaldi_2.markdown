@@ -6,6 +6,20 @@ category: AI
 
 # ARPA文件格式（续）
 
+1-grams部分中每一条包括了3项，其中第二项显然是条目文本本身。
+
+第一项表示ngram的条件概率，即$$P(word_N \mid word_1，word_2，\dots，word_{N-1})$$。
+
+第三项表示回退（backoff）概率。
+
+下面我们举例说明条件概率和回退概率的用法。
+
+假设arpa的最高元是3元，则句子ABCDEF发生的概率为：
+
+$$P(ABCDEF)=P(A)*P(B\mid A)*P(C\mid AB)*P(D\mid BC)*P(E\mid CD)*(F\mid DE)$$
+
+其中，P(A)通过访问arpa中的1-grams项获得，$$P(B\mid A)$$通过访问2-grams项获得，其他的概率通过访问3-grams项获得。
+
 P(A)的计算直接找对应A的文法项获得概率即可。如果2-grams中存在“A B”项，$$P(B\mid A)$$的概率也很容易获得，但是如果“A B”词组在2-grams中不存在，我们就需要利用回退概率计算$$P(B\mid A)$$，计算公式为$$P(B\mid A)=\alpha(A)*P(B)$$，其中的$$\alpha(A)$$就表示A的回退概率。
 
 类似地，可以获得三元词组的概率计算公式：

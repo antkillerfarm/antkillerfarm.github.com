@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  爬虫, scrapy, Mysql
+title:  爬虫, scrapy, Mysql, UPNP（二）
 category: technology 
 ---
 
@@ -350,40 +350,38 @@ https://mp.weixin.qq.com/s/SCW_3AypO-rSolMcjCxVtA
 
 MySQL事务隔离级别和MVCC
 
-# 世说新语
+# UPNP（二）
 
-## 2019.12（续）
+## upnp-inspector
 
-1942年，在安徽，日军组织去突袭八路，日军指挥官很有想法，把日伪军队伍扮成娶亲的队伍，还弄了一个花轿。去偷袭八路，反被八路痛殴一顿。
+upnp-inspector是一个局域网内的UPNP协议的嗅探分析器。可充当DMC，推送多媒体数据到相关DLNA设备。安装方法如下：
 
-八路总结三点：
+`sudo apt-get install upnp-inspector`
 
-1. 雇得起花轿的都是有钱人，有钱人办喜事都是穿的花花绿绿，穿黑的黄的办喜事的没见过。
+upnp-inspector的功能包括：
 
-2. 娶亲队伍边上没有看热闹的小孩。
+1.列出局域网内的UPNP设备。
 
-3. 当下是秋收时节，都在农忙，谁家有空嫁女儿……
+2.列出UPNP设备所支持的UPNP服务。
 
-----
+3.列出UPNP服务所支持的函数，并可发送相关函数。（左键双击树状列表中的函数名即可）
 
-1945年6月，美国侦察机发来情报，日军正在撤退，建议国军趁胜追击，收复柳州。
+upnp-inspector是coherence的一部分。后者是一个Python语言写的DLNA框架。它的官网：
 
-国民党46军，为了抢头功，谎称已经收复了柳州（打个提前量？），于是美国航空队直挺挺的就降落在了柳州机场，下飞机集体懵逼了，直接落在日本人包围里，全成了俘虏，抗战结束才被释放。
+http://coherence-project.org/
 
-----
+upnp-inspector的代码地址：
 
-唐朝士人的理想是“中状元，娶五姓女”。所谓五姓，就是五姓七望，博陵崔、清河崔、范阳卢、陇西李、赵郡李、荥阳郑、太原王。
+https://github.com/coherence-project/UPnP-Inspector
 
-----
+## libmcupnp
 
-2019.12.17 山东号航空母舰入列。
+libmcupnp是一个基于libupnp的Control Point实现，用C++写的。从代码来看，明显参考了libupnp里的demo示例。
 
-![](/images/img3/Carrier.jpg)
+https://sourceforge.net/projects/libmcupnp/
 
-![](/images/img3/Carrier_2.jpg)
+## gupnp
 
-如果你有一艘航母，你就破坏了你所在地区的稳定。
+这是GNOME项目的upnp库，使用libsoup处理HTTP，libxml处理XML。它的官网是：
 
-如果你有两艘，你就会对全球秩序构成威胁。
-
-如果你有一打，你就是全球维和人员。
+https://wiki.gnome.org/Projects/GUPnP

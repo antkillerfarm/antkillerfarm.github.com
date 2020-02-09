@@ -232,3 +232,7 @@ https://zhuanlan.zhihu.com/p/55903495
 https://mp.weixin.qq.com/s/2teyejpbpM6x5UCiYL8s-Q
 
 关于时间序列你需要了解的一切
+
+https://mp.weixin.qq.com/s/Aqh9lZvyDncyCdXgxH1lSQ
+
+短小时序，如何预测？——基于特征重构的张量ARIMA

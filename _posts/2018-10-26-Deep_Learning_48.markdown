@@ -102,7 +102,7 @@ https://mp.weixin.qq.com/s/E20ucf5bfexKYH4R7zK-WA
 
 https://zhuanlan.zhihu.com/p/57530767
 
-U-Net系列网络简介
+图像分割的U-Net系列方法
 
 ### 3D U-Net
 

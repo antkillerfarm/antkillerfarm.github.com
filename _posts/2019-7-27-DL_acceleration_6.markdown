@@ -4,6 +4,28 @@ title:  深度加速（六）——知识蒸馏
 category: DL acceleration 
 ---
 
+# 模型压缩与加速（续）
+
+https://mp.weixin.qq.com/s/0_66CScEk0qhGlTvfpmqBA
+
+2019年的最后一个月，这里有6种你必须要知道的最新剪枝技术
+
+https://mp.weixin.qq.com/s/u94NZVwb_ywqjTMla2upbQ
+
+模型压缩究竟在做什么？我们真的需要模型压缩么？
+
+https://mp.weixin.qq.com/s/Qr2Q2ARht0pEP3F8l3k98g
+
+滴滴&东北大学提出自动结构化剪枝压缩算法框架，性能提升高达120倍
+
+https://mp.weixin.qq.com/s/MGR36sC581WuQ-2WMnf5vA
+
+深度压缩网络总结
+
+https://zhuanlan.zhihu.com/p/104447447
+
+剪枝实践：图像检索如何加速和省显存？
+
 # 知识蒸馏
 
 ## 基本概念
@@ -71,6 +93,12 @@ $$q_i = \frac{exp(z_i/T)}{\sum_j exp(z_j / T)}$$
 - 先训练一个teacher网络。
 
 - 然后使用这个teacher网络的输出和数据的真实标签去训练student网络。
+
+参考：
+
+https://www.zhihu.com/question/50519680
+
+如何理解soft target这一做法？
 
 ## KD的进化史
 

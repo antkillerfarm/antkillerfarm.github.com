@@ -152,6 +152,10 @@ https://mp.weixin.qq.com/s/H1diSCPZe6oTouufPY1JkA
 
 机组排班优化及悠桦林的实践
 
+https://mp.weixin.qq.com/s/_bEx-psbGgE4TiyBRuamQQ
+
+二维异形零件下料问题简介
+
 # 强连通分量算法
 
 http://ishare.iask.sina.com.cn/f/34626295.html
@@ -269,25 +273,3 @@ http://mp.weixin.qq.com/s/V-QCRXt5wAfSCiNT955W0A
 https://mp.weixin.qq.com/s/o_oRW5Ej9FmBq2L2Jz-brQ
 
 AIOps中异常检测的简单应用
-
-# Loss function详解+
-
-https://mp.weixin.qq.com/s/7cr6ptZucXzsZauItcZehw
-
-使用一个特别设计的损失来处理类别不均衡的数据集
-
-https://www.zhihu.com/question/264892967
-
-深度学习中loss和accuracy的关系?
-
-https://zhuanlan.zhihu.com/p/82199561
-
-深度度量学习中的损失函数
-
-https://mp.weixin.qq.com/s/CbORYhJQn27J0G4G6XpODw
-
-用于弱监督图像语义分割的新型损失函数
-
-https://mp.weixin.qq.com/s/Yo68YnMMvy5FXkCjBLCJuw
-
-常见的损失函数

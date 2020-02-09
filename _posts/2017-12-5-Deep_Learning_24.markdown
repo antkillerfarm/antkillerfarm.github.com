@@ -70,10 +70,6 @@ https://mp.weixin.qq.com/s/M18c3sgvjV2b2ksCsyOxbQ
 
 Nested LSTM：一种能处理更长期信息的新型LSTM扩展
 
-https://www.zhihu.com/question/62399257
-
-如何理解LSTM后接CRF？
-
 https://mp.weixin.qq.com/s/XAbzaMXP3QOret_vxqVF9A
 
 用深度学习LSTM炒股：对冲基金案例分析
@@ -253,6 +249,10 @@ https://zhuanlan.zhihu.com/p/74460341
 https://mp.weixin.qq.com/s?__biz=MzI5MDUyMDIxNA==&mid=2247491156&idx=2&sn=e088a817c9c6b4f52527cfcf51dc7ffe
 
 首个siamese网络中训练GCNs的视觉追踪方法《Graph Convolutional Tracking》
+
+https://zhuanlan.zhihu.com/p/95842960
+
+D3S
 
 ## FlowNet
 

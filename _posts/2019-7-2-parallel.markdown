@@ -369,3 +369,7 @@ https://mp.weixin.qq.com/s/ucFtWopoErtUCYDTLv2kFg
 https://mp.weixin.qq.com/s/T2Nv7dQvZR6sVht1LfKSlw
 
 NLP技术在微博feed流中的应用
+
+https://mp.weixin.qq.com/s/mVNHAiHY__Z0xTXkDDyZTw
+
+如何打造高质量的NLP数据集

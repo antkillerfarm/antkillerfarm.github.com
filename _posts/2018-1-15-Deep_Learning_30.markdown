@@ -310,6 +310,30 @@ https://mp.weixin.qq.com/s/eg_H0D8m0LdVBJixsc-dNA
 
 张量图卷积网络(TensorGCN)文本分类
 
+https://mp.weixin.qq.com/s/sXCwe8hXWxdNbpl2i7YBtg
+
+完全基于注意力机制的图表征学习模型Graph-Bert
+
+https://mp.weixin.qq.com/s/dXYjUHAXVZINXQkvM_ssZA
+
+从图网络表示到图神经网络
+
+https://mp.weixin.qq.com/s/DI7C8GKcVsMzAVpGxflUpg
+
+图机器学习，Graph-Powered Machine Learning
+
+https://mp.weixin.qq.com/s/1AO7ALoojMK9Qx3yMQcclQ
+
+GNN实战：手把手教你使用tf_geometric构建图自编码器GAE
+
+https://mp.weixin.qq.com/s/jPIo4p4QCn1UVZ1CtPjP-A
+
+GNN如何进行池化以及挑战
+
+https://mp.weixin.qq.com/s/i_v1GoR-VzVxmy2Wm97t4w
+
+中科院自动化所等首次用图卷积网络解决语义分割难题
+
 # 视频处理+
 
 https://mp.weixin.qq.com/s/vuhoK4cVaHDn6oTuGqX_Eg
@@ -339,3 +363,7 @@ https://mp.weixin.qq.com/s/adUW9QuXaJ9uIb7Co5j_gw
 https://mp.weixin.qq.com/s/mASzImKwlpX7BJZFux3Adw
 
 视频预测领域有哪些最新研究进展？
+
+https://mp.weixin.qq.com/s/f2fYwaPNty72CFUIZZPBoA
+
+让电影动漫统统变丝滑，480帧也毫无卡顿，交大博士生开源插帧软件DAIN

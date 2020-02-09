@@ -94,6 +94,10 @@ https://mp.weixin.qq.com/s/AqzdRoXthrUFUOqSNwgfqQ
 
 新的一年，想发有关对话系统的paper？快关注时下最大热点：智能化与个性化
 
+https://mp.weixin.qq.com/s/IVrg0tP2YH1AQB6Qm-kHoA
+
+哈工大张伟男：任务型对话系统
+
 https://mp.weixin.qq.com/s/HWqFpDhvhGrJtNTSLsO3Eg
 
 大众点评信息流基于文本生成的创意优化实践
@@ -321,10 +325,6 @@ NLP技术也能帮助程序分析？
 https://mp.weixin.qq.com/s/eb0GcjdwO18-_0T9z3KdlA
 
 最新综述：对话系统之用户模拟器
-
-https://mp.weixin.qq.com/s/HaJtc7XlCPh0KdGnUehkcg
-
-万字长文详解文本抽取：从算法理论到实践
 
 https://mp.weixin.qq.com/s/-bAeg91e3F8hsZAGGmRswQ
 

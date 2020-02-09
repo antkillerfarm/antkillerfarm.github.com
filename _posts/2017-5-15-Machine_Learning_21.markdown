@@ -4,96 +4,6 @@ title:  机器学习（二十一）——Loss function详解（1）
 category: ML 
 ---
 
-## 关联规则评价（续）
-
-从上面的例子我们看到，支持度和自信度并不总能成功滤掉那些我们不感兴趣的规则，因此我们需要一些新的评价标准，下面介绍几种评价标准：
-
-### 相关性系数
-
-相关性系数的英文名是Lift，这就是一个单词，而不是缩写。
-
-$$\mathrm{lift}(X\Rightarrow Y) = \frac{ \mathrm{supp}(X \cup Y)}{ \mathrm{supp}(X) \times \mathrm{supp}(Y) }$$
-
-$$\mathrm{lift}(X\Rightarrow Y)\begin{cases}
->1, & 正相关 \\
-=1, & 独立 \\
-<1, & 负相关 \\
-\end{cases}$$
-
-实际运用中，正相关和负相关都是我们需要关注的，而独立往往是我们不需要的。显然：
-
-$$\mathrm{lift}(X\Rightarrow Y)=\mathrm{lift}(Y\Rightarrow X)$$
-
-### 确信度
-
-Conviction的定义如下：
-
-$$\mathrm{conv}(X\Rightarrow Y) =\frac{ 1 - \mathrm{supp}(Y) }{ 1 - \mathrm{conf}(X\Rightarrow Y)}$$
-
-它的值越大，表明X、Y的独立性越小。
-
-### 卡方系数
-
-卡方系数是与卡方分布有关的一个指标。参见：
-
-https://en.wikipedia.org/wiki/Chi-squared_distribution
-
-$$\chi^2 = \sum_{i=1}^n \frac{(O_i - E_i)^2}{E_i}$$
-
->注：上式最早是Pearson给出的。
-
-公式中的$$O_i$$表示数据的实际值，$$E_i$$表示期望值，不理解没关系，我们看一个例子就明白了。
-
-| 表2 | 买游戏 | 不买游戏 | 行总计 |
-|:--:|:--|:--:|:--|
-| 买影片 | 4000(4500) | 3500(3000) | 7500 |
-| 不买影片 | 2000(1500) | 500(1000) | 2500 |
-| 列总计 | 6000 | 4000 | 10000 |
-
-表2的括号中表示的是期望值。以第1行第1列的4500为例，其计算方法为：7500×6000/10000。
-
-经计算可得表2的卡方系数为555.6。基于置信水平和自由度$$(r-1)*(c-1)=(行数-1)*(列数-1)=1$$，查表得到自信度为(1-0.001)的值为6.63。
-
-555.6>6.63，因此拒绝A、B独立的假设，即认为A、B是相关的，而$$E(买影片，买游戏)=4500>4000$$,因此认为A、B呈负相关。
-
-### 全自信度
-
-$$all\_confidence(A,B)=\frac{P(A\cap B)}{max\{P(A),P(B)\}}\\=min\{P(B|A),P(A|B)\}=min\{confidence(A\to B),confidence(B\to A)\}$$
-
-### 最大自信度
-
-$$max\_confidence(A,B)=max\{confidence(A\to B),confidence(B\to A)\}$$
-
-### Kulc
-
-$$kulc(A,B)=\frac{confidence(A\to B)+confidence(B\to A)}{2}$$
-
-### cosine距离
-
-$$cosine(A,B)=\frac{P(A\cap B)}{sqrt(P(A)*P(B))}=sqrt(P(A|B)*P(B|A))\\=sqrt(confidence(A\to B)*confidence(B\to A))$$
-
-### Leverage
-
-$$Leverage(A,B) = P(A\cap B)-P(A)P(B)$$
-
-### 不平衡因子
-
-imbalance ratio的定义：
-
-$$IR(A,B)=\frac{|support(A)-support(B)|}{(support(A)+support(B)-support(A\cap B))}$$
-
-全自信度、最大自信度、Kulc、cosine，Leverage是不受空值影响的，这在处理大数据集是优势更加明显，因为大数据中空记录更多，根据分析我们推荐使用kulc准则和不平衡因子结合的方法。
-
-参考：
-
-http://www.cnblogs.com/fengfenggirl/p/associate_measure.html
-
-关联规则评价
-
-https://mp.weixin.qq.com/s/s1Snb4XnIQk1DcK3nESilw
-
-PrefixSpan算法原理详解
-
 # Loss function详解
 
 ![](/images/img2/loss.png)
@@ -278,3 +188,109 @@ Triplet loss通常是在个体级别的细粒度识别上使用，传统的分�
 如上图所示，triplet是一个三元组，这个三元组是这样构成的：从训练数据集中随机选一个样本，该样本称为Anchor，然后再随机选取一个和Anchor(记为$$x^a$$)属于同一类的样本和不同类的样本,这两个样本对应的称为Positive(记为$$x^p$$)和Negative(记为$$x^n$$)，由此构成一个（Anchor，Positive，Negative）三元组。
 
 针对每个样本$$x_i$$，训练一个参数共享或者不共享的网络，得到三个元素的特征表达，分别记为：$$f(x_i^a), f(x_i^p), f(x_i^n)$$。
+
+**triplet loss的目的就是通过学习（即上图中的Learning），让$$x^a$$和$$x^p$$特征表达之间的距离尽可能小，而$$x^a$$和$$x^n$$的特征表达之间的距离尽可能大。**
+
+它的公式化的表示就是：
+
+$$\|f(x_i^a)-f(x_i^p)\|_2^2 + \alpha < \|f(x_i^a)-f(x_i^n)\|_2^2$$
+
+其中，$$\alpha$$表示两个距离之间的间隔。因此，对应的目标函数也就很清楚了：
+
+$$\sum_i^N\left[\|f(x_i^a)-f(x_i^p)\|_2^2 - \|f(x_i^a)-f(x_i^n)\|_2^2 + \alpha \right]_+$$
+
+这里距离用欧式距离度量，+表示[]内的值大于零的时候，取该值为损失，小于零的时候，损失为零。
+
+>需要注意的是Triplet Loss以及后面介绍的各种改进版softmax，其收敛速度不如softmax，因此，先用softmax训练几轮，再改用这些loss，也是常用的调参技巧。
+
+参考：
+
+https://blog.csdn.net/u010167269/article/details/52027378
+
+Triplet Loss、Coupled Cluster Loss探究
+
+https://blog.csdn.net/tangwei2014/article/details/46788025
+
+triplet loss原理以及梯度推导
+
+https://www.zhihu.com/question/62486208
+
+triplet loss在深度学习中主要应用在什么地方？有什么明显的优势？
+
+https://mp.weixin.qq.com/s/XB9VsW3NRwHua6AdRL3n8w
+
+Lossless Triplet Loss:一种高效的Siamese网络损失函数
+
+https://gehaocool.github.io/2018/03/20/Angular-Margin-%E5%9C%A8%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/
+
+Angular Margin在人脸识别中的应用
+
+https://mp.weixin.qq.com/s/SqaR_7gwJpUNPM7g4IHaYw
+
+深度人脸识别中不同损失函数的性能对比
+
+## Coupled Cluster Loss
+
+论文：
+
+《Deep Relative Distance Learning: Tell the Difference Between Similar Vehicles》
+
+
+
+参考：
+
+https://blog.csdn.net/u010167269/article/details/51783446
+
+论文中文笔记
+
+## Focal Loss
+
+https://zhuanlan.zhihu.com/p/28442066
+
+何恺明团队提出Focal Loss，目标检测精度高达39.1AP，打破现有记录
+
+https://www.zhihu.com/question/63581984
+
+如何评价Kaiming的Focal Loss for Dense Object Detection？
+
+https://mp.weixin.qq.com/s/Uf1lWtxOpKYCDLmCDlnVAQ
+
+把Cross Entropy梯度分布拉‘平’，就能轻松超越Focal Loss
+
+https://mp.weixin.qq.com/s/aKRUJt-_1QSQFcRVtuyJ4w
+
+被忽略的Focal Loss变种
+
+https://zhuanlan.zhihu.com/p/55036597
+
+样本贡献不均：Focal Loss和 Gradient Harmonizing Mechanism
+
+https://mp.weixin.qq.com/s/LfCuOEndS4Y5dPqXTsE_hA
+
+剖析Focal Loss损失函数： 消除类别不平衡+挖掘难分样本
+
+## Other Loss
+
+https://mp.weixin.qq.com/s/7Jg-YvS3nvcPJ-zYhK96EA
+
+分享神经网络中设计loss function的一些技巧
+
+https://mp.weixin.qq.com/s/cYcztl8N9JF-XXp9xLJIxg
+
+一文道尽softmax loss及其变种
+
+https://mp.weixin.qq.com/s/MTeuRYutMiCmthEAObyAIg
+
+从最优化的角度看待Softmax损失函数
+
+https://zhuanlan.zhihu.com/p/23340343
+
+Center Loss及其在人脸识别中的应用
+
+https://zhuanlan.zhihu.com/p/34404607
+
+人脸识别的LOSS（上）
+
+https://zhuanlan.zhihu.com/p/34436551
+
+人脸识别的LOSS（下）

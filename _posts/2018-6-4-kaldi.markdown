@@ -368,17 +368,3 @@ ngram 3=173445
 {% endhighlight %}
 
 这个文件的头部比较好懂，不解释。
-
-1-grams部分中每一条包括了3项，其中第二项显然是条目文本本身。
-
-第一项表示ngram的条件概率，即$$P(word_N \mid word_1，word_2，\dots，word_{N-1})$$。
-
-第三项表示回退（backoff）概率。
-
-下面我们举例说明条件概率和回退概率的用法。
-
-假设arpa的最高元是3元，则句子ABCDEF发生的概率为：
-
-$$P(ABCDEF)=P(A)*P(B\mid A)*P(C\mid AB)*P(D\mid BC)*P(E\mid CD)*(F\mid DE)$$
-
-其中，P(A)通过访问arpa中的1-grams项获得，$$P(B\mid A)$$通过访问2-grams项获得，其他的概率通过访问3-grams项获得。

@@ -332,6 +332,10 @@ https://mp.weixin.qq.com/s/6M7aiXgcne9cbHffqpm_Lw
 
 n种方式教你用python读写excel等数据文件
 
+https://mp.weixin.qq.com/s/rBR4d_wyU8TKy1K9az4C-Q
+
+从VBA到Python，Excel工作效率如何提高？
+
 ## 参考
 
 https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA

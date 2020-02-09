@@ -277,6 +277,10 @@ https://mp.weixin.qq.com/s/6aXcum-FAbvcGcOrkSC4vQ
 
 为什么Kafka会成为微服务架构的事实标准？
 
+https://zhuanlan.zhihu.com/p/87987916
+
+Kafka基本原理
+
 # 计算机体系结构
 
 按照Michael J. Flynn的分类方法，计算机的体系结构可分为如下四类：
@@ -386,3 +390,7 @@ GAN和PS合体会怎样？东京大学图像增强新研究：无需配对图像
 https://mp.weixin.qq.com/s/qLhnvLhXHhRoPGtPWYCY0w
 
 ICCV2019最佳论文SinGAN全面解读
+
+https://zhuanlan.zhihu.com/p/97138846
+
+《SinGAN:从单个自然图像中学习生成模型》论文笔记

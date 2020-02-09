@@ -333,6 +333,8 @@ https://zhuanlan.zhihu.com/p/92230537
 
 # 金融模型
 
+![](/images/img3/Quant.jpg)
+
 Capital asset pricing model
 
 Fama–French three-factor model

@@ -329,3 +329,7 @@ PyTorch实现L2和L1正则化的方法
 https://zhuanlan.zhihu.com/p/98535650
 
 研究生应当掌握的并行训练方法（单机多卡）
+
+https://zhuanlan.zhihu.com/p/86441879
+
+pytorch多gpu并行训练

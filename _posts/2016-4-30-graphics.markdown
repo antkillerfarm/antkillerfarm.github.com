@@ -222,6 +222,10 @@ https://zhuanlan.zhihu.com/p/44918476
 
 直方图均衡化
 
+https://mp.weixin.qq.com/s/30YMHQNGYaY3K5SCBHCG2g
+
+没想到图像直方图有这么多应用场景
+
 # 二值化
 
 二值图也就是黑白图。将灰度图转换成黑白图的过程，就是二值化。二值化的一般算法是：

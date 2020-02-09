@@ -6,9 +6,19 @@ category: DL acceleration
 
 # 概述
 
-书籍：
+## 书籍
 
 《Embedded Deep Learning:  Algorithms, Architectures and Circuits for Always-on Neural Network Processing》
+
+## 教程
+
+http://dlsys.cs.washington.edu/
+
+CSE 599W: Systems for ML（陈天奇主讲）
+
+https://zhuanlan.zhihu.com/p/104649426
+
+CSE 599W-Systems for ML-辛酸阅读记录
 
 # Winograd
 

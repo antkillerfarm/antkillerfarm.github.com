@@ -225,3 +225,11 @@ https://mp.weixin.qq.com/s/yCu5Xx6peDKyU06yBlixpA
 https://zhuanlan.zhihu.com/p/102817180
 
 目标检测比赛中的trick
+
+https://mp.weixin.qq.com/s/ZQ6KlSFiKhcGVGoS9R_k4w
+
+Anchor free的目标检测进阶版本
+
+https://mp.weixin.qq.com/s/Aq2OJqGnT6z4zoG-6rslkQ
+
+商汤科技提出新弱监督目标检测框架

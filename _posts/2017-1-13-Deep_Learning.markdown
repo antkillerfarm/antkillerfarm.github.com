@@ -30,7 +30,7 @@ http://speech.ee.ntu.edu.tw/~tlkagk/courses.html
 
 >李宏毅，国立台湾大学硕士（2010年）+博士（2012年）。国立台湾大学计算机系助理教授。
 
-李宏毅的课程难度适中，且更新很快，每隔半年逛一下，必有新收获。
+李宏毅的课程难度适中，内容全面，且更新很快，每隔半年逛一下，必有新收获。
 
 https://www.csie.ntu.edu.tw/~yvchen/f106-adl/syllabus.html
 
@@ -39,6 +39,10 @@ https://www.csie.ntu.edu.tw/~yvchen/f106-adl/syllabus.html
 ![](/images/article/yvchen.jpg)
 
 >陈蕴侬，国立台湾大学本硕（2011年）+CMU博士（2015年）。国立台湾大学计算机系助理教授。
+
+http://introtodeeplearning.com/
+
+MIT 6.S191 Introduction to Deep Learning。涵盖深度学习导论、序列建模、深度视觉、生成模型、强化学习、图神经网络、对抗学习、贝叶斯模型、神经渲染、机器学习嗅觉等方面，是DL领域的综合课程。
 
 《Deep Learning》，Ian Goodfellow、Yoshua Bengio、Aaron Courville著。
 

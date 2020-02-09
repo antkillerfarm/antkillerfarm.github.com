@@ -240,6 +240,10 @@ https://mp.weixin.qq.com/s/HkaG9KeJ5w6FqZmo15n9JA
 
 短视频潜力预测及其在微视推荐冷启动中的应用
 
+https://mp.weixin.qq.com/s/WUP4C4XBHfVKI_xgHXUXiA
+
+动作识别时序汇合（Temporal Pooling）方法介绍
+
 # 人脸检测/识别
 
 ## Cascade CNN

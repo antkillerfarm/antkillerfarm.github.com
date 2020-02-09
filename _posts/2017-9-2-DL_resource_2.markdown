@@ -364,6 +364,10 @@ https://mp.weixin.qq.com/s/1ZnacYeqkd_y_HoK8XIWWQ
 
 旷视成都研究院负责人刘帅成：图像对齐及其应用
 
+https://mp.weixin.qq.com/s/hPaJssohwTIPx6kzGvp70g
+
+一份超全易懂的深度学习在图像去噪的综述
+
 ## 光神经网络
 
 https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ

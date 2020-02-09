@@ -426,6 +426,10 @@ https://mp.weixin.qq.com/s/A15Oqa0yVSvLnh5h_SvtOQ
 
 那些不为人知的优秀python可视化库
 
+https://mp.weixin.qq.com/s/smXMxhHrkZpZSNvUM1DeCg
+
+五分钟学会C++高效图表绘制神器调用
+
 ## Pandas
 
 Pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。
@@ -441,17 +445,3 @@ http://pandas.pydata.org/pandas-docs/stable/
 API参考：
 
 http://pandas.pydata.org/pandas-docs/stable/api.html
-
-参考：
-
-http://www.cnblogs.com/chaosimple/p/4153083.html
-
-十分钟搞定pandas
-
-http://pandas.pydata.org/pandas-docs/stable/comparison_with_sql.html
-
-Pandas和SQL的比较
-
-https://mp.weixin.qq.com/s/fXI5suCVna6fBxPnVyKevw
-
-浅谈NumPy和Pandas库

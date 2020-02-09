@@ -6,6 +6,24 @@ category: AI
 
 # NLP
 
+## NLPchina
+
+NLPchina(中国自然语言处理开源组织)旗下有许多好用的工具。
+
+官网：
+
+http://www.nlpcn.org/
+
+Github：
+
+https://github.com/NLPchina
+
+### Ansj
+
+Ansj是一个NLPchina旗下的开源的Java中文分词工具，基于中科院的ictclas中文分词算法，比其他常用的开源分词工具（如mmseg4j）的分词准确率更高。
+
+https://github.com/NLPchina/ansj_seg
+
 ### Word2VEC_java
 
 word2vec java版本的一个实现。

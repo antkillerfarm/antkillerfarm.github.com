@@ -6,53 +6,7 @@ category: ML
 
 # 决策树
 
-Decision Tree讲的最好的，首推周志华的《机器学习》。这里只对要点进行备忘。
-
-当前样本集合D中，第k类样本所占的比例为$$p_k(k=1,2,\dots,\mid y\mid)$$，则D的信息熵（information entropy）定义为：
-
-$$Ent(D)=-\sum_{k=1}^{\mid y\mid }p_k\log_2p_k$$
-
-假定离散属性a有V个可能的取值，若使用a对D进行划分，则第v个分支结点包含了D中所有在a上取值$$a^v$$的样本，记为$$D^v$$。则信息增益（information gain）为：
-
-$$Gain(D,a)=Ent(D)-\sum_{v=1}^V\frac{\mid D^v\mid }{\mid D\mid }Ent(D^v)$$
-
-增益率（gain ratio）：
-
-$$Gain\_ratio(D,a)=\frac{Gain(D,a)}{IV(a)}$$
-
-其中
-
-$$IV(a)=-\sum_{v=1}^V\frac{\mid D^v\mid }{\mid D\mid }\log_2 \frac{\mid D^v\mid }{\mid D\mid }$$
-
-基尼值：
-
-$$Gini(D)=1-\sum_{k=1}^{\mid y\mid }p_k^2$$
-
-基尼指数：
-
-$$Gini\_index(D,a)=\sum_{v=1}^V\frac{\mid D^v\mid }{\mid D\mid }Gini(D^v)$$
-
-各种决策树和它的划分依据如下表所示：
-
-| 名称 | 划分依据 |
-|:--:|:--:|
-| ID3 | Gain |
-| C4.5 | Gain_ratio |
-| CART | Gini_index |
-
-决策树是一种可以将训练误差变为0的算法，只要每个样本对应一个叶子结点即可，然而这样做会导致过拟合。为了限制树的生长，我们可以加入阈值，当增益大于阈值时才让节点分裂。
-
-参考：
-
-https://mp.weixin.qq.com/s/TTU9LMG8TuB1gzgfCfWjjw
-
-从香农熵到手推KL散度：一文带你纵览机器学习中的信息论
-
-## Lorenz curve
-
-既然提到了基尼值，那么就再谈一下Lorenz curve吧。
-
->Max Otto Lorenz，1876～1959，美国经济学家。University of Wisconsin–Madison博士（1906）。美国统计学会会员。
+## Lorenz curve（续）
 
 ![](/images/img3/Lorenz_curve.png)
 
@@ -277,3 +231,57 @@ https://mp.weixin.qq.com/s/jj3BtmnWRAwCS56ZU3ZXZA
 https://mp.weixin.qq.com/s/vkbZweJ5oRo4IPt-3kg64g
 
 决策树算法十问及经典面试问题
+
+https://mp.weixin.qq.com/s/t2B5dg8uELNqSJcENHiwNA
+
+深入理解GBDT多分类算法
+
+# 关联规则挖掘
+
+## 基本概念
+
+关联规则挖掘（Association rule mining）是机器学习的一个子领域。它最早的案例就是以下的**尿布和啤酒**的故事：
+
+>沃尔玛曾今对数据仓库中一年多的原始交易数据进行了详细的分析，发现与尿布一起被购买最多的商品竟然是啤酒。   
+>借助数据仓库和关联规则，发现了这个隐藏在背后的事实：**美国妇女经常会嘱咐丈夫下班后为孩子买尿布，而30%~40%的丈夫在买完尿布之后又要顺便购买自己爱喝的啤酒。**   
+>根据这个发现，沃尔玛调整了货架的位置，把尿布和啤酒放在一起销售，大大增加了销量。
+
+这里借用一个引例来介绍关联规则挖掘的基本概念。
+
+| 交易号TID | 顾客购买的商品 | 交易号TID | 顾客购买的商品 |
+|:--:|:--|:--:|:--|
+| T1 | bread, cream, milk, tea | T6 | bread, tea |
+| T2 | bread, cream, milk | T7 | beer, milk, tea |
+| T3 | cake, milk | T8 | bread, tea |
+| T4 | milk, tea | T9 | bread, cream, milk, tea |
+| T5 | bread, cake, milk | T10 | bread, milk, tea |
+
+**定义一**：设$$I=\{i_1,i_2,\dots,i_m\}$$，是m个不同的项目的集合，每个$$i_k$$称为一个**项目**。项目的集合I称为**项集**。其元素的个数称为项集的长度，长度为k的项集称为k-项集。引例中每个商品就是一个项目，项集为$$I=\{bread, beer, cake,cream, milk, tea\}$$，I的长度为6。
+
+**定义二**：每笔**交易T**是项集I的一个子集。对应每一个交易有一个唯一标识交易号，记作TID。交易全体构成了**交易数据库D**，$$\mid D\mid$$等于D中交易的个数。引例中包含10笔交易，因此$$\mid D\mid=10$$。
+
+**定义三**：对于项集X，设定$$count(X\subseteq T)$$为交易集D中包含X的交易的数量，则项集X的**支持度**为：
+
+$$support(X)=\frac{count(X\subseteq T)}{\mid D\mid }$$
+
+引例中$$X=\{bread, milk\}$$出现在T1，T2，T5，T9和T10中，所以支持度为0.5。
+
+**定义四**：**最小支持度**是项集的最小支持阀值，记为$$SUP_{min}$$，代表了用户关心的关联规则的最低重要性。支持度不小于$$SUP_{min}$$的项集称为频繁集，长度为k的频繁集称为k-频繁集。如果设定$$SUP_{min}$$为0.3，引例中$$\{bread, milk\}$$的支持度是0.5，所以是2-频繁集。
+
+**定义五**：**关联规则**是一个蕴含式：
+
+$$R：X\Rightarrow Y$$
+
+其中$$X\subset I$$，$$Y\subset I$$，并且$$X\cap Y=\varnothing$$。表示项集X在某一交易中出现，则导致Y以某一概率也会出现。用户关心的关联规则，可以用两个标准来衡量：支持度和可信度。
+
+**定义六**：关联规则R的**支持度**是交易集同时包含X和Y的交易数与$$\mid D\mid$$之比。即：
+
+$$support(X\Rightarrow Y)=\frac{count(X\cap Y)}{\mid D\mid }$$
+
+支持度反映了X、Y同时出现的概率。关联规则的支持度等于频繁集的支持度。
+
+**定义七**：对于关联规则R，**可信度**是指包含X和Y的交易数与包含X的交易数之比。即：
+
+$$confidence(X\Rightarrow Y)=\frac{support(X\Rightarrow Y)}{support(X)}$$
+
+可信度反映了如果交易中包含X，则交易包含Y的概率。一般来说，只有支持度和可信度较高的关联规则才是用户感兴趣的。

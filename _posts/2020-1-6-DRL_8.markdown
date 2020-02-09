@@ -6,6 +6,14 @@ category: DRL
 
 # DRL参考资源
 
+https://mp.weixin.qq.com/s/1SZKhG1ZbD1pl-3YQD_umg
+
+6行代码搞定基本的RL算法，速度围观Reddit高赞帖
+
+https://mp.weixin.qq.com/s/6n5HawyR4AgH8Dq0gJMw2g
+
+强化学习的基本概念与代码实现
+
 https://mp.weixin.qq.com/s/RLEuaiRdq6AbTSUcYQ5O3A
 
 深度强化学习在NLP怎么用？看清华黄民烈老师这一份120页《自然语言处理和搜索中的深度强化学习应用》讲义

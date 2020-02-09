@@ -106,6 +106,10 @@ https://zhuanlan.zhihu.com/p/34656727
 
 零次学习（Zero-Shot Learning）入门
 
+https://mp.weixin.qq.com/s/epsXg46st-37FjwIjPUOqg
+
+124页ppt，Learning with Small Data，宾夕法尼亚州立大学
+
 https://mp.weixin.qq.com/s/sAf2fLLnKHOs433pV_6bSQ
 
 One-shot Learning：孪生网络少样本精准分类

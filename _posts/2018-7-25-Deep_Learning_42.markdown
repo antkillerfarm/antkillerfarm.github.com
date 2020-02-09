@@ -94,6 +94,10 @@ https://mp.weixin.qq.com/s/VlxF7BVk7hUQ9HDiGYpzGA
 
 基于Co-Attention和Co-Excitation的少样本目标检测
 
+https://mp.weixin.qq.com/s/xaKqAhuxaHDPV-VwHE7H2A
+
+零样本学习研究进展综述中文版
+
 # 深度ISP
 
 ## 数据集
@@ -365,6 +369,10 @@ https://mp.weixin.qq.com/s/iPpVT2iY4Ec6oYdsRpPeTQ
 https://zhuanlan.zhihu.com/p/103012005
 
 序列特征的处理方法之一：基于注意力机制方法
+
+https://zhuanlan.zhihu.com/p/104216734
+
+序列特征的处理方法之二：基于卷积神经网络方法
 
 # AI可解释性
 

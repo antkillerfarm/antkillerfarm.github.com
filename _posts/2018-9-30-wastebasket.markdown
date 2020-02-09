@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  垃圾筐
-category: resource 
+category: Nature 
 ---
 
 # 垃圾筐
@@ -341,6 +341,18 @@ https://mp.weixin.qq.com/s/tU6Incnq63fT61z6y9E-Jg
 https://mp.weixin.qq.com/s/T2ms6xXd14O3CrQb7X1ZOw
 
 人类用了2000年就为画张地图
+
+https://mp.weixin.qq.com/s/lB6dfjS5TAxjMndLCXMWgQ
+
+憋住不放的屁最后去哪了？知道真相的我再也不忍屁了！
+
+https://mp.weixin.qq.com/s/BIy4Ly3eIMOrXRbpjFRFYQ
+
+男人最喜欢在家干的这件事，居然是在马桶上......
+
+http://www.makertime.org/
+
+一个硬核的geek网站
 
 ## Bélády's Algorithm
 

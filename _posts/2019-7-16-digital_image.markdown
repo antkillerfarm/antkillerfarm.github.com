@@ -358,6 +358,10 @@ https://mp.weixin.qq.com/s/byeQKa7d5FSLS7JrBwP_Zw
 
 什么是多光谱/高光谱成像
 
+https://mp.weixin.qq.com/s/nz9NHdyhRqxdhYopFQ_5Ag
+
+红外热成像与快速发热病患检测
+
 # 编译原理
 
 https://zhuanlan.zhihu.com/frozengene

@@ -138,6 +138,10 @@ https://zhuanlan.zhihu.com/p/31344949
 
 联合模型的强化学习算法（三）
 
+https://mp.weixin.qq.com/s/IcaxjdDLjihCK-nKBlJVWg
+
+从α到μ：DeepMind棋盘游戏AI进化史
+
 ## Leela Zero
 
 Leela Zero是比利时人Gian-Carlo Pascutto开源的围棋AI。它的算法与AlphaGo Zero相同。而训练采用GTP协议，集合全球算力，进行分布式训练。

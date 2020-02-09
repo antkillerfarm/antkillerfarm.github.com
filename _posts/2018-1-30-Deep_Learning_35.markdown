@@ -337,3 +337,11 @@ https://mp.weixin.qq.com/s/oPYWwZ6GkaE4L4YMxh7WGA
 https://mp.weixin.qq.com/s/6HsL2B7p-XyvGWAb4SwALA
 
 图灵奖得主Geoffrey Hinton最新研究NASA：一种更好地学习三维模型动作的方法
+
+https://mp.weixin.qq.com/s/-HEYU_El8xysk8atHYx1Mg
+
+基于3D行人姿态和步态预测的神经网络模型
+
+https://zhuanlan.zhihu.com/p/72561165
+
+重新思考人体姿态估计 Rethinking Human Pose Estimation

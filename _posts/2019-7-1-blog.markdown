@@ -6,6 +6,8 @@ category: essay
 
 # Blog维护日志
 
+2020.1.23 添加Nature分类。
+
 2020.1.1 文章数达到350篇。添加Recommender system分类。
 
 2019.11 添了一个National Taiwan University的follower。
@@ -150,7 +152,15 @@ https://zhuanlan.zhihu.com/p/24437724
 
 学习理论之Rescorla-Wagner模型
 
+https://zhuanlan.zhihu.com/p/104261195
+
+生物，AI，心理：目前的大脑/认知/意识/AGI/DRL模型
+
 # RL参考资源
+
+https://mp.weixin.qq.com/s/sIS9VvZ3yTtn6puJScuHig
+
+强化学习70年演进：从精确动态规划到基于模型
 
 https://mp.weixin.qq.com/s/Fn1s9Ia8L1ckgn6iP24FhQ
 
@@ -191,3 +201,67 @@ Policy Gradient——一种不以loss来反向传播的策略梯度方法
 https://mp.weixin.qq.com/s/x6gKTuYIx8y25KX-fCc5bA
 
 蒙特卡洛梯度估计方法（MCGE）简述
+
+# 电子科技史+
+
+https://zhuanlan.zhihu.com/p/54493905
+
+PC和BIOS的故事
+
+https://mp.weixin.qq.com/s/iod5Jok3Zfcn4yrGByZQQQ
+
+索尼的古董
+
+https://mp.weixin.qq.com/s/CxTr4MFVoRFxyCn-x_z8dQ
+
+奇梦达的前世今生
+
+https://mp.weixin.qq.com/s/TZcVR0wW2LM_bCvB0a88pA
+
+中国芯片完整发展历程
+
+https://mp.weixin.qq.com/s?__biz=MzAxOTIxNTg0Mg==&mid=2651001664&idx=1&sn=d7fe10c74feb5eb84c45a0381372c1d3
+
+国产芯片·大阅兵
+
+https://mp.weixin.qq.com/s/MzQyu5uqqIEYn-DwxNU50Q
+
+珠海芯片公司江湖
+
+https://mp.weixin.qq.com/s/O4hARQmcBDolt3THeoSwkg
+
+昙花一现的“图文电视”
+
+https://mp.weixin.qq.com/s/OTGy5a-hfxxp19TeJWyIyQ
+
+爬取6271家死亡公司数据，看十年创业公司消亡史
+
+https://mp.weixin.qq.com/s/QZOPuMlmW47EsrvcYgla7Q
+
+Arm服务器芯片编年史
+
+https://mp.weixin.qq.com/s/ddOTd5ljC2I9IOadBbjOIA
+
+大话Wi-Fi20年
+
+https://mp.weixin.qq.com/s/EsrXYg3Il8R96MJmqsx6fQ
+
+盘点半导体制造业60年最重要的发明
+
+https://mp.weixin.qq.com/s/kns2pGuqU8ifcNz7CpZoEg
+
+影响半导体发展进程的六个华人
+
+https://mp.weixin.qq.com/s/Fkcbb-4LC_NsVJHCM-zRWQ
+
+3M：世界上最不务正业公司——不只是口罩，好像哪里都离不开他！芯片制造也需要3M！
+
+https://mp.weixin.qq.com/s/aLkbYlLvVWyYdK8iiL45Pw
+
+芯片设计的起源（Lynn Conway）
+
+----
+
+https://baike.baidu.com/item/Full Mask - MPW/16508899
+
+Full Mask和MPW都是集成电路的一种流片（将设计结果交出去进行生产制造）方式。Full Mask是“全掩膜”的意思，即制造流程中的全部掩膜都为某个设计服务；而MPW（Multi Project Wafer），直译为多项目晶圆，即多个项目共享某个晶圆，也即同一次制造流程可以承担多个IC设计的制造任务。

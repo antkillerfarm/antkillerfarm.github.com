@@ -302,6 +302,10 @@ https://mp.weixin.qq.com/s/MiHz2zLBif_s1lksQXLBbw
 
 OpenCV中如何提取不规则ROI区域
 
+https://mp.weixin.qq.com/s/cwFkMZS2Mk-qbFF2FF4v0Q
+
+OpenCV二值图像分析之形态学应用技巧
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。

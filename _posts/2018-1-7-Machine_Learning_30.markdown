@@ -154,6 +154,10 @@ http://blog.sina.com.cn/s/blog_8267db980102wq4l.html
 
 HMM识别新词
 
+https://mp.weixin.qq.com/s/dwfuruet361IT6lQQcYWjA
+
+HMM模型在贝壳对话系统中的应用
+
 # NLP机器翻译常用评价度量
 
 机器翻译的评价指标主要有：BLEU、NIST、Rouge、METEOR等。

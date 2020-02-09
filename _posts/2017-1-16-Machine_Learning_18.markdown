@@ -221,3 +221,53 @@ https://mp.weixin.qq.com/s/7_-SSVZpxLfnwn7EmbGyZA
 https://mp.weixin.qq.com/s/fAHlrfchgkQ1Wuc8sfTlZg
 
 堪比Focal Loss！解决目标检测中样本不平衡的无采样方法
+
+# 决策树
+
+Decision Tree讲的最好的，首推周志华的《机器学习》。这里只对要点进行备忘。
+
+当前样本集合D中，第k类样本所占的比例为$$p_k(k=1,2,\dots,\mid y\mid)$$，则D的信息熵（information entropy）定义为：
+
+$$Ent(D)=-\sum_{k=1}^{\mid y\mid }p_k\log_2p_k$$
+
+假定离散属性a有V个可能的取值，若使用a对D进行划分，则第v个分支结点包含了D中所有在a上取值$$a^v$$的样本，记为$$D^v$$。则信息增益（information gain）为：
+
+$$Gain(D,a)=Ent(D)-\sum_{v=1}^V\frac{\mid D^v\mid }{\mid D\mid }Ent(D^v)$$
+
+增益率（gain ratio）：
+
+$$Gain\_ratio(D,a)=\frac{Gain(D,a)}{IV(a)}$$
+
+其中
+
+$$IV(a)=-\sum_{v=1}^V\frac{\mid D^v\mid }{\mid D\mid }\log_2 \frac{\mid D^v\mid }{\mid D\mid }$$
+
+基尼值：
+
+$$Gini(D)=1-\sum_{k=1}^{\mid y\mid }p_k^2$$
+
+基尼指数：
+
+$$Gini\_index(D,a)=\sum_{v=1}^V\frac{\mid D^v\mid }{\mid D\mid }Gini(D^v)$$
+
+各种决策树和它的划分依据如下表所示：
+
+| 名称 | 划分依据 |
+|:--:|:--:|
+| ID3 | Gain |
+| C4.5 | Gain_ratio |
+| CART | Gini_index |
+
+决策树是一种可以将训练误差变为0的算法，只要每个样本对应一个叶子结点即可，然而这样做会导致过拟合。为了限制树的生长，我们可以加入阈值，当增益大于阈值时才让节点分裂。
+
+参考：
+
+https://mp.weixin.qq.com/s/TTU9LMG8TuB1gzgfCfWjjw
+
+从香农熵到手推KL散度：一文带你纵览机器学习中的信息论
+
+## Lorenz curve
+
+既然提到了基尼值，那么就再谈一下Lorenz curve吧。
+
+>Max Otto Lorenz，1876～1959，美国经济学家。University of Wisconsin–Madison博士（1906）。美国统计学会会员。

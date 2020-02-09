@@ -246,6 +246,10 @@ https://zhuanlan.zhihu.com/p/80815225
 
 Image-Level弱监督图像语义分割汇总简析
 
+https://mp.weixin.qq.com/s/5czWf0xpqva5pmuvJDn5AQ
+
+Google研究院提出FixMatch，简单粗暴却极其有效的半监督学习方法，附14页PDF下载
+
 # 语义分割
 
 Semantic segmentation是图像理解的基石性技术，在自动驾驶系统（具体为街景识别与理解）、无人机应用（着陆点判断）以及穿戴式设备应用中举足轻重。

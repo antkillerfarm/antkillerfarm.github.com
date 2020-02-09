@@ -20,6 +20,10 @@ https://www.automl.org/automl/literature-on-neural-architecture-search/
 
 最新246篇自动化神经网络搜索（NAS）论文
 
+https://mp.weixin.qq.com/s/UB39kvBGXZxGsRjv451tew
+
+百度AutoDL“自动深度学习: 理论、算法、平台和应用”132PPT
+
 https://mp.weixin.qq.com/s/Ia-8qFLAyY65Nai5PGAw0w
 
 人人都能用的深度学习：当前三大自动化深度学习平台简介

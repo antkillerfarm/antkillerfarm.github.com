@@ -6,7 +6,31 @@ category: AI
 
 # Machine Learning之Python篇
 
-## 可视化（续）
+## 可视化
+
+https://github.com/neozhaoliang/pywonderland/tree/master/
+
+如何用Python画各种著名数学图案
+
+https://mp.weixin.qq.com/s/p69x5YyWxMulxx_OwX3nzQ
+
+TuChart：基于Tushare和Echarts的股票数据视觉化应用
+
+https://mp.weixin.qq.com/s/D_e8lxO3cx-dshEQ_zhfzQ
+
+如何利用散点图矩阵进行数据可视化
+
+https://mp.weixin.qq.com/s/dARWbR1ghho0yX02lNA-gw
+
+Python绘制histogram直方图
+
+https://github.com/minimaxir/stylecloud
+
+一款牛逼的词云工具，开箱即用
+
+https://mp.weixin.qq.com/s/tHNd6y2v7GXN2mSIv0qXlg
+
+手把手：一张图看清编程语言发展史，你也能用Python画出来！
 
 https://mp.weixin.qq.com/s/7M_xbmDQIlSEB1TKN3fbQw
 
@@ -49,6 +73,10 @@ https://mp.weixin.qq.com/s/1--i1OhxRNPvNnmP9bFo3g
 https://mp.weixin.qq.com/s/8wI49YBAs7ckkYdc4B_WNQ
 
 14张思维导图读懂Python编程核心知识体系
+
+https://mp.weixin.qq.com/s/BkLEc-XVBvjtmjx_04JX3Q
+
+Python大数据处理，Mastering Large Datasets with Python，311页pdf
 
 https://mp.weixin.qq.com/s/HKHLiCqEAtoCAqf4CHv86w
 
@@ -389,31 +417,3 @@ https://mp.weixin.qq.com/s/pDTbiS8xFH0llUBaN1Mb_Q
 https://mp.weixin.qq.com/s/mABDO5Sxv-Wc-gAgDQAbFQ
 
 用Python实现机器学习算法——简单的神经网络
-
-https://mp.weixin.qq.com/s/6wp4rlBODJAkYf3O4O-2GA
-
-SciPy库以及图像高斯模糊实战
-
-https://mp.weixin.qq.com/s/U4ttnC9VRO39Ic5stG9pBQ
-
-基于概率编程Pyro的金融预测，让正则化结果更有趣！
-
-https://mp.weixin.qq.com/s/8idFi0W7eJx9XDti48B9WQ
-
-Python自动生成表情包
-
-https://mp.weixin.qq.com/s/NJed2PbqBU8utLq8HQxctQ
-
-一个Python自动提取内容摘要的实践
-
-https://mp.weixin.qq.com/s/yBmpdtYJ0B5iq00dKvIprw
-
-一文教你构建图书推荐系统
-
-https://mp.weixin.qq.com/s/9kHXBJAXsvEi58WwqrjvBg
-
-Python代码和贝叶斯理论告诉你，谁是最好的棒球选手
-
-https://mp.weixin.qq.com/s/NIOLuK8-ctvncglmpIOEhQ
-
-用Python入门不明觉厉的马尔可夫链蒙特卡罗

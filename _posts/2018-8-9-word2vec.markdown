@@ -335,6 +335,12 @@ openCypher的目标是通过简化存储、分析，以及用于访问图数据�
 
 http://www.opencypher.org/
 
+参考：
+
+https://mp.weixin.qq.com/s/k4OzrgeoIICO25mCbgRKxw
+
+Cypher必知必会速查表
+
 ## RedisGraph
 
 RedisGraph是Redis推出的基于Redis的图数据库。

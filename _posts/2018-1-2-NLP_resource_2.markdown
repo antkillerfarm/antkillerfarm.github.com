@@ -102,6 +102,14 @@ https://github.com/RandolphVI/Multi-Label-Text-Classification
 
 NLP多标签文本分类代码实现工具包
 
+https://zhuanlan.zhihu.com/p/101688082
+
+Topic Memory Networks(Short Text Classification)
+
+https://mp.weixin.qq.com/s/JMFuav4zeF-ZkilsZWSUWw
+
+用深度学习（CNN RNN Attention）解决大规模文本分类问题 - 综述和实践
+
 ## 情感分析
 
 https://mp.weixin.qq.com/s/mWOhh9rJru_YDwQEB34GNg
@@ -271,6 +279,10 @@ BottleSum——文本摘要论文系列解读
 https://mp.weixin.qq.com/s/vjnENPxXzrjKW2ACD3HDkA
 
 抽取式摘要之SUMO
+
+https://mp.weixin.qq.com/s/Bmou2Fx8a0-60Aqycrg4ug
+
+基于句子嵌入的无监督文本摘要
 
 ## 句法分析
 

@@ -46,9 +46,17 @@ https://mp.weixin.qq.com/s/7BVVtILwtKuFUKLIjrsNaw
 
 ## 关系抽取
 
+https://mp.weixin.qq.com/s/Rbom_XNFcc0PrJQRvWkVfA
+
+信息抽取(Information Extraction:NER(命名实体识别),关系抽取)
+
 https://mp.weixin.qq.com/s/yN0lOmA0XmqIntqLgwn-TQ
 
 我们眼中的“关系抽取”
+
+https://www.cnblogs.com/vpegasus/p/re.html
+
+关系抽取
 
 https://mp.weixin.qq.com/s/1TcIC2BFmswQAoC-86QBaw
 
@@ -86,15 +94,31 @@ https://mp.weixin.qq.com/s/PPAIARqkYqaIYRD7SFOtBg
 
 基于分层强化学习的关系抽取
 
+https://mp.weixin.qq.com/s/HaJtc7XlCPh0KdGnUehkcg
+
+万字长文详解文本抽取：从算法理论到实践
+
+https://mp.weixin.qq.com/s/gyuq2ujb1tiAvAlXtZY4Eg
+
+聊聊“事件抽取”
+
+https://mp.weixin.qq.com/s/PmdARJQC8O42huzxZNSz3A
+
+搭建基于依存句法和短语结构句法结合的金融领域事件元素抽取系统实践
+
+https://mp.weixin.qq.com/s/FvQUvyB32XZt0AIS0m6KDw
+
+基于连通图的篇章级事件抽取与相关度计算
+
+https://mp.weixin.qq.com/s/JY6Mu7NMtEnmjEgHCg_eYg
+
+文本信息抽取与结构化
+
 ## 参考
 
 https://mp.weixin.qq.com/s/klfTdvfti0xCg2lGitG4hg
 
 用户表示方法对新浪微博中用户属性分类性能影响的研究
-
-https://mp.weixin.qq.com/s/gyuq2ujb1tiAvAlXtZY4Eg
-
-聊聊“事件抽取”
 
 https://mp.weixin.qq.com/s/IvbJ_d7z91BCcRVpJ9_jMA
 
@@ -211,10 +235,6 @@ https://mp.weixin.qq.com/s/7yi67lPjseigeaqTD269mQ
 https://mp.weixin.qq.com/s/Zo6LjGE__vQMsWyuoZm6Hw
 
 文本特征工程之N-Gram
-
-https://mp.weixin.qq.com/s/PmdARJQC8O42huzxZNSz3A
-
-搭建基于依存句法和短语结构句法结合的金融领域事件元素抽取系统实践
 
 http://www.cnblogs.com/qcloud1001/p/7910255.html
 
@@ -343,10 +363,6 @@ https://mp.weixin.qq.com/s/W-oIQRGuOHTgQtQY1jvpuA
 https://mp.weixin.qq.com/s/vLw-krU2vorr5ZUAPI7VMA
 
 李航：自然语言的现状和发展
-
-https://mp.weixin.qq.com/s/FvQUvyB32XZt0AIS0m6KDw
-
-基于连通图的篇章级事件抽取与相关度计算
 
 https://mp.weixin.qq.com/s/CQDYzRvFqJHPVXDu94pgLA
 

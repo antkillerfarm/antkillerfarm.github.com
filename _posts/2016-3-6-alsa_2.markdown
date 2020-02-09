@@ -314,22 +314,6 @@ MQTT协议之连接
 
 # Machine Learning之Python篇+
 
-https://mp.weixin.qq.com/s/tARJdv_ybTmVigTXPoeuYw
-
-还在用Matplotlib? 又一可视化神器Altair登场
-
-https://mp.weixin.qq.com/s/wwhjwQyM2r0F-hOIWV35pg
-
-Python数据科学手册专题：线性回归
-
-https://mp.weixin.qq.com/s/VZlrWwbU0nJIlSVa9PgMBQ
-
-在Python中简洁使用CSV、JSON、XML
-
-https://mp.weixin.qq.com/s/wD1BwpcVbzAJQqiWr1JueQ
-
-用Scikit-Learn构建K-近邻算法，分类MNIST数据集
-
 https://mp.weixin.qq.com/s/fb9LyEdMsfUBR6ctc1gdXA
 
 Python模拟太阳-地球-月亮运动模型

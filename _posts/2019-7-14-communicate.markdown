@@ -312,40 +312,68 @@ https://mp.weixin.qq.com/s/NKWvIJ7-J_IugnAgUehVIg
 
 博通要卖掉的射频前端，是个怎样的市场？
 
-# 世说新语
+# Machine Learning之Python篇
 
-## 2019.12（续）
+https://mp.weixin.qq.com/s/6wp4rlBODJAkYf3O4O-2GA
 
-嘉靖年间，有一个太监奉命出宫办事，办事期间和一个叫陈虎的农民发生了争执，于是他把陈虎揍了一顿。
+SciPy库以及图像高斯模糊实战
 
-陈虎回家后痛定思痛，悟出了一个道理：太监是很nb的！
+https://mp.weixin.qq.com/s/U4ttnC9VRO39Ic5stG9pBQ
 
-于是陈虎心一横，把自己的大儿子送进了宫阉了。
+基于概率编程Pyro的金融预测，让正则化结果更有趣！
 
-五十年后，这位大儿子成为了太监中的头头——司礼监掌印太监兼提督东厂。他的名字叫陈矩，是万历年间著名的太监，曾破获妖书案，稳定朝局。死后被明神宗谕祭九坛，祠额为“清忠”。
+https://mp.weixin.qq.com/s/8idFi0W7eJx9XDti48B9WQ
 
-在把大儿子送进宫后不久，陈虎又得罪了一个举人，那个举人派家丁把陈虎揍了一顿。陈虎不服，发现读书人也很厉害，于是把二儿子送去读书。
+Python自动生成表情包
 
-万历二十年，二儿子陈万策考中进士，比那个举人强了不知多少倍。虽然有哥哥暗中相助的嫌疑，虽然只是三甲，但起码是中了。
+https://mp.weixin.qq.com/s/NJed2PbqBU8utLq8HQxctQ
 
-幸好嘉靖皇帝没揍过陈虎。。。
+一个Python自动提取内容摘要的实践
 
-----
+https://mp.weixin.qq.com/s/yBmpdtYJ0B5iq00dKvIprw
 
-1940年枣宜会战期间，日军第39师团偷渡汉水支流白河时，出现了抗战八年不遇的最荒诞最富有戏剧性的一幕。
+一文教你构建图书推荐系统
 
-5月20日，傍晚时分，第233联队长神崎哲次郎派出三名侦察兵，在樊城东北20公里处白河下游渡口侦察渡河地点。
+https://mp.weixin.qq.com/s/9kHXBJAXsvEi58WwqrjvBg
 
-其中两个日军侦察兵卧倒在芦苇丛中而另一个日军士兵则始终站着。他们同时用望远镜眺望对面。其中那两名卧倒在地的日军认为，望远镜里出现的陆地就是对岸，而那名站着的士兵则认为那块陆地并不是河对岸，而只是河里的一块沙洲，三人为此争吵不止。最后向上级报告时，少数服从了多数，也就是说，以卧倒在芦苇丛中的那两人的情报描述为准。
+Python代码和贝叶斯理论告诉你，谁是最好的棒球选手
 
-拿到“正确情报”后，联队长神崎哲次郎带着三百多人的先遣队在当日夜开始偷渡白河。日军士兵拼命划船，向对面的陆地猛进，很快就弃船爬上陆地，随即升起一颗蓝色信号弹，意思是告诉后面的大部队：我们先遣队渡河已成功，上岸了！但就在信号弹发射升空的同时，一名冲在最前面的士兵怪叫一声：“不好！这里不是对岸，是河中的沙洲！”因为他跑了一会儿发现，怎么对面还有水？！
+https://mp.weixin.qq.com/s/NIOLuK8-ctvncglmpIOEhQ
 
-差不多与此同时，对岸中国军队的枪也响了。大概中国士兵还纳闷：为什么这些人才跑了一半就发射信号弹？这不提醒了中国士兵向他们开炮吗？但想不了那么多了。岸边的步枪、轻重机枪、迫击炮组成密集的弹阵射向沙洲。这片沙洲上，就有几根芦苇飘荡，没任何遮蔽物。而且，整片沙洲就那么大的地方，对岸的中国士兵根本不用瞄准，只要把所有子弹、炮弹都倾泻到沙洲上就可以了。结果是，不到半个小时，登上沙洲的300多名日军士兵全部被打成筛子。那位联队长神崎哲次郎大佐，身中12弹倒毙在尸体堆里。
+用Python入门不明觉厉的马尔可夫链蒙特卡罗
 
-最后，这真不是段子！
+https://mp.weixin.qq.com/s/Ljo36772QTUDKuRrxIRmmw
 
-对了，那三个侦察兵最后都被送上了军事法庭，虽然其中有一个人判断对了，但由于没能“及时纠正”，也和那两个蠢货一起被送回日本坐了牢。所以说猪队友实在是太可怕了！
+100多个Jupyter精选资源，有人整理在一个GitHub项目里！
 
-----
+https://mp.weixin.qq.com/s/8XDXgIm-Zcb3dL-2h9eSjA
 
-素食主义的派别：Pescetarianism是鱼素主义，可以吃鱼，乔布斯是这个派别。vegetarian是蛋奶素，可以吃蛋奶。只有vegan才是纯素，只能吃植物制品，蛋白补充主要靠豆制品。
+用Python构建NLP Pipeline，从思路到具体代码，这篇文章一次性都讲到了
+
+https://mp.weixin.qq.com/s/8H8GrAe7wMaLGWKjKUVp2Q
+
+用文本分类模型轻松搞定复杂语义分析
+
+https://mp.weixin.qq.com/s/ss9UlDU9lYokS-EDrPnOxQ
+
+如何在Python中使用LightFM构建可扩展的电子商务推荐系统？
+
+https://mp.weixin.qq.com/s/tzyj0LaJ2Ccv730UhJBdig
+
+拿起Python，防御特朗普的Twitter！
+
+https://mp.weixin.qq.com/s/tARJdv_ybTmVigTXPoeuYw
+
+还在用Matplotlib? 又一可视化神器Altair登场
+
+https://mp.weixin.qq.com/s/wwhjwQyM2r0F-hOIWV35pg
+
+Python数据科学手册专题：线性回归
+
+https://mp.weixin.qq.com/s/VZlrWwbU0nJIlSVa9PgMBQ
+
+在Python中简洁使用CSV、JSON、XML
+
+https://mp.weixin.qq.com/s/wD1BwpcVbzAJQqiWr1JueQ
+
+用Scikit-Learn构建K-近邻算法，分类MNIST数据集

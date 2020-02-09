@@ -236,10 +236,6 @@ https://mp.weixin.qq.com/s/2NOFyu_twx1EciDeDPBLKw
 
 深度神经网络加速与压缩
 
-https://www.zhihu.com/question/50519680
-
-如何理解soft target这一做法？
-
 https://mp.weixin.qq.com/s/0KlnQ8UUxpyhBRdeo0EOAA
 
 用于网络压缩的滤波器级别剪枝算法ThiNet

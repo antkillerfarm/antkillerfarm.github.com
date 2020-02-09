@@ -146,6 +146,10 @@ https://mp.weixin.qq.com/s/1cUM8_AUZ40JWGI37HsqFw
 
 换脸效果媲美GAN！一文解析OpenAI最新流生成模型Glow
 
+https://zhuanlan.zhihu.com/p/101402677
+
+最新综述论文“DeepFakes and Beyond”
+
 ## 艺术字
 
 https://mp.weixin.qq.com/s/-ZudmG9-qEPaWOu--Hd6SQ

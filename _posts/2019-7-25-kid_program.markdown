@@ -465,7 +465,7 @@ https://mp.weixin.qq.com/s/D-XvKCSUCzMGcEz_xWTwqg
 
 https://mp.weixin.qq.com/s/zDt92-5NVaAFZJRfEHCUvg
 
-什么是Native、Web App、Hybrid、React Native 和 Weex？
+什么是Native、Web App、Hybrid、React Native和Weex？
 
 https://mp.weixin.qq.com/s/pdOVONHbjfIJPW45nEw1fg
 
@@ -478,3 +478,7 @@ http://chrome.360.cn/test/html5/index.html
 https://www.zhihu.com/question/59578433
 
 为什么现在又流行服务端渲染html？
+
+https://mp.weixin.qq.com/s/aNPAfJIHL14NFtLfRvxUpQ
+
+10万人的大场馆如何“画座位”？

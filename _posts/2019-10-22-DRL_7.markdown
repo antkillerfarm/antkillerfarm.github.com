@@ -8,6 +8,12 @@ category: DRL
 
 Multi-agent Reinforcement Learning(MARL)，一般被称为多智能体强化学习。与之相对的则是Single-agent Reinforcement Learning(SARL)。
 
+书籍：
+
+http://www.masfoundations.org/download.html
+
+《MULTIAGENT SYSTEMS Algorithmic, Game-Theoretic, and Logical Foundations》
+
 以下主要参考了如下文章：
 
 https://zhuanlan.zhihu.com/p/39037444
@@ -102,6 +108,10 @@ MARL的目标是找到每一个状态的纳什均衡策略，然后将这些策�
 参考：
 
 https://zhuanlan.zhihu.com/c_1061939147282915328
+
+一个MARL方面的专栏
+
+https://www.zhihu.com/people/yao-xing-hu/posts
 
 一个MARL方面的专栏
 
@@ -305,6 +315,10 @@ https://zhuanlan.zhihu.com/p/39999667
 
 强化学习路在何方？
 
+https://mp.weixin.qq.com/s/Ns5AUGfDoTeTwnBD-pYdLA
+
+详解强化学习当前进展及未来方向
+
 https://mp.weixin.qq.com/s/oA98YyLqn1B22QZ5b_iDVA
 
 IJCAI 2018：聚焦强化学习的学习效率
@@ -336,11 +350,3 @@ https://zhuanlan.zhihu.com/p/77976582
 https://mp.weixin.qq.com/s/sHP03DAeZvdBxwVPuSNRPg
 
 如何丝滑地入门神经网络？写个AI赛车游戏，只训练4代就能安全驾驶
-
-https://mp.weixin.qq.com/s/1SZKhG1ZbD1pl-3YQD_umg
-
-6行代码搞定基本的RL算法，速度围观Reddit高赞帖
-
-https://mp.weixin.qq.com/s/6n5HawyR4AgH8Dq0gJMw2g
-
-强化学习的基本概念与代码实现

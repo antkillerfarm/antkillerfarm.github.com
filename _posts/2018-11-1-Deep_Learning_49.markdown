@@ -22,6 +22,14 @@ https://zhuanlan.zhihu.com/p/98508347
 
 论文速读：PointRend: Image Segmentation as Rendering
 
+https://blog.csdn.net/sanshibayuan/article/details/103642419
+
+单阶段实例分割（Single Shot Instance Segmentation）
+
+https://mp.weixin.qq.com/s/v_TTwTWx0lu2rJmxvzQQ4g
+
+北航、旷视联合，打造最强实时语义分割网络
+
 # Fast Image Processing
 
 ![](/images/article/FIP.png)

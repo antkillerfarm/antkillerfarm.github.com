@@ -222,6 +222,10 @@ https://zhuanlan.zhihu.com/p/100576406
 
 条件随机场及Mininum Risk Training
 
+https://www.jianshu.com/p/55755fc649b1
+
+如何轻松愉快地理解条件随机场（CRF）？
+
 ## BiLSTM+CRF
 
 ![](/images/img2/BiLSTM_CRF.jpg)
@@ -238,7 +242,7 @@ https://www.jianshu.com/p/7c83478eeb56
 
 BiLSTM模型中CRF层的运行原理-2
 
-https://mp.weixin.qq.com/s/Na07vvySqo11VXRGe2YbCg
+https://www.zhihu.com/question/62399257
 
 如何理解LSTM后接CRF？
 

@@ -102,6 +102,10 @@ http://www.cnblogs.com/EE-NovRain/p/3810737.html
 
 各大公司广泛使用的在线学习算法FTRL详解
 
+https://mp.weixin.qq.com/s/ghDTO9cauM87mMvc-8ojYQ
+
+文章推荐系统之基于FTRL模型的在线排序
+
 ## 稀疏性
 
 稀疏性问题的本质数据的不完备。我们研究稀疏性问题的意义就是使得整个推荐系统中的内容不再沉淀在冗余的空间里，而不被利用。目前推荐系统稀疏性问题的方法主要是使用多级关联规则挖掘方法、ICHM 算法、或者是矩阵聚类、信任度传播策略。其中 ICHM 算法是针对项目采用了传递关联来解决稀疏性，与之类似的还有 UCHM 算法，这个是对用户概貌进行聚类。
@@ -300,6 +304,10 @@ https://mp.weixin.qq.com/s/NJIEqlW4oKfEon3YXc1U6g
 
 混合推荐系统介绍
 
+https://mp.weixin.qq.com/s/TMxvs4TXyNo8FojbgO3K3w
+
+推荐多样性重排算法之MMR
+
 # 推荐算法中的常用排序算法
 
 ## Pointwise方法
@@ -377,6 +385,10 @@ ListwiseRank
 https://zhuanlan.zhihu.com/p/69246361
 
 基于query的排序
+
+https://www.zhihu.com/question/26933554
+
+如何评价知乎的回答排序算法？（威尔逊置信区间下界）
 
 # 用户画像
 

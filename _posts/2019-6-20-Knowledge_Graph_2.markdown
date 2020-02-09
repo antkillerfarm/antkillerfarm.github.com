@@ -337,3 +337,7 @@ Python趣味打怪：60秒学会一个例子，147段简单代码助你从入门
 https://mp.weixin.qq.com/s/Hv0rPD29PPd3Rn6lW6w5dg
 
 教你使用Python制作酷炫二维码
+
+https://mp.weixin.qq.com/s/8Fgzb8JiAoNSJqUanSi85Q
+
+鼠年做只奔跑的猫呗，卖萌式监控系统资源~（QSystemTrayIcon）

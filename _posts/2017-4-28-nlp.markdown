@@ -90,6 +90,10 @@ https://mp.weixin.qq.com/s/HcGDwZWhuL-vmF19aerJyw
 
 Jacob Eisenstein《自然语言处理》最新经典教材免费分享
 
+https://mp.weixin.qq.com/s/wutcKURaYvBGcHvLSayKAw
+
+机器阅读理解的任务与模式研究，61页pdf，多伦多约克大学
+
 ## 书籍
 
 http://ccl.pku.edu.cn/alcourse/nlp/LectureNotes/Natural%20Language%20Processing%20with%20Python.pdf
@@ -432,21 +436,3 @@ fuzzywuzzy可以很容易地实现诸如字符串比较比率、token比率等�
 代码：
 
 https://github.com/seatgeek/fuzzywuzzy
-
-## NLPchina
-
-NLPchina(中国自然语言处理开源组织)旗下有许多好用的工具。
-
-官网：
-
-http://www.nlpcn.org/
-
-Github：
-
-https://github.com/NLPchina
-
-### Ansj
-
-Ansj是一个NLPchina旗下的开源的Java中文分词工具，基于中科院的ictclas中文分词算法，比其他常用的开源分词工具（如mmseg4j）的分词准确率更高。
-
-https://github.com/NLPchina/ansj_seg

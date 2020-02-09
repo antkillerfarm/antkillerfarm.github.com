@@ -268,6 +268,10 @@ https://mp.weixin.qq.com/s/w_phnVwm13P8dU0Ks-b-YA
 
 《贝叶斯深度学习: DL与Bayesian原理 》NeurIPS2019硬核教程
 
+https://mp.weixin.qq.com/s/J_sbJb8i-O8CwhHvVyPv1w
+
+《深度贝叶斯数据挖掘》，附257页PPT下载
+
 https://mp.weixin.qq.com/s/cDqxmRVQCIqdM5oiUh82YQ
 
 Yee Whye Teh：《贝叶斯深度学习与深度贝叶斯学习》

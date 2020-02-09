@@ -357,6 +357,10 @@ https://mp.weixin.qq.com/s/RdrUlu6hBEuIu2VepeiC-Q
 
 CV+NLP，使用tf.Keras构建图像搜索引擎
 
+https://mp.weixin.qq.com/s/ksCWLX_cb9wkgAN35hjL3g
+
+使用Keras Tuner调节超参数
+
 # 网络架构
 
 ## LVS

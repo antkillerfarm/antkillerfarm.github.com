@@ -6,113 +6,7 @@ category: ML
 
 # Loss function详解
 
-## Triplet Loss（续）
-
-**triplet loss的目的就是通过学习（即上图中的Learning），让$$x^a$$和$$x^p$$特征表达之间的距离尽可能小，而$$x^a$$和$$x^n$$的特征表达之间的距离尽可能大。**
-
-它的公式化的表示就是：
-
-$$\|f(x_i^a)-f(x_i^p)\|_2^2 + \alpha < \|f(x_i^a)-f(x_i^n)\|_2^2$$
-
-其中，$$\alpha$$表示两个距离之间的间隔。因此，对应的目标函数也就很清楚了：
-
-$$\sum_i^N\left[\|f(x_i^a)-f(x_i^p)\|_2^2 - \|f(x_i^a)-f(x_i^n)\|_2^2 + \alpha \right]_+$$
-
-这里距离用欧式距离度量，+表示[]内的值大于零的时候，取该值为损失，小于零的时候，损失为零。
-
->需要注意的是Triplet Loss以及后面介绍的各种改进版softmax，其收敛速度不如softmax，因此，先用softmax训练几轮，再改用这些loss，也是常用的调参技巧。
-
-参考：
-
-https://blog.csdn.net/u010167269/article/details/52027378
-
-Triplet Loss、Coupled Cluster Loss探究
-
-https://blog.csdn.net/tangwei2014/article/details/46788025
-
-triplet loss原理以及梯度推导
-
-https://www.zhihu.com/question/62486208
-
-triplet loss在深度学习中主要应用在什么地方？有什么明显的优势？
-
-https://mp.weixin.qq.com/s/XB9VsW3NRwHua6AdRL3n8w
-
-Lossless Triplet Loss:一种高效的Siamese网络损失函数
-
-https://gehaocool.github.io/2018/03/20/Angular-Margin-%E5%9C%A8%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/
-
-Angular Margin在人脸识别中的应用
-
-https://mp.weixin.qq.com/s/SqaR_7gwJpUNPM7g4IHaYw
-
-深度人脸识别中不同损失函数的性能对比
-
-## Coupled Cluster Loss
-
-论文：
-
-《Deep Relative Distance Learning: Tell the Difference Between Similar Vehicles》
-
-
-
-参考：
-
-https://blog.csdn.net/u010167269/article/details/51783446
-
-论文中文笔记
-
-## Focal Loss
-
-https://zhuanlan.zhihu.com/p/28442066
-
-何恺明团队提出Focal Loss，目标检测精度高达39.1AP，打破现有记录
-
-https://www.zhihu.com/question/63581984
-
-如何评价Kaiming的Focal Loss for Dense Object Detection？
-
-https://mp.weixin.qq.com/s/Uf1lWtxOpKYCDLmCDlnVAQ
-
-把Cross Entropy梯度分布拉‘平’，就能轻松超越Focal Loss
-
-https://mp.weixin.qq.com/s/aKRUJt-_1QSQFcRVtuyJ4w
-
-被忽略的Focal Loss变种
-
-https://zhuanlan.zhihu.com/p/55036597
-
-样本贡献不均：Focal Loss和 Gradient Harmonizing Mechanism
-
-https://mp.weixin.qq.com/s/LfCuOEndS4Y5dPqXTsE_hA
-
-剖析Focal Loss损失函数： 消除类别不平衡+挖掘难分样本
-
-## Other Loss
-
-https://mp.weixin.qq.com/s/7Jg-YvS3nvcPJ-zYhK96EA
-
-分享神经网络中设计loss function的一些技巧
-
-https://mp.weixin.qq.com/s/cYcztl8N9JF-XXp9xLJIxg
-
-一文道尽softmax loss及其变种
-
-https://mp.weixin.qq.com/s/MTeuRYutMiCmthEAObyAIg
-
-从最优化的角度看待Softmax损失函数
-
-https://zhuanlan.zhihu.com/p/23340343
-
-Center Loss及其在人脸识别中的应用
-
-https://zhuanlan.zhihu.com/p/34404607
-
-人脸识别的LOSS（上）
-
-https://zhuanlan.zhihu.com/p/34436551
-
-人脸识别的LOSS（下）
+## Other Loss（续）
 
 https://mp.weixin.qq.com/s/kI22wSoyNT3QXXI8pVwbjA
 
@@ -129,6 +23,10 @@ https://mp.weixin.qq.com/s/VNPX5BADo4EJkIp1yWGoag
 https://mp.weixin.qq.com/s/piYyhPbA6kAXuSE5yHfQ1g
 
 人脸识别损失函数综述
+
+https://zhuanlan.zhihu.com/p/60747096
+
+人脸识别损失函数简介与Pytorch实现：ArcFace、SphereFace、CosFace
 
 ## 参考
 
@@ -195,6 +93,34 @@ https://mp.weixin.qq.com/s/AmXF0xA_T-ZjjnOt4XRgRw
 https://www.zhihu.com/question/268105631
 
 神经网络中，设计loss function有哪些技巧?
+
+https://mp.weixin.qq.com/s/7cr6ptZucXzsZauItcZehw
+
+使用一个特别设计的损失来处理类别不均衡的数据集
+
+https://www.zhihu.com/question/264892967
+
+深度学习中loss和accuracy的关系?
+
+https://zhuanlan.zhihu.com/p/82199561
+
+深度度量学习中的损失函数
+
+https://mp.weixin.qq.com/s/CbORYhJQn27J0G4G6XpODw
+
+用于弱监督图像语义分割的新型损失函数
+
+https://mp.weixin.qq.com/s/Yo68YnMMvy5FXkCjBLCJuw
+
+常见的损失函数
+
+https://mp.weixin.qq.com/s/ZbryNlV3EnODofKs2d01RA
+
+目标检测回归损失函数简介：Smooth L1/IoU/GIoU/DIoU/CIoU Loss
+
+https://mp.weixin.qq.com/s/F07Wp-cXIOE4-qdL55WtJQ
+
+基于DIou改进的YOLOv3目标检测
 
 # 机器学习分类器性能指标
 

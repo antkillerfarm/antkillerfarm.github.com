@@ -168,6 +168,14 @@ https://www.zhihu.com/question/47736315
 
 通俗的解释欧拉角，之后为何要引入四元数？
 
+https://mp.weixin.qq.com/s/QkWCcr86yX_M-T_rT_fwBQ
+
+电影中不可舍弃的数学体系。本文介绍了四元数等空间变换的数学概念
+
+https://zhuanlan.zhihu.com/p/103893075
+
+最适合深度学习的三维旋转表示
+
 https://zhuanlan.zhihu.com/p/25822544
 
 MATLAB R2017a: 自动驾驶工具箱
@@ -195,10 +203,6 @@ https://mp.weixin.qq.com/s/j_rkmJ09QxhtzFH_Xa1Evw
 https://mp.weixin.qq.com/s/DhA9V5IlNAaa4qpWHVQCPA
 
 一个机器学者的故事：机器人工程师学习计划
-
-https://mp.weixin.qq.com/s/QkWCcr86yX_M-T_rT_fwBQ
-
-电影中不可舍弃的数学体系。本文介绍了四元数等空间变换的数学概念
 
 https://mp.weixin.qq.com/s/pOX84vc2JlYidkTZt73rcQ
 

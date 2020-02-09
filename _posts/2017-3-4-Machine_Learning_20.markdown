@@ -6,53 +6,7 @@ category: ML
 
 # 关联规则挖掘
 
-## 基本概念
-
-关联规则挖掘（Association rule mining）是机器学习的一个子领域。它最早的案例就是以下的**尿布和啤酒**的故事：
-
->沃尔玛曾今对数据仓库中一年多的原始交易数据进行了详细的分析，发现与尿布一起被购买最多的商品竟然是啤酒。   
->借助数据仓库和关联规则，发现了这个隐藏在背后的事实：**美国妇女经常会嘱咐丈夫下班后为孩子买尿布，而30%~40%的丈夫在买完尿布之后又要顺便购买自己爱喝的啤酒。**   
->根据这个发现，沃尔玛调整了货架的位置，把尿布和啤酒放在一起销售，大大增加了销量。
-
-这里借用一个引例来介绍关联规则挖掘的基本概念。
-
-| 交易号TID | 顾客购买的商品 | 交易号TID | 顾客购买的商品 |
-|:--:|:--|:--:|:--|
-| T1 | bread, cream, milk, tea | T6 | bread, tea |
-| T2 | bread, cream, milk | T7 | beer, milk, tea |
-| T3 | cake, milk | T8 | bread, tea |
-| T4 | milk, tea | T9 | bread, cream, milk, tea |
-| T5 | bread, cake, milk | T10 | bread, milk, tea |
-
-**定义一**：设$$I=\{i_1,i_2,\dots,i_m\}$$，是m个不同的项目的集合，每个$$i_k$$称为一个**项目**。项目的集合I称为**项集**。其元素的个数称为项集的长度，长度为k的项集称为k-项集。引例中每个商品就是一个项目，项集为$$I=\{bread, beer, cake,cream, milk, tea\}$$，I的长度为6。
-
-**定义二**：每笔**交易T**是项集I的一个子集。对应每一个交易有一个唯一标识交易号，记作TID。交易全体构成了**交易数据库D**，$$\mid D\mid$$等于D中交易的个数。引例中包含10笔交易，因此$$\mid D\mid=10$$。
-
-**定义三**：对于项集X，设定$$count(X\subseteq T)$$为交易集D中包含X的交易的数量，则项集X的**支持度**为：
-
-$$support(X)=\frac{count(X\subseteq T)}{\mid D\mid }$$
-
-引例中$$X=\{bread, milk\}$$出现在T1，T2，T5，T9和T10中，所以支持度为0.5。
-
-**定义四**：**最小支持度**是项集的最小支持阀值，记为$$SUP_{min}$$，代表了用户关心的关联规则的最低重要性。支持度不小于$$SUP_{min}$$的项集称为频繁集，长度为k的频繁集称为k-频繁集。如果设定$$SUP_{min}$$为0.3，引例中$$\{bread, milk\}$$的支持度是0.5，所以是2-频繁集。
-
-**定义五**：**关联规则**是一个蕴含式：
-
-$$R：X\Rightarrow Y$$
-
-其中$$X\subset I$$，$$Y\subset I$$，并且$$X\cap Y=\varnothing$$。表示项集X在某一交易中出现，则导致Y以某一概率也会出现。用户关心的关联规则，可以用两个标准来衡量：支持度和可信度。
-
-**定义六**：关联规则R的**支持度**是交易集同时包含X和Y的交易数与$$\mid D\mid$$之比。即：
-
-$$support(X\Rightarrow Y)=\frac{count(X\cap Y)}{\mid D\mid }$$
-
-支持度反映了X、Y同时出现的概率。关联规则的支持度等于频繁集的支持度。
-
-**定义七**：对于关联规则R，**可信度**是指包含X和Y的交易数与包含X的交易数之比。即：
-
-$$confidence(X\Rightarrow Y)=\frac{support(X\Rightarrow Y)}{support(X)}$$
-
-可信度反映了如果交易中包含X，则交易包含Y的概率。一般来说，只有支持度和可信度较高的关联规则才是用户感兴趣的。
+## 基本概念（续）
 
 **定义八**：设定关联规则的最小支持度和最小可信度为$$SUP_{min}$$和$$CONF_{min}$$。规则R的支持度和可信度均不小于$$SUP_{min}$$和$$CONF_{min}$$，则称为**强关联规则**。关联规则挖掘的目的就是找出强关联规则，从而指导商家的决策。
 
@@ -182,3 +136,91 @@ $$confidence(买游戏光碟\to 买影片光碟)=4000/6000=66\%$$
 这条规则的支持度和自信度都满足要求，因此我们很兴奋，我们找到了一条强规则，于是我们建议超市把影片光碟和游戏光碟放在一起，可以提高销量。
 
 可是我们想想，一个喜欢的玩游戏的人会有时间看影片么，这个规则是不是有问题，事实上这条规则误导了我们。在整个数据集中买影片光碟的概率p(买影片)=7500/10000=75%，而买游戏的人也买影片的概率只有66%，66%<75%恰恰说明了买游戏光碟抑制了影片光碟的购买，也就是说买了游戏光碟的人更倾向于不买影片光碟，这才是符合现实的。
+
+从上面的例子我们看到，支持度和自信度并不总能成功滤掉那些我们不感兴趣的规则，因此我们需要一些新的评价标准，下面介绍几种评价标准：
+
+### 相关性系数
+
+相关性系数的英文名是Lift，这就是一个单词，而不是缩写。
+
+$$\mathrm{lift}(X\Rightarrow Y) = \frac{ \mathrm{supp}(X \cup Y)}{ \mathrm{supp}(X) \times \mathrm{supp}(Y) }$$
+
+$$\mathrm{lift}(X\Rightarrow Y)\begin{cases}
+>1, & 正相关 \\
+=1, & 独立 \\
+<1, & 负相关 \\
+\end{cases}$$
+
+实际运用中，正相关和负相关都是我们需要关注的，而独立往往是我们不需要的。显然：
+
+$$\mathrm{lift}(X\Rightarrow Y)=\mathrm{lift}(Y\Rightarrow X)$$
+
+### 确信度
+
+Conviction的定义如下：
+
+$$\mathrm{conv}(X\Rightarrow Y) =\frac{ 1 - \mathrm{supp}(Y) }{ 1 - \mathrm{conf}(X\Rightarrow Y)}$$
+
+它的值越大，表明X、Y的独立性越小。
+
+### 卡方系数
+
+卡方系数是与卡方分布有关的一个指标。参见：
+
+https://en.wikipedia.org/wiki/Chi-squared_distribution
+
+$$\chi^2 = \sum_{i=1}^n \frac{(O_i - E_i)^2}{E_i}$$
+
+>注：上式最早是Pearson给出的。
+
+公式中的$$O_i$$表示数据的实际值，$$E_i$$表示期望值，不理解没关系，我们看一个例子就明白了。
+
+| 表2 | 买游戏 | 不买游戏 | 行总计 |
+|:--:|:--|:--:|:--|
+| 买影片 | 4000(4500) | 3500(3000) | 7500 |
+| 不买影片 | 2000(1500) | 500(1000) | 2500 |
+| 列总计 | 6000 | 4000 | 10000 |
+
+表2的括号中表示的是期望值。以第1行第1列的4500为例，其计算方法为：7500×6000/10000。
+
+经计算可得表2的卡方系数为555.6。基于置信水平和自由度$$(r-1)*(c-1)=(行数-1)*(列数-1)=1$$，查表得到自信度为(1-0.001)的值为6.63。
+
+555.6>6.63，因此拒绝A、B独立的假设，即认为A、B是相关的，而$$E(买影片，买游戏)=4500>4000$$,因此认为A、B呈负相关。
+
+### 全自信度
+
+$$all\_confidence(A,B)=\frac{P(A\cap B)}{max\{P(A),P(B)\}}\\=min\{P(B|A),P(A|B)\}=min\{confidence(A\to B),confidence(B\to A)\}$$
+
+### 最大自信度
+
+$$max\_confidence(A,B)=max\{confidence(A\to B),confidence(B\to A)\}$$
+
+### Kulc
+
+$$kulc(A,B)=\frac{confidence(A\to B)+confidence(B\to A)}{2}$$
+
+### cosine距离
+
+$$cosine(A,B)=\frac{P(A\cap B)}{sqrt(P(A)*P(B))}=sqrt(P(A|B)*P(B|A))\\=sqrt(confidence(A\to B)*confidence(B\to A))$$
+
+### Leverage
+
+$$Leverage(A,B) = P(A\cap B)-P(A)P(B)$$
+
+### 不平衡因子
+
+imbalance ratio的定义：
+
+$$IR(A,B)=\frac{|support(A)-support(B)|}{(support(A)+support(B)-support(A\cap B))}$$
+
+全自信度、最大自信度、Kulc、cosine，Leverage是不受空值影响的，这在处理大数据集是优势更加明显，因为大数据中空记录更多，根据分析我们推荐使用kulc准则和不平衡因子结合的方法。
+
+参考：
+
+http://www.cnblogs.com/fengfenggirl/p/associate_measure.html
+
+关联规则评价
+
+https://mp.weixin.qq.com/s/s1Snb4XnIQk1DcK3nESilw
+
+PrefixSpan算法原理详解

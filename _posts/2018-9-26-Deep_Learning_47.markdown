@@ -319,3 +319,7 @@ https://mp.weixin.qq.com/s/ABNPCpgyk_2EeYwnJFFehg
 https://mp.weixin.qq.com/s/0kGJfKARKs2TuIQ4YJYbUA
 
 比手工模型快10~100倍，谷歌揭秘视频NAS三大法宝
+
+https://zhuanlan.zhihu.com/p/100570132
+
+NAS evaluation is frustratingly hard

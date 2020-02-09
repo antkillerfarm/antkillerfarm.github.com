@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Raspberry Pi, UPNP（二）
+title:  Raspberry Pi
 category: technology 
 ---
 
@@ -267,6 +267,10 @@ https://mp.weixin.qq.com/s?__biz=MzU1OTMyNDcxMQ==&mid=2247484969&idx=1&sn=29d04f
 
 基于源代码为Raspberry Pi设备构建TensorFlow
 
+https://mp.weixin.qq.com/s/8zD3GqbQrQnZmuD59OoFuQ
+
+让树莓派记下你的笑颜
+
 ## Raspberry Pi 4
 
 2019.6
@@ -282,39 +286,3 @@ https://mp.weixin.qq.com/s?__biz=MzU1OTMyNDcxMQ==&mid=2247484969&idx=1&sn=29d04f
 | Video | 2560x1600 | Dual 4K |
 
 >VideoCore是Broadcom旗下的GPU产品。
-
-# UPNP（二）
-
-## upnp-inspector
-
-upnp-inspector是一个局域网内的UPNP协议的嗅探分析器。可充当DMC，推送多媒体数据到相关DLNA设备。安装方法如下：
-
-`sudo apt-get install upnp-inspector`
-
-upnp-inspector的功能包括：
-
-1.列出局域网内的UPNP设备。
-
-2.列出UPNP设备所支持的UPNP服务。
-
-3.列出UPNP服务所支持的函数，并可发送相关函数。（左键双击树状列表中的函数名即可）
-
-upnp-inspector是coherence的一部分。后者是一个Python语言写的DLNA框架。它的官网：
-
-http://coherence-project.org/
-
-upnp-inspector的代码地址：
-
-https://github.com/coherence-project/UPnP-Inspector
-
-## libmcupnp
-
-libmcupnp是一个基于libupnp的Control Point实现，用C++写的。从代码来看，明显参考了libupnp里的demo示例。
-
-https://sourceforge.net/projects/libmcupnp/
-
-## gupnp
-
-这是GNOME项目的upnp库，使用libsoup处理HTTP，libxml处理XML。它的官网是：
-
-https://wiki.gnome.org/Projects/GUPnP

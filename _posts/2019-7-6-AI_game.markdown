@@ -305,25 +305,3 @@ https://mp.weixin.qq.com/s/pejkWw0mqKMAErfj3u_Vpg
 https://mp.weixin.qq.com/s/Mdq9fL10Zcjs_z3PeqtN9Q
 
 腾讯AI单挑碾压王者荣耀职业玩家：人类15场只能赢1局，坚持不到8分钟
-
-# Machine Learning之Python篇
-
-https://mp.weixin.qq.com/s/Ljo36772QTUDKuRrxIRmmw
-
-100多个Jupyter精选资源，有人整理在一个GitHub项目里！
-
-https://mp.weixin.qq.com/s/8XDXgIm-Zcb3dL-2h9eSjA
-
-用Python构建NLP Pipeline，从思路到具体代码，这篇文章一次性都讲到了
-
-https://mp.weixin.qq.com/s/8H8GrAe7wMaLGWKjKUVp2Q
-
-用文本分类模型轻松搞定复杂语义分析
-
-https://mp.weixin.qq.com/s/ss9UlDU9lYokS-EDrPnOxQ
-
-如何在Python中使用LightFM构建可扩展的电子商务推荐系统？
-
-https://mp.weixin.qq.com/s/tzyj0LaJ2Ccv730UhJBdig
-
-拿起Python，防御特朗普的Twitter！

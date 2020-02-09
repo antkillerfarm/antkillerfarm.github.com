@@ -4,7 +4,7 @@ title:  深度加速（五）——模型压缩与加速（2）
 category: DL acceleration 
 ---
 
-# 模型压缩与加速
+# 模型压缩与加速（续）
 
 https://mp.weixin.qq.com/s/YUg2dZZhDSsRpSftdNfiIQ
 
@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/tCdG9gvpav1SvEzyAyBZXA
 
 谷歌EfficientNet缩放模型，PyTorch实现出炉，登上GitHub热榜
 
+https://mp.weixin.qq.com/s/NPM4E2gGOf3awQw7-_s6Uw
+
+令人拍案叫绝的EfficientNet和EfficientDet
+
 https://mp.weixin.qq.com/s/jHv3Amti1YZq51Df2mNFtg
 
 network sliming:加快模型速度同时不损失精度
@@ -373,15 +377,3 @@ https://mp.weixin.qq.com/s/oDwvMtET0moHVGgtQLfCow
 https://mp.weixin.qq.com/s/nbEa0csbaMvEM3TCI3fn0Q
 
 当前模型剪枝有哪些可用的开源工具？
-
-https://mp.weixin.qq.com/s/0_66CScEk0qhGlTvfpmqBA
-
-2019年的最后一个月，这里有6种你必须要知道的最新剪枝技术
-
-https://mp.weixin.qq.com/s/u94NZVwb_ywqjTMla2upbQ
-
-模型压缩究竟在做什么？我们真的需要模型压缩么？
-
-https://mp.weixin.qq.com/s/Qr2Q2ARht0pEP3F8l3k98g
-
-滴滴&东北大学提出自动结构化剪枝压缩算法框架，性能提升高达120倍

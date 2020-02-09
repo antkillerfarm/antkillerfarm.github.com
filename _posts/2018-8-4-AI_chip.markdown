@@ -116,6 +116,8 @@ Habana的产品线主要有：
 
 https://habana.ai
 
+>2019.12 Habana被Intel收购。
+
 参考：
 
 https://mp.weixin.qq.com/s/cnHQSmM89Sp92gke_F9T2Q
