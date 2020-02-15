@@ -240,6 +240,22 @@ https://mp.weixin.qq.com/s/vtj1HgDC2slsOw9DGoURCA
 
 # DRL参考资源+
 
+https://mp.weixin.qq.com/s/vYDb1rTdPxO1sIS38VX5xA
+
+DeepMind的AI学会了画画，利用强化学习完全不需人教：SPIRAL
+
+https://mp.weixin.qq.com/s/rpPN2rgru6krRz2fr1RhsQ
+
+模拟世界的模型：谷歌大脑与Jürgen Schmidhuber提出“人工智能梦境”
+
+https://mp.weixin.qq.com/s/AelAD57G4GOh7qm-_rvYsg
+
+伯克利提出DeepMimic：使用强化学习练就18般武艺
+
+https://mp.weixin.qq.com/s/0AM4eASolsPZ7GtPYVBqDQ
+
+伯克利今年大热的DeepMimic开源了~
+
 https://zhuanlan.zhihu.com/p/35567591
 
 强化学习在关系抽取、QA场景的应用
@@ -287,6 +303,10 @@ https://mp.weixin.qq.com/s/nnWuIPk_6mI9IAKIUbx6KQ
 https://mp.weixin.qq.com/s/RNJonPJL9JY5OH2-1sZMQw
 
 中山大学HCP实验室：基于树状结构策略的渐进强化学习
+
+https://mp.weixin.qq.com/s/-Cd7rQY3c3CINjtB99UZWw
+
+自动驾驶领域中的强化学习，附18页论文下载
 
 # Python+
 

@@ -353,19 +353,3 @@ Vicarious详解新型图式网络：赋予强化学习泛化能力
 https://mp.weixin.qq.com/s/C8hsGkHGtoaS9Vzm6Ub4tw
 
 Berkeley提出“随机搜索”训练线性策略，提高RL的性能
-
-https://mp.weixin.qq.com/s/vYDb1rTdPxO1sIS38VX5xA
-
-DeepMind的AI学会了画画，利用强化学习完全不需人教：SPIRAL
-
-https://mp.weixin.qq.com/s/rpPN2rgru6krRz2fr1RhsQ
-
-模拟世界的模型：谷歌大脑与Jürgen Schmidhuber提出“人工智能梦境”
-
-https://mp.weixin.qq.com/s/AelAD57G4GOh7qm-_rvYsg
-
-伯克利提出DeepMimic：使用强化学习练就18般武艺
-
-https://mp.weixin.qq.com/s/0AM4eASolsPZ7GtPYVBqDQ
-
-伯克利今年大热的DeepMimic开源了~

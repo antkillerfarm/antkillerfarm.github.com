@@ -110,6 +110,10 @@ https://mp.weixin.qq.com/s/epsXg46st-37FjwIjPUOqg
 
 124页ppt，Learning with Small Data，宾夕法尼亚州立大学
 
+https://mp.weixin.qq.com/s/FqS6RsL8Ewp2m_qr1hpQ1w
+
+AAAI2020最新“迁移表示学习最新进展”247页PPT，宾夕法尼亚大学
+
 https://mp.weixin.qq.com/s/sAf2fLLnKHOs433pV_6bSQ
 
 One-shot Learning：孪生网络少样本精准分类
@@ -344,31 +348,3 @@ Deep Domain Adaptation论文集(三)：基于深度网络结构差异&几何差�
 https://zhuanlan.zhihu.com/p/57083034
 
 Deep Domain Adaptation论文集(四)：基于生成对抗网络GAN
-
-https://zhuanlan.zhihu.com/p/57656210
-
-Deep Domain Adaptation论文集(五)：基于数据重构的迁移方法
-
-https://zhuanlan.zhihu.com/p/57930557
-
-Deep Domain Adaptation论文集(六)：源域与目标域特征空间不一致的处理方法
-
-https://zhuanlan.zhihu.com/p/58514431
-
-Domain Adaptation：不用深度网络，如何处理源域和目标域异构问题？
-
-https://mp.weixin.qq.com/s/U45X5kKMw_E4vfHfVmWZTA
-
-FSAF：来自CMU的Single-Shot目标检测算法
-
-https://mp.weixin.qq.com/s/45CLHvP1cumzcwMV0myj_g
-
-微软-少标签样本构建高性能文本分类器
-
-https://zhuanlan.zhihu.com/p/60420771
-
-领域自适应：利用DIRT-T模型提高性能
-
-https://mp.weixin.qq.com/s/duJK5y9ZeFkYsFkAg4E2Jw
-
-IBM-小样本学习（Few-shot Learning）State of the art方法及论文讲解

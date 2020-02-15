@@ -112,6 +112,14 @@ https://github.com/yuantiku/ytk-learn
 
 https://github.com/yuantiku/ytk-mp4j
 
+## Apache Zeppelin
+
+Zeppelin是一个让交互式数据分析变得可行的基于网页的开源框架。Zeppelin提供了数据分析、数据可视化等功能。
+
+官网：
+
+https://zeppelin.apache.org/
+
 ## 参考
 
 https://mp.weixin.qq.com/s/WsjZERRkgnReWuDw_z5Hxw

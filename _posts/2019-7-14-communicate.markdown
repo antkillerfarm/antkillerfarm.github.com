@@ -312,7 +312,7 @@ https://mp.weixin.qq.com/s/NKWvIJ7-J_IugnAgUehVIg
 
 博通要卖掉的射频前端，是个怎样的市场？
 
-# Machine Learning之Python篇
+# Machine Learning之Python篇+
 
 https://mp.weixin.qq.com/s/6wp4rlBODJAkYf3O4O-2GA
 
@@ -377,3 +377,31 @@ https://mp.weixin.qq.com/s/VZlrWwbU0nJIlSVa9PgMBQ
 https://mp.weixin.qq.com/s/wD1BwpcVbzAJQqiWr1JueQ
 
 用Scikit-Learn构建K-近邻算法，分类MNIST数据集
+
+https://mp.weixin.qq.com/s/fb9LyEdMsfUBR6ctc1gdXA
+
+Python模拟太阳-地球-月亮运动模型
+
+https://mp.weixin.qq.com/s/VmLphhs8rGabdNXtvllgdQ
+
+教你用Python实现简单监督学习算法
+
+https://mp.weixin.qq.com/s/TglQzG1iE0keEGLKZ-pGIg
+
+Python数据处理实战——使用Scikit-Learn进行多类文本分类
+
+https://mp.weixin.qq.com/s/WdYa7Q-yA-s_EO59YkYbqw
+
+7个基本机器学习算法Python实现
+
+https://mp.weixin.qq.com/s/EqLzNzzMcwq5SEyBoTsuug
+
+11种NLP文本预处理Python代码，简洁实用
+
+https://mp.weixin.qq.com/s/mCUdK4i6XGEyaWNCIWA-wQ
+
+集五福，我用Python
+
+https://mp.weixin.qq.com/s/6x5Wmpy4Im0x3Ddua9rvFw
+
+用python怎样识别验证码？传统方法，非DL

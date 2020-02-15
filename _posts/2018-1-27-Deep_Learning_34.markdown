@@ -170,10 +170,6 @@ https://mp.weixin.qq.com/s/QW7t7iaIN1yaHYzOtwgYAQ
 
 Representation Learning on Network网络表示学习
 
-https://mp.weixin.qq.com/s/F2jF1vuzK4u8ZPrDK_CyLw
-
-KDD2018 网络表示学习最新教程：DeepWalk作者Perozzi等人带你探索最前沿
-
 https://mp.weixin.qq.com/s/KK-_G7Sc9HyYlxH1nLxVfA
 
 斯坦福大学提出全新网络嵌入方法—GraphWave

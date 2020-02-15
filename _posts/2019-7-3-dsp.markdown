@@ -303,3 +303,7 @@ https://mp.weixin.qq.com/s/gGCyMq4PM_Whv-Ssiwt-HA
 https://mp.weixin.qq.com/s/2EHv669PUqqgvAGz3XoZ6Q
 
 FaceBook开源PyTorch3D：基于PyTorch的新3D计算机视觉库
+
+https://mp.weixin.qq.com/s/Z27oInh5rdxnxt1-KFAiRA
+
+1GB文本标记只需20秒！抱抱脸团队发布最新NLP工具

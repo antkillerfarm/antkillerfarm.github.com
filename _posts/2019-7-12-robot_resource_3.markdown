@@ -377,3 +377,11 @@ https://mp.weixin.qq.com/s/S3d7aCWmfmpAEthaals4OQ
 https://mp.weixin.qq.com/s/Qd0isykbzEFs__sxxIHDWw
 
 基于Unity的自动驾驶模拟
+
+https://zhuanlan.zhihu.com/p/105849060
+
+综述论文：A Survey of Deep Learning Applications to Autonomous Vehicle Control
+
+https://mp.weixin.qq.com/s/hqOxoU6G_2RjS2WbbHoxHg
+
+深度学习技术在自动驾驶中的应用与挑战

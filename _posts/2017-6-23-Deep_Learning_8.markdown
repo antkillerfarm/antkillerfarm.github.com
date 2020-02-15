@@ -238,6 +238,10 @@ https://mp.weixin.qq.com/s/OcrT2-sAWJg-ILdHwi4t5Q
 
 seq2seq最新变体，稀疏序列模型
 
+https://mp.weixin.qq.com/s/_1lr612F3x8ld9gvXj9L2A
+
+推断速度达seq2seq模型的100倍，谷歌开源文本生成新方法LaserTagger
+
 # CNN进化史
 
 ## 计算机视觉
@@ -311,23 +315,3 @@ https://mp.weixin.qq.com/s/FzCrOiFuutqSQSp4VcydoQ
 换个视角：
 
 ![](/images/article/AlexNet_2.png)
-
-AlexNet的caffe模板：
-
-https://github.com/BVLC/caffe/blob/master/models/bvlc_alexnet/deploy.prototxt
-
-其中的LRN（Local Response Normalization）层也是当年的遗迹，被后来的实践证明，对于最终效果和运算量没有太大帮助，因此也就慢慢废弃了。
-
-虽然，LeNet-5是CNN的开山之作（它不是最早的CNN，但却是奠定了现代CNN理论基础的模型），但是毕竟年代久远，和现代实用的CNN相比，结构实在过于原始。
-
-AlexNet作为第一个现代意义上的CNN，它的意义主要包括：
-
-1.Data Augmentation。包括水平翻转、随机裁剪、平移变换、颜色、光照变换等。
-
-2.Dropout。
-
-3.ReLU激活函数。
-
-4.多GPU并行计算。
-
-5.当然最应该感谢的是李飞飞团队搞出来的标注数据集合ImageNet。

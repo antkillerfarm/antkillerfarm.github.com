@@ -6,6 +6,42 @@ category: Deep Object Detection
 
 # 目标检测进阶
 
+https://mp.weixin.qq.com/s/-G47vOGx2iNQCarYRAiNPg
+
+基于区域分解集成的目标检测
+
+https://mp.weixin.qq.com/s/rlmgN0LbUfd2n9MI8OMT2w
+
+性能大幅度提升（速度&遮挡）:基于区域分解&集成的目标检测
+
+https://zhuanlan.zhihu.com/p/59398728
+
+CVPR2019目标检测方法进展综述
+
+https://mp.weixin.qq.com/s/apLEAMshqd3O8nU8Q0Wycg
+
+李祥泰：Context modeling in semantic segmentation
+
+https://mp.weixin.qq.com/s/svqygu4nFkW4ci7dYMnKsw
+
+小目标检测的数据增广秘籍
+
+https://mp.weixin.qq.com/s/bzgMWR2kzAI9NeXEY92GmA
+
+目标检测任务的优化策略tricks
+
+https://mp.weixin.qq.com/s/0_ap6CsBlz4pvx21c57-ag
+
+旷视研究院提出新型损失函数：改善边界框模糊问题
+
+https://zhuanlan.zhihu.com/p/67714508
+
+“取长补短”的RefineDet物体检测算法
+
+https://mp.weixin.qq.com/s/pB3_ho7JLANKRtQK4gsR5Q
+
+Kaggle实战目标检测奇淫技巧合集
+
 https://mp.weixin.qq.com/s/PpT-NmTVjRi0_SEq0lISXw
 
 旷视科技Oral论文解读：IoU-Net让目标检测用上定位置信度
@@ -233,3 +269,7 @@ Anchor free的目标检测进阶版本
 https://mp.weixin.qq.com/s/Aq2OJqGnT6z4zoG-6rslkQ
 
 商汤科技提出新弱监督目标检测框架
+
+https://zhuanlan.zhihu.com/p/82371629
+
+Imbalance Problems in Object Detection: A Review

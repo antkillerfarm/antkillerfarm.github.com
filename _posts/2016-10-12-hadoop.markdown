@@ -197,7 +197,51 @@ https://mp.weixin.qq.com/s/0qgaJnZjYsf0WP2z5yGgrg
 
 面试集锦：HDFS
 
-# BERT+
+# BERT
+
+https://zhuanlan.zhihu.com/p/62308732
+
+浅谈Bert：语言理解中的预训练编码器
+
+https://mp.weixin.qq.com/s/1Cz6js4kYdvc8g4oKjVPeA
+
+BERT烹饪之法：fintune的艺术
+
+https://mp.weixin.qq.com/s/nVM2Kxc_Mn7BAC6-Pig2Uw
+
+BERT模型的标准调优和花式调优
+
+https://mp.weixin.qq.com/s/FwmEIZ3ugeZBbLIGHmH-_g
+
+BERT之后，GLUE基准升级为SuperGLUE：难度更大
+
+https://mp.weixin.qq.com/s/SDVxn3Ra1dKmr-XgKNg5IA
+
+罗玲：From Word Representation to BERT
+
+https://mp.weixin.qq.com/s/-bh8BL4LxnevS8xnW5U9ZA
+
+中科院自动化所提出BIFT模型：面向自然语言生成，同步双向推断
+
+https://mp.weixin.qq.com/s/7yCnAHk6x0ICtEwBKxXpOw
+
+序列到序列自然语言生成任务超越BERT、GPT！微软提出通用预训练模型MASS
+
+https://mp.weixin.qq.com/s/7sIUaSON53hsXUJjq8uVUA
+
+马聪：NLP中的生成式预训练模型
+
+https://mp.weixin.qq.com/s/s1bQFdA6gtoHeeQMJKQ8UQ
+
+Bert时代的创新：Bert应用模式比较及其它
+
+https://mp.weixin.qq.com/s/zqlWx3e4LOJ3_Zy2DEbCjw
+
+从语言模型看Bert的善变与GPT的坚守
+
+https://mp.weixin.qq.com/s/LngE10Hnqe9bgFzpNfUwLQ
+
+NLP中的词向量对比：word2vec/glove/fastText/elmo/GPT/bert
 
 https://mp.weixin.qq.com/s/MgLLPEY3ynJGkuTgnIXndQ
 
@@ -290,27 +334,3 @@ https://mp.weixin.qq.com/s/OXkXjPHhaMXsKw2YevV6sw
 https://mp.weixin.qq.com/s/6i9eQISKsWU0jawKzWg8nQ
 
 超越bert，最新预训练模型ELECTRA论文阅读笔记
-
-https://zhuanlan.zhihu.com/p/91052495
-
-当BERT遇上知识图谱
-
-https://mp.weixin.qq.com/s/wQW-JT-sGMj60OtXwTssyQ
-
-BERT模型推理加速总结
-
-https://mp.weixin.qq.com/s/HOD1Hb70NhTXXCXlopzfng
-
-BERT推理加速实践
-
-https://mp.weixin.qq.com/s/0luHJsw7WWJskJWGThR5qg
-
-使用BERT做文本摘要
-
-https://mp.weixin.qq.com/s/m_FU4NmjUsvxusRidDb-Xg
-
-UniLM:一种既能阅读又能自动生成的预训练模型
-
-https://mp.weixin.qq.com/s/IY8J09LvDAr8owYffKi5Dw
-
-五问BERT：深入理解NLP领域爆红的预训练模型

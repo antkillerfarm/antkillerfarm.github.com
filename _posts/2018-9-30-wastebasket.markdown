@@ -300,6 +300,10 @@ https://mp.weixin.qq.com/s/BfQ0qUHpAfmB3_mHvyeCDw
 
 不好！为了一点铅，物理学家和考古学家打起来了！（低本底铅）
 
+https://mp.weixin.qq.com/s/irMd_sRRwZhbTuIXo3na6Q
+
+今天，说一下人工钻石（钻石半导体）
+
 ## 空气动力学
 
 https://mp.weixin.qq.com/s/ei84HDZIkXQr2k0ghlN_Mw
@@ -353,13 +357,3 @@ https://mp.weixin.qq.com/s/BIy4Ly3eIMOrXRbpjFRFYQ
 http://www.makertime.org/
 
 一个硬核的geek网站
-
-## Bélády's Algorithm
-
-Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。
-
->László Bélády，1928年生，匈牙利计算机科学家。Technical University of Budapest本硕。IBM研究员。
-
-https://mp.weixin.qq.com/s/AdmEd1FHxpZUwSGYy3qggg
-
-利用cpu缓存实现高性能程序

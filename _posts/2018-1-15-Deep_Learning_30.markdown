@@ -6,6 +6,42 @@ category: DL
 
 # Graph NN（续）
 
+https://zhuanlan.zhihu.com/p/34232818
+
+《Graph Attention Networks》阅读笔记
+
+https://zhuanlan.zhihu.com/p/28170197
+
+《Gated Graph Sequence Neural Networks》阅读笔记
+
+https://blog.csdn.net/yorkhunter/article/details/104056795
+
+综述论文“A Comprehensive Survey on Graph Neural Networks”
+
+https://mp.weixin.qq.com/s/rTnv7XOnIvRDGDdhbuoE9g
+
+深度图相似学习综述
+
+https://mp.weixin.qq.com/s/FDWoAXGOlRxOEkvli3gd5Q
+
+55页图深度学习导论《A Gentle Introduction to Deep Learning for Graphs》
+
+https://mp.weixin.qq.com/s/Pm1HiEQOBnbo_GQ_v6Y_zw
+
+腾讯提出自适应图卷积神经网络，接受不同图结构和规模的数据
+
+https://zhuanlan.zhihu.com/p/31067515
+
+《Semi-Supervised Classification with Graph Convolutional Networks》阅读笔记
+
+https://mp.weixin.qq.com/s/6viSk0Ts_7eTfYrWYi_HDQ
+
+基于图结构的实体和关系联合抽取模型简介
+
+https://zhuanlan.zhihu.com/p/36117802
+
+《Learn to Represent Programs with Graphs》阅读笔记。这篇论文讲述了DL在程序代码纠错方面的应用。
+
 https://zhuanlan.zhihu.com/p/37278426
 
 Graph2Seq: Graph to Sequence Learning with Attention-based Neural Networks
@@ -290,10 +326,6 @@ https://github.com/microsoft/tf-gnn-samples
 
 微软开源了一个用TF实现的GNN例程库
 
-https://mp.weixin.qq.com/s/s9PmfmpQE9j-swwGQv9w4A
-
-Graph Embedding之如何使用DeepWalk从图中提取特征
-
 https://mp.weixin.qq.com/s/r4_5GwA8Olqh6M1p_6eYPg
 
 图神经网络！2020 AI研究趋势！是什么？有什么用？
@@ -333,37 +365,3 @@ GNN如何进行池化以及挑战
 https://mp.weixin.qq.com/s/i_v1GoR-VzVxmy2Wm97t4w
 
 中科院自动化所等首次用图卷积网络解决语义分割难题
-
-# 视频处理+
-
-https://mp.weixin.qq.com/s/vuhoK4cVaHDn6oTuGqX_Eg
-
-你写脚本，AI自动剪视频：13分钟完成剪辑师7小时创作，清华北航联手打造
-
-https://mp.weixin.qq.com/s/IZs9Ctktmvzi_SAU9kD7Gg
-
-多模态人物识别技术及其在爱奇艺视频场景中的应用
-
-https://mp.weixin.qq.com/s/_OTvNrUtbYaFvKlMxFXoDg
-
-时间可以是二维的吗？基于二维时间图的视频内容片段检测
-
-https://mp.weixin.qq.com/s/8N09Argm9sNJRYipq3Mipw
-
-淘宝如何拥抱短视频时代？视频推荐算法实战
-
-https://mp.weixin.qq.com/s/1h9QvZirPa7EZIpOcC_aiw
-
-超清还不够，商汤插帧算法让视频顺滑如丝
-
-https://mp.weixin.qq.com/s/adUW9QuXaJ9uIb7Co5j_gw
-
-视频物体分割算法：如何提升复杂场景的分割精度？
-
-https://mp.weixin.qq.com/s/mASzImKwlpX7BJZFux3Adw
-
-视频预测领域有哪些最新研究进展？
-
-https://mp.weixin.qq.com/s/f2fYwaPNty72CFUIZZPBoA
-
-让电影动漫统统变丝滑，480帧也毫无卡顿，交大博士生开源插帧软件DAIN

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十八）——SOM, 多模态学习
+title:  深度学习（二十八）——SOM, 多模态学习, Recursive NN
 category: DL 
 ---
 
@@ -251,52 +251,16 @@ https://mp.weixin.qq.com/s/4AzF6utrQhhEweRIM6zV3A
 
 文本+视觉，跨模态预训练新进展
 
-# Capsule
+# Recursive NN
 
-https://jhui.github.io/2017/11/14/Matrix-Capsules-with-EM-routing-Capsule-Network/
+http://blog.csdn.net/qq_26609915/article/details/52119512
 
-“Understanding Matrix capsules with EM Routing (Based on Hinton's Capsule Networks)”
+递归神经网络（recursive NN）结合自编码（Autoencode）实现句子建模
 
-https://zhuanlan.zhihu.com/p/42864711
+http://blog.csdn.net/mengmengz07/article/details/51348554
 
-胶囊网络到底是什么东东？
+recursive neural network梳理
 
-https://zhuanlan.zhihu.com/p/32106577
+https://mp.weixin.qq.com/s/DwaSF76uvqFKkybaTUpl3w
 
-酉变换与递归神经网络
-
-https://github.com/freefuiiismyname/capsule-mrc
-
-基于capsule的观点型阅读理解模型
-
-https://mp.weixin.qq.com/s/cskdgsysD7R_FKChAKmlDg
-
-利用Capsule重构过程，Hinton等人实现对抗样本的自动检测
-
-https://mp.weixin.qq.com/s/7fBXMvT4eyZrKhPKQTAIZQ
-
-你听说过胶囊网络吗？
-
-https://mp.weixin.qq.com/s/F9SGZPZj6gup_nOVuDel6A
-
-与胶囊网络异曲同工：Bengio等提出四元数循环神经网络
-
-https://mp.weixin.qq.com/s/4o9XHGwx5lYsJ7YfUNHSoQ
-
-百年老图难倒谷歌AI，网友：是鸭是兔？连我都不能确定
-
-https://mp.weixin.qq.com/s/dN1p7nuv6xtnIsSuY73CcA
-
-基于GNN，强于GNN：胶囊图神经网络的PyTorch实现
-
-https://mp.weixin.qq.com/s/lcJcaiMtYXGVOwa_sVsVfA
-
-Hinton老爷子CapsNet再升级，结合无监督，接近当前最佳效果
-
-https://mp.weixin.qq.com/s/A0m3lkIBCTFf5bzTQlYbgQ
-
-基于胶囊网络的计算机视觉应用
-
-https://mp.weixin.qq.com/s/BqsFIUrVEVz5kOFh3W93gQ
-
-胶囊网络升级新版本，推特2000+赞
+空间序列递归神经网络用于高光谱图像分类

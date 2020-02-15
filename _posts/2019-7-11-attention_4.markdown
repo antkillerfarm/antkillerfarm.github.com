@@ -8,6 +8,32 @@ category: Attention
 
 ## ERNIE（续）
 
+![](/images/img3/ERNIE_4.png)
+
+上图是ERNIE 2.0的多任务训练的结构图。可以认为ERNIE 2.0就是多任务版的ERNIE。
+
+![](/images/img3/ERNIE_5.png)
+
+为了适应多任务版本的要求，ERNIE 2.0还提出了Task Embedding。
+
+参考：
+
+https://mp.weixin.qq.com/s/xoQhz6ljbsbzKRBJlTQQuQ
+
+百度提出ERNIE，多项中文NLP任务表现出色
+
+https://mp.weixin.qq.com/s/rQ8ISipvV3Irrjd3MI-Idw
+
+百度ERNIE，中文任务全面超越BERT
+
+https://mp.weixin.qq.com/s/_ZBvq7gXvbiP2IQve9tcKg
+
+清华等提出ERNIE：知识图谱结合BERT才是“有文化”的语言模型
+
+https://mp.weixin.qq.com/s/QVEYQfEQV0CsklI9S4vOiA
+
+ERNIE真有官方说的那么好？亲测告诉你答案！
+
 https://mp.weixin.qq.com/s/FoX2bXCJlFYjb9U6JcZCqg
 
 超详细中文预训练模型ERNIE使用指南
@@ -289,47 +315,3 @@ https://mp.weixin.qq.com/s/D68YzjYvpc2epGWFBP6rIQ
 https://mp.weixin.qq.com/s/iDGofh_ycWJzfqQriPEXGQ
 
 如何用Python和BERT做中文文本二元分类？
-
-https://zhuanlan.zhihu.com/p/62308732
-
-浅谈Bert：语言理解中的预训练编码器
-
-https://mp.weixin.qq.com/s/1Cz6js4kYdvc8g4oKjVPeA
-
-BERT烹饪之法：fintune的艺术
-
-https://mp.weixin.qq.com/s/nVM2Kxc_Mn7BAC6-Pig2Uw
-
-BERT模型的标准调优和花式调优
-
-https://mp.weixin.qq.com/s/FwmEIZ3ugeZBbLIGHmH-_g
-
-BERT之后，GLUE基准升级为SuperGLUE：难度更大
-
-https://mp.weixin.qq.com/s/SDVxn3Ra1dKmr-XgKNg5IA
-
-罗玲：From Word Representation to BERT
-
-https://mp.weixin.qq.com/s/-bh8BL4LxnevS8xnW5U9ZA
-
-中科院自动化所提出BIFT模型：面向自然语言生成，同步双向推断
-
-https://mp.weixin.qq.com/s/7yCnAHk6x0ICtEwBKxXpOw
-
-序列到序列自然语言生成任务超越BERT、GPT！微软提出通用预训练模型MASS
-
-https://mp.weixin.qq.com/s/7sIUaSON53hsXUJjq8uVUA
-
-马聪：NLP中的生成式预训练模型
-
-https://mp.weixin.qq.com/s/s1bQFdA6gtoHeeQMJKQ8UQ
-
-Bert时代的创新：Bert应用模式比较及其它
-
-https://mp.weixin.qq.com/s/zqlWx3e4LOJ3_Zy2DEbCjw
-
-从语言模型看Bert的善变与GPT的坚守
-
-https://mp.weixin.qq.com/s/LngE10Hnqe9bgFzpNfUwLQ
-
-NLP中的词向量对比：word2vec/glove/fastText/elmo/GPT/bert

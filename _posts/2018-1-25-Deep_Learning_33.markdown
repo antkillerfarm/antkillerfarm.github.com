@@ -14,6 +14,8 @@ Capsule是深度学习先驱Hinton于2017年提出的概念。
 
 《Matrix capsules with EM Routing》
 
+《Stacked Capsule AutoEncoder》
+
 官方代码：
 
 https://github.com/Sarasra/models/tree/master/research/capsules

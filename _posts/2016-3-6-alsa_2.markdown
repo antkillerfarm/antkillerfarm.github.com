@@ -312,32 +312,28 @@ https://mp.weixin.qq.com/s/ZaBkqlmWboOT7SEpQOln_Q
 
 MQTT协议之连接
 
-# Machine Learning之Python篇+
+# 数据结构 & 普通CS算法+
 
-https://mp.weixin.qq.com/s/fb9LyEdMsfUBR6ctc1gdXA
+https://www.cnblogs.com/BCOI/p/9072444.html
 
-Python模拟太阳-地球-月亮运动模型
+TREAP
 
-https://mp.weixin.qq.com/s/VmLphhs8rGabdNXtvllgdQ
+https://blog.csdn.net/yishizuofei/article/details/81660841
 
-教你用Python实现简单监督学习算法
+多路查找树：2-3树、2-3-4树、B树、B+树、B*树、R树
 
-https://mp.weixin.qq.com/s/TglQzG1iE0keEGLKZ-pGIg
+http://www.cppblog.com/mysileng/archive/2013/04/06/199159.html
 
-Python数据处理实战——使用Scikit-Learn进行多类文本分类
+Skip List（跳跃表）原理详解与实现
 
-https://mp.weixin.qq.com/s/WdYa7Q-yA-s_EO59YkYbqw
+https://mp.weixin.qq.com/s/M5syxE9Ln4UDLThPh5iuJg
 
-7个基本机器学习算法Python实现
+各种字符串Hash函数比较
 
-https://mp.weixin.qq.com/s/EqLzNzzMcwq5SEyBoTsuug
+https://mp.weixin.qq.com/s/IaYnfEZ2bUXIpQvN3ZqFGA
 
-11种NLP文本预处理Python代码，简洁实用
+图解红黑树
 
-https://mp.weixin.qq.com/s/mCUdK4i6XGEyaWNCIWA-wQ
+https://blog.csdn.net/wo541075754/article/details/54632929
 
-集五福，我用Python
-
-https://mp.weixin.qq.com/s/6x5Wmpy4Im0x3Ddua9rvFw
-
-用python怎样识别验证码？传统方法，非DL
+Merkle Tree（默克尔树）算法解析（Merkle Tree，通常也被称作Hash Tree，顾名思义，就是存储hash值的一棵树。）

@@ -323,3 +323,7 @@ https://mp.weixin.qq.com/s/0kGJfKARKs2TuIQ4YJYbUA
 https://zhuanlan.zhihu.com/p/100570132
 
 NAS evaluation is frustratingly hard
+
+https://mp.weixin.qq.com/s/QEkOQG2dQrPG-aa8OsVSOg
+
+NASNet: Google Brain经典作，改造搜索空间，性能全面超越人工网络，继续领跑NAS领域

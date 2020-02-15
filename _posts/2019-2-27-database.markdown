@@ -100,6 +100,22 @@ https://mp.weixin.qq.com/s/CmYg22NObamkNOqGjKg0-w
 
 解读现代存储系统背后的经典算法
 
+## 分布式算法
+
+Paxos、Raft、Gossip、Nuorum NWR、PBFT、Anti-Entropy、POW、ZAB等等
+
+https://mp.weixin.qq.com/s/NqLpT47ZWD6oJzfo_tWceA
+
+Paxos（分布式一致性算法）
+
+https://mp.weixin.qq.com/s/OXE7prU9cMuZG8kFydPm9A
+
+Paxos和Raft的前世今生
+
+https://mp.weixin.qq.com/s/Fj4zERz9PEuNumd_SI0bEA
+
+浅谈CAP和Paxos共识算法
+
 ## 参考
 
 https://mp.weixin.qq.com/s/ActS6PxbtZGqPb0jOn0iFg
@@ -117,14 +133,6 @@ https://mp.weixin.qq.com/s/09BlPee0-kP-At2aDyDbMw
 https://mp.weixin.qq.com/s/4lZ7My6cs4-VJQ1qGhQxZg
 
 AliSQL X-Cluste：基于X-Paxos的高性能强一致MySQL数据库
-
-https://mp.weixin.qq.com/s/NqLpT47ZWD6oJzfo_tWceA
-
-Paxos（分布式一致性算法）
-
-https://mp.weixin.qq.com/s/OXE7prU9cMuZG8kFydPm9A
-
-Paxos和Raft的前世今生
 
 https://mp.weixin.qq.com/s/tPzBlQGxGq1WEnXz5ggpxg
 

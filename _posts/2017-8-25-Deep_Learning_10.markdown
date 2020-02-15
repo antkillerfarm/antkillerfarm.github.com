@@ -1,12 +1,28 @@
 ---
 layout: post
-title:  深度学习（十）——深度图像压缩, 花式卷积（1）
+title:  深度学习（十）——花式卷积（1）
 category: DL 
 ---
 
 # CNN进化史
 
-## 参考（续）
+## 总结（续）
+
+在未来，或许检测和识别也可能合二为一。现在的检测是对一个通用的人脸的检测，未来或许可以实现检测和识别全部端到端完成：只有特定的某个人脸出现，才会触发检测框出现。
+
+第五步的相似度（或距离测度）的计算方法存在一定的争议。我认为特征提取的过程已经通过损失函数暗含了距离测度的计算，所以深度特征提取与深度测度学习有一定的等价性。但也有不少学者在研究特征之间距离测度的学习，乃至于省略掉特征提取，直接学习输入两张人脸图片时的距离测度。
+
+总体来说，深度学习的引入体现了端到端、数据驱动的思想：**尽可能少地对流程进行干预、尽可能少地做人为假设。**
+
+## 参考
+
+http://mp.weixin.qq.com/s/ZKMi4gRfDRcTxzKlTQb-Mw
+
+计算机视觉识别简史：从AlexNet、ResNet到Mask RCNN
+
+http://mp.weixin.qq.com/s/kbHzA3h-CfTRcnkViY37MQ
+
+详解CNN五大经典模型:Lenet，Alexnet，Googlenet，VGG，DRL
 
 https://zhuanlan.zhihu.com/p/22094600
 
@@ -87,72 +103,6 @@ CNN系列模型发展简述
 https://zhuanlan.zhihu.com/p/68411179
 
 CNN网络结构的发展
-
-# 深度图像压缩
-
-Tiny Network Graphics是图鸭科技推出一种基于深度学习的图片压缩技术。由于商业因素，这里没有论文，技术细节也不详，但是下图应该还是有些用的。
-
-![](/images/img2/TNG.png)
-
-还有视频压缩：
-
-论文：
-
-《Deep Learning-Based Video Coding: A Review and A Case Study》
-
-参考：
-
-https://mp.weixin.qq.com/s/YBJwLqqL7aVUTG0LaUbwxw
-
-深度学习助力数据压缩，一文读懂相关理论
-
-https://mp.weixin.qq.com/s/WYsxFX4LyM562bZD8rO95w
-
-图鸭发布图片压缩TNG，节省55%带宽
-
-https://mp.weixin.qq.com/s/meK8UBnVHzA9YspQ2RFp6Q
-
-体积减半画质翻倍，他用TensorFlow实现了这个图像极度压缩模型
-
-https://mp.weixin.qq.com/s/_5tyt7pU0gIXbkmTOVEtDw
-
-嫌图片太大？！卷积神经网络轻松实现无损压缩到20%！
-
-https://mp.weixin.qq.com/s/a4oU8UK_hLMrKXNRQizAag
-
-图鸭科技获CVPR 2018图像压缩挑战赛单项冠军，技术解读端到端图像压缩框架
-
-https://mp.weixin.qq.com/s/VDyPjzXdwMGEsoXQmhrp9g
-
-图鸭科技斩获CVPR图像压缩挑战赛冠军，TNGcnn4p技术全解读
-
-https://mp.weixin.qq.com/s/B7reSwa9sCZqbkYVM5-VOA
-
-图像压缩哪家强？请看这份超详细对比
-
-https://mp.weixin.qq.com/s/K17wlC3tueNBfHkYBUFcQg
-
-基于深度学习的HEVC复杂度优化。这是篇视频压缩的blog。
-
-https://mp.weixin.qq.com/s/exUYS2v5VyRaMdFylWlobw
-
-用循环神经网络进行文件无损压缩：斯坦福大学提出DeepZip
-
-https://mp.weixin.qq.com/s/GEMOfh04XR5IyWWlvZeeng
-
-CLIC图像压缩挑战赛冠军方案解读
-
-https://zhuanlan.zhihu.com/p/78050429
-
-基于深度学习的视频压缩方案介绍
-
-https://mp.weixin.qq.com/s/gNtxBI0Alk70cEujxQmSFQ
-
-如何将图像压缩10倍？阿里工程师有个大胆的想法！这是一篇传统算法的blog。
-
-https://mp.weixin.qq.com/s/OkywKX4XygM8VqkL8A1fcA
-
-TIP 2019开源论文：基于深度学习的HEVC多帧环路滤波方法
 
 # 花式卷积
 

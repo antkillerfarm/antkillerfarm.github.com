@@ -16,10 +16,6 @@ https://mp.weixin.qq.com/s/8KM7wUg_lnFBd0fIoczTHQ
 
 用收缩损失(Shrinkage Loss)进行深度回归跟踪
 
-https://mp.weixin.qq.com/s/VNPX5BADo4EJkIp1yWGoag
-
-斯坦福学者提出GIoU，目标检测任务的新Loss
-
 https://mp.weixin.qq.com/s/piYyhPbA6kAXuSE5yHfQ1g
 
 人脸识别损失函数综述
@@ -113,14 +109,6 @@ https://mp.weixin.qq.com/s/CbORYhJQn27J0G4G6XpODw
 https://mp.weixin.qq.com/s/Yo68YnMMvy5FXkCjBLCJuw
 
 常见的损失函数
-
-https://mp.weixin.qq.com/s/ZbryNlV3EnODofKs2d01RA
-
-目标检测回归损失函数简介：Smooth L1/IoU/GIoU/DIoU/CIoU Loss
-
-https://mp.weixin.qq.com/s/F07Wp-cXIOE4-qdL55WtJQ
-
-基于DIou改进的YOLOv3目标检测
 
 # 机器学习分类器性能指标
 

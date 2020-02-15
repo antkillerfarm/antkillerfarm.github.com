@@ -306,6 +306,10 @@ https://mp.weixin.qq.com/s/cwFkMZS2Mk-qbFF2FF4v0Q
 
 OpenCV二值图像分析之形态学应用技巧
 
+https://mp.weixin.qq.com/s/4zfi1UGhhyadU8kD65CVAA
+
+使用OpenCV4的统一向量指令实现硬件级别加速
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。

@@ -80,6 +80,10 @@ https://mp.weixin.qq.com/s/AzJ_X2xpOTXmYN-GxzghzA
 
 图神经网络GNN模型与应用：305页ppt教程，密歇根州立大学
 
+https://mp.weixin.qq.com/s/hyHUkiEyXGn3v-M0d0igVg
+
+想入门图深度学习？这篇55页的教程帮你理清楚了脉络
+
 ## DGL
 
 https://mp.weixin.qq.com/s/I8pGqpKnRJp9HRglHfMZCw
@@ -128,6 +132,14 @@ https://mp.weixin.qq.com/s/c5rvWfIjujw6TNszDzPMdw
 
 DeepMind开源图深度学习(GraphDL)工具包，基于Tensorflow和Sonnet
 
+## SNAP
+
+SNAP（Stanford Network Analysis Platform）是一个复杂网络分析的库。
+
+官网：
+
+http://snap.stanford.edu/
+
 ## Other Tools
 
 https://mp.weixin.qq.com/s/POMluy69sphGZ_AlDnJ0og
@@ -146,13 +158,23 @@ https://mp.weixin.qq.com/s/Uf8l2yn5iCFCUFWVvIvAOw
 
 腾讯开源图计算框架Plato
 
+https://mp.weixin.qq.com/s/PEltOwR1Am7RX6N-4UN9vw
+
+集成图网络模型实现、基准测试，清华推出图表示学习工具包（CogDL）
+
+## DeepWalk
+
+https://mp.weixin.qq.com/s/SXnRyUj_mMs8UEtNyP6qNw
+
+DeepWalk论文解读
+
 https://mp.weixin.qq.com/s/h1vDImYTLEheatZnScZwbg
 
 使用DeepWalk从图中提取特征
 
-https://mp.weixin.qq.com/s/PEltOwR1Am7RX6N-4UN9vw
+https://mp.weixin.qq.com/s/F2jF1vuzK4u8ZPrDK_CyLw
 
-集成图网络模型实现、基准测试，清华推出图表示学习工具包（CogDL）
+KDD2018网络表示学习最新教程：DeepWalk作者Perozzi等人带你探索最前沿
 
 ## 参考
 
@@ -375,39 +397,3 @@ https://mp.weixin.qq.com/s/8Sz_jo7pokL_nzupEBGGdg
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
 
 Bengio等人提出图注意网络架构GAT，可处理复杂结构图
-
-https://zhuanlan.zhihu.com/p/34232818
-
-《Graph Attention Networks》阅读笔记
-
-https://zhuanlan.zhihu.com/p/28170197
-
-《Gated Graph Sequence Neural Networks》阅读笔记
-
-https://blog.csdn.net/yorkhunter/article/details/104056795
-
-综述论文“A Comprehensive Survey on Graph Neural Networks”
-
-https://mp.weixin.qq.com/s/rTnv7XOnIvRDGDdhbuoE9g
-
-深度图相似学习综述
-
-https://mp.weixin.qq.com/s/FDWoAXGOlRxOEkvli3gd5Q
-
-55页图深度学习导论《A Gentle Introduction to Deep Learning for Graphs》
-
-https://mp.weixin.qq.com/s/Pm1HiEQOBnbo_GQ_v6Y_zw
-
-腾讯提出自适应图卷积神经网络，接受不同图结构和规模的数据
-
-https://zhuanlan.zhihu.com/p/31067515
-
-《Semi-Supervised Classification with Graph Convolutional Networks》阅读笔记
-
-https://mp.weixin.qq.com/s/6viSk0Ts_7eTfYrWYi_HDQ
-
-基于图结构的实体和关系联合抽取模型简介
-
-https://zhuanlan.zhihu.com/p/36117802
-
-《Learn to Represent Programs with Graphs》阅读笔记。这篇论文讲述了DL在程序代码纠错方面的应用。

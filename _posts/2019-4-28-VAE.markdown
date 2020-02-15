@@ -133,6 +133,10 @@ https://mp.weixin.qq.com/s/olwyTaOGCugt-thgZm_3Mg
 
 变分推断（Variational Inference）最新进展简述
 
+https://mp.weixin.qq.com/s/1VSgqFXMt_xyT7Ugi3-Hhg
+
+详解生成模型VAE的数学原理
+
 # Vanilla VAE
 
 变分自编码器（Variational Auto-Encoder，VAE）是Autoencoder的一种扩展。
@@ -190,7 +194,3 @@ $$p(X)=\sum_Z p(X|Z)p(Z)$$
 ![](/images/img2/VAE_2.png)
 
 看出了什么问题了吗？如果像这个图的话，我们其实完全不清楚：究竟经过重新采样出来的$$Z_k$$，是不是还对应着原来的$$X_k$$，所以我们如果直接最小化$$\mathcal{D}(\hat{X}_k,X_k)^2$$（这里D代表某种距离函数）是很不科学的，而事实上你看代码也会发现根本不是这样实现的。
-
-## VAE初现
-
-其实，在整个VAE模型中，我们并没有去使用p(Z)（先验分布）是正态分布的假设，我们用的是假设$$p(Z\mid X)$$（后验分布）是正态分布！！
