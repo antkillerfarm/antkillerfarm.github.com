@@ -320,6 +320,10 @@ ElementAI提出超复杂多尺度细粒度图像分类Attention模型
 
 # 显著性检测
 
+https://blog.csdn.net/dawnlooo
+
+一个显著性检测的专栏
+
 https://mp.weixin.qq.com/s/Mi62oqtXUT5If_Dj4KmVYA
 
 计算机视觉如何知道你想看什么？个人显著性检测

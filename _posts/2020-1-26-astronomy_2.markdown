@@ -184,6 +184,30 @@ https://mp.weixin.qq.com/s/scAkK8yhnEZKUuTrwHmK4w
 
 # 武汉肺炎+
 
+## 病毒（续）
+
+参考：
+
+https://mp.weixin.qq.com/s/lwBpRJ4VQxD3DzeMropylQ
+
+病毒简史：人类对大自然的不知敬畏，才是一切灾难的源头
+
+https://mp.weixin.qq.com/s/Zh9-8C-hilrlKk8jrVo60g
+
+入侵&反击！病原体和人体的攻防战
+
+https://mp.weixin.qq.com/s/bgF5p9g47FmnPmR2hcvU3Q
+
+病毒，那条静止的河流
+
+https://mp.weixin.qq.com/s/ebaz8rd7ft3eH8E-cS3YpA
+
+病毒从哪里来？
+
+https://mp.weixin.qq.com/s/7NePVREsxbMFqaZvF5N51w
+
+BBC纪录片：病毒是如何入侵的？
+
 ## 科研
 
 https://mp.weixin.qq.com/s/QN2GQ6T9Q2cwT_CN6aX_YQ
