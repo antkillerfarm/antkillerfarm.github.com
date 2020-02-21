@@ -6,6 +6,22 @@ category: Recommender System
 
 # 深度推荐系统
 
+https://zhuanlan.zhihu.com/p/46755166
+
+利用评论文本交互提升推荐系统
+
+https://zhuanlan.zhihu.com/p/47393033
+
+基于知识的新闻推荐
+
+https://mp.weixin.qq.com/s/jHKgKnl-SbZltl76Ln_Fgg
+
+AutoML详解及其在推荐系统中的应用、优缺点
+
+https://mp.weixin.qq.com/s/0FdosHMzKiYL8XCx_XEPFA
+
+双十一疯狂剁手，你知道阿里是如何跟踪用户兴趣演化的吗？
+
 https://zhuanlan.zhihu.com/p/49410727
 
 利用分类学数据来增强序列推荐的能力
@@ -349,43 +365,3 @@ https://mp.weixin.qq.com/s/Y4g2T6qMGzCcE67bINPiGA
 https://zhuanlan.zhihu.com/p/100019681
 
 推荐系统技术演进趋势：从召回到排序再到重排
-
-https://mp.weixin.qq.com/s/kPdYAzVYelE9LxvGvi4f8w
-
-多值类别特征加入CTR预估模型的方法汇总
-
-https://zhuanlan.zhihu.com/p/101298495
-
-稠密特征加入CTR预估模型有哪些方法？
-
-https://zhuanlan.zhihu.com/p/101136699
-
-推荐系统中的深度匹配模型
-
-https://mp.weixin.qq.com/s/POEnU7bNG44Mz9844WuzIw
-
-腾讯视频是如何给你高效精准推送的
-
-https://zhuanlan.zhihu.com/p/99953120
-
-YouTube推荐系统算法梳理
-
-https://mp.weixin.qq.com/s/zeF7C7YrLqOjIWPen04K2Q
-
-搜索模型核心技术公开，淘宝如何做用户建模？
-
-https://www.zhihu.com/question/362190044
-
-推荐系统领域有啥巧妙的idea？
-
-https://zhuanlan.zhihu.com/p/96796043
-
-推荐系统中如何做多目标优化
-
-https://zhuanlan.zhihu.com/p/52876883
-
-深度CTR预估模型中的特征自动组合机制演化简史
-
-https://mp.weixin.qq.com/s/OFCzl8stFU5b1MWrkDU7NA
-
-阿里电商推荐中如何进行特征蒸馏提升模型效果

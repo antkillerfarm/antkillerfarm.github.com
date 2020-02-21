@@ -182,9 +182,29 @@ https://mp.weixin.qq.com/s/scAkK8yhnEZKUuTrwHmK4w
 
 印度失联的月球探测器依然成功了95%？那些年我们一起追过的月球
 
-# 武汉肺炎+
+# 武汉肺炎
 
 ## 病毒（续）
+
+**逆转录病毒**逆天改命，能够利用自带的逆转录酶，以自己的基因组RNA为模板，合成出对应的DNA来。这个过程就叫做“逆转录”，因为它逆转了从DNA转录为RNA的“中心法则”。
+
+当“逆转录病毒”侵入一种动物体内，它就会把遗传物质插入这种动物细胞的DNA当中。这样，它就完成了一次遗传物质“包裹”的“送货”服务。
+
+有趣的是，这次“送货”还只是一个开始。当这种动物的细胞分类的时候，会同时把自己的DNA和入侵病毒的DNA都复制一遍，然后传递下去。
+
+还有的时候，这些病毒的DNA还会稳定地待在细胞里面，从一代传给下一代。这就形成了“内源性逆转录病毒”。
+
+实际上，像这样的“内源性逆转录病毒”一直在反复入侵我们人类的基因组。
+
+我们每个人的基因组中都携带了将近10万个“内源性逆转录病毒”的DNA片段，这些片段占到人类DNA总量的8%。如果作为比较的话，那些负责蛋白质编码的基因，只占到了1.2%。
+
+也就是说，我们的基因组，可以说是个“病毒泛滥”的地方。但恰恰是这些泛滥的病毒，成就了今天的我们。
+
+科学家曾经惊讶地发现，某种病毒中的一个基因，能合成一种叫做“合胞素”的蛋白质，而这种蛋白质能形成一种东西，那就是胎盘。
+
+这意味着，一种新型的生命形式——“哺乳动物”，有机会出现在地球上了。
+
+![](/images/img3/virus.png)
 
 参考：
 
@@ -207,6 +227,30 @@ https://mp.weixin.qq.com/s/ebaz8rd7ft3eH8E-cS3YpA
 https://mp.weixin.qq.com/s/7NePVREsxbMFqaZvF5N51w
 
 BBC纪录片：病毒是如何入侵的？
+
+https://mp.weixin.qq.com/s/JAm3eMF1ATMzHTRTiZybIQ
+
+阻击病毒的战场
+
+https://asm.org/
+
+American Society for Microbiology
+
+https://mp.weixin.qq.com/s/SkzRspEEFj53A5OWKj37VA
+
+新型冠状病毒的“帮凶”——病原真菌到底是什么鬼？
+
+https://mp.weixin.qq.com/s/cUtWVBOsUkCBC0abeoKAzA
+
+从病毒到免疫， “科学地”揭开新冠病毒的神秘面纱
+
+https://mp.weixin.qq.com/s/bfhS3Er3NXjfUrKZbju33Q
+
+病毒与人类的战争（上）：百万年的战争
+
+https://mp.weixin.qq.com/s/Bx7AZrL168OkygBbg0qflQ
+
+病毒与人类的战争（下）： 人类守望者
 
 ## 科研
 
@@ -245,69 +289,3 @@ https://mp.weixin.qq.com/s/aawHwJ8IIuHPE7Dc9yn1Ow
 https://mp.weixin.qq.com/s/zbqdndZTt4B0-v3KfIm5uA
 
 既没新样本，也没实验，如何猜到新冠病毒“喜欢”感染哪些细胞？
-
-----
-
-伤寒玛丽”（Typhoid Mary），本名叫玛丽·梅伦（Mary Mallon，1869年9月23日——1938年11月11日），生于爱尔兰，15岁时移民美国。起初，她给人当女佣。后来，她发现自己很有烹调才能，于是转行当了厨师，每月能赚到比做女佣高出很多的薪水。玛丽虽然身体一直健康，却携带伤寒杆菌。后来玛丽相继传染多人，最终被隔离在纽约附近的北兄弟岛（North Brother Island）上的传染病房。
-
-https://www.zhihu.com/question/368287285/answer/989275113
-
-如何看待女子从武汉回河南后至今无症状，其5名亲人患新型肺炎？
-
-----
-
-双黄连由金银花（双花）、黄芩和连翘三味中药配伍而成。它的历史并不算悠久，但在现有的网络信息中，也无法准确地指出究竟是何人、何时开发出这个如今家喻户晓的方子。有文献可考的历史表明，双黄连方剂产生于文革期间的东北地区——再准确一点，黑龙江哈尔滨，并且与现在的哈药集团有着千丝万缕的联系。
-
-https://mp.weixin.qq.com/s/7YscNLoSsuYhf3XQ5qz36w
-
-双黄连热销背后，那些你不知道的事
-
-## 李文亮
-
-一个健康的社会不应该只有一个声音--By 李文亮
-
-## 疫情建模
-
-https://mp.weixin.qq.com/s/2XsZzfZI-gAHC-D5HGNZXw
-
-从目前的数据，再次分析一下武汉的新冠肺炎患者数量和死亡率
-
-https://mp.weixin.qq.com/s/I5I5Jh7brFGRBTAFah-C4w
-
-武汉新冠肺炎传播的动力学模型及预测
-
-https://mp.weixin.qq.com/s/-C03P-I4w91kLSGsuhxAKQ
-
-新型冠状病毒传播与扩散的控制模型
-
-https://mp.weixin.qq.com/s/gZCD8ATxGrpHSZLKpcHfiA
-
-基于元胞自动机模拟新型肺炎病毒的传播和预防
-
-https://mp.weixin.qq.com/s/ZOPncvPpFyLIwH_XChAdbg
-
-基于微分方程和元胞自动机模拟新型肺炎病毒的传播
-
-https://mp.weixin.qq.com/s/4w6CTGaKKEH9APVNH9Ue8w
-
-扩散信息、交通管制、自我隔离，哪个更能遏制病毒传播？
-
-https://mp.weixin.qq.com/s/tBoM9o3pK89bprK8npHLWA
-
-可能会说谎的地图！全国疫情地理格局的重新审视
-
-https://mp.weixin.qq.com/s/bVNkCHl7BPU_eEcAWksmww
-
-关于武汉新型冠状病毒肺炎的传播预测模型
-
-https://mp.weixin.qq.com/s/XYT4U1mv29nln32ysMINrw
-
-武汉肺炎传播的多种数学模型
-
-https://mp.weixin.qq.com/s/Lg1tJmO7aN9XNpZ6bs0cJA
-
-程序员硬核劝告：现在还不是出门的时候
-
-https://mp.weixin.qq.com/s/sv07R8HQXX2U0QOi5_dOwg
-
-河南1105例新冠肺炎数据告诉我们什么？

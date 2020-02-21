@@ -78,10 +78,6 @@ https://mp.weixin.qq.com/s/oe8Zcv3EecDV2OUl9qejCA
 
 图像分类、定位、检测，语义分割和实例分割方法梳理
 
-http://mp.weixin.qq.com/s/zi1E-O8qHv0NUwkQmXI9Vw
-
-用AlphaGo背后的人工智能做金融投资
-
 https://mp.weixin.qq.com/s/4LjWHFO0wTP7kqnKf2mdWw
 
 林倞：Beyond Supervised Deep Learning--后深度学习时代的挑战
@@ -110,17 +106,9 @@ https://mp.weixin.qq.com/s/XX6GTgeN4M4rVvE6fgDFKw
 
 训练AI太辛苦？OpenAI新方法：不如让AI之间互教吧
 
-https://mp.weixin.qq.com/s/DBSj-5p5Dc6-z7POo42x2w
-
-深度学习引入信号处理技术，轻松分析股票等各种序列数据
-
 https://mp.weixin.qq.com/s/RsWY9jQ8biQu6Pc5tl3T4Q
 
 纽约大学：参考儿童认知发展，通过简单神经网络学习归纳偏置
-
-https://www.jianshu.com/p/86e09a28d656
-
-一些深度学习在股票交易应用的遐想
 
 https://mp.weixin.qq.com/s/XGA5W3pkDI8S5MDar61Bag
 

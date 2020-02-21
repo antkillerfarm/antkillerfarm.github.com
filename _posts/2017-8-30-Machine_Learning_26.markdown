@@ -89,7 +89,7 @@ https://mp.weixin.qq.com/s/BZh3-jk2LNK55jKGJXQgjw
 
 这个算法虽然以Gibbs命名，但却是Geman兄弟于1984年研究Gibbs random field时，发现的算法。
 
->注：Josiah Willard Gibbs，1839~1903，美国科学家。他在物理、化学和数学方面都有重大理论贡献。耶鲁大学博士和教授。统计力学的创始人。
+>Josiah Willard Gibbs，1839~1903，美国科学家。他在物理、化学和数学方面都有重大理论贡献。耶鲁大学博士和教授。统计力学的创始人。
 
 >Donald Jay Geman，1943年生，美国数学家。美国西北大学博士，布朗大学教授。随机森林算法的早期研究者之一。
 
@@ -98,6 +98,12 @@ https://mp.weixin.qq.com/s/BZh3-jk2LNK55jKGJXQgjw
 因为高维空间中，沿坐标轴方向上的两点之间的转移，满足细致平稳条件。因此，Gibbs Sampling的核心就是沿坐标轴循环迭代采样，该算法收敛之后的采样点即符合指定概率分布。
 
 这里需要特别指出的是，Gibbs Sampling比Metropolis–Hastings算法高效的原因在于：Gibbs Sampling每次沿坐标轴的转移是必然会被接受的，即$$\alpha=1$$。
+
+参考：
+
+https://mp.weixin.qq.com/s/ogSrwfDxXP0rCkP6diexdA
+
+吉布斯——热力学大师与统计物理奠基人
 
 ## Unigram Model
 

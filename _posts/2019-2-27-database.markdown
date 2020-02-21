@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数据库, 分布式ID生成器
+title:  数据库, 分布式ID生成器, 边缘计算, Autoware
 category: technology 
 ---
 
@@ -273,3 +273,93 @@ https://mp.weixin.qq.com/s/Yk2ZlGCEINGrsTfHI6zpsw
 https://mp.weixin.qq.com/s/E3PGP6FDBFUcghYfpe6vsg
 
 唯一ID生成算法剖析
+
+# 边缘计算
+
+![](/images/img2/edge_computing.png)
+
+https://mp.weixin.qq.com/s/i5KkUVaEULrlxeNtU_PDtQ
+
+天津大学最新“边缘计算与深度学习的融合”综述论文
+
+https://mp.weixin.qq.com/s/TXZh-bn9VhwGxJRNjzecRw
+
+重新认识“边缘计算”
+
+https://mp.weixin.qq.com/s/6Nr7LF9VxYQ4NlLlk8bCVw
+
+不了解边缘计算，你可能就要被“边缘”了
+
+https://mp.weixin.qq.com/s/3d7CEQ0iQzwnJ_tE7eB9Yg
+
+边缘计算芯片格局分析
+
+https://mp.weixin.qq.com/s/U9vnEzumNgGlYFR-lEPfhw
+
+智能边缘计算：计算模式的再次轮回
+
+https://mp.weixin.qq.com/s/x6MWXZAFgyv2HDaVll9S6A
+
+一文读懂边缘计算和业务场景
+
+# Autoware
+
+Autoware是另一个开源的无人驾驶平台。不像Apollo，没有百度这样的强势公司的介入，社区氛围更浓一些，相对的，功能也要弱一些。
+
+官网：
+
+https://www.autoware.org/
+
+主要由一下组件构成：
+
+- autoware.ai
+
+https://www.autoware.ai/
+
+这个组件基于ROS 1.0，是目前的方案。
+
+- autoware.auto
+
+https://www.autoware.auto/
+
+这个组件基于ROS 2.0，是面向未来的方案。
+
+- autoware.io
+
+https://www.autoware.io/
+
+autoware提供的模拟器。
+
+代码仓库：
+
+https://gitlab.com/autowarefoundation/autoware.ai
+
+# 传感器+
+
+https://mp.weixin.qq.com/s/bNhd7owOIdCdzO2xOtBMRw
+
+谈谈超结功率半导体器件
+
+https://mp.weixin.qq.com/s/0K595c2GdhPrdWBgpvU-Gw
+
+超声波雷达在汽车上的应用
+
+https://mp.weixin.qq.com/s/j0-Lj8lOyDP0RArB7NzUNw
+
+特斯拉的整车传感器配置方案
+
+https://mp.weixin.qq.com/s/WIjbYMvMis-YBr_ev_wjmQ
+
+霍尔元件及其应用
+
+https://mp.weixin.qq.com/s/vbTR1A0rgzCQY8XG70SNPQ
+
+了不起的MEMS发明人
+
+https://mp.weixin.qq.com/s/gHvvMG7D_W0M2RFntyRaDw
+
+车载抬头显示AR HUD成像技术大解密
+
+https://mp.weixin.qq.com/s/qOnMNbA9C7bcwZ6IvOxyCA
+
+一组动图看懂3D打印原理

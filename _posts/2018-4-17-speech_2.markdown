@@ -8,6 +8,20 @@ category: speech
 
 ## 数据集（续）
 
+http://pan.baidu.com/s/1dEhUghz
+
+清华大学语音和语言技术研究中心（CSLT）公开的数据集。这个数据集除了包含thchs30之外，还包含了其他几个小语种的数据集。
+
+http://cn-mirror.openslr.org/18/
+
+单独的thchs30数据集
+
+http://blog.csdn.net/sut_wj/article/details/70662181
+
+THCHS-30：一个免费的中文语料库
+
+----
+
 http://cn-mirror.openslr.org/33/
 
 AISHELL数据库是THCHS-30之后，目前中文语音数据开源最大的数据库。
@@ -17,6 +31,22 @@ AISHELL数据库是THCHS-30之后，目前中文语音数据开源最大的数�
 http://www.aishelltech.com/aishell_2
 
 AISHELL-2的数据规模达到1000小时和更优秀的系统级recipe。数据目前以硬盘和网盘形式免费开放给高校科研教育机构。商用似乎还是要钱的。
+
+----
+
+https://keithito.com/LJ-Speech-Dataset/
+
+The LJ Speech Dataset
+
+这是由LibriVox项目的Linda Johnson制作的数据集。
+
+LibriVox项目是一个公益性质的有声电子书项目。
+
+官网：
+
+https://librivox.org/
+
+----
 
 https://mp.weixin.qq.com/s/f_oFRDuSAuqwbOAby07a5Q
 
@@ -171,19 +201,3 @@ https://www.leiphone.com/news/201610/5Ye8zxxwtlLGiW1y.html
 2.**以科胜讯为代表的纯前端技术架构。**纯前端方案的优点就是容易集成到芯片上，缺点就是很难升级以及扩展，这恰好与人工智能不断迭代的趋势不太兼容，也是当前这种方案无法流行的主要原因。
 
 这类方案能提供的功能有限，主要包括自适应回声抵消技术(AEC)、自动噪音抑制技术(ANS)和自动增益控制技术(AGC)。
-
-3.**以Amazon为代表的前端+云端方案。**这种方案是把算法分别放置到前端和云端，根据具体场景可以调配优化，更容易优化性能并扩展功能。这种方案考虑了麦克风阵列与唤醒和识别技术一体化的问题，由于唤醒和识别严重依赖麦克风阵列的算法处理效果，实际上这三种技术是无法完全分割的，特别是麦克风阵列和唤醒技术更是浑然一体。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/29809882
-
-让机器听懂人类语言，主流麦克风阵列技术解读
-
-https://zhuanlan.zhihu.com/p/23420891
-
-麦克风阵列的语音信号处理技术
-
-## Microphone Array技术难点
-
-传统的阵列信号处理技术直接应用到麦克风阵列处理系统中往往效果不理想，其原因在于麦克风阵列处理有不同的处理特点：

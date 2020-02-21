@@ -156,6 +156,10 @@ https://mp.weixin.qq.com/s/_bEx-psbGgE4TiyBRuamQQ
 
 二维异形零件下料问题简介
 
+https://mp.weixin.qq.com/s/vuY1tukawF_V2Bz2YSA8wQ
+
+Attain.ai创始人李玉喜：强化学习遇见组合优化
+
 # 强连通分量算法
 
 http://ishare.iask.sina.com.cn/f/34626295.html

@@ -241,6 +241,18 @@ http://www.cnblogs.com/lishouguang/p/4560858.html
 
 flume使用场景 flume与kafka的比较
 
+## 消息中间件的Style
+
+两种最常见的Style: 消息队列方式(Message queuing)和发布订阅(publish-subscribe)方式。
+
+参考：
+
+https://mp.weixin.qq.com/s/oiaXjFxNcwJenkGuJBPm5Q
+
+消息中间件的"Style"
+
+## 参考
+
 https://mp.weixin.qq.com/s/bjlDHFLwxjej2t8iDhVb1A
 
 Spark Streaming消费Kafka数据的两种方案
@@ -329,7 +341,7 @@ https://mp.weixin.qq.com/s/FJX9eeRkxS5nJ4XIhRVwkg
 
 从ServerSwitch到SONiC Chassis：数据中心交换机技术的十年探索历程
 
-# GAN参考资源+
+# GAN参考资源
 
 https://mp.weixin.qq.com/s/cUFQ6EADa39h2eFoa_Dh0A
 
@@ -382,15 +394,3 @@ https://mp.weixin.qq.com/s/zRNtEKS2dKxyQU4VZm6Mwg
 https://mp.weixin.qq.com/s/zwzl-Tel3Avc4Dm7L5FS5A
 
 NLP中的对抗训练+PyTorch实现
-
-https://mp.weixin.qq.com/s/Ze2BXEexTIpNluRSdfeCsA
-
-GAN和PS合体会怎样？东京大学图像增强新研究：无需配对图像，增强效果还可解释
-
-https://mp.weixin.qq.com/s/qLhnvLhXHhRoPGtPWYCY0w
-
-ICCV2019最佳论文SinGAN全面解读
-
-https://zhuanlan.zhihu.com/p/97138846
-
-《SinGAN:从单个自然图像中学习生成模型》论文笔记

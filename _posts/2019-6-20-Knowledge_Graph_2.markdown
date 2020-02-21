@@ -238,6 +238,10 @@ https://mp.weixin.qq.com/s/vtj1HgDC2slsOw9DGoURCA
 
 知识图谱实体链接：一份“由浅入深”的综述
 
+https://mp.weixin.qq.com/s/0f5E82utl-faCpmvrDoPEg
+
+知识图谱研究综述论文: 表示学习、知识获取与应用，25页pdf详述Knowledge Graphs技术趋势
+
 # DRL参考资源+
 
 https://mp.weixin.qq.com/s/vYDb1rTdPxO1sIS38VX5xA
@@ -308,6 +312,10 @@ https://mp.weixin.qq.com/s/-Cd7rQY3c3CINjtB99UZWw
 
 自动驾驶领域中的强化学习，附18页论文下载
 
+https://mp.weixin.qq.com/s/UBWN4_Sem8W1WcjsLAnjjQ
+
+强化学习，路在何方？
+
 # Python+
 
 https://mp.weixin.qq.com/s/d2_MTvfbOFZmppej5UOwUw
@@ -361,3 +369,7 @@ https://mp.weixin.qq.com/s/Hv0rPD29PPd3Rn6lW6w5dg
 https://mp.weixin.qq.com/s/8Fgzb8JiAoNSJqUanSi85Q
 
 鼠年做只奔跑的猫呗，卖萌式监控系统资源~（QSystemTrayIcon）
+
+https://mp.weixin.qq.com/s/2RRJDStTL7l2Ra3SnNEEYg
+
+发布自己的python库到pypi

@@ -4,6 +4,16 @@ title:  图像处理理论（十一）——CV/CG参考资源, 计算机图形�
 category: graphics 
 ---
 
+# ILSVRC 2010考古
+
+ILSVRC 2010的冠军是NEC和UIUC的联合队伍。这也是DL于2012年大放光彩之前比较杰出的成果。虽然现在它通常作为反面教材，出现在与DL的对比场景中，然而不可否认的是，它仍然是一个算法的杰作。
+
+>林元庆，清华大学硕士+宾夕法尼亚大学博士（2008年）。原百度研究院院长。
+
+![](/images/article/ILSVRC_2010.png)
+
+上图是NEC算法的基本流程图。这里不打算描述整个算法，而仅对其中涉及的术语做一个解释。
+
 # 模板匹配
 
 https://blog.csdn.net/liyuanbhu/article/details/49837661

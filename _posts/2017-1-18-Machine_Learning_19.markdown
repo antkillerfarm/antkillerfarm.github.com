@@ -216,10 +216,6 @@ https://blog.csdn.net/CoderPai/article/details/90900707
 
 bagging方法
 
-https://blog.csdn.net/CoderPai/article/details/91615739
-
-随机森林算法用于股票交易
-
 https://blog.csdn.net/CoderPai/article/details/92018343
 
 随机森林的实现与解释

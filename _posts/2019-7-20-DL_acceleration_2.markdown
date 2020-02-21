@@ -4,7 +4,27 @@ title:  深度加速（二）——Winograd（2）
 category: DL acceleration 
 ---
 
-# Winograd（续）
+# Winograd
+
+## 最大公约数和Euclidean algorithm（续）
+
+Euclidean algorithm的步骤如下图所示：
+
+![](/images/article/Euclidean_algorithm.png)
+
+1.假设$$a>b$$，则令$$c:=a \mod{b}$$。
+
+2.如果$$c=0$$，则$$GCD(a,b)=b$$。
+
+3.否则令$$a:=b,b:=c$$，并返回到第1步。
+
+这个算法应该是Euclid记述的前人成果，因为更早的Eudoxus of Cnidus曾提到过这个算法。
+
+>Eudoxus of Cnidus，公元前390年～公元前337年，古希腊几何学家、天文学家和地理学家。柏拉图同时代最杰出的数学家。《几何原本》卷Ⅴ和卷Ⅻ主要来自欧多克索斯的工作。
+
+然而，小学课本不使用Euclidean algorithm是有原因的，除了Euclidean algorithm本身相对复杂之外，短除法能同时搞定最大公约数和最小公倍数（Least common multiple），这也是它的教学优势所在。
+
+Euclidean algorithm作为最古老的算法之一，被收录进Knuth的巨著TAOCP。这里的算法，指的是那些根据一定的规则来一步步执行的运算。
 
 ## Bézout's identity和Extended Euclidean algorithm
 
@@ -255,31 +275,3 @@ CNN中的Winograd算法一般使用如下论文的结论：
 《Fast Algorithms for Convolutional Neural Networks》
 
 该文引论部分提到了Winograd算法的结论，该结论和本文上述的算法步骤略有不同，最初是Winograd针对FIR提出的Minimal FIR Filtering算法。但是算法的本质是相同的，仍然是构建多项式和CRT。
-
-https://github.com/andravin/wincnn
-
-这个项目可以很方便的计算不同大小的核的Winograd的结果。这个项目中还有一个pdf文件作为上述论文的补充材料，详细的给出了各矩阵的计算方法。
-
-论文：
-
-《Efficient Sparse-Winograd Convolutional Neural Networks》
-
-![](/images/img3/Winograd.png)
-
-这篇论文（2018.2）讨论了如何在稀疏矩阵中应用Winograd算法。
-
-论文：
-
-《Sparse Winograd Convolutional neural networks on small-scale systolic arrays》
-
-![](/images/img3/Winograd_3.png)
-
-这篇论文（2018.10）讨论了如何在脉动阵列上实现Winograd算法，还讨论了3D卷积的计算方法。
-
-![](/images/img3/Winograd_2.png)
-
-参考：
-
-http://shuokay.com/2018/02/21/winograd/
-
-Winograd方法快速计算卷积

@@ -302,6 +302,10 @@ https://mp.weixin.qq.com/s/1MAb4tZfY4qQPaodo3xHoA
 
 激光雷达原理
 
+https://mp.weixin.qq.com/s/4zW8ZW90v6pLYb6B8RurMg
+
+聊传感器激光雷达
+
 ## 参考
 
 https://mp.weixin.qq.com/s/Ee18sjKXNGMowKwqLB0jVg
@@ -385,27 +389,3 @@ https://mp.weixin.qq.com/s/FohJ81sPT_Zk7s1qLuP1-A
 https://mp.weixin.qq.com/s/ya-CHw572C2nnk8XraEMqQ
 
 功率半导体器件现状及未来
-
-https://mp.weixin.qq.com/s/0K595c2GdhPrdWBgpvU-Gw
-
-超声波雷达在汽车上的应用
-
-https://mp.weixin.qq.com/s/j0-Lj8lOyDP0RArB7NzUNw
-
-特斯拉的整车传感器配置方案
-
-https://mp.weixin.qq.com/s/WIjbYMvMis-YBr_ev_wjmQ
-
-霍尔元件及其应用
-
-https://mp.weixin.qq.com/s/vbTR1A0rgzCQY8XG70SNPQ
-
-了不起的MEMS发明人
-
-https://mp.weixin.qq.com/s/gHvvMG7D_W0M2RFntyRaDw
-
-车载抬头显示AR HUD成像技术大解密
-
-https://mp.weixin.qq.com/s/qOnMNbA9C7bcwZ6IvOxyCA
-
-一组动图看懂3D打印原理

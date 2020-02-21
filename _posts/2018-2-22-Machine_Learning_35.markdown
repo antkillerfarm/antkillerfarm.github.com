@@ -189,7 +189,3 @@ https://mp.weixin.qq.com/s/na0vVhECfBppTb7BmhRyzA
 https://mp.weixin.qq.com/s/v460ql4RnJGbzbV0iZH4kA
 
 深度解读卡尔曼滤波原理
-
-https://mp.weixin.qq.com/s/gyeNwInJhBfuOFTKPCcEiA
-
-金融时序预测：状态空间模型和卡尔曼滤波

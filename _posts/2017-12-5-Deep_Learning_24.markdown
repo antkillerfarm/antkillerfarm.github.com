@@ -106,6 +106,10 @@ https://mp.weixin.qq.com/s/3djAWJs6ecDdPSpQMxqmrg
 
 清华、李飞飞团队等提出强记忆力E3D-LSTM网络
 
+https://mp.weixin.qq.com/s/__qC6Wzy4jaGNGzWr3eOIg
+
+引入额外门控运算，LSTM稍做修改，性能便堪比Transformer-XL
+
 # 深度目标跟踪
 
 ![](/images/img3/recent_Tracker_development.png)

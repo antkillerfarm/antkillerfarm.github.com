@@ -8,6 +8,20 @@ category: Attention
 
 ## ERNIE（续）
 
+![](/images/img3/ERNIE.png)
+
+相较于BERT学习原始语言信号，ERNIE模型通过对词、实体等语义单元的掩码，使得模型学习完整概念的语义表示。上例中，BERT通过“哈”与“滨”的局部共现，即可判断出“尔”字，但它没有学习到与“哈尔滨”相关的知识。而ERNIE通过学习词与实体的表达，使模型能够建模出“哈尔滨”与“黑龙江”的关系，学到“哈尔滨”是“黑龙江”的省会以及“哈尔滨”是个冰雪城市。
+
+![](/images/img3/ERNIE_2.png)
+
+为了学习相关语义，ERNIE提出了如上图所示的不同级别的mask方法。
+
+![](/images/img3/ERNIE_3.png)
+
+还有如上图所示的语义嵌入。
+
+BERT已经证明了预训练模型对于多种NLP任务的有效性，因此使用多任务学习就成为一个很自然的想法。
+
 ![](/images/img3/ERNIE_4.png)
 
 上图是ERNIE 2.0的多任务训练的结构图。可以认为ERNIE 2.0就是多任务版的ERNIE。
@@ -87,6 +101,10 @@ XLnet：集合了GPT和BERT的预训练模型
 https://mp.weixin.qq.com/s/7ZTDJmsOxOwJ7fYUxK6eTw
 
 XLNet详解
+
+https://zhuanlan.zhihu.com/p/107350079
+
+什么是XLNet，它为什么比BERT效果好？
 
 ## 轻量化BERT
 
@@ -283,35 +301,3 @@ Attention isn’t all you need！BERT的力量之源远不止注意力
 https://mp.weixin.qq.com/s/Y2bs2QegRadSR7lbiFFnWg
 
 BERT一作Jacob Devlin斯坦福演讲PPT：BERT介绍与答疑
-
-https://zhuanlan.zhihu.com/p/58425003
-
-从Word2Vec到Bert，聊聊词向量的前世今生（一）
-
-https://mp.weixin.qq.com/s/SfMIKfF_B4agFCHN_U_mzQ
-
-BAM！利用知识蒸馏和多任务学习构建的通用语言模型
-
-https://mp.weixin.qq.com/s/6G5Mu7-1omGtQ_9Gt9lUBw
-
-基于预训练自然语言生成的文本摘要方法
-
-https://mp.weixin.qq.com/s/yysnPauB22YgprpOi1ZWSQ
-
-深入理解BERT Transformer，不仅仅是注意力机制
-
-https://mp.weixin.qq.com/s/kFABJJ3fBC48-4DXK8PERQ
-
-10大任务超越BERT，微软提出多任务深度神经网络MT-DNN
-
-https://mp.weixin.qq.com/s/jlGfxkT_o9sgFlUuR_x5Tw
-
-微软开源用于学习通用语言嵌入的MT-DNN模型
-
-https://mp.weixin.qq.com/s/D68YzjYvpc2epGWFBP6rIQ
-
-谷歌实习生新算法提速惊人！BERT训练从三天三夜，缩短到一个小时
-
-https://mp.weixin.qq.com/s/iDGofh_ycWJzfqQriPEXGQ
-
-如何用Python和BERT做中文文本二元分类？

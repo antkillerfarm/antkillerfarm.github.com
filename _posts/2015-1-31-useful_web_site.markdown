@@ -70,7 +70,7 @@ Conky---http://conky.sourceforge.net/
 
 自由软件，用于X视窗系统的系统监视。
 
-ocenaudio---http://www.ocenaudio.com.br/download
+ocenaudio---http://www.ocenaudio.com/
 
 用于音频剪辑处理的工具。免费但不开源。
 

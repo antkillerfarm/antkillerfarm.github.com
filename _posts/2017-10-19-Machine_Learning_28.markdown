@@ -36,10 +36,6 @@ $$X_{m\{n+1\}}$$和预测值$$x_{n+1}$$组成了扩展向量$$[X_{m\{n+1\}},x_{n
 
 参考：
 
-http://www.doc88.com/p-1416660147532.html
-
-KNN算法在股票预测中的应用
-
 https://zhuanlan.zhihu.com/p/29838009
 
 K近邻算法

@@ -84,6 +84,10 @@ https://mp.weixin.qq.com/s/hyHUkiEyXGn3v-M0d0igVg
 
 想入门图深度学习？这篇55页的教程帮你理清楚了脉络
 
+https://mp.weixin.qq.com/s/ePqSwDhCgE1fGWSphuZuBg
+
+WSDM2020教程《基于图学习和推理的推荐系统》，附130页PPT下载
+
 ## DGL
 
 https://mp.weixin.qq.com/s/I8pGqpKnRJp9HRglHfMZCw

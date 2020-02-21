@@ -62,3 +62,97 @@ https://zhuanlan.zhihu.com/p/32734021
 https://www.zhihu.com/question/347726083
 
 如何看待辛几何教皇Paul Seidel邀请李吟前往MIT访问？
+
+# 武汉肺炎+
+
+## 科研（续）
+
+伤寒玛丽”（Typhoid Mary），本名叫玛丽·梅伦（Mary Mallon，1869年9月23日——1938年11月11日），生于爱尔兰，15岁时移民美国。起初，她给人当女佣。后来，她发现自己很有烹调才能，于是转行当了厨师，每月能赚到比做女佣高出很多的薪水。玛丽虽然身体一直健康，却携带伤寒杆菌。后来玛丽相继传染多人，最终被隔离在纽约附近的北兄弟岛（North Brother Island）上的传染病房。
+
+https://www.zhihu.com/question/368287285/answer/989275113
+
+如何看待女子从武汉回河南后至今无症状，其5名亲人患新型肺炎？
+
+----
+
+双黄连由金银花（双花）、黄芩和连翘三味中药配伍而成。它的历史并不算悠久，但在现有的网络信息中，也无法准确地指出究竟是何人、何时开发出这个如今家喻户晓的方子。有文献可考的历史表明，双黄连方剂产生于文革期间的东北地区——再准确一点，黑龙江哈尔滨，并且与现在的哈药集团有着千丝万缕的联系。
+
+https://mp.weixin.qq.com/s/7YscNLoSsuYhf3XQ5qz36w
+
+双黄连热销背后，那些你不知道的事
+
+----
+
+抗病毒药一般以vir结尾，例如Remdesivir。所以药品的中文名一般就是XXX韦。
+
+https://mp.weixin.qq.com/s/GAAeUD5ZDROltfxcoSFaeA
+
+期待救急，你了解“老药新用”吗？
+
+## 病逝者
+
+一个健康的社会不应该只有一个声音--By 李文亮
+
+https://mp.weixin.qq.com/s/e3MaPaBZrxwqWtykB9f_JQ
+
+86岁院士因感染冠状病毒去世，华中科技大学已痛失4位知名学者
+
+## 疫情建模
+
+https://mp.weixin.qq.com/s/2XsZzfZI-gAHC-D5HGNZXw
+
+从目前的数据，再次分析一下武汉的新冠肺炎患者数量和死亡率
+
+https://mp.weixin.qq.com/s/I5I5Jh7brFGRBTAFah-C4w
+
+武汉新冠肺炎传播的动力学模型及预测
+
+https://mp.weixin.qq.com/s/-C03P-I4w91kLSGsuhxAKQ
+
+新型冠状病毒传播与扩散的控制模型
+
+https://mp.weixin.qq.com/s/gZCD8ATxGrpHSZLKpcHfiA
+
+基于元胞自动机模拟新型肺炎病毒的传播和预防
+
+https://mp.weixin.qq.com/s/ZOPncvPpFyLIwH_XChAdbg
+
+基于微分方程和元胞自动机模拟新型肺炎病毒的传播
+
+https://mp.weixin.qq.com/s/4w6CTGaKKEH9APVNH9Ue8w
+
+扩散信息、交通管制、自我隔离，哪个更能遏制病毒传播？
+
+https://mp.weixin.qq.com/s/tBoM9o3pK89bprK8npHLWA
+
+可能会说谎的地图！全国疫情地理格局的重新审视
+
+https://mp.weixin.qq.com/s/bVNkCHl7BPU_eEcAWksmww
+
+关于武汉新型冠状病毒肺炎的传播预测模型
+
+https://mp.weixin.qq.com/s/XYT4U1mv29nln32ysMINrw
+
+武汉肺炎传播的多种数学模型
+
+https://mp.weixin.qq.com/s/Lg1tJmO7aN9XNpZ6bs0cJA
+
+程序员硬核劝告：现在还不是出门的时候
+
+https://mp.weixin.qq.com/s/sv07R8HQXX2U0QOi5_dOwg
+
+河南1105例新冠肺炎数据告诉我们什么？
+
+https://mp.weixin.qq.com/s/qRzkS2itp-eloaBlA-VSGA
+
+基于排队论模型浅析各地医护人员驰援武汉的重要意义
+
+https://mp.weixin.qq.com/s/ueuvLFxQAGNzBLHHyaBYMA
+
+如果新冠病毒是在亚美尼亚爆发会发生什么？程序员用Python进行模拟
+
+# 世说新语+
+
+## 2020.2（续）
+
+旧帝一工神，即旧制帝国大学的东京大学、京都大学、大阪大学、东北大学、北海道大学、名古屋大学、九州大学及一桥大学、东京工业大学、神戸大学等日本国立十大名校，又有难关国立大的称呼。近年来，在学界及补习班间也有旧帝一工神筑（加上筑波大学），或是旧帝一工神早庆（加上早庆两私学）等称呼，但最早的称呼仍以旧帝一工神为主流。

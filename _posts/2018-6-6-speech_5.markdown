@@ -1,10 +1,38 @@
 ---
 layout: post
-title:  语音识别（五）——Cepstrum Analysis, Mel-Frequency Analysis, FBank
+title:  语音识别（五）——Cepstrum Analysis, Mel-Frequency Analysis
 category: speech 
 ---
 
 # Spectrogram（续）
+
+## Hann window
+
+Hann window虽然是以Julius Ferdinand von Hann的名字命名，但却是Blackman和Tukey的作品。他们和同一实验室的Claude E. Shannon, Hendrik Wade Bode，合称为Information Age的四大先锋。
+
+>Julius Ferdinand von Hann，1839～1921，奥地利气象学家。现代气象学之父。
+
+>Ralph Beebe Blackman，1904～1990，美国数学家。长期供职于AT&T Bell Laboratories。二战时，参与了防空火炮控制系统的平滑研究。
+
+>John Wilder Tukey，1915～2000，美国数学家。Princeton University博士，长期供职于AT&T Bell Laboratories。英国皇家学会会员。Cooley–Tukey FFT算法发明者。
+
+$$w(n) = \sum_{k = 0}^{K} (-1)^k a_k\; \cos\left( \frac{2 \pi k n}{N-1} \right),\quad 0\le n \le N-1$$
+
+上式是Cosine-sum windows的计算公式，令K=1，则：
+
+$$w(n) = a_0 - \underbrace{(1-a_0)}_{a_1}\cdot \cos\left( \tfrac{2 \pi n}{N - 1} \right),\quad 0\le n \le N-1$$
+
+这类Window function有好几个特例：
+
+Hann window：
+
+$$w(n) = 0.5\; \left[1 - \cos \left ( \frac{2 \pi n}{N-1} \right) \right] = \sin^2 \left ( \frac{\pi n}{N-1} \right)$$
+
+Hamming window：
+
+$$w(n) = 0.54 - 0.46\cdot \cos\left( \tfrac{2 \pi n}{N - 1}\right)$$
+
+>Richard Wesley Hamming，1915～1998，美国数学家。University of Chicago本科（1937）+University of Nebraska硕士（1939）+UIUC博士（1942）。参与曼哈顿计划，后长期供职于Bell Lab。通信和计算机工程领域的宗师级人物，美国工程院院士，图灵奖得主（1968）。Hamming code 、Hamming distance等都是他的贡献。
 
 ## STFT
 
@@ -187,73 +215,3 @@ DCT还有一个特点是，对于一般的语音信号，这一步的结果的�
 $$\delta f_k = 2^{1/n} \cdot \delta f_{k-1} = \left( 2^{1/n} \right)^k \cdot \delta f_\text{min}$$
 
 上式中的$$f_k$$即为filter的中心频点。
-
-## 参考
-
-http://blog.csdn.net/zouxy09/article/details/9156785
-
-梅尔频率倒谱系数（MFCC）
-
-https://my.oschina.net/jamesju/blog/193343
-
-语音特征参数MFCC提取过程详解
-
-https://liuyanfeier.github.io/2017/10/26/2017-10-27-Kaldi%E4%B9%8Bfbank%E5%92%8Cmfcc%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/
-
-kaldi之fbank和mfcc特征提取
-
-https://zhuanlan.zhihu.com/p/26680599
-
-语音信号预处理及特征参数提取
-
-# FBank
-
-Filter bank和MFCC的计算步骤基本一致，只是没有做IDFT而已。
-
-FBank与MFCC对比：
-
-1.计算量：MFCC是在FBank的基础上进行的，所以MFCC的计算量更大
-
-2.特征区分度：FBank特征相关性较高（相邻滤波器组有重叠），MFCC具有更好的判别度，这也是在大多数语音识别论文中用的是MFCC，而不是FBank的原因
-
-3.使用对角协方差矩阵的GMM由于忽略了不同特征维度的相关性，MFCC更适合用来做特征。
-
-4.DNN/CNN可以更好的利用这些相关性，使用fbank特征可以更多地降低WER。
-
-![](/images/img2/LFBE.png)
-
-FBank有时也叫做log of filter bank energy（LFBE）。
-
-论文：
-
-《Bandwidth extension of narrowband speech in log spectra domain using neural network》
-
-参考：
-
-http://blog.csdn.net/wxb1553725576/article/details/78048546
-
-Kaldi特征提取之-FBank
-
-# Pitch Detection
-
-http://blog.csdn.net/zouxy09/article/details/9141875
-
-基音周期估计（Pitch Detection）
-
-# Vector Quantization
-
-http://blog.csdn.net/zouxy09/article/details/9153255
-
-矢量量化（Vector Quantization）
-
-# fMLLR
-
-https://blog.csdn.net/xmdxcsj/article/details/78512645
-
-声学特征变换fMLLR
-
-# SGMM
-
-https://blog.csdn.net/quhediegooo/article/details/68946100
-
-子空间高斯混合模型-SGMM

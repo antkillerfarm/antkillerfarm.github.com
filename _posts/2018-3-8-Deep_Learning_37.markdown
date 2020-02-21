@@ -44,6 +44,10 @@ https://mp.weixin.qq.com/s/Z06oUe7oExgkKZ8g2_PnPw
 
 科普人脸表情识别技术
 
+https://mp.weixin.qq.com/s/_hAxj4UX0qIxddVQSL_iWA
+
+一种快速准确的人脸检测、识别和验证系统
+
 https://mp.weixin.qq.com/s/tS_9gS2ADoEdSKCLB-cxpA
 
 刘小明教授为你讲解人脸识别
@@ -371,19 +375,3 @@ https://mp.weixin.qq.com/s/yoCVFWlqReUHx1Wmo0-rtw
 https://mp.weixin.qq.com/s/MEB-qLGiOKcvdee-vlsjYw
 
 改进的阴影抑制用于光照鲁棒的人脸识别
-
-https://mp.weixin.qq.com/s/BE0bBFNVOoKjXLUH5vr5Kg
-
-在警察领域高级人脸识别技术的一致性
-
-https://mp.weixin.qq.com/s/fyx_P_M_CyuAshdc9lCAcg
-
-鲁棒异构判别分析的单样本人脸识别
-
-https://mp.weixin.qq.com/s/lhut5ndqZWTwlKZjeY484w
-
-漫画人脸检测：全局和局部信息融合的深度神经网络
-
-https://mp.weixin.qq.com/s/7CV0a-UshPtadgfcsFScJw
-
-用孪生网络、对比损失和三重损失进行人脸识别的单样本学习

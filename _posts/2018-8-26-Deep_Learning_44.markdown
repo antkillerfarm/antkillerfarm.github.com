@@ -6,6 +6,26 @@ category: DL
 
 # 图像变换（续）
 
+https://mp.weixin.qq.com/s/-3e5xhbz01FerZp8DcRV5g
+
+谷歌小姐姐搞出魔法画板：你随便画，补不齐算AI输
+
+https://mp.weixin.qq.com/s/M9r8m--Sd9kHxZrOEHbY7A
+
+视频直接变漫画！GAN又有了新玩法
+
+https://mp.weixin.qq.com/s/CbdERPAHhmLB2hVVl2Dgkg
+
+裤子换裙子，就问你GAN的这波操作秀不秀
+
+https://mp.weixin.qq.com/s/Ug0jyloNkeL6uuCqv9K0SA
+
+图像/人脸补全问题的前世今生
+
+https://mp.weixin.qq.com/s/xdFxQfgj61pgB-aCq31rLA
+
+旷视等提出GIF2Video：首个深度学习GIF质量提升方法
+
 https://mp.weixin.qq.com/s/4hKIh77UfsuJCSKwtvpq3Q
 
 最强GAN修图魔术师：美颜生发摘眼镜、草绘秒变真人脸
@@ -146,14 +166,6 @@ https://mp.weixin.qq.com/s/JYa-kX6GadXorS1kJ1Heyw
 
 Image inpainting图像修补最新综述
 
-https://zhuanlan.zhihu.com/p/76791923
-
-图像/视频去噪中的Deformable Kernels
-
-https://mp.weixin.qq.com/s/WwWoyEcvSXGX3uBCjhLkOg
-
-图像/视频去噪算法资源集锦
-
 https://mp.weixin.qq.com/s/AbCxbG4NJvvZ1WLNze_HuQ
 
 拍照太糊？你需要了解下美图人像画质修复技术
@@ -229,18 +241,6 @@ https://mp.weixin.qq.com/s/Y0FGO06IhJYu_QbV0IlyTw
 https://mp.weixin.qq.com/s/UmQ1ZxLHizW47f2-W58-Lw
 
 姿势服装随心换
-
-# ESN
-
-Echo State Network
-
-https://blog.csdn.net/zwqhehe/article/details/77025035
-
-回声状态网络(ESN)原理详解
-
-https://mp.weixin.qq.com/s/tjawT2-bhPrit0Fd4knSgA
-
-基于回声状态网络预测股票价格
 
 # 自动求导
 

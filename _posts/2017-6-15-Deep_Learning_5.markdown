@@ -72,6 +72,10 @@ https://mp.weixin.qq.com/s/reT4lAjwo4fHV4ctR9zbxQ
 
 漫谈Word2vec之skip-gram模型
 
+https://mp.weixin.qq.com/s/9YoeoSpeAXo-QryZ9rxfug
+
+一文理解Skip-Gram上下文的预测算法
+
 ### Hierarchical Softmax
 
 word2vec的输出层有两种模型：Hierarchical Softmax和Negative Sampling。

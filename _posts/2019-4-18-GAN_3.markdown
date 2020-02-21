@@ -148,6 +148,10 @@ https://mp.weixin.qq.com/s/jGSqB6UpCeQo8FC219TWbQ
 
 学习GAN模型量化评价，先从掌握FID开始吧
 
+https://mp.weixin.qq.com/s/tV3ymNXo6xmXFu3K1AJYJQ
+
+最早被用于评价GAN模型的定量指标Inception Score是什么
+
 # DCGAN
 
 论文：

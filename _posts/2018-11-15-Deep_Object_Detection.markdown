@@ -48,6 +48,10 @@ https://mp.weixin.qq.com/s/UoIhAcMRgMJ8rlA29_Nacg
 
 深度学习目标检测近年进展
 
+https://zhuanlan.zhihu.com/p/27546796
+
+视觉目标检测和识别之过去，现在及可能
+
 ## CV实践的难点
 
 从理论上说，无论是传统CV，还是新近崛起的DL CV，其本质都是通过比对目标图片和训练图片的相似度，从而得到识别的结果。

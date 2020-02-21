@@ -318,7 +318,7 @@ WaveRNN没有沿用Dilated Convolution，而是采用了另外一种方式加速
 
 ![](/images/img2/WaveRNN_2.png)
 
-1.将原始序列重组为B组（B表示Batch Size，这里为8）。上图中的序号表示在原始序列中的序号。
+1.将原始序列重组为B组（B表示Batch Size，这里为8）。上图中的序号表示在原始序列中的序号。因此上图的含义显然就是：每隔8个样本进行一次采样，采样所得编为一组。总共有8个这样的组。
 
 2.作者发现直接分组并行生成，虽然简单，但效果不好。其原因在于只用到了过去的序列数据，而缺少对整个序列信息的把握。但直接采用全局信息，又不是RNN的做法。为此论文提出了提前量的概念，即上图中的F。
 
@@ -371,19 +371,3 @@ https://www.zhihu.com/question/46829056
 https://www.zhihu.com/question/29168274
 
 语音识别中，如何理解HMM是一个生成模型，而DNN是一个判别模型呢？
-
-https://zhuanlan.zhihu.com/p/24979135
-
-从声学模型算法总结2016年语音识别的重大进步
-
-https://mp.weixin.qq.com/s/zEqgDh6_fnDgXEI8MC9cmg
-
-端对端的深度卷积神经网络在语音识别中的应用
-
-https://mp.weixin.qq.com/s/RjoGmtiyqrx8cG6JtgqsxQ
-
-181页PPT专题讲座——语音识别与声纹识别
-
-https://mp.weixin.qq.com/s/pimQBFd5uxrZk4dSgUsblg
-
-苹果机器学习期刊“Siri三部曲”之一：通过跨带宽和跨语言初始化提升神经网络声学模型

@@ -134,10 +134,6 @@ https://mp.weixin.qq.com/s/JwRXBNmXBaQM2GK6BDRqMw
 
 Kaggle网站流量预测任务第一名解决方案：从模型到代码详解时序预测
 
-https://mp.weixin.qq.com/s/caXnseARUwLIXdsZ7BXOUw
-
-用于金融时序预测的神经网络：可改善移动平均线经典策略
-
 http://mp.weixin.qq.com/s/9fJT0dMLvYQdfMVvSEiG4A
 
 深度学习的时间序列模型评价
@@ -186,10 +182,6 @@ https://zhuanlan.zhihu.com/p/83130649
 
 深度学习在时间序列分类中的应用
 
-https://mp.weixin.qq.com/s/09KFXwQLJ-HUJsrTd0B1HA
-
-金融时序预测中的深度学习方法综述: 从2005到2019
-
 https://mp.weixin.qq.com/s/iPpVT2iY4Ec6oYdsRpPeTQ
 
 淘宝推荐系统中的深度序列匹配模型SDM
@@ -228,6 +220,10 @@ https://mp.weixin.qq.com/s/7fBXMvT4eyZrKhPKQTAIZQ
 
 你听说过胶囊网络吗？
 
+https://www.cnblogs.com/CZiFan/p/9803067.html
+
+CapsNet胶囊网络
+
 https://mp.weixin.qq.com/s/F9SGZPZj6gup_nOVuDel6A
 
 与胶囊网络异曲同工：Bengio等提出四元数循环神经网络
@@ -255,6 +251,18 @@ https://mp.weixin.qq.com/s/BqsFIUrVEVz5kOFh3W93gQ
 https://zhuanlan.zhihu.com/p/106330900
 
 解读－Stacked Capsule AutoEncoder－堆叠的胶囊自编码器
+
+# ESN
+
+Echo State Network
+
+https://blog.csdn.net/zwqhehe/article/details/77025035
+
+回声状态网络(ESN)原理详解
+
+https://mp.weixin.qq.com/s/tjawT2-bhPrit0Fd4knSgA
+
+基于回声状态网络预测股票价格
 
 # 视频处理+
 
@@ -289,3 +297,7 @@ https://mp.weixin.qq.com/s/mASzImKwlpX7BJZFux3Adw
 https://mp.weixin.qq.com/s/f2fYwaPNty72CFUIZZPBoA
 
 让电影动漫统统变丝滑，480帧也毫无卡顿，交大博士生开源插帧软件DAIN
+
+https://mp.weixin.qq.com/s/8EQNRIIKQnyoPhUG8ben6A
+
+基于耦合知识蒸馏，速度提升200倍，一款视频显著区域检测新算法

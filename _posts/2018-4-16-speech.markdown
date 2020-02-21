@@ -308,17 +308,3 @@ https://github.com/petewarden/extract_loudest_section
 https://www.kaggle.com/davids1992/speech-representation-and-data-exploration/notebook
 
 包含对Speech Commands Datasets的数据处理过程的blog
-
-----
-
-http://pan.baidu.com/s/1dEhUghz
-
-清华大学语音和语言技术研究中心（CSLT）公开的数据集。这个数据集除了包含thchs30之外，还包含了其他几个小语种的数据集。
-
-http://cn-mirror.openslr.org/18/
-
-单独的thchs30数据集
-
-http://blog.csdn.net/sut_wj/article/details/70662181
-
-THCHS-30：一个免费的中文语料库

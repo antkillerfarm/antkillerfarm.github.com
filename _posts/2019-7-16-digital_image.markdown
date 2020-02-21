@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数字成像, 编译原理, 边缘计算, Autoware
+title:  数字成像, 编译原理
 category: resource 
 ---
 
@@ -45,6 +45,17 @@ https://zhuanlan.zhihu.com/OpticPhantasm
 http://science.china.com.cn/2016-09/26/content_9058067.htm
 
 睹物思人--索尼历史档案馆的另类发现
+
+----
+
+>笔者曾经问过Sony图像传感器部门的大佬，CCD的画质更好，到底是什么因素导致相机市场最终倒向cmos image sensor，是因为对高像素的需求？低功耗的需求？容易集成后处理电路？还是因为cmos sensor成本低？   
+>大佬给出了一个出乎我预料的答案：最主要是‘产能’。手机相机的迅速普及，图像传感器的需求暴增，当时采用CCD工艺的工厂数远远少于cmos工艺的工厂数，cmos工艺的工厂迅速转过去生产图像传感器满足了市场需求，同时cmos image sensor的设计者逐渐改进cmos sensor设计，融合CCD和Cmos的设计方法，逐渐提高了cmos image sensor的图像质量。
+
+参考：
+
+https://mp.weixin.qq.com/s/cAN1Qbe_sRfPdjlLy0ig1A
+
+一亿像素的是与非
 
 ## 深度相机
 
@@ -405,63 +416,3 @@ A Tour to LLVM IR（下）
 https://mp.weixin.qq.com/s/4FJzxPyCmakjIU-9xlQmJQ
 
 阁下可知文言编程之精妙？CMU本科生开源文言文编程语言，数天2K星
-
-# 边缘计算
-
-![](/images/img2/edge_computing.png)
-
-https://mp.weixin.qq.com/s/i5KkUVaEULrlxeNtU_PDtQ
-
-天津大学最新“边缘计算与深度学习的融合”综述论文
-
-https://mp.weixin.qq.com/s/TXZh-bn9VhwGxJRNjzecRw
-
-重新认识“边缘计算”
-
-https://mp.weixin.qq.com/s/6Nr7LF9VxYQ4NlLlk8bCVw
-
-不了解边缘计算，你可能就要被“边缘”了
-
-https://mp.weixin.qq.com/s/3d7CEQ0iQzwnJ_tE7eB9Yg
-
-边缘计算芯片格局分析
-
-https://mp.weixin.qq.com/s/U9vnEzumNgGlYFR-lEPfhw
-
-智能边缘计算：计算模式的再次轮回
-
-https://mp.weixin.qq.com/s/x6MWXZAFgyv2HDaVll9S6A
-
-一文读懂边缘计算和业务场景
-
-# Autoware
-
-Autoware是另一个开源的无人驾驶平台。不像Apollo，没有百度这样的强势公司的介入，社区氛围更浓一些，相对的，功能也要弱一些。
-
-官网：
-
-https://www.autoware.org/
-
-主要由一下组件构成：
-
-- autoware.ai
-
-https://www.autoware.ai/
-
-这个组件基于ROS 1.0，是目前的方案。
-
-- autoware.auto
-
-https://www.autoware.auto/
-
-这个组件基于ROS 2.0，是面向未来的方案。
-
-- autoware.io
-
-https://www.autoware.io/
-
-autoware提供的模拟器。
-
-代码仓库：
-
-https://gitlab.com/autowarefoundation/autoware.ai

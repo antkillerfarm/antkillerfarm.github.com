@@ -282,6 +282,10 @@ https://mp.weixin.qq.com/s/UGx3FI9GsHuUreNb8yByAA
 
 手绘稿如何1秒变身数据大屏？深度学习让人人成为可视化专家
 
+https://mp.weixin.qq.com/s/rbdke7cKAkXbxvSyFMXX4g
+
+独家下载！阿里如何用AI写代码？
+
 ## CV
 
 https://mp.weixin.qq.com/s/gsHu7vNs9cm1tH2nz9mmMg
@@ -363,10 +367,6 @@ https://zhuanlan.zhihu.com/p/76960575
 https://mp.weixin.qq.com/s/1ZnacYeqkd_y_HoK8XIWWQ
 
 旷视成都研究院负责人刘帅成：图像对齐及其应用
-
-https://mp.weixin.qq.com/s/hPaJssohwTIPx6kzGvp70g
-
-一份超全易懂的深度学习在图像去噪的综述
 
 ## 光神经网络
 

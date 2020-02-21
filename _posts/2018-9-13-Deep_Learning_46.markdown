@@ -6,6 +6,30 @@ category: DL
 
 # OCR（续）
 
+https://mp.weixin.qq.com/s/5eTugA70myKxDTZUby87Pw
+
+任意形状文本检测：Look More Than Once
+
+https://mp.weixin.qq.com/s/RuYZ-nmW2p7jMIJ7sbxbIw
+
+任意形状文本检测的像素聚合网络
+
+https://mp.weixin.qq.com/s/T0QeYbkmD4jwhWB47Fnn2w
+
+基于深度学习的端到端在线手写数学公式识别
+
+https://mp.weixin.qq.com/s/l1rmGxOVrXKAaf4yYUt4kQ
+
+自然场景文字定位技术详解
+
+https://mp.weixin.qq.com/s/rJ7guL-Hxxr2Ezl7LRhQrA
+
+基于对抗学习的数据稀缺手写文本识别
+
+https://mp.weixin.qq.com/s/YixrjGTU4p7LlyfQCEmmmQ
+
+端到端任意形状场景文字识别
+
 https://mp.weixin.qq.com/s/Lk_P74kJCjmQo1S2piTplA
 
 针对不规则场景文字识别的对称约束矫正网络

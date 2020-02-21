@@ -310,6 +310,14 @@ https://mp.weixin.qq.com/s/4zfi1UGhhyadU8kD65CVAA
 
 使用OpenCV4的统一向量指令实现硬件级别加速
 
+https://mp.weixin.qq.com/s/lBPDuLSBk44lK1_YA1yaeQ
+
+基于灰度共生矩阵(GLCM)的图像纹理分析与提取
+
+https://mp.weixin.qq.com/s/LDwWseZqxpvuwE6X1jtvxQ
+
+机器视觉之尺寸测量基础
+
 # Dlib
 
 Dlib是一个C++写的机器学习库。

@@ -4,7 +4,69 @@ title:  推荐系统（二）——用户画像, 工程细节
 category: Recommender System 
 ---
 
-# 用户画像（续）
+# 推荐算法中的常用排序算法（续）
+
+https://mp.weixin.qq.com/s/xigME-griWFwEvvPNqWuvg
+
+美团点评联盟广告的场景化定向排序机制
+
+https://blog.csdn.net/stdcoutzyx/article/details/50879219
+
+Learning to Rank简介
+
+http://www.cnblogs.com/wentingtu/archive/2012/03/13/2393993.html
+
+Learning to Rank入门小结
+
+https://mp.weixin.qq.com/s/dRaiYPIdh_oJcQD-UxAlkA
+
+优秀的排序算法如何成就了伟大的机器学习技术
+
+https://mp.weixin.qq.com/s/XT4_E2d2gr1T8jCo82ix4A
+
+深入浅出排序学习：写给程序员的算法系统开发实践
+
+https://zhuanlan.zhihu.com/p/64952093
+
+排序评价指标
+
+https://zhuanlan.zhihu.com/p/64970393
+
+PointwiseRank
+
+https://zhuanlan.zhihu.com/p/65224450
+
+PairwiseRank
+
+https://zhuanlan.zhihu.com/p/66514492
+
+ListwiseRank
+
+https://zhuanlan.zhihu.com/p/69246361
+
+基于query的排序
+
+https://www.zhihu.com/question/26933554
+
+如何评价知乎的回答排序算法？（威尔逊置信区间下界）
+
+# 用户画像
+
+https://mp.weixin.qq.com/s/TydTE50NzxMbGAigqv6BCw
+
+如何破解“千人千面”，深度解读用户画像
+
+https://mp.weixin.qq.com/s/bdAp_FExIK5IJH8WnD53Wg
+
+你真的懂用户画像吗？
+
+https://mp.weixin.qq.com/s/LN6ib-8b_SZHR9u_-OMwNg
+
+推荐系统眼中的你：内容画像与用户画像
+
+https://mp.weixin.qq.com/s/95Zklj8ovheQV3Gnc-2h-Q
+
+小米大数据总监司马云瑞详解小米用户画像的演进及应用解读
 
 https://mp.weixin.qq.com/s/iuchckQ-MRqSZ2QwghgPTQ
 
@@ -296,42 +358,6 @@ https://mp.weixin.qq.com/s/b0_o4lHOxs7v4PCCL_I4DA
 
 Instagram推荐系统：每秒预测9000万个模型是怎么做到的？
 
-https://mp.weixin.qq.com/s/ZggfBVw0Z0ODxjqAC4-Lbg
+https://mp.weixin.qq.com/s/MGeuFEQ4wvEERSrSVVihJg
 
-淘宝搜索模型如何全面实时化？
-
-https://mp.weixin.qq.com/s/SPtNy_1_6fiFXKukMmVPlA
-
-深度学习在网易严选智能客服中的应用
-
-https://mp.weixin.qq.com/s/dw988NgHl93B8sC2UFjtPg
-
-推荐系统之数据与特征工程
-
-https://mp.weixin.qq.com/s/TcxI-XSjj7UtHvx3xC55jg
-
-微信读书怎么给你做推荐的？
-
-https://mp.weixin.qq.com/s/MAfK4B2F8sPXRLodXkwnmw
-
-Query理解和语义召回在知乎搜索中的应用
-
-https://mp.weixin.qq.com/s/t7LYfItthkszzvRp6opG5w
-
-机器学习在微博O系列广告中的应用
-
-https://mp.weixin.qq.com/s/3urKkPfhi4JC7Qe2pLclsg
-
-搜索模型核心技术公开，淘宝如何做用户建模？
-
-https://mp.weixin.qq.com/s/0_G3jMpwJVbdJ85TajubIg
-
-个性化海报在爱奇艺视频推荐场景中的实践
-
-https://mp.weixin.qq.com/s/YkABleB5hlHt_Zn6M6DgBw
-
-从零开始构建企业级推荐系统
-
-https://mp.weixin.qq.com/s/WOXSSA5srCqaNPO-j-Ogqw
-
-优酷：如何让视频算法为质量服务？
+推荐系统提供web服务的2种方式

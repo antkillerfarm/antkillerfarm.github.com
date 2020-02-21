@@ -132,6 +132,12 @@ void main()
 | FP128 | 1 | 15 | 113 |
 | FP256 | 1 | 19 | 237 |
 
+目前，clang编译器已经原生支持FP16，但gcc还不行，不过可以用以下项目支持之：
+
+http://half.sourceforge.net/
+
+half - IEEE 754-based half-precision floating point library
+
 显然，Significand的位数决定Accuracy，而Exponent的位数决定Dynamic Range。
 
 上溢：超出所能表示的最大数（$$\to \infty$$）。
@@ -259,32 +265,20 @@ https://mp.weixin.qq.com/s/wJAt-RqmsoyECLGgdlH6RA
 
 基于数据的分布式鲁棒优化算法及其应用
 
-# BERT+
+# GAN参考资源+
 
-https://zhuanlan.zhihu.com/p/91052495
+https://mp.weixin.qq.com/s/Ze2BXEexTIpNluRSdfeCsA
 
-当BERT遇上知识图谱
+GAN和PS合体会怎样？东京大学图像增强新研究：无需配对图像，增强效果还可解释
 
-https://mp.weixin.qq.com/s/wQW-JT-sGMj60OtXwTssyQ
+https://mp.weixin.qq.com/s/qLhnvLhXHhRoPGtPWYCY0w
 
-BERT模型推理加速总结
+ICCV2019最佳论文SinGAN全面解读
 
-https://mp.weixin.qq.com/s/HOD1Hb70NhTXXCXlopzfng
+https://zhuanlan.zhihu.com/p/97138846
 
-BERT推理加速实践
+《SinGAN:从单个自然图像中学习生成模型》论文笔记
 
-https://mp.weixin.qq.com/s/0luHJsw7WWJskJWGThR5qg
+https://mp.weixin.qq.com/s/mXjNtZvUHutBABh-f9qisQ
 
-使用BERT做文本摘要
-
-https://mp.weixin.qq.com/s/m_FU4NmjUsvxusRidDb-Xg
-
-UniLM:一种既能阅读又能自动生成的预训练模型
-
-https://mp.weixin.qq.com/s/IY8J09LvDAr8owYffKi5Dw
-
-五问BERT：深入理解NLP领域爆红的预训练模型
-
-https://zhuanlan.zhihu.com/p/106901954
-
-BERT, ELMo, & GPT-2: 这些上下文相关的表示到底有多上下文化？
+那些底层的图像处理问题中，GAN能有什么作为？

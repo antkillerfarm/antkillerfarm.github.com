@@ -132,6 +132,18 @@ https://zhuanlan.zhihu.com/p/30905298
 
 XML和MATLAB交互的基本操作
 
+# GNU Octave
+
+GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。
+
+官网：
+
+https://gnu.org/software/octave/
+
+安装方法:
+
+`sudo apt-get install octave`
+
 # 数据描述语言
 
 ## JSON

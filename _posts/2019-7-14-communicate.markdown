@@ -318,10 +318,6 @@ https://mp.weixin.qq.com/s/6wp4rlBODJAkYf3O4O-2GA
 
 SciPy库以及图像高斯模糊实战
 
-https://mp.weixin.qq.com/s/U4ttnC9VRO39Ic5stG9pBQ
-
-基于概率编程Pyro的金融预测，让正则化结果更有趣！
-
 https://mp.weixin.qq.com/s/8idFi0W7eJx9XDti48B9WQ
 
 Python自动生成表情包

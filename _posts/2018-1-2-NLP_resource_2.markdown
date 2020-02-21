@@ -112,10 +112,6 @@ https://mp.weixin.qq.com/s/JMFuav4zeF-ZkilsZWSUWw
 
 ## 情感分析
 
-https://mp.weixin.qq.com/s/mWOhh9rJru_YDwQEB34GNg
-
-深度学习在金融文本情感分类中的应用
-
 https://mp.weixin.qq.com/s/5VrZTMlNxbgZmaeOxBps_w
 
 Sentiment Analysis情感分析

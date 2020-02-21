@@ -78,10 +78,6 @@ https://mp.weixin.qq.com/s/dmNEzrWNX3YWmocjpORpig
 
 谷歌开源TF-Ranking可扩展库，支持多种排序学习
 
-https://mp.weixin.qq.com/s/ww0nd07DaK4eVcexqebn3g
-
-基于TensorFlow卷积神经网络的短期股票预测
-
 https://mp.weixin.qq.com/s/n_zU7Rg7v6PwjZWEF88fNA
 
 如何使用TensorFlow实现音频分类任务
@@ -197,10 +193,6 @@ Bayesian GAN的TensorFlow实现
 https://mp.weixin.qq.com/s/Sxui9CvdGocIxVG2FM4JtQ
 
 基于tensorflow使用CNN-RNN进行中文文本分类！
-
-https://mp.weixin.qq.com/s/X7ISLRMy5cddpmO5mev4MA
-
-自创数据集，使用TensorFlow预测股票入门
 
 https://mp.weixin.qq.com/s/kJxXIN6D5TEEFSFhGJNIyw
 

@@ -70,6 +70,18 @@ https://mp.weixin.qq.com/s/EcwmGKpCfVy22BWTB0Ro2g
 
 淘宝开源深度学习推理引擎MNN，移动AI的挑战与应对全面解读
 
+## ONNX Runtime
+
+ONNX Runtime是MS的作品。
+
+官网：
+
+https://microsoft.github.io/onnxruntime/
+
+代码：
+
+https://github.com/microsoft/onnxruntime
+
 # Kubernetes
 
 Kubernetes是Google开源的容器集群管理系统，基于Docker构建一个容器的调度服务，提供资源调度、均衡容灾、服务注册、动态扩缩容等功能套件。
@@ -273,6 +285,10 @@ DQN实战篇 从零开始安装Ubuntu, Cuda, Cudnn, Tensorflow, OpenAI Gym
 https://zhuanlan.zhihu.com/p/21477488
 
 150行代码实现DQN算法玩CartPole。这是参考代码的作者本人写的另一个blog，其中的框架部分沿用到了Flappy Bird上。
+
+https://mp.weixin.qq.com/s/nmqX05c2qS3Jeg66W5NOzA
+
+尝试用强化学习算法来玩下FlappyBird？这篇blog只用Q-Learning算法，而不是DQN来玩FlappyBird。
 
 ## CartPole
 

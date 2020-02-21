@@ -4,9 +4,41 @@ title:  深度加速（四）——模型压缩与加速（1）
 category: DL acceleration 
 ---
 
-# NN Quantization
+# NN Quantization（续）
 
-## 参考（续）
+## NN硬件的指标术语
+
+MACC：multiply-accumulate，乘法累加。
+
+FLOPS：Floating-point Operations Per Second，每秒所执行的浮点运算次数。
+
+显然NN的INT8计算主要以MACC为单位。
+
+## gemmlowp
+
+gemmlowp是Google提出的一个支持低精度数据的GEMM（General Matrix Multiply）库。
+
+代码：
+
+https://github.com/google/gemmlowp
+
+## 论文
+
+《Quantizing deep convolutional networks for efficient inference: A whitepaper》
+
+## 参考
+
+https://mp.weixin.qq.com/s/M79xGWWtJUB6wBVlHXw8ig
+
+低精度神经网络：从数值计算角度优化模型效率
+
+https://www.chiphell.com/thread-1620755-1-1.html
+
+新Titan X的INT8计算到底是什么鬼
+
+https://mp.weixin.qq.com/s/S9VcoS_59nbZWe_P3ye2Tw
+
+减少模型半数内存用量：百度&英伟达提出混合精度训练法
 
 https://zhuanlan.zhihu.com/p/35700882
 
@@ -275,39 +307,3 @@ https://mp.weixin.qq.com/s/3qstz-KoRuxwpmfE4XDI-Q
 https://mp.weixin.qq.com/s/dEdWz4bovmk65fwLknHBhg
 
 韩松毕业论文：面向深度学习的高效方法与硬件
-
-https://mp.weixin.qq.com/s/GFE2XYHZXPP0doQ5nd0JNQ
-
-当前深度神经网络模型压缩和加速方法速览
-
-https://mp.weixin.qq.com/s/Faej1LKqurtwEIreUVJ0cw
-
-普林斯顿新算法自动生成高性能神经网络，同时超高效压缩
-
-https://mp.weixin.qq.com/s/uK-HasmiavM3jv6hNRY11A
-
-深度梯度压缩：降低分布式训练的通信带宽
-
-https://mp.weixin.qq.com/s/_MDbbGzDOGHk5TBgbu_-oA
-
-中大商汤等提出深度网络加速新方法，具有强大兼容能力
-
-https://mp.weixin.qq.com/s/gbOmpP7XO1Hz_ld4iSEsrw
-
-三星提出移动端神经网络模型加速框架DeepRebirth
-
-https://mp.weixin.qq.com/s/rTFLiZ7DCo6vzD5O64UnMQ
-
-阿里提出新神经网络算法，压缩掉最后一个比特
-
-https://mp.weixin.qq.com/s/f1SCK0J5oTWNJvtld3UAHQ
-
-神经网络修剪最新研究进展
-
-https://mp.weixin.qq.com/s/3oL0Bso3mwbsfaG8X5-xoA
-
-英特尔提出新型压缩技术DeepThin，适合移动端设备深度神经网络
-
-https://mp.weixin.qq.com/s/JnW7RnOQKG-dPOOAQeOmSA
-
-当前深度神经网络模型压缩和加速都有哪些方法？

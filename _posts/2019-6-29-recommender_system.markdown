@@ -142,6 +142,20 @@ https://mp.weixin.qq.com/s/x9uDExR-Un8fAI43TOQ7CA
 
 个性化推荐系统入门指南
 
+## 负采样策略 & 非采样策略
+
+推荐系统中经常用到的数据是隐式反馈数据（Implicit Feedback Data），如浏览历史，点击日志等。这些数据往往只有正反馈而没有负反馈，并且数据是高度稀疏的（相比于用户点击过的产品，没有被点击过的产品的数量非常多）。在推荐系统中使用隐式反馈数据，有两种常见的学习方法：
+
+- **负采样策略**：从所有用户未标记的样例中抽取一部分作为负例。
+
+- **非采样策略**：将所有用户未标记的样例作为负例。
+
+参考：
+
+https://mp.weixin.qq.com/s/OGLJx-1tGYYuLWFricfRKg
+
+浅谈个性化推荐系统中的非采样学习
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/95350982
@@ -345,65 +359,3 @@ https://mp.weixin.qq.com/s/YjYVE6jzySVsZmXSPivB5w
 https://mp.weixin.qq.com/s/UpN7tAMjbFLSPcDYsWaykg
 
 达观数据搜索引擎排序实践（下篇）
-
-https://mp.weixin.qq.com/s/xigME-griWFwEvvPNqWuvg
-
-美团点评联盟广告的场景化定向排序机制
-
-https://blog.csdn.net/stdcoutzyx/article/details/50879219
-
-Learning to Rank简介
-
-http://www.cnblogs.com/wentingtu/archive/2012/03/13/2393993.html
-
-Learning to Rank入门小结
-
-https://mp.weixin.qq.com/s/dRaiYPIdh_oJcQD-UxAlkA
-
-优秀的排序算法如何成就了伟大的机器学习技术
-
-https://mp.weixin.qq.com/s/XT4_E2d2gr1T8jCo82ix4A
-
-深入浅出排序学习：写给程序员的算法系统开发实践
-
-https://zhuanlan.zhihu.com/p/64952093
-
-排序评价指标
-
-https://zhuanlan.zhihu.com/p/64970393
-
-PointwiseRank
-
-https://zhuanlan.zhihu.com/p/65224450
-
-PairwiseRank
-
-https://zhuanlan.zhihu.com/p/66514492
-
-ListwiseRank
-
-https://zhuanlan.zhihu.com/p/69246361
-
-基于query的排序
-
-https://www.zhihu.com/question/26933554
-
-如何评价知乎的回答排序算法？（威尔逊置信区间下界）
-
-# 用户画像
-
-https://mp.weixin.qq.com/s/TydTE50NzxMbGAigqv6BCw
-
-如何破解“千人千面”，深度解读用户画像
-
-https://mp.weixin.qq.com/s/bdAp_FExIK5IJH8WnD53Wg
-
-你真的懂用户画像吗？
-
-https://mp.weixin.qq.com/s/LN6ib-8b_SZHR9u_-OMwNg
-
-推荐系统眼中的你：内容画像与用户画像
-
-https://mp.weixin.qq.com/s/95Zklj8ovheQV3Gnc-2h-Q
-
-小米大数据总监司马云瑞详解小米用户画像的演进及应用解读

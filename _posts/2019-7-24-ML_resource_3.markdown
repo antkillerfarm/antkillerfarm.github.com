@@ -142,10 +142,6 @@ https://mp.weixin.qq.com/s/R7Qud_x6DGqbHAOl7OMruQ
 
 一文带你入门算法分发！
 
-https://mp.weixin.qq.com/s/lJQprqGShGys3vfhYSxDWg
-
-机器学习在股票交易中难点分析
-
 https://mp.weixin.qq.com/s/lpNTdnfp2FnJ97EivhUv2g
 
 12种降维方法终极指南

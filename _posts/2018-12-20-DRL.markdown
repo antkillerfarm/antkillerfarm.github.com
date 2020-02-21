@@ -220,6 +220,10 @@ https://mp.weixin.qq.com/s/Yg_bFykE8zsG2--mBGYS5A
 
 DeepMind出品：深度学习与强化学习教程 850页ppt
 
+https://mp.weixin.qq.com/s/fLeHW6Asem4f2aP1ARHNZg
+
+FaceBook280页PPT解决DeepRL的"探索-利用(Exploration-Exploitation)"难题
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》

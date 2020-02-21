@@ -74,10 +74,6 @@ https://mp.weixin.qq.com/s/JIoTsadw4JBkr0e40RwVQQ
 
 这篇论文开源的车牌识别系统打败了目前最先进的商业软件
 
-https://mp.weixin.qq.com/s/e-vNkSlIpa8Qbsre9kjOkg
-
-用于提高车牌识别的单幅噪声图像去噪和校正
-
 https://mp.weixin.qq.com/s/fqpZ8EHgiNupXumvTMSecw
 
 北大团队研发“车脸”识别系统，不看车牌看外观特征实现精确识别
@@ -174,6 +170,10 @@ https://blog.csdn.net/linolzhang/article/details/82780071
 
 OCR文字识别
 
+https://zhuanlan.zhihu.com/p/98703562
+
+旋转目标(遥感/文字)检测方法整理（2017-19年）
+
 https://mp.weixin.qq.com/s/TDlxB6F8wwkcTgqPuWJQPw
 
 如何构建识别图像中字符的自动程序？一文解读OCR与HTR
@@ -197,6 +197,10 @@ http://www.jianshu.com/p/86489f1afd36
 http://www.jianshu.com/p/4fadf629895b
 
 端到端的OCR：LSTM＋CTC的实现
+
+https://mp.weixin.qq.com/s/AGmxdVSw8F0z-NdkhFtPUg
+
+一文全览，深度学习时代下，复杂场景下的OCR如何实现？
 
 https://mp.weixin.qq.com/s/axpA7Y_Rhiols5bDIdc6jg
 
@@ -365,27 +369,3 @@ https://mp.weixin.qq.com/s/fZN8mtZdB4Fd6gj2dAKURw
 https://mp.weixin.qq.com/s/_GU5y7v8HNDOjEGvWh8Fkw
 
 旷视研究院提出文字检测新方法：像素聚合网络PAN
-
-https://mp.weixin.qq.com/s/5eTugA70myKxDTZUby87Pw
-
-任意形状文本检测：Look More Than Once
-
-https://mp.weixin.qq.com/s/RuYZ-nmW2p7jMIJ7sbxbIw
-
-任意形状文本检测的像素聚合网络
-
-https://mp.weixin.qq.com/s/T0QeYbkmD4jwhWB47Fnn2w
-
-基于深度学习的端到端在线手写数学公式识别
-
-https://mp.weixin.qq.com/s/l1rmGxOVrXKAaf4yYUt4kQ
-
-自然场景文字定位技术详解
-
-https://mp.weixin.qq.com/s/rJ7guL-Hxxr2Ezl7LRhQrA
-
-基于对抗学习的数据稀缺手写文本识别
-
-https://mp.weixin.qq.com/s/YixrjGTU4p7LlyfQCEmmmQ
-
-端到端任意形状场景文字识别

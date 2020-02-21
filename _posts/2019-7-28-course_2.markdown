@@ -38,10 +38,6 @@ https://people.csail.mit.edu/madry/6.883/
 
 6.883 Science of Deep Learning: Bridging Theory and Practice
 
-https://fullstackdeeplearning.com/march2019
-
-UCB: Full Stack Deep Learning。这个课程是专门讲述如何部署DL工程到实际产品中。
-
 http://web.stanford.edu/class/cs246/
 
 CS246: Mining Massive Data Sets
@@ -101,3 +97,155 @@ CS 189: Introduction to Machine Learning
 https://stanford-cs221.github.io/
 
 CS221: Artificial Intelligence: Principles and Techniques
+
+https://mp.weixin.qq.com/s/nEZtDywzLBC0dHHBt5PyAg
+
+深度学习视觉系统，Deep Learning for Vision Systems, 396页pdf
+
+# WFST（续）
+
+https://blog.csdn.net/dearwind153/article/details/70053704
+
+Kaldi HCLG深入理解
+
+https://zhuanlan.zhihu.com/p/31174085
+
+有限状态自动机和转换器在元音和谐处理中的应用。这篇blog研究的问题相对偏门，但是文末附有若干FST方面的软件资源，可以提供OpenFST之外的选择。
+
+https://www.jianshu.com/p/5eb45c64f3e3
+
+深入浅出理解有限状态机
+
+http://infolocata.com/mirovia/finite-state-transducers-for-natural-language-processing/
+
+Finite-State-Transducers for Natural Language Processing
+
+https://zhuanlan.zhihu.com/p/23664023
+
+构建CTC语音识别解码网络
+
+https://mp.weixin.qq.com/s/2Un2Vy33dkxPwe8n7d_Yng
+
+一个有限状态机的C++实现
+
+# 声纹识别
+
+声纹识别关心的“**谁在说**”，用于解决**生物身份确认和识别**；而语音识别关心的“**说了什么**”，用于解决**对说话内容的识别**。
+
+对测试语音，同样提取mfcc->提取i-vector，然后进行打分，打分的方法有cosine, LDA, PLDA，其中PLDA的效果是最好的，但是需要数据去训练获得参数。
+
+代码的话，推荐kaldi里的sre10/v1，里面有全套的i-vector/PLDA说话人识别系统流程。
+
+这方面的数据集有：
+
+https://ivectorchallenge.nist.gov
+
+NIST i-vector Machine Learning Challenge
+
+参考：
+
+https://zhuanlan.zhihu.com/voicebiometrics
+
+专栏：声纹识别的应用实践
+
+https://www.jianshu.com/p/513dadeef1fd
+
+声纹识别
+
+https://blog.csdn.net/twinkle_star1314/article/details/55049746
+
+声纹识别
+
+https://blog.csdn.net/twinkle_star1314/article/details/55050138
+
+声纹识别2
+
+https://zhuanlan.zhihu.com/p/67088235
+
+声纹识别5大核心知识点
+
+https://zhuanlan.zhihu.com/p/24425179
+
+End-to-End Voiceprint
+
+https://mp.weixin.qq.com/s/I2nbzD2QqSYgahI2jLjYTQ
+
+批训练、注意力模型及其声纹分割应用，谷歌三篇论文揭示其声纹识别技术原理
+
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750181&idx=5&sn=96d85740cb3d696cd2833f35f7908a6b
+
+只对你有感觉：谷歌用声纹识别实现定向人声分离
+
+https://mp.weixin.qq.com/s/Cfk3639bCy55qQj4HM2HWw
+
+人工智能老司机带你认识声音黑科技：声纹识别
+
+# BERT+
+
+https://zhuanlan.zhihu.com/p/58425003
+
+从Word2Vec到Bert，聊聊词向量的前世今生（一）
+
+https://mp.weixin.qq.com/s/SfMIKfF_B4agFCHN_U_mzQ
+
+BAM！利用知识蒸馏和多任务学习构建的通用语言模型
+
+https://mp.weixin.qq.com/s/6G5Mu7-1omGtQ_9Gt9lUBw
+
+基于预训练自然语言生成的文本摘要方法
+
+https://mp.weixin.qq.com/s/yysnPauB22YgprpOi1ZWSQ
+
+深入理解BERT Transformer，不仅仅是注意力机制
+
+https://mp.weixin.qq.com/s/kFABJJ3fBC48-4DXK8PERQ
+
+10大任务超越BERT，微软提出多任务深度神经网络MT-DNN
+
+https://mp.weixin.qq.com/s/jlGfxkT_o9sgFlUuR_x5Tw
+
+微软开源用于学习通用语言嵌入的MT-DNN模型
+
+https://mp.weixin.qq.com/s/D68YzjYvpc2epGWFBP6rIQ
+
+谷歌实习生新算法提速惊人！BERT训练从三天三夜，缩短到一个小时
+
+https://mp.weixin.qq.com/s/iDGofh_ycWJzfqQriPEXGQ
+
+如何用Python和BERT做中文文本二元分类？
+
+https://zhuanlan.zhihu.com/p/91052495
+
+当BERT遇上知识图谱
+
+https://mp.weixin.qq.com/s/wQW-JT-sGMj60OtXwTssyQ
+
+BERT模型推理加速总结
+
+https://mp.weixin.qq.com/s/HOD1Hb70NhTXXCXlopzfng
+
+BERT推理加速实践
+
+https://mp.weixin.qq.com/s/0luHJsw7WWJskJWGThR5qg
+
+使用BERT做文本摘要
+
+https://mp.weixin.qq.com/s/m_FU4NmjUsvxusRidDb-Xg
+
+UniLM:一种既能阅读又能自动生成的预训练模型
+
+https://mp.weixin.qq.com/s/IY8J09LvDAr8owYffKi5Dw
+
+五问BERT：深入理解NLP领域爆红的预训练模型
+
+https://zhuanlan.zhihu.com/p/106901954
+
+BERT, ELMo, & GPT-2: 这些上下文相关的表示到底有多上下文化？
+
+https://mp.weixin.qq.com/s/mkDmn4zy_s87kiiDIkx0VQ
+
+NLP的12种后BERT预训练方法
+
+https://www.zhihu.com/question/327450789
+
+Bert如何解决长文本问题？

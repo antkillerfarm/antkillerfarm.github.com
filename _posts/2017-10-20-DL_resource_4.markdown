@@ -6,6 +6,16 @@ category: resource
 
 # DL参考资源
 
+## 缺陷检测
+
+https://mp.weixin.qq.com/s/Bh4zY2toTTcVdsc4ri56ZQ
+
+复杂场景下的复杂缺陷检测方法--深度学习算法综述
+
+https://mp.weixin.qq.com/s/bbFDJ6PjjDZqdnPLMqBuKA
+
+秒杀DeepLabv3+与UNet的表面缺陷检测网络
+
 ## 参考
 
 https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650748834&idx=3&sn=805564d2d9956dff6bb888ccb61e9b7b

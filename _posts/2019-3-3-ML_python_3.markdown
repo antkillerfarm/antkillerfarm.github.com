@@ -94,10 +94,6 @@ https://mp.weixin.qq.com/s/iT91pDPP49EuNA0KfY2njg
 
 十大数据科学Python热门库推荐
 
-https://mp.weixin.qq.com/s/wbcAIrI0eNALfKhgkZQYTQ
-
-用Python也能进军金融领域？这有一份股票交易策略开发指南
-
 https://mp.weixin.qq.com/s/e--IeRTRZMqhs_DSJKpgyQ
 
 特征工程之Scikit-learn
@@ -357,10 +353,6 @@ Python高效数据分析的8个技巧
 https://mp.weixin.qq.com/s/Ke3K3i8paNlweciJepiuwQ
 
 复旦中文文本分类过程
-
-https://mp.weixin.qq.com/s/q61G4WldzCCLO7Fzujb_LA
-
-图像去噪
 
 https://mp.weixin.qq.com/s/Ij9L-swxx6gmaEH4YQb0tQ
 

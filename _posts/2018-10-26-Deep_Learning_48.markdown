@@ -366,10 +366,6 @@ https://mp.weixin.qq.com/s/i6Qj5YyjLINxHSYuHckKzg
 
 YOLACT++：更强的实时实例分割网络，可达33.5 FPS/34.1mAP！
 
-https://mp.weixin.qq.com/s/bbFDJ6PjjDZqdnPLMqBuKA
-
-秒杀DeepLabv3+与UNet的表面缺陷检测网络
-
 https://mp.weixin.qq.com/s/8I7Lm5DMkVVlvw8v1L_HBA
 
 多感受野的金字塔结构—PSPNet

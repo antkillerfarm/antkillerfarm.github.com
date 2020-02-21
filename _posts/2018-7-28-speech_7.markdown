@@ -6,7 +6,53 @@ category: speech
 
 # WFST
 
-## 相关的群论知识（续）
+## FSM
+
+![](/images/img2/FSM.png)
+
+上图是finite-state machine（也叫finite-state automaton，FSA）的示意图。图中的Node表示State，顾名思义，FSM的State数量是有限的。图中的Edge表示Transition，Edge上的Label表示Input/Event。
+
+FSM的含义是，在某一状态下，获得一个输入，从而产生一个状态转换。例如，上图中在Sleep状态下，如果输入是hungry的话，那么状态就会切换到Eat状态。当然了，输入也可以不改变状态，比如在Sleep状态下，输入是tired的时候。
+
+## FST
+
+![](/images/img2/FST.png)
+
+上图是finite-state transducers的示意图。FST和FSM的差别主要在Edge上的Label。FST收到Input的时候，不仅会发生状态改变，还会产生Output序列。因此，其Label的格式为`input:output`。
+
+## WFST
+
+![](/images/img2/WFST.png)
+
+上图是WFST的示意图。顾名思义，Label上不仅有Input、Output，还有Weight信息，其格式为`input:output/weight`。
+
+在有些图中会碰到$$\epsilon$$. 这个符号在输入时表示不消耗任何输入，在输出位置表示不产生任何输出。
+
+此外，还有格式为`input/weight`的FSM，一般被称为Weighted Finite-State Acceptors。
+
+![](/images/img2/WA.png)
+
+不仅Edge上的Label可以有权重，Node上的Label也可以有权重，如上图所示。没有权重的Label，其权重为1。
+
+例如，上图中：
+
+$$[A](ab)=1\times 1\times 2+2\times 3\times 2=14$$
+
+## 相关的群论知识
+
+WFST是基于半环代数理论的，在介绍半环之前我先简单的说一下群和半群。
+
+**群（Group）**：G为非空集合，如果在G上定义的二元运算*，满足：
+
+（1）封闭性（Closure）：对于任意$$a,b\in G$$,有$$a*b\in G$$;
+
+（2）结合律（Associativity）：对于任意$$a,b,c\in G,(a*b)*c=a*(b*c)$$;
+
+（3）幺元（Identity）：存在幺元e，使得对于任意$$a\in G,e*a=a*e=a$$;
+
+（4）逆元：对于任意$$a\in G$$,存在逆元$$a^{-1}*a=a*a^{-1}=e$$。
+
+则称（G,*）为群。
 
 **半群（Semigroup）**：仅满足封闭性和结合律群称为半群；如果还包含幺元，则成为幺元半群。
 
@@ -249,79 +295,3 @@ http://djt.qq.com/article/view/507
 https://blog.csdn.net/lucky_ricky/article/details/77511543
 
 Kaldi WFST 构图 学习
-
-https://blog.csdn.net/dearwind153/article/details/70053704
-
-Kaldi HCLG深入理解
-
-https://zhuanlan.zhihu.com/p/31174085
-
-有限状态自动机和转换器在元音和谐处理中的应用。这篇blog研究的问题相对偏门，但是文末附有若干FST方面的软件资源，可以提供OpenFST之外的选择。
-
-https://www.jianshu.com/p/5eb45c64f3e3
-
-深入浅出理解有限状态机
-
-http://infolocata.com/mirovia/finite-state-transducers-for-natural-language-processing/
-
-Finite-State-Transducers for Natural Language Processing
-
-https://zhuanlan.zhihu.com/p/23664023
-
-构建CTC语音识别解码网络
-
-https://mp.weixin.qq.com/s/2Un2Vy33dkxPwe8n7d_Yng
-
-一个有限状态机的C++实现
-
-# 声纹识别
-
-声纹识别关心的“**谁在说**”，用于解决**生物身份确认和识别**；而语音识别关心的“**说了什么**”，用于解决**对说话内容的识别**。
-
-对测试语音，同样提取mfcc->提取i-vector，然后进行打分，打分的方法有cosine, LDA, PLDA，其中PLDA的效果是最好的，但是需要数据去训练获得参数。
-
-代码的话，推荐kaldi里的sre10/v1，里面有全套的i-vector/PLDA说话人识别系统流程。
-
-这方面的数据集有：
-
-https://ivectorchallenge.nist.gov
-
-NIST i-vector Machine Learning Challenge
-
-参考：
-
-https://zhuanlan.zhihu.com/voicebiometrics
-
-专栏：声纹识别的应用实践
-
-https://www.jianshu.com/p/513dadeef1fd
-
-声纹识别
-
-https://blog.csdn.net/twinkle_star1314/article/details/55049746
-
-声纹识别
-
-https://blog.csdn.net/twinkle_star1314/article/details/55050138
-
-声纹识别2
-
-https://zhuanlan.zhihu.com/p/67088235
-
-声纹识别5大核心知识点
-
-https://zhuanlan.zhihu.com/p/24425179
-
-End-to-End Voiceprint
-
-https://mp.weixin.qq.com/s/I2nbzD2QqSYgahI2jLjYTQ
-
-批训练、注意力模型及其声纹分割应用，谷歌三篇论文揭示其声纹识别技术原理
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750181&idx=5&sn=96d85740cb3d696cd2833f35f7908a6b
-
-只对你有感觉：谷歌用声纹识别实现定向人声分离
-
-https://mp.weixin.qq.com/s/Cfk3639bCy55qQj4HM2HWw
-
-人工智能老司机带你认识声音黑科技：声纹识别

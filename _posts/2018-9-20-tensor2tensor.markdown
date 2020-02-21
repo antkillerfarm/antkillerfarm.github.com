@@ -120,18 +120,6 @@ num_encoder_layers/num_decoder_layers控制transformer的层数，如果为0，�
 
 get_timing_signal_1d
 
-# GNU Octave
-
-GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。
-
-官网：
-
-https://gnu.org/software/octave/
-
-安装方法:
-
-`sudo apt-get install octave`
-
 # NN中间语言
 
 ## 概述
@@ -165,6 +153,10 @@ https://www.khronos.org/nnef
 和NNEF竞争的标准还有微软和Facebook联合推出的Open Neural Network Exchange。
 
 官网：
+
+https://onnx.ai/
+
+代码：
 
 https://github.com/onnx
 
@@ -333,3 +325,7 @@ https://zhuanlan.zhihu.com/p/98535650
 https://zhuanlan.zhihu.com/p/86441879
 
 pytorch多gpu并行训练
+
+https://mp.weixin.qq.com/s/52Wz4pUI8egKugMFuknWKw
+
+Pytorch中的Distributed Data Parallel与混合精度训练（Apex）

@@ -1,8 +1,80 @@
 ---
 layout: post
-title:  语音识别（六）——语音识别的评价指标, 声学模型进阶, 语言模型进阶, GMM-HMM, WFST（1）
+title:  语音识别（六）——FBank, 语音识别的评价指标, 声学模型进阶, 语言模型进阶, GMM-HMM, WFST（1）
 category: speech 
 ---
+
+# Mel-Frequency Analysis（续）
+
+## 参考
+
+http://blog.csdn.net/zouxy09/article/details/9156785
+
+梅尔频率倒谱系数（MFCC）
+
+https://my.oschina.net/jamesju/blog/193343
+
+语音特征参数MFCC提取过程详解
+
+https://liuyanfeier.github.io/2017/10/26/2017-10-27-Kaldi%E4%B9%8Bfbank%E5%92%8Cmfcc%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/
+
+kaldi之fbank和mfcc特征提取
+
+https://zhuanlan.zhihu.com/p/26680599
+
+语音信号预处理及特征参数提取
+
+# FBank
+
+Filter bank和MFCC的计算步骤基本一致，只是没有做IDFT而已。
+
+FBank与MFCC对比：
+
+1.计算量：MFCC是在FBank的基础上进行的，所以MFCC的计算量更大
+
+2.特征区分度：FBank特征相关性较高（相邻滤波器组有重叠），MFCC具有更好的判别度，这也是在大多数语音识别论文中用的是MFCC，而不是FBank的原因
+
+3.使用对角协方差矩阵的GMM由于忽略了不同特征维度的相关性，MFCC更适合用来做特征。
+
+4.DNN/CNN可以更好的利用这些相关性，使用fbank特征可以更多地降低WER。
+
+![](/images/img2/LFBE.png)
+
+FBank有时也叫做log of filter bank energy（LFBE）。
+
+论文：
+
+《Bandwidth extension of narrowband speech in log spectra domain using neural network》
+
+参考：
+
+http://blog.csdn.net/wxb1553725576/article/details/78048546
+
+Kaldi特征提取之-FBank
+
+# Pitch Detection
+
+http://blog.csdn.net/zouxy09/article/details/9141875
+
+基音周期估计（Pitch Detection）
+
+# Vector Quantization
+
+http://blog.csdn.net/zouxy09/article/details/9153255
+
+矢量量化（Vector Quantization）
+
+# fMLLR
+
+https://blog.csdn.net/xmdxcsj/article/details/78512645
+
+声学特征变换fMLLR
+
+# SGMM
+
+https://blog.csdn.net/quhediegooo/article/details/68946100
+
+子空间高斯混合模型-SGMM
 
 # PLP
 
@@ -239,51 +311,3 @@ https://blog.csdn.net/fengzhou_
 http://vsooda.github.io/2016/08/28/wfst/
 
 加权有限状态转换器
-
-## FSM
-
-![](/images/img2/FSM.png)
-
-上图是finite-state machine（也叫finite-state automaton，FSA）的示意图。图中的Node表示State，顾名思义，FSM的State数量是有限的。图中的Edge表示Transition，Edge上的Label表示Input/Event。
-
-FSM的含义是，在某一状态下，获得一个输入，从而产生一个状态转换。例如，上图中在Sleep状态下，如果输入是hungry的话，那么状态就会切换到Eat状态。当然了，输入也可以不改变状态，比如在Sleep状态下，输入是tired的时候。
-
-## FST
-
-![](/images/img2/FST.png)
-
-上图是finite-state transducers的示意图。FST和FSM的差别主要在Edge上的Label。FST收到Input的时候，不仅会发生状态改变，还会产生Output序列。因此，其Label的格式为`input:output`。
-
-## WFST
-
-![](/images/img2/WFST.png)
-
-上图是WFST的示意图。顾名思义，Label上不仅有Input、Output，还有Weight信息，其格式为`input:output/weight`。
-
-在有些图中会碰到$$\epsilon$$. 这个符号在输入时表示不消耗任何输入，在输出位置表示不产生任何输出。
-
-此外，还有格式为`input/weight`的FSM，一般被称为Weighted Finite-State Acceptors。
-
-![](/images/img2/WA.png)
-
-不仅Edge上的Label可以有权重，Node上的Label也可以有权重，如上图所示。没有权重的Label，其权重为1。
-
-例如，上图中：
-
-$$[A](ab)=1\times 1\times 2+2\times 3\times 2=14$$
-
-## 相关的群论知识
-
-WFST是基于半环代数理论的，在介绍半环之前我先简单的说一下群和半群。
-
-**群（Group）**：G为非空集合，如果在G上定义的二元运算*，满足：
-
-（1）封闭性（Closure）：对于任意$$a,b\in G$$,有$$a*b\in G$$;
-
-（2）结合律（Associativity）：对于任意$$a,b,c\in G,(a*b)*c=a*(b*c)$$;
-
-（3）幺元（Identity）：存在幺元e，使得对于任意$$a\in G,e*a=a*e=a$$;
-
-（4）逆元：对于任意$$a\in G$$,存在逆元$$a^{-1}*a=a*a^{-1}=e$$。
-
-则称（G,*）为群。

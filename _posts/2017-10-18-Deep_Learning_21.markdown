@@ -144,6 +144,10 @@ https://zhuanlan.zhihu.com/p/76820438
 
 基于深度学习的超分辨率图像技术一览
 
+https://mp.weixin.qq.com/s/o-I6T8f4AcETJqlDNZs9ug
+
+深入浅出深度学习超分辨率
+
 # SRCNN
 
 SRCNN（Super-Resolution CNN）是汤晓鸥小组的Chao Dong的作品。

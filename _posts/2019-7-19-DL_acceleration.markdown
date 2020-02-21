@@ -20,6 +20,14 @@ https://zhuanlan.zhihu.com/p/104649426
 
 CSE 599W-Systems for ML-辛酸阅读记录
 
+https://mp.weixin.qq.com/s/2CT7PKBP6yKV5nmN3XqfaA
+
+MIT公开课-Vivienne Sze教授《深度学习硬件加速器》，86页ppt
+
+https://fullstackdeeplearning.com/march2019
+
+UCB: Full Stack Deep Learning。这个课程是专门讲述如何部署DL工程到实际产品中。
+
 # Winograd
 
 矩阵方面的数值计算，Shmuel Winograd是一个无法绕开的人物。
@@ -271,21 +279,3 @@ $$m(m>0)$$整除n记作$$m \mid n$$，其定义为存在一个整数k使得$$km=
 $$x \equiv a \pmod{m}$$
 
 上式表示x除以m的余数和a除以m的余数相等，这样的关系被称为“x和a同余（模为m）”
-
-Euclidean algorithm的步骤如下图所示：
-
-![](/images/article/Euclidean_algorithm.png)
-
-1.假设$$a>b$$，则令$$c:=a \mod{b}$$。
-
-2.如果$$c=0$$，则$$GCD(a,b)=b$$。
-
-3.否则令$$a:=b,b:=c$$，并返回到第1步。
-
-这个算法应该是Euclid记述的前人成果，因为更早的Eudoxus of Cnidus曾提到过这个算法。
-
->Eudoxus of Cnidus，公元前390年～公元前337年，古希腊几何学家、天文学家和地理学家。柏拉图同时代最杰出的数学家。《几何原本》卷Ⅴ和卷Ⅻ主要来自欧多克索斯的工作。
-
-然而，小学课本不使用Euclidean algorithm是有原因的，除了Euclidean algorithm本身相对复杂之外，短除法能同时搞定最大公约数和最小公倍数（Least common multiple），这也是它的教学优势所在。
-
-Euclidean algorithm作为最古老的算法之一，被收录进Knuth的巨著TAOCP。这里的算法，指的是那些根据一定的规则来一步步执行的运算。

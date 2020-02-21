@@ -36,10 +36,6 @@ https://mp.weixin.qq.com/s/8LwlA6sR9K5Hti1lJh9M2Q
 
 13种编程语言对应的机器学习资源大全！
 
-https://zhuanlan.zhihu.com/xiahongjin
-
-一个ML+NLP+金融的blog
-
 http://setosa.io/ev/
 
 一个将很多算法可视化的blog
@@ -334,10 +330,6 @@ https://mp.weixin.qq.com/s/c4Lp4D-COP2I12zRC9beIA
 
 从Boosting到Stacking，概览集成学习的方法与性能
 
-https://mp.weixin.qq.com/s?__biz=MzU3ODIwMjA3NQ==&mid=2247483661&idx=1&sn=5efbd5aabd294ce39f1b9ae05f066a28
-
-现金贷、消费金融反欺诈规则设置
-
 https://mp.weixin.qq.com/s?__biz=MzU3ODIwMjA3NQ==&mid=2247483696&idx=1&sn=b407416595afb3b7bf2aad33e5341f6a
 
 规则模型的监测与调整
@@ -417,10 +409,6 @@ Kaggle大神带你上榜单Top2%：点击预测大赛纪实（下）
 https://mp.weixin.qq.com/s/7N6eDoEV8oEwUpP-zK1RpQ
 
 560万Facebook人际关系数据，揭秘家庭职业传承“真相”
-
-http://www.jianshu.com/p/af7e063ac9b3
-
-机器学习在金融比赛中的应用
 
 https://www.zhihu.com/question/28810567
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Ubuntu使用技巧（三）, Mac OS X, 阴影面积, 辛普森悖论
+title:  Ubuntu使用技巧（三）, Mac OS X, WebKit, 阴影面积, 辛普森悖论
 category: linux 
 ---
 
@@ -116,6 +116,52 @@ N.B.:nota bene 注意,留心
 
 可用的boot工具，早期有empireEFI、HackBoot。较新的有chameleon、Niresh。
 
+# WebKit
+
+WebKit的代码可以从它的官网www.webkit.org下获得。
+
+在以下网页可以获得webkit向各种GUI移植的相关信息。
+
+http://trac.webkit.org/wiki
+
+由于获得的代码比较新，所以在linux平台下常有一些组件由于过于古老而导致编译失败。所以需要使用yum或者apt-get之类的工具从网上更新相关的组件。这里不推荐使用RHEL或者CentOS之类的服务器版本，因为服务器版本为了追求稳定性，不但组件不是最新的，就连网上的组件源也不是最新的。
+
+可以使用ubuntu 9.04桌面版，不过里面缺少很多开发用的组件，除了
+
+http://trac.webkit.org/wiki/BuildingGtk
+
+列出的之外，还有不少组件需要下载。主要有：
+
+1)autoconf
+
+2)libtool
+
+3)gtk-doc-tools
+
+4)libgail-dev
+
+参考：
+
+https://mp.weixin.qq.com/s/QqpPGWf3IVEDN1t80CZ06Q
+
+深入理解浏览器原理
+
+# Lua
+
+Lua的包管理工具叫做LuaRocks。官网：
+
+https://luarocks.org/
+
+参考：
+
+https://mp.weixin.qq.com/s/nwhSDxz1Pu2JCU_IeMR9ww
+
+Lua程序逆向之Luac文件格式分析
+
+http://lua-users.org/wiki/GraphicalUserInterfaceToolkits
+
+Lua的GUI工具列表
+
 # 阴影面积
 
 ![](/images/img3/p0.png)
@@ -215,6 +261,22 @@ https://mp.weixin.qq.com/s/EICefFM3dfv5A6V9kVqGWw
 https://mp.weixin.qq.com/s/NlJ4-b5SjIjPGgvLUuSxFw
 
 孩子，有时候并不是生活欺骗了你，而是你可能还不懂概率统计……
+
+# 肺炎版《黄冈密卷》
+
+问题由来：
+
+https://mp.weixin.qq.com/s/dR7fg6PTCVAnezlW6gTY2w
+
+新冠病毒最“强”管控，《黄冈密卷》数学题到底有多难
+
+----
+
+1.设$$\sqrt{3+\sqrt{2}+\sqrt{3}+\sqrt{6}}=\sqrt{x}+\sqrt{y}+\sqrt{z}$$，且x、y、z为有理数，则$$xyz$$=?
+
+解：
+
+$$3+\sqrt{2}+\sqrt{3}+\sqrt{6} = x+y+z+2\sqrt{xy}+$$
 
 # Linux参考资源+
 

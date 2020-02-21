@@ -6,6 +6,26 @@ category: Attention
 
 # Transformer（续）
 
+https://mp.weixin.qq.com/s/S_xhaDrOaPe38ZvDLWl4dg
+
+从技术到产品，搜狗为我们解读了神经机器翻译的现状
+
+https://mp.weixin.qq.com/s/vzjKU_0qhapWKOYZ4Rnj-Q
+
+谷歌的机器翻译模型Transformer，现在可以用来做任何事了
+
+https://mp.weixin.qq.com/s/lgGDTCF3qg84njv2IeHC9A
+
+大规模集成Transformer模型，阿里达摩院如何打造WMT 2018机器翻译获胜系统
+
+https://mp.weixin.qq.com/s/_UC2jlOfb34tfB_tsEXjMg
+
+谷歌全新神经网络架构Transformer：基于自注意力机制，擅长自然语言理解
+
+https://mp.weixin.qq.com/s/w3IKoygTLDsAxk1MB5JrGg
+
+详细讲解Transformer新型神经网络在机器翻译中的应用
+
 https://mp.weixin.qq.com/s/HzzDG8PpDlyilQjr2PH6PA
 
 Transformer注解及PyTorch实现（上）
@@ -242,6 +262,10 @@ https://zhuanlan.zhihu.com/p/37684922
 
 ELMo
 
+https://mp.weixin.qq.com/s/i7EJSNzDsNNbK2YA_YNu8g
+
+词向量与ELMo模型
+
 ## GPT-2
 
 GPT-1论文：
@@ -315,17 +339,3 @@ https://github.com/PaddlePaddle/ERNIE/
 《ERNIE: Enhanced Language Representation with Informative Entities》
 
 这几篇论文主要讨论了，如何将语义信息融入BERT。篇幅原因，这里只关注百度的两篇论文的做法。
-
-![](/images/img3/ERNIE.png)
-
-相较于BERT学习原始语言信号，ERNIE模型通过对词、实体等语义单元的掩码，使得模型学习完整概念的语义表示。上例中，BERT通过“哈”与“滨”的局部共现，即可判断出“尔”字，但它没有学习到与“哈尔滨”相关的知识。而ERNIE通过学习词与实体的表达，使模型能够建模出“哈尔滨”与“黑龙江”的关系，学到“哈尔滨”是“黑龙江”的省会以及“哈尔滨”是个冰雪城市。
-
-![](/images/img3/ERNIE_2.png)
-
-为了学习相关语义，ERNIE提出了如上图所示的不同级别的mask方法。
-
-![](/images/img3/ERNIE_3.png)
-
-还有如上图所示的语义嵌入。
-
-BERT已经证明了预训练模型对于多种NLP任务的有效性，因此使用多任务学习就成为一个很自然的想法。

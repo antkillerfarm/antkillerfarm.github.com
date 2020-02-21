@@ -98,22 +98,6 @@ http://www.15yan.com/story/5Y8BZqIGwjg/
 
 那些奇奇怪怪的编程语言
 
-# Lua
-
-Lua的包管理工具叫做LuaRocks。官网：
-
-https://luarocks.org/
-
-参考：
-
-https://mp.weixin.qq.com/s/nwhSDxz1Pu2JCU_IeMR9ww
-
-Lua程序逆向之Luac文件格式分析
-
-http://lua-users.org/wiki/GraphicalUserInterfaceToolkits
-
-Lua的GUI工具列表
-
 # Github显示数学公式
 
 这里主要用到了LaTeX和MathJax。
@@ -147,6 +131,12 @@ Mathjax与LaTex公式简介
 http://3iter.com/2015/10/14/Mathjax%E4%B8%8ELaTex%E5%85%AC%E5%BC%8F%E7%AE%80%E4%BB%8B/
 
 Mathjax与LaTex公式简介
+
+如果在Vscode下编辑Markdown和Latex的话，可以使用`Markdown All in One`插件。
+
+如果是其他编辑器的话，推荐使用：
+
+https://casual-effects.com/markdeep/
 
 示例如下：
 

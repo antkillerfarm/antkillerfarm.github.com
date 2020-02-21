@@ -4,7 +4,37 @@ title:  深度加速（三）——Winograd（3）, NN Quantization
 category: DL acceleration 
 ---
 
-# Winograd（续）
+# Winograd
+
+## Winograd for CNN（续）
+
+https://github.com/andravin/wincnn
+
+这个项目可以很方便的计算不同大小的核的Winograd的结果。这个项目中还有一个pdf文件作为上述论文的补充材料，详细的给出了各矩阵的计算方法。
+
+论文：
+
+《Efficient Sparse-Winograd Convolutional Neural Networks》
+
+![](/images/img3/Winograd.png)
+
+这篇论文（2018.2）讨论了如何在稀疏矩阵中应用Winograd算法。
+
+论文：
+
+《Sparse Winograd Convolutional neural networks on small-scale systolic arrays》
+
+![](/images/img3/Winograd_3.png)
+
+这篇论文（2018.10）讨论了如何在脉动阵列上实现Winograd算法，还讨论了3D卷积的计算方法。
+
+![](/images/img3/Winograd_2.png)
+
+参考：
+
+http://shuokay.com/2018/02/21/winograd/
+
+Winograd方法快速计算卷积
 
 ## FFT与卷积
 
@@ -249,37 +279,3 @@ int8量化和tvm实现
 3.最好不要使用ReluN这样的激活函数，死的神经元太多。神经元一旦“死亡”，相应的权值就不再更新，而这些值往往不在正常范围内。
 
 4.对于sigmoid、tanh这样的S形函数，其输入在$$\mid x \mid > \sigma$$范围的值，最终的结果都在sigmoid、tanh的上下限附近。因此，可以直接将这些x值量化为$$\sigma$$。这里的$$\sigma$$的取值，对于sigmoid来说是6，而对于tanh来说是3。
-
-## NN硬件的指标术语
-
-MACC：multiply-accumulate，乘法累加。
-
-FLOPS：Floating-point Operations Per Second，每秒所执行的浮点运算次数。
-
-显然NN的INT8计算主要以MACC为单位。
-
-## gemmlowp
-
-gemmlowp是Google提出的一个支持低精度数据的GEMM（General Matrix Multiply）库。
-
-代码：
-
-https://github.com/google/gemmlowp
-
-## 论文
-
-《Quantizing deep convolutional networks for efficient inference: A whitepaper》
-
-## 参考
-
-https://mp.weixin.qq.com/s/M79xGWWtJUB6wBVlHXw8ig
-
-低精度神经网络：从数值计算角度优化模型效率
-
-https://www.chiphell.com/thread-1620755-1-1.html
-
-新Titan X的INT8计算到底是什么鬼
-
-https://mp.weixin.qq.com/s/S9VcoS_59nbZWe_P3ye2Tw
-
-减少模型半数内存用量：百度&英伟达提出混合精度训练法

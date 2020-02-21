@@ -202,6 +202,14 @@ https://mp.weixin.qq.com/s/KZcNsTLurOm7MNfCkNvcZw
 
 CNN与元胞自动机：“深度”之含义初探
 
+https://mp.weixin.qq.com/s/TQ-koPMLknWQtDsolrU8Jw
+
+什么是元胞自动机？
+
+https://mp.weixin.qq.com/s/g8rogZKkZvGEYA9MD_kFwA
+
+硬核解读！燃烧了152天的澳大利亚山火是怎么来的？又是怎么灭的？
+
 # simhash
 
 simhash是一种能计算文档相似度的hash算法。

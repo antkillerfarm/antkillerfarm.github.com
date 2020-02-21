@@ -327,3 +327,7 @@ NAS evaluation is frustratingly hard
 https://mp.weixin.qq.com/s/QEkOQG2dQrPG-aa8OsVSOg
 
 NASNet: Google Brain经典作，改造搜索空间，性能全面超越人工网络，继续领跑NAS领域
+
+https://mp.weixin.qq.com/s/Ho6XDRYmOBs9TqLMq7aPAg
+
+MetaQNN: 与Google同场竞技，MIT经典作，基于Q-Learning的神经网络搜索

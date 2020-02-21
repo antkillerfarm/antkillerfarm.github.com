@@ -168,6 +168,36 @@ https://mp.weixin.qq.com/s/FWBYNBlSwj-adjcgXMk3XA
 
 ShapeMatchingGAN：打造炫酷动态的艺术字
 
+## 图像去噪
+
+https://mp.weixin.qq.com/s/gTD5H_Vy2b-7fuvAYxVsnQ
+
+基于GAN和CNN的图像盲去噪
+
+https://mp.weixin.qq.com/s/MePEEuwH-e5c2hwiEXo2wg
+
+去噪、去水印、超分辨率，这款不用学习的神经网络无所不能
+
+https://zhuanlan.zhihu.com/p/76791923
+
+图像/视频去噪中的Deformable Kernels
+
+https://mp.weixin.qq.com/s/WwWoyEcvSXGX3uBCjhLkOg
+
+图像/视频去噪算法资源集锦
+
+https://mp.weixin.qq.com/s/q61G4WldzCCLO7Fzujb_LA
+
+图像去噪
+
+https://mp.weixin.qq.com/s/hPaJssohwTIPx6kzGvp70g
+
+一份超全易懂的深度学习在图像去噪的综述
+
+https://mp.weixin.qq.com/s/Jk6PlRBYorLI5FSa5xxOkw
+
+首个硬件资源受限下数据不均匀的图像去噪网络：BRDNet，代码已开源
+
 ## 参考
 
 https://mp.weixin.qq.com/s/YbRo7TJ3j4dloSmKX40uAA
@@ -345,31 +375,3 @@ https://mp.weixin.qq.com/s/y9h6xkK9Keq4UrdpGJS-4Q
 https://mp.weixin.qq.com/s/V4PN0L42iisRxQ6y4Hc8fw
 
 英伟达“AI假脸王”开源：新一代GAN攻破几乎所有人脸识别系统
-
-https://mp.weixin.qq.com/s/-3e5xhbz01FerZp8DcRV5g
-
-谷歌小姐姐搞出魔法画板：你随便画，补不齐算AI输
-
-https://mp.weixin.qq.com/s/M9r8m--Sd9kHxZrOEHbY7A
-
-视频直接变漫画！GAN又有了新玩法
-
-https://mp.weixin.qq.com/s/CbdERPAHhmLB2hVVl2Dgkg
-
-裤子换裙子，就问你GAN的这波操作秀不秀
-
-https://mp.weixin.qq.com/s/Ug0jyloNkeL6uuCqv9K0SA
-
-图像/人脸补全问题的前世今生
-
-https://mp.weixin.qq.com/s/xdFxQfgj61pgB-aCq31rLA
-
-旷视等提出GIF2Video：首个深度学习GIF质量提升方法
-
-https://mp.weixin.qq.com/s/gTD5H_Vy2b-7fuvAYxVsnQ
-
-基于GAN和CNN的图像盲去噪
-
-https://mp.weixin.qq.com/s/MePEEuwH-e5c2hwiEXo2wg
-
-去噪、去水印、超分辨率，这款不用学习的神经网络无所不能

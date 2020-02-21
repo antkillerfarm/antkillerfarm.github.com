@@ -371,19 +371,3 @@ https://mp.weixin.qq.com/s/5ryEfgQnX-JXCvhwzKSCjA
 https://mp.weixin.qq.com/s/npZg46MK5MZ7h9cqvrAYiQ
 
 机器如何猜你所想？阿里小蜜预测平台揭秘
-
-https://zhuanlan.zhihu.com/p/46755166
-
-利用评论文本交互提升推荐系统
-
-https://zhuanlan.zhihu.com/p/47393033
-
-基于知识的新闻推荐
-
-https://mp.weixin.qq.com/s/jHKgKnl-SbZltl76Ln_Fgg
-
-AutoML详解及其在推荐系统中的应用、优缺点
-
-https://mp.weixin.qq.com/s/0FdosHMzKiYL8XCx_XEPFA
-
-双十一疯狂剁手，你知道阿里是如何跟踪用户兴趣演化的吗？

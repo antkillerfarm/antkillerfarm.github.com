@@ -243,6 +243,10 @@ https://zhuanlan.zhihu.com/p/92543229
 
 AlphaStar
 
+https://zhuanlan.zhihu.com/p/97720096
+
+浅谈AlphaStar
+
 # Dota 2
 
 Dota 2的AI项目主要是OpenAI来搞，算是DRL在MOBA游戏上的应用。

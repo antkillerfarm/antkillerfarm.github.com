@@ -296,10 +296,6 @@ https://mp.weixin.qq.com/s/RpaOrngeXTKycLb3iCygZw
 
 利用贝叶斯神经网络进行随机动力系统中的学习与策略搜索
 
-https://mp.weixin.qq.com/s/lKm_ypn5I7tSjoQHceJ0jQ
-
-概率编程：使用贝叶斯神经网络预测金融市场价格
-
 https://github.com/bayesgroup/deepbayes-2018
 
 Seminars DeepBayes Summer School 2018

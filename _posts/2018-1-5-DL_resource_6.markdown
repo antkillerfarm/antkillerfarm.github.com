@@ -30,10 +30,6 @@ https://mp.weixin.qq.com/s/2FKgCmQ8i58XamT_plrl1w
 
 深度神经网络为什么不易过拟合？傅立叶分析发现固有频谱偏差
 
-https://mp.weixin.qq.com/s/sbuqNhIVTDUe4Q6BxS5fWw
-
-盘点金融领域里常用的深度学习模型
-
 https://mp.weixin.qq.com/s/R6vZU_gBaODsh1XtsjTpFA
 
 MIT与FAIR提出“mixup”：利用数据和标签的随机线性插值提高神经网络的健壮性
@@ -161,10 +157,6 @@ https://mp.weixin.qq.com/s/53zse9GD9W25Vx6FCt2Bmw
 https://mp.weixin.qq.com/s/diecjVsTkFhulTwET9N4WA
 
 DeepMind研究科学家深度生成模型报告，视频+PPT一文全揽最新前沿进展
-
-http://www.jianshu.com/p/f9ca56d6407d
-
-深度学习在股票市场的应用
 
 https://www.jianshu.com/p/31ab3e3e1d6e
 
@@ -329,10 +321,6 @@ https://mp.weixin.qq.com/s/eS0OzK3Vxo0koGiLHP83ag
 https://mp.weixin.qq.com/s/ew9oKF92M_t6vcSWxyFL3w
 
 无参考图像质量评价研究进展综述
-
-https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
-
-北大：一种基于新闻特征抽取和循环神经网络的股票预测方法
 
 https://mp.weixin.qq.com/s/_QPzoFyhCxnIxDWKzzsvAQ
 

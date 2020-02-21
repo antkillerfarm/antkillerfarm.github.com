@@ -1,10 +1,32 @@
 ---
 layout: post
-title:  语音识别（四）——DTW, Spectrogram
+title:  语音识别（四）——声学模型, 解码器技术, DTW, Spectrogram
 category: speech 
 ---
 
-# 解码器技术（续）
+# 声学模型
+
+声学模型主要有两个问题，分别是特征向量序列的可变长和音频信号的丰富变化性。
+
+**可变长特征向量序列**问题在学术上通常有动态时间规划（Dynamic Time Warping, DTW）和隐马尔科夫模型（Hidden Markov Model, HMM）方法来解决。
+
+**音频信号的丰富变化性**是由说话人的各种复杂特性或者说话风格与语速、环境噪声、信道干扰、方言差异等因素引起的。声学模型需要足够的鲁棒性来处理以上的情况。
+
+在过去，主流的语音识别系统通常使用梅尔倒谱系数（Mel-Frequency Cepstral Coefficient, MFCC）或者线性感知预测（Perceptual Linear Prediction, PLP）作为特征，使用混合高斯模型-隐马尔科夫模型（GMM-HMM）作为声学模型。
+
+在近些年，区分性模型，比如深度神经网络（Deep Neural Network, DNN）在对声学特征建模上表现出更好的效果。基于深度神经网络的声学模型，比如上下文相关的深度神经网络-隐马尔科夫模型（CD-DNN-HMM）在语音识别领域已经大幅度超越了过去的GMM-HMM模型。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/23567981
+
+声学模型
+
+# 解码器技术
+
+解码器模块主要完成的工作包括：给定输入特征序列$$x_1^T$$的情况下，在由声学模型、声学上下文、发音词典和语言模型等四种知识源组成的搜索空间（Search Space）中，通过维特比（Viterbi）搜索，寻找最佳词串$$[w_1^N]^{opt}=[w_1,\dots,w_N]_{opt}$$，使得满足：
+
+$$[w_1^N]^{opt}=\mathop{\arg\max}_{w_1^N,N}p(w_1^N\mid x_1^T)$$
 
 在解码过程中，各种解码器的具体实现可以是不同的。按搜索空间的构成方式来分，有动态编译和静态编译两种方式。
 
@@ -169,31 +191,3 @@ https://en.wikipedia.org/wiki/Window_function
 https://mp.weixin.qq.com/s/84f-HbQSvGPr2tD9EpdbVw
 
 典型窗函数分析，对LFM信号进行时域和频域加窗对比
-
-## Hann window
-
-Hann window虽然是以Julius Ferdinand von Hann的名字命名，但却是Blackman和Tukey的作品。他们和同一实验室的Claude E. Shannon, Hendrik Wade Bode，合称为Information Age的四大先锋。
-
->Julius Ferdinand von Hann，1839～1921，奥地利气象学家。现代气象学之父。
-
->Ralph Beebe Blackman，1904～1990，美国数学家。长期供职于AT&T Bell Laboratories。二战时，参与了防空火炮控制系统的平滑研究。
-
->John Wilder Tukey，1915～2000，美国数学家。Princeton University博士，长期供职于AT&T Bell Laboratories。英国皇家学会会员。Cooley–Tukey FFT算法发明者。
-
-$$w(n) = \sum_{k = 0}^{K} (-1)^k a_k\; \cos\left( \frac{2 \pi k n}{N-1} \right),\quad 0\le n \le N-1$$
-
-上式是Cosine-sum windows的计算公式，令K=1，则：
-
-$$w(n) = a_0 - \underbrace{(1-a_0)}_{a_1}\cdot \cos\left( \tfrac{2 \pi n}{N - 1} \right),\quad 0\le n \le N-1$$
-
-这类Window function有好几个特例：
-
-Hann window：
-
-$$w(n) = 0.5\; \left[1 - \cos \left ( \frac{2 \pi n}{N-1} \right) \right] = \sin^2 \left ( \frac{\pi n}{N-1} \right)$$
-
-Hamming window：
-
-$$w(n) = 0.54 - 0.46\cdot \cos\left( \tfrac{2 \pi n}{N - 1}\right)$$
-
->Richard Wesley Hamming，1915～1998，美国数学家。University of Chicago本科（1937）+University of Nebraska硕士（1939）+UIUC博士（1942）。参与曼哈顿计划，后长期供职于Bell Lab。通信和计算机工程领域的宗师级人物，美国工程院院士，图灵奖得主（1968）。Hamming code 、Hamming distance等都是他的贡献。

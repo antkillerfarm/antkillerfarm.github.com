@@ -320,10 +320,6 @@ https://mp.weixin.qq.com/s/XMLYjw_wN-M8jluczkbcyw
 
 一种考虑缓和KL消失的简单VAE训练方法
 
-https://mp.weixin.qq.com/s/5G4KzhrJZ-GHPci_XSHheQ
-
-什么是解耦表示学习？使用beta-VAE模型探究医疗和金融问题
-
 https://mp.weixin.qq.com/s/0coPJFrW7anW7QuqjPBt3g
 
 深度生成模型在信号处理领域的应用
@@ -331,10 +327,6 @@ https://mp.weixin.qq.com/s/0coPJFrW7anW7QuqjPBt3g
 https://mp.weixin.qq.com/s/GJr-YtV84eV1KbkyVSkcBA
 
 超越BigGAN，DeepMind提出“史上最强非GAN生成器”VQ-VAE-2
-
-https://mp.weixin.qq.com/s/1K2Lxws_3QmhwzKB3ucIeA
-
-变分自编码器：金融间序的降维与指标构建
 
 https://mp.weixin.qq.com/s/3ZHlWlO0FdnQTnskcrz2IA
 
