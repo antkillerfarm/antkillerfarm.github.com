@@ -50,6 +50,10 @@ https://mp.weixin.qq.com/s/kkGH-Jp6ophDXqHpyznEQQ
 
 一文详解高精地图安全技术及标准
 
+https://mp.weixin.qq.com/s/vpCc_dkuEt3_71juxztxGQ
+
+自动驾驶高精地图-概述与分析
+
 ## 车道线检测
 
 https://blog.csdn.net/Young_Gy/article/details/75194914

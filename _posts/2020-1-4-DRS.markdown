@@ -140,6 +140,10 @@ https://coladrill.github.io/2019/12/10/推荐系统的发展与简单回顾/
 
 推荐系统的发展与简单回顾
 
+https://zhuanlan.zhihu.com/p/104307718
+
+CTR预估模型发展过程与关系图谱
+
 https://mp.weixin.qq.com/s/4CLFaP4F-CknDcOWSOdiTQ
 
 基于深度学习的序列推荐系统综述：概念、方法与实验评估

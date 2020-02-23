@@ -369,3 +369,7 @@ https://mp.weixin.qq.com/s/fZN8mtZdB4Fd6gj2dAKURw
 https://mp.weixin.qq.com/s/_GU5y7v8HNDOjEGvWh8Fkw
 
 旷视研究院提出文字检测新方法：像素聚合网络PAN
+
+https://mp.weixin.qq.com/s/bmJCLUlOA364AvK90sXE3Q
+
+用于算术习题自动批改的结构文本精确识别方法

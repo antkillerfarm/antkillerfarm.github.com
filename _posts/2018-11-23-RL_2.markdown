@@ -242,3 +242,7 @@ c) Undiscounted, average reward MDP
 https://mp.weixin.qq.com/s/G8zmooqhSKqcLv1u7uM0bw
 
 AlphaGo等智能体是如何炼成的？你需要懂得马尔科夫链
+
+https://mp.weixin.qq.com/s/KQmKb5NrjgxooCnbZaiTzw
+
+强化学习中无处不在的贝尔曼最优性方程，背后的数学原理为何？

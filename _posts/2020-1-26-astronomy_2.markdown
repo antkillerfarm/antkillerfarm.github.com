@@ -252,11 +252,21 @@ https://mp.weixin.qq.com/s/Bx7AZrL168OkygBbg0qflQ
 
 病毒与人类的战争（下）： 人类守望者
 
-## 科研
+https://mp.weixin.qq.com/s/9iWT9v4msuHgzN_92Ptf7A
+
+关于新冠病毒，人们最关心的七个科学问题
+
+## 蝙蝠
 
 https://mp.weixin.qq.com/s/QN2GQ6T9Q2cwT_CN6aX_YQ
 
 你所不知道的蝙蝠——常态“发烧”，体内如“毒蛊”
+
+https://mp.weixin.qq.com/s/Vi-PRPhFEnBEnNxGNzA6VA
+
+蝙蝠是极为有益的动物，然而也是最容易被误解的动物之一
+
+## 科研
 
 https://mp.weixin.qq.com/s/NI2OtzUsRXUMoqfI11YV_A
 
@@ -289,3 +299,11 @@ https://mp.weixin.qq.com/s/aawHwJ8IIuHPE7Dc9yn1Ow
 https://mp.weixin.qq.com/s/zbqdndZTt4B0-v3KfIm5uA
 
 既没新样本，也没实验，如何猜到新冠病毒“喜欢”感染哪些细胞？
+
+https://mp.weixin.qq.com/s/T4GQWgnazMyljsa3Jg0E8Q
+
+一文分清P1、P2、P3、P4实验室四兄弟
+
+https://mp.weixin.qq.com/s/vWpQLlfHFcAPleuuEvJdhw
+
+中国人更易感染新冠肺炎吗？

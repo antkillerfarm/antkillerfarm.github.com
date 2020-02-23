@@ -82,6 +82,10 @@ https://zhuanlan.zhihu.com/p/104447447
 
 剪枝实践：图像检索如何加速和省显存？
 
+https://zhuanlan.zhihu.com/p/105064255
+
+Slimmable Networks
+
 # 知识蒸馏
 
 ## 基本概念

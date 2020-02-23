@@ -10,6 +10,10 @@ category: DL
 
 ## 参考
 
+https://mp.weixin.qq.com/s/sDkGAhnFC027XjpUImeatw
+
+自监督、半监督、无监督学习，傻傻分不清楚？最新综述来帮你！
+
 https://mp.weixin.qq.com/s/L4GQF0eE7MjLPrb8UygCww
 
 无监督深度学习全景教程（193页PDF）
@@ -249,6 +253,14 @@ Image-Level弱监督图像语义分割汇总简析
 https://mp.weixin.qq.com/s/5czWf0xpqva5pmuvJDn5AQ
 
 Google研究院提出FixMatch，简单粗暴却极其有效的半监督学习方法，附14页PDF下载
+
+https://zhuanlan.zhihu.com/p/108088719
+
+SSL:Self-Supervised Learning(自监督学习)
+
+https://zhuanlan.zhihu.com/p/108625273
+
+Self-Supervised Learning入门介绍
 
 # 语义分割
 

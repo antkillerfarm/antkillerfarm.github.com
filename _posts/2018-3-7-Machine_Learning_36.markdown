@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十六）——XGBoost, LightGBM, Parameter Server
+title:  机器学习（三十六）——XGBoost, LightGBM, CatBoost, Parameter Server
 category: ML 
 ---
 

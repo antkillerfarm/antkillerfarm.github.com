@@ -269,3 +269,11 @@ https://zhuanlan.zhihu.com/p/52876883
 https://mp.weixin.qq.com/s/OFCzl8stFU5b1MWrkDU7NA
 
 阿里电商推荐中如何进行特征蒸馏提升模型效果
+
+https://mp.weixin.qq.com/s/ZNjC30F28uX2lBkHBAAU3g
+
+双DNN排序模型：在线知识蒸馏在爱奇艺推荐的实践
+
+https://mp.weixin.qq.com/s/Ni42SEukRBGDUHu_bh3Lig
+
+基于LSTM模型的广告库存预估算法

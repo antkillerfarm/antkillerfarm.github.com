@@ -6,6 +6,18 @@ category: Attention
 
 # Transformer（续）
 
+https://mp.weixin.qq.com/s/O8_oOCtCCcU-kVklgxRoBg
+
+Transformers Assemble（PART I）
+
+https://mp.weixin.qq.com/s/zmChXVkF0pUiKrahx00EzQ
+
+Transformers Assemble（PART II）
+
+https://mp.weixin.qq.com/s/uPBLzJ-WidH4WBDiPt5NqA
+
+Transformers Assemble（PART III）
+
 https://mp.weixin.qq.com/s/S_xhaDrOaPe38ZvDLWl4dg
 
 从技术到产品，搜狗为我们解读了神经机器翻译的现状

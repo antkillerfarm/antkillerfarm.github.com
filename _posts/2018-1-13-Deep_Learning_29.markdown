@@ -10,6 +10,8 @@ Graph Neural Networks是2019年以来比较热门的方向。然而由于没有�
 
 ![](/images/img3/GNN.jpg)
 
+由于Graph Neural Networks和图表示学习(Represent Learning for Graph)有很密切的联系。因此章节编排上如无特殊说明，不对两者的内容加以区分。
+
 ## 教程
 
 http://web.stanford.edu/class/cs224w/
@@ -88,6 +90,12 @@ https://mp.weixin.qq.com/s/ePqSwDhCgE1fGWSphuZuBg
 
 WSDM2020教程《基于图学习和推理的推荐系统》，附130页PPT下载
 
+## 综述
+
+《A Comprehensive Survey on Graph Neural Networks》
+
+《Deep Learning on Graphs: A Survey》
+
 ## DGL
 
 https://mp.weixin.qq.com/s/I8pGqpKnRJp9HRglHfMZCw
@@ -136,6 +144,24 @@ https://mp.weixin.qq.com/s/c5rvWfIjujw6TNszDzPMdw
 
 DeepMind开源图深度学习(GraphDL)工具包，基于Tensorflow和Sonnet
 
+## NetworkX
+
+NetworkX是一个用Python语言开发的图论与复杂网络建模工具，内置了常用的图与复杂网络分析算法，可以方便的进行复杂网络数据分析、仿真建模等工作。
+
+官网：
+
+https://networkx.github.io/
+
+参考：
+
+https://www.cnblogs.com/kaituorensheng/p/5423131.html
+
+python复杂网络分析库NetworkX
+
+https://mp.weixin.qq.com/s/WYM7k9gddAndlLBuQWTbSA
+
+一文读懂Python复杂网络分析库networkx
+
 ## SNAP
 
 SNAP（Stanford Network Analysis Platform）是一个复杂网络分析的库。
@@ -179,6 +205,12 @@ https://mp.weixin.qq.com/s/h1vDImYTLEheatZnScZwbg
 https://mp.weixin.qq.com/s/F2jF1vuzK4u8ZPrDK_CyLw
 
 KDD2018网络表示学习最新教程：DeepWalk作者Perozzi等人带你探索最前沿
+
+## 概述
+
+最早的图神经网络起源于Franco博士的论文《The graph neural network model》。
+
+>Franco Scarselli，意大利人，University of Florence大学博士。University of Siena教授。
 
 ## 参考
 
@@ -257,6 +289,18 @@ https://mp.weixin.qq.com/s/0rs8Wur7Iv6jSpFz5C-KNg
 https://mp.weixin.qq.com/s/cdbHoR_E_mpIdcvmNGWfDA
 
 掌握图神经网络GNN基本，看这篇文章就够了
+
+https://www.cnblogs.com/SivilTaram/p/graph_neural_network_1.html
+
+从图(Graph)到图卷积(Graph Convolution)：漫谈图神经网络模型 (一)
+
+https://www.cnblogs.com/SivilTaram/p/graph_neural_network_2.html
+
+从图(Graph)到图卷积(Graph Convolution)：漫谈图神经网络模型 (二)
+
+https://www.cnblogs.com/SivilTaram/p/graph_neural_network_3.html
+
+从图(Graph)到图卷积(Graph Convolution)：漫谈图神经网络模型 (三)
 
 https://mp.weixin.qq.com/s/Irs_fLrf4oybc3sAfpmEeA
 
@@ -365,39 +409,3 @@ https://mp.weixin.qq.com/s/5wSgC4pXBfRLoCX-73DLnw
 https://mp.weixin.qq.com/s/1-Dmckby2NcXsaoK08zk8w
 
 视频理解中的图表示学习
-
-https://mp.weixin.qq.com/s/sJB4N_ObUqKM8H65yU_1sg
-
-Graph基础知识介绍
-
-https://mp.weixin.qq.com/s/jBQOgP-I4FQT1EU8y72ICA
-
-图神经网络的“开山之作”CGN模型
-
-https://mp.weixin.qq.com/s/DJAimuhrXIXjAqm2dciTXg
-
-何时能懂你的心——图卷积神经网络（GCN）
-
-https://mp.weixin.qq.com/s/edrh-HXqW01Yx7c8tQ8UxA
-
-从数据结构到算法：图网络方法初探
-
-https://mp.weixin.qq.com/s/ftz8E5LffWFfaSuF9uKqZQ
-
-Graph Neural Network：GCN算法原理，实现和应用
-
-https://mp.weixin.qq.com/s/JvtrGa0YiUmR6UA5wBQ-pQ
-
-图神经网络GNN最新理论进展和应用探索
-
-https://mp.weixin.qq.com/s/zQU47tjpTCPiLdEmUmZx3Q
-
-图卷积神经网络及其应用
-
-https://mp.weixin.qq.com/s/8Sz_jo7pokL_nzupEBGGdg
-
-当深度强化学习遇见图神经网络
-
-https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
-
-Bengio等人提出图注意网络架构GAT，可处理复杂结构图

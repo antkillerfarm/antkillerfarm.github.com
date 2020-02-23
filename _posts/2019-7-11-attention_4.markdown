@@ -106,6 +106,10 @@ https://zhuanlan.zhihu.com/p/107350079
 
 什么是XLNet，它为什么比BERT效果好？
 
+https://mp.weixin.qq.com/s/EozsQNQ2YrczRg18hTZBhA
+
+什么是XLNet中的双流自注意力
+
 ## 轻量化BERT
 
 | Paper | Prune | Factor | Distill | W. Sharing | Quant. | Pre-train | Downstream |
@@ -209,6 +213,22 @@ https://mp.weixin.qq.com/s/8uZ2SJtzZhzQhoPY7XO9uw
 https://zhuanlan.zhihu.com/p/66053631
 
 BERT
+
+https://mp.weixin.qq.com/s/WEbJnO04DOrsxUbzpgL66g
+
+BERT源码分析（PART I）
+
+https://mp.weixin.qq.com/s/iXjE7KoyvFQ8uekLKRK4jw
+
+BERT源码分析（PART II）
+
+https://mp.weixin.qq.com/s/DxBC_x5ZWC6SECfnwDGnVg
+
+BERT源码分析（PART III）
+
+https://mp.weixin.qq.com/s/kI_k_plZbRzmdeXxt2_2WA
+
+从Transformer到BERT模型
 
 https://mp.weixin.qq.com/s/CofeiL4fImq98UeuJ4hWTg
 

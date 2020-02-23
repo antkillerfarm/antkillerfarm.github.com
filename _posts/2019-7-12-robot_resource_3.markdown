@@ -385,3 +385,7 @@ https://zhuanlan.zhihu.com/p/105849060
 https://mp.weixin.qq.com/s/hqOxoU6G_2RjS2WbbHoxHg
 
 深度学习技术在自动驾驶中的应用与挑战
+
+https://mp.weixin.qq.com/s/7ndd6jFaSObUh6eOW8fi5Q
+
+旷视研究院SLAM组负责人刘骁：三维视觉与机器人

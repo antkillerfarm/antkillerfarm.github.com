@@ -284,6 +284,10 @@ https://mp.weixin.qq.com/s/GheEA0Ag0vbhZeyzqpTl0A
 
 分布式优化：在大数据时代应运而生
 
+https://mp.weixin.qq.com/s/Vb3AkoWHQY7WWBMZaVnf4g
+
+微软发布DeepSpeed开源库，支持1000亿个参数模型的训练
+
 # NLP参考资源+
 
 https://mp.weixin.qq.com/s/gJFwWnKn7BV_BcADu_vJCg

@@ -6,6 +6,42 @@ category: DL
 
 # Graph NN（续）
 
+https://mp.weixin.qq.com/s/sJB4N_ObUqKM8H65yU_1sg
+
+Graph基础知识介绍
+
+https://mp.weixin.qq.com/s/jBQOgP-I4FQT1EU8y72ICA
+
+图神经网络的“开山之作”CGN模型
+
+https://mp.weixin.qq.com/s/DJAimuhrXIXjAqm2dciTXg
+
+何时能懂你的心——图卷积神经网络（GCN）
+
+https://mp.weixin.qq.com/s/edrh-HXqW01Yx7c8tQ8UxA
+
+从数据结构到算法：图网络方法初探
+
+https://mp.weixin.qq.com/s/ftz8E5LffWFfaSuF9uKqZQ
+
+Graph Neural Network：GCN算法原理，实现和应用
+
+https://mp.weixin.qq.com/s/JvtrGa0YiUmR6UA5wBQ-pQ
+
+图神经网络GNN最新理论进展和应用探索
+
+https://mp.weixin.qq.com/s/zQU47tjpTCPiLdEmUmZx3Q
+
+图卷积神经网络及其应用
+
+https://mp.weixin.qq.com/s/8Sz_jo7pokL_nzupEBGGdg
+
+当深度强化学习遇见图神经网络
+
+https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
+
+Bengio等人提出图注意网络架构GAT，可处理复杂结构图
+
 https://zhuanlan.zhihu.com/p/34232818
 
 《Graph Attention Networks》阅读笔记
@@ -345,23 +381,3 @@ https://mp.weixin.qq.com/s/eg_H0D8m0LdVBJixsc-dNA
 https://mp.weixin.qq.com/s/sXCwe8hXWxdNbpl2i7YBtg
 
 完全基于注意力机制的图表征学习模型Graph-Bert
-
-https://mp.weixin.qq.com/s/dXYjUHAXVZINXQkvM_ssZA
-
-从图网络表示到图神经网络
-
-https://mp.weixin.qq.com/s/DI7C8GKcVsMzAVpGxflUpg
-
-图机器学习，Graph-Powered Machine Learning
-
-https://mp.weixin.qq.com/s/1AO7ALoojMK9Qx3yMQcclQ
-
-GNN实战：手把手教你使用tf_geometric构建图自编码器GAE
-
-https://mp.weixin.qq.com/s/jPIo4p4QCn1UVZ1CtPjP-A
-
-GNN如何进行池化以及挑战
-
-https://mp.weixin.qq.com/s/i_v1GoR-VzVxmy2Wm97t4w
-
-中科院自动化所等首次用图卷积网络解决语义分割难题

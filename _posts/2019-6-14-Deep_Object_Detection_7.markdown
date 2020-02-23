@@ -244,6 +244,10 @@ https://mp.weixin.qq.com/s/HmUhlw90b2aTsoEwBdYbdQ
 
 目标检测二十年技术综述
 
+https://mp.weixin.qq.com/s/S1IrgEqS1Q4xqGl5adNrlg
+
+目标检测近年综述
+
 https://mp.weixin.qq.com/s/5I9uzGCNFD93L1mzakTl0Q
 
 目标检测网络学习总结（RCNN-->YOLO V3）

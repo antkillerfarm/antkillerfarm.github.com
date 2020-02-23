@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十五）——Probabilistic Robotics, Kalman filters
+title:  机器学习（三十五）——Probabilistic Robotics, Kalman filters, 图论
 category: ML 
 ---
 
@@ -189,3 +189,53 @@ https://mp.weixin.qq.com/s/na0vVhECfBppTb7BmhRyzA
 https://mp.weixin.qq.com/s/v460ql4RnJGbzbV0iZH4kA
 
 深度解读卡尔曼滤波原理
+
+# 图论
+
+## 基本概念
+
+**图(Graph)**，是一种由若干个结点(Node)及连接两个结点的边(Edge)所构成的图形，用于刻画不同结点之间的关系。
+
+Graph非常适合用于描述non-Euclidean space的数据：
+
+![](/images/img3/graph.png)
+
+
+
+## 参考
+
+https://mp.weixin.qq.com/s/zOdy-1vCJD_dPFSoe0ELFA
+
+图论与图学习（一）：图的基本概念
+
+https://mp.weixin.qq.com/s/0ZdS1WOSDZiXnxP8fybBAw
+
+图论与图学习（二）：图算法
+
+https://mp.weixin.qq.com/s/BkKw2C3n9WsmIchJkkZxUw
+
+从七桥问题开始：全面介绍图论及其应用
+
+https://mp.weixin.qq.com/s/ZDY3Yt67eXK5pjXgvJkkyQ
+
+图论的各种基本算法
+
+https://mp.weixin.qq.com/s/2h1dgvPbYKBOYZPiixg9iw
+
+手把手：四色猜想、七桥问题…程序员眼里的图论，了解下？
+
+https://mp.weixin.qq.com/s/ra9v1pgFsbOcJrtONoZNvQ
+
+图论基础与图存储结构
+
+https://mp.weixin.qq.com/s/Y7qZlJdJ8fav5BXFGwdSOQ
+
+Graph Analysis and Its Application
+
+https://mp.weixin.qq.com/s/VdvvQetxAvkiNF04hV9PeA
+
+图搜索算法介绍(RRT/RRT*)
+
+https://mp.weixin.qq.com/s/dTI3BdgixVTAFsnxtKjq0A
+
+常见图算法介绍

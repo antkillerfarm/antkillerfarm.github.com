@@ -102,6 +102,10 @@ https://mp.weixin.qq.com/s/nEZtDywzLBC0dHHBt5PyAg
 
 深度学习视觉系统，Deep Learning for Vision Systems, 396页pdf
 
+https://pdos.csail.mit.edu/6.824/index.html
+
+6.824: Distributed Systems
+
 # WFST（续）
 
 https://blog.csdn.net/dearwind153/article/details/70053704
@@ -249,3 +253,7 @@ NLP的12种后BERT预训练方法
 https://www.zhihu.com/question/327450789
 
 Bert如何解决长文本问题？
+
+https://mp.weixin.qq.com/s/QTELpbr480AJsBINm-FHKQ
+
+代码也能预训练，微软&哈工大最新提出 CodeBERT 模型，支持自然-编程双语处理

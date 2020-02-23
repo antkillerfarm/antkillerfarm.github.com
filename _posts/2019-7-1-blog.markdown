@@ -202,6 +202,10 @@ https://mp.weixin.qq.com/s/x6gKTuYIx8y25KX-fCc5bA
 
 蒙特卡洛梯度估计方法（MCGE）简述
 
+https://mp.weixin.qq.com/s/jUKTsJdlBLPWbiBa6TlPPA
+
+基于模型的强化学习—LQR与iLQR
+
 # 电子科技史+
 
 https://zhuanlan.zhihu.com/p/54493905

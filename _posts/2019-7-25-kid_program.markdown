@@ -393,6 +393,10 @@ https://www.zhihu.com/question/31415286
 
 如何评论浏览器最新的WebAssembly字节码技术？
 
+https://mp.weixin.qq.com/s/LRGNOuFwHXALs_lhPyN3Zw
+
+爱奇艺直播WebAssembly优化之路
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/22989691

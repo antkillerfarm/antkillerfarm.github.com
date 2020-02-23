@@ -224,6 +224,10 @@ https://zhuanlan.zhihu.com/p/50595699
 
 揭秘YOLOv3鲜为人知的关键细节
 
+https://mp.weixin.qq.com/s/EElv2Tc73JKS8jpejEGB1w
+
+YOLO v3实战之钢筋数量AI识别（一）
+
 # Tiny-YOLO
 
 YOLO系列还包括了一个速度更快但精度稍低的嵌入式版本系列——Tiny-YOLO。

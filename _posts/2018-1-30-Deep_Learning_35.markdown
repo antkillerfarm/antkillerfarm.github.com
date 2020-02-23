@@ -26,6 +26,14 @@ https://mp.weixin.qq.com/s/Oln0s6pOvCWn9sAu-XjGaw
 
 人体姿态估计的过去，现在，未来
 
+https://zhuanlan.zhihu.com/p/108381101
+
+基于深度学习目标姿态估计的论文一览（上）
+
+https://zhuanlan.zhihu.com/p/108381336
+
+基于深度学习目标姿态估计的论文一览（下）
+
 https://mp.weixin.qq.com/s/6pNZ8Crs4Lel2C0TlFAc4Q
 
 真能“穿墙识人”，MIT人体姿态估计系统创历史最高精度！

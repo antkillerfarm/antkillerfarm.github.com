@@ -113,3 +113,29 @@ https://mp.weixin.qq.com/s/QR53KZwIpQbCqX4TJAhAlQ
 https://mp.weixin.qq.com/s/dg3ydVozTN1wJB-SnjkPGQ
 
 GNN手绘草图识别新架构：Multi-Graph Transformer网络
+
+# Graph NN+
+
+https://mp.weixin.qq.com/s/dXYjUHAXVZINXQkvM_ssZA
+
+从图网络表示到图神经网络
+
+https://mp.weixin.qq.com/s/DI7C8GKcVsMzAVpGxflUpg
+
+图机器学习，Graph-Powered Machine Learning
+
+https://mp.weixin.qq.com/s/1AO7ALoojMK9Qx3yMQcclQ
+
+GNN实战：手把手教你使用tf_geometric构建图自编码器GAE
+
+https://mp.weixin.qq.com/s/jPIo4p4QCn1UVZ1CtPjP-A
+
+GNN如何进行池化以及挑战
+
+https://mp.weixin.qq.com/s/i_v1GoR-VzVxmy2Wm97t4w
+
+中科院自动化所等首次用图卷积网络解决语义分割难题
+
+https://mp.weixin.qq.com/s/inBGhCnzr-xZZqtIbrG3bA
+
+异质图神经网络:模型与应用

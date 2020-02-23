@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十四）——单分类SVM&多分类SVM, Stacking, 特征工程, 图论
+title:  机器学习（二十四）——单分类SVM&多分类SVM, Stacking, 特征工程
 category: ML 
 ---
 
@@ -258,41 +258,3 @@ https://mp.weixin.qq.com/s/thd_dtd4erqSf7p6ZON72w
 https://zhuanlan.zhihu.com/p/96420594
 
 特征工程架构性好文
-
-# 图论
-
-https://mp.weixin.qq.com/s/zOdy-1vCJD_dPFSoe0ELFA
-
-图论与图学习（一）：图的基本概念
-
-https://mp.weixin.qq.com/s/0ZdS1WOSDZiXnxP8fybBAw
-
-图论与图学习（二）：图算法
-
-https://mp.weixin.qq.com/s/BkKw2C3n9WsmIchJkkZxUw
-
-从七桥问题开始：全面介绍图论及其应用
-
-https://mp.weixin.qq.com/s/ZDY3Yt67eXK5pjXgvJkkyQ
-
-图论的各种基本算法
-
-https://mp.weixin.qq.com/s/2h1dgvPbYKBOYZPiixg9iw
-
-手把手：四色猜想、七桥问题…程序员眼里的图论，了解下？
-
-https://mp.weixin.qq.com/s/ra9v1pgFsbOcJrtONoZNvQ
-
-图论基础与图存储结构
-
-https://mp.weixin.qq.com/s/Y7qZlJdJ8fav5BXFGwdSOQ
-
-Graph Analysis and Its Application
-
-https://mp.weixin.qq.com/s/VdvvQetxAvkiNF04hV9PeA
-
-图搜索算法介绍(RRT/RRT*)
-
-https://mp.weixin.qq.com/s/dTI3BdgixVTAFsnxtKjq0A
-
-常见图算法介绍

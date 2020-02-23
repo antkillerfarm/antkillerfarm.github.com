@@ -221,3 +221,7 @@ ImageMagick将PDF转换为PNG的示例：
 `<!-- <policy domain="path" rights="none" pattern="@*" /> -->`
 
 `<policy domain="coder" rights="read|write" pattern="PDF" />`
+
+## Others
+
+Linux平台的绘图软件还有KolourPaint、mtPaint、MyPaint。

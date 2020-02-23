@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/XsRIuxpqK2UlgLhM7Vxg6g
 
 动作识别数据集简介
 
+https://mp.weixin.qq.com/s/T0EHQlfac1ni9a3Z71-kmg
+
+爱奇艺人物识别数据集已上线
+
 ## 推荐系统
 
 http://www.zanmel.com/2015/12/14/10-great-datasets-on-movies/

@@ -361,3 +361,7 @@ Instagram推荐系统：每秒预测9000万个模型是怎么做到的？
 https://mp.weixin.qq.com/s/MGeuFEQ4wvEERSrSVVihJg
 
 推荐系统提供web服务的2种方式
+
+https://mp.weixin.qq.com/s/BNQRi4hHnWXMDkSDbno_kg
+
+不要犯战略性的失误——如何合理制定推荐系统的优化目标？

@@ -108,7 +108,11 @@ Topic Memory Networks(Short Text Classification)
 
 https://mp.weixin.qq.com/s/JMFuav4zeF-ZkilsZWSUWw
 
-用深度学习（CNN RNN Attention）解决大规模文本分类问题 - 综述和实践
+用深度学习（CNN RNN Attention）解决大规模文本分类问题-综述和实践
+
+https://mp.weixin.qq.com/s/MIsk9pRFFf6jottIe8HmUA
+
+手把手带你RNN文本分类
 
 ## 情感分析
 
