@@ -250,6 +250,14 @@ http://www.cnblogs.com/herbert/p/3468294.html
 
 再谈collections模块defaultdict()和namedtuple()
 
+----
+
+collections模块还有其他一些功能。例如：
+
+https://mp.weixin.qq.com/s/lHFbec5oBshoASjJQHXxtg
+
+用好collections模块，对李白诗集进行字频统计
+
 ## @的用法
 
 @在python中是装饰器的意思，它的用法比较复杂。参见：

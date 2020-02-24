@@ -32,7 +32,7 @@ http://blog.csdn.net/kicilove/article/details/78655856
 
 $$f(x;\alpha,\beta)=\frac{x^{\alpha-1}(1-x)^{\beta-1}}{B(\alpha,\beta)}$$
 
-贝塔分布的PDF和CDF如下图所示：
+贝塔分布的PDF（probability density function）和CDF（cumulative distribution function）如下图所示：
 
 ![](/images/article/beta.png)
 

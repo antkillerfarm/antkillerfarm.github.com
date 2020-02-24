@@ -138,6 +138,10 @@ https://mp.weixin.qq.com/s/idznSOGOp0o5N86boLo3aw
 
 使用Facebook Pytorch BigGraph从知识图谱中提取知识
 
+https://mp.weixin.qq.com/s/FpLYdowTUzApeiQP1d7DNg
+
+Pytorch Biggraph简介及官方文档解读
+
 ## Graph Nets
 
 https://mp.weixin.qq.com/s/c5rvWfIjujw6TNszDzPMdw
