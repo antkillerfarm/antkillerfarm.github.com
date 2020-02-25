@@ -258,6 +258,10 @@ https://blog.csdn.net/choose_c/article/details/86545299
 
 论文：State-of-the-art Chinese Word Segmentation with Bi-LSTMs
 
+https://mp.weixin.qq.com/s/0NPHChBuF79ZegITOw8euw
+
+中文分词的古今中外，你想知道的都在这里
+
 ## 机器翻译
 
 https://mp.weixin.qq.com/s/sREYZGiK2OmuETrPdeJptA

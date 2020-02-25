@@ -306,10 +306,6 @@ https://mp.weixin.qq.com/s/h4LwSRAsDgRqOq3mLt_SCw
 
 浅谈mmap
 
-https://mp.weixin.qq.com/s/_7q9K9D1q40eaGkLt9yDhQ
-
-分布式系统关注点——深入浅出“异步”
-
 https://mp.weixin.qq.com/s/pSUXoLrwQeaxsI2LI-13EA
 
 带你用生活大白话理解NIO

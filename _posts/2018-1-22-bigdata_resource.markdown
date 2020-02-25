@@ -1,8 +1,42 @@
 ---
 layout: post
-title:  大数据平台参考资源（一）
+title:  分布式系统, 大数据平台参考资源（一）
 category: resource 
 ---
+
+# 分布式系统
+
+面对大规模数据的计算和存储时，有两种处理思路：
+
+**垂直扩展（scale up）**：通过升级单机的硬件，如 CPU、内存、磁盘等，提高计算机的处理能力。
+
+**水平扩展（scale out）**：通过添加更多的机器到分布式系统中，提高整个系统的处理能力。
+
+----
+
+https://mp.weixin.qq.com/s/12s9JUxVDqAnLAeqc_de8w
+
+聊聊分布式系统架构
+
+https://mp.weixin.qq.com/s/KbNNU246BAeJmLoWbKie6g
+
+分布式系统架构经典资料
+
+https://mp.weixin.qq.com/s/_g9lw9uEbjLDUHgXFc2aaw
+
+大规模分布式系统资源管理（一）
+
+https://mp.weixin.qq.com/s/-jJN8KXvpZVPmmKnremQdw
+
+大规模分布式系统资源管理（二）
+
+https://mp.weixin.qq.com/s/_7q9K9D1q40eaGkLt9yDhQ
+
+分布式系统关注点——深入浅出“异步”
+
+https://zhuanlan.zhihu.com/p/108636766
+
+从RAID到分布式系统的副本分布
 
 # 大数据平台参考资源
 
@@ -208,10 +242,6 @@ https://mp.weixin.qq.com/s/HhabrgpbWSn_f2Q-QfgaAA
 
 智能投放系统之场景分析最佳实践
 
-https://mp.weixin.qq.com/s/12s9JUxVDqAnLAeqc_de8w
-
-聊聊分布式系统架构
-
 https://mp.weixin.qq.com/s/nXYrUgEhaCo4patd1YovOw
 
 微信亿级用户异常检测框架的设计与实践
@@ -247,18 +277,6 @@ https://mp.weixin.qq.com/s/Zo1iBzAY1dBAa2pRTf-BbA
 https://mp.weixin.qq.com/s/uxsmwT-nvTga7tWiMLrrvw
 
 用Python实现一个大数据搜索引擎
-
-https://mp.weixin.qq.com/s/KbNNU246BAeJmLoWbKie6g
-
-分布式系统架构经典资料
-
-https://mp.weixin.qq.com/s/_g9lw9uEbjLDUHgXFc2aaw
-
-大规模分布式系统资源管理（一）
-
-https://mp.weixin.qq.com/s/-jJN8KXvpZVPmmKnremQdw
-
-大规模分布式系统资源管理（二）
 
 https://mp.weixin.qq.com/s/fx6XfBpuzozsJCvllMcCqw
 

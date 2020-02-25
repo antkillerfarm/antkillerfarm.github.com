@@ -331,3 +331,7 @@ NASNet: Google Brain经典作，改造搜索空间，性能全面超越人工网
 https://mp.weixin.qq.com/s/Ho6XDRYmOBs9TqLMq7aPAg
 
 MetaQNN: 与Google同场竞技，MIT经典作，基于Q-Learning的神经网络搜索
+
+https://mp.weixin.qq.com/s/5NGCr6oMW2p5u4kF7YMCPw
+
+NAS太难了，搜索结果堪比随机采样！华为ICLR 2020论文给出6条建议

@@ -139,3 +139,7 @@ https://mp.weixin.qq.com/s/i_v1GoR-VzVxmy2Wm97t4w
 https://mp.weixin.qq.com/s/inBGhCnzr-xZZqtIbrG3bA
 
 异质图神经网络:模型与应用
+
+https://mp.weixin.qq.com/s/MBRTs2pIVypQxrcMOY4Lcg
+
+图卷积网络（GCN）入门详解

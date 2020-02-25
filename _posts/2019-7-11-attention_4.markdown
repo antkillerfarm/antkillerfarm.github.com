@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/kI_k_plZbRzmdeXxt2_2WA
 
 从Transformer到BERT模型
 
+https://mp.weixin.qq.com/s/Bnk0nIjBdb58WVJEY8MqnA
+
+NLP中各种各样的编码器
+
 https://mp.weixin.qq.com/s/CofeiL4fImq98UeuJ4hWTg
 
 预训练BERT，官方代码发布前他们是这样用TensorFlow解决的

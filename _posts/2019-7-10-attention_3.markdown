@@ -18,6 +18,10 @@ https://mp.weixin.qq.com/s/uPBLzJ-WidH4WBDiPt5NqA
 
 Transformers Assemble（PART III）
 
+https://mp.weixin.qq.com/s/8pNZVe66LmQ-G3gqs6tOxw
+
+Transformers Assemble（PART IV）
+
 https://mp.weixin.qq.com/s/S_xhaDrOaPe38ZvDLWl4dg
 
 从技术到产品，搜狗为我们解读了神经机器翻译的现状

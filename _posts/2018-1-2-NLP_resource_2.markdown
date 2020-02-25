@@ -238,6 +238,10 @@ https://zhuanlan.zhihu.com/p/100969186
 
 代码实现中文命名实体识别（包括多种模型：HMM，CRF，BiLSTM，BiLSTM+CRF）
 
+https://mp.weixin.qq.com/s/qir6_Kl-7kqDtgHj7e9STw
+
+基于Hugging Face的Transformer库，300行实现命名实体识别
+
 ## 文本摘要
 
 https://mp.weixin.qq.com/s/jk1XgnuydrsTg3HvV0CVvw

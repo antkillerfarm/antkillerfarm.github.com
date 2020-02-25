@@ -258,6 +258,10 @@ https://mp.weixin.qq.com/s/NoKaBQssgd3uvgKzDvXnNg
 
 从算法到应用：滴滴端到端语音AI技术实践
 
+https://mp.weixin.qq.com/s/KpMl1ebWghKQikFCj8_8Ag
+
+CIF：基于神经元整合发放的语音识别新机制
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw
