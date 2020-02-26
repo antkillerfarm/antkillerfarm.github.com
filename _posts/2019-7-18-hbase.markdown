@@ -205,6 +205,10 @@ https://www.docker.com/
 
 ![](/images/article/docker_vs_vm.png)
 
+- 虚拟机携带操作系统，本身很小的应用程序却因为携带了操作系统而变得非常大，很笨重。Docker是不携带操作系统的，所以Docker的应用就非常的轻巧。
+
+- 也因为Docker没有OS，因此Windows的Docker镜像是不能在Linux上跑的。arm的镜像也不能在X86上跑。但是不同的Linux发行版由于内核是兼容的，是可以运行的（除非应用依赖了一些发行版相关的东西）。
+
 参考：
 
 http://blog.csdn.net/colorant/article/details/20608157
@@ -278,6 +282,10 @@ https://mp.weixin.qq.com/s/fY0bfMGL3UXT_3j4LZXaHw
 https://zhuanlan.zhihu.com/p/90408275
 
 下一代容器架构已出，Docker何去何处？看看这里的6问6答！！
+
+https://www.zhihu.com/question/27322045
+
+Docker容器里运行的程序是否与操作系统有关？
 
 # 多维数组的行优先和列优先
 

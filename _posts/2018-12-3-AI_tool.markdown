@@ -282,10 +282,6 @@ https://mp.weixin.qq.com/s/NJujC9QQtNF27IonW5lI6Q
 
 Facebook开源增强版LASER库，包含93种语言工具包
 
-https://mp.weixin.qq.com/s/sXAntMlz3eg5RmYVSy0i4A
-
-一键免费自动AI抠图，效果连PS大哥也点赞！
-
 https://mp.weixin.qq.com/s/QNk3vf8WWqSPNN-61W64zQ
 
 谷歌重磅开源NLP通用框架Lingvo

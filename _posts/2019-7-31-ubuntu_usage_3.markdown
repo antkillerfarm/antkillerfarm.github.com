@@ -176,19 +176,22 @@ Lua的GUI工具列表
 
 阴影部分上下曲边公式如下：
 
-$$x^2+y^2=5^2$$
-
-$$x^2+(y+5\sqrt{2})^2=10^2$$
+$$\begin{cases}
+x^2+y^2=5^2 \\
+x^2+(y+5\sqrt{2})^2=10^2
+\end{cases}$$
 
 求解交点坐标：
 
-$$(y+5\sqrt{2})^2-y^2=75$$
+$$\begin{cases}
+(y+5\sqrt{2})^2-y^2=75 \\
+10\sqrt{2}y+50=75
+\end{cases}$$
 
-$$10\sqrt{2}y+50=75$$
-
-$$y=\frac{5\sqrt{2}}{4}$$
-
-$$x=\sqrt{\frac{175}{8}}$$
+$$\begin{cases}
+y=\frac{5\sqrt{2}}{4} \\
+x=\sqrt{\frac{175}{8}}
+\end{cases}$$
 
 用积分法求解阴影面积：
 
@@ -311,6 +314,16 @@ $$y^2+3y-10=0$$
 $$(y+5)(y-2)=0$$
 
 因为图像开口向下，所以$$2a=-5$$。
+
+# 数学杂谈+
+
+https://mp.weixin.qq.com/s/BwCLtH2mpWLHoXxLlIp5ww
+
+“待我长发及腰”，女生说这话什么意思？
+
+https://www.zhihu.com/question/40167866
+
+学数学的和学物理的，真心惹不起啊。。。
 
 # Linux参考资源+
 

@@ -216,6 +216,14 @@ https://mp.weixin.qq.com/s/j5PFEkWd49SNKVdlWoqHiw
 
 .NET Core很酷，你不得不知！
 
+## NuGet
+
+NuGet是C#项目的包管理工具，作用类似maven、pip。
+
+官网：
+
+https://www.nuget.org/
+
 # Objective-C
 
 ## 环境搭建

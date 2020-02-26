@@ -114,6 +114,10 @@ https://mp.weixin.qq.com/s/JY6Mu7NMtEnmjEgHCg_eYg
 
 文本信息抽取与结构化
 
+https://mp.weixin.qq.com/s/MGPne4SotdHVWu2cIZvfog
+
+深入了解关系抽取你需要知道的东西
+
 ## 参考
 
 https://mp.weixin.qq.com/s/klfTdvfti0xCg2lGitG4hg

@@ -152,6 +152,10 @@ https://mp.weixin.qq.com/s/tV3ymNXo6xmXFu3K1AJYJQ
 
 最早被用于评价GAN模型的定量指标Inception Score是什么
 
+https://mp.weixin.qq.com/s/kHBPGq2z1IaKUFQe4WKd3Q
+
+长文综述解读如何定量评价生成对抗网络(GAN)
+
 # DCGAN
 
 论文：

@@ -262,6 +262,10 @@ https://zhuanlan.zhihu.com/p/108625273
 
 Self-Supervised Learning入门介绍
 
+https://mp.weixin.qq.com/s/Ekh0CqHuXGxKsy7sFropoA
+
+Self-supervised Learning再次入门
+
 # 语义分割
 
 Semantic segmentation是图像理解的基石性技术，在自动驾驶系统（具体为街景识别与理解）、无人机应用（着陆点判断）以及穿戴式设备应用中举足轻重。

@@ -84,6 +84,26 @@ https://mp.weixin.qq.com/s/4BvvwV11f9MrrYyLwUrX9w
 
 还在用ps抠图抠瞎眼？机器学习通用背景去除产品诞生记
 
+https://mp.weixin.qq.com/s/1eEtZ7lfv613EltgD2uUrA
+
+简单几笔就能精准抠图，阿里妈妈智能抠图算法介绍
+
+https://mp.weixin.qq.com/s/Y0FGO06IhJYu_QbV0IlyTw
+
+当达摩院大牛学会抠图，这一切都不受控制了……
+
+https://mp.weixin.qq.com/s/I_F5KKuld2rYLrDiDAazxw
+
+旷视研究院提出新型抠图方法AdaMatting，实现当前最佳
+
+https://mp.weixin.qq.com/s/sXAntMlz3eg5RmYVSy0i4A
+
+一键免费自动AI抠图，效果连PS大哥也点赞！
+
+https://mp.weixin.qq.com/s/UwijIjGOF-eRb2GjDxB95g
+
+漫画汉化组福音：深度学习工具一键抠图
+
 ## 换脸技术
 
 https://mp.weixin.qq.com/s/X_cBFBc42qUFpuNGBtISRw
@@ -359,19 +379,3 @@ https://mp.weixin.qq.com/s/Cyy4FgVZyVN-4KvG-9pHMA
 https://mp.weixin.qq.com/s/lp769k6wsyh-991ACf5upw
 
 计算机也会ps图片：TL-GAN
-
-https://mp.weixin.qq.com/s/OmSb1dl9smyZt_uASOcofQ
-
-人人都是画家：朱俊彦&周博磊等人的GAN画笔帮你开启艺术生涯
-
-https://mp.weixin.qq.com/s/7xGtUHfk_FNpDTksLxKaHw
-
-杨超越的声音+高晓松的脸~如此酸爽的技术，你值得拥有！
-
-https://mp.weixin.qq.com/s/y9h6xkK9Keq4UrdpGJS-4Q
-
-这些假脸实在太逼真了！英伟达造出新一代GAN，生成壁纸级高清大图毫无破绽
-
-https://mp.weixin.qq.com/s/V4PN0L42iisRxQ6y4Hc8fw
-
-英伟达“AI假脸王”开源：新一代GAN攻破几乎所有人脸识别系统

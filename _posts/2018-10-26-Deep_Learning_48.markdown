@@ -202,6 +202,10 @@ https://mp.weixin.qq.com/s/_q8N8keNpcD-jXLrRd_8dw
 
 深度学习时代下的语义分割综述
 
+https://blog.csdn.net/yorkhunter/article/details/104057159
+
+arXiv综述论文“Image Segmentation Using Deep Learning: A Survey”
+
 https://mp.weixin.qq.com/s/BSJ-F_Inp1-eHxSJDsQ3AQ
 
 12篇文章带你逛遍主流分割网络

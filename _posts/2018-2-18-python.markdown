@@ -88,6 +88,12 @@ http://pypi.douban.com/simple/
 
 安装：`pip install --no-index --find-links="/tmp/tranferred_packages" <package>`
 
+参考：
+
+https://mp.weixin.qq.com/s/8U44tyW84nVzSykownc2yw
+
+最全的pip使用指南
+
 ----
 
 requirements：

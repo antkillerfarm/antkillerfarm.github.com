@@ -305,9 +305,15 @@ https://mp.weixin.qq.com/s/kdCk_twY_czQo58y3x_yyA
 
 # TVM
 
+TVM是陈天奇领导的一个DL加速框架项目。它处于DL框架（如tensorflow、pytorch）和硬件后端（如CUDA、OpenCL）之间，兼顾了前者的易用性和后者的执行效率。
+
 官网：
 
-https://tvm.ai
+https://tvm.apache.org/
+
+代码：
+
+https://github.com/apache/incubator-tvm
 
 ![](/images/img3/tvm_stack.png)
 
@@ -344,6 +350,10 @@ https://mp.weixin.qq.com/s/z5rsU_uAAaRxgD9YAxDkZA
 https://zhuanlan.zhihu.com/p/75203171
 
 如何利用TVM快速实现超越Numpy(MKL)的GEMM
+
+https://zhuanlan.zhihu.com/p/58918363
+
+TVM: Deep Learning模型的优化编译器
 
 # 安全
 

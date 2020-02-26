@@ -170,6 +170,10 @@ https://mp.weixin.qq.com/s/-KHsG9lZknY952U_LTV7qg
 
 天气太热了，我们去太阳系度假吧
 
+https://mp.weixin.qq.com/s/EPMdW1qxQVl0MVUSjhWxyQ
+
+NASA传奇数学家去世，她曾笔算了登月轨道
+
 ----
 
 ![](/images/img3/india_moon.jpg)
@@ -182,9 +186,13 @@ https://mp.weixin.qq.com/s/scAkK8yhnEZKUuTrwHmK4w
 
 印度失联的月球探测器依然成功了95%？那些年我们一起追过的月球
 
-# 武汉肺炎
+# 武汉肺炎（续）
 
-## 病毒（续）
+## 病毒
+
+**正义单链RNA病毒**：冠状病毒科就属此类，包括能够感染动物的冠状病毒，会引发我们普通感冒的温和的冠状病毒，以及导致了SARS、MERS和此次疫情的三种厉害的冠状病毒。它们的遗传物质都是一条长长的RNA单链，入侵细胞后扮演了信使RNA的角色，欺骗细胞以它们为模板来生产病毒的蛋白质。
+
+**负义单链RNA病毒**，其中包括了很多可怕的病毒，比如狂犬病毒和埃博拉病毒。它们的遗传物质虽然也是RNA单链，但是如果直接拿来生产蛋白质的话，核糖体机器一定“读不懂”。因为它们的RNA单链相当于细胞信使RNA的互补链，无法直接翻译成蛋白质的肽链。所以这类病毒的RNA进入细胞后，要先通过病毒自己带进来的RNA聚合酶，生产出互补的正义链，才能诱骗细胞开始生产病毒蛋白。
 
 **逆转录病毒**逆天改命，能够利用自带的逆转录酶，以自己的基因组RNA为模板，合成出对应的DNA来。这个过程就叫做“逆转录”，因为它逆转了从DNA转录为RNA的“中心法则”。
 
@@ -269,45 +277,3 @@ https://mp.weixin.qq.com/s/QN2GQ6T9Q2cwT_CN6aX_YQ
 https://mp.weixin.qq.com/s/Vi-PRPhFEnBEnNxGNzA6VA
 
 蝙蝠是极为有益的动物，然而也是最容易被误解的动物之一
-
-## 科研
-
-https://mp.weixin.qq.com/s/NI2OtzUsRXUMoqfI11YV_A
-
-详解医学顶刊《柳叶刀》最新发表新型冠状病毒研究论文
-
-https://zhuanlan.zhihu.com/p/77352210
-
-“非典”真的是吃野味吃出来的吗？
-
-https://mp.weixin.qq.com/s/4pmzP2s9YZPR0yAX0XrjsQ
-
-流感病毒在衣服袖子和电梯按钮上能活多久？
-
-https://mp.weixin.qq.com/s/OaWBlQVr3DZ6HOMQFs9J3Q
-
-新型冠状病毒是这样被发现的……他们惊呼“这跟鼠疫一个级别！”
-
-https://view.inews.qq.com/a/20200130A08EVN00
-
-控制新发传染病，是以科研为主，还是以人民健康为主？公卫专家评武汉疫情
-
-https://mp.weixin.qq.com/s/hG0AO43AicEN1o4GGg463w
-
-快速检测新型冠状病毒 是怎么做到的？
-
-https://mp.weixin.qq.com/s/aawHwJ8IIuHPE7Dc9yn1Ow
-
-从试剂盒到实验室 盘点一下影响确诊人数的客观因素
-
-https://mp.weixin.qq.com/s/zbqdndZTt4B0-v3KfIm5uA
-
-既没新样本，也没实验，如何猜到新冠病毒“喜欢”感染哪些细胞？
-
-https://mp.weixin.qq.com/s/T4GQWgnazMyljsa3Jg0E8Q
-
-一文分清P1、P2、P3、P4实验室四兄弟
-
-https://mp.weixin.qq.com/s/vWpQLlfHFcAPleuuEvJdhw
-
-中国人更易感染新冠肺炎吗？

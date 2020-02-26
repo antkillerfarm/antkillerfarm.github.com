@@ -156,7 +156,7 @@ Material Point Method（物质点法）
 
 ## Taichi
 
-Taichi是胡渊鸣开发的一套计算机图形库。
+Taichi是胡渊鸣开发的一套计算机图形库。它拥有一套特有的DSL，并可将之编译为能在不同backend硬件上运行程序。
 
 官网：
 
@@ -182,7 +182,7 @@ https://mp.weixin.qq.com/s/zPvvf1VptQ1M7iVEcxN-AQ
 
 ## Halide
 
-Halide也是一个高性能的图形DSL。
+Halide也是一个高性能的图形DSL+编译器的项目。它影响了后来的TVM、Taichi等计算引擎项目。
 
 官网：
 

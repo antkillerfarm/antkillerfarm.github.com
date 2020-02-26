@@ -6,6 +6,22 @@ category: DL
 
 # 图像变换（续）
 
+https://mp.weixin.qq.com/s/OmSb1dl9smyZt_uASOcofQ
+
+人人都是画家：朱俊彦&周博磊等人的GAN画笔帮你开启艺术生涯
+
+https://mp.weixin.qq.com/s/7xGtUHfk_FNpDTksLxKaHw
+
+杨超越的声音+高晓松的脸~如此酸爽的技术，你值得拥有！
+
+https://mp.weixin.qq.com/s/y9h6xkK9Keq4UrdpGJS-4Q
+
+这些假脸实在太逼真了！英伟达造出新一代GAN，生成壁纸级高清大图毫无破绽
+
+https://mp.weixin.qq.com/s/V4PN0L42iisRxQ6y4Hc8fw
+
+英伟达“AI假脸王”开源：新一代GAN攻破几乎所有人脸识别系统
+
 https://mp.weixin.qq.com/s/-3e5xhbz01FerZp8DcRV5g
 
 谷歌小姐姐搞出魔法画板：你随便画，补不齐算AI输
@@ -178,10 +194,6 @@ https://mp.weixin.qq.com/s/bH0K_sxvF2oQwewYhMk20A
 
 只需一张自拍，网易伏羲用这种方法直接生成“个人专属”游戏角色
 
-https://mp.weixin.qq.com/s/I_F5KKuld2rYLrDiDAazxw
-
-旷视研究院提出新型抠图方法AdaMatting，实现当前最佳
-
 https://mp.weixin.qq.com/s/11ZurpNFygoeOJKvx_JuIg
 
 深度学习之换掉人物的裤子
@@ -226,21 +238,17 @@ https://mp.weixin.qq.com/s/utX_iY7rRHkPV6IGfirlqw
 
 武汉大学提出ARGAN：注意力循环生成对抗模型用于检测、去除图像阴影
 
-https://mp.weixin.qq.com/s/1eEtZ7lfv613EltgD2uUrA
-
-简单几笔就能精准抠图，阿里妈妈智能抠图算法介绍
-
 https://mp.weixin.qq.com/s/T-2qNlUFciC77uOJG31utQ
 
 图像分区域合成，这个新方法实现了人脸的“精准整容”
 
-https://mp.weixin.qq.com/s/Y0FGO06IhJYu_QbV0IlyTw
-
-当达摩院大牛学会抠图，这一切都不受控制了……
-
 https://mp.weixin.qq.com/s/UmQ1ZxLHizW47f2-W58-Lw
 
 姿势服装随心换
+
+https://mp.weixin.qq.com/s/kgQBQz2u8aMzZaHFhWF_VQ
+
+拍照总被路人甲抢镜？那就用这个项目消Ta
 
 # 自动求导
 

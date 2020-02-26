@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数据库, 分布式ID生成器, 边缘计算, Autoware
+title:  数据库, 分布式ID生成器, IEEE 802
 category: technology 
 ---
 
@@ -274,92 +274,104 @@ https://mp.weixin.qq.com/s/E3PGP6FDBFUcghYfpe6vsg
 
 唯一ID生成算法剖析
 
-# 边缘计算
+# IEEE 802
 
-![](/images/img2/edge_computing.png)
+IEEE 802是一系列关于局域网和城域网的标准。
 
-https://mp.weixin.qq.com/s/i5KkUVaEULrlxeNtU_PDtQ
+其中，最重要的有：
 
-天津大学最新“边缘计算与深度学习的融合”综述论文
+802.1 802系列协议的网络层管理。
 
-https://mp.weixin.qq.com/s/TXZh-bn9VhwGxJRNjzecRw
+802.3 Ethernet
 
-重新认识“边缘计算”
+802.11 Wi-Fi
 
-https://mp.weixin.qq.com/s/6Nr7LF9VxYQ4NlLlk8bCVw
+802.15.1 Bluetooth
 
-不了解边缘计算，你可能就要被“边缘”了
+802.15.4 Zigbee
 
-https://mp.weixin.qq.com/s/3d7CEQ0iQzwnJ_tE7eB9Yg
+802.16 WiMax
 
-边缘计算芯片格局分析
+http://www.ieee802.org/
 
-https://mp.weixin.qq.com/s/U9vnEzumNgGlYFR-lEPfhw
+可以在这个网址下载相关的标准文件。
 
-智能边缘计算：计算模式的再次轮回
+## 无线网状网
 
-https://mp.weixin.qq.com/s/x6MWXZAFgyv2HDaVll9S6A
+Wireless mesh network（WMN），也叫wireless ad hoc network。
 
-一文读懂边缘计算和业务场景
+Ad Hoc源自于拉丁语，意思是“for this”引申为“for this purpose only”，即“为某种目的设置的，特别的”意思，即Ad hoc网络是一种有特殊用途的网络。IEEE802.11标准委员会采用了“Ad hoc网络”一词来描述这种特殊的自组织对等式多跳移动通信网络
 
-# Autoware
+它具有以下特点：
 
-Autoware是另一个开源的无人驾驶平台。不像Apollo，没有百度这样的强势公司的介入，社区氛围更浓一些，相对的，功能也要弱一些。
+### 无中心
 
-官网：
+Ad hoc网络没有严格的控制中心。所有结点的地位平等，即是一个对等式网络。结点可以随时加入和离开网络。任何结点的故障不会影响整个网络的运行，具有很强的抗毁性。
 
-https://www.autoware.org/
+### 自组织
 
-主要由一下组件构成：
+网络的布设或展开无需依赖于任何预设的网络设施。结点通过分层协议和分布式算法协调各自的行为，结点开机后就可以快速、自动地组成一个独立的网络。
 
-- autoware.ai
+### 多跳路由
 
-https://www.autoware.ai/
+当结点要与其覆盖范围之外的结点进行通信时，需要中间结点的多跳转发。与固定网络的多跳不同，Ad hoc网络中的多跳路由是由普通的网络结点完成的，而不是由专用的路由设备（如路由器）完成的。
 
-这个组件基于ROS 1.0，是目前的方案。
+### 动态拓扑
 
-- autoware.auto
+Ad hoc网络是一个动态的网络。网络结点可以随处移动，也可以随时开机和关机，这些都会使网络的拓扑结构随时发生变化。　这些特点使得Ad hoc网络在体系结构、网络组织、协议设计等方面都与普通的蜂窝移动通信网络和固定通信网络有着显著的区别。
 
-https://www.autoware.auto/
+无线网状网可以基于802.11、802.15或802.16。具体到802.11就是Wi-Fi Mash。
 
-这个组件基于ROS 2.0，是面向未来的方案。
+## Wi-Fi Mash
 
-- autoware.io
+和普通Wi-Fi相比，Wi-Fi Mash主要增加了路由协议。而这一块目前尚无标准，有70多个相互竞争的路由协议。其中主要有：
 
-https://www.autoware.io/
+AODV (Ad hoc On-Demand Distance Vector)
 
-autoware提供的模拟器。
+B.A.T.M.A.N. (Better Approach To Mobile Adhoc Networking)
 
-代码仓库：
+HWMP (Hybrid Wireless Mesh Protocol)
 
-https://gitlab.com/autowarefoundation/autoware.ai
+OLSR (Optimized Link State Routing protocol)
 
-# 传感器+
+IEEE为了统一标准，提出了802.11s。目前该标准默认使用HWMP。
 
-https://mp.weixin.qq.com/s/bNhd7owOIdCdzO2xOtBMRw
+## 消息发送的类型
 
-谈谈超结功率半导体器件
+![](/images/article/cast.png)
 
-https://mp.weixin.qq.com/s/0K595c2GdhPrdWBgpvU-Gw
+## 参考
 
-超声波雷达在汽车上的应用
+https://mp.weixin.qq.com/s/GgwehPL4r-Y1pEd2k60Y_Q
 
-https://mp.weixin.qq.com/s/j0-Lj8lOyDP0RArB7NzUNw
+一文看懂蓝牙Mesh技术
 
-特斯拉的整车传感器配置方案
+https://mp.weixin.qq.com/s/Mvq9UNEnHoUbmxocb-rqmQ
 
-https://mp.weixin.qq.com/s/WIjbYMvMis-YBr_ev_wjmQ
+LPWAN、LoRa、LoRaWAN的区别与联系
 
-霍尔元件及其应用
+https://mp.weixin.qq.com/s/ddOTd5ljC2I9IOadBbjOIA
 
-https://mp.weixin.qq.com/s/vbTR1A0rgzCQY8XG70SNPQ
+大话Wi-Fi20年
 
-了不起的MEMS发明人
+https://www.zhihu.com/question/20890194
 
-https://mp.weixin.qq.com/s/gHvvMG7D_W0M2RFntyRaDw
+大型发布会现场的Wi-Fi应该如何搭建？
 
-车载抬头显示AR HUD成像技术大解密
+----
 
-https://mp.weixin.qq.com/s/qOnMNbA9C7bcwZ6IvOxyCA
+802.11b — Wifi 1 (1999)
 
-一组动图看懂3D打印原理
+802.11a — Wifi 2 (1999)
+
+802.11g — Wifi 3 (2003)
+
+802.11n — Wifi 4 (2009)
+
+802.11ac — Wifi 5 (2014)
+
+802.11ax — Wifi 6 (2018)
+
+https://mp.weixin.qq.com/s/5MjByZWThzQ4MSWRoIS1HQ
+
+为了Wi-Fi 6，华为和小米争个啥？

@@ -372,3 +372,7 @@ VLDB2019特邀报告《图处理》综述进展，滑铁卢大学数据库大牛
 https://mp.weixin.qq.com/s/PkFscGq8tjzc3HQiF-SSsA
 
 在图数据上做机器学习，应该从哪个点切入？
+
+https://mp.weixin.qq.com/s/uYP8Eyz36JyTWska0hvtuA
+
+字节跳动自研万亿级图数据库&图计算实践
