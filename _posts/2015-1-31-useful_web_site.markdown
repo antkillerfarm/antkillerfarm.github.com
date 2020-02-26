@@ -24,9 +24,20 @@ http://www.hellogcc.org/
 
 一个有关GCC和GDB的博客。其中的大牛teawater（朱辉）开发了一个Linux动态跟踪器KGTP，他的blog：http://teawater.github.io/
 
+----
+
 http://blog.csdn.net/leixiaohua1020/
 
 中国传媒大学雷霄骅博士的blog，专注ffmpeg等的音视频研究。
+
+>2020.2   
+>一直奇怪雷神的blog怎么从2016年之后就不再更新了。最近才知道，他早已于该年7月17日猝死。。。
+
+https://blog.csdn.net/machh/article/details/52109231
+
+雷霄骅---巨星陨落
+
+----
 
 http://www.uedtech.com/
 

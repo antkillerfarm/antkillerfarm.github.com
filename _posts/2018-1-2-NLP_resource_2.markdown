@@ -114,6 +114,10 @@ https://mp.weixin.qq.com/s/MIsk9pRFFf6jottIe8HmUA
 
 手把手带你RNN文本分类
 
+https://zhuanlan.zhihu.com/p/107721682
+
+TextClf：简单易上手的基于pytorch/sklearn的文本分类工具
+
 ## 情感分析
 
 https://mp.weixin.qq.com/s/5VrZTMlNxbgZmaeOxBps_w
