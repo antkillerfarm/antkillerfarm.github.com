@@ -6,6 +6,34 @@ category: resource
 
 # NLP参考资源
 
+https://mp.weixin.qq.com/s/QFDHxI2Yuezc7ypZ5MURHw
+
+神经语义解析的结构化表示学习
+
+https://mp.weixin.qq.com/s/TUTAZe_Bw7SsPkja9i7Drg
+
+基于叙事事理图谱和可扩展图神经⽹络的脚本事件预测模型
+
+https://mp.weixin.qq.com/s/Kj39qXVgaIN9BsxRNlXvvQ
+
+百度提出交互式语言学习新方法：让智能体具备单次概念学习能力
+
+https://mp.weixin.qq.com/s/1bCw7m8YVLVA0g_jhw9HCg
+
+在消费意图识别任务上的基于树核最大平均差异的领域自适应
+
+https://mp.weixin.qq.com/s/x8GwNyd9y7xqyi2KeIcqTw
+
+5篇AAAI 2018论文看“应答生成”
+
+https://mp.weixin.qq.com/s/12RA4Bd86SJS6Q4CAvOEWw
+
+深度学习技术如何应用于文本智能处理？
+
+https://mp.weixin.qq.com/s/PJQgrAzwefmFgSBF39_yIA
+
+Gmail新功能：结合BoW模型和RNN-LM，帮助用户快速写邮件
+
 https://mp.weixin.qq.com/s/wU3sZKQ6gkYHeTEEClB4Gw
 
 通过深度模型加深和拓宽聊天话题，让你与机器多聊两句
@@ -302,10 +330,6 @@ https://mp.weixin.qq.com/s/7KBtbip4JS0jQfOy_BWb3Q
 
 语义分析的一些方法(二)
 
-https://mp.weixin.qq.com/s/Cq7ivDYurS3CidvoemFfqA
-
-Twitter是怎么做情感分析的？长文解读！
-
 https://zhuanlan.zhihu.com/p/30268946
 
 从CNN视角看在自然语言处理上的应用
@@ -369,19 +393,3 @@ https://mp.weixin.qq.com/s/efID_R9ajL34P95eGKkrQA
 https://github.com/THUNLP-MT/TG-Reading-List
 
 文本生成公开数据集/开源工具/经典论文详细列表分享
-
-https://mp.weixin.qq.com/s/tREtbGpoLR-kc-1DnC8wWg
-
-对话系统的设计艺术
-
-https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247486300&idx=1&sn=dd681216da626c73531fc17ffbccf22a
-
-清华刘知远：知识指导的自然语言处理
-
-https://zhuanlan.zhihu.com/p/69069509
-
-渐入佳境，基于主题感知的Coarse-to-Fine机制的在线评论生成
-
-https://mp.weixin.qq.com/s/w9CbbZ6vr6qV7DafctIf-g
-
-人机语音对话技术在58同城的应用实践

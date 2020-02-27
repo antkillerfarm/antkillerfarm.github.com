@@ -143,3 +143,7 @@ https://mp.weixin.qq.com/s/inBGhCnzr-xZZqtIbrG3bA
 https://mp.weixin.qq.com/s/MBRTs2pIVypQxrcMOY4Lcg
 
 图卷积网络（GCN）入门详解
+
+https://mp.weixin.qq.com/s/phiRXPGfVHaxCN1aLZTzlw
+
+图神经网络三剑客：GCN、GAT与GraphSAGE

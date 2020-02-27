@@ -325,6 +325,10 @@ https://www.zhihu.com/question/40167866
 
 学数学的和学物理的，真心惹不起啊。。。
 
+https://mp.weixin.qq.com/s/hTExoHwP8kzUWyRuUL8G_g
+
+宅在家做蛋糕如何“合理把握”烘焙时间？模小数用数学建模告诉你
+
 # Linux参考资源+
 
 https://mp.weixin.qq.com/s/snQ3T86usv4rXz0MMQvFfQ

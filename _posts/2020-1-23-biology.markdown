@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 生物, 医药
+title: 生物, DNA鉴定, 医药
 category: Nature 
 ---
 
@@ -78,10 +78,6 @@ https://mp.weixin.qq.com/s/SOlcOOH6_EbIApGC5o8eAw
 
 如何快速“发家致富”？基因组用了这种高招
 
-https://mp.weixin.qq.com/s/8QEmodonoo_rc1m85kmMOQ
-
-追溯祖先，寻找罪犯……DNA能告诉我们多少信息？
-
 https://mp.weixin.qq.com/s/-FaWGExKgKiWPdQq3R27iw
 
 我们每天吃的米饭，最早是从哪里来的？
@@ -117,6 +113,10 @@ https://mp.weixin.qq.com/s/9LYRsYy0t-yAghfuIQ8VSQ
 https://mp.weixin.qq.com/s/F8aiXoLdjgmhky3diZ8iVQ
 
 养娃这么心累的事，最早是谁“发明”的？
+
+https://mp.weixin.qq.com/s/7N9Zf8r4WLBJDH3Y5hdkGw
+
+这个能反复“涅槃”的物种，是何方神仙？（蝾螈）
 
 ----
 
@@ -186,10 +186,6 @@ https://mp.weixin.qq.com/s/3UngFEQnD6kGB8Y5UB1UBA
 
 生物学中最重要的概念，依旧是个谜（什么是物种?）
 
-https://mp.weixin.qq.com/s/W3H4PQVhPWwdb-Doywe5vg
-
-28年前的“南医大”杀人凶手，是如何在三天内被发现的？
-
 ----
 
 https://mp.weixin.qq.com/s/dzu6nXrewi3LQm_blhj-xw
@@ -241,6 +237,20 @@ https://www.zhihu.com/question/357660483/answer/965806294
 https://www.zhihu.com/question/357660483/answer/965379804
 
 澳大利亚的山火为什么会烧这么久？
+
+# DNA鉴定
+
+https://mp.weixin.qq.com/s/8QEmodonoo_rc1m85kmMOQ
+
+追溯祖先，寻找罪犯……DNA能告诉我们多少信息？
+
+https://mp.weixin.qq.com/s/W3H4PQVhPWwdb-Doywe5vg
+
+28年前的“南医大”杀人凶手，是如何在三天内被发现的？
+
+https://www.f793.club/blog/liusheng1/
+
+关于Y141213是中山靖王刘胜的探讨
 
 # 医药
 

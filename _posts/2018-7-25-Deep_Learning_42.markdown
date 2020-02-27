@@ -236,6 +236,10 @@ https://mp.weixin.qq.com/s/0K_NF84wvPJttEARVUGPWA
 
 DeOccNet：国防科大提出阵列相机去除前景遮挡成像新方法
 
+https://mp.weixin.qq.com/s/HxYckWC7rKEq8L6bUMKHTg
+
+手机拍出单反照片，苏黎世理工单个深度卷积模型取代ISP
+
 # LSM
 
 liquid state machine (LSM)

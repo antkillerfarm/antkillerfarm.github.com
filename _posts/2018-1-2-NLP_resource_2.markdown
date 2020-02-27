@@ -156,6 +156,18 @@ https://mp.weixin.qq.com/s/d_uHHH3UCBFa77O1Gw6Bdw
 
 既然文字表你心，如何用深度学习读懂你的情？
 
+https://mp.weixin.qq.com/s/KWWbaE2em4fEBInPoWTq8A
+
+Python实现多种模型(Naive Bayes, SVM, CNN, LSTM, etc)用于推文情感分析
+
+https://mp.weixin.qq.com/s/Cq7ivDYurS3CidvoemFfqA
+
+Twitter是怎么做情感分析的？长文解读！
+
+https://mp.weixin.qq.com/s/X8s0_C22xTNqjVWMLZzAUA
+
+情感分析: ABSA模型总结（PART I）
+
 ## 命名实体识别
 
 https://mp.weixin.qq.com/s/LrrqGCNBncDr3ZacoIHHBg
@@ -391,23 +403,3 @@ https://mp.weixin.qq.com/s/Vh3bCO-ZYoBJLqCTPCpggg
 https://mp.weixin.qq.com/s/sM72a52wz6eXSkcgnd4JJw
 
 人类与机器人，如何能像朋友一样愉快聊天？
-
-https://mp.weixin.qq.com/s/vt25TVX-tcurtAC63dYYNA
-
-让聊天机器人同你聊得更带劲-对话策略学习
-
-http://blog.csdn.net/malefactor/article/details/52166235
-
-聊天机器人中对话模板的高效匹配方法
-
-https://mp.weixin.qq.com/s/ouNxUvWC_mxap6P5z6_dFA
-
-教聊天机器人进行多轮对话
-
-http://www.jianshu.com/p/43db6425ad33
-
-如何为聊天机器人设计数据通道
-
-https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247484926&idx=1&sn=4e34a442c126c46bba27a7f17df3e61e
-
-聊天机器人Chatbot知识资料全集

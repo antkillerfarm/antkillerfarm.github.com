@@ -8,6 +8,26 @@ category: resource
 
 ## 聊天机器人（续）
 
+https://mp.weixin.qq.com/s/vt25TVX-tcurtAC63dYYNA
+
+让聊天机器人同你聊得更带劲-对话策略学习
+
+http://blog.csdn.net/malefactor/article/details/52166235
+
+聊天机器人中对话模板的高效匹配方法
+
+https://mp.weixin.qq.com/s/ouNxUvWC_mxap6P5z6_dFA
+
+教聊天机器人进行多轮对话
+
+http://www.jianshu.com/p/43db6425ad33
+
+如何为聊天机器人设计数据通道
+
+https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247484926&idx=1&sn=4e34a442c126c46bba27a7f17df3e61e
+
+聊天机器人Chatbot知识资料全集
+
 https://mp.weixin.qq.com/s/bzjRlFfh7tz4OWVpGnNPwQ
 
 揭秘阿里小蜜：基于检索模型和生成模型相结合的聊天引擎
@@ -183,10 +203,6 @@ https://mp.weixin.qq.com/s/vgejlnsBlOKMMRt-M3-d-w
 https://mp.weixin.qq.com/s/rqB2COCAKsr3qvVXnhLwMg
 
 数据到文本任务的近期相关工作介绍
-
-https://mp.weixin.qq.com/s/KWWbaE2em4fEBInPoWTq8A
-
-Python实现多种模型(Naive Bayes, SVM, CNN, LSTM, etc)用于推文情感分析
 
 https://mp.weixin.qq.com/s/VOyJu8FBIK91MsumCBaMyg
 
@@ -379,31 +395,3 @@ https://mp.weixin.qq.com/s/HJDkNw_Fuu1QKEpyHY1Q-w
 https://mp.weixin.qq.com/s/v8azzXP1Kl5jnRCFpVdBGg
 
 语义分析的方法简述二
-
-https://mp.weixin.qq.com/s/QFDHxI2Yuezc7ypZ5MURHw
-
-神经语义解析的结构化表示学习
-
-https://mp.weixin.qq.com/s/TUTAZe_Bw7SsPkja9i7Drg
-
-基于叙事事理图谱和可扩展图神经⽹络的脚本事件预测模型
-
-https://mp.weixin.qq.com/s/Kj39qXVgaIN9BsxRNlXvvQ
-
-百度提出交互式语言学习新方法：让智能体具备单次概念学习能力
-
-https://mp.weixin.qq.com/s/1bCw7m8YVLVA0g_jhw9HCg
-
-在消费意图识别任务上的基于树核最大平均差异的领域自适应
-
-https://mp.weixin.qq.com/s/x8GwNyd9y7xqyi2KeIcqTw
-
-5篇AAAI 2018论文看“应答生成”
-
-https://mp.weixin.qq.com/s/12RA4Bd86SJS6Q4CAvOEWw
-
-深度学习技术如何应用于文本智能处理？
-
-https://mp.weixin.qq.com/s/PJQgrAzwefmFgSBF39_yIA
-
-Gmail新功能：结合BoW模型和RNN-LM，帮助用户快速写邮件

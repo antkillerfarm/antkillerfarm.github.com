@@ -294,6 +294,8 @@ Eigen是一个线性代数方面的C++模板库。tensorflow和caffe2都使用�
 
 http://eigen.tuxfamily.org/
 
+使用Eigen也比较简单，无须link，只要引用相关头文件即可。
+
 参见：
 
 https://zhuanlan.zhihu.com/p/26512099

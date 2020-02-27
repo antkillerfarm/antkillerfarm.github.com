@@ -360,3 +360,25 @@ https://caffe2.ai/
 https://mp.weixin.qq.com/s/YYwmRwq5TN7JPah_arNyaQ
 
 Facebook开源产业级深度学习框架Caffe2
+
+# NLP参考资源+
+
+https://mp.weixin.qq.com/s/tREtbGpoLR-kc-1DnC8wWg
+
+对话系统的设计艺术
+
+https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247486300&idx=1&sn=dd681216da626c73531fc17ffbccf22a
+
+清华刘知远：知识指导的自然语言处理
+
+https://zhuanlan.zhihu.com/p/69069509
+
+渐入佳境，基于主题感知的Coarse-to-Fine机制的在线评论生成
+
+https://mp.weixin.qq.com/s/w9CbbZ6vr6qV7DafctIf-g
+
+人机语音对话技术在58同城的应用实践
+
+https://mp.weixin.qq.com/s/sK5uP1L9CIVOSFBOG8-F5A
+
+预训练模型ProphetNet：根据未来文本信息进行自然语言生成‘

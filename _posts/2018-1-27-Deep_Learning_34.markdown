@@ -324,6 +324,10 @@ https://zhuanlan.zhihu.com/p/77140176
 
 构建贝叶斯深度学习分类器
 
+https://mp.weixin.qq.com/s/0e4GHNRCF9xKFELAZ4zRFA
+
+A simple tutorial for Bayesian neural network
+
 # 图像检索
 
 ## 传统方法

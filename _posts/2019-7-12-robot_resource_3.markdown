@@ -389,3 +389,7 @@ https://mp.weixin.qq.com/s/hqOxoU6G_2RjS2WbbHoxHg
 https://mp.weixin.qq.com/s/7ndd6jFaSObUh6eOW8fi5Q
 
 旷视研究院SLAM组负责人刘骁：三维视觉与机器人
+
+https://mp.weixin.qq.com/s/hNx74wn8pIGPr6vVu_Yxww
+
+自动驾驶重卡在规划和控制中的技术难点与挑战
